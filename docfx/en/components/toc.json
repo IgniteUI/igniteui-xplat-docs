@@ -255,6 +255,12 @@
       },
       {
         "exclude": ["Angular", "React"],
+        "name": "Cascading Combos",
+        "href": "grids/grid/cascading-combos.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
         "name": "Multi-Column Headers",
         "href": "grids/grid/multi-column-headers.md",
         "status": ""
@@ -974,12 +980,6 @@
       {
         "name": "Row Pinning",
         "href": "grids/data-grid/row-pinning.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "React"],
-        "name": "Grid with Cascading Combos",
-        "href": "grids/grid/cascading-combos.md",
         "status": ""
       }
     ]

@@ -180,12 +180,6 @@
       },
       {
         "exclude": ["Angular", "React"],
-        "name": "Grid with Cascading Combos",
-        "href": "grids/grid/cascading-combos.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "React"],
         "name": "列のサイズ変更",
         "href": "grids/grid/column-resizing.md",
         "status": ""
@@ -242,6 +236,12 @@
         "exclude": ["Angular", "React"],
         "name": "マスター / 詳細",
         "href": "grids/grid/master-detail.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "Cascading Combos",
+        "href": "grids/grid/cascading-combos.md",
         "status": ""
       },
       {
