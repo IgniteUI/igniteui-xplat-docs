@@ -42,19 +42,19 @@
     { "names":[{"platform":"React","mappedType":"method","mappedName":"addKeyValue"}],"originalName":"AddKeyValue"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"removeKeyValue"}],"originalName":"RemoveKeyValue"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"isNothingSelected"}],"originalName":"IsNothingSelected"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"isEverythingSelected"}],"originalName":"IsEverythingSelected"}],"originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"isEverythingSelected"}],"originalName":"IsEverythingSelected"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
   { "originalName":"CheckedChangedEventArgs",
     "names":[{"platform":"React","fileName":"igr-checked-changed-event-args.ts","mappedName":"IgrCheckedChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"number","mappedName":"index"}],"originalName":"Index"},
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isChecked"}],"originalName":"IsChecked"}],"originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isChecked"}],"originalName":"IsChecked"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
   { "originalName":"SelectAllCheckboxChangedEventArgs",
     "names":[{"platform":"React","fileName":"igr-select-all-checkbox-changed-event-args.ts","mappedName":"IgrSelectAllCheckboxChangedEventArgs"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isChecked"}],"originalName":"IsChecked"}],"originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isChecked"}],"originalName":"IsChecked"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
   { "originalName":"CheckboxListIndexType","isEnum":true,
     "names":[{"platform":"React","fileName":"CheckboxListIndexType.ts","mappedName":"CheckboxListIndexType"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"CheckboxListIndexType","mappedName":"Selected"}],"originalName":"Selected"},
     { "names":[{"platform":"React","mappedType":"CheckboxListIndexType","mappedName":"DeSelected"}],"originalName":"DeSelected"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Inputs.Implementation"}]}
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Inputs.Implementation"}]}

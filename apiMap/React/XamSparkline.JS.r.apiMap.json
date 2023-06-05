@@ -7,7 +7,7 @@
     { "names":[{"platform":"React","mappedType":"SparklineDisplayType","mappedName":"Area"}],"originalName":"Area"},
     { "names":[{"platform":"React","mappedType":"SparklineDisplayType","mappedName":"Column"}],"originalName":"Column"},
     { "names":[{"platform":"React","mappedType":"SparklineDisplayType","mappedName":"WinLoss"}],"originalName":"WinLoss"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"XamSparkline",
     "names":[{"platform":"React","fileName":"igr-sparkline.ts","mappedName":"IgrSparkline"}],
     "members":[
@@ -67,4 +67,4 @@
     { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyInsertItem"}],"originalName":"NotifyInsertItem"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyRemoveItem"}],"originalName":"NotifyRemoveItem"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"exportVisualData"}],"originalName":"ExportVisualData"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

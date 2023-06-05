@@ -16,7 +16,7 @@
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"scrollRangeIntoView"}],"originalName":"ScrollRangeIntoView"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getWindowZoomFromCategories"}],"originalName":"GetWindowZoomFromCategories"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getWindowZoomFromItemSpan"}],"originalName":"GetWindowZoomFromItemSpan"}],"originalBaseTypeName":"CategoryAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getWindowZoomFromItemSpan"}],"originalName":"GetWindowZoomFromItemSpan"}],"originalBaseTypeName":"CategoryAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"BarSeries",
     "names":[{"platform":"Angular","fileName":"igx-bar-series-component.ts","dynamicModuleName":"igx-bar-series-dynamic-module.ts","moduleName":"igx-bar-series-module.ts","mappedName":"IgxBarSeriesComponent"}],
     "members":[
@@ -26,7 +26,7 @@
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"radiusY"}],"originalName":"RadiusY"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getSeriesValueBoundingBox"}],"originalName":"GetSeriesValueBoundingBox"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"VerticalAnchoredCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"VerticalAnchoredCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"VerticalAnchoredCategorySeries",
     "names":[{"platform":"Angular","fileName":"igx-vertical-anchored-category-series-component.ts","mappedName":"IgxVerticalAnchoredCategorySeriesComponent"}],
     "members":[
@@ -44,4 +44,4 @@
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItemIndex"}],"originalName":"GetItemIndex"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItem"}],"originalName":"GetItem"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"canUseAsYAxis"}],"originalName":"CanUseAsYAxis"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"canUseAsXAxis"}],"originalName":"CanUseAsXAxis"}],"originalBaseTypeName":"AnchoredCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"canUseAsXAxis"}],"originalName":"CanUseAsXAxis"}],"originalBaseTypeName":"AnchoredCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

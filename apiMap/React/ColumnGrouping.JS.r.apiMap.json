@@ -14,4 +14,4 @@
     { "names":[{"platform":"React","mappedType":"string","mappedName":"itemHoverBackgroundColor"}],"originalName":"ItemHoverBackgroundColor"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"backgroundColor"}],"originalName":"BackgroundColor"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"exportVisualModel"}],"originalName":"ExportVisualModel"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}
