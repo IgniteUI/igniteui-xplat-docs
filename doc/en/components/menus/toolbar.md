@@ -2,12 +2,12 @@
 title: {Platform} Toolbar Component | {ProductName}
 _description: See how you can easily get started with {Platform} Toolbar Component. Compatible with the Data Chart. Extend your .
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Toolbar components, {Platform} Toolbar controls
-mentionedTypes: ["Toolbar", "DomainChart", "XamDataChart"]
+mentionedTypes: ["Toolbar", "DomainChart", "CategoryChart", "XamDataChart"]
 ---
 
 # {Platform} Toolbar Overview
 
-The {Platform} Toolbar component is a companion conainer for UI operations to interact both standalone or with the {Platform} Data Chart component. This allows you to easily choose from a preset of properites on the `XamDataChart` with predefined SVG icons, but it also gives you the ability to create custom icons for your project. Benefiting from a number of attributes, you can define or change the icon in use or apply different actions to it. The `Toolbar` will display it's own SVG icons.
+The {Platform} Toolbar component is a companion conainer for UI operations to interact both standalone or with the {Platform} Data Chart & `CategoryChart` components. This allows you to easily choose from a preset of properites on the eg. `XamDataChart` with predefined SVG icons, but it also gives you the ability to create custom tools for your project. Benefiting from a number of attributes, you can define or change the icon in use or apply different actions to it. The `Toolbar` will display it's own SVG icons.
 
 ## {Platform} Toolbar Example
 
@@ -29,15 +29,15 @@ The following modules are required when using both the `Toolbar` with the `XamDa
 
 ```ts
 import { IgxToolbarModule } from 'igniteui-angular-layouts';
-import { IgxDataChartToolbarModule, IgbDataChartCoreModule, IgbDataChartCategoryModule, IgxDataChartAnnotationModule, IgxDataChartInteractivityModule, IgxDataChartCategoryTrendLineModule  } from 'igniteui-angular-charts';
+import { IgxDataChartToolbarModule, IgxDataChartCoreModule, IgxDataChartCategoryModule, IgxDataChartAnnotationModule, IgxDataChartInteractivityModule, IgxDataChartCategoryTrendLineModule  } from 'igniteui-angular-charts';
 
 @NgModule({
     imports: [
         // ...
         IgxToolbarModule,
         IgxDataChartToolbarModule,
-        IgbDataChartCoreModule,
-        IgbDataChartCategoryModule,
+        IgxDataChartCoreModule,
+        IgxDataChartCategoryModule,
         IgxDataChartAnnotationModule,
         IgxDataChartInteractivityModule,
         IgxDataChartCategoryTrendLineModule
@@ -122,14 +122,90 @@ You will also need to link an additional CSS file to apply the styling to the `T
 The {Platform} Toolbar contains a `Target` property. This is used to link another component such as the DataChart. 
 
 ```razor
-<IgbToolbar
-  Name="Toolbar"
-  @ref="toolbar"
-  Target="@chart"/>
+  <IgbToolbar
+    Name="Toolbar"
+    @ref="toolbar"
+    Target="@chart">
+  <IgbToolbar>
 
-<IgbDataChart
-  Name="chart"
-  @ref="chart"/>
+  <IgbDataChart
+    Name="chart"
+    @ref="chart">
+  </IgbDataChart>
+```
+
+```html
+  <div class="legend">
+    <igx-toolbar
+      name="toolbar"
+      [target]="chart"
+      #toolbar>
+    </igx-toolbar>
+  </div>
+  <div class="container fill">
+    <igx-data-chart
+    name="chart"
+    #chart>
+  </igx-data-chart>
+```
+
+```html
+  <div>
+      <igc-toolbar
+      name="Toolbar"
+      id="Toolbar">
+      </igc-toolbar>
+  </div>
+
+  <div class="container fill">
+      <igc-data-chart
+      is-horizontal-zoom-enabled="true"
+      name="chart"
+      id="chart">
+      </igc-data-chart>
+  </div>
+```
+
+```ts
+  private _bind: () => void;
+  constructor() {
+    var toolbar = this.toolbar = document.getElementById('Toolbar') as IgcToolbarComponent;
+    var chart = this.chart = document.getElementById('chart') as IgcDataChartComponent;
+    
+    this._bind = () => {
+        toolbar.target = this.chart;           
+    }
+    this._bind();
+  }
+```
+
+```tsx
+  private toolbar: IgrToolbar
+  private toolbarRef(r: IgrToolbar) {
+      this.toolbar = r;
+      this.setState({});
+  }
+  private chart: IgrDataChart
+  private chartRef(r: IgrDataChart) {
+      this.chart = r;
+      this.toolbar.target = this.chart;
+      this.setState({});
+  }
+  public render(): JSX.Element {
+        return (
+      <div>
+        <IgrToolbar
+          ref={this.toolbarRef}>
+        </IgrToolbar>
+      </div>
+
+      <div>
+        <IgrDataChart
+          ref={this.chartRef}>
+        </IgrDataChart>
+      </div>
+    );
+  }
 ```
 
 Several pre-existing `ToolAction` items and menus become available when the chart is linked with the Toolbar. The following names are a list of Tool/Tool `OverlayId` names necessary for further customization such as adding, editing, toggling visibility of tools. These names can be assinged to the `OverlayId`, `BeforeId` & `AfterId`.
