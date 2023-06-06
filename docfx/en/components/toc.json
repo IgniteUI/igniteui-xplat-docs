@@ -1479,9 +1479,13 @@
     "status": ""
   },
   {
-    "exclude": ["Angular"],
     "name": "Menus",
     "header": true
+  },
+  {
+    "name": "Toolbar",
+    "href": "menus/toolbar.md",
+    "status": "PREVIEW"
   },
   {
     "exclude": ["Angular"],
