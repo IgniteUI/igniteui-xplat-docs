@@ -140,12 +140,9 @@ idColumn.move(3);
 ```typescript
 constructor() {
     var dataGrid = this.dataGrid = document.getElementById('dataGrid') as IgcGridComponent;
+    dataGrid.data = this.data;
+    dataGrid.addEventListener("columnMovingEnd", this.onColumnMovingEnd);
 
-    this._bind = () => {
-        dataGrid.data = this.data;
-        dataGrid.addEventListener("columnMovingEnd", this.onColumnMovingEnd);
-    }
-    this._bind();
 }
 ```
 <!-- end: WebComponents -->
@@ -303,7 +300,7 @@ $dark-grid-column-moving-theme: grid-theme(
 <!-- WebComponents -->
 ## スタイル設定
 
-<!-- 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。 -->
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
 
 色を変更したい場合は、最初にグリッドのクラスを設定する必要があります:
 
