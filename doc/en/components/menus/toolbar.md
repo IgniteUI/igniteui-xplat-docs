@@ -2,20 +2,16 @@
 title: {Platform} Toolbar Component | {ProductName}
 _description: See how you can easily get started with {Platform} Toolbar Component. Compatible with the Data Chart. Extend your .
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Toolbar components, {Platform} Toolbar controls
-mentionedTypes: ['Toolbar']
+mentionedTypes: ["Toolbar", "DomainChart", "XamDataChart"]
 ---
 
 # {Platform} Toolbar Overview
 
-The {Platform} Toolbar component is a companion conainer for UI operations to interact both standalone or with the {Platform} Data Chart component. This allows you to easily choose from a preset of properites on the Data Chart with predefined SVG icons, but it also gives you the ability to create custom icons for your project. Benefiting from a number of attributes, you can define or change the icon in use or apply different actions to it. The `Toolbar` will display it's own SVG icons.
-
+The {Platform} Toolbar component is a companion conainer for UI operations to interact both standalone or with the {Platform} Data Chart component. This allows you to easily choose from a preset of properites on the `XamDataChart` with predefined SVG icons, but it also gives you the ability to create custom icons for your project. Benefiting from a number of attributes, you can define or change the icon in use or apply different actions to it. The `Toolbar` will display it's own SVG icons.
 
 ## {Platform} Toolbar Example
 
 `sample="/charts/toolbar/actions-built-in-data-chart", height="60", alt="{Platform} Toolbar Example"`
-
-
-<div class="divider--half"></div>
 
 ## Dependencies
 
@@ -28,34 +24,8 @@ npm install {PackageInputs}
 npm install {PackageCharts}
 npm install {PackageCore}
 ```
-<!-- end:Angular, WebComponents, React -->
 
-<!-- Blazor -->
-
-Add the **IgniteUI.Blazor.Controls** namespace in the **_Imports.razor** file:
-
-```razor
-@using IgniteUI.Blazor.Controls
-```
-
-Import the `Toolbar` and register its module, like so:
-
-```razor
-// in Program.cs file
-
-builder.Services.AddIgniteUIBlazor(
-    typeof(IgbToolbarModule),
-    typeof(IgbDataChartToolbarModule),
-    typeof(IgbDataChartCoreModule),
-    typeof(IgbDataChartCategoryModule),
-    typeof(IgbDataChartAnnotationModule), 
-    typeof(IgbDataChartInteractivityModule),
-    typeof(IgbDataChartCategoryTrendLineModule)
-);
-```
-
-<!-- end:Blazor -->
-
+The following modules are required when using both the `Toolbar` with the `XamDataChart` component and it's features.
 
 ```ts
 import { IgxToolbarModule } from 'igniteui-angular-layouts';
@@ -111,7 +81,31 @@ ModuleManager.register(
 );
 ```
 
-<div class="divider--half"></div>
+<!-- end:Angular, WebComponents, React -->
+
+<!-- Blazor -->
+
+Add the **IgniteUI.Blazor.Controls** namespace in the **_Imports.razor** file:
+
+```razor
+@using IgniteUI.Blazor.Controls
+```
+
+Import the `Toolbar` and register its module. The following modules are required when using both the `Toolbar` with the `DataChart` component and it's features.
+
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbToolbarModule),
+    typeof(IgbDataChartToolbarModule),
+    typeof(IgbDataChartCoreModule),
+    typeof(IgbDataChartCategoryModule),
+    typeof(IgbDataChartAnnotationModule), 
+    typeof(IgbDataChartInteractivityModule),
+    typeof(IgbDataChartCategoryTrendLineModule)
+);
+```
 
 You will also need to link an additional CSS file to apply the styling to the `Toolbar` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
 
@@ -140,14 +134,14 @@ The {Platform} Toolbar contains a `Target` property. This is used to link anothe
 
 Several pre-existing `ToolAction` items and menus become available when the chart is linked with the Toolbar. The following names are a list of Tool/Tool `OverlayId` names necessary for further customization such as adding, editing, toggling visibility of tools. These names can be assinged to the `OverlayId`, `BeforeId` & `AfterId`.
 
-Here is a list of the provided {Platform} Data Chart Tool Actions and their associated `OverlayId`:
+Here is a list of the provided {Platform} `XamDataChart` Tool Actions and their associated `OverlayId`:
 
-Zooming
+Zooming Actions
 
 - `ZoomReset`: `ToolActionLabel` performs `ResetZoom` on the chart for resetting the zoom level to it's default position.
 - `ZoomMenu`: `ToolActionIconMenu` exposes two `ToolActionLabel` items to perform  `ZoomIn` & `ZoomOut` on the chart for increasing/decreasing the chart's zoom level. 
 
-Trend Menu  
+Trend Actions  
 
 - `AnalyzeMenu`: `ToolActionIconMenu` contains several options for configuring the chart.
  - `AnalyzeHeader`: sub section header `OverlayId`
@@ -219,7 +213,7 @@ The icon component can be styled by using it's `BaseTheme` property directly to 
 ## API References
 
  - `Toolbar`
- - `RegisterIcon`
+ - `XamDataChart`
 
 ## Additional Resources
 
