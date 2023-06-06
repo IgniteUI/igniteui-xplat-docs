@@ -91,13 +91,14 @@ Add the **IgniteUI.Blazor.Controls** namespace in the **_Imports.razor** file:
 @using IgniteUI.Blazor.Controls
 ```
 
-Import the `Toolbar` and register its module. The following modules are required when using both the `Toolbar` with the `DataChart` component and it's features.
+The following modules are required when using both the `Toolbar` with the `XamDataChart` component and it's features.
 
 ```razor
 // in Program.cs file
 
 builder.Services.AddIgniteUIBlazor(
     typeof(IgbToolbarModule),
+    // these modules are required when using `Toolbar` with the `DataChart` component:
     typeof(IgbDataChartToolbarModule),
     typeof(IgbDataChartCoreModule),
     typeof(IgbDataChartCategoryModule),
@@ -208,14 +209,14 @@ The {Platform} Toolbar contains a `Target` property. This is used to link anothe
   }
 ```
 
-Several pre-existing `ToolAction` items and menus become available when the chart is linked with the Toolbar. The following names are a list of Tool/Tool `OverlayId` names necessary for further customization such as adding, editing, toggling visibility of tools. These names can be assinged to the `OverlayId`, `BeforeId` & `AfterId`.
+Several pre-existing `ToolAction` items and menus become available when the chart is linked with the Toolbar. The following names are a list of Tool/Tool `OverlayId` names necessary for further customization such as adding, editing, toggling visibility of tools. These names can be assinged to the `OverlayId`, `BeforeId` and `AfterId`.
 
 Here is a list of the provided {Platform} `XamDataChart` Tool Actions and their associated `OverlayId`:
 
 Zooming Actions
 
 - `ZoomReset`: `ToolActionLabel` performs `ResetZoom` on the chart for resetting the zoom level to it's default position.
-- `ZoomMenu`: `ToolActionIconMenu` exposes two `ToolActionLabel` items to perform  `ZoomIn` & `ZoomOut` on the chart for increasing/decreasing the chart's zoom level. 
+- `ZoomMenu`: `ToolActionIconMenu` exposes two `ToolActionLabel` items to perform  `ZoomIn` and `ZoomOut` on the chart for increasing/decreasing the chart's zoom level. 
 
 Trend Actions  
 
