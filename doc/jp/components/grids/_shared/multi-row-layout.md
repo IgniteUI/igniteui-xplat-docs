@@ -326,11 +326,13 @@ $my-custom-schema: extend($light-schema, (
 
 ## その他のリソース
 
+<!-- ComponentStart:  Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [ソート](sorting.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

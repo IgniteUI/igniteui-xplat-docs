@@ -134,7 +134,7 @@
     { "names":[{"platform":"React","mappedType":"method","mappedName":"flush"}],"originalName":"Flush"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"getAbbreviatedNumber"}],"originalName":"GetAbbreviatedNumber"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"getAbbreviatedSymbol"}],"originalName":"GetAbbreviatedSymbol"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"getAbbreviatedString"}],"originalName":"GetAbbreviatedString"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getAbbreviatedString"}],"originalName":"GetAbbreviatedString"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"DataLegendSummaryEventArgs",
     "names":[{"platform":"React","fileName":"igr-data-legend-summary-event-args.ts","mappedName":"IgrDataLegendSummaryEventArgs"}],
     "members":[
@@ -142,7 +142,7 @@
     { "names":[{"platform":"React","mappedType":"string","mappedName":"columnMemberPath"}],"originalName":"ColumnMemberPath"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"summaryValue"}],"originalName":"SummaryValue"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"summaryUnits"}],"originalName":"SummaryUnits"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"summaryLabel"}],"originalName":"SummaryLabel"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"summaryLabel"}],"originalName":"SummaryLabel"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"LegendMouseEventArgs",
     "names":[{"platform":"React","fileName":"igr-legend-mouse-event-args.ts","mappedName":"IgrLegendMouseEventArgs"}],
     "members":[
@@ -151,7 +151,7 @@
     { "names":[{"platform":"React","mappedType":"ILegendSeries","mappedName":"series"}],"originalName":"Series"},
     { "names":[{"platform":"React","mappedType":"ILegendOwner","mappedName":"chart"}],"originalName":"Chart"},
     { "names":[{"platform":"React","mappedType":"any","mappedName":"legendItem"}],"originalName":"LegendItem"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"toString"}],"originalName":"ToString"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"toString"}],"originalName":"ToString"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"LegendMouseButtonEventArgs",
     "names":[{"platform":"React","fileName":"igr-legend-mouse-button-event-args.ts","mappedName":"IgrLegendMouseButtonEventArgs"}],
     "members":[
@@ -161,7 +161,7 @@
     { "names":[{"platform":"React","mappedType":"ILegendSeries","mappedName":"series"}],"originalName":"Series"},
     { "names":[{"platform":"React","mappedType":"ILegendOwner","mappedName":"chart"}],"originalName":"Chart"},
     { "names":[{"platform":"React","mappedType":"any","mappedName":"legendItem"}],"originalName":"LegendItem"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"toString"}],"originalName":"ToString"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"toString"}],"originalName":"ToString"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"DataLegendStylingRowEventArgs",
     "names":[{"platform":"React","fileName":"igr-data-legend-styling-row-event-args.ts","mappedName":"IgrDataLegendStylingRowEventArgs"}],
     "members":[
@@ -171,7 +171,7 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"seriesIndex"}],"originalName":"SeriesIndex"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"seriesTitle"}],"originalName":"SeriesTitle"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"titleText"}],"originalName":"TitleText"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"titleTextColor"}],"originalName":"TitleTextColor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"titleTextColor"}],"originalName":"TitleTextColor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"DataLegendStylingColumnEventArgs",
     "names":[{"platform":"React","fileName":"igr-data-legend-styling-column-event-args.ts","mappedName":"IgrDataLegendStylingColumnEventArgs"}],
     "members":[
@@ -187,35 +187,35 @@
     { "names":[{"platform":"React","mappedType":"string","mappedName":"valueText"}],"originalName":"ValueText"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"labelTextColor"}],"originalName":"LabelTextColor"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"unitsTextColor"}],"originalName":"UnitsTextColor"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"valueTextColor"}],"originalName":"ValueTextColor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"valueTextColor"}],"originalName":"ValueTextColor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ItemLegend",
     "names":[{"platform":"React","fileName":"igr-item-legend.ts","mappedName":"IgrItemLegend"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isItemwise"}],"originalName":"IsItemwise"},
     { "names":[{"platform":"React","mappedType":"LegendOrientation","mappedName":"orientation"}],"originalName":"Orientation"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"textStyle"}],"originalName":"TextStyle"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"textStyle"}],"originalName":"TextStyle"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"Legend",
     "names":[{"platform":"React","fileName":"igr-legend.ts","mappedName":"IgrLegend"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"LegendOrientation","mappedName":"orientation"}],"originalName":"Orientation"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"textStyle"}],"originalName":"TextStyle"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"textStyle"}],"originalName":"TextStyle"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"LegendOrientation","isEnum":true,
     "names":[{"platform":"React","fileName":"LegendOrientation.ts","mappedName":"LegendOrientation"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"LegendOrientation","mappedName":"Horizontal"}],"originalName":"Horizontal"},
     { "names":[{"platform":"React","mappedType":"LegendOrientation","mappedName":"Vertical"}],"originalName":"Vertical"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"LegendBase",
     "names":[{"platform":"React","fileName":"igr-legend-base.ts","mappedName":"IgrLegendBase"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isItemwise"}],"originalName":"IsItemwise"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isFinancial"}],"originalName":"IsFinancial"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"ContentControl","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"ContentControl","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialLegend",
     "names":[{"platform":"React","fileName":"igr-financial-legend.ts","mappedName":"IgrFinancialLegend"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isFinancial"}],"originalName":"IsFinancial"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isFinancial"}],"originalName":"IsFinancial"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ScaleLegend",
-    "names":[{"platform":"React","fileName":"igr-scale-legend.ts","mappedName":"IgrScaleLegend"}],"members":[],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    "names":[{"platform":"React","fileName":"igr-scale-legend.ts","mappedName":"IgrScaleLegend"}],"members":[],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

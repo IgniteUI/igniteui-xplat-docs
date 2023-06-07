@@ -81,7 +81,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"provideContainer"}],"originalName":"ProvideContainer"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"containerResized"}],"originalName":"ContainerResized"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"flush"}],"originalName":"Flush"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"exportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Gauges"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"exportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-gauges","originalNamespace":"Infragistics.Controls.Gauges"},
   { "originalName":"RadialGaugeDuplicateLabelOmissionStrategy","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"RadialGaugeDuplicateLabelOmissionStrategy.ts","mappedName":"RadialGaugeDuplicateLabelOmissionStrategy"}],
     "members":[
@@ -89,20 +89,20 @@
     { "names":[{"platform":"WebComponents","mappedType":"RadialGaugeDuplicateLabelOmissionStrategy","mappedName":"OmitFirst"}],"originalName":"OmitFirst"},
     { "names":[{"platform":"WebComponents","mappedType":"RadialGaugeDuplicateLabelOmissionStrategy","mappedName":"OmitNeither"}],"originalName":"OmitNeither"},
     { "names":[{"platform":"WebComponents","mappedType":"RadialGaugeDuplicateLabelOmissionStrategy","mappedName":"OmitBoth"}],"originalName":"OmitBoth"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Gauges"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-gauges","originalNamespace":"Infragistics.Controls.Gauges"},
   { "originalName":"RadialGaugeBackingShape","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"RadialGaugeBackingShape.ts","mappedName":"RadialGaugeBackingShape"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"RadialGaugeBackingShape","mappedName":"Circular"}],"originalName":"Circular"},
     { "names":[{"platform":"WebComponents","mappedType":"RadialGaugeBackingShape","mappedName":"Fitted"}],"originalName":"Fitted"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Gauges"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-gauges","originalNamespace":"Infragistics.Controls.Gauges"},
   { "originalName":"RadialGaugeScaleOversweepShape","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"RadialGaugeScaleOversweepShape.ts","mappedName":"RadialGaugeScaleOversweepShape"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"RadialGaugeScaleOversweepShape","mappedName":"Auto"}],"originalName":"Auto"},
     { "names":[{"platform":"WebComponents","mappedType":"RadialGaugeScaleOversweepShape","mappedName":"Circular"}],"originalName":"Circular"},
     { "names":[{"platform":"WebComponents","mappedType":"RadialGaugeScaleOversweepShape","mappedName":"Fitted"}],"originalName":"Fitted"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Gauges"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-gauges","originalNamespace":"Infragistics.Controls.Gauges"},
   { "originalName":"RadialGaugeNeedleShape","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"RadialGaugeNeedleShape.ts","mappedName":"RadialGaugeNeedleShape"}],
     "members":[
@@ -115,7 +115,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"RadialGaugeNeedleShape","mappedName":"TriangleWithBulb"}],"originalName":"TriangleWithBulb"},
     { "names":[{"platform":"WebComponents","mappedType":"RadialGaugeNeedleShape","mappedName":"NeedleWithBulb"}],"originalName":"NeedleWithBulb"},
     { "names":[{"platform":"WebComponents","mappedType":"RadialGaugeNeedleShape","mappedName":"TrapezoidWithBulb"}],"originalName":"TrapezoidWithBulb"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Gauges"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-gauges","originalNamespace":"Infragistics.Controls.Gauges"},
   { "originalName":"RadialGaugePivotShape","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"RadialGaugePivotShape.ts","mappedName":"RadialGaugePivotShape"}],
     "members":[
@@ -126,11 +126,11 @@
     { "names":[{"platform":"WebComponents","mappedType":"RadialGaugePivotShape","mappedName":"CircleOverlayWithHole"}],"originalName":"CircleOverlayWithHole"},
     { "names":[{"platform":"WebComponents","mappedType":"RadialGaugePivotShape","mappedName":"CircleUnderlay"}],"originalName":"CircleUnderlay"},
     { "names":[{"platform":"WebComponents","mappedType":"RadialGaugePivotShape","mappedName":"CircleUnderlayWithHole"}],"originalName":"CircleUnderlayWithHole"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Gauges"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-gauges","originalNamespace":"Infragistics.Controls.Gauges"},
   { "originalName":"FormatRadialGaugeLabelEventArgs",
-    "names":[{"platform":"WebComponents","fileName":"igc-format-radial-gauge-label-event-args.ts","mappedName":"IgcFormatRadialGaugeLabelEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Gauges"},
+    "names":[{"platform":"WebComponents","fileName":"igc-format-radial-gauge-label-event-args.ts","mappedName":"IgcFormatRadialGaugeLabelEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-gauges","originalNamespace":"Infragistics.Controls.Gauges"},
   { "originalName":"AlignRadialGaugeLabelEventArgs",
-    "names":[{"platform":"WebComponents","fileName":"igc-align-radial-gauge-label-event-args.ts","mappedName":"IgcAlignRadialGaugeLabelEventArgs"}],"members":[],"originalBaseTypeName":"FormatRadialGaugeLabelEventArgs","originalBaseTypeNamespace":"Infragistics.Controls.Gauges","originalNamespace":"Infragistics.Controls.Gauges"},
+    "names":[{"platform":"WebComponents","fileName":"igc-align-radial-gauge-label-event-args.ts","mappedName":"IgcAlignRadialGaugeLabelEventArgs"}],"members":[],"originalBaseTypeName":"FormatRadialGaugeLabelEventArgs","originalBaseTypeNamespace":"Infragistics.Controls.Gauges","packageName":"igniteui-gauges","originalNamespace":"Infragistics.Controls.Gauges"},
   { "originalName":"XamRadialGaugeRange",
     "names":[{"platform":"WebComponents","fileName":"igc-radial-gauge-range-component.ts","mappedName":"IgcRadialGaugeRangeComponent"}],
     "members":[
@@ -143,4 +143,4 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"innerEndExtent"}],"originalName":"InnerEndExtent"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"outerStartExtent"}],"originalName":"OuterStartExtent"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"outerEndExtent"}],"originalName":"OuterEndExtent"},
-    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"StrokeThickness"}],"originalBaseTypeName":"DependencyObject","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Gauges"}]}
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"StrokeThickness"}],"originalBaseTypeName":"DependencyObject","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-gauges","originalNamespace":"Infragistics.Controls.Gauges"}]}
