@@ -1101,7 +1101,7 @@
   {
     "name": "Line Chart",
     "href": "charts/types/line-chart.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
     "exclude": ["Blazor", "Angular", "React", "WebComponents"],
@@ -1183,7 +1183,7 @@
         {
           "name": "Axis Gridlines",
           "href": "charts/features/chart-axis-gridlines.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "Axis Layouts",
@@ -1257,7 +1257,7 @@
         {
           "name": "Chart Trendlines",
           "href": "charts/features/chart-trendlines.md",
-          "status": ""
+          "status": "UPDATED"
         }
       ]
   },
