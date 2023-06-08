@@ -357,6 +357,39 @@ This would allow reordering the rows and moving them between the pinned and unpi
 
 <!-- end: Angular -->
 
+<!-- WebComponents, Blazor -->
+
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```ts
+<igc-grid class="grid">
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties for that class:
+
+```css
+.grid {
+    --igx-grid-pinned-border-width: 5px;
+    --igx-grid-pinned-border-style: double;
+    --igx-grid-pinned-border-color: #FFCD0F;
+    --igx-grid-cell-active-border-color: #FFCD0F;
+}
+```
+
+### Demo
+
+`sample="/{ComponentSample}/row-pinning-style", height="540", alt="{Platform} {ComponentTitle} Row Pinning Styling Example"`
+
+
+<!-- end: WebComponents, Blazor -->
+
 <!-- Angular -->
 
 ## Styling
