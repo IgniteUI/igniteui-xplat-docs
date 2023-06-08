@@ -119,7 +119,7 @@ idColumn.move(3);
 
 列のドラッグアンドドロップ操作を可能にする列移動に関連するイベントが複数あります。`ColumnMovingStart`、`ColumnMoving`、および `ColumnMovingEnd` です。
 
-`{ComponentName}` の `ColumnMovingEnd`  イベントを処理し、列が新しい位置にドロップされたときにカスタム ロジックを実装できます。たとえば、以下のスニペットでは、**Change On Year(%)** 列の後に **Category** のドロップをキャンセルできます。
+`{ComponentName}` の `ColumnMovingEnd` イベントを処理し、列が新しい位置にドロップされたときにカスタム ロジックを実装できます。たとえば、以下のスニペットでは、**Change On Year(%)** 列の後に **Category** のドロップをキャンセルできます。
 
 <!-- Angular -->
 ```html
@@ -323,7 +323,7 @@ $dark-grid-column-moving-theme: grid-theme(
 ```
 ### デモ
 
-`sample="/{ComponentSample}/column-moving-styles", height="650", alt="{Platform} {ComponentTitle} Grid Moving Styled Example"`
+`sample="/{ComponentSample}/column-moving-styles", height="650", alt="{Platform} {ComponentTitle} Grid 移動のスタイル設定の例"`
 
 <!-- end: WebComponents -->
 

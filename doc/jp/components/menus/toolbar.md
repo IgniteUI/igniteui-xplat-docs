@@ -26,7 +26,7 @@ npm install {PackageCharts}
 npm install {PackageCore}
 ```
 
-`ツールバー`とその機能を、`XamDataChart` コンポーネントとともに使用する場合、次のモジュールが必要です。
+`Toolbar` とその機能を、`XamDataChart` コンポーネントとともに使用する場合、次のモジュールが必要です。
 
 ```ts
 import { IgxToolbarModule } from 'igniteui-angular-layouts';
@@ -216,7 +216,7 @@ builder.Services.AddIgniteUIBlazor(
 
 ズーム アクション
 
-- `ZoomReset`: ToolActionLabel` は、チャート上で `ResetZoom` を実行して、ズーム レベルをデフォルトの位置にリセットします。
+- `ZoomReset`: `ToolActionLabel` は、チャート上で `ResetZoom` を実行して、ズーム レベルをデフォルトの位置にリセットします。
 - `ZoomMenu`: `ToolActionIconMenu` は、チャートのズーム レベルを増減するためにチャート上で `ZoomIn` および `ZoomOut` を実行する 2 つの `ToolActionLabel` 項目を公開します。 
 
 トレンド アクション  
@@ -260,7 +260,7 @@ builder.Services.AddIgniteUIBlazor(
 
 次の例は、`ZoomReset` および `Analyze Menu` メニュー ツール アクションの両方を非表示にする方法を示しています。`AfterId` プロパティを使用してそれを `ZoomOut` に割り当てることにより、`ZoomReset` ツール アクションの新しいインスタンスが追加され、`ZoomMenu` 内に配置されます。これにより、新しいリセット ツールが `ZoomMenu` の下部に表示されます。
 
-`sample="/charts/toolbar/layout-actions-for-data-chart", height="60", alt="{Platform} Toolbar Example"`
+`sample="/charts/toolbar/layout-actions-for-data-chart", height="60", alt="{Platform} Toolbar の例"`
 
 ### 垂直方向
 
@@ -286,7 +286,7 @@ builder.Services.AddIgniteUIBlazor(
 
 アイコン コンポーネントは、`BaseTheme` プロパティを `Toolbar` に直接使用してスタイルを設定できます。次の例は、適用できるさまざまなテーマ オプションを示しています。
 
-`sample="/charts/toolbar/theming", height="70", alt="{Platform} Toolbar Styling/Theming"`
+`sample="/charts/toolbar/theming", height="70", alt="{Platform} Toolbar スタイル設定/テーマ設定"`
 
 ## API リファレンス
 
