@@ -275,7 +275,7 @@
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifySetItem"}],"originalName":"NotifySetItem"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyClearItems"}],"originalName":"NotifyClearItems"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyInsertItem"}],"originalName":"NotifyInsertItem"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyRemoveItem"}],"originalName":"NotifyRemoveItem"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyRemoveItem"}],"originalName":"NotifyRemoveItem"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"XYChart",
     "names":[{"platform":"Angular","fileName":"igx-xy-chart-component.ts","mappedName":"IgxXYChartComponent"}],
     "members":[
@@ -359,9 +359,9 @@
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getScaledValueX"}],"originalName":"GetScaledValueX"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getUnscaledValueX"}],"originalName":"GetUnscaledValueX"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getScaledValueY"}],"originalName":"GetScaledValueY"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getUnscaledValueY"}],"originalName":"GetUnscaledValueY"}],"originalBaseTypeName":"DomainChart","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getUnscaledValueY"}],"originalName":"GetUnscaledValueY"}],"originalBaseTypeName":"DomainChart","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ChartGroupDescription",
-    "names":[{"platform":"Angular","fileName":"igx-chart-group-description.ts","dynamicModuleName":"igx-chart-group-description-dynamic-module.ts","moduleName":"igx-chart-group-description-module.ts","mappedName":"IgxChartGroupDescription"}],"members":[],"originalBaseTypeName":"ChartSortDescription","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    "names":[{"platform":"Angular","fileName":"igx-chart-group-description.ts","dynamicModuleName":"igx-chart-group-description-dynamic-module.ts","moduleName":"igx-chart-group-description-module.ts","mappedName":"IgxChartGroupDescription"}],"members":[],"originalBaseTypeName":"ChartSortDescription","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ChartGroupDescriptionCollection",
     "names":[{"platform":"Angular","fileName":"igx-chart-group-description-collection.ts","mappedName":"IgxChartGroupDescriptionCollection"}],
     "members":[
@@ -370,13 +370,13 @@
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"clear"}],"originalName":"Clear"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"indexOf"}],"originalName":"IndexOf"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"remove"}],"originalName":"Remove"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"removeAt"}],"originalName":"RemoveAt"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"removeAt"}],"originalName":"RemoveAt"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ChartSortDescription",
     "names":[{"platform":"Angular","fileName":"igx-chart-sort-description.ts","dynamicModuleName":"igx-chart-sort-description-dynamic-module.ts","moduleName":"igx-chart-sort-description-module.ts","mappedName":"IgxChartSortDescription"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"field"}],"originalName":"Field"},
     { "names":[{"platform":"Angular","mappedType":"ListSortDirection","mappedName":"sortDirection"}],"originalName":"SortDirection"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"equals"}],"originalName":"Equals"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"equals"}],"originalName":"Equals"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ChartSortDescriptionCollection",
     "names":[{"platform":"Angular","fileName":"igx-chart-sort-description-collection.ts","mappedName":"IgxChartSortDescriptionCollection"}],
     "members":[
@@ -386,7 +386,7 @@
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"clear"}],"originalName":"Clear"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"indexOf"}],"originalName":"IndexOf"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"remove"}],"originalName":"Remove"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"removeAt"}],"originalName":"RemoveAt"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"removeAt"}],"originalName":"RemoveAt"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ChartSummaryDescription",
     "names":[{"platform":"Angular","fileName":"igx-chart-summary-description.ts","dynamicModuleName":"igx-chart-summary-description-dynamic-module.ts","moduleName":"igx-chart-summary-description-module.ts","mappedName":"IgxChartSummaryDescription"}],
     "members":[
@@ -394,7 +394,7 @@
     { "names":[{"platform":"Angular","mappedType":"DataSourceSummaryOperand","mappedName":"operand"}],"originalName":"Operand"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"alias"}],"originalName":"Alias"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"calculatorDisplayName"}],"originalName":"CalculatorDisplayName"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"equals"}],"originalName":"Equals"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"equals"}],"originalName":"Equals"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ChartSummaryDescriptionCollection",
     "names":[{"platform":"Angular","fileName":"igx-chart-summary-description-collection.ts","mappedName":"IgxChartSummaryDescriptionCollection"}],
     "members":[
@@ -404,7 +404,7 @@
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"clear"}],"originalName":"Clear"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"indexOf"}],"originalName":"IndexOf"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"remove"}],"originalName":"Remove"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"removeAt"}],"originalName":"RemoveAt"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"removeAt"}],"originalName":"RemoveAt"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ToolTipType","isEnum":true,
     "names":[{"platform":"Angular","fileName":"ToolTipType.ts","mappedName":"ToolTipType"}],
     "members":[
@@ -413,7 +413,7 @@
     { "names":[{"platform":"Angular","mappedType":"ToolTipType","mappedName":"Category"}],"originalName":"Category"},
     { "names":[{"platform":"Angular","mappedType":"ToolTipType","mappedName":"None"}],"originalName":"None"},
     { "names":[{"platform":"Angular","mappedType":"ToolTipType","mappedName":"Data"}],"originalName":"Data"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CrosshairsDisplayMode","isEnum":true,
     "names":[{"platform":"Angular","fileName":"CrosshairsDisplayMode.ts","mappedName":"CrosshairsDisplayMode"}],
     "members":[
@@ -422,7 +422,7 @@
     { "names":[{"platform":"Angular","mappedType":"CrosshairsDisplayMode","mappedName":"Horizontal"}],"originalName":"Horizontal"},
     { "names":[{"platform":"Angular","mappedType":"CrosshairsDisplayMode","mappedName":"Vertical"}],"originalName":"Vertical"},
     { "names":[{"platform":"Angular","mappedType":"CrosshairsDisplayMode","mappedName":"Both"}],"originalName":"Both"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"DomainType","isEnum":true,
     "names":[{"platform":"Angular","fileName":"DomainType.ts","mappedName":"DomainType"}],
     "members":[
@@ -430,7 +430,7 @@
     { "names":[{"platform":"Angular","mappedType":"DomainType","mappedName":"Financial"}],"originalName":"Financial"},
     { "names":[{"platform":"Angular","mappedType":"DomainType","mappedName":"Scatter"}],"originalName":"Scatter"},
     { "names":[{"platform":"Angular","mappedType":"DomainType","mappedName":"Shape"}],"originalName":"Shape"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"YAxisLabelLocation","isEnum":true,
     "names":[{"platform":"Angular","fileName":"YAxisLabelLocation.ts","mappedName":"YAxisLabelLocation"}],
     "members":[
@@ -439,7 +439,7 @@
     { "names":[{"platform":"Angular","mappedType":"YAxisLabelLocation","mappedName":"InsideLeft"}],"originalName":"InsideLeft"},
     { "names":[{"platform":"Angular","mappedType":"YAxisLabelLocation","mappedName":"InsideRight"}],"originalName":"InsideRight"},
     { "names":[{"platform":"Angular","mappedType":"YAxisLabelLocation","mappedName":"Auto"}],"originalName":"Auto"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"XAxisLabelLocation","isEnum":true,
     "names":[{"platform":"Angular","fileName":"XAxisLabelLocation.ts","mappedName":"XAxisLabelLocation"}],
     "members":[
@@ -448,13 +448,13 @@
     { "names":[{"platform":"Angular","mappedType":"XAxisLabelLocation","mappedName":"InsideTop"}],"originalName":"InsideTop"},
     { "names":[{"platform":"Angular","mappedType":"XAxisLabelLocation","mappedName":"InsideBottom"}],"originalName":"InsideBottom"},
     { "names":[{"platform":"Angular","mappedType":"XAxisLabelLocation","mappedName":"Auto"}],"originalName":"Auto"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ChartSeriesEventArgs",
     "names":[{"platform":"Angular","fileName":"igx-chart-series-event-args.ts","mappedName":"IgxChartSeriesEventArgs"}],
     "members":[
-    { "names":[{"platform":"Angular","mappedType":"IgxSeriesComponent","mappedName":"series"}],"originalName":"Series"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"IgxSeriesComponent","mappedName":"series"}],"originalName":"Series"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"DomainChartSeriesPointerEventArgs",
     "names":[{"platform":"Angular","fileName":"igx-domain-chart-series-pointer-event-args.ts","mappedName":"IgxDomainChartSeriesPointerEventArgs"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"IgxSeriesComponent","mappedName":"series"}],"originalName":"Series"},
-    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"item"}],"originalName":"Item"}],"originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"item"}],"originalName":"Item"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}
