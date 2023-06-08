@@ -1,23 +1,23 @@
 ---
-title: {Platform} Toolbar Component | {ProductName}
-_description: See how you can easily get started with {Platform} Toolbar Component. Compatible with the Data Chart. Extend your .
-_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Toolbar components, {Platform} Toolbar controls
+title: {Platform} Toolbar コンポーネント | {ProductName}
+_description: {Platform} ツールバー コンポーネントを簡単に始める方法をご覧ください。データ チャートと互換性があります。
+_keywords: {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, {Platform}, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} ツールバー コンポーネント, {Platform} ツールバー コントロール
 mentionedTypes: ["Toolbar", "DomainChart", "CategoryChart", "XamDataChart"]
 _language: ja
 ---
 
-# {Platform} Toolbar Overview
+# {Platform} Toolbar (ツールバー) の概要
 
-The {Platform} Toolbar component is a companion conainer for UI operations to interact both standalone or with the {Platform} Data Chart & `CategoryChart` components. This allows you to easily choose from a preset of properites on the eg. `XamDataChart` with predefined SVG icons, but it also gives you the ability to create custom tools for your project. Benefiting from a number of attributes, you can define or change the icon in use or apply different actions to it. The `Toolbar` will display it's own SVG icons.
+{Platform} ツールバー コンポーネントは、スタンドアロンまたは {Platform} データ チャートおよび `CategoryChart` コンポーネントの両方と対話するための UI 操作のコンパニオン コンテナです。これにより、事前に定義された SVG アイコンを持つ `XamDataChart` などのプロパティのプリセットから簡単に選択できるようになりますが、プロジェクト固有のカスタム ツールを作成する機能も提供されます。多数の属性を利用して、使用中のアイコンを定義または変更したり、アイコンにさまざまなアクションを適用したりできます。`Toolbar` には独自の SVG アイコンが表示されます。
 
-## {Platform} Toolbar Example
+## {Platform} ツールバーの例
 
 `sample="/charts/toolbar/actions-built-in-data-chart", height="60", alt="{Platform} Toolbar Example"`
 
-## Dependencies
+## 依存関係
 
 <!-- Angular, WebComponents, React -->
-Install the {ProductName} layouts, inputs,  charts and core packages:
+{ProductName} のレイアウト、入力、チャート、コア パッケージをインストールします。
 
 ```cmd
 npm install {PackageLayouts}
@@ -26,7 +26,7 @@ npm install {PackageCharts}
 npm install {PackageCore}
 ```
 
-The following modules are required when using both the `Toolbar` with the `XamDataChart` component and it's features.
+`ツールバー`とその機能を、`XamDataChart` コンポーネントとともに使用する場合、次のモジュールが必要です。
 
 ```ts
 import { IgxToolbarModule } from 'igniteui-angular-layouts';
@@ -86,13 +86,13 @@ ModuleManager.register(
 
 <!-- Blazor -->
 
-Add the **IgniteUI.Blazor.Controls** namespace in the **_Imports.razor** file:
+**IgniteUI.Blazor.Controls** 名前空間を **_Imports.razor** ファイルに追加します。
 
 ```razor
 @using IgniteUI.Blazor.Controls
 ```
 
-The following modules are required when using both the `Toolbar` with the `XamDataChart` component and it's features.
+`XamDataChart` コンポーネントとその機能の両方で `Toolbar` とその機能をを使用する場合、次のモジュールが必要です。
 
 ```razor
 // in Program.cs file
@@ -109,7 +109,7 @@ builder.Services.AddIgniteUIBlazor(
 );
 ```
 
-You will also need to link an additional CSS file to apply the styling to the `Toolbar` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+スタイルを `Toolbar` コンポーネントに適用するには、追加の CSS ファイルをリンクする必要もあります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります。
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -117,11 +117,11 @@ You will also need to link an additional CSS file to apply the styling to the `T
 
 <!-- end: Blazor -->
 
-## Usage
+## 使用方法
 
-### {Platform} Data Chart integration
+### {Platform} データ チャートの統合
 
-The {Platform} Toolbar contains a `Target` property. This is used to link another component such as the DataChart. 
+{Platform} ツールバーには、`Target` プロパティが含まれています。これは、DataChart などの別のコンポーネントをリンクするために使用されます。 
 
 ```razor
   <IgbToolbar
@@ -210,41 +210,41 @@ The {Platform} Toolbar contains a `Target` property. This is used to link anothe
   }
 ```
 
-Several pre-existing `ToolAction` items and menus become available when the chart is linked with the Toolbar. The following names are a list of Tool/Tool `OverlayId` names necessary for further customization such as adding, editing, toggling visibility of tools. These names can be assinged to the `OverlayId`, `BeforeId` and `AfterId`.
+チャートが ツールバー にリンクされると、いくつかの既存の `ToolAction` 項目とメニューが使用可能になります。次の名前は、ツールの追加、編集、表示 / 非表示の切り替えなどのさらなるカスタマイズに必要な Tool/Tool `OverlayId` 名のリストです。これらの名前は、`OverlayId`、`BeforeId`、`AfterId` に割り当てることができます。
 
-Here is a list of the provided {Platform} `XamDataChart` Tool Actions and their associated `OverlayId`:
+以下は、提供されている {Platform} `XamDataChart` ツール アクションとそれに関連付けられた `OverlayId` のリストです。
 
-Zooming Actions
+ズーム アクション
 
-- `ZoomReset`: `ToolActionLabel` performs `ResetZoom` on the chart for resetting the zoom level to it's default position.
-- `ZoomMenu`: `ToolActionIconMenu` exposes two `ToolActionLabel` items to perform  `ZoomIn` and `ZoomOut` on the chart for increasing/decreasing the chart's zoom level. 
+- `ZoomReset`: ToolActionLabel` は、チャート上で `ResetZoom` を実行して、ズーム レベルをデフォルトの位置にリセットします。
+- `ZoomMenu`: `ToolActionIconMenu` は、チャートのズーム レベルを増減するためにチャート上で `ZoomIn` および `ZoomOut` を実行する 2 つの `ToolActionLabel` 項目を公開します。 
 
-Trend Actions  
+トレンド アクション  
 
-- `AnalyzeMenu`: `ToolActionIconMenu` contains several options for configuring the chart.
- - `AnalyzeHeader`: sub section header `OverlayId`
-  - `LinesMenu`: sub menu `OverlayId`
-    - `LinesHeader`: sub menu section header `OverlayId`
-      - `MaxValue`: `ToolActionCheckbox` - displays a dashed horizontal line along the yAxis at the maximum value.
-      - `MinValue`: `ToolActionCheckbox`- displays a dashed horizontal line along the yAxis at the minimum value.
-      - `Average`: `ToolActionCheckbox` - displays a dashed horizontal line along the yAxis at the average value.
+- `AnalyzeMenu`: `ToolActionIconMenu` には、チャートを構成するためのいくつかのオプションが含まれています。
+ - `AnalyzeHeader`: サブ セクション ヘッダー `OverlayId`。
+  - `LinesMenu`: サブ メニュー `OverlayId`。
+    - `LinesHeader`: サブ メニュー セクション ヘッダー `OverlayId`。
+      - `MaxValue`: `ToolActionCheckbox` - y 軸に沿って最大値の水平破線を表示します。
+      - `MinValue`: `ToolActionCheckbox`- y 軸に沿って最小値の水平破線を表示します。
+      - `Average`: `ToolActionCheckbox` - y 軸に沿って平均値の水平破線を表示します。
   - `TrendsMenu`: `ToolActionLabel`
-    - `TrendsHeader`: sub section header `OverlayId`
-      - `Exponential`: `ToolActionRadio` - sets the `TrendLineType` on the chart to `ExponentialFit`.
-      - `Linear`: `ToolActionRadio` - sets the `TrendLineType` on the chart to `LinearFit`.
-      - `Logarithmic`: `ToolActionRadio` - sets the `TrendLineType` on the chart to `LogarithmicFit`.
- - `HelpersHeader`: sub section header `OverlayId`
-  - `SeriesAvg`: `ToolActionCheckbox` - adds a series to the `ValueLines` using the `ValueLayerValueMode` of type `Average`.
+    - `TrendsHeader`: サブ セクション ヘッダー `OverlayId`。
+      - `Exponential`: `ToolActionRadio` - チャート上の `TrendLineType` を `ExponentialFit` に設定します。
+      - `Linear`: `ToolActionRadio` - チャート上の `TrendLineType` を `LinearFit` に設定します。
+      - `Logarithmic`: `ToolActionRadio` - チャート上の `TrendLineType` を `LogarithmicFit` に設定します。
+ - `HelpersHeader`: サブ セクション ヘッダー `OverlayId`。
+  - `SeriesAvg`: `ToolActionCheckbox` - `Average` タイプの `ValueLayerValueMode` を使用して、`ValueLines` に系列を追加します。
   - `ValueLabelsMenu`:  `ToolActionLabel` 
-    - `ValueLabelsHeader`: sub menu section header `OverlayId`
-      - `ShowValueLabels`: `ToolActionCheckbox` - displays data point values via the chart's `CalloutsVisible` property.
-      - `ShowLastValueLabel`: `ToolActionCheckbox` - displays final value callouts via the chart's `FinalValueAnnotationsVisible` property.
- - `ShowCrosshairs`: `ToolActionCheckbox` - displays the crosshair annotation via the chart's `CrosshairsDisplayMode` property triggered on mouse hover. 
- - `ShowGridlines`: `ToolActionCheckbox` used to display extra gridlines via the `XAxisMajorStroke` property.
+    - `ValueLabelsHeader`: サブ メニュー セクション ヘッダー `OverlayId`。
+      - `ShowValueLabels`: `ToolActionCheckbox` - チャートの `CalloutsVisible` プロパティを介してデータ ポイント値を表示します。
+      - `ShowLastValueLabel`: `ToolActionCheckbox` - チャートの `FinalValueAnnotationsVisible` プロパティを介して最終値のコールアウトを表示します。
+ - `ShowCrosshairs`: `ToolActionCheckbox` - チャートの `CrosshairsDisplayMode` プロパティによりマウス ホバー時に十字線の注釈を表示します。 
+ - `ShowGridlines`: `ToolActionCheckbox` は、`XAxisMajorStroke` プロパティを介して追加のグリッド線を表示するために使用されます。
 
-### Tool Actions
+### ツール アクション
 
-The following is a list of `ToolAction` items you can add to the Toolbar.
+以下は、ツールバーに追加できる `ToolAction` 項目のリストです。
 
 - `ToolActionButton`
 - `ToolActionCheckbox`
@@ -254,17 +254,17 @@ The following is a list of `ToolAction` items you can add to the Toolbar.
 - `ToolActionNumberInput`
 - `ToolActionRadio`
 
-Each of these tools exposes an `OnCommand` event that can be triggered upon interacting with them as a mouse click.
+これらの各ツールは、マウスのクリックのような対話操作によって実行される `OnCommand` イベントを公開します。
 
-New and existing tools can be repositioned and marked hidden using the `OverlayId`, `BeforeId` and `AfterId` properties on the `ToolAction` object. ToolActions also expose a `Visibility` property.  
+`ToolAction` オブジェクトの `OverlayId`、`BeforeId`、`AfterId` プロパティを使用して、新規および既存のツールの位置を変更したり、非表示としてマークしたりすることができます。ToolActions は `Visibility` プロパティも公開します。  
 
-The following example demonstrates hiding both the `ZoomReset` and `Analyze Menu` menu tool actions. A new instance of the `ZoomReset` tool action is added and placed within the `ZoomMenu` by using the the `AfterId` property and assinging that to `ZoomOut`. This will ensure the new Reset tool is displayed at the bottom of the `ZoomMenu`.
+次の例は、`ZoomReset` および `Analyze Menu` メニュー ツール アクションの両方を非表示にする方法を示しています。`AfterId` プロパティを使用してそれを `ZoomOut` に割り当てることにより、`ZoomReset` ツール アクションの新しいインスタンスが追加され、`ZoomMenu` 内に配置されます。これにより、新しいリセット ツールが `ZoomMenu` の下部に表示されます。
 
 `sample="/charts/toolbar/layout-actions-for-data-chart", height="60", alt="{Platform} Toolbar Example"`
 
-### Vertical Orientation
+### 垂直方向
 
-By default the {Platform} Toolbar is shown in the horizontal `Orientation` position but also has the ability to shown vertically. 
+デフォルトでは、{Platform} ツールバーは水平 `Orientation` の位置で表示されますが、垂直方向に表示する機能もあります。
 
 ```html
 <igc-toolbar orientation="vertical"></igc-icon>
@@ -278,22 +278,22 @@ By default the {Platform} Toolbar is shown in the horizontal `Orientation` posit
 <IgbToolbar orientation="vertical" />
 ```
 
-The following example demonstrates the vertical orientation of the {Platform} Toolbar.
+次の例は、{Platform} ツールバーの垂直方向を示しています。
 
 `sample="/charts/toolbar/layout-in-vertical-orientation", height="60", alt="{Platform} Verical Orientation"`
 
-## Styling/Theming
+## スタイル設定 / テーマ設定
 
-The icon component can be styled by using it's `BaseTheme` property directly to the `Toolbar`. The following example demonstrates the various theme options that can be applied.
+アイコン コンポーネントは、`BaseTheme` プロパティを `Toolbar` に直接使用してスタイルを設定できます。次の例は、適用できるさまざまなテーマ オプションを示しています。
 
 `sample="/charts/toolbar/theming", height="70", alt="{Platform} Toolbar Styling/Theming"`
 
-## API References
+## API リファレンス
 
  - `Toolbar`
  - `XamDataChart`
 
-## Additional Resources
+## その他のリソース
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})
