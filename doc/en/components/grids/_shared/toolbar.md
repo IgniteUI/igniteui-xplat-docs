@@ -597,6 +597,37 @@ The following sample demonstrates how to add an additional button to the toolbar
 `sample="/{ComponentSample}/toolbar-sample-4", height="420", alt="{Platform} {ComponentTitle} toolbar sample 4"`
 
 
+<!-- WebComponents, Blazor -->
+
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```ts
+<igc-grid class="grid">
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties for that class:
+
+```css
+.grid {
+    --igx-grid-toolbar-background-color: #2a2b2f;
+    --igx-grid-toolbar-title-text-color: #ffcd0f;
+    --igx-grid-toolbar-dropdown-background: #2a2b2f;
+}
+```
+
+### Demo
+
+`sample="/{ComponentSample}/toolbar-style", height="540", alt="{Platform} {ComponentTitle} Toolbar Styling Example"`
+
+<!-- end: WebComponents, Blazor -->
+
 <!-- Angular -->
 
 ## Styling
