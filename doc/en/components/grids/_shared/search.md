@@ -23,16 +23,19 @@ The following example represents `{ComponentName}` with search input box that al
 
 Let's start by creating our grid and binding it to our data. We will also add some custom styles for the components we will be using!
 
+<!-- Angular -->
+
 ```html
-<igx-grid #grid1 id="grid1" [data]="data" [autoGenerate]="false" [allowFiltering]="true">
+<{ComponentSelector} #grid1 id="grid1" [data]="data" [autoGenerate]="false" [allowFiltering]="true">
     <igx-column [field]="'IndustrySector'" dataType="string" [sortable]="true"></igx-column>
     <igx-column [field]="'IndustryGroup'" dataType="string" [sortable]="true"></igx-column>
     <igx-column [field]="'SectorType'" dataType="string" [sortable]="true"></igx-column>
     <igx-column [field]="'KRD'" dataType="number" [sortable]="true"></igx-column>
     <igx-column [field]="'MarketNotion'" dataType="number" [sortable]="true"></igx-column>
     <igx-column [field]="'Date'" dataType="date" [sortable]="true"></igx-column>
-</igx-grid>
+</{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} @ref=grid Width="100%" Height="480px" AllowFiltering=true AutoGenerate=false Data=marketData DisplayDensity="DisplayDensity.Compact">
@@ -808,24 +811,12 @@ public prevSearch() {
 
 ## Known Limitations
 
-<!-- Angular -->
 
 |Limitation|Description|
 |--- |--- |
 |Searching in cells with a template|The search functionality highlights work only for the default cell templates. If you have a column with custom cell template, the highlights will not work so you should either use alternative approaches, such as a column formatter, or set the `Searchable` property on the column to false.|
 |Remote Virtualization| The search will not work properly when using remote virtualization|
 |Cells with cut off text| When the text in the cell is too large to fit and the text we are looking for is cut off by the ellipsis, we will still scroll to the cell and include it in the match count, but nothing will be highlighted |
-
-<!-- end: Angular -->
-
-<!-- Blazor -->
-
-|Limitation|Description|
-|--- |--- |
-|Searching in cells with a template|The search functionality highlights work only for the default cell templates. If you have a column with custom cell template, the highlights will not work so you should either use alternative approaches, such as a column formatter, or set the `Searchable` property on the column to false.|
-|Cells with cut off text| When the text in the cell is too large to fit and the text we are looking for is cut off by the ellipsis, we will still scroll to the cell and include it in the match count, but nothing will be highlighted |
-
-<!-- end: Blazor -->
 
 ## API References
 
