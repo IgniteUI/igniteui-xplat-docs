@@ -515,6 +515,9 @@ public configureExport(evt: CustomEvent<IgcGridToolbarExportEventArgs>) {
     const options: IgcExporterOptionsBase = args.options;
 
     options.fileName = `Report_${new Date().toDateString()}`;
+    (args.exporter as any).columnExporting.subscribe((columnArgs: any) => {
+            columnArgs.cancel = columnArgs.header === 'Athlete' || columnArgs.header === 'Country';
+    });
 }
 ```
 }
