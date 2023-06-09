@@ -247,6 +247,7 @@ toolbar interaction components.
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
+<!-- Angular -->
 
 Each action now exposes a way to change the overlay settings of the actions dialog by using the `OverlaySettings` input. For example:
 
@@ -268,12 +269,8 @@ Each action now exposes a way to change the overlay settings of the actions dial
 constructor() {
     var pinTool = this.pinTool = document.getElementById('pinTool') as IgcGridToolbarPinningComponent;
     var hideTool = this.hideTool = document.getElementById('hideTool') as IgcGridToolbarHidingComponent;
-
-    this._bind = () => {
-        pinTool.overlaySettings = this.overlaySettingsScaleCenter;
-        hideTool.overlaySettings = this.overlaySettingsAuto;
-    }
-    this._bind();
+    pinTool.overlaySettings = this.overlaySettingsScaleCenter;
+    hideTool.overlaySettings = this.overlaySettingsAuto;
 }
 ```
 
@@ -303,6 +300,8 @@ constructor() {
 ```
 
 The default overlaySettings are using *ConnectedPositionStrategy* with *Absolute* scroll strategy, *modal* set to false, with enabled *close on escape* and *close on outside click* interactions.
+
+<!-- end: Angular -->
 
 ### Column Pinning
 
@@ -398,6 +397,8 @@ Toolbar Advanced Filtering component provides the default UI for the Advanced Fi
 
 As with the rest of the toolbar actions, exporting is provided through a `GridToolbarExporter` out of the box.
 
+<!-- Angular -->
+
 The exporting component is using the respective service for the target data format `ExcelExporterService` and `CSVExporterService`. That means if the respective service is not provided through the dependency injection chain, the component won't be able to export anything.
 
 If you need a refresher on the DI in {Platform}, check the [official guide](https://{Platform}.io/guide/dependency-injection). Here is a sample snippet showing how to enable all export services for your application.
@@ -416,6 +417,8 @@ export class AppModule { ... }
 
 > [!Note]
 > In v12.2.1 and later, the exporter services are provided in root, which means you no longer need to declare them in the AppModule providers.
+
+<!-- end: Angular -->
 
 The toolbar exporter component exposes several input properties for customizing both the UI and the exporting experience.
 
@@ -443,22 +446,11 @@ Here is a snippet showing some of the options which can be customized through th
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
-        <igc-grid-toolbar-exporter
-            <!-- If active, enables the csv export entry in the dropdown UI -->
-            export-csv="true"
-            <!-- If active, enables the excel export entry in the dropdown UI -->
-            export-excel="true"
-            <!-- The name of the generated export file without the file extension -->
-            filename="exported_data">
-            <!-- Custom text for the exporter button -->
-            excel-text="Custom text for the excel export entry"
-            csv-text="Custom text for the CSV export entry"
+        <igc-grid-toolbar-exporter export-csv="true" export-excel="true" filename="exported_data">
         </igc-grid-toolbar-exporter>
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
-
-@@if (igxName !== 'IgxHierarchicalGrid') {
 
 In addition to changing the exported filename, the user can further configure the exporter options by waiting for the `ToolbarExporting` event and customizing the options entry in the event properties.
 
@@ -482,15 +474,13 @@ The following code snippet demonstrates subscribing to the toolbar exporting eve
 ```ts
 constructor() {
     var toolbarExporter = this.toolbarExporter = document.getElementById('toolbarExporter') as IgcGridToolbarExporterComponent;
-
-    this._bind = () => {
-        toolbarExporter.toolbarExporting = this.configureExport;
-    }
-    this._bind();
+    toolbarExporter.addEventListener("toolbarExporting", this.configureExport);
 }
 ```
 <!-- end: WebComponents -->
 
+
+<!-- Angular -->
 ```typescript
 configureExport(args: IGridToolbarExportEventArgs) {
     const options: IgxExporterOptionsBase = args.options;
@@ -517,31 +507,14 @@ configureExport(args: IGridToolbarExportEventArgs) {
     });
 }
 ```
+<!-- end: Angular -->
 
 ```typescript
-configureExport(args: IGridToolbarExportEventArgs) {
+public configureExport(evt: CustomEvent<IgcGridToolbarExportEventArgs>) {
+    const args = evt.detail;
     const options: IgcExporterOptionsBase = args.options;
 
     options.fileName = `Report_${new Date().toDateString()}`;
-
-    if (options instanceof IgcExcelExporterOptions) {
-        options.columnWidth = 10;
-    } else {
-        options.fileType = CsvFileTypes.TSV;
-        options.valueDelimiter = '\t';
-    }
-
-    args.exporter.columnExporting.subscribe((columnArgs: IColumnExportingEventArgs) => {
-        if (igcName === 'IgcGrid') {
-        // Don't export image fields
-        columnArgs.cancel = columnArgs.header === 'Athlete' ||
-                            columnArgs.header === 'Country';
-        }
-        if (igcName === 'IgcTreeGrid') {
-        // Don't export image field
-        columnArgs.cancel = columnArgs.header === 'Name';
-        }
-    });
 }
 ```
 }
@@ -605,6 +578,10 @@ Here is a sample snippet:
 <{ComponentSelector} id="grid">
     <igc-grid-toolbar>
         <igc-grid-toolbar-title>title</igx-grid-toolbar-title>
+        <!--
+            Everything between the toolbar tags except the default toolbar components/directives
+            will be projected as custom content.
+         -->
         <igc-grid-toolbar-actions>
         </igc-grid-toolbar-actions>
     </igc-grid-toolbar>
@@ -740,12 +717,12 @@ The last step is to **include** the newly created themes.
 
 The Grid Toolbar service has a few more APIs to explore, which are listed below.
 
-* `GridToolbarAdvancedFilteringComponent`
+* `GridToolbarAdvancedFiltering`
 * `GridToolbar`
 * `GridToolbarExporter`
 * `GridToolbarHiding`
 * `GridToolbarPinning`
-* `GridToolbarTitleDirective`
+* `GridToolbarTitle`
 
 * `{ComponentName}` Events:
 * `ToolbarExporting`

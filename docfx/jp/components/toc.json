@@ -258,6 +258,12 @@
       },
       {
         "exclude": ["Angular", "React"],
+        "name": "Toolbar",
+        "href": "grids/grid/toolbar.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
         "name": "複数行レイアウト",
         "href": "grids/grid/multi-row-layout.md",
         "status": ""
