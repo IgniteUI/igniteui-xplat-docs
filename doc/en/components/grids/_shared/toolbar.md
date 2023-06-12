@@ -226,7 +226,7 @@ Users can provide anything from simple text to more involved templates.
 ### Actions
 
 
-The `GridToolbarTitle` is where users can place actions/interactions in relation to the parent grid.
+The `GridToolbarActions` is where users can place actions/interactions in relation to the parent grid.
 As with the title portion of the toolbar, users can provide anything inside that template part, including the default
 toolbar interaction components.
 
@@ -238,6 +238,14 @@ toolbar interaction components.
         <!--...-->
     </igx-grid-toolbar-actions>
 </igx-grid-toolbar>
+```
+
+```razor
+<IgbGridToolbar>
+    <IgbGridToolbarActions>
+        <!--...-->
+    </IgbGridToolbarActions>
+</IgbGridToolbar>
 ```
 
 ```html
@@ -322,6 +330,14 @@ The component is setup to work out of the box with the parent grid containing th
 </igx-grid-toolbar>
 ```
 
+```razor
+<IgbGridToolbar>
+    <IgbGridToolbarActions>
+        <IgbGridToolbarPinning Title="Grid pinned columns" Prompt="Filter column collection" ColumnListHeight="400px"></IgbGridToolbarPinning>
+    </IgbGridToolbarActions>
+</IgbGridToolbar>
+```
+
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
@@ -353,6 +369,14 @@ title, the placeholder for the component input and the height of the dropdown it
 </igx-grid-toolbar>
 ```
 
+```razor
+<IgbGridToolbar>
+    <IgbGridToolbarActions>
+        <IgbGridToolbarHiding Title="Grid column hiding" Prompt="Filter column collection" ColumnListHeight="400px"></IgbGridToolbarHiding>
+    </IgbGridToolbarActions>
+</IgbGridToolbar>
+```
+
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
@@ -375,6 +399,14 @@ Toolbar Advanced Filtering component provides the default UI for the Advanced Fi
         <igx-grid-toolbar-advanced-filtering>Custom text for the toggle button</igx-grid-toolbar-advanced-filtering>
     </igx-grid-toolbar-actions>
 </igx-grid-toolbar>
+```
+
+```razor
+<IgbGridToolbar>
+    <IgbGridToolbarActions>
+        <IgbGridToolbarAdvancedFiltering></IgbGridToolbarAdvancedFiltering>
+    </IgbGridToolbarActions>
+</IgbGridToolbar>
 ```
 
 ```html
@@ -441,6 +473,14 @@ Here is a snippet showing some of the options which can be customized through th
         </igx-grid-toolbar-exporter>
     </igx-grid-toolbar-actions>
 </igx-grid-toolbar>
+```
+
+```razor
+<IgbGridToolbar>
+    <IgbGridToolbarActions>
+        <IgbGridToolbarExporter ExportCSV="true" ExportExcel="true" Filename="exported_data"></IgbGridToolbarExporter>
+    </IgbGridToolbarActions>
+</IgbGridToolbar>
 ```
 
 ```html
@@ -520,8 +560,22 @@ public configureExport(evt: CustomEvent<IgcGridToolbarExportEventArgs>) {
     });
 }
 ```
-}
 
+```razor
+<IgbGridToolbarExporter ExportStartedScript="WebGridToolbarExporting"></IgbGridToolbarExporter>
+```
+
+```razor
+// In Javascript
+igRegisterScript("WebGridToolbarExporting", (evt) => {
+        const args = evt.detail;
+        const options = args.options;
+        options.fileName = `Report_${new Date().toDateString()}`;
+        args.exporter.columnExporting.subscribe((columnArgs) => {
+                columnArgs.cancel = columnArgs.header === 'Athlete' || columnArgs.header === 'Country';
+        });
+}, false);
+```
 The following sample demonstrates how to customize the exported files:
 
 
@@ -529,7 +583,7 @@ The following sample demonstrates how to customize the exported files:
 
 
 
-<!-- Angular -->
+<!-- Angular, WebComponents -->
 
 ## Exporting Indicator
 
@@ -544,7 +598,6 @@ The sample belows uses has significant amount of data, in order to increase the 
 `sample="/{ComponentSample}/data-exporting-indicator", height="370", alt="{Platform} {ComponentTitle} data exporting indicator"`
 
 
-<!-- end: Angular -->
 
 ## Custom Content
 
@@ -596,6 +649,7 @@ The following sample demonstrates how to add an additional button to the toolbar
 
 `sample="/{ComponentSample}/toolbar-sample-4", height="420", alt="{Platform} {ComponentTitle} toolbar sample 4"`
 
+<!-- end: Angular, WebComponents -->
 
 <!-- WebComponents, Blazor -->
 
@@ -770,8 +824,6 @@ Styles:
 <!-- end: Angular -->
 
 ## Additional Resources
-
-<div class="divider--half"></div>
 
 Our community is active and always welcoming to new ideas.
 
