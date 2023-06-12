@@ -1386,11 +1386,6 @@ function omitFencedCode(options: any) {
         if (lang.toLowerCase() == "tsx") {
             lang = "ts";
         }
-        if (lang.toLowerCase() == "razor") {
-            lang = "html";
-        }
-        node.lang = lang;
-        //console.log(node);
     }
 
     return function (tree: any) {
