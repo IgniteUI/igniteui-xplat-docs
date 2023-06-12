@@ -225,6 +225,12 @@ And lastly, adding the `LinearProgress`, which is required while loading the lis
 ```
 <!-- end: Blazor -->
 
+## Known Issues and Limitations
+
+|Limitation|Description|
+|--- |--- |
+| Combo drop-down list may hide behind other UI elements. | Due to the stacking order of elements in the grid the combo drop-down may hide behind other elements like header, footers etc. |
+
 ## {Platform} {ComponentTitle} API Members
 - `{ComponentName}`
 - `Combo`
