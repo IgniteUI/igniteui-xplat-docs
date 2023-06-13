@@ -2,21 +2,20 @@
 title: {Platform} Tree Grid | Fastest {Platform} Tree Table | Infragistics
 _description: The {ProductName} Tree Grid is used to display and manipulate hierarchical or flat data with ease. Quickly bind your data with very little coding. Try it for FREE
 _keywords: {Platform} tree grid, igniteui for {Platform}, infragistics
-mentionedTypes: ['TreeGrid']
+mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
 ---
 
 # {Platform} Tree Grid Overview and Configuration
 
-{ProductName} `TreeTitle` is used to display and manipulate hierarchical or flat data with ease. Quickly bind your data with very little code or use a variety of events to customize different behaviors. This component provides a rich set of features like data selection, excel style filtering, sorting, paging, templating and column moving. Displaying of tabular data has never been easier and beautiful thanks to the Material Table-based UI Tree Grid.
+{ProductName} Tree Grid is used to display and manipulate hierarchical or flat data with ease. Quickly bind your data with very little code or use a variety of events to customize different behaviors. This component provides a rich set of features like data selection, excel style filtering, sorting, paging, templating and column moving. Displaying of tabular data has never been easier and beautiful thanks to the Material Table-based UI Tree Grid.
 
 ## {Platform} Tree Grid Example
 
 In this example, you can see how users can manipulate hierarchical or flat data. We have included filtering and sorting options, pinning and hiding, row selection, export to excel and csv.
 
-`sample="/{TreeGridSample}/overview", height="700", alt="{Platform} grid example"`
+`sample="/{TreeGridSample}/overview", height="700", alt="{Platform} Tree Grid example"`
 
-<div class="divider--half"></div>
 
 ## Getting Started with {ProductName} Tree Grid
 
@@ -60,7 +59,7 @@ npm install --save {PackageInputs}
 You also need to include the following import to use the tree grid:
 
 ```typescript
-import 'igniteui-webcomponents-grids/grids/combined.js';
+import 'igniteui-webcomponents-grids/grids/combined';
 ```
 
 The corresponding styles should also be referenced. You can choose light or dark option for one of the [themes](../../themes/overview.md) and based on your project configuration to import it:
@@ -126,22 +125,17 @@ In order to achieve this, the tree grid provides us with a couple of ways to def
 
 ```html
 <igc-tree-grid auto-generate="false" id="treeGrid" name="treeGrid">
-    <igc-column field="name" header="Name" data-type="String"></igc-column>
-    <igc-column field="hireDate" header="Hire Date" data-type="Date"></igc-column>
-    <igc-column field="age" header="Age" data-type="Number"></igc-column>
+    <igc-column field="name" header="Name" data-type="string"></igc-column>
+    <igc-column field="hireDate" header="Hire Date" data-type="date"></igc-column>
+    <igc-column field="age" header="Age" data-type="number"></igc-column>
 </igc-tree-grid>
 ```
 
 ```ts
-    private _bind: () => void;
-
     constructor() {
-        var treeGrid = (this.treeGrid = document.getElementById('treeGrid') as any) as IgcTreeGridComponent;
-        this._bind = () => {
-            treeGrid.childDataKey = "Employees";
-            treeGrid.data = this.employeesNestedData;
-        }
-        this._bind();
+        var treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
+        treeGrid.childDataKey = "Employees";
+        treeGrid.data = this.employeesNestedData;
     }
 ```
 ### Tree Cells
@@ -218,41 +212,42 @@ const data = [
 ];
 ```
 
-In the sample data above, all records have an ID, a ParentID and some additional properties like Name, JobTitle and Age. As mentioned previously, the ID of the records must be unique as it will be our `primaryKey`. The ParentID contains the ID of the parent node and could be set as a `foreignKey`. If a row has a ParentID that does not match any row in the tree grid, then that means this row is a root row.
+In the sample data above, all records have an ID, a ParentID and some additional properties like Name, JobTitle and Age. As mentioned previously, the ID of the records must be unique as it will be our `PrimaryKey`. The ParentID contains the ID of the parent node and could be set as a `ForeignKey`. If a row has a ParentID that does not match any row in the tree grid, then that means this row is a root row.
 
 <!-- end: Angular, WebComponents -->
 
+`sample="/{TreeGridSample}/using-primary-foreign-keys", height="700", alt="{Platform} Tree using Primary and Foreign keys example"`
+
 ## Persistence and Integration
 
-The indentation of the **tree cells** persists across other tree grid features like filtering, sorting and paging.
+The indentation of the `TreeGridCell` persists across other tree grid features like filtering, sorting and paging.
 
-- When **sorting** is applied on a column, the data rows get sorted by levels. This means that the root level rows will be sorted independently from their respective children. Their respective children collections will each be sorted independently as well and so on.
-- The first column (the one that has a `visibleIndex` of 0) is always the tree column.
-- The column that ends up with a `visibleIndex` of 0 after operations like column pinning, column hiding and column moving becomes the tree column.
+- When `Sorting` is applied on a column, the data rows get sorted by levels. This means that the root level rows will be sorted independently from their respective children. Their respective children collections will each be sorted independently as well and so on.
+- The first column (the one that has a `VisibleIndex` of 0) is always the tree column.
+- The column that ends up with a `VisibleIndex` of 0 after operations like column pinning, column hiding and column moving becomes the tree column.
 - Exported Excel worksheets reflect the hierarchy by grouping the records as they are grouped in the tree grid itself. All records expanded states would also be persisted and reflected.
 - When exporting to CSV, levels and expanded states are ignored and all data is exported as flat.
 
-<!-- WebComponents -->
+<!-- WebComponents, Blazor -->
 ## {Platform} Tree Grid Styling Configuration
 
 
-<!-- In addition to the predefined themes, the tree grid could be further customized by setting some of the available [CSS properties](../theming.md).  -->
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
 
-In case you would like to change the header background and text color you need to set a class for the tree grid first:
-
-```typescript
+```ts
 <igc-tree-grid class="tree-grid">
 ```
 
-Then set the `--header-background` and `--header-text-color` CSS properties for that class:
+Then set the related CSS properties for that class:
 
 ```css
 .tree-grid {
-    --header-background: #494949;
-    --header-text-color: #FFF;
+    --igx-grid-header-background: #494949;
+    --igx-grid-header-text-color: #FFF;
 }
 ```
-<!-- end: WebComponents -->
+<!-- end: WebComponents, Blazor -->
 
 
 ## API References
