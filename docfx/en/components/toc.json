@@ -1107,7 +1107,7 @@
   {
     "name": "Line Chart",
     "href": "charts/types/line-chart.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
     "exclude": ["Blazor", "Angular", "React", "WebComponents"],
@@ -1189,7 +1189,7 @@
         {
           "name": "Axis Gridlines",
           "href": "charts/features/chart-axis-gridlines.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "Axis Layouts",
@@ -1242,7 +1242,7 @@
         {
           "name": "Chart Overlays",
           "href": "charts/features/chart-overlays.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "Chart Performance",
@@ -1263,7 +1263,7 @@
         {
           "name": "Chart Trendlines",
           "href": "charts/features/chart-trendlines.md",
-          "status": ""
+          "status": "UPDATED"
         }
       ]
   },
@@ -1485,9 +1485,13 @@
     "status": ""
   },
   {
-    "exclude": ["Angular"],
     "name": "Menus",
     "header": true
+  },
+  {
+    "name": "Toolbar",
+    "href": "menus/toolbar.md",
+    "status": "PREVIEW"
   },
   {
     "exclude": ["Angular"],
