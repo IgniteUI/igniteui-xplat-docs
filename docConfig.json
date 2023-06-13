@@ -27,6 +27,8 @@
             { "name": "{PackageMaps}",              "value": "igniteui-angular-maps"},
             { "name": "{PackageSpreadsheet}",       "value": "igniteui-angular-spreadsheet"},
             { "name": "{PackageDockManager}",       "value": "igniteui-dockmanager"},
+            { "name": "{PackageInputs}",            "value": "igniteui-angular-inputs"},
+            { "name": "{PackageLayouts}",           "value": "igniteui-angular-layouts"},
             { "name": "{PackageWebsite}",           "value": "https://www.npmjs.com/package/"},
             { "name": "{PackageVerChangedImports}", "value": "8.2.12 (November 2019)"},
             { "name": "{PackageVerChanges-21-1}",   "value": "11.2.0 (April 2021)"},
