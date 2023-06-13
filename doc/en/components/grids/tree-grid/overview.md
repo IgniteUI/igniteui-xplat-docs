@@ -245,8 +245,14 @@ Then set the related CSS properties for that class:
 .tree-grid {
     --igx-grid-header-background: #494949;
     --igx-grid-header-text-color: #FFF;
+    --igx-grid-expand-icon-color: #FFCD0F;
+    --igx-grid-expand-icon-hover-color: #E0B710;
+    --igx-grid-row-hover-background: #F8E495;
 }
 ```
+
+`sample="/{TreeGridSample}/overview-styling", height="700", alt="{Platform} Tree Grid styling"`
+
 <!-- end: WebComponents, Blazor -->
 
 
