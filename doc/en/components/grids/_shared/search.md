@@ -23,26 +23,28 @@ The following example represents `{ComponentName}` with search input box that al
 
 Let's start by creating our grid and binding it to our data. We will also add some custom styles for the components we will be using!
 
-<!-- ComponentStart: Grid -->
+<!-- Angular -->
+
 ```html
-<igx-grid #grid1 id="grid1" [data]="data" [autoGenerate]="false" [allowFiltering]="true">
+<{ComponentSelector} #grid1 id="grid1" [data]="data" [autoGenerate]="false" [allowFiltering]="true">
     <igx-column [field]="'IndustrySector'" dataType="string" [sortable]="true"></igx-column>
     <igx-column [field]="'IndustryGroup'" dataType="string" [sortable]="true"></igx-column>
     <igx-column [field]="'SectorType'" dataType="string" [sortable]="true"></igx-column>
     <igx-column [field]="'KRD'" dataType="number" [sortable]="true"></igx-column>
     <igx-column [field]="'MarketNotion'" dataType="number" [sortable]="true"></igx-column>
     <igx-column [field]="'Date'" dataType="date" [sortable]="true"></igx-column>
-</igx-grid>
+</{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
-<IgbGrid @ref=grid Width="100%" Height="480px" AllowFiltering=true AutoGenerate=false Data=marketData DisplayDensity="DisplayDensity.Compact">
+<{ComponentSelector} @ref=grid Width="100%" Height="480px" AllowFiltering=true AutoGenerate=false Data=marketData DisplayDensity="DisplayDensity.Compact">
     <IgbColumn Field="IndustrySector" DataType="GridColumnDataType.String" Sortable=true></IgbColumn>
     <IgbColumn Field="IndustryGroup" DataType="GridColumnDataType.String" Sortable=true></IgbColumn>
     <IgbColumn Field="SectorType" DataType="GridColumnDataType.String" Sortable=true></IgbColumn>
     <IgbColumn Field="KRD" DataType="GridColumnDataType.Number" Sortable=true></IgbColumn>
     <IgbColumn Field="MarketNotion" DataType="GridColumnDataType.Number" Sortable=true></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 
 @code {
     protected override void OnInitialized()
@@ -54,73 +56,43 @@ Let's start by creating our grid and binding it to our data. We will also add so
 ```
 
 ```html
-<igc-grid id="grid1" auto-generate="false" allow-filtering="true">
-    <igc-column field="IndustrySector" data-type="String" sortable="true"></igc-column>
-    <igc-column field="IndustryGroup" data-type="String" sortable="true"></igc-column>
-    <igc-column field="SectorType" data-type="String" sortable="true"></igc-column>
-    <igc-column field="KRD" data-type="Number" sortable="true"></igc-column>
-    <igc-column field="MarketNotion" data-type="Number" sortable="true"></igc-column>
-    <igc-column field="Date" data-type="Date" sortable="true"></igc-column>
-</igc-grid>
-```
-
-<!-- ComponentEnd: Grid -->
-
-<!-- ComponentStart: TreeGrid -->
-```html
-<igx-tree-grid #treeGrid1 [data]="data" [autoGenerate]="false" primaryKey="ID" foreignKey="ParentID" [allowFiltering]="true">
-    <igx-column [field]="'Name'" dataType="string" [sortable]="true"></igx-column>
-    <igx-column [field]="'ID'" dataType="number" [sortable]="true"></igx-column>
-    <igx-column [field]="'Title'" dataType="string" [sortable]="true"></igx-column>
-    <igx-column [field]="'Age'" dataType="number" [sortable]="true"></igx-column>
-    <igx-column [field]="'HireDate'" dataType="date" [sortable]="true"></igx-column>
-</igx-tree-grid>
-```
-
-```razor
-TODO TREEGRID SNIPPET
-```
-
-```html
-<igc-tree-grid id="treeGrid1" auto-generate="false" primary-key="ID" foreign-key="ParentID" allow-filtering="true">
-    <igc-column field="Name" data-type="String" sortable="true"></igc-column>
-    <igc-column field="ID" data-type="Number" sortable="true"></igc-column>
-    <igc-column field="Title" data-type="String" sortable="true"></igc-column>
-    <igc-column field="Age" dataTdata-typeype="Number" sortable="true"></igc-column>
-    <igc-column field="HireDate" data-type="Date" sortable="true"></igc-column>
-</igc-tree-grid>
-```
-<!-- ComponentEnd: TreeGrid -->
-
-```css
-.grid__wrapper {
-    margin: 15px;
-}
-
-.offset {
-    margin-bottom: 15px;
-}
-
-.resultsText {
-    font-size: 0.875rem;
-}
-
-.chips {
-    margin-left: 5px;
-}
-
-.searchButtons {
-    margin-left: 5px;
-}
+<{ComponentSelector} id="grid1" auto-generate="false" allow-filtering="true">
+    <igc-column field="IndustrySector" data-type="string" sortable="true"></igc-column>
+    <igc-column field="IndustryGroup" data-type="string" sortable="true"></igc-column>
+    <igc-column field="SectorType" data-type="string" sortable="true"></igc-column>
+    <igc-column field="KRD" data-type="number" sortable="true"></igc-column>
+    <igc-column field="MarketNotion" data-type="number" sortable="true"></igc-column>
+    <igc-column field="Date" data-type="date" sortable="true"></igc-column>
+</{ComponentSelector}>
 ```
 
 Great, and now let's prepare for the search API of our `{ComponentName}`! We can create a few properties, which can be used for storing the currently searched text and whether the search is case sensitive and/or by an exact match.
+
+<!-- Angular -->
 
 ```typescript
 public searchText: string = '';
 public caseSensitive: boolean = false;
 public exactMatch: boolean = false;
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
+```typescript
+    private grid: IgcGridComponent;    
+
+    private searchBox: IgcInputComponent;
+    
+    private clearIcon: IgcIconComponent;
+    private nextIconButton: IgcIconButtonComponent;
+    private prevIconButton: IgcIconButtonComponent;
+
+    private caseSensitiveChip: IgcChipComponent;
+    private exactMatchChip: IgcChipComponent;
+```
+
+<!-- end: WebComponents -->
 
 ```razor
 public string searchText = "";
@@ -129,6 +101,11 @@ public bool exactMatch = false;
 ```
 
 ### {Platform} Search Box Input
+
+
+<!-- WebComponents -->
+Now let's create our search input!  By getting the input element we can get its current value. This will allow us to use the `{ComponentName}`'s `FindNext` and `FindPrev` methods to highlight all the occurrences of the `SearchText` and scroll to the next/previous one (depending on which method we have invoked).
+<!-- end: WebComponents -->
 
 <!-- Angular -->
 Now let's create our search input! By binding our `SearchText` as ngModel to our newly created input and subscribe to the ngModelChange event, we can detect every single `SearchText` modification by the user. This will allow us to use the `{ComponentName}`'s `FindNext` and `FindPrev` methods to highlight all the occurrences of the `SearchText` and scroll to the next/previous one (depending on which method we have invoked).
@@ -162,24 +139,61 @@ The methods from above return a **number** value (the number of times the `{Comp
 
 <!-- WebComponents -->
 ```html
-<!--searchgrid.component.html-->
-
-<input id="search1" placeholder="Search" />
+<igc-input id="searchBox" name="searchBox">
+    <igc-icon id="clearIcon" slot="prefix" name="clear" collection="material"></igc-icon>
+    <div slot="suffix">
+        <igc-chip selectable="true" id="caseSensitiveChip">Case Sensitive</igc-chip>
+        <igc-chip selectable="true" id="exactMatchChip">Exact Match</igc-chip>
+    </div>
+    <div slot="suffix">
+        <igc-icon-button id="prevIconBtn" variant="flat" name="prev" collection="material" ></igc-icon-button>
+        <igc-icon-button id="nextIconBtn" variant="flat" name="next" collection="material"></igc-icon-button>
+    </div>
+</igc-input>
 ```
+
 ```ts
 constructor() {
-    var search1 = this.search1 = document.getElementById('search1') as HtmlInputElement;
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
 
-    this._bind = () => {
-        search1.addEventListener('change', searchValue);
-    }
-    this._bind();
+    this.nextSearch = this.nextSearch.bind(this);
+    this.prevSearch = this.prevSearch.bind(this);
+    this.clearSearch = this.clearSearch.bind(this);
+
+    const prevIconText = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z'></path></svg>";
+    const nextIconText = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'></path></svg>";
+    const clearIconText = "<svg width='24' height='24' viewBox='0 0 24 24' title='Clear'><path d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></svg>";
+
+    registerIconFromText("prev", prevIconText, "material");
+    registerIconFromText("next", nextIconText, "material");
+    registerIconFromText("clear", clearIconText, "material");
+
+    var clearIcon = this.clearIcon = document.getElementById('clearIcon') as IgcIconComponent;
+
+    var nextIconButton = this.nextIconButton = document.getElementById('nextIconBtn') as IgcIconButtonComponent;
+    var prevIconButton = this.prevIconButton = document.getElementById('prevIconBtn') as IgcIconButtonComponent;
+
+    this.caseSensitiveChip = document.getElementById('caseSensitiveChip') as IgcChipComponent;
+    this.exactMatchChip = document.getElementById('exactMatchChip') as IgcChipComponent;
+
+    this.searchBox = document.getElementById('searchBox') as IgcInputComponent;
+    grid.data =new MarketData();
+    nextIconButton.addEventListener("click", this.nextSearch);
+    prevIconButton.addEventListener("click", this.prevSearch);
+    clearIcon.addEventListener("click", this.clearSearch);
 }
-public searchValue(e) {
-    var searchText = e.target.value;
-    var caseSensitive = false;
-    var exactMatch = false;
-    grid.findNext(searchText, caseSensitive, exactMatch)
+
+public prevSearch(){
+    this.grid.findPrev(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+}
+
+public nextSearch(){
+    this.grid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+}
+
+public clearSearch(){
+    this.searchBox.value = "";
+    this.grid.clearSearch();
 }
 ```
 
@@ -207,22 +221,19 @@ Let's also display the position of the current occurrence, along with the total 
 
 <!-- end: Angular -->
 
-<!-- Blazor -->
-
-<!-- TO DO -->
-
-<!-- end: Blazor -->
-
 ### Add Search Buttons
 
 In order to freely search and navigate among our search results, let's create a couple of buttons by invoking the `FindNext` and the `FindPrev` methods inside the buttons' respective click event handlers.
 
+
+<!-- Angular -->
 ```html
 <div class="searchButtons">
     <input type="button" value="Previous" (click)="@@igObjectRef.findPrev(searchText, caseSensitive, exactMatch)" />
     <input type="button" value="Next" (click)="@@igObjectRef.findNext(searchText, caseSensitive, exactMatch)" />
 </div>
 ```
+<!-- end: Angular -->
 
 ```razor
 <IgbIconButton Variant="IconButtonVariant.Flat" @onclick="PrevSearch">
@@ -233,6 +244,7 @@ In order to freely search and navigate among our search results, let's create a 
 </IgbIconButton>
 
 @code {
+    private IgbGrid grid;
     public void PrevSearch()
     {
         this.grid.FindPrevAsync(this.searchText, this.caseSensitive, this.exactMatch);
@@ -247,34 +259,27 @@ In order to freely search and navigate among our search results, let's create a 
 
 <!-- WebComponents -->
 ```html
-<div class="searchButtons">
-    <input id="prevBtn" type="button" value="Previous"/>
-    <input id="nextBtn" type="button" value="Next"/>
-</div>
+<igc-icon-button id="prevIconBtn" variant="flat" name="prev" collection="material" ></igc-icon-button>
+<igc-icon-button id="nextIconBtn" variant="flat" name="next" collection="material"></igc-icon-button>
 ```
 ```ts
 constructor() {
-    var prevBtn = this.prevBtn = document.getElementById('prevBtn') as HtmlInputElement;
-    var nextBtn = this.nextBtn = document.getElementById('nextBtn') as HtmlInputElement;
-
-    this._bind = () => {
-        prevBtn.addEventListener('change', findPrev);
-        nextBtn.addEventListener('change', findPrev);
+    var nextIconButton = document.getElementById('nextIconBtn') as IgcIconButtonComponent;
+    var prevIconButton = document.getElementById('prevIconBtn') as IgcIconButtonComponent;
+    nextIconButton.addEventListener("click", this.nextSearch);
+    prevIconButton.addEventListener("click", this.prevSearch);
+}
+    public prevSearch() {
+        const grid = document.getElementById('grid') as IgcGridComponent;
+        const searchBox = document.getElementById('searchBox') as IgcInputComponent;
+        grid.findPrev(searchBox.value, false, false);
     }
-    this._bind();
-}
-public findPrev(e) {
-    var searchText = e.target.value;
-    var caseSensitive = false;
-    var exactMatch = false;
-    grid.findPrev(searchText, caseSensitive, exactMatch)
-}
-public findNext(e) {
-    var searchText = e.target.value;
-    var caseSensitive = false;
-    var exactMatch = false;
-    grid.findNext(searchText, caseSensitive, exactMatch)
-}
+
+    public nextSearch() {
+        const grid = document.getElementById('grid') as IgcGridComponent;
+        const searchBox = document.getElementById('searchBox') as IgcInputComponent;
+        grid.findNext(searchBox.value, false, false);
+    }
 ```
 <!-- end: WebComponents -->
 
@@ -307,34 +312,33 @@ public searchKeyDown(ev) {
 
 <!-- WebComponents -->
 ```html
-<input id="search1" placeholder="Search" />
+<input id="search1"/>
 ```
 
 ```typescript
 constructor() {
-    var search1 = this.search1 = document.getElementById('search1') as HtmlInputElement;
-
-    this._bind = () => {
-        search1.addEventListener('keydown', searchKeyDown);
-        search1.addEventListener('change', findNext);
-    }
-    this._bind();
+    const search1 = document.getElementById('search1') as HtmlInputElement;
+    search1.addEventListener('keydown', this.searchKeyDown);
+    search1.addEventListener('change', this.findNext);
 }
 
 public findNext(e) {
-    var searchText = e.target.value;
-    var caseSensitive = false;
-    var exactMatch = false;
+    const searchText = e.target.value;
+    const caseSensitive = false;
+    const exactMatch = false;
+    const grid = document.getElementById('grid') as IgcGridComponent;
     grid.findNext(searchText, caseSensitive, exactMatch)
 }
 
 public searchKeyDown(ev) {
+    const search1 = document.getElementById('search1') as HtmlInputElement;
+    const grid = document.getElementById('grid') as IgcGridComponent;
     if (ev.key === 'Enter') {
         ev.preventDefault();
-        this.grid.findNext(this.searchText, this.caseSensitive, this.exactMatch);
+        grid.findNext(search1.value, false, false);
     } else if (ev.key === 'ArrowUp' || ev.key === 'ArrowLeft') {
         ev.preventDefault();
-        this.grid.findPrev(this.searchText, this.caseSensitive, this.exactMatch);
+        grid.findPrev(search1.value, false, false);
     }
 }
 ```
@@ -402,26 +406,18 @@ public updateExactSearch() {
 
 ```typescript
 constructor() {
-    var case = this.case = document.getElementById('case') as HtmlInputElement;
-    var exact = this.exact = document.getElementById('exact') as HtmlInputElement;
-
-    this._bind = () => {
-        case.checked = this.caseSensitive;
-        exact.checked = this.exactMatch;
-        case.addEventListener('change', updateSearch);
-        exact.addEventListener('change', updateExactSearch);
-    }
-    this._bind();
+    const case = document.getElementById("case") as HTMLInputElement;
+    const exact = document.getElementById("exact") as HTMLInputElement;
+    case.addEventListener("change", this.updateSearch);
+    exact.addEventListener("change", this.updateSearch);
 }
 
 public updateSearch() {
-    this.caseSensitive = !this.caseSensitive;
-    this.grid.findNext(this.searchText, this.caseSensitive, this.exactMatch);
-}
-
-public updateExactSearch() {
-    this.exactMatch = !this.exactMatch;
-    this.grid.findNext(this.searchText, this.caseSensitive, this.exactMatch);
+    const search1 = document.getElementById("search1") as HTMLInputElement;
+    const case = document.getElementById("case") as HTMLInputElement;
+    const exact = document.getElementById("exact") as HTMLInputElement;
+    const grid = document.getElementById("grid") as IgcGridComponent;
+    grid.findNext(search1.value, case.checked, exact.checked);
 }
 ```
 <!-- end: WebComponents -->
@@ -484,22 +480,9 @@ export class AppModule {}
 ```
 
 ```typescript
-import {
-    igcXNameModule,
-    IgcXInputGroupModule,
-    IgcXIconModule,
-    IgcXRippleModule,
-    IgcXButtonModule,
-    IgcXChipsModule
-} from 'igniteui-webcomponents-inputs';
+import { defineComponents, IgcInputComponent, IgcChipComponent, IgcIconComponent, IgcIconButtonComponent, registerIconFromText } from "igniteui-webcomponents";
 
-ModuleManager.register(
-    IgcXInputGroupModule,
-    IgcXIconModule,
-    IgcXRippleModule,
-    IgcXButtonModule,
-    IgcXChipsModule
-);
+defineComponents(IgcInputComponent, IgcChipComponent, IgcIconComponent, IgcIconButtonComponent);
 ```
 
 <!-- Blazor -->
@@ -518,12 +501,24 @@ builder.Services.AddIgniteUIBlazor(
 );
 
 @code {
-    protected override void OnInitialized()
+    private IgbIcon searchIconRef { get; set; }
+    const string searchIcon = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' /></svg>";
+    const string prevIcon = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z'></path></svg>";
+    const string nextIcon = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'></path></svg>";
+    const string clearIcon = "<svg width='24' height='24' viewBox='0 0 24 24' title='Clear'><path d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></svg>";
+    protected override void OnAfterRender(bool firstRender)
     {
-        base.OnInitialized();
-
-        this.marketData = MarketData.GetData();
-    }
+        if (this.searchIconRef != null && firstRender)
+        {
+            this.searchIconRef.EnsureReady().ContinueWith(new Action<Task>((e) =>
+            {
+                this.searchIconRef.RegisterIconFromTextAsync("search", searchIcon, "material");
+                this.searchIconRef.RegisterIconFromTextAsync("prev", prevIcon, "material");
+                this.searchIconRef.RegisterIconFromTextAsync("next", nextIcon, "material");
+                this.searchIconRef.RegisterIconFromTextAsync("clear", clearIcon, "material");
+            }));
+        }
+    
 }
 ```
 
@@ -552,18 +547,17 @@ We will wrap all of our components inside an [InputGroup](../input-group.md). On
 ```
 
 ```html
-<igc-input-group type="search" class="offset">
-    <igc-prefix>
-        <igc-icon>search</igx-icon>
-        <igc-icon>clear</igx-icon>
-    </igc-prefix>
-
-    <input id="search1" placeholder="Search" />
-
-    <igc-suffix>
-    <!-- ... -->
-    </igc-suffix>
-</igc-input-group>
+<igc-input id="searchBox" name="searchBox">
+    <igc-icon id="clearIcon" slot="prefix" name="clear" collection="material"></igc-icon>
+    <div slot="suffix">
+        <igc-chip selectable="true" id="caseSensitiveChip">Case Sensitive</igc-chip>
+        <igc-chip selectable="true" id="exactMatchChip">Exact Match</igc-chip>
+    </div>
+    <div slot="suffix">
+        <igc-icon-button id="prevIconBtn" variant="flat" name="prev" collection="material" ></igc-icon-button>
+        <igc-icon-button id="nextIconBtn" variant="flat" name="next" collection="material"></igc-icon-button>
+    </div>
+</igc-input>
 ```
 
 <!-- Angular -->
@@ -577,9 +571,14 @@ public clearSearch() {
 
 <!-- WebComponents -->
 ```typescript
-public clearSearch() {
-    this.searchText = '';
-    this.grid.clearSearch();
+constructor() {
+    const prevIconText = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z'></path></svg>";
+    const nextIconText = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'></path></svg>";
+    const clearIconText = "<svg width='24' height='24' viewBox='0 0 24 24' title='Clear'><path d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></svg>";
+
+    registerIconFromText("prev", prevIconText, "material");
+    registerIconFromText("next", nextIconText, "material");
+    registerIconFromText("clear", clearIconText, "material");
 }
 ```
 <!-- end: WebComponents -->
@@ -620,27 +619,6 @@ We will wrap all of our components inside an `Input`. On the left we will toggle
 </IgbInput>
 
 @code {
-    private IgbIcon searchIconRef { get; set; }
-    const string searchIcon = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' /></svg>";
-    const string prevIcon = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z'></path></svg>";
-    const string nextIcon = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'></path></svg>";
-    const string clearIcon = "<svg width='24' height='24' viewBox='0 0 24 24' title='Clear'><path d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></svg>";
-
-    protected override void OnAfterRender(bool firstRender)
-    {
-        base.OnAfterRender(firstRender);
-
-        if (this.searchIconRef != null && firstRender)
-        {
-            this.searchIconRef.EnsureReady().ContinueWith(new Action<Task>((e) =>
-            {
-                this.searchIconRef.RegisterIconFromTextAsync("search", searchIcon, "material");
-                this.searchIconRef.RegisterIconFromTextAsync("prev", prevIcon, "material");
-                this.searchIconRef.RegisterIconFromTextAsync("next", nextIcon, "material");
-                this.searchIconRef.RegisterIconFromTextAsync("clear", clearIcon, "material");
-            }));
-        }
-    }
 
     public void clearSearch()
     {
@@ -668,15 +646,7 @@ On the right in our input group, let's create three separate containers with the
     </div>
 </igx-suffix>
 ```
-<!-- end: Angular -->
 
-<!-- Blazor -->
-
-<!-- TO DO -->
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
 ```html
 <igc-suffix >
     <div class="resultsText">
@@ -697,11 +667,12 @@ public showResults() {
     }
 }
 ```
-<!-- end: WebComponents -->
+
+<!-- end: Angular -->
+
+- For displaying a couple of chips that toggle the `CaseSensitive` and the `ExactMatch` properties. We have replaced the checkboxes with two stylish chips that change color based on these properties. Whenever a chip is clicked, we invoke its respective handler.
 
 <!-- Angular -->
-
-- For displaying a couple of chips that toggle the `CaseSensitive` and the `ExactMatch` properties. We have replaced the checkboxes with two stylish chips that change color based on these properties. Whenever a chip is clicked, we invoke its respective handler - `UpdateSearch` or `UpdateExactSearch` depending on which chip has been clicked.
 
 ```html
 <div class="chips">
@@ -715,8 +686,58 @@ public showResults() {
     </igx-chips-area>
 </div>
 ```
+<!-- end: Angular -->
+
+
+<!-- WebComponents -->
+```html
+<div slot="suffix">
+    <igc-chip selectable="true" id="caseSensitiveChip">Case Sensitive</igc-chip>
+    <igc-chip selectable="true" id="exactMatchChip">Exact Match</igc-chip>
+</div>
+```
+
+```ts
+constructor() {
+    const input = document.getElementById("searchBox") as IgcInputComponent;
+    input.addEventListener("change", this.updateSearch);
+}
+public updateSearch() {
+    const grid = document.getElementById('grid') as IgcGridComponent;
+    const caseSensitiveChip = document.getElementById('caseSensitiveChip') as IgcChipComponent;
+    const exactMatchChip = document.getElementById('exactMatchChip') as IgcChipComponent;
+    grid.findNext(input.value, caseSensitiveChip.selected, exactMatchChip.selected);
+}
+```
+
+<!-- WebComponents -->
+
+```razor
+    <div class="chips" slot="suffix">
+        <IgbChip Selectable=true SelectedChanged="UpdateCase">
+            Case Sensitive
+        </IgbChip>
+        <IgbChip  Selectable=true SelectedChanged="UpdateExactSearch">
+            Exact Match
+        </IgbChip>
+    </div>
+
+@code {
+    public void UpdateCase(bool selected) {
+        this.caseSensitive = selected;
+        this.grid.FindNextAsync(this.searchText, this.caseSensitive, this.exactMatch);
+    }
+
+    public void UpdateExactSearch(bool selected) {
+        this.exactMatch = selected;
+        this.grid.FindNextAsync(this.searchText, this.caseSensitive, this.exactMatch);
+    }
+}
+```
 
 - For the search navigation buttons, we have transformed our inputs into ripple styled buttons with material icons. The handlers for the click events remain the same - invoking the `FindNext`/`FindPrev` methods.
+
+<!-- Angular -->
 
 ```html
 <igx-suffix>
@@ -732,103 +753,70 @@ public showResults() {
 ```
 <!-- end: Angular -->
 
+
 <!-- WebComponents -->
+
 ```html
-<div class="chips">
-    <igc-chips-area>
-        <igc-chip id="case">
-            <span>Case Sensitive</span>
-        </igc-chip>
-        <igc-chip id="exact">
-            <span>Exact Match</span>
-        </igc-chip>
-    </igc-chips-area>
+<div slot="suffix">
+    <igc-icon-button id="prevIconBtn" variant="flat" name="prev" collection="material" ></igc-icon-button>
+    <igc-icon-button id="nextIconBtn" variant="flat" name="next" collection="material"></igc-icon-button>
 </div>
 ```
 
 ```typescript
 constructor() {
-    var case = this.case = document.getElementById('case') as HtmlInputElement;
-    var exact = this.exact = document.getElementById('exact') as HtmlInputElement;
-
-    this._bind = () => {
-        case.checked = this.caseSensitive;
-        exact.checked = this.exactMatch;
-        case.addEventListener('change', updateSearch);
-        exact.addEventListener('change', updateExactSearch);
-    }
-    this._bind();
+    const nextIconButton = this.nextIconButton = document.getElementById('nextIconBtn') as IgcIconButtonComponent;
+    const prevIconButton = this.prevIconButton = document.getElementById('prevIconBtn') as IgcIconButtonComponent;
+    nextIconButton.addEventListener("click", this.nextSearch);
+    prevIconButton.addEventListener("click", this.prevSearch);
 }
 
-public updateSearch() {
-    this.caseSensitive = !this.caseSensitive;
-    this.grid.findNext(this.searchText, this.caseSensitive, this.exactMatch);
+public nextSearch() {
+    const grid = document.getElementById('grid') as IgcGridComponent;
+    const caseSensitiveChip = document.getElementById('caseSensitiveChip') as IgcChipComponent;
+    const exactMatchChip = document.getElementById('exactMatchChip') as IgcChipComponent;
+    grid.findNext(input.value, caseSensitiveChip.selected, exactMatchChip.selected);
 }
 
-public updateExactSearch() {
-    this.exactMatch = !this.exactMatch;
-    this.grid.findNext(this.searchText, this.caseSensitive, this.exactMatch);
-}
-```
-
-```html
-<igc-suffix>
-    <div class="searchButtons">
-        <button id="prevBtn">
-            <igc-icon fontSet="material">navigate_before</igx-icon>
-        </button>
-        <button id="nextBtn">
-            <igc-icon fontSet="material">navigate_next</igx-icon>
-        </button>
-    </div>
-</igc-suffix>
-```
-```ts
-constructor() {
-    var prevBtn = this.prevBtn = document.getElementById('prevBtn') as HtmlInputElement;
-    var nextBtn = this.nextBtn = document.getElementById('nextBtn') as HtmlInputElement;
-
-    this._bind = () => {
-        prevBtn.addEventListener('change', findPrev);
-        nextBtn.addEventListener('change', findPrev);
-    }
-    this._bind();
-}
-public findPrev(e) {
-    var searchText = e.target.value;
-    var caseSensitive = false;
-    var exactMatch = false;
-    grid.findPrev(searchText, caseSensitive, exactMatch)
-}
-public findNext(e) {
-    var searchText = e.target.value;
-    var caseSensitive = false;
-    var exactMatch = false;
-    grid.findNext(searchText, caseSensitive, exactMatch)
+public prevSearch() {
+    const grid = document.getElementById('grid') as IgcGridComponent;
+    const caseSensitiveChip = document.getElementById('caseSensitiveChip') as IgcChipComponent;
+    const exactMatchChip = document.getElementById('exactMatchChip') as IgcChipComponent;
+    grid.findPrev(input.value, caseSensitiveChip.selected, exactMatchChip.selected);
 }
 ```
 <!-- end: WebComponents -->
 
+```razor
+<div class="searchButtons" slot="suffix">
+    <IgbIconButton Variant="IconButtonVariant.Flat" @onclick="PrevSearch">
+        <IgbIcon IconName="prev" Collection="material"/>
+    </IgbIconButton>
+    <IgbIconButton Variant="IconButtonVariant.Flat" @onclick="NextSearch">
+        <IgbIcon IconName="next" Collection="material" />
+    </IgbIconButton>
+</div>
+@code {
+    public void PrevSearch()
+    {
+        this.grid.FindPrevAsync(this.searchText, this.caseSensitive, this.exactMatch);
+    }
+
+    public void NextSearch()
+    {
+        this.grid.FindNextAsync(this.searchText, this.caseSensitive, this.exactMatch);
+    }
+}
+```
+
 ## Known Limitations
 
-<!-- Angular -->
 
 |Limitation|Description|
 |--- |--- |
 |Searching in cells with a template|The search functionality highlights work only for the default cell templates. If you have a column with custom cell template, the highlights will not work so you should either use alternative approaches, such as a column formatter, or set the `Searchable` property on the column to false.|
 |Remote Virtualization| The search will not work properly when using remote virtualization|
 |Cells with cut off text| When the text in the cell is too large to fit and the text we are looking for is cut off by the ellipsis, we will still scroll to the cell and include it in the match count, but nothing will be highlighted |
-
-<!-- end: Angular -->
-
-<!-- Blazor -->
-
-|Limitation|Description|
-|--- |--- |
-|Searching in cells with a template|The search functionality highlights work only for the default cell templates. If you have a column with custom cell template, the highlights will not work so you should either use alternative approaches, such as a column formatter, or set the `Searchable` property on the column to false.|
-|Cells with cut off text| When the text in the cell is too large to fit and the text we are looking for is cut off by the ellipsis, we will still scroll to the cell and include it in the match count, but nothing will be highlighted |
-
-<!-- end: Blazor -->
 
 ## API References
 

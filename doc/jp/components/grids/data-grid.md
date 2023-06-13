@@ -1076,13 +1076,12 @@ public class AminoWeight
 <!-- end: Angular -->
 
 `Grid` で複雑なデータをバインドまたは複合データ (複数の列から) を可視化する別の方法は、列にカスタム ボディ テンプレートを使用することです。通常、以下のことができます。
-    - ネストされたデータを含むセルの `value` を使用します。
+
+- ネストされたデータを含むセルの `value` を使用します。
 
 <!-- Angular -->
 
-    - `row.data` にアクセスするためにテンプレートの `cell` オブジェクトを使用します。それから、セルから任意の値 (`cell.row.data[field]` や `cell.row.data[field][nestedField]` など) を取得します。
-
-それをテンプレートに挿入します。
+- `row.data` にアクセスするためにテンプレートの `cell` オブジェクトを使用します。それから、セルから任意の値 (`cell.row.data[field]` や `cell.row.data[field][nestedField]` など) を取得します。それをテンプレートに挿入します。
 
 <!-- end: Angular -->
 
@@ -1635,7 +1634,7 @@ igRegisterScript("AddressEditCellTemplate", (ctx) => {
 
 前のセクションのコード スニペットを使用すると、次の `Grid` の例になります。
 
-`sample="/{GridSample}/binding-composite-data", height="550", alt="{Platform} {GridTitle} binding composite data"`
+`sample="/{GridSample}/binding-composite-data", height="550", alt="{Platform} {GridTitle} 複合データ バインディング"`
 
 
 ## キーボード ナビゲーション

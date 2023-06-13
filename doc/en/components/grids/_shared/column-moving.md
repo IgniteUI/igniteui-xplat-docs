@@ -296,7 +296,7 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 
 <!-- end: Angular -->
 
-<!-- WebComponents -->
+<!-- WebComponents, Blazor -->
 ## Styling
 
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
@@ -324,7 +324,7 @@ Then set the related CSS properties to this class:
 
 `sample="/{ComponentSample}/column-moving-styles", height="650", alt="{Platform} {ComponentTitle} Grid Moving Styled Example"`
 
-<!-- end: WebComponents -->
+<!-- end: WebComponents, Blazor -->
 
 ## API References
 

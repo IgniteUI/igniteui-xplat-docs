@@ -110,7 +110,7 @@ Example how to commit new values, if user tries to sort the column while a cell/
 ```
 
 ```html
-<igc-grid id="grid" primary-key="ProductID" (sorting)="onSorting($event)">
+<igc-grid id="grid" primary-key="ProductID" >
 </igc-grid>
 ```
 
@@ -120,25 +120,31 @@ constructor() {
 
     this._bind = () => {
         grid.data = this.data;
-        grid.sorting = this.onSorting;
+        grid.addEventListener("sorting", this.onSorting);
     }
     this._bind();
 
 }
 ```
 
+<!-- Angular -->
+
 ```typescript
 public onSorting(event: ISortingEventArgs) {
     this.grid.endEdit(true);
-    // (event.owner as IgxGridComponent).endEdit(true);
 }
 ```
+
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
 ```typescript
 public onSorting(event: IgcSortingEventArgs) {
     this.grid.endEdit(true);
-    // (event.owner as IgxGridComponent).endEdit(true);
 }
 ```
+<!-- end: WebComponents -->
 
 ```razor
 <IgbGrid
@@ -169,13 +175,14 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 * `TreeGridRow`
 
 <!-- ComponentEnd: TreeGrid -->
-
+<!-- Angular -->
 * `DatePickerComponent`
 * `CheckboxComponent`
 * `Overlay`
+<!-- end: Angular -->
 ## Additional Resources
 
-<!-- Angular -->
+<!-- Angular, WebComponents -->
 
 
 * [Column Data Types](column-types.md#default-template)
@@ -192,7 +199,7 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 <!-- * [Searching](search.md) -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- end: Angular -->
+<!-- end: Angular, WebComponents -->
 
 <!-- Blazor -->
 
