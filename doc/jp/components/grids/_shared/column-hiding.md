@@ -618,7 +618,7 @@ $custom-button: button-theme(
 <!-- end: Angular -->
 
 ## その他のリソース
-
+<!-- ComponentStart:  Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [フィルタリング](filtering.md)
 * [ページング](paging.md)
@@ -627,7 +627,7 @@ $custom-button: button-theme(
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
-
+<!-- ComponentEnd:  Grid -->
 コミュニティに参加して新しいアイデアをご提案ください。
 
 * [{ProductName} **フォーラム (英語)**]({ForumsLink})

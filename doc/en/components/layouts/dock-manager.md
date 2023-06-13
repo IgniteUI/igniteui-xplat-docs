@@ -535,7 +535,7 @@ The shortcuts are as follows:
 ### Other
  - <kbd>Alt</kbd> + <kbd>F3</kbd> Closes the active pane
 
-Practice all of the above mentioned actions in the sample [demo](dock-manager.md#{Platform}-dock-manager-example).
+Practice all of the above mentioned actions in the sample [demo](dock-manager.md#{PlatformLower}-dock-manager-example).
 
 <!-- WebComponents -->
 
