@@ -370,7 +370,7 @@ public editActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
 
 
 * [{ComponentTitle} 編集](editing.md)
-* [{ComponentTitle} トランザクション](batch-editing.md)
+<!-- * [{ComponentTitle} トランザクション](batch-editing.md) -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

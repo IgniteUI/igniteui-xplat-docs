@@ -6,7 +6,7 @@ _language: ja
 mentionedTypes: ['Dialog']
 ---
 
-# {Platform} (ダイアログ) の概要
+# {Platform} Dialog (ダイアログ) の概要
 
 {ProductName} Dialog コンポーネントは、情報を表示したり、ユーザーにアクションや確認を促すために使用されます。これはモーダル ウィンドウに表示されます。つまり、ダイアログを閉じる特定のアクションが実行されるまで、ユーザーはメイン アプリを操作できません。
 
@@ -50,13 +50,27 @@ Dialog コンポーネントを表示する最も簡単な方法は、`Show` メ
 
 ```razor
 <div class="container vertical">
-    <IgbButton onclick="dialog.show()" Variant=@ButtonVariant.Contained>Show Dialog</IgbButton>
-    <IgbDialog id="dialog" Title="Confirmation">
+    <IgbButton @onclick="OnDialogShow" Variant=@ButtonVariant.Contained>Show Dialog</IgbButton>
+    <IgbDialog @ref="DialogRef" Title="Confirmation">
         <p>Are you sure you want to delete the Annual_Report_2016.pdf and Annual_Report_2017.pdf files?</p>
-        <IgbButton slot="footer" onclick="dialog.hide()" Variant=@ButtonVariant.Flat>Cancel</IgbButton>
-        <IgbButton slot="footer" onclick="dialog.hide()" Variant=@ButtonVariant.Flat>OK</IgbButton>
+        <IgbButton slot="footer" @onclick="OnDialogHide" Variant=@ButtonVariant.Flat>Cancel</IgbButton>
+        <IgbButton slot="footer" @onclick="OnDialogHide" Variant=@ButtonVariant.Flat>OK</IgbButton>
     </IgbDialog>
 </div>
+
+@code {
+    public IgbDialog DialogRef;
+    public void OnDialogShow()
+    {
+        if (this.DialogRef != null)
+            this.DialogRef.Show();
+    }
+    public void OnDialogHide()
+    {
+        if (this.DialogRef != null)
+            this.DialogRef.Hide();
+    }
+}
 ```
 
 ```html

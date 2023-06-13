@@ -692,7 +692,7 @@ $custom-grid-theme: grid-theme(
 
 ### デモのスタイル設定
 
-上記の手順に加えて、セルの編集テンプレートに使用されるコントロールのスタイルを設定することもできます ([igx-input-group](../input-group.md#スタイル設定)、[igx-datepicker](../date-picker.md#スタイル設定) および [igx-checkbox](../checkbox.md#スタイル設定))。
+上記の手順に加えて、セルの編集テンプレートに使用されるコントロールのスタイルを設定することもできます [igx-input-group](../input-group.md#スタイル設定)、 [igx-datepicker](../date-picker.md#スタイル設定) および [igx-checkbox](../checkbox.md#スタイル設定)。
 
 `sample="/{ComponentSample}/editing-style", height="700", alt="{Platform} {ComponentTitle} 編集スタイルの例"`
 
@@ -737,14 +737,14 @@ $custom-grid-theme: grid-theme(
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
 <!-- ComponentStart:  HierarchicalGrid -->
-* [検索](search.md)
+<!-- * [検索](search.md) -->
 <!-- ComponentEnd:  HierarchicalGrid -->
 
 <!-- end: Angular -->
 
 <!-- Blazor, WebComponents -->
 
-
+<!-- ComponentStart:  Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
@@ -753,8 +753,7 @@ $custom-grid-theme: grid-theme(
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
-<!-- ComponentStart:  HierarchicalGrid -->
 * [検索](search.md)
-<!-- ComponentEnd:  HierarchicalGrid -->
+<!-- ComponentEnd:  Grid -->
 
 <!-- end: Blazor, WebComponents -->

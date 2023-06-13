@@ -862,7 +862,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- Blazor -->
 
-
+<!-- ComponentStart:  Grid -->
 * [Column Data Types](column-types.md#default-template)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
@@ -872,6 +872,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 <!-- end: Blazor -->
 

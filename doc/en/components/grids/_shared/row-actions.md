@@ -79,11 +79,13 @@ They are added inside the `{ComponentName}` and this is all needed to have an `A
 > [!Note]
 > When `ActionStripComponent` is a child component of the `{ComponentName}`, hovering a row will automatically show the UI.
 
+<!-- Angular -->
+
 ## Custom Implementation
 
 These components expose templates giving flexibility for customization. For instance, if we would like to use the `ActionStripComponent` for a Gmail scenario with row actions such as **delete**, **edit** and etc. You can simply create button component with icon, add click event to it and insert it into the `ActionStripComponent`.
 
-<!-- Angular -->
+
 ```html
 <{ComponentSelector}>
     <igx-action-strip #actionstrip>
@@ -97,7 +99,6 @@ These components expose templates giving flexibility for customization. For inst
     </igx-action-strip>
 </{ComponentSelector}>
 ```
-<!-- end: Angular -->
 
 ```razor
 <div class="grid__wrapper">
@@ -117,6 +118,9 @@ These components expose templates giving flexibility for customization. For inst
     </{ComponentSelector}>
 </div>
 ```
+
+<!-- end: Angular -->
+
 
 <!-- WebComponents -->
 ```html
