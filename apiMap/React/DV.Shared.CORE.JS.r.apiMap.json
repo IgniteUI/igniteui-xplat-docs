@@ -29,6 +29,10 @@
     { "names":[{"platform":"React","mappedType":"ErrorBarCalculatorType","mappedName":"StandardDeviation"}],"originalName":"StandardDeviation"},
     { "names":[{"platform":"React","mappedType":"ErrorBarCalculatorType","mappedName":"StandardError"}],"originalName":"StandardError"},
     { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics"},
+  { "originalName":"FocusEventArgs",
+    "names":[{"platform":"React","fileName":"igr-focus-event-args.ts","mappedName":"IgrFocusEventArgs"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"target"}],"originalName":"Target"}],"originalNamespace":"Infragistics"},
   { "originalName":"RectChangedEventArgs",
     "names":[{"platform":"React","fileName":"igr-rect-changed-event-args.ts","mappedName":"IgrRectChangedEventArgs"}],
     "members":[
@@ -359,6 +363,10 @@
     { "names":[{"platform":"React","mappedType":"BaseControlTheme","mappedName":"Default"}],"originalName":"Default"},
     { "names":[{"platform":"React","mappedType":"BaseControlTheme","mappedName":"DenaliLight"}],"originalName":"DenaliLight"},
     { "names":[{"platform":"React","mappedType":"BaseControlTheme","mappedName":"MaterialLight"}],"originalName":"MaterialLight"},
+    { "names":[{"platform":"React","mappedType":"BaseControlTheme","mappedName":"SlingshotLight"}],"originalName":"SlingshotLight"},
+    { "names":[{"platform":"React","mappedType":"BaseControlTheme","mappedName":"SlingshotDark"}],"originalName":"SlingshotDark"},
+    { "names":[{"platform":"React","mappedType":"BaseControlTheme","mappedName":"RevealLight"}],"originalName":"RevealLight"},
+    { "names":[{"platform":"React","mappedType":"BaseControlTheme","mappedName":"RevealDark"}],"originalName":"RevealDark"},
     { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Theming.Implementation"},
   { "originalName":"ElevationMode","isEnum":true,
     "names":[{"platform":"React","fileName":"ElevationMode.ts","mappedName":"ElevationMode"}],

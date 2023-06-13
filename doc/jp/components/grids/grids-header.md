@@ -162,7 +162,7 @@ h3#excel-library-for-the-angular-grid ~ h3{
     visibility: visible;
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
 
     div#list-features-included {
         -webkit-box-orient: vertical;
@@ -206,7 +206,7 @@ h3#excel-library-for-the-angular-grid ~ h3{
 
 ## {Platform} Grid の例
 
-この {Platform} グリッドの例では、データの検索とフィルタリング、列のソート、サイズ変更、ピン固定と非表示、行の選択、Excel と csv へのエクスポート、水平および垂直スクロールなど、グリッドに組み込まれているさまざまな機能を利用してユーザーがデータ ビューをカスタマイズする方法を確認できます。Linear Progress Bar Indicator やスパークラインなどのコンポーネントを含むセル テンプレートの例を提供しました。その他の機能については、[こちら](#features-list)をご覧ください。
+この {Platform} グリッドの例では、データの検索とフィルタリング、列のソート、サイズ変更、ピン固定と非表示、行の選択、Excel と csv へのエクスポート、水平および垂直スクロールなど、グリッドに組み込まれているさまざまな機能を利用してユーザーがデータ ビューをカスタマイズする方法を確認できます。Linear Progress Bar Indicator やスパークラインなどのコンポーネントを含むセル テンプレートの例を提供しました。その他の機能については、[こちら](#{PlatformLower}-grid-の機能)をご覧ください。
 
 <div class="divider--half"></div>
 
@@ -238,7 +238,10 @@ h3#excel-library-for-the-angular-grid ~ h3{
 <ul id="features-list">
 <li>数百万のレコードをロードできる[**仮想化された行と列**](grid/virtualization.md)</li>
 
-<li>[**セル**](grid/cell-editing.md)、[**行**](grid/row-editing.md)、および[**一括編集**](grid/batch-editing.md)オプションを使用した[**インライン編集**](grid/editing.md)</li>
+<li>[**セル**](grid/cell-editing.md)および[**行**](grid/row-editing.md)オプションを使用した[**インライン編集**](grid/editing.md)</li>
+
+<!--Add back when batch editing is available>
+<!-- <li>[**セル**](grid/cell-editing.md)、[**行**](grid/row-editing.md)、および[**一括編集**](grid/batch-editing.md)オプションを使用した[**インライン編集**](grid/editing.md)</li> -->
 
 <li>[**Excel スタイル フィルタリング**](grid/excel-style-filtering.md)と [**Excel キーボード ナビゲーション**](grid/keyboard-navigation.md)機能</li>
 
@@ -282,7 +285,6 @@ h3#excel-library-for-the-angular-grid ~ h3{
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="{Platform} Data Grid 内のフィルタリング機能のアニメーション" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-filtering-ui-768.gif?v=201811121733" alt="{Platform} Data Grid 内のフィルタリング機能のアニメーション"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">{Platform} グリッドのページング、ソート、フィルタリング & 検索<a class="anchorjs-link" href="#{Platform}-グリッドのページングソートフィルタリング--検索" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
         <p>ユーザーがデフォルトの[ページャー](grid/paging.md)を使用してデータ セットをナビゲートできるようにするか、独自のテンプレートを作成して独自のページング エクスペリエンスを提供します。単一列および複数列のソート、グリッド上の全文[検索](grid/search.md)、およびデータ型に基づく [Microsoft Excel スタイルのフィルタリング](grid/excel-style-filtering.md)を含むいくつかの[高度なフィルタリング] オプションを完全にサポートします。</p>
     </div>
 </div>
@@ -294,7 +296,6 @@ h3#excel-library-for-the-angular-grid ~ h3{
         <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="{Platform} Data Grid 内のフィルタリング機能のアニメーション" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-inline-grid-editing-1100.jpg?v=201808021304" alt="{Platform} Data Grid 内のフィルタリング機能のアニメーション">
     </div>
     <div class="feature__details">
-        <span class="h3 features__heading">インライン {Platform} グリッド編集<a class="anchorjs-link" href="#インライン-{Platform}-グリッド編集" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
         <p>列のデータ型に基づくデフォルトの[編集可能な列のセル テンプレート](grid/overview.md#セル編集テンプレート)を提供します。編集可能な列にカスタム テンプレートを定義し、セル値のコミットや変更の破棄でデフォルト動作をオーバーライドできます。</p>
     </div>
 </div>
@@ -304,7 +305,6 @@ h3#excel-library-for-the-angular-grid ~ h3{
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="キーボード ナビゲーション機能のアニメーション" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-keyboard-navigation-1100.gif?v=201808021304" alt="{Platform} Data Grid のキーボード ナビゲーション機能のアニメーション"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">{Platform} グリッドでのキーボード ナビゲーションと行/セルの選択<a class="anchorjs-link" href="#{Platform}-グリッドでのキーボード-ナビゲーションと行セルの選択" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
         <p>上、下、右、左、タブ、および Enter キーを使用して、{Platform} データ グリッドで Excel のような[キーボード ナビゲーション](grid/keyboard-navigation.md)を有効にして、アクセシビリティ コンプライアンスを確保し、使いやすさを向上させます。マウスまたはキーボードを使用して {Platform} グリッドで単一または複数の行選択を切り替えて完全な行を選択または選択解除するか、グリッド ツールバーの組み込みの [すべて選択] または [すべて選択解除] チェックボックスを使用して行選択を操作できます。この機能強化の詳細については、<a class="no-external-icon" href="https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility-">こちら</a>をご覧ください。</p>
     </div>
 </div>
@@ -315,7 +315,6 @@ h3#excel-library-for-the-angular-grid ~ h3{
     <div class="feature__image feature__image--right">
 <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="ARIA サポートのアイコン表示" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-aria-support-1100.jpg?v=201808021304" alt="Angular Data Grid コンポーネントの ARIA サポートのアイコン表示"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">{Platform} グリッドのアクセシビリティと ARIA のサポート<a class="anchorjs-link" href="#angular-グリッドのアクセシビリティと-aria-のサポート" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
         <p>{ProductName} の各 {Platform} コンポーネントは、最新のアクセシビリティ ガイドラインと仕様に従って実装されています。当社の {Platform} コンポーネントは、OS またはブラウザーが提供するアクセシビリティ技術 (読み上げソフトウェア) を使用してテストされています。当社のチームは、ガイドラインが実装されていることを確認するだけでなく、視覚障害者に配信される実際のコンテンツが消費可能でユーザー フレンドリーであることを保証します。{ProductName} データ グリッドは キーボード アクセシビリティ、ARIA、明瞭なカラー パレットを提供します。詳しくについては、<a class="no-external-icons" href="https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility">こちら</a>をご覧ください。</p>
     </div>
 </div>
@@ -325,7 +324,6 @@ h3#excel-library-for-the-angular-grid ~ h3{
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="列のグループ化、ピン固定、および集計機能が有効になっているデータのグリッド" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-cell-summaries-1100.jpg?v=201808021304" alt="{Platform} Data Grid コンポーネントで列のグループ化、ピン固定、および集計機能が有効になっているデータのグリッド"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">{Platform} Grid の列のグループ化、ピン固定、集計、移動<a class="anchorjs-link" href="#column-grouping-pinning-summaries--moving-in-the-angular-grid" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
         <p>組み込みの列[集計](grid/summaries.md)またはカスタム集計テンプレートをサポートし、マウス操作、タッチ、または API を介して列またはグループ列をグループ化します。インタラクティブな[列のピン固定](grid/column-pinning.md)、移動、ドラッグ、ソート操作に列をインタラクティブに[非表示](grid/column-hiding.md)または[移動](grid/column-moving.md)できます。</p>
     </div>
 </div>
@@ -335,7 +333,6 @@ h3#excel-library-for-the-angular-grid ~ h3{
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="複数列ヘッダー機能を有効にしたデータのグリッド" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-multi-column-headers-1100.jpg?v=201808021304" alt="{Platform} Data Grid コンポーネントで複数列ヘッダー機能を有効にしたデータのグリッド"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">{Platform} Grid の複数列ヘッダー<a class="anchorjs-link" href="#angular-grid-の複数列ヘッダー" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
         <p>[複数列ヘッダー](grid/multi-column-headers.md)を有効にし、共通ヘッダーで列をグループ化できます。各列グループは、その他のグループや列と組み合わせることができ、ピン固定、グループ内でインタラクティブに列移動、グループのソートや非表示など多数の機能が使用できます。</p>
     </div>
 </div>
@@ -347,7 +344,6 @@ h3#excel-library-for-the-angular-grid ~ h3{
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="テーマ設定およびテンプレート化機能を示すさまざまなグリッド デザインのアニメーション" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-cell-styling-1100.gif?v=201808021304" alt="Angular Data Grid のテーマ設定およびテンプレート化機能を示すさまざまなグリッド デザインのアニメーション"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">{Platform} Grid のテーマ設定、スタイル設定、テンプレート化<a class="anchorjs-link" href="#angular-grid-のテーマ設定スタイル設定テンプレート化" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
         <p>{ProductName} では、CSS や ng-template の再テンプレート化でセルの外観をカスタマイズできます。マテリアル デザインを完全にサポートし、使いやすいテーマ エンジンでブランド化されたインターフェイスをカスタマイズできます。</p>
     </div>
 </div>
@@ -362,7 +358,6 @@ h3#excel-library-for-the-angular-grid ~ h3{
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Microsoft Excel のような機能のアイコン表示" src="https://static.infragistics.com/marketing/Website/products/Ignite-UI-for-Angular/ignite-ui-angular-grid-export-to-excel-2-1100.jpg?v=201808021304" alt="Angular Data Grid の Microsoft Excel のような機能のアイコン表示">
 </div>
     <div class="feature__details" id="list-features">
-        <span class="h3 features__heading">{Platform} Grid の Excel ライブラリ<a class="anchorjs-link" href="angular-grid-の-excel-ライブラリ" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
         <p>データ グリッドの XLXS、XLS、TSV、または CSV のエクスポートを完全にサポートします。{ProductName} [Excel ライブラリ](excel-library.md)には、クライアント マシンで Microsoft Excel を必要としない 300 以上の数式、テーブルサポート、条件付き書式、チャートの作成などが含まれます。</p>
     </div>
 </div>
@@ -384,7 +379,7 @@ h3#excel-library-for-the-angular-grid ~ h3{
 </ul>
 <ul>
     <li>[列の移動](grid/column-moving.md)</li>
-    <li>[セルのコピーおよび貼り付け](grid/clipboard-interactions.md)</li>
+    <!-- [セルのコピーおよび貼り付け](grid/clipboard-interactions.md)</li> -->
     <li>[セルのスタイル設定](grid/conditional-cell-styling.md)</li>
     <!-- <li>[リアルタイム/ライブ データのテーマ](grid/live-data.md)</li> -->
     <!-- <li>[カスタム ツールバー](grid/toolbar.md)</li> -->
@@ -474,7 +469,7 @@ Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセ�
         <div class="faqs-accordion-panel">
             <ul>
                 <li>数百万のレコードをロードできる[仮想化された行と列](grid/virtualization.md)</li>
-                <li>セル、行、および[一括更新](grid/batch-editing.md)オプションを使用した[インライン編集](grid/row-editing.md)</li>
+                <!-- <li>セル、行、および[一括更新](grid/batch-editing.md)オプションを使用した[インライン編集](grid/row-editing.md)</li> -->
                 <li>[Excel スタイル フィルタリング](grid/excel-style-filtering.md)と [Excel キーボード ナビゲーション](grid/keyboard-navigation.md)機能</li>
                 <li>インタラクティブな [Outlook スタイルのようなグループ化](grid/groupby.md)</li>
                 <li>グリッド セルまたは列のデータに基づいた[列集計](grid/summaries.md)</li>

@@ -126,7 +126,7 @@ menu!.addEventListener('click', () => {
 })
 
 document.getElementById('root')!.onclick = (e) => {
-    if(e.target != document.getElementById('navDrawer')) {
+    if (e.target != document.getElementById('navDrawer')) {
         navDrawer.hide();
     }
 }

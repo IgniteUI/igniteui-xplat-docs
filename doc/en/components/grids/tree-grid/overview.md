@@ -96,9 +96,9 @@ import { IgxTreeGridModule } from 'igniteui-angular';
 
 @NgModule({
     imports: [
-        ...
+        // ...
         IgxTreeGridModule,
-        ...
+        // ...
     ]
 })
 export class AppModule {}
@@ -183,10 +183,10 @@ const EMPLOYEE_DATA = [
                 Age: 29,
                 Employees: []
             },
-            ...
+            // ...
         ]
     },
-    ...
+    // ...
 ]
 ```
 
@@ -235,7 +235,10 @@ The indentation of the **tree cells** persists across other tree grid features l
 <!-- WebComponents -->
 ## {Platform} Tree Grid Styling Configuration
 
-In addition to the predefined themes, the tree grid could be further customized by setting some of the available [CSS properties](../theming.md). In case you would like to change the header background and text color you need to set a class for the tree grid first:
+
+<!-- In addition to the predefined themes, the tree grid could be further customized by setting some of the available [CSS properties](../theming.md).  -->
+
+In case you would like to change the header background and text color you need to set a class for the tree grid first:
 
 ```typescript
 <igc-tree-grid class="tree-grid">

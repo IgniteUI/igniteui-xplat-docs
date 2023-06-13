@@ -18,10 +18,12 @@ _language: ja
 
 `sample="/{ComponentSample}/editing-columns", height="700", alt="{Platform} {ComponentTitle} セル編集と編集テンプレートの例"`
 
-
+<!-- Angular -->
 
 > [!Note]
 >任意のタイプのエディター コンポーネントで `CellEditor` を使用すると、キーボード ナビゲーション フローが中断されます。同じことが、編集モードに入るカスタム セルの直接編集にも当てはまります。これは、追加したエディター コンポーネントではなく、**セル要素**に**フォーカス**が残るためです。これが、`Focus` ディレクティブを利用する必要がある理由です。これにより、フォーカスがセル内コンポーネントに直接移動し、セル/行の**流暢な編集フロー**が維持されます。
+
+<!-- end:Angular -->
 
 ## セルの編集
 
@@ -223,10 +225,9 @@ public keydownHandler(event) {
   const grid = this.grid;
   const activeElem = grid.navigation.activeNode;
 
-  if(
-    (key >= 48 && key <= 57) ||
-    (key >= 65 && key <= 90) ||
-    (key >= 97 && key <= 122)){
+  if ((key >= 48 && key <= 57) ||
+      (key >= 65 && key <= 90) ||
+      (key >= 97 && key <= 122)) {
         // Number or Alphabet upper case or Alphabet lower case
         const columnName = grid.getColumnByVisibleIndex(activeElem.column).field;
         const cell = grid.getCellByColumn(activeElem.row, columnName);
@@ -246,7 +247,7 @@ if (key == 13) {
     const column = activeElem.column;
     const rowInfo = grid.dataView;
 
-    // to find the next eiligible cell, we will use a custom method that will check the next suitable index
+    // to find the next eligible cell, we will use a custom method that will check the next suitable index
     let nextRow = this.getNextEditableRowIndex(thisRow, rowInfo, event.shiftKey);
 
     // and then we will navigate to it using the grid's built in method navigateTo
@@ -266,7 +267,7 @@ if (currentRowIndex < 0 || (currentRowIndex === 0 && previous) || (currentRowInd
 return currentRowIndex;
 }
 // in case using shift + enter combination, we look for the first suitable cell going up the field
-if(previous){
+if (previous) {
 return  dataView.findLastIndex((rec, index) => index < currentRowIndex && this.isEditableDataRecordAtIndex(index, dataView));
 }
 // or for the next one down the field
@@ -506,7 +507,7 @@ constructor() {
 export class MyGridEventsComponent {
     public handleCellEdit(event: IGridEditEventArgs): void {
         const column = event.column;
-        if (column.field === 'Ordered') {
+        if (column.field === 'UnitsOnOrder') {
             const rowData = event.rowData;
             if (!rowData) {
                 return;
@@ -691,7 +692,7 @@ $custom-grid-theme: grid-theme(
 
 ### デモのスタイル設定
 
-上記の手順に加えて、セルの編集テンプレートに使用されるコントロールのスタイルを設定することもできます ([igx-input-group](../input-group.md#スタイル設定)、[igx-datepicker](../date-picker.md#スタイル設定) および [igx-checkbox](../checkbox.md#スタイル設定))。
+上記の手順に加えて、セルの編集テンプレートに使用されるコントロールのスタイルを設定することもできます [igx-input-group](../input-group.md#スタイル設定)、 [igx-datepicker](../date-picker.md#スタイル設定) および [igx-checkbox](../checkbox.md#スタイル設定)。
 
 `sample="/{ComponentSample}/editing-style", height="700", alt="{Platform} {ComponentTitle} 編集スタイルの例"`
 
@@ -715,7 +716,9 @@ $custom-grid-theme: grid-theme(
 
 <!-- ComponentEnd: TreeGrid -->
 * `GridCell`
+<!-- Angular -->
 * `InputDirective`
+<!-- end:Angular -->
 * `DatePickerComponent`
 
 ## その他のリソース
@@ -734,14 +737,14 @@ $custom-grid-theme: grid-theme(
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
 <!-- ComponentStart:  HierarchicalGrid -->
-* [検索](search.md)
+<!-- * [検索](search.md) -->
 <!-- ComponentEnd:  HierarchicalGrid -->
 
 <!-- end: Angular -->
 
 <!-- Blazor, WebComponents -->
 
-
+<!-- ComponentStart:  Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
@@ -750,8 +753,7 @@ $custom-grid-theme: grid-theme(
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
-<!-- ComponentStart:  HierarchicalGrid -->
 * [検索](search.md)
-<!-- ComponentEnd:  HierarchicalGrid -->
+<!-- ComponentEnd:  Grid -->
 
 <!-- end: Blazor, WebComponents -->

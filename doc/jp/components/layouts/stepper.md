@@ -38,6 +38,23 @@ defineComponents(IgcStepperComponent);
 ```
 
 <!-- end: WebComponents -->
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbStepperModule)
+);
+```
+
+<!-- Blazor -->
+
+また、追加の CSS ファイルをリンクして、スタイルを `Stepper` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml**フ ァイルに配置する必要があります:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
 
 これで、{Platform} `Stepper` とそのパネルの基本構成から始めることができます。
 
@@ -62,6 +79,17 @@ defineComponents(IgcStepperComponent);
 </igc-stepper>
 ```
 
+```razor
+<IgbStepper>
+    @foreach (var item in this.StepsData)
+    {
+        <IgbStep Disabled="@item.Disabled">
+          <p slot="title">@item.Title</p>
+        </IgbStep>
+    }
+</IgbStepper>
+```
+
 - 静的ステップの作成
 
 ```html
@@ -73,6 +101,17 @@ defineComponents(IgcStepperComponent);
        <p slot="title">Step 2</p>
     </igc-step>
 </igc-stepper>
+```
+
+```razor
+<IgbStepper>
+    <IgbStep>
+       <p slot="title">Step 1</p>
+    </IgbStep>
+     <IgbStep>
+       <p slot="title">Step 2</p>
+    </IgbStep>
+</IgbStepper>
 ```
 各ステップで、`Indicator`、`Title`、および `Subtitle` スロットを使用してインジケーター、タイトル、およびサブタイトルを構成できます。
 
@@ -87,10 +126,23 @@ defineComponents(IgcStepperComponent);
        <p slot="subtitle">Home Sub Title</p>
        <div>
           Step Content
-          ...
        </div>
     </igc-step>
 </igc-stepper>
+```
+
+```razor
+<IgbStepper>
+    <IgbStep>
+       <IgbIcon slot="indicator" IconName="home" Collection="material" />
+       <p slot="title">Home</p>
+       <p slot="subtitle">Home Sub Title</p>
+       <div>
+          Step Content
+          ...
+       </div>
+    </IgbStep>
+</IgbStepper>
 ```
 <img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 500px" src="../../images/stepper/stepper-step.png"/>
 

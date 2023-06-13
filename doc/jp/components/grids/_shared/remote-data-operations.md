@@ -366,7 +366,9 @@ this.remoteValuesService.getColumnData(
 BLAZOR CODE SNIPPET HERE
 ```
 
+<!-- Angular -->
 Excel スタイル フィルタリングのカスタム ロード テンプレートを提供するには、`ExcelStyleLoading` ディレクティブを使用できます。
+<!-- end:Angular -->
 
 ```html
 <igx-grid [data]="data" [filterMode]="'excelStyleFilter'" [uniqueColumnValuesStrategy]="columnValuesStrategy">
@@ -934,7 +936,7 @@ BLAZOR CODE SNIPPET HERE
 * `{ComponentName}`
 
 ## その他のリソース
-
+<!-- ComponentStart:  Grid -->
 * [ページング](paging.md)
 * [仮想化とパフォーマンス](virtualization.md)
 * [フィルタリング](filtering.md)
@@ -944,6 +946,7 @@ BLAZOR CODE SNIPPET HERE
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

@@ -72,7 +72,7 @@ The following example represents `{ComponentName}` pagination and exposes the op
 
 Group rows participate in the paging process along with data rows. They count towards the page size for each page. Collapsed rows are not included in the paging process.
 
-Integration between Paging and Group By is described in the [Group By](groupby.md#grid-group-by-with-paging) topic.
+Integration between Paging and Group By is described in the [Group By](groupby.md#{PlatformLower}-grid-group-by-with-paging) topic.
 
 <!-- ComponentEnd: Grid -->
 
@@ -115,7 +115,7 @@ constructor() {
         grid.data = this.data;
         paginator.page = grid.page;
         paginator.totalRecords = grid.totalRecords;
-        paginator.selectOption = selectOptions;
+        paginator.selectOptions = selectOptions;
         paginator.displayDensity = grid.displayDensity;
     }
     this._bind();
@@ -309,7 +309,7 @@ $dark-paginator-schema: extend($_dark-pagination,
                color: ("primary", 200)
             ),
             border-color:(
-               color:( "primary", 500)
+               color: ("primary", 500)
             )
         )
 );
@@ -317,22 +317,22 @@ $dark-paginator-schema: extend($_dark-pagination,
 $dark-button-schema: extend($_dark-button,
         (
             icon-color:(
-               color:("secondary", 700)
+               color: ("secondary", 700)
             ),
             icon-hover-color:(
-               color:("primary", 500)
+               color: ("primary", 500)
             ),
             icon-hover-background:(
-               color:("secondary", 500)
+               color: ("secondary", 500)
             ),
             icon-focus-color:(
-               color:("primary", 500)
+               color: ("primary", 500)
             ),
             icon-focus-background:(
-               color:("secondary", 500)
+               color: ("secondary", 500)
             ),
             disabled-color:(
-               color:("primary", 700)
+               color: ("primary", 700)
             )
         )
 );
@@ -376,9 +376,11 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ## API References
 * `{ComponentName}`
-* `GridPaginator`
+* `Paginator`
 
 ## Additional Resources
+
+<!-- ComponentStart:  Grid -->
 
 <!-- * [Paginator](../paginator.md) -->
 * [Virtualization and Performance](virtualization.md)
@@ -389,6 +391,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

@@ -29,6 +29,10 @@
     { "names":[{"platform":"Angular","mappedType":"ErrorBarCalculatorType","mappedName":"StandardDeviation"}],"originalName":"StandardDeviation"},
     { "names":[{"platform":"Angular","mappedType":"ErrorBarCalculatorType","mappedName":"StandardError"}],"originalName":"StandardError"},
     { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics"},
+  { "originalName":"FocusEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-focus-event-args.ts","mappedName":"IgxFocusEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"target"}],"originalName":"Target"}],"originalNamespace":"Infragistics"},
   { "originalName":"RectChangedEventArgs",
     "names":[{"platform":"Angular","fileName":"igx-rect-changed-event-args.ts","mappedName":"IgxRectChangedEventArgs"}],
     "members":[
@@ -359,6 +363,10 @@
     { "names":[{"platform":"Angular","mappedType":"BaseControlTheme","mappedName":"Default"}],"originalName":"Default"},
     { "names":[{"platform":"Angular","mappedType":"BaseControlTheme","mappedName":"DenaliLight"}],"originalName":"DenaliLight"},
     { "names":[{"platform":"Angular","mappedType":"BaseControlTheme","mappedName":"MaterialLight"}],"originalName":"MaterialLight"},
+    { "names":[{"platform":"Angular","mappedType":"BaseControlTheme","mappedName":"SlingshotLight"}],"originalName":"SlingshotLight"},
+    { "names":[{"platform":"Angular","mappedType":"BaseControlTheme","mappedName":"SlingshotDark"}],"originalName":"SlingshotDark"},
+    { "names":[{"platform":"Angular","mappedType":"BaseControlTheme","mappedName":"RevealLight"}],"originalName":"RevealLight"},
+    { "names":[{"platform":"Angular","mappedType":"BaseControlTheme","mappedName":"RevealDark"}],"originalName":"RevealDark"},
     { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Theming.Implementation"},
   { "originalName":"ElevationMode","isEnum":true,
     "names":[{"platform":"Angular","fileName":"ElevationMode.ts","mappedName":"ElevationMode"}],

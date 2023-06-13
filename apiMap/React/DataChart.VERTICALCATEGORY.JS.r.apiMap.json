@@ -16,7 +16,7 @@
     { "names":[{"platform":"React","mappedType":"method","mappedName":"scrollRangeIntoView"}],"originalName":"ScrollRangeIntoView"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"getWindowZoomFromCategories"}],"originalName":"GetWindowZoomFromCategories"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"getWindowZoomFromItemSpan"}],"originalName":"GetWindowZoomFromItemSpan"}],"originalBaseTypeName":"CategoryAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getWindowZoomFromItemSpan"}],"originalName":"GetWindowZoomFromItemSpan"}],"originalBaseTypeName":"CategoryAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"BarSeries",
     "names":[{"platform":"React","fileName":"igr-bar-series.ts","dynamicModuleName":"igr-bar-series-dynamic-module.ts","moduleName":"igr-bar-series-module.ts","mappedName":"IgrBarSeries"}],
     "members":[
@@ -26,7 +26,7 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"radiusY"}],"originalName":"RadiusY"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"getSeriesValueBoundingBox"}],"originalName":"GetSeriesValueBoundingBox"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"getItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"VerticalAnchoredCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"VerticalAnchoredCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"VerticalAnchoredCategorySeries",
     "names":[{"platform":"React","fileName":"igr-vertical-anchored-category-series.ts","mappedName":"IgrVerticalAnchoredCategorySeries"}],
     "members":[
@@ -44,4 +44,4 @@
     { "names":[{"platform":"React","mappedType":"method","mappedName":"getItemIndex"}],"originalName":"GetItemIndex"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"getItem"}],"originalName":"GetItem"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"canUseAsYAxis"}],"originalName":"CanUseAsYAxis"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"canUseAsXAxis"}],"originalName":"CanUseAsXAxis"}],"originalBaseTypeName":"AnchoredCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"canUseAsXAxis"}],"originalName":"CanUseAsXAxis"}],"originalBaseTypeName":"AnchoredCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}
