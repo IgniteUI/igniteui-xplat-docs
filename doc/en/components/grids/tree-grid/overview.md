@@ -184,6 +184,36 @@ const EMPLOYEE_DATA = [
 ]
 ```
 
+```razor
+public class EmployeesNestedDataItem
+{
+    public double ID { get; set; }
+    public double Age { get; set; }
+    public double Salary { get; set; }
+    public double Productivity { get; set; }
+    public string City { get; set; }
+    public string Country { get; set; }
+    public string Phone { get; set; }
+    public string HireDate { get; set; }
+    public string Name { get; set; }
+    public string Title { get; set; }
+    public List<EmployeesItem> Employees { get; set; }
+}
+public class EmployeesItem
+{
+    public double Age { get; set; }
+    public double Salary { get; set; }
+    public double Productivity { get; set; }
+    public string City { get; set; }
+    public string Country { get; set; }
+    public string Phone { get; set; }
+    public string HireDate { get; set; }
+    public double ID { get; set; }
+    public string Name { get; set; }
+    public string Title { get; set; }
+}
+```
+
 In order for the tree grid to build the hierarchy, we will have to set its `childDataKey` property to the name of the child collection that is used in each of our data objects. In our case that will be the **Employees** collection.
 In addition, we can disable the automatic column generation and define them manually by matching them to the actual properties of our data objects. (The **Employees** collection will be automatically used for the hierarchy, so there is no need to include it in the columns' definitions.)
 
@@ -195,7 +225,20 @@ Finally, we can enable the toolbar of our tree grid, along with the column hidin
 ### Primary and Foreign keys
 When we are using the **primary and foreign keys** option, every data object contains a primary key and a foreign key. The primary key is the unique identifier of the current data object and the foreign key is the unique identifier of its parent. In this case the `data` property of our tree grid that contains the original data source will be a flat collection.
 
-<!-- Angular, WebComponents -->
+
+```razor
+public class EmployeesFlatDataItem
+{
+    public double Age { get; set; }
+    public string HireDate { get; set; }
+    public double ID { get; set; }
+    public string Name { get; set; }
+    public string Phone { get; set; }
+    public bool OnPTO { get; set; }
+    public double ParentID { get; set; }
+    public string Title { get; set; }
+}
+```
 
 ```typescript
 const data = [
@@ -213,8 +256,6 @@ const data = [
 ```
 
 In the sample data above, all records have an ID, a ParentID and some additional properties like Name, JobTitle and Age. As mentioned previously, the ID of the records must be unique as it will be our `PrimaryKey`. The ParentID contains the ID of the parent node and could be set as a `ForeignKey`. If a row has a ParentID that does not match any row in the tree grid, then that means this row is a root row.
-
-<!-- end: Angular, WebComponents -->
 
 `sample="/{TreeGridSample}/using-primary-foreign-keys", height="700", alt="{Platform} Tree using Primary and Foreign keys example"`
 
@@ -237,6 +278,10 @@ In case you would like to change some of the colors, you need to set a class for
 
 ```ts
 <igc-tree-grid class="tree-grid">
+```
+
+```razor
+<IgbTreeGrid Class="tree-grid">
 ```
 
 Then set the related CSS properties for that class:
