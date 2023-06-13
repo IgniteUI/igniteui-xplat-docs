@@ -15,7 +15,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"_timeShortFormat"}],"originalName":"_timeShortFormat"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"formatDate"}],"originalName":"FormatDate"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"getPattern"}],"originalName":"GetPattern"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Inputs"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-inputs","originalNamespace":"Infragistics.Controls.Inputs"},
   { "originalName":"DatePicker",
     "names":[{"platform":"WebComponents","fileName":"igc-date-picker-component.ts","mappedName":"IgcDatePickerComponent"}],
     "members":[
@@ -42,14 +42,14 @@
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isDisabled"}],"originalName":"IsDisabled"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"select"}],"originalName":"Select"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"exportVisualModel"}],"originalName":"ExportVisualModel"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"exportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"exportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"packageName":"igniteui-inputs","originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
   { "originalName":"GotFocusEventArgs",
-    "names":[{"platform":"WebComponents","fileName":"igc-got-focus-event-args.ts","mappedName":"IgcGotFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
+    "names":[{"platform":"WebComponents","fileName":"igc-got-focus-event-args.ts","mappedName":"IgcGotFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-inputs","originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
   { "originalName":"LostFocusEventArgs",
-    "names":[{"platform":"WebComponents","fileName":"igc-lost-focus-event-args.ts","mappedName":"IgcLostFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
+    "names":[{"platform":"WebComponents","fileName":"igc-lost-focus-event-args.ts","mappedName":"IgcLostFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-inputs","originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
   { "originalName":"DateFormats","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"DateFormats.ts","mappedName":"DateFormats"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"DateFormats","mappedName":"DateShort"}],"originalName":"DateShort"},
     { "names":[{"platform":"WebComponents","mappedType":"DateFormats","mappedName":"DateLong"}],"originalName":"DateLong"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Inputs.Implementation"}]}
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-inputs","originalNamespace":"Infragistics.Controls.Inputs.Implementation"}]}

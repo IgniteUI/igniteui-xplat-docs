@@ -38,7 +38,7 @@ npm install @webcomponents/custom-elements
 ```
 <!-- end: WebComponents -->
 
-For a complete introduction to the {ProductName}, read the [getting started](../..\general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [getting started](../../general-getting-started.md) topic.
 
 Also, we strongly suggest that you take a brief look at [multi-column headers](multi-column-headers.md) topic, to see more detailed information on how to setup the column groups in your grid.
 
