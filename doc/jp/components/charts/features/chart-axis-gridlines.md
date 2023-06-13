@@ -63,7 +63,7 @@ _language: ja
 
 次の例は、上記のダッシュ配列プロパティが設定された `XamDataChart` を示しています。
 
-`sample="/charts/data-chart/dash-array-axes", height="450", alt="{Platform} Axis Dash Array Example"`
+`sample="/charts/data-chart/dash-array-axes", height="450", alt="{Platform} 軸破線配列の例"`
 
 
 <div class="divider--half"></div>

@@ -52,7 +52,7 @@ _language: ja
 
 次のサンプルは、`CategoryChart` 内のさまざまな `ValueLines` の使用法を示しています。
 
-`sample="/charts/category-chart/value-lines", height="600", alt="{Platform} Value Lines Example"`
+`sample="/charts/category-chart/value-lines", height="600", alt="{Platform} 値線の例"`
 
 <div class="divider--half"></div>
 
