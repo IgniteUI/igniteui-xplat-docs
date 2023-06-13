@@ -216,6 +216,12 @@
       },
       {
         "exclude": ["Angular", "React"],
+        "name": "Export to Excel",
+        "href": "grids/grid/export-excel.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React"],
         "name": "Excel スタイル フィルタリング",
         "href": "grids/grid/excel-style-filtering.md",
         "status": ""
@@ -230,6 +236,12 @@
         "exclude": ["Angular", "React"],
         "name": "グループ化",
         "href": "grids/grid/groupby.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "マスター / 詳細",
+        "href": "grids/grid/master-detail.md",
         "status": ""
       },
       {
@@ -344,6 +356,12 @@
         "exclude": ["Angular", "React"],
         "name": "仮想化とパフォーマンス",
         "href": "grids/grid/virtualization.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "テーマ設定",
+        "href": "grids/theming.md",
         "status": ""
       }
     ]
@@ -960,11 +978,6 @@
         "name": "行のピン固定",
         "href": "grids/data-grid/row-pinning.md",
         "status": ""
-      },
-      {
-        "name": "テーマ設定",
-        "status": "",
-        "href": "grids/data-grid/theming.md"
       }
     ]
   },
@@ -1469,9 +1482,13 @@
     "status": ""
   },
   {
-    "exclude": ["Angular"],
     "name": "メニュー",
     "header": true
+  },
+  {
+    "name": "ツールバー",
+    "href": "menus/toolbar.md",
+    "status": "PREVIEW"
   },
   {
     "exclude": ["Angular"],
@@ -1954,12 +1971,6 @@
         "name": "行のピン固定",
         "href": "grids/data-grid/row-pinning.md",
         "status": ""
-      },
-      {
-        "exclude": ["Angular", "React"],
-        "name": "テーマ設定",
-        "status": "",
-        "href": "grids/data-grid/theming.md"
       }
     ]
   }
