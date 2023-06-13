@@ -355,8 +355,8 @@
       {
         "exclude": ["Angular", "React"],
         "name": "テーマ設定",
-        "status": "",
-        "href": "grids/theming.md"
+        "href": "grids/theming.md",
+        "status": ""
       }
     ]
   },
@@ -1476,9 +1476,13 @@
     "status": ""
   },
   {
-    "exclude": ["Angular"],
     "name": "メニュー",
     "header": true
+  },
+  {
+    "name": "ツールバー",
+    "href": "menus/toolbar.md",
+    "status": "PREVIEW"
   },
   {
     "exclude": ["Angular"],
