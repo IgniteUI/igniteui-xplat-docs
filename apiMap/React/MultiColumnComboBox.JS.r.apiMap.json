@@ -6,21 +6,21 @@
     { "names":[{"platform":"React","mappedType":"CloneDataSourceFilterOperation","mappedName":"None"}],"originalName":"None"},
     { "names":[{"platform":"React","mappedType":"CloneDataSourceFilterOperation","mappedName":"ValueToText"}],"originalName":"ValueToText"},
     { "names":[{"platform":"React","mappedType":"CloneDataSourceFilterOperation","mappedName":"TextToValue"}],"originalName":"TextToValue"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"GotFocusEventArgs",
-    "names":[{"platform":"React","fileName":"igr-got-focus-event-args.ts","mappedName":"IgrGotFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    "names":[{"platform":"React","fileName":"igr-got-focus-event-args.ts","mappedName":"IgrGotFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"LostFocusEventArgs",
-    "names":[{"platform":"React","fileName":"igr-lost-focus-event-args.ts","mappedName":"IgrLostFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    "names":[{"platform":"React","fileName":"igr-lost-focus-event-args.ts","mappedName":"IgrLostFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"MultiColumnComboBoxTextChangedEventArgs",
     "names":[{"platform":"React","fileName":"igr-multi-column-combo-box-text-changed-event-args.ts","mappedName":"IgrMultiColumnComboBoxTextChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"string","mappedName":"oldText"}],"originalName":"OldText"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"newText"}],"originalName":"NewText"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"newText"}],"originalName":"NewText"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"MultiColumnComboBoxValueChangedEventArgs",
     "names":[{"platform":"React","fileName":"igr-multi-column-combo-box-value-changed-event-args.ts","mappedName":"IgrMultiColumnComboBoxValueChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"any","mappedName":"oldValue"}],"originalName":"OldValue"},
-    { "names":[{"platform":"React","mappedType":"any","mappedName":"newValue"}],"originalName":"NewValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"newValue"}],"originalName":"NewValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"MultiColumnComboBox",
     "names":[{"platform":"React","fileName":"igr-multi-column-combo-box.ts","mappedName":"IgrMultiColumnComboBox"}],
     "members":[
@@ -126,14 +126,14 @@
     { "names":[{"platform":"React","mappedType":"method","mappedName":"dropDown"}],"originalName":"DropDown"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"select"}],"originalName":"Select"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"exportVisualModel"}],"originalName":"ExportVisualModel"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"MultiColumnComboBoxSelectedItemChangeType","isEnum":true,
     "names":[{"platform":"React","fileName":"MultiColumnComboBoxSelectedItemChangeType.ts","mappedName":"MultiColumnComboBoxSelectedItemChangeType"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"MultiColumnComboBoxSelectedItemChangeType","mappedName":"Value"}],"originalName":"Value"},
     { "names":[{"platform":"React","mappedType":"MultiColumnComboBoxSelectedItemChangeType","mappedName":"Text"}],"originalName":"Text"},
     { "names":[{"platform":"React","mappedType":"MultiColumnComboBoxSelectedItemChangeType","mappedName":"Row"}],"originalName":"Row"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"SortMode","isEnum":true,
     "names":[{"platform":"React","fileName":"SortMode.ts","mappedName":"SortMode"}],
     "members":[
@@ -142,4 +142,4 @@
     { "names":[{"platform":"React","mappedType":"SortMode","mappedName":"SortByOneColumnOnlyTriState"}],"originalName":"SortByOneColumnOnlyTriState"},
     { "names":[{"platform":"React","mappedType":"SortMode","mappedName":"SortByMultipleColumnsTriState"}],"originalName":"SortByMultipleColumnsTriState"},
     { "names":[{"platform":"React","mappedType":"SortMode","mappedName":"None"}],"originalName":"None"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grid.Implementation"}]}
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"}]}
