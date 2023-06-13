@@ -1815,12 +1815,56 @@ export class MarkdownTransformer {
         return errorsCount;
     }
 
-    verifyMetadata(fileContent: string, filePath: string): any {
+    verifyLinksToTopic(fileContent: string): string {
+
+        let lines = fileContent.split('\n');
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i];
+            let words = line.split(' ');
+            for (let w = 0; w < words.length; w++) {
+                let word = words[w];
+                if (word.indexOf(".md#") >= 0) {
+                    let parts = word.split('#');
+                    let topic = parts[0];
+                    let header = parts[1];
+                    header = header.toLowerCase();
+                    header = header.replace('{platform}', '{PlatformLower}');
+                    header = header.replace('{platformlower}', '{PlatformLower}');
+                    let newLink = topic + '#' + header;
+                    if (newLink !== words[w]) {
+                        words[w] = newLink;
+                        console.log("auto-correct link: " + newLink);
+                    }
+
+                }
+            }
+            lines[i] = words.join(' ');
+        }
+
+        // let words = fileContent.split(' ');
+        // for (let i = 0; i < words.length; i++) {
+        //     const word = words[i];
+        //     if (word.indexOf(".md#") >= 0) {
+        //         let parts = word.split('#');
+        //         let topic = parts[0];
+        //         let header = parts[1];
+        //         header = header.toLowerCase();
+        //         header = header.replace('{platform}', '{PlatformLower}');
+        //         header = header.replace('{platformlower}', '{PlatformLower}');
+        //         words[i] = topic + '#' + header;
+        //         console.log("verifyLinks " + words[i]);
+        //     }
+        // }
+        return lines.join('\n');
+    }
+
+    verifyMarkdown(fileContent: string, filePath: string): any {
         var md = new MarkdownContent(fileContent, filePath);
         var mdValidated = false;
 
-        if (md.metadata.hasContent())
-        {
+        if (md.metadata === undefined || !md.metadata.hasContent()) {
+            console.log("ERROR: missing metadata section wrapped with '---' in " + filePath);
+        } else {
             // if (md.isLocalEN()) {
             //     md.metadata.language = '_language: en';
             // }
@@ -1861,11 +1905,10 @@ export class MarkdownTransformer {
             {
                 mdValidated = true;
             }
-        } else {
-            console.log("ERROR: missing metadata section wrapped with '---' in " + filePath);
         }
 
         //console.log("metadata " + filePath);
+        fileContent = this.verifyLinksToTopic(fileContent);
 
         return { fileContent: fileContent, isValid: mdValidated};
     }
@@ -2134,7 +2177,12 @@ export class MarkdownTransformer {
             }
             else if (node.updated) {
                 node.status = "UPDATED";
-            } else {
+            }else if (node.preview) {
+                node.status = "PREVIEW";
+            } else if (node.beta) {
+                node.status = "BETA";
+            } 
+             else {
                 node.status = "";
             }
 
@@ -2149,6 +2197,8 @@ export class MarkdownTransformer {
             // clearing YML props since they are stored in node.status prop
             node.updated = undefined;
             node.new = undefined;
+            node.preview = undefined;
+            node.beta = undefined;
 
             // recursively convert items nodes if they exist
             if (node.items !== undefined &&
@@ -2245,6 +2295,12 @@ export class MarkdownTransformer {
                     }
                     else if (status.toUpperCase() === "UPDATED") {
                         yml += tab + "  updated: true" + "\n";
+                    }
+                    else if (status.toUpperCase() === "PREVIEW") {
+                        yml += tab + "  preview: true" + "\n";
+                    }
+                    else if (status.toUpperCase() === "BETA") {
+                        yml += tab + "  beta: true" + "\n";
                     }
                     else { // status === ""
                         yml += tab + "  new: false" + "\n";
@@ -2383,6 +2439,8 @@ export class TocNode {
     public header?: boolean;
     public new?: boolean;
     public updated?: boolean;
+    public preview?: boolean;
+    public beta?: boolean;
     public items?: TocNode[];
     public exclude?: string[];
 
