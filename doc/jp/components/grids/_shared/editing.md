@@ -55,13 +55,18 @@ _language: ja
  - `boolean` データ型ではデフォルトのテンプレートは `Checkbox` を使用します。
  - `currency` データ型の場合、デフォルトのテンプレートは、アプリケーションまたはグリッドのロケール設定に基づいたプレフィックス/サフィックス構成の `InputGroup` を使用します。
  - `percent` パーセントデータ型の場合、デフォルトのテンプレートは、編集された値のプレビューをパーセントで表示するサフィックス要素を持つ `InputGroup` を使用します。
+  <!-- ComponentStart:  Grid -->
  - カスタム テンプレートについては、[セル編集トピック](cell-editing.md#セル編集テンプレート)を参照してください。
+ <!-- ComponentEnd:  Grid -->
 
+<!-- ComponentStart:  Grid -->
 すべての利用可能な列データ型は、公式の[列タイプトピック](column-types.md#デフォルトのテンプレート)にあります。
+<!-- ComponentEnd:  Grid -->
 
 ### イベントの引数とシーケンス
-
+<!-- ComponentStart:  Grid -->
 グリッドは、編集エクスペリエンスをより詳細に制御できる広範なイベントを公開します。これらのイベントは、[**行の編集**](row-editing.md)および[**セルの編集**](cell-editing.md)のライフサイクル - 編集の開始、コミット、またはキャンセル時に発生します。
+<!-- ComponentEnd:  Grid -->
 
  | イベント           | 説明                                                                                                                                               | 引数                  | キャンセル可能 |
  | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ----------- |
@@ -185,14 +190,14 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 * [選択](selection.md)
 
 <!-- ComponentStart: HierarchicalGrid -->
-* [検索](search.md)
+<!-- * [検索](search.md) -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- end: Angular -->
 
 <!-- Blazor -->
 
-
+<!-- ComponentStart:  Grid -->
 * [列のデータ型](column-types.md#デフォルトのテンプレート)
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
@@ -203,8 +208,10 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
 
+<!-- ComponentEnd:  Grid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
-* [検索](search.md)
+<!-- * [Searching](search.md) -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- end: Blazor -->

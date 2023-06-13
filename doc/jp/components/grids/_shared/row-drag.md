@@ -20,7 +20,7 @@ _language: ja
 
 ## 構成
 
-`{ComponentName}` の行ドラッグを有効にするには、グリッドの `RowDraggable` を **true** に設定します。これが有効になると、行ドラッグ ハンドルが各行に表示されます。このハンドルは行ドラッグを開始するために使用できます。
+`{ComponentName}` の行ドラッグを有効にするには、グリッドの `RowDraggable` を **true** に設定します。これが有効になると、行ドラッグ ハンドルが各行に表示されます。このハンドルは行ドラッグを開始するために使用できます。ドラッグ ハンドルをクリックしてボタンを押しながらカーソルを動かすと、グリッドの `RowDragStart` イベントが発生します。クリックをリリースすると、`RowDragEnd` イベントが発生します。
 
 <!-- Angular -->
 ```html
@@ -41,7 +41,7 @@ _language: ja
 ```
 <!-- end: WebComponents -->
 
-ドラッグ ハンドルをクリックしてボタンを押しながらカーソルを動かすと、グリッドの `RowDragStart` イベントが発生します。クリックをリリースすると、`RowDragEnd` イベントが発生します。
+<!-- Angular -->
 
 以下は、行ドラッグをサポートするための `{ComponentName}` の設定方法と、ドロップイベントの適切な処理方法についてのチュートリアルです。
 
@@ -57,8 +57,6 @@ _language: ja
 
 <!-- ComponentEnd: Grid -->
 
-<!-- Angular -->
-
 ### ドロップエリア
 
 行ドラッグを簡単に有効にできました。次は行ドロップを処理する方法を設定する必要があります。
@@ -68,7 +66,7 @@ _language: ja
 
 ```typescript
 import { ..., IgxDragDropModule } from 'igniteui-angular';
-...
+// ...
 @NgModule({
     imports: [..., IgxDragDropModule]
 })
@@ -76,7 +74,7 @@ import { ..., IgxDragDropModule } from 'igniteui-angular';
 
 ```typescript
 import { IgcDragDropModule } from 'igniteui-webcomponents';
-...
+// ...
 ModuleManager.register(
     IgcDragDropModule
 );
@@ -391,13 +389,7 @@ enum DragIcon {
 `sample="/{ComponentSample}/row-drag-to-grid", height="550", alt="{Platform} {ComponentTitle} 行のドラッグ"`
 
 
-
-<!-- end: Angular -->
-
-
 ## アプリケーション デモ
-
-<!-- Angular -->
 
 <!-- ComponentStart: Grid -->
 
@@ -415,8 +407,6 @@ enum DragIcon {
 > 上記のデモで使用されている行ドラッグ ゴーストに適用されるクラスは ::ng-deep 修飾子を使用しています。これは、行ドラッグが内部グリッド機能であり、CSS カプセル化のためにアプリケーション レベルでアクセスできないためです。
 
 <!-- ComponentEnd: Grid -->
-
-<!-- end: Angular -->
 
 ### 行の並べ替えデモ
 
@@ -762,6 +752,8 @@ class MyRowGhostComponent {
 }
 ```
 
+<!-- Angular -->
+
 #### カーソル位置に基づいたドロップ インジケーターの表示
 
 次のセクションのデモでは、ドラッグされた行がドロップされる場所のインジケーターを表示する方法を確認します。このインジケーターは好きなようにカスタマイズできます - ドラッグされた行がドロップされる位置に配置されたプレースホルダー行、ドラッグされた行が現在ホバーされている行の上または下にドロップされるかどうかを示す境界線スタイルなどです。
@@ -831,8 +823,6 @@ private changeHighlightedElement(newElement: HTMLElement) {
   }
 }
 ```
-
-<!-- Angular -->
 
 #### 行ドラッグでグリッドをスクロールする
 
@@ -917,10 +907,9 @@ class MyGridScrollComponent {
 <!-- ComponentEnd: Grid -->
 <!-- end: Angular -->
 
-
 ## 制限
 
-現在、`RowDraggable` ディレクティブに既知の制限はありません。
+現在、`RowDraggable` に既知の制限はありません。
 
 ## API リファレンス
 

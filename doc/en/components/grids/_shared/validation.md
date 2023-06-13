@@ -429,7 +429,7 @@ private rowValidator(): ValidatorFn {
 
         const age = formGroup.get('Age');
         const hireDate = formGroup.get('HireDate');
-        if((new Date().getFullYear() - new Date(hireDate.value).getFullYear()) + 18 >= age.value) {
+        if ((new Date().getFullYear() - new Date(hireDate.value).getFullYear()) + 18 >= age.value) {
             returnObject['ageLessHireDate'] = true;
         }
 
@@ -659,11 +659,12 @@ public cellStyles = {
 
 <!-- Blazor -->
 
-
+<!-- ComponentStart:  Grid -->
 * [{ComponentTitle} Editing](editing.md)
 * [{ComponentTitle} Row Editing](row-editing.md)
 * [{ComponentTitle} Row Adding](row-adding.md)
 * [{ComponentTitle} Transactions](batch-editing.md)
+<!-- ComponentEnd:  Grid -->
 
 <!-- end: Blazor -->
 

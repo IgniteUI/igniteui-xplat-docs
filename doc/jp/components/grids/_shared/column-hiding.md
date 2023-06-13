@@ -530,10 +530,10 @@ $custom-column-actions-schema: extend($_dark-column-actions,
 $custom-button-schema: extend($_dark-button,
     (
         flat-text-color:(
-           color:("secondary", 500)
+           color: ("secondary", 500)
         ),
         disabled-color:(
-           color:("primary", 700)
+           color: ("primary", 700)
         )
     )
 );
@@ -575,20 +575,21 @@ $custom-button: button-theme(
 
 <!-- Angular -->
 このトピックでは、`{ComponentName}` のツールバーの定義済みの列非表示 UI の使用方法や別のコンポーネントとして定義する方法について説明しました。その他の列順序から選択する機能を提供する UI を実装し、カスタム タイトルおよびフィルター プロンプト テキストを設定しました。[**IgxRadio**](../radio-button.md) ボタンなどその他の {ProductName} コンポーネントも使用しています。
-<!-- end: Angular -->
 
-<!-- Blazor -->
-このトピックでは、`{ComponentName}` のツールバーの定義済みの列非表示 UI の使用方法について学びました。
-<!-- end: Blazor -->
-
-以下は、列非表示 UI のその他の API です。
-
-* `ColumnActions`
 
 その他のコンポーネントおよびディレクティブ (またはそのいずれか) で使用した API:
 
-`{ComponentName}` プロパティ:
-* `HiddenColumnsCount`
+* `ColumnActionsComponent`
+<!-- end: Angular -->
+
+<!-- Blazor, WebComponents -->
+このトピックでは、`{ComponentName}` のツールバーの定義済みの列非表示 UI の使用方法について学びました。以下は、列非表示 UI のその他の API です。
+
+* `ColumnActionsComponent`
+
+その他のコンポーネント (またはそのいずれか) で使用した API:
+
+<!-- end: Blazor, WebComponents -->
 
 `Column` プロパティ:
 * `DisableHiding`
@@ -603,6 +604,9 @@ $custom-button: button-theme(
 <!-- end: Angular -->
 
 `GridToolbar` メソッド:
+* `GridToolbarHiding`
+* `GridToolbarActions`
+* `GridToolbarTitle`
 
 `{ComponentName}` イベント:
 * `ColumnVisibilityChanged`
@@ -614,8 +618,7 @@ $custom-button: button-theme(
 <!-- end: Angular -->
 
 ## その他のリソース
-
-
+<!-- ComponentStart:  Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [フィルタリング](filtering.md)
 * [ページング](paging.md)
@@ -624,7 +627,7 @@ $custom-button: button-theme(
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
-
+<!-- ComponentEnd:  Grid -->
 コミュニティに参加して新しいアイデアをご提案ください。
 
 * [{ProductName} **フォーラム (英語)**]({ForumsLink})

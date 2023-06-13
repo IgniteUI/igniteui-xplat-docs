@@ -529,10 +529,10 @@ $custom-column-actions-schema: extend($_dark-column-actions,
 $custom-button-schema: extend($_dark-button,
     (
         flat-text-color:(
-           color:("secondary", 500)
+           color: ("secondary", 500)
         ),
         disabled-color:(
-           color:("primary", 700)
+           color: ("primary", 700)
         )
     )
 );
@@ -616,7 +616,7 @@ Styles:
 <!-- end: Angular -->
 
 ## Additional Resources
-
+<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Filtering](filtering.md)
 * [Paging](paging.md)
@@ -625,6 +625,7 @@ Styles:
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

@@ -6,21 +6,21 @@
     { "names":[{"platform":"Angular","mappedType":"CloneDataSourceFilterOperation","mappedName":"None"}],"originalName":"None"},
     { "names":[{"platform":"Angular","mappedType":"CloneDataSourceFilterOperation","mappedName":"ValueToText"}],"originalName":"ValueToText"},
     { "names":[{"platform":"Angular","mappedType":"CloneDataSourceFilterOperation","mappedName":"TextToValue"}],"originalName":"TextToValue"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"GotFocusEventArgs",
-    "names":[{"platform":"Angular","fileName":"igx-got-focus-event-args.ts","mappedName":"IgxGotFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    "names":[{"platform":"Angular","fileName":"igx-got-focus-event-args.ts","mappedName":"IgxGotFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"LostFocusEventArgs",
-    "names":[{"platform":"Angular","fileName":"igx-lost-focus-event-args.ts","mappedName":"IgxLostFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    "names":[{"platform":"Angular","fileName":"igx-lost-focus-event-args.ts","mappedName":"IgxLostFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"MultiColumnComboBoxTextChangedEventArgs",
     "names":[{"platform":"Angular","fileName":"igx-multi-column-combo-box-text-changed-event-args.ts","mappedName":"IgxMultiColumnComboBoxTextChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"oldText"}],"originalName":"OldText"},
-    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"newText"}],"originalName":"NewText"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"newText"}],"originalName":"NewText"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"MultiColumnComboBoxValueChangedEventArgs",
     "names":[{"platform":"Angular","fileName":"igx-multi-column-combo-box-value-changed-event-args.ts","mappedName":"IgxMultiColumnComboBoxValueChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"any","mappedName":"oldValue"}],"originalName":"OldValue"},
-    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"newValue"}],"originalName":"NewValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"newValue"}],"originalName":"NewValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"MultiColumnComboBox",
     "names":[{"platform":"Angular","fileName":"igx-multi-column-combo-box-component.ts","mappedName":"IgxMultiColumnComboBoxComponent"}],
     "members":[
@@ -126,14 +126,14 @@
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"dropDown"}],"originalName":"DropDown"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"select"}],"originalName":"Select"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"exportVisualModel"}],"originalName":"ExportVisualModel"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"exportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"exportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"MultiColumnComboBoxSelectedItemChangeType","isEnum":true,
     "names":[{"platform":"Angular","fileName":"MultiColumnComboBoxSelectedItemChangeType.ts","mappedName":"MultiColumnComboBoxSelectedItemChangeType"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"MultiColumnComboBoxSelectedItemChangeType","mappedName":"Value"}],"originalName":"Value"},
     { "names":[{"platform":"Angular","mappedType":"MultiColumnComboBoxSelectedItemChangeType","mappedName":"Text"}],"originalName":"Text"},
     { "names":[{"platform":"Angular","mappedType":"MultiColumnComboBoxSelectedItemChangeType","mappedName":"Row"}],"originalName":"Row"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"SortMode","isEnum":true,
     "names":[{"platform":"Angular","fileName":"SortMode.ts","mappedName":"SortMode"}],
     "members":[
@@ -142,4 +142,4 @@
     { "names":[{"platform":"Angular","mappedType":"SortMode","mappedName":"SortByOneColumnOnlyTriState"}],"originalName":"SortByOneColumnOnlyTriState"},
     { "names":[{"platform":"Angular","mappedType":"SortMode","mappedName":"SortByMultipleColumnsTriState"}],"originalName":"SortByMultipleColumnsTriState"},
     { "names":[{"platform":"Angular","mappedType":"SortMode","mappedName":"None"}],"originalName":"None"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grid.Implementation"}]}
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"}]}
