@@ -40,7 +40,7 @@ This is done via the `Sortable` input. With the `{ComponentName}` sorting, you c
 ```
 
 ```html
-<igc-column field="ProductName" header="Product Name" data-type="String" sortable="true"></igc-column>
+<igc-column field="ProductName" header="Product Name" data-type="string" sortable="true"></igc-column>
 ```
 
 ## Sorting Indicators
@@ -72,7 +72,9 @@ import { SortingDirection } from 'igniteui-webcomponents-grids';
 ```
 <!-- end: WebComponents -->
 
+<!-- Angular -->
 ```typescript
+
 // Perform a case insensitive ascending sort on the ProductName column.
 this.grid.sort({ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true });
 
@@ -82,6 +84,22 @@ this.grid.sort([
     { fieldName: 'Price', dir: SortingDirection.Desc }
 ]);
 ```
+<!-- end: Angular -->
+
+
+<!-- WebComponents -->
+```typescript
+
+// Perform a case insensitive ascending sort on the ProductName column.
+this.grid.sort([{ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true }]);
+
+// Perform sorting on both the ProductName and Price columns.
+this.grid.sort([
+    { fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true },
+    { fieldName: 'Price', dir: SortingDirection.Desc }
+]);
+```
+<!-- end: WebComponents -->
 
 ```razor
 @code {
@@ -191,12 +209,6 @@ The `{ComponentName}` supports remote sorting, which is demonstrated in the [{Co
 The sorting indicator icon in the column header can be customized using a template. The following properties are available for templating the sorting indicator for any sorting state (ascending, descending, none):
 
 <!-- Angular -->
-
-The sorting indicator icon in the column header can be customized using a template. The following directives are available for templating the sorting indicator for any sorting state (ascending, descending, none):
-
-<!-- end: Angular -->
-
-<!-- Angular -->
 - `IgxSortHeaderIconDirective` – re-templates the sorting icon when no sorting is applied.
 
 ```html
@@ -219,8 +231,14 @@ The sorting indicator icon in the column header can be customized using a templa
 ```
 
 ```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    grid.data = this.data;
+    grid.sortHeaderIconTemplate = this.sortHeaderIconTemplate;
+}
+
 public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
-    return html`<igc-icon icon-name="unfold_more></igc-icon>`;
+    return html`<igc-icon name="unfold_more"></igc-icon>`;
 }
 ```
 
@@ -246,6 +264,18 @@ public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
     {
         return @<IgbIcon Size="SizableComponentSize.Small" IconName="expand_less" Collection="material"></IgbIcon>;
     };
+}
+```
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    grid.data = this.data;
+    grid.sortAscendingHeaderIconTemplate = this.sortAscendingHeaderIconTemplate;
+}
+
+public sortAscendingHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
+    return html`<igc-icon name="expand_less"></igc-icon>`;
 }
 ```
 
@@ -276,8 +306,14 @@ public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
 ```
 
 ```ts
-public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
-    return html`<igc-icon icon-name="expand_more></igc-icon>`;
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    grid.data = this.data;
+    grid.sortDescendingHeaderIconTemplate = this.sortDescendingHeaderIconTemplate;
+}
+
+public sortDescendingHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
+    return html`<igc-icon name="expand_more"></igc-icon>`;
 }
 ```
 
@@ -388,6 +424,34 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
+
+<!-- WebComponents, Blazor -->
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```html
+<igc-grid class="grid"></igc-grid>
+```
+
+```razor
+<IgbGrid class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties to this class:
+
+```css
+.grid {
+    --igx-grid-sorted-header-icon-color: #ffb06a;
+    --igx-grid-sortable-header-icon-hover-color: black;
+}
+```
+### Demo
+
+`sample="/{ComponentSample}/column-sorting-style", height="550", alt="{Platform} {ComponentTitle} column sorting style"`
+
+<!-- end: WebComponents, Blazor -->
 
 ## API References
 

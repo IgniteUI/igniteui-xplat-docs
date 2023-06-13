@@ -146,9 +146,11 @@ These components expose templates giving flexibility for customization. For inst
 
 ## API References
 
+<!-- Angular -->
+
 For more detailed information regarding the Action Strip API, refer to the following links:
 
-* `ActionStripComponent`
+* `ActionStrip`
 
 Additional components and/or directives that can be used within the Action Strip:
 
@@ -157,8 +159,8 @@ Additional components and/or directives that can be used within the Action Strip
 
 <!-- end: Angular -->
 
-* `GridPinningActionsComponent`
-* `GridEditingActionsComponent`
+* `GridPinningActions`
+* `GridEditingActions`
 
 Our community is active and always welcoming to new ideas.
 
