@@ -452,7 +452,7 @@ grid.groupingExpressions = [
 ## Styling
 
 
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](theming.md).
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
 ```ts
