@@ -631,8 +631,8 @@ $custom-theme: grid-theme(
 <!-- WebComponents, Blazor -->
 ## スタイル設定
 
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
-In case you would like to change some of the colors, you need to set a class for the grid first:
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
+一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
 ```html
 <igc-grid class="grid"></igc-grid>
@@ -642,7 +642,7 @@ In case you would like to change some of the colors, you need to set a class for
 <IgbGrid class="grid"></IgbGrid>
 ```
 
-Then set the related CSS properties to this class:
+次に、そのクラスに関連する CSS プロパティを設定します。
 
 ```css
 .grid {

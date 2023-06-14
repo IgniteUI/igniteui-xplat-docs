@@ -67,7 +67,7 @@ _language: ja
 </{ComponentSelector}>
 ```
 
-Great, and now let's prepare for the search API of our `{ComponentName}`! We can create a few properties, which can be used for storing the currently searched text and whether the search is case sensitive and/or by an exact match.
+Great, and now let's prepare for the search API of our `{ComponentName}`! 検索したテキストの保存、また大文字小文字の区別や完全一致 (またはそのいずれか) に使用するプロパティを作成できます。
 
 <!-- Angular -->
 
@@ -105,7 +105,7 @@ public bool exactMatch = false;
 
 
 <!-- WebComponents -->
-Now let's create our search input!  By getting the input element we can get its current value. This will allow us to use the `{ComponentName}`'s `FindNext` and `FindPrev` methods to highlight all the occurrences of the `SearchText` and scroll to the next/previous one (depending on which method we have invoked).
+検索入力を作成します。By getting the input element we can get its current value. This will allow us to use the `{ComponentName}`'s `FindNext` and `FindPrev` methods to highlight all the occurrences of the `SearchText` and scroll to the next/previous one (depending on which method we have invoked).
 <!-- end: WebComponents -->
 
 <!-- Angular -->
