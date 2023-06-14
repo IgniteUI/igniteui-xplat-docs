@@ -437,13 +437,13 @@ this.grid.rowAddTextTemplate = (ctx: IgcGridEmptyTemplateContext) => {
 }
 ```
 
+<!-- Angular -->
 ### Customizing Buttons
 
-Customizing the buttons of the row editing overlay is possible using the `RowEditActionsDirective`.
+Customizing the buttons of the row editing overlay is possible by using the `RowEditActionsDirective`.
 
 If you want the buttons to be part of the keyboard navigation, then each on of them should have the `RowEditTabStopDirective`.
 
-<!-- Angular -->
 ```html
 <ng-template igxRowEditActions let-endRowEdit>
 	<button igxButton igxRowEditTabStop (click)="endRowEdit(false)">Cancel</button>
@@ -455,36 +455,40 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
 > Using `RowEditActions` directive will change edit actions for both editing and adding overlay buttons.
 <!-- end: Angular -->
 
-<!-- WebComponents -->
+<!-- Blazor -->
+### Customizing Buttons
+
+Customizing the buttons of the row editing overlay is possible by setting `RowEditActions` template.
+
+<!-- 
+REQUIRES FIX!
 ```ts
-this.grid.rowEditActionsTemplate = (ctx: IgxGridRowEditActionsTemplateContext) => {
+this.grid.rowEditActionsTemplate = (endRowEdit: IgcGridRowEditActionsTemplateContext) => {
     return html`
-        <button onClick="${this.endRowEdit(false)}">Cancel</button>
-	    <button onClick="${this.endRowEdit(true)}">Apply</button>
+        <button @click="${evt => endRowEdit.$implicit(false, evt)}">Cancel</button>
+	    <button @click="${evt => endRowEdit.$implicit(true, evt)}">Apply</button>
     `;
 }
 ```
-<!-- end: WebComponents -->
+-->
 
 ```razor
-<{ComponentSelector} Data="data" PrimaryKey="ProductID" AutoGenerate="false" RowEditable="true" RowEditActionsTemplate="rowEditActionsTemplate">
+<{ComponentSelector} Data="data" PrimaryKey="ProductID" AutoGenerate="false" RowEditable="true" RowEditActionsTemplateScript="rowEditActionsTemplate">
 </{ComponentSelector}>
 
-@code {
-    private RenderFragment<IgbGridRowEditActionsTemplateContext> rowEditActionsTemplate = (context) =>
-    {
-        return @<div class="row-actions">
-                    <button onClick="${this.endRowEdit(false)}">Cancel</button>
-                    <button onClick="${this.endRowEdit(true)}">Apply</button>
-                </div>;
-    };
-}
+//In JavaScript:
+igRegisterScript("rowEditActionsTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`<div class="row-actions">
+        <button @click="${evt => ctx.$implicit(false, evt)}">Cancel</button>
+        <button @click="${evt => ctx.$implicit(true, evt)}">Apply</button>
+    </div>`
+}, false);
 ```
 
-<!-- Blazor, WebComponents -->
 > **Note**:
 > Using `RowEditActions` template will change edit actions for both editing and adding overlay buttons.
-<!-- end: Blazor, WebComponents -->
+<!-- end: Blazor -->
 
 <!-- Angular -->
 ## Remote Scenarios
