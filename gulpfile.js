@@ -910,7 +910,7 @@ function verifyMarkdown(cb) {
     ])
     .pipe(es.map(function(file, fileCallback) {
         var fileContent = file.contents.toString();
-        var filePath = file.dirname + "\\" + file.basename
+        var filePath = file.dirname + path.sep + file.basename
         // filePath = '.\\doc\\' + filePath.split('doc\\')[1];
         console.log('verifying: ' + filePath);
         filesCount++;
