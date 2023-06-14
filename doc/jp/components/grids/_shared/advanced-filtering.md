@@ -54,10 +54,7 @@ _language: ja
 ```ts
 constructor() {
     let grid = (document.getElementById("grid") as IgcGridComponent);
-    this._bind = () => {
-            grid.data = this.data
-    }
-    this._bind();
+    grid.data = this.data
 }
 ```
 <!-- end: WebComponents -->
@@ -125,7 +122,7 @@ connectedCallback(): void {
 
 `{ComponentName}` ツールバーを表示したくない場合は、`OpenAdvancedFilteringDialog` および `CloseAdvancedFilteringDialog` メソッドを使用して、高度なフィルタリング ダイアログをコーディングを使用して開いたり閉じたりできます。
 
->
+> [!Note]
 >`{ComponentName}` で **QuickFilter**/**ExcelStyleFilter** と高度なフィルタリング ユーザー インターフェイスの両方を有効にできます。両フィルタリング ユーザー インターフェイスは、互いに依存せずに機能します。`{ComponentName}` の最終的なフィルター結果は、2 つのフィルター結果の共通部分です。
 
 <!-- Angular -->
@@ -462,6 +459,34 @@ $custom-drop-down: drop-down-theme(
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->
+
+<!-- WebComponents, Blazor -->
+## スタイル設定
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```html
+<igc-grid class="grid"></igc-grid>
+```
+
+```razor
+<IgbGrid class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties to this class:
+
+```css
+.grid {
+    --igx-grid-filtering-row-background: #ffcd0f;
+    --igx-grid-filtering-background-or: #d83434;
+}
+```
+### デモ
+
+`sample="/{ComponentSample}/advanced-filtering-style", height="530", alt="{Platform} {ComponentTitle} 高度なフィルタリング スタイル"`
+
+<!-- end: WebComponents, Blazor -->
 
 ## API リファレンス
 

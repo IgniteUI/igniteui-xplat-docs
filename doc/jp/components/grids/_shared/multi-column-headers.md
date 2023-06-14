@@ -358,12 +358,8 @@ TO-DO H-GRID CODE SNIPPET
 ```ts
 constructor() {
     var general = this.general = document.getElementById('General') as IgcColumnComponent;
-
-    this._bind = () => {
         general.headerTemplate = this.generalHeaderTemplate;
     }
-    this._bind();
-}
 
 public generalHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
@@ -396,13 +392,9 @@ public generalHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 constructor() {
     var general = this.general = document.getElementById('General') as IgcColumnComponent;
     var addresss = this.address = document.getElementById('Address') as IgcColumnComponent;
-
-    this._bind = () => {
         general.headerTemplate = this.columnGroupHeaderTemplate;
         addresss.headerTemplate = this.columnGroupHeaderTemplate;
     }
-    this._bind();
-}
 
 public columnGroupHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
@@ -445,13 +437,9 @@ public columnGroupHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
     var columnGroup = this.columnGroup = document.getElementById('addressInfoGroup') as IgcColumnGroupComponent;
-
-    this._bind = () => {
         grid.data = this.customersData
         columnGroup.headerTemplate = this.headerTemplate;
     }
-    this._bind();
-}
 
 public headerTemplate = (ctx: IgcColumnTemplateContext) => {
     const column = (ctx as any).column;
@@ -460,8 +448,6 @@ public headerTemplate = (ctx: IgcColumnTemplateContext) => {
             </div>`;
 };
 ```
-
-<!-- Angular -->
 
 > [!Note]
 > ヘッダーが再テンプレート化され、対応する列グループが移動可能な場合は、テンプレート要素で **draggable** 属性を **false** に設定する必要があり、これにより適用されるイベントをすべて処理できます。
@@ -617,6 +603,38 @@ import 'core-js/es7/array';
 ```
 
 <!-- end: Angular -->
+
+<!-- WebComponents, Blazor -->
+## スタイル設定
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```html
+<igc-grid class="grid"></igc-grid>
+```
+
+```razor
+<IgbGrid class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties to this class:
+
+```css
+.grid {
+    --igx-grid-header-background: #e0f3ff;
+    --igx-grid-header-text-color: #e41c77;
+    --igx-grid-header-border-width: 1px;
+    --igx-grid-header-border-style: solid;
+    --igx-grid-header-border-color: rgba(0, 0, 0, 0.08);
+}
+```
+### デモ
+
+`sample="/{ComponentSample}/multi-column-headers-styling", height="500", alt="{Platform} {ComponentTitle} 複数列ヘッダーのスタイル サンプル"`
+
+
+<!-- end: WebComponents, Blazor -->
 
 ## API リファレンス
 

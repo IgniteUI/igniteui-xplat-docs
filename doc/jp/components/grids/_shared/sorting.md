@@ -27,7 +27,7 @@ _language: ja
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-`sample="/{ComponentSample}/column-sorting-options", height="550", alt="{Platform} {ComponentTitle} column sorting options"`
+`sample="/{ComponentSample}/column-sorting-options", height="550", alt="{Platform} {ComponentTitle} 列のソート オプション"`
 
 
 以下のように `Sortable` 入力を使用します。`{ComponentName}` のソートで、`SortingIgnoreCase` プロパティを設定して大文字と小文字を区別するソートができます。
@@ -52,7 +52,7 @@ _language: ja
 
 <!-- ComponentStart: Grid -->
 
-`sample="/{ComponentSample}/column-sorting-indicators", height="550", alt="{Platform} {ComponentTitle} column sorting indicators"`
+`sample="/{ComponentSample}/column-sorting-indicators", height="550", alt="{Platform} {ComponentTitle} 列ソート インジケーター"`
 
 
 <!-- ComponentEnd: Grid -->
@@ -73,7 +73,9 @@ import { SortingDirection } from 'igniteui-webcomponents-grids';
 ```
 <!-- end: WebComponents -->
 
+<!-- Angular -->
 ```typescript
+
 // Perform a case insensitive ascending sort on the ProductName column.
 this.grid.sort({ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true });
 
@@ -83,6 +85,22 @@ this.grid.sort([
     { fieldName: 'Price', dir: SortingDirection.Desc }
 ]);
 ```
+<!-- end: Angular -->
+
+
+<!-- WebComponents -->
+```typescript
+
+// Perform a case insensitive ascending sort on the ProductName column.
+this.grid.sort([{ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true }]);
+
+// Perform sorting on both the ProductName and Price columns.
+this.grid.sort([
+    { fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true },
+    { fieldName: 'Price', dir: SortingDirection.Desc }
+]);
+```
+<!-- end: WebComponents -->
 
 ```razor
 @code {
@@ -192,12 +210,6 @@ public connectedCallback() {
 列ヘッダーのソート インジケーター アイコンは、テンプレートを使用してカスタマイズできます。次のプロパティは、任意のソート状態 (昇順、降順、なし) のソート インジケーターをテンプレート化するために使用できます。
 
 <!-- Angular -->
-
-列ヘッダーのソート インジケーター アイコンは、テンプレートを使用してカスタマイズできます。次のディレクティブは、任意のソート状態 (昇順、降順、なし) のソート インジケーターをテンプレート化するために使用できます。
-
-<!-- end: Angular -->
-
-<!-- Angular -->
 - `IgxSortHeaderIconDirective` – ソートが適用されない場合にソート アイコンを再テンプレート化します。
 
 ```html
@@ -220,8 +232,14 @@ public connectedCallback() {
 ```
 
 ```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    grid.data = this.data;
+    grid.sortHeaderIconTemplate = this.sortHeaderIconTemplate;
+}
+
 public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
-    return html`<igc-icon icon-name="unfold_more></igc-icon>`;
+    return html`<igc-icon name="unfold_more"></igc-icon>`;
 }
 ```
 
@@ -247,6 +265,18 @@ public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
     {
         return @<IgbIcon Size="SizableComponentSize.Small" IconName="expand_less" Collection="material"></IgbIcon>;
     };
+}
+```
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    grid.data = this.data;
+    grid.sortAscendingHeaderIconTemplate = this.sortAscendingHeaderIconTemplate;
+}
+
+public sortAscendingHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
+    return html`<igc-icon name="expand_less"></igc-icon>`;
 }
 ```
 
@@ -277,8 +307,14 @@ public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
 ```
 
 ```ts
-public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
-    return html`<igc-icon icon-name="expand_more></igc-icon>`;
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    grid.data = this.data;
+    grid.sortDescendingHeaderIconTemplate = this.sortDescendingHeaderIconTemplate;
+}
+
+public sortDescendingHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
+    return html`<igc-icon name="expand_more"></igc-icon>`;
 }
 ```
 
@@ -389,6 +425,34 @@ $custom-theme: grid-theme(
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->
+
+<!-- WebComponents, Blazor -->
+## スタイル設定
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```html
+<igc-grid class="grid"></igc-grid>
+```
+
+```razor
+<IgbGrid class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties to this class:
+
+```css
+.grid {
+    --igx-grid-sorted-header-icon-color: #ffb06a;
+    --igx-grid-sortable-header-icon-hover-color: black;
+}
+```
+### デモ
+
+`sample="/{ComponentSample}/column-sorting-style", height="550", alt="{Platform} {ComponentTitle} column sorting style"`
+
+<!-- end: WebComponents, Blazor -->
 
 ## API リファレンス
 

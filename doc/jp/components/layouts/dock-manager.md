@@ -295,6 +295,22 @@ this.dockManager.addEventListener('activePaneChanged', ev => {
 });
 ```
 
+### レイアウトの編集
+
+In some scenarios you may need to customize the layout of the Dock Manager by adding or removing a pane, changing orientation, etc., for example:
+
+```ts
+const splitPane = this.dockManager.layout.rootPane.panes[0] as IgcSplitPane;
+const contentPane = splitPane.panes[0] as IgcContentPane;
+this.dockManager.removePane(contentPane);
+```
+
+This will only update the layout object. To trigger an update of the Dock Manager so the changes are reflected in the UI, the layout object should be re-assigned:
+
+```ts
+this.dockManager.layout = { ...this.dockManager.layout };
+```
+
 ### レイアウトの保存／読み込み
 
 レイアウトを復元または永続化するには、`Layout` プロパティの値を取得または設定します。以下は、文字列化された JSON としてレイアウトを保存する方法です。
@@ -309,14 +325,6 @@ private saveLayout() {
 private loadLayout() {
     this.dockManager.layout = JSON.parse(this.savedLayout);
 }
-```
-
-レイアウト オブジェクトのプロパティを変更しても、ドック マネージャーの更新はトリガーされません。それが目的の場合、以下のようにレイアウト オブジェクト全体を置き換える必要があります。
-
-```ts
-const layout = this.dockManager.layout;
-layout.rootPane.orientation = IgcSplitPaneOrientation.vertical;
-this.dockManager.layout = { ...layout };
 ```
 
 ### 実行時にペインを追加する

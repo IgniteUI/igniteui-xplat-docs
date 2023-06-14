@@ -67,9 +67,6 @@ export class AppModule {}
     <igc-column field="ReorderLevel" header="ReorderLever" data-type="Number"></igc-column>
     <igc-column field="ProductName" header="ProductName" data-type="String"></igc-column>
     <igc-column id="unitsInStock" field="UnitsInStock" header="UnitsInStock" data-type="Number">
-        <ng-template igcCellEditor let-cell="cell">
-            <input name="units" [(ngModel)]="cell.value" style="color: black" />
-        </ng-template>
     </igc-column>
     <igc-column field="OrderDate" data-type="Date"></igc-column>
     <igc-column field="Discontinued" header="Discontinued" data-type="Boolean"></igc-column>
@@ -77,14 +74,11 @@ export class AppModule {}
 ```
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-    var unitsInStock = this.unitsInStock = document.getElementById('unitsInStock') as IgcColumnComponent;
+    var grid  = document.getElementById('grid') as IgcGridComponent;
+    var unitsInStock = document.getElementById('unitsInStock') as IgcColumnComponent;
+    grid.data = this.data;
+    unitsInStock.bodyTemplate = this.unitsInStockCellTemplate;
 
-    this._bind = () => {
-        grid.data = this.data;
-        unitsInStock.bodyTemplate = this.unitsInStockCellTemplate;
-    }
-    this._bind();
 }
 
 public unitsInStockCellTemplate = (ctx: IgcCellTemplateContext) => {
@@ -233,7 +227,7 @@ igRegisterScript("RowEditTextTemplate", (ctx) => {
 
  ```ts
 public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
-    return html`Changes: ${ctx.rowChangesCount}`;
+    return html`Changes: ${ctx.$implicit}`;
 }
 ```
 
@@ -265,9 +259,10 @@ public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
 
  ```ts
 public rowEditActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
+    const endRowEdit = ctx.$implicit;
     return html`
-        <button onClick="${this.endRowEdit(false)}">Cancel</button>
-	    <button onClick="${this.endRowEdit(true)}">Apply</button>
+        <button @click="${() => endRowEdit(false)}">Cancel</button>
+        <button @click="${() => endRowEdit(true)}">Apply</button>
     `;
 }
 ```
@@ -397,6 +392,39 @@ $button-theme: button-theme(
 > [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
+<!-- end: Angular -->
+
+<!-- WebComponents, Blazor -->
+
+## スタイル設定
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```ts
+<igc-grid class="grid">
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties for that class:
+
+```css
+.grid {
+    --igx-banner-banner-background: #e3e3e3;
+    --igx-banner-banner-message-color: #423589;
+}
+```
+
+### デモ
+
+`sample="/{ComponentSample}/row-editing-style", height="560", alt="{Platform} {ComponentTitle} 行編集のスタイルの例"`
+
+
+<!-- end: WebComponents, Blazor -->
+
 ## 既知の問題と制限
 
 - グリッドに `PrimaryKey` が設定されておらず、リモート データ シナリオが有効になっている場合 (ページング、ソート、フィルタリング、スクロール時に、グリッドに表示されるデータを取得するためのリモート サーバーへのリクエストがトリガーされる場合）、データ要求が完了すると、行は次の状態を失います:
@@ -405,8 +433,6 @@ $button-theme: button-theme(
 * 行の展開/縮小
 * 行の編集
 * 行のピン固定
-
-<!-- end: Angular -->
 
 ## API リファレンス
 
@@ -435,7 +461,6 @@ $button-theme: button-theme(
 
 <!-- ComponentStart:  Grid -->
 * [{ComponentTitle} 編集](editing.md)
-* [{ComponentTitle} トランザクション](batch-editing.md)
 <!-- ComponentEnd:  Grid -->
 
 <!-- * [{ComponentTitle} Transactions](batch-editing.md) -->

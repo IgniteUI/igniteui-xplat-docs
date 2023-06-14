@@ -14,7 +14,7 @@ _language: ja
 
 ## {Platform} {ComponentTitle} Excel スタイル フィルタリングの例
 
-`sample="/{ComponentSample}/excel-style-filtering-sample-1", height="620", alt="{Platform} {ComponentTitle} excel style filtering sample 1"`
+`sample="/{ComponentSample}/excel-style-filtering-sample-1", height="620", alt="{Platform} {ComponentTitle} Excel スタイルのフィルタリング サンプル 1"`
 
 
 ## 使用方法
@@ -34,7 +34,7 @@ _language: ja
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} auto-generate="true" allow-filtering="true" filter-mode="ExcelStyleFilter" >
+<{ComponentSelector} auto-generate="true" allow-filtering="true" filter-mode="excelStyleFilter" >
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
@@ -152,7 +152,7 @@ Add tree grid snippet
 </igc-tree-grid>
 ```
 
-以下のサンプルでは、「Product Name」 列と 「Discontinued」 列で 3 つの機能がすべて有効化され、「Unit Price」 で 3 つすべてが無効化され、「Added Date」 でピン固定と非表示のみが設定されています。
+以下のサンプルでは、「Product Name」列と「Discontinued」列で 3 つの機能がすべて有効化され、「Unit Price」で 3 つすべてが無効化され、「Added Date」でピン固定と非表示のみが設定されています。
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -980,6 +980,34 @@ $custom-drop-down: drop-down-theme(
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->
+
+<!-- WebComponents, Blazor -->
+## スタイル設定
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```html
+<igc-grid class="grid"></igc-grid>
+```
+
+```razor
+<IgbGrid class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties to this class:
+
+```css
+.grid {
+    --igx-grid-filtering-row-background: #ffcd0f;
+    --igx-list-item-background: #ffcd0f;
+}
+```
+### デモ
+
+`sample="/{ComponentSample}/excel-style-filtering-style", height="950", alt="{Platform} {ComponentTitle} Excel スタイルのフィルタリング スタイル"`
+
+<!-- end: WebComponents, Blazor -->
 
 ## API リファレンス
 

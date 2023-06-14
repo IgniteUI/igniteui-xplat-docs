@@ -216,7 +216,7 @@
       },
       {
         "exclude": ["Angular", "React"],
-        "name": "Export to Excel",
+        "name": "Excel へエクスポート",
         "href": "grids/grid/export-excel.md",
         "status": "NEW"
       },
