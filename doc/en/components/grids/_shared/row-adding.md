@@ -458,7 +458,7 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
 <!-- Blazor -->
 ### Customizing Buttons
 
-Customizing the buttons of the row editing overlay is possible by setting `RowEditActions` template.
+Customizing the buttons of the row editing overlay is possible by using the `RowEditActions` template.
 
 <!-- 
 REQUIRES FIX!
@@ -477,11 +477,11 @@ this.grid.rowEditActionsTemplate = (endRowEdit: IgcGridRowEditActionsTemplateCon
 </{ComponentSelector}>
 
 //In JavaScript:
-igRegisterScript("rowEditActionsTemplate", (ctx) => {
+igRegisterScript("rowEditActionsTemplate", (endRowEdit) => {
     var html = window.igTemplating.html;
     return html`<div class="row-actions">
-        <button @click="${evt => ctx.$implicit(false, evt)}">Cancel</button>
-        <button @click="${evt => ctx.$implicit(true, evt)}">Apply</button>
+        <button @click="${evt => endRowEdit.$implicit(false, evt)}">Cancel</button>
+        <button @click="${evt => endRowEdit.$implicit(true, evt)}">Apply</button>
     </div>`
 }, false);
 ```
