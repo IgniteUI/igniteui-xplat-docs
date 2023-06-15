@@ -35,7 +35,7 @@ As you can see in the demo above, the `{ComponentName}` provides three density o
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid" display-density="Cosy" >
+<{ComponentSelector} id="grid" display-density="cosy" >
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
@@ -500,6 +500,41 @@ private _componentRenderer: ComponentRenderer = null;
 ```
 
 ```razor
+<IgbTreeGrid AutoGenerate="false" Name="treeGrid" @ref="treeGrid" Id="treeGrid" Data="EmployeesFlatDetails" PrimaryKey="ID" 
+ ForeignKey="ParentID" AllowFiltering="true">
+    <IgbColumn Field="Name" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true" Width="200">
+    </IgbColumn>
+    <IgbColumnGroup Header="General Information">
+        <IgbColumn Field="HireDate" DataType="GridColumnDataType.Date" Sortable="true" HasSummary="true">
+        </IgbColumn>
+        <IgbColumnGroup Header="Personal Details">
+            <IgbColumn Field="ID" DataType="GridColumnDataType.Number" Filterable="false">
+            </IgbColumn>
+            <IgbColumn Field="Title" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true">
+            </IgbColumn>
+            <IgbColumn Field="Age" DataType="GridColumnDataType.Number" Sortable="true" HasSummary="true" Filterable="false">
+            </IgbColumn>
+        </IgbColumnGroup>
+    </IgbColumnGroup>
+    <IgbColumnGroup Header="Address Information">
+        <IgbColumnGroup Header="Location">
+            <IgbColumn Field="Country" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true">
+            </IgbColumn>
+            <IgbColumn Field="City" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true">
+            </IgbColumn>
+            <IgbColumn Field="Address" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true">
+            </IgbColumn>
+        </IgbColumnGroup>
+        <IgbColumnGroup Header="Contact Information">
+            <IgbColumn Field="Phone" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true">
+            </IgbColumn>
+            <IgbColumn Field="Fax" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true">
+            </IgbColumn>
+            <IgbColumn Field="PostalCode" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true">
+            </IgbColumn>
+        </IgbColumnGroup>
+    </IgbColumnGroup>
+</IgbTreeGrid>
 ```
 ```html
 <div class="density-chooser">
