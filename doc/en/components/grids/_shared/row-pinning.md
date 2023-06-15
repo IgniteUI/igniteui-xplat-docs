@@ -265,7 +265,7 @@ constructor() {
 
 public cellPinCellTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-    <igc-icon class="pin-icon" mousedown="${this.togglePinning(ctx.cell.row, $event)}">
+    <igc-icon class="pin-icon" @mousedown="${(event) => this.togglePinning(ctx.cell.row, event)}">
         ${ctx.cell.row.pinned ? 'lock' : 'lock_open'}
     </igc-icon>
             `;

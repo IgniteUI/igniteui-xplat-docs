@@ -480,7 +480,7 @@ The `rowID` property can be used to get a reference of an `{ComponentSelector}` 
 ```ts
 public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
     return html`
-        <igc-checkbox click="${this.onSelectorClick($event, ctx.key)}"></igc-checkbox>
+        <igc-checkbox @click="${(event) => this.onSelectorClick(event, ctx.key)}"></igc-checkbox>
     `;
 }
 ```

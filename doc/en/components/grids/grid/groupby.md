@@ -200,7 +200,7 @@ The `GroupRow` property returns a reference to the group row.
 ```ts
 public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateDetails) => {
     return html`
-        <div onClick="${ handleGroupByRowSelectorClick($event, groupByRowContext.groupRow) }">Handle groupRow</div>
+        <div @click="${(event) => handleGroupByRowSelectorClick(event, groupByRowContext.groupRow) }">Handle groupRow</div>
     `;
 }
 ```
