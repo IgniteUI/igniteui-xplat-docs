@@ -209,13 +209,13 @@ If you want to provide a custom template which will be applied to a cell, you ca
 ```Razor
 
 <IgbColumn
-            Field="AnnualChange"
-            Header="Annual Change"
-            DataType="GridColumnDataType.Number"
-            BodyTemplateScript="WebGridCurrencyCellTemplate"
-            HeaderTemplateScript="WebGridPinHeaderTemplate"
-            Name="column9"
-            @ref="column9">
+            Field="race"
+            Header="Race"
+            DataType="GridColumnDataType.String"
+            InlineEditorTemplateScript="WebGridCellEditCellTemplate"
+            Editable="true"
+            Name="column1"
+            @ref="column1">
             </IgbColumn>
 
 
@@ -225,25 +225,29 @@ and pass the template:
 
 ```javascript
 
-igRegisterScript("WebGridCurrencyCellTemplate", (ctx) => {
-    var html = window.igTemplating.html;
-    if (ctx.cell.value > 0) {
-        return html`<div>
-        <igc-badge variant="success"><span>▲</span></igc-badge>
-        <span style='color:green;'>${ctx.cell.value}</span>
-        </div>`;
-    } else {
-        return html`<div>
-        <igc-badge variant="danger"><span>▼</span></igc-badge>
-        <span style='color:red;'>${ctx.cell.value}</span>
-        </div>`;
+igRegisterScript("WebGridChangePercentTemplate", (ctx) => {
+    let cellValues = [];
+    let uniqueValues = [];
+    for(const i of this.webGridCellEditSampleRoleplay){
+        const field = ctx.cell.column.field;
+        if(uniqueValues.indexOf(i[field]) === -1 )
+        {
+            cellValues.push(html`<igc-select-item value=${i[field]}>${(i[field])}</igc-select-item>`);
+            uniqueValues.push(i[field]);
+        }
     }
+    return html`<div>
+    <igc-select position-strategy="fixed" @igcChange=${ e => ctx.cell.editValue = e.detail.value}>
+          ${cellValues}
+    </igc-select>
+</div>`;
 }, false);
+
 
 ```
 Working sample of the above can be found here for further referencee: 
 
-`sample="/{ComponentSample}/column-moving-options", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
+`sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
 
 <!-- end: Blazor -->
 
@@ -254,11 +258,13 @@ If you want to provide a custom template which will be applied to a cell, you ca
 ```html
 
 <igc-column
-            field="ChangePercent"
-            header="Change Percent"
-            data-type="number"
-            name="changePercent"
-            id="changePercent">
+            field="race"
+            header="Race"
+            data-type="string"
+            editable="true"
+            name="column1"
+            id="column1">
+            </igc-column>
 
 ```
 
@@ -266,30 +272,45 @@ and pass the templates to this column in the index.ts file:
 
 ```ts
 
-this._bind = () => {
-    changePercent.bodyTemplate = this.webGridCurrencyCellTemplate;
-    changePercent.headerTemplate = this.webGridPinHeaderTemplate;
-}
+constructor() {
+        var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
+        var column1 = this.column1 = document.getElementById('column1') as IgcColumnComponent;
+        var column2 = this.column2 = document.getElementById('column2') as IgcColumnComponent;
+        var column3 = this.column3 = document.getElementById('column3') as IgcColumnComponent;
+
+        this._bind = () => {
+            grid1.data = this.webGridCellEditSampleRoleplay;
+            column1.inlineEditorTemplate = this.webGridCellEditCellTemplate;
+            column2.inlineEditorTemplate = this.webGridCellEditCellTemplate;
+            column3.inlineEditorTemplate = this.webGridCellEditCellTemplate;
+        }
+        this._bind();
+
+    }
 
 
-public webGridCurrencyCellTemplate = (ctx: IgcCellTemplateContext) => {
-        if (ctx.cell.value > 0) {
-            return html`<div>
-            <igc-badge variant="success"><span>▲</span></igc-badge>
-            <span style='color:green;'>${ctx.cell.value.toFixed(2)}</span>
-            </div>`;
-        } else {
-            return html`<div>
-            <igc-badge variant="danger"><span>▼</span></igc-badge>
-            <span style='color:red;'>${ctx.cell.value.toFixed(2)}</span>
-            </div>`;
-        };
+public webGridCellEditCellTemplate = (ctx: IgcCellTemplateContext) => {
+        let cellValues: any = [];
+        let uniqueValues: any = [];
+        for(const i of (this.webGridCellEditSampleRoleplay as any)){
+            const field: string = ctx.cell.column.field;
+            if(uniqueValues.indexOf(i[field]) === -1 )
+            {
+                cellValues.push(html`<igc-select-item value=${i[field]}>${(i[field])}</igc-select-item>`);
+                uniqueValues.push(i[field]);
+            }
+        }
+        return html`
+        <igc-select style="width:100%; height:100%" size="large" @igcChange=${(e: any) => ctx.cell.editValue = e.detail.value}>
+              ${cellValues}
+        </igc-select>
+    `;
     }
 
 ```
 Working sample of the above can be found here for further referencee: 
 
-`sample="/{ComponentSample}/column-moving-options", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
+`sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
 
 <!-- end: WebComponents -->
 
@@ -616,7 +637,6 @@ export class MyGridEventsComponent {
 *** In JavaScript ***
 igRegisterScript("HandleCellEdit", (ev) => {
     var d = ev.detail;
-
     if (d.column != null && d.column.field == "UnitsOnOrder") {
         if (d.newValue > d.rowData.UnitsInStock) {
             d.cancel = true;
@@ -625,7 +645,6 @@ igRegisterScript("HandleCellEdit", (ev) => {
     }
 }, false);
 ```
-
 If the value entered in a cell under the **Units On Order** column is larger than the available amount (the value under **Units in Stock**), the editing will be cancelled and the user will be alerted to the cancellation.
 
 <!-- ComponentEnd: Grid -->
@@ -727,9 +746,8 @@ Then set the related CSS properties for that class:
 
 ```css
 .grid {
-    igx-grid__td--editing-background: #57A0D2;
-    igx-grid__td--editing-color: #FFA500;
-    igx-grid__td--editing-border-color: #000080;
+    --igx-grid-edit-mode-color: orange;
+    --igx-grid-cell-editing-background: lightblue;
 }
 ```
 
