@@ -17,8 +17,8 @@ For detailed explanation of the Ignite UI license agreement and terms of use, [c
 
 Infragistics offers free, non-commercial, not-for-resale (NFR) licenses for the following:
 
-  - If you are part of a developer program like the Microsoft MVP, Microsoft Regional Director, Google Developer Expert, etc.  
-  - If you are a primary, secondary or university student, or an academic institution, or a professor.  
+  - If you are part of a developer program like the Microsoft MVP, Microsoft Regional Director, Google Developer Expert, etc.
+  - If you are a primary, secondary or university student, or an academic institution, or a professor.
 
 If you qualify for a free, non-commercial, NFR license or if you have any license questions, please [contact us](https://www.infragistics.com/about-us/contact-us).
 
@@ -178,11 +178,11 @@ The best way to define an environment variable depends on what type of informati
 
 ### GitHub Actions Configuration
 
-Add the following scripts before the `npm i(ci)` step to your [CI workflow configuration](https://help.github.com/en/actions/language-and-framework-guides/using-nodejs-with-github-actions):
+Add the following scripts before the **npm i(ci)**  step to your [CI workflow configuration](https://help.github.com/en/actions/language-and-framework-guides/using-nodejs-with-github-actions):
 
 ```cmd
 - run: echo "@infragistics:registry=https://packages.infragistics.com/npm/js-licensed/" >> ~/.npmrc
 - run: echo "//packages.infragistics.com/npm/js-licensed/:_auth=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
 ```
 
-Define [*secrets* (encrypted environment variables)](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) and use them in the GitHub actions workflow for sensitive information like the access token. 
+Define [*secrets* (encrypted environment variables)](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) and use them in the GitHub actions workflow for sensitive information like the access token.
