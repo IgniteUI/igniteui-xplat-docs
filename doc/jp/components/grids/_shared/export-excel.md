@@ -91,7 +91,7 @@ public exportButtonHandler() {
 <!-- ComponentStart: Grid -->
 ## グループ化されたデータのエクスポート
 
-グループ化されたデータをエクスポートするには、`{ComponentName}` を 1 つ以上の列でグループ化する必要があります。ブラウザーは、選択した列でグループ化された MSExcel 形式の `{ComponentName}` コンポーネントからのデータを含む「ExportedDataFile.xlsx」という名前のファイルをダウンロードします。You can find example in the beggining of the topic.
+グループ化されたデータをエクスポートするには、`{ComponentName}` を 1 つ以上の列でグループ化する必要があります。ブラウザーは、選択した列でグループ化された MSExcel 形式の `{ComponentName}` コンポーネントからのデータを含む「ExportedDataFile.xlsx」という名前のファイルをダウンロードします。トピックのはじめに例があります。
 
 <!-- Angular -->
 `sample="/{ComponentSample}/excel-exporting", height="750", alt="{Platform} {ComponentTitle} グループ化されたデータのエクスポートの例"`
@@ -184,7 +184,7 @@ this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('
 |制限|説明|
 |--- |--- |
 |ワークシートの最大サイズ|Excel でサポートされているワークシートの最大サイズは、1,048,576 行 x 16,384 列です。|
-|セルのスタイル設定|The excel exporter service does not support exporting a custom style applied to a cell component. In such scenarios we recommend using the [Excel Library](../../excel-library.md).|
+|セルのスタイル設定|Excel エクスポーター サービスは、セル コンポーネントに適用されたカスタム スタイルのエクスポートをサポートしていません。このようなシナリオでは、[Excel ライブラリ](../../excel-library.md)を使用することをお勧めします。|
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->

@@ -297,7 +297,7 @@ this.dockManager.addEventListener('activePaneChanged', ev => {
 
 ### レイアウトの編集
 
-In some scenarios you may need to customize the layout of the Dock Manager by adding or removing a pane, changing orientation, etc., for example:
+一部のシナリオでは、ペインの追加または削除、方向の変更などによって、Dock Manager のレイアウトをカスタマイズする必要がある場合があります。次に例を示します。
 
 ```ts
 const splitPane = this.dockManager.layout.rootPane.panes[0] as IgcSplitPane;
@@ -305,7 +305,7 @@ const contentPane = splitPane.panes[0] as IgcContentPane;
 this.dockManager.removePane(contentPane);
 ```
 
-This will only update the layout object. To trigger an update of the Dock Manager so the changes are reflected in the UI, the layout object should be re-assigned:
+これは、レイアウト オブジェクトを更新するだけです。Dock Manager の更新をトリガーして変更を UI に反映するには、レイアウト オブジェクトを再割り当てする必要があります。
 
 ```ts
 this.dockManager.layout = { ...this.dockManager.layout };
