@@ -605,7 +605,7 @@
     "status": "UPDATED",
     "items": [
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "高度なフィルタリング",
         "href": "grids/tree-grid/advanced-filtering.md",
         "status": "NEW"

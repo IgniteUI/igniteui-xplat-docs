@@ -44,6 +44,15 @@ To enable the advanced filtering, the `AllowAdvancedFiltering` input property sh
     <IgbGridToolbar></IgbGridToolbar>
 </{ComponentSelector}>
 ```
+
+<!-- ComponentStart: TreeGrid -->
+```razor
+<IgbTreeGrid Data=data AutoGenerate="true" AllowAdvancedFiltering="true">
+    <IgbGridToolbar></IgbGridToolbar>
+</IgbTreeGrid>
+```
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- WebComponents -->
 ```html
 <{ComponentSelector} id="grid" auto-generate="true" allow-advanced-filtering="true">
@@ -56,6 +65,22 @@ constructor() {
     grid.data = this.data
 }
 ```
+
+<!-- ComponentStart: TreeGrid -->
+```html
+<igc-tree-grid id="grid" auto-generate="true" allow-advanced-filtering="true">
+    <igc-grid-toolbar></igc-grid-toolbar>
+</igc-tree-grid>
+```
+<!-- ComponentEnd: TreeGrid -->
+
+```ts
+constructor() {
+    let grid = document.getElementById("grid") as IgcTreeGridComponent;
+    grid.data = this.data
+}
+```
+
 <!-- end: WebComponents -->
 
 The advanced filtering generates a `FilteringExpressionsTree` which is stored in the `AdvancedFilteringExpressionsTree` input property. You could use the `AdvancedFilteringExpressionsTree` property to set an initial state of the advanced filtering.
