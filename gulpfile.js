@@ -809,7 +809,7 @@ var buildDocfx_Blazor   = gulp.series(verifyFiles, buildBlazor, buildSite, repla
 var buildDocfx_React    = gulp.series(verifyFiles, buildReact, buildSite, replaceEnvironmentVariables,  updateSiteMap);
 var buildDocfx_WC       = gulp.series(verifyFiles, buildWC, buildSite, replaceEnvironmentVariables, updateSiteMap);
 // function for building Docfx for a platform specified in arguments, e.g. --plat=React
-var buildDocfx_WithArgs = gulp.series(buildWithArgs, buildSite, updateSiteMap);
+var buildDocfx_WithArgs = gulp.series(buildWithArgs, buildSite, replaceEnvironmentVariables, updateSiteMap);
 // exporting functions for building Docfx for each platform:
 exports['buildDocfx_All']      = buildDocfx_All;
 exports['buildDocfx_Angular']  = buildDocfx_Angular;
