@@ -7,7 +7,7 @@
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isDefaultTooltipBehaviorDisabled"}],"originalName":"IsDefaultTooltipBehaviorDisabled"},
     { "names":[{"platform":"React","mappedType":"IgrAxis","mappedName":"targetAxis"}],"originalName":"TargetAxis"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"useInterpolation"}],"originalName":"UseInterpolation"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CategoryTooltipLayerPosition","isEnum":true,
     "names":[{"platform":"React","fileName":"CategoryTooltipLayerPosition.ts","mappedName":"CategoryTooltipLayerPosition"}],
     "members":[
@@ -16,7 +16,7 @@
     { "names":[{"platform":"React","mappedType":"CategoryTooltipLayerPosition","mappedName":"InsideStart"}],"originalName":"InsideStart"},
     { "names":[{"platform":"React","mappedType":"CategoryTooltipLayerPosition","mappedName":"InsideEnd"}],"originalName":"InsideEnd"},
     { "names":[{"platform":"React","mappedType":"CategoryTooltipLayerPosition","mappedName":"OutsideEnd"}],"originalName":"OutsideEnd"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ItemToolTipLayer",
     "names":[{"platform":"React","fileName":"igr-item-tool-tip-layer.ts","dynamicModuleName":"igr-item-tool-tip-layer-dynamic-module.ts","moduleName":"igr-item-tool-tip-layer-module.ts","mappedName":"IgrItemToolTipLayer"}],
     "members":[
@@ -27,7 +27,7 @@
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"useInterpolation"}],"originalName":"UseInterpolation"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"skipUnknownValues"}],"originalName":"SkipUnknownValues"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"hideToolTipsImmediate"}],"originalName":"HideToolTipsImmediate"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"hideToolTipsImmediate"}],"originalName":"HideToolTipsImmediate"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ValueOverlay",
     "names":[{"platform":"React","fileName":"igr-value-overlay.ts","dynamicModuleName":"igr-value-overlay-dynamic-module.ts","moduleName":"igr-value-overlay-module.ts","mappedName":"IgrValueOverlay"}],
     "members":[
@@ -52,7 +52,7 @@
     { "names":[{"platform":"React","mappedType":"method","mappedName":"getItemIndex"}],"originalName":"GetItemIndex"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"getItem"}],"originalName":"GetItem"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"getLabel"}],"originalName":"GetLabel"}],"originalBaseTypeName":"Series","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getLabel"}],"originalName":"GetLabel"}],"originalBaseTypeName":"Series","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"AnnotationLayer",
     "names":[{"platform":"React","fileName":"igr-annotation-layer.ts","mappedName":"IgrAnnotationLayer"}],
     "members":[
@@ -64,7 +64,7 @@
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isIndexed"}],"originalName":"IsIndexed"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isUsableInLegend"}],"originalName":"IsUsableInLegend"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isAnnotationLayer"}],"originalName":"IsAnnotationLayer"},
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"shouldRenderAsOverlay"}],"originalName":"ShouldRenderAsOverlay"}],"originalBaseTypeName":"Series","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"shouldRenderAsOverlay"}],"originalName":"ShouldRenderAsOverlay"}],"originalBaseTypeName":"Series","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"AxisAnnotation",
     "names":[{"platform":"React","fileName":"igr-axis-annotation.ts","mappedName":"IgrAxisAnnotation"}],
     "members":[
@@ -83,7 +83,7 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"backgroundPaddingRight"}],"originalName":"BackgroundPaddingRight"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"backgroundPaddingBottom"}],"originalName":"BackgroundPaddingBottom"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"resetCachedExtent"}],"originalName":"ResetCachedExtent"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"resolveLabelValue"}],"originalName":"ResolveLabelValue"}],"originalBaseTypeName":"DependencyObject","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"resolveLabelValue"}],"originalName":"ResolveLabelValue"}],"originalBaseTypeName":"DependencyObject","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CalloutAnnotation",
     "names":[{"platform":"React","fileName":"igr-callout-annotation.ts","mappedName":"IgrCalloutAnnotation"}],
     "members":[
@@ -103,14 +103,14 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"backgroundPaddingTop"}],"originalName":"BackgroundPaddingTop"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"backgroundPaddingRight"}],"originalName":"BackgroundPaddingRight"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"backgroundPaddingBottom"}],"originalName":"BackgroundPaddingBottom"},
-    { "names":[{"platform":"React","mappedType":"number","mappedName":"backgroundCornerRadius"}],"originalName":"BackgroundCornerRadius"}],"originalBaseTypeName":"DependencyObject","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"backgroundCornerRadius"}],"originalName":"BackgroundCornerRadius"}],"originalBaseTypeName":"DependencyObject","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CategoryHighlightLayer",
     "names":[{"platform":"React","fileName":"igr-category-highlight-layer.ts","dynamicModuleName":"igr-category-highlight-layer-dynamic-module.ts","moduleName":"igr-category-highlight-layer-module.ts","mappedName":"IgrCategoryHighlightLayer"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isAnnotationHoverLayer"}],"originalName":"IsAnnotationHoverLayer"},
     { "names":[{"platform":"React","mappedType":"IgrCategoryAxisBase","mappedName":"targetAxis"}],"originalName":"TargetAxis"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"useInterpolation"}],"originalName":"UseInterpolation"},
-    { "names":[{"platform":"React","mappedType":"number","mappedName":"bandHighlightWidth"}],"originalName":"BandHighlightWidth"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"bandHighlightWidth"}],"originalName":"BandHighlightWidth"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CalloutLayer",
     "names":[{"platform":"React","fileName":"igr-callout-layer.ts","dynamicModuleName":"igr-callout-layer-dynamic-module.ts","moduleName":"igr-callout-layer-module.ts","mappedName":"IgrCalloutLayer"}],
     "members":[
@@ -148,14 +148,14 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"calloutStrokeThickness"}],"originalName":"CalloutStrokeThickness"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"textStyle"}],"originalName":"TextStyle"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"getItemValue"}],"originalName":"GetItemValue"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"invalidateCalloutContent"}],"originalName":"InvalidateCalloutContent"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"invalidateCalloutContent"}],"originalName":"InvalidateCalloutContent"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CalloutContentUpdatingEventArgs",
     "names":[{"platform":"React","fileName":"igr-callout-content-updating-event-args.ts","mappedName":"IgrCalloutContentUpdatingEventArgs"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"any","mappedName":"xValue"}],"originalName":"XValue"},
     { "names":[{"platform":"React","mappedType":"any","mappedName":"yValue"}],"originalName":"YValue"},
     { "names":[{"platform":"React","mappedType":"any","mappedName":"item"}],"originalName":"Item"},
-    { "names":[{"platform":"React","mappedType":"any","mappedName":"content"}],"originalName":"Content"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"content"}],"originalName":"Content"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CalloutLabelUpdatingEventArgs",
     "names":[{"platform":"React","fileName":"igr-callout-label-updating-event-args.ts","mappedName":"IgrCalloutLabelUpdatingEventArgs"}],
     "members":[
@@ -164,7 +164,7 @@
     { "names":[{"platform":"React","mappedType":"any","mappedName":"item"}],"originalName":"Item"},
     { "names":[{"platform":"React","mappedType":"IgrSeries","mappedName":"series"}],"originalName":"Series"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"seriesName"}],"originalName":"SeriesName"},
-    { "names":[{"platform":"React","mappedType":"any","mappedName":"label"}],"originalName":"Label"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"label"}],"originalName":"Label"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CalloutSeriesSelectingEventArgs",
     "names":[{"platform":"React","fileName":"igr-callout-series-selecting-event-args.ts","mappedName":"IgrCalloutSeriesSelectingEventArgs"}],
     "members":[
@@ -172,7 +172,7 @@
     { "names":[{"platform":"React","mappedType":"any","mappedName":"yValue"}],"originalName":"YValue"},
     { "names":[{"platform":"React","mappedType":"any","mappedName":"item"}],"originalName":"Item"},
     { "names":[{"platform":"React","mappedType":"IgrSeries","mappedName":"series"}],"originalName":"Series"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"seriesName"}],"originalName":"SeriesName"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"seriesName"}],"originalName":"SeriesName"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CalloutCollisionMode","isEnum":true,
     "names":[{"platform":"React","fileName":"CalloutCollisionMode.ts","mappedName":"CalloutCollisionMode"}],
     "members":[
@@ -180,14 +180,14 @@
     { "names":[{"platform":"React","mappedType":"CalloutCollisionMode","mappedName":"SimulatedAnnealing"}],"originalName":"SimulatedAnnealing"},
     { "names":[{"platform":"React","mappedType":"CalloutCollisionMode","mappedName":"Greedy"}],"originalName":"Greedy"},
     { "names":[{"platform":"React","mappedType":"CalloutCollisionMode","mappedName":"GreedyCenterOfMass"}],"originalName":"GreedyCenterOfMass"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"AutoCalloutVisibilityMode","isEnum":true,
     "names":[{"platform":"React","fileName":"AutoCalloutVisibilityMode.ts","mappedName":"AutoCalloutVisibilityMode"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"AutoCalloutVisibilityMode","mappedName":"Auto"}],"originalName":"Auto"},
     { "names":[{"platform":"React","mappedType":"AutoCalloutVisibilityMode","mappedName":"Normal"}],"originalName":"Normal"},
     { "names":[{"platform":"React","mappedType":"AutoCalloutVisibilityMode","mappedName":"DedicatedLanes"}],"originalName":"DedicatedLanes"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"DataTooltipConstraintMode","isEnum":true,
     "names":[{"platform":"React","fileName":"DataTooltipConstraintMode.ts","mappedName":"DataTooltipConstraintMode"}],
     "members":[
@@ -196,7 +196,7 @@
     { "names":[{"platform":"React","mappedType":"DataTooltipConstraintMode","mappedName":"Chart"}],"originalName":"Chart"},
     { "names":[{"platform":"React","mappedType":"DataTooltipConstraintMode","mappedName":"PlotArea"}],"originalName":"PlotArea"},
     { "names":[{"platform":"React","mappedType":"DataTooltipConstraintMode","mappedName":"None"}],"originalName":"None"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"DataToolTipLayer",
     "names":[{"platform":"React","fileName":"igr-data-tool-tip-layer.ts","dynamicModuleName":"igr-data-tool-tip-layer-dynamic-module.ts","moduleName":"igr-data-tool-tip-layer-module.ts","mappedName":"IgrDataToolTipLayer"}],
     "members":[
@@ -335,7 +335,7 @@
     { 
     "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"labelTextMargin.top"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"hideToolTipsImmediate"}],"originalName":"HideToolTipsImmediate"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"hideToolTipsImmediate"}],"originalName":"HideToolTipsImmediate"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"DataToolTipLayerPosition","isEnum":true,
     "names":[{"platform":"React","fileName":"DataToolTipLayerPosition.ts","mappedName":"DataToolTipLayerPosition"}],
     "members":[
@@ -344,7 +344,7 @@
     { "names":[{"platform":"React","mappedType":"DataToolTipLayerPosition","mappedName":"InsideStart"}],"originalName":"InsideStart"},
     { "names":[{"platform":"React","mappedType":"DataToolTipLayerPosition","mappedName":"InsideEnd"}],"originalName":"InsideEnd"},
     { "names":[{"platform":"React","mappedType":"DataToolTipLayerPosition","mappedName":"OutsideEnd"}],"originalName":"OutsideEnd"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinalValueLayer",
     "names":[{"platform":"React","fileName":"igr-final-value-layer.ts","dynamicModuleName":"igr-final-value-layer-dynamic-module.ts","moduleName":"igr-final-value-layer-module.ts","mappedName":"IgrFinalValueLayer"}],
     "members":[
@@ -361,7 +361,7 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"axisAnnotationPaddingTop"}],"originalName":"AxisAnnotationPaddingTop"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"axisAnnotationPaddingRight"}],"originalName":"AxisAnnotationPaddingRight"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"axisAnnotationPaddingBottom"}],"originalName":"AxisAnnotationPaddingBottom"},
-    { "names":[{"platform":"React","mappedType":"number","mappedName":"axisAnnotationStrokeThickness"}],"originalName":"AxisAnnotationStrokeThickness"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"axisAnnotationStrokeThickness"}],"originalName":"AxisAnnotationStrokeThickness"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinalValueSelectionMode","isEnum":true,
     "names":[{"platform":"React","fileName":"FinalValueSelectionMode.ts","mappedName":"FinalValueSelectionMode"}],
     "members":[
@@ -369,14 +369,14 @@
     { "names":[{"platform":"React","mappedType":"FinalValueSelectionMode","mappedName":"FinalVisible"}],"originalName":"FinalVisible"},
     { "names":[{"platform":"React","mappedType":"FinalValueSelectionMode","mappedName":"FinalVisibleInterpolated"}],"originalName":"FinalVisibleInterpolated"},
     { "names":[{"platform":"React","mappedType":"FinalValueSelectionMode","mappedName":"Final"}],"originalName":"Final"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CategoryItemHighlightType","isEnum":true,
     "names":[{"platform":"React","fileName":"CategoryItemHighlightType.ts","mappedName":"CategoryItemHighlightType"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"CategoryItemHighlightType","mappedName":"Auto"}],"originalName":"Auto"},
     { "names":[{"platform":"React","mappedType":"CategoryItemHighlightType","mappedName":"Marker"}],"originalName":"Marker"},
     { "names":[{"platform":"React","mappedType":"CategoryItemHighlightType","mappedName":"Shape"}],"originalName":"Shape"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CategoryItemHighlightLayer",
     "names":[{"platform":"React","fileName":"igr-category-item-highlight-layer.ts","dynamicModuleName":"igr-category-item-highlight-layer-dynamic-module.ts","moduleName":"igr-category-item-highlight-layer-module.ts","mappedName":"IgrCategoryItemHighlightLayer"}],
     "members":[
@@ -390,7 +390,7 @@
     { "names":[{"platform":"React","mappedType":"string","mappedName":"markerOutline"}],"originalName":"MarkerOutline"},
     { "names":[{"platform":"React","mappedType":"IgDataTemplate","mappedName":"markerTemplate"}],"originalName":"MarkerTemplate"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"bandHighlightWidth"}],"originalName":"BandHighlightWidth"},
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"skipUnknownValues"}],"originalName":"SkipUnknownValues"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"skipUnknownValues"}],"originalName":"SkipUnknownValues"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CrosshairLayer",
     "names":[{"platform":"React","fileName":"igr-crosshair-layer.ts","dynamicModuleName":"igr-crosshair-layer-dynamic-module.ts","moduleName":"igr-crosshair-layer-module.ts","mappedName":"IgrCrosshairLayer"}],
     "members":[
@@ -424,4 +424,4 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"yAxisAnnotationStrokeThickness"}],"originalName":"YAxisAnnotationStrokeThickness"},
     { "names":[{"platform":"React","mappedType":"Visibility","mappedName":"verticalLineVisibility"}],"originalName":"VerticalLineVisibility"},
     { "names":[{"platform":"React","mappedType":"Visibility","mappedName":"horizontalLineVisibility"}],"originalName":"HorizontalLineVisibility"},
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"skipUnknownValues"}],"originalName":"SkipUnknownValues"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"skipUnknownValues"}],"originalName":"SkipUnknownValues"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}
