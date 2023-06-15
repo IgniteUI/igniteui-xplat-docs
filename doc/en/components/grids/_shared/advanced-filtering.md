@@ -494,8 +494,16 @@ In case you would like to change some of the colors, you need to set a class for
 <igc-grid class="grid"></igc-grid>
 ```
 
+```html
+<igc-tree-grid class="grid"></igc-tree-grid>
+```
+
 ```razor
 <IgbGrid class="grid"></IgbGrid>
+```
+
+```razor
+<IgbTreeGrid class="grid"></IgbTreeGrid>
 ```
 
 Then set the related CSS properties to this class:
