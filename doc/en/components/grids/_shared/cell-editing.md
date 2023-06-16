@@ -737,14 +737,14 @@ In addition to the steps above, we can also style the controls that are used for
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
 <!-- ComponentStart:  HierarchicalGrid -->
-* [Searching](search.md)
+<!-- * [Searching](search.md) -->
 <!-- ComponentEnd:  HierarchicalGrid -->
 
 <!-- end: Angular -->
 
 <!-- Blazor, WebComponents -->
 
-
+<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -753,8 +753,7 @@ In addition to the steps above, we can also style the controls that are used for
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-<!-- ComponentStart:  HierarchicalGrid -->
 * [Searching](search.md)
-<!-- ComponentEnd:  HierarchicalGrid -->
+<!-- ComponentEnd:  Grid -->
 
 <!-- end: Blazor, WebComponents -->

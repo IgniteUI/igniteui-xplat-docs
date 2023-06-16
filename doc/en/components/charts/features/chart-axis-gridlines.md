@@ -58,6 +58,11 @@ The following example demonstrates how to customize the gridlines by setting the
 
 `sample="/charts/category-chart/axis-gridlines", height="450", alt="{Platform} Axis Gridlines Example"`
 
+The axes of the `XamDataChart` also have the ability to place a dash array on the major and minor gridlines by utilizing the `MajorStrokeDashArray` and `MinorStrokeDashArray` properties, respectively. The actual axis line can be dashed as well by setting the `StrokeDashArray` property of the corresponding axis. These properties take an array of numbers that will describe the length of the dashes for the corresponding grid lines.
+
+The following example demonstrates a `XamDataChart` with the above dash array properties set:
+
+`sample="/charts/data-chart/dash-array-axes", height="450", alt="{Platform} Axis Dash Array Example"`
 
 
 <div class="divider--half"></div>

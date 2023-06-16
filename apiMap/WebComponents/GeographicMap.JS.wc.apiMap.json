@@ -11,13 +11,13 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"defaultTokenTimeout"}],"originalName":"DefaultTokenTimeout"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"tokenGenerationEndPoint"}],"originalName":"TokenGenerationEndPoint"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"refererUri"}],"originalName":"RefererUri"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"acquireNewToken"}],"originalName":"AcquireNewToken"}],"originalBaseTypeName":"GeographicMapImagery","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"acquireNewToken"}],"originalName":"AcquireNewToken"}],"originalBaseTypeName":"GeographicMapImagery","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicTileSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-geographic-tile-series-component.ts","dynamicModuleName":"igc-geographic-tile-series-dynamic-module.ts","moduleName":"igc-geographic-tile-series-module.ts","mappedName":"IgcGeographicTileSeriesComponent"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isTile"}],"originalName":"IsTile"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcGeographicMapImagery","mappedName":"tileImagery"}],"originalName":"TileImagery"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"clearTileCache"}],"originalName":"ClearTileCache"}],"originalBaseTypeName":"GeographicShapeSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"clearTileCache"}],"originalName":"ClearTileCache"}],"originalBaseTypeName":"GeographicShapeSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"BingMapsImageryStyle","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"BingMapsImageryStyle.ts","mappedName":"BingMapsImageryStyle"}],
     "members":[
@@ -27,7 +27,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"BingMapsImageryStyle","mappedName":"CanvasDark"}],"originalName":"CanvasDark"},
     { "names":[{"platform":"WebComponents","mappedType":"BingMapsImageryStyle","mappedName":"CanvasLight"}],"originalName":"CanvasLight"},
     { "names":[{"platform":"WebComponents","mappedType":"BingMapsImageryStyle","mappedName":"CanvasGray"}],"originalName":"CanvasGray"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"BingMapsMapImagery",
     "names":[{"platform":"WebComponents","fileName":"igc-bing-maps-map-imagery.ts","dynamicModuleName":"igc-bing-maps-map-imagery-dynamic-module.ts","moduleName":"igc-bing-maps-map-imagery-module.ts","mappedName":"IgcBingMapsMapImagery"}],
     "members":[
@@ -42,13 +42,13 @@
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"cultureName"}],"originalName":"CultureName"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"apiKey"}],"originalName":"ApiKey"},
     { "names":[{"platform":"WebComponents","mappedType":"BingMapsImageryStyle","mappedName":"imageryStyle"}],"originalName":"ImageryStyle"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"requestMapSettings"}],"originalName":"RequestMapSettings"}],"originalBaseTypeName":"GeographicMapImagery","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"requestMapSettings"}],"originalName":"RequestMapSettings"}],"originalBaseTypeName":"GeographicMapImagery","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"TileGeneratorMapImagery",
     "names":[{"platform":"WebComponents","fileName":"igc-tile-generator-map-imagery.ts","dynamicModuleName":"igc-tile-generator-map-imagery-dynamic-module.ts","moduleName":"igc-tile-generator-map-imagery-module.ts","mappedName":"IgcTileGeneratorMapImagery"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"ITileGenerator","mappedName":"tileGenerator"}],"originalName":"TileGenerator"}],"originalBaseTypeName":"GeographicMapImagery","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"WebComponents","mappedType":"ITileGenerator","mappedName":"tileGenerator"}],"originalName":"TileGenerator"}],"originalBaseTypeName":"GeographicMapImagery","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"CustomMapImagery",
-    "names":[{"platform":"WebComponents","fileName":"igc-custom-map-imagery.ts","dynamicModuleName":"igc-custom-map-imagery-dynamic-module.ts","moduleName":"igc-custom-map-imagery-module.ts","mappedName":"IgcCustomMapImagery"}],"members":[],"originalBaseTypeName":"GeographicMapImagery","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    "names":[{"platform":"WebComponents","fileName":"igc-custom-map-imagery.ts","dynamicModuleName":"igc-custom-map-imagery-dynamic-module.ts","moduleName":"igc-custom-map-imagery-module.ts","mappedName":"IgcCustomMapImagery"}],"members":[],"originalBaseTypeName":"GeographicMapImagery","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicMapImagery",
     "names":[{"platform":"WebComponents","fileName":"igc-geographic-map-imagery.ts","mappedName":"IgcGeographicMapImagery"}],
     "members":[
@@ -59,13 +59,13 @@
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isHorizontalWrappingEnabled"}],"originalName":"IsHorizontalWrappingEnabled"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"userAgent"}],"originalName":"UserAgent"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"opacity"}],"originalName":"Opacity"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"clearTileCache"}],"originalName":"ClearTileCache"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"clearTileCache"}],"originalName":"ClearTileCache"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"ImagesChangedEventArgs",
-    "names":[{"platform":"WebComponents","fileName":"igc-images-changed-event-args.ts","mappedName":"IgcImagesChangedEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Maps"},
+    "names":[{"platform":"WebComponents","fileName":"igc-images-changed-event-args.ts","mappedName":"IgcImagesChangedEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"OpenStreetMapImagery",
     "names":[{"platform":"WebComponents","fileName":"igc-open-street-map-imagery.ts","dynamicModuleName":"igc-open-street-map-imagery-dynamic-module.ts","moduleName":"igc-open-street-map-imagery-module.ts","mappedName":"IgcOpenStreetMapImagery"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"tilePath"}],"originalName":"TilePath"}],"originalBaseTypeName":"GeographicMapImagery","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"tilePath"}],"originalName":"TilePath"}],"originalBaseTypeName":"GeographicMapImagery","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicHighDensityScatterSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-geographic-high-density-scatter-series-component.ts","dynamicModuleName":"igc-geographic-high-density-scatter-series-dynamic-module.ts","moduleName":"igc-geographic-high-density-scatter-series-module.ts","mappedName":"IgcGeographicHighDensityScatterSeriesComponent"}],
     "members":[
@@ -80,7 +80,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"heatMinimumColor"}],"originalName":"HeatMinimumColor"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"heatMaximumColor"}],"originalName":"HeatMaximumColor"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"pointExtent"}],"originalName":"PointExtent"},
-    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"progressiveStatus"}],"originalName":"ProgressiveStatus"}],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"progressiveStatus"}],"originalName":"ProgressiveStatus"}],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicMarkerSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-geographic-marker-series-component.ts","mappedName":"IgcGeographicMarkerSeriesComponent"}],
     "members":[
@@ -94,7 +94,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"maximumMarkers"}],"originalName":"MaximumMarkers"},
     { "names":[{"platform":"WebComponents","mappedType":"IgDataTemplate","mappedName":"actualMarkerTemplate"}],"originalName":"ActualMarkerTemplate"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"actualMarkerBrush"}],"originalName":"ActualMarkerBrush"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"actualMarkerOutline"}],"originalName":"ActualMarkerOutline"}],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"actualMarkerOutline"}],"originalName":"ActualMarkerOutline"}],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicPolylineSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-geographic-polyline-series-component.ts","dynamicModuleName":"igc-geographic-polyline-series-dynamic-module.ts","moduleName":"igc-geographic-polyline-series-module.ts","mappedName":"IgcGeographicPolylineSeriesComponent"}],
     "members":[
@@ -106,7 +106,7 @@
     { 
     "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"shapeStyle.strokeThickness"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"opacity"}],"originalName":"shapeStyle.opacity"}],"originalBaseTypeName":"GeographicShapeSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"opacity"}],"originalName":"shapeStyle.opacity"}],"originalBaseTypeName":"GeographicShapeSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicProportionalSymbolSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-geographic-proportional-symbol-series-component.ts","dynamicModuleName":"igc-geographic-proportional-symbol-series-dynamic-module.ts","moduleName":"igc-geographic-proportional-symbol-series-module.ts","mappedName":"IgcGeographicProportionalSymbolSeriesComponent"}],
     "members":[
@@ -126,9 +126,9 @@
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isCustomScatterStyleAllowed"}],"originalName":"IsCustomScatterStyleAllowed"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isCustomScatterMarkerStyleAllowed"}],"originalName":"IsCustomScatterMarkerStyleAllowed"},
     { "names":[{"platform":"WebComponents","mappedType":"ScatterItemSearchMode","mappedName":"itemSearchMode"}],"originalName":"ItemSearchMode"},
-    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"itemSearchThreshold"}],"originalName":"ItemSearchThreshold"}],"originalBaseTypeName":"GeographicMarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"itemSearchThreshold"}],"originalName":"ItemSearchThreshold"}],"originalBaseTypeName":"GeographicMarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicProportionalSymbolSeriesBase",
-    "names":[{"platform":"WebComponents","fileName":"igc-geographic-proportional-symbol-series-base-component.ts","mappedName":"IgcGeographicProportionalSymbolSeriesBaseComponent"}],"members":[],"originalBaseTypeName":"GeographicMarkerSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    "names":[{"platform":"WebComponents","fileName":"igc-geographic-proportional-symbol-series-base-component.ts","mappedName":"IgcGeographicProportionalSymbolSeriesBaseComponent"}],"members":[],"originalBaseTypeName":"GeographicMarkerSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicScatterAreaSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-geographic-scatter-area-series-component.ts","dynamicModuleName":"igc-geographic-scatter-area-series-dynamic-module.ts","moduleName":"igc-geographic-scatter-area-series-module.ts","mappedName":"IgcGeographicScatterAreaSeriesComponent"}],
     "members":[
@@ -136,7 +136,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"colorMemberPath"}],"originalName":"ColorMemberPath"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcColorScaleComponent","mappedName":"colorScale"}],"originalName":"ColorScale"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcColorScaleComponent","mappedName":"actualColorScale"}],"originalName":"ActualColorScale"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"updateActualColorScale"}],"originalName":"UpdateActualColorScale"}],"originalBaseTypeName":"GeographicXYTriangulatingSeries","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"updateActualColorScale"}],"originalName":"UpdateActualColorScale"}],"originalBaseTypeName":"GeographicXYTriangulatingSeries","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicShapeSeriesBase",
     "names":[{"platform":"WebComponents","fileName":"igc-geographic-shape-series-base-component.ts","mappedName":"IgcGeographicShapeSeriesBaseComponent"}],
     "members":[
@@ -147,13 +147,13 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"itemSearchThreshold"}],"originalName":"ItemSearchThreshold"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"itemSearchPointsThreshold"}],"originalName":"ItemSearchPointsThreshold"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcShapeDataSource","mappedName":"shapefileDataSource"}],"originalName":"ShapefileDataSource"},
-    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"shapeFilterResolution"}],"originalName":"ShapeFilterResolution"}],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"shapeFilterResolution"}],"originalName":"ShapeFilterResolution"}],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicShapeSeriesBaseBase",
-    "names":[{"platform":"WebComponents","fileName":"igc-geographic-shape-series-base-base-component.ts","mappedName":"IgcGeographicShapeSeriesBaseBaseComponent"}],"members":[],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    "names":[{"platform":"WebComponents","fileName":"igc-geographic-shape-series-base-base-component.ts","mappedName":"IgcGeographicShapeSeriesBaseBaseComponent"}],"members":[],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicSymbolSeriesBase",
-    "names":[{"platform":"WebComponents","fileName":"igc-geographic-symbol-series-base-component.ts","mappedName":"IgcGeographicSymbolSeriesBaseComponent"}],"members":[],"originalBaseTypeName":"GeographicMarkerSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    "names":[{"platform":"WebComponents","fileName":"igc-geographic-symbol-series-base-component.ts","mappedName":"IgcGeographicSymbolSeriesBaseComponent"}],"members":[],"originalBaseTypeName":"GeographicMarkerSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicMarkerSeriesBase",
-    "names":[{"platform":"WebComponents","fileName":"igc-geographic-marker-series-base-component.ts","mappedName":"IgcGeographicMarkerSeriesBaseComponent"}],"members":[],"originalBaseTypeName":"GeographicMarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    "names":[{"platform":"WebComponents","fileName":"igc-geographic-marker-series-base-component.ts","mappedName":"IgcGeographicMarkerSeriesBaseComponent"}],"members":[],"originalBaseTypeName":"GeographicMarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicXYTriangulatingSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-geographic-xy-triangulating-series-component.ts","mappedName":"IgcGeographicXYTriangulatingSeriesComponent"}],
     "members":[
@@ -162,9 +162,9 @@
     { "names":[{"platform":"WebComponents","mappedType":"any[]","mappedName":"trianglesSource"}],"originalName":"TrianglesSource"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"triangleVertexMemberPath1"}],"originalName":"TriangleVertexMemberPath1"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"triangleVertexMemberPath2"}],"originalName":"TriangleVertexMemberPath2"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"triangleVertexMemberPath3"}],"originalName":"TriangleVertexMemberPath3"}],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"triangleVertexMemberPath3"}],"originalName":"TriangleVertexMemberPath3"}],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicXYTriangulatingSeriesBase",
-    "names":[{"platform":"WebComponents","fileName":"igc-geographic-xy-triangulating-series-base-component.ts","mappedName":"IgcGeographicXYTriangulatingSeriesBaseComponent"}],"members":[],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    "names":[{"platform":"WebComponents","fileName":"igc-geographic-xy-triangulating-series-base-component.ts","mappedName":"IgcGeographicXYTriangulatingSeriesBaseComponent"}],"members":[],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicContourLineSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-geographic-contour-line-series-component.ts","dynamicModuleName":"igc-geographic-contour-line-series-dynamic-module.ts","moduleName":"igc-geographic-contour-line-series-module.ts","mappedName":"IgcGeographicContourLineSeriesComponent"}],
     "members":[
@@ -172,7 +172,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"valueMemberPath"}],"originalName":"ValueMemberPath"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcValueBrushScaleComponent","mappedName":"fillScale"}],"originalName":"FillScale"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcValueBrushScaleComponent","mappedName":"actualFillScale"}],"originalName":"ActualFillScale"},
-    { "names":[{"platform":"WebComponents","mappedType":"IgcContourValueResolverComponent","mappedName":"valueResolver"}],"originalName":"ValueResolver"}],"originalBaseTypeName":"GeographicXYTriangulatingSeries","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgcContourValueResolverComponent","mappedName":"valueResolver"}],"originalName":"ValueResolver"}],"originalBaseTypeName":"GeographicXYTriangulatingSeries","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicMapSeriesHost",
     "names":[{"platform":"WebComponents","fileName":"igc-geographic-map-series-host-component.ts","mappedName":"IgcGeographicMapSeriesHostComponent"}],
     "members":[
@@ -197,7 +197,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValueFromSeriesPixel"}],"originalName":"GetSeriesValueFromSeriesPixel"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItemSpan"}],"originalName":"GetItemSpan"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"renderSeries"}],"originalName":"RenderSeries"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"styleUpdated"}],"originalName":"StyleUpdated"}],"originalBaseTypeName":"Series","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"styleUpdated"}],"originalName":"StyleUpdated"}],"originalBaseTypeName":"Series","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicShapeSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-geographic-shape-series-component.ts","dynamicModuleName":"igc-geographic-shape-series-dynamic-module.ts","moduleName":"igc-geographic-shape-series-module.ts","mappedName":"IgcGeographicShapeSeriesComponent"}],
     "members":[
@@ -220,7 +220,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"CollisionAvoidanceType","mappedName":"markerCollisionAvoidance"}],"originalName":"MarkerCollisionAvoidance"},
     { "names":[{"platform":"WebComponents","mappedType":"IgDataTemplate","mappedName":"actualMarkerTemplate"}],"originalName":"ActualMarkerTemplate"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"actualMarkerBrush"}],"originalName":"ActualMarkerBrush"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"actualMarkerOutline"}],"originalName":"ActualMarkerOutline"}],"originalBaseTypeName":"GeographicShapeSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"actualMarkerOutline"}],"originalName":"ActualMarkerOutline"}],"originalBaseTypeName":"GeographicShapeSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicSymbolSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-geographic-symbol-series-component.ts","dynamicModuleName":"igc-geographic-symbol-series-dynamic-module.ts","moduleName":"igc-geographic-symbol-series-module.ts","mappedName":"IgcGeographicSymbolSeriesComponent"}],
     "members":[
@@ -231,7 +231,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isCustomScatterStyleAllowed"}],"originalName":"IsCustomScatterStyleAllowed"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isCustomScatterMarkerStyleAllowed"}],"originalName":"IsCustomScatterMarkerStyleAllowed"},
     { "names":[{"platform":"WebComponents","mappedType":"ScatterItemSearchMode","mappedName":"itemSearchMode"}],"originalName":"ItemSearchMode"},
-    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"itemSearchThreshold"}],"originalName":"ItemSearchThreshold"}],"originalBaseTypeName":"GeographicMarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"itemSearchThreshold"}],"originalName":"ItemSearchThreshold"}],"originalBaseTypeName":"GeographicMarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"XamGeographicMap",
     "names":[{"platform":"WebComponents","fileName":"igc-geographic-map-component.ts","mappedName":"IgcGeographicMapComponent"}],
     "members":[
@@ -266,26 +266,26 @@
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getActualWindowScaleVertical"}],"originalName":"GetActualWindowScaleVertical"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"deferredRefresh"}],"originalName":"DeferredRefresh"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"exportVisualData"}],"originalName":"ExportVisualData"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"zoomToGeographic"}],"originalName":"ZoomToGeographic"}],"originalBaseTypeName":"SeriesViewer","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"zoomToGeographic"}],"originalName":"ZoomToGeographic"}],"originalBaseTypeName":"SeriesViewer","originalBaseTypeNamespace":"Infragistics.Controls","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"ImageTilesReadyEventArgs",
-    "names":[{"platform":"WebComponents","fileName":"igc-image-tiles-ready-event-args.ts","mappedName":"IgcImageTilesReadyEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Maps"},
+    "names":[{"platform":"WebComponents","fileName":"igc-image-tiles-ready-event-args.ts","mappedName":"IgcImageTilesReadyEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"MapResizeBehavior","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"MapResizeBehavior.ts","mappedName":"MapResizeBehavior"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"MapResizeBehavior","mappedName":"Auto"}],"originalName":"Auto"},
     { "names":[{"platform":"WebComponents","mappedType":"MapResizeBehavior","mappedName":"MaintainTopLeftPosition"}],"originalName":"MaintainTopLeftPosition"},
     { "names":[{"platform":"WebComponents","mappedType":"MapResizeBehavior","mappedName":"MaintainCenterPosition"}],"originalName":"MaintainCenterPosition"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"MapBackgroundTilingMode","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"MapBackgroundTilingMode.ts","mappedName":"MapBackgroundTilingMode"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"MapBackgroundTilingMode","mappedName":"Auto"}],"originalName":"Auto"},
     { "names":[{"platform":"WebComponents","mappedType":"MapBackgroundTilingMode","mappedName":"NonWrapped"}],"originalName":"NonWrapped"},
     { "names":[{"platform":"WebComponents","mappedType":"MapBackgroundTilingMode","mappedName":"Wrapped"}],"originalName":"Wrapped"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"TileSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-tile-series-component.ts","dynamicModuleName":"igc-tile-series-dynamic-module.ts","moduleName":"igc-tile-series-module.ts","mappedName":"IgcTileSeriesComponent"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isTile"}],"originalName":"IsTile"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcGeographicMapImagery","mappedName":"tileImagery"}],"originalName":"TileImagery"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"deferredRefresh"}],"originalName":"DeferredRefresh"}],"originalBaseTypeName":"ShapeSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"deferredRefresh"}],"originalName":"DeferredRefresh"}],"originalBaseTypeName":"ShapeSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Charts"}]}
