@@ -111,7 +111,7 @@ _language: ja
 ```
 
 ```html
-<igc-grid id="grid" primary-key="ProductID" (sorting)="onSorting($event)">
+<igc-grid id="grid" primary-key="ProductID" >
 </igc-grid>
 ```
 
@@ -121,25 +121,31 @@ constructor() {
 
     this._bind = () => {
         grid.data = this.data;
-        grid.sorting = this.onSorting;
+        grid.addEventListener("sorting", this.onSorting);
     }
     this._bind();
 
 }
 ```
 
+<!-- Angular -->
+
 ```typescript
 public onSorting(event: ISortingEventArgs) {
     this.grid.endEdit(true);
-    // (event.owner as IgxGridComponent).endEdit(true);
 }
 ```
+
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
 ```typescript
 public onSorting(event: IgcSortingEventArgs) {
     this.grid.endEdit(true);
-    // (event.owner as IgxGridComponent).endEdit(true);
 }
 ```
+<!-- end: WebComponents -->
 
 ```razor
 <IgbGrid
@@ -170,13 +176,14 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 * `TreeGridRow`
 
 <!-- ComponentEnd: TreeGrid -->
-
+<!-- Angular -->
 * `DatePickerComponent`
 * `CheckboxComponent`
 * `Overlay`
+<!-- end: Angular -->
 ## その他のリソース
 
-<!-- Angular -->
+<!-- Angular, WebComponents -->
 
 
 * [列のデータ型](column-types.md#デフォルトのテンプレート)
@@ -193,7 +200,7 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 <!-- * [検索](search.md) -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- end: Angular -->
+<!-- end: Angular, WebComponents -->
 
 <!-- Blazor -->
 

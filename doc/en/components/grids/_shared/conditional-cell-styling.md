@@ -105,16 +105,10 @@ public rowClasses(args: any) {
 Use **::ng-deep** or **ViewEncapsulation.Non** to force the custom styles down through the current component and its children.
 <!-- end: Angular -->
 
-<!-- Angular -->
 ### Demo
-
-<!-- NOTE this sample is differed -->
 
 `sample="/{ComponentSample}/row-classes", height="600", alt="{Platform} {ComponentTitle} row classes"`
 
-
-
-<!-- end: Angular -->
 
 ### Using Row Styles
 
@@ -136,18 +130,18 @@ Let's define our styles:
 
 ```typescript
 public rowStyles = {
-    background: (row: RowType) => (+row.data['Change'] < 0  && +row.data['Change On Year(%)'] < 0) ? '#FF000088' : '#00000000',
-    border: (row: RowType) => (+row.data['Change'] < 0  && +row.data['Change On Year(%)'] < 0) ? '2px solid' : '1px solid',
-    'border-color': (row: RowType) => (+row.data['Change'] < 0  && +row.data['Change On Year(%)'] < 0) ? '#FF000099' : '#E9E9E9'
+    'background': (row: IgcRowType) => (+row.data['Change'] < 0 && +row.data['AnnualChange'] < 0) ? '#FF000088' : '#00000000',
+    'border': (row: IgcRowType) => (+row.data['Change'] < 0 && +row.data['AnnualChange'] < 0) ? '2px solid' : '1px solid',
+    'border-color': (row: IgcRowType) => (+row.data['Change'] < 0 && +row.data['AnnualChange'] < 0) ? '#FF000099' : '#E9E9E9'
 };
 ```
 
 ```razor
-igRegisterScript("RowStylesHandler", () => {
+igRegisterScript("WebGridRowStylesHandler", () => {
     return {
-        background: (row) => (+row.data['Change'] < 0 && +row.data['Change On Year(%)'] < 0) ? '#FF000088' : '#00000000',
-        border: (row) => (+row.data['Change'] < 0 && +row.data['Change On Year(%)'] < 0) ? '2px solid' : '1px solid',
-        'border-color': (row) => (+row.data['Change'] < 0 && +row.data['Change On Year(%)'] < 0) ? '#FF000099' : '#E9E9E9'
+        'background': (row) => (+row.data['Change'] < 0 && +row.data['AnnualChange'] < 0) ? '#FF000088' : '#00000000',
+        'border': (row) => (+row.data['Change'] < 0 && +row.data['AnnualChange'] < 0) ? '2px solid' : '1px solid',
+        'border-color': (row) => (+row.data['Change'] < 0 && +row.data['AnnualChange'] < 0) ? '#FF000099' : '#E9E9E9'
     };
 }, true);
 ```
@@ -159,7 +153,7 @@ igRegisterScript("RowStylesHandler", () => {
 ```
 
 ```razor
-<IgbGrid AutoGenerate="true" Id="grid" Data="CustomersData" Name="grid" RowStylesScript="RowStylesHandler" @ref="grid">
+<IgbGrid AutoGenerate="true" Id="grid" Data="CustomersData" Name="grid" RowStylesScript="WebGridRowStylesHandler" @ref="grid">
 </IgbGrid>
 ```
 
@@ -404,15 +398,6 @@ igRegisterScript("CellClassesHandler", () => {
 }, true);
 ```
 
-```ts
-public cellClasses(args: any) {
-    return {
-            downFont: (rowData, columnKey, cellValue, rowIndex) => rowData[columnKey] <= 95,
-            upFont: (rowData, columnKey, cellValue, rowIndex) => rowData[columnKey] > 95
-        };
-}
-```
-
 <!-- Angular -->
 ```scss
 // sample.component.scss
@@ -431,11 +416,11 @@ public cellClasses(args: any) {
 
 ```css
 .upFont {
-    color: green;
+    color: green !important;
 }
 
 .downFont {
-    color: red;
+    color: red !important;
 }
 ```
 
@@ -515,6 +500,9 @@ In the [sample above](#demo) we've created:
 
 Let's define our styles:
 
+
+<!-- Angular -->
+
 ```typescript
 public oddColStyles = {
     background: 'linear-gradient(to right, #b993d6, #8ca6db)',
@@ -529,39 +517,40 @@ public evenColStyles = {
 };
 ```
 
-```razor
-igRegisterScript("OddColStyles", () => {
-    return {
-        background: 'linear-gradient(to right, #b993d6, #8ca6db)',
-        color: (rowData, columnKey, cellValue, rowIndex) => rowIndex % 2 === 0 ? 'white' : 'gray',
-        animation: '0.75s popin'
-    };
-}, true);
+<!-- end:Angular -->
 
-igRegisterScript("EvenColStyles", () => {
+```razor
+igRegisterScript("WebGridCellStylesHandler", () => {
     return {
-        background: 'linear-gradient(to right, #8ca6db, #b993d6)',
-        color: (rowData, columnKey, cellValue, rowIndex) => rowIndex % 2 === 0 ? 'gray' : 'white',
-        animation: '0.75s popin'
+        background: (rowData, columnKey, cellValue, rowIndex) => rowIndex % 2 === 0 ? "#EFF4FD" : null,
+        color: (rowData, columnKey, cellValue, rowIndex) => {
+            if (columnKey === "Position") {
+                switch (cellValue) {
+                    case "up": return "#28a745";
+                    case "down": return "#dc3545";
+                    case "current": return "#17a2b8"
+                }
+            }
+        }
     };
 }, true);
 ```
 
 ```ts
-public OddColStyles(args: any) {
-    return {
-            background: 'linear-gradient(to right, #b993d6, #8ca6db)',
-            color: (rowData, columnKey, cellValue, rowIndex) => rowIndex % 2 === 0 ? 'white' : 'gray',
-            animation: '0.75s popin'
+    public WebGridCellStylesHandler(): any {
+        return {
+            background: (rowData, columnKey, cellValue, rowIndex) => rowIndex % 2 === 0 ? "#EFF4FD" : null,
+            color: (rowData, columnKey, cellValue, rowIndex) => {
+                if (columnKey === "Position") {
+                    switch (cellValue) {
+                        case "up": return "#28a745";
+                        case "down": return "#dc3545";
+                        case "current": return "#17a2b8"
+                    }
+                }
+            }
         };
-}
-public EvenColStyles(args: any) {
-    return {
-            background: 'linear-gradient(to right, #8ca6db, #b993d6)',
-            color: (rowData, columnKey, cellValue, rowIndex) => rowIndex % 2 === 0 ? 'gray' : 'white',
-            animation: '0.75s popin'
-        };
-}
+    }
 ```
 
 <!-- Angular -->
@@ -634,60 +623,13 @@ Define a `popin` animation
 <!-- end: Angular -->
 
 <!-- Blazor -->
+
 ```razor
-<IgbColumn Field="ID" CellStylesScript="EvenColStyles">
-</IgbColumn>
-<IgbColumn Field="CompanyName" CellStylesScript="OddColStyles">
+<IgbColumn CellStylesScript="WebGridCellStylesHandler">
 </IgbColumn>
 ```
 
-```html
-<igc-grid id="grid1"
-    primary-key="ID"
-    width="80%"
-    height="300px">
-    <igc-column id="field"
-        field="field"
-        header="field"
-        cellStyles="c.cellStyles">
-    </igc-column>
-</igc-grid>
-```
-```ts
-constructor() {
-    var grid = this.grid = document.getElementById('grid1') as IgcGridomponent;
-    var field = this.field = document.getElementById('field') as IgcColumnComponent;
 
-    this._bind = () => {
-        grid.data = this.data;
-        field.cellClasses = this.cellStyles;
-    }
-    this._bind();
-}
-```
-
-Define a `popin` animation:
-
-```css
-@keyframes popin {
-    0% {
-        opacity: 0.1;
-        transform: scale(.75, .75);
-        filter: blur(3px) invert(1);
-    }
-
-    50% {
-        opacity: .5;
-        filter: blur(1px);
-    }
-
-    100% {
-        transform: scale(1, 1);
-        opacity: 1;
-        filter: none;
-    }
-}
-```
 <!-- end: Blazor -->
 
 ### Demo
@@ -695,13 +637,13 @@ Define a `popin` animation:
 `sample="/{ComponentSample}/conditional-cell-style-2", height="620", alt="{Platform} {ComponentTitle} conditional cell style 2"`
 
 
-<!-- Angular -->
-
 ### Known issues and limitations
 
 - If there are cells bind to the same condition (from different columns) and one cell is updated, the other cells won't be updated based on the new value, if the condition is met.
 
-A pipe check should be performed in order to apply the changes to the rest of the cells. The example below shows how to do that with a **spread operator** ... on `OnCellEdit` event. This will copy the original object with a new instance, and lead pure pipe to be fired.
+<!-- Angular, WebComponents -->
+
+A check should be performed in order to apply the changes to the rest of the cells. The example below shows how to do that.
 
 ```ts
 public backgroundClasses = {
@@ -710,8 +652,8 @@ public backgroundClasses = {
     }
 };
 
-editDone(evt) {
-    this.backgroundClasses = {...this.backgroundClasses};
+public editDone(evt) {
+    this.Col1.cellClasses = {...this.backgroundClasses};
 }
 ```
 
@@ -722,18 +664,18 @@ editDone(evt) {
   <igx-column field="Col3" header="Col3" dataType="string" [cellClasses]="backgroundClasses"></igx-column>
 </igx-grid>
 ```
-<!-- end: Angular -->
 
 ```html
-<igx-grid id="grid1" height="500px" width="100%" >
-  <igx-column id="Col1" field="Col1" data-type="Number"></igx-column>
-  <igx-column id="Col2" field="Col2" data-type="Number" editable="true"></igx-column>
-  <igx-column id="Col3" field="Col3" header="Col3" data-type="String"></igx-column>
-</igx-grid>
+<igc-grid id="grid1" height="500px" width="100%" >
+  <igc-column id="Col1" field="Col1" data-type="number"></igx-column>
+  <igc-column id="Col2" field="Col2" data-type="number" editable="true"></igx-column>
+  <igc-column id="Col3" field="Col3" header="Col3" data-type="string"></igx-column>
+</igc-grid>
 ```
+
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid1') as IgcGridomponent;
+    var grid = this.grid = document.getElementById('grid1') as IgcGridComponent;
     var Col1 = this.Col1 = document.getElementById('Col1') as IgcColumnComponent;
     var Col2 = this.Col2 = document.getElementById('Col2') as IgcColumnComponent;
     var Col3 = this.Col3 = document.getElementById('Col3') as IgcColumnComponent;
@@ -748,6 +690,8 @@ constructor() {
     this._bind();
 }
 ```
+
+<!-- end:Angular, WebComponents -->
 
 ### API References
 
