@@ -13,7 +13,7 @@ The {Platform} `{ComponentName}` component provides three different filtering ty
 
 ## {Platform} {ComponentTitle} Filtering Example
 
-The sample below demonstrates `{ComponentName}`'s **Excel Style Filtering** user experience.
+The sample below demonstrates `{ComponentName}`'s **Quick Filter** user experience.
 
 `sample="/{ComponentSample}/filtering-options", height="500", alt="{Platform} {ComponentTitle} Filtering Example"`
 
@@ -612,7 +612,7 @@ public matchingRecordsOnlyStrategy = new TreeGridMatchingRecordsOnlyFilteringStr
 
 ## Styling
 
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](theming.md).
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
 ```ts
