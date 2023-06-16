@@ -52,7 +52,7 @@
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getCurrentXAxisActualMinimum"}],"originalName":"GetCurrentXAxisActualMinimum"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getCurrentYAxisActualMinimum"}],"originalName":"GetCurrentYAxisActualMinimum"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getCurrentXAxisActualMaximum"}],"originalName":"GetCurrentXAxisActualMaximum"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getCurrentYAxisActualMaximum"}],"originalName":"GetCurrentYAxisActualMaximum"}],"originalBaseTypeName":"XYChart","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getCurrentYAxisActualMaximum"}],"originalName":"GetCurrentYAxisActualMaximum"}],"originalBaseTypeName":"XYChart","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CategoryChartType","isEnum":true,
     "names":[{"platform":"Angular","fileName":"CategoryChartType.ts","mappedName":"CategoryChartType"}],
     "members":[
@@ -66,4 +66,4 @@
     { "names":[{"platform":"Angular","mappedType":"CategoryChartType","mappedName":"SplineArea"}],"originalName":"SplineArea"},
     { "names":[{"platform":"Angular","mappedType":"CategoryChartType","mappedName":"Waterfall"}],"originalName":"Waterfall"},
     { "names":[{"platform":"Angular","mappedType":"CategoryChartType","mappedName":"Auto"}],"originalName":"Auto"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}
