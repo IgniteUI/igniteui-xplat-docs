@@ -29,6 +29,10 @@
     { "names":[{"platform":"React","mappedType":"ErrorBarCalculatorType","mappedName":"StandardDeviation"}],"originalName":"StandardDeviation"},
     { "names":[{"platform":"React","mappedType":"ErrorBarCalculatorType","mappedName":"StandardError"}],"originalName":"StandardError"},
     { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics"},
+  { "originalName":"FocusEventArgs",
+    "names":[{"platform":"React","fileName":"igr-focus-event-args.ts","mappedName":"IgrFocusEventArgs"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"target"}],"originalName":"Target"}],"originalNamespace":"Infragistics"},
   { "originalName":"RectChangedEventArgs",
     "names":[{"platform":"React","fileName":"igr-rect-changed-event-args.ts","mappedName":"IgrRectChangedEventArgs"}],
     "members":[
