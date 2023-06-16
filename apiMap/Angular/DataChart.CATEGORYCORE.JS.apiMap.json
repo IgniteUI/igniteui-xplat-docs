@@ -22,7 +22,7 @@
     { "names":[{"platform":"Angular","mappedType":"CategoryTransitionInMode","mappedName":"AccordionFromCategoryAxisMaximum"}],"originalName":"AccordionFromCategoryAxisMaximum"},
     { "names":[{"platform":"Angular","mappedType":"CategoryTransitionInMode","mappedName":"AccordionFromValueAxisMinimum"}],"originalName":"AccordionFromValueAxisMinimum"},
     { "names":[{"platform":"Angular","mappedType":"CategoryTransitionInMode","mappedName":"AccordionFromValueAxisMaximum"}],"originalName":"AccordionFromValueAxisMaximum"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CategorySeries",
     "names":[{"platform":"Angular","fileName":"igx-category-series-component.ts","mappedName":"IgxCategorySeriesComponent"}],
     "members":[
@@ -38,4 +38,4 @@
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getCategoryWidth"}],"originalName":"GetCategoryWidth"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItem"}],"originalName":"GetItem"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItemIndex"}],"originalName":"GetItemIndex"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getExactItemIndex"}],"originalName":"GetExactItemIndex"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getExactItemIndex"}],"originalName":"GetExactItemIndex"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}
