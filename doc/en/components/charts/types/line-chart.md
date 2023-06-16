@@ -110,6 +110,11 @@ You can create this type of chart in the `CategoryChart` control by binding your
 
 `sample="/charts/category-chart/line-chart-styling", height="600", alt="{Platform} Line Chart Styling"`
 
+You can also create a dashed line within the `LineSeries` by using the `XamDataChart` and setting the `DashArray` property on the series. This property takes an array of numbers that will describe the length of the resulting dashes in the line.
+
+The following example demonstrates usage of the `DashArray` in a `LineSeries` in `XamDataChart`:
+
+`sample="/charts/data-chart/dash-array-series", height="600", alt="{Platform} Line Chart Dash Array"`
 
 
 <div class="divider--half"></div>
