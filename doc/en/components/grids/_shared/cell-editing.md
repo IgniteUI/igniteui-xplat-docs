@@ -209,14 +209,14 @@ If you want to provide a custom template which will be applied to a cell, you ca
 ```Razor
 
 <IgbColumn
-            Field="race"
-            Header="Race"
-            DataType="GridColumnDataType.String"
-            InlineEditorTemplateScript="WebGridCellEditCellTemplate"
-            Editable="true"
-            Name="column1"
-            @ref="column1">
-            </IgbColumn>
+    Field="race"
+    Header="Race"
+    DataType="GridColumnDataType.String"
+    InlineEditorTemplateScript="WebGridCellEditCellTemplate"
+    Editable="true"
+    Name="column1"
+    @ref="column1">
+</IgbColumn>
 
 
 ```
@@ -225,7 +225,7 @@ and pass the template:
 
 ```javascript
 
-igRegisterScript("WebGridChangePercentTemplate", (ctx) => {
+igRegisterScript("WebGridCellEditCellTemplate", (ctx) => {
     let cellValues = [];
     let uniqueValues = [];
     for(const i of this.webGridCellEditSampleRoleplay){
@@ -258,13 +258,13 @@ If you want to provide a custom template which will be applied to a cell, you ca
 ```html
 
 <igc-column
-            field="race"
-            header="Race"
-            data-type="string"
-            editable="true"
-            name="column1"
-            id="column1">
-            </igc-column>
+    field="race"
+    header="Race"
+    data-type="string"
+    editable="true"
+    name="column1"
+    id="column1">
+</igc-column>
 
 ```
 
@@ -273,10 +273,10 @@ and pass the templates to this column in the index.ts file:
 ```ts
 
 constructor() {
-        var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
-        var column1 = this.column1 = document.getElementById('column1') as IgcColumnComponent;
-        var column2 = this.column2 = document.getElementById('column2') as IgcColumnComponent;
-        var column3 = this.column3 = document.getElementById('column3') as IgcColumnComponent;
+        var grid1 = document.getElementById('grid1') as IgcGridComponent;
+        var column1 = document.getElementById('column1') as IgcColumnComponent;
+        var column2 = document.getElementById('column2') as IgcColumnComponent;
+        var column3 = document.getElementById('column3') as IgcColumnComponent;
 
         grid1.data = this.webGridCellEditSampleRoleplay;
         column1.inlineEditorTemplate = this.webGridCellEditCellTemplate;
