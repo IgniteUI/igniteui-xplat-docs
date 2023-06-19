@@ -623,7 +623,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "縮小可能な列グループ",
         "href": "grids/tree-grid/collapsible-column-groups.md",
         "status": "NEW"
