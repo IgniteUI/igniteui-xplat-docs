@@ -18,7 +18,7 @@ Excel Exporter サービスは `{ComponentName}` のデータを MS Excel へエ
 `sample="/{ComponentSample}/excel-exporting", height="750", alt="{Platform} {ComponentTitle} Excel Exporter の例"`
 
 
-
+<!-- Angular -->
 ## {ComponentTitle} のデータのエクスポート
 
 IgniteUI Excel Exporter を使用するには、`ExcelExporterService` を app.module.ts ファイルにインポートし、`providers` 配列にサービスを追加します。
@@ -72,6 +72,9 @@ public exportButtonHandler() {
 ```
 
 上記をすべて行うと、{ComponentTitle} コンポーネントとその下にボタンを確認できます。ボタンを押すととエクスポート処理をトリガーし、ブラウザーで 「ExportedDataFile.xlsx」 ファイルをダウンロードします。このファイルは MS Excel 形式の `{ComponentName}`  コンポーネントのデータを含みます。
+<!-- end: Angular -->
+
+<!-- Angular -->
 
 ## すべてのデータのエクスポート
 
@@ -83,13 +86,16 @@ public exportButtonHandler() {
 }
 ```
 
+<!-- end: Angular -->
+
 <!-- ComponentStart: Grid -->
 ## グループ化されたデータのエクスポート
 
-グループ化されたデータをエクスポートするには、`{ComponentName}` を 1 つ以上の列でグループ化する必要があります。ブラウザーは、選択した列でグループ化された MSExcel 形式の `{ComponentName}` コンポーネントからのデータを含む 「ExportedDataFile.xlsx」 という名前のファイルをダウンロードします。例:
+グループ化されたデータをエクスポートするには、`{ComponentName}` を 1 つ以上の列でグループ化する必要があります。ブラウザーは、選択した列でグループ化された MSExcel 形式の `{ComponentName}` コンポーネントからのデータを含む「ExportedDataFile.xlsx」という名前のファイルをダウンロードします。トピックのはじめに例があります。
 
-
+<!-- Angular -->
 `sample="/{ComponentSample}/excel-exporting", height="750", alt="{Platform} {ComponentTitle} グループ化されたデータのエクスポートの例"`
+<!-- end: Angular -->
 
 <!-- ComponentEnd: Grid -->
 
@@ -98,14 +104,16 @@ public exportButtonHandler() {
 定義された[複数列ヘッダー](multi-column-headers.md)を使用して `{ComponentName}` をエクスポートできるようになりました。すべてのヘッダーは、`{ComponentName}` に表示されるときに、エクスポートされた Excel ファイルに反映されます。エクスポートされたデータから定義された複数列ヘッダーを除外する場合は、`ExporterOption` `IgnoreMultiColumnHeaders` を **true** に設定できます。
 
 > [!Note]
-> Excel テーブルは複数の行ヘッダーをサポートしていないため、エクスポートされた `{ComponentName}` はテーブルとしてフォーマットされません。
+> Excel テーブルは複数の列ヘッダーをサポートしていないため、エクスポートされた `{ComponentName}` はテーブルとしてフォーマットされません。
 
 `sample="/{ComponentSample}/multi-column-headers-export", height="750", alt="{Platform} {ComponentTitle} 複数列ヘッダーのエクスポートの例"`
 
 ## 固定された列ヘッダーを使用してグリッドをエクスポートする
 
+
 デフォルトでは、Excel エクスポーター サービスは、スクロール可能な (固定されていない) 列ヘッダーを使用してグリッドをエクスポートします。エクスポートされた Excel ファイルの上にあるすべてのヘッダーを固定して、ユーザーがレコードをスクロールしても常に表示されたままにするシナリオがあります。これを実現するには、`ExporterOption` `FreezeHeaders` を **true** に設定します。
 
+<!-- Angular -->
 ```ts
 public exportButtonHandler() {
     const exporterOptions = new ExcelExporterOptions('ExportedDataFile');
@@ -113,12 +121,48 @@ public exportButtonHandler() {
     this.excelExportService.export(this.grid, exporterOptions);
 }
 ```
+<!-- end: Angular -->
 
+<!-- WebComponents -->
+```ts
+constructor() {
+  var gridToolbarExporter1 = document.getElementById('gridToolbarExporter1') as IgcGridToolbarExporterComponent;
+  gridToolbarExporter1.addEventListener("exportStarted", this.webGridExportEventFreezeHeaders);
+}
+
+public webGridExportEventFreezeHeaders(args: any): void {
+  args.detail.options.freezeHeaders = true;
+}
+```
+<!-- end: WebComponents -->
+
+```razor
+ <IgbGrid>
+    <IgbGridToolbar>
+      <IgbGridToolbarActions>
+        <IgbGridToolbarExporter
+          ExportExcel="true" ExportStarted="WebGridExportEventMultiColumnHeaders">
+        </IgbGridToolbarExporter>
+      </IgbGridToolbarActions>
+    </IgbGridToolbar>
+ </IgbGrid>
+
+@code {
+
+  public void WebGridExportEventMultiColumnHeaders(IgbExporterEventEventArgs args)
+  {
+      bool exportMultiHeaders = (bool)exportHeaders.GetCurrentPrimitiveValue();
+      args.Detail.Options.FreezeHeaders = true;
+  }
+}
+```
+
+<!-- Angular -->
 ## エクスポートするコンテンツのカスタマイズ
 
 上記の例では、Excel Exporter サービスで利用可能なデータをすべてエクスポートしました。行または列全体のエクスポートをしない方が良い場合があります。実装は、各列で発生される `columnExporting` または各行で発生される `rowExporting` イベントを処理し、イベント引数オブジェクトの `cancel` プロパティを **true** に設定して各イベントをキャンセルします。
 
-以下の例では、ヘッダーが 「Age」 で、インデックスが 1 の場合、エクスポートから列を除外します。
+以下の例では、ヘッダーが「Age」で、インデックスが 1 の場合、エクスポートから列を除外します。
 
 ```ts
 // component.ts
@@ -132,6 +176,7 @@ this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('
 ```
 
 `{ComponentName}` コンポーネントのデータ エクスポートでは、行フィルタリングおよび列の非表示などの機能に応じて `{ComponentName}` で表示されるデータのみをエクスポートします。`ExcelExporterOptions` オブジェクトのプロパティを設定し、エクスポーター サービスを構成してフィルターした行または非表示の列を含むことができます。
+<!-- end: Angular -->
 
 ## 既知の問題と制限
 
@@ -139,6 +184,7 @@ this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('
 |制限|説明|
 |--- |--- |
 |ワークシートの最大サイズ|Excel でサポートされているワークシートの最大サイズは、1,048,576 行 x 16,384 列です。|
+|セルのスタイル設定|Excel エクスポーター サービスは、セル コンポーネントに適用されたカスタム スタイルのエクスポートをサポートしていません。このようなシナリオでは、[Excel ライブラリ](../../excel-library.md)を使用することをお勧めします。|
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -155,17 +201,6 @@ this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('
 |ワークシートの最大サイズ|Excel でサポートされているワークシートの最大サイズは、1,048,576 行 x 16,384 列です。|
 |ピン固定列された列のエクスポート|エクスポートされた Excel ファイルでは、ピン固定列は固定されませんが、グリッドに表示されるのと同じ順序で表示されます。|
 <!-- ComponentEnd: HierarchicalGrid -->
-
-> [!Note]
-> [JSZip](https://www.npmjs.com/package/jszip) のライブラリの[問題](https://github.com/Stuk/jszip/issues/617)が原因で、大きな Excel ファイルのエクスポートが遅延する場合があります。問題が解決するまで、Excel エクスポーターの速度を上げるために、アプリケーションに [setImmediate](https://developer.mozilla.org/en-US/docs/Web/API/Window/setImmediate) [polyfill](https://www.npmjs.com/package/setimmediate) をインポートできます。
-
-```cmd
-npm install --save setimmediate
-```
-
-```ts
-import 'setimmediate';
-```
 
 ## API リファレンス
 

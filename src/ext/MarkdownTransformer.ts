@@ -2177,7 +2177,12 @@ export class MarkdownTransformer {
             }
             else if (node.updated) {
                 node.status = "UPDATED";
-            } else {
+            }else if (node.preview) {
+                node.status = "PREVIEW";
+            } else if (node.beta) {
+                node.status = "BETA";
+            } 
+             else {
                 node.status = "";
             }
 
@@ -2192,6 +2197,8 @@ export class MarkdownTransformer {
             // clearing YML props since they are stored in node.status prop
             node.updated = undefined;
             node.new = undefined;
+            node.preview = undefined;
+            node.beta = undefined;
 
             // recursively convert items nodes if they exist
             if (node.items !== undefined &&
@@ -2288,6 +2295,12 @@ export class MarkdownTransformer {
                     }
                     else if (status.toUpperCase() === "UPDATED") {
                         yml += tab + "  updated: true" + "\n";
+                    }
+                    else if (status.toUpperCase() === "PREVIEW") {
+                        yml += tab + "  preview: true" + "\n";
+                    }
+                    else if (status.toUpperCase() === "BETA") {
+                        yml += tab + "  beta: true" + "\n";
                     }
                     else { // status === ""
                         yml += tab + "  new: false" + "\n";
@@ -2426,6 +2439,8 @@ export class TocNode {
     public header?: boolean;
     public new?: boolean;
     public updated?: boolean;
+    public preview?: boolean;
+    public beta?: boolean;
     public items?: TocNode[];
     public exclude?: string[];
 
