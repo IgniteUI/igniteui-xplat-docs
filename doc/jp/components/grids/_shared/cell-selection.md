@@ -89,12 +89,43 @@ _language: ja
 
 以下は、範囲の選択、選択の解除、または選択したセル データを取得する方法です。
 
-<!-- Angular -->
+
+<!-- Angular, WebComponents -->
+
+### Select range
+
+`selectRange` - Select a range of cells with the API. rowStart and rowEnd should use row indexes and columnStart and columnEnd could use column index or column data field value.
+
+```ts
+const range = { rowStart: 2, rowEnd: 2, columnStart: 1, columnEnd: 1 };
+this.grid.selectRange(range);
+```
+
+<!-- end: Angular, WebComponents -->
+
 ### 選択したデータの取得
 
+<!-- Blazor -->
+`GetSelectedData` will return array of the selected data in Dictionary format. Examples below:
+
+```razor
+<IgbGrid @ref=grid  CellSelection="GridSelectionMode.Multiple" AutoGenerate=true></IgbGrid>
+
+@code {
+    private IgbGrid grid;
+
+    private async void GetSelectedData()
+    {
+        object[] data = await this.grid.GetSelectedDataAsync(true, true);
+    }
+}
+```
+<!-- end: Blazor -->
+
+<!-- Angular, WebComponents -->
 `GetSelectedData` は、選択したデータの配列を選択内容に応じた形式で返します。例:
 
-1. 3 つの異なる単一セルが選択されている場合:
+- 3 つの異なる単一セルが選択されている場合:
 ```typescript
 expectedData = [
     { CompanyName: 'Infragistics' },
@@ -103,7 +134,7 @@ expectedData = [
 ];
 ```
 
-2. 1 列から 3 つのセルが選択されている場合:
+- 1 列から 3 つのセルが選択されている場合:
 ```typescript
 expectedData = [
     { Address: 'Obere Str. 57'},
@@ -112,14 +143,15 @@ expectedData = [
 ];
 ```
 
-3. 1 行 3 列から 3 つのセルをマウスドラッグで選択した場合:
+- 1 行 3 列から 3 つのセルをマウスドラッグで選択した場合:
+
 ```typescript
 expectedData = [
     { Address: 'Avda. de la Constitución 2222', City: 'México D.F.', ContactTitle: 'Owner' }
 ];
 ```
 
-4. 2 行 3 列から 3 つのセルをマウスドラッグで選択した場合:
+- 2 行 3 列から 3 つのセルをマウスドラッグで選択した場合:
 ```typescript
 expectedData = [
     { ContactTitle: 'Sales Agent', Address: 'Cerrito 333', City: 'Buenos Aires'},
@@ -127,7 +159,7 @@ expectedData = [
 ];
 ```
 
-5. 2 つの異なる範囲が選択されている場合:
+- 2 つの異なる範囲が選択されている場合:
 ```typescript
 expectedData = [
     { ContactName: 'Martín Sommer', ContactTitle: 'Owner'},
@@ -137,7 +169,7 @@ expectedData = [
 ];
 ```
 
-6. 2 つの重複範囲が選択されている場合、形式は次のようになります。
+- 2 つの重複範囲が選択されている場合、形式は次のようになります。
 ```typescript
 expectedData = [
     { ContactName: 'Diego Roel', ContactTitle: 'Accounting Manager', Address: 'C/ Moralzarzal, 86'},
@@ -147,6 +179,9 @@ expectedData = [
 ];
 ```
 
+<!-- end: Angular, WebComponents -->
+
+<!-- Angular -->
 > [!Note]
 > `SelectedCells` は、セルがグリッド ビュー ポートに表示されていない場合でも、正しい結果を返します。`GetSelectedData` も選択されたセル データを返します。
 > `GetSelectedRanges` は、キーボードとポインタの両方の操作からグリッドで現在選択されている範囲を返します。タイプは **GridSelectionRange[]** です。
@@ -165,6 +200,39 @@ expectedData = [
 - `GroupBy` - 列をグループ化すると、選択したセルはクリアされません。
 
 <!-- ComponentEnd: Grid, TreeGrid -->
+
+
+<!-- WebComponents, Blazor -->
+
+## スタイル設定
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```ts
+<igc-grid class="grid">
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties for that class:
+
+```css
+.grid {
+    --igx-grid-cell-selected-text-color: #FFFFFF;
+    --igx-grid-cell-active-border-color: #f2c43c;
+    --igx-grid-cell-selected-background: #0062A3;
+}
+```
+
+### デモ
+
+`sample="/{ComponentSample}/cell-selection-style", height="620", alt="{Platform} {ComponentTitle} セル選択のスタイル設定の例"`
+
+
+<!-- end: WebComponents, Blazor -->
 
 <!-- Angular -->
 ## スタイリングのガイドライン

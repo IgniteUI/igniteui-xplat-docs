@@ -34,7 +34,8 @@ public ngOnInit() {
 
 <!-- WebComponents -->
 ```typescript
-connectedCallback() {
+constructor() {
+    var grid = document.getElementById("grid") as IgcGridComponent;
     grid.groupingExpressions = [
         { fieldName: 'ProductName', dir: SortingDirection.Desc },
         { fieldName: 'Released', dir: SortingDirection.Desc }
@@ -42,6 +43,23 @@ connectedCallback() {
 }
 ```
 <!-- end: WebComponents -->
+
+<!-- Blazor -->
+
+```razor
+<IgbGrid AutoGenerate="true" Data="InvoicesData" @ref="grid" Id="grid" GroupingExpressions="GroupingExpression1"></IgbGrid>
+
+@code {
+    public IgbGroupingExpression[] GroupingExpression1 = new IgbGroupingExpression[2]
+    {
+        new IgbGroupingExpression(){ FieldName = "ShipCountry", Dir= SortingDirection.Asc },
+        new IgbGroupingExpression() { FieldName = "ShipCity", Dir= SortingDirection.Asc  }
+    };
+}
+```
+
+<!-- end: Blazor -->
+
 
 グループ式は、`ISortingExpression` インターフェイスを実装します。
 
@@ -52,11 +70,40 @@ connectedCallback() {
 グループ化は、UI およびグリッド コンポーネントで公開された API で実行できます。各列の `Groupable` プロパティを **true** に設定してエンドユーザーは特定の列でグリッド データをグループ化できます。
 
 ```html
-<igx-grid [data]="data">
-    <igc-column *ngFor="let c of columns" [field]="c.field" [groupable]="true">
-    </igc-column>
-</igx-grid>
+<igc-grid auto-generate="false"id="grid" id="grid">
+    <igc-column field="OrderID" hidden="true"></igc-column>
+    <igc-column field="ShipCountry" header="Ship Country" width="200px" groupable="true"> </igc-column>
+    <igc-column field="OrderDate" header="Order Date" data-type="date" width="200px" groupable="true"> </igc-column>
+    <igc-column field="PostalCode" header="Postal Code" width="200px" groupable="true"> </igc-column>
+    <igc-column field="Discontinued" width="200px" data-type="boolean" groupable="true" name="column1" id="column1"> </igc-column>
+    <igc-column field="ShipName" header="Ship Name" width="200px" groupable="true"> </igc-column>
+    <igc-column field="ShipCity" header="Ship City" width="200px" groupable="true"> </igc-column>
+    <igc-column field="ShipperName" header="Shipper Name" width="200px" groupable="true"> </igc-column>
+    <igc-column field="Salesperson" header="Sales Person" width="200px" groupable="true"> </igc-column>
+    <igc-column field="UnitPrice" header="Unit Price" width="200px" groupable="true"> </igc-column>
+    <igc-column field="Quantity" width="200px" groupable="true"> </igc-column>
+</igc-grid>
 ```
+
+<!-- Blazor -->
+
+```razor
+<IgbGrid AutoGenerate="false" Data="InvoicesData" @ref="grid" Id="grid" GroupingExpressions="GroupingExpression1" GroupRowTemplateScript="WebGridGroupByRowTemplate">
+    <IgbColumn Field="OrderID" Hidden="true"></IgbColumn>
+    <IgbColumn Field="ShipCountry" Header="Ship Country" Width="200px" Groupable="true"></IgbColumn>
+    <IgbColumn Field="OrderDate" Header="Order Date" DataType="GridColumnDataType.Date" Width="200px" Groupable="true"></IgbColumn>
+    <IgbColumn Field="PostalCode" Header="Postal Code" Width="200px" Groupable="true"></IgbColumn>
+    <IgbColumn Field="Discontinued" Width="200px" DataType="GridColumnDataType.Boolean" Groupable="true" BodyTemplateScript="WebGridBooleanCellTemplate" Name="column1" @ref="column1"></IgbColumn>
+    <IgbColumn Field="ShipName" Header="Ship Name" Width="200px" Groupable="true"></IgbColumn>
+    <IgbColumn Field="ShipCity" Header="Ship City" Width="200px" Groupable="true"></IgbColumn>
+    <IgbColumn Field="ShipperName" Header="Shipper Name"Width="200px"Groupable="true"></IgbColumn>
+    <IgbColumn Field="Salesperson" Header="Sales Person" Width="200px" Groupable="true"></IgbColumn>
+    <IgbColumn Field="UnitPrice" Header="Unit Price" Width="200px" Groupable="true"></IgbColumn>
+    <IgbColumn Field="Quantity" Width="200px" Groupable="true"></IgbColumn>
+</IgbGrid>
+```
+
+<!-- end: Blazor -->
 
 <!-- Angular -->
 ```typescript
@@ -70,18 +117,43 @@ public ngOnInit() {
 
 <!-- WebComponents -->
 ```typescript
-connectedCallback() {
-    grid.columns.forEach((column) => {
-        column.groupable = true;
-    });
-}
+    constructor() {
+        var column1 = (this.column1 = document.getElementById("column1") as IgcColumnComponent);
+        column1.groupable = true;
+    }
 ```
+<!-- end: WebComponents -->
 
-ランタイムの式は `groupingExpressions` プロパティの取得または設定できます。既存の式を追加または変更する必要がある場合、`ISortingExpression` の単一または配列の `GroupBy` メソッドを使用してください。
+ランタイムの式は `groupingExpressions` プロパティの取得または設定できます。既存の式を追加または変更する必要がある場合、単一の式または式の配列で `GroupBy` メソッドを使用してください。
 
+
+<!-- WebComponents -->
 ```typescript
 grid.groupBy({ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase: true });
 ```
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+
+```razor
+@code {
+    public IgbGrid grid;
+
+    public IgbGroupingExpression[] GroupingExpression1 = new IgbGroupingExpression[2]
+    {
+        new IgbGroupingExpression(){ FieldName = "ShipCountry", Dir= SortingDirection.Asc },
+        new IgbGroupingExpression() { FieldName = "ShipCity", Dir= SortingDirection.Asc  }
+    };
+
+
+    private void GroupGrid()
+    {
+        this.grid.GroupBy(GroupingExpression1);
+    }
+}
+```
+
+<!-- end: Blazor -->
 
 <!-- Angular -->
 
@@ -92,7 +164,11 @@ grid.groupBy({ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase:
 
 ### 展開 / 縮小 API
 
-グループ式の他にグループ行の展開も制御できます。`Grid` コンポーネント `GroupingExpansionState` の別のプロパティに保存されます。グループ行は、作成されたフィールド名とグループ化の各レベルを表す値に基づいて識別されます。以下は展開状態のインターフェイスのシグネチャです。
+グループ式の他にグループ行の展開も制御できます。`Grid` コンポーネント `GroupingExpansionState` の別のプロパティに保存されます。グループ行は、作成されたフィールド名とグループ化の各レベルを表す値に基づいて識別されます。
+
+<!-- WebComponents -->
+
+以下は展開状態のインターフェイスのシグネチャです。
 
 ```typescript
 export interface IGroupByKey {
@@ -106,13 +182,35 @@ export interface IGroupByExpandState {
 }
 ```
 
+<!-- end: WebComponents -->
+
 `GroupingExpressions` で `IGroupByExpandState` のリストを直接 `GroupingExpansionState` に設定すると展開が変更されます。`Grid` はグループ レコード インスタンスでトグルするメソッドを公開します。
 
 ```typescript
-    const groupRow = this.grid.groupsRecords.find(r => r.value === "France");
-    const groupRow = this.grid.getRowByIndex(0).groupRow;
+   const groupRow = this.grid.getRowByIndex(0).groupRow;
     grid.toggleGroup(groupRow);
+```
+
+```typescript
+    const groupRow = this.grid.getRowByIndex(0);
     groupRow.expanded = false;
+```
+
+```razor
+<IgbGrid AutoGenerate="true" Data="InvoicesData" GroupingExpressions="GroupingExpression1" GroupingExpansionState=ExpansionState @ref="grid" Id="grid">
+</IgbGrid>
+
+@code {
+    public IgbGroupingExpression[] GroupingExpression1 = new IgbGroupingExpression[2]
+    {
+        new IgbGroupingExpression(){ FieldName = "ShipCountry", Dir= SortingDirection.Asc },
+        new IgbGroupingExpression() { FieldName = "ShipCity", Dir= SortingDirection.Asc  }
+    };
+    public IgbGroupByExpandState[] state = new IgbGroupByExpandState[1]
+    {
+        new IgbGroupByExpandState(){ Hierarchy = new IgbGroupByKey[1]{ new IgbGroupByKey() { FieldName="ShipCountry", Value = "USA" } },  Expanded = false }
+    };
+}
 ```
 
 グループは展開済み (**デフォルト**) または縮小済みに作成でき、展開状態は一般的にデフォルト動作の反対の状態のみ含みます。グループを作成して展開するかどうか、または `GroupsExpanded` プロパティを介すかどうかを制御できます。
@@ -124,18 +222,27 @@ export interface IGroupByExpandState {
 以下のコードスニペットは、グループ レコード `SelectRowsInGroup` メソッドを使用してグループ内のすべての行を選択するために使用できます。さらに、このメソッドの2番目のパラメーターはブールプロパティです。それを使用して、前の行の選択をクリアするかどうかを選択できます。以前の選択はデフォルトで保存されます。
 
 ```typescript
-    const groupRow = this.grid.groupsRecords.find(r => r.value === "France");
     const groupRow = this.grid.getRowByIndex(0).groupRow;
     grid.selectRowsInGroup(groupRow);
+```
+
+```razor
+var row = await this.grid.GetRowByIndexAsync(0);
+this.grid.SelectRowsInGroup(row.GroupRow, true);
 ```
 
 プログラムでグループ内のすべての行の選択を解除する必要がある場合は、`DeselectRowsInGroup` メソッドを使用できます。
 
 ```typescript
-    const groupRow = this.grid.groupsRecords.find(r => r.value === "France");
     const groupRow = this.grid.getRowByIndex(0).groupRow;
     grid.deselectRowsInGroup(groupRow);
 ```
+
+```razor
+var row = await this.grid.GetRowByIndexAsync(0);
+this.grid.DeselectRowsInGroup(row.GroupRow);
+```
+
 
 ## テンプレート
 
@@ -163,16 +270,28 @@ export interface IGroupByRecord {
 ```
 
 ```ts
-public groupByRowTemplate = (ctx: IgcGroupByRowTemplateContext) => {
-    return html`<span>Total items with value: ${ ctx.value } are ${ ctx.records.length }</span>`;
-}
+    public groupByRowTemplate = (ctx: IgcGroupByRowTemplateContext) => {
+        const groupRow: any = ctx["$implicit"];
+        return html`<span>Total items with value: ${ groupRow.value } are ${ groupRow.records.length }</span>`;
+    }
 ```
 
-<!-- Angular -->
+```razor
+<IgbGrid AutoGenerate="true" Data="InvoicesData" @ref="grid" Id="grid" GroupRowTemplateScript="WebGridGroupByRowTemplate"></IgbGrid>
+
+
+//In JavaScript:
+igRegisterScript("WebGridGroupByRowTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    var groupRow = ctx["$implicit"];
+    return html`<span>Total items with value: ${groupRow.value} are ${groupRow.records.length}</span>`;
+}, false);
+```
+
 
 ### グループ行セレクター テンプレート
 
-上記のように、展開/縮小 UI を除くグループ行は完全にテンプレート化可能です。グリッド内にカスタムの GroupBy 行セレクター テンプレートを作成するには、`GroupByRowSelector` ディレクティブを使用して `<ng-template>` を宣言します。テンプレートから、Group By 行の状態に関する情報を提供するプロパティを使用して、暗黙的に提供されたコンテキスト変数にアクセスできます。
+上記のように、展開/縮小 UI を除くグループ行は完全にテンプレート化可能です。カスタムの GroupBy 行セレクター テンプレートを作成するには、`GroupByRowSelector` ディレクティブを使用します。テンプレートから、Group By 行の状態に関する情報を提供するプロパティを使用して、暗黙的に提供されたコンテキスト変数にアクセスできます。
 
 `SelectedCount` プロパティは、現在選択されているグループ レコードの数を示し、`TotalCount` はグループに属するレコードの数を示します。
 
@@ -183,11 +302,22 @@ public groupByRowTemplate = (ctx: IgcGroupByRowTemplateContext) => {
 ```
 
 ```ts
-public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateDetails) => {
-    return html`
-        ${ ctx.selectedCount } / ${ ctx.totalCount  }
-    `;
-}
+    public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateContext) => {
+        const context: any = (ctx as any)["$implicit"];
+        return html`
+            ${ context.selectedCount } / ${ context.totalCount  }
+        `;
+    }
+```
+
+```razor
+<IgbGrid GroupByRowSelectorTemplateScript="GroupByRowSelectorTemplate"></IgbGrid>
+//In Javascript
+igRegisterScript("GroupByRowSelectorTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    var context = ctx["$implicit"];
+    return html` ${context.selectedCount} / ${context.totalCount} `;
+}, false);
 ```
 
 `GroupRow` プロパティは、グループ行への参照を返します。
@@ -199,11 +329,22 @@ public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateDetails) 
 ```
 
 ```ts
-public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateDetails) => {
-    return html`
-        <div onClick="${ handleGroupByRowSelectorClick($event, groupByRowContext.groupRow) }">Handle groupRow</div>
-    `;
-}
+    public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateContext) => {
+        const context: any = (ctx as any)["$implicit"];
+        const groupRow = context.groupRow;
+        return html` <div @click=${(e: any) => this.handleGroupByRowSelectorClick(e, groupRow)} ">Handle groupRow</div> `;
+    };
+```
+
+```razor
+<IgbGrid GroupByRowSelectorTemplateScript="GroupByRowSelectorTemplate"></IgbGrid>
+//In Javascript
+igRegisterScript("GroupByRowSelectorTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    var context = ctx["$implicit"];
+    var groupRow = context.groupRow;
+    return html`<div onclick="handleGroupByRowSelectorClick()">Handle groupRow</div> `;
+}, false);
 ```
 
 `SelectedCount` と `TotalCount` プロパティを使用して、Group By 行セレクターをチェックするか不確定にする (部分的に選択する) かを決定できます。
@@ -212,15 +353,14 @@ public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateDetails) 
 <igx-grid #grid [data]="gridData" primaryKey="ProductID" rowSelection="multiple">
     <!-- ... -->
     <ng-template GroupByRowSelector let-context>
-        <igc-checkbox
+        <igx-checkbox
             [checked]=" context.selectedCount > 0 && context.selectedCount === context.totalCount"
             [indeterminate]="context.selectedCount > 0 && context.selectedCount !== context.totalCount">
-        </igc-checkbox>
+        </igx-checkbox>
     </ng-template>
 </igx-grid>
 ```
 
-<!-- end:Angular -->
 
 ## {Platform} Grid ページングによるグループ化
 
@@ -252,98 +392,100 @@ public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateDetails) 
    - <kbd>DELETE</kbd> - フィールドのグループ解除。
    - チップの別の要素をフォーカスでき <kbd>ENTER</kbd> キーでインタラクティブに操作できます。
 
+<!-- WebComponents, Angular -->
+
 ## {Platform} Grid カスタムグループ化
 
 グリッドでは、列ごとまたはグループ化式ごとにカスタム グループを定義できます。これにより、カスタム条件に基づいてグループ化が提供されます。これは、複雑なオブジェクトごとにグループ化する必要がある場合、または他のアプリケーション固有のシナリオで役立ちます。
 
+<!-- Angular -->
+
 > [!Note]
 > カスタム グループ化を実装するには、まずデータを適切にソートする必要があります。このため、ベース `DefaultSortingStrategy` を拡張するカスタムのソート ストラテジを適用する必要がある場合もあります。データがソートされた後、列または特定のグループ化式に `GroupingComparer` を指定することにより、カスタム グループを決定できます。
+
+<!-- end:Angular -->
 
 以下のサンプルは、`Date` によるカスタム グループ化を示しています。日付の値は、ユーザーが選択したグループ化モードに基づいて、日、週、月、または年でソートされおよびグループ化されています。
 
 ### {Platform} カスタム グループ化の例
 
 
-`sample="/{GridSample}/groupby-custom-coming-soon", height="605", alt="{Platform} {ComponentTitle} カスタム グループ化の例"`
+`sample="/{GridSample}/groupby-custom", height="605", alt="{Platform} {ComponentTitle} カスタム グループ化の例"`
 
 このサンプルでは、さまざまな日付条件のカスタム ソートストラテジを定義しています。
-各カスタム ストラテジ、ベースの `DefaultSortingStrategy` を拡張し、`CompareValues` メソッドを定義します。値をソートするときに使用されるカスタム比較関数です。さらに、比較に必要な日付から値を抽出します。
+各カスタム ストラテジは `GroupingComparer` メソッドを定義します。値をソートするときに使用されるカスタム比較関数です。さらに、比較に必要な日付から値を抽出します。
 
 ```typescript
-class BaseSortingStrategy extends DefaultSortingStrategy {
-
-    public getParsedDate(date: any) {
+public groupByMode = "Month";
+public getParsedDate(date: any) {
         return {
             day: date.getDay(),
             month: date.getMonth() + 1,
             year: date.getFullYear()
         };
     }
-
-    compareValues(a: any, b: any) {
-        const dateA = this.getParsedDate(a);
-        const dateB = this.getParsedDate(b);
-        return dateA.year < dateB.year ?
-            -1 : dateA.year > dateB.year ?
-            1 : dateA.month  < dateB.month ?
-            -1 : dateA.month > dateB.month ?
-            1 : 0;
-    }
-}
-
-class DaySortingStrategy extends BaseSortingStrategy {
-    compareValues(a: any, b: any) {
-        const dateA = this.getParsedDate(a);
-        const dateB = this.getParsedDate(b);
-        return dateA.year < dateB.year ?
-            -1 : dateA.year > dateB.year ?
-            1 : dateA.month  < dateB.month ?
-            -1 : dateA.month > dateB.month ?
-            1 : dateA.day < dateB.day ?
-            -1 : dateA.day > dateB.day ?
-            1 : 0;
-    }
-}
-
-class WeekSortingStrategy extends BaseSortingStrategy {
-
-    public getWeekOfDate(a: any) {
-       return parseInt(new DatePipe("en-US").transform(a, 'w'), 10);
-    }
-
-    compareValues(a: any, b: any) {
-        const dateA = this.getParsedDate(a);
-        const dateB = this.getParsedDate(b);
-        const weekA = this.getWeekOfDate(a);
-        const weekB = this.getWeekOfDate(b);
-        return dateA.year < dateB.year ?
-            -1 : dateA.year > dateB.year ?
-            1 : weekA < weekB ?
-            -1 : weekA > weekB ?
-            1 : 0;
-    }
-}
 ```
 
 `GroupingComparer` 関数がグループ化式に対して定義され、選択されたグループ化モードに基づいて同じグループに属するアイテムを決定します。この関数が 0 を返すソートされた値は、同じグループの一部としてマークされます。
 
 ```typescript
- groupingComparer: (a, b) => {
-    const dateA = this.sortingStrategy.getParsedDate(a);
-    const dateB = this.sortingStrategy.getParsedDate(b);
-    if (this.groupByMode === 'Month') {
-        return dateA.month === dateB.month ? 0 : -1;
-    } else if (this.groupByMode === "Year") {
-        return dateA.year === dateB.year ? 0 : -1;
-    } else if (this.groupByMode === "Week") {
-        return this.sortingStrategy.getWeekOfDate(a) === this.sortingStrategy.getWeekOfDate(b) ? 0 : -1;
+grid.groupingExpressions = [
+    { fieldName: 'OrderDate', dir: SortingDirection.Desc,
+    groupingComparer: (a, b) => {
+        const dateA = this.getParsedDate(a);
+        const dateB = this.getParsedDate(b);
+        if (this.groupByMode === 'Month') {
+            return dateA.month === dateB.month ? 0 : -1;
+        } else if (this.groupByMode === "Year") {
+            return dateA.year === dateB.year ? 0 : -1;
+        } else if (this.groupByMode === 'Week') {
+            return this.getWeekOfDate(a) === this.getWeekOfDate(b) ? 0 : -1;
+        }
+        return dateA.day === dateB.day && dateA.month === dateB.month ? 0 : -1;
+        }
     }
-    return dateA.day === dateB.day && dateA.month === dateB.month ? 0 : -1;
+];
+```
+
+<!-- end:WebComponents, Angular -->
+
+<!-- WebComponents, Blazor -->
+## スタイル設定
+
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```ts
+<igc-grid class="grid">
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties for that class:
+
+```css
+.grid {
+    --igx-grid-group-row-background: #969799;
+    --igx-grid-group-row-selected-background: #969799;
+    --igx-grid-group-label-column-name-text: #f8f8f8;
+    --igx-grid-group-label-text: #f8f8f8;
+    --igx-grid-group-count-text-color: #222;
+    --igx-grid-expand-icon-color: #f8f8f8;
+    --igx-grid-expand-icon-hover-color: #f8f8f8;
 }
 ```
 
+### デモ
+
+`sample="/{GridSample}/groupby-styling", height="605", alt="{Platform} {ComponentTitle} グループ化のスタイル設定の例"`
+
+
+<!-- end: WebComponents, Blazor -->
+
 <!-- Angular -->
-## スタイル設定
 
 [{ProductName} テーマ ライブラリ](../themes/styles.md)でスタイルを設定できます。theme は、グリッドのすべての機能をカスタマイズできるさまざまなプロパティを公開します。
 
