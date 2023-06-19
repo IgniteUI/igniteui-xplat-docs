@@ -42,9 +42,6 @@ All available column data types could be found in the official [Column types top
 
 `{ComponentName}` summaries are enabled per-column by setting `HasSummary` property to **true**. It is also important to keep in mind that the summaries for each column are resolved according to the column data type. In the `{ComponentName}` the default column data type is `string`, so if you want `number` or `date` specific summaries you should specify the `DataType` property as `number` or `date`. Note that the summary values will be displayed localized, according to the grid `Locale` and column `PipeArgs`.
 
-
-<!-- ComponentStart: Grid, TreeGrid -->
-
 <!-- Angular -->
 ```html
 <{ComponentSelector} #grid1 [data]="data" [autoGenerate]="false" height="800px" width="800px" (columnInit)="initColumn($event)">
@@ -59,12 +56,12 @@ All available column data types could be found in the official [Column types top
 <!-- end: Angular -->
 
 ```razor
-<IgbGrid>
+<{ComponentSelector}>
         <IgbColumn Field="EmployeeID" DataType="GridColumnDataType.Number" HasSummary="true"></IgbColumn>
         <IgbColumn Field="FirstName" HasSummary="true"></IgbColumn>
         <IgbColumn Field="LastName" HasSummary="true"></IgbColumn>
         <IgbColumn Field="Title" HasSummary="true"></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 ```
 
 <!-- WebComponents -->
@@ -79,10 +76,6 @@ All available column data types could be found in the official [Column types top
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
-
-<!-- ComponentEnd: Grid, TreeGrid -->
-
-
 
 The other way to enable/disable summaries for a specific column or a list of columns is to use the public method `EnableSummaries`/`DisableSummaries` of the `{ComponentName}`.
 
@@ -242,19 +235,9 @@ class WebGridDiscontinuedSummary {
         return result;
     }
 }
-igRegisterScript("WebGridCustomSummary", (event) => {
-    if (event.detail.field === "UnitsInStock") {
-        event.detail.summaries = WebGridDiscontinuedSummary;
-    }
-}, false);
 ```
 
-
-
-
-
-
- As seen in the examples, the base classes expose the `Operate` method, so you can choose to get all default summaries and modify the result, or calculate entirely new summary results.
+As seen in the examples, the base classes expose the `Operate` method, so you can choose to get all default summaries and modify the result, or calculate entirely new summary results.
 
 The method returns a list of `SummaryResult`.
 
@@ -278,7 +261,7 @@ and take optional parameters for calculating the summaries.
 See [Custom summaries, which access all data](#custom-summaries-which-access-all-data) section below.
 
 > [!Note]
-> In order to calculate the summary row height properly, the {ComponentTitle} needs the `Operate` method to always return an array of `SummaryResult` with the proper length even when the data is empty. -->
+> In order to calculate the summary row height properly, the {ComponentTitle} needs the `Operate` method to always return an array of `SummaryResult` with the proper length even when the data is empty.
 
 
 And now let's add our custom summary to the column `UnitsInStock`. We will achieve that by setting the Summaries` property to the class we create below.
@@ -330,7 +313,7 @@ export class GridComponent implements OnInit {
 }
 ```
 
-<!-- ```razor
+```razor
 <{ComponentSelector} 
         AutoGenerate="true"
         Name="grid"
@@ -346,12 +329,7 @@ igRegisterScript("WebGridCustomSummary", (event) => {
         event.detail.summaries = WebGridDiscontinuedSummary;
     }
 }, false);
-``` -->
-
-
-
-
-
+```
 
 ### Custom summaries, which access all data
  Now you can access all {ComponentTitle} data inside the custom column summary. Two additional optional parameters are introduced in the SummaryOperand `Operate` method.
