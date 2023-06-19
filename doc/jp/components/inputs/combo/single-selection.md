@@ -18,7 +18,11 @@ _language: ja
 <igc-combo single-select></igc-combo>
 ```
 
-`sample="/inputs/combo/simplified", height="400", alt="{Platform}単一選択コンボの例"`
+```razor
+<IgbCombo SingleSelect></IgbCombo>
+```
+
+`sample="/inputs/combo/simplified", height="400", alt="{Platform} 単一選択コンボの例"`
 
 <div class="divider--half"></div>
 
@@ -37,6 +41,16 @@ _language: ja
 combo.select('BG01');
 ```
 
+```razor
+<IgbCombo SingleSelect @ref="Combo"></IgbCombo>
+
+@code {
+    private IgbCombo Combo;
+
+    this.Combo.Select(new object[] { "UK01" });
+}
+```
+
 新たに選択せずに項目の選択を解除するには、`deselect` メソッドを呼び出します。
 
 #### 項目の選択解除:
@@ -44,6 +58,16 @@ combo.select('BG01');
 ```ts
 // deselect the item matching the 'BG01' value of the value key field.
 combo.deselect('BG01');
+```
+
+```razor
+<IgbCombo SingleSelect @ref="Combo"></IgbCombo>
+
+@code {
+    private IgbCombo Combo;
+
+    this.Combo.Deselect(new object[] { "UK01" });
+}
 ```
 
 ## 無効な機能

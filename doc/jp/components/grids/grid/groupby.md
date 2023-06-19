@@ -184,7 +184,7 @@ export interface IGroupByExpandState {
 
 <!-- end: WebComponents -->
 
-`GroupingExpressions` で `IGroupByExpandState` のリストを直接 `GroupingExpansionState` に設定すると展開が変更されます。`Grid` はグループ レコード インスタンスでトグルするメソッドを公開します。
+As with `GroupingExpressions`, setting a list of `IGroupByExpandState` directly to the `GroupingExpansionState` will change the expansion accordingly. Additionally `Grid` exposes a method `toggleGroup` that toggles a group by the group record instance or via the `expanded` property of the row.
 
 ```typescript
    const groupRow = this.grid.getRowByIndex(0).groupRow;
@@ -291,7 +291,7 @@ igRegisterScript("WebGridGroupByRowTemplate", (ctx) => {
 
 ### グループ行セレクター テンプレート
 
-上記のように、展開/縮小 UI を除くグループ行は完全にテンプレート化可能です。カスタムの GroupBy 行セレクター テンプレートを作成するには、`GroupByRowSelector` ディレクティブを使用します。テンプレートから、Group By 行の状態に関する情報を提供するプロパティを使用して、暗黙的に提供されたコンテキスト変数にアクセスできます。
+上記のように、展開/縮小 UI を除くグループ行は完全にテンプレート化可能です。カスタムの GroupBy 行セレクター テンプレートを作成するには、`GroupByRowSelectorTemplate` ディレクティブを使用します。テンプレートから、Group By 行の状態に関する情報を提供するプロパティを使用して、暗黙的に提供されたコンテキスト変数にアクセスできます。
 
 `SelectedCount` プロパティは、現在選択されているグループ レコードの数を示し、`TotalCount` はグループに属するレコードの数を示します。
 
@@ -571,7 +571,7 @@ $custom-chips-theme: chip-theme(
 );
 ```
 ### カスタム スキーマの定義
-[**スキーマ**](../themes/sass/schemas.md) のすべての利点を備えた柔軟な構造を構築できます。**スキーマ**はテーマを作成させるための方法です。
+[**スキーマ**](../themes/sass/schemas.md)のすべての利点を備えた柔軟な構造を構築できます。**スキーマ**はテーマを作成させるための方法です。
 すべてのコンポーネントに提供される 2 つの事前定義されたスキーマのいずれかを拡張します。この場合、`$_light_grid` を使用します。
 ```scss
 $custom-grid-schema: extend($_light-grid,(

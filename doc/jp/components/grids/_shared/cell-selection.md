@@ -36,10 +36,10 @@ _language: ja
 
 セルの選択方法:
 - **マウス ドラッグ** - セルの長方形データ選択。
-- <kbd>Ctrl</kbd> キー 押下 + **マウス ドラッグ** - 複数の範囲が選択されます。その他の既存のセル選択は保持されます。
+- <kbd>Ctrl</kbd> キー押下 + **マウス ドラッグ** - 複数の範囲が選択されます。その他の既存のセル選択は保持されます。
 - <kbd>Shift</kbd> キーを使用して複数セルの選択をインスタンス化します。<kbd>Shift</kbd> キーを押しながら、単一セルを選択して別の単一セルを選択します。2 つのセル間のセル範囲が選択されます。<kbd>Shift</kbd> キーを押しながら他の 2 番目のセルを選択すると、最初に選択したセルの位置 (開始点) に基づいてセル選択範囲が更新されます。
-- <kbd>Shift</kbd>キーを押しながら<kbd>矢印</kbd> キーを使用してキーボードで複数セルを選択します。マルチセル選択範囲は、フォーカスされたセルに基づいて作成されます。
-- <kbd>Ctrl</kbd> キーを押しながら <kbd>Ctrl</kbd> + <kbd>矢印</kbd>キーと <kbd>Ctrl</kbd> + <kbd>Home</kbd>/<kbd>End</kbd> を使用してキーボードで複数セルを選択します。マルチセル選択範囲は、フォーカスされたセルに基づいて作成されます。
+- <kbd>Shift</kbd> キーを押しながら <kbd>矢印</kbd> キーを使用してキーボードで複数セルを選択します。マルチセル選択範囲は、フォーカスされたセルに基づいて作成されます。
+- <kbd>Ctrl</kbd> キーを押しながら <kbd>Ctrl</kbd> + <kbd>矢印</kbd> キーと <kbd>Ctrl</kbd> + <kbd>Home</kbd>/<kbd>End</kbd> を使用してキーボードで複数セルを選択します。マルチセル選択範囲は、フォーカスされたセルに基づいて作成されます。
 - <kbd>Ctrl</kbd> キーを押しながら**左マウスキー**でクリックすると、選択したセルコレクションに単一のセル範囲が追加されます。
 - マウスでクリックしてドラッグすることで、連続した複数セルの選択が可能です。
 
@@ -126,6 +126,7 @@ this.grid.selectRange(range);
 `GetSelectedData` は、選択したデータの配列を選択内容に応じた形式で返します。例:
 
 - 3 つの異なる単一セルが選択されている場合:
+
 ```typescript
 expectedData = [
     { CompanyName: 'Infragistics' },
@@ -135,6 +136,7 @@ expectedData = [
 ```
 
 - 1 列から 3 つのセルが選択されている場合:
+
 ```typescript
 expectedData = [
     { Address: 'Obere Str. 57'},
@@ -152,6 +154,7 @@ expectedData = [
 ```
 
 - 2 行 3 列から 3 つのセルをマウスドラッグで選択した場合:
+
 ```typescript
 expectedData = [
     { ContactTitle: 'Sales Agent', Address: 'Cerrito 333', City: 'Buenos Aires'},
@@ -160,6 +163,7 @@ expectedData = [
 ```
 
 - 2 つの異なる範囲が選択されている場合:
+
 ```typescript
 expectedData = [
     { ContactName: 'Martín Sommer', ContactTitle: 'Owner'},
@@ -170,6 +174,7 @@ expectedData = [
 ```
 
 - 2 つの重複範囲が選択されている場合、形式は次のようになります。
+
 ```typescript
 expectedData = [
     { ContactName: 'Diego Roel', ContactTitle: 'Accounting Manager', Address: 'C/ Moralzarzal, 86'},
@@ -280,8 +285,8 @@ $custom-grid-theme: grid-theme(
 ```
 
  > [!Note]
- >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
- > アプリケーション内に存在する可能性のある他のグリッドに影響を与えないように、スタイルを `:host `セレクターの下で範囲指定します。
+ >コンポーネントが [Emulated ViewEncapsulation](../themes/styles.md#表示のカプセル化) を使用している場合、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
+ > アプリケーション内に存在する可能性のある他のグリッドに影響を与えないように、スタイルを `:host` セレクターの下で範囲指定します。
 
  ```scss
     :host {
