@@ -146,13 +146,9 @@ public webGridExportEventFreezeHeaders(args: any): void {
     </IgbGridToolbar>
  </{ComponentSelector}>
 
-@code {
-
-  public void WebGridExportEventMultiColumnHeaders(IgbExporterEventEventArgs args)
-  {
-      args.Detail.Options.FreezeHeaders = true;
-  }
-}
+igRegisterScript("WebGridExportEventMultiColumnHeaders", (ev) => {
+    ev.detail.options.ignoreMultiColumnHeaders = false;
+}, false);
 ```
 
 <!-- ComponentStart: TreeGrid -->
@@ -167,13 +163,9 @@ public webGridExportEventFreezeHeaders(args: any): void {
     </IgbGridToolbar>
  </{ComponentSelector}>
 
-@code {
-
-  public void WebGridExportEventMultiColumnHeaders(IgbExporterEventEventArgs args)
-  {
-      args.Detail.Options.FreezeHeaders = true;
-  }
-}
+igRegisterScript("WebGridExportEventMultiColumnHeaders", (ev) => {
+    ev.detail.options.ignoreMultiColumnHeaders = false;
+}, false);
 ```
 <!-- ComponentEnd: TreeGrid -->
 
