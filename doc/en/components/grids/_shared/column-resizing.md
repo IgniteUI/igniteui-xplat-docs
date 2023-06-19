@@ -424,7 +424,7 @@ In case you would like to change some of the colors, you need to set an `ID` for
 
 <!-- ComponentStart: Grid -->
 
-```ts
+```html
 <igc-grid id="grid"></igc-grid>
 ```
 
@@ -436,7 +436,7 @@ In case you would like to change some of the colors, you need to set an `ID` for
 
 <!-- ComponentStart: TreeGrid -->
 
-```ts
+```html
 <igc-tree-grid id="treeGrid"></igc-tree-grid>
 ```
 
@@ -448,7 +448,7 @@ In case you would like to change some of the colors, you need to set an `ID` for
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-```ts
+```html
 <igc-hierarchical-grid id="hierarchicalGrid"></igc-hierarchical-grid>
 ```
 
