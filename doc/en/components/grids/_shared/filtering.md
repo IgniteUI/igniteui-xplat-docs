@@ -516,14 +516,10 @@ export class BooleanFilteringOperand extends IgcBooleanFilteringOperand {
 ```
 ```ts
 constructor() {
-    var productName = this.productName = document.getElementById('ProductName') as IgcColumnComponent;
-    var discontinued = this.discontinued = document.getElementById('Discontinued') as IgcColumnComponent;
-
-    this._bind = () => {
-        productName.filters = this.caseSensitiveFilteringOperand;
-        discontinued.filters = this.booleanFilteringOperand;
-    }
-    this._bind();
+    var productName = document.getElementById('ProductName') as IgcColumnComponent;
+    var discontinued = document.getElementById('Discontinued') as IgcColumnComponent;
+    productName.filters = this.caseSensitiveFilteringOperand;
+    discontinued.filters = this.booleanFilteringOperand;
 }
 ```
 <!-- end: WebComponents -->
@@ -588,6 +584,9 @@ You can add a template marked with `FilterCellTemplate` in order to retemplate t
 
 <!-- end: Angular -->
 
+
+<!-- Angular -->
+
 <!-- ComponentStart: TreeGrid -->
 
 ## Matching Records Only Filtering Strategy
@@ -607,6 +606,7 @@ public matchingRecordsOnlyStrategy = new TreeGridMatchingRecordsOnlyFilteringStr
 
 <!-- ComponentEnd: TreeGrid -->
 
+<!-- end: Angular -->
 
 <!-- WebComponents, Blazor -->
 
@@ -616,11 +616,11 @@ In addition to the predefined themes, the grid could be further customized by se
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
 ```ts
-<igc-grid class="grid">
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid Class="grid"></IgbGrid>
+<{ComponentSelector} Class="grid"></ComponentSelector>
 ```
 
 Then set the related CSS properties for that class:
