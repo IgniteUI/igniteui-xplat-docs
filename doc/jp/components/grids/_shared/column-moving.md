@@ -297,7 +297,7 @@ $dark-grid-column-moving-theme: grid-theme(
 
 <!-- end: Angular -->
 
-<!-- WebComponents -->
+<!-- WebComponents, Blazor -->
 ## スタイル設定
 
 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
@@ -325,7 +325,7 @@ $dark-grid-column-moving-theme: grid-theme(
 
 `sample="/{ComponentSample}/column-moving-styles", height="650", alt="{Platform} {ComponentTitle} Grid 移動のスタイル設定の例"`
 
-<!-- end: WebComponents -->
+<!-- end: WebComponents, Blazor -->
 
 ## API リファレンス
 

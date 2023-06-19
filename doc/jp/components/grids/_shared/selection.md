@@ -14,7 +14,11 @@ _language: ja
 
 ## {Platform} {ComponentTitle} 選択の例
 
-以下のサンプルは、`{ComponentName}` の 3 種類の**セル選択**動作を示しています。以下のボタンを使用して、利用可能な各選択モードを有効にします。スナックバーのメッセージ ボックスを介して、各ボタンの操作に関する簡単な説明が提供されます。
+以下のサンプルは、`{ComponentName}` の 3 種類の**セル選択**動作を示しています。以下のボタンを使用して、利用可能な各選択モードを有効にします。
+
+<!-- Angular -->
+スナックバーのメッセージ ボックスを介して、各ボタンの操作に関する簡単な説明が提供されます。
+<!-- end: Angular -->
 
 `sample="/{ComponentSample}/cell-selection-mode", height="650", alt="{Platform} {ComponentTitle} 選択の例"`
 
@@ -69,7 +73,6 @@ _language: ja
 <!-- ComponentEnd:  Grid -->
 
 <!-- ComponentStart: Grid -->
-<!-- Angular -->
 
 ## {Platform} {ComponentTitle} コンテキスト メニュー
 
@@ -78,6 +81,8 @@ _language: ja
 **複数セルの選択**がある場合、選択したセルが複数セルの選択領域にあるかどうかをチェックするロジックを配置します。その場合、選択したセルの値も出力します。
 
 基本的に、メイン関数は次のようになります。
+
+<!-- Angular -->
 
 ```typescript
 public rightClick(eventArgs: any) {
@@ -110,8 +115,58 @@ public rightClick(eventArgs: any) {
 }
 ```
 
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
+```ts
+    public rightClick(event: any) {
+        const eventArgs = event.detail;
+        eventArgs.event.preventDefault();
+        this.multiCellArgs = {};
+        if (this.multiCellSelection) {
+          const node = eventArgs.cell.selectionNode;
+          const isCellWithinRange = this.grid.getSelectedRanges().some((range) => {
+            if (
+              node.column >= range.columnStart &&
+              node.column <= range.columnEnd &&
+              node.row >= range.rowStart &&
+              node.row <= range.rowEnd
+            ) {
+              return true;
+            }
+            return false;
+          });
+          if (isCellWithinRange) {
+            this.multiCellArgs = { data: this.multiCellSelection.data };
+          }
+        }
+        this.contextmenuX = eventArgs.event.clientX;
+        this.contextmenuY = eventArgs.event.clientY;
+        this.clickedCell = eventArgs.cell;
+        this.toggleContextMenu();
+      }
+```
+
+
+
+
+<!-- end: WebComponents -->
+
 ```razor
-TO DO
+    public void RightClick(MouseEventArgs e)
+    {
+        this.MenuX = e.ClientX + "px";
+        this.MenuY = e.ClientY + "px";
+    }
+
+
+    public void onMenuShow(IgbGridCellEventArgs e)
+    {
+        IgbGridCellEventArgsDetail detail = e.Detail;
+        this.ShowMenu = true;
+        this.ClickedCell = detail.Cell;
+    }
 ```
 
 以下はコンテキストメニューの機能です。
@@ -119,6 +174,8 @@ TO DO
 - 選択したセルの *value* のコピー。
 - 選択したセルの *dataRow* のコピー。
 - 選択したセルが**複数セルの選択範囲**内にある場合、選択したすべてのデータをコピーします。
+
+<!-- Angular -->
 
 ```typescript
 //contextmenu.component.ts
@@ -142,13 +199,82 @@ public copySelectedCells(event) {
 }
 ```
 
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
+```ts
+    public copySelectedRowData() {
+        const selectedData = this.grid.getRowData(this.clickedCell.id.rowID);
+        this.copyData(selectedData);
+        const selectedDataArea = document.getElementById('selectedArea');
+        selectedDataArea.innerText = JSON.stringify(selectedData);
+        this.toggleContextMenu();
+    }
+
+    public copySelectedCellData() {
+        const selectedData = this.clickedCell.value;
+        this.copyData(selectedData);
+        const selectedDataArea = document.getElementById('selectedArea');
+        selectedDataArea.innerText = JSON.stringify(selectedData);
+        this.toggleContextMenu();
+    }
+
+
+    public copySelectedData() {
+        const selectedData = this.grid.getSelectedData();
+        this.copyData(selectedData);
+        const selectedDataArea = document.getElementById('selectedArea');
+        selectedDataArea.innerText = JSON.stringify(selectedData);
+        
+        this.toggleContextMenu();
+    }
+
+    private copyData(data: any[]) {
+        const tempElement = document.createElement('input');
+        document.body.appendChild(tempElement);
+        tempElement.setAttribute('id', 'temp_id');
+        (document.getElementById('temp_id') as HTMLInputElement).value = JSON.stringify(data);
+        tempElement.select();
+        document.execCommand('copy');
+        document.body.removeChild(tempElement);
+    }
+```
+
+<!-- end: WebComponents -->
+
+
 ```razor
-TO DO
+    public void CopyCellData()
+    {
+        this.ShowMenu = false;
+        this.SelectedData = this.ClickedCell.Value.ToString();
+        StateHasChanged();
+    }
+
+
+    public async void CopyRowData()
+    {
+        this.ShowMenu = false;
+        NwindDataItem rowData = this.NwindData.ElementAt(this.ClickedCell.Id.RowIndex);
+        this.SelectedData = JsonConvert.SerializeObject(rowData);
+        StateHasChanged();
+}
+
+    public async void CopyCellsData()
+    {
+        this.ShowMenu = false;
+        var selectedData = await this.grid.GetSelectedDataAsync(true, false);
+        this.SelectedData = JsonConvert.SerializeObject(selectedData);
+        StateHasChanged();
+    }
 ```
 
 `{ComponentName}` はコピーされたデータを取得し、コンテナ要素に貼り付けます。
 
 グリッドとコンテキスト メニューを組み合わせるために使用するテンプレート:
+
+<!-- Angular -->
 ```html
 <div class="wrapper">
     <div class="grid__wrapper" (window:click)="disableContextMenu()">
@@ -169,22 +295,112 @@ TO DO
     </div>
 </div>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+    <div class="container sample">
+      <div class="wrapper">
+        <igc-grid auto-generate="false" width="50%" height="100%" name="grid" id="grid">
+          <igc-column field="ProductID" header="Product ID">
+          </igc-column>
+          <igc-column field="ProductName" header="Product Name">
+          </igc-column>
+          <igc-column field="UnitsInStock" header="Units In Stock" data-type="number">
+          </igc-column>
+          <igc-column field="UnitPrice" header="Units Price" data-type="number">
+          </igc-column>
+          <igc-column field="Discontinued" data-type="boolean">
+          </igc-column>
+          <igc-column field="OrderDate" header="Order Date" data-type="date">
+          </igc-column>
+        </igc-grid>
+        <div id="selectedArea" class="selected-data-area">
+        </div>
+      </div>
+    </div>
+    <div id="menu" style="display: none;" class="contextmenu">
+      <span id="copySingleCell" class="item">
+        <igc-icon name="content_copy"></igc-icon>Copy Cell Data
+      </span>
+      <span id="copyRow" class="item">
+        <igc-icon name="content_copy"></igc-icon>Copy Row Data
+      </span>
+      <span id="copyMultiCells" class="item">
+        <igc-icon name="content_copy"></igc-icon>Copy Cells Data
+      </span>
+    </div>
+  </div>
+```
+<!-- end: WebComponents -->
 
 ```razor
-TO DO
+<div class="container vertical">
+    <div class="wrapper" oncontextmenu="event.preventDefault()">
+        <IgbGrid AutoGenerate="false"
+                 CellSelection="GridSelectionMode.Multiple"
+                 ContextMenu="onMenuShow"
+                 @oncontextmenu="RightClick"
+                 Name="grid"
+                 @ref="grid"
+                 Data="NwindData">
+            <IgbColumn Field="ProductID"
+                       Header="Product ID">
+            </IgbColumn>
+
+            <IgbColumn Field="ProductName"
+                       Header="Product Name">
+            </IgbColumn>
+
+            <IgbColumn Field="UnitsInStock"
+                       Header="Units In Stock"
+                       DataType="GridColumnDataType.Number">
+            </IgbColumn>
+
+            <IgbColumn Field="UnitPrice"
+                       Header="Units Price"
+                       DataType="GridColumnDataType.Number">
+            </IgbColumn>
+
+            <IgbColumn Field="Discontinued"
+                       DataType="GridColumnDataType.Boolean">
+            </IgbColumn>
+
+            <IgbColumn Field="OrderDate"
+                       Header="Order Date"
+                       DataType="GridColumnDataType.Date">
+            </IgbColumn>
+
+        </IgbGrid>
+        <div class="selected-data-area">
+            @SelectedData
+        </div>
+        </div>
+        @if (ShowMenu)
+        {
+            <div id="menu" class="contextmenu" style="left: @MenuX; top: @MenuY">
+                <span id="copySingleCell" class="item" @onclick="CopyCellData">
+                    <IgbIcon @ref=icon IconName="content_copy" Collection="material"></IgbIcon>Copy Cell Data
+                </span>
+            <span id="copyRow" class="item" @onclick="CopyRowData">
+                    <IgbIcon IconName="content_copy" Collection="material"></IgbIcon>Copy Row Data
+                </span>
+            <span id="copyMultiCells" class="item" @onclick="CopyCellsData">
+                    <IgbIcon IconName="content_copy" Collection="material"></IgbIcon>Copy Cells Data
+                </span>
+            </div>
+        }
+</div>
 ```
 
  複数のセルを選択し、マウスの右ボタンを押します。コンテキストメニューが表示され、**セル データのコピー** を選択すると、選択したデータが右側の空のボックスに表示されます。
 
  結果:
 
-<!-- NOTE this sample is differed -->
-
-`sample="/{ComponentSample}/custom-context-menu", height="600", alt="{Platform} {ComponentTitle} custom context menu"`
+`sample="/{ComponentSample}/custom-context-menu", height="600", alt="{Platform} {ComponentTitle} カスタム コンテキスト メニュー"`
 
 
 <!-- ComponentEnd: Grid -->
-<!-- end: Angular -->
 
 ## 既知の問題と制限
 
@@ -195,6 +411,7 @@ TO DO
 ```typescript
 import 'core-js/es7/array';
 ```
+<!-- end: Angular -->
 
 グリッドに `PrimaryKey` が設定されておらず、リモート データ シナリオが有効になっている場合 (ページング、ソート、フィルタリング、スクロール時に、グリッドに表示されるデータを取得するためのリモート サーバーへのリクエストがトリガーされる場合）、データ要求が完了すると、行は次の状態を失います:
 
@@ -203,7 +420,7 @@ import 'core-js/es7/array';
 - 行の編集
 - 行のピン固定
 
-<!-- end: Angular -->
+
 
 ## API リファレンス
 
