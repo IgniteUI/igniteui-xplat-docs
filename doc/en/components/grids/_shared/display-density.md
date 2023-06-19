@@ -35,7 +35,7 @@ As you can see in the demo above, the `{ComponentName}` provides three density o
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid" display-density="Cosy" >
+<{ComponentSelector} id="grid" display-density="cosy" >
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
@@ -751,7 +751,7 @@ We can now extend our sample and add `RowHeight` property to the `{ComponentName
 
  <!-- WebComponents -->
  ```html
- <{ComponentSelector} id="grid" display-density="Cosy" row-height="80px" width="100%"
+ <{ComponentSelector} id="grid" display-density="cosy" row-height="80px" width="100%"
  height="550px" allow-filtering="true">
  </{ComponentSelector}>
  ```
