@@ -55,7 +55,7 @@ _language: ja
  - `boolean` データ型ではデフォルトのテンプレートは `Checkbox` を使用します。
  - `currency` データ型の場合、デフォルトのテンプレートは、アプリケーションまたはグリッドのロケール設定に基づいたプレフィックス/サフィックス構成の `InputGroup` を使用します。
  - `percent` パーセントデータ型の場合、デフォルトのテンプレートは、編集された値のプレビューをパーセントで表示するサフィックス要素を持つ `InputGroup` を使用します。
-  <!-- ComponentStart:  Grid -->
+ <!-- ComponentStart:  Grid -->
  - カスタム テンプレートについては、[セル編集トピック](cell-editing.md#セル編集テンプレート)を参照してください。
  <!-- ComponentEnd:  Grid -->
 
