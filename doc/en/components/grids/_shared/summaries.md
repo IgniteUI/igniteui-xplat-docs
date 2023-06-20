@@ -287,7 +287,7 @@ And now let's add our custom summary to the column `UnitsInStock`. We will achie
     </igc-column>
     <igc-column field="ProductName" width="200px" sortable="true" has-summary="true">
     </igc-column>
-    <igc-column id="unitsInStock" field="UnitsInStock" width="200px" dataType="number" has-summary="true" sortable="true">
+    <igc-column id="unitsInStock" field="UnitsInStock" width="200px" data-type="number" has-summary="true" sortable="true">
     </igc-column>
     <igc-column field="ReorderLevel" width="200px" editable="true" data-type="number" has-summary="true">
     </igc-column>
