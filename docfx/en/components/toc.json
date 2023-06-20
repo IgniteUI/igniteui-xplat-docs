@@ -662,13 +662,13 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Column Pinning",
         "href": "grids/tree-grid/column-pinning.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Column Resizing",
         "href": "grids/tree-grid/column-resizing.md",
         "status": "NEW"

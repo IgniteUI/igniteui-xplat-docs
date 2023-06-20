@@ -659,13 +659,13 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "列のピン固定",
         "href": "grids/tree-grid/column-pinning.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "列のサイズ変更",
         "href": "grids/tree-grid/column-resizing.md",
         "status": "NEW"
