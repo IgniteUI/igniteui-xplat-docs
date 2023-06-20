@@ -226,7 +226,7 @@ Users can provide anything from simple text to more involved templates.
 ### Actions
 
 
-The `GridToolbarTitle` is where users can place actions/interactions in relation to the parent grid.
+The `GridToolbarActions` is where users can place actions/interactions in relation to the parent grid.
 As with the title portion of the toolbar, users can provide anything inside that template part, including the default
 toolbar interaction components.
 
@@ -240,6 +240,14 @@ toolbar interaction components.
 </igx-grid-toolbar>
 ```
 
+```razor
+<IgbGridToolbar>
+    <IgbGridToolbarActions>
+        <!--...-->
+    </IgbGridToolbarActions>
+</IgbGridToolbar>
+```
+
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
@@ -247,6 +255,7 @@ toolbar interaction components.
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
+<!-- Angular -->
 
 Each action now exposes a way to change the overlay settings of the actions dialog by using the `OverlaySettings` input. For example:
 
@@ -268,12 +277,8 @@ Each action now exposes a way to change the overlay settings of the actions dial
 constructor() {
     var pinTool = this.pinTool = document.getElementById('pinTool') as IgcGridToolbarPinningComponent;
     var hideTool = this.hideTool = document.getElementById('hideTool') as IgcGridToolbarHidingComponent;
-
-    this._bind = () => {
-        pinTool.overlaySettings = this.overlaySettingsScaleCenter;
-        hideTool.overlaySettings = this.overlaySettingsAuto;
-    }
-    this._bind();
+    pinTool.overlaySettings = this.overlaySettingsScaleCenter;
+    hideTool.overlaySettings = this.overlaySettingsAuto;
 }
 ```
 
@@ -304,6 +309,8 @@ constructor() {
 
 The default overlaySettings are using *ConnectedPositionStrategy* with *Absolute* scroll strategy, *modal* set to false, with enabled *close on escape* and *close on outside click* interactions.
 
+<!-- end: Angular -->
+
 ### Column Pinning
 
 The `GridToolbarPinning` component provides the default UI for interacting with column pinning in the grid.
@@ -321,6 +328,14 @@ The component is setup to work out of the box with the parent grid containing th
         </igx-grid-toolbar-pinning>
     </igx-grid-toolbar-actions>
 </igx-grid-toolbar>
+```
+
+```razor
+<IgbGridToolbar>
+    <IgbGridToolbarActions>
+        <IgbGridToolbarPinning Title="Grid pinned columns" Prompt="Filter column collection" ColumnListHeight="400px"></IgbGridToolbarPinning>
+    </IgbGridToolbarActions>
+</IgbGridToolbar>
 ```
 
 ```html
@@ -354,6 +369,14 @@ title, the placeholder for the component input and the height of the dropdown it
 </igx-grid-toolbar>
 ```
 
+```razor
+<IgbGridToolbar>
+    <IgbGridToolbarActions>
+        <IgbGridToolbarHiding Title="Grid column hiding" Prompt="Filter column collection" ColumnListHeight="400px"></IgbGridToolbarHiding>
+    </IgbGridToolbarActions>
+</IgbGridToolbar>
+```
+
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
@@ -378,6 +401,14 @@ Toolbar Advanced Filtering component provides the default UI for the Advanced Fi
 </igx-grid-toolbar>
 ```
 
+```razor
+<IgbGridToolbar>
+    <IgbGridToolbarActions>
+        <IgbGridToolbarAdvancedFiltering></IgbGridToolbarAdvancedFiltering>
+    </IgbGridToolbarActions>
+</IgbGridToolbar>
+```
+
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
@@ -398,6 +429,8 @@ Toolbar Advanced Filtering component provides the default UI for the Advanced Fi
 
 As with the rest of the toolbar actions, exporting is provided through a `GridToolbarExporter` out of the box.
 
+<!-- Angular -->
+
 The exporting component is using the respective service for the target data format `ExcelExporterService` and `CSVExporterService`. That means if the respective service is not provided through the dependency injection chain, the component won't be able to export anything.
 
 If you need a refresher on the DI in {Platform}, check the [official guide](https://{Platform}.io/guide/dependency-injection). Here is a sample snippet showing how to enable all export services for your application.
@@ -416,6 +449,8 @@ export class AppModule { ... }
 
 > [!Note]
 > In v12.2.1 and later, the exporter services are provided in root, which means you no longer need to declare them in the AppModule providers.
+
+<!-- end: Angular -->
 
 The toolbar exporter component exposes several input properties for customizing both the UI and the exporting experience.
 
@@ -440,25 +475,22 @@ Here is a snippet showing some of the options which can be customized through th
 </igx-grid-toolbar>
 ```
 
+```razor
+<IgbGridToolbar>
+    <IgbGridToolbarActions>
+        <IgbGridToolbarExporter ExportCSV="true" ExportExcel="true" Filename="exported_data"></IgbGridToolbarExporter>
+    </IgbGridToolbarActions>
+</IgbGridToolbar>
+```
+
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
-        <igc-grid-toolbar-exporter
-            <!-- If active, enables the csv export entry in the dropdown UI -->
-            export-csv="true"
-            <!-- If active, enables the excel export entry in the dropdown UI -->
-            export-excel="true"
-            <!-- The name of the generated export file without the file extension -->
-            filename="exported_data">
-            <!-- Custom text for the exporter button -->
-            excel-text="Custom text for the excel export entry"
-            csv-text="Custom text for the CSV export entry"
+        <igc-grid-toolbar-exporter export-csv="true" export-excel="true" filename="exported_data">
         </igc-grid-toolbar-exporter>
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
-
-@@if (igxName !== 'IgxHierarchicalGrid') {
 
 In addition to changing the exported filename, the user can further configure the exporter options by waiting for the `ToolbarExporting` event and customizing the options entry in the event properties.
 
@@ -482,15 +514,13 @@ The following code snippet demonstrates subscribing to the toolbar exporting eve
 ```ts
 constructor() {
     var toolbarExporter = this.toolbarExporter = document.getElementById('toolbarExporter') as IgcGridToolbarExporterComponent;
-
-    this._bind = () => {
-        toolbarExporter.toolbarExporting = this.configureExport;
-    }
-    this._bind();
+    toolbarExporter.addEventListener("toolbarExporting", this.configureExport);
 }
 ```
 <!-- end: WebComponents -->
 
+
+<!-- Angular -->
 ```typescript
 configureExport(args: IGridToolbarExportEventArgs) {
     const options: IgxExporterOptionsBase = args.options;
@@ -517,35 +547,35 @@ configureExport(args: IGridToolbarExportEventArgs) {
     });
 }
 ```
+<!-- end: Angular -->
 
 ```typescript
-configureExport(args: IGridToolbarExportEventArgs) {
+public configureExport(evt: CustomEvent<IgcGridToolbarExportEventArgs>) {
+    const args = evt.detail;
     const options: IgcExporterOptionsBase = args.options;
 
     options.fileName = `Report_${new Date().toDateString()}`;
-
-    if (options instanceof IgcExcelExporterOptions) {
-        options.columnWidth = 10;
-    } else {
-        options.fileType = CsvFileTypes.TSV;
-        options.valueDelimiter = '\t';
-    }
-
-    args.exporter.columnExporting.subscribe((columnArgs: IColumnExportingEventArgs) => {
-        if (igcName === 'IgcGrid') {
-        // Don't export image fields
-        columnArgs.cancel = columnArgs.header === 'Athlete' ||
-                            columnArgs.header === 'Country';
-        }
-        if (igcName === 'IgcTreeGrid') {
-        // Don't export image field
-        columnArgs.cancel = columnArgs.header === 'Name';
-        }
+    (args.exporter as any).columnExporting.subscribe((columnArgs: any) => {
+            columnArgs.cancel = columnArgs.header === 'Athlete' || columnArgs.header === 'Country';
     });
 }
 ```
-}
 
+```razor
+<IgbGridToolbarExporter ExportStartedScript="WebGridToolbarExporting"></IgbGridToolbarExporter>
+```
+
+```razor
+// In Javascript
+igRegisterScript("WebGridToolbarExporting", (evt) => {
+        const args = evt.detail;
+        const options = args.options;
+        options.fileName = `Report_${new Date().toDateString()}`;
+        args.exporter.columnExporting.subscribe((columnArgs) => {
+                columnArgs.cancel = columnArgs.header === 'Athlete' || columnArgs.header === 'Country';
+        });
+}, false);
+```
 The following sample demonstrates how to customize the exported files:
 
 
@@ -553,7 +583,7 @@ The following sample demonstrates how to customize the exported files:
 
 
 
-<!-- Angular -->
+<!-- Angular, WebComponents -->
 
 ## Exporting Indicator
 
@@ -568,7 +598,6 @@ The sample belows uses has significant amount of data, in order to increase the 
 `sample="/{ComponentSample}/data-exporting-indicator", height="370", alt="{Platform} {ComponentTitle} data exporting indicator"`
 
 
-<!-- end: Angular -->
 
 ## Custom Content
 
@@ -605,6 +634,10 @@ Here is a sample snippet:
 <{ComponentSelector} id="grid">
     <igc-grid-toolbar>
         <igc-grid-toolbar-title>title</igx-grid-toolbar-title>
+        <!--
+            Everything between the toolbar tags except the default toolbar components/directives
+            will be projected as custom content.
+         -->
         <igc-grid-toolbar-actions>
         </igc-grid-toolbar-actions>
     </igc-grid-toolbar>
@@ -616,6 +649,38 @@ The following sample demonstrates how to add an additional button to the toolbar
 
 `sample="/{ComponentSample}/toolbar-sample-4", height="420", alt="{Platform} {ComponentTitle} toolbar sample 4"`
 
+<!-- end: Angular, WebComponents -->
+
+<!-- WebComponents, Blazor -->
+
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```ts
+<igc-grid class="grid">
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties for that class:
+
+```css
+.grid {
+    --igx-grid-toolbar-background-color: #2a2b2f;
+    --igx-grid-toolbar-title-text-color: #ffcd0f;
+    --igx-grid-toolbar-dropdown-background: #2a2b2f;
+}
+```
+
+### Demo
+
+`sample="/{ComponentSample}/toolbar-style", height="540", alt="{Platform} {ComponentTitle} Toolbar Styling Example"`
+
+<!-- end: WebComponents, Blazor -->
 
 <!-- Angular -->
 
@@ -740,12 +805,12 @@ The last step is to **include** the newly created themes.
 
 The Grid Toolbar service has a few more APIs to explore, which are listed below.
 
-* `GridToolbarAdvancedFilteringComponent`
+* `GridToolbarAdvancedFiltering`
 * `GridToolbar`
 * `GridToolbarExporter`
 * `GridToolbarHiding`
 * `GridToolbarPinning`
-* `GridToolbarTitleDirective`
+* `GridToolbarTitle`
 
 * `{ComponentName}` Events:
 * `ToolbarExporting`
@@ -759,8 +824,6 @@ Styles:
 <!-- end: Angular -->
 
 ## Additional Resources
-
-<div class="divider--half"></div>
 
 Our community is active and always welcoming to new ideas.
 
