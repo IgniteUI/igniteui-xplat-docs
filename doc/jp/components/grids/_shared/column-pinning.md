@@ -277,19 +277,19 @@ constructor() {
     var Fax = this.Fax = document.getElementById('Fax') as IgcColumnComponent;
     var PostalCode = this.PostalCode = document.getElementById('PostalCode') as IgcColumnComponent;
     var Phone = this.Phone = document.getElementById('Phone') as IgcColumnComponent;
-        grid.data = this.data;
-        Name.headerTemplate = this.pinHeaderTemplate;
-        Title.headerTemplate = this.pinHeaderTemplate;
-        ID.headerTemplate = this.pinHeaderTemplate;
-        HireDate.headerTemplate = this.pinHeaderTemplate;
-        Age.headerTemplate = this.pinHeaderTemplate;
-        Address.headerTemplate = this.pinHeaderTemplate;
-        City.headerTemplate = this.pinHeaderTemplate;
-        Country.headerTemplate = this.pinHeaderTemplate;
-        Fax.headerTemplate = this.pinHeaderTemplate;
-        PostalCode.headerTemplate = this.pinHeaderTemplate;
-        Phone.headerTemplate = this.pinHeaderTemplate;
-    }
+    grid.data = this.data;
+    Name.headerTemplate = this.pinHeaderTemplate;
+    Title.headerTemplate = this.pinHeaderTemplate;
+    ID.headerTemplate = this.pinHeaderTemplate;
+    HireDate.headerTemplate = this.pinHeaderTemplate;
+    Age.headerTemplate = this.pinHeaderTemplate;
+    Address.headerTemplate = this.pinHeaderTemplate;
+    City.headerTemplate = this.pinHeaderTemplate;
+    Country.headerTemplate = this.pinHeaderTemplate;
+    Fax.headerTemplate = this.pinHeaderTemplate;
+    PostalCode.headerTemplate = this.pinHeaderTemplate;
+    Phone.headerTemplate = this.pinHeaderTemplate;
+}
 
 
 public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
@@ -389,19 +389,19 @@ constructor() {
     var Fax = this.Fax = document.getElementById('Fax') as IgcColumnComponent;
     var PostalCode = this.PostalCode = document.getElementById('PostalCode') as IgcColumnComponent;
     var Phone = this.Phone = document.getElementById('Phone') as IgcColumnComponent;
-        treeGrid.data = this.data;
-        Name.headerTemplate = this.pinHeaderTemplate;
-        Title.headerTemplate = this.pinHeaderTemplate;
-        ID.headerTemplate = this.pinHeaderTemplate;
-        HireDate.headerTemplate = this.pinHeaderTemplate;
-        Age.headerTemplate = this.pinHeaderTemplate;
-        Address.headerTemplate = this.pinHeaderTemplate;
-        City.headerTemplate = this.pinHeaderTemplate;
-        Country.headerTemplate = this.pinHeaderTemplate;
-        Fax.headerTemplate = this.pinHeaderTemplate;
-        PostalCode.headerTemplate = this.pinHeaderTemplate;
-        Phone.headerTemplate = this.pinHeaderTemplate;
-    }
+    treeGrid.data = this.data;
+    Name.headerTemplate = this.pinHeaderTemplate;
+    Title.headerTemplate = this.pinHeaderTemplate;
+    ID.headerTemplate = this.pinHeaderTemplate;
+    HireDate.headerTemplate = this.pinHeaderTemplate;
+    Age.headerTemplate = this.pinHeaderTemplate;
+    Address.headerTemplate = this.pinHeaderTemplate;
+    City.headerTemplate = this.pinHeaderTemplate;
+    Country.headerTemplate = this.pinHeaderTemplate;
+    Fax.headerTemplate = this.pinHeaderTemplate;
+    PostalCode.headerTemplate = this.pinHeaderTemplate;
+    Phone.headerTemplate = this.pinHeaderTemplate;
+}
 
 public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
@@ -472,15 +472,15 @@ constructor() {
     var ShippedDate = this.ShippedDate = document.getElementById('ShippedDate') as IgcColumnComponent;
     var ShipVia = this.ShipVia = document.getElementById('ShipVia') as IgcColumnComponent;
 
-        hGrid.data = this.data;
-        CompanyName.headerTemplate = this.pinHeaderTemplate;
-        ContactName.headerTemplate = this.pinHeaderTemplate;
-        ContactTitle.headerTemplate = this.pinHeaderTemplate;
-        OrderDate.headerTemplate = this.pinHeaderTemplate;
-        RequiredDate.headerTemplate = this.pinHeaderTemplate;
-        ShippedDate.headerTemplate = this.pinHeaderTemplate;
-        ShipVia.headerTemplate = this.pinHeaderTemplate;
-    }
+    hGrid.data = this.data;
+    CompanyName.headerTemplate = this.pinHeaderTemplate;
+    ContactName.headerTemplate = this.pinHeaderTemplate;
+    ContactTitle.headerTemplate = this.pinHeaderTemplate;
+    OrderDate.headerTemplate = this.pinHeaderTemplate;
+    RequiredDate.headerTemplate = this.pinHeaderTemplate;
+    ShippedDate.headerTemplate = this.pinHeaderTemplate;
+    ShipVia.headerTemplate = this.pinHeaderTemplate;
+}
 
 public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
@@ -544,7 +544,7 @@ $custom-theme: grid-theme(
 
 ### カスタム カラー パレットの定義
 上記で説明したアプローチでは、色の値がハード コーディングされていました。または、[igx-palette]({environment:sassApiUrl}/index.html#function-igx-palette) および [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) 関数を使用して、柔軟性を高めることができます。
-`Igx-palette` は指定した一次色と二次色に基づいてカラーパレットを生成します。
+`igx-palette` は指定した一次色と二次色に基づいてカラーパレットを生成します。
 
  ```scss
 $primary-color: #292826;
@@ -571,7 +571,7 @@ $custom-theme: grid-theme(
 `$custom-theme` には前のセクションと同じプロパティが含まれていますが、今回は色がハードコードされていません。代わりに、カスタム `igx-palette` パレットが使用され、特定のカラーバリアントを使用して、プライマリ カラーとセカンダリ カラーから色が取得されました。
 
 ### カスタム スキーマの定義
-[**スキーマ**](../themes/sass/schemas.md) のすべての利点を備えた柔軟な構造を構築できます。**スキーマ** はテーマを作成させるための方法です。
+[**スキーマ**](../themes/sass/schemas.md)のすべての利点を備えた柔軟な構造を構築できます。**スキーマ**はテーマを作成させるための方法です。
 すべてのコンポーネントに提供される 2 つの事前定義されたスキーマのいずれかを拡張します。この場合、`$_light_grid` を使用します。
 ```scss
 $custom-grid-schema: extend($_light-grid,(

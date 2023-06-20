@@ -358,8 +358,8 @@ TO-DO H-GRID CODE SNIPPET
 ```ts
 constructor() {
     var general = this.general = document.getElementById('General') as IgcColumnComponent;
-        general.headerTemplate = this.generalHeaderTemplate;
-    }
+    general.headerTemplate = this.generalHeaderTemplate;
+}
 
 public generalHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
@@ -392,9 +392,9 @@ public generalHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 constructor() {
     var general = this.general = document.getElementById('General') as IgcColumnComponent;
     var addresss = this.address = document.getElementById('Address') as IgcColumnComponent;
-        general.headerTemplate = this.columnGroupHeaderTemplate;
-        addresss.headerTemplate = this.columnGroupHeaderTemplate;
-    }
+    general.headerTemplate = this.columnGroupHeaderTemplate;
+    addresss.headerTemplate = this.columnGroupHeaderTemplate;
+}
 
 public columnGroupHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
@@ -437,9 +437,9 @@ public columnGroupHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
     var columnGroup = this.columnGroup = document.getElementById('addressInfoGroup') as IgcColumnGroupComponent;
-        grid.data = this.customersData
-        columnGroup.headerTemplate = this.headerTemplate;
-    }
+    grid.data = this.customersData
+    columnGroup.headerTemplate = this.headerTemplate;
+}
 
 public headerTemplate = (ctx: IgcColumnTemplateContext) => {
     const column = (ctx as any).column;
