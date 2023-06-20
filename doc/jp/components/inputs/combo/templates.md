@@ -35,9 +35,9 @@ combo.itemTempate = itemTemplate;
 ```
 
 <!-- Blazor -->
-To template your items in a Blazor app, you need to define a template in a separate JavaScript file. Let's create a new file under the `wwwroot` directory called `templates.js`.
+Blazor アプリで項目をテンプレート化するには、別の JavaScript ファイルでテンプレートを定義する必要があります。`wwwroot` ディレクトリの下に `templates.js` という名前の新しいファイルを作成します。
 
-In this file we can declare a new item template like so:
+このファイルでは、次のように新しい項目テンプレートを宣言できます。
 
 ```js
 const html = window.igTemplating.html;
@@ -49,7 +49,7 @@ const itemTemplate = ({ item }) => {
 igRegisterScript("ComboItemTemplate", itemTemplate, false);
 ```
 
-Make sure to include the `templates.js` file in the `index.html` under `wwwroot`.
+`wwwroot` の下の `index.html` に `templates.js` ファイルを必ず含めてください。
 
 ```html
 <body>
@@ -58,7 +58,7 @@ Make sure to include the `templates.js` file in the `index.html` under `wwwroot`
 </body>
 ```
 
-Then in our application we can refer to the template we declared via the `ItemTemplateScript` property.
+次に、アプリケーションで `ItemTemplateScript` プロパティを介して宣言したテンプレートを参照できます。
 
 ```razor
 <IgbCombo ItemTemplateScript="ComboItemTemplate"></IgbCombo>
@@ -81,7 +81,7 @@ combo.groupHeaderTemplate = groupHeaderTemplate;
 ```
 
 <!-- Blazor -->
-First define the group header template:
+まず、グループ ヘッダー テンプレートを定義します。
 
 ```js
 const html = window.igTemplating.html;
@@ -93,7 +93,7 @@ const groupHeaderTemplate = ({ item }) => {
 igRegisterScript('ComboGroupHeaderTemplate', groupHeaderTemplate, false)
 ```
 
-Then in our application we can refer to the template we declared via the `GroupHeaderTemplateScript` property.
+次に、アプリケーションで `GroupHeaderTemplateScript` プロパティを介して宣言したテンプレートを参照できます。
 
 ```razor
 <IgbCombo GroupHeaderTemplateScript="ComboGroupHeaderTemplate"></IgbCombo>

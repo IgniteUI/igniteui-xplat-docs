@@ -184,7 +184,7 @@ export interface IGroupByExpandState {
 
 <!-- end: WebComponents -->
 
-As with `GroupingExpressions`, setting a list of `IGroupByExpandState` directly to the `GroupingExpansionState` will change the expansion accordingly. Additionally `Grid` exposes a method `toggleGroup` that toggles a group by the group record instance or via the `expanded` property of the row.
+`GroupingExpressions` で `IGroupByExpandState` のリストを直接 `GroupingExpansionState` に設定すると展開が変更されます。また、`Grid` は、グループ レコード インスタンスまたは行の `expanded` プロパティによってグループを切り替えるメソッド `toggleGroup` を公開します。
 
 ```typescript
    const groupRow = this.grid.getRowByIndex(0).groupRow;
