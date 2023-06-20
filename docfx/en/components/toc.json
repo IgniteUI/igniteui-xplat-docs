@@ -644,7 +644,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Cell Selection",
         "href": "grids/tree-grid/cell-selection.md",
         "status": "NEW"
