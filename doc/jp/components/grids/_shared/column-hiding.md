@@ -576,7 +576,6 @@ $custom-button: button-theme(
 <!-- Angular -->
 このトピックでは、`{ComponentName}` のツールバーの定義済みの列非表示 UI の使用方法や別のコンポーネントとして定義する方法について説明しました。その他の列順序から選択する機能を提供する UI を実装し、カスタム タイトルおよびフィルター プロンプト テキストを設定しました。[**IgxRadio**](../radio-button.md) ボタンなどその他の {ProductName} コンポーネントも使用しています。
 
-
 その他のコンポーネントおよびディレクティブ (またはそのいずれか) で使用した API:
 
 * `ColumnActionsComponent`

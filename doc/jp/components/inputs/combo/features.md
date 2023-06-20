@@ -32,7 +32,8 @@ defineComponents(IgcComboComponent, IgcSwitchComponent);
 ```razor
 // in Program.cs file
 
-builder.Services.AddIgniteUIBlazor(typeof(IgbComboModule, IgbSwitchModule));
+builder.Services.AddIgniteUIBlazor(typeof(IgbComboModule));
+builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 ```
 
 また、追加の CSS ファイルをリンクして、スタイルを `Switch` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
@@ -43,7 +44,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbComboModule, IgbSwitchModule));
 
 <!-- end: Blazor -->
 
-次に、スイッチを切り替えてコンボ機能を制御できるように、すべてのスイッチ コンポーネントにイベント リスナーを追加します。
+次に、スイッチを切り替えてコンボ機能を制御できるように、すべてのスイッチ コンポーネントにイベント ハンドラーを追加します。
 
 ```ts
 let combo = document.getElementById('combo') as IgcComboComponent<City>;
@@ -65,6 +66,46 @@ switchDisable.addEventListener("igcChange", () => {
 });
 ```
 
+```razor
+<IgbCombo 
+    Label="Cities" 
+    Placeholder="Pick a city" 
+    Data="Data" 
+    ValueKey="Id" 
+    DisplayKey="Name"
+    DisableFiltering="@DisableFiltering"
+    CaseSensitiveIcon="@CaseSensitiveIcon"
+    GroupKey="@Group"
+    Disabled="@Disabled">
+</IgbCombo>
+
+<IgbSwitch Change="@OnDisableFilteringClick">Disable Filtering</IgbSwitch>
+<IgbSwitch Change="@OnCaseSensitiveClick" Disabled="@DisableFiltering">Show Case-sensitive Icon</IgbSwitch>
+<IgbSwitch Change="@OnGroupClick">Enable Grouping</IgbSwitch>
+<IgbSwitch Change="@OnDisableClick">Disable Combo</IgbSwitch>
+
+@code {
+    private bool DisableFiltering = false;
+    private bool CaseSensitiveIcon = false;
+    private bool Disabled = false;
+
+    public void OnDisableFilteringClick(IgbComponentBoolValueChangedEventArgs e) {
+        IgbSwitch sw = e.Parent as IgbSwitch;
+        this.DisableFiltering = sw.Checked;
+    }
+
+    public void OnCaseSensitiveClick(IgbComponentBoolValueChangedEventArgs e) {
+        IgbSwitch sw = e.Parent as IgbSwitch;
+        this.CaseSensitiveIcon = sw.Checked;
+    }
+
+    public void OnDisableClick(IgbComponentBoolValueChangedEventArgs e) {
+        IgbSwitch sw = e.Parent as IgbSwitch;
+        this.Disabled = sw.Checked;
+    }
+}
+```
+
 グループ化は、`GroupKey` プロパティを対応するデータ ソース フィールドに設定することで有効/無効になることに注意してください。
 
 ```ts
@@ -73,6 +114,17 @@ let switchGroup = document.getElementById('grouping') as IgcSwitchComponent;
 switchGroup.addEventListener("igcChange", () => {
     this.combo.groupKey = switchGroup.checked ? "country" : undefined;
 });
+```
+
+```razor
+@code {
+    private string Group = "";
+
+    public void OnGroupClick(IgbComponentBoolValueChangedEventArgs e) {
+        IgbSwitch sw = e.Parent as IgbSwitch;
+        this.Group = sw.Checked ? "Country" : "";
+    }
+}
 ```
 
 ## 機能
