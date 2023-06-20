@@ -11,7 +11,7 @@ The {Platform} Toolbar component is a companion conainer for UI operations to in
 
 ## {Platform} Toolbar Example
 
-`sample="/charts/toolbar/actions-built-in-data-chart", height="60", alt="{Platform} Toolbar Example"`
+`sample="/charts/toolbar/actions-built-in-data-chart", height="600", alt="{Platform} Toolbar Example"`
 
 ## Dependencies
 
@@ -259,7 +259,7 @@ New and existing tools can be repositioned and marked hidden using the `OverlayI
 
 The following example demonstrates hiding both the `ZoomReset` and `Analyze Menu` menu tool actions. A new instance of the `ZoomReset` tool action is added and placed within the `ZoomMenu` by using the the `AfterId` property and assinging that to `ZoomOut`. This will ensure the new Reset tool is displayed at the bottom of the `ZoomMenu`.
 
-`sample="/charts/toolbar/layout-actions-for-data-chart", height="60", alt="{Platform} Toolbar Example"`
+`sample="/charts/toolbar/layout-actions-for-data-chart", height="600", alt="{Platform} Toolbar Example"`
 
 ### Vertical Orientation
 
@@ -279,7 +279,7 @@ By default the {Platform} Toolbar is shown in the horizontal `Orientation` posit
 
 The following example demonstrates the vertical orientation of the {Platform} Toolbar.
 
-`sample="/charts/toolbar/layout-in-vertical-orientation", height="60", alt="{Platform} Verical Orientation"`
+`sample="/charts/toolbar/layout-in-vertical-orientation", height="600", alt="{Platform} Verical Orientation"`
 
 ## Styling/Theming
 
