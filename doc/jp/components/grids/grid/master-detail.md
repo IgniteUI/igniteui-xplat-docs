@@ -112,8 +112,8 @@ igRegisterScript("DetailTemplate", (ctx) => {
     - <kbd>Shift + <kbd>Tab</kbd> - 前の行にフォーカスします。
 
 - エキスパンダーのデータ行にフォーカスがある場合:
-    - <kbd>Alt</kbd> + <kbd>🡒</kbd> or <kbd>Alt</kbd> + <kbd>🡓</kbd> - 行を展開します。
-    - <kbd>Alt</kbd> + <kbd>🡐</kbd> or <kbd>Alt</kbd> + <kbd>🡑</kbd> - 行を縮小します。
+    - <kbd>Alt</kbd> + <kbd>🡒</kbd> または <kbd>Alt</kbd> + <kbd>🡓</kbd> - 行を展開します。
+    - <kbd>Alt</kbd> + <kbd>🡐</kbd> または <kbd>Alt</kbd> + <kbd>🡑</kbd> - 行を縮小します。
 
 ## 既知の問題と制限
 
