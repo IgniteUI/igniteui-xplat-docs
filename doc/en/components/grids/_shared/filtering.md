@@ -49,10 +49,10 @@ Property `Filterable` enables you to specify the following options:
 <!-- end: Angular -->
 
 ```razor
-<IgbGrid Data=data AutoGenerate=false AllowFiltering=true>
+<{ComponentSelector} Data=data AutoGenerate=false AllowFiltering=true>
     <IgbColumn Field="ProductName" DataType="GridColumnDataType.String"></IgbColumn>
     <IgbColumn Field="Price" DataType="GridColumnDataType.Number" Filterable=false></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 ```
 
 <!-- WebComponents -->
@@ -64,7 +64,7 @@ Property `Filterable` enables you to specify the following options:
 ```
 <!-- end: WebComponents -->
 
-To enable the [Advanced filtering](advanced-filtering.md) however, you need to set the `AllowAdvancedFiltering` input property to **true**.
+To enable the Advanced filtering however, you need to set the `AllowAdvancedFiltering` input property to **true**.
 
 <!-- Angular -->
 ```html
@@ -74,7 +74,7 @@ To enable the [Advanced filtering](advanced-filtering.md) however, you need to s
 <!-- end: Angular -->
 
 ```razor
-<IgbGrid Data=data AutoGenerate=true AllowAdvancedFiltering=true />
+<{ComponentSelector} Data=data AutoGenerate=true AllowAdvancedFiltering=true />
 ```
 
 <!-- WebComponents -->
@@ -136,10 +136,10 @@ The filtering feature is enabled for the `{ComponentName}` component by setting 
 <!-- ComponentEnd: HierarchicalGrid -->
 
 ```razor
-<IgbGrid Data=data AutoGenerate=false AllowFiltering=true>
+<{ComponentSelector} Data=data AutoGenerate=false AllowFiltering=true>
     <IgbColumn Field="ProductName" DataType="GridColumnDataType.String"></IgbColumn>
     <IgbColumn Field="Price" DataType="GridColumnDataType.Number" Filterable=false></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 ```
 
 > [!Note]
@@ -321,7 +321,7 @@ constructor() {
 The `FilteringLogic` property of the `{ComponentName}` controls how filtering multiple columns will resolve in the `{ComponentName}`. You can change it at any time through the `{ComponentName}` API, or through the `{ComponentName}` input property.
 
 ```razor
- <IgbGrid FilteringLogic="FilteringLogic.Or"></IgbGrid>
+ <{ComponentSelector} FilteringLogic="FilteringLogic.Or"></{ComponentSelector}>
 ```
 
 <!-- Angular -->
