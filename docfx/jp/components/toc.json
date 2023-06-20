@@ -671,7 +671,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "列の選択",
         "href": "grids/tree-grid/column-selection.md",
         "status": "NEW"

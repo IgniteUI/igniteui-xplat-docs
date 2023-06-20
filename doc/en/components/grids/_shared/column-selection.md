@@ -91,17 +91,47 @@ More information regarding the API manipulations could be found in the [API Refe
 ## Styling
 
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
-In case you would like to change some of the colors, you need to set a class for the grid first:
+In case you would like to change some of the colors, you need to set a `class` for the grid first:
 
-```ts
-<igc-grid class="grid">
+<!-- ComponentStart: Grid -->
+
+```html
+<igc-grid class="grid"></igc-grid>
 ```
 
 ```razor
 <IgbGrid Class="grid"></IgbGrid>
 ```
 
-Then set the related CSS properties for that class:
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+```html
+<igc-tree-grid class="treeGrid"></igc-tree-grid>
+```
+
+```razor
+<IgbTreeGrid Class="treeGrid"></IgbTreeGrid>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+
+```html
+<igc-hierarchical-grid class="hierarchicalGrid"></igc-hierarchical-grid>
+```
+
+```razor
+<IgbHierarchicalGrid Class="hierarchicalGrid"></IgbHierarchicalGrid>
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
+
+Then set the related CSS properties to this class:
+
+<!-- ComponentStart: Grid -->
 
 ```css
 .grid {
@@ -114,6 +144,40 @@ Then set the related CSS properties for that class:
     --igx-grid-row-selected-hover-background: #0062A3;
 }
 ```
+
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+```css
+.treeGrid {
+    --igx-grid-row-selected-background: #0062A3;
+    --igx-grid-row-selected-text-color: #ecaa53;
+    --igx-grid-row-selected-hover-background: #0062A3;
+    --igx-grid-header-selected-text-color: #ecaa53;
+    --igx-grid-header-selected-background: #0062A3;
+    --igx-grid-row-selected-hover-text-color: #ecaa53;
+    --igx-grid-row-selected-hover-background: #0062A3;
+}
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+
+```css
+.hierarchicalGrid {
+    --igx-grid-row-selected-background: #0062A3;
+    --igx-grid-row-selected-text-color: #ecaa53;
+    --igx-grid-row-selected-hover-background: #0062A3;
+    --igx-grid-header-selected-text-color: #ecaa53;
+    --igx-grid-header-selected-background: #0062A3;
+    --igx-grid-row-selected-hover-text-color: #ecaa53;
+    --igx-grid-row-selected-hover-background: #0062A3;
+}
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
 
 ### Demo
 
