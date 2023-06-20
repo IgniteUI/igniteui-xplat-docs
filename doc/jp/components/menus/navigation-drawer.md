@@ -438,7 +438,7 @@ public onMenuIconClick() {
 
 ## Navigation Drawer のスタイル設定
 
-Navigation Drawer コンポーネントは、`base`、`main`、`mini` など、いくつかの CSS パーツを公開します。Navigation Drawer Item コンポーネントは、ベース、アイコン、コンテンツの 3 つの CSS パーツも公開し、スタイルを完全に制御できるようにします。
+Navigation Drawer コンポーネントは、`base`、`main`、`mini` など、いくつかの CSS パーツを公開します。Navigation Drawer Item コンポーネントは、`base`、`icon`、`content` の 3 つの CSS パーツも公開し、スタイルを完全に制御できるようにします。
 
 ```scss
 igc-nav-drawer::part(base) {
