@@ -614,7 +614,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Cell Editing",
         "href": "grids/tree-grid/cell-editing.md",
         "status": "NEW"
