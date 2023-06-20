@@ -631,26 +631,85 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 ## Styling
 
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
-In case you would like to change some of the colors, you need to set a class for the grid first:
+In case you would like to change some of the colors, you need to set an `ID` for the grid first:
+
+<!-- ComponentStart: Grid -->
 
 ```html
-<igc-grid class="grid"></igc-grid>
+<igc-grid id="grid"></igc-grid>
 ```
 
 ```razor
-<IgbGrid class="grid"></IgbGrid>
+<IgbGrid Id="grid"></IgbGrid>
 ```
+
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+```html
+<igc-tree-grid id="treeGrid"></igc-tree-grid>
+```
+
+```razor
+<IgbTreeGrid Id="treeGrid"></IgbTreeGrid>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+
+```html
+<igc-hierarchical-grid id="hierarchicalGrid"></igc-hierarchical-grid>
+```
+
+```razor
+<IgbHierarchicalGrid Id="hierarchicalGrid"></IgbHierarchicalGrid>
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
 
 Then set the related CSS properties to this class:
 
+<!-- ComponentStart: Grid -->
+
 ```css
-.grid {
-    --igx-grid-pinned-border-width: 5px;
-    --igx-grid-pinned-border-color: #FFCD0F;
-    --igx-grid-pinned-border-style: double;
-    --igx-grid-cell-active-border-color: #FFCD0F;
+#grid {
+    --pinned-border-width: 5px;
+    --pinned-border-color: #FFCD0F;
+    --pinned-border-style: double;
+    --cell-active-border-color: #FFCD0F;
 }
 ```
+
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+```css
+#treeGrid {
+    --pinned-border-width: 5px;
+    --pinned-border-color: #FFCD0F;
+    --pinned-border-style: double;
+    --cell-active-border-color: #FFCD0F;
+}
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+
+```css
+#hierarchicalGrid {
+    --pinned-border-width: 5px;
+    --pinned-border-color: #FFCD0F;
+    --pinned-border-style: double;
+    --cell-active-border-color: #FFCD0F;
+}
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
+
 ### Demo
 
 `sample="/{GridSample}/column-pinning-styles", height="510", alt="{Platform} {ComponentTitle} Pinning Styling Example"`
