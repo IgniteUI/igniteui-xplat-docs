@@ -273,22 +273,22 @@ export class AppModule {}
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-> **Note**:
+> **注**:
 > プライマリ キーは行追加操作で必須です。
 
-> **Note**:
+> **注**:
 > プライマリ キーを除くすべての列は、デフォルトで行追加 UI で編集可能です。特定の列の編集を無効にする場合、`Editable` 列の入力を **false** に設定します。
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
-> **Note**:
+> **注**:
 > [行の追加] のボタンの表示状態を制御する `GridEditingActions` 入力は、アクション ストリップ コンテキスト (タイプ `RowType` を使用して、ボタンが表示するレコードを調整できます。
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 <!-- ComponentStart: TreeGrid -->
 
-> **Note**:
+> **注**:
 > [行の追加] のボタンの表示状態を制御する `GridEditingActions` 入力は、アクション ストリップ コンテキスト (タイプ `RowType`) を使用して、ボタンが表示するレコードを調整できます。
 
 <!-- ComponentEnd: TreeGrid -->
@@ -457,9 +457,9 @@ this.grid.rowAddTextTemplate = (ctx: IgcGridEmptyTemplateContext) => {
 <!-- end: Angular -->
 
 <!-- Blazor -->
-### Customizing Buttons
+### ボタンのカスタマイズ
 
-Customizing the buttons of the row editing overlay is possible by using the `RowEditActions` template.
+行編集オーバーレイのボタンをカスタマイズするには、`RowEditActions` テンプレートを使用します。
 
 <!-- 
 REQUIRES FIX!
@@ -488,7 +488,7 @@ igRegisterScript("rowEditActionsTemplate", (endRowEdit) => {
 ```
 
 > **注**:
-> Using `RowEditActions` template will change edit actions for both editing and adding overlay buttons.
+> `RowEditActions` テンプレートを使用すると、オーバーレイ ボタンの編集と追加の両方の編集アクションが変更されます。
 <!-- end: Blazor -->
 
 <!-- Angular -->

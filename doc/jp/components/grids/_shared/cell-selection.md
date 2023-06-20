@@ -92,9 +92,9 @@ _language: ja
 
 <!-- Angular, WebComponents -->
 
-### Select range
+### 範囲の選択
 
-`selectRange` - Select a range of cells with the API. rowStart and rowEnd should use row indexes and columnStart and columnEnd could use column index or column data field value.
+`selectRange` - API を使用してセル範囲を選択します。rowStart と rowEnd は行インデックスを使用する必要があり、columnStart と columnEnd は列インデックスまたは列データ フィールド値を使用することができます。
 
 ```ts
 const range = { rowStart: 2, rowEnd: 2, columnStart: 1, columnEnd: 1 };
@@ -106,7 +106,7 @@ this.grid.selectRange(range);
 ### 選択したデータの取得
 
 <!-- Blazor -->
-`GetSelectedData` will return array of the selected data in Dictionary format. Examples below:
+`GetSelectedData` は、選択されたデータの配列をディクショナリで返します。以下は例です。
 
 ```razor
 <IgbGrid @ref=grid  CellSelection="GridSelectionMode.Multiple" AutoGenerate=true></IgbGrid>
@@ -211,8 +211,8 @@ expectedData = [
 
 ## スタイル設定
 
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
-In case you would like to change some of the colors, you need to set a class for the grid first:
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
+一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
 ```ts
 <igc-grid class="grid">
@@ -222,7 +222,7 @@ In case you would like to change some of the colors, you need to set a class for
 <IgbGrid Class="grid"></IgbGrid>
 ```
 
-Then set the related CSS properties for that class:
+次に、そのクラスに関連する CSS プロパティを設定します。
 
 ```css
 .grid {

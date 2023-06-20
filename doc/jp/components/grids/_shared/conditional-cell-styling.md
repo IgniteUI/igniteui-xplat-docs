@@ -501,6 +501,7 @@ Add hierarchical grid example
 
 次にスタイルを定義します。
 
+
 <!-- Angular -->
 
 ```typescript
@@ -634,7 +635,7 @@ public updateCSS(css: string) {
 
 ### デモ
 
-`sample="/{ComponentSample}/conditional-cell-style-2", height="620", alt="{Platform} {ComponentTitle} conditional cell style 2"`
+`sample="/{ComponentSample}/conditional-cell-style-2", height="620", alt="{Platform} {ComponentTitle} 条件付きセルのスタイル 2"`
 
 
 ### 既知の問題と制限
