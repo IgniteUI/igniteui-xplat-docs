@@ -632,7 +632,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Column Types",
         "href": "grids/tree-grid/column-types.md",
         "status": "NEW"
