@@ -216,6 +216,12 @@
       },
       {
         "exclude": ["Angular", "React"],
+        "name": "Excel へエクスポート",
+        "href": "grids/grid/export-excel.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React"],
         "name": "Excel スタイル フィルタリング",
         "href": "grids/grid/excel-style-filtering.md",
         "status": ""
@@ -355,8 +361,8 @@
       {
         "exclude": ["Angular", "React"],
         "name": "テーマ設定",
-        "status": "",
-        "href": "grids/theming.md"
+        "href": "grids/theming.md",
+        "status": ""
       }
     ]
   },
@@ -635,7 +641,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "セルの選択",
         "href": "grids/tree-grid/cell-selection.md",
         "status": "NEW"
@@ -1098,7 +1104,7 @@
   {
     "name": "折れ線チャート",
     "href": "charts/types/line-chart.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
     "exclude": ["Blazor", "Angular", "React", "WebComponents"],
@@ -1180,7 +1186,7 @@
         {
           "name": "軸グリッド線",
           "href": "charts/features/chart-axis-gridlines.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "軸レイアウト",
@@ -1233,7 +1239,7 @@
         {
           "name": "チャート オーバーレイ",
           "href": "charts/features/chart-overlays.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "チャート パフォーマンス",
@@ -1254,7 +1260,7 @@
         {
           "name": "チャート トレンドライン",
           "href": "charts/features/chart-trendlines.md",
-          "status": ""
+          "status": "UPDATED"
         }
       ]
   },
@@ -1476,9 +1482,13 @@
     "status": ""
   },
   {
-    "exclude": ["Angular"],
     "name": "メニュー",
     "header": true
+  },
+  {
+    "name": "ツールバー",
+    "href": "menus/toolbar.md",
+    "status": "PREVIEW"
   },
   {
     "exclude": ["Angular"],

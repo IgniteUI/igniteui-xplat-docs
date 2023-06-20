@@ -119,7 +119,7 @@ idColumn.move(3);
 
 列のドラッグアンドドロップ操作を可能にする列移動に関連するイベントが複数あります。`ColumnMovingStart`、`ColumnMoving`、および `ColumnMovingEnd` です。
 
-`{ComponentName}` の `ColumnMovingEnd`  イベントを処理し、列が新しい位置にドロップされたときにカスタム ロジックを実装できます。たとえば、以下のスニペットでは、**Change On Year(%)** 列の後に **Category** のドロップをキャンセルできます。
+`{ComponentName}` の `ColumnMovingEnd` イベントを処理し、列が新しい位置にドロップされたときにカスタム ロジックを実装できます。たとえば、以下のスニペットでは、**Change On Year(%)** 列の後に **Category** のドロップをキャンセルできます。
 
 <!-- Angular -->
 ```html
@@ -140,12 +140,9 @@ idColumn.move(3);
 ```typescript
 constructor() {
     var dataGrid = this.dataGrid = document.getElementById('dataGrid') as IgcGridComponent;
+    dataGrid.data = this.data;
+    dataGrid.addEventListener("columnMovingEnd", this.onColumnMovingEnd);
 
-    this._bind = () => {
-        dataGrid.data = this.data;
-        dataGrid.addEventListener("columnMovingEnd", this.onColumnMovingEnd);
-    }
-    this._bind();
 }
 ```
 <!-- end: WebComponents -->
@@ -300,10 +297,10 @@ $dark-grid-column-moving-theme: grid-theme(
 
 <!-- end: Angular -->
 
-<!-- WebComponents -->
+<!-- WebComponents, Blazor -->
 ## スタイル設定
 
-<!-- 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。 -->
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
 
 色を変更したい場合は、最初にグリッドのクラスを設定する必要があります:
 
@@ -326,9 +323,9 @@ $dark-grid-column-moving-theme: grid-theme(
 ```
 ### デモ
 
-`sample="/{ComponentSample}/column-moving-styles", height="650", alt="{Platform} {ComponentTitle} Grid Moving Styled Example"`
+`sample="/{ComponentSample}/column-moving-styles", height="650", alt="{Platform} {ComponentTitle} Grid 移動のスタイル設定の例"`
 
-<!-- end: WebComponents -->
+<!-- end: WebComponents, Blazor -->
 
 ## API リファレンス
 
