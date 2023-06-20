@@ -199,13 +199,9 @@ Before diving into the styling options, the core module and all component mixins
 // @import '~igniteui-angular/lib/core/styles/themes/index';
 ```
 
-```razor
-TO DO
-```
-
 > [!Note]
 <!-- ComponentStart:  Grid -->
->Please note that [row selection](row-selection.md) and [column selection](column-selection.md) can't be manipulated   independently. They depend on the same `variables`.
+>Please note that [row selection](row-selection.md) and [column selection](column-selection.md) can't be manipulated independently. They depend on the same `variables`.
 <!-- ComponentEnd:  Grid -->
 
 With that being said, let's move on and change the **selection** and **hover** styles. <br/>
@@ -226,10 +222,6 @@ $custom-grid-theme: grid-theme(
 );
 ```
 
-```razor
-TO DO
-```
-
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
@@ -242,10 +234,6 @@ $custom-grid-theme: grid-theme(
     $header-selected-text-color: #ECAA53,
     $header-selected-background: #011627
 );
-```
-
-```razor
-TO DO
 ```
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
@@ -265,10 +253,6 @@ The last step is to include the custom `{ComponentSelector}` theme.
 @include css-vars($custom-grid-theme)
 ```
 
-```razor
-TO DO
-```
-
 ### Overriding the Base Theme
 In order to style components for Internet Explorer 11, we have to use a different approach, since it doesn't support CSS variables.
 
@@ -281,10 +265,6 @@ In order to style components for Internet Explorer 11, we have to use a differen
         @include grid($custom-column-selection-theme);
     }
 }
-```
-
-```razor
-TO DO
 ```
 
 ### Demo
