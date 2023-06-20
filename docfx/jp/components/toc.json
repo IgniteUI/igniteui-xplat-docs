@@ -216,7 +216,7 @@
       },
       {
         "exclude": ["Angular", "React"],
-        "name": "Export to Excel",
+        "name": "Excel へエクスポート",
         "href": "grids/grid/export-excel.md",
         "status": "NEW"
       },
@@ -641,7 +641,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "セルの選択",
         "href": "grids/tree-grid/cell-selection.md",
         "status": "NEW"
@@ -1104,7 +1104,7 @@
   {
     "name": "折れ線チャート",
     "href": "charts/types/line-chart.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
     "exclude": ["Blazor", "Angular", "React", "WebComponents"],
@@ -1186,7 +1186,7 @@
         {
           "name": "軸グリッド線",
           "href": "charts/features/chart-axis-gridlines.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "軸レイアウト",
@@ -1239,7 +1239,7 @@
         {
           "name": "チャート オーバーレイ",
           "href": "charts/features/chart-overlays.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "チャート パフォーマンス",
@@ -1260,7 +1260,7 @@
         {
           "name": "チャート トレンドライン",
           "href": "charts/features/chart-trendlines.md",
-          "status": ""
+          "status": "UPDATED"
         }
       ]
   },

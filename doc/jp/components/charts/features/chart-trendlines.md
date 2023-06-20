@@ -13,12 +13,22 @@ _language: ja
 
 トレンドラインはデフォルトでオフになっていますが、`TrendLineType` プロパティを設定することで有効にできます。また、ブラシ、期間、太さなど、トレンドラインの複数の外観プロパティを変更できます。
 
+近似曲線を有効にすると、ダッシュ配列を適用することもできます。これを行うには、`TrendLineDashArray` プロパティを数値の配列に設定します。数値配列は、近似曲線の破線の長さを表します。
+
 # {Platform} チャート トレンドラインの例
 
 次のサンプルは、`QuinticFit` トレンドラインが最初に適用された、2013 年から 2017 年までの Microsoft の株価トレンドを示す `FinancialChart` を示しています。適用されるトレンドラインのタイプを変更できるドロップダウンがあり、可能なすべてのトレンドライン タイプがそのドロップダウン内に一覧表示されます。
 
-`sample="/charts/financial-chart/trendlines", height="500", alt="{Platform} トレンドラインの例"`
+`sample="/charts/financial-chart/trendlines", height="500", alt="{Platform} 近似曲線の例"`
 
+
+<div class="divider--half"></div>
+
+# {Platform} チャート近似曲線のダッシュ配列の例
+
+次のサンプルは、`TrendLineDashArray` プロパティを介して適用された `QuarticFit` 破線近似曲線を持つ `FinancialPriceSeries` を示す `XamDataChart` を示しています。
+
+`sample="/charts/data-chart/dash-array-trendline", height="500", alt="{Platform} 近似曲線の例"`
 
 
 <div class="divider--half"></div>
@@ -42,6 +52,7 @@ _language: ja
 `XamDataChart` コンポーネントでは、シリーズのほとんどのタイプに次の API プロパティがあります:
 
 - `TrendLineBrush`
+- `TrendLineDashArray`
 - `TrendLinePeriod`
 - `TrendLineThickness`
 - `TrendLineType`
