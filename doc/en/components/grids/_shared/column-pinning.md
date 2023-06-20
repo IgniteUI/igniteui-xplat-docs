@@ -640,7 +640,7 @@ In case you would like to change some of the colors, you need to set an `ID` for
 ```
 
 ```razor
-<IgbGrid ID="grid"></IgbGrid>
+<IgbGrid Id="grid"></IgbGrid>
 ```
 
 <!-- ComponentEnd: Grid -->
@@ -652,7 +652,7 @@ In case you would like to change some of the colors, you need to set an `ID` for
 ```
 
 ```razor
-<IgbTreeGrid ID="treeGrid"></IgbTreeGrid>
+<IgbTreeGrid Id="treeGrid"></IgbTreeGrid>
 ```
 
 <!-- ComponentEnd: TreeGrid -->
@@ -664,7 +664,7 @@ In case you would like to change some of the colors, you need to set an `ID` for
 ```
 
 ```razor
-<IgbHierarchicalGrid ID="hierarchicalGrid"></IgbHierarchicalGrid>
+<IgbHierarchicalGrid Id="hierarchicalGrid"></IgbHierarchicalGrid>
 ```
 
 <!-- ComponentEnd: HierarchicalGrid -->
