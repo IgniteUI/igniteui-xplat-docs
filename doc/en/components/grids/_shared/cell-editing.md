@@ -144,11 +144,12 @@ private UpdateCell() {
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- Angular -->
 
 ### Cell Editing Templates
 
 You can see and learn more for default cell editing templates in the [general editing topic](editing.md#editing-templates).
+
+<!-- Angular -->
 
 If you want to provide a custom template which will be applied when a cell is in edit mode, you can make use of the `CellTemplateDirective`. To do this, you need to pass an **ng-template** marked with the `CellEditor` directive and properly bind your custom control to the cell `EditValue`:
 
@@ -200,6 +201,114 @@ This code is used in the sample below which implements an [SelectComponent](../s
 >By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
 
 <!-- end: Angular -->
+
+<!-- Blazor -->
+
+If you want to provide a custom template which will be applied to a cell, you can pass such template either to the cell itself, or to its header. 
+
+```Razor
+
+<IgbColumn
+    Field="race"
+    Header="Race"
+    DataType="GridColumnDataType.String"
+    InlineEditorTemplateScript="WebGridCellEditCellTemplate"
+    Editable="true"
+    Name="column1"
+    @ref="column1">
+</IgbColumn>
+
+
+```
+
+and pass the template:
+
+```javascript
+
+igRegisterScript("WebGridCellEditCellTemplate", (ctx) => {
+    let cellValues = [];
+    let uniqueValues = [];
+    for(const i of this.webGridCellEditSampleRoleplay){
+        const field = ctx.cell.column.field;
+        if(uniqueValues.indexOf(i[field]) === -1 )
+        {
+            cellValues.push(html`<igc-select-item value=${i[field]}>${(i[field])}</igc-select-item>`);
+            uniqueValues.push(i[field]);
+        }
+    }
+    return html`<div>
+    <igc-select position-strategy="fixed" @igcChange=${ e => ctx.cell.editValue = e.detail.value}>
+          ${cellValues}
+    </igc-select>
+</div>`;
+}, false);
+
+
+```
+Working sample of the above can be found here for further referencee: 
+
+`sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
+If you want to provide a custom template which will be applied to a cell, you can pass such template either to the cell itself, or to its header. First create the column as you usually would:
+
+```html
+
+<igc-column
+    field="race"
+    header="Race"
+    data-type="string"
+    editable="true"
+    name="column1"
+    id="column1">
+</igc-column>
+
+```
+
+and pass the templates to this column in the index.ts file:
+
+```ts
+
+constructor() {
+        var grid1 = document.getElementById('grid1') as IgcGridComponent;
+        var column1 = document.getElementById('column1') as IgcColumnComponent;
+        var column2 = document.getElementById('column2') as IgcColumnComponent;
+        var column3 = document.getElementById('column3') as IgcColumnComponent;
+
+        grid1.data = this.webGridCellEditSampleRoleplay;
+        column1.inlineEditorTemplate = this.webGridCellEditCellTemplate;
+        column2.inlineEditorTemplate = this.webGridCellEditCellTemplate;
+        column3.inlineEditorTemplate = this.webGridCellEditCellTemplate;
+    }
+
+
+public webGridCellEditCellTemplate = (ctx: IgcCellTemplateContext) => {
+        let cellValues: any = [];
+        let uniqueValues: any = [];
+        for(const i of (this.webGridCellEditSampleRoleplay as any)){
+            const field: string = ctx.cell.column.field;
+            if(uniqueValues.indexOf(i[field]) === -1 )
+            {
+                cellValues.push(html`<igc-select-item value=${i[field]}>${(i[field])}</igc-select-item>`);
+                uniqueValues.push(i[field]);
+            }
+        }
+        return html`
+        <igc-select style="width:100%; height:100%" size="large" @igcChange=${(e: any) => ctx.cell.editValue = e.detail.value}>
+              ${cellValues}
+        </igc-select>
+    `;
+    }
+
+```
+Working sample of the above can be found here for further referencee: 
+
+`sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
+
+<!-- end: WebComponents -->
 
 <!-- Angular -->
 
@@ -524,7 +633,6 @@ export class MyGridEventsComponent {
 *** In JavaScript ***
 igRegisterScript("HandleCellEdit", (ev) => {
     var d = ev.detail;
-
     if (d.column != null && d.column.field == "UnitsOnOrder") {
         if (d.newValue > d.rowData.UnitsInStock) {
             d.cancel = true;
@@ -533,7 +641,6 @@ igRegisterScript("HandleCellEdit", (ev) => {
     }
 }, false);
 ```
-
 If the value entered in a cell under the **Units On Order** column is larger than the available amount (the value under **Units in Stock**), the editing will be cancelled and the user will be alerted to the cancellation.
 
 <!-- ComponentEnd: Grid -->
@@ -616,9 +723,37 @@ The result of the above validation being applied to our `{ComponentName}` can be
 
 `sample="/{ComponentSample}/editing-events", height="650", alt="{Platform} {ComponentTitle} Editing Event Example"`
 
-<!-- Angular -->
-
 ## Styling
+
+<!-- WebComponents, Blazor -->
+
+In addition to the predifined themes, the grid could be further customized by setting some of the available [CSS Properties](../theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```ts
+<igc-grid class="grid">
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties for that class:
+
+```css
+.grid {
+    --igx-grid-edit-mode-color: orange;
+    --igx-grid-cell-editing-background: lightblue;
+}
+```
+
+### Styling Example
+
+`sample="/{ComponentSample}/cell-editing-style", height="650", alt="{Platform} {ComponentTitle} Cell Editing Styling Example"`
+
+<!-- end: WebComponents, Blazor -->
+
+<!-- Angular -->
 
 The `{ComponentName}` allows for its cells to be styled through the [{ProductName} Theme Library](../themes/styles.md). The grid's [theme]({environment:sassApiUrl}/index.html#function-grid-theme) exposes a wide range of properties, which allow users to style many different aspects of the grid.
 

@@ -53,10 +53,7 @@ To enable the advanced filtering, the `AllowAdvancedFiltering` input property sh
 ```ts
 constructor() {
     let grid = (document.getElementById("grid") as IgcGridComponent);
-    this._bind = () => {
-            grid.data = this.data
-    }
-    this._bind();
+    grid.data = this.data
 }
 ```
 <!-- end: WebComponents -->
@@ -124,7 +121,7 @@ connectedCallback(): void {
 
 In case you don't want to show the `{ComponentName}` toolbar, you could use the `OpenAdvancedFilteringDialog` and `CloseAdvancedFilteringDialog` methods to open and close the advanced filtering dialog programmatically.
 
->
+> [!Note]
 > You can enable both the **QuickFilter**/**ExcelStyleFilter** and the advanced filtering user interfaces in the `{ComponentName}`. Both filtering user interfaces will work independently of one another. The final filtered result in the `{ComponentName}` is the intersection between the results of the two filters.
 
 <!-- Angular -->
@@ -461,6 +458,34 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
+
+<!-- WebComponents, Blazor -->
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```html
+<igc-grid class="grid"></igc-grid>
+```
+
+```razor
+<IgbGrid class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties to this class:
+
+```css
+.grid {
+    --igx-grid-filtering-row-background: #ffcd0f;
+    --igx-grid-filtering-background-or: #d83434;
+}
+```
+### Demo
+
+`sample="/{ComponentSample}/advanced-filtering-style", height="530", alt="{Platform} {ComponentTitle} advanced filtering style"`
+
+<!-- end: WebComponents, Blazor -->
 
 ## API References
 

@@ -9,6 +9,10 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+### New Components
+
+* [Toolbar](menus/toolbar.md) - Beta
+
 ## **{PackageVerChanges-22-2}**
 
 Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use.

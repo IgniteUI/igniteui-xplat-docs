@@ -59,6 +59,11 @@ _language: ja
 
 `sample="/charts/category-chart/axis-gridlines", height="450", alt="{Platform} 軸グリッド線の例"`
 
+`XamDataChart` の軸には、それぞれ `MajorStrokeDashArray` プロパティと `MinorStrokeDashArray` プロパティを利用して、主グリッド線と副グリッド線にダッシュ配列を配置する機能もあります。対応する軸の `StrokeDashArray` プロパティを設定することで、実際の軸線も破線にすることができます。これらのプロパティは、対応するグリッド線のダッシュの長さを記述する数値の配列を受け取ります。
+
+次の例は、上記のダッシュ配列プロパティが設定された `XamDataChart` を示しています。
+
+`sample="/charts/data-chart/dash-array-axes", height="450", alt="{Platform} 軸破線配列の例"`
 
 
 <div class="divider--half"></div>
