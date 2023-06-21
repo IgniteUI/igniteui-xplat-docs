@@ -590,7 +590,7 @@ function buildPlatform(cb) {
 }
 
 function replaceEnvironmentVariables(cb) {
-    const environment = process.env.NODE_ENV ? process.env.NODE_ENV.trim() : 'development';
+    const environment = ENV_TARGET ? ENV_TARGET.trim() : 'development';
     const config = require(`./docfx/${LANG}/environment.json`);
     return gulp.src(`${DOCFX_SITE}/**/*.html`)
         .pipe(replace(/(\{|\%7B)environment:([a-zA-Z]+)(\}|\%7D)/g, function (match, brace1, environmentVarable, brace2) {
@@ -795,7 +795,7 @@ function buildSite(cb) {
     return buildDocfx({
         siteDir: DOCFX_SITE,
         projectDir: DOCFX_PATH,
-        environment: process.env.NODE_ENV ? process.env.NODE_ENV.trim() : null
+        environment: ENV_TARGET ? ENV_TARGET.trim() : null
     });
 }
 
@@ -809,7 +809,7 @@ var buildDocfx_Blazor   = gulp.series(verifyFiles, buildBlazor, buildSite, repla
 var buildDocfx_React    = gulp.series(verifyFiles, buildReact, buildSite, replaceEnvironmentVariables,  updateSiteMap);
 var buildDocfx_WC       = gulp.series(verifyFiles, buildWC, buildSite, replaceEnvironmentVariables, updateSiteMap);
 // function for building Docfx for a platform specified in arguments, e.g. --plat=React
-var buildDocfx_WithArgs = gulp.series(buildWithArgs, buildSite, updateSiteMap);
+var buildDocfx_WithArgs = gulp.series(buildWithArgs, buildSite, replaceEnvironmentVariables, updateSiteMap);
 // exporting functions for building Docfx for each platform:
 exports['buildDocfx_All']      = buildDocfx_All;
 exports['buildDocfx_Angular']  = buildDocfx_Angular;
@@ -910,7 +910,7 @@ function verifyMarkdown(cb) {
     ])
     .pipe(es.map(function(file, fileCallback) {
         var fileContent = file.contents.toString();
-        var filePath = file.dirname + "\\" + file.basename
+        var filePath = file.dirname + path.sep + file.basename
         // filePath = '.\\doc\\' + filePath.split('doc\\')[1];
         console.log('verifying: ' + filePath);
         filesCount++;
