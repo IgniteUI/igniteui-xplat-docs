@@ -20,7 +20,7 @@ _language: ja
 
 
 
-## Column Pinning API
+## 列ピン固定の API
 
 列のピン固定は `Column` の `Pinned` プロパティによって制御されます。デフォルトでピン固定列は `{ComponentName}` の左側に固定して描画され、`{ComponentName}` 本体のピン固定されていない列は水平スクロールされます。
 
@@ -632,26 +632,84 @@ $custom-theme: grid-theme(
 ## スタイル設定
 
 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
-一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
+一部の色を変更したい場合は、最初にグリッドの `ID` を設定する必要があります。
+
+<!-- ComponentStart: Grid -->
 
 ```html
-<igc-grid class="grid"></igc-grid>
+<igc-grid id="grid"></igc-grid>
 ```
 
 ```razor
-<IgbGrid class="grid"></IgbGrid>
+<IgbGrid Id="grid"></IgbGrid>
 ```
 
-次に、そのクラスに関連する CSS プロパティを設定します。
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+```html
+<igc-tree-grid id="treeGrid"></igc-tree-grid>
+```
+
+```razor
+<IgbTreeGrid Id="treeGrid"></IgbTreeGrid>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+
+```html
+<igc-hierarchical-grid id="hierarchicalGrid"></igc-hierarchical-grid>
+```
+
+```razor
+<IgbHierarchicalGrid Id="hierarchicalGrid"></IgbHierarchicalGrid>
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
+
+Then set the related CSS properties to this class:
+
+<!-- ComponentStart: Grid -->
 
 ```css
-.grid {
-    --igx-grid-pinned-border-width: 5px;
-    --igx-grid-pinned-border-color: #FFCD0F;
-    --igx-grid-pinned-border-style: double;
-    --igx-grid-cell-active-border-color: #FFCD0F;
+#grid {
+    --pinned-border-width: 5px;
+    --pinned-border-color: #FFCD0F;
+    --pinned-border-style: double;
+    --cell-active-border-color: #FFCD0F;
 }
 ```
+
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+```css
+#treeGrid {
+    --pinned-border-width: 5px;
+    --pinned-border-color: #FFCD0F;
+    --pinned-border-style: double;
+    --cell-active-border-color: #FFCD0F;
+}
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+
+```css
+#hierarchicalGrid {
+    --pinned-border-width: 5px;
+    --pinned-border-color: #FFCD0F;
+    --pinned-border-style: double;
+    --cell-active-border-color: #FFCD0F;
+}
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
 ### デモ
 
 `sample="/{GridSample}/column-pinning-styles", height="510", alt="{Platform} {ComponentTitle} Pinning Styling Example"`

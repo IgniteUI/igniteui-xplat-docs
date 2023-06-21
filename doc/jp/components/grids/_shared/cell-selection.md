@@ -214,6 +214,8 @@ expectedData = [
 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
 一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
+<!-- ComponentStart: Grid -->
+
 ```ts
 <igc-grid class="grid">
 ```
@@ -231,6 +233,31 @@ expectedData = [
     --igx-grid-cell-selected-background: #0062A3;
 }
 ```
+
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+```ts
+<igc-tree-grid id="treeGrid"></igc-tree-grid>
+```
+
+```razor
+<IgbTreeGrid Id="treeGrid"></IgbTreeGrid>
+```
+
+Then set the related CSS properties for that class:
+
+```css
+#treeGrid {
+    --cell-selected-text-color: #fff;
+    --cell-active-border-color: #f2c43c;
+    --cell-selected-background: #0062a3;
+    --cell-editing-background: #0062a3;
+}
+```
+
+<!-- ComponentEnd: Grid -->
 
 ### デモ
 
