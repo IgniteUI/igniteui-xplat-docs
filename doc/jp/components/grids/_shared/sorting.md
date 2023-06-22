@@ -383,7 +383,7 @@ $custom-theme: grid-theme(
 
 ### スキーマの使用
 
-テーマ エンジンを使用して [**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
+テーマ エンジンを使用して[**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
 
 すべてのコンポーネントに提供されている 2 つの定義済みスキーマのいずれかを拡張します。この場合は [_light-grid]({environment:sassApiUrl}/index.html#variable-_light-grid)です。
 

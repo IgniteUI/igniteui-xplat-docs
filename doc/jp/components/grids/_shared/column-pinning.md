@@ -710,6 +710,7 @@ $custom-theme: grid-theme(
 ```
 
 <!-- ComponentEnd: HierarchicalGrid -->
+
 ### デモ
 
 `sample="/{GridSample}/column-pinning-styles", height="510", alt="{Platform} {ComponentTitle} ピン固定のスタイルの例"`

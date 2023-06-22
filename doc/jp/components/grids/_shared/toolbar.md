@@ -19,12 +19,12 @@ _language: ja
 
 または他のカスタム コンテンツもホストできます。ツールバーと事前定義された UI コンポーネントは、{Platform} イベントをサポートし、開発者向けに API を公開します。
 
-## {Platform} ツール バー グリッドの例
+## {Platform} ツールバー グリッドの例
 
 
-`sample="/{ComponentSample}/toolbar-sample-1", height="420", alt="{Platform} {ComponentTitle} ツール バーの例"`
+`sample="/{ComponentSample}/toolbar-sample-1", height="420", alt="{Platform} {ComponentTitle} ツールバーの例"`
 
-事前定義された `Actions` および `Title` UI コンポーネントが  `GridToolbar` 内に追加されます。これはすべて、対応するグリッド機能とのデフォルトのインタラクションを提供するツールバーを持つために必要です。
+事前定義された `Actions` および `Title` UI コンポーネントが `GridToolbar` 内に追加されます。これはすべて、対応するグリッド機能とのデフォルトのインタラクションを提供するツールバーを持つために必要です。
 
 <!-- ComponentStart: Grid -->
 ```html
@@ -172,7 +172,6 @@ _language: ja
 
 IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動作には特定の制限があるため、子グリッドのスコープでツールバーを使用する場合は注意が必要です。
 `igx-row-island` タグ内でツールバー コンポーネントを定義するときは、必ず IgxGridToolbar を使用し、提供されたグリッド インスタンスを入力プロパティとしてツールバー自体に渡すようにしてください。
-
 これにより、テンプレートのスコープ内に常に正しいグリッド インスタンスが含まれるようになります。
 
 ```html
@@ -227,6 +226,7 @@ IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動�
 
 ### 操作
 
+
 `GridToolbarActions` は、ユーザーが親グリッドに関連して操作 / インタラクションを配置できる特定のコンテナを公開します。
 ツールバーのタイトル部分と同様に、ユーザーは、デフォルトのツールバー インタラクション コンポーネントを含め、そのテンプレート部分内にどんなものでも提供できます。
 
@@ -277,9 +277,9 @@ IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動�
 constructor() {
     var pinTool = this.pinTool = document.getElementById('pinTool') as IgcGridToolbarPinningComponent;
     var hideTool = this.hideTool = document.getElementById('hideTool') as IgcGridToolbarHidingComponent;
-        pinTool.overlaySettings = this.overlaySettingsScaleCenter;
-        hideTool.overlaySettings = this.overlaySettingsAuto;
-    }
+    pinTool.overlaySettings = this.overlaySettingsScaleCenter;
+    hideTool.overlaySettings = this.overlaySettingsAuto;
+}
 ```
 
 ```ts

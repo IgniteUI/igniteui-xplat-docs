@@ -554,7 +554,7 @@ $custom-grid-theme: grid-theme(
 >`igx-color` および `igx-palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[パレット](../themes/sass/palettes.md)のトピックを参照してください。
 
 ### スキーマの使用
-テーマ エンジンを使用して [**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
+テーマ エンジンを使用して[**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
 
 すべてのコンポーネントに提供されている定義済みのスキーマを拡張します。この場合は、[light-grid]({environment:sassApiUrl}/index.html#variable-_light-grid) スキーマです。
 
@@ -593,7 +593,7 @@ $custom-grid-theme: grid-theme(
 
 ### デモ
 
-`sample="/{ComponentSample}/column-resize-styling", height="550", alt="{Platform} {ComponentTitle} column resize styling"`
+`sample="/{ComponentSample}/column-resize-styling", height="550", alt="{Platform} {ComponentTitle} 列のサイズ変更のスタイル設定"`
 
 
 > [!Note]
