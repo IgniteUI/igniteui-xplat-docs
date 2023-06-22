@@ -264,7 +264,7 @@
       },
       {
         "exclude": ["Angular", "React"],
-        "name": "Toolbar",
+        "name": "ツールバー",
         "href": "grids/grid/toolbar.md",
         "status": ""
       },

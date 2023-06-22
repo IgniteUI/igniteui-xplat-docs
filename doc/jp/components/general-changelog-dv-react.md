@@ -10,6 +10,10 @@ namespace: Infragistics.Controls.Charts
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
+### 新しいコンポーネント
+
+* [Toolbar](menus/toolbar.md) - ベータ版
+
 ## **{PackageVerChanges-22-2}**
 
 デフォルトの動作を大幅に改善し、カテゴリ チャート API を改良して使いやすくしました。
