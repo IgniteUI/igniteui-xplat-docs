@@ -482,9 +482,9 @@ public editCellTemplate = (ctx: IgcCellTemplateContext) => {
 ```
 
 ```razor
-<IgbGrid>
+<{ComponentSelector}>
  <IgbColumn InlineEditorTemplate="EditTemplate"></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 @code {
     public RenderFragment<IgbCellTemplateContext> EditTemplate = (ctx) =>
     {
@@ -515,9 +515,9 @@ public formatCurrency(value: number) {
 ```
 
 ```razor
-<IgbGrid>
+<{ComponentSelector}>
  <IgbColumn FormatterScript="CurrencyFormatter"></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 
 //In Javascript
 igRegisterScript("CurrencyFormatter", (value) => {
