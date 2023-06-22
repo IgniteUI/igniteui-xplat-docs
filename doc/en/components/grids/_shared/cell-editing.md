@@ -15,7 +15,11 @@ In addition, you can define your own custom templates for update-data actions an
 
 ## {Platform} {ComponentTitle} Cell Editing and Edit Templates Example
 
+<!-- ComponentStart: Grid -->
+
 `sample="/{ComponentSample}/editing-columns", height="700", alt="{Platform} {ComponentTitle} Cell Editing and Edit Templates Example"`
+
+<!-- ComponentEnd: Grid -->
 
 <!-- Angular -->
 
