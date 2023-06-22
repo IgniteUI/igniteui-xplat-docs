@@ -420,8 +420,8 @@ constructor() {
 
 ## スタイル設定
 
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS Properties](../theming.md).
-In case you would like to change some of the colors, you need to set an `ID` for the grid first:
+事前定義されたテーマに加えて、利用可能な [CSS プロパティ](../theming.md)を設定することでグリッドをさらにカスタマイズできます。
+一部の色を変更したい場合は、最初にグリッドの `ID` を設定する必要があります。
 
 <!-- ComponentStart: Grid -->
 
@@ -460,7 +460,7 @@ In case you would like to change some of the colors, you need to set an `ID` for
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
-Then set the related CSS properties for that class:
+次に、そのクラスに関連する CSS プロパティを設定します。
 
 <!-- ComponentStart: Grid -->
 
@@ -494,7 +494,7 @@ Then set the related CSS properties for that class:
 
 ### スタイル設定の例
 
-`sample="/{ComponentSample}/cell-editing-style", height="650", alt="{Platform} {ComponentTitle} Cell Editing Styling Example"`
+`sample="/{ComponentSample}/cell-editing-style", height="650", alt="{Platform} {ComponentTitle} セル編集スタイル設定の例"`
 
 <!-- end: WebComponents, Blazor -->
 

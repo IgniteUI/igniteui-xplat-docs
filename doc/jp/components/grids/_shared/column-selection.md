@@ -66,7 +66,7 @@ _language: ja
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
-`sample="/{ComponentSample}/column-selection-group", height="570", alt="{Platform} {ComponentTitle} column selection group"`
+`sample="/{ComponentSample}/column-selection-group", height="570", alt="{Platform} {ComponentTitle} 列選択グループ"`
 
 
 ## キーボードの組み合わせ
@@ -181,7 +181,7 @@ API 操作の詳細については、[API リファレンス](#api-リファレ�
 
 ### デモ
 
-`sample="/{ComponentSample}/column-selection-styles", height="570", alt="{Platform} {ComponentTitle} column selection styles"`
+`sample="/{ComponentSample}/column-selection-styles", height="570", alt="{Platform} {ComponentTitle} 列選択スタイル"`
 
 
 <!-- end: WebComponents, Blazor -->
@@ -271,7 +271,7 @@ Internet Explorer 11 のコンポーネントをスタイル設定するには�
 
 <!-- NOTE this sample is differed -->
 
-`sample="/{ComponentSample}/column-selection-styles", height="570", alt="{Platform} {ComponentTitle} column selection styles"`
+`sample="/{ComponentSample}/column-selection-styles", height="570", alt="{Platform} {ComponentTitle} 列選択スタイル"`
 
 
 > [!Note]

@@ -12,7 +12,7 @@ _language: ja
 
 ## {Platform} ツールバーの例
 
-`sample="/charts/toolbar/actions-built-in-data-chart", height="600", alt="{Platform} Toolbar Example"`
+`sample="/charts/toolbar/actions-built-in-data-chart", height="600", alt="{Platform} ツールバーの例"`
 
 ## 依存関係
 

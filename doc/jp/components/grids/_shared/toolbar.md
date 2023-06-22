@@ -593,7 +593,7 @@ igRegisterScript("WebGridToolbarExporting", (evt) => {
 
 <!-- NOTE this sample is differed -->
 
-`sample="/{ComponentSample}/data-exporting-indicator", height="370", alt="{Platform} {ComponentTitle} data exporting indicator"`
+`sample="/{ComponentSample}/data-exporting-indicator", height="370", alt="{Platform} {ComponentTitle} データ エクスポート インジケーター"`
 
 
 
@@ -653,8 +653,8 @@ igRegisterScript("WebGridToolbarExporting", (evt) => {
 
 ## スタイル設定
 
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
-In case you would like to change some of the colors, you need to set a class for the grid first:
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
+一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
 ```ts
 <igc-grid class="grid">
@@ -664,7 +664,7 @@ In case you would like to change some of the colors, you need to set a class for
 <IgbGrid Class="grid"></IgbGrid>
 ```
 
-Then set the related CSS properties for that class:
+次に、そのクラスに関連する CSS プロパティを設定します。
 
 ```css
 .grid {
@@ -676,7 +676,7 @@ Then set the related CSS properties for that class:
 
 ### デモ
 
-`sample="/{ComponentSample}/toolbar-style", height="540", alt="{Platform} {ComponentTitle} Toolbar Styling Example"`
+`sample="/{ComponentSample}/toolbar-style", height="540", alt="{Platform} {ComponentTitle} ツールバーのスタイル設定の例"`
 
 <!-- end: WebComponents, Blazor -->
 
@@ -791,7 +791,7 @@ $dark-input-group-theme: input-group-theme(
 
 <!-- NOTE this sample is differed -->
 
-`sample="/{ComponentSample}/toolbar-style", height="510", alt="{Platform} {ComponentTitle} toolbar style"`
+`sample="/{ComponentSample}/toolbar-style", height="510", alt="{Platform} {ComponentTitle} ツールバー スタイル"`
 
 
 

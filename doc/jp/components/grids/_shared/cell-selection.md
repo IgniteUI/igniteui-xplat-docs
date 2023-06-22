@@ -246,7 +246,7 @@ expectedData = [
 <IgbTreeGrid Id="treeGrid"></IgbTreeGrid>
 ```
 
-Then set the related CSS properties for that class:
+次に、そのクラスに関連する CSS プロパティを設定します。
 
 ```css
 #treeGrid {

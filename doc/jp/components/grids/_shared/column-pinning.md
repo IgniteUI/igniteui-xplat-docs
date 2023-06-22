@@ -223,7 +223,7 @@ grid.pinning = { columns: ColumnPinningPosition.End };
 
 ### デモ
 
-`sample="/{ComponentSample}/column-pinning-right-side", height="510", alt="{Platform} {ComponentTitle} column pinning right side"`
+`sample="/{ComponentSample}/column-pinning-right-side", height="510", alt="{Platform} {ComponentTitle} 列を右側にピン固定"`
 
 
 ## カスタム列ピン固定 UI
@@ -619,7 +619,7 @@ $custom-theme: grid-theme(
 
 <!-- NOTE this sample is differed -->
 
-`sample="/{ComponentSample}/column-pinning-styles", height="506", alt="{Platform} {ComponentTitle} column pinning styles"`
+`sample="/{ComponentSample}/column-pinning-styles", height="506", alt="{Platform} {ComponentTitle} 列のピン固定スタイル"`
 
 
 > [!Note]
@@ -670,7 +670,7 @@ $custom-theme: grid-theme(
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-Then set the related CSS properties to this class:
+次に、そのクラスに関連する CSS プロパティを設定します。
 
 <!-- ComponentStart: Grid -->
 
@@ -712,7 +712,7 @@ Then set the related CSS properties to this class:
 <!-- ComponentEnd: HierarchicalGrid -->
 ### デモ
 
-`sample="/{GridSample}/column-pinning-styles", height="510", alt="{Platform} {ComponentTitle} Pinning Styling Example"`
+`sample="/{GridSample}/column-pinning-styles", height="510", alt="{Platform} {ComponentTitle} ピン固定のスタイルの例"`
 
 <!-- end: WebComponents, Blazor -->
 

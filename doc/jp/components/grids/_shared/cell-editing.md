@@ -205,7 +205,7 @@ public classEditTemplate = (ctx: IgcCellTemplateContext) => {
 
 <!-- Blazor -->
 
-If you want to provide a custom template which will be applied to a cell, you can pass such template either to the cell itself, or to its header. 
+セルに適用されるカスタム テンプレートを提供する場合は、そのテンプレートをセル自体またはそのヘッダーに渡すことができます。
 
 ```Razor
 
@@ -222,7 +222,7 @@ If you want to provide a custom template which will be applied to a cell, you ca
 
 ```
 
-and pass the template:
+そしてテンプレートを渡します:
 
 ```javascript
 
@@ -246,15 +246,15 @@ igRegisterScript("WebGridCellEditCellTemplate", (ctx) => {
 
 
 ```
-Working sample of the above can be found here for further referencee: 
+上記のサンプルは、こちらで参照できます。 
 
-`sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
+`sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} セル編集テンプレート サンプル"`
 
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
 
-If you want to provide a custom template which will be applied to a cell, you can pass such template either to the cell itself, or to its header. First create the column as you usually would:
+セルに適用されるカスタム テンプレートを提供する場合は、そのテンプレートをセル自体またはそのヘッダーに渡すことができます。まず、通常どおりに列を作成します。
 
 ```html
 
@@ -269,7 +269,7 @@ If you want to provide a custom template which will be applied to a cell, you ca
 
 ```
 
-and pass the templates to this column in the index.ts file:
+そして、テンプレートを index.ts ファイルのこの列に渡します。
 
 ```ts
 
@@ -305,9 +305,9 @@ public webGridCellEditCellTemplate = (ctx: IgcCellTemplateContext) => {
     }
 
 ```
-Working sample of the above can be found here for further reference: 
+上記のサンプルは、さらに参照するためにここにあります。 
 
-`sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
+`sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} セル編集テンプレート サンプル"`
 
 <!-- end: WebComponents -->
 
@@ -727,8 +727,8 @@ export class MyHGridEventsComponent {
 
 <!-- WebComponents, Blazor -->
 
-In addition to the predifined themes, the grid could be further customized by setting some of the available [CSS Properties](../theming.md).
-In case you would like to change some of the colors, you need to set a class for the grid first:
+事前定義されたテーマに加えて、利用可能な [CSS プロパティ](../theming.md)を設定することでグリッドをさらにカスタマイズできます。
+一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
 ```ts
 <igc-grid class="grid">
@@ -738,7 +738,7 @@ In case you would like to change some of the colors, you need to set a class for
 <IgbGrid Class="grid"></IgbGrid>
 ```
 
-Then set the related CSS properties for that class:
+次に、そのクラスに関連する CSS プロパティを設定します。
 
 ```css
 .grid {
