@@ -75,7 +75,7 @@ In order to handle the selection change, we need the `change` event. The emitted
 
 ```razor
 //In Javascript
-igRegisterScript("ComboCountryChange", (ctx) => {
+igRegisterScript("CountryChange", (ctx) => {
     const value = e.detail.newValue;
     cell.update(value);
     const nextCombo = document.getElementById("region_" + cell.id.rowID);
@@ -101,7 +101,7 @@ public bindEventsCountryCombo(rowId: any, cell: any) {
         const comboId = "country_" + rowId;
         var combo = document.getElementById(comboId) as IgcComboComponent<any>;
         combo?.addEventListener("igcChange", (e:any) => {
-            const value = e.detail.newValue;
+            const value = e.detail.newValue[0];
             cell.update(value);
             const nextCombo = document.getElementById("region_" + cell.id.rowID) as IgcComboComponent<any>;
             const nextProgress = document.getElementById("progress_region_" + cell.id.rowID) as IgcLinearProgressComponent;
