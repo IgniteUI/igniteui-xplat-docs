@@ -10,23 +10,22 @@ namespace: Infragistics.Controls
 
 The {Platform} `{ComponentName}` can handle thousands of updates per second, while staying responsive for user interactions.
 
-<!-- Angular -->
+
 ## {Platform} Live-data Update Example
 
 The sample below demonstrates the {ComponentTitle} performance when all records are updated multiple times per second. Use the UI controls to choose the number of records loaded and the frequency of updates.
-Feed the same data into the [Line Chart](../charts/types/line-chart.md) to experience the powerful charting capabilities of Ignite UI for Angular. The `Chart` button will show Category Prices per Region data for the selected rows and the `Chart` column button will show the same for the current row.
+Feed the same data into the [Column Chart](../../charts/types/column-chart.md) to experience the powerful charting capabilities of Ignite UI for Angular. The `Chart` button will show Category Prices per Region data for the selected rows and the `Chart` column button will show the same for the current row.
 
-`sample="/{ComponentSample}/finjs-live-data", height="700", alt="{Platform} Live data Update Example"`
+`sample="/{ComponentSample}/finjs", height="700", alt="{Platform} Live data Update Example"`
 
 
 
-<!-- end: Angular -->
 ## Data binding and updates
 
 A service provides data to the component when the page loads, and when the slider controller is used to fetch a certain number of records. While in a real scenario updated data would be consumed from the service, here data is updated in code. This is done to keep the demo simple and focus on its main goal - demonstrate the grid performance.
 
 ```Razor
-<IgbDataGrid data="data"><IgbDataGrid>
+<{ComponentSelector} Id="grid1" @ref="grid1"><{ComponentSelector}>
 ```
 
 <!-- Angular -->
@@ -37,23 +36,44 @@ A service provides data to the component when the page loads, and when the slide
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector}></{ComponentSelector}>
+<{ComponentSelector} id="grid1"></{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
 
+```razor
+public void OnStart()
+{
+    this.StartButton.Disabled = true;
+    this.ShowChartButton.Disabled = true;
+    this.StopButton.Disabled = false;
+    var startTimeSpan = TimeSpan.Zero;
+    var periodTimeSpan = TimeSpan.FromMilliseconds(Frequency);
+
+    this.Timer = new System.Threading.Timer((e) =>
+    {
+        grid1.Data = this.FinancialDataClass.UpdateRandomPrices(this.CurrentStocks);
+    }, null, startTimeSpan, periodTimeSpan);
+}
+```
 
 ```typescript
-    this.localService.getData(this.volume);
-    this.volumeSlider.onValueChange.subscribe(x => this.localService.getData(this.volume);
-    this.localService.records.subscribe(x => { this.data = x; });
+public startUpdate() {
+    const frequency = (document.getElementById('frequency') as IgcSliderComponent).value;
+    this._timer = setInterval(() => {
+        this.grid1.data = FinancialData.updateAllPrices(this.data);
+    }, frequency);
+    (document.getElementById('startButton') as IgcButtonComponent).disabled = true;
+    (document.getElementById('stopButton') as IgcButtonComponent).disabled = false;
+    (document.getElementById('chartButton') as IgcButtonComponent).disabled = true;
+}
 ```
 
 A change in the data field value or a change in the data object/data collection reference will trigger the corresponding pipes. However, this is not the case for columns, which are bound to [complex data objects](../data-grid.md#complex-data-binding). To resolve the situation, provide a new object reference for the data object containing the property. Example:
 
 ```Razor
-<IgbDataGrid data="data">
-    <IgbTextColumn field="price.usd"/>
-</IgbDataGrid>
+<{ComponentSelector}>
+    <IgbColumn Field="price.usd"></IgbColumn>
+</{ComponentSelector}>
 ```
 
 <!-- Angular -->
@@ -66,14 +86,15 @@ A change in the data field value or a change in the data object/data collection 
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid">
+<{ComponentSelector} id="grid1">
     <igc-column field="price.usd"></igc-column>
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
 
+
 ```typescript
-private updateData(data: IRecord[]) {
+private updateData(data: any[]) {
     const newData = []
     for (const rowData of data) {
         rowData.price = { usd: getUSD(), eur: getEUR() };
@@ -81,6 +102,10 @@ private updateData(data: IRecord[]) {
     }
     this.grid.data = newData;
 }
+```
+
+```razor
+ grid1.Data = this.FinancialDataClass.UpdateRandomPrices(this.CurrentStocks);
 ```
 
 ## Templates
@@ -93,7 +118,7 @@ As you can see the igxGrid component handles with ease the high-frequency update
 `sample="/{ComponentSample}/finjs-dock-manager", height="700", alt="{Platform} {ComponentTitle} Live data Update Example with a service"`
 
 
-<!-- end: Angular -->
+
 
 ### Start the hub connection
 
@@ -137,10 +162,12 @@ By using the [ComponentFactoryResolver](https://angular.io/api/core/ComponentFac
 ### DockManager component
 Take leverage of the [Dock Manager](../../layouts/dock-manager.md) WebComponent and build your own webview by using the docket or floating panels. In order to add a new floating panel, go ahead and open the Action pane on the right and click the 'Add floating pane' button. Drag and drop the new pane at the desired location.
 
+<!-- end: Angular -->
+
+
 ## API References
 * `{ComponentName}`
 * `Cell`
-* `BaseTransactionService`
 
 ## Additional Resources
 <!-- ComponentStart:  Grid -->
