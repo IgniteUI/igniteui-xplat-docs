@@ -695,7 +695,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Excel スタイル フィルタリング",
         "href": "grids/tree-grid/excel-style-filtering.md",
         "status": "NEW"
