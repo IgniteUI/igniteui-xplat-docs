@@ -623,7 +623,7 @@
     "exclude": ["Angular", "React"],
     "name": "Tree Grid",
     "href": "grids/tree-grid/overview.md",
-    "status": "UPDATED",
+    "status": "",
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
@@ -1125,7 +1125,7 @@
   {
     "name": "Line Chart",
     "href": "charts/types/line-chart.md",
-    "status": "UPDATED"
+    "status": ""
   },
   {
     "exclude": ["Blazor", "Angular", "React", "WebComponents"],
