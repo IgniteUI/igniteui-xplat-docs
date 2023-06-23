@@ -17,6 +17,9 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 * [Toolbar](menus/toolbar.md) - Beta
 
+## **{PackageVerChanges-22-2.2}**
+* Angular 16 support.
+
 ## **{PackageVerChanges-22-2.1}**
 * Angular 15 support.
 

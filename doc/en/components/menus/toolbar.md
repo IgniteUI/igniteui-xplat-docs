@@ -72,7 +72,6 @@ ModuleManager.register(
     IgcToolbarModule,
     IgcToolActionLabelModule,
     IgcDataChartToolbarModule,
-    IgcNumberAbbreviatorModule,
     IgcDataChartCategoryModule,
     IgcDataChartCoreModule,
     IgcDataChartInteractivityModule,
@@ -285,7 +284,7 @@ The following example demonstrates the vertical orientation of the {Platform} To
 
 The icon component can be styled by using it's `BaseTheme` property directly to the `Toolbar`. The following example demonstrates the various theme options that can be applied.
 
-`sample="/charts/toolbar/theming", height="70", alt="{Platform} Toolbar Styling/Theming"`
+`sample="/charts/toolbar/theming", height="600", alt="{Platform} Toolbar Styling/Theming"`
 
 ## API References
 
