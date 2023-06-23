@@ -73,7 +73,6 @@ ModuleManager.register(
     IgcToolbarModule,
     IgcToolActionLabelModule,
     IgcDataChartToolbarModule,
-    IgcNumberAbbreviatorModule,
     IgcDataChartCategoryModule,
     IgcDataChartCoreModule,
     IgcDataChartInteractivityModule,
@@ -286,7 +285,7 @@ builder.Services.AddIgniteUIBlazor(
 
 アイコン コンポーネントは、`BaseTheme` プロパティを `Toolbar` に直接使用してスタイルを設定できます。次の例は、適用できるさまざまなテーマ オプションを示しています。
 
-`sample="/charts/toolbar/theming", height="70", alt="{Platform} Toolbar スタイル設定/テーマ設定"`
+`sample="/charts/toolbar/theming", height="600", alt="{Platform} Toolbar スタイル設定/テーマ設定"`
 
 ## API リファレンス
 
