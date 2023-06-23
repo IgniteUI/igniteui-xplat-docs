@@ -240,6 +240,12 @@
       },
       {
         "exclude": ["Angular", "React"],
+        "name": "Live Data / Real-Time",
+        "href": "grids/grid/live-data.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
         "name": "マスター / 詳細",
         "href": "grids/grid/master-detail.md",
         "status": ""
