@@ -467,13 +467,13 @@ Then set the related CSS properties for that class:
 
 ```css
 .grid {
-    --igx-grid-group-row-background: #969799;
-    --igx-grid-group-row-selected-background: #969799;
-    --igx-grid-group-label-column-name-text: #f8f8f8;
-    --igx-grid-group-label-text: #f8f8f8;
-    --igx-grid-group-count-text-color: #222;
-    --igx-grid-expand-icon-color: #f8f8f8;
-    --igx-grid-expand-icon-hover-color: #f8f8f8;
+    --ig-grid-group-row-background: #969799;
+    --ig-grid-group-row-selected-background: #969799;
+    --ig-grid-group-label-column-name-text: #f8f8f8;
+    --ig-grid-group-label-text: #f8f8f8;
+    --ig-grid-group-count-text-color: #222;
+    --ig-grid-expand-icon-color: #f8f8f8;
+    --ig-grid-expand-icon-hover-color: #f8f8f8;
 }
 ```
 

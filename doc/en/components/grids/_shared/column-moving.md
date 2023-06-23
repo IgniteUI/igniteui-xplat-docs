@@ -315,9 +315,9 @@ Then set the related CSS properties to this class:
 
 ```css
 .grid {
-    --igx-grid-ghost-header-text-color: #f4d45c;
-    --igx-grid-ghost-header-background: #ad9d9d;
-    --igx-grid-ghost-header-icon-color: #f4d45c;
+    --ig-grid-ghost-header-text-color: #f4d45c;
+    --ig-grid-ghost-header-background: #ad9d9d;
+    --ig-grid-ghost-header-icon-color: #f4d45c;
 }
 ```
 ### Demo

@@ -602,10 +602,10 @@ Then set the related CSS properties for that class:
 
 ```css
 .grid {
-    --igx-grid-summary-background-color:#e0f3ff;
-    --igx-grid-summary-focus-background-color: rgba( #94d1f7, .3 );
-    --igx-grid-summary-label-color: rgb(228, 27, 117);
-    --igx-grid-summary-result-color: black;
+    --ig-grid-summary-background-color:#e0f3ff;
+    --ig-grid-summary-focus-background-color: rgba( #94d1f7, .3 );
+    --ig-grid-summary-label-color: rgb(228, 27, 117);
+    --ig-grid-summary-result-color: black;
 }
 ```
 

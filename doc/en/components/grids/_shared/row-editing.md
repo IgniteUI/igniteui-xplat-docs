@@ -412,8 +412,8 @@ Then set the related CSS properties for that class:
 
 ```css
 .grid {
-    --igx-banner-banner-background: #e3e3e3;
-    --igx-banner-banner-message-color: #423589;
+    --ig-banner-banner-background: #e3e3e3;
+    --ig-banner-banner-message-color: #423589;
 }
 ```
 
