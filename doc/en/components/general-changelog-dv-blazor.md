@@ -10,6 +10,10 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+### New Components
+
+* [Toolbar](menus/toolbar.md) - Beta
+
 ## **{PackageVerChanges-22-2.65}**
 ### New Components
 
