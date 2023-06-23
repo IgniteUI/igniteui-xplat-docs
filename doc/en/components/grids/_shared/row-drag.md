@@ -278,14 +278,12 @@ public rowDragGhostTemplate = (ctx: IgcGridRowDragGhostContext) => {
 ```
 
 The result of the configuration can be seem below in a `{ComponentName}` with row dragging and multiple selection enabled. The demo shows the count of the currently dragged rows:
-<!-- end: Angular -->
 
 #### Example Demo
 
 <!-- ComponentStart: HierarchicalGrid -->
 
 The drag ghost can be templated on every grid level, making it possible to have multiple ghost templates or to only provide a template for a single row island.
-
 
 ```html
 <{ComponentSelector}>
@@ -305,10 +303,7 @@ The drag ghost can be templated on every grid level, making it possible to have 
 
 `sample="/{ComponentSample}/multi-row-dragging", height="600", alt="{Platform} {ComponentTitle} Multi Row Drag"`
 
-
-
 <!-- end: Angular -->
-
 
 ### Templating the Drag Icon
 
@@ -448,18 +443,16 @@ Try to drag moons from the grid and drop them to their corresponding planets. Ro
 With the help of the grid's row drag events and the `Drop` directive, you can create a grid that allows you to reorder rows by dragging them.
 
 Since all of the actions will be happening _inside_ of the grid's body, that's where you have to attach the `Drop` directive:
-<!--  end: Angular -->
-
-<!--  WebComponents, Blazor -->
-
-With the help of the grid's row drag events you can create a grid that allows you to reorder rows by dragging them.
-
-<!--  end: WebComponents, Blazor -->
 
 ```html
 <igx-grid #grid [data]="data" [rowDraggable]="true" [primaryKey]="'ID'" igxDrop (dropped)="onDropAllowed($event)">
 </igx-grid>
 ```
+<!--  end: Angular -->
+
+<!--  WebComponents, Blazor -->
+
+With the help of the grid's row drag events you can create a grid that allows you to reorder rows by dragging them.
 
 ```html
 <igc-grid id="grid" row-draggable="true" primary-key="ID">
@@ -507,6 +500,9 @@ function getCurrentRowIndex(rowList, cursorPosition) {
 }
 ```
 
+<!--  end: WebComponents, Blazor -->
+
+<!--  Angular -->
 ```html
 <igx-tree-grid igxPreventDocumentScroll  #treeGrid [data]="localData" childDataKey="Employees" [rowDraggable]="true" foreignKey="ParentID"
     [primaryKey]="'ID'" (rowDragStart)="rowDragStart($event)" igxDrop (dropped)="dropInGrid($event)">
@@ -518,6 +514,7 @@ function getCurrentRowIndex(rowList, cursorPosition) {
     [rowDraggable]="true" (rowDragStart)="rowDragStart($event)" igxDrop (dropped)="rowDrop($event)">
 </igx-hierarchical-grid>
 ```
+<!--  end: Angular -->
 
 > [!Note]
 > Make sure that there is a `PrimaryKey` specified for the grid! The logic needs an unique identifier for the rows so they can be properly reordered.
