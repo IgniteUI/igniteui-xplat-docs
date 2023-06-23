@@ -14,6 +14,13 @@ namespace: Infragistics.Controls.Charts
 > このトピックでは、{PackageAngularComponents} パッケージに含まれていないコンポーネントの変更についてのみ説明します。
 > {PackageAngularComponents} コンポーネントに固有の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md) の CHANGELOG.MD を参照してください。
 
+### 新しいコンポーネント
+
+* [Toolbar](menus/toolbar.md) - ベータ版
+
+## **{PackageVerChanges-22-2.2}**
+* Angular 16 のサポート。
+
 ## **{PackageVerChanges-22-2.1}**
 * Angular 15 のサポート。
 

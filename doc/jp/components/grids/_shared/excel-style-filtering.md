@@ -14,7 +14,7 @@ _language: ja
 
 ## {Platform} {ComponentTitle} Excel スタイル フィルタリングの例
 
-`sample="/{ComponentSample}/excel-style-filtering-sample-1", height="620", alt="{Platform} {ComponentTitle} excel style filtering sample 1"`
+`sample="/{ComponentSample}/excel-style-filtering-sample-1", height="620", alt="{Platform} {ComponentTitle} Excel スタイルのフィルタリング サンプル 1"`
 
 
 ## 使用方法
@@ -34,7 +34,7 @@ _language: ja
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} auto-generate="true" allow-filtering="true" filter-mode="ExcelStyleFilter" >
+<{ComponentSelector} auto-generate="true" allow-filtering="true" filter-mode="excelStyleFilter" >
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
@@ -47,7 +47,7 @@ _language: ja
 
 検索ボックスに入力してフィルターを適用すると、検索条件に一致する項目のみが選択されます。ただし、現在フィルターされている項目に項目を追加したい場合は、**[現在の選択をフィルターに追加]** オプションを選択する必要があります。
 
-フィルターをクリアしたい場合、`[すべて選択]` オプションをチェックして [適用] ボタンを押します。
+フィルターをクリアしたい場合、**[すべて選択]** オプションをチェックして [適用] ボタンを押します。
 
 異なる式でフィルターを適用する場合、**テキスト フィルター**をクリックし、特定の列で使用できるフィルター演算子のサブメニューを開きます。いずれかを選択してカスタム フィルター ダイアログを開き、フィルターとロジック演算子を使用して式を追加できます。[クリア] ボタンでフィルターをクリアできます。
 
@@ -152,7 +152,7 @@ Add tree grid snippet
 </igc-tree-grid>
 ```
 
-以下のサンプルでは、「Product Name」 列と 「Discontinued」 列で 3 つの機能がすべて有効化され、「Unit Price」 で 3 つすべてが無効化され、「Added Date」 でピン固定と非表示のみが設定されています。
+以下のサンプルでは、「Product Name」列と「Discontinued」列で 3 つの機能がすべて有効化され、「Unit Price」で 3 つすべてが無効化され、「Added Date」でピン固定と非表示のみが設定されています。
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -823,7 +823,7 @@ $custom-drop-down:drop-down-theme(
 
 ### スキーマの使用
 
-テーマ エンジンを使用して [**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
+テーマ エンジンを使用して[**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
 
 すべてのコンポーネント (この場合は[light-grid]({environment:sassApiUrl}/index.html#variable-_light-grid)、[light-input-group]({environment:sassApiUrl}/index.html#variable-_light-input-group)、[light-button]({environment:sassApiUrl}/index.html#variable-_light-button)、[light-list]({environment:sassApiUrl}/index.html#variable-_light-list)、[light-checkbox]({environment:sassApiUrl}/index.html#variable-_light-checkbox)、[light-drop-down]({environment:sassApiUrl}/index.html#variable-_light-drop-down)) に提供される 2 つの定義済みスキーマのいずれかを拡張します。
 
@@ -980,6 +980,34 @@ $custom-drop-down: drop-down-theme(
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->
+
+<!-- WebComponents, Blazor -->
+## スタイル設定
+
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
+一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
+
+```html
+<igc-grid class="grid"></igc-grid>
+```
+
+```razor
+<IgbGrid class="grid"></IgbGrid>
+```
+
+次に、そのクラスに関連する CSS プロパティを設定します。
+
+```css
+.grid {
+    --igx-grid-filtering-row-background: #ffcd0f;
+    --igx-list-item-background: #ffcd0f;
+}
+```
+### デモ
+
+`sample="/{ComponentSample}/excel-style-filtering-style", height="950", alt="{Platform} {ComponentTitle} Excel スタイルのフィルタリング スタイル"`
+
+<!-- end: WebComponents, Blazor -->
 
 ## API リファレンス
 
