@@ -295,6 +295,22 @@ this.dockManager.addEventListener('activePaneChanged', ev => {
 });
 ```
 
+### レイアウトの編集
+
+一部のシナリオでは、ペインの追加または削除、方向の変更などによって、Dock Manager のレイアウトをカスタマイズする必要がある場合があります。次に例を示します。
+
+```ts
+const splitPane = this.dockManager.layout.rootPane.panes[0] as IgcSplitPane;
+const contentPane = splitPane.panes[0] as IgcContentPane;
+this.dockManager.removePane(contentPane);
+```
+
+これは、レイアウト オブジェクトを更新するだけです。Dock Manager の更新をトリガーして変更を UI に反映するには、レイアウト オブジェクトを再割り当てする必要があります。
+
+```ts
+this.dockManager.layout = { ...this.dockManager.layout };
+```
+
 ### レイアウトの保存／読み込み
 
 レイアウトを復元または永続化するには、`Layout` プロパティの値を取得または設定します。以下は、文字列化された JSON としてレイアウトを保存する方法です。
@@ -309,14 +325,6 @@ private saveLayout() {
 private loadLayout() {
     this.dockManager.layout = JSON.parse(this.savedLayout);
 }
-```
-
-レイアウト オブジェクトのプロパティを変更しても、ドック マネージャーの更新はトリガーされません。それが目的の場合、以下のようにレイアウト オブジェクト全体を置き換える必要があります。
-
-```ts
-const layout = this.dockManager.layout;
-layout.rootPane.orientation = IgcSplitPaneOrientation.vertical;
-this.dockManager.layout = { ...layout };
 ```
 
 ### 実行時にペインを追加する
@@ -536,7 +544,7 @@ igc-dockmanager::part(pane-header-maximize-button) {
 ### その他
  - <kbd>Alt</kbd> + <kbd>F3</kbd> アクティブなペインを閉じます。
 
-サンプル [demo](dock-manager.md#{Platform}-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
+サンプル [demo](dock-manager.md#{PlatformLower}-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
 
 <!-- WebComponents -->
 

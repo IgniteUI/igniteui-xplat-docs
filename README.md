@@ -47,22 +47,20 @@ This section provides information on how to install software required for runnin
 1. Install [Node.js](https://nodejs.org)
 2. Install [Yarn](https://yarnpkg.com/en/)
 
-#### Installing DocFX (v.2.48.1.0)
+#### Installing DocFX
 
-On Windows based platforms, install [chocolatey](https://chocolatey.org/) and then run:
-```
-choco install docfx -y --version=2.48.1.0
+To install docfx restore it as a dotnet tool: 
+
+```cmd
+dotnet tool restore
 ```
 
-On macOS based platforms, use `brew` to install the latest version of [DocFX](https://dotnet.github.io/docfx)
-```
-brew install docfx
-```
+**NOTE**: Performing `npm install` also restores dotnet tool dependencies as a `postinstall` step.
 
 #### Installing Node JS
 
 Run this command in VS code terminal to install required dependencies:
-```
+```cmd
 yarn install
 ```
 

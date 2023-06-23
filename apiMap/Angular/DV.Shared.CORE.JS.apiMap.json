@@ -29,6 +29,10 @@
     { "names":[{"platform":"Angular","mappedType":"ErrorBarCalculatorType","mappedName":"StandardDeviation"}],"originalName":"StandardDeviation"},
     { "names":[{"platform":"Angular","mappedType":"ErrorBarCalculatorType","mappedName":"StandardError"}],"originalName":"StandardError"},
     { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics"},
+  { "originalName":"FocusEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-focus-event-args.ts","mappedName":"IgxFocusEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"target"}],"originalName":"Target"}],"originalNamespace":"Infragistics"},
   { "originalName":"RectChangedEventArgs",
     "names":[{"platform":"Angular","fileName":"igx-rect-changed-event-args.ts","mappedName":"IgxRectChangedEventArgs"}],
     "members":[

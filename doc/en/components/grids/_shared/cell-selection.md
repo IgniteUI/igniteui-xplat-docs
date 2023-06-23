@@ -88,12 +88,44 @@ If you want to disable cell selection you can just set `CellSelection` to **none
 
 Below are the methods that you can use in order to select ranges, clear selection or get selected cells data.
 
-<!-- Angular -->
+
+<!-- Angular, WebComponents -->
+
+### Select range
+
+`selectRange` - Select a range of cells with the API. rowStart and rowEnd should use row indexes and columnStart and columnEnd could use column index or column data field value.
+
+```ts
+const range = { rowStart: 2, rowEnd: 2, columnStart: 1, columnEnd: 1 };
+this.grid.selectRange(range);
+```
+
+<!-- end: Angular, WebComponents -->
+
 ### Get Selected Data
 
-`GetSelectedData` will return array of the selected data in format depending on the selection. Examples below:
+<!-- Blazor -->
+`GetSelectedData` will return array of the selected data in Dictionary format. Examples below:
 
-1. If three different single cells are selected:
+```razor
+<IgbGrid @ref=grid  CellSelection="GridSelectionMode.Multiple" AutoGenerate=true></IgbGrid>
+
+@code {
+    private IgbGrid grid;
+
+    private async void GetSelectedData()
+    {
+        object[] data = await this.grid.GetSelectedDataAsync(true, true);
+    }
+}
+```
+<!-- end: Blazor -->
+
+<!-- Angular, WebComponents -->
+`getSelectedData` will return array of the selected data in format depending on the selection. Examples below:
+
+- If three different single cells are selected:
+
 ```typescript
 expectedData = [
     { CompanyName: 'Infragistics' },
@@ -102,7 +134,8 @@ expectedData = [
 ];
 ```
 
-2. If three cells from one column are selected:
+- If three cells from one column are selected:
+
 ```typescript
 expectedData = [
     { Address: 'Obere Str. 57'},
@@ -111,14 +144,16 @@ expectedData = [
 ];
 ```
 
-3. If three cells are selected with mouse drag from one row and three columns:
+- If three cells are selected with mouse drag from one row and three columns:
+
 ```typescript
 expectedData = [
     { Address: 'Avda. de la Constitución 2222', City: 'México D.F.', ContactTitle: 'Owner' }
 ];
 ```
 
-4. If three cells are selected with mouse drag from two rows and three columns:
+- If three cells are selected with mouse drag from two rows and three columns:
+
 ```typescript
 expectedData = [
     { ContactTitle: 'Sales Agent', Address: 'Cerrito 333', City: 'Buenos Aires'},
@@ -126,7 +161,8 @@ expectedData = [
 ];
 ```
 
-5. If two different ranges are selected:
+- If two different ranges are selected:
+
 ```typescript
 expectedData = [
     { ContactName: 'Martín Sommer', ContactTitle: 'Owner'},
@@ -136,7 +172,8 @@ expectedData = [
 ];
 ```
 
-6. If two overlapping ranges are selected, the format would be:
+- If two overlapping ranges are selected, the format would be:
+
 ```typescript
 expectedData = [
     { ContactName: 'Diego Roel', ContactTitle: 'Accounting Manager', Address: 'C/ Moralzarzal, 86'},
@@ -146,6 +183,9 @@ expectedData = [
 ];
 ```
 
+<!-- end: Angular, WebComponents -->
+
+<!-- Angular -->
 > [!Note]
 > `SelectedCells` will return the correct result even if the cell is not visible in grids view port. `GetSelectedData` will also return the selected cell data.
 > `GetSelectedRanges` will return the current selected ranges in the grid from both keyboard and pointer interactions. The type is **GridSelectionRange[]**.
@@ -164,6 +204,66 @@ The multi-cell selection is index based (DOM elements selection).
 - `GroupBy` - On column grouping selected cells will not be cleared.
 
 <!-- ComponentEnd: Grid, TreeGrid -->
+
+
+<!-- WebComponents, Blazor -->
+
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+<!-- ComponentStart: Grid -->
+
+```ts
+<igc-grid class="grid">
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties for that class:
+
+```css
+.grid {
+    --igx-grid-cell-selected-text-color: #FFFFFF;
+    --igx-grid-cell-active-border-color: #f2c43c;
+    --igx-grid-cell-selected-background: #0062A3;
+}
+```
+
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+```ts
+<igc-tree-grid id="treeGrid"></igc-tree-grid>
+```
+
+```razor
+<IgbTreeGrid Id="treeGrid"></IgbTreeGrid>
+```
+
+Then set the related CSS properties for that class:
+
+```css
+#treeGrid {
+    --cell-selected-text-color: #fff;
+    --cell-active-border-color: #f2c43c;
+    --cell-selected-background: #0062a3;
+    --cell-editing-background: #0062a3;
+}
+```
+
+<!-- ComponentEnd: Grid -->
+
+### Demo
+
+`sample="/{ComponentSample}/cell-selection-style", height="620", alt="{Platform} {ComponentTitle} Cell Selection Styling Example"`
+
+
+<!-- end: WebComponents, Blazor -->
 
 <!-- Angular -->
 ## Styling Guidelines
@@ -252,7 +352,7 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 
 ## Additional Resources
 
-
+<!-- ComponentStart:  Grid -->
 * [Selection](selection.md)
 * [Row Selection](row-selection.md)
 * [Filtering](filtering.md)
@@ -262,6 +362,7 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Virtualization and Performance](virtualization.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

@@ -219,6 +219,12 @@
       },
       {
         "exclude": ["Angular", "React"],
+        "name": "Export to Excel",
+        "href": "grids/grid/export-excel.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React"],
         "name": "Excel Style Filtering",
         "href": "grids/grid/excel-style-filtering.md",
         "status": ""
@@ -237,6 +243,12 @@
       },
       {
         "exclude": ["Angular", "React"],
+        "name": "Master-Detail",
+        "href": "grids/grid/master-detail.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
         "name": "Keyboard navigation",
         "href": "grids/grid/keyboard-navigation.md",
         "status": ""
@@ -251,6 +263,12 @@
         "exclude": ["Angular", "React"],
         "name": "Multi-Column Headers",
         "href": "grids/grid/multi-column-headers.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "Toolbar",
+        "href": "grids/grid/toolbar.md",
         "status": ""
       },
       {
@@ -347,6 +365,12 @@
         "exclude": ["Angular", "React"],
         "name": "Virtualization and performance",
         "href": "grids/grid/virtualization.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "Theming",
+        "href": "grids/theming.md",
         "status": ""
       }
     ]
@@ -596,7 +620,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Cell Editing",
         "href": "grids/tree-grid/cell-editing.md",
         "status": "NEW"
@@ -626,7 +650,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Cell Selection",
         "href": "grids/tree-grid/cell-selection.md",
         "status": "NEW"
@@ -644,19 +668,19 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Column Pinning",
         "href": "grids/tree-grid/column-pinning.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Column Resizing",
         "href": "grids/tree-grid/column-resizing.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Column Selection",
         "href": "grids/tree-grid/column-selection.md",
         "status": "NEW"
@@ -963,11 +987,6 @@
         "name": "Row Pinning",
         "href": "grids/data-grid/row-pinning.md",
         "status": ""
-      },
-      {
-        "name": "Theming",
-        "status": "",
-        "href": "grids/data-grid/theming.md"
       }
     ]
   },
@@ -1094,7 +1113,7 @@
   {
     "name": "Line Chart",
     "href": "charts/types/line-chart.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
     "exclude": ["Blazor", "Angular", "React", "WebComponents"],
@@ -1176,7 +1195,7 @@
         {
           "name": "Axis Gridlines",
           "href": "charts/features/chart-axis-gridlines.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "Axis Layouts",
@@ -1229,7 +1248,7 @@
         {
           "name": "Chart Overlays",
           "href": "charts/features/chart-overlays.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "Chart Performance",
@@ -1250,7 +1269,7 @@
         {
           "name": "Chart Trendlines",
           "href": "charts/features/chart-trendlines.md",
-          "status": ""
+          "status": "UPDATED"
         }
       ]
   },
@@ -1472,9 +1491,13 @@
     "status": ""
   },
   {
-    "exclude": ["Angular"],
     "name": "Menus",
     "header": true
+  },
+  {
+    "name": "Toolbar",
+    "href": "menus/toolbar.md",
+    "status": "PREVIEW"
   },
   {
     "exclude": ["Angular"],
@@ -1957,12 +1980,6 @@
         "name": "Row Pinning",
         "href": "grids/data-grid/row-pinning.md",
         "status": ""
-      },
-      {
-        "exclude": ["Angular", "React"],
-        "name": "Theming",
-        "status": "",
-        "href": "grids/data-grid/theming.md"
       }
     ]
   }

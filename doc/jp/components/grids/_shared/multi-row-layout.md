@@ -75,9 +75,9 @@ _language: ja
 	<igc-column row-start="1" col-start="1" row-end="3" field="ID"></igc-column>
 </igc-column-layout>
 <igc-column-layout>
-	<igc-column row-start="1" [col-start="1" col-end="3" field="CompanyName"></igc-column>
-	<igc-column row-start="2" [col-start="1" col-end="2" field="ContactName"></igc-column>
-	<igc-column row-start="2" [col-start="2" col-end="3" field="ContactTitle"></igc-column>
+	<igc-column row-start="1" col-start="1" col-end="3" field="CompanyName"></igc-column>
+	<igc-column row-start="2" col-start="1" col-end="2" field="ContactName"></igc-column>
+	<igc-column row-start="2" col-start="2" col-end="3" field="ContactTitle"></igc-column>
 </igc-column-layout>
 <igc-column-layout>
 	<igc-column row-start="1" col-start="1" col-end="3" field="Country"></igc-column>
@@ -318,6 +318,39 @@ $my-custom-schema: extend($light-schema, (
 
 <!-- end: Angular -->
 
+<!-- WebComponents, Blazor -->
+## スタイル設定
+
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
+一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
+
+```html
+<igc-grid class="grid"></igc-grid>
+```
+
+```razor
+<IgbGrid class="grid"></IgbGrid>
+```
+
+次に、そのクラスに関連する CSS プロパティを設定します。
+
+```css
+.grid {
+    --igx-grid-cell-active-border-color: #ffcd0f;
+    --igx-grid-cell-selected-background: #6f6f6f;
+    --igx-grid-row-hover-background: #fde069;
+    --igx-grid-row-selected-background: #8d8d8d;
+    --igx-grid-header-background: #494949;
+    --igx-grid-header-text-color: #fff;
+}
+```
+### デモ
+
+`sample="/{ComponentSample}/multi-row-layout-styling", height="755", alt="{Platform} {ComponentTitle} 複数列ヘッダーのスタイル サンプル"`
+
+
+<!-- end: WebComponents, Blazor -->
+
 ## API リファレンス
 
 * `{ComponentName}`
@@ -326,11 +359,13 @@ $my-custom-schema: extend($light-schema, (
 
 ## その他のリソース
 
+<!-- ComponentStart:  Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [ソート](sorting.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

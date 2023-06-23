@@ -66,9 +66,6 @@ Define a `{ComponentName}` with bound data source and `RowEditable` set to true:
     <igc-column field="ReorderLevel" header="ReorderLever" data-type="Number"></igc-column>
     <igc-column field="ProductName" header="ProductName" data-type="String"></igc-column>
     <igc-column id="unitsInStock" field="UnitsInStock" header="UnitsInStock" data-type="Number">
-        <ng-template igcCellEditor let-cell="cell">
-            <input name="units" [(ngModel)]="cell.value" style="color: black" />
-        </ng-template>
     </igc-column>
     <igc-column field="OrderDate" data-type="Date"></igc-column>
     <igc-column field="Discontinued" header="Discontinued" data-type="Boolean"></igc-column>
@@ -76,14 +73,11 @@ Define a `{ComponentName}` with bound data source and `RowEditable` set to true:
 ```
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-    var unitsInStock = this.unitsInStock = document.getElementById('unitsInStock') as IgcColumnComponent;
+    var grid  = document.getElementById('grid') as IgcGridComponent;
+    var unitsInStock = document.getElementById('unitsInStock') as IgcColumnComponent;
+    grid.data = this.data;
+    unitsInStock.bodyTemplate = this.unitsInStockCellTemplate;
 
-    this._bind = () => {
-        grid.data = this.data;
-        unitsInStock.bodyTemplate = this.unitsInStockCellTemplate;
-    }
-    this._bind();
 }
 
 public unitsInStockCellTemplate = (ctx: IgcCellTemplateContext) => {
@@ -232,7 +226,7 @@ igRegisterScript("RowEditTextTemplate", (ctx) => {
 
  ```ts
 public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
-    return html`Changes: ${ctx.rowChangesCount}`;
+    return html`Changes: ${ctx.$implicit}`;
 }
 ```
 
@@ -264,9 +258,10 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
 
  ```ts
 public rowEditActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
+    const endRowEdit = ctx.$implicit;
     return html`
-        <button onClick="${this.endRowEdit(false)}">Cancel</button>
-	    <button onClick="${this.endRowEdit(true)}">Apply</button>
+        <button @click="${() => endRowEdit(false)}">Cancel</button>
+        <button @click="${() => endRowEdit(true)}">Apply</button>
     `;
 }
 ```
@@ -396,6 +391,39 @@ After styling the banner and buttons, we also define a custom style for [the cel
 > [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
+<!-- end: Angular -->
+
+<!-- WebComponents, Blazor -->
+
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```ts
+<igc-grid class="grid">
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties for that class:
+
+```css
+.grid {
+    --igx-banner-banner-background: #e3e3e3;
+    --igx-banner-banner-message-color: #423589;
+}
+```
+
+### Demo
+
+`sample="/{ComponentSample}/row-editing-style", height="560", alt="{Platform} {ComponentTitle} Row Editing Styling Example"`
+
+
+<!-- end: WebComponents, Blazor -->
+
 ## Known Issues and Limitations
 
 - When the grid has no `PrimaryKey` set and remote data scenarios are enabled (when paging, sorting, filtering, scrolling trigger requests to a remote server to retrieve the data to be displayed in the grid), a row will lose the following state after a data request completes:
@@ -404,8 +432,6 @@ After styling the banner and buttons, we also define a custom style for [the cel
 * Row Expand/collapse
 * Row Editing
 * Row Pinning
-
-<!-- end: Angular -->
 
 ## API References
 
@@ -432,9 +458,11 @@ After styling the banner and buttons, we also define a custom style for [the cel
 
 <!-- Blazor -->
 
-
+<!-- ComponentStart:  Grid -->
 * [{ComponentTitle} Editing](editing.md)
-* [{ComponentTitle} Transactions](batch-editing.md)
+<!-- ComponentEnd:  Grid -->
+
+<!-- * [{ComponentTitle} Transactions](batch-editing.md) -->
 
 <!-- end: Blazor -->
 

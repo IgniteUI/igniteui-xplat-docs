@@ -66,7 +66,7 @@ _language: ja
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
-`sample="/{ComponentSample}/column-selection-group", height="570", alt="{Platform} {ComponentTitle} column selection group"`
+`sample="/{ComponentSample}/column-selection-group", height="570", alt="{Platform} {ComponentTitle} 列選択グループ"`
 
 
 ## キーボードの組み合わせ
@@ -87,6 +87,105 @@ _language: ja
 
 API 操作の詳細については、[API リファレンス](#api-リファレンス) セクションを参照してください。
 
+<!-- WebComponents, Blazor -->
+
+## スタイル設定
+
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。一部の色を変更したい場合は、最初にグリッドの `class` を設定する必要があります。
+
+<!-- ComponentStart: Grid -->
+
+```html
+<igc-grid class="grid"></igc-grid>
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+```html
+<igc-tree-grid class="treeGrid"></igc-tree-grid>
+```
+
+```razor
+<IgbTreeGrid Class="treeGrid"></IgbTreeGrid>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+
+```html
+<igc-hierarchical-grid class="hierarchicalGrid"></igc-hierarchical-grid>
+```
+
+```razor
+<IgbHierarchicalGrid Class="hierarchicalGrid"></IgbHierarchicalGrid>
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
+
+次に、そのクラスに関連する CSS プロパティを設定します。
+
+<!-- ComponentStart: Grid -->
+
+```css
+.grid {
+    --igx-grid-row-selected-background: #0062A3;
+    --igx-grid-row-selected-text-color: #ecaa53;
+    --igx-grid-row-selected-hover-background: #0062A3;
+    --igx-grid-header-selected-text-color: #ecaa53;
+    --igx-grid-header-selected-background: #0062A3;
+    --igx-grid-row-selected-hover-text-color: #ecaa53;
+    --igx-grid-row-selected-hover-background: #0062A3;
+}
+```
+
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+```css
+.treeGrid {
+    --igx-grid-row-selected-background: #0062A3;
+    --igx-grid-row-selected-text-color: #ecaa53;
+    --igx-grid-row-selected-hover-background: #0062A3;
+    --igx-grid-header-selected-text-color: #ecaa53;
+    --igx-grid-header-selected-background: #0062A3;
+    --igx-grid-row-selected-hover-text-color: #ecaa53;
+    --igx-grid-row-selected-hover-background: #0062A3;
+}
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+
+```css
+.hierarchicalGrid {
+    --igx-grid-row-selected-background: #0062A3;
+    --igx-grid-row-selected-text-color: #ecaa53;
+    --igx-grid-row-selected-hover-background: #0062A3;
+    --igx-grid-header-selected-text-color: #ecaa53;
+    --igx-grid-header-selected-background: #0062A3;
+    --igx-grid-row-selected-hover-text-color: #ecaa53;
+    --igx-grid-row-selected-hover-background: #0062A3;
+}
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
+
+### デモ
+
+`sample="/{ComponentSample}/column-selection-styles", height="570", alt="{Platform} {ComponentTitle} 列選択スタイル"`
+
+
+<!-- end: WebComponents, Blazor -->
+
 <!-- Angular -->
 
 ## スタイル設定
@@ -100,12 +199,10 @@ API 操作の詳細については、[API リファレンス](#api-リファレ�
 // @import '~igniteui-angular/lib/core/styles/themes/index';
 ```
 
-```razor
-TO DO
-```
-
 > [!Note]
+<!-- ComponentStart:  Grid -->
 >[行選択](row-selection.md)と[列選択](column-selection.md)は個別に操作できないことに注意してください。同じ`変数`に依存します。
+<!-- ComponentEnd:  Grid -->
 
 **選択**と**ホバー**のスタイル設定を変更します。 <br/>
 
@@ -125,10 +222,6 @@ $custom-grid-theme: grid-theme(
 );
 ```
 
-```razor
-TO DO
-```
-
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
@@ -141,10 +234,6 @@ $custom-grid-theme: grid-theme(
     $header-selected-text-color: #ECAA53,
     $header-selected-background: #011627
 );
-```
-
-```razor
-TO DO
 ```
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
@@ -164,10 +253,6 @@ TO DO
 @include css-vars($custom-grid-theme)
 ```
 
-```razor
-TO DO
-```
-
 ### 基本テーマのオーバーライド
 Internet Explorer 11 のコンポーネントをスタイル設定するには、CSS 変数をサポートしていないため、別のアプローチが必要です。
 
@@ -182,15 +267,11 @@ Internet Explorer 11 のコンポーネントをスタイル設定するには�
 }
 ```
 
-```razor
-TO DO
-```
-
 ### デモ
 
 <!-- NOTE this sample is differed -->
 
-`sample="/{ComponentSample}/column-selection-styles", height="570", alt="{Platform} {ComponentTitle} column selection styles"`
+`sample="/{ComponentSample}/column-selection-styles", height="570", alt="{Platform} {ComponentTitle} 列選択スタイル"`
 
 
 > [!Note]
@@ -227,7 +308,7 @@ TO DO
 
 ## その他のリソース
 
-
+<!-- ComponentStart:  Grid -->
 * [選択](selection.md)
 * [セル選択](cell-selection.md)
 * [ページング](paging.md)
@@ -238,6 +319,7 @@ TO DO
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [仮想化とパフォーマンス](virtualization.md)
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

@@ -139,12 +139,9 @@ You can subscribe to the `ColumnMovingEnd` event of the `{ComponentName}` to imp
 ```typescript
 constructor() {
     var dataGrid = this.dataGrid = document.getElementById('dataGrid') as IgcGridComponent;
+    dataGrid.data = this.data;
+    dataGrid.addEventListener("columnMovingEnd", this.onColumnMovingEnd);
 
-    this._bind = () => {
-        dataGrid.data = this.data;
-        dataGrid.addEventListener("columnMovingEnd", this.onColumnMovingEnd);
-    }
-    this._bind();
 }
 ```
 <!-- end: WebComponents -->
@@ -302,7 +299,8 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 <!-- WebComponents, Blazor -->
 ## Styling
 
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](theming.md).
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
 ```html
@@ -334,6 +332,8 @@ Then set the related CSS properties to this class:
 * `{ComponentName}`
 
 ## Additional Resources
+
+<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -342,9 +342,8 @@ Then set the related CSS properties to this class:
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-<!-- ComponentStart: HierarchicalGrid -->
 * [Searching](search.md)
-<!-- ComponentEnd: HierarchicalGrid -->
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

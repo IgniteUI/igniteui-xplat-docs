@@ -742,7 +742,7 @@ public selectDensity(event) {
 `{ComponentName}` の行の高さを変更するその他のオプションに `RowHeight` プロパティがあります。このプロパティと `DisplayDensity` プションが `{ComponentName}` レイアウトにどのように動作に影響するかを以下で確認できます。
 
 以下を確認してください。
- - `RowHeight` を指定した場合**、`DisplayDensity` オプションは行の高さに影響しません。
+ - **`RowHeight` を指定した場合**、`DisplayDensity` オプションは行の高さに影響しません。
  - `DisplayDensity` は、上記の理由により**残りすべての {ComponentTitle} 要素に影響します**。
 
 サンプル機能を拡張して `RowHeight` プロパティを `{ComponentName}` に追加します。
@@ -779,7 +779,7 @@ public selectDensity(event) {
 * `Column`
 
 ## その他のリソース
-
+<!-- ComponentStart:  Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [編集](editing.md)
 * [ページング](paging.md)
@@ -789,13 +789,8 @@ public selectDensity(event) {
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
-
-<!-- ComponentStart: HierarchicalGrid -->
-
 * [検索](search.md)
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

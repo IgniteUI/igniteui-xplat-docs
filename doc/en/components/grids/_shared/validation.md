@@ -659,11 +659,12 @@ public cellStyles = {
 
 <!-- Blazor -->
 
-
+<!-- ComponentStart:  Grid -->
 * [{ComponentTitle} Editing](editing.md)
 * [{ComponentTitle} Row Editing](row-editing.md)
 * [{ComponentTitle} Row Adding](row-adding.md)
 * [{ComponentTitle} Transactions](batch-editing.md)
+<!-- ComponentEnd:  Grid -->
 
 <!-- end: Blazor -->
 

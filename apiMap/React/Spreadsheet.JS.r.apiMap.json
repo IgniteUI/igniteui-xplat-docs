@@ -3,7 +3,7 @@
   { "originalName":"SpreadsheetChartAdapterBase",
     "names":[{"platform":"React","fileName":"SpreadsheetChartAdapterBase.ts","mappedName":"SpreadsheetChartAdapterBase"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids"},
   { "originalName":"Spreadsheet",
     "names":[{"platform":"React","fileName":"igr-spreadsheet.ts","mappedName":"IgrSpreadsheet"}],
     "members":[
@@ -40,11 +40,11 @@
     { "names":[{"platform":"React","mappedType":"method","mappedName":"executeAction"}],"originalName":"ExecuteCommand"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"flush"}],"originalName":"Flush"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"styleUpdated"}],"originalName":"StyleUpdated"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportVisualData"}],"originalName":"ExportVisualData"}],"originalBaseTypeName":"PropertyChangeNotifierExtended","originalBaseTypeNamespace":"Infragistics","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportVisualData"}],"originalName":"ExportVisualData"}],"originalBaseTypeName":"PropertyChangeNotifierExtended","originalBaseTypeNamespace":"Infragistics","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetContextMenuOpeningEventArgs",
     "names":[{"platform":"React","fileName":"igr-spreadsheet-context-menu-opening-event-args.ts","mappedName":"IgrSpreadsheetContextMenuOpeningEventArgs"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"SpreadsheetContextMenuArea","mappedName":"menuArea"}],"originalName":"MenuArea"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"SpreadsheetContextMenuArea","mappedName":"menuArea"}],"originalName":"MenuArea"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetCell",
     "names":[{"platform":"React","fileName":"SpreadsheetCell.ts","mappedName":"SpreadsheetCell"}],
     "members":[
@@ -53,7 +53,7 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"row"}],"originalName":"Row"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"column"}],"originalName":"Column"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"equals"}],"originalName":"Equals"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetCellRange",
     "names":[{"platform":"React","fileName":"SpreadsheetCellRange.ts","mappedName":"SpreadsheetCellRange"}],
     "members":[
@@ -70,7 +70,7 @@
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"intersectsWith"}],"originalName":"IntersectsWith"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetCellRange","mappedName":"union"}],"originalName":"Union"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"equals"}],"originalName":"Equals"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetSelection",
     "names":[{"platform":"React","fileName":"SpreadsheetSelection.ts","mappedName":"SpreadsheetSelection"}],
     "members":[
@@ -82,7 +82,7 @@
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"clearCellRanges"}],"originalName":"ClearCellRanges"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"resetSelection"}],"originalName":"ResetSelection"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"setActiveCell"}],"originalName":"SetActiveCell"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"unselectRange"}],"originalName":"UnselectRange"}],"originalBaseTypeName":"PropertyChangeNotifierExtended","originalBaseTypeNamespace":"Infragistics","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"unselectRange"}],"originalName":"UnselectRange"}],"originalBaseTypeName":"PropertyChangeNotifierExtended","originalBaseTypeNamespace":"Infragistics","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetCommandType","isEnum":true,
     "names":[{"platform":"React","fileName":"SpreadsheetAction.ts","mappedName":"SpreadsheetAction"}],
     "members":[
@@ -290,14 +290,14 @@
     { "names":[{"platform":"React","mappedType":"SpreadsheetAction","mappedName":"showCellDropDown"}],"originalName":"ShowCellDropDown"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetAction","mappedName":"pickFromDropDownList"}],"originalName":"PickFromDropDownList"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetAction","mappedName":"showCustomSortDialog"}],"originalName":"ShowCustomSortDialog"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetCellEditMode","isEnum":true,
     "names":[{"platform":"React","fileName":"SpreadsheetCellEditMode.ts","mappedName":"SpreadsheetCellEditMode"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"SpreadsheetCellEditMode","mappedName":"notInEditMode"}],"originalName":"NotInEditMode"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetCellEditMode","mappedName":"arrowKeysNavigateBetweenCells"}],"originalName":"ArrowKeysNavigateBetweenCells"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetCellEditMode","mappedName":"arrowKeysNavigateInCell"}],"originalName":"ArrowKeysNavigateInCell"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetCellRangeBorders","isEnum":true,
     "names":[{"platform":"React","fileName":"SpreadsheetCellRangeBorders.ts","mappedName":"SpreadsheetCellRangeBorders"}],
     "members":[
@@ -312,14 +312,14 @@
     { "names":[{"platform":"React","mappedType":"SpreadsheetCellRangeBorders","mappedName":"outsideBorder"}],"originalName":"OutsideBorder"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetCellRangeBorders","mappedName":"insideBorder"}],"originalName":"InsideBorder"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetCellRangeBorders","mappedName":"allBorder"}],"originalName":"AllBorder"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetCellSelectionMode","isEnum":true,
     "names":[{"platform":"React","fileName":"SpreadsheetCellSelectionMode.ts","mappedName":"SpreadsheetCellSelectionMode"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"SpreadsheetCellSelectionMode","mappedName":"normal"}],"originalName":"Normal"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetCellSelectionMode","mappedName":"extendSelection"}],"originalName":"ExtendSelection"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetCellSelectionMode","mappedName":"addToSelection"}],"originalName":"AddToSelection"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetContextMenuArea","isEnum":true,
     "names":[{"platform":"React","fileName":"SpreadsheetContextMenuArea.ts","mappedName":"SpreadsheetContextMenuArea"}],
     "members":[
@@ -331,7 +331,7 @@
     { "names":[{"platform":"React","mappedType":"SpreadsheetContextMenuArea","mappedName":"formulaBarEditor"}],"originalName":"FormulaBarEditor"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetContextMenuArea","mappedName":"selectAllButton"}],"originalName":"SelectAllButton"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetContextMenuArea","mappedName":"tableCell"}],"originalName":"TableCell"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetEditModeValidationErrorAction","isEnum":true,
     "names":[{"platform":"React","fileName":"SpreadsheetEditModeValidationErrorAction.ts","mappedName":"SpreadsheetEditModeValidationErrorAction"}],
     "members":[
@@ -339,7 +339,7 @@
     { "names":[{"platform":"React","mappedType":"SpreadsheetEditModeValidationErrorAction","mappedName":"stayInEditMode"}],"originalName":"StayInEditMode"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetEditModeValidationErrorAction","mappedName":"revertChange"}],"originalName":"RevertChange"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetEditModeValidationErrorAction","mappedName":"acceptChange"}],"originalName":"AcceptChange"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetEnterKeyNavigationDirection","isEnum":true,
     "names":[{"platform":"React","fileName":"SpreadsheetEnterKeyNavigationDirection.ts","mappedName":"SpreadsheetEnterKeyNavigationDirection"}],
     "members":[
@@ -347,7 +347,7 @@
     { "names":[{"platform":"React","mappedType":"SpreadsheetEnterKeyNavigationDirection","mappedName":"right"}],"originalName":"Right"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetEnterKeyNavigationDirection","mappedName":"up"}],"originalName":"Up"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetEnterKeyNavigationDirection","mappedName":"left"}],"originalName":"Left"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetUserPromptTrigger","isEnum":true,
     "names":[{"platform":"React","fileName":"SpreadsheetUserPromptTrigger.ts","mappedName":"SpreadsheetUserPromptTrigger"}],
     "members":[
@@ -384,77 +384,77 @@
     { "names":[{"platform":"React","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"largePasteOperation"}],"originalName":"LargePasteOperation"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"invalidSortOrFilterRange"}],"originalName":"InvalidSortOrFilterRange"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"largeCopyOperation"}],"originalName":"LargeCopyOperation"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetActiveCellChangedEventArgs",
     "names":[{"platform":"React","fileName":"igr-spreadsheet-active-cell-changed-event-args.ts","mappedName":"IgrSpreadsheetActiveCellChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"SpreadsheetCell","mappedName":"newValue"}],"originalName":"NewValue"},
-    { "names":[{"platform":"React","mappedType":"SpreadsheetCell","mappedName":"oldValue"}],"originalName":"OldValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"SpreadsheetCell","mappedName":"oldValue"}],"originalName":"OldValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetActivePaneChangedEventArgs",
     "names":[{"platform":"React","fileName":"igr-spreadsheet-active-pane-changed-event-args.ts","mappedName":"IgrSpreadsheetActivePaneChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"SpreadsheetPane","mappedName":"newValue"}],"originalName":"NewValue"},
-    { "names":[{"platform":"React","mappedType":"SpreadsheetPane","mappedName":"oldValue"}],"originalName":"OldValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"SpreadsheetPane","mappedName":"oldValue"}],"originalName":"OldValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetActiveTableChangedEventArgs",
     "names":[{"platform":"React","fileName":"igr-spreadsheet-active-table-changed-event-args.ts","mappedName":"IgrSpreadsheetActiveTableChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"WorksheetTable","mappedName":"newValue"}],"originalName":"NewValue"},
-    { "names":[{"platform":"React","mappedType":"WorksheetTable","mappedName":"oldValue"}],"originalName":"OldValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"WorksheetTable","mappedName":"oldValue"}],"originalName":"OldValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetActiveWorksheetChangedEventArgs",
     "names":[{"platform":"React","fileName":"igr-spreadsheet-active-worksheet-changed-event-args.ts","mappedName":"IgrSpreadsheetActiveWorksheetChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"Worksheet","mappedName":"newValue"}],"originalName":"NewValue"},
-    { "names":[{"platform":"React","mappedType":"Worksheet","mappedName":"oldValue"}],"originalName":"OldValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"Worksheet","mappedName":"oldValue"}],"originalName":"OldValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetCommandExecutedEventArgs",
     "names":[{"platform":"React","fileName":"igr-spreadsheet-action-executed-event-args.ts","mappedName":"IgrSpreadsheetActionExecutedEventArgs"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"SpreadsheetAction","mappedName":"command"}],"originalName":"Command"},
-    { "names":[{"platform":"React","mappedType":"any","mappedName":"commandParameter"}],"originalName":"CommandParameter"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"commandParameter"}],"originalName":"CommandParameter"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetCommandExecutingEventArgs",
     "names":[{"platform":"React","fileName":"igr-spreadsheet-action-executing-event-args.ts","mappedName":"IgrSpreadsheetActionExecutingEventArgs"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"SpreadsheetAction","mappedName":"command"}],"originalName":"Command"},
-    { "names":[{"platform":"React","mappedType":"any","mappedName":"commandParameter"}],"originalName":"CommandParameter"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"commandParameter"}],"originalName":"CommandParameter"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetEditModeExitingEventArgs",
     "names":[{"platform":"React","fileName":"igr-spreadsheet-edit-mode-exiting-event-args.ts","mappedName":"IgrSpreadsheetEditModeExitingEventArgs"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"acceptChanges"}],"originalName":"AcceptChanges"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"canCancel"}],"originalName":"CanCancel"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetCell","mappedName":"cell"}],"originalName":"Cell"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"editText"}],"originalName":"EditText"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"editText"}],"originalName":"EditText"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetEditModeExitedEventArgs",
     "names":[{"platform":"React","fileName":"igr-spreadsheet-edit-mode-exited-event-args.ts","mappedName":"IgrSpreadsheetEditModeExitedEventArgs"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"SpreadsheetCell","mappedName":"cell"}],"originalName":"Cell"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"SpreadsheetCell","mappedName":"cell"}],"originalName":"Cell"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetEditModeEnteringEventArgs",
     "names":[{"platform":"React","fileName":"igr-spreadsheet-edit-mode-entering-event-args.ts","mappedName":"IgrSpreadsheetEditModeEnteringEventArgs"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"SpreadsheetCell","mappedName":"cell"}],"originalName":"Cell"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"SpreadsheetCell","mappedName":"cell"}],"originalName":"Cell"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetEditModeEnteredEventArgs",
     "names":[{"platform":"React","fileName":"igr-spreadsheet-edit-mode-entered-event-args.ts","mappedName":"IgrSpreadsheetEditModeEnteredEventArgs"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"SpreadsheetCell","mappedName":"cell"}],"originalName":"Cell"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"SpreadsheetCell","mappedName":"cell"}],"originalName":"Cell"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetEditModeValidationErrorEventArgs",
     "names":[{"platform":"React","fileName":"igr-spreadsheet-edit-mode-validation-error-event-args.ts","mappedName":"IgrSpreadsheetEditModeValidationErrorEventArgs"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"SpreadsheetEditModeValidationErrorAction","mappedName":"action"}],"originalName":"Action"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"canStayInEditMode"}],"originalName":"CanStayInEditMode"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetCell","mappedName":"cell"}],"originalName":"Cell"},
-    { "names":[{"platform":"React","mappedType":"DataValidationRule","mappedName":"validationRule"}],"originalName":"ValidationRule"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"DataValidationRule","mappedName":"validationRule"}],"originalName":"ValidationRule"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetEditRangePasswordNeededEventArgs",
     "names":[{"platform":"React","fileName":"igr-spreadsheet-edit-range-password-needed-event-args.ts","mappedName":"IgrSpreadsheetEditRangePasswordNeededEventArgs"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"WorksheetProtectedRange[]","mappedName":"ranges"}],"originalName":"Ranges"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"unprotect"}],"originalName":"Unprotect"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"unprotect"}],"originalName":"Unprotect"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetHyperlinkExecutingEventArgs",
     "names":[{"platform":"React","fileName":"igr-spreadsheet-hyperlink-executing-event-args.ts","mappedName":"IgrSpreadsheetHyperlinkExecutingEventArgs"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"WorksheetHyperlink","mappedName":"hyperlink"}],"originalName":"Hyperlink"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"workingDirectory"}],"originalName":"WorkingDirectory"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"workingDirectory"}],"originalName":"WorkingDirectory"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetSelectionChangedEventArgs",
     "names":[{"platform":"React","fileName":"igr-spreadsheet-selection-changed-event-args.ts","mappedName":"IgrSpreadsheetSelectionChangedEventArgs"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"SpreadsheetPane","mappedName":"pane"}],"originalName":"Pane"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"SpreadsheetPane","mappedName":"pane"}],"originalName":"Pane"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetUserPromptDisplayingEventArgs",
     "names":[{"platform":"React","fileName":"igr-spreadsheet-user-prompt-displaying-event-args.ts","mappedName":"IgrSpreadsheetUserPromptDisplayingEventArgs"}],
     "members":[
@@ -464,9 +464,9 @@
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"displayMessage"}],"originalName":"DisplayMessage"},
     { "names":[{"platform":"React","mappedType":"any","mappedName":"exception"}],"originalName":"Exception"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"message"}],"originalName":"Message"},
-    { "names":[{"platform":"React","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"trigger"}],"originalName":"Trigger"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"trigger"}],"originalName":"Trigger"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetWorkbookDirtiedEventArgs",
-    "names":[{"platform":"React","fileName":"igr-spreadsheet-workbook-dirtied-event-args.ts","mappedName":"IgrSpreadsheetWorkbookDirtiedEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    "names":[{"platform":"React","fileName":"igr-spreadsheet-workbook-dirtied-event-args.ts","mappedName":"IgrSpreadsheetWorkbookDirtiedEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetCellRangeFormat",
     "names":[{"platform":"React","fileName":"SpreadsheetCellRangeFormat.ts","mappedName":"SpreadsheetCellRangeFormat"}],
     "members":[
@@ -481,9 +481,9 @@
     { "names":[{"platform":"React","mappedType":"WorkbookStyle","mappedName":"style"}],"originalName":"Style"},
     { "names":[{"platform":"React","mappedType":"VerticalCellAlignment","mappedName":"verticalAlignment"}],"originalName":"VerticalAlignment"},
     { "names":[{"platform":"React","mappedType":"Nullable","mappedName":"wrapText"}],"originalName":"WrapText"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"setBorders"}],"originalName":"SetBorders"}],"originalBaseTypeName":"PropertyChangeNotifierExtended","originalBaseTypeNamespace":"Infragistics","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"setBorders"}],"originalName":"SetBorders"}],"originalBaseTypeName":"PropertyChangeNotifierExtended","originalBaseTypeNamespace":"Infragistics","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetColumnScrollRegion",
-    "names":[{"platform":"React","fileName":"SpreadsheetColumnScrollRegion.ts","mappedName":"SpreadsheetColumnScrollRegion"}],"members":[],"originalBaseTypeName":"SpreadsheetScrollRegion","originalBaseTypeNamespace":"Infragistics.Controls.Grids.Core","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    "names":[{"platform":"React","fileName":"SpreadsheetColumnScrollRegion.ts","mappedName":"SpreadsheetColumnScrollRegion"}],"members":[],"originalBaseTypeName":"SpreadsheetScrollRegion","originalBaseTypeNamespace":"Infragistics.Controls.Grids.Core","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetPane",
     "names":[{"platform":"React","fileName":"SpreadsheetPane.ts","mappedName":"SpreadsheetPane"}],
     "members":[
@@ -494,9 +494,9 @@
     { "names":[{"platform":"React","mappedType":"void","mappedName":"scrollCellIntoView"}],"originalName":"ScrollCellIntoView"},
     { "names":[{"platform":"React","mappedType":"void","mappedName":"scrollColumnIntoView"}],"originalName":"ScrollColumnIntoView"},
     { "names":[{"platform":"React","mappedType":"void","mappedName":"scrollRangeIntoView"}],"originalName":"ScrollRangeIntoView"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"scrollRowIntoView"}],"originalName":"ScrollRowIntoView"}],"originalBaseTypeName":"PropertyChangeNotifierExtended","originalBaseTypeNamespace":"Infragistics","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"scrollRowIntoView"}],"originalName":"ScrollRowIntoView"}],"originalBaseTypeName":"PropertyChangeNotifierExtended","originalBaseTypeNamespace":"Infragistics","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetRowScrollRegion",
-    "names":[{"platform":"React","fileName":"SpreadsheetRowScrollRegion.ts","mappedName":"SpreadsheetRowScrollRegion"}],"members":[],"originalBaseTypeName":"SpreadsheetScrollRegion","originalBaseTypeNamespace":"Infragistics.Controls.Grids.Core","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    "names":[{"platform":"React","fileName":"SpreadsheetRowScrollRegion.ts","mappedName":"SpreadsheetRowScrollRegion"}],"members":[],"originalBaseTypeName":"SpreadsheetScrollRegion","originalBaseTypeNamespace":"Infragistics.Controls.Grids.Core","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetScrollRegion",
     "names":[{"platform":"React","fileName":"SpreadsheetScrollRegion.ts","mappedName":"SpreadsheetScrollRegion"}],
     "members":[
@@ -504,7 +504,7 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"actualExtent"}],"originalName":"ActualExtent"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"endIndex"}],"originalName":"EndIndex"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isFrozen"}],"originalName":"IsFrozen"},
-    { "names":[{"platform":"React","mappedType":"number","mappedName":"startIndex"}],"originalName":"StartIndex"}],"originalBaseTypeName":"PropertyChangeNotifierExtended","originalBaseTypeNamespace":"Infragistics","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"startIndex"}],"originalName":"StartIndex"}],"originalBaseTypeName":"PropertyChangeNotifierExtended","originalBaseTypeNamespace":"Infragistics","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetResourceId","isEnum":true,
     "names":[{"platform":"React","fileName":"SpreadsheetResourceId.ts","mappedName":"SpreadsheetResourceId"}],
     "members":[
@@ -581,12 +581,12 @@
     { "names":[{"platform":"React","mappedType":"SpreadsheetResourceId","mappedName":"dropDownButtonOpenForeground"}],"originalName":"DropDownButtonOpenForeground"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetResourceId","mappedName":"unselectCellsFill"}],"originalName":"UnselectCellsFill"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetResourceId","mappedName":"unselectCellsBorder"}],"originalName":"UnselectCellsBorder"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"PaletteEntry",
     "names":[{"platform":"React","fileName":"PaletteEntry.ts","mappedName":"PaletteEntry"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"WorkbookColorInfo","mappedName":"colorInfo"}],"originalName":"ColorInfo"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"color"}],"originalName":"Color"}],"originalNamespace":"Infragistics.Controls.Grids.Core.Dialogs"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"color"}],"originalName":"Color"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core.Dialogs"},
   { "originalName":"SpreadsheetFilterDialogOption","isEnum":true,
     "names":[{"platform":"React","fileName":"SpreadsheetFilterDialogOption.ts","mappedName":"SpreadsheetFilterDialogOption"}],
     "members":[
@@ -604,7 +604,7 @@
     { "names":[{"platform":"React","mappedType":"SpreadsheetFilterDialogOption","mappedName":"doesNotContain"}],"originalName":"DoesNotContain"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetFilterDialogOption","mappedName":"between"}],"originalName":"Between"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetFilterDialogOption","mappedName":"custom"}],"originalName":"Custom"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core.Dialogs"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core.Dialogs"},
   { "originalName":"ComboBoxListItem",
     "names":[{"platform":"React","fileName":"ComboBoxListItem.ts","mappedName":"ComboBoxListItem"}],
     "members":[
@@ -612,18 +612,18 @@
     { "names":[{"platform":"React","mappedType":"any","mappedName":"dataValue"}],"originalName":"DataValue"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"displayText"}],"originalName":"DisplayText"},
     { "names":[{"platform":"React","mappedType":"any","mappedName":"tag"}],"originalName":"Tag"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"toString"}],"originalName":"ToString"}],"originalNamespace":"Infragistics.Controls.Grids.Core.Dialogs"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"toString"}],"originalName":"ToString"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core.Dialogs"},
   { "originalName":"EnumWrapper",
     "names":[{"platform":"React","fileName":"EnumWrapper`1.ts","mappedName":"EnumWrapper`1"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"string","mappedName":"toString"}],"originalName":"ToString"},
     { "names":[{"platform":"React","mappedType":"tEnum","mappedName":"enumValue"}],"originalName":"EnumValue"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"enumValueNameLocalized"}],"originalName":"EnumValueNameLocalized"}],"originalNamespace":"Infragistics.Controls.Grids.Core.Dialogs"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"enumValueNameLocalized"}],"originalName":"EnumValueNameLocalized"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core.Dialogs"},
   { "originalName":"SpreadsheetVisualDataBase",
     "names":[{"platform":"React","fileName":"SpreadsheetVisualDataBase.ts","mappedName":"SpreadsheetVisualDataBase"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"string","mappedName":"serialize"}],"originalName":"Serialize"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.VisualData"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
   { "originalName":"SpreadsheetVisualData",
     "names":[{"platform":"React","fileName":"SpreadsheetVisualData.ts","mappedName":"SpreadsheetVisualData"}],
     "members":[
@@ -632,7 +632,7 @@
     { "names":[{"platform":"React","mappedType":"SpreadsheetCellAreaVisualDataList","mappedName":"cellAreas"}],"originalName":"CellAreas"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetHeaderAreaVisualDataList","mappedName":"rowHeaderAreas"}],"originalName":"RowHeaderAreas"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetHeaderAreaVisualDataList","mappedName":"columnHeaderAreas"}],"originalName":"ColumnHeaderAreas"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"serialize"}],"originalName":"Serialize"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"serialize"}],"originalName":"Serialize"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
   { "originalName":"SpreadsheetHeaderAreaVisualData",
     "names":[{"platform":"React","fileName":"SpreadsheetHeaderAreaVisualData.ts","mappedName":"SpreadsheetHeaderAreaVisualData"}],
     "members":[
@@ -640,11 +640,11 @@
     { "names":[{"platform":"React","mappedType":"RectData","mappedName":"relativeBounds"}],"originalName":"RelativeBounds"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetRowColumnVisualDataList","mappedName":"items"}],"originalName":"Items"},
     { "names":[{"platform":"React","mappedType":"PrimitiveVisualDataList","mappedName":"shapes"}],"originalName":"Shapes"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"serialize"}],"originalName":"Serialize"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"serialize"}],"originalName":"Serialize"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
   { "originalName":"SpreadsheetHeaderAreaVisualDataList",
     "names":[{"platform":"React","fileName":"SpreadsheetHeaderAreaVisualDataList.ts","mappedName":"SpreadsheetHeaderAreaVisualDataList"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"List","originalBaseTypeNamespace":"System.Collections.Generic","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"List","originalBaseTypeNamespace":"System.Collections.Generic","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
   { "originalName":"SpreadsheetCellAreaVisualData",
     "names":[{"platform":"React","fileName":"SpreadsheetCellAreaVisualData.ts","mappedName":"SpreadsheetCellAreaVisualData"}],
     "members":[
@@ -653,11 +653,11 @@
     { "names":[{"platform":"React","mappedType":"SpreadsheetRowColumnVisualDataList","mappedName":"columns"}],"originalName":"Columns"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetRowColumnVisualDataList","mappedName":"rows"}],"originalName":"Rows"},
     { "names":[{"platform":"React","mappedType":"PrimitiveVisualDataList","mappedName":"shapes"}],"originalName":"Shapes"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"serialize"}],"originalName":"Serialize"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"serialize"}],"originalName":"Serialize"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
   { "originalName":"SpreadsheetCellAreaVisualDataList",
     "names":[{"platform":"React","fileName":"SpreadsheetCellAreaVisualDataList.ts","mappedName":"SpreadsheetCellAreaVisualDataList"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"List","originalBaseTypeNamespace":"System.Collections.Generic","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"List","originalBaseTypeNamespace":"System.Collections.Generic","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
   { "originalName":"SpreadsheetRowColumnVisualData",
     "names":[{"platform":"React","fileName":"SpreadsheetRowColumnVisualData.ts","mappedName":"SpreadsheetRowColumnVisualData"}],
     "members":[
@@ -665,18 +665,18 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"offset"}],"originalName":"Offset"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"extent"}],"originalName":"Extent"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"serialize"}],"originalName":"Serialize"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
   { "originalName":"SpreadsheetRowColumnVisualDataList",
     "names":[{"platform":"React","fileName":"SpreadsheetRowColumnVisualDataList.ts","mappedName":"SpreadsheetRowColumnVisualDataList"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"List","originalBaseTypeNamespace":"System.Collections.Generic","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"List","originalBaseTypeNamespace":"System.Collections.Generic","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
   { "originalName":"SpreadsheetTabItemAreaVisualData",
     "names":[{"platform":"React","fileName":"SpreadsheetTabItemAreaVisualData.ts","mappedName":"SpreadsheetTabItemAreaVisualData"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"},
     { "names":[{"platform":"React","mappedType":"RectData","mappedName":"relativeBounds"}],"originalName":"RelativeBounds"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetTabVisualDataList","mappedName":"tabs"}],"originalName":"Tabs"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"serialize"}],"originalName":"Serialize"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"serialize"}],"originalName":"Serialize"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
   { "originalName":"SpreadsheetTabVisualData",
     "names":[{"platform":"React","fileName":"SpreadsheetTabVisualData.ts","mappedName":"SpreadsheetTabVisualData"}],
     "members":[
@@ -688,8 +688,8 @@
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isSelected"}],"originalName":"IsSelected"},
     { "names":[{"platform":"React","mappedType":"RectData","mappedName":"relativeBounds"}],"originalName":"RelativeBounds"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"serialize"}],"originalName":"Serialize"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
   { "originalName":"SpreadsheetTabVisualDataList",
     "names":[{"platform":"React","fileName":"SpreadsheetTabVisualDataList.ts","mappedName":"SpreadsheetTabVisualDataList"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"List","originalBaseTypeNamespace":"System.Collections.Generic","originalNamespace":"Infragistics.Controls.Grids.VisualData"}]}
+    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"List","originalBaseTypeNamespace":"System.Collections.Generic","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.VisualData"}]}

@@ -55,13 +55,18 @@ _language: ja
  - `boolean` データ型ではデフォルトのテンプレートは `Checkbox` を使用します。
  - `currency` データ型の場合、デフォルトのテンプレートは、アプリケーションまたはグリッドのロケール設定に基づいたプレフィックス/サフィックス構成の `InputGroup` を使用します。
  - `percent` パーセントデータ型の場合、デフォルトのテンプレートは、編集された値のプレビューをパーセントで表示するサフィックス要素を持つ `InputGroup` を使用します。
+ <!-- ComponentStart:  Grid -->
  - カスタム テンプレートについては、[セル編集トピック](cell-editing.md#セル編集テンプレート)を参照してください。
+ <!-- ComponentEnd:  Grid -->
 
+<!-- ComponentStart:  Grid -->
 すべての利用可能な列データ型は、公式の[列タイプトピック](column-types.md#デフォルトのテンプレート)にあります。
+<!-- ComponentEnd:  Grid -->
 
 ### イベントの引数とシーケンス
-
+<!-- ComponentStart:  Grid -->
 グリッドは、編集エクスペリエンスをより詳細に制御できる広範なイベントを公開します。これらのイベントは、[**行の編集**](row-editing.md)および[**セルの編集**](cell-editing.md)のライフサイクル - 編集の開始、コミット、またはキャンセル時に発生します。
+<!-- ComponentEnd:  Grid -->
 
  | イベント           | 説明                                                                                                                                               | 引数                  | キャンセル可能 |
  | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ----------- |
@@ -106,7 +111,7 @@ _language: ja
 ```
 
 ```html
-<igc-grid id="grid" primary-key="ProductID" (sorting)="onSorting($event)">
+<igc-grid id="grid" primary-key="ProductID" >
 </igc-grid>
 ```
 
@@ -116,25 +121,31 @@ constructor() {
 
     this._bind = () => {
         grid.data = this.data;
-        grid.sorting = this.onSorting;
+        grid.addEventListener("sorting", this.onSorting);
     }
     this._bind();
 
 }
 ```
 
+<!-- Angular -->
+
 ```typescript
 public onSorting(event: ISortingEventArgs) {
     this.grid.endEdit(true);
-    // (event.owner as IgxGridComponent).endEdit(true);
 }
 ```
+
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
 ```typescript
 public onSorting(event: IgcSortingEventArgs) {
     this.grid.endEdit(true);
-    // (event.owner as IgxGridComponent).endEdit(true);
 }
 ```
+<!-- end: WebComponents -->
 
 ```razor
 <IgbGrid
@@ -165,13 +176,14 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 * `TreeGridRow`
 
 <!-- ComponentEnd: TreeGrid -->
-
+<!-- Angular -->
 * `DatePickerComponent`
 * `CheckboxComponent`
 * `Overlay`
+<!-- end: Angular -->
 ## その他のリソース
 
-<!-- Angular -->
+<!-- Angular, WebComponents -->
 
 
 * [列のデータ型](column-types.md#デフォルトのテンプレート)
@@ -185,14 +197,14 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 * [選択](selection.md)
 
 <!-- ComponentStart: HierarchicalGrid -->
-* [検索](search.md)
+<!-- * [検索](search.md) -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- end: Angular -->
+<!-- end: Angular, WebComponents -->
 
 <!-- Blazor -->
 
-
+<!-- ComponentStart:  Grid -->
 * [列のデータ型](column-types.md#デフォルトのテンプレート)
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
@@ -203,8 +215,10 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
 
+<!-- ComponentEnd:  Grid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
-* [検索](search.md)
+<!-- * [Searching](search.md) -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- end: Blazor -->
