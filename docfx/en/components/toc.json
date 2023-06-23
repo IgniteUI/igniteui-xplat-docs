@@ -267,6 +267,12 @@
       },
       {
         "exclude": ["Angular", "React"],
+        "name": "Cascading Combos",
+        "href": "grids/grid/cascading-combos.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
         "name": "Multi-Column Headers",
         "href": "grids/grid/multi-column-headers.md",
         "status": ""
