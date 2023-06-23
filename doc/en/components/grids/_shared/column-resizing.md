@@ -415,7 +415,87 @@ This approach is more performance optimized than auto-sizing post initialization
 
 `sample="/{ComponentSample}/column-auto-sizing", height="550", alt="{Platform} {ComponentTitle} Column Resizing Example"`
 
+<!-- WebComponents, Blazor -->
 
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS Properties](../theming.md).
+In case you would like to change some of the colors, you need to set an `ID` for the grid first:
+
+<!-- ComponentStart: Grid -->
+
+```html
+<igc-grid id="grid"></igc-grid>
+```
+
+```razor
+<IgbGrid Id="grid"></IgbGrid>
+```
+
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+```html
+<igc-tree-grid id="treeGrid"></igc-tree-grid>
+```
+
+```razor
+<IgbTreeGrid Id="treeGrid"></IgbTreeGrid>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+
+```html
+<igc-hierarchical-grid id="hierarchicalGrid"></igc-hierarchical-grid>
+```
+
+```razor
+<IgbHierarchicalGrid Id="hierarchicalGrid"></IgbHierarchicalGrid>
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
+
+
+Then set the related CSS properties for that class:
+
+<!-- ComponentStart: Grid -->
+
+```css
+#grid {
+    --resize-line-color: #0288D1;
+}
+```
+
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+```css
+#treeGrid {
+    --resize-line-color: #0288D1;
+}
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+
+```css
+#hierarchicalGrid {
+    --resize-line-color: #0288D1;
+}
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
+
+### Styling Example
+
+`sample="/{ComponentSample}/cell-editing-style", height="650", alt="{Platform} {ComponentTitle} Cell Editing Styling Example"`
+
+<!-- end: WebComponents, Blazor -->
 
 <!-- Angular -->
 
