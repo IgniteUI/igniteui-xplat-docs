@@ -80,7 +80,6 @@ For this purpose all we have to do is set both the `GridToolbarActions` and the 
 <div class="grid__wrapper">
     <igx-grid [data]="localdata">
         <igx-grid-toolbar>
-            <igx-grid-toolbar-title>Employees</igx-grid-toolbar-title>
             <igx-grid-toolbar-actions>
                 <igx-grid-toolbar-hiding></igx-grid-toolbar-hiding>
             </igx-grid-toolbar-actions>
@@ -93,7 +92,6 @@ For this purpose all we have to do is set both the `GridToolbarActions` and the 
 <div class="grid__wrapper">
     <{ComponentSelector} Data=northwindEmployees>
         <IgbGridToolbar>
-            <IgbGridToolbarTitle>Employees</IgbGridToolbarTitle>
             <IgbGridToolbarActions>
                 <IgbGridToolbarHiding></IgbGridToolbarHiding>
             </IgbGridToolbarActions>
@@ -106,7 +104,6 @@ For this purpose all we have to do is set both the `GridToolbarActions` and the 
 <div class="grid__wrapper">
     <igc-grid id="grid">
         <igc-grid-toolbar>
-            <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
             <igc-grid-toolbar-actions>
                 <igc-grid-toolbar-hiding></igc-grid-toolbar-hiding>
             </igc-grid-toolbar-actions>
@@ -123,7 +120,6 @@ By using the `Title` property, we will set the title that is displayed inside th
 <div class="grid__wrapper">
     <igx-grid [data]="localdata">
         <igx-grid-toolbar>
-            <igx-grid-toolbar-title>Employees</igx-grid-toolbar-title>
             <igx-grid-toolbar-actions>
                 <igx-grid-toolbar-hiding #hidingActionRef title="Column Hiding"></igx-grid-toolbar-hiding>
             </igx-grid-toolbar-actions>
@@ -136,7 +132,6 @@ By using the `Title` property, we will set the title that is displayed inside th
 <div class="grid__wrapper">
     <{ComponentSelector} Data=northwindEmployees>
         <IgbGridToolbar>
-            <IgbGridToolbarTitle>Employees</IgbGridToolbarTitle>
             <IgbGridToolbarActions>
                 <IgbGridToolbarHiding @ref=HidingAction Title="Column Hiding"></IgbGridToolbarHiding>
             </IgbGridToolbarActions>
@@ -149,7 +144,6 @@ By using the `Title` property, we will set the title that is displayed inside th
 <div class="grid__wrapper">
     <igc-grid id="grid">
         <igc-grid-toolbar>
-            <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
             <igc-grid-toolbar-actions>
                 <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding"></igc-grid-toolbar-hiding>
             </igc-grid-toolbar-actions>
@@ -313,7 +307,7 @@ Now all we have to do is bind the `Checked` property of both radio buttons respe
     </div>
 </div>
 ```
-
+<!-- end: Angular -->
 ### Disable hiding of a column
 We can easily prevent the user from being able to hide columns through the column hiding UI by simply setting their `DisableHiding` property to true.
 
@@ -335,11 +329,17 @@ We can easily prevent the user from being able to hide columns through the colum
 </div>
 ```
 
+```razor
+<{ComponentSelector} Data=northwindEmployees AutoGenerate=false>
+    <IgbColumn Field="ContactName" Sortable=true DisableHiding=true></IgbColumn>
+    <IgbColumn Field="ContactTitle" Sortable=true DisableHiding=true></IgbColumn>
+</{ComponentSelector}>
+```
+
+<!-- Angular -->
 If all went well, this is how our column hiding UI component should look like:
 
 `sample="/{ComponentSample}/custom-column-hiding", height="600", alt="{Platform} {ComponentTitle} Custom Column Hiding Example"`
-
-
 
 ## Styling
 
@@ -489,7 +489,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 <!-- Blazor, WebComponents -->
 ## Styling
 
-The grid could be further customized by setting some of the available [CSS variables](theming.md).
+The grid could be further customized by setting some of the available [CSS variables](../theming.md).
 In order to achieve that, we will use a class that we will first assign to the grid:
 
 ```ts
