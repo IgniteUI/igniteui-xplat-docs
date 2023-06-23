@@ -14,8 +14,21 @@ namespace: Infragistics.Controls
 In addition, you can define your own custom templates for update-data actions and to override the default behavior for committing and discarding any changes.
 
 ## {Platform} {ComponentTitle} Cell Editing and Edit Templates Example
+<!-- WebComponents -->
 
 `sample="/{ComponentSample}/editing-columns", height="700", alt="{Platform} {ComponentTitle} Cell Editing and Edit Templates Example"`
+
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+
+<!-- ComponentStart: Grid -->
+
+`sample="/{ComponentSample}/editing-columns", height="700", alt="{Platform} {ComponentTitle} Cell Editing and Edit Templates Example"`
+
+<!-- ComponentEnd: Grid -->
+
+<!-- end: Blazor -->
 
 <!-- Angular -->
 
