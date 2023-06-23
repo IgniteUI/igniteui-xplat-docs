@@ -653,7 +653,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "列の移動",
         "href": "grids/tree-grid/column-moving.md",
         "status": "NEW"

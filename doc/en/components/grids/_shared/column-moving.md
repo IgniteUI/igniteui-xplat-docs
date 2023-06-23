@@ -308,7 +308,7 @@ In case you would like to change some of the colors, you need to set a class for
 ```
 
 ```razor
-<IgbGrid class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 Then set the related CSS properties to this class:
