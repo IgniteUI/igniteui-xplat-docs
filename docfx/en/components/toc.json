@@ -221,7 +221,7 @@
         "exclude": ["Angular", "React"],
         "name": "Export to Excel",
         "href": "grids/grid/export-excel.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React"],
