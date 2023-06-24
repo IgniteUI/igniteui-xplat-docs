@@ -265,24 +265,45 @@ The following example demonstrates hiding both the `ZoomReset` and `Analyze Menu
 By default the {Platform} Toolbar is shown in the horizontal `Orientation` position but also has the ability to shown vertically. 
 
 ```html
-<igc-toolbar orientation="vertical"></igc-icon>
+<igx-toolbar orientation="Vertical" />
+```
+
+```html
+<igc-toolbar orientation="Vertical" />
 ```
 
 ```razor
-<IgbToolbar Orientation="ToolbarOrientation.Horizontal">
+<IgbToolbar Orientation="ToolbarOrientation.Vertical" />
 ```
 
 ```tsx
-<IgbToolbar orientation="vertical" />
+<IgrToolbar orientation="Vertical" />
 ```
 <!-- The following example demonstrates the vertical orientation of the {Platform} Toolbar.
 `sample="/charts/toolbar/layout-in-vertical-orientation", height="600", alt="{Platform} Verical Orientation"` -->
 
 ## Styling/Theming
 
-The icon component can be styled by using it's `BaseTheme` property directly to the `Toolbar`. The following example demonstrates the various theme options that can be applied.
+The icon component can be styled by using it's `BaseTheme` property directly to the `Toolbar`. 
 
-`sample="/charts/toolbar/theming", height="600", alt="{Platform} Toolbar Styling/Theming"`
+```html
+<igx-toolbar baseTheme="SlingshotDark" />
+```
+
+```html
+<igc-toolbar base-theme="SlingshotDark" />
+```
+
+```razor
+<IgbToolbar BaseTheme="BaseControlTheme.SlingshotDark" />
+```
+
+```tsx
+<IgrToolbar baseTheme="SlingshotDark" />
+```
+
+<!-- The following example demonstrates the various theme options that can be applied.
+`sample="/charts/toolbar/theming", height="600", alt="{Platform} Toolbar Styling/Theming"` -->
 
 ## API References
 
