@@ -218,7 +218,7 @@
         "exclude": ["Angular", "React"],
         "name": "Excel へエクスポート",
         "href": "grids/grid/export-excel.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React"],
@@ -240,7 +240,7 @@
       },
       {
         "exclude": ["Angular", "React"],
-        "name": "Live Data / Real-Time",
+        "name": "ライブ データ / リアルタイム",
         "href": "grids/grid/live-data.md",
         "status": ""
       },
@@ -248,12 +248,6 @@
         "exclude": ["Angular", "React"],
         "name": "マスター / 詳細",
         "href": "grids/grid/master-detail.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "React"],
-        "name": "Cascading Combos",
-        "href": "grids/grid/cascading-combos.md",
         "status": ""
       },
       {
@@ -266,6 +260,12 @@
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "マスターと詳細",
         "href": "grids/grid/master-detail.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "カスケード コンボ",
+        "href": "grids/grid/cascading-combos.md",
         "status": ""
       },
       {
@@ -620,7 +620,7 @@
     "exclude": ["Angular", "React"],
     "name": "ツリー グリッド",
     "href": "grids/tree-grid/overview.md",
-    "status": "UPDATED",
+    "status": "",
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
@@ -1122,7 +1122,7 @@
   {
     "name": "折れ線チャート",
     "href": "charts/types/line-chart.md",
-    "status": "UPDATED"
+    "status": ""
   },
   {
     "exclude": ["Blazor", "Angular", "React", "WebComponents"],

@@ -276,10 +276,8 @@ builder.Services.AddIgniteUIBlazor(
 ```tsx
 <IgbToolbar orientation="vertical" />
 ```
-
-次の例は、{Platform} ツールバーの垂直方向を示しています。
-
-`sample="/charts/toolbar/layout-in-vertical-orientation", height="600", alt="{Platform} 垂直方向"`
+<!-- 次の例は、{Platform} ツールバーの垂直方向を示しています。
+`sample="/charts/toolbar/layout-in-vertical-orientation", height="600", alt="{Platform} 垂直方向"` -->
 
 ## スタイル設定 / テーマ設定
 
