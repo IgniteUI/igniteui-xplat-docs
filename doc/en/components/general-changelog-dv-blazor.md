@@ -14,7 +14,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### New Components
 
-* [Toolbar](menus/toolbar.md) - Beta
+* [Toolbar](menus/toolbar.md) - Beta. This component is a companion container for UI operations to be used primarily with our charting components. The toolbar will dynamically update with a preset of properties and tools when linked to our `XamDataChart` or `CategoryChart` components, but it also gives you the ability to create custom tools for your project.
 
 ### {PackageCharts} Charts
 
