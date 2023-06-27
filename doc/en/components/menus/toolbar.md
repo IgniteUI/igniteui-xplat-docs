@@ -11,7 +11,7 @@ The {Platform} Toolbar component is a companion container for UI operations to b
 
 ## {Platform} Toolbar Example
 
-`sample="/charts/toolbar/actions-built-in-data-chart", height="600", alt="{Platform} Toolbar Example"`
+`sample="/charts/toolbar/actions-built-in-category-chart", height="600", alt="{Platform} Toolbar Example"`
 
 ## Dependencies
 
