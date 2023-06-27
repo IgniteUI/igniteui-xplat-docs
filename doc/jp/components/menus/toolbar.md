@@ -12,7 +12,7 @@ _language: ja
 
 ## {Platform} ツールバーの例
 
-`sample="/charts/toolbar/actions-built-in-data-chart", height="60", alt="{Platform} Toolbar Example"`
+`sample="/charts/toolbar/actions-built-in-data-chart", height="600", alt="{Platform} ツールバーの例"`
 
 ## 依存関係
 
@@ -260,7 +260,7 @@ builder.Services.AddIgniteUIBlazor(
 
 次の例は、`ZoomReset` および `Analyze Menu` メニュー ツール アクションの両方を非表示にする方法を示しています。`AfterId` プロパティを使用してそれを `ZoomOut` に割り当てることにより、`ZoomReset` ツール アクションの新しいインスタンスが追加され、`ZoomMenu` 内に配置されます。これにより、新しいリセット ツールが `ZoomMenu` の下部に表示されます。
 
-`sample="/charts/toolbar/layout-actions-for-data-chart", height="60", alt="{Platform} Toolbar の例"`
+`sample="/charts/toolbar/layout-actions-for-data-chart", height="600", alt="{Platform} Toolbar の例"`
 
 ### 垂直方向
 
@@ -280,7 +280,7 @@ builder.Services.AddIgniteUIBlazor(
 
 次の例は、{Platform} ツールバーの垂直方向を示しています。
 
-`sample="/charts/toolbar/layout-in-vertical-orientation", height="60", alt="{Platform} Verical Orientation"`
+`sample="/charts/toolbar/layout-in-vertical-orientation", height="600", alt="{Platform} 垂直方向"`
 
 ## スタイル設定 / テーマ設定
 

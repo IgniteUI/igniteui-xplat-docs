@@ -416,7 +416,87 @@ constructor() {
 
 `sample="/{ComponentSample}/column-auto-sizing", height="550", alt="{Platform} {ComponentTitle} 列のサイズ変更の例"`
 
+<!-- WebComponents, Blazor -->
 
+## スタイル設定
+
+事前定義されたテーマに加えて、利用可能な [CSS プロパティ](../theming.md)を設定することでグリッドをさらにカスタマイズできます。
+一部の色を変更したい場合は、最初にグリッドの `ID` を設定する必要があります。
+
+<!-- ComponentStart: Grid -->
+
+```html
+<igc-grid id="grid"></igc-grid>
+```
+
+```razor
+<IgbGrid Id="grid"></IgbGrid>
+```
+
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+```html
+<igc-tree-grid id="treeGrid"></igc-tree-grid>
+```
+
+```razor
+<IgbTreeGrid Id="treeGrid"></IgbTreeGrid>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+
+```html
+<igc-hierarchical-grid id="hierarchicalGrid"></igc-hierarchical-grid>
+```
+
+```razor
+<IgbHierarchicalGrid Id="hierarchicalGrid"></IgbHierarchicalGrid>
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
+
+
+次に、そのクラスに関連する CSS プロパティを設定します。
+
+<!-- ComponentStart: Grid -->
+
+```css
+#grid {
+    --resize-line-color: #0288D1;
+}
+```
+
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+```css
+#treeGrid {
+    --resize-line-color: #0288D1;
+}
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+
+```css
+#hierarchicalGrid {
+    --resize-line-color: #0288D1;
+}
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
+
+### スタイル設定の例
+
+`sample="/{ComponentSample}/cell-editing-style", height="650", alt="{Platform} {ComponentTitle} セル編集スタイル設定の例"`
+
+<!-- end: WebComponents, Blazor -->
 
 <!-- Angular -->
 
@@ -474,7 +554,7 @@ $custom-grid-theme: grid-theme(
 >`igx-color` および `igx-palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[パレット](../themes/sass/palettes.md)のトピックを参照してください。
 
 ### スキーマの使用
-テーマ エンジンを使用して [**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
+テーマ エンジンを使用して[**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
 
 すべてのコンポーネントに提供されている定義済みのスキーマを拡張します。この場合は、[light-grid]({environment:sassApiUrl}/index.html#variable-_light-grid) スキーマです。
 
@@ -495,7 +575,7 @@ $light-grid-schema: extend($_light-grid,
 );
 ```
 
-カスタム スキーマを適用するには、グローバル ([light]({environment:sassApiUrl}/index.html#variable-light-schema) または [dark]({environment:sassApiUrl}/index.html#variable-light-schema)) の 1 つを**拡張する**必要があります。これは基本的にカスタム スキーマでコンポーネントを指し示し、その後それぞれのコンポーネント テーマに追加するものです。
+カスタム スキーマを適用するには、グローバル ([light]({environment:sassApiUrl}/index.html#variable-light-schema) または [dark]({environment:sassApiUrl}/index.html#variable-dark-schema)) の 1 つを**拡張する**必要があります。これは基本的にカスタム スキーマでコンポーネントを指し示し、その後それぞれのコンポーネント テーマに追加するものです。
 
 ```scss
 // Extending the global light-schema
@@ -513,7 +593,7 @@ $custom-grid-theme: grid-theme(
 
 ### デモ
 
-`sample="/{ComponentSample}/column-resize-styling", height="550", alt="{Platform} {ComponentTitle} column resize styling"`
+`sample="/{ComponentSample}/column-resize-styling", height="550", alt="{Platform} {ComponentTitle} 列のサイズ変更のスタイル設定"`
 
 
 > [!Note]
