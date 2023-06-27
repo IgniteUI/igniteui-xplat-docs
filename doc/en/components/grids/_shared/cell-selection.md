@@ -213,6 +213,8 @@ The multi-cell selection is index based (DOM elements selection).
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
+<!-- ComponentStart: Grid -->
+
 ```ts
 <igc-grid class="grid">
 ```
@@ -230,6 +232,31 @@ Then set the related CSS properties for that class:
     --igx-grid-cell-selected-background: #0062A3;
 }
 ```
+
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+```ts
+<igc-tree-grid id="treeGrid"></igc-tree-grid>
+```
+
+```razor
+<IgbTreeGrid Id="treeGrid"></IgbTreeGrid>
+```
+
+Then set the related CSS properties for that class:
+
+```css
+#treeGrid {
+    --cell-selected-text-color: #fff;
+    --cell-active-border-color: #f2c43c;
+    --cell-selected-background: #0062a3;
+    --cell-editing-background: #0062a3;
+}
+```
+
+<!-- ComponentEnd: Grid -->
 
 ### Demo
 

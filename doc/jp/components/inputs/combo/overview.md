@@ -20,7 +20,7 @@ _language: ja
 
 <div class="divider--half"></div>
 
-## Ignite UI {Palform} コンボボックス コンポーネントを使用した作業の開始
+## {Platform} コンボボックス コンポーネントを使用した作業の開始
 
 <!-- WebComponents -->
 まず、次のコマンドを実行して {ProductName} をインストールする必要があります:

@@ -256,7 +256,7 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-`sample="/gauges/bullet-graph/measures", height="125", alt="{Platform} bullet graph measures"`
+`sample="/gauges/bullet-graph/measures", height="125", alt="{Platform} ブレット グラフ メジャー"`
 
 
 ## 比較範囲
@@ -367,7 +367,7 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-`sample="/gauges/bullet-graph/ranges", height="125", alt="{Platform} bullet graph ranges"`
+`sample="/gauges/bullet-graph/ranges", height="125", alt="{Platform} ブレット グラフの範囲"`
 
 
 ## 目盛
@@ -454,7 +454,7 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-`sample="/gauges/bullet-graph/tickmarks", height="125", alt="{Platform} bullet graph tickmarks"`
+`sample="/gauges/bullet-graph/tickmarks", height="125", alt="{Platform}  ブレット グラフの目盛"`
 
 
 ## ラベル
@@ -515,7 +515,7 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-`sample="/gauges/bullet-graph/labels", height="125", alt="{Platform} bullet graph labels"`
+`sample="/gauges/bullet-graph/labels", height="125", alt="{Platform} ブレット グラフのラベル"`
 
 
 ## バッキング
@@ -572,7 +572,7 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-`sample="/gauges/bullet-graph/background", height="125", alt="{Platform} bullet graph background"`
+`sample="/gauges/bullet-graph/background", height="125", alt="{Platform} ブレット グラフのバッキング"`
 
 
 ## スケール
@@ -632,7 +632,7 @@ MaximumValue="55" TargetValue="43">
 </IgbBulletGraph>
 ```
 
-`sample="/gauges/bullet-graph/scale", height="125", alt="{Platform} bullet graph scale"`
+`sample="/gauges/bullet-graph/scale", height="125", alt="{Platform} ブレット グラフのスケール"`
 
 
 ## まとめ
