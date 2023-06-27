@@ -84,7 +84,7 @@ export class Sample {
 ```
 
 ```html
-<igc-combo id="basic-combo" display-key="name" value-key="id"></igc-combo>
+<igc-combo id='basic-combo' display-key='name' value-key='id' value='["BG01"]'></igc-combo>
 ```
 
 ```razor
@@ -119,15 +119,32 @@ export class Sample {
 
 ### Data value and display properties
 
-Since the combo is bound to a list of complex data (i.e. objects), we need to specify a property that the control will use to handle the selected items. The component exposes the following properties:
+When the combo is bound to a list of complex data (i.e. objects), we need to specify a property that the control will use to handle item selection. The component exposes the following properties:
 
- - `DisplayKey` - *Optional,* ***required*** *for object arrays* - Determines which field in the data source is used as the display value. If no value is specified for `DisplayKey`, the combo will use the specified `ValueKey` (if any).
- - `ValueKey` - *Optional,* ***recommended*** *for object arrays* - Determines which field of the data source will be used to make selections. If `ValueKey` is omitted, the selection API will use object references to select items.
-
-In our case, we want the combo to display the `name` of each city and use the `id` field for item selection. Therefore, we provide these properties to the combo's `DisplayKey` and `ValueKey` respectively.
+ - `ValueKey` - *Optional,* ***required*** *for complex data object* - Determines which field of the data source will be used to make selections. If `ValueKey` is omitted, the selection API will use object references to select items.
+ - `DisplayKey` - *Optional,* ***recommended*** *for complex data objects* - Determines which field in the data source is used as the display value. If no value is specified for `DisplayKey`, the combo will use the specified `ValueKey` (if any).
+In our case, we want the combo to display the `name` of each city and use the `id` field for item selection and as the underlying value for each item. Therefore, we provide these properties to the combo's `ValueKey` and `Display` respectively.
 
 > [!Note]
-> When the data source consists of a primitive types (e.g. `strings`, `numbers`, etc.), **do not** specify a `ValueKey` and `DisplayKey`.
+> When the data source consists of primitive types (e.g. `strings`, `numbers`, etc.), **do not** specify a `ValueKey` and/or `DisplayKey`.
+
+### Setting Value
+
+The ComboBox component exposes a `Value` getter and setter in addition to an attribute, which is also called value. You can use the value attribute to set the selected items on component initialization.
+
+If you want to read the value, i.e. the list of currently selected items, or to update the value use the value getter and setter respectively. The value getter will return a list of all selected items as represented by the `ValueKey`. Likewise, if you want to update the list of selected items by using the value setter, you should provide a list of items by their `ValueKey`. 
+
+Example:
+
+```ts
+const combo = document.getElementById('basic-combo') as IgcComboComponent<City>;
+
+// Given the overview example from above this will return ['BG01']
+console.log(combo.value);
+
+// Change the selected items to New York and London
+combo.value = ['NY01', 'UK01'];
+```
 
 ### Selection API
 
