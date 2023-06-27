@@ -145,11 +145,12 @@ private UpdateCell() {
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- Angular -->
 
 ### セル編集テンプレート
 
 デフォルトのセル編集テンプレートの詳細については、[編集トピック](editing.md#テンプレートの編集)を参照してください。
+
+<!-- Angular -->
 
 セルが編集モードのときに適用されるカスタム テンプレートを提供する場合は、`CellTemplateDirective` を使用できます。これを行うには、`CellEditor` ディレクティブでマークされた **ng-template** を渡し、カスタムコントロールをセルの `EditValue` に適切にバインドする必要があります。
 
@@ -201,6 +202,114 @@ public classEditTemplate = (ctx: IgcCellTemplateContext) => {
 >任意のタイプのエディター コンポーネントで `CellEditor` を使用すると、キーボード ナビゲーション フローが中断されます。同じことが、編集モードに入るカスタム セルの直接編集にも当てはまります。これは、追加したエディター コンポーネントではなく、**セル要素**に**フォーカス**が残るためです。これが、`Focus` ディレクティブを利用する必要がある理由です。これにより、フォーカスがセル内コンポーネントに直接移動し、セル/行の**流暢な編集フロー**が維持されます。
 
 <!-- end: Angular -->
+
+<!-- Blazor -->
+
+セルに適用されるカスタム テンプレートを提供する場合は、そのテンプレートをセル自体またはそのヘッダーに渡すことができます。
+
+```Razor
+
+<IgbColumn
+    Field="race"
+    Header="Race"
+    DataType="GridColumnDataType.String"
+    InlineEditorTemplateScript="WebGridCellEditCellTemplate"
+    Editable="true"
+    Name="column1"
+    @ref="column1">
+</IgbColumn>
+
+
+```
+
+そしてテンプレートを渡します:
+
+```javascript
+
+igRegisterScript("WebGridCellEditCellTemplate", (ctx) => {
+    let cellValues = [];
+    let uniqueValues = [];
+    for(const i of this.webGridCellEditSampleRoleplay){
+        const field = ctx.cell.column.field;
+        if(uniqueValues.indexOf(i[field]) === -1 )
+        {
+            cellValues.push(html`<igc-select-item value=${i[field]}>${(i[field])}</igc-select-item>`);
+            uniqueValues.push(i[field]);
+        }
+    }
+    return html`<div>
+    <igc-select position-strategy="fixed" @igcChange=${ e => ctx.cell.editValue = e.detail.value}>
+          ${cellValues}
+    </igc-select>
+</div>`;
+}, false);
+
+
+```
+上記のサンプルは、こちらで参照できます。 
+
+`sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} セル編集テンプレート サンプル"`
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
+セルに適用されるカスタム テンプレートを提供する場合は、そのテンプレートをセル自体またはそのヘッダーに渡すことができます。まず、通常どおりに列を作成します。
+
+```html
+
+<igc-column
+    field="race"
+    header="Race"
+    data-type="string"
+    editable="true"
+    name="column1"
+    id="column1">
+</igc-column>
+
+```
+
+そして、テンプレートを index.ts ファイルのこの列に渡します。
+
+```ts
+
+constructor() {
+        var grid1 = document.getElementById('grid1') as IgcGridComponent;
+        var column1 = document.getElementById('column1') as IgcColumnComponent;
+        var column2 = document.getElementById('column2') as IgcColumnComponent;
+        var column3 = document.getElementById('column3') as IgcColumnComponent;
+
+        grid1.data = this.webGridCellEditSampleRoleplay;
+        column1.inlineEditorTemplate = this.webGridCellEditCellTemplate;
+        column2.inlineEditorTemplate = this.webGridCellEditCellTemplate;
+        column3.inlineEditorTemplate = this.webGridCellEditCellTemplate;
+    }
+
+
+public webGridCellEditCellTemplate = (ctx: IgcCellTemplateContext) => {
+        let cellValues: any = [];
+        let uniqueValues: any = [];
+        for(const i of (this.webGridCellEditSampleRoleplay as any)){
+            const field: string = ctx.cell.column.field;
+            if(uniqueValues.indexOf(i[field]) === -1 )
+            {
+                cellValues.push(html`<igc-select-item value=${i[field]}>${(i[field])}</igc-select-item>`);
+                uniqueValues.push(i[field]);
+            }
+        }
+        return html`
+        <igc-select style="width:100%; height:100%" size="large" @igcChange=${(e: any) => ctx.cell.editValue = e.detail.value}>
+              ${cellValues}
+        </igc-select>
+    `;
+    }
+
+```
+上記のサンプルは、さらに参照するためにここにあります。 
+
+`sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} セル編集テンプレート サンプル"`
+
+<!-- end: WebComponents -->
 
 <!-- Angular -->
 
@@ -525,7 +634,6 @@ export class MyGridEventsComponent {
 *** In JavaScript ***
 igRegisterScript("HandleCellEdit", (ev) => {
     var d = ev.detail;
-
     if (d.column != null && d.column.field == "UnitsOnOrder") {
         if (d.newValue > d.rowData.UnitsInStock) {
             d.cancel = true;
@@ -534,7 +642,6 @@ igRegisterScript("HandleCellEdit", (ev) => {
     }
 }, false);
 ```
-
 **Units on Order (注文済み)** 列の下のセルに入力された値が使用可能量 (**Units in Stock、在庫数** の値) よりも大きい場合、編集はキャンセルされ、ユーザーにキャンセルの警告が表示されます。
 <!-- ComponentEnd: Grid -->
 
@@ -616,9 +723,37 @@ export class MyHGridEventsComponent {
 
 `sample="/{ComponentSample}/editing-events", height="650", alt="{Platform} {ComponentTitle} 編集イベントの例"`
 
-<!-- Angular -->
-
 ## スタイル設定
+
+<!-- WebComponents, Blazor -->
+
+事前定義されたテーマに加えて、利用可能な [CSS プロパティ](../theming.md)を設定することでグリッドをさらにカスタマイズできます。
+一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
+
+```ts
+<igc-grid class="grid">
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+次に、そのクラスに関連する CSS プロパティを設定します。
+
+```css
+.grid {
+    --igx-grid-edit-mode-color: orange;
+    --igx-grid-cell-editing-background: lightblue;
+}
+```
+
+### スタイル設定の例
+
+`sample="/{ComponentSample}/cell-editing-style", height="650", alt="{Platform} {ComponentTitle} セル編集のスタイル設定の例"`
+
+<!-- end: WebComponents, Blazor -->
+
+<!-- Angular -->
 
 `{ComponentName}` で [{ProductName} テーマ ライブラリ](../themes/styles.md) を使用してセルのスタイルを設定できます。グリッドの [theme]({environment:sassApiUrl}/index.html#function-grid-theme) は、ユーザーがグリッドのさまざまな側面をスタイル設定できる広範なプロパティを公開します。
 

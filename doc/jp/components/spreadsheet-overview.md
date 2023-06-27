@@ -68,8 +68,8 @@ npm install --save {PackageSpreadsheet}
 // in Program.cs file
 
 builder.Services.AddIgniteUIBlazor(
-  typeof(IgbExcelModule),
-  typeof(IgbSpreadsheetModule)
+    typeof(IgbExcelModule),
+    typeof(IgbSpreadsheetModule)
 );
 ```
 

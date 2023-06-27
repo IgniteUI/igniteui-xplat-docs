@@ -240,8 +240,20 @@
       },
       {
         "exclude": ["Angular", "React"],
+        "name": "Live Data / Real-Time",
+        "href": "grids/grid/live-data.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
         "name": "マスター / 詳細",
         "href": "grids/grid/master-detail.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "Cascading Combos",
+        "href": "grids/grid/cascading-combos.md",
         "status": ""
       },
       {
@@ -260,6 +272,12 @@
         "exclude": ["Angular", "React"],
         "name": "複数列ヘッダー",
         "href": "grids/grid/multi-column-headers.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "ツールバー",
+        "href": "grids/grid/toolbar.md",
         "status": ""
       },
       {
@@ -611,7 +629,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "セルの編集",
         "href": "grids/tree-grid/cell-editing.md",
         "status": "NEW"
@@ -659,19 +677,19 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "列のピン固定",
         "href": "grids/tree-grid/column-pinning.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "列のサイズ変更",
         "href": "grids/tree-grid/column-resizing.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "列の選択",
         "href": "grids/tree-grid/column-selection.md",
         "status": "NEW"
