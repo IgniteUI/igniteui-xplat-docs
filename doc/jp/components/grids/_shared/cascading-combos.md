@@ -1,37 +1,37 @@
 ---
-title: Cascading combos in {Platform} {ComponentTitle} - Infragistics
-_description: Perform updating via cascading combos in {ComponentTitle}, using {Platform} {ComponentTitle}. See demos & examples!
-_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+title: {Platform} {ComponentTitle} のカスケード コンボ - インフラジスティックス
+_description: {Platform} {ComponentTitle} を使用して、{ComponentTitle} のカスケード コンボを介して更新を実行します。デモと例をお試しください。
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 _language:ja
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid"]
 namespace: Infragistics.Controls
 ---
 
-# {Platform} {ComponentTitle} with Cascading Combos
-The {ComponentTitle}'s Editing functionality provides with the opportunity to use Cascading Combos. By selecting the value in any preceding `Combo`, the users will receive only the data that is relevant to their selection within the next Combo.
+# Cascading Combos (カスケード コンボ) を含む {Platform} {ComponentTitle}
+{ComponentTitle} の編集機能では、カスケード コンボを使用する機会が提供されます。前の `Combo` で値を選択すると、ユーザーは次の Combo での選択に関連するデータのみを受け取ります。
 
-## Angular {ComponentTitle} with Cascading Combos Sample Overview
-The sample below demonstrates how `Grid` works with nested Cascading `Combo` components.
+## カスケード コンボを使用した Angular {ComponentTitle} サンプルの概要
+以下のサンプルは、`Grid` がネストされた Cascading `Combo` コンポーネントとどのように動作するかを示しています。
 
 <!-- ComponentStart: Grid -->
 <code-view style="height:500px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-cascading-combo"
            github-src="{ComponentSample}/cascading-combo"
-           alt="{Platform} {ComponentName} Cascading Combos">
+           alt="{Platform} {ComponentName} カスケード コンボ">
 </code-view>
 <!-- ComponentEnd: Grid -->
 
-## Setup
+## 設定
 
-In order enable column editing, make sure `editable` property is set to `true`.
+列の編集を有効にするには、`editable` プロパティが `true` に設定されていることを確認してください。
 
-Once the column editing is enabled, you can start by adding your `Combo`. Please note that here in order to have only one single selection available, you will need to use set the `singleSelect` property.
+列の編集が有効になったら、`Combo` を追加することから始めることができます。ここで、単一選択を 1 つだけ使用できるようにするには、`singleSelect` プロパティを設定する必要があることに注意してください。
 
 
 <!-- WebComponents, Blazor -->
-To get started with the `Combo`, first you need to import it:
+`Combo` を使い始めるには、まずコンボをインポートする必要があります。
 
 ```ts
 import { IgcComboComponent, defineAllComponents } from 'igniteui-webcomponents';
@@ -45,7 +45,7 @@ builder.Services.AddIgniteUIBlazor(
 );
 ```
 
-Then you should define the column template with the combo:
+次に、コンボを使用して列テンプレートを定義する必要があります。
 
 
 ```razor
@@ -69,9 +69,9 @@ public webGridCountryDropDownTemplate: IgcRenderFunction<IgcCellTemplateContext>
 }
 ```
 
-- `displayKey` - Required for object arrays - Specifies which property will be used for the items' text. If no value is specified for `displayKey`, the  combo will use the specified `valueKey` (if any).
+- `displayKey` - オブジェクト配列に必要 - 項目のテキストに使用されるプロパティを指定します。`displayKey` に値が指定されていない場合、コンボは指定された `valueKey` (存在する場合) を使用します。
 
-In order to handle the selection change, we need the `change` event. The emitted event arguments contain information about the selection prior to the change, the current selection and the items that were added or removed. Therefore, it will filter the values based on the selection of the previous combo.
+選択の変更を処理するには、`change` イベントが必要です。発行されたイベント引数には、変更前の選択、現在の選択、追加または削除された項目に関する情報が含まれています。したがって、前のコンボの選択に基づいて値をフィルタリングします。
 
 ```razor
 //In Javascript
@@ -132,7 +132,7 @@ public bindEventsCountryCombo(rowId: any, cell: any) {
 
 <!-- Angular -->
 
-To get started with the `Simple ComboBox component`, first you need to import the `IgxSimpleComboModule` in your `app.module.ts` file:
+`Simple ComboBox` コンポーネントの使用を開始するには、最初に `IgxSimpleComboModule` を `app.module.ts` ファイルにインポートする必要があります。
 
 ```typescript
 import { IgxSimpleComboModule } from 'igniteui-angular';
@@ -147,9 +147,9 @@ import { IgxSimpleComboModule } from 'igniteui-angular';
 export class AppModule {}
 ```
 
-Then, in the template, you should bind the combos `SimpleCombo` to some data.
+次に、テンプレート内でコンボ `SimpleCombo` をデータにバインドする必要があります。
 
-- `displayKey` - Required for object arrays - Specifies which property will be used for the items' text. If no value is specified for `displayKey`, the simple combobox will use the specified `valueKey` (if any).
+- `displayKey` - オブジェクト配列に必要 - 項目のテキストに使用されるプロパティを指定します。`displayKey` に値が指定されていない場合、Simple ComboBox は指定された `valueKey` (存在する場合) を使用します。
 
 ```typescript
 export class MySimpleComboComponent implements OnInit {
@@ -167,7 +167,7 @@ export class MySimpleComboComponent implements OnInit {
 }
 ```
 
-In order to handle the selection change, we need `selectionChanging`. The emitted event arguments, `IComboSelectionChangingEventArgs`, contain information about the selection prior to the change, the current selection and the items that were added or removed. Therefore, it will filter the values based on the selection of the previous combo.
+選択の変更を処理するには、`selectionChanging` が必要です。発行されたイベント引数 `IComboSelectionChangingEventArgs` には、変更前の選択、現在の選択、追加または削除された項目に関する情報が含まれています。したがって、前のコンボの選択に基づいて値をフィルタリングします。
 
 ```html
 <igx-combo [data]="countriesData" (selectionChanging)="countryChanging($event)"></igx-combo>
@@ -180,8 +180,8 @@ public countryChanging(event: IComboSelectionChangeEventArgs) {
     }
 }
 ```
-And lastly, adding the `LinearProgress`, which is required while loading the list of data.
-The `id` is necessary to set the value of `id` attribute.
+最後に、データのリストを読み込むときに必要な `LinearProgress` を追加します。
+`id` 属性の値を設定するには `id` が必要です。
 
 ```html
  <igx-linear-bar 
@@ -194,8 +194,8 @@ The `id` is necessary to set the value of `id` attribute.
 
 <!-- WebComponents -->
 
-And lastly, adding the `LinearProgress`, which is required while loading the list of data.
-The `id` is necessary to set the value of `id` attribute.
+最後に、データのリストを読み込むときに必要な `LinearProgress` を追加します。
+`id` 属性の値を設定するには `id` が必要です。
 
 ```ts
     public webGridRegionDropDownTemplate: IgcRenderFunction<IgcCellTemplateContext> = (ctx: IgcCellTemplateContext) => {
@@ -212,7 +212,7 @@ The `id` is necessary to set the value of `id` attribute.
 
 
 <!-- Blazor -->
-And lastly, adding the `LinearProgress`, which is required while loading the list of data.
+最後に、データのリストを読み込むときに必要な `LinearProgress` を追加します。
 
 
 
@@ -225,13 +225,13 @@ And lastly, adding the `LinearProgress`, which is required while loading the lis
 ```
 <!-- end: Blazor -->
 
-## Known Issues and Limitations
+## 既知の問題と制限
 
-|Limitation|Description|
+|制限|説明|
 |--- |--- |
-| Combo drop-down list may hide behind other UI elements. | Due to the stacking order of elements in the grid the combo drop-down may hide behind other elements like header, footers etc. |
+| コンボ ドロップダウン リストは他の UI 要素の後ろに隠れる場合があります。 | グリッド内の要素の積み重ね順序により、コンボ ドロップダウンがヘッダーやフッターなどの他の要素の後ろに隠れる場合があります。 |
 
-## {Platform} {ComponentTitle} API Members
+## {Platform} {ComponentTitle} API メンバー
 - `{ComponentName}`
 - `Combo`
 - `LinearProgress`

@@ -456,9 +456,9 @@ constructor() {
 #### 行テンプレート
 
 
-To create a custom row selector template,  within the `{ComponentSelector}` you can use the `RowSelectorTemplate` property. テンプレートから、行の状態に関する情報を提供するプロパティを使用して、暗黙的に提供されたコンテキスト変数にアクセスできます。
+カスタム行セレクター テンプレートを作成するには、`{ComponentSelector}` 内で `RowSelectorTemplate` プロパティを使用できます。テンプレートから、行の状態に関する情報を提供するプロパティを使用して、暗黙的に提供されたコンテキスト変数にアクセスできます。
 
-The `selected` property shows whether the current row is selected or not while the `index` property can be used to access the row index.
+`selected` プロパティは現在の行が選択されているかどうかを示し、`index` プロパティは行インデックスにアクセスするために使用できます。
 
 ```html
 <ng-template igxRowSelector let-rowContext>

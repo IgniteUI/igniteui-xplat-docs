@@ -158,11 +158,11 @@ public disableSummary() {
 
 ## カスタム {ComponentTitle} 集計
 
-If these functions do not fulfill your requirements you can provide a custom summary for the specific columns.
+これらの機能が要件を満たさない場合は、カスタム集計を提供できます。
 
 
 <!-- WebComponents -->
-In order to achieve this you have to override one of the base classes `SummaryOperand`, `NumberSummaryOperand` or `DateSummaryOperand` according to the column data type and your needs. このように既存の関数を再定義、または新しい関数を追加できます。`SummaryOperand` class provides the default implementation only for the `Count` method. `NumberSummaryOperand` extends `SummaryOperand` and provides implementation for the `Min`, `Max`, `Sum` and `Average`. `DateSummaryOperand` extends `SummaryOperand` and additionally gives you `Earliest` and `Latest`.
+これを実現するには、列のデータ型とニーズに応じて、基本クラス `summaryOperand`、`NumbersummaryOperand`、または `DatesummaryOperand` のいずれかをオーバーライドする必要があります。このように既存の関数を再定義、または新しい関数を追加できます。`summaryOperand` クラスは、`Count` メソッドに対してのみデフォルトの実装を提供します。`NumbersummaryOperand` は `summaryOperand` を拡張し、`Min`、`Max`、`Sum`、および `Average` の実装を提供します。`DatesummaryOperand` は `summaryOperand` を拡張し、さらに特定の列の `Earliest` と `latest` を提供します。
 
 <!-- end: WebComponents -->
 
@@ -238,9 +238,9 @@ class WebGridDiscontinuedSummary {
 }
 ```
 
-As seen in the examples, the base classes expose the `Operate` method, so you can choose to get all default summaries and modify the result, or calculate entirely new summary results.
+例で見られるように、基本クラスは `Operate` メソッドを公開しているため、すべてのデフォルトの集計を取得して結果を変更するか、まったく新しい集計結果を計算するかを選択できます。
 
-The method returns a list of `SummaryResult`.
+このメソッドは `SummaryResult` のリストを返します。
 
 ```typescript
 interface IgxSummaryResult {
@@ -258,14 +258,14 @@ interface IgcSummaryResult {
 }
 ```
 
-and take optional parameters for calculating the summaries.
-See [Custom summaries, which access all data](#custom-summaries-which-access-all-data) section below.
+そして、集計を計算するためのオプションのパラメーターを受け取ります。
+以下の[すべてのデータにアクセスするカスタム集計](#custom-summaries-that-access-all-data)セクションを参照してください。
 
 > [!Note]
-> In order to calculate the summary row height properly, the {ComponentTitle} needs the `Operate` method to always return an array of `SummaryResult` with the proper length even when the data is empty.
+> 集計行の高さを適切に計算するには、データが空の場合でも、{ComponentTitle} が常に適切な長さの `SummaryResult` の配列を返す `Operate` メソッドを必要とします。
 
 
-And now let's add our custom summary to the column `UnitsInStock`. We will achieve that by setting the Summaries` property to the class we create below.
+次に、カスタム集計を列 `UnitsInStock` に追加しましょう。次に、カスタム集計を列 `UnitsInStock` に追加しましょう。
 <!-- Angular -->
 ```html
 <{ComponentSelector} #grid1 [data]="data" [autoGenerate]="false" height="800px" width="800px" (columnInit)="initColumn($event)" >
@@ -332,12 +332,12 @@ igRegisterScript("WebGridCustomSummary", (event) => {
 }, false);
 ```
 
-### Custom summaries, which access all data
- Now you can access all {ComponentTitle} data inside the custom column summary. Two additional optional parameters are introduced in the SummaryOperand `Operate` method.
-As you can see in the code snippet below the operate method has the following three parameters:
-- columnData - gives you an array that contains the values only for the current column
-- allGridData - gives you the whole grid data source
-- fieldName - current column field
+### すべてのデータにアクセスするカスタム集計
+カスタム列集計内のすべての {ComponentTitle} データにアクセスできます。SummaryOperand `Operate` メソッドには、2 つの追加のオプション パラメーターが導入されています。
+以下のコード スニペットで示されるように operate メソッドには以下の 3 つのパラメーターがあります。
+- columnData - 現在の列の値のみを含む配列を提供します。
+- allGridData - グリッド データソース全体を提供します。
+- fieldName - 現在の列フィールド
 
 ```typescript
 class MySummary extends IgxNumberSummaryOperand {
@@ -582,6 +582,7 @@ igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
 - <kbd>右矢印</kbd> - 1 つ右のセルへ移動。
 - <kbd>CTRL</kbd> + <kbd>左矢印</kbd> または <kbd>HOME</kbd> - 左端のセルへ移動。
 - <kbd>CTRL</kbd> + <kbd>右矢印</kbd> または <kbd>END</kbd> - 右端のセルへ移動。
+
 
 <!-- WebComponents, Blazor -->
 

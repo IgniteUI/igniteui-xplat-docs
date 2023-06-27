@@ -605,7 +605,7 @@ $custom-grid-theme: grid-theme(
 ## スタイル設定
 
 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
-In case you would like to change the color of the resize handle, you need to set a class for the grid first:
+サイズ変更ハンドルの色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
 ```ts
 <igc-grid class="grid">
