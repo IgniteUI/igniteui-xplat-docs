@@ -7,7 +7,7 @@ mentionedTypes: ["Toolbar", "DomainChart", "CategoryChart", "XamDataChart"]
 
 # {Platform} Toolbar Overview
 
-The {Platform} Toolbar component is a companion container for UI operations to interact both standalone or with the {Platform} Data Chart & `CategoryChart` components. This allows you to easily choose from a preset of properties and tools with predefined SVG icons, but it also gives you the ability to create custom tools for your project. Benefiting from a number of attributes, you can define or change the icon in use or apply different actions to it.
+The {Platform} Toolbar component is a companion container for UI operations to be used primarily with our charting components. The toolbar will dynamically update with a preset of properties and tool items when linked to our `XamDataChart` or `CategoryChart` components. You'll be able to create custom tools for your project allowing end users to provide changes, offering an endless amount of customization.
 
 ## {Platform} Toolbar Example
 
