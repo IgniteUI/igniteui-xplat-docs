@@ -69,19 +69,15 @@ Single row selection can now be easily set up, the only thing you need to do, is
 ```
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-
-    this._bind = () => {
-        grid1.data = this.data;
-        grid.rowSelectionChanging = this.handleRowSelection;
-    }
-    this._bind();
+    const grid = document.getElementById('grid') as IgcGridComponent;
+    grid.data = this.data;
+    grid.addEventListener("rowSelectionChanging", this.handleRowSelection);
 }
 ```
 <!-- end: WebComponents -->
 
 ```typescript
-public handleRowSelection(args) {
+public handleRowSelection(args: IgcRowSelectionEventArgs) {
     if (args.added.length && args.added[0] === 3) {
         args.cancel = true;
     }
@@ -96,19 +92,15 @@ public handleRowSelection(args) {
              PrimaryKey="Key"
              @ref=Grid
              AutoGenerate=true
-             RowSelectionChangingScript='rowSelectionChangingHandler'
+             RowSelectionChanging='RowSelectionChanging'
              Data=northwindEmployees>
     </{ComponentSelector}>
-```
-
-```razor
-function rowSelectionChangingHandler(args) {
-        if (args.detail.added.length && args.added[0] === 3) {
-        args.detail.cancel = true;
+@code {
+    private void RowSelectionChanging(IgbRowSelectionEventArgs args)
+    {
+        // handler for selection change
     }
 }
-
-igRegisterScript("rowSelectionChangingHandler", rowSelectionChangingHandler, false);
 ```
 
 ### Multiple Selection
@@ -139,7 +131,6 @@ To enable multiple row selection in the `{ComponentName}` just set the `RowSelec
              PrimaryKey="Key"
              @ref=Grid
              AutoGenerate=true
-             RowSelectionChangingScript='rowSelectionChangingHandler'
              Data=northwindEmployees>
     </{ComponentSelector}>
 ```
@@ -170,7 +161,6 @@ To enable cascade row selection in the `{ComponentName}` just set the `RowSelect
              PrimaryKey="Key"
              @ref=Grid
              AutoGenerate=true
-             RowSelectionChangingScript='rowSelectionChangingHandler'
              Data=northwindEmployees>
     </{ComponentSelector}>
 ```
@@ -219,11 +209,19 @@ The code snippet below can be used to select one or multiple rows simultaneously
              Height="100%"
              RowSelection=GridSelectionMode.Multiple
              PrimaryKey="Key"
-             @ref=Grid
+             @ref=grid
              AutoGenerate=true
              Data=northwindEmployees>
     </{ComponentSelector}>
-    <IgbButton onclick='grid.selectRows([1,2,5], true)'>Select</IgbButton>
+    <IgbButton @onclick=Select>Select</IgbButton>
+    @code {
+        public IgbGrid grid;
+        private async void Select()
+        {
+            object[] array = new object[] { 1,2, 5 };
+            await this.grid.SelectRowsAsync(array, true);
+        }
+    }
 ```
 
 <!-- WebComponents -->
@@ -234,11 +232,16 @@ row-selection="Multiple"
 auto-generate="true">
 </{ComponentSelector}>
 
-<button onClick="onClick">Select 1,2 and 5</button>
+<button id='select'>Select 1,2 and 5</button>
 ```
+
 ```ts
-public onClick() {
-    this.grid.selectRows([1,2,5], true);
+constructor() {
+    document.getElementById("select").addEventListener("click", this.onClickSelect);
+}
+public onClickSelect() {
+    const grid = document.getElementById("grid") as IgcGridComponent;
+    grid.selectRows([1,2,5], true);
 }
 ```
 <!-- end: WebComponents -->
@@ -267,11 +270,19 @@ If you need to deselect rows programmatically, you can use the `DeselectRows` me
              Height="100%"
              RowSelection=GridSelectionMode.Multiple
              PrimaryKey="Key"
-             @ref=Grid
+             @ref=grid
              AutoGenerate=true
              Data=northwindEmployees>
     </{ComponentSelector}>
-    <IgbButton onclick='grid.deselectRows([1,2,5], true)'>Select</IgbButton>
+    <IgbButton @onclick=Deselect>Deselect</IgbButton>
+    @code {
+        public IgbGrid grid;
+        private async void Deselect()
+        {
+            object[] array = new object[] { 1, 2, 5 };
+            await this.grid.DeselectRowsAsync(array);
+        }
+    }
 ```
 
 <!-- WebComponents -->
@@ -282,11 +293,15 @@ row-selection="Multiple"
 auto-generate="true">
 </{ComponentSelector}>
 
-<button onClick="onClick">DeSelect</button>
+<button id='deselect'>DeSelect</button>
 ```
 ```ts
-public onClick() {
-    this.grid.deselectRows([1,2,5], true);
+constructor() {
+    document.getElementById("deselect").addEventListener("click", this.onClickDeselect);
+}
+public onClickDeselect() {
+    const grid = document.getElementById("grid") as IgcGridComponent;
+    grid.deselectRows([1,2,5]);
 }
 ```
 <!-- end: WebComponents -->
@@ -316,13 +331,9 @@ When there is some change in the row selection `RowSelectionChanging` event is e
 
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-
-    this._bind = () => {
-        grid1.data = this.data;
-        grid.rowSelectionChanging = this.handleRowSelectionChange;
-    }
-    this._bind();
+    const grid = document.getElementById('grid') as IgcGridComponent;
+    grid.data = this.data;
+    grid.addEventListener("rowSelectionChanging", this.handleRowSelectionChange);
 }
 ```
 
@@ -342,28 +353,26 @@ public handleRowSelectionChange(args) {
              PrimaryKey="Key"
              @ref=Grid
              AutoGenerate=true
-             RowSelectionChangingScript='rowSelectionChangingHandler'
+             RowSelectionChanging='RowSelectionChanging'
              Data=northwindEmployees>
     </{ComponentSelector}>
-```
-
-```razor
-function rowSelectionChangingHandler(args) {
-    args.detail.cancel = true; // this will cancel the row selection
+@code {
+    private void RowSelectionChanging(IgbRowSelectionEventArgs args)
+    {
+        // handler
+    }
 }
-
-igRegisterScript("rowSelectionChangingHandler", rowSelectionChangingHandler, false);
 ```
 
 ### Select All Rows
 
-Another useful API method that `{ComponentName}` provides is `SelectAll`. By default this method will select all data rows, but if filtering is applied, it will select only the rows that match the filter criteria. If you call the method with *false* parameter, `SelectAll(false)` will always select all data in the grid, even if filtering is applied.
+Another useful API method that `{ComponentName}` provides is `SelectAllRows`. By default this method will select all data rows, but if filtering is applied, it will select only the rows that match the filter criteria. If you call the method with *false* parameter, `SelectAllRows(false)` will always select all data in the grid, even if filtering is applied.
 
-> **Note** Keep in mind that `SelectAll()` will not select the rows that are deleted.
+> **Note** Keep in mind that `SelectAllRows` will not select the rows that are deleted.
 
 ### Deselect All Rows
 
-`{ComponentName}` provides a `DeselectAll` method, which by default will deselect all data rows, but if filtering is applied will deselect only the rows that match the filter criteria. If you call the method with *false* parameter, `DeselectAll(false)` will always clear all row selection state even if filtering is applied.
+`{ComponentName}` provides a `DeselectAllRows` method, which by default will deselect all data rows, but if filtering is applied will deselect only the rows that match the filter criteria. If you call the method with *false* parameter, `DeselectAllRows(false)` will always clear all row selection state even if filtering is applied.
 
 ### How to get Selected Rows
 
@@ -371,8 +380,29 @@ If you need to see which rows are currently selected, you can get their row IDs 
 
 ```typescript
 public getSelectedRows() {
-    const currentSelection = this.grid.selectedRows; // return array of row IDs
+    const grid = document.getElementById('grid') as IgcGridComponent;
+    const currentSelection = grid.selectedRows; // return array of row IDs
 }
+```
+
+```razor
+    <{ComponentSelector} Width="100%"
+             Id="grid"
+             Height="100%"
+             RowSelection=GridSelectionMode.Multiple
+             PrimaryKey="Key"
+             @ref=grid
+             AutoGenerate=true
+             Data=northwindEmployees>
+    </{ComponentSelector}>
+    <IgbButton @onclick=GetSelected>Get selected</IgbButton>
+    @code {
+        public IgbGrid grid;
+        private async void GetSelected()
+        {
+            var selected = this.grid.SelectedRows;
+        }
+    }
 ```
 
 Additionally, assigning row IDs to `SelectedRows` will allow you to change the grid's selection state.
@@ -393,13 +423,9 @@ public mySelectedRows = [1, 2, 3]; // an array of row IDs
 
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-
-    this._bind = () => {
-        grid1.data = this.data;
-        grid.selectedRows = this.mySelectedRows;
-    }
-    this._bind();
+    const grid = document.getElementById('grid') as IgcGridComponent;
+    grid.data = this.data;
+    grid.selectedRows = this.mySelectedRows;
 }
 ```
 
@@ -416,7 +442,7 @@ constructor() {
 </{ComponentSelector}>
 
 @code {
-    public object[] selectedRows = {1, 2, 4};
+    public object[] selectedRows = new object[] { 1, 2, 5 };
 }
 ```
 
@@ -428,28 +454,11 @@ By default, the `{ComponentName}` **handles all row selection interactions** on 
 
 #### Row Template
 
-```razor
-igRegisterScript("WebGridRowSelectorTemplate", (ctx) => {
-    var html = window.igTemplating.html;
-    if (ctx.$implicit.selected) {
-        return html`<div style="justify-content: space-evenly;display: flex;width: 70px;">
-    <span> ${ctx.$implicit.index}</span>
-<igc-checkbox checked></igc-checkbox>
-</div>`;
-    } else {
-        return html`<div style="justify-content: space-evenly;display: flex;width: 70px;">
-    <span> ${ctx.$implicit.index}</span>
-<igc-checkbox></igc-checkbox>
-</div>`;
-    }
-}, false);
-```
 
-<!-- Angular -->
-
-To create a custom row selector template,  within the `{ComponentSelector}`, declare an `<ng-template>` with `igxRowSelector` directive. From the template you can access the implicitly provided context variable, with properties that give you information about the row's state.
+To create a custom row selector template,  within the `{ComponentSelector}` you can use the `RowSelectorTemplate` property. From the template you can access the implicitly provided context variable, with properties that give you information about the row's state.
 
 The `selected` property shows whether the current row is selected or not while the `index` property can be used to access the row index.
+
 ```html
 <ng-template igxRowSelector let-rowContext>
     {{ rowContext.index }}
@@ -459,15 +468,39 @@ The `selected` property shows whether the current row is selected or not while t
     ></igx-checkbox>
 </ng-template>
 ```
+
+```razor
+igRegisterScript("WebGridRowSelectorTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    var implicit = ctx["$implicit"];
+    if (implicit.selected) {
+        return html`<div style="justify-content: space-evenly;display: flex;width: 70px;">
+    <span> ${implicit.index}</span>
+<igc-checkbox checked></igc-checkbox>
+</div>`;
+    } else {
+        return html`<div style="justify-content: space-evenly;display: flex;width: 70px;">
+    <span> ${implicit.index}</span>
+<igc-checkbox></igc-checkbox>
+</div>`;
+    }
+}, false);
+```
+
 ```ts
 public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
-    return html`
-        ${ctx.index }
-        <igc-checkbox
-            checked="${ctx.selected}"
-            readonly="true"
-        ></igc-checkbox>
-    `;
+    const implicit: any = ctx["$implicit"];
+    if (implicit.selected) {
+        return html`<div style="justify-content: space-evenly;display: flex;width: 70px;">
+            <span> ${implicit.index}</span>
+            <igc-checkbox checked></igc-checkbox>
+            </div>`;
+    } else {
+        return html`<div style="justify-content: space-evenly;display: flex;width: 70px;">
+            <span> ${implicit.index}</span>
+            <igc-checkbox></igc-checkbox>
+            </div>`;
+    }
 }
 ```
 
@@ -479,12 +512,17 @@ The `rowID` property can be used to get a reference of an `{ComponentSelector}` 
 ```
 ```ts
 public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
+    const implicit: any = ctx["$implicit"];
     return html`
-        <igc-checkbox click="${this.onSelectorClick($event, ctx.key)}"></igc-checkbox>
+        <igc-checkbox
+            @click="${(event: any) => {
+            this.onSelectorClick(event, implicit.key);
+            }}"
+        ></igc-checkbox>
     `;
 }
 ```
-In the above example we are using an `igx-checkbox` and we bind `rowContext.selected` to its `checked` property. See this in action in our [Row Numbering Demo](#row-numbering-demo).
+In the above example we are using an `Checkbox` and we bind `rowContext.selected` to its `checked` property. See this in action in our [Row Numbering Demo](#row-numbering-demo).
 
 <!-- ComponentStart: HierarchicalGrid -->
 
@@ -493,22 +531,9 @@ The `rowContext.select()` and `rowContext.deselect()` methods are exposed in the
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- end: Angular -->
-
 ### Header Template
 
-```razor
-igRegisterScript("WebGridHeaderRowSelectorTemplate", (ctx) => {
-    var html = window.igTemplating.html;
-    return html`<div style="width: 70px;height: 60px;display: flex;">
-    <img src="https://www.infragistics.com/angular-demos-lob/assets/images/card/avatars/igLogo.png">
-</div>`;
-}, false);
-```
-
-<!-- Angular -->
-
-To create a custom header selector template, within the `{ComponentName}`, declare an `<ng-template>` with `igxHeadSelector` directive. From the template you can access the implicitly provided context variable, with properties that give you information about the header's state.
+To create a custom header selector template, within the `{ComponentName}`, you can use the ` HeadSelectorTemplate` property. From the template you can access the implicitly provided context variable, with properties that give you information about the header's state.
 
 The `SelectedCount` property shows you how many rows are currently selected while `totalCount` shows you how many rows there are in the `{ComponentName}` in total.
 
@@ -517,16 +542,25 @@ The `SelectedCount` property shows you how many rows are currently selected whil
     {{ headContext.selectedCount }} / {{ headContext.totalCount  }}
 </ng-template>
 ```
+
 ```ts
 public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
-    return html`
-        ${ ctx.selectedCount } / ${ ctx.totalCount  }
-    `;
-}
+    const implicit: any = ctx["$implicit"];
+    return html` ${implicit.selectedCount} / ${implicit.totalCount} `;
+};
+```
+
+```razor
+public RenderFragment<IgbHeadSelectorTemplateContext> Template = (context) =>
+{
+    return @<div> <img style="min-width:80px;" src="https://www.infragistics.com/angular-demos-lob/assets/images/card/avatars/igLogo.png"/></div>;
+};
 ```
 
 The `SelectedCount` and `TotalCount` properties can be used to determine if the head selector should be checked or indeterminate (partially selected).
 
+
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="gridData" primaryKey="ProductID" rowSelection="multiple">
     <ng-template igxHeadSelector let-headContext>
@@ -537,24 +571,32 @@ The `SelectedCount` and `TotalCount` properties can be used to determine if the 
     </ng-template>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+```html
+<{ComponentSelector} id="grid"
+primary-key="ProductID"
+row-selection="Multiple"
+auto-generate="true">
+</{ComponentSelector}>
+
+```
+
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-
-    this._bind = () => {
-        grid.data = this.data;
-        grid.headSelectorTemplate = this.headSelectorTemplate;
-    }
-    this._bind();
+    const grid = document.getElementById('grid') as IgcGridComponent;
+    grid.data = this.data;
+    grid.headSelectorTemplate = this.headSelectorTemplate;
 }
 
 public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
-    return html`
-        <igc-checkbox
-            checked="${ ctx.selectedCount > 0 && ctx.selectedCount === ctx.totalCount}"
-            indeterminate="${ctx.selectedCount > 0 && ctx.selectedCount !== ctx.totalCount}">
-        </igc-checkbox>
-    `;
+    const implicit: any = ctx["$implicit"];
+    if (implicit.selectedCount > 0 && implicit.selectedCount === implicit.totalCount) {
+            return html`<igc-checkbox checked></igc-checkbox>`;
+        } else if(implicit.selectedCount > 0 && implicit.selectedCount !== implicit.totalCount) {
+            return html`<igc-checkbox indeterminate></igc-checkbox>`;
+        }
+        return html`<igc-checkbox></igc-checkbox>`;
 }
 ```
 
@@ -567,8 +609,6 @@ The `headContext.selectAll()` and `headContext.deselectAll()` methods are expose
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- end: Angular -->
-
 ### Row Numbering Demo
 
 This demo shows the usage of custom header and row selectors. The latter uses `RowContext.Index` to display row numbers and an `Checkbox` bound to `RowContext.Selected`.
@@ -579,7 +619,7 @@ This demo shows the usage of custom header and row selectors. The latter uses `R
 
 <!-- ComponentStart: Grid -->
 
-<!-- Angular -->
+
 ### Excel Style Row Selectors Demo
 
 This demo uses custom templates to resemble Excel-like header and row selectors.
@@ -589,7 +629,7 @@ This demo uses custom templates to resemble Excel-like header and row selectors.
 `sample="/{ComponentSample}/row-selection-template-excel", height="550", alt="{Platform} {ComponentTitle} Selection Template Excel Example"`
 
 
-<!-- end: Angular -->
+
 
 <!-- ComponentEnd: Grid -->
 
