@@ -133,6 +133,9 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
                     packageText = "igniteui_" + getPlatformName(<APIPlatform>options.platform).toLowerCase() + "_grids_grids."
                 } else if (packageName == "igniteui-webinputs") {
                     packageText = "";
+                    if (platform == APIPlatform.React) {
+                        packageText = "igniteui_react.";
+                    }
                 } else {
                     packageText = packageName;
                     packageText = packageText.replace("igniteui-", "igniteui-" + getPlatformName(<APIPlatform>options.platform).toLowerCase() + "-");
@@ -473,6 +476,7 @@ function getFrontMatterTypes(options: any, filePath: string) {
             throw new Error(filePath + '\n' + error.message + "\n" + "Failed parsing:\n" + node.value + "\n")
         }
         // console.log("setFrontMatterTypes=" + filePath);
+        let mentionedNamespace: string | null = null;
         if (ym.mentionedTypes) {
             // console.log("mentionedTypes=" + ym.mentionedTypes);
             let mt = ym.mentionedTypes;
@@ -487,9 +491,13 @@ function getFrontMatterTypes(options: any, filePath: string) {
             }
             options.mentionedTypes = arr;
             let mappings = <MappingLoader>options.mappings;
+            
             for (let i = 0; i < options.mentionedTypes.length; i++) {
                 let currType = options.mentionedTypes[i];
                 let currTypeInfo = mappings.getType(currType);
+                if (currTypeInfo?.originalNamespace) {
+                    mentionedNamespace = currTypeInfo.originalNamespace;
+                }
                 if (currTypeInfo) {
                     if (currTypeInfo.originalBaseTypeName) {
                         let fullName = currTypeInfo.originalBaseTypeNamespace + "." +
@@ -515,6 +523,13 @@ function getFrontMatterTypes(options: any, filePath: string) {
             options.namespace = ym.namespace;
             if (options.mappings) {
                 options.mappings.namespace = options.namespace;
+            }
+        } else {
+            if (mentionedNamespace) {
+                options.namespace = mentionedNamespace;
+                if (options.mappings) {
+                    options.mappings.namespace = mentionedNamespace;
+                }
             }
         }
 
