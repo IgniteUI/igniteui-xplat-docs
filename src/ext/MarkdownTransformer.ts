@@ -1399,12 +1399,13 @@ function omitFencedCode(options: any) {
 
         //highlight.js, used by docfx, doesn't currently support tsx highlighting.
         if (lang.toLowerCase() == "tsx") {
-            lang = "ts";
+            node.lang = "ts";
         }
-        if (lang.toLowerCase() == "razor") {
-            lang = "html";
-        }
-        node.lang = lang;
+        // commented out since the igniteui-docfx-templat supports razor language
+        //if (lang.toLowerCase() == "razor") {
+        //    node.lang = "html";
+        //}
+        //node.lang = lang;
         //console.log(node);
     }
 
