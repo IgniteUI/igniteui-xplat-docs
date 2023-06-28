@@ -13,7 +13,7 @@ The {Platform} `{ComponentName}` exposes an Excel-style filtering feature that p
 
 ## {Platform} {ComponentTitle} Excel Style Filtering Example
 
-`sample="/{ComponentSample}/excel-style-filtering-sample-1", height="620", alt="{Platform} {ComponentTitle} excel style filtering sample 1"`
+`sample="/{ComponentSample}/excel-style-filtering-sample-1", height="950", alt="{Platform} {ComponentTitle} excel style filtering sample 1"`
 
 
 ## Usage
@@ -33,7 +33,7 @@ To turn on the `Grid` component's Excel-style filtering, two inputs should be se
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} auto-generate="true" allow-filtering="true" filter-mode="ExcelStyleFilter" >
+<{ComponentSelector} auto-generate="true" allow-filtering="true" filter-mode="excelStyleFilter" >
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
@@ -979,6 +979,34 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
+
+<!-- WebComponents, Blazor -->
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```html
+<igc-grid class="grid"></igc-grid>
+```
+
+```razor
+<IgbGrid class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties to this class:
+
+```css
+.grid {
+    --igx-grid-filtering-row-background: #ffcd0f;
+    --igx-list-item-background: #ffcd0f;
+}
+```
+### Demo
+
+`sample="/{ComponentSample}/excel-style-filtering-style", height="950", alt="{Platform} {ComponentTitle} excel style filtering style"`
+
+<!-- end: WebComponents, Blazor -->
 
 ## API References
 

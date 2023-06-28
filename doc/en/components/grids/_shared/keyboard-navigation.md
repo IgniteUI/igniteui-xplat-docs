@@ -118,20 +118,18 @@ When the `{ComponentName}` body is focused, the following key combinations are a
  - <kbd>Space</kbd> - over Group Row - selects all rows in the group, if `RowSelection` property is set to multiple.
  <!-- ComponentEnd: Grid -->
 
-<!-- Angular -->
+
 
 Practice all of the above mentioned actions in the demo sample below. Focus any navigable grid element and a list with some of the available actions for the element will be shown to guide you through.
 
+<!-- Angular, WebComponents -->
+
 ## Demo
 
-<!-- NOTE this sample is differed -->
 
-`sample="/{ComponentSample}/keyboard-navigation-guide", height="470", alt="{Platform} {ComponentTitle} keyboard navigation guide"`
+`sample="/{ComponentSample}/keyboard-navigation-guide", height="600", alt="{Platform} {ComponentTitle} keyboard navigation guide"`
 
-
-<!-- end: Angular -->
-
-<!-- Angular -->
+<!-- end: Angular, WebComponents -->
 
 ## Custom Keyboard Navigation
 
@@ -140,11 +138,13 @@ Overriding the default behavior for a certain key or keys combination is one of 
 
 | API | Description | Arguments |
 |---------|-------------|-----------|
-| `GridKeydown` | An event that is emitted when any of key press/combinations described above is performed. Can be canceled. For any other key press/combination, use the default `onkeydown` event. | `IGridKeydownEventArgs` |
-| `ActiveNodeChange` | An event that is emitted when the active node is changed. You can use it to determine the Active focus position (header, tbody etc.), column index, row index or nested level. | `IActiveNodeChangeEventArgs` |
+| `GridKeydown` | An event that is emitted when any of key press/combinations described above is performed. Can be canceled. For any other key press/combination, use the default `onkeydown` event. | `GridKeydownEventArgs` |
+| `ActiveNodeChange` | An event that is emitted when the active node is changed. You can use it to determine the Active focus position (header, tbody etc.), column index, row index or nested level. | `ActiveNodeChangeEventArgs` |
+<!-- Angular, WebComponents -->
 | `NavigateTo` | Navigates to a position in the grid, based on provided `Rowindex` and `VisibleColumnIndex`. It can also execute a custom logic over the target element, through a callback function that accepts param of type ```{ targetType: GridKeydownTargetType, target: Object }``` . Usage: <br />```grid.navigateTo(10, 3, (args) => { args.target.nativeElement.focus(); });``` | ```RowIndex: number, VisibleColumnIndex: number, callback: ({ targetType: GridKeydownTargetType, target: Object }```) => {} |
 | `GetNextCell`| returns `ICellPosition` object, which defines the next cell by `RowIndex` and `VisibleColumnIndex`. A callback function can be passed as a third parameter of `GetNextCell` method. The callback function accepts `Column` as a param and returns a `boolean` value indication if a given criteria is met: <br />```const nextEditableCell = grid.getNextCell(0, 4, (col) => col.editable);``` | ```currentRowIndex: number, currentVisibleColumnIndex: number, callback: (Column) => boolean``` |
 | `GetPreviousCell` | returns `ICellPosition` object, which defines the previous cell by `RowIndex` and `VisibleColumnIndex`. A callback function can be passed as a third parameter of `GetPreviousCell` method. The callback function accepts `Column` as a param and returns a `boolean` value indication if a given criteria is met: <br />```const prevEditableCell = grid.getPreviousCell(0, 4, (col) => col.editable);``` | ``` CurrentRowIndex: number, CurrentVisibleColumnIndex: number, callback: (Column) => boolean ``` |
+<!-- end: Angular, WebComponents -->
 <br />
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -160,16 +160,38 @@ Let's try the API to demonstrate how to achieve common scenarios like user input
 <igx-grid #grid1 [data]="data" [primaryKey]="'ProductID'" (gridKeydown)="customKeydown($event)">
 ```
 ```html
-<igc-grid id="grid1" primary-key="ProductID">
-</igc-grid
+<{ComponentSelector} id="grid1" primary-key="ProductID">
+</{ComponentSelector}>
 ```
+
+```razor
+<{ComponentSelector} PrimaryKey="ProductID" GridKeydownScript="WebGridCustomKBNav">
+</{ComponentSelector}>
+
+// In JavaScript
+
+igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
+    const args = evtArgs.detail;
+    const target = args.target;
+    const evt = args.event;
+    const type = args.targetType;
+    const grid = document.getElementsByTagName("igc-grid")[0];
+
+    if (type === 'dataCell' && target.editMode && evt.key.toLowerCase() === 'tab') {
+        // 1. USER INPUT VALIDATION ON TAB
+    } else if (type === 'dataCell' && evt.key.toLowerCase() === 'enter') {
+        // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
+    }
+}, false);
+```
+
 ```ts
 constructor() {
         var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
 
         this._bind = () => {
             grid.data = this.data
-            grid.gridKeydown = this.customKeydown
+            grid.addEventListener("gridKeydown", this.customKeydown);
         }
         this._bind();
 
@@ -177,40 +199,13 @@ constructor() {
 ```
 <!-- ComponentEnd: Grid -->
 
-<!-- ComponentStart: HierarchicalGrid -->
-
-```html
-<igx-hierarchical-grid #grid1 [data]="data" (gridKeydown)="customKeydown($event, grid1)">
-    <igx-row-island [key]="'Albums'" (gridCreated)="childGridCreated($event)">
-    </igx-row-island>
-</igx-hierarchical-grid>
-```
-
-In order to add custom keyboard navigation to `{ComponentName}` child grids too, each child grid should subscribe to `GridKeydown` event. That's why in example above we have registered and event handler for for the `GridCreated` event:
 
 ```typescript
-public childGridCreated(event: IGridCreatedEventArgs) {
-    const grid = event.grid;
-    event.grid.gridKeydown.subscribe((args) => {
-        this.customKeydown(args, grid);
-    });
-}
-```
-<!-- ComponentEnd: HierarchicalGrid -->
-
-
-<!-- ComponentStart: TreeGrid -->
-```html
-<igx-tree-grid #grid1 [data]="data" (gridKeydown)="customKeydown($event)">
-</igx-tree-grid>
-```
-<!-- ComponentEnd: TreeGrid -->
-
-```typescript
-public customKeydown(args: IGridKeydownEventArgs) {
-    const target: IgxGridCell = args.target as IgxGridCell;
-    const evt: KeyboardEvent = args.event as KeyboardEvent;
-    const type = args.targetType;
+public customKeydown(args: any) {
+    const evt = args.detail;
+    const target: IgxGridCell = evt.target as IgxGridCell;
+    const evt: KeyboardEvent = evt.event as KeyboardEvent;
+    const type = evt.targetType;
 
     if (type === 'dataCell' && target.inEditMode && evt.key.toLowerCase() === 'tab') {
         // 1. USER INPUT VALIDATION ON TAB
@@ -221,9 +216,8 @@ public customKeydown(args: IGridKeydownEventArgs) {
 }
 ```
 
-Based on the `IGridKeydownEventArgs` values we identified two cases, where to provide our own logic (see above). Now, using the methods from the API, let's perform the desired - if the user is pressing <kbd>Tab</kbd> key over a cell in edit mode, we will perform validation on the input. If the user is pressing <kbd>Enter</kbd> key over a cell, we will move focus to cell in the next row:
+Based on the event arg values we identified two cases, where to provide our own logic (see above). Now, using the methods from the API, let's perform the desired - if the user is pressing <kbd>Tab</kbd> key over a cell in edit mode, we will perform validation on the input. If the user is pressing <kbd>Enter</kbd> key over a cell, we will move focus to cell in the next row:
 
-<!-- ComponentStart: Grid -->
 ```typescript
     // 1. USER INPUT VALIDATION ON TAB
     if (target.column.dataType === 'number' && target.editValue < 10) {
@@ -236,11 +230,35 @@ Based on the `IGridKeydownEventArgs` values we identified two cases, where to pr
         });
 ```
 
+```razor
+
+// In JavaScript
+
+igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
+    const args = evtArgs.detail;
+    const target = args.target;
+    const evt = args.event;
+    const type = args.targetType;
+    const grid = document.getElementsByTagName("igc-grid")[0];
+
+    // 1. USER INPUT VALIDATION ON TAB
+    if (target.column.dataType === 'number' && target.editValue < 10) {
+        // alert the user that the input is invalid
+        return;
+    }
+    // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
+    grid.navigateTo(target.row.index + 1, target.column.visibleIndex, (obj) => {
+            obj.target.activate();
+    });
+}, false);
+
+```
+
 > [!Note]
 > Please refer to the sample code for full implementation details.
 
 Use the demo below to try out the custom scenarios that we just implemented:
-- Double click or press <kbd>F2</kbd> key on a cell in the **Order** column, change the value to **7** and press <kbd>Tab</kbd> key. Prompt message will be shown.
+- Double click or press <kbd>F2</kbd> key on a cell in a numeric column, change the value to **7** and press <kbd>Tab</kbd> key. Prompt message will be shown.
 - Select a cell and press <kbd>Enter</kbd> key a couple of times. Every key press will move the focus to a cell in the next row, under the same column.
 
 #### Demo
@@ -248,69 +266,6 @@ Use the demo below to try out the custom scenarios that we just implemented:
 
 `sample="/{ComponentSample}/keyboard-custom-navigation", height="400", alt="{Platform} {ComponentTitle} keyboard custom navigation"`
 
-
-<!-- ComponentEnd: Grid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-```typescript
-    // 1. USER INPUT VALIDATION ON TAB
-    if (target.column.dataType === 'number' && target.editValue < 0) {
-        // alert the user that the input is invalid
-        return;
-    }
-    // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
-    const nexRowIndex = target.row.expanded ? target.rowIndex + 2 : target.rowIndex + 1;
-    grid.navigateTo(nexRowIndex, target.visibleColumnIndex,
-        (obj) => { obj.target.nativeElement.focus(); });
-```
-
-<!-- end: Angular -->
-
-<!-- Angular -->
-
-Use the demo below to try out the custom scenarios that we just implemented:
-- Double click or press <kbd>F2</kbd> key on a cell in the **Grammy Nominations** column, change the value to `-2` and press <kbd>tab</kbd> key. Prompt message will be shown.
-- Select a cell and press <kbd>Enter</kbd> key a couple of times. Every key press will move the focus to a cell in the next row, under the same column.
-
-#### Demo
-
-<!-- NOTE this sample is differed -->
-
-`sample="/{ComponentSample}/keyboard-custom-navigation", height="520", alt="{Platform} {ComponentTitle} keyboard custom navigation"`
-
-
-<!-- end: Angular -->
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
-<!-- ComponentStart: TreeGrid -->
-
-```typescript
-    // 1. USER INPUT VALIDATION ON TAB
-    if (target.column.dataType === 'number' && target.editValue < 18) {
-        // alert the user that the input is invalid
-        return;
-    }
-    // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
-    const nexRowIndex = target.row.expanded ? target.rowIndex + 2 : target.rowIndex + 1;
-    grid.navigateTo(nexRowIndex, target.visibleColumnIndex,
-        (obj) => { obj.target.nativeElement.focus(); });
-```
-
-<!-- Angular -->
-
-Use the demo below to try out the custom scenarios that we just implemented:
-- Double click or press <kbd>F2</kbd> key on a cell in the `Age` column, change the value to `16` and press <kbd>tab</kbd> key. Prompt message will be shown.
-- Select a cell and press <kbd>Enter</kbd> key a couple of times. Every key press will move the focus to a cell in the next row, under the same column.
-
-<!-- NOTE this sample is differed -->
-
-`sample="/{ComponentSample}/keyboard-navigation-guide", height="520", alt="{Platform} {ComponentTitle} keyboard navigation guide"`
-
-
-<!-- end: Angular -->
-
-<!-- ComponentEnd : TreeGrid -->
 
 ## Known Limitations
 
