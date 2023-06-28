@@ -133,6 +133,9 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
                     packageText = "igniteui_" + getPlatformName(<APIPlatform>options.platform).toLowerCase() + "_grids_grids."
                 } else if (packageName == "igniteui-webinputs") {
                     packageText = "";
+                    if (platform == APIPlatform.React) {
+                        packageText = "igniteui_react.";
+                    }
                 } else {
                     packageText = packageName;
                     packageText = packageText.replace("igniteui-", "igniteui-" + getPlatformName(<APIPlatform>options.platform).toLowerCase() + "-");
