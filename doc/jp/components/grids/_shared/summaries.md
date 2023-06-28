@@ -162,7 +162,7 @@ public disableSummary() {
 
 
 <!-- WebComponents -->
-これを実現するには、列のデータ型とニーズに応じて、基本クラス `summaryOperand`、`NumbersummaryOperand`、または `DatesummaryOperand` のいずれかをオーバーライドする必要があります。このように既存の関数を再定義、または新しい関数を追加できます。`summaryOperand` クラスは、`Count` メソッドに対してのみデフォルトの実装を提供します。`NumbersummaryOperand` は `summaryOperand` を拡張し、`Min`、`Max`、`Sum`、および `Average` の実装を提供します。`DatesummaryOperand` は `summaryOperand` を拡張し、さらに特定の列の `Earliest` と `latest` を提供します。
+これを実現するには、列のデータ型とニーズに応じて、基本クラス `SummaryOperand`、`NumberSummaryOperand`、または `DateSummaryOperand` のいずれかをオーバーライドする必要があります。このように既存の関数を再定義、または新しい関数を追加できます。`SummaryOperand` クラスは、`Count` メソッドに対してのみデフォルトの実装を提供します。`NumberSummaryOperand` は `SummaryOperand` を拡張し、`Min`、`Max`、`Sum`、および `Average` の実装を提供します。`DateSummaryOperand` は `SummaryOperand` を拡張し、さらに特定の列の `Earliest` と `Latest` を提供します。
 
 <!-- end: WebComponents -->
 
@@ -259,7 +259,7 @@ interface IgcSummaryResult {
 ```
 
 そして、集計を計算するためのオプションのパラメーターを受け取ります。
-以下の[すべてのデータにアクセスするカスタム集計](#custom-summaries-that-access-all-data)セクションを参照してください。
+以下の[すべてのデータにアクセスするカスタム集計](#すべてのデータにアクセスするカスタム集計)セクションを参照してください。
 
 > [!Note]
 > 集計行の高さを適切に計算するには、データが空の場合でも、{ComponentTitle} が常に適切な長さの `SummaryResult` の配列を返す `Operate` メソッドを必要とします。
@@ -448,7 +448,7 @@ igRegisterScript("SummaryTemplate", (ctx) => {
 <!-- end: Angular -->
 
 
-`sample="/{ComponentSample}/data-summary-template", height="650", alt="{Platform} {ComponentTitle} data summary template"`
+`sample="/{ComponentSample}/data-summary-template", height="650", alt="{Platform} {ComponentTitle} データ集計のテンプレート"`
 
 
 <!-- Angular, WebComponents -->
@@ -507,7 +507,7 @@ igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
 }, false);
 ```
 
-`sample="/{ComponentSample}/data-summary-formatter", height="650", alt="{Platform} {ComponentTitle} data summary formatter"`
+`sample="/{ComponentSample}/data-summary-formatter", height="650", alt="{Platform} {ComponentTitle} データ集計のフォーマッタ"`
 
 
 <!-- end: Angular, WebComponents -->
@@ -515,7 +515,7 @@ igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
 
 <!-- ComponentStart: Grid -->
 
-## グループの集計
+## グループ化の集計
 
 列のグループがある場合、`{ComponentName}` は `SummaryCalculationMode` と `SummaryPosition` を使用して集計配置の変更やモードの計算をします。これら 2 つのプロパティに加えて、`{ComponentName}` は、参照するグループ行が縮小されたときに集計行が表示されたままであるかどうかを決定できる `ShowSummaryOnCollapse` プロパティを公開します。
 
@@ -538,7 +538,7 @@ igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
 
 ### デモ
 
-`sample="/{ComponentSample}/groupby-summary-options", height="650", alt="{Platform} {ComponentTitle} groupby summary options"`
+`sample="/{ComponentSample}/groupby-summary-options", height="650", alt="{Platform} {ComponentTitle} グループ化の集計のオプション"`
 
 
 <!-- ComponentEnd: Grid -->
@@ -566,7 +566,7 @@ igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
 > [!Note]
 > `SummaryPosition` プロパティは子レベルの集計のみに適用します。ルート レベルの集計は、`{ComponentName}` の下に常に固定されます。
 
-`sample="/{ComponentSample}/data-summary-children", height="720", alt="{Platform} {ComponentTitle} data summary children"`
+`sample="/{ComponentSample}/data-summary-children", height="720", alt="{Platform} {ComponentTitle} データの子集計"`
 
 
 <!-- ComponentEnd: TreeGrid -->
@@ -649,7 +649,7 @@ $custom-theme: grid-summary-theme(
 ```
 
 > [!Note]
- >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除`する必要があります。
+ >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除する`必要があります。
 
  ```scss
 :host {
@@ -693,7 +693,7 @@ $custom-theme: grid-summary-theme(
 
 テーマ エンジンを使用して[**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
 
-すべてのコンポーネントに提供されている 2 つの定義済みスキーマ (ここでは [_light-grid-summary]({environment:sassApiUrl}/index.html#variable-_light-grid-summary) の 1 つを拡張します。
+すべてのコンポーネントに提供されている 2 つの定義済みスキーマ (ここでは [_light-grid-summary]({environment:sassApiUrl}/index.html#variable-_light-grid-summary)) の 1 つを拡張します。
 
 ```scss
 // Extending the light grid summary schema
@@ -710,7 +710,7 @@ $my-summary-schema: extend($_light-grid-summary,
 );
 ```
 
-カスタム スキーマを適用するには、グローバル [light]({environment:sassApiUrl}/index.html#variable-light-schema) または [dark]({environment:sassApiUrl}/index.html#variable-dark-schema) の 1 つを**拡張**する必要があります。これは基本的にカスタム スキーマでコンポーネントを指し示し、その後それぞれのコンポーネント テーマに追加するものです。
+カスタム スキーマを適用するには、グローバル [light]({environment:sassApiUrl}/index.html#variable-light-schema) または [dark]({environment:sassApiUrl}/index.html#variable-dark-schema) の 1 つを**拡張する**必要があります。これは基本的にカスタム スキーマでコンポーネントを指し示し、その後それぞれのコンポーネント テーマに追加するものです。
 
 ```scss
 // Extending the global light-schema
@@ -729,7 +729,7 @@ $custom-theme: grid-summary-theme(
 
 上記と同じ方法でテーマを含める必要があることに注意してください。
 
-`sample="/{ComponentSample}/groupby-summary-styling", height="710", alt="{Platform} {ComponentTitle} groupby summary styling"`
+`sample="/{ComponentSample}/groupby-summary-styling", height="710", alt="{Platform} {ComponentTitle} グループ化集計のスタイル設定"`
 
 
 <!-- end: Angular -->

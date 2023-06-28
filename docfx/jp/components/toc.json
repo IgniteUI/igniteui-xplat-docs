@@ -1122,7 +1122,7 @@
   {
     "name": "折れ線チャート",
     "href": "charts/types/line-chart.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
     "exclude": ["Blazor", "Angular", "React", "WebComponents"],
@@ -1621,8 +1621,7 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "コンボ",
-    "status": "UPDATED",
+    "name": "コンボ ボックス",
     "href": "inputs/combo/overview.md",
     "items": [
       {
@@ -1635,7 +1634,6 @@
       },
       {
         "name": "単一選択",
-        "status": "",
         "href": "inputs/combo/single-selection.md"
       }
     ]
@@ -1689,8 +1687,7 @@
   {
     "exclude": ["Angular", "React"],
     "name": "選択",
-    "href": "inputs/select.md",
-    "status": "NEW"
+    "href": "inputs/select.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
@@ -1740,8 +1737,7 @@
   {
     "exclude": ["Angular", "React"],
     "name": "ダイアログ",
-    "href": "notifications/dialog.md",
-    "status": "NEW"
+    "href": "notifications/dialog.md"
   },
   {
     "exclude": ["Angular"],

@@ -14,7 +14,7 @@ _language: ja
 
 ## {Platform} {ComponentTitle} Excel スタイル フィルタリングの例
 
-`sample="/{ComponentSample}/excel-style-filtering-sample-1", height="620", alt="{Platform} {ComponentTitle} Excel スタイルのフィルタリング サンプル 1"`
+`sample="/{ComponentSample}/excel-style-filtering-sample-1", height="950", alt="{Platform} {ComponentTitle} Excel スタイルのフィルタリング サンプル 1"`
 
 
 ## 使用方法
