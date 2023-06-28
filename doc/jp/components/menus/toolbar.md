@@ -94,11 +94,11 @@ ModuleManager.register(
 // in Program.cs file
 
 builder.Services.AddIgniteUIBlazor(
-    typeof(IgbToolbarModule),    
+    typeof(IgbToolbarModule),
     typeof(IgbDataChartToolbarModule),
     typeof(IgbDataChartCoreModule),
     typeof(IgbDataChartCategoryModule),
-    typeof(IgbDataChartAnnotationModule), 
+    typeof(IgbDataChartAnnotationModule),
     typeof(IgbDataChartInteractivityModule),
     typeof(IgbDataChartCategoryTrendLineModule)
 );
@@ -130,7 +130,7 @@ builder.Services.AddIgniteUIBlazor(
 
 `ToolAction` オブジェクトの `OverlayId`、`BeforeId`、および `AfterId` プロパティを使用して、新規および既存のツールの位置を変更したり、非表示にマークしたりすることができます。ToolActions は `Visibility` プロパティも公開します。
 
-次の例は、組み込みの `ZoomReset` と `Analyze Menu` メニュー ツール アクションの両方を非表示にする方法を示しています。`ZoomReset` ツール操作の新しいインスタンスが追加され、`AfterId` プロパティを使用して `ZoomMenu` 内に配置され、それを `ZoomOut` に割り当てます。これにより、新しいリセット ツールが `ZoomMenu` の下部に表示されます。
+次の例は、組み込みの `ZoomReset` と `AnalyzeMenu` メニュー ツール アクションの両方を非表示にする方法を示しています。`ZoomReset` ツール操作の新しいインスタンスが追加され、`AfterId` プロパティを使用して `ZoomMenu` 内に配置され、それを `ZoomOut` に割り当てます。これにより、新しいリセット ツールが `ZoomMenu` の下部に表示されます。
 
 `sample="/charts/toolbar/layout-actions-for-data-chart", height="600", alt="{Platform} Toolbar の例"`
 
@@ -188,9 +188,9 @@ builder.Services.AddIgniteUIBlazor(
   constructor() {
     var toolbar = this.toolbar = document.getElementById('Toolbar') as IgcToolbarComponent;
     var chart = this.chart = document.getElementById('chart') as IgcDataChartComponent;
-    
+
     this._bind = () => {
-        toolbar.target = this.chart;           
+        toolbar.target = this.chart;
     }
     this._bind();
   }
@@ -243,7 +243,7 @@ builder.Services.AddIgniteUIBlazor(
       - `Average`:  シリーズの平均値で yAxis に沿って水平破線を表示する `ToolActionCheckbox`。
   - `TrendsMenu`: さまざまな近似曲線を `XamDataChart` プロット領域に適用するためのツールを含むサブ メニュー。
     - `TrendsHeader`: 次の 3 つのツールのサブメニュー セクション ヘッダー:
-      - `Exponential`: チャート内の各シリーズの `TrendLineType` を `Exponential Fit` に設定する `ToolActionRadio`。
+      - `Exponential`: チャート内の各シリーズの `TrendLineType` を `ExponentialFit` に設定する `ToolActionRadio`。
       - `Linear`: チャート内の各シリーズの `TrendLineType` を `LinearFit` に設定する `ToolActionRadio`。
       - `Logarithmic`: チャート内の各シリーズの `TrendLineType` を `LogarithmicFit` に設定する `ToolActionRadio`。
  - `HelpersHeader`: サブ セクションのヘッダー。
@@ -297,7 +297,7 @@ builder.Services.AddIgniteUIBlazor(
 <IgrToolbar baseTheme="SlingshotDark" />
 ```
 
-<!-- 次の例は、適用できるさまざまなテーマ オプションを示しています。 
+<!-- 次の例は、適用できるさまざまなテーマ オプションを示しています。
 `sample="/charts/toolbar/theming", height="600", alt="{Platform} Toolbar スタイル設定/テーマ設定"` -->
 
 ## API リファレンス

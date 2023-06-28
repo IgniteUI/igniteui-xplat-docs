@@ -491,7 +491,7 @@ function getFrontMatterTypes(options: any, filePath: string) {
             }
             options.mentionedTypes = arr;
             let mappings = <MappingLoader>options.mappings;
-            
+
             for (let i = 0; i < options.mentionedTypes.length; i++) {
                 let currType = options.mentionedTypes[i];
                 let currTypeInfo = mappings.getType(currType);
@@ -1839,38 +1839,19 @@ export class MarkdownTransformer {
             let words = line.split(' ');
             for (let w = 0; w < words.length; w++) {
                 let word = words[w];
-                if (word.indexOf(".md#") >= 0) {
-                    let parts = word.split('#');
-                    let topic = parts[0];
-                    let header = parts[1];
-                    header = header.toLowerCase();
-                    header = header.replace('{platform}', '{PlatformLower}');
-                    header = header.replace('{platformlower}', '{PlatformLower}');
-                    let newLink = topic + '#' + header;
-                    if (newLink !== words[w]) {
-                        words[w] = newLink;
-                        console.log("auto-correct link: " + newLink);
+                let hasPlatformVariable = word.toLowerCase().indexOf("{platform") >= 0;
+                if (word.indexOf(".md#") >= 0 && hasPlatformVariable) {
+                    word = word.split('{platform}').join('{PlatformLower}');
+                    word = word.split('{Platform}').join('{PlatformLower}');
+                    word = word.split('{platformlower}').join('{PlatformLower}');
+                    if (word !== words[w]) {
+                        console.log("auto-correct link: \n" + words[w] + " to \n" + word);
+                        words[w] = word;
                     }
-
                 }
             }
             lines[i] = words.join(' ');
         }
-
-        // let words = fileContent.split(' ');
-        // for (let i = 0; i < words.length; i++) {
-        //     const word = words[i];
-        //     if (word.indexOf(".md#") >= 0) {
-        //         let parts = word.split('#');
-        //         let topic = parts[0];
-        //         let header = parts[1];
-        //         header = header.toLowerCase();
-        //         header = header.replace('{platform}', '{PlatformLower}');
-        //         header = header.replace('{platformlower}', '{PlatformLower}');
-        //         words[i] = topic + '#' + header;
-        //         console.log("verifyLinks " + words[i]);
-        //     }
-        // }
         return lines.join('\n');
     }
 
@@ -2197,7 +2178,7 @@ export class MarkdownTransformer {
                 node.status = "PREVIEW";
             } else if (node.beta) {
                 node.status = "BETA";
-            } 
+            }
              else {
                 node.status = "";
             }
