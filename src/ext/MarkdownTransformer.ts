@@ -476,6 +476,7 @@ function getFrontMatterTypes(options: any, filePath: string) {
             throw new Error(filePath + '\n' + error.message + "\n" + "Failed parsing:\n" + node.value + "\n")
         }
         // console.log("setFrontMatterTypes=" + filePath);
+        let mentionedNamespace: string | null = null;
         if (ym.mentionedTypes) {
             // console.log("mentionedTypes=" + ym.mentionedTypes);
             let mt = ym.mentionedTypes;
@@ -490,9 +491,13 @@ function getFrontMatterTypes(options: any, filePath: string) {
             }
             options.mentionedTypes = arr;
             let mappings = <MappingLoader>options.mappings;
+            
             for (let i = 0; i < options.mentionedTypes.length; i++) {
                 let currType = options.mentionedTypes[i];
                 let currTypeInfo = mappings.getType(currType);
+                if (currTypeInfo?.originalNamespace) {
+                    mentionedNamespace = currTypeInfo.originalNamespace;
+                }
                 if (currTypeInfo) {
                     if (currTypeInfo.originalBaseTypeName) {
                         let fullName = currTypeInfo.originalBaseTypeNamespace + "." +
@@ -518,6 +523,13 @@ function getFrontMatterTypes(options: any, filePath: string) {
             options.namespace = ym.namespace;
             if (options.mappings) {
                 options.mappings.namespace = options.namespace;
+            }
+        } else {
+            if (mentionedNamespace) {
+                options.namespace = mentionedNamespace;
+                if (options.mappings) {
+                    options.mappings.namespace = mentionedNamespace;
+                }
             }
         }
 

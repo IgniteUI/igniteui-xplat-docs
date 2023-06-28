@@ -51,9 +51,6 @@ export class MappingLoader {
             return undefined;
         }
         else if (name.indexOf(".") >= 0) {
-            let statedNamespaceInd = name.lastIndexOf(".");
-            let statedNamespace = name.substring(0, statedNamespaceInd);
-            this.namespace = statedNamespace;
             return this._typeMap.get(name);
         } else {
             if (this._aliasedNames.has(name)) {
