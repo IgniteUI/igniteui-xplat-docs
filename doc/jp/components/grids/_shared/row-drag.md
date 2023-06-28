@@ -247,7 +247,7 @@ export class {ComponentName}RowDragComponent {
 > [!Note]
 > イベント引数 (**args.dragData.data**) または他の行プロパティからの行データを使用する場合、行全体が参照として引数に渡されることに注意してください。つまり、ソースグリッドのデータと区別する必要がある場合は、必要なデータを複製する必要があります。
 
-
+<!-- Angular -->
 ### ドラッグ ゴーストのテンプレート化
 
 ドラッグ ゴーストは、`{ComponentSelector}` の本体内の `<ng-template>` に適用される `RowDragGhost` ディレクティブを使用してテンプレート化できます。
@@ -303,7 +303,7 @@ public rowDragGhostTemplate = (ctx: IgcGridRowDragGhostContext) => {
 
 `sample="/{ComponentSample}/multi-row-dragging", height="600", alt="{Platform} {ComponentTitle} 複数行のドラッグ"`
 
-
+<!-- end: Angular -->
 
 ### ドラッグ アイコンのテンプレート化
 
@@ -311,6 +311,7 @@ public rowDragGhostTemplate = (ctx: IgcGridRowDragGhostContext) => {
 
 そのためには、`DragIndicatorIcon` を使用して `{ComponentSelector}` の本体内にテンプレートを渡すことができます。
 
+<!-- Angular -->
 ```html
 <{ComponentSelector}>
     <ng-template igxDragIndicatorIcon>
@@ -318,6 +319,14 @@ public rowDragGhostTemplate = (ctx: IgcGridRowDragGhostContext) => {
     </ng-template>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
+```html
+<{ComponentSelector} row-draggable="true">
+</{ComponentSelector}>
+``
 
 ```ts
 constructor() {
@@ -329,9 +338,23 @@ constructor() {
     this._bind();
 }
 
-public dragIndicatorIconTemplate = (ctx: IgcDragIndicatorIconContext) => {
-    return html`<igc-icon>drag_handle</igc-icon>`;
+public dragIndicatorIconTemplate = (ctx: IgcGridEmptyTemplateContext) => {
+    return html`<igc-icon name="drag_handle" collection="material"></igc-icon>`;
 }
+```
+
+<!-- end: WebComponents -->
+
+```razor
+<IgbGrid Data="CustomersData" PrimaryKey="ID" RowDraggable="true" DragIndicatorIconTemplate="dragIndicatorIconTemplate" @ref="grid">
+</IgbGrid>
+
+private RenderFragment<IgbGridEmptyTemplateContext> dragIndicatorIconTemplate = (context) =>
+{
+    return @<div>
+        <IgbIcon IconName="drag_handle" Collection="material"></IgbIcon>
+    </div>;
+};
 ```
 
 新しいアイコン テンプレートの設定後、**DragIcon enum** の **DEFAULT** アイコンも調整する必要があるため、`ChangeIcon` メソッドによって適切に変更されます。
@@ -342,6 +365,7 @@ enum DragIcon {
 }
 ```
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
+
 
 <!-- Angular -->
 
@@ -388,10 +412,13 @@ enum DragIcon {
 
 `sample="/{ComponentSample}/row-drag-to-grid", height="550", alt="{Platform} {ComponentTitle} 行のドラッグ"`
 
+<!-- end: Angular -->
 
 ## アプリケーション デモ
 
 <!-- ComponentStart: Grid -->
+
+<!-- Angular -->
 
 ### 行ドラッグ イベントの使用
 
@@ -408,6 +435,8 @@ enum DragIcon {
 
 <!-- ComponentEnd: Grid -->
 
+<!-- end: Angular -->
+
 ### 行の並べ替えデモ
 
 グリッドの行ドラッグ イベントと `Drop` ディレクティブを使用して、ドラッグよる行の並べ替えるが可能なグリッドを作成できます。
@@ -418,6 +447,11 @@ enum DragIcon {
 <igx-grid #grid [data]="data" [rowDraggable]="true" [primaryKey]="'ID'" igxDrop (dropped)="onDropAllowed($event)">
 </igx-grid>
 ```
+<!--  end: Angular -->
+
+<!--  WebComponents, Blazor -->
+
+グリッドの行ドラッグ イベントを使用して、ドラッグよる行の並べ替えるが可能なグリッドを作成できます。
 
 ```html
 <igc-grid id="grid" row-draggable="true" primary-key="ID">
@@ -429,12 +463,45 @@ constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
 
     this._bind = () => {
-        grid.dropped = this.onDropAllowed;
+         grid.addEventListener("rowDragEnd", this.webGridReorderRowHandler)
     }
     this._bind();
 }
 ```
 
+```razor
+<IgbGrid Data="CustomersData" PrimaryKey="ID" RowDraggable="true" RowDragEndScript="WebGridReorderRowHandler"></IgbGrid>
+
+// In JavaScript
+igRegisterScript("WebGridReorderRowHandler", (args) => {
+    const ghostElement = args.detail.dragDirective.ghostElement;
+    const dragElementPos = ghostElement.getBoundingClientRect();
+    const grid = document.getElementsByTagName("igc-grid")[0];
+    const rows = Array.prototype.slice.call(document.getElementsByTagName("igx-grid-row"));
+    const currRowIndex = this.getCurrentRowIndex(rows,
+    { x: dragElementPos.x, y: dragElementPos.y });
+    if (currRowIndex === -1) { return; }
+    // remove the row that was dragged and place it onto its new location
+    grid.deleteRow(args.detail.dragData.key);
+    grid.data.splice(currRowIndex, 0, args.detail.dragData.data);
+}, false);
+
+function getCurrentRowIndex(rowList, cursorPosition) {
+    for (const row of rowList) {
+        const rowRect = row.getBoundingClientRect();
+        if (cursorPosition.y > rowRect.top + window.scrollY && cursorPosition.y < rowRect.bottom + window.scrollY &&
+            cursorPosition.x > rowRect.left + window.scrollX && cursorPosition.x < rowRect.right + window.scrollX) {
+            // return the index of the targeted row
+            return parseInt(row.attributes["data-rowindex"].value);
+        }
+    }    
+    return -1;
+}
+```
+
+<!--  end: WebComponents, Blazor -->
+
+<!--  Angular -->
 ```html
 <igx-tree-grid igxPreventDocumentScroll  #treeGrid [data]="localData" childDataKey="Employees" [rowDraggable]="true" foreignKey="ParentID"
     [primaryKey]="'ID'" (rowDragStart)="rowDragStart($event)" igxDrop (dropped)="dropInGrid($event)">
@@ -446,6 +513,7 @@ constructor() {
     [rowDraggable]="true" (rowDragStart)="rowDragStart($event)" igxDrop (dropped)="rowDrop($event)">
 </igx-hierarchical-grid>
 ```
+<!--  end: Angular -->
 
 > [!Note]
 > グリッドに `PrimaryKey` が指定されていることを確認してください。ロジックが行を適切に並べ替えられるように、行には一意の識別子が必要です。
@@ -475,28 +543,30 @@ constructor() {
 <!-- ComponentStart: Grid -->
 
 ```typescript
-export class GridRowReorderComponent {
-    public onDropAllowed(args) {
-        const event = args.originalEvent;
-        const currRowIndex = this.getCurrentRowIndex(this.grid.rowList.toArray(),
-            { x: event.clientX, y: event.clientY });
+    public webGridReorderRowHandler(args: CustomEvent<IgcRowDragEndEventArgs>): void {
+        const ghostElement = args.detail.dragDirective.ghostElement;
+        const dragElementPos = ghostElement.getBoundingClientRect();
+        const grid = document.getElementsByTagName("igc-grid")[0] as any;
+        const rows = Array.prototype.slice.call(document.getElementsByTagName("igx-grid-row"));
+        const currRowIndex = this.getCurrentRowIndex(rows,
+        { x: dragElementPos.x, y: dragElementPos.y });
         if (currRowIndex === -1) { return; }
-        this.grid.deleteRow(args.dragData.key);
-        this.data.splice(currRowIndex, 0, args.dragData.data);
+        // remove the row that was dragged and place it onto its new location
+        grid.deleteRow(args.detail.dragData.key);
+        grid.data.splice(currRowIndex, 0, args.detail.dragData.data);
     }
-
-    private getCurrentRowIndex(rowList, cursorPosition) {
+        
+    public getCurrentRowIndex(rowList: any[], cursorPosition) {
         for (const row of rowList) {
-            const rowRect = row.nativeElement.getBoundingClientRect();
+            const rowRect = row.getBoundingClientRect();
             if (cursorPosition.y > rowRect.top + window.scrollY && cursorPosition.y < rowRect.bottom + window.scrollY &&
                 cursorPosition.x > rowRect.left + window.scrollX && cursorPosition.x < rowRect.right + window.scrollX) {
-                return this.data.indexOf(this.data.find((r) => r.rowID === row.rowID));
+                // return the index of the targeted row
+                return parseInt(row.attributes["data-rowindex"].value);
             }
         }
-
         return -1;
     }
-}
 ```
 
 <!-- ComponentEnd: Grid -->
@@ -646,6 +716,8 @@ export class HGridRowReorderComponent {
 
 <!-- ComponentStart: Grid -->
 
+<!-- Angular -->
+
 ### 行ドラッグ シナリオでの UX の改善
 
 現在カーソルの下にある行インデックスを取得できることで、豊富なカスタム機能を構築し、アプリケーションの UX を向上させる機会が得られます。たとえば、グリッド上のドラッグされた行の位置に基づいて、ドラッグ ゴーストを変更したり、ドロップ インジケーターを表示したりできます。この方法で実現できるもう 1 つの便利な動作は、グリッドの境界に達したときに、行をドラッグしながらグリッドを上下にスクロールすることです。
@@ -751,8 +823,6 @@ class MyRowGhostComponent {
     }
 }
 ```
-
-<!-- Angular -->
 
 #### カーソル位置に基づいたドロップ インジケーターの表示
 

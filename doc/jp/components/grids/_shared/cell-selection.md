@@ -36,10 +36,10 @@ _language: ja
 
 セルの選択方法:
 - **マウス ドラッグ** - セルの長方形データ選択。
-- <kbd>Ctrl</kbd> キー 押下 + **マウス ドラッグ** - 複数の範囲が選択されます。その他の既存のセル選択は保持されます。
+- <kbd>Ctrl</kbd> キー押下 + **マウス ドラッグ** - 複数の範囲が選択されます。その他の既存のセル選択は保持されます。
 - <kbd>Shift</kbd> キーを使用して複数セルの選択をインスタンス化します。<kbd>Shift</kbd> キーを押しながら、単一セルを選択して別の単一セルを選択します。2 つのセル間のセル範囲が選択されます。<kbd>Shift</kbd> キーを押しながら他の 2 番目のセルを選択すると、最初に選択したセルの位置 (開始点) に基づいてセル選択範囲が更新されます。
-- <kbd>Shift</kbd>キーを押しながら<kbd>矢印</kbd> キーを使用してキーボードで複数セルを選択します。マルチセル選択範囲は、フォーカスされたセルに基づいて作成されます。
-- <kbd>Ctrl</kbd> キーを押しながら <kbd>Ctrl</kbd> + <kbd>矢印</kbd>キーと <kbd>Ctrl</kbd> + <kbd>Home</kbd>/<kbd>End</kbd> を使用してキーボードで複数セルを選択します。マルチセル選択範囲は、フォーカスされたセルに基づいて作成されます。
+- <kbd>Shift</kbd> キーを押しながら <kbd>矢印</kbd> キーを使用してキーボードで複数セルを選択します。マルチセル選択範囲は、フォーカスされたセルに基づいて作成されます。
+- <kbd>Ctrl</kbd> キーを押しながら <kbd>Ctrl</kbd> + <kbd>矢印</kbd> キーと <kbd>Ctrl</kbd> + <kbd>Home</kbd>/<kbd>End</kbd> を使用してキーボードで複数セルを選択します。マルチセル選択範囲は、フォーカスされたセルに基づいて作成されます。
 - <kbd>Ctrl</kbd> キーを押しながら**左マウスキー**でクリックすると、選択したセルコレクションに単一のセル範囲が追加されます。
 - マウスでクリックしてドラッグすることで、連続した複数セルの選択が可能です。
 
@@ -89,12 +89,44 @@ _language: ja
 
 以下は、範囲の選択、選択の解除、または選択したセル データを取得する方法です。
 
-<!-- Angular -->
+
+<!-- Angular, WebComponents -->
+
+### 範囲の選択
+
+`selectRange` - API を使用してセル範囲を選択します。rowStart と rowEnd は行インデックスを使用する必要があり、columnStart と columnEnd は列インデックスまたは列データ フィールド値を使用することができます。
+
+```ts
+const range = { rowStart: 2, rowEnd: 2, columnStart: 1, columnEnd: 1 };
+this.grid.selectRange(range);
+```
+
+<!-- end: Angular, WebComponents -->
+
 ### 選択したデータの取得
 
+<!-- Blazor -->
+`GetSelectedData` は、選択されたデータの配列をディクショナリで返します。以下は例です。
+
+```razor
+<IgbGrid @ref=grid  CellSelection="GridSelectionMode.Multiple" AutoGenerate=true></IgbGrid>
+
+@code {
+    private IgbGrid grid;
+
+    private async void GetSelectedData()
+    {
+        object[] data = await this.grid.GetSelectedDataAsync(true, true);
+    }
+}
+```
+<!-- end: Blazor -->
+
+<!-- Angular, WebComponents -->
 `GetSelectedData` は、選択したデータの配列を選択内容に応じた形式で返します。例:
 
-1. 3 つの異なる単一セルが選択されている場合:
+- 3 つの異なる単一セルが選択されている場合:
+
 ```typescript
 expectedData = [
     { CompanyName: 'Infragistics' },
@@ -103,7 +135,8 @@ expectedData = [
 ];
 ```
 
-2. 1 列から 3 つのセルが選択されている場合:
+- 1 列から 3 つのセルが選択されている場合:
+
 ```typescript
 expectedData = [
     { Address: 'Obere Str. 57'},
@@ -112,14 +145,16 @@ expectedData = [
 ];
 ```
 
-3. 1 行 3 列から 3 つのセルをマウスドラッグで選択した場合:
+- 1 行 3 列から 3 つのセルをマウスドラッグで選択した場合:
+
 ```typescript
 expectedData = [
     { Address: 'Avda. de la Constitución 2222', City: 'México D.F.', ContactTitle: 'Owner' }
 ];
 ```
 
-4. 2 行 3 列から 3 つのセルをマウスドラッグで選択した場合:
+- 2 行 3 列から 3 つのセルをマウスドラッグで選択した場合:
+
 ```typescript
 expectedData = [
     { ContactTitle: 'Sales Agent', Address: 'Cerrito 333', City: 'Buenos Aires'},
@@ -127,7 +162,8 @@ expectedData = [
 ];
 ```
 
-5. 2 つの異なる範囲が選択されている場合:
+- 2 つの異なる範囲が選択されている場合:
+
 ```typescript
 expectedData = [
     { ContactName: 'Martín Sommer', ContactTitle: 'Owner'},
@@ -137,7 +173,8 @@ expectedData = [
 ];
 ```
 
-6. 2 つの重複範囲が選択されている場合、形式は次のようになります。
+- 2 つの重複範囲が選択されている場合、形式は次のようになります。
+
 ```typescript
 expectedData = [
     { ContactName: 'Diego Roel', ContactTitle: 'Accounting Manager', Address: 'C/ Moralzarzal, 86'},
@@ -147,6 +184,9 @@ expectedData = [
 ];
 ```
 
+<!-- end: Angular, WebComponents -->
+
+<!-- Angular -->
 > [!Note]
 > `SelectedCells` は、セルがグリッド ビュー ポートに表示されていない場合でも、正しい結果を返します。`GetSelectedData` も選択されたセル データを返します。
 > `GetSelectedRanges` は、キーボードとポインタの両方の操作からグリッドで現在選択されている範囲を返します。タイプは **GridSelectionRange[]** です。
@@ -165,6 +205,66 @@ expectedData = [
 - `GroupBy` - 列をグループ化すると、選択したセルはクリアされません。
 
 <!-- ComponentEnd: Grid, TreeGrid -->
+
+
+<!-- WebComponents, Blazor -->
+
+## スタイル設定
+
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
+一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
+
+<!-- ComponentStart: Grid -->
+
+```ts
+<igc-grid class="grid">
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+次に、そのクラスに関連する CSS プロパティを設定します。
+
+```css
+.grid {
+    --igx-grid-cell-selected-text-color: #FFFFFF;
+    --igx-grid-cell-active-border-color: #f2c43c;
+    --igx-grid-cell-selected-background: #0062A3;
+}
+```
+
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+```ts
+<igc-tree-grid id="treeGrid"></igc-tree-grid>
+```
+
+```razor
+<IgbTreeGrid Id="treeGrid"></IgbTreeGrid>
+```
+
+次に、そのクラスに関連する CSS プロパティを設定します。
+
+```css
+#treeGrid {
+    --cell-selected-text-color: #fff;
+    --cell-active-border-color: #f2c43c;
+    --cell-selected-background: #0062a3;
+    --cell-editing-background: #0062a3;
+}
+```
+
+<!-- ComponentEnd: Grid -->
+
+### デモ
+
+`sample="/{ComponentSample}/cell-selection-style", height="620", alt="{Platform} {ComponentTitle} セル選択のスタイル設定の例"`
+
+
+<!-- end: WebComponents, Blazor -->
 
 <!-- Angular -->
 ## スタイリングのガイドライン
@@ -212,8 +312,8 @@ $custom-grid-theme: grid-theme(
 ```
 
  > [!Note]
- >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
- > アプリケーション内に存在する可能性のある他のグリッドに影響を与えないように、スタイルを `:host `セレクターの下で範囲指定します。
+ >コンポーネントが [Emulated ViewEncapsulation](../themes/styles.md#表示のカプセル化) を使用している場合、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
+ > アプリケーション内に存在する可能性のある他のグリッドに影響を与えないように、スタイルを `:host` セレクターの下で範囲指定します。
 
  ```scss
     :host {
@@ -253,7 +353,7 @@ $custom-grid-theme: grid-theme(
 
 ## その他のリソース
 
-
+<!-- ComponentStart:  Grid -->
 * [選択](selection.md)
 * [行選択](row-selection.md)
 * [フィルタリング](filtering.md)
@@ -263,6 +363,7 @@ $custom-grid-theme: grid-theme(
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [仮想化とパフォーマンス](virtualization.md)
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

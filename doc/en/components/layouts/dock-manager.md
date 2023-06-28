@@ -294,6 +294,22 @@ this.dockManager.addEventListener('activePaneChanged', ev => {
 });
 ```
 
+### Update Layout
+
+In some scenarios you may need to customize the layout of the Dock Manager by adding or removing a pane, changing orientation, etc., for example:
+
+```ts
+const splitPane = this.dockManager.layout.rootPane.panes[0] as IgcSplitPane;
+const contentPane = splitPane.panes[0] as IgcContentPane;
+this.dockManager.removePane(contentPane);
+```
+
+This will only update the layout object. To trigger an update of the Dock Manager so the changes are reflected in the UI, the layout object should be re-assigned:
+
+```ts
+this.dockManager.layout = { ...this.dockManager.layout };
+```
+
 ### Save/Load Layout
 
 To restore or persist a layout, you simply have to get/set the value of the `Layout` property. Here is how to save the layout as a stringified JSON:
@@ -308,14 +324,6 @@ private saveLayout() {
 private loadLayout() {
     this.dockManager.layout = JSON.parse(this.savedLayout);
 }
-```
-
-Please note that modifying any of the properties of the layout object will not trigger an update of the Dock Manager. If that is your goal, you should replace the whole layout object like so:
-
-```ts
-const layout = this.dockManager.layout;
-layout.rootPane.orientation = IgcSplitPaneOrientation.vertical;
-this.dockManager.layout = { ...layout };
 ```
 
 ### Adding Panes At Runtime
@@ -535,7 +543,7 @@ The shortcuts are as follows:
 ### Other
  - <kbd>Alt</kbd> + <kbd>F3</kbd> Closes the active pane
 
-Practice all of the above mentioned actions in the sample [demo](dock-manager.md#{Platform}-dock-manager-example).
+Practice all of the above mentioned actions in the sample [demo](dock-manager.md#{PlatformLower}-dock-manager-example).
 
 <!-- WebComponents -->
 

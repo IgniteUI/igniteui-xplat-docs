@@ -27,7 +27,7 @@ _language: ja
 <{ComponentSelector} #grid [data]="data" [displayDensity]="'cosy'" >
 </{ComponentSelector}>
 ```
-<!-- Angular -->
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} DisplayDensity="DisplayDensity.Cosy" Data=northwindEmployees @ref=grid>
@@ -36,7 +36,7 @@ _language: ja
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid" display-density="Cosy" >
+<{ComponentSelector} id="grid" display-density="cosy" >
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
@@ -428,26 +428,21 @@ public ngOnInit() {
 constructor() {
     var propertyEditor = this.propertyEditor = document.getElementById('PropertyEditor') as IgcPropertyEditorPanelComponent;
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-
-    this._bind = () => {
-        propertyEditor.componentRenderer = this.renderer;
-        propertyEditor.target = this.grid;
-        grid.data = this.data;
-    }
-    this._bind();
-
+    propertyEditor.componentRenderer = this.renderer;
+    propertyEditor.target = this.grid;
+    grid.data = this.data;
 }
 
 private _componentRenderer: ComponentRenderer = null;
-    public get renderer(): ComponentRenderer {
-        if (this._componentRenderer == null) {
-            this._componentRenderer = new ComponentRenderer();
-            var context = this._componentRenderer.context;
-            PropertyEditorPanelDescriptionModule.register(context);
-            WebGridDescriptionModule.register(context);
-        }
-        return this._componentRenderer;
+public get renderer(): ComponentRenderer {
+    if (this._componentRenderer == null) {
+        this._componentRenderer = new ComponentRenderer();
+        var context = this._componentRenderer.context;
+        PropertyEditorPanelDescriptionModule.register(context);
+        WebGridDescriptionModule.register(context);
     }
+    return this._componentRenderer;
+}
 ```
 <!-- ComponentEnd: Grid -->
 
@@ -559,26 +554,21 @@ private _componentRenderer: ComponentRenderer = null;
 constructor() {
     var propertyEditor = this.propertyEditor = document.getElementById('PropertyEditor') as IgcPropertyEditorPanelComponent;
     var grid = this.grid = document.getElementById('grid') as IgcTreeGridComponent;
-
-    this._bind = () => {
-        propertyEditor.componentRenderer = this.renderer;
-        propertyEditor.target = this.grid;
-        grid.data = this.data;
-    }
-    this._bind();
-
+    propertyEditor.componentRenderer = this.renderer;
+    propertyEditor.target = this.grid;
+    grid.data = this.data;
 }
 
 private _componentRenderer: ComponentRenderer = null;
-    public get renderer(): ComponentRenderer {
-        if (this._componentRenderer == null) {
-            this._componentRenderer = new ComponentRenderer();
-            var context = this._componentRenderer.context;
-            PropertyEditorPanelDescriptionModule.register(context);
-            WebGridDescriptionModule.register(context);
-        }
-        return this._componentRenderer;
+public get renderer(): ComponentRenderer {
+    if (this._componentRenderer == null) {
+        this._componentRenderer = new ComponentRenderer();
+        var context = this._componentRenderer.context;
+        PropertyEditorPanelDescriptionModule.register(context);
+        WebGridDescriptionModule.register(context);
     }
+    return this._componentRenderer;
+}
 ```
 <!-- ComponentEnd: TreeGrid -->
 
@@ -681,26 +671,21 @@ private _componentRenderer: ComponentRenderer = null;
 constructor() {
     var propertyEditor = this.propertyEditor = document.getElementById('PropertyEditor') as IgcPropertyEditorPanelComponent;
     var grid = this.grid = document.getElementById('grid') as IgcHierarchicalGridComponent;
-
-    this._bind = () => {
-        propertyEditor.componentRenderer = this.renderer;
-        propertyEditor.target = this.grid;
-        grid.data = this.data;
-    }
-    this._bind();
-
+    propertyEditor.componentRenderer = this.renderer;
+    propertyEditor.target = this.grid;
+    grid.data = this.data;
 }
 
 private _componentRenderer: ComponentRenderer = null;
-    public get renderer(): ComponentRenderer {
-        if (this._componentRenderer == null) {
-            this._componentRenderer = new ComponentRenderer();
-            var context = this._componentRenderer.context;
-            PropertyEditorPanelDescriptionModule.register(context);
-            WebGridDescriptionModule.register(context);
-        }
-        return this._componentRenderer;
+public get renderer(): ComponentRenderer {
+    if (this._componentRenderer == null) {
+        this._componentRenderer = new ComponentRenderer();
+        var context = this._componentRenderer.context;
+        PropertyEditorPanelDescriptionModule.register(context);
+        WebGridDescriptionModule.register(context);
     }
+    return this._componentRenderer;
+}
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -726,11 +711,7 @@ public selectDensity(event) {
         var propertyEditor = this.propertyEditor;
         var displayDensityEditor = this.displayDensityEditor;
         var grid = this.grid;
-
-        this.BindElements = () => {
-            propertyEditor.Target = this.grid;
-        };
-        this.BindElements();
+        propertyEditor.Target = this.grid;
     }
 
     private IgbPropertyEditorPanel propertyEditor;
@@ -742,7 +723,7 @@ public selectDensity(event) {
 `{ComponentName}` の行の高さを変更するその他のオプションに `RowHeight` プロパティがあります。このプロパティと `DisplayDensity` プションが `{ComponentName}` レイアウトにどのように動作に影響するかを以下で確認できます。
 
 以下を確認してください。
- - `RowHeight` を指定した場合**、`DisplayDensity` オプションは行の高さに影響しません。
+ - **`RowHeight` を指定した場合**、`DisplayDensity` オプションは行の高さに影響しません。
  - `DisplayDensity` は、上記の理由により**残りすべての {ComponentTitle} 要素に影響します**。
 
 サンプル機能を拡張して `RowHeight` プロパティを `{ComponentName}` に追加します。
@@ -757,17 +738,21 @@ public selectDensity(event) {
 
  ```razor
  <{ComponentSelector} Width="100%" Height="100%"
-             @ref=grid
-             AutoGenerate=true
-             Data=northwindEmployees
-             RowHeight="80"
-             DisplayDensity=@density>
+             @ref="grid"
+             AutoGenerate="true"
+             Data="northwindEmployees"
+             RowHeight="rowHeight"
+             DisplayDensity="@density">
 </{ComponentSelector}>
+
+@code {
+    private string rowHeight = "80px";
+}
  ```
 
  <!-- WebComponents -->
  ```html
- <{ComponentSelector} id="grid" display-density="Cosy" row-height="80px" width="100%"
+ <{ComponentSelector} id="grid" display-density="cosy" row-height="80px" width="100%"
  height="550px" allow-filtering="true">
  </{ComponentSelector}>
  ```
@@ -779,7 +764,7 @@ public selectDensity(event) {
 * `Column`
 
 ## その他のリソース
-
+<!-- ComponentStart:  Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [編集](editing.md)
 * [ページング](paging.md)
@@ -789,13 +774,8 @@ public selectDensity(event) {
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
-
-<!-- ComponentStart: HierarchicalGrid -->
-
 * [検索](search.md)
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

@@ -119,20 +119,19 @@ _language: ja
  - <kbd>Space</kbd> - グループ行上 - `RowSelection` プロパティが複数に設定されている場合、グループ内のすべての行を選択します。
  <!-- ComponentEnd: Grid -->
 
+
 <!-- Angular -->
 
 以下のデモサンプルで上記のすべての操作を実行できます。ナビゲーション可能なグリッド要素をフォーカスすると、利用可能な操作のリストが表示されます。
 
+<!-- Angular, WebComponents -->
+
 ## デモ
 
-<!-- NOTE this sample is differed -->
 
-`sample="/{ComponentSample}/keyboard-navigation-guide", height="470", alt="{Platform} {ComponentTitle} keyboard navigation guide"`
+`sample="/{ComponentSample}/keyboard-navigation-guide", height="600", alt="{Platform} {ComponentTitle} キーボード ナビゲーション ガイド"`
 
-
-<!-- end: Angular -->
-
-<!-- Angular -->
+<!-- end: Angular, WebComponents -->
 
 ## カスタム キーボード ナビゲーション
 
@@ -141,11 +140,13 @@ _language: ja
 
 | API | 説明 | 引数 |
 |---------|-------------|-----------|
-| `GridKeydown` | 上記のキー押下やキー押下の組み合わせのいずれかが実行されたときに発生されるイベント。キャンセルできます。その他のキーの押下/組み合わせには、デフォルトの `onkeydown` イベントを使用します。 | `IGridKeydownEventArgs` |
-| `ActiveNodeChange` | アクティブ ノードが変更されたときに発生するイベント。これを使用して、アクティブ フォーカス位置 (ヘッダー、tbody など)、列インデックス、行インデックス、またはネストされたレベルを決定できます。| `IActiveNodeChangeEventArgs` |
+| `GridKeydown` | 上記のキー押下やキー押下の組み合わせのいずれかが実行されたときに発生されるイベント。キャンセルできます。その他のキーの押下/組み合わせには、デフォルトの `onkeydown` イベントを使用します。 | `GridKeydownEventArgs` |
+| `ActiveNodeChange` | アクティブ ノードが変更されたときに発生するイベント。これを使用して、アクティブ フォーカス位置 (ヘッダー、tbody など)、列インデックス、行インデックス、またはネストされたレベルを決定できます。| `ActiveNodeChangeEventArgs` |
+<!-- Angular, WebComponents -->
 | `NavigateTo` | 提供された `Rowindex` と `VisibleColumnIndex` に基づいてグリッド内の位置に移動します。```{ targetType: GridKeydownTargetType, target: Object }``` タイプのパラメーターを受け入れるコールバック関数を通してターゲット要素上でカスタム ロジックを実行することもできます。使用方法: <br />```grid.navigateTo(10, 3, (args) => { args.target.nativeElement.focus(); });``` | ```RowIndex: number, VisibleColumnIndex: number, callback: ({ targetType: GridKeydownTargetType, target: Object }) => {}``` |
 | `GetNextCell`| `RowIndex` と `VisibleColumnIndex` で次のセルを定義する `ICellPosition` オブジェクトを返します。コールバック関数は、`GetNextCell` メソッドの 3 番目のパラメーターとして渡すことができます。コールバック関数は、パラメーターとして `Column` を受け取り、指定された条件が満たされた場合に `boolean` 値を返します: <br />```const nextEditableCell = grid.getNextCell(0, 4, (col) => col.editable);``` | ```CurrentRowIndex: number, currentVisibleColumnIndex: number, callback: (Column) => boolean``` |
-| `GetPreviousCell`| `RowIndex` と `VisibleColumnIndex` で前のセルを定義する `ICellPosition`  オブジェクトを返します。コールバック関数は、`GetPreviousCell` メソッドの 3 番目のパラメーターとして渡すことができます。コールバック関数は、パラメーターとして `Column` を受け取り、指定された条件が満たされた場合に `boolean` 値を返します: <br />```const prevEditableCell = grid.getPreviousCell(0, 4, (col) => col.editable);``` | ```CurrentRowIndex: number, CurrentVisibleColumnIndex: number, callback: (Column`) => boolean``` |
+| `GetPreviousCell`| `RowIndex` と `VisibleColumnIndex` で前のセルを定義する `ICellPosition`  オブジェクトを返します。コールバック関数は、`GetPreviousCell` メソッドの 3 番目のパラメーターとして渡すことができます。コールバック関数は、パラメーターとして `Column` を受け取り、指定された条件が満たされた場合に `boolean` 値を返します: <br />```const prevEditableCell = grid.getPreviousCell(0, 4, (col) => col.editable);``` | ``` CurrentRowIndex: number, CurrentVisibleColumnIndex: number, callback: (Column) => boolean ``` |
+<!-- end: Angular, WebComponents -->
 <br />
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -161,16 +162,38 @@ API を使用して、ユーザー入力の検証やカスタム ナビゲーシ
 <igx-grid #grid1 [data]="data" [primaryKey]="'ProductID'" (gridKeydown)="customKeydown($event)">
 ```
 ```html
-<igc-grid id="grid1" primary-key="ProductID">
-</igc-grid
+<{ComponentSelector} id="grid1" primary-key="ProductID">
+</{ComponentSelector}>
 ```
+
+```razor
+<{ComponentSelector} PrimaryKey="ProductID" GridKeydownScript="WebGridCustomKBNav">
+</{ComponentSelector}>
+
+// In JavaScript
+
+igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
+    const args = evtArgs.detail;
+    const target = args.target;
+    const evt = args.event;
+    const type = args.targetType;
+    const grid = document.getElementsByTagName("igc-grid")[0];
+
+    if (type === 'dataCell' && target.editMode && evt.key.toLowerCase() === 'tab') {
+        // 1. USER INPUT VALIDATION ON TAB
+    } else if (type === 'dataCell' && evt.key.toLowerCase() === 'enter') {
+        // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
+    }
+}, false);
+```
+
 ```ts
 constructor() {
         var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
 
         this._bind = () => {
             grid.data = this.data
-            grid.gridKeydown = this.customKeydown
+            grid.addEventListener("gridKeydown", this.customKeydown);
         }
         this._bind();
 
@@ -178,40 +201,13 @@ constructor() {
 ```
 <!-- ComponentEnd: Grid -->
 
-<!-- ComponentStart: HierarchicalGrid -->
-
-```html
-<igx-hierarchical-grid #grid1 [data]="data" (gridKeydown)="customKeydown($event, grid1)">
-    <igx-row-island [key]="'Albums'" (gridCreated)="childGridCreated($event)">
-    </igx-row-island>
-</igx-hierarchical-grid>
-```
-
-`{ComponentName}` 子グリッドにカスタムキーボードナビゲーションを追加するには、各子グリッドを `GridKeydown` イベントにサブスクライブする必要があります。そのため、上記の例で `GridCreated` イベントのイベント ハンドラーを登録しました。
 
 ```typescript
-public childGridCreated(event: IGridCreatedEventArgs) {
-    const grid = event.grid;
-    event.grid.gridKeydown.subscribe((args) => {
-        this.customKeydown(args, grid);
-    });
-}
-```
-<!-- ComponentEnd: HierarchicalGrid -->
-
-
-<!-- ComponentStart: TreeGrid -->
-```html
-<igx-tree-grid #grid1 [data]="data" (gridKeydown)="customKeydown($event)">
-</igx-tree-grid>
-```
-<!-- ComponentEnd: TreeGrid -->
-
-```typescript
-public customKeydown(args: IGridKeydownEventArgs) {
-    const target: IgxGridCell = args.target as IgxGridCell;
-    const evt: KeyboardEvent = args.event as KeyboardEvent;
-    const type = args.targetType;
+public customKeydown(args: any) {
+    const evt = args.detail;
+    const target: IgxGridCell = evt.target as IgxGridCell;
+    const evt: KeyboardEvent = evt.event as KeyboardEvent;
+    const type = evt.targetType;
 
     if (type === 'dataCell' && target.inEditMode && evt.key.toLowerCase() === 'tab') {
         // 1. USER INPUT VALIDATION ON TAB
@@ -222,9 +218,8 @@ public customKeydown(args: IGridKeydownEventArgs) {
 }
 ```
 
-`IGridKeydownEventArgs` 値に基づいて、独自のロジックを提供する 2つ のケースを識別しました (上記を参照)。API のメソッドを使用して、目的の処理を実行しましょう。ユーザーが編集モードでセル上で <kbd>Tab</kbd> キーを押している場合、入力の検証を実行します。ユーザーがセル上で <kbd>Enter</kbd> キーを押すと、次の行のセルへフォーカスを移動します。
+イベント引数の値に基づいて、独自のロジックを提供する 2つ のケースを識別しました (上記を参照)。API のメソッドを使用して、目的の処理を実行しましょう。ユーザーが編集モードでセル上で <kbd>Tab</kbd> キーを押している場合、入力の検証を実行します。ユーザーがセル上で <kbd>Enter</kbd> キーを押すと、次の行のセルへフォーカスを移動します。
 
-<!-- ComponentStart: Grid -->
 ```typescript
     // 1. USER INPUT VALIDATION ON TAB
     if (target.column.dataType === 'number' && target.editValue < 10) {
@@ -237,37 +232,32 @@ public customKeydown(args: IGridKeydownEventArgs) {
         });
 ```
 
-> [!Note]
-> 実装の詳細は、サンプルコードを参照してください。
+```razor
 
-実装したカスタム シナリオを試すには以下のデモを使用してください。
-- **Order** 列のセルをダブルクリックするか <kbd>F2</kbd> キーを押し、値を **7** に変更して <kbd>Tab</kbd> キーを押します。プロンプト メッセージが表示されます。
-- セルを選択して <kbd>Enter</kbd> キー を数回押します。キーを押すたびに、同じ列の下にある次の行のセルへフォーカスを移動します。
+// In JavaScript
 
-#### デモ
+igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
+    const args = evtArgs.detail;
+    const target = args.target;
+    const evt = args.event;
+    const type = args.targetType;
+    const grid = document.getElementsByTagName("igc-grid")[0];
 
-
-`sample="/{ComponentSample}/keyboard-custom-navigation", height="400", alt="{Platform} {ComponentTitle} keyboard custom navigation"`
-
-
-<!-- ComponentEnd: Grid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-```typescript
     // 1. USER INPUT VALIDATION ON TAB
-    if (target.column.dataType === 'number' && target.editValue < 0) {
+    if (target.column.dataType === 'number' && target.editValue < 10) {
         // alert the user that the input is invalid
         return;
     }
     // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
-    const nexRowIndex = target.row.expanded ? target.rowIndex + 2 : target.rowIndex + 1;
-    grid.navigateTo(nexRowIndex, target.visibleColumnIndex,
-        (obj) => { obj.target.nativeElement.focus(); });
+    grid.navigateTo(target.row.index + 1, target.column.visibleIndex, (obj) => {
+            obj.target.activate();
+    });
+}, false);
+
 ```
 
-<!-- end: Angular -->
-
-<!-- Angular -->
+> [!Note]
+> 実装の詳細は、サンプルコードを参照してください。
 
 実装したカスタム シナリオを試すには以下のデモを使用してください。
 - **Grammy Nominations** 列のセルをダブルクリックするか <kbd>F2</kbd> キーを押し、値を `-2` に変更して <kbd>Tab</kbd> キーを押します。プロンプト メッセージが表示されます。
@@ -275,43 +265,9 @@ public customKeydown(args: IGridKeydownEventArgs) {
 
 #### デモ
 
-<!-- NOTE this sample is differed -->
 
-`sample="/{ComponentSample}/keyboard-custom-navigation", height="520", alt="{Platform} {ComponentTitle} keyboard custom navigation"`
+`sample="/{ComponentSample}/keyboard-custom-navigation", height="400", alt="{Platform} {ComponentTitle} キーボードのカスタム ナビゲーション"`
 
-
-<!-- end: Angular -->
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
-<!-- ComponentStart: TreeGrid -->
-
-```typescript
-    // 1. USER INPUT VALIDATION ON TAB
-    if (target.column.dataType === 'number' && target.editValue < 18) {
-        // alert the user that the input is invalid
-        return;
-    }
-    // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
-    const nexRowIndex = target.row.expanded ? target.rowIndex + 2 : target.rowIndex + 1;
-    grid.navigateTo(nexRowIndex, target.visibleColumnIndex,
-        (obj) => { obj.target.nativeElement.focus(); });
-```
-
-<!-- Angular -->
-
-実装したカスタム シナリオを試すには以下のデモを使用してください。
-- `Age` 列のセルをダブルクリックするか <kbd>F2</kbd> キーを押し、値を `16` に変更して <kbd>Tab</kbd> キーを押します。プロンプト メッセージが表示されます。
-- セルを選択して <kbd>Enter</kbd> キー を数回押します。キーを押すたびに、同じ列の下にある次の行のセルへフォーカスを移動します。
-
-<!-- NOTE this sample is differed -->
-
-`sample="/{ComponentSample}/keyboard-navigation-guide", height="520", alt="{Platform} {ComponentTitle} keyboard navigation guide"`
-
-
-<!-- end: Angular -->
-
-<!-- ComponentEnd : TreeGrid -->
 
 ## 既知の問題と制限
 
@@ -330,7 +286,7 @@ public customKeydown(args: IGridKeydownEventArgs) {
 
 ## その他のリソース
 
-
+<!-- ComponentStart:  Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [フィルタリング](filtering.md)
 * [ソート](sorting.md)
@@ -339,6 +295,7 @@ public customKeydown(args: IGridKeydownEventArgs) {
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

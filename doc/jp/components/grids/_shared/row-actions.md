@@ -80,11 +80,13 @@ import { IgxActionStripModule } from 'igniteui-angular';
 > [!Note]
 > `ActionStripComponent` が `{ComponentName}` の子コンポーネントの場合、行をホバーすると UI が自動的に表示されます。
 
+<!-- Angular -->
+
 ## カスタムの実装
 
 これらのコンポーネントは、カスタマイズのための柔軟性を提供するテンプレートを公開します。たとえば、**delete**、**edit** などの行アクションがある Gmail シナリオで `ActionStripComponent` を使用する場合、`igx-icon` でボタン コンポーネントを作成します。そして、クリック イベントを追加し、`ActionStripComponent` に挿入します。
 
-<!-- Angular -->
+
 ```html
 <{ComponentSelector}>
     <igx-action-strip #actionstrip>
@@ -98,7 +100,6 @@ import { IgxActionStripModule } from 'igniteui-angular';
     </igx-action-strip>
 </{ComponentSelector}>
 ```
-<!-- end: Angular -->
 
 ```razor
 <div class="grid__wrapper">
@@ -118,6 +119,9 @@ import { IgxActionStripModule } from 'igniteui-angular';
     </{ComponentSelector}>
 </div>
 ```
+
+<!-- end: Angular -->
+
 
 <!-- WebComponents -->
 ```html
@@ -143,9 +147,11 @@ import { IgxActionStripModule } from 'igniteui-angular';
 
 ## API リファレンス
 
+<!-- Angular -->
+
 アクション ストリップの API に関する詳細な情報は、以下のリンクのトピックを参照してください。
 
-* `ActionStripComponent`
+* `ActionStrip`
 
 アクション ストリップで使用できるその他のコンポーネントとディレクティブ:
 
@@ -154,8 +160,8 @@ import { IgxActionStripModule } from 'igniteui-angular';
 
 <!-- end: Angular -->
 
-* `GridPinningActionsComponent`
-* `GridEditingActionsComponent`
+* `GridPinningActions`
+* `GridEditingActions`
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
