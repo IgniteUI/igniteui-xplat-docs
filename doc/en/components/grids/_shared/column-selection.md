@@ -86,6 +86,106 @@ The **API** provides some additional capabilities when it comes to the **non-vis
 
 More information regarding the API manipulations could be found in the [API References](#api-references) section.
 
+<!-- WebComponents, Blazor -->
+
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In case you would like to change some of the colors, you need to set a `class` for the grid first:
+
+<!-- ComponentStart: Grid -->
+
+```html
+<igc-grid class="grid"></igc-grid>
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+```html
+<igc-tree-grid class="treeGrid"></igc-tree-grid>
+```
+
+```razor
+<IgbTreeGrid Class="treeGrid"></IgbTreeGrid>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+
+```html
+<igc-hierarchical-grid class="hierarchicalGrid"></igc-hierarchical-grid>
+```
+
+```razor
+<IgbHierarchicalGrid Class="hierarchicalGrid"></IgbHierarchicalGrid>
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
+
+Then set the related CSS properties to this class:
+
+<!-- ComponentStart: Grid -->
+
+```css
+.grid {
+    --igx-grid-row-selected-background: #0062A3;
+    --igx-grid-row-selected-text-color: #ecaa53;
+    --igx-grid-row-selected-hover-background: #0062A3;
+    --igx-grid-header-selected-text-color: #ecaa53;
+    --igx-grid-header-selected-background: #0062A3;
+    --igx-grid-row-selected-hover-text-color: #ecaa53;
+    --igx-grid-row-selected-hover-background: #0062A3;
+}
+```
+
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+```css
+.treeGrid {
+    --igx-grid-row-selected-background: #0062A3;
+    --igx-grid-row-selected-text-color: #ecaa53;
+    --igx-grid-row-selected-hover-background: #0062A3;
+    --igx-grid-header-selected-text-color: #ecaa53;
+    --igx-grid-header-selected-background: #0062A3;
+    --igx-grid-row-selected-hover-text-color: #ecaa53;
+    --igx-grid-row-selected-hover-background: #0062A3;
+}
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+
+```css
+.hierarchicalGrid {
+    --igx-grid-row-selected-background: #0062A3;
+    --igx-grid-row-selected-text-color: #ecaa53;
+    --igx-grid-row-selected-hover-background: #0062A3;
+    --igx-grid-header-selected-text-color: #ecaa53;
+    --igx-grid-header-selected-background: #0062A3;
+    --igx-grid-row-selected-hover-text-color: #ecaa53;
+    --igx-grid-row-selected-hover-background: #0062A3;
+}
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
+
+### Demo
+
+`sample="/{ComponentSample}/column-selection-styles", height="570", alt="{Platform} {ComponentTitle} column selection styles"`
+
+
+<!-- end: WebComponents, Blazor -->
+
 <!-- Angular -->
 
 ## Styling
@@ -99,13 +199,9 @@ Before diving into the styling options, the core module and all component mixins
 // @import '~igniteui-angular/lib/core/styles/themes/index';
 ```
 
-```razor
-TO DO
-```
-
 > [!Note]
 <!-- ComponentStart:  Grid -->
->Please note that [row selection](row-selection.md) and [column selection](column-selection.md) can't be manipulated   independently. They depend on the same `variables`.
+>Please note that [row selection](row-selection.md) and [column selection](column-selection.md) can't be manipulated independently. They depend on the same `variables`.
 <!-- ComponentEnd:  Grid -->
 
 With that being said, let's move on and change the **selection** and **hover** styles. <br/>
@@ -126,10 +222,6 @@ $custom-grid-theme: grid-theme(
 );
 ```
 
-```razor
-TO DO
-```
-
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
@@ -142,10 +234,6 @@ $custom-grid-theme: grid-theme(
     $header-selected-text-color: #ECAA53,
     $header-selected-background: #011627
 );
-```
-
-```razor
-TO DO
 ```
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
@@ -165,10 +253,6 @@ The last step is to include the custom `{ComponentSelector}` theme.
 @include css-vars($custom-grid-theme)
 ```
 
-```razor
-TO DO
-```
-
 ### Overriding the Base Theme
 In order to style components for Internet Explorer 11, we have to use a different approach, since it doesn't support CSS variables.
 
@@ -181,10 +265,6 @@ In order to style components for Internet Explorer 11, we have to use a differen
         @include grid($custom-column-selection-theme);
     }
 }
-```
-
-```razor
-TO DO
 ```
 
 ### Demo

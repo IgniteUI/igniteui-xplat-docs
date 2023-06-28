@@ -73,7 +73,7 @@ _language: ja
 
 グループ行は、データ行とともにページング プロセスに関係します。それらは各ページのページ サイズにカウントされます。折りたたまれた行はページング プロセスに含まれません。
 
-ページングとグループ化の統合については、[グループ化](groupby.md#grid-ページングでグループ化)のトピックで説明しています。
+ページングとグループ化の統合については、[グループ化](groupby.md#{PlatformLower}-grid-ページングでグループ化)のトピックで説明しています。
 
 <!-- ComponentEnd: Grid -->
 
@@ -116,7 +116,7 @@ constructor() {
         grid.data = this.data;
         paginator.page = grid.page;
         paginator.totalRecords = grid.totalRecords;
-        paginator.selectOption = selectOptions;
+        paginator.selectOptions = selectOptions;
         paginator.displayDensity = grid.displayDensity;
     }
     this._bind();
@@ -377,9 +377,11 @@ $dark-button: button-theme(
 
 ## API リファレンス
 * `{ComponentName}`
-* `GridPaginator`
+* `Paginator`
 
 ## その他のリソース
+
+<!-- ComponentStart:  Grid -->
 
 <!-- * [ページネーター](../paginator.md) -->
 * [仮想化とパフォーマンス](virtualization.md)
@@ -390,6 +392,7 @@ $dark-button: button-theme(
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

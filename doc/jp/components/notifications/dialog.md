@@ -6,7 +6,7 @@ _language: ja
 mentionedTypes: ['Dialog']
 ---
 
-# {Platform} (ダイアログ) の概要
+# {Platform} Dialog (ダイアログ) の概要
 
 {ProductName} Dialog コンポーネントは、情報を表示したり、ユーザーにアクションや確認を促すために使用されます。これはモーダル ウィンドウに表示されます。つまり、ダイアログを閉じる特定のアクションが実行されるまで、ユーザーはメイン アプリを操作できません。
 
@@ -60,15 +60,15 @@ Dialog コンポーネントを表示する最も簡単な方法は、`Show` メ
 
 @code {
     public IgbDialog DialogRef;
-    public void OnDialogShow()
+    public async Task OnDialogShow()
     {
         if (this.DialogRef != null)
-            this.DialogRef.Show();
+            await this.DialogRef.ShowAsync();
     }
-    public void OnDialogHide()
+    public async Task OnDialogHide()
     {
         if (this.DialogRef != null)
-            this.DialogRef.Hide();
+            await this.DialogRef.HideAsync();
     }
 }
 ```

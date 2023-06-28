@@ -11,23 +11,22 @@ _language: ja
 
 {ComponentTitle} コンポーネントは、ユーザーの操作に応答し続けている間、1 秒あたり数千の更新を処理できます。
 
-<!-- Angular -->
+
 ## {Platform} ライブ データ更新の例
 
 以下のサンプルは、すべてのレコードが 1 秒間に複数回更新される場合の {ComponentTitle} のパフォーマンスを示しています。UI コントロールを使用して、読み込むレコードの数と更新の頻度を選択します。
-同じデータを[折れ線チャート](../charts/types/line-chart.md)に入力して、Ignite UI for Angular の強力なチャート作成機能を体験してください。`Chart` ボタンには、選択した行の Category Prices per Region データが表示され、`Chart` 列ボタンには現在の行の同じデータが表示されます。
+同じデータを[縦棒チャート](../../charts/types/column-chart.md)に入力して、Ignite UI for Angular の強力なチャート作成機能を体験してください。`Chart` ボタンには、選択した行の Category Prices per Region データが表示され、`Chart` 列ボタンには現在の行の同じデータが表示されます。
 
-`sample="/{ComponentSample}/finjs-live-data", height="700", alt="{Platform} ライブ データ更新の例"`
+`sample="/{ComponentSample}/finjs", height="700", alt="{Platform} ライブ データ更新の例"`
 
 
 
-<!-- end: Angular -->
 ## データ バインディングおよび更新
 
 サービスは、ページが読み込まれたとき、およびスライダー　コントローラーを使用して特定の数のレコードを取得したときに、コンポーネントにデータを提供します。実際のシナリオでは、更新されたデータはサービスから消費されますが、ここではデータはコードで更新されます。これは、デモをシンプルに保ち、その主な目標であるグリッドのパフォーマンスを実証するために行われます。
 
 ```Razor
-<IgbDataGrid data="data"><IgbDataGrid>
+<{ComponentSelector} Id="grid1" @ref="grid1"><{ComponentSelector}>
 ```
 
 <!-- Angular -->
@@ -38,23 +37,44 @@ _language: ja
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector}></{ComponentSelector}>
+<{ComponentSelector} id="grid1"></{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
 
+```razor
+public void OnStart()
+{
+    this.StartButton.Disabled = true;
+    this.ShowChartButton.Disabled = true;
+    this.StopButton.Disabled = false;
+    var startTimeSpan = TimeSpan.Zero;
+    var periodTimeSpan = TimeSpan.FromMilliseconds(Frequency);
+
+    this.Timer = new System.Threading.Timer((e) =>
+    {
+        grid1.Data = this.FinancialDataClass.UpdateRandomPrices(this.CurrentStocks);
+    }, null, startTimeSpan, periodTimeSpan);
+}
+```
 
 ```typescript
-    this.localService.getData(this.volume);
-    this.volumeSlider.onValueChange.subscribe(x => this.localService.getData(this.volume);
-    this.localService.records.subscribe(x => { this.data = x; });
+public startUpdate() {
+    const frequency = (document.getElementById('frequency') as IgcSliderComponent).value;
+    this._timer = setInterval(() => {
+        this.grid1.data = FinancialData.updateAllPrices(this.data);
+    }, frequency);
+    (document.getElementById('startButton') as IgcButtonComponent).disabled = true;
+    (document.getElementById('stopButton') as IgcButtonComponent).disabled = false;
+    (document.getElementById('chartButton') as IgcButtonComponent).disabled = true;
+}
 ```
 
 データ フィールド値の変更またはデータ オブジェクト/データ コレクション参照の変更により、対応するパイプがトリガーされます。ただし、これは[複合データ オブジェクト](../data-grid.md#複雑なデータ-バインディング)にバインドされている列には当てはまりません。この状況を解決するには、プロパティを含むデータ オブジェクトの新しいオブジェクト参照を提供します。例:
 
 ```Razor
-<IgbDataGrid data="data">
-    <IgbTextColumn field="price.usd"/>
-</IgbDataGrid>
+<{ComponentSelector}>
+    <IgbColumn Field="price.usd"></IgbColumn>
+</{ComponentSelector}>
 ```
 
 <!-- Angular -->
@@ -67,14 +87,15 @@ _language: ja
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid">
+<{ComponentSelector} id="grid1">
     <igc-column field="price.usd"></igc-column>
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
 
+
 ```typescript
-private updateData(data: IRecord[]) {
+private updateData(data: any[]) {
     const newData = []
     for (const rowData of data) {
         rowData.price = { usd: getUSD(), eur: getEUR() };
@@ -82,6 +103,10 @@ private updateData(data: IRecord[]) {
     }
     this.grid.data = newData;
 }
+```
+
+```razor
+ grid1.Data = this.FinancialDataClass.UpdateRandomPrices(this.CurrentStocks);
 ```
 
 ## テンプレート
@@ -94,7 +119,7 @@ igxGrid コンポーネントは、サーバーからの高頻度の更新を簡
 `sample="/{ComponentSample}/finjs-dock-manager", height="700", alt="{Platform} {ComponentTitle} サービスを使用したライブ データ更新の例"`
 
 
-<!-- end: Angular -->
+
 
 ### ハブ接続の開始
 
@@ -138,13 +163,15 @@ this.hubConnection.invoke('updateparameters', frequency, volume, live, updateAll
 ### DockManager コンポーネント
 [Dock Manager](../../layouts/dock-manager.md) WebComponent を利用し、ドケットまたはフローティング パネルを使用して独自の Web ビューを作成します。新しいフローティング パネルを追加するには、右側のアクション ペインを開き、[フローティング ペインの追加] ボタンをクリックします。新しいペインを目的の場所にドラッグアンドドロップします。
 
+<!-- end: Angular -->
+
+
 ## API リファレンス
 * `{ComponentName}`
 * `Cell`
-* `BaseTransactionService`
 
 ## その他のリソース
-
+<!-- ComponentStart:  Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
@@ -154,6 +181,7 @@ this.hubConnection.invoke('updateparameters', frequency, volume, live, updateAll
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

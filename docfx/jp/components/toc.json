@@ -216,6 +216,12 @@
       },
       {
         "exclude": ["Angular", "React"],
+        "name": "Excel へエクスポート",
+        "href": "grids/grid/export-excel.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
         "name": "Excel スタイル フィルタリング",
         "href": "grids/grid/excel-style-filtering.md",
         "status": ""
@@ -234,6 +240,18 @@
       },
       {
         "exclude": ["Angular", "React"],
+        "name": "ライブ データ / リアルタイム",
+        "href": "grids/grid/live-data.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "マスター / 詳細",
+        "href": "grids/grid/master-detail.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
         "name": "キーボード ナビゲーション",
         "href": "grids/grid/keyboard-navigation.md",
         "status": ""
@@ -246,8 +264,20 @@
       },
       {
         "exclude": ["Angular", "React"],
+        "name": "カスケード コンボ",
+        "href": "grids/grid/cascading-combos.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
         "name": "複数列ヘッダー",
         "href": "grids/grid/multi-column-headers.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "ツールバー",
+        "href": "grids/grid/toolbar.md",
         "status": ""
       },
       {
@@ -344,6 +374,12 @@
         "exclude": ["Angular", "React"],
         "name": "仮想化とパフォーマンス",
         "href": "grids/grid/virtualization.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "テーマ設定",
+        "href": "grids/theming.md",
         "status": ""
       }
     ]
@@ -584,7 +620,7 @@
     "exclude": ["Angular", "React"],
     "name": "ツリー グリッド",
     "href": "grids/tree-grid/overview.md",
-    "status": "UPDATED",
+    "status": "",
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
@@ -593,7 +629,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "セルの編集",
         "href": "grids/tree-grid/cell-editing.md",
         "status": "NEW"
@@ -623,7 +659,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "セルの選択",
         "href": "grids/tree-grid/cell-selection.md",
         "status": "NEW"
@@ -641,19 +677,19 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "列のピン固定",
         "href": "grids/tree-grid/column-pinning.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "列のサイズ変更",
         "href": "grids/tree-grid/column-resizing.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "列の選択",
         "href": "grids/tree-grid/column-selection.md",
         "status": "NEW"
@@ -960,11 +996,6 @@
         "name": "行のピン固定",
         "href": "grids/data-grid/row-pinning.md",
         "status": ""
-      },
-      {
-        "name": "テーマ設定",
-        "status": "",
-        "href": "grids/data-grid/theming.md"
       }
     ]
   },
@@ -1091,7 +1122,7 @@
   {
     "name": "折れ線チャート",
     "href": "charts/types/line-chart.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
     "exclude": ["Blazor", "Angular", "React", "WebComponents"],
@@ -1173,7 +1204,7 @@
         {
           "name": "軸グリッド線",
           "href": "charts/features/chart-axis-gridlines.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "軸レイアウト",
@@ -1226,7 +1257,7 @@
         {
           "name": "チャート オーバーレイ",
           "href": "charts/features/chart-overlays.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "チャート パフォーマンス",
@@ -1247,7 +1278,7 @@
         {
           "name": "チャート トレンドライン",
           "href": "charts/features/chart-trendlines.md",
-          "status": ""
+          "status": "UPDATED"
         }
       ]
   },
@@ -1469,9 +1500,13 @@
     "status": ""
   },
   {
-    "exclude": ["Angular"],
     "name": "メニュー",
     "header": true
+  },
+  {
+    "name": "ツールバー",
+    "href": "menus/toolbar.md",
+    "status": "PREVIEW"
   },
   {
     "exclude": ["Angular"],
@@ -1586,8 +1621,7 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "コンボ",
-    "status": "UPDATED",
+    "name": "コンボ ボックス",
     "href": "inputs/combo/overview.md",
     "items": [
       {
@@ -1600,7 +1634,6 @@
       },
       {
         "name": "単一選択",
-        "status": "",
         "href": "inputs/combo/single-selection.md"
       }
     ]
@@ -1654,8 +1687,7 @@
   {
     "exclude": ["Angular", "React"],
     "name": "選択",
-    "href": "inputs/select.md",
-    "status": "NEW"
+    "href": "inputs/select.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
@@ -1705,8 +1737,7 @@
   {
     "exclude": ["Angular", "React"],
     "name": "ダイアログ",
-    "href": "notifications/dialog.md",
-    "status": "NEW"
+    "href": "notifications/dialog.md"
   },
   {
     "exclude": ["Angular"],
@@ -1954,12 +1985,6 @@
         "name": "行のピン固定",
         "href": "grids/data-grid/row-pinning.md",
         "status": ""
-      },
-      {
-        "exclude": ["Angular", "React"],
-        "name": "テーマ設定",
-        "status": "",
-        "href": "grids/data-grid/theming.md"
       }
     ]
   }

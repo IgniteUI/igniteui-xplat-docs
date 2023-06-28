@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var yaml = require('gulp-yaml');
 var del = require('del');
 var flatten = require('gulp-flatten');
+var replace = require('gulp-replace');
 var es = require('event-stream');
 var through = require('through2');
 var path = require('path');
@@ -11,7 +12,7 @@ const browserSync = require('browser-sync').create();
 const argv = require('yargs').argv;
 const fs = require('fs');
 
-var fileRoot = 'c:/work/NetAdvantage/DEV/XPlatform/2022.2/'
+var fileRoot = 'c:/work/dev-tools/XPlatform/Main/'
 
 var mt = null; // MarkdownTransformer
 var ml = null; // MappingLoader
@@ -24,9 +25,7 @@ var docsComponents = null;
 let LANG = argv.lang === undefined ? "en" : argv.lang;
 let PLAT = argv.plat === undefined ? "React": argv.plat;
 let PLAT_API = undefined;
-let ENV_TARGET = process.env === undefined ? "development" :
-                 process.env.NODE_ENV === undefined ? "development" :
-                 process.env.NODE_ENV.trim(); // staging/production
+let ENV_TARGET = argv.env || "development";
 
 let DOCFX_BASE = {
     en: `./dist/${PLAT}/en`,
@@ -38,7 +37,7 @@ let DOCFX_PATH = `${DOCFX_BASE[LANG]}`;
 let DOCFX_CONF = `${DOCFX_PATH}/docfx.json`;
 let DOCFX_TEMPLATE_GLOBAL = path.join(__dirname, `./node_modules/igniteui-docfx-template/template/bundling.global.json`);
 let DOCFX_SITE = `${DOCFX_PATH}/_site`;
-let DOCFX_ARTICLES = `${DOCFX_PATH}/components`;
+let DOCFX_FORCE_OUTPUT = false; // this is true when building Angular CI (build-docfx-angular)
 
 function log(msg) { console.log(">> " + msg); }
 
@@ -102,7 +101,6 @@ function transformFiles() {
 
       var fileContent = file.contents.toString();
       var fileDir = path.dirname(file.path) + "\\";
-      var fileName = file.path.replace(fileDir, "");
 
       var typeName = path.basename(path.dirname(file.path))
       console.log("- transforming " + file.path);
@@ -522,7 +520,7 @@ function buildPlatform(cb) {
     let platformName = PLAT;
     let apiPlatform = PLAT_API;
     log("=========================================================");
-    log("building '" + PLAT + "' docs for '" + ENV_TARGET + "' environment");
+    log("building '" + PLAT + "' docs for '" + ENV_TARGET + "' environment and force docFX output is " + DOCFX_FORCE_OUTPUT );
     ensureEnvironment();
 
     log("building with " + includedTopics.length + " topics");
@@ -562,8 +560,8 @@ function buildPlatform(cb) {
             ])
             .pipe(gulp.dest("dist/" + platformName))
             .on("end", function () {
-                if (platformName == "Angular") {
-                    log("building " + PLAT + " ... done ");
+                if (platformName == "Angular" && !DOCFX_FORCE_OUTPUT) {
+                    log("Copying " + PLAT + " .md and /images... done. Docfx build not executed.");
                     log("=========================================================");
                     cb();
                 } else {
@@ -589,6 +587,17 @@ function buildPlatform(cb) {
         console.log("ERROR building platform: " + platformName.toString());
         cb(err);
     });
+}
+
+function replaceEnvironmentVariables(cb) {
+    const environment = ENV_TARGET ? ENV_TARGET.trim() : 'development';
+    const config = require(`./docfx/${LANG}/environment.json`);
+    return gulp.src(`${DOCFX_SITE}/**/*.html`)
+        .pipe(replace(/(\{|\%7B)environment:([a-zA-Z]+)(\}|\%7D)/g, function (match, brace1, environmentVarable, brace2) {
+            const value = config[environment][environmentVarable];
+            return value || match;
+        }))
+        .pipe(gulp.dest(DOCFX_SITE));
 }
 
 let tocLanguage = 'en';
@@ -708,7 +717,8 @@ function buildCore(cb) {
 exports.buildCoreAndTOC = buildCoreAndTOC = gulp.series(buildTOC, buildCore)
 
 // functions for building each platform:
-function buildAngular(cb)   { PLAT = "Angular"; buildCoreAndTOC(cb); }
+function buildAngularDocFX(cb) { PLAT = "Angular"; DOCFX_FORCE_OUTPUT = true;  buildCoreAndTOC(cb); }
+function buildAngular(cb)      { PLAT = "Angular"; DOCFX_FORCE_OUTPUT = false; buildCoreAndTOC(cb); }
 function buildBlazor(cb)    { PLAT = "Blazor"; buildCoreAndTOC(cb); }
 function buildReact(cb)     { PLAT = "React"; buildCoreAndTOC(cb); }
 function buildWC(cb)        { PLAT = "WebComponents"; buildCoreAndTOC(cb); }
@@ -785,21 +795,21 @@ function buildSite(cb) {
     return buildDocfx({
         siteDir: DOCFX_SITE,
         projectDir: DOCFX_PATH,
-        environment: process.env.NODE_ENV ? process.env.NODE_ENV.trim() : null
-      });
+        environment: ENV_TARGET ? ENV_TARGET.trim() : null
+    });
 }
 
 exports.buildSite = buildSite;
 exports['build-site'] = buildSite;
 
 // functions for building Docfx for each platform:
-var buildDocfx_All      = gulp.series(verifyFiles, buildAll, buildSite, updateSiteMap);
-var buildDocfx_Angular  = gulp.series(verifyFiles, buildAngular, buildSite, updateSiteMap);
-var buildDocfx_Blazor   = gulp.series(verifyFiles, buildBlazor, buildSite, updateSiteMap);
-var buildDocfx_React    = gulp.series(verifyFiles, buildReact, buildSite, updateSiteMap);
-var buildDocfx_WC       = gulp.series(verifyFiles, buildWC, buildSite, updateSiteMap);
+var buildDocfx_All      = gulp.series(verifyFiles, buildAll, buildSite, replaceEnvironmentVariables, updateSiteMap);
+var buildDocfx_Angular  = gulp.series(verifyFiles, buildAngularDocFX, buildSite, replaceEnvironmentVariables, updateSiteMap);
+var buildDocfx_Blazor   = gulp.series(verifyFiles, buildBlazor, buildSite, replaceEnvironmentVariables,  updateSiteMap);
+var buildDocfx_React    = gulp.series(verifyFiles, buildReact, buildSite, replaceEnvironmentVariables,  updateSiteMap);
+var buildDocfx_WC       = gulp.series(verifyFiles, buildWC, buildSite, replaceEnvironmentVariables, updateSiteMap);
 // function for building Docfx for a platform specified in arguments, e.g. --plat=React
-var buildDocfx_WithArgs = gulp.series(buildWithArgs, buildSite, updateSiteMap);
+var buildDocfx_WithArgs = gulp.series(buildWithArgs, buildSite, replaceEnvironmentVariables, updateSiteMap);
 // exporting functions for building Docfx for each platform:
 exports['buildDocfx_All']      = buildDocfx_All;
 exports['buildDocfx_Angular']  = buildDocfx_Angular;
@@ -883,7 +893,7 @@ function verifyMarkdown(cb) {
     if (transformer === null || transformer === undefined) {
         if (cb) cb("transformer failed to load"); return;
     }
-    console.log('verifying .md files ...');
+    console.log('verifying markdown files:');
 
     var filesCount = 0;
     var errorsCount = 0;
@@ -892,22 +902,25 @@ function verifyMarkdown(cb) {
     'doc/jp/**/*.md',
     'doc/kr/**/*.md',
     //'doc/kr/**/chart-legends.md',
+    // 'doc/en/**/charts/**/*.md',
     // 'doc/en/**/zoomslider*.md',
+    // 'doc/en/**/point-chart.md',
+    // 'doc/jp/components/grids/_shared/cell-editing.md',
     '!doc/**/obsolete/**/*.md',
     ])
     .pipe(es.map(function(file, fileCallback) {
         var fileContent = file.contents.toString();
-        var filePath = file.dirname + "\\" + file.basename
+        var filePath = file.dirname + path.sep + file.basename
         // filePath = '.\\doc\\' + filePath.split('doc\\')[1];
-        // console.log('verifying: ' + filePath);
+        console.log('verifying: ' + filePath);
         filesCount++;
-        var result = transformer.verifyMetadata(fileContent, filePath);
+        var result = transformer.verifyMarkdown(fileContent, filePath);
         if (result.isValid) {
             // console.log('verified:  ' + filePath);
             // fileContent = result.fileContent;
             //file.contents = Buffer.from(fileContent);
             // auto-update topics with corrections if any
-            //fs.writeFileSync(filePath, fileContent);
+            fs.writeFileSync(filePath, result.fileContent);
         } else {
             errorsCount++;
         }
