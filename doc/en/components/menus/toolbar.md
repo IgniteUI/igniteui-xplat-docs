@@ -7,11 +7,11 @@ mentionedTypes: ["Toolbar", "DomainChart", "CategoryChart", "XamDataChart"]
 
 # {Platform} Toolbar Overview
 
-The {Platform} Toolbar component is a companion container for UI operations to interact both standalone or with the {Platform} Data Chart & `CategoryChart` components. This allows you to easily choose from a preset of properties and tools with predefined SVG icons, but it also gives you the ability to create custom tools for your project. Benefiting from a number of attributes, you can define or change the icon in use or apply different actions to it.
+The {Platform} Toolbar component is a companion container for UI operations to be used primarily with our charting components. The toolbar will dynamically update with a preset of properties and tool items when linked to our `XamDataChart` or `CategoryChart` components. You'll be able to create custom tools for your project allowing end users to provide changes, offering an endless amount of customization.
 
 ## {Platform} Toolbar Example
 
-`sample="/charts/toolbar/actions-built-in-data-chart", height="600", alt="{Platform} Toolbar Example"`
+`sample="/charts/toolbar/actions-built-in-category-chart", height="600", alt="{Platform} Toolbar Example"`
 
 ## Dependencies
 
@@ -259,23 +259,44 @@ Trend Actions
 By default the {Platform} Toolbar is shown horizontally, but it also has the ability to shown vertically by setting the `Orientation` property.
 
 ```html
-<igc-toolbar orientation="vertical"></igc-icon>
+<igx-toolbar orientation="Vertical" />
+```
+
+```html
+<igc-toolbar orientation="Vertical" />
 ```
 
 ```razor
-<IgbToolbar Orientation="ToolbarOrientation.Horizontal">
+<IgbToolbar Orientation="ToolbarOrientation.Vertical" />
 ```
 
 ```tsx
-<IgrToolbar orientation="vertical" />
+<IgrToolbar orientation="Vertical" />
 ```
 <!-- The following example demonstrates the vertical orientation of the {Platform} Toolbar.
 `sample="/charts/toolbar/layout-in-vertical-orientation", height="600", alt="{Platform} Verical Orientation"` -->
 
 <!-- ## Styling/Theming
 
-The icon component can be styled by using it's `BaseTheme` property directly to the `Toolbar`. The following example demonstrates the various theme options that can be applied.
+The icon component can be styled by using it's `BaseTheme` property directly to the `Toolbar`. 
 
+```html
+<igx-toolbar baseTheme="SlingshotDark" />
+```
+
+```html
+<igc-toolbar base-theme="SlingshotDark" />
+```
+
+```razor
+<IgbToolbar BaseTheme="BaseControlTheme.SlingshotDark" />
+```
+
+```tsx
+<IgrToolbar baseTheme="SlingshotDark" />
+```
+
+<!-- The following example demonstrates the various theme options that can be applied.
 `sample="/charts/toolbar/theming", height="600", alt="{Platform} Toolbar Styling/Theming"` -->
 
 ## API References
