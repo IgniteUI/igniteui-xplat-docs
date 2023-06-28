@@ -25,7 +25,7 @@ The sample below demonstrates how `Grid` works with nested Cascading `Combo` com
 
 ## Setup
 
-In order enable column editing, make sure `editable` property is set to `true`.
+In order enable column editing, make sure `editable` property is set to **true**.
 
 Once the column editing is enabled, you can start by adding your `Combo`. Please note that here in order to have only one single selection available, you will need to use set the `singleSelect` property.
 
