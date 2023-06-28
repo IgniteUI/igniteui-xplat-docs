@@ -773,7 +773,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "行のピン固定",
         "href": "grids/tree-grid/row-pinning.md",
         "status": "NEW"
