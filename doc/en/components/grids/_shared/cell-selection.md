@@ -93,7 +93,7 @@ Below are the methods that you can use in order to select ranges, clear selectio
 
 ### Select range
 
-`selectRange` - Select a range of cells with the API. rowStart and rowEnd should use row indexes and columnStart and columnEnd could use column index or column data field value.
+`SelectRange` - Select a range of cells with the API. rowStart and rowEnd should use row indexes and columnStart and columnEnd could use column index or column data field value.
 
 ```ts
 const range = { rowStart: 2, rowEnd: 2, columnStart: 1, columnEnd: 1 };
@@ -101,6 +101,23 @@ this.grid.selectRange(range);
 ```
 
 <!-- end: Angular, WebComponents -->
+
+### Clear cell selection
+
+`ClearCellSelection` will clear the current cell selection.
+
+```ts
+this.grid.clearCellSelection();
+```
+
+```razor
+@code {
+    private async void ClearSelection()
+    {
+        await this.grid.ClearCellSelectionAsync();
+    }
+}
+```
 
 ### Get Selected Data
 
@@ -122,7 +139,7 @@ this.grid.selectRange(range);
 <!-- end: Blazor -->
 
 <!-- Angular, WebComponents -->
-`getSelectedData` will return array of the selected data in format depending on the selection. Examples below:
+`GetSelectedData` will return array of the selected data in format depending on the selection. Examples below:
 
 - If three different single cells are selected:
 
