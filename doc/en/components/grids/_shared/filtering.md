@@ -271,8 +271,6 @@ this.grid.clearFilter();
 ```
 <!-- end: WebComponents -->
 
-<!-- Angular, WebComponents -->
-
 ## Initial filtered state
 
 To set the initial filtering state of the `{ComponentName}`, set the `{ComponentName}` `FilteringExpressionsTree` property to an array of `FilteringExpressionsTree` for each column to be filtered.
