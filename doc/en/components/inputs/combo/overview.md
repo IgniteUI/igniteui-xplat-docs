@@ -123,7 +123,7 @@ When the combo is bound to a list of complex data (i.e. objects), we need to spe
 
  - `ValueKey` - *Optional,* ***required*** *for complex data object* - Determines which field of the data source will be used to make selections. If `ValueKey` is omitted, the selection API will use object references to select items.
  - `DisplayKey` - *Optional,* ***recommended*** *for complex data objects* - Determines which field in the data source is used as the display value. If no value is specified for `DisplayKey`, the combo will use the specified `ValueKey` (if any).
-In our case, we want the combo to display the `name` of each city and use the `id` field for item selection and as the underlying value for each item. Therefore, we provide these properties to the combo's `ValueKey` and `Display` respectively.
+In our case, we want the combo to display the `name` of each city and use the `id` field for item selection and as the underlying value for each item. Therefore, we provide these properties to the combo's `ValueKey` and `DisplayKey` respectively.
 
 > [!Note]
 > When the data source consists of primitive types (e.g. `strings`, `numbers`, etc.), **do not** specify a `ValueKey` and/or `DisplayKey`.
