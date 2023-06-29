@@ -7,11 +7,11 @@ mentionedTypes: ["Toolbar", "DomainChart", "CategoryChart", "XamDataChart"]
 
 # {Platform} Toolbar Overview
 
-The {Platform} Toolbar component is a companion container for UI operations to interact both standalone or with the {Platform} Data Chart & `CategoryChart` components. This allows you to easily choose from a preset of properties and tools with predefined SVG icons, but it also gives you the ability to create custom tools for your project. Benefiting from a number of attributes, you can define or change the icon in use or apply different actions to it.
+The {Platform} Toolbar component is a companion container for UI operations to be used primarily with our charting components. The toolbar will dynamically update with a preset of properties and tool items when linked to our `XamDataChart` or `CategoryChart` components. You'll be able to create custom tools for your project allowing end users to provide changes, offering an endless amount of customization.
 
 ## {Platform} Toolbar Example
 
-`sample="/charts/toolbar/actions-built-in-data-chart", height="600", alt="{Platform} Toolbar Example"`
+`sample="/charts/toolbar/actions-built-in-category-chart", height="600", alt="{Platform} Toolbar Example"`
 
 ## Dependencies
 
@@ -93,11 +93,11 @@ The following modules are required when using the `Toolbar` with the `XamDataCha
 // in Program.cs file
 
 builder.Services.AddIgniteUIBlazor(
-    typeof(IgbToolbarModule),    
+    typeof(IgbToolbarModule),
     typeof(IgbDataChartToolbarModule),
     typeof(IgbDataChartCoreModule),
     typeof(IgbDataChartCategoryModule),
-    typeof(IgbDataChartAnnotationModule), 
+    typeof(IgbDataChartAnnotationModule),
     typeof(IgbDataChartInteractivityModule),
     typeof(IgbDataChartCategoryTrendLineModule)
 );
@@ -129,13 +129,13 @@ Each of these tools exposes an `OnCommand` event that is triggered by mouse clic
 
 New and existing tools can be repositioned and marked hidden using the `OverlayId`, `BeforeId` and `AfterId` properties on the `ToolAction` object. ToolActions also expose a `Visibility` property.
 
-The following example demonstrates hiding both the built-in `ZoomReset` and `Analyze Menu` menu tool actions. A new instance of the `ZoomReset` tool action is added and placed within the `ZoomMenu` by using the the `AfterId` property and assigning that to `ZoomOut`. This will ensure the new Reset tool is displayed at the bottom of the `ZoomMenu`.
+The following example demonstrates hiding both the built-in `ZoomReset` and `AnalyzeMenu` menu tool actions. A new instance of the `ZoomReset` tool action is added and placed within the `ZoomMenu` by using the the `AfterId` property and assigning that to `ZoomOut`. This will ensure the new Reset tool is displayed at the bottom of the `ZoomMenu`.
 
 `sample="/charts/toolbar/layout-actions-for-data-chart", height="600", alt="{Platform} Toolbar Example"`
 
 ### {Platform} Data Chart Integration
 
-The {Platform} Toolbar contains a `Target` property. This is used to link a component, such as the `XamDataChart` as shown in the code below: 
+The {Platform} Toolbar contains a `Target` property. This is used to link a component, such as the `XamDataChart` as shown in the code below:
 
 ```razor
   <IgbToolbar
@@ -187,9 +187,9 @@ The {Platform} Toolbar contains a `Target` property. This is used to link a comp
   constructor() {
     var toolbar = this.toolbar = document.getElementById('Toolbar') as IgcToolbarComponent;
     var chart = this.chart = document.getElementById('chart') as IgcDataChartComponent;
-    
+
     this._bind = () => {
-        toolbar.target = this.chart;           
+        toolbar.target = this.chart;
     }
     this._bind();
   }
@@ -231,7 +231,7 @@ Zooming Actions
 - `ZoomReset`: A `ToolActionLabel` that invokes the `ResetZoom` method on the chart to reset the zoom level to it's default position.
 - `ZoomMenu`: A `ToolActionIconMenu` that exposes two `ToolActionLabel` items to invoke the `ZoomIn` and `ZoomOut` methods on the chart for increasing/decreasing the chart's zoom level.
 
-Trend Actions  
+Trend Actions
 
 - `AnalyzeMenu`: A `ToolActionIconMenu` that contains several options for configuring different options of the chart.
  - `AnalyzeHeader`: A sub section header.
@@ -259,23 +259,44 @@ Trend Actions
 By default the {Platform} Toolbar is shown horizontally, but it also has the ability to shown vertically by setting the `Orientation` property.
 
 ```html
-<igc-toolbar orientation="vertical"></igc-icon>
+<igx-toolbar orientation="Vertical" />
+```
+
+```html
+<igc-toolbar orientation="Vertical" />
 ```
 
 ```razor
-<IgbToolbar Orientation="ToolbarOrientation.Horizontal">
+<IgbToolbar Orientation="ToolbarOrientation.Vertical" />
 ```
 
 ```tsx
-<IgrToolbar orientation="vertical" />
+<IgrToolbar orientation="Vertical" />
 ```
 <!-- The following example demonstrates the vertical orientation of the {Platform} Toolbar.
 `sample="/charts/toolbar/layout-in-vertical-orientation", height="600", alt="{Platform} Verical Orientation"` -->
 
 <!-- ## Styling/Theming
 
-The icon component can be styled by using it's `BaseTheme` property directly to the `Toolbar`. The following example demonstrates the various theme options that can be applied.
+The icon component can be styled by using it's `BaseTheme` property directly to the `Toolbar`.
 
+```html
+<igx-toolbar baseTheme="SlingshotDark" />
+```
+
+```html
+<igc-toolbar base-theme="SlingshotDark" />
+```
+
+```razor
+<IgbToolbar BaseTheme="BaseControlTheme.SlingshotDark" />
+```
+
+```tsx
+<IgrToolbar baseTheme="SlingshotDark" />
+```
+
+<!-- The following example demonstrates the various theme options that can be applied.
 `sample="/charts/toolbar/theming", height="600", alt="{Platform} Toolbar Styling/Theming"` -->
 
 ## API References
