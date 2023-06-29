@@ -259,8 +259,8 @@ Finally, we can enable the toolbar of our tree grid, along with the column hidin
 ```html
 <igc-tree-grid auto-generate="false" id="treeGrid" name="treeGrid" child-data-key="Employees" row-selection="multiple" allow-filtering="true" moving="true">
     <igc-column field="name" header="Name" data-type="string" sortable="true" resizable="true" has-summary="true" editable="true"></igc-column>
-    <igc-column field="hireDate" header="Hire Date" data-type="date" sortable="true" resizable="true" has-summary="true" editable="true"></igc-column>
-    <igc-column field="age" header="Age" data-type="number" sortable="true" resizable="true" has-summary="true" editable="true"></igc-column>
+    <igc-column field="hireDate" header="Hire Date" data-type="date" sortable="true" resizable="true" editable="true"></igc-column>
+    <igc-column field="age" header="Age" data-type="number" sortable="true" resizable="true" editable="true"></igc-column>
     <igc-paginator></igc-paginator>
     <igc-grid-toolbar>
         <igc-grid-toolbar-title> Employees </igc-grid-toolbar-title>
@@ -283,8 +283,8 @@ Finally, we can enable the toolbar of our tree grid, along with the column hidin
             Name="treeGrid"
             @ref="treeGrid">
     <IgbColumn Field="Name" DataType="GridColumnDataType.String" Sortable=true Editable=true Resizable=true HasSummary=true></IgbColumn>
-    <IgbColumn Field="HireDate" DataType="GridColumnDataType.Date" Sortable=true Editable=true Resizable=true HasSummary=true></IgbColumn>
-    <IgbColumn Field="Age" DataType="GridColumnDataType.Number" Sortable=true Editable=true Resizable=true HasSummary=true> </IgbColumn>
+    <IgbColumn Field="HireDate" DataType="GridColumnDataType.Date" Sortable=true Editable=true Resizable=true></IgbColumn>
+    <IgbColumn Field="Age" DataType="GridColumnDataType.Number" Sortable=true Editable=true Resizable=true > </IgbColumn>
     <IgbPaginator></IgbPaginator>
     <IgbGridToolbar>
         <IgbGridToolbarTitle> Employees </IgbGridToolbarTitle>
