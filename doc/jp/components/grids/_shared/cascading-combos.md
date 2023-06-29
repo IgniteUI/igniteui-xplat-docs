@@ -40,7 +40,7 @@ defineAllComponents();
 
 ```razor
 builder.Services.AddIgniteUIBlazor(
-    typeof(IgbGridModule), 
+    typeof(IgbGridModule),
     typeof(IgbComboModule)
 );
 ```
@@ -96,7 +96,7 @@ igRegisterScript("CountryChange", (ctx) => {
 ```
 
 ```ts
- public countries = [...this.worldCitiesAbove500K].filter(x => this.countryNames.indexOf(x.Country) !== -1).filter((value, index, array) => array.findIndex(x => x.Country === value.Country) === index); 
+ public countries = [...this.worldCitiesAbove500K].filter(x => this.countryNames.indexOf(x.Country) !== -1).filter((value, index, array) => array.findIndex(x => x.Country === value.Country) === index);
 public bindEventsCountryCombo(rowId: any, cell: any) {
         const comboId = "country_" + rowId;
         var combo = document.getElementById(comboId) as IgcComboComponent<any>;
@@ -116,7 +116,7 @@ public bindEventsCountryCombo(rowId: any, cell: any) {
                     nextCombo.disabled = false;
                     nextCombo.data = this.regions.filter(x => x.Country === value);
                 }, 2000);
-      
+
             }
         });
         combo?.addEventListener("igcOpening", (e:any) => {
@@ -132,7 +132,7 @@ public bindEventsCountryCombo(rowId: any, cell: any) {
 
 <!-- Angular -->
 
-`Simple ComboBox` コンポーネントの使用を開始するには、最初に `IgxSimpleComboModule` を `app.module.ts` ファイルにインポートする必要があります。
+`SimpleComboBox` コンポーネントの使用を開始するには、最初に `IgxSimpleComboModule` を `app.module.ts` ファイルにインポートする必要があります。
 
 ```typescript
 import { IgxSimpleComboModule } from 'igniteui-angular';
@@ -184,8 +184,8 @@ public countryChanging(event: IComboSelectionChangeEventArgs) {
 `id` 属性の値を設定するには `id` が必要です。
 
 ```html
- <igx-linear-bar 
-    [id]="'region-progress-' + cell.row.data.ID" 
+ <igx-linear-bar
+    [id]="'region-progress-' + cell.row.data.ID"
     [style.visibility]="'hidden'"
     type="info" [indeterminate]="true">
 </igx-linear-bar>
