@@ -72,7 +72,7 @@ constructor() {
     <igc-grid-toolbar></igc-grid-toolbar>
 </igc-tree-grid>
 ```
-<!-- ComponentEnd: TreeGrid -->
+
 
 ```ts
 constructor() {
@@ -80,6 +80,7 @@ constructor() {
     grid.data = this.data
 }
 ```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- end: WebComponents -->
 
@@ -494,17 +495,22 @@ In case you would like to change some of the colors, you need to set a class for
 <igc-grid class="grid"></igc-grid>
 ```
 
+```razor
+<IgbGrid class="grid"></IgbGrid>
+```
+
+
+<!-- ComponentStart: TreeGrid -->
+
 ```html
 <igc-tree-grid class="grid"></igc-tree-grid>
 ```
 
 ```razor
-<IgbGrid class="grid"></IgbGrid>
-```
-
-```razor
 <IgbTreeGrid class="grid"></IgbTreeGrid>
 ```
+
+<!-- ComponentEnd: TreeGrid -->
 
 Then set the related CSS properties to this class:
 
