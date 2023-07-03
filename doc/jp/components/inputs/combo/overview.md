@@ -122,18 +122,18 @@ export class Sample {
 
 コンボは複雑なデータ (オブジェクト) の配列にバインドされている場合、コントロールが項目の選択を処理するために使用するプロパティを指定する必要があります。The component exposes the following properties:
 
- - `ValueKey` - *Optional,* ***required*** *for complex data object* - Determines which field of the data source will be used to make selections. If `ValueKey` is omitted, the selection API will use object references to select items.
- - `DisplayKey` - *Optional,* ***recommended*** *for complex data objects* - Determines which field in the data source is used as the display value. If no value is specified for `DisplayKey`, the combo will use the specified `ValueKey` (if any).
-In our case, we want the combo to display the `name` of each city and use the `id` field for item selection and as the underlying value for each item. Therefore, we provide these properties to the combo's `ValueKey` and `DisplayKey` respectively.
+ - `ValueKey` - *オプション、複雑なデータ オブジェクトに**必須** - データ ソースのどのフィールドを選択に使用するかを決定します。`ValueKey` が省略された場合、選択 API はオブジェクト参照を使用して項目を選択します。
+ - `DisplayKey` - オプション、複雑なデータ オブジェクトに**推奨** - データ ソース内のどのフィールドが表示値として使用されるかを決定します。 `DisplayKey` に値が指定されていない場合、コンボは指定された `ValueKey` (存在する場合) を使用します。
+この例では、コンボで各都市の `name` を表示し、項目の選択と各項目の基礎となる値として `id` フィールドを使用するようにします。したがって、これらのプロパティをコンボの `ValueKey` と `DisplayKey` にそれぞれ提供します。
 
 > [!Note]
-> When the data source consists of primitive types (e.g. `strings`, `numbers`, etc.), **do not** specify a `ValueKey` and/or `DisplayKey`.
+> データ ソースがプリミティブ型 (例: `strings`、`numbers` など) で構成されている場合、`ValueKey` や `DisplayKey` を**指定しないでください**。
 
-### Setting Value
+### 値の設定
 
-The ComboBox component exposes a `Value` getter and setter in addition to an attribute, which is also called value. You can use the value attribute to set the selected items on component initialization.
+ComboBox コンポーネントは、属性 (値とも呼ばれます) に加えて、`Value` ゲッターとセッターを公開します。 value 属性を使用して、コンポーネントの初期化時に選択した項目を設定できます。
 
-If you want to read the value, i.e. the list of currently selected items, or to update the value use the value getter and setter respectively. The value getter will return a list of all selected items as represented by the `ValueKey`. Likewise, if you want to update the list of selected items by using the value setter, you should provide a list of items by their `ValueKey`. 
+値 (現在選択されている項目のリスト) を読み取る場合、または値を更新する場合は、それぞれ値ゲッターとセッターを使用します。値ゲッターは、`ValueKey` で表される選択されたすべての項目のリストを返します。同様に、値セッターを使用して選択した項目のリストを更新する場合は、`ValueKey` によって項目のリストを提供する必要があります。 
 
 例:
 

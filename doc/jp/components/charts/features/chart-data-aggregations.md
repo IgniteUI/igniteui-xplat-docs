@@ -13,9 +13,9 @@ _language: ja
 
 # {Platform} データ集計の例
 
-The following example depicts a [Column Chart](../types/column-chart.md) that groups by the Country member of the `XAxis` and can be changed to other properties within each data item such as Product, MonthName, and Year to aggregate the sales data. Also a summary and sort option is available to get a desirable order for the grouped property. 
+次の例は、 `XAxis` の Country メンバーごとにグループ化する[縦棒チャート](../types/column-chart.md)を示しており、各データ項目内の他のプロパティ (Product、MonthName、Year など) に変更して販売データを集計できます。また、グループ化されたプロパティを望ましい順序で取得するために、概要とソートのオプションも利用できます。 
 
-Note, the abbreviated functions found within the dropdowns for `InitialSummaries` and `GroupSorts` have be applied as shown to get a correct result based on the property you assign. eg. Sum(sales) as Sales | Sales Desc
+`InitialSummaries` と `GroupSorts` のドロップダウン内にある短縮関数は、割り当てたプロパティに基づいて正しい結果が得られるように適用されていることに注意してください (例: Sum(sales) as Sales | Sales Desc)。
 
 `sample="/charts/category-chart/data-aggregations", height="500", alt="{Platform} データ集計の例"`
 
