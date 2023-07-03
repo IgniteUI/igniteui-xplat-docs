@@ -218,7 +218,7 @@
         "exclude": ["Angular", "React"],
         "name": "Excel へエクスポート",
         "href": "grids/grid/export-excel.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React"],
@@ -236,6 +236,12 @@
         "exclude": ["Angular", "React"],
         "name": "グループ化",
         "href": "grids/grid/groupby.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "ライブ データ / リアルタイム",
+        "href": "grids/grid/live-data.md",
         "status": ""
       },
       {
@@ -258,8 +264,20 @@
       },
       {
         "exclude": ["Angular", "React"],
+        "name": "カスケード コンボ",
+        "href": "grids/grid/cascading-combos.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
         "name": "複数列ヘッダー",
         "href": "grids/grid/multi-column-headers.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "ツールバー",
+        "href": "grids/grid/toolbar.md",
         "status": ""
       },
       {
@@ -602,7 +620,7 @@
     "exclude": ["Angular", "React"],
     "name": "ツリー グリッド",
     "href": "grids/tree-grid/overview.md",
-    "status": "UPDATED",
+    "status": "",
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
@@ -611,7 +629,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "セルの編集",
         "href": "grids/tree-grid/cell-editing.md",
         "status": "NEW"
@@ -659,19 +677,19 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "列のピン固定",
         "href": "grids/tree-grid/column-pinning.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "列のサイズ変更",
         "href": "grids/tree-grid/column-resizing.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "列の選択",
         "href": "grids/tree-grid/column-selection.md",
         "status": "NEW"
@@ -1603,8 +1621,7 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "コンボ",
-    "status": "UPDATED",
+    "name": "コンボ ボックス",
     "href": "inputs/combo/overview.md",
     "items": [
       {
@@ -1617,7 +1634,6 @@
       },
       {
         "name": "単一選択",
-        "status": "",
         "href": "inputs/combo/single-selection.md"
       }
     ]
@@ -1671,8 +1687,7 @@
   {
     "exclude": ["Angular", "React"],
     "name": "選択",
-    "href": "inputs/select.md",
-    "status": "NEW"
+    "href": "inputs/select.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
@@ -1722,8 +1737,7 @@
   {
     "exclude": ["Angular", "React"],
     "name": "ダイアログ",
-    "href": "notifications/dialog.md",
-    "status": "NEW"
+    "href": "notifications/dialog.md"
   },
   {
     "exclude": ["Angular"],

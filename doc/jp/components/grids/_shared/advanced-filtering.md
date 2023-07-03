@@ -342,7 +342,7 @@ $custom-drop-down: drop-down-theme(
 
 ### スキーマの使用
 
-テーマ エンジンを使用して [**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
+テーマ エンジンを使用して[**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
 
 すべてのコンポーネント (この場合は [light-grid]({environment:sassApiUrl}/index.html#variable-_light-grid)、[light-button]({environment:sassApiUrl}/index.html#variable-_light-button)、[light-button-group]({environment:sassApiUrl}/index.html#variable-_light-button-group)、[light-chip]({environment:sassApiUrl}/index.html#variable-_light-chip)、[light-input-group]({environment:sassApiUrl}/index.html#variable-_light-input-group) および [light-drop-down]({environment:sassApiUrl}/index.html#variable-_light-drop-down)) に提供されている 2 つの定義済みスキーマのいずれかを拡張します。
 
