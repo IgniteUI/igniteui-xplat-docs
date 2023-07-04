@@ -26,9 +26,8 @@ _language: ja
 
 `{ComponentName}` を作成してからデータをバインドします。列でフィルタリングとソートも有効にします。
 
-<!-- Angular -->
 ```html
-<{ComponentSelector} #grid id="grid" [data]="data" [autoGenerate]="false" width="100%" height="560px" columnWidth="200px" [allowFiltering]="true">
+<igx-grid #grid id="grid" [data]="data" [autoGenerate]="false" width="100%" height="560px" columnWidth="200px" [allowFiltering]="true">
     <igx-column [field]="'ID'" dataType="string" [sortable]="true" [hidden]="true"></igx-column>
     <igx-column [field]="'ContactName'" dataType="string" [sortable]="true" [hidden]="true"></igx-column>
     <igx-column [field]="'ContactTitle'" dataType="string" [sortable]="true"></igx-column>
@@ -39,9 +38,8 @@ _language: ja
     <igx-column [field]="'PostalCode'" dataType="string" [sortable]="true"></igx-column>
     <igx-column [field]="'Country'" dataType="string" [sortable]="true"></igx-column>
     <igx-column [field]="'Phone'" dataType="string" [sortable]="true"></igx-column>
-</{ComponentSelector}>
+</igx-grid>
 ```
-<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} Data=northwindEmployees AutoGenerate=false Width="100%"  Height="100%" ColumnWidth="200px" AllowFiltering=true>
@@ -57,9 +55,9 @@ _language: ja
     <IgbColumn Field="Phone" Sortable=true></IgbColumn>
 </{ComponentSelector}>
 ```
-<!-- WebComponents -->
+
 ```html
-<{ComponentSelector} id="grid" auto-generate="false" width="100%" height="560px" column-width="200px" allow-filtering="true">
+<igc-grid id="grid" auto-generate="false" width="100%" height="560px" column-width="200px" allow-filtering="true">
     <igc-column field="ID" data-type="String" sortable="true" hidden="true"></igc-column>
     <igc-column field="ContactName" data-type="String" sortable="true" hidden="true"></igc-column>
     <igc-column field="ContactTitle" data-type="String" sortable="true"></igc-column>
@@ -70,9 +68,8 @@ _language: ja
     <igc-column field="PostalCode" data-type="String" sortable="true"></igc-column>
     <igc-column field="Country" data-type="String" sortable="true"></igc-column>
     <igc-column field="Phone" data-type="String" sortable="true"></igc-column>
-</{ComponentSelector}>
+</igc-grid>
 ```
-<!-- end: WebComponents -->
 
 ## ツールバーの列非表示 UI
 
@@ -80,26 +77,22 @@ _language: ja
 
 これには、`{ComponentName}` 内に `GridToolbarActions` と `GridToolbarHiding` の両方を設定することだけです。ツールバーにタイトルを追加するには、`GridToolbarTitle` を設定し、{ComponentTitle} のラッパーにカスタム スタイルを設定します。
 
-<!-- Angular -->
 ```html
 <div class="grid__wrapper">
-    <{ComponentSelector} [data]="localdata">
+    <igx-grid [data]="localdata">
         <igx-grid-toolbar>
-            <igx-grid-toolbar-title>Employees</igx-grid-toolbar-title>
             <igx-grid-toolbar-actions>
                 <igx-grid-toolbar-hiding></igx-grid-toolbar-hiding>
             </igx-grid-toolbar-actions>
         </igx-grid-toolbar>
-    </{ComponentSelector}>
+    </igx-grid>
 </div>
 ```
-<!-- end: Angular -->
 
 ```razor
 <div class="grid__wrapper">
     <{ComponentSelector} Data=northwindEmployees>
         <IgbGridToolbar>
-            <IgbGridToolbarTitle>Employees</IgbGridToolbarTitle>
             <IgbGridToolbarActions>
                 <IgbGridToolbarHiding></IgbGridToolbarHiding>
             </IgbGridToolbarActions>
@@ -108,29 +101,10 @@ _language: ja
 </div>
 ```
 
-<!-- ComponentStart: TreeGrid -->
-
-```razor
-<div class="treeGrid__wrapper">
-    <IgbTreeGrid Data=northwindEmployees>
-        <IgbGridToolbar>
-            <IgbGridToolbarTitle>Employees</IgbGridToolbarTitle>
-            <IgbGridToolbarActions>
-                <IgbGridToolbarHiding></IgbGridToolbarHiding>
-            </IgbGridToolbarActions>
-       </IgbGridToolbar>
-    </IgbTreeGrid>
-</div>
-```
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- WebComponents -->
 ```html
 <div class="grid__wrapper">
     <igc-grid id="grid">
         <igc-grid-toolbar>
-            <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
             <igc-grid-toolbar-actions>
                 <igc-grid-toolbar-hiding></igc-grid-toolbar-hiding>
             </igc-grid-toolbar-actions>
@@ -138,81 +112,39 @@ _language: ja
     </igc-grid>
 </div>
 ```
-
-<!-- ComponentStart: TreeGrid -->
-
-```html
-<div class="treeGrid__wrapper">
-    <igc-tree-grid id="grid">
-        <igc-grid-toolbar>
-            <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
-            <igc-grid-toolbar-actions>
-                <igc-grid-toolbar-hiding></igc-grid-toolbar-hiding>
-            </igc-grid-toolbar-actions>
-        </igc-grid-toolbar>
-    </igc-tree-grid>
-</div>
-```
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- end: WebComponents -->
 
 `{ComponentName}` にはツールバーの列非表示 UI に便利なプロパティがあります。
 
 `Title` プロパティを使用して、ツールバーのドロップダウン ボタンに表示されるタイトルを設定します。
 
-<!-- Angular -->
 ```html
 <div class="grid__wrapper">
-    <{ComponentSelector} [data]="localdata">
+    <igx-grid [data]="localdata">
         <igx-grid-toolbar>
-            <igx-grid-toolbar-title>Employees</igx-grid-toolbar-title>
             <igx-grid-toolbar-actions>
                 <igx-grid-toolbar-hiding #hidingActionRef title="Column Hiding"></igx-grid-toolbar-hiding>
             </igx-grid-toolbar-actions>
         </igx-grid-toolbar>
-    </{ComponentSelector}>
+    </igx-grid>
 </div>
 ```
-<!-- end: Angular -->
 
 ```razor
 <div class="grid__wrapper">
-    <IgbGrid Data=northwindEmployees>
+    <{ComponentSelector} Data=northwindEmployees>
         <IgbGridToolbar>
-            <IgbGridToolbarTitle>Employees</IgbGridToolbarTitle>
             <IgbGridToolbarActions>
                 <IgbGridToolbarHiding @ref=HidingAction Title="Column Hiding"></IgbGridToolbarHiding>
             </IgbGridToolbarActions>
        </IgbGridToolbar>
-    </IgbGrid>
+    </{ComponentSelector}>
 </div>
 ```
 
-<!-- ComponentStart: TreeGrid -->
-
-```razor
-<div class="treeGrid__wrapper">
-    <IgbTreeGrid Data=northwindEmployees>
-        <IgbGridToolbar>
-            <IgbGridToolbarTitle>Employees</IgbGridToolbarTitle>
-            <IgbGridToolbarActions>
-                <IgbGridToolbarHiding @ref=HidingAction Title="Column Hiding"></IgbGridToolbarHiding>
-            </IgbGridToolbarActions>
-       </IgbGridToolbar>
-    </IgbTreeGrid>
-</div>
-```
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- WebComponents -->
 ```html
 <div class="grid__wrapper">
     <igc-grid id="grid">
         <igc-grid-toolbar>
-            <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
             <igc-grid-toolbar-actions>
                 <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding"></igc-grid-toolbar-hiding>
             </igc-grid-toolbar-actions>
@@ -220,25 +152,6 @@ _language: ja
     </igc-grid>
 </div>
 ```
-
-<!-- ComponentStart: TreeGrid -->
-
-```html
-<div class="treeGrid__wrapper">
-    <igc-tree-grid id="grid">
-        <igc-grid-toolbar>
-            <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
-            <igc-grid-toolbar-actions>
-                <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding"></igc-grid-toolbar-hiding>
-            </igc-grid-toolbar-actions>
-        </igc-grid-toolbar>
-    </igc-tree-grid>
-</div>
-```
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- end: WebComponents -->
 
 <!-- Angular -->
 
@@ -358,6 +271,7 @@ export class AppModule {}
 </div>
 ```
 
+
 ### 列の表示順序オプションの追加
 
 列非表示 UI で列の表示順序を選択する機能も追加します。このため、`ColumnDisplayOrder` プロパティを使用します。列挙型のプロパティで、以下のオプションがあります。
@@ -394,35 +308,39 @@ export class AppModule {}
     </div>
 </div>
 ```
-
+<!-- end: Angular -->
 ### 列の非表示の無効化
 列の `DisableHiding` プロパティを true に設定すると、ユーザーが列非表示 UI によって列を非表示にできません。
 
 ```html
 <div class="gridContainer">
-    <{ComponentSelector}>
+    <igx-grid>
         <igx-column [field]="'ContactName'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
         <igx-column [field]="'ContactTitle'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
-    </{ComponentSelector}>
+    </igx-grid>
 </div>
 ```
 
-<!-- WebComponents -->
 ```html
 <div class="gridContainer">
-    <{ComponentSelector}>
+    <igc-grid>
         <igc-column field="ContactName" data-type="String" sortable="true" disable-hiding="true"></igc-column>
         <igc-column field="ContactTitle" data-type="String" sortable="true" disable-hiding="true"></igc-column>
-    </{ComponentSelector}>
+    </igc-grid>
 </div>
 ```
-<!-- end: WebComponents -->
 
+```razor
+<{ComponentSelector} Data=northwindEmployees AutoGenerate=false>
+    <IgbColumn Field="ContactName" Sortable=true DisableHiding=true></IgbColumn>
+    <IgbColumn Field="ContactTitle" Sortable=true DisableHiding=true></IgbColumn>
+</{ComponentSelector}>
+```
+
+<!-- Angular -->
 列非表示 UI コンポーネントは以下のようになります。
 
 `sample="/{ComponentSample}/custom-column-hiding", height="600", alt="{Platform} {ComponentTitle} カスタム列非表示の例"`
-
-
 
 ## スタイル設定
 
@@ -567,9 +485,61 @@ $custom-button: button-theme(
 
 `sample="/{ComponentSample}/column-hiding-style", height="600", alt="{Platform} {ComponentTitle} 列非表示のスタイル設定の例"`
 
-
-
 <!-- end: Angular -->
+
+<!-- Blazor, WebComponents -->
+## スタイル設定
+
+グリッドは、利用可能な [CSS 変数](../theming.md)の一部を設定することでさらにカスタマイズできます。
+これを実現するために、最初にグリッドに割り当てるクラスを使用します。
+
+```ts
+<igc-grid class="grid">
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+次に、関連するコンポーネントに関連する CSS 変数を設定します。スタイルも `igx-column-actions` にのみ適用するので、グリッドの残りの部分は影響を受けません。
+
+```css
+.grid  igx-column-actions {
+    /* Main Column Actions styles */
+    --igx-column-actions-background-color: #292826;
+    --igx-column-actions-title-color: #ffcd0f;
+
+    /* Checkbox styles */
+    --igx-checkbox-tick-color: #292826;
+    --igx-checkbox-label-color: #ffcd0f;
+    --igx-checkbox-empty-color: #ffcd0f;
+    --igx-checkbox-fill-color: #ffcd0f;
+
+    /* Input styles */
+    --igx-input-group-idle-text-color: white;
+    --igx-input-group-filled-text-color: #ffcd0f;
+    --igx-input-group-focused-text-color: #ffcd0f;
+    --igx-input-group-focused-border-color: #ffcd0f;
+    --igx-input-group-focused-secondary-color: #ffcd0f;
+
+    /* Buttons styles */
+    --igx-button-foreground: #292826;
+    --igx-button-background: #ffcd0f;
+    --igx-button-hover-background: #404040;
+    --igx-button-hover-foreground: #ffcd0f;
+    --igx-button-focus-background: #ffcd0f;
+    --igx-button-focus-foreground: black;
+    --igx-button-focus-visible-background: #ffcd0f;
+    --igx-button-focus-visible-foreground: black;
+    --igx-button-disabled-foreground: #ffcd0f;
+}
+```
+
+### デモ
+
+`sample="/{ComponentSample}/column-hiding-toolbar-style", height="570", alt="{Platform} {ComponentTitle} 列非表示ツールバーのスタイル"`
+
+<!-- end: Blazor, WebComponents -->
 
 ## API リファレンス
 
