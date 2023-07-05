@@ -2,7 +2,7 @@
 title: {Platform} Toolbar Component | {ProductName}
 _description: See how you can easily get started with {Platform} Toolbar Component. Compatible with the Data Chart. Extend your .
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Toolbar components, {Platform} Toolbar controls
-mentionedTypes: ["Toolbar", "DomainChart", "CategoryChart", "XamDataChart"]
+mentionedTypes: ["Toolbar", "ToolAction", "DomainChart", "CategoryChart", "XamDataChart"]
 ---
 
 # {Platform} Toolbar Overview
@@ -129,7 +129,7 @@ Each of these tools exposes an `OnCommand` event that is triggered by mouse clic
 
 New and existing tools can be repositioned and marked hidden using the `OverlayId`, `BeforeId` and `AfterId` properties on the `ToolAction` object. ToolActions also expose a `Visibility` property.
 
-The following example demonstrates hiding both the built-in `ZoomReset` and `AnalyzeMenu` menu tool actions. A new instance of the `ZoomReset` tool action is added and placed within the `ZoomMenu` by using the the `AfterId` property and assigning that to `ZoomOut`. This will ensure the new Reset tool is displayed at the bottom of the `ZoomMenu`.
+The following example demonstrates hiding both the built-in **ZoomReset** and **AnalyzeMenu** menu tool actions. A new instance of the **ZoomReset** tool action is added and placed within the **ZoomMenu** by using the the `AfterId` property and assigning that to **ZoomOut**. This will ensure the new Reset tool is displayed at the bottom of the **ZoomMenu**.
 
 `sample="/charts/toolbar/layout-actions-for-data-chart", height="600", alt="{Platform} Toolbar Example"`
 
