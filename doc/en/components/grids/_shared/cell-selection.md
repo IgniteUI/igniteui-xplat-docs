@@ -227,9 +227,9 @@ Then set the related CSS properties for that class:
 
 ```css
 .grid {
-    --igx-grid-cell-selected-text-color: #FFFFFF;
-    --igx-grid-cell-active-border-color: #f2c43c;
-    --igx-grid-cell-selected-background: #0062A3;
+    --ig-grid-cell-selected-text-color: #FFFFFF;
+    --ig-grid-cell-active-border-color: #f2c43c;
+    --ig-grid-cell-selected-background: #0062A3;
 }
 ```
 
@@ -238,21 +238,21 @@ Then set the related CSS properties for that class:
 <!-- ComponentStart: TreeGrid -->
 
 ```ts
-<igc-tree-grid id="treeGrid"></igc-tree-grid>
+<igc-tree-grid class="treeGrid"></igc-tree-grid>
 ```
 
 ```razor
-<IgbTreeGrid Id="treeGrid"></IgbTreeGrid>
+<IgbTreeGrid Class="treeGrid"></IgbTreeGrid>
 ```
 
 Then set the related CSS properties for that class:
 
 ```css
-#treeGrid {
-    --cell-selected-text-color: #fff;
-    --cell-active-border-color: #f2c43c;
-    --cell-selected-background: #0062a3;
-    --cell-editing-background: #0062a3;
+.treeGrid {
+    --ig-grid-cell-selected-text-color: #fff;
+    --ig-grid-cell-active-border-color: #f2c43c;
+    --ig-grid-cell-selected-background: #0062a3;
+    --ig-grid-cell-editing-background: #0062a3;
 }
 ```
 
