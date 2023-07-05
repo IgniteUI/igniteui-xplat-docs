@@ -282,7 +282,7 @@ and pass the templates to this column in the index.ts file:
 
 ```typescript
 constructor() {
-    var grid1 = document.getElementById('grid1') as IgcGridComponent;
+    var grid1 = document.getElementById('grid1') as {ComponentName}Component;
     var column1 = document.getElementById('column1') as IgcColumnComponent;
     var column2 = document.getElementById('column2') as IgcColumnComponent;
     var column3 = document.getElementById('column3') as IgcColumnComponent;
@@ -675,13 +675,7 @@ The first thing we need to do is bind to the grid's event:
 constructor() {
     var grid = document.getElementById('gri') as IgcGridComponent;
     this.webGridCellEdit = this.webGridCellEdit.bind(this);
-
-    this._bind = () => {
-        grid.addEventListener("cellEdit", this.webGridCellEdit);
-    }
-
-    this._bind();
-
+    grid.addEventListener("cellEdit", this.webGriCellEdit);
 }
 ```
 <!-- ComponentEnd: Grid -->
@@ -744,7 +738,7 @@ If the value entered in a cell under the **Units On Order** column is larger tha
 <!-- ComponentStart: TreeGrid -->
 
 ```typescript
-public webTreeGridCellEdit(event: CustomEvent): void {
+public webTreeGridCellEdit(event: CustomEvent<IgcGridEditEventArgs>): void {
     const column = event.detail.column;
     		
     if (column.field === 'Age') {
