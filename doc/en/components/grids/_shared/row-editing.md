@@ -70,9 +70,10 @@ Define a `{ComponentName}` with bound data source and `RowEditable` set to true:
     <igc-column field="Discontinued" data-type="boolean"></igc-column>
 </{ComponentSelector}>
 ```
+
 ```ts
 constructor() {
-    var grid  = document.getElementById('grid') as IgcGridComponent;
+    var grid  = document.getElementById('grid') as {ComponentName}Component;
     var unitsInStock = document.getElementById('unitsInStock') as IgcColumnComponent;
     grid.data = this.data;
     unitsInStock.bodyTemplate = this.unitsInStockCellTemplate;
@@ -395,8 +396,9 @@ After styling the banner and buttons, we also define a custom style for [the cel
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
-```ts
-<igc-grid class="grid">
+<!-- ComponentStart: Grid -->
+```html
+<igc-grid class="grid"></igc-grid>
 ```
 
 ```razor
@@ -407,10 +409,30 @@ Then set the related CSS properties for that class:
 
 ```css
 .grid {
-    --igx-banner-banner-background: #e3e3e3;
-    --igx-banner-banner-message-color: #423589;
+    --ig-banner-banner-background: #e3e3e3;
+    --ig-banner-banner-message-color: #423589;
 }
 ```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```html
+<igc-tree-grid class="treeGrid"></igc-tree-grid>
+```
+
+```razor
+<IgbTreeGrid Class="treeGrid"></IgbTreeGrid>
+```
+
+Then set the related CSS properties for that class:
+
+```css
+.treeGrid {
+    --ig-banner-banner-background: #e3e3e3;
+    --ig-banner-banner-message-color: #423589;
+}
+```
+<!-- ComponentEnd: TreeGrid -->
 
 ### Demo
 
