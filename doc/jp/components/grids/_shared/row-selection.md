@@ -534,7 +534,7 @@ public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
 
 ### ヘッダー テンプレート
 
-カスタム行ヘッダー テンプレートを作成するには、`{ComponentName}` 内で `igxHeadSelector` ディレクティブを使用して `<ng-template>` を宣言します。テンプレートから、ヘッダーの状態に関する情報を提供するプロパティを使用して、暗黙的に提供されたコンテキスト変数にアクセスできます。
+カスタム行ヘッダー セレクター テンプレートを作成するには、`{ComponentName}` 内で `HeadSelectorTemplate` プロパティを使用します。テンプレートから、ヘッダーの状態に関する情報を提供するプロパティを使用して、暗黙的に提供されたコンテキスト変数にアクセスできます。
 
 `SelectedCount` プロパティは現在選択されている行数を示し、`totalCount` は `{ComponentName}` に合計の行数を示します。
 
