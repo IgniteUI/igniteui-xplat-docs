@@ -27,7 +27,7 @@ _language: ja
 <{ComponentSelector} #grid [data]="data" [displayDensity]="'cosy'" >
 </{ComponentSelector}>
 ```
-<!-- Angular -->
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} DisplayDensity="DisplayDensity.Cosy" Data=northwindEmployees @ref=grid>
@@ -36,7 +36,7 @@ _language: ja
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid" display-density="Cosy" >
+<{ComponentSelector} id="grid" display-density="cosy" >
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
@@ -428,26 +428,21 @@ public ngOnInit() {
 constructor() {
     var propertyEditor = this.propertyEditor = document.getElementById('PropertyEditor') as IgcPropertyEditorPanelComponent;
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-
-    this._bind = () => {
-        propertyEditor.componentRenderer = this.renderer;
-        propertyEditor.target = this.grid;
-        grid.data = this.data;
-    }
-    this._bind();
-
+    propertyEditor.componentRenderer = this.renderer;
+    propertyEditor.target = this.grid;
+    grid.data = this.data;
 }
 
 private _componentRenderer: ComponentRenderer = null;
-    public get renderer(): ComponentRenderer {
-        if (this._componentRenderer == null) {
-            this._componentRenderer = new ComponentRenderer();
-            var context = this._componentRenderer.context;
-            PropertyEditorPanelDescriptionModule.register(context);
-            WebGridDescriptionModule.register(context);
-        }
-        return this._componentRenderer;
+public get renderer(): ComponentRenderer {
+    if (this._componentRenderer == null) {
+        this._componentRenderer = new ComponentRenderer();
+        var context = this._componentRenderer.context;
+        PropertyEditorPanelDescriptionModule.register(context);
+        WebGridDescriptionModule.register(context);
     }
+    return this._componentRenderer;
+}
 ```
 <!-- ComponentEnd: Grid -->
 
@@ -559,26 +554,21 @@ private _componentRenderer: ComponentRenderer = null;
 constructor() {
     var propertyEditor = this.propertyEditor = document.getElementById('PropertyEditor') as IgcPropertyEditorPanelComponent;
     var grid = this.grid = document.getElementById('grid') as IgcTreeGridComponent;
-
-    this._bind = () => {
-        propertyEditor.componentRenderer = this.renderer;
-        propertyEditor.target = this.grid;
-        grid.data = this.data;
-    }
-    this._bind();
-
+    propertyEditor.componentRenderer = this.renderer;
+    propertyEditor.target = this.grid;
+    grid.data = this.data;
 }
 
 private _componentRenderer: ComponentRenderer = null;
-    public get renderer(): ComponentRenderer {
-        if (this._componentRenderer == null) {
-            this._componentRenderer = new ComponentRenderer();
-            var context = this._componentRenderer.context;
-            PropertyEditorPanelDescriptionModule.register(context);
-            WebGridDescriptionModule.register(context);
-        }
-        return this._componentRenderer;
+public get renderer(): ComponentRenderer {
+    if (this._componentRenderer == null) {
+        this._componentRenderer = new ComponentRenderer();
+        var context = this._componentRenderer.context;
+        PropertyEditorPanelDescriptionModule.register(context);
+        WebGridDescriptionModule.register(context);
     }
+    return this._componentRenderer;
+}
 ```
 <!-- ComponentEnd: TreeGrid -->
 
@@ -681,26 +671,21 @@ private _componentRenderer: ComponentRenderer = null;
 constructor() {
     var propertyEditor = this.propertyEditor = document.getElementById('PropertyEditor') as IgcPropertyEditorPanelComponent;
     var grid = this.grid = document.getElementById('grid') as IgcHierarchicalGridComponent;
-
-    this._bind = () => {
-        propertyEditor.componentRenderer = this.renderer;
-        propertyEditor.target = this.grid;
-        grid.data = this.data;
-    }
-    this._bind();
-
+    propertyEditor.componentRenderer = this.renderer;
+    propertyEditor.target = this.grid;
+    grid.data = this.data;
 }
 
 private _componentRenderer: ComponentRenderer = null;
-    public get renderer(): ComponentRenderer {
-        if (this._componentRenderer == null) {
-            this._componentRenderer = new ComponentRenderer();
-            var context = this._componentRenderer.context;
-            PropertyEditorPanelDescriptionModule.register(context);
-            WebGridDescriptionModule.register(context);
-        }
-        return this._componentRenderer;
+public get renderer(): ComponentRenderer {
+    if (this._componentRenderer == null) {
+        this._componentRenderer = new ComponentRenderer();
+        var context = this._componentRenderer.context;
+        PropertyEditorPanelDescriptionModule.register(context);
+        WebGridDescriptionModule.register(context);
     }
+    return this._componentRenderer;
+}
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -726,11 +711,7 @@ public selectDensity(event) {
         var propertyEditor = this.propertyEditor;
         var displayDensityEditor = this.displayDensityEditor;
         var grid = this.grid;
-
-        this.BindElements = () => {
-            propertyEditor.Target = this.grid;
-        };
-        this.BindElements();
+        propertyEditor.Target = this.grid;
     }
 
     private IgbPropertyEditorPanel propertyEditor;
@@ -757,17 +738,21 @@ public selectDensity(event) {
 
  ```razor
  <{ComponentSelector} Width="100%" Height="100%"
-             @ref=grid
-             AutoGenerate=true
-             Data=northwindEmployees
-             RowHeight="80"
-             DisplayDensity=@density>
+             @ref="grid"
+             AutoGenerate="true"
+             Data="northwindEmployees"
+             RowHeight="rowHeight"
+             DisplayDensity="@density">
 </{ComponentSelector}>
+
+@code {
+    private string rowHeight = "80px";
+}
  ```
 
  <!-- WebComponents -->
  ```html
- <{ComponentSelector} id="grid" display-density="Cosy" row-height="80px" width="100%"
+ <{ComponentSelector} id="grid" display-density="cosy" row-height="80px" width="100%"
  height="550px" allow-filtering="true">
  </{ComponentSelector}>
  ```

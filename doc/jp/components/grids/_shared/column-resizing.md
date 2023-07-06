@@ -601,6 +601,45 @@ $custom-grid-theme: grid-theme(
 
 <!-- end: Angular -->
 
+<!-- WebComponents, Blazor -->
+## スタイル設定
+
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
+サイズ変更ハンドルの色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
+
+```ts
+<igc-grid class="grid">
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+次に、そのクラスに関連する CSS プロパティを設定します:
+
+<!-- WebComponents -->
+
+```css
+.grid {
+    --igx-grid-resize-line-color: #f35b04;
+}
+```
+
+<!-- end: WebComponents -->
+
+```razor
+<style>
+.grid {
+    --igx-grid-resize-line-color: #f35b04;
+}
+</style>
+```
+<!-- end: WebComponents, Blazor -->
+
+### デモ
+
+`sample="/{ComponentSample}/column-resizing-styling", height="550", alt="{Platform} {ComponentTitle} 列のサイズ変更のスタイル設定の例"`
+
 ## API リファレンス
 
 * `Column`

@@ -295,7 +295,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
         <div class="title-inner">
             <span style="float:left">${ctx.cell.column.header}</span>
-            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" click="${toggleColumn(ctx.cell.column)}"></igx-icon>
+            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" @click="${() => toggleColumn(ctx.cell.column)}"></igx-icon>
         </div>
     `;
 }
@@ -326,7 +326,7 @@ igRegisterScript("WebGridPinHeaderTemplate", (ctx) => {
     }
     return html`<div>
     <span style="float:left">${ctx.column.field}</span>
-    <span style="float:right" onpointerdown='toggleColumnPin("${ctx.column.field}")'>📌</span>
+    <span style="float:right" @pointerdown="${() => toggleColumnPin(ctx.column.field)}">📌</span>
 </div>`;
 }, false);
 ```
@@ -406,7 +406,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
         <div class="title-inner">
             <span style="float:left">${ctx.cell.column.header}</span>
-            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" click="${toggleColumn(ctx.cell.column)}"></igx-icon>
+            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" @click="${() => toggleColumn(ctx.cell.column)}"></igx-icon>
         </div>
     `;
 }
@@ -485,7 +485,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
         <div class="title-inner">
             <span style="float:left">${ctx.cell.column.header}</span>
-            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" click="${toggleColumn(ctx.cell.column)}"></igx-icon>
+            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" @click="${() => toggleColumn(ctx.cell.column)}"></igx-icon>
         </div>
     `;
 }
