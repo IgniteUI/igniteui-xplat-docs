@@ -533,7 +533,7 @@ The `rowContext.select()` and `rowContext.deselect()` methods are exposed in the
 
 ### Header Template
 
-To create a custom header selector template, within the `{ComponentName}`, you can use the ` HeadSelectorTemplate` property. From the template you can access the implicitly provided context variable, with properties that give you information about the header's state.
+To create a custom header selector template, within the `{ComponentName}`, you can use the `HeadSelectorTemplate` property. From the template you can access the implicitly provided context variable, with properties that give you information about the header's state.
 
 The `SelectedCount` property shows you how many rows are currently selected while `totalCount` shows you how many rows there are in the `{ComponentName}` in total.
 

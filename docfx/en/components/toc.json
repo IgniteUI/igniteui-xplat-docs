@@ -296,7 +296,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React", "Blazor"],
         "name": "Remote Data Operations",
         "href": "grids/grid/remote-data-operations.md",
         "status": ""
@@ -1125,7 +1125,7 @@
   {
     "name": "Line Chart",
     "href": "charts/types/line-chart.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
     "exclude": ["Blazor", "Angular", "React", "WebComponents"],
@@ -1624,8 +1624,7 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Combo Box",
-    "status": "UPDATED",
+    "name": "Combo Box",    
     "href": "inputs/combo/overview.md",
     "items": [
       {
@@ -1637,8 +1636,7 @@
         "href": "inputs/combo/templates.md"
       },
       {
-        "name": "Single Selection",
-        "status": "",
+        "name": "Single Selection",        
         "href": "inputs/combo/single-selection.md"
       }
     ]
@@ -1692,8 +1690,7 @@
   {
     "exclude": ["Angular", "React"],
     "name": "Select",
-    "href": "inputs/select.md",
-    "status": "NEW"
+    "href": "inputs/select.md"    
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
@@ -1743,8 +1740,7 @@
   {
     "exclude": ["Angular", "React"],
     "name": "Dialog",
-    "href": "notifications/dialog.md",
-    "status": "NEW"
+    "href": "notifications/dialog.md"    
   },
   {
     "exclude": ["Angular"],
