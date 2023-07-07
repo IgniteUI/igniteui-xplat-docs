@@ -48,7 +48,7 @@ To initiate an export process you may use the handler of a button in your compon
 
 ```Razor
 <IgbDataGrid data="localData"/>
-<button click="exportButtonHandler()">Export to Excel</button>
+<button @onclick="exportButtonHandler">Export to Excel</button>
 ```
 
 You may access the exporter service by defining an argument of type `ExcelExporterService` in the component's constructor and the {Platform} framework will provide an instance of the service. To export some data in MS Excel format you need to invoke the exporter service's `Export` method and pass the {ComponentTitle} component as first argument.
