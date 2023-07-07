@@ -111,7 +111,7 @@ A row is pinned below the last pinned row. Changing the order of the pinned rows
 
 ```typescript
 constructor() {
-    var grid1 = document.getElementById('grid1') as {ComponentName};
+    var grid1 = document.getElementById('grid1') as {ComponentName}Component;
     grid1.data = this.data;
     grid1.addEventListener("rowPinning", this.rowPinning);
 }
@@ -165,7 +165,7 @@ public pinningConfig: IPinningConfig = { rows: RowPinningPosition.Bottom };
 ```
 
 ```typescript
-var grid = document.getElementById('dataGrid') as {ComponentName};
+var grid = document.getElementById('dataGrid') as {ComponentName}Component;
 grid.pinning = { rows: RowPinningPosition.Bottom };
 ```
 <!-- end: WebComponents -->
@@ -252,27 +252,23 @@ public togglePinning(row: IgxGridRow, event) {
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid" primary-key]="ID" auto-generate="false">
-    <igc-column id="column1" name="column1">
-    </igc-column>
+<{ComponentSelector} id="grid" primary-key="ID" auto-generate="false">
+    <igc-column id="column1" name="column1"></igc-column>
 </{ComponentSelector}>
 ```
 
 ```typescript
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as {ComponentName};
-    var column = this.column = document.getElementById('column1') as IgcColumnComponent;
+    var grid = document.getElementById('grid') as {ComponentName}Component;
+    var column = document.getElementById('column1') as IgcColumnComponent;
 
-    this._bind = () => {
-        grid.data = this.data;
-        column.bodyTemplate = this.pinCellTemplate;
-    }
-    this._bind();
+    grid.data = this.data;
+    column.bodyTemplate = this.pinCellTemplate;
 }
 
 public pinCellTemplate = (ctx: IgcCellTemplateContext) => {
    const index = ctx.cell.id.rowIndex;
-    return html`<span @pointerdown=${(e: any) => this.togglePinning(index)}>??</span>`;
+    return html`<span @pointerdown=${(e: any) => this.togglePinning(index)}>📌</span>`;
 }
 ```
 
@@ -280,7 +276,7 @@ On click of the custom icon the pin state of the related row can be changed usin
 
 ```typescript
 public togglePinning(index: number) {
-    var grid = document.getElementsByTagName("{ComponentSelector}")[0] as {ComponentName};
+    var grid = document.getElementsByTagName("{ComponentSelector}")[0] as {ComponentName}Component;
     grid.getRowByIndex(index).pinned = !grid.getRowByIndex(index).pinned;
 }
 ```
@@ -377,17 +373,17 @@ In case you would like to change some of the colors, you need to set a class for
 ```
 
 ```razor
-<{ComponentSelector} Class="grid"></>
+<{ComponentSelector} Class="grid"></{ComponentSelector}>
 ```
 
 Then set the related CSS properties for that class:
 
 ```css
 .grid {
-    --igx-grid-pinned-border-width: 5px;
-    --igx-grid-pinned-border-style: double;
-    --igx-grid-pinned-border-color: #FFCD0F;
-    --igx-grid-cell-active-border-color: #FFCD0F;
+    --ig-grid-pinned-border-width: 5px;
+    --ig-grid-pinned-border-style: double;
+    --ig-grid-pinned-border-color: #FFCD0F;
+    --ig-grid-cell-active-border-color: #FFCD0F;
 }
 ```
 
