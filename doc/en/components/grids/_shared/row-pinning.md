@@ -77,7 +77,7 @@ this.grid.getRowByIndex(0).pinned = true;
 ```
 
 ```razor
-this.Grid.GetRowByIndex(0).Pinned = true;
+this.Grid.PinRowAsync("ALFKI", 0);
 ```
 
 You may also use the `{ComponentName}`'s `PinRow` or `UnpinRow` methods of the to pin or unpin records by their ID:
