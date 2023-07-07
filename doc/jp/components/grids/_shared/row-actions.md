@@ -106,12 +106,12 @@ import { IgxActionStripModule } from 'igniteui-angular';
     <{ComponentSelector} Data=northwindEmployees>
         <IgbActionStrip @ref=actionstrip>
             <IgbGridPinningActions></IgbGridPinningActions>
-            <IgbButton Title="Edit" @onclick="StartEdit(actionstrip.Context)">
+            <IgbButton Title="Edit" @onclick="() => StartEdit(actionstrip.Context)">
                 <IgbIcon>edit</IgbIcon>
             </IgbButton>
             @if (!IsDeleted(actionstrip.Context))
             {
-                <IgbButton Title="Delete" @onclick='Delete(actionstrip.Context)'>
+                <IgbButton Title="Delete" @onclick="() => Delete(actionstrip.Context)">
                     <IgbIcon>delete</IgbIcon>
                 </IgbButton>
             }

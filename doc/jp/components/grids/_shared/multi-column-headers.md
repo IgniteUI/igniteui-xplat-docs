@@ -475,7 +475,7 @@ public headerTemplate = (ctx: IgcColumnTemplateContext) => {
 ```ts
 public columnHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <igc-icon draggable="false" click="${this.onClick()}"></igc-icon>
+        <igc-icon draggable="false" @click="${() => this.onClick()}"></igc-icon>
     `;
 }
 ```
