@@ -250,8 +250,8 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
     var html = window.igTemplating.html;
     window.endRowEdit = ctx.implicit;
     return html`<div>
-  	<button onclick="endRowEdit(false)">Cancel</button>
-	<button onclick="endRowEdit(true)">Apply</button>
+  	<button @click="(event) => endRowEdit(false, event)">Cancel</button>
+	<button @click="(event) => endRowEdit(true, event)">Apply</button>
 </div>`;
 }, false);
  ```
@@ -260,8 +260,8 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
 public rowEditActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
     const endRowEdit = ctx.implicit;
     return html`
-        <button @click="${() => endRowEdit(false)}">Cancel</button>
-        <button @click="${() => endRowEdit(true)}">Apply</button>
+        <button @click="${(event) => endRowEdit(false, event)}">Cancel</button>
+        <button @click="${(event) => endRowEdit(true, event)}">Apply</button>
     `;
 }
 ```

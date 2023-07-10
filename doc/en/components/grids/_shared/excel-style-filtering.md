@@ -13,7 +13,7 @@ The {Platform} `{ComponentName}` exposes an Excel-style filtering feature that p
 
 ## {Platform} {ComponentTitle} Excel Style Filtering Example
 
-`sample="/{ComponentSample}/excel-style-filtering-sample-1", height="620", alt="{Platform} {ComponentTitle} excel style filtering sample 1"`
+`sample="/{ComponentSample}/excel-style-filtering-sample-1", height="950", alt="{Platform} {ComponentTitle} excel style filtering sample 1"`
 
 
 ## Usage

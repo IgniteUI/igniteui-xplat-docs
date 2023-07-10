@@ -2,21 +2,21 @@
 title: {Platform} Toolbar Component | {ProductName}
 _description: See how you can easily get started with {Platform} Toolbar Component. Compatible with the Data Chart. Extend your .
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Toolbar components, {Platform} Toolbar controls
-mentionedTypes: ["Toolbar", "DomainChart", "CategoryChart", "XamDataChart"]
+mentionedTypes: ["Toolbar", "ToolAction", "DomainChart", "CategoryChart", "XamDataChart"]
 ---
 
 # {Platform} Toolbar Overview
 
-The {Platform} Toolbar component is a companion conainer for UI operations to interact both standalone or with the {Platform} Data Chart & `CategoryChart` components. This allows you to easily choose from a preset of properites on the eg. `XamDataChart` with predefined SVG icons, but it also gives you the ability to create custom tools for your project. Benefiting from a number of attributes, you can define or change the icon in use or apply different actions to it. The `Toolbar` will display it's own SVG icons.
+The {Platform} Toolbar component is a companion container for UI operations to be used primarily with our charting components. The toolbar will dynamically update with a preset of properties and tool items when linked to our `XamDataChart` or `CategoryChart` components. You'll be able to create custom tools for your project allowing end users to provide changes, offering an endless amount of customization.
 
 ## {Platform} Toolbar Example
 
-`sample="/charts/toolbar/actions-built-in-data-chart", height="600", alt="{Platform} Toolbar Example"`
+`sample="/charts/toolbar/actions-built-in-category-chart", height="600", alt="{Platform} Toolbar Example"`
 
 ## Dependencies
 
 <!-- Angular, WebComponents, React -->
-Install the {ProductName} layouts, inputs,  charts and core packages:
+Install the {ProductName} layouts, inputs, charts and core packages:
 
 ```cmd
 npm install {PackageLayouts}
@@ -25,7 +25,7 @@ npm install {PackageCharts}
 npm install {PackageCore}
 ```
 
-The following modules are required when using both the `Toolbar` with the `XamDataChart` component and it's features.
+The following modules are required when using the `Toolbar` with the `XamDataChart` component and it's features.
 
 ```ts
 import { IgxToolbarModule } from 'igniteui-angular-layouts';
@@ -61,13 +61,10 @@ IgrDataChartCategoryTrendLineModule.register();
 ```
 
 ```ts
-// Module Manager for registering the modules of the chart
 import { ModuleManager } from 'igniteui-webcomponents-core';
-// spreadsheet's modules
 import { IgcToolbarModule } from 'igniteui-webcomponents-layouts';
 import { IgcDataChartToolbarModule, IgcDataChartCoreModule, IgcDataChartCategoryModule, IgcDataChartAnnotationModule, IgcDataChartInteractivityModule, IgcDataChartCategoryTrendLineModule } from 'igniteui-webcomponents-charts';
 
-// register the modules
 ModuleManager.register(
     IgcToolbarModule,
     IgcToolActionLabelModule,
@@ -90,18 +87,17 @@ Add the **IgniteUI.Blazor.Controls** namespace in the **_Imports.razor** file:
 @using IgniteUI.Blazor.Controls
 ```
 
-The following modules are required when using both the `Toolbar` with the `XamDataChart` component and it's features.
+The following modules are required when using the `Toolbar` with the `XamDataChart` component and it's features.
 
 ```razor
 // in Program.cs file
 
 builder.Services.AddIgniteUIBlazor(
     typeof(IgbToolbarModule),
-    // these modules are required when using `Toolbar` with the `DataChart` component:
     typeof(IgbDataChartToolbarModule),
     typeof(IgbDataChartCoreModule),
     typeof(IgbDataChartCategoryModule),
-    typeof(IgbDataChartAnnotationModule), 
+    typeof(IgbDataChartAnnotationModule),
     typeof(IgbDataChartInteractivityModule),
     typeof(IgbDataChartCategoryTrendLineModule)
 );
@@ -117,9 +113,29 @@ You will also need to link an additional CSS file to apply the styling to the `T
 
 ## Usage
 
-### {Platform} Data Chart integration
+### Tool Actions
 
-The {Platform} Toolbar contains a `Target` property. This is used to link another component such as the DataChart. 
+The following is a list of the different `ToolAction` items that you can add to the Toolbar.
+
+- `ToolActionButton`
+- `ToolActionCheckbox`
+- `ToolActionIconButton`
+- `ToolActionIconMenu`
+- `ToolActionLabel`
+- `ToolActionNumberInput`
+- `ToolActionRadio`
+
+Each of these tools exposes an `OnCommand` event that is triggered by mouse click.
+
+New and existing tools can be repositioned and marked hidden using the `OverlayId`, `BeforeId` and `AfterId` properties on the `ToolAction` object. ToolActions also expose a `Visibility` property.
+
+The following example demonstrates hiding both the built-in **ZoomReset** and **AnalyzeMenu** menu tool actions. A new instance of the **ZoomReset** tool action is added and placed within the **ZoomMenu** by using the the `AfterId` property and assigning that to **ZoomOut**. This will ensure the new Reset tool is displayed at the bottom of the **ZoomMenu**.
+
+`sample="/charts/toolbar/layout-actions-for-data-chart", height="600", alt="{Platform} Toolbar Example"`
+
+### {Platform} Data Chart Integration
+
+The {Platform} Toolbar contains a `Target` property. This is used to link a component, such as the `XamDataChart` as shown in the code below:
 
 ```razor
   <IgbToolbar
@@ -171,9 +187,9 @@ The {Platform} Toolbar contains a `Target` property. This is used to link anothe
   constructor() {
     var toolbar = this.toolbar = document.getElementById('Toolbar') as IgcToolbarComponent;
     var chart = this.chart = document.getElementById('chart') as IgcDataChartComponent;
-    
+
     this._bind = () => {
-        toolbar.target = this.chart;           
+        toolbar.target = this.chart;
     }
     this._bind();
   }
@@ -208,81 +224,80 @@ The {Platform} Toolbar contains a `Target` property. This is used to link anothe
   }
 ```
 
-Several pre-existing `ToolAction` items and menus become available when the chart is linked with the Toolbar. The following names are a list of Tool/Tool `OverlayId` names necessary for further customization such as adding, editing, toggling visibility of tools. These names can be assinged to the `OverlayId`, `BeforeId` and `AfterId`.
-
-Here is a list of the provided {Platform} `XamDataChart` Tool Actions and their associated `OverlayId`:
+Several pre-existing `ToolAction` items and menus become available when the `XamDataChart` is linked with the Toolbar. Here is a list of the built-in {Platform} `XamDataChart` Tool Actions and their associated `OverlayId`:
 
 Zooming Actions
 
-- `ZoomReset`: `ToolActionLabel` performs `ResetZoom` on the chart for resetting the zoom level to it's default position.
-- `ZoomMenu`: `ToolActionIconMenu` exposes two `ToolActionLabel` items to perform  `ZoomIn` and `ZoomOut` on the chart for increasing/decreasing the chart's zoom level. 
+- `ZoomReset`: A `ToolActionLabel` that invokes the `ResetZoom` method on the chart to reset the zoom level to it's default position.
+- `ZoomMenu`: A `ToolActionIconMenu` that exposes two `ToolActionLabel` items to invoke the `ZoomIn` and `ZoomOut` methods on the chart for increasing/decreasing the chart's zoom level.
 
-Trend Actions  
+Trend Actions
 
-- `AnalyzeMenu`: `ToolActionIconMenu` contains several options for configuring the chart.
- - `AnalyzeHeader`: sub section header `OverlayId`
-  - `LinesMenu`: sub menu `OverlayId`
-    - `LinesHeader`: sub menu section header `OverlayId`
-      - `MaxValue`: `ToolActionCheckbox` - displays a dashed horizontal line along the yAxis at the maximum value.
-      - `MinValue`: `ToolActionCheckbox`- displays a dashed horizontal line along the yAxis at the minimum value.
-      - `Average`: `ToolActionCheckbox` - displays a dashed horizontal line along the yAxis at the average value.
-  - `TrendsMenu`: `ToolActionLabel`
-    - `TrendsHeader`: sub section header `OverlayId`
-      - `Exponential`: `ToolActionRadio` - sets the `TrendLineType` on the chart to `ExponentialFit`.
-      - `Linear`: `ToolActionRadio` - sets the `TrendLineType` on the chart to `LinearFit`.
-      - `Logarithmic`: `ToolActionRadio` - sets the `TrendLineType` on the chart to `LogarithmicFit`.
- - `HelpersHeader`: sub section header `OverlayId`
-  - `SeriesAvg`: `ToolActionCheckbox` - adds a series to the `ValueLines` using the `ValueLayerValueMode` of type `Average`.
-  - `ValueLabelsMenu`:  `ToolActionLabel` 
-    - `ValueLabelsHeader`: sub menu section header `OverlayId`
-      - `ShowValueLabels`: `ToolActionCheckbox` - displays data point values via the chart's `CalloutsVisible` property.
-      - `ShowLastValueLabel`: `ToolActionCheckbox` - displays final value callouts via the chart's `FinalValueAnnotationsVisible` property.
- - `ShowCrosshairs`: `ToolActionCheckbox` - displays the crosshair annotation via the chart's `CrosshairsDisplayMode` property triggered on mouse hover. 
- - `ShowGridlines`: `ToolActionCheckbox` used to display extra gridlines via the `XAxisMajorStroke` property.
-
-### Tool Actions
-
-The following is a list of `ToolAction` items you can add to the Toolbar.
-
-- `ToolActionButton`
-- `ToolActionCheckbox`
-- `ToolActionIconButton`
-- `ToolActionIconMenu`
-- `ToolActionLabel`
-- `ToolActionNumberInput`
-- `ToolActionRadio`
-
-Each of these tools exposes an `OnCommand` event that can be triggered upon interacting with them as a mouse click.
-
-New and existing tools can be repositioned and marked hidden using the `OverlayId`, `BeforeId` and `AfterId` properties on the `ToolAction` object. ToolActions also expose a `Visibility` property.  
-
-The following example demonstrates hiding both the `ZoomReset` and `Analyze Menu` menu tool actions. A new instance of the `ZoomReset` tool action is added and placed within the `ZoomMenu` by using the the `AfterId` property and assinging that to `ZoomOut`. This will ensure the new Reset tool is displayed at the bottom of the `ZoomMenu`.
-
-`sample="/charts/toolbar/layout-actions-for-data-chart", height="600", alt="{Platform} Toolbar Example"`
+- `AnalyzeMenu`: A `ToolActionIconMenu` that contains several options for configuring different options of the chart.
+ - `AnalyzeHeader`: A sub section header.
+  - `LinesMenu`: A sub menu containing various tools for showing different dashed horizontal lines on the chart.
+    - `LinesHeader`: A sub menu section header for the following three tools:
+      - `MaxValue`: A `ToolActionCheckbox` that displays a dashed horizontal line along the yAxis at the maximum value of the series.
+      - `MinValue`: A `ToolActionCheckbox` that displays a dashed horizontal line along the yAxis at the minimum value of the series.
+      - `Average`:  A `ToolActionCheckbox` that displays a dashed horizontal line along the yAxis at the average value of the series.
+  - `TrendsMenu`: A sub menu containing tools for applying various trendlines to the `XamDataChart` plot area.
+    - `TrendsHeader`: A sub menu section header for the following three tools:
+      - `Exponential`: A `ToolActionRadio` that sets the `TrendLineType` on each series in the chart to `ExponentialFit`.
+      - `Linear`: A `ToolActionRadio` that sets the `TrendLineType` on each series in the chart to `LinearFit`.
+      - `Logarithmic`: A `ToolActionRadio` that sets the `TrendLineType` on each series in the the chart to `LogarithmicFit`.
+ - `HelpersHeader`: A sub section header.
+  - `SeriesAvg`: A `ToolActionCheckbox` that adds or removes a `ValueLayer` to the chart's series collection using the `ValueLayerValueMode` of type `Average`.
+  - `ValueLabelsMenu`: A sub menu containing varous tools for showing different annotations on the `XamDataChart`'s plot area.
+    - `ValueLabelsHeader`: A sub menu section header for the following tools:
+      - `ShowValueLabels`: A `ToolActionCheckbox` that toggles data point values by using a `CalloutLayer`.
+      - `ShowLastValueLabel`: A `ToolActionCheckbox` that toggles final value axis annotations by using a `FinalValueLayer`.
+ - `ShowCrosshairs`: A `ToolActionCheckbox` that toggles mouse-over crosshair annotations via the chart's `CrosshairsDisplayMode` property.
+ - `ShowGridlines`: A `ToolActionCheckbox` that toggles extra gridlines by applying a `MajorStroke` to the X-Axis.
 
 ### Vertical Orientation
 
-By default the {Platform} Toolbar is shown in the horizontal `Orientation` position but also has the ability to shown vertically. 
+By default the {Platform} Toolbar is shown horizontally, but it also has the ability to shown vertically by setting the `Orientation` property.
 
 ```html
-<igc-toolbar orientation="vertical"></igc-icon>
+<igx-toolbar orientation="Vertical" />
+```
+
+```html
+<igc-toolbar orientation="Vertical" />
 ```
 
 ```razor
-<IgbToolbar Orientation="ToolbarOrientation.Horizontal">
+<IgbToolbar Orientation="ToolbarOrientation.Vertical" />
 ```
 
 ```tsx
-<IgbToolbar orientation="vertical" />
+<IgrToolbar orientation="Vertical" />
 ```
 <!-- The following example demonstrates the vertical orientation of the {Platform} Toolbar.
 `sample="/charts/toolbar/layout-in-vertical-orientation", height="600", alt="{Platform} Verical Orientation"` -->
 
-## Styling/Theming
+<!-- ## Styling/Theming
 
-The icon component can be styled by using it's `BaseTheme` property directly to the `Toolbar`. The following example demonstrates the various theme options that can be applied.
+The icon component can be styled by using it's `BaseTheme` property directly to the `Toolbar`.
 
-`sample="/charts/toolbar/theming", height="600", alt="{Platform} Toolbar Styling/Theming"`
+```html
+<igx-toolbar baseTheme="SlingshotDark" />
+```
+
+```html
+<igc-toolbar base-theme="SlingshotDark" />
+```
+
+```razor
+<IgbToolbar BaseTheme="BaseControlTheme.SlingshotDark" />
+```
+
+```tsx
+<IgrToolbar baseTheme="SlingshotDark" />
+```
+
+<!-- The following example demonstrates the various theme options that can be applied.
+`sample="/charts/toolbar/theming", height="600", alt="{Platform} Toolbar Styling/Theming"` -->
 
 ## API References
 
