@@ -116,7 +116,7 @@ constructor() {
         grid.data = this.data;
         paginator.page = grid.page;
         paginator.totalRecords = grid.totalRecords;
-        paginator.selectOption = selectOptions;
+        paginator.selectOptions = selectOptions;
         paginator.displayDensity = grid.displayDensity;
     }
     this._bind();
@@ -377,7 +377,7 @@ $dark-button: button-theme(
 
 ## API リファレンス
 * `{ComponentName}`
-* `GridPaginator`
+* `Paginator`
 
 ## その他のリソース
 

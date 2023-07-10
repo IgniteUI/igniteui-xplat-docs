@@ -17,7 +17,7 @@ The Excel Exporter service can export data to excel from the `{ComponentName}`. 
 `sample="/{ComponentSample}/excel-exporting", height="750", alt="{Platform} {ComponentTitle} Excel Exporter Example"`
 
 
-
+<!-- Angular -->
 ## Exporting {ComponentTitle} Data
 
 To start using the IgniteUI Excel Exporter first import the `ExcelExporterService` in the app.module.ts file and add the service to the `providers` array:
@@ -48,7 +48,7 @@ To initiate an export process you may use the handler of a button in your compon
 
 ```Razor
 <IgbDataGrid data="localData"/>
-<button click="exportButtonHandler()">Export to Excel</button>
+<button @onclick="exportButtonHandler">Export to Excel</button>
 ```
 
 You may access the exporter service by defining an argument of type `ExcelExporterService` in the component's constructor and the {Platform} framework will provide an instance of the service. To export some data in MS Excel format you need to invoke the exporter service's `Export` method and pass the {ComponentTitle} component as first argument.
@@ -71,6 +71,9 @@ public exportButtonHandler() {
 ```
 
 If all went well, you should see the {ComponentTitle} component and a button under it. When pressing the button, it will trigger the export process and the browser will download a file named "ExportedDataFile.xlsx" which contains the data from the `{ComponentName}` component in MS Excel format.
+<!-- end: Angular -->
+
+<!-- Angular -->
 
 ## Export All Data
 
@@ -82,13 +85,16 @@ public exportButtonHandler() {
 }
 ```
 
+<!-- end: Angular -->
+
 <!-- ComponentStart: Grid -->
 ## Export Grouped Data
 
-To export grouped data you just need to group the `{ComponentName}` by one or more columns. The browser will download a file named "ExportedDataFile.xlsx" which contains the data from the `{ComponentName}` component in MS Excel format grouped by the selected column. Example:
+To export grouped data you just need to group the `{ComponentName}` by one or more columns. The browser will download a file named "ExportedDataFile.xlsx" which contains the data from the `{ComponentName}` component in MS Excel format grouped by the selected column. You can find example in the beggining of the topic.
 
-
+<!-- Angular -->
 `sample="/{ComponentSample}/excel-exporting", height="750", alt="{Platform} {ComponentTitle} Grouped Data Excel Exporter Example"`
+<!-- end: Angular -->
 
 <!-- ComponentEnd: Grid -->
 
@@ -97,14 +103,16 @@ To export grouped data you just need to group the `{ComponentName}` by one or mo
 It is now possible to export `{ComponentName}` with defined [multi-column headers](multi-column-headers.md). All headers will be reflected in the exported excel file as they are displayed in the `{ComponentName}`. If you want to exclude the defined multi-column headers from the exported data you can set the `ExporterOption` `IgnoreMultiColumnHeaders` to `true`.
 
 > [!Note]
-> The exported `{ComponentName}` will not be formatted as a table, since Excel tables do not support multiple row headers.
+> The exported `{ComponentName}` will not be formatted as a table, since Excel tables do not support multiple column headers.
 
 `sample="/{ComponentSample}/multi-column-headers-export", height="750", alt="{Platform} {ComponentTitle} Multi Column Headers Export"`
 
 ## Export Grid with Frozen Column Headers
 
+
 By default Excel Exporter service exports the grid with scrollable (unfrozen) column headers. There are scenarios in which you may want to freeze all headers on top of the exported excel file so they always stay in view as the user scrolls through the records. To achieve this you could set the `ExporterOption` `FreezeHeaders` to `true`.
 
+<!-- Angular -->
 ```ts
 public exportButtonHandler() {
     const exporterOptions = new ExcelExporterOptions('ExportedDataFile');
@@ -112,7 +120,43 @@ public exportButtonHandler() {
     this.excelExportService.export(this.grid, exporterOptions);
 }
 ```
+<!-- end: Angular -->
 
+<!-- WebComponents -->
+```ts
+constructor() {
+  var gridToolbarExporter1 = document.getElementById('gridToolbarExporter1') as IgcGridToolbarExporterComponent;
+  gridToolbarExporter1.addEventListener("exportStarted", this.webGridExportEventFreezeHeaders);
+}
+
+public webGridExportEventFreezeHeaders(args: any): void {
+  args.detail.options.freezeHeaders = true;
+}
+```
+<!-- end: WebComponents -->
+
+```razor
+ <IgbGrid>
+    <IgbGridToolbar>
+      <IgbGridToolbarActions>
+        <IgbGridToolbarExporter
+          ExportExcel="true" ExportStarted="WebGridExportEventMultiColumnHeaders">
+        </IgbGridToolbarExporter>
+      </IgbGridToolbarActions>
+    </IgbGridToolbar>
+ </IgbGrid>
+
+@code {
+
+  public void WebGridExportEventMultiColumnHeaders(IgbExporterEventEventArgs args)
+  {
+      bool exportMultiHeaders = (bool)exportHeaders.GetCurrentPrimitiveValue();
+      args.Detail.Options.FreezeHeaders = true;
+  }
+}
+```
+
+<!-- Angular -->
 ## Customizing the Exported Content
 
 In the above examples the Excel Exporter service was exporting all available data. There are situations in which you may want to skip exporting a row or even an entire column. To achieve this you may hook to the `columnExporting` and/or `rowExporting` events which are fired respectively for each column and/or each row and cancel the respective event by setting the event argument object's `cancel` property to `true`.
@@ -131,12 +175,15 @@ this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('
 ```
 
 When you are exporting data from the `{ComponentName}` component, the export process takes in account features like row filtering and column hiding and exports only the data visible in the `{ComponentName}`. You can configure the exporter service to include filtered rows or hidden columns by setting properties on the `ExcelExporterOptions` object.
+<!-- end: Angular -->
+
 ## Known Limitations
 
 <!-- ComponentStart: Grid -->
 |Limitation|Description|
 |--- |--- |
 |Max worksheet size|The maximum worksheet size supported by Excel is 1,048,576 rows by 16,384 columns.|
+|Cell Styling|The excel exporter service does not support exporting a custom style applied to a cell component. In such scenarios we recommend using the [Excel Library](../../excel-library.md).|
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -153,17 +200,6 @@ When you are exporting data from the `{ComponentName}` component, the export pro
 |Max worksheet size|The maximum worksheet size supported by Excel is 1,048,576 rows by 16,384 columns.|
 |Exporting pinned columns|In the exported Excel file, the pinned columns will not be frozen but will be displayed in the same order as they appear in the grid.|
 <!-- ComponentEnd: HierarchicalGrid -->
-
-> [!Note]
-> Exporting large Excel files may be slow because of an [issue](https://github.com/Stuk/jszip/issues/617) in the [JSZip](https://www.npmjs.com/package/jszip) library. Until the issue is resolved, in order to speed up the Excel Exporter you could import a [setImmediate](https://developer.mozilla.org/en-US/docs/Web/API/Window/setImmediate) [polyfill](https://www.npmjs.com/package/setimmediate) in your application.
-
-```cmd
-npm install --save setimmediate
-```
-
-```ts
-import 'setimmediate';
-```
 
 ## API References
 

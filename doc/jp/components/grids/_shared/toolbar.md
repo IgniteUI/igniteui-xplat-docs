@@ -19,12 +19,12 @@ _language: ja
 
 または他のカスタム コンテンツもホストできます。ツールバーと事前定義された UI コンポーネントは、{Platform} イベントをサポートし、開発者向けに API を公開します。
 
-## {Platform} ツール バー グリッドの例
+## {Platform} ツールバー グリッドの例
 
 
-`sample="/{ComponentSample}/toolbar-sample-1", height="420", alt="{Platform} {ComponentTitle} ツール バーの例"`
+`sample="/{ComponentSample}/toolbar-sample-1", height="420", alt="{Platform} {ComponentTitle} ツールバーの例"`
 
-事前定義された `Actions` および `Title` UI コンポーネントが  `GridToolbar` 内に追加されます。これはすべて、対応するグリッド機能とのデフォルトのインタラクションを提供するツールバーを持つために必要です。
+事前定義された `Actions` および `Title` UI コンポーネントが `GridToolbar` 内に追加されます。これはすべて、対応するグリッド機能とのデフォルトのインタラクションを提供するツールバーを持つために必要です。
 
 <!-- ComponentStart: Grid -->
 ```html
@@ -172,7 +172,6 @@ _language: ja
 
 IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動作には特定の制限があるため、子グリッドのスコープでツールバーを使用する場合は注意が必要です。
 `igx-row-island` タグ内でツールバー コンポーネントを定義するときは、必ず IgxGridToolbar を使用し、提供されたグリッド インスタンスを入力プロパティとしてツールバー自体に渡すようにしてください。
-
 これにより、テンプレートのスコープ内に常に正しいグリッド インスタンスが含まれるようになります。
 
 ```html
@@ -227,7 +226,8 @@ IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動�
 
 ### 操作
 
-`GridToolbarTitle` は、ユーザーが親グリッドに関連して操作 / インタラクションを配置できる特定のコンテナを公開します。
+
+`GridToolbarActions` は、ユーザーが親グリッドに関連して操作 / インタラクションを配置できる特定のコンテナを公開します。
 ツールバーのタイトル部分と同様に、ユーザーは、デフォルトのツールバー インタラクション コンポーネントを含め、そのテンプレート部分内にどんなものでも提供できます。
 
 ```html
@@ -240,6 +240,14 @@ IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動�
 </igx-grid-toolbar>
 ```
 
+```razor
+<IgbGridToolbar>
+    <IgbGridToolbarActions>
+        <!--...-->
+    </IgbGridToolbarActions>
+</IgbGridToolbar>
+```
+
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
@@ -247,6 +255,7 @@ IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動�
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
+<!-- Angular -->
 
 各アクションは、`OverlaySettings` 入力を使用して、アクション ダイアログのオーバーレイ設定を変更する方法を公開するようになりました。例:
 
@@ -268,12 +277,8 @@ IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動�
 constructor() {
     var pinTool = this.pinTool = document.getElementById('pinTool') as IgcGridToolbarPinningComponent;
     var hideTool = this.hideTool = document.getElementById('hideTool') as IgcGridToolbarHidingComponent;
-
-    this._bind = () => {
-        pinTool.overlaySettings = this.overlaySettingsScaleCenter;
-        hideTool.overlaySettings = this.overlaySettingsAuto;
-    }
-    this._bind();
+    pinTool.overlaySettings = this.overlaySettingsScaleCenter;
+    hideTool.overlaySettings = this.overlaySettingsAuto;
 }
 ```
 
@@ -304,6 +309,8 @@ constructor() {
 
 デフォルトの overlaySettings は、*ConnectedPositionStrategy* と *Absolute* スクロール方法を使用しています。*modal* は false に設定されており、*close on escape* ([Esc] キーを押して閉じる) インタラクションと *close on outside click* (外側のクリックで閉じる) インタラクションが有効になっています。
 
+<!-- end: Angular -->
+
 ### 列のピン固定
 
 `GridToolbarPinning` は、グリッド内の列のピン固定を操作するためのデフォルトの UI を提供します。
@@ -321,6 +328,14 @@ constructor() {
         </igx-grid-toolbar-pinning>
     </igx-grid-toolbar-actions>
 </igx-grid-toolbar>
+```
+
+```razor
+<IgbGridToolbar>
+    <IgbGridToolbarActions>
+        <IgbGridToolbarPinning Title="Grid pinned columns" Prompt="Filter column collection" ColumnListHeight="400px"></IgbGridToolbarPinning>
+    </IgbGridToolbarActions>
+</IgbGridToolbar>
 ```
 
 ```html
@@ -353,6 +368,14 @@ constructor() {
 </igx-grid-toolbar>
 ```
 
+```razor
+<IgbGridToolbar>
+    <IgbGridToolbarActions>
+        <IgbGridToolbarHiding Title="Grid column hiding" Prompt="Filter column collection" ColumnListHeight="400px"></IgbGridToolbarHiding>
+    </IgbGridToolbarActions>
+</IgbGridToolbar>
+```
+
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
@@ -377,6 +400,14 @@ constructor() {
 </igx-grid-toolbar>
 ```
 
+```razor
+<IgbGridToolbar>
+    <IgbGridToolbarActions>
+        <IgbGridToolbarAdvancedFiltering></IgbGridToolbarAdvancedFiltering>
+    </IgbGridToolbarActions>
+</IgbGridToolbar>
+```
+
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
@@ -396,6 +427,8 @@ constructor() {
 
 残りのツールバー操作と同様に、エクスポートは、すぐに使用できる `GridToolbarExporter` を介して提供されます。
 
+<!-- Angular -->
+
 エクスポート コンポーネントは、ターゲット データ形式 (`ExcelExporterService` および `CSVExporterService`) のそれぞれのサービスを使用しています。つまり、それぞれのサービスが依存関係挿入チェーンを通じて提供されない場合、コンポーネントは何もエクスポートできません。
 
 {Platform} の DI の復習が必要な場合は、[公式ガイド](https://{Platform}.io/guide/dependency-injection)をご覧ください。これは、アプリケーションのすべてのエクスポート サービスを有効にする方法を示すサンプル スニペットです。
@@ -414,6 +447,8 @@ export class AppModule { ... }
 
 > [!Note]
 > v12.2.1 以降では、エクスポーター サービスは root で提供されます。つまり、AppModule プロバイダーでそれらを宣言する必要はありません。
+
+<!-- end: Angular -->
 
 ツールバー エクスポーター コンポーネントは、UI とエクスポート エクスペリエンスの両方をカスタマイズするためのいくつかの入力プロパティを公開します。
 
@@ -438,25 +473,22 @@ export class AppModule { ... }
 </igx-grid-toolbar>
 ```
 
+```razor
+<IgbGridToolbar>
+    <IgbGridToolbarActions>
+        <IgbGridToolbarExporter ExportCSV="true" ExportExcel="true" Filename="exported_data"></IgbGridToolbarExporter>
+    </IgbGridToolbarActions>
+</IgbGridToolbar>
+```
+
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
-        <igc-grid-toolbar-exporter
-            <!-- If active, enables the csv export entry in the dropdown UI -->
-            export-csv="true"
-            <!-- If active, enables the excel export entry in the dropdown UI -->
-            export-excel="true"
-            <!-- The name of the generated export file without the file extension -->
-            filename="exported_data">
-            <!-- Custom text for the exporter button -->
-            excel-text="Custom text for the excel export entry"
-            csv-text="Custom text for the CSV export entry"
+        <igc-grid-toolbar-exporter export-csv="true" export-excel="true" filename="exported_data">
         </igc-grid-toolbar-exporter>
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
-
-@@if (igxName !== 'IgxHierarchicalGrid') {
 
 エクスポートされたファイル名を変更することに加えて、ユーザーは `ToolbarExporting` イベントを待機し、イベント プロパティのオプション エントリをカスタマイズすることで、エクスポーター オプションをさらに構成できます。
 
@@ -480,15 +512,13 @@ export class AppModule { ... }
 ```ts
 constructor() {
     var toolbarExporter = this.toolbarExporter = document.getElementById('toolbarExporter') as IgcGridToolbarExporterComponent;
-
-    this._bind = () => {
-        toolbarExporter.toolbarExporting = this.configureExport;
-    }
-    this._bind();
+    toolbarExporter.addEventListener("toolbarExporting", this.configureExport);
 }
 ```
 <!-- end: WebComponents -->
 
+
+<!-- Angular -->
 ```typescript
 configureExport(args: IGridToolbarExportEventArgs) {
     const options: IgxExporterOptionsBase = args.options;
@@ -515,35 +545,35 @@ configureExport(args: IGridToolbarExportEventArgs) {
     });
 }
 ```
+<!-- end: Angular -->
 
 ```typescript
-configureExport(args: IGridToolbarExportEventArgs) {
+public configureExport(evt: CustomEvent<IgcGridToolbarExportEventArgs>) {
+    const args = evt.detail;
     const options: IgcExporterOptionsBase = args.options;
 
     options.fileName = `Report_${new Date().toDateString()}`;
-
-    if (options instanceof IgcExcelExporterOptions) {
-        options.columnWidth = 10;
-    } else {
-        options.fileType = CsvFileTypes.TSV;
-        options.valueDelimiter = '\t';
-    }
-
-    args.exporter.columnExporting.subscribe((columnArgs: IColumnExportingEventArgs) => {
-        if (igcName === 'IgcGrid') {
-        // Don't export image fields
-        columnArgs.cancel = columnArgs.header === 'Athlete' ||
-                            columnArgs.header === 'Country';
-        }
-        if (igcName === 'IgcTreeGrid') {
-        // Don't export image field
-        columnArgs.cancel = columnArgs.header === 'Name';
-        }
+    (args.exporter as any).columnExporting.subscribe((columnArgs: any) => {
+            columnArgs.cancel = columnArgs.header === 'Athlete' || columnArgs.header === 'Country';
     });
 }
 ```
-}
 
+```razor
+<IgbGridToolbarExporter ExportStartedScript="WebGridToolbarExporting"></IgbGridToolbarExporter>
+```
+
+```razor
+// In Javascript
+igRegisterScript("WebGridToolbarExporting", (evt) => {
+        const args = evt.detail;
+        const options = args.options;
+        options.fileName = `Report_${new Date().toDateString()}`;
+        args.exporter.columnExporting.subscribe((columnArgs) => {
+                columnArgs.cancel = columnArgs.header === 'Athlete' || columnArgs.header === 'Country';
+        });
+}, false);
+```
 以下のサンプルは、エクスポート ファイルをカスタマイズする方法を示します。
 
 
@@ -551,7 +581,7 @@ configureExport(args: IGridToolbarExportEventArgs) {
 
 
 
-<!-- Angular -->
+<!-- Angular, WebComponents -->
 
 ## エクスポート インジケーター
 
@@ -563,10 +593,9 @@ configureExport(args: IGridToolbarExportEventArgs) {
 
 <!-- NOTE this sample is differed -->
 
-`sample="/{ComponentSample}/data-exporting-indicator", height="370", alt="{Platform} {ComponentTitle} data exporting indicator"`
+`sample="/{ComponentSample}/data-exporting-indicator", height="370", alt="{Platform} {ComponentTitle} データ エクスポート インジケーター"`
 
 
-<!-- end: Angular -->
 
 ## カスタム コンテンツ
 
@@ -603,6 +632,10 @@ configureExport(args: IGridToolbarExportEventArgs) {
 <{ComponentSelector} id="grid">
     <igc-grid-toolbar>
         <igc-grid-toolbar-title>title</igx-grid-toolbar-title>
+        <!--
+            Everything between the toolbar tags except the default toolbar components/directives
+            will be projected as custom content.
+         -->
         <igc-grid-toolbar-actions>
         </igc-grid-toolbar-actions>
     </igc-grid-toolbar>
@@ -614,6 +647,38 @@ configureExport(args: IGridToolbarExportEventArgs) {
 
 `sample="/{ComponentSample}/toolbar-sample-4", height="420", alt="{Platform} {ComponentTitle} ツールバー サンプル 4"`
 
+<!-- end: Angular, WebComponents -->
+
+<!-- WebComponents, Blazor -->
+
+## スタイル設定
+
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
+一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
+
+```ts
+<igc-grid class="grid">
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+次に、そのクラスに関連する CSS プロパティを設定します。
+
+```css
+.grid {
+    --igx-grid-toolbar-background-color: #2a2b2f;
+    --igx-grid-toolbar-title-text-color: #ffcd0f;
+    --igx-grid-toolbar-dropdown-background: #2a2b2f;
+}
+```
+
+### デモ
+
+`sample="/{ComponentSample}/toolbar-style", height="540", alt="{Platform} {ComponentTitle} ツールバーのスタイル設定の例"`
+
+<!-- end: WebComponents, Blazor -->
 
 <!-- Angular -->
 
@@ -726,7 +791,7 @@ $dark-input-group-theme: input-group-theme(
 
 <!-- NOTE this sample is differed -->
 
-`sample="/{ComponentSample}/toolbar-style", height="510", alt="{Platform} {ComponentTitle} toolbar style"`
+`sample="/{ComponentSample}/toolbar-style", height="510", alt="{Platform} {ComponentTitle} ツールバー スタイル"`
 
 
 
@@ -738,12 +803,12 @@ $dark-input-group-theme: input-group-theme(
 
 以下は、Grid Toolbar サービスのその他の API です。
 
-* `GridToolbarAdvancedFilteringComponent`
+* `GridToolbarAdvancedFiltering`
 * `GridToolbar`
 * `GridToolbarExporter`
 * `GridToolbarHiding`
 * `GridToolbarPinning`
-* `GridToolbarTitleDirective`
+* `GridToolbarTitle`
 
 * `{ComponentName}` イベント:
 * `ToolbarExporting`
@@ -757,8 +822,6 @@ $dark-input-group-theme: input-group-theme(
 <!-- end: Angular -->
 
 ## その他のリソース
-
-<div class="divider--half"></div>
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

@@ -357,11 +357,7 @@ The `ng-template` is provided with the column group object as a context.
 ```ts
 constructor() {
     var general = this.general = document.getElementById('General') as IgcColumnComponent;
-
-    this._bind = () => {
-        general.headerTemplate = this.generalHeaderTemplate;
-    }
-    this._bind();
+    general.headerTemplate = this.generalHeaderTemplate;
 }
 
 public generalHeaderTemplate = (ctx: IgcCellTemplateContext) => {
@@ -395,12 +391,8 @@ If you want to re-use a single template for several column groups, you could set
 constructor() {
     var general = this.general = document.getElementById('General') as IgcColumnComponent;
     var addresss = this.address = document.getElementById('Address') as IgcColumnComponent;
-
-    this._bind = () => {
-        general.headerTemplate = this.columnGroupHeaderTemplate;
-        addresss.headerTemplate = this.columnGroupHeaderTemplate;
-    }
-    this._bind();
+    general.headerTemplate = this.columnGroupHeaderTemplate;
+    addresss.headerTemplate = this.columnGroupHeaderTemplate;
 }
 
 public columnGroupHeaderTemplate = (ctx: IgcCellTemplateContext) => {
@@ -444,12 +436,8 @@ Each of the column groups of the grid can be templated separately. The following
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
     var columnGroup = this.columnGroup = document.getElementById('addressInfoGroup') as IgcColumnGroupComponent;
-
-    this._bind = () => {
-        grid.data = this.customersData
-        columnGroup.headerTemplate = this.headerTemplate;
-    }
-    this._bind();
+    grid.data = this.customersData
+    columnGroup.headerTemplate = this.headerTemplate;
 }
 
 public headerTemplate = (ctx: IgcColumnTemplateContext) => {
@@ -459,8 +447,6 @@ public headerTemplate = (ctx: IgcColumnTemplateContext) => {
             </div>`;
 };
 ```
-
-<!-- Angular -->
 
 > [!Note]
 > If a header is re-templated and the corresponding column group is movable, you have to set the **draggable** attribute to **false** on the templated elements, so that you can handle any of the events that are applied!
@@ -488,7 +474,7 @@ public headerTemplate = (ctx: IgcColumnTemplateContext) => {
 ```ts
 public columnHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <igc-icon draggable="false" click="${this.onClick()}"></igc-icon>
+        <igc-icon draggable="false" @click="${() => this.onClick()}"></igc-icon>
     `;
 }
 ```
@@ -497,6 +483,7 @@ The following sample demonstrates how to implement collapsible column groups usi
 
 `sample="/{ComponentSample}/multi-column-header-template", height="550", alt="{Platform} {ComponentTitle} Multi Column Header Template Sample"`
 
+<!-- Angular -->
 ## Styling
 
 To get started with styling the sorting behavior, we need to import the `index` file, where all the theme functions and component mixins live:
@@ -616,6 +603,38 @@ import 'core-js/es7/array';
 ```
 
 <!-- end: Angular -->
+
+<!-- WebComponents, Blazor -->
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```html
+<igc-grid class="grid"></igc-grid>
+```
+
+```razor
+<IgbGrid class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties to this class:
+
+```css
+.grid {
+    --igx-grid-header-background: #e0f3ff;
+    --igx-grid-header-text-color: #e41c77;
+    --igx-grid-header-border-width: 1px;
+    --igx-grid-header-border-style: solid;
+    --igx-grid-header-border-color: rgba(0, 0, 0, 0.08);
+}
+```
+### Demo
+
+`sample="/{ComponentSample}/multi-column-headers-styling", height="500", alt="{Platform} {ComponentTitle} Multi Column Headers Styling Sample"`
+
+
+<!-- end: WebComponents, Blazor -->
 
 ## API References
 

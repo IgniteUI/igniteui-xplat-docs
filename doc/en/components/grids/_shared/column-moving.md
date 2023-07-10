@@ -31,16 +31,16 @@ This allows to attach handlers for any event emitted by the element, otherwise t
 ```
 
 ```razor
-    public RenderFragment<IgbColumnTemplateContext> headerTemplate = (context) =>
+    public RenderFragment<IgbColumnTemplateContext> headerTemplate => (context) =>
     {
-        return @<IgbIcon Collection="fas" IconName="fa-thumbtack" draggable="false" onclick="onClick()"></IgbIcon>;
+        return @<IgbIcon Collection="fas" IconName="fa-thumbtack" draggable="false" @onclick="() => onClick()"></IgbIcon>;
     };
 ```
 
 ```ts
 public headerTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <igc-icon draggable="false" click="${this.onClick()}"></igc-icon>
+        <igc-icon draggable="false" @click="${() => this.onClick()}"></igc-icon>
     `;
 }
 ```
@@ -296,7 +296,7 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 
 <!-- end: Angular -->
 
-<!-- WebComponents -->
+<!-- WebComponents, Blazor -->
 ## Styling
 
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
@@ -324,7 +324,7 @@ Then set the related CSS properties to this class:
 
 `sample="/{ComponentSample}/column-moving-styles", height="650", alt="{Platform} {ComponentTitle} Grid Moving Styled Example"`
 
-<!-- end: WebComponents -->
+<!-- end: WebComponents, Blazor -->
 
 ## API References
 

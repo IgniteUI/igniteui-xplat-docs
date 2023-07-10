@@ -133,6 +133,9 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
                     packageText = "igniteui_" + getPlatformName(<APIPlatform>options.platform).toLowerCase() + "_grids_grids."
                 } else if (packageName == "igniteui-webinputs") {
                     packageText = "";
+                    if (platform == APIPlatform.React) {
+                        packageText = "igniteui_react.";
+                    }
                 } else {
                     packageText = packageName;
                     packageText = packageText.replace("igniteui-", "igniteui-" + getPlatformName(<APIPlatform>options.platform).toLowerCase() + "-");
@@ -473,6 +476,7 @@ function getFrontMatterTypes(options: any, filePath: string) {
             throw new Error(filePath + '\n' + error.message + "\n" + "Failed parsing:\n" + node.value + "\n")
         }
         // console.log("setFrontMatterTypes=" + filePath);
+        let mentionedNamespace: string | null = null;
         if (ym.mentionedTypes) {
             // console.log("mentionedTypes=" + ym.mentionedTypes);
             let mt = ym.mentionedTypes;
@@ -487,9 +491,13 @@ function getFrontMatterTypes(options: any, filePath: string) {
             }
             options.mentionedTypes = arr;
             let mappings = <MappingLoader>options.mappings;
+
             for (let i = 0; i < options.mentionedTypes.length; i++) {
                 let currType = options.mentionedTypes[i];
                 let currTypeInfo = mappings.getType(currType);
+                if (currTypeInfo?.originalNamespace) {
+                    mentionedNamespace = currTypeInfo.originalNamespace;
+                }
                 if (currTypeInfo) {
                     if (currTypeInfo.originalBaseTypeName) {
                         let fullName = currTypeInfo.originalBaseTypeNamespace + "." +
@@ -515,6 +523,13 @@ function getFrontMatterTypes(options: any, filePath: string) {
             options.namespace = ym.namespace;
             if (options.mappings) {
                 options.mappings.namespace = options.namespace;
+            }
+        } else {
+            if (mentionedNamespace) {
+                options.namespace = mentionedNamespace;
+                if (options.mappings) {
+                    options.mappings.namespace = mentionedNamespace;
+                }
             }
         }
 
@@ -1384,12 +1399,13 @@ function omitFencedCode(options: any) {
 
         //highlight.js, used by docfx, doesn't currently support tsx highlighting.
         if (lang.toLowerCase() == "tsx") {
-            lang = "ts";
+            node.lang = "ts";
         }
-        if (lang.toLowerCase() == "razor") {
-            lang = "html";
-        }
-        node.lang = lang;
+        // commented out since the igniteui-docfx-templat supports razor language
+        //if (lang.toLowerCase() == "razor") {
+        //    node.lang = "html";
+        //}
+        //node.lang = lang;
         //console.log(node);
     }
 
@@ -1823,38 +1839,19 @@ export class MarkdownTransformer {
             let words = line.split(' ');
             for (let w = 0; w < words.length; w++) {
                 let word = words[w];
-                if (word.indexOf(".md#") >= 0) {
-                    let parts = word.split('#');
-                    let topic = parts[0];
-                    let header = parts[1];
-                    header = header.toLowerCase();
-                    header = header.replace('{platform}', '{PlatformLower}');
-                    header = header.replace('{platformlower}', '{PlatformLower}');
-                    let newLink = topic + '#' + header;
-                    if (newLink !== words[w]) {
-                        words[w] = newLink;
-                        console.log("auto-correct link: " + newLink);
+                let hasPlatformVariable = word.toLowerCase().indexOf("{platform") >= 0;
+                if (word.indexOf(".md#") >= 0 && hasPlatformVariable) {
+                    word = word.split('{platform}').join('{PlatformLower}');
+                    word = word.split('{Platform}').join('{PlatformLower}');
+                    word = word.split('{platformlower}').join('{PlatformLower}');
+                    if (word !== words[w]) {
+                        console.log("auto-correct link: \n" + words[w] + " to \n" + word);
+                        words[w] = word;
                     }
-
                 }
             }
             lines[i] = words.join(' ');
         }
-
-        // let words = fileContent.split(' ');
-        // for (let i = 0; i < words.length; i++) {
-        //     const word = words[i];
-        //     if (word.indexOf(".md#") >= 0) {
-        //         let parts = word.split('#');
-        //         let topic = parts[0];
-        //         let header = parts[1];
-        //         header = header.toLowerCase();
-        //         header = header.replace('{platform}', '{PlatformLower}');
-        //         header = header.replace('{platformlower}', '{PlatformLower}');
-        //         words[i] = topic + '#' + header;
-        //         console.log("verifyLinks " + words[i]);
-        //     }
-        // }
         return lines.join('\n');
     }
 
@@ -2181,7 +2178,7 @@ export class MarkdownTransformer {
                 node.status = "PREVIEW";
             } else if (node.beta) {
                 node.status = "BETA";
-            } 
+            }
              else {
                 node.status = "";
             }
