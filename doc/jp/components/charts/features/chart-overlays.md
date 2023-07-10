@@ -32,7 +32,7 @@ _language: ja
 
 `ValueOverlay` に軸注釈を表示して、所有する軸にオーバーレイの値を表示することもできます。これを示すために、`IsAxisAnnotationEnabled` プロパティを true に設定できます。
 
-## {Platform} 値線
+## {Platform} 値レイヤー
 
 {Platform} チャート コンポーネントは、値の線を使用して、最小値、最大値、平均値などのデータのさまざまな焦点を示す機能も公開します。
 

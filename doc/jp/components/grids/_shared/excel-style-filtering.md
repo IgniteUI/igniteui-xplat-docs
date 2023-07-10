@@ -14,7 +14,7 @@ _language: ja
 
 ## {Platform} {ComponentTitle} Excel スタイル フィルタリングの例
 
-`sample="/{ComponentSample}/excel-style-filtering-sample-1", height="620", alt="{Platform} {ComponentTitle} Excel スタイルのフィルタリング サンプル 1"`
+`sample="/{ComponentSample}/excel-style-filtering-sample-1", height="950", alt="{Platform} {ComponentTitle} Excel スタイルのフィルタリング サンプル 1"`
 
 
 ## 使用方法
@@ -823,7 +823,7 @@ $custom-drop-down:drop-down-theme(
 
 ### スキーマの使用
 
-テーマ エンジンを使用して [**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
+テーマ エンジンを使用して[**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
 
 すべてのコンポーネント (この場合は[light-grid]({environment:sassApiUrl}/index.html#variable-_light-grid)、[light-input-group]({environment:sassApiUrl}/index.html#variable-_light-input-group)、[light-button]({environment:sassApiUrl}/index.html#variable-_light-button)、[light-list]({environment:sassApiUrl}/index.html#variable-_light-list)、[light-checkbox]({environment:sassApiUrl}/index.html#variable-_light-checkbox)、[light-drop-down]({environment:sassApiUrl}/index.html#variable-_light-drop-down)) に提供される 2 つの定義済みスキーマのいずれかを拡張します。
 
