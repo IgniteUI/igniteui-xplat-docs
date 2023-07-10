@@ -135,13 +135,13 @@ Then set the related CSS properties to this class:
 
 ```css
 .grid {
-    --igx-grid-row-selected-background: #0062A3;
-    --igx-grid-row-selected-text-color: #ecaa53;
-    --igx-grid-row-selected-hover-background: #0062A3;
-    --igx-grid-header-selected-text-color: #ecaa53;
-    --igx-grid-header-selected-background: #0062A3;
-    --igx-grid-row-selected-hover-text-color: #ecaa53;
-    --igx-grid-row-selected-hover-background: #0062A3;
+    --ig-grid-row-selected-background: #0062A3;
+    --ig-grid-row-selected-text-color: #ecaa53;
+    --ig-grid-row-selected-hover-background: #0062A3;
+    --ig-grid-header-selected-text-color: #ecaa53;
+    --ig-grid-header-selected-background: #0062A3;
+    --ig-grid-row-selected-hover-text-color: #ecaa53;
+    --ig-grid-row-selected-hover-background: #0062A3;
 }
 ```
 
@@ -151,13 +151,13 @@ Then set the related CSS properties to this class:
 
 ```css
 .treeGrid {
-    --igx-grid-row-selected-background: #0062A3;
-    --igx-grid-row-selected-text-color: #ecaa53;
-    --igx-grid-row-selected-hover-background: #0062A3;
-    --igx-grid-header-selected-text-color: #ecaa53;
-    --igx-grid-header-selected-background: #0062A3;
-    --igx-grid-row-selected-hover-text-color: #ecaa53;
-    --igx-grid-row-selected-hover-background: #0062A3;
+    --ig-grid-row-selected-background: #0062A3;
+    --ig-grid-row-selected-text-color: #ecaa53;
+    --ig-grid-row-selected-hover-background: #0062A3;
+    --ig-grid-header-selected-text-color: #ecaa53;
+    --ig-grid-header-selected-background: #0062A3;
+    --ig-grid-row-selected-hover-text-color: #ecaa53;
+    --ig-grid-row-selected-hover-background: #0062A3;
 }
 ```
 
@@ -167,13 +167,13 @@ Then set the related CSS properties to this class:
 
 ```css
 .hierarchicalGrid {
-    --igx-grid-row-selected-background: #0062A3;
-    --igx-grid-row-selected-text-color: #ecaa53;
-    --igx-grid-row-selected-hover-background: #0062A3;
-    --igx-grid-header-selected-text-color: #ecaa53;
-    --igx-grid-header-selected-background: #0062A3;
-    --igx-grid-row-selected-hover-text-color: #ecaa53;
-    --igx-grid-row-selected-hover-background: #0062A3;
+    --ig-grid-row-selected-background: #0062A3;
+    --ig-grid-row-selected-text-color: #ecaa53;
+    --ig-grid-row-selected-hover-background: #0062A3;
+    --ig-grid-header-selected-text-color: #ecaa53;
+    --ig-grid-header-selected-background: #0062A3;
+    --ig-grid-row-selected-hover-text-color: #ecaa53;
+    --ig-grid-row-selected-hover-background: #0062A3;
 }
 ```
 
