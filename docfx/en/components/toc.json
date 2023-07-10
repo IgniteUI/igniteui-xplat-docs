@@ -800,7 +800,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Sizing",
         "href": "grids/tree-grid/sizing.md",
         "status": "NEW"
