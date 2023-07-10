@@ -349,25 +349,7 @@ The `ng-template` is provided with the column group object as a context.
 </igx-column-group>
 ```
 
-```html
-<igc-column-group id="General" header="General Information">
-</igc-column-group>
-```
-
-```ts
-constructor() {
-    var general = this.general = document.getElementById('General') as IgcColumnComponent;
-    general.headerTemplate = this.generalHeaderTemplate;
-}
-
-public generalHeaderTemplate = (ctx: IgcCellTemplateContext) => {
-    return html`
-        ${this.toUppercase(ctx.cell.column.header)}
-    `;
-}
-```
-
-If you want to re-use a single template for several column groups, you could set the `headerTemplate` property of the column group like this:
+If you want to re-use a single template for several column groups, you could set the `HeaderTemplate` property of the column group like this:
 
 ```html
 <ng-template #columnGroupHeaderTemplate let-columnGroup>
@@ -379,42 +361,11 @@ If you want to re-use a single template for several column groups, you could set
 <igx-column-group header="Address Information" [headerTemplate]="columnGroupHeaderTemplate">
 </igx-column-group>
 ```
-
-```html
-<igc-column-group id="General" header="General Information">
-</igc-column-group>
-<igc-column-group id="Address" header="Address Information">
-</igc-column-group>
-```
-
-```ts
-constructor() {
-    var general = this.general = document.getElementById('General') as IgcColumnComponent;
-    var addresss = this.address = document.getElementById('Address') as IgcColumnComponent;
-    general.headerTemplate = this.columnGroupHeaderTemplate;
-    addresss.headerTemplate = this.columnGroupHeaderTemplate;
-}
-
-public columnGroupHeaderTemplate = (ctx: IgcCellTemplateContext) => {
-    return html`
-        ${this.toUppercase(ctx.cell.column.header)}
-    `;
-}
-```
 <!-- end: Angular -->
 
 <!-- Blazor -->
-
 Each of the column groups of the grid can be templated separately. The column group expects `RenderFragment` for the `HeaderTemplate` property.
 The expression is provided with the column group object as a context.
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-Each of the column groups of the grid can be templated separately. The following code snippet demonstrates how to use the `HeaderTemplate` of a column group:
-
-<!-- end: WebComponents -->
 
 ```razor
 <IgbColumnGroup Header="Address Information" HeaderTemplate="Template">
@@ -428,25 +379,68 @@ Each of the column groups of the grid can be templated separately. The following
 }
 ```
 
+If you want to re-use a single template for several column groups, you could set the `HeaderTemplate` property of the column group like this:
+
+```razor
+<IgbColumnGroup Header="General Information" HeaderTemplate="Template">
+</IgbColumnGroup>
+<IgbColumnGroup Header="Address Information" HeaderTemplate="Template">
+</IgbColumnGroup>
+
+@code {
+    public RenderFragment<IgbColumnTemplateContext> Template = (ctx) => {
+        string value = ctx.Column.Header.ToUpper();
+        return @<span>@value</span>;
+    };
+}
+```
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+Each of the column groups of the grid can be templated separately. The following code snippet demonstrates how to use the `HeaderTemplate` of a column group:
+
 ```html
-<igc-column-group id="addressInfoGroup" header="Address Information"></igc-column-group>
+<igc-column-group id="addressInfo" header="Address Information">
+</igc-column-group>
 ```
 
-```typescript
+```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-    var columnGroup = this.columnGroup = document.getElementById('addressInfoGroup') as IgcColumnGroupComponent;
-    grid.data = this.customersData
-    columnGroup.headerTemplate = this.headerTemplate;
+    var addresss = this.addresss = document.getElementById('addressInfo') as IgcColumnGroupComponent;
+    addresss.headerTemplate = this.columnGroupHeaderTemplate;
 }
 
-public headerTemplate = (ctx: IgcColumnTemplateContext) => {
-    const column = (ctx as any).column;
-    return html`<div>
-             <span style="float:left">${column.header.toUpperCase()}</span>
-            </div>`;
-};
+public columnGroupHeaderTemplate = (ctx: IgcColumnTemplateContext) => {
+    return html`
+        ${ctx.column.header.toUpperCase()}
+    `;
+}
 ```
+
+If you want to re-use a single template for several column groups, you could set the `HeaderTemplate` property of the column group like this:
+
+```html
+<igc-column-group id="generalInfo" header="General Information">
+</igc-column-group>
+<igc-column-group id="addressInfo" header="Address Information">
+</igc-column-group>
+```
+
+```ts
+constructor() {
+    var general = this.general = document.getElementById('generalInfo') as IgcColumnGroupComponent;
+    var addresss = this.address = document.getElementById('addressInfo') as IgcColumnGroupComponent;
+    general.headerTemplate = this.columnGroupHeaderTemplate;
+    addresss.headerTemplate = this.columnGroupHeaderTemplate;
+}
+
+public columnGroupHeaderTemplate = (ctx: IgcColumnTemplateContext) => {
+    return html`
+        ${ctx.column.header.toUpperCase()}
+    `;
+}
+```
+<!-- end: WebComponents -->
 
 > [!Note]
 > If a header is re-templated and the corresponding column group is movable, you have to set the **draggable** attribute to **false** on the templated elements, so that you can handle any of the events that are applied!
@@ -472,7 +466,7 @@ public headerTemplate = (ctx: IgcColumnTemplateContext) => {
 ```
 
 ```ts
-public columnHeaderTemplate = (ctx: IgcCellTemplateContext) => {
+public columnHeaderTemplate = (ctx: IgcColumnTemplateContext) => {
     return html`
         <igc-icon draggable="false" @click="${() => this.onClick()}"></igc-icon>
     `;
