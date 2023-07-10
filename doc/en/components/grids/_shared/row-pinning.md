@@ -127,15 +127,17 @@ public rowPinning(event) {
 ```razor
 <{ComponentSelector} Width="100%"
              Id="grid"
-             RowPinningScript='rowPinningHandler'
+             RowPinningScript="rowPinningHandler"
              Height="100%"
              PrimaryKey="Key"
-             AutoGenerate=true
-             Data=northwindEmployees>
+             AutoGenerate="true"
+             Data="northwindEmployees">
 </{ComponentSelector}>
 ```
 
 ```razor
+*** In JavaScript ***
+
 function rowPinningHandler(event) {
     event.detail.insertAtIndex = 0;
 }
