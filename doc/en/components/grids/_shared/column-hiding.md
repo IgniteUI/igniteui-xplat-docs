@@ -505,32 +505,32 @@ Then set the related CSS variables for the related components. We will apply the
 ```css
 .grid  igx-column-actions {
     /* Main Column Actions styles */
-    --igx-column-actions-background-color: #292826;
-    --igx-column-actions-title-color: #ffcd0f;
+    --ig-column-actions-background-color: #292826;
+    --ig-column-actions-title-color: #ffcd0f;
 
     /* Checkbox styles */
-    --igx-checkbox-tick-color: #292826;
-    --igx-checkbox-label-color: #ffcd0f;
-    --igx-checkbox-empty-color: #ffcd0f;
-    --igx-checkbox-fill-color: #ffcd0f;
+    --ig-checkbox-tick-color: #292826;
+    --ig-checkbox-label-color: #ffcd0f;
+    --ig-checkbox-empty-color: #ffcd0f;
+    --ig-checkbox-fill-color: #ffcd0f;
 
     /* Input styles */
-    --igx-input-group-idle-text-color: white;
-    --igx-input-group-filled-text-color: #ffcd0f;
-    --igx-input-group-focused-text-color: #ffcd0f;
-    --igx-input-group-focused-border-color: #ffcd0f;
-    --igx-input-group-focused-secondary-color: #ffcd0f;
+    --ig-input-group-idle-text-color: white;
+    --ig-input-group-filled-text-color: #ffcd0f;
+    --ig-input-group-focused-text-color: #ffcd0f;
+    --ig-input-group-focused-border-color: #ffcd0f;
+    --ig-input-group-focused-secondary-color: #ffcd0f;
 
     /* Buttons styles */
-    --igx-button-foreground: #292826;
-    --igx-button-background: #ffcd0f;
-    --igx-button-hover-background: #404040;
-    --igx-button-hover-foreground: #ffcd0f;
-    --igx-button-focus-background: #ffcd0f;
-    --igx-button-focus-foreground: black;
-    --igx-button-focus-visible-background: #ffcd0f;
-    --igx-button-focus-visible-foreground: black;
-    --igx-button-disabled-foreground: #ffcd0f;
+    --ig-button-foreground: #292826;
+    --ig-button-background: #ffcd0f;
+    --ig-button-hover-background: #404040;
+    --ig-button-hover-foreground: #ffcd0f;
+    --ig-button-focus-background: #ffcd0f;
+    --ig-button-focus-foreground: black;
+    --ig-button-focus-visible-background: #ffcd0f;
+    --ig-button-focus-visible-foreground: black;
+    --ig-button-disabled-foreground: #ffcd0f;
 }
 ```
 
