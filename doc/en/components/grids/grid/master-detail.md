@@ -60,7 +60,7 @@ Context of the template is the master record data, so that values from the maste
 
 ```ts
     public masterDetailTemplate = (ctx: IgcGridMasterDetailContext) => {
-        var data = (ctx as any)["$implicit"];
+        var data = ctx.implicit;
         return html` <div class="contact-container">
         <span><strong>Name:</strong> ${data.ContactName}</span> <br/>
         <span><strong>Title:</strong> ${data.ContactTitle}</span> <br/>
@@ -73,7 +73,7 @@ Context of the template is the master record data, so that values from the maste
 // In JavaScript
 igRegisterScript("DetailTemplate", (ctx) => {
     var html = window.igTemplating.html;
-    var data = ctx["$implicit"];
+    var data = ctx.implicit;
     return html` <div class="contact-container">
         <span><strong>Name:</strong> ${data.ContactName}</span> <br/>
         <span><strong>Title:</strong> ${data.ContactTitle}</span> <br/>

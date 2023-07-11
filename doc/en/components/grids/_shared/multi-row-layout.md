@@ -335,12 +335,12 @@ Then set the related CSS properties to this class:
 
 ```css
 .grid {
-    --igx-grid-cell-active-border-color: #ffcd0f;
-    --igx-grid-cell-selected-background: #6f6f6f;
-    --igx-grid-row-hover-background: #fde069;
-    --igx-grid-row-selected-background: #8d8d8d;
-    --igx-grid-header-background: #494949;
-    --igx-grid-header-text-color: #fff;
+    --ig-grid-cell-active-border-color: #ffcd0f;
+    --ig-grid-cell-selected-background: #6f6f6f;
+    --ig-grid-row-hover-background: #fde069;
+    --ig-grid-row-selected-background: #8d8d8d;
+    --ig-grid-header-background: #494949;
+    --ig-grid-header-text-color: #fff;
 }
 ```
 ### Demo

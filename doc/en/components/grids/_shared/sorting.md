@@ -443,8 +443,8 @@ Then set the related CSS properties to this class:
 
 ```css
 .grid {
-    --igx-grid-sorted-header-icon-color: #ffb06a;
-    --igx-grid-sortable-header-icon-hover-color: black;
+    --ig-grid-sorted-header-icon-color: #ffb06a;
+    --ig-grid-sortable-header-icon-hover-color: black;
 }
 ```
 ### Demo
