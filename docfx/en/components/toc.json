@@ -296,7 +296,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Remote Data Operations",
         "href": "grids/grid/remote-data-operations.md",
         "status": ""
