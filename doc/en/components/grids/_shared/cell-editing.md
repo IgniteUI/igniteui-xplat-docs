@@ -215,14 +215,15 @@ This code is used in the sample below which implements an [SelectComponent](../s
 
 <!-- end: Angular -->
 
-<!-- Blazor -->
+<!-- Blazor, WebComponents -->
 
-If you want to provide a custom template which will be applied to a cell, you can pass such template either to the cell itself, or to its header. 
+If you want to provide a custom template which will be applied to a cell, you can pass such template either to the cell itself, or to its header. First create the column as you usually would:
+
+<!-- Blazor -->
 
 ```razor
 <IgbColumn
-    Field="race"
-    Header="Race"
+    Field="Race"
     DataType="GridColumnDataType.String"
     InlineEditorTemplateScript="WebGridCellEditCellTemplate"
     Editable="true"
@@ -255,20 +256,13 @@ igRegisterScript("WebGridCellEditCellTemplate", (ctx) => {
 }, false);
 ```
 
-Working sample of the above can be found here for further reference: 
-
-`sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
-
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
 
-If you want to provide a custom template which will be applied to a cell, you can pass such template either to the cell itself, or to its header. First create the column as you usually would:
-
 ```html
 <igc-column
-    field="race"
-    header="Race"
+    field="Race"
     data-type="string"
     editable="true"
     name="column1"
@@ -277,8 +271,6 @@ If you want to provide a custom template which will be applied to a cell, you ca
 ```
 
 and pass the templates to this column in the index.ts file:
-
-<!-- ComponentStart: Grid, TreeGrid -->
 
 ```typescript
 constructor() {
@@ -314,13 +306,13 @@ public webGridCellEditCellTemplate = (ctx: IgcCellTemplateContext) => {
 
 ```
 
-<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- end: WebComponents -->
 
 Working sample of the above can be found here for further reference: 
 
 `sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
 
-<!-- end: WebComponents -->
+<!-- end: Blazor, WebComponents -->
 
 <!-- Angular -->
 
