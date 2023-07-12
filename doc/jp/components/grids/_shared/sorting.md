@@ -444,8 +444,8 @@ $custom-theme: grid-theme(
 
 ```css
 .grid {
-    --igx-grid-sorted-header-icon-color: #ffb06a;
-    --igx-grid-sortable-header-icon-hover-color: black;
+    --ig-grid-sorted-header-icon-color: #ffb06a;
+    --ig-grid-sortable-header-icon-hover-color: black;
 }
 ```
 ### デモ

@@ -540,9 +540,9 @@ public stateMessage(cell: IgxGridCell) {
 ```
 
 ### スタイルを含める
-エラーの色を変更するには、css 変数 `--igx-error-500` を使用します。
+エラーの色を変更するには、css 変数 `--ig-error-500` を使用します。
 ```scss
---igx-error-500: 34, 80%, 63%;
+--ig-error-500: 34, 80%, 63%;
 ```
 
 ### カスタム テンプレート

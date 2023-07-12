@@ -478,8 +478,8 @@ $custom-drop-down: drop-down-theme(
 
 ```css
 .grid {
-    --igx-grid-filtering-row-background: #ffcd0f;
-    --igx-grid-filtering-background-or: #d83434;
+    --ig-grid-filtering-row-background: #ffcd0f;
+    --ig-grid-filtering-background-or: #d83434;
 }
 ```
 ### デモ
