@@ -330,12 +330,12 @@ function transformCodeRefs(options: any) {
             }
 
             if (link) {
-                // override Angular/React/WC Dock Manager to stand-alone API docs for Dock Manager
-                // because API docs for Dock Manager are NOT in Angular/React/WC API docs, e.g.
+                // override Angular/WC Dock Manager to stand-alone API docs for Dock Manager
+                // because API docs for Dock Manager are NOT in Angular/WC API docs, e.g.
                 // WORKS - https://staging.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html
                 // FAILS - https://staging.infragistics.com/products/ignite-ui-web-components/api/docs/typescript/latest/classes/igcdockmanagercomponent.html
                 let platform = getPlatformName(options.platform);
-                if (platform === "Angular" || platform === "React" || platform === "WebComponents") {
+                if (platform === "Angular" || platform === "WebComponents") {
 
                     var dockEnums = [
                         "DockManagerPaneType",

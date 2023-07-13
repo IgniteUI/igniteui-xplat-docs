@@ -358,7 +358,7 @@ constructor() {
 public productNameHeaderTemplate = (ctx: IgcColumnTemplateContext) => {
     return html`
         <div class="text">${ctx.column.field}</div>
-        <igc-icon click="${this.toggleSummary(ctx.column)}" name="functions"></igc-icon>
+        <igc-icon @click="${() => this.toggleSummary(ctx.column)}" name="functions"></igc-icon>
     `;
 }
 
@@ -479,7 +479,7 @@ constructor() {
 
 public nameCellTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <span tabindex="0" onkeydown="${this.deleteRow(ctx.cell.id.rowIndex)}">${this.formatTitleCase(ctx.cell.value)}</span>
+        <span tabindex="0" @keydown="${() => this.deleteRow(ctx.cell.id.rowIndex)}">${this.formatTitleCase(ctx.cell.value)}</span>
     `;
 }
 
@@ -586,7 +586,7 @@ public priceCellTemplate = (ctx: IgcCellTemplateContext) => {
         <label>
             Enter the new price tag
         </label>
-        <input name="price" type="number" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}"  />
+        <input name="price" type="number" value="${ctx.cell.value}" @change="${() => this.updateValue(ctx.cell.value)}"  />
     `;
 }
 

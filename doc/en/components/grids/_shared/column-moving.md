@@ -31,16 +31,16 @@ This allows to attach handlers for any event emitted by the element, otherwise t
 ```
 
 ```razor
-    public RenderFragment<IgbColumnTemplateContext> headerTemplate = (context) =>
+    public RenderFragment<IgbColumnTemplateContext> headerTemplate => (context) =>
     {
-        return @<IgbIcon Collection="fas" IconName="fa-thumbtack" draggable="false" onclick="onClick()"></IgbIcon>;
+        return @<IgbIcon Collection="fas" IconName="fa-thumbtack" draggable="false" @onclick="() => onClick()"></IgbIcon>;
     };
 ```
 
 ```ts
 public headerTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <igc-icon draggable="false" click="${this.onClick()}"></igc-icon>
+        <igc-icon draggable="false" @click="${() => this.onClick()}"></igc-icon>
     `;
 }
 ```
@@ -315,9 +315,9 @@ Then set the related CSS properties to this class:
 
 ```css
 .grid {
-    --igx-grid-ghost-header-text-color: #f4d45c;
-    --igx-grid-ghost-header-background: #ad9d9d;
-    --igx-grid-ghost-header-icon-color: #f4d45c;
+    --ig-grid-ghost-header-text-color: #f4d45c;
+    --ig-grid-ghost-header-background: #ad9d9d;
+    --ig-grid-ghost-header-icon-color: #f4d45c;
 }
 ```
 ### Demo

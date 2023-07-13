@@ -49,7 +49,7 @@ export class AppModule {}
 
 ```Razor
 <IgbDataGrid data="localData"/>
-<button click="exportButtonHandler()">Export to Excel</button>
+<button @onclick="exportButtonHandler">Export to Excel</button>
 ```
 
 エクスポーター サービスへのアクセスは、コンポーネントのコンストラクターで `ExcelExporterService` 型の引数を定義し、{Platform} フレームワークはサービスのインスタンスを提供します。データを MS Excel 形式でエクスポートするには、エクスポーター サービスの `Export` メソッドを呼び出して {ComponentTitle} コンポーネントを最初の引数として渡します。

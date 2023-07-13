@@ -670,9 +670,9 @@ Then set the related CSS properties for that class:
 
 ```css
 .grid {
-    --igx-grid-toolbar-background-color: #2a2b2f;
-    --igx-grid-toolbar-title-text-color: #ffcd0f;
-    --igx-grid-toolbar-dropdown-background: #2a2b2f;
+    --ig-grid-toolbar-background-color: #2a2b2f;
+    --ig-grid-toolbar-title-text-color: #ffcd0f;
+    --ig-grid-toolbar-dropdown-background: #2a2b2f;
 }
 ```
 

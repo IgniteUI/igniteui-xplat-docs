@@ -251,8 +251,8 @@ public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
     var html = window.igTemplating.html;
     window.endRowEdit = ctx.$implicit;
     return html`<div>
-  	<button onclick="endRowEdit(false)">Cancel</button>
-	<button onclick="endRowEdit(true)">Apply</button>
+  	<button @click="(event) => endRowEdit(false, event)">Cancel</button>
+	<button @click="(event) => endRowEdit(true, event)">Apply</button>
 </div>`;
 }, false);
  ```
@@ -261,8 +261,8 @@ public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
 public rowEditActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
     const endRowEdit = ctx.$implicit;
     return html`
-        <button @click="${() => endRowEdit(false)}">Cancel</button>
-        <button @click="${() => endRowEdit(true)}">Apply</button>
+        <button @click="${(event) => endRowEdit(false, event)}">Cancel</button>
+        <button @click="${(event) => endRowEdit(true, event)}">Apply</button>
     `;
 }
 ```
