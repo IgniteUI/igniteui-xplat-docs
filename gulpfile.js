@@ -1354,38 +1354,49 @@ exports.logSampleLinksBlazor = function log(cb) { logSampleLinks(cb, "Blazor"); 
 exports.logSampleLinksReact = function log(cb) { logSampleLinks(cb, "React"); }
 exports.logSampleLinksWC = function log(cb) { logSampleLinks(cb, "WC"); };
 
+var docsInfo = {};
+function extractSampleLinks(cb, platform, server, outputType) {
 
-function extractSampleLinks(cb, platform, server) {
 
-    console.log('extractSampleLinks ./dist/**/end/*.md files ...');
-    var sampleLinks = [];
-    var sampleHost = ""
-    var sampleBrowser = "";
-
-    if (server === undefined) server = argv.server !== undefined ? argv.server : "local";
+    if (server === undefined) server = argv.server !== undefined ? argv.server : "staging";
     if (platform === undefined) platform = argv.plat !== undefined ? argv.plat : "WC";
+    if (outputType === undefined) outputType = argv.output !== undefined ? argv.output : undefined;
 
-    if (platform === "WC" || platform === "WebComponents" || platform === "wc") {
-        platform = "WebComponents";
-        sampleHost = "http://localhost:4200";
-        sampleBrowser = "/webcomponents-demos/samples";
-    } else if (platform === "Blazor" || platform === "blazor") {
-        platform = "Blazor";
-        sampleHost = "https://localhost:44317";
-        sampleBrowser = "/blazor-client/samples";
-    } else if (platform === "Angular" || platform === "Angular" || platform === "angular") {
-        platform = "Angular";
-        sampleHost = "http://localhost:4200";
-        sampleBrowser = "/angular-demos-dv/samples";
-    } else if (platform === "React" || platform === "react") {
-        platform = "React";
-        sampleHost = "http://localhost:4200";
-        sampleBrowser = "/react-demos/samples";
+    docsInfo.platform = "";
+    docsInfo.samplesServer = server;
+    docsInfo.samplesBrowser = "";
+    docsInfo.samplesHost = ""
+    docsInfo.samplesCount = 0
+    docsInfo.samples = {}
+    docsInfo.topicsCount = 0
+    docsInfo.topics = {}
+
+    const target = platform.toLowerCase();
+    if (target === "wc") { // || target === "webcomponents") {
+        docsInfo.platform = "WebComponents";
+        docsInfo.samplesHost = "http://localhost:4200";
+        docsInfo.samplesBrowser = "/webcomponents-demos/samples";
+    } else if (target === "blazor") {
+        docsInfo.platform = "Blazor";
+        docsInfo.samplesHost = "https://localhost:44317";
+        docsInfo.samplesBrowser = "/blazor-client/samples";
+    } else if (target === "angular") {
+        docsInfo.platform = "Angular";
+        docsInfo.samplesHost = "http://localhost:4200";
+        docsInfo.samplesBrowser = "/angular-demos-dv/samples";
+    } else if (target === "react") {
+        docsInfo.platform = "React";
+        docsInfo.samplesHost = "http://localhost:4200";
+        docsInfo.samplesBrowser = "/react-demos/samples";
     } else {
-        console.log("UNKNOWN platform: " + platform);
-        cb();
+        docsInfo.platform = "UNKNOWN";
+        docsInfo.samplesHost = "UNKNOWN";
+        docsInfo.samplesBrowser = "UNKNOWN";
+        console.log("UNKNOWN platform: " + target);
+        // cb();
+        throw new Error("The '" + target + "' platform is not supported")
     }
-    var sourceDir = 'dist/' + platform + '/en';
+    var sourceDir = 'dist/' + docsInfo.platform + '/en';
 
     if (!fs.existsSync(sourceDir)) {
         console.log("--------------------------------------------------------------------");
@@ -1395,20 +1406,28 @@ function extractSampleLinks(cb, platform, server) {
         cb();
     }
 
+    var sourceFiles = 'dist/' + docsInfo.platform + '/en/**/*.md';
+    console.log('extracting sample links from ./dist/**/en/*.md files ' + sourceFiles + ' files ...');
+
     gulp.src([
     //  'dist/' + platform + '/en/components/**/charts/chart-overview.md',
     //  'dist/' + platform + '/en/**/notifications/**/*.md',
     // 'dist/' + platform + '/en/**/grids/grids.md',
-    'dist/' + platform + '/en/**/*.md',
+    'dist/' + docsInfo.platform + '/en/**/*.md',
     ])
     .pipe(es.map(function(file, fileCallback) {
+        docsInfo.topicsCount++;
+
         var fileContent = file.contents.toString();
         var filePath = file.dirname + "\\" + file.basename
         filePath = '.\\dist\\' + filePath.split('dist\\')[1];
+        // filePath =  filePath.split('\\en\\')[1];
+        var topic = filePath.split('\\').join('/');
         //console.log('extractSampleLinks: ' + filePath);
 
         var fileLines = fileContent.split("\n");
 
+        var lineIndex = 0;
         for (const line of fileLines) {
             if (line.indexOf('iframe-src="') >= 0) {
                 var link = line.replace('iframe-src="', '');
@@ -1417,40 +1436,76 @@ function extractSampleLinks(cb, platform, server) {
                 link = link.replace('`', '');
                 link = link.replace('/blazor-client', '');
                 link = link.replace('{environment:dvDemosBaseUrl}/', 'http://localhost:4200/');
-                link = link.replace(sampleHost, sampleHost + sampleBrowser);
+                link = link.replace(docsInfo.samplesHost, docsInfo.samplesHost + docsInfo.samplesBrowser);
 
                 if (server === "staging") {
-                    link = link.replace(sampleHost, "http://staging.infragistics.com");
+                    link = link.replace(docsInfo.samplesHost, "http://staging.infragistics.com");
                 } else if (server === "production" || server === "prod") {
-                    link = link.replace(sampleHost, "http://infragistics.com");
+                    link = link.replace(docsInfo.samplesHost, "http://infragistics.com");
                 }
 
                 link = link.replace('http://', 'https://');
 
-                if (sampleLinks.indexOf(link) < 0) {
-                    sampleLinks.push(link);
+                docsInfo.samples[link] = topic + ":" + lineIndex;
+
+                // if (docsInfo.samples[link] === undefined) {
+                //     docsInfo.samples[link] = [];
+                // }
+                // if (docsInfo.samples[link].indexOf(topic) < 0) {
+                //     docsInfo.samples[link].push(topic);
+                // }
+                // throw new Error("stop");
+
+                if (docsInfo.topics[topic] === undefined) {
+                    docsInfo.topics[topic] = [];
                 }
+                if (docsInfo.topics[topic].indexOf(link) < 0) {
+                    docsInfo.topics[topic].push(link);
+                }
+
+                docsInfo.samplesCount++;
             }
+            lineIndex++;
         }
         fileCallback(null, file);
     }))
     .on("end", () => {
-        sampleLinks.sort();
-      //  for (const link of sampleLinks) {
-      //     console.log(link);
-      // }
-      //  console.log(sampleLinks[0])
-        //var outputPath = "./dist/" + platform + "/en/samples.json";
-        platform =  platform.replace("WebComponents", "wc");
-        var outputPath = "samples-" + server + "-" + platform.toLowerCase() + ".json";
-        var outputJSON = JSON.stringify(sampleLinks,  null, '  ');
-        fs.writeFileSync(outputPath, outputJSON);
-        console.log('extracted ' + sampleLinks.length + ' sample links to: ' + outputPath);
+
+        var platform = docsInfo.platform.replace("WebComponents", "wc").toLowerCase() ;
+        var outputPath = "./samples-" + docsInfo.samplesServer + "-" + platform + ".json";
+        var outputData = {};
+        if (outputType === "samples") {
+            var links = [];
+            for (const link of Object.keys(docsInfo.samples) ) {
+                links.push(link);
+            }
+            links.sort();
+            outputData = links;
+            console.log(docsInfo.samples);
+        } else if (outputType === "topics") {
+            outputData = docsInfo.topics;
+            console.log(outputData);
+        } else { // default to saving samples and topics
+            outputData = docsInfo;
+            var links = []; // logging sample links
+            for (const link of Object.keys(docsInfo.samples) ) {
+                links.push(link);
+            }
+            links.sort();
+            // console.log(links);
+        }
+
+        if (docsInfo.samplesCount > 0) {
+            var outputJSON = JSON.stringify(outputData,  null, '  ');
+            fs.writeFileSync(outputPath, outputJSON);
+            console.log('extracted ' + docsInfo.samplesCount + ' sample links to: ' + outputPath);
+        }
 
         if (cb) cb();
     })
 }
 exports.extractSampleLinks = extractSampleLinks;
+
 // use these gulp commands to extract links to samples hosted on staging:
 // gulp extractSampleLinks --server="staging" --plat=Angular
 // gulp extractSampleLinks --server="staging" --plat=Blazor
@@ -1461,7 +1516,39 @@ exports.extractSampleLinks = extractSampleLinks;
 // gulp extractSampleLinksBlazor
 // gulp extractSampleLinksReact
 // gulp extractSampleLinksWC
-exports.extractSampleLinksAngular = function extract(cb) { extractSampleLinks(cb, "Angular"); }
-exports.extractSampleLinksBlazor = function extract(cb) { extractSampleLinks(cb, "Blazor"); }
-exports.extractSampleLinksReact = function extract(cb) { extractSampleLinks(cb, "React"); }
-exports.extractSampleLinksWC = function extract(cb) { extractSampleLinks(cb, "WC"); };
+exports.extractSampleLinksAngular = extractSampleLinksAngular = function extractSamples(cb) { extractSampleLinks(cb, "Angular", "staging") }
+exports.extractSampleLinksBlazor = extractSampleLinksBlazor = function extractSamples(cb) { extractSampleLinks(cb, "Blazor", "staging"); }
+exports.extractSampleLinksReact = extractSampleLinksReact = function extractSamples(cb) { extractSampleLinks(cb, "React", "staging"); }
+exports.extractSampleLinksWC = extractSampleLinksWC = function extractSamples(cb) { extractSampleLinks(cb, "WC", "staging"); };
+
+exports.extractSampleLinksAll = gulp.series(
+    extractSampleLinksAngular,
+    extractSampleLinksBlazor,
+    extractSampleLinksReact,
+    extractSampleLinksWC,
+);
+
+// function buildSampleList(cb) {
+//     let platformName = PLAT;
+//     var sampleList = [];
+//     gulp.src(includedTopics, { base: "./doc/" })
+//     .pipe(es.map(function(file, fileCallback) {
+//         // let orgJson = file.contents.toString();
+//         // read converted .yml to .json above and simplify TOC structure:
+//         // let newJson = transformer.simplifyJson(orgJson, 'Blazor');
+//         // fs.writeFileSync(tocOutputPath, newJson);
+//         fileCallback(null, file);
+//     }))
+//     .on("end", () => {
+//         if (cb !== undefined){
+//             cb();
+//         }
+//     });
+//     // .on("end", function() {
+//     // }
+//     // })
+//     // .on("error", (err) => {
+//     //     console.log("ERROR building platform: " + platformName.toString());
+//     //     cb(err);
+//     // });
+// }
