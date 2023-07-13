@@ -81,9 +81,9 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
     let packageName: string | null = null;
 
     if (!(typeName.indexOf(options.platformPascalPrefix) == 0)) {
-        resolvedTypeName = mappings.getPlatformTypeName(typeName, <APIPlatform>options.platform);
+        resolvedTypeName = mappings.getPlatformTypeName(typeName, <APIPlatform>options.platform, options.filePath);
         if (resolvedTypeName) {
-            let typeInfo = mappings.getType(typeName);
+            let typeInfo = mappings.getType(typeName, options.filePath);
             if (typeInfo) {
                 if (typeInfo.isEnum) {
                     isEnum = true;
@@ -278,7 +278,7 @@ function transformCodeRefs(options: any) {
         let resolvedName = mappings.getPlatformMemberName(
             <string>options.typeName,
             <APIPlatform>options.platform,
-            <string>memberName);
+            <string>memberName, options.filePath);
         apiTypeName = options.typeName;
 
         if (resolvedName == null && options.mentionedTypes &&
@@ -288,7 +288,7 @@ function transformCodeRefs(options: any) {
                 resolvedName = mappings.getPlatformMemberName(
                     <string>type,
                     <APIPlatform>options.platform,
-                    <string>memberName);
+                    <string>memberName, options.filePath);
                 if (resolvedName !== null) {
                     apiTypeName = type;
                     break;
@@ -299,7 +299,7 @@ function transformCodeRefs(options: any) {
         if (resolvedName == null) {
             resolvedName = mappings.getPlatformTypeName(
                 <string>memberName,
-                <APIPlatform>options.platform);
+                <APIPlatform>options.platform, options.filePath);
 
             if (resolvedName !== null) {
                 isTypeName = true;
@@ -494,7 +494,7 @@ function getFrontMatterTypes(options: any, filePath: string) {
 
             for (let i = 0; i < options.mentionedTypes.length; i++) {
                 let currType = options.mentionedTypes[i];
-                let currTypeInfo = mappings.getType(currType);
+                let currTypeInfo = mappings.getType(currType, options.filePath);
                 if (currTypeInfo?.originalNamespace) {
                     mentionedNamespace = currTypeInfo.originalNamespace;
                 }
@@ -580,7 +580,7 @@ function transformDocLinks(options: any) {
             let resolvedName = mappings.getPlatformMemberName(
                 <string>options.typeName,
                 <APIPlatform>options.platform,
-                <string>controlName);
+                <string>controlName, options.filePath);
             if (resolvedName) {
                 controlName = resolvedName;
             }
