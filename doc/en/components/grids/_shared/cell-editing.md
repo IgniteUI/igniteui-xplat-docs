@@ -221,6 +221,7 @@ If you want to provide a custom template which will be applied to a cell, you ca
 
 <!-- Blazor -->
 
+<!-- ComponentStart: Grid -->
 ```razor
 <IgbColumn
     Field="Race"
@@ -231,6 +232,20 @@ If you want to provide a custom template which will be applied to a cell, you ca
     @ref="column1">
 </IgbColumn>
 ```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```razor
+<IgbColumn
+    Field="Category"
+    DataType="GridColumnDataType.String"
+    InlineEditorTemplateScript="WebTreeGridCellEditCellTemplate"
+    Editable="true"
+    Name="column1"
+    @ref="column1">
+</IgbColumn>
+```
+<!-- ComponentEnd: TreeGrid -->
 
 and pass the template:
 
@@ -240,7 +255,7 @@ and pass the template:
 igRegisterScript("WebGridCellEditCellTemplate", (ctx) => {
     let cellValues = [];
     let uniqueValues = [];
-    for(const i of this.webGridCellEditSampleRoleplay){
+    for(const i of ctx.cell.grid.data){
         const field = ctx.cell.column.field;
         if(uniqueValues.indexOf(i[field]) === -1 )
         {
@@ -255,10 +270,11 @@ igRegisterScript("WebGridCellEditCellTemplate", (ctx) => {
 </div>`;
 }, false);
 ```
-
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
+
+<!-- ComponentStart: Grid -->
 
 ```html
 <igc-column
@@ -303,8 +319,51 @@ public webGridCellEditCellTemplate = (ctx: IgcCellTemplateContext) => {
         </igc-select>
     `;
 }
-
 ```
+
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```html
+<igc-column
+    field="Category"
+    data-type="string"
+    editable="true"
+    name="column1"
+    id="column1">
+</igc-column>
+```
+
+and pass the templates to this column in the index.ts file:
+
+```typescript
+constructor() {
+    var treeGrid = document.getElementById('treeGrid') as {ComponentName}Component;
+    var column1 = document.getElementById('column1') as IgcColumnComponent;
+
+    treeGrid.data = this.ordersTreeData;
+    column1.inlineEditorTemplate = this.webTreeGridCellEditCellTemplate;
+}
+
+public webTreeGridCellEditCellTemplate = (ctx: IgcCellTemplateContext) => {
+    let cellValues: any = [];
+    let uniqueValues: any = [];
+    for(const i of (this.ordersTreeData as any)){
+        const field: string = ctx.cell.column.field;
+        if(uniqueValues.indexOf(i[field]) === -1 )
+        {
+            cellValues.push(html`<igc-select-item value=${i[field]}>${(i[field])}</igc-select-item>`);
+            uniqueValues.push(i[field]);
+        }
+    }
+    return html`
+        <igc-select style="width:100%; height:100%" size="large" @igcChange=${(e: any) => ctx.cell.editValue = e.detail.value}>
+            ${cellValues}
+        </igc-select>
+    `;
+}
+```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- end: WebComponents -->
 
