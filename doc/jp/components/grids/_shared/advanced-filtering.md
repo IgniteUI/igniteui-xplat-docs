@@ -452,7 +452,7 @@ $custom-drop-down: drop-down-theme(
 
 <!-- NOTE this sample is differed -->
 
-`sample="/{ComponentSample}/advanced-filtering-style", height="530", alt="{Platform} {ComponentTitle} advanced filtering style"`
+`sample="/{ComponentSample}/advanced-filtering-style", height="530", alt="{Platform} {ComponentTitle} 高度なフィルタリング スタイル"`
 
 
 > [!Note]

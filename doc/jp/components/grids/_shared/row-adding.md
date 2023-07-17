@@ -481,7 +481,7 @@ this.grid.rowEditActionsTemplate = (endRowEdit: IgcGridRowEditActionsTemplateCon
 igRegisterScript("rowEditActionsTemplate", (endRowEdit) => {
     var html = window.igTemplating.html;
     return html`<div class="row-actions">
-         <button @click="${evt => endRowEdit.implicit(false, evt)}">Cancel</button>
+        <button @click="${evt => endRowEdit.implicit(false, evt)}">Cancel</button>
         <button @click="${evt => endRowEdit.implicit(true, evt)}">Apply</button>
     </div>`
 }, false);
