@@ -407,6 +407,11 @@ function buildTOC(cb) {
     // excludedTopics.push('doc/**/editors/**/*.md');
     // excludedTopics.push('doc/**/inputs/**/*.md');
     // excludedTopics.push('doc/**/layouts/**/*.md');
+    // excludedTopics.push('doc/**/layouts/avatar.md');
+    // excludedTopics.push('doc/**/layouts/card.md');
+    // excludedTopics.push('doc/**/layouts/dock-manager-*.md');
+    // excludedTopics.push('doc/**/layouts/expansion-panel.md');
+    // excludedTopics.push('doc/**/layouts/icon.md');
     // excludedTopics.push('doc/**/menus/**/*.md');
     // excludedTopics.push('doc/**/*map*.md');
     // excludedTopics.push('doc/**/bullet-graph.md');
