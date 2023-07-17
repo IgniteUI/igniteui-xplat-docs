@@ -418,10 +418,9 @@ constructor() {
 }
 
 public summaryTemplate = (ctx: IgcSummaryTemplateContext) => {
-    var context = (ctx as any)['$implicit'];
     return html`
         <span> My custom summary template</span>
-        <span>${ context[0].label } - ${ context[0].summaryResult }</span>
+        <span>${ ctx.implicit[0].label } - ${ ctx.implicit[0].summaryResult }</span>
     `;
 }
 ```
@@ -433,7 +432,7 @@ public summaryTemplate = (ctx: IgcSummaryTemplateContext) => {
 igRegisterScript("SummaryTemplate", (ctx) => {
     var html = window.igTemplating.html;
     return html`<div>
-    <span> ${ctx.$implicit[0].label} - ${ctx.$implicit[0].summaryResult} </span>
+    <span> ${ctx.implicit[0].label} - ${ctx.implicit[0].summaryResult} </span>
 </div>`
 }, false);
 ```
@@ -603,10 +602,10 @@ igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
 
 ```css
 .grid {
-    --igx-grid-summary-background-color:#e0f3ff;
-    --igx-grid-summary-focus-background-color: rgba( #94d1f7, .3 );
-    --igx-grid-summary-label-color: rgb(228, 27, 117);
-    --igx-grid-summary-result-color: black;
+    --ig-grid-summary-background-color:#e0f3ff;
+    --ig-grid-summary-focus-background-color: rgba( #94d1f7, .3 );
+    --ig-grid-summary-label-color: rgb(228, 27, 117);
+    --ig-grid-summary-result-color: black;
 }
 ```
 

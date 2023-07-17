@@ -622,10 +622,10 @@ public matchingRecordsOnlyStrategy = new TreeGridMatchingRecordsOnlyFilteringStr
 
 ```css
 .grid {
-    --igx-grid-filtering-row-text-color: #292826;
-    --igx-grid-filtering-row-background: #ffcd0f;
-    --igx-grid-filtering-header-text-color: #292826;
-    --igx-grid-filtering-header-background: #ffcd0f;
+    --ig-grid-filtering-row-text-color: #292826;
+    --ig-grid-filtering-row-background: #ffcd0f;
+    --ig-grid-filtering-header-text-color: #292826;
+    --ig-grid-filtering-header-background: #ffcd0f;
 }
 ```
 

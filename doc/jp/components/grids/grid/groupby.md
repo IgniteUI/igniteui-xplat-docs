@@ -271,7 +271,7 @@ export interface IGroupByRecord {
 
 ```ts
     public groupByRowTemplate = (ctx: IgcGroupByRowTemplateContext) => {
-        const groupRow: any = ctx["$implicit"];
+        const groupRow: IgcGroupByRecord = ctx.implicit;
         return html`<span>Total items with value: ${ groupRow.value } are ${ groupRow.records.length }</span>`;
     }
 ```
@@ -283,7 +283,7 @@ export interface IGroupByRecord {
 //In JavaScript:
 igRegisterScript("WebGridGroupByRowTemplate", (ctx) => {
     var html = window.igTemplating.html;
-    var groupRow = ctx["$implicit"];
+    var groupRow = ctx.implicit;
     return html`<span>Total items with value: ${groupRow.value} are ${groupRow.records.length}</span>`;
 }, false);
 ```
@@ -303,9 +303,8 @@ igRegisterScript("WebGridGroupByRowTemplate", (ctx) => {
 
 ```ts
     public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateContext) => {
-        const context: any = (ctx as any)["$implicit"];
         return html`
-            ${ context.selectedCount } / ${ context.totalCount  }
+            ${ ctx.implicit.selectedCount } / ${ ctx.implicit.totalCount  }
         `;
     }
 ```
@@ -315,8 +314,7 @@ igRegisterScript("WebGridGroupByRowTemplate", (ctx) => {
 //In Javascript
 igRegisterScript("GroupByRowSelectorTemplate", (ctx) => {
     var html = window.igTemplating.html;
-    var context = ctx["$implicit"];
-    return html` ${context.selectedCount} / ${context.totalCount} `;
+    return html` ${ctx.implicit.selectedCount} / ${ctx.implicit.totalCount} `;
 }, false);
 ```
 
@@ -330,8 +328,7 @@ igRegisterScript("GroupByRowSelectorTemplate", (ctx) => {
 
 ```ts
     public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateContext) => {
-        const context: any = (ctx as any)["$implicit"];
-        const groupRow = context.groupRow;
+        const groupRow = ctx.implicit.groupRow;
         return html` <div @click=${(e: any) => this.handleGroupByRowSelectorClick(e, groupRow)} ">Handle groupRow</div> `;
     };
 ```
@@ -341,8 +338,7 @@ igRegisterScript("GroupByRowSelectorTemplate", (ctx) => {
 //In Javascript
 igRegisterScript("GroupByRowSelectorTemplate", (ctx) => {
     var html = window.igTemplating.html;
-    var context = ctx["$implicit"];
-    var groupRow = context.groupRow;
+    var groupRow = ctx.implicit.groupRow;
     return html`<div onclick="handleGroupByRowSelectorClick()">Handle groupRow</div> `;
 }, false);
 ```
@@ -468,13 +464,13 @@ grid.groupingExpressions = [
 
 ```css
 .grid {
-    --igx-grid-group-row-background: #969799;
-    --igx-grid-group-row-selected-background: #969799;
-    --igx-grid-group-label-column-name-text: #f8f8f8;
-    --igx-grid-group-label-text: #f8f8f8;
-    --igx-grid-group-count-text-color: #222;
-    --igx-grid-expand-icon-color: #f8f8f8;
-    --igx-grid-expand-icon-hover-color: #f8f8f8;
+    --ig-grid-group-row-background: #969799;
+    --ig-grid-group-row-selected-background: #969799;
+    --ig-grid-group-label-column-name-text: #f8f8f8;
+    --ig-grid-group-label-text: #f8f8f8;
+    --ig-grid-group-count-text-color: #222;
+    --ig-grid-expand-icon-color: #f8f8f8;
+    --ig-grid-expand-icon-hover-color: #f8f8f8;
 }
 ```
 
