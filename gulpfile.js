@@ -706,6 +706,104 @@ function updateSiteMap(cb) {
 }
 exports.updateSiteMap = updateSiteMap
 
+function buildStats(cb) {
+
+    var config = docsConfig[PLAT];
+
+    var docStats = {}
+    docStats.note = "this auto-generated file provides stats about samples used in " + PLAT + " documentation";
+    docStats.platform = PLAT;
+    docStats.samplesEnv = ENV_TARGET;
+    docStats.samplesBrowsers = config.samplesBrowsers;
+    docStats.samplesHost = config.samplesBrowsers[docStats.samplesEnv];
+    docStats.samplesCount = 0
+    docStats.samplesNote = "these are links to samples used in topics"
+    docStats.samplesUsage = {}
+    docStats.topicsCount = 0
+    docStats.topicsNote = "these are links to topics that used at least 1 sample"
+    docStats.topicsWithSamples = {}
+
+    if (!fs.existsSync(DOCFX_SITE)) {
+         fs.mkdirSync(DOCFX_SITE);
+    }
+
+    gulp.src([
+        DOCFX_PATH + '/components/**/*.md',
+    ])
+    .pipe(es.map(function(file, fileCallback) {
+        docStats.topicsCount++;
+
+        var fileContent = file.contents.toString();
+        var filePath = file.dirname + "\\" + file.basename
+        filePath = filePath.split('\\components\\')[1];
+        var topic = '/' + filePath.split('\\').join('/');
+
+        var fileLines = fileContent.split("\n");
+        var lineIndex = 0;
+        for (const line of fileLines) {
+            if (line.indexOf('iframe-src="') >= 0) {
+                var link = line.replace('iframe-src="', '');
+                link = link.trim();
+                link = link.replace('"', '');
+                link = link.replace('`', '');
+                link = link.replace('{environment:dvDemosBaseUrl}', '');
+                link = link.replace('{environment:demosBaseUrl}', '');
+
+                if (docStats.samplesHost) {
+                    link = link.replace(docStats.samplesHost, '');
+                }
+
+                docStats.samplesUsage[link] = topic;
+
+                if (docStats.topicsWithSamples[topic] === undefined) {
+                    docStats.topicsWithSamples[topic] = [];
+                }
+                if (docStats.topicsWithSamples[topic].indexOf(link) < 0) {
+                    docStats.topicsWithSamples[topic].push(link);
+                }
+
+                docStats.samplesCount++;
+            }
+            lineIndex++;
+        }
+        fileCallback(null, file);
+    }))
+    .on("end", () => {
+        if (docStats.samplesCount > 0) {
+            // sort usage of sample links alphabetically
+            var sampleMappings = {};
+            var sampleLinks = Object.keys(docStats.samplesUsage);
+            sampleLinks.sort();
+            for (const link of sampleLinks) {
+                sampleMappings[link] = docStats.samplesUsage[link];
+            }
+            docStats.samplesUsage = sampleMappings;
+
+            // sorting usage of topics links alphabetically
+            var topicMappings = {};
+            var topicNames = Object.keys(docStats.topicsWithSamples);
+            topicNames.sort();
+            for (const topic of topicNames) {
+                topicMappings[topic] = docStats.topicsWithSamples[topic].join(', ')
+            }
+            docStats.topicsWithSamples = topicMappings;
+
+            var statsPlatform = docStats.platform.replace('WebComponents','WC');
+            var statsData = JSON.stringify(docStats,  null, '  ');
+            var statsPath = DOCFX_SITE + "/stats.json";
+
+
+            console.log('extracted stats for docs and samples to: ' + statsPath);
+            fs.writeFileSync(statsPath, statsData);
+            if (LANG === 'en') {
+                fs.writeFileSync('docStats-' + statsPlatform + '.json', statsData);
+            }
+        }
+        if (cb) cb();
+    })
+}
+exports.buildStats = buildStats
+
 var verifyFiles = gulp.series(verifyMarkdown);
 
 function buildCore(cb) {
@@ -719,7 +817,7 @@ function buildCore(cb) {
     buildPlatform(cb);
 }
 
-exports.buildCoreAndTOC = buildCoreAndTOC = gulp.series(buildTOC, buildCore)
+exports.buildCoreAndTOC = buildCoreAndTOC = gulp.series(buildTOC, buildCore, buildStats)
 
 // functions for building each platform:
 function buildAngularDocFX(cb) { PLAT = "Angular"; DOCFX_FORCE_OUTPUT = true;  buildCoreAndTOC(cb); }
@@ -917,7 +1015,7 @@ function verifyMarkdown(cb) {
         var fileContent = file.contents.toString();
         var filePath = file.dirname + path.sep + file.basename
         // filePath = '.\\doc\\' + filePath.split('doc\\')[1];
-        console.log('verifying: ' + filePath);
+        // console.log('verifying: ' + filePath);
         filesCount++;
         var result = transformer.verifyMarkdown(fileContent, filePath);
         if (result.isValid) {
@@ -1269,6 +1367,7 @@ function logSampleLinks(cb, platform, server) {
     // var sampleHost = "https://localhost:4200/webcomponents-demos/samples";
     // var sampleHost = "https://staging.infragistics.com/webcomponents-demos/samples";
     if (platform === undefined) platform = argv.plat !== undefined ? argv.plat : "WC";
+
     if (platform === "WC" || platform === "WebComponents") {
         platform = "WebComponents"
         sampleHost += "/webcomponents-demos/samples";
@@ -1356,7 +1455,6 @@ exports.logSampleLinksWC = function log(cb) { logSampleLinks(cb, "WC"); };
 
 var docsInfo = {};
 function extractSampleLinks(cb, platform, server, outputType) {
-
 
     if (server === undefined) server = argv.server !== undefined ? argv.server : "staging";
     if (platform === undefined) platform = argv.plat !== undefined ? argv.plat : "WC";
