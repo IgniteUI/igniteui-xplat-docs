@@ -735,8 +735,10 @@ function buildStats(cb) {
 
         var fileContent = file.contents.toString();
         var filePath = file.dirname + "\\" + file.basename
-        filePath = filePath.split('\\components\\')[1];
-        var topic = '/' + filePath.split('\\').join('/');
+        var topic = '/' + filePath.split('\\components\\')[1];
+        if (topic.indexOf('\\') > 0) {
+            topic = filePath.split('\\').join('/');
+        }
 
         var fileLines = fileContent.split("\n");
         var lineIndex = 0;
