@@ -598,8 +598,8 @@ function replaceEnvironmentVariables(cb) {
     const environment = ENV_TARGET ? ENV_TARGET.trim() : 'development';
     const config = require(`./docfx/${LANG}/environment.json`);
     return gulp.src(`${DOCFX_SITE}/**/*.html`)
-        .pipe(replace(/(\{|\%7B)environment:([a-zA-Z]+)(\}|\%7D)/g, function (match, brace1, environmentVarable, brace2) {
-            const value = config[environment][environmentVarable];
+        .pipe(replace(/(\{|\%7B)environment:([a-zA-Z]+)(\}|\%7D)/g, function (match, brace1, envVariable, brace2) {
+            const value = config[environment][envVariable];
             return value || match;
         }))
         .pipe(gulp.dest(DOCFX_SITE));
@@ -712,15 +712,16 @@ function buildStats(cb) {
 
     var docStats = {}
     docStats.note = "this auto-generated file provides stats about samples used in " + PLAT + " documentation";
+    docStats.info = "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ";
     docStats.platform = PLAT;
     docStats.samplesEnv = ENV_TARGET;
     docStats.samplesBrowsers = config.samplesBrowsers;
     docStats.samplesHost = config.samplesBrowsers[docStats.samplesEnv];
     docStats.samplesCount = 0
-    docStats.samplesNote = "these are links to samples used in topics"
+    docStats.samplesNote = "the 'samplesUsage' provides lookup of samples usage in topics"
     docStats.samplesUsage = {}
     docStats.topicsCount = 0
-    docStats.topicsNote = "these are links to topics that used at least 1 sample"
+    docStats.topicsNote = "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample"
     docStats.topicsWithSamples = {}
 
     if (!fs.existsSync(DOCFX_SITE)) {
@@ -738,7 +739,7 @@ function buildStats(cb) {
         // console.log("stats " + filePath);
         var topic = '/' + filePath.split('\\components\\')[1];
         if (topic.indexOf('\\') > 0) {
-            topic = filePath.split('\\').join('/');
+            topic = topic.split('\\').join('/');
         }
 
         var fileLines = fileContent.split("\n");
@@ -756,8 +757,15 @@ function buildStats(cb) {
                     link = link.replace(docStats.samplesHost, '');
                 }
 
-                docStats.samplesUsage[link] = topic;
+                // creating lookup of samples
+                if (docStats.samplesUsage[link] === undefined) {
+                    docStats.samplesUsage[link] = [];
+                }
+                if (docStats.samplesUsage[link].indexOf(topic) < 0) {
+                    docStats.samplesUsage[link].push(topic);
+                }
 
+                // creating lookup of topics with samples
                 if (docStats.topicsWithSamples[topic] === undefined) {
                     docStats.topicsWithSamples[topic] = [];
                 }
@@ -778,7 +786,13 @@ function buildStats(cb) {
             var sampleLinks = Object.keys(docStats.samplesUsage);
             sampleLinks.sort();
             for (const link of sampleLinks) {
-                sampleMappings[link] = docStats.samplesUsage[link];
+                var topicsArray = docStats.samplesUsage[link];
+                topicsArray.sort();
+                // compact json - temporary replacing [] with <> in short arrays
+                // if (topicsArray.length === 1) {
+                //     topicsArray = '<' + topicsArray[0] + '>'
+                // }
+                sampleMappings[link] = topicsArray; //docStats.samplesUsage[link]; //.join(',');
             }
             docStats.samplesUsage = sampleMappings;
 
@@ -787,14 +801,22 @@ function buildStats(cb) {
             var topicNames = Object.keys(docStats.topicsWithSamples);
             topicNames.sort();
             for (const topic of topicNames) {
-                topicMappings[topic] = docStats.topicsWithSamples[topic].join(', ')
+                var samplesArray = docStats.topicsWithSamples[topic];
+                samplesArray.sort();
+                // compact json - temporary replacing [] with <> in short arrays
+                // if (samplesArray.length === 1) {
+                //     samplesArray = '<' + samplesArray[0] + '>'
+                // }
+                topicMappings[topic] = samplesArray;
             }
             docStats.topicsWithSamples = topicMappings;
 
             var statsPlatform = docStats.platform.replace('WebComponents','WC');
-            var statsData = JSON.stringify(docStats,  null, '  ');
             var statsPath = DOCFX_SITE + "/stats.json";
-
+            var statsData = JSON.stringify(docStats,  null, '  ');
+            // compact json - replacing <> with [] in short arrays
+            statsData = statsData.replace(/\"\</g,'[ "');
+            statsData = statsData.replace(/\>\"/g,'" ]');
 
             console.log('extracted stats for docs and samples to: ' + statsPath);
             fs.writeFileSync(statsPath, statsData);
@@ -1628,28 +1650,3 @@ exports.extractSampleLinksAll = gulp.series(
     extractSampleLinksReact,
     extractSampleLinksWC,
 );
-
-// function buildSampleList(cb) {
-//     let platformName = PLAT;
-//     var sampleList = [];
-//     gulp.src(includedTopics, { base: "./doc/" })
-//     .pipe(es.map(function(file, fileCallback) {
-//         // let orgJson = file.contents.toString();
-//         // read converted .yml to .json above and simplify TOC structure:
-//         // let newJson = transformer.simplifyJson(orgJson, 'Blazor');
-//         // fs.writeFileSync(tocOutputPath, newJson);
-//         fileCallback(null, file);
-//     }))
-//     .on("end", () => {
-//         if (cb !== undefined){
-//             cb();
-//         }
-//     });
-//     // .on("end", function() {
-//     // }
-//     // })
-//     // .on("error", (err) => {
-//     //     console.log("ERROR building platform: " + platformName.toString());
-//     //     cb(err);
-//     // });
-// }
