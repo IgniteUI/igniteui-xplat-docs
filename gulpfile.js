@@ -714,13 +714,23 @@ function buildStats(cb) {
     docStats.note = "this auto-generated file provides stats about samples used in " + PLAT + " documentation";
     docStats.info = "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ";
     docStats.platform = PLAT;
-    docStats.samplesEnv = ENV_TARGET;
-    docStats.samplesBrowsers = config.samplesBrowsers;
-    docStats.samplesHost = config.samplesBrowsers[docStats.samplesEnv];
+    // docStats.samplesEnv = ENV_TARGET;
+    // docStats.samplesBrowsers = config.samplesBrowsers;
     docStats.samplesCount = 0
+    docStats.samplesHost = config.samplesBrowsers.staging + '/samples'; //[docStats.samplesEnv];
     docStats.samplesNote = "the 'samplesUsage' provides lookup of samples usage in topics"
     docStats.samplesUsage = {}
+
     docStats.topicsCount = 0
+    if (PLAT === "Angular") {
+        docStats.topicsHost = 'https://staging.infragistics.com/products/ignite-ui-angular/angular/components';
+    } else if (PLAT === "Blazor") {
+        docStats.topicsHost = 'https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components';
+    } else if (PLAT === "React") {
+        docStats.topicsHost = 'https://staging.infragistics.com/products/ignite-ui-react/react/components';
+    } else if (PLAT === "WebComponents") {
+        docStats.topicsHost = 'https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components';
+    }
     docStats.topicsNote = "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample"
     docStats.topicsWithSamples = {}
 
@@ -735,12 +745,13 @@ function buildStats(cb) {
         docStats.topicsCount++;
 
         var fileContent = file.contents.toString();
-        var filePath = file.dirname + "\\" + file.basename;
+        var filePath = file.dirname + "\\" + file.basename.replace('.md', '');
         // console.log("stats " + filePath);
         var topic = '/' + filePath.split('\\components\\')[1];
         if (topic.indexOf('\\') > 0) {
             topic = topic.split('\\').join('/');
         }
+        topic =  docStats.topicsHost  + topic;
 
         var fileLines = fileContent.split("\n");
         var lineIndex = 0;
@@ -752,14 +763,20 @@ function buildStats(cb) {
                 link = link.replace('`', '');
                 link = link.replace('{environment:dvDemosBaseUrl}', '');
                 link = link.replace('{environment:demosBaseUrl}', '');
+                link = link.replace(config.samplesBrowsers.development, '');
+                link = link.replace(config.samplesBrowsers.staging, '');
+                link = link.replace(config.samplesBrowsers.production, '');
 
-                if (docStats.samplesHost) {
-                    link = link.replace(docStats.samplesHost, '');
-                }
+                link = docStats.samplesHost + '/samples' + link;
+
+                // if (docStats.samplesHost) {
+                //     link = link.replace(docStats.samplesHost, '');
+                // }
 
                 // creating lookup of samples
                 if (docStats.samplesUsage[link] === undefined) {
                     docStats.samplesUsage[link] = [];
+                    docStats.samplesCount++;
                 }
                 if (docStats.samplesUsage[link].indexOf(topic) < 0) {
                     docStats.samplesUsage[link].push(topic);
@@ -773,7 +790,6 @@ function buildStats(cb) {
                     docStats.topicsWithSamples[topic].push(link);
                 }
 
-                docStats.samplesCount++;
             }
             lineIndex++;
         }

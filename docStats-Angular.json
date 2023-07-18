@@ -2,1033 +2,1028 @@
   "note": "this auto-generated file provides stats about samples used in Angular documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "Angular",
-  "samplesEnv": "development",
-  "samplesBrowsers": {
-    "development": "http://localhost:4200",
-    "staging": "https://staging.infragistics.com/angular-demos-dv",
-    "production": "https://www.infragistics.com/angular-demos-dv"
-  },
-  "samplesHost": "http://localhost:4200",
-  "samplesCount": 252,
+  "samplesCount": 187,
+  "samplesHost": "https://staging.infragistics.com/angular-demos-dv/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
-    "/charts/category-chart/area-chart-multiple-sources": [
-      "/charts/chart-overview.md",
-      "/charts/types/area-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/area-chart-multiple-sources": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/area-chart"
     ],
-    "/charts/category-chart/area-chart-single-source": [
-      "/charts/types/area-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/area-chart-single-source": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/area-chart"
     ],
-    "/charts/category-chart/area-chart-styling": [
-      "/charts/types/area-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/area-chart-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/area-chart"
     ],
-    "/charts/category-chart/axis-gap": [
-      "/charts/features/chart-axis-options.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/axis-gap": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-options"
     ],
-    "/charts/category-chart/axis-gridlines": [
-      "/charts/features/chart-axis-gridlines.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/axis-gridlines": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-gridlines"
     ],
-    "/charts/category-chart/axis-labels": [
-      "/charts/features/chart-axis-options.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/axis-labels": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-options"
     ],
-    "/charts/category-chart/axis-locations": [
-      "/charts/features/chart-axis-layouts.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/axis-locations": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-layouts"
     ],
-    "/charts/category-chart/axis-overlap": [
-      "/charts/features/chart-axis-options.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/axis-overlap": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-options"
     ],
-    "/charts/category-chart/axis-range": [
-      "/charts/features/chart-axis-options.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/axis-range": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-options"
     ],
-    "/charts/category-chart/axis-tickmarks": [
-      "/charts/features/chart-axis-gridlines.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/axis-tickmarks": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-gridlines"
     ],
-    "/charts/category-chart/axis-titles": [
-      "/charts/features/chart-axis-options.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/axis-titles": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-options"
     ],
-    "/charts/category-chart/column-chart-multiple-sources": [
-      "/charts/chart-overview.md",
-      "/charts/types/column-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/column-chart-multiple-sources": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/column-chart"
     ],
-    "/charts/category-chart/column-chart-single-source": [
-      "/charts/types/column-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/column-chart-single-source": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/column-chart"
     ],
-    "/charts/category-chart/column-chart-styling": [
-      "/charts/types/column-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/column-chart-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/column-chart"
     ],
-    "/charts/category-chart/column-chart-with-highlighting": [
-      "/charts/chart-features.md",
-      "/charts/features/chart-highlighting.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/column-chart-with-highlighting": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-features",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-highlighting"
     ],
-    "/charts/category-chart/column-chart-with-tooltips": [
-      "/charts/chart-features.md",
-      "/charts/features/chart-tooltips.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/column-chart-with-tooltips": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-features",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-tooltips"
     ],
-    "/charts/category-chart/data-aggregations": [
-      "/charts/features/chart-data-aggregations.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/data-aggregations": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-data-aggregations"
     ],
-    "/charts/category-chart/data-legend": [
-      "/charts/features/chart-data-legend.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/data-legend": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-data-legend"
     ],
-    "/charts/category-chart/data-legend-formatting-decimals": [
-      "/charts/features/chart-data-legend.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/data-legend-formatting-decimals": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-data-legend"
     ],
-    "/charts/category-chart/data-tooltip": [
-      "/charts/features/chart-data-tooltip.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/data-tooltip": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-data-tooltip"
     ],
-    "/charts/category-chart/data-tooltip-formatting-decimals": [
-      "/charts/features/chart-data-tooltip.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/data-tooltip-formatting-decimals": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-data-tooltip"
     ],
-    "/charts/category-chart/data-tooltip-positioning": [
-      "/charts/features/chart-data-tooltip.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/data-tooltip-positioning": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-data-tooltip"
     ],
-    "/charts/category-chart/high-frequency": [
-      "/charts/features/chart-performance.md",
-      "/charts/types/line-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/high-frequency": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-performance",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/line-chart"
     ],
-    "/charts/category-chart/high-volume": [
-      "/charts/chart-features.md",
-      "/charts/features/chart-performance.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/high-volume": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-features",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-performance"
     ],
-    "/charts/category-chart/line-chart-multiple-sources": [
-      "/charts/chart-overview.md",
-      "/charts/types/line-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/line-chart-multiple-sources": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/line-chart"
     ],
-    "/charts/category-chart/line-chart-single-source": [
-      "/charts/types/line-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/line-chart-single-source": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/line-chart"
     ],
-    "/charts/category-chart/line-chart-styling": [
-      "/charts/types/line-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/line-chart-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/line-chart"
     ],
-    "/charts/category-chart/line-chart-with-animations": [
-      "/charts/chart-features.md",
-      "/charts/features/chart-animations.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/line-chart-with-animations": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-features",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-animations"
     ],
-    "/charts/category-chart/line-chart-with-annotations": [
-      "/charts/chart-features.md",
-      "/charts/features/chart-annotations.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/line-chart-with-annotations": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-features",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-annotations"
     ],
-    "/charts/category-chart/marker-options": [
-      "/charts/chart-features.md",
-      "/charts/features/chart-markers.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/marker-options": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-features",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-markers"
     ],
-    "/charts/category-chart/marker-templates": [
-      "/charts/features/chart-markers.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/marker-templates": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-markers"
     ],
-    "/charts/category-chart/point-chart-multiple-sources": [
-      "/charts/types/point-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/point-chart-multiple-sources": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/point-chart"
     ],
-    "/charts/category-chart/point-chart-single-source": [
-      "/charts/types/point-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/point-chart-single-source": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/point-chart"
     ],
-    "/charts/category-chart/point-chart-styling": [
-      "/charts/types/point-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/point-chart-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/point-chart"
     ],
-    "/charts/category-chart/spline-multiple-sources": [
-      "/charts/chart-overview.md",
-      "/charts/types/spline-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/spline-multiple-sources": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/spline-chart"
     ],
-    "/charts/category-chart/spline-single-source": [
-      "/charts/types/spline-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/spline-single-source": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/spline-chart"
     ],
-    "/charts/category-chart/spline-styling": [
-      "/charts/types/spline-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/spline-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/spline-chart"
     ],
-    "/charts/category-chart/step-area-multiple-sources": [
-      "/charts/types/area-chart.md",
-      "/charts/types/step-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/step-area-multiple-sources": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/area-chart",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/step-chart"
     ],
-    "/charts/category-chart/step-line-multiple-sources": [
-      "/charts/chart-overview.md",
-      "/charts/types/step-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/step-line-multiple-sources": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/step-chart"
     ],
-    "/charts/category-chart/step-line-styling": [
-      "/charts/types/step-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/step-line-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/step-chart"
     ],
-    "/charts/category-chart/tooltip-template": [
-      "/charts/features/chart-tooltips.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/tooltip-template": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-tooltips"
     ],
-    "/charts/category-chart/value-lines": [
-      "/charts/features/chart-overlays.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/value-lines": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-overlays"
     ],
-    "/charts/data-chart/axis-crossing": [
-      "/charts/chart-features.md",
-      "/charts/features/chart-axis-layouts.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/axis-crossing": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-features",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-layouts"
     ],
-    "/charts/data-chart/axis-sharing": [
-      "/charts/features/chart-axis-layouts.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/axis-sharing": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-layouts"
     ],
-    "/charts/data-chart/bar-chart-multiple-sources": [
-      "/charts/chart-overview.md",
-      "/charts/features/chart-axis-types.md",
-      "/charts/types/bar-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/bar-chart-multiple-sources": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-types",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/bar-chart"
     ],
-    "/charts/data-chart/bar-chart-single-source": [
-      "/charts/types/bar-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/bar-chart-single-source": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/bar-chart"
     ],
-    "/charts/data-chart/bar-chart-styling": [
-      "/charts/types/bar-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/bar-chart-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/bar-chart"
     ],
-    "/charts/data-chart/callout-layer-styling": [
-      "/charts/features/chart-annotations.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/callout-layer-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-annotations"
     ],
-    "/charts/data-chart/chart-navigation": [
-      "/charts/chart-features.md",
-      "/charts/features/chart-navigation.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/chart-navigation": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-features",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-navigation"
     ],
-    "/charts/data-chart/chart-synchronization": [
-      "/charts/features/chart-synchronization.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/chart-synchronization": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-synchronization"
     ],
-    "/charts/data-chart/composite-chart": [
-      "/charts/chart-overview.md",
-      "/charts/types/composite-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/composite-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/composite-chart"
     ],
-    "/charts/data-chart/crosshair-layer-styling": [
-      "/charts/features/chart-annotations.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/crosshair-layer-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-annotations"
     ],
-    "/charts/data-chart/dash-array-axes": [
-      "/charts/features/chart-axis-gridlines.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/dash-array-axes": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-gridlines"
     ],
-    "/charts/data-chart/dash-array-series": [
-      "/charts/types/line-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/dash-array-series": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/line-chart"
     ],
-    "/charts/data-chart/dash-array-trendline": [
-      "/charts/features/chart-trendlines.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/dash-array-trendline": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-trendlines"
     ],
-    "/charts/data-chart/final-value-layer-styling": [
-      "/charts/features/chart-annotations.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/final-value-layer-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-annotations"
     ],
-    "/charts/data-chart/polar-area-chart": [
-      "/charts/types/area-chart.md",
-      "/charts/types/polar-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/polar-area-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/area-chart",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/polar-chart"
     ],
-    "/charts/data-chart/polar-area-chart-styling": [
-      "/charts/types/polar-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/polar-area-chart-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/polar-chart"
     ],
-    "/charts/data-chart/polar-line-chart": [
-      "/charts/chart-overview.md",
-      "/charts/features/chart-axis-types.md",
-      "/charts/types/line-chart.md",
-      "/charts/types/polar-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/polar-line-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-types",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/line-chart",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/polar-chart"
     ],
-    "/charts/data-chart/polar-scatter-chart": [
-      "/charts/features/chart-axis-types.md",
-      "/charts/types/polar-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/polar-scatter-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-types",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/polar-chart"
     ],
-    "/charts/data-chart/polar-spline-area-chart": [
-      "/charts/types/area-chart.md",
-      "/charts/types/polar-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/polar-spline-area-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/area-chart",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/polar-chart"
     ],
-    "/charts/data-chart/polar-spline-chart": [
-      "/charts/types/polar-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/polar-spline-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/polar-chart"
     ],
-    "/charts/data-chart/radial-area-chart": [
-      "/charts/features/chart-axis-types.md",
-      "/charts/types/area-chart.md",
-      "/charts/types/radial-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/radial-area-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-types",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/area-chart",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/radial-chart"
     ],
-    "/charts/data-chart/radial-area-chart-styling": [
-      "/charts/types/radial-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/radial-area-chart-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/radial-chart"
     ],
-    "/charts/data-chart/radial-column-chart": [
-      "/charts/types/column-chart.md",
-      "/charts/types/radial-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/radial-column-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/column-chart",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/radial-chart"
     ],
-    "/charts/data-chart/radial-line-chart": [
-      "/charts/types/line-chart.md",
-      "/charts/types/radial-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/radial-line-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/line-chart",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/radial-chart"
     ],
-    "/charts/data-chart/radial-pie-chart": [
-      "/charts/types/pie-chart.md",
-      "/charts/types/radial-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/radial-pie-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/pie-chart",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/radial-chart"
     ],
-    "/charts/data-chart/range-area-chart": [
-      "/charts/types/area-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/range-area-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/area-chart"
     ],
-    "/charts/data-chart/range-column-chart": [
-      "/charts/types/column-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/range-column-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/column-chart"
     ],
-    "/charts/data-chart/scatter-bubble-chart-multiple-sources": [
-      "/charts/chart-overview.md",
-      "/charts/types/bubble-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/scatter-bubble-chart-multiple-sources": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/bubble-chart"
     ],
-    "/charts/data-chart/scatter-bubble-chart-single-source": [
-      "/charts/types/bubble-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/scatter-bubble-chart-single-source": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/bubble-chart"
     ],
-    "/charts/data-chart/scatter-bubble-chart-styling": [
-      "/charts/types/bubble-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/scatter-bubble-chart-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/bubble-chart"
     ],
-    "/charts/data-chart/scatter-line-chart": [
-      "/charts/features/chart-axis-types.md",
-      "/charts/types/scatter-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/scatter-line-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-types",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/scatter-chart"
     ],
-    "/charts/data-chart/scatter-point-chart": [
-      "/charts/chart-overview.md",
-      "/charts/types/scatter-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/scatter-point-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/scatter-chart"
     ],
-    "/charts/data-chart/scatter-spline-chart": [
-      "/charts/types/scatter-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/scatter-spline-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/scatter-chart"
     ],
-    "/charts/data-chart/series-value-overlay": [
-      "/charts/chart-features.md",
-      "/charts/features/chart-overlays.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/series-value-overlay": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-features",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-overlays"
     ],
-    "/charts/data-chart/stacked-100-area-chart": [
-      "/charts/types/area-chart.md",
-      "/charts/types/stacked-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-100-area-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/area-chart",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/stacked-chart"
     ],
-    "/charts/data-chart/stacked-100-bar-chart": [
-      "/charts/types/bar-chart.md",
-      "/charts/types/stacked-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-100-bar-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/bar-chart",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/stacked-chart"
     ],
-    "/charts/data-chart/stacked-100-column-chart": [
-      "/charts/types/column-chart.md",
-      "/charts/types/stacked-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-100-column-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/column-chart",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/stacked-chart"
     ],
-    "/charts/data-chart/stacked-100-line-chart": [
-      "/charts/types/line-chart.md",
-      "/charts/types/stacked-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-100-line-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/line-chart",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/stacked-chart"
     ],
-    "/charts/data-chart/stacked-100-spline-area-chart": [
-      "/charts/types/area-chart.md",
-      "/charts/types/stacked-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-100-spline-area-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/area-chart",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/stacked-chart"
     ],
-    "/charts/data-chart/stacked-100-spline-chart": [
-      "/charts/types/spline-chart.md",
-      "/charts/types/stacked-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-100-spline-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/spline-chart",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/stacked-chart"
     ],
-    "/charts/data-chart/stacked-area-chart": [
-      "/charts/types/area-chart.md",
-      "/charts/types/stacked-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-area-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/area-chart",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/stacked-chart"
     ],
-    "/charts/data-chart/stacked-bar-chart": [
-      "/charts/types/bar-chart.md",
-      "/charts/types/stacked-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-bar-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/bar-chart",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/stacked-chart"
     ],
-    "/charts/data-chart/stacked-chart-types": [
-      "/charts/types/stacked-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-chart-types": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/stacked-chart"
     ],
-    "/charts/data-chart/stacked-column-chart": [
-      "/charts/features/chart-axis-types.md",
-      "/charts/types/column-chart.md",
-      "/charts/types/stacked-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-column-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-types",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/column-chart",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/stacked-chart"
     ],
-    "/charts/data-chart/stacked-line-chart": [
-      "/charts/types/line-chart.md",
-      "/charts/types/stacked-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-line-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/line-chart",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/stacked-chart"
     ],
-    "/charts/data-chart/stacked-spline-area-chart": [
-      "/charts/types/area-chart.md",
-      "/charts/types/stacked-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-spline-area-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/area-chart",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/stacked-chart"
     ],
-    "/charts/data-chart/stacked-spline-chart": [
-      "/charts/types/spline-chart.md",
-      "/charts/types/stacked-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-spline-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/spline-chart",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/stacked-chart"
     ],
-    "/charts/data-chart/tooltip-template": [
-      "/charts/features/chart-tooltips.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/tooltip-template": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-tooltips"
     ],
-    "/charts/data-chart/type-scatter-area-series": [
-      "/charts/types/scatter-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/type-scatter-area-series": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/scatter-chart"
     ],
-    "/charts/data-chart/type-scatter-contour-series": [
-      "/charts/types/scatter-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/type-scatter-contour-series": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/scatter-chart"
     ],
-    "/charts/data-chart/type-scatter-hd-series": [
-      "/charts/features/chart-axis-types.md",
-      "/charts/types/scatter-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/type-scatter-hd-series": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-types",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/scatter-chart"
     ],
-    "/charts/data-chart/type-scatter-polygon-series": [
-      "/charts/chart-overview.md",
-      "/charts/types/shape-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/type-scatter-polygon-series": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/shape-chart"
     ],
-    "/charts/data-chart/type-scatter-polyline-series": [
-      "/charts/types/shape-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/type-scatter-polyline-series": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/shape-chart"
     ],
-    "/charts/data-chart/waterfall-chart": [
-      "/charts/types/column-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/waterfall-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/column-chart"
     ],
-    "/charts/doughnut-chart/legend": [
-      "/charts/chart-overview.md",
-      "/charts/types/donut-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/doughnut-chart/legend": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/donut-chart"
     ],
-    "/charts/doughnut-chart/rings": [
-      "/charts/types/donut-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/doughnut-chart/rings": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/donut-chart"
     ],
-    "/charts/doughnut-chart/selection": [
-      "/charts/types/donut-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/doughnut-chart/selection": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/donut-chart"
     ],
-    "/charts/financial-chart/annotations": [
-      "/charts/types/stock-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/annotations": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/stock-chart"
     ],
-    "/charts/financial-chart/axis-types": [
-      "/charts/features/chart-axis-options.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/axis-types": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-options"
     ],
-    "/charts/financial-chart/data-legend": [
-      "/charts/features/chart-data-legend.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/data-legend": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-data-legend"
     ],
-    "/charts/financial-chart/data-legend-formatting-currency": [
-      "/charts/features/chart-data-legend.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/data-legend-formatting-currency": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-data-legend"
     ],
-    "/charts/financial-chart/data-legend-styling-props": [
-      "/charts/features/chart-data-legend.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/data-legend-styling-props": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-data-legend"
     ],
-    "/charts/financial-chart/data-tooltip": [
-      "/charts/features/chart-data-tooltip.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/data-tooltip": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-data-tooltip"
     ],
-    "/charts/financial-chart/data-tooltip-formatting-currency": [
-      "/charts/features/chart-data-tooltip.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/data-tooltip-formatting-currency": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-data-tooltip"
     ],
-    "/charts/financial-chart/data-tooltip-styling-props": [
-      "/charts/features/chart-data-tooltip.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/data-tooltip-styling-props": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-data-tooltip"
     ],
-    "/charts/financial-chart/multiple-data": [
-      "/charts/chart-overview.md",
-      "/charts/types/stock-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/multiple-data": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/stock-chart"
     ],
-    "/charts/financial-chart/panes": [
-      "/charts/types/stock-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/panes": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/stock-chart"
     ],
-    "/charts/financial-chart/scrollbars": [
-      "/charts/features/chart-navigation.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/scrollbars": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-navigation"
     ],
-    "/charts/financial-chart/stock-index-chart": [
-      "/charts/types/stock-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/stock-index-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/stock-chart"
     ],
-    "/charts/financial-chart/styling": [
-      "/charts/types/stock-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/stock-chart"
     ],
-    "/charts/financial-chart/trendlines": [
-      "/charts/chart-features.md",
-      "/charts/features/chart-trendlines.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/trendlines": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-features",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-trendlines"
     ],
-    "/charts/pie-chart/animation": [
-      "/charts/types/pie-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/pie-chart/animation": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/pie-chart"
     ],
-    "/charts/pie-chart/explosion": [
-      "/charts/types/pie-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/pie-chart/explosion": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/pie-chart"
     ],
-    "/charts/pie-chart/legend": [
-      "/charts/types/pie-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/pie-chart/legend": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/pie-chart"
     ],
-    "/charts/pie-chart/others": [
-      "/charts/types/pie-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/pie-chart/others": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/pie-chart"
     ],
-    "/charts/pie-chart/overview": [
-      "/charts/chart-overview.md",
-      "/charts/types/pie-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/pie-chart/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/pie-chart"
     ],
-    "/charts/pie-chart/selection": [
-      "/charts/types/pie-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/pie-chart/selection": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/pie-chart"
     ],
-    "/charts/pie-chart/styling": [
-      "/charts/types/pie-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/pie-chart/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/pie-chart"
     ],
-    "/charts/sparkline/display-types": [
-      "/charts/chart-overview.md",
-      "/charts/types/sparkline-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/sparkline/display-types": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/sparkline-chart"
     ],
-    "/charts/sparkline/grid": [
-      "/charts/types/sparkline-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/sparkline/grid": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/sparkline-chart"
     ],
-    "/charts/sparkline/markers": [
-      "/charts/types/sparkline-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/sparkline/markers": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/sparkline-chart"
     ],
-    "/charts/sparkline/normal-range": [
-      "/charts/types/sparkline-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/sparkline/normal-range": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/sparkline-chart"
     ],
-    "/charts/sparkline/trendlines": [
-      "/charts/types/sparkline-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/sparkline/trendlines": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/sparkline-chart"
     ],
-    "/charts/sparkline/unknown-values": [
-      "/charts/types/sparkline-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/sparkline/unknown-values": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/sparkline-chart"
     ],
-    "/charts/toolbar/actions-built-in-category-chart": [
-      "/menus/toolbar.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/toolbar/actions-built-in-category-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/menus/toolbar"
     ],
-    "/charts/toolbar/layout-actions-for-data-chart": [
-      "/menus/toolbar.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/toolbar/layout-actions-for-data-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/menus/toolbar"
     ],
-    "/charts/tree-map/layout": [
-      "/charts/types/treemap-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/tree-map/layout": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/treemap-chart"
     ],
-    "/charts/tree-map/overview": [
-      "/charts/chart-overview.md",
-      "/charts/types/treemap-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/tree-map/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/treemap-chart"
     ],
-    "/charts/tree-map/styling": [
-      "/charts/types/treemap-chart.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/tree-map/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/treemap-chart"
     ],
-    "/charts/zoomslider/overview": [
-      "/zoomslider-overview.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/zoomslider/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/zoomslider-overview"
     ],
-    "/excel/excel-library/operations-on-workbooks": [
-      "/excel-library-using-workbooks.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/excel-library/operations-on-workbooks": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/excel-library-using-workbooks"
     ],
-    "/excel/excel-library/operations-on-worksheets": [
-      "/excel-library-using-worksheets.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/excel-library/operations-on-worksheets": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/excel-library-using-worksheets"
     ],
-    "/excel/excel-library/overview": [
-      "/excel-library.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/excel-library/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/excel-library"
     ],
-    "/excel/excel-library/working-with-cells": [
-      "/excel-library-using-cells.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/excel-library/working-with-cells": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/excel-library-using-cells"
     ],
-    "/excel/excel-library/working-with-charts": [
-      "/excel-library-working-with-charts.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/excel-library/working-with-charts": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/excel-library-working-with-charts"
     ],
-    "/excel/excel-library/working-with-sparklines": [
-      "/excel-library-working-with-sparklines.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/excel-library/working-with-sparklines": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/excel-library-working-with-sparklines"
     ],
-    "/excel/spreadsheet/activation": [
-      "/spreadsheet-activation.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/spreadsheet/activation": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/spreadsheet-activation"
     ],
-    "/excel/spreadsheet/adapter-chart": [
-      "/spreadsheet-chart-adapter.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/spreadsheet/adapter-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/spreadsheet-chart-adapter"
     ],
-    "/excel/spreadsheet/clipboard": [
-      "/spreadsheet-clipboard.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/spreadsheet/clipboard": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/spreadsheet-clipboard"
     ],
-    "/excel/spreadsheet/commands": [
-      "/spreadsheet-commands.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/spreadsheet/commands": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/spreadsheet-commands"
     ],
-    "/excel/spreadsheet/conditional-formatting": [
-      "/spreadsheet-conditional-formatting.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/spreadsheet/conditional-formatting": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/spreadsheet-conditional-formatting"
     ],
-    "/excel/spreadsheet/config-options": [
-      "/spreadsheet-configuring.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/spreadsheet/config-options": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/spreadsheet-configuring"
     ],
-    "/excel/spreadsheet/data-validation": [
-      "/spreadsheet-data-validation.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/spreadsheet/data-validation": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/spreadsheet-data-validation"
     ],
-    "/excel/spreadsheet/hyperlinks": [
-      "/spreadsheet-hyperlinks.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/spreadsheet/hyperlinks": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/spreadsheet-hyperlinks"
     ],
-    "/excel/spreadsheet/overview": [
-      "/spreadsheet-overview.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/spreadsheet/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/spreadsheet-overview"
     ],
-    "/gauges/bullet-graph/animation": [
-      "/bullet-graph.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/bullet-graph/animation": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/bullet-graph"
     ],
-    "/gauges/bullet-graph/background": [
-      "/bullet-graph.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/bullet-graph/background": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/bullet-graph"
     ],
-    "/gauges/bullet-graph/labels": [
-      "/bullet-graph.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/bullet-graph/labels": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/bullet-graph"
     ],
-    "/gauges/bullet-graph/measures": [
-      "/bullet-graph.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/bullet-graph/measures": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/bullet-graph"
     ],
-    "/gauges/bullet-graph/ranges": [
-      "/bullet-graph.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/bullet-graph/ranges": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/bullet-graph"
     ],
-    "/gauges/bullet-graph/scale": [
-      "/bullet-graph.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/bullet-graph/scale": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/bullet-graph"
     ],
-    "/gauges/bullet-graph/tickmarks": [
-      "/bullet-graph.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/bullet-graph/tickmarks": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/bullet-graph"
     ],
-    "/gauges/linear-gauge/animation": [
-      "/linear-gauge.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/linear-gauge/animation": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/linear-gauge"
     ],
-    "/gauges/linear-gauge/backing": [
-      "/linear-gauge.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/linear-gauge/backing": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/linear-gauge"
     ],
-    "/gauges/linear-gauge/labels": [
-      "/linear-gauge.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/linear-gauge/labels": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/linear-gauge"
     ],
-    "/gauges/linear-gauge/needle": [
-      "/linear-gauge.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/linear-gauge/needle": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/linear-gauge"
     ],
-    "/gauges/linear-gauge/ranges": [
-      "/linear-gauge.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/linear-gauge/ranges": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/linear-gauge"
     ],
-    "/gauges/linear-gauge/scale": [
-      "/linear-gauge.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/linear-gauge/scale": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/linear-gauge"
     ],
-    "/gauges/linear-gauge/tickmarks": [
-      "/linear-gauge.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/linear-gauge/tickmarks": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/linear-gauge"
     ],
-    "/gauges/radial-gauge/animation": [
-      "/radial-gauge.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/radial-gauge/animation": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/radial-gauge"
     ],
-    "/gauges/radial-gauge/backing": [
-      "/radial-gauge.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/radial-gauge/backing": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/radial-gauge"
     ],
-    "/gauges/radial-gauge/labels": [
-      "/radial-gauge.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/radial-gauge/labels": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/radial-gauge"
     ],
-    "/gauges/radial-gauge/needle": [
-      "/radial-gauge.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/radial-gauge/needle": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/radial-gauge"
     ],
-    "/gauges/radial-gauge/ranges": [
-      "/radial-gauge.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/radial-gauge/ranges": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/radial-gauge"
     ],
-    "/gauges/radial-gauge/scale": [
-      "/radial-gauge.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/radial-gauge/scale": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/radial-gauge"
     ],
-    "/gauges/radial-gauge/tickmarks": [
-      "/radial-gauge.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/radial-gauge/tickmarks": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/radial-gauge"
     ],
-    "/maps/geo-map/binding-data-csv": [
-      "/geo-map-binding-data-csv.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/binding-data-csv": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-binding-data-csv"
     ],
-    "/maps/geo-map/binding-data-json-points": [
-      "/geo-map-binding-data-json-points.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/binding-data-json-points": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-binding-data-json-points"
     ],
-    "/maps/geo-map/binding-data-model": [
-      "/geo-map-binding-data-model.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/binding-data-model": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-binding-data-model"
     ],
-    "/maps/geo-map/binding-multiple-shapes": [
-      "/geo-map-binding-multiple-shapes.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/binding-multiple-shapes": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-binding-multiple-shapes"
     ],
-    "/maps/geo-map/binding-multiple-sources": [
-      "/geo-map-binding-multiple-sources.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/binding-multiple-sources": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-binding-multiple-sources"
     ],
-    "/maps/geo-map/binding-shp-polylines": [
-      "/geo-map-binding-shp-file.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/binding-shp-polylines": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-binding-shp-file"
     ],
-    "/maps/geo-map/display-bing-imagery": [
-      "/geo-map-display-bing-imagery.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/display-bing-imagery": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-display-bing-imagery"
     ],
-    "/maps/geo-map/display-esri-imagery": [
-      "/geo-map-display-esri-imagery.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/display-esri-imagery": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-display-esri-imagery"
     ],
-    "/maps/geo-map/display-heat-imagery": [
-      "/geo-map-display-heat-imagery.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/display-heat-imagery": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-display-heat-imagery"
     ],
-    "/maps/geo-map/display-osm-imagery": [
-      "/geo-map-display-osm-imagery.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/display-osm-imagery": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-display-osm-imagery"
     ],
-    "/maps/geo-map/navigation": [
-      "/geo-map-navigation.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/navigation": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-navigation"
     ],
-    "/maps/geo-map/shape-styling": [
-      "/geo-map-shape-styling.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/shape-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-shape-styling"
     ],
-    "/maps/geo-map/type-scatter-area-series": [
-      "/geo-map-type-scatter-area-series.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/type-scatter-area-series": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-type-scatter-area-series"
     ],
-    "/maps/geo-map/type-scatter-bubble-series": [
-      "/geo-map-type-scatter-bubble-series.md",
-      "/geo-map.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/type-scatter-bubble-series": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map",
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-type-scatter-bubble-series"
     ],
-    "/maps/geo-map/type-scatter-contour-series": [
-      "/geo-map-type-scatter-contour-series.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/type-scatter-contour-series": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-type-scatter-contour-series"
     ],
-    "/maps/geo-map/type-scatter-density-series": [
-      "/geo-map-type-scatter-density-series.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/type-scatter-density-series": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-type-scatter-density-series"
     ],
-    "/maps/geo-map/type-scatter-symbol-series": [
-      "/geo-map-type-scatter-symbol-series.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/type-scatter-symbol-series": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-type-scatter-symbol-series"
     ],
-    "/maps/geo-map/type-shape-polygon-series": [
-      "/geo-map-type-shape-polygon-series.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/type-shape-polygon-series": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-type-shape-polygon-series"
     ],
-    "/maps/geo-map/type-shape-polyline-series": [
-      "/geo-map-type-shape-polyline-series.md"
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/type-shape-polyline-series": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-type-shape-polyline-series"
     ]
   },
   "topicsCount": 91,
+  "topicsHost": "https://staging.infragistics.com/products/ignite-ui-angular/angular/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
-    "/bullet-graph.md": [
-      "/gauges/bullet-graph/animation",
-      "/gauges/bullet-graph/background",
-      "/gauges/bullet-graph/labels",
-      "/gauges/bullet-graph/measures",
-      "/gauges/bullet-graph/ranges",
-      "/gauges/bullet-graph/scale",
-      "/gauges/bullet-graph/tickmarks"
-    ],
-    "/charts/chart-features.md": [
-      "/charts/category-chart/column-chart-with-highlighting",
-      "/charts/category-chart/column-chart-with-tooltips",
-      "/charts/category-chart/high-volume",
-      "/charts/category-chart/line-chart-with-animations",
-      "/charts/category-chart/line-chart-with-annotations",
-      "/charts/category-chart/marker-options",
-      "/charts/data-chart/axis-crossing",
-      "/charts/data-chart/chart-navigation",
-      "/charts/data-chart/series-value-overlay",
-      "/charts/financial-chart/trendlines"
-    ],
-    "/charts/chart-overview.md": [
-      "/charts/category-chart/area-chart-multiple-sources",
-      "/charts/category-chart/column-chart-multiple-sources",
-      "/charts/category-chart/line-chart-multiple-sources",
-      "/charts/category-chart/spline-multiple-sources",
-      "/charts/category-chart/step-line-multiple-sources",
-      "/charts/data-chart/bar-chart-multiple-sources",
-      "/charts/data-chart/composite-chart",
-      "/charts/data-chart/polar-line-chart",
-      "/charts/data-chart/scatter-bubble-chart-multiple-sources",
-      "/charts/data-chart/scatter-point-chart",
-      "/charts/data-chart/type-scatter-polygon-series",
-      "/charts/doughnut-chart/legend",
-      "/charts/financial-chart/multiple-data",
-      "/charts/pie-chart/overview",
-      "/charts/sparkline/display-types",
-      "/charts/tree-map/overview"
-    ],
-    "/charts/features/chart-animations.md": [
-      "/charts/category-chart/line-chart-with-animations"
-    ],
-    "/charts/features/chart-annotations.md": [
-      "/charts/category-chart/line-chart-with-annotations",
-      "/charts/data-chart/callout-layer-styling",
-      "/charts/data-chart/crosshair-layer-styling",
-      "/charts/data-chart/final-value-layer-styling"
-    ],
-    "/charts/features/chart-axis-gridlines.md": [
-      "/charts/category-chart/axis-gridlines",
-      "/charts/category-chart/axis-tickmarks",
-      "/charts/data-chart/dash-array-axes"
-    ],
-    "/charts/features/chart-axis-layouts.md": [
-      "/charts/category-chart/axis-locations",
-      "/charts/data-chart/axis-crossing",
-      "/charts/data-chart/axis-sharing"
-    ],
-    "/charts/features/chart-axis-options.md": [
-      "/charts/category-chart/axis-gap",
-      "/charts/category-chart/axis-labels",
-      "/charts/category-chart/axis-overlap",
-      "/charts/category-chart/axis-range",
-      "/charts/category-chart/axis-titles",
-      "/charts/financial-chart/axis-types"
-    ],
-    "/charts/features/chart-axis-types.md": [
-      "/charts/data-chart/bar-chart-multiple-sources",
-      "/charts/data-chart/polar-line-chart",
-      "/charts/data-chart/polar-scatter-chart",
-      "/charts/data-chart/radial-area-chart",
-      "/charts/data-chart/scatter-line-chart",
-      "/charts/data-chart/stacked-column-chart",
-      "/charts/data-chart/type-scatter-hd-series"
-    ],
-    "/charts/features/chart-data-aggregations.md": [
-      "/charts/category-chart/data-aggregations"
-    ],
-    "/charts/features/chart-data-legend.md": [
-      "/charts/category-chart/data-legend",
-      "/charts/category-chart/data-legend-formatting-decimals",
-      "/charts/financial-chart/data-legend",
-      "/charts/financial-chart/data-legend-formatting-currency",
-      "/charts/financial-chart/data-legend-styling-props"
-    ],
-    "/charts/features/chart-data-tooltip.md": [
-      "/charts/category-chart/data-tooltip",
-      "/charts/category-chart/data-tooltip-formatting-decimals",
-      "/charts/category-chart/data-tooltip-positioning",
-      "/charts/financial-chart/data-tooltip",
-      "/charts/financial-chart/data-tooltip-formatting-currency",
-      "/charts/financial-chart/data-tooltip-styling-props"
-    ],
-    "/charts/features/chart-highlighting.md": [
-      "/charts/category-chart/column-chart-with-highlighting"
-    ],
-    "/charts/features/chart-markers.md": [
-      "/charts/category-chart/marker-options",
-      "/charts/category-chart/marker-templates"
-    ],
-    "/charts/features/chart-navigation.md": [
-      "/charts/data-chart/chart-navigation",
-      "/charts/financial-chart/scrollbars"
-    ],
-    "/charts/features/chart-overlays.md": [
-      "/charts/category-chart/value-lines",
-      "/charts/data-chart/series-value-overlay"
-    ],
-    "/charts/features/chart-performance.md": [
-      "/charts/category-chart/high-frequency",
-      "/charts/category-chart/high-volume"
-    ],
-    "/charts/features/chart-synchronization.md": [
-      "/charts/data-chart/chart-synchronization"
-    ],
-    "/charts/features/chart-tooltips.md": [
-      "/charts/category-chart/column-chart-with-tooltips",
-      "/charts/category-chart/tooltip-template",
-      "/charts/data-chart/tooltip-template"
-    ],
-    "/charts/features/chart-trendlines.md": [
-      "/charts/data-chart/dash-array-trendline",
-      "/charts/financial-chart/trendlines"
-    ],
-    "/charts/types/area-chart.md": [
-      "/charts/category-chart/area-chart-multiple-sources",
-      "/charts/category-chart/area-chart-single-source",
-      "/charts/category-chart/area-chart-styling",
-      "/charts/category-chart/step-area-multiple-sources",
-      "/charts/data-chart/polar-area-chart",
-      "/charts/data-chart/polar-spline-area-chart",
-      "/charts/data-chart/radial-area-chart",
-      "/charts/data-chart/range-area-chart",
-      "/charts/data-chart/stacked-100-area-chart",
-      "/charts/data-chart/stacked-100-spline-area-chart",
-      "/charts/data-chart/stacked-area-chart",
-      "/charts/data-chart/stacked-spline-area-chart"
-    ],
-    "/charts/types/bar-chart.md": [
-      "/charts/data-chart/bar-chart-multiple-sources",
-      "/charts/data-chart/bar-chart-single-source",
-      "/charts/data-chart/bar-chart-styling",
-      "/charts/data-chart/stacked-100-bar-chart",
-      "/charts/data-chart/stacked-bar-chart"
-    ],
-    "/charts/types/bubble-chart.md": [
-      "/charts/data-chart/scatter-bubble-chart-multiple-sources",
-      "/charts/data-chart/scatter-bubble-chart-single-source",
-      "/charts/data-chart/scatter-bubble-chart-styling"
-    ],
-    "/charts/types/column-chart.md": [
-      "/charts/category-chart/column-chart-multiple-sources",
-      "/charts/category-chart/column-chart-single-source",
-      "/charts/category-chart/column-chart-styling",
-      "/charts/data-chart/radial-column-chart",
-      "/charts/data-chart/range-column-chart",
-      "/charts/data-chart/stacked-100-column-chart",
-      "/charts/data-chart/stacked-column-chart",
-      "/charts/data-chart/waterfall-chart"
-    ],
-    "/charts/types/composite-chart.md": [
-      "/charts/data-chart/composite-chart"
-    ],
-    "/charts/types/donut-chart.md": [
-      "/charts/doughnut-chart/legend",
-      "/charts/doughnut-chart/rings",
-      "/charts/doughnut-chart/selection"
-    ],
-    "/charts/types/line-chart.md": [
-      "/charts/category-chart/high-frequency",
-      "/charts/category-chart/line-chart-multiple-sources",
-      "/charts/category-chart/line-chart-single-source",
-      "/charts/category-chart/line-chart-styling",
-      "/charts/data-chart/dash-array-series",
-      "/charts/data-chart/polar-line-chart",
-      "/charts/data-chart/radial-line-chart",
-      "/charts/data-chart/stacked-100-line-chart",
-      "/charts/data-chart/stacked-line-chart"
-    ],
-    "/charts/types/pie-chart.md": [
-      "/charts/data-chart/radial-pie-chart",
-      "/charts/pie-chart/animation",
-      "/charts/pie-chart/explosion",
-      "/charts/pie-chart/legend",
-      "/charts/pie-chart/others",
-      "/charts/pie-chart/overview",
-      "/charts/pie-chart/selection",
-      "/charts/pie-chart/styling"
-    ],
-    "/charts/types/point-chart.md": [
-      "/charts/category-chart/point-chart-multiple-sources",
-      "/charts/category-chart/point-chart-single-source",
-      "/charts/category-chart/point-chart-styling"
-    ],
-    "/charts/types/polar-chart.md": [
-      "/charts/data-chart/polar-area-chart",
-      "/charts/data-chart/polar-area-chart-styling",
-      "/charts/data-chart/polar-line-chart",
-      "/charts/data-chart/polar-scatter-chart",
-      "/charts/data-chart/polar-spline-area-chart",
-      "/charts/data-chart/polar-spline-chart"
-    ],
-    "/charts/types/radial-chart.md": [
-      "/charts/data-chart/radial-area-chart",
-      "/charts/data-chart/radial-area-chart-styling",
-      "/charts/data-chart/radial-column-chart",
-      "/charts/data-chart/radial-line-chart",
-      "/charts/data-chart/radial-pie-chart"
-    ],
-    "/charts/types/scatter-chart.md": [
-      "/charts/data-chart/scatter-line-chart",
-      "/charts/data-chart/scatter-point-chart",
-      "/charts/data-chart/scatter-spline-chart",
-      "/charts/data-chart/type-scatter-area-series",
-      "/charts/data-chart/type-scatter-contour-series",
-      "/charts/data-chart/type-scatter-hd-series"
-    ],
-    "/charts/types/shape-chart.md": [
-      "/charts/data-chart/type-scatter-polygon-series",
-      "/charts/data-chart/type-scatter-polyline-series"
-    ],
-    "/charts/types/sparkline-chart.md": [
-      "/charts/sparkline/display-types",
-      "/charts/sparkline/grid",
-      "/charts/sparkline/markers",
-      "/charts/sparkline/normal-range",
-      "/charts/sparkline/trendlines",
-      "/charts/sparkline/unknown-values"
-    ],
-    "/charts/types/spline-chart.md": [
-      "/charts/category-chart/spline-multiple-sources",
-      "/charts/category-chart/spline-single-source",
-      "/charts/category-chart/spline-styling",
-      "/charts/data-chart/stacked-100-spline-chart",
-      "/charts/data-chart/stacked-spline-chart"
-    ],
-    "/charts/types/stacked-chart.md": [
-      "/charts/data-chart/stacked-100-area-chart",
-      "/charts/data-chart/stacked-100-bar-chart",
-      "/charts/data-chart/stacked-100-column-chart",
-      "/charts/data-chart/stacked-100-line-chart",
-      "/charts/data-chart/stacked-100-spline-area-chart",
-      "/charts/data-chart/stacked-100-spline-chart",
-      "/charts/data-chart/stacked-area-chart",
-      "/charts/data-chart/stacked-bar-chart",
-      "/charts/data-chart/stacked-chart-types",
-      "/charts/data-chart/stacked-column-chart",
-      "/charts/data-chart/stacked-line-chart",
-      "/charts/data-chart/stacked-spline-area-chart",
-      "/charts/data-chart/stacked-spline-chart"
-    ],
-    "/charts/types/step-chart.md": [
-      "/charts/category-chart/step-area-multiple-sources",
-      "/charts/category-chart/step-line-multiple-sources",
-      "/charts/category-chart/step-line-styling"
-    ],
-    "/charts/types/stock-chart.md": [
-      "/charts/financial-chart/annotations",
-      "/charts/financial-chart/multiple-data",
-      "/charts/financial-chart/panes",
-      "/charts/financial-chart/stock-index-chart",
-      "/charts/financial-chart/styling"
-    ],
-    "/charts/types/treemap-chart.md": [
-      "/charts/tree-map/layout",
-      "/charts/tree-map/overview",
-      "/charts/tree-map/styling"
-    ],
-    "/excel-library-using-cells.md": [
-      "/excel/excel-library/working-with-cells"
-    ],
-    "/excel-library-using-workbooks.md": [
-      "/excel/excel-library/operations-on-workbooks"
-    ],
-    "/excel-library-using-worksheets.md": [
-      "/excel/excel-library/operations-on-worksheets"
-    ],
-    "/excel-library-working-with-charts.md": [
-      "/excel/excel-library/working-with-charts"
-    ],
-    "/excel-library-working-with-sparklines.md": [
-      "/excel/excel-library/working-with-sparklines"
-    ],
-    "/excel-library.md": [
-      "/excel/excel-library/overview"
-    ],
-    "/geo-map-binding-data-csv.md": [
-      "/maps/geo-map/binding-data-csv"
-    ],
-    "/geo-map-binding-data-json-points.md": [
-      "/maps/geo-map/binding-data-json-points"
-    ],
-    "/geo-map-binding-data-model.md": [
-      "/maps/geo-map/binding-data-model"
-    ],
-    "/geo-map-binding-multiple-shapes.md": [
-      "/maps/geo-map/binding-multiple-shapes"
-    ],
-    "/geo-map-binding-multiple-sources.md": [
-      "/maps/geo-map/binding-multiple-sources"
-    ],
-    "/geo-map-binding-shp-file.md": [
-      "/maps/geo-map/binding-shp-polylines"
-    ],
-    "/geo-map-display-bing-imagery.md": [
-      "/maps/geo-map/display-bing-imagery"
-    ],
-    "/geo-map-display-esri-imagery.md": [
-      "/maps/geo-map/display-esri-imagery"
-    ],
-    "/geo-map-display-heat-imagery.md": [
-      "/maps/geo-map/display-heat-imagery"
-    ],
-    "/geo-map-display-osm-imagery.md": [
-      "/maps/geo-map/display-osm-imagery"
-    ],
-    "/geo-map-navigation.md": [
-      "/maps/geo-map/navigation"
-    ],
-    "/geo-map-shape-styling.md": [
-      "/maps/geo-map/shape-styling"
-    ],
-    "/geo-map-type-scatter-area-series.md": [
-      "/maps/geo-map/type-scatter-area-series"
-    ],
-    "/geo-map-type-scatter-bubble-series.md": [
-      "/maps/geo-map/type-scatter-bubble-series"
-    ],
-    "/geo-map-type-scatter-contour-series.md": [
-      "/maps/geo-map/type-scatter-contour-series"
-    ],
-    "/geo-map-type-scatter-density-series.md": [
-      "/maps/geo-map/type-scatter-density-series"
-    ],
-    "/geo-map-type-scatter-symbol-series.md": [
-      "/maps/geo-map/type-scatter-symbol-series"
-    ],
-    "/geo-map-type-shape-polygon-series.md": [
-      "/maps/geo-map/type-shape-polygon-series"
-    ],
-    "/geo-map-type-shape-polyline-series.md": [
-      "/maps/geo-map/type-shape-polyline-series"
-    ],
-    "/geo-map.md": [
-      "/maps/geo-map/type-scatter-bubble-series"
-    ],
-    "/linear-gauge.md": [
-      "/gauges/linear-gauge/animation",
-      "/gauges/linear-gauge/backing",
-      "/gauges/linear-gauge/labels",
-      "/gauges/linear-gauge/needle",
-      "/gauges/linear-gauge/ranges",
-      "/gauges/linear-gauge/scale",
-      "/gauges/linear-gauge/tickmarks"
-    ],
-    "/menus/toolbar.md": [
-      "/charts/toolbar/actions-built-in-category-chart",
-      "/charts/toolbar/layout-actions-for-data-chart"
-    ],
-    "/radial-gauge.md": [
-      "/gauges/radial-gauge/animation",
-      "/gauges/radial-gauge/backing",
-      "/gauges/radial-gauge/labels",
-      "/gauges/radial-gauge/needle",
-      "/gauges/radial-gauge/ranges",
-      "/gauges/radial-gauge/scale",
-      "/gauges/radial-gauge/tickmarks"
-    ],
-    "/spreadsheet-activation.md": [
-      "/excel/spreadsheet/activation"
-    ],
-    "/spreadsheet-chart-adapter.md": [
-      "/excel/spreadsheet/adapter-chart"
-    ],
-    "/spreadsheet-clipboard.md": [
-      "/excel/spreadsheet/clipboard"
-    ],
-    "/spreadsheet-commands.md": [
-      "/excel/spreadsheet/commands"
-    ],
-    "/spreadsheet-conditional-formatting.md": [
-      "/excel/spreadsheet/conditional-formatting"
-    ],
-    "/spreadsheet-configuring.md": [
-      "/excel/spreadsheet/config-options"
-    ],
-    "/spreadsheet-data-validation.md": [
-      "/excel/spreadsheet/data-validation"
-    ],
-    "/spreadsheet-hyperlinks.md": [
-      "/excel/spreadsheet/hyperlinks"
-    ],
-    "/spreadsheet-overview.md": [
-      "/excel/spreadsheet/overview"
-    ],
-    "/zoomslider-overview.md": [
-      "/charts/zoomslider/overview"
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/bullet-graph": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/bullet-graph/animation",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/bullet-graph/background",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/bullet-graph/labels",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/bullet-graph/measures",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/bullet-graph/ranges",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/bullet-graph/scale",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/bullet-graph/tickmarks"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-features": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/column-chart-with-highlighting",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/column-chart-with-tooltips",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/high-volume",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/line-chart-with-animations",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/line-chart-with-annotations",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/marker-options",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/axis-crossing",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/chart-navigation",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/series-value-overlay",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/trendlines"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-overview": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/area-chart-multiple-sources",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/column-chart-multiple-sources",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/line-chart-multiple-sources",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/spline-multiple-sources",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/step-line-multiple-sources",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/bar-chart-multiple-sources",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/composite-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/polar-line-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/scatter-bubble-chart-multiple-sources",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/scatter-point-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/type-scatter-polygon-series",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/doughnut-chart/legend",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/multiple-data",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/pie-chart/overview",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/sparkline/display-types",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/tree-map/overview"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-animations": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/line-chart-with-animations"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-annotations": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/line-chart-with-annotations",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/callout-layer-styling",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/crosshair-layer-styling",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/final-value-layer-styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-gridlines": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/axis-gridlines",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/axis-tickmarks",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/dash-array-axes"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-layouts": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/axis-locations",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/axis-crossing",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/axis-sharing"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-options": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/axis-gap",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/axis-labels",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/axis-overlap",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/axis-range",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/axis-titles",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/axis-types"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-types": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/bar-chart-multiple-sources",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/polar-line-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/polar-scatter-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/radial-area-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/scatter-line-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-column-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/type-scatter-hd-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-data-aggregations": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/data-aggregations"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-data-legend": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/data-legend",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/data-legend-formatting-decimals",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/data-legend",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/data-legend-formatting-currency",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/data-legend-styling-props"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-data-tooltip": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/data-tooltip",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/data-tooltip-formatting-decimals",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/data-tooltip-positioning",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/data-tooltip",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/data-tooltip-formatting-currency",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/data-tooltip-styling-props"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-highlighting": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/column-chart-with-highlighting"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-markers": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/marker-options",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/marker-templates"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-navigation": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/chart-navigation",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/scrollbars"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-overlays": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/value-lines",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/series-value-overlay"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-performance": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/high-frequency",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/high-volume"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-synchronization": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/chart-synchronization"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-tooltips": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/column-chart-with-tooltips",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/tooltip-template",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/tooltip-template"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-trendlines": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/dash-array-trendline",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/trendlines"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/area-chart": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/area-chart-multiple-sources",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/area-chart-single-source",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/area-chart-styling",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/step-area-multiple-sources",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/polar-area-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/polar-spline-area-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/radial-area-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/range-area-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-100-area-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-100-spline-area-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-area-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-spline-area-chart"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/bar-chart": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/bar-chart-multiple-sources",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/bar-chart-single-source",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/bar-chart-styling",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-100-bar-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-bar-chart"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/bubble-chart": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/scatter-bubble-chart-multiple-sources",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/scatter-bubble-chart-single-source",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/scatter-bubble-chart-styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/column-chart": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/column-chart-multiple-sources",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/column-chart-single-source",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/column-chart-styling",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/radial-column-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/range-column-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-100-column-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-column-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/waterfall-chart"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/composite-chart": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/composite-chart"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/donut-chart": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/doughnut-chart/legend",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/doughnut-chart/rings",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/doughnut-chart/selection"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/line-chart": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/high-frequency",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/line-chart-multiple-sources",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/line-chart-single-source",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/line-chart-styling",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/dash-array-series",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/polar-line-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/radial-line-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-100-line-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-line-chart"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/pie-chart": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/radial-pie-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/pie-chart/animation",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/pie-chart/explosion",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/pie-chart/legend",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/pie-chart/others",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/pie-chart/overview",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/pie-chart/selection",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/pie-chart/styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/point-chart": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/point-chart-multiple-sources",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/point-chart-single-source",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/point-chart-styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/polar-chart": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/polar-area-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/polar-area-chart-styling",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/polar-line-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/polar-scatter-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/polar-spline-area-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/polar-spline-chart"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/radial-chart": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/radial-area-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/radial-area-chart-styling",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/radial-column-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/radial-line-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/radial-pie-chart"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/scatter-chart": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/scatter-line-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/scatter-point-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/scatter-spline-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/type-scatter-area-series",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/type-scatter-contour-series",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/type-scatter-hd-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/shape-chart": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/type-scatter-polygon-series",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/type-scatter-polyline-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/sparkline-chart": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/sparkline/display-types",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/sparkline/grid",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/sparkline/markers",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/sparkline/normal-range",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/sparkline/trendlines",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/sparkline/unknown-values"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/spline-chart": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/spline-multiple-sources",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/spline-single-source",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/spline-styling",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-100-spline-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-spline-chart"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/stacked-chart": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-100-area-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-100-bar-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-100-column-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-100-line-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-100-spline-area-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-100-spline-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-area-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-bar-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-chart-types",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-column-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-line-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-spline-area-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/stacked-spline-chart"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/step-chart": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/step-area-multiple-sources",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/step-line-multiple-sources",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/step-line-styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/stock-chart": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/annotations",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/multiple-data",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/panes",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/stock-index-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/treemap-chart": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/tree-map/layout",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/tree-map/overview",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/tree-map/styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/excel-library": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/excel-library/overview"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/excel-library-using-cells": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/excel-library/working-with-cells"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/excel-library-using-workbooks": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/excel-library/operations-on-workbooks"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/excel-library-using-worksheets": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/excel-library/operations-on-worksheets"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/excel-library-working-with-charts": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/excel-library/working-with-charts"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/excel-library-working-with-sparklines": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/excel-library/working-with-sparklines"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/type-scatter-bubble-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-binding-data-csv": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/binding-data-csv"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-binding-data-json-points": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/binding-data-json-points"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-binding-data-model": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/binding-data-model"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-binding-multiple-shapes": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/binding-multiple-shapes"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-binding-multiple-sources": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/binding-multiple-sources"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-binding-shp-file": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/binding-shp-polylines"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-display-bing-imagery": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/display-bing-imagery"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-display-esri-imagery": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/display-esri-imagery"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-display-heat-imagery": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/display-heat-imagery"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-display-osm-imagery": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/display-osm-imagery"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-navigation": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/navigation"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-shape-styling": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/shape-styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-type-scatter-area-series": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/type-scatter-area-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-type-scatter-bubble-series": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/type-scatter-bubble-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-type-scatter-contour-series": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/type-scatter-contour-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-type-scatter-density-series": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/type-scatter-density-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-type-scatter-symbol-series": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/type-scatter-symbol-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-type-shape-polygon-series": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/type-shape-polygon-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-type-shape-polyline-series": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/type-shape-polyline-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/linear-gauge": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/linear-gauge/animation",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/linear-gauge/backing",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/linear-gauge/labels",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/linear-gauge/needle",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/linear-gauge/ranges",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/linear-gauge/scale",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/linear-gauge/tickmarks"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/menus/toolbar": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/toolbar/actions-built-in-category-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/toolbar/layout-actions-for-data-chart"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/radial-gauge": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/radial-gauge/animation",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/radial-gauge/backing",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/radial-gauge/labels",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/radial-gauge/needle",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/radial-gauge/ranges",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/radial-gauge/scale",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/radial-gauge/tickmarks"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/spreadsheet-activation": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/spreadsheet/activation"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/spreadsheet-chart-adapter": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/spreadsheet/adapter-chart"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/spreadsheet-clipboard": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/spreadsheet/clipboard"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/spreadsheet-commands": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/spreadsheet/commands"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/spreadsheet-conditional-formatting": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/spreadsheet/conditional-formatting"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/spreadsheet-configuring": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/spreadsheet/config-options"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/spreadsheet-data-validation": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/spreadsheet/data-validation"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/spreadsheet-hyperlinks": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/spreadsheet/hyperlinks"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/spreadsheet-overview": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/spreadsheet/overview"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/zoomslider-overview": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/zoomslider/overview"
     ]
   }
 }
