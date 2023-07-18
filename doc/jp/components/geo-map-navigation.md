@@ -1,23 +1,20 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | マップ ナビゲーション | インフラジスティックス
-_description: インフラジスティックスの $Platform$ マップをナビゲートするには、マウスまたはタッチを使用して左右にパンニングし、水平および垂直にズームします。$ProductName$ マップのナビゲーション機能について説明します。
-_keywords: $Platform$ map, navigation, $ProductName$, Infragistics, $Platform$ マップ, ナビゲーション, インフラジスティックス
+title: {Platform} マップ | データ可視化ツール | マップ ナビゲーション | インフラジスティックス
+_description: インフラジスティックスの {Platform} マップをナビゲートするには、マウスまたはタッチを使用して左右にパンニングし、水平および垂直にズームします。{ProductName} マップのナビゲーション機能について説明します。
+_keywords: {Platform} map, navigation, {ProductName}, Infragistics, {Platform} マップ, ナビゲーション, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
-# $Platform$ コンテンツのナビゲーション
+# {Platform} コンテンツのナビゲーション
 
 `XamGeographicMap` コントロールのナビゲーションは、既定では有効にされており、マップ コンテンツのズームとパンが可能です。ただし、この動作は `Zoomable` プロパティを使用して変更できます。マップでは同期ズームのみが許可されていること、つまり、アスペクト比を維持したままマップコンテンツをスケーリングすることを知っておくことが重要です。結果として、マップコンテンツを水平方向にスケーリングせずに垂直方向にスケーリングすることはできません。
 
-## $Platform$ コンテンツのナビゲーションの例
+## {Platform} コンテンツのナビゲーションの例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-navigation"
-           alt="$Platform$ コンテンツのナビゲーションの例"
-           github-src="maps/geo-map/navigation">
-</code-view>
+`sample="/maps/geo-map/navigation", height="500", alt="{Platform} コンテンツのナビゲーションの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -79,7 +76,7 @@ this.GeoMap.WindowScale = 0.5;
 |`ActualWindowPositionHorizontal`| number | マップ コントロールの左端からのナビゲーション ウィンドウのアンカー ポイントの現在の水平位置を示します。`ActualWindowRect` プロパティの Left に保存された値と等しくなります。 |
 |`ActualWindowPositionVertical`| number | マップコントロールの上端からのナビゲーションウィンドウのアンカーポイントの垂直位置を示します。`ActualWindowRect` プロパティの Top に保存された値と等しくなります。 |
 
-## API メンバー
+## API リファレンス
 
  - `ActualWindowRect`
  - `WindowRect`

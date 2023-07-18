@@ -1,7 +1,7 @@
 ---
 title: Infragistics NuGet フィード
-_description: インフラジスティックスの $Platform$ コンポーネントの NuGet フィード。
-_keywords: $Platform$, NuGet, Feed, Infragistics, NuGet, フィード, インフラジスティックス
+_description: インフラジスティックスの {Platform} コンポーネントの NuGet フィード。
+_keywords: {Platform}, NuGet, Feed, Infragistics, NuGet, フィード, インフラジスティックス
 mentionedTypes: []
 _language: ja
 ---
@@ -38,7 +38,7 @@ Infragistics は製品版を使用するユーザーにプライベート NuGet 
 2 - ダウンロードした `nuget.exe` ファイルのフォルダー パスでコマンド プロンプトを開きます。
 3 - 以下のコマンドを実行します。
 
-```
+```cmd
 nuget sources add -name "Infragistics" -source "https://packages.infragistics.com/nuget/licensed" -username "your login email" -password "your password"
 ```
 

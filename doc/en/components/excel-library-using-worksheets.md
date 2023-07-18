@@ -1,22 +1,19 @@
 ---
-title: $Platform$ Excel Library| Using Worksheets | Infragistics
-_description: Use Infragistics' $Platform$ excel library to input data by working with the worksheet's row and cells and setting their corresponding values. Easily transfer data from $ProductName$ excel to your application!
-_keywords: Excel library, worksheet, $ProductName$, Infragistics
+title: {Platform} Excel Library| Using Worksheets | Infragistics
+_description: Use Infragistics' {Platform} excel library to input data by working with the worksheet's row and cells and setting their corresponding values. Easily transfer data from {ProductName} excel to your application!
+_keywords: Excel library, worksheet, {ProductName}, Infragistics
 mentionedTypes: ['Workbook', 'Worksheet', 'WorksheetCell', 'DisplayOptions', 'WorksheetFilterSettings', 'IWorksheetCellFormat']
 ---
-# $Platform$ Using Worksheets
+# {Platform} Using Worksheets
 
-The Infragistics $Platform$ Excel Engine's `Worksheet` is where your data is kept. You can input data by working with the Worksheet's rows and cells and setting their corresponding values. The `Worksheet` allows you to filter, sort, and customize the formats of the cells, as shown below.
+The Infragistics {Platform} Excel Engine's `Worksheet` is where your data is kept. You can input data by working with the Worksheet's rows and cells and setting their corresponding values. The `Worksheet` allows you to filter, sort, and customize the formats of the cells, as shown below.
 
-## $Platform$ Using Worksheets Example
+## {Platform} Using Worksheets Example
 
 
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-worksheets"
-           alt="$Platform$ Using Worksheets Example"
-           github-src="excel/excel-library/operations-on-worksheets">
-</code-view>
+`sample="/excel/excel-library/operations-on-worksheets", height="200", alt="{Platform} Using Worksheets Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -312,7 +309,7 @@ var format = worksheet.ConditionalFormats.AddAverageCondition("A1:A10", Document
 format.CellFormat.Font.ColorInfo = new WorkbookColorInfo(Core.Graphics.Colors.Red);
 ```
 
- ## API Members
+## API References
 
  - `CellFormat`
  - `ColorScaleConditionalFormat`

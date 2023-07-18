@@ -1,13 +1,13 @@
 ---
-title: $Platform$ マップ | ワールド ユーティリティ | データ ソース | インフラジスティックス
-_description: インフラジスティックスの $Platform$ JavaScript マップ データ ユーティリティを使用して、地理的データを生成します。$ProductName$ マップのサンプルを是非お試しください!
-_keywords: $Platform$ map, map data, $ProductName$, Infragistics, $Platform$ マップ, マップ データ, インフラジスティックス
+title: {Platform} マップ | ワールド ユーティリティ | データ ソース | インフラジスティックス
+_description: インフラジスティックスの {Platform} JavaScript マップ データ ユーティリティを使用して、地理的データを生成します。{ProductName} マップのサンプルを是非お試しください!
+_keywords: {Platform} map, map data, {ProductName}, Infragistics, {Platform} マップ, マップ データ, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
-# $Platform$ ワールド ユーティリティ
+# {Platform} ワールド ユーティリティ
 
-リソース トピックは、$Platform$ 地理データの生成に役立つユーティリティの実装です。
+リソース トピックは、{Platform} 地理データの生成に役立つユーティリティの実装です。
 
 ## コード スニペット
 
@@ -202,7 +202,7 @@ export default class WorldUtils {
             int pathID = 0;
             double distance = WorldUtils.CalcDistance(origin, dest);
 
-            if(distance <= interval)
+            if (distance <= interval)
             {
                 Console.WriteLine("Distance Less Than Equal To Interval!");
                 paths[pathID].Add(new Point() { X = dest.Lon, Y = dest.Lat });
@@ -213,7 +213,7 @@ export default class WorldUtils {
                 GeoLocation current = origin;
                 GeoLocation previous = origin;
 
-                for(int dist = interval; dist <= distance; dist += interval)
+                for (int dist = interval; dist <= distance; dist += interval)
                 {
                     previous = current;
 
@@ -229,7 +229,7 @@ export default class WorldUtils {
                         pathID++;
                         current = new GeoLocation() { Lon = -180, Lat = current.Lat };
                     }
-                    else if(previous.Lon < -150 && current.Lon > 150)
+                    else if (previous.Lon < -150 && current.Lon > 150)
                     {
                         paths[pathID].Add(new Point() { X = -180, Y = current.Lat });
                         paths.Add(new List<Point>());
@@ -373,7 +373,7 @@ export default class WorldUtils {
             double minLon = 180;
             double maxLon = -180;
 
-            foreach(GeoLocation gl in locations)
+            foreach (GeoLocation gl in locations)
             {
                 double curLon = WorldUtils.GetLongitude(gl);
                 double curLat = WorldUtils.GetLatitude(gl);
@@ -399,7 +399,7 @@ export default class WorldUtils {
         {
             List<Point> line = new List<Point>();
 
-            for(int lon = -180; lon <= 180; lon += 1)
+            for (int lon = -180; lon <= 180; lon += 1)
             {
                 double x = lon;
                 double y = 75 * Math.Cos(lon * Math.PI / 180);
@@ -411,6 +411,6 @@ export default class WorldUtils {
     }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `XamGeographicMap`

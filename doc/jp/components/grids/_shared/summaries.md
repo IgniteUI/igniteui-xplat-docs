@@ -1,0 +1,786 @@
+---
+title: {Platform} {ComponentTitle} 集計 - {ProductName}
+_description: 列のグループ フッターで {Platform} {ComponentTitle} 集計を構成し、オプションを使用して {ProductName} Material テーブルにカスタム {Platform} テンプレートを設定します。
+_keywords: {Platform} {ComponentTitle} summaries, {Platform}, {ProductName}, Infragistics, {Platform} {ComponentTitle} 集計, インフラジスティックス
+mentionedTypes: [{ComponentApiMembers}]
+sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
+_language: ja
+---
+
+# {Platform} {ComponentTitle} 集計
+
+{Platform} `{ComponentName}` には、グループ フッターとして列レベルで**集計**できる機能があります。{Platform} グリッド集計は、列内のデータ タイプに応じて、あるいは `{ComponentName}` にカスタム テンプレートを実装することによって、定義済みのデフォルト集計項目を使用して別のコンテナの列情報を表示できます。
+
+## {Platform} {ComponentTitle} 集計概要の例
+
+`sample="/{ComponentSample}/data-summary-options", height="650", alt="{Platform} {ComponentTitle} data summary options"`
+
+
+> [!Note]
+> 列の集計は列**値すべての関数**ですが、フィルタリングが適用された場合、列の集計**はフィルターされた結果値の関数になります**。
+
+`{ComponentName}` 集計を列ごとに有効にして必要な列のみアクティブ化できます。`{ComponentName}` 集計は、列のデータ型に基づいてデフォルト集計の定義済みセットを提供します。
+
+
+`string` および `boolean` `DataType`の場合、以下の関数が利用できます:
+ - Count
+
+`number`、`currency`、および `percent` データ型の場合、以下の関数を使用できます。
+
+ - Count
+ - Min
+ - Max
+ - Average
+ - Sum
+
+`date` データ型の場合、以下の関数が利用できます:
+ - Count
+ - Earliest
+ - Latest
+
+すべての利用可能な列データ型は、公式の[列タイプトピック](column-types.md#デフォルトのテンプレート)にあります。
+
+`HasSummary` プロパティを **true** に設定すると `{ComponentName}` 集計が列レベルで有効になります。各列の集計は列のデータ型に基づいて解決されます。`{ComponentName}` のデフォルトの列データ型は `string` のため、`number` または `date` 固有の集計を適用するには、`DataType` プロパティを `number` または `date` に設定します。集計値は、グリッドの `Locale` および列 `PipeArgs` に従ってローカライズされて表示されます。
+
+<!-- Angular -->
+```html
+<{ComponentSelector} #grid1 [data]="data" [autoGenerate]="false" height="800px" width="800px" (columnInit)="initColumn($event)">
+    <igx-column field="ProductID" header="Product ID" width="200px"  [sortable]="true">
+    </igx-column>
+    <igx-column field="ProductName" header="Product Name" width="200px" [sortable]="true" [hasSummary]="true">
+    </igx-column>
+    <igx-column field="ReorderLevel" width="200px" [editable]="true" [dataType]="'number'" [hasSummary]="true">
+    </igx-column>
+</{ComponentSelector}>
+```
+<!-- end: Angular -->
+
+```razor
+<{ComponentSelector}>
+        <IgbColumn Field="EmployeeID" DataType="GridColumnDataType.Number" HasSummary="true"></IgbColumn>
+        <IgbColumn Field="FirstName" HasSummary="true"></IgbColumn>
+        <IgbColumn Field="LastName" HasSummary="true"></IgbColumn>
+        <IgbColumn Field="Title" HasSummary="true"></IgbColumn>
+</{ComponentSelector}>
+```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid1" auto-generate="false" height="800px" width="800px">
+    <igc-column field="ProductID" header="Product ID" width="200px"  sortable="true">
+    </igc-column>
+    <igc-column field="ProductName" header="Product Name" width="200px" sortable="true" has-summary="true">
+    </igc-column>
+    <igc-column field="ReorderLevel" width="200px" editable="true" data-type="number" has-summary="true">
+    </igc-column>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
+
+特定の列や列のリストを有効または無効にする他の方法として `{ComponentName}` のパブリック メソッド `EnableSummaries`/`DisableSummaries` を使用する方法があります。
+
+<!-- Angular -->
+```html
+<{ComponentSelector} #grid [data]="data" [autoGenerate]="false" height="800px" width="800px" (columnInit)="initColumn($event)" >
+    <igx-column field="ProductID" header="Product ID" width="200px"  [sortable]="true">
+    </igx-column>
+    <igx-column field="ProductName" header="Product Name" width="200px" [sortable]="true" [hasSummary]="true">
+    </igx-column>
+    <igx-column field="ReorderLevel" width="200px" [editable]="true" [dataType]="'number'" [hasSummary]="false">
+    </igx-column>
+</{ComponentSelector}>
+<button (click)="enableSummary()">Enable Summary</button>
+<button (click)="disableSummary()">Disable Summary </button>
+```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" auto-generate="false" height="800px" width="800px">
+    <igc-column field="ProductID" header="Product ID" width="200px" sortable="true">
+    </igc-column>
+    <igc-column field="ProductName" header="Product Name" width="200px" sortable="true" has-summary="true">
+    </igc-column>
+    <igc-column field="ReorderLevel" width="200px" editable="true" data-type="number" has-summary="false">
+    </igc-column>
+</{ComponentSelector}>
+<button id="enableBtn">Enable Summary</button>
+<button id="disableBtn">Disable Summary </button>
+```
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var enableBtn = this.enableBtn = document.getElementById('enableBtn') as HTMLButtonElement;
+    var disableBtn = this.disableBtn = document.getElementById('disableBtn') as HTMLButtonElement;
+
+    this._bind = () => {
+        grid.data = this.data;
+        enableBtn.addEventListener("click", this.enableSummary);
+        disableBtn.addEventListener("click", this.disableSummary);
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
+
+```typescript
+public enableSummary() {
+    this.grid.enableSummaries([
+        {fieldName: 'ReorderLevel'},
+        {fieldName: 'ProductID'}
+    ]);
+}
+public disableSummary() {
+    this.grid.disableSummaries(['ProductID']);
+}
+```
+
+<!-- TODO: EnableSummariesAsync not working so please add it to the code snippet when it got fixed. -->
+
+```razor
+ <{ComponentSelector} @ref=grid Id="grid" AutoGenerate="false">
+        <IgbColumn Field="EmployeeID" DataType="GridColumnDataType.Number" HasSummary="true"></IgbColumn>
+        <IgbColumn Field="FirstName" Sortable="true" HasSummary="true"></IgbColumn>
+        <IgbColumn Field="LastName" Sortable="false" DisablePinning="true" DisableHiding="true" HasSummary="true"></IgbColumn>
+        <IgbColumn Field="Title" Sortable="true" DisablePinning="false" DisableHiding="true"></IgbColumn>
+</{ComponentSelector}>
+
+@code {
+    public async void DisableSummaries()
+    {
+        object[] disabledSummaries = { "EmployeeID" };
+        await this.grid.DisableSummariesAsync(disabledSummaries);
+    }
+}
+```
+
+
+## カスタム {ComponentTitle} 集計
+
+これらの機能が要件を満たさない場合は、カスタム集計を提供できます。
+
+
+<!-- WebComponents -->
+これを実現するには、列のデータ型とニーズに応じて、基本クラス `SummaryOperand`、`NumberSummaryOperand`、または `DateSummaryOperand` のいずれかをオーバーライドする必要があります。このように既存の関数を再定義、または新しい関数を追加できます。`SummaryOperand` クラスは、`Count` メソッドに対してのみデフォルトの実装を提供します。`NumberSummaryOperand` は `SummaryOperand` を拡張し、`Min`、`Max`、`Sum`、および `Average` の実装を提供します。`DateSummaryOperand` は `SummaryOperand` を拡張し、さらに特定の列の `Earliest` と `Latest` を提供します。
+
+<!-- end: WebComponents -->
+
+```typescript
+import { IgxSummaryResult, IgxSummaryOperand, IgxNumberSummaryOperand, IgxDateSummaryOperand } from 'igniteui-angular';
+
+class MySummary extends IgxNumberSummaryOperand {
+    constructor() {
+        super();
+    }
+
+    operate(data?: any[]): IgxSummaryResult[] {
+        const result = super.operate(data);
+        result.push({
+            key: 'test',
+            label: 'Test',
+            summaryResult: data.filter(rec => rec > 10 && rec < 30).length
+        });
+        return result;
+    }
+}
+```
+
+```typescript
+import { IgcSummaryResult, IgcSummaryOperand, IgcNumberSummaryOperand, IgcDateSummaryOperand } from 'igniteui-webcomponents-grids';
+
+class MySummary extends IgcNumberSummaryOperand {
+    constructor() {
+        super();
+    }
+
+    operate(data?: any[]): IgcSummaryResult[] {
+        const result = super.operate(data);
+        result.push({
+            key: 'test',
+            label: 'Test',
+            summaryResult: data.filter(rec => rec > 10 && rec < 30).length
+        });
+        return result;
+    }
+}
+```
+
+```razor
+
+//In JavaScript
+class WebGridDiscontinuedSummary {
+    operate(data, allData, fieldName) {
+        const discontinuedData = allData.filter((rec) => rec['Discontinued']).map(r => r[fieldName]);
+        const result = [];
+        result.push({
+            key: 'products',
+            label: 'Products',
+            summaryResult: data.length
+        });
+        result.push({
+            key: 'total',
+            label: 'Total Items',
+            summaryResult: data.length ? data.reduce((a, b) => +a + +b) : 0
+        });
+        result.push({
+            key: 'discontinued',
+            label: 'Discontinued Products',
+            summaryResult: allData.map(r => r['Discontinued']).filter((rec) => rec).length
+        });
+        result.push({
+            key: 'totalDiscontinued',
+            label: 'Total Discontinued Items',
+            summaryResult: discontinuedData.length ? discontinuedData.reduce((a, b) => +a + +b) : 0
+        });
+        return result;
+    }
+}
+```
+
+例で見られるように、基本クラスは `Operate` メソッドを公開しているため、すべてのデフォルトの集計を取得して結果を変更するか、まったく新しい集計結果を計算するかを選択できます。
+
+このメソッドは `SummaryResult` のリストを返します。
+
+```typescript
+interface IgxSummaryResult {
+    key: string;
+    label: string;
+    summaryResult: any;
+}
+```
+
+```typescript
+interface IgcSummaryResult {
+    key: string;
+    label: string;
+    summaryResult: any;
+}
+```
+
+そして、集計を計算するためのオプションのパラメーターを受け取ります。
+以下の[すべてのデータにアクセスするカスタム集計](#すべてのデータにアクセスするカスタム集計)セクションを参照してください。
+
+> [!Note]
+> 集計行の高さを適切に計算するには、データが空の場合でも、{ComponentTitle} が常に適切な長さの `SummaryResult` の配列を返す `Operate` メソッドを必要とします。
+
+
+次に、カスタム集計を列 `UnitsInStock` に追加しましょう。次に、カスタム集計を列 `UnitsInStock` に追加しましょう。
+<!-- Angular -->
+```html
+<{ComponentSelector} #grid1 [data]="data" [autoGenerate]="false" height="800px" width="800px" (columnInit)="initColumn($event)" >
+    <igx-column field="ProductID" width="200px"  [sortable]="true">
+    </igx-column>
+    <igx-column field="ProductName" width="200px" [sortable]="true" [hasSummary]="true">
+    </igx-column>
+    <igx-column field="UnitsInStock" width="200px" [dataType]="'number'" [hasSummary]="true" [summaries]="mySummary" [sortable]="true">
+    </igx-column>
+    <igx-column field="ReorderLevel" width="200px" [editable]="true" [dataType]="'number'" [hasSummary]="true">
+    </igx-column>
+</{ComponentSelector}>
+```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid1" auto-generate="false" height="800px" width="800px">
+    <igc-column field="ProductID" width="200px" sortable="true">
+    </igc-column>
+    <igc-column field="ProductName" width="200px" sortable="true" has-summary="true">
+    </igc-column>
+    <igc-column id="unitsInStock" field="UnitsInStock" width="200px" data-type="number" has-summary="true" sortable="true">
+    </igc-column>
+    <igc-column field="ReorderLevel" width="200px" editable="true" data-type="number" has-summary="true">
+    </igc-column>
+</{ComponentSelector}>
+```
+```ts
+constructor() {
+    var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
+    var unitsInStock = this.unitsInStock = document.getElementById('unitsInStock') as IgcColumnComponent;
+
+    this._bind = () => {
+        grid1.data = this.data;
+        unitsInStock.summaries = this.mySummary;
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
+
+```typescript
+export class GridComponent implements OnInit {
+    mySummary = MySummary;
+}
+```
+
+```razor
+<{ComponentSelector} 
+        AutoGenerate="true"
+        Name="grid"
+        @ref="grid"
+        Data="NwindData"
+        PrimaryKey="ProductID"
+        ColumnInitScript="WebGridCustomSummary">
+</{ComponentSelector}>
+
+// In Javascript
+igRegisterScript("WebGridCustomSummary", (event) => {
+    if (event.detail.field === "UnitsInStock") {
+        event.detail.summaries = WebGridDiscontinuedSummary;
+    }
+}, false);
+```
+
+### すべてのデータにアクセスするカスタム集計
+カスタム列集計内のすべての {ComponentTitle} データにアクセスできます。SummaryOperand `Operate` メソッドには、2 つの追加のオプション パラメーターが導入されています。
+以下のコード スニペットで示されるように operate メソッドには以下の 3 つのパラメーターがあります。
+- columnData - 現在の列の値のみを含む配列を提供します。
+- allGridData - グリッド データソース全体を提供します。
+- fieldName - 現在の列フィールド
+
+```typescript
+class MySummary extends IgxNumberSummaryOperand {
+    constructor() {
+        super();
+    }
+    operate(columnData: any[], allGridData = [], fieldName?): IgxSummaryResult[] {
+        const result = super.operate(allData.map(r => r[fieldName]));
+        result.push({ key: 'test', label: 'Total Discontinued', summaryResult: allData.filter((rec) => rec.Discontinued).length });
+        return result;
+    }
+}
+```
+
+```typescript
+class MySummary extends IgcNumberSummaryOperand {
+    constructor() {
+        super();
+    }
+    operate(columnData: any[], allGridData = [], fieldName?): IgcSummaryResult[] {
+        const result = super.operate(allData.map(r => r[fieldName]));
+        result.push({ key: 'test', label: 'Total Discontinued', summaryResult: allData.filter((rec) => rec.Discontinued).length });
+        return result;
+    }
+}
+```
+
+```razor
+class WebGridDiscontinuedSummary {
+    operate(data, allData, fieldName) {
+        const discontinuedData = allData.filter((rec) => rec['Discontinued']).map(r => r[fieldName]);
+        result.push({
+            key: 'totalDiscontinued',
+            label: 'Total Discontinued Items',
+            summaryResult: discontinuedData.length ? discontinuedData.reduce((a, b) => +a + +b) : 0
+        });
+        return result;
+    }
+}
+```
+
+<!-- WebComponents -->
+
+`sample="/{ComponentSample}/data-summaries-custom", height="650", alt="{Platform} {ComponentTitle} データ集計カスタム"`
+
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+
+`sample="/{ComponentSample}/data-summary-options", height="650", alt="{Platform} {ComponentTitle} データ集計オプション"`
+
+<!-- end: Blazor -->
+
+### 集計テンプレート
+`Summary` は、列の集計の結果をコンテキストとして提供する列の集計を対象としています。
+
+```html
+<igx-column [hasSummary]="true">
+    <ng-template igxSummary let-summaryResults>
+        <span> My custom summary template</span>
+        <span>{{ summaryResults[0].label }} - {{ summaryResults[0].summaryResult }}</span>
+    </ng-template>
+</igx-column>
+```
+
+```html
+<igc-column id="column" has-summary="true">
+</igc-column>
+```
+```ts
+constructor() {
+    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+
+    this._bind = () => {
+        column.summaryTemplate = this.summaryTemplate;
+    }
+    this._bind();
+}
+
+public summaryTemplate = (ctx: IgcSummaryTemplateContext) => {
+    return html`
+        <span> My custom summary template</span>
+        <span>${ ctx.implicit[0].label } - ${ ctx.implicit[0].summaryResult }</span>
+    `;
+}
+```
+
+```razor
+<IgbColumn HasSummary="true" SummaryTemplateScript="SummaryTemplate">
+</IgbColumn>
+
+igRegisterScript("SummaryTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`<div>
+    <span> ${ctx.implicit[0].label} - ${ctx.implicit[0].summaryResult} </span>
+</div>`
+}, false);
+```
+
+デフォルトの集計が定義されている場合、集計領域の高さは、集計の数が最も多い列とグリッドの表示密度に応じてデザインにより計算されます。`SummaryRowHeight` 入力プロパティを使用して、デフォルト値をオーバーライドします。引数として数値が必要であり、falsy の値を設定すると、グリッド フッターのデフォルトのサイズ設定動作がトリガーされます。
+
+<!-- Angular -->
+
+> [!Note]
+> 列の集計テンプレートは、列 `SummaryTemplate` プロパティを必要な TemplateRef に設定することにより、API を介して定義できます。
+
+<!-- end: Angular -->
+
+
+`sample="/{ComponentSample}/data-summary-template", height="650", alt="{Platform} {ComponentTitle} データ集計のテンプレート"`
+
+
+<!-- Angular, WebComponents -->
+
+## 集計のフォーマット
+デフォルトでは、組み込みの集計オペランドによって生成される集計結果は、グリッド `Locale` および列 `PipeArgs` に従ってローカライズおよびフォーマットされます。カスタム オペランドを使用する場合、`Locale` と `PipeArgs` は適用されません。集計結果のデフォルトの外観を変更する場合は、`SummaryFormatter` プロパティを使用してフォーマットできます。
+
+```typescript
+public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOperand): string {
+    const result = summary.summaryResult;
+    if (summaryOperand instanceof IgxDateSummaryOperand && summary.key !== 'count'
+        && result !== null && result !== undefined) {
+        const pipe = new DatePipe('en-US');
+        return pipe.transform(result,'MMM YYYY');
+    }
+    return result;
+}
+```
+
+```typescript
+    public dateSummaryFormat(summary: IgcSummaryResult, summaryOperand: IgcSummaryOperand): string {
+        const result = summary.summaryResult;
+        if (summaryOperand instanceof IgcDateSummaryOperand && summary.key !== "count" && result !== null && result !== undefined) {
+            const format = new Intl.DateTimeFormat("en", { year: "numeric" });
+            return format.format(new Date(result));
+        }
+        return result;
+    }
+```
+
+```html
+<igx-column [summaryFormatter]="dateSummaryFormat"></igx-column>
+```
+
+```html
+<igc-column id="column"></igx-column>
+```
+```ts
+constructor() {
+    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+
+    this._bind = () => {
+        column.summaryFormatter = this.dateSummaryFormat;
+    }
+    this._bind();
+}
+```
+
+<!-- TODO -- update blazor snippet when the sample is ready -->
+
+```razor
+<IgbColumn HasSummary="true" SummaryFormatterScript="SummaryFormatter"/>
+
+igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
+    return summary.summaryResult + " rows";
+}, false);
+```
+
+`sample="/{ComponentSample}/data-summary-formatter", height="650", alt="{Platform} {ComponentTitle} データ集計のフォーマッタ"`
+
+
+<!-- end: Angular, WebComponents -->
+
+
+<!-- ComponentStart: Grid -->
+
+## グループ化の集計
+
+列のグループがある場合、`{ComponentName}` は `SummaryCalculationMode` と `SummaryPosition` を使用して集計配置の変更やモードの計算をします。これら 2 つのプロパティに加えて、`{ComponentName}` は、参照するグループ行が縮小されたときに集計行が表示されたままであるかどうかを決定できる `ShowSummaryOnCollapse` プロパティを公開します。
+
+以下は使用できる `SummaryCalculationMode` プロパティの値です:
+
+ - `RootLevelOnly` - ルート レベルのみ集計が計算されます。
+ - `ChildLevelsOnly` - 子レベルのみ集計が計算されます。
+ - `RootAndChildLevels` - ルートと子レベルの両方の集計が計算されます。これがデフォルト値です。
+
+以下は使用できる `SummaryPosition` プロパティの値です。
+
+ - `Top` - 集計行はグループ列の子の前に表示されます。
+ - `Bottom` - 集計行はグループ列の子の後に表示されます。これがデフォルト値です。
+
+`ShowSummaryOnCollapse` プロパティはブール値です。デフォルト値は **false** に設定されています。これは、親行が縮小されたときに集計行が非表示になることを意味します。プロパティが **true** に設定されている場合、グループ行が縮小されたときに、集計行は表示されたままになります。
+
+
+> [!Note]
+> `SummaryPosition` プロパティは子レベルの集計のみに適用します。ルート レベルの集計は、`{ComponentName}` の下に常に固定されます。
+
+### デモ
+
+`sample="/{ComponentSample}/groupby-summary-options", height="650", alt="{Platform} {ComponentTitle} グループ化の集計のオプション"`
+
+
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+## 子集計
+
+`{ComponentName}` はルート ノードの集計と各ネストされた子ノード レベルの区別をサポートします。集計は `SummaryCalculationMode` プロパティを使用して設定できます。子レベル集計は、`SummaryPosition` を使用して子ノードの前または後に表示できます。これら 2 つのプロパティに加えて、`{ComponentName}` は、参照するグループ行が縮小されたときに集計行が表示されたままであるかどうかを決定できる `ShowSummaryOnCollapse` プロパティを公開します。
+
+
+以下は使用できる `SummaryCalculationMode` プロパティの値です:
+
+ - `RootLevelOnly` - ルート レベルのノードのみ集計が計算されます。
+ - `ChildLevelsOnly` - 子レベルのみ集計が計算されます。
+ - `RootAndChildLevels` - ルートと子レベルの両方の集計が計算されます。これがデフォルト値です。
+
+以下は使用できる `SummaryPosition` プロパティの値です。
+
+ - `Top` - 集計行は子行のリストの前に表示されます。
+ - `Bottom` - 集計行は子行のリストの後に表示されます。これがデフォルト値です。
+
+`ShowSummaryOnCollapse` プロパティはブール値です。デフォルト値は **false** に設定されています。これは、親行が縮小されたときに集計行が非表示になることを意味します。プロパティが **true** に設定されている場合、親行が縮小されたときに、集計行は表示されたままになります。
+
+> [!Note]
+> `SummaryPosition` プロパティは子レベルの集計のみに適用します。ルート レベルの集計は、`{ComponentName}` の下に常に固定されます。
+
+`sample="/{ComponentSample}/data-summary-children", height="720", alt="{Platform} {ComponentTitle} データの子集計"`
+
+
+<!-- ComponentEnd: TreeGrid -->
+
+
+## キーボード ナビゲーション
+
+集計行は、以下のキーボード操作でナビゲーションできます。
+
+- <kbd>上矢印</kbd> - 1 つ上のセルへ移動。
+- <kbd>下矢印</kbd> - 1 つ下のセルへ移動。
+- <kbd>左矢印</kbd> - 1 つ左のセルへ移動。
+- <kbd>右矢印</kbd> - 1 つ右のセルへ移動。
+- <kbd>CTRL</kbd> + <kbd>左矢印</kbd> または <kbd>HOME</kbd> - 左端のセルへ移動。
+- <kbd>CTRL</kbd> + <kbd>右矢印</kbd> または <kbd>END</kbd> - 右端のセルへ移動。
+
+
+<!-- WebComponents, Blazor -->
+
+## スタイル設定
+
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
+一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
+
+```ts
+<igc-grid class="grid">
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+次に、そのクラスに関連する CSS プロパティを設定します。
+
+```css
+.grid {
+    --ig-grid-summary-background-color:#e0f3ff;
+    --ig-grid-summary-focus-background-color: rgba( #94d1f7, .3 );
+    --ig-grid-summary-label-color: rgb(228, 27, 117);
+    --ig-grid-summary-result-color: black;
+}
+```
+
+### デモ
+
+`sample="/{ComponentSample}/groupby-summary-styling", height="710", alt="{Platform} {ComponentTitle} グループ化集計のスタイル設定"`
+
+
+<!-- end: WebComponents, Blazor -->
+
+<!-- Angular -->
+## スタイル設定
+
+ソート動作のスタイル設定は、すべてのテーマ関数とコンポーネント mixins が存在する `index` ファイルをインポートする必要があります。
+
+```scss
+@use "igniteui-angular/theming" as *;
+
+// IMPORTANT: Prior to Ignite UI for Angular version 13 use:
+// @import '~igniteui-angular/lib/core/styles/themes/index';
+```
+
+最も簡単な方法は、[grid-summary-theme]({environment:sassApiUrl}/index.html#function-grid-summary-theme) を拡張する新しいテーマを作成し、`$background-color`、`$focus-background-color`、`$label-color`、`$result-color`、`$pinned-border-width`、`$pinned-border-style`、および `$pinned-border-color` パラメーターを受け取る方法です。
+
+```scss
+$custom-theme: grid-summary-theme(
+    $background-color: #e0f3ff,
+    $focus-background-color: rgba( #94d1f7, .3 ),
+    $label-color: #e41c77,
+    $result-color: black,
+    $pinned-border-width: 2px,
+    $pinned-border-style: dotted,
+    $pinned-border-color: #e41c77
+);
+```
+最後にそれぞれのテーマを持つコンポーネント mixins を**含めます**。
+
+```scss
+@include grid-summary($custom-theme);
+```
+
+> [!Note]
+ >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除する`必要があります。
+
+ ```scss
+:host {
+    ::ng-deep {
+        @include grid-summary($custom-theme);
+    }
+}
+```
+
+### カラー パレットの定義
+
+上記のように色の値をハードコーディングする代わりに、[igx-palette]({environment:sassApiUrl}/index.html#function-igx-palette) および [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) 関数を使用することによって色に関してより高い柔軟性を持つことができます。
+
+`igx-palette` は渡された一次色と二次色に基づいてカラーパレットを生成します。
+
+```scss
+$blue-color: #7793b1;
+$green-color: #00ff2d;
+
+$my-custom-palette: palette($primary: $blue-color, $secondary: $green-color);
+```
+
+また [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) を使用してパレットから簡単に色を取り出すことができます。
+
+```scss
+$custom-theme: grid-summary-theme(
+    $background-color: color($my-custom-palette, "primary", 700),
+    $focus-background-color: color($my-custom-palette, "primary", 800),
+    $label-color: color($my-custom-palette, "secondary", 500),
+    $result-color: color($my-custom-palette, "grays", 900),
+    $pinned-border-width: 2px,
+    $pinned-border-style: dotted,
+    $pinned-border-color: color($my-custom-palette, "secondary", 500)
+);
+```
+
+> [!Note]
+>`igx-color` および `igx-palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[パレット](../themes/palettes.md)のトピックを参照してください。
+
+### スキーマの使用
+
+テーマ エンジンを使用して[**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
+
+すべてのコンポーネントに提供されている 2 つの定義済みスキーマ (ここでは [_light-grid-summary]({environment:sassApiUrl}/index.html#variable-_light-grid-summary)) の 1 つを拡張します。
+
+```scss
+// Extending the light grid summary schema
+$my-summary-schema: extend($_light-grid-summary,
+    (
+        background-color: (igx-color: ('primary', 700)),
+        focus-background-color: (igx-color: ('primary', 800)),
+        label-color: (igx-color: ('secondary', 500)),
+        result-color: (igx-color: ('grays', 900)),
+        pinned-border-width: 2px,
+        pinned-border-style: dotted,
+        pinned-border-color: (igx-color: ('secondary', 500))
+    )
+);
+```
+
+カスタム スキーマを適用するには、グローバル [light]({environment:sassApiUrl}/index.html#variable-light-schema) または [dark]({environment:sassApiUrl}/index.html#variable-dark-schema) の 1 つを**拡張する**必要があります。これは基本的にカスタム スキーマでコンポーネントを指し示し、その後それぞれのコンポーネント テーマに追加するものです。
+
+```scss
+// Extending the global light-schema
+$my-custom-schema: extend($light-schema,
+    (
+        igx-grid-summary: $my-summary-schema
+    )
+);
+
+// Defining our custom theme with the custom schema
+$custom-theme: grid-summary-theme(
+    $palette: $my-custom-palette,
+    $schema: $my-custom-schema
+);
+```
+
+上記と同じ方法でテーマを含める必要があることに注意してください。
+
+`sample="/{ComponentSample}/groupby-summary-styling", height="710", alt="{Platform} {ComponentTitle} グループ化集計のスタイル設定"`
+
+
+<!-- end: Angular -->
+
+## API リファレンス
+
+* `SummaryOperand`
+* `NumberSummaryOperand`
+* `DateSummaryOperand`
+* `ColumnGroup`
+* `Column`
+
+## その他のリソース
+
+<!-- Angular -->
+
+
+* [列のデータ型](column-types.md#デフォルトのテンプレート)
+* [仮想化とパフォーマンス](virtualization.md)
+* [ページング](paging.md)
+* [フィルタリング](filtering.md)
+* [ソート](sorting.md)
+* [列の移動](column-moving.md)
+* [列のピン固定](column-pinning.md)
+* [列のサイズ変更](column-resizing.md)
+* [選択](selection.md)
+
+<!-- ComponentStart: Grid -->
+
+* [選択に基づいた集計](selection-based-aggregates.md)
+
+<!-- ComponentEnd: Grid -->
+
+<!-- end: Angular -->
+
+<!-- Blazor -->
+
+<!-- ComponentStart:  Grid -->
+* [列のデータ型](column-types.md#デフォルトのテンプレート)
+* [仮想化とパフォーマンス](virtualization.md)
+* [ページング](paging.md)
+* [フィルタリング](filtering.md)
+* [ソート](sorting.md)
+* [列の移動](column-moving.md)
+* [列のピン固定](column-pinning.md)
+* [列のサイズ変更](column-resizing.md)
+* [選択](selection.md)
+<!-- ComponentEnd:  Grid -->
+
+<!-- end: Blazor -->
+
+コミュニティに参加して新しいアイデアをご提案ください。
+
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

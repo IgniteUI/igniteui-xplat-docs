@@ -22,7 +22,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"CategoryTransitionInMode","mappedName":"AccordionFromCategoryAxisMaximum"}],"originalName":"AccordionFromCategoryAxisMaximum"},
     { "names":[{"platform":"WebComponents","mappedType":"CategoryTransitionInMode","mappedName":"AccordionFromValueAxisMinimum"}],"originalName":"AccordionFromValueAxisMinimum"},
     { "names":[{"platform":"WebComponents","mappedType":"CategoryTransitionInMode","mappedName":"AccordionFromValueAxisMaximum"}],"originalName":"AccordionFromValueAxisMaximum"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CategorySeries",
     "names":[{"platform":"WebComponents","fileName":"igc-category-series-component.ts","mappedName":"IgcCategorySeriesComponent"}],
     "members":[
@@ -38,4 +38,4 @@
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getCategoryWidth"}],"originalName":"GetCategoryWidth"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItem"}],"originalName":"GetItem"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItemIndex"}],"originalName":"GetItemIndex"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getExactItemIndex"}],"originalName":"GetExactItemIndex"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getExactItemIndex"}],"originalName":"GetExactItemIndex"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

@@ -1,27 +1,24 @@
 ---
-title: $Platform$ Button Component | $ProductName$
-_description: Get started with the $Platform$ Button Component. Select button variants, configure sizes, define styling, and gain flexibility through the $Platform$ Button OnClick event.
-_keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Button Components, Infragistics
+title: {Platform} Button Component | {ProductName}
+_description: Get started with the {Platform} Button Component. Select button variants, configure sizes, define styling, and gain flexibility through the {Platform} Button OnClick event.
+_keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Button Components, Infragistics
 mentionedTypes: ['Button', 'ButtonBase']
 ---
 
-# $Platform$ Button Overview
+# {Platform} Button Overview
 
-The $Platform$ Button Component lets you enable clickable elements that trigger actions in your $Platform$ app. You get full control over how you set button variants, configure styles for the wrapped element, and define sizes. The Button Component also gives flexibility through the $Platform$ Button OnClick event, toggle the $Platform$ button, disable the $Platform$ button, and more.
+The {Platform} Button Component lets you enable clickable elements that trigger actions in your {Platform} app. You get full control over how you set button variants, configure styles for the wrapped element, and define sizes. The Button Component also gives flexibility through the {Platform} Button OnClick event, toggle the {Platform} button, disable the {Platform} button, and more.
 
-## $Platform$ Button Example
+## {Platform} Button Example
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-overview"
-           alt="$Platform$ Button Example"
-           github-src="inputs/button/overview">
-</code-view>
+`sample="/inputs/button/overview", height="100", alt="{Platform} Button Example"`
+
+
 
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -38,7 +35,7 @@ defineComponents(IgcButtonComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -58,7 +55,9 @@ IgrButtonModule.register();
 Before using the `Button`, you need to register it as follows:
 
 ```razor
-IgbButtonModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 ```
 
 You will also need to link an additional CSS file to apply the styling to the `Button` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
@@ -110,7 +109,7 @@ With `prefix` and `suffix` slots of the `Button` component, we can add different
 The button component will change its internal structure from a [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) to an [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) type element when the `Href` attribute is set. In that case the button can be thought of as a regular link. Setting the `Href` attribute will allow you to also set the `Rel`, `Target` and `Download` attributes.
 In the case when the button component uses an actual [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) element internally, we can specify its `DisplayType` by setting the property to any of the following values:
 
-- `submit` - when we want to submit the form data
+- `Submit` - when we want to submit the form data
 - `reset` - when we want to reset form data to its initial values
 - `button` - when we want to add button with a custom functionality anywhere on a webpage
 
@@ -132,9 +131,7 @@ Use the `variant` attribute to add a simple contained button in your component t
 <IgbButton Variant="@ButtonVariant.Contained" />
 ```
 
-<div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-contained">
-</iframe></div>
+`sample="/inputs/button/contained", height="70", alt="{Platform} button contained"`
 
 ### Outlined Button
 
@@ -152,9 +149,7 @@ All you have to do to create an `outlined` button is to change the value of the 
 <IgbButton Variant="@ButtonVariant.Outlined" />
 ```
 
-<div class="sample-container loading" style="height: 80px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-outlined">
-</iframe></div>
+`sample="/inputs/button/outlined", height="80", alt="{Platform} button outlined"`
 
 ### Flat Button
 
@@ -172,9 +167,7 @@ Analogically, we can switch to `flat` variant.
 <IgbButton Variant="@ButtonVariant.Flat" />
 ```
 
-<div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-flat">
-</iframe></div>
+`sample="/inputs/button/flat", height="70", alt="{Platform} button flat"`
 
 ### Floating Action Button
 
@@ -192,9 +185,7 @@ We can create a floating action button by setting the `variant` property to `fab
 <IgbButton Variant="@ButtonVariant.Fab" />
 ```
 
-<div class="sample-container loading" style="height: 75px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-fab">
-</iframe></div>
+`sample="/inputs/button/fab", height="70", alt="{Platform} button fab"`
 
 ## Button Sizing
 
@@ -271,9 +262,6 @@ public onRadioChange(e: any) {
 
     protected override void OnInitialized()
     {
-        IgbButtonModule.Register(IgniteUIBlazor);
-        IgbRadioModule.Register(IgniteUIBlazor);
-        IgbRadioGroupModule.Register(IgniteUIBlazor);
     }
 
     public void OnSmallClick(EventArgs e)
@@ -295,22 +283,19 @@ public onRadioChange(e: any) {
 
 The result of implementing the above code should look like the following:
 
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-size"
-           alt="$Platform$ Button Sizing Example"
-           github-src="inputs/button/size">
-</code-view>
+`sample="/inputs/button/size", height="200", alt="{Platform} Button Sizing Example"`
+
+
 
 ### Download
 
 Setting the `download` property will prompt the user to save the linked URL instead of navigating to it.
 
 ```tsx
-<IgrButton 
-    href="" 
-    variant="contained" 
-    download="url" 
+<IgrButton
+    href=""
+    variant="contained"
+    download="url"
     target="_blank" >
     <span>Download</span>
 </IgrButton>
@@ -332,9 +317,7 @@ Setting the `download` property will prompt the user to save the linked URL inst
 </IgbButton>
 ```
 
-<div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-download">
-</iframe></div>
+`sample="/inputs/button/download", height="70", alt="{Platform} button download"`
 
 ## Styling
 
@@ -348,48 +331,11 @@ igc-button::part(base) {
 }
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-styling"
-           alt="$Platform$ Button Styling Example"
-           github-src="inputs/button/styling">
-</code-view>
+`sample="/inputs/button/styling", height="100", alt="{Platform} Button Styling Example"`
 
-<!-- WebComponents -->
 
-## API Reference
 
-* `Button`
-
-Additional Web Components that were used:
-
-* `RadioGroup`
-* `Radio`
-
-<!-- end: WebComponents -->
-
-## Additional Resources
-
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React -->
-
-## API Members
+## API References
 
  - `ButtonBase`
  - `Button`
@@ -398,3 +344,9 @@ Additional Web Components that were used:
  - `Href`
  - `RadioGroup`
  - `Radio`
+
+
+## Additional Resources
+
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

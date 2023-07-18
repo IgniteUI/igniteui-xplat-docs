@@ -27,118 +27,34 @@
     "status": ""
   },
   {
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "How to",
+    "status": "NEW",
+    "items": [
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Blazor Excel Library",
+        "href": "blazor-excel-library-temporarily-stop-automatic-calculation-of-formulas-to-speed-up-processing.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "How To Read & Write Excel Files To Reduce Server Load",
+        "href": "blazor-webassembly-how-to-read-and-write-excel-files-to-reduce-server-load.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "name": "How To Customize Marker Display in Blazor Charts",
+        "href": "customize-marker-display-in-blazor-charts.md",
+        "status": ""
+      }
+    ]
+  },
+  {
     "name": "Changelog",
     "href": "general-changelog-dv.md",
     "status": "NEW"
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Layouts",
-    "header": true
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "Avatar",
-    "href": "layouts/avatar.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "Badge",
-    "href": "inputs/badge.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "Icon",
-    "href": "layouts/icon.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "Card",
-    "href": "layouts/card.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "Blazor"],
-    "name": "Dock Manager",
-    "href": "layouts/dock-manager.md",
-    "status": "",
-    "items": [
-      {
-        "exclude": ["Blazor", "WebComponents"],
-        "name": "Using Panes",
-        "href": "layouts/dock-manager-updating-panes.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Blazor", "WebComponents"],
-        "name": "Embedding Frames",
-        "href": "layouts/dock-manager-embedding-frames.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "Blazor", "React"],
-        "name": "Desktop Integration",
-        "href": "layouts/dock-manager-electron.md",
-        "status": "NEW"
-      }
-    ]
-  },
-  {
-    "exclude": ["Angular", "React", "WebComponents"],
-    "name": "Dock Manager (Coming Soon)",
-    "href": "layouts/dock-manager.md",
-    "status": "",
-    "items": [
-      {
-	    "exclude": ["Blazor"],
-        "name": "Using Panes",
-        "href": "dock-manager-updating-panes.md",
-        "status": ""
-      },
-      {
-	    "exclude": ["Blazor"],
-        "name": "Embedding Frames",
-        "href": "dock-manager-embedding-frames.md",
-        "status": ""
-      }
-    ]
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "Menus",
-    "header": true
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "Navbar",
-    "href": "menus/navbar.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "Navigation Drawer",
-    "href": "menus/navigation-drawer.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Editors",
-    "header": true
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Multi-Column Combo Box",
-    "href": "editors/multi-column-combobox.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Date Picker",
-    "href": "editors/date-picker.md",
-    "status": "UPDATED"
   },
   {
     "exclude": ["Angular"],
@@ -155,162 +71,162 @@
   {
     "exclude": ["Angular"],
     "name": "Table / Grid",
-    "href": "grids/data-grid.md",
+    "href": "grids/data-grid/overview.md",
     "status": "UPDATED",
     "items": [
       {
         "name": "Accessibility Compliance",
-        "href": "grids/data-grid-accessibility.md",
+        "href": "grids/data-grid/accessibility.md",
         "status": ""
       },
       {
         "name": "Binding Live Data",
-        "href": "grids/data-grid-live-data.md",
+        "href": "grids/data-grid/live-data.md",
         "status": ""
       },
       {
         "name": "Binding Local Data",
-        "href": "grids/data-grid-local-data.md",
+        "href": "grids/data-grid/local-data.md",
         "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "Binding Comparison Data",
-        "href": "grids/data-grid-type-comparison-table.md",
+        "href": "grids/data-grid/type-comparison-table.md",
         "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "Binding Heatmap Data",
-        "href": "grids/data-grid-type-heatmap-table.md",
+        "href": "grids/data-grid/type-heatmap-table.md",
         "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "Binding Matrix Data",
-        "href": "grids/data-grid-type-matrix-table.md",
+        "href": "grids/data-grid/type-matrix-table.md",
         "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "Binding Periodic Data",
-        "href": "grids/data-grid-type-periodic-table.md",
+        "href": "grids/data-grid/type-periodic-table.md",
         "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "Binding Virtual Data",
-        "href": "grids/data-grid-remote-data.md",
+        "href": "grids/data-grid/remote-data.md",
         "status": ""
       },
       {
         "name": "Cell Activation",
-        "href": "grids/data-grid-cell-activation.md",
+        "href": "grids/data-grid/cell-activation.md",
         "status": ""
       },
       {
         "name": "Grid Editing",
-        "href": "grids/data-grid-cell-editing.md",
+        "href": "grids/data-grid/cell-editing.md",
         "status": ""
       },
       {
         "name": "Cell Merging",
-        "href": "grids/data-grid-cell-merging.md",
+        "href": "grids/data-grid/cell-merging.md",
         "status": "NEW"
       },
       {
         "name": "Cell Selection",
-        "href": "grids/data-grid-cell-selection.md",
+        "href": "grids/data-grid/cell-selection.md",
         "status": ""
       },
       {
         "name": "Column Animations",
-        "href": "grids/data-grid-column-animation.md",
+        "href": "grids/data-grid/column-animation.md",
         "status": ""
       },
       {
         "name": "Column Filtering",
-        "href": "grids/data-grid-column-filtering.md",
+        "href": "grids/data-grid/column-filtering.md",
         "status": "NEW"
       },
       {
         "name": "Column Moving",
-        "href": "grids/data-grid-column-moving.md",
+        "href": "grids/data-grid/column-moving.md",
         "status": ""
       },
       {
         "name": "Column Chooser",
-        "href": "grids/data-grid-column-chooser.md",
+        "href": "grids/data-grid/column-chooser.md",
         "status": ""
       },
       {
         "name": "Column Options",
-        "href": "grids/data-grid-column-options.md",
+        "href": "grids/data-grid/column-options.md",
         "status": ""
       },
       {
         "name": "Column Pinning",
-        "href": "grids/data-grid-column-pinning.md",
+        "href": "grids/data-grid/column-pinning.md",
         "status": ""
       },
       {
         "name": "Column Resizing",
-        "href": "grids/data-grid-column-resizing.md",
+        "href": "grids/data-grid/column-resizing.md",
         "status": ""
       },
       {
         "name": "Column Sorting",
-        "href": "grids/data-grid-column-sorting.md",
+        "href": "grids/data-grid/column-sorting.md",
         "status": ""
       },
       {
         "name": "Column Sparkline",
-        "href": "grids/data-grid-type-sparkline-table.md",
+        "href": "grids/data-grid/type-sparkline-table.md",
         "status": ""
       },
       {
         "name": "Column Summaries",
-        "href": "grids/data-grid-column-summaries.md",
+        "href": "grids/data-grid/column-summaries.md",
         "status": ""
       },
       {
         "name": "Column Types",
-        "href": "grids/data-grid-column-types.md",
+        "href": "grids/data-grid/column-types.md",
         "status": ""
       },
       {
         "name": "High Performance",
-        "href": "grids/data-grid-performance.md",
+        "href": "grids/data-grid/performance.md",
         "status": ""
       },
       {
         "name": "Horizontal Scrolling",
-        "href": "grids/data-grid-horizontal-scrolling.md",
+        "href": "grids/data-grid/horizontal-scrolling.md",
         "status": ""
       },
       {
         "name": "Load & Save Grid Layout",
-        "href": "grids/data-grid-load-save-layout.md",
+        "href": "grids/data-grid/load-save-layout.md",
         "status": "NEW"
       },
       {
         "name": "Row Grouping",
-        "href": "grids/data-grid-row-grouping.md",
+        "href": "grids/data-grid/row-grouping.md",
         "status": "NEW"
       },
       {
         "name": "Row Highlighting",
-        "href": "grids/data-grid-row-highlighting.md",
+        "href": "grids/data-grid/row-highlighting.md",
         "status": ""
       },
       {
         "name": "Row Paging",
-        "href": "grids/data-grid-row-paging.md",
+        "href": "grids/data-grid/row-paging.md",
         "status": ""
       },
       {
         "name": "Row Pinning",
-        "href": "grids/data-grid-row-pinning.md",
+        "href": "grids/data-grid/row-pinning.md",
         "status": ""
       }
     ]
@@ -599,508 +515,6 @@
     "status": ""
   },
   {
-    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
-    "name": "Charts",
-    "header": true,
-    "exclude": ["Blazor", "Angular","React", "WebComponents"]
-  },
-  {
-    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
-    "name": "Category Chart",
-    "href": "category-chart.md",
-    "status": "",
-    "exclude": ["Blazor", "Angular", "React", "WebComponents"],
-    "items": [
-      {
-        "name": "Annotations",
-        "href": "category-chart-annotations.md",
-        "status": ""
-      },
-      {
-        "name": "Axis Options",
-        "href": "category-chart-axis-options.md",
-        "status": ""
-      },
-      {
-        "name": "Real Time Data",
-        "href": "category-chart-high-frequency.md",
-        "status": ""
-      },
-      {
-        "name": "High Volume Data",
-        "href": "category-chart-high-volume.md",
-        "status": ""
-      },
-      {
-        "name": "Configuration Options",
-        "href": "category-chart-config-options.md",
-        "status": ""
-      },
-      {
-        "name": "Highlighting",
-        "href": "category-chart-highlighting.md",
-        "status": ""
-      },
-      {
-        "name": "Tooltip Types",
-        "href": "category-chart-tooltip-types.md",
-        "status": ""
-      }
-    ]
-  },
-  {
-    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
-    "name": "Data Chart",
-    "href": "data-chart.md",
-    "status": "",
-    "exclude": ["Blazor", "Angular", "React", "WebComponents"],
-    "items": [
-      {
-        "name": "Axis",
-        "href": "data-chart-axis-types.md",
-        "status": "",
-        "items": [
-          {
-            "name": "Axis Annotations",
-            "href": "data-chart-axis-annotations.md",
-            "status": ""
-          },
-          {
-            "name": "Axis Settings",
-            "href": "data-chart-axis-settings.md",
-            "status": ""
-          },
-          {
-            "name": "Axis Locations",
-            "href": "data-chart-axis-locations.md",
-            "status": ""
-          },
-          {
-            "name": "Axis Sharing",
-            "href": "data-chart-axis-sharing.md",
-            "status": ""
-          }
-        ]
-      },
-      {
-        "name": "Chart Types",
-        "href": "data-chart-series-types.md",
-        "status": "",
-        "items": [
-          {
-            "name": "Area",
-            "href": "data-chart-types-overview-area.md",
-            "status": "",
-            "items": [
-              {
-                "name": "Area Chart",
-                "href": "data-chart-type-category-area-series.md",
-                "status": ""
-              },
-              {
-                "name": "Polar Area Chart",
-                "href": "data-chart-type-polar-area-series.md",
-                "status": ""
-              },
-              {
-                "name": "Polar Spline Area Chart",
-                "href": "data-chart-type-polar-spline-area-series.md",
-                "status": ""
-              },
-              {
-                "name": "Radial Area Chart",
-                "href": "data-chart-type-radial-area-series.md",
-                "status": ""
-              },
-              {
-                "name": "Range Area Chart",
-                "href": "data-chart-type-range-area-series.md",
-                "status": ""
-              },
-              {
-                "name": "Scatter Area Chart",
-                "href": "data-chart-type-scatter-area-series.md",
-                "status": ""
-              },
-              {
-                "name": "Scatter Polygon Chart",
-                "href": "data-chart-type-scatter-polygon-series.md",
-                "status": ""
-              },
-              {
-                "name": "Spline Area Chart",
-                "href": "data-chart-type-category-spline-area-series.md",
-                "status": ""
-              },
-              {
-                "name": "Stacked 100 Area Chart",
-                "href": "data-chart-type-stacked-100-area-series.md",
-                "status": ""
-              },
-              {
-                "name": "Stacked 100 Spline Area Chart",
-                "href": "data-chart-type-stacked-100-spline-area-series.md",
-                "status": ""
-              },
-              {
-                "name": "Stacked Area Chart",
-                "href": "data-chart-type-stacked-area-series.md",
-                "status": ""
-              },
-              {
-                "name": "Stacked Spline Area Chart",
-                "href": "data-chart-type-stacked-spline-area-series.md",
-                "status": ""
-              },
-              {
-                "name": "Step Area Chart",
-                "href": "data-chart-type-category-step-area-series.md",
-                "status": ""
-              }
-            ]
-          },
-          {
-            "name": "Bar and Column",
-            "href": "data-chart-types-overview-column.md",
-            "status": "",
-            "items": [
-              {
-                "name": "Bar Chart",
-                "href": "data-chart-type-category-bar-series.md",
-                "status": ""
-              },
-              {
-                "name": "Column Chart",
-                "href": "data-chart-type-category-column-series.md",
-                "status": ""
-              },
-              {
-                "name": "Radial Column Chart",
-                "href": "data-chart-type-radial-column-series.md",
-                "status": ""
-              },
-              {
-                "name": "Range Column Chart",
-                "href": "data-chart-type-range-column-series.md",
-                "status": ""
-              },
-              {
-                "name": "Stacked 100 Bar Chart",
-                "href": "data-chart-type-stacked-100-bar-series.md",
-                "status": ""
-              },
-              {
-                "name": "Stacked 100 Column Chart",
-                "href": "data-chart-type-stacked-100-column-series.md",
-                "status": ""
-              },
-              {
-                "name": "Stacked Bar Chart",
-                "href": "data-chart-type-stacked-bar-series.md",
-                "status": ""
-              },
-              {
-                "name": "Stacked Column Chart",
-                "href": "data-chart-type-stacked-column-series.md",
-                "status": ""
-              },
-              {
-                "name": "Waterfall Chart",
-                "href": "data-chart-type-category-waterfall-series.md",
-                "status": ""
-              }
-            ]
-          },
-          {
-            "name": "Financial",
-            "href": "data-chart-types-overview-financial.md",
-            "status": "",
-            "items": [
-              {
-                "name": "Financial Candlestick Chart",
-                "href": "data-chart-type-financial-candlestick-series.md",
-                "status": ""
-              },
-              {
-                "name": "Financial OHLC Chart",
-                "href": "data-chart-type-financial-ohlc-series.md",
-                "status": ""
-              },
-              {
-                "name": "Financial Area Indicators",
-                "href": "data-chart-type-financial-area-indicators.md",
-                "status": ""
-              },
-              {
-                "name": "Financial Column Indicators",
-                "href": "data-chart-type-financial-column-indicators.md",
-                "status": ""
-              },
-              {
-                "name": "Financial Line Indicators",
-                "href": "data-chart-type-financial-line-indicators.md",
-                "status": ""
-              },
-              {
-                "name": "Financial Overlays",
-                "href": "data-chart-type-financial-overlays.md",
-                "status": ""
-              }
-            ]
-          },
-          {
-            "name": "Line",
-            "href": "data-chart-types-overview-line.md",
-            "status": "",
-            "items": [
-              {
-                "name": "Line Chart",
-                "href": "data-chart-type-category-line-series.md",
-                "status": ""
-              },
-              {
-                "name": "Polar Line Chart",
-                "href": "data-chart-type-polar-line-series.md",
-                "status": ""
-              },
-              {
-                "name": "Polar Spline Chart",
-                "href": "data-chart-type-polar-spline-series.md",
-                "status": ""
-              },
-              {
-                "name": "Radial Line Chart",
-                "href": "data-chart-type-radial-line-series.md",
-                "status": ""
-              },
-              {
-                "name": "Scatter Contour Chart",
-                "href": "data-chart-type-scatter-contour-series.md",
-                "status": ""
-              },
-              {
-                "name": "Scatter Line Chart",
-                "href": "data-chart-type-scatter-line-series.md",
-                "status": ""
-              },
-              {
-                "name": "Scatter Spline Chart",
-                "href": "data-chart-type-scatter-spline-series.md",
-                "status": ""
-              },
-              {
-                "exclude": ["Blazor"],
-                "name": "Scatter Polyline Chart",
-                "href": "data-chart-type-scatter-polyline-series.md",
-                "status": ""
-              },
-              {
-                "name": "Spline Chart",
-                "href": "data-chart-type-category-spline-series.md",
-                "status": ""
-              },
-              {
-                "name": "Stacked 100 Line Chart",
-                "href": "data-chart-type-stacked-100-line-series.md",
-                "status": ""
-              },
-              {
-                "name": "Stacked 100 Spline Chart",
-                "href": "data-chart-type-stacked-100-spline-series.md",
-                "status": ""
-              },
-              {
-                "name": "Stacked Line Chart",
-                "href": "data-chart-type-stacked-line-series.md",
-                "status": ""
-              },
-              {
-                "name": "Stacked Spline Chart",
-                "href": "data-chart-type-stacked-spline-series.md",
-                "status": ""
-              },
-              {
-                "name": "Step Line Chart",
-                "href": "data-chart-type-category-step-line-series.md",
-                "status": ""
-              }
-            ]
-          },
-          {
-            "name": "Pie and Doughnut",
-            "href": "data-chart-types-overview-pie.md",
-            "status": "",
-            "items": [
-              {
-                "name": "Doughnut Chart",
-                "href": "doughnut-chart.md",
-                "status": ""
-              },
-              {
-                "name": "Pie Chart",
-                "href": "pie-chart.md",
-                "status": ""
-              },
-              {
-                "name": "Radial Pie Chart",
-                "href": "data-chart-type-radial-pie-series.md",
-                "status": ""
-              }
-            ]
-          },
-          {
-            "name": "Point",
-            "href": "data-chart-types-overview-point.md",
-            "status": "",
-            "items": [
-              {
-                "name": "Point Chart",
-                "href": "data-chart-type-category-point-series.md",
-                "status": ""
-              },
-              {
-                "name": "Polar Scatter Chart",
-                "href": "data-chart-type-polar-scatter-series.md",
-                "status": ""
-              },
-              {
-                "name": "Scatter Bubble Chart",
-                "href": "data-chart-type-scatter-bubble-series.md",
-                "status": ""
-              },
-              {
-                "name": "Scatter Point Chart",
-                "href": "data-chart-type-scatter-point-series.md",
-                "status": ""
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Legend",
-        "href": "data-chart-legends.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Blazor"],
-        "name": "Navigation",
-        "href": "data-chart-navigation.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Blazor"],
-        "name": "Synchronization",
-        "href": "data-chart-synchronization.md",
-        "status": ""
-      },
-      {
-        "name": "Title and Subtitle",
-        "href": "data-chart-titles.md",
-        "status": ""
-      },
-      {
-        "name": "Series Annotations",
-        "href": "data-chart-series-annotations.md",
-        "status": ""
-      },
-      {
-        "name": "Series Highlighting",
-        "href": "data-chart-series-highlighting.md",
-        "status": ""
-      },
-      {
-        "name": "Series Markers",
-        "href": "data-chart-series-markers.md",
-        "status": ""
-      },
-      {
-        "name": "Series Tooltips",
-        "href": "data-chart-series-tooltips.md",
-        "status": ""
-      },
-      {
-        "name": "Series Trendlines",
-        "href": "data-chart-series-trendlines.md",
-        "status": ""
-      },
-      {
-        "name": "Series Value Overlay",
-        "href": "data-chart-value-overlay.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Blazor", "Angular", "React", "WebComponents"],
-        "name": "Data Sources",
-        "href": "data-chart-data-sources.md",
-        "status": ""
-      }
-    ]
-  },
-  {
-    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
-    "name": "Financial Chart",
-    "href": "financial-chart.md",
-    "status": "",
-    "exclude": ["Blazor", "Angular","React", "WebComponents"],
-    "items": [
-      {
-        "name": "Binding Real-Time Data",
-        "href": "financial-chart-high-frequency.md",
-        "status": ""
-      },
-      {
-        "name": "Binding High Volume Data",
-        "href": "financial-chart-high-volume.md",
-        "status": ""
-      },
-      {
-        "name": "Binding Multiple Data Sources",
-        "href": "financial-chart-multiple-data.md",
-        "status": ""
-      },
-      {
-        "name": "Chart Annotations",
-        "href": "financial-chart-annotations.md",
-        "status": ""
-      },
-      {
-        "name": "Chart Trendlines",
-        "href": "financial-chart-trendlines.md",
-        "status": ""
-      },
-      {
-        "name": "Chart Axis Types",
-        "href": "financial-chart-axis-types.md",
-        "status": ""
-      },
-      {
-        "name": "Chart Performance",
-        "href": "financial-chart-performance.md",
-        "status": ""
-      },
-      {
-        "name": "Chart Panes",
-        "href": "financial-chart-panes.md",
-        "status": ""
-      }
-    ]
-  },
-  {
-    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
-    "name": "Treemap",
-    "href": "charts/types/treemap-chart.md",
-    "exclude": ["Blazor", "Angular","React", "WebComponents"],
-    "status": ""
-  },
-  {
-    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
-    "name": "Sparkline",
-    "href": "charts/types/sparkline-chart.md",
-    "exclude": ["Blazor", "Angular","React", "WebComponents"],
-    "status": ""
-  },
-  {
     "name": "Maps",
     "header": true
   },
@@ -1244,6 +658,115 @@
         "status": ""
       }
     ]
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Layouts",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Avatar",
+    "href": "layouts/avatar.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Badge",
+    "href": "inputs/badge.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Icon",
+    "href": "layouts/icon.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Card",
+    "href": "layouts/card.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "Blazor"],
+    "name": "Dock Manager",
+    "href": "layouts/dock-manager.md",
+    "status": "",
+    "items": [
+      {
+        "exclude": ["Blazor", "WebComponents"],
+        "name": "Using Panes",
+        "href": "layouts/dock-manager-updating-panes.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Blazor", "WebComponents"],
+        "name": "Embedding Frames",
+        "href": "layouts/dock-manager-embedding-frames.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "Blazor", "React"],
+        "name": "Desktop Integration",
+        "href": "layouts/dock-manager-electron.md",
+        "status": "NEW"
+      }
+    ]
+  },
+  {
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "Dock Manager (Coming Soon)",
+    "href": "layouts/dock-manager.md",
+    "status": "",
+    "items": [
+      {
+	    "exclude": ["Blazor"],
+        "name": "Using Panes",
+        "href": "dock-manager-updating-panes.md",
+        "status": ""
+      },
+      {
+	    "exclude": ["Blazor"],
+        "name": "Embedding Frames",
+        "href": "dock-manager-embedding-frames.md",
+        "status": ""
+      }
+    ]
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Menus",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Navbar",
+    "href": "menus/navbar.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Navigation Drawer",
+    "href": "menus/navigation-drawer.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Editors",
+    "header": true
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Multi-Column Combo Box",
+    "href": "editors/multi-column-combobox.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Date Picker",
+    "href": "editors/date-picker.md",
+    "status": "UPDATED"
   },
   {
     "name": "Frameworks",

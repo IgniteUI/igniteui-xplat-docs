@@ -1,30 +1,27 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | シェイプ ポリライン シリーズ | インフラジスティックス
-_description: インフラジスティックスの $Platform$ マップのシェイプ ポリライン シリーズを使用して、都市または空港などの地理的位置間の道路または接続を描画します。$ProductName$ マップ シーリズについての詳細を表示します。
-_keywords: $Platform$ map, $ProductName$, shape polyline series, Infragistics, $Platform$ マップ, シェイプ ポリライン シリーズ, インフラジスティックス
+title: {Platform} マップ | データ可視化ツール | シェイプ ポリライン シリーズ | インフラジスティックス
+_description: インフラジスティックスの {Platform} マップのシェイプ ポリライン シリーズを使用して、都市または空港などの地理的位置間の道路または接続を描画します。{ProductName} マップ シーリズについての詳細を表示します。
+_keywords: {Platform} map, {ProductName}, shape polyline series, Infragistics, {Platform} マップ, シェイプ ポリライン シリーズ, インフラジスティックス
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 _language: ja
 ---
-# $Platform$ 地理ポリライン マップ
+# {Platform} 地理ポリライン マップ
 
-$Platform$ マップ コンポーネントでは、`GeographicPolylineSeries` を使用して、地理的コンテキストでポリラインを使用して地理空間データを表示できます。地理的シリーズのこのタイプは、都市または空港などの地理的位置間の道路または接続を描画するためにしばしば使用されます。
+{Platform} マップ コンポーネントでは、`GeographicPolylineSeries` を使用して、地理的コンテキストでポリラインを使用して地理空間データを表示できます。地理的シリーズのこのタイプは、都市または空港などの地理的位置間の道路または接続を描画するためにしばしば使用されます。
 
-## $Platform$ 地理ポリライン マップの例
+## {Platform} 地理ポリライン マップの例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-shape-polyline-series"
-           alt="$Platform$ シェイプ ポリライン シリーズの使用の例"
-           github-src="maps/geo-map/type-shape-polyline-series">
-</code-view>
+`sample="/maps/geo-map/type-shape-polyline-series", height="500", alt="{Platform} シェイプ ポリライン シリーズの使用の例"`
+
+
 
 <div class="divider--half"></div>
 
 `GeographicPolylineSeries` は、`GeographicShapeSeries` とよく似ていますが、地理空間データがポリゴンではなくポリラインでレンダリングされる点が異なります。
 
 ## データ要件
-コントロール内の他の種類の地理的シリーズと同様に、`GeographicPolylineSeries`  には、オブジェクトの配列にバインドできる `ItemsSource` プロパティがあります。さらに、このオブジェクトの各データ項目には、地理的位置を表す x 値と y 値を持つオブジェクトの配列の配列を使用して単一または複数の形状を格納する 1 つのデータ列が必要です。このデータ列は、ShapeMemberPath プロパティにマップされます。`GeographicPolylineSeries` は、コントロールで多角形をプロットするために、このマップされたデータ列のポイントを使用します。
+コントロール内の他の種類の地理的シリーズと同様に、`GeographicPolylineSeries` には、オブジェクトの配列にバインドできる `ItemsSource` プロパティがあります。さらに、このオブジェクトの各データ項目には、地理的位置を表す x 値と y 値を持つオブジェクトの配列の配列を使用して単一または複数の形状を格納する 1 つのデータ列が必要です。このデータ列は、ShapeMemberPath プロパティにマップされます。`GeographicPolylineSeries` は、コントロールで多角形をプロットするために、このマップされたデータ列のポイントを使用します。
 
 ## コード スニペット
 以下のコードは、`ShapefileConverter` を使用してシェイプ ファイルからロードした都市の場所に `GeographicPolylineSeries` をバインドする方法を示します。
@@ -212,7 +209,6 @@ export class MapTypeShapePolylineSeriesComponent implements AfterViewInit {
         this.map.series.add(lineSeries);
     }
 }
-
 ```
 
 ```html
@@ -282,7 +278,7 @@ public addSeriesWith(shapeData: any[], shapeBrush: string) {
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <IgbGeographicPolylineSeries Outline="Red" ShapefileDataSource="DataSource" />
@@ -294,8 +290,6 @@ public addSeriesWith(shapeData: any[], shapeBrush: string) {
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         this.DataSource = new IgbShapeDataSource()
         {
             ShapefileSource = "https://static.infragistics.com/xplatform/shapes/AmericanRoads.shp",
@@ -305,7 +299,7 @@ public addSeriesWith(shapeData: any[], shapeBrush: string) {
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `GeographicPolylineSeries`
  - `GeographicShapeSeries`

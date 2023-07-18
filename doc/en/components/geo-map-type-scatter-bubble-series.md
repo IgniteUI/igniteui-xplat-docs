@@ -1,22 +1,19 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Scatter Proportional Series | Data Binding | Infragistics
-_description: Use Infragistics $Platform$ map's scatter proportional series to plot markers for the geographic points specified by the data in your application. Learn more about $ProductName$ map's series!
-_keywords: $Platform$ map, scatter proportional series, $ProductName$, Infragistics
+title: {Platform} Map | Data Visualization Tools | Scatter Proportional Series | Data Binding | Infragistics
+_description: Use Infragistics {Platform} map's scatter proportional series to plot markers for the geographic points specified by the data in your application. Learn more about {ProductName} map's series!
+_keywords: {Platform} map, scatter proportional series, {ProductName}, Infragistics
 mentionedTypes: ['XamGeographicMap', 'Series']
 ---
-# $Platform$ Geographic Bubble Map
+# {Platform} Geographic Bubble Map
 
-In $Platform$ map component, you can use the `GeographicProportionalSymbolSeries` to plot bubbles or proportional markers at the geographic locations specified by the data in your application. This map series can be useful for highlighting points of interest in your particular business case like department stores, warehouses, or offices. Also you can use this map series in a fleet management system or a GPS system for dynamic vehicle tracking.
+In {Platform} map component, you can use the `GeographicProportionalSymbolSeries` to plot bubbles or proportional markers at the geographic locations specified by the data in your application. This map series can be useful for highlighting points of interest in your particular business case like department stores, warehouses, or offices. Also you can use this map series in a fleet management system or a GPS system for dynamic vehicle tracking.
 
-## $Platform$ Geographic Bubble Map Example
+## {Platform} Geographic Bubble Map Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-bubble-series"
-           alt="$Platform$ Using Scatter Proportional Series Example"
-           github-src="maps/geo-map/type-scatter-bubble-series">
-</code-view>
+`sample="/maps/geo-map/type-scatter-bubble-series", height="500", alt="{Platform} Using Scatter Proportional Series Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -27,15 +24,15 @@ Similar to other types of scatter series in the map control, the `GeographicProp
 
 The following table summarizes the GeographicHighDensityScatterSeries series properties used for data binding.
 
-Property|Type|Description
----|---|---
-`ItemsSource`|any|Gets or sets the items source
-`LongitudeMemberPath`|string|Uses the ItemsSource property to determine the location of the longitude values on the assigned items
-`LatitudeMemberPath`|string|Uses the ItemsSource property to determine the location of the latitude values on the assigned items
-`RadiusMemberPath`|string|Sets the path to use to get the radius values for the series.
-`RadiusScale`|`SizeScale`|Gets or sets the radius scale property for the current bubble series.
-`MinimumValue`|any|Configure the minimum value for calculating value sub ranges.
-`MaximumValue`|any|Configure the maximum value for calculating value sub ranges.
+| Property|Type|Description |
+| ---|---|--- |
+| `ItemsSource`|any|Gets or sets the items source |
+| `LongitudeMemberPath`|string|Uses the ItemsSource property to determine the location of the longitude values on the assigned items |
+| `LatitudeMemberPath`|string|Uses the ItemsSource property to determine the location of the latitude values on the assigned items |
+| `RadiusMemberPath`|string|Sets the path to use to get the radius values for the series. |
+| `RadiusScale`|`SizeScale`|Gets or sets the radius scale property for the current bubble series. |
+| `MinimumValue`|any|Configure the minimum value for calculating value sub ranges. |
+| `MaximumValue`|any|Configure the maximum value for calculating value sub ranges. |
 
 ## Code Snippet
 
@@ -207,9 +204,7 @@ export class MapTypeScatterBubbleSeriesComponent implements AfterViewInit {
 
         this.map.series.add(symbolSeries);
     }
-
 }
-
 ```
 
 ```html
@@ -262,7 +257,7 @@ addSeriesWith(locations: any[])
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <IgbGeographicProportionalSymbolSeries DataSource="WorldCities"
@@ -284,8 +279,6 @@ addSeriesWith(locations: any[])
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         this.WorldCities = WorldLocations.GetAll();
 
         this.SeriesSizeScale = new SizeScale()
@@ -304,7 +297,7 @@ addSeriesWith(locations: any[])
 }
 ```
 
- ## API Members
+## API References
 
  - `GeographicProportionalSymbolSeries`
  - `ItemsSource`

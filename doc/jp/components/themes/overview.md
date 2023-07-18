@@ -1,14 +1,14 @@
 ---
-title: $Platform$ スタイル設定およびテーマ | $Platform$ テーマ化 | テーマの切り替え | インフラジスティックス
-_description: インフラジスティックスの $Platform$ コンポーネントを使用して、アプリを作成し、世界最速の仮想化されたリアルタイムの $Platform$ データ グリッドとストリーミングのファイナンシャルおよびビジネスと チャートを使用して、データの視覚化を改善します。
-_keywords: $ProductName$, インフラジスティックス, テーマ, スタイル設定
+title: {Platform} スタイル設定およびテーマ | {Platform} テーマ化 | テーマの切り替え | インフラジスティックス
+_description: インフラジスティックスの {Platform} コンポーネントを使用して、アプリを作成し、世界最速の仮想化されたリアルタイムの {Platform} データ グリッドとストリーミングのファイナンシャルおよびビジネスと チャートを使用して、データの視覚化を改善します。
+_keywords: {ProductName}, インフラジスティックス, テーマ, スタイル設定
 mentionedTypes: ["ConfigureTheme"]
 _language: ja
 ---
 
-# $ProductName$ のテーマ
+# {ProductName} のテーマ
 
-$ProductName$ には、Bootstrap、Material、Fluent、Indigo の 4 つの異なるテーマが付属しています。すべてのコンポーネント テーマはコンポーネントに組み込まれていますが、パレット、タイポグラフィ、およびその他のグローバル構成を機能させるには、グローバル スタイル ファイルが必要です。
+{ProductName} には、Bootstrap、Material、Fluent、Indigo の 4 つの異なるテーマが付属しています。すべてのコンポーネント テーマはコンポーネントに組み込まれていますが、パレット、タイポグラフィ、およびその他のグローバル構成を機能させるには、グローバル スタイル ファイルが必要です。
 
 ## テーマの読み込み
 
@@ -30,10 +30,10 @@ $ProductName$ には、Bootstrap、Material、Fluent、Indigo の 4 つの異な
 
 ## ランタイム テーマの切り替え
 
-> [!NOTE]
+> [!Note]
 ランタイムにテーマを変更するには、上の表のグローバル スタイルシートも置き換える必要があります。
 
-$ProductName$ を使用すると、ライブラリによってエクスポートされた `ConfigureTheme` 関数を使用して、実行時にコンポーネントのテーマを切り替えることができます。
+{ProductName} を使用すると、ライブラリによってエクスポートされた `ConfigureTheme` 関数を使用して、実行時にコンポーネントのテーマを切り替えることができます。
 
 それを呼び出して、4 つの有効なテーマ (bootstrap、material、fluent、または indigo) のいずれかを文字列として渡すと、読み込まれたコンポーネントのスタイルが変更されます。
 
@@ -44,6 +44,9 @@ import { configureTheme } from "igniteui-webcomponents";
 configureTheme("material");
 ```
 
-## API メンバー
+> [!Note]
+これは、内部スタイルを目的のテーマに切り替えるようにコンポーネントに指示するだけで、グローバル テーマ ファイルも上記のファイルのいずれかに切り替える必要があります。
+
+## API リファレンス
 
  - `ConfigureTheme`

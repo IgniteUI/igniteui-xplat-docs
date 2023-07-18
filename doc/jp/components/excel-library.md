@@ -1,23 +1,20 @@
 ---
-title: $Platform$ Excel ライブラリ | データ スプレッドシートとテーブル | インフラジスティックス
-_description: インフラジスティックスの $Platform$ Excel ライブラリは、Microsoft Excel 機能を使用してスプレッドシート データを使用した作業が可能になります。$ProductName$ Excel ライブラリを使用して Excel からアプリケーションにデータを簡単に転送できる方法について説明します。
-_keywords: Excel library, $ProductName$, Infragistics, workbook, Excel ライブラリ, ワークブック, インフラジスティックス
-mentionedTypes: ['Workbook']
+title: {Platform} Excel ライブラリ | データ スプレッドシートとテーブル | インフラジスティックス
+_description: インフラジスティックスの {Platform} Excel ライブラリは、Microsoft Excel 機能を使用してスプレッドシート データを使用した作業が可能になります。{ProductName} Excel ライブラリを使用して Excel からアプリケーションにデータを簡単に転送できる方法について説明します。
+_keywords: Excel library, {ProductName}, Infragistics, workbook, Excel ライブラリ, ワークブック, インフラジスティックス
+mentionedTypes: ['Workbook', 'Worksheet', 'Cell', 'Formula']
 _language: ja
 ---
-# $Platform$ Excel ライブラリの概要
+# {Platform} Excel ライブラリの概要
 
-Infragistics $Platform$ Excel ライブラリは、`Workbook`、`Worksheet`、`Cell`、`Formula` などの人気の Microsoft® Excel® スプレッドシート オブジェクトを使用してスプレッドシート データで作業をすることができます。Infragistics $Platform$ Excel ライブラリによって Excel スプレッドシートでアプリケーションのデータを表示するだけでなく、Excel からアプリケーションへのデータの転送も簡単になります。
+Infragistics {Platform} Excel ライブラリは、`Workbook`、`Worksheet`、`Cell`、`Formula` などの人気の Microsoft® Excel® スプレッドシート オブジェクトを使用してスプレッドシート データで作業をすることができます。Infragistics {Platform} Excel ライブラリによって Excel スプレッドシートでアプリケーションのデータを表示するだけでなく、Excel からアプリケーションへのデータの転送も簡単になります。
 
-## $Platform$ Excel ライブラリの例
+## {Platform} Excel ライブラリの例
 
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-overview"
-           alt="$Platform$ Excel ライブラリの例"
-           github-src="excel/excel-library/overview">
-</code-view>
+`sample="/excel/excel-library/overview", height="100", alt="{Platform} Excel ライブラリの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -25,14 +22,14 @@ Infragistics $Platform$ Excel ライブラリは、`Workbook`、`Worksheet`、`C
 ## 依存関係
 excel パッケージをインストールするときに core パッケージもインストールする必要があります。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageExcel}
-</pre>
+```
 
 ## モジュールの要件
 
-$Platform$ Excel ライブラリを作成するには、以下のモジュールが必要です。
+{Platform} Excel ライブラリを作成するには、以下のモジュールが必要です。
 
 ```ts
 // app.module.ts
@@ -80,7 +77,7 @@ Excel ライブラリには、アプリのバンドル サイズを制限する�
 
 ## 要件
 
-$Platform$ Excel ライブラリを使用するには、次の using ステートメントを追加する必要があります:
+{Platform} Excel ライブラリを使用するには、次の using ステートメントを追加する必要があります:
 
 ```razor
 @using Infragistics.Documents.Excel
@@ -133,7 +130,8 @@ Web Assembly (WASM) Blazor プロジェクトを使用している場合は、�
 
 -  Microsoft Excel 2016
 
-> [!NOTE]
+```md
+> [!Note]
 > Excel ライブラリ は Excel Binary Workbook (.xlsb) フォーマットを現時点ではサポートしていません。
 
 ## ワークブックの読み込みと保存
@@ -177,18 +175,15 @@ private void SaveFile(byte[] bytes, string fileName, string mime)
 }
 ```
 
->[!NOTE]
->For Angular
-><div class="divider--half"></div>
->
+<!--Angular -->
+
 ## ヒープの管理
->
->Excel Library のサイズに因り、ソースマップの生成を無効にすることを推奨します。
->
->architect => build => options から serve の options で `vendorSourceMap` オプションを設定して `angular.json` を変更します。
->
+
+Excel Library のサイズに因り、ソースマップの生成を無効にすることを推奨します。
+
+architect => build => options から serve の options で `vendorSourceMap` オプションを設定して `angular.json` を変更します。
+
 ```ts
-...
     "architect": {
         "build": {
           "builder": "...",
@@ -213,11 +208,11 @@ private void SaveFile(byte[] bytes, string fileName, string mime)
         // ...
       }
 ```
->
-<!-- -->
+<!--end:Angular-->
 
-## API メンバー
+## API リファレンス
 
  - `Load`
  - `WorkbookInProcessRuntime`
+ - `Worksheet`
  - `Workbook`

@@ -1,24 +1,21 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | 地理的データ モデルのバインディング | インフラジスティックス
-_description: インフラジスティックスの $Platform$ JavaScript マップを使用して、シェイプ ファイルからの地理空間データやデータ モデルからの地理的位置を地理的画像マップに表示します。$ProductName$ マップのサンプルを是非お試しください!
-_keywords: $Platform$ map, binding data models, $ProductName$, Infragistics, data binding, $Platform$ マップ, データ モデルのバインディング, データ バインディング, インフラジスティックス
+title: {Platform} マップ | データ可視化ツール | 地理的データ モデルのバインディング | インフラジスティックス
+_description: インフラジスティックスの {Platform} JavaScript マップを使用して、シェイプ ファイルからの地理空間データやデータ モデルからの地理的位置を地理的画像マップに表示します。{ProductName} マップのサンプルを是非お試しください!
+_keywords: {Platform} map, binding data models, {ProductName}, Infragistics, data binding, {Platform} マップ, データ モデルのバインディング, データ バインディング, インフラジスティックス
 mentionedTypes: ['XamGeographicMap', 'GeographicScatterAreaSeries', 'GeographicHighDensityScatterSeries', 'GeographicProportionalSymbolSeries', GeographicScatterAreaSeries', GeographicContourLineSeries', 'GeographicShapeSeries', 'GeographicPolylineSeries', 'Series']
 namespace: Infragistics.Controls.Maps
 _language: ja
 ---
-# $Platform$ 地理的データ モデルのバインディング
+# {Platform} 地理的データ モデルのバインディング
 
-$ProductName$ マップ コンポーネントは、シェイプ ファイルからの地理空間データやデータ モデルからの地理的位置を地理的画像マップに表示するように設計されています。地理的シリーズの `ItemsSource` プロパティは、データ モデルへのバインディングのために使用されます。このプロパティは、カスタム オブジェクトの配列にバインドできます。
+{ProductName} マップ コンポーネントは、シェイプ ファイルからの地理空間データやデータ モデルからの地理的位置を地理的画像マップに表示するように設計されています。地理的シリーズの `ItemsSource` プロパティは、データ モデルへのバインディングのために使用されます。このプロパティは、カスタム オブジェクトの配列にバインドできます。
 
-## $Platform$ 地理的データ モデルのバインディングの例
+## {Platform} 地理的データ モデルのバインディングの例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-model"
-           alt="$Platform$ 地理的データ モデルのバインディングの例"
-           github-src="maps/geo-map/binding-data-model">
-</code-view>
+`sample="/maps/geo-map/binding-data-model", height="500", alt="{Platform} 地理的データ モデルのバインディングの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -26,11 +23,11 @@ $ProductName$ マップ コンポーネントは、シェイプ ファイルか�
 
 | Geographic シリーズ  | プロパティ   | 概要   |
 |--------------|---------------| ---------------|
-| `GeographicSymbolSeries` | `LongitudeMemberPath`, `LatitudeMemberPath`   | 2 つの数値の経度と緯度座標の名前を指定します。 |
-| `GeographicHighDensityScatterSeries` | `LongitudeMemberPath`, `LatitudeMemberPath`   | 2 つの数値の経度と緯度座標の名前を指定します。 |
-| `GeographicProportionalSymbolSeries` | `LongitudeMemberPath`, `LatitudeMemberPath`, `RadiusMemberPath`   | 2 つの経度座標と緯度座標の名前と、シンボルのサイズ/半径の数字列を 1 列指定します。 |
-| `GeographicScatterAreaSeries` | `LongitudeMemberPath`, `LatitudeMemberPath`, `ColorMemberPath`   | 数値の三角測量のために、2 つの経度と緯度座標および数値列を 1 列指定します。 |
-| `GeographicContourLineSeries` | `LongitudeMemberPath`, `LatitudeMemberPath`, `ValueMemberPath`   | 数値の三角測量のために、2 つの経度と緯度座標および数値列を 1 列指定します。 |
+| `GeographicSymbolSeries` | `LongitudeMemberPath`、`LatitudeMemberPath`   | 2 つの数値の経度と緯度座標の名前を指定します。 |
+| `GeographicHighDensityScatterSeries` | `LongitudeMemberPath`、`LatitudeMemberPath`   | 2 つの数値の経度と緯度座標の名前を指定します。 |
+| `GeographicProportionalSymbolSeries` | `LongitudeMemberPath`、`LatitudeMemberPath`、`RadiusMemberPath`   | 2 つの経度座標と緯度座標の名前と、シンボルのサイズ/半径の数字列を 1 列指定します。 |
+| `GeographicScatterAreaSeries` | `LongitudeMemberPath`、`LatitudeMemberPath`、`ColorMemberPath`   | 数値の三角測量のために、2 つの経度と緯度座標および数値列を 1 列指定します。 |
+| `GeographicContourLineSeries` | `LongitudeMemberPath`、`LatitudeMemberPath`、`ValueMemberPath`   | 数値の三角測量のために、2 つの経度と緯度座標および数値列を 1 列指定します。 |
 |`GeographicShapeSeries`|`ShapeMemberPath`|図形の地理的ポイントを含む `ItemsSource` 項目のデータ列の名前を指定します。このプロパティは、x プロパティと y プロパティを持つオブジェクトの配列の配列にマップする必要があります。 |
 |`GeographicPolylineSeries`|`ShapeMemberPath`|線の地理的座標を含む `ItemsSource` 項目のデータ列の名前を指定します。このプロパティは、x プロパティと y プロパティを持つオブジェクトの配列の配列にマップする必要があります。 |
 
@@ -122,8 +119,6 @@ public createPolylineSeries(flight: any)
     lineSeries.shapeStroke = flight.color;
     this.geoMap.series.add(lineSeries);
 }
-
-
 ```
 
 ```ts
@@ -311,7 +306,7 @@ createPolylineSeries(flight: any)
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     @for (int i = 0; i < this.DataSource.Count; i++)
@@ -354,8 +349,6 @@ createPolylineSeries(flight: any)
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         WorldCity cityDAL = new WorldCity() { Lat = 32.763, Lon = -96.663, Country = "US", Name = "Dallas" };
         WorldCity citySYD = new WorldCity() { Lat = -33.889, Lon = 151.028, Country = "Australia", Name = "Sydney" };
         WorldCity cityNZL = new WorldCity() { Lat = -36.848, Lon = 174.763, Country = "New Zealand", Name = "Auckland" };
@@ -372,13 +365,13 @@ createPolylineSeries(flight: any)
         WorldCity cityLAX = new WorldCity() { Lat = 34.000, Lon = -118.25, Country = "US", Name = "Los Angeles" };
 
         this.DataSource = new List<FlightInfo>() {
-            new FlightInfo(){ Origin = cityDAL, Dest = citySNG, Color = "Green" },
-            new FlightInfo(){ Origin = cityMOS, Dest = cityNZL, Color = "Red" },
-            new FlightInfo(){ Origin = cityCHL, Dest = cityJAP, Color = "Blue" },
-            new FlightInfo(){ Origin = cityPAN, Dest = cityROM, Color = "Orange" },
-            new FlightInfo(){ Origin = cityALT, Dest = cityJOH, Color = "Black" },
-            new FlightInfo(){ Origin = cityNYC, Dest = cityQTR, Color = "Purple" },
-            new FlightInfo(){ Origin = cityLAX, Dest = citySYD, Color = "Gray" },
+            new FlightInfo() { Origin = cityDAL, Dest = citySNG, Color = "Green" },
+            new FlightInfo() { Origin = cityMOS, Dest = cityNZL, Color = "Red" },
+            new FlightInfo() { Origin = cityCHL, Dest = cityJAP, Color = "Blue" },
+            new FlightInfo() { Origin = cityPAN, Dest = cityROM, Color = "Orange" },
+            new FlightInfo() { Origin = cityALT, Dest = cityJOH, Color = "Black" },
+            new FlightInfo() { Origin = cityNYC, Dest = cityQTR, Color = "Purple" },
+            new FlightInfo() { Origin = cityLAX, Dest = citySYD, Color = "Gray" },
         };
     }
 
@@ -406,7 +399,7 @@ createPolylineSeries(flight: any)
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `ColorMemberPath`
  - `GeographicContourLineSeries`

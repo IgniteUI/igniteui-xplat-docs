@@ -1,25 +1,22 @@
 ---
-title: $Platform$ List コンポーネント | インフラジスティックス
-_description: インフラジスティックスの $Platform$ List コンポーネントは、項目のグループを表示するのに役立ちます。$ProductName$ を使用したデータの表示方法について説明します。
-_keywords: $Platform$ List, Item List, overview, $ProductName$, data binding, Infragistics, $Platform$ リスト, 項目リスト, 概要, データ バインディング, インフラジスティックス
+title: {Platform} List コンポーネント | インフラジスティックス
+_description: インフラジスティックスの {Platform} List コンポーネントは、項目のグループを表示するのに役立ちます。{ProductName} を使用したデータの表示方法について説明します。
+_keywords: {Platform} List, Item List, overview, {ProductName}, data binding, Infragistics, {Platform} リスト, 項目リスト, 概要, データ バインディング, インフラジスティックス
 mentionedTypes: ['List', 'ListHeader', 'ListItem', 'Avatar', 'Button', 'RadioGroup', 'Radio']
 _language: ja
 ---
 
-# $Platform$ List (リスト) の概要
+# {Platform} List (リスト) の概要
 
-$ProductName$ List 要素は、項目のグループを番号の付いた形式または黒丸の付いた形式のいずれかで提示する時に非常に役に立ちます。さまざまなレイアウト要素の配列を含むテキスト アイテムの単純なリスト、またはより複雑なリストを作成できます。`List` コンポーネントは項目の行を表示し、1 つ以上のヘッダーもサポートします。各リスト項目は完全にテンプレート化可能であり、有効な HTML またはその他のコンポーネントをサポートします。
+{ProductName} List 要素は、項目のグループを番号の付いた形式または黒丸の付いた形式のいずれかで提示する時に非常に役に立ちます。さまざまなレイアウト要素の配列を含むテキスト アイテムの単純なリスト、またはより複雑なリストを作成できます。`List` コンポーネントは項目の行を表示し、1 つ以上のヘッダーもサポートします。各リスト項目は完全にテンプレート化可能であり、有効な HTML またはその他のコンポーネントをサポートします。
 
-## $Platform$ List の例
+## {Platform} List の例
 
 次の例は、名前と電話番号のプロパティを持つ連絡先が入力されたリストを表しています。以下に示す `List` コンポーネントは、`Avatar` 要素と `Button` 要素を使用して、ユーザー エクスペリエンスを強化し、テキストと呼び出しアクションのアバター画像とボタンを設定する機能を公開します。
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/list-overview"
-           alt="$Platform$ List の例"
-           github-src="grids/list/overview">
-</code-view>
+`sample="/grids/list/overview", height="300", alt="{Platform} List の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -28,7 +25,7 @@ $ProductName$ List 要素は、項目のグループを番号の付いた形式�
 List Web コンポーネントは、項目の垂直リストを簡単に表示できます。
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります。
 
 ```cmd
 npm install {PackageWebComponents}
@@ -37,7 +34,7 @@ npm install {PackageWebComponents}
 
 <!-- React -->
 
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -57,7 +54,9 @@ IgrListModule.register();
 `List` を使用する前に、次のように登録する必要があります。
 
 ```razor
-IgbListModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbListModule));
 ```
 
 <!-- Blazor -->
@@ -130,12 +129,9 @@ defineComponents(IgcListComponent);
 
 以下は結果です:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/list-add-list-items"
-           alt="$Platform$ リスト項目の追加の例"
-           github-src="grids/list/add-list-items">
-</code-view>
+`sample="/grids/list/add-list-items", height="300", alt="{Platform} リスト項目の追加の例"`
+
+
 
 リスト項目を次のように強化できます。名前と名前の下に表示される電話番号を使用して連絡先のリストを作成するとします。これを実現するために、次の例に示すように、リスト項目に付属するいくつかのスロットを使用できます。
 
@@ -201,12 +197,9 @@ defineComponents(IgcListComponent);
 
 上記のコードを実装すると、リスト コンポーネントは次のようになります:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/list-list-item-content"
-           alt="$Platform$ List の例"
-           github-src="grids/list/list-item-content">
-</code-view>
+`sample="/grids/list/list-item-content", height="300", alt="{Platform} List の例"`
+
+
 
 ### アバターおよびボタンの追加
 
@@ -296,7 +289,7 @@ defineComponents(IgcListComponent);
     <IgrListItem>
         <div slot="start">
             <IgrAvatar src="https://static.infragistics.com/xplatform/images/avatars/8.jpg" shape="circle" />
-        </div>                        
+        </div>
         <h2 slot="title">Terrance Orta</h2>
         <span slot="subtitle">770-504-2217</span>
         <div slot="end">
@@ -431,12 +424,9 @@ public onRadioChange(e: any) {
 
 上記のコードを実装した結果は、次のようになります:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/list-overview"
-           alt="$Platform$ List の例"
-           github-src="grids/list/overview">
-</code-view>
+`sample="/grids/list/overview", height="300", alt="{Platform} List の例"`
+
+
 
 ## スタイル設定
 
@@ -459,63 +449,17 @@ igc-list-item::part(subtitle) {
 }
 
 igc-list-item::part(end) {
-    --igc-secondary-500: 230,48%,47%;
+    --ig-secondary-500: 230,48%,47%;
 }
 ```
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/list-styling"
-           alt="$Platform$ List の例"
-           github-src="grids/list/styling">
-</code-view>
+`sample="/grids/list/styling", height="300", alt="{Platform} List の例"`
 
-<!-- WebComponents -->
-
-## API リファレンス
-
-この記事では、`List` コンポーネントで多くのことを取り上げました。最初に、テキスト項目を含む簡単なリストを作成しました。次に、連絡先項目のリストを作成し、`Avatar` や `Button` などの追加の $ProductName$ コンポーネントを使用してそれらに機能を追加しました。最後に、公開された CSS パーツを使用してコンポーネントの外観を変更しました。
-
-* `List`
-* `ListHeader`
-* `ListItem`
-
-使用したその他のコンポーネント:
-
-* `Avatar`
-* `Button`
-* `RadioGroup`
-* `Radio`
-
-<!-- end: WebComponents -->
+この記事では、`List` コンポーネントで多くのことを取り上げました。最初に、テキスト項目を含む簡単なリストを作成しました。次に、連絡先項目のリストを作成し、`Avatar` や `Button` などの追加の {ProductName} コンポーネントを使用してそれらに機能を追加しました。最後に、公開された CSS パーツを使用してコンポーネントの外観を変更しました。
 
 <div class="divider--half"></div>
 
-## その他のリソース
-
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [**GitHub** の Ignite UI for React の例 (英語)](https://github.com/IgniteUI/igniteui-react-examples)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [$Platform$ **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [$Platform$ **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-
-## API メンバー
+## API リファレンス
 
  - `Avatar`
  - `Button`
@@ -524,3 +468,8 @@ igc-list-item::part(end) {
  - `ListHeader`
  - `ListItem`
  - `List`
+
+## その他のリソース
+
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

@@ -1,58 +1,94 @@
 {
-    "metadata": [{
-        "src": [{
-            "files": ["src/**.csproj"],
-            "exclude": ["**/obj/**", "**/bin/**", "_site/**"]
-        }],
-        "dest": "api"
-    }],
-    "build": {
-        "content": [{
-                "files": ["api/**.yml", "api/index.md"]
-            },
-            {
-                "files": [
-                    "components/**.md",
-                    "components/**/toc.yml",
-                    "components/themes/**.md",
-                    "toc.yml",
-                    "*.md"
-                ],
-                "exclude": ["obj/**", "_site/**"]
-            }
-        ],
-        "resource": [{
-            "files": ["images/**", "web.config"],
-            "exclude": ["obj/**", "_site/**"]
-        }],
-        "overwrite": [{
-            "files": ["apidoc/**.md"],
-            "exclude": ["obj/**", "_site/**"]
-        }],
-        "dest": "_site",
-        "globalMetadataFiles": ["global.json", "../../../node_modules/igniteui-docfx-template/template/bundling.global.json"],
-        "fileMetadataFiles": [],
-        "template": ["../../../node_modules/igniteui-docfx-template/template"],
-        "postProcessors": ["SetEnvironmentVariables"],
-        "noLangKeyword": false,
-        "keepFileLink": false,
-        "cleanupCacheHistory": true,
-        "disableGitFeatures": true,
-        "sitemap": {
-            "baseUrl": "https://www.infragistics.com/products/{ProductSpinal}/{PlatformLower}/",
-            "changefreq": "weekly",
-            "priority": 0.7,
-            "fileOptions":{
-                "**/data-grid.md": {
-                    "priority": 0.8
-                },
-                "**/grids.md": {
-                    "priority": 0.8
-                },
-                "**/*-grid-*.md": {
-                    "priority": 0.8
-                }
-            }
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "src/**.csproj"
+          ],
+          "exclude": [
+            "**/obj/**",
+            "**/bin/**",
+            "_site/**"
+          ]
         }
+      ],
+      "dest": "api"
     }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "api/**.yml",
+          "api/index.md"
+        ]
+      },
+      {
+        "files": [
+          "components/**.md",
+          "components/**/toc.yml",
+          "components/themes/**.md",
+          "toc.yml",
+          "*.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**",
+          "web.config"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "apidoc/**.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
+      }
+    ],
+    "dest": "_site",
+    "globalMetadataFiles": [
+      "global.json",
+      "../../../node_modules/igniteui-docfx-template/template/bundling.global.json"
+    ],
+    "fileMetadataFiles": [],
+    "template": [
+      "../../../node_modules/igniteui-docfx-template/template"
+    ],
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": true,
+    "disableGitFeatures": true,
+    "sitemap": {
+      "baseUrl": "https://www.infragistics.com/products/{ProductSpinal}/{PlatformLower}/",
+      "changefreq": "weekly",
+      "priority": 0.7,
+      "fileOptions": {
+        "**/data-grid.md": {
+          "priority": 0.8
+        },
+        "**/grids.md": {
+          "priority": 0.8
+        },
+        "**/*-grid-*.md": {
+          "priority": 0.8
+        }
+      }
+    }
+  }
 }

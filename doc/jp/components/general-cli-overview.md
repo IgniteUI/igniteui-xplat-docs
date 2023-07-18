@@ -1,79 +1,80 @@
 ---
-title: $Platform$ CLI | データ可視化ツールおよびテーブル | インフラジスティックス
-_description: $ProductName$ ツールセットには $Platform$ CLI があり、生産性を高め、プロジェクトをすばやく開始できます。今すぐ $ProductName$ アプリケーションを作成してください!
-_keywords: $Platform$ cli, command line interface, $ProductName$, Infragistics, コマンド ライン インターフェイス, インフラジスティックス
+title: {Platform} CLI | データ可視化ツールおよびテーブル | インフラジスティックス
+_description: {ProductName} ツールセットには {Platform} CLI があり、生産性を高め、プロジェクトをすばやく開始できます。今すぐ {ProductName} アプリケーションを作成してください!
+_keywords: {Platform} cli, command line interface, {ProductName}, Infragistics, コマンド ライン インターフェイス, インフラジスティックス
 _language: ja
+mentionedTypes: []
 ---
 
-# $Platform$ Ignite UI CLI
+# {Platform} Ignite UI CLI
 
-CLI ツールでは、$ProductName$ の定義済みのプロジェクト テンプレートが含まれ、アプリ開発を効率的に行うことができます。<!-- React --> <a href="https://github.com/IgniteUI/igniteui-cli/blob/master/README.md#generate-ignite-ui-for-react-project" target="_blank"><!-- end: React --><!-- WebComponents --><a href="https://github.com/IgniteUI/igniteui-cli/blob/master/README.md#generate-ignite-ui-for-web-components-project" target="_blank"><!-- end: WebComponents -->Ignite UI CLI</a> は、さまざまなフレームワーク用のアプリケーションを作成およびスキャフォールディングするためのスタンドアロン コマンドラインツールです。
+CLI ツールでは、{ProductName} の定義済みのプロジェクト テンプレートが含まれ、アプリ開発を効率的に行うことができます。<!-- React --> <a href="https://github.com/IgniteUI/igniteui-cli/blob/master/README.md#generate-ignite-ui-for-react-project" target="_blank"><!-- end: React --><!-- WebComponents --><a href="https://github.com/IgniteUI/igniteui-cli/blob/master/README.md#generate-ignite-ui-for-web-components-project" target="_blank"><!-- end: WebComponents -->Ignite UI CLI</a> は、さまざまなフレームワーク用のアプリケーションを作成およびスキャフォールディングするためのスタンドアロン コマンドラインツールです。
 
 ## 作業の開始
 
 まずは CLI をインストールします。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install -g igniteui-cli
-</pre>
+```
 
-上記のインストール コマンドは、Ignite UI CLI を $ProductName$ アプリケーションの作成、スキャフォールディング、および実行に使用できるようにします。
+上記のインストール コマンドは、Ignite UI CLI を {ProductName} アプリケーションの作成、スキャフォールディング、および実行に使用できるようにします。
 
 ## 新しいプロジェクトの作成
 
-Ignite UI CLI を使用して、$ProductName$ コントロールを使用するように構成されたアプリケーションを作成するには、コマンドラインで次のテンプレートを使用できます。
+Ignite UI CLI を使用して、{ProductName} コントロールを使用するように構成されたアプリケーションを作成するには、コマンドラインで次のテンプレートを使用できます。
 
 <!-- React -->
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 ig new "[name_of_project]" --framework=[target_framework] --type=[project_type]
-</pre>
+```
 
 上記のテンプレートを使用して、ES6 をターゲットとする「My Project」という名前の **React** アプリケーションを作成する場合は、次のコマンドを実行します。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 ig new "My Project" --framework=react --type=igr-es6
-</pre>
+```
 <!-- end: React -->
 
 <!-- WebComponents -->
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 ig new "[name_of_project]" --framework=[target_framework]
-</pre>
+```
 
 上記のテンプレートを使用して、「My Project」という名前の **Web Components** アプリケーションを作成する場合は、次のコマンドを実行します。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 ig new "My Project" --framework=webcomponents
-</pre>
+```
 <!-- end: WebComponents -->
 
 ## コンポーネントの追加
 
 プロジェクトの作成後は、いつでも **ig add** を使用してコンポーネント テンプレートを追加することができます。パラメーターを指定せずにこのコマンドを実行した場合、キーボードナビゲーション CLI を使用して、選択したコントロールを追加することにより、使用可能なテンプレートが示されます。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 ig add
-</pre>
+```
 
 または、単に **ig list** コマンドを実行して、現在のプロジェクトでサポートされているテンプレートの完全なリストを取得することもできます。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 ig list
-</pre>
+```
 
 **ig list** を実行し、追加したいコンポーネント テンプレートを見つけた後、コマンドラインでこのテンプレートを実行することにより、すばやく追加することができます。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 ig add [component_template] [component_name]
-</pre>
+```
 
-上記の「component_template」は通常、$ProductName$ コンポーネント (grid、category-chart、linear-gauge など) と一致します。
+上記の「component_template」は通常、{ProductName} コンポーネント (grid、category-chart、linear-gauge など) と一致します。
 
 たとえば、「MyGrid Component」という名前のデータ グリッド テンプレート コンポーネントをアプリに追加する場合は、次のコマンドを実行します。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 ig add grid MyGridComponent
-</pre>
+```
 
 <!-- WebComponents -->
 現在、CLI は次の Web コンポーネントで使用できます。
@@ -101,12 +102,12 @@ ig add grid MyGridComponent
 
 ## アプリをビルドして実行する
 
-$ProductName$ アプリをビルドして実行するには、**ig build** コマンドと **ig run** コマンドを呼び出します。
+{ProductName} アプリをビルドして実行するには、**ig build** コマンドと **ig run** コマンドを呼び出します。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 ig build
 ig run
-</pre>
+```
 
 ## Ignite UI CLI コマンド
 

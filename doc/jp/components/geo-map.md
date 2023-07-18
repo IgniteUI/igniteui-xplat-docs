@@ -1,27 +1,24 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | マップ概要 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ JavaScript マップ コンポーネントを使用して、ビュー モデルからの地理的位置を含むデータ、またはシェープ ファイルからロードされた地理空間データを地理的画像マップに表示します。$ProductName$ マップのサンプルを是非お試しください!
-_keywords: $Platform$ map, geographic map, imagery tiles, $ProductName$, Infragistics, $Platform$ マップ, 地理マップ, 画像タイル, インフラジスティックス
+title: {Platform} マップ | データ可視化ツール | マップ概要 | インフラジスティックス
+_description: インフラジスティックスの {Platform} JavaScript マップ コンポーネントを使用して、ビュー モデルからの地理的位置を含むデータ、またはシェープ ファイルからロードされた地理空間データを地理的画像マップに表示します。{ProductName} マップのサンプルを是非お試しください!
+_keywords: {Platform} map, geographic map, imagery tiles, {ProductName}, Infragistics, {Platform} マップ, 地理マップ, 画像タイル, インフラジスティックス
 mentionedTypes: ['XamGeographicMap', 'Series']
 _language: ja
 ---
-# $Platform$ マップの概要
+# {Platform} マップの概要
 
-$ProductName$ Map コンポーネントを使用すると、ビューモデルからの地理的位置を含むデータ、またはシェープ ファイルからロードされた地理空間データを地理的画像マップに表示できます。
+{ProductName} Map コンポーネントを使用すると、ビューモデルからの地理的位置を含むデータ、またはシェープ ファイルからロードされた地理空間データを地理的画像マップに表示できます。
 
-# $Platform$ マップの例
+# {Platform} マップの例
 
 以下のサンプルは、Bubble Series (バブル シリーズ) とも呼ばれる `GeographicProportionalSymbolSeries` を使用して `XamGeographicMap` にデータを表示する方法を示しています。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-bubble-series"
-           github-src="maps/geo-map/type-scatter-bubble-series">
-</code-view>
+`sample="/maps/geo-map/type-scatter-bubble-series", height="500", alt="{Platform} geo map type scatter bubble series"`
+
 
 <div class="divider--half"></div>
 
-$Platform$ 地図コンポーネントを使用すると、Bing Maps™ および Open Street Maps から地理的画像をレンダリングできます。マップは何万ものデータポイントをプロットし、コントロールがリアルタイム フィードを処理できるように数ミリ秒ごとにそれらを更新します。
+{Platform} 地図コンポーネントを使用すると、Bing Maps™ および Open Street Maps から地理的画像をレンダリングできます。マップは何万ものデータポイントをプロットし、コントロールがリアルタイム フィードを処理できるように数ミリ秒ごとにそれらを更新します。
 
 マップの Series プロパティは、無制限の地理的シリーズのレンダリングをサポートするために使用されます。このプロパティは、地理的シリーズ オブジェクトのコレクションで、任意のタイプの地理的シリーズをそれに追加できます。たとえば、都市などの地理的位置をプロットするために `GeographicSymbolSeries`、またこれらの地理的位置の間の接続 (道路など) をプロットするために `GeographicPolylineSeries` を追加できます。
 
@@ -32,11 +29,11 @@ Map は、マウス、キーボード、またはコードビハインドを使�
 
 地理マップコンポーネントを使用するには、はじめにこれらのパッケージをインストールする必要があります。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageCharts}
 npm install --save {PackageMaps}
-</pre>
+```
 <!-- end: Angular, React, WebComponents -->
 
 ## モジュールの要件
@@ -44,8 +41,12 @@ npm install --save {PackageMaps}
 `XamGeographicMap` には以下のモジュールが必要ですが、DataChartInteractivityModule は、マップ コンテンツのパンやズームなどのマウス操作にのみ必要です。
 
 ```razor
-IgbGeographicMapModule.Register(IgniteUIBlazor);
-IgbDataChartInteractivityModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+  typeof(IgbGeographicMapModule),
+  typeof(IgbDataChartInteractivityModule)
+);
 ```
 
 ```ts
@@ -153,7 +154,7 @@ ModuleManager.register(
 
 ## その他のリソース
 
-関連する $Platform$ マップ機能の詳細については、以下のトピックを参照してください。
+関連する {Platform} マップ機能の詳細については、以下のトピックを参照してください。
 
 - [地理マップのナビゲーション](geo-map-navigation.md)
 <!-- - [地理マップ画像](geo-map-display-imagery-types.md) -->
@@ -165,7 +166,7 @@ ModuleManager.register(
 - [シェイプ ポリゴン シリーズの使用](geo-map-type-shape-polygon-series.md)
 - [シェイプ ポリライン シリーズの使用](geo-map-type-shape-polyline-series.md)
 
-## API メンバー
+## API リファレンス
 
 以下は上記のセクションで説明した API メンバーのリストです。
 
@@ -176,3 +177,4 @@ ModuleManager.register(
 - `GeographicShapeSeries`
 - `GeographicProportionalSymbolSeries`
 - `GeographicSymbolSeries`
+- `GeographicScatterAreaSeries`

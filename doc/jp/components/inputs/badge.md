@@ -1,30 +1,27 @@
 ---
-title: $Platform$ Badge | インフラジスティックス
-_description: インフラジスティックスの $Platform$ Badge コンポーネントを使用すると、事前定義されたスタイルでコンテンツを表示して、アプリケーション内の任意の場所で他のコンポーネントを装飾できます。
-_keywords: $Platform$, UI controls, web widgets, UI widgets, Web Components, $Platform$ Badge Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, ウェブ コンポーネント, $Platform$ バッジ コンポーネント, インフラジスティックス
+title: {Platform} Badge | インフラジスティックス
+_description: インフラジスティックスの {Platform} Badge コンポーネントを使用すると、事前定義されたスタイルでコンテンツを表示して、アプリケーション内の任意の場所で他のコンポーネントを装飾できます。
+_keywords: {Platform}, UI controls, web widgets, UI widgets, Web Components, {Platform} Badge Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, ウェブ コンポーネント, {Platform} バッジ コンポーネント, インフラジスティックス
 mentionedTypes: ['Badge']
 _language: ja
 ---
 
-# $Platform$ Badge (バッジ) の概要
+# {Platform} Badge (バッジ) の概要
 
-$ProductName$ Badge は、視覚的な通知が必要な場合に、アバター、ナビゲーション メニュー、またはアプリケーション内の他のコンポーネントと組み合わせて使用されるコンポーネントです。バッジは通常、情報、成功、警告、またはエラーを伝達するために事前定義されたスタイルでデザインされています。
+{ProductName} Badge は、視覚的な通知が必要な場合に、アバター、ナビゲーション メニュー、またはアプリケーション内の他のコンポーネントと組み合わせて使用されるコンポーネントです。バッジは通常、情報、成功、警告、またはエラーを伝達するために事前定義されたスタイルでデザインされています。
 
-## $Platform$ Badge の例
+## {Platform} Badge の例
 
-<code-view style="height: 60px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-outlined"
-           alt="$Platform$ Badge の例"
-           github-src="inputs/badge/outlined">
-</code-view>
+`sample="/inputs/badge/outlined", height="60", alt="{Platform} Badge の例"`
+
+
 
 <div class="divider"></div>
 
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります。
 
 次に、以下のように、`Badge` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
@@ -41,7 +38,7 @@ defineComponents(IgcBadgeComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -61,7 +58,9 @@ IgrBadgeModule.register();
 `Badge` を使用する前に、次のように登録する必要があります。
 
 ```razor
-IgbBadgeModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbBadgeModule));
 ```
 
 また、追加の CSS ファイルをリンクして、スタイルを `Badge` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
@@ -104,7 +103,7 @@ IgbBadgeModule.Register(IgniteUIBlazor);
 
 ### バリアント
 
-$ProductName$ バッジは、いくつかの事前定義されたスタイルのバリアントをサポートします。サポートされている値 `primary` (デフォルト)、`info`、`success`、`warning`、または `danger` のいずれかを `variant` 属性に割り当てることにより、バリアントを変更できます。
+{ProductName} バッジは、いくつかの事前定義されたスタイルのバリアントをサポートします。サポートされている値 `primary` (デフォルト)、`info`、`success`、`warning`、または `danger` のいずれかを `variant` 属性に割り当てることにより、バリアントを変更できます。
 
 ```tsx
 <IgrBadge variant="success" ></IgrBadge>
@@ -118,12 +117,9 @@ $ProductName$ バッジは、いくつかの事前定義されたスタイルの
 <IgbBadge Variant="@BadgeVariant.Success" />
 ```
 
-<code-view style="height: 60px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-variants"
-           alt="$Platform$ Badge の例"
-           github-src="inputs/badge/variants">
-</code-view>
+`sample="/inputs/badge/variants", height="60", alt="{Platform} Badge の例"`
+
+
 
 ### 形状
 
@@ -141,12 +137,9 @@ $ProductName$ バッジは、いくつかの事前定義されたスタイルの
 <IgbBadge Shape="@BadgeShape.Square" />
 ```
 
-<code-view style="height: 60px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-shape"
-           alt="$Platform$ Badge の例"
-           github-src="inputs/badge/shape">
-</code-view>
+`sample="/inputs/badge/shape", height="60", alt="{Platform} Badge の例"`
+
+
 
 ## スタイル設定
 
@@ -160,37 +153,14 @@ igc-badge::part(base) {
 }
 ```
 
-<!-- WebComponents -->
-
-## API リファレンス
-
-* `Badge`
-
-<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
 
-## その他のリソース
-
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React -->
-
-## API メンバー
+## API リファレンス
 
  - `Badge`
+
+## その他のリソース
+
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

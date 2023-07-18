@@ -1,25 +1,22 @@
 ---
-title: $Platform$ Badge | Infragistics
-_description: Infragistics' $Platform$ Badge component allows you to display content in a predefined style to decorate other components anywhere in an application.
-_keywords: $Platform$, UI controls, web widgets, UI widgets, Web Components, $Platform$ Badge Components, Infragistics
+title: {Platform} Badge | Infragistics
+_description: Infragistics' {Platform} Badge component allows you to display content in a predefined style to decorate other components anywhere in an application.
+_keywords: {Platform}, UI controls, web widgets, UI widgets, Web Components, {Platform} Badge Components, Infragistics
 _language: kr
 mentionedTypes: ['Badge']
 ---
 
-# $Platform$ Badge
+# {Platform} Badge
 
-The $ProductName$ Badge is a component used in conjunction with avatars, navigation menus, or other components in an application when a visual notification is needed. Badges are usually designed with predefined styles to communicate information, success, warnings, or errors.
+The {ProductName} Badge is a component used in conjunction with avatars, navigation menus, or other components in an application when a visual notification is needed. Badges are usually designed with predefined styles to communicate information, success, warnings, or errors.
 
 <div class="divider"></div>
 
-## $Platform$ Badge Example
+## {Platform} Badge Example
 
-<code-view style="height: 60px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-outlined"
-           alt="$Platform$ Badge Example"
-           github-src="inputs/badge/outlined">
-</code-view>
+`sample="/inputs/badge/outlined", height="60", alt="{Platform} Badge Example"`
+
+
 
 <div class="divider"></div>
 
@@ -29,21 +26,24 @@ The $ProductName$ Badge is a component used in conjunction with avatars, navigat
 
 To get started with the `IgbBadge` component, you first need to register the `IgbBadgeModule`.
 
+
 ```razor
-IgbBadgeModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbBadgeModule));
 ```
 
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
 
-To get started with the badge web component, first you need to install $ProductName$ by typing the following command:
+To get started with the badge web component, first you need to install {ProductName} by typing the following command:
 
 ```cmd
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the `Badge` in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+The next step is to import the `Badge` in the typescript file where you want to use it and register it by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcBadgeComponent } from 'igniteui-webcomponents';
@@ -77,7 +77,7 @@ To display a subtle border around the badge set the `outlined` attribute of the 
 
 ### Variants
 
-The $ProductName$ badge supports several pre-defined stylistic variants. You can change the variant by assigning one of the supported values - `primary`(default), `info`, `success`, `warning`, or `danger` to the `variant` attribute.
+The {ProductName} badge supports several pre-defined stylistic variants. You can change the variant by assigning one of the supported values - `primary`(default), `info`, `success`, `warning`, or `danger` to the `variant` attribute.
 
 ```html
 <igc-badge variant="success"></igc-badge>
@@ -87,12 +87,9 @@ The $ProductName$ badge supports several pre-defined stylistic variants. You can
 <IgbBadge Variant="@BadgeVariant.Success" />
 ```
 
-<code-view style="height: 60px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-variants"
-           alt="$Platform$ Badge Example"
-           github-src="inputs/badge/variants">
-</code-view>
+`sample="/inputs/badge/variants", height="60", alt="{Platform} Badge Example"`
+
+
 
 ### Shape
 
@@ -106,12 +103,9 @@ The badge component supports `rounded`(default) and `square` shapes. These value
 <IgbBadge Shape="@BadgeShape.Square" />
 ```
 
-<code-view style="height: 60px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-shape"
-           alt="$Platform$ Badge Example"
-           github-src="inputs/badge/shape">
-</code-view>
+`sample="/inputs/badge/shape", height="60", alt="{Platform} Badge Example"`
+
+
 
 ## Styling
 
@@ -129,9 +123,8 @@ igc-badge::part(base) {
 
 * `Badge`
 
+
 ## Additional Resources
 
-<div class="divider--half"></div>
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

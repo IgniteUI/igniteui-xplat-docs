@@ -1,7 +1,7 @@
 ---
 title: Infragistics NuGet Feed
-_description: Infragistics NuGet Feed for $Platform$ components.
-_keywords: $Platform$, NuGet, Feed, Infragistics
+_description: Infragistics NuGet Feed for {Platform} components.
+_keywords: {Platform}, NuGet, Feed, Infragistics
 mentionedTypes: []
 ---
 
@@ -37,7 +37,7 @@ This topic contains the following sections:
 2 - Open a command prompt in the folder path of the `nuget.exe` file you just downloaded.
 3 - Execute the following command
 
-```
+```cmd
 nuget sources add -name "Infragistics" -source "https://packages.infragistics.com/nuget/licensed" -username "your login email" -password "your password"
 ```
 

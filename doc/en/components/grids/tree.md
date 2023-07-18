@@ -1,33 +1,34 @@
 ---
-title: $Platform$ Tree Component | Infragistics
-_description: Infragistics' $Platform$ Tree component helps you to display hierarchical data in a tree-view structure, customize nodes easily and load data on demand. Learn how $ProductName$ can help you better display your data!
-_keywords: $Platform$ Tree, Item Tree, overview, $ProductName$, Infragistics
+title: {Platform} Tree Component | Infragistics
+_description: With {Platform} Tree component you can display hierarchical data in a tree-view structure, customize nodes easily and load data on demand. Try it now.
+_keywords: {Platform} Tree, Item Tree, overview, {ProductName}, Infragistics
 mentionedTypes: ['Tree', 'TreeItem', 'Icon', 'CircularProgress']
 ---
 
-# $Platform$ Tree Overview
+# {Platform} Tree Overview
 
-The $ProductName$ Tree element allows users to represent hierarchical data in a tree-view structure, maintaining parent-child relationships, as well as to define static tree-view structure without a corresponding data model. Its primary purpose is to allow end-users to visualize and navigate within hierarchical data structures. The `Tree` component also provides load on demand capabilities, item activation, multiple and cascade selection of items through built-in checkboxes, built-in keyboard navigation and more.
+{ProductName} Tree, also known as TreeView component, is a high-performance control that visualizes expandable data structures within a tree-like UI, enabling you to apply load on demand for child items. The {ProductName} Tree also provides features like expanding and collapsing nodes, nested app navigation, {ProductName} Tree nodes either can be generated manually or from a bound data source.
+
+For end-users this means they can easily navigate across different app pages, use selection, checkboxes, add texts, icons, images and more.
+
+The {ProductName} Tree component allows users to represent hierarchical data in a tree-view structure, maintaining parent-child relationships, as well as to define static tree-view structure without a corresponding data model. Its primary purpose is to allow end-users to visualize and navigate within hierarchical data structures. The `Tree` component also provides load on demand capabilities, item activation, multiple and cascade selection of items through built-in checkboxes, built-in keyboard navigation and more.
 
 
-## $Platform$ Tree Example
+## {Platform} Tree Example
 
-In this basic $ProductName$ Tree example, you can see how to define a tree and its items by specifying the item hierarchy.
+In this basic {ProductName} Tree example, you can see how to define a tree and its items by specifying the item hierarchy.
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/tree-basic-example"
-           alt="$Platform$ Tree Example"
-           github-src="grids/tree/basic-example">
-</code-view>
+`sample="/grids/tree/basic-example", height="400", alt="{Platform} Tree Example"`
+
+
 
 <div class="divider--half"></div>
 
-## Usage
+## How to Use {ProductName} Tree With Ignite UI
 
 <!-- WebComponents -->
 
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -44,7 +45,7 @@ defineComponents(IgcTreeComponent);
 
 <!-- React -->
 
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -70,8 +71,12 @@ You will also need to link an additional CSS file to apply the styling to the `T
 <!-- end: Blazor -->
 
 ```razor
-IgbTreeModule.Register(IgniteUIBlazor);
-IgbTreeItemModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbTreeModule),
+    typeof(IgbTreeItemModule)
+);
 ```
 
 The simplest way to start using the `Tree` is as follows:
@@ -169,7 +174,7 @@ In order to render a tree you do not necessarily need a data set - individual it
     </IgrTreeItem>
     <IgrTreeItem label='South America'>
         <IgrTreeItem label='Brazil' />
-        <IgrTreeItem label='Uruguay' />                        
+        <IgrTreeItem label='Uruguay' />
     </IgrTreeItem>
     <IgrTreeItem label='Europe'>
         <IgrTreeItem label='United Kingdom' />
@@ -179,7 +184,7 @@ In order to render a tree you do not necessarily need a data set - individual it
 </IgrTree>
 ```
 
-> [!NOTE]
+> [!Note]
 > You can provide a custom slot content for each `TreeItem`'s indentation, expansion and label area respectively using the provided `indentation`, `indicator` and `label` slots.
 
 ### Item Interactions
@@ -191,9 +196,9 @@ The `Tree` provides the following API methods for item interactions:
 - `select` - selects all items. If an items array is passed, selects only the specified items. Does not emit `Selection` event.
 - `deselect` - deselects all items. If an items array is passed, deselects only the specified items. Does not emit `Selection` event.
 
-## $Platform$ Tree Selection
+## {Platform} Tree Selection
 
-In order to setup item selection in the $ProductName$ Tree, you just need to set its `selection` property. This property accepts the following three modes: **None**, **Multiple** and **Cascade**. Below we will take a look at each of them in more detail.
+In order to setup item selection in the {ProductName} Tree component, you just need to set its `selection` property. This property accepts the following three modes: **None**, **Multiple** and **Cascade**. Below we will take a look at each of them in more detail.
 
 ### None
 
@@ -265,16 +270,13 @@ When selection is enabled, end-user selection of items is only allowed through t
 
 <!-- WebComponents -->
 
-## $Platform$ Tree Load On Demand
+## {Platform} Tree Load On Demand
 
-The $ProductName$ Tree can be rendered in such way that it requires the minimal amount of data to be retrieved from the server so the user could see it as quickly as possible. With this dynamic data loading approach, only after the user expands an item, the children for that particular parent item will be retrieved. This mechanism, also known as Load on Demand, can be easily configured to work with any remote data.
+The {ProductName} Tree can be rendered in such way that it requires the minimal amount of data to be retrieved from the server so the user could see it as quickly as possible. With this dynamic data loading approach, only after the user expands an item, the children for that particular parent item will be retrieved. This mechanism, also known as Load on Demand, can be easily configured to work with any remote data.
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/tree-load-on-demand"
-           alt="$Platform$ Tree Load On Demand Example"
-           github-src="grids/tree/load-on-demand">
-</code-view>
+`sample="/grids/tree/load-on-demand", height="400", alt="{Platform} Tree Load On Demand Example"`
+
+
 
 After the user clicks the expand icon, it is replaced by a loading indicator. When the loading property resolves to false, the loading indicator disappears and the children are loaded.
 
@@ -297,16 +299,16 @@ Loading a greater number of children on demand in the The $ProductName$ Tree mig
 
 You can change the appearance of the `TreeItem`s, by using some of the exposed CSS parts listed below:
 
-Part name | Description
----------|------------
-`wrapper` | The wrapper for the tree item.
-`selected`  | Indicates selected state. Applies to `wrapper`.
-`focused` | Indicates focused state. Applies to `wrapper`.
-`active` | Indicates an active state. Applies to `wrapper`.
-`indicator` | The expand indicator of the tree item.
-`label` | The tree item content.
-`text` | The tree item displayed text.
-`select` | The checkbox of the tree item when selection is enabled.
+| Part name | Description |
+| ---------|------------ |
+| `wrapper` | The wrapper for the tree item. |
+| `selected`  | Indicates selected state. Applies to `wrapper`. |
+| `focused` | Indicates focused state. Applies to `wrapper`. |
+| `active` | Indicates an active state. Applies to `wrapper`. |
+| `indicator` | The expand indicator of the tree item. |
+| `label` | The tree item content. |
+| `text` | The tree item displayed text. |
+| `select` | The checkbox of the tree item when selection is enabled. |
 
 Using these CSS parts we can customize thе appearance of the `Tree` component like this:
 
@@ -325,7 +327,7 @@ igc-tree-item::part(active selected) {
 }
 ```
 
-<!-- WebComponents -->
+<div class="divider--half"></div>
 
 ## API References
 
@@ -334,34 +336,7 @@ igc-tree-item::part(active selected) {
 * `CircularProgress`
 * `Icon`
 
-<!-- end: WebComponents -->
-
-<div class="divider--half"></div>
-
 ## Additional Resources
 
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor **GitHub**](https://github.com/IgniteUI/igniteui-blazor)
-
-<!-- end: Blazor>
-
-<!-- React -->
-
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
-
-<!-- end: React -->
-
-## API Members
-
- - `TreeItem`
- - `Tree`
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

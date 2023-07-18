@@ -1,21 +1,18 @@
 ---
-title: $Platform$ Checkbox Component | $ProductName$
-_description: Learn how to use the $Platform$ Checkbox Component to add checkboxes and enable checked, unchecked or indeterminate state for end-users.
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Checkbox components, $Platform$ Checkbox controls
+title: {Platform} Checkbox Component | {ProductName}
+_description: Learn how to use the {Platform} Checkbox Component to add checkboxes and enable checked, unchecked or indeterminate state for end-users.
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Checkbox components, {Platform} Checkbox controls
 mentionedTypes: ['Checkbox', 'Form']
 ---
 
-# $Platform$ Checkbox Overview
+# {Platform} Checkbox Overview
 
-The $Platform$ Checkbox is a component that lets you add checkboxes to your $Platform$ apps. It behaves as a standard HTML checkbox, enabling users to select basic checked and unchecked states or an additional indeterminate state. You also get full control over the styling of the $Platform$ checkbox component and ability to use it with forms.
+The {Platform} Checkbox is a component that lets you add checkboxes to your {Platform} apps. It behaves as a standard HTML checkbox, enabling users to select basic checked and unchecked states or an additional indeterminate state. You also get full control over the styling of the {Platform} checkbox component and ability to use it with forms.
 
 ## Checkbox Example
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/checkbox-overview" alt="$Platform$ Checkbox Example"
-           github-src="inputs/checkbox/overview">
-</code-view>
+`sample="/inputs/checkbox/overview", height="100", alt="{Platform} Checkbox Example"`
+
 
 <div class="divider--half"></div>
 
@@ -24,7 +21,7 @@ The $Platform$ Checkbox is a component that lets you add checkboxes to your $Pla
 At its core, the `Checkbox` allows for a choice between selected/unselected state. The default styling is done according to the selection controls specification in the Material Design guidelines.
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -41,7 +38,7 @@ defineComponents(IgcCheckboxComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -61,7 +58,9 @@ IgrCheckboxModule.register();
 Before using the `Checkbox`, you need to register it as follows:
 
 ```razor
-IgbCheckboxModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbCheckboxModule));
 ```
 
 You will also need to link an additional CSS file to apply the styling to the `Checkbox` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
@@ -141,12 +140,9 @@ The checkbox can also be labelled by elements external to the checkbox. In this 
 <IgbCheckbox AriaLabelledby="checkbox-label" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-label"
-           alt="$Platform$ Checkbox Example"
-           github-src="inputs/checkbox/label">
-</code-view>
+`sample="/inputs/checkbox/label", height="100", alt="{Platform} Checkbox Example"`
+
+
 
 ### Checked
 
@@ -164,12 +160,9 @@ You can use the `Checked` attribute of the component to determine whether the ch
 <IgbCheckbox Checked="true" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-checking"
-           alt="$Platform$ Checkbox Example"
-           github-src="inputs/checkbox/checking">
-</code-view>
+`sample="/inputs/checkbox/checking", height="100", alt="{Platform} Checkbox Example"`
+
+
 
 ### Indeterminate
 
@@ -187,12 +180,9 @@ You can use the `Indeterminate` property of the component to set the checkbox's 
 <IgbCheckbox Indeterminate="true" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-indeterminate"
-           alt="$Platform$ Checkbox Example"
-           github-src="inputs/checkbox/indeterminate">
-</code-view>
+`sample="/inputs/checkbox/indeterminate", height="100", alt="{Platform} Checkbox Example"`
+
+
 
 ### Required
 
@@ -242,12 +232,9 @@ You can use the `Disabled` attribute to disable the checkbox.
 <IgbCheckbox Disabled="true" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-disabled"
-           alt="$Platform$ Checkbox Example"
-           github-src="inputs/checkbox/disabled">
-</code-view>
+`sample="/inputs/checkbox/disabled", height="100", alt="{Platform} Checkbox Example"`
+
+
 
 ### Forms
 
@@ -287,39 +274,15 @@ igc-checkbox::part(indicator checked) {
   }
 }
 ```
-
-<!-- WebComponents -->
-
-## API Reference
-
-* `Checkbox`
-
-<!-- end: WebComponents -->
-
-## Additional Resources
-
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React -->
-
-## API Members
+## API References
 
  - `Checkbox`
  - `Checked`
  - `Disabled`
  - `Form`
+
+
+## Additional Resources
+
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

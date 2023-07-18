@@ -1,30 +1,27 @@
 ---
-title: $Platform$ Form コンポーネント | $ProductName$
-_description: $Platform$ Form コンポーネントを使用すると、次のアプリの新しい連絡フォームまたは登録ページをすばやく簡単に作成できます。詳細については、こちらをご覧ください。
-_keywords: $Platform$ form, $ProductName$, Infragistics, $Platform$ フォーム, インフラジスティックス
+title: {Platform} Form コンポーネント | {ProductName}
+_description: {Platform} Form コンポーネントを使用すると、次のアプリの新しい連絡フォームまたは登録ページをすばやく簡単に作成できます。詳細については、こちらをご覧ください。
+_keywords: {Platform} form, {ProductName}, Infragistics, {Platform} フォーム, インフラジスティックス
 mentionedTypes: ['Form', 'Checkbox', 'Input', 'Radio', 'Switch']
 _language: ja
 ---
 
-# $Platform$ (フォーム) の概要
+# {Platform} (フォーム) の概要
 
-$Platform$ の Form コンポーネントは、アプリケーションの要件に適合するお問い合わせフォームや登録ページを設定するために使用されます。$Platform$ フォーム検証を簡単に提供し、フォームの向きを定義し、必要なレイアウトを構成またはカスタマイズすることもできます。$Platform$ フォーム コンポーネントは、ユーザー アクションに応答する機会を与えるイベントも公開します。
+{Platform} の Form コンポーネントは、アプリケーションの要件に適合するお問い合わせフォームや登録ページを設定するために使用されます。{Platform} フォーム検証を簡単に提供し、フォームの向きを定義し、必要なレイアウトを構成またはカスタマイズすることもできます。{Platform} フォーム コンポーネントは、ユーザー アクションに応答する機会を与えるイベントも公開します。
 
-## $Platform$ の例
+## {Platform} の例
 
 次の例は、内部にいくつかの入力、ボタン、およびチェックボックスがある `Form` を表しています。
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/form-overview"
-           alt="$Platform$ Form の例"
-           github-src="inputs/form/overview">
-</code-view>
+`sample="/inputs/form/overview", height="300", alt="{Platform} Form の例"`
+
+
 
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります。
 
 ```cmd
 npm install {PackageWebComponents}
@@ -41,7 +38,7 @@ defineComponents(IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcB
 <!-- end: WebComponents -->
 
 <!-- React -->
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -59,8 +56,11 @@ IgrFormModule.register();
 <!-- Blazor -->
 `Form` を使用する前に、次のように登録する必要があります。
 
+
 ```razor
-IgbFormModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbFormModule));
 ```
 
 また、追加の CSS ファイルをリンクして、スタイルを `Form` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
@@ -72,12 +72,9 @@ IgbFormModule.Register(IgniteUIBlazor);
 
 `Form` の使用を開始する最も簡単な方法は次のとおりです:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/form-overview"
-           alt="$Platform$ Form の例"
-           github-src="inputs/form/overview">
-</code-view>
+`sample="/inputs/form/overview", height="300", alt="{Platform} Form の例"`
+
+
 
 フォーム データは、次のコンポーネントについて収集されます:
 - `Checkbox`
@@ -122,51 +119,15 @@ Form コンポーネントは、次のメソッドを公開します:
 
 | メソッド			| 説明     			|
 | ------------- 	|:-------------:			|
-|`submit`|フォーム データを送信します。|
-|`reset`|フォーム データをリセットします。|
-|`getFormData`|フォーム データを収集し、単一の FormData オブジェクトを返します。|
-|`reportValidity`|要素の子コントロールが検証制約を満たしているかどうかを返します。|
-
-<!-- WebComponents -->
-
-## API リファレンス
-
-フォームの API の詳細については、次のリンクを参照してください。
-* `Form`
-
-使用したその他のコンポーネントとディレクティブ:
-- `Button`
-- `Checkbox`
-* `Input`
-* `Radio`
-* `Switch`
-
-<!-- end: WebComponents -->
+| `Submit` |フォーム データを送信します。|
+| `Reset` | フォーム データをリセットします。|
+| `GetFormData` | フォーム データを収集し、単一の FormData オブジェクトを返します。|
+| `ReportValidity` | 要素の子コントロールが検証制約を満たしているかどうかを返します。|
 
 <div class="divider"></div>
 
-## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React -->
-
-## API メンバー
+## API リファレンス
 
  - `Button`
  - `Checkbox`
@@ -174,3 +135,9 @@ Form コンポーネントは、次のメソッドを公開します:
  - `Input`
  - `Radio`
  - `Submit`
+
+
+## その他のリソース
+
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

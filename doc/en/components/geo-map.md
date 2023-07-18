@@ -1,22 +1,19 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Map Overview | Infragistics
-_description: Use Infragistics' $Platform$ JavaScript map to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps. View the $ProductName$ map demos!
-_keywords: $Platform$ map, geographic map, imagery tiles, $ProductName$, Infragistics
+title: {Platform} Map | Data Visualization Tools | Map Overview | Infragistics
+_description: Use Infragistics' {Platform} JavaScript map to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps. View the {ProductName} map demos!
+_keywords: {Platform} map, geographic map, imagery tiles, {ProductName}, Infragistics
 mentionedTypes: ['XamGeographicMap', 'Series']
 ---
-# $Platform$ Map Overview
+# {Platform} Map Overview
 
-The $ProductName$ map component allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.
+The {ProductName} map component allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.
 
-# $Platform$ Map Example
+# {Platform} Map Example
 
 The following sample demonstrates how display data in `XamGeographicMap` using `GeographicProportionalSymbolSeries` also known as Bubble Series.
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-bubble-series"
-           github-src="maps/geo-map/type-scatter-bubble-series">
-</code-view>
+`sample="/maps/geo-map/type-scatter-bubble-series", height="500", alt="{Platform} geo map type scatter bubble series"`
+
 
 <div class="divider--half"></div>
 
@@ -29,22 +26,26 @@ The map provides customizable navigation behaviors for navigating map content us
 <!-- Angular, React, WebComponents -->
 ## Dependencies
 
-The $Platform$ geographic map component, you need to first install these packages:
+The {Platform} geographic map component, you need to first install these packages:
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageCharts}
 npm install --save {PackageMaps}
-</pre>
+```
 <!-- end: Angular, React, WebComponents -->
 
-## Required Modules
+## Component Modules
 
 The `XamGeographicMap` requires the following modules, however the DataChartInteractivityModule is only required for mouse interactions, such as panning and zooming the map content.
 
 ```razor
-IgbGeographicMapModule.Register(IgniteUIBlazor);
-IgbDataChartInteractivityModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbGeographicMapModule),
+    typeof(IgbDataChartInteractivityModule)
+);
 ```
 
 ```ts
@@ -152,7 +153,7 @@ Now that the map module is imported, next step is to create geographic map. The 
 
 ## Additional Resources
 
-You can find more information about related $Platform$ map features in these topics:
+You can find more information about related {Platform} map features in these topics:
 
 - [Geographic Map Navigation](geo-map-navigation.md)
 <!-- - [Geographic Map Imagery](geo-map-display-imagery-types.md) -->
@@ -164,7 +165,7 @@ You can find more information about related $Platform$ map features in these top
 - [Using Shape Polygon Series](geo-map-type-shape-polygon-series.md)
 - [Using Shape Polyline Series](geo-map-type-shape-polyline-series.md)
 
-## API Members
+## API References
 
 The following is a list of API members mentioned in the above sections:
 

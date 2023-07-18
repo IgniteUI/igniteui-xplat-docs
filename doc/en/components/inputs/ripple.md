@@ -1,26 +1,23 @@
 ---
-title: $Platform$ Ripple
-_description: With $ProductName$ Ripple, developers can define an area which received a ripple animation effect for a visually enticing UI enhancement.
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Ripple components, $Platform$ Ripple controls
+title: {Platform} Ripple
+_description: With {ProductName} Ripple, developers can define an area which received a ripple animation effect for a visually enticing UI enhancement.
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Ripple components, {Platform} Ripple controls
 mentionedTypes: ['Ripple', 'Button']
 ---
 
-# $Platform$ Ripple Overview
+# {Platform} Ripple Overview
 
-The $ProductName$ Ripple component creates an animation in response to a touch or a mouse click.
+The {ProductName} Ripple component creates an animation in response to a touch or a mouse click.
 
-## $Platform$ Ripple Example
+## {Platform} Ripple Example
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/ripple-button" alt="$Platform$ Ripple Example"
-           github-src="inputs/ripple/button">
-</code-view>
+`sample="/inputs/ripple/button", height="80", alt="{Platform} Ripple Example"`
+
 
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -37,7 +34,7 @@ defineComponents(IgcRippleComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -56,8 +53,11 @@ IgrRippleModule.register();
 
 Before using the `Ripple`, you need to register it as follows:
 
+
 ```razor
-IgbRippleModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbRippleModule));
 ```
 
 You will also need to link an additional CSS file to apply the styling to the `Ripple` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
@@ -105,46 +105,15 @@ igc-ripple {
 }
 ```
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/ripple-color" alt="$Platform$ Ripple Example"
-           github-src="inputs/ripple/color">
-</code-view>
+`sample="/inputs/ripple/color", height="80", alt="{Platform} Ripple Example"`
 
-<!-- WebComponents -->
-
-## API Reference
-
-* `Ripple`
-
-Additional Web Components that were used:
-
-* `Button`
-
-<!-- end: WebComponents -->
-
-## Additional Resources
-
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React -->
-
- ## API Members
+## API References
 
  - `Button`
  - `Ripple`
+
+
+## Additional Resources
+
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

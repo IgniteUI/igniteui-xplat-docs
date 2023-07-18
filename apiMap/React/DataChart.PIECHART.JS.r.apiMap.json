@@ -1,5 +1,12 @@
 {"extraFiles":["igr-pie-chart-core-module.ts","igr-pie-chart-module.ts"],
   "types":[
+  { "originalName":"LegendEmptyValuesMode","isEnum":true,
+    "names":[{"platform":"React","fileName":"LegendEmptyValuesMode.ts","mappedName":"LegendEmptyValuesMode"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"LegendEmptyValuesMode","mappedName":"AlwaysHidden"}],"originalName":"AlwaysHidden"},
+    { "names":[{"platform":"React","mappedType":"LegendEmptyValuesMode","mappedName":"AlwaysVisible"}],"originalName":"AlwaysVisible"},
+    { "names":[{"platform":"React","mappedType":"LegendEmptyValuesMode","mappedName":"ShowWhenNoOthersCategory"}],"originalName":"ShowWhenNoOthersCategory"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"LabelsPosition","isEnum":true,
     "names":[{"platform":"React","fileName":"LabelsPosition.ts","mappedName":"LabelsPosition"}],
     "members":[
@@ -8,51 +15,51 @@
     { "names":[{"platform":"React","mappedType":"LabelsPosition","mappedName":"InsideEnd"}],"originalName":"InsideEnd"},
     { "names":[{"platform":"React","mappedType":"LabelsPosition","mappedName":"OutsideEnd"}],"originalName":"OutsideEnd"},
     { "names":[{"platform":"React","mappedType":"LabelsPosition","mappedName":"BestFit"}],"originalName":"BestFit"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"LeaderLineType","isEnum":true,
     "names":[{"platform":"React","fileName":"LeaderLineType.ts","mappedName":"LeaderLineType"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"LeaderLineType","mappedName":"Straight"}],"originalName":"Straight"},
     { "names":[{"platform":"React","mappedType":"LeaderLineType","mappedName":"Arc"}],"originalName":"Arc"},
     { "names":[{"platform":"React","mappedType":"LeaderLineType","mappedName":"Spline"}],"originalName":"Spline"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"OthersCategoryType","isEnum":true,
     "names":[{"platform":"React","fileName":"OthersCategoryType.ts","mappedName":"OthersCategoryType"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"OthersCategoryType","mappedName":"Number"}],"originalName":"Number"},
     { "names":[{"platform":"React","mappedType":"OthersCategoryType","mappedName":"Percent"}],"originalName":"Percent"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"SliceSelectionMode","isEnum":true,
     "names":[{"platform":"React","fileName":"SliceSelectionMode.ts","mappedName":"SliceSelectionMode"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"SliceSelectionMode","mappedName":"Manual"}],"originalName":"Manual"},
     { "names":[{"platform":"React","mappedType":"SliceSelectionMode","mappedName":"Single"}],"originalName":"Single"},
     { "names":[{"platform":"React","mappedType":"SliceSelectionMode","mappedName":"Multiple"}],"originalName":"Multiple"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"LabelClickEventArgs",
     "names":[{"platform":"React","fileName":"igr-label-click-event-args.ts","mappedName":"IgrLabelClickEventArgs"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"any","mappedName":"item"}],"originalName":"Item"},
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"allowSliceClick"}],"originalName":"AllowSliceClick"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"allowSliceClick"}],"originalName":"AllowSliceClick"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"SelectedItemChangedEventArgs",
     "names":[{"platform":"React","fileName":"igr-selected-item-changed-event-args.ts","mappedName":"IgrSelectedItemChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"any","mappedName":"oldItem"}],"originalName":"OldItem"},
-    { "names":[{"platform":"React","mappedType":"any","mappedName":"newItem"}],"originalName":"NewItem"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"newItem"}],"originalName":"NewItem"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"SelectedItemChangingEventArgs",
     "names":[{"platform":"React","fileName":"igr-selected-item-changing-event-args.ts","mappedName":"IgrSelectedItemChangingEventArgs"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"cancel"}],"originalName":"Cancel"}],"originalBaseTypeName":"SelectedItemChangedEventArgs","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"cancel"}],"originalName":"Cancel"}],"originalBaseTypeName":"SelectedItemChangedEventArgs","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"SelectedItemsChangedEventArgs",
     "names":[{"platform":"React","fileName":"igr-selected-items-changed-event-args.ts","mappedName":"IgrSelectedItemsChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"IgrObjectCollection","mappedName":"oldItems"}],"originalName":"OldItems"},
     { "names":[{"platform":"React","mappedType":"IgrObjectCollection","mappedName":"newItems"}],"originalName":"NewItems"},
-    { "names":[{"platform":"React","mappedType":"IgrObjectCollection","mappedName":"currentItems"}],"originalName":"CurrentItems"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"IgrObjectCollection","mappedName":"currentItems"}],"originalName":"CurrentItems"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"SelectedItemsChangingEventArgs",
     "names":[{"platform":"React","fileName":"igr-selected-items-changing-event-args.ts","mappedName":"IgrSelectedItemsChangingEventArgs"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"cancel"}],"originalName":"Cancel"}],"originalBaseTypeName":"SelectedItemsChangedEventArgs","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"cancel"}],"originalName":"Cancel"}],"originalBaseTypeName":"SelectedItemsChangedEventArgs","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"SliceClickEventArgs",
     "names":[{"platform":"React","fileName":"igr-slice-click-event-args.ts","mappedName":"IgrSliceClickEventArgs"}],
     "members":[
@@ -68,7 +75,7 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"startAngle"}],"originalName":"StartAngle"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"endAngle"}],"originalName":"EndAngle"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"fill"}],"originalName":"Fill"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"outline"}],"originalName":"Outline"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"outline"}],"originalName":"Outline"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"SliceEventArgs",
     "names":[{"platform":"React","fileName":"igr-slice-event-args.ts","mappedName":"IgrSliceEventArgs"}],
     "members":[
@@ -84,7 +91,7 @@
     { "names":[{"platform":"React","mappedType":"string","mappedName":"fill"}],"originalName":"Fill"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"outline"}],"originalName":"Outline"},
     { "names":[{"platform":"React","mappedType":"any","mappedName":"dataContext"}],"originalName":"DataContext"},
-    { "names":[{"platform":"React","mappedType":"any","mappedName":"originalEvent"}],"originalName":"OriginalEvent"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"originalEvent"}],"originalName":"OriginalEvent"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"PieChartBase",
     "names":[{"platform":"React","fileName":"igr-pie-chart-base.ts","mappedName":"IgrPieChartBase"}],
     "members":[
@@ -146,6 +153,7 @@
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isSurfaceInteractionDisabled"}],"originalName":"IsSurfaceInteractionDisabled"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"shouldDisplayMockData"}],"originalName":"ShouldDisplayMockData"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"shouldUseSkeletonStyleForMockData"}],"originalName":"ShouldUseSkeletonStyleForMockData"},
+    { "names":[{"platform":"React","mappedType":"LegendEmptyValuesMode","mappedName":"legendEmptyValuesMode"}],"originalName":"LegendEmptyValuesMode"},
     { "names":[{"platform":"React","mappedType":"(obj: any) => string","mappedName":"formatLabel"}],"originalName":"FormatLabel"},
     { "names":[{"platform":"React","mappedType":"(obj: any) => string","mappedName":"formatLegendLabel"}],"originalName":"FormatLegendLabel"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"pixelScalingRatio"}],"originalName":"PixelScalingRatio"},
@@ -166,15 +174,15 @@
     { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyRemoveItem"}],"originalName":"NotifyRemoveItem"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"setWidgetLevelDataSource"}],"originalName":"SetWidgetLevelDataSource"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"removeWidgetLevelDataSource"}],"originalName":"RemoveWidgetLevelDataSource"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"styleUpdated"}],"originalName":"StyleUpdated"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"styleUpdated"}],"originalName":"StyleUpdated"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"PieSliceOthersContext",
     "names":[{"platform":"React","fileName":"igr-pie-slice-others-context.ts","mappedName":"IgrPieSliceOthersContext"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"any[]","mappedName":"data"}],"originalName":"Data"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"any[]","mappedName":"data"}],"originalName":"Data"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"XamPieChart",
-    "names":[{"platform":"React","fileName":"igr-pie-chart.ts","mappedName":"IgrPieChart"}],"members":[],"originalBaseTypeName":"PieChartBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    "names":[{"platform":"React","fileName":"igr-pie-chart.ts","mappedName":"IgrPieChart"}],"members":[],"originalBaseTypeName":"PieChartBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"PieSliceDataContext",
     "names":[{"platform":"React","fileName":"igr-pie-slice-data-context.ts","mappedName":"IgrPieSliceDataContext"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"number","mappedName":"percentValue"}],"originalName":"PercentValue"},
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isOthersSlice"}],"originalName":"IsOthersSlice"}],"originalBaseTypeName":"DataContext","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isOthersSlice"}],"originalName":"IsOthersSlice"}],"originalBaseTypeName":"DataContext","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

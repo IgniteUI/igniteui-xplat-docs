@@ -1,24 +1,21 @@
 ---
 title: Card コンポーネント
 _description: Ignite UI for Web Card コンポーネントを使用して、詳細情報のエントリ ポイントとして、ダッシュボード、テキスト、画像、アイコン、ボタンなどを表示します。
-_keywords: $ProductName$, UI controls, Web widgets, web widgets, UI widgets, Native Web Components Suite, Native Web Controls, Native Web Components Library, Web Card component, Web Card controls, UI コントロール, Web ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ Web コンポーネント スイート, ネイティブ Web コントロール, ネイティブ Web コンポーネント ライブラリ, Web Card コンポーネント, Web Card コントロール
+_keywords: {ProductName}, UI controls, Web widgets, web widgets, UI widgets, Native Web Components Suite, Native Web Controls, Native Web Components Library, Web Card component, Web Card controls, UI コントロール, Web ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ Web コンポーネント スイート, ネイティブ Web コントロール, ネイティブ Web コンポーネント ライブラリ, Web Card コンポーネント, Web Card コントロール
 mentionedTypes: ['Card', 'CardActions', 'CardContent', 'CardHeader', 'CardMedia', 'Avatar', 'Button', 'Icon', 'IconButton', 'Ripple']
 _language: ja
 ---
 
-# $Platform$ Card (カード) の概要
+# {Platform} Card (カード) の概要
 
-$ProductName$ Card は、テキスト、画像、アイコン、およびボタンを視覚的にリッチなプレゼンテーションで表示し、より詳細な情報へのエントリ ポイントとして機能します。Card を使用してマルチメディア ダッシュボードを作成できます。
+{ProductName} Card は、テキスト、画像、アイコン、およびボタンを視覚的にリッチなプレゼンテーションで表示し、より詳細な情報へのエントリ ポイントとして機能します。Card を使用してマルチメディア ダッシュボードを作成できます。
 
 
-## $Platform$ Card の例
+## {Platform} Card の例
 
-<code-view style="height: 640px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/card-overview"
-           alt="$Platform$ Card の例"
-           github-src="layouts/card/overview">
-</code-view>
+`sample="/layouts/card/overview", height="640", alt="{Platform} Card の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -30,7 +27,7 @@ Card コンポーネントは、様々なオブジェクト タイプ、サイ�
 
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります。
 
 ```cmd
 npm install {PackageWebComponents}
@@ -39,7 +36,7 @@ npm install {PackageWebComponents}
 
 <!-- React -->
 
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -58,8 +55,11 @@ IgrCardModule.register();
 
 `Card` を使用する前に、次のように登録する必要があります:
 
+
 ```razor
-IgbCardModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbCardModule));
 ```
 
 <!-- Blazor -->
@@ -326,12 +326,9 @@ defineComponents(IgcCardComponent);
 
 すべて適切に設定できると、結果は以下のようになります。
 
-<code-view style="height: 270px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/card-horizontal"
-           alt="$Platform$ Card の例"
-           github-src="layouts/card/horizontal">
-</code-view>
+`sample="/layouts/card/horizontal", height="270", alt="{Platform} Card の例"`
+
+
 
 ### その他のレイアウト
 
@@ -407,7 +404,7 @@ defineComponents(IgcCardComponent);
                 <IgrButton><span>Play Album</span></IgrButton>
             </IgrCardActions>
         </div>
-        
+
         <IgrCardMedia className='card-media'>
             <img src="https://static.infragistics.com/xplatform/images/music/singer_female.jpg"></img>
         </IgrCardMedia>
@@ -428,13 +425,7 @@ defineComponents(IgcCardComponent);
 }
 ```
 
-<code-view style="height: 340px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/card-semi-horizontal"
-           alt="$Platform$ Semi Horizontal Card の例"
-           github-src="layouts/card/semi-horizontal">
-</code-view>
-
+`sample="/layouts/card/semi-horizontal", height="340", alt="{Platform} Semi Horizontal Card の例"`
 
 ### カード アクション
 
@@ -521,65 +512,15 @@ igc-icon-button+igc-icon-button {
 }
 ```
 
-<code-view style="height: 640px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/card-styling"
-           alt="$Platform$ Card スタイル設定の例"
-           github-src="layouts/card/styling">
-</code-view>
-
+`sample="/layouts/card/styling", height="640", alt="{Platform} Card スタイル設定の例"`
 
 ### まとめ
-このトピックでは Card コンポーネントの詳細について説明しました。シンプルなカードを作成し、画像をいくつか追加して、もう少し魅力的にしました。カード内にアバター、ボタン、アイコンなどの追加の $Platform$ を使用して、エクスペリエンスを充実させ、いくつかの機能を追加しました。そして最後に、基本要素の原色を変更することでカードの外観を変更しました。
-
-<!-- WebComponents -->
-
-## API リファレンス
-
-カード API に関する詳細な情報は、以下のリンクのトピックを参照してください。
-* `Card`
-* `CardHeader`
-* `CardContent`
-* `CardMedia`
-* `CardActions`
-
-
-使用したその他のコンポーネントとディレクティブ:
-
-* `Avatar`
-* `Icon`
-* `Button`
-* `IconButton`
-* `Ripple`
-
-<!-- end: WebComponents -->
+このトピックでは Card コンポーネントの詳細について説明しました。シンプルなカードを作成し、画像をいくつか追加して、もう少し魅力的にしました。カード内にアバター、ボタン、アイコンなどの追加の {Platform} を使用して、エクスペリエンスを充実させ、いくつかの機能を追加しました。そして最後に、基本要素の原色を変更することでカードの外観を変更しました。
 
 <div class="divider"></div>
 
-## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [GitHub の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [GitHub の Ignite UI for React の例 (英語)](https://github.com/IgniteUI/igniteui-react-examples)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-## API メンバー
+## API リファレンス
 
  - `Avatar`
  - `Button`
@@ -590,3 +531,8 @@ igc-icon-button+igc-icon-button {
  - `Card`
  - `IconButton`
  - `Icon`
+
+## その他のリソース
+
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

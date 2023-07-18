@@ -1,11 +1,11 @@
 ---
-title: $Platform$ マップ | ワールド コネクション | データ ソース | インフラジスティックス
-_description: インフラジスティックスの $Platform$ JavaScript マップ データ ユーティリティを使用して、空港の位置、飛行経路、および地理的なグリッド線を生成します。$ProductName$ マップのサンプルを是非お試しください!
-_keywords: $Platform$ map, map data, $ProductName$, Infragistics, $Platform$ マップ, マップ データ, インフラジスティックス
+title: {Platform} マップ | ワールド コネクション | データ ソース | インフラジスティックス
+_description: インフラジスティックスの {Platform} JavaScript マップ データ ユーティリティを使用して、空港の位置、飛行経路、および地理的なグリッド線を生成します。{ProductName} マップのサンプルを是非お試しください!
+_keywords: {Platform} map, map data, {ProductName}, Infragistics, {Platform} マップ, マップ データ, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
-# $Platform$ ワールド コネクション
+# {Platform} ワールド コネクション
 
 リソース トピックは、空港の位置、飛行経路、および地理的なグリッド線を生成するためのデータユーティリティの実装を提供します。これらのデータ ソースを独自の地理データを作成するための参照点として使用できます。このユーティリティは [WorldUtil](geo-map-resources-world-util.md) と [WorldLocations](geo-map-resources-world-locations.md) スクリプトに依存していることに注意してください。
 
@@ -162,11 +162,11 @@ export default class WorldConnections {
 
         public static int ComparePopulation(WorldCity a, WorldCity b)
         {
-            if(a.Pop < b.Pop)
+            if (a.Pop < b.Pop)
             {
                 return 1;
             }
-            if(a.Pop > b.Pop)
+            if (a.Pop > b.Pop)
             {
                 return -1;
             }
@@ -195,14 +195,14 @@ export default class WorldConnections {
             {
                 WorldCity origin = cities[i];
 
-                for(int j=0; j<count; j++)
+                for (int j=0; j<count; j++)
                 {
                     WorldCity dest = cities[j];
 
                     GeoLocation originGeo = new GeoLocation() { Lat = origin.Lat, Lon = origin.Lon };
                     GeoLocation destGeo = new GeoLocation() { Lat = dest.Lat, Lon = dest.Lon };
 
-                    if(origin.Name != dest.Name)
+                    if (origin.Name != dest.Name)
                     {
                         string route = origin.Name + "-" + dest.Name;
                         bool routeIsValid = !FlightsLookup.ContainsKey(route);
@@ -214,7 +214,7 @@ export default class WorldConnections {
                         double time = distance / 800;
                         bool trafficIsValid = origin.Pop > 3 && dest.Pop > 1.0;
 
-                        if(routeIsValid && distanceIsValid && trafficIsValid)
+                        if (routeIsValid && distanceIsValid && trafficIsValid)
                         {
                             FlightsLookup.Add(route, route);
 
@@ -229,13 +229,13 @@ export default class WorldConnections {
                     }
                 }
 
-                if(flightsCount > flightsLimit)
+                if (flightsCount > flightsLimit)
                 {
                     break;
                 }
             }
 
-            foreach(FlightInfo flight in Flights)
+            foreach (FlightInfo flight in Flights)
             {
                 AddAirport(flight.Origin);
                 AddAirport(flight.Dest);
@@ -305,6 +305,6 @@ export default class WorldConnections {
     }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `XamGeographicMap`

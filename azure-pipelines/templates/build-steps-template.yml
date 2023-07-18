@@ -1,0 +1,26 @@
+parameters:
+  - name: buildType
+  - name: platform
+  - name: language
+  - name: workingDir
+  - name: isVerbose
+    default: false
+
+steps:
+  - task: Npm@1
+    displayName: 'Build ${{ parameters.platform }} ${{ parameters.buildType }} ${{ parameters.language }}'
+    inputs:
+      command: custom
+      workingDir: ${{ parameters.workingDir }}
+      verbose: ${{ parameters.isVerbose }}
+      customCommand: 'run build-${{ parameters.buildType }} -- --plat=${{ parameters.platform }} --lang=${{ parameters.language }}'
+
+  - task: ArchiveFiles@2
+    displayName: 'Package ${{ parameters.platform }} ${{ parameters.language }} - zip'
+    inputs:
+      verbose: ${{ parameters.isVerbose }}
+      rootFolderOrFile: ${{ parameters.workingDir }}/dist/${{ parameters.platform }}/${{ parameters.language }}/_site
+      includeRootFolder: false
+      archiveType: 'zip'
+      archiveFile: $(Build.ArtifactStagingDirectory)/${{ parameters.platform }}_${{ parameters.language }}_${{ parameters.buildType }}.zip
+      replaceExistingArchive: true

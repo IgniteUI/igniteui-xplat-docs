@@ -1,7 +1,8 @@
 ---
-title: $Platform$ Data Visualization Tools | $Platform$ Data Visualization Tools | Getting Started | Infragistics
-_description: Use Infragistics' $Platform$ components to create apps and improve data visualization with the world’s fastest, virtualized, real-time $Platform$ data grid and streaming financial and business and financial charts.
-_keywords: $ProductName$, Infragistics, Getting Started
+title: Getting Started | {ProductName} | Infragistics
+_description: Use Infragistics' {Platform} components to create apps and improve data visualization with the world’s fastest, virtualized, real-time {Platform} data grid and streaming financial and business and financial charts.
+_keywords: {ProductName}, Infragistics, Getting Started
+mentionedTypes: []
 ---
 # Getting Started with Ignite UI for Blazor WebAssembly
 
@@ -34,15 +35,11 @@ For more information on installing Ignite UI for Blazor using NuGet, read the [I
 
 ### .NET 6 Applications
 
-1 - Open the **Program.cs** file and register the Ignite UI for Blazor Service by calling **builder.Services.AddIgniteUIBlazor()**:
+1 - Open the **Program.cs** file and register the Ignite UI for Blazor Service by calling **builder.Services.AddIgniteUIBlazor** function:
 
-```
+```razor
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
-builder.RootComponents.Add<App>("#app");
-builder.RootComponents.Add<HeadOutlet>("head::after");
-
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-
+// ...
 builder.Services.AddIgniteUIBlazor();
 
 await builder.Build().RunAsync();
@@ -58,14 +55,13 @@ await builder.Build().RunAsync();
 
 ```razor
 <head>
-    ...
     <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 </head>
 ```
 
 ### .NET 5 Applications
 
-1 - Open the **Program.cs** file and register the Ignite UI for Blazor Service by calling **builder.Services.AddIgniteUIBlazor()**:
+1 - Open the **Program.cs** file and register the Ignite UI for Blazor Service by calling **builder.Services.AddIgniteUIBlazor** function:
 
 ```razor
 public static async Task Main(string[] args)
@@ -86,7 +82,6 @@ public static async Task Main(string[] args)
 
 ```razor
 <head>
-    ...
     <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 </head>
 ```

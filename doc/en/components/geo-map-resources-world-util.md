@@ -1,12 +1,12 @@
 ---
-title: $Platform$ Map | World Utility | Data Source | Infragistics
-_description: Use Infragistics' $Platform$ JavaScript map data utility to generate geographic data. View $ProductName$ map demos!
-_keywords: $Platform$ map, map data, $ProductName$, Infragistics
+title: {Platform} Map | World Utility | Data Source | Infragistics
+_description: Use Infragistics' {Platform} JavaScript map data utility to generate geographic data. View {ProductName} map demos!
+_keywords: {Platform} map, map data, {ProductName}, Infragistics
 mentionedTypes: ['XamGeographicMap']
 ---
-# $Platform$ World Utility
+# {Platform} World Utility
 
-The resource topic provides implementation of utility that helps with generating $Platform$ geographic data.
+The resource topic provides implementation of utility that helps with generating {Platform} geographic data.
 
 ## Code Snippet
 
@@ -201,7 +201,7 @@ export default class WorldUtils {
             int pathID = 0;
             double distance = WorldUtils.CalcDistance(origin, dest);
 
-            if(distance <= interval)
+            if (distance <= interval)
             {
                 Console.WriteLine("Distance Less Than Equal To Interval!");
                 paths[pathID].Add(new Point() { X = dest.Lon, Y = dest.Lat });
@@ -212,7 +212,7 @@ export default class WorldUtils {
                 GeoLocation current = origin;
                 GeoLocation previous = origin;
 
-                for(int dist = interval; dist <= distance; dist += interval)
+                for (int dist = interval; dist <= distance; dist += interval)
                 {
                     previous = current;
 
@@ -228,7 +228,7 @@ export default class WorldUtils {
                         pathID++;
                         current = new GeoLocation() { Lon = -180, Lat = current.Lat };
                     }
-                    else if(previous.Lon < -150 && current.Lon > 150)
+                    else if (previous.Lon < -150 && current.Lon > 150)
                     {
                         paths[pathID].Add(new Point() { X = -180, Y = current.Lat });
                         paths.Add(new List<Point>());
@@ -372,7 +372,7 @@ export default class WorldUtils {
             double minLon = 180;
             double maxLon = -180;
 
-            foreach(GeoLocation gl in locations)
+            foreach (GeoLocation gl in locations)
             {
                 double curLon = WorldUtils.GetLongitude(gl);
                 double curLat = WorldUtils.GetLatitude(gl);
@@ -398,7 +398,7 @@ export default class WorldUtils {
         {
             List<Point> line = new List<Point>();
 
-            for(int lon = -180; lon <= 180; lon += 1)
+            for (int lon = -180; lon <= 180; lon += 1)
             {
                 double x = lon;
                 double y = 75 * Math.Cos(lon * Math.PI / 180);
@@ -410,6 +410,6 @@ export default class WorldUtils {
     }
 ```
 
- ## API Members
+## API References
 
  - `XamGeographicMap`

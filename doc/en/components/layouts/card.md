@@ -1,23 +1,20 @@
 ---
 title: Card Component
 _description: Present users with dashboards and engaging text, images, icons or buttons as an entry point for detailed information with Ignite UI for Web Card component.
-_keywords: $ProductName$, UI controls, Web widgets, web widgets, UI widgets, Native Web Components Suite, Native Web Controls, Native Web Components Library, Web Card component, Web Card controls
+_keywords: {ProductName}, UI controls, Web widgets, web widgets, UI widgets, Native Web Components Suite, Native Web Controls, Native Web Components Library, Web Card component, Web Card controls
 mentionedTypes: ['Card', 'CardActions', 'CardContent', 'CardHeader', 'CardMedia', 'Avatar', 'Button', 'Icon', 'IconButton', 'Ripple']
 ---
 
-# $Platform$ Card Overview
+# {Platform} Card Overview
 
-The $ProductName$ Card displays text, images, icons, and buttons in a visually rich presentation that can serve as an entry point to more detailed information. Cards can be used to create a multimedia dashboard.
+The {ProductName} Card displays text, images, icons, and buttons in a visually rich presentation that can serve as an entry point to more detailed information. Cards can be used to create a multimedia dashboard.
 
 
-## $Platform$ Card Example
+## {Platform} Card Example
 
-<code-view style="height: 640px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/card-overview"
-           alt="$Platform$ Card Example"
-           github-src="layouts/card/overview">
-</code-view>
+`sample="/layouts/card/overview", height="640", alt="{Platform} Card Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -29,7 +26,7 @@ Cards allow you to easily display content composed of different types of objects
 
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -38,7 +35,7 @@ npm install {PackageWebComponents}
 
 <!-- React -->
 
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -57,8 +54,11 @@ IgrCardModule.register();
 
 Before using the `Card`, you need to register it as follows:
 
+
 ```razor
-IgbCardModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbCardModule));
 ```
 
 <!-- Blazor -->
@@ -325,12 +325,9 @@ The styles that `.card-horizontal` class applies are:
 
 If everything went well, our card should look like this:
 
-<code-view style="height: 270px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/card-horizontal"
-           alt="$Platform$ Card Example"
-           github-src="layouts/card/horizontal">
-</code-view>
+`sample="/layouts/card/horizontal", height="270", alt="{Platform} Card Example"`
+
+
 
 ### Alternative layouts
 
@@ -406,7 +403,7 @@ Below is an example showing how you can create a semi-horizontal card, where we 
                 <IgrButton><span>Play Album</span></IgrButton>
             </IgrCardActions>
         </div>
-        
+
         <IgrCardMedia className='card-media'>
             <img src="https://static.infragistics.com/xplatform/images/music/singer_female.jpg"></img>
         </IgrCardMedia>
@@ -427,13 +424,7 @@ Below is an example showing how you can create a semi-horizontal card, where we 
 }
 ```
 
-<code-view style="height: 340px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/card-semi-horizontal"
-           alt="$Platform$ Semi Horizontal Card Example"
-           github-src="layouts/card/semi-horizontal">
-</code-view>
-
+`sample="/layouts/card/semi-horizontal", height="340", alt="{Platform} Semi Horizontal Card Example"`
 
 ### Card Actions
 
@@ -520,65 +511,16 @@ igc-icon-button+igc-icon-button {
 }
 ```
 
-<code-view style="height: 640px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/card-styling"
-           alt="$Platform$ Card Styling Example"
-           github-src="layouts/card/styling">
-</code-view>
-
+`sample="/layouts/card/styling", height="640", alt="{Platform} Card Styling Example"`
 
 ### Summary
-In this article we covered a lot of ground with the card component. We created a simple card and added some images to make it a bit more appealing. We used some additional $Platform$ inside our card, like avatars, buttons and icons, to enrich the experience and add some functionality. And finally, we changed the card's appearance by changing the major colors of the building blocks.
+In this article we covered a lot of ground with the card component. We created a simple card and added some images to make it a bit more appealing. We used some additional {Platform} inside our card, like avatars, buttons and icons, to enrich the experience and add some functionality. And finally, we changed the card's appearance by changing the major colors of the building blocks.
 
-<!-- WebComponents -->
-
-## API References
-
-For more detailed information regarding the card's API, refer to the following links:
-* `Card`
-* `CardHeader`
-* `CardContent`
-* `CardMedia`
-* `CardActions`
-
-
-Additional components and/or directives that were used:
-
-* `Avatar`
-* `Icon`
-* `Button`
-* `IconButton`
-* `Ripple`
-
-<!-- end: WebComponents -->
 
 <div class="divider"></div>
 
-## Additional Resources
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React Examples on **GitHub**](https://github.com/IgniteUI/igniteui-react-examples)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
- ## API Members
+## API References
 
  - `Avatar`
  - `Button`
@@ -589,3 +531,8 @@ Additional components and/or directives that were used:
  - `Card`
  - `IconButton`
  - `Icon`
+
+## Additional Resources
+
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

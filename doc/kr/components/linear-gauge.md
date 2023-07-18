@@ -1,12 +1,12 @@
 ---
-title: $Platform$ Linear Gauge Component - Native $Platform$ | $ProductName$
+title: {Platform} Linear Gauge Component - Native {Platform} | {ProductName}
 _description: Use the Linear Gauge component to see a simple display of a value compared against a scale and one or more ranges.
-_keywords: $Platform$, $ProductName$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components, Native $Platform$ Components Library, $Platform$ Chart, $Platform$ Data Grid, $Platform$ Chart Control, $Platform$ Grid Component, $Platform$ linear graph Component, $Platform$ linear graph
+_keywords: {Platform}, {ProductName}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components, Native {Platform} Components Library, {Platform} Chart, {Platform} Data Grid, {Platform} Chart Control, {Platform} Grid Component, {Platform} linear graph Component, {Platform} linear graph
 _language: kr
 mentionedTypes: ['XamLinearGauge']
 ---
 
-# $Platform$ Linear Gauge
+# {Platform} Linear Gauge
 
 Use the Linear Gauge component to see a simple display of a value compared against a scale and one or more ranges.
 
@@ -17,11 +17,8 @@ The linear gauge component allows for visualizing data in the form of a linear g
 The following sample demonstrates how setting multiple properties on the same gauge can transform it to completely different gauge.
 
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-animation"
-           github-src="gauges/linear-gauge/animation">
-</code-view>
+`sample="/gauges/linear-gauge/animation", height="125", alt="{Platform} linear gauge animation"`
+
 
 <div class="divider--half"></div>
 
@@ -33,14 +30,16 @@ When installing the gauge package, the core package must also be installed.
 - **npm install --save {PackageGauges}**
 <!-- end: Angular, React, WebComponents -->
 
-## Required Modules
+## Component Modules
 
 The `XamLinearGauge` requires the following modules:
 
-```razor
-LinearGaugeModule.Register(IgniteUIBlazor);
-```
 
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbLinearGaugeModule));
+```
 
 ```ts
 // app.module.ts
@@ -79,9 +78,9 @@ The following code demonstrates how create a linear gauge containing a needle an
 ```html
  <igx-linear-gauge width="70px"
                    height="300px"
-                   minimumValue = "5"
-                   maximumValue = "55"
-                   value = "43">
+                   minimumValue="5"
+                   maximumValue="55"
+                   value="43">
     <igx-linear-graph-range startValue="0"
                             endValue="15"
                             brush="red">
@@ -100,9 +99,9 @@ The following code demonstrates how create a linear gauge containing a needle an
 ```tsx
  <IgrLinearGauge width="70px"
                    height="300px"
-                   minimumValue = {5}
-                   maximumValue = {55}
-                   value = {43}>
+                   minimumValue={5}
+                   maximumValue={55}
+                   value={43}>
     <IgrLinearGraphRange startValue={0}
                             endValue={15}
                             brush="red"/>
@@ -140,7 +139,7 @@ The following code demonstrates how create a linear gauge containing a needle an
 
 <div class="divider--half"></div>
 
-# $Platform$ Configurable Elements
+# {Platform} Configurable Elements
 
 ## Needle
 This is the primary measure displayed by the component and is visualized as a bar or you can customize it to show almost any shape as is demonstrated below.
@@ -215,11 +214,8 @@ This is the primary measure displayed by the component and is visualized as a ba
 ```
 
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-needle"
-           github-src="gauges/linear-gauge/needle">
-</code-view>
+`sample="/gauges/linear-gauge/needle", height="125", alt="{Platform} linear gauge needle"`
+
 
 ## Ranges
 The ranges are visual elements that highlight a specified range of values on a scale. Their purpose is to visually communicate the qualitative state of the performance bar measure, illustrating at the same times the degree to which it resides within that state.
@@ -283,11 +279,8 @@ The ranges are visual elements that highlight a specified range of values on a s
 ```
 
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-ranges"
-           github-src="gauges/linear-gauge/ranges">
-</code-view>
+`sample="/gauges/linear-gauge/ranges", height="125", alt="{Platform} linear gauge ranges"`
+
 
 ## Tick Marks
 The tick marks serve as a visual division of the scale into intervals in order to increase the readability of the linear gauge.
@@ -355,11 +348,8 @@ Minor tick marks – The minor tick marks represent helper tick marks, which mig
 </igc-linear-gauge>
 ```
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-tickmarks"
-           github-src="gauges/linear-gauge/tickmarks">
-</code-view>
+`sample="/gauges/linear-gauge/tickmarks", height="125", alt="{Platform} linear gauge tickmarks"`
+
 
 ## Labels
 The labels indicate the measures on the scale.
@@ -406,11 +396,8 @@ The labels indicate the measures on the scale.
 ```
 
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-labels"
-           github-src="gauges/linear-gauge/labels">
-</code-view>
+`sample="/gauges/linear-gauge/labels", height="125", alt="{Platform} linear gauge labels"`
+
 
 ## Backing
 The backing element represents background and border of the bullet graph control. It is always the first element rendered and all the rest of elements such as labels, and tick marks are overlaid on top of it.
@@ -453,11 +440,8 @@ The backing element represents background and border of the bullet graph control
 </igc-linear-gauge>
 ```
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-backing"
-           github-src="gauges/linear-gauge/backing">
-</code-view>
+`sample="/gauges/linear-gauge/backing", height="125", alt="{Platform} linear gauge backing"`
+
 
 ## Scale
 The scale is a visual element that highlights the full range of values in the gauge. You can customize the appearance and the shape of the scale. It can also be inverted (using `IsScaleInverted` property) and all labels will be rendered from right-to-left instead of left-to-right.
@@ -509,11 +493,8 @@ The scale is a visual element that highlights the full range of values in the ga
 </igc-linear-gauge>
 ```
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-scale"
-           github-src="gauges/linear-gauge/scale">
-</code-view>
+`sample="/gauges/linear-gauge/scale", height="125", alt="{Platform} linear gauge scale"`
+
 
 ## Summary
 For your convenience, all above code snippets are combined into one code block below that you can easily copy to your project and see the linear gauge with all features and visuals enabled.

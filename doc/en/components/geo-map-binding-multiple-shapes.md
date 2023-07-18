@@ -1,23 +1,20 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Binding Multiple Data Shapes | Infragistics
-_description: Use Infragistics' $Platform$ to add multiple geographic series objects to overlay a few shapefiles with geo-spacial data. View $ProductName$ map tutorials!
-_keywords: $Platform$ map, shape files, $ProductName$, Infragistics, data binding
+title: {Platform} Map | Data Visualization Tools | Binding Multiple Data Shapes | Infragistics
+_description: Use Infragistics' {Platform} to add multiple geographic series objects to overlay a few shapefiles with geo-spacial data. View {ProductName} map tutorials!
+_keywords: {Platform} map, shape files, {ProductName}, Infragistics, data binding
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 namespace: Infragistics.Controls.Maps
 ---
-# $Platform$ Binding and Overlaying Multiple Shape Files
+# {Platform} Binding and Overlaying Multiple Shape Files
 
-In the $ProductName$ map, you can add multiple geographic series objects to overlay a few shapefiles with geo-spacial data. For example, `GeographicSymbolSeries` for plotting geographic locations of ports, the `GeographicPolylineSeries` for plotting routes between ports, and the `GeographicShapeSeries` for plotting shapes of countries.
+In the {ProductName} map, you can add multiple geographic series objects to overlay a few shapefiles with geo-spacial data. For example, `GeographicSymbolSeries` for plotting geographic locations of ports, the `GeographicPolylineSeries` for plotting routes between ports, and the `GeographicShapeSeries` for plotting shapes of countries.
 
-## $Platform$ Binding and Overlaying Multiple Shape Files Example
+## {Platform} Binding and Overlaying Multiple Shape Files Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-multiple-shapes"
-           alt="$Platform$ Binding and Overlaying Multiple Shape Files Example"
-           github-src="maps/geo-map/binding-multiple-shapes">
-</code-view>
+`sample="/maps/geo-map/binding-multiple-shapes", height="500", alt="{Platform} Binding and Overlaying Multiple Shape Files Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -72,8 +69,12 @@ import { IgxShapeDataSource } from 'igniteui-angular-core';
 ```
 
 ```razor
-IgbGeographicMapModule.Register(IgniteUIBlazor);
-IgbDataChartInteractivityModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbGeographicMapModule),
+    typeof(IgbDataChartInteractivityModule)
+);
 ```
 
 ## Creating Series
@@ -265,8 +266,6 @@ public IgbShapeDataSource EuropeShape;
 
 protected override void OnInitialized()
 {
-    IgbGeographicMapModule.Register(IgniteUIBlazor);
-
     this.AsiaShape = new IgbShapeDataSource()
     {
         ShapefileSource = "https://static.infragistics.com/xplatform/shapes/world_region_asia.shp",
@@ -1034,7 +1033,7 @@ export class MapBindingMultipleShapes extends SampleBase {
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <IgbGeographicShapeSeries ShapefileDataSource="AsiaShape" Outline="Black" Thickness="1" Brush="Red" />
@@ -1048,8 +1047,6 @@ export class MapBindingMultipleShapes extends SampleBase {
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         this.AsiaShape = new IgbShapeDataSource()
         {
             ShapefileSource = "https://static.infragistics.com/xplatform/shapes/world_region_asia.shp",
@@ -1065,7 +1062,7 @@ export class MapBindingMultipleShapes extends SampleBase {
 }
 ```
 
- ## API Members
+## API References
 
  - `GeographicPolylineSeries`
  - `GeographicShapeSeries`

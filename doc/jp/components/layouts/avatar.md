@@ -1,30 +1,27 @@
 ---
-title: $Platform$ Avatar | レイアウト コントロール | インフラジスティックス
-_description: インフラジスティックスの $Platform$ Avatar コンポーネントを使用して、画像、アイコン、またはイニシャルを表示します。
-_keywords: avatar, layout, $ProductName$, Infragistics, アバター, レイアウト, インフラジスティックス
+title: {Platform} Avatar | レイアウト コントロール | インフラジスティックス
+_description: インフラジスティックスの {Platform} Avatar コンポーネントを使用して、画像、アイコン、またはイニシャルを表示します。
+_keywords: avatar, layout, {ProductName}, Infragistics, アバター, レイアウト, インフラジスティックス
 mentionedTypes: ['Avatar']
 _language: ja
 ---
 
-# $Platform$ Avatar (アバター)
+# {Platform} Avatar (アバター)
 
-$ProductName$ アバターは、アプリケーションでイニシャル、画像、またはアイコンを表示するのに役立ちます。
+{ProductName} アバターは、アプリケーションでイニシャル、画像、またはアイコンを表示するのに役立ちます。
 
-## $Platform$ Icon Avatar の例
+## {Platform} Icon Avatar の例
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-icon"
-           alt="$Platform$ Avatar の例"
-           github-src="layouts/avatar/icon">
-</code-view>
+`sample="/layouts/avatar/icon", height="80", alt="{Platform} Avatar の例"`
+
+
 
 <div class="divider--half"></div>
 
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ npm パッケージをインストールする必要があります。
+まず、次のコマンドを実行して {ProductName} npm パッケージをインストールする必要があります。
 
 ```cmd
 npm install {PackageWebComponents}
@@ -33,7 +30,7 @@ npm install {PackageWebComponents}
 
 <!-- React -->
 
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -52,10 +49,12 @@ IgrAvatarModule.register();
 
 `Avatar` を使用する前に、次のように登録する必要があります。
 
-```razor
-IgbAvatarModule.Register(IgniteUIBlazor);
-```
 
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbAvatarModule));
+```
 <!-- Blazor -->
 
 また、追加の CSS ファイルをリンクして、スタイルを `Avatar` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
@@ -132,12 +131,9 @@ defineComponents(IgcAvatarComponent);
 </IgbAvatar>
 ```
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-initials"
-           alt="$Platform$ Avatar の例"
-           github-src="layouts/avatar/initials">
-</code-view>
+`sample="/layouts/avatar/initials", height="80", alt="{Platform} Avatar の例"`
+
+
 
 ### 画像
 
@@ -169,34 +165,25 @@ defineComponents(IgcAvatarComponent);
 </IgbAvatar>
 ```
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-image"
-           alt="$Platform$ Avatar の例"
-           github-src="layouts/avatar/image">
-</code-view>
+`sample="/layouts/avatar/image", height="80", alt="{Platform} Avatar の例"`
+
+
 
 アバターは、`circle`、`rounded`、`square` の 3 つの形状をサポートしています。アバターの形状は、`shape` 属性を介して変更できます。
 
 ### 形状
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-shape"
-           alt="$Platform$ Avatar の例"
-           github-src="layouts/avatar/shape">
-</code-view>
+`sample="/layouts/avatar/shape", height="80", alt="{Platform} Avatar の例"`
+
+
 
 ### サイズ
 
 形状とは別に、`size` 属性を設定することでアバターのサイズを変更することもできます。サポートされているサイズは `small`、`medium`、`large` です。
 
-<code-view style="height: 130px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-size"
-           alt="$Platform$ Avatar の例"
-           github-src="layouts/avatar/size">
-</code-view>
+`sample="/layouts/avatar/size", height="130", alt="{Platform} Avatar の例"`
+
+
 
 ### スタイル設定
 
@@ -211,39 +198,15 @@ igc-avatar::part(base) {
 }
 ```
 
-<!-- WebComponents -->
-
-## API リファレンス
-
-* `Avatar`
-
-<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
 
-## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [GitHub の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [GitHub の Ignite UI for React の例](https://github.com/IgniteUI/igniteui-react-examples)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-## API メンバー
+## API リファレンス
 
  - `Avatar`
+
+## その他のリソース
+
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

@@ -1,10 +1,10 @@
 ---
-title: $Platform$ Map | World Connections | Data Source | Infragistics
-_description: Use Infragistics' $Platform$ JavaScript map data utility to generate locations of airports, flight paths and geographic gridlines. View $ProductName$ map demos!
-_keywords: $Platform$ map, map data, $ProductName$, Infragistics
+title: {Platform} Map | World Connections | Data Source | Infragistics
+_description: Use Infragistics' {Platform} JavaScript map data utility to generate locations of airports, flight paths and geographic gridlines. View {ProductName} map demos!
+_keywords: {Platform} map, map data, {ProductName}, Infragistics
 mentionedTypes: ['XamGeographicMap']
 ---
-# $Platform$ World Connections
+# {Platform} World Connections
 
 The resource topic provides implementation of data utility for generating locations of airports, flight paths, and geographic gridlines. You can use these data sources as reference point for creating your own geographic data. Note that this utility depends on [WorldUtil](geo-map-resources-world-util.md) and [WorldLocations](geo-map-resources-world-locations.md) scripts.
 
@@ -161,11 +161,11 @@ export default class WorldConnections {
 
         public static int ComparePopulation(WorldCity a, WorldCity b)
         {
-            if(a.Pop < b.Pop)
+            if (a.Pop < b.Pop)
             {
                 return 1;
             }
-            if(a.Pop > b.Pop)
+            if (a.Pop > b.Pop)
             {
                 return -1;
             }
@@ -194,14 +194,14 @@ export default class WorldConnections {
             {
                 WorldCity origin = cities[i];
 
-                for(int j=0; j<count; j++)
+                for (int j=0; j<count; j++)
                 {
                     WorldCity dest = cities[j];
 
                     GeoLocation originGeo = new GeoLocation() { Lat = origin.Lat, Lon = origin.Lon };
                     GeoLocation destGeo = new GeoLocation() { Lat = dest.Lat, Lon = dest.Lon };
 
-                    if(origin.Name != dest.Name)
+                    if (origin.Name != dest.Name)
                     {
                         string route = origin.Name + "-" + dest.Name;
                         bool routeIsValid = !FlightsLookup.ContainsKey(route);
@@ -213,7 +213,7 @@ export default class WorldConnections {
                         double time = distance / 800;
                         bool trafficIsValid = origin.Pop > 3 && dest.Pop > 1.0;
 
-                        if(routeIsValid && distanceIsValid && trafficIsValid)
+                        if (routeIsValid && distanceIsValid && trafficIsValid)
                         {
                             FlightsLookup.Add(route, route);
 
@@ -228,13 +228,13 @@ export default class WorldConnections {
                     }
                 }
 
-                if(flightsCount > flightsLimit)
+                if (flightsCount > flightsLimit)
                 {
                     break;
                 }
             }
 
-            foreach(FlightInfo flight in Flights)
+            foreach (FlightInfo flight in Flights)
             {
                 AddAirport(flight.Origin);
                 AddAirport(flight.Dest);
@@ -304,6 +304,6 @@ export default class WorldConnections {
     }
 ```
 
- ## API Members
+## API References
 
  - `XamGeographicMap`

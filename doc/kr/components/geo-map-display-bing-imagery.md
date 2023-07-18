@@ -1,22 +1,19 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Bing Maps | Infragistics
+title: {Platform} Map | Data Visualization Tools | Bing Maps | Infragistics
 _description: The Map allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.View the demo, dependencies, usage and toolbar for more information.
-_keywords: map, $ProductName$, Infragistics, imagery tiles, Bing Maps
+_keywords: map, {ProductName}, Infragistics, imagery tiles, Bing Maps
 _language: kr
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
 ---
 
-# $Platform$ Binding Imagery from Bing Maps
+# {Platform} Binding Imagery from Bing Maps
 
-Bing Maps is Microsoft’s® licensed geographic imagery mapping service. This geographic imagery service is accessible directly on the <a href="http://www.bing.com/maps" target="_blank">www.bing.com/maps</a>  web site. The $ProductName$ map component displays geographic imagery from Bing Maps in the map’s background content using the `BingMapsMapImagery` class. However, by default the map component displays geographic imagery from the Open Street Maps in the map background content requiring you to configure the control to display Bing Maps’ geographic imagery. Prior to using Bing Maps’ geographic imagery, you must register and obtain a Bing Map API key from <a href="http://www.bingmapsportal.coms" target="_blank">www.bingmapsportal.com</a> You must use the Bing Maps’ API key to set the BingMapsMapImagery object’s ApiKey property.
+Bing Maps is Microsoft’s® licensed geographic imagery mapping service. This geographic imagery service is accessible directly on the <a href="http://www.bing.com/maps" target="_blank">www.bing.com/maps</a>  web site. The {ProductName} map component displays geographic imagery from Bing Maps in the map’s background content using the `BingMapsMapImagery` class. However, by default the map component displays geographic imagery from the Open Street Maps in the map background content requiring you to configure the control to display Bing Maps’ geographic imagery. Prior to using Bing Maps’ geographic imagery, you must register and obtain a Bing Map API key from <a href="http://www.bingmapsportal.coms" target="_blank">www.bingmapsportal.com</a> You must use the Bing Maps’ API key to set the BingMapsMapImagery object’s ApiKey property.
 
 ## Demo
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-bing-imagery"  >
-</code-view>
+`sample="/maps/geo-map/display-bing-imagery", height="500", alt="{Platform} geo map display bing imagery"`
 
 <div class="divider--half"></div>
 

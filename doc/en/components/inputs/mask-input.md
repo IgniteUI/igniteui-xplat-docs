@@ -1,34 +1,31 @@
 ---
-title: $Platform$ MaskInput | Infragistics
-_description: Infragistics' $Platform$ MaskInput allows the user to control input and format the visible value based on configurable mask rules
-_keywords: $Platform$ input, $ProductName$, Infragistics
+title: {Platform} MaskInput | Infragistics
+_description: Infragistics' {Platform} MaskInput allows the user to control input and format the visible value based on configurable mask rules
+_keywords: {Platform} input, {ProductName}, Infragistics
 mentionedTypes: ['MaskInput']
 ---
 
-## $Platform$ Mask Input Overview
+## {Platform} Mask Input Overview
 
-The $ProductName$ Mask Input is an input field that allows the developer to control user input and format the visible value, based on configurable rules. It provides different input options and ease in use and configuration.
+The {ProductName} Mask Input is an input field that allows the developer to control user input and format the visible value, based on configurable rules. It provides different input options and ease in use and configuration.
 
-### $Platform$ Mask Input Example
+### {Platform} Mask Input Example
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/mask-input-overview"
-           alt="$Platform$ Mask Input Overview Example"
-           github-src="inputs/mask-input/overview">
-</code-view>
+`sample="/inputs/mask-input/overview", height="150", alt="{Platform} Mask Input Overview Example"`
+
+
 
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `IgcMaskInput`, you need to register it as follows:
+Before using the `MaskInput`, you need to register it as follows:
 
 ```ts
 import { defineComponents, IgcMaskInputComponent } from 'igniteui-webcomponents';
@@ -70,12 +67,9 @@ In the example below, we will apply a mask for a phone number with an extension 
 
 After that you should see the following in your browser:
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/mask-input-applying-mask"
-           alt="$Platform$ Mask Input Applying Mask Example"
-           github-src="inputs/mask-input/applying-mask">
-</code-view>
+`sample="/inputs/mask-input/applying-mask", height="150", alt="{Platform} Mask Input Applying Mask Example"`
+
+
 
 ### Prompt Character
 
@@ -97,51 +91,32 @@ Developers can also take advantage of the `placeholder` property, which serves t
 
 ### Value Modes
 
-The `IgcMaskInput` exposes a `valueMode` property that lets you choose between `raw` and `withFormatting` options to configure which input value (formatted or raw) to bind in your form when a specific mask is applied. By default, `valueMode` is set to *raw*. Try it for yourself in the example below:
+The `MaskInput` exposes a `valueMode` property that lets you choose between `raw` and `withFormatting` options to configure which input value (formatted or raw) to bind in your form when a specific mask is applied. By default, `valueMode` is set to *raw*. Try it for yourself in the example below:
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/mask-input-value-modes"
-           alt="$Platform$ Mask Input Value Modes Example"
-           github-src="inputs/mask-input/value-modes">
-</code-view>
+`sample="/inputs/mask-input/value-modes", height="150", alt="{Platform} Mask Input Value Modes Example"`
+
+
 
 ## Styling
 
-The `IgcMaskInput` component derives from the `IgcInput` component, so it exposes all available CSS parts. See [Input Styling](input.md#styling) for reference.
+The `MaskInput` component derives from the `Input` component, so it exposes all available CSS parts. See [Input Styling](input.md#styling) for reference.
 
 ## Assumptions and limitations
 
 - The masked input does not expose a _type_ attribute since it is always an input of type **text**.
 - Undo/redo behavior is currently unsupported.
 
-<!-- WebComponents -->
 
 ## API References
 
 * `Input`
 * `MaskInput`
-
-Additional Web Components that were used:
-
 * `Icon`
 * `Radio`
 * `RadioGroup`
 
-<!-- end: WebComponents -->
 
-### Additional Resources
+## Additional Resources
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

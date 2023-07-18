@@ -1,22 +1,19 @@
 ---
-title: $Platform$ Checkbox コンポーネント | $ProductName$
-_description: $Platform$ Checkbox コンポーネントを使用してチェックボックスを追加し、エンドユーザーのチェック状態、チェックなし状態、または不確定状態を有効にする方法を紹介します。
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Checkbox components, $Platform$ Checkbox controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Checkbox コンポーネント, $Platform$ Checkbox コントロール
+title: {Platform} Checkbox コンポーネント | {ProductName}
+_description: {Platform} Checkbox コンポーネントを使用してチェックボックスを追加し、エンドユーザーのチェック状態、チェックなし状態、または不確定状態を有効にする方法を紹介します。
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Checkbox components, {Platform} Checkbox controls, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Checkbox コンポーネント, {Platform} Checkbox コントロール
 mentionedTypes: ['Checkbox', 'Form']
 _language: ja
 ---
 
-# $Platform$ Checkbox (チェックボックス) の概要
+# {Platform} Checkbox (チェックボックス) の概要
 
-$Platform$ Checkbox は、$Platform$ アプリにチェックボックスを追加できるコンポーネントです。これは標準の HTML チェックボックスとして動作し、ユーザーが基本的なチェック状態とチェックなし状態、または追加の不確定状態を選択できるようにします。また、$Platform$ Checkbox コンポーネントのスタイルと、フォームで使用する機能を完全に制御できます。
+{Platform} Checkbox は、{Platform} アプリにチェックボックスを追加できるコンポーネントです。これは標準の HTML チェックボックスとして動作し、ユーザーが基本的なチェック状態とチェックなし状態、または追加の不確定状態を選択できるようにします。また、{Platform} Checkbox コンポーネントのスタイルと、フォームで使用する機能を完全に制御できます。
 
 ## Checkbox の例
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/checkbox-overview" alt="$Platform$ Checkbox の例"
-           github-src="inputs/checkbox/overview">
-</code-view>
+`sample="/inputs/checkbox/overview", height="100", alt="{Platform} Checkbox の例"`
+
 
 <div class="divider--half"></div>
 
@@ -25,7 +22,7 @@ $Platform$ Checkbox は、$Platform$ アプリにチェックボックスを追�
 `Checkbox` は、選択された状態と選択されていない状態のどちらかを選択できることです。デフォルトのスタイル設定はマテリアル デザイン ガイドラインの選択コントロールの仕様に基づきます。
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -42,7 +39,7 @@ defineComponents(IgcCheckboxComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -62,7 +59,9 @@ IgrCheckboxModule.register();
 `Checkbox` を使用する前に、次のように登録する必要があります:
 
 ```razor
-IgbCheckboxModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbCheckboxModule));
 ```
 
 また、追加の CSS ファイルをリンクして、スタイルを `Checkbox` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
@@ -142,12 +141,9 @@ IgbCheckboxModule.Register(IgniteUIBlazor);
 <IgbCheckbox AriaLabelledby="checkbox-label" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-label"
-           alt="$Platform$ Checkbox の例"
-           github-src="inputs/checkbox/label">
-</code-view>
+`sample="/inputs/checkbox/label", height="100", alt="{Platform} Checkbox の例"`
+
+
 
 ### チェック済み
 
@@ -165,12 +161,9 @@ IgbCheckboxModule.Register(IgniteUIBlazor);
 <IgbCheckbox Checked="true" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-checking"
-           alt="$Platform$ Checkbox の例"
-           github-src="inputs/checkbox/checking">
-</code-view>
+`sample="/inputs/checkbox/checking", height="100", alt="{Platform} Checkbox の例"`
+
+
 
 ### 不確定
 
@@ -188,12 +181,9 @@ IgbCheckboxModule.Register(IgniteUIBlazor);
 <IgbCheckbox Indeterminate="true" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-indeterminate"
-           alt="$Platform$ Checkbox の例"
-           github-src="inputs/checkbox/indeterminate">
-</code-view>
+`sample="/inputs/checkbox/indeterminate", height="100", alt="{Platform} Checkbox の例"`
+
+
 
 ### 必須
 
@@ -243,12 +233,9 @@ IgbCheckboxModule.Register(IgniteUIBlazor);
 <IgbCheckbox Disabled="true" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-disabled"
-           alt="$Platform$ Checkbox の例"
-           github-src="inputs/checkbox/disabled">
-</code-view>
+`sample="/inputs/checkbox/disabled", height="100", alt="{Platform} Checkbox の例"`
+
+
 
 ### フォーム
 
@@ -288,39 +275,15 @@ igc-checkbox::part(indicator checked) {
   }
 }
 ```
-
-<!-- WebComponents -->
-
 ## API リファレンス
-
-* `Checkbox`
-
-<!-- end: WebComponents -->
-
-## その他のリソース
-
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React -->
-
-## API メンバー
 
  - `Checkbox`
  - `Checked`
  - `Disabled`
  - `Form`
+
+
+## その他のリソース
+
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

@@ -1,24 +1,21 @@
 ---
-title: $Platform$ Rating
-_description: $ProductName$ Rating を使用すると、ユーザーは Unicode シンボル、SVG、またはアイコンを使用してフィードバックを表示および提供できます。
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Rating components, $Platform$ Rating controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Rating コンポーネント, $Platform$ Rating コントロール
+title: {Platform} Rating
+_description: {ProductName} Rating を使用すると、ユーザーは Unicode シンボル、SVG、またはアイコンを使用してフィードバックを表示および提供できます。
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Rating components, {Platform} Rating controls, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Rating コンポーネント, {Platform} Rating コントロール
 mentionedTypes: ["Rating"]
 _language: ja
 ---
 
-# $Platform$ Rating (評価) の概要
+# {Platform} Rating (評価) の概要
 
-$ProductName$ 評価コンポーネントを使用すると、ユーザーはフィードバックを表示して提供できます。
+{ProductName} 評価コンポーネントを使用すると、ユーザーはフィードバックを表示して提供できます。
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/rating-basic" alt="$Platform$ Rating の基本的な例"
-           github-src="inputs/rating/basic">
-</code-view>
+`sample="/inputs/rating/basic", height="80", alt="{Platform} Rating の基本的な例"`
+
 
 <!-- WebComponents -->
 
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -40,7 +37,7 @@ defineComponents(IgcRatingComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -92,16 +89,14 @@ IgrRatingModule.register();
 </igc-rating>
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/rating-custom" alt="$Platform$ Rating カスタム シンボルの例"
-           github-src="inputs/rating/custom">
-</code-view>
+`sample="/inputs/rating/custom", height="100", alt="{Platform} Rating カスタム シンボルの例"`
 
-> [!NOTE] 評価コンポーネントの開く括弧と閉じる括弧間の評価記号の数によって、最大値が決まります。
+
+> [!Note]
+> 評価コンポーネントの開く括弧と閉じる括弧間の評価記号の数によって、最大値が決まります。
 
 ## 単一選択
-$ProductName$ 評価コンポーネントには、ユーザーがさまざまな評価値に対してさまざまなアイコン / 要素を提供できる単一選択モードがあります。この場合、アイコン / 要素の 1 つだけを選択して、ユーザーからのフィードバックを反映させることができます。
+{ProductName} 評価コンポーネントには、ユーザーがさまざまな評価値に対してさまざまなアイコン / 要素を提供できる単一選択モードがあります。この場合、アイコン / 要素の 1 つだけを選択して、ユーザーからのフィードバックを反映させることができます。
 
 ```html
 <igc-rating single>
@@ -128,16 +123,14 @@ $ProductName$ 評価コンポーネントには、ユーザーがさまざまな
 </igc-rating>
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/rating-custom" alt="単一選択による $Platform$ Rating"
-           github-src="inputs/rating/custom">
-</code-view>
+`sample="/inputs/rating/custom", height="100", alt="{Platform} 単一選択による {Platform} Rating"`
 
-> [!NOTE] `step` 属性は単一選択モードでは機能しないことに注意してください。
 
-## 空および選択済み 
-$ProductName$ 評価コンポーネントを使用すると、ユーザーは単一の評価値の空の状態と選択された状態に異なるアイコン / 要素を使用できます。シンボルを宣言するときは、たとえ同じであっても、スロットごとに 2 つのアイコン (空とフル) を提供することが必須です。次に例を示します。
+> [!Note]
+> `step` 属性は単一選択モードでは機能しないことに注意してください。
+
+## 空および選択済み
+{ProductName} 評価コンポーネントを使用すると、ユーザーは単一の評価値の空の状態と選択された状態に異なるアイコン / 要素を使用できます。シンボルを宣言するときは、たとえ同じであっても、スロットごとに 2 つのアイコン (空とフル) を提供することが必須です。次に例を示します。
 
 ```html
 <igc-rating-symbol>
@@ -146,11 +139,8 @@ $ProductName$ 評価コンポーネントを使用すると、ユーザーは単
 </igc-rating-symbol>
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/rating-empty" alt="空および選択状態の $Platform$ Rating"
-           github-src="inputs/rating/empty">
-</code-view>
+`sample="/inputs/rating/empty", height="100", alt="{Platform} 空および選択状態の {Platform} Rating"`
+
 
 ## 構成
 
@@ -215,25 +205,15 @@ $ProductName$ 評価コンポーネントを使用すると、ユーザーは単
 
 `Rating` コンポーネントは、base、label、value-label、symbol、およびコンポーネント シンボルとそれに含まれるラベルのスタイルを設定できるシンボルを提供します。
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/rating-styling" alt="$Platform$ Rating スタイル設定の例"
-           github-src="inputs/rating/styling">
-</code-view>
+`sample="/inputs/rating/styling", height="80", alt="{Platform} Rating スタイル設定の例"`
 
-<!-- WebComponents -->
 
 ## API リファレンス
 
 - `Rating`
 
-<!-- end: WebComponents -->
 
 ## その他のリソース
 
-<!-- WebComponents -->
-
-- [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-- [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

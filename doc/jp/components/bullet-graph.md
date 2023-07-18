@@ -1,28 +1,24 @@
 ---
-title: $Platform$ ブレット グラフ | データ可視化ツール | インフラジスティックス
-_description: インフラジスティックスの $Platform$ ブレット グラフ コントロールを使用すると、範囲を表示し、複数の測定値を比較するダッシュボードを作成できます。インフラジスティックス データ視覚化ツールを是非お試しください!
-_keywords: $Platform$ Bullet Graph, animation, labels, needle, scales, ranges, tick marks, Infragistics, ブレット グラフ, インフラジスティックス, $Platform$ ブレット グラフ, アニメーション, ラベル, ニードル, スケール, 範囲, 目盛, インフラジスティックス
+title: {Platform} ブレット グラフ | データ可視化ツール | インフラジスティックス
+_description: インフラジスティックスの {Platform} ブレット グラフ コントロールを使用すると、範囲を表示し、複数の測定値を比較するダッシュボードを作成できます。インフラジスティックス データ視覚化ツールを是非お試しください!
+_keywords: {Platform} Bullet Graph, animation, labels, needle, scales, ranges, tick marks, Infragistics, ブレット グラフ, インフラジスティックス, {Platform} ブレット グラフ, アニメーション, ラベル, ニードル, スケール, 範囲, 目盛, インフラジスティックス
 mentionedTypes: ['XamBulletGraph']
 namespace: Infragistics.Controls.Gauges
 _language: ja
 ---
-# $Platform$ ブレット グラフの概要
+# {Platform} ブレット グラフの概要
 
-$Platform$ Bullet Graph コンポーネントは、目盛り上でメジャーの比較を簡潔にリニアで表示します。
+{Platform} Bullet Graph コンポーネントは、目盛り上でメジャーの比較を簡潔にリニアで表示します。
 
 ブレット グラフ コンポーネントは、きれいなデータ表現を作成するための多数の機能をサポートします。ブレット グラフは、目標に対する進捗状況、評価の範囲、複数の測定比較を表現する際に最も効率的で効果的なグラフの 1 つです。ブレット グラフは、水平または垂直のわずかな領域で、ゴールに至る進捗、評価の範囲、複数の測定比較を表現するための最も効率的で効果的な方法の 1 つです。
 
-## $Platform$ ブレット グラフの例
+## {Platform} ブレット グラフの例
 
 以下のサンプルは、同じ `XamBulletGraph` でいくつかのプロパティを設定して全く異なるゲージにする方法を示します。
 
+`sample="/gauges/bullet-graph/animation", height="155", alt="{Platform} ブレット グラフの例"`
 
-<code-view style="height: 155px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-animation"
-           alt="$Platform$ ブレット グラフの例"
-           github-src="gauges/bullet-graph/animation">
-</code-view>
+
 
 <div class="divider--half"></div>
 
@@ -33,10 +29,10 @@ $Platform$ Bullet Graph コンポーネントは、目盛り上でメジャー�
 ## 依存関係
 gauge パッケージのインストール時に core パッケージもインストールする必要があります。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageGauges}
-</pre>
+```
 <!-- end: Angular, React, WebComponents -->
 
 ## モジュールの要件
@@ -44,10 +40,11 @@ npm install --save {PackageGauges}
 `XamBulletGraph` を作成するには、以下のモジュールが必要です。
 
 ```razor
-IgbBulletGraphModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbBulletGraphModule));
 ```
 
-<!-- Angular, React, WebComponents -->
 ```ts
 // app.module.ts
 import { IgxBulletGraphModule } from 'igniteui-angular-gauges';
@@ -69,11 +66,9 @@ IgrBulletGraphModule.register();
 ```
 
 ```ts
-// Module Manager for registering the modules of the chart
-import { ModuleManager } from 'igniteui-webcomponents-core';
-// Bullet Graph Module
 import { IgcBulletGraphCoreModule  } from 'igniteui-webcomponents-gauges';
 import { IgcBulletGraphModule } from 'igniteui-webcomponents-gauges';
+import { ModuleManager } from 'igniteui-webcomponents-core';
 
 // register the modules
 ModuleManager.register(
@@ -81,6 +76,7 @@ ModuleManager.register(
     IgcBulletGraphModule
 );
 ```
+
 
 <div class="divider--half"></div>
 
@@ -94,8 +90,8 @@ ModuleManager.register(
                    width="300"
                    minimumValue="5"
                    maximumValue="55"
-                   value = "35"
-                   targetValue = "43">
+                   value="35"
+                   targetValue="43">
         <igx-linear-graph-range startValue="0"
                                 endValue="15"
                                 brush="#828181">
@@ -114,10 +110,10 @@ ModuleManager.register(
 ```tsx
  <IgrBulletGraph height="100"
                    width="300"
-                   minimumValue= {5}
-                   maximumValue= {55}
-                   value = {35}
-                   targetValue = {43}>
+                   minimumValue={5}
+                   maximumValue={55}
+                   value={35}
+                   targetValue={43}>
         <IgrLinearGraphRange startValue={0}
                                 endValue={15}
                                 brush="#828181"/>
@@ -136,7 +132,7 @@ ModuleManager.register(
     minimum-value="5"
     maximum-value="55"
     value="35"
-    target-value = "43">
+    target-value="43">
     <igc-linear-graph-range
       start-value="0"
       end-value="15"
@@ -260,11 +256,8 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-measures"
-           github-src="gauges/bullet-graph/measures">
-</code-view>
+`sample="/gauges/bullet-graph/measures", height="125", alt="{Platform} ブレット グラフ メジャー"`
+
 
 ## 比較範囲
 範囲はスケールで指定した値の範囲を強調表示する視覚的な要素です。その目的は、パフォーマンス バー メジャーの質的状態を視覚で伝えると同時に、その状態をレベルとして示すことにあります。
@@ -374,11 +367,8 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-ranges"
-           github-src="gauges/bullet-graph/ranges">
-</code-view>
+`sample="/gauges/bullet-graph/ranges", height="125", alt="{Platform} ブレット グラフの範囲"`
+
 
 ## 目盛
 目盛は、ブレット グラフを読み取りやすくするために、目盛の間隔でスケールを分割して見せる役割を果たします。
@@ -464,11 +454,8 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-tickmarks"
-           github-src="gauges/bullet-graph/tickmarks">
-</code-view>
+`sample="/gauges/bullet-graph/tickmarks", height="125", alt="{Platform}  ブレット グラフの目盛"`
+
 
 ## ラベル
 ラベルはスケールのメジャーを示します。
@@ -528,11 +515,8 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-labels"
-           github-src="gauges/bullet-graph/labels">
-</code-view>
+`sample="/gauges/bullet-graph/labels", height="125", alt="{Platform} ブレット グラフのラベル"`
+
 
 ## バッキング
 バッキング要素はブレット グラフ コントロールの背景と境界線を表します。常に最初に描画される要素でラベルやメモリなどの残りの要素は互いにオーバーレイします。
@@ -588,11 +572,8 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-background"
-           github-src="gauges/bullet-graph/background">
-</code-view>
+`sample="/gauges/bullet-graph/background", height="125", alt="{Platform} ブレット グラフのバッキング"`
+
 
 ## スケール
 スケールはゲージで値の全範囲を強調表示する視覚的な要素です。外観やスケールの図形のカスタマイズ、更にスケールを反転 (`IsScaleInverted` プロパティを使用) させて、すべてのラベルを左から右ではなく、右から左へ描画することもできます。
@@ -651,11 +632,8 @@ MaximumValue="55" TargetValue="43">
 </IgbBulletGraph>
 ```
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-scale"
-           github-src="gauges/bullet-graph/scale">
-</code-view>
+`sample="/gauges/bullet-graph/scale", height="125", alt="{Platform} ブレット グラフのスケール"`
+
 
 ## まとめ
 上記すべてのコード スニペットを以下のコード ブロックにまとめています。プロジェクトに簡単にコピーしてブレットグラフのすべての機能を再現できます。
@@ -938,16 +916,17 @@ MaximumValue="55" TargetValue="43">
 </IgbBulletGraph>
 ```
 
+
+## API リファレンス
+
+以下は上記のセクションで説明した API メンバーのリストです。
+
+- `XamBulletGraph`
+- `XamLinearGraphRange`
+
 ## その他のリソース
 
 その他のゲージ タイプの詳細については、以下のトピックを参照してください。
 
 - [リニア ゲージ](linear-gauge.md)
 - [ラジアル ゲージ](radial-gauge.md)
-
-## API メンバー
-
-以下は上記のセクションで説明した API メンバーのリストです。
-
-- `XamBulletGraph`
-- `XamLinearGraphRange`

@@ -34,7 +34,9 @@
     { "names":[{"platform":"Blazor","mappedType":"ControlDisplayDensity","mappedName":"ActualSummaryListDensity"}],"originalName":"ActualSummaryListDensity"},
     { "names":[{"platform":"Blazor","mappedType":"ControlDisplayDensity","mappedName":"FilterListDensity"}],"originalName":"FilterListDensity"},
     { "names":[{"platform":"Blazor","mappedType":"ControlDisplayDensity","mappedName":"ActualFilterListDensity"}],"originalName":"ActualFilterListDensity"},
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"FilterListPlaceholderText"}],"originalName":"FilterListPlaceholderText"}],"originalBaseTypeName":"GridColumnOptionsBase","originalBaseTypeNamespace":"Infragistics.Controls.Grid.Implementation","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"FilterListPlaceholderText"}],"originalName":"FilterListPlaceholderText"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SummaryListTextColor"}],"originalName":"SummaryListTextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SummaryListBackground"}],"originalName":"SummaryListBackground"}],"originalBaseTypeName":"GridColumnOptionsBase","originalBaseTypeNamespace":"Infragistics.Controls.Grid.Implementation","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"GridColumnOptionsSimpleSectionBase",
     "names":[{"platform":"Blazor","fileName":"GridColumnOptionsSimpleSectionBase.cs","mappedName":"IgbGridColumnOptionsSimpleSectionBase"}],
     "members":[
@@ -54,7 +56,7 @@
     { "names":[{"platform":"Blazor","mappedType":"BaseControlTheme","mappedName":"ActualBaseTheme"}],"originalName":"ActualBaseTheme"},
     { "names":[{"platform":"Blazor","mappedType":"ControlDisplayDensity","mappedName":"ButtonDensity"}],"originalName":"ButtonDensity"},
     { "names":[{"platform":"Blazor","mappedType":"ControlDisplayDensity","mappedName":"ActualButtonDensity"}],"originalName":"ActualButtonDensity"},
-    { "names":[{"platform":"Blazor","mappedType":"IgbColumn","mappedName":"Column"}],"originalName":"Column"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbDataGridColumn","mappedName":"Column"}],"originalName":"Column"},
     { "names":[{"platform":"Blazor","mappedType":"ControlDisplayDensity","mappedName":"Density"}],"originalName":"Density"},
     { "names":[{"platform":"Blazor","mappedType":"ControlDisplayDensity","mappedName":"ActualDensity"}],"originalName":"ActualDensity"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TextColor"}],"originalName":"TextColor"}],"originalNamespace":"Infragistics.Controls.Grid.Implementation"},
@@ -99,6 +101,8 @@
     { "names":[{"platform":"Blazor","mappedType":"ControlDisplayDensity","mappedName":"SummaryListDensity"}],"originalName":"SummaryListDensity"},
     { "names":[{"platform":"Blazor","mappedType":"ControlDisplayDensity","mappedName":"ActualSummaryListDensity"}],"originalName":"ActualSummaryListDensity"},
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"ActiveCount"}],"originalName":"ActiveCount"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SummaryListTextColor"}],"originalName":"SummaryListTextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SummaryListBackground"}],"originalName":"SummaryListBackground"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"OnApply"}],"originalName":"OnApply"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"OnCancel"}],"originalName":"OnCancel"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"CloseMenu"}],"originalName":"CloseMenu"}],"originalBaseTypeName":"GridColumnOptionsSectionBase","originalBaseTypeNamespace":"Infragistics.Controls.Grid.Implementation","originalNamespace":"Infragistics.Controls.Grid.Implementation"}]}

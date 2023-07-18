@@ -1,54 +1,55 @@
 ---
-title: $Platform$ ZoomSlider | Data Visualization Tools | Navigation | Zooming | DataChart | Data Binding | Infragistics
-_description: Use Infragistics' $Platform$ zoom slider control to easily display a subset of data with two handles representing minimum and maximum values. Improve your data visualization with $ProductName$ zoom slider!
-_keywords: zoom slider, $ProductName$, Infragistics, data chart
-mentionedTypes: ['ZoomSlider, XamDataChart']
+title: {Platform} ZoomSlider | Data Visualization Tools | Navigation | Zooming | DataChart | Data Binding | Infragistics
+_description: Use Infragistics' {Platform} zoom slider control to easily display a subset of data with two handles representing minimum and maximum values. Improve your data visualization with {ProductName} zoom slider!
+_keywords: zoom slider, {ProductName}, Infragistics, data chart
+mentionedTypes: ['ZoomSlider', 'XamDataChart']
 ---
 
-# $Platform$ Zoom Slider Overview
+# {Platform} Zoom Slider Overview
 
-The $Platform$ ZoomSlider control provides zooming functionality to range-enabled controls. The ZoomSlider features a horizontal scroll bar, a thumbnail of the whole range, and a resizable zoom-range window. The ZoomSlider cannot work as a standalone control and it acts as an enhancement for range-based controls like the DataChart or CategoryChart.
+The {Platform} ZoomSlider control provides zooming functionality to range-enabled controls. The ZoomSlider features a horizontal scroll bar, a thumbnail of the whole range, and a resizable zoom-range window. The ZoomSlider cannot work as a standalone control and it acts as an enhancement for range-based controls like the DataChart or CategoryChart.
 
-## $Platform$ Zoom Slider Example
+## {Platform} Zoom Slider Example
 
 The following sample demonstrates how to use `ZoomSlider` to navigate content in `XamDataChart`.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/zoomslider-overview"
-           alt="$Platform$ Zoom Slider Example"
-           github-src="charts/zoomslider/overview">
-</code-view>
+`sample="/charts/zoomslider/overview", height="600", alt="{Platform} Zoom Slider Example"`
+
+
 
 <div class="divider--half"></div>
 
 ## Usage
 
-Feature Name        | Description
---------------------|-----------------------
-Scrollbar navigation       | Users can change scale and scroll through ranges of data using the built-in capabilities of the ZoomSlider scrollbar.
-Panning and zooming       | Users can adjust the display scale by dragging the edges of the thumb pad to either make the current display cover a larger range (zoom out) or a smaller range (zoom in).
-Multiple user interaction options       | All mouse user interactions are redundantly supported through touch and most of them – through the keyboard. For details, see User Interactions and Usability.
-Touch support       |  On touch-enabled devices, users can enjoy the full ZoomSlider functionality. All mouse interactions are supported in touch environment.
-Extensibility       | The ZoomSlider control supports DataChart control out-of the box.
-Configurable zoom-range window       | The initial zoom-range window width and position, as well as its minimum size, are configurable.
+| Feature Name        | Description |
+| --------------------|----------------------- |
+| Scrollbar navigation       | Users can change scale and scroll through ranges of data using the built-in capabilities of the ZoomSlider scrollbar. |
+| Panning and zooming       | Users can adjust the display scale by dragging the edges of the thumb pad to either make the current display cover a larger range (zoom out) or a smaller range (zoom in). |
+| Multiple user interaction options       | All mouse user interactions are redundantly supported through touch and most of them – through the keyboard. For details, see User Interactions and Usability. |
+| Touch support       |  On touch-enabled devices, users can enjoy the full ZoomSlider functionality. All mouse interactions are supported in touch environment. |
+| Extensibility       | The ZoomSlider control supports DataChart control out-of the box. |
+| Configurable zoom-range window       | The initial zoom-range window width and position, as well as its minimum size, are configurable. |
 
 
 <!-- Angular, React, WebComponents -->
 ## Dependencies
-When installing the $Platform$ chart component, the core package must also be installed.
+When installing the {Platform} chart component, the core package must also be installed.
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageCharts}
-</pre>
+```
 <!-- end: Angular, React, WebComponents -->
 
-## Required Modules
+## Component Modules
+
 The `ZoomSlider` requires the following modules:
 
 ```razor
-IgbZoomSliderModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbZoomSliderModule));
 ```
 
 ```ts
@@ -77,7 +78,6 @@ import { IgcZoomSliderModule } from 'igniteui-webcomponents-charts';
 import { IgcZoomSliderComponent } from "igniteui-webcomponents-charts";
 
 IgcZoomSliderModule.register();
-
 ```
 
 ## Code Snippet
@@ -111,7 +111,7 @@ The following code demonstrates how to setup the ZoomSlider.
 
 You can find more information about charts in [Chart Features](charts/chart-features.md) topic.
 
-## API Members
+## API References
 
 The following is a list of API members mentioned in the above sections:
 

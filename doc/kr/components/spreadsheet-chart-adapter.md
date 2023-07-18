@@ -1,22 +1,19 @@
 ---
-title: $Platform$ Spreadsheet | Grid Controls | chart adapter | Infragistics |
+title: {Platform} Spreadsheet | Grid Controls | chart adapter | Infragistics |
 _description: Use the Spreadsheet control to embed Excel document creation and editing experiences right into your application.
-_keywords: Spreadsheet, $ProductName$, Infragistics
+_keywords: Spreadsheet, {ProductName}, Infragistics
 _language: kr
 mentionedTypes: ['Spreadsheet']
 ---
 
-# $Platform$ Spreadsheet Chart Adapter
+# {Platform} Spreadsheet Chart Adapter
 
-The $Platform$ Spreadsheet component allows displaying charts in your `Spreadsheet`.
+The {Platform} Spreadsheet component allows displaying charts in your `Spreadsheet`.
 
 ## Demo
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-adapter"  >
-</code-view>
+`sample="/excel/spreadsheet/adapter", height="500", alt="{Platform} spreadsheet adapter"`
 
 <div class="divider--half"></div>
 
@@ -82,7 +79,7 @@ There are over 35 chart types supported by the Spreadsheet ChartAdapters includi
 
 ## Dependencies
 
-> [!NOTE]
+> [!Note]
 >
 > In the following code snippet, an external [ExcelUtility](excel-utility.md) class is used to save and load a `Workbook`.
 
@@ -170,7 +167,7 @@ ExcelUtility.loadFromUrl(process.env.PUBLIC_URL + "/ExcelFiles/ChartData.xlsx").
 
     const chart1 = sheet.shapes().addChart(ChartType.Line, cell1, { x: 0, y: 0 }, cell1, { x: 100, y: 100 });
 
-    const title: $Platform$ ChartTitle = new ChartTitle();
+    const title: {Platform} ChartTitle = new ChartTitle();
     title.text = new FormattedString("Line Chart");
     chart1.chartTitle = title;
 

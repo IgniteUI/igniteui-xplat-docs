@@ -1,24 +1,21 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | 複数のデータ図形のバインディング | インフラジスティックス
-_description: インフラジスティックスの $Platform$ を使用して、複数の地理的シリーズオブジェクトを追加し、いくつかのシェープファイルを地理空間データとオーバーレイすることができます。$ProductName$ マップ チュートリアルを是非お試しください!
-_keywords: $Platform$ map, shape files, $ProductName$, Infragistics, data binding, $Platform$ マップ, シェープ ファイル, データ バインディング, インフラジスティックス
+title: {Platform} マップ | データ可視化ツール | 複数のデータ図形のバインディング | インフラジスティックス
+_description: インフラジスティックスの {Platform} を使用して、複数の地理的シリーズオブジェクトを追加し、いくつかのシェープファイルを地理空間データとオーバーレイすることができます。{ProductName} マップ チュートリアルを是非お試しください!
+_keywords: {Platform} map, shape files, {ProductName}, Infragistics, data binding, {Platform} マップ, シェープ ファイル, データ バインディング, インフラジスティックス
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 namespace: Infragistics.Controls.Maps
 _language: ja
 ---
-# $Platform$ 複数のシェイプ ファイルのバインドとオーバーレイ
+# {Platform} 複数のシェイプ ファイルのバインドとオーバーレイ
 
-$ProductName$ マップでは、複数の地理的シリーズオブジェクトを追加して、複数のシェープファイルを地理空間データでオーバーレイすることができます。たとえば、港湾の地理的位置をプロットするための `GeographicSymbolSeries`、港湾間のルートをプロットするための `GeographicPolylineSeries`、国の形状をプロットするための `GeographicShapeSeries` などがあります。
+{ProductName} マップでは、複数の地理的シリーズオブジェクトを追加して、複数のシェープファイルを地理空間データでオーバーレイすることができます。たとえば、港湾の地理的位置をプロットするための `GeographicSymbolSeries`、港湾間のルートをプロットするための `GeographicPolylineSeries`、国の形状をプロットするための `GeographicShapeSeries` などがあります。
 
-## $Platform$ 複数のシェイプ ファイルのバインドとオーバーレイの例
+## {Platform} 複数のシェイプ ファイルのバインドとオーバーレイの例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-multiple-shapes"
-           alt="$Platform$ 複数のシェイプ ファイルのバインドとオーバーレイの例"
-           github-src="maps/geo-map/binding-multiple-shapes">
-</code-view>
+`sample="/maps/geo-map/binding-multiple-shapes", height="500", alt="{Platform} 複数のシェイプ ファイルのバインドとオーバーレイの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -73,8 +70,12 @@ import { IgxShapeDataSource } from 'igniteui-angular-core';
 ```
 
 ```razor
-IgbGeographicMapModule.Register(IgniteUIBlazor);
-IgbDataChartInteractivityModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbGeographicMapModule),
+    typeof(IgbDataChartInteractivityModule)
+);
 ```
 
 ## シリーズの作成
@@ -266,8 +267,6 @@ public IgbShapeDataSource EuropeShape;
 
 protected override void OnInitialized()
 {
-    IgbGeographicMapModule.Register(IgniteUIBlazor);
-
     this.AsiaShape = new IgbShapeDataSource()
     {
         ShapefileSource = "https://static.infragistics.com/xplatform/shapes/world_region_asia.shp",
@@ -1035,7 +1034,7 @@ export class MapBindingMultipleShapes extends SampleBase {
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <IgbGeographicShapeSeries ShapefileDataSource="AsiaShape" Outline="Black" Thickness="1" Brush="Red" />
@@ -1049,8 +1048,6 @@ export class MapBindingMultipleShapes extends SampleBase {
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         this.AsiaShape = new IgbShapeDataSource()
         {
             ShapefileSource = "https://static.infragistics.com/xplatform/shapes/world_region_asia.shp",
@@ -1066,7 +1063,7 @@ export class MapBindingMultipleShapes extends SampleBase {
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `GeographicPolylineSeries`
  - `GeographicShapeSeries`

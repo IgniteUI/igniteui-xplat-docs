@@ -1,8 +1,9 @@
 ---
-title: $Platform$ データ視覚化ツール | 作業の開始 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ コンポーネントを使用して、アプリを作成し、世界最速の仮想化されたリアルタイムの $Platform$ データ グリッドとストリーミング ファイナンシャルおよびビジネス チャートを使用して、データの視覚化を向上させます。
-_keywords: $ProductName$, Infragistics, Getting Started, インフラジスティックス, 作業の開始
+title: 作業の開始 | {ProductName} | インフラジスティックス
+_description: インフラジスティックスの {Platform} コンポーネントを使用して、アプリを作成し、世界最速の仮想化されたリアルタイムの {Platform} データ グリッドとストリーミング ファイナンシャルおよびビジネス チャートを使用して、データの視覚化を向上させます。
+_keywords: {ProductName}, Infragistics, Getting Started, インフラジスティックス, 作業の開始
 _language: ja
+mentionedTypes: []
 ---
 # Ignite UI for Blazor WebAssembly で作業を開始
 
@@ -35,15 +36,11 @@ NuGet を使用した Ignite UI for Blazor のインストールの詳細につ�
 
 ### .NET 6 アプリケーション
 
-1 - **Program.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** を呼び出して Ignite UI for Blazor サービスを登録します。
+1 - **Program.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** 関数を呼び出して Ignite UI for Blazor サービスを登録します。
 
-```
+```razor
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
-builder.RootComponents.Add<App>("#app");
-builder.RootComponents.Add<HeadOutlet>("head::after");
-
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-
+// ...
 builder.Services.AddIgniteUIBlazor();
 
 await builder.Build().RunAsync();
@@ -59,14 +56,13 @@ await builder.Build().RunAsync();
 
 ```razor
 <head>
-    ...
     <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 </head>
 ```
 
 ### .NET 5 アプリケーション
 
-1 - **Program.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** を呼び出して Ignite UI for Blazor サービスを登録します。
+1 - **Program.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** 関数を呼び出して Ignite UI for Blazor サービスを登録します。
 
 ```razor
 public static async Task Main(string[] args)
@@ -87,12 +83,11 @@ public static async Task Main(string[] args)
 
 ```razor
 <head>
-    ...
     <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 </head>
 ```
 
-4 - スクリプト参照を **wwwroot/index.html** ファイルに追加します。 
+4 - スクリプト参照を **wwwroot/index.html** ファイルに追加します。
 
 ```razor
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>

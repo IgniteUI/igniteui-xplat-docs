@@ -1,10 +1,10 @@
 ---
-title: $Platform$ Map | World Locations | Data Source | Infragistics
-_description: Use Infragistics' $Platform$ JavaScript map data utility to generate geographic locations of cities and capitals of countries. View $ProductName$ map demos!
-_keywords: $Platform$ map, map data, $ProductName$, Infragistics
+title: {Platform} Map | World Locations | Data Source | Infragistics
+_description: Use Infragistics' {Platform} JavaScript map data utility to generate geographic locations of cities and capitals of countries. View {ProductName} map demos!
+_keywords: {Platform} map, map data, {ProductName}, Infragistics
 mentionedTypes: ['XamGeographicMap']
 ---
-# $Platform$ World Locations
+# {Platform} World Locations
 
 The resource topic provides implementation of data utility for generating geographic locations of cities and capitals of countries.
 
@@ -1290,6 +1290,6 @@ export default class WorldLocations {
     }
 ```
 
- ## API Members
+## API References
 
  - `XamGeographicMap`

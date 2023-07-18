@@ -1,23 +1,20 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | 散布等高線シリーズ | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $Platform$ マップの散布等高線シリーズを使用して、各点に数値が割り当てられた経度および緯度データの三角測量に基づいて、地理的なコンテキストで色付きの等高線を描画します。$ProductName$ マップ シーリズについての詳細を表示します。
-_keywords: $Platform$ map, scatter contour series, $ProductName$, Infragistics, $Platform$ マップ, 散布等高線シリーズ, インフラジスティックス
+title: {Platform} マップ | データ可視化ツール | 散布等高線シリーズ | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの {Platform} マップの散布等高線シリーズを使用して、各点に数値が割り当てられた経度および緯度データの三角測量に基づいて、地理的なコンテキストで色付きの等高線を描画します。{ProductName} マップ シーリズについての詳細を表示します。
+_keywords: {Platform} map, scatter contour series, {ProductName}, Infragistics, {Platform} マップ, 散布等高線シリーズ, インフラジスティックス
 mentionedTypes: ['XamGeographicMap','GeographicContourLineSeries','CustomPaletteColorScale', 'Series']
 _language: ja
 ---
-# $Platform$ 地理等高線マップ
+# {Platform} 地理等高線マップ
 
-$Platform$ マップ コンポーネントでは、`GeographicContourLineSeries` を使用して、各点に数値が割り当てられた経度および緯度データの三角測量に基づいて、地理的なコンテキストで色付きの等高線を描画できます。このタイプの地理的シリーズは、天気の気温、気圧、降水量、人口分布、地形データなどの地理的位置によって定義される散在データをレンダリングするのに役立ちます。
+{Platform} マップ コンポーネントでは、`GeographicContourLineSeries` を使用して、各点に数値が割り当てられた経度および緯度データの三角測量に基づいて、地理的なコンテキストで色付きの等高線を描画できます。このタイプの地理的シリーズは、天気の気温、気圧、降水量、人口分布、地形データなどの地理的位置によって定義される散在データをレンダリングするのに役立ちます。
 
-## $Platform$ 地理等高線マップの例
+## {Platform} 地理等高線マップの例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-contour-series"
-           alt="$Platform$ 散布等高線シリーズの使用の例"
-           github-src="maps/geo-map/type-scatter-contour-series">
-</code-view>
+`sample="/maps/geo-map/type-scatter-contour-series", height="500", alt="{Platform} 散布等高線シリーズの使用の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -231,7 +228,6 @@ export class MapTypeScatterContourSeriesComponent implements AfterViewInit {
         this.map.series.add(contourSeries);
     }
 }
-
 ```
 
 ```html
@@ -303,7 +299,7 @@ createContourSeries(data: any[])
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <IgbGeographicContourLineSeries LongitudeMemberPath="Lon"
@@ -321,8 +317,6 @@ createContourSeries(data: any[])
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         var brushes = "";
         brushes += "rgba(32, 146, 252, 0.5) "; // semi-transparent blue
         brushes += "rgba(14, 194, 14, 0.5) ";  // semi-transparent green
@@ -339,7 +333,7 @@ createContourSeries(data: any[])
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `FillScale`
  - `GeographicContourLineSeries`

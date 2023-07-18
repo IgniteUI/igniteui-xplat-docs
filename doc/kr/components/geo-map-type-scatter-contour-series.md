@@ -1,22 +1,19 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Contour Line Series | Infragistics
+title: {Platform} Map | Data Visualization Tools | Contour Line Series | Infragistics
 _description: The Map allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.View the demo, dependencies, usage and toolbar for more information.
-_keywords: map, $ProductName$, Infragistics
+_keywords: map, {ProductName}, Infragistics
 _language: kr
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
 ---
 
-# $Platform$ Using Scatter Contour Series
+# {Platform} Using Scatter Contour Series
 
 Use the map component's `GeographicContourLineSeries` to draw colored contour lines, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. This type of geographic series is useful for rendering scattered data defined by geographic locations such as weather temperature, atmospheric pressure, precipitation, population distribution, topographic data, etc.
 
 ## Demo
 
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-contour-series"  >
-</code-view>
+`sample="/maps/geo-map/type-scatter-contour-series", height="400", alt="{Platform} geo map type scatter contour series"`
 
 <div class="divider--half"></div>
 

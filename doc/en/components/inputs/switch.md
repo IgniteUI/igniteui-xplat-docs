@@ -1,21 +1,18 @@
 ---
-title: $Platform$ Switch Component – $ProductName$
-_description: $ProductName$ Switch component enables developers to use binary on/off or true/false data input functions within their applications.
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Switch components, $Platform$ Switch controls
+title: {Platform} Switch Component – {ProductName}
+_description: {ProductName} Switch component enables developers to use binary on/off or true/false data input functions within their applications.
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Switch components, {Platform} Switch controls
 mentionedTypes: ['Switch']
 ---
 
-# $Platform$ Switch
+# {Platform} Switch
 
-The $ProductName$ Switch component is a binary choice selection component that behaves similarly to the switch component in iOS.
+The {ProductName} Switch component is a binary choice selection component that behaves similarly to the switch component in iOS.
 
-## $Platform$ Switch Example
+## {Platform} Switch Example
 
-<code-view style="height:100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/switches-overview" alt="$Platform$ Switch Example"
-           github-src="inputs/switches/overview">
-</code-view>
+`sample="/inputs/switches/overview", height="100", alt="{Platform} Switch Example"`
+
 
 <div class="divider--half"></div>
 
@@ -24,7 +21,7 @@ The $ProductName$ Switch component is a binary choice selection component that b
 At its core, the `Switch` component allows for toggling between on/off states. The default styling is done according to the selection controls specification in the Material Design guidelines.
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -41,7 +38,7 @@ defineComponents(IgcSwitchComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -60,8 +57,11 @@ IgrSwitchModule.register();
 
 Before using the `Switch`, you need to register it as follows:
 
+
 ```razor
-IgbSwitchModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 ```
 
 You will also need to link an additional CSS file to apply the styling to the `Switch` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
@@ -138,12 +138,9 @@ The switch can also be labelled by elements external to the switch. In this case
 <IgbSwitch AriaLabelledBy="switch-label" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-label"
-           alt="$Platform$ Avatar Example"
-           github-src="inputs/switches/label">
-</code-view>
+`sample="/inputs/switches/label", height="100", alt="{Platform} Avatar Example"`
+
+
 
 ### Checked
 
@@ -161,12 +158,9 @@ You can use the `checked` attribute to toggle on the switch.
 <IgbSwitch Checked="true" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-checking"
-           alt="$Platform$ Avatar Example"
-           github-src="inputs/switches/checking">
-</code-view>
+`sample="/inputs/switches/checking", height="100", alt="{Platform} Avatar Example"`
+
+
 
 ### Required
 
@@ -212,12 +206,9 @@ You can use the `disabled` attribute to disable the switch.
 <IgbSwitch Disabled="true" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-disabled"
-           alt="$Platform$ Avatar Example"
-           github-src="inputs/switches/disabled">
-</code-view>
+`sample="/inputs/switches/disabled", height="100", alt="{Platform} Avatar Example"`
+
+
 
 ### Forms
 
@@ -252,39 +243,16 @@ igc-switch::part(thumb) {
 }
 ```
 
-<!-- WebComponents -->
-
-## API Reference
-
-* `Switch`
-
-<!-- end: WebComponents -->
-
 <div class="divider--half"></div>
 
-## Additional Resources
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React -->
-
- ## API Members
+## API References
 
  - `Form`
  - `LabelPosition`
  - `Switch`
+
+## Additional Resources
+
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

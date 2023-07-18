@@ -17,6 +17,11 @@
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"yAxisActualMaximum"}],"originalName":"YAxisActualMaximum"},
     { "names":[{"platform":"Angular","mappedType":"FinancialChartVolumeType","mappedName":"volumeType"}],"originalName":"VolumeType"},
     { "names":[{"platform":"Angular","mappedType":"FinancialChartXAxisMode","mappedName":"xAxisMode"}],"originalName":"XAxisMode"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"xAxisZoomMaximumCategoryRange"}],"originalName":"XAxisZoomMaximumCategoryRange"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"xAxisZoomToCategoryStart"}],"originalName":"XAxisZoomToCategoryStart"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"xAxisZoomMaximumItemSpan"}],"originalName":"XAxisZoomMaximumItemSpan"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"xAxisZoomToCategoryRange"}],"originalName":"XAxisZoomToCategoryRange"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"xAxisZoomToItemSpan"}],"originalName":"XAxisZoomToItemSpan"},
     { "names":[{"platform":"Angular","mappedType":"FinancialChartYAxisMode","mappedName":"yAxisMode"}],"originalName":"YAxisMode"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isToolbarVisible"}],"originalName":"IsToolbarVisible"},
     { "names":[{"platform":"Angular","mappedType":"FinancialChartType","mappedName":"chartType"}],"originalName":"ChartType"},
@@ -61,7 +66,7 @@
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyRemoveItem"}],"originalName":"NotifyRemoveItem"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyClearItems"}],"originalName":"NotifyClearItems"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifySetItem"}],"originalName":"NotifySetItem"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"exportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"XYChart","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"exportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"XYChart","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialChartRangeSelectorOption","isEnum":true,
     "names":[{"platform":"Angular","fileName":"FinancialChartRangeSelectorOption.ts","mappedName":"FinancialChartRangeSelectorOption"}],
     "members":[
@@ -71,12 +76,12 @@
     { "names":[{"platform":"Angular","mappedType":"FinancialChartRangeSelectorOption","mappedName":"YearToDate"}],"originalName":"YearToDate"},
     { "names":[{"platform":"Angular","mappedType":"FinancialChartRangeSelectorOption","mappedName":"OneYear"}],"originalName":"OneYear"},
     { "names":[{"platform":"Angular","mappedType":"FinancialChartRangeSelectorOption","mappedName":"All"}],"originalName":"All"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialChartCustomIndicatorArgs",
     "names":[{"platform":"Angular","fileName":"igx-financial-chart-custom-indicator-args.ts","mappedName":"IgxFinancialChartCustomIndicatorArgs"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"IgxSeriesComponent","mappedName":"series"}],"originalName":"Series"},
-    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"index"}],"originalName":"Index"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"index"}],"originalName":"Index"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialChartVolumeType","isEnum":true,
     "names":[{"platform":"Angular","fileName":"FinancialChartVolumeType.ts","mappedName":"FinancialChartVolumeType"}],
     "members":[
@@ -84,7 +89,7 @@
     { "names":[{"platform":"Angular","mappedType":"FinancialChartVolumeType","mappedName":"Column"}],"originalName":"Column"},
     { "names":[{"platform":"Angular","mappedType":"FinancialChartVolumeType","mappedName":"Line"}],"originalName":"Line"},
     { "names":[{"platform":"Angular","mappedType":"FinancialChartVolumeType","mappedName":"Area"}],"originalName":"Area"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialChartType","isEnum":true,
     "names":[{"platform":"Angular","fileName":"FinancialChartType.ts","mappedName":"FinancialChartType"}],
     "members":[
@@ -93,19 +98,19 @@
     { "names":[{"platform":"Angular","mappedType":"FinancialChartType","mappedName":"Candle"}],"originalName":"Candle"},
     { "names":[{"platform":"Angular","mappedType":"FinancialChartType","mappedName":"Column"}],"originalName":"Column"},
     { "names":[{"platform":"Angular","mappedType":"FinancialChartType","mappedName":"Line"}],"originalName":"Line"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialChartXAxisMode","isEnum":true,
     "names":[{"platform":"Angular","fileName":"FinancialChartXAxisMode.ts","mappedName":"FinancialChartXAxisMode"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"FinancialChartXAxisMode","mappedName":"Ordinal"}],"originalName":"Ordinal"},
     { "names":[{"platform":"Angular","mappedType":"FinancialChartXAxisMode","mappedName":"Time"}],"originalName":"Time"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialChartYAxisMode","isEnum":true,
     "names":[{"platform":"Angular","fileName":"FinancialChartYAxisMode.ts","mappedName":"FinancialChartYAxisMode"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"FinancialChartYAxisMode","mappedName":"Numeric"}],"originalName":"Numeric"},
     { "names":[{"platform":"Angular","mappedType":"FinancialChartYAxisMode","mappedName":"PercentChange"}],"originalName":"PercentChange"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialChartZoomSliderType","isEnum":true,
     "names":[{"platform":"Angular","fileName":"FinancialChartZoomSliderType.ts","mappedName":"FinancialChartZoomSliderType"}],
     "members":[
@@ -116,13 +121,13 @@
     { "names":[{"platform":"Angular","mappedType":"FinancialChartZoomSliderType","mappedName":"Column"}],"originalName":"Column"},
     { "names":[{"platform":"Angular","mappedType":"FinancialChartZoomSliderType","mappedName":"Line"}],"originalName":"Line"},
     { "names":[{"platform":"Angular","mappedType":"FinancialChartZoomSliderType","mappedName":"Area"}],"originalName":"Area"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialOverlayType","isEnum":true,
     "names":[{"platform":"Angular","fileName":"FinancialOverlayType.ts","mappedName":"FinancialOverlayType"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"FinancialOverlayType","mappedName":"BollingerBands"}],"originalName":"BollingerBands"},
     { "names":[{"platform":"Angular","mappedType":"FinancialOverlayType","mappedName":"PriceChannel"}],"originalName":"PriceChannel"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialIndicatorType","isEnum":true,
     "names":[{"platform":"Angular","fileName":"FinancialIndicatorType.ts","mappedName":"FinancialIndicatorType"}],
     "members":[
@@ -160,4 +165,4 @@
     { "names":[{"platform":"Angular","mappedType":"FinancialIndicatorType","mappedName":"UltimateOscillator"}],"originalName":"UltimateOscillator"},
     { "names":[{"platform":"Angular","mappedType":"FinancialIndicatorType","mappedName":"WeightedClose"}],"originalName":"WeightedClose"},
     { "names":[{"platform":"Angular","mappedType":"FinancialIndicatorType","mappedName":"WilliamsPercentR"}],"originalName":"WilliamsPercentR"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

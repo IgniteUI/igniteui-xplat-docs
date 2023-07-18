@@ -1,23 +1,20 @@
 ---
-title: $Platform$ Excel ライブラリ | ワークシートの使用 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ Excel ライブラリを使用してワークシートの行やセルにデータを入力でき、対応する値を設定できます。$ProductName$ Excel からアプリケーションへデータを簡単に転送できます。
-_keywords: Excel library, worksheet, $ProductName$, Infragistics, Excel ライブラリ, ワークシート, インフラジスティックス
+title: {Platform} Excel ライブラリ | ワークシートの使用 | インフラジスティックス
+_description: インフラジスティックスの {Platform} Excel ライブラリを使用してワークシートの行やセルにデータを入力でき、対応する値を設定できます。{ProductName} Excel からアプリケーションへデータを簡単に転送できます。
+_keywords: Excel library, worksheet, {ProductName}, Infragistics, Excel ライブラリ, ワークシート, インフラジスティックス
 mentionedTypes: ['Workbook', 'Worksheet', 'WorksheetCell', 'DisplayOptions', 'WorksheetFilterSettings', 'IWorksheetCellFormat']
 _language: ja
 ---
-# $Platform$ ワークシートの使用
+# {Platform} ワークシートの使用
 
-$Platform$ Excel Engine の `Worksheet` にデータが保存されます。Worksheet の行やセルにデータを入力でき、対応する値を設定できます。`Worksheet` は、フィルター、ソート、セル書式のカスタマイズができます。
+{Platform} Excel Engine の `Worksheet` にデータが保存されます。Worksheet の行やセルにデータを入力でき、対応する値を設定できます。`Worksheet` は、フィルター、ソート、セル書式のカスタマイズができます。
 
-## $Platform$ ワークシートの使用の例
+## {Platform} ワークシートの使用の例
 
 
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-worksheets"
-           alt="$Platform$ ワークシートの使用の例"
-           github-src="excel/excel-library/operations-on-worksheets">
-</code-view>
+`sample="/excel/excel-library/operations-on-worksheets", height="200", alt="{Platform} ワークシートの使用の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -79,7 +76,7 @@ worksheet.DisplayOptions.GridlineColor = Core.Graphics.Colors.Red;
 ## ヘッダーの構成
 列ヘッダーと行ヘッダーは、列と行を視覚的に特定するために使用します。また、現在選択されているセルやセル領域を強調表示する場合にも使用します。
 
-列と行のヘッダーは、ワークシートの `DisplayOptions`  の `ShowRowAndColumnHeaders` プロパティを使用して、表示と非表示を切り替えることができます。以下のコードは、列と行ヘッダーを非表示にする方法を示します。
+列と行のヘッダーは、ワークシートの `DisplayOptions` の `ShowRowAndColumnHeaders` プロパティを使用して、表示と非表示を切り替えることができます。以下のコードは、列と行ヘッダーを非表示にする方法を示します。
 
 ```ts
 var workbook = new Workbook(WorkbookFormat.Excel2007);
@@ -286,7 +283,7 @@ worksheet.Protect();
 ## ワークシートの条件付き書式設定
 `Worksheet` の条件付き書式を設定するには、ワークシートの `ConditionalFormats` コレクションで公開される多数の Add メソッドを使用できます。この Add メソッドの最初のパラメーターは条件付き書式に適用する Worksheet の `string` 領域です。
 
-Worksheet に追加可能な条件付き書式にその条件が true の場合に `WorksheetCell`  要素の外観を決定する `CellFormat` プロパティがあります。たとえば、`Fill` や `Font` などのこの `CellFormat` プロパティにアタッチされるプロパティを使用してセルの背景およびフォント設定を決定できます。
+Worksheet に追加可能な条件付き書式にその条件が true の場合に `WorksheetCell` 要素の外観を決定する `CellFormat` プロパティがあります。たとえば、`Fill` や `Font` などのこの `CellFormat` プロパティにアタッチされるプロパティを使用してセルの背景およびフォント設定を決定できます。
 
 ワークシート セルの可視化の動作が異なるため、`CellFormat` プロパティがない条件付き書式もあります。この条件付き書式は `DataBarConditionalFormat`、`ColorScaleConditionalFormat`、`IconSetConditionalFormat` です。
 
@@ -313,7 +310,7 @@ var format = worksheet.ConditionalFormats.AddAverageCondition("A1:A10", Document
 format.CellFormat.Font.ColorInfo = new WorkbookColorInfo(Core.Graphics.Colors.Red);
 ```
 
-## API メンバー
+## API リファレンス
 
  - `CellFormat`
  - `ColorScaleConditionalFormat`

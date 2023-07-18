@@ -5,11 +5,14 @@ npm-debug.log
 .DS_Store
 dist
 dist_BK
-test
 src/**/*.js
 src/**/*.js.map
+test/**/*.js
+test/**/*.js.map
 
 doc/**/obsolete
+
+samples-*.json
 
 # excluding auto-generated files:
 docfx/**/components/toc_*.json
@@ -20,3 +23,20 @@ docfx/**/web.config
 # package-lock.json
 
 _exported_templates
+
+_angular-org-grids
+
+# shared-files-start
+doc/en/components/grids/grid/template.md
+doc/en/components/grids/tree-grid/template.md
+doc/en/components/grids/pivot-grid/template.md
+doc/en/components/grids/hierarchical-grid/template.md
+doc/jp/components/grids/grid/template.md
+doc/jp/components/grids/tree-grid/template.md
+doc/jp/components/grids/pivot-grid/template.md
+doc/jp/components/grids/hierarchical-grid/template.md
+doc/kr/components/grids/grid/template.md
+doc/kr/components/grids/tree-grid/template.md
+doc/kr/components/grids/pivot-grid/template.md
+doc/kr/components/grids/hierarchical-grid/template.md
+# shared-files-end

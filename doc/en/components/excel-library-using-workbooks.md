@@ -1,22 +1,19 @@
 ---
-title: $Platform$ Excel Library| Using Workbooks| Infragistics
-_description: Use Infragistics' $Platform$ excel library to create workbooks and worksheets, input data and export the date to Microsoft® Excel. View $ProductName$ excel tutorials for more information!
-_keywords: Excel library, workbooks, $ProductName$, Infragistics
+title: {Platform} Excel Library| Using Workbooks| Infragistics
+_description: Use Infragistics' {Platform} excel library to create workbooks and worksheets, input data and export the date to Microsoft® Excel. View {ProductName} excel tutorials for more information!
+_keywords: Excel library, workbooks, {ProductName}, Infragistics
 mentionedTypes: ['Workbook']
 ---
-# $Platform$ Using Workbooks
+# {Platform} Using Workbooks
 
-The Infragistics $Platform$ Excel Engine enables you to save data to and load data from Microsoft® Excel®. You can create workbooks and worksheets, input data, and export the data to Excel using the library’s various classes. The Infragistics $Platform$ Excel Engine makes it easy to export the data in your application as an Excel spreadsheet as well as import data from Excel into your application.
+The Infragistics {Platform} Excel Engine enables you to save data to and load data from Microsoft® Excel®. You can create workbooks and worksheets, input data, and export the data to Excel using the library’s various classes. The Infragistics {Platform} Excel Engine makes it easy to export the data in your application as an Excel spreadsheet as well as import data from Excel into your application.
 
-## $Platform$ Using Workbooks Example
+## {Platform} Using Workbooks Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-workbooks"
-           alt="$Platform$ Using Workbooks Example"
-           github-src="excel/excel-library/operations-on-workbooks">
-</code-view>
+`sample="/excel/excel-library/operations-on-workbooks", height="500", alt="{Platform} Using Workbooks Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -41,7 +38,7 @@ font.Height = 16 * 20;
 
 ## Setting Workbook Properties
 
-Microsoft Excel® document properties provide information to help organize and keep track of your documents. You can use the Infragistics $Platform$ Excel Library to set these properties using the `Workbook` object’s `DocumentProperties` property. The available properties are:
+Microsoft Excel® document properties provide information to help organize and keep track of your documents. You can use the Infragistics {Platform} Excel Library to set these properties using the `Workbook` object’s `DocumentProperties` property. The available properties are:
 
 - `Author`
 
@@ -123,7 +120,7 @@ var workbook = new Workbook();
 var protect = workbook.Protection;
 ```
 
- ## API Members
+## API References
 
  - `DocumentProperties`
  - `WorkbookProtection`

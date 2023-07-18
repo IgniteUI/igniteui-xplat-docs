@@ -1,30 +1,27 @@
 ---
-title: $Platform$ Snackbar | Infragistics
-_description: With $ProductName$ Snackbar component, developers can easily integrate a brief, single-line message within mobile and desktop applications.
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Snackbar components
+title: {Platform} Snackbar | Infragistics
+_description: With {ProductName} Snackbar component, developers can easily integrate a brief, single-line message within mobile and desktop applications.
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Snackbar components
 mentionedTypes: ['Snackbar']
 ---
 
-# $Platform$ Snackbar
+# {Platform} Snackbar
 
-The $ProductName$ Snackbar component is used to provide feedback about an operation by showing a brief message at the bottom of the screen.
+The {ProductName} Snackbar component is used to provide feedback about an operation by showing a brief message at the bottom of the screen.
 
-## $ProductName$ Snackbar Example
+## {ProductName} Snackbar Example
 
 This sample demonstrates how to create `Snackbar` component.
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/snackbar-overview" alt="$Platform$ Snackbar Example"
-           github-src="notifications/snackbar/overview">
-</code-view>
+`sample="/notifications/snackbar/overview", height="230", alt="{Platform} Snackbar Example"`
+
 
 <div class="divider--half"></div>
 
 ### Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -33,7 +30,7 @@ npm install {PackageWebComponents}
 
 <!-- React -->
 
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -52,8 +49,11 @@ IgrSnackbarModule.register();
 
 Before using the `Snackbar`, you need to register it as follows:
 
+
 ```razor
-IgbSnackbarModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbSnackbarModule));
 ```
 
 <!-- Blazor -->
@@ -84,15 +84,6 @@ The simplest way to display the snackbar component is to use its `Show` method a
     <IgbButton onclick="snackbar.show()">Show Snackbar</IgbButton>
     <IgbSnackbar id="snackbar"> Snackbar Message </IgbSnackbar>
 </div>
-
-@code {
-
-    protected override void OnInitialized()
-    {
-        IgbSnackbarModule.Register(IgniteUIBlazor);
-        IgbButtonModule.Register(IgniteUIBlazor);
-    }
-}
 ```
 
 ```tsx
@@ -103,12 +94,12 @@ The simplest way to display the snackbar component is to use its `Show` method a
     <span>Snackbar Message</span>
 </IgrSnackbar>
 
-public onSnackbarRef(snackbar: IgrSnackbar){
+public onSnackbarRef(snackbar: IgrSnackbar) {
     if (!snackbar) { return; }
     this.snackbarRef = snackbar;
 }
 public onShowButtonClicked() {
-    if(this.snackbarRef){
+    if (this.snackbarRef) {
         this.snackbarRef.show();
     }
 }
@@ -120,23 +111,17 @@ public onShowButtonClicked() {
 
 Use the `DisplayTime` property to configure how long the snackbar component is visible. By default, it's set to 4000 milliseconds.
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/notifications/snackbar-display-time"
-           alt="$Platform$ Snackbar Display Time Example"
-           github-src="notifications/snackbar/display-time">
-</code-view>
+`sample="/notifications/snackbar/display-time", height="230", alt="{Platform} Snackbar Display Time Example"`
+
+
 
 ### Action Text
 
 By default, the snackbar component is hidden automatically after a period specified by the `DisplayTime`. You can use `KeepOpen` property to change this behavior. In this way, the snackbar will remain visible. Using the snackbar `ActionText` you can display an action button inside the component.
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/notifications/snackbar-action-text"
-           alt="$Platform$ Sanckbar Action Text Example"
-           github-src="notifications/snackbar/action-text">
-</code-view>
+`sample="/notifications/snackbar/action-text", height="230", alt="{Platform} Sanckbar Action Text Example"`
+
+
 
 ## Styling
 
@@ -150,46 +135,20 @@ igc-snackbar::part(base) {
 }
 ```
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/notifications/snackbar-styling"
-           alt="$Platform$ Sanckbar Styling Example"
-           github-src="notifications/snackbar/styling">
-</code-view>
-
-## API Reference
-
-* `Snackbar`
+`sample="/notifications/snackbar/styling", height="230", alt="{Platform} SnackBar Styling Example"`
 
 <div class="divider--half"></div>
 
-## Additional Resources
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React Examples on **GitHub**](https://github.com/IgniteUI/igniteui-react-examples)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
- ## API Members
+## API References
 
  - `ActionText`
  - `DisplayTime`
  - `KeepOpen`
  - `Show`
  - `Snackbar`
+
+## Additional Resources
+
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

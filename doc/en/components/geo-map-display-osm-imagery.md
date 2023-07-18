@@ -1,23 +1,20 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Displaying Open Street Maps Imagery | Infragistics
-_description: Use Infragistics' $Platform$ to display imagery from OSM maps. View $ProductName$ map tutorials!
-_keywords: $Platform$ map, OSM, $ProductName$, Infragistics, imagery tile source, map background
+title: {Platform} Map | Data Visualization Tools | Displaying Open Street Maps Imagery | Infragistics
+_description: Use Infragistics' {Platform} to display imagery from OSM maps. View {ProductName} map tutorials!
+_keywords: {Platform} map, OSM, {ProductName}, Infragistics, imagery tile source, map background
 mentionedTypes: ['XamGeographicMap']
 ---
-# $Platform$ Displaying Imagery from Open Street Maps
+# {Platform} Displaying Imagery from Open Street Maps
 
-The $Platform$ `OpenStreetMapImagery` is a free geographic imagery mapping service created collaboratively by OpenStreetMap© contributors from around the world. It provides geographic imagery tiles of the world only in road map style without any configuration options. This geographic imagery service can be accessed directly on <a href="http://www.openstreetmap.org" target="_blank">www.OpenStreetMap.org</a> web site.
-By the default, the $ProductName$ map component already displays geographic imagery from the Open Street Maps. Therefore, there is no need to configure the control to display geographic imagery from the Open Street Maps.
+The {Platform} `OpenStreetMapImagery` is a free geographic imagery mapping service created collaboratively by OpenStreetMap© contributors from around the world. It provides geographic imagery tiles of the world only in road map style without any configuration options. This geographic imagery service can be accessed directly on <a href="http://www.openstreetmap.org" target="_blank">www.OpenStreetMap.org</a> web site.
+By the default, the {ProductName} map component already displays geographic imagery from the Open Street Maps. Therefore, there is no need to configure the control to display geographic imagery from the Open Street Maps.
 
-## $Platform$ Displaying Imagery from Open Street Maps Example
+## {Platform} Displaying Imagery from Open Street Maps Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-osm-imagery"
-           alt="$Platform$ Displaying Imagery from Open Street Maps Example"
-           github-src="maps/geo-map/display-osm-imagery">
-</code-view>
+`sample="/maps/geo-map/display-osm-imagery", height="500", alt="{Platform} Displaying Imagery from Open Street Maps Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -79,13 +76,12 @@ this.geoMap.backgroundContent = mapImagery;
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
         this.OSMImagery = new IgbOpenStreetMapImagery();
     }
 }
 ```
 
- ## API Members
+## API References
 
  - `BackgroundContent`
  - `OpenStreetMapImagery`

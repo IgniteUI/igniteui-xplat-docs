@@ -1,30 +1,27 @@
 ---
-title: $Platform$ Navbar | Infragistics
-_description: Infragistics' $Platform$ navbar provides optimal UI experience with seamless integration to allow users to move within an application smoothly. Improve your application with Ignite UI for  $Platform$!
-_keywords: $Platform$ navbar, $ProductName$, Infragistics
+title: {Platform} Navbar | Infragistics
+_description: Infragistics' {Platform} navbar provides optimal UI experience with seamless integration to allow users to move within an application smoothly. Improve your application with Ignite UI for  {Platform}!
+_keywords: {Platform} navbar, {ProductName}, Infragistics
 mentionedTypes: ['Navbar']
 ---
 
-# $Platform$ Navbar Overview
+# {Platform} Navbar Overview
 
-The $ProductName$ Navbar informs the user of their current position in an app. The Navigation Bar can also provide links to quick actions such as search or favorite, helping users navigate smoothly through an application without trying to move to invalid routes or states. The bar sits at the top of the container it is placed in.
+The {ProductName} Navbar informs the user of their current position in an app. The Navigation Bar can also provide links to quick actions such as search or favorite, helping users navigate smoothly through an application without trying to move to invalid routes or states. The bar sits at the top of the container it is placed in.
 
 
-## $Platform$ Navbar Example
+## {Platform} Navbar Example
 
 The following example represents a `Navbar` with icons and text header:
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-overview"
-           alt="$Platform$ Navbar Overview Example"
-           github-src="menus/nav-bar/overview">
-</code-view>
+`sample="/menus/nav-bar/overview", height="100", alt="{Platform} Navbar Overview Example"`
+
+
 
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -33,8 +30,11 @@ npm install {PackageWebComponents}
 
 Before using the `Navbar`, you need to register it as follows:
 
+
 ```razor
-IgbNavbarModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbNavbarModule));
 ```
 
 ```ts
@@ -55,7 +55,7 @@ You will also need to link an additional CSS file to apply the styling to the `N
 
 <!-- React -->
 
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -96,13 +96,7 @@ Then in the template of `Navbar`, you can add the following code to show a basic
 
 You can added some `Icon` elements using the `Start` and `End` slots to the`Navbar` as it is shown in the following sample:
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-overview"
-           alt="$Platform$ Navbar Styling Example"
-           github-src="menus/nav-bar/overview">
-</code-view>
-
+`sample="/menus/nav-bar/overview", height="100", alt="{Platform} Navbar Styling Example"`
 
 ## Styling
 
@@ -133,54 +127,18 @@ igc-navbar::part(end) {
 
 If all went well, you should see the following in your browser:
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-styling"
-           alt="$Platform$ Navbar Styling Example"
-           github-src="menus/nav-bar/styling">
-</code-view>
-
-<!-- WebComponents -->
-
-## API References
-
-For more detailed information regarding the navbar's API, refer to the following links:
-* `Navbar`
-
-Additional components and/or directives that were used:
-* `Icon`
-
-<!-- end: WebComponents -->
+`sample="/menus/nav-bar/styling", height="100", alt="{Platform} Navbar Styling Example"`
 
 <div class="divider"></div>
 
-## Additional Resources
 
-Our community is active and always welcoming to new ideas.
-
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
- ## API Members
+## API References
 
  - `End`
  - `Icon`
  - `Navbar`
+
+## Additional Resources
+
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

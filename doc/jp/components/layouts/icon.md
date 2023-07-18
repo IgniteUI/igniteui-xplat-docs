@@ -1,29 +1,26 @@
 ---
-title: $Platform$ Icon コンポーネント | $ProductName$
-_description: $Platform$ Icon コンポーネントを簡単に使い始める方法をご覧ください。アイコンを選択し、さまざまなスタイル設定オプションから選択して、さらにカスタマイズします。
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Icon components, $Platform$ Icon controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Switch コンポーネント, $Platform$ Icon コントロール
+title: {Platform} Icon コンポーネント | {ProductName}
+_description: {Platform} Icon コンポーネントを簡単に使い始める方法をご覧ください。アイコンを選択し、さまざまなスタイル設定オプションから選択して、さらにカスタマイズします。
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Icon components, {Platform} Icon controls, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Switch コンポーネント, {Platform} Icon コントロール
 mentionedTypes: ['Icon']
 _language: ja
 ---
 
-# $Platform$ Icon (アイコン) の概要
+# {Platform} Icon (アイコン) の概要
 
-$Platform$ Icon コンポーネントを使用すると、フォントを簡単に表示したり、事前定義された SVG アイコンの大規模なセットから選択したりできます。プロジェクトのカスタム フォント アイコンを作成することもできます。多数の属性を利用して、使用中のアイコンのサイズを定義または変更したり、さまざまなスタイルをアイコンに適用したりできます。
+{Platform} Icon コンポーネントを使用すると、フォントを簡単に表示したり、事前定義された SVG アイコンの大規模なセットから選択したりできます。プロジェクトのカスタム フォント アイコンを作成することもできます。多数の属性を利用して、使用中のアイコンのサイズを定義または変更したり、さまざまなスタイルをアイコンに適用したりできます。
 
-## $Platform$ Icon の例
+## {Platform} Icon の例
 
-<code-view style="height: 60px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/icon-sizing" alt="$Platform$ Icon の例"
-           github-src="layouts/icon/sizing">
-</code-view>
+`sample="/layouts/icon/sizing", height="60", alt="{Platform} Icon の例"`
+
 
 <div class="divider--half"></div>
 
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります。
 
 ```cmd
 npm install {PackageWebComponents}
@@ -39,13 +36,16 @@ defineComponents(IgcIconComponent);
 
 `Icon` を使用する前に、次のように登録する必要があります:
 
+
 ```razor
-IgbIconModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbIconModule));
 ```
 
 <!-- React -->
 
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -134,11 +134,11 @@ registerIcon(
 
 <IgrIcon ref={this.iconRef} iconName="search" collection="material" />
 
-public iconRef(icon: IgrIcon){
-    if(!icon){
+public iconRef(icon: IgrIcon) {
+    if (!icon) {
         return;
     }
-              
+
     icon.registerIcon("search", "https://unpkg.com/material-design-icons@3.0.1/action/svg/production/ic_build_24px.svg", "material");
 }
 ```
@@ -192,14 +192,14 @@ registerIconFromText("search", searchIcon, "material");
 
 <IgrIcon ref={this.iconRef} iconName="search" collection="material" />
 
-public iconRef(icon: IgrIcon){
-    if(!icon){
+public iconRef(icon: IgrIcon) {
+    if (!icon) {
         return;
     }
 
     const searchIcon =
       '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>';
-              
+
     icon.registerIconFromText("search", searchIcon, "material");
 }
 ```
@@ -222,11 +222,8 @@ public iconRef(icon: IgrIcon){
 <IgrIcon size="large" />
 ```
 
-<code-view style="height: 60px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/icon-sizing" alt="$Platform$ Icon のサイズ変更"
-           github-src="layouts/icon/sizing">
-</code-view>
+`sample="/layouts/icon/sizing", height="60", alt="{Platform} Icon のサイズ変更"`
+
 
 ### Mirrored (ミラー化済み)
 
@@ -255,44 +252,14 @@ igc-icon {
 }
 ```
 
-<code-view style="height: 70px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/icon-styling" alt="$Platform$ Icon のサイズ変更"
-           github-src="layouts/icon/styling">
-</code-view>
-
-<!-- WebComponents -->
+`sample="/layouts/icon/styling", height="70", alt="{Platform} Icon のサイズ変更"`
 
 ## API リファレンス
 
-* `Icon`
-
-<!-- end: WebComponents -->
+ - `Icon`
+ - `RegisterIcon`
 
 ## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [GitHub の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [GitHub の Ignite UI for React の例 (英語)](https://github.com/IgniteUI/igniteui-react-examples)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-## API メンバー
-
- - `Icon`
- - `RegisterIcon`
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

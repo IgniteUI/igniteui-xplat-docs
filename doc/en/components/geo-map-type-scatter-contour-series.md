@@ -1,22 +1,19 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Scatter Contour Series | Data Binding | Infragistics
-_description: Use Infragistics $Platform$ map's scatter contour series to draw colored contour lines, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. Learn more about $ProductName$ map's series!
-_keywords: $Platform$ map, scatter contour series, $ProductName$, Infragistics
+title: {Platform} Map | Data Visualization Tools | Scatter Contour Series | Data Binding | Infragistics
+_description: Use Infragistics {Platform} map's scatter contour series to draw colored contour lines, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. Learn more about {ProductName} map's series!
+_keywords: {Platform} map, scatter contour series, {ProductName}, Infragistics
 mentionedTypes: ['XamGeographicMap','GeographicContourLineSeries','CustomPaletteColorScale', 'Series']
 ---
-# $Platform$ Geographic Contour Map
+# {Platform} Geographic Contour Map
 
-In $Platform$ map component, you can use the `GeographicContourLineSeries` to draw colored contour lines, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. This type of geographic series is useful for rendering scattered data defined by geographic locations such as weather temperature, atmospheric pressure, precipitation, population distribution, topographic data, etc.
+In {Platform} map component, you can use the `GeographicContourLineSeries` to draw colored contour lines, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. This type of geographic series is useful for rendering scattered data defined by geographic locations such as weather temperature, atmospheric pressure, precipitation, population distribution, topographic data, etc.
 
-## $Platform$ Geographic Contour Map Example
+## {Platform} Geographic Contour Map Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-contour-series"
-           alt="$Platform$ Using Scatter Contour Series Example"
-           github-src="maps/geo-map/type-scatter-contour-series">
-</code-view>
+`sample="/maps/geo-map/type-scatter-contour-series", height="500", alt="{Platform} Using Scatter Contour Series Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -230,7 +227,6 @@ export class MapTypeScatterContourSeriesComponent implements AfterViewInit {
         this.map.series.add(contourSeries);
     }
 }
-
 ```
 
 ```html
@@ -302,7 +298,7 @@ createContourSeries(data: any[])
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <IgbGeographicContourLineSeries LongitudeMemberPath="Lon"
@@ -320,8 +316,6 @@ createContourSeries(data: any[])
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         var brushes = "";
         brushes += "rgba(32, 146, 252, 0.5) "; // semi-transparent blue
         brushes += "rgba(14, 194, 14, 0.5) ";  // semi-transparent green
@@ -338,7 +332,7 @@ createContourSeries(data: any[])
 }
 ```
 
- ## API Members
+## API References
 
  - `FillScale`
  - `GeographicContourLineSeries`

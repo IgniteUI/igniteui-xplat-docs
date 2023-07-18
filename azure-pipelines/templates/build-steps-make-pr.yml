@@ -1,0 +1,66 @@
+parameters:
+  - name: buildType
+  - name: platform
+  - name: language
+  - name: primaryRepoWorkDir
+  - name: isVerbose
+    default: false
+
+steps:
+  - task: Npm@1
+    displayName: 'Build ${{ parameters.platform }} ${{ parameters.buildType }} ${{ parameters.language }}'
+    inputs:
+      command: custom
+      workingDir: '${{ parameters.primaryRepoWorkDir }}'
+      verbose: ${{ parameters.isVerbose }}
+      customCommand: 'run build${{ parameters.platform }} -- --plat=${{ parameters.platform }} --lang=${{ parameters.language }}'
+
+  - checkout: IgniteUIDocFX
+    persistCredentials: true
+    lfs: true
+    clean: true
+
+  - script: |
+      git fetch origin
+      git checkout -b ESShared/XPlaform_${{ parameters.language }}_$(Build.BuildNumber)
+    displayName: 'Checkout a new branch in igniteui-docfx'
+    workingDirectory: $(Build.SourcesDirectory)\igniteui-docfx
+
+  - task: CopyFiles@2
+    displayName: 'Copy ${{ parameters.platform }} dist files to the topics Git repo'
+    inputs:
+      SourceFolder: '${{ parameters.primaryRepoWorkDir }}\dist\${{ parameters.platform }}\${{ parameters.language }}'
+      TargetFolder: '$(Build.SourcesDirectory)\igniteui-docfx\${{ parameters.language }}'
+      OverWrite:  true
+
+  - powershell: |
+      git add -A
+      git commit --dry-run
+
+      if ($? -eq $True) {
+        git commit -m "Adding changes from build $(Build.BuildNumber)"
+
+        git push -u origin ESShared/XPlaform_${{ parameters.language }}_$(Build.BuildNumber)
+        Write-Host "##vso[task.setvariable variable=isDestinationRepoChanged;]true"
+      }
+      else {
+        Write-Host "##vso[task.setvariable variable=isDestinationRepoChanged;]false"
+        return 0
+      }
+    displayName: 'If there are changes, commit & make PR'
+    workingDirectory: '$(Build.SourcesDirectory)\igniteui-docfx'
+    
+  - script: set
+    displayName: show all env vars
+
+  - task: CreatePullRequest@1
+    displayName: 'Create PR to IgniteUI/igniteui-docfx $(Build.SourceBranch)'
+    condition: eq(variables['isDestinationRepoChanged'], true)
+    inputs:
+      repoType: 'GitHub'
+      githubEndpoint: 'IgniteUI'
+      githubRepository: 'IgniteUI/igniteui-docfx'
+      sourceBranch: 'ESShared/XPlaform_${{ parameters.language }}_$(Build.BuildNumber)'
+      targetBranch: '$(Build.SourceBranch)'
+      title: 'Changes from $(Build.DefinitionName) for ${{ parameters.language }}'
+      tags: 'dv-gauges;dv-maps;dv-charts'

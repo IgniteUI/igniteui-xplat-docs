@@ -1,31 +1,30 @@
 ---
-title: $Platform$ Toast | Infragistics
-_description: With $ProductName$ Toast component, developers can easily integrate a brief, single-line message within mobile and desktop applications.
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Toast components
+title: {Platform} Toast Notifications | {ProductName}
+_description: With {ProductName} Toast component, developers can easily integrate a brief, single-line message within mobile and desktop applications. Try it Now
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Toast components
 mentionedTypes: ['Toast']
 ---
 
-# $Platform$ Toast
+# {Platform} Toast Overview
 
-The $ProductName$ Toast component is primarily used for system messaging, push notifications, warning messages, and information. It cannot be dismissed by the user.
+The {Platform} Toast is a super lightweight and small pop-up component that is used for displaying a message content, notifying end-users about the status of a changed record. You can easily position and show {Platform} toast notifications at the bottom or at any other specified area of the screen. Or you can also dismiss them in a simple and easy way.
 
-## $ProductName$ Toast Example
+The {Platform} Toast component is primarily used for system messaging, push notifications, warning messages, and information. It cannot be dismissed by the user. This control has different features like animation effects, display time property to configure how long the toast component is visible, styling, and others.
 
-This sample demonstrates how to create `Toast` component.
+## {Platform} Toast Example
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/toast-overview" alt="$Platform$ Toast Example"
-           github-src="notifications/toast/overview">
-</code-view>
+Take a look at the simple Ignite UI for {Platform} Toast example below. The animated notification message pops up after clicking on the button.
+
+`sample="/notifications/toast/overview", height="230", alt="{Platform} Toast Example"`
+
 
 <div class="divider--half"></div>
 
-### Usage
+### How To Use {ProductName} Toast Notification
 
 <!-- WebComponents -->
 
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -35,13 +34,13 @@ npm install {PackageWebComponents}
 
 <!-- React -->
 
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
 ```
 
-You will then need to import the `Toast`, its necessary CSS, and register its module, like so:
+You will then need to import the {Platform} `Toast`, its necessary CSS, and register its module, like so:
 
 ```tsx
 import { IgrToastModule, IgrToast } from 'igniteui-react';
@@ -52,10 +51,13 @@ IgrToastModule.register();
 
 <!-- end: React -->
 
-Before using the `Toast`, you need to register it as follows:
+Before using the {Platform} `Toast`, you need to register it as follows:
+
 
 ```razor
-IgbToastModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbToastModule));
 ```
 
 ```ts
@@ -90,13 +92,11 @@ The simplest way to display the toast component is to use its `Show` method and 
 
     protected override void OnInitialized()
     {
-        IgbButtonModule.Register(IgniteUIBlazor);
-        IgbToastModule.Register(IgniteUIBlazor);
     }
 
     public void OnToastButtonClick(MouseEventArgs args)
     {
-        if(this.ToastRef != null)
+        if (this.ToastRef != null)
         {
             this.ToastRef.Show();
         }
@@ -113,13 +113,13 @@ The simplest way to display the toast component is to use its `Show` method and 
     <span>Toast Message</span>
 </IgrToast>
 
-public onToastRef(toast: IgrToast){
+public onToastRef(toast: IgrToast) {
     if (!toast) { return; }
     this.toastRef = toast;
 }
 
 public onShowButtonClicked() {
-    if(this.toastRef){
+    if (this.toastRef) {
         this.toastRef.show();
     }
 }
@@ -153,13 +153,11 @@ By default, the toast component is hidden automatically after a period specified
 
     protected override void OnInitialized()
     {
-        IgbButtonModule.Register(IgniteUIBlazor);
-        IgbToastModule.Register(IgniteUIBlazor);
     }
 
     public void OnToggleToastButtonClick(MouseEventArgs args)
     {
-        if(this.ToastRef != null)
+        if (this.ToastRef != null)
         {
             this.ToastRef.Toggle();
         }
@@ -167,7 +165,7 @@ By default, the toast component is hidden automatically after a period specified
 
     public void OnToggleKeepOpenButtonClick(MouseEventArgs args)
     {
-        if(this.ToastRef != null)
+        if (this.ToastRef != null)
         {
             this.ToastRef.KeepOpen = !this.ToastRef.KeepOpen;
         }
@@ -175,7 +173,7 @@ By default, the toast component is hidden automatically after a period specified
 
     public void OnDisplayTimeButtonClick(MouseEventArgs args)
     {
-        if(this.ToastRef != null)
+        if (this.ToastRef != null)
         {
             this.ToastRef.DisplayTime = 8000;
         }
@@ -200,40 +198,37 @@ By default, the toast component is hidden automatically after a period specified
     <span>Toast Message</span>
 </IgrToast>
 
-public onToastRef(toast: IgrToast){
+public onToastRef(toast: IgrToast) {
     if (!toast) { return; }
     this.toastRef = toast;
 }
 
 public onToggleButtonClicked() {
-    if(this.toastRef){
+    if (this.toastRef) {
         this.toastRef.toggle();
     }
 }
 
 public onKeepOpenButtonClicked() {
-    if(this.toastRef){
+    if (this.toastRef) {
         this.toastRef.keepOpen = !this.toastRef.keepOpen;
     }
 }
 
 public onDisplayTimeButtonClicked() {
-    if(this.toastRef){
+    if (this.toastRef) {
         this.toastRef.displayTime = 8000;
     }
 }
 ```
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/notifications/toast-properties"
-           alt="$Platform$ Toast Properties Example"
-           github-src="notifications/toast/properties">
-</code-view>
+`sample="/notifications/toast/properties", height="230", alt="{Platform} Toast Properties Example"`
+
+
 
 ## Styling
 
-You can style the toast using it's directly its tag selector:
+You can style the {Platform} `Toast` notifications directly using its tag selector:
 
 ```css
 igc-toast {
@@ -243,46 +238,20 @@ igc-toast {
 }
 ```
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/notifications/toast-styling"
-           alt="$Platform$ Toast Styling Example"
-           github-src="notifications/toast/styling">
-</code-view>
-
-## API Reference
-
-* `Toast`
+`sample="/notifications/toast/styling", height="230", alt="{Platform} Toast Styling Example"`
 
 <div class="divider--half"></div>
 
-## Additional Resources
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React Examples on **GitHub**](https://github.com/IgniteUI/igniteui-react-examples)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
- ## API Members
+## API References
 
  - `Calendar`
  - `DisplayTime`
  - `KeepOpen`
  - `Show`
  - `Toast`
+
+## Additional Resources
+
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})
