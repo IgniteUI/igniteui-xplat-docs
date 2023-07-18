@@ -735,7 +735,7 @@ function buildStats(cb) {
 
         var fileContent = file.contents.toString();
         var filePath = file.dirname + "\\" + file.basename;
-        console.log("stats " + filePath);
+        // console.log("stats " + filePath);
         var topic = '/' + filePath.split('\\components\\')[1];
         if (topic.indexOf('\\') > 0) {
             topic = filePath.split('\\').join('/');
