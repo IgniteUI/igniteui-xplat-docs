@@ -69,6 +69,10 @@ If you wish to disable inner docking throughout the DockManager, simply set `all
 this.dockManager.allowInnerDock = false;
 ```
 
+### Demo
+
+`sample="/layouts/dock-manager/toggle-inner-dock", height="600", alt="{Platform} Dock Manager Toggle Inner Dock Example"`
+
 ## Control Pane Dragging 
 
 With the `containedInBoundaries` property, developers can control whether the sides of floating panes are always contained within the DockManager. When set to **true**, pane dragging will stop once any of the sides attempt to move beyond the DockManager boundaries.
