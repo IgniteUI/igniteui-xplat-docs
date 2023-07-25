@@ -13,7 +13,7 @@ _language: ja
 
 ## {Platform} {ComponentTitle} の縮小可能な列グループの例
 
-`sample="/{ComponentSample}/column-collapsible-groups", height="600", alt="{Platform} {ComponentTitle} の縮小可能な列グループの例"`
+`sample="/{ComponentSample}/multi-column-header-template", height="600", alt="{Platform} {ComponentTitle} の縮小可能な列グループの例"`
 
 
 
