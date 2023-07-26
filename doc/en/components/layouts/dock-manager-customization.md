@@ -2,10 +2,10 @@
 title: {Platform} Dock Manager | Customization | Infragistics
 _description: Use Infragistics' {Platform} dock manager component to manage the layout through panes, with the ability to customize it. Check out {ProductName} dock manager tutorials!
 _keywords: dock manager, layout, customization, {ProductName}
-mentionedTypes: ['DockManager']
+mentionedTypes: ['DockManager', 'ContentPane']
 ---
 
-### Customizing {Platform} Dock Manager
+## Customizing {Platform} Dock Manager
 
 The Infragistics {Platform} Dock Manager component provides you with the properties needed to further customize the layout to suit your specific application requirements.
 Let's dive in and explore how {Platform} DockManager empowers you to create exceptional user interfaces and enhance the productivity of your applications!
@@ -33,16 +33,12 @@ By utilizing this method, developers can effortlessly control the visibility and
 
 Try it for yourself in the sample below:
 
-### Demo
-
 `sample="/layouts/dock-manager/focus-panes", height="600", alt="{Platform} Focus panes programmatically in Dock Manager Example"`
 
 
 ## Auto-hide Pane Headers
 
 With the `showPaneHeaders` property of the DockManager, developers now have the flexibility to control the visibility of pane headers within the `layout`. By default, `showPaneHeaders` is set to **true** ensuring that pane headers are always visible. When set to **false**, all pane headers will be hidden until you hover your mouse over the top edge of a content pane. The corresponding pane header will appear and it will smoothly hide once your mouse moves away. Take a look at the example below: 
-
-### Demo
 
 `sample="/layouts/dock-manager/hide-pane-headers", height="600", alt="{Platform} Auto-hide pane headers in Dock Manager Example"`
 
@@ -56,7 +52,6 @@ By setting the `acceptsInnerDock` property of an `IgcContentPane`, developers ca
 {
     type: IgcDockManagerPaneType.contentPane,
     header: 'Floating 1',
-    contentId: 'content3'
     contentId: 'content3',
     acceptsInnerDock: false
 }
@@ -69,8 +64,6 @@ If you wish to disable inner docking throughout the DockManager, simply set `all
 this.dockManager.allowInnerDock = false;
 ```
 
-### Demo
-
 `sample="/layouts/dock-manager/toggle-inner-dock", height="600", alt="{Platform} Dock Manager Toggle Inner Dock Example"`
 
 ## Control Pane Dragging 
@@ -79,8 +72,6 @@ With the `containedInBoundaries` property, developers can control whether the si
 
 
 Try it in the example below:
-
-### Demo
 
 `sample="/layouts/dock-manager/contained-in-boundaries", height="600", alt="{Platform} Dock Manager Contained in Boundaries Example"`
 
