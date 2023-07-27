@@ -86,26 +86,10 @@ The `Rating` component allows you to use custom symbols in place of the default 
 <!-- WebComponents -->
 ```html
 <igc-rating>
-  <igc-rating-symbol>
-    <div>💙</div>
-    <div slot="empty">💙</div>
-  </igc-rating-symbol>
-  <igc-rating-symbol>
-    <div>💙</div>
-    <div slot="empty">💙</div>
-  </igc-rating-symbol>
-  <igc-rating-symbol>
-    <div>💙</div>
-    <div slot="empty">💙</div>
-  </igc-rating-symbol>
-  <igc-rating-symbol>
-    <div>💙</div>
-    <div slot="empty">💙</div>
-  </igc-rating-symbol>
-  <igc-rating-symbol>
-    <div>💙</div>
-    <div slot="empty">💙</div>
-  </igc-rating-symbol>
+  <igc-rating-symbol> <div>💙</div> <div slot="empty">💙</div> </igc-rating-symbol>
+  <igc-rating-symbol> <div>💙</div> <div slot="empty">💙</div> </igc-rating-symbol>
+  <igc-rating-symbol> <div>💙</div> <div slot="empty">💙</div> </igc-rating-symbol>
+  <igc-rating-symbol> <div>💙</div> <div slot="empty">💙</div> </igc-rating-symbol>
 </igc-rating>
 ```
 <!-- end: WebComponents -->
@@ -113,26 +97,11 @@ The `Rating` component allows you to use custom symbols in place of the default 
 <!-- Blazor -->
 ```razor
 <IgbRating>
-  <IgbRatingSymbol>
-    <div>💙</div>
-    <div slot="empty">💙</div>
-  </IgbRatingSymbol>
-  <IgbRatingSymbol>
-    <div>💙</div>
-    <div slot="empty">💙</div>
-  </IgbRatingSymbol>
-  <IgbRatingSymbol>
-    <div>💙</div>
-    <div slot="empty">💙</div>
-  </IgbRatingSymbol>
-  <IgbRatingSymbol>
-    <div>💙</div>
-    <div slot="empty">💙</div>
-  </IgbRatingSymbol>
-  <IgbRatingSymbol>
-    <div>💙</div>
-    <div slot="empty">💙</div>
-  </IgbRatingSymbol>
+  <IgbRatingSymbol> <div>💙</div> <div slot="empty">💙</div> </IgbRatingSymbol>
+  <IgbRatingSymbol> <div>💙</div> <div slot="empty">💙</div> </IgbRatingSymbol>
+  <IgbRatingSymbol> <div>💙</div> <div slot="empty">💙</div> </IgbRatingSymbol>
+  <IgbRatingSymbol> <div>💙</div> <div slot="empty">💙</div> </IgbRatingSymbol>
+  <IgbRatingSymbol> <div>💙</div> <div slot="empty">💙</div> </IgbRatingSymbol>
 </IgbRating>
 ```
 <!-- end: Blazor -->
@@ -148,26 +117,11 @@ The {ProductName} Rating component has a single selection mode that allows users
 <!-- WebComponents -->
 ```html
 <igc-rating single>
-  <igc-rating-symbol>
-    <div>😣</div>
-    <div slot="empty">😣</div>
-  </igc-rating-symbol>
-  <igc-rating-symbol>
-    <div>😔</div>
-    <div slot="empty">😔</div>
-  </igc-rating-symbol>
-  <igc-rating-symbol>
-    <div>😐</div>
-    <div slot="empty">😐</div>
-  </igc-rating-symbol>
-  <igc-rating-symbol>
-    <div>🙂</div>
-    <div slot="empty">🙂</div>
-  </igc-rating-symbol>
-  <igc-rating-symbol>
-    <div>😆</div>
-    <div slot="empty">😆</div>
-  </igc-rating-symbol>
+  <igc-rating-symbol> <div>😣</div> <div slot="empty">😣</div> </igc-rating-symbol>
+  <igc-rating-symbol> <div>😣</div> <div slot="empty">😣</div> </igc-rating-symbol>
+  <igc-rating-symbol> <div>😣</div> <div slot="empty">😣</div> </igc-rating-symbol>
+  <igc-rating-symbol> <div>😣</div> <div slot="empty">😣</div> </igc-rating-symbol>
+  <igc-rating-symbol> <div>😣</div> <div slot="empty">😣</div> </igc-rating-symbol>
 </igc-rating>
 ```
 <!-- end: WebComponents -->
@@ -175,26 +129,11 @@ The {ProductName} Rating component has a single selection mode that allows users
 <!-- Blazor -->
 ```razor
 <IgbRating>
-  <IgbRatingSymbol>
-    <div>😣</div>
-    <div slot="empty">😣</div>
-  </IgbRatingSymbol>
-  <IgbRatingSymbol>
-    <div>😔</div>
-    <div slot="empty">😔</div>
-  </IgbRatingSymbol>
-  <IgbRatingSymbol>
-    <div>😐</div>
-    <div slot="empty">😐</div>
-  </IgbRatingSymbol>
-  <IgbRatingSymbol>
-    <div>🙂</div>
-    <div slot="empty">🙂</div>
-  </IgbRatingSymbol>
-  <IgbRatingSymbol>
-    <div>😆</div>
-    <div slot="empty">😆</div>
-  </IgbRatingSymbol>
+  <IgbRatingSymbol> <div>😣</div> <div slot="empty">😣</div> </IgbRatingSymbol>
+  <IgbRatingSymbol> <div>😣</div> <div slot="empty">😣</div> </IgbRatingSymbol>
+  <IgbRatingSymbol> <div>😣</div> <div slot="empty">😣</div> </IgbRatingSymbol>
+  <IgbRatingSymbol> <div>😣</div> <div slot="empty">😣</div> </IgbRatingSymbol>
+  <IgbRatingSymbol> <div>😣</div> <div slot="empty">😣</div> </IgbRatingSymbol>
 </IgbRating>
 ```
 <!-- end: Blazor -->
