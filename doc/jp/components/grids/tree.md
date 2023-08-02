@@ -64,7 +64,7 @@ IgrTreeModule.register();
 
 <!-- Blazor -->
 
-また、追加の CSS ファイルをリンクして、スタイルを `Tree` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **BlazorServer** プロジェクトの **Pages/_Host.cshtml**フ ァイルに配置する必要があります:
+また、追加の CSS ファイルをリンクして、スタイルを `Tree` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **BlazorServer** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -283,8 +283,6 @@ builder.Services.AddIgniteUIBlazor(
 
 `loadingIndicator` スロットを使用して、読み込み領域にカスタム スロット コンテンツを提供できます。そのようなスロットが定義されていない場合、`CircularProgress` が使用されます。
 
-<!-- end: WebComponents -->
-
 ### 仮想化によるロード オン デマンド
 
 ツリー項目はデザイン時に宣言的に定義されているため、{ProductName} ツリーでより多くの子をオンデマンドで読み込むと、パフォーマンスに悪影響を及ぼす可能性があります。次のデモは、[@lit-labs/virtualizer](https://github.com/lit/lit/tree/main/packages/labs/virtualizer) ライブラリを使用して仮想化コンテナー内で子ツリー項目を描画する方法を示しています。その結果、表示されている子のチャンクのみが DOM に描画されるため、パフォーマンスが向上します。
@@ -295,6 +293,8 @@ builder.Services.AddIgniteUIBlazor(
            alt="$Platform$ Tree ロード オン デマンドの仮想化の例"
            github-src="grids/tree/load-on-demand-virtualized">
 </code-view>
+
+<!-- end: WebComponents -->
 
 ## スタイル設定
 
