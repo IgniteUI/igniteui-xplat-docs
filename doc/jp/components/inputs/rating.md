@@ -32,7 +32,7 @@ npm install {PackageWebComponents}
 builder.Services.AddIgniteUIBlazor(typeof(IgbRatingModule));
 ```
 
-You will also need to link an additional CSS file to apply the styling to the `Rating` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+また、`Rating` コンポーネントにスタイルを適用するために、追加の CSS ファイルをリンクする必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -200,7 +200,7 @@ IgrRatingModule.register();
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
-The `HoverPreview` attribute makes the component show the possible outcome of user selection on hover. It is useful when you want to give instant feedback about what the selected value could be.
+`HoverPreview` 属性により、ホバー時にユーザーが選択した場合の様子がコンポーネントに表示されます。選択した値が何であるかについて即座にフィードバックしたい場合に便利です。
 <!-- end: Blazor -->
 
 #### Read-Only (読み取り専用)
@@ -228,7 +228,7 @@ The `HoverPreview` attribute makes the component show the possible outcome of us
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
-The `Rating` component emits two separate events - `Hover` and `Change`.
+`Rating` コンポーネントは、`Hover` と `Change` の 2 つの個別のイベントを発行します。
 <!-- end: Blazor -->
 
 #### Hover Event (ホバー イベント)
@@ -238,7 +238,7 @@ The `Rating` component emits two separate events - `Hover` and `Change`.
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
-The `Hover` event is fired when hovering over a symbol. It provides the value of the symbol under the mouse cursor. Useful for creating custom value labels and readouts.
+`Hover` イベントは、シンボルにカーソルを合わせると発生します。マウス カーソルの下にあるシンボルの値を提供します。カスタム値ラベルと読み出しを作成するのに役立ちます。
 <!-- end: Blazor -->
 
 #### Change Event (変更イベント)
@@ -248,7 +248,7 @@ The `Hover` event is fired when hovering over a symbol. It provides the value of
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
-The `Change` event is fired when the selected value changes.
+選択した値が変更されると、`Change` イベントが発生します。
 <!-- end: Blazor -->
 
 ## スタイル設定

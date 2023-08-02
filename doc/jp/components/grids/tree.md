@@ -285,14 +285,14 @@ builder.Services.AddIgniteUIBlazor(
 
 <!-- end: WebComponents -->
 
-### Load On Demand With Virtualization
+### 仮想化によるロード オン デマンド
 
-Loading a greater number of children on demand in the {ProductName} Tree might negatively impact performance since the tree items are declaratively defined by design. The following demo showcases how the [@lit-labs/virtualizer](https://github.com/lit/lit/tree/main/packages/labs/virtualizer) library can be used to render the child tree items in a virtualized container. The result is improved performance as only the visible chunk of children is rendered in the DOM.
+ツリー項目はデザイン時に宣言的に定義されているため、{ProductName} ツリーでより多くの子をオンデマンドで読み込むと、パフォーマンスに悪影響を及ぼす可能性があります。次のデモは、[@lit-labs/virtualizer](https://github.com/lit/lit/tree/main/packages/labs/virtualizer) ライブラリを使用して仮想化コンテナー内で子ツリー項目を描画する方法を示しています。その結果、表示されている子のチャンクのみが DOM に描画されるため、パフォーマンスが向上します。
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/tree-load-on-demand-virtualized"
-           alt="$Platform$ Tree Load On Demand Virtualized Example"
+           alt="$Platform$ Tree ロード オン デマンドの仮想化の例"
            github-src="grids/tree/load-on-demand-virtualized">
 </code-view>
 
