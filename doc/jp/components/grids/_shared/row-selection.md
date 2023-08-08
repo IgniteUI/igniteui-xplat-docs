@@ -473,15 +473,14 @@ constructor() {
 ```razor
 igRegisterScript("WebGridRowSelectorTemplate", (ctx) => {
     var html = window.igTemplating.html;
-    var implicit = ctx["$implicit"];
-    if (implicit.selected) {
+    if (ctx.implicit.selected) {
         return html`<div style="justify-content: space-evenly;display: flex;width: 70px;">
-    <span> ${implicit.index}</span>
+    <span> ${ctx.implicit.index}</span>
 <igc-checkbox checked></igc-checkbox>
 </div>`;
     } else {
         return html`<div style="justify-content: space-evenly;display: flex;width: 70px;">
-    <span> ${implicit.index}</span>
+    <span> ${ctx.implicit.index}</span>
 <igc-checkbox></igc-checkbox>
 </div>`;
     }
@@ -490,15 +489,14 @@ igRegisterScript("WebGridRowSelectorTemplate", (ctx) => {
 
 ```ts
 public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
-    const implicit: any = ctx["$implicit"];
-    if (implicit.selected) {
+    if (ctx.implicit.selected) {
         return html`<div style="justify-content: space-evenly;display: flex;width: 70px;">
-            <span> ${implicit.index}</span>
+            <span> ${ctx.implicit.index}</span>
             <igc-checkbox checked></igc-checkbox>
             </div>`;
     } else {
         return html`<div style="justify-content: space-evenly;display: flex;width: 70px;">
-            <span> ${implicit.index}</span>
+            <span> ${ctx.implicit.index}</span>
             <igc-checkbox></igc-checkbox>
             </div>`;
     }
@@ -513,11 +511,10 @@ public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
 ```
 ```ts
 public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
-    const implicit: any = ctx["$implicit"];
     return html`
         <igc-checkbox
             @click="${(event: any) => {
-            this.onSelectorClick(event, implicit.key);
+            this.onSelectorClick(event, ctx.implicit.key);
             }}"
         ></igc-checkbox>
     `;
@@ -546,8 +543,7 @@ public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
 
 ```ts
 public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
-    const implicit: any = ctx["$implicit"];
-    return html` ${implicit.selectedCount} / ${implicit.totalCount} `;
+    return html` ${ctx.implicit.selectedCount} / ${ctx.implicit.totalCount} `;
 };
 ```
 
@@ -591,7 +587,7 @@ constructor() {
 }
 
 public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
-    const implicit: any = ctx["$implicit"];
+    const implicit: any = ctx.implicit;
     if (implicit.selectedCount > 0 && implicit.selectedCount === implicit.totalCount) {
             return html`<igc-checkbox checked></igc-checkbox>`;
         } else if(implicit.selectedCount > 0 && implicit.selectedCount !== implicit.totalCount) {

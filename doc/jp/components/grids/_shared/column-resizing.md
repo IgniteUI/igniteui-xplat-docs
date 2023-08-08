@@ -621,7 +621,7 @@ $custom-grid-theme: grid-theme(
 
 ```css
 .grid {
-    --igx-grid-resize-line-color: #f35b04;
+    --ig-grid-resize-line-color: #f35b04;
 }
 ```
 
@@ -630,7 +630,7 @@ $custom-grid-theme: grid-theme(
 ```razor
 <style>
 .grid {
-    --igx-grid-resize-line-color: #f35b04;
+    --ig-grid-resize-line-color: #f35b04;
 }
 </style>
 ```
