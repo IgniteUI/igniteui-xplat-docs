@@ -755,8 +755,8 @@ export class MyHGridEventsComponent {
 
 ```css
 .grid {
-    --igx-grid-edit-mode-color: orange;
-    --igx-grid-cell-editing-background: lightblue;
+    --ig-grid-edit-mode-color: orange;
+    --ig-grid-cell-editing-background: lightblue;
 }
 ```
 

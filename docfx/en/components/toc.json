@@ -1693,7 +1693,7 @@
     "href": "inputs/select.md"    
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Rating",
     "href": "inputs/rating.md"
   },

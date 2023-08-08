@@ -1,0 +1,1709 @@
+{
+  "note": "this auto-generated file provides stats about samples used in React documentation",
+  "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
+  "platform": "React",
+  "samplesCount": 326,
+  "samplesHost": "https://staging.infragistics.com/react-demos/samples",
+  "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
+  "samplesUsage": {
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/area-chart-multiple-sources": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/area-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/area-chart-single-source": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/area-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/area-chart-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/area-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/axis-gap": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-options"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/axis-gridlines": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-gridlines"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/axis-labels": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-options"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/axis-locations": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-layouts"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/axis-overlap": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-options"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/axis-range": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-options"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/axis-tickmarks": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-gridlines"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/axis-titles": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-options"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/column-chart-multiple-sources": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/column-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/column-chart-single-source": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/column-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/column-chart-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/column-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/column-chart-with-highlighting": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-features",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-highlighting"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/column-chart-with-tooltips": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-features",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-tooltips"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/data-aggregations": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-data-aggregations"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/data-legend": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-data-legend"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/data-legend-formatting-decimals": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-data-legend"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/data-tooltip": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-data-tooltip"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/data-tooltip-formatting-decimals": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-data-tooltip"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/data-tooltip-positioning": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-data-tooltip"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/high-frequency": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-performance",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/line-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/high-volume": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-features",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-performance"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/line-chart-multiple-sources": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/line-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/line-chart-single-source": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/line-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/line-chart-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/line-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/line-chart-with-animations": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-features",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-animations"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/line-chart-with-annotations": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-features",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-annotations"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/marker-options": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-features",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-markers"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/marker-templates": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-markers"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/point-chart-multiple-sources": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/point-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/point-chart-single-source": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/point-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/point-chart-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/point-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/spline-multiple-sources": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/spline-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/spline-single-source": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/spline-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/spline-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/spline-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/step-area-multiple-sources": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/area-chart",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/step-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/step-line-multiple-sources": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/step-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/step-line-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/step-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/tooltip-template": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-tooltips"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/value-lines": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-overlays"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/axis-crossing": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-features",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-layouts"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/axis-sharing": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-layouts"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/bar-chart-multiple-sources": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-types",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/bar-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/bar-chart-single-source": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/bar-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/bar-chart-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/bar-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/callout-layer-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-annotations"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/chart-navigation": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-features",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-navigation"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/chart-synchronization": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-synchronization"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/composite-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/composite-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/crosshair-layer-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-annotations"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/dash-array-axes": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-gridlines"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/dash-array-series": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/line-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/dash-array-trendline": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-trendlines"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/final-value-layer-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-annotations"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/polar-area-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/area-chart",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/polar-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/polar-area-chart-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/polar-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/polar-line-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-types",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/line-chart",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/polar-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/polar-scatter-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-types",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/polar-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/polar-spline-area-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/area-chart",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/polar-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/polar-spline-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/polar-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/radial-area-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-types",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/area-chart",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/radial-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/radial-area-chart-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/radial-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/radial-column-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/column-chart",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/radial-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/radial-line-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/line-chart",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/radial-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/radial-pie-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/pie-chart",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/radial-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/range-area-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/area-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/range-column-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/column-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/scatter-bubble-chart-multiple-sources": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/bubble-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/scatter-bubble-chart-single-source": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/bubble-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/scatter-bubble-chart-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/bubble-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/scatter-line-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-types",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/scatter-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/scatter-point-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/scatter-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/scatter-spline-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/scatter-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/series-value-overlay": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-features",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-overlays"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-100-area-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/area-chart",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/stacked-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-100-bar-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/bar-chart",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/stacked-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-100-column-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/column-chart",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/stacked-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-100-line-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/line-chart",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/stacked-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-100-spline-area-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/area-chart",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/stacked-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-100-spline-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/spline-chart",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/stacked-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-area-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/area-chart",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/stacked-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-bar-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/bar-chart",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/stacked-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-chart-types": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/stacked-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-column-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-types",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/column-chart",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/stacked-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-line-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/line-chart",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/stacked-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-spline-area-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/area-chart",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/stacked-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-spline-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/spline-chart",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/stacked-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/tooltip-template": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-tooltips"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/type-scatter-area-series": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/scatter-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/type-scatter-contour-series": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/scatter-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/type-scatter-hd-series": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-types",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/scatter-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/type-scatter-polygon-series": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/shape-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/type-scatter-polyline-series": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/shape-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/waterfall-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/column-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/doughnut-chart/legend": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/donut-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/doughnut-chart/rings": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/donut-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/doughnut-chart/selection": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/donut-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/annotations": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/stock-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/axis-types": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-options"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/data-legend": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-data-legend"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/data-legend-formatting-currency": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-data-legend"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/data-legend-styling-props": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-data-legend"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/data-tooltip": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-data-tooltip"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/data-tooltip-formatting-currency": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-data-tooltip"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/data-tooltip-styling-props": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-data-tooltip"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/multiple-data": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/stock-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/panes": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/stock-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/scrollbars": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-navigation"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/stock-index-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/stock-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/stock-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/trendlines": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-features",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-trendlines"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/pie-chart/animation": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/pie-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/pie-chart/explosion": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/pie-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/pie-chart/legend": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/pie-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/pie-chart/others": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/pie-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/pie-chart/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/pie-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/pie-chart/selection": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/pie-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/pie-chart/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/pie-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/sparkline/display-types": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/sparkline-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/sparkline/grid": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/sparkline-chart",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/type-sparkline-table"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/sparkline/markers": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/sparkline-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/sparkline/normal-range": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/sparkline-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/sparkline/trendlines": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/sparkline-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/sparkline/unknown-values": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/sparkline-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/toolbar/actions-built-in-category-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/menus/toolbar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/toolbar/layout-actions-for-data-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/menus/toolbar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/tree-map/layout": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/treemap-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/tree-map/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-overview",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/treemap-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/tree-map/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/treemap-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/zoomslider/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/zoomslider-overview"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/editors/date-picker/date-limits": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/date-picker"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/editors/date-picker/editing": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/date-picker"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/editors/date-picker/format": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/date-picker"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/editors/date-picker/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/date-picker"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/editors/date-picker/range": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/date-picker"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/editors/multi-column-combobox/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/multi-column-combobox"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/excel/excel-library/operations-on-workbooks": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/excel-library-using-workbooks"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/excel/excel-library/operations-on-worksheets": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/excel-library-using-worksheets"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/excel/excel-library/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/excel-library"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/excel/excel-library/working-with-cells": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/excel-library-using-cells"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/excel/excel-library/working-with-charts": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/excel-library-working-with-charts"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/excel/excel-library/working-with-sparklines": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/excel-library-working-with-sparklines"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/excel/spreadsheet/activation": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/spreadsheet-activation"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/excel/spreadsheet/adapter-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/spreadsheet-chart-adapter"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/excel/spreadsheet/clipboard": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/spreadsheet-clipboard"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/excel/spreadsheet/commands": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/spreadsheet-commands"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/excel/spreadsheet/conditional-formatting": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/spreadsheet-conditional-formatting"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/excel/spreadsheet/config-options": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/spreadsheet-configuring"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/excel/spreadsheet/data-validation": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/spreadsheet-data-validation"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/excel/spreadsheet/hyperlinks": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/spreadsheet-hyperlinks"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/excel/spreadsheet/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/spreadsheet-overview"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/gauges/bullet-graph/animation": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/bullet-graph"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/gauges/bullet-graph/background": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/bullet-graph"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/gauges/bullet-graph/labels": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/bullet-graph"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/gauges/bullet-graph/measures": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/bullet-graph"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/gauges/bullet-graph/ranges": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/bullet-graph"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/gauges/bullet-graph/scale": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/bullet-graph"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/gauges/bullet-graph/tickmarks": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/bullet-graph"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/gauges/linear-gauge/animation": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/linear-gauge"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/gauges/linear-gauge/backing": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/linear-gauge"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/gauges/linear-gauge/labels": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/linear-gauge"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/gauges/linear-gauge/needle": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/linear-gauge"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/gauges/linear-gauge/ranges": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/linear-gauge"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/gauges/linear-gauge/scale": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/linear-gauge"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/gauges/linear-gauge/tickmarks": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/linear-gauge"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/gauges/radial-gauge/animation": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/radial-gauge"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/gauges/radial-gauge/backing": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/radial-gauge"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/gauges/radial-gauge/labels": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/radial-gauge"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/gauges/radial-gauge/needle": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/radial-gauge"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/gauges/radial-gauge/ranges": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/radial-gauge"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/gauges/radial-gauge/scale": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/radial-gauge"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/gauges/radial-gauge/tickmarks": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/radial-gauge"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/accessibility": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/accessibility"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/binding-live-data": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/live-data"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/binding-local-data": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/local-data"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/binding-remote-data": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/remote-data"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/cell-activation": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/cell-activation"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/cell-editing": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/cell-editing"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/cell-merging": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/cell-merging"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/cell-selection": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/cell-selection"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-animation": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-animation"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-chooser-picker": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-chooser"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-chooser-toolbar": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-chooser"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-filter-expressions": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-filtering"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-filter-operands": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-filtering"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-filtering": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-filtering"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-moving": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-moving"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-options": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-options"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-pinning-picker": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-pinning"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-pinning-toolbar": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-pinning"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-resizing": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-resizing"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-scrolling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/horizontal-scrolling"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-sorting": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-sorting"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-summaries": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-summaries"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-types": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-types"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/load-save-layout": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/load-save-layout"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/localization": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/localization"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/overview",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grids"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/pager": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/row-paging"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/performance": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/performance"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/row-group-descriptions": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/row-grouping"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/row-grouping": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/row-grouping"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/row-highlighting": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/row-highlighting"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/row-pinning": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/row-pinning"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/row-selection": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/cell-selection"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/type-comparison-table": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/type-comparison-table"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/type-heatmap-table": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/type-heatmap-table"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/type-marketing-table": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grids"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/type-matrix-table": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/type-matrix-table"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/type-periodic-table": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/type-periodic-table"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/list/add-list-items": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/list"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/list/list-item-content": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/list"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/list/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/list"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/list/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/list"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree/basic-example": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/badge/outlined": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/badge"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/badge/shape": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/badge"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/badge/variants": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/badge"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/button/contained": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/button"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/button/download": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/button"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/button/fab": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/button"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/button/flat": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/button"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/button/outlined": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/button"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/button/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/button"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/button/size": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/button"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/button/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/button"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/checkbox/checking": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/checkbox"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/checkbox/disabled": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/checkbox"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/checkbox/indeterminate": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/checkbox"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/checkbox/label": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/checkbox"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/checkbox/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/checkbox"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/chip/multiple": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/chip"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/chip/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/chip"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/chip/size": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/chip"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/chip/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/chip"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/chip/variants": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/chip"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/form/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/form"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/icon-button/size": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/icon-button"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/icon-button/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/icon-button"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/icon-button/variant": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/icon-button"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/input/helper-text": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/input"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/input/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/input"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/input/prefix-suffix": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/input"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/input/size": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/input"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/input/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/input"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/radio/alignment": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/radio"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/radio/disabled": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/radio"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/radio/group": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/radio"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/radio/invalid": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/radio"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/radio/label": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/radio"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/radio/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/radio"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/ripple/button": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/ripple"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/ripple/color": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/ripple"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/slider/constraints": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/slider"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/slider/disabled": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/slider"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/slider/discrete": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/slider"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/slider/labels": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/slider"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/slider/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/slider"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/slider/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/slider"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/slider/tick-labels": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/slider"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/slider/ticks": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/slider"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/slider/value": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/slider"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/slider/value-format": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/slider"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/switches/checking": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/switch"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/switches/disabled": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/switch"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/switches/label": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/switch"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/switches/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/switch"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/avatar/icon": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/avatar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/avatar/image": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/avatar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/avatar/initials": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/avatar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/avatar/shape": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/avatar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/avatar/size": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/avatar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/card/horizontal": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/card"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/card/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/card"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/card/semi-horizontal": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/card"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/card/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/card"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/dock-manager/embedding-frames": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/dock-manager-embedding-frames"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/dock-manager/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/dock-manager"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/dock-manager/updating-panes": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/dock-manager-updating-panes"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/expansion-panel/component-customization": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/expansion-panel"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/expansion-panel/properties-and-events": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/expansion-panel"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/expansion-panel/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/expansion-panel"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/expansion-panel/usage": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/expansion-panel"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/icon/sizing": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/icon"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/icon/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/icon"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/binding-data-csv": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-binding-data-csv"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/binding-data-json-points": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-binding-data-json-points"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/binding-data-model": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-binding-data-model"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/binding-multiple-shapes": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-binding-multiple-shapes"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/binding-multiple-sources": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-binding-multiple-sources"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/binding-shp-polylines": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-binding-shp-file"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-bing-imagery": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-bing-imagery"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-esri-imagery": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-esri-imagery"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-heat-imagery": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-heat-imagery"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-osm-imagery": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-osm-imagery"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/navigation": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-navigation"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/shape-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-shape-styling"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/type-scatter-area-series": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-type-scatter-area-series"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/type-scatter-bubble-series": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map",
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-type-scatter-bubble-series"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/type-scatter-contour-series": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-type-scatter-contour-series"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/type-scatter-density-series": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-type-scatter-density-series"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/type-scatter-symbol-series": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-type-scatter-symbol-series"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/type-shape-polygon-series": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-type-shape-polygon-series"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/type-shape-polyline-series": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-type-shape-polyline-series"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/menus/nav-bar/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/menus/navbar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/menus/nav-bar/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/menus/navbar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/menus/nav-drawer/add-drawer-items": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/menus/navigation-drawer"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/menus/nav-drawer/add-mini": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/menus/navigation-drawer"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/menus/nav-drawer/add-positions-navbar": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/menus/navigation-drawer"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/menus/nav-drawer/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/menus/navigation-drawer"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/notifications/snackbar/action-text": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/notifications/snackbar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/notifications/snackbar/display-time": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/notifications/snackbar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/notifications/snackbar/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/notifications/snackbar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/notifications/snackbar/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/notifications/snackbar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/notifications/toast/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/notifications/toast"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/notifications/toast/properties": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/notifications/toast"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/notifications/toast/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/notifications/toast"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/multiple-months": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/multiple-selection": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/range-selection": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/size": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/week-numbers": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
+    ]
+  },
+  "topicsCount": 152,
+  "topicsHost": "https://staging.infragistics.com/products/ignite-ui-react/react/components",
+  "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
+  "topicsWithSamples": {
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/bullet-graph": [
+      "https://staging.infragistics.com/react-demos/samples/samples/gauges/bullet-graph/animation",
+      "https://staging.infragistics.com/react-demos/samples/samples/gauges/bullet-graph/background",
+      "https://staging.infragistics.com/react-demos/samples/samples/gauges/bullet-graph/labels",
+      "https://staging.infragistics.com/react-demos/samples/samples/gauges/bullet-graph/measures",
+      "https://staging.infragistics.com/react-demos/samples/samples/gauges/bullet-graph/ranges",
+      "https://staging.infragistics.com/react-demos/samples/samples/gauges/bullet-graph/scale",
+      "https://staging.infragistics.com/react-demos/samples/samples/gauges/bullet-graph/tickmarks"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-features": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/column-chart-with-highlighting",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/column-chart-with-tooltips",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/high-volume",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/line-chart-with-animations",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/line-chart-with-annotations",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/marker-options",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/axis-crossing",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/chart-navigation",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/series-value-overlay",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/trendlines"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-overview": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/area-chart-multiple-sources",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/column-chart-multiple-sources",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/line-chart-multiple-sources",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/spline-multiple-sources",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/step-line-multiple-sources",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/bar-chart-multiple-sources",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/composite-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/polar-line-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/scatter-bubble-chart-multiple-sources",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/scatter-point-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/type-scatter-polygon-series",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/doughnut-chart/legend",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/multiple-data",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/pie-chart/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/sparkline/display-types",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/tree-map/overview"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-animations": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/line-chart-with-animations"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-annotations": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/line-chart-with-annotations",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/callout-layer-styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/crosshair-layer-styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/final-value-layer-styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-gridlines": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/axis-gridlines",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/axis-tickmarks",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/dash-array-axes"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-layouts": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/axis-locations",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/axis-crossing",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/axis-sharing"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-options": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/axis-gap",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/axis-labels",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/axis-overlap",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/axis-range",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/axis-titles",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/axis-types"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-types": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/bar-chart-multiple-sources",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/polar-line-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/polar-scatter-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/radial-area-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/scatter-line-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-column-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/type-scatter-hd-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-data-aggregations": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/data-aggregations"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-data-legend": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/data-legend",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/data-legend-formatting-decimals",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/data-legend",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/data-legend-formatting-currency",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/data-legend-styling-props"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-data-tooltip": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/data-tooltip",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/data-tooltip-formatting-decimals",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/data-tooltip-positioning",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/data-tooltip",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/data-tooltip-formatting-currency",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/data-tooltip-styling-props"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-highlighting": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/column-chart-with-highlighting"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-markers": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/marker-options",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/marker-templates"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-navigation": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/chart-navigation",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/scrollbars"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-overlays": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/value-lines",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/series-value-overlay"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-performance": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/high-frequency",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/high-volume"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-synchronization": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/chart-synchronization"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-tooltips": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/column-chart-with-tooltips",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/tooltip-template",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/tooltip-template"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-trendlines": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/dash-array-trendline",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/trendlines"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/area-chart": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/area-chart-multiple-sources",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/area-chart-single-source",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/area-chart-styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/step-area-multiple-sources",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/polar-area-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/polar-spline-area-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/radial-area-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/range-area-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-100-area-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-100-spline-area-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-area-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-spline-area-chart"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/bar-chart": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/bar-chart-multiple-sources",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/bar-chart-single-source",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/bar-chart-styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-100-bar-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-bar-chart"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/bubble-chart": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/scatter-bubble-chart-multiple-sources",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/scatter-bubble-chart-single-source",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/scatter-bubble-chart-styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/column-chart": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/column-chart-multiple-sources",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/column-chart-single-source",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/column-chart-styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/radial-column-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/range-column-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-100-column-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-column-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/waterfall-chart"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/composite-chart": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/composite-chart"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/donut-chart": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/doughnut-chart/legend",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/doughnut-chart/rings",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/doughnut-chart/selection"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/line-chart": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/high-frequency",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/line-chart-multiple-sources",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/line-chart-single-source",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/line-chart-styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/dash-array-series",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/polar-line-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/radial-line-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-100-line-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-line-chart"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/pie-chart": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/radial-pie-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/pie-chart/animation",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/pie-chart/explosion",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/pie-chart/legend",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/pie-chart/others",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/pie-chart/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/pie-chart/selection",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/pie-chart/styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/point-chart": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/point-chart-multiple-sources",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/point-chart-single-source",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/point-chart-styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/polar-chart": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/polar-area-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/polar-area-chart-styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/polar-line-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/polar-scatter-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/polar-spline-area-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/polar-spline-chart"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/radial-chart": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/radial-area-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/radial-area-chart-styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/radial-column-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/radial-line-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/radial-pie-chart"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/scatter-chart": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/scatter-line-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/scatter-point-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/scatter-spline-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/type-scatter-area-series",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/type-scatter-contour-series",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/type-scatter-hd-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/shape-chart": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/type-scatter-polygon-series",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/type-scatter-polyline-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/sparkline-chart": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/sparkline/display-types",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/sparkline/grid",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/sparkline/markers",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/sparkline/normal-range",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/sparkline/trendlines",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/sparkline/unknown-values"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/spline-chart": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/spline-multiple-sources",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/spline-single-source",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/spline-styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-100-spline-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-spline-chart"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/stacked-chart": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-100-area-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-100-bar-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-100-column-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-100-line-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-100-spline-area-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-100-spline-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-area-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-bar-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-chart-types",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-column-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-line-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-spline-area-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/stacked-spline-chart"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/step-chart": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/step-area-multiple-sources",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/step-line-multiple-sources",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/step-line-styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/stock-chart": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/annotations",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/multiple-data",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/panes",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/stock-index-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/treemap-chart": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/tree-map/layout",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/tree-map/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/tree-map/styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/date-picker": [
+      "https://staging.infragistics.com/react-demos/samples/samples/editors/date-picker/date-limits",
+      "https://staging.infragistics.com/react-demos/samples/samples/editors/date-picker/editing",
+      "https://staging.infragistics.com/react-demos/samples/samples/editors/date-picker/format",
+      "https://staging.infragistics.com/react-demos/samples/samples/editors/date-picker/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/editors/date-picker/range"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/multi-column-combobox": [
+      "https://staging.infragistics.com/react-demos/samples/samples/editors/multi-column-combobox/overview"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/excel-library": [
+      "https://staging.infragistics.com/react-demos/samples/samples/excel/excel-library/overview"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/excel-library-using-cells": [
+      "https://staging.infragistics.com/react-demos/samples/samples/excel/excel-library/working-with-cells"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/excel-library-using-workbooks": [
+      "https://staging.infragistics.com/react-demos/samples/samples/excel/excel-library/operations-on-workbooks"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/excel-library-using-worksheets": [
+      "https://staging.infragistics.com/react-demos/samples/samples/excel/excel-library/operations-on-worksheets"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/excel-library-working-with-charts": [
+      "https://staging.infragistics.com/react-demos/samples/samples/excel/excel-library/working-with-charts"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/excel-library-working-with-sparklines": [
+      "https://staging.infragistics.com/react-demos/samples/samples/excel/excel-library/working-with-sparklines"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/type-scatter-bubble-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-binding-data-csv": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/binding-data-csv"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-binding-data-json-points": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/binding-data-json-points"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-binding-data-model": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/binding-data-model"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-binding-multiple-shapes": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/binding-multiple-shapes"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-binding-multiple-sources": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/binding-multiple-sources"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-binding-shp-file": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/binding-shp-polylines"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-bing-imagery": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-bing-imagery"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-esri-imagery": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-esri-imagery"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-heat-imagery": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-heat-imagery"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-osm-imagery": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-osm-imagery"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-navigation": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/navigation"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-shape-styling": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/shape-styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-type-scatter-area-series": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/type-scatter-area-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-type-scatter-bubble-series": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/type-scatter-bubble-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-type-scatter-contour-series": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/type-scatter-contour-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-type-scatter-density-series": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/type-scatter-density-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-type-scatter-symbol-series": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/type-scatter-symbol-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-type-shape-polygon-series": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/type-shape-polygon-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-type-shape-polyline-series": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/type-shape-polyline-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/accessibility": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/accessibility"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/cell-activation": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/cell-activation"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/cell-editing": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/cell-editing"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/cell-merging": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/cell-merging"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/cell-selection": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/cell-selection",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/row-selection"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-animation": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-animation"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-chooser": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-chooser-picker",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-chooser-toolbar"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-filtering": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-filter-expressions",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-filter-operands",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-filtering"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-moving": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-moving"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-options": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-options"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-pinning": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-pinning-picker",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-pinning-toolbar"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-resizing": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-resizing"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-sorting": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-sorting"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-summaries": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-summaries"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/column-types": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-types"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/horizontal-scrolling": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/column-scrolling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/live-data": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/binding-live-data"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/load-save-layout": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/load-save-layout"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/local-data": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/binding-local-data"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/localization": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/localization"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/overview": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/overview"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/performance": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/performance"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/remote-data": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/binding-remote-data"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/row-grouping": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/row-group-descriptions",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/row-grouping"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/row-highlighting": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/row-highlighting"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/row-paging": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/pager"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/row-pinning": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/row-pinning"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/type-comparison-table": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/type-comparison-table"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/type-heatmap-table": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/type-heatmap-table"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/type-matrix-table": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/type-matrix-table"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/type-periodic-table": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/type-periodic-table"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/type-sparkline-table": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/sparkline/grid"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grids": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/type-marketing-table"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/list": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/list/add-list-items",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/list/list-item-content",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/list/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/list/styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree/basic-example"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/badge": [
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/badge/outlined",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/badge/shape",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/badge/variants"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/button": [
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/button/contained",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/button/download",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/button/fab",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/button/flat",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/button/outlined",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/button/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/button/size",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/button/styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/checkbox": [
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/checkbox/checking",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/checkbox/disabled",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/checkbox/indeterminate",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/checkbox/label",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/checkbox/overview"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/chip": [
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/chip/multiple",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/chip/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/chip/size",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/chip/styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/chip/variants"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/form": [
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/form/overview"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/icon-button": [
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/icon-button/size",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/icon-button/styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/icon-button/variant"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/input": [
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/input/helper-text",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/input/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/input/prefix-suffix",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/input/size",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/input/styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/radio": [
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/radio/alignment",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/radio/disabled",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/radio/group",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/radio/invalid",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/radio/label",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/radio/styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/ripple": [
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/ripple/button",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/ripple/color"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/slider": [
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/slider/constraints",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/slider/disabled",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/slider/discrete",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/slider/labels",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/slider/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/slider/styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/slider/tick-labels",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/slider/ticks",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/slider/value",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/slider/value-format"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/switch": [
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/switches/checking",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/switches/disabled",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/switches/label",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/switches/overview"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/avatar": [
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/avatar/icon",
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/avatar/image",
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/avatar/initials",
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/avatar/shape",
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/avatar/size"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/card": [
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/card/horizontal",
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/card/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/card/semi-horizontal",
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/card/styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/dock-manager": [
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/dock-manager/overview"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/dock-manager-embedding-frames": [
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/dock-manager/embedding-frames"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/dock-manager-updating-panes": [
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/dock-manager/updating-panes"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/expansion-panel": [
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/expansion-panel/component-customization",
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/expansion-panel/properties-and-events",
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/expansion-panel/styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/expansion-panel/usage"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/icon": [
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/icon/sizing",
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/icon/styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/linear-gauge": [
+      "https://staging.infragistics.com/react-demos/samples/samples/gauges/linear-gauge/animation",
+      "https://staging.infragistics.com/react-demos/samples/samples/gauges/linear-gauge/backing",
+      "https://staging.infragistics.com/react-demos/samples/samples/gauges/linear-gauge/labels",
+      "https://staging.infragistics.com/react-demos/samples/samples/gauges/linear-gauge/needle",
+      "https://staging.infragistics.com/react-demos/samples/samples/gauges/linear-gauge/ranges",
+      "https://staging.infragistics.com/react-demos/samples/samples/gauges/linear-gauge/scale",
+      "https://staging.infragistics.com/react-demos/samples/samples/gauges/linear-gauge/tickmarks"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/menus/navbar": [
+      "https://staging.infragistics.com/react-demos/samples/samples/menus/nav-bar/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/menus/nav-bar/styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/menus/navigation-drawer": [
+      "https://staging.infragistics.com/react-demos/samples/samples/menus/nav-drawer/add-drawer-items",
+      "https://staging.infragistics.com/react-demos/samples/samples/menus/nav-drawer/add-mini",
+      "https://staging.infragistics.com/react-demos/samples/samples/menus/nav-drawer/add-positions-navbar",
+      "https://staging.infragistics.com/react-demos/samples/samples/menus/nav-drawer/styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/menus/toolbar": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/toolbar/actions-built-in-category-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/toolbar/layout-actions-for-data-chart"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/notifications/snackbar": [
+      "https://staging.infragistics.com/react-demos/samples/samples/notifications/snackbar/action-text",
+      "https://staging.infragistics.com/react-demos/samples/samples/notifications/snackbar/display-time",
+      "https://staging.infragistics.com/react-demos/samples/samples/notifications/snackbar/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/notifications/snackbar/styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/notifications/toast": [
+      "https://staging.infragistics.com/react-demos/samples/samples/notifications/toast/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/notifications/toast/properties",
+      "https://staging.infragistics.com/react-demos/samples/samples/notifications/toast/styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/radial-gauge": [
+      "https://staging.infragistics.com/react-demos/samples/samples/gauges/radial-gauge/animation",
+      "https://staging.infragistics.com/react-demos/samples/samples/gauges/radial-gauge/backing",
+      "https://staging.infragistics.com/react-demos/samples/samples/gauges/radial-gauge/labels",
+      "https://staging.infragistics.com/react-demos/samples/samples/gauges/radial-gauge/needle",
+      "https://staging.infragistics.com/react-demos/samples/samples/gauges/radial-gauge/ranges",
+      "https://staging.infragistics.com/react-demos/samples/samples/gauges/radial-gauge/scale",
+      "https://staging.infragistics.com/react-demos/samples/samples/gauges/radial-gauge/tickmarks"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar": [
+      "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/multiple-months",
+      "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/multiple-selection",
+      "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/range-selection",
+      "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/size",
+      "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/week-numbers"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/spreadsheet-activation": [
+      "https://staging.infragistics.com/react-demos/samples/samples/excel/spreadsheet/activation"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/spreadsheet-chart-adapter": [
+      "https://staging.infragistics.com/react-demos/samples/samples/excel/spreadsheet/adapter-chart"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/spreadsheet-clipboard": [
+      "https://staging.infragistics.com/react-demos/samples/samples/excel/spreadsheet/clipboard"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/spreadsheet-commands": [
+      "https://staging.infragistics.com/react-demos/samples/samples/excel/spreadsheet/commands"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/spreadsheet-conditional-formatting": [
+      "https://staging.infragistics.com/react-demos/samples/samples/excel/spreadsheet/conditional-formatting"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/spreadsheet-configuring": [
+      "https://staging.infragistics.com/react-demos/samples/samples/excel/spreadsheet/config-options"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/spreadsheet-data-validation": [
+      "https://staging.infragistics.com/react-demos/samples/samples/excel/spreadsheet/data-validation"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/spreadsheet-hyperlinks": [
+      "https://staging.infragistics.com/react-demos/samples/samples/excel/spreadsheet/hyperlinks"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/spreadsheet-overview": [
+      "https://staging.infragistics.com/react-demos/samples/samples/excel/spreadsheet/overview"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/zoomslider-overview": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/zoomslider/overview"
+    ]
+  }
+}

@@ -598,8 +598,8 @@ function replaceEnvironmentVariables(cb) {
     const environment = ENV_TARGET ? ENV_TARGET.trim() : 'development';
     const config = require(`./docfx/${LANG}/environment.json`);
     return gulp.src(`${DOCFX_SITE}/**/*.html`)
-        .pipe(replace(/(\{|\%7B)environment:([a-zA-Z]+)(\}|\%7D)/g, function (match, brace1, environmentVarable, brace2) {
-            const value = config[environment][environmentVarable];
+        .pipe(replace(/(\{|\%7B)environment:([a-zA-Z]+)(\}|\%7D)/g, function (match, brace1, envVariable, brace2) {
+            const value = config[environment][envVariable];
             return value || match;
         }))
         .pipe(gulp.dest(DOCFX_SITE));
@@ -706,6 +706,153 @@ function updateSiteMap(cb) {
 }
 exports.updateSiteMap = updateSiteMap
 
+// generates JSON files with stats about samples used in xplatform docs that
+// you can use to lookup samples used in each topic or find which topics uses samples
+// these files are saved in output folder ./dist/[PLATFORM]/end/_site/stats.json
+// as well as in the stats folder:
+// ./stats/docsStats-Angular.json
+// ./stats/docsStats-Blazor.json
+// ./stats/docsStats-React.json
+// ./stats/docsStats-WC.json
+function buildStats(cb) {
+
+    var config = docsConfig[PLAT];
+
+    var docStats = {}
+    docStats.note = "this auto-generated file provides stats about samples used in " + PLAT + " documentation";
+    docStats.info = "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ";
+    docStats.platform = PLAT;
+    // docStats.samplesEnv = ENV_TARGET;
+    // docStats.samplesBrowsers = config.samplesBrowsers;
+    docStats.samplesCount = 0
+    docStats.samplesHost = config.samplesBrowsers.staging + '/samples'; //[docStats.samplesEnv];
+    docStats.samplesNote = "the 'samplesUsage' provides lookup of samples usage in topics"
+    docStats.samplesUsage = {}
+
+    docStats.topicsCount = 0
+    if (PLAT === "Angular") {
+        docStats.topicsHost = 'https://staging.infragistics.com/products/ignite-ui-angular/angular/components';
+    } else if (PLAT === "Blazor") {
+        docStats.topicsHost = 'https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components';
+    } else if (PLAT === "React") {
+        docStats.topicsHost = 'https://staging.infragistics.com/products/ignite-ui-react/react/components';
+    } else if (PLAT === "WebComponents") {
+        docStats.topicsHost = 'https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components';
+    }
+    docStats.topicsNote = "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample"
+    docStats.topicsWithSamples = {}
+
+    if (!fs.existsSync(DOCFX_SITE)) {
+         fs.mkdirSync(DOCFX_SITE);
+    }
+
+    gulp.src([
+        DOCFX_PATH + '/components/**/*.md',
+    ])
+    .pipe(es.map(function(file, fileCallback) {
+        docStats.topicsCount++;
+
+        var fileContent = file.contents.toString();
+        var filePath = file.dirname + "\\" + file.basename.replace('.md', '');
+        // console.log("stats " + filePath);
+        var topic = '/' + filePath.split('\\components\\')[1];
+        if (topic.indexOf('\\') > 0) {
+            topic = topic.split('\\').join('/');
+        }
+        topic =  docStats.topicsHost  + topic;
+
+        var fileLines = fileContent.split("\n");
+        var lineIndex = 0;
+        for (const line of fileLines) {
+            if (line.indexOf('iframe-src="') >= 0) {
+                var link = line.replace('iframe-src="', '');
+                link = link.trim();
+                link = link.replace('"', '');
+                link = link.replace('`', '');
+                link = link.replace('{environment:dvDemosBaseUrl}', '');
+                link = link.replace('{environment:demosBaseUrl}', '');
+                link = link.replace(config.samplesBrowsers.development, '');
+                link = link.replace(config.samplesBrowsers.staging, '');
+                link = link.replace(config.samplesBrowsers.production, '');
+
+                link = docStats.samplesHost + '/samples' + link;
+
+                // if (docStats.samplesHost) {
+                //     link = link.replace(docStats.samplesHost, '');
+                // }
+
+                // creating lookup of samples
+                if (docStats.samplesUsage[link] === undefined) {
+                    docStats.samplesUsage[link] = [];
+                    docStats.samplesCount++;
+                }
+                if (docStats.samplesUsage[link].indexOf(topic) < 0) {
+                    docStats.samplesUsage[link].push(topic);
+                }
+
+                // creating lookup of topics with samples
+                if (docStats.topicsWithSamples[topic] === undefined) {
+                    docStats.topicsWithSamples[topic] = [];
+                }
+                if (docStats.topicsWithSamples[topic].indexOf(link) < 0) {
+                    docStats.topicsWithSamples[topic].push(link);
+                }
+
+            }
+            lineIndex++;
+        }
+        fileCallback(null, file);
+    }))
+    .on("end", () => {
+        if (docStats.samplesCount > 0) {
+            // sort usage of sample links alphabetically
+            var sampleMappings = {};
+            var sampleLinks = Object.keys(docStats.samplesUsage);
+            sampleLinks.sort();
+            for (const link of sampleLinks) {
+                var topicsArray = docStats.samplesUsage[link];
+                topicsArray.sort();
+                // compact json - temporary replacing [] with <> in short arrays
+                // if (topicsArray.length === 1) {
+                //     topicsArray = '<' + topicsArray[0] + '>'
+                // }
+                sampleMappings[link] = topicsArray; //docStats.samplesUsage[link]; //.join(',');
+            }
+            docStats.samplesUsage = sampleMappings;
+
+            // sorting usage of topics links alphabetically
+            var topicMappings = {};
+            var topicNames = Object.keys(docStats.topicsWithSamples);
+            topicNames.sort();
+            for (const topic of topicNames) {
+                var samplesArray = docStats.topicsWithSamples[topic];
+                samplesArray.sort();
+                // compact json - temporary replacing [] with <> in short arrays
+                // if (samplesArray.length === 1) {
+                //     samplesArray = '<' + samplesArray[0] + '>'
+                // }
+                topicMappings[topic] = samplesArray;
+            }
+            docStats.topicsWithSamples = topicMappings;
+
+            var statsPlatform = docStats.platform.replace('WebComponents','WC');
+            var statsPath = DOCFX_SITE + "/stats.json";
+            var statsData = JSON.stringify(docStats,  null, '  ');
+            // compact json - replacing <> with [] in short arrays
+            statsData = statsData.replace(/\"\</g,'[ "');
+            statsData = statsData.replace(/\>\"/g,'" ]');
+
+            console.log('extracted stats for docs and samples to: ' + statsPath);
+            fs.writeFileSync(statsPath, statsData);
+            if (LANG === 'en') {
+                fs.writeFileSync('./stats/docStats-' + statsPlatform + '.json', statsData);
+            }
+        }
+        if (cb) cb();
+    })
+}
+exports.buildStats = buildStats
+
 var verifyFiles = gulp.series(verifyMarkdown);
 
 function buildCore(cb) {
@@ -719,7 +866,7 @@ function buildCore(cb) {
     buildPlatform(cb);
 }
 
-exports.buildCoreAndTOC = buildCoreAndTOC = gulp.series(buildTOC, buildCore)
+exports.buildCoreAndTOC = buildCoreAndTOC = gulp.series(buildTOC, buildCore, buildStats)
 
 // functions for building each platform:
 function buildAngularDocFX(cb) { PLAT = "Angular"; DOCFX_FORCE_OUTPUT = true;  buildCoreAndTOC(cb); }
@@ -808,13 +955,14 @@ exports.buildSite = buildSite;
 exports['build-site'] = buildSite;
 
 // functions for building Docfx for each platform:
-var buildDocfx_All      = gulp.series(verifyFiles, buildAll, buildSite, replaceEnvironmentVariables, updateSiteMap);
-var buildDocfx_Angular  = gulp.series(verifyFiles, buildAngularDocFX, buildSite, replaceEnvironmentVariables, updateSiteMap);
-var buildDocfx_Blazor   = gulp.series(verifyFiles, buildBlazor, buildSite, replaceEnvironmentVariables,  updateSiteMap);
-var buildDocfx_React    = gulp.series(verifyFiles, buildReact, buildSite, replaceEnvironmentVariables,  updateSiteMap);
-var buildDocfx_WC       = gulp.series(verifyFiles, buildWC, buildSite, replaceEnvironmentVariables, updateSiteMap);
+var buildDocfx_All      = gulp.series(verifyFiles, buildAll, buildSite, replaceEnvironmentVariables, updateSiteMap, buildStats);
+var buildDocfx_Angular  = gulp.series(verifyFiles, buildAngularDocFX, buildSite, replaceEnvironmentVariables, updateSiteMap, buildStats);
+var buildDocfx_Blazor   = gulp.series(verifyFiles, buildBlazor, buildSite, replaceEnvironmentVariables,  updateSiteMap, buildStats);
+var buildDocfx_React    = gulp.series(verifyFiles, buildReact, buildSite, replaceEnvironmentVariables,  updateSiteMap, buildStats);
+var buildDocfx_WC       = gulp.series(verifyFiles, buildWC, buildSite, replaceEnvironmentVariables, updateSiteMap, buildStats);
 // function for building Docfx for a platform specified in arguments, e.g. --plat=React
 var buildDocfx_WithArgs = gulp.series(buildWithArgs, buildSite, replaceEnvironmentVariables, updateSiteMap);
+var buildDocfx_WithArgs = gulp.series(buildWithArgs, buildSite, replaceEnvironmentVariables, updateSiteMap, buildStats);
 // exporting functions for building Docfx for each platform:
 exports['buildDocfx_All']      = buildDocfx_All;
 exports['buildDocfx_Angular']  = buildDocfx_Angular;
@@ -917,7 +1065,7 @@ function verifyMarkdown(cb) {
         var fileContent = file.contents.toString();
         var filePath = file.dirname + path.sep + file.basename
         // filePath = '.\\doc\\' + filePath.split('doc\\')[1];
-        console.log('verifying: ' + filePath);
+        // console.log('verifying: ' + filePath);
         filesCount++;
         var result = transformer.verifyMarkdown(fileContent, filePath);
         if (result.isValid) {
@@ -1269,6 +1417,7 @@ function logSampleLinks(cb, platform, server) {
     // var sampleHost = "https://localhost:4200/webcomponents-demos/samples";
     // var sampleHost = "https://staging.infragistics.com/webcomponents-demos/samples";
     if (platform === undefined) platform = argv.plat !== undefined ? argv.plat : "WC";
+
     if (platform === "WC" || platform === "WebComponents") {
         platform = "WebComponents"
         sampleHost += "/webcomponents-demos/samples";
@@ -1354,38 +1503,48 @@ exports.logSampleLinksBlazor = function log(cb) { logSampleLinks(cb, "Blazor"); 
 exports.logSampleLinksReact = function log(cb) { logSampleLinks(cb, "React"); }
 exports.logSampleLinksWC = function log(cb) { logSampleLinks(cb, "WC"); };
 
+var docsInfo = {};
+function extractSampleLinks(cb, platform, server, outputType) {
 
-function extractSampleLinks(cb, platform, server) {
-
-    console.log('extractSampleLinks ./dist/**/end/*.md files ...');
-    var sampleLinks = [];
-    var sampleHost = ""
-    var sampleBrowser = "";
-
-    if (server === undefined) server = argv.server !== undefined ? argv.server : "local";
+    if (server === undefined) server = argv.server !== undefined ? argv.server : "staging";
     if (platform === undefined) platform = argv.plat !== undefined ? argv.plat : "WC";
+    if (outputType === undefined) outputType = argv.output !== undefined ? argv.output : undefined;
 
-    if (platform === "WC" || platform === "WebComponents" || platform === "wc") {
-        platform = "WebComponents";
-        sampleHost = "http://localhost:4200";
-        sampleBrowser = "/webcomponents-demos/samples";
-    } else if (platform === "Blazor" || platform === "blazor") {
-        platform = "Blazor";
-        sampleHost = "https://localhost:44317";
-        sampleBrowser = "/blazor-client/samples";
-    } else if (platform === "Angular" || platform === "Angular" || platform === "angular") {
-        platform = "Angular";
-        sampleHost = "http://localhost:4200";
-        sampleBrowser = "/angular-demos-dv/samples";
-    } else if (platform === "React" || platform === "react") {
-        platform = "React";
-        sampleHost = "http://localhost:4200";
-        sampleBrowser = "/react-demos/samples";
+    docsInfo.platform = "";
+    docsInfo.samplesServer = server;
+    docsInfo.samplesBrowser = "";
+    docsInfo.samplesHost = ""
+    docsInfo.samplesCount = 0
+    docsInfo.samples = {}
+    docsInfo.topicsCount = 0
+    docsInfo.topics = {}
+
+    const target = platform.toLowerCase();
+    if (target === "wc") { // || target === "webcomponents") {
+        docsInfo.platform = "WebComponents";
+        docsInfo.samplesHost = "http://localhost:4200";
+        docsInfo.samplesBrowser = "/webcomponents-demos/samples";
+    } else if (target === "blazor") {
+        docsInfo.platform = "Blazor";
+        docsInfo.samplesHost = "https://localhost:44317";
+        docsInfo.samplesBrowser = "/blazor-client/samples";
+    } else if (target === "angular") {
+        docsInfo.platform = "Angular";
+        docsInfo.samplesHost = "http://localhost:4200";
+        docsInfo.samplesBrowser = "/angular-demos-dv/samples";
+    } else if (target === "react") {
+        docsInfo.platform = "React";
+        docsInfo.samplesHost = "http://localhost:4200";
+        docsInfo.samplesBrowser = "/react-demos/samples";
     } else {
-        console.log("UNKNOWN platform: " + platform);
-        cb();
+        docsInfo.platform = "UNKNOWN";
+        docsInfo.samplesHost = "UNKNOWN";
+        docsInfo.samplesBrowser = "UNKNOWN";
+        console.log("UNKNOWN platform: " + target);
+        // cb();
+        throw new Error("The '" + target + "' platform is not supported")
     }
-    var sourceDir = 'dist/' + platform + '/en';
+    var sourceDir = 'dist/' + docsInfo.platform + '/en';
 
     if (!fs.existsSync(sourceDir)) {
         console.log("--------------------------------------------------------------------");
@@ -1395,20 +1554,28 @@ function extractSampleLinks(cb, platform, server) {
         cb();
     }
 
+    var sourceFiles = 'dist/' + docsInfo.platform + '/en/**/*.md';
+    console.log('extracting sample links from ./dist/**/en/*.md files ' + sourceFiles + ' files ...');
+
     gulp.src([
     //  'dist/' + platform + '/en/components/**/charts/chart-overview.md',
     //  'dist/' + platform + '/en/**/notifications/**/*.md',
     // 'dist/' + platform + '/en/**/grids/grids.md',
-    'dist/' + platform + '/en/**/*.md',
+    'dist/' + docsInfo.platform + '/en/**/*.md',
     ])
     .pipe(es.map(function(file, fileCallback) {
+        docsInfo.topicsCount++;
+
         var fileContent = file.contents.toString();
         var filePath = file.dirname + "\\" + file.basename
         filePath = '.\\dist\\' + filePath.split('dist\\')[1];
+        // filePath =  filePath.split('\\en\\')[1];
+        var topic = filePath.split('\\').join('/');
         //console.log('extractSampleLinks: ' + filePath);
 
         var fileLines = fileContent.split("\n");
 
+        var lineIndex = 0;
         for (const line of fileLines) {
             if (line.indexOf('iframe-src="') >= 0) {
                 var link = line.replace('iframe-src="', '');
@@ -1417,40 +1584,76 @@ function extractSampleLinks(cb, platform, server) {
                 link = link.replace('`', '');
                 link = link.replace('/blazor-client', '');
                 link = link.replace('{environment:dvDemosBaseUrl}/', 'http://localhost:4200/');
-                link = link.replace(sampleHost, sampleHost + sampleBrowser);
+                link = link.replace(docsInfo.samplesHost, docsInfo.samplesHost + docsInfo.samplesBrowser);
 
                 if (server === "staging") {
-                    link = link.replace(sampleHost, "http://staging.infragistics.com");
+                    link = link.replace(docsInfo.samplesHost, "http://staging.infragistics.com");
                 } else if (server === "production" || server === "prod") {
-                    link = link.replace(sampleHost, "http://infragistics.com");
+                    link = link.replace(docsInfo.samplesHost, "http://infragistics.com");
                 }
 
                 link = link.replace('http://', 'https://');
 
-                if (sampleLinks.indexOf(link) < 0) {
-                    sampleLinks.push(link);
+                docsInfo.samples[link] = topic + ":" + lineIndex;
+
+                // if (docsInfo.samples[link] === undefined) {
+                //     docsInfo.samples[link] = [];
+                // }
+                // if (docsInfo.samples[link].indexOf(topic) < 0) {
+                //     docsInfo.samples[link].push(topic);
+                // }
+                // throw new Error("stop");
+
+                if (docsInfo.topics[topic] === undefined) {
+                    docsInfo.topics[topic] = [];
                 }
+                if (docsInfo.topics[topic].indexOf(link) < 0) {
+                    docsInfo.topics[topic].push(link);
+                }
+
+                docsInfo.samplesCount++;
             }
+            lineIndex++;
         }
         fileCallback(null, file);
     }))
     .on("end", () => {
-        sampleLinks.sort();
-      //  for (const link of sampleLinks) {
-      //     console.log(link);
-      // }
-      //  console.log(sampleLinks[0])
-        //var outputPath = "./dist/" + platform + "/en/samples.json";
-        platform =  platform.replace("WebComponents", "wc");
-        var outputPath = "samples-" + server + "-" + platform.toLowerCase() + ".json";
-        var outputJSON = JSON.stringify(sampleLinks,  null, '  ');
-        fs.writeFileSync(outputPath, outputJSON);
-        console.log('extracted ' + sampleLinks.length + ' sample links to: ' + outputPath);
+
+        var platform = docsInfo.platform.replace("WebComponents", "wc").toLowerCase() ;
+        var outputPath = "./samples-" + docsInfo.samplesServer + "-" + platform + ".json";
+        var outputData = {};
+        if (outputType === "samples") {
+            var links = [];
+            for (const link of Object.keys(docsInfo.samples) ) {
+                links.push(link);
+            }
+            links.sort();
+            outputData = links;
+            console.log(docsInfo.samples);
+        } else if (outputType === "topics") {
+            outputData = docsInfo.topics;
+            console.log(outputData);
+        } else { // default to saving samples and topics
+            outputData = docsInfo;
+            var links = []; // logging sample links
+            for (const link of Object.keys(docsInfo.samples) ) {
+                links.push(link);
+            }
+            links.sort();
+            // console.log(links);
+        }
+
+        if (docsInfo.samplesCount > 0) {
+            var outputJSON = JSON.stringify(outputData,  null, '  ');
+            fs.writeFileSync(outputPath, outputJSON);
+            console.log('extracted ' + docsInfo.samplesCount + ' sample links to: ' + outputPath);
+        }
 
         if (cb) cb();
     })
 }
 exports.extractSampleLinks = extractSampleLinks;
+
 // use these gulp commands to extract links to samples hosted on staging:
 // gulp extractSampleLinks --server="staging" --plat=Angular
 // gulp extractSampleLinks --server="staging" --plat=Blazor
@@ -1461,7 +1664,14 @@ exports.extractSampleLinks = extractSampleLinks;
 // gulp extractSampleLinksBlazor
 // gulp extractSampleLinksReact
 // gulp extractSampleLinksWC
-exports.extractSampleLinksAngular = function extract(cb) { extractSampleLinks(cb, "Angular"); }
-exports.extractSampleLinksBlazor = function extract(cb) { extractSampleLinks(cb, "Blazor"); }
-exports.extractSampleLinksReact = function extract(cb) { extractSampleLinks(cb, "React"); }
-exports.extractSampleLinksWC = function extract(cb) { extractSampleLinks(cb, "WC"); };
+exports.extractSampleLinksAngular = extractSampleLinksAngular = function extractSamples(cb) { extractSampleLinks(cb, "Angular", "staging") }
+exports.extractSampleLinksBlazor = extractSampleLinksBlazor = function extractSamples(cb) { extractSampleLinks(cb, "Blazor", "staging"); }
+exports.extractSampleLinksReact = extractSampleLinksReact = function extractSamples(cb) { extractSampleLinks(cb, "React", "staging"); }
+exports.extractSampleLinksWC = extractSampleLinksWC = function extractSamples(cb) { extractSampleLinks(cb, "WC", "staging"); };
+
+exports.extractSampleLinksAll = gulp.series(
+    extractSampleLinksAngular,
+    extractSampleLinksBlazor,
+    extractSampleLinksReact,
+    extractSampleLinksWC,
+);
