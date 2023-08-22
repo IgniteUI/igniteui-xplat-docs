@@ -282,6 +282,17 @@ After the user clicks the expand icon, it is replaced by a loading indicator. Wh
 
 You can provide a custom slot content for the loading area using the `loadingIndicator` slot. If such slot is not defined, the `CircularProgress` is used.
 
+### Load On Demand With Virtualization
+
+Loading a greater number of children on demand in the {ProductName} Tree might negatively impact performance since the tree items are declaratively defined by design. The following demo showcases how the [@lit-labs/virtualizer](https://github.com/lit/lit/tree/main/packages/labs/virtualizer) library can be used to render the child tree items in a virtualized container. The result is improved performance as only the visible chunk of children is rendered in the DOM.
+
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/tree-load-on-demand-virtualized"
+           alt="$Platform$ Tree Load On Demand Virtualized Example"
+           github-src="grids/tree/load-on-demand-virtualized">
+</code-view>
+
 <!-- end: WebComponents -->
 
 ## Styling

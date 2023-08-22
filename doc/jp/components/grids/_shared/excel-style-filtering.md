@@ -14,7 +14,7 @@ _language: ja
 
 ## {Platform} {ComponentTitle} Excel スタイル フィルタリングの例
 
-`sample="/{ComponentSample}/excel-style-filtering-sample-1", height="620", alt="{Platform} {ComponentTitle} Excel スタイルのフィルタリング サンプル 1"`
+`sample="/{ComponentSample}/excel-style-filtering-sample-1", height="950", alt="{Platform} {ComponentTitle} Excel スタイルのフィルタリング サンプル 1"`
 
 
 ## 使用方法
@@ -999,8 +999,8 @@ $custom-drop-down: drop-down-theme(
 
 ```css
 .grid {
-    --igx-grid-filtering-row-background: #ffcd0f;
-    --igx-list-item-background: #ffcd0f;
+    --ig-grid-filtering-row-background: #ffcd0f;
+    --ig-list-item-background: #ffcd0f;
 }
 ```
 ### デモ

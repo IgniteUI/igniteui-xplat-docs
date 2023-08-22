@@ -296,7 +296,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React", "Blazor"],
         "name": "Remote Data Operations",
         "href": "grids/grid/remote-data-operations.md",
         "status": ""
@@ -1693,7 +1693,7 @@
     "href": "inputs/select.md"    
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Rating",
     "href": "inputs/rating.md"
   },

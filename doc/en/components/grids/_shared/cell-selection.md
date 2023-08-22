@@ -244,9 +244,9 @@ Then set the related CSS properties for that class:
 
 ```css
 .grid {
-    --igx-grid-cell-selected-text-color: #FFFFFF;
-    --igx-grid-cell-active-border-color: #f2c43c;
-    --igx-grid-cell-selected-background: #0062A3;
+    --ig-grid-cell-selected-text-color: #FFFFFF;
+    --ig-grid-cell-active-border-color: #f2c43c;
+    --ig-grid-cell-selected-background: #0062A3;
 }
 ```
 

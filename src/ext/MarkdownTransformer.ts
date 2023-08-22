@@ -81,9 +81,9 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
     let packageName: string | null = null;
 
     if (!(typeName.indexOf(options.platformPascalPrefix) == 0)) {
-        resolvedTypeName = mappings.getPlatformTypeName(typeName, <APIPlatform>options.platform);
+        resolvedTypeName = mappings.getPlatformTypeName(typeName, <APIPlatform>options.platform, options.filePath);
         if (resolvedTypeName) {
-            let typeInfo = mappings.getType(typeName);
+            let typeInfo = mappings.getType(typeName, options.filePath);
             if (typeInfo) {
                 if (typeInfo.isEnum) {
                     isEnum = true;
@@ -133,6 +133,9 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
                     packageText = "igniteui_" + getPlatformName(<APIPlatform>options.platform).toLowerCase() + "_grids_grids."
                 } else if (packageName == "igniteui-webinputs") {
                     packageText = "";
+                    if (platform == APIPlatform.React) {
+                        packageText = "igniteui_react.";
+                    }
                 } else {
                     packageText = packageName;
                     packageText = packageText.replace("igniteui-", "igniteui-" + getPlatformName(<APIPlatform>options.platform).toLowerCase() + "-");
@@ -275,7 +278,7 @@ function transformCodeRefs(options: any) {
         let resolvedName = mappings.getPlatformMemberName(
             <string>options.typeName,
             <APIPlatform>options.platform,
-            <string>memberName);
+            <string>memberName, options.filePath);
         apiTypeName = options.typeName;
 
         if (resolvedName == null && options.mentionedTypes &&
@@ -285,7 +288,7 @@ function transformCodeRefs(options: any) {
                 resolvedName = mappings.getPlatformMemberName(
                     <string>type,
                     <APIPlatform>options.platform,
-                    <string>memberName);
+                    <string>memberName, options.filePath);
                 if (resolvedName !== null) {
                     apiTypeName = type;
                     break;
@@ -296,7 +299,7 @@ function transformCodeRefs(options: any) {
         if (resolvedName == null) {
             resolvedName = mappings.getPlatformTypeName(
                 <string>memberName,
-                <APIPlatform>options.platform);
+                <APIPlatform>options.platform, options.filePath);
 
             if (resolvedName !== null) {
                 isTypeName = true;
@@ -327,12 +330,12 @@ function transformCodeRefs(options: any) {
             }
 
             if (link) {
-                // override Angular/React/WC Dock Manager to stand-alone API docs for Dock Manager
-                // because API docs for Dock Manager are NOT in Angular/React/WC API docs, e.g.
+                // override Angular/WC Dock Manager to stand-alone API docs for Dock Manager
+                // because API docs for Dock Manager are NOT in Angular/WC API docs, e.g.
                 // WORKS - https://staging.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html
                 // FAILS - https://staging.infragistics.com/products/ignite-ui-web-components/api/docs/typescript/latest/classes/igcdockmanagercomponent.html
                 let platform = getPlatformName(options.platform);
-                if (platform === "Angular" || platform === "React" || platform === "WebComponents") {
+                if (platform === "Angular" || platform === "WebComponents") {
 
                     var dockEnums = [
                         "DockManagerPaneType",
@@ -473,6 +476,7 @@ function getFrontMatterTypes(options: any, filePath: string) {
             throw new Error(filePath + '\n' + error.message + "\n" + "Failed parsing:\n" + node.value + "\n")
         }
         // console.log("setFrontMatterTypes=" + filePath);
+        let mentionedNamespace: string | null = null;
         if (ym.mentionedTypes) {
             // console.log("mentionedTypes=" + ym.mentionedTypes);
             let mt = ym.mentionedTypes;
@@ -487,9 +491,13 @@ function getFrontMatterTypes(options: any, filePath: string) {
             }
             options.mentionedTypes = arr;
             let mappings = <MappingLoader>options.mappings;
+
             for (let i = 0; i < options.mentionedTypes.length; i++) {
                 let currType = options.mentionedTypes[i];
-                let currTypeInfo = mappings.getType(currType);
+                let currTypeInfo = mappings.getType(currType, options.filePath);
+                if (currTypeInfo?.originalNamespace) {
+                    mentionedNamespace = currTypeInfo.originalNamespace;
+                }
                 if (currTypeInfo) {
                     if (currTypeInfo.originalBaseTypeName) {
                         let fullName = currTypeInfo.originalBaseTypeNamespace + "." +
@@ -515,6 +523,13 @@ function getFrontMatterTypes(options: any, filePath: string) {
             options.namespace = ym.namespace;
             if (options.mappings) {
                 options.mappings.namespace = options.namespace;
+            }
+        } else {
+            if (mentionedNamespace) {
+                options.namespace = mentionedNamespace;
+                if (options.mappings) {
+                    options.mappings.namespace = mentionedNamespace;
+                }
             }
         }
 
@@ -565,7 +580,7 @@ function transformDocLinks(options: any) {
             let resolvedName = mappings.getPlatformMemberName(
                 <string>options.typeName,
                 <APIPlatform>options.platform,
-                <string>controlName);
+                <string>controlName, options.filePath);
             if (resolvedName) {
                 controlName = resolvedName;
             }
@@ -1384,12 +1399,13 @@ function omitFencedCode(options: any) {
 
         //highlight.js, used by docfx, doesn't currently support tsx highlighting.
         if (lang.toLowerCase() == "tsx") {
-            lang = "ts";
+            node.lang = "ts";
         }
-        if (lang.toLowerCase() == "razor") {
-            lang = "html";
-        }
-        node.lang = lang;
+        // commented out since the igniteui-docfx-templat supports razor language
+        //if (lang.toLowerCase() == "razor") {
+        //    node.lang = "html";
+        //}
+        //node.lang = lang;
         //console.log(node);
     }
 
@@ -1823,38 +1839,19 @@ export class MarkdownTransformer {
             let words = line.split(' ');
             for (let w = 0; w < words.length; w++) {
                 let word = words[w];
-                if (word.indexOf(".md#") >= 0) {
-                    let parts = word.split('#');
-                    let topic = parts[0];
-                    let header = parts[1];
-                    header = header.toLowerCase();
-                    header = header.replace('{platform}', '{PlatformLower}');
-                    header = header.replace('{platformlower}', '{PlatformLower}');
-                    let newLink = topic + '#' + header;
-                    if (newLink !== words[w]) {
-                        words[w] = newLink;
-                        console.log("auto-correct link: " + newLink);
+                let hasPlatformVariable = word.toLowerCase().indexOf("{platform") >= 0;
+                if (word.indexOf(".md#") >= 0 && hasPlatformVariable) {
+                    word = word.split('{platform}').join('{PlatformLower}');
+                    word = word.split('{Platform}').join('{PlatformLower}');
+                    word = word.split('{platformlower}').join('{PlatformLower}');
+                    if (word !== words[w]) {
+                        console.log("auto-correct link: \n" + words[w] + " to \n" + word);
+                        words[w] = word;
                     }
-
                 }
             }
             lines[i] = words.join(' ');
         }
-
-        // let words = fileContent.split(' ');
-        // for (let i = 0; i < words.length; i++) {
-        //     const word = words[i];
-        //     if (word.indexOf(".md#") >= 0) {
-        //         let parts = word.split('#');
-        //         let topic = parts[0];
-        //         let header = parts[1];
-        //         header = header.toLowerCase();
-        //         header = header.replace('{platform}', '{PlatformLower}');
-        //         header = header.replace('{platformlower}', '{PlatformLower}');
-        //         words[i] = topic + '#' + header;
-        //         console.log("verifyLinks " + words[i]);
-        //     }
-        // }
         return lines.join('\n');
     }
 
@@ -2181,7 +2178,7 @@ export class MarkdownTransformer {
                 node.status = "PREVIEW";
             } else if (node.beta) {
                 node.status = "BETA";
-            } 
+            }
              else {
                 node.status = "";
             }

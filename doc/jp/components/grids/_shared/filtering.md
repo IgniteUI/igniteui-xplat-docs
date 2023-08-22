@@ -59,8 +59,8 @@ _language: ja
 <!-- WebComponents -->
 ```html
 <{ComponentSelector} id="grid1" auto-generate="false" allow-filtering="true">
-    <igc-column field="ProductName" data-type="String"></igc-column>
-    <igc-column field="Price" data-type="Number" filterable="false"></igc-column>
+    <igc-column field="ProductName" data-type="string"></igc-column>
+    <igc-column field="Price" data-type="number" filterable="false"></igc-column>
 <{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
@@ -113,9 +113,9 @@ _language: ja
 <!-- WebComponents -->
 ```html
 <{ComponentSelector} auto-generate="false" allow-filtering="true">
-    <igc-column field="ProductName" data-type="String"></igc-column>
-    <igc-column field="Price" datdata-typeaType="Number"></igc-column>
-    <igc-column field="Discontinued" data-type="Boolean" filterable="false"></igc-column>
+    <igc-column field="ProductName" data-type="string"></igc-column>
+    <igc-column field="Price" datdata-typeaType="number"></igc-column>
+    <igc-column field="Discontinued" data-type="boolean" filterable="false"></igc-column>
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
@@ -176,6 +176,9 @@ this.grid.filter('ProductName', 'myproduct', IgcStringFilteringOperand.instance(
 > [!Note]
 > フィルタリング操作で `{ComponentName}` にバインドされているデータ ソースは**変更されません**。
 
+
+<!-- Angular -->
+
 ```typescript
 // Multi column filtering
 
@@ -203,11 +206,13 @@ gridFilteringExpressionsTree.filteringOperands.push(priceFilteringExpressionsTre
 this.@@igObjectRef.filteringExpressionsTree = gridFilteringExpressionsTree;
 ```
 
+<!-- end: Angular -->
+
 ```typescript
 // Multi column filtering
 
-const gridFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And);
-const productFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And, 'ProductName');
+const gridFilteringExpressionsTree = new IgcFilteringExpressionsTree(FilteringLogic.And);
+const productFilteringExpressionsTree = new IgcFilteringExpressionsTree(FilteringLogic.And, 'ProductName');
 const productExpression = {
     condition: IgcStringFilteringOperand.instance().condition('contains'),
     fieldName: 'ProductName',
@@ -217,7 +222,7 @@ const productExpression = {
 productFilteringExpressionsTree.filteringOperands.push(productExpression);
 gridFilteringExpressionsTree.filteringOperands.push(productFilteringExpressionsTree);
 
-const priceFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And, 'Price');
+const priceFilteringExpressionsTree = new IgcFilteringExpressionsTree(FilteringLogic.And, 'Price');
 const priceExpression = {
     condition: IgcNumberFilteringOperand.instance().condition('greaterThan'),
     fieldName: 'UnitPrice',
@@ -291,8 +296,8 @@ public ngAfterViewInit() {
 
 ```typescript
 constructor() {
-    const gridFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And);
-    const productFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And, 'ProductName');
+    const gridFilteringExpressionsTree = new IgcFilteringExpressionsTree(FilteringLogic.And);
+    const productFilteringExpressionsTree = new IgcFilteringExpressionsTree(FilteringLogic.And, 'ProductName');
     const productExpression = {
         condition: IgcStringFilteringOperand.instance().condition('contains'),
         fieldName: 'ProductName',
@@ -303,13 +308,18 @@ constructor() {
     gridFilteringExpressionsTree.filteringOperands.push(productFilteringExpressionsTree);
 
     this.grid.filteringExpressionsTree = gridFilteringExpressionsTree;
-    this.cdr.detectChanges();
 }
 ```
+
+<!-- end: Angular, WebComponents -->
 
 ### フィルター ロジック
 
 `{ComponentName}` コントロールの `FilteringLogic` プロパティは `{ComponentName}` で複数の列のフィルターが解決する方法を制御します。`{ComponentName}` API または `{ComponentName}` の入力プロパティによって変更できます。
+
+```razor
+ <IgbGrid FilteringLogic="FilteringLogic.Or"></IgbGrid>
+```
 
 <!-- Angular -->
 ```typescript
@@ -321,7 +331,7 @@ this.@@igObjectRef.filteringLogic = FilteringLogic.OR;
 
 <!-- WebComponents -->
 ```typescript
-import { FilteringLogic } from 'igniteui-webcomponents-grids';
+import { FilteringLogic } from "igniteui-webcomponents-grids/grids";
 
 this.grid.filteringLogic = FilteringLogic.OR;
 ```
@@ -338,6 +348,8 @@ this.grid.filteringLogic = FilteringLogic.OR;
 `{ComponentName}` はリモート フィルタリングをサポートします。詳細については、[{ComponentTitle} リモート データの操作](remote-data-operations.md)をご確認ください。
 <!-- ComponentEnd: Grid, TreeGrid -->
 <!-- end: Angular -->
+
+<!-- Angular, WebComponents -->
 
 ## カスタム フィルタリング オペランド
 
@@ -409,15 +421,16 @@ export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
 }
 ```
 
+<!-- end: Angular -->
+
 ```typescript
-// grid-custom-filtering.component.ts
 
 export class GridCustomFilteringComponent {
     public caseSensitiveFilteringOperand = CaseSensitiveFilteringOperand.instance();
     public booleanFilteringOperand = BooleanFilteringOperand.instance();
 }
 
-export class CaseSensitiveFilteringOperand extends IgxStringFilteringOperand {
+export class CaseSensitiveFilteringOperand extends IgcStringFilteringOperand {
     private constructor() {
         super();
         const customOperations = [
@@ -456,7 +469,7 @@ export class CaseSensitiveFilteringOperand extends IgxStringFilteringOperand {
     }
 }
 
-export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
+export class BooleanFilteringOperand extends IgcBooleanFilteringOperand {
     private constructor() {
         super();
         this.operations = [
@@ -492,8 +505,8 @@ export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
 <!-- grid-custom-filtering.component.html -->
 
 <{ComponentSelector} auto-generate="false" allow-filtering="true">
-    <igc-column id="ProductName" field="ProductName" header="Product Name" data-type="String"></igc-column>
-    <igc-column id="Discontinued" field="Discontinued" header="Discontinued" data-type="Boolean"></igc-column>
+    <igc-column id="ProductName" field="ProductName" header="Product Name" data-type="string"></igc-column>
+    <igc-column id="Discontinued" field="Discontinued" header="Discontinued" data-type="boolean"></igc-column>
 </{ComponentSelector}>
 ```
 ```ts
@@ -502,14 +515,16 @@ constructor() {
     var discontinued = this.discontinued = document.getElementById('Discontinued') as IgcColumnComponent;
 
     this._bind = () => {
-        productName.bodyTemplate = this.caseSensitiveFilteringOperand;
-        discontinued.bodyTemplate = this.booleanFilteringOperand;
+        productName.filters = this.caseSensitiveFilteringOperand;
+        discontinued.filters = this.booleanFilteringOperand;
     }
     this._bind();
 }
 ```
 <!-- end: WebComponents -->
 <!-- ComponentEnd: Grid, TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
 
 ```html
 <!-- hierarchical-grid-custom-filtering.component.html -->
@@ -529,8 +544,8 @@ constructor() {
 <!-- grid-custom-filtering.component.html -->
 
 <igc-hierarchical-grid auto-generate="false" allow-filtering="true">
-    <igc-column id="Artist" field="Artist" filterable='true' data-type="String" [filters]="caseSensitiveFilteringOperand"></igc-column>
-    <igc-column id="HasGrammyAward" field="HasGrammyAward" filterable='true' data-type="Boolean" [filters]="booleanFilteringOperand"></igc-column>
+    <igc-column id="Artist" field="Artist" filterable='true' data-type="string" [filters]="caseSensitiveFilteringOperand"></igc-column>
+    <igc-column id="HasGrammyAward" field="HasGrammyAward" filterable='true' data-type="boolean" [filters]="booleanFilteringOperand"></igc-column>
 </igc-hierarchical-grid>
 ```
 ```ts
@@ -546,11 +561,15 @@ constructor() {
 }
 ```
 
-<!-- Angular -->
+<!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- NOTE this sample is differed -->
+
 
 `sample="/{ComponentSample}/custom-filtering", height="600", alt="{Platform} {ComponentTitle} カスタム フィルタリングの例"`
+
+<!-- end: Angular, WebComponents -->
+
+<!-- Angular -->
 
 ## フィルター セルの再テンプレート化
 
@@ -582,6 +601,40 @@ public matchingRecordsOnlyStrategy = new TreeGridMatchingRecordsOnlyFilteringStr
 ```
 
 <!-- ComponentEnd: TreeGrid -->
+
+
+<!-- WebComponents, Blazor -->
+
+## スタイル設定
+
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
+一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
+
+```ts
+<igc-grid class="grid">
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+次に、そのクラスに関連する CSS プロパティを設定します。
+
+```css
+.grid {
+    --ig-grid-filtering-row-text-color: #292826;
+    --ig-grid-filtering-row-background: #ffcd0f;
+    --ig-grid-filtering-header-text-color: #292826;
+    --ig-grid-filtering-header-background: #ffcd0f;
+}
+```
+
+### デモ
+
+`sample="/{ComponentSample}/filtering-style", height="500", alt="{Platform} {ComponentTitle} フィルタリング スタイルの例"`
+
+
+<!-- end: WebComponents, Blazor -->
 
 <!-- Angular -->
 

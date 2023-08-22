@@ -15,8 +15,21 @@ _language: ja
 さらに、データ更新アクション用の独自のカスタム テンプレートを定義したり、変更をコミット/破棄したりするためのデフォルトの動作をオーバーライドすることもできます。
 
 ## {Platform} {ComponentTitle} セル編集と編集テンプレートの例
+<!-- WebComponents -->
 
 `sample="/{ComponentSample}/editing-columns", height="700", alt="{Platform} {ComponentTitle} セル編集と編集テンプレートの例"`
+
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+
+<!-- ComponentStart: Grid -->
+
+`sample="/{ComponentSample}/editing-columns", height="700", alt="{Platform} {ComponentTitle} セル編集と編集テンプレートの例"`
+
+<!-- ComponentEnd: Grid -->
+
+<!-- end: Blazor -->
 
 <!-- Angular -->
 
@@ -742,8 +755,8 @@ export class MyHGridEventsComponent {
 
 ```css
 .grid {
-    --igx-grid-edit-mode-color: orange;
-    --igx-grid-cell-editing-background: lightblue;
+    --ig-grid-edit-mode-color: orange;
+    --ig-grid-cell-editing-background: lightblue;
 }
 ```
 

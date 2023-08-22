@@ -620,7 +620,7 @@ Then set the related CSS property for that class:
 
 ```css
 .grid {
-    --igx-grid-resize-line-color: #f35b04;
+    --ig-grid-resize-line-color: #f35b04;
 }
 ```
 
@@ -629,7 +629,7 @@ Then set the related CSS property for that class:
 ```razor
 <style>
 .grid {
-    --igx-grid-resize-line-color: #f35b04;
+    --ig-grid-resize-line-color: #f35b04;
 }
 </style>
 ```

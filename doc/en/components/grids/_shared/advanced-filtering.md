@@ -477,8 +477,8 @@ Then set the related CSS properties to this class:
 
 ```css
 .grid {
-    --igx-grid-filtering-row-background: #ffcd0f;
-    --igx-grid-filtering-background-or: #d83434;
+    --ig-grid-filtering-row-background: #ffcd0f;
+    --ig-grid-filtering-background-or: #d83434;
 }
 ```
 ### Demo

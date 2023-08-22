@@ -220,14 +220,14 @@ export class {ComponentName}RowEditSampleComponent {
 igRegisterScript("RowEditTextTemplate", (ctx) => {
     var html = window.igTemplating.html;
     return html`<div>
-   Changes: ${ctx.$implicit}
+   Changes: ${ctx.implicit}
 </div>`;
 }, false);
  ```
 
  ```ts
 public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
-    return html`Changes: ${ctx.$implicit}`;
+    return html`Changes: ${ctx.implicit}`;
 }
 ```
 
@@ -249,20 +249,20 @@ public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
  ```razor
  igRegisterScript("RowEditActionsTemplate", (ctx) => {
     var html = window.igTemplating.html;
-    window.endRowEdit = ctx.$implicit;
+    window.endRowEdit = ctx.implicit;
     return html`<div>
-  	<button onclick="endRowEdit(false)">Cancel</button>
-	<button onclick="endRowEdit(true)">Apply</button>
+  	<button @click="(event) => endRowEdit(false, event)">Cancel</button>
+	<button @click="(event) => endRowEdit(true, event)">Apply</button>
 </div>`;
 }, false);
  ```
 
  ```ts
 public rowEditActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
-    const endRowEdit = ctx.$implicit;
+    const endRowEdit = ctx.implicit;
     return html`
-        <button @click="${() => endRowEdit(false)}">Cancel</button>
-        <button @click="${() => endRowEdit(true)}">Apply</button>
+        <button @click="${(event) => endRowEdit(false, event)}">Cancel</button>
+        <button @click="${(event) => endRowEdit(true, event)}">Apply</button>
     `;
 }
 ```
@@ -413,8 +413,8 @@ Then set the related CSS properties for that class:
 
 ```css
 .grid {
-    --igx-banner-banner-background: #e3e3e3;
-    --igx-banner-banner-message-color: #423589;
+    --ig-banner-banner-background: #e3e3e3;
+    --ig-banner-banner-message-color: #423589;
 }
 ```
 
