@@ -270,7 +270,7 @@ As an example, the following template would make the group rows summary more ver
 
 ```ts
     public groupByRowTemplate = (ctx: IgcGroupByRowTemplateContext) => {
-        const groupRow: any = ctx["$implicit"];
+        const groupRow: IgcGroupByRecord = ctx.implicit;
         return html`<span>Total items with value: ${ groupRow.value } are ${ groupRow.records.length }</span>`;
     }
 ```
@@ -282,7 +282,7 @@ As an example, the following template would make the group rows summary more ver
 //In JavaScript:
 igRegisterScript("WebGridGroupByRowTemplate", (ctx) => {
     var html = window.igTemplating.html;
-    var groupRow = ctx["$implicit"];
+    var groupRow = ctx.implicit;
     return html`<span>Total items with value: ${groupRow.value} are ${groupRow.records.length}</span>`;
 }, false);
 ```
@@ -302,9 +302,8 @@ The `SelectedCount` property shows how many of the group records are currently s
 
 ```ts
     public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateContext) => {
-        const context: any = (ctx as any)["$implicit"];
         return html`
-            ${ context.selectedCount } / ${ context.totalCount  }
+            ${ ctx.implicit.selectedCount } / ${ ctx.implicit.totalCount  }
         `;
     }
 ```
@@ -314,8 +313,7 @@ The `SelectedCount` property shows how many of the group records are currently s
 //In Javascript
 igRegisterScript("GroupByRowSelectorTemplate", (ctx) => {
     var html = window.igTemplating.html;
-    var context = ctx["$implicit"];
-    return html` ${context.selectedCount} / ${context.totalCount} `;
+    return html` ${ctx.implicit.selectedCount} / ${ctx.implicit.totalCount} `;
 }, false);
 ```
 
@@ -329,8 +327,7 @@ The `GroupRow` property returns a reference to the group row.
 
 ```ts
     public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateContext) => {
-        const context: any = (ctx as any)["$implicit"];
-        const groupRow = context.groupRow;
+        const groupRow = ctx.implicit.groupRow;
         return html` <div @click=${(e: any) => this.handleGroupByRowSelectorClick(e, groupRow)} ">Handle groupRow</div> `;
     };
 ```
@@ -340,8 +337,7 @@ The `GroupRow` property returns a reference to the group row.
 //In Javascript
 igRegisterScript("GroupByRowSelectorTemplate", (ctx) => {
     var html = window.igTemplating.html;
-    var context = ctx["$implicit"];
-    var groupRow = context.groupRow;
+    var groupRow = ctx.implicit.groupRow;
     return html`<div onclick="handleGroupByRowSelectorClick()">Handle groupRow</div> `;
 }, false);
 ```
@@ -467,13 +463,13 @@ Then set the related CSS properties for that class:
 
 ```css
 .grid {
-    --igx-grid-group-row-background: #969799;
-    --igx-grid-group-row-selected-background: #969799;
-    --igx-grid-group-label-column-name-text: #f8f8f8;
-    --igx-grid-group-label-text: #f8f8f8;
-    --igx-grid-group-count-text-color: #222;
-    --igx-grid-expand-icon-color: #f8f8f8;
-    --igx-grid-expand-icon-hover-color: #f8f8f8;
+    --ig-grid-group-row-background: #969799;
+    --ig-grid-group-row-selected-background: #969799;
+    --ig-grid-group-label-column-name-text: #f8f8f8;
+    --ig-grid-group-label-text: #f8f8f8;
+    --ig-grid-group-count-text-color: #222;
+    --ig-grid-expand-icon-color: #f8f8f8;
+    --ig-grid-expand-icon-hover-color: #f8f8f8;
 }
 ```
 

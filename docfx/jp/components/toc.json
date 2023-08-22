@@ -293,7 +293,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React", "Blazor"],
         "name": "リモート データ操作",
         "href": "grids/grid/remote-data-operations.md",
         "status": ""
@@ -1696,7 +1696,7 @@
     "href": "inputs/select.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "評価",
     "href": "inputs/rating.md"
   },

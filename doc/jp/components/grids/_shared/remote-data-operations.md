@@ -8,7 +8,7 @@ _language: ja
 ---
 
 # {Platform} {ComponentTitle} のリモート データ操作
-
+<!-- Angular -->
 {ProductName} `{ComponentName}` は、リモート仮想化、リモート ソート、リモート フィルタリングなどのリモート データ操作をサポートします。これにより、開発者はこれらのタスクをサーバー上で実行し、生成されたデータを取得して `{ComponentName}` に表示できます。
 
 ## {Platform} {ComponentTitle} リモート データ操作概要の例
@@ -18,7 +18,7 @@ _language: ja
 `sample="/{ComponentSample}/remote-filtering-data", height="550", alt="{Platform} {ComponentTitle} リモート データ操作概要の例"`
 
 
-
+<!-- end: Angular -->
 デフォルトで、`{ComponentName}` は独自のロジックを使用してデータ操作を実行します。
 
 これらのタスクをリモートで実行し、`{ComponentName}`で公開される特定の入力とイベントを使用して `{ComponentName}` に結果のデータを供給できます。
@@ -88,13 +88,17 @@ BLAZOR CODE SNIPPET HERE
 
 <!-- end: Angular -->
 
-<!-- Angular -->
+<!-- Angular, WebComponents -->
 
 ## 無限スクロール
 
  エンドポイントからデータを分割して取得するシナリオの一般的なデザインは、無限スクロールです。データ グリッドの場合、エンドユーザーが一番下までスクロールすることによってトリガーされたロードデータが連続的に増加します。次の段落では、使用可能な API を使用して `{ComponentName}` で無限スクロールを簡単に実現する方法について説明します。
 
 無限スクロールを実装するには、データを分割してフェッチする必要があります。すでにフェッチされたデータはローカルに保存し、チャンクの長さおよび数を決定する必要があります。また、グリッドで最後に表示されるデータ行インデックスを追跡する必要があります。このように、`StartIndex` と `ChunkSize` プロパティを使用して、ユーザーが上にスクロールして既にフェッチしたデータを表示するか、下にスクロールしてエンドポイントからさらにデータをフェッチする必要があるかを決定できます。
+
+<!-- end: Angular, WebComponents -->
+
+<!-- Angular -->
 
 最初に、データの最初のチャンクをフェッチするために `ngAfterViewInit` ライフサイクル フックを使用します。`TotalItemCount` プロパティはグリッドがスクロールバーのサイズを正しく設定できるために重要です。
 
@@ -149,18 +153,19 @@ BLAZOR CODE SNIPPET HERE
 
 <!-- end: Angular -->
 
-<!-- Angular -->
+<!-- WebComponents -->
+<!-- end: WebComponents -->
+
+
 
 ### 無限スクロールのデモ
 
-<!-- NOTE this sample is differed -->
-
-`sample="/{ComponentSample}/data-performance-infinite-scroll", height="550", alt="{Platform} {ComponentTitle} リモート データ操作の無限スクロールの例"`
+`sample="/{ComponentSample}/infinite-scroll", height="550", alt="{Platform} {ComponentTitle} リモート データ操作の無限スクロールの例"`
 
 
 
-<!-- end: Angular -->
 
+<!-- Angular -->
 ## リモート ソート/フィルタリング
 
 リモート ソートおよびフィルタリングは、`DataPreLoad`、`SortingExpressionsChange`、および `FilteringExpressionsTreeChange` 出力にサブスクライブし、パブリック `{ComponentName}` プロパティの `TotalItemCount` をサービスから送信される個々の情報とともに設定し、受け取った引数に基づいて適切な要求を作成します。
@@ -366,9 +371,7 @@ this.remoteValuesService.getColumnData(
 BLAZOR CODE SNIPPET HERE
 ```
 
-<!-- Angular -->
 Excel スタイル フィルタリングのカスタム ロード テンプレートを提供するには、`ExcelStyleLoading` ディレクティブを使用できます。
-<!-- end:Angular -->
 
 ```html
 <igx-grid [data]="data" [filterMode]="'excelStyleFilter'" [uniqueColumnValuesStrategy]="columnValuesStrategy">
@@ -920,6 +923,7 @@ BLAZOR CODE SNIPPET HERE
 
 
 <!-- ComponentEnd: Grid -->
+<!-- end: Angular -->
 
 ## 既知の問題と制限
 
