@@ -281,9 +281,6 @@ combo.deselect([cities[1], cities[5]]);
 ## API リファレンス
 
 * `Combo`
-* `ComboItem`
-* `ComboHeader`
-* `ComboList`
 
 ## その他のリソース
 
