@@ -121,13 +121,13 @@
   },
   {
     "note": "THIS MAIN NODE FOR NEW XPLAT GRID",
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Grids & Lists",
     "header": true,
     "href": "grids/grids-header.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Grid",
     "href": "grids/data-grid.md",
     "status": "",
@@ -139,7 +139,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Cell Editing",
         "href": "grids/grid/cell-editing.md",
         "status": ""
@@ -194,7 +194,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Column Types",
         "href": "grids/grid/column-types.md",
         "status": ""
@@ -212,7 +212,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Editing",
         "href": "grids/grid/editing.md",
         "status": ""
@@ -248,7 +248,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Master-Detail",
         "href": "grids/grid/master-detail.md",
         "status": ""
@@ -320,7 +320,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Row Editing",
         "href": "grids/grid/row-editing.md",
         "status": ""
@@ -368,7 +368,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Summaries",
         "href": "grids/grid/summaries.md",
         "status": ""
@@ -526,7 +526,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "WebComponents"],
         "name": "Row Editing",
         "href": "grids/hierarchical-grid/row-editing.md",
         "status": ""
@@ -770,7 +770,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "WebComponents", "Blazor"],
         "name": "Row Editing",
         "href": "grids/tree-grid/row-editing.md",
         "status": "NEW"
