@@ -280,9 +280,6 @@ You can change the appearance of the {ProductName} `Combo` component and its ite
 ## API Reference
 
 * `Combo`
-* `ComboItem`
-* `ComboHeader`
-* `ComboList`
 
 ## Additional Resources
 
