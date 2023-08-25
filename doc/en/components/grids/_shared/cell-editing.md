@@ -323,6 +323,69 @@ Working sample of the above can be found here for further referencee:
 
 <!-- end: WebComponents -->
 
+<!-- React -->
+
+If you want to provide a custom template which will be applied to a cell, you can pass such template either to the cell itself, or to its header. First create the column as you usually would:
+
+```html
+
+<igrColumn
+    field="race"
+    header="Race"
+    data-type="string"
+    editable="true"
+    name="column1"
+    id="column1">
+</igrColumn>
+
+```
+
+and pass the templates to this column in the index.ts file:
+
+```ts
+
+constructor(props: any) {
+    super(props);
+
+        this.propertyEditorRef = this.propertyEditorRef.bind(this);
+        this.gridRef = this.gridRef.bind(this);
+
+        var column1 = document.getElementById('column1') as IgrGridColumnComponent;
+        var column2 = document.getElementById('column2') as IgrGridColumnComponent;
+        var column3 = document.getElementById('column3') as IgrGridColumnComponent;
+
+        gridRef.data = this.webGridCellEditSampleRoleplay;
+        column1.inlineEditorTemplate = this.webGridCellEditCellTemplate;
+        column2.inlineEditorTemplate = this.webGridCellEditCellTemplate;
+        column3.inlineEditorTemplate = this.webGridCellEditCellTemplate;
+    }
+
+
+public webGridCellEditCellTemplate = (ctx: IgrCellTemplateContext) => {
+        let cellValues: any = [];
+        let uniqueValues: any = [];
+        for(const i of (this.webGridCellEditSampleRoleplay as any)){
+            const field: string = ctx.cell.column.field;
+            if(uniqueValues.indexOf(i[field]) === -1 )
+            {
+                cellValues.push(html`<igc-select-item value=${i[field]}>${(i[field])}</igc-select-item>`);
+                uniqueValues.push(i[field]);
+            }
+        }
+        return html`
+        <igc-select style="width:100%; height:100%" size="large" @igcChange=${(e: any) => ctx.cell.editValue = e.detail.value}>
+              ${cellValues}
+        </igc-select>
+    `;
+    }
+
+```
+Working sample of the above can be found here for further referencee: 
+
+`sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
+
+<!-- end: WebComponents -->
+
 <!-- Angular -->
 
 <!-- For more information on how to configure columns and their templates, you can see the documentation for [Grid Columns configuration](../grid/grid.md#angular-grid-column-configuration). -->
