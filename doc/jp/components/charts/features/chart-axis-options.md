@@ -42,6 +42,14 @@ _language: ja
 
 `AutoMarginAndAngleUpdateMode` を設定した後、`ShouldAutoExpandMarginForInitialLabels` プロパティを true に設定して自動マージンをオプトインするか `ShouldConsiderAutoRotationForInitialLabels` プロパティを true に設定して自動回転を行うことができます。`AutoExpandMarginExtraPadding` と `AutoExpandMarginMaximumValue` を設して、それぞれ追加のスペースまたは可能な最大マージンを提供することにより、適用される自動マージンをさらにカスタマイズすることもできます。
 
+Custom label formats such as `NumberFormatSpecifier` and `DateTimeFormatSpecifier` can be added to each axis via the `XAxisLabelFormatSpecifier` and `YAxisLabelFormatSpecifier` collections. Commonly used for applying Intl.NumberFormat and Intl.DateTimeFormat language sensitive number, date and time formatting. In order for a custom format to be applied to the labels, the `YAxisLabelFormat` or `XAxisLabelFormat` need to be set to `{0}` on the `CategoryChart`.
+
+The following example formats the yAxis with a `NumberFormatSpecifier` to reprerent $USD prices for top box office movies in the United States.
+
+`sample="/charts/category-chart/format-specifiers", height="450", alt="{Platform} Format Specifiers for Axis Labels"`
+
+<div class="divider--half"></div>
+
 ## 軸範囲の例
 
 チャートでは数値軸または時間軸の範囲の最小値と最大値を定義できます。範囲の最小値は軸の最小値で、範囲の最大値は軸の最大値です。これらは、`YAxisMinimumValue` および `YAxisMaximumValue` オプションを設定することによって設定されます。
