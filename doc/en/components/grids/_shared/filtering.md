@@ -64,6 +64,15 @@ Property `Filterable` enables you to specify the following options:
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+```html
+<{ComponentSelector} data={this.nwindData} autoGenerate="false" ref={this.gridRef} allowFiltering="true">
+    <IgrColumn field="ProductName" dataType="String"></IgrColumn>
+    <IgrColumn field="UnitPrice" data-type="Number" filterable="false"></IgrColumn>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
 To enable the [Advanced filtering](advanced-filtering.md) however, you need to set the `AllowAdvancedFiltering` input property to **true**.
 
 <!-- Angular -->
@@ -83,6 +92,13 @@ To enable the [Advanced filtering](advanced-filtering.md) however, you need to s
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```html
+<{ComponentSelector} data={nwindData} autoGenerate="false" ref={gridRef} allowAdvancedFiltering="true">
+</{ComponentSelector}>
+```
+<!-- end: React -->
 
 > [!Note]
 >You can enable both the `QuickFilter` or `ExcelStyleFilter` and the advanced filtering user interfaces in the `{ComponentName}`. Both filtering user interfaces will work independently of one another. The final filtered result in the `{ComponentName}` is the intersection between the results of the two filters.
@@ -118,6 +134,17 @@ The filtering feature is enabled for the `{ComponentName}` component by setting 
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```html
+<{ComponentSelector} autoGenerate="false" allowFiltering="true">
+    <IgrColumn field="ProductName" dataType="String"></IgrColumn>
+    <IgrColumn field="Price" dataType="Number"></IgrColumn>
+    <IgrColumn field="Discontinued" dataType="Boolean" filterable="false"></IgrColumn>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -337,6 +364,12 @@ import { FilteringLogic } from "igniteui-webcomponents-grids/grids";
 this.grid.filteringLogic = FilteringLogic.OR;
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```html
+<{ComponentName} filteringLogic={FilteringLogic.Or}></{ComponentName}>
+```
+<!-- end: React -->
 
 The default value of `AND` returns only the rows that match all the currently applied filtering expressions. Following the example above, a row will be returned when both the 'ProductName' cell value contains 'myproduct' and the 'Price' cell value is greater than 55.
 
@@ -606,7 +639,7 @@ public matchingRecordsOnlyStrategy = new TreeGridMatchingRecordsOnlyFilteringStr
 <!-- ComponentEnd: TreeGrid -->
 
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 ## Styling
 
@@ -619,6 +652,10 @@ In case you would like to change some of the colors, you need to set a class for
 
 ```razor
 <IgbGrid Class="grid"></IgbGrid>
+```
+
+```ts
+<IgrGrid className="grid"></IgrGrid>
 ```
 
 Then set the related CSS properties for that class:
@@ -637,7 +674,7 @@ Then set the related CSS properties for that class:
 `sample="/{ComponentSample}/filtering-style", height="500", alt="{Platform} {ComponentTitle} Filtering Style Example"`
 
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- Angular -->
 
