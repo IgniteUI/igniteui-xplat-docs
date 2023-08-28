@@ -194,6 +194,23 @@ The following example demonstrates how to configure a linear stepper:
 
 <div class="divider--half"></div>
 
+### Stepper Animations
+
+The {Platform} `Stepper` Animations provide the end-users with a beautiful experience interacting with the defined steps. The available animation options differ depending on the orientation of the stepper.
+
+When the stepper is horizontally orientated, it is configured to use the `slide` animation by default. It also supports `fade` as an alternative. The animations are configured through the `horizontalAnimation` input.
+
+In a vertically orientated layout, the animation type could be defined using the `verticalAnimation` property. By default, its value is set to `grow` and the user has the ability to set it to `fade` as well.
+
+Setting `none` to both animation type inputs disables stepper animations.
+
+The `Stepper` component also gives you the ability to configure the duration of the transition between the steps. This could be achieved through the `animationDuration` property, which takes a number as an argument and it is common to both orientations. The default value is set to 320ms.
+
+`sample="/layouts/stepper/animations", height="430", alt="{Platform} Stepper Animations Example"`
+
+
+<div class="divider--half"></div>
+
 ### Step Interactions
 
 `Stepper` provides the following API methods for step interactions:
