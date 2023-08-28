@@ -42,11 +42,11 @@ _language: ja
 
 `AutoMarginAndAngleUpdateMode` を設定した後、`ShouldAutoExpandMarginForInitialLabels` プロパティを true に設定して自動マージンをオプトインするか `ShouldConsiderAutoRotationForInitialLabels` プロパティを true に設定して自動回転を行うことができます。`AutoExpandMarginExtraPadding` と `AutoExpandMarginMaximumValue` を設して、それぞれ追加のスペースまたは可能な最大マージンを提供することにより、適用される自動マージンをさらにカスタマイズすることもできます。
 
-Custom label formats such as `NumberFormatSpecifier` and `DateTimeFormatSpecifier` can be added to each axis via the `XAxisLabelFormatSpecifier` and `YAxisLabelFormatSpecifier` collections. Commonly used for applying Intl.NumberFormat and Intl.DateTimeFormat language sensitive number, date and time formatting. In order for a custom format to be applied to the labels, the `YAxisLabelFormat` or `XAxisLabelFormat` need to be set to `{0}` on the `CategoryChart`.
+`NumberFormatSpecifier` や `DateTimeFormatSpecifier` などのカスタム ラベル形式は、`XAxisLabelFormatSpecifier` および `YAxisLabelFormatSpecifier` コレクションを介して各軸に追加できます。一般に、Intl.NumberFormat および Intl.DateTimeFormat の言語に依存した数値、日付、時刻の書式設定を適用するために使用されます。カスタム形式をラベルに適用するには、`CategoryChart` で `YAxisLabelFormat` または `XAxisLabelFormat` を `{0}` に設定する必要があります。
 
-The following example formats the yAxis with a `NumberFormatSpecifier` to reprerent $USD prices for top box office movies in the United States.
+次の例では、yAxis を `NumberFormatSpecifier` でフォーマットして、米国のトップ興行収入映画の $USD 価格を表します。
 
-`sample="/charts/category-chart/format-specifiers", height="450", alt="{Platform} Format Specifiers for Axis Labels"`
+`sample="/charts/category-chart/format-specifiers", height="450", alt="軸ラベルの {Platform} 形式指定子"`
 
 <div class="divider--half"></div>
 
