@@ -138,7 +138,7 @@ this.grid.clearCellSelection();
 ```
 <!-- end: Blazor -->
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 `GetSelectedData` will return array of the selected data in format depending on the selection. Examples below:
 
 - If three different single cells are selected:
@@ -200,7 +200,7 @@ expectedData = [
 ];
 ```
 
-<!-- end: Angular, WebComponents -->
+<!-- end: Angular, WebComponents, React -->
 
 <!-- Angular -->
 > [!Note]
@@ -223,7 +223,7 @@ The multi-cell selection is index based (DOM elements selection).
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 ## Styling
 
@@ -232,8 +232,14 @@ In case you would like to change some of the colors, you need to set a class for
 
 <!-- ComponentStart: Grid -->
 
+<!-- WebComponents -->
 ```ts
 <igc-grid class="grid">
+```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrGrid className="grid"></IgrGrid>
 ```
 
 ```razor
@@ -273,14 +279,14 @@ Then set the related CSS properties for that class:
 }
 ```
 
-<!-- ComponentEnd: Grid -->
+<!-- ComponentEnd: TreeGrid -->
 
 ### Demo
 
 `sample="/{ComponentSample}/cell-selection-style", height="620", alt="{Platform} {ComponentTitle} Cell Selection Styling Example"`
 
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- Angular -->
 ## Styling Guidelines
@@ -355,17 +361,13 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 ## API References
 
 * `{ComponentName}`
+* `Cell`
 <!-- ComponentStart: Grid, HierarchicalGrid -->
-
 * `GridRow`
-
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 <!-- ComponentStart: TreeGrid -->
-
 * `TreeGridRow`
-
 <!-- ComponentEnd: TreeGrid -->
-* `GridCell`
 
 ## Additional Resources
 
