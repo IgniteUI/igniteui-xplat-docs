@@ -170,7 +170,7 @@ public onColumnMovingEnd(event) {
 <!-- end: WebComponents -->
 
 ```tsx
-function onColumnMovingEnd(grid: IgrGridBaseDirective, e: IgrColumnMovingEventArgs) {
+function onColumnMovingEnd(grid: IgrGridBaseDirective, event: IgrColumnMovingEventArgs) {
    if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {
         event.detail.cancel = true;
     }
