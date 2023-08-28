@@ -45,6 +45,16 @@ public headerTemplate = (ctx: IgcCellTemplateContext) => {
 }
 ```
 
+```tsx
+function headerTemplate(ctx: IgrCellTemplateContext) {
+    return (
+    <>
+       <IgrIcon draggable="false" onClick="{onClick}"></IgrIcon>
+    </>
+    );
+}
+```
+
 ## {Platform} {ComponentTitle} Column Moving Overview Example
 
 `sample="/{ComponentSample}/column-moving-options", height="650", alt="{Platform} {ComponentTitle} Column Moving Overview Example"`
@@ -70,6 +80,12 @@ public headerTemplate = (ctx: IgcCellTemplateContext) => {
 <{ComponentSelector} moving="true"></{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} moving="true"></{ComponentSelector}>
+```
+<!-- end: React -->
 
 ## API
 
@@ -132,8 +148,8 @@ You can subscribe to the `ColumnMovingEnd` event of the `{ComponentName}` to imp
 <!-- WebComponents -->
 ```html
 <{ComponentSelector} id="dataGrid" auto-generate="false" moving="true">
-    <igc-column field="Category"></igx-column>
-    <igc-column field="Change On Year(%)" data-type="Number" ></igx-column>
+    <igc-column field="Category"></igc-column>
+    <igc-column field="Change On Year(%)" data-type="Number" ></igc-column>
 </{ComponentSelector}>
 ```
 ```typescript
@@ -144,8 +160,6 @@ constructor() {
 
 }
 ```
-<!-- end: WebComponents -->
-
 ```typescript
 public onColumnMovingEnd(event) {
     if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {
@@ -153,7 +167,20 @@ public onColumnMovingEnd(event) {
     }
 }
 ```
+<!-- end: WebComponents -->
 
+```tsx
+function onColumnMovingEnd(grid: IgrGridBaseDirective, e: IgrColumnMovingEventArgs) {
+   if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {
+        event.detail.cancel = true;
+    }
+}
+
+<{ComponentSelector} autoGenerate="false" moving="true" data={data} columnMovingEnd={onColumnMovingEnd}>
+    <IgrColumn field="Category"></IgrColumn>
+    <IgrColumn field="Change On Year(%)" dataType="Number" ></IgrColumn>
+</{ComponentSelector}>
+```
 ```razor
     <{ComponentSelector} ShowGroupArea="true" @ref='Grid' Width="100%" Height="100%"
              AllowFiltering=true
@@ -296,7 +323,7 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 ## Styling
 
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
@@ -304,11 +331,15 @@ In addition to the predefined themes, the grid could be further customized by se
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
 ```html
-<igc-grid class="grid"></igc-grid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 Then set the related CSS properties to this class:
@@ -324,7 +355,7 @@ Then set the related CSS properties to this class:
 
 `sample="/{ComponentSample}/column-moving-styles", height="650", alt="{Platform} {ComponentTitle} Grid Moving Styled Example"`
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 ## API References
 
