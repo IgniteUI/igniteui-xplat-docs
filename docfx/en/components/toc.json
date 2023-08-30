@@ -127,7 +127,7 @@
     "href": "grids/grids-header.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Grid",
     "href": "grids/data-grid.md",
     "status": "",
@@ -182,7 +182,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Column Resizing",
         "href": "grids/grid/column-resizing.md",
         "status": ""
