@@ -127,7 +127,7 @@
     "href": "grids/grids-header.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Grid",
     "href": "grids/data-grid.md",
     "status": "",
@@ -212,7 +212,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Editing",
         "href": "grids/grid/editing.md",
         "status": ""
