@@ -127,7 +127,7 @@
     "href": "grids/grids-header.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Grid",
     "href": "grids/data-grid.md",
     "status": "",
@@ -206,7 +206,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Display Density",
         "href": "grids/grid/display-density.md",
         "status": ""
