@@ -236,7 +236,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Group By",
         "href": "grids/grid/groupby.md",
         "status": ""
