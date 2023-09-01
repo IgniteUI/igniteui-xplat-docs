@@ -58,6 +58,16 @@ constructor() {
     grid.data = this.data;
 }
 ```
+<!-- React -->
+```html
+<{ComponentName} data={nwindData} autoGenerate="false">
+    <IgrColumn field="Name" pinned="true"></IgrColumn>
+    <IgrColumn field="AthleteNumber"></IgrColumn>
+    <IgrColumn field="TrackProgress"></IgrColumn>
+</{ComponentName}>
+```
+<!-- end: React -->
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -130,7 +140,7 @@ Both methods return a boolean value indicating whether their respective operatio
 
 A column is pinned to the right of the rightmost pinned column. Changing the order of the pinned columns can be done by subscribing to the `ColumnPin` event and changing the `InsertAtIndex` property of the event arguments to the desired position index.
 
-<!-- end: Angular, React, WebComponents -->
+<!-- end: Angular, React, WebComponents, React -->
 
 <!-- Blazor -->
 
@@ -209,6 +219,17 @@ var grid = (this.grid = document.getElementById('dataGrid') as any) as IgcGridCo
 grid.pinning = { columns: ColumnPinningPosition.End };
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```typescript
+const pinningConfig = new IgrPinningConfig();
+pinningConfig.columns = ColumnPinningPosition.End;
+```
+
+```html
+<IgrGrid data={nwindData} autoGenerate="true" pinning={pinningConfig}></IgrGrid>
+```
+<!-- end: React -->
 
 ```razor
 <{ComponentSelector} Data=data AutoGenerate=true Pinning="pinningConfig"></IgbGrid>
@@ -330,6 +351,42 @@ igRegisterScript("WebGridPinHeaderTemplate", (ctx) => {
 </div>`;
 }, false);
 ```
+
+<!-- React -->
+```html
+<IgrGrid autoGenerate="false" data={CustomersData} name="grid" ref={grid}>
+    <IgrColumn field="ID" hidden="true"></IgrColumn>
+
+    <IgrColumn field="CompanyName" header="Company" width="300px" 
+    name="column1" headerTemplate={toggleColumnPin}></IgrColumn>
+
+    <IgrColumn field="ContactName" header="Name" width="200px" pinned="true"
+    name="column2" headerTemplate={toggleColumnPin}> </IgrColumn>
+
+    <IgrColumn field="ContactTitle" header="Title" width="200px" pinned="true"
+    name="column3" headerTemplate={toggleColumnPin}> </IgrColumn>
+</IgrGrid>
+```
+
+```typescript
+function toggleColumnPin({ dataContext: ctx }: { dataContext: IgrColumnTemplateContext }) {
+  const togglePin = () => {
+    const col = ctx.column;
+    col.pinned = !col.pinned;
+  }
+  
+  const col = ctx.column;
+
+  return(
+    <div>
+      <span style={{ float: 'left' }}>{col.header}</span>
+      <span style={{ float: 'right' }} onClick={() => togglePin()}>📌</span>
+    </div>
+  );
+}
+```
+<!-- end: React -->
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -627,7 +684,7 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 <!-- ComponentEnd: Grid -->
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 ## Styling
 
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
@@ -641,6 +698,10 @@ In case you would like to change some of the colors, you need to set an `ID` for
 
 ```razor
 <IgbGrid Id="grid"></IgbGrid>
+```
+
+```html
+<IgrGrid id="grid"></IgrGrid>
 ```
 
 <!-- ComponentEnd: Grid -->
