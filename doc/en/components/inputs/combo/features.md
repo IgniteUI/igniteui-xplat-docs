@@ -260,9 +260,6 @@ You can disable the ComboBox using the `Disabled` property:
 ## API Reference
 
 * `Combo`
-* `ComboItem`
-* `ComboHeader`
-* `ComboList`
 
 <!-- end: WebComponents -->
 ## Additional Resources

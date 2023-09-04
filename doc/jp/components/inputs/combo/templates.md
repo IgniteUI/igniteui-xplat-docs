@@ -187,9 +187,6 @@ igRegisterScript('ComboGroupHeaderTemplate', groupHeaderTemplate, false)
 ## API リファレンス
 
 * `Combo`
-* `ComboItem`
-* `ComboHeader`
-* `ComboList`
 
 <!-- end: WebComponents -->
 
