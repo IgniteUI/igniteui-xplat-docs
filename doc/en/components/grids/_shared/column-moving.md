@@ -49,7 +49,7 @@ public headerTemplate = (ctx: IgcCellTemplateContext) => {
 function headerTemplate(ctx: IgrCellTemplateContext) {
     return (
     <>
-       <IgrIcon draggable="false" onClick="{onClick}"></IgrIcon>
+       <IgrIcon draggable="false" onClick={onClick}></IgrIcon>
     </>
     );
 }
