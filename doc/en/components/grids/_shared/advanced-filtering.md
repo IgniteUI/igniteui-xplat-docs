@@ -58,6 +58,17 @@ constructor() {
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+```html
+<IgrGrid>
+                    <IgrGridToolbar>
+                        <IgrGridToolbarActions>
+                            <IgrGridToolbarAdvancedFiltering/>
+                        </IgrGridToolbarActions>
+                    </IgrGridToolbar>
+```
+<!-- end: React -->
+
 The advanced filtering generates a `FilteringExpressionsTree` which is stored in the `AdvancedFilteringExpressionsTree` input property. You could use the `AdvancedFilteringExpressionsTree` property to set an initial state of the advanced filtering.
 
 <!-- Angular -->
@@ -486,6 +497,30 @@ Then set the related CSS properties to this class:
 `sample="/{ComponentSample}/advanced-filtering-style", height="530", alt="{Platform} {ComponentTitle} advanced filtering style"`
 
 <!-- end: WebComponents, Blazor -->
+
+<!-- React -->
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```html
+<IgrGrid className="grid"></IgrGrid>
+```
+
+Then set the related CSS properties to this class:
+
+```css
+.grid {
+    --ig-grid-filtering-row-background: #ffcd0f;
+    --ig-grid-filtering-background-or: #d83434;
+}
+```
+### Demo
+
+`sample="/{ComponentSample}/advanced-filtering-style", height="530", alt="{Platform} {ComponentTitle} advanced filtering style"`
+
+<!-- end: React -->
 
 ## API References
 
