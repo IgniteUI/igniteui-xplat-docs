@@ -14,11 +14,11 @@ namespace: Infragistics.Controls
 In addition, you can define your own custom templates for update-data actions and to override the default behavior for committing and discarding any changes.
 
 ## {Platform} {ComponentTitle} Cell Editing and Edit Templates Example
-<!-- WebComponents -->
+<!-- WebComponents, React -->
 
 `sample="/{ComponentSample}/editing-columns", height="700", alt="{Platform} {ComponentTitle} Cell Editing and Edit Templates Example"`
 
-<!-- end: WebComponents -->
+<!-- end: WebComponents, React -->
 
 <!-- Blazor -->
 
@@ -384,7 +384,7 @@ Working sample of the above can be found here for further referencee:
 
 `sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
 
-<!-- end: WebComponents -->
+<!-- end: React -->
 
 <!-- Angular -->
 
@@ -801,7 +801,7 @@ The result of the above validation being applied to our `{ComponentName}` can be
 
 ## Styling
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 In addition to the predifined themes, the grid could be further customized by setting some of the available [CSS Properties](../theming.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
@@ -812,6 +812,10 @@ In case you would like to change some of the colors, you need to set a class for
 
 ```razor
 <IgbGrid Class="grid"></IgbGrid>
+```
+
+```tsx
+<IgrGrid className="grid"></IgrGrid>
 ```
 
 Then set the related CSS properties for that class:
@@ -827,7 +831,7 @@ Then set the related CSS properties for that class:
 
 `sample="/{ComponentSample}/cell-editing-style", height="650", alt="{Platform} {ComponentTitle} Cell Editing Styling Example"`
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- Angular -->
 
