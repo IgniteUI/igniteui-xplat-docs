@@ -80,6 +80,23 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+```html
+<{ComponentSelector} AutoGenerate="false" Id="grid" Data="NwindData" PrimaryKey="ProductID" RowEditable="true">
+    <IgrColumn Field="ProductID" Header="Product ID" DataType="GridColumnDataType.Number"></IgrColumn>
+    <IgrColumn Field="ReorderLevel" Header="Reorder Level" DataType="GridColumnDataType.Number"></IgrColumn>
+    <IgrColumn Field="ProductName" Header="Product Name" DataType="GridColumnDataType.String"></IgrColumn>
+    <IgrColumn Field="UnitsInStock" Header="Units In Stock" DataType="GridColumnDataType.Number"></IgrColumn>
+    <IgrColumn Field="OrderDate" Header="Order Date" DataType="GridColumnDataType.Date"></IgrColumn>
+    <IgrColumn Field="Discontinued" Header="Discontinued" DataType="GridColumnDataType.Boolean"></IgrColumn>
+
+    <IgrActionStrip>
+        <IgrGridEditingActions addRow="true"></IgrGridEditingActions>
+    </IgrActionStrip>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
 ```razor
 <{ComponentSelector} AutoGenerate="false" Id="grid" Data="NwindData" PrimaryKey="ProductID" RowEditable="true">
     <IgbColumn Field="ProductID" Header="Product ID" DataType="GridColumnDataType.Number"></IgbColumn>
@@ -136,6 +153,21 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```html
+<{ComponentSelector} AutoGenerate="false" Id="treegrid" PrimaryKey="ID" ForeignKey="ParentID" RowEditable="true">
+    <IgrColumn Field="Name" Header="Name" DataType="GridColumnDataType.String"></IgrColumn>
+    <IgrColumn Field="Title" Header="Title" DataType="GridColumnDataType.String"></IgrColumn>
+    <IgrColumn Field="HireDate" Header="Hire Date" DataType="GridColumnDataType.Date"></IgrColumn>
+    <IgrColumn Field="OnPTO" Header="On PTO" DataType="GridColumnDataType.Boolean"></IgrColumn>
+
+    <IgrActionStrip>
+        <IgrGridEditingActions addRow="true"></IgrGridEditingActions>
+    </IgrActionStrip>
+</{ComponentSelector}>
+```
+<!-- end: React -->
 
 ```razor
 <{ComponentSelector} AutoGenerate="false" Id="treegrid" PrimaryKey="ID" ForeignKey="ParentID" RowEditable="true">
@@ -417,13 +449,13 @@ Customizing the text of the row adding overlay is possible using the `RowAddText
 ```
 <!-- end: Angular -->
 
-<!-- WebComponents -->
+<!-- WebComponents, React -->
 ```ts
 this.grid.rowAddTextTemplate = (ctx: IgcGridEmptyTemplateContext) => {
     return html`Adding Row`;
 }
 ```
-<!-- end: WebComponents -->
+<!-- end: WebComponents, React -->
 
 ```razor
 <{ComponentSelector} Data="data" PrimaryKey="ProductID" AutoGenerate="false" RowEditable="true" RowAddTextTemplate="addTextTemplate">
