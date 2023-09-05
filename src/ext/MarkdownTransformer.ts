@@ -1459,8 +1459,7 @@ export class MarkdownTransformer {
             case APIPlatform.React:
                 if (!PlatformDetectorRule.isTS(language) &&
                 !PlatformDetectorRule.isTSX(language) &&
-                 language !== "js" &&
-                 !PlatformDetectorRule.isHTML(language)) {
+                 language !== "js") {
                     return true;
                 }
 
