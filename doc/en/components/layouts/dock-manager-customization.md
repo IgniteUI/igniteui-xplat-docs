@@ -12,6 +12,29 @@ Let's dive in and explore how {Platform} DockManager empowers you to create exce
 
 <div class="divider--half"></div>
 
+## Proximity Dock
+
+In this mode the joystick indicators are hidden and docking can be accomplished by dragging a pane close to the border of another pane. While dragging a pane, when the mouse cursor reaches the area corresponding to the dock position, a dock preview is shown. On mouse up the dragged pane is docked in the previewed location. To enable proximity docking, simply set the `proximityDock` property to ***true***.
+
+```ts
+this.dockManager.proximityDock = true;
+```
+
+### Inner Docking
+
+In order to right dock a dragged pane 1 in pane 2, the cursor should be in the area defined by the right border of pane 2 and the right border offset to left. The offset distance is specified as a proximity dock threshold and is set to a value of 50px. In cases where there is a splitter, docking can be performed from both sides of the splitter.
+
+### Outer Docking
+To perform outer dock, you must first meet specific criteria. In Dock Manager, outer docking is only allowed within a document host, meaning you will be docking the target pane to the outer regions of the document host.
+
+In order to perform an outer top dock for example, must fall within the region defined by the top border of the document host and stay within the top border offset. The offset distance is specified as a proximity dock outer threshold and is explicitly set to a value of 25px. The proximity dock threshold's value of 50px remains unchanged which essentially means that in this scenario, only a 25px area is available for inner docking. In cases where there is a splitter inside the document host, outer dock can be performed from both sides of the splitter.
+
+> NOTE: When proximity dock is enabled, users would not be able to perform an outer dock for both left and right and top and bottom positions from a single pane. For example in a scenario where two split panes are present with a splitter between them, users will be able to perform only an outer left dock when the dragged pane is over the left split pane and vice versa.
+
+Try it for yourself in the sample below:
+
+`sample="/layouts/dock-manager/proximity-dock", height="600", alt="{Platform} Dock Manager Proximity Dock Example"`
+
 ## Focus Panes Programmatically
 
 The `focusPane` method allows developers to dynamically and programmatically focus a specific pane within the layout by providing the `contentId` of the desired pane.
