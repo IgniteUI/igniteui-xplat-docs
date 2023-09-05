@@ -441,11 +441,9 @@ After styling the banner and buttons, we also define a custom style for [the cel
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
-<!-- WebComponents -->
 ```html
 <{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
-<!-- end: WebComponents -->
 
 ```tsx
 <{ComponentSelector} className="grid"></{ComponentSelector}>
