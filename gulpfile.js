@@ -706,6 +706,14 @@ function updateSiteMap(cb) {
 }
 exports.updateSiteMap = updateSiteMap
 
+// generates JSON files with stats about samples used in xplatform docs that
+// you can use to lookup samples used in each topic or find which topics uses samples
+// these files are saved in output folder ./dist/[PLATFORM]/end/_site/stats.json
+// as well as in the stats folder:
+// ./stats/docsStats-Angular.json
+// ./stats/docsStats-Blazor.json
+// ./stats/docsStats-React.json
+// ./stats/docsStats-WC.json
 function buildStats(cb) {
 
     var config = docsConfig[PLAT];
@@ -837,7 +845,7 @@ function buildStats(cb) {
             console.log('extracted stats for docs and samples to: ' + statsPath);
             fs.writeFileSync(statsPath, statsData);
             if (LANG === 'en') {
-                fs.writeFileSync('docStats-' + statsPlatform + '.json', statsData);
+                fs.writeFileSync('./stats/docStats-' + statsPlatform + '.json', statsData);
             }
         }
         if (cb) cb();
@@ -947,13 +955,14 @@ exports.buildSite = buildSite;
 exports['build-site'] = buildSite;
 
 // functions for building Docfx for each platform:
-var buildDocfx_All      = gulp.series(verifyFiles, buildAll, buildSite, replaceEnvironmentVariables, updateSiteMap);
-var buildDocfx_Angular  = gulp.series(verifyFiles, buildAngularDocFX, buildSite, replaceEnvironmentVariables, updateSiteMap);
-var buildDocfx_Blazor   = gulp.series(verifyFiles, buildBlazor, buildSite, replaceEnvironmentVariables,  updateSiteMap);
-var buildDocfx_React    = gulp.series(verifyFiles, buildReact, buildSite, replaceEnvironmentVariables,  updateSiteMap);
-var buildDocfx_WC       = gulp.series(verifyFiles, buildWC, buildSite, replaceEnvironmentVariables, updateSiteMap);
+var buildDocfx_All      = gulp.series(verifyFiles, buildAll, buildSite, replaceEnvironmentVariables, updateSiteMap, buildStats);
+var buildDocfx_Angular  = gulp.series(verifyFiles, buildAngularDocFX, buildSite, replaceEnvironmentVariables, updateSiteMap, buildStats);
+var buildDocfx_Blazor   = gulp.series(verifyFiles, buildBlazor, buildSite, replaceEnvironmentVariables,  updateSiteMap, buildStats);
+var buildDocfx_React    = gulp.series(verifyFiles, buildReact, buildSite, replaceEnvironmentVariables,  updateSiteMap, buildStats);
+var buildDocfx_WC       = gulp.series(verifyFiles, buildWC, buildSite, replaceEnvironmentVariables, updateSiteMap, buildStats);
 // function for building Docfx for a platform specified in arguments, e.g. --plat=React
 var buildDocfx_WithArgs = gulp.series(buildWithArgs, buildSite, replaceEnvironmentVariables, updateSiteMap);
+var buildDocfx_WithArgs = gulp.series(buildWithArgs, buildSite, replaceEnvironmentVariables, updateSiteMap, buildStats);
 // exporting functions for building Docfx for each platform:
 exports['buildDocfx_All']      = buildDocfx_All;
 exports['buildDocfx_Angular']  = buildDocfx_Angular;
