@@ -526,7 +526,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "WebComponents"],
         "name": "Row Editing",
         "href": "grids/hierarchical-grid/row-editing.md",
         "status": ""
@@ -770,7 +770,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "WebComponents", "Blazor"],
         "name": "Row Editing",
         "href": "grids/tree-grid/row-editing.md",
         "status": "NEW"
