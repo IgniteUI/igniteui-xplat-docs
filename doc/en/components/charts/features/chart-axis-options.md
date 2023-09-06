@@ -21,7 +21,7 @@ The axis titles feature of the {Platform} charts, allows you to add contextual i
 <div class="divider--half"></div>
 
 
-## Axis Labels Example
+## Axis Labels Examples
 
 The {Platform} Charts allows you full control over configuring, formatting, and styling the font of the labels displayed on an axis in your chart. You can change the rotation angle, margin, horizontal and vertical alignment, color, padding, and visibility of axis labels. The following example shows how to use these features of axes.
 
