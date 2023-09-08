@@ -393,7 +393,7 @@ After styling the banner and buttons, we also define a custom style for [the cel
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 ## Styling
 
