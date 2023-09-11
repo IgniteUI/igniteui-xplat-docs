@@ -111,9 +111,9 @@ Let's now continue with our sample and see in action how the `DisplayDensity` is
 
 ```tsx
 <IgrPropertyEditorPanel
-    ref={this.propertyEditorRef}
-    componentRenderer={this.renderer}
-    target={this.grid}
+    ref={propertyEditorRef}
+    componentRenderer={renderer}
+    target={grid}
     descriptionType="WebGrid"
     isHorizontal="true"
     isWrappingEnabled="true">
@@ -446,7 +446,7 @@ Now we can add the markup.
 </igx-grid>
 ```
 ```tsx
-<IgrGrid autoGenerate="false" ref={this.gridRef} data={this.invoicesData} allowFiltering="true">
+<IgrGrid autoGenerate="false" ref={gridRef} data={invoicesData} allowFiltering="true">
     <IgrColumn field="CustomerName" header="Customer Name" dataType="String" sortable="true" hasSummary="true">
     </IgrColumn>
     <IgrColumn field="Country" header="Country" dataType="String" sortable="true" hasSummary="true">
