@@ -49,8 +49,14 @@ As you can see in the demo above, the `{ComponentName}` provides three density o
 
 or
 
+<!-- WebComponents -->
 ```typescript
 this.grid.displayDensity = 'cosy';
+```
+<!-- end: WebComponents -->
+
+```tsx
+gridRef.current.displayDensity = 'cosy';
 ```
 
 ```razor
