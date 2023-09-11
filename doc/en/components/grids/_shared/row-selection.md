@@ -74,14 +74,25 @@ constructor() {
     grid.addEventListener("rowSelectionChanging", this.handleRowSelection);
 }
 ```
-<!-- end: WebComponents -->
 
 ```typescript
 public handleRowSelection(args: IgcRowSelectionEventArgs) {
-    if (args.added.length && args.added[0] === 3) {
-        args.cancel = true;
+    if (args.detail.added.length && args.detail.added[0] === 3) {
+        args.detail.cancel = true;
     }
 }
+```
+<!-- end: WebComponents -->
+
+```tsx
+function handleRowSelection(args: IgrRowSelectionEventArgs) {
+    if (args.detail.added.length && args.detail.added[0] === 3) {
+        args.detail.cancel = true;
+    }
+}
+
+<{ComponentSelector} rowSelection="single" autoGenerate="true" allowFiltering="true" rowSelectionChanging={handleRowSelection}>
+</{ComponentSelector}>
 ```
 
 ```razor
@@ -133,6 +144,12 @@ To enable multiple row selection in the `{ComponentName}` just set the `RowSelec
              AutoGenerate=true
              Data=northwindEmployees>
     </{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple"
+        allowFiltering="true" autoGenerate="true">
+</{ComponentSelector}>
 ```
 
 <!-- ComponentStart: TreeGrid -->
@@ -246,6 +263,16 @@ public onClickSelect() {
 ```
 <!-- end: WebComponents -->
 
+```tsx
+function onClickSelect() {
+    gridRef.current.selectRows([1,2,5], true);
+}
+
+<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate="true" ref={gridRef}>
+</{ComponentSelector}>
+<button onClick={onClickSelect}>Select 1,2 and 5</button>
+```
+
 This will add the rows which correspond to the data entries with IDs 1, 2 and 5 to the `{ComponentName}` selection.
 
 ### Deselect Rows
@@ -306,6 +333,16 @@ public onClickDeselect() {
 ```
 <!-- end: WebComponents -->
 
+```tsx
+function onClickDeselect() {
+    gridRef.current.deselectRows([1,2,5]);
+}
+
+<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate="true" ref={gridRef}>
+</{ComponentSelector}>
+<button onClick={onClickDeselect}>Deselect 1,2 and 5</button>
+```
+
 ### Row Selection Event
 
 When there is some change in the row selection `RowSelectionChanging` event is emitted. `RowSelectionChanging` exposes the following arguments:
@@ -335,14 +372,19 @@ constructor() {
     grid.data = this.data;
     grid.addEventListener("rowSelectionChanging", this.handleRowSelectionChange);
 }
-```
-
-```typescript
-/* selectionExample.component.ts */
 
 public handleRowSelectionChange(args) {
-    args.cancel = true; // this will cancel the row selection
+    args.detail.cancel = true; // this will cancel the row selection
 }
+```
+
+```tsx
+function handleRowSelectionChange(args: IgrRowSelectionEventArgs) {
+    args.detail.cancel = true; // this will cancel the row selection
+}
+
+<{ComponentSelector} rowSelectionChanging={handleRowSelectionChange}>
+</{ComponentSelector}>
 ```
 
 ```razor
@@ -405,11 +447,14 @@ public getSelectedRows() {
     }
 ```
 
+```tsx
+function getSelectedRows() {
+    return gridRef.current.selectedRows;
+}
+```
+
 Additionally, assigning row IDs to `SelectedRows` will allow you to change the grid's selection state.
 
-```typescript
-public mySelectedRows = [1, 2, 3]; // an array of row IDs
-```
 
 <!-- Angular -->
 ```html
@@ -422,11 +467,20 @@ public mySelectedRows = [1, 2, 3]; // an array of row IDs
 <!-- end: Angular -->
 
 ```ts
+
+public mySelectedRows = [1, 2, 3]; // an array of row IDs
 constructor() {
     const grid = document.getElementById('grid') as IgcGridComponent;
     grid.data = this.data;
     grid.selectedRows = this.mySelectedRows;
 }
+```
+
+```tsx
+const mySelectedRows = [1,2,3];
+
+<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate="false" selectedRows={mySelectedRows}>
+</{ComponentSelector}>
 ```
 
 ```razor
@@ -502,6 +556,33 @@ public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
 }
 ```
 
+```tsx
+function rowSelectorTemplate(ctx: IgrRowSelectorTemplateContext) {
+    if (ctx.dataContext.implicit.selected) {
+        return (
+            <>
+                <div style={{justifyContent: 'space-evenly', display: 'flex', width: '70px'}}>
+                    <span> ${ctx.dataContext.implicit.index}</span>
+                    <IgrCheckbox checked></IgrCheckbox>
+                </div>
+            </>
+        );
+    } else {
+        return (
+            <>
+                <div style={{justifyContent: 'space-evenly', display: 'flex', width: '70px'}}>
+                    <span> ${ctx.dataContext.implicit.index}</span>
+                    <IgrCheckbox checked></IgrCheckbox>
+                </div>
+            </>
+        );
+    }
+}
+
+<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate="false" rowSelectorTemplate={rowSelectorTemplate}>
+</{ComponentSelector}>
+```
+
 The `rowID` property can be used to get a reference of an `{ComponentSelector}` row. This is useful when you implement a `click` handler on the row selector element.
 ```html
 <ng-template igxRowSelector let-rowContext>
@@ -517,6 +598,17 @@ public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
             }}"
         ></igc-checkbox>
     `;
+}
+```
+
+```tsx
+public rowSelectorTemplate(ctx: IgrRowSelectorTemplateContext) {
+    return (
+        <>
+            <IgrCheckbox onClick={(event) => onSelectorClick(event, ctx.dataContext.implicit.key)}>
+            </IgrCheckbox>
+        </>
+    );
 }
 ```
 In the above example we are using an `Checkbox` and we bind `rowContext.selected` to its `checked` property. See this in action in our [Row Numbering Demo](#row-numbering-demo).
@@ -543,6 +635,16 @@ The `SelectedCount` property shows you how many rows are currently selected whil
 ```ts
 public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
     return html` ${ctx.implicit.selectedCount} / ${ctx.implicit.totalCount} `;
+};
+```
+
+```tsx
+function headSelectorTemplate(ctx: IgrHeadSelectorTemplateContext) {
+    return (
+        <>
+            {ctx.dataContext.implicit.selectedCount} / {ctx.dataContext.implicit.totalCount}
+        </>
+    );
 };
 ```
 
@@ -575,7 +677,6 @@ primary-key="ProductID"
 row-selection="Multiple"
 auto-generate="true">
 </{ComponentSelector}>
-
 ```
 
 ```ts
@@ -589,11 +690,38 @@ public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
     const implicit: any = ctx.implicit;
     if (implicit.selectedCount > 0 && implicit.selectedCount === implicit.totalCount) {
             return html`<igc-checkbox checked></igc-checkbox>`;
-        } else if(implicit.selectedCount > 0 && implicit.selectedCount !== implicit.totalCount) {
+        } else if (implicit.selectedCount > 0 && implicit.selectedCount !== implicit.totalCount) {
             return html`<igc-checkbox indeterminate></igc-checkbox>`;
         }
         return html`<igc-checkbox></igc-checkbox>`;
 }
+```
+
+```tsx
+function headSelectorTemplate(ctx: IgcHeadSelectorTemplateContext) {
+    const implicit: any = ctx.dataContext.implicit;
+    if (implicit.selectedCount > 0 && implicit.selectedCount === implicit.totalCount) {
+            return (
+                <>
+                    <IgrCheckbox checked></IgrCheckbox>
+                </>
+            );
+        } else if (implicit.selectedCount > 0 && implicit.selectedCount !== implicit.totalCount) {
+            return (
+                <>
+                    <IgrCheckbox indeterminate></IgrCheckbox>
+                </>
+            );
+        }
+        return (
+            <>
+                <IgrCheckbox ></IgrCheckbox>
+            </>
+        );
+}
+
+<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate="true" headSelectorTemplate={headSelectorTemplate}>
+</{ComponentSelector}>
 ```
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -641,7 +769,7 @@ This demo prevents some rows from being selected using the `RowSelectionChanging
 
 * `{ComponentName}`
 * `{ComponentName}Row`
-* `{ComponentName}Cell`
+* `Cell`
 
 ## Additional Resources
 
