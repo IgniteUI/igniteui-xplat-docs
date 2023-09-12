@@ -93,9 +93,6 @@ combo.deselect('BG01');
 ## API リファレンス
 
 * `Combo`
-* `ComboItem`
-* `ComboHeader`
-* `ComboList`
 
 ## その他のリソース
 
