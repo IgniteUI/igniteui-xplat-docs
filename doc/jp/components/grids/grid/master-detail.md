@@ -109,7 +109,7 @@ igRegisterScript("DetailTemplate", (ctx) => {
     - <kbd>🡑</kbd> - 前の行のセルにフォーカスし、1 つ上の行へ移動します。
     - <kbd>🡓</kbd> - 次の行のセルにフォーカスし、1 つ下の行へ移動します。
     - <kbd>Tab</kbd> - フォーカス可能な要素がある場合、テンプレート内の次のフォーカス可能な要素にフォーカスを移動します。そうでない場合は、次のグリッド行に移動します。
-    - <kbd>Shift + <kbd>Tab</kbd> - 前の行にフォーカスします。
+    - <kbd>Shift</kbd> + <kbd><kbd>Tab</kbd> - 前の行にフォーカスします。
 
 - エキスパンダーのデータ行にフォーカスがある場合:
     - <kbd>Alt</kbd> + <kbd>🡒</kbd> または <kbd>Alt</kbd> + <kbd>🡓</kbd> - 行を展開します。
