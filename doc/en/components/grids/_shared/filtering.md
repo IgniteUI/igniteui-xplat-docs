@@ -65,7 +65,7 @@ Property `Filterable` enables you to specify the following options:
 <!-- end: WebComponents -->
 
 <!-- React -->
-```html
+```tsx
 <{ComponentSelector} data={this.nwindData} autoGenerate="false" ref={this.gridRef} allowFiltering="true">
     <IgrColumn field="ProductName" dataType="String"></IgrColumn>
     <IgrColumn field="UnitPrice" data-type="Number" filterable="false"></IgrColumn>
@@ -94,7 +94,7 @@ To enable the [Advanced filtering](advanced-filtering.md) however, you need to s
 <!-- end: WebComponents -->
 
 <!-- React -->
-```html
+```tsx
 <{ComponentSelector} data={nwindData} autoGenerate="false" ref={gridRef} allowAdvancedFiltering="true">
 </{ComponentSelector}>
 ```
@@ -136,7 +136,7 @@ The filtering feature is enabled for the `{ComponentName}` component by setting 
 <!-- end: WebComponents -->
 
 <!-- React -->
-```html
+```tsx
 <{ComponentSelector} autoGenerate="false" allowFiltering="true">
     <IgrColumn field="ProductName" dataType="String"></IgrColumn>
     <IgrColumn field="Price" dataType="Number"></IgrColumn>
@@ -366,7 +366,7 @@ this.grid.filteringLogic = FilteringLogic.OR;
 <!-- end: WebComponents -->
 
 <!-- React -->
-```html
+```tsx
 <{ComponentName} filteringLogic={FilteringLogic.Or}></{ComponentName}>
 ```
 <!-- end: React -->
@@ -646,17 +646,21 @@ public matchingRecordsOnlyStrategy = new TreeGridMatchingRecordsOnlyFilteringStr
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
+<!-- WebComponents -->
 ```ts
 <igc-grid class="grid">
 ```
+<!-- end: WebComponents -->
 
 ```razor
 <IgbGrid Class="grid"></IgbGrid>
 ```
 
+<!-- React -->
 ```ts
 <IgrGrid className="grid"></IgrGrid>
 ```
+<!-- end: React -->
 
 Then set the related CSS properties for that class:
 
