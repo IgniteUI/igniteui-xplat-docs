@@ -147,8 +147,8 @@ IgrExpansionPanelModule.register();
 
 **キーの組み合わせ**
 
- - <kbd> Alt + 下矢印</kbd> - フォーカスされたパネルを展開します。
- - <kbd>Alt + 上矢印</kbd> - フォーカスされたパネルを縮小します。
+ - <kbd> Alt + ↓</kbd> - フォーカスされたパネルを展開します。
+ - <kbd>Alt + ↑</kbd> - フォーカスされたパネルを縮小します。
  - <kbd>Space</kbd> / <kbd>Enter</kbd> - フォーカスされたパネルの展開状態を切り替えます。
 
 
