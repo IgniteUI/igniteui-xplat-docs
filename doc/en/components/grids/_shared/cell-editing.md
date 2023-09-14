@@ -236,8 +236,8 @@ If you want to provide a custom template which will be applied to a cell, you ca
 
 and pass the template:
 
-```javascript
-
+```razor
+*** In JavaScript ***
 igRegisterScript("WebGridCellEditCellTemplate", (ctx) => {
     let cellValues = [];
     let uniqueValues = [];
@@ -255,10 +255,9 @@ igRegisterScript("WebGridCellEditCellTemplate", (ctx) => {
     </igc-select>
 </div>`;
 }, false);
-
-
 ```
-Working sample of the above can be found here for further referencee: 
+
+Working sample of the above can be found here for further reference: 
 
 `sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
 
