@@ -77,15 +77,15 @@ They are added inside the `{ComponentName}` and this is all needed to have an `A
 <!-- end: WebComponents -->
 
 <!-- React -->
-```html
-<IgrGrid>
+```tsx
+<{ComponentName} id="grid" rowEditable="true" primaryKey="ID">
+    <IgrColumn field="field">
+    </IgrColumn>
     <IgrActionStrip name="actionStrip">
         <IgrGridPinningActions></IgrGridPinningActions>
-        <IgrGridEditingActions editRow="true"
-                               deleteRow="false">
-        </IgrGridEditingActions>
+        <IgrGridEditingActions></IgrGridEditingActions>
     </IgrActionStrip>
-</IgrGrid>
+</{ComponentName}>
 ```
 <!-- end: React -->
 
@@ -147,7 +147,7 @@ These components expose templates giving flexibility for customization. For inst
 <!-- end: WebComponents -->
 
 <!-- React -->
-```html
+```tsx
 <{ComponentSelector}>
     <IgrActionStrip name="actionStrip">
         <IgrGridPinningActions></IgrGridPinningActions>
