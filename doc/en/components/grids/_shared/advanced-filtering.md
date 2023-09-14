@@ -57,6 +57,17 @@ constructor() {
 }
 ```
 <!-- end: WebComponents -->
+<!-- React -->
+```html
+<{ComponentSelector} data={this.nwindData} autoGenerate="false" ref={this.gridRef} allowAdvancedFiltering="true">
+    <IgrGridToolbar>
+        <IgrGridToolbarActions>
+            <IgrGridToolbarAdvancedFilering></IgrGridToolbarAdvancedFilering>
+        </IgrGridToolbarActions>
+    </IgrGridToolbar>
+</{ComponentSelector}>
+```
+<!-- end: React -->
 
 The advanced filtering generates a `FilteringExpressionsTree` which is stored in the `AdvancedFilteringExpressionsTree` input property. You could use the `AdvancedFilteringExpressionsTree` property to set an initial state of the advanced filtering.
 
