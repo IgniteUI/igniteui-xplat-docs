@@ -66,15 +66,26 @@ You can exit edit mode and **commit** the changes in one of the following ways:
 You can also modify the cell value through the `{ComponentName}` API but only if primary key is defined:
 
 <!-- ComponentStart: Grid -->
+<!-- Angular, WebComponents -->
 ```typescript
 public updateCell() {
     this.grid1.updateCell(newValue, rowID, 'ReorderLevel');
 }
 ```
+<!-- end: Angular, WebComponents -->
 
 ```razor
 this.grid.UpdateCell(newValue, rowID, 'ReorderLevel')
 ```
+
+<!-- React -->
+```typescript
+function updateCell() {
+    grid1Ref.current.updateCell(newValue, rowID, 'ReorderLevel');
+}
+```
+<!-- end: React -->
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -104,6 +115,8 @@ this.hierarchicalGrid.UpdateCell(newValue, rowID, 'ReorderLevel')
 Another way to update cell is directly through `Update` method of `GridCell`:
 
 <!-- ComponentStart: Grid -->
+
+<!-- Angular, WebComponents -->
 ```typescript
 public updateCell() {
     const cell = this.grid1.getCellByColumn(rowIndex, 'ReorderLevel');
@@ -112,6 +125,7 @@ public updateCell() {
     cell.update(70);
 }
 ```
+<!-- end: Angular, WebComponents -->
 
 ```razor
 private UpdateCell() {
@@ -119,6 +133,17 @@ private UpdateCell() {
     cell.Update(70);
 }
 ```
+<!-- React -->
+```typescript
+function updateCell() {
+    const cell = grid1Ref.current.getCellByColumn(rowIndex, 'ReorderLevel');
+    // You can also get cell by rowID if primary key is defined
+    // cell = grid1Ref.current.getCellByKey(rowID, 'ReorderLevel');
+    cell.update(70);
+}
+```
+<!-- end: React -->
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -327,57 +352,51 @@ Working sample of the above can be found here for further referencee:
 
 If you want to provide a custom template which will be applied to a cell, you can pass such template either to the cell itself, or to its header. First create the column as you usually would:
 
-```html
-
-<igrColumn
+```tsx
+<IgrColumn
     field="race"
     header="Race"
-    data-type="string"
+    dataType="String"
     editable="true"
     name="column1"
     id="column1">
-</igrColumn>
-
+</IgrColumn>
 ```
 
 and pass the templates to this column in the index.ts file:
 
 ```ts
 
-constructor(props: any) {
-    super(props);
-
-        this.propertyEditorRef = this.propertyEditorRef.bind(this);
-        this.gridRef = this.gridRef.bind(this);
-
-        var column1 = document.getElementById('column1') as IgrGridColumnComponent;
-        var column2 = document.getElementById('column2') as IgrGridColumnComponent;
-        var column3 = document.getElementById('column3') as IgrGridColumnComponent;
-
-        gridRef.data = this.webGridCellEditSampleRoleplay;
-        column1.inlineEditorTemplate = this.webGridCellEditCellTemplate;
-        column2.inlineEditorTemplate = this.webGridCellEditCellTemplate;
-        column3.inlineEditorTemplate = this.webGridCellEditCellTemplate;
+const webGridCellEditCellTemplate = useCallback((ctx: IgrCellTemplateContext) => {
+    const cellValues: any = [];
+    const uniqueValues: any = [];
+    for(const i of (webGridCellEditSampleRoleplay as any)){
+      const field: string = ctx.cell.column.field;
+      if(uniqueValues.indexOf(i[field]) === -1 )
+      {
+        cellValues.push(<IgrSelectItem key={i[field]} value={i[field]}>{i[field]}</IgrSelectItem>);
+        uniqueValues.push(i[field]);
+      }
     }
+    return (
+      <IgrSelect style={{width: '100%', height: '100%'}} size="large" change={(e: any) => ctx.cell.editValue = e.detail.value}>
+            {cellValues}
+      </IgrSelect>
+    );
+  }, [webGridCellEditSampleRoleplay]);
 
+  useEffect(() => {
+    const column1 = grid1Ref.current.getColumnByName('column1');
+    const column2 = grid1Ref.current.getColumnByName('column2');
+    const column3 = grid1Ref.current.getColumnByName('column3');
 
-public webGridCellEditCellTemplate = (ctx: IgrCellTemplateContext) => {
-        let cellValues: any = [];
-        let uniqueValues: any = [];
-        for(const i of (this.webGridCellEditSampleRoleplay as any)){
-            const field: string = ctx.cell.column.field;
-            if(uniqueValues.indexOf(i[field]) === -1 )
-            {
-                cellValues.push(html`<igc-select-item value=${i[field]}>${(i[field])}</igc-select-item>`);
-                uniqueValues.push(i[field]);
-            }
-        }
-        return html`
-        <igc-select style="width:100%; height:100%" size="large" @igcChange=${(e: any) => ctx.cell.editValue = e.detail.value}>
-              ${cellValues}
-        </igc-select>
-    `;
-    }
+    grid1Ref.current.data = webGridCellEditSampleRoleplay;
+    column1.inlineEditorTemplate = webGridCellEditCellTemplate;
+    column2.inlineEditorTemplate = webGridCellEditCellTemplate;
+    column3.inlineEditorTemplate = webGridCellEditCellTemplate;
+      
+    
+  }, [webGridCellEditSampleRoleplay, webGridCellEditCellTemplate]);
 
 ```
 Working sample of the above can be found here for further referencee: 
@@ -403,6 +422,8 @@ Implementing this custom functionality can be done by utilizing the events of th
 
 * Constant edit mode
 
+<!-- Angular, WebComponents -->
+
 ```typescript
 public keydownHandler(event) {
   const key = event.keyCode;
@@ -422,9 +443,34 @@ public keydownHandler(event) {
     }
 }
 ```
+<!-- end: Angular, WebComponents -->
+
+<!-- React -->
+
+```typescript
+function keydownHandler(event) {
+  const key = event.keyCode;
+  const grid = grid1Ref.current;
+  const activeElem = grid.navigation.activeNode;
+
+  if ((key >= 48 && key <= 57) ||
+      (key >= 65 && key <= 90) ||
+      (key >= 97 && key <= 122)) {
+        // Number or Alphabet upper case or Alphabet lower case
+        const columnName = grid.getColumnByVisibleIndex(activeElem.column).field;
+        const cell = grid.getCellByColumn(activeElem.row, columnName);
+        if (cell && !grid.crudService.cellInEditMode) {
+            grid.crudService.enterEditMode(cell);
+            cell.editValue = event.key;
+        }
+    }
+}
+```
+<!-- end: React -->
 
 * <kbd>Enter</kbd>/<kbd>Shift+Enter</kbd> navigation
 
+<!-- Angular, WebComponents -->
 ```typescript
 if (key == 13) {
     let thisRow = activeElem.row;
@@ -442,6 +488,27 @@ if (key == 13) {
     });
 }
 ```
+<!-- end: Angular, WebComponents -->
+
+<!-- React -->
+```typescript
+if (key == 13) {
+    let thisRow = activeElem.row;
+    const column = activeElem.column;
+    const rowInfo = grid.dataView;
+
+    // to find the next eligible cell, we will use a custom method that will check the next suitable index
+    let nextRow = getNextEditableRowIndex(thisRow, rowInfo, event.shiftKey);
+
+    // and then we will navigate to it using the grid's built in method navigateTo
+    grid1Ref.current.navigateTo(nextRow, column, (obj) => {
+        obj.target.activate();
+        grid1Ref.current.clearCellSelection();
+        cdr.detectChanges();
+    });
+}
+```
+<!-- end: React -->
 
 Key parts of finding the next eligible index would be:
 
@@ -483,18 +550,30 @@ The `{ComponentName}` provides a straightforward API for basic CRUD operations.
 The `{ComponentName}` component exposes the `AddRow` method which will add the provided data to the data source itself.
 
 <!-- ComponentStart: Grid -->
+
+<!-- Angular, WebComponents -->
 ```typescript
 // Adding a new record
 // Assuming we have a `getNewRecord` method returning the new row data.
 const record = this.getNewRecord();
 this.grid.addRow(record);
 ```
+<!-- end: Angular, WebComponents -->
 
 ```razor
 //Assuming we have a `GetNewRecord` method returning the new row data.
 const record = this.GetNewRecord();
 this.GridRef.AddRow(record);
 ```
+
+<!-- React -->
+```typescript
+// Adding a new record
+// Assuming we have a `getNewRecord` method returning the new row data.
+const record = getNewRecord();
+grid1Ref.current.addRow(record);
+```
+<!-- end: React -->
 
 <!-- ComponentEnd: Grid -->
 
@@ -532,6 +611,8 @@ public addRow() {
 Updating data in the {ComponentTitle} is achieved through `UpdateRow` and `UpdateCell` methods but **only if the PrimaryKey for the grid is defined**. You can also directly update a cell and/or a row value through their respective **update** methods.
 
 <!-- ComponentStart: Grid -->
+
+<!-- Angular, WebComponents -->
 ```typescript
 // Updating the whole row
 this.grid.updateRow(newData, this.selectedCell.cellID.rowID);
@@ -546,6 +627,25 @@ this.selectedCell.update(newData);
 const row = this.grid.getRowByKey(rowID);
 row.update(newData);
 ```
+<!-- end: Angular, WebComponents -->
+
+<!-- React -->
+```typescript
+// Updating the whole row
+grid1Ref.current.updateRow(newData, this.selectedCell.cellID.rowID);
+
+// Just a particular cell through the Grid API
+grid1Ref.current.updateCell(newData, this.selectedCell.cellID.rowID, this.selectedCell.column.field);
+
+// Directly using the cell `update` method
+selectedCell.update(newData);
+
+// Directly using the row `update` method
+const row = grid1Ref.current.getRowByKey(rowID);
+row.update(newData);
+```
+<!-- end: React -->
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -587,6 +687,8 @@ row.update(newData);
 Please keep in mind that `DeleteRow` method will remove the specified row only if a `PrimaryKey` is defined.
 
 <!-- ComponentStart: Grid -->
+
+<!-- Angular, WebComponents -->
 ```typescript
 // Delete row through Grid API
 this.grid.deleteRow(this.selectedCell.cellID.rowID);
@@ -594,6 +696,17 @@ this.grid.deleteRow(this.selectedCell.cellID.rowID);
 const row = this.grid.getRowByIndex(rowIndex);
 row.delete();
 ```
+<!-- end: Angular, WebComponents -->
+
+<!-- React -->
+```typescript
+// Delete row through Grid API
+grid1Ref.current.deleteRow(selectedCell.cellID.rowID);
+// Delete row through row object
+const row = grid1Ref.current.getRowByIndex(rowIndex);
+row.delete();
+```
+<!-- end: React -->
 
 <!-- ComponentEnd: Grid -->
 
@@ -646,6 +759,14 @@ The first thing we need to is bind to the grid's event:
 ```razor
 <{ComponentSelector} CellEditScript="HandleCellEdit" />
 ```
+
+<!-- React -->
+```jsx
+<{ComponentSelector} cellEdit={handleCellEdit(event)}>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
 
 <!-- ComponentStart: Grid -->
 ```ts
@@ -806,7 +927,7 @@ The result of the above validation being applied to our `{ComponentName}` can be
 In addition to the predifined themes, the grid could be further customized by setting some of the available [CSS Properties](../theming.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
-```ts
+```html
 <igc-grid class="grid">
 ```
 
