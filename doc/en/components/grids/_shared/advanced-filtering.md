@@ -57,14 +57,11 @@ constructor() {
 }
 ```
 <!-- end: WebComponents -->
+
 <!-- React -->
-```html
-<{ComponentSelector} data={this.nwindData} autoGenerate="false" ref={this.gridRef} allowAdvancedFiltering="true">
-    <IgrGridToolbar>
-        <IgrGridToolbarActions>
-            <IgrGridToolbarAdvancedFilering></IgrGridToolbarAdvancedFilering>
-        </IgrGridToolbarActions>
-    </IgrGridToolbar>
+```tsx
+<{ComponentSelector} data={nwindData} autoGenerate="false" ref={gridRef} allowAdvancedFiltering="true">
+    <IgrGridToolbar></IgrGridToolbar>
 </{ComponentSelector}>
 ```
 <!-- end: React -->
@@ -103,6 +100,7 @@ ngAfterViewInit(): void {
 
 <!-- end: Angular -->
 
+<!-- WebComponents -->
 ```typescript
 connectedCallback(): void {
     const tree = new IgcFilteringExpressionsTree(FilteringLogic.And);
@@ -129,6 +127,8 @@ connectedCallback(): void {
     grid.advancedFilteringExpressionsTree = tree;
 }
 ```
+<!-- end: WebComponents -->
+
 
 In case you don't want to show the `{ComponentName}` toolbar, you could use the `OpenAdvancedFilteringDialog` and `CloseAdvancedFilteringDialog` methods to open and close the advanced filtering dialog programmatically.
 
@@ -470,7 +470,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 ## Styling
 
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
@@ -482,6 +482,10 @@ In case you would like to change some of the colors, you need to set a class for
 
 ```razor
 <IgbGrid class="grid"></IgbGrid>
+```
+
+```tsx
+<{ComponentName} class="grid"></{ComponentName}>
 ```
 
 Then set the related CSS properties to this class:
@@ -496,7 +500,7 @@ Then set the related CSS properties to this class:
 
 `sample="/{ComponentSample}/advanced-filtering-style", height="530", alt="{Platform} {ComponentTitle} advanced filtering style"`
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 ## API References
 
