@@ -365,7 +365,7 @@ If you want to provide a custom template which will be applied to a cell, you ca
 
 and pass the templates to this column in the index.ts file:
 
-```ts
+```typescript
 
 const webGridCellEditCellTemplate = useCallback((ctx: IgrCellTemplateContext) => {
     const cellValues: any = [];
@@ -761,7 +761,7 @@ The first thing we need to is bind to the grid's event:
 ```
 
 <!-- React -->
-```jsx
+```tsx
 <{ComponentSelector} cellEdit={handleCellEdit(event)}>
 </{ComponentSelector}>
 ```
