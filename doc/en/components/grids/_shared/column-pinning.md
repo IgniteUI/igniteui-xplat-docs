@@ -59,7 +59,7 @@ constructor() {
 }
 ```
 <!-- React -->
-```html
+```tsx
 <{ComponentName} data={nwindData} autoGenerate="false">
     <IgrColumn field="Name" pinned="true"></IgrColumn>
     <IgrColumn field="AthleteNumber"></IgrColumn>
@@ -237,7 +237,7 @@ const pinningConfig = new IgrPinningConfig();
 pinningConfig.columns = ColumnPinningPosition.End;
 ```
 
-```html
+```tsx
 <IgrGrid data={nwindData} autoGenerate="true" pinning={pinningConfig}></IgrGrid>
 ```
 <!-- end: React -->
@@ -364,7 +364,7 @@ igRegisterScript("WebGridPinHeaderTemplate", (ctx) => {
 ```
 
 <!-- React -->
-```html
+```tsx
 <IgrGrid autoGenerate="false" data={CustomersData} name="grid" ref={grid}>
     <IgrColumn field="ID" hidden="true"></IgrColumn>
 
@@ -711,7 +711,7 @@ In case you would like to change some of the colors, you need to set an `ID` for
 <IgbGrid Id="grid"></IgbGrid>
 ```
 
-```html
+```tsx
 <IgrGrid id="grid"></IgrGrid>
 ```
 
