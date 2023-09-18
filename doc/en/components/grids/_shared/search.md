@@ -295,7 +295,7 @@ function nextSearch() {
 </IgrIconButton>
 ```
 
-<!-- Angular, WebComponents, Blazor -->
+
 ### Add Keyboard Search
 
 We can also allow the users to navigate the results by using the keyboard's arrow keys and the <kbd>Enter</kbd> key. In order to achieve this, we can handle the **keydown** event of our search input by preventing the default caret movement of the input with the `PreventDefault` method and invoke the `FindNext`/`FindPrev` methods depending on which key the user has pressed.
@@ -353,6 +353,22 @@ public searchKeyDown(ev) {
 ```
 <!-- end: WebComponents -->
 
+```tsx
+function searchKeyDown(e: KeyboardEvent<HTMLElement>) {
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+        e.preventDefault();
+        gridRef.current.findPrev(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    }
+}
+
+ <div onKeyDown={searchKeyDown}>
+    <IgrInput name="searchBox" value={searchText} inputOcurred={handleOnSearchChange}></IgrInput>
+</div>
+```
+
 <!-- Blazor -->
 
 We can also allow the users to navigate the results by using the keyboard's <kbd>Enter</kbd> key. In order to achieve this, we can handle the **keydown** event of our search and invoke the `FindNext`/`FindPrev` methods depending on if the user has pressed <kbd>Shift</kbd> as well or not.
@@ -373,7 +389,6 @@ We can also allow the users to navigate the results by using the keyboard's <kbd
     }
 }
 ```
-<!-- end: Angular, WebComponents, Blazor -->
 
 ### Case Sensitive and Exact Match
 
