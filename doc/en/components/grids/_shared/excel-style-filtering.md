@@ -39,7 +39,7 @@ To turn on the `Grid` component's Excel-style filtering, two inputs should be se
 <!-- end: WebComponents -->
 
 <!-- React -->
-```html
+```tsx
 <IgrGrid data={this.nwindData} autoGenerate="false" ref={this.gridRef} allowFiltering="true" filterMode="excelStyleFilter">
 </IgrGrid>
 ```
@@ -107,7 +107,7 @@ Sorting, pinning and hiding features can be removed from the filter menu using t
 </igc-grid>
 ```
 
-```html
+```tsx
 <IgrGrid data={this.nwindData} autoGenerate="false" ref={this.gridRef} allowFiltering="true" filterMode="excelStyleFilter">
     <IgrColumn field="ProductName" header="Product Name" sortable="true" dataType="String">
     </IgrColumn>
@@ -1036,7 +1036,7 @@ In case you would like to change some of the colors, you need to set a class for
 <igc-grid class="grid"></igc-grid>
 ```
 
-```html
+```tsx
 <IgrGrid class="grid"></IgrGrid>
 ```
 
