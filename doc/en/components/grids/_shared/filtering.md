@@ -657,7 +657,7 @@ In case you would like to change some of the colors, you need to set a class for
 ```
 
 <!-- React -->
-```ts
+```tsx
 <IgrGrid className="grid"></IgrGrid>
 ```
 <!-- end: React -->
