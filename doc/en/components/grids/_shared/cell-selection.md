@@ -89,26 +89,41 @@ If you want to disable cell selection you can just set `CellSelection` to **none
 Below are the methods that you can use in order to select ranges, clear selection or get selected cells data.
 
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 
 ### Select range
 
 `SelectRange` - Select a range of cells with the API. rowStart and rowEnd should use row indexes and columnStart and columnEnd could use column index or column data field value.
 
+<!-- WebComponents -->
 ```ts
 const range = { rowStart: 2, rowEnd: 2, columnStart: 1, columnEnd: 1 };
 this.grid.selectRange(range);
 ```
+<!-- end: WebComponents -->
 
-<!-- end: Angular, WebComponents -->
+```tsx
+const range = { rowStart: 2, rowEnd: 2, columnStart: 1, columnEnd: 1 };
+gridRef.current.selectRange(range);
+```
+
+<!-- end: Angular, WebComponents, React -->
 
 ### Clear cell selection
 
 `ClearCellSelection` will clear the current cell selection.
 
+<!-- WebComponents -->
 ```ts
 this.grid.clearCellSelection();
 ```
+<!-- end: WebComponents -->
+
+```tsx
+gridRef.current.clearCellSelection();
+```
+
+
 
 ```razor
 @code {
