@@ -120,6 +120,7 @@ A change in the data field value or a change in the data object/data collection 
 ```
 <!-- end: WebComponents -->
 
+<!-- WebComponents -->
 ```typescript
 private updateData(data: any[]) {
     const newData = []
@@ -130,6 +131,20 @@ private updateData(data: any[]) {
     this.grid.data = newData;
 }
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```typescript
+private updateData(data: any[]) {
+    const newData = []
+    for (const rowData of data) {
+        rowData.price = { usd: getUSD(), eur: getEUR() };
+        newData.push({...rowData});
+    }
+    gridRef.current.data = newData;
+}
+```
+<!-- end: React -->
 
 ```razor
  grid1.Data = this.FinancialDataClass.UpdateRandomPrices(this.CurrentStocks);
