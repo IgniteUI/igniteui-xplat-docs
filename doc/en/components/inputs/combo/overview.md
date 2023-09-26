@@ -231,7 +231,7 @@ The {ProductName} Combo component supports most of the `Input` properties, such 
 
 When the combo component is focused and the list of options is **not visible**:
 
-- Open the list of options using <kbd>Down/Alt + Down</kbd> keys.
+- Open the list of options using <kbd>Down/Alt</kbd> + <kbd>Down</kbd> keys.
 
 When the combo component is focused and the list of options is **visible**:
 
@@ -240,7 +240,7 @@ When the combo component is focused and the list of options is **visible**:
 - Using the <kbd>Home</kbd> or <kbd>End</kbd> keys will activate the first or the last item in the list.
 - Using the <kbd>Space</kbd> key will select the active item.
 - Using the <kbd>Enter</kbd> key will select the active item and close the list of options.
-- Using the <kbd>Esc</kbd> or <kbd>Tab/Shift + Tab</kbd> keys will close the list of options.
+- Using the <kbd>Esc</kbd> or <kbd>Tab/Shift</kbd> + <kbd>Tab</kbd> keys will close the list of options.
 
 ## Styling {Platform} ComboBox
 
