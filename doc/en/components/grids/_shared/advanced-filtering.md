@@ -129,6 +129,36 @@ connectedCallback(): void {
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+<!--```typescript
+This code snippet cannot currently be achieved in React
+componentDidMount() {
+    const tree = new IgrFilteringExpressionsTree(FilteringLogic.And);
+    tree.filteringOperands.push({
+        fieldName: 'ProductName',
+        condition: new IgrStringFilteringOperand.condition('contains'),
+        searchVal: 'cha',
+        ignoreCase: true
+    });
+    const subTree = new IgrFilteringExpressionsTree(FilteringLogic.Or);
+    subTree.filteringOperands.push({
+        fieldName: 'ProductName',
+        condition: new IgrStringFilteringOperand.condition('doesNotContain'),
+        searchVal: 'b',
+        ignoreCase: true
+    });
+    subTree.filteringOperands.push({
+        fieldName: 'ProductName',
+        condition: new IgrStringFilteringOperand.condition('startsWith'),
+        searchVal: 'Chan',
+        ignoreCase: true
+    });
+    tree.filteringOperands.push(subTree);
+    gridRef.current.advancedFilteringExpressionsTree = tree;
+}
+```-->
+<!-- end: React -->
+
 
 In case you don't want to show the `{ComponentName}` toolbar, you could use the `OpenAdvancedFilteringDialog` and `CloseAdvancedFilteringDialog` methods to open and close the advanced filtering dialog programmatically.
 
@@ -485,7 +515,7 @@ In case you would like to change some of the colors, you need to set a class for
 ```
 
 ```tsx
-<{ComponentName} class="grid"></{ComponentName}>
+<{ComponentName} className="grid"></{ComponentName}>
 ```
 
 Then set the related CSS properties to this class:
