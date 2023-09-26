@@ -40,7 +40,7 @@ To turn on the `Grid` component's Excel-style filtering, two inputs should be se
 
 <!-- React -->
 ```tsx
-<IgrGrid data={this.nwindData} autoGenerate="false" ref={this.gridRef} allowFiltering="true" filterMode="excelStyleFilter">
+<IgrGrid data={nwindData} autoGenerate="false" ref={gridRef} allowFiltering="true" filterMode="excelStyleFilter">
 </IgrGrid>
 ```
 <!-- end: React -->
@@ -108,7 +108,7 @@ Sorting, pinning and hiding features can be removed from the filter menu using t
 ```
 
 ```tsx
-<IgrGrid data={this.nwindData} autoGenerate="false" ref={this.gridRef} allowFiltering="true" filterMode="excelStyleFilter">
+<IgrGrid data={nwindData} autoGenerate="false" ref={gridRef} allowFiltering="true" filterMode="excelStyleFilter">
     <IgrColumn field="ProductName" header="Product Name" sortable="true" dataType="String">
     </IgrColumn>
     <IgrColumn field="QuantityPerUnit" header="Quantity Per Unit" sortable="false" disable-pinning="true" disable-hiding="true" data-type="String">
@@ -306,7 +306,7 @@ public webGridFilterAltIconTemplate = (ctx: IgcCellTemplateContext) => {
 }
 ```
 
-```ts
+```tsx
 const webGridFilterAltIconTemplate = ({dataContext: IgrCellTemplateContext}) => {
   return (
     <img 
@@ -323,7 +323,7 @@ function App() {
     return (
         <>
         <IgrGrid autoGenerate="true" allowFiltering="true" filterMode="excelStyleFilter" 
-        excelStyleHeaderIconTemplate={webGridFilterAltIconTemplate}>
+            excelStyleHeaderIconTemplate={webGridFilterAltIconTemplate}>
         </IgrGrid>
         <>
     )
@@ -1037,7 +1037,7 @@ In case you would like to change some of the colors, you need to set a class for
 ```
 
 ```tsx
-<IgrGrid class="grid"></IgrGrid>
+<IgrGrid className="grid"></IgrGrid>
 ```
 
 ```razor
