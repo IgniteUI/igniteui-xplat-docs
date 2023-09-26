@@ -41,7 +41,7 @@ In order to enable row-dragging for your `{ComponentName}`, all you need to do i
 <!-- end: WebComponents -->
 
 <!-- React -->
-```html
+```tsx
 <{ComponentSelector} rowDraggable="true">
 </{ComponentSelector}>
 ```
