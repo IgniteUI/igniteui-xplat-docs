@@ -1398,9 +1398,10 @@ function omitFencedCode(options: any) {
         }
 
         //highlight.js, used by docfx, doesn't currently support tsx highlighting.
-        if (lang.toLowerCase() == "tsx") {
-            node.lang = "ts";
-        }
+        //since igniteui-docfx-template 3.6.0, there is custom tsx support
+        //if (lang.toLowerCase() == "tsx") {
+        //    node.lang = "ts";
+        //}
         // commented out since the igniteui-docfx-templat supports razor language
         //if (lang.toLowerCase() == "razor") {
         //    node.lang = "html";
@@ -1459,8 +1460,7 @@ export class MarkdownTransformer {
             case APIPlatform.React:
                 if (!PlatformDetectorRule.isTS(language) &&
                 !PlatformDetectorRule.isTSX(language) &&
-                 language !== "js" &&
-                 !PlatformDetectorRule.isHTML(language)) {
+                 language !== "js") {
                     return true;
                 }
 

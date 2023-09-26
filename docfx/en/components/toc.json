@@ -158,7 +158,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Collapsible Column Groups",
         "href": "grids/grid/collapsible-column-groups.md",
         "status": ""
@@ -200,13 +200,13 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Conditional Styling",
         "href": "grids/grid/conditional-cell-styling.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Display Density",
         "href": "grids/grid/display-density.md",
         "status": ""
@@ -218,7 +218,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Export to Excel",
         "href": "grids/grid/export-excel.md",
         "status": ""
@@ -242,19 +242,19 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Live Data / Real-Time",
         "href": "grids/grid/live-data.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Master-Detail",
         "href": "grids/grid/master-detail.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Keyboard navigation",
         "href": "grids/grid/keyboard-navigation.md",
         "status": ""
@@ -266,7 +266,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Cascading Combos",
         "href": "grids/grid/cascading-combos.md",
         "status": ""
@@ -278,13 +278,13 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Toolbar",
         "href": "grids/grid/toolbar.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Multi-Row Layout",
         "href": "grids/grid/multi-row-layout.md",
         "status": ""
@@ -296,25 +296,25 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "Blazor"],
+        "exclude": ["Angular", "Blazor"],
         "name": "Remote Data Operations",
         "href": "grids/grid/remote-data-operations.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Row Actions",
         "href": "grids/grid/row-actions.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Row Adding",
         "href": "grids/grid/row-adding.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Row Dragging",
         "href": "grids/grid/row-drag.md",
         "status": ""
@@ -326,7 +326,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Row Pinning",
         "href": "grids/grid/row-pinning.md",
         "status": ""
@@ -350,7 +350,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Sizing",
         "href": "grids/grid/sizing.md",
         "status": ""
@@ -526,7 +526,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "WebComponents"],
         "name": "Row Editing",
         "href": "grids/hierarchical-grid/row-editing.md",
         "status": ""
@@ -770,7 +770,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "WebComponents", "Blazor"],
         "name": "Row Editing",
         "href": "grids/tree-grid/row-editing.md",
         "status": "NEW"
@@ -1764,7 +1764,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "Blazor"],
     "name": "Overview",
     "href": "themes/overview.md",
     "status": ""

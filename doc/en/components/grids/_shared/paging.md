@@ -47,6 +47,15 @@ The following example represents `{ComponentName}` pagination and exposes the op
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+```tsx
+<{ComponentSelector} height="500px" width="100%" displayDensity="cosy">
+    <IgrPaginator key="paginator" perPage="10">
+    </IgrPaginator>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
 <!-- Angular -->
 ```html
 <igx-paginator #paginator [totalRecords]="20">
@@ -110,16 +119,22 @@ The `Paginator` component is used along with the `{ComponentName}` component in 
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
     var paginator = this.paginator = document.getElementById('paginator') as IgcPaginatorComponent;
-
-    this._bind = () => {
-        grid.data = this.data;
-        paginator.page = grid.page;
-        paginator.totalRecords = grid.totalRecords;
-        paginator.selectOptions = selectOptions;
-        paginator.displayDensity = grid.displayDensity;
-    }
-    this._bind();
+    const selectOptions = [5, 15, 20, 50];
+    grid.data = this.data;
+    paginator.page = grid.page;
+    paginator.totalRecords = grid.totalRecords;
+    paginator.selectOptions = selectOptions;
+    paginator.displayDensity = grid.displayDensity;
 }
+```
+
+```tsx
+const selectOptions = [5, 15, 20, 50];
+
+<{ComponentSelector}>
+    <IgrPaginator key="paginator" perPage={10} page={1} selectOptions={selectOptions} displayDensity="cosy">
+    </IgrPaginator>
+</{ComponentSelector}>
 ```
 
 <!-- ComponentEnd: Grid, TreeGrid -->
