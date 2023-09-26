@@ -1481,6 +1481,12 @@
         "exclude": ["Angular", "Blazor", "React"],
         "name": "Desktop Integration",
         "href": "layouts/dock-manager-electron.md"
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "Customization",
+        "href": "layouts/dock-manager-customization.md",
+        "status": "NEW"
       }
     ]
   },
@@ -1764,7 +1770,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "Blazor"],
     "name": "Overview",
     "href": "themes/overview.md",
     "status": ""

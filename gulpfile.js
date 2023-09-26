@@ -1675,3 +1675,90 @@ exports.extractSampleLinksAll = gulp.series(
     extractSampleLinksReact,
     extractSampleLinksWC,
 );
+
+// script for comparing output of builds
+function compareOutputs(cb) {
+
+    // note replace 'React-OLD' and 'React-NEW' with names of two folders that you want to compare
+    let source = {
+        folder: '\\dist\\React-OLD\\\en\\components\\',
+        paths: [], files: {}
+    };
+    let target = {
+        folder: '\\dist\\React-NEW\\\en\\components\\',
+        paths: [], files: {}
+    };
+    source.pattern = '.' + source.folder.split('\\').join('/');
+    target.pattern = '.' + target.folder.split('\\').join('/');
+
+    gulp.src([
+        // source.pattern + '**/menus/**/*.md',
+        // target.pattern + '**/menus/**/*.md',
+        source.pattern + '**/*.md',
+        target.pattern + '**/*.md',
+        source.pattern + '**/*.html',
+        target.pattern + '**/*.html',
+    ])
+    .pipe(es.map(function(file, fileCallback) {
+
+        var filePath = (file.dirname + "\\" + file.basename);
+        var fileName = filePath.split('\\en\\components')[1];
+
+        if (filePath.includes(source.folder))
+        {
+            source.paths.push(filePath);
+            source.files[fileName] = { path: filePath, content: file.contents.toString().split('\n')};
+        }
+        else if (filePath.includes(target.folder))
+        {
+            target.paths.push(filePath);
+            target.files[fileName] = { path: filePath, content: file.contents.toString().split('\n') };
+        }
+
+        // console.log(filePath);
+        fileCallback(null, file);
+    }))
+    .on("end", () => {
+
+        // console.log(source.paths);
+        // console.log(target.paths);
+
+        var sourceNames = Object.keys(source.files);
+        var targetNames = Object.keys(target.files);
+
+        if (sourceNames.length !== targetNames.length) {
+            console.alert('WARNING source folder has : ' + sourceNames.length+ ' files but target has ' + targetNames.length + 'files')
+        }
+
+        for (const fileName of sourceNames) {
+            var sourceFile = source.files[fileName];
+            var targetFile = target.files[fileName];
+            if (sourceFile === undefined) {
+                console.log('source is missing: ' + sourceFile.path);
+            }
+            else if (targetFile === undefined) {
+                console.log('target is missing: ' + targetFile.path);
+            }
+            else {
+                let sourceLines = sourceFile.content;
+                let targetLines = sourceFile.content;
+
+                if (sourceLines.length !== targetLines.length) {
+                    console.alert('WARNING ' + fileName + ' not match file lines: ' + sourceLines.length + ' vs ' + targetLines.length);
+                } else {
+                    for (let i = 0; i < sourceLines.length; i++) {
+                        if (sourceLines[i] !== targetLines[i]) {
+                            console.alert('WARNING ' + fileName + ' not match on lines: ')
+                            console.alert(sourceFile.path + ':' + i);
+                            console.alert(targetFile.path + ':' + i);
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        if (cb) cb();
+    })
+}
+exports.compareOutputs = compareOutputs

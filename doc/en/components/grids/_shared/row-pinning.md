@@ -70,12 +70,28 @@ The built-in row pinning UI is enabled by adding an `ActionStrip` component with
 ```
 <!-- end: WebComponents -->
 
+```tsx
+<{ComponentSelector}>
+    <IgrColumn field="Country" header="Country"> </IgrColumn>
+    <IgrActionStrip key="actionStrip">
+        <IgrGridPinningActions key="pinningActions"></IgrGridPinningActions>
+        <IgrGridEditingActions key="editingActions"></IgrGridEditingActions>
+    </IgrActionStrip>
+</{ComponentSelector}>
+```
+
 ## Row Pinning API
 
 Row pinning is controlled through the `Pinned` input of the `Row`. Pinned rows are rendered at the top of the `{ComponentName}` by default and stay fixed through vertical scrolling of the unpinned rows in the `{ComponentName}` body.
 
+<!-- Angular, WebComponents -->
 ```typescript
 this.grid.getRowByIndex(0).pinned = true;
+```
+<!-- end: Angular, WebComponents -->
+
+```tsx
+gridRef.current.getRowByIndex(0).pinned = true;
 ```
 
 ```razor
@@ -84,10 +100,18 @@ this.Grid.PinRowAsync("ALFKI", 0);
 
 You may also use the `{ComponentName}`'s `PinRow` or `UnpinRow` methods of the to pin or unpin records by their ID:
 
+<!-- Angular, WebComponents -->
 ```typescript
 this.grid.pinRow('ALFKI');
 this.grid.unpinRow('ALFKI');
 ```
+<!-- end: Angular, WebComponents -->
+
+```tsx
+gridRef.current.pinRow('ALFKI');
+gridRef.current.unpinRow('ALFKI');
+```
+
 
 ```razor
 this.Grid.PinRowAsync("ALFKI", 0);
@@ -107,22 +131,29 @@ A row is pinned below the last pinned row. Changing the order of the pinned rows
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid1" auto-generate="true">
+<{ComponentSelector} id="grid" auto-generate="true">
 </{ComponentSelector}>
 ```
 ```ts
 constructor() {
-    var grid1 = document.getElementById('grid1') as IgcGridComponent;
-    grid1.data = this.data;
-    grid1.addEventListener("rowPinning", this.rowPinning);
+    var grid = document.getElementById('grid') as IgcGridComponent;
+    grid.data = this.data;
+    grid.addEventListener("rowPinning", this.rowPinning);
+}
+
+public rowPinning(event) {
+    event.detail.insertAtIndex = 0;
 }
 ```
 <!-- end: WebComponents -->
 
-```typescript
-public rowPinning(event) {
+```tsx
+function rowPinning(grid: IgrGridBaseDirective, event: IgrPinRowEventArgs ) {
     event.detail.insertAtIndex = 0;
 }
+
+<{ComponentSelector} autoGenerate="true" rowPinning={rowPinning}>
+</{ComponentSelector}>
 ```
 
 ```razor
@@ -222,11 +253,9 @@ igRegisterScript("WebGridRowPinCellTemplate", (ctx) => {
     <span onpointerdown='toggleRowPin("${index}")'>📌</span>
 </div>`;
 }, false);
-
-
-
 ```
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [primaryKey]="'ID'" [autoGenerate]="false">
     <igx-column width="70px">
@@ -240,6 +269,7 @@ igRegisterScript("WebGridRowPinCellTemplate", (ctx) => {
     </igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 <!-- WebComponents -->
 ```html
@@ -257,28 +287,49 @@ constructor() {
 }
 
 public cellPinCellTemplate = (ctx: IgcCellTemplateContext) => {
-const index = ctx.cell.id.rowIndex;
-return html`<span @pointerdown=${(e: any) => this.toggleRowPin(index)}>📌</span>`
+    const index = ctx.cell.id.rowIndex;
+    return html`<span @pointerdown=${(e: any) => this.toggleRowPin(index)}>📌</span>`
 }
 ```
 <!-- end: WebComponents -->
 
+```tsx
+function cellPinCellTemplate(ctx: IgrCellTemplateContext) {
+    const index = ctx.dataContext.cell.id.rowIndex;
+    return (
+        <>
+            <span onPointerDown={(e: any) => toggleRowPin(index)}>📌</span>
+        </>
+    );
+}
+
+<{ComponentSelector} primaryKey="ID" autoGenerate="false">
+    <IgrColumn width="70px" bodyTemplate={cellPinCellTemplate}>
+    </IgrColumn>
+</{ComponentSelector}>
+```
+
 On click of the custom icon the pin state of the related row can be changed using the row's API methods.
 
+<!-- Angular, WebComponents -->
 ```typescript
 public toggleRowPin(index: number) {
     const grid = document.getElementsByTagName("igc-grid")[0] as IgcGridComponent;
     grid.getRowByIndex(index).pinned = !grid.getRowByIndex(index).pinned;
 }
 ```
+<!-- end: Angular, WebComponents -->
+
+```tsx
+function toggleRowPin(index: number) {
+  const grid = grid1Ref.current;
+  grid.getRowByIndex(index).pinned = !grid.getRowByIndex(index).pinned;
+}
+```
 
 #### Demo
 
 `sample="/{ComponentSample}/row-pinning-extra-column", height="600", alt="{Platform} {ComponentTitle} Row Pinning Extra Column Example"`
-
-
-
-
 
 <!-- ComponentStart: Grid -->
 
@@ -357,19 +408,23 @@ This would allow reordering the rows and moving them between the pinned and unpi
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 ## Styling
 
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
-```ts
-<igc-grid class="grid">
+```html
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid Class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
 
 Then set the related CSS properties for that class:
@@ -388,7 +443,7 @@ Then set the related CSS properties for that class:
 `sample="/{ComponentSample}/row-pinning-style", height="540", alt="{Platform} {ComponentTitle} Row Pinning Styling Example"`
 
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- Angular -->
 

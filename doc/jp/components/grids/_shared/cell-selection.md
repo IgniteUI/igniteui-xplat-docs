@@ -94,7 +94,7 @@ _language: ja
 
 ### 範囲の選択
 
-`selectRange` - API を使用してセル範囲を選択します。rowStart と rowEnd は行インデックスを使用する必要があり、columnStart と columnEnd は列インデックスまたは列データ フィールド値を使用することができます。
+`SelectRange` - API を使用してセル範囲を選択します。rowStart と rowEnd は行インデックスを使用する必要があり、columnStart と columnEnd は列インデックスまたは列データ フィールド値を使用することができます。
 
 ```ts
 const range = { rowStart: 2, rowEnd: 2, columnStart: 1, columnEnd: 1 };
@@ -102,6 +102,23 @@ this.grid.selectRange(range);
 ```
 
 <!-- end: Angular, WebComponents -->
+
+### セル選択のクリア
+
+`ClearCellSelection` は現在のセル選択をクリアします。
+
+```ts
+this.grid.clearCellSelection();
+```
+
+```razor
+@code {
+    private async void ClearSelection()
+    {
+        await this.grid.ClearCellSelectionAsync();
+    }
+}
+```
 
 ### 選択したデータの取得
 
