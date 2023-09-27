@@ -762,7 +762,7 @@ The first thing we need to is bind to the grid's event:
 
 <!-- React -->
 ```tsx
-<{ComponentSelector} cellEdit={handleCellEdit(event)}>
+<{ComponentSelector} cellEdit={handleCellEdit}>
 </{ComponentSelector}>
 ```
 <!-- end: React -->
@@ -808,6 +808,8 @@ constructor() {
 The `CellEdit` emits whenever **any** cell's value is about to be committed. In our **CellEdit** definition, we need to make sure that we check for our specific column before taking any action:
 
 <!-- ComponentStart: Grid -->
+
+<!-- Angular, WebComponents -->
 ```typescript
 export class MyGridEventsComponent {
     public handleCellEdit(event: IGridEditEventArgs): void {
@@ -825,6 +827,26 @@ export class MyGridEventsComponent {
     }
 }
 ```
+<!-- end: Angular, WebComponents -->
+
+<!-- React -->
+```typescript
+function handleCellEdit(s: IgrGridBaseDirective, event: IgrGridEditEventArgs): void {
+    const column = args.detail.column;
+
+    if (column.field === 'UnitsOnOrder') {
+        const rowData = args.detail.rowData;
+        if (!rowData) {
+            return;
+        }
+        if (args.detail.newValue > rowData.UnitsInStock) {
+            args.detail.cancel = true;
+            alert("You cannot order more than the units in stock!");  
+        }
+    }
+}
+```
+<!-- end: React -->
 
 ```razor
 *** In JavaScript ***
