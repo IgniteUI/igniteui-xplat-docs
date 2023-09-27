@@ -831,7 +831,7 @@ export class MyGridEventsComponent {
 
 <!-- React -->
 ```typescript
-function handleCellEdit(s: IgrGridBaseDirective, event: IgrGridEditEventArgs): void {
+function handleCellEdit(s: IgrGridBaseDirective, args: IgrGridEditEventArgs): void {
     const column = args.detail.column;
 
     if (column.field === 'UnitsOnOrder') {
@@ -1100,7 +1100,7 @@ In addition to the steps above, we can also style the controls that are used for
 
 <!-- end: Angular -->
 
-<!-- Blazor, WebComponents -->
+<!-- Blazor, WebComponents, React -->
 
 <!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
@@ -1114,4 +1114,4 @@ In addition to the steps above, we can also style the controls that are used for
 * [Searching](search.md)
 <!-- ComponentEnd:  Grid -->
 
-<!-- end: Blazor, WebComponents -->
+<!-- end: Blazor, WebComponents, React -->
