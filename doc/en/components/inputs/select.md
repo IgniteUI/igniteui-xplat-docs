@@ -88,7 +88,7 @@ To start using the component add the `Select` along with a list of `SelectItem`'
 
 ### Select
 
-The `Select` component can be used inside a `Form` component, thus it exposes a `Name` property to be registered with. It also has a `Label`, `Placeholder`, and `Size` properties. The `Outlined` property is used for styling purposes only when it comes to the Material theme. Except for the default slot, the component provides a few other slots including `header`, `footer`, `helper-text`, `prefix`, `suffix`, and `toggle-icon`.
+The `Select` component can be used inside a `Form` component, thus it exposes a `Name` property to be registered with. It also has a `Label`, and `Placeholder` properties. The `Outlined` property is used for styling purposes only when it comes to the Material theme. Except for the default slot, the component provides a few other slots including `header`, `footer`, `helper-text`, `prefix`, `suffix`, and `toggle-icon`. The component size can be changed using the `--ig-size` CSS variable.
 
 ### Item
 
