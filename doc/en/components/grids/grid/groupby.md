@@ -182,7 +182,7 @@ grid.groupBy({ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase:
 
 <!-- React -->
 ```typescript
-gridRef.current.groupBy({ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase: true });
+gridRef.current.groupBy([{ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase: true }]);
 ```
 <!-- end: React -->
 
