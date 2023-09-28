@@ -177,7 +177,7 @@ With the `Prefix` and `Suffix` parts of the `Chip` component and their slots, we
 
 ## Size
 
-We allow the user to choose the size of the `Chip` by using its `Size` property.
+We allow the user to choose the size of the `Chip` by utilizing the `--ig-size` CSS variable:
 
 ```tsx
 <IgrChip size="small" selectable="true" removable="true">
@@ -191,14 +191,13 @@ We allow the user to choose the size of the `Chip` by using its `Size` property.
 </IgrChip>
 ```
 
-```html
-<igc-chip size="small" selectable removable>Chip</igc-chip>
-<igc-chip size="medium" selectable removable>Chip</igc-chip>
-<igc-chip size="large" selectable removable>Chip</igc-chip>
+```css
+igc-chip {
+    --ig-size: var(--ig-size-large);
+}
 ```
 
 `sample="/inputs/chip/size", height="80", alt="{Platform} Chip Size Example"`
-
 
 
 ## Styling
