@@ -504,7 +504,6 @@ if (key == 13) {
     grid1Ref.current.navigateTo(nextRow, column, (obj) => {
         obj.target.activate();
         grid1Ref.current.clearCellSelection();
-        cdr.detectChanges();
     });
 }
 ```
