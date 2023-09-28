@@ -106,7 +106,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbIconButtonModule));
 
 ### サイズ
 
-ボタンのサイズは、`size` 属性をサポートされている 3 つのサイズ - `small`、`medium`、`large` (デフォルト) - のいずれかに設定することで変更できます。
+The size of the button can be changed by utilizing the `--ig-size` CSS variable to any of the three supported sizes: `--ig-size-small`, `--ig-size-medium`, `--ig-size-large`(default).
 
 `sample="/inputs/icon-button/size", height="100", alt="{Platform} Icon Button の例"`
 
@@ -115,8 +115,10 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbIconButtonModule));
 <IgrIconButton name="thumb-up" size="medium"></IgrIconButton>
 ```
 
-```html
-<igc-icon-button name="thumb-up" size="medium"></igc-icon-button>
+```css
+igc-icon-button {
+    --ig-size: var(--ig-size-medium);
+}
 ```
 
 ```razor

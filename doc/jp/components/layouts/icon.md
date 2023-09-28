@@ -208,10 +208,12 @@ public iconRef(icon: IgrIcon) {
 
 ### サイズ
 
-アイコン コンポーネントは、`small`、`medium` (デフォルト)、`large` の 3 つのアイコン サイズをサポートしています。アイコンのサイズを変更するには、`size` 属性を前述のサイズのいずれかに設定します。
+アイコン コンポーネントは、`small`、`medium` (デフォルト)、`large` の 3 つのアイコン サイズをサポートしています。In order to change the size of the icon, you can utilize the `--ig-size` CSS variable as follows:
 
-```html
-<igc-icon size="large"></igc-icon>
+```css
+igc-icon {
+  --ig-size: var(--ig-size-large);
+}
 ```
 
 ```razor

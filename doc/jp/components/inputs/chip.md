@@ -178,7 +178,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbChipModule));
 
 ## Size (サイズ)
 
-`Size` プロパティを使用して、ユーザーが `Chip` のサイズを選択できるようにします。
+We allow the user to choose the size of the `Chip` by utilizing the `--ig-size` CSS variable:
 
 ```tsx
 <IgrChip size="small" selectable="true" removable="true">
@@ -192,14 +192,13 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbChipModule));
 </IgrChip>
 ```
 
-```html
-<igc-chip size="small" selectable removable>Chip</igc-chip>
-<igc-chip size="medium" selectable removable>Chip</igc-chip>
-<igc-chip size="large" selectable removable>Chip</igc-chip>
+```css
+igc-chip {
+    --ig-size: var(--ig-size-large);
+}
 ```
 
 `sample="/inputs/chip/size", height="80", alt="{Platform} Chip Size Example"`
-
 
 
 ## スタイル設定

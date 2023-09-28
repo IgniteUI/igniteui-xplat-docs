@@ -190,7 +190,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 
 ## ボタンのサイズ設定
 
-`size` プロパティを使用して、ユーザーが `button` のサイズを選択できるようにすることができます。これを行うには、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびにボタンの size プロパティを変更します。
+Users can change the size of the `button` component using the `--ig-size` CSS variable.次の例では、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびにボタンの size プロパティを変更します。
 
 ```ts
 import { defineComponents, IgcButtonComponent, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
@@ -213,11 +213,11 @@ this.containedButton = document.getElementById('contained-btn') as IgcButtonComp
 this.fabButton = document.getElementById('fab-btn') as IgcButtonComponent;
 
 this.radioGroup.addEventListener('click', (radio: any) => {
-    this.outlinedButton.size = radio.target.value;
-    this.flatButton.size = radio.target.value;
-    this.containedButton.size = radio.target.value;
-    this.fabButton.size = radio.target.value;
-});
+    this.outlinedButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
+    this.flatButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
+    this.containedButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
+    this.fabButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
+}); 
 ```
 
 ```tsx
