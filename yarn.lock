@@ -788,10 +788,10 @@ browser-sync@^2.27.10:
     ua-parser-js "1.0.2"
     yargs "^17.3.1"
 
-browserslist@^4.12.0:
-  version "4.21.5"
-  resolved "https://registry.npmjs.org/browserslist/-/browserslist-4.21.5.tgz"
-  integrity sha512-tUkiguQGW7S3IhB7N+c2MV/HZPSCPAAiYBZXLsBhFB/PCy6ZKKsZrmBayHV9fdGV/ARIfJ14NkxKzRDjvp7L6w==
+"browserslist@^4.12.0":
+  "integrity" "sha512-tUkiguQGW7S3IhB7N+c2MV/HZPSCPAAiYBZXLsBhFB/PCy6ZKKsZrmBayHV9fdGV/ARIfJ14NkxKzRDjvp7L6w=="
+  "resolved" "https://registry.npmjs.org/browserslist/-/browserslist-4.21.5.tgz"
+  "version" "4.21.5"
   dependencies:
     caniuse-lite "^1.0.30001449"
     electron-to-chromium "^1.4.284"
@@ -2307,10 +2307,10 @@ gulp-yaml@^2.0.4:
     replace-ext "^1.0.0"
     through2 "^3.0.0"
 
-gulp@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.npmjs.org/gulp/-/gulp-4.0.2.tgz"
-  integrity sha512-dvEs27SCZt2ibF29xYgmnwwCYZxdxhQ/+LFWlbAW8y7jt68L/65402Lz3+CKy0Ov4rOs+NERmDq7YlZaDqUIfA==
+"gulp@^4.0.2":
+  "integrity" "sha512-dvEs27SCZt2ibF29xYgmnwwCYZxdxhQ/+LFWlbAW8y7jt68L/65402Lz3+CKy0Ov4rOs+NERmDq7YlZaDqUIfA=="
+  "resolved" "https://registry.npmjs.org/gulp/-/gulp-4.0.2.tgz"
+  "version" "4.0.2"
   dependencies:
     glob-watcher "^5.0.3"
     gulp-cli "^2.2.0"
@@ -2505,10 +2505,10 @@ iconv-lite@0.4.24:
 ieee754@^1.2.1:
   version "1.2.1"
 
-igniteui-docfx-template@3.5.1:
-  version "3.5.1"
-  resolved "https://registry.npmjs.org/igniteui-docfx-template/-/igniteui-docfx-template-3.5.1.tgz"
-  integrity sha512-Ojhs0sATgAToRRbcuDweTXhMlpHmVDnT7P9BUskxNLFJHwx6nq94Gy1yNMzErkKFgYJ3JiyDhRHMWUdY6B1Rkg==
+"igniteui-docfx-template@3.5.1":
+  "integrity" "sha512-Ojhs0sATgAToRRbcuDweTXhMlpHmVDnT7P9BUskxNLFJHwx6nq94Gy1yNMzErkKFgYJ3JiyDhRHMWUdY6B1Rkg=="
+  "resolved" "https://registry.npmjs.org/igniteui-docfx-template/-/igniteui-docfx-template-3.5.1.tgz"
+  "version" "3.5.1"
   dependencies:
     "@stackblitz/sdk" "^1.5.3"
     anchor-js "^4.3.0"
