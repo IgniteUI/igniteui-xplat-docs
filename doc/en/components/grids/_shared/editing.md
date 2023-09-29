@@ -114,18 +114,6 @@ Example how to commit new values, if user tries to sort the column while a cell/
 </igc-grid>
 ```
 
-```ts
-constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-
-    this._bind = () => {
-        grid.data = this.data;
-        grid.addEventListener("sorting", this.onSorting);
-    }
-    this._bind();
-
-}
-```
 
 <!-- Angular -->
 
@@ -140,6 +128,12 @@ public onSorting(event: ISortingEventArgs) {
 <!-- WebComponents -->
 
 ```typescript
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    grid.data = this.data;
+    grid.addEventListener("sorting", this.onSorting);
+}
+
 public onSorting(event: IgcSortingEventArgs) {
     this.grid.endEdit(true);
 }
@@ -160,9 +154,18 @@ function SortingHandler() {
 igRegisterScript("SortingHandler", SortingHandler, false);
 ```
 
+```tsx
+function onSorting(grid: IgrGridBaseDirective, event: IgrSortingEventArgs) {
+    grid.endEdit(true);
+}
+
+<IgrGrid data={localData} primaryKey="ProductID" sorting={onSorting}>
+</IgrGrid>
+```
+
 ## API References
 
-* `GridCell`
+* `Cell`
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
@@ -182,7 +185,7 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 <!-- end: Angular -->
 ## Additional Resources
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 
 
 * [Column Data Types](column-types.md#default-template)
@@ -199,7 +202,7 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 <!-- * [Searching](search.md) -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- end: Angular, WebComponents -->
+<!-- end: Angular, WebComponents, React -->
 
 <!-- Blazor -->
 
