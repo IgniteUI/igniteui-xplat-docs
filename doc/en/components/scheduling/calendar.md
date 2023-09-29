@@ -321,7 +321,7 @@ The following sample demonstrates the multiple months configuration:
 
 ### Size
 
-You could control the size and spacing of the Calendar inner elements by changing its `Size` property. The default `Size` value is `large`.
+You could control the size and spacing of the calendar inner elements using the `--ig-size` CSS variable. The default size of the component is large.
 
 `sample="/scheduling/calendar/size", height="520", alt="{Platform} Calendar Size Example"`
 

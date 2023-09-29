@@ -38,6 +38,13 @@ To turn on the `Grid` component's Excel-style filtering, two inputs should be se
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+```tsx
+<IgrGrid data={nwindData} autoGenerate="false" ref={gridRef} allowFiltering="true" filterMode="excelStyleFilter">
+</IgrGrid>
+```
+<!-- end: React -->
+
 ## Interactions
 
 In order to open the filter menu for a particular column, the {Platform} filter icon in the header should be clicked. Additionally, you can use the <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd> combination on a selected header. If the column can be sorted, pinned, moved, selected or hidden along with the filtering functionality, there will be buttons available for the features that are turned on.
@@ -98,6 +105,21 @@ Sorting, pinning and hiding features can be removed from the filter menu using t
     <igc-column field="Discontinued" header="Discontinued" sortable="true" data-type="Boolean">
     </igc-column>
 </igc-grid>
+```
+
+```tsx
+<IgrGrid data={nwindData} autoGenerate="false" ref={gridRef} allowFiltering="true" filterMode="excelStyleFilter">
+    <IgrColumn field="ProductName" header="Product Name" sortable="true" dataType="String">
+    </IgrColumn>
+    <IgrColumn field="QuantityPerUnit" header="Quantity Per Unit" sortable="false" disable-pinning="true" disable-hiding="true" data-type="String">
+    </IgrColumn>
+    <IgrColumn field="UnitPrice" header="Unit Price" disable-pinning="true" disable-hiding="true" sortable="true" data-type="Number">
+    </IgrColumn>
+    <IgrColumn field="OrderDate" header="Order Date" sortable="false"  data-type="Date">
+    </IgrColumn>
+    <IgrColumn field="Discontinued" header="Discontinued" sortable="true" data-type="Boolean">
+    </IgrColumn>      
+</IgrGrid>  
 ```
 
 In the sample below **Product Name** and **Discontinued** columns have all four features enabled, **Quantity Per Unit** have all three disabled, **Unit Price** has only sorting and **Order Date** has only pinning and hiding and all are `Selectable`.
@@ -251,7 +273,7 @@ The following code demonstrates how to define a custom Excel style filter menu u
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 If you want to further customize the Excel style filter menu, you can use the `ExcelStyleHeaderIconTemplate` property to define a custom template for the header icon of the menu.
 
@@ -284,7 +306,31 @@ public webGridFilterAltIconTemplate = (ctx: IgcCellTemplateContext) => {
 }
 ```
 
-<!-- end: WebComponents, Blazor -->
+```tsx
+const webGridFilterAltIconTemplate = ({dataContext: IgrCellTemplateContext}) => {
+  return (
+    <img 
+      height="15px" 
+      width="15px" 
+      src="http://static.infragistics.com/xplatform/images/grid/propeller-logo.svg" 
+      title="Continued" 
+      alt="Continued" 
+    />
+  );
+}
+
+function App() {
+    return (
+        <>
+        <IgrGrid autoGenerate="true" allowFiltering="true" filterMode="excelStyleFilter" 
+            excelStyleHeaderIconTemplate={webGridFilterAltIconTemplate}>
+        </IgrGrid>
+        <>
+    )
+}
+```
+
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- ComponentStart: Grid -->
 
@@ -980,7 +1026,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 ## Styling
 
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
@@ -988,6 +1034,10 @@ In case you would like to change some of the colors, you need to set a class for
 
 ```html
 <igc-grid class="grid"></igc-grid>
+```
+
+```tsx
+<IgrGrid className="grid"></IgrGrid>
 ```
 
 ```razor
@@ -1006,7 +1056,7 @@ Then set the related CSS properties to this class:
 
 `sample="/{ComponentSample}/excel-style-filtering-style", height="950", alt="{Platform} {ComponentTitle} excel style filtering style"`
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 ## API References
 

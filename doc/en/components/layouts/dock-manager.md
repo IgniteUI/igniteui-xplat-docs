@@ -516,18 +516,18 @@ The shortcuts are as follows:
 
 ### Docking
 
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Arrow up</kbd> Docks to global top
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Arrow down</kbd> Docks to global bottom
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Arrow right</kbd> Docks to global right
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Arrow left</kbd> Docks to global left
-- <kbd>Shift</kbd> + <kbd>Arrow Up</kbd> With multiple tabs in a tab group splits the view and docks the focused tab above
-- <kbd>Shift</kbd> + <kbd>Arrow down</kbd> With multiple tabs in a tab group splits the view and docks the focused tab below
-- <kbd>Shift</kbd> + <kbd>Arrow right</kbd> With multiple tabs in a tab group splits the view and docks the focused tab right
-- <kbd>Shift</kbd> + <kbd>Arrow left</kbd> With multiple tabs in a tab group splits the view and docks the focused tab left
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd> Docks to global top
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↓</kbd> Docks to global bottom
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>→</kbd> Docks to global right
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd> Docks to global left
+- <kbd>Shift</kbd> + <kbd>↑</kbd> With multiple tabs in a tab group splits the view and docks the focused tab above
+- <kbd>Shift</kbd> + <kbd>↓</kbd> With multiple tabs in a tab group splits the view and docks the focused tab below
+- <kbd>Shift</kbd> + <kbd>→</kbd> With multiple tabs in a tab group splits the view and docks the focused tab right
+- <kbd>Shift</kbd> + <kbd>←</kbd> With multiple tabs in a tab group splits the view and docks the focused tab left
 
 ### Navigating
- - <kbd>Cmd/Ctrl</kbd> + <kbd>F6</kbd> or <kbd>Cmd/Ctrl</kbd> + <kbd>Arrow right</kbd> Focuses next tab in document host
- - <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> or <kbd>Cmd/Ctrl</kbd> + <kbd>Arrow left</kbd> Focuses previous tab in document host
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>F6</kbd> or <kbd>Cmd/Ctrl</kbd> + <kbd>→</kbd> Focuses next tab in document host
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> or <kbd>Cmd/Ctrl</kbd> + <kbd>←</kbd> Focuses previous tab in document host
  - <kbd>Alt</kbd> + <kbd>F6</kbd> Focuses next content pane
  - <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> Focuses previous content pane
 
