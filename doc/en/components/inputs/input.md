@@ -108,10 +108,9 @@ The `helper-text` slot provides a hint placed below the Input. Let's add some he
 
 ## Input Sizing
 
-We can allow the user to choose the size of the `Input` by using its `Size` property. То do this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size of the Input:
+We can allow the user to change the size of the `Input` using the `--ig-size` CSS variable. То do this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size of the Input:
 
 `sample="/inputs/input/size", height="320", alt="{Platform} Input Sizing Example"`
-
 
 
 In the sample above we have demonstrated the use of the following attributes:
