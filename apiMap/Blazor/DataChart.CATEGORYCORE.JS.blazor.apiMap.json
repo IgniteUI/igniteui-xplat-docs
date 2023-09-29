@@ -11,4 +11,4 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetCategoryWidth"}],"originalName":"GetCategoryWidth"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItem"}],"originalName":"GetItem"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemIndex"}],"originalName":"GetItemIndex"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetExactItemIndex"}],"originalName":"GetExactItemIndex"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetExactItemIndex"}],"originalName":"GetExactItemIndex"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

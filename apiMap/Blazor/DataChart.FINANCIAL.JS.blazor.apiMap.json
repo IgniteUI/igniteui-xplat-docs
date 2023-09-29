@@ -5,7 +5,7 @@
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Position"}],"originalName":"Position"},
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Count"}],"originalName":"Count"},
     { "names":[{"platform":"Blazor","mappedType":"IgbFinancialCalculationDataSource","mappedName":"DataSource"}],"originalName":"DataSource"},
-    { "names":[{"platform":"Blazor","mappedType":"IgbFinancialCalculationSupportingCalculations","mappedName":"SupportingCalculations"}],"originalName":"SupportingCalculations"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbFinancialCalculationSupportingCalculations","mappedName":"SupportingCalculations"}],"originalName":"SupportingCalculations"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialPriceSeries",
     "names":[{"platform":"Blazor","fileName":"FinancialPriceSeries.cs","mappedName":"IgbFinancialPriceSeries"}],
     "members":[
@@ -13,6 +13,7 @@
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TrendLineBrush"}],"originalName":"TrendLineBrush"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ActualTrendLineBrush"}],"originalName":"ActualTrendLineBrush"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TrendLineThickness"}],"originalName":"TrendLineThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"double[]","mappedName":"TrendLineDashArray"}],"originalName":"TrendLineDashArray"},
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"TrendLinePeriod"}],"originalName":"TrendLinePeriod"},
     { "names":[{"platform":"Blazor","mappedType":"PriceDisplayType","mappedName":"DisplayType"}],"originalName":"DisplayType"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"NegativeOutline"}],"originalName":"NegativeOutline"},
@@ -27,7 +28,9 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetSeriesValueBoundingBox"}],"originalName":"GetSeriesValueBoundingBox"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ScrollIntoView"}],"originalName":"ScrollIntoView"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemSpan"}],"originalName":"GetItemSpan"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"SetNegativeColors"}],"originalName":"SetNegativeColors"}],"originalBaseTypeName":"FinancialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"SetNegativeColors"}],"originalName":"SetNegativeColors"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetSeriesValueType"}],"originalName":"GetSeriesValueType"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetSeriesValueTypePosition"}],"originalName":"GetSeriesValueTypePosition"}],"originalBaseTypeName":"FinancialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialSeries",
     "names":[{"platform":"Blazor","fileName":"FinancialSeries.cs","mappedName":"IgbFinancialSeries"}],
     "members":[
@@ -64,7 +67,7 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetExactItemIndex"}],"originalName":"GetExactItemIndex"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemIndex"}],"originalName":"GetItemIndex"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItem"}],"originalName":"GetItem"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"SetNegativeColors"}],"originalName":"SetNegativeColors"}],"originalBaseTypeName":"Series","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"SetNegativeColors"}],"originalName":"SetNegativeColors"}],"originalBaseTypeName":"Series","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialCalculationSupportingCalculations",
     "names":[{"platform":"Blazor","fileName":"FinancialCalculationSupportingCalculations.cs","mappedName":"IgbFinancialCalculationSupportingCalculations"}],
     "members":[
@@ -75,13 +78,14 @@
     { "names":[{"platform":"Blazor","mappedType":"IgbDataSourceSupportingCalculation","mappedName":"ShortVolumeOscillatorAverage"}],"originalName":"ShortVolumeOscillatorAverage"},
     { "names":[{"platform":"Blazor","mappedType":"IgbDataSourceSupportingCalculation","mappedName":"LongVolumeOscillatorAverage"}],"originalName":"LongVolumeOscillatorAverage"},
     { "names":[{"platform":"Blazor","mappedType":"IgbDataSourceSupportingCalculation","mappedName":"ShortPriceOscillatorAverage"}],"originalName":"ShortPriceOscillatorAverage"},
-    { "names":[{"platform":"Blazor","mappedType":"IgbDataSourceSupportingCalculation","mappedName":"LongPriceOscillatorAverage"}],"originalName":"LongPriceOscillatorAverage"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbDataSourceSupportingCalculation","mappedName":"LongPriceOscillatorAverage"}],"originalName":"LongPriceOscillatorAverage"},
+    { "names":[{"platform":"Blazor","mappedType":"String","mappedName":"MakeSafe"}],"originalName":"MakeSafe"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ColumnSupportingCalculation",
-    "names":[{"platform":"Blazor","fileName":"ColumnSupportingCalculation.cs","mappedName":"IgbColumnSupportingCalculation"}],"members":[],"originalBaseTypeName":"SupportingCalculation","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    "names":[{"platform":"Blazor","fileName":"ColumnSupportingCalculation.cs","mappedName":"IgbColumnSupportingCalculation"}],"members":[],"originalBaseTypeName":"SupportingCalculation","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"DataSourceSupportingCalculation",
-    "names":[{"platform":"Blazor","fileName":"DataSourceSupportingCalculation.cs","mappedName":"IgbDataSourceSupportingCalculation"}],"members":[],"originalBaseTypeName":"SupportingCalculation","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    "names":[{"platform":"Blazor","fileName":"DataSourceSupportingCalculation.cs","mappedName":"IgbDataSourceSupportingCalculation"}],"members":[],"originalBaseTypeName":"SupportingCalculation","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CalculatedColumn",
-    "names":[{"platform":"Blazor","fileName":"CalculatedColumn.cs","mappedName":"IgbCalculatedColumn"}],"members":[],"originalNamespace":"Infragistics.Controls.Charts"},
+    "names":[{"platform":"Blazor","fileName":"CalculatedColumn.cs","mappedName":"IgbCalculatedColumn"}],"members":[],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialCalculationDataSource",
     "names":[{"platform":"Blazor","fileName":"FinancialCalculationDataSource.cs","mappedName":"IgbFinancialCalculationDataSource"}],
     "members":[
@@ -97,4 +101,4 @@
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Multiplier"}],"originalName":"Multiplier"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MinimumValue"}],"originalName":"MinimumValue"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MaximumValue"}],"originalName":"MaximumValue"},
-    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"SpecifiesRange"}],"originalName":"SpecifiesRange"}],"originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"SpecifiesRange"}],"originalName":"SpecifiesRange"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

@@ -55,7 +55,10 @@
     { "names":[{"platform":"Angular","mappedType":"ConsolidatedItemHitTestBehavior","mappedName":"consolidatedItemHitTestBehavior"}],"originalName":"ConsolidatedItemHitTestBehavior"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItemValue"}],"originalName":"GetItemValue"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItem"}],"originalName":"GetItem"}],"originalBaseTypeName":"CategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItem"}],"originalName":"GetItem"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getSeriesValueType"}],"originalName":"GetSeriesValueType"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getSeriesValueTypePosition"}],"originalName":"GetSeriesValueTypePosition"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getSeriesValueTypePositionFromValue"}],"originalName":"GetSeriesValueTypePositionFromValue"}],"originalBaseTypeName":"CategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"AreaSeries",
     "names":[{"platform":"Angular","fileName":"igx-area-series-component.ts","dynamicModuleName":"igx-area-series-dynamic-module.ts","moduleName":"igx-area-series-module.ts","mappedName":"IgxAreaSeriesComponent"}],
     "members":[

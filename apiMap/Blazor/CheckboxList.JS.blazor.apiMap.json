@@ -41,13 +41,13 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"AddKeyValue"}],"originalName":"AddKeyValue"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"RemoveKeyValue"}],"originalName":"RemoveKeyValue"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"IsNothingSelected"}],"originalName":"IsNothingSelected"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"IsEverythingSelected"}],"originalName":"IsEverythingSelected"}],"originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"IsEverythingSelected"}],"originalName":"IsEverythingSelected"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
   { "originalName":"CheckedChangedEventArgs",
     "names":[{"platform":"Blazor","fileName":"CheckedChangedEventArgs.cs","mappedName":"IgbCheckedChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Index"}],"originalName":"Index"},
-    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsChecked"}],"originalName":"IsChecked"}],"originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsChecked"}],"originalName":"IsChecked"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
   { "originalName":"SelectAllCheckboxChangedEventArgs",
     "names":[{"platform":"Blazor","fileName":"SelectAllCheckboxChangedEventArgs.cs","mappedName":"IgbSelectAllCheckboxChangedEventArgs"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsChecked"}],"originalName":"IsChecked"}],"originalNamespace":"Infragistics.Controls.Inputs.Implementation"}]}
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsChecked"}],"originalName":"IsChecked"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Inputs.Implementation"}]}

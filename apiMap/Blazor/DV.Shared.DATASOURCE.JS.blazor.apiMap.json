@@ -412,7 +412,9 @@
   { "originalName":"IDataSourceVirtualDataProvider",
     "names":[{"platform":"Blazor","fileName":"IDataSourceVirtualDataProvider.cs","mappedName":"DataSourceVirtualDataProvider"}],
     "members":[
+    { "names":[{"platform":"Blazor","mappedType":"String","mappedName":"PageLoaded"}],"originalName":"PageLoaded"},
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"PageSizeRequested"}],"originalName":"PageSizeRequested"},
+    { "names":[{"platform":"Blazor","mappedType":"String","mappedName":"BatchCompleted"}],"originalName":"BatchCompleted"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"AddPageRequest"}],"originalName":"AddPageRequest"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"RemovePageRequest"}],"originalName":"RemovePageRequest"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"RemoveAllPageRequests"}],"originalName":"RemoveAllPageRequests"},

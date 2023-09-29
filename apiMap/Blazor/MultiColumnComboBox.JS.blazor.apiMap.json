@@ -1,18 +1,18 @@
 {"types":[
   { "originalName":"GotFocusEventArgs",
-    "names":[{"platform":"Blazor","fileName":"GotFocusEventArgs.cs","mappedName":"IgbGotFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    "names":[{"platform":"Blazor","fileName":"GotFocusEventArgs.cs","mappedName":"IgbGotFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"LostFocusEventArgs",
-    "names":[{"platform":"Blazor","fileName":"LostFocusEventArgs.cs","mappedName":"IgbLostFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    "names":[{"platform":"Blazor","fileName":"LostFocusEventArgs.cs","mappedName":"IgbLostFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"MultiColumnComboBoxTextChangedEventArgs",
     "names":[{"platform":"Blazor","fileName":"MultiColumnComboBoxTextChangedEventArgs.cs","mappedName":"IgbMultiColumnComboBoxTextChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"OldText"}],"originalName":"OldText"},
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"NewText"}],"originalName":"NewText"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"NewText"}],"originalName":"NewText"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"MultiColumnComboBoxValueChangedEventArgs",
     "names":[{"platform":"Blazor","fileName":"MultiColumnComboBoxValueChangedEventArgs.cs","mappedName":"IgbMultiColumnComboBoxValueChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"OldValue"}],"originalName":"OldValue"},
-    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"NewValue"}],"originalName":"NewValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"NewValue"}],"originalName":"NewValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"MultiColumnComboBox",
     "names":[{"platform":"Blazor","fileName":"MultiColumnComboBox.cs","mappedName":"IgbMultiColumnComboBox"}],
     "members":[
@@ -117,4 +117,4 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"DropDown"}],"originalName":"DropDown"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"Select"}],"originalName":"Select"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportVisualModel"}],"originalName":"ExportVisualModel"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"originalNamespace":"Infragistics.Controls.Grid.Implementation"}]}
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"}]}

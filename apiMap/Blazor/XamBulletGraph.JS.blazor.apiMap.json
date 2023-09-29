@@ -69,7 +69,7 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ProvideContainer"}],"originalName":"ProvideContainer"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ContainerResized"}],"originalName":"ContainerResized"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"StyleUpdated"}],"originalName":"StyleUpdated"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"Flush"}],"originalName":"Flush"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Gauges"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"Flush"}],"originalName":"Flush"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-gauges","originalNamespace":"Infragistics.Controls.Gauges"},
   { "originalName":"XamLinearGraphRange",
     "names":[{"platform":"Blazor","fileName":"LinearGraphRange.cs","mappedName":"IgbLinearGraphRange"}],
     "members":[
@@ -81,8 +81,8 @@
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"InnerEndExtent"}],"originalName":"InnerEndExtent"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"OuterStartExtent"}],"originalName":"OuterStartExtent"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"OuterEndExtent"}],"originalName":"OuterEndExtent"},
-    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"StrokeThickness"}],"originalName":"StrokeThickness"}],"originalBaseTypeName":"DependencyObject","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Gauges"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"StrokeThickness"}],"originalName":"StrokeThickness"}],"originalBaseTypeName":"DependencyObject","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-gauges","originalNamespace":"Infragistics.Controls.Gauges"},
   { "originalName":"FormatLinearGraphLabelEventArgs",
-    "names":[{"platform":"Blazor","fileName":"FormatLinearGraphLabelEventArgs.cs","mappedName":"IgbFormatLinearGraphLabelEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Gauges"},
+    "names":[{"platform":"Blazor","fileName":"FormatLinearGraphLabelEventArgs.cs","mappedName":"IgbFormatLinearGraphLabelEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-gauges","originalNamespace":"Infragistics.Controls.Gauges"},
   { "originalName":"AlignLinearGraphLabelEventArgs",
-    "names":[{"platform":"Blazor","fileName":"AlignLinearGraphLabelEventArgs.cs","mappedName":"IgbAlignLinearGraphLabelEventArgs"}],"members":[],"originalBaseTypeName":"FormatLinearGraphLabelEventArgs","originalBaseTypeNamespace":"Infragistics.Controls.Gauges","originalNamespace":"Infragistics.Controls.Gauges"}]}
+    "names":[{"platform":"Blazor","fileName":"AlignLinearGraphLabelEventArgs.cs","mappedName":"IgbAlignLinearGraphLabelEventArgs"}],"members":[],"originalBaseTypeName":"FormatLinearGraphLabelEventArgs","originalBaseTypeNamespace":"Infragistics.Controls.Gauges","packageName":"igniteui-gauges","originalNamespace":"Infragistics.Controls.Gauges"}]}

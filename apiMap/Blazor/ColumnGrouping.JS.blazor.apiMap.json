@@ -13,4 +13,4 @@
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ItemHoverBackgroundColor"}],"originalName":"ItemHoverBackgroundColor"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"BackgroundColor"}],"originalName":"BackgroundColor"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportVisualModel"}],"originalName":"ExportVisualModel"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}

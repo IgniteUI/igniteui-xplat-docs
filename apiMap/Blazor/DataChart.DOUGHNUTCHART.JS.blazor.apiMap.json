@@ -2,12 +2,12 @@
   { "originalName":"HierarchicalRingSeries",
     "names":[{"platform":"Blazor","fileName":"HierarchicalRingSeries.cs","mappedName":"IgbHierarchicalRingSeries"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ChildrenMemberPath"}],"originalName":"ChildrenMemberPath"}],"originalBaseTypeName":"RingSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ChildrenMemberPath"}],"originalName":"ChildrenMemberPath"}],"originalBaseTypeName":"RingSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"HoleDimensionsChangedEventArgs",
     "names":[{"platform":"Blazor","fileName":"HoleDimensionsChangedEventArgs.cs","mappedName":"IgbHoleDimensionsChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"Point","mappedName":"Center"}],"originalName":"Center"},
-    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Radius"}],"originalName":"Radius"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Radius"}],"originalName":"Radius"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"Ring",
     "names":[{"platform":"Blazor","fileName":"Ring.cs","mappedName":"IgbRing"}],
     "members":[
@@ -18,11 +18,11 @@
     { "names":[{"platform":"Blazor","mappedType":"IgbRingSeriesBase","mappedName":"RingSeries"}],"originalName":"RingSeries"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"RingBreadth"}],"originalName":"RingBreadth"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"RenderArcs"}],"originalName":"RenderArcs"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"PrepareArcs"}],"originalName":"PrepareArcs"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"PrepareArcs"}],"originalName":"PrepareArcs"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"RingSeries",
     "names":[{"platform":"Blazor","fileName":"RingSeries.cs","mappedName":"IgbRingSeries"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"IgbRing","mappedName":"Ring"}],"originalName":"Ring"}],"originalBaseTypeName":"RingSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbRing","mappedName":"Ring"}],"originalName":"Ring"}],"originalBaseTypeName":"RingSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"RingSeriesBase",
     "names":[{"platform":"Blazor","fileName":"RingSeriesBase.cs","mappedName":"IgbRingSeriesBase"}],
     "members":[
@@ -46,6 +46,8 @@
     { "names":[{"platform":"Blazor","mappedType":"OthersCategoryType","mappedName":"OthersCategoryType"}],"originalName":"OthersCategoryType"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"OthersCategoryText"}],"originalName":"OthersCategoryText"},
     { "names":[{"platform":"Blazor","mappedType":"IgbLegendBase","mappedName":"Legend"}],"originalName":"Legend"},
+    { "names":[{"platform":"Blazor","mappedType":"String","mappedName":"FormatLabel"}],"originalName":"FormatLabel"},
+    { "names":[{"platform":"Blazor","mappedType":"String","mappedName":"FormatLegendLabel"}],"originalName":"FormatLegendLabel"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"LabelFormat"}],"originalName":"LabelFormat"},
     { "names":[{"platform":"Blazor","mappedType":"IgbFormatSpecifierCollection","mappedName":"LabelFormatSpecifiers"}],"originalName":"LabelFormatSpecifiers"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"OthersLabelFormat"}],"originalName":"OthersLabelFormat"},
@@ -78,7 +80,7 @@
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"LabelInnerColor"}],"originalName":"LabelInnerColor"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsSurfaceInteractionDisabled"}],"originalName":"IsSurfaceInteractionDisabled"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"RadiusFactor"}],"originalName":"RadiusFactor"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ProvideContainer"}],"originalName":"ProvideContainer"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ProvideContainer"}],"originalName":"ProvideContainer"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"XamDoughnutChart",
     "names":[{"platform":"Blazor","fileName":"DoughnutChart.cs","mappedName":"IgbDoughnutChart"}],
     "members":[
@@ -107,4 +109,4 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyInsertItem"}],"originalName":"NotifyInsertItem"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifySetItem"}],"originalName":"NotifySetItem"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyClearItems"}],"originalName":"NotifyClearItems"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyRemoveItem"}],"originalName":"NotifyRemoveItem"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyRemoveItem"}],"originalName":"NotifyRemoveItem"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

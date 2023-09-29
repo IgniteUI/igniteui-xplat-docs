@@ -207,6 +207,7 @@
     { "names":[{"platform":"React","mappedType":"DataSeriesType","mappedName":"CategoryHighlightLayer"}],"originalName":"CategoryHighlightLayer"},
     { "names":[{"platform":"React","mappedType":"DataSeriesType","mappedName":"CategoryItemHighlightLayer"}],"originalName":"CategoryItemHighlightLayer"},
     { "names":[{"platform":"React","mappedType":"DataSeriesType","mappedName":"DataToolTipLayer"}],"originalName":"DataToolTipLayer"},
+    { "names":[{"platform":"React","mappedType":"DataSeriesType","mappedName":"ValueLayer"}],"originalName":"ValueLayer"},
     { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts.DataAdapters"},
   { "originalName":"DataSeriesAxisType","isEnum":true,
     "names":[{"platform":"React","fileName":"DataSeriesAxisType.ts","mappedName":"DataSeriesAxisType"}],

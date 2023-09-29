@@ -14,6 +14,7 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"pixelsToCharacterWidth256ths"}],"originalName":"PixelsToCharacterWidth256ths"},
     { "names":[{"platform":"React","mappedType":"void","mappedName":"protect"}],"originalName":"Protect"},
     { "names":[{"platform":"React","mappedType":"void","mappedName":"recalculate"}],"originalName":"Recalculate"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"recalculateAsync"}],"originalName":"RecalculateAsync"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"registerUserDefinedFunction"}],"originalName":"RegisterUserDefinedFunction"},
     { "names":[{"platform":"React","mappedType":"void","mappedName":"resumeCalculations"}],"originalName":"ResumeCalculations"},
     { "names":[{"platform":"React","mappedType":"void","mappedName":"save"}],"originalName":"Save"},

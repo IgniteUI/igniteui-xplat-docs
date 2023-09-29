@@ -15,7 +15,7 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ScrollRangeIntoView"}],"originalName":"ScrollRangeIntoView"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ScrollIntoView"}],"originalName":"ScrollIntoView"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetWindowZoomFromCategories"}],"originalName":"GetWindowZoomFromCategories"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetWindowZoomFromItemSpan"}],"originalName":"GetWindowZoomFromItemSpan"}],"originalBaseTypeName":"CategoryAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetWindowZoomFromItemSpan"}],"originalName":"GetWindowZoomFromItemSpan"}],"originalBaseTypeName":"CategoryAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"BarSeries",
     "names":[{"platform":"Blazor","fileName":"BarSeries.cs","mappedName":"IgbBarSeries"}],
     "members":[
@@ -23,7 +23,7 @@
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"RadiusY"}],"originalName":"RadiusY"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetSeriesValueBoundingBox"}],"originalName":"GetSeriesValueBoundingBox"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ScrollIntoView"}],"originalName":"ScrollIntoView"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"VerticalAnchoredCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"VerticalAnchoredCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"VerticalAnchoredCategorySeries",
     "names":[{"platform":"Blazor","fileName":"VerticalAnchoredCategorySeries.cs","mappedName":"IgbVerticalAnchoredCategorySeries"}],
     "members":[
@@ -40,4 +40,4 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemIndex"}],"originalName":"GetItemIndex"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItem"}],"originalName":"GetItem"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"CanUseAsYAxis"}],"originalName":"CanUseAsYAxis"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"CanUseAsXAxis"}],"originalName":"CanUseAsXAxis"}],"originalBaseTypeName":"AnchoredCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"CanUseAsXAxis"}],"originalName":"CanUseAsXAxis"}],"originalBaseTypeName":"AnchoredCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

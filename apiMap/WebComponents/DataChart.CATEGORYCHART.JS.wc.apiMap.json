@@ -1,4 +1,4 @@
-{"extraFiles":["igc-category-chart-core-module.ts","igc-category-chart-module.ts"],
+{"extraFiles":["igc-category-chart-core-module.ts","igc-category-chart-module.ts","igc-category-chart-toolbar-module.ts"],
   "types":[
   { "originalName":"CategoryChart",
     "names":[{"platform":"WebComponents","fileName":"igc-category-chart-component.ts","mappedName":"IgcCategoryChartComponent"}],

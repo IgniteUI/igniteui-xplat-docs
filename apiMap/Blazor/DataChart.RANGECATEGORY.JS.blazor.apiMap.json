@@ -1,6 +1,6 @@
 {"types":[
   { "originalName":"RangeAreaSeries",
-    "names":[{"platform":"Blazor","fileName":"RangeAreaSeries.cs","mappedName":"IgbRangeAreaSeries"}],"members":[],"originalBaseTypeName":"HorizontalRangeCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    "names":[{"platform":"Blazor","fileName":"RangeAreaSeries.cs","mappedName":"IgbRangeAreaSeries"}],"members":[],"originalBaseTypeName":"HorizontalRangeCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"HorizontalRangeCategorySeries",
     "names":[{"platform":"Blazor","fileName":"HorizontalRangeCategorySeries.cs","mappedName":"IgbHorizontalRangeCategorySeries"}],
     "members":[
@@ -21,18 +21,18 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetSeriesLowValuePosition"}],"originalName":"GetSeriesLowValuePosition"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetSeriesValuePosition"}],"originalName":"GetSeriesValuePosition"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"CanUseAsYAxis"}],"originalName":"CanUseAsYAxis"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"CanUseAsXAxis"}],"originalName":"CanUseAsXAxis"}],"originalBaseTypeName":"RangeCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"CanUseAsXAxis"}],"originalName":"CanUseAsXAxis"}],"originalBaseTypeName":"RangeCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"RangeCategorySeries",
     "names":[{"platform":"Blazor","fileName":"RangeCategorySeries.cs","mappedName":"IgbRangeCategorySeries"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"LowMemberPath"}],"originalName":"LowMemberPath"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"HighMemberPath"}],"originalName":"HighMemberPath"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemValue"}],"originalName":"GetItemValue"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ScrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"CategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ScrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"CategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"RangeColumnSeries",
     "names":[{"platform":"Blazor","fileName":"RangeColumnSeries.cs","mappedName":"IgbRangeColumnSeries"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"RadiusX"}],"originalName":"RadiusX"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"RadiusY"}],"originalName":"RadiusY"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetSeriesValueBoundingBox"}],"originalName":"GetSeriesValueBoundingBox"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"HorizontalRangeCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"HorizontalRangeCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

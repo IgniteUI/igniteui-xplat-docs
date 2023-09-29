@@ -63,9 +63,9 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyRemoveItem"}],"originalName":"NotifyRemoveItem"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyClearItems"}],"originalName":"NotifyClearItems"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifySetItem"}],"originalName":"NotifySetItem"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"XYChart","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"XYChart","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialChartCustomIndicatorArgs",
     "names":[{"platform":"Blazor","fileName":"FinancialChartCustomIndicatorArgs.cs","mappedName":"IgbFinancialChartCustomIndicatorArgs"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"IgbSeries","mappedName":"Series"}],"originalName":"Series"},
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Index"}],"originalName":"Index"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Index"}],"originalName":"Index"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

@@ -54,9 +54,9 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"Flush"}],"originalName":"Flush"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"TrackDirty"}],"originalName":"TrackDirty"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"Show"}],"originalName":"Show"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"Hide"}],"originalName":"Hide"}],"originalNamespace":"Infragistics.Controls.Navigation.Implementation"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"Hide"}],"originalName":"Hide"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Navigation.Implementation"},
   { "originalName":"ZoomSliderResolvingAxisValueEventArgs",
     "names":[{"platform":"Blazor","fileName":"ZoomSliderResolvingAxisValueEventArgs.cs","mappedName":"IgbZoomSliderResolvingAxisValueEventArgs"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Position"}],"originalName":"Position"},
-    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"Value"}],"originalName":"Value"}],"originalNamespace":"Infragistics.Controls.Navigation.Implementation"}]}
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"Value"}],"originalName":"Value"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Navigation.Implementation"}]}

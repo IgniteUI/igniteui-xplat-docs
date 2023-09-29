@@ -10,12 +10,12 @@
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"DefaultTokenTimeout"}],"originalName":"DefaultTokenTimeout"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TokenGenerationEndPoint"}],"originalName":"TokenGenerationEndPoint"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"RefererUri"}],"originalName":"RefererUri"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"AcquireNewToken"}],"originalName":"AcquireNewToken"}],"originalBaseTypeName":"GeographicMapImagery","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"AcquireNewToken"}],"originalName":"AcquireNewToken"}],"originalBaseTypeName":"GeographicMapImagery","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicTileSeries",
     "names":[{"platform":"Blazor","fileName":"GeographicTileSeries.cs","mappedName":"IgbGeographicTileSeries"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"IgbGeographicMapImagery","mappedName":"TileImagery"}],"originalName":"TileImagery"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ClearTileCache"}],"originalName":"ClearTileCache"}],"originalBaseTypeName":"GeographicShapeSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ClearTileCache"}],"originalName":"ClearTileCache"}],"originalBaseTypeName":"GeographicShapeSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"BingMapsMapImagery",
     "names":[{"platform":"Blazor","fileName":"BingMapsMapImagery.cs","mappedName":"IgbBingMapsMapImagery"}],
     "members":[
@@ -30,13 +30,13 @@
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"CultureName"}],"originalName":"CultureName"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ApiKey"}],"originalName":"ApiKey"},
     { "names":[{"platform":"Blazor","mappedType":"BingMapsImageryStyle","mappedName":"ImageryStyle"}],"originalName":"ImageryStyle"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"RequestMapSettings"}],"originalName":"RequestMapSettings"}],"originalBaseTypeName":"GeographicMapImagery","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"RequestMapSettings"}],"originalName":"RequestMapSettings"}],"originalBaseTypeName":"GeographicMapImagery","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"TileGeneratorMapImagery",
     "names":[{"platform":"Blazor","fileName":"TileGeneratorMapImagery.cs","mappedName":"IgbTileGeneratorMapImagery"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"IgbTileGenerator","mappedName":"TileGenerator"}],"originalName":"TileGenerator"}],"originalBaseTypeName":"GeographicMapImagery","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbTileGenerator","mappedName":"TileGenerator"}],"originalName":"TileGenerator"}],"originalBaseTypeName":"GeographicMapImagery","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"CustomMapImagery",
-    "names":[{"platform":"Blazor","fileName":"CustomMapImagery.cs","mappedName":"IgbCustomMapImagery"}],"members":[],"originalBaseTypeName":"GeographicMapImagery","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    "names":[{"platform":"Blazor","fileName":"CustomMapImagery.cs","mappedName":"IgbCustomMapImagery"}],"members":[],"originalBaseTypeName":"GeographicMapImagery","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicMapImagery",
     "names":[{"platform":"Blazor","fileName":"GeographicMapImagery.cs","mappedName":"IgbGeographicMapImagery"}],
     "members":[
@@ -46,13 +46,13 @@
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsHorizontalWrappingEnabled"}],"originalName":"IsHorizontalWrappingEnabled"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"UserAgent"}],"originalName":"UserAgent"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Opacity"}],"originalName":"Opacity"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ClearTileCache"}],"originalName":"ClearTileCache"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ClearTileCache"}],"originalName":"ClearTileCache"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"ImagesChangedEventArgs",
-    "names":[{"platform":"Blazor","fileName":"ImagesChangedEventArgs.cs","mappedName":"IgbImagesChangedEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Maps"},
+    "names":[{"platform":"Blazor","fileName":"ImagesChangedEventArgs.cs","mappedName":"IgbImagesChangedEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"OpenStreetMapImagery",
     "names":[{"platform":"Blazor","fileName":"OpenStreetMapImagery.cs","mappedName":"IgbOpenStreetMapImagery"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TilePath"}],"originalName":"TilePath"}],"originalBaseTypeName":"GeographicMapImagery","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TilePath"}],"originalName":"TilePath"}],"originalBaseTypeName":"GeographicMapImagery","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicHighDensityScatterSeries",
     "names":[{"platform":"Blazor","fileName":"GeographicHighDensityScatterSeries.cs","mappedName":"IgbGeographicHighDensityScatterSeries"}],
     "members":[
@@ -65,7 +65,7 @@
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"HeatMinimumColor"}],"originalName":"HeatMinimumColor"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"HeatMaximumColor"}],"originalName":"HeatMaximumColor"},
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"PointExtent"}],"originalName":"PointExtent"},
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"ProgressiveStatus"}],"originalName":"ProgressiveStatus"}],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"ProgressiveStatus"}],"originalName":"ProgressiveStatus"}],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicMarkerSeries",
     "names":[{"platform":"Blazor","fileName":"GeographicMarkerSeries.cs","mappedName":"IgbGeographicMarkerSeries"}],
     "members":[
@@ -79,7 +79,7 @@
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"MaximumMarkers"}],"originalName":"MaximumMarkers"},
     { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"ActualMarkerTemplate"}],"originalName":"ActualMarkerTemplate"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ActualMarkerBrush"}],"originalName":"ActualMarkerBrush"},
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ActualMarkerOutline"}],"originalName":"ActualMarkerOutline"}],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ActualMarkerOutline"}],"originalName":"ActualMarkerOutline"}],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicPolylineSeries",
     "names":[{"platform":"Blazor","fileName":"GeographicPolylineSeries.cs","mappedName":"IgbGeographicPolylineSeries"}],
     "members":[
@@ -91,7 +91,7 @@
     { 
     "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ShapeStrokeThickness"}],"originalName":"shapeStyle.strokeThickness"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ShapeOpacity"}],"originalName":"shapeStyle.opacity"}],"originalBaseTypeName":"GeographicShapeSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ShapeOpacity"}],"originalName":"shapeStyle.opacity"}],"originalBaseTypeName":"GeographicShapeSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicProportionalSymbolSeries",
     "names":[{"platform":"Blazor","fileName":"GeographicProportionalSymbolSeries.cs","mappedName":"IgbGeographicProportionalSymbolSeries"}],
     "members":[
@@ -110,16 +110,16 @@
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsCustomScatterStyleAllowed"}],"originalName":"IsCustomScatterStyleAllowed"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsCustomScatterMarkerStyleAllowed"}],"originalName":"IsCustomScatterMarkerStyleAllowed"},
     { "names":[{"platform":"Blazor","mappedType":"ScatterItemSearchMode","mappedName":"ItemSearchMode"}],"originalName":"ItemSearchMode"},
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"ItemSearchThreshold"}],"originalName":"ItemSearchThreshold"}],"originalBaseTypeName":"GeographicMarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"ItemSearchThreshold"}],"originalName":"ItemSearchThreshold"}],"originalBaseTypeName":"GeographicMarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicProportionalSymbolSeriesBase",
-    "names":[{"platform":"Blazor","fileName":"GeographicProportionalSymbolSeriesBase.cs","mappedName":"IgbGeographicProportionalSymbolSeriesBase"}],"members":[],"originalBaseTypeName":"GeographicMarkerSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    "names":[{"platform":"Blazor","fileName":"GeographicProportionalSymbolSeriesBase.cs","mappedName":"IgbGeographicProportionalSymbolSeriesBase"}],"members":[],"originalBaseTypeName":"GeographicMarkerSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicScatterAreaSeries",
     "names":[{"platform":"Blazor","fileName":"GeographicScatterAreaSeries.cs","mappedName":"IgbGeographicScatterAreaSeries"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ColorMemberPath"}],"originalName":"ColorMemberPath"},
     { "names":[{"platform":"Blazor","mappedType":"IgbColorScale","mappedName":"ColorScale"}],"originalName":"ColorScale"},
     { "names":[{"platform":"Blazor","mappedType":"IgbColorScale","mappedName":"ActualColorScale"}],"originalName":"ActualColorScale"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"UpdateActualColorScale"}],"originalName":"UpdateActualColorScale"}],"originalBaseTypeName":"GeographicXYTriangulatingSeries","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"UpdateActualColorScale"}],"originalName":"UpdateActualColorScale"}],"originalBaseTypeName":"GeographicXYTriangulatingSeries","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicShapeSeriesBase",
     "names":[{"platform":"Blazor","fileName":"GeographicShapeSeriesBase.cs","mappedName":"IgbGeographicShapeSeriesBase"}],
     "members":[
@@ -130,13 +130,13 @@
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"ItemSearchThreshold"}],"originalName":"ItemSearchThreshold"},
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"ItemSearchPointsThreshold"}],"originalName":"ItemSearchPointsThreshold"},
     { "names":[{"platform":"Blazor","mappedType":"IgbShapeDataSource","mappedName":"ShapefileDataSource"}],"originalName":"ShapefileDataSource"},
-    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ShapeFilterResolution"}],"originalName":"ShapeFilterResolution"}],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ShapeFilterResolution"}],"originalName":"ShapeFilterResolution"}],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicShapeSeriesBaseBase",
-    "names":[{"platform":"Blazor","fileName":"GeographicShapeSeriesBaseBase.cs","mappedName":"IgbGeographicShapeSeriesBaseBase"}],"members":[],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    "names":[{"platform":"Blazor","fileName":"GeographicShapeSeriesBaseBase.cs","mappedName":"IgbGeographicShapeSeriesBaseBase"}],"members":[],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicSymbolSeriesBase",
-    "names":[{"platform":"Blazor","fileName":"GeographicSymbolSeriesBase.cs","mappedName":"IgbGeographicSymbolSeriesBase"}],"members":[],"originalBaseTypeName":"GeographicMarkerSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    "names":[{"platform":"Blazor","fileName":"GeographicSymbolSeriesBase.cs","mappedName":"IgbGeographicSymbolSeriesBase"}],"members":[],"originalBaseTypeName":"GeographicMarkerSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicMarkerSeriesBase",
-    "names":[{"platform":"Blazor","fileName":"GeographicMarkerSeriesBase.cs","mappedName":"IgbGeographicMarkerSeriesBase"}],"members":[],"originalBaseTypeName":"GeographicMarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    "names":[{"platform":"Blazor","fileName":"GeographicMarkerSeriesBase.cs","mappedName":"IgbGeographicMarkerSeriesBase"}],"members":[],"originalBaseTypeName":"GeographicMarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicXYTriangulatingSeries",
     "names":[{"platform":"Blazor","fileName":"GeographicXYTriangulatingSeries.cs","mappedName":"IgbGeographicXYTriangulatingSeries"}],
     "members":[
@@ -145,16 +145,16 @@
     { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"TrianglesSource"}],"originalName":"TrianglesSource"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TriangleVertexMemberPath1"}],"originalName":"TriangleVertexMemberPath1"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TriangleVertexMemberPath2"}],"originalName":"TriangleVertexMemberPath2"},
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TriangleVertexMemberPath3"}],"originalName":"TriangleVertexMemberPath3"}],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TriangleVertexMemberPath3"}],"originalName":"TriangleVertexMemberPath3"}],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicXYTriangulatingSeriesBase",
-    "names":[{"platform":"Blazor","fileName":"GeographicXYTriangulatingSeriesBase.cs","mappedName":"IgbGeographicXYTriangulatingSeriesBase"}],"members":[],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    "names":[{"platform":"Blazor","fileName":"GeographicXYTriangulatingSeriesBase.cs","mappedName":"IgbGeographicXYTriangulatingSeriesBase"}],"members":[],"originalBaseTypeName":"GeographicMapSeriesHost","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicContourLineSeries",
     "names":[{"platform":"Blazor","fileName":"GeographicContourLineSeries.cs","mappedName":"IgbGeographicContourLineSeries"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ValueMemberPath"}],"originalName":"ValueMemberPath"},
     { "names":[{"platform":"Blazor","mappedType":"IgbValueBrushScale","mappedName":"FillScale"}],"originalName":"FillScale"},
     { "names":[{"platform":"Blazor","mappedType":"IgbValueBrushScale","mappedName":"ActualFillScale"}],"originalName":"ActualFillScale"},
-    { "names":[{"platform":"Blazor","mappedType":"IgbContourValueResolver","mappedName":"ValueResolver"}],"originalName":"ValueResolver"}],"originalBaseTypeName":"GeographicXYTriangulatingSeries","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbContourValueResolver","mappedName":"ValueResolver"}],"originalName":"ValueResolver"}],"originalBaseTypeName":"GeographicXYTriangulatingSeries","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicMapSeriesHost",
     "names":[{"platform":"Blazor","fileName":"GeographicMapSeriesHost.cs","mappedName":"IgbGeographicMapSeriesHost"}],
     "members":[
@@ -177,7 +177,7 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetSeriesValueFromSeriesPixel"}],"originalName":"GetSeriesValueFromSeriesPixel"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemSpan"}],"originalName":"GetItemSpan"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"RenderSeries"}],"originalName":"RenderSeries"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"StyleUpdated"}],"originalName":"StyleUpdated"}],"originalBaseTypeName":"Series","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"StyleUpdated"}],"originalName":"StyleUpdated"}],"originalBaseTypeName":"Series","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicShapeSeries",
     "names":[{"platform":"Blazor","fileName":"GeographicShapeSeries.cs","mappedName":"IgbGeographicShapeSeries"}],
     "members":[
@@ -200,7 +200,7 @@
     { "names":[{"platform":"Blazor","mappedType":"CollisionAvoidanceType","mappedName":"MarkerCollisionAvoidance"}],"originalName":"MarkerCollisionAvoidance"},
     { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"ActualMarkerTemplate"}],"originalName":"ActualMarkerTemplate"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ActualMarkerBrush"}],"originalName":"ActualMarkerBrush"},
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ActualMarkerOutline"}],"originalName":"ActualMarkerOutline"}],"originalBaseTypeName":"GeographicShapeSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ActualMarkerOutline"}],"originalName":"ActualMarkerOutline"}],"originalBaseTypeName":"GeographicShapeSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicSymbolSeries",
     "names":[{"platform":"Blazor","fileName":"GeographicSymbolSeries.cs","mappedName":"IgbGeographicSymbolSeries"}],
     "members":[
@@ -210,7 +210,7 @@
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsCustomScatterStyleAllowed"}],"originalName":"IsCustomScatterStyleAllowed"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsCustomScatterMarkerStyleAllowed"}],"originalName":"IsCustomScatterMarkerStyleAllowed"},
     { "names":[{"platform":"Blazor","mappedType":"ScatterItemSearchMode","mappedName":"ItemSearchMode"}],"originalName":"ItemSearchMode"},
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"ItemSearchThreshold"}],"originalName":"ItemSearchThreshold"}],"originalBaseTypeName":"GeographicMarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"ItemSearchThreshold"}],"originalName":"ItemSearchThreshold"}],"originalBaseTypeName":"GeographicMarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Maps","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"XamGeographicMap",
     "names":[{"platform":"Blazor","fileName":"GeographicMap.cs","mappedName":"IgbGeographicMap"}],
     "members":[
@@ -242,11 +242,11 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetActualWindowScaleVertical"}],"originalName":"GetActualWindowScaleVertical"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"DeferredRefresh"}],"originalName":"DeferredRefresh"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportVisualData"}],"originalName":"ExportVisualData"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ZoomToGeographic"}],"originalName":"ZoomToGeographic"}],"originalBaseTypeName":"SeriesViewer","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls.Maps"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ZoomToGeographic"}],"originalName":"ZoomToGeographic"}],"originalBaseTypeName":"SeriesViewer","originalBaseTypeNamespace":"Infragistics.Controls","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"ImageTilesReadyEventArgs",
-    "names":[{"platform":"Blazor","fileName":"ImageTilesReadyEventArgs.cs","mappedName":"IgbImageTilesReadyEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Maps"},
+    "names":[{"platform":"Blazor","fileName":"ImageTilesReadyEventArgs.cs","mappedName":"IgbImageTilesReadyEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"TileSeries",
     "names":[{"platform":"Blazor","fileName":"TileSeries.cs","mappedName":"IgbTileSeries"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"IgbGeographicMapImagery","mappedName":"TileImagery"}],"originalName":"TileImagery"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"DeferredRefresh"}],"originalName":"DeferredRefresh"}],"originalBaseTypeName":"ShapeSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"DeferredRefresh"}],"originalName":"DeferredRefresh"}],"originalBaseTypeName":"ShapeSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-maps","originalNamespace":"Infragistics.Controls.Charts"}]}

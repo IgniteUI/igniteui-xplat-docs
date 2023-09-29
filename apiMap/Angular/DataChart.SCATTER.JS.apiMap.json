@@ -117,7 +117,10 @@
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItemIndex"}],"originalName":"GetItemIndex"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getExactItemIndex"}],"originalName":"GetExactItemIndex"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getSeriesValuePosition"}],"originalName":"GetSeriesValuePosition"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getSeriesValueType"}],"originalName":"GetSeriesValueType"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getSeriesValueTypePositionFromValue"}],"originalName":"GetSeriesValueTypePositionFromValue"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getSeriesValueTypePosition"}],"originalName":"GetSeriesValueTypePosition"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ScatterLineSeries",
     "names":[{"platform":"Angular","fileName":"igx-scatter-line-series-component.ts","dynamicModuleName":"igx-scatter-line-series-dynamic-module.ts","moduleName":"igx-scatter-line-series-module.ts","mappedName":"IgxScatterLineSeriesComponent"}],
     "members":[

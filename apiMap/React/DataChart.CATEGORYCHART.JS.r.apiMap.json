@@ -1,4 +1,4 @@
-{"extraFiles":["igr-category-chart-core-module.ts","igr-category-chart-module.ts"],
+{"extraFiles":["igr-category-chart-core-module.ts","igr-category-chart-module.ts","igr-category-chart-toolbar-module.ts"],
   "types":[
   { "originalName":"CategoryChart",
     "names":[{"platform":"React","fileName":"igr-category-chart.ts","mappedName":"IgrCategoryChart"}],

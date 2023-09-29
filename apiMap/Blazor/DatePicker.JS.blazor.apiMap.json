@@ -14,7 +14,7 @@
     { "names":[{"platform":"Blazor","mappedType":"any","mappedName":"_timeShortFormat"}],"originalName":"_timeShortFormat"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"formatDate"}],"originalName":"FormatDate"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"getPattern"}],"originalName":"GetPattern"},
-    { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Inputs"},
+    { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-inputs","originalNamespace":"Infragistics.Controls.Inputs"},
   { "originalName":"DatePicker",
     "names":[{"platform":"Blazor","fileName":"DatePicker.cs","mappedName":"IgbDatePicker"}],
     "members":[
@@ -41,8 +41,8 @@
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsDisabled"}],"originalName":"IsDisabled"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"Select"}],"originalName":"Select"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportVisualModel"}],"originalName":"ExportVisualModel"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"packageName":"igniteui-inputs","originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
   { "originalName":"GotFocusEventArgs",
-    "names":[{"platform":"Blazor","fileName":"GotFocusEventArgs.cs","mappedName":"IgbGotFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
+    "names":[{"platform":"Blazor","fileName":"GotFocusEventArgs.cs","mappedName":"IgbGotFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-inputs","originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
   { "originalName":"LostFocusEventArgs",
-    "names":[{"platform":"Blazor","fileName":"LostFocusEventArgs.cs","mappedName":"IgbLostFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Inputs.Implementation"}]}
+    "names":[{"platform":"Blazor","fileName":"LostFocusEventArgs.cs","mappedName":"IgbLostFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-inputs","originalNamespace":"Infragistics.Controls.Inputs.Implementation"}]}
