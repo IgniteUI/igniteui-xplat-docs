@@ -78,14 +78,14 @@ They are added inside the `{ComponentName}` and this is all needed to have an `A
 
 <!-- React -->
 ```tsx
-<{ComponentName} id="grid" rowEditable="true" primaryKey="ID">
+<{ComponentSelector} id="grid" rowEditable="true" primaryKey="ID">
     <IgrColumn field="field">
     </IgrColumn>
     <IgrActionStrip name="actionStrip">
         <IgrGridPinningActions></IgrGridPinningActions>
         <IgrGridEditingActions></IgrGridEditingActions>
     </IgrActionStrip>
-</{ComponentName}>
+</{ComponentSelector}>
 ```
 <!-- end: React -->
 
