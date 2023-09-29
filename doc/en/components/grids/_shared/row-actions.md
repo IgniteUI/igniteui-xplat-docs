@@ -76,6 +76,19 @@ They are added inside the `{ComponentName}` and this is all needed to have an `A
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+```tsx
+<{ComponentSelector} id="grid" rowEditable="true" primaryKey="ID">
+    <IgrColumn field="field">
+    </IgrColumn>
+    <IgrActionStrip name="actionStrip">
+        <IgrGridPinningActions></IgrGridPinningActions>
+        <IgrGridEditingActions></IgrGridEditingActions>
+    </IgrActionStrip>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
 > [!Note]
 > When `ActionStripComponent` is a child component of the `{ComponentName}`, hovering a row will automatically show the UI.
 
@@ -132,6 +145,17 @@ These components expose templates giving flexibility for customization. For inst
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector}>
+    <IgrActionStrip name="actionStrip">
+        <IgrGridPinningActions></IgrGridPinningActions>
+        <IgrGridEditingActions editRow="true" deleteRow="false"></IgrGridEditingActions>
+    </IgrActionStrip>
+</{ComponentSelector}>
+```
+<!-- end: React -->
 
 `sample="/{ComponentSample}/action-strip", height="600", alt="{Platform} {ComponentTitle} Action Strip Example"`
 

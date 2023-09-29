@@ -80,7 +80,7 @@ yarn install
 
 - commit your changes to you branch
 - push your branch to origin
-- create a pull request and target vnext branch on [github](https://github.com/IgniteUI/igniteui-xplat-docs)
+- create a pull request and target `vnext` branch on [github](https://github.com/IgniteUI/igniteui-xplat-docs)
 
 ## Following Rules
 
@@ -307,13 +307,17 @@ yarn build-production --lang=kr --plat=Blazor
 
 Follow this section to update API mapping files in the `apiMap` folder:
 
-- open, get latest, and build Translator solution: <br>
-**$/NetAdvantage/DEV/XPlatform/LATEST_VERSION/Source/Translator/Translator_NoRoslyn.sln**
+- clone [dev-tools](https://infragistics.visualstudio.com/NetAdvantage/_git/dev-tools?path=%2F&version=GBmain&_a=contents) repo to **C:\WORK** folder
 
-- open, get latest, and build jQuery solution in `Debug` mode: <br>
-**$/NetAdvantage/DEV/XPlatform/LATEST_VERSION/Source/jQuery/Infragistics.jQuery.sln**
+- checkout `main` branch in the dev-tools repo
 
-where "LATEST_VERSION" is latest branch version, e.g. 2022.2
+- open and build Translator solution: <br>
+**C:\WORK\dev-tools\XPlatform\Main\Source\Translator\Translator_NoRoslyn.sln**
+
+- open and build jQuery solution in `Debug` mode: <br>
+**C:\WORK\dev-tools\XPlatform\Main\Source\jQuery\Infragistics.jQuery.sln**
+
+- checkout [igniteui-xplat-docs](https://github.com/IgniteUI/igniteui-xplat-docs) repo
 
 - create a new branch from `vnext` branch
 
@@ -327,7 +331,7 @@ gulp updateApiMapping
 
 - commit changes made in the `apiMap` folder
 
-- create a pull request and target vnext branch on [github](https://github.com/IgniteUI/igniteui-xplat-docs)
+- create a pull request and target `vnext` branch on [github](https://github.com/IgniteUI/igniteui-xplat-docs)
 
 
 #### API Resource Links

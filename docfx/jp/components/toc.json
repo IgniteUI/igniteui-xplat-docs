@@ -1767,7 +1767,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "Blazor"],
     "name": "概要",
     "href": "themes/overview.md",
     "status": ""
