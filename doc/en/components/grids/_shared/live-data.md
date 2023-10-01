@@ -40,6 +40,12 @@ A service provides data to the component when the page loads, and when the slide
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+```tsx
+<{ComponentSelector} id="grid1"></{ComponentSelector}>
+```
+<!-- end: React -->
+
 ```razor
 public void OnStart()
 {
@@ -68,6 +74,28 @@ public startUpdate() {
 }
 ```
 
+<!-- React -->
+```typescript
+function startUpdate(frequency) {
+  const timer = setInterval(() => {
+    setData(prevData => FinancialDataClass.updateRandomPrices(prevData));
+  }, frequency);
+
+  setStartButtonDisabled(true);
+  setShowChartButtonDisabled(true);
+  setStopButtonDisabled(false);
+}
+```
+
+A change in the data field value or a change in the data object/data collection reference will trigger the corresponding pipes. However, this is not the case for columns, which are bound to [complex data objects](../data-grid.md#complex-data-binding). To resolve the situation, provide a new object reference for the data object containing the property. Example:
+
+```tsx
+<{ComponentSelector} id="grid1">
+    <IgrColumn field="price.usd"></IgrColumn>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
 A change in the data field value or a change in the data object/data collection reference will trigger the corresponding pipes. However, this is not the case for columns, which are bound to [complex data objects](../data-grid.md#complex-data-binding). To resolve the situation, provide a new object reference for the data object containing the property. Example:
 
 ```Razor
@@ -92,7 +120,7 @@ A change in the data field value or a change in the data object/data collection 
 ```
 <!-- end: WebComponents -->
 
-
+<!-- WebComponents -->
 ```typescript
 private updateData(data: any[]) {
     const newData = []
@@ -103,6 +131,20 @@ private updateData(data: any[]) {
     this.grid.data = newData;
 }
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```typescript
+private updateData(data: any[]) {
+    const newData = []
+    for (const rowData of data) {
+        rowData.price = { usd: getUSD(), eur: getEUR() };
+        newData.push({...rowData});
+    }
+    gridRef.current.data = newData;
+}
+```
+<!-- end: React -->
 
 ```razor
  grid1.Data = this.FinancialDataClass.UpdateRandomPrices(this.CurrentStocks);

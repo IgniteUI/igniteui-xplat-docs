@@ -189,7 +189,7 @@ We can create a floating action button by setting the `variant` property to `fab
 
 ## Button Sizing
 
-We can allow the user to choose the size of the `button` by using its `size` property. То do this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the button.
+Users can change the size of the `button` component using the `--ig-size` CSS variable. In the following example, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size of the button.
 
 ```ts
 import { defineComponents, IgcButtonComponent, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
@@ -212,11 +212,11 @@ this.containedButton = document.getElementById('contained-btn') as IgcButtonComp
 this.fabButton = document.getElementById('fab-btn') as IgcButtonComponent;
 
 this.radioGroup.addEventListener('click', (radio: any) => {
-    this.outlinedButton.size = radio.target.value;
-    this.flatButton.size = radio.target.value;
-    this.containedButton.size = radio.target.value;
-    this.fabButton.size = radio.target.value;
-});
+    this.outlinedButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
+    this.flatButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
+    this.containedButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
+    this.fabButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
+}); 
 ```
 
 ```tsx

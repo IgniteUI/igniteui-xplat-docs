@@ -2,7 +2,7 @@
 title: {Platform} Area Chart | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Area Chart
 _keywords: {Platform} Charts, Area Chart, Infragistics
-mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "CategoryChartType", 'Series']
+mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "CategoryChartType"]
 namespace: Infragistics.Controls.Charts
 ---
 # {Platform} Area Chart

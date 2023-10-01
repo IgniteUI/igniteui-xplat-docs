@@ -207,10 +207,12 @@ Then you'd use it in the same way as described in the component sample above.
 
 ### Size
 
-The icon component supports three icon sizes - `small`, `medium`(default), and `large`. In order to change the size of the icon, you can set the `size` attribute to any of the aforementioned sizes.
+The icon component supports three icon sizes - `small`, `medium`(default), and `large`. In order to change the size of the icon, you can utilize the `--ig-size` CSS variable as follows:
 
-```html
-<igc-icon size="large"></igc-icon>
+```css
+igc-icon {
+  --ig-size: var(--ig-size-large);
+}
 ```
 
 ```razor
