@@ -43,6 +43,28 @@ constructor() {
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+```typescript
+const expressions = [
+    { fieldName: 'ProductName', dir: SortingDirection.Desc },
+    { fieldName: 'Released', dir: SortingDirection.Desc }
+];
+
+function App() {
+    const grid1Ref = useRef();
+    return (
+    <>
+        <IgrGrid
+            autoGenerate="true"
+            groupingExpressions={expressions}
+            ref={grid1Ref}>
+        </IgrGrid>
+    </>
+    )
+}
+```
+<!-- end: React -->
+
 <!-- Blazor -->
 
 ```razor
@@ -69,7 +91,7 @@ Grouping expressions implement the `ISortingExpression` interface.
 Grouping is available through the UI and through a robust API exposed by the grid component. Developers can allow end-users to group the grid data by certain columns, by setting each column's `Groupable` property to `true`.
 
 ```html
-<igc-grid auto-generate="false"id="grid" id="grid">
+<igc-grid auto-generate="false" id="grid">
     <igc-column field="OrderID" hidden="true"></igc-column>
     <igc-column field="ShipCountry" header="Ship Country" width="200px" groupable="true"> </igc-column>
     <igc-column field="OrderDate" header="Order Date" data-type="date" width="200px" groupable="true"> </igc-column>
@@ -114,6 +136,32 @@ public ngOnInit() {
 ```
 <!-- end: Angular -->
 
+```tsx
+function App() {
+    const gridRef = useRef();
+    return (
+    <>
+        <IgrGrid
+            autoGenerate="false"
+            ref={gridRef}
+            >
+            <IgrColumn field="OrderID" hidden="true"></IgrColumn>
+            <IgrColumn field="ShipCountry" header="Ship Country" width="200px" groupable="true"></IgrColumn>
+            <IgrColumn field="OrderDate" header="Order Date" dataType="date" width="200px" groupable="true"></IgrColumn>
+            <IgrColumn field="PostalCode" header="Postal Code" width="200px" groupable="true"></IgrColumn>
+            <IgrColumn field="Discontinued" width="200px" dataType="boolean" groupable="true"></IgrColumn>
+            <IgrColumn field="ShipName" header="Ship Name" width="200px" groupable="false"></IgrColumn>
+            <IgrColumn field="ShipCity" header="Ship City" width="200px" groupable="false"></IgrColumn>
+            <IgrColumn field="ShipperName" header="Shipper Name" width="200px" groupable="true"></IgrColumn>
+            <IgrColumn field="Salesperson" header="Sales Person" width="200px" groupable="true"></IgrColumn>
+            <IgrColumn field="UnitPrice" header="Unit Price" width="200px" groupable="true"></IgrColumn>
+            <IgrColumn field="Quantity" width="200px" groupable="true"></IgrColumn>
+        </IgrGrid>
+    </>
+  )
+}
+```
+
 <!-- WebComponents -->
 ```typescript
     constructor() {
@@ -131,6 +179,12 @@ During runtime the expressions are gettable and settable from the `groupingExpre
 grid.groupBy({ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase: true });
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```typescript
+gridRef.current.groupBy([{ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase: true }]);
+```
+<!-- end: React -->
 
 <!-- Blazor -->
 
@@ -163,30 +217,13 @@ grid.groupBy({ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase:
 
 ### Expand/Collapse API
 
-In addition to grouping expressions you can also control the expansion states for group rows. They are stored in a separate property of the `Grid` component `GroupingExpansionState`. A group row is uniquely identified based on the field name it is created for and the value it represents for each level of grouping. 
+In addition to grouping expressions you can also control the expansion states for group rows. They are stored in a separate property of the `Grid` component `GroupingExpansionState` which is a collection of `GroupByExpandState`. Each expansion state is uniquely defined by the field name it is created for and the value it represents for each level of grouping, i.e. the identifier is a hierarchy array of `GroupByKey`.
+
+As with `GroupingExpressions`, setting a list of `GroupByExpandState` directly to the `GroupingExpansionState` will change the expansion accordingly. Additionally `Grid` exposes a method `toggleGroup` that toggles a group by the group record instance or via the `expanded` property of the row.
 
 <!-- WebComponents -->
-
-This means that the signature of an expansion state interface is the following:
-
 ```typescript
-export interface IGroupByKey {
-    fieldName: string;
-    value: any;
-}
-
-export interface IGroupByExpandState {
-    hierarchy: Array<IGroupByKey>;
-    expanded: boolean;
-}
-```
-
-<!-- end: WebComponents -->
-
-As with `GroupingExpressions`, setting a list of `IGroupByExpandState` directly to the `GroupingExpansionState` will change the expansion accordingly. Additionally `Grid` exposes a method `toggleGroup` that toggles a group by the group record instance or via the `expanded` property of the row.
-
-```typescript
-   const groupRow = this.grid.getRowByIndex(0).groupRow;
+    const groupRow = this.grid.getRowByIndex(0).groupRow;
     grid.toggleGroup(groupRow);
 ```
 
@@ -194,6 +231,19 @@ As with `GroupingExpressions`, setting a list of `IGroupByExpandState` directly 
     const groupRow = this.grid.getRowByIndex(0);
     groupRow.expanded = false;
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```typescript
+    const groupRow = gridRef.current.getRowByIndex(0).groupRow;
+    gridRef.current.toggleGroup(groupRow);
+```
+
+```typescript
+    const groupRow = gridRef.current.getRowByIndex(0);
+    groupRow.expanded = false;
+```
+<!-- end: React -->
 
 ```razor
 <IgbGrid AutoGenerate="true" Data="InvoicesData" GroupingExpressions="GroupingExpression1" GroupingExpansionState=ExpansionState @ref="grid" Id="grid">
@@ -220,10 +270,19 @@ Selecting/Deselecting all rows in a group is available through the `SelectRowsIn
 
 The code snippet below can be used to select all rows within a group using the group record instance `SelectRowsInGroup` method. Additionally, the second parameter of this method is a boolean property through which you may choose whether the previous row selection will be cleared or not. The previous selection is preserved by default.
 
+<!-- WebComponents -->
 ```typescript
     const groupRow = this.grid.getRowByIndex(0).groupRow;
     grid.selectRowsInGroup(groupRow);
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```typescript
+    const groupRow = gridRef.current.getRowByIndex(0).groupRow;
+    gridRef.current.selectRowsInGroup(groupRow);
+```
+<!-- end: React -->
 
 ```razor
 var row = await this.grid.GetRowByIndexAsync(0);
@@ -232,10 +291,19 @@ this.grid.SelectRowsInGroup(row.GroupRow, true);
 
 If you need to deselect all rows within a group programmatically, you can use the `DeselectRowsInGroup` method.
 
+<!-- WebComponents -->
 ```typescript
     const groupRow = this.grid.getRowByIndex(0).groupRow;
     grid.deselectRowsInGroup(groupRow);
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```typescript
+    const groupRow = gridRef.current.getRowByIndex(0).groupRow;
+    gridRef.current.deselectRowsInGroup(groupRow);
+```
+<!-- end: React -->
 
 ```razor
 var row = await this.grid.GetRowByIndexAsync(0);
@@ -247,18 +315,7 @@ this.grid.DeselectRowsInGroup(row.GroupRow);
 
 ### Group Row Templates
 
-The group row except for the expand/collapse UI is fully templatable. By default it renders a grouping icon and displays the field name and value it represents. The grouping record template is rendered against has the following signature:
-
-```typescript
-export interface IGroupByRecord {
-    expression: ISortingExpression;
-    level: number;
-    records: GroupedRecords;
-    value: any;
-    groupParent: IGroupByRecord;
-    groups?: IGroupByRecord[];
-}
-```
+The group row except for the expand/collapse UI is fully templatable. By default it renders a grouping icon and displays the field name and value it represents. The context to render the template against is of type `GroupByRecord`.
 
 As an example, the following template would make the group rows summary more verbose:
 
@@ -266,6 +323,15 @@ As an example, the following template would make the group rows summary more ver
 <ng-template GroupByRow let-groupRow>
     <span>Total items with value: {{ groupRow.value }} are {{ groupRow.records.length }}</span>
 </ng-template>
+```
+
+```tsx
+function template(ctx: { dataContext: IgrGroupByRowTemplateContext }) {
+    const groupRow = ctx.dataContext.implicit;
+    return (<>
+       <span>Total items with value: { groupRow.value } are { groupRow.records.length }</span>
+    </>)
+}
 ```
 
 ```ts
@@ -300,6 +366,14 @@ The `SelectedCount` property shows how many of the group records are currently s
 </ng-template>
 ```
 
+```tsx
+function template(ctx: { dataContext: IgrGroupByRowSelectorTemplateContext }) {
+    return (<>
+        { ctx.dataContext.implicit.selectedCount } / { ctx.dataContext.implicit.totalCount }
+    </>)
+}
+```
+
 ```ts
     public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateContext) => {
         return html`
@@ -323,6 +397,15 @@ The `GroupRow` property returns a reference to the group row.
 <ng-template GroupByRowSelector let-groupByRowContext>
     <div (click)="handleGroupByRowSelectorClick($event, groupByRowContext.groupRow)">Handle groupRow</div>
 </ng-template>
+```
+
+```tsx
+function template(ctx: { dataContext: IgrGroupByRowSelectorTemplateContext }) {
+    const groupRow = ctx.dataContext.implicit.groupRow;
+    return (<>
+        <div onClick={(e: any) => handleGroupByRowSelectorClick(e, groupRow)}>Handle groupRow</div> `;
+    </>)
+}
 ```
 
 ```ts
@@ -387,7 +470,7 @@ The grouping UI supports the following keyboard interactions:
    - <kbd>DELETE</kbd> - ungroups the field
    - The seperate elements of the chip are also focusable and can be interacted with using the <kbd>ENTER</kbd> key.
 
-<!-- WebComponents, Angular -->
+<!-- WebComponents, Angular, React -->
 
 ## {Platform} Grid Custom Group By
 
@@ -410,16 +493,31 @@ The sample below demonstrates custom grouping by `Date`, where the date values a
 The sample defines custom sorting for the different date conditions.
 Each custom strategy defines the `GroupingComparer` method, which is the custom compare function used when sorting the values. Additionally it extracts the values from the date needed for the comparison.
 
+<!-- WebComponents -->
 ```typescript
 public groupByMode = "Month";
 public getParsedDate(date: any) {
-        return {
-            day: date.getDay(),
-            month: date.getMonth() + 1,
-            year: date.getFullYear()
-        };
-    }
+    return {
+        day: date.getDay(),
+        month: date.getMonth() + 1,
+        year: date.getFullYear()
+    };
+}
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```typescript
+const groupByMode = "Month";
+function getParsedDate(date: any) {
+    return {
+        day: date.getDay(),
+        month: date.getMonth() + 1,
+        year: date.getFullYear()
+    };
+}
+```
+<!-- end: React -->
 
 A `GroupingComparer` function is defined for the grouping expressions, which determines the items belonging to the same group based on the selected grouping mode. Values in the sorted data for which this function returns 0 are marked as part of the same group.
 
@@ -427,33 +525,46 @@ A `GroupingComparer` function is defined for the grouping expressions, which det
 grid.groupingExpressions = [
     { fieldName: 'OrderDate', dir: SortingDirection.Desc,
     groupingComparer: (a, b) => {
-        const dateA = this.getParsedDate(a);
-        const dateB = this.getParsedDate(b);
-        if (this.groupByMode === 'Month') {
-            return dateA.month === dateB.month ? 0 : -1;
-        } else if (this.groupByMode === "Year") {
-            return dateA.year === dateB.year ? 0 : -1;
-        } else if (this.groupByMode === 'Week') {
-            return this.getWeekOfDate(a) === this.getWeekOfDate(b) ? 0 : -1;
-        }
-        return dateA.day === dateB.day && dateA.month === dateB.month ? 0 : -1;
+            const dateA = this.getParsedDate(a);
+            const dateB = this.getParsedDate(b);
+            if (this.groupByMode === 'Month') {
+                return dateA.month === dateB.month ? 0 : -1;
+            } else if (this.groupByMode === "Year") {
+                return dateA.year === dateB.year ? 0 : -1;
+            } else if (this.groupByMode === 'Week') {
+                return this.getWeekOfDate(a) === this.getWeekOfDate(b) ? 0 : -1;
+            }
+            return dateA.day === dateB.day && dateA.month === dateB.month ? 0 : -1;
         }
     }
 ];
 ```
 
-<!-- end:WebComponents, Angular -->
+<!-- end:WebComponents, Angular, React -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 ## Styling
 
 
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
+<!-- WebComponents -->
 ```ts
 <igc-grid class="grid">
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+function App() {
+     return (
+        <IgrGrid className="grid">
+        </IgrGrid>
+    )
+}
+```
+<!-- end: React -->
 
 ```razor
 <IgbGrid Class="grid"></IgbGrid>
@@ -478,7 +589,7 @@ Then set the related CSS properties for that class:
 `sample="/{GridSample}/groupby-styling", height="605", alt="{Platform} {ComponentTitle} Group By Styling Example"`
 
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- Angular -->
 

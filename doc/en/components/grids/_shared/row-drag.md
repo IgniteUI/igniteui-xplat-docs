@@ -40,6 +40,13 @@ In order to enable row-dragging for your `{ComponentName}`, all you need to do i
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+```tsx
+<{ComponentSelector} rowDraggable="true">
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
 <!-- Angular -->
 
 Below, you can find a walkthrough on how to configure an `{ComponentName}` to support row dragging and how to properly handle the drop event.
@@ -246,8 +253,6 @@ We define a reference to each of our grids via the **ViewChild** decorator and t
 > [!Note]
 > When using row data from the event arguments (**args.dragData.data**) or any other row property, note that the entire row is passed in the arguments as a reference, which means that you must clone the data you need, if you want to distinguish it from the one in the source grid.
 
-<!-- Angular -->
-
 ### Templating the Drag Ghost
 
 The drag ghost can be templated using the `RowDragGhost` directive, applied to a `<ng-template>` inside of the `{ComponentSelector}`'s body:
@@ -331,11 +336,7 @@ To do so, we can use the `DragIndicatorIcon` to pass a template inside of the `{
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-
-    this._bind = () => {
-        grid.dragIndicatorIcon = this.dragIndicatorIconTemplate;
-    }
-    this._bind();
+    grid.dragIndicatorIcon = this.dragIndicatorIconTemplate;
 }
 
 public dragIndicatorIconTemplate = (ctx: IgcGridEmptyTemplateContext) => {
@@ -344,6 +345,19 @@ public dragIndicatorIconTemplate = (ctx: IgcGridEmptyTemplateContext) => {
 ```
 
 <!-- end: WebComponents -->
+
+```tsx
+function dragIndicatorIconTemplate(ctx: IgrGridEmptyTemplateContext) {
+    return (
+        <>
+            <IgrIcon iconName="drag_handle" collection="material" />
+        </>
+    );
+}
+
+<{ComponentSelector} rowDraggable="true" dragIndicatorIcon={dragIndicatorIconTemplate}>
+</{ComponentSelector}>
+```
 
 ```razor
 <IgbGrid Data="CustomersData" PrimaryKey="ID" RowDraggable="true" DragIndicatorIconTemplate="dragIndicatorIconTemplate" @ref="grid">
@@ -357,6 +371,7 @@ private RenderFragment<IgbGridEmptyTemplateContext> dragIndicatorIconTemplate = 
 };
 ```
 
+<!-- Angular -->
 Once we've set the new icon template, we also need to adjust the **DEFAULT** icon in our **DragIcon enum**, so it's properly change by the `ChangeIcon` method:
 
 ```typescript
@@ -364,6 +379,8 @@ enum DragIcon {
     DEFAULT = "drag_handle",
 }
 ```
+<!-- end: Angular -->
+
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
 
 
@@ -433,9 +450,9 @@ Try to drag moons from the grid and drop them to their corresponding planets. Ro
 > [!Note]
 > The classes applied to the row drag ghost, used in the demo above, are using ::ng-deep modifier, because row drag is an internal grid feature and cannot be accessed on application level, due to the CSS encapsulation.
 
-<!-- ComponentEnd: Grid -->
-
 <!-- end: Angular -->
+
+<!-- ComponentEnd: Grid -->
 
 ### Row Reordering Demo
 
@@ -450,9 +467,11 @@ Since all of the actions will be happening _inside_ of the grid's body, that's w
 ```
 <!--  end: Angular -->
 
-<!--  WebComponents, Blazor -->
+<!--  WebComponents, Blazor, React -->
 
 With the help of the grid's row drag events you can create a grid that allows you to reorder rows by dragging them.
+
+<!-- WebComponents -->
 
 ```html
 <igc-grid id="grid" row-draggable="true" primary-key="ID">
@@ -462,12 +481,14 @@ With the help of the grid's row drag events you can create a grid that allows yo
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-
-    this._bind = () => {
-         grid.addEventListener("rowDragEnd", this.webGridReorderRowHandler)
-    }
-    this._bind();
+    grid.addEventListener("rowDragEnd", this.webGridReorderRowHandler)
 }
+```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrGrid rowDraggable="true" primaryKey="ID" rowDragEnd={webGridReorderRowHandler}>
+</IgrGrid>
 ```
 
 ```razor
@@ -500,7 +521,7 @@ function getCurrentRowIndex(rowList, cursorPosition) {
 }
 ```
 
-<!--  end: WebComponents, Blazor -->
+<!--  end: WebComponents, Blazor, React -->
 
 <!--  Angular -->
 ```html
@@ -544,30 +565,56 @@ Below, you can see this implemented:
 <!-- ComponentStart: Grid -->
 
 ```typescript
-    public webGridReorderRowHandler(args: CustomEvent<IgcRowDragEndEventArgs>): void {
-        const ghostElement = args.detail.dragDirective.ghostElement;
-        const dragElementPos = ghostElement.getBoundingClientRect();
-        const grid = document.getElementsByTagName("igc-grid")[0] as any;
-        const rows = Array.prototype.slice.call(document.getElementsByTagName("igx-grid-row"));
-        const currRowIndex = this.getCurrentRowIndex(rows,
-        { x: dragElementPos.x, y: dragElementPos.y });
-        if (currRowIndex === -1) { return; }
-        // remove the row that was dragged and place it onto its new location
-        grid.deleteRow(args.detail.dragData.key);
-        grid.data.splice(currRowIndex, 0, args.detail.dragData.data);
-    }
-        
-    public getCurrentRowIndex(rowList: any[], cursorPosition) {
-        for (const row of rowList) {
-            const rowRect = row.getBoundingClientRect();
-            if (cursorPosition.y > rowRect.top + window.scrollY && cursorPosition.y < rowRect.bottom + window.scrollY &&
-                cursorPosition.x > rowRect.left + window.scrollX && cursorPosition.x < rowRect.right + window.scrollX) {
-                // return the index of the targeted row
-                return parseInt(row.attributes["data-rowindex"].value);
-            }
+public webGridReorderRowHandler(args: CustomEvent<IgcRowDragEndEventArgs>): void {
+    const ghostElement = args.detail.dragDirective.ghostElement;
+    const dragElementPos = ghostElement.getBoundingClientRect();
+    const grid = document.getElementsByTagName("igc-grid")[0] as any;
+    const rows = Array.prototype.slice.call(document.getElementsByTagName("igx-grid-row"));
+    const currRowIndex = this.getCurrentRowIndex(rows,
+    { x: dragElementPos.x, y: dragElementPos.y });
+    if (currRowIndex === -1) { return; }
+    // remove the row that was dragged and place it onto its new location
+    grid.deleteRow(args.detail.dragData.key);
+    grid.data.splice(currRowIndex, 0, args.detail.dragData.data);
+}
+    
+public getCurrentRowIndex(rowList: any[], cursorPosition) {
+    for (const row of rowList) {
+        const rowRect = row.getBoundingClientRect();
+        if (cursorPosition.y > rowRect.top + window.scrollY && cursorPosition.y < rowRect.bottom + window.scrollY &&
+            cursorPosition.x > rowRect.left + window.scrollX && cursorPosition.x < rowRect.right + window.scrollX) {
+            // return the index of the targeted row
+            return parseInt(row.attributes["data-rowindex"].value);
         }
-        return -1;
     }
+    return -1;
+}
+```
+
+```tsx
+function webGridReorderRowHandler(grid: IgrGridBaseDirective, args: IgrRowDragEndEventArgs): void {
+    const ghostElement = args.detail.dragDirective.ghostElement;
+    const dragElementPos = ghostElement.getBoundingClientRect();
+    const rows = Array.prototype.slice.call(document.getElementsByTagName("igx-grid-row"));
+    const currRowIndex = this.getCurrentRowIndex(rows,
+    { x: dragElementPos.x, y: dragElementPos.y });
+    if (currRowIndex === -1) { return; }
+    // remove the row that was dragged and place it onto its new location
+    grid.deleteRow(args.detail.dragData.key);
+    grid.data.splice(currRowIndex, 0, args.detail.dragData.data);
+}
+    
+function getCurrentRowIndex(rowList: any[], cursorPosition) {
+    for (const row of rowList) {
+        const rowRect = row.getBoundingClientRect();
+        if (cursorPosition.y > rowRect.top + window.scrollY && cursorPosition.y < rowRect.bottom + window.scrollY &&
+            cursorPosition.x > rowRect.left + window.scrollX && cursorPosition.x < rowRect.right + window.scrollX) {
+            // return the index of the targeted row
+            return parseInt(row.attributes["data-rowindex"].value);
+        }
+    }
+    return -1;
+}
 ```
 
 <!-- ComponentEnd: Grid -->
@@ -976,7 +1023,6 @@ Following is the example of both scenarios described above - showing a drop indi
 <!-- end: Angular -->
 
 <!-- ComponentEnd: Grid -->
-<!-- end: Angular -->
 
 ## Limitations
 
