@@ -8856,7 +8856,9 @@
     "names":[{"platform":"Blazor","fileName":"WebGridRowEditActionsTemplateContextDescription.cs","mappedName":"WebGridRowEditActionsTemplateContextDescription"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"type"}],"originalName":"Type"},
-    { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalBaseTypeName":"Description","originalBaseTypeNamespace":"Infragistics.Controls.Description","originalNamespace":"Infragistics.Controls.Description"},
+    { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"init"}],"originalName":".ctor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"_implicitRef"}],"originalName":"_implicitRef"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"implicitRef"}],"originalName":"ImplicitRef"}],"originalBaseTypeName":"Description","originalBaseTypeNamespace":"Infragistics.Controls.Description","originalNamespace":"Infragistics.Controls.Description"},
   { "originalName":"WebGridRowEditTextTemplateContextDescription",
     "names":[{"platform":"Blazor","fileName":"WebGridRowEditTextTemplateContextDescription.cs","mappedName":"WebGridRowEditTextTemplateContextDescription"}],
     "members":[

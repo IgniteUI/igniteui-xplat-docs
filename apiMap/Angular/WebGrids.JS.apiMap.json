@@ -91,6 +91,7 @@
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"editable"}],"originalName":"Editable"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"editMode"}],"originalName":"EditMode"},
     { "names":[{"platform":"Angular","mappedType":"IgxColumn","mappedName":"column"}],"originalName":"Column"},
+    { "names":[{"platform":"Angular","mappedType":"IgxRowType","mappedName":"row"}],"originalName":"Row"},
     { "names":[{"platform":"Angular","mappedType":"IgxGridBaseDirectiveComponent","mappedName":"grid"}],"originalName":"Grid"},
     { "names":[{"platform":"Angular","mappedType":"IgxGridCellIdentifier","mappedName":"id"}],"originalName":"Id"},
     { "names":[{"platform":"Angular","mappedType":"any","mappedName":"cellID"}],"originalName":"CellID"},

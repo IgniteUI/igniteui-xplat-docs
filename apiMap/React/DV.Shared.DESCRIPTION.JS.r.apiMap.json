@@ -8857,7 +8857,9 @@
     "names":[{"platform":"React","fileName":"WebGridRowEditActionsTemplateContextDescription.ts","mappedName":"WebGridRowEditActionsTemplateContextDescription"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"string","mappedName":"type"}],"originalName":"Type"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalBaseTypeName":"Description","originalBaseTypeNamespace":"Infragistics.Controls.Description","originalNamespace":"Infragistics.Controls.Description"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"_implicitRef"}],"originalName":"_implicitRef"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"implicitRef"}],"originalName":"ImplicitRef"}],"originalBaseTypeName":"Description","originalBaseTypeNamespace":"Infragistics.Controls.Description","originalNamespace":"Infragistics.Controls.Description"},
   { "originalName":"WebGridRowEditTextTemplateContextDescription",
     "names":[{"platform":"React","fileName":"WebGridRowEditTextTemplateContextDescription.ts","mappedName":"WebGridRowEditTextTemplateContextDescription"}],
     "members":[

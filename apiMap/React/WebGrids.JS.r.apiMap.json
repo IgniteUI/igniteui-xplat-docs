@@ -91,6 +91,7 @@
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"editable"}],"originalName":"Editable"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"editMode"}],"originalName":"EditMode"},
     { "names":[{"platform":"React","mappedType":"IgrColumn","mappedName":"column"}],"originalName":"Column"},
+    { "names":[{"platform":"React","mappedType":"IgrRowType","mappedName":"row"}],"originalName":"Row"},
     { "names":[{"platform":"React","mappedType":"IgrGridBaseDirective","mappedName":"grid"}],"originalName":"Grid"},
     { "names":[{"platform":"React","mappedType":"IgrGridCellIdentifier","mappedName":"id"}],"originalName":"Id"},
     { "names":[{"platform":"React","mappedType":"any","mappedName":"cellID"}],"originalName":"CellID"},

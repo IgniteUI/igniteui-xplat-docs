@@ -91,6 +91,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"editable"}],"originalName":"Editable"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"editMode"}],"originalName":"EditMode"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcColumn","mappedName":"column"}],"originalName":"Column"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgcRowType","mappedName":"row"}],"originalName":"Row"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcGridBaseDirectiveComponent","mappedName":"grid"}],"originalName":"Grid"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcGridCellIdentifier","mappedName":"id"}],"originalName":"Id"},
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"cellID"}],"originalName":"CellID"},

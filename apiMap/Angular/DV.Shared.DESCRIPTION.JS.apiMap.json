@@ -8857,7 +8857,9 @@
     "names":[{"platform":"Angular","fileName":"WebGridRowEditActionsTemplateContextDescription.ts","mappedName":"WebGridRowEditActionsTemplateContextDescription"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"type"}],"originalName":"Type"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalBaseTypeName":"Description","originalBaseTypeNamespace":"Infragistics.Controls.Description","originalNamespace":"Infragistics.Controls.Description"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"_implicitRef"}],"originalName":"_implicitRef"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"implicitRef"}],"originalName":"ImplicitRef"}],"originalBaseTypeName":"Description","originalBaseTypeNamespace":"Infragistics.Controls.Description","originalNamespace":"Infragistics.Controls.Description"},
   { "originalName":"WebGridRowEditTextTemplateContextDescription",
     "names":[{"platform":"Angular","fileName":"WebGridRowEditTextTemplateContextDescription.ts","mappedName":"WebGridRowEditTextTemplateContextDescription"}],
     "members":[
