@@ -87,7 +87,7 @@ When requesting data, you need to utilize the `IForOfState` interface, which pro
 
 <!-- end: Angular -->
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 
 ## Infinite Scroll
 
@@ -95,7 +95,7 @@ When requesting data, you need to utilize the `IForOfState` interface, which pro
 
 To implement infinite scroll, you have to fetch the data in chunks. The data that is already fetched should be stored locally and you have to determine the length of a chunk and how many chunks there are. You also have to keep a track of the last visible data row index in the grid. In this way, using the `StartIndex` and `ChunkSize` properties, you can determine if the user scrolls up and you have to show them already fetched data or scrolls down and you have to fetch more data from the end-point.
 
-<!-- end: Angular, WebComponents -->
+<!-- end: Angular, WebComponents, React -->
 
 <!-- Angular -->
 
