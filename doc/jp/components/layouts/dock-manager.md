@@ -517,18 +517,18 @@ igc-dockmanager::part(pane-header-maximize-button) {
 
 ### ドッキング
 
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>上矢印</kbd> グローバルの上へのドック。
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>下矢印</kbd> グローバルの下へのドック。
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>右矢印</kbd> グローバルの右へのドック。
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>左矢印</kbd> グローバルのの左へのドック。
-- <kbd>Shift</kbd> + <kbd>上矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが上にドッキングされます。
-- <kbd>Shift</kbd> + <kbd>下矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが下にドッキングされます。
-- <kbd>Shift</kbd> + <kbd>右矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが右にドッキングされます。
-- <kbd>Shift</kbd> + <kbd>左矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが左にドッキングされます。
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd> グローバルの上へのドック。
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↓</kbd> グローバルの下へのドック。
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>→</kbd> グローバルの右へのドック。
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd> グローバルのの左へのドック。
+- <kbd>Shift</kbd> + <kbd>↑</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが上にドッキングされます。
+- <kbd>Shift</kbd> + <kbd>↓</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが下にドッキングされます。
+- <kbd>Shift</kbd> + <kbd>→</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが右にドッキングされます。
+- <kbd>Shift</kbd> + <kbd>←</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが左にドッキングされます。
 
 ### ナビゲーション
- - <kbd>Cmd/Ctrl</kbd> + <kbd>F6</kbd> または <kbd>Cmd/Ctrl</kbd> + <kbd>右矢印</kbd> ドキュメント ホストの次のタブにフォーカスします。
- - <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> または <kbd>Cmd/Ctrl</kbd> + <kbd>左矢印</kbd> ドキュメント ホストの前のタブにフォーカスします。
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>F6</kbd> または <kbd>Cmd/Ctrl</kbd> + <kbd>→</kbd> ドキュメント ホストの次のタブにフォーカスします。
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> または <kbd>Cmd/Ctrl</kbd> + <kbd>←</kbd> ドキュメント ホストの前のタブにフォーカスします。
  - <kbd>Alt</kbd> + <kbd>F6</kbd> 次のコンテンツ ペインにフォーカスします。
  - <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> 前のコンテンツ ペインにフォーカスします。
 
