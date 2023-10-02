@@ -1478,6 +1478,12 @@
         "exclude": ["Angular", "Blazor", "React"],
         "name": "デスクトップ統合",
         "href": "layouts/dock-manager-electron.md"
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "カスタマイズ",
+        "href": "layouts/dock-manager-customization.md",
+        "status": "NEW"
       }
     ]
   },
@@ -1761,7 +1767,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "Blazor"],
     "name": "概要",
     "href": "themes/overview.md",
     "status": ""

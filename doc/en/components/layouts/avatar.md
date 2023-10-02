@@ -167,10 +167,9 @@ The avatar can also display an image when the `src` attribute is assigned a vali
 `sample="/layouts/avatar/image", height="80", alt="{Platform} Avatar Example"`
 
 
-
-The avatar supports three shapes - `circle`, `rounded`, and `square`. The shape of the avatar can be changed via the `shape` attribute.
-
 ### Shape
+
+The avatar supports three shapes - `circle`, `rounded`, and `square`. The default shape of the avatar is `square` and it can be changed via the `shape` attribute.
 
 `sample="/layouts/avatar/shape", height="80", alt="{Platform} Avatar Example"`
 
@@ -178,7 +177,13 @@ The avatar supports three shapes - `circle`, `rounded`, and `square`. The shape 
 
 ### Size
 
-Apart from the shape, the size of the avatar can also be changed by setting the `size` attribute. The supported sizes are `small`, `medium`, and `large`.
+Apart from the shape, the size of the avatar can also be changed by utilizing the `--ig-size` CSS variable. The supported sizes are `small` (default), `medium`, and `large`. The following code snippet shows how to use a different component size: 
+
+```css
+igc-avatar {
+    --ig-size: var(--ig-size-large);
+}
+```
 
 `sample="/layouts/avatar/size", height="130", alt="{Platform} Avatar Example"`
 
