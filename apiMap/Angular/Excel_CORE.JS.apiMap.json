@@ -14,6 +14,7 @@
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"pixelsToCharacterWidth256ths"}],"originalName":"PixelsToCharacterWidth256ths"},
     { "names":[{"platform":"Angular","mappedType":"void","mappedName":"protect"}],"originalName":"Protect"},
     { "names":[{"platform":"Angular","mappedType":"void","mappedName":"recalculate"}],"originalName":"Recalculate"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"recalculateAsync"}],"originalName":"RecalculateAsync"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"registerUserDefinedFunction"}],"originalName":"RegisterUserDefinedFunction"},
     { "names":[{"platform":"Angular","mappedType":"void","mappedName":"resumeCalculations"}],"originalName":"ResumeCalculations"},
     { "names":[{"platform":"Angular","mappedType":"void","mappedName":"save"}],"originalName":"Save"},

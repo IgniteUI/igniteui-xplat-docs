@@ -207,6 +207,7 @@
     { "names":[{"platform":"Angular","mappedType":"DataSeriesType","mappedName":"CategoryHighlightLayer"}],"originalName":"CategoryHighlightLayer"},
     { "names":[{"platform":"Angular","mappedType":"DataSeriesType","mappedName":"CategoryItemHighlightLayer"}],"originalName":"CategoryItemHighlightLayer"},
     { "names":[{"platform":"Angular","mappedType":"DataSeriesType","mappedName":"DataToolTipLayer"}],"originalName":"DataToolTipLayer"},
+    { "names":[{"platform":"Angular","mappedType":"DataSeriesType","mappedName":"ValueLayer"}],"originalName":"ValueLayer"},
     { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts.DataAdapters"},
   { "originalName":"DataSeriesAxisType","isEnum":true,
     "names":[{"platform":"Angular","fileName":"DataSeriesAxisType.ts","mappedName":"DataSeriesAxisType"}],

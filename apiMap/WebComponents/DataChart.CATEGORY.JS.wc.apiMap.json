@@ -55,7 +55,10 @@
     { "names":[{"platform":"WebComponents","mappedType":"ConsolidatedItemHitTestBehavior","mappedName":"consolidatedItemHitTestBehavior"}],"originalName":"ConsolidatedItemHitTestBehavior"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItemValue"}],"originalName":"GetItemValue"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItem"}],"originalName":"GetItem"}],"originalBaseTypeName":"CategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItem"}],"originalName":"GetItem"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValueType"}],"originalName":"GetSeriesValueType"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValueTypePosition"}],"originalName":"GetSeriesValueTypePosition"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValueTypePositionFromValue"}],"originalName":"GetSeriesValueTypePositionFromValue"}],"originalBaseTypeName":"CategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"AreaSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-area-series-component.ts","dynamicModuleName":"igc-area-series-dynamic-module.ts","moduleName":"igc-area-series-module.ts","mappedName":"IgcAreaSeriesComponent"}],
     "members":[

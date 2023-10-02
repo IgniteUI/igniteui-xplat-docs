@@ -74,7 +74,7 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyClearItems"}],"originalName":"NotifyClearItems"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyInsertItem"}],"originalName":"NotifyInsertItem"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyRemoveItem"}],"originalName":"NotifyRemoveItem"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"SimulateHover"}],"originalName":"SimulateHover"}],"originalNamespace":"Infragistics.Controls.Charts.Implementation"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"SimulateHover"}],"originalName":"SimulateHover"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts.Implementation"},
   { "originalName":"TreemapNodeStyleMapping",
     "names":[{"platform":"Blazor","fileName":"TreemapNodeStyleMapping.cs","mappedName":"IgbTreemapNodeStyleMapping"}],
     "members":[
@@ -82,7 +82,7 @@
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MinimumValue"}],"originalName":"MinimumValue"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MaximumValue"}],"originalName":"MaximumValue"},
     { "names":[{"platform":"Blazor","mappedType":"object","mappedName":"Value"}],"originalName":"Value"},
-    { "names":[{"platform":"Blazor","mappedType":"TreemapValueMappingMode","mappedName":"MappingMode"}],"originalName":"MappingMode"}],"originalBaseTypeName":"TreemapNodeStyle","originalBaseTypeNamespace":"Infragistics.Controls.Charts.Implementation","originalNamespace":"Infragistics.Controls.Charts.Implementation"},
+    { "names":[{"platform":"Blazor","mappedType":"TreemapValueMappingMode","mappedName":"MappingMode"}],"originalName":"MappingMode"}],"originalBaseTypeName":"TreemapNodeStyle","originalBaseTypeNamespace":"Infragistics.Controls.Charts.Implementation","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts.Implementation"},
   { "originalName":"TreemapNodeStyle",
     "names":[{"platform":"Blazor","fileName":"TreemapNodeStyle.cs","mappedName":"IgbTreemapNodeStyle"}],
     "members":[
@@ -105,7 +105,7 @@
     { "names":[{"platform":"Blazor","mappedType":"VerticalAlignment","mappedName":"LabelVerticalAlignment"}],"originalName":"LabelVerticalAlignment"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Fill"}],"originalName":"Fill"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Outline"}],"originalName":"Outline"},
-    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"StrokeThickness"}],"originalName":"StrokeThickness"}],"originalNamespace":"Infragistics.Controls.Charts.Implementation"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"StrokeThickness"}],"originalName":"StrokeThickness"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts.Implementation"},
   { "originalName":"TreemapNodeStylingEventArgs",
     "names":[{"platform":"Blazor","fileName":"TreemapNodeStylingEventArgs.cs","mappedName":"IgbTreemapNodeStylingEventArgs"}],
     "members":[
@@ -119,7 +119,7 @@
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ParentLabel"}],"originalName":"ParentLabel"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ParentSum"}],"originalName":"ParentSum"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsParent"}],"originalName":"IsParent"},
-    { "names":[{"platform":"Blazor","mappedType":"IgbTreemapNodeStyle","mappedName":"Style"}],"originalName":"Style"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts.Implementation"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbTreemapNodeStyle","mappedName":"Style"}],"originalName":"Style"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts.Implementation"},
   { "originalName":"TreemapNodePointerEventArgs",
     "names":[{"platform":"Blazor","fileName":"TreemapNodePointerEventArgs.cs","mappedName":"IgbTreemapNodePointerEventArgs"}],
     "members":[
@@ -135,4 +135,4 @@
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Label"}],"originalName":"Label"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ParentValue"}],"originalName":"ParentValue"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ParentLabel"}],"originalName":"ParentLabel"},
-    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ParentSum"}],"originalName":"ParentSum"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts.Implementation"}]}
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ParentSum"}],"originalName":"ParentSum"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts.Implementation"}]}

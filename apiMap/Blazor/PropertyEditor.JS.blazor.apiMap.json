@@ -22,4 +22,4 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifySetItem"}],"originalName":"NotifySetItem"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyClearItems"}],"originalName":"NotifyClearItems"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyInsertItem"}],"originalName":"NotifyInsertItem"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyRemoveItem"}],"originalName":"NotifyRemoveItem"}],"originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyRemoveItem"}],"originalName":"NotifyRemoveItem"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}

@@ -9,6 +9,7 @@
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TrendLineBrush"}],"originalName":"TrendLineBrush"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ActualTrendLineBrush"}],"originalName":"ActualTrendLineBrush"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TrendLineThickness"}],"originalName":"TrendLineThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"double[]","mappedName":"TrendLineDashArray"}],"originalName":"TrendLineDashArray"},
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"TrendLinePeriod"}],"originalName":"TrendLinePeriod"},
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"TrendLineZIndex"}],"originalName":"TrendLineZIndex"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemValue"}],"originalName":"GetItemValue"},
@@ -18,11 +19,11 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetSeriesValuePosition"}],"originalName":"GetSeriesValuePosition"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetOffsetValue"}],"originalName":"GetOffsetValue"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetCategoryWidth"}],"originalName":"GetCategoryWidth"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ScrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"RadialBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ScrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"RadialBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"RadialAreaSeries",
     "names":[{"platform":"Blazor","fileName":"RadialAreaSeries.cs","mappedName":"IgbRadialAreaSeries"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"UnknownValuePlotting","mappedName":"UnknownValuePlotting"}],"originalName":"UnknownValuePlotting"}],"originalBaseTypeName":"AnchoredRadialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"UnknownValuePlotting","mappedName":"UnknownValuePlotting"}],"originalName":"UnknownValuePlotting"}],"originalBaseTypeName":"AnchoredRadialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"RadialBase",
     "names":[{"platform":"Blazor","fileName":"RadialBase.cs","mappedName":"IgbRadialBase"}],
     "members":[
@@ -39,20 +40,20 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemIndex"}],"originalName":"GetItemIndex"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ScrollIntoView"}],"originalName":"ScrollIntoView"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetOffsetValue"}],"originalName":"GetOffsetValue"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetCategoryWidth"}],"originalName":"GetCategoryWidth"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetCategoryWidth"}],"originalName":"GetCategoryWidth"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"RadialColumnSeries",
     "names":[{"platform":"Blazor","fileName":"RadialColumnSeries.cs","mappedName":"IgbRadialColumnSeries"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"RadiusX"}],"originalName":"RadiusX"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"RadiusY"}],"originalName":"RadiusY"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"AnchoredRadialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"AnchoredRadialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"RadialLineSeries",
     "names":[{"platform":"Blazor","fileName":"RadialLineSeries.cs","mappedName":"IgbRadialLineSeries"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"UnknownValuePlotting","mappedName":"UnknownValuePlotting"}],"originalName":"UnknownValuePlotting"}],"originalBaseTypeName":"AnchoredRadialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"UnknownValuePlotting","mappedName":"UnknownValuePlotting"}],"originalName":"UnknownValuePlotting"}],"originalBaseTypeName":"AnchoredRadialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"RadialPieSeries",
     "names":[{"platform":"Blazor","fileName":"RadialPieSeries.cs","mappedName":"IgbRadialPieSeries"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"RadiusX"}],"originalName":"RadiusX"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"RadiusY"}],"originalName":"RadiusY"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"AnchoredRadialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"AnchoredRadialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

@@ -3,6 +3,7 @@
     "names":[{"platform":"Blazor","fileName":"CategoryChart.cs","mappedName":"IgbCategoryChart"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"TransitionInDuration"}],"originalName":"TransitionInDuration"},
+    { "names":[{"platform":"Blazor","mappedType":"String","mappedName":"TransitionInEasingFunction"}],"originalName":"TransitionInEasingFunction"},
     { "names":[{"platform":"Blazor","mappedType":"CategoryChartType","mappedName":"ChartType"}],"originalName":"ChartType"},
     { "names":[{"platform":"Blazor","mappedType":"CategorySeriesMarkerCollisionAvoidance","mappedName":"MarkerCollisionAvoidance"}],"originalName":"MarkerCollisionAvoidance"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsSplineShapePartOfRange"}],"originalName":"IsSplineShapePartOfRange"},
@@ -45,4 +46,4 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetCurrentXAxisActualMinimum"}],"originalName":"GetCurrentXAxisActualMinimum"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetCurrentYAxisActualMinimum"}],"originalName":"GetCurrentYAxisActualMinimum"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetCurrentXAxisActualMaximum"}],"originalName":"GetCurrentXAxisActualMaximum"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetCurrentYAxisActualMaximum"}],"originalName":"GetCurrentYAxisActualMaximum"}],"originalBaseTypeName":"XYChart","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetCurrentYAxisActualMaximum"}],"originalName":"GetCurrentYAxisActualMaximum"}],"originalBaseTypeName":"XYChart","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

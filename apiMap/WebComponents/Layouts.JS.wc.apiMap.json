@@ -33,6 +33,8 @@
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"actualBackIconColor"}],"originalName":"ActualBackIconColor"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"backIconColor"}],"originalName":"BackIconColor"}],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","packageName":"igniteui-layouts","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolActionIconMenu",
+    "names":[{"platform":"WebComponents","fileName":"igc-tool-action-icon-menu-component.ts","dynamicModuleName":"igc-tool-action-icon-menu-dynamic-module.ts","moduleName":"igc-tool-action-icon-menu-module.ts","mappedName":"IgcToolActionIconMenuComponent"}],"members":[],"originalBaseTypeName":"ToolActionIconButton","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","packageName":"igniteui-layouts","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
   { "originalName":"ToolActionCheckbox",
     "names":[{"platform":"WebComponents","fileName":"igc-tool-action-checkbox-component.ts","dynamicModuleName":"igc-tool-action-checkbox-dynamic-module.ts","moduleName":"igc-tool-action-checkbox-module.ts","mappedName":"IgcToolActionCheckboxComponent"}],
     "members":[
@@ -44,7 +46,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"value"}],"originalName":"Value"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"fromInfo"}],"originalName":"FromInfo"}],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","packageName":"igniteui-layouts","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
   { "originalName":"ToolAction",
-    "names":[{"platform":"WebComponents","fileName":"igc-tool-action-component.ts","dynamicModuleName":"igc-tool-action-dynamic-module.ts","moduleName":"igc-tool-action-module.ts","mappedName":"IgcToolActionComponent"}],
+    "names":[{"platform":"WebComponents","fileName":"igc-tool-action-component.ts","mappedName":"IgcToolActionComponent"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"id"}],"originalName":"Id"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcToolActionCollection","mappedName":"actions"}],"originalName":"Actions"},
@@ -121,7 +123,10 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"separatorHorizontalPaddingTop"}],"originalName":"SeparatorHorizontalPaddingTop"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"separatorHorizontalPaddingBottom"}],"originalName":"SeparatorHorizontalPaddingBottom"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"showOnHover"}],"originalName":"ShowOnHover"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"closeSubmenus"}],"originalName":"CloseSubmenus"}],"packageName":"igniteui-layouts","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"closeSubmenus"}],"originalName":"CloseSubmenus"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"onCommandStateChanged"}],"originalName":"OnCommandStateChanged"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"registerIconFromText"}],"originalName":"RegisterIconFromText"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getIconFromCache"}],"originalName":"GetIconFromCache"}],"packageName":"igniteui-layouts","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
   { "originalName":"ToolCommandEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-tool-command-event-args.ts","mappedName":"IgcToolCommandEventArgs"}],
     "members":[
@@ -137,7 +142,7 @@
   { "originalName":"ToolActionEventDetail",
     "names":[{"platform":"WebComponents","fileName":"igc-tool-action-event-detail.ts","mappedName":"IgcToolActionEventDetail"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"IgcToolActionComponent","mappedName":"action"}],"originalName":"Action"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"actionId"}],"originalName":"ActionId"},
     { "names":[{"platform":"WebComponents","mappedType":"ToolActionType","mappedName":"actionType"}],"originalName":"ActionType"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isModified"}],"originalName":"IsModified"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"boolValue"}],"originalName":"BoolValue"},

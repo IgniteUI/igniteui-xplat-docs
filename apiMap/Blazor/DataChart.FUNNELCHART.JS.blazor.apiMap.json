@@ -2,24 +2,24 @@
   { "originalName":"FunnelSliceDataContext",
     "names":[{"platform":"Blazor","fileName":"FunnelSliceDataContext.cs","mappedName":"IgbFunnelSliceDataContext"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ItemOutline"}],"originalName":"ItemOutline"}],"originalBaseTypeName":"DataContext","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ItemOutline"}],"originalName":"ItemOutline"}],"originalBaseTypeName":"DataContext","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FunnelDataContext",
     "names":[{"platform":"Blazor","fileName":"FunnelDataContext.cs","mappedName":"IgbFunnelDataContext"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"Item"}],"originalName":"Item"},
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Index"}],"originalName":"Index"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Index"}],"originalName":"Index"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FunnelSliceClickedEventArgs",
     "names":[{"platform":"Blazor","fileName":"FunnelSliceClickedEventArgs.cs","mappedName":"IgbFunnelSliceClickedEventArgs"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Index"}],"originalName":"Index"},
     { "names":[{"platform":"Blazor","mappedType":"Rect","mappedName":"Bounds"}],"originalName":"Bounds"},
-    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"Item"}],"originalName":"Item"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"Item"}],"originalName":"Item"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FunnelSliceEventArgs",
     "names":[{"platform":"Blazor","fileName":"FunnelSliceEventArgs.cs","mappedName":"IgbFunnelSliceEventArgs"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Index"}],"originalName":"Index"},
     { "names":[{"platform":"Blazor","mappedType":"Rect","mappedName":"Bounds"}],"originalName":"Bounds"},
-    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"Item"}],"originalName":"Item"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"Item"}],"originalName":"Item"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"XamFunnelChart",
     "names":[{"platform":"Blazor","fileName":"FunnelChart.cs","mappedName":"IgbFunnelChart"}],
     "members":[
@@ -33,6 +33,8 @@
     { "names":[{"platform":"Blazor","mappedType":"Visibility","mappedName":"OuterLabelVisibility"}],"originalName":"OuterLabelVisibility"},
     { "names":[{"platform":"Blazor","mappedType":"OuterLabelAlignment","mappedName":"OuterLabelAlignment"}],"originalName":"OuterLabelAlignment"},
     { "names":[{"platform":"Blazor","mappedType":"FunnelSliceDisplay","mappedName":"FunnelSliceDisplay"}],"originalName":"FunnelSliceDisplay"},
+    { "names":[{"platform":"Blazor","mappedType":"String","mappedName":"FormatInnerLabel"}],"originalName":"FormatInnerLabel"},
+    { "names":[{"platform":"Blazor","mappedType":"String","mappedName":"FormatOuterLabel"}],"originalName":"FormatOuterLabel"},
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"TransitionDuration"}],"originalName":"TransitionDuration"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsInverted"}],"originalName":"IsInverted"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"UseBezierCurve"}],"originalName":"UseBezierCurve"},
@@ -69,4 +71,4 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyInsertItem"}],"originalName":"NotifyInsertItem"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyRemoveItem"}],"originalName":"NotifyRemoveItem"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ToggleSelection"}],"originalName":"ToggleSelection"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

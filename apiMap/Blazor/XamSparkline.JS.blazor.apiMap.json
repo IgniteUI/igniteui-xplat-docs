@@ -45,6 +45,7 @@
     { "names":[{"platform":"Blazor","mappedType":"UnknownValuePlotting","mappedName":"UnknownValuePlotting"}],"originalName":"UnknownValuePlotting"},
     { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"VerticalAxisLabel"}],"originalName":"VerticalAxisLabel"},
     { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"HorizontalAxisLabel"}],"originalName":"HorizontalAxisLabel"},
+    { "names":[{"platform":"Blazor","mappedType":"String","mappedName":"FormatLabel"}],"originalName":"FormatLabel"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"HorizontalLabelFormat"}],"originalName":"HorizontalLabelFormat"},
     { "names":[{"platform":"Blazor","mappedType":"IgbFormatSpecifierCollection","mappedName":"HorizontalLabelFormatSpecifiers"}],"originalName":"HorizontalLabelFormatSpecifiers"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"VerticalLabelFormat"}],"originalName":"VerticalLabelFormat"},
@@ -57,4 +58,4 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyClearItems"}],"originalName":"NotifyClearItems"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyInsertItem"}],"originalName":"NotifyInsertItem"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyRemoveItem"}],"originalName":"NotifyRemoveItem"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

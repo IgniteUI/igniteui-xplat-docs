@@ -2,7 +2,7 @@
   { "originalName":"PolarAreaSeries",
     "names":[{"platform":"Blazor","fileName":"PolarAreaSeries.cs","mappedName":"IgbPolarAreaSeries"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"UnknownValuePlotting","mappedName":"UnknownValuePlotting"}],"originalName":"UnknownValuePlotting"}],"originalBaseTypeName":"PolarLineSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"UnknownValuePlotting","mappedName":"UnknownValuePlotting"}],"originalName":"UnknownValuePlotting"}],"originalBaseTypeName":"PolarLineSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"PolarBase",
     "names":[{"platform":"Blazor","fileName":"PolarBase.cs","mappedName":"IgbPolarBase"}],
     "members":[
@@ -16,6 +16,7 @@
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TrendLineBrush"}],"originalName":"TrendLineBrush"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ActualTrendLineBrush"}],"originalName":"ActualTrendLineBrush"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TrendLineThickness"}],"originalName":"TrendLineThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"double[]","mappedName":"TrendLineDashArray"}],"originalName":"TrendLineDashArray"},
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"TrendLinePeriod"}],"originalName":"TrendLinePeriod"},
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"TrendLineZIndex"}],"originalName":"TrendLineZIndex"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ClipSeriesToBounds"}],"originalName":"ClipSeriesToBounds"},
@@ -35,20 +36,20 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetSeriesValuePosition"}],"originalName":"GetSeriesValuePosition"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemValue"}],"originalName":"GetItemValue"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"CanUseAsRadiusAxis"}],"originalName":"CanUseAsRadiusAxis"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"CanUseAsAngleAxis"}],"originalName":"CanUseAsAngleAxis"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"CanUseAsAngleAxis"}],"originalName":"CanUseAsAngleAxis"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"PolarLineSeries",
     "names":[{"platform":"Blazor","fileName":"PolarLineSeries.cs","mappedName":"IgbPolarLineSeries"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"UnknownValuePlotting","mappedName":"UnknownValuePlotting"}],"originalName":"UnknownValuePlotting"}],"originalBaseTypeName":"PolarLineSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"UnknownValuePlotting","mappedName":"UnknownValuePlotting"}],"originalName":"UnknownValuePlotting"}],"originalBaseTypeName":"PolarLineSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"PolarLineSeriesBase",
-    "names":[{"platform":"Blazor","fileName":"PolarLineSeriesBase.cs","mappedName":"IgbPolarLineSeriesBase"}],"members":[],"originalBaseTypeName":"PolarBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    "names":[{"platform":"Blazor","fileName":"PolarLineSeriesBase.cs","mappedName":"IgbPolarLineSeriesBase"}],"members":[],"originalBaseTypeName":"PolarBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"PolarScatterSeries",
-    "names":[{"platform":"Blazor","fileName":"PolarScatterSeries.cs","mappedName":"IgbPolarScatterSeries"}],"members":[],"originalBaseTypeName":"PolarBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    "names":[{"platform":"Blazor","fileName":"PolarScatterSeries.cs","mappedName":"IgbPolarScatterSeries"}],"members":[],"originalBaseTypeName":"PolarBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"PolarSplineAreaSeries",
     "names":[{"platform":"Blazor","fileName":"PolarSplineAreaSeries.cs","mappedName":"IgbPolarSplineAreaSeries"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Stiffness"}],"originalName":"Stiffness"}],"originalBaseTypeName":"PolarLineSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Stiffness"}],"originalName":"Stiffness"}],"originalBaseTypeName":"PolarLineSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"PolarSplineSeries",
     "names":[{"platform":"Blazor","fileName":"PolarSplineSeries.cs","mappedName":"IgbPolarSplineSeries"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Stiffness"}],"originalName":"Stiffness"}],"originalBaseTypeName":"PolarLineSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Stiffness"}],"originalName":"Stiffness"}],"originalBaseTypeName":"PolarLineSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

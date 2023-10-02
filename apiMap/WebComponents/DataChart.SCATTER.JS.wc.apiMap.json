@@ -117,7 +117,10 @@
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItemIndex"}],"originalName":"GetItemIndex"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getExactItemIndex"}],"originalName":"GetExactItemIndex"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValuePosition"}],"originalName":"GetSeriesValuePosition"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValueType"}],"originalName":"GetSeriesValueType"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValueTypePositionFromValue"}],"originalName":"GetSeriesValueTypePositionFromValue"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValueTypePosition"}],"originalName":"GetSeriesValueTypePosition"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ScatterLineSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-scatter-line-series-component.ts","dynamicModuleName":"igc-scatter-line-series-dynamic-module.ts","moduleName":"igc-scatter-line-series-module.ts","mappedName":"IgcScatterLineSeriesComponent"}],
     "members":[

@@ -89,7 +89,9 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"smoothingPeriod"}],"originalName":"SmoothingPeriod"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"triggerPeriod"}],"originalName":"TriggerPeriod"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ItemwiseStrategyBasedIndicator",
-    "names":[{"platform":"WebComponents","fileName":"igc-itemwise-strategy-based-indicator-component.ts","mappedName":"IgcItemwiseStrategyBasedIndicatorComponent"}],"members":[],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
+    "names":[{"platform":"WebComponents","fileName":"igc-itemwise-strategy-based-indicator-component.ts","mappedName":"IgcItemwiseStrategyBasedIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"resolveIsItemwise"}],"originalName":"ResolveIsItemwise"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"MarketFacilitationIndexIndicator",
     "names":[{"platform":"WebComponents","fileName":"igc-market-facilitation-index-indicator-component.ts","dynamicModuleName":"igc-market-facilitation-index-indicator-dynamic-module.ts","moduleName":"igc-market-facilitation-index-indicator-module.ts","mappedName":"IgcMarketFacilitationIndexIndicatorComponent"}],
     "members":[

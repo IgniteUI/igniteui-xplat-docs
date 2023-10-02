@@ -1,4 +1,4 @@
-{"extraFiles":["igx-category-chart-core-module.ts","igx-category-chart-module.ts"],
+{"extraFiles":["igx-category-chart-core-module.ts","igx-category-chart-module.ts","igx-category-chart-toolbar-module.ts"],
   "types":[
   { "originalName":"CategoryChart",
     "names":[{"platform":"Angular","fileName":"igx-category-chart-component.ts","mappedName":"IgxCategoryChartComponent"}],

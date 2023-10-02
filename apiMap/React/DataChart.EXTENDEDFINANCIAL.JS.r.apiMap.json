@@ -89,7 +89,9 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"smoothingPeriod"}],"originalName":"SmoothingPeriod"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"triggerPeriod"}],"originalName":"TriggerPeriod"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ItemwiseStrategyBasedIndicator",
-    "names":[{"platform":"React","fileName":"igr-itemwise-strategy-based-indicator.ts","mappedName":"IgrItemwiseStrategyBasedIndicator"}],"members":[],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
+    "names":[{"platform":"React","fileName":"igr-itemwise-strategy-based-indicator.ts","mappedName":"IgrItemwiseStrategyBasedIndicator"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"resolveIsItemwise"}],"originalName":"ResolveIsItemwise"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"MarketFacilitationIndexIndicator",
     "names":[{"platform":"React","fileName":"igr-market-facilitation-index-indicator.ts","dynamicModuleName":"igr-market-facilitation-index-indicator-dynamic-module.ts","moduleName":"igr-market-facilitation-index-indicator-module.ts","mappedName":"IgrMarketFacilitationIndexIndicator"}],
     "members":[

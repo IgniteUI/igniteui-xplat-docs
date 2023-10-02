@@ -30,7 +30,10 @@
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValueBoundingBox"}],"originalName":"GetSeriesValueBoundingBox"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItemSpan"}],"originalName":"GetItemSpan"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setNegativeColors"}],"originalName":"SetNegativeColors"}],"originalBaseTypeName":"FinancialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setNegativeColors"}],"originalName":"SetNegativeColors"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValueType"}],"originalName":"GetSeriesValueType"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValueTypePosition"}],"originalName":"GetSeriesValueTypePosition"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValueTypePositionFromValue"}],"originalName":"GetSeriesValueTypePositionFromValue"}],"originalBaseTypeName":"FinancialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-financial-series-component.ts","mappedName":"IgcFinancialSeriesComponent"}],
     "members":[
