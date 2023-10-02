@@ -12,7 +12,7 @@ The {ProductName} Radio component allows the user to select a single option from
 
 ## {ProductName} Radio Example
 
-`sample="/inputs/radio/group", height="100", alt="{Platform} Radio & Radio Group Example"`
+`sample="/inputs/radio/group", height="150", alt="{Platform} Radio & Radio Group Example"`
 
 
 <div class="divider--half"></div>
@@ -192,7 +192,7 @@ You can use the `checked` attribute to toggle on the radio.
 </IgbRadioGroup>
 ```
 
-`sample="/inputs/radio/group", height="100", alt="{Platform} Radio Example"`
+`sample="/inputs/radio/group", height="150", alt="{Platform} Radio Example"`
 
 
 
@@ -247,7 +247,7 @@ You can use the `disabled` attribute to disable the radio.
 </IgbRadioGroup>
 ```
 
-`sample="/inputs/radio/disabled", height="100", alt="{Platform} Radio Example"`
+`sample="/inputs/radio/disabled", height="150", alt="{Platform} Radio Example"`
 
 
 
