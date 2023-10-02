@@ -39,8 +39,8 @@ _language: ja
 - <kbd>Ctrl</kbd> キー押下 + **マウス ドラッグ** - 複数の範囲が選択されます。その他の既存のセル選択は保持されます。
 - <kbd>Shift</kbd> キーを使用して複数セルの選択をインスタンス化します。<kbd>Shift</kbd> キーを押しながら、単一セルを選択して別の単一セルを選択します。2 つのセル間のセル範囲が選択されます。<kbd>Shift</kbd> キーを押しながら他の 2 番目のセルを選択すると、最初に選択したセルの位置 (開始点) に基づいてセル選択範囲が更新されます。
 - <kbd>Shift</kbd> キーを押しながら <kbd>矢印</kbd> キーを使用してキーボードで複数セルを選択します。マルチセル選択範囲は、フォーカスされたセルに基づいて作成されます。
-- <kbd>Ctrl</kbd> キーを押しながら <kbd>Ctrl</kbd> + <kbd>矢印</kbd> キーと <kbd>Ctrl</kbd> + <kbd>Home</kbd>/<kbd>End</kbd> を使用してキーボードで複数セルを選択します。マルチセル選択範囲は、フォーカスされたセルに基づいて作成されます。
-- <kbd>Ctrl</kbd> キーを押しながら**左マウスキー**でクリックすると、選択したセルコレクションに単一のセル範囲が追加されます。
+- <kbd>Ctrl</kbd> キーを押しながら <kbd>Ctrl</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> キーと <kbd>Ctrl</kbd> + <kbd>Home</kbd> / <kbd>End</kbd> を使用してキーボードで複数セルを選択します。マルチセル選択範囲は、フォーカスされたセルに基づいて作成されます。
+- <kbd>Ctrl</kbd> キーを押しながら**左マウス**キーでクリックすると、選択したセルコレクションに単一のセル範囲が追加されます。
 - マウスでクリックしてドラッグすることで、連続した複数セルの選択が可能です。
 
 <!-- ComponentStart: Grid, TreeGrid -->
@@ -68,17 +68,17 @@ _language: ja
 
 ### Shift キーが押されている間
 
-- <kbd>Shift</kbd> + <kbd>上矢印</kbd> - 現在の選択範囲に上のセルを追加します。
-- <kbd>Shift</kbd> + <kbd>下矢印</kbd> - 現在の選択範囲に下のセルを追加します。
-- <kbd>Shift</kbd> + <kbd>左矢印</kbd> - 現在の選択に左のセルを追加します。
-- <kbd>Shift</kbd> + <kbd>右矢印</kbd> - 現在の選択範囲に右のセルを追加します。
+- <kbd>Shift</kbd> + <kbd>↑</kbd> - 現在の選択範囲に上のセルを追加します。
+- <kbd>Shift</kbd> + <kbd>↓</kbd> - 現在の選択範囲に下のセルを追加します。
+- <kbd>Shift</kbd> + <kbd>←</kbd> - 現在の選択に左のセルを追加します。
+- <kbd>Shift</kbd> + <kbd>→</kbd> - 現在の選択範囲に右のセルを追加します。
 
 ### Ctrl + Shift キーが押されている間
 
-- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>上矢印</kbd> - 列内のフォーカスのあるセルの上にあるすべてのセルを選択します。
-- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>下矢印</kbd> - 列内のフォーカスのあるセルの下にあるすべてのセルを選択します。
-- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>左矢印</kbd> - 行の先頭まですべてのセルを選択します。
-- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>右矢印</kbd> - 行末まですべてのセルを選択します。
+- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd> - 列内のフォーカスのあるセルの上にあるすべてのセルを選択します。
+- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↓</kbd> - 列内のフォーカスのあるセルの下にあるすべてのセルを選択します。
+- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd> - 行の先頭まですべてのセルを選択します。
+- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>→</kbd> - 行末まですべてのセルを選択します。
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Home</kbd> - フォーカスされているセルからグリッド内の最初のセルまでのすべてのセルを選択します。
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>End</kbd> - フォーカスされているセルからグリッド内の最後のセルまでのすべてのセルを選択します。
 
