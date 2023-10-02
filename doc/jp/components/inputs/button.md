@@ -190,7 +190,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 
 ## ボタンのサイズ設定
 
-Users can change the size of the `button` component using the `--ig-size` CSS variable.次の例では、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびにボタンの size プロパティを変更します。
+ユーザーは、CSS 変数 `--ig-size` を使用して `button` コンポーネントのサイズを変更できます。次の例では、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびにボタンの size プロパティを変更します。
 
 ```ts
 import { defineComponents, IgcButtonComponent, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';

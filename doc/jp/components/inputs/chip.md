@@ -178,7 +178,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbChipModule));
 
 ## Size (サイズ)
 
-We allow the user to choose the size of the `Chip` by utilizing the `--ig-size` CSS variable:
+ユーザーが `--ig-size` CSS 変数を利用して `Chip` のサイズを選択できるようにします。
 
 ```tsx
 <IgrChip size="small" selectable="true" removable="true">

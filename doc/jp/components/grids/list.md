@@ -344,7 +344,7 @@ defineComponents(IgcListComponent);
 
 `end` スロットは、switch、button、checkbox などで表される、ある種のアクションまたはメタデータを持つリスト項目に使用することを目的としています。`Button` コンポーネントを使用します。
 
-Let's also allow the user to change the size of the list using the `--ig-size` CSS variable.すべてのサイズ値を表示するために、いくつかのラジオ ボタンを追加します。このようにして、選択されるたびに、リストのサイズを変更します。
+また、ユーザーが `--ig-size` CSS 変数を使用してリストのサイズを変更できるようにしましょう。すべてのサイズ値を表示するために、いくつかのラジオ ボタンを追加します。このようにして、選択されるたびに、リストのサイズを変更します。
 
 ```html
 <igc-radio-group id="radio-group" alignment="horizontal">

@@ -208,7 +208,7 @@ public iconRef(icon: IgrIcon) {
 
 ### サイズ
 
-アイコン コンポーネントは、`small`、`medium` (デフォルト)、`large` の 3 つのアイコン サイズをサポートしています。In order to change the size of the icon, you can utilize the `--ig-size` CSS variable as follows:
+アイコン コンポーネントは、`small`、`medium` (デフォルト)、`large` の 3 つのアイコン サイズをサポートしています。アイコンのサイズを変更するには、次のように `--ig-size` CSS 変数を利用できます。
 
 ```css
 igc-icon {

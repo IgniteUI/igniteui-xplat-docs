@@ -89,7 +89,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 
 ### Select (選択)
 
-`Select` コンポーネントは `Form` コンポーネント内で使用できるため、登録する `Name` プロパティを公開します。また、`Label` および `Placeholder` プロパティもあります。`Outlined` プロパティは、Material テーマに関してのみ、スタイリング目的で使用されます。デフォルトのスロットを除いて、コンポーネントは、`header`、`footer`、`helper-text`、`prefix`、`suffix`、および `toggle-icon` を含む他のいくつかのスロットを提供します。The component size can be changed using the `--ig-size` CSS variable.
+`Select` コンポーネントは `Form` コンポーネント内で使用できるため、登録する `Name` プロパティを公開します。また、`Label` および `Placeholder` プロパティもあります。`Outlined` プロパティは、Material テーマに関してのみ、スタイリング目的で使用されます。デフォルトのスロットを除いて、コンポーネントは、`header`、`footer`、`helper-text`、`prefix`、`suffix`、および `toggle-icon` を含む他のいくつかのスロットを提供します。コンポーネントのサイズは、`--ig-size` CSS 変数を使用して変更できます。
 
 ### Item (項目)
 

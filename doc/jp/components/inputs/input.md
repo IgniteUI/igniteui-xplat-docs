@@ -109,7 +109,7 @@ IgrInputModule.register();
 
 ## Input のサイズ設定
 
-We can allow the user to change the size of the `Input` using the `--ig-size` CSS variable. これを行うには、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびに、Input のサイズを変更します。
+ユーザーが `--ig-size` CSS 変数を使用して `Input` のサイズを変更できるようにすることができます。これを行うには、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびに、Input のサイズを変更します。
 
 `sample="/inputs/input/size", height="320", alt="{Platform} Input サイズ設定の例"`
 

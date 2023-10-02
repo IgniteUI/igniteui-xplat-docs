@@ -322,7 +322,7 @@ Calendar には、前月と翌月の前後の日付が表示されます。こ�
 
 ### サイズ
 
-You could control the size and spacing of the calendar inner elements using the `--ig-size` CSS variable. The default size of the component is large.
+`--ig-size` CSS 変数を使用して、カレンダーの内部要素のサイズと間隔を制御できます。コンポーネントのデフォルトのサイズは大きいです。
 
 `sample="/scheduling/calendar/size", height="520", alt="{Platform} Calendar サイズの例"`
 

@@ -178,7 +178,7 @@ defineComponents(IgcAvatarComponent);
 
 ### サイズ
 
-Apart from the shape, the size of the avatar can also be changed by utilizing the `--ig-size` CSS variable. The supported sizes are `small` (default), `medium`, and `large`. The following code snippet shows how to use a different component size: 
+形状とは別に、アバターのサイズも `--ig-size` CSS 変数を利用して変更できます。サポートされているサイズは、`small` (デフォルト)、`medium`、`large` です。次のコード スニペットは、異なるコンポーネント サイズを使用する方法を示しています。
 
 ```css
 igc-avatar {
