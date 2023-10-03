@@ -197,7 +197,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 選択がフォーカスされ、オプションのリストが**表示されていない**場合:
 
 - <kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> の組み合わせを使用するか、<kbd>Space</kbd> または <kbd>Enter</kbd> キーをクリックして、`Select` を開きます。
-- <kbd>ALT</kbd> + <kbd>↑</kbd> or <kbd>↓</kbd> の組み合わせ、または <kbd>Enter</kbd>、<kbd>Space</kbd>、<kbd>Esc</kbd>、`Tab` キーのいずれかを使用して、`Select` を閉じます。
+- <kbd>ALT</kbd> + <kbd>↑</kbd> または <kbd>↓</kbd> の組み合わせ、または <kbd>Enter</kbd>、<kbd>Space</kbd>、<kbd>Esc</kbd>、`Tab` キーのいずれかを使用して、`Select` を閉じます。
 - <kbd>←</kbd> <kbd>→</kbd> キーを使用すると、リスト内の前の項目が選択されます。
 - <kbd>↑</kbd> <kbd>↓</kbd> キーを使用すると、リスト内の次の項目が選択されます。
 - <kbd>Home</kbd> キーまたは <kbd>End</kbd> キーを使用すると、リストの最初または最後の項目が選択されます。
