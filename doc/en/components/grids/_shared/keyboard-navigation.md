@@ -122,14 +122,14 @@ When the `{ComponentName}` body is focused, the following key combinations are a
 
 Practice all of the above mentioned actions in the demo sample below. Focus any navigable grid element and a list with some of the available actions for the element will be shown to guide you through.
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 
 ## Demo
 
 
 `sample="/{ComponentSample}/keyboard-navigation-guide", height="600", alt="{Platform} {ComponentTitle} keyboard navigation guide"`
 
-<!-- end: Angular, WebComponents -->
+<!-- end: Angular, WebComponents, React -->
 
 ## Custom Keyboard Navigation
 
@@ -185,6 +185,11 @@ igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
 }, false);
 ```
 
+```tsx
+<{ComponentSelector} id="grid1" primaryKey="ProductID" gridKeydown={customKeydown}>
+</{ComponentSelector}>
+```
+
 ```ts
 constructor() {
         var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
@@ -196,6 +201,24 @@ constructor() {
         this._bind();
 
     }
+```
+
+```typescript
+function customKeydown(s: IgrGridBaseDirective, e: IgrGridKeydownEventArgs) {
+  const detail = e.detail
+  const target= detail.target;
+  const evt = detail.event;
+  const type = detail.targetType;
+
+  if (type === GridKeydownTargetType.DataCell && target.editMode && evt.key.toLowerCase() === 'tab') {
+      // 1. USER INPUT VALIDATION ON TAB
+      
+  }
+  if (type === GridKeydownTargetType.DataCell && evt.key.toLowerCase() === 'enter') {
+      // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
+
+  }
+}
 ```
 <!-- ComponentEnd: Grid -->
 
@@ -215,9 +238,13 @@ public customKeydown(args: any) {
     }
 }
 ```
+<!-- Angular, WebComponents, Blazor -->
 
 Based on the event arg values we identified two cases, where to provide our own logic (see above). Now, using the methods from the API, let's perform the desired - if the user is pressing <kbd>Tab</kbd> key over a cell in edit mode, we will perform validation on the input. If the user is pressing <kbd>Enter</kbd> key over a cell, we will move focus to cell in the next row:
 
+<!-- end: Angular, WebComponents, Blazor -->
+
+<!-- Angular, WebComponents -->
 ```typescript
     // 1. USER INPUT VALIDATION ON TAB
     if (target.column.dataType === 'number' && target.editValue < 10) {
@@ -229,6 +256,20 @@ Based on the event arg values we identified two cases, where to provide our own 
             obj.target.activate();
         });
 ```
+<!-- end: Angular, WebComponents -->
+
+<!-- React -->
+
+Based on the event arg values we identified two cases, where to provide our own logic (see above). Now, using the methods from the API, let's perform the desired - if the user is pressing <kbd>Tab</kbd> key over a cell in edit mode, we will perform validation on the input:
+
+```typescript
+    // 1. USER INPUT VALIDATION ON TAB
+    if (target.column.dataType === 'number' && target.editValue < 10) {
+        // alert the user that the input is invalid
+        return;
+    }
+```
+<!-- end: React -->
 
 ```razor
 
