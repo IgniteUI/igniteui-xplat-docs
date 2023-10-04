@@ -41,10 +41,23 @@ _language: ja
 ```
 <!-- end: WebComponents -->
 
-または
 
+```tsx
+<{ComponentSelector} id="grid" displayDensity="cosy" >
+</{ComponentSelector}>
+```
+
+
+or
+
+<!-- WebComponents -->
 ```typescript
 this.grid.displayDensity = 'cosy';
+```
+<!-- end: WebComponents -->
+
+```tsx
+gridRef.current.displayDensity = 'cosy';
 ```
 
 ```razor
@@ -101,6 +114,21 @@ this.grid.displayDensity = 'cosy';
         </igc-property-editor-property-description>
     </igc-property-editor-panel>
 </div>
+```
+
+```tsx
+<IgrPropertyEditorPanel
+    ref={propertyEditorRef}
+    componentRenderer={renderer}
+    target={grid}
+    descriptionType="WebGrid"
+    isHorizontal="true"
+    isWrappingEnabled="true">
+    <IgrPropertyEditorPropertyDescription
+        propertyPath="DisplayDensity"
+        name="DisplayDensityEditor">
+    </IgrPropertyEditorPropertyDescription>
+</IgrPropertyEditorPanel>
 ```
 
 ```typescript
@@ -424,6 +452,47 @@ public ngOnInit() {
     </igx-column-group>
 </igx-grid>
 ```
+```tsx
+<IgrGrid autoGenerate="false" ref={gridRef} data={invoicesData} allowFiltering="true">
+    <IgrColumn field="CustomerName" header="Customer Name" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="Country" header="Country" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="City" header="City" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="Address" header="Address" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="PostalCode" header="Postal Code" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="Salesperson" header="Sales Person" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="ShipperName" header="Shipper Name" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="OrderDate" header="Order Date" dataType="Date" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="ProductID" header="ID" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="ProductName" header="Name" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="UnitPrice" header="Unit Price" dataType="Number" sortable="true" hasSummary="true" filterable="false">
+    </IgrColumn>
+    <IgrColumn field="Quantity" header="Quantity" dataType="Number" sortable="true" hasSummary="true" filterable="false">
+    </IgrColumn>
+    <IgrColumn field="Discontinued" header="Discontinued" dataType="Boolean" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="Discontinued" header="Discontinued" dataType="Boolean" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="ShipName" header="Name" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="ShipCountry" header="Country" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="ShipCity" header="City" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="ShipPostalCode" header="Postal Code" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+</IgrGrid>
+```
+
 ```ts
 constructor() {
     var propertyEditor = this.propertyEditor = document.getElementById('PropertyEditor') as IgcPropertyEditorPanelComponent;
@@ -757,6 +826,12 @@ public selectDensity(event) {
  </{ComponentSelector}>
  ```
  <!-- end: WebComponents -->
+
+ ```tsx
+ <{ComponentSelector} id="grid" displayDensity="cosy" rowHeight="80px" width="100%"
+ height="550px" allowFiltering="true">
+ </{ComponentSelector}>
+ ```
 
 ## API リファレンス
 

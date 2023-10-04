@@ -90,26 +90,41 @@ _language: ja
 以下は、範囲の選択、選択の解除、または選択したセル データを取得する方法です。
 
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 
 ### 範囲の選択
 
 `SelectRange` - API を使用してセル範囲を選択します。rowStart と rowEnd は行インデックスを使用する必要があり、columnStart と columnEnd は列インデックスまたは列データ フィールド値を使用することができます。
 
+<!-- WebComponents -->
 ```ts
 const range = { rowStart: 2, rowEnd: 2, columnStart: 1, columnEnd: 1 };
 this.grid.selectRange(range);
 ```
+<!-- end: WebComponents -->
 
-<!-- end: Angular, WebComponents -->
+```tsx
+const range = { rowStart: 2, rowEnd: 2, columnStart: 1, columnEnd: 1 };
+gridRef.current.selectRange(range);
+```
+
+<!-- end: Angular, WebComponents, React -->
 
 ### セル選択のクリア
 
 `ClearCellSelection` は現在のセル選択をクリアします。
 
+<!-- WebComponents -->
 ```ts
 this.grid.clearCellSelection();
 ```
+<!-- end: WebComponents -->
+
+```tsx
+gridRef.current.clearCellSelection();
+```
+
+
 
 ```razor
 @code {
@@ -139,7 +154,7 @@ this.grid.clearCellSelection();
 ```
 <!-- end: Blazor -->
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 `GetSelectedData` は、選択したデータの配列を選択内容に応じた形式で返します。例:
 
 - 3 つの異なる単一セルが選択されている場合:
@@ -201,7 +216,7 @@ expectedData = [
 ];
 ```
 
-<!-- end: Angular, WebComponents -->
+<!-- end: Angular, WebComponents, React -->
 
 <!-- Angular -->
 > [!Note]
@@ -224,7 +239,7 @@ expectedData = [
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 ## スタイル設定
 
@@ -233,8 +248,14 @@ expectedData = [
 
 <!-- ComponentStart: Grid -->
 
+<!-- WebComponents -->
 ```ts
 <igc-grid class="grid">
+```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrGrid className="grid"></IgrGrid>
 ```
 
 ```razor
@@ -274,14 +295,14 @@ expectedData = [
 }
 ```
 
-<!-- ComponentEnd: Grid -->
+<!-- ComponentEnd: TreeGrid -->
 
 ### デモ
 
 `sample="/{ComponentSample}/cell-selection-style", height="620", alt="{Platform} {ComponentTitle} セル選択のスタイル設定の例"`
 
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- Angular -->
 ## スタイリングのガイドライン
@@ -356,17 +377,13 @@ $custom-grid-theme: grid-theme(
 ## API リファレンス
 
 * `{ComponentName}`
+* `Cell`
 <!-- ComponentStart: Grid, HierarchicalGrid -->
-
 * `GridRow`
-
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 <!-- ComponentStart: TreeGrid -->
-
 * `TreeGridRow`
-
 <!-- ComponentEnd: TreeGrid -->
-* `GridCell`
 
 ## その他のリソース
 

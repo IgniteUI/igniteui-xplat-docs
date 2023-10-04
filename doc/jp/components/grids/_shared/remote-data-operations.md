@@ -88,7 +88,7 @@ BLAZOR CODE SNIPPET HERE
 
 <!-- end: Angular -->
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 
 ## 無限スクロール
 
@@ -96,7 +96,7 @@ BLAZOR CODE SNIPPET HERE
 
 無限スクロールを実装するには、データを分割してフェッチする必要があります。すでにフェッチされたデータはローカルに保存し、チャンクの長さおよび数を決定する必要があります。また、グリッドで最後に表示されるデータ行インデックスを追跡する必要があります。このように、`StartIndex` と `ChunkSize` プロパティを使用して、ユーザーが上にスクロールして既にフェッチしたデータを表示するか、下にスクロールしてエンドポイントからさらにデータをフェッチする必要があるかを決定できます。
 
-<!-- end: Angular, WebComponents -->
+<!-- end: Angular, WebComponents, React -->
 
 <!-- Angular -->
 

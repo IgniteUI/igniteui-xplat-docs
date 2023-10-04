@@ -65,6 +65,15 @@ _language: ja
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+```tsx
+<{ComponentSelector} data={this.nwindData} autoGenerate="false" ref={this.gridRef} allowFiltering="true">
+    <IgrColumn field="ProductName" dataType="String"></IgrColumn>
+    <IgrColumn field="UnitPrice" data-type="Number" filterable="false"></IgrColumn>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
 [高度なフィルタリング](advanced-filtering.md) を有効にするには、`AllowAdvancedFiltering` 入力プロパティを **true** に設定します。
 
 <!-- Angular -->
@@ -84,6 +93,13 @@ _language: ja
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} data={nwindData} autoGenerate="false" ref={gridRef} allowAdvancedFiltering="true">
+</{ComponentSelector}>
+```
+<!-- end: React -->
 
 > [!Note]
 >`{ComponentName}` で `QuickFilter` または `ExcelStyleFilter` と高度なフィルタリング ユーザー インターフェイスの両方を有効にできます。両フィルタリング ユーザー インターフェイスは、互いに依存せずに機能します。`{ComponentName}` の最終的なフィルター結果は、2 つのフィルター結果の共通部分です。
@@ -119,6 +135,17 @@ _language: ja
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} autoGenerate="false" allowFiltering="true">
+    <IgrColumn field="ProductName" dataType="String"></IgrColumn>
+    <IgrColumn field="Price" dataType="Number"></IgrColumn>
+    <IgrColumn field="Discontinued" dataType="Boolean" filterable="false"></IgrColumn>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -145,6 +172,8 @@ _language: ja
 
 > [!Note]
 > *string* 型の値が *date* データ型の列で使用される場合、`{ComponentName}` は値を *date* オブジェクトに解析しないためフィルター条件は使用できません。*string* オブジェクトを使用する場合、値を *date* オブジェクトに解析するためのロジックをアプリケーション レベルで実装する必要があります。
+
+<!-- Angular, WebComponents -->
 
 列または複数の列は `{ComponentName}` API でフィルターできます。`{ComponentName}` は、このタスクに複数のメソッドを公開します (`Filter`、`FilterGlobal`、`ClearFilter`.)。
 
@@ -337,9 +366,15 @@ this.grid.filteringLogic = FilteringLogic.OR;
 ```
 <!-- end: WebComponents -->
 
-`AND` のデフォルト値は現在適用されているすべてのフィルター式と一致する行のみを返します。上記の例は、「ProductName」 セル値が 「myproduct」 を含み、「Price」 セル値が 55 より大きい場合に行が返されます。
+<!-- React -->
+```tsx
+<{ComponentName} filteringLogic={FilteringLogic.Or}></{ComponentName}>
+```
+<!-- end: React -->
 
-`OR` に設定される場合、「ProductName」 セル値が 「myproduct」 を含むか、「Price」 セル値が 55 より大きい場合に行が返されます。
+`AND` のデフォルト値は現在適用されているすべてのフィルター式と一致する行のみを返します。上記の例は、「ProductName」セル値が 「myproduct」を含み、「Price」セル値が 55 より大きい場合に行が返されます。
+
+`OR` に設定される場合、「ProductName」セル値が「myproduct」を含むか、「Price」セル値が 55 より大きい場合に行が返されます。
 
 <!-- Angular -->
 <!-- ComponentStart: Grid, HierarchicalGrid -->
@@ -603,20 +638,28 @@ public matchingRecordsOnlyStrategy = new TreeGridMatchingRecordsOnlyFilteringStr
 <!-- ComponentEnd: TreeGrid -->
 
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 ## スタイル設定
 
 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
 一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
+<!-- WebComponents -->
 ```ts
 <igc-grid class="grid">
 ```
+<!-- end: WebComponents -->
 
 ```razor
 <IgbGrid Class="grid"></IgbGrid>
 ```
+
+<!-- React -->
+```tsx
+<IgrGrid className="grid"></IgrGrid>
+```
+<!-- end: React -->
 
 次に、そのクラスに関連する CSS プロパティを設定します。
 
@@ -634,7 +677,7 @@ public matchingRecordsOnlyStrategy = new TreeGridMatchingRecordsOnlyFilteringStr
 `sample="/{ComponentSample}/filtering-style", height="500", alt="{Platform} {ComponentTitle} フィルタリング スタイルの例"`
 
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- Angular -->
 

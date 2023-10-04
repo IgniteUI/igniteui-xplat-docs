@@ -15,11 +15,11 @@ _language: ja
 さらに、データ更新アクション用の独自のカスタム テンプレートを定義したり、変更をコミット/破棄したりするためのデフォルトの動作をオーバーライドすることもできます。
 
 ## {Platform} {ComponentTitle} セル編集と編集テンプレートの例
-<!-- WebComponents -->
+<!-- WebComponents, React -->
 
 `sample="/{ComponentSample}/editing-columns", height="700", alt="{Platform} {ComponentTitle} セル編集と編集テンプレートの例"`
 
-<!-- end: WebComponents -->
+<!-- end: WebComponents, React -->
 
 <!-- Blazor -->
 
@@ -67,15 +67,26 @@ _language: ja
 プライマリキーが定義されている場合のみ `{ComponentName}` API でもセル値を変更することができます。
 
 <!-- ComponentStart: Grid -->
+<!-- Angular, WebComponents -->
 ```typescript
 public updateCell() {
     this.grid1.updateCell(newValue, rowID, 'ReorderLevel');
 }
 ```
+<!-- end: Angular, WebComponents -->
 
 ```razor
 this.grid.UpdateCell(newValue, rowID, 'ReorderLevel')
 ```
+
+<!-- React -->
+```typescript
+function updateCell() {
+    grid1Ref.current.updateCell(newValue, rowID, 'ReorderLevel');
+}
+```
+<!-- end: React -->
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -102,9 +113,11 @@ this.hierarchicalGrid.UpdateCell(newValue, rowID, 'ReorderLevel')
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-セルを更新するその他の方法として `GridCell` の `Update` メソッドで直接更新する方法があります。
+Another way to update cell is directly through `Update` method of `GridCell`:
 
 <!-- ComponentStart: Grid -->
+
+<!-- Angular, WebComponents -->
 ```typescript
 public updateCell() {
     const cell = this.grid1.getCellByColumn(rowIndex, 'ReorderLevel');
@@ -113,6 +126,7 @@ public updateCell() {
     cell.update(70);
 }
 ```
+<!-- end: Angular, WebComponents -->
 
 ```razor
 private UpdateCell() {
@@ -120,6 +134,17 @@ private UpdateCell() {
     cell.Update(70);
 }
 ```
+<!-- React -->
+```typescript
+function updateCell() {
+    const cell = grid1Ref.current.getCellByColumn(rowIndex, 'ReorderLevel');
+    // You can also get cell by rowID if primary key is defined
+    // cell = grid1Ref.current.getCellByKey(rowID, 'ReorderLevel');
+    cell.update(70);
+}
+```
+<!-- end: React -->
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -237,8 +262,8 @@ public classEditTemplate = (ctx: IgcCellTemplateContext) => {
 
 そしてテンプレートを渡します:
 
-```javascript
-
+```razor
+*** JavaScript の場合***
 igRegisterScript("WebGridCellEditCellTemplate", (ctx) => {
     let cellValues = [];
     let uniqueValues = [];
@@ -256,9 +281,8 @@ igRegisterScript("WebGridCellEditCellTemplate", (ctx) => {
     </igc-select>
 </div>`;
 }, false);
-
-
 ```
+
 上記のサンプルは、こちらで参照できます。 
 
 `sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} セル編集テンプレート サンプル"`
@@ -324,6 +348,63 @@ public webGridCellEditCellTemplate = (ctx: IgcCellTemplateContext) => {
 
 <!-- end: WebComponents -->
 
+<!-- React -->
+
+セルに適用されるカスタム テンプレートを提供する場合は、そのテンプレートをセル自体またはそのヘッダーに渡すことができます。まず、通常どおりに列を作成します。
+
+```tsx
+<IgrColumn
+    field="race"
+    header="Race"
+    dataType="String"
+    editable="true"
+    name="column1"
+    id="column1">
+</IgrColumn>
+```
+
+そして、テンプレートを index.ts ファイルのこの列に渡します。
+
+```typescript
+
+const webGridCellEditCellTemplate = useCallback((ctx: IgrCellTemplateContext) => {
+    const cellValues: any = [];
+    const uniqueValues: any = [];
+    for(const i of (webGridCellEditSampleRoleplay as any)){
+      const field: string = ctx.cell.column.field;
+      if(uniqueValues.indexOf(i[field]) === -1 )
+      {
+        cellValues.push(<IgrSelectItem key={i[field]} value={i[field]}>{i[field]}</IgrSelectItem>);
+        uniqueValues.push(i[field]);
+      }
+    }
+    return (
+      <IgrSelect style={{width: '100%', height: '100%'}} size="large" change={(e: any) => ctx.cell.editValue = e.detail.value}>
+            {cellValues}
+      </IgrSelect>
+    );
+  }, [webGridCellEditSampleRoleplay]);
+
+  useEffect(() => {
+    const column1 = grid1Ref.current.getColumnByName('column1');
+    const column2 = grid1Ref.current.getColumnByName('column2');
+    const column3 = grid1Ref.current.getColumnByName('column3');
+
+    grid1Ref.current.data = webGridCellEditSampleRoleplay;
+    column1.inlineEditorTemplate = webGridCellEditCellTemplate;
+    column2.inlineEditorTemplate = webGridCellEditCellTemplate;
+    column3.inlineEditorTemplate = webGridCellEditCellTemplate;
+      
+    
+  }, [webGridCellEditSampleRoleplay, webGridCellEditCellTemplate]);
+
+```
+上記のサンプルは、さらに参照するためにここにあります。
+
+`sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
+
+<!-- end: React -->
+
 <!-- Angular -->
 
 <!-- 列とそのテンプレートの構成方法の詳細については、[グリッド列構成](../grid/grid.md#angular-grid-列の構成)のドキュメントを参照してください。 -->
@@ -340,6 +421,8 @@ Excel スタイル編集を使用すると、Excel を使用する場合と同�
 このカスタム機能を実装するには、`{ComponentName}` のイベントを使用します。最初にグリッドの keydown イベントにフックし、そこから 2 つの機能を実装できます。
 
 * 常時編集モード
+
+<!-- Angular, WebComponents -->
 
 ```typescript
 public keydownHandler(event) {
@@ -360,9 +443,34 @@ public keydownHandler(event) {
     }
 }
 ```
+<!-- end: Angular, WebComponents -->
+
+<!-- React -->
+
+```typescript
+function keydownHandler(event) {
+  const key = event.keyCode;
+  const grid = grid1Ref.current;
+  const activeElem = grid.navigation.activeNode;
+
+  if ((key >= 48 && key <= 57) ||
+      (key >= 65 && key <= 90) ||
+      (key >= 97 && key <= 122)) {
+        // Number or Alphabet upper case or Alphabet lower case
+        const columnName = grid.getColumnByVisibleIndex(activeElem.column).field;
+        const cell = grid.getCellByColumn(activeElem.row, columnName);
+        if (cell && !grid.crudService.cellInEditMode) {
+            grid.crudService.enterEditMode(cell);
+            cell.editValue = event.key;
+        }
+    }
+}
+```
+<!-- end: React -->
 
 * <kbd>Enter</kbd>/<kbd>Shift+Enter</kbd> ナビゲーション
 
+<!-- Angular, WebComponents -->
 ```typescript
 if (key == 13) {
     let thisRow = activeElem.row;
@@ -380,6 +488,26 @@ if (key == 13) {
     });
 }
 ```
+<!-- end: Angular, WebComponents -->
+
+<!-- React -->
+```typescript
+if (key == 13) {
+    let thisRow = activeElem.row;
+    const column = activeElem.column;
+    const rowInfo = grid.dataView;
+
+    // to find the next eligible cell, we will use a custom method that will check the next suitable index
+    let nextRow = getNextEditableRowIndex(thisRow, rowInfo, event.shiftKey);
+
+    // and then we will navigate to it using the grid's built in method navigateTo
+    grid1Ref.current.navigateTo(nextRow, column, (obj) => {
+        obj.target.activate();
+        grid1Ref.current.clearCellSelection();
+    });
+}
+```
+<!-- end: React -->
 
 次の適格なインデックスを見つけるための重要な部分は以下のようになります。
 
@@ -421,18 +549,30 @@ return dataView.findIndex((rec, index) => index > currentRowIndex && this.isEdit
 `{ComponentName}` コンポーネントは、提供したデータをデータ ソースに追加する `AddRow` メソッドを公開します。
 
 <!-- ComponentStart: Grid -->
+
+<!-- Angular, WebComponents -->
 ```typescript
 // Adding a new record
 // Assuming we have a `getNewRecord` method returning the new row data.
 const record = this.getNewRecord();
 this.grid.addRow(record);
 ```
+<!-- end: Angular, WebComponents -->
 
 ```razor
 //Assuming we have a `GetNewRecord` method returning the new row data.
 const record = this.GetNewRecord();
 this.GridRef.AddRow(record);
 ```
+
+<!-- React -->
+```typescript
+// Adding a new record
+// Assuming we have a `getNewRecord` method returning the new row data.
+const record = getNewRecord();
+grid1Ref.current.addRow(record);
+```
+<!-- end: React -->
 
 <!-- ComponentEnd: Grid -->
 
@@ -470,6 +610,8 @@ public addRow() {
 {ComponentTitle} のデータ更新は、**グリッドで PrimaryKey が定義されている場合のみ** `UpdateRow` と `UpdateCell` メソッドで行うことができます。セルと行の値またはそのいずれかを各 **update** メソッドで直接更新できます。
 
 <!-- ComponentStart: Grid -->
+
+<!-- Angular, WebComponents -->
 ```typescript
 // Updating the whole row
 this.grid.updateRow(newData, this.selectedCell.cellID.rowID);
@@ -484,6 +626,25 @@ this.selectedCell.update(newData);
 const row = this.grid.getRowByKey(rowID);
 row.update(newData);
 ```
+<!-- end: Angular, WebComponents -->
+
+<!-- React -->
+```typescript
+// Updating the whole row
+grid1Ref.current.updateRow(newData, this.selectedCell.cellID.rowID);
+
+// Just a particular cell through the Grid API
+grid1Ref.current.updateCell(newData, this.selectedCell.cellID.rowID, this.selectedCell.column.field);
+
+// Directly using the cell `update` method
+selectedCell.update(newData);
+
+// Directly using the row `update` method
+const row = grid1Ref.current.getRowByKey(rowID);
+row.update(newData);
+```
+<!-- end: React -->
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -525,6 +686,8 @@ row.update(newData);
 `DeleteRow` メソッドは、`PrimaryKey` が定義されている場合に指定した行のみを削除することに注意してください。
 
 <!-- ComponentStart: Grid -->
+
+<!-- Angular, WebComponents -->
 ```typescript
 // Delete row through Grid API
 this.grid.deleteRow(this.selectedCell.cellID.rowID);
@@ -532,6 +695,17 @@ this.grid.deleteRow(this.selectedCell.cellID.rowID);
 const row = this.grid.getRowByIndex(rowIndex);
 row.delete();
 ```
+<!-- end: Angular, WebComponents -->
+
+<!-- React -->
+```typescript
+// Delete row through Grid API
+grid1Ref.current.deleteRow(selectedCell.cellID.rowID);
+// Delete row through row object
+const row = grid1Ref.current.getRowByIndex(rowIndex);
+row.delete();
+```
+<!-- end: React -->
 
 <!-- ComponentEnd: Grid -->
 
@@ -585,6 +759,14 @@ row.delete();
 <{ComponentSelector} CellEditScript="HandleCellEdit" />
 ```
 
+<!-- React -->
+```tsx
+<{ComponentSelector} cellEdit={handleCellEdit}>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
+
 <!-- ComponentStart: Grid -->
 ```ts
 constructor() {
@@ -625,6 +807,8 @@ constructor() {
 `CellEdit` は、セルの**値**がコミットされる直前に発生します。**CellEdit** の定義では、アクションを実行する前に特定の列を確認する必要があります。
 
 <!-- ComponentStart: Grid -->
+
+<!-- Angular, WebComponents -->
 ```typescript
 export class MyGridEventsComponent {
     public handleCellEdit(event: IGridEditEventArgs): void {
@@ -642,6 +826,26 @@ export class MyGridEventsComponent {
     }
 }
 ```
+<!-- end: Angular, WebComponents -->
+
+<!-- React -->
+```typescript
+function handleCellEdit(s: IgrGridBaseDirective, args: IgrGridEditEventArgs): void {
+    const column = args.detail.column;
+
+    if (column.field === 'UnitsOnOrder') {
+        const rowData = args.detail.rowData;
+        if (!rowData) {
+            return;
+        }
+        if (args.detail.newValue > rowData.UnitsInStock) {
+            args.detail.cancel = true;
+            alert("You cannot order more than the units in stock!");  
+        }
+    }
+}
+```
+<!-- end: React -->
 
 ```razor
 *** In JavaScript ***
@@ -738,17 +942,21 @@ export class MyHGridEventsComponent {
 
 ## スタイル設定
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 事前定義されたテーマに加えて、利用可能な [CSS プロパティ](../theming.md)を設定することでグリッドをさらにカスタマイズできます。
 一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
-```ts
+```html
 <igc-grid class="grid">
 ```
 
 ```razor
 <IgbGrid Class="grid"></IgbGrid>
+```
+
+```tsx
+<IgrGrid className="grid"></IgrGrid>
 ```
 
 次に、そのクラスに関連する CSS プロパティを設定します。
@@ -764,7 +972,7 @@ export class MyHGridEventsComponent {
 
 `sample="/{ComponentSample}/cell-editing-style", height="650", alt="{Platform} {ComponentTitle} セル編集のスタイル設定の例"`
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- Angular -->
 
@@ -890,7 +1098,7 @@ $custom-grid-theme: grid-theme(
 
 <!-- end: Angular -->
 
-<!-- Blazor, WebComponents -->
+<!-- Blazor, WebComponents, React -->
 
 <!-- ComponentStart:  Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
@@ -904,4 +1112,4 @@ $custom-grid-theme: grid-theme(
 * [検索](search.md)
 <!-- ComponentEnd:  Grid -->
 
-<!-- end: Blazor, WebComponents -->
+<!-- end: Blazor, WebComponents, React -->

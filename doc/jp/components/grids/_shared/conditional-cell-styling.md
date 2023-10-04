@@ -46,14 +46,15 @@ _language: ja
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-
-    this._bind = () => {
-        grid.rowClasses = this.rowClasses;
-    }
-    this._bind();
+    grid.rowClasses = this.rowClasses;
 }
 ```
 <!-- end: WebComponents -->
+
+```tsx
+<{ComponentSelector} id="grid" height="600px" width="100%" rowClasses={rowClasses}>
+</{ComponentSelector}>
+```
 
 `RowClasses` 入力は、キーと値のペアを含むオブジェクト リテラルを受け取ります。キーは CSS クラスの名前です。値はブール値を返すコールバック関数またはブール値です。
 
@@ -86,12 +87,17 @@ igRegisterScript("RowClassesHandler", () => {
     };
 }, true);
 ```
-
+<!-- WebComponents -->
 ```ts
-public rowClasses(args: any) {
-    return {
-            activeRow: (row) => row.index === 0
-        };
+public rowClasses = {
+    activeRow: (row) => row.index === 0
+}
+```
+<!-- end: WebComponents -->
+
+```tsx
+const rowClasses = {
+    activeRow: (row) => row.index === 0
 }
 ```
 
@@ -137,6 +143,14 @@ public rowStyles = {
 };
 ```
 
+```tsx
+const rowStyles = {
+    'background': (row: IgrRowType) => (+row.data['Change'] < 0 && +row.data['AnnualChange'] < 0) ? '#FF000088' : '#00000000',
+    'border': (row: IgrRowType) => (+row.data['Change'] < 0 && +row.data['AnnualChange'] < 0) ? '2px solid' : '1px solid',
+    'border-color': (row: IgrRowType) => (+row.data['Change'] < 0 && +row.data['AnnualChange'] < 0) ? '#FF000099' : '#E9E9E9'
+};
+```
+
 ```razor
 igRegisterScript("WebGridRowStylesHandler", () => {
     return {
@@ -158,6 +172,11 @@ igRegisterScript("WebGridRowStylesHandler", () => {
 </IgbGrid>
 ```
 
+```tsx
+<IgrGrid id="grid" height="600px" width="100%" rowStyles={rowStyles}>
+<IgrGrid>
+```
+
 ```html
 <igc-grid id="grid1" height="500px" width="100%"
         auto-generate="false" allow-filtering="true">
@@ -166,11 +185,7 @@ igRegisterScript("WebGridRowStylesHandler", () => {
 ```ts
 constructor() {
     var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
-
-    this._bind = () => {
-        grid1.rowStyles = this.rowStyles;
-    }
-    this._bind();
+    grid1.rowStyles = this.rowStyles;
 }
 ```
 
@@ -213,11 +228,7 @@ Add treegrid styles
 ```ts
 constructor() {
     var treeGrid = this.treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
-
-    this._bind = () => {
-        treeGrid.rowStyles = this.rowStyles;
-    }
-    this._bind();
+    treeGrid.rowStyles = this.rowStyles;
 }
 ```
 <!-- end: Angular -->
@@ -268,12 +279,8 @@ Add Hierarchical markup
 constructor() {
     var hierarchicalGrid = this.hierarchicalGrid = document.getElementById('hierarchicalGrid') as IgcHierarchicalGridComponent;
     var rowIsland1 = this.rowIsland1 = document.getElementById('rowIsland1') as IgcRowIslandComponent;
-
-    this._bind = () => {
-        hierarchicalGrid.rowStyles = this.rowStyles;
-        rowIsland1.rowStyles = this.childRowStyles;
-    }
-    this._bind();
+    hierarchicalGrid.rowStyles = this.rowStyles;
+    rowIsland1.rowStyles = this.childRowStyles;
 }
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -297,27 +304,26 @@ constructor() {
 
 <!-- ComponentStart: Grid -->
 
-<!-- Angular -->
 ```html
 <igx-column field="BeatsPerMinute" dataType="number" [cellClasses]="beatsPerMinuteClasses"></igx-column>
 ```
+
 ```html
 <igc-column id="beatsPerMin" field="BeatsPerMinute" data-type="Number"></igc-column>
 ```
 ```ts
 constructor() {
     var beatsPerMin = this.beatsPerMin = document.getElementById('beatsPerMin') as IgcColumnComponent;
-
-    this._bind = () => {
-        beatsPerMin.cellClasses = this.beatsPerMinuteClasses;
-    }
-    this._bind();
+    beatsPerMin.cellClasses = this.beatsPerMinuteClasses;
 }
 ```
-<!-- end: Angular -->
 
 ```razor
 <IgbColumn Field="BeatsPerMinute" CellClassesScript="CellClassesHandler">
+```
+
+```tsx
+<IgrColumn field="BeatsPerMinute" dataType="Number" cellClasses={beatsPerMinuteClasses}></IgrColumn>
 ```
 
 <!-- ComponentEnd: Grid -->
@@ -339,12 +345,8 @@ constructor() {
 ```ts
 constructor() {
     var UnitPrice = this.UnitPrice = document.getElementById('UnitPrice') as IgcColumnComponent;
-
-    this._bind = () => {
-        UnitPrice.cellClasses = this.priceClasses;
-        UnitPrice.bodyTemplate = this.unitPriceTemplate;
-    }
-    this._bind();
+    UnitPrice.cellClasses = this.priceClasses;
+    UnitPrice.bodyTemplate = this.unitPriceTemplate;
 }
 public unitPriceTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
@@ -373,7 +375,7 @@ add example
 `CellClasses` 入力は、キーと値のペアを含むオブジェクト リテラルを受け取ります。キーは CSS クラスの名前です。値はブール値を返すコールバック関数またはブール値です。
 
 <!-- ComponentStart: Grid -->
-
+<!-- Angular, WebComponents -->
 ```typescript
 
 private upFontCondition = (rowData: any, columnKey: any): boolean => {
@@ -387,6 +389,22 @@ private downFontCondition = (rowData: any, columnKey: any): boolean => {
 public beatsPerMinuteClasses = {
     downFont: this.downFontCondition,
     upFont: this.upFontCondition
+};
+```
+<!-- end: Angular, WebComponents -->
+
+```tsx
+function upFontCondition(rowData: any, columnKey: any): boolean {
+    return rowData[columnKey] > 95;
+}
+
+function downFontCondition(rowData: any, columnKey: any): boolean {
+    return rowData[columnKey] <= 95;
+}
+
+const beatsPerMinuteClasses = {
+    downFont: downFontCondition,
+    upFont: upFontCondition
 };
 ```
 
@@ -536,22 +554,36 @@ igRegisterScript("WebGridCellStylesHandler", () => {
     };
 }, true);
 ```
-
+<!-- WebComponents -->
 ```ts
-    public WebGridCellStylesHandler(): any {
-        return {
-            background: (rowData, columnKey, cellValue, rowIndex) => rowIndex % 2 === 0 ? "#EFF4FD" : null,
-            color: (rowData, columnKey, cellValue, rowIndex) => {
-                if (columnKey === "Position") {
-                    switch (cellValue) {
-                        case "up": return "#28a745";
-                        case "down": return "#dc3545";
-                        case "current": return "#17a2b8"
-                    }
-                }
+public webGridCellStylesHandler = {
+    background: (rowData, columnKey, cellValue, rowIndex) => rowIndex % 2 === 0 ? "#EFF4FD" : null,
+    color: (rowData, columnKey, cellValue, rowIndex) => {
+        if (columnKey === "Position") {
+            switch (cellValue) {
+                case "up": return "#28a745";
+                case "down": return "#dc3545";
+                case "current": return "#17a2b8"
             }
-        };
+        }
     }
+}
+```
+<!-- end:WebComponents -->
+
+```tsx
+const webGridCellStyles = {
+    background: (rowData, columnKey, cellValue, rowIndex) => rowIndex % 2 === 0 ? "#EFF4FD" : null,
+    color: (rowData, columnKey, cellValue, rowIndex) => {
+        if (columnKey === "Position") {
+            switch (cellValue) {
+                case "up": return "#28a745";
+                case "down": return "#dc3545";
+                case "current": return "#17a2b8"
+            }
+        }
+    }
+}
 ```
 
 <!-- Angular -->
@@ -623,15 +655,28 @@ public updateCSS(css: string) {
 ```
 <!-- end: Angular -->
 
-<!-- Blazor -->
 
 ```razor
 <IgbColumn CellStylesScript="WebGridCellStylesHandler">
 </IgbColumn>
 ```
+<!-- WebComponents -->
+```html
+<igc-column id="col1">
+</igc-column>
+```
 
+```ts
+constructor() {
+    var col1 = document.getElementById('col1') as IgcColumnComponent;
+    col1.cellStyles = this.webGridCellStylesHandler;
+}
+```
+<!-- end:WebComponents -->
 
-<!-- end: Blazor -->
+```tsx
+<IgrColumn cellStyles={webGridCellStyles}></IgrColumn>
+```
 
 ### デモ
 
@@ -680,26 +725,41 @@ constructor() {
     var Col1 = this.Col1 = document.getElementById('Col1') as IgcColumnComponent;
     var Col2 = this.Col2 = document.getElementById('Col2') as IgcColumnComponent;
     var Col3 = this.Col3 = document.getElementById('Col3') as IgcColumnComponent;
-
-    this._bind = () => {
-        grid.data = this.data;
-        grid.onCellEdit = this.editDone;
-        Col1.cellClasses = this.backgroundClasses;
-        Col2.cellClasses = this.backgroundClasses;
-        Col3.cellClasses = this.backgroundClasses;
-    }
-    this._bind();
+    grid.data = this.data;
+    grid.onCellEdit = this.editDone;
+    Col1.cellClasses = this.backgroundClasses;
+    Col2.cellClasses = this.backgroundClasses;
+    Col3.cellClasses = this.backgroundClasses;
 }
 ```
 
 <!-- end:Angular, WebComponents -->
 
-### API リファレンス
+
+```tsx
+let backgroundClasses = {
+    myBackground: (rowData: any, columnKey: string) => {
+        return rowData.Col2 < 10;
+    }
+};
+
+function editDone(grid, evt) {
+    backgroundClasses = {...backgroundClasses};
+}
+
+<IgrGrid id="grid1" height="500px" width="100%" onCellEdit={editDone}>
+  <IgrColumn id="Col1" field="Col1" dataType="number" cellClasses={backgroundClasses}></IgrColumn>
+  <IgrColumn id="Col2" field="Col2" dataType="number" editable="true" cellClasses={backgroundClasses}></IgrColumn>
+  <IgrColumn id="Col3" field="Col3" header="Col3" dataType="string" cellClasses={backgroundClasses}></IgrColumn>
+</IgrGrid>
+```
+
+## API リファレンス
 
 * `Column`
 * `{ComponentName}`
 
-### その他のリソース
+## その他のリソース
 
 <!-- ComponentStart:  Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
