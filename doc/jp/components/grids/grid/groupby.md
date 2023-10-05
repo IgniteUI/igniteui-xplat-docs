@@ -218,7 +218,7 @@ gridRef.current.groupBy([{ fieldName: 'ProductName', dir: SortingDirection.Desc,
 
 ### 展開 / 縮小 API
 
-グループ式の他にグループ行の展開も制御できます。`Grid` コンポーネント `GroupingExpansionState` の別のプロパティに保存されます。これらは、`GroupByExpandState` のコレクションである、`Grid` コンポーネントの別のプロパティ `GroupingExpansionState` に保存されます。各展開状態は、作成されたフィールド名とグループ化の各レベルで表す値によって一意に定義されます。つまり、識別子は `GroupByKey` の階層配列です。
+グループ式の他にグループ行の展開も制御できます。これらは、`GroupByExpandState` のコレクションである、`Grid` コンポーネントの別のプロパティ `GroupingExpansionState` に保存されます。各展開状態は、作成されたフィールド名とグループ化の各レベルで表す値によって一意に定義されます。つまり、識別子は `GroupByKey` の階層配列です。
 
 `GroupingExpressions` で `IGroupByExpandState` のリストを直接 `GroupingExpansionState` に設定すると展開が変更されます。また、`Grid` は、グループ レコード インスタンスまたは行の `expanded` プロパティによってグループを切り替えるメソッド `toggleGroup` を公開します。
 
@@ -738,7 +738,7 @@ $custom-theme: grid-theme(
 
 <!-- NOTE this sample is differed -->
 
-`sample="/{GridSample}/groupby-styling", height="570", alt="{Platform} {GridTitle} groupby styling"`
+`sample="/{GridSample}/groupby-styling", height="570", alt="{Platform} {GridTitle} グループ化のスタイル設定"`
 
 
 > [!Note]

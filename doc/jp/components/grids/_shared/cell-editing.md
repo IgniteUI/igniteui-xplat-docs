@@ -401,7 +401,7 @@ const webGridCellEditCellTemplate = useCallback((ctx: IgrCellTemplateContext) =>
 ```
 上記のサンプルは、さらに参照するためにここにあります。
 
-`sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
+`sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} セル編集テンプレート サンプル"`
 
 <!-- end: React -->
 
@@ -859,7 +859,7 @@ igRegisterScript("HandleCellEdit", (ev) => {
     }
 }, false);
 ```
-**Units on Order (注文済み)** 列の下のセルに入力された値が使用可能量 (**Units in Stock、在庫数** の値) よりも大きい場合、編集はキャンセルされ、ユーザーにキャンセルの警告が表示されます。
+**Units On Order (注文済み)** 列の下のセルに入力された値が使用可能量 (**Units in Stock、在庫数** の値) よりも大きい場合、編集はキャンセルされ、ユーザーにキャンセルの警告が表示されます。
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -899,7 +899,7 @@ igRegisterScript("HandleCellEdit", (ev) => {
 }, false);
 ```
 
-**Units on Order (注文済み)** 列の下のセルに入力された値が使用可能量 (**Units in Stock、在庫数** の値) よりも大きい場合、編集はキャンセルされ、ユーザーにキャンセルの警告が表示されます。
+**Units On Order (注文済み)** 列の下のセルに入力された値が使用可能量 (**Units in Stock、在庫数** の値) よりも大きい場合、編集はキャンセルされ、ユーザーにキャンセルの警告が表示されます。
 
 <!-- Angular -->
 

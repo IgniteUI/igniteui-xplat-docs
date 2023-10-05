@@ -372,9 +372,9 @@ this.grid.filteringLogic = FilteringLogic.OR;
 ```
 <!-- end: React -->
 
-`AND` のデフォルト値は現在適用されているすべてのフィルター式と一致する行のみを返します。上記の例は、「ProductName」セル値が 「myproduct」を含み、「Price」セル値が 55 より大きい場合に行が返されます。
+`AND` のデフォルト値は現在適用されているすべてのフィルター式と一致する行のみを返します。上記の例は、「ProductName」 セル値が 「myproduct」 を含み、「Price」 セル値が 55 より大きい場合に行が返されます。
 
-`OR` に設定される場合、「ProductName」セル値が「myproduct」を含むか、「Price」セル値が 55 より大きい場合に行が返されます。
+`OR` に設定される場合、「ProductName」 セル値が 「myproduct」 を含むか、「Price」 セル値が 55 より大きい場合に行が返されます。
 
 <!-- Angular -->
 <!-- ComponentStart: Grid, HierarchicalGrid -->

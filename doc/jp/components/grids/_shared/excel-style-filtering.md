@@ -174,7 +174,7 @@ Add tree grid snippet
 </igc-tree-grid>
 ```
 
-以下のサンプルでは、「Product Name」列と「Discontinued」列で 3 つの機能がすべて有効化され、「Unit Price」で 3 つすべてが無効化され、「Added Date」でピン固定と非表示のみが設定されています。
+以下のサンプルでは、「Product Name」 列と 「Discontinued」 列で 3 つの機能がすべて有効化され、「Unit Price」 で 3 つすべてが無効化され、「Added Date」 でピン固定と非表示のみが設定されています。
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -1019,7 +1019,7 @@ $custom-drop-down: drop-down-theme(
 
 ### デモ
 
-`sample="/{ComponentSample}/excel-style-filtering-style", height="950", alt="{Platform} {ComponentTitle} excel style filtering style"`
+`sample="/{ComponentSample}/excel-style-filtering-style", height="950", alt="{Platform} {ComponentTitle} Excel スタイルのフィルタリング スタイル"`
 
 
 > [!Note]

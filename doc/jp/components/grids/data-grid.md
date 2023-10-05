@@ -1246,7 +1246,7 @@ public class AminoWeight
 
 <!-- NOTE this sample is differed -->
 
-`sample="/{GridSample}/binding-nested-data-2", height="460", alt="{Platform} {GridTitle} binding nested data 2"`
+`sample="/{GridSample}/binding-nested-data-2", height="460", alt="{Platform} {GridTitle} ネストされたデータのバインディング 2"`
 
 <!-- end: Angular -->
 
@@ -1610,7 +1610,7 @@ igRegisterScript("WebGridNestedDataCellTemplate", (ctx) => {
 以下は、この設定の結果です。
 
 
-`sample="/{GridSample}/binding-nested-data-1", height="460", alt="{Platform} {GridTitle} binding nested data 1"`
+`sample="/{GridSample}/binding-nested-data-1", height="460", alt="{Platform} {GridTitle} ネストされたデータのバインディング 1"`
 
 
 ### フラット データの操作の概要

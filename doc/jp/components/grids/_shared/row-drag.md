@@ -468,6 +468,8 @@ enum DragIcon {
 
 グリッドの行ドラッグ イベントを使用して、ドラッグよる行の並べ替えるが可能なグリッドを作成できます。
 
+<!-- WebComponents -->
+
 ```html
 <igc-grid id="grid" row-draggable="true" primary-key="ID">
 </igc-grid>

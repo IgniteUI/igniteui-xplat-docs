@@ -770,7 +770,7 @@ function headSelectorTemplate(ctx: IgcHeadSelectorTemplateContext) {
 
 * `{ComponentName}`
 * `{ComponentName}Row`
-* `{ComponentName}Cell`
+* `Cell`
 
 ## その他のリソース
 
