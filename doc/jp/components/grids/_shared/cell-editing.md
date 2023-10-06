@@ -113,7 +113,7 @@ this.hierarchicalGrid.UpdateCell(newValue, rowID, 'ReorderLevel')
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-Another way to update cell is directly through `Update` method of `GridCell`:
+セルを更新するその他の方法として `GridCell` の `Update` メソッドで直接更新する方法があります。
 
 <!-- ComponentStart: Grid -->
 
