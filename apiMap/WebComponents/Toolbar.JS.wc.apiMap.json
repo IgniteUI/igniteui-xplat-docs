@@ -1,28 +1,30 @@
-{"extraFiles":["igc-data-grid-toolbar-module.ts"],
+{
+  "extraFiles": ["igc-data-grid-toolbar-module.ts"],
   "types":[
-  { "originalName":"DataGridToolbar",
-    "names":[{"platform":"WebComponents","fileName":"igc-data-grid-toolbar-component.ts","mappedName":"IgcDataGridToolbarComponent"}],
+  {
+    "originalName": "DataGridToolbar",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-grids",
+    "names":[{"platform": "WebComponents","fileName": "igc-data-grid-toolbar-component.ts","mappedName": "IgcDataGridToolbarComponent"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"IgcDataGridComponent","mappedName":"targetGrid"}],"originalName":"TargetGrid"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"toolbarTitle"}],"originalName":"ToolbarTitle"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"toolbarTitleColor"}],"originalName":"ToolbarTitleColor"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"backgroundColor"}],"originalName":"BackgroundColor"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"dialogBackgroundColor"}],"originalName":"DialogBackgroundColor"},
-    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"columnChooser"}],"originalName":"ColumnChooser"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"columnChooserText"}],"originalName":"ColumnChooserText"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"columnChooserTitle"}],"originalName":"ColumnChooserTitle"},
-    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"columnPinning"}],"originalName":"ColumnPinning"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"columnPinningText"}],"originalName":"ColumnPinningText"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"columnPinningTitle"}],"originalName":"ColumnPinningTitle"},
-    { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"borderWidth.bottom"},
-    { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"borderWidth.left"},
-    { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"borderWidth.right"},
-    { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"borderWidth.top"},
-    { "names":[{"platform":"WebComponents","mappedType":"ControlDisplayDensity","mappedName":"density"}],"originalName":"Density"},
-    { "names":[{"platform":"WebComponents","mappedType":"BaseControlTheme","mappedName":"baseTheme"}],"originalName":"BaseTheme"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"exportVisualModel"}],"originalName":"ExportVisualModel"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"exportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "backgroundColor"}], "originalName": "BackgroundColor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "BaseControlTheme","mappedName": "baseTheme"}], "originalName": "BaseTheme"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "columnChooser"}], "originalName": "ColumnChooser"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "columnChooserText"}], "originalName": "ColumnChooserText"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "columnChooserTitle"}], "originalName": "ColumnChooserTitle"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "columnPinning"}], "originalName": "ColumnPinning"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "columnPinningText"}], "originalName": "ColumnPinningText"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "columnPinningTitle"}], "originalName": "ColumnPinningTitle"},
+      {"names":[{"platform": "WebComponents", "mappedType": "ControlDisplayDensity","mappedName": "density"}], "originalName": "Density"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "dialogBackgroundColor"}], "originalName": "DialogBackgroundColor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "exportSerializedVisualModel"}], "originalName": "ExportSerializedVisualModel"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "exportVisualModel"}], "originalName": "ExportVisualModel"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcDataGridComponent","mappedName": "targetGrid"}], "originalName": "TargetGrid"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "toolbarTitle"}], "originalName": "ToolbarTitle"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "toolbarTitleColor"}], "originalName": "ToolbarTitleColor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "bottom"}], "originalName": "borderWidth.bottom"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "left"}], "originalName": "borderWidth.left"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "right"}], "originalName": "borderWidth.right"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "top"}], "originalName": "borderWidth.top"} ]
+  }]
+}

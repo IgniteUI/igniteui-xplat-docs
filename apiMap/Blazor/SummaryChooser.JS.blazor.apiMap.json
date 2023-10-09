@@ -1,6 +1,11 @@
-{"types":[
-  { "originalName":"SummaryChangedEventArgs",
-    "names":[{"platform":"Blazor","fileName":"SummaryChangedEventArgs.cs","mappedName":"IgbSummaryChangedEventArgs"}],
+{  "types":[
+  {
+    "originalName": "SummaryChangedEventArgs",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "packageName": "igniteui-grids",
+    "names":[{"platform": "Blazor","fileName": "SummaryChangedEventArgs.cs","mappedName": "IgbSummaryChangedEventArgs"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ID"}],"originalName":"ID"},
-    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsEnabled"}],"originalName":"IsEnabled"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"}]}
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ID"}], "originalName": "ID"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsEnabled"}], "originalName": "IsEnabled"} ]
+  }]
+}
