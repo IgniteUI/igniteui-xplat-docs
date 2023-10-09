@@ -1,14 +1,21 @@
-{"types":[
-  { "originalName":"CategorySeries",
-    "names":[{"platform":"Blazor","fileName":"CategorySeries.cs","mappedName":"IgbCategorySeries"}],
+{  "types":[
+  {
+    "originalName": "CategorySeries",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "MarkerSeries",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "CategorySeries.cs","mappedName": "IgbCategorySeries"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsCustomCategoryStyleAllowed"}],"originalName":"IsCustomCategoryStyleAllowed"},
-    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsCustomCategoryMarkerStyleAllowed"}],"originalName":"IsCustomCategoryMarkerStyleAllowed"},
-    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"UseHighMarkerFidelity"}],"originalName":"UseHighMarkerFidelity"},
-    { "names":[{"platform":"Blazor","mappedType":"CategoryTransitionInMode","mappedName":"TransitionInMode"}],"originalName":"TransitionInMode"},
-    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsTransitionInEnabled"}],"originalName":"IsTransitionInEnabled"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetOffsetValue"}],"originalName":"GetOffsetValue"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetCategoryWidth"}],"originalName":"GetCategoryWidth"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItem"}],"originalName":"GetItem"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemIndex"}],"originalName":"GetItemIndex"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetExactItemIndex"}],"originalName":"GetExactItemIndex"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetCategoryWidth"}], "originalName": "GetCategoryWidth"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetExactItemIndex"}], "originalName": "GetExactItemIndex"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItem"}], "originalName": "GetItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemIndex"}], "originalName": "GetItemIndex"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetOffsetValue"}], "originalName": "GetOffsetValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsCustomCategoryMarkerStyleAllowed"}], "originalName": "IsCustomCategoryMarkerStyleAllowed"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsCustomCategoryStyleAllowed"}], "originalName": "IsCustomCategoryStyleAllowed"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsTransitionInEnabled"}], "originalName": "IsTransitionInEnabled"},
+      {"names":[{"platform": "Blazor", "mappedType": "CategoryTransitionInMode","mappedName": "TransitionInMode"}], "originalName": "TransitionInMode"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "UseHighMarkerFidelity"}], "originalName": "UseHighMarkerFidelity"} ]
+  }]
+}

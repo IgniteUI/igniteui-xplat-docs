@@ -1,166 +1,413 @@
-{"types":[
-  { "originalName":"AbsoluteVolumeOscillatorIndicator",
-    "names":[{"platform":"Blazor","fileName":"AbsoluteVolumeOscillatorIndicator.cs","mappedName":"IgbAbsoluteVolumeOscillatorIndicator"}],
+{  "types":[
+  {
+    "originalName": "AbsoluteVolumeOscillatorIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "AbsoluteVolumeOscillatorIndicator.cs","mappedName": "IgbAbsoluteVolumeOscillatorIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"ShortPeriod"}],"originalName":"ShortPeriod"},
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"LongPeriod"}],"originalName":"LongPeriod"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"AccumulationDistributionIndicator",
-    "names":[{"platform":"Blazor","fileName":"AccumulationDistributionIndicator.cs","mappedName":"IgbAccumulationDistributionIndicator"}],"members":[],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"AverageDirectionalIndexIndicator",
-    "names":[{"platform":"Blazor","fileName":"AverageDirectionalIndexIndicator.cs","mappedName":"IgbAverageDirectionalIndexIndicator"}],
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "LongPeriod"}], "originalName": "LongPeriod"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "ShortPeriod"}], "originalName": "ShortPeriod"} ]
+  },
+  {
+    "originalName": "AccumulationDistributionIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "AccumulationDistributionIndicator.cs","mappedName": "IgbAccumulationDistributionIndicator"}]
+  },
+  {
+    "originalName": "AverageDirectionalIndexIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "AverageDirectionalIndexIndicator.cs","mappedName": "IgbAverageDirectionalIndexIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"AverageTrueRangeIndicator",
-    "names":[{"platform":"Blazor","fileName":"AverageTrueRangeIndicator.cs","mappedName":"IgbAverageTrueRangeIndicator"}],
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Period"}], "originalName": "Period"} ]
+  },
+  {
+    "originalName": "AverageTrueRangeIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "AverageTrueRangeIndicator.cs","mappedName": "IgbAverageTrueRangeIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"BollingerBandsOverlay",
-    "names":[{"platform":"Blazor","fileName":"BollingerBandsOverlay.cs","mappedName":"IgbBollingerBandsOverlay"}],
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Period"}], "originalName": "Period"} ]
+  },
+  {
+    "originalName": "BollingerBandsOverlay",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "FinancialOverlay",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "BollingerBandsOverlay.cs","mappedName": "IgbBollingerBandsOverlay"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Period"}],"originalName":"Period"},
-    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Multiplier"}],"originalName":"Multiplier"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetSeriesValue"}],"originalName":"GetSeriesValue"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetPreviousOrExactIndex"}],"originalName":"GetPreviousOrExactIndex"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetNextOrExactIndex"}],"originalName":"GetNextOrExactIndex"}],"originalBaseTypeName":"FinancialOverlay","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"BollingerBandWidthIndicator",
-    "names":[{"platform":"Blazor","fileName":"BollingerBandWidthIndicator.cs","mappedName":"IgbBollingerBandWidthIndicator"}],
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetNextOrExactIndex"}], "originalName": "GetNextOrExactIndex"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetPreviousOrExactIndex"}], "originalName": "GetPreviousOrExactIndex"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValue"}], "originalName": "GetSeriesValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Multiplier"}], "originalName": "Multiplier"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Period"}], "originalName": "Period"} ]
+  },
+  {
+    "originalName": "BollingerBandWidthIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "BollingerBandWidthIndicator.cs","mappedName": "IgbBollingerBandWidthIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Period"}],"originalName":"Period"},
-    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Multiplier"}],"originalName":"Multiplier"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"ChaikinOscillatorIndicator",
-    "names":[{"platform":"Blazor","fileName":"ChaikinOscillatorIndicator.cs","mappedName":"IgbChaikinOscillatorIndicator"}],
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Multiplier"}], "originalName": "Multiplier"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Period"}], "originalName": "Period"} ]
+  },
+  {
+    "originalName": "ChaikinOscillatorIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "ChaikinOscillatorIndicator.cs","mappedName": "IgbChaikinOscillatorIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"ShortPeriod"}],"originalName":"ShortPeriod"},
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"LongPeriod"}],"originalName":"LongPeriod"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"ChaikinVolatilityIndicator",
-    "names":[{"platform":"Blazor","fileName":"ChaikinVolatilityIndicator.cs","mappedName":"IgbChaikinVolatilityIndicator"}],
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "LongPeriod"}], "originalName": "LongPeriod"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "ShortPeriod"}], "originalName": "ShortPeriod"} ]
+  },
+  {
+    "originalName": "ChaikinVolatilityIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "ChaikinVolatilityIndicator.cs","mappedName": "IgbChaikinVolatilityIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"CommodityChannelIndexIndicator",
-    "names":[{"platform":"Blazor","fileName":"CommodityChannelIndexIndicator.cs","mappedName":"IgbCommodityChannelIndexIndicator"}],
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Period"}], "originalName": "Period"} ]
+  },
+  {
+    "originalName": "CommodityChannelIndexIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "CommodityChannelIndexIndicator.cs","mappedName": "IgbCommodityChannelIndexIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"CustomIndicator",
-    "names":[{"platform":"Blazor","fileName":"CustomIndicator.cs","mappedName":"IgbCustomIndicator"}],"members":[],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"DetrendedPriceOscillatorIndicator",
-    "names":[{"platform":"Blazor","fileName":"DetrendedPriceOscillatorIndicator.cs","mappedName":"IgbDetrendedPriceOscillatorIndicator"}],
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Period"}], "originalName": "Period"} ]
+  },
+  {
+    "originalName": "CustomIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "CustomIndicator.cs","mappedName": "IgbCustomIndicator"}]
+  },
+  {
+    "originalName": "DetrendedPriceOscillatorIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "DetrendedPriceOscillatorIndicator.cs","mappedName": "IgbDetrendedPriceOscillatorIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"EaseOfMovementIndicator",
-    "names":[{"platform":"Blazor","fileName":"EaseOfMovementIndicator.cs","mappedName":"IgbEaseOfMovementIndicator"}],"members":[],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"FastStochasticOscillatorIndicator",
-    "names":[{"platform":"Blazor","fileName":"FastStochasticOscillatorIndicator.cs","mappedName":"IgbFastStochasticOscillatorIndicator"}],
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Period"}], "originalName": "Period"} ]
+  },
+  {
+    "originalName": "EaseOfMovementIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "EaseOfMovementIndicator.cs","mappedName": "IgbEaseOfMovementIndicator"}]
+  },
+  {
+    "originalName": "FastStochasticOscillatorIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "FastStochasticOscillatorIndicator.cs","mappedName": "IgbFastStochasticOscillatorIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"FinancialIndicator",
-    "names":[{"platform":"Blazor","fileName":"FinancialIndicator.cs","mappedName":"IgbFinancialIndicator"}],
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Period"}], "originalName": "Period"} ]
+  },
+  {
+    "originalName": "FinancialIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "FinancialSeries",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "FinancialIndicator.cs","mappedName": "IgbFinancialIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"IndicatorDisplayType","mappedName":"DisplayType"}],"originalName":"DisplayType"},
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"IgnoreFirst"}],"originalName":"IgnoreFirst"},
-    { "names":[{"platform":"Blazor","mappedType":"TrendLineType","mappedName":"TrendLineType"}],"originalName":"TrendLineType"},
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TrendLineBrush"}],"originalName":"TrendLineBrush"},
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ActualTrendLineBrush"}],"originalName":"ActualTrendLineBrush"},
-    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TrendLineThickness"}],"originalName":"TrendLineThickness"},
-    { "names":[{"platform":"Blazor","mappedType":"double[]","mappedName":"TrendLineDashArray"}],"originalName":"TrendLineDashArray"},
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"TrendLinePeriod"}],"originalName":"TrendLinePeriod"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetSeriesValueBoundingBox"}],"originalName":"GetSeriesValueBoundingBox"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetSeriesValue"}],"originalName":"GetSeriesValue"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetPreviousOrExactIndex"}],"originalName":"GetPreviousOrExactIndex"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetNextOrExactIndex"}],"originalName":"GetNextOrExactIndex"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ScrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"FinancialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"FinancialOverlay",
-    "names":[{"platform":"Blazor","fileName":"FinancialOverlay.cs","mappedName":"IgbFinancialOverlay"}],
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualTrendLineBrush"}], "originalName": "ActualTrendLineBrush"},
+      {"names":[{"platform": "Blazor", "mappedType": "IndicatorDisplayType","mappedName": "DisplayType"}], "originalName": "DisplayType"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetNextOrExactIndex"}], "originalName": "GetNextOrExactIndex"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetPreviousOrExactIndex"}], "originalName": "GetPreviousOrExactIndex"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValue"}], "originalName": "GetSeriesValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValueBoundingBox"}], "originalName": "GetSeriesValueBoundingBox"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "IgnoreFirst"}], "originalName": "IgnoreFirst"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ScrollIntoView"}], "originalName": "ScrollIntoView"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "TrendLineBrush"}], "originalName": "TrendLineBrush"},
+      {"names":[{"platform": "Blazor", "mappedType": "double[]","mappedName": "TrendLineDashArray"}], "originalName": "TrendLineDashArray"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "TrendLinePeriod"}], "originalName": "TrendLinePeriod"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "TrendLineThickness"}], "originalName": "TrendLineThickness"},
+      {"names":[{"platform": "Blazor", "mappedType": "TrendLineType","mappedName": "TrendLineType"}], "originalName": "TrendLineType"} ]
+  },
+  {
+    "originalName": "FinancialOverlay",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "FinancialSeries",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "FinancialOverlay.cs","mappedName": "IgbFinancialOverlay"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"IgnoreFirst"}],"originalName":"IgnoreFirst"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ScrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"FinancialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"ForceIndexIndicator",
-    "names":[{"platform":"Blazor","fileName":"ForceIndexIndicator.cs","mappedName":"IgbForceIndexIndicator"}],
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "IgnoreFirst"}], "originalName": "IgnoreFirst"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ScrollIntoView"}], "originalName": "ScrollIntoView"} ]
+  },
+  {
+    "originalName": "ForceIndexIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "ForceIndexIndicator.cs","mappedName": "IgbForceIndexIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"FullStochasticOscillatorIndicator",
-    "names":[{"platform":"Blazor","fileName":"FullStochasticOscillatorIndicator.cs","mappedName":"IgbFullStochasticOscillatorIndicator"}],
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Period"}], "originalName": "Period"} ]
+  },
+  {
+    "originalName": "FullStochasticOscillatorIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "FullStochasticOscillatorIndicator.cs","mappedName": "IgbFullStochasticOscillatorIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Period"}],"originalName":"Period"},
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"SmoothingPeriod"}],"originalName":"SmoothingPeriod"},
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"TriggerPeriod"}],"originalName":"TriggerPeriod"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"ItemwiseStrategyBasedIndicator",
-    "names":[{"platform":"Blazor","fileName":"ItemwiseStrategyBasedIndicator.cs","mappedName":"IgbItemwiseStrategyBasedIndicator"}],
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Period"}], "originalName": "Period"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "SmoothingPeriod"}], "originalName": "SmoothingPeriod"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "TriggerPeriod"}], "originalName": "TriggerPeriod"} ]
+  },
+  {
+    "originalName": "ItemwiseStrategyBasedIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "ItemwiseStrategyBasedIndicator.cs","mappedName": "IgbItemwiseStrategyBasedIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ResolveIsItemwise"}],"originalName":"ResolveIsItemwise"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"MarketFacilitationIndexIndicator",
-    "names":[{"platform":"Blazor","fileName":"MarketFacilitationIndexIndicator.cs","mappedName":"IgbMarketFacilitationIndexIndicator"}],"members":[],"originalBaseTypeName":"ItemwiseStrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"MassIndexIndicator",
-    "names":[{"platform":"Blazor","fileName":"MassIndexIndicator.cs","mappedName":"IgbMassIndexIndicator"}],"members":[],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"MedianPriceIndicator",
-    "names":[{"platform":"Blazor","fileName":"MedianPriceIndicator.cs","mappedName":"IgbMedianPriceIndicator"}],"members":[],"originalBaseTypeName":"ItemwiseStrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"MoneyFlowIndexIndicator",
-    "names":[{"platform":"Blazor","fileName":"MoneyFlowIndexIndicator.cs","mappedName":"IgbMoneyFlowIndexIndicator"}],
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ResolveIsItemwise"}], "originalName": "ResolveIsItemwise"} ]
+  },
+  {
+    "originalName": "MarketFacilitationIndexIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "ItemwiseStrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "MarketFacilitationIndexIndicator.cs","mappedName": "IgbMarketFacilitationIndexIndicator"}]
+  },
+  {
+    "originalName": "MassIndexIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "MassIndexIndicator.cs","mappedName": "IgbMassIndexIndicator"}]
+  },
+  {
+    "originalName": "MedianPriceIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "ItemwiseStrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "MedianPriceIndicator.cs","mappedName": "IgbMedianPriceIndicator"}]
+  },
+  {
+    "originalName": "MoneyFlowIndexIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "MoneyFlowIndexIndicator.cs","mappedName": "IgbMoneyFlowIndexIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"MovingAverageConvergenceDivergenceIndicator",
-    "names":[{"platform":"Blazor","fileName":"MovingAverageConvergenceDivergenceIndicator.cs","mappedName":"IgbMovingAverageConvergenceDivergenceIndicator"}],
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Period"}], "originalName": "Period"} ]
+  },
+  {
+    "originalName": "MovingAverageConvergenceDivergenceIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "MovingAverageConvergenceDivergenceIndicator.cs","mappedName": "IgbMovingAverageConvergenceDivergenceIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"ShortPeriod"}],"originalName":"ShortPeriod"},
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"LongPeriod"}],"originalName":"LongPeriod"},
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"SignalPeriod"}],"originalName":"SignalPeriod"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"NegativeVolumeIndexIndicator",
-    "names":[{"platform":"Blazor","fileName":"NegativeVolumeIndexIndicator.cs","mappedName":"IgbNegativeVolumeIndexIndicator"}],"members":[],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"OnBalanceVolumeIndicator",
-    "names":[{"platform":"Blazor","fileName":"OnBalanceVolumeIndicator.cs","mappedName":"IgbOnBalanceVolumeIndicator"}],"members":[],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"PercentagePriceOscillatorIndicator",
-    "names":[{"platform":"Blazor","fileName":"PercentagePriceOscillatorIndicator.cs","mappedName":"IgbPercentagePriceOscillatorIndicator"}],
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "LongPeriod"}], "originalName": "LongPeriod"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "ShortPeriod"}], "originalName": "ShortPeriod"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "SignalPeriod"}], "originalName": "SignalPeriod"} ]
+  },
+  {
+    "originalName": "NegativeVolumeIndexIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "NegativeVolumeIndexIndicator.cs","mappedName": "IgbNegativeVolumeIndexIndicator"}]
+  },
+  {
+    "originalName": "OnBalanceVolumeIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "OnBalanceVolumeIndicator.cs","mappedName": "IgbOnBalanceVolumeIndicator"}]
+  },
+  {
+    "originalName": "PercentagePriceOscillatorIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "PercentagePriceOscillatorIndicator.cs","mappedName": "IgbPercentagePriceOscillatorIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"ShortPeriod"}],"originalName":"ShortPeriod"},
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"LongPeriod"}],"originalName":"LongPeriod"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"PercentageVolumeOscillatorIndicator",
-    "names":[{"platform":"Blazor","fileName":"PercentageVolumeOscillatorIndicator.cs","mappedName":"IgbPercentageVolumeOscillatorIndicator"}],
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "LongPeriod"}], "originalName": "LongPeriod"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "ShortPeriod"}], "originalName": "ShortPeriod"} ]
+  },
+  {
+    "originalName": "PercentageVolumeOscillatorIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "PercentageVolumeOscillatorIndicator.cs","mappedName": "IgbPercentageVolumeOscillatorIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"ShortPeriod"}],"originalName":"ShortPeriod"},
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"LongPeriod"}],"originalName":"LongPeriod"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"PositiveVolumeIndexIndicator",
-    "names":[{"platform":"Blazor","fileName":"PositiveVolumeIndexIndicator.cs","mappedName":"IgbPositiveVolumeIndexIndicator"}],"members":[],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"PriceChannelOverlay",
-    "names":[{"platform":"Blazor","fileName":"PriceChannelOverlay.cs","mappedName":"IgbPriceChannelOverlay"}],
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "LongPeriod"}], "originalName": "LongPeriod"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "ShortPeriod"}], "originalName": "ShortPeriod"} ]
+  },
+  {
+    "originalName": "PositiveVolumeIndexIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "PositiveVolumeIndexIndicator.cs","mappedName": "IgbPositiveVolumeIndexIndicator"}]
+  },
+  {
+    "originalName": "PriceChannelOverlay",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "FinancialOverlay",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "PriceChannelOverlay.cs","mappedName": "IgbPriceChannelOverlay"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Period"}],"originalName":"Period"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetSeriesValue"}],"originalName":"GetSeriesValue"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetNextOrExactIndex"}],"originalName":"GetNextOrExactIndex"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetPreviousOrExactIndex"}],"originalName":"GetPreviousOrExactIndex"}],"originalBaseTypeName":"FinancialOverlay","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"PriceVolumeTrendIndicator",
-    "names":[{"platform":"Blazor","fileName":"PriceVolumeTrendIndicator.cs","mappedName":"IgbPriceVolumeTrendIndicator"}],"members":[],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"RateOfChangeAndMomentumIndicator",
-    "names":[{"platform":"Blazor","fileName":"RateOfChangeAndMomentumIndicator.cs","mappedName":"IgbRateOfChangeAndMomentumIndicator"}],
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetNextOrExactIndex"}], "originalName": "GetNextOrExactIndex"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetPreviousOrExactIndex"}], "originalName": "GetPreviousOrExactIndex"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValue"}], "originalName": "GetSeriesValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Period"}], "originalName": "Period"} ]
+  },
+  {
+    "originalName": "PriceVolumeTrendIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "PriceVolumeTrendIndicator.cs","mappedName": "IgbPriceVolumeTrendIndicator"}]
+  },
+  {
+    "originalName": "RateOfChangeAndMomentumIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "RateOfChangeAndMomentumIndicator.cs","mappedName": "IgbRateOfChangeAndMomentumIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"RelativeStrengthIndexIndicator",
-    "names":[{"platform":"Blazor","fileName":"RelativeStrengthIndexIndicator.cs","mappedName":"IgbRelativeStrengthIndexIndicator"}],
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Period"}], "originalName": "Period"} ]
+  },
+  {
+    "originalName": "RelativeStrengthIndexIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "RelativeStrengthIndexIndicator.cs","mappedName": "IgbRelativeStrengthIndexIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"SlowStochasticOscillatorIndicator",
-    "names":[{"platform":"Blazor","fileName":"SlowStochasticOscillatorIndicator.cs","mappedName":"IgbSlowStochasticOscillatorIndicator"}],
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Period"}], "originalName": "Period"} ]
+  },
+  {
+    "originalName": "SlowStochasticOscillatorIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "SlowStochasticOscillatorIndicator.cs","mappedName": "IgbSlowStochasticOscillatorIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"StandardDeviationIndicator",
-    "names":[{"platform":"Blazor","fileName":"StandardDeviationIndicator.cs","mappedName":"IgbStandardDeviationIndicator"}],
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Period"}], "originalName": "Period"} ]
+  },
+  {
+    "originalName": "StandardDeviationIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "StandardDeviationIndicator.cs","mappedName": "IgbStandardDeviationIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"StochRSIIndicator",
-    "names":[{"platform":"Blazor","fileName":"StochRSIIndicator.cs","mappedName":"IgbStochRSIIndicator"}],
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Period"}], "originalName": "Period"} ]
+  },
+  {
+    "originalName": "StochRSIIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "StochRSIIndicator.cs","mappedName": "IgbStochRSIIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"StrategyBasedIndicator",
-    "names":[{"platform":"Blazor","fileName":"StrategyBasedIndicator.cs","mappedName":"IgbStrategyBasedIndicator"}],"members":[],"originalBaseTypeName":"FinancialIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"TRIXIndicator",
-    "names":[{"platform":"Blazor","fileName":"TRIXIndicator.cs","mappedName":"IgbTRIXIndicator"}],
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Period"}], "originalName": "Period"} ]
+  },
+  {
+    "originalName": "StrategyBasedIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "FinancialIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "StrategyBasedIndicator.cs","mappedName": "IgbStrategyBasedIndicator"}]
+  },
+  {
+    "originalName": "TRIXIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "TRIXIndicator.cs","mappedName": "IgbTRIXIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"TypicalPriceIndicator",
-    "names":[{"platform":"Blazor","fileName":"TypicalPriceIndicator.cs","mappedName":"IgbTypicalPriceIndicator"}],"members":[],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"UltimateOscillatorIndicator",
-    "names":[{"platform":"Blazor","fileName":"UltimateOscillatorIndicator.cs","mappedName":"IgbUltimateOscillatorIndicator"}],"members":[],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"WeightedCloseIndicator",
-    "names":[{"platform":"Blazor","fileName":"WeightedCloseIndicator.cs","mappedName":"IgbWeightedCloseIndicator"}],"members":[],"originalBaseTypeName":"ItemwiseStrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"WilliamsPercentRIndicator",
-    "names":[{"platform":"Blazor","fileName":"WilliamsPercentRIndicator.cs","mappedName":"IgbWilliamsPercentRIndicator"}],
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Period"}], "originalName": "Period"} ]
+  },
+  {
+    "originalName": "TypicalPriceIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "TypicalPriceIndicator.cs","mappedName": "IgbTypicalPriceIndicator"}]
+  },
+  {
+    "originalName": "UltimateOscillatorIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "UltimateOscillatorIndicator.cs","mappedName": "IgbUltimateOscillatorIndicator"}]
+  },
+  {
+    "originalName": "WeightedCloseIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "ItemwiseStrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "WeightedCloseIndicator.cs","mappedName": "IgbWeightedCloseIndicator"}]
+  },
+  {
+    "originalName": "WilliamsPercentRIndicator",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "WilliamsPercentRIndicator.cs","mappedName": "IgbWilliamsPercentRIndicator"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Period"}], "originalName": "Period"} ]
+  }]
+}

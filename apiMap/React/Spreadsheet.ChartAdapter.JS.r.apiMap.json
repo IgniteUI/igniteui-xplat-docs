@@ -1,6 +1,14 @@
-{"extraFiles":["igr-spreadsheet-chart-adapter-module.ts"],
+{
+  "extraFiles": ["igr-spreadsheet-chart-adapter-module.ts"],
   "types":[
-  { "originalName":"SpreadsheetChartAdapter",
-    "names":[{"platform":"React","fileName":"SpreadsheetChartAdapter.ts","mappedName":"SpreadsheetChartAdapter"}],
+  {
+    "originalName": "SpreadsheetChartAdapter",
+    "originalNamespace": "Infragistics.Controls.Grids",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids",
+    "originalBaseTypeName": "SpreadsheetChartAdapterBase",
+    "packageName": "igniteui-spreadsheet-chart-adapter",
+    "names":[{"platform": "React","fileName": "SpreadsheetChartAdapter.ts","mappedName": "SpreadsheetChartAdapter"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"SpreadsheetChartAdapterBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids","packageName":"igniteui-spreadsheet-chart-adapter","originalNamespace":"Infragistics.Controls.Grids"}]}
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": ".ctor"}], "originalName": ".ctor"} ]
+  }]
+}
