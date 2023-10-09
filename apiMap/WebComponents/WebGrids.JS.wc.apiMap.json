@@ -25,6 +25,8 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"column"}],"originalName":"Column"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"level"}],"originalName":"Level"},
     { "names":[{"platform":"WebComponents","mappedType":"GridKeydownTargetType","mappedName":"tag"}],"originalName":"Tag"}],"originalBaseTypeName":"BaseEventArgsDetail","originalBaseTypeNamespace":"Infragistics.Controls","packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"BaseDateTimeFilteringOperand",
+    "names":[{"platform":"WebComponents","fileName":"igc-base-date-time-filtering-operand.ts","mappedName":"IgcBaseDateTimeFilteringOperand"}],"members":[],"originalBaseTypeName":"FilteringOperand","originalBaseTypeNamespace":"Infragistics.Controls","packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
   { "originalName":"BaseEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-base-event-args.ts","mappedName":"IgcBaseEventArgs"}],
     "members":[
@@ -54,6 +56,8 @@
     { "names":[{"platform":"WebComponents","mappedType":"IgcOverlaySettings","mappedName":"overlaySettings"}],"originalName":"OverlaySettings"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"name"}],"originalName":"Name"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setNativeElement"}],"originalName":"SetNativeElement"}],"originalBaseTypeName":"GridToolbarBaseAction","originalBaseTypeNamespace":"Infragistics.Controls","packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"BooleanFilteringOperand",
+    "names":[{"platform":"WebComponents","fileName":"igc-boolean-filtering-operand.ts","mappedName":"IgcBooleanFilteringOperand"}],"members":[],"originalBaseTypeName":"FilteringOperand","originalBaseTypeNamespace":"Infragistics.Controls","packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
   { "originalName":"CancelableBrowserEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-cancelable-browser-event-args.ts","mappedName":"IgcCancelableBrowserEventArgs"}],"members":[],"originalBaseTypeName":"CancelableEventArgs","originalBaseTypeNamespace":"Infragistics.Controls","packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
   { "originalName":"CancelableEventArgs",
@@ -291,6 +295,16 @@
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setNativeElement"}],"originalName":"SetNativeElement"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"clone"}],"originalName":"Clone"}],"packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"DateFilteringOperand",
+    "names":[{"platform":"WebComponents","fileName":"igc-date-filtering-operand.ts","mappedName":"IgcDateFilteringOperand"}],"members":[],"originalBaseTypeName":"BaseDateTimeFilteringOperand","originalBaseTypeNamespace":"Infragistics.Controls","packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"DateSummaryOperand",
+    "names":[{"platform":"WebComponents","fileName":"igc-date-summary-operand.ts","mappedName":"IgcDateSummaryOperand"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"latest"}],"originalName":"Latest"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"earliest"}],"originalName":"Earliest"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"operate"}],"originalName":"Operate"}],"originalBaseTypeName":"SummaryOperand","originalBaseTypeNamespace":"Infragistics.Controls","packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"DateTimeFilteringOperand",
+    "names":[{"platform":"WebComponents","fileName":"igc-date-time-filtering-operand.ts","mappedName":"IgcDateTimeFilteringOperand"}],"members":[],"originalBaseTypeName":"BaseDateTimeFilteringOperand","originalBaseTypeNamespace":"Infragistics.Controls","packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
   { "originalName":"DensityChangedEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-density-changed-event-args.ts","mappedName":"IgcDensityChangedEventArgs"}],
     "members":[
@@ -430,6 +444,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isUnary"}],"originalName":"IsUnary"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"iconName"}],"originalName":"IconName"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"hidden"}],"originalName":"Hidden"},
+    { "names":[{"platform":"WebComponents","mappedType":"(value: any, searchVal: any, ignoreCase: boolean) => any","mappedName":"logic"}],"originalName":"Logic"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setNativeElement"}],"originalName":"SetNativeElement"}],"packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
   { "originalName":"FilteringStrategy",
     "names":[{"platform":"WebComponents","fileName":"igc-filtering-strategy.ts","mappedName":"IgcFilteringStrategy"}],
@@ -734,7 +749,9 @@
     { "names":[{"platform":"WebComponents","mappedType":"IgcGridBaseDirectiveComponent","mappedName":"owner"}],"originalName":"Owner"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setNativeElement"}],"originalName":"SetNativeElement"}],"packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
   { "originalName":"GridGroupingStrategy",
-    "names":[{"platform":"WebComponents","fileName":"igc-grid-grouping-strategy.ts","mappedName":"IgcGridGroupingStrategy"}],"members":[],"originalBaseTypeName":"GridSortingStrategy","originalBaseTypeNamespace":"Infragistics.Controls","packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
+    "names":[{"platform":"WebComponents","fileName":"igc-grid-grouping-strategy.ts","mappedName":"IgcGridGroupingStrategy"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"groupBy"}],"originalName":"GroupBy"}],"originalBaseTypeName":"GridSortingStrategy","originalBaseTypeNamespace":"Infragistics.Controls","packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
   { "originalName":"GridHeaderTemplateContext",
     "names":[{"platform":"WebComponents","fileName":"igc-grid-header-template-context.ts","mappedName":"IgcGridHeaderTemplateContext"}],
     "members":[
@@ -991,7 +1008,8 @@
   { "originalName":"GridSortingStrategy",
     "names":[{"platform":"WebComponents","fileName":"igc-grid-sorting-strategy.ts","mappedName":"IgcGridSortingStrategy"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setNativeElement"}],"originalName":"SetNativeElement"}],"packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setNativeElement"}],"originalName":"SetNativeElement"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"sort"}],"originalName":"Sort"}],"packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
   { "originalName":"GridTemplateContext",
     "names":[{"platform":"WebComponents","fileName":"igc-grid-template-context.ts","mappedName":"IgcGridTemplateContext"}],
     "members":[
@@ -1091,6 +1109,12 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"height"}],"originalName":"Height"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcColumn","mappedName":"column"}],"originalName":"Column"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setNativeElement"}],"originalName":"SetNativeElement"}],"packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"GroupByResult",
+    "names":[{"platform":"WebComponents","fileName":"igc-group-by-result.ts","mappedName":"IgcGroupByResult"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"any[]","mappedName":"data"}],"originalName":"Data"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgcGroupByRecord[]","mappedName":"metadata"}],"originalName":"Metadata"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setNativeElement"}],"originalName":"SetNativeElement"}],"packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
   { "originalName":"GroupByRowSelectorTemplateContext",
     "names":[{"platform":"WebComponents","fileName":"igc-group-by-row-selector-template-context.ts","mappedName":"IgcGroupByRowSelectorTemplateContext"}],
     "members":[
@@ -1123,11 +1147,20 @@
     { "names":[{"platform":"WebComponents","mappedType":"IgcColumn[]","mappedName":"groupedColumns"}],"originalName":"GroupedColumns"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcColumn[]","mappedName":"ungroupedColumns"}],"originalName":"UngroupedColumns"}],"originalBaseTypeName":"BaseEventArgsDetail","originalBaseTypeNamespace":"Infragistics.Controls","packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
   { "originalName":"GroupingExpression",
-    "names":[{"platform":"WebComponents","fileName":"igc-grouping-expression.ts","mappedName":"IgcGroupingExpression"}],"members":[],"originalBaseTypeName":"SortingExpression","originalBaseTypeNamespace":"Infragistics.Controls","packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
+    "names":[{"platform":"WebComponents","fileName":"igc-grouping-expression.ts","mappedName":"IgcGroupingExpression"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"groupingComparer"}],"originalName":"GroupingComparer"}],"originalBaseTypeName":"SortingExpression","originalBaseTypeNamespace":"Infragistics.Controls","packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
   { "originalName":"GroupingExpressionEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-grouping-expression-event-args.ts","mappedName":"IgcGroupingExpressionEventArgs"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"IgcGroupingExpression[]","mappedName":"detail"}],"originalName":"Detail"}],"packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"GroupingState",
+    "names":[{"platform":"WebComponents","fileName":"igc-grouping-state.ts","mappedName":"IgcGroupingState"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"IgcGroupingExpression[]","mappedName":"expressions"}],"originalName":"Expressions"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgcGroupByExpandState[]","mappedName":"expansion"}],"originalName":"Expansion"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"defaultExpanded"}],"originalName":"DefaultExpanded"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setNativeElement"}],"originalName":"SetNativeElement"}],"packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
   { "originalName":"HeaderType",
     "names":[{"platform":"WebComponents","fileName":"igc-header-type.ts","mappedName":"IgcHeaderType"}],
     "members":[
@@ -1152,6 +1185,16 @@
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setNativeElement"}],"originalName":"SetNativeElement"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"selectAll"}],"originalName":"SelectAll"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"deselectAll"}],"originalName":"DeselectAll"}],"packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"NumberFilteringOperand",
+    "names":[{"platform":"WebComponents","fileName":"igc-number-filtering-operand.ts","mappedName":"IgcNumberFilteringOperand"}],"members":[],"originalBaseTypeName":"FilteringOperand","originalBaseTypeNamespace":"Infragistics.Controls","packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"NumberSummaryOperand",
+    "names":[{"platform":"WebComponents","fileName":"igc-number-summary-operand.ts","mappedName":"IgcNumberSummaryOperand"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"min"}],"originalName":"Min"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"max"}],"originalName":"Max"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"sum"}],"originalName":"Sum"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"average"}],"originalName":"Average"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"operate"}],"originalName":"Operate"}],"originalBaseTypeName":"SummaryOperand","originalBaseTypeNamespace":"Infragistics.Controls","packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
   { "originalName":"OverlayOutletDirective",
     "names":[{"platform":"WebComponents","fileName":"igc-overlay-outlet-directive.ts","mappedName":"IgcOverlayOutletDirective"}],
     "members":[
@@ -1340,7 +1383,8 @@
   { "originalName":"PivotDimensionStrategy",
     "names":[{"platform":"WebComponents","fileName":"igc-pivot-dimension-strategy.ts","mappedName":"IgcPivotDimensionStrategy"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setNativeElement"}],"originalName":"SetNativeElement"}],"packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setNativeElement"}],"originalName":"SetNativeElement"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"process"}],"originalName":"Process"}],"packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
   { "originalName":"PivotGrid",
     "names":[{"platform":"WebComponents","fileName":"igc-pivot-grid-component.ts","mappedName":"IgcPivotGridComponent"}],
     "members":[
@@ -1625,6 +1669,10 @@
     "names":[{"platform":"WebComponents","fileName":"igc-sorting-strategy.ts","mappedName":"IgcSortingStrategy"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setNativeElement"}],"originalName":"SetNativeElement"}],"packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"StringFilteringOperand",
+    "names":[{"platform":"WebComponents","fileName":"igc-string-filtering-operand.ts","mappedName":"IgcStringFilteringOperand"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"applyIgnoreCase"}],"originalName":"ApplyIgnoreCase"}],"originalBaseTypeName":"FilteringOperand","originalBaseTypeNamespace":"Infragistics.Controls","packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
   { "originalName":"SummaryOperand",
     "names":[{"platform":"WebComponents","fileName":"igc-summary-operand.ts","mappedName":"IgcSummaryOperand"}],
     "members":[
@@ -1644,6 +1692,14 @@
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"IgcSummaryResult[]","mappedName":"implicit"}],"originalName":"Implicit"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setNativeElement"}],"originalName":"SetNativeElement"}],"packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"TimeFilteringOperand",
+    "names":[{"platform":"WebComponents","fileName":"igc-time-filtering-operand.ts","mappedName":"IgcTimeFilteringOperand"}],"members":[],"originalBaseTypeName":"BaseDateTimeFilteringOperand","originalBaseTypeNamespace":"Infragistics.Controls","packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"TimeSummaryOperand",
+    "names":[{"platform":"WebComponents","fileName":"igc-time-summary-operand.ts","mappedName":"IgcTimeSummaryOperand"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"latestTime"}],"originalName":"LatestTime"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"earliestTime"}],"originalName":"EarliestTime"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"operate"}],"originalName":"Operate"}],"originalBaseTypeName":"SummaryOperand","originalBaseTypeNamespace":"Infragistics.Controls","packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
   { "originalName":"ToggleDirective",
     "names":[{"platform":"WebComponents","fileName":"igc-toggle-directive.ts","mappedName":"IgcToggleDirective"}],
     "members":[
@@ -1761,4 +1817,5 @@
     "names":[{"platform":"WebComponents","fileName":"igc-summary-expression.ts","mappedName":"IgcSummaryExpression"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"fieldName"}],"originalName":"FieldName"},
+    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"customSummary"}],"originalName":"CustomSummary"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setNativeElement"}],"originalName":"SetNativeElement"}],"packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"}]}

@@ -126,11 +126,7 @@
     "names":[{"platform":"Angular","fileName":"igx-style-shape-event-args.ts","mappedName":"IgxStyleShapeEventArgs"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"any","mappedName":"item"}],"originalName":"Item"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"string","mappedName":"fill"}],"originalName":"shapeStyle.fill"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"string","mappedName":"stroke"}],"originalName":"shapeStyle.stroke"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"shapeStyle.strokeThickness"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"opacity"}],"originalName":"shapeStyle.opacity"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"fill"}],"originalName":"shapeStyle.fill"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"stroke"}],"originalName":"shapeStyle.stroke"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"shapeStyle.strokeThickness"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"opacity"}],"originalName":"shapeStyle.opacity"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

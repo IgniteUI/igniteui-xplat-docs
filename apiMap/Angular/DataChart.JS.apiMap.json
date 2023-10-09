@@ -192,62 +192,35 @@
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"useEnhancedIntervalManagement"}],"originalName":"UseEnhancedIntervalManagement"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"enhancedIntervalMinimumCharacters"}],"originalName":"EnhancedIntervalMinimumCharacters"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"enhancedIntervalPreferMoreCategoryLabels"}],"originalName":"EnhancedIntervalPreferMoreCategoryLabels"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"string","mappedName":"textStyle"}],"originalName":"labelSettings.textStyle"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"string","mappedName":"textColor"}],"originalName":"labelSettings.textColor"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"AxisLabelsLocation","mappedName":"location"}],"originalName":"labelSettings.location"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"Visibility","mappedName":"visibility"}],"originalName":"labelSettings.visibility"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"showFirstLabel"}],"originalName":"labelSettings.showFirstLabel"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"angle"}],"originalName":"labelSettings.angle"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"extent"}],"originalName":"labelSettings.extent"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"leftMargin"}],"originalName":"labelSettings.leftMargin"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"rightMargin"}],"originalName":"labelSettings.rightMargin"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"topMargin"}],"originalName":"labelSettings.topMargin"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottomMargin"}],"originalName":"labelSettings.bottomMargin"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"HorizontalAlignment","mappedName":"horizontalAlignment"}],"originalName":"labelSettings.horizontalAlignment"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"VerticalAlignment","mappedName":"verticalAlignment"}],"originalName":"labelSettings.verticalAlignment"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"textStyle"}],"originalName":"labelSettings.textStyle"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"textColor"}],"originalName":"labelSettings.textColor"},
+    { "names":[{"platform":"Angular","mappedType":"AxisLabelsLocation","mappedName":"location"}],"originalName":"labelSettings.location"},
+    { "names":[{"platform":"Angular","mappedType":"Visibility","mappedName":"visibility"}],"originalName":"labelSettings.visibility"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"showFirstLabel"}],"originalName":"labelSettings.showFirstLabel"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"angle"}],"originalName":"labelSettings.angle"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"extent"}],"originalName":"labelSettings.extent"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"leftMargin"}],"originalName":"labelSettings.leftMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"rightMargin"}],"originalName":"labelSettings.rightMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"topMargin"}],"originalName":"labelSettings.topMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottomMargin"}],"originalName":"labelSettings.bottomMargin"},
+    { "names":[{"platform":"Angular","mappedType":"HorizontalAlignment","mappedName":"horizontalAlignment"}],"originalName":"labelSettings.horizontalAlignment"},
+    { "names":[{"platform":"Angular","mappedType":"VerticalAlignment","mappedName":"verticalAlignment"}],"originalName":"labelSettings.verticalAlignment"},
     { "names":[{"platform":"Angular","mappedType":"IgxAxisComponent","mappedName":"crossingAxis"}],"originalName":"CrossingAxis"},
     { "names":[{"platform":"Angular","mappedType":"any","mappedName":"crossingValue"}],"originalName":"CrossingValue"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"AxisTitlePosition","mappedName":"position"}],"originalName":"titleSettings.position"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"string","mappedName":"textStyle"}],"originalName":"titleSettings.textStyle"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"string","mappedName":"textColor"}],"originalName":"titleSettings.textColor"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"AxisLabelsLocation","mappedName":"location"}],"originalName":"titleSettings.location"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"Visibility","mappedName":"visibility"}],"originalName":"titleSettings.visibility"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"showFirstLabel"}],"originalName":"titleSettings.showFirstLabel"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"angle"}],"originalName":"titleSettings.angle"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"extent"}],"originalName":"titleSettings.extent"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"leftMargin"}],"originalName":"titleSettings.leftMargin"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"rightMargin"}],"originalName":"titleSettings.rightMargin"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"topMargin"}],"originalName":"titleSettings.topMargin"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottomMargin"}],"originalName":"titleSettings.bottomMargin"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"HorizontalAlignment","mappedName":"horizontalAlignment"}],"originalName":"titleSettings.horizontalAlignment"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"VerticalAlignment","mappedName":"verticalAlignment"}],"originalName":"titleSettings.verticalAlignment"},
+    { "names":[{"platform":"Angular","mappedType":"AxisTitlePosition","mappedName":"position"}],"originalName":"titleSettings.position"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"textStyle"}],"originalName":"titleSettings.textStyle"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"textColor"}],"originalName":"titleSettings.textColor"},
+    { "names":[{"platform":"Angular","mappedType":"AxisLabelsLocation","mappedName":"location"}],"originalName":"titleSettings.location"},
+    { "names":[{"platform":"Angular","mappedType":"Visibility","mappedName":"visibility"}],"originalName":"titleSettings.visibility"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"showFirstLabel"}],"originalName":"titleSettings.showFirstLabel"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"angle"}],"originalName":"titleSettings.angle"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"extent"}],"originalName":"titleSettings.extent"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"leftMargin"}],"originalName":"titleSettings.leftMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"rightMargin"}],"originalName":"titleSettings.rightMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"topMargin"}],"originalName":"titleSettings.topMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottomMargin"}],"originalName":"titleSettings.bottomMargin"},
+    { "names":[{"platform":"Angular","mappedType":"HorizontalAlignment","mappedName":"horizontalAlignment"}],"originalName":"titleSettings.horizontalAlignment"},
+    { "names":[{"platform":"Angular","mappedType":"VerticalAlignment","mappedName":"verticalAlignment"}],"originalName":"titleSettings.verticalAlignment"},
     { "names":[{"platform":"Angular","mappedType":"IgxAxisAnnotationCollection","mappedName":"annotations"}],"originalName":"Annotations"},
     { "names":[{"platform":"Angular","mappedType":"any","mappedName":"coercionMethods"}],"originalName":"CoercionMethods"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"expectFunctions"}],"originalName":"ExpectFunctions"},

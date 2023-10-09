@@ -1066,6 +1066,12 @@
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Height"}],"originalName":"Height"},
     { "names":[{"platform":"Blazor","mappedType":"IgbColumn","mappedName":"Column"}],"originalName":"Column"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"SetNativeElement"}],"originalName":"SetNativeElement"}],"packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"GroupByResult",
+    "names":[{"platform":"Blazor","fileName":"GroupByResult.cs","mappedName":"IgbGroupByResult"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"object[]","mappedName":"Data"}],"originalName":"Data"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbGroupByRecord[]","mappedName":"Metadata"}],"originalName":"Metadata"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"SetNativeElement"}],"originalName":"SetNativeElement"}],"packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
   { "originalName":"GroupByRowSelectorTemplateContext",
     "names":[{"platform":"Blazor","fileName":"GroupByRowSelectorTemplateContext.cs","mappedName":"IgbGroupByRowSelectorTemplateContext"}],
     "members":[
@@ -1103,6 +1109,13 @@
     "names":[{"platform":"Blazor","fileName":"GroupingExpressionEventArgs.cs","mappedName":"IgbGroupingExpressionEventArgs"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"IgbGroupingExpression[]","mappedName":"Detail"}],"originalName":"Detail"}],"packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"GroupingState",
+    "names":[{"platform":"Blazor","fileName":"GroupingState.cs","mappedName":"IgbGroupingState"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"IgbGroupingExpression[]","mappedName":"Expressions"}],"originalName":"Expressions"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbGroupByExpandState[]","mappedName":"Expansion"}],"originalName":"Expansion"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"DefaultExpanded"}],"originalName":"DefaultExpanded"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"SetNativeElement"}],"originalName":"SetNativeElement"}],"packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
   { "originalName":"HeaderType",
     "names":[{"platform":"Blazor","fileName":"HeaderType.cs","mappedName":"IgbHeaderType"}],
     "members":[
@@ -1599,12 +1612,6 @@
     "names":[{"platform":"Blazor","fileName":"SortingStrategy.cs","mappedName":"IgbSortingStrategy"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"SetNativeElement"}],"originalName":"SetNativeElement"}],"packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
-  { "originalName":"SummaryOperand",
-    "names":[{"platform":"Blazor","fileName":"SummaryOperand.cs","mappedName":"IgbSummaryOperand"}],
-    "members":[
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"SetNativeElement"}],"originalName":"SetNativeElement"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"Count"}],"originalName":"Count"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"Operate"}],"originalName":"Operate"}],"packageName":"igniteui-webgrids","originalNamespace":"Infragistics.Controls"},
   { "originalName":"SummaryResult",
     "names":[{"platform":"Blazor","fileName":"SummaryResult.cs","mappedName":"IgbSummaryResult"}],
     "members":[

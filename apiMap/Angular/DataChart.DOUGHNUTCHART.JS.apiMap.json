@@ -32,14 +32,10 @@
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"legendLabelMemberPath"}],"originalName":"LegendLabelMemberPath"},
     { "names":[{"platform":"Angular","mappedType":"LabelsPosition","mappedName":"labelsPosition"}],"originalName":"LabelsPosition"},
     { "names":[{"platform":"Angular","mappedType":"Visibility","mappedName":"leaderLineVisibility"}],"originalName":"LeaderLineVisibility"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"string","mappedName":"fill"}],"originalName":"leaderLineStyle.fill"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"string","mappedName":"stroke"}],"originalName":"leaderLineStyle.stroke"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"leaderLineStyle.strokeThickness"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"opacity"}],"originalName":"leaderLineStyle.opacity"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"fill"}],"originalName":"leaderLineStyle.fill"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"stroke"}],"originalName":"leaderLineStyle.stroke"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"leaderLineStyle.strokeThickness"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"opacity"}],"originalName":"leaderLineStyle.opacity"},
     { "names":[{"platform":"Angular","mappedType":"LeaderLineType","mappedName":"leaderLineType"}],"originalName":"LeaderLineType"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"leaderLineMargin"}],"originalName":"LeaderLineMargin"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"othersCategoryThreshold"}],"originalName":"OthersCategoryThreshold"},
@@ -57,22 +53,14 @@
     { "names":[{"platform":"Angular","mappedType":"any[]","mappedName":"legendOthersLabelFormatSpecifiers"}],"originalName":"LegendOthersLabelFormatSpecifiers"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"labelExtent"}],"originalName":"LabelExtent"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"startAngle"}],"originalName":"StartAngle"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"string","mappedName":"fill"}],"originalName":"othersCategoryStyle.fill"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"string","mappedName":"stroke"}],"originalName":"othersCategoryStyle.stroke"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"othersCategoryStyle.strokeThickness"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"opacity"}],"originalName":"othersCategoryStyle.opacity"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"string","mappedName":"fill"}],"originalName":"selectedStyle.fill"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"string","mappedName":"stroke"}],"originalName":"selectedStyle.stroke"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"selectedStyle.strokeThickness"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"opacity"}],"originalName":"selectedStyle.opacity"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"fill"}],"originalName":"othersCategoryStyle.fill"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"stroke"}],"originalName":"othersCategoryStyle.stroke"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"othersCategoryStyle.strokeThickness"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"opacity"}],"originalName":"othersCategoryStyle.opacity"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"fill"}],"originalName":"selectedStyle.fill"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"stroke"}],"originalName":"selectedStyle.stroke"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"selectedStyle.strokeThickness"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"opacity"}],"originalName":"selectedStyle.opacity"},
     { "names":[{"platform":"Angular","mappedType":"string[]","mappedName":"brushes"}],"originalName":"Brushes"},
     { "names":[{"platform":"Angular","mappedType":"string[]","mappedName":"outlines"}],"originalName":"Outlines"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"labelOuterColor"}],"originalName":"LabelOuterColor"},
@@ -87,14 +75,10 @@
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isSurfaceInteractionDisabled"}],"originalName":"IsSurfaceInteractionDisabled"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"allowSliceExplosion"}],"originalName":"AllowSliceExplosion"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"innerExtent"}],"originalName":"InnerExtent"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"string","mappedName":"fill"}],"originalName":"selectedStyle.fill"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"string","mappedName":"stroke"}],"originalName":"selectedStyle.stroke"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"selectedStyle.strokeThickness"},
-    { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"opacity"}],"originalName":"selectedStyle.opacity"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"fill"}],"originalName":"selectedStyle.fill"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"stroke"}],"originalName":"selectedStyle.stroke"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"selectedStyle.strokeThickness"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"opacity"}],"originalName":"selectedStyle.opacity"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"pixelScalingRatio"}],"originalName":"PixelScalingRatio"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"actualPixelScalingRatio"}],"originalName":"ActualPixelScalingRatio"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"provideContainer"}],"originalName":"ProvideContainer"},
