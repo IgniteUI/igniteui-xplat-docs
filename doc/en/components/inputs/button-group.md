@@ -68,16 +68,39 @@ Use the `alignment` property to set the orientation of the buttons in the button
 `sample="/inputs/button-group/alignment", height="220", alt="{Platform} Button Group Alignment Example"`
 
 ### Selection
-In order to configure the {ProductName} `ButtonGroup` selection, you could use its `selectionMode` property. This property accepts the following three modes: 
+In order to configure the {ProductName} `ButtonGroup` selection, you could use its `selection` property. This property accepts the following three modes: 
 - **single** - default selection mode of the button group. A single button can be selected/deselected by the user.
-- **singleRequired** - mimics a radio group behavior. Only one button can be selected and once initial selection is made, deselection is not possible through user interaction.
-- **multi** - multiple buttons in the group can be selected and deselected.
+- **single-required** - mimics a radio group behavior. Only one button can be selected and once initial selection is made, deselection is not possible through user interaction.
+- **multiple** - multiple buttons in the group can be selected and deselected.
 
 The sample below demonstrates the exposed `ButtonGroup` selection modes:
 
 `sample="/inputs/button-group/selection", height="170", alt="{Platform} Button Group Selection Example"`
 
-### Size (Display Density)
+A `ToggleButton` could be marked as selected via its `selected` attribute or through the `ButtonGroup` `selectedItems` attribute:
+
+```html
+<igc-button-group selected-items='["bold"]'>
+    <igc-toggle-button value="bold">
+        <igc-icon name="bold" collection="material"></igc-icon>
+        <igc-ripple></igc-ripple>
+    </igc-toggle-button>
+
+    <igc-toggle-button value="italic">
+        <igc-icon name="italic" collection="material"></igc-icon>
+        <igc-ripple></igc-ripple>
+    </igc-toggle-button>
+
+    <igc-toggle-button value="underline">
+        <igc-icon name="underline" collection="material"></igc-icon>
+        <igc-ripple></igc-ripple>
+    </igc-toggle-button>
+</igc-button-group>
+```
+
+> [!Note]
+> Setting `ToggleButton` value attribute is mandatory for using the `selectedItems` property of the `ButtonGroup`.
+### Size
 The `--ig-size` CSS custom property can be used to control the size of the button group.
 
 `sample="/inputs/button-group/size", height="80", alt="{Platform} Button Group Size Example"`
@@ -85,7 +108,7 @@ The `--ig-size` CSS custom property can be used to control the size of the butto
 ## Styling
 
 The `ButtonGroup` component exposes `group` CSS part that allows us to style the button group container. 
-Also, the `ToggleButton`s provides `toggle` CSS part that could be used to style the button element.
+Also, the `ToggleButton`s provide `toggle` CSS part that could be used to style the button element.
 
 `sample="/inputs/button-group/styling", height="200", alt="{Platform} Button Group Styling Example"`
 
