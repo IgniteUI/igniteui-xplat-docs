@@ -1603,6 +1603,12 @@
     "href": "inputs/button.md"
   },
   {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "Button Group",
+    "href": "inputs/button-group.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular"],
     "name": "Checkbox",
     "href": "inputs/checkbox.md"
