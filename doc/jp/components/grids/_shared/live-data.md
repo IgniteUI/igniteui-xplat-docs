@@ -41,6 +41,12 @@ _language: ja
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+```tsx
+<{ComponentSelector} id="grid1"></{ComponentSelector}>
+```
+<!-- end: React -->
+
 ```razor
 public void OnStart()
 {
@@ -69,6 +75,28 @@ public startUpdate() {
 }
 ```
 
+<!-- React -->
+```typescript
+function startUpdate(frequency) {
+  const timer = setInterval(() => {
+    setData(prevData => FinancialDataClass.updateRandomPrices(prevData));
+  }, frequency);
+
+  setStartButtonDisabled(true);
+  setShowChartButtonDisabled(true);
+  setStopButtonDisabled(false);
+}
+```
+
+データ フィールド値の変更またはデータ オブジェクト / データ コレクション参照の変更により、対応するパイプがトリガーされます。ただし、これは、[複雑なデータ オブジェクト](../data-grid.md#complex-data-binding)にバインドされている列には当てはまりません。この状況を解決するには、プロパティを含むデータ オブジェクトの新しいオブジェクト参照を提供します。例:
+
+```tsx
+<{ComponentSelector} id="grid1">
+    <IgrColumn field="price.usd"></IgrColumn>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
 データ フィールド値の変更またはデータ オブジェクト/データ コレクション参照の変更により、対応するパイプがトリガーされます。ただし、これは[複合データ オブジェクト](../data-grid.md#複雑なデータ-バインディング)にバインドされている列には当てはまりません。この状況を解決するには、プロパティを含むデータ オブジェクトの新しいオブジェクト参照を提供します。例:
 
 ```Razor
@@ -93,7 +121,7 @@ public startUpdate() {
 ```
 <!-- end: WebComponents -->
 
-
+<!-- WebComponents -->
 ```typescript
 private updateData(data: any[]) {
     const newData = []
@@ -104,6 +132,20 @@ private updateData(data: any[]) {
     this.grid.data = newData;
 }
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```typescript
+private updateData(data: any[]) {
+    const newData = []
+    for (const rowData of data) {
+        rowData.price = { usd: getUSD(), eur: getEUR() };
+        newData.push({...rowData});
+    }
+    gridRef.current.data = newData;
+}
+```
+<!-- end: React -->
 
 ```razor
  grid1.Data = this.FinancialDataClass.UpdateRandomPrices(this.CurrentStocks);

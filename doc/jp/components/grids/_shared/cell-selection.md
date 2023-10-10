@@ -39,8 +39,8 @@ _language: ja
 - <kbd>Ctrl</kbd> キー押下 + **マウス ドラッグ** - 複数の範囲が選択されます。その他の既存のセル選択は保持されます。
 - <kbd>Shift</kbd> キーを使用して複数セルの選択をインスタンス化します。<kbd>Shift</kbd> キーを押しながら、単一セルを選択して別の単一セルを選択します。2 つのセル間のセル範囲が選択されます。<kbd>Shift</kbd> キーを押しながら他の 2 番目のセルを選択すると、最初に選択したセルの位置 (開始点) に基づいてセル選択範囲が更新されます。
 - <kbd>Shift</kbd> キーを押しながら <kbd>矢印</kbd> キーを使用してキーボードで複数セルを選択します。マルチセル選択範囲は、フォーカスされたセルに基づいて作成されます。
-- <kbd>Ctrl</kbd> キーを押しながら <kbd>Ctrl</kbd> + <kbd>矢印</kbd> キーと <kbd>Ctrl</kbd> + <kbd>Home</kbd>/<kbd>End</kbd> を使用してキーボードで複数セルを選択します。マルチセル選択範囲は、フォーカスされたセルに基づいて作成されます。
-- <kbd>Ctrl</kbd> キーを押しながら**左マウスキー**でクリックすると、選択したセルコレクションに単一のセル範囲が追加されます。
+- <kbd>Ctrl</kbd> キーを押しながら <kbd>Ctrl</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> キーと <kbd>Ctrl</kbd> + <kbd>Home</kbd> / <kbd>End</kbd> を使用してキーボードで複数セルを選択します。マルチセル選択範囲は、フォーカスされたセルに基づいて作成されます。
+- <kbd>Ctrl</kbd> キーを押しながら**左マウス**キーでクリックすると、選択したセルコレクションに単一のセル範囲が追加されます。
 - マウスでクリックしてドラッグすることで、連続した複数セルの選択が可能です。
 
 <!-- ComponentStart: Grid, TreeGrid -->
@@ -58,7 +58,7 @@ _language: ja
 
 `CellSelection` を **single** (単一) に設定すると、一度にグリッド内で選択されたセルを1つだけ持つことができます。また、**マウス ドラッグ** モードは機能せず、セルを選択する代わりに、デフォルトのテキスト選択が行われます。
 
-> **選択モード**が **single** (単一)であるか **multiple** (複数) であるかに関係なく、単一セルが `Selected` イベントが発生したときに発生します。複数セル選択モードでは、セル範囲を選択すると `RangeSelected` イベントが発生します。
+> **選択モード**が **single** (単一) であるか **multiple** (複数) であるかに関係なく、単一セルが `Selected` イベントが発生したときに発生します。複数セル選択モードでは、セル範囲を選択すると `RangeSelected` イベントが発生します。
 
 ### {ComponentTitle} 選択なし
 
@@ -68,17 +68,17 @@ _language: ja
 
 ### Shift キーが押されている間
 
-- <kbd>Shift</kbd> + <kbd>上矢印</kbd> - 現在の選択範囲に上のセルを追加します。
-- <kbd>Shift</kbd> + <kbd>下矢印</kbd> - 現在の選択範囲に下のセルを追加します。
-- <kbd>Shift</kbd> + <kbd>左矢印</kbd> - 現在の選択に左のセルを追加します。
-- <kbd>Shift</kbd> + <kbd>右矢印</kbd> - 現在の選択範囲に右のセルを追加します。
+- <kbd>Shift</kbd> + <kbd>↑</kbd> - 現在の選択範囲に上のセルを追加します。
+- <kbd>Shift</kbd> + <kbd>↓</kbd> - 現在の選択範囲に下のセルを追加します。
+- <kbd>Shift</kbd> + <kbd>←</kbd> - 現在の選択に左のセルを追加します。
+- <kbd>Shift</kbd> + <kbd>→</kbd> - 現在の選択範囲に右のセルを追加します。
 
 ### Ctrl + Shift キーが押されている間
 
-- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>上矢印</kbd> - 列内のフォーカスのあるセルの上にあるすべてのセルを選択します。
-- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>下矢印</kbd> - 列内のフォーカスのあるセルの下にあるすべてのセルを選択します。
-- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>左矢印</kbd> - 行の先頭まですべてのセルを選択します。
-- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>右矢印</kbd> - 行末まですべてのセルを選択します。
+- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd> - 列内のフォーカスのあるセルの上にあるすべてのセルを選択します。
+- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↓</kbd> - 列内のフォーカスのあるセルの下にあるすべてのセルを選択します。
+- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd> - 行の先頭まですべてのセルを選択します。
+- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>→</kbd> - 行末まですべてのセルを選択します。
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Home</kbd> - フォーカスされているセルからグリッド内の最初のセルまでのすべてのセルを選択します。
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>End</kbd> - フォーカスされているセルからグリッド内の最後のセルまでのすべてのセルを選択します。
 
@@ -90,26 +90,41 @@ _language: ja
 以下は、範囲の選択、選択の解除、または選択したセル データを取得する方法です。
 
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 
 ### 範囲の選択
 
 `SelectRange` - API を使用してセル範囲を選択します。rowStart と rowEnd は行インデックスを使用する必要があり、columnStart と columnEnd は列インデックスまたは列データ フィールド値を使用することができます。
 
+<!-- WebComponents -->
 ```ts
 const range = { rowStart: 2, rowEnd: 2, columnStart: 1, columnEnd: 1 };
 this.grid.selectRange(range);
 ```
+<!-- end: WebComponents -->
 
-<!-- end: Angular, WebComponents -->
+```tsx
+const range = { rowStart: 2, rowEnd: 2, columnStart: 1, columnEnd: 1 };
+gridRef.current.selectRange(range);
+```
+
+<!-- end: Angular, WebComponents, React -->
 
 ### セル選択のクリア
 
 `ClearCellSelection` は現在のセル選択をクリアします。
 
+<!-- WebComponents -->
 ```ts
 this.grid.clearCellSelection();
 ```
+<!-- end: WebComponents -->
+
+```tsx
+gridRef.current.clearCellSelection();
+```
+
+
 
 ```razor
 @code {
@@ -139,7 +154,7 @@ this.grid.clearCellSelection();
 ```
 <!-- end: Blazor -->
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 `GetSelectedData` は、選択したデータの配列を選択内容に応じた形式で返します。例:
 
 - 3 つの異なる単一セルが選択されている場合:
@@ -201,7 +216,7 @@ expectedData = [
 ];
 ```
 
-<!-- end: Angular, WebComponents -->
+<!-- end: Angular, WebComponents, React -->
 
 <!-- Angular -->
 > [!Note]
@@ -224,7 +239,7 @@ expectedData = [
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 ## スタイル設定
 
@@ -233,8 +248,14 @@ expectedData = [
 
 <!-- ComponentStart: Grid -->
 
+<!-- WebComponents -->
 ```ts
 <igc-grid class="grid">
+```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrGrid className="grid"></IgrGrid>
 ```
 
 ```razor
@@ -274,14 +295,14 @@ expectedData = [
 }
 ```
 
-<!-- ComponentEnd: Grid -->
+<!-- ComponentEnd: TreeGrid -->
 
 ### デモ
 
 `sample="/{ComponentSample}/cell-selection-style", height="620", alt="{Platform} {ComponentTitle} セル選択のスタイル設定の例"`
 
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- Angular -->
 ## スタイリングのガイドライン
@@ -356,17 +377,13 @@ $custom-grid-theme: grid-theme(
 ## API リファレンス
 
 * `{ComponentName}`
+* `Cell`
 <!-- ComponentStart: Grid, HierarchicalGrid -->
-
 * `GridRow`
-
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 <!-- ComponentStart: TreeGrid -->
-
 * `TreeGridRow`
-
 <!-- ComponentEnd: TreeGrid -->
-* `GridCell`
 
 ## その他のリソース
 

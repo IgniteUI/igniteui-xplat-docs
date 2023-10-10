@@ -72,10 +72,10 @@ ARIA 属性
 
 グリッド内の移動
 
-- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>右矢印キー</kbd>: 1 つ上のセルに移動します。
-- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>左矢印キー</kbd>: 左のセルに移動します。
-- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>下矢印キー</kbd>: 1 つ下のセルに移動します。
-- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>上矢印キー</kbd>: 1 つ上のセルに移動します。
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>→</kbd>: 1 つ上のセルに移動します。
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>←</kbd>: 左のセルに移動します。
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>↓</kbd>: 1 つ下のセルに移動します。
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>↑</kbd>: 1 つ上のセルに移動します。
 - <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Home</kbd>: 最初の列ヘッダーに移動します。
 - <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>End</kbd>: 最後に表示されているセルに移動します。
 - <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd> 現在の列ヘッダーに移動します。

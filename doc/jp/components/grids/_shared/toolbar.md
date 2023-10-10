@@ -54,6 +54,39 @@ _language: ja
     </igc-grid-toolbar>
 </igc-grid>
 ```
+
+```tsx
+<IgrGrid>
+    <IgrGridToolbar key="toolbar">
+        <IgrGridToolbarTitle key="toolbarTitle">
+            Grid Toolbar
+        </IgrGridToolbarTitle>
+        <IgrGridToolbarActions key="toolbarActions">
+            <IgrGridToolbarAdvancedFiltering key="advancedFiltering"></IgrGridToolbarAdvancedFiltering>
+            <IgrGridToolbarPinning key="pinning"></IgrGridToolbarPinning>
+            <IgrGridToolbarHiding key="hiding"></IgrGridToolbarHiding>
+            <IgrGridToolbarExporter key="export"></IgrGridToolbarExporter>
+        </IgrGridToolbarActions>
+    </IgrGridToolbar>
+</IgrGrid>
+```
+
+```razor
+<IgbGrid>
+    <IgbGridToolbar>
+        <IgbGridToolbarActions>
+            <IgbGridToolbarAdvancedFiltering>
+            </IgbGridToolbarAdvancedFiltering>
+            <IgbGridToolbarHiding>
+            </IgbGridToolbarHiding>
+            <IgbGridToolbarPinning>
+            </IgbGridToolbarPinning>
+            <IgbGridToolbarExporter>
+            </IgbGridToolbarExporter>
+        </IgbGridToolbarActions>
+    </IgbGridToolbar>
+</IgbGrid>
+```
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -131,6 +164,20 @@ _language: ja
     <igc-grid-toolbar>
     </igc-grid-toolbar>
 </igc-grid>
+```
+
+```razor
+<IgbGrid>
+    <IgbGridToolbar>
+    </IgbGridToolbar>
+</IgbGrid>
+```
+
+```tsx
+<IgrGrid>
+    <IgrGridToolbar key="toolbar">
+    </IgrGridToolbar>
+</IgrGrid>
 ```
 <!-- ComponentEnd: Grid -->
 
@@ -224,6 +271,18 @@ IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動�
 </igc-grid-toolbar>
 ```
 
+```tsx
+<IgrGridToolbar key="toolbar">
+    <IgrGridToolbarTitle key="toolbarTitle">Grid toolbar title</IgrGridToolbarTitle>
+</IgrGridToolbar>
+```
+
+```razor
+<IgbGridToolbar>
+    <IgbGridToolbarTitle>Grid toolbar title</IgbGridToolbarTitle>
+</IgbGridToolbar>
+```
+
 ### 操作
 
 
@@ -254,6 +313,15 @@ IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動�
     <!-- ... -->
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
+```
+
+```tsx
+<IgrGridToolbar key="toolbar">
+    <IgrGridToolbarActions key="toolbarActions">
+
+    </IgrGridToolbarActions>
+</IgrGridToolbar>
+
 ```
 <!-- Angular -->
 
@@ -350,6 +418,13 @@ constructor() {
 </igc-grid-toolbar>
 ```
 
+```tsx
+<IgrGridToolbar key="toolbar">
+    <IgrGridToolbarActions key="toolbarActions">
+        <IgrGridToolbarPinning key="pinning" title="Grid pinned columns" prompt="Filter column collection" columnListHeight="400px"></IgrGridToolbarPinning>
+    </IgrGridToolbarActions>
+</IgrGridToolbar>
+```
 
 ### 列の非表示
 
@@ -388,6 +463,14 @@ constructor() {
 </igc-grid-toolbar>
 ```
 
+```tsx
+<IgrGridToolbar key="toolbar">
+    <IgrGridToolbarActions key="toolbarActions">
+        <IgrGridToolbarHiding key="hiding" title="Grid column hiding" prompt="Filter column collection" columnListHeight="400px"></IgrGridToolbarHiding>
+    </IgrGridToolbarActions>
+</IgrGridToolbar>
+```
+
 ### 高度なフィルタリング
 
 ツールバーの高度なフィルタリング コンポーネントは、高度なフィルタリング機能のデフォルトの UI を提供します。コンポーネントは、ボタンのデフォルトのテキストを変更する方法を公開します。
@@ -414,6 +497,14 @@ constructor() {
         <igc-grid-toolbar-advanced-filtering>Custom text for the toggle button</igc-grid-toolbar-advanced-filtering>
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
+```
+
+```tsx
+<IgrGridToolbar key="toolbar">
+    <IgrGridToolbarActions key="toolbarActions">
+        <IgrGridToolbarAdvancedFiltering key="advancedFiltering"></IgrGridToolbarAdvancedFiltering>
+    </IgrGridToolbarActions>
+</IgrGridToolbar>
 ```
 
 ### データのエクスポート
@@ -490,6 +581,14 @@ export class AppModule { ... }
 </igc-grid-toolbar>
 ```
 
+```tsx
+<IgrGridToolbar key="toolbar">
+    <IgrGridToolbarActions key="toolbarActions">
+        <IgrGridToolbarExporter key="export" exportCSV="true" exportExcel="true" filename="exported_data"></IgrGridToolbarExporter>
+    </IgrGridToolbarActions>
+</IgrGridToolbar>
+```
+
 エクスポートされたファイル名を変更することに加えて、ユーザーは `ToolbarExporting` イベントを待機し、イベント プロパティのオプション エントリをカスタマイズすることで、エクスポーター オプションをさらに構成できます。
 
 > [!Note]
@@ -516,6 +615,21 @@ constructor() {
 }
 ```
 <!-- end: WebComponents -->
+
+```tsx
+function configureExport(evt: IgrGridToolbarExportEventArgs) {
+    const args = evt.detail;
+    const options: IgrExporterOptionsBase = args.options;
+
+    options.fileName = `Report_${new Date().toDateString()}`;
+    (args.exporter as any).columnExporting.subscribe((columnArgs: any) => {
+            columnArgs.cancel = columnArgs.header === 'Athlete' || columnArgs.header === 'Country';
+    });
+}
+
+<{ComponentSelector} toolbarExporting={configureExport}>
+</{ComponentSelector}>
+```
 
 
 <!-- Angular -->
@@ -649,19 +763,23 @@ igRegisterScript("WebGridToolbarExporting", (evt) => {
 
 <!-- end: Angular, WebComponents -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 ## スタイル設定
 
 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
 一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
-```ts
-<igc-grid class="grid">
+```html
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid Class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
 
 次に、そのクラスに関連する CSS プロパティを設定します。
@@ -678,7 +796,7 @@ igRegisterScript("WebGridToolbarExporting", (evt) => {
 
 `sample="/{ComponentSample}/toolbar-style", height="540", alt="{Platform} {ComponentTitle} ツールバーのスタイル設定の例"`
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- Angular -->
 

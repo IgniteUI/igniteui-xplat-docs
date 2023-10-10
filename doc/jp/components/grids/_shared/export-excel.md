@@ -136,6 +136,18 @@ public webGridExportEventFreezeHeaders(args: any): void {
 ```
 <!-- end: WebComponents -->
 
+```tsx
+function exportEventFreezeHeaders(grid: IgrGridBaseDirective, args: IgrExporterEvent) {
+    args.detail.options.freezeHeaders = true;
+}
+
+<IgrGridToolbar key="toolbar">
+  <IgrGridToolbarActions key="toolbarActions">
+    <IgrGridToolbarExporter key="exporting" exportStarted={exportEventFreezeHeaders}></IgrGridToolbarExporter>
+  </IgrGridToolbarActions>
+</IgrGridToolbar>
+```
+
 ```razor
  <IgbGrid>
     <IgbGridToolbar>

@@ -21,7 +21,7 @@ _language: ja
 <!-- end: Angular -->
 デフォルトで、`{ComponentName}` は独自のロジックを使用してデータ操作を実行します。
 
-これらのタスクをリモートで実行し、`{ComponentName}`で公開される特定の入力とイベントを使用して `{ComponentName}` に結果のデータを供給できます。
+これらのタスクをリモートで実行し、`{ComponentName}` で公開される特定の入力とイベントを使用して `{ComponentName}` に結果のデータを供給できます。
 
 <!-- Angular -->
 
@@ -88,7 +88,7 @@ BLAZOR CODE SNIPPET HERE
 
 <!-- end: Angular -->
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 
 ## 無限スクロール
 
@@ -96,7 +96,7 @@ BLAZOR CODE SNIPPET HERE
 
 無限スクロールを実装するには、データを分割してフェッチする必要があります。すでにフェッチされたデータはローカルに保存し、チャンクの長さおよび数を決定する必要があります。また、グリッドで最後に表示されるデータ行インデックスを追跡する必要があります。このように、`StartIndex` と `ChunkSize` プロパティを使用して、ユーザーが上にスクロールして既にフェッチしたデータを表示するか、下にスクロールしてエンドポイントからさらにデータをフェッチする必要があるかを決定できます。
 
-<!-- end: Angular, WebComponents -->
+<!-- end: Angular, WebComponents, React -->
 
 <!-- Angular -->
 
@@ -300,7 +300,7 @@ BLAZOR CODE SNIPPET HERE
 
 Excel スタイル フィルタリング ダイアログ内のリスト項目は、それぞれの列の一意の値を表します。`{ComponentName}` は、デフォルトでデータソースに基づいてこれらの値を生成します。リモート フィルタリングの場合、グリッドのデータにはサーバーからのすべてのデータが含まれていません。これらの一意の値を手動で提供し、オンデマンドで読み込むために、`{ComponentName}` の `UniqueColumnValuesStrategy` 入力を利用できます。この入力は、実際には 3 つの引数を提供するメソッドです。
 
-- `Column`  - それぞれの列インスタンス。
+- `Column` - それぞれの列インスタンス。
 - `FilteringExpressionsTree` - フィルタリング式ツリー。各列に基づいて削減されます。
 - `Done` - サーバーから取得されたときに、新しく生成された列値で呼び出されるコールバック。
 
