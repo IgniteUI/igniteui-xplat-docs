@@ -350,7 +350,7 @@ public dragIndicatorIconTemplate = (ctx: IgcGridEmptyTemplateContext) => {
 function dragIndicatorIconTemplate(ctx: IgrGridEmptyTemplateContext) {
     return (
         <>
-            <IgrIcon iconName="drag_handle" collection="material" />
+            <IgrIcon name="drag_handle" collection="material" />
         </>
     );
 }

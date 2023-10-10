@@ -459,7 +459,7 @@ function summaryTemplate(ctx: IgrSummaryTemplateContext) {
   return (
     <>
       <span>My custom summary template</span>
-      <span>{ctx.dataContext.implicit[0].label} - {ctx.dataContext.implicit[0].result}</span>
+      <span>{ctx.dataContext.implicit[0].label} - {ctx.dataContext.implicit[0].summaryResult}</span>
     </>
   );
 }
@@ -488,9 +488,11 @@ When a default summary is defined, the height of the summary area is calculated 
 
 <!-- end: Angular -->
 
+<!-- Angular, WebComponents, React -->
 
 `sample="/{ComponentSample}/data-summary-template", height="650", alt="{Platform} {ComponentTitle} data summary template"`
 
+<!-- end: Angular, WebComponents, React -->
 
 <!-- Angular, WebComponents -->
 
