@@ -721,7 +721,7 @@ function updateValue(event, value) {
 }
 ```
 
-Make sure to check the API for the `GridCell` in order to get accustomed with the provided properties you can use in your templates.
+Make sure to check the API for the `Cell` in order to get accustomed with the provided properties you can use in your templates.
 
 ### Column Template API
 

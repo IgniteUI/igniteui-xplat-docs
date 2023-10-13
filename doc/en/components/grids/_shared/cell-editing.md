@@ -112,7 +112,7 @@ this.hierarchicalGrid.UpdateCell(newValue, rowID, 'ReorderLevel')
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-Another way to update cell is directly through `Update` method of `GridCell`:
+Another way to update cell is directly through `Update` method of `Cell`:
 
 <!-- ComponentStart: Grid -->
 
@@ -1071,7 +1071,7 @@ In addition to the steps above, we can also style the controls that are used for
 * `TreeGridRow`
 
 <!-- ComponentEnd: TreeGrid -->
-* `GridCell`
+* `Cell`
 <!-- Angular -->
 * `InputDirective`
 <!-- end:Angular -->
