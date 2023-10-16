@@ -9,7 +9,17 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Selection Overview
 
-With the {ProductName} `{ComponentName}` you can easily select data by using variety of events, rich API or with simple mouse interactions like single select.
+With the {Platform} {ComponentTitle} Select feature in {ProductName} you can easily interact with and manipulate data using simple mouse interactions. There are three selection modes available: 
+
+- Row selection
+- Cell selection 
+- Column selection 
+
+With the `RowSelection` property, you can specify:
+
+- None 
+- Single  
+- Multiple Select 
 
 ## {Platform} {ComponentTitle} Selection Example
 

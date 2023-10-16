@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform}  {ComponentTitle} Column Resizing Overview
 
-With deferred grid column resizing, the user will see a temporary resize indicator while the {Platform} drag resizing operation is in effect. In the `{ComponentName}`, new column width is applied once the drag operation has ended.
+The {Platform} {ComponentTitle} Column Resizing feature in {ProductName} allows users to easily adjust the width of the columns of the {ComponentTitle}. By default, they will see a temporary resize indicator while the drag resizing operation is in effect. There are several resizing options available - Resizing Columns in Pixels/Percentages, Restrict Column Resizing, Auto-Size Columns on Double Click, and Auto-Size Columns on Initialization.
 
 ## {Platform}  {ComponentTitle} Column Resizing Example
 

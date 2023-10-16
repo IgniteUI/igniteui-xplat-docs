@@ -1,5 +1,5 @@
 ---
-title: Cell Editing in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Cell Editing - {ProductName}
 _description: The {ComponentTitle} is using in-cell editing. It has a default cell editing template, but it also lets you define your own custom templates for update-data action. Try it now!
 _keywords: data manipulation, excel editing, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,7 +9,8 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Cell Editing
 
-{ProductName} `{ComponentName}` provides a great data manipulation capabilities and powerful API for {Platform} CRUD operations. By default the `{ComponentName}` is using **in cell** editing and different editors will be shown based on the column data type, thanks to the **default cell editing template**.
+The {Platform} {ComponentTitle} Cell Editing feature in {ProductName} provides a great data manipulation capability of the content of individual cells within the {Platform} {ComponentTitle} component and comes with powerful API for React CRUD operations. It is a fundamental feature in apps like spreadsheets, data tables, and data grids, allowing users to add, edit, or update data within specific cells. This feature also 
+By default, the Grid in {ProductName} is used in cell editing. And due to the **default cell editing template**, there will be different editors based on the column data type Top of Form.
 
 In addition, you can define your own custom templates for update-data actions and to override the default behavior for committing and discarding any changes.
 
