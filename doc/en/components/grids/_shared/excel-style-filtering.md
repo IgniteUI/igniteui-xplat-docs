@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # Excel Filtering in {Platform} {ComponentTitle}
 
-The {ProductName} {ComponentTitle} exposes an Excel-style filtering feature that provides an Excel-like filtering UI. It simplifies the process of working with large datasets. The main idea is to help them filter the data that is most relevant, while eliminating irrelevant entries.
+The {Platform} {ComponentTitle} exposes an Excel-style filtering feature that provides an Excel-like filtering UI. It simplifies the process of working with large datasets. The main idea is to help them filter the data that is most relevant, while eliminating irrelevant entries.
 
 ## {Platform} {ComponentTitle} Excel Style Filtering Example
 
