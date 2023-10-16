@@ -160,8 +160,7 @@ public bindEventsCountryCombo(rowId: any, cell: any) {
 
 ```tsx
     function onCountryChange(rowId: string, cmp: any, args:any) {
-        const regionCombo = this.comboRefCollection.get("region_" + rowId);
-        const regions = this.regions;
+        const regionCombo = comboRefCollection.get("region_" + rowId);
        setTimeout(() => {
             const newValue = cmp.value[0];
             if (newValue === undefined) {
