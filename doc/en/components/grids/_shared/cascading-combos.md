@@ -33,10 +33,13 @@ Once the column editing is enabled, you can start by adding your `Combo`. Please
 <!-- WebComponents, Blazor, React -->
 To get started with the `Combo`, first you need to import it:
 
+
+<!-- WebComponents -->
 ```ts
 import { IgcComboComponent, defineAllComponents } from 'igniteui-webcomponents';
 defineAllComponents();
 ```
+<!-- end: WebComponents -->
 
 ```razor
 builder.Services.AddIgniteUIBlazor(
