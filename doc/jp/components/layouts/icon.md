@@ -132,7 +132,7 @@ registerIcon(
 
 ```tsx
 
-<IgrIcon ref={this.iconRef} iconName="search" collection="material" />
+<IgrIcon ref={this.iconRef} name="search" collection="material" />
 
 public iconRef(icon: IgrIcon) {
     if (!icon) {
@@ -158,7 +158,7 @@ IgbIcon IconName="search" Collection="material" />
 ```
 
 ```tsx
-<IgrIcon iconName="search" collection="material" />
+<IgrIcon name="search" collection="material" />
 ```
 
 アイコンを登録する 2 番目の方法は、SVG 文字列を `RegisterIconFromText` メソッドに渡すことです。
@@ -190,7 +190,7 @@ registerIconFromText("search", searchIcon, "material");
 
 ```tsx
 
-<IgrIcon ref={this.iconRef} iconName="search" collection="material" />
+<IgrIcon ref={this.iconRef} name="search" collection="material" />
 
 public iconRef(icon: IgrIcon) {
     if (!icon) {
@@ -240,7 +240,7 @@ IgbIcon IconName="search" Collection="material" Mirrored="true" />
 ```
 
 ```tsx
-<IgrIcon iconName="search" collection="material" mirrored={true} />
+<IgrIcon name="search" collection="material" mirrored={true} />
 ```
 
 ## スタイル設定

@@ -460,7 +460,7 @@ function summaryTemplate(ctx: IgrSummaryTemplateContext) {
   return (
     <>
       <span>My custom summary template</span>
-      <span>{ctx.dataContext.implicit[0].label} - {ctx.dataContext.implicit[0].result}</span>
+      <span>{ctx.dataContext.implicit[0].label} - {ctx.dataContext.implicit[0].summaryResult}</span>
     </>
   );
 }
@@ -489,9 +489,11 @@ igRegisterScript("SummaryTemplate", (ctx) => {
 
 <!-- end: Angular -->
 
+<!-- Angular, WebComponents, React -->
 
 `sample="/{ComponentSample}/data-summary-template", height="650", alt="{Platform} {ComponentTitle} データ集計のテンプレート"`
 
+<!-- end: Angular, WebComponents, React -->
 
 <!-- Angular, WebComponents -->
 
