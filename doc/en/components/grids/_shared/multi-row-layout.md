@@ -91,6 +91,28 @@ The `Column` component exposes four `Input` properties to determine the location
 </igc-column-layout>
 ```
 
+```tsx
+<IgrColumnLayout>
+    <IgrColumn rowStart="1" colStart="1" rowEnd="3" field="ID"></IgrColumn>
+</IgrColumnLayout>
+<IgrColumnLayout>
+    <IgrColumn rowStart="1" colStart="1" colEnd="3" field="CompanyName"></IgrColumn>
+    <IgrColumn rowStart="2" colStart="1" colEnd="2" field="ContactName"></IgrColumn>
+    <IgrColumn rowStart="2" colStart="2" colEnd="3" field="ContactTitle"></IgrColumn>
+</IgrColumnLayout>
+<IgrColumnLayout>
+    <IgrColumn rowStart="1" colStart="1" colEnd="3" field="Country"></IgrColumn>
+    <IgrColumn rowStart="1" colStart="3" colEnd="5" field="Region"></IgrColumn>
+    <IgrColumn rowStart="1" colStart="5" colEnd="7" field="PostalCode"></IgrColumn>
+    <IgrColumn rowStart="2" colStart="1" colEnd="4" field="City"></IgrColumn>
+    <IgrColumn rowStart="2" colStart="4" colEnd="7" field="Address"></IgrColumn>
+</IgrColumnLayout>
+<IgrColumnLayout>
+    <IgrColumn rowStart="1" colStart="1" field="Phone"></IgrColumn>
+    <IgrColumn rowStart="2" colStart="1" field="Fax"></IgrColumn>
+</IgrColumnLayout>
+```
+
 The result of the above configuration can be seen on the screenshot below:
 
 <img src="../../../images/multi-row-layout-1.png" style="width: 100%"/>
@@ -317,7 +339,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 ## Styling
 
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
@@ -329,6 +351,10 @@ In case you would like to change some of the colors, you need to set a class for
 
 ```razor
 <IgbGrid class="grid"></IgbGrid>
+```
+
+```tsx
+<IgrGrid className="grid"></IgrGrid>
 ```
 
 Then set the related CSS properties to this class:
@@ -348,7 +374,7 @@ Then set the related CSS properties to this class:
 `sample="/{ComponentSample}/multi-row-layout-styling", height="755", alt="{Platform} {ComponentTitle} Multi Row Layout Styling Example"`
 
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 ## API References
 
