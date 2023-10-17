@@ -289,9 +289,9 @@ function nextSearch() {
     gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
 }
 
-<IgrIconButton key="prevIconButton" ref={iconButtonPrevRef} variant="flat" iconName="prev" collection="material" clicked={prevSearch}>
+<IgrIconButton key="prevIconButton" ref={iconButtonPrevRef} variant="flat" name="prev" collection="material" clicked={prevSearch}>
 </IgrIconButton>
-<IgrIconButton key="nextIconButton" ref={iconButtonNextRef} variant="flat" iconName="next" collection="material" clicked={nextSearch}>
+<IgrIconButton key="nextIconButton" ref={iconButtonNextRef} variant="flat" name="next" collection="material" clicked={nextSearch}>
 </IgrIconButton>
 ```
 
@@ -703,7 +703,7 @@ useEffect(() => {
 
 <IgrInput name="searchBox" value={searchText} inputOcurred={handleOnSearchChange}>
     <div slot="prefix" key="prefix">
-        <IgrIconButton key="clearIcon" ref={clearIconRef} variant="flat" iconName="clear" collection="material" clicked={clearSearch}>
+        <IgrIconButton key="clearIcon" ref={clearIconRef} variant="flat" name="clear" collection="material" clicked={clearSearch}>
         </IgrIconButton>
     </div>
     <div slot="suffix" key="chipSuffix">
@@ -715,9 +715,9 @@ useEffect(() => {
         </IgrChip>
     </div>
     <div slot="suffix" key="buttonsSuffix">
-        <IgrIconButton key="prevIconButton" ref={iconButtonPrevRef} variant="flat" iconName="prev" collection="material" clicked={prevSearch}>
+        <IgrIconButton key="prevIconButton" ref={iconButtonPrevRef} variant="flat" name="prev" collection="material" clicked={prevSearch}>
         </IgrIconButton>
-        <IgrIconButton key="nextIconButton" ref={iconButtonNextRef} variant="flat" iconName="next" collection="material" clicked={nextSearch}>
+        <IgrIconButton key="nextIconButton" ref={iconButtonNextRef} variant="flat" name="next" collection="material" clicked={nextSearch}>
         </IgrIconButton>
     </div>
 </IgrInput>
@@ -903,9 +903,9 @@ function nextSearch() {
 }
 
 <div slot="suffix" key="buttonsSuffix">
-    <IgrIconButton key="prevIconButton" ref={iconButtonPrevRef} variant="flat" iconName="prev" collection="material" clicked={prevSearch}>
+    <IgrIconButton key="prevIconButton" ref={iconButtonPrevRef} variant="flat" name="prev" collection="material" clicked={prevSearch}>
     </IgrIconButton>
-    <IgrIconButton key="nextIconButton" ref={iconButtonNextRef} variant="flat" iconName="next" collection="material" clicked={nextSearch}>
+    <IgrIconButton key="nextIconButton" ref={iconButtonNextRef} variant="flat" name="next" collection="material" clicked={nextSearch}>
     </IgrIconButton>
 </div>
 ```

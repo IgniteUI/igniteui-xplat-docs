@@ -198,7 +198,7 @@ igc-chip {
 }
 ```
 
-`sample="/inputs/chip/size", height="80", alt="{Platform} Chip Size Example"`
+`sample="/inputs/chip/size", height="80", alt="{Platform} Chip Size の例"`
 
 
 ## スタイル設定

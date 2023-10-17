@@ -45,6 +45,10 @@ constructor() {
     <IgbGrid DetailTemplateScript="DetailTemplate"  AutoGenerate=true  Data=northwindEmployees></IgbGrid>
 ```
 
+```ts
+<IgrGrid detailTemplate={masterDetailTemplate} autoGenerate="false" data={nwindData}>
+```
+
 テンプレートのコンテキストはマスター レコード データであるため、マスター レコードの値を詳細テンプレートに表示できます。例:
 
 ```html
@@ -80,6 +84,19 @@ igRegisterScript("DetailTemplate", (ctx) => {
         <span><strong>Company:</strong> ${data.CompanyName}</span> <br/>
     </div>`;
 }, false);
+```
+
+```ts
+const masterDetailTemplate = ({dataContext}:{dataContext: IgrGridMasterDetailContext}) => {
+    const data = dataContext.implicit;
+    return (
+        <div className="contact-container">
+            <span><strong>Name:</strong> {data.ContactName}</span> <br/>
+            <span><strong>Title:</strong> {data.ContactTitle}</span> <br/>
+            <span><strong>Company:</strong> {data.CompanyName}</span> <br/>
+        </div>
+    );
+}
 ```
 
 ## API

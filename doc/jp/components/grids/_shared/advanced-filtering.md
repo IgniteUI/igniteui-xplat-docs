@@ -58,6 +58,25 @@ constructor() {
 }
 ```
 <!-- end: WebComponents -->
+<!-- React -->
+```html
+<{ComponentSelector} data={this.nwindData} autoGenerate="false" ref={this.gridRef} allowAdvancedFiltering="true">
+    <IgrGridToolbar>
+        <IgrGridToolbarActions>
+            <IgrGridToolbarAdvancedFilering></IgrGridToolbarAdvancedFilering>
+        </IgrGridToolbarActions>
+    </IgrGridToolbar>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} data={nwindData} autoGenerate="false" ref={gridRef} allowAdvancedFiltering="true">
+    <IgrGridToolbar></IgrGridToolbar>
+</{ComponentSelector}>
+```
+<!-- end: React -->
 
 高度なフィルタリングは、`AdvancedFilteringExpressionsTree` 入力プロパティに保存される `FilteringExpressionsTree` を生成します。`AdvancedFilteringExpressionsTree` プロパティを使用して、高度なフィルタリングの初期状態を設定できます。
 
@@ -93,6 +112,7 @@ ngAfterViewInit(): void {
 
 <!-- end: Angular -->
 
+<!-- WebComponents -->
 ```typescript
 connectedCallback(): void {
     const tree = new IgcFilteringExpressionsTree(FilteringLogic.And);
@@ -119,6 +139,37 @@ connectedCallback(): void {
     grid.advancedFilteringExpressionsTree = tree;
 }
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+<!--```typescript
+This code snippet cannot currently be achieved in React
+componentDidMount() {
+    const tree = new IgrFilteringExpressionsTree(FilteringLogic.And);
+    tree.filteringOperands.push({
+        fieldName: 'ProductName',
+        condition: new IgrStringFilteringOperand.condition('contains'),
+        searchVal: 'cha',
+        ignoreCase: true
+    });
+    const subTree = new IgrFilteringExpressionsTree(FilteringLogic.Or);
+    subTree.filteringOperands.push({
+        fieldName: 'ProductName',
+        condition: new IgrStringFilteringOperand.condition('doesNotContain'),
+        searchVal: 'b',
+        ignoreCase: true
+    });
+    subTree.filteringOperands.push({
+        fieldName: 'ProductName',
+        condition: new IgrStringFilteringOperand.condition('startsWith'),
+        searchVal: 'Chan',
+        ignoreCase: true
+    });
+    tree.filteringOperands.push(subTree);
+    gridRef.current.advancedFilteringExpressionsTree = tree;
+}
+```-->
+<!-- end: React -->
 
 `{ComponentName}` ツールバーを表示したくない場合は、`OpenAdvancedFilteringDialog` および `CloseAdvancedFilteringDialog` メソッドを使用して、高度なフィルタリング ダイアログをコーディングを使用して開いたり閉じたりできます。
 
@@ -472,6 +523,10 @@ $custom-drop-down: drop-down-theme(
 
 ```razor
 <IgbGrid class="grid"></IgbGrid>
+```
+
+```tsx
+<{ComponentName} className="grid"></{ComponentName}>
 ```
 
 次に、そのクラスに関連する CSS プロパティを設定します。

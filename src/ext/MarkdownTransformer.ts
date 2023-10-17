@@ -130,7 +130,8 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
             let packageText = "";
             if (packageName) {
                 if (packageName == "igniteui-webgrids") {
-                    packageText = "igniteui_" + getPlatformName(<APIPlatform>options.platform).toLowerCase() + "_grids_grids."
+                    const packageSuffix = (platform == APIPlatform.React ? "" : "_grids") + "_grids.";
+                    packageText = "igniteui_" + getPlatformName(<APIPlatform>options.platform).toLowerCase() + packageSuffix;
                 } else if (packageName == "igniteui-webinputs") {
                     packageText = "";
                     if (platform == APIPlatform.React) {
@@ -166,7 +167,7 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
             //     linkText = linkText + "#" + prefix + memberName;
             // }
         } else { // Angular, React, WC
-            linkText = linkText + "#" + memberName.toLowerCase();
+            linkText = linkText + "#" + memberName;
         }
     }
 

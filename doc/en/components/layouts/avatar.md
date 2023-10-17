@@ -94,7 +94,7 @@ The avatar has several attributes that allow rendering different content based o
 
 ```tsx
 <IgrAvatar>
-    <IgrIcon iconName="home" />
+    <IgrIcon name="home" />
 </IgrAvatar>
 ```
 
@@ -118,7 +118,7 @@ If the `initials` attribute is set all children elements of the avatar will be i
 
 ```tsx
 <IgrAvatar initials="AZ">
-    <IgrIcon iconName="home" />
+    <IgrIcon name="home" />
 </IgrAvatar>
 ```
 
@@ -151,7 +151,7 @@ The avatar can also display an image when the `src` attribute is assigned a vali
 <IgrAvatar initials="AZ"
            src="https://static.infragistics.com/xplatform/images/people/men/1.jpg"
            alt="A photo of a man.">
-    <IgrIcon iconName="home" />
+    <IgrIcon name="home" />
 </IgrAvatar>
 ```
 

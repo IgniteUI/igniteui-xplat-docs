@@ -34,6 +34,10 @@ _language: ja
 <igc-column field="ID" width="100px" resizable="true"></igc-column>
 ```
 
+```tsx
+<IgrColumn field="ID" resizable="true" width="100px"></IgrColumn>
+```
+
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -48,6 +52,10 @@ _language: ja
 
 ```html
 <igc-column field="Artist" resizable="true"></igc-column>
+```
+
+```tsx
+<IgrColumn field="Artist" resizable="true"></IgrColumn>
 ```
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -76,23 +84,18 @@ _language: ja
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-
-    this._bind = () => {
-        grid1.data = this.data;
-        grid1.columnResized = this.onResize;
-    }
-    this._bind();
+    grid1.data = this.data;
+    grid1.columnResized = this.onResize;
 }
-```
-<!-- end: WebComponents -->
 
-```typescript
 public onResize(event) {
     this.col = event.column;
     this.pWidth = event.prevWidth;
     this.nWidth = event.newWidth;
 }
+
 ```
+<!-- end: WebComponents -->
 
 ```razor
 <{ComponentSelector} Data=data AutoGenerate=false ColumnResized="onResize">
@@ -108,6 +111,19 @@ public onResize(event) {
         string nWidth = args.Detail.NewWidth;
     }
 }
+```
+
+```tsx
+function onResize(grid: IgrGridBaseDirective, event: IgrColumnMovingEventArgs) {
+  IgrColumn col = event.detail.column;
+  string pWidth = event.detail.prevWidth;
+  string nWidth = event.detail.newWidth;
+}
+
+<{ComponentSelector} id="grid" autoGenerate="false" columnResized={onResize}>
+    <IgrColumn field="ID" width="100px" resizable="true"></IgrColumn>
+    <IgrColumn field="CompanyName" width="100px" resizable="true"></IgrColumn>
+</{ComponentSelector}>
 ```
 
 <!-- ComponentEnd: Grid -->
@@ -133,12 +149,8 @@ public onResize(event) {
 ```ts
 constructor() {
     var treeGrid = this.treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
-
-    this._bind = () => {
-        treeGrid.data = this.data;
-        treeGrid.columnResized = this.onResize;
-    }
-    this._bind();
+    treeGrid.data = this.data;
+    treeGrid.columnResized = this.onResize;
 }
 ```
 <!-- end: WebComponents -->
@@ -187,12 +199,8 @@ public onResize(event) {
 ```ts
 constructor() {
     var hierarchicalGrid = this.hierarchicalGrid = document.getElementById('hierarchicalGrid') as IgcHierarchicalGridComponent;
-
-    this._bind = () => {
-        hierarchicalGrid.data = this.data;
-        hierarchicalGrid.columnResized = this.onResize;
-    }
-    this._bind();
+    hierarchicalGrid.data = this.data;
+    hierarchicalGrid.columnResized = this.onResize;
 }
 ```
 
@@ -240,6 +248,14 @@ TO DO!
     <igc-column field="CompanyName" width="100px" resizable="true"></igc-column>
     <igc-column field="ContactTitle" resizable="true"></igc-column>
 </igc-grid>
+```
+
+```tsx
+<IgrGrid id="grid" auto-generate="false">
+    <IgrColumn field="ID" width="10%" resizable="true"></IgrColumn>
+    <IgrColumn field="CompanyName" width="100px" resizable="true"></IgrColumn>
+    <IgrColumn field="ContactTitle" resizable="true"></IgrColumn>
+</IgrGrid>
 ```
 
 <!-- ComponentEnd: Grid -->
@@ -320,6 +336,11 @@ TO DO!
             min-width="60px" max-width="230px"></igc-column>
 ```
 
+```tsx
+<IgrColumn field="ID" width="100px" resizable="true"
+            min-width="60px" max-width="230px"></IgrColumn>
+```
+
 ```razor
 <IgbColumn Field="ContactTitle" Resizable=true Width="100px" MinWidth="60px" MaxWidth="230px"></IgbColumn>
 ```
@@ -337,6 +358,11 @@ TO DO!
             min-width="60px" max-width="230px"></igc-column>
 ```
 
+```tsx
+<IgrColumn field="ID" width="10%" resizable="true"
+            min-width="60px" max-width="230px"></IgrColumn>
+```
+
 ```razor
 <IgbColumn Field="ContactTitle" Resizable=true Width="10%" MinWidth="60px" MaxWidth="230px"></IgbColumn>
 ```
@@ -350,6 +376,11 @@ TO DO!
 ```html
 <igc-column field="ID" width="100px" resizable="true"
             min-width="5%" max-width="15%"></igc-column>
+```
+
+```tsx
+<IgrColumn field="ID" width="100px" resizable="true"
+            min-width="5%" max-width="15%"></IgrColumn>
 ```
 
 ```razor
@@ -374,12 +405,13 @@ column.autosize();
 ```typescript
 constructor() {
     var id = this.id = document.getElementById('ID') as IgcColumnComponent;
-
-    this._bind = () => {
-        id.autosize();
-    }
-    this._bind();
+    id.autosize();
 }
+```
+
+```tsx
+    const column = grid.getColumnByName('ID');
+    column.autosize();
 ```
 
 ```razor
@@ -406,6 +438,10 @@ constructor() {
 <igc-column width='auto'>
 ```
 
+```tsx
+<IgrColumn width='auto'>
+```
+
 ```razor
 <IgbColumn Width="auto"></IgbColumn>
 ```
@@ -415,94 +451,11 @@ constructor() {
 このアプローチは、初期化後の自動サイズ変更よりもパフォーマンスが最適化されており、特に多数の列のサイズを自動サイズ設定する必要がある場合に推奨されます。
 
 `sample="/{ComponentSample}/column-auto-sizing", height="550", alt="{Platform} {ComponentTitle} 列のサイズ変更の例"`
-
-<!-- WebComponents, Blazor -->
-
-## スタイル設定
-
-事前定義されたテーマに加えて、利用可能な [CSS プロパティ](../theming.md)を設定することでグリッドをさらにカスタマイズできます。
-一部の色を変更したい場合は、最初にグリッドの `ID` を設定する必要があります。
-
-<!-- ComponentStart: Grid -->
-
-```html
-<igc-grid id="grid"></igc-grid>
-```
-
-```razor
-<IgbGrid Id="grid"></IgbGrid>
-```
-
-<!-- ComponentEnd: Grid -->
-
-<!-- ComponentStart: TreeGrid -->
-
-```html
-<igc-tree-grid id="treeGrid"></igc-tree-grid>
-```
-
-```razor
-<IgbTreeGrid Id="treeGrid"></IgbTreeGrid>
-```
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-```html
-<igc-hierarchical-grid id="hierarchicalGrid"></igc-hierarchical-grid>
-```
-
-```razor
-<IgbHierarchicalGrid Id="hierarchicalGrid"></IgbHierarchicalGrid>
-```
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
-
-次に、そのクラスに関連する CSS プロパティを設定します。
-
-<!-- ComponentStart: Grid -->
-
-```css
-#grid {
-    --resize-line-color: #0288D1;
-}
-```
-
-<!-- ComponentEnd: Grid -->
-
-<!-- ComponentStart: TreeGrid -->
-
-```css
-#treeGrid {
-    --resize-line-color: #0288D1;
-}
-```
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-```css
-#hierarchicalGrid {
-    --resize-line-color: #0288D1;
-}
-```
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
-### スタイル設定の例
-
-`sample="/{ComponentSample}/cell-editing-style", height="650", alt="{Platform} {ComponentTitle} セル編集スタイル設定の例"`
-
-<!-- end: WebComponents, Blazor -->
-
 <!-- Angular -->
 
 ## スタイル設定
 
-`{ComponentName}` 列のサイズ変更行のスタイル設定は、すべてのテーマ関数とコンポーネント ミックスインが存在するインデックス ファイルをインポートする必要があります。
+列`{ComponentName}` のサイズ変更行のスタイル設定は、すべてのテーマ関数とコンポーネント ミックスインが存在するインデックス ファイルをインポートする必要があります。
 
 ```scss
 @use "igniteui-angular/theming" as *;
@@ -601,23 +554,25 @@ $custom-grid-theme: grid-theme(
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 ## スタイル設定
 
 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
 サイズ変更ハンドルの色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
-```ts
-<igc-grid class="grid">
+```html
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid Class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 次に、そのクラスに関連する CSS プロパティを設定します:
-
-<!-- WebComponents -->
 
 ```css
 .grid {
@@ -625,20 +580,12 @@ $custom-grid-theme: grid-theme(
 }
 ```
 
-<!-- end: WebComponents -->
-
-```razor
-<style>
-.grid {
-    --ig-grid-resize-line-color: #f35b04;
-}
-</style>
-```
-<!-- end: WebComponents, Blazor -->
-
 ### デモ
 
 `sample="/{ComponentSample}/column-resizing-styling", height="550", alt="{Platform} {ComponentTitle} 列のサイズ変更のスタイル設定の例"`
+
+<!-- end: WebComponents, Blazor, React -->
+
 
 ## API リファレンス
 

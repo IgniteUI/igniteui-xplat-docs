@@ -13,7 +13,7 @@ _language: ja
 
 ## {ProductName} Radio の例
 
-`sample="/inputs/radio/group", height="100", alt="{Platform} Radio & Radio Group の例"`
+`sample="/inputs/radio/group", height="150", alt="{Platform} Radio & Radio Group の例"`
 
 
 <div class="divider--half"></div>
@@ -193,7 +193,7 @@ builder.Services.AddIgniteUIBlazor(
 </IgbRadioGroup>
 ```
 
-`sample="/inputs/radio/group", height="100", alt="{Platform} Radio の例"`
+`sample="/inputs/radio/group", height="150", alt="{Platform} Radio の例"`
 
 
 
@@ -248,7 +248,7 @@ builder.Services.AddIgniteUIBlazor(
 </IgbRadioGroup>
 ```
 
-`sample="/inputs/radio/disabled", height="100", alt="{Platform} Radio の例"`
+`sample="/inputs/radio/disabled", height="150", alt="{Platform} Radio の例"`
 
 
 

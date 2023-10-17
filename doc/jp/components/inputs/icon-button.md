@@ -106,7 +106,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbIconButtonModule));
 
 ### サイズ
 
-ボタンのサイズは、CSS 変数 `--ig-size` を使用して、サポートされている 3 つのサイズ (`--ig-size-small`、`--ig-size-medium`、`--ig-size-large` (デフォルト)) のいずれかに変更できます。
+ボタンのサイズは、CSS 変数 `--ig-size` を使用して、サポートされている 3 つのサイズ - `--ig-size-small`、`--ig-size-medium`、`--ig-size-large` (デフォルト) - のいずれかに変更できます。
 
 `sample="/inputs/icon-button/size", height="100", alt="{Platform} Icon Button の例"`
 
