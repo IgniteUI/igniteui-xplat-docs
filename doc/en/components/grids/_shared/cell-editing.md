@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Cell Editing
 
-The {Platform} {ComponentTitle} Cell Editing feature in {ProductName} provides a great data manipulation capability of the content of individual cells within the {Platform} {ComponentTitle} component and comes with powerful API for React CRUD operations. It is a fundamental feature in apps like spreadsheets, data tables, and data grids, allowing users to add, edit, or update data within specific cells. This feature also 
+The {Platform} {ComponentTitle} Cell Editing feature in {ProductName} provides a great data manipulation capability of the content of individual cells within the {Platform} {ComponentTitle} component and comes with powerful API for React CRUD operations. It is a fundamental feature in apps like spreadsheets, data tables, and data grids, allowing users to add, edit, or update data within specific cells.
 By default, the Grid in {ProductName} is used in cell editing. And due to the **default cell editing template**, there will be different editors based on the column data type Top of Form.
 
 In addition, you can define your own custom templates for update-data actions and to override the default behavior for committing and discarding any changes.
