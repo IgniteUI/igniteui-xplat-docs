@@ -2219,7 +2219,7 @@ export class MarkdownTransformer {
         let jsonFile = fs.readFileSync(jsonPath);
         let jsonContent = jsonFile.toString();
 
-        let tocNodes = this.filterTOC(jsonContent, platform, language, excludedFiles);
+        let tocNodes = this.filterTOC(jsonContent, platform, language, excludedFiles); //here
 
         // optional start:
         // let tocPath = jsonPath.replace('toc.json', 'toc_' + platform + '.json')
@@ -2353,6 +2353,10 @@ export class MarkdownTransformer {
                     // node.href = node.href.replace(".md", ".html");
                 }
 
+                if (node.status) {
+                    node.status = this.parseNodeStatus(node.status, platform);
+                }
+
                 node.exclude = undefined;
                 // recursively check if child items need to be excluded
                 if (node.items !== undefined &&
@@ -2367,6 +2371,17 @@ export class MarkdownTransformer {
             }
         }
         return matchingNodes;
+    }
+
+    parseNodeStatus(status: string | string[], platform: string) {
+        let resultStatus = '';
+        if (status instanceof Array) {
+            const platformStatus = status.find(s => s.toLowerCase().indexOf(platform.toLowerCase()) !== -1) || '';
+            resultStatus = platformStatus.toLowerCase().split(platform.toLowerCase())[0];
+        } else {
+            resultStatus = status;
+        }
+        return resultStatus;
     }
 
     getNodeInfo(node: TocNode) {
@@ -2431,7 +2446,7 @@ export class Strings {
 
 export class TocNode {
     public name: string;
-    public status?: string;
+    public status?: string | string[];
     public href?: string;
     public header?: boolean;
     public new?: boolean;
