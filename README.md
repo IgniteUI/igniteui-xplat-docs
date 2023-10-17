@@ -78,7 +78,7 @@ yarn install
 
 `./docfx/en/components/toc.json`
   - If you want to add status (new, updated, preview) to all topics for WebComponents, React and Blazor you can set the property status like this `status = "NEW"`
-  - If you want to add status specifix only to a single platform you can set the property status like this `status = ["NEWREACT", "PREVIEWBLAZOR", "UPDATEDWEBCOMPONENTS"]`
+  - If you want to add status specifix only to a single platform you can set the property status like this `status = ["NEW_REACT", "PREVIEW_BLAZOR", "UPDATED_WEBCOMPONENTS"]`
 
 - commit your changes to you branch
 - push your branch to origin

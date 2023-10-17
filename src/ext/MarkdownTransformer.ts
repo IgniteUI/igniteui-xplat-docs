@@ -2377,7 +2377,8 @@ export class MarkdownTransformer {
         let resultStatus = '';
         if (status instanceof Array) {
             const platformStatus = status.find(s => s.toLowerCase().indexOf(platform.toLowerCase()) !== -1) || '';
-            resultStatus = platformStatus.toLowerCase().split(platform.toLowerCase())[0];
+            //Platform status looks like NEW_REACT or UPDATED_WEBCOMPONENTS
+            resultStatus = platformStatus.toLowerCase().split('_')[0];
         } else {
             resultStatus = status;
         }
