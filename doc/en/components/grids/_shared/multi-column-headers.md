@@ -1,5 +1,5 @@
 ---
-title: Multi-Column Headers in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Multi-Column Headers - {ProductName}
 _description: Start grouping column headers by placing them under a common hierarchical header with the help of {ProductName} grid and combine them into multi headers.
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Multi-Column Headers, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
@@ -8,7 +8,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Multi-Column Headers Overview
 
-The {Platform} `{ComponentName}` supports multi-column headers which allow you to group columns by placing them under a common multi-header. Each multi-column headers group could be a representation of combinations between other groups or columns within the Material UI grid.
+The {Platform} {ComponentTitle} in the {ProductName} supports Multi-Column Headers which allow you to group columns by placing them under a common multi-header. Each multi-column headers group could be a representation of combinations between other groups or columns. This feature is particularly useful when dealing with large datasets where scrolling horizontally might be cumbersome.
 
 ## {Platform} {ComponentTitle} Multi-Column Headers Example
 
