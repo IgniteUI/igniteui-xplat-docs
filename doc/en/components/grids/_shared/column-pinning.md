@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Column Pinning
 
-Column Pinning in {ProductName} allows the end users to lock column in a particular column order, this will allow them to see it while horizontally scrolling the `{ComponentName}`. The {Platform} {ComponentTitle} has a built-in column pinning UI, which can be used through the `{ComponentName}`'s toolbar to change the pin state of the columns. In addition, you can define a custom UI and change the pin state of the columns via the Column Pinning feature.
+With {Platform}, developers benefit from the Column Pinning feature that lets them lock specific columns in a desired order, ensuring visibility all the time even when users scroll horizontally through the {Platform} {ComponentTitle}. There’s an integrated UI for Column Pinning, accessible via the {Platform} {ComponentTitle} toolbar. Additionally, developers have the flexibility to build a custom user interface and change the pin state of the columns.
 
 ## {Platform} {ComponentTitle} Column Pinning Example
 
