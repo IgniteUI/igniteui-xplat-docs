@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Conditional Styling
 
-The {Platform} {ComponentTitle} component in {ProductName} allows custom styling on a row or cell level.  The {ComponentTitle} Conditional Styling functionality is used to visually emphasize or highlight data that meets certain criteria, making it easier for users to identify important information or trends within the grid.
+The {ProductName} Conditional Styling feature in {Platform} {ComponentTitle} allows custom styling on a row or cell level.  The `{ComponentName}` Conditional Styling functionality is used to visually emphasize or highlight data that meets certain criteria, making it easier for users to identify important information or trends within the grid.
 
 ## {ComponentTitle} Conditional Row Styling
 

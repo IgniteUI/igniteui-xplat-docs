@@ -9,10 +9,11 @@ namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} with Cascading Combos
-The {ComponentTitle}'s Editing functionality provides with the opportunity to use Cascading Combos. By selecting the value in any preceding `Combo`, the users will receive only the data that is relevant to their selection within the next Combo.
+
+The {ComponentTitle}'s Editing functionality provides with the opportunity to use Cascading Combobox components. By selecting the value in any preceding `Combo`, the users will receive only the data that is relevant to their selection within the next {Platform} Combobox component.
 
 ## Angular {ComponentTitle} with Cascading Combos Sample Overview
-The sample below demonstrates how `Grid` works with nested Cascading `Combo` components.
+The sample below demonstrates how `{ComponentName}` works with nested Cascading `Combo` components.
 
 <!-- ComponentStart: Grid -->
 <code-view style="height:500px"
@@ -30,13 +31,16 @@ In order enable column editing, make sure `editable` property is set to `true`.
 Once the column editing is enabled, you can start by adding your `Combo`. Please note that here in order to have only one single selection available, you will need to use set the `singleSelect` property.
 
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 To get started with the `Combo`, first you need to import it:
 
+
+<!-- WebComponents -->
 ```ts
 import { IgcComboComponent, defineAllComponents } from 'igniteui-webcomponents';
 defineAllComponents();
 ```
+<!-- end: WebComponents -->
 
 ```razor
 builder.Services.AddIgniteUIBlazor(
@@ -45,8 +49,38 @@ builder.Services.AddIgniteUIBlazor(
 );
 ```
 
+```tsx
+import { IgrComboModule, IgrCombo } from 'igniteui-react';
+IgrComboModule.register();
+```
+
 Then you should define the column template with the combo:
 
+
+```tsx
+   <IgrColumn
+    field="Country"
+    header="Country"
+    bodyTemplate={webGridCountryDropDownTemplate}
+    name="column1">
+    </IgrColumn>
+```
+
+```tsx
+    function webGridCountryDropDownTemplate(props: {dataContext: IgrCellTemplateContext}) => {
+        var cell = props.dataContext.cell as any;
+        if (cell === undefined) {
+            return <></>;
+        }
+        const id = cell.id.rowID;
+        const comboId = "country" + id;
+        return (
+        <>
+            <IgrCombo data={countries} ref={comboRefs} change={(x: any, args: any) => {onCountryChange(id, x, args) }} placeholder="Choose Country..." valueKey="Country" displayKey="Country" singleSelect="true" name={comboId}></IgrCombo>
+        </>
+        );
+    }
+```
 
 ```razor
 <IgbColumn Field="Country" Header="Country" BodyTemplate="WebGridCountryDropDownTemplate"></IgbColumn>
@@ -128,7 +162,24 @@ public bindEventsCountryCombo(rowId: any, cell: any) {
     }
 ```
 
-<!-- end: WebComponents, Blazor -->
+```tsx
+    function onCountryChange(rowId: string, cmp: any, args:any) {
+        const regionCombo = comboRefCollection.get("region_" + rowId);
+       setTimeout(() => {
+            const newValue = cmp.value[0];
+            if (newValue === undefined) {
+                regionCombo.deselect(regionCombo.value);
+                regionCombo.disabled = true;
+                regionCombo.data = [];
+            } else {
+                regionCombo.disabled = false;
+                regionCombo.data = regions.filter(x => x.Country === newValue);
+            }
+       });
+    }
+```
+
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- Angular -->
 

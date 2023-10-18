@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Summaries
 
-The {Platform} {ComponentName} Summaries feature in {ProductName} functions on a per-column level as group footer. {Platform} {ComponentName} summaries is powerful feature which enables the user to see column information in a separate container with a predefined set of default summary items, depending on the type of data within the column or by implementing a custom  template in the `{ComponentName}`.
+The {ProductName} Summaries feature in {Platform} {ComponentTitle} functions on a per-column level as group footer. {Platform} {ComponentName} summaries is powerful feature which enables the user to see column information in a separate container with a predefined set of default summary items, depending on the type of data within the column or by implementing a custom  template in the `{ComponentName}`.
 
 ## {Platform} {ComponentTitle} Summaries Overview Example
 
