@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} Paging - Infragistics
+title: {Platform} {ComponentTitle} Paging - {ProductName}
 _description: Configure {Platform} pagination and create custom pages in the {Platform} table by Ignite UI, get data for the requested pages with variety of events.
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Paging, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
@@ -8,7 +8,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Pagination Overview
 
-Pagination is used to split a large set of data into a sequence of pages that have similar content. {Platform} table pagination improves user experience and data interaction. `{ComponentName}` pagination is configurable via a separate component projected in the grid tree by defining a `Paginator` tag, similar to adding of a column. As in any {Platform} table, the pagination in the `{ComponentName}` supports template for custom pages.
+The {Platform} {ComponentTitle} Pagination in {ProductName} is used to split a large set of data into a sequence of pages that have similar content. React grid pagination improves user experience and data interaction. {Platform} {ComponentTitle} pagination is configurable via a separate component projected in the grid tree by defining a `Paginator`  tag, similar to adding of a column. As in any {Platform} table, the pagination in the {Platform} {ComponentTitle} supports template for custom pages.
 
 ## {Platform} {ComponentTitle} Pagination Example
 

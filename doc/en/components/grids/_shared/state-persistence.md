@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} State Persistence
 
-The `GridState` directive allows developers to easily save and restore the grid state. When the `GridState` directive is applied on the {Platform} `{ComponentName}`, it exposes the `GetState` and `SetState` methods that developers can use to achieve state persistence in any scenario.
+The {Platform} {ComponentTitle}State Persistence feature in {ProductName} allows developers to easily save and restore the grid state. When the `GridState` is applied on the {Platform} `{ComponentName}`, it exposes the `GetState` and `SetState` methods that developers can use to achieve state persistence in any scenario.
 
 ## Supported Features
 

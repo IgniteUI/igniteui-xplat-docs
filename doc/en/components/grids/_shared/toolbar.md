@@ -9,14 +9,15 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Toolbar
 
-The `{ComponentName}` in {ProductName} provides an `GridToolbar` which is essentially a container for **UI** operations. The {Platform} toolbar is located at the top of the {Platform} component, i.e the `{ComponentName}` and it matches its horizontal size. The toolbar container can host predefined UI controls for the following `{ComponentName}`'s features:
+The {ProductName} Toolbar in is a container for UI operations in the {Platform} {ComponentTitle}. The {Platform} toolbar is located at the top of the {Platform} component, i.e., the {ComponentTitle} and it matches its horizontal size. The toolbar container can host any custom content or set of predefined UI controls. The default set for the {Platform} {ComponentTitle} includes:
 
- - Column Hiding
- - Column Pinning
- - Excel Exporting
- - Advanced Filtering
+- Column Hiding
+- Column Pinning
+- Excel Exporting
+- Advanced Filtering
 
-or just any other custom content. The toolbar and the predefined UI components support {Platform} events and expose API for developers.
+The toolbar and the predefined UI components support {Platform} events and expose API for developers.
+
 
 ## {Platform} Toolbar Grid Example
 
