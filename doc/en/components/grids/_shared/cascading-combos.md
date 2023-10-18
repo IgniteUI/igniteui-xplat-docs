@@ -13,7 +13,7 @@ namespace: Infragistics.Controls
 The {ComponentTitle}'s Editing functionality provides with the opportunity to use Cascading Combobox components. By selecting the value in any preceding `Combo`, the users will receive only the data that is relevant to their selection within the next {Platform} Combobox component.
 
 ## Angular {ComponentTitle} with Cascading Combos Sample Overview
-The sample below demonstrates how `Grid` works with nested Cascading `Combo` components.
+The sample below demonstrates how `{ComponentTitle}` works with nested Cascading `Combo` components.
 
 <!-- ComponentStart: Grid -->
 <code-view style="height:500px"

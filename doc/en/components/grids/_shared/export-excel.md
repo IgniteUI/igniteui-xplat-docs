@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Export to Excel Service
 
-The {ProductName} Export to Excel Service in {Platform} {ComponentTitle} can export data to excel. The data export functionality is encapsulated in the `ExcelExporterService` class and the data is exported in MS Excel table format. This format allows features like filtering, sorting, etc. To do this you need to invoke the `Export` method of `ExcelExporterService` and pass the `Grid` component as first argument to export grid easily.
+The {ProductName} Export to Excel Service in {Platform} {ComponentTitle} can export data to excel. The data export functionality is encapsulated in the `ExcelExporterService` class and the data is exported in MS Excel table format. This format allows features like filtering, sorting, etc. To do this you need to invoke the `Export` method of `ExcelExporterService` and pass the `{ComponentTitle}` component as first argument to export grid easily.
 
 ## {Platform} Excel Exporter Example
 

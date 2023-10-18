@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Filtering
 
-The {ProductName} Filtering in {Platform} {ComponentTitle} is a feature that allows for selectively displaying or hiding data based on specific criteria or conditions. There is a bound data container through which the `Grid` Component provides rich filtering API and all the filtering capabilities. The available filtering types here are three: 
+The {ProductName} Filtering in {Platform} {ComponentTitle} is a feature that allows for selectively displaying or hiding data based on specific criteria or conditions. There is a bound data container through which the `{ComponentTitle}` Component provides rich filtering API and all the filtering capabilities. The available filtering types here are three: 
 
 - Quick filtering
 - [Excel Style Filtering](excel-style-filtering.md) 

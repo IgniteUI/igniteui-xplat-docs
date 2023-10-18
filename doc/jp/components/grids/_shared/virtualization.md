@@ -54,7 +54,7 @@ _language: ja
 
 ## API リファレンス
 
-* `Grid`
+* `{ComponentTitle}`
 * `Column`
 
 ## その他のリソース

@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform}  {ComponentTitle} Column Resizing Overview
 
-The {ProductName} Column Resizing feature in {Platform} {ComponentTitle} allows users to easily adjust the width of the columns of the `Grid`. By default, they will see a temporary resize indicator while the drag resizing operation is in effect. There are several resizing options available - Resizing Columns in Pixels/Percentages, Restrict Column Resizing, Auto-Size Columns on Double Click, and Auto-Size Columns on Initialization.
+The {ProductName} Column Resizing feature in {Platform} {ComponentTitle} allows users to easily adjust the width of the columns of the `{ComponentTitle}`. By default, they will see a temporary resize indicator while the drag resizing operation is in effect. There are several resizing options available - Resizing Columns in Pixels/Percentages, Restrict Column Resizing, Auto-Size Columns on Double Click, and Auto-Size Columns on Initialization.
 
 ## {Platform}  {ComponentTitle} Column Resizing Example
 

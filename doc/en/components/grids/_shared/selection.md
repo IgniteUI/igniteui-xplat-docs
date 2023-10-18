@@ -23,7 +23,7 @@ With the `RowSelection` property, you can specify:
 
 ## {Platform} {ComponentTitle} Selection Example
 
-The sample below demonstrates three types of **cell selection** behaviors in the `Grid`. Use the buttons below to enable each of the available selection modes.
+The sample below demonstrates three types of **cell selection** behaviors in the `{ComponentTitle}`. Use the buttons below to enable each of the available selection modes.
 
 <!-- Angular -->
 A brief description will be provided on each button interaction through a snackbar message box.

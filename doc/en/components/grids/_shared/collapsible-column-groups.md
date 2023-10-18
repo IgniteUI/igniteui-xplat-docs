@@ -8,7 +8,7 @@ namespace: Infragistics.Controls
 ---
 # {Platform} {ComponentTitle} Collapsible Column Groups Overview
 
-The {ProductName} Collapsible Column Groups feature in {Platform} {ComponentTitle} allows you to organize and manage multiple levels of nested columns and column groups in the `Grid` by grouping them together and providing the option to collapse or expand these groups for improved data visualization and navigation.
+The {ProductName} Collapsible Column Groups feature in {Platform} {ComponentTitle} allows you to organize and manage multiple levels of nested columns and column groups in the `{ComponentTitle}` by grouping them together and providing the option to collapse or expand these groups for improved data visualization and navigation.
 
 ## {Platform} {ComponentTitle} Collapsible Column Groups Example
 

@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # Row Dragging in {Platform} {ComponentTitle}
 
-The {ProductName} Row Dragging feature in {Platform} {ComponentTitle} is easily configurable and is used for rearranging rows within the grid by dragging and dropping them to a new position using the mouse. It is initialized on the root `Grid` component and is configurable via the `RowDraggable` input.
+The {ProductName} Row Dragging feature in {Platform} {ComponentTitle} is easily configurable and is used for rearranging rows within the grid by dragging and dropping them to a new position using the mouse. It is initialized on the root `{ComponentTitle}` component and is configurable via the `RowDraggable` input.
 
 ## {Platform} {ComponentTitle} Row Drag Example
 

@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Row Selection
 
-The {ProductName} Row Selection feature in {Platform} {ComponentTitle} allows users to interactively select, highlight, or deselect a single or multiple rows of data. There are several selection modes available in the `Grid`:
+The {ProductName} Row Selection feature in {Platform} {ComponentTitle} allows users to interactively select, highlight, or deselect a single or multiple rows of data. There are several selection modes available in the `{ComponentTitle}`:
 - None Selection 
 - Multiple Selection
 - Single Selection
