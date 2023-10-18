@@ -1,5 +1,5 @@
 ---
-title: Row Adding in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Row Adding - {ProductName}
 _description: Learn how to use and customize the built-in row adding functionality with {Platform} and utilize intuitive grid row adding and CRUD capabilities.
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -11,7 +11,8 @@ namespace: Infragistics.Controls
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
-The `{ComponentName}` provides a convenient way to perform data manipulations through inline row adding and a powerful API for {Platform} CRUD operations. Add an `ActionStrip` component with editing actions enabled in the grid's template, hover a row and use the provided button, press <kbd>ALT</kbd> + <kbd>+</kbd> to spawn the row adding UI.
+The {Platform} {ComponentTitle} Row Adding feature {ProductName} enables users to input and submit new data records without navigating to a separate form or page. With the {Platform} {ComponentTitle}, users can manipulate data through inline row adding and a powerful API for CRUD operations.
+Add an `ActionStrip` component with editing actions enabled in the grid's template. After that hover a row and use the provided button. Finally press <kbd>ALT</kbd> + <kbd>+</kbd> to spawn the row adding UI.
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 

@@ -1,5 +1,5 @@
 ---
-title: Row Dragging in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Row Dragging - {ProductName}
 _description: Row dragging in {Platform} {ComponentTitle} is used to quickly rearrange rows by dragging them with the mouse. See how to configure row dragging in your project.
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # Row Dragging in {Platform} {ComponentTitle}
 
-In {ProductName} `{ComponentName}`, row dragging is initialized on the root `{ComponentSelector}` component and is configurable via the `RowDraggable` input. Enabling row dragging provides users with a row drag-handle with which they can initiate dragging of a row.
+The {Platform} {ComponentTitle} Row Dragging feature in {ProductName} is easily configurable and is used for rearranging rows within the grid by dragging and dropping them to a new position using the mouse. It is initialized on the root {Platform} {ComponentTitle} component and is configurable via the `RowDraggable` input.
 
 ## {Platform} {ComponentTitle} Row Drag Example
 
@@ -350,7 +350,7 @@ public dragIndicatorIconTemplate = (ctx: IgcGridEmptyTemplateContext) => {
 function dragIndicatorIconTemplate(ctx: IgrGridEmptyTemplateContext) {
     return (
         <>
-            <IgrIcon iconName="drag_handle" collection="material" />
+            <IgrIcon name="drag_handle" collection="material" />
         </>
     );
 }

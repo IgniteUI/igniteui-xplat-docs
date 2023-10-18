@@ -1,5 +1,5 @@
 ---
-title: Conditional Cell Styling in {Platform} {ComponentTitle} for {ProductName}
+title: {Platform} {ComponentTitle} Conditional Cell Styling - {ProductName}
 _description: Let users identify different cells quickly. Define a variety of cell styles. Use the conditional cell styling in {Platform} {ComponentTitle} to make cells stand out.
 _keywords: conditional styling, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Conditional Styling
 
-If you need to provide any custom styling in the `{ComponentName}` component, you can do it on either row or cell level.
+The {Platform} {ComponentTitle} component in {ProductName} allows custom styling on a row or cell level.  The {ComponentTitle} Conditional Styling functionality is used to visually emphasize or highlight data that meets certain criteria, making it easier for users to identify important information or trends within the grid.
 
 ## {ComponentTitle} Conditional Row Styling
 
