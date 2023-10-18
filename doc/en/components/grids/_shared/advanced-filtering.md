@@ -10,7 +10,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Advanced Filtering
 
-The {Platform} {ComponentTitle} Advanced Filtering in {ProductName} allows you to manipulate data by providing you with a dialog where you can create different groups with filtering conditions across all columns in the {Platform} {ComponentTitle}. 
+The {ProductName} Advanced Filtering in {Platform} {ComponentTitle} allows you to manipulate data by providing you with a dialog where you can create different groups with filtering conditions across all columns in the `Grid`. 
 
 ## {Platform} {ComponentTitle} Advanced Filtering Example
 

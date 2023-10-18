@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Selection Overview
 
-With the {Platform} {ComponentTitle} Select feature in {ProductName} you can easily interact with and manipulate data using simple mouse interactions. There are three selection modes available: 
+With the {ProductName} Select feature in {Platform} {ComponentTitle} you can easily interact with and manipulate data using simple mouse interactions. There are three selection modes available: 
 
 - Row selection
 - Cell selection 
@@ -23,7 +23,7 @@ With the `RowSelection` property, you can specify:
 
 ## {Platform} {ComponentTitle} Selection Example
 
-The sample below demonstrates three types of **cell selection** behaviors in the `{ComponentName}`. Use the buttons below to enable each of the available selection modes.
+The sample below demonstrates three types of **cell selection** behaviors in the `Grid`. Use the buttons below to enable each of the available selection modes.
 
 <!-- Angular -->
 A brief description will be provided on each button interaction through a snackbar message box.

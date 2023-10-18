@@ -8,7 +8,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Multi-Column Headers Overview
 
-The {Platform} {ComponentTitle} in the {ProductName} supports Multi-Column Headers which allow you to group columns by placing them under a common multi-header. Each multi-column headers group could be a representation of combinations between other groups or columns. This feature is particularly useful when dealing with large datasets where scrolling horizontally might be cumbersome.
+The {ProductName} Multi-Column Headers feature in {Platform} {ComponentTitle} supports Multi-Column Headers which allow you to group columns by placing them under a common multi-header. Each multi-column headers group in the `Grid` could be a representation of combinations between other groups or columns. This feature is particularly useful when dealing with large datasets where scrolling horizontally might be cumbersome.
 
 ## {Platform} {ComponentTitle} Multi-Column Headers Example
 
