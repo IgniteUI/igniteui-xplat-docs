@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} Cell Selection
 
-The {Platform} {ComponentTitle} Cell Selection in {ProductName} enables rich data select capabilities and offers powerful API in the Grid component. The {Platform} {ComponentTitle} supports three selection modes:
+The {ProductName} Cell Selection in {Platform} {ComponentTitle} enables rich data select capabilities and offers powerful API in the `{ComponentName}` component. The {Platform} {ComponentTitle} supports three selection modes:
 
 - {ComponentTitle} Multiple Cell Selection
 - {ComponentTitle} Single Selection
