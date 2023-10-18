@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Row Editing
 
-The {ProductName} Row Editing feature in {Platform} {ComponentTitle} allows editing data directly within the `{ComponentTitle}`. On top of this convenient way to manipulate data, there’s a powerful API for full CRUD operations. You can perform grid row editing by clicking on a row and pressing **Enter key**. Another quick way is to double click with the mouse on the row that needs to be modified.
+The {ProductName} Row Editing feature in {Platform} {ComponentTitle} allows editing data directly within the `{ComponentName}`. On top of this convenient way to manipulate data, there’s a powerful API for full CRUD operations. You can perform grid row editing by clicking on a row and pressing **Enter key**. Another quick way is to double click with the mouse on the row that needs to be modified.
 
 ## {Platform} {ComponentTitle} Row Editing Example
 

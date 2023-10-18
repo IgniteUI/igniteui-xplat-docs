@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Sizing
 
-The {ProductName} Sizing feature in {Platform} {ComponentTitle} is an important aspect of creating responsive and user-friendly grid interfaces. The {Platform} {ComponentTitle} Sizing feature enables users to adjust the `Width` and `Height` of the grid to accommodate different screen sizes, content, or user preferences. In terms of border and padding size for the `{ComponentTitle}`, they are taken into its width/height size calculations or also known as [Border box](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing) sizing. It is applied in all scenarios.
+The {ProductName} Sizing feature in {Platform} {ComponentTitle} is an important aspect of creating responsive and user-friendly grid interfaces. The {Platform} {ComponentTitle} Sizing feature enables users to adjust the `Width` and `Height` of the grid to accommodate different screen sizes, content, or user preferences. In terms of border and padding size for the `{ComponentName}`, they are taken into its width/height size calculations or also known as [Border box](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing) sizing. It is applied in all scenarios.
 
 > [!Note]
 > If the Border box sizing is overridden by the user we cannot guarantee that the `{ComponentName}` will size correctly.

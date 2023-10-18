@@ -8,7 +8,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Pagination Overview
 
-The {ProductName} Pagination feature in {Platform} {ComponentTitle} is used to split a large set of data into a sequence of pages that have similar content. React grid pagination improves user experience and data interaction. `{ComponentTitle}` pagination is configurable via a separate component projected in the grid tree by defining a `Paginator`  tag, similar to adding of a column. As in any {Platform} table, the pagination in the {Platform} {ComponentTitle} supports template for custom pages.
+The {ProductName} Pagination feature in {Platform} {ComponentTitle} is used to split a large set of data into a sequence of pages that have similar content. React grid pagination improves user experience and data interaction. `{ComponentName}` pagination is configurable via a separate component projected in the grid tree by defining a `Paginator`  tag, similar to adding of a column. As in any {Platform} table, the pagination in the {Platform} {ComponentTitle} supports template for custom pages.
 
 ## {Platform} {ComponentTitle} Pagination Example
 

@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Row Pinning
 
-The {ProductName} Row Pinning feature in {Platform} {ComponentTitle} allows you to  pin one or multiple rows to the top or bottom of grid. Row Pinning allows end-users to pin rows in a particular order, duplicating them in a special area that is always visible even when they scroll the `{ComponentTitle}` vertically. The {Platform} {ComponentTitle} has a built-in row pinning UI, which is enabled by initializing an `ActionStrip` component in the context of {ComponentTitle}. In addition, you can define custom UI and change the pin state of the rows via the Row Pinning API.
+The {ProductName} Row Pinning feature in {Platform} {ComponentTitle} allows you to  pin one or multiple rows to the top or bottom of grid. Row Pinning allows end-users to pin rows in a particular order, duplicating them in a special area that is always visible even when they scroll the `{ComponentName}` vertically. The {Platform} {ComponentTitle} has a built-in row pinning UI, which is enabled by initializing an `ActionStrip` component in the context of {ComponentTitle}. In addition, you can define custom UI and change the pin state of the rows via the Row Pinning API.
 
 ## {Platform} {ComponentTitle} Row Pinning Example
 

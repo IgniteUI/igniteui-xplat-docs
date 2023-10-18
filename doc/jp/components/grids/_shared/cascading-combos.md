@@ -12,7 +12,7 @@ namespace: Infragistics.Controls
 {ComponentTitle} の編集機能では、カスケード コンボを使用する機会が提供されます。前の `Combo` で値を選択すると、ユーザーは次の Combo での選択に関連するデータのみを受け取ります。
 
 ## カスケード コンボを使用した Angular {ComponentTitle} サンプルの概要
-以下のサンプルは、`{ComponentTitle}` がネストされた Cascading `Combo` コンポーネントとどのように動作するかを示しています。
+以下のサンプルは、`Grid` がネストされた Cascading `Combo` コンポーネントとどのように動作するかを示しています。
 
 <!-- ComponentStart: Grid -->
 <code-view style="height:500px"

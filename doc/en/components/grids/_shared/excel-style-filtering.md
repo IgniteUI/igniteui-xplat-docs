@@ -18,7 +18,7 @@ The {Platform} {ComponentTitle} exposes an Excel-style filtering feature that pr
 
 ## Usage
 
-To turn on the `{ComponentTitle}` component's Excel-style filtering, two inputs should be set. The `AllowFiltering` should be set to **true** and the `FilterMode` should be set to `ExcelStyleFilter` value.
+To turn on the `{ComponentName}` component's Excel-style filtering, two inputs should be set. The `AllowFiltering` should be set to **true** and the `FilterMode` should be set to `ExcelStyleFilter` value.
 
 <!-- Angular -->
 ```html
@@ -1061,7 +1061,7 @@ Then set the related CSS properties to this class:
 ## API References
 
 * `Column`
-* `{ComponentTitle}`
+* `{ComponentName}`
 
 
 ## Additional Resources

@@ -8,7 +8,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Remote Data Operations
 <!-- Angular -->
-The {ProductName} Remote Data Operations feature in {Platform} {ComponentTitle} supports operations such as remote virtualization, remote sorting, remote filtering and others. This allows the developer to perform these tasks on a server, retrieve the data that is produced and display it in the `{ComponentTitle}`.
+The {ProductName} Remote Data Operations feature in {Platform} {ComponentTitle} supports operations such as remote virtualization, remote sorting, remote filtering and others. This allows the developer to perform these tasks on a server, retrieve the data that is produced and display it in the `{ComponentName}`.
 
 ## {Platform} {ComponentTitle} Remote Data Operations Overview Example
 

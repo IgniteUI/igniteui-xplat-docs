@@ -8,7 +8,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Editing and Validation
 
-The {Platform} {ComponentName} provides editing that has a built-in Validation mechanism of user input when editing cells/rows. It extends the form validation functionality to allow easier integration with a well known functionality. When the state of the editor changes, visual indicators are applied to the edited cell in the `{ComponentTitle}`.
+The {Platform} {ComponentName} provides editing that has a built-in Validation mechanism of user input when editing cells/rows. It extends the form validation functionality to allow easier integration with a well known functionality. When the state of the editor changes, visual indicators are applied to the edited cell in the `{ComponentName}`.
 
 ## Configuration
 

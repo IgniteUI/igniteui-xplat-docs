@@ -11,7 +11,7 @@ namespace: Infragistics.Controls
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
-The {ProductName} Row Adding feature in {Platform} {ComponentTitle} enables users to input and submit new data records without navigating to a separate form or page. With the `{ComponentTitle}`, users can manipulate data through inline row adding and a powerful API for CRUD operations.
+The {ProductName} Row Adding feature in {Platform} {ComponentTitle} enables users to input and submit new data records without navigating to a separate form or page. With the `{ComponentName}`, users can manipulate data through inline row adding and a powerful API for CRUD operations.
 Add an `ActionStrip` component with editing actions enabled in the grid's template. After that hover a row and use the provided button. Finally press <kbd>ALT</kbd> + <kbd>+</kbd> to spawn the row adding UI.
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
