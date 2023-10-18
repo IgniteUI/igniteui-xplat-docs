@@ -1,5 +1,5 @@
 ---
-title: Collapsible Column Groups in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Collapsible Column Groups - {ProductName}
 _description: Take advantage of the capability to show\hide smaller and concise set of data with the use of collapsible column groups in our {Platform} {ComponentTitle}. Try it now!
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -8,7 +8,7 @@ namespace: Infragistics.Controls
 ---
 # {Platform} {ComponentTitle} Collapsible Column Groups Overview
 
-Multi-column headers allow you to have multiple levels of nested columns and column groups. They also provide the ability to mark each column group as **collapsible**. **Collapsible multi-column headers** make it possible to collapse/expand, i.e. to show and hide the nested headers under the current one, which will give you a shortened/summarized information for example.
+The {ProductName} Collapsible Column Groups feature in {Platform} {ComponentTitle} allows you to organize and manage multiple levels of nested columns and column groups in the `{ComponentName}` by grouping them together and providing the option to collapse or expand these groups for improved data visualization and navigation.
 
 ## {Platform} {ComponentTitle} Collapsible Column Groups Example
 

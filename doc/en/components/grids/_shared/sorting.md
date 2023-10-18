@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Sorting
 
-In {Platform} `{ComponentName}`, data sorting is enabled on a per-column level, meaning that the `{ComponentName}` can have a mix of sortable and non-sortable columns. Performing {Platform} sort actions enables you to change the display order of the records based on specified criteria.
+The {ProductName} Data Sorting feature in {Platform} {ComponentTitle} is enabled on a per-column level, meaning that the `{ComponentName}` can have a mix of sortable and non-sortable columns. Performing {Platform} sort actions enables you to change the display order of the records based on specified criteria.
 
 <!-- Angular -->
 

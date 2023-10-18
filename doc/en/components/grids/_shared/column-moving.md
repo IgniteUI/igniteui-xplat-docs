@@ -1,5 +1,5 @@
 ---
-title: Column Reordering & Moving in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Column Reordering & Moving - {ProductName}
 _description: Set custom column order & enable columns reordering via drag/drop mouse or touch gestures, or by using the {Platform} Column Moving API. Try {ProductName}!
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {ComponentTitle} Column Reordering & Moving
 
-The `{ComponentName}` component in {ProductName} provides the **Column Moving** feature to allow columns reordering via standard drag/drop mouse or touch gestures, or by using the Column Moving API. Column moving works both with pinned and unpinned columns and with [Multi-Column Headers](multi-column-headers.md). Moving a column into the pinned area pins the column and vice versa, moving a column outside of the pinned area unpins the column.
+The {Platform} {ComponentTitle} Column Moving feature in {ProductName} allows quick and easy column reordering. This can be done through the Column Moving API or by dragging and dropping the headers to another position via mouse or touch gestures. In the {Platform} {ComponentTitle}, you can enable Column Moving for pinned and unpinned columns and for [Multi-Column Headers](multi-column-headers.md) as well.
 
 > [!Note]
 > Reordering between columns and column groups is allowed only when they are at the same level in the hierarchy and both are in the same group. Moving is allowed between columns/column-groups, if they are top level columns.
