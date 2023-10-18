@@ -261,7 +261,7 @@ public customKeydown(args: any) {
 
 <!-- React -->
 
-Based on the event arg values we identified two cases, where to provide our own logic (see above). Now, using the methods from the API, let's perform the desired - if the user is pressing <kbd>Tab</kbd> key over a cell in edit mode, we will perform validation on the input:
+イベント引数の値に基づいて、独自のロジックを提供する 2 つのケースを特定しました (上記を参照)。API のメソッドを使用して、目的の処理を実行しましょう。ユーザーが編集モードのセル上で <kbd>Tab</kbd> キーを押すと、入力の検証を実行します。
 
 ```typescript
     // 1. USER INPUT VALIDATION ON TAB
