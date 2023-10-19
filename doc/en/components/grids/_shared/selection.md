@@ -537,7 +537,7 @@ When the grid has no `PrimaryKey` set and remote data scenarios are enabled (whe
 
 <!-- ComponentEnd: TreeGrid -->
 
-* `GridCell`
+* `Cell`
 
 ## Additional Resources
 
