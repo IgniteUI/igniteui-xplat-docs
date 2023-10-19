@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} for {ProductName} の高度なフィルタリング
+title: {Platform} {ComponentTitle} 高度なフィルタリング - {ProductName} 
 _description: {Platform} {ComponentTitle} でデータの高度なフィルターを設定する方法。グリッドの高度なフィルタリングがより使いやすくなりました。
 _keywords: Advanced Filtering, {Platform}, {ProductName}, Infragistics, 高度なフィルタリング, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -11,7 +11,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 高度なフィルタリング
 
-高度なフィルタリングは、`{ComponentName}` のような任意の {Platform} テーブルの全列に及ぶフィルタリング条件を持つグループを作成できるダイアログを提供します。
+{ProductName} の {Platform} {ComponentTitle} 高度なフィルタリングを使用すると、{Platform} {ComponentTitle} のすべての列にわたるフィルタリング条件を使用してさまざまなグループを作成できるダイアログが表示されるため、データを操作できます。
 
 ## {Platform} {ComponentTitle} 高度なフィルタリングの例
 
