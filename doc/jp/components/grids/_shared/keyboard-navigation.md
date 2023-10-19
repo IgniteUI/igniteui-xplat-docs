@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} キーボード ナビゲーション
 
- `{ComponentName}` のキーボード ナビゲーションは、さまざまなキーボード操作をユーザーに提供します。これにより `{ComponentName}` のアクセシビリティが向上し、内部の要素 (セル、行、列ヘッダー、ツールバー、フッターなど) をナビゲートできるようになります。この機能はデフォルトで有効になっています。デフォルトの動作を簡単にオーバーライドするオプションがあります。
+{ProductName} の {Platform} {ComponentTitle} キーボード ナビゲーションは、さまざまなキーボード操作をユーザーに提供します。これにより {ComponentTitle} のアクセシビリティが向上し、内部の要素 (セル、行、列ヘッダー、ツールバー、フッターなど) をナビゲートできるようになります。この機能はデフォルトで有効になっています。デフォルトの動作を簡単にオーバーライドするオプションがあります。
 
 `{ComponentName}` のタブが削減され、ナビゲーションが W3C のアクセシビリティ標準に準拠し、使いやすくなりました。
 
@@ -123,14 +123,14 @@ _language: ja
 
 以下のデモサンプルで上記のすべての操作を実行できます。ナビゲーション可能なグリッド要素をフォーカスすると、利用可能な操作のリストが表示されます。
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 
 ## デモ
 
 
 `sample="/{ComponentSample}/keyboard-navigation-guide", height="600", alt="{Platform} {ComponentTitle} キーボード ナビゲーション ガイド"`
 
-<!-- end: Angular, WebComponents -->
+<!-- end: Angular, WebComponents, React -->
 
 ## カスタム キーボード ナビゲーション
 
@@ -186,6 +186,11 @@ igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
 }, false);
 ```
 
+```tsx
+<{ComponentSelector} id="grid1" primaryKey="ProductID" gridKeydown={customKeydown}>
+</{ComponentSelector}>
+```
+
 ```ts
 constructor() {
         var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
@@ -197,6 +202,24 @@ constructor() {
         this._bind();
 
     }
+```
+
+```typescript
+function customKeydown(s: IgrGridBaseDirective, e: IgrGridKeydownEventArgs) {
+  const detail = e.detail
+  const target= detail.target;
+  const evt = detail.event;
+  const type = detail.targetType;
+
+  if (type === GridKeydownTargetType.DataCell && target.editMode && evt.key.toLowerCase() === 'tab') {
+      // 1. USER INPUT VALIDATION ON TAB
+      
+  }
+  if (type === GridKeydownTargetType.DataCell && evt.key.toLowerCase() === 'enter') {
+      // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
+
+  }
+}
 ```
 <!-- ComponentEnd: Grid -->
 
@@ -216,9 +239,13 @@ public customKeydown(args: any) {
     }
 }
 ```
+<!-- Angular, WebComponents, Blazor -->
 
 イベント引数の値に基づいて、独自のロジックを提供する 2つ のケースを識別しました (上記を参照)。API のメソッドを使用して、目的の処理を実行しましょう。ユーザーが編集モードでセル上で <kbd>Tab</kbd> キーを押している場合、入力の検証を実行します。ユーザーがセル上で <kbd>Enter</kbd> キーを押すと、次の行のセルへフォーカスを移動します。
 
+<!-- end: Angular, WebComponents, Blazor -->
+
+<!-- Angular, WebComponents -->
 ```typescript
     // 1. USER INPUT VALIDATION ON TAB
     if (target.column.dataType === 'number' && target.editValue < 10) {
@@ -230,6 +257,20 @@ public customKeydown(args: any) {
             obj.target.activate();
         });
 ```
+<!-- end: Angular, WebComponents -->
+
+<!-- React -->
+
+イベント引数の値に基づいて、独自のロジックを提供する 2 つのケースを特定しました (上記を参照)。API のメソッドを使用して、目的の処理を実行しましょう。ユーザーが編集モードのセル上で <kbd>Tab</kbd> キーを押すと、入力の検証を実行します。
+
+```typescript
+    // 1. USER INPUT VALIDATION ON TAB
+    if (target.column.dataType === 'number' && target.editValue < 10) {
+        // alert the user that the input is invalid
+        return;
+    }
+```
+<!-- end: React -->
 
 ```razor
 

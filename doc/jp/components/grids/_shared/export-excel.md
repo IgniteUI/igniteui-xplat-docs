@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} Excel へのエクスポート サービス
 
-Excel Exporter サービスは `{ComponentName}` のデータを MS Excel へエクスポートできます。エクスポート機能は、`ExcelExporterService` クラスでカプセル化され、MS Excel テーブル形式でデータをエクスポートします。この形式ではフィルタリングやソートなどの機能が使用でき、`ExcelExporterService` の `Export` メソッドを呼び出して最初の引数として {ComponentTitle} コンポーネントを渡し、グリッドを簡単にエクスポートします。
+{ProductName} の {Platform} {ComponentTitle} Excel Exporter サービスは、データを Excel へエクスポートできます。エクスポート機能は、`ExcelExporterService` クラスでカプセル化され、MS Excel テーブル形式でデータをエクスポートします。この形式ではフィルタリングやソートなどの機能が使用でき、`ExcelExporterService` の `Export` メソッドを呼び出して最初の引数として {ComponentTitle} コンポーネントを渡し、グリッドを簡単にエクスポートします。
 
 ## {Platform} Excel Exporter の例
 

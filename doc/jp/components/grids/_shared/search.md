@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 検索フィルター
 
-{Platform} `{ComponentName}` により、データのコレクション内の値を見つけるプロセスが可能になります。この機能のセットアップが簡単になり、検索入力ボックス、ボタン、キーボード ナビゲーション、その他の便利な機能を使用して実装できるため、ユーザー エクスペリエンスがさらに向上します。ブラウザーにはネイティブなコンテンツ検索機能がありますが、ほとんどの場合で `{ComponentName}` は表示範囲外の行列を仮想化します。そのため、ネイティブ グリッド検索は DOM の一部でないため仮想化セルでデータを検索できません。`{ComponentName}` では、{ProductName} Material テーブル ベースのグリッドの拡張により、**検索 API** を使用した**仮想コンテンツ**の検索が可能です。
+{ProductName} の {Platform} {ComponentTitle} 検索機能を使用すると、データのコレクション内の値を検索するプロセスが可能になります。この機能のセットアップが簡単になり、検索入力ボックス、ボタン、キーボード ナビゲーション、その他の便利な機能を使用して実装できるため、ユーザー エクスペリエンスがさらに向上します。ブラウザーにはネイティブなコンテンツ検索機能がありますが、ほとんどの場合で {ComponentTitle} は表示範囲外の行列を仮想化します。そのため、ネイティブ ブラウザー検索は DOM の一部でないため仮想化セルでデータを検索できません。{ComponentName} では、{Platform} Material テーブル ベースのグリッドの拡張により、**検索 API** を使用した**仮想コンテンツ**の検索が可能です。
 
 ## {Platform} 検索の例
 
@@ -289,9 +289,9 @@ function nextSearch() {
     gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
 }
 
-<IgrIconButton key="prevIconButton" ref={iconButtonPrevRef} variant="flat" iconName="prev" collection="material" clicked={prevSearch}>
+<IgrIconButton key="prevIconButton" ref={iconButtonPrevRef} variant="flat" name="prev" collection="material" clicked={prevSearch}>
 </IgrIconButton>
-<IgrIconButton key="nextIconButton" ref={iconButtonNextRef} variant="flat" iconName="next" collection="material" clicked={nextSearch}>
+<IgrIconButton key="nextIconButton" ref={iconButtonNextRef} variant="flat" name="next" collection="material" clicked={nextSearch}>
 </IgrIconButton>
 ```
 
@@ -703,7 +703,7 @@ useEffect(() => {
 
 <IgrInput name="searchBox" value={searchText} inputOcurred={handleOnSearchChange}>
     <div slot="prefix" key="prefix">
-        <IgrIconButton key="clearIcon" ref={clearIconRef} variant="flat" iconName="clear" collection="material" clicked={clearSearch}>
+        <IgrIconButton key="clearIcon" ref={clearIconRef} variant="flat" name="clear" collection="material" clicked={clearSearch}>
         </IgrIconButton>
     </div>
     <div slot="suffix" key="chipSuffix">
@@ -715,9 +715,9 @@ useEffect(() => {
         </IgrChip>
     </div>
     <div slot="suffix" key="buttonsSuffix">
-        <IgrIconButton key="prevIconButton" ref={iconButtonPrevRef} variant="flat" iconName="prev" collection="material" clicked={prevSearch}>
+        <IgrIconButton key="prevIconButton" ref={iconButtonPrevRef} variant="flat" name="prev" collection="material" clicked={prevSearch}>
         </IgrIconButton>
-        <IgrIconButton key="nextIconButton" ref={iconButtonNextRef} variant="flat" iconName="next" collection="material" clicked={nextSearch}>
+        <IgrIconButton key="nextIconButton" ref={iconButtonNextRef} variant="flat" name="next" collection="material" clicked={nextSearch}>
         </IgrIconButton>
     </div>
 </IgrInput>
@@ -903,9 +903,9 @@ function nextSearch() {
 }
 
 <div slot="suffix" key="buttonsSuffix">
-    <IgrIconButton key="prevIconButton" ref={iconButtonPrevRef} variant="flat" iconName="prev" collection="material" clicked={prevSearch}>
+    <IgrIconButton key="prevIconButton" ref={iconButtonPrevRef} variant="flat" name="prev" collection="material" clicked={prevSearch}>
     </IgrIconButton>
-    <IgrIconButton key="nextIconButton" ref={iconButtonNextRef} variant="flat" iconName="next" collection="material" clicked={nextSearch}>
+    <IgrIconButton key="nextIconButton" ref={iconButtonNextRef} variant="flat" name="next" collection="material" clicked={nextSearch}>
     </IgrIconButton>
 </div>
 ```
