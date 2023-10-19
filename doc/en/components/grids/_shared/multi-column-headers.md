@@ -565,7 +565,7 @@ public columnHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 function columnHeaderTemplate(e: { dataContext: IgrColumnTemplateContext }) {
     const column = e.dataContext.column as IgrColumnGroup;
     return (
-      <span onClick={(evt) => this.onClick(evt)}>
+      <span onClick={onClick}>
         <IgrIcon data-draggable="false"></IgrIcon>
       </span>
     );
