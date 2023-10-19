@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} の複数列ヘッダー - インフラジスティックス
+title: {Platform} {ComponentTitle} 複数列ヘッダー - {ProductName}
 _description: {ProductName} グリッドを使用して列ヘッダーを共通の階層ヘッダーの下に配置し、それらを複数のヘッダーに結合することで、列ヘッダーのグループ化を開始します。
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Multi-Column Headers, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, 複数列ヘッダー, インフラジスティックス
@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 複数列ヘッダーの概要
 
-{Platform} `{ComponentName}` は複数列ヘッダーをサポートしており、共通の複数ヘッダーの下に配置することで列をグループ化できます。各複数-列ヘッダーグループは、マテリアル UI グリッド内でその他複数のグループや列を組み合わせることができます。
+{ProductName} の {Platform} {ComponentTitle} は複数列ヘッダーをサポートしており、共通の複数ヘッダーの下に配置することで列をグループ化できます。各複数ヘッダー グループは、その他のグループや列を組み合わせて表示できます。この機能は、水平方向のスクロールが面倒な大規模なデータセットを扱う場合に特に役立ちます。
 
 ## {Platform} {ComponentTitle} 複数列ヘッダーの例
 

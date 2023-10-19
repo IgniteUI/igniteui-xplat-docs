@@ -9,7 +9,17 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Selection Overview
 
-With the {ProductName} `{ComponentName}` you can easily select data by using variety of events, rich API or with simple mouse interactions like single select.
+With the {ProductName} Select feature in {Platform} {ComponentTitle} you can easily interact with and manipulate data using simple mouse interactions. There are three selection modes available: 
+
+- Row selection
+- Cell selection 
+- Column selection 
+
+With the `RowSelection` property, you can specify:
+
+- None 
+- Single  
+- Multiple Select 
 
 ## {Platform} {ComponentTitle} Selection Example
 
@@ -410,14 +420,14 @@ The template we are going to use to combine the grid with the context menu:
     </div>
     <div style={{display: "none"}} className="contextmenu" ref={contextMenuRef}>
         <span className="item" onClick={copySelectedCellData}>
-            <IgrIcon ref={iconRef} collection='material' iconName="content_copy"></IgrIcon>Copy Cell Data
+            <IgrIcon ref={iconRef} collection='material' name="content_copy"></IgrIcon>Copy Cell Data
         </span>
         <span className="item" onClick={copySelectedRowData}>
-            <IgrIcon collection='material' iconName="content_copy"></IgrIcon>Copy Row Data
+            <IgrIcon collection='material' name="content_copy"></IgrIcon>Copy Row Data
         </span>
         {isCellWithinRange && (
         <span className="item" onClick={copySelectedData}>
-            <IgrIcon collection='material' iconName="content_copy"></IgrIcon>Copy Cells Data
+            <IgrIcon collection='material' name="content_copy"></IgrIcon>Copy Cells Data
         </span>)}
     </div>
 </>

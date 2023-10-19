@@ -1,5 +1,5 @@
 ---
-title: Row Selection in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Row Selection - {ProductName}
 _description: Perform data manipulation without affecting the underlying data with {ComponentTitle} Batch Editing, using {Platform} {ComponentTitle}. See demos & examples!
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,7 +9,10 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Row Selection
 
-With row selection in {Platform} `{ComponentName}`, there is row selector column that precedes all other columns within the row. When a user clicks on the row selector, the row will either become selected or deselected, enabling the user to select multiple rows of data.
+The {ProductName} Row Selection feature in {Platform} {ComponentTitle} allows users to interactively select, highlight, or deselect a single or multiple rows of data. There are several selection modes available in the `{ComponentName}`:
+- None Selection 
+- Multiple Selection
+- Single Selection
 
 ## {Platform} Row Selection Example
 

@@ -8,7 +8,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Keyboard Navigation
 
- Keyboard navigation in the `{ComponentName}` provides a rich variety of keyboard interactions for the user. It enhances the accessibility of the `{ComponentName}` and allows the user to navigate through any type of elements inside (cell, row, column header, toolbar, footer, etc.). This functionality is enabled by default, and the developer has the option to override any of the default behaviors in an easy way.
+ The {ProductName} Keyboard Navigation feature in {Platform} {ComponentTitle} provides a rich variety of keyboard interactions for the user. It enhances the accessibility of the `{ComponentName}` and allows the user to navigate through any type of elements inside (cell, row, column header, toolbar, footer, etc.). This functionality is enabled by default, and the developer has the option to override any of the default behaviors in an easy way.
 
 The tabulations of the `{ComponentName}` has been reduced so that the navigation is compliant with W3C accessibility standards and convenient to use.
 

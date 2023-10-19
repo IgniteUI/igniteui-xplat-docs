@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} の縮小可能な列グループ - インフラジスティックス
+title: {Platform} {ComponentTitle} 縮小可能な列グループ - {ProductName}
 _description: {Platform} {ComponentTitle} の縮小可能な列グループを使用して、より小さく簡潔なデータのセットを表示/非表示にする機能を利用します。今すぐお試しください。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,7 +9,7 @@ _language: ja
 ---
 # {Platform} {ComponentTitle} の縮小可能な列グループの概要
 
-複数列ヘッダーを使用すると、複数レベルのネストされた列と列グループを使用できます。また、各列グループを**縮小可能**としてマークできます。**縮小可能な複数列ヘッダー**により、縮小/展開が可能です。現在のヘッダーの下にネストされたヘッダーを表示および非表示にします。これにより、たとえば短縮/要約された情報が得られます。
+{ProductName} の {Platform} {ComponentTitle} の縮小可能な列グループ機能を使用すると、{Platform} {ComponentTitle} 内の複数レベルのネストされた列と列グループをグループ化し、これらのグループを縮小したり展開したりしてデータの視覚化とナビゲーションを向上させるオプションを提供することで、それらを整理および管理できます。
 
 ## {Platform} {ComponentTitle} の縮小可能な列グループの例
 

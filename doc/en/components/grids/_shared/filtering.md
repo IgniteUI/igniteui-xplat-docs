@@ -1,5 +1,5 @@
 ---
-title: Filtering in {Platform} {ComponentTitle} for {ProductName}
+title: {Platform} {ComponentTitle} Filtering - {ProductName}
 _description: Start using angular filter to return specific data with {Platform} {ComponentTitle}. Check the advanced filtering options, including data-type Excel-style filtering.
 _keywords: filter, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,7 +9,11 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Filtering
 
-The {Platform} `{ComponentName}` component provides three different filtering types - Quick filtering, [Excel Style Filtering](excel-style-filtering.md) and [Advanced Filtering](advanced-filtering.md) which enable you to display only the records that meet specified criteria. The `{ComponentName}` component in {Platform} provides filtering capabilities and extensive filtering API through the data container to which the `{ComponentName}` is bound.
+The {ProductName} Filtering in {Platform} {ComponentTitle} is a feature that allows for selectively displaying or hiding data based on specific criteria or conditions. There is a bound data container through which the `{ComponentName}` Component provides rich filtering API and all the filtering capabilities. The available filtering types here are three: 
+
+- Quick filtering
+- [Excel Style Filtering](excel-style-filtering.md) 
+- [Advanced Filtering](advanced-filtering.md)
 
 ## {Platform} {ComponentTitle} Filtering Example
 

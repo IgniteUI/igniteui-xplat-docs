@@ -1,5 +1,5 @@
 ---
-title: {Platform} Grid Display Density - {ProductName}
+title: {Platform} {ComponentTitle} Display Density - {ProductName}
 _description: Learn how to apply display density capabilities to the {ComponentTitle} component. You can use a set of compact view options in the {ProductName}.
 _keywords:  material density, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,7 +9,10 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Display Density
 
-The `{ComponentName}` design is based on [Material Design Guidelines](https://material.io/design). We currently provide an option to choose between predefined set of display [density](https://material.io/design/layout/applying-density.html) options that will bring a cosy, comfortable or compact view respectively. By selecting the right density for your Material UI table / Material UI grid you can significantly improve the user experience when interacting with large amounts of content.
+The {ProductName} Display Density feature in {Platform} {ComponentTitle} allows users to control the spacing and layout of data within the `{ComponentName}`. By changing [density](https://material.io/design/layout/applying-density.html), you can significantly improve the user experience when interacting with large amounts of content.  They can choose from three display density options:
+- Cozy
+- Comfortable
+- Compact
 
 ## {Platform} {ComponentTitle} Display Density Example
 

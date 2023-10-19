@@ -1,5 +1,5 @@
 ---
-title: Column Hiding in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Column Hiding - {ProductName}
 _description: Learn how to use the Column Hiding feature that allows users to change the visible state of the columns directly through the UI of the Ignite Material UI table.
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -13,7 +13,7 @@ namespace: Infragistics.Controls
 {ProductName} `{ComponentName}` provides an `ColumnActionsComponent` with an `ColumnHidingDirective` which allows users to perform column hiding directly through the user interface or by using the {Platform} component.
 <!-- end: Angular -->
 
-The {ProductName} `{ComponentName}` has a built-in column hiding UI, which can be used through the `{ComponentName}`'s toolbar to change the visible state of the columns. In addition, developers can always define the column hiding UI as a separate component and place it anywhere they want on the page.
+The {ProductName} has a built-in column hiding UI, which can be used through the {Platform} {ComponentTitle} toolbar to change the visible state of the columns. Developers have the flexibility to define the Column Hiding UI anywhere within the page as needed. The {Platform} {ComponentTitle} Column Hiding feature is especially useful when one wants to decrease the size of the grid and to eliminate the need for tabbing through redundant fields.
 
 ## {Platform} {ComponentTitle} Column Hiding Example
 
