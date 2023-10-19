@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Toolbar
 
-The {ProductName} Toolbar in is a container for UI operations in the {Platform} {ComponentTitle}. The {Platform} toolbar is located at the top of the {Platform} component, i.e., the {ComponentTitle} and it matches its horizontal size. The toolbar container can host any custom content or set of predefined UI controls. The default set for the {Platform} {ComponentTitle} includes:
+The {ProductName} Toolbar in is a container for UI operations in the {Platform} {ComponentTitle}. The {Platform} toolbar is located at the top of the {Platform} component, i.e., the `{ComponentName}` and it matches its horizontal size. The toolbar container can host any custom content or set of predefined UI controls. The default set for the {Platform} {ComponentTitle} includes:
 
 - Column Hiding
 - Column Pinning

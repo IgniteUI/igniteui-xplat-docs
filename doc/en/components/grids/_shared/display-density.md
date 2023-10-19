@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Display Density
 
-The {Platform} {ComponentTitle} Display Density in {ProductName} allows users to control the spacing and layout of data within the {ComponentTitle}. By changing [density](https://material.io/design/layout/applying-density.html), you can significantly improve the user experience when interacting with large amounts of content.  They can choose from three display density options:
+The {ProductName} Display Density feature in {Platform} {ComponentTitle} allows users to control the spacing and layout of data within the `{ComponentName}`. By changing [density](https://material.io/design/layout/applying-density.html), you can significantly improve the user experience when interacting with large amounts of content.  They can choose from three display density options:
 - Cozy
 - Comfortable
 - Compact
