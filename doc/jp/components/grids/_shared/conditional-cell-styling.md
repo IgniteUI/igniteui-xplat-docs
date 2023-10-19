@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} for {ProductName} の条件付きセルのスタイル設定
+title: {Platform} {ComponentTitle} 条件付きセルのスタイル設定 - {ProductName} 
 _description: ユーザーが異なるセルをすばやく識別できるようにします。さまざまなセルのスタイル設定を定義します。{Platform} {ComponentTitle} の条件付きセル スタイル設定を使用してセルを目立たせます。
 _keywords: conditional styling, {Platform}, {ProductName}, Infragistics, 条件付きスタイル設定, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} の条件付きセルのスタイル設定
 
-`{ComponentName}` コンポーネントでカスタム スタイルを提供する必要がある場合は、行レベルまたはセル レベルで行うことができます。
+{ProductName} の {Platform} {ComponentTitle} コンポーネントを使用すると、行またはセル レベルでカスタム スタイルを設定できます。{ComponentTitle} 条件付きセルのスタイル設定機能は、特定の基準を満たすデータを視覚的に強調または強調表示するために使用され、ユーザーがグリッド内の重要な情報や傾向を簡単に識別できるようにします。
 
 ## {ComponentTitle} 条件付き行のスタイル設定
 

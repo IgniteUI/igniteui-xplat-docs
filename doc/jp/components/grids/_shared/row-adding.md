@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} 行の追加 - インフラジスティックス
+title: {Platform} {ComponentTitle} 行の追加 - {ProductName}
 _description: {Platform} を使用して、定義済みの行追加機能の使用およびカスタマイズする方法を学びます。直感的なグリッド行の追加と CRUD 機能を利用できます。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -12,7 +12,8 @@ _language: ja
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
-`{ComponentName}` はインライン行追加や {Platform} CRUD 操作のための強力な API を通して便利なデータ操作方法を提供します。グリッドのテンプレートで編集アクションが有効になっている `ActionStrip` コンポーネントを追加し、行にホバーして提供されたボタンを使用するか、<kbd>ALT</kbd> + <kbd>+</kbd> を押して、行追加 UI を生成します。
+{Platform} {ComponentTitle} 行追加機能 {ProductName} を使用すると、ユーザーは別のフォームやページに移動することなく、新しいデータ レコードを入力して送信できます。{Platform} {ComponentTitle} を使用すると、ユーザーはインライン行追加と CRUD 操作用の強力な API を通じてデータを操作できます。
+グリッドのテンプレートで編集操作が有効になっている `ActionStrip` コンポーネントを追加します。その後、行にカーソルを置き、提供されたボタンを使用します。最後に <kbd>ALT</kbd> + <kbd>+</kbd> を押して、行追加 UI を表示します。
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 

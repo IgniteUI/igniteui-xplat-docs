@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} の行ドラッグ - インフラジスティックス
+title: {Platform} {ComponentTitle} 行のドラッグ - {ProductName}
 _description: {Platform} {ComponentTitle} の行ドラッグは、マウスで行をすばやくドラッグして再配置します。プロジェクトで行ドラッグを構成する方法を説明します。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} の行ドラッグ
 
-{ProductName} `{ComponentName}` では、行ドラッグがルート `{ComponentSelector}` コンポーネントで初期化されて、`RowDraggable` 入力で設定できます。行ドラッグを有効にすると、ユーザーは行ドラッグ ハンドルを使用して行のドラッグを開始できます。
+{ProductName} の {Platform} {ComponentTitle} 行ドラッグ機能は簡単に構成でき、マウスを使用して行を新しい位置にドラッグ アンド ドロップすることで、グリッド内の行を再配置するために使用されます。これはルートの {Platform} {ComponentTitle} コンポーネントで初期化され、`RowDraggable` 入力を介して構成できます。
 
 ## {Platform} {ComponentTitle} 行ドラッグの例
 
@@ -351,7 +351,7 @@ public dragIndicatorIconTemplate = (ctx: IgcGridEmptyTemplateContext) => {
 function dragIndicatorIconTemplate(ctx: IgrGridEmptyTemplateContext) {
     return (
         <>
-            <IgrIcon iconName="drag_handle" collection="material" />
+            <IgrIcon name="drag_handle" collection="material" />
         </>
     );
 }
