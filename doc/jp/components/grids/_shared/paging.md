@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} ページング - インフラジスティックス
+title: {Platform} {ComponentTitle} ページング - {ProductName}
 _description: {Platform} ページネーションを構成し、Ignite UI によって {Platform} テーブルにカスタム ページを作成し、さまざまなイベントで要求されたページのデータを取得します。
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Paging, {Platform}, {ComponentKeywords}, {ProductName}, ページング, インフラジスティックス
@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} ページネーションの概要
 
-ページネーションは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。{Platform} テーブルのページネーションにより、ユーザー エクスペリエンスとデータ操作が向上します。`{ComponentName}` ページネーションは、列の追加と同様に、`Paginator` タグを定義することにより、グリッド ツリーに投影された別のコンポーネントを介して構成できます。他の {Platform} テーブルと同様に、`{ComponentName}` のページネーションはカスタム ページのテンプレートをサポートしています。
+{ProductName} の {Platform} {ComponentTitle} ページネーションは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。React グリッドのページネーションにより、ユーザー エクスペリエンスとデータ操作が向上します。{Platform} {ComponentTitle} ページネーションは、列の追加と同様に、`Paginator` タグを定義することにより、グリッド ツリーに投影された別のコンポーネントを介して構成できます。他の {Platform} テーブルと同様に、{Platform} {ComponentTitle} のページネーションはカスタム ページのテンプレートをサポートしています。
 
 ## {Platform} {ComponentTitle} ページネーションの例
 
@@ -47,6 +47,15 @@ _language: ja
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} height="500px" width="100%" displayDensity="cosy">
+    <IgrPaginator key="paginator" perPage="10">
+    </IgrPaginator>
+</{ComponentSelector}>
+```
+<!-- end: React -->
 
 <!-- Angular -->
 ```html
@@ -111,16 +120,22 @@ _language: ja
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
     var paginator = this.paginator = document.getElementById('paginator') as IgcPaginatorComponent;
-
-    this._bind = () => {
-        grid.data = this.data;
-        paginator.page = grid.page;
-        paginator.totalRecords = grid.totalRecords;
-        paginator.selectOptions = selectOptions;
-        paginator.displayDensity = grid.displayDensity;
-    }
-    this._bind();
+    const selectOptions = [5, 15, 20, 50];
+    grid.data = this.data;
+    paginator.page = grid.page;
+    paginator.totalRecords = grid.totalRecords;
+    paginator.selectOptions = selectOptions;
+    paginator.displayDensity = grid.displayDensity;
 }
+```
+
+```tsx
+const selectOptions = [5, 15, 20, 50];
+
+<{ComponentSelector}>
+    <IgrPaginator key="paginator" perPage={10} page={1} selectOptions={selectOptions} displayDensity="cosy">
+    </IgrPaginator>
+</{ComponentSelector}>
 ```
 
 <!-- ComponentEnd: Grid, TreeGrid -->

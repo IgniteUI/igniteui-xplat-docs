@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} for {ProductName} の Excel スタイル フィルタリング
+title: {Platform} {ComponentTitle} Excel スタイル フィルタリング - {ProductName}
 _description: {Platform} {ComponentTitle} で Excel フィルタリングを構成する方法を説明します。さまざまなオプションを有効/無効にし、Excel スタイル フィルター メニューを自由にカスタマイズできます。
 _keywords: excel like filter, {Platform}, {ProductName}, Infragistics, excel のようなフィルター, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -10,11 +10,11 @@ _language: ja
 
 # {Platform} {ComponentTitle} の Excel スタイル フィルタリング
 
-{Platform} `{ComponentName}` は、Excel のようなフィルタリング UI を提供する Excel スタイルのフィルタリング機能を公開します。
+{Platform} {ComponentTitle} は、Excel のようなフィルタリング UI を提供する Excel スタイルのフィルタリング機能を公開します。これにより、大規模なデータセットを操作するプロセスが簡素化されます。主なアイデアは、無関係なエントリを排除しながら、最も関連性の高いデータをフィルタリングできるようにすることです。
 
 ## {Platform} {ComponentTitle} Excel スタイル フィルタリングの例
 
-`sample="/{ComponentSample}/excel-style-filtering-sample-1", height="620", alt="{Platform} {ComponentTitle} Excel スタイルのフィルタリング サンプル 1"`
+`sample="/{ComponentSample}/excel-style-filtering-sample-1", height="950", alt="{Platform} {ComponentTitle} Excel スタイルのフィルタリング サンプル 1"`
 
 
 ## 使用方法
@@ -39,6 +39,13 @@ _language: ja
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+```tsx
+<IgrGrid data={nwindData} autoGenerate="false" ref={gridRef} allowFiltering="true" filterMode="excelStyleFilter">
+</IgrGrid>
+```
+<!-- end: React -->
+
 ## インタラクション
 
 特定の列のフィルター メニューを開くには、ヘッダーの {Platform} フィルター アイコンをクリックします。さらに、選択したヘッダーで <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd> の組み合わせを使用できます。列でフィルタリング機能とソート、ピン固定、移動、選択、非表示が設定された場合、オンになっている機能のボタンが表示されます。
@@ -47,7 +54,7 @@ _language: ja
 
 検索ボックスに入力してフィルターを適用すると、検索条件に一致する項目のみが選択されます。ただし、現在フィルターされている項目に項目を追加したい場合は、**[現在の選択をフィルターに追加]** オプションを選択する必要があります。
 
-フィルターをクリアしたい場合、`[すべて選択]` オプションをチェックして [適用] ボタンを押します。
+フィルターをクリアしたい場合、**[すべて選択]** オプションをチェックして [適用] ボタンを押します。
 
 異なる式でフィルターを適用する場合、**テキスト フィルター**をクリックし、特定の列で使用できるフィルター演算子のサブメニューを開きます。いずれかを選択してカスタム フィルター ダイアログを開き、フィルターとロジック演算子を使用して式を追加できます。[クリア] ボタンでフィルターをクリアできます。
 
@@ -101,6 +108,21 @@ _language: ja
 </igc-grid>
 ```
 
+```tsx
+<IgrGrid data={nwindData} autoGenerate="false" ref={gridRef} allowFiltering="true" filterMode="excelStyleFilter">
+    <IgrColumn field="ProductName" header="Product Name" sortable="true" dataType="String">
+    </IgrColumn>
+    <IgrColumn field="QuantityPerUnit" header="Quantity Per Unit" sortable="false" disable-pinning="true" disable-hiding="true" data-type="String">
+    </IgrColumn>
+    <IgrColumn field="UnitPrice" header="Unit Price" disable-pinning="true" disable-hiding="true" sortable="true" data-type="Number">
+    </IgrColumn>
+    <IgrColumn field="OrderDate" header="Order Date" sortable="false"  data-type="Date">
+    </IgrColumn>
+    <IgrColumn field="Discontinued" header="Discontinued" sortable="true" data-type="Boolean">
+    </IgrColumn>      
+</IgrGrid>  
+```
+
 以下のサンプルの **Product Name** と **Discontinued** 列で 4 つすべての機能が有効です。**Quantity Per Unit** で 4 機能すべてが無効、**Unit Price** でソートのみが有効、**Order Date** でピン固定と非表示のみ有効です。すべてが `Selectable` です。
 
 <!-- ComponentEnd: Grid -->
@@ -152,7 +174,7 @@ Add tree grid snippet
 </igc-tree-grid>
 ```
 
-以下のサンプルでは、「Product Name」列と「Discontinued」列で 3 つの機能がすべて有効化され、「Unit Price」で 3 つすべてが無効化され、「Added Date」でピン固定と非表示のみが設定されています。
+以下のサンプルでは、「Product Name」 列と 「Discontinued」 列で 3 つの機能がすべて有効化され、「Unit Price」 で 3 つすべてが無効化され、「Added Date」 でピン固定と非表示のみが設定されています。
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -252,7 +274,7 @@ Add blazor snippets here
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 Excel スタイル フィルター メニューをさらにカスタマイズする場合は、`ExcelStyleHeaderIconTemplate` プロパティを使用して、メニューのヘッダー アイコンのカスタム テンプレートを定義できます。
 
@@ -285,7 +307,31 @@ public webGridFilterAltIconTemplate = (ctx: IgcCellTemplateContext) => {
 }
 ```
 
-<!-- end: WebComponents, Blazor -->
+```tsx
+const webGridFilterAltIconTemplate = ({dataContext: IgrCellTemplateContext}) => {
+  return (
+    <img 
+      height="15px" 
+      width="15px" 
+      src="http://static.infragistics.com/xplatform/images/grid/propeller-logo.svg" 
+      title="Continued" 
+      alt="Continued" 
+    />
+  );
+}
+
+function App() {
+    return (
+        <>
+        <IgrGrid autoGenerate="true" allowFiltering="true" filterMode="excelStyleFilter" 
+            excelStyleHeaderIconTemplate={webGridFilterAltIconTemplate}>
+        </IgrGrid>
+        <>
+    )
+}
+```
+
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- ComponentStart: Grid -->
 
@@ -823,7 +869,7 @@ $custom-drop-down:drop-down-theme(
 
 ### スキーマの使用
 
-テーマ エンジンを使用して [**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
+テーマ エンジンを使用して[**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
 
 すべてのコンポーネント (この場合は[light-grid]({environment:sassApiUrl}/index.html#variable-_light-grid)、[light-input-group]({environment:sassApiUrl}/index.html#variable-_light-input-group)、[light-button]({environment:sassApiUrl}/index.html#variable-_light-button)、[light-list]({environment:sassApiUrl}/index.html#variable-_light-list)、[light-checkbox]({environment:sassApiUrl}/index.html#variable-_light-checkbox)、[light-drop-down]({environment:sassApiUrl}/index.html#variable-_light-drop-down)) に提供される 2 つの定義済みスキーマのいずれかを拡張します。
 
@@ -973,7 +1019,7 @@ $custom-drop-down: drop-down-theme(
 
 ### デモ
 
-`sample="/{ComponentSample}/excel-style-filtering-style", height="950", alt="{Platform} {ComponentTitle} excel style filtering style"`
+`sample="/{ComponentSample}/excel-style-filtering-style", height="950", alt="{Platform} {ComponentTitle} Excel スタイルのフィルタリング スタイル"`
 
 
 > [!Note]
@@ -981,7 +1027,7 @@ $custom-drop-down: drop-down-theme(
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 ## スタイル設定
 
 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
@@ -989,6 +1035,10 @@ $custom-drop-down: drop-down-theme(
 
 ```html
 <igc-grid class="grid"></igc-grid>
+```
+
+```tsx
+<IgrGrid className="grid"></IgrGrid>
 ```
 
 ```razor
@@ -999,15 +1049,15 @@ $custom-drop-down: drop-down-theme(
 
 ```css
 .grid {
-    --igx-grid-filtering-row-background: #ffcd0f;
-    --igx-list-item-background: #ffcd0f;
+    --ig-grid-filtering-row-background: #ffcd0f;
+    --ig-list-item-background: #ffcd0f;
 }
 ```
 ### デモ
 
 `sample="/{ComponentSample}/excel-style-filtering-style", height="950", alt="{Platform} {ComponentTitle} Excel スタイルのフィルタリング スタイル"`
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 ## API リファレンス
 

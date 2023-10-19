@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} の複数行レイアウト - インフラジスティックス
+title: 	{Platform} {ComponentTitle} 複数行レイアウト - {ProductName}
 _description: {ProductName} Data Grid の複数行レイアウト機能を使用して、列をより強力な方法で配置およびサイズ設定します。デモと例をお試しください。
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Multi-Row Layout, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, 複数行レイアウト, インフラジスティックス
@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} の複数行レイアウト
 
-複数行レイアウトは、`{ComponentName}` のレンダリング機能を拡張します。この機能により、単一のデータレコードを複数の表示行に分割することができます。
+{ComponentTitle} のレンダリング機能を拡張します。この機能により、単一のデータレコードを複数の表示行に分割することができます。
 
 ## {Platform} {ComponentTitle} 複数行レイアウトの例
 
@@ -120,14 +120,14 @@ _language: ja
 
 ### 水平ナビゲーション
 
-* <Kbd>左矢印</kbd> または <kbd>右矢印</kbd> は、現在行内の左右に隣接するセルに移動します。定義されている列レイアウトの影響を受けません。現在のセルが複数の行にまたがる場合は、他の隣接するセルへ移動した場合を除き、<kbd>左矢印</kbd> と <kbd>右矢印</kbd> は、同じ `rowStart` で左右の最初のセルに移動します。ナビゲーションはナビゲーション開始セルを格納し、可能であれば同じ `rowStart` を持つセルに移動します。
-* <kbd>Ctrl</kbd> + <kbd>左矢印</kbd> (<kbd>HOME</kbd>) または <kbd>Ctrl</kbd> + <kbd>右矢印</kbd> (<kbd>END</kbd>) - 行の先頭または末尾に移動し、ナビゲーション開始セルに従ってセルを選択します。
+* <kbd>←</kbd> または <kbd>→</kbd> は、現在行内の左右に隣接するセルに移動します。定義されている列レイアウトの影響を受けません。現在のセルが複数の行にまたがる場合は、他の隣接するセルへ移動した場合を除き、<kbd>←</kbd> と <kbd>→</kbd> は、同じ `rowStart` で左右の最初のセルに移動します。ナビゲーションはナビゲーション開始セルを格納し、可能であれば同じ `rowStart` を持つセルに移動します。
+* <kbd>Ctrl</kbd> + <kbd>←</kbd> (<kbd>HOME</kbd>) または <kbd>Ctrl</kbd> + <kbd>→</kbd> (<kbd>END</kbd>) - 行の先頭または末尾に移動し、ナビゲーション開始セルに従ってセルを選択します。
 
 
 ### 垂直ナビゲーション
 
-* <kbd>上矢印</kbd> または <kbd>下矢印</kbd> - 開始位置に対して上下のセルに移動し、行の影響は受けません。現在のセルが複数の列にまたがる場合は、次のアクティブ セルがナビゲーション開始セルに従って選択されます。
-* <kbd>Ctrl</kbd> + <kbd>上矢印</kbd> または <kbd>Ctrl</kbd> + <kbd>Down</kbd> - 最初の行または最後の行の同じ列に移動してフォーカスを適用します。
+* <kbd>↑</kbd> または <kbd>↓</kbd> - 開始位置に対して上下のセルに移動し、行の影響は受けません。現在のセルが複数の列にまたがる場合は、次のアクティブ セルがナビゲーション開始セルに従って選択されます。
+* <kbd>Ctrl</kbd> + <kbd>↑</kbd> または <kbd>Ctrl</kbd> + <kbd>↓</kbd> - 最初の行または最後の行の同じ列に移動してフォーカスを適用します。
 * <kbd>Ctrl</kbd> + <kbd>Home</kbd> または <kbd>Ctrl</kbd> + <kbd>End</kbd> - 最初の行に移動して最初のセルに移動するか、最後のセルに移動します。最後のセルに移動してフォーカスを合わせます。
 
 
@@ -336,12 +336,12 @@ $my-custom-schema: extend($light-schema, (
 
 ```css
 .grid {
-    --igx-grid-cell-active-border-color: #ffcd0f;
-    --igx-grid-cell-selected-background: #6f6f6f;
-    --igx-grid-row-hover-background: #fde069;
-    --igx-grid-row-selected-background: #8d8d8d;
-    --igx-grid-header-background: #494949;
-    --igx-grid-header-text-color: #fff;
+    --ig-grid-cell-active-border-color: #ffcd0f;
+    --ig-grid-cell-selected-background: #6f6f6f;
+    --ig-grid-row-hover-background: #fde069;
+    --ig-grid-row-selected-background: #8d8d8d;
+    --ig-grid-header-background: #494949;
+    --ig-grid-header-text-color: #fff;
 }
 ```
 ### デモ

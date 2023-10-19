@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} の複数列ヘッダー - インフラジスティックス
+title: {Platform} {ComponentTitle} 複数列ヘッダー - {ProductName}
 _description: {ProductName} グリッドを使用して列ヘッダーを共通の階層ヘッダーの下に配置し、それらを複数のヘッダーに結合することで、列ヘッダーのグループ化を開始します。
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Multi-Column Headers, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, 複数列ヘッダー, インフラジスティックス
@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 複数列ヘッダーの概要
 
-{Platform} `{ComponentName}` は複数列ヘッダーをサポートしており、共通の複数ヘッダーの下に配置することで列をグループ化できます。各複数-列ヘッダーグループは、マテリアル UI グリッド内でその他複数のグループや列を組み合わせることができます。
+{ProductName} の {Platform} {ComponentTitle} は複数列ヘッダーをサポートしており、共通の複数ヘッダーの下に配置することで列をグループ化できます。各複数ヘッダー グループは、その他のグループや列を組み合わせて表示できます。この機能は、水平方向のスクロールが面倒な大規模なデータセットを扱う場合に特に役立ちます。
 
 ## {Platform} {ComponentTitle} 複数列ヘッダーの例
 
@@ -358,8 +358,8 @@ TO-DO H-GRID CODE SNIPPET
 ```ts
 constructor() {
     var general = this.general = document.getElementById('General') as IgcColumnComponent;
-        general.headerTemplate = this.generalHeaderTemplate;
-    }
+    general.headerTemplate = this.generalHeaderTemplate;
+}
 
 public generalHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
@@ -392,9 +392,9 @@ public generalHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 constructor() {
     var general = this.general = document.getElementById('General') as IgcColumnComponent;
     var addresss = this.address = document.getElementById('Address') as IgcColumnComponent;
-        general.headerTemplate = this.columnGroupHeaderTemplate;
-        addresss.headerTemplate = this.columnGroupHeaderTemplate;
-    }
+    general.headerTemplate = this.columnGroupHeaderTemplate;
+    addresss.headerTemplate = this.columnGroupHeaderTemplate;
+}
 
 public columnGroupHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
@@ -437,9 +437,9 @@ public columnGroupHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
     var columnGroup = this.columnGroup = document.getElementById('addressInfoGroup') as IgcColumnGroupComponent;
-        grid.data = this.customersData
-        columnGroup.headerTemplate = this.headerTemplate;
-    }
+    grid.data = this.customersData
+    columnGroup.headerTemplate = this.headerTemplate;
+}
 
 public headerTemplate = (ctx: IgcColumnTemplateContext) => {
     const column = (ctx as any).column;
@@ -475,7 +475,7 @@ public headerTemplate = (ctx: IgcColumnTemplateContext) => {
 ```ts
 public columnHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <igc-icon draggable="false" click="${this.onClick()}"></igc-icon>
+        <igc-icon draggable="false" @click="${() => this.onClick()}"></igc-icon>
     `;
 }
 ```
@@ -622,11 +622,11 @@ import 'core-js/es7/array';
 
 ```css
 .grid {
-    --igx-grid-header-background: #e0f3ff;
-    --igx-grid-header-text-color: #e41c77;
-    --igx-grid-header-border-width: 1px;
-    --igx-grid-header-border-style: solid;
-    --igx-grid-header-border-color: rgba(0, 0, 0, 0.08);
+    --ig-grid-header-background: #e0f3ff;
+    --ig-grid-header-text-color: #e41c77;
+    --ig-grid-header-border-width: 1px;
+    --ig-grid-header-border-style: solid;
+    --ig-grid-header-border-color: rgba(0, 0, 0, 0.08);
 }
 ```
 ### デモ

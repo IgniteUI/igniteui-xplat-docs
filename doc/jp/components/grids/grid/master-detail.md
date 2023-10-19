@@ -45,6 +45,10 @@ constructor() {
     <IgbGrid DetailTemplateScript="DetailTemplate"  AutoGenerate=true  Data=northwindEmployees></IgbGrid>
 ```
 
+```ts
+<IgrGrid detailTemplate={masterDetailTemplate} autoGenerate="false" data={nwindData}>
+```
+
 テンプレートのコンテキストはマスター レコード データであるため、マスター レコードの値を詳細テンプレートに表示できます。例:
 
 ```html
@@ -60,7 +64,7 @@ constructor() {
 
 ```ts
     public masterDetailTemplate = (ctx: IgcGridMasterDetailContext) => {
-        var data = (ctx as any)["$implicit"];
+        var data = ctx.implicit;
         return html` <div class="contact-container">
         <span><strong>Name:</strong> ${data.ContactName}</span> <br/>
         <span><strong>Title:</strong> ${data.ContactTitle}</span> <br/>
@@ -73,13 +77,26 @@ constructor() {
 // In JavaScript
 igRegisterScript("DetailTemplate", (ctx) => {
     var html = window.igTemplating.html;
-    var data = ctx["$implicit"];
+    var data = ctx.implicit;
     return html` <div class="contact-container">
         <span><strong>Name:</strong> ${data.ContactName}</span> <br/>
         <span><strong>Title:</strong> ${data.ContactTitle}</span> <br/>
         <span><strong>Company:</strong> ${data.CompanyName}</span> <br/>
     </div>`;
 }, false);
+```
+
+```ts
+const masterDetailTemplate = ({dataContext}:{dataContext: IgrGridMasterDetailContext}) => {
+    const data = dataContext.implicit;
+    return (
+        <div className="contact-container">
+            <span><strong>Name:</strong> {data.ContactName}</span> <br/>
+            <span><strong>Title:</strong> {data.ContactTitle}</span> <br/>
+            <span><strong>Company:</strong> {data.CompanyName}</span> <br/>
+        </div>
+    );
+}
 ```
 
 ## API
@@ -109,7 +126,7 @@ igRegisterScript("DetailTemplate", (ctx) => {
     - <kbd>🡑</kbd> - 前の行のセルにフォーカスし、1 つ上の行へ移動します。
     - <kbd>🡓</kbd> - 次の行のセルにフォーカスし、1 つ下の行へ移動します。
     - <kbd>Tab</kbd> - フォーカス可能な要素がある場合、テンプレート内の次のフォーカス可能な要素にフォーカスを移動します。そうでない場合は、次のグリッド行に移動します。
-    - <kbd>Shift + <kbd>Tab</kbd> - 前の行にフォーカスします。
+    - <kbd>Shift</kbd> + <kbd><kbd>Tab</kbd> - 前の行にフォーカスします。
 
 - エキスパンダーのデータ行にフォーカスがある場合:
     - <kbd>Alt</kbd> + <kbd>🡒</kbd> または <kbd>Alt</kbd> + <kbd>🡓</kbd> - 行を展開します。

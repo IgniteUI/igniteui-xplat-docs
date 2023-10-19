@@ -1,6 +1,11 @@
-{"types":[
-  { "originalName":"StockChangedEventArgs",
-    "names":[{"platform":"WebComponents","fileName":"igc-stock-changed-event-args.ts","mappedName":"IgcStockChangedEventArgs"}],
+{  "types":[
+  {
+    "originalName": "StockChangedEventArgs",
+    "originalNamespace": "Infragistics.DataAdapters",
+    "packageName": "undefined",
+    "names":[{"platform": "WebComponents","fileName": "igc-stock-changed-event-args.ts","mappedName": "IgcStockChangedEventArgs"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"addedSymbols"}],"originalName":"AddedSymbols"},
-    { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"removedSymbols"}],"originalName":"RemovedSymbols"}],"originalNamespace":"Infragistics.DataAdapters"}]}
+      {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "addedSymbols"}], "originalName": "AddedSymbols"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "removedSymbols"}], "originalName": "RemovedSymbols"} ]
+  }]
+}

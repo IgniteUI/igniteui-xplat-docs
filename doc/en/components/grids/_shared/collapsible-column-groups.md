@@ -1,5 +1,5 @@
 ---
-title: Collapsible Column Groups in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Collapsible Column Groups - {ProductName}
 _description: Take advantage of the capability to show\hide smaller and concise set of data with the use of collapsible column groups in our {Platform} {ComponentTitle}. Try it now!
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -8,7 +8,7 @@ namespace: Infragistics.Controls
 ---
 # {Platform} {ComponentTitle} Collapsible Column Groups Overview
 
-Multi-column headers allow you to have multiple levels of nested columns and column groups. They also provide the ability to mark each column group as **collapsible**. **Collapsible multi-column headers** make it possible to collapse/expand, i.e. to show and hide the nested headers under the current one, which will give you a shortened/summarized information for example.
+The {ProductName} Collapsible Column Groups feature in {Platform} {ComponentTitle} allows you to organize and manage multiple levels of nested columns and column groups in the `{ComponentName}` by grouping them together and providing the option to collapse or expand these groups for improved data visualization and navigation.
 
 ## {Platform} {ComponentTitle} Collapsible Column Groups Example
 
@@ -38,6 +38,12 @@ npm install --save igniteui-webcomponents-core
 npm install --save igniteui-webcomponents-grids
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```cmd
+npm install igniteui-react-grids
+```
+<!-- end: React -->
 
 For a complete introduction to the {ProductName}, read the [getting started](../../general-getting-started.md) topic.
 
@@ -106,6 +112,31 @@ Let's see the markup below:
 </igc-column-group>
 ```
 
+```tsx
+<IgrColumnGroup collapsible="true" header="Customer Information">
+    <IgrColumn field="CustomerName" header="Customer Name" visibleWhenCollapsed="true">
+    </IgrColumn>
+    <IgrColumn field="CustomerID" header="Customer ID" visibleWhenCollapsed="false">
+    </IgrColumn>
+    <IgrColumn field="CustomerFirstName" header="First Name" visibleWhenCollapsed="false">
+    </IgrColumn>
+    <IgrColumn field="CustomerLastName" header="Last Name" visibleWhenCollapsed="false">
+    </IgrColumn>
+    <IgrColumnGroup header="Customer Address">
+        <IgrColumn field="CustomerAddress"  header="Full Address" width="250px" visibleWhenCollapsed="true">
+        </IgrColumn>
+        <IgrColumn field="Address" visibleWhenCollapsed="false">
+        </IgrColumn>
+        <IgrColumn  field="City" visibleWhenCollapsed="false">
+        </IgrColumn>
+        <IgrColumn field="Country" visibleWhenCollapsed="false">
+        </IgrColumn>
+        <IgrColumn field="PostalCode" header="Postal Code" visibleWhenCollapsed="false">
+        </IgrColumn>
+    </IgrColumnGroup>
+</IgrColumnGroup>
+```
+
 To summarize, every child column has three states:
 -	Can be always visible, no matter the expanded state of its parent.
 -	Can be visible, when its parent is collapsed.
@@ -113,7 +144,7 @@ To summarize, every child column has three states:
 
 The initial state of the column group which is specified as collapsible is `Expanded` set to **true**, but you can easily change this behavior by setting it to **false**.
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 ## Expand/Collapse Indicator Template
 
 Default expand indicator for the `{ComponentName}` is the following:
@@ -181,7 +212,17 @@ public indTemplate = (ctx: IgcColumnTemplateContext) => {
     `;
 }
 ```
-<!-- end: Angular, WebComponents -->
+
+```tsx
+  function collapsibleIndicatorTemplate(e: { dataContext: IgrColumnTemplateContext }) {
+    return (
+    <div>
+      <IgrIcon iconName={e.dataContext.column.expanded ? 'remove' : 'add'}></IgrIcon>
+    </div>)
+  }
+```
+
+<!-- end: Angular, WebComponents, React -->
 <!-- Angular -->
 
 ### Using Property
