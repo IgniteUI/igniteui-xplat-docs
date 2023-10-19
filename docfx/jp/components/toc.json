@@ -845,7 +845,7 @@
     "href": "grids/tree.md"
   },
   {
-    "exclude": ["Angular", "Blazor", "WebComponents"],
+    "exclude": ["Angular", "Blazor", "WebComponents", "React"],
     "name": "テーブル / グリッド",
     "href": "grids/data-grid/overview.md",
     "items": [
@@ -1809,35 +1809,35 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "非推奨のコンポーネント",
     "header": true
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "テーブル / グリッド",
     "href": "grids/data-grid/overview.md",
     "items": [
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "アクセシビリティの遵守",
         "href": "grids/data-grid/accessibility.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "ライブ データのバインディング",
         "href": "grids/data-grid/live-data.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "ローカル データ ソースのバインディング",
         "href": "grids/data-grid/local-data.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "ローカリゼーション",
         "href": "grids/data-grid/localization.md"
       },
@@ -1872,128 +1872,128 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "セルのアクティブ化",
         "href": "grids/data-grid/cell-activation.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "グリッドの編集",
         "href": "grids/data-grid/cell-editing.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "セルの結合",
         "href": "grids/data-grid/cell-merging.md"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "セルの選択",
         "href": "grids/data-grid/cell-selection.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "列のアニメーション",
         "href": "grids/data-grid/column-animation.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "列のフィルタリング",
         "href": "grids/data-grid/column-filtering.md"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "列の移動",
         "href": "grids/data-grid/column-moving.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "列の選択",
         "href": "grids/data-grid/column-chooser.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "列のオプション",
         "href": "grids/data-grid/column-options.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "列のピン固定",
         "href": "grids/data-grid/column-pinning.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "列のサイズ変更",
         "href": "grids/data-grid/column-resizing.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "列のソート",
         "href": "grids/data-grid/column-sorting.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "列のスパークライン",
         "href": "grids/data-grid/type-sparkline-table.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "列の集計",
         "href": "grids/data-grid/column-summaries.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "列のタイプ",
         "href": "grids/data-grid/column-types.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "高パフォーマンス",
         "href": "grids/data-grid/performance.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "水平方向のスクロール",
         "href": "grids/data-grid/horizontal-scrolling.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "グリッド レイアウトの読み込みと保存",
         "href": "grids/data-grid/load-save-layout.md"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "行のグループ化",
         "href": "grids/data-grid/row-grouping.md"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "行の強調表示",
         "href": "grids/data-grid/row-highlighting.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "行のページング",
         "href": "grids/data-grid/row-paging.md"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "行のピン固定",
         "href": "grids/data-grid/row-pinning.md",
         "status": ""
