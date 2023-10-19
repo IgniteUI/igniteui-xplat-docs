@@ -1,5 +1,5 @@
 ---
-title: {Platform} Grid Display Density - {ProductName}
+title: {Platform} {ComponentTitle} Display Density - {ProductName}
 _description: Learn how to apply display density capabilities to the {ComponentTitle} component. You can use a set of compact view options in the {ProductName}.
 _keywords:  material density, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,7 +9,10 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Display Density
 
-The `{ComponentName}` design is based on [Material Design Guidelines](https://material.io/design). We currently provide an option to choose between predefined set of display [density](https://material.io/design/layout/applying-density.html) options that will bring a cosy, comfortable or compact view respectively. By selecting the right density for your Material UI table / Material UI grid you can significantly improve the user experience when interacting with large amounts of content.
+The {ProductName} Display Density feature in {Platform} {ComponentTitle} allows users to control the spacing and layout of data within the `{ComponentName}`. By changing [density](https://material.io/design/layout/applying-density.html), you can significantly improve the user experience when interacting with large amounts of content.  They can choose from three display density options:
+- Cozy
+- Comfortable
+- Compact
 
 ## {Platform} {ComponentTitle} Display Density Example
 
@@ -35,15 +38,28 @@ As you can see in the demo above, the `{ComponentName}` provides three density o
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid" display-density="Cosy" >
+<{ComponentSelector} id="grid" display-density="cosy" >
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
 
+
+```tsx
+<{ComponentSelector} id="grid" displayDensity="cosy" >
+</{ComponentSelector}>
+```
+
+
 or
 
+<!-- WebComponents -->
 ```typescript
 this.grid.displayDensity = 'cosy';
+```
+<!-- end: WebComponents -->
+
+```tsx
+gridRef.current.displayDensity = 'cosy';
 ```
 
 ```razor
@@ -100,6 +116,21 @@ Let's now continue with our sample and see in action how the `DisplayDensity` is
         </igc-property-editor-property-description>
     </igc-property-editor-panel>
 </div>
+```
+
+```tsx
+<IgrPropertyEditorPanel
+    ref={propertyEditorRef}
+    componentRenderer={renderer}
+    target={grid}
+    descriptionType="WebGrid"
+    isHorizontal="true"
+    isWrappingEnabled="true">
+    <IgrPropertyEditorPropertyDescription
+        propertyPath="DisplayDensity"
+        name="DisplayDensityEditor">
+    </IgrPropertyEditorPropertyDescription>
+</IgrPropertyEditorPanel>
 ```
 
 ```typescript
@@ -423,30 +454,66 @@ Now we can add the markup.
     </igx-column-group>
 </igx-grid>
 ```
+```tsx
+<IgrGrid autoGenerate="false" ref={gridRef} data={invoicesData} allowFiltering="true">
+    <IgrColumn field="CustomerName" header="Customer Name" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="Country" header="Country" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="City" header="City" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="Address" header="Address" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="PostalCode" header="Postal Code" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="Salesperson" header="Sales Person" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="ShipperName" header="Shipper Name" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="OrderDate" header="Order Date" dataType="Date" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="ProductID" header="ID" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="ProductName" header="Name" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="UnitPrice" header="Unit Price" dataType="Number" sortable="true" hasSummary="true" filterable="false">
+    </IgrColumn>
+    <IgrColumn field="Quantity" header="Quantity" dataType="Number" sortable="true" hasSummary="true" filterable="false">
+    </IgrColumn>
+    <IgrColumn field="Discontinued" header="Discontinued" dataType="Boolean" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="Discontinued" header="Discontinued" dataType="Boolean" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="ShipName" header="Name" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="ShipCountry" header="Country" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="ShipCity" header="City" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="ShipPostalCode" header="Postal Code" dataType="String" sortable="true" hasSummary="true">
+    </IgrColumn>
+</IgrGrid>
+```
+
 ```ts
 constructor() {
     var propertyEditor = this.propertyEditor = document.getElementById('PropertyEditor') as IgcPropertyEditorPanelComponent;
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-
-    this._bind = () => {
-        propertyEditor.componentRenderer = this.renderer;
-        propertyEditor.target = this.grid;
-        grid.data = this.data;
-    }
-    this._bind();
-
+    propertyEditor.componentRenderer = this.renderer;
+    propertyEditor.target = this.grid;
+    grid.data = this.data;
 }
 
 private _componentRenderer: ComponentRenderer = null;
-    public get renderer(): ComponentRenderer {
-        if (this._componentRenderer == null) {
-            this._componentRenderer = new ComponentRenderer();
-            var context = this._componentRenderer.context;
-            PropertyEditorPanelDescriptionModule.register(context);
-            WebGridDescriptionModule.register(context);
-        }
-        return this._componentRenderer;
+public get renderer(): ComponentRenderer {
+    if (this._componentRenderer == null) {
+        this._componentRenderer = new ComponentRenderer();
+        var context = this._componentRenderer.context;
+        PropertyEditorPanelDescriptionModule.register(context);
+        WebGridDescriptionModule.register(context);
     }
+    return this._componentRenderer;
+}
 ```
 <!-- ComponentEnd: Grid -->
 
@@ -558,26 +625,21 @@ private _componentRenderer: ComponentRenderer = null;
 constructor() {
     var propertyEditor = this.propertyEditor = document.getElementById('PropertyEditor') as IgcPropertyEditorPanelComponent;
     var grid = this.grid = document.getElementById('grid') as IgcTreeGridComponent;
-
-    this._bind = () => {
-        propertyEditor.componentRenderer = this.renderer;
-        propertyEditor.target = this.grid;
-        grid.data = this.data;
-    }
-    this._bind();
-
+    propertyEditor.componentRenderer = this.renderer;
+    propertyEditor.target = this.grid;
+    grid.data = this.data;
 }
 
 private _componentRenderer: ComponentRenderer = null;
-    public get renderer(): ComponentRenderer {
-        if (this._componentRenderer == null) {
-            this._componentRenderer = new ComponentRenderer();
-            var context = this._componentRenderer.context;
-            PropertyEditorPanelDescriptionModule.register(context);
-            WebGridDescriptionModule.register(context);
-        }
-        return this._componentRenderer;
+public get renderer(): ComponentRenderer {
+    if (this._componentRenderer == null) {
+        this._componentRenderer = new ComponentRenderer();
+        var context = this._componentRenderer.context;
+        PropertyEditorPanelDescriptionModule.register(context);
+        WebGridDescriptionModule.register(context);
     }
+    return this._componentRenderer;
+}
 ```
 <!-- ComponentEnd: TreeGrid -->
 
@@ -680,26 +742,21 @@ private _componentRenderer: ComponentRenderer = null;
 constructor() {
     var propertyEditor = this.propertyEditor = document.getElementById('PropertyEditor') as IgcPropertyEditorPanelComponent;
     var grid = this.grid = document.getElementById('grid') as IgcHierarchicalGridComponent;
-
-    this._bind = () => {
-        propertyEditor.componentRenderer = this.renderer;
-        propertyEditor.target = this.grid;
-        grid.data = this.data;
-    }
-    this._bind();
-
+    propertyEditor.componentRenderer = this.renderer;
+    propertyEditor.target = this.grid;
+    grid.data = this.data;
 }
 
 private _componentRenderer: ComponentRenderer = null;
-    public get renderer(): ComponentRenderer {
-        if (this._componentRenderer == null) {
-            this._componentRenderer = new ComponentRenderer();
-            var context = this._componentRenderer.context;
-            PropertyEditorPanelDescriptionModule.register(context);
-            WebGridDescriptionModule.register(context);
-        }
-        return this._componentRenderer;
+public get renderer(): ComponentRenderer {
+    if (this._componentRenderer == null) {
+        this._componentRenderer = new ComponentRenderer();
+        var context = this._componentRenderer.context;
+        PropertyEditorPanelDescriptionModule.register(context);
+        WebGridDescriptionModule.register(context);
     }
+    return this._componentRenderer;
+}
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -725,11 +782,7 @@ public selectDensity(event) {
         var propertyEditor = this.propertyEditor;
         var displayDensityEditor = this.displayDensityEditor;
         var grid = this.grid;
-
-        this.BindElements = () => {
-            propertyEditor.Target = this.grid;
-        };
-        this.BindElements();
+        propertyEditor.Target = this.grid;
     }
 
     private IgbPropertyEditorPanel propertyEditor;
@@ -756,21 +809,31 @@ We can now extend our sample and add `RowHeight` property to the `{ComponentName
 
  ```razor
  <{ComponentSelector} Width="100%" Height="100%"
-             @ref=grid
-             AutoGenerate=true
-             Data=northwindEmployees
-             RowHeight="80"
-             DisplayDensity=@density>
+             @ref="grid"
+             AutoGenerate="true"
+             Data="northwindEmployees"
+             RowHeight="rowHeight"
+             DisplayDensity="@density">
 </{ComponentSelector}>
+
+@code {
+    private string rowHeight = "80px";
+}
  ```
 
  <!-- WebComponents -->
  ```html
- <{ComponentSelector} id="grid" display-density="Cosy" row-height="80px" width="100%"
+ <{ComponentSelector} id="grid" display-density="cosy" row-height="80px" width="100%"
  height="550px" allow-filtering="true">
  </{ComponentSelector}>
  ```
  <!-- end: WebComponents -->
+
+ ```tsx
+ <{ComponentSelector} id="grid" displayDensity="cosy" rowHeight="80px" width="100%"
+ height="550px" allowFiltering="true">
+ </{ComponentSelector}>
+ ```
 
 ## API References
 

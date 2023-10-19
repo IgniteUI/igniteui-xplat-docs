@@ -1,8 +1,14 @@
-{"types":[
-  { "originalName":"ScrollbarStyle","isEnum":true,
-    "names":[{"platform":"Angular","fileName":"ScrollbarStyle.ts","mappedName":"ScrollbarStyle"}],
+{  "types":[
+  {
+    "originalName": "ScrollbarStyle",
+    "originalNamespace": "Infragistics.Controls.Navigation",
+    "isEnum":true,
+    "packageName": "undefined",
+    "names":[{"platform": "Angular","fileName": "ScrollbarStyle.ts","mappedName": "ScrollbarStyle"}],
     "members":[
-    { "names":[{"platform":"Angular","mappedType":"ScrollbarStyle","mappedName":"Default"}],"originalName":"Default"},
-    { "names":[{"platform":"Angular","mappedType":"ScrollbarStyle","mappedName":"Fading"}],"originalName":"Fading"},
-    { "names":[{"platform":"Angular","mappedType":"ScrollbarStyle","mappedName":"Thin"}],"originalName":"Thin"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Navigation"}]}
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "ScrollbarStyle","mappedName": "Default"}], "originalName": "Default"},
+      {"names":[{"platform": "Angular", "mappedType": "ScrollbarStyle","mappedName": "Fading"}], "originalName": "Fading"},
+      {"names":[{"platform": "Angular", "mappedType": "ScrollbarStyle","mappedName": "Thin"}], "originalName": "Thin"} ]
+  }]
+}

@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} の行操作
 
-{ProductName} の `{ComponentName}` コンポーネントは、`ActionStrip` を使用し、行/セルコンポーネントおよび行のピン固定に CRUD を使用する機能を提供します。アクション ストリップ コンポーネントは、これらの操作用に事前定義された UI コントロールをホストできます。
+{ProductName} の {Platform} {ComponentTitle} 行操作機能を使用すると、開発者は `АctionStrip` を使用し、行/セル コンポーネントと行のピン固定に CRUD を利用できます。これらの操作 (編集とピン固定) には、{ComponentTitle} の特定の行に適用できる事前定義された UI コントロールがいくつかあります。
 
 ## 使用方法
 
@@ -77,14 +77,29 @@ import { IgxActionStripModule } from 'igniteui-angular';
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+```tsx
+<{ComponentSelector} id="grid" rowEditable="true" primaryKey="ID">
+    <IgrColumn field="field">
+    </IgrColumn>
+    <IgrActionStrip name="actionStrip">
+        <IgrGridPinningActions></IgrGridPinningActions>
+        <IgrGridEditingActions></IgrGridEditingActions>
+    </IgrActionStrip>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
 > [!Note]
 > `ActionStripComponent` が `{ComponentName}` の子コンポーネントの場合、行をホバーすると UI が自動的に表示されます。
+
+<!-- Angular -->
 
 ## カスタムの実装
 
 これらのコンポーネントは、カスタマイズのための柔軟性を提供するテンプレートを公開します。たとえば、**delete**、**edit** などの行アクションがある Gmail シナリオで `ActionStripComponent` を使用する場合、`igx-icon` でボタン コンポーネントを作成します。そして、クリック イベントを追加し、`ActionStripComponent` に挿入します。
 
-<!-- Angular -->
+
 ```html
 <{ComponentSelector}>
     <igx-action-strip #actionstrip>
@@ -98,19 +113,18 @@ import { IgxActionStripModule } from 'igniteui-angular';
     </igx-action-strip>
 </{ComponentSelector}>
 ```
-<!-- end: Angular -->
 
 ```razor
 <div class="grid__wrapper">
     <{ComponentSelector} Data=northwindEmployees>
         <IgbActionStrip @ref=actionstrip>
             <IgbGridPinningActions></IgbGridPinningActions>
-            <IgbButton Title="Edit" @onclick="StartEdit(actionstrip.Context)">
+            <IgbButton Title="Edit" @onclick="() => StartEdit(actionstrip.Context)">
                 <IgbIcon>edit</IgbIcon>
             </IgbButton>
             @if (!IsDeleted(actionstrip.Context))
             {
-                <IgbButton Title="Delete" @onclick='Delete(actionstrip.Context)'>
+                <IgbButton Title="Delete" @onclick="() => Delete(actionstrip.Context)">
                     <IgbIcon>delete</IgbIcon>
                 </IgbButton>
             }
@@ -118,6 +132,9 @@ import { IgxActionStripModule } from 'igniteui-angular';
     </{ComponentSelector}>
 </div>
 ```
+
+<!-- end: Angular -->
+
 
 <!-- WebComponents -->
 ```html
@@ -129,6 +146,17 @@ import { IgxActionStripModule } from 'igniteui-angular';
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector}>
+    <IgrActionStrip name="actionStrip">
+        <IgrGridPinningActions></IgrGridPinningActions>
+        <IgrGridEditingActions editRow="true" deleteRow="false"></IgrGridEditingActions>
+    </IgrActionStrip>
+</{ComponentSelector}>
+```
+<!-- end: React -->
 
 `sample="/{ComponentSample}/action-strip", height="600", alt="{Platform} {ComponentTitle} アクション ストリップの例"`
 
@@ -143,9 +171,11 @@ import { IgxActionStripModule } from 'igniteui-angular';
 
 ## API リファレンス
 
+<!-- Angular -->
+
 アクション ストリップの API に関する詳細な情報は、以下のリンクのトピックを参照してください。
 
-* `ActionStripComponent`
+* `ActionStrip`
 
 アクション ストリップで使用できるその他のコンポーネントとディレクティブ:
 
@@ -154,8 +184,8 @@ import { IgxActionStripModule } from 'igniteui-angular';
 
 <!-- end: Angular -->
 
-* `GridPinningActionsComponent`
-* `GridEditingActionsComponent`
+* `GridPinningActions`
+* `GridEditingActions`
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

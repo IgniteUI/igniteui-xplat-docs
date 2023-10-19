@@ -1,5 +1,5 @@
 ---
-title: {Platform} for {ProductName} 列のデータ タイプ
+title: {Platform} {ComponentTitle} 列のデータ タイプ - {ProductName}
 _description: いくつかの定義済みの列データ型 - number、string、date、boolean、currency、percent 列 - から選択して {Platform} のセルおよび編集テンプレートを処理します。
 _keywords: Column Data Type, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス, 列のデータ型
 mentionedTypes: [{ComponentApiMembers}]
@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 列タイプの概要
 
-{ProductName} `{ComponentName}` は、デフォルトおよび編集テンプレートの外観に基づいて、number (数値)、string (文字列)、date (日付)、boolean (ブール値)、currency (通貨) および percent (パーセント) 列のデータ型のデフォルト処理を提供します。
+{Platform} {ComponentTitle} は、デフォルトおよび編集テンプレートの外観に基づいて、number (数値)、string (文字列)、date (日付)、boolean (ブール値)、currency (通貨) および percent (パーセント) 列のデータ型のデフォルト処理を提供します。
 
 <!-- ComponentStart: Grid -->
 
@@ -81,12 +81,15 @@ private _formatOptions: any | null = null;
 
 constructor() {
     var column = this.column = document.getElementById('column') as IgcColumnComponent;
-
-    this._bind = () => {
-        column.pipeArgs = this.formatOptions;
-    }
-    this._bind();
+    column.pipeArgs = this.formatOptions;
 }
+```
+
+```tsx
+const formatOptions = new IgrColumnPipeArgs();
+formatOptions.digitsInfo = "1.4-4";
+
+<IgrColumn pipeArgs={formatOptions} dataType="number"></IgrColumn>
 ```
 
 ### DateTime、Date and Time (日付と時刻)
@@ -150,12 +153,16 @@ private _formatDateOptions: any | null = null;
 
 constructor() {
     var column = this.column = document.getElementById('column') as IgcColumnComponent;
-
-    this._bind = () => {
-        column.pipeArgs = this.formatDateOptions;
-    }
-    this._bind();
+    column.pipeArgs = this.formatDateOptions;
 }
+```
+
+```tsx
+const formatOptions = new IgrColumnPipeArgs();
+formatOptions.format = "long";
+formatOptions.timezone = "UTC+0";
+
+<IgrColumn pipeArgs={formatOptions} dataType="date"></IgrColumn>
 ```
 
 利用可能なタイムゾーン:
@@ -203,6 +210,15 @@ public timeFormats = [
 }
 ```
 
+```tsx
+const timeFormats = [
+    { format: 'shortTime', eq: 'h:mm a' },
+    { format: 'mediumTime', eq: 'h:mm:ss a' },
+    { format: 'longTime', eq: 'h:mm:ss a z' },
+    { format: 'fullTime', eq: 'h:mm:ss a zzzz' },
+];
+```
+
 #### セルの編集
 
 列タイプに基づくセル編集に関しては、別のエディターが表示されます。
@@ -244,6 +260,10 @@ public timeFormats = [
 </igc-column>
 ```
 
+```tsx
+<IgrColumn dataType="boolean"></IgrColumn>
+```
+
 ### 画像
 
 デフォルトのテンプレートは、デフォルの画像テンプレートへの画像ソースとしてデータからの値を使用しています。デフォルトの画像テンプレートは、画像ファイルの名前を抽出し、アクセシビリティ要件を満たすために画像の `alt` 属性として設定します。表示されるセル サイズは描画される画像のサイズに合わせて調整されるため、大きな画像も描画され、グリッド行は画像列の画像と同じ大きさになることに注意してください。画像タイプの列では、フィルタリング、ソート、およびグループ化はデフォルトでオフになっています。それらを有効にしたい場合は、データ操作を実行するカスタム ストラテジを提供する必要があります。
@@ -264,6 +284,12 @@ public timeFormats = [
 
 ```razor
 <IgbColumn DataType="GridColumnDataType.Image"></IgbColumn>
+```
+
+```tsx
+<IgrGrid>
+    <IgrColumn field="Image" dataType="Image"></IgrColumn>
+</IgrGrid>
 ```
 
 列に `AutoGenerate` を使用すると、グリッドは最初のデータ レコードの値を分析します。値が文字列型で、画像拡張子 (gif、jpg、jpeg、tiff、png、webp、bmp) で終わる URL のパターンと一致する場合、列は自動的に `dataType === GridColumnDataType.Image` としてマークされ、 デフォルトの画像テンプレートが描画されます。
@@ -297,11 +323,11 @@ import { LOCALE_ID } from '@angular/core';
 
 <!-- end: Angular -->
 
-<!-- Blazor, WebComponents -->
+<!-- Blazor, WebComponents, React -->
 
 デフォルトのテンプレートには、接頭辞または接尾辞が付いた通貨記号を含む数値を表示します。
 
-<!-- end: Blazor, WebComponents -->
+<!-- end: Blazor, WebComponents, React -->
 
 `PipeArgs` 入力を使用することにより、エンドユーザーは**小数点**、*currencyCode* および *display* によって数値書式をカスタマイズできます。
 
@@ -357,12 +383,16 @@ private _formatOptions: any | null = null;
 
 constructor() {
     var column = this.column = document.getElementById('column') as IgcColumnComponent;
-
-    this._bind = () => {
-        column.pipeArgs = this.formatOptions;
-    }
-    this._bind();
+    column.pipeArgs = this.formatOptions;
 }
+```
+
+```tsx
+const formatOptions = new IgrColumnPipeArgs();
+formatOptions.digitsInfo = "1.4-4";
+formatOptions.display = "symbol-narrow";
+
+<IgrColumn pipeArgs={formatOptions} dataType="currency" field="UnitsInStock"></IgrColumn>
 ```
 
 | パラメーター                 | 説明                                                |
@@ -450,12 +480,15 @@ private _formatPercentOptions: any | null = null;
 
 constructor() {
     var column = this.column = document.getElementById('column') as IgcColumnComponent;
-
-    this._bind = () => {
-        column.pipeArgs = this.formatPercentOptions;
-    }
-    this._bind();
+    column.pipeArgs = this.formatPercentOptions;
 }
+```
+
+```tsx
+const formatOptions = new IgrColumnPipeArgs();
+formatOptions.digitsInfo = "2.2-3";
+
+<IgrColumn pipeArgs={formatOptions} dataType="percent"></IgrColumn>
 ```
 
 > [!Note]
@@ -493,16 +526,26 @@ constructor() {
 ```ts
 constructor() {
     var unitsInStock = this.unitsInStock = document.getElementById('UnitsInStock') as IgcColumnComponent;
-
-    this._bind = () => {
-        unitsInStock.inlineEditorTemplate = this.editCellTemplate;
-    }
-    this._bind();
+    unitsInStock.inlineEditorTemplate = this.editCellTemplate;
 }
 
 public editCellTemplate = (ctx: IgcCellTemplateContext) => {
     return html`<input></input>`;
 }
+```
+
+```tsx
+function editCellTemplate(ctx: IgrCellTemplateContext) {
+    return (
+        <>
+            <input></input>
+        </>
+    );
+}
+
+<IgrGrid autoGenerate="false">
+    <IgrColumn inlineEditorTemplate={editCellTemplate}></IgrColumn>
+</IgrGrid>
 ```
 
 ```razor
@@ -530,16 +573,22 @@ public editCellTemplate = (ctx: IgcCellTemplateContext) => {
 ```ts
 constructor() {
     var unitsInStock = this.unitsInStock = document.getElementById('UnitsInStock') as IgcColumnComponent;
-
-    this._bind = () => {
-        unitsInStock.formatter = this.formatCurrency;
-    }
-    this._bind();
+    unitsInStock.formatter = this.formatCurrency;
 }
 
 public formatCurrency(value: number) {
     return `$ ${value.toFixed(0)}`;
 }
+```
+
+```tsx
+function formatCurrency(value: number) {
+    return `$ ${value.toFixed(0)}`;
+}
+
+<IgrGrid autoGenerate="false">
+    <IgrColumn formatter={formatCurrency} field="UnitsInStock"></IgrColumn>
+</IgrGrid>
 ```
 
 ```razor

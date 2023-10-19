@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 状態保持
 
-`GridState` ディレクティブによって開発者がグリッドの状態を簡単に保存および復元できます。`GridState` ディレクティブがグリッドに適用されると、`GetState` および `SetState` メソッドが公開され、開発者はこれを使用して、あらゆるシナリオで状態の永続化を実現できます。
+{ProductName} の {Platform} {ComponentTitle} 状態保持機能を使用すると、開発者はグリッドの状態を簡単に保存および復元できます。`GridState` が {Platform} `{ComponentName}` に適用されると、`GetState` および `SetState` メソッドが公開され、開発者はこれを使用して、あらゆるシナリオで状態の永続化を実現できます。
 
 ## サポートされる機能
 
@@ -348,7 +348,7 @@ public onColumnInit(column: IgcColumnComponent) {
 
 ## ピボット構成の復元
 
-`GridState` は、デフォルトではピボット ディメンション関数、値フォーマッターなどを保持しません ([制限](state-persistence.md#制限)を参照)。これらの復元は、アプリケーション レベルのコードで実現できます。`{ComponentName}` は、構成に含まれるカスタム関数を戻すために使用できる 2 つのイベント (`DimensionInit` と `ValueInit`) を公開します。以下はその方法です。
+`GridState` は、デフォルトではピボット ディメンション関数、値フォーマッタなどを保持しません ([制限](state-persistence.md#制限)を参照)。これらの復元は、アプリケーション レベルのコードで実現できます。`{ComponentName}` は、構成に含まれるカスタム関数を戻すために使用できる 2 つのイベント (`DimensionInit` と `ValueInit`) を公開します。以下はその方法です。
 
 * `DimensionInit` および `ValueInit` イベントのイベント ハンドラーを割り当てます。
 
@@ -364,7 +364,7 @@ blazor snippet
 
 > `DimensionInit` および `ValueInit` イベントは、`PivotConfiguration` プロパティで定義された値とディメンションごとに発行されます。
 
-* `ValueInit` イベント ハンドラーで、すべてのカスタム集計、フォーマッター、およびスタイルを設定します。
+* `ValueInit` イベント ハンドラーで、すべてのカスタム集計、フォーマッタ、およびスタイルを設定します。
 
 ```typescript
 public onValueInit(value: IPivotValue) {

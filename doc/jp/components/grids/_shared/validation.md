@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} での編集と検証 - インフラジスティックス
+title: {Platform} {ComponentTitle} 編集と検証 - {ProductName}
 _description: グリッドでユーザーの入力を検証し、{Platform} {ComponentTitle} の使用中に有効かどうかを通知します。デモと例をお試しください。
 _keywords: {Platform} validation, {ProductName}, infragistics, {Platform} 検証, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 編集と検証
 
-`{ComponentName}` は、セル / 行の編集時にユーザー入力の検証メカニズムが組み込まれた編集機能を提供します。これはフォームの検証機能を拡張し、既知の機能と簡単に統合できるようにします。エディターの状態が変更されると、視覚的なインジケーターが編集されたセルに適用されます。
+{Platform} {ComponentName} の編集は、セル/行の編集時のユーザー入力の検証メカニズムが組み込まれた編集を提供します。これはフォームの検証機能を拡張し、既知の機能と簡単に統合できるようにします。エディターの状態が変更されると、視覚的なインジケーターが編集されたセルに適用されます。
 
 ## 構成
 
@@ -540,9 +540,9 @@ public stateMessage(cell: IgxGridCell) {
 ```
 
 ### スタイルを含める
-エラーの色を変更するには、css 変数 `--igx-error-500` を使用します。
+エラーの色を変更するには、css 変数 `--ig-error-500` を使用します。
 ```scss
---igx-error-500: 34, 80%, 63%;
+--ig-error-500: 34, 80%, 63%;
 ```
 
 ### カスタム テンプレート
