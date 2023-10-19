@@ -133,8 +133,7 @@
     "status": ["PREVIEW_REACT"],
     "items": [
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
-        "note": "Clipboard Operations are not yet implemented. Uncomment this once they are implemented",
+        "exclude": ["Angular"],
         "name": "Clipboard Interactions",
         "href": "grids/grid/clipboard-interactions.md",
         "status": ["PREVIEW_REACT"]
