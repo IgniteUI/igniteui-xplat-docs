@@ -1,7 +1,13 @@
-{"extraFiles":["igx-summary-chooser-module.ts"],
+{
+  "extraFiles": ["igx-summary-chooser-module.ts"],
   "types":[
-  { "originalName":"SummaryChangedEventArgs",
-    "names":[{"platform":"Angular","fileName":"igx-summary-changed-event-args.ts","mappedName":"IgxSummaryChangedEventArgs"}],
+  {
+    "originalName": "SummaryChangedEventArgs",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "packageName": "igniteui-grids",
+    "names":[{"platform": "Angular","fileName": "igx-summary-changed-event-args.ts","mappedName": "IgxSummaryChangedEventArgs"}],
     "members":[
-    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"iD"}],"originalName":"ID"},
-    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isEnabled"}],"originalName":"IsEnabled"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"}]}
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "iD"}], "originalName": "ID"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isEnabled"}], "originalName": "IsEnabled"} ]
+  }]
+}

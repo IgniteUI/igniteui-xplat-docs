@@ -72,26 +72,26 @@ ARIA 属性
 
 グリッド内の移動
 
-- <b>Ctrl + Alt + 右矢印キー</b>: 1 つ上のセルに移動します。
-- <b>Ctrl + Alt + 左矢印キー</b>: 左のセルに移動します。
-- <b>Ctrl + Alt + 下矢印キー</b>: 1 つ下のセルに移動します。
-- <b>Ctrl + Alt + 上矢印キー</b>: 1 つ上のセルに移動します。
-- <b>Ctrl + Alt + Home</b>: 最初の列ヘッダーに移動します。
-- <b>Ctrl + Alt + End</b>: 最後に表示されているセルに移動します。
-- <b>Ctrl + Alt + Shift + ↑</b>	現在の列ヘッダーに移動します。
-- <b>Ctrl + Alt + Shift + ↓</b>	現在の列の最後のセルに移動します。
-- <b>Ctrl + Alt + Shift + ←</b>	現在の行の最初のセルに移動します。
-- <b>Ctrl + Alt + Shift + →</b>	現在の行の最後のセルに移動します。
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>→</kbd>: 1 つ上のセルに移動します。
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>←</kbd>: 左のセルに移動します。
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>↓</kbd>: 1 つ下のセルに移動します。
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>↑</kbd>: 1 つ上のセルに移動します。
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Home</kbd>: 最初の列ヘッダーに移動します。
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>End</kbd>: 最後に表示されているセルに移動します。
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd> 現在の列ヘッダーに移動します。
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>↓</kbd> 現在の列の最後のセルに移動します。
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd> 現在の行の最初のセルに移動します。
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>→</kbd> 現在の行の最後のセルに移動します。
 
 スクリーン リーダー コマンド
 
-- <b>Ctrl または Alt + Num Pad 5</b>: 現在のセルを読み上げます。
-- <b>Insert + Shift + ↑</b>: 現在の行を読み上げます。
-- <b>Insert + Shift + Home</b>: 行の始まりから読み上げます。
-- <b>Insert + Shift + Page Up</b>: 現在のセルから行の終わりまで読み上げます。
-- <b>Insert + Shift + Num Pad 5</b>: 現在の列を読み上げます。
-- <b>Insert + Shift + End</b>: 列の先頭から読み上げます。
-- <b>Insert + Shift + Page Down</b>: 列の下部まで読み上げます。
+- <kbd>Ctrl または Alt</kbd> + <kbd>Num Pad 5</kbd>: 現在のセルを読み上げます。
+- <kbd>Insert</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd>: 現在の行を読み上げます。
+- <kbd>Insert</kbd> + <kbd>Shift</kbd> + <kbd>Home</kbd>: 行の始まりから読み上げます。
+- <kbd>Insert</kbd> + <kbd>Shift</kbd> + <kbd>Page Up</kbd>: 現在のセルから行の終わりまで読み上げます。
+- <kbd>Insert</kbd> + <kbd>Shift</kbd> + <kbd>Num Pad 5</kbd>: 現在の列を読み上げます。
+- <kbd>Insert</kbd> + <kbd>Shift</kbd> + <kbd>End</kbd>: 列の先頭から読み上げます。
+- <kbd>Insert</kbd> + <kbd>Shift</kbd> + <kbd>Page Down</kbd>: 列の下部まで読み上げます。
 
 ## コード スニペット
 

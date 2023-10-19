@@ -45,6 +45,10 @@ constructor() {
     <IgbGrid DetailTemplateScript="DetailTemplate"  AutoGenerate=true  Data=northwindEmployees></IgbGrid>
 ```
 
+```ts
+<IgrGrid detailTemplate={masterDetailTemplate} autoGenerate="false" data={nwindData}>
+```
+
 Context of the template is the master record data, so that values from the master record can be displayed in the detail template. For example:
 
 ```html
@@ -82,6 +86,19 @@ igRegisterScript("DetailTemplate", (ctx) => {
 }, false);
 ```
 
+```ts
+const masterDetailTemplate = ({dataContext}:{dataContext: IgrGridMasterDetailContext}) => {
+    const data = dataContext.implicit;
+    return (
+        <div className="contact-container">
+            <span><strong>Name:</strong> {data.ContactName}</span> <br/>
+            <span><strong>Title:</strong> {data.ContactTitle}</span> <br/>
+            <span><strong>Company:</strong> {data.CompanyName}</span> <br/>
+        </div>
+    );
+}
+```
+
 ## API
 
 <!-- Angular -->
@@ -109,7 +126,7 @@ Additional API methods for controlling the expansion states are also exposed:
     - <kbd>🡑</kbd> - navigates one row up, focusing a cell from the previous row.
     - <kbd>🡓</kbd> -  navigates one row down, focusing a cell from the next row.
     - <kbd>Tab</kbd> - Allows focus to move to the next focusable element inside the template if there are focusable elements, otherwise moves to the next grid row.
-    - <kbd>Shift + <kbd>Tab</kbd> -  moves the focus to the previous row.
+    - <kbd>Shift</kbd> + <kbd><kbd>Tab</kbd> -  moves the focus to the previous row.
 
 - When focus is on a data row with expander:
     - <kbd>Alt</kbd> + <kbd>🡒</kbd> or <kbd>Alt</kbd> + <kbd>🡓</kbd> - expands the row.

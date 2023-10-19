@@ -115,18 +115,6 @@ _language: ja
 </igc-grid>
 ```
 
-```ts
-constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-
-    this._bind = () => {
-        grid.data = this.data;
-        grid.addEventListener("sorting", this.onSorting);
-    }
-    this._bind();
-
-}
-```
 
 <!-- Angular -->
 
@@ -141,6 +129,12 @@ public onSorting(event: ISortingEventArgs) {
 <!-- WebComponents -->
 
 ```typescript
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    grid.data = this.data;
+    grid.addEventListener("sorting", this.onSorting);
+}
+
 public onSorting(event: IgcSortingEventArgs) {
     this.grid.endEdit(true);
 }
@@ -161,9 +155,18 @@ function SortingHandler() {
 igRegisterScript("SortingHandler", SortingHandler, false);
 ```
 
+```tsx
+function onSorting(grid: IgrGridBaseDirective, event: IgrSortingEventArgs) {
+    grid.endEdit(true);
+}
+
+<IgrGrid data={localData} primaryKey="ProductID" sorting={onSorting}>
+</IgrGrid>
+```
+
 ## API リファレンス
 
-* `GridCell`
+* `Cell`
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 

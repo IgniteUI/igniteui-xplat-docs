@@ -1,5 +1,5 @@
 ---
-title: Filtering in {Platform} {ComponentTitle} for {ProductName}
+title: {Platform} {ComponentTitle} Filtering - {ProductName}
 _description: Start using angular filter to return specific data with {Platform} {ComponentTitle}. Check the advanced filtering options, including data-type Excel-style filtering.
 _keywords: filter, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,7 +9,11 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Filtering
 
-The {Platform} `{ComponentName}` component provides three different filtering types - Quick filtering, [Excel Style Filtering](excel-style-filtering.md) and [Advanced Filtering](advanced-filtering.md) which enable you to display only the records that meet specified criteria. The `{ComponentName}` component in {Platform} provides filtering capabilities and extensive filtering API through the data container to which the `{ComponentName}` is bound.
+The {ProductName} Filtering in {Platform} {ComponentTitle} is a feature that allows for selectively displaying or hiding data based on specific criteria or conditions. There is a bound data container through which the `{ComponentName}` Component provides rich filtering API and all the filtering capabilities. The available filtering types here are three: 
+
+- Quick filtering
+- [Excel Style Filtering](excel-style-filtering.md) 
+- [Advanced Filtering](advanced-filtering.md)
 
 ## {Platform} {ComponentTitle} Filtering Example
 
@@ -64,6 +68,15 @@ Property `Filterable` enables you to specify the following options:
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+```tsx
+<{ComponentSelector} data={this.nwindData} autoGenerate="false" ref={this.gridRef} allowFiltering="true">
+    <IgrColumn field="ProductName" dataType="String"></IgrColumn>
+    <IgrColumn field="UnitPrice" data-type="Number" filterable="false"></IgrColumn>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
 To enable the [Advanced filtering](advanced-filtering.md) however, you need to set the `AllowAdvancedFiltering` input property to **true**.
 
 <!-- Angular -->
@@ -83,6 +96,13 @@ To enable the [Advanced filtering](advanced-filtering.md) however, you need to s
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} data={nwindData} autoGenerate="false" ref={gridRef} allowAdvancedFiltering="true">
+</{ComponentSelector}>
+```
+<!-- end: React -->
 
 > [!Note]
 >You can enable both the `QuickFilter` or `ExcelStyleFilter` and the advanced filtering user interfaces in the `{ComponentName}`. Both filtering user interfaces will work independently of one another. The final filtered result in the `{ComponentName}` is the intersection between the results of the two filters.
@@ -118,6 +138,17 @@ The filtering feature is enabled for the `{ComponentName}` component by setting 
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} autoGenerate="false" allowFiltering="true">
+    <IgrColumn field="ProductName" dataType="String"></IgrColumn>
+    <IgrColumn field="Price" dataType="Number"></IgrColumn>
+    <IgrColumn field="Discontinued" dataType="Boolean" filterable="false"></IgrColumn>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -337,6 +368,12 @@ import { FilteringLogic } from "igniteui-webcomponents-grids/grids";
 this.grid.filteringLogic = FilteringLogic.OR;
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentName} filteringLogic={FilteringLogic.Or}></{ComponentName}>
+```
+<!-- end: React -->
 
 The default value of `AND` returns only the rows that match all the currently applied filtering expressions. Following the example above, a row will be returned when both the 'ProductName' cell value contains 'myproduct' and the 'Price' cell value is greater than 55.
 
@@ -606,20 +643,28 @@ public matchingRecordsOnlyStrategy = new TreeGridMatchingRecordsOnlyFilteringStr
 <!-- ComponentEnd: TreeGrid -->
 
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 ## Styling
 
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
+<!-- WebComponents -->
 ```ts
 <igc-grid class="grid">
 ```
+<!-- end: WebComponents -->
 
 ```razor
 <IgbGrid Class="grid"></IgbGrid>
 ```
+
+<!-- React -->
+```tsx
+<IgrGrid className="grid"></IgrGrid>
+```
+<!-- end: React -->
 
 Then set the related CSS properties for that class:
 
@@ -637,7 +682,7 @@ Then set the related CSS properties for that class:
 `sample="/{ComponentSample}/filtering-style", height="500", alt="{Platform} {ComponentTitle} Filtering Style Example"`
 
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- Angular -->
 

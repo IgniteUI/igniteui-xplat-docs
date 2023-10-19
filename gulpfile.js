@@ -209,6 +209,104 @@ function updateApiBlazor() {
 }
 exports.updateApiBlazor = updateApiBlazor;
 
+// update API mappings to more human readable format which we use to verify commits and look up mentioned types in metadata
+function updateApiFormat(jsonContent) {
+    
+    let json = JSON.parse(jsonContent); 
+    let fileContent = '{';
+    
+    // if (json.extraFiles !== undefined) fileContent += ' "extraFiles":' + JSON.stringify(json.extraFiles) + ',\n';
+    if (json.extraFiles !== undefined && json.extraFiles.length > 0) {
+        if (json.extraFiles.length === 1) {
+            fileContent += '\n  "extraFiles": ' + JSON.stringify(json.extraFiles) + ',\n';
+        } else {
+            let files = [];
+            for (const item of json.extraFiles) {
+                files.push('    "' + item + '"');
+            }
+            files.sort();
+            fileContent += '\n  "extraFiles": [\n' + files.join(',\n') + '\n  ],\n';
+        }
+    }
+
+    if (json.types === undefined || json.types.length === 0) {
+        fileContent += '  "types":[]\n'; 
+    } else {
+        
+        let types = []; 
+        for (const t of json.types) {
+            let typeInfo = '{\n';
+            typeInfo += '    "originalName":"' + t.originalName + '",\n'; 
+            typeInfo += '    "originalNamespace":"' + t.originalNamespace + '",\n'; 
+
+            if (t.originalBaseTypeNamespace !== undefined) typeInfo += '    "originalBaseTypeNamespace":"' + t.originalBaseTypeNamespace + '",\n'; 
+            if (t.originalBaseTypeName !== undefined) typeInfo += '    "originalBaseTypeName":"' + t.originalBaseTypeName + '",\n'; 
+            if (t.isEnum !== undefined) typeInfo += '    "isEnum":' + t.isEnum + ',\n'; 
+            
+            typeInfo += '    "packageName":"' + t.packageName + '",\n'; 
+
+            if (t.names && t.names.length > 0) {
+                t.names.sort((a,b) => (a.mappedName < b.mappedName) ? -1 : (a.mappedName > b.mappedName) ? 1 : 0);
+                typeInfo += '    "names":' + JSON.stringify(t.names);
+            }
+            
+            if (t.members && t.members.length > 0) {
+                t.members.sort((a,b) => (a.originalName < b.originalName) ? -1 : (a.originalName > b.originalName) ? 1 : 0);
+                typeInfo += ',\n'
+                typeInfo += '    "members":[\n'; 
+                let members = [];
+                for (const m of t.members) { 
+                    members.push('      ' + JSON.stringify(m));
+                }
+                typeInfo +=  members.join(',\n'); 
+                
+                typeInfo += ' ]\n'
+            } else {
+                typeInfo += '\n'
+            }
+            typeInfo += '  }'
+            types.push('  ' + typeInfo);
+        }
+        
+        fileContent += '  "types":[\n'; 
+        fileContent += types.join(',\n'); 
+        fileContent += ']\n'
+    }
+    fileContent += '}'
+    
+    fileContent = fileContent.split(',"originalName"').join(', "originalName"');
+    fileContent = fileContent.split(',"mappedType"').join(', "mappedType"');
+    fileContent = fileContent.split('"mappedType":"IgPoint",').join('"mappedType":"IgPoint", ');
+    fileContent = fileContent.split('"mappedType":"IgSize",' ).join('"mappedType":"IgSize",  ');
+    fileContent = fileContent.split('"mappedType":"IgRect",' ).join('"mappedType":"IgRect",  ');
+    fileContent = fileContent.split('"mappedType":"method",' ).join('"mappedType":"method",  ');
+    fileContent = fileContent.split('"mappedType":"string",' ).join('"mappedType":"string",  ');
+    fileContent = fileContent.split('"mappedType":"number",' ).join('"mappedType":"number",  ');
+    fileContent = fileContent.split('"mappedType":"boolean",').join('"mappedType":"boolean", ');
+    fileContent = fileContent.split('"mappedType":"any[]",'  ).join('"mappedType":"any[]",   ');
+    fileContent = fileContent.split('"mappedType":"bool",'   ).join('"mappedType":"bool",    ');
+    fileContent = fileContent.split('"mappedType":"int",'    ).join('"mappedType":"int",     ');
+    fileContent = fileContent.split('"mappedType":"any",'    ).join('"mappedType":"any",     ');
+    fileContent = fileContent.split('":"').join('": "'); 
+    
+    return fileContent;
+}
+
+function testApiFormat(cb) {
+
+    var fileName = "DataChart.DOUGHNUTCHART.JS.apiMap"; //"ZoomSlider.JS.apiMap";
+    var filePath2 = 'C:\\WORK\\igniteui-xplat-docs\\apiMap\\Angular\\' + fileName + '.json';        
+    let jsonContent = fs.readFileSync(filePath2).toString();
+
+    let fileContent = updateApiFormat(jsonContent);
+    var filePath = 'C:\\WORK\\igniteui-xplat-docs\\apiMap\\Angular\\' + fileName + '2.json'; 
+    fs.writeFileSync(filePath, fileContent);
+    console.log(filePath)
+    cb();
+}
+
+exports.testApiFormat = testApiFormat;
+
 // updates API mapping files in ./apiMap folder for specified platform
 function updateApiFor(platformName) {
     // cleanup previous API mapping files
@@ -221,38 +319,17 @@ function updateApiFor(platformName) {
   '!' + fileRoot + "Source/*.JS/**/bin/**/" + platformName + "/Calendar*apiMap.json"
     ])
     .pipe(es.map(function(file, fileCallback) {
-        var jsonContent = file.contents.toString();
-        let jsonNodes = JSON.parse(jsonContent);
-        // let fileContent = JSON.stringify(jsonNodes,  null, '  ');
-        // let fileContent = JSON.stringify(jsonNodes).replace(/\[\,/g, '\[\,\n');
-        let fileContent = JSON.stringify(jsonNodes);
-        // changing JSON format to pretty-compact
-        fileContent = fileContent.split('],"types":').join('],\n  "types":');
-        fileContent = fileContent.split('{"originalName":').join('\n  { "originalName":');
-        fileContent = fileContent.split('}],"members":[{').join('}],\n    "members":[{');
-        // fileContent = fileContent.split('}],"members":[').join('}\n  ],\n  "members":[');
-        // fileContent = fileContent.split('}],"members":[').join('}],\n  "members":[');
-        fileContent = fileContent.split('{"isVirtual":true').join('\n    { "isVirtual":true');
-        fileContent = fileContent.split('{"names":').join        ('\n    { "names":');
-        fileContent = fileContent.split(',"names":').join        (',\n    "names":');
-        // fileContent = fileContent.split('{"names":').join        ('\n    {                    "names":');
-        // fileContent = fileContent.split('}],"originalBase').join('}\n  ],\n  "originalBase');
-        // fileContent = fileContent.split(',"names":[').join(',\n  "names":[\n    ');
-
-        var lines = fileContent.split('\n');
-        for (let i = 0; i < lines.length; i++) {
-            if (lines[i].indexOf('"isVirtual":true,') >= 0) {
-                lines[i] = lines[i].replace('"isVirtual":true,', '');
-                lines[i] = lines[i].replace('"},', '", "isVirtual":true },');
-            }
-        }
-        fileContent = lines.join('\n');
-        fileContent = fileContent.split('"mappedType":"bool"').join('"mappedType":"bool"  ');
-        fileContent = fileContent.split('"mappedType":"int"' ).join('"mappedType":"int"   ');
-        // fileContent = fileContent.split(',').join(', ');
-        // fileContent = fileContent.split(':').join(': ');
-
+        let jsonContent = file.contents.toString();
+        let fileContent = updateApiFormat(jsonContent);
         file.contents = Buffer.from(fileContent);
+
+        // let filePath = file.dirname + "\\" + file.basename;        
+        // let oldFileContent = fs.readFileSync(filePath).toString();
+        // if (fileContent.trim() !== oldFileContent.trim()) {
+            // file.contents = Buffer.from(fileContent);
+            // fs.writeFileSync(filePath, fileContent);
+        // }
+
         fileCallback(null, file);
     }))
     .pipe(flatten())
@@ -1675,3 +1752,90 @@ exports.extractSampleLinksAll = gulp.series(
     extractSampleLinksReact,
     extractSampleLinksWC,
 );
+
+// script for comparing output of builds
+function compareOutputs(cb) {
+
+    // note replace 'React-OLD' and 'React-NEW' with names of two folders that you want to compare
+    let source = {
+        folder: '\\dist\\React-OLD\\\en\\components\\',
+        paths: [], files: {}
+    };
+    let target = {
+        folder: '\\dist\\React-NEW\\\en\\components\\',
+        paths: [], files: {}
+    };
+    source.pattern = '.' + source.folder.split('\\').join('/');
+    target.pattern = '.' + target.folder.split('\\').join('/');
+
+    gulp.src([
+        // source.pattern + '**/menus/**/*.md',
+        // target.pattern + '**/menus/**/*.md',
+        source.pattern + '**/*.md',
+        target.pattern + '**/*.md',
+        source.pattern + '**/*.html',
+        target.pattern + '**/*.html',
+    ])
+    .pipe(es.map(function(file, fileCallback) {
+
+        var filePath = (file.dirname + "\\" + file.basename);
+        var fileName = filePath.split('\\en\\components')[1];
+
+        if (filePath.includes(source.folder))
+        {
+            source.paths.push(filePath);
+            source.files[fileName] = { path: filePath, content: file.contents.toString().split('\n')};
+        }
+        else if (filePath.includes(target.folder))
+        {
+            target.paths.push(filePath);
+            target.files[fileName] = { path: filePath, content: file.contents.toString().split('\n') };
+        }
+
+        // console.log(filePath);
+        fileCallback(null, file);
+    }))
+    .on("end", () => {
+
+        // console.log(source.paths);
+        // console.log(target.paths);
+
+        var sourceNames = Object.keys(source.files);
+        var targetNames = Object.keys(target.files);
+
+        if (sourceNames.length !== targetNames.length) {
+            console.alert('WARNING source folder has : ' + sourceNames.length+ ' files but target has ' + targetNames.length + 'files')
+        }
+
+        for (const fileName of sourceNames) {
+            var sourceFile = source.files[fileName];
+            var targetFile = target.files[fileName];
+            if (sourceFile === undefined) {
+                console.log('source is missing: ' + sourceFile.path);
+            }
+            else if (targetFile === undefined) {
+                console.log('target is missing: ' + targetFile.path);
+            }
+            else {
+                let sourceLines = sourceFile.content;
+                let targetLines = sourceFile.content;
+
+                if (sourceLines.length !== targetLines.length) {
+                    console.alert('WARNING ' + fileName + ' not match file lines: ' + sourceLines.length + ' vs ' + targetLines.length);
+                } else {
+                    for (let i = 0; i < sourceLines.length; i++) {
+                        if (sourceLines[i] !== targetLines[i]) {
+                            console.alert('WARNING ' + fileName + ' not match on lines: ')
+                            console.alert(sourceFile.path + ':' + i);
+                            console.alert(targetFile.path + ':' + i);
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        if (cb) cb();
+    })
+}
+exports.compareOutputs = compareOutputs

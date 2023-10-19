@@ -46,6 +46,16 @@ public headerTemplate = (ctx: IgcCellTemplateContext) => {
 }
 ```
 
+```tsx
+function headerTemplate(ctx: IgrCellTemplateContext) {
+    return (
+    <>
+       <IgrIcon draggable="false" onClick={onClick}></IgrIcon>
+    </>
+    );
+}
+```
+
 ## {Platform} {ComponentTitle} 列移動概要の例
 
 `sample="/{ComponentSample}/column-moving-options", height="650", alt="{Platform} {ComponentTitle} 列移動概要の例"`
@@ -71,6 +81,12 @@ public headerTemplate = (ctx: IgcCellTemplateContext) => {
 <{ComponentSelector} moving="true"></{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} moving="true"></{ComponentSelector}>
+```
+<!-- end: React -->
 
 ## API
 
@@ -133,8 +149,8 @@ idColumn.move(3);
 <!-- WebComponents -->
 ```html
 <{ComponentSelector} id="dataGrid" auto-generate="false" moving="true">
-    <igc-column field="Category"></igx-column>
-    <igc-column field="Change On Year(%)" data-type="Number" ></igx-column>
+    <igc-column field="Category"></igc-column>
+    <igc-column field="Change On Year(%)" data-type="Number" ></igc-column>
 </{ComponentSelector}>
 ```
 ```typescript
@@ -145,8 +161,6 @@ constructor() {
 
 }
 ```
-<!-- end: WebComponents -->
-
 ```typescript
 public onColumnMovingEnd(event) {
     if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {
@@ -154,7 +168,20 @@ public onColumnMovingEnd(event) {
     }
 }
 ```
+<!-- end: WebComponents -->
 
+```tsx
+function onColumnMovingEnd(grid: IgrGridBaseDirective, event: IgrColumnMovingEventArgs) {
+   if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {
+        event.detail.cancel = true;
+    }
+}
+
+<{ComponentSelector} autoGenerate="false" moving="true" data={data} columnMovingEnd={onColumnMovingEnd}>
+    <IgrColumn field="Category"></IgrColumn>
+    <IgrColumn field="Change On Year(%)" dataType="Number" ></IgrColumn>
+</{ComponentSelector}>
+```
 ```razor
     <{ComponentSelector} ShowGroupArea="true" @ref='Grid' Width="100%" Height="100%"
              AllowFiltering=true
@@ -297,7 +324,7 @@ $dark-grid-column-moving-theme: grid-theme(
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 ## スタイル設定
 
 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
@@ -305,11 +332,15 @@ $dark-grid-column-moving-theme: grid-theme(
 色を変更したい場合は、最初にグリッドのクラスを設定する必要があります:
 
 ```html
-<igc-grid class="grid"></igc-grid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 次に、関連する CSS プロパティをこのクラスに設定します:
@@ -325,7 +356,7 @@ $dark-grid-column-moving-theme: grid-theme(
 
 `sample="/{ComponentSample}/column-moving-styles", height="650", alt="{Platform} {ComponentTitle} Grid 移動のスタイル設定の例"`
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 ## API リファレンス
 
