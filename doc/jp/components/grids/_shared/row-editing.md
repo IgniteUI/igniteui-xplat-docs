@@ -78,7 +78,6 @@ constructor() {
     var unitsInStock = document.getElementById('unitsInStock') as IgcColumnComponent;
     grid.data = this.data;
     unitsInStock.bodyTemplate = this.unitsInStockCellTemplate;
-
 }
 
 public unitsInStockCellTemplate = (ctx: IgcCellTemplateContext) => {
@@ -86,6 +85,26 @@ public unitsInStockCellTemplate = (ctx: IgcCellTemplateContext) => {
 }
 ```
 <!-- end: WebComponents -->
+
+```tsx
+function unitsInStockCellTemplate(ctx: IgrCellTemplateContext) {
+    return (
+        <>
+            <input name="units" value={ctx.dataContext.cell.value} style={{color: "black"}} />;
+        </>
+    );
+}
+
+<{ComponentSelector} primaryKey="ProductID" width="100%" height="500px" rowEditable="true"
+    bodyTemplate={unitsInStockCellTemplate}>
+    <IgrColumn field="ProductID" header="Product ID" editable="false"></IgrColumn>
+    <IgrColumn field="ReorderLevel" header="ReorderLever" dataType="number"></IgrColumn>
+    <IgrColumn field="ProductName" header="ProductName" dataType="string"></IgrColumn>
+    <IgrColumn field="UnitsInStock" header="UnitsInStock" dataType="number"></IgrColumn>
+    <IgrColumn field="OrderDate" dataType="date"></IgrColumn>
+    <IgrColumn field="Discontinued" header="Discontinued" dataType="boolean"></IgrColumn>
+</{ComponentSelector}>
+```
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
@@ -225,9 +244,19 @@ igRegisterScript("RowEditTextTemplate", (ctx) => {
 }, false);
  ```
 
- ```ts
+```ts
 public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
     return html`Changes: ${ctx.implicit}`;
+}
+```
+
+```tsx
+function rowEditTextTemplate(ctx: IgrGridRowEditTextTemplateContext) {
+    return (
+        <>
+            Changes: {ctx.dataContext.implicit}
+        </>
+    );
 }
 ```
 
@@ -257,13 +286,25 @@ public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
 }, false);
  ```
 
- ```ts
+```ts
 public rowEditActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
     const endRowEdit = ctx.implicit;
     return html`
         <button @click="${(event) => endRowEdit(false, event)}">Cancel</button>
         <button @click="${(event) => endRowEdit(true, event)}">Apply</button>
     `;
+}
+```
+
+```tsx
+function rowEditActionsTemplate(ctx: IgrGridRowEditActionsTemplateContext) {
+    const endRowEdit = ctx.dataContext.implicit;
+    return (
+        <>
+            <button onClick={(event) => endRowEdit(false, event)}>Cancel</button>
+            <button onClick={(event) => endRowEdit(true, event)}>Apply</button>
+        </>
+    );
 }
 ```
 
@@ -394,22 +435,26 @@ $button-theme: button-theme(
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 ## スタイル設定
 
 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
 一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
-```ts
-<igc-grid class="grid">
+```html
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid Class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
-Then set the related CSS properties for that class:
+次に、そのクラスに関連する CSS プロパティを設定します。
 
 ```css
 .grid {

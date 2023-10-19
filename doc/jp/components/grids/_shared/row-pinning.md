@@ -71,12 +71,28 @@ _language: ja
 ```
 <!-- end: WebComponents -->
 
+```tsx
+<{ComponentSelector}>
+    <IgrColumn field="Country" header="Country"> </IgrColumn>
+    <IgrActionStrip key="actionStrip">
+        <IgrGridPinningActions key="pinningActions"></IgrGridPinningActions>
+        <IgrGridEditingActions key="editingActions"></IgrGridEditingActions>
+    </IgrActionStrip>
+</{ComponentSelector}>
+```
+
 ## 行のピン固定 API
 
 行のピン固定は `Row` の `Pinned` 入力によって制御されます。デフォルトでピン固定行は `{ComponentName}` の上側に固定して描画され、`{ComponentName}` 本体のピン固定されていない行は垂直スクロールされます。
 
+<!-- Angular, WebComponents -->
 ```typescript
 this.grid.getRowByIndex(0).pinned = true;
+```
+<!-- end: Angular, WebComponents -->
+
+```tsx
+gridRef.current.getRowByIndex(0).pinned = true;
 ```
 
 ```razor
@@ -85,10 +101,18 @@ this.Grid.PinRowAsync("ALFKI", 0);
 
 `{ComponentName}` の `PinRow` または `UnpinRow` メソッドを使用して ID によって行をピン固定またはピン固定解除できます。
 
+<!-- Angular, WebComponents -->
 ```typescript
 this.grid.pinRow('ALFKI');
 this.grid.unpinRow('ALFKI');
 ```
+<!-- end: Angular, WebComponents -->
+
+```tsx
+gridRef.current.pinRow('ALFKI');
+gridRef.current.unpinRow('ALFKI');
+```
+
 
 ```razor
 this.Grid.PinRowAsync("ALFKI", 0);
@@ -108,22 +132,29 @@ this.Grid.UnpinRowAsync("ALFKI");
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid1" auto-generate="true">
+<{ComponentSelector} id="grid" auto-generate="true">
 </{ComponentSelector}>
 ```
 ```ts
 constructor() {
-    var grid1 = document.getElementById('grid1') as IgcGridComponent;
-    grid1.data = this.data;
-    grid1.addEventListener("rowPinning", this.rowPinning);
+    var grid = document.getElementById('grid') as IgcGridComponent;
+    grid.data = this.data;
+    grid.addEventListener("rowPinning", this.rowPinning);
+}
+
+public rowPinning(event) {
+    event.detail.insertAtIndex = 0;
 }
 ```
 <!-- end: WebComponents -->
 
-```typescript
-public rowPinning(event) {
+```tsx
+function rowPinning(grid: IgrGridBaseDirective, event: IgrPinRowEventArgs ) {
     event.detail.insertAtIndex = 0;
 }
+
+<{ComponentSelector} autoGenerate="true" rowPinning={rowPinning}>
+</{ComponentSelector}>
 ```
 
 ```razor
@@ -144,7 +175,7 @@ function rowPinningHandler(event) {
 
 igRegisterScript("rowPinningHandler", rowPinningHandler, false);
 ```
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents  -->
 
 ## ピン固定の位置
 
@@ -223,11 +254,9 @@ igRegisterScript("WebGridRowPinCellTemplate", (ctx) => {
     <span onpointerdown='toggleRowPin("${index}")'>📌</span>
 </div>`;
 }, false);
-
-
-
 ```
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [primaryKey]="'ID'" [autoGenerate]="false">
     <igx-column width="70px">
@@ -241,6 +270,7 @@ igRegisterScript("WebGridRowPinCellTemplate", (ctx) => {
     </igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 <!-- WebComponents -->
 ```html
@@ -258,28 +288,49 @@ constructor() {
 }
 
 public cellPinCellTemplate = (ctx: IgcCellTemplateContext) => {
-const index = ctx.cell.id.rowIndex;
-return html`<span @pointerdown=${(e: any) => this.toggleRowPin(index)}>📌</span>`
+    const index = ctx.cell.id.rowIndex;
+    return html`<span @pointerdown=${(e: any) => this.toggleRowPin(index)}>📌</span>`
 }
 ```
 <!-- end: WebComponents -->
 
+```tsx
+function cellPinCellTemplate(ctx: IgrCellTemplateContext) {
+    const index = ctx.dataContext.cell.id.rowIndex;
+    return (
+        <>
+            <span onPointerDown={(e: any) => toggleRowPin(index)}>📌</span>
+        </>
+    );
+}
+
+<{ComponentSelector} primaryKey="ID" autoGenerate="false">
+    <IgrColumn width="70px" bodyTemplate={cellPinCellTemplate}>
+    </IgrColumn>
+</{ComponentSelector}>
+```
+
 カスタムアイコンをクリックすると、関連する行のピン状態は、行の API メソッドを使用して変更できます。
 
+<!-- Angular, WebComponents -->
 ```typescript
 public toggleRowPin(index: number) {
     const grid = document.getElementsByTagName("igc-grid")[0] as IgcGridComponent;
     grid.getRowByIndex(index).pinned = !grid.getRowByIndex(index).pinned;
 }
 ```
+<!-- end: Angular, WebComponents -->
+
+```tsx
+function toggleRowPin(index: number) {
+  const grid = grid1Ref.current;
+  grid.getRowByIndex(index).pinned = !grid.getRowByIndex(index).pinned;
+}
+```
 
 #### デモ
 
 `sample="/{ComponentSample}/row-pinning-extra-column", height="600", alt="{Platform} {ComponentTitle} 行ピン固定の追加の列の例"`
-
-
-
-
 
 <!-- ComponentStart: Grid -->
 
@@ -358,19 +409,23 @@ public onDropAllowed(args) {
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 ## スタイル設定
 
 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
 一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
-```ts
-<igc-grid class="grid">
+```html
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid Class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
 
 次に、そのクラスに関連する CSS プロパティを設定します。
@@ -389,7 +444,7 @@ public onDropAllowed(args) {
 `sample="/{ComponentSample}/row-pinning-style", height="540", alt="{Platform} {ComponentTitle} 行ピン固定スタイル設定の例"`
 
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- Angular -->
 

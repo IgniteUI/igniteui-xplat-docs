@@ -1,5 +1,5 @@
 ---
-title: Advanced Filtering in {Platform} {ComponentTitle} for {ProductName}
+title: {Platform} {ComponentTitle} Advanced Filtering - {ProductName}
 _description: Learn how to configure advanced filter of data with the {Platform} {ComponentTitle}. The grid advanced filtering is more convenient and engaging than ever.
 _keywords: Advanced Filtering, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -10,7 +10,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Advanced Filtering
 
-The Advanced filtering provides a dialog which allows the creation of groups with filtering conditions across all columns for any {Platform} table like the `{ComponentName}`.
+The {ProductName} Advanced Filtering in {Platform} {ComponentTitle} allows you to manipulate data by providing you with a dialog where you can create different groups with filtering conditions across all columns in the `{ComponentName}`. 
 
 ## {Platform} {ComponentTitle} Advanced Filtering Example
 

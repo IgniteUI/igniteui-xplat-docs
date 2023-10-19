@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} Column Selection - Infragistics
+title: {Platform} {ComponentTitle} Column Selection - {ProductName}
 _description: Learn how to configure column selection with {ProductName} {ComponentTitle}. This makes grid interactions much easier and faster than ever.
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, column selection
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Column Selection Overview
 
-In the `{ComponentName}`, Column Selection feature provides an easy way to select an entire column with a single click. It emphasizes the importance of a particular column by focusing the header cell(s) and everything below. The feature comes with a rich API that allows for manipulation of the selection state, data extraction from the selected fractions and data analysis operations and visualizations.
+The {Platform} {ComponentTitle} Column Selection feature in {ProductName} offers a simplified and Excel-like way to select and highlight an entire column with a single click. It can be enabled through the `columnSelection` input. Thanks to the rich API, the feature allows for easy manipulation of the selection state, data extraction from the selected fractions, data analysis operations, and visualizations.
 
 ## {Platform} {ComponentTitle} Column Selection Example
 

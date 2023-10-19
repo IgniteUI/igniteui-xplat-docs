@@ -87,51 +87,26 @@ _language: ja
 
 API 操作の詳細については、[API リファレンス](#api-リファレンス) セクションを参照してください。
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 ## スタイル設定
 
 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。一部の色を変更したい場合は、最初にグリッドの `class` を設定する必要があります。
 
-<!-- ComponentStart: Grid -->
-
 ```html
-<igc-grid class="grid"></igc-grid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid Class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
-
-<!-- ComponentEnd: Grid -->
-
-<!-- ComponentStart: TreeGrid -->
-
-```html
-<igc-tree-grid class="treeGrid"></igc-tree-grid>
-```
-
-```razor
-<IgbTreeGrid Class="treeGrid"></IgbTreeGrid>
-```
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-```html
-<igc-hierarchical-grid class="hierarchicalGrid"></igc-hierarchical-grid>
-```
-
-```razor
-<IgbHierarchicalGrid Class="hierarchicalGrid"></IgbHierarchicalGrid>
-```
-
-<!-- ComponentEnd: HierarchicalGrid -->
 
 次に、そのクラスに関連する CSS プロパティを設定します。
 
-<!-- ComponentStart: Grid -->
 
 ```css
 .grid {
@@ -145,46 +120,12 @@ API 操作の詳細については、[API リファレンス](#api-リファレ�
 }
 ```
 
-<!-- ComponentEnd: Grid -->
-
-<!-- ComponentStart: TreeGrid -->
-
-```css
-.treeGrid {
-    --ig-grid-row-selected-background: #0062A3;
-    --ig-grid-row-selected-text-color: #ecaa53;
-    --ig-grid-row-selected-hover-background: #0062A3;
-    --ig-grid-header-selected-text-color: #ecaa53;
-    --ig-grid-header-selected-background: #0062A3;
-    --ig-grid-row-selected-hover-text-color: #ecaa53;
-    --ig-grid-row-selected-hover-background: #0062A3;
-}
-```
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-```css
-.hierarchicalGrid {
-    --ig-grid-row-selected-background: #0062A3;
-    --ig-grid-row-selected-text-color: #ecaa53;
-    --ig-grid-row-selected-hover-background: #0062A3;
-    --ig-grid-header-selected-text-color: #ecaa53;
-    --ig-grid-header-selected-background: #0062A3;
-    --ig-grid-row-selected-hover-text-color: #ecaa53;
-    --ig-grid-row-selected-hover-background: #0062A3;
-}
-```
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
 ### デモ
 
 `sample="/{ComponentSample}/column-selection-styles", height="570", alt="{Platform} {ComponentTitle} 列選択スタイル"`
 
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- Angular -->
 

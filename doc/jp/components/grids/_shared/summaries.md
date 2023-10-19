@@ -78,6 +78,17 @@ _language: ja
 ```
 <!-- end: WebComponents -->
 
+```tsx
+<{ComponentSelector} autoGenerate="false" height="800px" width="800px">
+    <IgrColumn field="ProductID" header="Product ID" width="200px"  sortable="true">
+    </IgrColumn>
+    <IgrColumnn field="ProductName" header="Product Name" width="200px" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="ReorderLevel" width="200px" editable="true" dataType="number" hasSummary="true">
+    </IgrColumn>
+</{ComponentSelector}>
+```
+
 特定の列や列のリストを有効または無効にする他の方法として `{ComponentName}` のパブリック メソッド `EnableSummaries`/`DisableSummaries` を使用する方法があります。
 
 <!-- Angular -->
@@ -113,17 +124,14 @@ constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
     var enableBtn = this.enableBtn = document.getElementById('enableBtn') as HTMLButtonElement;
     var disableBtn = this.disableBtn = document.getElementById('disableBtn') as HTMLButtonElement;
-
-    this._bind = () => {
-        grid.data = this.data;
-        enableBtn.addEventListener("click", this.enableSummary);
-        disableBtn.addEventListener("click", this.disableSummary);
-    }
-    this._bind();
+    grid.data = this.data;
+    enableBtn.addEventListener("click", this.enableSummary);
+    disableBtn.addEventListener("click", this.disableSummary);
 }
 ```
 <!-- end: WebComponents -->
 
+<!-- Angular, WebComponents -->
 ```typescript
 public enableSummary() {
     this.grid.enableSummaries([
@@ -135,6 +143,7 @@ public disableSummary() {
     this.grid.disableSummaries(['ProductID']);
 }
 ```
+<!-- end: Angular, WebComponents -->
 
 <!-- TODO: EnableSummariesAsync not working so please add it to the code snippet when it got fixed. -->
 
@@ -155,7 +164,30 @@ public disableSummary() {
 }
 ```
 
+```tsx
+function enableSummary() {
+    gridRef.current.enableSummaries([
+        {fieldName: 'ReorderLevel'},
+        {fieldName: 'ProductID'}
+    ]);
+}
+function disableSummary() {
+    gridRef.current.disableSummaries(['ProductID']);
+}
 
+<{ComponentSelector} ref={gridRef} auto-generate="false" height="800px" width="800px">
+    <IgrColumn field="ProductID" header="Product ID" width="200px" sortable="true">
+    </IgrColumn>
+    <IgrColumn field="ProductName" header="Product Name" width="200px" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="ReorderLevel" width="200px" editable="true" dataType="number" hasSummary="false">
+    </IgrColumn>
+</{ComponentSelector}>
+<button onClick={enableSummary}>Enable Summary</button>
+<button onClick={disableSummary}>Disable Summary </button>
+```
+
+<!-- Angular, WebComponents, Blazor -->
 ## カスタム {ComponentTitle} 集計
 
 これらの機能が要件を満たさない場合は、カスタム集計を提供できます。
@@ -166,6 +198,7 @@ public disableSummary() {
 
 <!-- end: WebComponents -->
 
+<!-- Angular -->
 ```typescript
 import { IgxSummaryResult, IgxSummaryOperand, IgxNumberSummaryOperand, IgxDateSummaryOperand } from 'igniteui-angular';
 
@@ -185,6 +218,8 @@ class MySummary extends IgxNumberSummaryOperand {
     }
 }
 ```
+<!-- end: Angular -->
+
 
 ```typescript
 import { IgcSummaryResult, IgcSummaryOperand, IgcNumberSummaryOperand, IgcDateSummaryOperand } from 'igniteui-webcomponents-grids';
@@ -298,12 +333,8 @@ interface IgcSummaryResult {
 constructor() {
     var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
     var unitsInStock = this.unitsInStock = document.getElementById('unitsInStock') as IgcColumnComponent;
-
-    this._bind = () => {
-        grid1.data = this.data;
-        unitsInStock.summaries = this.mySummary;
-    }
-    this._bind();
+    grid1.data = this.data;
+    unitsInStock.summaries = this.mySummary;
 }
 ```
 <!-- end: WebComponents -->
@@ -391,6 +422,9 @@ class WebGridDiscontinuedSummary {
 
 <!-- end: Blazor -->
 
+<!-- end: Angular, WebComponents, Blazor -->
+
+
 ### 集計テンプレート
 `Summary` は、列の集計の結果をコンテキストとして提供する列の集計を対象としています。
 
@@ -410,11 +444,7 @@ class WebGridDiscontinuedSummary {
 ```ts
 constructor() {
     var column = this.column = document.getElementById('column') as IgcColumnComponent;
-
-    this._bind = () => {
-        column.summaryTemplate = this.summaryTemplate;
-    }
-    this._bind();
+    column.summaryTemplate = this.summaryTemplate;
 }
 
 public summaryTemplate = (ctx: IgcSummaryTemplateContext) => {
@@ -423,6 +453,19 @@ public summaryTemplate = (ctx: IgcSummaryTemplateContext) => {
         <span>${ ctx.implicit[0].label } - ${ ctx.implicit[0].summaryResult }</span>
     `;
 }
+```
+
+```tsx
+function summaryTemplate(ctx: IgrSummaryTemplateContext) {
+  return (
+    <>
+      <span>My custom summary template</span>
+      <span>{ctx.dataContext.implicit[0].label} - {ctx.dataContext.implicit[0].result}</span>
+    </>
+  );
+}
+
+<IgrColumn hasSummary="true" summaryTemplate={summaryTemplate}></IgrColumn>
 ```
 
 ```razor
@@ -488,11 +531,7 @@ public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOp
 ```ts
 constructor() {
     var column = this.column = document.getElementById('column') as IgcColumnComponent;
-
-    this._bind = () => {
-        column.summaryFormatter = this.dateSummaryFormat;
-    }
-    this._bind();
+    column.summaryFormatter = this.dateSummaryFormat;
 }
 ```
 
@@ -583,19 +622,24 @@ igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
 - <kbd>CTRL</kbd> + <kbd>右矢印</kbd> または <kbd>END</kbd> - 右端のセルへ移動。
 
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 ## スタイル設定
 
 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
 一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
-```ts
-<igc-grid class="grid">
+```html
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid Class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid">
+</{ComponentSelector}>
 ```
 
 次に、そのクラスに関連する CSS プロパティを設定します。
@@ -614,7 +658,7 @@ igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
 `sample="/{ComponentSample}/groupby-summary-styling", height="710", alt="{Platform} {ComponentTitle} グループ化集計のスタイル設定"`
 
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- Angular -->
 ## スタイル設定

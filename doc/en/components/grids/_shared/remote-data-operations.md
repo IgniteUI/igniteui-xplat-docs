@@ -1,5 +1,5 @@
 ---
-title: Remote Data Operations in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Remote Data Operations - {ProductName}
 _description: Start using Angular remote data operations like remote filtering, remote sorting, and remote scrolling to load data from a server with {ProductName}.
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Remote Data, Paging, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
@@ -8,7 +8,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Remote Data Operations
 <!-- Angular -->
-The {ProductName} `{ComponentName}` supports remote data operations such as remote virtualization, remote sorting, remote filtering and others. This allows the developer to perform these tasks on a server, retrieve the data that is produced and display it in the `{ComponentName}`.
+The {ProductName} Remote Data Operations feature in {Platform} {ComponentTitle} supports operations such as remote virtualization, remote sorting, remote filtering and others. This allows the developer to perform these tasks on a server, retrieve the data that is produced and display it in the `{ComponentName}`.
 
 ## {Platform} {ComponentTitle} Remote Data Operations Overview Example
 

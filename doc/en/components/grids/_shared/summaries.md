@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Summaries
 
-The {Platform} `{ComponentName}` has a **summaries** feature that functions on a per-column level as group footer. {Platform} grid summaries is powerful feature which enables the user to see column information in a separate container with a predefined set of default summary items, depending on the type of data within the column or by implementing a custom  template in the `{ComponentName}`.
+The {ProductName} Summaries feature in {Platform} {ComponentTitle} functions on a per-column level as group footer. {Platform} {ComponentName} summaries is powerful feature which enables the user to see column information in a separate container with a predefined set of default summary items, depending on the type of data within the column or by implementing a custom  template in the `{ComponentName}`.
 
 ## {Platform} {ComponentTitle} Summaries Overview Example
 
@@ -459,7 +459,7 @@ function summaryTemplate(ctx: IgrSummaryTemplateContext) {
   return (
     <>
       <span>My custom summary template</span>
-      <span>{ctx.dataContext.implicit[0].label} - {ctx.dataContext.implicit[0].result}</span>
+      <span>{ctx.dataContext.implicit[0].label} - {ctx.dataContext.implicit[0].summaryResult}</span>
     </>
   );
 }
@@ -488,9 +488,11 @@ When a default summary is defined, the height of the summary area is calculated 
 
 <!-- end: Angular -->
 
+<!-- Angular, WebComponents, React -->
 
 `sample="/{ComponentSample}/data-summary-template", height="650", alt="{Platform} {ComponentTitle} data summary template"`
 
+<!-- end: Angular, WebComponents, React -->
 
 <!-- Angular, WebComponents -->
 
