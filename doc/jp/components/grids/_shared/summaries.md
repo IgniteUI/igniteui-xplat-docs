@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 集計
 
-{ProductName} の {Platform} {ComponentName} 集計機能は、グループ フッターとして列ごとのレベルで機能します。{Platform} {ComponentName} 集計は、列内のデータ タイプに応じて、あるいは `{ComponentName}` にカスタム テンプレートを実装することによって、定義済みのデフォルト集計項目を使用して別のコンテナの列情報を表示できます。
+{Platform} {ComponentTitle} の {ProductName} 集計機能は、グループ フッターとして列ごとのレベルで機能します。{Platform} {ComponentName} 集計は、列内のデータ タイプに応じて、あるいは `{ComponentName}` にカスタム テンプレートを実装することによって、定義済みのデフォルト集計項目を使用して別のコンテナの列情報を表示できます。
 
 ## {Platform} {ComponentTitle} 集計概要の例
 

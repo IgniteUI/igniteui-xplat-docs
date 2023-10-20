@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 表示密度
 
-{ProductName} の {Platform} {ComponentTitle} 表示密度を使用すると、ユーザーは {ComponentTitle} 内のデータの間隔とレイアウトを制御できます。[密度](https://material.io/design/layout/applying-density.html)を変更することで、大量のコンテンツを操作するときのユーザー エクスペリエンスを大幅に向上させることができます。次の 3 つの表示密度オプションから選択できます。
+{Platform} {ComponentTitle} の {ProductName} 表示密度を使用すると、ユーザーは `{ComponentName}` 内のデータの間隔とレイアウトを制御できます。[密度](https://material.io/design/layout/applying-density.html)を変更することで、大量のコンテンツを操作するときのユーザー エクスペリエンスを大幅に向上させることができます。次の 3 つの表示密度オプションから選択できます。
 
 - Cozy
 - Comfortable

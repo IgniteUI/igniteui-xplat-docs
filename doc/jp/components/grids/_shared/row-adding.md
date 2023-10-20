@@ -12,7 +12,7 @@ _language: ja
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
-{Platform} {ComponentTitle} 行追加機能 {ProductName} を使用すると、ユーザーは別のフォームやページに移動することなく、新しいデータ レコードを入力して送信できます。{Platform} {ComponentTitle} を使用すると、ユーザーはインライン行追加と CRUD 操作用の強力な API を通じてデータを操作できます。
+{Platform} {ComponentTitle} の {ProductName} 行追加機能を使用すると、ユーザーは別のフォームやページに移動することなく、新しいデータ レコードを入力して送信できます。`{ComponentName}` を使用すると、ユーザーはインライン行追加と CRUD 操作用の強力な API を通じてデータを操作できます。
 グリッドのテンプレートで編集操作が有効になっている `ActionStrip` コンポーネントを追加します。その後、行にカーソルを置き、提供されたボタンを使用します。最後に <kbd>ALT</kbd> + <kbd>+</kbd> を押して、行追加 UI を表示します。
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
