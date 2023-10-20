@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 状態保持
 
-`GridState` ディレクティブによって開発者がグリッドの状態を簡単に保存および復元できます。`GridState` ディレクティブがグリッドに適用されると、`GetState` および `SetState` メソッドが公開され、開発者はこれを使用して、あらゆるシナリオで状態の永続化を実現できます。
+{ProductName} の {Platform} {ComponentTitle} 状態保持機能を使用すると、開発者はグリッドの状態を簡単に保存および復元できます。`GridState` が {Platform} `{ComponentName}` に適用されると、`GetState` および `SetState` メソッドが公開され、開発者はこれを使用して、あらゆるシナリオで状態の永続化を実現できます。
 
 ## サポートされる機能
 

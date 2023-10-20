@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} の列の並べ替えと移動 - インフラジスティックス
+title: {Platform} {ComponentTitle} 列の並べ替えと移動 - {ProductName}
 _description: カスタム列順序を設定し、マウスのドラッグ/ドロップまたはタッチジェスチャ、または {Platform} Column Moving API を使用して列の並べ替えを有効にします。{ProductName} を今すぐお試しください。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -10,7 +10,7 @@ _language: ja
 
 # {ComponentTitle} の列の並べ替えと移動
 
-{ProductName} の `{ComponentName}` コンポーネントは、標準ドラッグ/ドロップのマウス/タッチによるジェスチャ、または列移動 API を使用した順序変更のための**列移動**機能を提供します。列の移動は、固定列と固定されていない列、および[複数列ヘッダー](multi-column-headers.md)の両方で機能します。列を固定領域に移動すると列が固定され、または逆に固定領域の外に列を移動すると、列の固定が解除されます。
+{ProductName} の {Platform} {ComponentTitle} 列移動機能を使用すると、列をすばやく簡単に並べ替えることができます。 これは、列移動 API を使用するか、マウスまたはタッチ ジェスチャを使用してヘッダーを別の位置にドラッグ アンド ドロップすることによって実行できます。{Platform} {ComponentTitle} では、ピン固定された列とピン固定されていない列、および[複数列ヘッダー](multi-column-headers.md)に対しても列の移動を有効にすることができます。
 
 > [!Note]
 > 列と列グループ間の順序変更は、それらが階層の同じレベルにあり、両方が同じグループにある場合にのみ許可されます。列/列グループが最上位の列である場合、列/列グループ間を移動できます。

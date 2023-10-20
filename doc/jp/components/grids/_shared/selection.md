@@ -10,7 +10,17 @@ _language: ja
 
 # {Platform} {ComponentTitle} 選択の概要
 
-{ProductName} `{ComponentName}` グリッドでデータを選択は、さまざまなイベント、豊富な API、単一選択のような単純なマウス操作を使用して簡単に行うことができます。
+{ProductName} の {Platform} {ComponentTitle} 選択機能を使用すると、単純なマウス操作を使用してデータを簡単に操作および操作できます。使用可能な選択モードは 3 つあります。
+
+- 行の選択
+- セルの選択
+- 列の選択 
+
+`RowSelection` プロパティを使用すると、以下を指定できます。
+
+- None (なし)
+- Single (単一)  
+- Multiple Select (複数選択) 
 
 ## {Platform} {ComponentTitle} 選択の例
 
@@ -411,14 +421,14 @@ function copyData(data: any[]) {
     </div>
     <div style={{display: "none"}} className="contextmenu" ref={contextMenuRef}>
         <span className="item" onClick={copySelectedCellData}>
-            <IgrIcon ref={iconRef} collection='material' iconName="content_copy"></IgrIcon>Copy Cell Data
+            <IgrIcon ref={iconRef} collection='material' name="content_copy"></IgrIcon>Copy Cell Data
         </span>
         <span className="item" onClick={copySelectedRowData}>
-            <IgrIcon collection='material' iconName="content_copy"></IgrIcon>Copy Row Data
+            <IgrIcon collection='material' name="content_copy"></IgrIcon>Copy Row Data
         </span>
         {isCellWithinRange && (
         <span className="item" onClick={copySelectedData}>
-            <IgrIcon collection='material' iconName="content_copy"></IgrIcon>Copy Cells Data
+            <IgrIcon collection='material' name="content_copy"></IgrIcon>Copy Cells Data
         </span>)}
     </div>
 </>

@@ -10,11 +10,11 @@ _language: ja
 
 # {Platform} {ComponentTitle} 集計
 
-{Platform} `{ComponentName}` には、グループ フッターとして列レベルで**集計**できる機能があります。{Platform} グリッド集計は、列内のデータ タイプに応じて、あるいは `{ComponentName}` にカスタム テンプレートを実装することによって、定義済みのデフォルト集計項目を使用して別のコンテナの列情報を表示できます。
+{ProductName} の {Platform} {ComponentName} 集計機能は、グループ フッターとして列ごとのレベルで機能します。{Platform} {ComponentName} 集計は、列内のデータ タイプに応じて、あるいは `{ComponentName}` にカスタム テンプレートを実装することによって、定義済みのデフォルト集計項目を使用して別のコンテナの列情報を表示できます。
 
 ## {Platform} {ComponentTitle} 集計概要の例
 
-`sample="/{ComponentSample}/data-summary-options", height="650", alt="{Platform} {ComponentTitle} data summary options"`
+`sample="/{ComponentSample}/data-summary-options", height="650", alt="{Platform} {ComponentTitle} データ集計のオプション"`
 
 
 > [!Note]
@@ -460,7 +460,7 @@ function summaryTemplate(ctx: IgrSummaryTemplateContext) {
   return (
     <>
       <span>My custom summary template</span>
-      <span>{ctx.dataContext.implicit[0].label} - {ctx.dataContext.implicit[0].result}</span>
+      <span>{ctx.dataContext.implicit[0].label} - {ctx.dataContext.implicit[0].summaryResult}</span>
     </>
   );
 }
@@ -489,9 +489,11 @@ igRegisterScript("SummaryTemplate", (ctx) => {
 
 <!-- end: Angular -->
 
+<!-- Angular, WebComponents, React -->
 
 `sample="/{ComponentSample}/data-summary-template", height="650", alt="{Platform} {ComponentTitle} データ集計のテンプレート"`
 
+<!-- end: Angular, WebComponents, React -->
 
 <!-- Angular, WebComponents -->
 

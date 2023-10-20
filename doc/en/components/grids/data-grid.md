@@ -492,7 +492,7 @@ function nameCellTemplate(ctx: IgrCellTemplateContext) {
 <IgrColumn id="name" field="Name" bodyTemplate={nameCellTemplate}></IgrColumn>
 ```
 
-In the snippet above we take a reference to the implicitly provided cell value. This is sufficient if you just want to present some data and maybe apply some custom styling or pipe transforms over the value of the cell. However even more useful is to take the `GridCell` instance itself as shown below:
+In the snippet above we take a reference to the implicitly provided cell value. This is sufficient if you just want to present some data and maybe apply some custom styling or pipe transforms over the value of the cell. However even more useful is to take the `Cell` instance itself as shown below:
 
 ```html
 <igx-grid #grid [data]="data">
@@ -721,7 +721,7 @@ function updateValue(event, value) {
 }
 ```
 
-Make sure to check the API for the `GridCell` in order to get accustomed with the provided properties you can use in your templates.
+Make sure to check the API for the `Cell` in order to get accustomed with the provided properties you can use in your templates.
 
 ### Column Template API
 
