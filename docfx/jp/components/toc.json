@@ -598,13 +598,13 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "クリップボードの操作",
         "href": "grids/tree-grid/clipboard-interactions.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "縮小可能な列グループ",
         "href": "grids/tree-grid/collapsible-column-groups.md",
         "status": "NEW"
