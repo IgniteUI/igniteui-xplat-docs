@@ -34,7 +34,8 @@ ng add igniteui-angular
 
 <!-- WebComponents -->
 ```cmd
-npm install @webcomponents/custom-elements
+npm install --save igniteui-webcomponents-core
+npm install --save igniteui-webcomponents-grids
 ```
 <!-- end: WebComponents -->
 
@@ -201,12 +202,8 @@ Also, if you need to change the default expand/collapse indicator, we provide te
 constructor() {
     var info = document.getElementById('info') as IgcColumnGroupComponent;
     var address = document.getElementById('address') as IgcColumnGroupComponent;
-
-    this._bind = () => {
-        info.collapsibleIndicatorTemplate = this.indTemplate;
-        address.collapsibleIndicatorTemplate = this.indTemplate;
-    }
-    this._bind();
+    info.collapsibleIndicatorTemplate = this.indTemplate;
+    address.collapsibleIndicatorTemplate = this.indTemplate;
 }
 
 public indTemplate = (ctx: IgcColumnTemplateContext) => {

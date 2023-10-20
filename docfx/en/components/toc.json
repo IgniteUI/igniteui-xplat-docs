@@ -133,8 +133,7 @@
     "status": ["NEW_REACT"],
     "items": [
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
-        "note": "Clipboard Operations are not yet implemented. Uncomment this once they are implemented",
+        "exclude": ["Angular"],
         "name": "Clipboard Interactions",
         "href": "grids/grid/clipboard-interactions.md",
         "status": ["NEW_REACT"]
@@ -644,13 +643,13 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Clipboard Interactions",
         "href": "grids/tree-grid/clipboard-interactions.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Collapsible Column Groups",
         "href": "grids/tree-grid/collapsible-column-groups.md",
         "status": "NEW"
