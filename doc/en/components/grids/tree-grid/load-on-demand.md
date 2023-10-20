@@ -26,6 +26,8 @@ The Load on Demand feature is compatible with both types of Tree Grid data sourc
 
 <!-- end: Angular -->
 
+<!-- WebComponents -->
+
 ```html
 <igc-tree-grid id="treeGrid"></igc-tree-grid>
 ```
@@ -50,6 +52,8 @@ public loadChildren = (parentID: any, done: (children: any[]) => void) => {
     this.getData(parentID, (children) => done(children));
 }
 ```
+
+<!-- end: WebComponents -->
 
 After the user clicks the expand icon, it is replaced by a loading indicator. When the done callback is called, the loading indicator disappears and the children are loaded. The Tree Grid adds the children to the underlying data source and populates the necessary keys automatically. 
 
