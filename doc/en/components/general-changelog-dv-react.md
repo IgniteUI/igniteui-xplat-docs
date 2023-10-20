@@ -9,6 +9,12 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## **{PackageVerChanges-23-2}**
+
+### New Components
+
+* [Grid](grids/data-grid.md)
+
 ## **{PackageVerChanges-23-1}**
 
 ### New Components
