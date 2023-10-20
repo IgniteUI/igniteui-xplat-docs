@@ -1,5 +1,5 @@
 ---
-title: Live Data updates in {Platform} {ComponentTitle} for {ProductName}
+title: {Platform} {ComponentTitle} Live Data updates - {ProductName}
 _description: Check out how the {ProductName} {ComponentTitle} can handle thousands of updates per second, while staying responsive for user interactions.
 _keywords: {Platform} {ComponentKeywords} updates, {Platform} live data, infragistics
 sharedComponents: ["Grid", "TreeGrid"]
@@ -8,7 +8,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Live Data Updates
 
-The {Platform} `{ComponentName}` can handle thousands of updates per second, while staying responsive for user interactions.
+The {ProductName} Live Data Updates feature in {Platform} {ComponentTitle} is used for enabling real-time or near-real-time updates of data displayed within the grid. This is extremely useful in apps where data is constantly changing, like stock market trackers, live sports scores, or IoT (Internet of Things) dashboards. The `{ComponentName}` can handle thousands of updates per second, while staying responsive for user interactions.
 
 
 ## {Platform} Live-data Update Example

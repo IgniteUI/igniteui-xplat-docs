@@ -1,5 +1,5 @@
 ---
-title:  Excel Style Filtering in {Platform} {ComponentTitle} for {ProductName}
+title: {Platform} {ComponentTitle} Excel Style Filtering - {ProductName}
 _description: Learn how to configure Excel filtering in {Platform} {ComponentTitle}. You can enable/disable various options and customize the Excel style filter menu the way you want.
 _keywords: excel like filter, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # Excel Filtering in {Platform} {ComponentTitle}
 
-The {Platform} `{ComponentName}` exposes an Excel-style filtering feature that provides an Excel-like filtering UI.
+The {Platform} {ComponentTitle} exposes an Excel-style filtering feature that provides an Excel-like filtering UI. It simplifies the process of working with large datasets. The main idea is to help them filter the data that is most relevant, while eliminating irrelevant entries.
 
 ## {Platform} {ComponentTitle} Excel Style Filtering Example
 
@@ -18,7 +18,7 @@ The {Platform} `{ComponentName}` exposes an Excel-style filtering feature that p
 
 ## Usage
 
-To turn on the `Grid` component's Excel-style filtering, two inputs should be set. The `AllowFiltering` should be set to **true** and the `FilterMode` should be set to `ExcelStyleFilter` value.
+To turn on the `{ComponentName}` component's Excel-style filtering, two inputs should be set. The `AllowFiltering` should be set to **true** and the `FilterMode` should be set to `ExcelStyleFilter` value.
 
 <!-- Angular -->
 ```html
@@ -1061,7 +1061,7 @@ Then set the related CSS properties to this class:
 ## API References
 
 * `Column`
-* `Grid`
+* `{ComponentName}`
 
 
 ## Additional Resources

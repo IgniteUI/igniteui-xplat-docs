@@ -1,5 +1,5 @@
 ---
-title: Cell Selection in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Cell Selection - {ProductName}
 _description: Check how easy it is to use cell data selection using variety of events, rich API or mouse interactions. The {ComponentTitle} supports 3 modes for cell selection. Try it now!
 _keywords: data select, igniteui for {Platform}, infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,7 +9,11 @@ namespace: Infragistics.Controls
 
 # {Platform} Cell Selection
 
-The selection feature enables rich data select capabilities in the {ProductName} `{ComponentName}`. A variety of events and single select actions are available thanks to the powerful API and easy to use methods. The `{ComponentName}` now supports three modes for cell selection, and you can easily switch between them by changing `CellSelection` property. You can disable cell selection, you can select only one cell within the grid or to select multiple cells in the grid, which is provided as default option.
+The {ProductName} Cell Selection in {Platform} {ComponentTitle} enables rich data select capabilities and offers powerful API in the `{ComponentName}` component. The {Platform} {ComponentTitle} supports three selection modes:
+
+- {ComponentTitle} Multiple Cell Selection
+- {ComponentTitle} Single Selection
+- {ComponentTitle} None Selection
 
 <!-- ComponentStart: HierarchicalGrid -->
 In the `{ComponentName}` you can specify the cell selection mode on grid level. So for example in the parent grid multi-cell selection can be enabled, but in child grids cell selection mode can be single or disabled.

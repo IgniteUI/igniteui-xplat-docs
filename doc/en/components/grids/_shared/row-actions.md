@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # Row Actions in {Platform} {ComponentTitle}
 
-The `{ComponentName}` component in {ProductName} provides the ability to use an `ActionStrip` and utilize CRUD for row/cell components and row pinning. The Action Strip component can host predefined UI controls for these operations.
+The {ProductName} Row Actions feature in {Platform} {ComponentTitle} enables developers to use an `АctionStrip` and utilize CRUD for row/cell components and row pinning. There are several predefined UI controls for these operations that are applicable to a specific row in the `{ComponentName}` – editing and pinning.
 
 ## Usage
 

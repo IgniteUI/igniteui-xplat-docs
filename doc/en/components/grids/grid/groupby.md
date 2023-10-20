@@ -8,13 +8,13 @@ namespace: Infragistics.Controls
 
 # {Platform} Grid Group By
 
-A Group By behavior in an {Platform} Material table or UI grid creates grouped data rows based on the column values. The Group By in the `Grid` allows for visualizing the groups in a hierarchical structure. The grouped data rows can be expanded or collapsed and the order of grouping may be changed through the UI or API. When Row Selection is enabled, a Group By row selector is rendered in the left-most area of the group row. In case the `RowSelection` property is set to single, checkboxes are disabled and only serve as an indication for the group where selection is placed. If the `RowSelection` property is set to multiple, clicking over the Group By row selector selects all records belonging to this group.
+The {ProductName} Group By behavior in {Platform} {GridName} creates grouped data rows based on the column values. The Group By in the `Grid` allows for visualizing the groups in a hierarchical structure. The grouped data rows can be expanded or collapsed and the order of grouping may be changed through the UI or API. When Row Selection is enabled, a Group By row selector is rendered in the left-most area of the group row. In case the `RowSelection` property is set to single, checkboxes are disabled and only serve as an indication for the group where selection is placed. If the `RowSelection` property is set to multiple, clicking over the Group By row selector selects all records belonging to this group.
 
 ## {Platform} Grid Group By Example
 This example presents the grouping capabilities of a large amount of data. Dragging the column headers to the top (grouping area) allows users to see the data for the selected column in a hierarchical structure. They can do group by in multiple fields by dragging more column headers to the top. These grouping options come in handy when you have tables with numerous rows and columns where users want to present the data in a much faster and visually acceptable way.
 
 
-`sample="/{GridSample}/groupby-expressions", height="605", alt="{Platform} {ComponentTitle} Group By Example"`
+`sample="/{GridSample}/groupby-expressions", height="605", alt="{Platform} {GridTitle} Group By Example"`
 
 ## Initial Grouping State
 
@@ -448,7 +448,7 @@ Groups that span multiple pages are split between them. The group row is visible
 ### {Platform} Group By With Paging Example
 
 
-`sample="/{GridSample}/groupby-paging", height="605", alt="{Platform} {ComponentTitle} group by with paging example"`
+`sample="/{GridSample}/groupby-paging", height="605", alt="{Platform} {GridTitle} group by with paging example"`
 
 ## Group By With Summaries
 
@@ -488,7 +488,7 @@ The sample below demonstrates custom grouping by `Date`, where the date values a
 ### {Platform} Custom Group By Example
 
 
-`sample="/{GridSample}/groupby-custom", height="605", alt="{Platform} {ComponentTitle} custom group by example"`
+`sample="/{GridSample}/groupby-custom", height="605", alt="{Platform} {GridTitle} custom group by example"`
 
 The sample defines custom sorting for the different date conditions.
 Each custom strategy defines the `GroupingComparer` method, which is the custom compare function used when sorting the values. Additionally it extracts the values from the date needed for the comparison.
@@ -586,7 +586,7 @@ Then set the related CSS properties for that class:
 
 ### Demo
 
-`sample="/{GridSample}/groupby-styling", height="605", alt="{Platform} {ComponentTitle} Group By Styling Example"`
+`sample="/{GridSample}/groupby-styling", height="605", alt="{Platform} {GridTitle} Group By Styling Example"`
 
 
 <!-- end: WebComponents, Blazor, React -->

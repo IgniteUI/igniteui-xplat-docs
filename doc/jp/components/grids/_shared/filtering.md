@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} for {ProductName} のフィルタリング
+title: {Platform} {ComponentTitle} フィルタリング - {ProductName}
 _description: Angular フィルターを使用して、{Platform} {ComponentTitle} で特定のデータを返します。データ型の Excel スタイル フィルタリングを含む高度なフィルタリング オプションをお試しください。
 _keywords: filter, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, フィルター, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -10,7 +10,11 @@ _language: ja
 
 # {Platform} {ComponentTitle} フィルタリング
 
-{Platform} `{ComponentName}` コンポーネントは、クイック フィルタリング、[Excel スタイル フィルタリング](excel-style-filtering.md)、および[高度なフィルタリング](advanced-filtering.md)の 3 つの異なるフィルタリング タイプを提供します。それらのフィルタリング タイプは指定された基準を満たすレコードのみを表示できるようにします。{Platform} の `{ComponentName}` コンポーネントは、`{ComponentName}` がバインドされているデータコンテナを介して、フィルター機能と広範なフィルター API を提供します。
+{Platform} {ComponentTitle} {ProductName} のフィルタリングは、特定の基準または条件に基づいてデータを選択的に表示または非表示にする機能です。{Platform} {ComponentTitle} コンポーネントが豊富なフィルタリング API とすべてのフィルタリング機能を提供するバインドされたデータ コンテナがあります。ここで利用可能なフィルタリング タイプは次の 3 つです。
+
+- クイック フィルタリング
+- [Excel スタイル フィルタリング](excel-style-filtering.md)
+- [高度なフィルタリング](advanced-filtering.md)
 
 ## {Platform} {ComponentTitle} フィルタリングの例
 

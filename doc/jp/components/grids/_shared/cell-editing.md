@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} でのセル編集 - インフラジスティックス
+title: {Platform} {ComponentTitle} セルの編集 - {ProductName}
 _description: {ComponentTitle} はセル内編集を使用しています。デフォルトのセル編集テンプレートがありますが、データ更新操作のカスタム テンプレートを定義することもできます。今すぐお試しください。
 _keywords: data manipulation, excel editing, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, データの変更, excel 編集, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -10,7 +10,8 @@ _language: ja
 
 # {Platform} {ComponentTitle} セル編集
 
-{ProductName} `{ComponentName}` コンポーネントは、{Platform} CRUD 操作のための優れたデータ操作機能と強力な API を提供します。デフォルトで `{ComponentName}` は**セル内編集**を使用し、**デフォルトのセル編集テンプレート**によって、列のデータ型に基づいてさまざまなエディターが表示されます。
+{ProductName} の {Platform} {ComponentTitle} セル編集機能は、{Platform} {ComponentTitle} コンポーネント内の個々のセルのコンテンツの優れたデータ操作機能を提供し、React CRUD 操作用の強力な API を備えています。これはスプレッドシート、データ テーブル、データ グリッドなどのアプリの基本的な機能であり、ユーザーが特定のセル内のデータを追加、編集、更新できるようにします。
+デフォルトでは、{ProductName} の Grid がセル編集に使用されます。 また、**デフォルトのセル編集テンプレート**により、列のデータ型 「Top of Form」 に基づいて異なるエディターが存在します。
 
 さらに、データ更新アクション用の独自のカスタム テンプレートを定義したり、変更をコミット/破棄したりするためのデフォルトの動作をオーバーライドすることもできます。
 

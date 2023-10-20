@@ -1,5 +1,5 @@
 ---
-title: Editing Rows in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Editing Rows - {ProductName}
 _description: Want to enable row editing in {Platform} {ComponentTitle}? Need a powerful API for CRUD operations? Try our {ProductName} {ComponentTitle} rows editing component!
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Row Editing
 
-The `{ComponentName}` provides a convenient way to perform data manipulations through inline editing and a powerful API for {Platform} CRUD operations. Click on a row and press **Enter key** or simply double click with the mouse on the row that needs to be modified.
+The {ProductName} Row Editing feature in {Platform} {ComponentTitle} allows editing data directly within the `{ComponentName}`. On top of this convenient way to manipulate data, there’s a powerful API for full CRUD operations. You can perform grid row editing by clicking on a row and pressing **Enter key**. Another quick way is to double click with the mouse on the row that needs to be modified.
 
 ## {Platform} {ComponentTitle} Row Editing Example
 

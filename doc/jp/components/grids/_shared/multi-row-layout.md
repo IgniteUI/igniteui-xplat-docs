@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} の複数行レイアウト - インフラジスティックス
+title: 	{Platform} {ComponentTitle} 複数行レイアウト - {ProductName}
 _description: {ProductName} Data Grid の複数行レイアウト機能を使用して、列をより強力な方法で配置およびサイズ設定します。デモと例をお試しください。
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Multi-Row Layout, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, 複数行レイアウト, インフラジスティックス
@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} の複数行レイアウト
 
-複数行レイアウトは、`{ComponentName}` のレンダリング機能を拡張します。この機能により、単一のデータレコードを複数の表示行に分割することができます。
+{ComponentTitle} のレンダリング機能を拡張します。この機能により、単一のデータレコードを複数の表示行に分割することができます。
 
 ## {Platform} {ComponentTitle} 複数行レイアウトの例
 

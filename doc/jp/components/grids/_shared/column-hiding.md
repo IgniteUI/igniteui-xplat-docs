@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} の列非表示 - インフラジスティックス
+title: {Platform} {ComponentTitle} 列の非表示 - {ProductName}
 _description: ユーザーが Ignite Material UI テーブルの UI で列の表示状態を変更できるようにする列非表示機能の使用方法。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -14,7 +14,7 @@ _language: ja
 {ProductName} `{ComponentName}` は、`ColumnHidingDirective` のある `ColumnActionsComponent` を提供し、ユーザーが UI を介して、または {Platform} コンポーネントを使用して列の非表示を実行できるようにします。
 <!-- end: Angular -->
 
-{ProductName} `{ComponentName}` には組み込み列非表示 UI があり、これを `{ComponentName}` のツールバーから使用して列の表示状態を変更できます。更に別のコンポーネントとして列非表示 UI を定義してページの必要な場所に配置できます。
+{ProductName} には組み込み列非表示 UI があり、これを {Platform} {ComponentTitle} のツールバーから使用して列の表示状態を変更できます。開発者は、必要に応じてページ内の任意の場所に列非表示 UI を柔軟に定義できます。{Platform} {ComponentTitle} 列の非表示機能は、グリッドのサイズを小さくし、冗長なフィールドをタブで移動する必要をなくしたい場合に特に便利です。
 
 ## {Platform} {ComponentTitle} 列非表示の例
 
