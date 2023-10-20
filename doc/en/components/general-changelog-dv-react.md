@@ -13,7 +13,10 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### New Components
 
-* [Grid](grids/data-grid.md)
+* [Grid](grids/data-grid.md) - This is a new fully functional cross-platform grid and includes features like filtering, sorting, templates, row selection, row grouping, row pinning and movable columns.
+
+### Deprecatated Components
+> [DataGrid](grids/data-grid/overview.md) - The DataGrid is deprecated, please refer to [Grid](grids/data-grid.md)
 
 ## **{PackageVerChanges-23-1}**
 
