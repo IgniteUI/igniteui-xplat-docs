@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} セルの選択
 
-{ProductName} の {Platform} {ComponentTitle} セル選択により、豊富なデータ選択機能が有効になり、グリッド コンポーネントで強力な API が提供されます。 {Platform} {ComponentTitle} は、次の 3 つの選択モードをサポートしています。
+{Platform} {ComponentTitle} の {ProductName} セル選択により、豊富なデータ選択機能が有効になり、グリッド コンポーネントで強力な API が提供されます。 {Platform} {ComponentTitle} は、次の 3 つの選択モードをサポートしています。
 
 - {ComponentTitle} 複数セルの選択
 - {ComponentTitle} 単一選択

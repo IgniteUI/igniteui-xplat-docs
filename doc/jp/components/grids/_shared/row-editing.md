@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 行の編集
 
-{ProductName} の {Platform} {ComponentTitle} 行編集機能を使用すると、{ComponentTitle} 内でデータを直接編集できます。 データを操作するこの便利な方法に加えて、完全な CRUD 操作のための強力な API があります。行をクリックして **Enter キー**を押すと、グリッド行の編集を実行できます。もう 1 つの簡単な方法は、変更する必要がある行をマウスでダブルクリックすることです。
+{Platform} {ComponentTitle} の {ProductName} 行編集機能を使用すると、`{ComponentName}` 内でデータを直接編集できます。 データを操作するこの便利な方法に加えて、完全な CRUD 操作のための強力な API があります。行をクリックして **Enter キー**を押すと、グリッド行の編集を実行できます。もう 1 つの簡単な方法は、変更する必要がある行をマウスでダブルクリックすることです。
 
 ## {Platform} {ComponentTitle} 行編集の例
 

@@ -131,7 +131,7 @@
     "status": ["NEW_REACT"],
     "items": [
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "クリップボードの操作",
         "href": "grids/grid/clipboard-interactions.md",
         "status": ["NEW_REACT"]

@@ -623,7 +623,7 @@ public init(column: IgxColumnComponent) {
 
 ## API リファレンス
 
-* `GridCell`
+* `Cell`
 * `Column`
 * `PipeArgs`
 * `{ComponentName}`

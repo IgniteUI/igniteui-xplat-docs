@@ -11,7 +11,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 高度なフィルタリング
 
-{ProductName} の {Platform} {ComponentTitle} 高度なフィルタリングを使用すると、{Platform} {ComponentTitle} のすべての列にわたるフィルタリング条件を使用してさまざまなグループを作成できるダイアログが表示されるため、データを操作できます。
+{Platform} {ComponentTitle} の {ProductName} 高度なフィルタリングを使用すると、`{ComponentName}` のすべての列にわたるフィルタリング条件を使用してさまざまなグループを作成できるダイアログが表示されるため、データを操作できます。
 
 ## {Platform} {ComponentTitle} 高度なフィルタリングの例
 

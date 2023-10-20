@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} ページネーションの概要
 
-{ProductName} の {Platform} {ComponentTitle} ページネーションは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。React グリッドのページネーションにより、ユーザー エクスペリエンスとデータ操作が向上します。{Platform} {ComponentTitle} ページネーションは、列の追加と同様に、`Paginator` タグを定義することにより、グリッド ツリーに投影された別のコンポーネントを介して構成できます。他の {Platform} テーブルと同様に、{Platform} {ComponentTitle} のページネーションはカスタム ページのテンプレートをサポートしています。
+{Platform} {ComponentTitle} の {ProductName} ページネーション機能は、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。React グリッドのページネーションにより、ユーザー エクスペリエンスとデータ操作が向上します。`{ComponentName}` ページネーションは、列の追加と同様に、`Paginator` タグを定義することにより、グリッド ツリーに投影された別のコンポーネントを介して構成できます。他の {Platform} テーブルと同様に、{Platform} {ComponentTitle} のページネーションはカスタム ページのテンプレートをサポートしています。
 
 ## {Platform} {ComponentTitle} ページネーションの例
 

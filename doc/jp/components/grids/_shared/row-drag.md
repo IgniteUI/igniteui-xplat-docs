@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} の行ドラッグ
 
-{ProductName} の {Platform} {ComponentTitle} 行ドラッグ機能は簡単に構成でき、マウスを使用して行を新しい位置にドラッグ アンド ドロップすることで、グリッド内の行を再配置するために使用されます。これはルートの {Platform} {ComponentTitle} コンポーネントで初期化され、`RowDraggable` 入力を介して構成できます。
+{Platform} {ComponentTitle} の {ProductName} 行ドラッグ機能は簡単に構成でき、マウスを使用して行を新しい位置にドラッグ アンド ドロップすることで、グリッド内の行を再配置するために使用されます。これはルートの `{ComponentName}` コンポーネントで初期化され、`RowDraggable` 入力を介して構成できます。
 
 ## {Platform} {ComponentTitle} 行ドラッグの例
 

@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 行のピン固定
 
-{ProductName} の {Platform} {ComponentTitle} 行ピン固定機能を使用すると、1 つまたは複数の行をグリッドの上部または下部にピン固定できます。行ピン固定を使用すると、エンドユーザーは特定の順序で行をピン固定し、{Platform} {ComponentTitle} を垂直にスクロールしても常に表示される特別な領域に行を複製できます。{Platform} {ComponentTitle} には組み込みの行ピン固定 UI が含まれており、{ComponentTitle} のコンテキストで `ActionStrip` コンポーネントを初期化することで有効になります。その他、カスタム UI を定義し、行のピン固定 API を介して行のピン固定状態を変更できます。
+{Platform} {ComponentTitle} の {ProductName} 行ピン固定機能を使用すると、1 つまたは複数の行をグリッドの上部または下部にピン固定できます。行ピン固定を使用すると、エンドユーザーは特定の順序で行をピン固定し、`{ComponentName}` を垂直にスクロールしても常に表示される特別な領域に行を複製できます。{Platform} {ComponentTitle} には組み込みの行ピン固定 UI が含まれており、{ComponentTitle} のコンテキストで `ActionStrip` コンポーネントを初期化することで有効になります。その他、カスタム UI を定義し、行のピン固定 API を介して行のピン固定状態を変更できます。
 
 ## {Platform} {ComponentTitle} 行ピン固定の例
 

@@ -147,6 +147,6 @@ const masterDetailTemplate = ({dataContext}:{dataContext: IgrGridMasterDetailCon
 * `Grid`
 * `Column`
 * `GridRow`
-* `GridCell`
+* `Cell`
 * `TreeGridRow`
 * `HierarchicalGridRow`
