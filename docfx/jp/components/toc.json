@@ -1486,7 +1486,7 @@
         "href": "layouts/dock-manager-electron.md"
       },
       {
-        "exclude": ["Angular"],
+        "exclude": ["Angular", "React"],
         "name": "カスタマイズ",
         "href": "layouts/dock-manager-customization.md",
         "status": "NEW"
