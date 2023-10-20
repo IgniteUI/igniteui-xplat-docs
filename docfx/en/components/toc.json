@@ -817,7 +817,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "State Persistence",
         "href": "grids/tree-grid/state-persistence.md",
         "status": "NEW"
