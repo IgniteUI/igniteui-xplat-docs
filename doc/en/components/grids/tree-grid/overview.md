@@ -105,6 +105,10 @@ import { IgxTreeGridModule } from 'igniteui-angular';
 export class AppModule {}
 ```
 
+```tsx
+import { IgrTreeGrid } from '@infragistics/igniteui-react-grids/igr-tree-grid';
+```
+
 <!-- end: Angular, React, Blazor -->
 
 ## Usage
@@ -159,6 +163,61 @@ const EMPLOYEE_DATA = [
     },
     // ...
 ]
+```
+
+```tsx
+export const EMPLOYEE_DATA = [
+    {
+        Name: "Johnathan Winchester",
+        ID: 1,
+        HireDate: new Date(2008, 3, 20),
+        Age: 55,
+        Employees: [
+            {
+                Name: "Michael Burke",
+                ID: 3,
+                HireDate: new Date(2011, 6, 3),
+                Age: 43,
+                Employees: []
+            },
+            {
+                Name: "Thomas Anderson"
+                ID: 2,
+                HireDate: new Date(2009, 6, 19),
+                Age: 29,
+                Employees: []
+            },
+            ...
+        ]
+    },
+                ]
+    ...
+    <IgrTreeGrid
+                    autoGenerate="false"
+                    data={this.EMPLOYEE_DATA}
+                    primaryKey="ID"
+                    childDataKey="Employees"
+                    displayDensity="Cosy"
+                    rowSelection="single">
+                    <IgrPaginator
+                        perPage="10">
+                    </IgrPaginator>
+                    <IgrColumn
+                        field="Name"
+                        header="Name"
+                        dataType="String">
+                    </IgrColumn>
+                    <IgrColumn
+                        field="ID"
+                        header="ID"
+                        dataType="Number">
+                    </IgrColumn>
+                    <IgrColumn
+                        field="HireDate"
+                        header="Hire Date"
+                        dataType="Date">
+                    </IgrColumn>
+                </IgrTreeGrid>
 ```
 
 ```razor
@@ -223,6 +282,14 @@ Now let's start by importing our `Data` collection and binding it to our tree gr
     }
 ```
 
+```tsx
+    <IgrTreeGrid autoGenerate="false" data={this.EMPLOYEE_DATA} primaryKey="ID" displayDensity="Cosy">
+        <IgrColumn field="Name" header="Name" dataType="String"></IgrColumn>
+        <IgrColumn field="ID" header="ID" dataType="Number"></IgrColumn>
+        <IgrColumn field="HireDate" header="Hire Date" dataType="Date"></IgrColumn>
+    </IgrTreeGrid>
+```
+
 In order for the tree grid to build the hierarchy, we will have to set its `ChildDataKey` property to the name of the child collection that is used in each of our data objects. In our case that will be the **Employees** collection.
 In addition, we can disable the automatic column generation and define them manually by matching them to the actual properties of our data objects. (The **Employees** collection will be automatically used for the hierarchy, so there is no need to include it in the columns' definitions.)
 
@@ -236,6 +303,15 @@ We can also enable the summaries, the filtering, sorting, editing, moving and re
     <igc-column field="age" header="Age" data-type="number" sortable="true" resizable="true" has-summary="true" editable="true"></igc-column>
     <igc-paginator></igc-paginator>
 </igc-tree-grid>
+```
+
+```tsx
+    <IgrTreeGrid autoGenerate="false" data={this.EMPLOYEE_DATA} primaryKey="ID" childDataKey="Employees" row-selection="multiple" displayDensity="Cosy">
+        <IgrPaginator perPage="10"></IgrPaginator>
+        <IgrColumn field="Name" header="Name" dataType="String"></IgrColumn>
+        <IgrColumn field="ID" header="ID" dataType="Number"></IgrColumn>
+        <IgrColumn field="HireDate" header="Hire Date" dataType="Date"></IgrColumn>
+    </IgrTreeGrid>
 ```
 
 ```razor
@@ -271,6 +347,23 @@ Finally, we can enable the toolbar of our tree grid, along with the column hidin
         </igc-grid-toolbar-actions>
     </igc-grid-toolbar>
 </igc-tree-grid>
+```
+
+```tsx
+    <IgrTreeGrid autoGenerate="false" data={this.EMPLOYEE_DATA} primaryKey="ID" childDataKey="Employees" row-selection="multiple" displayDensity="Cosy">
+        <IgrPaginator perPage="10"></IgrPaginator>
+         <IgrGridToolbar>
+            <IgrGridToolbarActions>
+                <IgrGridToolbarAdvancedFiltering></IgrGridToolbarAdvancedFiltering>
+                <IgrGridToolbarHiding></IgrGridToolbarHiding>
+                <IgrGridToolbarPinning></IgrGridToolbarPinning>
+                <IgrGridToolbarExporter></IgrGridToolbarExporter>
+            </IgrGridToolbarActions>
+        </IgrGridToolbar>
+        <IgrColumn field="Name" header="Name" dataType="String"></IgrColumn>
+        <IgrColumn field="ID" header="ID" dataType="Number"></IgrColumn>
+        <IgrColumn field="HireDate" header="Hire Date" dataType="Date"></IgrColumn>
+    </IgrTreeGrid>
 ```
 
 ```razor
@@ -346,6 +439,14 @@ Here is the template of the component which demonstrates how to configure the tr
 </igc-tree-grid>
 ```
 
+```tsx
+ <IgrTreeGrid auto-generate="false" name="treeGrid" id="treeGrid" primary-key="ID" foreign-key="ParentID" row-selection="multiple">
+    <IgrColumn field="Name" data-type="string"></IgrColumn>
+    <IgrColumn field="JobTitle" header="Job Title"></IgrColumn>
+    <IgrColumn field="Age" data-type="number"></IgrColumn>
+</IgrTreeGrid>
+```
+
 ```razor
 <IgbTreeGrid AutoGenerate="false"
              PrimaryKey="ID"
@@ -366,6 +467,14 @@ In addition we will enable the row selection feature of the tree grid by using t
     <igc-column field="JobTitle" header="Job Title" data-type="string" sortable="true" editable="true" resizable="true"> </igc-column>
     <igc-column field="Age" data-type="number" sortable="true" editable="true" resizable="true"> </igc-column>
 </igc-tree-grid>
+```
+
+```tsx
+ <IgrTreeGrid auto-generate="false" name="treeGrid" id="treeGrid" primary-key="ID" foreign-key="ParentID" moving="true" allowFiltering="true" row-selection="multiple" rowEditable="true">
+    <IgrColumn field="Name" data-type="string" sortable="true"></IgrColumn>
+    <IgrColumn field="JobTitle" header="Job Title" sortable="true"></IgrColumn>
+    <IgrColumn field="Age" data-type="number"sortable="true"></IgrColumn>
+</IgrTreeGrid>
 ```
 
 ```razor
