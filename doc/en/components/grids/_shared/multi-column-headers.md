@@ -1,5 +1,5 @@
 ---
-title: Multi-Column Headers in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Multi-Column Headers - {ProductName}
 _description: Start grouping column headers by placing them under a common hierarchical header with the help of {ProductName} grid and combine them into multi headers.
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Multi-Column Headers, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
@@ -8,7 +8,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Multi-Column Headers Overview
 
-The {Platform} `{ComponentName}` supports multi-column headers which allow you to group columns by placing them under a common multi-header. Each multi-column headers group could be a representation of combinations between other groups or columns within the Material UI grid.
+The {ProductName} Multi-Column Headers feature in {Platform} {ComponentTitle} allows you to group columns by placing them under a common multi-header. Each multi-column headers group in the `{ComponentName}` could be a representation of combinations between other groups or columns. This feature is particularly useful when dealing with large datasets where scrolling horizontally might be cumbersome.
 
 ## {Platform} {ComponentTitle} Multi-Column Headers Example
 
@@ -622,11 +622,11 @@ Then set the related CSS properties to this class:
 
 ```css
 .grid {
-    --igx-grid-header-background: #e0f3ff;
-    --igx-grid-header-text-color: #e41c77;
-    --igx-grid-header-border-width: 1px;
-    --igx-grid-header-border-style: solid;
-    --igx-grid-header-border-color: rgba(0, 0, 0, 0.08);
+    --ig-grid-header-background: #e0f3ff;
+    --ig-grid-header-text-color: #e41c77;
+    --ig-grid-header-border-width: 1px;
+    --ig-grid-header-border-style: solid;
+    --ig-grid-header-border-color: rgba(0, 0, 0, 0.08);
 }
 ```
 ### Demo

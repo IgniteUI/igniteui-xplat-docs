@@ -81,9 +81,9 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
     let packageName: string | null = null;
 
     if (!(typeName.indexOf(options.platformPascalPrefix) == 0)) {
-        resolvedTypeName = mappings.getPlatformTypeName(typeName, <APIPlatform>options.platform);
+        resolvedTypeName = mappings.getPlatformTypeName(typeName, <APIPlatform>options.platform, options.filePath);
         if (resolvedTypeName) {
-            let typeInfo = mappings.getType(typeName);
+            let typeInfo = mappings.getType(typeName, options.filePath);
             if (typeInfo) {
                 if (typeInfo.isEnum) {
                     isEnum = true;
@@ -130,7 +130,8 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
             let packageText = "";
             if (packageName) {
                 if (packageName == "igniteui-webgrids") {
-                    packageText = "igniteui_" + getPlatformName(<APIPlatform>options.platform).toLowerCase() + "_grids_grids."
+                    const packageSuffix = (platform == APIPlatform.React ? "" : "_grids") + "_grids.";
+                    packageText = "igniteui_" + getPlatformName(<APIPlatform>options.platform).toLowerCase() + packageSuffix;
                 } else if (packageName == "igniteui-webinputs") {
                     packageText = "";
                     if (platform == APIPlatform.React) {
@@ -166,7 +167,7 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
             //     linkText = linkText + "#" + prefix + memberName;
             // }
         } else { // Angular, React, WC
-            linkText = linkText + "#" + memberName.toLowerCase();
+            linkText = linkText + "#" + memberName;
         }
     }
 
@@ -278,7 +279,7 @@ function transformCodeRefs(options: any) {
         let resolvedName = mappings.getPlatformMemberName(
             <string>options.typeName,
             <APIPlatform>options.platform,
-            <string>memberName);
+            <string>memberName, options.filePath);
         apiTypeName = options.typeName;
 
         if (resolvedName == null && options.mentionedTypes &&
@@ -288,7 +289,7 @@ function transformCodeRefs(options: any) {
                 resolvedName = mappings.getPlatformMemberName(
                     <string>type,
                     <APIPlatform>options.platform,
-                    <string>memberName);
+                    <string>memberName, options.filePath);
                 if (resolvedName !== null) {
                     apiTypeName = type;
                     break;
@@ -299,7 +300,7 @@ function transformCodeRefs(options: any) {
         if (resolvedName == null) {
             resolvedName = mappings.getPlatformTypeName(
                 <string>memberName,
-                <APIPlatform>options.platform);
+                <APIPlatform>options.platform, options.filePath);
 
             if (resolvedName !== null) {
                 isTypeName = true;
@@ -330,12 +331,12 @@ function transformCodeRefs(options: any) {
             }
 
             if (link) {
-                // override Angular/React/WC Dock Manager to stand-alone API docs for Dock Manager
-                // because API docs for Dock Manager are NOT in Angular/React/WC API docs, e.g.
+                // override Angular/WC Dock Manager to stand-alone API docs for Dock Manager
+                // because API docs for Dock Manager are NOT in Angular/WC API docs, e.g.
                 // WORKS - https://staging.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html
                 // FAILS - https://staging.infragistics.com/products/ignite-ui-web-components/api/docs/typescript/latest/classes/igcdockmanagercomponent.html
                 let platform = getPlatformName(options.platform);
-                if (platform === "Angular" || platform === "React" || platform === "WebComponents") {
+                if (platform === "Angular" || platform === "WebComponents") {
 
                     var dockEnums = [
                         "DockManagerPaneType",
@@ -494,7 +495,7 @@ function getFrontMatterTypes(options: any, filePath: string) {
 
             for (let i = 0; i < options.mentionedTypes.length; i++) {
                 let currType = options.mentionedTypes[i];
-                let currTypeInfo = mappings.getType(currType);
+                let currTypeInfo = mappings.getType(currType, options.filePath);
                 if (currTypeInfo?.originalNamespace) {
                     mentionedNamespace = currTypeInfo.originalNamespace;
                 }
@@ -580,7 +581,7 @@ function transformDocLinks(options: any) {
             let resolvedName = mappings.getPlatformMemberName(
                 <string>options.typeName,
                 <APIPlatform>options.platform,
-                <string>controlName);
+                <string>controlName, options.filePath);
             if (resolvedName) {
                 controlName = resolvedName;
             }
@@ -1398,9 +1399,10 @@ function omitFencedCode(options: any) {
         }
 
         //highlight.js, used by docfx, doesn't currently support tsx highlighting.
-        if (lang.toLowerCase() == "tsx") {
-            node.lang = "ts";
-        }
+        //since igniteui-docfx-template 3.6.0, there is custom tsx support
+        //if (lang.toLowerCase() == "tsx") {
+        //    node.lang = "ts";
+        //}
         // commented out since the igniteui-docfx-templat supports razor language
         //if (lang.toLowerCase() == "razor") {
         //    node.lang = "html";
@@ -1459,8 +1461,7 @@ export class MarkdownTransformer {
             case APIPlatform.React:
                 if (!PlatformDetectorRule.isTS(language) &&
                 !PlatformDetectorRule.isTSX(language) &&
-                 language !== "js" &&
-                 !PlatformDetectorRule.isHTML(language)) {
+                 language !== "js") {
                     return true;
                 }
 
@@ -2219,7 +2220,7 @@ export class MarkdownTransformer {
         let jsonFile = fs.readFileSync(jsonPath);
         let jsonContent = jsonFile.toString();
 
-        let tocNodes = this.filterTOC(jsonContent, platform, language, excludedFiles);
+        let tocNodes = this.filterTOC(jsonContent, platform, language, excludedFiles); //here
 
         // optional start:
         // let tocPath = jsonPath.replace('toc.json', 'toc_' + platform + '.json')
@@ -2353,6 +2354,10 @@ export class MarkdownTransformer {
                     // node.href = node.href.replace(".md", ".html");
                 }
 
+                if (node.status) {
+                    node.status = this.parseNodeStatus(node.status, platform);
+                }
+
                 node.exclude = undefined;
                 // recursively check if child items need to be excluded
                 if (node.items !== undefined &&
@@ -2367,6 +2372,18 @@ export class MarkdownTransformer {
             }
         }
         return matchingNodes;
+    }
+
+    parseNodeStatus(status: string | string[], platform: string) {
+        let resultStatus = '';
+        if (status instanceof Array) {
+            const platformStatus = status.find(s => s.toLowerCase().indexOf(platform.toLowerCase()) !== -1) || '';
+            //Platform status looks like NEW_REACT or UPDATED_WEBCOMPONENTS
+            resultStatus = platformStatus.toLowerCase().split('_')[0];
+        } else {
+            resultStatus = status;
+        }
+        return resultStatus;
     }
 
     getNodeInfo(node: TocNode) {
@@ -2431,7 +2448,7 @@ export class Strings {
 
 export class TocNode {
     public name: string;
-    public status?: string;
+    public status?: string | string[];
     public href?: string;
     public header?: boolean;
     public new?: boolean;

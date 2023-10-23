@@ -33,7 +33,7 @@ For the Dock Manager pane contents we have used **iframe** elements which host d
 
 ### Drag and drop
 
-In order to support dragging panes outside the browser/application window we have replaced the built-in drag/drop which creates in-browser floating panes with a custom implementation based on the [HTML Drag and Drop API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API). We have subscribed to the `PaneHeaderConnected` and `TabHeaderConnected` events which are fired when a header element is connected to the DOM. When a header element is connected we reset the built-in `DragService` and attach `DragStart` and `DragEnd` event listeners.
+In order to support dragging panes outside the application window we have replaced the built-in drag/drop which creates in-application floating panes with a custom implementation based on the [HTML Drag and Drop API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API). We have subscribed to the `PaneHeaderConnected` and `TabHeaderConnected` events which are fired when a header element is connected to the DOM. When a header element is connected we reset the built-in `DragService` and attach `DragStart` and `DragEnd` event listeners.
 
 ```ts
 const paneHeaderConnected = (event: CustomEvent<IgcPaneHeaderConnectionEventArgs>) => {
@@ -79,14 +79,14 @@ document.addEventListener('dragover', handleDocumentDragOver);
 document.addEventListener('drop', handleDocumentDrop);
 ```
 
-In the `paneHeaderDragEnd` function we detect if the pane was dropped outside the browser/application window and we call the `droppedOutOfWindow` function.
+In the `paneHeaderDragEnd` function we detect if the pane was dropped outside the application window and we call the `droppedOutOfWindow` function.
 
 ```ts
 const paneHeaderDragEnd = async (event: DragEvent) => {
     event.preventDefault();
     // ...
 
-    // dropped outside of the browser
+    // dropped outside of the application
     if (event.dataTransfer.dropEffect === 'none') {
         await droppedOutOfWindow(event);
     }
