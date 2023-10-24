@@ -9,13 +9,13 @@ _language: ja
 
 # {Platform} Grid グループ化
 
-{Platform} Material テーブルまたは UI グリッドの Group by 動作は、列の値に基づいてグループ化されたデータ行を作成します。`Grid` の Group By では、グループを階層構造で視覚化できます。グループデータ行は展開または縮小でき、グループの順序は UI または API で変更できます。行選択を有効にすると、GroupBy 行セレクターがグループ行の一番左の領域に描画されます。`RowSelection` プロパティが単一に設定されている場合、チェックボックスは無効になり、選択が行われるグループの表示としてのみ機能します。`RowSelection` プロパティが複数に設定されている場合、Group By 行セレクターをクリックすると、このグループに属するすべてのレコードが選択されます。
+{Platform} {GridName} の {ProductName} グループ化動作は、列の値に基づいてグループ化されたデータ行を作成します。`Grid` の グループ化では、グループを階層構造で視覚化できます。グループデータ行は展開または縮小でき、グループの順序は UI または API で変更できます。行選択を有効にすると、グループ化行セレクターがグループ行の一番左の領域に描画されます。`RowSelection` プロパティが単一に設定されている場合、チェックボックスは無効になり、選択が行われるグループの表示としてのみ機能します。`RowSelection` プロパティが複数に設定されている場合、グループ化行セレクターをクリックすると、このグループに属するすべてのレコードが選択されます。
 
 ## {Platform} Grid グループ化の例
 この例は、大量のデータのグループ化が可能であることを示しています。列ヘッダーを一番上 (グループ化領域) にドラッグすると、ユーザーは選択した列のデータを階層構造で表示できます。さらに列ヘッダーを一番上にドラッグすることで、複数のフィールドでグループ化できます。これらのグループ化オプションは、ユーザーが多数の行と列を持つテーブルがあり、はるかに高速で視覚的に受け入れられる方法でデータを表示ようとする場合に役立ちます。
 
 
-`sample="/{GridSample}/groupby-expressions", height="605", alt="{Platform} {ComponentTitle} グループ化の例"`
+`sample="/{GridSample}/groupby-expressions", height="605", alt="{Platform} {GridTitle} グループ化の例"`
 
 ## 初期のグループ化状態
 
@@ -449,7 +449,7 @@ igRegisterScript("GroupByRowSelectorTemplate", (ctx) => {
 ### {Platform} ページングによるグループ化の例
 
 
-`sample="/{GridSample}/groupby-paging", height="605", alt="{Platform} {ComponentTitle} ページングによるグループ化の例"`
+`sample="/{GridSample}/groupby-paging", height="605", alt="{Platform} {GridTitle} ページングによるグループ化の例"`
 
 ## 集計でグループ化
 
@@ -489,7 +489,7 @@ igRegisterScript("GroupByRowSelectorTemplate", (ctx) => {
 ### {Platform} カスタム グループ化の例
 
 
-`sample="/{GridSample}/groupby-custom", height="605", alt="{Platform} {ComponentTitle} カスタム グループ化の例"`
+`sample="/{GridSample}/groupby-custom", height="605", alt="{Platform} {GridTitle} カスタム グループ化の例"`
 
 このサンプルでは、さまざまな日付条件のカスタム ソートストラテジを定義しています。
 各カスタム ストラテジは `GroupingComparer` メソッドを定義します。値をソートするときに使用されるカスタム比較関数です。さらに、比較に必要な日付から値を抽出します。
@@ -587,7 +587,7 @@ function App() {
 
 ### デモ
 
-`sample="/{GridSample}/groupby-styling", height="605", alt="{Platform} {ComponentTitle} グループ化のスタイル設定の例"`
+`sample="/{GridSample}/groupby-styling", height="605", alt="{Platform} {GridTitle} グループ化のスタイル設定の例"`
 
 
 <!-- end: WebComponents, Blazor, React -->

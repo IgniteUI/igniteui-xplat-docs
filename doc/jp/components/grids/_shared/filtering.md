@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} フィルタリング
 
-{Platform} {ComponentTitle} {ProductName} のフィルタリングは、特定の基準または条件に基づいてデータを選択的に表示または非表示にする機能です。{Platform} {ComponentTitle} コンポーネントが豊富なフィルタリング API とすべてのフィルタリング機能を提供するバインドされたデータ コンテナがあります。ここで利用可能なフィルタリング タイプは次の 3 つです。
+{Platform} {ComponentTitle} の {ProductName} フィルタリングは、特定の基準または条件に基づいてデータを選択的に表示または非表示にする機能です。`{ComponentName}` コンポーネントが豊富なフィルタリング API とすべてのフィルタリング機能を提供するバインドされたデータ コンテナがあります。ここで利用可能なフィルタリング タイプは次の 3 つです。
 
 - クイック フィルタリング
 - [Excel スタイル フィルタリング](excel-style-filtering.md)

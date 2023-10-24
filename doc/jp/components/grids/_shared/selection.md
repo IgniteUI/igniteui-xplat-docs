@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 選択の概要
 
-{ProductName} の {Platform} {ComponentTitle} 選択機能を使用すると、単純なマウス操作を使用してデータを簡単に操作および操作できます。使用可能な選択モードは 3 つあります。
+{Platform} {ComponentTitle} の {ProductName} 選択機能を使用すると、単純なマウス操作を使用してデータを簡単に操作および操作できます。使用可能な選択モードは 3 つあります。
 
 - 行の選択
 - セルの選択
@@ -538,7 +538,7 @@ import 'core-js/es7/array';
 
 <!-- ComponentEnd: TreeGrid -->
 
-* `GridCell`
+* `Cell`
 
 ## その他のリソース
 

@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} のリモート データ操作
 <!-- Angular -->
-{Platform} {ComponentName} リモート データ {ProductName} は、リモート仮想化、リモート ソート、リモート フィルタリングなどのリモート データ操作をサポートします。これにより、開発者はこれらのタスクをサーバー上で実行し、生成されたデータを取得して `{ComponentName}` に表示できます。
+{Platform} {ComponentTitle} の {ProductName} リモート データ操作機能は、リモート仮想化、リモート ソート、リモート フィルタリングなどのリモート データ操作をサポートします。これにより、開発者はこれらのタスクをサーバー上で実行し、生成されたデータを取得して `{ComponentName}` に表示できます。
 
 ## {Platform} {ComponentTitle} リモート データ操作概要の例
 

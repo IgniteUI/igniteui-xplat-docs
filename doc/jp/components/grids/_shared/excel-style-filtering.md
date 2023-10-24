@@ -19,7 +19,7 @@ _language: ja
 
 ## 使用方法
 
-`Grid` コンポーネントの Excel スタイル フィルタリングをオンにするには、2 つの入力を設定します。`AllowFiltering` を **true** に設定し、`FilterMode` を `ExcelStyleFilter` に設定してください。
+`{ComponentName}` コンポーネントの Excel スタイル フィルタリングをオンにするには、2 つの入力を設定します。`AllowFiltering` を **true** に設定し、`FilterMode` を `ExcelStyleFilter` に設定してください。
 
 <!-- Angular -->
 ```html
@@ -1062,7 +1062,7 @@ $custom-drop-down: drop-down-theme(
 ## API リファレンス
 
 * `Column`
-* `Grid`
+* `{ComponentName}`
 
 ## その他のリソース
 
