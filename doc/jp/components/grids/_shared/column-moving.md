@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} の列の並べ替えと移動 - インフラジスティックス
+title: {Platform} {ComponentTitle} 列の並べ替えと移動 - {ProductName}
 _description: カスタム列順序を設定し、マウスのドラッグ/ドロップまたはタッチジェスチャ、または {Platform} Column Moving API を使用して列の並べ替えを有効にします。{ProductName} を今すぐお試しください。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -10,7 +10,7 @@ _language: ja
 
 # {ComponentTitle} の列の並べ替えと移動
 
-{ProductName} の `{ComponentName}` コンポーネントは、標準ドラッグ/ドロップのマウス/タッチによるジェスチャ、または列移動 API を使用した順序変更のための**列移動**機能を提供します。列の移動は、固定列と固定されていない列、および[複数列ヘッダー](multi-column-headers.md)の両方で機能します。列を固定領域に移動すると列が固定され、または逆に固定領域の外に列を移動すると、列の固定が解除されます。
+{Platform} {ComponentTitle} の {ProductName} 列移動機能を使用すると、列をすばやく簡単に並べ替えることができます。 これは、列移動 API を使用するか、マウスまたはタッチ ジェスチャを使用してヘッダーを別の位置にドラッグ アンド ドロップすることによって実行できます。{Platform} {ComponentTitle} では、ピン固定された列とピン固定されていない列、および[複数列ヘッダー](multi-column-headers.md)に対しても列の移動を有効にすることができます。
 
 > [!Note]
 > 列と列グループ間の順序変更は、それらが階層の同じレベルにあり、両方が同じグループにある場合にのみ許可されます。列/列グループが最上位の列である場合、列/列グループ間を移動できます。
@@ -46,6 +46,16 @@ public headerTemplate = (ctx: IgcCellTemplateContext) => {
 }
 ```
 
+```tsx
+function headerTemplate(ctx: IgrCellTemplateContext) {
+    return (
+    <>
+       <IgrIcon draggable="false" onClick={onClick}></IgrIcon>
+    </>
+    );
+}
+```
+
 ## {Platform} {ComponentTitle} 列移動概要の例
 
 `sample="/{ComponentSample}/column-moving-options", height="650", alt="{Platform} {ComponentTitle} 列移動概要の例"`
@@ -71,6 +81,12 @@ public headerTemplate = (ctx: IgcCellTemplateContext) => {
 <{ComponentSelector} moving="true"></{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} moving="true"></{ComponentSelector}>
+```
+<!-- end: React -->
 
 ## API
 
@@ -133,8 +149,8 @@ idColumn.move(3);
 <!-- WebComponents -->
 ```html
 <{ComponentSelector} id="dataGrid" auto-generate="false" moving="true">
-    <igc-column field="Category"></igx-column>
-    <igc-column field="Change On Year(%)" data-type="Number" ></igx-column>
+    <igc-column field="Category"></igc-column>
+    <igc-column field="Change On Year(%)" data-type="Number" ></igc-column>
 </{ComponentSelector}>
 ```
 ```typescript
@@ -145,8 +161,6 @@ constructor() {
 
 }
 ```
-<!-- end: WebComponents -->
-
 ```typescript
 public onColumnMovingEnd(event) {
     if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {
@@ -154,7 +168,20 @@ public onColumnMovingEnd(event) {
     }
 }
 ```
+<!-- end: WebComponents -->
 
+```tsx
+function onColumnMovingEnd(grid: IgrGridBaseDirective, event: IgrColumnMovingEventArgs) {
+   if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {
+        event.detail.cancel = true;
+    }
+}
+
+<{ComponentSelector} autoGenerate="false" moving="true" data={data} columnMovingEnd={onColumnMovingEnd}>
+    <IgrColumn field="Category"></IgrColumn>
+    <IgrColumn field="Change On Year(%)" dataType="Number" ></IgrColumn>
+</{ComponentSelector}>
+```
 ```razor
     <{ComponentSelector} ShowGroupArea="true" @ref='Grid' Width="100%" Height="100%"
              AllowFiltering=true
@@ -297,7 +324,7 @@ $dark-grid-column-moving-theme: grid-theme(
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 ## スタイル設定
 
 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
@@ -305,27 +332,31 @@ $dark-grid-column-moving-theme: grid-theme(
 色を変更したい場合は、最初にグリッドのクラスを設定する必要があります:
 
 ```html
-<igc-grid class="grid"></igc-grid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 次に、関連する CSS プロパティをこのクラスに設定します:
 
 ```css
 .grid {
-    --igx-grid-ghost-header-text-color: #f4d45c;
-    --igx-grid-ghost-header-background: #ad9d9d;
-    --igx-grid-ghost-header-icon-color: #f4d45c;
+    --ig-grid-ghost-header-text-color: #f4d45c;
+    --ig-grid-ghost-header-background: #ad9d9d;
+    --ig-grid-ghost-header-icon-color: #f4d45c;
 }
 ```
 ### デモ
 
 `sample="/{ComponentSample}/column-moving-styles", height="650", alt="{Platform} {ComponentTitle} Grid 移動のスタイル設定の例"`
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 ## API リファレンス
 

@@ -2,7 +2,7 @@
 title: {Platform} コンボボックス コンポーネント - {ProductName}
 _description: {Platform} Combo コンポーネントは、基本的な HTML 入力、選択、フィルタリング、およびカスタム ドロップダウン リストの機能を組み合わせた強力な入力を提供します。無料でお試しください。
 _keywords: {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, {Platform}, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} コンボボックス コンポーネント
-mentionedTypes: ['Combo']
+mentionedTypes: ['Combo', 'ComboItem', 'ComboHeader', 'ComboList']
 _language: ja
 ---
 
@@ -232,16 +232,16 @@ combo.deselect([cities[1], cities[5]]);
 
 コンボ コンポーネントがフォーカスされていて、オプションのリストが**表示されていない**場合:
 
-- <kbd>下矢印/Alt + 下矢印</kbd> キーを使用してオプションのリストを開きます。
+- <kbd>↓ / Alt</kbd> + <kbd>↓</kbd> キーを使用してオプションのリストを開きます。
 
 コンボ コンポーネントがフォーカスされ、オプションのリストが表示されている場合:
 
-- <kbd>下矢印</kbd> キーを使用すると、リスト内の次の項目がアクティブになります。
-- <kbd>上矢印</kbd> キーを使用すると、リスト内の前の項目がアクティブになります。最初の項目がすでにアクティブな場合、入力にフォーカスします。
+- <kbd>↓</kbd> キーを使用すると、リスト内の次の項目がアクティブになります。
+- <kbd>↑</kbd> キーを使用すると、リスト内の前の項目がアクティブになります。最初の項目がすでにアクティブな場合、入力にフォーカスします。
 - <kbd>Home</kbd> または <kbd>End</kbd> キーを使用すると、リストの最初または最後の項目がアクティブになります。
 - <kbd>Space</kbd> キーを使用すると、アクティブな項目が選択されます。
 - <kbd>Enter</kbd> キーを使用すると、アクティブな項目が選択され、オプションのリストが閉じます。
-- <kbd>Esc</kbd> または <kbd>Tab/Shift + Tab</kbd> キーを使用すると、オプションのリストが閉じます。
+- <kbd>Esc</kbd> または <kbd>Tab/Shift</kbd> + <kbd>Tab</kbd> キーを使用すると、オプションのリストが閉じます。
 
 ## コンボのスタイル設定
 
@@ -281,9 +281,6 @@ combo.deselect([cities[1], cities[5]]);
 ## API リファレンス
 
 * `Combo`
-* `ComboItem`
-* `ComboHeader`
-* `ComboList`
 
 ## その他のリソース
 

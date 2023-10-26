@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Summaries
 
-The {Platform} `{ComponentName}` has a **summaries** feature that functions on a per-column level as group footer. {Platform} grid summaries is powerful feature which enables the user to see column information in a separate container with a predefined set of default summary items, depending on the type of data within the column or by implementing a custom  template in the `{ComponentName}`.
+The {ProductName} Summaries feature in {Platform} {ComponentTitle} functions on a per-column level as group footer. {Platform} {ComponentName} summaries is powerful feature which enables the user to see column information in a separate container with a predefined set of default summary items, depending on the type of data within the column or by implementing a custom  template in the `{ComponentName}`.
 
 ## {Platform} {ComponentTitle} Summaries Overview Example
 
@@ -77,6 +77,17 @@ All available column data types could be found in the official [Column types top
 ```
 <!-- end: WebComponents -->
 
+```tsx
+<{ComponentSelector} autoGenerate="false" height="800px" width="800px">
+    <IgrColumn field="ProductID" header="Product ID" width="200px"  sortable="true">
+    </IgrColumn>
+    <IgrColumnn field="ProductName" header="Product Name" width="200px" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="ReorderLevel" width="200px" editable="true" dataType="number" hasSummary="true">
+    </IgrColumn>
+</{ComponentSelector}>
+```
+
 The other way to enable/disable summaries for a specific column or a list of columns is to use the public method `EnableSummaries`/`DisableSummaries` of the `{ComponentName}`.
 
 <!-- Angular -->
@@ -112,17 +123,14 @@ constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
     var enableBtn = this.enableBtn = document.getElementById('enableBtn') as HTMLButtonElement;
     var disableBtn = this.disableBtn = document.getElementById('disableBtn') as HTMLButtonElement;
-
-    this._bind = () => {
-        grid.data = this.data;
-        enableBtn.addEventListener("click", this.enableSummary);
-        disableBtn.addEventListener("click", this.disableSummary);
-    }
-    this._bind();
+    grid.data = this.data;
+    enableBtn.addEventListener("click", this.enableSummary);
+    disableBtn.addEventListener("click", this.disableSummary);
 }
 ```
 <!-- end: WebComponents -->
 
+<!-- Angular, WebComponents -->
 ```typescript
 public enableSummary() {
     this.grid.enableSummaries([
@@ -134,6 +142,7 @@ public disableSummary() {
     this.grid.disableSummaries(['ProductID']);
 }
 ```
+<!-- end: Angular, WebComponents -->
 
 <!-- TODO: EnableSummariesAsync not working so please add it to the code snippet when it got fixed. -->
 
@@ -154,7 +163,30 @@ public disableSummary() {
 }
 ```
 
+```tsx
+function enableSummary() {
+    gridRef.current.enableSummaries([
+        {fieldName: 'ReorderLevel'},
+        {fieldName: 'ProductID'}
+    ]);
+}
+function disableSummary() {
+    gridRef.current.disableSummaries(['ProductID']);
+}
 
+<{ComponentSelector} ref={gridRef} auto-generate="false" height="800px" width="800px">
+    <IgrColumn field="ProductID" header="Product ID" width="200px" sortable="true">
+    </IgrColumn>
+    <IgrColumn field="ProductName" header="Product Name" width="200px" sortable="true" hasSummary="true">
+    </IgrColumn>
+    <IgrColumn field="ReorderLevel" width="200px" editable="true" dataType="number" hasSummary="false">
+    </IgrColumn>
+</{ComponentSelector}>
+<button onClick={enableSummary}>Enable Summary</button>
+<button onClick={disableSummary}>Disable Summary </button>
+```
+
+<!-- Angular, WebComponents, Blazor -->
 ## Custom {ComponentTitle} Summaries
 
 If these functions do not fulfill your requirements you can provide a custom summary for the specific columns. 
@@ -165,6 +197,7 @@ In order to achieve this you have to override one of the base classes `SummaryOp
 
 <!-- end: WebComponents -->
 
+<!-- Angular -->
 ```typescript
 import { IgxSummaryResult, IgxSummaryOperand, IgxNumberSummaryOperand, IgxDateSummaryOperand } from 'igniteui-angular';
 
@@ -184,6 +217,8 @@ class MySummary extends IgxNumberSummaryOperand {
     }
 }
 ```
+<!-- end: Angular -->
+
 
 ```typescript
 import { IgcSummaryResult, IgcSummaryOperand, IgcNumberSummaryOperand, IgcDateSummaryOperand } from 'igniteui-webcomponents-grids';
@@ -297,12 +332,8 @@ And now let's add our custom summary to the column `UnitsInStock`. We will achie
 constructor() {
     var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
     var unitsInStock = this.unitsInStock = document.getElementById('unitsInStock') as IgcColumnComponent;
-
-    this._bind = () => {
-        grid1.data = this.data;
-        unitsInStock.summaries = this.mySummary;
-    }
-    this._bind();
+    grid1.data = this.data;
+    unitsInStock.summaries = this.mySummary;
 }
 ```
 <!-- end: WebComponents -->
@@ -390,6 +421,9 @@ class WebGridDiscontinuedSummary {
 
 <!-- end: Blazor -->
 
+<!-- end: Angular, WebComponents, Blazor -->
+
+
 ### Summary Template
 `Summary` targets the column summary providing as a context the column summary results.
 
@@ -409,11 +443,7 @@ class WebGridDiscontinuedSummary {
 ```ts
 constructor() {
     var column = this.column = document.getElementById('column') as IgcColumnComponent;
-
-    this._bind = () => {
-        column.summaryTemplate = this.summaryTemplate;
-    }
-    this._bind();
+    column.summaryTemplate = this.summaryTemplate;
 }
 
 public summaryTemplate = (ctx: IgcSummaryTemplateContext) => {
@@ -422,6 +452,19 @@ public summaryTemplate = (ctx: IgcSummaryTemplateContext) => {
         <span>${ ctx.implicit[0].label } - ${ ctx.implicit[0].summaryResult }</span>
     `;
 }
+```
+
+```tsx
+function summaryTemplate(ctx: IgrSummaryTemplateContext) {
+  return (
+    <>
+      <span>My custom summary template</span>
+      <span>{ctx.dataContext.implicit[0].label} - {ctx.dataContext.implicit[0].summaryResult}</span>
+    </>
+  );
+}
+
+<IgrColumn hasSummary="true" summaryTemplate={summaryTemplate}></IgrColumn>
 ```
 
 ```razor
@@ -445,9 +488,11 @@ When a default summary is defined, the height of the summary area is calculated 
 
 <!-- end: Angular -->
 
+<!-- Angular, WebComponents, React -->
 
 `sample="/{ComponentSample}/data-summary-template", height="650", alt="{Platform} {ComponentTitle} data summary template"`
 
+<!-- end: Angular, WebComponents, React -->
 
 <!-- Angular, WebComponents -->
 
@@ -487,11 +532,7 @@ public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOp
 ```ts
 constructor() {
     var column = this.column = document.getElementById('column') as IgcColumnComponent;
-
-    this._bind = () => {
-        column.summaryFormatter = this.dateSummaryFormat;
-    }
-    this._bind();
+    column.summaryFormatter = this.dateSummaryFormat;
 }
 ```
 
@@ -582,19 +623,24 @@ The summary rows can be navigated with the following keyboard interactions:
 - <kbd>CTRL</kbd> + <kbd>RIGHT</kbd> or <kbd>END</kbd> - navigates to the rightmost cell.
 
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 ## Styling
 
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
-```ts
-<igc-grid class="grid">
+```html
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid Class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid">
+</{ComponentSelector}>
 ```
 
 Then set the related CSS properties for that class:
@@ -613,7 +659,7 @@ Then set the related CSS properties for that class:
 `sample="/{ComponentSample}/groupby-summary-styling", height="710", alt="{Platform} {ComponentTitle} groupby summary styling"`
 
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- Angular -->
 ## Styling
