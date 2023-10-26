@@ -111,12 +111,26 @@ grid.moveColumn(idColumn, nameColumn, DropPosition.AfterDropTarget);
     }
 ```
 
+```tsx
+// Move the ID column after the Name column
+const idColumn = grid.getColumnByName("ID");
+const nameColumn = grid.getColumnByName("Name");
+
+gridref.current.moveColumn(idColumn, nameColumn, DropPosition.AfterDropTarget);
+```
+
 
 `Move` - Moves a column to a specified visible index. If the passed index parameter is invalid (is negative, or exceeds the number of columns), or if the column is not allowed to move to this index (if inside another group), no operation is performed.
 
 ```typescript
 // Move the ID column at 3rd position.
 const idColumn = grid.getColumnByName("ID");
+idColumn.move(3);
+```
+
+```tsx
+// Move the ID column at 3rd position.
+const idColumn = gridref.current.getColumnByName("ID");
 idColumn.move(3);
 ```
 
