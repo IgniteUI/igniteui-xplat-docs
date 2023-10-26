@@ -170,9 +170,25 @@ expectedData = [
 ];
 ```
 
+```tsx
+expectedData = [
+    { CompanyName: 'Infragistics' },
+    { Name: 'Michael Langdon' },
+    { ParentID: 147 }
+];
+```
+
 - If three cells from one column are selected:
 
 ```typescript
+expectedData = [
+    { Address: 'Obere Str. 57'},
+    { Address: 'Avda. de la Constitución 2222'},
+    { Address: 'Mataderos 2312'}
+];
+```
+
+```tsx
 expectedData = [
     { Address: 'Obere Str. 57'},
     { Address: 'Avda. de la Constitución 2222'},
@@ -188,9 +204,22 @@ expectedData = [
 ];
 ```
 
+```tsx
+expectedData = [
+    { Address: 'Avda. de la Constitución 2222', City: 'México D.F.', ContactTitle: 'Owner' }
+];
+```
+
 - If three cells are selected with mouse drag from two rows and three columns:
 
 ```typescript
+expectedData = [
+    { ContactTitle: 'Sales Agent', Address: 'Cerrito 333', City: 'Buenos Aires'},
+    { ContactTitle: 'Marketing Manager', Address: 'Sierras de Granada 9993', City: 'México D.F.'}
+];
+```
+
+```tsx
 expectedData = [
     { ContactTitle: 'Sales Agent', Address: 'Cerrito 333', City: 'Buenos Aires'},
     { ContactTitle: 'Marketing Manager', Address: 'Sierras de Granada 9993', City: 'México D.F.'}
@@ -208,9 +237,27 @@ expectedData = [
 ];
 ```
 
+```tsx
+expectedData = [
+    { ContactName: 'Martín Sommer', ContactTitle: 'Owner'},
+    { ContactName: 'Laurence Lebihan', ContactTitle: 'Owner'},
+    { Address: '23 Tsawassen Blvd.', City: 'Tsawassen'},
+    { Address: 'Fauntleroy Circus', City: 'London'}
+];
+```
+
 - If two overlapping ranges are selected, the format would be:
 
 ```typescript
+expectedData = [
+    { ContactName: 'Diego Roel', ContactTitle: 'Accounting Manager', Address: 'C/ Moralzarzal, 86'},
+    { ContactName: 'Martine Rancé', ContactTitle: 'Assistant Sales Agent', Address: '184, chaussée de Tournai', City: 'Lille'},
+    { ContactName: 'Maria Larsson', ContactTitle: 'Owner', Address: 'Åkergatan 24', City: 'Bräcke'},
+    { ContactTitle: 'Marketing Manager', Address: 'Berliner Platz 43', City: 'München'}
+];
+```
+
+```tsx
 expectedData = [
     { ContactName: 'Diego Roel', ContactTitle: 'Accounting Manager', Address: 'C/ Moralzarzal, 86'},
     { ContactName: 'Martine Rancé', ContactTitle: 'Assistant Sales Agent', Address: '184, chaussée de Tournai', City: 'Lille'},
