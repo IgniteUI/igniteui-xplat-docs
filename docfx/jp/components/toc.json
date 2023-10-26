@@ -641,7 +641,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "クリップボードの操作",
         "href": "grids/tree-grid/clipboard-interactions.md",
         "status": "NEW"
