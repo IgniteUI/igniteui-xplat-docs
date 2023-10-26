@@ -10,6 +10,15 @@ namespace: Infragistics.Controls.Charts
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
+## **{PackageVerChanges-23-2}**
+
+### 新しいコンポーネント
+
+* [Grid](grids/data-grid.md) - これは新しい完全に機能するクロスプラットフォーム グリッドで、フィルタリング、ソート、テンプレート、行の選択、行のグループ化、行のピン固定、移動可能な列などの機能が含まれています。
+
+### 非推奨のコンポーネント
+> [DataGrid](grids/data-grid/overview.md) - DataGrid は非推奨です。[Grid](grids/data-grid.md) を参照してください。
+
 ## **{PackageVerChanges-23-1}**
 
 ### 新しいコンポーネント
