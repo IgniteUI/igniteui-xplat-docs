@@ -8,9 +8,9 @@ namespace: Infragistics.Controls
 _language: ja
 ---
 
-# {Platform} {ComponentTitle} Excel へのエクスポート サービス
+# {Platform} {ComponentTitle} Export to Excel サービス
 
-Excel Exporter サービスは `{ComponentName}` のデータを MS Excel へエクスポートできます。エクスポート機能は、`ExcelExporterService` クラスでカプセル化され、MS Excel テーブル形式でデータをエクスポートします。この形式ではフィルタリングやソートなどの機能が使用でき、`ExcelExporterService` の `Export` メソッドを呼び出して最初の引数として {ComponentTitle} コンポーネントを渡し、グリッドを簡単にエクスポートします。
+{Platform} {ComponentTitle} の {ProductName} Export to Excel サービスは、データを Excel へエクスポートできます。エクスポート機能は、`ExcelExporterService` クラスでカプセル化され、MS Excel テーブル形式でデータをエクスポートします。この形式ではフィルタリングやソートなどの機能が使用でき、`ExcelExporterService` の `Export` メソッドを呼び出して最初の引数として `{ComponentName}` コンポーネントを渡し、グリッドを簡単にエクスポートします。
 
 ## {Platform} Excel Exporter の例
 

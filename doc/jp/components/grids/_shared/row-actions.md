@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} の行操作
 
-{ProductName} の `{ComponentName}` コンポーネントは、`ActionStrip` を使用し、行/セルコンポーネントおよび行のピン固定に CRUD を使用する機能を提供します。アクション ストリップ コンポーネントは、これらの操作用に事前定義された UI コントロールをホストできます。
+{Platform} {ComponentTitle} の {ProductName} 行操作機能を使用すると、開発者は `АctionStrip` を使用し、行/セル コンポーネントと行のピン固定に CRUD を利用できます。これらの操作 (編集とピン固定) には、`{ComponentName}` の特定の行に適用できる事前定義された UI コントロールがいくつかあります。
 
 ## 使用方法
 

@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} の行選択 - インフラジスティックス
+title: 	{Platform} {ComponentTitle} 行の選択 - {ProductName}
 _description: {Platform} {ComponentTitle} は、{ComponentTitle} 一括編集を使用して、基になるデータに影響を与えずにデータ操作を実行します。デモと例をお試しください。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -10,7 +10,10 @@ _language: ja
 
 # {Platform} {ComponentTitle} 行の選択
 
-{Platform} `{ComponentName}` の行選択では、行内の他のすべての列に先行する行セレクター列があります。行選択ボックスをクリックすると、行の選択や選択解除、複数行にわたるデータの選択が可能になります。
+{Platform} {ComponentTitle} の {ProductName} 行選択機能を使用すると、ユーザーは 1 つまたは複数のデータ行を対話的に選択、強調表示、または選択解除できます。`{ComponentName}` 内に使用可能な選択モードがいくつかあります。
+- None (なし) 選択
+- Multiple (複数) 選択
+- Single (単一) 選択
 
 ## {Platform} 行選択の例
 

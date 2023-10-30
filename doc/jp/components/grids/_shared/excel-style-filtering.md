@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} for {ProductName} の Excel スタイル フィルタリング
+title: {Platform} {ComponentTitle} Excel スタイル フィルタリング - {ProductName}
 _description: {Platform} {ComponentTitle} で Excel フィルタリングを構成する方法を説明します。さまざまなオプションを有効/無効にし、Excel スタイル フィルター メニューを自由にカスタマイズできます。
 _keywords: excel like filter, {Platform}, {ProductName}, Infragistics, excel のようなフィルター, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} の Excel スタイル フィルタリング
 
-{Platform} `{ComponentName}` は、Excel のようなフィルタリング UI を提供する Excel スタイルのフィルタリング機能を公開します。
+{Platform} {ComponentTitle} は、Excel のようなフィルタリング UI を提供する Excel スタイルのフィルタリング機能を公開します。これにより、大規模なデータセットを操作するプロセスが簡素化されます。主なアイデアは、無関係なエントリを排除しながら、最も関連性の高いデータをフィルタリングできるようにすることです。
 
 ## {Platform} {ComponentTitle} Excel スタイル フィルタリングの例
 
@@ -19,7 +19,7 @@ _language: ja
 
 ## 使用方法
 
-`Grid` コンポーネントの Excel スタイル フィルタリングをオンにするには、2 つの入力を設定します。`AllowFiltering` を **true** に設定し、`FilterMode` を `ExcelStyleFilter` に設定してください。
+`{ComponentName}` コンポーネントの Excel スタイル フィルタリングをオンにするには、2 つの入力を設定します。`AllowFiltering` を **true** に設定し、`FilterMode` を `ExcelStyleFilter` に設定してください。
 
 <!-- Angular -->
 ```html
@@ -1062,7 +1062,7 @@ $custom-drop-down: drop-down-theme(
 ## API リファレンス
 
 * `Column`
-* `Grid`
+* `{ComponentName}`
 
 ## その他のリソース
 

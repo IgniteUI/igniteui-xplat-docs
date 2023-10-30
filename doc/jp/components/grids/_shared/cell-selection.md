@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} でのセル選択 - インフラジスティックス
+title: {Platform} {ComponentTitle} セルの選択 - {ProductName}
 _description: さまざまなイベント、豊富な API、またはマウス操作を使用してセル データ選択を簡単に実行できます。{ComponentTitle} はセル選択で 3 つのモードをサポートします。今すぐお試しください。
 _keywords: data select, igniteui for {Platform}, infragistics, データ選択, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -10,7 +10,11 @@ _language: ja
 
 # {Platform} セルの選択
 
-選択機能により、{ProductName} `{ComponentName}` で豊富なデータ選択機能が有効になります。強力な API と使いやすいメソッドのおかげで、さまざまなイベントと単一の選択アクションを利用できます。`{ComponentName}` は、セル選択の 3 つのモードをサポートしています。`CellSelection` プロパティを変更することで、それらを簡単に切り替えることができます。セルの選択を無効にするか、グリッド内の 1 つのセルのみを選択するか、グリッド内の複数のセルを選択することができます。これはデフォルトのオプションとして提供されています。
+{Platform} {ComponentTitle} の {ProductName} セル選択により、豊富なデータ選択機能が有効になり、グリッド コンポーネントで強力な API が提供されます。 {Platform} {ComponentTitle} は、次の 3 つの選択モードをサポートしています。
+
+- {ComponentTitle} 複数セルの選択
+- {ComponentTitle} 単一選択
+- {ComponentTitle} 選択なし
 
 <!-- ComponentStart: HierarchicalGrid -->
 `{ComponentName}` では、グリッド レベルでセル選択モードを指定できます。たとえば、親グリッドではマルチセル選択を有効にできますが、子グリッドではセル選択モードを単一または無効にすることができます。

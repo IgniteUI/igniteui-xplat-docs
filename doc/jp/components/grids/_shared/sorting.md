@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} ソート
 
-{Platform} `{ComponentName}` では、列レベルでのデータ ソートが可能です。つまり、`{ComponentName}` にソート可能な列とソート不可の列の両方を持つことができます。{Platform} でソートを実行すると、指定した条件に基づいてレコードの表示順序を変更できます。
+{Platform} {ComponentTitle} の {ProductName} データ ソート機能は列ごとのレベルで有効になっています。つまり、`{ComponentName}` にはソート可能な列とソート不可能な列を混在させることができます。{Platform} でソートを実行すると、指定した条件に基づいてレコードの表示順序を変更できます。
 
 <!-- Angular -->
 
