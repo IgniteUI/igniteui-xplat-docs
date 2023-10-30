@@ -1,5 +1,5 @@
 ---
-title: {Platform} Grid 表示密度 - {ProductName}
+title: {Platform} {ComponentTitle} 表示密度 - {ProductName}
 _description: {ComponentTitle} コンポーネントに表示密度機能を適用する方法を説明します。{ProductName} のコンパクト ビュー オプションのセットを使用できます。
 _keywords: material density, {Platform}, {ProductName}, Infragistics, マテリアル密度, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -10,7 +10,11 @@ _language: ja
 
 # {Platform} {ComponentTitle} 表示密度
 
-{Platform} `{ComponentName}` デザインは[マテリアル デザイン ガイドライン](https://material.io/design)に基づきます。現在、cosy、comfortable、compact ビューで表示するための定義済みの[密度](https://material.io/design/layout/applying-density.html)オプションを提供しています。マテリアル UI テーブル/マテリアル UI グリッドに適切な密度を選択することで、量の多いコンテンツを操作する際のユーザー エクスペリエンスを飛躍的に向上させることができます。
+{Platform} {ComponentTitle} の {ProductName} 表示密度を使用すると、ユーザーは `{ComponentName}` 内のデータの間隔とレイアウトを制御できます。[密度](https://material.io/design/layout/applying-density.html)を変更することで、大量のコンテンツを操作するときのユーザー エクスペリエンスを大幅に向上させることができます。次の 3 つの表示密度オプションから選択できます。
+
+- Cozy
+- Comfortable
+- Compact
 
 ## {Platform} {ComponentTitle} 表示密度の例
 

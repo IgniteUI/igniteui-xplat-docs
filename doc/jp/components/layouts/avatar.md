@@ -95,7 +95,7 @@ defineComponents(IgcAvatarComponent);
 
 ```tsx
 <IgrAvatar>
-    <IgrIcon iconName="home" />
+    <IgrIcon name="home" />
 </IgrAvatar>
 ```
 
@@ -119,7 +119,7 @@ defineComponents(IgcAvatarComponent);
 
 ```tsx
 <IgrAvatar initials="AZ">
-    <IgrIcon iconName="home" />
+    <IgrIcon name="home" />
 </IgrAvatar>
 ```
 
@@ -152,7 +152,7 @@ defineComponents(IgcAvatarComponent);
 <IgrAvatar initials="AZ"
            src="https://static.infragistics.com/xplatform/images/people/men/1.jpg"
            alt="A photo of a man.">
-    <IgrIcon iconName="home" />
+    <IgrIcon name="home" />
 </IgrAvatar>
 ```
 

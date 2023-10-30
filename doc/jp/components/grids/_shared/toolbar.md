@@ -10,14 +10,14 @@ _language: ja
 
 # {Platform} {ComponentTitle} ツールバー
 
-{ProductName} の `{ComponentName}` は、**UI** 操作のコンテナとなる `GridToolbar` 機能をサポートします。{Platform} ツールバーは {Platform} コンポーネントの一番上、つまり `{ComponentName}` にあり、水平方向のサイズと一致します。ツールバー コンテナは、次の `{ComponentName}` の機能、またはその他のカスタム コンテンツ用に事前定義された UI コントロールをホストできます:
+{ProductName} ツールバーは、{Platform} {ComponentTitle} の UI 操作用のコンテナーです。{Platform} ツールバーは {Platform} コンポーネントの一番上、つまり `{ComponentName}` にあり、水平方向のサイズと一致します。ツールバー コンテナーは、任意のカスタム コンテンツまたは事前定義された UI コントロールのセットをホストできます。{Platform} {ComponentTitle} のデフォルト セットには次のものが含まれます。 
 
  - 列の非表示
  - 列のピン固定
  - Excel エクスポート
  - 高度なフィルタリング
 
-または他のカスタム コンテンツもホストできます。ツールバーと事前定義された UI コンポーネントは、{Platform} イベントをサポートし、開発者向けに API を公開します。
+ツールバーと事前定義された UI コンポーネントは、{Platform} イベントをサポートし、開発者向けに API を公開します。
 
 ## {Platform} ツールバー グリッドの例
 

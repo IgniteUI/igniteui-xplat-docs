@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Selection Overview
 
-With the {Platform} {ComponentTitle} Select feature in {ProductName} you can easily interact with and manipulate data using simple mouse interactions. There are three selection modes available: 
+With the {ProductName} Select feature in {Platform} {ComponentTitle} you can easily interact with and manipulate data using simple mouse interactions. There are three selection modes available: 
 
 - Row selection
 - Cell selection 
@@ -537,7 +537,7 @@ When the grid has no `PrimaryKey` set and remote data scenarios are enabled (whe
 
 <!-- ComponentEnd: TreeGrid -->
 
-* `GridCell`
+* `Cell`
 
 ## Additional Resources
 

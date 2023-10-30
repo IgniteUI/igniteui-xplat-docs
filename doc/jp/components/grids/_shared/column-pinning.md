@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 列ピン固定
 
-{ProductName} の**列ピン固定**は、ユーザーが特定の列順序で列をロックすることを可能にし、`{ComponentName}` での水平スクロール時にロックされた列が常に表示されます。{Platform} {ComponentTitle} には組み込みの列ピン固定 UI があり、`{ComponentName}` のツールバーで列の表示状態を変更できます。その他、カスタム UI を定義し、Column Pinning 機能を介して列のピン固定状態を変更できます。
+{Platform} を使用すると、開発者は列のピン固定機能を利用して特定の列を希望の順序でロックできるため、ユーザーが {Platform} の {ComponentTitle} を水平方向にスクロールしても常に可視性を確保できます。列ピン固定用の統合 UI があり、{Platform} {ComponentTitle} ツールバーからアクセスできます。さらに、開発者はカスタム ユーザー インターフェイスを構築し、列のピン固定状態を変更できる柔軟性を備えています。
 
 ## {Platform} {ComponentTitle} 列ピン固定の例
 

@@ -720,7 +720,7 @@ function updateValue(event, value) {
 }
 ```
 
-テンプレートで使用可能なプロパティの詳細については、`GridCell` の API を参照してください。
+テンプレートで使用可能なプロパティの詳細については、`Cell` の API を参照してください。
 
 ### 列テンプレート API
 

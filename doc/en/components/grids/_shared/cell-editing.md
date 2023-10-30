@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Cell Editing
 
-The {Platform} {ComponentTitle} Cell Editing feature in {ProductName} provides a great data manipulation capability of the content of individual cells within the {Platform} {ComponentTitle} component and comes with powerful API for React CRUD operations. It is a fundamental feature in apps like spreadsheets, data tables, and data grids, allowing users to add, edit, or update data within specific cells.
+The {ProductName} Cell Editing in {Platform} {ComponentTitle} provides a great data manipulation capability of the content of individual cells within the {Platform} {ComponentTitle} component and comes with powerful API for React CRUD operations. It is a fundamental feature in apps like spreadsheets, data tables, and data grids, allowing users to add, edit, or update data within specific cells.
 By default, the Grid in {ProductName} is used in cell editing. And due to the **default cell editing template**, there will be different editors based on the column data type Top of Form.
 
 In addition, you can define your own custom templates for update-data actions and to override the default behavior for committing and discarding any changes.
@@ -113,7 +113,7 @@ this.hierarchicalGrid.UpdateCell(newValue, rowID, 'ReorderLevel')
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-Another way to update cell is directly through `Update` method of `GridCell`:
+Another way to update cell is directly through `Update` method of `Cell`:
 
 <!-- ComponentStart: Grid -->
 
@@ -1072,7 +1072,7 @@ In addition to the steps above, we can also style the controls that are used for
 * `TreeGridRow`
 
 <!-- ComponentEnd: TreeGrid -->
-* `GridCell`
+* `Cell`
 <!-- Angular -->
 * `InputDirective`
 <!-- end:Angular -->
