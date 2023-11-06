@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} のリモート データ操作 - インフラジスティックス
+title: {Platform} {ComponentTitle} リモート データ操作 - {ProductName}
 _description: リモート フィルタリング、リモートソート、リモート スクロールなどの Angular リモート データ操作を使用して、{ProductName} のサーバーからデータをロードします。
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Remote Data, Paging, {Platform}, {ComponentKeywords}, {ProductName}, ページング, リモート データ, インフラジスティックス
@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} のリモート データ操作
 <!-- Angular -->
-{ProductName} `{ComponentName}` は、リモート仮想化、リモート ソート、リモート フィルタリングなどのリモート データ操作をサポートします。これにより、開発者はこれらのタスクをサーバー上で実行し、生成されたデータを取得して `{ComponentName}` に表示できます。
+{Platform} {ComponentTitle} の {ProductName} リモート データ操作機能は、リモート仮想化、リモート ソート、リモート フィルタリングなどのリモート データ操作をサポートします。これにより、開発者はこれらのタスクをサーバー上で実行し、生成されたデータを取得して `{ComponentName}` に表示できます。
 
 ## {Platform} {ComponentTitle} リモート データ操作概要の例
 

@@ -9,7 +9,10 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Editing
 
-The {ProductName} `{ComponentName}` component provides an easy way to perform data manipulation operations like creating, updating, and deleting records. The data manipulation phases are: [Cell Editing](cell-editing.md), [Row Editing](row-editing.md), and Batch Editing (Coming Soon). The `{ComponentName}` gives you a powerful public API which allows you to customize the way these operations are performed.
+The {ProductName} Cell Editing feature in {Platform} {ComponentTitle} provides an easy way to perform data manipulation operations like creating, updating, and deleting records. The `{ComponentName}` provides you with a powerful public API which allows you to customize the way these operations are performed. The data manipulation phases are: 
+- [Cell Editing](cell-editing.md)
+- [Row Editing](row-editing.md)
+- Batch Editing (Coming Soon) 
 
 <!-- Angular -->
 

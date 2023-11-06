@@ -147,6 +147,6 @@ Additional API methods for controlling the expansion states are also exposed:
 * `Grid`
 * `Column`
 * `GridRow`
-* `GridCell`
+* `Cell`
 * `TreeGridRow`
 * `HierarchicalGridRow`

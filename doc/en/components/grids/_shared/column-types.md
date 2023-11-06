@@ -1,5 +1,5 @@
 ---
-title: Column Data Types in {Platform} for {ProductName}
+title: {Platform} {ComponentTitle} Column Data Types - {ProductName}
 _description: Handle cell and editing templates in {Platform} by choosing from several predefined column data types - number, string, date, boolean, currency and percent column.
 _keywords: Column Data Type , {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Column Types Overview
 
-{ProductName} `{ComponentName}` provides a default handling of *number*, *string*, *date*, *boolean*, *currency* and *percent* column data types, based on which the appearance of the default and editing templates will be present.
+The {Platform} {ComponentTitle} provides a default handling of *number*, *string*, *date*, *boolean*, *currency* and *percent* column data types, based on which the appearance of the default and editing templates will be present.
 
 <!-- ComponentStart: Grid -->
 
@@ -623,7 +623,7 @@ public init(column: IgxColumnComponent) {
 
 ## API References
 
-* `GridCell`
+* `Cell`
 * `Column`
 * `PipeArgs`
 * `{ComponentName}`

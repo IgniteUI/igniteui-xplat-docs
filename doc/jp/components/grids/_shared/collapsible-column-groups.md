@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} の縮小可能な列グループ - インフラジスティックス
+title: {Platform} {ComponentTitle} 縮小可能な列グループ - {ProductName}
 _description: {Platform} {ComponentTitle} の縮小可能な列グループを使用して、より小さく簡潔なデータのセットを表示/非表示にする機能を利用します。今すぐお試しください。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,11 +9,11 @@ _language: ja
 ---
 # {Platform} {ComponentTitle} の縮小可能な列グループの概要
 
-複数列ヘッダーを使用すると、複数レベルのネストされた列と列グループを使用できます。また、各列グループを**縮小可能**としてマークできます。**縮小可能な複数列ヘッダー**により、縮小/展開が可能です。現在のヘッダーの下にネストされたヘッダーを表示および非表示にします。これにより、たとえば短縮/要約された情報が得られます。
+{Platform} {ComponentTitle} の {ProductName} の縮小可能な列グループ機能を使用すると、`{ComponentName}` 内の複数レベルのネストされた列と列グループをグループ化し、これらのグループを縮小したり展開したりしてデータの視覚化とナビゲーションを向上させるオプションを提供することで、それらを整理および管理できます。
 
 ## {Platform} {ComponentTitle} の縮小可能な列グループの例
 
-`sample="/{ComponentSample}/multi-column-header-template", height="600", alt="{Platform} {ComponentTitle} の縮小可能な列グループの例"`
+`sample="/{ComponentSample}/column-collapsible-groups", height="600", alt="{Platform} {ComponentTitle} の縮小可能な列グループの例"`
 
 
 
@@ -35,9 +35,16 @@ ng add igniteui-angular
 
 <!-- WebComponents -->
 ```cmd
-npm install @webcomponents/custom-elements
+npm install --save igniteui-webcomponents-core
+npm install --save igniteui-webcomponents-grids
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```cmd
+npm install igniteui-react-grids
+```
+<!-- end: React -->
 
 {ProductName} については、[はじめに](../../general-getting-started.md) トピックををご覧ください。
 
@@ -106,6 +113,31 @@ npm install @webcomponents/custom-elements
 </igc-column-group>
 ```
 
+```tsx
+<IgrColumnGroup collapsible="true" header="Customer Information">
+    <IgrColumn field="CustomerName" header="Customer Name" visibleWhenCollapsed="true">
+    </IgrColumn>
+    <IgrColumn field="CustomerID" header="Customer ID" visibleWhenCollapsed="false">
+    </IgrColumn>
+    <IgrColumn field="CustomerFirstName" header="First Name" visibleWhenCollapsed="false">
+    </IgrColumn>
+    <IgrColumn field="CustomerLastName" header="Last Name" visibleWhenCollapsed="false">
+    </IgrColumn>
+    <IgrColumnGroup header="Customer Address">
+        <IgrColumn field="CustomerAddress"  header="Full Address" width="250px" visibleWhenCollapsed="true">
+        </IgrColumn>
+        <IgrColumn field="Address" visibleWhenCollapsed="false">
+        </IgrColumn>
+        <IgrColumn  field="City" visibleWhenCollapsed="false">
+        </IgrColumn>
+        <IgrColumn field="Country" visibleWhenCollapsed="false">
+        </IgrColumn>
+        <IgrColumn field="PostalCode" header="Postal Code" visibleWhenCollapsed="false">
+        </IgrColumn>
+    </IgrColumnGroup>
+</IgrColumnGroup>
+```
+
 すべての子列に 3 つの状態があります。
 -	親の展開状態に関係なく、常に表示できます。
 -	親が縮小されているときに表示できます。
@@ -113,7 +145,7 @@ npm install @webcomponents/custom-elements
 
 縮小可能として指定された列グループの初期状態は `Expanded` が **true** に設定されていますが、**false** に設定することでこの動作を簡単に変更できます。
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 ## 展開/縮小インジケーター テンプレート
 
 `{ComponentName}` のデフォルトの展開インジケーターは次のとおりです。
@@ -171,12 +203,8 @@ npm install @webcomponents/custom-elements
 constructor() {
     var info = document.getElementById('info') as IgcColumnGroupComponent;
     var address = document.getElementById('address') as IgcColumnGroupComponent;
-
-    this._bind = () => {
-        info.collapsibleIndicatorTemplate = this.indTemplate;
-        address.collapsibleIndicatorTemplate = this.indTemplate;
-    }
-    this._bind();
+    info.collapsibleIndicatorTemplate = this.indTemplate;
+    address.collapsibleIndicatorTemplate = this.indTemplate;
 }
 
 public indTemplate = (ctx: IgcColumnTemplateContext) => {
@@ -185,7 +213,17 @@ public indTemplate = (ctx: IgcColumnTemplateContext) => {
     `;
 }
 ```
-<!-- end: Angular, WebComponents -->
+
+```tsx
+  function collapsibleIndicatorTemplate(e: { dataContext: IgrColumnTemplateContext }) {
+    return (
+    <div>
+      <IgrIcon iconName={e.dataContext.column.expanded ? 'remove' : 'add'}></IgrIcon>
+    </div>)
+  }
+```
+
+<!-- end: Angular, WebComponents, React -->
 <!-- Angular -->
 
 ### プロパティの使用
