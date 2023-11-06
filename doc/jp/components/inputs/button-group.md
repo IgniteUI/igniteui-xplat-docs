@@ -3,11 +3,12 @@ title: {Platform} ボタン グループ コンポーネント | {ProductName}
 _description: {Platform} ボタン グループ コンポーネント - {Platform} 一連のトグル ボタンを使用して、レイアウトや選択などの機能を公開します。
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Button Group Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, {Platform} ボタン グループ コンポーネント, インフラジスティックス
 mentionedTypes: ['ToggleButton', 'ButtonGroup']
+_language: ja
 ---
 
 # {Platform} Button Group (ボタン グループ) の概要
 
-{Platform} Button Group コンポーネントは、`ToggleButtons` を、水平 / 垂直配置、単一 / 複数選択、切り替えを備えたスタイル付きボタン グループに編成するために使用されます。
+{Platform} Button Group コンポーネントは、`ToggleButton` を、水平 / 垂直配置、単一 / 複数選択、切り替えを備えたスタイル付きボタン グループに編成するために使用されます。
 
 ## {Platform} ボタンの例
 
@@ -34,7 +35,7 @@ defineComponents(IgcButtonGroupComponent);
 
 {ProductName} ボタン グループがインポートされたので、`ButtonGroup` とそのボタンの基本構成を開始できます。
 
-`ButtonGroup` セレクターを使用して、`ToggleButtons` をラップし、ボタン グループに表示します。デフォルトでボタンを選択したい場合、`selected` 属性を使用します。
+`ButtonGroup` セレクターを使用して、`ToggleButton` をラップし、ボタン グループに表示します。デフォルトでボタンを選択したい場合、`selected` 属性を使用します。
 
 ```html
  <igc-button-group>
@@ -70,7 +71,7 @@ defineComponents(IgcButtonGroupComponent);
 ### 選択
 {ProductName} `ButtonGroup` の選択を構成するには、その `selection` プロパティを使用できます。このプロパティは、次の 3 つのモードを受け入れます: 
 - **single** - ボタン グループのデフォルトの選択モードです。ユーザーは単一のボタンを選択/選択解除できます。
-- **singleRequired** - ラジオ グループの動作を模倣します。選択できるボタンは 1 つだけであり、最初に選択すると、ユーザーの操作を通じて選択を解除することはできません。
+- **single-required** - ラジオ グループの動作を模倣します。選択できるボタンは 1 つだけであり、最初に選択すると、ユーザーの操作を通じて選択を解除することはできません。
 - **multiple** - グループ内の複数のボタンを選択または選択解除できます。
 
 以下のサンプルは、公開された `ButtonGroup` 選択モードを示しています。
@@ -108,7 +109,7 @@ defineComponents(IgcButtonGroupComponent);
 ## スタイル設定
 
 `ButtonGroup` コンポーネントは、ボタン グループ コンテナーのスタイルを設定できる `group` CSS パーツを公開します。 
-また、`ToggleButtons` は、ボタン要素のスタイルを設定するために使用できる `toggle` CSS パーツを提供します。
+また、`ToggleButton` は、ボタン要素のスタイルを設定するために使用できる `toggle` CSS パーツを提供します。
 
 `sample="/inputs/button-group/styling", height="200", alt="{Platform} Button Group スタイル設定の例"`
 
