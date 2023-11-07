@@ -35,7 +35,7 @@ ig new "My Project" --framework=react --type=igr-ts
 ```
 
 > [!Note]
-TypeScript support is available from Ignite UI CLI version xx.xx.xx.
+TypeScript support will be available starting from Ignite UI CLI version 13.
 
 <!-- end: React -->
 
