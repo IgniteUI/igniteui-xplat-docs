@@ -312,7 +312,6 @@ npm run build
 <!-- end: WebComponents -->
 
 <!-- Angular, React -->
-# Getting Started With {ProductName}
 
 ## Updating Existing App
 
