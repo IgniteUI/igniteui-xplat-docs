@@ -342,6 +342,43 @@ public webGridCellEditCellTemplate = (ctx: IgcCellTemplateContext) => {
     }
 
 ```
+
+<!-- ComponentStart: TreeGrid -->
+```ts
+
+constructor() {
+        var treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
+        var column1 = document.getElementById('column1') as IgcColumnComponent;
+        var column2 = document.getElementById('column2') as IgcColumnComponent;
+        var column3 = document.getElementById('column3') as IgcColumnComponent;
+
+        treeGrid.data = this.webGridCellEditSampleRoleplay;
+        column1.inlineEditorTemplate = this.webGridCellEditCellTemplate;
+        column2.inlineEditorTemplate = this.webGridCellEditCellTemplate;
+        column3.inlineEditorTemplate = this.webGridCellEditCellTemplate;
+}
+
+
+public webGridCellEditCellTemplate = (ctx: IgcCellTemplateContext) => {
+        let cellValues: any = [];
+        let uniqueValues: any = [];
+        for(const i of (this.webGridCellEditSampleRoleplay as any)){
+            const field: string = ctx.cell.column.field;
+            if(uniqueValues.indexOf(i[field]) === -1 )
+            {
+                cellValues.push(html`<igc-select-item value=${i[field]}>${(i[field])}</igc-select-item>`);
+                uniqueValues.push(i[field]);
+            }
+        }
+        return html`
+        <igc-select style="width:100%; height:100%" size="large" @igcChange=${(e: any) => ctx.cell.editValue = e.detail.value}>
+              ${cellValues}
+        </igc-select>
+        `;
+}
+```
+<!-- ComponentEnd: TreeGrid -->
+
 Working sample of the above can be found here for further referencee: 
 
 `sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
