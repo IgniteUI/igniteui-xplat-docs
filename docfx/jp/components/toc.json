@@ -831,6 +831,12 @@
         "name": "仮想化とパフォーマンス",
         "href": "grids/tree-grid/virtualization.md",
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "Blazor"],
+        "name": "Load On Demand",
+        "href": "grids/tree-grid/load-on-demand.md",
+        "status": "NEW"
       }
     ]
   },
