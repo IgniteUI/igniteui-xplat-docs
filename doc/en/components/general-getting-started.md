@@ -51,6 +51,10 @@ yarn create react-app my-app-name --typescript
 
 Depending on the approach `npx` or `yarn` will be required. Refer to this <a href="https://facebook.github.io/create-react-app/docs/adding-typescript" target="_blank">website</a> for more information on above commands.
 
+```cmd
+cd my-app-name
+```
+
 <!-- end: React -->
 
 <!-- WebComponents -->
@@ -318,12 +322,14 @@ npm run build
 If you want to use {ProductName} in an existing {Platform} CLI project (one that you have from before). We have you covered! All you have to do is execute these commands:
 
 ```cmd
+npm install --save {PackageCommon}
 npm install --save {PackageCharts} {PackageCore}
 npm install --save {PackageExcel} {PackageCore}
 npm install --save {PackageGauges} {PackageCore}
 npm install --save {PackageGrids} {PackageCore}
 npm install --save {PackageMaps} {PackageCore}
 npm install --save {PackageSpreadsheet} {PackageCore}
+npm install --save {PackageComponents}
 ```
 
 Or
@@ -352,12 +358,16 @@ builder.Services.AddIgniteUIBlazor(
 ```
 
 ```ts
-import { IgrGeographicMapModule } from 'igniteui-react-maps';
-import { IgrGeographicMap } from 'igniteui-react-maps';
+import { IgrGeographicMapModule, IgrGeographicMap } from 'igniteui-react-maps';
 import { IgrDataChartInteractivityModule } from 'igniteui-react-charts';
+import { IgrGridModule, IgrGrid } from 'igniteui-react-grids';
+
+import 'igniteui-react-grids/grids/combined';
+import 'igniteui-react-grids/grids/themes/light/bootstrap.css';
 
 IgrGeographicMapModule.register();
 IgrDataChartInteractivityModule.register();
+IgrGridModule.register();
 ```
 
 ```ts
@@ -381,10 +391,8 @@ We are now ready to use the {ProductName} map component in our markup! Let's go 
 function App() {
   return (
     <div style={{ height: "100%", width: "100%" }}>
-      <IgrGeographicMap
-        width="800px"
-        height="500px"
-        zoomable="true" />
+      <IgrGrid id="grid1" data={localData} autoGenerate="true" />
+      <IgrGeographicMap width="800px" height="500px" zoomable="true" />
     </div>
   );
 }
@@ -412,7 +420,7 @@ After executing this command, your project will be built and served locally on y
 
 The final result should look something like this screenshot:
 
-<img src="../images/general/geo-map.png" />
+<img src="../images/general/grid-geo-map.png" />
 <!-- end: Angular, React -->
 
 <!-- Blazor -->
