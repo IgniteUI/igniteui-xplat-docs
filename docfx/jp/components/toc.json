@@ -834,7 +834,7 @@
       },
       {
         "exclude": ["Angular", "React", "Blazor"],
-        "name": "Load On Demand",
+        "name": "ロードオンデマンド",
         "href": "grids/tree-grid/load-on-demand.md",
         "status": "NEW"
       }
@@ -1616,6 +1616,12 @@
     "exclude": ["Angular"],
     "name": "ボタン",
     "href": "inputs/button.md"
+  },
+  {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "ボタン グループ",
+    "href": "inputs/button-group.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
