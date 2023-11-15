@@ -3,6 +3,8 @@ title: {Platform} ツリー グリッド | 最速の {Platform} ツリー テー
 _description: {ProductName} ツリー Tree Grid は、親行が展開されたときに必要な子データのみを読み込むことにより、取得およびレンダリングするデータ量が大幅に軽減されます。
 _keywords: {Platform} tree grid, igniteui for {Platform}, infragistics, {Platform} ツリー グリッド, インフラジスティックス
 _language: ja
+mentionedTypes: ['TreeGrid']
+namespace: Infragistics.Controls
 ---
 
 # Tree Grid (ツリー グリッド) ロードオンデマンド
