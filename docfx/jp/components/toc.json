@@ -641,7 +641,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "クリップボードの操作",
         "href": "grids/tree-grid/clipboard-interactions.md",
         "status": "NEW"
@@ -830,6 +830,12 @@
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "仮想化とパフォーマンス",
         "href": "grids/tree-grid/virtualization.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "Blazor"],
+        "name": "ロードオンデマンド",
+        "href": "grids/tree-grid/load-on-demand.md",
         "status": "NEW"
       }
     ]
@@ -1610,6 +1616,12 @@
     "exclude": ["Angular"],
     "name": "ボタン",
     "href": "inputs/button.md"
+  },
+  {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "ボタン グループ",
+    "href": "inputs/button-group.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],

@@ -643,7 +643,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Clipboard Interactions",
         "href": "grids/tree-grid/clipboard-interactions.md",
         "status": "NEW"
@@ -832,6 +832,12 @@
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "Virtualization and performance",
         "href": "grids/tree-grid/virtualization.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "Blazor"],
+        "name": "Load On Demand",
+        "href": "grids/tree-grid/load-on-demand.md",
         "status": "NEW"
       }
     ]
