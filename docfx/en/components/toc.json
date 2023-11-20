@@ -833,6 +833,12 @@
         "name": "Virtualization and performance",
         "href": "grids/tree-grid/virtualization.md",
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "Blazor"],
+        "name": "Load On Demand",
+        "href": "grids/tree-grid/load-on-demand.md",
+        "status": "NEW"
       }
     ]
   },
@@ -1612,6 +1618,12 @@
     "exclude": ["Angular"],
     "name": "Button",
     "href": "inputs/button.md"
+  },
+  {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "Button Group",
+    "href": "inputs/button-group.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
