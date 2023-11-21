@@ -715,6 +715,12 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React"],
+        "name": "Export to Excel",
+        "href": "grids/tree-grid/export-excel.md",
+        "status": "NEW"
+      },
+      {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "Excel Style Filtering",
         "href": "grids/tree-grid/excel-style-filtering.md",

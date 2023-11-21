@@ -148,25 +148,39 @@ function exportEventFreezeHeaders(grid: IgrGridBaseDirective, args: IgrExporterE
 ```
 
 ```razor
- <IgbGrid>
+ <{ComponentSelector}>
     <IgbGridToolbar>
       <IgbGridToolbarActions>
         <IgbGridToolbarExporter
-          ExportExcel="true" ExportStarted="WebGridExportEventMultiColumnHeaders">
+          ExportExcel="true" ExportStartedScript="WebGridExportEventMultiColumnHeaders">
         </IgbGridToolbarExporter>
       </IgbGridToolbarActions>
     </IgbGridToolbar>
- </IgbGrid>
+ </{ComponentSelector}>
 
-@code {
-
-  public void WebGridExportEventMultiColumnHeaders(IgbExporterEventEventArgs args)
-  {
-      bool exportMultiHeaders = (bool)exportHeaders.GetCurrentPrimitiveValue();
-      args.Detail.Options.FreezeHeaders = true;
-  }
-}
+igRegisterScript("WebGridExportEventMultiColumnHeaders", (ev) => {
+    ev.detail.options.ignoreMultiColumnHeaders = false;
+}, false);
 ```
+
+<!-- ComponentStart: TreeGrid -->
+```razor
+ <{ComponentSelector}>
+    <IgbGridToolbar>
+      <IgbGridToolbarActions>
+        <IgbGridToolbarExporter
+          ExportExcel="true" ExportStartedScript="WebGridExportEventMultiColumnHeaders">
+        </IgbGridToolbarExporter>
+      </IgbGridToolbarActions>
+    </IgbGridToolbar>
+ </{ComponentSelector}>
+
+igRegisterScript("WebGridExportEventMultiColumnHeaders", (ev) => {
+    ev.detail.options.ignoreMultiColumnHeaders = false;
+}, false);
+```
+<!-- ComponentEnd: TreeGrid -->
+
 
 <!-- Angular -->
 ## Customizing the Exported Content
@@ -203,6 +217,7 @@ When you are exporting data from the `{ComponentName}` component, the export pro
 |--- |--- |
 |Hierarchy levels|The excel exporter service can create up to 8 levels of hierarchy.|
 |Max worksheet size|The maximum worksheet size supported by Excel is 1,048,576 rows by 16,384 columns.|
+|Cell Styling|The excel exporter service does not support exporting a custom style applied to a cell component. In such scenarios we recommend using the [Excel Library](../../excel-library.md).|
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
