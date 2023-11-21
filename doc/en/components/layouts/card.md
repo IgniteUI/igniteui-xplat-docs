@@ -132,10 +132,10 @@ Then, to represent the demo card template, we can add the following code:
             <IgrRipple />
         </IgrButton>
         <div slot="end">
-            <IgrIconButton iconName="twitter" collection="material">
+            <IgrIconButton name="twitter" collection="material">
                 <IgrRipple />
             </IgrIconButton>
-            <IgrIconButton iconName="facebook" collection="material">
+            <IgrIconButton name="facebook" collection="material">
                 <IgrRipple />
             </IgrIconButton>
         </div>
@@ -473,10 +473,10 @@ You can reverse the order of the text button and the icon buttons by switching t
         <IgrRipple />
     </IgrButton>
     <div slot="end">
-        <IgrIconButton ref={this.iconRef} className="marginIcon" iconName="twitter" collection="material">
+        <IgrIconButton ref={this.iconRef} className="marginIcon" name="twitter" collection="material">
             <IgrRipple />
         </IgrIconButton>
-        <IgrIconButton iconName="facebook" collection="material">
+        <IgrIconButton name="facebook" collection="material">
             <IgrRipple />
         </IgrIconButton>
     </div>

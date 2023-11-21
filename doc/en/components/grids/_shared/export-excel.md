@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Export to Excel Service
 
-The Excel Exporter service can export data to excel from the `{ComponentName}`. The data export functionality is encapsulated in the `ExcelExporterService` class and the data is exported in MS Excel table format. This format allows features like filtering, sorting, etc. To do this you need to invoke the `Export` method of `ExcelExporterService` and pass the {ComponentTitle} component as first argument to export grid easily.
+The {ProductName} Export to Excel Service in {Platform} {ComponentTitle} can export data to excel. The data export functionality is encapsulated in the `ExcelExporterService` class and the data is exported in MS Excel table format. This format allows features like filtering, sorting, etc. To do this you need to invoke the `Export` method of `ExcelExporterService` and pass the `{ComponentName}` component as first argument to export grid easily.
 
 ## {Platform} Excel Exporter Example
 
@@ -48,7 +48,7 @@ To initiate an export process you may use the handler of a button in your compon
 
 ```Razor
 <IgbDataGrid data="localData"/>
-<button click="exportButtonHandler()">Export to Excel</button>
+<button @onclick="exportButtonHandler">Export to Excel</button>
 ```
 
 You may access the exporter service by defining an argument of type `ExcelExporterService` in the component's constructor and the {Platform} framework will provide an instance of the service. To export some data in MS Excel format you need to invoke the exporter service's `Export` method and pass the {ComponentTitle} component as first argument.
@@ -134,6 +134,18 @@ public webGridExportEventFreezeHeaders(args: any): void {
 }
 ```
 <!-- end: WebComponents -->
+
+```tsx
+function exportEventFreezeHeaders(grid: IgrGridBaseDirective, args: IgrExporterEvent) {
+    args.detail.options.freezeHeaders = true;
+}
+
+<IgrGridToolbar key="toolbar">
+  <IgrGridToolbarActions key="toolbarActions">
+    <IgrGridToolbarExporter key="exporting" exportStarted={exportEventFreezeHeaders}></IgrGridToolbarExporter>
+  </IgrGridToolbarActions>
+</IgrGridToolbar>
+```
 
 ```razor
  <{ComponentSelector}>

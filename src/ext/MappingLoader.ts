@@ -2,8 +2,8 @@ export class MappingLoader {
 
     public namespace: string | null = null;
 
-    getPlatformTypeName(name: string, platform: APIPlatform) {
-        let type = this.getType(name);
+    getPlatformTypeName(name: string, platform: APIPlatform, filePath: string) {
+        let type = this.getType(name, filePath);
         if (type) {
             for (let name of type.names) {
                 if (name.platform == platform) {
@@ -14,8 +14,8 @@ export class MappingLoader {
         return null;
     }
 
-    getTypeMember(name: string, memberName: string) {
-        let typeInfo = this.getType(name);
+    getTypeMember(name: string, memberName: string, filePath: string) {
+        let typeInfo = this.getType(name, filePath);
         if (!typeInfo) {
             return null;
         }
@@ -28,8 +28,8 @@ export class MappingLoader {
         return null;
     }
 
-    getPlatformMemberName(name: string, platform: APIPlatform, memberName: string) {
-        let member = this.getTypeMember(name, memberName);
+    getPlatformMemberName(name: string, platform: APIPlatform, memberName: string, filePath: string) {
+        let member = this.getTypeMember(name, memberName, filePath);
         if (member == null) {
             return null;
         }
@@ -43,7 +43,7 @@ export class MappingLoader {
         return null;
     }
 
-    getType(name: string) : APITypeInfo | undefined {
+    getType(name: string, filePath: string) : APITypeInfo | undefined {
         if (name === undefined || name === null){
             return undefined;
         }
@@ -60,9 +60,9 @@ export class MappingLoader {
                 }
 
                 if (this.namespace) {
-                    return this.getType(this.namespace + "." + name);
+                    return this.getType(this.namespace + "." + name, filePath);
                 } else {
-                    throw new Error("type name is not unique, use namespace qualified!. Found '" + name + "' with namespace: " + this.namespace);
+                    throw new Error("type name is not unique, use namespace qualified!. Found '" + name + "' with namespace: " + this.namespace + "\n>> Found in: " + filePath + "\n>> Stack Trace:");
                     // console.log(this._aliasedNames);
                     // if (name === "Grid") {
                     //     var gridAPI = this._quickTypeMap.get("Grid");

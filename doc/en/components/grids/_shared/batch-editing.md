@@ -1,5 +1,5 @@
 ---
-title: Batch Editing and Transactions in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Batch Editing and Transactions - {ProductName}
 _description: Perform data manipulation without affecting the underlying data with {ComponentTitle} Batch Editing and {Platform} CRUD, using {Platform} {ComponentTitle}. See demos & examples!
 _keywords: crud, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
