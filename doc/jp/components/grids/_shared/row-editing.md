@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} 行の編集 - インフラジスティックス
+title: {Platform} {ComponentTitle} 行の編集 - {ProductName}
 _description: {Platform} {ComponentTitle}で行編集を有効にし、CRUD 操作のための強力な API が必要な場合、{ProductName} {ComponentTitle} 行編集コンポーネントをお試しください。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 行の編集
 
-`{ComponentName}` はインライン編集や {Platform} CRUD 操作のための強力な API を通して便利なデータ操作方法を提供します。行をクリックして **Enter キー**を押すか、変更する行をダブルクリックします。
+{Platform} {ComponentTitle} の {ProductName} 行編集機能を使用すると、`{ComponentName}` 内でデータを直接編集できます。 データを操作するこの便利な方法に加えて、完全な CRUD 操作のための強力な API があります。行をクリックして **Enter キー**を押すと、グリッド行の編集を実行できます。もう 1 つの簡単な方法は、変更する必要がある行をマウスでダブルクリックすることです。
 
 ## {Platform} {ComponentTitle} 行編集の例
 
@@ -67,9 +67,6 @@ export class AppModule {}
     <igc-column field="ReorderLevel" header="ReorderLever" data-type="Number"></igc-column>
     <igc-column field="ProductName" header="ProductName" data-type="String"></igc-column>
     <igc-column id="unitsInStock" field="UnitsInStock" header="UnitsInStock" data-type="Number">
-        <ng-template igcCellEditor let-cell="cell">
-            <input name="units" [(ngModel)]="cell.value" style="color: black" />
-        </ng-template>
     </igc-column>
     <igc-column field="OrderDate" data-type="Date"></igc-column>
     <igc-column field="Discontinued" header="Discontinued" data-type="Boolean"></igc-column>
@@ -77,14 +74,10 @@ export class AppModule {}
 ```
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-    var unitsInStock = this.unitsInStock = document.getElementById('unitsInStock') as IgcColumnComponent;
-
-    this._bind = () => {
-        grid.data = this.data;
-        unitsInStock.bodyTemplate = this.unitsInStockCellTemplate;
-    }
-    this._bind();
+    var grid  = document.getElementById('grid') as IgcGridComponent;
+    var unitsInStock = document.getElementById('unitsInStock') as IgcColumnComponent;
+    grid.data = this.data;
+    unitsInStock.bodyTemplate = this.unitsInStockCellTemplate;
 }
 
 public unitsInStockCellTemplate = (ctx: IgcCellTemplateContext) => {
@@ -92,6 +85,26 @@ public unitsInStockCellTemplate = (ctx: IgcCellTemplateContext) => {
 }
 ```
 <!-- end: WebComponents -->
+
+```tsx
+function unitsInStockCellTemplate(ctx: IgrCellTemplateContext) {
+    return (
+        <>
+            <input name="units" value={ctx.dataContext.cell.value} style={{color: "black"}} />;
+        </>
+    );
+}
+
+<{ComponentSelector} primaryKey="ProductID" width="100%" height="500px" rowEditable="true"
+    bodyTemplate={unitsInStockCellTemplate}>
+    <IgrColumn field="ProductID" header="Product ID" editable="false"></IgrColumn>
+    <IgrColumn field="ReorderLevel" header="ReorderLever" dataType="number"></IgrColumn>
+    <IgrColumn field="ProductName" header="ProductName" dataType="string"></IgrColumn>
+    <IgrColumn field="UnitsInStock" header="UnitsInStock" dataType="number"></IgrColumn>
+    <IgrColumn field="OrderDate" dataType="date"></IgrColumn>
+    <IgrColumn field="Discontinued" header="Discontinued" dataType="boolean"></IgrColumn>
+</{ComponentSelector}>
+```
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
@@ -226,14 +239,24 @@ export class {ComponentName}RowEditSampleComponent {
 igRegisterScript("RowEditTextTemplate", (ctx) => {
     var html = window.igTemplating.html;
     return html`<div>
-   Changes: ${ctx.$implicit}
+   Changes: ${ctx.implicit}
 </div>`;
 }, false);
  ```
 
- ```ts
+```ts
 public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
-    return html`Changes: ${ctx.rowChangesCount}`;
+    return html`Changes: ${ctx.implicit}`;
+}
+```
+
+```tsx
+function rowEditTextTemplate(ctx: IgrGridRowEditTextTemplateContext) {
+    return (
+        <>
+            Changes: {ctx.dataContext.implicit}
+        </>
+    );
 }
 ```
 
@@ -255,20 +278,33 @@ public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
  ```razor
  igRegisterScript("RowEditActionsTemplate", (ctx) => {
     var html = window.igTemplating.html;
-    window.endRowEdit = ctx.$implicit;
+    window.endRowEdit = ctx.implicit;
     return html`<div>
-  	<button onclick="endRowEdit(false)">Cancel</button>
-	<button onclick="endRowEdit(true)">Apply</button>
+  	<button @click="(event) => endRowEdit(false, event)">Cancel</button>
+	<button @click="(event) => endRowEdit(true, event)">Apply</button>
 </div>`;
 }, false);
  ```
 
- ```ts
+```ts
 public rowEditActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
+    const endRowEdit = ctx.implicit;
     return html`
-        <button onClick="${this.endRowEdit(false)}">Cancel</button>
-	    <button onClick="${this.endRowEdit(true)}">Apply</button>
+        <button @click="${(event) => endRowEdit(false, event)}">Cancel</button>
+        <button @click="${(event) => endRowEdit(true, event)}">Apply</button>
     `;
+}
+```
+
+```tsx
+function rowEditActionsTemplate(ctx: IgrGridRowEditActionsTemplateContext) {
+    const endRowEdit = ctx.dataContext.implicit;
+    return (
+        <>
+            <button onClick={(event) => endRowEdit(false, event)}>Cancel</button>
+            <button onClick={(event) => endRowEdit(true, event)}>Apply</button>
+        </>
+    );
 }
 ```
 
@@ -397,6 +433,43 @@ $button-theme: button-theme(
 > [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
+<!-- end: Angular -->
+
+<!-- WebComponents, Blazor, React -->
+
+## スタイル設定
+
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
+一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
+
+```html
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
+```
+
+```razor
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+次に、そのクラスに関連する CSS プロパティを設定します。
+
+```css
+.grid {
+    --ig-banner-banner-background: #e3e3e3;
+    --ig-banner-banner-message-color: #423589;
+}
+```
+
+### デモ
+
+`sample="/{ComponentSample}/row-editing-style", height="560", alt="{Platform} {ComponentTitle} 行編集のスタイルの例"`
+
+
+<!-- end: WebComponents, Blazor -->
+
 ## 既知の問題と制限
 
 - グリッドに `PrimaryKey` が設定されておらず、リモート データ シナリオが有効になっている場合 (ページング、ソート、フィルタリング、スクロール時に、グリッドに表示されるデータを取得するためのリモート サーバーへのリクエストがトリガーされる場合）、データ要求が完了すると、行は次の状態を失います:
@@ -405,8 +478,6 @@ $button-theme: button-theme(
 * 行の展開/縮小
 * 行の編集
 * 行のピン固定
-
-<!-- end: Angular -->
 
 ## API リファレンス
 
@@ -435,7 +506,6 @@ $button-theme: button-theme(
 
 <!-- ComponentStart:  Grid -->
 * [{ComponentTitle} 編集](editing.md)
-* [{ComponentTitle} トランザクション](batch-editing.md)
 <!-- ComponentEnd:  Grid -->
 
 <!-- * [{ComponentTitle} Transactions](batch-editing.md) -->

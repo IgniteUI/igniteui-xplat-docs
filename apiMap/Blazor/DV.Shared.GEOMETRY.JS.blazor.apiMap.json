@@ -1,6 +1,11 @@
-{"types":[
-  { "originalName":"FlattenerSettings",
-    "names":[{"platform":"Blazor","fileName":"FlattenerSettings.cs","mappedName":"FlattenerSettings"}],
+{  "types":[
+  {
+    "originalName": "FlattenerSettings",
+    "originalNamespace": "Infragistics",
+    "packageName": "undefined",
+    "names":[{"platform": "Blazor","fileName": "FlattenerSettings.cs","mappedName": "FlattenerSettings"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"init"}],"originalName":".ctor"},
-    { "names":[{"platform":"Blazor","mappedType":"number","mappedName":"chunkingAmount"}],"originalName":"ChunkingAmount"}],"originalNamespace":"Infragistics"}]}
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "chunkingAmount"}], "originalName": "ChunkingAmount"} ]
+  }]
+}

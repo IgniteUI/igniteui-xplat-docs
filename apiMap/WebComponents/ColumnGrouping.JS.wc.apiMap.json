@@ -1,17 +1,23 @@
-{"extraFiles":["igc-column-grouping-module.ts"],
+{
+  "extraFiles": ["igc-column-grouping-module.ts"],
   "types":[
-  { "originalName":"ColumnGrouping",
-    "names":[{"platform":"WebComponents","fileName":"igc-column-grouping-component.ts","mappedName":"IgcColumnGroupingComponent"}],
+  {
+    "originalName": "ColumnGrouping",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-grids",
+    "names":[{"platform": "WebComponents","fileName": "igc-column-grouping-component.ts","mappedName": "IgcColumnGroupingComponent"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"IgcDataGridComponent","mappedName":"targetGrid"}],"originalName":"TargetGrid"},
-    { "names":[{"platform":"WebComponents","mappedType":"BaseControlTheme","mappedName":"baseTheme"}],"originalName":"BaseTheme"},
-    { "names":[{"platform":"WebComponents","mappedType":"ControlDisplayDensity","mappedName":"density"}],"originalName":"Density"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"title"}],"originalName":"Title"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"titleColor"}],"originalName":"TitleColor"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"iconColor"}],"originalName":"IconColor"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"itemBackgroundColor"}],"originalName":"ItemBackgroundColor"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"itemHoverBackgroundColor"}],"originalName":"ItemHoverBackgroundColor"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"backgroundColor"}],"originalName":"BackgroundColor"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"exportVisualModel"}],"originalName":"ExportVisualModel"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"exportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "backgroundColor"}], "originalName": "BackgroundColor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "BaseControlTheme","mappedName": "baseTheme"}], "originalName": "BaseTheme"},
+      {"names":[{"platform": "WebComponents", "mappedType": "ControlDisplayDensity","mappedName": "density"}], "originalName": "Density"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "exportSerializedVisualModel"}], "originalName": "ExportSerializedVisualModel"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "exportVisualModel"}], "originalName": "ExportVisualModel"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "iconColor"}], "originalName": "IconColor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "itemBackgroundColor"}], "originalName": "ItemBackgroundColor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "itemHoverBackgroundColor"}], "originalName": "ItemHoverBackgroundColor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcDataGridComponent","mappedName": "targetGrid"}], "originalName": "TargetGrid"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "textColor"}], "originalName": "TextColor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "title"}], "originalName": "Title"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "titleColor"}], "originalName": "TitleColor"} ]
+  }]
+}

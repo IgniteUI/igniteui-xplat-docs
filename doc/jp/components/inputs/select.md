@@ -89,7 +89,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 
 ### Select (選択)
 
-`Select` コンポーネントは `Form` コンポーネント内で使用できるため、登録する `Name` プロパティを公開します。また、`Label`、`Placeholder`、および `Size` プロパティもあります。`Outlined` プロパティは、Material テーマに関してのみ、スタイリング目的で使用されます。デフォルトのスロットを除いて、コンポーネントは、`header`、`footer`、`helper-text`、`prefix`、`suffix`、および `toggle-icon` を含む他のいくつかのスロットを提供します。
+`Select` コンポーネントは `Form` コンポーネント内で使用できるため、登録する `Name` プロパティを公開します。また、`Label` および `Placeholder` プロパティもあります。`Outlined` プロパティは、Material テーマに関してのみ、スタイリング目的で使用されます。デフォルトのスロットを除いて、コンポーネントは、`header`、`footer`、`helper-text`、`prefix`、`suffix`、および `toggle-icon` を含む他のいくつかのスロットを提供します。コンポーネントのサイズは、`--ig-size` CSS 変数を使用して変更できます。
 
 ### Item (項目)
 
@@ -196,18 +196,18 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 
 選択がフォーカスされ、オプションのリストが**表示されていない**場合:
 
-- <kbd>ALT + 上矢印 / 下矢印</kbd> の組み合わせを使用するか、<kbd>Space</kbd> または <kbd>Enter</kbd> キーをクリックして、`Select` を開きます。
-- <kbd>ALT + 上矢印 / 下矢印</kbd> の組み合わせ、または <kbd>Enter</kbd>、<kbd>Space</kbd>、<kbd>Esc</kbd>、`Tab` キーのいずれかを使用して、`Select` を閉じます。
-- <kbd>上 / 左矢印</kbd> キーを使用すると、リスト内の前の項目が選択されます。
-- <kbd>下 / 右矢印</kbd> キーを使用すると、リスト内の次の項目が選択されます。
+- <kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> の組み合わせを使用するか、<kbd>Space</kbd> または <kbd>Enter</kbd> キーをクリックして、`Select` を開きます。
+- <kbd>ALT</kbd> + <kbd>↑</kbd> または <kbd>↓</kbd> の組み合わせ、または <kbd>Enter</kbd>、<kbd>Space</kbd>、<kbd>Esc</kbd>、`Tab` キーのいずれかを使用して、`Select` を閉じます。
+- <kbd>←</kbd> <kbd>→</kbd> キーを使用すると、リスト内の前の項目が選択されます。
+- <kbd>↑</kbd> <kbd>↓</kbd> キーを使用すると、リスト内の次の項目が選択されます。
 - <kbd>Home</kbd> キーまたは <kbd>End</kbd> キーを使用すると、リストの最初または最後の項目が選択されます。
 - 文字を入力すると、項目のリストが照会され、現在のユーザー入力に最も近いものが選択されます。
 
 選択がフォーカスされ、オプションのリストが**表示されている**場合:
 
 - <kbd>Enter</kbd> キーまたは <kbd>Space</kbd> キーを使用すると、項目が選択され、リストが閉じます。
-- <kbd>上 / 左矢印</kbd>キーを使用すると、リスト内の前の項目がアクティブになります。
-- <kbd>下 / 右矢印</kbd>キーを使用すると、リスト内の次の項目がアクティブになります。
+- <kbd>←</kbd> <kbd>→</kbd> キーを使用すると、リスト内の前の項目がアクティブになります。
+- <kbd>↑</kbd> <kbd>↓</kbd> キーを使用すると、リスト内の次の項目がアクティブになります。
 - <kbd>Home</kbd> キーまたは <kbd>End</kbd> キーを使用すると、リストの最初または最後の項目がアクティブになります。
 
 > [!Note]

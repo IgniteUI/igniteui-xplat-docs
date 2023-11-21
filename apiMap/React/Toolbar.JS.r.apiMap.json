@@ -1,28 +1,30 @@
-{"extraFiles":["igr-data-grid-toolbar-module.ts"],
+{
+  "extraFiles": ["igr-data-grid-toolbar-module.ts"],
   "types":[
-  { "originalName":"DataGridToolbar",
-    "names":[{"platform":"React","fileName":"igr-data-grid-toolbar.ts","mappedName":"IgrDataGridToolbar"}],
+  {
+    "originalName": "DataGridToolbar",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-grids",
+    "names":[{"platform": "React","fileName": "igr-data-grid-toolbar.ts","mappedName": "IgrDataGridToolbar"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"IgrDataGrid","mappedName":"targetGrid"}],"originalName":"TargetGrid"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"toolbarTitle"}],"originalName":"ToolbarTitle"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"toolbarTitleColor"}],"originalName":"ToolbarTitleColor"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"backgroundColor"}],"originalName":"BackgroundColor"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"dialogBackgroundColor"}],"originalName":"DialogBackgroundColor"},
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"columnChooser"}],"originalName":"ColumnChooser"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"columnChooserText"}],"originalName":"ColumnChooserText"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"columnChooserTitle"}],"originalName":"ColumnChooserTitle"},
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"columnPinning"}],"originalName":"ColumnPinning"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"columnPinningText"}],"originalName":"ColumnPinningText"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"columnPinningTitle"}],"originalName":"ColumnPinningTitle"},
-    { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"borderWidth.bottom"},
-    { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"borderWidth.left"},
-    { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"borderWidth.right"},
-    { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"borderWidth.top"},
-    { "names":[{"platform":"React","mappedType":"ControlDisplayDensity","mappedName":"density"}],"originalName":"Density"},
-    { "names":[{"platform":"React","mappedType":"BaseControlTheme","mappedName":"baseTheme"}],"originalName":"BaseTheme"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportVisualModel"}],"originalName":"ExportVisualModel"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "backgroundColor"}], "originalName": "BackgroundColor"},
+      {"names":[{"platform": "React", "mappedType": "BaseControlTheme","mappedName": "baseTheme"}], "originalName": "BaseTheme"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "columnChooser"}], "originalName": "ColumnChooser"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "columnChooserText"}], "originalName": "ColumnChooserText"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "columnChooserTitle"}], "originalName": "ColumnChooserTitle"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "columnPinning"}], "originalName": "ColumnPinning"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "columnPinningText"}], "originalName": "ColumnPinningText"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "columnPinningTitle"}], "originalName": "ColumnPinningTitle"},
+      {"names":[{"platform": "React", "mappedType": "ControlDisplayDensity","mappedName": "density"}], "originalName": "Density"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "dialogBackgroundColor"}], "originalName": "DialogBackgroundColor"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "exportSerializedVisualModel"}], "originalName": "ExportSerializedVisualModel"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "exportVisualModel"}], "originalName": "ExportVisualModel"},
+      {"names":[{"platform": "React", "mappedType": "IgrDataGrid","mappedName": "targetGrid"}], "originalName": "TargetGrid"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "toolbarTitle"}], "originalName": "ToolbarTitle"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "toolbarTitleColor"}], "originalName": "ToolbarTitleColor"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "bottom"}], "originalName": "borderWidth.bottom"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "left"}], "originalName": "borderWidth.left"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "right"}], "originalName": "borderWidth.right"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "top"}], "originalName": "borderWidth.top"} ]
+  }]
+}
