@@ -703,7 +703,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Display Density",
         "href": "grids/tree-grid/display-density.md",
         "status": "NEW"
