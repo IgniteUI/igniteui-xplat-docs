@@ -358,6 +358,15 @@ constructor() {
         column3.inlineEditorTemplate = this.webGridCellEditCellTemplate;
 }
 
+private _webGridCellEditSampleRoleplay: WebGridCellEditSampleRoleplay = null;
+public get webGridCellEditSampleRoleplay(): WebGridCellEditSampleRoleplay {
+    if (this._webGridCellEditSampleRoleplay == null) 
+    {
+        this._webGridCellEditSampleRoleplay = new WebGridCellEditSampleRoleplay();
+    }
+
+    return this._webGridCellEditSampleRoleplay;
+}
 
 public webGridCellEditCellTemplate = (ctx: IgcCellTemplateContext) => {
         let cellValues: any = [];
