@@ -1860,7 +1860,7 @@
         "href": "grids/data-grid/localization.md"
       },
       {
-        "exclude": ["Angular", "React", "Blazor"],
+        "exclude": ["Angular", "Blazor"],
         "name": "比較データのバインディング",
         "href": "grids/data-grid/type-comparison-table.md",
         "status": ""

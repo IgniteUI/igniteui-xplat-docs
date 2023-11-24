@@ -74,7 +74,7 @@ ig add [component_template] [component_name]
 
 上記の「component_template」は通常、{ProductName} コンポーネント (grid、category-chart、linear-gauge など) と一致します。
 
-たとえば、「MyGrid Component」という名前のデータ グリッド テンプレート コンポーネントをアプリに追加する場合は、次のコマンドを実行します。
+たとえば、「MyGridComponent」という名前のデータ グリッド テンプレート コンポーネントをアプリに追加する場合は、次のコマンドを実行します。
 
 ```cmd
 ig add grid MyGridComponent
