@@ -701,7 +701,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "表示密度",
         "href": "grids/tree-grid/display-density.md",
         "status": "NEW"
@@ -710,6 +710,12 @@
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "編集",
         "href": "grids/tree-grid/editing.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "Excel へエクスポート",
+        "href": "grids/tree-grid/export-excel.md",
         "status": "NEW"
       },
       {
@@ -1854,7 +1860,7 @@
         "href": "grids/data-grid/localization.md"
       },
       {
-        "exclude": ["Angular", "React", "Blazor"],
+        "exclude": ["Angular", "Blazor"],
         "name": "比較データのバインディング",
         "href": "grids/data-grid/type-comparison-table.md",
         "status": ""
