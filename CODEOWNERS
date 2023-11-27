@@ -1,7 +1,21 @@
-# code owners must approve PRs
-* @HUSSAR-mtrela
+# code owners must approve PRs with they make changes to these files:
 
-# *.md @HUSSAR-mtrela
-# *.js @HUSSAR-mtrela
-# *.ts @HUSSAR-mtrela
-# *.json @HUSSAR-mtrela
+# @HUSSAR-mtrela must approve DV topics
+**/charts/**/*.md @HUSSAR-mtrela
+**/maps/**/*.md @HUSSAR-mtrela
+**/gauges/**/*.md @HUSSAR-mtrela
+**/geo-map*.md @HUSSAR-mtrela
+
+# @HUSSAR-mtrela must approve XPLAT docs source
+src/**/*.* @HUSSAR-mtrela
+**/*.js @HUSSAR-mtrela
+**/*.ts @HUSSAR-mtrela
+gulpfile.js @HUSSAR-mtrela
+
+# @HUSSAR-mtrela must approve XPLAT docs config
+./.gitignore @HUSSAR-mtrela
+./*.json @HUSSAR-mtrela
+**/*.config @HUSSAR-mtrela
+apiMap/**/*.* @HUSSAR-mtrela
+
+CODEOWNERS @HUSSAR-mtrela
