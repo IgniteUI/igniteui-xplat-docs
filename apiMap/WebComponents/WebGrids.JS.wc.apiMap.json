@@ -162,6 +162,16 @@
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "state"}], "originalName": "State"} ]
   },
   {
+    "originalName": "CellPosition",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-cell-position.ts","mappedName": "IgcCellPosition"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "rowIndex"}], "originalName": "RowIndex"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "visibleColumnIndex"}], "originalName": "VisibleColumnIndex"} ]
+  },
+  {
     "originalName": "CellTemplateContext",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -185,7 +195,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "editMode"}], "originalName": "EditMode"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "editValue"}], "originalName": "EditValue"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "editable"}], "originalName": "Editable"},
-      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirectiveComponent","mappedName": "grid"}], "originalName": "Grid"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirective","mappedName": "grid"}], "originalName": "Grid"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcGridCellIdentifier","mappedName": "id"}], "originalName": "Id"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "readonly"}], "originalName": "Readonly"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcRowType","mappedName": "row"}], "originalName": "Row"},
@@ -198,6 +208,18 @@
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "value"}], "originalName": "Value"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "visibleColumnIndex"}], "originalName": "VisibleColumnIndex"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "width"}], "originalName": "Width"} ]
+  },
+  {
+    "originalName": "ClipboardOptions",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-clipboard-options.ts","mappedName": "IgcClipboardOptions"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "copyFormatters"}], "originalName": "CopyFormatters"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "copyHeaders"}], "originalName": "CopyHeaders"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "enabled"}], "originalName": "Enabled"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "separator"}], "originalName": "Separator"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
     "originalName": "Column",
@@ -290,7 +312,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "cancel"}], "originalName": "Cancel"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "columnIndex"}], "originalName": "ColumnIndex"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "field"}], "originalName": "Field"},
-      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirectiveComponent","mappedName": "grid"}], "originalName": "Grid"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirective","mappedName": "grid"}], "originalName": "Grid"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "header"}], "originalName": "Header"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "skipFormatter"}], "originalName": "SkipFormatter"} ]
   },
@@ -303,6 +325,7 @@
     "names":[{"platform": "WebComponents","fileName": "igc-column-group.ts","dynamicModuleName": "igc-column-group-dynamic-module.ts","moduleName": "igc-column-group-module.ts","mappedName": "IgcColumnGroup"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "IgcColumnCollection","mappedName": "children"}], "originalName": "Children"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "collapsible"}], "originalName": "Collapsible"},
       {"names":[{"platform": "WebComponents", "mappedType": "(arg: IgcColumnTemplateContext) => any","mappedName": "collapsibleIndicatorTemplate"}], "originalName": "CollapsibleIndicatorTemplate"} ]
   },
   {
@@ -616,7 +639,7 @@
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "cancel"}], "originalName": "Cancel"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcBaseExporter","mappedName": "exporter"}], "originalName": "Exporter"},
-      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirectiveComponent","mappedName": "grid"}], "originalName": "Grid"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirective","mappedName": "grid"}], "originalName": "Grid"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcExporterOptionsBase","mappedName": "options"}], "originalName": "Options"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
@@ -628,7 +651,7 @@
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "cancel"}], "originalName": "Cancel"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcBaseExporter","mappedName": "exporter"}], "originalName": "Exporter"},
-      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirectiveComponent","mappedName": "grid"}], "originalName": "Grid"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirective","mappedName": "grid"}], "originalName": "Grid"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcExporterOptionsBase","mappedName": "options"}], "originalName": "Options"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
@@ -911,7 +934,7 @@
     "originalBaseTypeNamespace": "Infragistics.Controls",
     "originalBaseTypeName": "DisplayDensityBase",
     "packageName": "igniteui-webgrids",
-    "names":[{"platform": "WebComponents","fileName": "igc-grid-base-directive-component.ts","mappedName": "IgcGridBaseDirectiveComponent"}],
+    "names":[{"platform": "WebComponents","fileName": "igc-grid-base-directive.ts","mappedName": "IgcGridBaseDirective"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "IgcActionStripCollection","mappedName": "actionStripComponents"}], "originalName": "ActionStripComponents"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcColumnCollection","mappedName": "actualColumns"}], "originalName": "ActualColumns"},
@@ -928,7 +951,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "clearFilter"}], "originalName": "ClearFilter"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "clearSearch"}], "originalName": "ClearSearch"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "clearSort"}], "originalName": "ClearSort"},
-      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridClipboardOptions","mappedName": "clipboardOptions"}], "originalName": "ClipboardOptions"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcClipboardOptions","mappedName": "clipboardOptions"}], "originalName": "ClipboardOptions"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "closeAdvancedFilteringDialog"}], "originalName": "CloseAdvancedFilteringDialog"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "collapseAll"}], "originalName": "CollapseAll"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "collapseRow"}], "originalName": "CollapseRow"},
@@ -968,7 +991,9 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getColumnByName"}], "originalName": "GetColumnByName"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getColumnByVisibleIndex"}], "originalName": "GetColumnByVisibleIndex"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getHeaderGroupWidth"}], "originalName": "GetHeaderGroupWidth"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getNextCell"}], "originalName": "GetNextCell"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getPinnedWidth"}], "originalName": "GetPinnedWidth"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getPreviousCell"}], "originalName": "GetPreviousCell"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getRowData"}], "originalName": "GetRowData"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getSelectedColumnsData"}], "originalName": "GetSelectedColumnsData"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getSelectedData"}], "originalName": "GetSelectedData"},
@@ -986,6 +1011,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "markForCheck"}], "originalName": "MarkForCheck"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "moveColumn"}], "originalName": "MoveColumn"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "moving"}], "originalName": "Moving"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "navigateTo"}], "originalName": "NavigateTo"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "openAdvancedFilteringDialog"}], "originalName": "OpenAdvancedFilteringDialog"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcOverlayOutletDirective","mappedName": "outlet"}], "originalName": "Outlet"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcPaginatorCollection","mappedName": "paginationComponents"}], "originalName": "PaginationComponents"},
@@ -1029,6 +1055,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "IgcGridSortingStrategy","mappedName": "sortStrategy"}], "originalName": "SortStrategy"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcSortingExpression[]","mappedName": "sortingExpressions"}], "originalName": "SortingExpressions"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcSortingOptions","mappedName": "sortingOptions"}], "originalName": "SortingOptions"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGriStateCollection","mappedName": "stateComponents"}], "originalName": "StateComponents"},
       {"names":[{"platform": "WebComponents", "mappedType": "GridSummaryCalculationMode","mappedName": "summaryCalculationMode"}], "originalName": "SummaryCalculationMode"},
       {"names":[{"platform": "WebComponents", "mappedType": "GridSummaryPosition","mappedName": "summaryPosition"}], "originalName": "SummaryPosition"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "summaryRowHeight"}], "originalName": "SummaryRowHeight"},
@@ -1123,7 +1150,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isAddRow"}], "originalName": "IsAddRow"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "newValue"}], "originalName": "NewValue"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "oldValue"}], "originalName": "OldValue"},
-      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirectiveComponent","mappedName": "owner"}], "originalName": "Owner"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirective","mappedName": "owner"}], "originalName": "Owner"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "primaryKey"}], "originalName": "PrimaryKey"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "rowData"}], "originalName": "RowData"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "rowID"}], "originalName": "RowID"},
@@ -1149,7 +1176,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isAddRow"}], "originalName": "IsAddRow"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "newValue"}], "originalName": "NewValue"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "oldValue"}], "originalName": "OldValue"},
-      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirectiveComponent","mappedName": "owner"}], "originalName": "Owner"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirective","mappedName": "owner"}], "originalName": "Owner"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "primaryKey"}], "originalName": "PrimaryKey"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "rowData"}], "originalName": "RowData"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "rowID"}], "originalName": "RowID"},
@@ -1192,7 +1219,7 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "WebComponents","fileName": "igc-grid-form-group-created-event-args-detail.ts","mappedName": "IgcGridFormGroupCreatedEventArgsDetail"}],
     "members":[
-      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirectiveComponent","mappedName": "owner"}], "originalName": "Owner"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirective","mappedName": "owner"}], "originalName": "Owner"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
@@ -1447,7 +1474,7 @@
     "names":[{"platform": "WebComponents","fileName": "igc-grid-row-drag-ghost-context.ts","mappedName": "IgcGridRowDragGhostContext"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "data"}], "originalName": "Data"},
-      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirectiveComponent","mappedName": "grid"}], "originalName": "Grid"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirective","mappedName": "grid"}], "originalName": "Grid"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "implicit"}], "originalName": "Implicit"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
@@ -1545,7 +1572,7 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "WebComponents","fileName": "igc-grid-template-context.ts","mappedName": "IgcGridTemplateContext"}],
     "members":[
-      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirectiveComponent","mappedName": "implicit"}], "originalName": "Implicit"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirective","mappedName": "implicit"}], "originalName": "Implicit"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
@@ -1556,7 +1583,7 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "WebComponents","fileName": "igc-grid-toolbar-component.ts","dynamicModuleName": "igc-grid-toolbar-dynamic-module.ts","moduleName": "igc-grid-toolbar-module.ts","mappedName": "IgcGridToolbarComponent"}],
     "members":[
-      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirectiveComponent","mappedName": "grid"}], "originalName": "Grid"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirective","mappedName": "grid"}], "originalName": "Grid"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "showProgress"}], "originalName": "ShowProgress"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcGridToolbarContentCollection","mappedName": "tools"}], "originalName": "Tools"} ]
@@ -1617,7 +1644,7 @@
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "cancel"}], "originalName": "Cancel"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcBaseExporter","mappedName": "exporter"}], "originalName": "Exporter"},
-      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirectiveComponent","mappedName": "grid"}], "originalName": "Grid"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirective","mappedName": "grid"}], "originalName": "Grid"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcExporterOptionsBase","mappedName": "options"}], "originalName": "Options"} ]
   },
   {
@@ -1682,7 +1709,7 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "WebComponents","fileName": "igc-grid-validation-status-event-args-detail.ts","mappedName": "IgcGridValidationStatusEventArgsDetail"}],
     "members":[
-      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirectiveComponent","mappedName": "owner"}], "originalName": "Owner"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirective","mappedName": "owner"}], "originalName": "Owner"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "WebComponents", "mappedType": "ValidationStatus","mappedName": "status"}], "originalName": "Status"} ]
   },
@@ -2515,7 +2542,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "ephemeralKey"}], "originalName": "EphemeralKey"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "expanded"}], "originalName": "Expanded"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "focused"}], "originalName": "Focused"},
-      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirectiveComponent","mappedName": "grid"}], "originalName": "Grid"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirective","mappedName": "grid"}], "originalName": "Grid"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcGroupByRecord","mappedName": "groupRow"}], "originalName": "GroupRow"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "hasChildren"}], "originalName": "HasChildren"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "inEditMode"}], "originalName": "InEditMode"},
@@ -2853,14 +2880,6 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
-    "originalName": "GridClipboardOptions",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "WebComponents","fileName": "igc-grid-clipboard-options.ts","mappedName": "IgcGridClipboardOptions"}],
-    "members":[
-      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
     "originalName": "TransactionService",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -2873,6 +2892,19 @@
     "names":[{"platform": "WebComponents","fileName": "igc-grid-toolbar-content.ts","mappedName": "IgcGridToolbarContent"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"} ]
+  },
+  {
+    "originalName": "GridStateDirective",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-grid-state-directive.ts","dynamicModuleName": "igc-grid-state-directive-dynamic-module.ts","moduleName": "igc-grid-state-directive-module.ts","mappedName": "IgcGridStateDirective"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getState"}], "originalName": "GetState"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridStateOptions","mappedName": "options"}], "originalName": "Options"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
     "originalName": "GridToolbarBaseAction",
@@ -2897,5 +2929,47 @@
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "customSummary"}], "originalName": "CustomSummary"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "fieldName"}], "originalName": "FieldName"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "GridState",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "GridStateDirective",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-grid-state.ts","dynamicModuleName": "igc-grid-state-dynamic-module.ts","moduleName": "igc-grid-state-module.ts","mappedName": "IgcGridState"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "applyState"}], "originalName": "ApplyState"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridStateOptions","mappedName": "options"}], "originalName": "Options"} ]
+  },
+  {
+    "originalName": "GridStateComponentEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-grid-state-component-event-args.ts","mappedName": "IgcGridStateComponentEventArgs"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridState","mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "GridStateOptions",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-grid-state-options.ts","mappedName": "IgcGridStateOptions"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "advancedFiltering"}], "originalName": "AdvancedFiltering"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "cellSelection"}], "originalName": "CellSelection"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "columnSelection"}], "originalName": "ColumnSelection"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "columns"}], "originalName": "Columns"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "expansion"}], "originalName": "Expansion"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "filtering"}], "originalName": "Filtering"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "groupBy"}], "originalName": "GroupBy"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "moving"}], "originalName": "Moving"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "paging"}], "originalName": "Paging"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "pinningConfig"}], "originalName": "PinningConfig"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "pivotConfiguration"}], "originalName": "PivotConfiguration"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "rowIslands"}], "originalName": "RowIslands"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "rowPinning"}], "originalName": "RowPinning"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "rowSelection"}], "originalName": "RowSelection"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "sorting"}], "originalName": "Sorting"} ]
   }]
 }

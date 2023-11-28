@@ -89,6 +89,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "ActualMaximumValue"}], "originalName": "ActualMaximumValue"},
       {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "ActualMinimumValue"}], "originalName": "ActualMinimumValue"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "DateTimeMemberPath"}], "originalName": "DateTimeMemberPath"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetFullRange"}], "originalName": "GetFullRange"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetIndexClosestToUnscaledValue"}], "originalName": "GetIndexClosestToUnscaledValue"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemValue"}], "originalName": "GetItemValue"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsDataPreSorted"}], "originalName": "IsDataPreSorted"},
