@@ -212,9 +212,9 @@
     "names":[{"platform": "React","fileName": "igr-style-shape-event-args.ts","mappedName": "IgrStyleShapeEventArgs"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "item"}], "originalName": "Item"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "fill"}], "originalName": "shapeStyle.fill"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "shapeStyle.opacity"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "shapeStyle.stroke"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "string",  "mappedName": "fill"}], "originalName": "shapeStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "shapeStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "shapeStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
   }]
 }

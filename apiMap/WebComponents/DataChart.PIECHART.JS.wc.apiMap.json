@@ -235,14 +235,14 @@
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "textStyle"}], "originalName": "TextStyle"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "toolTip"}], "originalName": "ToolTip"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "valueMemberPath"}], "originalName": "ValueMemberPath"},
-      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "fill"}], "originalName": "othersCategoryStyle.fill"},
-      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "othersCategoryStyle.opacity"},
-      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "othersCategoryStyle.stroke"},
-      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "othersCategoryStyle.strokeThickness"},
-      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "fill"}], "originalName": "selectedStyle.fill"},
-      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "selectedStyle.opacity"},
-      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "selectedStyle.stroke"},
-      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "selectedStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "fill"}], "originalName": "othersCategoryStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "othersCategoryStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "othersCategoryStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "othersCategoryStyle.strokeThickness"},
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "fill"}], "originalName": "selectedStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "selectedStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "selectedStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "selectedStyle.strokeThickness"} ]
   },
   {
     "originalName": "PieSliceOthersContext",

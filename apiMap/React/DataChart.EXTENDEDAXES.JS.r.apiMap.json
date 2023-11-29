@@ -95,6 +95,7 @@
       {"names":[{"platform": "React", "mappedType": "Date","mappedName": "actualMaximumValue"}], "originalName": "ActualMaximumValue"},
       {"names":[{"platform": "React", "mappedType": "Date","mappedName": "actualMinimumValue"}], "originalName": "ActualMinimumValue"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "dateTimeMemberPath"}], "originalName": "DateTimeMemberPath"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getFullRange"}], "originalName": "GetFullRange"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getIndexClosestToUnscaledValue"}], "originalName": "GetIndexClosestToUnscaledValue"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isDataPreSorted"}], "originalName": "IsDataPreSorted"},
