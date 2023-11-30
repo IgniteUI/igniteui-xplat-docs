@@ -643,7 +643,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Clipboard Interactions",
         "href": "grids/tree-grid/clipboard-interactions.md",
         "status": "NEW"
@@ -703,7 +703,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Display Density",
         "href": "grids/tree-grid/display-density.md",
         "status": "NEW"
@@ -712,6 +712,12 @@
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "Editing",
         "href": "grids/tree-grid/editing.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "Export to Excel",
+        "href": "grids/tree-grid/export-excel.md",
         "status": "NEW"
       },
       {

@@ -95,6 +95,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "Date","mappedName": "actualMaximumValue"}], "originalName": "ActualMaximumValue"},
       {"names":[{"platform": "WebComponents", "mappedType": "Date","mappedName": "actualMinimumValue"}], "originalName": "ActualMinimumValue"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "dateTimeMemberPath"}], "originalName": "DateTimeMemberPath"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getFullRange"}], "originalName": "GetFullRange"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getIndexClosestToUnscaledValue"}], "originalName": "GetIndexClosestToUnscaledValue"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isDataPreSorted"}], "originalName": "IsDataPreSorted"},

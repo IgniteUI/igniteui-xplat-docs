@@ -126,6 +126,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Background"}], "originalName": "Background"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "BeforeId"}], "originalName": "BeforeId"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "CleanUp"}], "originalName": "CleanUp"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "CloseOnExecute"}], "originalName": "CloseOnExecute"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "CloseSubmenu"}], "originalName": "CloseSubmenu"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "CommandArgument"}], "originalName": "CommandArgument"},
       {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "CommandArgumentValue"}], "originalName": "CommandArgumentValue"},
