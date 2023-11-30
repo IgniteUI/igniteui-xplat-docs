@@ -254,6 +254,11 @@ Trend Actions
  - `ShowCrosshairs`: A `ToolActionCheckbox` that toggles mouse-over crosshair annotations via the chart's `CrosshairsDisplayMode` property.
  - `ShowGridlines`: A `ToolActionCheckbox` that toggles extra gridlines by applying a `MajorStroke` to the X-Axis.
 
+Save to Image Action
+
+- `CopyAsImage`: A `ToolActionLabel` that exposes an option to copy the chart to the clipboard.
+ - `CopyHeader`: A sub section header.
+
 ### Vertical Orientation
 
 By default the {Platform} Toolbar is shown horizontally, but it also has the ability to shown vertically by setting the `Orientation` property.
