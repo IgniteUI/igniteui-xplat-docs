@@ -367,7 +367,7 @@
         "status": ["NEW_REACT"]
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "State Persistence",
         "href": "grids/grid/state-persistence.md",
         "status": ["NEW_REACT"]
@@ -823,7 +823,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "State Persistence",
         "href": "grids/tree-grid/state-persistence.md",
         "status": "NEW"
