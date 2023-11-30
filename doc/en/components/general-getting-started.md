@@ -329,7 +329,6 @@ npm install --save {PackageGauges} {PackageCore}
 npm install --save {PackageGrids} {PackageCore}
 npm install --save {PackageMaps} {PackageCore}
 npm install --save {PackageSpreadsheet} {PackageCore}
-npm install --save {PackageComponents}
 ```
 
 Or
@@ -360,14 +359,9 @@ builder.Services.AddIgniteUIBlazor(
 ```ts
 import { IgrGeographicMapModule, IgrGeographicMap } from 'igniteui-react-maps';
 import { IgrDataChartInteractivityModule } from 'igniteui-react-charts';
-import { IgrGridModule, IgrGrid } from 'igniteui-react-grids';
-
-import 'igniteui-react-grids/grids/combined';
-import 'igniteui-react-grids/grids/themes/light/bootstrap.css';
 
 IgrGeographicMapModule.register();
 IgrDataChartInteractivityModule.register();
-IgrGridModule.register();
 ```
 
 ```ts
@@ -391,8 +385,10 @@ We are now ready to use the {ProductName} map component in our markup! Let's go 
 function App() {
   return (
     <div style={{ height: "100%", width: "100%" }}>
-      <IgrGrid id="grid1" data={localData} autoGenerate="true" />
-      <IgrGeographicMap width="800px" height="500px" zoomable="true" />
+      <IgrGeographicMap
+        width="800px"
+        height="500px"
+        zoomable="true" />
     </div>
   );
 }
@@ -420,7 +416,7 @@ After executing this command, your project will be built and served locally on y
 
 The final result should look something like this screenshot:
 
-<img src="../images/general/grid-geo-map.png" />
+<img src="../images/general/geo-map.png" />
 <!-- end: Angular, React -->
 
 <!-- Blazor -->
