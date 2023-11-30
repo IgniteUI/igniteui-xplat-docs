@@ -173,10 +173,10 @@
     "names":[{"platform": "React","fileName": "igr-geographic-polyline-series.ts","dynamicModuleName": "igr-geographic-polyline-series-dynamic-module.ts","moduleName": "igr-geographic-polyline-series-module.ts","mappedName": "IgrGeographicPolylineSeries"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isPolyline"}], "originalName": "IsPolyline"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "fill"}], "originalName": "shapeStyle.fill"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "shapeStyle.opacity"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "shapeStyle.stroke"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "string",  "mappedName": "fill"}], "originalName": "shapeStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "shapeStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "shapeStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
   },
   {
     "originalName": "GeographicProportionalSymbolSeries",
@@ -355,10 +355,10 @@
       {"names":[{"platform": "React", "mappedType": "IgDataTemplate","mappedName": "markerTemplate"}], "originalName": "MarkerTemplate"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "markerThickness"}], "originalName": "MarkerThickness"},
       {"names":[{"platform": "React", "mappedType": "MarkerType","mappedName": "markerType"}], "originalName": "MarkerType"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "fill"}], "originalName": "shapeStyle.fill"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "shapeStyle.opacity"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "shapeStyle.stroke"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "string",  "mappedName": "fill"}], "originalName": "shapeStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "shapeStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "shapeStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
   },
   {
     "originalName": "GeographicSymbolSeries",

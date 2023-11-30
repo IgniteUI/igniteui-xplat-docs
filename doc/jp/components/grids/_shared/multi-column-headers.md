@@ -55,6 +55,16 @@ _language: ja
 ```
 <!-- end: WebComponents -->
 
+```tsx
+<{ComponentSelector} allowFiltering="true">
+    <IgrColumnGroup header="Contact Information">
+        <IgrColumn sortable="true" resizable="true" field="Phone"></IgrColumn>
+        <IgrColumn sortable="true" resizable="true" field="Fax"></IgrColumn>
+        <IgrColumn sortable="true" resizable="true" field="PostalCode"></IgrColumn>
+    </IgrColumnGroup>
+</{ComponentSelector}>
+```
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -91,6 +101,16 @@ _language: ja
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+```tsx
+<{ComponentSelector} primaryKey="ID" foreignKey="ParentID">
+    <IgrColumnGroup header="Contact Information">
+        <IgrColumn sortable="true" resizable="true" field="Phone" dataType={GridColumnDataType.String}></IgrColumn>
+        <IgrColumn sortable="true" resizable="true" field="Fax" dataType={GridColumnDataType.String}></IgrColumn>
+        <IgrColumn sortable="true" resizable="true" field="PostalCode" dataType={GridColumnDataType.String}></IgrColumn>
+    </IgrColumnGroup>
+</{ComponentSelector}>
+```
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -162,6 +182,18 @@ TO-DO H-GRID CODE SNIPPET
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+```tsx
+<{ComponentSelector} height="600px" allowFiltering="true">
+    <IgrColumnGroup header="General Information">
+        <IgrColumn movable="true" sortable="true" resizable="true" field="CompanyName"></IgrColumn>
+        <IgrColumnGroup movable="true" header="Person Details">
+            <IgrColumn movable="true" pinned="false" sortable="true" resizable="true" field="ContactName"></IgrColumn>
+            <IgrColumn movable="true" sortable="true" resizable="true" field="ContactTitle"></IgrColumn>
+        </IgrColumnGroup>
+    </IgrColumnGroup>
+</{ComponentSelector}>
+```
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -207,6 +239,19 @@ TO-DO H-GRID CODE SNIPPET
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+```tsx
+<{ComponentSelector} primaryKey="ID" foreignKey="ParentID" moving="true">
+    <IgrColumnGroup pinned="false" header="General Information">
+        <IgrColumn field="HireDate" sortable="true" resizable="true" dataType={GridColumnDataType.Date}></IgrColumn>
+        <IgrColumnGroup header="Person Details">
+            <IgrColumn field="ID" resizable="true" filterable="true" dataType={GridColumnDataType.Number}></IgrColumn>
+            <IgrColumn field="Title" sortable="true" resizable="true" dataType={GridColumnDataType.String}></IgrColumn>
+            <IgrColumn field="Age" sortable="true" resizable="true" dataType={GridColumnDataType.Number}></IgrColumn>
+        </IgrColumnGroup>
+    </IgrColumnGroup>
+</{ComponentSelector}>
+```
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -274,6 +319,17 @@ TO-DO H-GRID CODE SNIPPET
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+```tsx
+<{ComponentSelector} height="600px" allowFiltering="true">
+    <IgrColumnGroup movable="true" pinned="true" header="General Information">
+        <IgrColumn movable="true" sortable="true" resizable="true" field="CompanyName"></IgrColumn>
+    </IgrColumnGroup>
+    <IgrColumn sortable="true" resizable="true" field="Phone"></IgrColumn>
+    <IgrColumn sortable="true" resizable="true" field="Fax"></IgrColumn>
+    <IgrColumn sortable="true" resizable="true" field="PostalCode"></IgrColumn>
+</{ComponentSelector}>
+```
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -313,6 +369,17 @@ TO-DO H-GRID CODE SNIPPET
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+```tsx
+<{ComponentSelector} primaryKey="ID" foreignKey="ParentID" moving="true">
+    <IgrColumnGroup header="Contact Information">
+        <IgrColumn field="Phone" movable="true" sortable="true" resizable="true" dataType={GridColumnDataType.String}></IgrColumn>
+    </IgrColumnGroup>
+    <IgrColumn field="Name" sortable="true" resizable="true" dataType={GridColumnDataType.String}></IgrColumn>
+    <IgrColumn field="Title" sortable="true" resizable="true" dataType={GridColumnDataType.String}></IgrColumn>
+    <IgrColumn field="Age" sortable="true" resizable="true" dataType={GridColumnDataType.Number}></IgrColumn>
+</{ComponentSelector}>
+```
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -411,11 +478,11 @@ public columnGroupHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 
 <!-- end: Blazor -->
 
-<!-- WebComponents -->
+<!-- WebComponents, React -->
 
 グリッドの各列グループは個別のテンプレートを持つことができます。次のコード スニペットは、列グループの `HeaderTemplate` の使用方法を示しています:
 
-<!-- end: WebComponents -->
+<!-- end: WebComponents, React -->
 
 ```razor
 <IgbColumnGroup Header="Address Information" HeaderTemplate="Template">
@@ -449,6 +516,21 @@ public headerTemplate = (ctx: IgcColumnTemplateContext) => {
 };
 ```
 
+```tsx
+<IgrColumnGroup header="Contact Information" headerTemplate={groupHeaderTemplate}></IgrColumnGroup>
+```
+
+```tsx
+function groupHeaderTemplate(e: { dataContext: IgrColumnTemplateContext }) {
+    const column = e.dataContext.column as IgrColumnGroup;
+    return (
+      <div>
+        <span style={{ float: "left" }}>{column.header.toUpperCase()}</span>
+      </div>
+    );
+}
+```
+
 > [!Note]
 > ヘッダーが再テンプレート化され、対応する列グループが移動可能な場合は、テンプレート要素で **draggable** 属性を **false** に設定する必要があり、これにより適用されるイベントをすべて処理できます。
 
@@ -477,6 +559,17 @@ public columnHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
         <igc-icon draggable="false" @click="${() => this.onClick()}"></igc-icon>
     `;
+}
+```
+
+```tsx
+function columnHeaderTemplate(e: { dataContext: IgrColumnTemplateContext }) {
+    const column = e.dataContext.column as IgrColumnGroup;
+    return (
+      <span onClick={onClick}>
+        <IgrIcon data-draggable="false"></IgrIcon>
+      </span>
+    );
 }
 ```
 
@@ -616,6 +709,10 @@ import 'core-js/es7/array';
 
 ```razor
 <IgbGrid class="grid"></IgbGrid>
+```
+
+```tsx
+<IgrGrid className="grid"></IgrGrid>
 ```
 
 次に、そのクラスに関連する CSS プロパティを設定します。

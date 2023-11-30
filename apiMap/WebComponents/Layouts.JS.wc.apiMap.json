@@ -139,6 +139,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "background"}], "originalName": "Background"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "beforeId"}], "originalName": "BeforeId"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "cleanUp"}], "originalName": "CleanUp"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "closeOnExecute"}], "originalName": "CloseOnExecute"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "closeSubmenu"}], "originalName": "CloseSubmenu"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "commandArgument"}], "originalName": "CommandArgument"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "commandArgumentValue"}], "originalName": "CommandArgumentValue"},

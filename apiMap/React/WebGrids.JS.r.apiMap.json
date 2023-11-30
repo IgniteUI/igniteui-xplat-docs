@@ -159,6 +159,12 @@
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "state"}], "originalName": "State"} ]
   },
   {
+    "originalName": "CellPosition",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-cell-position.ts","mappedName": "IgrCellPosition"}]
+  },
+  {
     "originalName": "CellTemplateContext",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -195,6 +201,12 @@
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "value"}], "originalName": "Value"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "visibleColumnIndex"}], "originalName": "VisibleColumnIndex"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "width"}], "originalName": "Width"} ]
+  },
+  {
+    "originalName": "ClipboardOptions",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-clipboard-options.ts","mappedName": "IgrClipboardOptions"}]
   },
   {
     "originalName": "Column",
@@ -300,6 +312,7 @@
     "names":[{"platform": "React","fileName": "igr-column-group.ts","dynamicModuleName": "igr-column-group-dynamic-module.ts","moduleName": "igr-column-group-module.ts","mappedName": "IgrColumnGroup"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "IgrColumnCollection","mappedName": "children"}], "originalName": "Children"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "collapsible"}], "originalName": "Collapsible"},
       {"names":[{"platform": "React", "mappedType": "(arg: IgrColumnTemplateContext) => any","mappedName": "collapsibleIndicatorTemplate"}], "originalName": "CollapsibleIndicatorTemplate"} ]
   },
   {
@@ -896,7 +909,7 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "clearFilter"}], "originalName": "ClearFilter"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "clearSearch"}], "originalName": "ClearSearch"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "clearSort"}], "originalName": "ClearSort"},
-      {"names":[{"platform": "React", "mappedType": "IgrGridClipboardOptions","mappedName": "clipboardOptions"}], "originalName": "ClipboardOptions"},
+      {"names":[{"platform": "React", "mappedType": "IgrClipboardOptions","mappedName": "clipboardOptions"}], "originalName": "ClipboardOptions"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "closeAdvancedFilteringDialog"}], "originalName": "CloseAdvancedFilteringDialog"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "collapseAll"}], "originalName": "CollapseAll"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "collapseRow"}], "originalName": "CollapseRow"},
@@ -936,7 +949,9 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getColumnByName"}], "originalName": "GetColumnByName"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getColumnByVisibleIndex"}], "originalName": "GetColumnByVisibleIndex"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getHeaderGroupWidth"}], "originalName": "GetHeaderGroupWidth"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getNextCell"}], "originalName": "GetNextCell"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getPinnedWidth"}], "originalName": "GetPinnedWidth"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getPreviousCell"}], "originalName": "GetPreviousCell"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getRowData"}], "originalName": "GetRowData"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getSelectedColumnsData"}], "originalName": "GetSelectedColumnsData"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getSelectedData"}], "originalName": "GetSelectedData"},
@@ -954,6 +969,7 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "markForCheck"}], "originalName": "MarkForCheck"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "moveColumn"}], "originalName": "MoveColumn"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "moving"}], "originalName": "Moving"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "navigateTo"}], "originalName": "NavigateTo"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "openAdvancedFilteringDialog"}], "originalName": "OpenAdvancedFilteringDialog"},
       {"names":[{"platform": "React", "mappedType": "IgrOverlayOutletDirective","mappedName": "outlet"}], "originalName": "Outlet"},
       {"names":[{"platform": "React", "mappedType": "IgrPaginatorCollection","mappedName": "paginationComponents"}], "originalName": "PaginationComponents"},
@@ -997,6 +1013,7 @@
       {"names":[{"platform": "React", "mappedType": "IgrGridSortingStrategy","mappedName": "sortStrategy"}], "originalName": "SortStrategy"},
       {"names":[{"platform": "React", "mappedType": "IgrSortingExpression[]","mappedName": "sortingExpressions"}], "originalName": "SortingExpressions"},
       {"names":[{"platform": "React", "mappedType": "IgrSortingOptions","mappedName": "sortingOptions"}], "originalName": "SortingOptions"},
+      {"names":[{"platform": "React", "mappedType": "IgrGriStateCollection","mappedName": "stateComponents"}], "originalName": "StateComponents"},
       {"names":[{"platform": "React", "mappedType": "GridSummaryCalculationMode","mappedName": "summaryCalculationMode"}], "originalName": "SummaryCalculationMode"},
       {"names":[{"platform": "React", "mappedType": "GridSummaryPosition","mappedName": "summaryPosition"}], "originalName": "SummaryPosition"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "summaryRowHeight"}], "originalName": "SummaryRowHeight"},
@@ -1404,12 +1421,7 @@
     "originalBaseTypeNamespace": "Infragistics.Controls",
     "originalBaseTypeName": "BaseEventArgsDetail",
     "packageName": "igniteui-webgrids",
-    "names":[{"platform": "React","fileName": "igr-grid-toolbar-export-event-args-detail.ts","mappedName": "IgrGridToolbarExportEventArgsDetail"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "cancel"}], "originalName": "Cancel"},
-      {"names":[{"platform": "React", "mappedType": "IgrBaseExporter","mappedName": "exporter"}], "originalName": "Exporter"},
-      {"names":[{"platform": "React", "mappedType": "IgrGridBaseDirective","mappedName": "grid"}], "originalName": "Grid"},
-      {"names":[{"platform": "React", "mappedType": "IgrExporterOptionsBase","mappedName": "options"}], "originalName": "Options"} ]
+    "names":[{"platform": "React","fileName": "igr-grid-toolbar-export-event-args-detail.ts","mappedName": "IgrGridToolbarExportEventArgsDetail"}]
   },
   {
     "originalName": "GridToolbarHiding",
@@ -2536,14 +2548,6 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
-    "originalName": "GridClipboardOptions",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "React","fileName": "igr-grid-clipboard-options.ts","mappedName": "IgrGridClipboardOptions"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
     "originalName": "TransactionService",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -2556,6 +2560,19 @@
     "names":[{"platform": "React","fileName": "igr-grid-toolbar-content.ts","mappedName": "IgrGridToolbarContent"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"} ]
+  },
+  {
+    "originalName": "GridStateDirective",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-grid-state-directive.ts","dynamicModuleName": "igr-grid-state-directive-dynamic-module.ts","moduleName": "igr-grid-state-directive-module.ts","mappedName": "IgrGridStateDirective"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getState"}], "originalName": "GetState"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
+      {"names":[{"platform": "React", "mappedType": "IgrGridStateOptions","mappedName": "options"}], "originalName": "Options"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
     "originalName": "GridToolbarBaseAction",
@@ -2576,5 +2593,30 @@
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "React","fileName": "igr-summary-expression.ts","mappedName": "IgrSummaryExpression"}]
+  },
+  {
+    "originalName": "GridState",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "GridStateDirective",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-grid-state.ts","dynamicModuleName": "igr-grid-state-dynamic-module.ts","moduleName": "igr-grid-state-module.ts","mappedName": "IgrGridState"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "applyState"}], "originalName": "ApplyState"},
+      {"names":[{"platform": "React", "mappedType": "IgrGridStateOptions","mappedName": "options"}], "originalName": "Options"} ]
+  },
+  {
+    "originalName": "GridStateComponentEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-grid-state-component-event-args.ts","mappedName": "IgrGridStateComponentEventArgs"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "IgrGridState","mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "GridStateOptions",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-grid-state-options.ts","mappedName": "IgrGridStateOptions"}]
   }]
 }
