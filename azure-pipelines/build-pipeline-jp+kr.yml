@@ -31,14 +31,6 @@ variables:
   - name: 'NODE_ENV'
     value: '$(buildType)'
 
-resources:
-  repositories:
-    - repository: IgniteUIDocFX
-      endpoint: ESShared
-      type: github
-      name: IgniteUI/igniteui-docfx
-      ref: '$(Build.SourceBranch)'
-
 stages:
 - stage: Build
   pool:
@@ -101,6 +93,14 @@ stages:
     - template: templates/build-steps-template.yml
       parameters:
         buildType: $(buildType)
+        platform: Angular
+        language: jp
+        isVerbose: ${{ parameters.isVerbose }}
+        workingDir: '$(selfSourcesDir)'
+
+    - template: templates/build-steps-template.yml
+      parameters:
+        buildType: $(buildType)
         platform: WebComponents
         language: kr
         workingDir: '$(selfSourcesDir)'
@@ -121,6 +121,14 @@ stages:
         language: kr
         workingDir: '$(selfSourcesDir)'
         isVerbose: ${{ parameters.isVerbose }}
+
+    - template: templates/build-steps-template.yml
+      parameters:
+        buildType: $(buildType)
+        platform: Angular
+        language: kr
+        isVerbose: ${{ parameters.isVerbose }}
+        workingDir: '$(selfSourcesDir)'
 
     # Angular doesn't produce an artifact that we can publish right now.
     - task: PublishPipelineArtifact@1

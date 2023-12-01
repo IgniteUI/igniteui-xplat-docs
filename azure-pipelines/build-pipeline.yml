@@ -32,14 +32,6 @@ variables:
   - name: 'NODE_ENV'
     value: '$(buildType)'
 
-resources:
-  repositories:
-    - repository: IgniteUIDocFX
-      endpoint: ESShared
-      type: github
-      name: IgniteUI/igniteui-docfx
-      ref: '$(Build.SourceBranch)'
-
 stages:
 - stage: Build
   pool:
@@ -112,4 +104,4 @@ stages:
           platform: Angular
           language: en
           isVerbose: ${{ parameters.isVerbose }}
-          primaryRepoWorkDir: '$(selfSourcesDir)'
+          workingDir: '$(selfSourcesDir)'
