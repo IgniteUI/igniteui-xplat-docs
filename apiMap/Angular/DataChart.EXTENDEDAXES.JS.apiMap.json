@@ -95,6 +95,7 @@
       {"names":[{"platform": "Angular", "mappedType": "Date","mappedName": "actualMaximumValue"}], "originalName": "ActualMaximumValue"},
       {"names":[{"platform": "Angular", "mappedType": "Date","mappedName": "actualMinimumValue"}], "originalName": "ActualMinimumValue"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "dateTimeMemberPath"}], "originalName": "DateTimeMemberPath"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getFullRange"}], "originalName": "GetFullRange"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getIndexClosestToUnscaledValue"}], "originalName": "GetIndexClosestToUnscaledValue"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isDataPreSorted"}], "originalName": "IsDataPreSorted"},

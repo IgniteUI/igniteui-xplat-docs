@@ -173,10 +173,10 @@
     "names":[{"platform": "Angular","fileName": "igx-geographic-polyline-series-component.ts","dynamicModuleName": "igx-geographic-polyline-series-dynamic-module.ts","moduleName": "igx-geographic-polyline-series-module.ts","mappedName": "IgxGeographicPolylineSeriesComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isPolyline"}], "originalName": "IsPolyline"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fill"}], "originalName": "shapeStyle.fill"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "shapeStyle.opacity"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "shapeStyle.stroke"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fill"}], "originalName": "shapeStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "shapeStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "shapeStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
   },
   {
     "originalName": "GeographicProportionalSymbolSeries",
@@ -355,10 +355,10 @@
       {"names":[{"platform": "Angular", "mappedType": "IgDataTemplate","mappedName": "markerTemplate"}], "originalName": "MarkerTemplate"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "markerThickness"}], "originalName": "MarkerThickness"},
       {"names":[{"platform": "Angular", "mappedType": "MarkerType","mappedName": "markerType"}], "originalName": "MarkerType"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fill"}], "originalName": "shapeStyle.fill"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "shapeStyle.opacity"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "shapeStyle.stroke"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fill"}], "originalName": "shapeStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "shapeStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "shapeStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
   },
   {
     "originalName": "GeographicSymbolSeries",
