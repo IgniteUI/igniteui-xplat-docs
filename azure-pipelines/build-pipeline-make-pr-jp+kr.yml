@@ -77,7 +77,7 @@ stages:
           verbose: ${{ parameters.isVerbose }}
           customCommand: 'ci --production=false'
 
-      - template: templates/build-steps-template.yml
+      - template: templates/build-steps-make-pr.yml
         parameters:
           buildType: $(buildType)
           platform: Angular
@@ -85,7 +85,7 @@ stages:
           isVerbose: ${{ parameters.isVerbose }}
           primaryRepoWorkDir: '$(selfSourcesDir)'
 
-      - template: templates/build-steps-template.yml
+      - template: templates/build-steps-make-pr.yml
         parameters:
           buildType: $(buildType)
           platform: Angular
