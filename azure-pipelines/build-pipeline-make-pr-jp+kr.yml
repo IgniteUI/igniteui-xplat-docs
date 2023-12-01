@@ -77,21 +77,21 @@ stages:
           verbose: ${{ parameters.isVerbose }}
           customCommand: 'ci --production=false'
 
-    - template: templates/build-steps-template.yml
-      parameters:
-        buildType: $(buildType)
-        platform: Angular
-        language: jp
-        isVerbose: ${{ parameters.isVerbose }}
-        primaryRepoWorkDir: '$(selfSourcesDir)'
+      - template: templates/build-steps-template.yml
+        parameters:
+          buildType: $(buildType)
+          platform: Angular
+          language: jp
+          isVerbose: ${{ parameters.isVerbose }}
+          primaryRepoWorkDir: '$(selfSourcesDir)'
 
-    - template: templates/build-steps-template.yml
-      parameters:
-        buildType: $(buildType)
-        platform: Angular
-        language: kr
-        isVerbose: ${{ parameters.isVerbose }}
-        primaryRepoWorkDir: '$(selfSourcesDir)'
+      - template: templates/build-steps-template.yml
+        parameters:
+          buildType: $(buildType)
+          platform: Angular
+          language: kr
+          isVerbose: ${{ parameters.isVerbose }}
+          primaryRepoWorkDir: '$(selfSourcesDir)'
 
-      # Angular doesn't produce an artifact that we can publish right now.
+        # Angular doesn't produce an artifact that we can publish right now.
 
