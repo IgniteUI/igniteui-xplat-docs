@@ -25,9 +25,6 @@ variables:
       value: 'production'
     ${{ else }}:  
       value: 'staging'
-  # Since we are using more than 1 git repo, we need to explicitly specify that we want to compile inside the 1st git repo
-  - name: selfSourcesDir
-    value: '$(Build.SourcesDirectory)\igniteui-xplat-docs'
   # This is the variable that the gulp script looks at internally. This is the only way I know how to pass it for Angular
   - name: 'NODE_ENV'
     value: '$(buildType)'
@@ -63,7 +60,7 @@ stages:
         displayName: 'npm ci'
         inputs:
           command: custom
-          workingDir: '$(selfSourcesDir)'
+          workingDir: '$(Build.SourcesDirectory)'
           verbose: ${{ parameters.isVerbose }}
           customCommand: 'ci --production=false'
 
@@ -73,7 +70,7 @@ stages:
           platform: WebComponents
           language: en
           isVerbose: ${{ parameters.isVerbose }}
-          workingDir: '$(selfSourcesDir)'
+          workingDir: '$(Build.SourcesDirectory)'
 
       - template: templates/build-steps-template.yml
         parameters:
@@ -81,7 +78,7 @@ stages:
           platform: Blazor
           language: en
           isVerbose: ${{ parameters.isVerbose }}
-          workingDir: '$(selfSourcesDir)'
+          workingDir: '$(Build.SourcesDirectory)'
 
       - template: templates/build-steps-template.yml
         parameters:
@@ -89,7 +86,7 @@ stages:
           platform: React
           language: en
           isVerbose: ${{ parameters.isVerbose }}
-          workingDir: '$(selfSourcesDir)'
+          workingDir: '$(Build.SourcesDirectory)'
 
       # # Angular doesn't produce an artifact that we can publish right now.
       - task: PublishPipelineArtifact@1
@@ -104,4 +101,4 @@ stages:
           platform: Angular
           language: en
           isVerbose: ${{ parameters.isVerbose }}
-          workingDir: '$(selfSourcesDir)'
+          workingDir: '$(Build.SourcesDirectory)'

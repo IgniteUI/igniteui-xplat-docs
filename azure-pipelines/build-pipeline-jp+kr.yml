@@ -24,9 +24,6 @@ variables:
       value: 'production'
     ${{ else }}:  
       value: 'staging'
-  # Since we are using more than 1 git repo, we need to explicitly specify that we want to compile inside the 1st git repo
-  - name: selfSourcesDir
-    value: '$(Build.SourcesDirectory)\igniteui-xplat-docs'
   # This is the variable that the gulp script looks at internally. This is the only way I know how to pass it for Angular
   - name: 'NODE_ENV'
     value: '$(buildType)'
@@ -62,7 +59,7 @@ stages:
       displayName: 'npm ci'
       inputs:
         command: custom
-        workingDir: '$(selfSourcesDir)'
+        workingDir: '$(Build.SourcesDirectory)'
         verbose: ${{ parameters.isVerbose }}
         customCommand: 'ci --production=false'
 
@@ -71,7 +68,7 @@ stages:
         buildType: $(buildType)
         platform: WebComponents
         language: jp
-        workingDir: '$(selfSourcesDir)'
+        workingDir: '$(Build.SourcesDirectory)'
         isVerbose: ${{ parameters.isVerbose }}
 
     - template: templates/build-steps-template.yml
@@ -79,7 +76,7 @@ stages:
         buildType: $(buildType)
         platform: Blazor
         language: jp
-        workingDir: '$(selfSourcesDir)'
+        workingDir: '$(Build.SourcesDirectory)'
         isVerbose: ${{ parameters.isVerbose }}
 
     - template: templates/build-steps-template.yml
@@ -87,7 +84,7 @@ stages:
         buildType: $(buildType)
         platform: React
         language: jp
-        workingDir: '$(selfSourcesDir)'
+        workingDir: '$(Build.SourcesDirectory)'
         isVerbose: ${{ parameters.isVerbose }}
 
     - template: templates/build-steps-template.yml
@@ -96,14 +93,14 @@ stages:
         platform: Angular
         language: jp
         isVerbose: ${{ parameters.isVerbose }}
-        workingDir: '$(selfSourcesDir)'
+        workingDir: '$(Build.SourcesDirectory)'
 
     - template: templates/build-steps-template.yml
       parameters:
         buildType: $(buildType)
         platform: WebComponents
         language: kr
-        workingDir: '$(selfSourcesDir)'
+        workingDir: '$(Build.SourcesDirectory)'
         isVerbose: ${{ parameters.isVerbose }}
 
     - template: templates/build-steps-template.yml
@@ -111,7 +108,7 @@ stages:
         buildType: $(buildType)
         platform: Blazor
         language: kr
-        workingDir: '$(selfSourcesDir)'
+        workingDir: '$(Build.SourcesDirectory)'
         isVerbose: ${{ parameters.isVerbose }}
 
     - template: templates/build-steps-template.yml
@@ -119,7 +116,7 @@ stages:
         buildType: $(buildType)
         platform: React
         language: kr
-        workingDir: '$(selfSourcesDir)'
+        workingDir: '$(Build.SourcesDirectory)'
         isVerbose: ${{ parameters.isVerbose }}
 
     - template: templates/build-steps-template.yml
@@ -128,7 +125,7 @@ stages:
         platform: Angular
         language: kr
         isVerbose: ${{ parameters.isVerbose }}
-        workingDir: '$(selfSourcesDir)'
+        workingDir: '$(Build.SourcesDirectory)'
 
     # Angular doesn't produce an artifact that we can publish right now.
     - task: PublishPipelineArtifact@1
