@@ -37,7 +37,7 @@ variables:
 resources:
   repositories:
     - repository: IgniteUIDocFX
-      endpoint: ESShared
+      endpoint: IgniteUI
       type: github
       name: IgniteUI/igniteui-docfx
       ref: '$(Build.SourceBranch)'
