@@ -37,7 +37,7 @@ variables:
 resources:
   repositories:
     - repository: IgniteUIDocFX
-      endpoint: IgniteUI
+      endpoint: ESShared
       type: github
       name: IgniteUI/igniteui-docfx
       ref: '$(Build.SourceBranch)'
@@ -86,7 +86,7 @@ stages:
         displayName: 'TEST Create PR to IgniteUI/igniteui-docfx $(Build.SourceBranch)'
         inputs:
           repoType: 'GitHub'
-          githubEndpoint: 'IgniteUI'
+          githubEndpoint: 'ESShared'
           githubRepository: 'IgniteUI/igniteui-docfx'
           sourceBranch: 'ESShared/XPlaform_en_$(Build.BuildNumber)'
           targetBranch: '$(Build.SourceBranch)'
