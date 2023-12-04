@@ -76,6 +76,16 @@ stages:
           workingDir: '$(selfSourcesDir)'
           verbose: ${{ parameters.isVerbose }}
           customCommand: 'ci --production=false'
+      - task: CreatePullRequest@1
+        displayName: 'TEST Create PR to IgniteUI/igniteui-docfx $(Build.SourceBranch)'
+        inputs:
+          repoType: 'GitHub'
+          githubEndpoint: 'IgniteUI'
+          githubRepository: 'IgniteUI/igniteui-docfx'
+          sourceBranch: 'ESShared/XPlaform_en_$(Build.BuildNumber)'
+          targetBranch: '$(Build.SourceBranch)'
+          title: 'Changes from $(Build.DefinitionName) for en'
+          tags: 'dv-gauges;dv-maps;dv-charts'
 
       - template: templates/build-steps-make-pr.yml
         parameters:
@@ -84,6 +94,7 @@ stages:
           language: en
           isVerbose: ${{ parameters.isVerbose }}
           primaryRepoWorkDir: '$(selfSourcesDir)'
+
 
       # Angular doesn't produce an artifact that we can publish right now.
 
