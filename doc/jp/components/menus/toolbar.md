@@ -255,9 +255,9 @@ builder.Services.AddIgniteUIBlazor(
  - `ShowCrosshairs`: チャートの `CrosshairsDisplayMode` プロパティを介してマウスオーバー十字線の注釈を切り替える `ToolActionCheckbox`。
  - `ShowGridlines`: X-Axis に `MajorStroke` を適用することで追加のグリッド線を切り替える `ToolActionCheckbox`。
 
-Save to Image Action
+画像に保存アクション
 
-- `CopyAsImage`: A `ToolActionLabel` that exposes an option to copy the chart to the clipboard.
+- `CopyAsImage`: チャートをクリップボードにコピーするオプションを公開する `ToolActionLabel`。
  - `CopyHeader`: サブ セクションのヘッダー。
 
 ### 垂直方向
