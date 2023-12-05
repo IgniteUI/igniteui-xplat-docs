@@ -10,7 +10,10 @@ _language: ja
 
 # {Platform} {ComponentTitle} 編集
 
-{ProductName} `{ComponentName}` コンポーネントは、レコードの作成、更新、削除などのデータ操作を簡単に実行できます。データの変更は、[セル編集](cell-editing.md)、[行編集](row-editing.md)、および一括編集 (追加予定) で実行できます。`{ComponentName}` は、これらの操作をカスタマイズできる強力なパブリック API を提供します。
+{Platform} {ComponentTitle} の {ProductName} セル編集機能を使用すると、レコードの作成、更新、削除などのデータ操作を簡単に実行できます。`{ComponentName}` は、これらの操作をカスタマイズできる強力なパブリック API を提供します。データ操作のフェーズは次のとおりです。
+- [セル編集](cell-editing.md)
+- [行編集](row-editing.md)
+- 一括編集 (追加予定)
 
 <!-- Angular -->
 
@@ -55,7 +58,7 @@ _language: ja
  - `boolean` データ型ではデフォルトのテンプレートは `Checkbox` を使用します。
  - `currency` データ型の場合、デフォルトのテンプレートは、アプリケーションまたはグリッドのロケール設定に基づいたプレフィックス/サフィックス構成の `InputGroup` を使用します。
  - `percent` パーセントデータ型の場合、デフォルトのテンプレートは、編集された値のプレビューをパーセントで表示するサフィックス要素を持つ `InputGroup` を使用します。
-  <!-- ComponentStart:  Grid -->
+ <!-- ComponentStart:  Grid -->
  - カスタム テンプレートについては、[セル編集トピック](cell-editing.md#セル編集テンプレート)を参照してください。
  <!-- ComponentEnd:  Grid -->
 
@@ -111,35 +114,35 @@ _language: ja
 ```
 
 ```html
-<igc-grid id="grid" primary-key="ProductID" (sorting)="onSorting($event)">
+<igc-grid id="grid" primary-key="ProductID" >
 </igc-grid>
 ```
 
-```ts
-constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
 
-    this._bind = () => {
-        grid.data = this.data;
-        grid.sorting = this.onSorting;
-    }
-    this._bind();
-
-}
-```
+<!-- Angular -->
 
 ```typescript
 public onSorting(event: ISortingEventArgs) {
     this.grid.endEdit(true);
-    // (event.owner as IgxGridComponent).endEdit(true);
 }
 ```
+
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
 ```typescript
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    grid.data = this.data;
+    grid.addEventListener("sorting", this.onSorting);
+}
+
 public onSorting(event: IgcSortingEventArgs) {
     this.grid.endEdit(true);
-    // (event.owner as IgxGridComponent).endEdit(true);
 }
 ```
+<!-- end: WebComponents -->
 
 ```razor
 <IgbGrid
@@ -155,9 +158,18 @@ function SortingHandler() {
 igRegisterScript("SortingHandler", SortingHandler, false);
 ```
 
+```tsx
+function onSorting(grid: IgrGridBaseDirective, event: IgrSortingEventArgs) {
+    grid.endEdit(true);
+}
+
+<IgrGrid data={localData} primaryKey="ProductID" sorting={onSorting}>
+</IgrGrid>
+```
+
 ## API リファレンス
 
-* `GridCell`
+* `Cell`
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
@@ -170,13 +182,14 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 * `TreeGridRow`
 
 <!-- ComponentEnd: TreeGrid -->
-
+<!-- Angular -->
 * `DatePickerComponent`
 * `CheckboxComponent`
 * `Overlay`
+<!-- end: Angular -->
 ## その他のリソース
 
-<!-- Angular -->
+<!-- Angular, WebComponents -->
 
 
 * [列のデータ型](column-types.md#デフォルトのテンプレート)
@@ -193,7 +206,7 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 <!-- * [検索](search.md) -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- end: Angular -->
+<!-- end: Angular, WebComponents -->
 
 <!-- Blazor -->
 

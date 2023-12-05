@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} の縮小可能な列グループ - インフラジスティックス
+title: {Platform} {ComponentTitle} 縮小可能な列グループ - {ProductName}
 _description: {Platform} {ComponentTitle} の縮小可能な列グループを使用して、より小さく簡潔なデータのセットを表示/非表示にする機能を利用します。今すぐお試しください。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,7 +9,7 @@ _language: ja
 ---
 # {Platform} {ComponentTitle} の縮小可能な列グループの概要
 
-複数列ヘッダーを使用すると、複数レベルのネストされた列と列グループを使用できます。また、各列グループを**縮小可能**としてマークできます。**縮小可能な複数列ヘッダー**により、縮小/展開が可能です。現在のヘッダーの下にネストされたヘッダーを表示および非表示にします。これにより、たとえば短縮/要約された情報が得られます。
+{Platform} {ComponentTitle} の {ProductName} の縮小可能な列グループ機能を使用すると、`{ComponentName}` 内の複数レベルのネストされた列と列グループをグループ化し、これらのグループを縮小したり展開したりしてデータの視覚化とナビゲーションを向上させるオプションを提供することで、それらを整理および管理できます。
 
 ## {Platform} {ComponentTitle} の縮小可能な列グループの例
 
@@ -35,9 +35,16 @@ ng add igniteui-angular
 
 <!-- WebComponents -->
 ```cmd
-npm install @webcomponents/custom-elements
+npm install --save igniteui-webcomponents-core
+npm install --save igniteui-webcomponents-grids
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```cmd
+npm install igniteui-react-grids
+```
+<!-- end: React -->
 
 {ProductName} については、[はじめに](../../general-getting-started.md) トピックををご覧ください。
 
@@ -106,6 +113,31 @@ npm install @webcomponents/custom-elements
 </igc-column-group>
 ```
 
+```tsx
+<IgrColumnGroup collapsible="true" header="Customer Information">
+    <IgrColumn field="CustomerName" header="Customer Name" visibleWhenCollapsed="true">
+    </IgrColumn>
+    <IgrColumn field="CustomerID" header="Customer ID" visibleWhenCollapsed="false">
+    </IgrColumn>
+    <IgrColumn field="CustomerFirstName" header="First Name" visibleWhenCollapsed="false">
+    </IgrColumn>
+    <IgrColumn field="CustomerLastName" header="Last Name" visibleWhenCollapsed="false">
+    </IgrColumn>
+    <IgrColumnGroup header="Customer Address">
+        <IgrColumn field="CustomerAddress"  header="Full Address" width="250px" visibleWhenCollapsed="true">
+        </IgrColumn>
+        <IgrColumn field="Address" visibleWhenCollapsed="false">
+        </IgrColumn>
+        <IgrColumn  field="City" visibleWhenCollapsed="false">
+        </IgrColumn>
+        <IgrColumn field="Country" visibleWhenCollapsed="false">
+        </IgrColumn>
+        <IgrColumn field="PostalCode" header="Postal Code" visibleWhenCollapsed="false">
+        </IgrColumn>
+    </IgrColumnGroup>
+</IgrColumnGroup>
+```
+
 すべての子列に 3 つの状態があります。
 -	親の展開状態に関係なく、常に表示できます。
 -	親が縮小されているときに表示できます。
@@ -113,8 +145,7 @@ npm install @webcomponents/custom-elements
 
 縮小可能として指定された列グループの初期状態は `Expanded` が **true** に設定されていますが、**false** に設定することでこの動作を簡単に変更できます。
 
-<!-- Angular -->
-
+<!-- Angular, WebComponents, React -->
 ## 展開/縮小インジケーター テンプレート
 
 `{ComponentName}` のデフォルトの展開インジケーターは次のとおりです。
@@ -126,6 +157,74 @@ npm install @webcomponents/custom-elements
 <img class="responsive-img" src="../../../images/general/collapsed_indicator.png" style="width: 400px; height: 130px"/>
 
 また、デフォルトの展開/縮小インジケーターを変更する必要がある場合は、これを実現するためのテンプレート オプションを提供します。
+
+<!-- CollapsibleIndicatorTemplate not being reevaluated: Work Item #23864  -->
+```razor
+ <IgbColumnGroup @ref="infoColumn" Header="Customer Information" Collapsible="true">
+    <IgbColumn Field="CustomerName" Header="Full name" VisibleWhenCollapsed="true"></IgbColumn>
+    <IgbColumn Field="CustomerID" Header="Customer ID" VisibleWhenCollapsed="false"></IgbColumn>
+    <IgbColumn Field="FirstName" Header="First Name" VisibleWhenCollapsed="false"></IgbColumn>
+    <IgbColumn Field="LastName" Header="Last Name" VisibleWhenCollapsed="false"></IgbColumn>
+    <IgbColumnGroup @ref="addressColumn" Header="Customer Address">
+        <IgbColumn Field="Country" Header="Country" Sortable="true"></IgbColumn>
+        <IgbColumn Field="City" Header="City" Sortable="true"></IgbColumn>
+    </IgbColumnGroup>
+ </IgbColumnGroup>
+
+@code {
+    private IgbColumnGroup infoColumn;
+    private IgbColumnGroup addressColumn;
+
+    public RenderFragment<IgbColumnTemplateContext> ColumnIndicatorTemplate = (context) =>
+    {
+        string icon = context.Column.Expanded ? "remove" : "add";
+        return @<IgbIcon IconName="@icon" Collection="material"></IgbIcon>;
+    };
+    
+    protected override void OnAfterRender(bool firstRender)
+    {
+        this.infoColumn.CollapsibleIndicatorTemplate = this.ColumnIndicatorTemplate;
+        this.addressColumn.CollapsibleIndicatorTemplate = this.ColumnIndicatorTemplate;
+    }
+}
+```
+
+```html
+<igc-column-group id="info" header="Customer Information" collapsible="true">
+    <igc-column field="CustomerName" header="Fullname" data-type="String" visible-when-collapsed="true"></igx-column>
+    <igc-column field="CustomerID" header="Customer ID" data-type="String" visible-when-collapsed="false"></igx-column>
+    <igc-column-group id="address" header="Customer Address" collapsible="true">
+        <igc-column field="Country" header="Country" data-type="String" sortable="true" visible-when-collapsed="true"></igx-column>
+        <igc-column field="City" header="City" data-type="String" sortable="true" visible-when-collapsed="false"></igx-column>
+    </igc-column-group>
+</igc-column-group>
+```
+```ts
+constructor() {
+    var info = document.getElementById('info') as IgcColumnGroupComponent;
+    var address = document.getElementById('address') as IgcColumnGroupComponent;
+    info.collapsibleIndicatorTemplate = this.indTemplate;
+    address.collapsibleIndicatorTemplate = this.indTemplate;
+}
+
+public indTemplate = (ctx: IgcColumnTemplateContext) => {
+    return html`
+        <igc-icon name="${ctx.column.expanded ? 'remove' : 'add'}" draggable="false"></igc-icon>
+    `;
+}
+```
+
+```tsx
+  function collapsibleIndicatorTemplate(e: { dataContext: IgrColumnTemplateContext }) {
+    return (
+    <div>
+      <IgrIcon iconName={e.dataContext.column.expanded ? 'remove' : 'add'}></IgrIcon>
+    </div>)
+  }
+```
+
+<!-- end: Angular, WebComponents, React -->
+<!-- Angular -->
 
 ### プロパティの使用
 
@@ -143,43 +242,6 @@ npm install @webcomponents/custom-elements
         <igx-column field="City" header="City" [dataType]="'string'" [sortable]="true" [visibleWhenCollapsed]="false"></igx-column>
     </igx-column-group>
 </igx-column-group>
-```
-
-```razor
-    public RenderFragment<IgbColumnTemplateContext> Template = (context) =>
-    {
-        string icon = context.Column.Expanded ? "remove" : "add";
-        return @<IgbIcon IconName="@icon" Collection="material"></IgbIcon>;
-    };
-```
-
-```html
-<igc-column-group id="info" header="Customer Information" collapsible="true">
-    <igc-column field="CustomerName" header="Fullname" data-type="String" visible-when-collapsed="true"></igx-column>
-    <igc-column field="CustomerID" header="Customer ID" data-type="String" visible-when-collapsed="false"></igx-column>
-    <igc-column-group id="address" header="Customer Address" collapsible="true">
-        <igc-column field="Country" header="Country" data-type="String" sortable="true" visible-when-collapsed="true"></igx-column>
-        <igc-column field="City" header="City" data-type="String" sortable="true" visible-when-collapsed="false"></igx-column>
-    </igc-column-group>
-</igc-column-group>
-```
-```ts
-constructor() {
-    var info = this.info = document.getElementById('info') as IgcColumnGroupComponent;
-    var address = this.address = document.getElementById('address') as IgcColumnGroupComponent;
-
-    this._bind = () => {
-        info.collapsibleIndicatorTemplateRef = this.indTemplate;
-        address.collapsibleIndicatorTemplateRef = this.indTemplate;
-    }
-    this._bind();
-}
-
-public indTemplate = (ctx: IgcCellTemplateContext) => {
-    return html`
-        <igc-icon draggable="false" >${ctx.cell.column.expanded ? 'remove' : 'add'} </igc-icon>
-    `;
-}
 ```
 
 ### igxCollapsibleIndicator ディレクティブの使用
@@ -200,37 +262,9 @@ public indTemplate = (ctx: IgcCellTemplateContext) => {
 </igx-column-group>
 ```
 
-```html
-<igc-column-group id="info" header="Customer Information" collapsible="true">
-    <igc-column field="CustomerName" header="Fullname" data-type="string" visible-when-collapsed="true"></igx-column>
-    <igc-column field="CustomerID" header="Customer ID" data-type="string" visible-when-collapsed="false"></igx-column>
-    <igc-column-group id="address" header="Customer Address" collapsible="true">
-        <igc-column field="Country" header="Country" data-type="string" sortable="true" visible-when-collapsed="true"></igx-column>
-        <igc-column field="City" header="City" data-type="string" sortable="true" visible-when-collapsed="false"></igx-column>
-    </igc-column-group>
-</igc-column-group>
-```
-```ts
-constructor() {
-    var info = this.info = document.getElementById('info') as IgcColumnGroupComponent;
-    var address = this.address = document.getElementById('address') as IgcColumnGroupComponent;
-
-    this._bind = () => {
-        info.collapsibleIndicatorTemplateRef = this.indTemplate;
-        address.collapsibleIndicatorTemplateRef = this.indTemplate;
-    }
-    this._bind();
-}
-
-public indTemplate = (ctx: IgcCellTemplateContext) => {
-    return html`
-        <igc-icon draggable="false" >${ctx.cell.column.expanded ? 'remove' : 'add'} </igc-icon>
-    `;
-}
-```
 <!-- end: Angular -->
 
-> [!Note]
+> **注**
 > 最初にグループを縮小するオプションは、非表示の列よりも優先されることに注意してください。
 > hidden プロパティを使用して列を非表示にすることを宣言し、同じ列を表示するグループが定義されている場合、列が表示されます。
 

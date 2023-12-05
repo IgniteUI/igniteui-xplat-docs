@@ -111,6 +111,11 @@ _language: ja
 
 `sample="/charts/category-chart/line-chart-styling", height="600", alt="{Platform} 折れ線チャートのスタイル設定"`
 
+`XamDataChart` を使用し、系列に `DashArray` プロパティを設定することで、`LineSeries` 内に破線を作成することもできます。このプロパティは、線の結果として得られるダッシュの長さを表す数値の配列を受け取ります。
+
+次の例は、`XamDataChart` の `LineSeries` での `DashArray` の使用法を示しています。
+
+`sample="/charts/data-chart/dash-array-series", height="600", alt="{Platform} 折れ線チャートの破線配列"`
 
 
 <div class="divider--half"></div>

@@ -95,7 +95,7 @@ defineComponents(IgcAvatarComponent);
 
 ```tsx
 <IgrAvatar>
-    <IgrIcon iconName="home" />
+    <IgrIcon name="home" />
 </IgrAvatar>
 ```
 
@@ -119,7 +119,7 @@ defineComponents(IgcAvatarComponent);
 
 ```tsx
 <IgrAvatar initials="AZ">
-    <IgrIcon iconName="home" />
+    <IgrIcon name="home" />
 </IgrAvatar>
 ```
 
@@ -152,7 +152,7 @@ defineComponents(IgcAvatarComponent);
 <IgrAvatar initials="AZ"
            src="https://static.infragistics.com/xplatform/images/people/men/1.jpg"
            alt="A photo of a man.">
-    <IgrIcon iconName="home" />
+    <IgrIcon name="home" />
 </IgrAvatar>
 ```
 
@@ -168,10 +168,9 @@ defineComponents(IgcAvatarComponent);
 `sample="/layouts/avatar/image", height="80", alt="{Platform} Avatar の例"`
 
 
-
-アバターは、`circle`、`rounded`、`square` の 3 つの形状をサポートしています。アバターの形状は、`shape` 属性を介して変更できます。
-
 ### 形状
+
+アバターは、`circle`、`rounded`、`square` の 3 つの形状をサポートしています。アバターの形状は `square` であり、`shape` 属性を介して変更できます。
 
 `sample="/layouts/avatar/shape", height="80", alt="{Platform} Avatar の例"`
 
@@ -179,7 +178,13 @@ defineComponents(IgcAvatarComponent);
 
 ### サイズ
 
-形状とは別に、`size` 属性を設定することでアバターのサイズを変更することもできます。サポートされているサイズは `small`、`medium`、`large` です。
+形状とは別に、アバターのサイズも `--ig-size` CSS 変数を利用して変更できます。サポートされているサイズは、`small` (デフォルト)、`medium`、`large` です。次のコード スニペットは、異なるコンポーネント サイズを使用する方法を示しています。
+
+```css
+igc-avatar {
+    --ig-size: var(--ig-size-large);
+}
+```
 
 `sample="/layouts/avatar/size", height="130", alt="{Platform} Avatar の例"`
 
