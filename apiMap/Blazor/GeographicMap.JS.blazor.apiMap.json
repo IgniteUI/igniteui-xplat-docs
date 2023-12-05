@@ -149,10 +149,10 @@
     "names":[{"platform": "Blazor","fileName": "GeographicPolylineSeries.cs","mappedName": "IgbGeographicPolylineSeries"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "ShapeStyleSelector"}], "originalName": "ShapeStyleSelector"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ShapeFill"}], "originalName": "shapeStyle.fill"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ShapeOpacity"}], "originalName": "shapeStyle.opacity"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ShapeStroke"}], "originalName": "shapeStyle.stroke"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ShapeStrokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ShapeFill"}], "originalName": "shapeStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ShapeOpacity"}], "originalName": "shapeStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ShapeStroke"}], "originalName": "shapeStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ShapeStrokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
   },
   {
     "originalName": "GeographicProportionalSymbolSeries",
@@ -326,10 +326,10 @@
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "MarkerThickness"}], "originalName": "MarkerThickness"},
       {"names":[{"platform": "Blazor", "mappedType": "MarkerType","mappedName": "MarkerType"}], "originalName": "MarkerType"},
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "ShapeStyleSelector"}], "originalName": "ShapeStyleSelector"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ShapeFill"}], "originalName": "shapeStyle.fill"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ShapeOpacity"}], "originalName": "shapeStyle.opacity"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ShapeStroke"}], "originalName": "shapeStyle.stroke"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ShapeStrokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ShapeFill"}], "originalName": "shapeStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ShapeOpacity"}], "originalName": "shapeStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ShapeStroke"}], "originalName": "shapeStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ShapeStrokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
   },
   {
     "originalName": "GeographicSymbolSeries",

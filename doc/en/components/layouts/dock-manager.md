@@ -442,11 +442,7 @@ igc-dockmanager::part(pane-header-maximize-button) {
 
 If everything went well, we should now have a DockManager with customized icons and tab area. Let's have a look at it:
 
-<!-- WebComponents -->
 `sample="/layouts/dock-manager/customize-buttons", height="700", alt="{Platform} Dock Manager Customize Buttons Example"`
-
-
-<!-- end: WebComponents -->
 
 Below you can find a list containing the slot names for all of the buttons as well as the splitter handle:
 
@@ -545,8 +541,6 @@ The shortcuts are as follows:
 
 Practice all of the above mentioned actions in the sample [demo](dock-manager.md#{PlatformLower}-dock-manager-example).
 
-<!-- WebComponents -->
-
 ## Styling
 
 The Dock Manager uses a shadow DOM to encapsulate his styles and behaviors. As a result, you can't simply target its internal elements with the usual CSS selectors. That is why we expose components **parts** that can be targeted with the **::part** CSS selector.
@@ -615,6 +609,8 @@ In the following example, we demonstrate the ability of customizing the Dock Man
 | `splitter-handle` | The splitter handle. |
 | `horizontal` | Indicates a horizontal position. Applies to `splitter-handle`. |
 | `vertical` | Indicates a vertical position. Applies to `splitter-handle`. |
+
+<!-- WebComponents -->
 
 ### Themes
 

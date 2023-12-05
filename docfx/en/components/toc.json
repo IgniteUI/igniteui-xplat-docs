@@ -643,7 +643,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Clipboard Interactions",
         "href": "grids/tree-grid/clipboard-interactions.md",
         "status": "NEW"
@@ -703,7 +703,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Display Density",
         "href": "grids/tree-grid/display-density.md",
         "status": "NEW"
@@ -712,6 +712,12 @@
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "Editing",
         "href": "grids/tree-grid/editing.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "Export to Excel",
+        "href": "grids/tree-grid/export-excel.md",
         "status": "NEW"
       },
       {
@@ -832,6 +838,12 @@
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "Virtualization and performance",
         "href": "grids/tree-grid/virtualization.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "Blazor"],
+        "name": "Load On Demand",
+        "href": "grids/tree-grid/load-on-demand.md",
         "status": "NEW"
       }
     ]
@@ -1612,6 +1624,12 @@
     "exclude": ["Angular"],
     "name": "Button",
     "href": "inputs/button.md"
+  },
+  {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "Button Group",
+    "href": "inputs/button-group.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
