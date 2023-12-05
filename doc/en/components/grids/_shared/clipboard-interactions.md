@@ -1,5 +1,5 @@
 ---
-title: Clipboard Interactions in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Clipboard Interactions - {ProductName}
 _description: The {Platform} {ComponentTitle} Clipboard functionality provides fast, easy and customizable way to copy, paste and export data to Excel or other programs. Try it now!
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
