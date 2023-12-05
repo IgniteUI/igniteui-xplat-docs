@@ -33,7 +33,7 @@ For more information on installing Ignite UI for Blazor using NuGet, read the [I
 
 ## Register Ignite UI for Blazor
 
-### .NET 6 Applications
+### .NET 6 and Later Applications
 
 1 - Open the **Program.cs** file and register the Ignite UI for Blazor Service by calling **builder.Services.AddIgniteUIBlazor** function:
 

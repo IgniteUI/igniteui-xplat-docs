@@ -1,5 +1,5 @@
 ---
-title: Row Adding in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Row Adding - {ProductName}
 _description: Learn how to use and customize the built-in row adding functionality with {Platform} and utilize intuitive grid row adding and CRUD capabilities.
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -11,7 +11,8 @@ namespace: Infragistics.Controls
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
-The `{ComponentName}` provides a convenient way to perform data manipulations through inline row adding and a powerful API for {Platform} CRUD operations. Add an `ActionStrip` component with editing actions enabled in the grid's template, hover a row and use the provided button, press <kbd>ALT</kbd> + <kbd>+</kbd> to spawn the row adding UI.
+The {ProductName} Row Adding feature in {Platform} {ComponentTitle} enables users to input and submit new data records without navigating to a separate form or page. With the `{ComponentName}`, users can manipulate data through inline row adding and a powerful API for CRUD operations.
+Add an `ActionStrip` component with editing actions enabled in the grid's template. After that hover a row and use the provided button. Finally press <kbd>ALT</kbd> + <kbd>+</kbd> to spawn the row adding UI.
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
@@ -80,6 +81,23 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+```tsx
+<{ComponentSelector} autoGenerate="false" data={NwindData} primaryKey="ProductID" rowEditable="true">
+    <IgrColumn field="ProductID" header="Product ID" dataType="Number"></IgrColumn>
+    <IgrColumn field="ReorderLevel" header="Reorder Level" dataType="Number"></IgrColumn>
+    <IgrColumn field="ProductName" header="Product Name" dataType="String"></IgrColumn>
+    <IgrColumn field="UnitsInStock" header="Units In Stock" dataType="Number"></IgrColumn>
+    <IgrColumn field="OrderDate" header="Order Date" dataType="Date"></IgrColumn>
+    <IgrColumn field="Discontinued" header="Discontinued" dataType="Boolean"></IgrColumn>
+
+    <IgrActionStrip>
+        <IgrGridEditingActions addRow="true"></IgrGridEditingActions>
+    </IgrActionStrip>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
 ```razor
 <{ComponentSelector} AutoGenerate="false" Id="grid" Data="NwindData" PrimaryKey="ProductID" RowEditable="true">
     <IgbColumn Field="ProductID" Header="Product ID" DataType="GridColumnDataType.Number"></IgbColumn>
@@ -136,6 +154,21 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} autoGenerate="false" primaryKey="ID" foreignKey="ParentID" rowEditable="true">
+    <IgrColumn field="Name" header="Name" dataType="String"></IgrColumn>
+    <IgrColumn field="Title" header="Title" dataType="String"></IgrColumn>
+    <IgrColumn field="HireDate" header="Hire Date" dataType="Date"></IgrColumn>
+    <IgrColumn field="OnPTO" header="On PTO" dataType="Boolean"></IgrColumn>
+
+    <IgrActionStrip>
+        <IgrGridEditingActions addRow="true"></IgrGridEditingActions>
+    </IgrActionStrip>
+</{ComponentSelector}>
+```
+<!-- end: React -->
 
 ```razor
 <{ComponentSelector} AutoGenerate="false" Id="treegrid" PrimaryKey="ID" ForeignKey="ParentID" RowEditable="true">
@@ -302,10 +335,19 @@ The internal `BaseTransactionService` is automatically provided for `{ComponentN
 
 Using `BeginAddRowById` requires you to specify the row to use as context for the operation by its `RowID` (PK). The method then functions as though the end-user clicked on the add row action strip button for the specified row, spawning the UI under it. You can also make the UI spawn as the very first row in the grid by passing `null` for the first parameter.
 
+<!-- WebComponents -->
 ```typescript
 this.grid.beginAddRowById('ALFKI');  // Spawns the add row UI under the row with PK 'ALFKI'
 this.grid.beginAddRowById(null);     // Spawns the add row UI as the first record
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```typescript
+gridRef.current.beginAddRowById('ALFKI');  // Spawns the add row UI under the row with PK 'ALFKI'
+gridRef.current.beginAddRowById(null);     // Spawns the add row UI as the first record
+```
+<!-- end: React -->
 
 ```razor
 @code {
@@ -316,10 +358,19 @@ this.grid.beginAddRowById(null);     // Spawns the add row UI as the first recor
 
 The `beginAddRowByIndex` method works similarly but requires you to specify the index at which the UI should spawn. Allowed values range between 0 and the size of the data view - 1.
 
+<!-- WebComponents -->
 ```typescript
 this.grid.beginAddRowByIndex(10);   // Spawns the add row UI at index 10
 this.grid.beginAddRowByIndex(0);    // Spawns the add row UI as the first record
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```typescript
+gridRef.current.beginAddRowByIndex(10);   // Spawns the add row UI at index 10
+gridRef.current.beginAddRowByIndex(0);    // Spawns the add row UI as the first record
+```
+<!-- end: React -->
 
 ```razor
 @code {
@@ -425,6 +476,14 @@ this.grid.rowAddTextTemplate = (ctx: IgcGridEmptyTemplateContext) => {
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+```tsx
+gridRef.current.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
+    return ('Adding Row');
+}
+```
+<!-- end: React -->
+
 ```razor
 <{ComponentSelector} Data="data" PrimaryKey="ProductID" AutoGenerate="false" RowEditable="true" RowAddTextTemplate="addTextTemplate">
 </{ComponentSelector}>
@@ -465,8 +524,8 @@ REQUIRES FIX!
 ```ts
 this.grid.rowEditActionsTemplate = (endRowEdit: IgcGridRowEditActionsTemplateContext) => {
     return html`
-        <button @click="${evt => endRowEdit.$implicit(false, evt)}">Cancel</button>
-	    <button @click="${evt => endRowEdit.$implicit(true, evt)}">Apply</button>
+        <button @click="${evt => endRowEdit.implicit(false, evt)}">Cancel</button>
+	    <button @click="${evt => endRowEdit.implicit(true, evt)}">Apply</button>
     `;
 }
 ```
@@ -480,8 +539,8 @@ this.grid.rowEditActionsTemplate = (endRowEdit: IgcGridRowEditActionsTemplateCon
 igRegisterScript("rowEditActionsTemplate", (endRowEdit) => {
     var html = window.igTemplating.html;
     return html`<div class="row-actions">
-        <button @click="${evt => endRowEdit.$implicit(false, evt)}">Cancel</button>
-        <button @click="${evt => endRowEdit.$implicit(true, evt)}">Apply</button>
+        <button @click="${evt => endRowEdit.implicit(false, evt)}">Cancel</button>
+        <button @click="${evt => endRowEdit.implicit(true, evt)}">Apply</button>
     </div>`
 }, false);
 ```

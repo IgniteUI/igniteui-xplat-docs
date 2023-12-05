@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} の行選択 - インフラジスティックス
+title: 	{Platform} {ComponentTitle} 行の選択 - {ProductName}
 _description: {Platform} {ComponentTitle} は、{ComponentTitle} 一括編集を使用して、基になるデータに影響を与えずにデータ操作を実行します。デモと例をお試しください。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -10,7 +10,10 @@ _language: ja
 
 # {Platform} {ComponentTitle} 行の選択
 
-{Platform} `{ComponentName}` の行選択では、行内の他のすべての列に先行する行セレクター列があります。行選択ボックスをクリックすると、行の選択や選択解除、複数行にわたるデータの選択が可能になります。
+{Platform} {ComponentTitle} の {ProductName} 行選択機能を使用すると、ユーザーは 1 つまたは複数のデータ行を対話的に選択、強調表示、または選択解除できます。`{ComponentName}` 内に使用可能な選択モードがいくつかあります。
+- None (なし) 選択
+- Multiple (複数) 選択
+- Single (単一) 選択
 
 ## {Platform} 行選択の例
 
@@ -75,14 +78,25 @@ constructor() {
     grid.addEventListener("rowSelectionChanging", this.handleRowSelection);
 }
 ```
-<!-- end: WebComponents -->
 
 ```typescript
 public handleRowSelection(args: IgcRowSelectionEventArgs) {
-    if (args.added.length && args.added[0] === 3) {
-        args.cancel = true;
+    if (args.detail.added.length && args.detail.added[0] === 3) {
+        args.detail.cancel = true;
     }
 }
+```
+<!-- end: WebComponents -->
+
+```tsx
+function handleRowSelection(args: IgrRowSelectionEventArgs) {
+    if (args.detail.added.length && args.detail.added[0] === 3) {
+        args.detail.cancel = true;
+    }
+}
+
+<{ComponentSelector} rowSelection="single" autoGenerate="true" allowFiltering="true" rowSelectionChanging={handleRowSelection}>
+</{ComponentSelector}>
 ```
 
 ```razor
@@ -134,6 +148,12 @@ public handleRowSelection(args: IgcRowSelectionEventArgs) {
              AutoGenerate=true
              Data=northwindEmployees>
     </{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple"
+        allowFiltering="true" autoGenerate="true">
+</{ComponentSelector}>
 ```
 
 <!-- ComponentStart: TreeGrid -->
@@ -247,6 +267,16 @@ public onClickSelect() {
 ```
 <!-- end: WebComponents -->
 
+```tsx
+function onClickSelect() {
+    gridRef.current.selectRows([1,2,5], true);
+}
+
+<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate="true" ref={gridRef}>
+</{ComponentSelector}>
+<button onClick={onClickSelect}>Select 1,2 and 5</button>
+```
+
 1、2、および 5 の ID を持つデータ エントリに対応する行を `{ComponentName}` の選択に追加します。
 
 ### 行選択の解除
@@ -307,6 +337,16 @@ public onClickDeselect() {
 ```
 <!-- end: WebComponents -->
 
+```tsx
+function onClickDeselect() {
+    gridRef.current.deselectRows([1,2,5]);
+}
+
+<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate="true" ref={gridRef}>
+</{ComponentSelector}>
+<button onClick={onClickDeselect}>Deselect 1,2 and 5</button>
+```
+
 ### 行選択イベント
 
 行選択に何らかの変更があると、`RowSelectionChanging` イベントが発生します。`RowSelectionChanging` は次の引数を公開します。
@@ -336,14 +376,19 @@ constructor() {
     grid.data = this.data;
     grid.addEventListener("rowSelectionChanging", this.handleRowSelectionChange);
 }
-```
-
-```typescript
-/* selectionExample.component.ts */
 
 public handleRowSelectionChange(args) {
-    args.cancel = true; // this will cancel the row selection
+    args.detail.cancel = true; // this will cancel the row selection
 }
+```
+
+```tsx
+function handleRowSelectionChange(args: IgrRowSelectionEventArgs) {
+    args.detail.cancel = true; // this will cancel the row selection
+}
+
+<{ComponentSelector} rowSelectionChanging={handleRowSelectionChange}>
+</{ComponentSelector}>
 ```
 
 ```razor
@@ -406,11 +451,14 @@ public getSelectedRows() {
     }
 ```
 
+```tsx
+function getSelectedRows() {
+    return gridRef.current.selectedRows;
+}
+```
+
 さらに、`SelectedRows` に行 ID を割り当てると、グリッドの選択状態を変更できます。
 
-```typescript
-public mySelectedRows = [1, 2, 3]; // an array of row IDs
-```
 
 <!-- Angular -->
 ```html
@@ -423,11 +471,20 @@ public mySelectedRows = [1, 2, 3]; // an array of row IDs
 <!-- end: Angular -->
 
 ```ts
+
+public mySelectedRows = [1, 2, 3]; // an array of row IDs
 constructor() {
     const grid = document.getElementById('grid') as IgcGridComponent;
     grid.data = this.data;
     grid.selectedRows = this.mySelectedRows;
 }
+```
+
+```tsx
+const mySelectedRows = [1,2,3];
+
+<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate="false" selectedRows={mySelectedRows}>
+</{ComponentSelector}>
 ```
 
 ```razor
@@ -473,15 +530,14 @@ constructor() {
 ```razor
 igRegisterScript("WebGridRowSelectorTemplate", (ctx) => {
     var html = window.igTemplating.html;
-    var implicit = ctx["$implicit"];
-    if (implicit.selected) {
+    if (ctx.implicit.selected) {
         return html`<div style="justify-content: space-evenly;display: flex;width: 70px;">
-    <span> ${implicit.index}</span>
+    <span> ${ctx.implicit.index}</span>
 <igc-checkbox checked></igc-checkbox>
 </div>`;
     } else {
         return html`<div style="justify-content: space-evenly;display: flex;width: 70px;">
-    <span> ${implicit.index}</span>
+    <span> ${ctx.implicit.index}</span>
 <igc-checkbox></igc-checkbox>
 </div>`;
     }
@@ -490,19 +546,45 @@ igRegisterScript("WebGridRowSelectorTemplate", (ctx) => {
 
 ```ts
 public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
-    const implicit: any = ctx["$implicit"];
-    if (implicit.selected) {
+    if (ctx.implicit.selected) {
         return html`<div style="justify-content: space-evenly;display: flex;width: 70px;">
-            <span> ${implicit.index}</span>
+            <span> ${ctx.implicit.index}</span>
             <igc-checkbox checked></igc-checkbox>
             </div>`;
     } else {
         return html`<div style="justify-content: space-evenly;display: flex;width: 70px;">
-            <span> ${implicit.index}</span>
+            <span> ${ctx.implicit.index}</span>
             <igc-checkbox></igc-checkbox>
             </div>`;
     }
 }
+```
+
+```tsx
+function rowSelectorTemplate(ctx: IgrRowSelectorTemplateContext) {
+    if (ctx.dataContext.implicit.selected) {
+        return (
+            <>
+                <div style={{justifyContent: 'space-evenly', display: 'flex', width: '70px'}}>
+                    <span> ${ctx.dataContext.implicit.index}</span>
+                    <IgrCheckbox checked></IgrCheckbox>
+                </div>
+            </>
+        );
+    } else {
+        return (
+            <>
+                <div style={{justifyContent: 'space-evenly', display: 'flex', width: '70px'}}>
+                    <span> ${ctx.dataContext.implicit.index}</span>
+                    <IgrCheckbox checked></IgrCheckbox>
+                </div>
+            </>
+        );
+    }
+}
+
+<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate="false" rowSelectorTemplate={rowSelectorTemplate}>
+</{ComponentSelector}>
 ```
 
 `rowID` プロパティを使用して、`{ComponentSelector}` 行の参照を取得できます。行セレクター要素に `click` ハンドラーを実装する場合に便利です。
@@ -513,14 +595,24 @@ public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
 ```
 ```ts
 public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
-    const implicit: any = ctx["$implicit"];
     return html`
         <igc-checkbox
             @click="${(event: any) => {
-            this.onSelectorClick(event, implicit.key);
+            this.onSelectorClick(event, ctx.implicit.key);
             }}"
         ></igc-checkbox>
     `;
+}
+```
+
+```tsx
+public rowSelectorTemplate(ctx: IgrRowSelectorTemplateContext) {
+    return (
+        <>
+            <IgrCheckbox onClick={(event) => onSelectorClick(event, ctx.dataContext.implicit.key)}>
+            </IgrCheckbox>
+        </>
+    );
 }
 ```
 上の例では、`Checkbox` を使用しており、`rowContext.selected` をその `checked` プロパティにバインドしています。[行番号のデモ](#行の番号付けデモ)で実際にこれをご覧ください。
@@ -534,7 +626,7 @@ public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
 
 ### ヘッダー テンプレート
 
-カスタム行ヘッダー テンプレートを作成するには、`{ComponentName}` 内で `igxHeadSelector` ディレクティブを使用して `<ng-template>` を宣言します。テンプレートから、ヘッダーの状態に関する情報を提供するプロパティを使用して、暗黙的に提供されたコンテキスト変数にアクセスできます。
+カスタム行ヘッダー セレクター テンプレートを作成するには、`{ComponentName}` 内で `HeadSelectorTemplate` プロパティを使用します。テンプレートから、ヘッダーの状態に関する情報を提供するプロパティを使用して、暗黙的に提供されたコンテキスト変数にアクセスできます。
 
 `SelectedCount` プロパティは現在選択されている行数を示し、`totalCount` は `{ComponentName}` に合計の行数を示します。
 
@@ -546,8 +638,17 @@ public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
 
 ```ts
 public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
-    const implicit: any = ctx["$implicit"];
-    return html` ${implicit.selectedCount} / ${implicit.totalCount} `;
+    return html` ${ctx.implicit.selectedCount} / ${ctx.implicit.totalCount} `;
+};
+```
+
+```tsx
+function headSelectorTemplate(ctx: IgrHeadSelectorTemplateContext) {
+    return (
+        <>
+            {ctx.dataContext.implicit.selectedCount} / {ctx.dataContext.implicit.totalCount}
+        </>
+    );
 };
 ```
 
@@ -580,7 +681,6 @@ primary-key="ProductID"
 row-selection="Multiple"
 auto-generate="true">
 </{ComponentSelector}>
-
 ```
 
 ```ts
@@ -591,14 +691,41 @@ constructor() {
 }
 
 public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
-    const implicit: any = ctx["$implicit"];
+    const implicit: any = ctx.implicit;
     if (implicit.selectedCount > 0 && implicit.selectedCount === implicit.totalCount) {
             return html`<igc-checkbox checked></igc-checkbox>`;
-        } else if(implicit.selectedCount > 0 && implicit.selectedCount !== implicit.totalCount) {
+        } else if (implicit.selectedCount > 0 && implicit.selectedCount !== implicit.totalCount) {
             return html`<igc-checkbox indeterminate></igc-checkbox>`;
         }
         return html`<igc-checkbox></igc-checkbox>`;
 }
+```
+
+```tsx
+function headSelectorTemplate(ctx: IgcHeadSelectorTemplateContext) {
+    const implicit: any = ctx.dataContext.implicit;
+    if (implicit.selectedCount > 0 && implicit.selectedCount === implicit.totalCount) {
+            return (
+                <>
+                    <IgrCheckbox checked></IgrCheckbox>
+                </>
+            );
+        } else if (implicit.selectedCount > 0 && implicit.selectedCount !== implicit.totalCount) {
+            return (
+                <>
+                    <IgrCheckbox indeterminate></IgrCheckbox>
+                </>
+            );
+        }
+        return (
+            <>
+                <IgrCheckbox ></IgrCheckbox>
+            </>
+        );
+}
+
+<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate="true" headSelectorTemplate={headSelectorTemplate}>
+</{ComponentSelector}>
 ```
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -620,6 +747,7 @@ public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
 
 <!-- ComponentStart: Grid -->
 
+
 ### Excel スタイル行セレクターのデモ
 
 このデモは、カスタム テンプレートを使用して Excel ライクなヘッダーおよび行セレクターを示します。
@@ -627,6 +755,7 @@ public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
 <!-- NOTE this sample is differed -->
 
 `sample="/{ComponentSample}/row-selection-template-excel", height="550", alt="{Platform} {ComponentTitle} 選択テンプレート Excel の例"`
+
 
 
 
@@ -644,7 +773,7 @@ public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
 
 * `{ComponentName}`
 * `{ComponentName}Row`
-* `{ComponentName}Cell`
+* `Cell`
 
 ## その他のリソース
 

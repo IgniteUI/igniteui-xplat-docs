@@ -2,13 +2,13 @@
 title: {Platform} Toolbar コンポーネント | {ProductName}
 _description: {Platform} ツールバー コンポーネントを簡単に始める方法をご覧ください。データ チャートと互換性があります。
 _keywords: {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, {Platform}, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} ツールバー コンポーネント, {Platform} ツールバー コントロール
-mentionedTypes: ["Toolbar", "DomainChart", "CategoryChart", "XamDataChart"]
+mentionedTypes: ["Toolbar", "ToolAction", "DomainChart", "CategoryChart", "XamDataChart"]
 _language: ja
 ---
 
 # {Platform} Toolbar (ツールバー) の概要
 
-{Platform} ツールバー コンポーネントは、主にチャート コンポーネントで使用される UI 操作のコンパニオン コンテナーです。 ツールバーは、`XamDataChart` または `CategoryChart` コンポーネントにリンクされると、プロパティとツール項目のプリセットで動的に更新されます。プロジェクト用のカスタム ツールを作成して、エンド ユーザーが変更を提供できるようになり、無限のカスタマイズが可能になります。
+{Platform} ツールバー コンポーネントは、主にチャート コンポーネントで使用される UI 操作のコンパニオン コンテナーです。ツールバーは、`XamDataChart` または `CategoryChart` コンポーネントにリンクされると、プロパティとツール項目のプリセットで動的に更新されます。プロジェクト用のカスタム ツールを作成して、エンド ユーザーが変更を提供できるようになり、無限のカスタマイズが可能になります。
 
 ## {Platform} ツールバーの例
 
@@ -130,7 +130,7 @@ builder.Services.AddIgniteUIBlazor(
 
 `ToolAction` オブジェクトの `OverlayId`、`BeforeId`、および `AfterId` プロパティを使用して、新規および既存のツールの位置を変更したり、非表示にマークしたりすることができます。ToolActions は `Visibility` プロパティも公開します。
 
-次の例は、組み込みの `ZoomReset` と `AnalyzeMenu` メニュー ツール アクションの両方を非表示にする方法を示しています。`ZoomReset` ツール操作の新しいインスタンスが追加され、`AfterId` プロパティを使用して `ZoomMenu` 内に配置され、それを `ZoomOut` に割り当てます。これにより、新しいリセット ツールが `ZoomMenu` の下部に表示されます。
+次の例は、組み込みの **ZoomReset** と **AnalyzeMenu** メニュー ツール アクションの両方を非表示にする方法を示しています。**ZoomReset** ツール操作の新しいインスタンスが追加され、`AfterId` プロパティを使用して **ZoomMenu** 内に配置され、それを **ZoomOut** に割り当てます。これにより、新しいリセット ツールが **ZoomMenu** の下部に表示されます。
 
 `sample="/charts/toolbar/layout-actions-for-data-chart", height="600", alt="{Platform} Toolbar の例"`
 

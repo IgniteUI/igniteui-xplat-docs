@@ -92,9 +92,6 @@ All other features will behave the same as in a non-single selection ComboBox co
 ## API Reference
 
 * `Combo`
-* `ComboItem`
-* `ComboHeader`
-* `ComboList`
 
 ## Additional Resources
 

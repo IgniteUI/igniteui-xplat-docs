@@ -186,9 +186,6 @@ The clear icon can be changed via the `clear-icon` slot:
 ## API Reference
 
 * `Combo`
-* `ComboItem`
-* `ComboHeader`
-* `ComboList`
 
 <!-- end: WebComponents -->
 
