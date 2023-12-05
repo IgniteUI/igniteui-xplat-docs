@@ -423,7 +423,7 @@ NuGet を使用した Ignite UI for Blazor のインストールの詳細につ�
 
 ## Ignite UI for Blazor の登録
 
-### .NET 6 アプリケーション
+### .NET 6 以降のアプリケーション
 
 1 - **Program.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** 関数を呼び出して Ignite UI for Blazor サービスを登録します。
 

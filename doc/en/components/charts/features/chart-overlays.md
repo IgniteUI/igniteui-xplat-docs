@@ -31,7 +31,7 @@ When using the value overlay with a numeric angle axis, it will appear as a line
 
 It is also possible to show an axis annotation on a `ValueOverlay` to show the value of the overlay on the owning axis. In order to show this, you can set the `IsAxisAnnotationEnabled` property to true.
 
-## {Platform} Value Lines
+## {Platform} Value Layer
 
 The {Platform} charting components also expose the ability to use value lines to call out different focal points of your data, such as minimum, maximum, and average values.
 
