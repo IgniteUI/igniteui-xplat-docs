@@ -9,7 +9,17 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Selection Overview
 
-With the {ProductName} `{ComponentName}` you can easily select data by using variety of events, rich API or with simple mouse interactions like single select.
+With the {ProductName} Select feature in {Platform} {ComponentTitle} you can easily interact with and manipulate data using simple mouse interactions. There are three selection modes available: 
+
+- Row selection
+- Cell selection 
+- Column selection 
+
+With the `RowSelection` property, you can specify:
+
+- None 
+- Single  
+- Multiple Select 
 
 ## {Platform} {ComponentTitle} Selection Example
 
@@ -146,11 +156,28 @@ public rightClick(eventArgs: any) {
         this.toggleContextMenu();
       }
 ```
-
-
-
-
 <!-- end: WebComponents -->
+
+```tsx
+function rightClick(grid: IgrGridBaseDirective, event: IgrGridCellEventArgs) {
+    const eventArgs = event.detail;
+    eventArgs.event.preventDefault();
+    const node = eventArgs.cell.id;
+    const isCellWithinRange = grid.getSelectedRanges().some((range: any) => {
+        if (node.columnID >= range.columnStart &&
+            node.columnID <= range.columnEnd &&
+            node.rowIndex >= range.rowStart &&
+            node.rowIndex <= range.rowEnd
+            ) {
+                return true;
+            }
+        return false;
+    });
+    setIsCellWithinRange(isCellWithinRange);
+    setClickedCell(eventArgs.cell);
+    openContextMenu(eventArgs.event.clientX, eventArgs.event.clientY)
+}
+```
 
 ```razor
     public void RightClick(MouseEventArgs e)
@@ -242,6 +269,36 @@ public copySelectedCells(event) {
 
 <!-- end: WebComponents -->
 
+```tsx
+function copySelectedRowData() {
+    const selectedData = gridRef.current.getRowData(clickedCell.id.rowID);
+    copyData(selectedData);
+    closeContextMenu();
+}
+
+function copySelectedCellData() {
+    const selectedData = clickedCell.value;
+    copyData(selectedData);
+    closeContextMenu();
+}
+
+function copySelectedData() {
+    const selectedData = gridRef.current.getSelectedData(null,null);
+    copyData(selectedData);
+    closeContextMenu();
+}
+
+function copyData(data: any[]) {
+    const tempElement = document.createElement('input');
+    document.body.appendChild(tempElement);
+    tempElement.setAttribute('id', 'temp_id');
+    (document.getElementById('temp_id') as HTMLInputElement).value = JSON.stringify(data);
+    tempElement.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempElement);
+    setSelectedData(JSON.stringify(data));
+}
+```
 
 ```razor
     public void CopyCellData()
@@ -332,6 +389,49 @@ The template we are going to use to combine the grid with the context menu:
   </div>
 ```
 <!-- end: WebComponents -->
+
+```tsx
+ <>
+    <div className="container sample">
+        <div className="wrapper" onClick={closeContextMenu}>
+            <IgrGrid
+                autoGenerate="false"
+                data={northWindData}
+                primaryKey="ProductID"
+                ref={gridRef}
+                contextMenu={rightClick}>
+            <IgrColumn field="ProductID" header="Product ID">
+            </IgrColumn>
+            <IgrColumn field="ProductName" header="Product Name">
+            </IgrColumn>
+            <IgrColumn field="UnitsInStock" header="Units In Stock" dataType="number">
+            </IgrColumn>
+            <IgrColumn field="UnitPrice" header="Units Price" dataType="number">
+            </IgrColumn>
+            <IgrColumn field="Discontinued" dataType="boolean">
+            </IgrColumn>
+            <IgrColumn field="OrderDate" header="Order Date" dataType="date">
+            </IgrColumn>
+            </IgrGrid>
+            <div className="selected-data-area">
+                {selectedData}
+            </div>
+        </div>
+    </div>
+    <div style={{display: "none"}} className="contextmenu" ref={contextMenuRef}>
+        <span className="item" onClick={copySelectedCellData}>
+            <IgrIcon ref={iconRef} collection='material' name="content_copy"></IgrIcon>Copy Cell Data
+        </span>
+        <span className="item" onClick={copySelectedRowData}>
+            <IgrIcon collection='material' name="content_copy"></IgrIcon>Copy Row Data
+        </span>
+        {isCellWithinRange && (
+        <span className="item" onClick={copySelectedData}>
+            <IgrIcon collection='material' name="content_copy"></IgrIcon>Copy Cells Data
+        </span>)}
+    </div>
+</>
+```
 
 ```razor
 <div class="container vertical">
@@ -437,7 +537,7 @@ When the grid has no `PrimaryKey` set and remote data scenarios are enabled (whe
 
 <!-- ComponentEnd: TreeGrid -->
 
-* `GridCell`
+* `Cell`
 
 ## Additional Resources
 
