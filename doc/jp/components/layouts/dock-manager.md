@@ -443,11 +443,7 @@ igc-dockmanager::part(pane-header-maximize-button) {
 
 すべて適切に設定できると、カスタマイズされたアイコンとタブ領域を持つ DockManager が表示されます。以下は結果です。
 
-<!-- WebComponents -->
 `sample="/layouts/dock-manager/customize-buttons", height="700", alt="{Platform} Dock Manager カスタマイズ ボタンの例"`
-
-
-<!-- end: WebComponents -->
 
 以下は、すべてのボタンとスプリッター ハンドルのスロット名のリストです。
 
@@ -546,8 +542,6 @@ igc-dockmanager::part(pane-header-maximize-button) {
 
 サンプル [demo](dock-manager.md#{PlatformLower}-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
 
-<!-- WebComponents -->
-
 ## スタイル設定
 
 ドック マネージャーは、シャドウ DOM を使用してスタイルと動作をカプセル化します。その結果、通常の CSS セレクターでその内部要素を単純にターゲットにすることはできません。そのため **:: part** CSS セレクターでターゲットにできるコンポーネント **parts** を公開しています。
@@ -616,6 +610,7 @@ igc-dockmanager::part(content-pane) {
 | `splitter-handle` | スプリッターのハンドル。 |
 | `horizontal` | 水平位置を示します。`splitter-handle` に適用されます。 |
 | `vertical` | 垂直位置を示します。`splitter-handle` に適用されます。 |
+<!-- WebComponents -->
 
 ## テーマ
 
