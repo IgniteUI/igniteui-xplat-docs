@@ -1,15 +1,17 @@
-trigger:
-  branches:
-    include:
-    - vnext
-    - master
-  paths:
-    exclude:
-    - '**/jp/*'
-    - '**/kr/*'
+trigger: none
 
 # This pipeline is meant to build specific branches for deployment. It's not meant to be a part of PR validation.
 pr: none
+
+schedules:
+- cron: "* * * * 3"
+  displayName: 'Weekly build with automated PR creation'
+  branches:
+    include:
+    - master
+    - vnext
+  always: true
+
 
 parameters:
 - name: isVerbose
@@ -25,9 +27,20 @@ variables:
       value: 'production'
     ${{ else }}:  
       value: 'staging'
+  # Since we are using more than 1 git repo, we need to explicitly specify that we want to compile inside the 1st git repo
+  - name: selfSourcesDir
+    value: '$(Build.SourcesDirectory)\igniteui-xplat-docs'
   # This is the variable that the gulp script looks at internally. This is the only way I know how to pass it for Angular
   - name: 'NODE_ENV'
     value: '$(buildType)'
+
+resources:
+  repositories:
+    - repository: IgniteUIDocFX
+      endpoint: IgniteUI
+      type: github
+      name: IgniteUI/igniteui-docfx
+      ref: '$(Build.SourceBranch)'
 
 stages:
 - stage: Build
@@ -60,45 +73,23 @@ stages:
         displayName: 'npm ci'
         inputs:
           command: custom
-          workingDir: '$(Build.SourcesDirectory)'
+          workingDir: '$(selfSourcesDir)'
           verbose: ${{ parameters.isVerbose }}
           customCommand: 'ci --production=false'
 
-      - template: templates/build-steps-template.yml
-        parameters:
-          buildType: $(buildType)
-          platform: WebComponents
-          language: en
-          isVerbose: ${{ parameters.isVerbose }}
-          workingDir: '$(Build.SourcesDirectory)'
+      #- checkout: IgniteUIDocFX
+      #  persistCredentials: true
+      #  lfs: true
+      #  clean: true
 
-      - template: templates/build-steps-template.yml
-        parameters:
-          buildType: $(buildType)
-          platform: Blazor
-          language: en
-          isVerbose: ${{ parameters.isVerbose }}
-          workingDir: '$(Build.SourcesDirectory)'
-
-      - template: templates/build-steps-template.yml
-        parameters:
-          buildType: $(buildType)
-          platform: React
-          language: en
-          isVerbose: ${{ parameters.isVerbose }}
-          workingDir: '$(Build.SourcesDirectory)'
-
-      # # Angular doesn't produce an artifact that we can publish right now.
-      - task: PublishPipelineArtifact@1
-        displayName: 'Publish pipeline artifacts'
-        inputs:
-          targetPath: '$(Build.ArtifactStagingDirectory)'
-          artifact: 'XPlatDocFX'
-
-      - template: templates/build-steps-template.yml
+      - template: templates/build-steps-make-pr.yml
         parameters:
           buildType: $(buildType)
           platform: Angular
           language: en
           isVerbose: ${{ parameters.isVerbose }}
-          workingDir: '$(Build.SourcesDirectory)'
+          primaryRepoWorkDir: '$(selfSourcesDir)'
+
+
+      # Angular doesn't produce an artifact that we can publish right now.
+
