@@ -167,6 +167,23 @@ The sample below demonstrates how stepper orientation and titles position could 
 
 <div class="divider--half"></div>
 
+### Stepper Animations
+
+The {Platform} `Stepper` Animations provide the end-users with a beautiful experience interacting with the defined steps. The available animation options differ depending on the orientation of the stepper.
+
+When the stepper is horizontally orientated, it is configured to use the `slide` animation by default. It also supports `fade` as an alternative. The animations are configured through the `horizontalAnimation` input.
+
+In a vertically orientated layout, the animation type could be defined using the `verticalAnimation` property. By default, its value is set to `grow` and the user has the ability to set it to `fade` as well.
+
+Setting `none` to both animation type inputs disables stepper animations.
+
+The `Stepper` component also gives you the ability to configure the duration of the transition between the steps. This could be achieved through the `animationDuration` property, which takes a number as an argument and it is common to both orientations. The default value is set to 320ms.
+
+`sample="/layouts/stepper/animations", height="600", alt="{Platform} Stepper Animations Example"`
+
+
+<div class="divider--half"></div>
+
 ### Step States
 {Platform} `Stepper` supports five steps states and each of them apply different styles by default:
 - **active** - Determines whether the step is the currently displayed. By design, if the user does not explicitly set some step’s active attribute to *true*, the initial active step would be the first non-disabled step.
@@ -264,14 +281,14 @@ The {Platform} `Stepper` navigation is compliant with [W3 accessability standard
 **Key Combinations**
 
  - <kbd>Tab</kbd> - moves the focus to the next tabbable element
- - <kbd>Shift + Tab</kbd> - moves the focus to the previous tabbable element
- - <kbd>Arrow Down</kbd> - moves the focus to the header of the next accessible step when the stepper is **vertically orientated**
- - <kbd>Arrow Up</kbd> - moves the focus to the header of the previous accessible step when the stepper is **vertically orientated**
- - <kbd>Arrow Left</kbd> - moves the focus to the header of the previous accessible step in both orientations
- - <kbd>Arrow Right</kbd> - moves the focus to the header of the next accessible step in both orientations
+ - <kbd>Shift</kbd> + <kbd>Tab</kbd> - moves the focus to the previous tabbable element
+ - <kbd>↓</kbd> - moves the focus to the header of the next accessible step when the stepper is **vertically orientated**
+ - <kbd>↑</kbd> - moves the focus to the header of the previous accessible step when the stepper is **vertically orientated**
+ - <kbd>←</kbd> - moves the focus to the header of the previous accessible step in both orientations
+ - <kbd>→</kbd> - moves the focus to the header of the next accessible step in both orientations
  - <kbd>Home</kbd> - moves the focus to the header of the FIRST enabled step in the stepper
  - <kbd>End</kbd> - moves the focus to the header of the LAST enabled step in the stepper
- - <kbd>Enter / Space</kbd> - activates the currently focused step
+ - <kbd>Enter</kbd> or <kbd>Space</kbd> - activates the currently focused step
 
 ## Styling {Platform} Stepper
 

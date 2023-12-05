@@ -9,7 +9,10 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Editing
 
-The {ProductName} `{ComponentName}` component provides an easy way to perform data manipulation operations like creating, updating, and deleting records. The data manipulation phases are: [Cell Editing](cell-editing.md), [Row Editing](row-editing.md), and Batch Editing (Coming Soon). The `{ComponentName}` gives you a powerful public API which allows you to customize the way these operations are performed.
+The {ProductName} Cell Editing feature in {Platform} {ComponentTitle} provides an easy way to perform data manipulation operations like creating, updating, and deleting records. The `{ComponentName}` provides you with a powerful public API which allows you to customize the way these operations are performed. The data manipulation phases are: 
+- [Cell Editing](cell-editing.md)
+- [Row Editing](row-editing.md)
+- Batch Editing (Coming Soon) 
 
 <!-- Angular -->
 
@@ -140,6 +143,12 @@ public onSorting(event: ISortingEventArgs) {
 <!-- WebComponents -->
 
 ```typescript
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    grid.data = this.data;
+    grid.addEventListener("sorting", this.onSorting);
+}
+
 public onSorting(event: IgcSortingEventArgs) {
     var grid = document.getElementById('grid') as {ComponentName}Component;
     grid.endEdit(true);
@@ -161,9 +170,18 @@ function SortingHandler() {
 igRegisterScript("SortingHandler", SortingHandler, false);
 ```
 
+```tsx
+function onSorting(grid: IgrGridBaseDirective, event: IgrSortingEventArgs) {
+    grid.endEdit(true);
+}
+
+<IgrGrid data={localData} primaryKey="ProductID" sorting={onSorting}>
+</IgrGrid>
+```
+
 ## API References
 
-* `GridCell`
+* `Cell`
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
@@ -183,7 +201,7 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 <!-- end: Angular -->
 ## Additional Resources
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 
 
 * [Column Data Types](column-types.md#default-template)
@@ -200,7 +218,7 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 <!-- * [Searching](search.md) -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- end: Angular, WebComponents -->
+<!-- end: Angular, WebComponents, React -->
 
 <!-- Blazor -->
 

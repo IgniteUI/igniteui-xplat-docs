@@ -81,8 +81,15 @@ npm install @infragistics/igniteui-dockmanager
 
 Have in mind that we have set the {ProductName} package to be scoped, meaning that no changing the registries is needed if you want to install packages from our private feed and from npmjs.org simultaneously.
 
-#### Some additional changes might have to be made in your project source
-If you are upgrading from trial to licensed package:
+### Changes in your project source after license package update
+
+If you are upgrading from trial to licensed package the new packages will be scoped under `@infragistics`.
+As a result you can either:
+
+- Do a global replace for all trial packages and change then to the licensed scoped version across all files in your project. For example, replace all `igniteui-dockmanager` references to `@infragicstics/igniteui-dockmanager` The change should affect all imports where such packages are used.
+
+  **Or**
+
 - Add a **paths** mapping in the project **tsconfig.json**.
 
 ```json
@@ -99,6 +106,33 @@ If you are upgrading from trial to licensed package:
   }
 }
 ```
+
+<!-- React -->
+Here's a full example with all path mappings for the react packages you may need:
+
+```json
+      "paths": {
+        "igniteui-react-core": ["node_modules/igniteui-react-core", "node_modules/@infragistics/igniteui-react-core"],
+        "igniteui-react-charts": ["node_modules/igniteui-react-charts", "node_modules/@infragistics/igniteui-react-charts"],
+        "igniteui-react-grids": ["node_modules/igniteui-react-grids", "node_modules/@infragistics/igniteui-react-grids"],
+        "igniteui-react-grids/grids": ["node_modules/igniteui-react-grids/grids", "node_modules/@infragistics/igniteui-react-grids/grids"],
+        "igniteui-react-gauges": ["node_modules/igniteui-react-gauges", "node_modules/@infragistics/igniteui-react-gauges"],
+        "igniteui-react-inputs": ["node_modules/igniteui-react-inputs", "node_modules/@infragistics/igniteui-react-inputs"],
+        "igniteui-react-layouts": ["node_modules/igniteui-react-layouts", "node_modules/@infragistics/igniteui-react-layouts"],
+        "igniteui-react-maps": ["node_modules/igniteui-react-maps", "node_modules/@infragistics/igniteui-react-maps"],
+        "igniteui-react": ["node_modules/igniteui-react", "node_modules/@infragistics/igniteui-react"],
+        "igniteui-react-excel": ["node_modules/igniteui-react-excel", "node_modules/@infragistics/igniteui-react-excel"],
+        "igniteui-react-datasources": ["node_modules/igniteui-react-datasources", "node_modules/@infragistics/igniteui-react-datasources"],
+        "igniteui-react-spreadsheet": ["node_modules/igniteui-react-spreadsheet", "node_modules/@infragistics/igniteui-react-spreadsheet"],
+        "igniteui-react-spreadsheet-chart-adapter": ["node_modules/igniteui-react-spreadsheet-chart-adapter", "node_modules/@infragistics/igniteui-react-spreadsheet-chart-adapter"],
+        "igniteui-webcomponents": ["node_modules/igniteui-webcomponents", "node_modules/@infragistics/igniteui-webcomponents"],
+        "igniteui-dockmanager": ["node_modules/igniteui-dockmanager", "node_modules/@infragisics/igniteui-dockmanager"],
+        "igniteui-dockmanager/loader": ["node_modules/igniteui-dockmanager/loader", "node_modules/@infragistics/igniteui-dockmanager/loader"]
+      }
+```
+
+
+<!-- end: React -->
 
 - Change the themes imports like this:
 

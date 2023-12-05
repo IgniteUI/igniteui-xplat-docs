@@ -82,8 +82,15 @@ npm install @infragistics/igniteui-dockmanager
 
 {ProductName} パッケージをスコープに設定したため、プライベート フィードおよび npmjs.org からのパッケージを同時にインストールするためにレジストリを変更する必要はありません。
 
-#### プロジェクト ソースに追加の変更が必要になる場合があります。
-トライアル版からライセンス パッケージにアップグレードする場合:
+### ライセンス パッケージの更新後のプロジェクト ソースの変更
+
+トライアル版からライセンス版パッケージにアップグレードする場合、新しいパッケージは `@infragistics` の下でスコープされます。
+その結果、次のいずれかを行うことができます。
+
+- すべてのトライアル版パッケージに対してグローバル置換を実行し、プロジェクト内のすべてのファイルにわたってライセンス版スコープ付きバージョンに変更します。たとえば、すべての `igniteui-dockmanager` 参照を `@infragicstics/igniteui-dockmanager` に置き換えます。この変更は、そのようなパッケージが使用されているすべてのインポートに影響します。
+
+  **または**
+
 - プロジェクトの **tsconfig.json** に **paths** マッピングを追加します。
 
 ```json
@@ -100,6 +107,33 @@ npm install @infragistics/igniteui-dockmanager
   }
 }
 ```
+
+<!-- React -->
+必要となる可能性のある React パッケージのすべてのパス マッピングを含む完全な例を次に示します。
+
+```json
+      "paths": {
+        "igniteui-react-core": ["node_modules/igniteui-react-core", "node_modules/@infragistics/igniteui-react-core"],
+        "igniteui-react-charts": ["node_modules/igniteui-react-charts", "node_modules/@infragistics/igniteui-react-charts"],
+        "igniteui-react-grids": ["node_modules/igniteui-react-grids", "node_modules/@infragistics/igniteui-react-grids"],
+        "igniteui-react-grids/grids": ["node_modules/igniteui-react-grids/grids", "node_modules/@infragistics/igniteui-react-grids/grids"],
+        "igniteui-react-gauges": ["node_modules/igniteui-react-gauges", "node_modules/@infragistics/igniteui-react-gauges"],
+        "igniteui-react-inputs": ["node_modules/igniteui-react-inputs", "node_modules/@infragistics/igniteui-react-inputs"],
+        "igniteui-react-layouts": ["node_modules/igniteui-react-layouts", "node_modules/@infragistics/igniteui-react-layouts"],
+        "igniteui-react-maps": ["node_modules/igniteui-react-maps", "node_modules/@infragistics/igniteui-react-maps"],
+        "igniteui-react": ["node_modules/igniteui-react", "node_modules/@infragistics/igniteui-react"],
+        "igniteui-react-excel": ["node_modules/igniteui-react-excel", "node_modules/@infragistics/igniteui-react-excel"],
+        "igniteui-react-datasources": ["node_modules/igniteui-react-datasources", "node_modules/@infragistics/igniteui-react-datasources"],
+        "igniteui-react-spreadsheet": ["node_modules/igniteui-react-spreadsheet", "node_modules/@infragistics/igniteui-react-spreadsheet"],
+        "igniteui-react-spreadsheet-chart-adapter": ["node_modules/igniteui-react-spreadsheet-chart-adapter", "node_modules/@infragistics/igniteui-react-spreadsheet-chart-adapter"],
+        "igniteui-webcomponents": ["node_modules/igniteui-webcomponents", "node_modules/@infragistics/igniteui-webcomponents"],
+        "igniteui-dockmanager": ["node_modules/igniteui-dockmanager", "node_modules/@infragisics/igniteui-dockmanager"],
+        "igniteui-dockmanager/loader": ["node_modules/igniteui-dockmanager/loader", "node_modules/@infragistics/igniteui-dockmanager/loader"]
+      }
+```
+
+
+<!-- end: React -->
 
 - テーマのインポートを以下のように変更します。
 

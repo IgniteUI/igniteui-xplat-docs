@@ -1,5 +1,5 @@
 ---
-title: Multi-Column Headers in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Multi-Column Headers - {ProductName}
 _description: Start grouping column headers by placing them under a common hierarchical header with the help of {ProductName} grid and combine them into multi headers.
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Multi-Column Headers, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
@@ -8,7 +8,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Multi-Column Headers Overview
 
-The {Platform} `{ComponentName}` supports multi-column headers which allow you to group columns by placing them under a common multi-header. Each multi-column headers group could be a representation of combinations between other groups or columns within the Material UI grid.
+The {ProductName} Multi-Column Headers feature in {Platform} {ComponentTitle} allows you to group columns by placing them under a common multi-header. Each multi-column headers group in the `{ComponentName}` could be a representation of combinations between other groups or columns. This feature is particularly useful when dealing with large datasets where scrolling horizontally might be cumbersome.
 
 ## {Platform} {ComponentTitle} Multi-Column Headers Example
 
@@ -54,6 +54,16 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
 ```
 <!-- end: WebComponents -->
 
+```tsx
+<{ComponentSelector} allowFiltering="true">
+    <IgrColumnGroup header="Contact Information">
+        <IgrColumn sortable="true" resizable="true" field="Phone"></IgrColumn>
+        <IgrColumn sortable="true" resizable="true" field="Fax"></IgrColumn>
+        <IgrColumn sortable="true" resizable="true" field="PostalCode"></IgrColumn>
+    </IgrColumnGroup>
+</{ComponentSelector}>
+```
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -90,6 +100,16 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+```tsx
+<{ComponentSelector} primaryKey="ID" foreignKey="ParentID">
+    <IgrColumnGroup header="Contact Information">
+        <IgrColumn sortable="true" resizable="true" field="Phone" dataType={GridColumnDataType.String}></IgrColumn>
+        <IgrColumn sortable="true" resizable="true" field="Fax" dataType={GridColumnDataType.String}></IgrColumn>
+        <IgrColumn sortable="true" resizable="true" field="PostalCode" dataType={GridColumnDataType.String}></IgrColumn>
+    </IgrColumnGroup>
+</{ComponentSelector}>
+```
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -161,6 +181,18 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+```tsx
+<{ComponentSelector} height="600px" allowFiltering="true">
+    <IgrColumnGroup header="General Information">
+        <IgrColumn movable="true" sortable="true" resizable="true" field="CompanyName"></IgrColumn>
+        <IgrColumnGroup movable="true" header="Person Details">
+            <IgrColumn movable="true" pinned="false" sortable="true" resizable="true" field="ContactName"></IgrColumn>
+            <IgrColumn movable="true" sortable="true" resizable="true" field="ContactTitle"></IgrColumn>
+        </IgrColumnGroup>
+    </IgrColumnGroup>
+</{ComponentSelector}>
+```
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -206,6 +238,19 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+```tsx
+<{ComponentSelector} primaryKey="ID" foreignKey="ParentID" moving="true">
+    <IgrColumnGroup pinned="false" header="General Information">
+        <IgrColumn field="HireDate" sortable="true" resizable="true" dataType={GridColumnDataType.Date}></IgrColumn>
+        <IgrColumnGroup header="Person Details">
+            <IgrColumn field="ID" resizable="true" filterable="true" dataType={GridColumnDataType.Number}></IgrColumn>
+            <IgrColumn field="Title" sortable="true" resizable="true" dataType={GridColumnDataType.String}></IgrColumn>
+            <IgrColumn field="Age" sortable="true" resizable="true" dataType={GridColumnDataType.Number}></IgrColumn>
+        </IgrColumnGroup>
+    </IgrColumnGroup>
+</{ComponentSelector}>
+```
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -273,6 +318,17 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+```tsx
+<{ComponentSelector} height="600px" allowFiltering="true">
+    <IgrColumnGroup movable="true" pinned="true" header="General Information">
+        <IgrColumn movable="true" sortable="true" resizable="true" field="CompanyName"></IgrColumn>
+    </IgrColumnGroup>
+    <IgrColumn sortable="true" resizable="true" field="Phone"></IgrColumn>
+    <IgrColumn sortable="true" resizable="true" field="Fax"></IgrColumn>
+    <IgrColumn sortable="true" resizable="true" field="PostalCode"></IgrColumn>
+</{ComponentSelector}>
+```
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -312,6 +368,17 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+```tsx
+<{ComponentSelector} primaryKey="ID" foreignKey="ParentID" moving="true">
+    <IgrColumnGroup header="Contact Information">
+        <IgrColumn field="Phone" movable="true" sortable="true" resizable="true" dataType={GridColumnDataType.String}></IgrColumn>
+    </IgrColumnGroup>
+    <IgrColumn field="Name" sortable="true" resizable="true" dataType={GridColumnDataType.String}></IgrColumn>
+    <IgrColumn field="Title" sortable="true" resizable="true" dataType={GridColumnDataType.String}></IgrColumn>
+    <IgrColumn field="Age" sortable="true" resizable="true" dataType={GridColumnDataType.Number}></IgrColumn>
+</{ComponentSelector}>
+```
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -410,11 +477,11 @@ The expression is provided with the column group object as a context.
 
 <!-- end: Blazor -->
 
-<!-- WebComponents -->
+<!-- WebComponents, React -->
 
 Each of the column groups of the grid can be templated separately. The following code snippet demonstrates how to use the `HeaderTemplate` of a column group:
 
-<!-- end: WebComponents -->
+<!-- end: WebComponents, React -->
 
 ```razor
 <IgbColumnGroup Header="Address Information" HeaderTemplate="Template">
@@ -448,6 +515,21 @@ public headerTemplate = (ctx: IgcColumnTemplateContext) => {
 };
 ```
 
+```tsx
+<IgrColumnGroup header="Contact Information" headerTemplate={groupHeaderTemplate}></IgrColumnGroup>
+```
+
+```tsx
+function groupHeaderTemplate(e: { dataContext: IgrColumnTemplateContext }) {
+    const column = e.dataContext.column as IgrColumnGroup;
+    return (
+      <div>
+        <span style={{ float: "left" }}>{column.header.toUpperCase()}</span>
+      </div>
+    );
+}
+```
+
 > [!Note]
 > If a header is re-templated and the corresponding column group is movable, you have to set the **draggable** attribute to **false** on the templated elements, so that you can handle any of the events that are applied!
 
@@ -474,8 +556,19 @@ public headerTemplate = (ctx: IgcColumnTemplateContext) => {
 ```ts
 public columnHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <igc-icon draggable="false" click="${this.onClick()}"></igc-icon>
+        <igc-icon draggable="false" @click="${() => this.onClick()}"></igc-icon>
     `;
+}
+```
+
+```tsx
+function columnHeaderTemplate(e: { dataContext: IgrColumnTemplateContext }) {
+    const column = e.dataContext.column as IgrColumnGroup;
+    return (
+      <span onClick={onClick}>
+        <IgrIcon data-draggable="false"></IgrIcon>
+      </span>
+    );
 }
 ```
 
@@ -604,7 +697,7 @@ import 'core-js/es7/array';
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 ## Styling
 
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
@@ -618,15 +711,19 @@ In case you would like to change some of the colors, you need to set a class for
 <IgbGrid class="grid"></IgbGrid>
 ```
 
+```tsx
+<IgrGrid className="grid"></IgrGrid>
+```
+
 Then set the related CSS properties to this class:
 
 ```css
 .grid {
-    --igx-grid-header-background: #e0f3ff;
-    --igx-grid-header-text-color: #e41c77;
-    --igx-grid-header-border-width: 1px;
-    --igx-grid-header-border-style: solid;
-    --igx-grid-header-border-color: rgba(0, 0, 0, 0.08);
+    --ig-grid-header-background: #e0f3ff;
+    --ig-grid-header-text-color: #e41c77;
+    --ig-grid-header-border-width: 1px;
+    --ig-grid-header-border-style: solid;
+    --ig-grid-header-border-color: rgba(0, 0, 0, 0.08);
 }
 ```
 ### Demo
@@ -634,7 +731,7 @@ Then set the related CSS properties to this class:
 `sample="/{ComponentSample}/multi-column-headers-styling", height="500", alt="{Platform} {ComponentTitle} Multi Column Headers Styling Sample"`
 
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 ## API References
 

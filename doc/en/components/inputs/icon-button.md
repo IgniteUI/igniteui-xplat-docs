@@ -105,7 +105,7 @@ Similar to the regular button components, the icon button supports several varia
 
 ### Size
 
-The size of the button can be changed by setting the `size` attribute to any of the three supported sizes - `small`, `medium`, `large`(default).
+The size of the button can be changed by utilizing the `--ig-size` CSS variable to any of the three supported sizes: `--ig-size-small`, `--ig-size-medium`, `--ig-size-large`(default).
 
 `sample="/inputs/icon-button/size", height="100", alt="{Platform} Icon Button Example"`
 
@@ -114,8 +114,10 @@ The size of the button can be changed by setting the `size` attribute to any of 
 <IgrIconButton name="thumb-up" size="medium"></IgrIconButton>
 ```
 
-```html
-<igc-icon-button name="thumb-up" size="medium"></igc-icon-button>
+```css
+igc-icon-button {
+    --ig-size: var(--ig-size-medium);
+}
 ```
 
 ```razor
