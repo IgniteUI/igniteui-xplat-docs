@@ -118,7 +118,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 
 ### Contained ボタン
 
-`variant` を使用して、コンポーネント テンプレートにシンプルなフラット ボタンを追加します。バリアントを設定しない場合、デフォルトではフラットに設定されることに注意してください。
+`variant` を使用して、コンポーネント テンプレートにシンプルな contained ボタンを追加します。バリアントを設定しない場合、デフォルトでは contained に設定されることに注意してください。
 
 ```tsx
 <IgrButton variant="contained"><span>Contained</span></IgrButton>
