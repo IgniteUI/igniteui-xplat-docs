@@ -173,10 +173,10 @@
     "names":[{"platform": "WebComponents","fileName": "igc-geographic-polyline-series-component.ts","dynamicModuleName": "igc-geographic-polyline-series-dynamic-module.ts","moduleName": "igc-geographic-polyline-series-module.ts","mappedName": "IgcGeographicPolylineSeriesComponent"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isPolyline"}], "originalName": "IsPolyline"},
-      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "fill"}], "originalName": "shapeStyle.fill"},
-      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "shapeStyle.opacity"},
-      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "shapeStyle.stroke"},
-      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "fill"}], "originalName": "shapeStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "shapeStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "shapeStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
   },
   {
     "originalName": "GeographicProportionalSymbolSeries",
@@ -355,10 +355,10 @@
       {"names":[{"platform": "WebComponents", "mappedType": "IgDataTemplate","mappedName": "markerTemplate"}], "originalName": "MarkerTemplate"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "markerThickness"}], "originalName": "MarkerThickness"},
       {"names":[{"platform": "WebComponents", "mappedType": "MarkerType","mappedName": "markerType"}], "originalName": "MarkerType"},
-      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "fill"}], "originalName": "shapeStyle.fill"},
-      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "shapeStyle.opacity"},
-      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "shapeStyle.stroke"},
-      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "fill"}], "originalName": "shapeStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "shapeStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "shapeStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
   },
   {
     "originalName": "GeographicSymbolSeries",

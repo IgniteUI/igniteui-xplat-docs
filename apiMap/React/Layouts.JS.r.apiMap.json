@@ -139,6 +139,7 @@
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "background"}], "originalName": "Background"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "beforeId"}], "originalName": "BeforeId"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "cleanUp"}], "originalName": "CleanUp"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "closeOnExecute"}], "originalName": "CloseOnExecute"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "closeSubmenu"}], "originalName": "CloseSubmenu"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "commandArgument"}], "originalName": "CommandArgument"},
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "commandArgumentValue"}], "originalName": "CommandArgumentValue"},
