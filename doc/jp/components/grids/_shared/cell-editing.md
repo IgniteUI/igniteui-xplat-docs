@@ -16,21 +16,8 @@ _language: ja
 さらに、データ更新アクション用の独自のカスタム テンプレートを定義したり、変更をコミット/破棄したりするためのデフォルトの動作をオーバーライドすることもできます。
 
 ## {Platform} {ComponentTitle} セル編集と編集テンプレートの例
-<!-- WebComponents, React -->
 
 `sample="/{ComponentSample}/editing-columns", height="700", alt="{Platform} {ComponentTitle} セル編集と編集テンプレートの例"`
-
-<!-- end: WebComponents, React -->
-
-<!-- Blazor -->
-
-<!-- ComponentStart: Grid -->
-
-`sample="/{ComponentSample}/editing-columns", height="700", alt="{Platform} {ComponentTitle} セル編集と編集テンプレートの例"`
-
-<!-- ComponentEnd: Grid -->
-
-<!-- end: Blazor -->
 
 <!-- Angular -->
 

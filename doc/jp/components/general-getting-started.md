@@ -453,6 +453,13 @@ var app = builder.Build();
 </head>
 ```
 
+4 - Add Script Reference to the **Pages/_Host.cshtml** file:
+
+```razor
+<script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
+<script src="_framework/blazor.server.js"></script>
+```
+
 ### .NET 5 アプリケーション
 
 1 - **Startup.cs** ファイルを開き、**services.AddIgniteUIBlazor()** を呼び出して Ignite UI for Blazor サービスを登録します。

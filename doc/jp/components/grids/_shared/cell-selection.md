@@ -281,21 +281,21 @@ expectedData = [
 <!-- ComponentStart: TreeGrid -->
 
 ```ts
-<igc-tree-grid id="treeGrid"></igc-tree-grid>
+<igc-tree-grid class="treeGrid"></igc-tree-grid>
 ```
 
 ```razor
-<IgbTreeGrid Id="treeGrid"></IgbTreeGrid>
+<IgbTreeGrid Class="treeGrid"></IgbTreeGrid>
 ```
 
 次に、そのクラスに関連する CSS プロパティを設定します。
 
 ```css
-#treeGrid {
-    --cell-selected-text-color: #fff;
-    --cell-active-border-color: #f2c43c;
-    --cell-selected-background: #0062a3;
-    --cell-editing-background: #0062a3;
+.treeGrid {
+    --ig-grid-cell-selected-text-color: #fff;
+    --ig-grid-cell-active-border-color: #f2c43c;
+    --ig-grid-cell-selected-background: #0062a3;
+    --ig-grid-cell-editing-background: #0062a3;
 }
 ```
 

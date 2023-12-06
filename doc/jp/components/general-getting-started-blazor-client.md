@@ -60,6 +60,13 @@ await builder.Build().RunAsync();
 </head>
 ```
 
+4 - Add Script Reference to the **wwwroot/index.html** file:
+
+```razor
+<script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
+<script src="_framework/blazor.webassembly.js"></script>
+```
+
 ### .NET 5 アプリケーション
 
 1 - **Program.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** 関数を呼び出して Ignite UI for Blazor サービスを登録します。
@@ -73,26 +80,7 @@ public static async Task Main(string[] args)
 }
 ```
 
-2 - **IgniteUI.Blazor.Controls** 名前空間を **_Imports.razor** ファイルに追加します。
-
-```razor
-@using IgniteUI.Blazor.Controls
-```
-
-3 - **wwwroot/index.html** ファイルの **<head\>** 要素にスタイル シートを追加します。
-
-```razor
-<head>
-    <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
-</head>
-```
-
-4 - スクリプト参照を **wwwroot/index.html** ファイルに追加します。
-
-```razor
-<script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
-<script src="_framework/blazor.webassembly.js"></script>
-```
+2. Continue with step 2 in the [.NET 6 and Later Applications](general-getting-started-blazor-client.md#net-6-and-later-applications) section
 
 ## Ignite UI for Blazor コンポーネントの追加
 
