@@ -4,7 +4,7 @@ trigger: none
 pr: none
 
 schedules:
-- cron: "* * * * 3"
+- cron: "0 0 * * 3"
   displayName: 'Weekly build with automated PR creation'
   branches:
     include:
