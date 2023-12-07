@@ -8,9 +8,11 @@ namespace: Infragistics.Controls.Charts
 
 # {Platform} Chart Highlight Filter
 
-The {ProductName} Chart components support a data highlighting overlay that can enhance the visualization of the series plotted in those charts by allowing you to view a subset of the data plotted. This can help you to visualize things like target values versus actual values with your data set.
+The {ProductName} Chart components support a data highlighting overlay that can enhance the visualization of the series plotted in those charts by allowing you to view a subset of the data plotted. This can help you to visualize things like target values versus actual values with your data set. This feature is demonstrates in the following example:
 
-This feature is supported by the `XamDataChart` and `CategoryChart`, but it is configured in different ways in those controls due to the nature of how those controls work. The following will explain the different APIs for the highlight filter feature.
+`sample="/charts/data-chart/chart-highlight-filter", height="500", alt="{Platform} Highlight Filter Example"`
+
+Note that data highlighting feature is supported by the `XamDataChart` and `CategoryChart`, but it is configured in different ways in those controls due to the nature of how those controls work. The following will explain the different APIs for the highlight filter feature.
 
 ## Using Highlight Filter with DataChart
 
@@ -52,13 +54,13 @@ You can find more information about related chart features in these topics:
 The following is a list of API members mentioned in the above sections:
 
 
-| Property Name                          | Control Name    | 
-| ---------------------------------------|-----------------|
-| `Series.HighlightedItemsSource`        | `XamDataChart`  |
-| `Series.HighlightedTitleSuffix`        | `XamDataChart`  | 
-| `Series.HighlightedValueMemberPath`    | `XamDataChart`  | 
-| `Series.HighlightedValuesDisplayMode`  | `XamDataChart`  | 
-| `Series.HighlightedValuesFadeOpacity`  | `XamDataChart`  | 
-| `Series.HighlightedValuesDisplayMode`  | `XamDataChart`  | 
-| `InitialHighlightFilter`               | `CategoryChart` |
-| `InitialGroups`                        | `CategoryChart` |
+| `CategoryChart` Properties                    | `XamDataChart` Properties | 
+| ----------------------------------------------|---------------------------|
+| `CategoryChart.HighlightedItemsSource`        | `Series.HighlightedItemsSource`  |
+| `CategoryChart.HighlightedTitleSuffix`        | `Series.HighlightedTitleSuffix`  | 
+| `CategoryChart.HighlightedValueMemberPath`    | `Series.HighlightedValueMemberPath`     | 
+| `CategoryChart.HighlightedValuesDisplayMode`  | `Series.HighlightedValuesDisplayMode`   | 
+| `CategoryChart.HighlightedValuesFadeOpacity`  | `Series.HighlightedValuesFadeOpacity`   | 
+| `CategoryChart.HighlightedValuesDisplayMode`  | `Series.HighlightedValuesDisplayMode`   | 
+| `CategoryChart.InitialHighlightFilter`        |  |
+| `CategoryChart.InitialGroups`                 |  |
