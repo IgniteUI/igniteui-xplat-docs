@@ -151,7 +151,7 @@ cd wc-html
 npm init -y
 ```
 
-4 - **webpack** バンドラー および **webpack cli** を developer dependency としてインストールします。
+4 - **webpack** バンドラーおよび **webpack cli** を developer dependency としてインストールします。
 ```cmd
 npm install webpack webpack-cli --save-dev
 ```
@@ -227,7 +227,7 @@ npm install --save {PackageMaps}
 npm install lit-html
 ```
 
-2 - Geographic Map モジュールと**ModuleManager** を **index.js** ファイルにインポートします。
+2 - Geographic Map モジュールと **ModuleManager** を **index.js** ファイルにインポートします。
 
 ```ts
 import { IgcGeographicMapModule } from 'igniteui-webcomponents-maps';
