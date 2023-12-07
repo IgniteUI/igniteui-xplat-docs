@@ -41,6 +41,10 @@ The following example demonstrates the usage of the data highlighting overlay fe
 
 `sample="/charts/category-chart/chart-highlight-filter", height="500", alt="{Platform} Highlight Filter Example"`
 
+<!-- TODO add new section that talks about how this feature also applies to Range, Financial series and the HighlightedValueMemberPath property corresponds to:
+HighlightedHighMemberPath and HighlightedLowMemberPath in Range Series
+HighlightedHighMemberPath, HighlightedLowMemberPath, HighlightedOpenMemberPath, HighlightedCloseMemberPath in Financial Series-->
+
 ## Additional Resources
 
 You can find more information about related chart features in these topics:
