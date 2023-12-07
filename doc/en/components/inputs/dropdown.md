@@ -99,7 +99,7 @@ The preferred placement of the {Platform} Dropdown can be set using the `Placeme
 
 ### Selection
 
-The `Dropdown` emits the `igcChange` event when the user selects an item. The `Select` method of the Dropdown allows you to select an item by its index or value.
+The `Dropdown` emits the `Change` event when the user selects an item. The `Select` method of the Dropdown allows you to select an item by its index or value.
 
 ### Item
 

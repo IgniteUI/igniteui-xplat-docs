@@ -255,6 +255,11 @@ builder.Services.AddIgniteUIBlazor(
  - `ShowCrosshairs`: チャートの `CrosshairsDisplayMode` プロパティを介してマウスオーバー十字線の注釈を切り替える `ToolActionCheckbox`。
  - `ShowGridlines`: X-Axis に `MajorStroke` を適用することで追加のグリッド線を切り替える `ToolActionCheckbox`。
 
+画像に保存アクション
+
+- `CopyAsImage`: チャートをクリップボードにコピーするオプションを公開する `ToolActionLabel`。
+ - `CopyHeader`: サブ セクションのヘッダー。
+
 ### 垂直方向
 
 デフォルトでは、{Platform} ツールバーは水平に表示されますが、`Orientation` プロパティを設定することで垂直に表示することもできます。
@@ -274,8 +279,8 @@ builder.Services.AddIgniteUIBlazor(
 ```tsx
 <IgrToolbar orientation="Vertical" />
 ```
-<!-- 次の例は、{Platform} ツールバーの垂直方向を示しています。
-`sample="/charts/toolbar/layout-in-vertical-orientation", height="600", alt="{Platform} 垂直方向"` -->
+次の例は、{Platform} ツールバーの垂直方向を示しています。
+`sample="/charts/toolbar/layout-in-vertical-orientation", height="600", alt="{Platform} 垂直方向"`
 
 <!-- ## スタイル設定 / テーマ設定
 

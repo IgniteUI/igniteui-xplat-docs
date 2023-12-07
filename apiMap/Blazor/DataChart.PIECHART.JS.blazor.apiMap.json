@@ -170,14 +170,14 @@
       {"names":[{"platform": "Blazor", "mappedType": "SweepDirection","mappedName": "SweepDirection"}], "originalName": "SweepDirection"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "TextStyle"}], "originalName": "TextStyle"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueMemberPath"}], "originalName": "ValueMemberPath"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "OthersCategoryFill"}], "originalName": "othersCategoryStyle.fill"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "OthersCategoryOpacity"}], "originalName": "othersCategoryStyle.opacity"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "OthersCategoryStroke"}], "originalName": "othersCategoryStyle.stroke"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "OthersCategoryStrokeThickness"}], "originalName": "othersCategoryStyle.strokeThickness"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectedSliceFill"}], "originalName": "selectedStyle.fill"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "SelectedSliceOpacity"}], "originalName": "selectedStyle.opacity"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectedSliceStroke"}], "originalName": "selectedStyle.stroke"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "SelectedSliceStrokeThickness"}], "originalName": "selectedStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "OthersCategoryFill"}], "originalName": "othersCategoryStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "OthersCategoryOpacity"}], "originalName": "othersCategoryStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "OthersCategoryStroke"}], "originalName": "othersCategoryStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "OthersCategoryStrokeThickness"}], "originalName": "othersCategoryStyle.strokeThickness"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectedSliceFill"}], "originalName": "selectedStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "SelectedSliceOpacity"}], "originalName": "selectedStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectedSliceStroke"}], "originalName": "selectedStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "SelectedSliceStrokeThickness"}], "originalName": "selectedStyle.strokeThickness"} ]
   },
   {
     "originalName": "PieSliceOthersContext",

@@ -110,13 +110,13 @@
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "useOuterLabelsForLegend"}], "originalName": "UseOuterLabelsForLegend"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "useUnselectedStyle"}], "originalName": "UseUnselectedStyle"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "valueMemberPath"}], "originalName": "ValueMemberPath"},
-      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "fill"}], "originalName": "selectedSliceStyle.fill"},
-      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "selectedSliceStyle.opacity"},
-      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "selectedSliceStyle.stroke"},
-      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "selectedSliceStyle.strokeThickness"},
-      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "fill"}], "originalName": "unselectedSliceStyle.fill"},
-      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "unselectedSliceStyle.opacity"},
-      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "unselectedSliceStyle.stroke"},
-      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "unselectedSliceStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "fill"}], "originalName": "selectedSliceStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "selectedSliceStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "selectedSliceStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "selectedSliceStyle.strokeThickness"},
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "fill"}], "originalName": "unselectedSliceStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "unselectedSliceStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "unselectedSliceStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "unselectedSliceStyle.strokeThickness"} ]
   }]
 }

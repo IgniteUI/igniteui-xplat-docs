@@ -452,6 +452,13 @@ var app = builder.Build();
 </head>
 ```
 
+4 - Add Script Reference to the **Pages/_Host.cshtml** file:
+
+```razor
+<script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
+<script src="_framework/blazor.server.js"></script>
+```
+
 ### .NET 5 Applications
 
 1 - Open the **Startup.cs** file and register the Ignite UI for Blazor Service by calling **services.AddIgniteUIBlazor()**:

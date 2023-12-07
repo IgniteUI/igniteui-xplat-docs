@@ -186,9 +186,9 @@
     "names":[{"platform": "Blazor","fileName": "StyleShapeEventArgs.cs","mappedName": "IgbStyleShapeEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "Item"}], "originalName": "Item"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ShapeFill"}], "originalName": "shapeStyle.fill"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ShapeOpacity"}], "originalName": "shapeStyle.opacity"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ShapeStroke"}], "originalName": "shapeStyle.stroke"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ShapeStrokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ShapeFill"}], "originalName": "shapeStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ShapeOpacity"}], "originalName": "shapeStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ShapeStroke"}], "originalName": "shapeStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ShapeStrokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
   }]
 }
