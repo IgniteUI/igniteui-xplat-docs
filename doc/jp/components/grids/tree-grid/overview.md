@@ -49,7 +49,7 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 
 <!-- Angular, React, WebComponents -->
 
-{Platform} ツリーグリッドのパッケージをインストールするときは、core パッケージもインストールする必要があります。
+{Platform} ツリー グリッドのパッケージをインストールするときは、core パッケージもインストールする必要があります。
 
 ```cmd
 npm install --save {PackageCore}
@@ -59,7 +59,7 @@ npm install --save {PackageInputs}
 
 <!-- WebComponents -->
 
-ツリーグリッドを使用するには、次のインポートも含める必要があります:
+ツリー グリッドを使用するには、次のインポートも含める必要があります:
 
 ```typescript
 import 'igniteui-webcomponents-grids/grids/combined';
@@ -125,13 +125,13 @@ export class AppModule {}
 
 ### 初期展開時の深さ
 
-初期時のツリーグリッドは、すべてのノード レベルを展開して表示します。この動作は `ExpansionDepth` プロパティを使用して構成できます。デフォルトの値は **Infinity** ですべてのノードが展開されます。初期時の展開の深さは、このプロパティを数値に設定して制御できます。たとえば、**0** はルート レベルのノードのみを表示し、**1** はルートレベルと子ノードを表示します。
+初期時のツリー グリッドは、すべてのノード レベルを展開して表示します。この動作は `ExpansionDepth` プロパティを使用して構成できます。デフォルトの値は **Infinity** ですべてのノードが展開されます。初期時の展開の深さは、このプロパティを数値に設定して制御できます。たとえば、**0** はルート レベルのノードのみを表示し、**1** はルートレベルと子ノードを表示します。
 
 ### 子コレクション
 
 child collection オプションを使用して各データ オブジェクトは子コレクションを含み、親データ オブジェクトとして同じタイプの項目で生成します。これによりツリー グリッドの各レコードがその子への直接の参照を持つことができます。元のデータ ソースを含むツリー グリッドの `data` プロパティが階層が定義されたコレクションになります。
 
-For this sample, let's use the following collection structure:
+このサンプルでは、コレクション ストラクチャを使用します。
 
 ```typescript
 const EMPLOYEE_DATA = [
@@ -192,7 +192,7 @@ public class EmployeesItem
 }
 ```
 
-Now let's start by importing our `Data` collection and binding it to our tree grid.
+それでは、`Data` コレクションをインポートし、それをツリー グリッドにバインドすることから始めましょう。
 
 
 ```razor
@@ -298,7 +298,7 @@ Now let's start by importing our `Data` collection and binding it to our tree gr
 </IgbTreeGrid>
 ```
 
-You can see the result of the code from above at the beginning of this article in the [Tree Grid Example](./overview.md#example) section.
+上記のコードの結果は、この記事の冒頭の[ツリー グリッドの例](./overview.md#example)セクションで確認できます。
 
 ### プライマリと外部キー
 **プライマリと外部キー**オプションを使用した際に各データ オブジェクトはプライマリキーと外部キーを含みます。プライマリキーは現在のデータ オブジェクトの一意識別子、外部キーは親の一意識別子です。元のデータ ソースを含むツリー グリッドの `data` プロパティがフラット コレクションになります。
@@ -333,11 +333,11 @@ const data = [
 ];
 ```
 
-上記のサンプル データでは、すべてのレコードに ID、ParentID、および Name、JobTitle、Age などの追加プロパティがあります。前述のように、レコードの ID は一意である必要があります。これが `primaryKey` になります。ParentID には親ノードの ID が含まれており、`foreignKey` として設定できます。行にツリーグリッドのいずれの行にも一致しない ParentID がある場合、行がルート行であることを意味します。
+上記のサンプル データでは、すべてのレコードに ID、ParentID、および Name、JobTitle、Age などの追加プロパティがあります。前述のように、レコードの ID は一意である必要があります。これが `primaryKey` になります。ParentID には親ノードの ID が含まれており、`foreignKey` として設定できます。行にツリー グリッドのいずれの行にも一致しない ParentID がある場合、行がルート行であることを意味します。
 
-The parent-child relation is configured using the tree grid's `PrimaryKey` and `ForeignKey` properties.
+親子関係は、ツリー グリッドの `PrimaryKey` プロパティと `ForeignKey` プロパティを使用して構成されます。
 
-Here is the template of the component which demonstrates how to configure the tree grid to display the data defined in the above flat collection:
+上記フラット コレクションで定義されたデータを表示するツリー グリッドを設定する方法を示すコンポーネントのテンプレートです。
 
 ```html
  <igc-tree-grid auto-generate="false" name="treeGrid" id="treeGrid" primary-key="ID" foreign-key="ParentID" allow-filtering="true" moving="true" row-selection="multiple">
@@ -359,7 +359,7 @@ Here is the template of the component which demonstrates how to configure the tr
 </IgbTreeGrid>
 ```
 
-In addition we will enable the row selection feature of the tree grid by using the rowSelection property and also the filtering, sorting, editing, moving and resizing features for each of our columns.
+さらに、rowSelection プロパティを使用してツリー グリッドの行選択機能を有効にし、各列のフィルタリング、ソート、編集、移動、サイズ変更機能も有効にします。
 
 ```html
  <igc-tree-grid auto-generate="false" name="treeGrid" id="treeGrid" primary-key="ID" foreign-key="ParentID" allow-filtering="true" moving="true" row-selection="multiple">
@@ -385,13 +385,13 @@ In addition we will enable the row selection feature of the tree grid by using t
 </IgbTreeGrid>
 ```
 
-And here is the final result:
+以下は結果です:
 
-`sample="/{TreeGridSample}/using-primary-foreign-keys", height="700", alt="{Platform} Tree using Primary and Foreign keys example"`
+`sample="/{TreeGridSample}/using-primary-foreign-keys", height="700", alt="{Platform} 主キーと外部キーを使用したツリーの例"`
 
 ## パーシステンスとインテグレーション
 
-ツリー グリッド セルのインデントは、フィルタリング、ソート、ページングなど他のツリーグリッド全体の機能で永続化されます。
+ツリー グリッド セルのインデントは、フィルタリング、ソート、ページングなど他のツリー グリッド全体の機能で永続化されます。
 
 - `Sorting` が列に適用された際にデータ行がレベルごとにソートされます。ルートレベルの行はそれぞれの子に関係なく個々に並べ替えられます。各子コレクションは個々に並べ替えられます。
 - 最初の列 (`VisibleIndex` が 0 の列) は常にツリー列です。
@@ -414,7 +414,7 @@ And here is the final result:
 <IgbTreeGrid Class="tree-grid">
 ```
 
-Then set the related CSS properties for that class:
+次に、そのクラスに関連する CSS プロパティを設定します。
 
 ```css
 .tree-grid {

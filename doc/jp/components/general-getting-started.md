@@ -453,7 +453,7 @@ var app = builder.Build();
 </head>
 ```
 
-4 - Add Script Reference to the **Pages/_Host.cshtml** file:
+4 - スクリプト参照を **Pages/_Host.cshtml** ファイルに追加します。
 
 ```razor
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
