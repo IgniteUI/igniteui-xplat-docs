@@ -641,7 +641,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "クリップボードの操作",
         "href": "grids/tree-grid/clipboard-interactions.md",
         "status": "NEW"
@@ -701,7 +701,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "表示密度",
         "href": "grids/tree-grid/display-density.md",
         "status": "NEW"
@@ -710,6 +710,12 @@
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "編集",
         "href": "grids/tree-grid/editing.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "Excel へエクスポート",
+        "href": "grids/tree-grid/export-excel.md",
         "status": "NEW"
       },
       {
@@ -830,6 +836,12 @@
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "仮想化とパフォーマンス",
         "href": "grids/tree-grid/virtualization.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "Blazor"],
+        "name": "ロードオンデマンド",
+        "href": "grids/tree-grid/load-on-demand.md",
         "status": "NEW"
       }
     ]
@@ -1612,6 +1624,12 @@
     "href": "inputs/button.md"
   },
   {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "ボタン グループ",
+    "href": "inputs/button-group.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular"],
     "name": "チェックボックス",
     "href": "inputs/checkbox.md"
@@ -1842,7 +1860,7 @@
         "href": "grids/data-grid/localization.md"
       },
       {
-        "exclude": ["Angular", "React", "Blazor"],
+        "exclude": ["Angular", "Blazor"],
         "name": "比較データのバインディング",
         "href": "grids/data-grid/type-comparison-table.md",
         "status": ""

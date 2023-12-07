@@ -212,9 +212,9 @@
     "names":[{"platform": "Angular","fileName": "igx-style-shape-event-args.ts","mappedName": "IgxStyleShapeEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "item"}], "originalName": "Item"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fill"}], "originalName": "shapeStyle.fill"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "shapeStyle.opacity"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "shapeStyle.stroke"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fill"}], "originalName": "shapeStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "shapeStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "shapeStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
   }]
 }
