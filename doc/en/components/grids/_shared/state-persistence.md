@@ -13,9 +13,13 @@ namespace: Infragistics.Controls
 The {ProductName} State Persistence in {Platform} {ComponentTitle} allows developers to easily save and restore the grid state. When the `GridState` is applied on the {Platform} `{ComponentName}`, it exposes the `GetState` and `SetState` methods that developers can use to achieve state persistence in any scenario.
 <!-- end: Angular -->
 
-<!-- Blazor, React, WebComponents -->
-The {ProductName} State Persistence in {Platform} {ComponentTitle} allows developers to easily save and restore the grid state. When the `GridState` is applied on the {Platform} `{ComponentName}`, it exposes the `ExtractState` and `ApplyState` methods that developers can use to achieve state persistence in any scenario.
-<!-- end: Blazor, React, WebComponents -->
+<!-- React, WebComponents -->
+The {ProductName} State Persistence in {Platform} {ComponentTitle} allows developers to easily save and restore the grid state. When the `GridState` is applied on the {Platform} `{ComponentName}`, it exposes the `GetState`, `GetStateAsString`, `ApplyState` and `ApplyStateFromString` methods that developers can use to achieve state persistence in any scenario.
+<!-- end: React, WebComponents -->
+
+<!-- Blazor -->
+The {ProductName} State Persistence in {Platform} {ComponentTitle} allows developers to easily save and restore the grid state. When the `GridState` is applied on the {Platform} `{ComponentName}`, it exposes the `GetStateAsString` and `ApplyStateFromString` methods that developers can use to achieve state persistence in any scenario.
+<!-- end: Blazor -->
 
 ## Supported Features
 
@@ -34,10 +38,10 @@ The {ProductName} State Persistence in {Platform} {ComponentTitle} allows develo
 * **Expansion**
 * **GroupBy**
 * **Columns**
-    * **NEW**: Multi column headers are now supported out of the box
+    * Multi column headers
     * Columns order
     * Column properties defined by the `IColumnState` interface.
-    * Columns templates and functions are restored using application level code, see [Restoring Column](state-persistence.md#restoring-columns) section.
+<!-- * Columns templates and functions are restored using application level code, see [Restoring Column](state-persistence.md#restoring-columns) section. -->
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 
@@ -55,10 +59,10 @@ The {ProductName} State Persistence in {Platform} {ComponentTitle} allows develo
 * `RowPinning`
 * `Expansion`
 * `Columns`
-    * **NEW**: Multi column headers are now supported out of the box
+    * Multi column headers
     * Columns order
     * Column properties defined by the `IColumnState` interface.
-    * Columns templates and functions are restored using application level code, see [Restoring Column](state-persistence.md#restoring-columns) section.
+<!-- * Columns templates and functions are restored using application level code, see [Restoring Column](state-persistence.md#restoring-columns) section. -->
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -77,11 +81,13 @@ The {ProductName} State Persistence in {Platform} {ComponentTitle} allows develo
 
 <!-- ComponentEnd: PivotGrid -->
 
+<!-- Angular -->
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
 > The `GridState` does not take care of templates. Go to [Restoring Column](state-persistence.md#restoring-columns) section to see how to restore column templates.
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
+<!-- end: Angular -->
 
 ## Usage
 
@@ -91,8 +97,12 @@ The `GetState` method returns the grid state in a serialized JSON string, so dev
 The developer may choose to get only the state for a certain feature/features, by passing in the feature name, or an array with feature names as a second argument.
 <!-- end: Angular -->
 
+<!-- React, WebComponents -->
+The `GetState` method returns the grid state in a `GridStateInfo` object, containing all the state info. Additional steps may be required in order to save it.
+<!-- end: React, WebComponents -->
+
 <!-- Blazor, React, WebComponents -->
-The `ExtractState` method returns the grid state in a State object, containing all the state info. Additional steps may be required in order to save it. The alternative `ExtractStateAsString` returns a serialized JSON string, so developers can just take it and save it on any data storage (database, cloud, browser localStorage, etc).
+The `GetStateAsString` returns a serialized JSON string, so developers can just take it and save it on any data storage (database, cloud, browser localStorage, etc).
 
 The developer may choose to get only the state for a certain feature/features, by passing in an array with feature names as an argument. Empty array will result to using the default state options.
 <!-- end: Blazor, React, WebComponents -->
@@ -120,14 +130,14 @@ const sortingFilteringStates: IGridState = state.getState(false, ['sorting', 'fi
 ```typescript
 var gridState = document.getElementById('gridState') as IgcGridStateComponent;
 
-// get an `IgcState` object, containing all features original state objects, as returned by the grid public API
-const state: IgcState = gridState.extractState();
+// get an `IgcGridStateInfo` object, containing all features original state objects, as returned by the grid public API
+const state: IgcGridStateInfo = gridState.getState();
 
 // get all features` state in a serialized JSON string
-const stateString: string = gridState.extractStateAsString();
+const stateString: string = gridState.getStateAsString();
 
 // get the sorting and filtering expressions
-const sortingFilteringStates: IgcState = gridState.extractState(['sorting', 'filtering']);
+const sortingFilteringStates: IgcGridStateInfo = gridState.getState(['sorting', 'filtering']);
 ```
 <!-- end: WebComponents -->
 
@@ -138,14 +148,14 @@ const sortingFilteringStates: IgcState = gridState.extractState(['sorting', 'fil
 ```
 
 ```tsx
-// get an `IgrState` object, containing all features original state objects, as returned by the grid public API
-const state: IgrState = gridState.extractState([]);
+// get an `IgrGridStateInfo` object, containing all features original state objects, as returned by the grid public API
+const state: IgrGridStateInfo = gridState.getState([]);
 
 // get all features` state in a serialized JSON string
-const stateString: string = gridState.extractStateAsString([]);
+const stateString: string = gridState.getStateAsString([]);
 
 // get the sorting and filtering expressions
-const sortingFilteringStates: IgrState = gridState.extractState(['sorting', 'filtering']);
+const sortingFilteringStates: IgrGridStateInfo = gridState.getState(['sorting', 'filtering']);
 ```
 
 ```razor
@@ -154,14 +164,11 @@ const sortingFilteringStates: IgrState = gridState.extractState(['sorting', 'fil
 </{ComponentSelector}>
 
 @code {
-    // get an `IgbState` object, containing all features original state objects, as returned by the grid public API
-    State state = gridState.ExtractState(new string[0]);
-
     // get all features` state in a serialized JSON string
-    string stateString = gridState.ExtractStateAsString(new string[0]);
+    string stateString = gridState.GetStateAsString(new string[0]);
 
     // get the sorting and filtering expressions
-    State sortingFilteringStates = gridState.ExtractState(new string[] { "sorting", "filtering" });
+    string sortingFilteringStates = gridState.GetStateAsString(new string[] { "sorting", "filtering" });
 }
 ```
 
@@ -169,9 +176,11 @@ const sortingFilteringStates: IgrState = gridState.extractState(['sorting', 'fil
 `SetState` - The `SetState` method accepts the serialized JSON string or `IGridState` object as argument and will restore the state of each feature found in the object/JSON string.
 <!-- end: Angular -->
 
-<!-- Blazor, React, WebComponents -->
-`ApplyState` - The method accepts a `State` object as argument and will restore the state of each feature found in the object or specified features as second argument.
+<!-- React, WebComponents -->
+`ApplyState` - The method accepts a `GridStateInfo` object as argument and will restore the state of each feature found in the object or specified features as second argument.
+<!-- end: React, WebComponents -->
 
+<!-- Blazor, React, WebComponents -->
 `ApplyStateFromString` - The method accepts a serialized JSON string as argument and will restore the state of each feature found in the JSON string or specified features as second argument.
 <!-- end: Blazor, React, WebComponents -->
 
@@ -197,18 +206,21 @@ gridState.applyState(sortingFilteringStates, [])
 ```
 
 ```razor
-gridState.ApplyState(gridState, new string[0]);
 gridState.ApplyStateFromString(gridStateString, new string[0]);
-gridState.ApplyState(sortingFilteringStates, new string[0])
+gridState.ApplyStateFromString(sortingFilteringStates, new string[0])
 ```
 
 <!-- Angular -->
 The `Options` object implements the `IGridStateOptions` interface, i.e. for every key, which is the name of a certain feature, there is the boolean value indicating if this feature state will be tracked. `GetState` method will not put the state of these features in the returned value and `SetState` method will not restore state for them.
 <!-- end: Angular -->
 
-<!-- Blazor, React, WebComponents -->
-The `Options` object implements the `GridStateOptions` interface, i.e. for every key, which is the name of a certain feature, there is the boolean value indicating if this feature state will be tracked. `ExtractState`/`ExtractStateAsString` methods will not put the state of these features in the returned value and `ApplyState`/`ApplyStateFromString` methods will not restore state for them.
-<!-- end: Blazor, React, WebComponents -->
+<!-- React, WebComponents -->
+The `Options` object implements the `GridStateOptions` interface, i.e. for every key, which is the name of a certain feature, there is the boolean value indicating if this feature state will be tracked. `GetState`/`GetStateAsString` methods will not put the state of these features in the returned value and `ApplyState`/`ApplyStateFromString` methods will not restore state for them.
+<!-- end: React, WebComponents -->
+
+<!-- Blazor -->
+The `Options` object implements the `GridStateOptions` interface, i.e. for every key, which is the name of a certain feature, there is the boolean value indicating if this feature state will be tracked. `GetStateAsString` methods will not put the state of these features in the returned value and `ApplyStateFromString` methods will not restore state for them.
+<!-- end: Blazor -->
 
 <!-- Angular -->
 ```typescript
@@ -272,13 +284,13 @@ public restoreGridState() {
 <!-- WebComponents -->
 ```typescript
 constructor() {
-    const grid = document.getElementById('grid') as IgcGridComponent;
-    grid.addEventListener("rendered", () => { this.restoreGridState(); });
+    window.addEventListener("load", () => { this.restoreGridState(); });
     window.addEventListener("beforeunload", () => { this.saveGridState(); });
 }
 
+// Using methods that work with IgcGridStateInfo object.
 public saveGridState() {
-    const state = this.gridState.extractState();
+    const state = this.gridState.getState();
     window.localStorage.setItem('grid-state', JSON.stringify(state));
 }
 
@@ -286,6 +298,19 @@ public restoreGridState() {
     const state = window.localStorage.getItem('grid-state');
     if (state) {
         this.gridState.applyState(JSON.parse(state));
+    }
+}
+
+// Or using string alternative methods.
+public saveGridStateString() {
+    const state = this.gridState.getStateAsString();
+    window.localStorage.setItem('grid-state', state);
+}
+
+public restoreGridStateString() {
+    const state = window.localStorage.getItem('grid-state');
+    if (state) {
+        this.gridState.applyStateFromString(state);
     }
 }
 ```
@@ -299,14 +324,16 @@ public restoreGridState() {
 
 ```tsx
 useEffect(() => {
+    restoreGridState();
     window.addEventListener('beforeunload', saveGridState);
     return () => {
       window.removeEventListener('beforeunload', saveGridState);
     }
 }, []);
 
+// Using methods that work with IgrGridStateInfo object.
 function saveGridState() {
-    const state = gridState.extractState([]);
+    const state = gridState.getState([]);
     window.localStorage.setItem('grid-state', JSON.stringify(state));
 }
 
@@ -314,6 +341,19 @@ function restoreGridState() {
     const state = window.localStorage.getItem('grid-state');
     if (state) {
         gridState.applyState(JSON.parse(state), []);
+    }
+}
+
+//Or using string alternative methods.
+function saveGridState() {
+    const state = gridState.getStateAsString([]);
+    window.localStorage.setItem('grid-state', state);
+}
+
+function restoreGridState() {
+    const state = window.localStorage.getItem('grid-state');
+    if (state) {
+        gridState.applyStateFromString(state, []);
     }
 }
 ```
@@ -355,28 +395,20 @@ function restoreGridState() {
         RestoreGridState();
     }
 
-    // Using `ExtractState` method
     async void SaveGridState() {
-        IgbState state = gridState.ExtractState(new string[0]);
-        await JS.InvokeVoidAsync("window.localStorage.setItem", "grid-state", JsonConvert.SerializeObject(state));
-    }
-
-    // Or using `ExtractStateAsString` method
-    async void SaveGridStateString() {
-        string state = gridState.ExtractStateAsString(new string[0]);
+        string state = gridState.getStateAsString(new string[0]);
         await JS.InvokeVoidAsync("window.localStorage.setItem", "grid-state", state);
     }
 
     async void RestoreGridState() {
         string state = await JS.InvokeAsync<string>("window.localStorage.getItem", "grid-state");
         if (state) {
-            gridState.ApplyState(JsonConvert.DeserializeObject<IgbState>(state), new string[0]);
-            // Or
             gridState.ApplyStateFromString(state, new string[0]);
         }
     }
 }
 ```
+<!-- Angular -->
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
@@ -556,9 +588,7 @@ public activeTemplate = (ctx: IgcCellTemplateContext) => {
 
 <!-- ComponentEnd: HierarchicalGrid  -->
 
-<!-- Angular -->
 2. Query the template view in the component using @ViewChild or @ViewChildren decorator. In the `ColumnInit` event handler, assign the template to the column `BodyTemplate` property:
-<!-- end: Angular -->
 
 ```typescript
 @ViewChild('activeTemplate', { static: true }) public activeTemplate: TemplateRef<any>;
@@ -593,9 +623,9 @@ function onColumnInit(s: IgrGridComponent, e: IgrColumnComponentEventArgs) {
 
 ```razor
 // In Javascript
-public void OnColumnInit(IgbColumnComponentEventArgs event)
+public void OnColumnInit(IgbColumnComponentEventArgs args)
 {
-    IgbColumn column = event.Detail;
+    IgbColumn column = args.Detail;
     if (column.Field == "IsActive")
     {
         column.BodyTemplate = ActiveTemplate;
@@ -605,6 +635,7 @@ public void OnColumnInit(IgbColumnComponentEventArgs event)
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
+<!-- end: Angular -->
 
 <!-- ComponentStart: PivotGrid -->
 
@@ -773,8 +804,6 @@ Add snippet for blazor for restore state
 
 `sample="/{ComponentSample}/data-persistence-noop", height="580", alt="{Platform} {ComponentTitle} data persistence noop"`
 
-
-
 <!-- ComponentEnd: PivotGrid -->
 
 ## Limitations
@@ -797,7 +826,7 @@ state.setState(gridState.columnSelection);
 <!-- end: Angular -->
 
 <!-- Blazor, React, WebComponents -->
-* `ExtracStateAsString` method uses JSON.stringify() method to convert the original objects to a JSON string. JSON.stringify() does not support Functions, thats why the `GridState` component will ignore the columns `Formatter`, `Filters`, `Summaries`, `SortStrategy`, `CellClasses`, `CellStyles`, `HeaderTemplate` and `BodyTemplate` properties.
+* `GetStateAsString` method uses JSON.stringify() method to convert the original objects to a JSON string. JSON.stringify() does not support Functions, thats why the `GridState` component will ignore the columns `Formatter`, `Filters`, `Summaries`, `SortStrategy`, `CellClasses`, `CellStyles`, `HeaderTemplate` and `BodyTemplate` properties.
 <!-- end: Blazor, React, WebComponents -->
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
