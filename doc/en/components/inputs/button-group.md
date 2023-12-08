@@ -30,6 +30,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcButtonGroupComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 Now that you have the {ProductName} Button Group imported, you can start with a basic configuration of the `ButtonGroup` and its buttons.

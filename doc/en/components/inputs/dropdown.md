@@ -19,8 +19,6 @@ The following {Platform} Dropdown List example demonstrates the use of simple in
 
 `sample="/inputs/dropdown/overview", height="220", alt="{Platform} Dropdown Example"`
 
-
-
 ## How to use the Dropdown List with {ProductName}
 
 <!-- WebComponents -->
@@ -39,6 +37,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcDropdownComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->

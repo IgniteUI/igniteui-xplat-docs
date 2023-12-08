@@ -13,8 +13,6 @@ The {Platform} Button Component lets you enable clickable elements that trigger 
 
 `sample="/inputs/button/overview", height="100", alt="{Platform} Button Example"`
 
-
-
 ## Usage
 
 <!-- WebComponents -->
@@ -32,6 +30,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcButtonComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -70,12 +71,12 @@ You will also need to link an additional CSS file to apply the styling to the `B
 
 The simplest way to start using the `Button` is as follows:
 
-```tsx
-<IgrButton />
-```
-
 ```html
 <igc-button>Click me</igc-button>
+```
+
+```tsx
+<IgrButton />
 ```
 
 ```razor
