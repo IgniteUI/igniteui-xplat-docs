@@ -21,8 +21,6 @@ In it, you can see how to define an accordion and its expansion panels. The samp
 
 `sample="/layouts/accordion/overview", height="460", alt="{Platform} Accordion Example"`
 
-
-
 <div class="divider--half"></div>
 
 ## Getting Started with {Platform} Accordion
@@ -42,6 +40,8 @@ import { defineComponents, IgcAccordionComponent } from 'igniteui-webcomponents'
 
 defineComponents(IgcAccordionComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
