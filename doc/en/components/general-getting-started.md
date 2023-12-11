@@ -125,6 +125,12 @@ defineAllComponents();
 > [!Note]
 > Importing all of the components will increase the bundle size of your application. That's why we recommend you to import only the components that you are actually using.
 
+The last step is to import the necessary CSS for our components so that they are styled properly:
+
+```ts
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+```
+
 After the components are imported you can use them in your html:
 
 ```html

@@ -13,8 +13,6 @@ The {ProductName} Mask Input is an input field that allows the developer to cont
 
 `sample="/inputs/mask-input/overview", height="150", alt="{Platform} Mask Input Overview Example"`
 
-
-
 ## Usage
 
 <!-- WebComponents -->
@@ -33,6 +31,8 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcMaskInputComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 ### Mask Rules
 The table bellow shows the supported built-in mask rules:

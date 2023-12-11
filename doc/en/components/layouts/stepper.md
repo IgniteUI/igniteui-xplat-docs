@@ -14,8 +14,6 @@ The following {ProductName} Stepper Example below shows the component in action.
 
 `sample="/layouts/stepper/overview", height="725", alt="{Platform} Stepper Example"`
 
-
-
 <div class="divider--half"></div>
 
 ## Getting Started with {Platform} Stepper
@@ -35,6 +33,8 @@ import { defineComponents, IgcStepperComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcStepperComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 ```razor
