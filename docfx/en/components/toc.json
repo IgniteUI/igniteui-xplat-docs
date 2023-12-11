@@ -727,7 +727,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Filtering",
         "href": "grids/tree-grid/filtering.md",
         "status": "NEW"

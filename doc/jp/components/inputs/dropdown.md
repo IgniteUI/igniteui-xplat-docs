@@ -100,7 +100,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbDropdownModule));
 
 ### 選択
 
-ユーザーが項目を選択すると、`Dropdown` は `igcChange` イベントを発行します。ドロップダウンの `Select` メソッドを使用すると、インデックスまたは値で項目を選択できます。
+ユーザーが項目を選択すると、`Dropdown` は `Change` イベントを発行します。ドロップダウンの `Select` メソッドを使用すると、インデックスまたは値で項目を選択できます。
 
 ### Item (項目)
 
