@@ -13,8 +13,6 @@ _language: ja
 
 `sample="/inputs/circular-progress-indicator/simple", height="150", alt="{Platform} Circular Progress の例"`
 
-
-
 <div class="divider--half"></div>
 
 ## 使用方法
@@ -34,6 +32,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcCircularProgressComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -71,12 +72,12 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCircularProgressModule));
 
 `CircularProgress` の使用を開始する最も簡単な方法は次のとおりです:
 
-```tsx
-<IgrCircularProgress value="100"></IgrCircularProgress>
-```
-
 ```html
 <igc-circular-progress value="100"></igc-circular-progress>
+```
+
+```tsx
+<IgrCircularProgress value="100"></IgrCircularProgress>
 ```
 
 ```razor

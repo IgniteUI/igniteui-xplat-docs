@@ -14,8 +14,6 @@ _language: ja
 
 `sample="/layouts/expansion-panel/usage", height="320", alt="{Platform} 展開パネルの例"`
 
-
-
 <div class="divider--half"></div>
 
 ## 使用方法
@@ -34,6 +32,8 @@ import {defineComponents, IgcExpansionPanelComponent} from 'igniteui-webcomponen
 
 defineComponents(IgcExpansionPanelComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 

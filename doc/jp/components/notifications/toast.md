@@ -67,6 +67,8 @@ import { defineComponents, IgcToastComponent } from 'igniteui-webcomponents';
 defineComponents(IgcToastComponent);
 ```
 
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- Blazor -->
 
 また、追加の CSS ファイルをリンクして、スタイルを `Calendar` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:

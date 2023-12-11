@@ -32,6 +32,8 @@ import { defineComponents, IgcIconComponent } from "igniteui-webcomponents";
 defineComponents(IgcIconComponent);
 ```
 
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 `Icon` を使用する前に、次のように登録する必要があります:

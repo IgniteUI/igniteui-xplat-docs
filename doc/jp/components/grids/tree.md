@@ -42,6 +42,8 @@ import { defineComponents, IgcTreeComponent } from 'igniteui-webcomponents';
 defineComponents(IgcTreeComponent);
 ```
 
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->

@@ -16,7 +16,6 @@ _language: ja
 
 `sample="/inputs/combo/overview", height="400", alt="{Platform} Combo の例"`
 
-
 <div class="divider--half"></div>
 
 ## {Platform} コンボボックス コンポーネントを使用した作業の開始
@@ -28,7 +27,7 @@ _language: ja
 npm install {PackageWebComponents}
 ```
 
-`ComboBox` コンポーネントを使用する前に、追加のコンポーネントとともに登録する必要があります:
+`ComboBox` コンポーネントを使用する前に、追加のコンポーネントおよび必要な CSS とともに登録する必要があります:
 
 ```ts
 import { defineComponents, IgcComboComponent }
@@ -37,6 +36,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcComboComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- Blazor -->

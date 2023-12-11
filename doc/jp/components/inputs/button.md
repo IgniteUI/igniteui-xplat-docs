@@ -14,8 +14,6 @@ _language: ja
 
 `sample="/inputs/button/overview", height="100", alt="{Platform} Button の例"`
 
-
-
 ## 使用方法
 
 <!-- WebComponents -->
@@ -33,6 +31,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcButtonComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -71,12 +72,12 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 
 `Button` の使用を開始する最も簡単な方法は次のとおりです:
 
-```tsx
-<IgrButton />
-```
-
 ```html
 <igc-button>Click me</igc-button>
+```
+
+```tsx
+<IgrButton />
 ```
 
 ```razor

@@ -35,6 +35,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -78,15 +81,6 @@ builder.Services.AddIgniteUIBlazor(
 
 `Radio` の使用を開始する最も簡単な方法は次のとおりです:
 
-```tsx
-<IgrRadioGroup>
-  <IgrRadio value="apple"><span>Apple</span></IgrRadio>
-  <IgrRadio value="banana"><span>Banana</span></IgrRadio>
-  <IgrRadio value="Mango"><span>Mango</span></IgrRadio>
-  <IgrRadio value="orange"><span>Orange</span></IgrRadio>
-</IgrRadioGroup>
-```
-
 ```html
 <igc-radio-group>
   <igc-radio>Apple</igc-radio>
@@ -94,6 +88,15 @@ builder.Services.AddIgniteUIBlazor(
   <igc-radio>Mango</igc-radio>
   <igc-radio>Orange</igc-radio>
 </igc-radio-group>
+```
+
+```tsx
+<IgrRadioGroup>
+  <IgrRadio value="apple"><span>Apple</span></IgrRadio>
+  <IgrRadio value="banana"><span>Banana</span></IgrRadio>
+  <IgrRadio value="Mango"><span>Mango</span></IgrRadio>
+  <IgrRadio value="orange"><span>Orange</span></IgrRadio>
+</IgrRadioGroup>
 ```
 
 ```razor

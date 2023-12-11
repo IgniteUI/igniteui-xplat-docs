@@ -33,6 +33,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -69,15 +72,15 @@ builder.Services.AddIgniteUIBlazor(
 
 `Slider` と `RangeSlider` の使用を開始する最も簡単な方法は次のとおりです:
 
+```html
+<igc-slider value="40"></igc-slider>
+<igc-range-slider lower="20" upper="70"></igc-range-slider>
+```
+
 ```tsx
  <IgrSlider value="40" />
     <span className="slider-label"></span>
 <IgrRangeSlider lower="20" upper="70"></IgrRangeSlider>
-```
-
-```html
-<igc-slider value="40"></igc-slider>
-<igc-range-slider lower="20" upper="70"></igc-range-slider>
 ```
 
 ```razor

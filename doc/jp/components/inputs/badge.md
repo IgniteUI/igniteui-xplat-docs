@@ -14,8 +14,6 @@ _language: ja
 
 `sample="/inputs/badge/outlined", height="60", alt="{Platform} Badge の例"`
 
-
-
 <div class="divider"></div>
 
 ## 使用方法
@@ -23,11 +21,11 @@ _language: ja
 <!-- WebComponents -->
 まず、次のコマンドを実行して {ProductName} をインストールする必要があります。
 
-次に、以下のように、`Badge` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
-
 ```cmd
 npm install {PackageWebComponents}
 ```
+
+次に、以下のように、`Badge` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
 ```ts
 import { defineComponents, IgcBadgeComponent } from "igniteui-webcomponents";
@@ -35,6 +33,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcBadgeComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -73,12 +74,12 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbBadgeModule));
 
 `Badge` の使用を開始する最も簡単な方法は次のとおりです:
 
-```tsx
-<IgrBadge />
-```
-
 ```html
 <igc-badge></igc-badge>
+```
+
+```tsx
+<IgrBadge />
 ```
 
 ```razor

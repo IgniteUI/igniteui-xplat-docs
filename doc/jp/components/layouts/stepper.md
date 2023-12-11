@@ -15,8 +15,6 @@ _language: ja
 
 `sample="/layouts/stepper/overview", height="725", alt="{Platform} ステッパーの例"`
 
-
-
 <div class="divider--half"></div>
 
 ## {Platform} ステッパーを使用した作業の開始
@@ -36,6 +34,8 @@ import { defineComponents, IgcStepperComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcStepperComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 ```razor

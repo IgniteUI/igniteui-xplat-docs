@@ -17,8 +17,6 @@ _language: ja
 
 `sample="/menus/nav-bar/overview", height="100", alt="{Platform} Navbar 概要の例"`
 
-
-
 ## 使用方法
 
 <!-- WebComponents -->
@@ -43,6 +41,8 @@ import { defineComponents, IgcNavbarComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcNavbarComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 <!-- Blazor -->
 

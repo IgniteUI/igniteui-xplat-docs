@@ -14,8 +14,6 @@ _language: ja
 
 `sample="/layouts/avatar/icon", height="80", alt="{Platform} Avatar の例"`
 
-
-
 <div class="divider--half"></div>
 
 ## 使用方法
@@ -70,6 +68,8 @@ import { defineComponents, IgcAvatarComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcAvatarComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 `Avatar` は、画像、イニシャル、またはアイコンを含むその他のコンテンツを表示できます。`Avatar` の宣言は次のように簡単です。
 

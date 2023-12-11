@@ -21,8 +21,6 @@ _language: ja
 
 `sample="/layouts/accordion/overview", height="460", alt="{Platform} アコーディオンの例"`
 
-
-
 <div class="divider--half"></div>
 
 ## {Platform} アコーディオンで作業を開始
@@ -42,6 +40,8 @@ import { defineComponents, IgcAccordionComponent } from 'igniteui-webcomponents'
 
 defineComponents(IgcAccordionComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 

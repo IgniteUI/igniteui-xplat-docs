@@ -18,8 +18,6 @@ _language: ja
 
 `sample="/layouts/tabs/overview", height="150", alt="{Platform} タブの例"`
 
-
-
 ## {ProductName} でタブを使用する方法
 
 <!-- WebComponents -->
@@ -45,6 +43,8 @@ import { defineComponents, IgcTabsComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcTabsComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 単純な `Tabs` の宣言は次のように行われます:
 

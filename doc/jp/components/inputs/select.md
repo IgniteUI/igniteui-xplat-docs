@@ -40,6 +40,8 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcSelectComponent);
 ```
 
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- Blazor -->

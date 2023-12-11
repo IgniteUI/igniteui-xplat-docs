@@ -73,6 +73,8 @@ import { defineComponents, IgcSnackbarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcSnackbarComponent);
 ```
 
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 Snackbar コンポーネントを表示する最も簡単な方法は、`Show` メソッドを使用して、ボタン クリックで呼び出すことです。
 
 ```html

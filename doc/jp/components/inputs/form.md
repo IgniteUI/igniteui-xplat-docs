@@ -16,8 +16,6 @@ _language: ja
 
 `sample="/inputs/form/overview", height="300", alt="{Platform} Form の例"`
 
-
-
 ## 使用方法
 
 <!-- WebComponents -->
@@ -35,6 +33,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcButtonComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->

@@ -34,6 +34,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcIconButtonComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -71,12 +74,12 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbIconButtonModule));
 <!-- end: Blazor -->
 `IconButton` の使用を開始する最も簡単な方法は次のとおりです:
 
-```tsx
-<IgrIconButton name="thumb-up" collection="material"></IgrIconButton>
-```
-
 ```html
 <igc-icon-button name="thumb-up" collection="material"></igc-icon-button>
+```
+
+```tsx
+<IgrIconButton name="thumb-up" collection="material"></IgrIconButton>
 ```
 
 ```razor
