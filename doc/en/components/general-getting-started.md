@@ -153,6 +153,12 @@ defineAllComponents();
 > [!Note]
 > Importing all of the components will increase the bundle size of your application. That's why we recommend you to import only the components that you are actually using.
 
+The last step is to import the necessary CSS for our components so that they are styled properly:
+
+```ts
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+```
+
 After the components are imported you can use them in your html:
 
 ```html
@@ -477,6 +483,13 @@ var app = builder.Build();
 <head>
     <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 </head>
+```
+
+4 - Add Script Reference to the **Pages/_Host.cshtml** file:
+
+```razor
+<script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
+<script src="_framework/blazor.server.js"></script>
 ```
 
 ### .NET 5 Applications
