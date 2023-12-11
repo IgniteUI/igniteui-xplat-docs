@@ -35,6 +35,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcSwitchComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -74,12 +77,12 @@ You will also need to link an additional CSS file to apply the styling to the `S
 
 The simplest way to start using the `Switch` is as follows:
 
-```tsx
-<IgrSwitch></IgrSwitch>
-```
-
 ```html
 <igc-switch></igc-switch>
+```
+
+```tsx
+<IgrSwitch></IgrSwitch>
 ```
 
 ```razor
