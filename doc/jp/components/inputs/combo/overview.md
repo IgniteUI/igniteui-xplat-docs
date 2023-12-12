@@ -37,7 +37,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcComboComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../../general-getting-started.md) topic.
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 <!-- end: WebComponents -->
 
@@ -133,7 +133,7 @@ export class Sample {
 
 ### 値の設定
 
-ComboBox コンポーネントは、属性 (値とも呼ばれます) に加えて、`Value` ゲッターとセッターを公開します。 value 属性を使用して、コンポーネントの初期化時に選択した項目を設定できます。
+ComboBox コンポーネントは、属性 (値とも呼ばれます) に加えて、`Value` ゲッターとセッターを公開します。value 属性を使用して、コンポーネントの初期化時に選択した項目を設定できます。
 
 値 (現在選択されている項目のリスト) を読み取る場合、または値を更新する場合は、それぞれ値ゲッターとセッターを使用します。値ゲッターは、`ValueKey` で表される選択されたすべての項目のリストを返します。同様に、値セッターを使用して選択した項目のリストを更新する場合は、`ValueKey` によって項目のリストを提供する必要があります。 
 

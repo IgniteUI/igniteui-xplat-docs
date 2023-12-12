@@ -50,7 +50,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbInputModule));
 
 <!-- WebComponents -->
 
-開始するには、typescript ファイルに `Input` をインポートし、次のように [defineComponents()](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
+開始するには、typescript ファイルに `Input` をインポートし、次のように [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
 
 ```ts
 import { defineComponents, IgcInputComponent } from 'igniteui-webcomponents';

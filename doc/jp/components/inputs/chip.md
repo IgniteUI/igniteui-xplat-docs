@@ -36,7 +36,6 @@ defineComponents(IgcChipComponent);
 
 {ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
-
 <!-- end: WebComponents -->
 
 <!-- React -->
