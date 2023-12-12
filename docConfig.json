@@ -118,6 +118,7 @@
             { "name": "{ProductName}",              "value": "Ignite UI for React" },
             { "name": "{ProductNameShort}",         "value": "Ignite UI" },
             { "name": "{Platform}",                 "value": "React"},
+            { "name": "{PackageCommon}",            "value": "igniteui-react"},
             { "name": "{PackageCore}",              "value": "igniteui-react-core"},
             { "name": "{PackageCharts}",            "value": "igniteui-react-charts"},
             { "name": "{PackageDataSources}",       "value": "igniteui-react-datasources"},

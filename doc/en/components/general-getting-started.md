@@ -10,6 +10,30 @@ mentionedTypes: ['XamBulletGraph']
 
 This topic provides step-by-step instructions for creating React applications with Ignite UI for React
 
+## Prerequisites
+
+1. Install NodeJS.
+2. Install Visual Studio Code.
+
+<div>
+    <div style="display:inline-block;width:45%;text-align:center;">
+      <img src="../images/general/nodejs.svg"
+           style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
+      <a target="_blank" href="https://nodejs.org/en/download/" class="no-external-icon"
+         style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 15px 5px 15px;">
+        DOWNLOAD NODE
+      </a>
+    </div>
+    <div style="display:inline-block;width:45%;text-align:center;">
+      <img src="../images/general/vs-code.svg"
+           style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
+      <a target="_blank" href="https://code.visualstudio.com/download" class="no-external-icon"
+         style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 15px 5px 15px;">
+        DOWNLOAD VS CODE
+      </a>
+    </div>
+</div>
+
 ## Creating New React Project
 
 With above prerequisites installed, we can create a new React application.
@@ -25,7 +49,11 @@ npx create-react-app my-app-name --typescript
 yarn create react-app my-app-name --typescript
 ```
 
-Refer to this <a href="https://facebook.github.io/create-react-app/docs/adding-typescript" target="_blank">website</a> for more information on above commands.
+Depending on the approach `npx` or `yarn` will be required. Refer to this <a href="https://facebook.github.io/create-react-app/docs/adding-typescript" target="_blank">website</a> for more information on above commands.
+
+```cmd
+cd my-app-name
+```
 
 <!-- end: React -->
 
@@ -294,13 +322,13 @@ npm run build
 <!-- end: WebComponents -->
 
 <!-- Angular, React -->
-# Getting Started With {ProductName}
 
 ## Updating Existing App
 
 If you want to use {ProductName} in an existing {Platform} CLI project (one that you have from before). We have you covered! All you have to do is execute these commands:
 
 ```cmd
+npm install --save {PackageCommon}
 npm install --save {PackageCharts} {PackageCore}
 npm install --save {PackageExcel} {PackageCore}
 npm install --save {PackageGauges} {PackageCore}
@@ -335,8 +363,7 @@ builder.Services.AddIgniteUIBlazor(
 ```
 
 ```ts
-import { IgrGeographicMapModule } from 'igniteui-react-maps';
-import { IgrGeographicMap } from 'igniteui-react-maps';
+import { IgrGeographicMapModule, IgrGeographicMap } from 'igniteui-react-maps';
 import { IgrDataChartInteractivityModule } from 'igniteui-react-charts';
 
 IgrGeographicMapModule.register();
@@ -361,15 +388,15 @@ We are now ready to use the {ProductName} map component in our markup! Let's go 
 
 ```tsx
 // App.txs
-render() {
-    return (
-        <div style={{height: "100%", width: "100%" }}>
-            <IgrGeographicMap
-            width="800px"
-            height="500px"
-            zoomable="true" />
-        </div>
-    );
+function App() {
+  return (
+    <div style={{ height: "100%", width: "100%" }}>
+      <IgrGeographicMap
+        width="800px"
+        height="500px"
+        zoomable="true" />
+    </div>
+  );
 }
 ```
 
