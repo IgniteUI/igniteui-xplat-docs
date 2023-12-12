@@ -67,7 +67,7 @@ import { defineComponents, IgcToastComponent } from 'igniteui-webcomponents';
 defineComponents(IgcToastComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 <!-- Blazor -->
 

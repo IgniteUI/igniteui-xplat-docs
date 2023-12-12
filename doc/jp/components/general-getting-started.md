@@ -126,7 +126,7 @@ defineAllComponents();
 > [!Note]
 > すべてのコンポーネントをインポートすると、アプリケーションのバンドル サイズが大きくなります。そのため、実際に使用しているコンポーネントのみをインポートすることをお勧めします。
 
-The last step is to import the necessary CSS for our components so that they are styled properly:
+最後の手順は、コンポーネントが適切にスタイル設定されるように、コンポーネントに必要な CSS をインポートすることです。
 
 ```ts
 import 'igniteui-webcomponents/themes/light/bootstrap.css';

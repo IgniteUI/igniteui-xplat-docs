@@ -44,7 +44,7 @@ import { defineComponents, IgcTabsComponent } from 'igniteui-webcomponents';
 defineComponents(IgcTabsComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 単純な `Tabs` の宣言は次のように行われます:
 

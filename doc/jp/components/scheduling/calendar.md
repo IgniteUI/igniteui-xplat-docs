@@ -76,7 +76,7 @@ import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcCalendarComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 {ProductName} `Calendar` の使用を開始する最も簡単な方法は次のとおりです。
 
