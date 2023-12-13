@@ -12,8 +12,6 @@ The {ProductName} Linear Progress Indicator component provides a visual indicato
 
 `sample="/inputs/linear-progress-indicator/simple", height="80", alt="{Platform} Linear Progress Example"`
 
-
-
 <div class="divider--half"></div>
 
 ## Usage
@@ -33,6 +31,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcLinearProgressComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -71,12 +72,12 @@ You will also need to link an additional CSS file to apply the styling to the `C
 
 The simplest way to start using the `LinearProgress` is as follows:
 
-```tsx
-<IgrLinearProgress value="100"></IgrLinearProgress>
-```
-
 ```html
 <igc-linear-progress value="100"></igc-linear-progress>
+```
+
+```tsx
+<IgrLinearProgress value="100"></IgrLinearProgress>
 ```
 
 ```razor

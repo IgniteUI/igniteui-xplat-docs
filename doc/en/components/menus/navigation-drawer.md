@@ -16,8 +16,6 @@ This sample demonstrates how to create `NavDrawer` component.
 
 `sample="/menus/nav-drawer/add-drawer-items", height="300", alt="{Platform} Navigation Drawer Items Example"`
 
-
-
 ## Usage
 
 <!-- WebComponents -->
@@ -76,6 +74,8 @@ import { defineComponents, IgcNavDrawerComponent } from 'igniteui-webcomponents'
 
 defineComponents(IgcNavDrawerComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 ## Adding Navigation Drawer Items
 
