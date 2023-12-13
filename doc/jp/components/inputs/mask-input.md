@@ -14,8 +14,6 @@ _language: ja
 
 `sample="/inputs/mask-input/overview", height="150", alt="{Platform} マスク入力の概要の例"`
 
-
-
 ## 使用方法
 
 <!-- WebComponents -->
@@ -34,6 +32,8 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcMaskInputComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 ### マスクのルール
 次の表は、サポートされている組み込みのマスク ルールを示しています:

@@ -15,21 +15,8 @@ By default, the Grid in {ProductName} is used in cell editing. And due to the **
 In addition, you can define your own custom templates for update-data actions and to override the default behavior for committing and discarding any changes.
 
 ## {Platform} {ComponentTitle} Cell Editing and Edit Templates Example
-<!-- WebComponents, React -->
 
 `sample="/{ComponentSample}/editing-columns", height="700", alt="{Platform} {ComponentTitle} Cell Editing and Edit Templates Example"`
-
-<!-- end: WebComponents, React -->
-
-<!-- Blazor -->
-
-<!-- ComponentStart: Grid -->
-
-`sample="/{ComponentSample}/editing-columns", height="700", alt="{Platform} {ComponentTitle} Cell Editing and Edit Templates Example"`
-
-<!-- ComponentEnd: Grid -->
-
-<!-- end: Blazor -->
 
 <!-- Angular -->
 
@@ -1017,7 +1004,7 @@ Then set the related CSS properties for that class:
 
 ### Styling Example
 
-`sample="/{ComponentSample}/cell-editing-style", height="650", alt="{Platform} {ComponentTitle} Cell Editing Styling Example"`
+`sample="/{ComponentSample}/cell-editing-styling", height="650", alt="{Platform} {ComponentTitle} Cell Editing Styling Example"`
 
 <!-- end: WebComponents, Blazor, React -->
 
