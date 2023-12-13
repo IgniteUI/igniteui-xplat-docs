@@ -54,10 +54,10 @@ _language: ja
 <!-- end: Angular -->
 
 ```razor
-<IgbGrid Data=data AutoGenerate=false AllowFiltering=true>
+<{ComponentSelector} Data=data AutoGenerate=false AllowFiltering=true>
     <IgbColumn Field="ProductName" DataType="GridColumnDataType.String"></IgbColumn>
     <IgbColumn Field="Price" DataType="GridColumnDataType.Number" Filterable=false></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 ```
 
 <!-- WebComponents -->
@@ -88,7 +88,7 @@ _language: ja
 <!-- end: Angular -->
 
 ```razor
-<IgbGrid Data=data AutoGenerate=true AllowAdvancedFiltering=true />
+<{ComponentSelector} Data=data AutoGenerate=true AllowAdvancedFiltering=true />
 ```
 
 <!-- WebComponents -->
@@ -168,10 +168,10 @@ _language: ja
 <!-- ComponentEnd: HierarchicalGrid -->
 
 ```razor
-<IgbGrid Data=data AutoGenerate=false AllowFiltering=true>
+<{ComponentSelector} Data=data AutoGenerate=false AllowFiltering=true>
     <IgbColumn Field="ProductName" DataType="GridColumnDataType.String"></IgbColumn>
     <IgbColumn Field="Price" DataType="GridColumnDataType.Number" Filterable=false></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 ```
 
 > [!Note]
@@ -351,7 +351,7 @@ constructor() {
 `{ComponentName}` コントロールの `FilteringLogic` プロパティは `{ComponentName}` で複数の列のフィルターが解決する方法を制御します。`{ComponentName}` API または `{ComponentName}` の入力プロパティによって変更できます。
 
 ```razor
- <IgbGrid FilteringLogic="FilteringLogic.Or"></IgbGrid>
+ <{ComponentSelector} FilteringLogic="FilteringLogic.Or"></{ComponentSelector}>
 ```
 
 <!-- Angular -->
@@ -397,6 +397,7 @@ this.grid.filteringLogic = FilteringLogic.OR;
 以下のサンプルの 「Product Name」 と 「Discontinued」 列フィルタリング メニューを確認してください。「Discontinued」 列フィルターでは、オペランドの数が All に制限されています。「Product Name」 列フィルター - Contains および Does Not Contain オペランド ロジックを変更して大文字と小文字を区別した検索を実行し、Empty と Not Empty を追加します。
 
 これにより、`StringFilteringOperand` と `BooleanFilteringOperand` を拡張し、オペランドとロジックを変更して列 `filters` 入力を新しいオペランドに設定します。
+<!-- Angular -->
 
 ```typescript
 // grid-custom-filtering.component.ts
@@ -550,14 +551,10 @@ export class BooleanFilteringOperand extends IgcBooleanFilteringOperand {
 ```
 ```ts
 constructor() {
-    var productName = this.productName = document.getElementById('ProductName') as IgcColumnComponent;
-    var discontinued = this.discontinued = document.getElementById('Discontinued') as IgcColumnComponent;
-
-    this._bind = () => {
-        productName.filters = this.caseSensitiveFilteringOperand;
-        discontinued.filters = this.booleanFilteringOperand;
-    }
-    this._bind();
+    var productName = document.getElementById('ProductName') as IgcColumnComponent;
+    var discontinued = document.getElementById('Discontinued') as IgcColumnComponent;
+    productName.filters = this.caseSensitiveFilteringOperand;
+    discontinued.filters = this.booleanFilteringOperand;
 }
 ```
 <!-- end: WebComponents -->
@@ -622,6 +619,9 @@ constructor() {
 
 <!-- end: Angular -->
 
+
+<!-- Angular -->
+
 <!-- ComponentStart: TreeGrid -->
 
 ## マッチング レコードのみのフィルタリング方式
@@ -641,6 +641,7 @@ public matchingRecordsOnlyStrategy = new TreeGridMatchingRecordsOnlyFilteringStr
 
 <!-- ComponentEnd: TreeGrid -->
 
+<!-- end: Angular -->
 
 <!-- WebComponents, Blazor, React -->
 
@@ -651,12 +652,12 @@ public matchingRecordsOnlyStrategy = new TreeGridMatchingRecordsOnlyFilteringStr
 
 <!-- WebComponents -->
 ```ts
-<igc-grid class="grid">
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
 
 ```razor
-<IgbGrid Class="grid"></IgbGrid>
+<{ComponentSelector} Class="grid"></ComponentSelector>
 ```
 
 <!-- React -->

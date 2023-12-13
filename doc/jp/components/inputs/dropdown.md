@@ -20,8 +20,6 @@ Ignite UI for {Platform} ドロップダウン コンポーネントは、事前
 
 `sample="/inputs/dropdown/overview", height="220", alt="{Platform} Dropdown の例"`
 
-
-
 ## {ProductName} で Dropdown List を使用する方法
 
 <!-- WebComponents -->
@@ -40,6 +38,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcDropdownComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
 <!-- end: WebComponents -->
 
 <!-- React -->
