@@ -784,7 +784,7 @@ Then set the related CSS properties to this class:
 
 ### Demo
 
-`sample="/{GridSample}/column-pinning-styles", height="510", alt="{Platform} {ComponentTitle} Pinning Styling Example"`
+`sample="/{ComponentSample}/column-pinning-styles", height="510", alt="{Platform} {ComponentTitle} Pinning Styling Example"`
 
 <!-- end: WebComponents, Blazor -->
 
