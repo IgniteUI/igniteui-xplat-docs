@@ -575,7 +575,7 @@ function columnHeaderTemplate(e: { dataContext: IgrColumnTemplateContext }) {
 
 次のサンプルは、ヘッダー テンプレートを使用して折りたたみ可能な列グループを実装する方法を示しています。
 
-`sample="/{ComponentSample}/multi-column-header-template", height="550", alt="{Platform} {ComponentTitle} 複数列ヘッダーテンプレートの例"`
+`sample="/{ComponentSample}/multi-column-headers-template", height="550", alt="{Platform} {ComponentTitle} 複数列ヘッダーテンプレートの例"`
 
 ## スタイル設定
 
