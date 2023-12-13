@@ -476,7 +476,7 @@ public updateSearch() {
 }
 ```
 <!-- React -->
-次に完全一致の検索で大文字と小文字を区別するかどうかをユーザーが選択できるようにします。この目的のために、 `IgrChip` を使用してその参照を取得し、 `selected` プロパティを使用できます。
+次に完全一致の検索で大文字と小文字を区別するかどうかをユーザーが選択できるようにします。この目的のために、`IgrChip` を使用してその参照を取得し、`selected` プロパティを使用できます。
 <!-- end: React -->
 ```tsx
 const caseSensitiveChipRef = useRef<IgrChip>(null);

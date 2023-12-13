@@ -1082,7 +1082,7 @@ $custom-grid-theme: grid-theme(
 
 ### デモのスタイル設定
 
-上記の手順に加えて、セルの編集テンプレートに使用されるコントロールのスタイルを設定することもできます [igx-input-group](../input-group.md#スタイル設定)、 [igx-datepicker](../date-picker.md#スタイル設定) および [igx-checkbox](../checkbox.md#スタイル設定)。
+上記の手順に加えて、セルの編集テンプレートに使用されるコントロールのスタイルを設定することもできます [igx-input-group](../input-group.md#スタイル設定)、[igx-datepicker](../date-picker.md#スタイル設定) および [igx-checkbox](../checkbox.md#スタイル設定)。
 
 `sample="/{ComponentSample}/editing-style", height="700", alt="{Platform} {ComponentTitle} 編集スタイルの例"`
 
