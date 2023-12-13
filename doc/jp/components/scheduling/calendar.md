@@ -20,8 +20,6 @@ Ignite UI for {ProductName} Calendar は、日付情報を表示するための�
 
 `sample="/scheduling/calendar/overview", height="480", alt="{Platform} Calendar の例"`
 
-
-
 ## {ProductNameShort} を使用して {Platform} で Calendar を作成する方法
 
 <!-- WebComponents -->
@@ -77,6 +75,8 @@ import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcCalendarComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 {ProductName} `Calendar` の使用を開始する最も簡単な方法は次のとおりです。
 

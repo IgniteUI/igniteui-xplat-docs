@@ -78,6 +78,8 @@ import { defineComponents, IgcCardComponent } from 'igniteui-webcomponents';
 defineComponents(IgcCardComponent);
 ```
 
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
 次に、デモのカード テンプレートを表すために、以下のコードを追加します:
 
 ```html
