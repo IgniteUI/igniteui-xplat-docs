@@ -582,7 +582,7 @@ Then set the related CSS property for that class:
 
 ### Demo
 
-`sample="/{ComponentSample}/column-resizing-styling", height="550", alt="{Platform} {ComponentTitle} Column Resizing Styling Example"`
+`sample="/{ComponentSample}/column-resize-styling", height="550", alt="{Platform} {ComponentTitle} Column Resizing Styling Example"`
 
 <!-- end: WebComponents, Blazor, React -->
 

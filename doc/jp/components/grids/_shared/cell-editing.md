@@ -11,7 +11,7 @@ _language: ja
 # {Platform} {ComponentTitle} セル編集
 
 {Platform} {ComponentTitle} の {ProductName} セル編集機能は、{Platform} {ComponentTitle} コンポーネント内の個々のセルのコンテンツの優れたデータ操作機能を提供し、React CRUD 操作用の強力な API を備えています。これはスプレッドシート、データ テーブル、データ グリッドなどのアプリの基本的な機能であり、ユーザーが特定のセル内のデータを追加、編集、更新できるようにします。
-デフォルトでは、{ProductName} の Grid がセル編集に使用されます。 また、**デフォルトのセル編集テンプレート**により、列のデータ型 「Top of Form」 に基づいて異なるエディターが存在します。
+デフォルトでは、{ProductName} の Grid がセル編集に使用されます。また、**デフォルトのセル編集テンプレート**により、列のデータ型 「Top of Form」 に基づいて異なるエディターが存在します。
 
 さらに、データ更新アクション用の独自のカスタム テンプレートを定義したり、変更をコミット/破棄したりするためのデフォルトの動作をオーバーライドすることもできます。
 
@@ -1082,7 +1082,7 @@ $custom-grid-theme: grid-theme(
 
 ### デモのスタイル設定
 
-上記の手順に加えて、セルの編集テンプレートに使用されるコントロールのスタイルを設定することもできます [igx-input-group](../input-group.md#スタイル設定)、 [igx-datepicker](../date-picker.md#スタイル設定) および [igx-checkbox](../checkbox.md#スタイル設定)。
+上記の手順に加えて、セルの編集テンプレートに使用されるコントロールのスタイルを設定することもできます [igx-input-group](../input-group.md#スタイル設定)、[igx-datepicker](../date-picker.md#スタイル設定) および [igx-checkbox](../checkbox.md#スタイル設定)。
 
 `sample="/{ComponentSample}/editing-style", height="700", alt="{Platform} {ComponentTitle} 編集スタイルの例"`
 

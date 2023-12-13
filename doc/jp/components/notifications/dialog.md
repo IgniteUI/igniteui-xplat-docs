@@ -35,6 +35,8 @@ import { defineComponents, IgcDialogComponent } from 'igniteui-webcomponents';
 defineComponents(IgcDialogComponent);
 ```
 
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
 <!-- Blazor -->
 {Platform} `Dialog` を使用する前に、次のように登録する必要があります:
 
