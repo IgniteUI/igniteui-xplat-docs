@@ -815,7 +815,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "ソート",
         "href": "grids/tree-grid/sorting.md",
         "status": "NEW"
