@@ -1004,7 +1004,7 @@ export class MyHGridEventsComponent {
 
 ### スタイル設定の例
 
-`sample="/{ComponentSample}/cell-editing-style", height="650", alt="{Platform} {ComponentTitle} セル編集のスタイル設定の例"`
+`sample="/{ComponentSample}/cell-editing-styling", height="650", alt="{Platform} {ComponentTitle} セル編集のスタイル設定の例"`
 
 <!-- end: WebComponents, Blazor, React -->
 
