@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} サイズ変更
 
-{ProductName} の {Platform} {ComponentTitle} サイズ変更機能は、応答性が高くユーザーフレンドリーなグリッド インターフェイスを作成するための重要な側面です。{Platform} {ComponentTitle} のサイズ変更機能を使用すると、ユーザーはさまざまな画面サイズ、コンテンツ、またはユーザーの好みに合わせてグリッドの `Width` と `Height` を調整できます。{Platform} {ComponentTitle} の境界線とパディングのサイズに関しては、幅/高さのサイズ計算、または[ボーダー ボックス](https://developer.mozilla.org/ja/docs/Web/CSS/box-sizing)のサイジングとも呼ばれます。すべてのシナリオに適用されます。
+{Platform} {ComponentTitle} の {ProductName} サイズ変更機能は、応答性が高くユーザーフレンドリーなグリッド インターフェイスを作成するための重要な側面です。{Platform} {ComponentTitle} のサイズ変更機能を使用すると、ユーザーはさまざまな画面サイズ、コンテンツ、またはユーザーの好みに合わせてグリッドの `Width` と `Height` を調整できます。`{ComponentName}` の境界線とパディングのサイズに関しては、幅/高さのサイズ計算、または[ボーダー ボックス](https://developer.mozilla.org/ja/docs/Web/CSS/box-sizing)のサイジングとも呼ばれます。すべてのシナリオに適用されます。
 
 > [!Note]
 > ユーザーがボーダー ボックスのサイズ変更をオーバーライドした場合に正しい `{ComponentName}` になるかどうかは保証できません。

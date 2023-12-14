@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 表示密度
 
-{ProductName} の {Platform} {ComponentTitle} 表示密度を使用すると、ユーザーは {ComponentTitle} 内のデータの間隔とレイアウトを制御できます。[密度](https://material.io/design/layout/applying-density.html)を変更することで、大量のコンテンツを操作するときのユーザー エクスペリエンスを大幅に向上させることができます。次の 3 つの表示密度オプションから選択できます。
+{Platform} {ComponentTitle} の {ProductName} 表示密度を使用すると、ユーザーは `{ComponentName}` 内のデータの間隔とレイアウトを制御できます。[密度](https://material.io/design/layout/applying-density.html)を変更することで、大量のコンテンツを操作するときのユーザー エクスペリエンスを大幅に向上させることができます。次の 3 つの表示密度オプションから選択できます。
 
 - Cozy
 - Comfortable
@@ -569,6 +569,41 @@ public get renderer(): ComponentRenderer {
 ```
 
 ```razor
+<IgbTreeGrid AutoGenerate="false" Name="treeGrid" @ref="treeGrid" Id="treeGrid" Data="EmployeesFlatDetails" PrimaryKey="ID" 
+ ForeignKey="ParentID" AllowFiltering="true">
+    <IgbColumn Field="Name" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true" Width="200">
+    </IgbColumn>
+    <IgbColumnGroup Header="General Information">
+        <IgbColumn Field="HireDate" DataType="GridColumnDataType.Date" Sortable="true" HasSummary="true">
+        </IgbColumn>
+        <IgbColumnGroup Header="Personal Details">
+            <IgbColumn Field="ID" DataType="GridColumnDataType.Number" Filterable="false">
+            </IgbColumn>
+            <IgbColumn Field="Title" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true">
+            </IgbColumn>
+            <IgbColumn Field="Age" DataType="GridColumnDataType.Number" Sortable="true" HasSummary="true" Filterable="false">
+            </IgbColumn>
+        </IgbColumnGroup>
+    </IgbColumnGroup>
+    <IgbColumnGroup Header="Address Information">
+        <IgbColumnGroup Header="Location">
+            <IgbColumn Field="Country" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true">
+            </IgbColumn>
+            <IgbColumn Field="City" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true">
+            </IgbColumn>
+            <IgbColumn Field="Address" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true">
+            </IgbColumn>
+        </IgbColumnGroup>
+        <IgbColumnGroup Header="Contact Information">
+            <IgbColumn Field="Phone" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true">
+            </IgbColumn>
+            <IgbColumn Field="Fax" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true">
+            </IgbColumn>
+            <IgbColumn Field="PostalCode" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true">
+            </IgbColumn>
+        </IgbColumnGroup>
+    </IgbColumnGroup>
+</IgbTreeGrid>
 ```
 ```html
 <div class="density-chooser">

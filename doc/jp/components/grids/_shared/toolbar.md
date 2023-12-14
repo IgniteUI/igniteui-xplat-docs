@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} ツールバー
 
-{ProductName} ツールバーは、{Platform} {ComponentTitle} の UI 操作用のコンテナーです。{Platform} ツールバーは {Platform} コンポーネントの一番上、つまり {ComponentTitle} にあり、水平方向のサイズと一致します。ツールバー コンテナーは、任意のカスタム コンテンツまたは事前定義された UI コントロールのセットをホストできます。{Platform} {ComponentTitle} のデフォルト セットには次のものが含まれます。 
+{ProductName} ツールバーは、{Platform} {ComponentTitle} の UI 操作用のコンテナーです。{Platform} ツールバーは {Platform} コンポーネントの一番上、つまり `{ComponentName}` にあり、水平方向のサイズと一致します。ツールバー コンテナーは、任意のカスタム コンテンツまたは事前定義された UI コントロールのセットをホストできます。{Platform} {ComponentTitle} のデフォルト セットには次のものが含まれます。 
 
  - 列の非表示
  - 列のピン固定

@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} セルの選択
 
-{ProductName} の {Platform} {ComponentTitle} セル選択により、豊富なデータ選択機能が有効になり、グリッド コンポーネントで強力な API が提供されます。 {Platform} {ComponentTitle} は、次の 3 つの選択モードをサポートしています。
+{Platform} {ComponentTitle} の {ProductName} セル選択により、豊富なデータ選択機能が有効になり、グリッド コンポーネントで強力な API が提供されます。 {Platform} {ComponentTitle} は、次の 3 つの選択モードをサポートしています。
 
 - {ComponentTitle} 複数セルの選択
 - {ComponentTitle} 単一選択
@@ -44,7 +44,7 @@ _language: ja
 - <kbd>Shift</kbd> キーを使用して複数セルの選択をインスタンス化します。<kbd>Shift</kbd> キーを押しながら、単一セルを選択して別の単一セルを選択します。2 つのセル間のセル範囲が選択されます。<kbd>Shift</kbd> キーを押しながら他の 2 番目のセルを選択すると、最初に選択したセルの位置 (開始点) に基づいてセル選択範囲が更新されます。
 - <kbd>Shift</kbd> キーを押しながら <kbd>矢印</kbd> キーを使用してキーボードで複数セルを選択します。マルチセル選択範囲は、フォーカスされたセルに基づいて作成されます。
 - <kbd>Ctrl</kbd> キーを押しながら <kbd>Ctrl</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> キーと <kbd>Ctrl</kbd> + <kbd>Home</kbd> / <kbd>End</kbd> を使用してキーボードで複数セルを選択します。マルチセル選択範囲は、フォーカスされたセルに基づいて作成されます。
-- <kbd>Ctrl</kbd> キーを押しながら**左マウス**キーでクリックすると、選択したセルコレクションに単一のセル範囲が追加されます。
+- <kbd>Ctrl</kbd> キーを押しながら**左マウス** キーでクリックすると、選択したセルコレクションに単一のセル範囲が追加されます。
 - マウスでクリックしてドラッグすることで、連続した複数セルの選択が可能です。
 
 <!-- ComponentStart: Grid, TreeGrid -->
@@ -281,21 +281,21 @@ expectedData = [
 <!-- ComponentStart: TreeGrid -->
 
 ```ts
-<igc-tree-grid id="treeGrid"></igc-tree-grid>
+<igc-tree-grid class="treeGrid"></igc-tree-grid>
 ```
 
 ```razor
-<IgbTreeGrid Id="treeGrid"></IgbTreeGrid>
+<IgbTreeGrid Class="treeGrid"></IgbTreeGrid>
 ```
 
 次に、そのクラスに関連する CSS プロパティを設定します。
 
 ```css
-#treeGrid {
-    --cell-selected-text-color: #fff;
-    --cell-active-border-color: #f2c43c;
-    --cell-selected-background: #0062a3;
-    --cell-editing-background: #0062a3;
+.treeGrid {
+    --ig-grid-cell-selected-text-color: #fff;
+    --ig-grid-cell-active-border-color: #f2c43c;
+    --ig-grid-cell-selected-background: #0062a3;
+    --ig-grid-cell-editing-background: #0062a3;
 }
 ```
 

@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 編集
 
-{ProductName} の {Platform} {ComponentTitle} セル編集機能を使用すると、レコードの作成、更新、削除などのデータ操作を簡単に実行できます。{Platform} {ComponentTitle} は、これらの操作をカスタマイズできる強力なパブリック API を提供します。データ操作のフェーズは次のとおりです。
+{Platform} {ComponentTitle} の {ProductName} セル編集機能を使用すると、レコードの作成、更新、削除などのデータ操作を簡単に実行できます。`{ComponentName}` は、これらの操作をカスタマイズできる強力なパブリック API を提供します。データ操作のフェーズは次のとおりです。
 - [セル編集](cell-editing.md)
 - [行編集](row-editing.md)
 - 一括編集 (追加予定)

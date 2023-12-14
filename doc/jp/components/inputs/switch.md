@@ -36,6 +36,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcSwitchComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -75,12 +78,12 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 
 `Switch` の使用を開始する最も簡単な方法は次のとおりです:
 
-```tsx
-<IgrSwitch></IgrSwitch>
-```
-
 ```html
 <igc-switch></igc-switch>
+```
+
+```tsx
+<IgrSwitch></IgrSwitch>
 ```
 
 ```razor

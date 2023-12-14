@@ -9,10 +9,10 @@ namespace: Infragistics.Controls
 ---
 
 # Cascading Combos (カスケード コンボ) を含む {Platform} {ComponentTitle}
-{ComponentTitle} の編集機能では、カスケード コンボを使用する機会が提供されます。前の `Combo` で値を選択すると、ユーザーは次の Combo での選択に関連するデータのみを受け取ります。
+{ComponentTitle} の編集機能では、カスケード コンボボックス コンポーネントを使用する機会が提供されます。前の `Combo` で値を選択すると、ユーザーは次の {Platform} Combobox コンポーネントでの選択に関連するデータのみを受け取ります。
 
 ## カスケード コンボを使用した Angular {ComponentTitle} サンプルの概要
-以下のサンプルは、`Grid` がネストされた Cascading `Combo` コンポーネントとどのように動作するかを示しています。
+以下のサンプルは、`{ComponentName}` がネストされた Cascading `Combo` コンポーネントとどのように動作するかを示しています。
 
 <!-- ComponentStart: Grid -->
 <code-view style="height:500px"
@@ -30,13 +30,15 @@ namespace: Infragistics.Controls
 列の編集が有効になったら、`Combo` を追加することから始めることができます。ここで、単一選択を 1 つだけ使用できるようにするには、`singleSelect` プロパティを設定する必要があることに注意してください。
 
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 `Combo` を使い始めるには、まずコンボをインポートする必要があります。
 
+<!-- WebComponents -->
 ```ts
 import { IgcComboComponent, defineAllComponents } from 'igniteui-webcomponents';
 defineAllComponents();
 ```
+<!-- end: WebComponents -->
 
 ```razor
 builder.Services.AddIgniteUIBlazor(
@@ -45,8 +47,37 @@ builder.Services.AddIgniteUIBlazor(
 );
 ```
 
+```tsx
+import { IgrComboModule, IgrCombo } from 'igniteui-react';
+IgrComboModule.register();
+```
+
 次に、コンボを使用して列テンプレートを定義する必要があります。
 
+```tsx
+   <IgrColumn
+    field="Country"
+    header="Country"
+    bodyTemplate={webGridCountryDropDownTemplate}
+    name="column1">
+    </IgrColumn>
+```
+
+```tsx
+    function webGridCountryDropDownTemplate(props: {dataContext: IgrCellTemplateContext}) => {
+        var cell = props.dataContext.cell as any;
+        if (cell === undefined) {
+            return <></>;
+        }
+        const id = cell.id.rowID;
+        const comboId = "country" + id;
+        return (
+        <>
+            <IgrCombo data={countries} ref={comboRefs} change={(x: any, args: any) => {onCountryChange(id, x, args) }} placeholder="Choose Country..." valueKey="Country" displayKey="Country" singleSelect="true" name={comboId}></IgrCombo>
+        </>
+        );
+    }
+```
 
 ```razor
 <IgbColumn Field="Country" Header="Country" BodyTemplate="WebGridCountryDropDownTemplate"></IgbColumn>
@@ -128,7 +159,24 @@ public bindEventsCountryCombo(rowId: any, cell: any) {
     }
 ```
 
-<!-- end: WebComponents, Blazor -->
+```tsx
+    function onCountryChange(rowId: string, cmp: any, args:any) {
+        const regionCombo = comboRefCollection.get("region_" + rowId);
+       setTimeout(() => {
+            const newValue = cmp.value[0];
+            if (newValue === undefined) {
+                regionCombo.deselect(regionCombo.value);
+                regionCombo.disabled = true;
+                regionCombo.data = [];
+            } else {
+                regionCombo.disabled = false;
+                regionCombo.data = regions.filter(x => x.Country === newValue);
+            }
+       });
+    }
+```
+
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- Angular -->
 

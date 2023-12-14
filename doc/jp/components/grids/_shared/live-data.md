@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} のライブ データ更新
 
-{ProductName} の {Platform} {ComponentTitle} ライブ データ更新機能は、グリッド内に表示されるデータのリアルタイムまたはほぼリアルタイムの更新を可能にするために使用されます。 これは、株式市場のトラッカー、ライブ スポーツ スコア、IoT (Internet of Things) ダッシュボードなど、データが常に変化するアプリで非常に役立ちます。{Platform} {ComponentTitle} は、ユーザーの操作に応答し続けている間、1 秒あたり数千の更新を処理できます。
+{Platform} {ComponentTitle} の {ProductName} ライブ データ更新機能は、グリッド内に表示されるデータのリアルタイムまたはほぼリアルタイムの更新を可能にするために使用されます。これは、株式市場のトラッカー、ライブ スポーツ スコア、IoT (Internet of Things) ダッシュボードなど、データが常に変化するアプリで非常に役立ちます。`{ComponentName}` は、ユーザーの操作に応答し続けている間、1 秒あたり数千の更新を処理できます。
 
 
 ## {Platform} ライブ データ更新の例

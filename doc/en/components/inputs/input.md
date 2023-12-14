@@ -58,6 +58,8 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcInputComponent);
 ```
 
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -78,12 +80,12 @@ IgrInputModule.register();
 
 After we import the `Input` component we are ready to start using it, so let's add our first Input.
 
-```tsx
-<IgrInput type="email" label="Subscribe"></IgrInput>
-```
-
 ```html
 <igc-input type="email" label="Subscribe" placeholder="john.doe@mail.com"></igc-input>
+```
+
+```tsx
+<IgrInput type="email" label="Subscribe"></IgrInput>
 ```
 
 ```razor

@@ -14,7 +14,6 @@ _language: ja
 
 `sample="/inputs/checkbox/overview", height="100", alt="{Platform} Checkbox の例"`
 
-
 <div class="divider--half"></div>
 
 ## 使用方法
@@ -36,6 +35,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcCheckboxComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
 <!-- end: WebComponents -->
 
 <!-- React -->

@@ -68,18 +68,18 @@ public formatOptions = this.options;
 
 ```ts
 private _formatOptions: any | null = null;
-    public get formatOptions(): any {
-        if (this._formatOptions == null)
-        {
-            var columnPipeArgs: any = {};
-            columnPipeArgs.digitsInfo = "1.4-4";
-            this._formatOptions = columnPipeArgs;
-        }
-        return this._formatOptions;
+public get formatOptions(): any {
+    if (this._formatOptions == null)
+    {
+        var columnPipeArgs: any = {};
+        columnPipeArgs.digitsInfo = "1.4-4";
+        this._formatOptions = columnPipeArgs;
     }
+    return this._formatOptions;
+}
 
 constructor() {
-    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+    var column = document.getElementById('column') as IgcColumnComponent;
     column.pipeArgs = this.formatOptions;
 }
 ```
@@ -139,19 +139,19 @@ public formatOptions = this.options;
 
 ```ts
 private _formatDateOptions: any | null = null;
-    public get formatDateOptions(): any {
-        if (this._formatDateOptions == null)
-        {
-            var columnPipeArgs: any = {};
-            columnPipeArgs2.format = "long";
-            columnPipeArgs2.timezone = "UTC+0";
-            this._formatDateOptions = columnPipeArgs;
-        }
-        return this._formatDateOptions;
+public get formatDateOptions(): any {
+    if (this._formatDateOptions == null)
+    {
+        var columnPipeArgs: any = {};
+        columnPipeArgs2.format = "long";
+        columnPipeArgs2.timezone = "UTC+0";
+        this._formatDateOptions = columnPipeArgs;
     }
+    return this._formatDateOptions;
+}
 
 constructor() {
-    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+    var column = document.getElementById('column') as IgcColumnComponent;
     column.pipeArgs = this.formatDateOptions;
 }
 ```
@@ -267,22 +267,22 @@ The default template is using material icons for visualization of boolean values
 
 Default template is using the value coming from the data as an image source to a default image template. The default image template will extract the name of the image file and set it as `alt` attribute of the image to meet the accessibility requirement. The displayed cell size is adjusted to the sizes of the images rendered, so keep in mind that large images will still be rendered and the grid rows will become as large as the images in the image column. Filtering, sorting and grouping will be turned off by default for image type columns. If you want to enable them, you need to provide custom strategies which perform the data operations.
 
+<!-- Angular -->
 ```html
 <igx-grid>
     <igx-column [dataType]="'image'">
     </igx-column>
 <igx-grid>
 ```
-
-```html
-<igc-grid id="grid1" auto-generate="false">
-    <igc-column field="Image" data-type="image">
-    </igc-column>
-</igc-grid>
-```
+<!-- end: Angular -->
 
 ```razor
 <IgbColumn DataType="GridColumnDataType.Image"></IgbColumn>
+```
+
+```html
+<igc-column field="Image" data-type="image">
+</igc-column>
 ```
 
 ```tsx
@@ -362,8 +362,7 @@ public formatOptions = this.options;
 ```
 
 ```html
-<igc-column id="column" field="UnitsInStock"
-    data-type="currency">
+<igc-column id="column" field="UnitsInStock" data-type="currency">
 </igc-column>
 ```
 
@@ -381,7 +380,7 @@ private _formatOptions: any | null = null;
     }
 
 constructor() {
-    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+    var column = document.getElementById('column') as IgcColumnComponent;
     column.pipeArgs = this.formatOptions;
 }
 ```
@@ -461,8 +460,7 @@ public formatPercentOptions = this.options;
 ```
 
 ```html
-<igc-column id="column" field="UnitsInStock"
-    data-type="percent">
+<igc-column id="column" field="UnitsInStock" data-type="percent">
 </igc-column>
 ```
 
@@ -479,7 +477,7 @@ private _formatPercentOptions: any | null = null;
     }
 
 constructor() {
-    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+    var column = document.getElementById('column') as IgcColumnComponent;
     column.pipeArgs = this.formatPercentOptions;
 }
 ```
@@ -496,9 +494,7 @@ formatOptions.digitsInfo = "2.2-3";
 
 ## Default Editing Template
 
-<!-- ComponentStart:  Grid -->
 See the editing templates part of [{ComponentTitle} Editing topic](editing.md#editing-templates)
-<!-- ComponentEnd:  Grid -->
 
 ## Custom Editing Template and Formatter
 
@@ -525,7 +521,7 @@ Custom template and column formatter definition will always take precedence over
 
 ```ts
 constructor() {
-    var unitsInStock = this.unitsInStock = document.getElementById('UnitsInStock') as IgcColumnComponent;
+    var unitsInStock = document.getElementById('UnitsInStock') as IgcColumnComponent;
     unitsInStock.inlineEditorTemplate = this.editCellTemplate;
 }
 
@@ -549,9 +545,9 @@ function editCellTemplate(ctx: IgrCellTemplateContext) {
 ```
 
 ```razor
-<IgbGrid>
+<{ComponentSelector}>
  <IgbColumn InlineEditorTemplate="EditTemplate"></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 @code {
     public RenderFragment<IgbCellTemplateContext> EditTemplate = (ctx) =>
     {
@@ -592,9 +588,9 @@ function formatCurrency(value: number) {
 ```
 
 ```razor
-<IgbGrid>
+<{ComponentSelector}>
  <IgbColumn FormatterScript="CurrencyFormatter"></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 
 //In Javascript
 igRegisterScript("CurrencyFormatter", (value) => {
@@ -631,10 +627,8 @@ public init(column: IgxColumnComponent) {
 * `DataType`
 
 ## Additional Resources
-<!-- ComponentStart:  Grid -->
-For custom templates you can see [cell editing topic](cell-editing.md#{PlatformLower}-grid-cell-editing-and-edit-templates-example)
 
-
+* For custom templates you can see [cell editing topic](cell-editing.md#cell-editing-templates)
 * [Editing](editing.md)
 * [Summaries](summaries.md)
-<!-- ComponentEnd:  Grid -->
+

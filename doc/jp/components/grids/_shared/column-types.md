@@ -292,7 +292,7 @@ const timeFormats = [
 </IgrGrid>
 ```
 
-列に `AutoGenerate` を使用すると、グリッドは最初のデータ レコードの値を分析します。値が文字列型で、画像拡張子 (gif、jpg、jpeg、tiff、png、webp、bmp) で終わる URL のパターンと一致する場合、列は自動的に `dataType === GridColumnDataType.Image` としてマークされ、 デフォルトの画像テンプレートが描画されます。
+列に `AutoGenerate` を使用すると、グリッドは最初のデータ レコードの値を分析します。値が文字列型で、画像拡張子 (gif、jpg、jpeg、tiff、png、webp、bmp) で終わる URL のパターンと一致する場合、列は自動的に `dataType === GridColumnDataType.Image` としてマークされ、デフォルトの画像テンプレートが描画されます。
 
 ### 通貨
 
@@ -623,7 +623,7 @@ public init(column: IgxColumnComponent) {
 
 ## API リファレンス
 
-* `GridCell`
+* `Cell`
 * `Column`
 * `PipeArgs`
 * `{ComponentName}`
