@@ -38,6 +38,7 @@
             { "name": "{PackageVerChanges-22-2.1}", "value": "15.0.0 (December 2022)"},
             { "name": "{PackageVerChanges-22-2.2}", "value": "16.0.0 (May 2023)"},
             { "name": "{PackageVerChanges-23-1}",   "value": "16.1.0 (June 2023)"},
+            { "name": "{PackageVerChanges-23-2}",   "value": "17.0.0 (December 2023)"},
             { "name": "{PackageVerLatest}",         "value": "16.1.0"},
             { "name": "{PackageAngularComponents}", "value": "igniteui-angular"},
             { "name": "{RepoSamples}",   "value": "https://github.com/IgniteUI/igniteui-angular-examples/tree/master/samples"},
