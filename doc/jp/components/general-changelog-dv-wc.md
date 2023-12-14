@@ -3,12 +3,23 @@ title: {Platform} 新機能 | {ProductName} | インフラジスティックス
 _description: {ProductName} の新機能について学んでください。
 _keywords: Changelog, What's New, {ProductName}, Infragistics, 変更ログ, 新機能, インフラジスティックス
 _language: ja
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Infragistics.Controls.Grid", "Infragistics.Controls.GridSelectionMode"]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "Toolbar", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Infragistics.Controls.Grid", "Infragistics.Controls.GridSelectionMode"]
 namespace: Infragistics.Controls.Charts
 ---
 # {ProductName} 変更ログ
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
+
+## **{PackageVerChanges-23-2}**
+
+### {PackageGrids} (Toolbar - ベータ版)
+
+* クリップボードを介してチャートを画像に保存するための新しいツールがデフォルトのツールとして追加されました。
+* ツールバーの `Orientation` プロパティを介して垂直方向が追加されました。デフォルトでは、ツールバーは水平方向ですが、ツールバーを垂直方向に表示できるようになり、ツールが左右にポップアップ表示されます。
+* ツールバーの `renderImageFromText` メソッドを介してカスタム SVG アイコンのサポートが追加され、カスタム ツールの作成がさらに強化されました。
+### {PackageGrids} (Grid)
+* 新規機能:
+    - [状態保持](grids/grid/state-persistence.md)
 
 ## **{PackageVerChanges-23-1}**
 
