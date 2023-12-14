@@ -9,6 +9,12 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## **{PackageVerChanges-23-2}**
+
+### {PackageGrids} (Grid)
+* New Features Added:
+    - [State Persistence](grids/grid/state-persistence.md)
+
 ## **{PackageVerChanges-23-1}**
 
 ### New Components
