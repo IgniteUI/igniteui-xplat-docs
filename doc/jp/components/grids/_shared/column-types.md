@@ -69,18 +69,18 @@ public formatOptions = this.options;
 
 ```ts
 private _formatOptions: any | null = null;
-    public get formatOptions(): any {
-        if (this._formatOptions == null)
-        {
-            var columnPipeArgs: any = {};
-            columnPipeArgs.digitsInfo = "1.4-4";
-            this._formatOptions = columnPipeArgs;
-        }
-        return this._formatOptions;
+public get formatOptions(): any {
+    if (this._formatOptions == null)
+    {
+        var columnPipeArgs: any = {};
+        columnPipeArgs.digitsInfo = "1.4-4";
+        this._formatOptions = columnPipeArgs;
     }
+    return this._formatOptions;
+}
 
 constructor() {
-    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+    var column = document.getElementById('column') as IgcColumnComponent;
     column.pipeArgs = this.formatOptions;
 }
 ```
@@ -140,19 +140,19 @@ public formatOptions = this.options;
 
 ```ts
 private _formatDateOptions: any | null = null;
-    public get formatDateOptions(): any {
-        if (this._formatDateOptions == null)
-        {
-            var columnPipeArgs: any = {};
-            columnPipeArgs2.format = "long";
-            columnPipeArgs2.timezone = "UTC+0";
-            this._formatDateOptions = columnPipeArgs;
-        }
-        return this._formatDateOptions;
+public get formatDateOptions(): any {
+    if (this._formatDateOptions == null)
+    {
+        var columnPipeArgs: any = {};
+        columnPipeArgs2.format = "long";
+        columnPipeArgs2.timezone = "UTC+0";
+        this._formatDateOptions = columnPipeArgs;
     }
+    return this._formatDateOptions;
+}
 
 constructor() {
-    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+    var column = document.getElementById('column') as IgcColumnComponent;
     column.pipeArgs = this.formatDateOptions;
 }
 ```
@@ -268,22 +268,22 @@ const timeFormats = [
 
 デフォルトのテンプレートは、デフォルの画像テンプレートへの画像ソースとしてデータからの値を使用しています。デフォルトの画像テンプレートは、画像ファイルの名前を抽出し、アクセシビリティ要件を満たすために画像の `alt` 属性として設定します。表示されるセル サイズは描画される画像のサイズに合わせて調整されるため、大きな画像も描画され、グリッド行は画像列の画像と同じ大きさになることに注意してください。画像タイプの列では、フィルタリング、ソート、およびグループ化はデフォルトでオフになっています。それらを有効にしたい場合は、データ操作を実行するカスタム ストラテジを提供する必要があります。
 
+<!-- Angular -->
 ```html
 <igx-grid>
     <igx-column [dataType]="'image'">
     </igx-column>
 <igx-grid>
 ```
-
-```html
-<igc-grid id="grid1" auto-generate="false">
-    <igc-column field="Image" data-type="image">
-    </igc-column>
-</igc-grid>
-```
+<!-- end: Angular -->
 
 ```razor
 <IgbColumn DataType="GridColumnDataType.Image"></IgbColumn>
+```
+
+```html
+<igc-column field="Image" data-type="image">
+</igc-column>
 ```
 
 ```tsx
@@ -363,8 +363,7 @@ public formatOptions = this.options;
 ```
 
 ```html
-<igc-column id="column" field="UnitsInStock"
-    data-type="currency">
+<igc-column id="column" field="UnitsInStock" data-type="currency">
 </igc-column>
 ```
 
@@ -382,7 +381,7 @@ private _formatOptions: any | null = null;
     }
 
 constructor() {
-    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+    var column = document.getElementById('column') as IgcColumnComponent;
     column.pipeArgs = this.formatOptions;
 }
 ```
@@ -461,8 +460,7 @@ public formatPercentOptions = this.options;
 ```
 
 ```html
-<igc-column id="column" field="UnitsInStock"
-    data-type="percent">
+<igc-column id="column" field="UnitsInStock" data-type="percent">
 </igc-column>
 ```
 
@@ -479,7 +477,7 @@ private _formatPercentOptions: any | null = null;
     }
 
 constructor() {
-    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+    var column = document.getElementById('column') as IgcColumnComponent;
     column.pipeArgs = this.formatPercentOptions;
 }
 ```
@@ -496,9 +494,7 @@ formatOptions.digitsInfo = "2.2-3";
 
 ## デフォルトの編集テンプレート
 
-<!-- ComponentStart:  Grid -->
 [{ComponentTitle} 編集トピック](editing.md#テンプレートの編集)の編集テンプレート部分を参照してください。
-<!-- ComponentEnd:  Grid -->
 
 ## カスタム編集テンプレートとフォーマッタ
 
@@ -525,7 +521,7 @@ formatOptions.digitsInfo = "2.2-3";
 
 ```ts
 constructor() {
-    var unitsInStock = this.unitsInStock = document.getElementById('UnitsInStock') as IgcColumnComponent;
+    var unitsInStock = document.getElementById('UnitsInStock') as IgcColumnComponent;
     unitsInStock.inlineEditorTemplate = this.editCellTemplate;
 }
 
@@ -549,9 +545,9 @@ function editCellTemplate(ctx: IgrCellTemplateContext) {
 ```
 
 ```razor
-<IgbGrid>
+<{ComponentSelector}>
  <IgbColumn InlineEditorTemplate="EditTemplate"></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 @code {
     public RenderFragment<IgbCellTemplateContext> EditTemplate = (ctx) =>
     {
@@ -592,9 +588,9 @@ function formatCurrency(value: number) {
 ```
 
 ```razor
-<IgbGrid>
+<{ComponentSelector}>
  <IgbColumn FormatterScript="CurrencyFormatter"></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 
 //In Javascript
 igRegisterScript("CurrencyFormatter", (value) => {
@@ -631,10 +627,8 @@ public init(column: IgxColumnComponent) {
 * `DataType`
 
 ## その他のリソース
-<!-- ComponentStart:  Grid -->
+
 カスタム テンプレートについては、[セル編集トピック](cell-editing.md#セル編集テンプレート)を参照してください。
-
-
 * [編集](editing.md)
 * [集計](summaries.md)
-<!-- ComponentEnd:  Grid -->
+
