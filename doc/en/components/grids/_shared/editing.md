@@ -9,7 +9,10 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Editing
 
-The {ProductName} `{ComponentName}` component provides an easy way to perform data manipulation operations like creating, updating, and deleting records. The data manipulation phases are: [Cell Editing](cell-editing.md), [Row Editing](row-editing.md), and Batch Editing (Coming Soon). The `{ComponentName}` gives you a powerful public API which allows you to customize the way these operations are performed.
+The {ProductName} Cell Editing feature in {Platform} {ComponentTitle} provides an easy way to perform data manipulation operations like creating, updating, and deleting records. The `{ComponentName}` provides you with a powerful public API which allows you to customize the way these operations are performed. The data manipulation phases are: 
+- [Cell Editing](cell-editing.md)
+- [Row Editing](row-editing.md)
+- Batch Editing (Coming Soon) 
 
 <!-- Angular -->
 
@@ -104,25 +107,25 @@ As seen from the table, all interactions, except resizing a column, will end the
 
 Example how to commit new values, if user tries to sort the column while a cell/row is in edit mode:
 
+<!-- Angular -->
+
 ```html
 <igx-grid #grid [data]="localData" [primaryKey]="'ProductID'" (sorting)="onSorting($event)">
 </igx-grid>
 ```
 
+<!-- end: Angular -->
+
 ```html
-<igc-grid id="grid" primary-key="ProductID" >
-</igc-grid>
+<{ComponentSelector} id="grid" primary-key="ProductID" >
+</{ComponentSelector}>
 ```
 
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-
-    this._bind = () => {
-        grid.data = this.data;
-        grid.addEventListener("sorting", this.onSorting);
-    }
-    this._bind();
+    var grid = document.getElementById('grid') as {ComponentName}Component;
+    grid.data = this.data;
+    grid.addEventListener("sorting", this.onSorting);
 
 }
 ```
@@ -140,18 +143,25 @@ public onSorting(event: ISortingEventArgs) {
 <!-- WebComponents -->
 
 ```typescript
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    grid.data = this.data;
+    grid.addEventListener("sorting", this.onSorting);
+}
+
 public onSorting(event: IgcSortingEventArgs) {
-    this.grid.endEdit(true);
+    var grid = document.getElementById('grid') as {ComponentName}Component;
+    grid.endEdit(true);
 }
 ```
 <!-- end: WebComponents -->
 
 ```razor
-<IgbGrid
+<{ComponentSelector}
     Id="grid"
     SortingScript="SortingHandler"
     RowEditable="true">
-</IgbGrid>
+</{ComponentSelector}>
 
 //In JavaScript
 function SortingHandler() {
@@ -160,9 +170,18 @@ function SortingHandler() {
 igRegisterScript("SortingHandler", SortingHandler, false);
 ```
 
+```tsx
+function onSorting(grid: IgrGridBaseDirective, event: IgrSortingEventArgs) {
+    grid.endEdit(true);
+}
+
+<IgrGrid data={localData} primaryKey="ProductID" sorting={onSorting}>
+</IgrGrid>
+```
+
 ## API References
 
-* `GridCell`
+* `Cell`
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
@@ -182,7 +201,7 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 <!-- end: Angular -->
 ## Additional Resources
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 
 
 * [Column Data Types](column-types.md#default-template)
@@ -199,7 +218,7 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 <!-- * [Searching](search.md) -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- end: Angular, WebComponents -->
+<!-- end: Angular, WebComponents, React -->
 
 <!-- Blazor -->
 
