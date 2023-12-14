@@ -42,6 +42,8 @@ import { defineComponents, IgcTreeComponent } from 'igniteui-webcomponents';
 defineComponents(IgcTreeComponent);
 ```
 
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -64,7 +66,7 @@ IgrTreeModule.register();
 
 <!-- Blazor -->
 
-また、追加の CSS ファイルをリンクして、スタイルを `Tree` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **BlazorServer** プロジェクトの **Pages/_Host.cshtml**フ ァイルに配置する必要があります:
+また、追加の CSS ファイルをリンクして、スタイルを `Tree` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **BlazorServer** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -249,25 +251,25 @@ builder.Services.AddIgniteUIBlazor(
 
 **キーの組み合わせ**
 
- - <kbd>下矢印</kbd> - 次に表示されている項目に移動します。項目をアクティブとしてマークします。最後の項目の場合は何もしません。
- - <kbd>Ctrl + 下矢印</kbd> - 次に表示されている項目に移動します。最後の項目の場合は何もしません。
- - <kbd>上矢印</kbd> - 前に表示されていた項目に移動します。項目をアクティブとしてマークします。最初の項目の場合は何もしません。
- - <kbd>Ctrl + 上矢印</kbd> - 前に表示されていた項目に移動します。最初の項目の場合は何もしません。
- - <kbd>左矢印</kbd> - 展開された親項目の場合、項目を縮小します。項目が縮小されているか、子がない場合は、その親項目に移動します。親項目がない場合は何もしません。
- - <kbd>右矢印</kbd> - 展開された親項目の場合、項目の最初の子に移動します。縮小された親項目の場合は、それを展開します。項目に子がない場合は何もしません。
+ - <kbd>↓</kbd> - 次に表示されている項目に移動します。項目をアクティブとしてマークします。最後の項目の場合は何もしません。
+ - <kbd>Ctrl</kbd> + <kbd>↓</kbd> - 次に表示されている項目に移動します。最後の項目の場合は何もしません。
+ - <kbd>↑</kbd> - 前に表示されていた項目に移動します。項目をアクティブとしてマークします。最初の項目の場合は何もしません。
+ - <kbd>Ctrl</kbd> + <kbd>↑</kbd> - 前に表示されていた項目に移動します。最初の項目の場合は何もしません。
+ - <kbd>←</kbd> - 展開された親項目の場合、項目を縮小します。項目が縮小されているか、子がない場合は、その親項目に移動します。親項目がない場合は何もしません。
+ - <kbd>→</kbd> - 展開された親項目の場合、項目の最初の子に移動します。縮小された親項目の場合は、それを展開します。項目に子がない場合は何もしません。
  - <kbd>Home</kbd> - 最初の項目に移動します。
  - <kbd>End</kbd> - 最後に表示された項目に移動します。
  - <kbd>Tab</kbd> - ツリーの外側にあるページ上の次のフォーカス可能な要素に移動します。
- - <kbd>Shift + Tab</kbd> - ツリーの外側で、ページ上の前のフォーカス可能な要素に移動します。
+ - <kbd>Shift</kbd> + <kbd>Tab</kbd> - ツリーの外側で、ページ上の前のフォーカス可能な要素に移動します。
  - <kbd>Space</kbd> - 現在の項目の選択を切り替えます。ノードをアクティブとしてマークします。
- - <kbd>Shift + Space</kbd> - 選択が有効になっている場合、Shift キーを押しながら、アクティブな項目と Space を押した項目の間ですべての項目の選択を切り替えます。
+ - <kbd>Shift</kbd> + <kbd>Space</kbd> - 選択が有効になっている場合、Shift キーを押しながら、アクティブな項目と Space を押した項目の間ですべての項目の選択を切り替えます。
  - <kbd>Enter</kbd> - フォーカスされた項目をアクティブにします。項目にリンクがある場合は、リンクを開きます。
  - <kbd>*</kbd> - 項目とすべての兄弟項目を同じレベルで展開します。
 
 選択が有効になっている場合、エンドユーザーによる項目の選択は、描画されたチェックボックスを介してのみ許可されます。どちらの選択タイプでも複数選択できるため、次のマウスとキーボードの操作を利用できます。
 
  - <kbd>>クリック</kbd> - 項目のチェックボックスで実行すると、選択が有効になっている場合に項目の選択を切り替えます。それ以外の場合は、項目にフォーカスします。
- - <kbd>Shift + クリック</kbd> - 項目チェックボックスで実行すると、選択が有効になっている場合、Shift キーを押しながらアクティブな項目とクリックした項目の間ですべての項目の選択を切り替えます。
+ - <kbd>Shift</kbd> + <kbd>クリック</kbd> - 項目チェックボックスで実行すると、選択が有効になっている場合、Shift キーを押しながらアクティブな項目とクリックした項目の間ですべての項目の選択を切り替えます。
 
 <!-- WebComponents -->
 
@@ -282,6 +284,17 @@ builder.Services.AddIgniteUIBlazor(
 ユーザーが展開アイコンをクリックすると、ロード アイコンに変わります。Loading プロパティが false に解決されると、読み込みインジケーターが消え、子が読み込まれます。
 
 `loadingIndicator` スロットを使用して、読み込み領域にカスタム スロット コンテンツを提供できます。そのようなスロットが定義されていない場合、`CircularProgress` が使用されます。
+
+### 仮想化によるロード オン デマンド
+
+ツリー項目はデザイン時に宣言的に定義されているため、{ProductName} ツリーでより多くの子をオンデマンドで読み込むと、パフォーマンスに悪影響を及ぼす可能性があります。次のデモは、[@lit-labs/virtualizer](https://github.com/lit/lit/tree/main/packages/labs/virtualizer) ライブラリを使用して仮想化コンテナー内で子ツリー項目を描画する方法を示しています。その結果、表示されている子のチャンクのみが DOM に描画されるため、パフォーマンスが向上します。
+
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/tree-load-on-demand-virtualized"
+           alt="$Platform$ Tree ロード オン デマンドの仮想化の例"
+           github-src="grids/tree/load-on-demand-virtualized">
+</code-view>
 
 <!-- end: WebComponents -->
 

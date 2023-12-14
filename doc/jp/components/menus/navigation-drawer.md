@@ -17,8 +17,6 @@ _language: ja
 
 `sample="/menus/nav-drawer/add-drawer-items", height="300", alt="{Platform} Navigation Drawer 項目の例"`
 
-
-
 ## 使用方法
 
 <!-- WebComponents -->
@@ -78,6 +76,8 @@ import { defineComponents, IgcNavDrawerComponent } from 'igniteui-webcomponents'
 defineComponents(IgcNavDrawerComponent);
 ```
 
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
 ## Navigation Drawer 項目の追加
 
 `NavDrawer` の使用を開始する最も簡単な方法は次のとおりです:
@@ -121,13 +121,13 @@ defineComponents(IgcNavDrawerComponent);
     </IgrNavDrawerHeaderItem>
     <IgrNavDrawerItem>
         <div slot="icon">
-            <IgrIcon iconName="home" collection="material" />
+            <IgrIcon name="home" collection="material" />
         </div>
         <span slot="content">Home</span>
     </IgrNavDrawerItem>
     <IgrNavDrawerItem>
         <div slot="icon">
-            <IgrIcon iconName="search" collection="material" />
+            <IgrIcon name="search" collection="material" />
         </div>
         <span slot="content">Search</span>
     </IgrNavDrawerItem>
@@ -191,7 +191,7 @@ defineComponents(IgcNavDrawerComponent);
 ```tsx
 <IgrNavbar>
     <div slot="start">
-        <IgrIcon iconName="menu" collection="material"/>
+        <IgrIcon name="menu" collection="material"/>
     </div>
     <h2>Home</h2>
 </IgrNavbar>
@@ -202,13 +202,13 @@ defineComponents(IgcNavDrawerComponent);
     </IgrNavDrawerHeaderItem>
     <IgrNavDrawerItem>
         <div slot="icon">
-            <IgrIcon iconName="home" collection="material" />
+            <IgrIcon name="home" collection="material" />
         </div>
         <span slot="content">Home</span>
     </IgrNavDrawerItem>
     <IgrNavDrawerItem>
         <div slot="icon">
-            <IgrIcon iconName="search" collection="material" />
+            <IgrIcon name="search" collection="material" />
         </div>
         <span slot="content">Search</span>
     </IgrNavDrawerItem>
@@ -405,25 +405,25 @@ public onMenuIconClick() {
 <IgrNavDrawer>
     <IgrNavDrawerItem>
         <div slot="icon">
-            <IgrIcon iconName="home" collection="material" />
+            <IgrIcon name="home" collection="material" />
         </div>
         <span slot="content">Home</span>
     </IgrNavDrawerItem>
     <IgrNavDrawerItem>
         <div slot="icon">
-            <IgrIcon iconName="search" collection="material"/>
+            <IgrIcon name="search" collection="material"/>
         </div>
         <span slot="content">Search</span>
     </IgrNavDrawerItem>
     <div slot="mini">
         <IgrNavDrawerItem>
             <div slot="icon">
-                <IgrIcon iconName="home" collection="material"/>
+                <IgrIcon name="home" collection="material"/>
             </div>
         </IgrNavDrawerItem>
         <IgrNavDrawerItem>
             <div slot="icon">
-                <IgrIcon iconName="search" collection="material" />
+                <IgrIcon name="search" collection="material" />
             </div>
         </IgrNavDrawerItem>
     </div>
@@ -438,7 +438,7 @@ public onMenuIconClick() {
 
 ## Navigation Drawer のスタイル設定
 
-Navigation Drawer コンポーネントは、`base`、`main`、`mini` など、いくつかの CSS パーツを公開します。Navigation Drawer Item コンポーネントは、ベース、アイコン、コンテンツの 3 つの CSS パーツも公開し、スタイルを完全に制御できるようにします。
+Navigation Drawer コンポーネントは、`base`、`main`、`mini` など、いくつかの CSS パーツを公開します。Navigation Drawer Item コンポーネントは、`base`、`icon`、`content` の 3 つの CSS パーツも公開し、スタイルを完全に制御できるようにします。
 
 ```scss
 igc-nav-drawer::part(base) {

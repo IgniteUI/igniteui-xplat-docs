@@ -1,5 +1,5 @@
 ---
-title: Remote Data Operations in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Remote Data Operations - {ProductName}
 _description: Start using Angular remote data operations like remote filtering, remote sorting, and remote scrolling to load data from a server with {ProductName}.
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Remote Data, Paging, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
@@ -7,8 +7,8 @@ namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Remote Data Operations
-
-The {ProductName} `{ComponentName}` supports remote data operations such as remote virtualization, remote sorting, remote filtering and others. This allows the developer to perform these tasks on a server, retrieve the data that is produced and display it in the `{ComponentName}`.
+<!-- Angular -->
+The {ProductName} Remote Data Operations feature in {Platform} {ComponentTitle} supports operations such as remote virtualization, remote sorting, remote filtering and others. This allows the developer to perform these tasks on a server, retrieve the data that is produced and display it in the `{ComponentName}`.
 
 ## {Platform} {ComponentTitle} Remote Data Operations Overview Example
 
@@ -17,7 +17,7 @@ The {ProductName} `{ComponentName}` supports remote data operations such as remo
 `sample="/{ComponentSample}/remote-filtering-data", height="550", alt="{Platform} {ComponentTitle} Remote Data Operations Overview Example"`
 
 
-
+<!-- end: Angular -->
 By default, the `{ComponentName}` uses its own logic for performing data operations.
 
 You can perform these tasks remotely and feed the resulting data to the `{ComponentName}` by taking advantage of certain inputs and events, which are exposed by the `{ComponentName}`.
@@ -87,13 +87,17 @@ When requesting data, you need to utilize the `IForOfState` interface, which pro
 
 <!-- end: Angular -->
 
-<!-- Angular -->
+<!-- Angular, WebComponents, React -->
 
 ## Infinite Scroll
 
  A popular design for scenarios requiring fetching data by chunks from an end-point is the so-called infinite scroll. For data grids, it is characterized by continuous increase of the loaded data triggered by the end-user scrolling all the way to the bottom. The next paragraphs explain how you can use the available API to easily achieve infinite scrolling in `{ComponentName}`.
 
 To implement infinite scroll, you have to fetch the data in chunks. The data that is already fetched should be stored locally and you have to determine the length of a chunk and how many chunks there are. You also have to keep a track of the last visible data row index in the grid. In this way, using the `StartIndex` and `ChunkSize` properties, you can determine if the user scrolls up and you have to show them already fetched data or scrolls down and you have to fetch more data from the end-point.
+
+<!-- end: Angular, WebComponents, React -->
+
+<!-- Angular -->
 
 The first thing to do is use the `ngAfterViewInit` lifecycle hook to fetch the first chunk of the data. Setting the `TotalItemCount` property is important, as it allows the grid to size its scrollbar correctly.
 
@@ -148,18 +152,19 @@ BLAZOR CODE SNIPPET HERE
 
 <!-- end: Angular -->
 
-<!-- Angular -->
+<!-- WebComponents -->
+<!-- end: WebComponents -->
+
+
 
 ### Infinite Scroll Demo
 
-<!-- NOTE this sample is differed -->
-
-`sample="/{ComponentSample}/data-performance-infinite-scroll", height="550", alt="{Platform} {ComponentTitle} Remote Data Operations Infinite Scroll Example"`
+`sample="/{ComponentSample}/infinite-scroll", height="550", alt="{Platform} {ComponentTitle} Remote Data Operations Infinite Scroll Example"`
 
 
 
-<!-- end: Angular -->
 
+<!-- Angular -->
 ## Remote Sorting/Filtering
 
 To provide remote sorting and filtering, you need to subscribe to the `DataPreLoad`, `SortingExpressionsChange` and `FilteringExpressionsTreeChange` outputs, so that you make the appropriate request based on the arguments received, as well as set the public `{ComponentName}` property `TotalItemCount` with the respective information coming from the service.
@@ -365,9 +370,7 @@ this.remoteValuesService.getColumnData(
 BLAZOR CODE SNIPPET HERE
 ```
 
-<!-- Angular -->
 In order to provide a custom loading template for the excel style filtering, we can use the `ExcelStyleLoading` directive:
-<!-- end:Angular -->
 
 ```html
 <igx-grid [data]="data" [filterMode]="'excelStyleFilter'" [uniqueColumnValuesStrategy]="columnValuesStrategy">
@@ -919,6 +922,7 @@ As you can see in the `Paginate` method, custom pagination logic is performed, b
 
 
 <!-- ComponentEnd: Grid -->
+<!-- end: Angular -->
 
 ## Known Issues and Limitations
 

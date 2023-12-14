@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} の複数列ヘッダー - インフラジスティックス
+title: {Platform} {ComponentTitle} 複数列ヘッダー - {ProductName}
 _description: {ProductName} グリッドを使用して列ヘッダーを共通の階層ヘッダーの下に配置し、それらを複数のヘッダーに結合することで、列ヘッダーのグループ化を開始します。
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Multi-Column Headers, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, 複数列ヘッダー, インフラジスティックス
@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 複数列ヘッダーの概要
 
-{Platform} `{ComponentName}` は複数列ヘッダーをサポートしており、共通の複数ヘッダーの下に配置することで列をグループ化できます。各複数-列ヘッダーグループは、マテリアル UI グリッド内でその他複数のグループや列を組み合わせることができます。
+{Platform} {ComponentTitle} の {ProductName} 複数列ヘッダー機能は、共通の複数ヘッダーの下に配置することで列をグループ化できます。`{ComponentName}` の各複数ヘッダー グループは、その他のグループや列を組み合わせて表示できます。この機能は、水平方向のスクロールが面倒な大規模なデータセットを扱う場合に特に役立ちます。
 
 ## {Platform} {ComponentTitle} 複数列ヘッダーの例
 
@@ -55,6 +55,16 @@ _language: ja
 ```
 <!-- end: WebComponents -->
 
+```tsx
+<{ComponentSelector} allowFiltering="true">
+    <IgrColumnGroup header="Contact Information">
+        <IgrColumn sortable="true" resizable="true" field="Phone"></IgrColumn>
+        <IgrColumn sortable="true" resizable="true" field="Fax"></IgrColumn>
+        <IgrColumn sortable="true" resizable="true" field="PostalCode"></IgrColumn>
+    </IgrColumnGroup>
+</{ComponentSelector}>
+```
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -91,6 +101,16 @@ _language: ja
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+```tsx
+<{ComponentSelector} primaryKey="ID" foreignKey="ParentID">
+    <IgrColumnGroup header="Contact Information">
+        <IgrColumn sortable="true" resizable="true" field="Phone" dataType={GridColumnDataType.String}></IgrColumn>
+        <IgrColumn sortable="true" resizable="true" field="Fax" dataType={GridColumnDataType.String}></IgrColumn>
+        <IgrColumn sortable="true" resizable="true" field="PostalCode" dataType={GridColumnDataType.String}></IgrColumn>
+    </IgrColumnGroup>
+</{ComponentSelector}>
+```
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -162,6 +182,18 @@ TO-DO H-GRID CODE SNIPPET
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+```tsx
+<{ComponentSelector} height="600px" allowFiltering="true">
+    <IgrColumnGroup header="General Information">
+        <IgrColumn movable="true" sortable="true" resizable="true" field="CompanyName"></IgrColumn>
+        <IgrColumnGroup movable="true" header="Person Details">
+            <IgrColumn movable="true" pinned="false" sortable="true" resizable="true" field="ContactName"></IgrColumn>
+            <IgrColumn movable="true" sortable="true" resizable="true" field="ContactTitle"></IgrColumn>
+        </IgrColumnGroup>
+    </IgrColumnGroup>
+</{ComponentSelector}>
+```
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -207,6 +239,19 @@ TO-DO H-GRID CODE SNIPPET
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+```tsx
+<{ComponentSelector} primaryKey="ID" foreignKey="ParentID" moving="true">
+    <IgrColumnGroup pinned="false" header="General Information">
+        <IgrColumn field="HireDate" sortable="true" resizable="true" dataType={GridColumnDataType.Date}></IgrColumn>
+        <IgrColumnGroup header="Person Details">
+            <IgrColumn field="ID" resizable="true" filterable="true" dataType={GridColumnDataType.Number}></IgrColumn>
+            <IgrColumn field="Title" sortable="true" resizable="true" dataType={GridColumnDataType.String}></IgrColumn>
+            <IgrColumn field="Age" sortable="true" resizable="true" dataType={GridColumnDataType.Number}></IgrColumn>
+        </IgrColumnGroup>
+    </IgrColumnGroup>
+</{ComponentSelector}>
+```
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -274,6 +319,17 @@ TO-DO H-GRID CODE SNIPPET
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+```tsx
+<{ComponentSelector} height="600px" allowFiltering="true">
+    <IgrColumnGroup movable="true" pinned="true" header="General Information">
+        <IgrColumn movable="true" sortable="true" resizable="true" field="CompanyName"></IgrColumn>
+    </IgrColumnGroup>
+    <IgrColumn sortable="true" resizable="true" field="Phone"></IgrColumn>
+    <IgrColumn sortable="true" resizable="true" field="Fax"></IgrColumn>
+    <IgrColumn sortable="true" resizable="true" field="PostalCode"></IgrColumn>
+</{ComponentSelector}>
+```
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -313,6 +369,17 @@ TO-DO H-GRID CODE SNIPPET
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+```tsx
+<{ComponentSelector} primaryKey="ID" foreignKey="ParentID" moving="true">
+    <IgrColumnGroup header="Contact Information">
+        <IgrColumn field="Phone" movable="true" sortable="true" resizable="true" dataType={GridColumnDataType.String}></IgrColumn>
+    </IgrColumnGroup>
+    <IgrColumn field="Name" sortable="true" resizable="true" dataType={GridColumnDataType.String}></IgrColumn>
+    <IgrColumn field="Title" sortable="true" resizable="true" dataType={GridColumnDataType.String}></IgrColumn>
+    <IgrColumn field="Age" sortable="true" resizable="true" dataType={GridColumnDataType.Number}></IgrColumn>
+</{ComponentSelector}>
+```
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -358,8 +425,8 @@ TO-DO H-GRID CODE SNIPPET
 ```ts
 constructor() {
     var general = this.general = document.getElementById('General') as IgcColumnComponent;
-        general.headerTemplate = this.generalHeaderTemplate;
-    }
+    general.headerTemplate = this.generalHeaderTemplate;
+}
 
 public generalHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
@@ -392,9 +459,9 @@ public generalHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 constructor() {
     var general = this.general = document.getElementById('General') as IgcColumnComponent;
     var addresss = this.address = document.getElementById('Address') as IgcColumnComponent;
-        general.headerTemplate = this.columnGroupHeaderTemplate;
-        addresss.headerTemplate = this.columnGroupHeaderTemplate;
-    }
+    general.headerTemplate = this.columnGroupHeaderTemplate;
+    addresss.headerTemplate = this.columnGroupHeaderTemplate;
+}
 
 public columnGroupHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
@@ -411,11 +478,11 @@ public columnGroupHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 
 <!-- end: Blazor -->
 
-<!-- WebComponents -->
+<!-- WebComponents, React -->
 
 グリッドの各列グループは個別のテンプレートを持つことができます。次のコード スニペットは、列グループの `HeaderTemplate` の使用方法を示しています:
 
-<!-- end: WebComponents -->
+<!-- end: WebComponents, React -->
 
 ```razor
 <IgbColumnGroup Header="Address Information" HeaderTemplate="Template">
@@ -437,9 +504,9 @@ public columnGroupHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
     var columnGroup = this.columnGroup = document.getElementById('addressInfoGroup') as IgcColumnGroupComponent;
-        grid.data = this.customersData
-        columnGroup.headerTemplate = this.headerTemplate;
-    }
+    grid.data = this.customersData
+    columnGroup.headerTemplate = this.headerTemplate;
+}
 
 public headerTemplate = (ctx: IgcColumnTemplateContext) => {
     const column = (ctx as any).column;
@@ -447,6 +514,21 @@ public headerTemplate = (ctx: IgcColumnTemplateContext) => {
              <span style="float:left">${column.header.toUpperCase()}</span>
             </div>`;
 };
+```
+
+```tsx
+<IgrColumnGroup header="Contact Information" headerTemplate={groupHeaderTemplate}></IgrColumnGroup>
+```
+
+```tsx
+function groupHeaderTemplate(e: { dataContext: IgrColumnTemplateContext }) {
+    const column = e.dataContext.column as IgrColumnGroup;
+    return (
+      <div>
+        <span style={{ float: "left" }}>{column.header.toUpperCase()}</span>
+      </div>
+    );
+}
 ```
 
 > [!Note]
@@ -475,14 +557,25 @@ public headerTemplate = (ctx: IgcColumnTemplateContext) => {
 ```ts
 public columnHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <igc-icon draggable="false" click="${this.onClick()}"></igc-icon>
+        <igc-icon draggable="false" @click="${() => this.onClick()}"></igc-icon>
     `;
+}
+```
+
+```tsx
+function columnHeaderTemplate(e: { dataContext: IgrColumnTemplateContext }) {
+    const column = e.dataContext.column as IgrColumnGroup;
+    return (
+      <span onClick={onClick}>
+        <IgrIcon data-draggable="false"></IgrIcon>
+      </span>
+    );
 }
 ```
 
 次のサンプルは、ヘッダー テンプレートを使用して折りたたみ可能な列グループを実装する方法を示しています。
 
-`sample="/{ComponentSample}/multi-column-header-template", height="550", alt="{Platform} {ComponentTitle} 複数列ヘッダーテンプレートの例"`
+`sample="/{ComponentSample}/multi-column-headers-template", height="550", alt="{Platform} {ComponentTitle} 複数列ヘッダーテンプレートの例"`
 
 ## スタイル設定
 
@@ -618,15 +711,19 @@ import 'core-js/es7/array';
 <IgbGrid class="grid"></IgbGrid>
 ```
 
+```tsx
+<IgrGrid className="grid"></IgrGrid>
+```
+
 次に、そのクラスに関連する CSS プロパティを設定します。
 
 ```css
 .grid {
-    --igx-grid-header-background: #e0f3ff;
-    --igx-grid-header-text-color: #e41c77;
-    --igx-grid-header-border-width: 1px;
-    --igx-grid-header-border-style: solid;
-    --igx-grid-header-border-color: rgba(0, 0, 0, 0.08);
+    --ig-grid-header-background: #e0f3ff;
+    --ig-grid-header-text-color: #e41c77;
+    --ig-grid-header-border-width: 1px;
+    --ig-grid-header-border-style: solid;
+    --ig-grid-header-border-color: rgba(0, 0, 0, 0.08);
 }
 ```
 ### デモ

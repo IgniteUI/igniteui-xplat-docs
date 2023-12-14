@@ -8,9 +8,9 @@ namespace: Infragistics.Controls
 _language: ja
 ---
 
-# {Platform} {ComponentTitle} Excel へのエクスポート サービス
+# {Platform} {ComponentTitle} Export to Excel サービス
 
-Excel Exporter サービスは `{ComponentName}` のデータを MS Excel へエクスポートできます。エクスポート機能は、`ExcelExporterService` クラスでカプセル化され、MS Excel テーブル形式でデータをエクスポートします。この形式ではフィルタリングやソートなどの機能が使用でき、`ExcelExporterService` の `Export` メソッドを呼び出して最初の引数として {ComponentTitle} コンポーネントを渡し、グリッドを簡単にエクスポートします。
+{Platform} {ComponentTitle} の {ProductName} Export to Excel サービスは、データを Excel へエクスポートできます。エクスポート機能は、`ExcelExporterService` クラスでカプセル化され、MS Excel テーブル形式でデータをエクスポートします。この形式ではフィルタリングやソートなどの機能が使用でき、`ExcelExporterService` の `Export` メソッドを呼び出して最初の引数として `{ComponentName}` コンポーネントを渡し、グリッドを簡単にエクスポートします。
 
 ## {Platform} Excel Exporter の例
 
@@ -49,7 +49,7 @@ export class AppModule {}
 
 ```Razor
 <IgbDataGrid data="localData"/>
-<button click="exportButtonHandler()">Export to Excel</button>
+<button @onclick="exportButtonHandler">Export to Excel</button>
 ```
 
 エクスポーター サービスへのアクセスは、コンポーネントのコンストラクターで `ExcelExporterService` 型の引数を定義し、{Platform} フレームワークはサービスのインスタンスを提供します。データを MS Excel 形式でエクスポートするには、エクスポーター サービスの `Export` メソッドを呼び出して {ComponentTitle} コンポーネントを最初の引数として渡します。
@@ -136,26 +136,51 @@ public webGridExportEventFreezeHeaders(args: any): void {
 ```
 <!-- end: WebComponents -->
 
+```tsx
+function exportEventFreezeHeaders(grid: IgrGridBaseDirective, args: IgrExporterEvent) {
+    args.detail.options.freezeHeaders = true;
+}
+
+<IgrGridToolbar key="toolbar">
+  <IgrGridToolbarActions key="toolbarActions">
+    <IgrGridToolbarExporter key="exporting" exportStarted={exportEventFreezeHeaders}></IgrGridToolbarExporter>
+  </IgrGridToolbarActions>
+</IgrGridToolbar>
+```
+
 ```razor
- <IgbGrid>
+ <{ComponentSelector}>
     <IgbGridToolbar>
       <IgbGridToolbarActions>
         <IgbGridToolbarExporter
-          ExportExcel="true" ExportStarted="WebGridExportEventMultiColumnHeaders">
+          ExportExcel="true" ExportStartedScript="WebGridExportEventMultiColumnHeaders">
         </IgbGridToolbarExporter>
       </IgbGridToolbarActions>
     </IgbGridToolbar>
- </IgbGrid>
+ </{ComponentSelector}>
 
-@code {
-
-  public void WebGridExportEventMultiColumnHeaders(IgbExporterEventEventArgs args)
-  {
-      bool exportMultiHeaders = (bool)exportHeaders.GetCurrentPrimitiveValue();
-      args.Detail.Options.FreezeHeaders = true;
-  }
-}
+igRegisterScript("WebGridExportEventMultiColumnHeaders", (ev) => {
+    ev.detail.options.ignoreMultiColumnHeaders = false;
+}, false);
 ```
+
+<!-- ComponentStart: TreeGrid -->
+```razor
+ <{ComponentSelector}>
+    <IgbGridToolbar>
+      <IgbGridToolbarActions>
+        <IgbGridToolbarExporter
+          ExportExcel="true" ExportStartedScript="WebGridExportEventMultiColumnHeaders">
+        </IgbGridToolbarExporter>
+      </IgbGridToolbarActions>
+    </IgbGridToolbar>
+ </{ComponentSelector}>
+
+igRegisterScript("WebGridExportEventMultiColumnHeaders", (ev) => {
+    ev.detail.options.ignoreMultiColumnHeaders = false;
+}, false);
+```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- Angular -->
 ## エクスポートするコンテンツのカスタマイズ
@@ -192,6 +217,7 @@ this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('
 |--- |--- |
 |階層レベル|Excel エクスポーター サービスは、最大 8 レベルの階層を作成できます。|
 |ワークシートの最大サイズ|Excel でサポートされているワークシートの最大サイズは、1,048,576 行 x 16,384 列です。|
+|セルのスタイル設定|Excel エクスポーター サービスは、セル コンポーネントに適用されたカスタム スタイルのエクスポートをサポートしていません。このようなシナリオでは、[Excel ライブラリ](../../excel-library.md)を使用することをお勧めします。|
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
