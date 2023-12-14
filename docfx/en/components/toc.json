@@ -635,7 +635,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Column Moving",
         "href": "grids/tree-grid/column-moving.md",
         "status": "NEW"
