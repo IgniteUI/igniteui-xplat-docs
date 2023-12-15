@@ -1,5 +1,5 @@
 ---
-title: Row Pinning in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Row Pinning in - {ProductName}
 _description: Use the {Platform} Row pinning feature to lock rows with a rich and easy to use API. Let users pin rows in a particular order or duplicate them in a special area.
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Row Pinning
 
-In the {Platform} `{ComponentName}`, you can pin one or multiple rows to the top or bottom of grid. **Row Pinning** allows end-users to pin rows in a particular order, duplicating them in a special area that is always visible even when they scroll the `{ComponentName}` vertically. The Material UI Grid has a built-in row pinning UI, which is enabled by initializing an `ActionStrip` component in the context of `{ComponentName}`. In addition, you can define custom UI and change the pin state of the rows via the Row Pinning API.
+The {ProductName} Row Pinning feature in {Platform} {ComponentTitle} allows you to  pin one or multiple rows to the top or bottom of grid. Row Pinning allows end-users to pin rows in a particular order, duplicating them in a special area that is always visible even when they scroll the `{ComponentName}` vertically. The {Platform} {ComponentTitle} has a built-in row pinning UI, which is enabled by initializing an `ActionStrip` component in the context of {ComponentTitle}. In addition, you can define custom UI and change the pin state of the rows via the Row Pinning API.
 
 ## {Platform} {ComponentTitle} Row Pinning Example
 
@@ -68,12 +68,28 @@ The built-in row pinning UI is enabled by adding an `ActionStrip` component with
 ```
 <!-- end: WebComponents -->
 
+```tsx
+<{ComponentSelector}>
+    <IgrColumn field="Country" header="Country"> </IgrColumn>
+    <IgrActionStrip key="actionStrip">
+        <IgrGridPinningActions key="pinningActions"></IgrGridPinningActions>
+        <IgrGridEditingActions key="editingActions"></IgrGridEditingActions>
+    </IgrActionStrip>
+</{ComponentSelector}>
+```
+
 ## Row Pinning API
 
 Row pinning is controlled through the `Pinned` input of the `Row`. Pinned rows are rendered at the top of the `{ComponentName}` by default and stay fixed through vertical scrolling of the unpinned rows in the `{ComponentName}` body.
 
+<!-- Angular, WebComponents -->
 ```typescript
 this.grid.getRowByIndex(0).pinned = true;
+```
+<!-- end: Angular, WebComponents -->
+
+```tsx
+gridRef.current.getRowByIndex(0).pinned = true;
 ```
 
 ```razor
@@ -82,10 +98,18 @@ this.Grid.PinRowAsync("ALFKI", 0);
 
 You may also use the `{ComponentName}`'s `PinRow` or `UnpinRow` methods of the to pin or unpin records by their ID:
 
+<!-- Angular, WebComponents -->
 ```typescript
 this.grid.pinRow('ALFKI');
 this.grid.unpinRow('ALFKI');
 ```
+<!-- end: Angular, WebComponents -->
+
+```tsx
+gridRef.current.pinRow('ALFKI');
+gridRef.current.unpinRow('ALFKI');
+```
+
 
 ```razor
 this.Grid.PinRowAsync("ALFKI", 0);
@@ -105,7 +129,7 @@ A row is pinned below the last pinned row. Changing the order of the pinned rows
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid1" auto-generate="true">
+<{ComponentSelector} id="grid" auto-generate="true">
 </{ComponentSelector}>
 ```
 
@@ -115,13 +139,20 @@ constructor() {
     grid1.data = this.data;
     grid1.addEventListener("rowPinning", this.rowPinning);
 }
-```
-<!-- end: WebComponents -->
 
-```typescript
 public rowPinning(event) {
     event.detail.insertAtIndex = 0;
 }
+```
+<!-- end: WebComponents -->
+
+```tsx
+function rowPinning(grid: IgrGridBaseDirective, event: IgrPinRowEventArgs ) {
+    event.detail.insertAtIndex = 0;
+}
+
+<{ComponentSelector} autoGenerate="true" rowPinning={rowPinning}>
+</{ComponentSelector}>
 ```
 
 ```razor
@@ -237,6 +268,7 @@ igRegisterScript("WebGridRowPinCellTemplate", (ctx) => {
     </igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 On click of the custom icon the pin state of the related row can be changed using the row's API methods.
 
@@ -274,15 +306,39 @@ public pinCellTemplate = (ctx: IgcCellTemplateContext) => {
 }
 ```
 
+```tsx
+function cellPinCellTemplate(ctx: IgrCellTemplateContext) {
+    const index = ctx.dataContext.cell.id.rowIndex;
+    return (
+        <>
+            <span onPointerDown={(e: any) => toggleRowPin(index)}>📌</span>
+        </>
+    );
+}
+
+<{ComponentSelector} primaryKey="ID" autoGenerate="false">
+    <IgrColumn width="70px" bodyTemplate={cellPinCellTemplate}>
+    </IgrColumn>
+</{ComponentSelector}>
+```
+
 On click of the custom icon the pin state of the related row can be changed using the row's API methods.
 
+<!-- Angular, WebComponents -->
 ```typescript
 public togglePinning(index: number) {
     var grid = document.getElementsByTagName("{ComponentSelector}")[0] as {ComponentName}Component;
     grid.getRowByIndex(index).pinned = !grid.getRowByIndex(index).pinned;
 }
 ```
-<!-- end: WebComponents -->
+<!-- end: Angular, WebComponents -->
+
+```tsx
+function toggleRowPin(index: number) {
+  const grid = grid1Ref.current;
+  grid.getRowByIndex(index).pinned = !grid.getRowByIndex(index).pinned;
+}
+```
 
 #### Demo
 
@@ -363,7 +419,7 @@ This would allow reordering the rows and moving them between the pinned and unpi
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 ## Styling
 
@@ -375,7 +431,11 @@ In case you would like to change some of the colors, you need to set a class for
 ```
 
 ```razor
-<{ComponentSelector} Class="grid"></{ComponentSelector}>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
 
 Then set the related CSS properties for that class:
@@ -394,7 +454,7 @@ Then set the related CSS properties for that class:
 `sample="/{ComponentSample}/row-pinning-style", height="540", alt="{Platform} {ComponentTitle} Row Pinning Styling Example"`
 
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- Angular -->
 

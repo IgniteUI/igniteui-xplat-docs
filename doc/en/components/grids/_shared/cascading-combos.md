@@ -1,5 +1,5 @@
 ---
-title: Cascading combos in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Cascading combos - {ProductName}
 _description: Perform updating via cascading combos in {ComponentTitle}, using {Platform} {ComponentTitle}. See demos & examples!
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 _language: en
@@ -9,10 +9,11 @@ namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} with Cascading Combos
-The {ComponentTitle}'s Editing functionality provides with the opportunity to use Cascading Combos. By selecting the value in any preceding `Combo`, the users will receive only the data that is relevant to their selection within the next Combo.
+
+The {ComponentTitle}'s Editing functionality provides with the opportunity to use Cascading Combobox components. By selecting the value in any preceding `Combo`, the users will receive only the data that is relevant to their selection within the next {Platform} Combobox component.
 
 ## Angular {ComponentTitle} with Cascading Combos Sample Overview
-The sample below demonstrates how `Grid` works with nested Cascading `Combo` components.
+The sample below demonstrates how `{ComponentName}` works with nested Cascading `Combo` components.
 
 <!-- ComponentStart: Grid -->
 <code-view style="height:500px"
@@ -30,23 +31,56 @@ In order enable column editing, make sure `editable` property is set to `true`.
 Once the column editing is enabled, you can start by adding your `Combo`. Please note that here in order to have only one single selection available, you will need to use set the `singleSelect` property.
 
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 To get started with the `Combo`, first you need to import it:
 
+
+<!-- WebComponents -->
 ```ts
 import { IgcComboComponent, defineAllComponents } from 'igniteui-webcomponents';
 defineAllComponents();
 ```
+<!-- end: WebComponents -->
 
 ```razor
 builder.Services.AddIgniteUIBlazor(
-    typeof(IgbGridModule), 
+    typeof(IgbGridModule),
     typeof(IgbComboModule)
 );
 ```
 
+```tsx
+import { IgrComboModule, IgrCombo } from 'igniteui-react';
+IgrComboModule.register();
+```
+
 Then you should define the column template with the combo:
 
+
+```tsx
+   <IgrColumn
+    field="Country"
+    header="Country"
+    bodyTemplate={webGridCountryDropDownTemplate}
+    name="column1">
+    </IgrColumn>
+```
+
+```tsx
+    function webGridCountryDropDownTemplate(props: {dataContext: IgrCellTemplateContext}) => {
+        var cell = props.dataContext.cell as any;
+        if (cell === undefined) {
+            return <></>;
+        }
+        const id = cell.id.rowID;
+        const comboId = "country" + id;
+        return (
+        <>
+            <IgrCombo data={countries} ref={comboRefs} change={(x: any, args: any) => {onCountryChange(id, x, args) }} placeholder="Choose Country..." valueKey="Country" displayKey="Country" singleSelect="true" name={comboId}></IgrCombo>
+        </>
+        );
+    }
+```
 
 ```razor
 <IgbColumn Field="Country" Header="Country" BodyTemplate="WebGridCountryDropDownTemplate"></IgbColumn>
@@ -96,7 +130,7 @@ igRegisterScript("CountryChange", (ctx) => {
 ```
 
 ```ts
- public countries = [...this.worldCitiesAbove500K].filter(x => this.countryNames.indexOf(x.Country) !== -1).filter((value, index, array) => array.findIndex(x => x.Country === value.Country) === index); 
+ public countries = [...this.worldCitiesAbove500K].filter(x => this.countryNames.indexOf(x.Country) !== -1).filter((value, index, array) => array.findIndex(x => x.Country === value.Country) === index);
 public bindEventsCountryCombo(rowId: any, cell: any) {
         const comboId = "country_" + rowId;
         var combo = document.getElementById(comboId) as IgcComboComponent<any>;
@@ -116,7 +150,7 @@ public bindEventsCountryCombo(rowId: any, cell: any) {
                     nextCombo.disabled = false;
                     nextCombo.data = this.regions.filter(x => x.Country === value);
                 }, 2000);
-      
+
             }
         });
         combo?.addEventListener("igcOpening", (e:any) => {
@@ -128,11 +162,28 @@ public bindEventsCountryCombo(rowId: any, cell: any) {
     }
 ```
 
-<!-- end: WebComponents, Blazor -->
+```tsx
+    function onCountryChange(rowId: string, cmp: any, args:any) {
+        const regionCombo = comboRefCollection.get("region_" + rowId);
+       setTimeout(() => {
+            const newValue = cmp.value[0];
+            if (newValue === undefined) {
+                regionCombo.deselect(regionCombo.value);
+                regionCombo.disabled = true;
+                regionCombo.data = [];
+            } else {
+                regionCombo.disabled = false;
+                regionCombo.data = regions.filter(x => x.Country === newValue);
+            }
+       });
+    }
+```
+
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- Angular -->
 
-To get started with the `Simple ComboBox component`, first you need to import the `IgxSimpleComboModule` in your `app.module.ts` file:
+To get started with the `SimpleComboBox` component, first you need to import the `IgxSimpleComboModule` in your `app.module.ts` file:
 
 ```typescript
 import { IgxSimpleComboModule } from 'igniteui-angular';
@@ -184,8 +235,8 @@ And lastly, adding the `LinearProgress`, which is required while loading the lis
 The `id` is necessary to set the value of `id` attribute.
 
 ```html
- <igx-linear-bar 
-    [id]="'region-progress-' + cell.row.data.ID" 
+ <igx-linear-bar
+    [id]="'region-progress-' + cell.row.data.ID"
     [style.visibility]="'hidden'"
     type="info" [indeterminate]="true">
 </igx-linear-bar>

@@ -13,8 +13,6 @@ mentionedTypes: ['Chip']
 
 `sample="/inputs/chip/overview", height="80", alt="{Platform} Chip Example"`
 
-
-
 <div class="divider"></div>
 
 ## Usage
@@ -34,6 +32,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcChipComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -72,6 +73,10 @@ You will also need to link an additional CSS file to apply the styling to the `C
 
 The simplest way to start using the `Chip` is as follows:
 
+```html
+<igc-chip></igc-chip>
+```
+
 ```razor
 <div class="container sample vertical">
     <IgbChip>Chip</IgbChip>
@@ -89,10 +94,6 @@ The simplest way to start using the `Chip` is as follows:
 
 ```tsx
 <IgrChip></IgrChip>
-```
-
-```html
-<igc-chip></igc-chip>
 ```
 
 To display a selectable chip, you can use the `Selectable` property of the chip.
@@ -177,7 +178,7 @@ With the `Prefix` and `Suffix` parts of the `Chip` component and their slots, we
 
 ## Size
 
-We allow the user to choose the size of the `Chip` by using its `Size` property.
+We allow the user to choose the size of the `Chip` by utilizing the `--ig-size` CSS variable:
 
 ```tsx
 <IgrChip size="small" selectable="true" removable="true">
@@ -191,14 +192,13 @@ We allow the user to choose the size of the `Chip` by using its `Size` property.
 </IgrChip>
 ```
 
-```html
-<igc-chip size="small" selectable removable>Chip</igc-chip>
-<igc-chip size="medium" selectable removable>Chip</igc-chip>
-<igc-chip size="large" selectable removable>Chip</igc-chip>
+```css
+igc-chip {
+    --ig-size: var(--ig-size-large);
+}
 ```
 
 `sample="/inputs/chip/size", height="80", alt="{Platform} Chip Size Example"`
-
 
 
 ## Styling

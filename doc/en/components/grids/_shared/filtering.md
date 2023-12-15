@@ -1,5 +1,5 @@
 ---
-title: Filtering in {Platform} {ComponentTitle} for {ProductName}
+title: {Platform} {ComponentTitle} Filtering - {ProductName}
 _description: Start using angular filter to return specific data with {Platform} {ComponentTitle}. Check the advanced filtering options, including data-type Excel-style filtering.
 _keywords: filter, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,11 +9,15 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Filtering
 
-The {Platform} `{ComponentName}` component provides three different filtering types - Quick filtering, [Excel Style Filtering](excel-style-filtering.md) and [Advanced Filtering](advanced-filtering.md) which enable you to display only the records that meet specified criteria. The `{ComponentName}` component in {Platform} provides filtering capabilities and extensive filtering API through the data container to which the `{ComponentName}` is bound.
+The {ProductName} Filtering in {Platform} {ComponentTitle} is a feature that allows for selectively displaying or hiding data based on specific criteria or conditions. There is a bound data container through which the `{ComponentName}` Component provides rich filtering API and all the filtering capabilities. The available filtering types here are three: 
+
+- Quick filtering
+- [Excel Style Filtering](excel-style-filtering.md) 
+- [Advanced Filtering](advanced-filtering.md)
 
 ## {Platform} {ComponentTitle} Filtering Example
 
-The sample below demonstrates `{ComponentName}`'s **Excel Style Filtering** user experience.
+The sample below demonstrates `{ComponentName}`'s **Quick Filter** user experience.
 
 `sample="/{ComponentSample}/filtering-options", height="500", alt="{Platform} {ComponentTitle} Filtering Example"`
 
@@ -49,20 +53,29 @@ Property `Filterable` enables you to specify the following options:
 <!-- end: Angular -->
 
 ```razor
-<IgbGrid Data=data AutoGenerate=false AllowFiltering=true>
+<{ComponentSelector} Data=data AutoGenerate=false AllowFiltering=true>
     <IgbColumn Field="ProductName" DataType="GridColumnDataType.String"></IgbColumn>
     <IgbColumn Field="Price" DataType="GridColumnDataType.Number" Filterable=false></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 ```
 
 <!-- WebComponents -->
 ```html
 <{ComponentSelector} id="grid1" auto-generate="false" allow-filtering="true">
-    <igc-column field="ProductName" data-type="String"></igc-column>
-    <igc-column field="Price" data-type="Number" filterable="false"></igc-column>
+    <igc-column field="ProductName" data-type="string"></igc-column>
+    <igc-column field="Price" data-type="number" filterable="false"></igc-column>
 <{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} data={this.nwindData} autoGenerate="false" ref={this.gridRef} allowFiltering="true">
+    <IgrColumn field="ProductName" dataType="String"></IgrColumn>
+    <IgrColumn field="UnitPrice" data-type="Number" filterable="false"></IgrColumn>
+</{ComponentSelector}>
+```
+<!-- end: React -->
 
 To enable the [Advanced filtering](advanced-filtering.md) however, you need to set the `AllowAdvancedFiltering` input property to **true**.
 
@@ -74,7 +87,7 @@ To enable the [Advanced filtering](advanced-filtering.md) however, you need to s
 <!-- end: Angular -->
 
 ```razor
-<IgbGrid Data=data AutoGenerate=true AllowAdvancedFiltering=true />
+<{ComponentSelector} Data=data AutoGenerate=true AllowAdvancedFiltering=true />
 ```
 
 <!-- WebComponents -->
@@ -83,6 +96,13 @@ To enable the [Advanced filtering](advanced-filtering.md) however, you need to s
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} data={nwindData} autoGenerate="false" ref={gridRef} allowAdvancedFiltering="true">
+</{ComponentSelector}>
+```
+<!-- end: React -->
 
 > [!Note]
 >You can enable both the `QuickFilter` or `ExcelStyleFilter` and the advanced filtering user interfaces in the `{ComponentName}`. Both filtering user interfaces will work independently of one another. The final filtered result in the `{ComponentName}` is the intersection between the results of the two filters.
@@ -112,12 +132,23 @@ The filtering feature is enabled for the `{ComponentName}` component by setting 
 <!-- WebComponents -->
 ```html
 <{ComponentSelector} auto-generate="false" allow-filtering="true">
-    <igc-column field="ProductName" data-type="String"></igc-column>
-    <igc-column field="Price" datdata-typeaType="Number"></igc-column>
-    <igc-column field="Discontinued" data-type="Boolean" filterable="false"></igc-column>
+    <igc-column field="ProductName" data-type="string"></igc-column>
+    <igc-column field="Price" datdata-typeaType="number"></igc-column>
+    <igc-column field="Discontinued" data-type="boolean" filterable="false"></igc-column>
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} autoGenerate="false" allowFiltering="true">
+    <IgrColumn field="ProductName" dataType="String"></IgrColumn>
+    <IgrColumn field="Price" dataType="Number"></IgrColumn>
+    <IgrColumn field="Discontinued" dataType="Boolean" filterable="false"></IgrColumn>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -136,14 +167,16 @@ The filtering feature is enabled for the `{ComponentName}` component by setting 
 <!-- ComponentEnd: HierarchicalGrid -->
 
 ```razor
-<IgbGrid Data=data AutoGenerate=false AllowFiltering=true>
+<{ComponentSelector} Data=data AutoGenerate=false AllowFiltering=true>
     <IgbColumn Field="ProductName" DataType="GridColumnDataType.String"></IgbColumn>
     <IgbColumn Field="Price" DataType="GridColumnDataType.Number" Filterable=false></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 ```
 
 > [!Note]
 > If values of type *string* are used by a column of data type *date*, the `{ComponentName}` won't parse them to *date* objects and using filtering conditions won't be possible. If you want to use *string* objects, additional logic should be implemented on the application level, in order to parse the values to *date* objects.
+
+<!-- Angular, WebComponents -->
 
 You can filter any column or a combination of columns through the `{ComponentName}` API. The `{ComponentName}` exposes several methods for this task - `Filter`, `FilterGlobal` and `ClearFilter`.
 
@@ -175,6 +208,9 @@ The only required parameters are the column field key and the filtering term. Bo
 > [!Note]
 > The filtering operation **DOES NOT** change the underlying data source of the `{ComponentName}`.
 
+
+<!-- Angular -->
+
 ```typescript
 // Multi column filtering
 
@@ -202,11 +238,13 @@ gridFilteringExpressionsTree.filteringOperands.push(priceFilteringExpressionsTre
 this.@@igObjectRef.filteringExpressionsTree = gridFilteringExpressionsTree;
 ```
 
+<!-- end: Angular -->
+
 ```typescript
 // Multi column filtering
 
-const gridFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And);
-const productFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And, 'ProductName');
+const gridFilteringExpressionsTree = new IgcFilteringExpressionsTree(FilteringLogic.And);
+const productFilteringExpressionsTree = new IgcFilteringExpressionsTree(FilteringLogic.And, 'ProductName');
 const productExpression = {
     condition: IgcStringFilteringOperand.instance().condition('contains'),
     fieldName: 'ProductName',
@@ -216,7 +254,7 @@ const productExpression = {
 productFilteringExpressionsTree.filteringOperands.push(productExpression);
 gridFilteringExpressionsTree.filteringOperands.push(productFilteringExpressionsTree);
 
-const priceFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And, 'Price');
+const priceFilteringExpressionsTree = new IgcFilteringExpressionsTree(FilteringLogic.And, 'Price');
 const priceExpression = {
     condition: IgcNumberFilteringOperand.instance().condition('greaterThan'),
     fieldName: 'UnitPrice',
@@ -290,8 +328,8 @@ public ngAfterViewInit() {
 
 ```typescript
 constructor() {
-    const gridFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And);
-    const productFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And, 'ProductName');
+    const gridFilteringExpressionsTree = new IgcFilteringExpressionsTree(FilteringLogic.And);
+    const productFilteringExpressionsTree = new IgcFilteringExpressionsTree(FilteringLogic.And, 'ProductName');
     const productExpression = {
         condition: IgcStringFilteringOperand.instance().condition('contains'),
         fieldName: 'ProductName',
@@ -302,13 +340,18 @@ constructor() {
     gridFilteringExpressionsTree.filteringOperands.push(productFilteringExpressionsTree);
 
     this.grid.filteringExpressionsTree = gridFilteringExpressionsTree;
-    this.cdr.detectChanges();
 }
 ```
+
+<!-- end: Angular, WebComponents -->
 
 ### Filtering logic
 
 The `FilteringLogic` property of the `{ComponentName}` controls how filtering multiple columns will resolve in the `{ComponentName}`. You can change it at any time through the `{ComponentName}` API, or through the `{ComponentName}` input property.
+
+```razor
+ <{ComponentSelector} FilteringLogic="FilteringLogic.Or"></{ComponentSelector}>
+```
 
 <!-- Angular -->
 ```typescript
@@ -320,11 +363,17 @@ this.@@igObjectRef.filteringLogic = FilteringLogic.OR;
 
 <!-- WebComponents -->
 ```typescript
-import { FilteringLogic } from 'igniteui-webcomponents-grids';
+import { FilteringLogic } from "igniteui-webcomponents-grids/grids";
 
 this.grid.filteringLogic = FilteringLogic.OR;
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentName} filteringLogic={FilteringLogic.Or}></{ComponentName}>
+```
+<!-- end: React -->
 
 The default value of `AND` returns only the rows that match all the currently applied filtering expressions. Following the example above, a row will be returned when both the 'ProductName' cell value contains 'myproduct' and the 'Price' cell value is greater than 55.
 
@@ -338,6 +387,8 @@ The `{ComponentName}` supports remote filtering, which is demonstrated in the [{
 <!-- ComponentEnd: Grid, TreeGrid -->
 <!-- end: Angular -->
 
+<!-- Angular, WebComponents -->
+
 ## Custom Filtering Operands
 
 You can customize the filtering menu by adding, removing or modifying the filtering operands. By default, the filtering menu contains certain operands based on the column’s data type (`BooleanFilteringOperand`, `DateFilteringOperand`, `NumberFilteringOperand` and `StringFilteringOperand`). You can extend these classes or their base class `FilteringOperand` to change the filtering menu items’ behavior.
@@ -345,6 +396,8 @@ You can customize the filtering menu by adding, removing or modifying the filter
 In the sample below, inspect the “Product Name” and “Discontinued” columns filters menus. For the “Discontinued” column filter, we have limited the number of operands to All, True and False. For the “Product Name” column filter – we have modified the Contains and Does Not Contain operands logic to perform case sensitive search and added also Empty and Not Empty operands.
 
 To do that, extend the `StringFilteringOperand` and `BooleanFilteringOperand`, modify the operations and their logic, and set the column `filters` input to the new operands.
+
+<!-- Angular -->
 
 ```typescript
 // grid-custom-filtering.component.ts
@@ -408,15 +461,16 @@ export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
 }
 ```
 
+<!-- end: Angular -->
+
 ```typescript
-// grid-custom-filtering.component.ts
 
 export class GridCustomFilteringComponent {
     public caseSensitiveFilteringOperand = CaseSensitiveFilteringOperand.instance();
     public booleanFilteringOperand = BooleanFilteringOperand.instance();
 }
 
-export class CaseSensitiveFilteringOperand extends IgxStringFilteringOperand {
+export class CaseSensitiveFilteringOperand extends IgcStringFilteringOperand {
     private constructor() {
         super();
         const customOperations = [
@@ -455,7 +509,7 @@ export class CaseSensitiveFilteringOperand extends IgxStringFilteringOperand {
     }
 }
 
-export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
+export class BooleanFilteringOperand extends IgcBooleanFilteringOperand {
     private constructor() {
         super();
         this.operations = [
@@ -491,24 +545,22 @@ export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
 <!-- grid-custom-filtering.component.html -->
 
 <{ComponentSelector} auto-generate="false" allow-filtering="true">
-    <igc-column id="ProductName" field="ProductName" header="Product Name" data-type="String"></igc-column>
-    <igc-column id="Discontinued" field="Discontinued" header="Discontinued" data-type="Boolean"></igc-column>
+    <igc-column id="ProductName" field="ProductName" header="Product Name" data-type="string"></igc-column>
+    <igc-column id="Discontinued" field="Discontinued" header="Discontinued" data-type="boolean"></igc-column>
 </{ComponentSelector}>
 ```
 ```ts
 constructor() {
-    var productName = this.productName = document.getElementById('ProductName') as IgcColumnComponent;
-    var discontinued = this.discontinued = document.getElementById('Discontinued') as IgcColumnComponent;
-
-    this._bind = () => {
-        productName.bodyTemplate = this.caseSensitiveFilteringOperand;
-        discontinued.bodyTemplate = this.booleanFilteringOperand;
-    }
-    this._bind();
+    var productName = document.getElementById('ProductName') as IgcColumnComponent;
+    var discontinued = document.getElementById('Discontinued') as IgcColumnComponent;
+    productName.filters = this.caseSensitiveFilteringOperand;
+    discontinued.filters = this.booleanFilteringOperand;
 }
 ```
 <!-- end: WebComponents -->
 <!-- ComponentEnd: Grid, TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
 
 ```html
 <!-- hierarchical-grid-custom-filtering.component.html -->
@@ -528,8 +580,8 @@ constructor() {
 <!-- grid-custom-filtering.component.html -->
 
 <igc-hierarchical-grid auto-generate="false" allow-filtering="true">
-    <igc-column id="Artist" field="Artist" filterable='true' data-type="String" [filters]="caseSensitiveFilteringOperand"></igc-column>
-    <igc-column id="HasGrammyAward" field="HasGrammyAward" filterable='true' data-type="Boolean" [filters]="booleanFilteringOperand"></igc-column>
+    <igc-column id="Artist" field="Artist" filterable='true' data-type="string" [filters]="caseSensitiveFilteringOperand"></igc-column>
+    <igc-column id="HasGrammyAward" field="HasGrammyAward" filterable='true' data-type="boolean" [filters]="booleanFilteringOperand"></igc-column>
 </igc-hierarchical-grid>
 ```
 ```ts
@@ -545,11 +597,15 @@ constructor() {
 }
 ```
 
-<!-- Angular -->
+<!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- NOTE this sample is differed -->
+
 
 `sample="/{ComponentSample}/custom-filtering", height="600", alt="{Platform} {ComponentTitle} Custom Filtering Example"`
+
+<!-- end: Angular, WebComponents -->
+
+<!-- Angular -->
 
 ## Re-templating Filter Cell
 
@@ -562,6 +618,9 @@ You can add a template marked with `FilterCellTemplate` in order to retemplate t
 
 
 <!-- end: Angular -->
+
+
+<!-- Angular -->
 
 <!-- ComponentStart: TreeGrid -->
 
@@ -581,6 +640,49 @@ public matchingRecordsOnlyStrategy = new TreeGridMatchingRecordsOnlyFilteringStr
 ```
 
 <!-- ComponentEnd: TreeGrid -->
+
+<!-- end: Angular -->
+
+<!-- WebComponents, Blazor, React -->
+
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+<!-- WebComponents -->
+```ts
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+<!-- end: WebComponents -->
+
+```razor
+<{ComponentSelector} Class="grid"></ComponentSelector>
+```
+
+<!-- React -->
+```tsx
+<IgrGrid className="grid"></IgrGrid>
+```
+<!-- end: React -->
+
+Then set the related CSS properties for that class:
+
+```css
+.grid {
+    --ig-grid-filtering-row-text-color: #292826;
+    --ig-grid-filtering-row-background: #ffcd0f;
+    --ig-grid-filtering-header-text-color: #292826;
+    --ig-grid-filtering-header-background: #ffcd0f;
+}
+```
+
+### Demo
+
+`sample="/{ComponentSample}/filtering-style", height="500", alt="{Platform} {ComponentTitle} Filtering Style Example"`
+
+
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- Angular -->
 

@@ -9,7 +9,17 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} State Persistence
 
-The `GridState` directive allows developers to easily save and restore the grid state. When the `GridState` directive is applied on the {Platform} `{ComponentName}`, it exposes the `GetState` and `SetState` methods that developers can use to achieve state persistence in any scenario.
+<!-- Angular -->
+The {ProductName} State Persistence in {Platform} {ComponentTitle} allows developers to easily save and restore the grid state. When the `GridState` is applied on the {Platform} `{ComponentName}`, it exposes the `GetState` and `SetState` methods that developers can use to achieve state persistence in any scenario.
+<!-- end: Angular -->
+
+<!-- React, WebComponents -->
+The {ProductName} State Persistence in {Platform} {ComponentTitle} allows developers to easily save and restore the grid state. When the `GridState` is applied on the {Platform} `{ComponentName}`, it exposes the `GetState`, `GetStateAsString`, `ApplyState` and `ApplyStateFromString` methods that developers can use to achieve state persistence in any scenario.
+<!-- end: React, WebComponents -->
+
+<!-- Blazor -->
+The {ProductName} State Persistence in {Platform} {ComponentTitle} allows developers to easily save and restore the grid state. When the `GridState` is applied on the {Platform} `{ComponentName}`, it exposes the `GetStateAsString` and `ApplyStateFromString` methods that developers can use to achieve state persistence in any scenario.
+<!-- end: Blazor -->
 
 ## Supported Features
 
@@ -28,10 +38,10 @@ The `GridState` directive allows developers to easily save and restore the grid 
 * **Expansion**
 * **GroupBy**
 * **Columns**
-    * **NEW**: Multi column headers are now supported out of the box
+    * Multi column headers
     * Columns order
     * Column properties defined by the `IColumnState` interface.
-    * Columns templates and functions are restored using application level code, see [Restoring Column](state-persistence.md#restoring-columns) section.
+<!-- * Columns templates and functions are restored using application level code, see [Restoring Column](state-persistence.md#restoring-columns) section. -->
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 
@@ -49,10 +59,10 @@ The `GridState` directive allows developers to easily save and restore the grid 
 * `RowPinning`
 * `Expansion`
 * `Columns`
-    * **NEW**: Multi column headers are now supported out of the box
+    * Multi column headers
     * Columns order
     * Column properties defined by the `IColumnState` interface.
-    * Columns templates and functions are restored using application level code, see [Restoring Column](state-persistence.md#restoring-columns) section.
+<!-- * Columns templates and functions are restored using application level code, see [Restoring Column](state-persistence.md#restoring-columns) section. -->
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -71,18 +81,33 @@ The `GridState` directive allows developers to easily save and restore the grid 
 
 <!-- ComponentEnd: PivotGrid -->
 
+<!-- Angular -->
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
-> The `GridState` directive does not take care of templates. Go to [Restoring Column](state-persistence.md#restoring-columns) section to see how to restore column templates.
+> The `GridState` does not take care of templates. Go to [Restoring Column](state-persistence.md#restoring-columns) section to see how to restore column templates.
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
+<!-- end: Angular -->
 
 ## Usage
 
+<!-- Angular -->
 The `GetState` method returns the grid state in a serialized JSON string, so developers can just take it and save it on any data storage (database, cloud, browser localStorage, etc). The method accepts first optional parameter `Serialize`, which determines whether `GetState` will return an `IGridState` object or a serialized JSON string.
 
 The developer may choose to get only the state for a certain feature/features, by passing in the feature name, or an array with feature names as a second argument.
+<!-- end: Angular -->
 
+<!-- React, WebComponents -->
+The `GetState` method returns the grid state in a `GridStateInfo` object, containing all the state info. Additional steps may be required in order to save it.
+<!-- end: React, WebComponents -->
+
+<!-- Blazor, React, WebComponents -->
+The `GetStateAsString` returns a serialized JSON string, so developers can just take it and save it on any data storage (database, cloud, browser localStorage, etc).
+
+The developer may choose to get only the state for a certain feature/features, by passing in an array with feature names as an argument. Empty array will result to using the default state options.
+<!-- end: Blazor, React, WebComponents -->
+
+<!-- Angular -->
 ```typescript
 // get all features` state in a serialized JSON string
 const gridState = state.getState();
@@ -93,39 +118,143 @@ const gridState: IGridState = state.getState(false);
 // get the sorting and filtering expressions
 const sortingFilteringStates: IGridState = state.getState(false, ['sorting', 'filtering']);
 ```
+<!-- end: Angular -->
 
-```razor
-GetState blazor snippet
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid">
+    <igc-grid-state id="gridState"></igc-grid-state>
+</{ComponentSelector}>
 ```
 
-`SetState` - The `SetState` method accepts the serialized JSON string or `IGridState` object as argument and will restore the state of each feature found in the object/JSON string.
+```typescript
+var gridState = document.getElementById('gridState') as IgcGridStateComponent;
 
+// get an `IgcGridStateInfo` object, containing all features original state objects, as returned by the grid public API
+const state: IgcGridStateInfo = gridState.getState();
+
+// get all features` state in a serialized JSON string
+const stateString: string = gridState.getStateAsString();
+
+// get the sorting and filtering expressions
+const sortingFilteringStates: IgcGridStateInfo = gridState.getState(['sorting', 'filtering']);
+```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrGrid>
+    <IgrGridState ref={(ref) => { gridState = ref; }}></IgrGridState>
+</IgrGrid>
+```
+
+```tsx
+// get an `IgrGridStateInfo` object, containing all features original state objects, as returned by the grid public API
+const state: IgrGridStateInfo = gridState.getState([]);
+
+// get all features` state in a serialized JSON string
+const stateString: string = gridState.getStateAsString([]);
+
+// get the sorting and filtering expressions
+const sortingFilteringStates: IgrGridStateInfo = gridState.getState(['sorting', 'filtering']);
+```
+
+```razor
+<{ComponentSelector}>
+    <IgbGridState @ref="gridState"></IgbGridState>
+</{ComponentSelector}>
+
+@code {
+    // get all features` state in a serialized JSON string
+    string stateString = gridState.GetStateAsString(new string[0]);
+
+    // get the sorting and filtering expressions
+    string sortingFilteringStates = gridState.GetStateAsString(new string[] { "sorting", "filtering" });
+}
+```
+
+<!-- Angular -->
+`SetState` - The `SetState` method accepts the serialized JSON string or `IGridState` object as argument and will restore the state of each feature found in the object/JSON string.
+<!-- end: Angular -->
+
+<!-- React, WebComponents -->
+`ApplyState` - The method accepts a `GridStateInfo` object as argument and will restore the state of each feature found in the object or specified features as second argument.
+<!-- end: React, WebComponents -->
+
+<!-- Blazor, React, WebComponents -->
+`ApplyStateFromString` - The method accepts a serialized JSON string as argument and will restore the state of each feature found in the JSON string or specified features as second argument.
+<!-- end: Blazor, React, WebComponents -->
+
+<!-- Angular -->
 ```typescript
 state.setState(gridState);
 state.setState(sortingFilteringStates)
 ```
+<!-- end: Angular -->
 
-```razor
-SetState blazor snippet
+<!-- WebComponents -->
+```typescript
+gridState.applyState(gridState);
+gridState.applyStateFromString(gridStateString);
+gridState.applyState(sortingFilteringStates)
+```
+<!-- end: WebComponents -->
+
+```tsx
+gridState.applyState(gridState, []);
+gridState.applyStateFromString(gridStateString, []);
+gridState.applyState(sortingFilteringStates, [])
 ```
 
-The `Options` object implements the `IGridStateOptions` interface, i.e. for every key, which is the name of a certain feature, there is the boolean value indicating if this feature state will be tracked. `GetState` method will not put the state of these features in the returned value and `SetState` method will not restore state for it.
+```razor
+gridState.ApplyStateFromString(gridStateString, new string[0]);
+gridState.ApplyStateFromString(sortingFilteringStates, new string[0])
+```
 
+<!-- Angular -->
+The `Options` object implements the `IGridStateOptions` interface, i.e. for every key, which is the name of a certain feature, there is the boolean value indicating if this feature state will be tracked. `GetState` method will not put the state of these features in the returned value and `SetState` method will not restore state for them.
+<!-- end: Angular -->
+
+<!-- React, WebComponents -->
+The `Options` object implements the `GridStateOptions` interface, i.e. for every key, which is the name of a certain feature, there is the boolean value indicating if this feature state will be tracked. `GetState`/`GetStateAsString` methods will not put the state of these features in the returned value and `ApplyState`/`ApplyStateFromString` methods will not restore state for them.
+<!-- end: React, WebComponents -->
+
+<!-- Blazor -->
+The `Options` object implements the `GridStateOptions` interface, i.e. for every key, which is the name of a certain feature, there is the boolean value indicating if this feature state will be tracked. `GetStateAsString` methods will not put the state of these features in the returned value and `ApplyStateFromString` methods will not restore state for them.
+<!-- end: Blazor -->
+
+<!-- Angular -->
 ```typescript
-public options =  { cellSelection: false; sorting: false; }
+public options =  { cellSelection: false, sorting: false };
 ```
 
 ```html
 <{ComponentSelector} [igxGridState]="options">
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
+```typescript
+gridState.options = { cellSelection: false, sorting: false };
+```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrGridState options={{ cellSelection: false, sorting: false }}></IgrGridState>
+```
 
 ```razor
-Add options snippet blazor
+gridState.Options = new IgbGridStateOptions
+    {
+        CellSelection = false,
+        Sorting = false
+    };
 ```
 
 The simple to use single-point API's allows to achieve a full state persistence functionality in just a few lines of code. **Copy paste the code from below** - it will save the grid state in the browser `SessionStorage` object every time the user leaves the current page. Whenever the user returns to main page, the grid state will be restored. No more need to configure those complex advanced filtering and sorting expressions every time to get the data you want - do it once and have the code from below do the rest for your users:
 
+<!-- Angular -->
 ```typescript
 @ViewChild(IgxGridStateDirective, { static: true })
 public state!: IgxGridStateDirective;
@@ -150,34 +279,136 @@ public restoreGridState() {
     this.state.setState(state);
 }
 ```
+<!-- end: Angular -->
 
-```razor
-Add blazor snippet for working with the sessionStorage
-```
-
+<!-- WebComponents -->
 ```typescript
-private state: IgcGridStateDirective;
-
 constructor() {
-    this.router.events.pipe(take(1)).subscribe((event: NavigationStart) => {
-        this.saveGridState();
-    });
+    window.addEventListener("load", () => { this.restoreGridState(); });
+    window.addEventListener("beforeunload", () => { this.saveGridState(); });
 }
 
-connectedCallback() {
-    this.restoreGridState();
-}
-
+// Using methods that work with IgcGridStateInfo object.
 public saveGridState() {
-    const state = this.state.getState() as string;
-    window.sessionStorage.setItem('grid1-state', state);
+    const state = this.gridState.getState();
+    window.localStorage.setItem('grid-state', JSON.stringify(state));
 }
 
 public restoreGridState() {
-    const state = window.sessionStorage.getItem('grid1-state');
-    this.state.setState(state);
+    const state = window.localStorage.getItem('grid-state');
+    if (state) {
+        this.gridState.applyState(JSON.parse(state));
+    }
+}
+
+// Or using string alternative methods.
+public saveGridStateString() {
+    const state = this.gridState.getStateAsString();
+    window.localStorage.setItem('grid-state', state);
+}
+
+public restoreGridStateString() {
+    const state = window.localStorage.getItem('grid-state');
+    if (state) {
+        this.gridState.applyStateFromString(state);
+    }
 }
 ```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrGrid rendered={restoreGridState}>
+    <IgrGridState ref={(ref) => { gridState = ref; }}></IgrGridState>
+</IgrGrid>
+```
+
+```tsx
+useEffect(() => {
+    restoreGridState();
+    window.addEventListener('beforeunload', saveGridState);
+    return () => {
+      window.removeEventListener('beforeunload', saveGridState);
+    }
+}, []);
+
+// Using methods that work with IgrGridStateInfo object.
+function saveGridState() {
+    const state = gridState.getState([]);
+    window.localStorage.setItem('grid-state', JSON.stringify(state));
+}
+
+function restoreGridState() {
+    const state = window.localStorage.getItem('grid-state');
+    if (state) {
+        gridState.applyState(JSON.parse(state), []);
+    }
+}
+
+//Or using string alternative methods.
+function saveGridState() {
+    const state = gridState.getStateAsString([]);
+    window.localStorage.setItem('grid-state', state);
+}
+
+function restoreGridState() {
+    const state = window.localStorage.getItem('grid-state');
+    if (state) {
+        gridState.applyStateFromString(state, []);
+    }
+}
+```
+
+```razor
+@using IgniteUI.Blazor.Controls
+@using Newtonsoft.Json
+@implements IDisposable
+
+@inject IJSRuntime JS
+@inject NavigationManager Navigation
+
+<IgbGrid Rendered="OnGridRendered">
+    <IgbGridState @ref="gridState"></IgbGridState>
+    <IgbColumn Field="ContactName" Header="Name" MinWidth="200px" ></IgbColumn>
+    <IgbColumn Field="ContactTitle" Header="Title" MinWidth="200px" Sortable="true" Filterable="true" Groupable="true"></IgbColumn>
+    <IgbColumn Field="CompanyName" Header="Company" MinWidth="200px" Sortable="true" Filterable="true" Groupable="true"></IgbColumn>
+</IgbGrid>
+
+@code {
+    protected override void OnAfterRender(bool firstRender)
+    {
+        Navigation.LocationChanged += OnLocationChanged;
+    }
+
+    void OnLocationChanged(object sender, LocationChangedEventArgs e)
+    {
+        SaveGridState();
+    }
+
+    void IDisposable.Dispose()
+    {
+        // Unsubscribe from the event when our component is disposed
+        Navigation.LocationChanged -= OnLocationChanged;
+    }
+
+    void OnGridRendered()
+    {
+        RestoreGridState();
+    }
+
+    async void SaveGridState() {
+        string state = gridState.getStateAsString(new string[0]);
+        await JS.InvokeVoidAsync("window.localStorage.setItem", "grid-state", state);
+    }
+
+    async void RestoreGridState() {
+        string state = await JS.InvokeAsync<string>("window.localStorage.getItem", "grid-state");
+        if (state) {
+            gridState.ApplyStateFromString(state, new string[0]);
+        }
+    }
+}
+```
+<!-- Angular -->
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
@@ -188,6 +419,7 @@ public restoreGridState() {
 1. Define a template reference variable (in the example below it is `#activeTemplate`) and assign an event handler for the `ColumnInit` event:
 
 <!-- ComponentStart: Grid -->
+
 ```html
 <igx-grid id="grid" #grid igxGridState (columnInit)="onColumnInit($event)">
     <igx-column [field]="'IsActive'" header="IsActive">
@@ -198,24 +430,92 @@ public restoreGridState() {
 </igx-grid>
 ```
 
-```razor
-Add snippet for grid
-```
 
 ```html
 <igc-grid id="grid">
-    <igc-column id="isActive" field="IsActive" header="IsActive">
-    </igc-column>
+    <igc-grid-state id="gridState"></igc-grid-state>
+    <igc-column id="isActive" field="IsActive" header="IsActive"></igc-column>
 </igc-grid>
 ```
+
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-    var isActive = this.isActive = document.getElementById('isActive') as IgcColumnComponent;
+    var isActiveCol = this.isActive = document.getElementById('isActive') as IgcColumnComponent;
+    this.onColumnInit = this.onColumnInit.bind(this);
 
     this._bind = () => {
         grid.data = this.data;
-        grid.columnInit = this.gridColumnInit;
+        grid.addEventListener("columnInit", this.onColumnInit);
+        isActiveCol.bodyTemplate = this.activeTemplate;
+    }
+    this._bind();
+}
+
+public activeTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`<igc-checkbox checked="${ctx.cell.value}"></igc-checkbox>`;
+}
+```
+
+```tsx
+<IgrGrid columnInit={onColumnInit}>
+    <IgrGridState></IgrGridState>
+    <IgrColumn field="IsActive" header="IsActive" bodyTemplate={activeTemplate}></IgrColumn>
+</IgrGrid>
+```
+
+```tsx
+function activeTemplate(ctx: { dataContext: IgrCellTemplateContext }) {
+    return (<IgrCheckbox checked={ctx.dataContext.cell.value}></IgrCheckbox>);
+}
+```
+
+```razor
+<IgbGrid ColumnInit="OnColumnInit">
+    <IgbGridState @ref="gridState"></IgbGridState>
+    <IgbColumn Field="IsActive" Header="IsActive" BodyTemplate="ActiveTemplate">
+    </IgbColumn>
+</IgbGrid>
+
+@code {
+    public static RenderFragment<IgbCellTemplateContext> ActiveTemplate = (context) =>
+    {
+        bool value = Convert.ToBoolean(context.Cell.Value);
+        return @<IgbCheckbox Checked="@value"></IgbCheckbox>;
+    };
+}
+```
+
+<!-- ComponentEnd: Grid  -->
+
+<!-- ComponentStart: TreeGrid -->
+
+```html
+<igx-tree-grid id="grid" #grid igxGridState (columnInit)="onColumnInit($event)">
+    <igx-column [field]="'IsActive'" header="IsActive">
+        <ng-template igxCell #activeTemplate let-column let-val="val">
+            <igx-checkbox [checked]="val"></igx-checkbox>
+        </ng-template>
+    </igx-column>
+</igx-tree-grid>
+```
+
+```html
+<igc-tree-grid id="grid">
+    <igc-grid-state id="gridState"></igc-grid-state>
+    <igc-column id="isActive" field="IsActive" header="IsActive">
+    </igc-column>
+</igc-tree-grid>
+```
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgctreeGridComponent;
+    var isActive = this.isActive = document.getElementById('isActive') as IgcColumnComponent;
+    this.onColumnInit = this.onColumnInit.bind(this);
+
+    this._bind = () => {
+        grid.data = this.data;
+        grid.addEventListener("columnInit", this.onColumnInit);
         isActive.bodyTemplate = this.activeTemplate;
     }
     this._bind();
@@ -226,7 +526,23 @@ public activeTemplate = (ctx: IgcCellTemplateContext) => {
 }
 ```
 
-<!-- ComponentEnd: Grid  -->
+```razor
+<IgbTreeGrid>
+    <IgbGridState @ref="gridState"></IgbGridState>
+    <IgbColumn Field="IsActive" Header="IsActive" BodyTemplate="ActiveTemplate">
+    </IgbColumn>
+</IgbTreeGrid>
+
+@code {
+    public static RenderFragment<IgbCellTemplateContext> ActiveTemplate = (context) =>
+    {
+        bool value = Convert.ToBoolean(context.Cell.Value);
+        return @<IgbCheckbox Checked="@value"></IgbCheckbox>;
+    };
+}
+```
+
+<!-- ComponentEnd: TreeGrid  -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 
@@ -250,14 +566,16 @@ Add snippet for grid
     </igc-column>
 </igc-hierarchical-grid>
 ```
+
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcHierarchicalGridComponent;
     var isActive = this.isActive = document.getElementById('isActive') as IgcColumnComponent;
+    this.onColumnInit = this.onColumnInit.bind(this);
 
     this._bind = () => {
         grid.data = this.data;
-        grid.columnInit = this.gridColumnInit;
+        grid.addEventListener("columnInit", this.onColumnInit);
         isActive.bodyTemplate = this.activeTemplate;
     }
     this._bind();
@@ -270,78 +588,54 @@ public activeTemplate = (ctx: IgcCellTemplateContext) => {
 
 <!-- ComponentEnd: HierarchicalGrid  -->
 
-<!-- ComponentStart: TreeGrid -->
-
-```html
-<igx-tree-grid id="grid" #grid igxGridState (columnInit)="onColumnInit($event)">
-    <igx-column [field]="'IsActive'" header="IsActive">
-        <ng-template igxCell #activeTemplate let-column let-val="val">
-            <igx-checkbox [checked]="val"></igx-checkbox>
-        </ng-template>
-    </igx-column>
-</igx-tree-grid>
-```
-
-```razor
-Add sample
-```
-
-```html
-<igc-tree-grid id="grid">
-    <igc-column id="isActive" field="IsActive" header="IsActive">
-    </igc-column>
-</igc-tree-grid>
-```
-```ts
-constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgctreeGridComponent;
-    var isActive = this.isActive = document.getElementById('isActive') as IgcColumnComponent;
-
-    this._bind = () => {
-        grid.data = this.data;
-        grid.columnInit = this.gridColumnInit;
-        isActive.bodyTemplate = this.activeTemplate;
-    }
-    this._bind();
-}
-
-public activeTemplate = (ctx: IgcCellTemplateContext) => {
-    return html`<igc-checkbox checked="${ctx.cell.value}"></igc-checkbox>`;
-}
-```
-
-<!-- ComponentEnd: TreeGrid  -->
-
-1. Query the template view in the component using @ViewChild or @ViewChildren decorator. In the `ColumnInit` event handler, assign the template to the column `BodyTemplate` property:
-
+2. Query the template view in the component using @ViewChild or @ViewChildren decorator. In the `ColumnInit` event handler, assign the template to the column `BodyTemplate` property:
 
 ```typescript
 @ViewChild('activeTemplate', { static: true }) public activeTemplate: TemplateRef<any>;
 public onColumnInit(column: IgxColumnComponent) {
     if (column.field === 'IsActive') {
         column.bodyTemplate = this.activeTemplate;
-        column.summaries = MySummary;
-        column.filters = IgxNumberFilteringOperand.instance();
+    }
+}
+```
+
+<!-- Blazor, React, WebComponents -->
+2. In the `ColumnInit` event handler, assign the template to the column `BodyTemplate` property:
+<!-- end: Blazor, React, WebComponents -->
+
+```typescript
+public onColumnInit(event: any) {
+    const column = event.detail as IgcColumnComponent;
+    if (column.field === 'IsActive') {
+        column.bodyTemplate = this.activeTemplate;
+    }
+}
+```
+
+```tsx
+function onColumnInit(s: IgrGridComponent, e: IgrColumnComponentEventArgs) {
+    const column: IgrColumn = e.detail;
+    if (column.field === 'IsActive') {
+        column.bodyTemplate = this.activeTemplate;
     }
 }
 ```
 
 ```razor
-Add blazor handler for bodyTemplate
-```
-
-```typescript
-public onColumnInit(column: IgcColumnComponent) {
-    if (column.field === 'IsActive') {
-        column.bodyTemplate = this.activeTemplate;
-        column.summaries = MySummary;
-        column.filters = IgcNumberFilteringOperand.instance();
+// In Javascript
+public void OnColumnInit(IgbColumnComponentEventArgs args)
+{
+    IgbColumn column = args.Detail;
+    if (column.Field == "IsActive")
+    {
+        column.BodyTemplate = ActiveTemplate;
     }
 }
 ```
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
+<!-- end: Angular -->
 
 <!-- ComponentStart: PivotGrid -->
 
@@ -450,15 +744,15 @@ setState snippet
 
 <!-- NOTE this sample is differed -->
 
-`sample="/{ComponentSample}/data-persistence-state", height="763", alt="{Platform} {ComponentTitle} data persistence state"`
-
-
+`sample="/{ComponentSample}/state-persistence-main", height="763", alt="{Platform} {ComponentTitle} State Persistence "`
 
 <!-- ComponentStart: PivotGrid -->
 
 ## Restoring Pivot Strategies
 
-`GridState` will not persist neither remote pivot operations nor custom dimension strategies (For further information see [Pivot Grid Remote Operations](remote-operations.md) sample) by default (see [limitations](state-persistence.md#limitations)). Restoring any of these can be achieved with code on application level. The `GridState` exposes an event called `StateParsed` which can be used to additionally modify the grid state before it gets applied. Let's show how to do this:
+`GridState` will not persist neither remote pivot operations nor custom dimension strategies.
+ <!-- (For further information see [Pivot Grid Remote Operations](./remote-operations.md) sample) by default (see [limitations](state-persistence.md#limitations)). -->
+ Restoring any of these can be achieved with code on application level. The `GridState` exposes an event called `StateParsed` which can be used to additionally modify the grid state before it gets applied. Let's show how to do this:
 
 > `StateParsed` is only emitted when we are using `SetState` with string argument.
 
@@ -510,8 +804,6 @@ Add snippet for blazor for restore state
 
 `sample="/{ComponentSample}/data-persistence-noop", height="580", alt="{Platform} {ComponentTitle} data persistence noop"`
 
-
-
 <!-- ComponentEnd: PivotGrid -->
 
 ## Limitations
@@ -529,10 +821,15 @@ state.setState(gridState.columnSelection);
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
+<!-- Angular -->
 * `GetState` method uses JSON.stringify() method to convert the original objects to a JSON string. JSON.stringify() does not support Functions, thats why the `GridState` directive will ignore the columns `Formatter`, `Filters`, `Summaries`, `SortStrategy`, `CellClasses`, `CellStyles`, `HeaderTemplate` and `BodyTemplate` properties.
+<!-- end: Angular -->
+
+<!-- Blazor, React, WebComponents -->
+* `GetStateAsString` method uses JSON.stringify() method to convert the original objects to a JSON string. JSON.stringify() does not support Functions, thats why the `GridState` component will ignore the columns `Formatter`, `Filters`, `Summaries`, `SortStrategy`, `CellClasses`, `CellStyles`, `HeaderTemplate` and `BodyTemplate` properties.
+<!-- end: Blazor, React, WebComponents -->
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
-
 
 <!-- ComponentStart: PivotGrid -->
 
@@ -559,7 +856,7 @@ state.setState(gridState.columnSelection);
 <!-- ComponentStart: PivotGrid -->
 
 
-* [Pivot Grid Features](features.md)
+<!-- * [Pivot Grid Features](features.md) -->
 <!-- * [Pivot Grid Remote Operations](remote-operations.md) -->
 
 <!-- ComponentEnd: PivotGrid -->
