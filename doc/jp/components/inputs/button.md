@@ -14,8 +14,6 @@ _language: ja
 
 `sample="/inputs/button/overview", height="100", alt="{Platform} Button の例"`
 
-
-
 ## 使用方法
 
 <!-- WebComponents -->
@@ -33,6 +31,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcButtonComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -71,12 +72,12 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 
 `Button` の使用を開始する最も簡単な方法は次のとおりです:
 
-```tsx
-<IgrButton />
-```
-
 ```html
 <igc-button>Click me</igc-button>
+```
+
+```tsx
+<IgrButton />
 ```
 
 ```razor
@@ -118,7 +119,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 
 ### Contained ボタン
 
-`variant` を使用して、コンポーネント テンプレートにシンプルなフラット ボタンを追加します。バリアントを設定しない場合、デフォルトではフラットに設定されることに注意してください。
+`variant` を使用して、コンポーネント テンプレートにシンプルな contained ボタンを追加します。バリアントを設定しない場合、デフォルトでは contained に設定されることに注意してください。
 
 ```tsx
 <IgrButton variant="contained"><span>Contained</span></IgrButton>
@@ -190,7 +191,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 
 ## ボタンのサイズ設定
 
-`size` プロパティを使用して、ユーザーが `button` のサイズを選択できるようにすることができます。これを行うには、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびにボタンの size プロパティを変更します。
+ユーザーは、CSS 変数 `--ig-size` を使用して `button` コンポーネントのサイズを変更できます。次の例では、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびにボタンの size プロパティを変更します。
 
 ```ts
 import { defineComponents, IgcButtonComponent, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
@@ -213,11 +214,11 @@ this.containedButton = document.getElementById('contained-btn') as IgcButtonComp
 this.fabButton = document.getElementById('fab-btn') as IgcButtonComponent;
 
 this.radioGroup.addEventListener('click', (radio: any) => {
-    this.outlinedButton.size = radio.target.value;
-    this.flatButton.size = radio.target.value;
-    this.containedButton.size = radio.target.value;
-    this.fabButton.size = radio.target.value;
-});
+    this.outlinedButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
+    this.flatButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
+    this.containedButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
+    this.fabButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
+}); 
 ```
 
 ```tsx

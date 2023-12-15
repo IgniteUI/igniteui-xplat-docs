@@ -1,5 +1,5 @@
 ---
-title: Column Reordering & Moving in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Column Reordering & Moving - {ProductName}
 _description: Set custom column order & enable columns reordering via drag/drop mouse or touch gestures, or by using the {Platform} Column Moving API. Try {ProductName}!
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {ComponentTitle} Column Reordering & Moving
 
-The `{ComponentName}` component in {ProductName} provides the **Column Moving** feature to allow columns reordering via standard drag/drop mouse or touch gestures, or by using the Column Moving API. Column moving works both with pinned and unpinned columns and with [Multi-Column Headers](multi-column-headers.md). Moving a column into the pinned area pins the column and vice versa, moving a column outside of the pinned area unpins the column.
+The {Platform} {ComponentTitle} Column Moving feature in {ProductName} allows quick and easy column reordering. This can be done through the Column Moving API or by dragging and dropping the headers to another position via mouse or touch gestures. In the {Platform} {ComponentTitle}, you can enable Column Moving for pinned and unpinned columns and for [Multi-Column Headers](multi-column-headers.md) as well.
 
 > [!Note]
 > Reordering between columns and column groups is allowed only when they are at the same level in the hierarchy and both are in the same group. Moving is allowed between columns/column-groups, if they are top level columns.
@@ -31,17 +31,27 @@ This allows to attach handlers for any event emitted by the element, otherwise t
 ```
 
 ```razor
-    public RenderFragment<IgbColumnTemplateContext> headerTemplate = (context) =>
+    public RenderFragment<IgbColumnTemplateContext> headerTemplate => (context) =>
     {
-        return @<IgbIcon Collection="fas" IconName="fa-thumbtack" draggable="false" onclick="onClick()"></IgbIcon>;
+        return @<IgbIcon Collection="fas" IconName="fa-thumbtack" draggable="false" @onclick="() => onClick()"></IgbIcon>;
     };
 ```
 
 ```ts
 public headerTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <igc-icon draggable="false" click="${this.onClick()}"></igc-icon>
+        <igc-icon draggable="false" @click="${() => this.onClick()}"></igc-icon>
     `;
+}
+```
+
+```tsx
+function headerTemplate(ctx: IgrCellTemplateContext) {
+    return (
+    <>
+       <IgrIcon draggable="false" onClick={onClick}></IgrIcon>
+    </>
+    );
 }
 ```
 
@@ -70,6 +80,12 @@ public headerTemplate = (ctx: IgcCellTemplateContext) => {
 <{ComponentSelector} moving="true"></{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} moving="true"></{ComponentSelector}>
+```
+<!-- end: React -->
 
 ## API
 
@@ -132,20 +148,18 @@ You can subscribe to the `ColumnMovingEnd` event of the `{ComponentName}` to imp
 <!-- WebComponents -->
 ```html
 <{ComponentSelector} id="dataGrid" auto-generate="false" moving="true">
-    <igc-column field="Category"></igx-column>
-    <igc-column field="Change On Year(%)" data-type="Number" ></igx-column>
+    <igc-column field="Category"></igc-column>
+    <igc-column field="Change On Year(%)" data-type="Number" ></igc-column>
 </{ComponentSelector}>
 ```
+
 ```typescript
 constructor() {
-    var dataGrid = this.dataGrid = document.getElementById('dataGrid') as IgcGridComponent;
+    var dataGrid = this.dataGrid = document.getElementById('dataGrid') as {ComponentName}Component;
     dataGrid.data = this.data;
     dataGrid.addEventListener("columnMovingEnd", this.onColumnMovingEnd);
-
 }
 ```
-<!-- end: WebComponents -->
-
 ```typescript
 public onColumnMovingEnd(event) {
     if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {
@@ -153,7 +167,20 @@ public onColumnMovingEnd(event) {
     }
 }
 ```
+<!-- end: WebComponents -->
 
+```tsx
+function onColumnMovingEnd(grid: IgrGridBaseDirective, event: IgrColumnMovingEventArgs) {
+   if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {
+        event.detail.cancel = true;
+    }
+}
+
+<{ComponentSelector} autoGenerate="false" moving="true" data={data} columnMovingEnd={onColumnMovingEnd}>
+    <IgrColumn field="Category"></IgrColumn>
+    <IgrColumn field="Change On Year(%)" dataType="Number" ></IgrColumn>
+</{ComponentSelector}>
+```
 ```razor
     <{ComponentSelector} ShowGroupArea="true" @ref='Grid' Width="100%" Height="100%"
              AllowFiltering=true
@@ -296,7 +323,7 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 ## Styling
 
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
@@ -304,27 +331,31 @@ In addition to the predefined themes, the grid could be further customized by se
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
 ```html
-<igc-grid class="grid"></igc-grid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 Then set the related CSS properties to this class:
 
 ```css
 .grid {
-    --igx-grid-ghost-header-text-color: #f4d45c;
-    --igx-grid-ghost-header-background: #ad9d9d;
-    --igx-grid-ghost-header-icon-color: #f4d45c;
+    --ig-grid-ghost-header-text-color: #f4d45c;
+    --ig-grid-ghost-header-background: #ad9d9d;
+    --ig-grid-ghost-header-icon-color: #f4d45c;
 }
 ```
 ### Demo
 
 `sample="/{ComponentSample}/column-moving-styles", height="650", alt="{Platform} {ComponentTitle} Grid Moving Styled Example"`
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 ## API References
 

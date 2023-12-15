@@ -11,6 +11,30 @@ mentionedTypes: ['XamBulletGraph']
 
 このトピックでは、Ignite UI for React を使用して React アプリケーションを作成するための手順を説明します。
 
+## 前提条件
+
+1. NodeJS をインストールします。
+2. Visual Studio Code をインストールします。
+
+<div>
+    <div style="display:inline-block;width:45%;text-align:center;">
+      <img src="../images/general/nodejs.svg"
+           style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
+      <a target="_blank" href="https://nodejs.org/en/download/" class="no-external-icon"
+         style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 15px 5px 15px;">
+        DOWNLOAD NODE
+      </a>
+    </div>
+    <div style="display:inline-block;width:45%;text-align:center;">
+      <img src="../images/general/vs-code.svg"
+           style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
+      <a target="_blank" href="https://code.visualstudio.com/download" class="no-external-icon"
+         style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 15px 5px 15px;">
+        DOWNLOAD VS CODE
+      </a>
+    </div>
+</div>
+
 ## 新しい React プロジェクトの作成
 
 前提条件のインストール後、新しい React アプリケーションを作成できます。
@@ -26,7 +50,11 @@ npx create-react-app my-app-name --typescript
 yarn create react-app my-app-name --typescript
 ```
 
-以上のコマンドについての詳細は<a href="https://facebook.github.io/create-react-app/docs/adding-typescript" target="_blank">こちら</a>を参照してください。
+アプローチに応じて、`npx` または `yarn` が必要になります。以上のコマンドについての詳細は<a href="https://facebook.github.io/create-react-app/docs/adding-typescript" target="_blank">こちら</a>を参照してください。
+
+```cmd
+cd my-app-name
+```
 
 <!-- end: React -->
 
@@ -126,6 +154,12 @@ defineAllComponents();
 > [!Note]
 > すべてのコンポーネントをインポートすると、アプリケーションのバンドル サイズが大きくなります。そのため、実際に使用しているコンポーネントのみをインポートすることをお勧めします。
 
+最後の手順は、コンポーネントが適切にスタイル設定されるように、コンポーネントに必要な CSS をインポートすることです。
+
+```ts
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+```
+
 コンポーネントをインポートしたら、html で使用できます。
 
 ```html
@@ -151,7 +185,7 @@ cd wc-html
 npm init -y
 ```
 
-4 - **webpack** バンドラー および **webpack cli** を developer dependency としてインストールします。
+4 - **webpack** バンドラーおよび **webpack cli** を developer dependency としてインストールします。
 ```cmd
 npm install webpack webpack-cli --save-dev
 ```
@@ -227,7 +261,7 @@ npm install --save {PackageMaps}
 npm install lit-html
 ```
 
-2 - Geographic Map モジュールと**ModuleManager** を **index.js** ファイルにインポートします。
+2 - Geographic Map モジュールと **ModuleManager** を **index.js** ファイルにインポートします。
 
 ```ts
 import { IgcGeographicMapModule } from 'igniteui-webcomponents-maps';
@@ -289,13 +323,13 @@ npm run build
 <!-- end: WebComponents -->
 
 <!-- Angular, React -->
-# {ProductName} を使用した作業の開始
 
 ## 既存アプリの更新
 
 既存の {Platform} CLI プロジェクト (以前のもの) で {ProductName} を使用する場合は、以下のコマンドを実行します。
 
 ```cmd
+npm install --save {PackageCommon}
 npm install --save {PackageCharts} {PackageCore}
 npm install --save {PackageExcel} {PackageCore}
 npm install --save {PackageGauges} {PackageCore}
@@ -330,8 +364,7 @@ builder.Services.AddIgniteUIBlazor(
 ```
 
 ```ts
-import { IgrGeographicMapModule } from 'igniteui-react-maps';
-import { IgrGeographicMap } from 'igniteui-react-maps';
+import { IgrGeographicMapModule, IgrGeographicMap } from 'igniteui-react-maps';
 import { IgrDataChartInteractivityModule } from 'igniteui-react-charts';
 
 IgrGeographicMapModule.register();
@@ -356,15 +389,15 @@ ModuleManager.register(
 
 ```tsx
 // App.txs
-render() {
-    return (
-        <div style={{height: "100%", width: "100%" }}>
-            <IgrGeographicMap
-            width="800px"
-            height="500px"
-            zoomable="true" />
-        </div>
-    );
+function App() {
+  return (
+    <div style={{ height: "100%", width: "100%" }}>
+      <IgrGeographicMap
+        width="800px"
+        height="500px"
+        zoomable="true" />
+    </div>
+  );
 }
 ```
 
@@ -423,7 +456,7 @@ NuGet を使用した Ignite UI for Blazor のインストールの詳細につ�
 
 ## Ignite UI for Blazor の登録
 
-### .NET 6 アプリケーション
+### .NET 6 以降のアプリケーション
 
 1 - **Program.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** 関数を呼び出して Ignite UI for Blazor サービスを登録します。
 
@@ -451,6 +484,13 @@ var app = builder.Build();
 <head>
     <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 </head>
+```
+
+4 - スクリプト参照を **Pages/_Host.cshtml** ファイルに追加します。
+
+```razor
+<script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
+<script src="_framework/blazor.server.js"></script>
 ```
 
 ### .NET 5 アプリケーション

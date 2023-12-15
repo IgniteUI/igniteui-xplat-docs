@@ -13,7 +13,7 @@ _language: ja
 ## {Platform} Excel から貼り付けの例
 
 このサンプルでは、Excel から `Grid` の貼り付けを実装する方法を紹介します。
-サンプルは、Excel スプレッドシートを開いて行をコピーし、キーボード (Ctrl + V、Shift + Insert、Command + V) を使用してグリッドに貼り付けます。
+サンプルは、Excel スプレッドシートを開いて行をコピーし、キーボード (<kbd>Ctrl</kbd> + <kbd>V</kbd>、<kbd>Shift</kbd> + <kbd>Insert</kbd>、<kbd>Command</kbd> + <kbd>V</kbd>) を使用してグリッドに貼り付けます。
 
 上部に2 つのオプションとドロップダウン ボタンがあります。
 <ol>

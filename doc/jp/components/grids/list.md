@@ -75,6 +75,7 @@ import { defineComponents, IgcListComponent } from 'igniteui-webcomponents';
 defineComponents(IgcListComponent);
 ```
 
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 ### リスト項目の追加
 
@@ -344,13 +345,13 @@ defineComponents(IgcListComponent);
 
 `end` スロットは、switch、button、checkbox などで表される、ある種のアクションまたはメタデータを持つリスト項目に使用することを目的としています。`Button` コンポーネントを使用します。
 
-また、ユーザーがその `size` プロパティを使用してリストのサイズを選択できるようにします。すべてのサイズ値を表示するために、いくつかのラジオ ボタンを追加します。このようにして、選択されるたびに、リストの size プロパティを変更します。
+また、ユーザーが `--ig-size` CSS 変数を使用してリストのサイズを変更できるようにしましょう。すべてのサイズ値を表示するために、いくつかのラジオ ボタンを追加します。このようにして、選択されるたびに、リストのサイズを変更します。
 
 ```html
 <igc-radio-group id="radio-group" alignment="horizontal">
     <igc-radio name="size" value="small" label-position="after">Small</igc-radio>
     <igc-radio name="size" value="medium" label-position="after">Medium</igc-radio>
-    <igc-radio name="size" value="large" label-position="after" checked="true">Large</igc-radio>
+    <igc-radio name="size" value="large" label-position="after" checked>Large</igc-radio>
 </igc-radio-group>
 ```
 
@@ -359,7 +360,7 @@ this.list = document.getElementById('list') as IgcListComponent;
 this.radioGroup = document.getElementById('radio-group') as IgcRadioGroupComponent;
 
 this.radioGroup.addEventListener('click', (radio: any) => {
-    this.list.size = radio.target.value;
+    this.list.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
 });
 ```
 

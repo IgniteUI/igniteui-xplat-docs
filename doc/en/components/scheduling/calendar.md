@@ -19,8 +19,6 @@ The following {Platform} `Calendar` component example shows a basic calendar wit
 
 `sample="/scheduling/calendar/overview", height="480", alt="{Platform} Calendar Example"`
 
-
-
 ## How To Create a Calendar in {Platform} with {ProductNameShort}
 
 <!-- WebComponents -->
@@ -76,6 +74,8 @@ import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcCalendarComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 The simplest way to start using the {ProductName} `Calendar` is as follows:
 
@@ -321,7 +321,7 @@ The following sample demonstrates the multiple months configuration:
 
 ### Size
 
-You could control the size and spacing of the Calendar inner elements by changing its `Size` property. The default `Size` value is `large`.
+You could control the size and spacing of the calendar inner elements using the `--ig-size` CSS variable. The default size of the component is large.
 
 `sample="/scheduling/calendar/size", height="520", alt="{Platform} Calendar Size Example"`
 

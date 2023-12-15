@@ -33,6 +33,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcIconButtonComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -70,12 +73,12 @@ You will also need to link an additional CSS file to apply the styling to the `I
 <!-- end: Blazor -->
 The simplest way to start using the `IconButton` is as follows:
 
-```tsx
-<IgrIconButton name="thumb-up" collection="material"></IgrIconButton>
-```
-
 ```html
 <igc-icon-button name="thumb-up" collection="material"></igc-icon-button>
+```
+
+```tsx
+<IgrIconButton name="thumb-up" collection="material"></IgrIconButton>
 ```
 
 ```razor
@@ -105,7 +108,7 @@ Similar to the regular button components, the icon button supports several varia
 
 ### Size
 
-The size of the button can be changed by setting the `size` attribute to any of the three supported sizes - `small`, `medium`, `large`(default).
+The size of the button can be changed by utilizing the `--ig-size` CSS variable to any of the three supported sizes: `--ig-size-small`, `--ig-size-medium`, `--ig-size-large`(default).
 
 `sample="/inputs/icon-button/size", height="100", alt="{Platform} Icon Button Example"`
 
@@ -114,8 +117,10 @@ The size of the button can be changed by setting the `size` attribute to any of 
 <IgrIconButton name="thumb-up" size="medium"></IgrIconButton>
 ```
 
-```html
-<igc-icon-button name="thumb-up" size="medium"></igc-icon-button>
+```css
+igc-icon-button {
+    --ig-size: var(--ig-size-medium);
+}
 ```
 
 ```razor

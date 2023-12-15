@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Column Pinning
 
-Column Pinning in {ProductName} allows the end users to lock column in a particular column order, this will allow them to see it while horizontally scrolling the `{ComponentName}`. The {Platform} {ComponentTitle} has a built-in column pinning UI, which can be used through the `{ComponentName}`'s toolbar to change the pin state of the columns. In addition, you can define a custom UI and change the pin state of the columns via the Column Pinning feature.
+With {Platform}, developers benefit from the Column Pinning feature that lets them lock specific columns in a desired order, ensuring visibility all the time even when users scroll horizontally through the {Platform} {ComponentTitle}. There’s an integrated UI for Column Pinning, accessible via the {Platform} {ComponentTitle} toolbar. Additionally, developers have the flexibility to build a custom user interface and change the pin state of the columns.
 
 ## {Platform} {ComponentTitle} Column Pinning Example
 
@@ -58,6 +58,16 @@ constructor() {
     grid.data = this.data;
 }
 ```
+<!-- React -->
+```tsx
+<{ComponentName} data={nwindData} autoGenerate="false">
+    <IgrColumn field="Name" pinned="true"></IgrColumn>
+    <IgrColumn field="AthleteNumber"></IgrColumn>
+    <IgrColumn field="TrackProgress"></IgrColumn>
+</{ComponentName}>
+```
+<!-- end: React -->
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -97,10 +107,21 @@ constructor() {
 You may also use the `{ComponentName}`'s `PinColumn` or `UnpinColumn` methods of the `{ComponentName}` to pin or unpin columns by their field name:
 
 <!-- ComponentStart: Grid -->
+
+<!-- Angular, WebComponents -->
 ```typescript
 this.grid.pinColumn('AthleteNumber');
 this.grid.unpinColumn('Name');
 ```
+<!-- end: Angular, WebComponents -->
+
+
+<!-- React -->
+```typescript
+gridRef.current.pinColumn('AthleteNumber');
+gridRef.current.unpinColumn('Name');
+```
+<!-- end: React -->
 
 ```razor
 @code {
@@ -130,7 +151,7 @@ Both methods return a boolean value indicating whether their respective operatio
 
 A column is pinned to the right of the rightmost pinned column. Changing the order of the pinned columns can be done by subscribing to the `ColumnPin` event and changing the `InsertAtIndex` property of the event arguments to the desired position index.
 
-<!-- end: Angular, React, WebComponents -->
+<!-- end: Angular, React, WebComponents, React -->
 
 <!-- Blazor -->
 
@@ -209,6 +230,17 @@ var grid = (this.grid = document.getElementById('dataGrid') as any) as IgcGridCo
 grid.pinning = { columns: ColumnPinningPosition.End };
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```typescript
+const pinningConfig = new IgrPinningConfig();
+pinningConfig.columns = ColumnPinningPosition.End;
+```
+
+```tsx
+<IgrGrid data={nwindData} autoGenerate="true" pinning={pinningConfig}></IgrGrid>
+```
+<!-- end: React -->
 
 ```razor
 <{ComponentSelector} Data=data AutoGenerate=true Pinning="pinningConfig"></IgbGrid>
@@ -295,7 +327,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
         <div class="title-inner">
             <span style="float:left">${ctx.cell.column.header}</span>
-            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" click="${toggleColumn(ctx.cell.column)}"></igx-icon>
+            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" @click="${() => toggleColumn(ctx.cell.column)}"></igx-icon>
         </div>
     `;
 }
@@ -326,10 +358,46 @@ igRegisterScript("WebGridPinHeaderTemplate", (ctx) => {
     }
     return html`<div>
     <span style="float:left">${ctx.column.field}</span>
-    <span style="float:right" onpointerdown='toggleColumnPin("${ctx.column.field}")'>📌</span>
+    <span style="float:right" @pointerdown="${() => toggleColumnPin(ctx.column.field)}">📌</span>
 </div>`;
 }, false);
 ```
+
+<!-- React -->
+```tsx
+<IgrGrid autoGenerate="false" data={CustomersData} name="grid" ref={grid}>
+    <IgrColumn field="ID" hidden="true"></IgrColumn>
+
+    <IgrColumn field="CompanyName" header="Company" width="300px" 
+    name="column1" headerTemplate={toggleColumnPin}></IgrColumn>
+
+    <IgrColumn field="ContactName" header="Name" width="200px" pinned="true"
+    name="column2" headerTemplate={toggleColumnPin}> </IgrColumn>
+
+    <IgrColumn field="ContactTitle" header="Title" width="200px" pinned="true"
+    name="column3" headerTemplate={toggleColumnPin}> </IgrColumn>
+</IgrGrid>
+```
+
+```typescript
+function toggleColumnPin({ dataContext: ctx }: { dataContext: IgrColumnTemplateContext }) {
+  const togglePin = () => {
+    const col = ctx.column;
+    col.pinned = !col.pinned;
+  }
+  
+  const col = ctx.column;
+
+  return(
+    <div>
+      <span style={{ float: 'left' }}>{col.header}</span>
+      <span style={{ float: 'right' }} onClick={() => togglePin()}>📌</span>
+    </div>
+  );
+}
+```
+<!-- end: React -->
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -406,7 +474,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
         <div class="title-inner">
             <span style="float:left">${ctx.cell.column.header}</span>
-            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" click="${toggleColumn(ctx.cell.column)}"></igx-icon>
+            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" @click="${() => toggleColumn(ctx.cell.column)}"></igx-icon>
         </div>
     `;
 }
@@ -485,7 +553,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
         <div class="title-inner">
             <span style="float:left">${ctx.cell.column.header}</span>
-            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" click="${toggleColumn(ctx.cell.column)}"></igx-icon>
+            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" @click="${() => toggleColumn(ctx.cell.column)}"></igx-icon>
         </div>
     `;
 }
@@ -627,7 +695,7 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 <!-- ComponentEnd: Grid -->
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 ## Styling
 
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
@@ -641,6 +709,10 @@ In case you would like to change some of the colors, you need to set an `ID` for
 
 ```razor
 <IgbGrid Id="grid"></IgbGrid>
+```
+
+```tsx
+<IgrGrid id="grid"></IgrGrid>
 ```
 
 <!-- ComponentEnd: Grid -->
@@ -712,7 +784,7 @@ Then set the related CSS properties to this class:
 
 ### Demo
 
-`sample="/{GridSample}/column-pinning-styles", height="510", alt="{Platform} {ComponentTitle} Pinning Styling Example"`
+`sample="/{ComponentSample}/column-pinning-styles", height="510", alt="{Platform} {ComponentTitle} Pinning Styling Example"`
 
 <!-- end: WebComponents, Blazor -->
 

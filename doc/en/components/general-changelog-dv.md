@@ -2,7 +2,7 @@
 title: {Platform} What's New | {ProductName} | Infragistics
 _description: Learn about new features in the {ProductName}.
 _keywords: Changelog, What's New,  {ProductName}, Infragistics
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend"]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "Toolbar", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend"]
 namespace: Infragistics.Controls.Charts
 ---
 # {ProductName} Changelog
@@ -13,9 +13,19 @@ All notable changes for each version of {ProductName} are documented on this pag
 > This topic discusses changes only for components that are not included in the {PackageAngularComponents} package.
 > For changes specific to {PackageAngularComponents} components, please see CHANGELOG.MD at [Ignite UI Angular Changes](https://github.com/IgniteUI/igniteui-angular/blob/master/)
 
+## **{PackageVerChanges-23-2}**
+
+### {PackageGrids} (Toolbar - Beta)
+
+* A new tool has been added, as a default tool, to save the chart to an image via the clipboard.
+* Vertical orientation has been added via the toolbar's `Orientation` property. By default the toolbar is horizontal, now the toolbar can be shown in vertical orientation where the tools will popup to the left/right respectfully. 
+* Custom SVG icons support was added via the toolbar's `renderImageFromText` method, further enhancing custom tool creation.
+
+## **{PackageVerChanges-23-1}**
+
 ### New Components
 
-* [Toolbar](menus/toolbar.md) - Beta
+* [Toolbar](menus/toolbar.md) - Beta. This component is a companion container for UI operations to be used primarily with our charting components. The toolbar will dynamically update with a preset of properties and tool items when linked to our `XamDataChart` or `CategoryChart` components. You'll be able to create custom tools for your project allowing end users to provide changes, offering an endless amount of customization.
 
 ### {PackageCharts} Charts
 
