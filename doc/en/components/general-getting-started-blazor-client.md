@@ -33,7 +33,7 @@ For more information on installing Ignite UI for Blazor using NuGet, read the [I
 
 ## Register Ignite UI for Blazor
 
-### .NET 6 Applications
+### .NET 6 and Later Applications
 
 1 - Open the **Program.cs** file and register the Ignite UI for Blazor Service by calling **builder.Services.AddIgniteUIBlazor** function:
 
@@ -59,6 +59,13 @@ await builder.Build().RunAsync();
 </head>
 ```
 
+4 - Add Script Reference to the **wwwroot/index.html** file:
+
+```razor
+<script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
+<script src="_framework/blazor.webassembly.js"></script>
+```
+
 ### .NET 5 Applications
 
 1 - Open the **Program.cs** file and register the Ignite UI for Blazor Service by calling **builder.Services.AddIgniteUIBlazor** function:
@@ -72,26 +79,7 @@ public static async Task Main(string[] args)
 }
 ```
 
-2 - Add the **IgniteUI.Blazor.Controls** namespace in the **_Imports.razor** file:
-
-```razor
-@using IgniteUI.Blazor.Controls
-```
-
-3 - Add the Style Sheet in the **<head\>** element of the **wwwroot/index.html** file:
-
-```razor
-<head>
-    <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
-</head>
-```
-
-4 - Add Script Reference to the **wwwroot/index.html** file:
-
-```razor
-<script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
-<script src="_framework/blazor.webassembly.js"></script>
-```
+2. Continue with step 2 in the [.NET 6 and Later Applications](general-getting-started-blazor-client.md#net-6-and-later-applications) section
 
 ## Add Ignite UI for Blazor Component
 

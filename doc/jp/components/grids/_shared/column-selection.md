@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} 列選択 - インフラジスティックス
+title: 	{Platform} {ComponentTitle} 列の選択 - {ProductName}
 _description: {ProductName} {ComponentTitle} で列選択を構成する方法を説明します。これにより、グリッドのインタラクションがより簡単かつ高速になります。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス, 列選択
 mentionedTypes: [{ComponentApiMembers}]
@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 列選択の概要
 
-`{ComponentName}` の列選択機能は、シングルク リックで列全体を選択する簡単な方法を提供します。特定の列の重要性を強調するために、ヘッダー セルとその下のすべてにフォーカスします。この機能は豊富な API を備えて選択状態の操作、選択した部分からのデータ抽出、データ分析操作、可視化が可能になります。
+{Platform} {ComponentTitle} の {ProductName} 列選択機能は、シングルクリックで列全体を選択して強調表示する、簡略化された Excel のような方法を提供します。これは `columnSelection` 入力を通じて有効にできます。豊富な API のおかげで、この機能により、選択状態の操作、選択された部分からのデータ抽出、データ分析操作、視覚化が簡単に行えます。
 
 ## {Platform} {ComponentTitle} 列選択の例
 
@@ -87,104 +87,45 @@ _language: ja
 
 API 操作の詳細については、[API リファレンス](#api-リファレンス) セクションを参照してください。
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 ## スタイル設定
 
 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。一部の色を変更したい場合は、最初にグリッドの `class` を設定する必要があります。
 
-<!-- ComponentStart: Grid -->
-
 ```html
-<igc-grid class="grid"></igc-grid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid Class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
-
-<!-- ComponentEnd: Grid -->
-
-<!-- ComponentStart: TreeGrid -->
-
-```html
-<igc-tree-grid class="treeGrid"></igc-tree-grid>
-```
-
-```razor
-<IgbTreeGrid Class="treeGrid"></IgbTreeGrid>
-```
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-```html
-<igc-hierarchical-grid class="hierarchicalGrid"></igc-hierarchical-grid>
-```
-
-```razor
-<IgbHierarchicalGrid Class="hierarchicalGrid"></IgbHierarchicalGrid>
-```
-
-<!-- ComponentEnd: HierarchicalGrid -->
 
 次に、そのクラスに関連する CSS プロパティを設定します。
 
-<!-- ComponentStart: Grid -->
 
 ```css
 .grid {
-    --igx-grid-row-selected-background: #0062A3;
-    --igx-grid-row-selected-text-color: #ecaa53;
-    --igx-grid-row-selected-hover-background: #0062A3;
-    --igx-grid-header-selected-text-color: #ecaa53;
-    --igx-grid-header-selected-background: #0062A3;
-    --igx-grid-row-selected-hover-text-color: #ecaa53;
-    --igx-grid-row-selected-hover-background: #0062A3;
+    --ig-grid-row-selected-background: #0062A3;
+    --ig-grid-row-selected-text-color: #ecaa53;
+    --ig-grid-row-selected-hover-background: #0062A3;
+    --ig-grid-header-selected-text-color: #ecaa53;
+    --ig-grid-header-selected-background: #0062A3;
+    --ig-grid-row-selected-hover-text-color: #ecaa53;
+    --ig-grid-row-selected-hover-background: #0062A3;
 }
 ```
-
-<!-- ComponentEnd: Grid -->
-
-<!-- ComponentStart: TreeGrid -->
-
-```css
-.treeGrid {
-    --igx-grid-row-selected-background: #0062A3;
-    --igx-grid-row-selected-text-color: #ecaa53;
-    --igx-grid-row-selected-hover-background: #0062A3;
-    --igx-grid-header-selected-text-color: #ecaa53;
-    --igx-grid-header-selected-background: #0062A3;
-    --igx-grid-row-selected-hover-text-color: #ecaa53;
-    --igx-grid-row-selected-hover-background: #0062A3;
-}
-```
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-```css
-.hierarchicalGrid {
-    --igx-grid-row-selected-background: #0062A3;
-    --igx-grid-row-selected-text-color: #ecaa53;
-    --igx-grid-row-selected-hover-background: #0062A3;
-    --igx-grid-header-selected-text-color: #ecaa53;
-    --igx-grid-header-selected-background: #0062A3;
-    --igx-grid-row-selected-hover-text-color: #ecaa53;
-    --igx-grid-row-selected-hover-background: #0062A3;
-}
-```
-
-<!-- ComponentEnd: HierarchicalGrid -->
 
 ### デモ
 
 `sample="/{ComponentSample}/column-selection-styles", height="570", alt="{Platform} {ComponentTitle} 列選択スタイル"`
 
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- Angular -->
 

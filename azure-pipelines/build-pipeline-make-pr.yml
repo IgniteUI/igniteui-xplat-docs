@@ -1,0 +1,95 @@
+trigger: none
+
+# This pipeline is meant to build specific branches for deployment. It's not meant to be a part of PR validation.
+pr: none
+
+schedules:
+- cron: "0 0 * * 3"
+  displayName: 'Weekly build with automated PR creation'
+  branches:
+    include:
+    - master
+    - vnext
+  always: true
+
+
+parameters:
+- name: isVerbose
+  displayName: 'Get verbose output from steps - where configurable'
+  type: boolean
+  default: false
+
+name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
+
+variables:
+  - name: buildType
+    ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
+      value: 'production'
+    ${{ else }}:  
+      value: 'staging'
+  # Since we are using more than 1 git repo, we need to explicitly specify that we want to compile inside the 1st git repo
+  - name: selfSourcesDir
+    value: '$(Build.SourcesDirectory)\igniteui-xplat-docs'
+  # This is the variable that the gulp script looks at internally. This is the only way I know how to pass it for Angular
+  - name: 'NODE_ENV'
+    value: '$(buildType)'
+
+resources:
+  repositories:
+    - repository: IgniteUIDocFX
+      endpoint: IgniteUI
+      type: github
+      name: IgniteUI/igniteui-docfx
+      ref: '$(Build.SourceBranch)'
+
+stages:
+- stage: Build
+  pool:
+    name: BuildAgentOnPrem
+    demands: npm
+  jobs:
+  - job: BuildDocs
+    steps:
+      - checkout: self
+
+      - task: NodeTool@0
+        inputs:
+          versionSource: 'spec'
+          versionSpec: '16.x'
+
+      - task: RegexReplace@3
+        displayName: 'replace environment in doc/docfx'
+        inputs:
+          InputSearchPattern: |
+            doc\**\*.*
+            docfx\**\*.*
+          FindRegex: 'environment:dvDemosBaseUrl'
+          ReplaceRegex: 'environment:demosBaseUrl'
+          UseUTF8: true
+          UseRAW: true
+        enabled: false
+
+      - task: Npm@1
+        displayName: 'npm ci'
+        inputs:
+          command: custom
+          workingDir: '$(selfSourcesDir)'
+          verbose: ${{ parameters.isVerbose }}
+          customCommand: 'ci --production=false'
+
+      #- checkout: IgniteUIDocFX
+      #  persistCredentials: true
+      #  lfs: true
+      #  clean: true
+
+      - template: templates/build-steps-make-pr.yml
+        parameters:
+          buildType: $(buildType)
+          platform: Angular
+          language: en
+          isVerbose: ${{ parameters.isVerbose }}
+          primaryRepoWorkDir: '$(selfSourcesDir)'
+
+
+      # Angular doesn't produce an artifact that we can publish right now.
+
