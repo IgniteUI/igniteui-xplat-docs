@@ -261,9 +261,6 @@ required プロパティを設定することで、コンボボックスを必�
 ## API リファレンス
 
 * `Combo`
-* `ComboItem`
-* `ComboHeader`
-* `ComboList`
 
 <!-- end: WebComponents -->
 ## その他のリソース

@@ -49,6 +49,15 @@ NOTE: these commands generate JSON files with links to samples on **staging serv
    gulp extractSampleLinks --server="staging" --plat=wc
 ```
 
+NOTE: these commands generate JSON files with links to samples on **production server**
+
+```
+   gulp extractSampleLinks --server="production" --plat=angular
+   gulp extractSampleLinks --server="production" --plat=blazor
+   gulp extractSampleLinks --server="production" --plat=react
+   gulp extractSampleLinks --server="production" --plat=wc
+```
+
 NOTE: these commands generates JSON files with links to samples on **local server**
 
 ```

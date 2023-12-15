@@ -151,7 +151,7 @@ cd wc-html
 npm init -y
 ```
 
-4 - **webpack** バンドラー および **webpack cli** を developer dependency としてインストールします。
+4 - **webpack** バンドラーおよび **webpack cli** を developer dependency としてインストールします。
 ```cmd
 npm install webpack webpack-cli --save-dev
 ```
@@ -227,7 +227,7 @@ npm install --save {PackageMaps}
 npm install lit-html
 ```
 
-2 - Geographic Map モジュールと**ModuleManager** を **index.js** ファイルにインポートします。
+2 - Geographic Map モジュールと **ModuleManager** を **index.js** ファイルにインポートします。
 
 ```ts
 import { IgcGeographicMapModule } from 'igniteui-webcomponents-maps';
@@ -423,7 +423,7 @@ NuGet を使用した Ignite UI for Blazor のインストールの詳細につ�
 
 ## Ignite UI for Blazor の登録
 
-### .NET 6 アプリケーション
+### .NET 6 以降のアプリケーション
 
 1 - **Program.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** 関数を呼び出して Ignite UI for Blazor サービスを登録します。
 
@@ -451,6 +451,13 @@ var app = builder.Build();
 <head>
     <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 </head>
+```
+
+4 - スクリプト参照を **Pages/_Host.cshtml** ファイルに追加します。
+
+```razor
+<script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
+<script src="_framework/blazor.server.js"></script>
 ```
 
 ### .NET 5 アプリケーション

@@ -31,6 +31,8 @@ import { defineComponents, IgcIconComponent } from "igniteui-webcomponents";
 defineComponents(IgcIconComponent);
 ```
 
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 Before using the `Icon`, you need to register it as follows:
@@ -131,7 +133,7 @@ The `RegisterIcon` method allows you to register an SVG image as an icon from an
 
 ```tsx
 
-<IgrIcon ref={this.iconRef} iconName="search" collection="material" />
+<IgrIcon ref={this.iconRef} name="search" collection="material" />
 
 public iconRef(icon: IgrIcon) {
     if (!icon) {
@@ -157,7 +159,7 @@ IgbIcon IconName="search" Collection="material" />
 ```
 
 ```tsx
-<IgrIcon iconName="search" collection="material" />
+<IgrIcon name="search" collection="material" />
 ```
 
 The second method for registering icons is by passing an SVG string to the `RegisterIconFromText` method:
@@ -189,7 +191,7 @@ registerIconFromText("search", searchIcon, "material");
 
 ```tsx
 
-<IgrIcon ref={this.iconRef} iconName="search" collection="material" />
+<IgrIcon ref={this.iconRef} name="search" collection="material" />
 
 public iconRef(icon: IgrIcon) {
     if (!icon) {
@@ -207,10 +209,12 @@ Then you'd use it in the same way as described in the component sample above.
 
 ### Size
 
-The icon component supports three icon sizes - `small`, `medium`(default), and `large`. In order to change the size of the icon, you can set the `size` attribute to any of the aforementioned sizes.
+The icon component supports three icon sizes - `small`, `medium`(default), and `large`. In order to change the size of the icon, you can utilize the `--ig-size` CSS variable as follows:
 
-```html
-<igc-icon size="large"></igc-icon>
+```css
+igc-icon {
+  --ig-size: var(--ig-size-large);
+}
 ```
 
 ```razor
@@ -237,7 +241,7 @@ IgbIcon IconName="search" Collection="material" Mirrored="true" />
 ```
 
 ```tsx
-<IgrIcon iconName="search" collection="material" mirrored={true} />
+<IgrIcon name="search" collection="material" mirrored={true} />
 ```
 
 ## Styling
