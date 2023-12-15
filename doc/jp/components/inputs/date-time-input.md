@@ -12,8 +12,6 @@ _language: ja
 
 `sample="/inputs/date-time-input/overview", height="150", alt="{Platform} 日時入力の概要の例"`
 
-
-
 ## 使用方法
 
 <!-- WebComponents -->
@@ -31,6 +29,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcDateTimeInput);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
