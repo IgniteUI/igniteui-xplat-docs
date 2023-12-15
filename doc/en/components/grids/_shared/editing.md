@@ -107,16 +107,28 @@ As seen from the table, all interactions, except resizing a column, will end the
 
 Example how to commit new values, if user tries to sort the column while a cell/row is in edit mode:
 
+<!-- Angular -->
+
 ```html
 <igx-grid #grid [data]="localData" [primaryKey]="'ProductID'" (sorting)="onSorting($event)">
 </igx-grid>
 ```
 
+<!-- end: Angular -->
+
 ```html
-<igc-grid id="grid" primary-key="ProductID" >
-</igc-grid>
+<{ComponentSelector} id="grid" primary-key="ProductID" >
+</{ComponentSelector}>
 ```
 
+```ts
+constructor() {
+    var grid = document.getElementById('grid') as {ComponentName}Component;
+    grid.data = this.data;
+    grid.addEventListener("sorting", this.onSorting);
+
+}
+```
 
 <!-- Angular -->
 
@@ -138,17 +150,18 @@ constructor() {
 }
 
 public onSorting(event: IgcSortingEventArgs) {
-    this.grid.endEdit(true);
+    var grid = document.getElementById('grid') as {ComponentName}Component;
+    grid.endEdit(true);
 }
 ```
 <!-- end: WebComponents -->
 
 ```razor
-<IgbGrid
+<{ComponentSelector}
     Id="grid"
     SortingScript="SortingHandler"
     RowEditable="true">
-</IgbGrid>
+</{ComponentSelector}>
 
 //In JavaScript
 function SortingHandler() {

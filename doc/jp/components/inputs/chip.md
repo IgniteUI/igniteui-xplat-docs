@@ -14,8 +14,6 @@ _language: ja
 
 `sample="/inputs/chip/overview", height="80", alt="{Platform} Chip の例"`
 
-
-
 <div class="divider"></div>
 
 ## 使用方法
@@ -35,6 +33,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcChipComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -73,6 +74,10 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbChipModule));
 
 `Chip` の使用を開始する最も簡単な方法は次のとおりです:
 
+```html
+<igc-chip></igc-chip>
+```
+
 ```razor
 <div class="container sample vertical">
     <IgbChip>Chip</IgbChip>
@@ -90,10 +95,6 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbChipModule));
 
 ```tsx
 <IgrChip></IgrChip>
-```
-
-```html
-<igc-chip></igc-chip>
 ```
 
 選択可能な Chip を表示するには、Chip の `Selectable` プロパティを使用できます。

@@ -17,8 +17,6 @@ The {Platform} Tabs example below displays three different tabs aligned in a sin
 
 `sample="/layouts/tabs/overview", height="150", alt="{Platform} Tabs Example"`
 
-
-
 ## How to use Tabs with {ProductName}
 
 <!-- WebComponents -->
@@ -45,6 +43,8 @@ import { defineComponents, IgcTabsComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcTabsComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 Simple `Tabs` declaration is done as follows:
 
