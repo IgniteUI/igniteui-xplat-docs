@@ -574,7 +574,7 @@ function columnHeaderTemplate(e: { dataContext: IgrColumnTemplateContext }) {
 
 The following sample demonstrates how to implement collapsible column groups using header templates.
 
-`sample="/{ComponentSample}/multi-column-header-template", height="550", alt="{Platform} {ComponentTitle} Multi Column Header Template Sample"`
+`sample="/{ComponentSample}/multi-column-headers-template", height="550", alt="{Platform} {ComponentTitle} Multi Column Header Template Sample"`
 
 <!-- Angular -->
 ## Styling

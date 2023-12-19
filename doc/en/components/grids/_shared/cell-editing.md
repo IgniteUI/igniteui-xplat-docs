@@ -15,21 +15,8 @@ By default, the Grid in {ProductName} is used in cell editing. And due to the **
 In addition, you can define your own custom templates for update-data actions and to override the default behavior for committing and discarding any changes.
 
 ## {Platform} {ComponentTitle} Cell Editing and Edit Templates Example
-<!-- WebComponents, React -->
 
 `sample="/{ComponentSample}/editing-columns", height="700", alt="{Platform} {ComponentTitle} Cell Editing and Edit Templates Example"`
-
-<!-- end: WebComponents, React -->
-
-<!-- Blazor -->
-
-<!-- ComponentStart: Grid -->
-
-`sample="/{ComponentSample}/editing-columns", height="700", alt="{Platform} {ComponentTitle} Cell Editing and Edit Templates Example"`
-
-<!-- ComponentEnd: Grid -->
-
-<!-- end: Blazor -->
 
 <!-- Angular -->
 
@@ -342,6 +329,52 @@ public webGridCellEditCellTemplate = (ctx: IgcCellTemplateContext) => {
     }
 
 ```
+
+<!-- ComponentStart: TreeGrid -->
+```ts
+
+constructor() {
+        var treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
+        var column1 = document.getElementById('column1') as IgcColumnComponent;
+        var column2 = document.getElementById('column2') as IgcColumnComponent;
+        var column3 = document.getElementById('column3') as IgcColumnComponent;
+
+        treeGrid.data = this.webGridCellEditSampleRoleplay;
+        column1.inlineEditorTemplate = this.webGridCellEditCellTemplate;
+        column2.inlineEditorTemplate = this.webGridCellEditCellTemplate;
+        column3.inlineEditorTemplate = this.webGridCellEditCellTemplate;
+}
+
+private _webGridCellEditSampleRoleplay: WebGridCellEditSampleRoleplay = null;
+public get webGridCellEditSampleRoleplay(): WebGridCellEditSampleRoleplay {
+    if (this._webGridCellEditSampleRoleplay == null) 
+    {
+        this._webGridCellEditSampleRoleplay = new WebGridCellEditSampleRoleplay();
+    }
+
+    return this._webGridCellEditSampleRoleplay;
+}
+
+public webGridCellEditCellTemplate = (ctx: IgcCellTemplateContext) => {
+        let cellValues: any = [];
+        let uniqueValues: any = [];
+        for(const i of (this.webGridCellEditSampleRoleplay as any)){
+            const field: string = ctx.cell.column.field;
+            if(uniqueValues.indexOf(i[field]) === -1 )
+            {
+                cellValues.push(html`<igc-select-item value=${i[field]}>${(i[field])}</igc-select-item>`);
+                uniqueValues.push(i[field]);
+            }
+        }
+        return html`
+        <igc-select style="width:100%; height:100%" size="large" @igcChange=${(e: any) => ctx.cell.editValue = e.detail.value}>
+              ${cellValues}
+        </igc-select>
+        `;
+}
+```
+<!-- ComponentEnd: TreeGrid -->
+
 Working sample of the above can be found here for further referencee: 
 
 `sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
@@ -971,7 +1004,7 @@ Then set the related CSS properties for that class:
 
 ### Styling Example
 
-`sample="/{ComponentSample}/cell-editing-style", height="650", alt="{Platform} {ComponentTitle} Cell Editing Styling Example"`
+`sample="/{ComponentSample}/cell-editing-styling", height="650", alt="{Platform} {ComponentTitle} Cell Editing Styling Example"`
 
 <!-- end: WebComponents, Blazor, React -->
 

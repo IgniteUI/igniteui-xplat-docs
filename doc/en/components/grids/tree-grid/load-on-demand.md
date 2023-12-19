@@ -2,6 +2,8 @@
 title: {Platform} Tree Grid | Fastest {Platform} Tree Table | Infragistics
 _description: The {ProductName} Tree Grid provides the necessary tools to load child data on demand when a parent row is expanded. That way the volume of data would be greatly reduced and can be retrieved only when the user needs it.
 _keywords: {Platform} tree grid, igniteui for {Platform}, infragistics
+mentionedTypes: ['TreeGrid']
+namespace: Infragistics.Controls
 ---
 
 # Tree Grid Load On Demand

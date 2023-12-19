@@ -34,6 +34,8 @@ import { defineComponents, IgcDialogComponent } from 'igniteui-webcomponents';
 defineComponents(IgcDialogComponent);
 ```
 
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- Blazor -->
 Before using the {Platform} `Dialog`, you need to register it as follows:
 

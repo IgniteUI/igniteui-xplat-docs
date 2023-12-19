@@ -139,6 +139,7 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "background"}], "originalName": "Background"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "beforeId"}], "originalName": "BeforeId"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "cleanUp"}], "originalName": "CleanUp"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "closeOnExecute"}], "originalName": "CloseOnExecute"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "closeSubmenu"}], "originalName": "CloseSubmenu"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "commandArgument"}], "originalName": "CommandArgument"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "commandArgumentValue"}], "originalName": "CommandArgumentValue"},

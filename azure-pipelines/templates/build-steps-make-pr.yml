@@ -49,9 +49,6 @@ steps:
       }
     displayName: 'If there are changes, commit & make PR'
     workingDirectory: '$(Build.SourcesDirectory)\igniteui-docfx'
-    
-  - script: set
-    displayName: show all env vars
 
   - task: CreatePullRequest@1
     displayName: 'Create PR to IgniteUI/igniteui-docfx $(Build.SourceBranch)'

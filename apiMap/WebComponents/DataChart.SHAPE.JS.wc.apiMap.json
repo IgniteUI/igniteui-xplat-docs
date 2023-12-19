@@ -212,9 +212,9 @@
     "names":[{"platform": "WebComponents","fileName": "igc-style-shape-event-args.ts","mappedName": "IgcStyleShapeEventArgs"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "item"}], "originalName": "Item"},
-      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "fill"}], "originalName": "shapeStyle.fill"},
-      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "shapeStyle.opacity"},
-      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "shapeStyle.stroke"},
-      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "fill"}], "originalName": "shapeStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "shapeStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "shapeStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "shapeStyle.strokeThickness"} ]
   }]
 }
