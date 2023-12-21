@@ -582,7 +582,7 @@ $custom-grid-theme: grid-theme(
 
 ### デモ
 
-`sample="/{ComponentSample}/column-resizing-styling", height="550", alt="{Platform} {ComponentTitle} 列のサイズ変更のスタイル設定の例"`
+`sample="/{ComponentSample}/column-resize-styling", height="550", alt="{Platform} {ComponentTitle} 列のサイズ変更のスタイル設定の例"`
 
 <!-- end: WebComponents, Blazor, React -->
 
