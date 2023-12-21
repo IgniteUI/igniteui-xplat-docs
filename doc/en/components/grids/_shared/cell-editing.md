@@ -283,11 +283,6 @@ igRegisterScript("WebGridCellEditCellTemplate", (ctx) => {
 </div>`;
 }, false);
 ```
-
-Working sample of the above can be found here for further reference: 
-
-`sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
-
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
@@ -412,10 +407,6 @@ public webGridCellEditCellTemplate = (ctx: IgcCellTemplateContext) => {
 
 <!-- end: WebComponents -->
 
-Working sample of the above can be found here for further reference: 
-
-`sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
-
 <!-- end: Blazor, WebComponents -->
 
 <!-- React -->
@@ -469,11 +460,11 @@ const webGridCellEditCellTemplate = useCallback((ctx: IgrCellTemplateContext) =>
   }, [webGridCellEditSampleRoleplay, webGridCellEditCellTemplate]);
 
 ```
-Working sample of the above can be found here for further referencee: 
+<!-- end: React -->
+
+Working sample of the above can be found here for further reference: 
 
 `sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
-
-<!-- end: React -->
 
 <!-- Angular -->
 
