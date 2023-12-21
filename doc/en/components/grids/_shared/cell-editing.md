@@ -862,6 +862,8 @@ In this example, we'll validate a cell based on the data entered in it by bindin
 
 We'll also display a custom error message using [Toast](../../notifications/toast.md).
 
+<!-- end: Angular -->
+
 The first thing we need to do is bind to the grid's event:
 
 ```html
@@ -918,8 +920,6 @@ constructor() {
 }
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
-
-<!-- end: Angular -->
 
 <!-- Blazor, WebComponents -->
 The first thing we need to do is bind to the grid's event:
