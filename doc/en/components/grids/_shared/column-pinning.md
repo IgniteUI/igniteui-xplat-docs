@@ -753,10 +753,10 @@ Then set the related CSS properties to this class:
 
 ```css
 #grid {
-    --pinned-border-width: 5px;
-    --pinned-border-color: #FFCD0F;
-    --pinned-border-style: double;
-    --cell-active-border-color: #FFCD0F;
+    --ig-grid-pinned-border-width: 5px;
+    --ig-grid-pinned-border-color: #FFCD0F;
+    --ig-grid-pinned-border-style: double;
+    --ig-grid-cell-active-border-color: #FFCD0F;
 }
 ```
 
