@@ -11,8 +11,6 @@ The {ProductName} Date Time Input allows the user to set and edit the date and t
 
 `sample="/inputs/date-time-input/overview", height="150", alt="{Platform} Date Time Input Overview Example"`
 
-
-
 ## Usage
 
 <!-- WebComponents -->
@@ -30,6 +28,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcDateTimeInput);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- Blazor -->

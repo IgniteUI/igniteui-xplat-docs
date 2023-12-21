@@ -9,14 +9,15 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Toolbar
 
-The `{ComponentName}` in {ProductName} provides an `GridToolbar` which is essentially a container for **UI** operations. The {Platform} toolbar is located at the top of the {Platform} component, i.e the `{ComponentName}` and it matches its horizontal size. The toolbar container can host predefined UI controls for the following `{ComponentName}`'s features:
+The {ProductName} Toolbar in is a container for UI operations in the {Platform} {ComponentTitle}. The {Platform} toolbar is located at the top of the {Platform} component, i.e., the `{ComponentName}` and it matches its horizontal size. The toolbar container can host any custom content or set of predefined UI controls. The default set for the {Platform} {ComponentTitle} includes:
 
- - Column Hiding
- - Column Pinning
- - Excel Exporting
- - Advanced Filtering
+- Column Hiding
+- Column Pinning
+- Excel Exporting
+- Advanced Filtering
 
-or just any other custom content. The toolbar and the predefined UI components support {Platform} events and expose API for developers.
+The toolbar and the predefined UI components support {Platform} events and expose API for developers.
+
 
 ## {Platform} Toolbar Grid Example
 
@@ -52,6 +53,39 @@ The predefined `Actions` and `Title` UI components are added inside the `GridToo
         </igc-grid-toolbar-actions>
     </igc-grid-toolbar>
 </igc-grid>
+```
+
+```tsx
+<IgrGrid>
+    <IgrGridToolbar key="toolbar">
+        <IgrGridToolbarTitle key="toolbarTitle">
+            Grid Toolbar
+        </IgrGridToolbarTitle>
+        <IgrGridToolbarActions key="toolbarActions">
+            <IgrGridToolbarAdvancedFiltering key="advancedFiltering"></IgrGridToolbarAdvancedFiltering>
+            <IgrGridToolbarPinning key="pinning"></IgrGridToolbarPinning>
+            <IgrGridToolbarHiding key="hiding"></IgrGridToolbarHiding>
+            <IgrGridToolbarExporter key="export"></IgrGridToolbarExporter>
+        </IgrGridToolbarActions>
+    </IgrGridToolbar>
+</IgrGrid>
+```
+
+```razor
+<IgbGrid>
+    <IgbGridToolbar>
+        <IgbGridToolbarActions>
+            <IgbGridToolbarAdvancedFiltering>
+            </IgbGridToolbarAdvancedFiltering>
+            <IgbGridToolbarHiding>
+            </IgbGridToolbarHiding>
+            <IgbGridToolbarPinning>
+            </IgbGridToolbarPinning>
+            <IgbGridToolbarExporter>
+            </IgbGridToolbarExporter>
+        </IgbGridToolbarActions>
+    </IgbGridToolbar>
+</IgbGrid>
 ```
 <!-- ComponentEnd: Grid -->
 
@@ -130,6 +164,20 @@ Of course, each of these UIs can be added independently of each other, or may no
     <igc-grid-toolbar>
     </igc-grid-toolbar>
 </igc-grid>
+```
+
+```razor
+<IgbGrid>
+    <IgbGridToolbar>
+    </IgbGridToolbar>
+</IgbGrid>
+```
+
+```tsx
+<IgrGrid>
+    <IgrGridToolbar key="toolbar">
+    </IgrGridToolbar>
+</IgrGrid>
 ```
 <!-- ComponentEnd: Grid -->
 
@@ -223,6 +271,18 @@ Users can provide anything from simple text to more involved templates.
 </igc-grid-toolbar>
 ```
 
+```tsx
+<IgrGridToolbar key="toolbar">
+    <IgrGridToolbarTitle key="toolbarTitle">Grid toolbar title</IgrGridToolbarTitle>
+</IgrGridToolbar>
+```
+
+```razor
+<IgbGridToolbar>
+    <IgbGridToolbarTitle>Grid toolbar title</IgbGridToolbarTitle>
+</IgbGridToolbar>
+```
+
 ### Actions
 
 
@@ -254,6 +314,15 @@ toolbar interaction components.
     <!-- ... -->
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
+```
+
+```tsx
+<IgrGridToolbar key="toolbar">
+    <IgrGridToolbarActions key="toolbarActions">
+
+    </IgrGridToolbarActions>
+</IgrGridToolbar>
+
 ```
 <!-- Angular -->
 
@@ -350,6 +419,13 @@ The component is setup to work out of the box with the parent grid containing th
 </igc-grid-toolbar>
 ```
 
+```tsx
+<IgrGridToolbar key="toolbar">
+    <IgrGridToolbarActions key="toolbarActions">
+        <IgrGridToolbarPinning key="pinning" title="Grid pinned columns" prompt="Filter column collection" columnListHeight="400px"></IgrGridToolbarPinning>
+    </IgrGridToolbarActions>
+</IgrGridToolbar>
+```
 
 ### Column Hiding
 
@@ -389,6 +465,14 @@ title, the placeholder for the component input and the height of the dropdown it
 </igc-grid-toolbar>
 ```
 
+```tsx
+<IgrGridToolbar key="toolbar">
+    <IgrGridToolbarActions key="toolbarActions">
+        <IgrGridToolbarHiding key="hiding" title="Grid column hiding" prompt="Filter column collection" columnListHeight="400px"></IgrGridToolbarHiding>
+    </IgrGridToolbarActions>
+</IgrGridToolbar>
+```
+
 ### Advanced Filtering
 
 Toolbar Advanced Filtering component provides the default UI for the Advanced Filtering feature. The component exposes a way to change the default text of the button.
@@ -415,6 +499,14 @@ Toolbar Advanced Filtering component provides the default UI for the Advanced Fi
         <igc-grid-toolbar-advanced-filtering>Custom text for the toggle button</igc-grid-toolbar-advanced-filtering>
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
+```
+
+```tsx
+<IgrGridToolbar key="toolbar">
+    <IgrGridToolbarActions key="toolbarActions">
+        <IgrGridToolbarAdvancedFiltering key="advancedFiltering"></IgrGridToolbarAdvancedFiltering>
+    </IgrGridToolbarActions>
+</IgrGridToolbar>
 ```
 
 ### Data Exporting
@@ -492,6 +584,14 @@ Here is a snippet showing some of the options which can be customized through th
 </igc-grid-toolbar>
 ```
 
+```tsx
+<IgrGridToolbar key="toolbar">
+    <IgrGridToolbarActions key="toolbarActions">
+        <IgrGridToolbarExporter key="export" exportCSV="true" exportExcel="true" filename="exported_data"></IgrGridToolbarExporter>
+    </IgrGridToolbarActions>
+</IgrGridToolbar>
+```
+
 In addition to changing the exported filename, the user can further configure the exporter options by waiting for the `ToolbarExporting` event and customizing the options entry in the event properties.
 
 > [!Note]
@@ -518,6 +618,21 @@ constructor() {
 }
 ```
 <!-- end: WebComponents -->
+
+```tsx
+function configureExport(evt: IgrGridToolbarExportEventArgs) {
+    const args = evt.detail;
+    const options: IgrExporterOptionsBase = args.options;
+
+    options.fileName = `Report_${new Date().toDateString()}`;
+    (args.exporter as any).columnExporting.subscribe((columnArgs: any) => {
+            columnArgs.cancel = columnArgs.header === 'Athlete' || columnArgs.header === 'Country';
+    });
+}
+
+<{ComponentSelector} toolbarExporting={configureExport}>
+</{ComponentSelector}>
+```
 
 
 <!-- Angular -->
@@ -651,19 +766,23 @@ The following sample demonstrates how to add an additional button to the toolbar
 
 <!-- end: Angular, WebComponents -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 ## Styling
 
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
-```ts
-<igc-grid class="grid">
+```html
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid Class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
 
 Then set the related CSS properties for that class:
@@ -680,7 +799,7 @@ Then set the related CSS properties for that class:
 
 `sample="/{ComponentSample}/toolbar-style", height="540", alt="{Platform} {ComponentTitle} Toolbar Styling Example"`
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- Angular -->
 
