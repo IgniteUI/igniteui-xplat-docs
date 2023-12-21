@@ -796,6 +796,12 @@
         "name": "ロードオンデマンド",
         "href": "grids/tree-grid/load-on-demand.md",
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "Live Data / Real-Time",
+        "href": "grids/tree-grid/live-data.md",
+        "status": "NEW"
       }
     ]
   },
