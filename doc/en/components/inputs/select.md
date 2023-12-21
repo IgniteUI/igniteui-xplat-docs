@@ -39,6 +39,8 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcSelectComponent);
 ```
 
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
@@ -88,7 +90,7 @@ To start using the component add the `Select` along with a list of `SelectItem`'
 
 ### Select
 
-The `Select` component can be used inside a `Form` component, thus it exposes a `Name` property to be registered with. It also has a `Label`, `Placeholder`, and `Size` properties. The `Outlined` property is used for styling purposes only when it comes to the Material theme. Except for the default slot, the component provides a few other slots including `header`, `footer`, `helper-text`, `prefix`, `suffix`, and `toggle-icon`.
+The `Select` component can be used inside a `Form` component, thus it exposes a `Name` property to be registered with. It also has a `Label`, and `Placeholder` properties. The `Outlined` property is used for styling purposes only when it comes to the Material theme. Except for the default slot, the component provides a few other slots including `header`, `footer`, `helper-text`, `prefix`, `suffix`, and `toggle-icon`. The component size can be changed using the `--ig-size` CSS variable.
 
 ### Item
 
@@ -195,18 +197,18 @@ In addition, the `Select` supports most of the `Input` properties, such as `Requ
 
 When the select is focused and the list of options is **not visible**:
 
-- Open the `Select` using the <kbd>ALT + Up/Down Arrow</kbd> combination or by clicking on the <kbd>Space</kbd> or the <kbd>Enter</kbd> key.
-- Close the `Select` using the <kbd>ALT + Up/Down Arrow</kbd> combination or any of the <kbd>Enter</kbd>, <kbd>Space</kbd>, <kbd>Esc</kbd> or `Tab` keys.
-- Using the <kbd>Up/Left Arrow</kbd> keys will select the previous item in the list.
-- Using the <kbd>Down/Right Arrow</kbd> keys will select the next item in the list.
+- Open the `Select` using the <kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> combination or by clicking on the <kbd>Space</kbd> or the <kbd>Enter</kbd> key.
+- Close the `Select` using the <kbd>ALT</kbd> + <kbd>↑</kbd> or <kbd>↓</kbd> combination or any of the <kbd>Enter</kbd>, <kbd>Space</kbd>, <kbd>Esc</kbd> or `Tab` keys.
+- Using the <kbd>←</kbd> <kbd>→</kbd> keys will select the previous item in the list.
+- Using the <kbd>↑</kbd> <kbd>↓</kbd> keys will select the next item in the list.
 - Using the <kbd>Home</kbd> or <kbd>End</kbd> keys will select the first or last item in the list.
 - Typing characters will query the list of items and select the one that most closely matches the current user input.
 
 When the select is focused and the list of options is **visible**:
 
 - Using the <kbd>Enter</kbd> or <kbd>Space</kbd> keys will select an item and close the list.
-- Using the <kbd>Up/Left Arrow</kbd> keys will activate the previous item in the list.
-- Using the <kbd>Down/Right Arrow</kbd> keys will activate the next item in the list.
+- Using the <kbd>←</kbd> <kbd>→</kbd> keys will activate the previous item in the list.
+- Using the <kbd>↑</kbd> <kbd>↓</kbd> keys will activate the next item in the list.
 - Using the <kbd>Home</kbd> or <kbd>End</kbd> keys will activate the first or last item in the list.
 
 > [!Note]

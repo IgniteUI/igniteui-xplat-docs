@@ -2,7 +2,7 @@
 title: {Platform} エリア チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの {Platform} エリア チャート
 _keywords: {Platform} Charts, Area Chart, Infragistics, {Platform} チャート, エリア チャート, インフラジスティックス
-mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "CategoryChartType", 'Series']
+mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "CategoryChartType"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---

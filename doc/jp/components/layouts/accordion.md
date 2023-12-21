@@ -159,12 +159,12 @@ constructor() {
 アコーディオン ナビゲーションは、W3C アクセシビリティ標準に準拠しており、使いやすいです。
 
 **キーの組み合わせ**
- - <kbd>下矢印</kbd> - フォーカスを下のパネルに移動します。
- - <kbd>上矢印</kbd> - フォーカスを上のパネルに移動します。
- - <kbd>Alt + 下矢印</kbd> - アコーディオンでフォーカスされたパネルを開きます。
- - <kbd>Alt + 上矢印</kbd> - Accordion でフォーカスされたパネルを閉じます。
- - <kbd>Shift + Alt + 下矢印</kbd> - 有効なすべてのパネルを開きます。(singleExpand が true に設定されている場合、フォーカスされたパネルが開きます)。
- - <kbd>Shift + Alt + 上矢印</kbd> - 有効なすべてのパネルを閉じます。
+ - <kbd>↓</kbd> - フォーカスを下のパネルに移動します。
+ - <kbd>↑</kbd> - フォーカスを上のパネルに移動します。
+ - <kbd>Alt</kbd> + <kbd>↓</kbd> - アコーディオンでフォーカスされたパネルを開きます。
+ - <kbd>Alt</kbd> + <kbd>↑</kbd> - Accordion でフォーカスされたパネルを閉じます。
+ - <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>↓</kbd> - 有効なすべてのパネルを開きます。(singleExpand が true に設定されている場合、フォーカスされたパネルが開きます)。
+ - <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>↑</kbd> - 有効なすべてのパネルを閉じます。
  - <kbd>Home</kbd> - Accordion の最初の有効なパネルに移動します。
  - <kbd>End</kbd> - Accordion の最後の有効なパネルに移動します。
 

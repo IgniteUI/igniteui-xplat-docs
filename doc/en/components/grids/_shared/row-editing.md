@@ -1,5 +1,5 @@
 ---
-title: Editing Rows in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Editing Rows - {ProductName}
 _description: Want to enable row editing in {Platform} {ComponentTitle}? Need a powerful API for CRUD operations? Try our {ProductName} {ComponentTitle} rows editing component!
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Row Editing
 
-The `{ComponentName}` provides a convenient way to perform data manipulations through inline editing and a powerful API for {Platform} CRUD operations. Click on a row and press **Enter key** or simply double click with the mouse on the row that needs to be modified.
+The {ProductName} Row Editing feature in {Platform} {ComponentTitle} allows editing data directly within the `{ComponentName}`. On top of this convenient way to manipulate data, there’s a powerful API for full CRUD operations. You can perform grid row editing by clicking on a row and pressing **Enter key**. Another quick way is to double click with the mouse on the row that needs to be modified.
 
 ## {Platform} {ComponentTitle} Row Editing Example
 
@@ -77,7 +77,6 @@ constructor() {
     var unitsInStock = document.getElementById('unitsInStock') as IgcColumnComponent;
     grid.data = this.data;
     unitsInStock.bodyTemplate = this.unitsInStockCellTemplate;
-
 }
 
 public unitsInStockCellTemplate = (ctx: IgcCellTemplateContext) => {
@@ -85,6 +84,26 @@ public unitsInStockCellTemplate = (ctx: IgcCellTemplateContext) => {
 }
 ```
 <!-- end: WebComponents -->
+
+```tsx
+function unitsInStockCellTemplate(ctx: IgrCellTemplateContext) {
+    return (
+        <>
+            <input name="units" value={ctx.dataContext.cell.value} style={{color: "black"}} />;
+        </>
+    );
+}
+
+<{ComponentSelector} primaryKey="ProductID" width="100%" height="500px" rowEditable="true"
+    bodyTemplate={unitsInStockCellTemplate}>
+    <IgrColumn field="ProductID" header="Product ID" editable="false"></IgrColumn>
+    <IgrColumn field="ReorderLevel" header="ReorderLever" dataType="number"></IgrColumn>
+    <IgrColumn field="ProductName" header="ProductName" dataType="string"></IgrColumn>
+    <IgrColumn field="UnitsInStock" header="UnitsInStock" dataType="number"></IgrColumn>
+    <IgrColumn field="OrderDate" dataType="date"></IgrColumn>
+    <IgrColumn field="Discontinued" header="Discontinued" dataType="boolean"></IgrColumn>
+</{ComponentSelector}>
+```
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
@@ -219,14 +238,24 @@ The `RowChangesCount` property is exposed and it holds the count of the changed 
 igRegisterScript("RowEditTextTemplate", (ctx) => {
     var html = window.igTemplating.html;
     return html`<div>
-   Changes: ${ctx.$implicit}
+   Changes: ${ctx.implicit}
 </div>`;
 }, false);
  ```
 
- ```ts
+```ts
 public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
-    return html`Changes: ${ctx.$implicit}`;
+    return html`Changes: ${ctx.implicit}`;
+}
+```
+
+```tsx
+function rowEditTextTemplate(ctx: IgrGridRowEditTextTemplateContext) {
+    return (
+        <>
+            Changes: {ctx.dataContext.implicit}
+        </>
+    );
 }
 ```
 
@@ -248,7 +277,7 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
  ```razor
  igRegisterScript("RowEditActionsTemplate", (ctx) => {
     var html = window.igTemplating.html;
-    window.endRowEdit = ctx.$implicit;
+    window.endRowEdit = ctx.implicit;
     return html`<div>
   	<button @click="(event) => endRowEdit(false, event)">Cancel</button>
 	<button @click="(event) => endRowEdit(true, event)">Apply</button>
@@ -256,13 +285,25 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
 }, false);
  ```
 
- ```ts
+```ts
 public rowEditActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
-    const endRowEdit = ctx.$implicit;
+    const endRowEdit = ctx.implicit;
     return html`
         <button @click="${(event) => endRowEdit(false, event)}">Cancel</button>
         <button @click="${(event) => endRowEdit(true, event)}">Apply</button>
     `;
+}
+```
+
+```tsx
+function rowEditActionsTemplate(ctx: IgrGridRowEditActionsTemplateContext) {
+    const endRowEdit = ctx.dataContext.implicit;
+    return (
+        <>
+            <button onClick={(event) => endRowEdit(false, event)}>Cancel</button>
+            <button onClick={(event) => endRowEdit(true, event)}>Apply</button>
+        </>
+    );
 }
 ```
 
@@ -393,27 +434,31 @@ After styling the banner and buttons, we also define a custom style for [the cel
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 ## Styling
 
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
-```ts
-<igc-grid class="grid">
+```html
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid Class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 Then set the related CSS properties for that class:
 
 ```css
 .grid {
-    --igx-banner-banner-background: #e3e3e3;
-    --igx-banner-banner-message-color: #423589;
+    --ig-banner-banner-background: #e3e3e3;
+    --ig-banner-banner-message-color: #423589;
 }
 ```
 
@@ -422,7 +467,7 @@ Then set the related CSS properties for that class:
 `sample="/{ComponentSample}/row-editing-style", height="560", alt="{Platform} {ComponentTitle} Row Editing Styling Example"`
 
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 ## Known Issues and Limitations
 
