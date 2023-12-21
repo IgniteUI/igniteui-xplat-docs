@@ -13,8 +13,6 @@ The {ProductName} Expansion Panel is a lightweight accordion component which can
 
 `sample="/layouts/expansion-panel/usage", height="320", alt="{Platform} Expansion Panel Example"`
 
-
-
 <div class="divider--half"></div>
 
 ## Usage
@@ -33,6 +31,8 @@ import {defineComponents, IgcExpansionPanelComponent} from 'igniteui-webcomponen
 
 defineComponents(IgcExpansionPanelComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -146,8 +146,8 @@ The {ProductName} Expansion Panel keyboard navigation is compliant with W3C acce
 
 **Key Combinations**
 
- - <kbd>Alt + Arrow Down</kbd> - expands the focused panel
- - <kbd>Alt + Arrow Up</kbd> - collapses the focused panel
+ - <kbd>Alt + ↓</kbd> - expands the focused panel
+ - <kbd>Alt + ↑</kbd> - collapses the focused panel
  - <kbd>Space</kbd>/<kbd>Enter</kbd> - toggle the expansion state of the focused panel
 
 

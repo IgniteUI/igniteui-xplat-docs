@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} の列非表示 - インフラジスティックス
+title: {Platform} {ComponentTitle} 列の非表示 - {ProductName}
 _description: ユーザーが Ignite Material UI テーブルの UI で列の表示状態を変更できるようにする列非表示機能の使用方法。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -14,7 +14,7 @@ _language: ja
 {ProductName} `{ComponentName}` は、`ColumnHidingDirective` のある `ColumnActionsComponent` を提供し、ユーザーが UI を介して、または {Platform} コンポーネントを使用して列の非表示を実行できるようにします。
 <!-- end: Angular -->
 
-{ProductName} `{ComponentName}` には組み込み列非表示 UI があり、これを `{ComponentName}` のツールバーから使用して列の表示状態を変更できます。更に別のコンポーネントとして列非表示 UI を定義してページの必要な場所に配置できます。
+{ProductName} には組み込み列非表示 UI があり、これを {Platform} {ComponentTitle} のツールバーから使用して列の表示状態を変更できます。開発者は、必要に応じてページ内の任意の場所に列非表示 UI を柔軟に定義できます。{Platform} {ComponentTitle} 列の非表示機能は、グリッドのサイズを小さくし、冗長なフィールドをタブで移動する必要をなくしたい場合に特に便利です。
 
 ## {Platform} {ComponentTitle} 列非表示の例
 
@@ -27,7 +27,7 @@ _language: ja
 `{ComponentName}` を作成してからデータをバインドします。列でフィルタリングとソートも有効にします。
 
 ```html
-<igx-grid #grid id="grid" [data]="data" [autoGenerate]="false" width="100%" height="560px" columnWidth="200px" [allowFiltering]="true">
+<igx-grid #grid id="grid" [data]="data" [autoGenerate]="false" width="100%" height="560px" [allowFiltering]="true">
     <igx-column [field]="'ID'" dataType="string" [sortable]="true" [hidden]="true"></igx-column>
     <igx-column [field]="'ContactName'" dataType="string" [sortable]="true" [hidden]="true"></igx-column>
     <igx-column [field]="'ContactTitle'" dataType="string" [sortable]="true"></igx-column>
@@ -42,7 +42,7 @@ _language: ja
 ```
 
 ```razor
-<{ComponentSelector} Data=northwindEmployees AutoGenerate=false Width="100%"  Height="100%" ColumnWidth="200px" AllowFiltering=true>
+<{ComponentSelector} Data=northwindEmployees AutoGenerate=false Width="100%" Height="100%" AllowFiltering=true>
     <IgbColumn Field="ID" Sortable=true Hidden=true></IgbColumn>
     <IgbColumn Field="ContactName" Sortable=true Hidden=true></IgbColumn>
     <IgbColumn Field="ContactTitle" Sortable=true></IgbColumn>
@@ -57,7 +57,7 @@ _language: ja
 ```
 
 ```html
-<igc-grid id="grid" auto-generate="false" width="100%" height="560px" column-width="200px" allow-filtering="true">
+<igc-grid id="grid" auto-generate="false" width="100%" height="560px" allow-filtering="true">
     <igc-column field="ID" data-type="String" sortable="true" hidden="true"></igc-column>
     <igc-column field="ContactName" data-type="String" sortable="true" hidden="true"></igc-column>
     <igc-column field="ContactTitle" data-type="String" sortable="true"></igc-column>
@@ -71,6 +71,21 @@ _language: ja
 </igc-grid>
 ```
 
+```tsx
+<IgrGrid autoGenerate="false" width="100%" height="560px" allowFiltering="true">
+    <IgrColumn field="ID" dataType="string" sortable="true" hidden="true"></IgrColumn>
+    <IgrColumn field="ContactName" dataType="String" sortable="true" hidden="true"></IgrColumn>
+    <IgrColumn field="ContactTitle" dataType="string" sortable="true"></IgrColumn>
+    <IgrColumn field="City" dataType="string" sortable="true"></IgrColumn>
+    <IgrColumn field="CompanyName" dataType="string" sortable="true"></IgrColumn>
+    <IgrColumn field="Fax" dataType="string" sortable="true"></IgrColumn>
+    <IgrColumn field="Address" dataType="string" sortable="true"></IgrColumn>
+    <IgrColumn field="PostalCode" dataType="string" sortable="true"></IgrColumn>
+    <IgrColumn field="Country" dataType="string" sortable="true"></IgrColumn>
+    <IgrColumn field="Phone" dataType="string" sortable="true"></IgrColumn>
+</IgrGrid>
+```
+
 ## ツールバーの列非表示 UI
 
 定義済みの列非表示 UI は、`{ComponentName}` のツールバーの `DropDown` 内に配置されます。列非表示の UI をこのドロップダウンを使用して表示/非表示にできます。
@@ -78,39 +93,43 @@ _language: ja
 これには、`{ComponentName}` 内に `GridToolbarActions` と `GridToolbarHiding` の両方を設定することだけです。ツールバーにタイトルを追加するには、`GridToolbarTitle` を設定し、{ComponentTitle} のラッパーにカスタム スタイルを設定します。
 
 ```html
-<div class="grid__wrapper">
-    <igx-grid [data]="localdata">
-        <igx-grid-toolbar>
-            <igx-grid-toolbar-actions>
-                <igx-grid-toolbar-hiding></igx-grid-toolbar-hiding>
-            </igx-grid-toolbar-actions>
-        </igx-grid-toolbar>
-    </igx-grid>
-</div>
+<igx-grid [data]="localdata">
+    <igx-grid-toolbar>
+        <igx-grid-toolbar-actions>
+            <igx-grid-toolbar-hiding></igx-grid-toolbar-hiding>
+        </igx-grid-toolbar-actions>
+    </igx-grid-toolbar>
+</igx-grid>
 ```
 
 ```razor
-<div class="grid__wrapper">
-    <{ComponentSelector} Data=northwindEmployees>
-        <IgbGridToolbar>
-            <IgbGridToolbarActions>
-                <IgbGridToolbarHiding></IgbGridToolbarHiding>
-            </IgbGridToolbarActions>
-       </IgbGridToolbar>
-    </{ComponentSelector}>
-</div>
+<{ComponentSelector} Data=northwindEmployees>
+    <IgbGridToolbar>
+        <IgbGridToolbarActions>
+            <IgbGridToolbarHiding></IgbGridToolbarHiding>
+        </IgbGridToolbarActions>
+    </IgbGridToolbar>
+</{ComponentSelector}>
 ```
 
 ```html
-<div class="grid__wrapper">
-    <igc-grid id="grid">
-        <igc-grid-toolbar>
-            <igc-grid-toolbar-actions>
-                <igc-grid-toolbar-hiding></igc-grid-toolbar-hiding>
-            </igc-grid-toolbar-actions>
-        </igc-grid-toolbar>
-    </igc-grid>
-</div>
+<igc-grid>
+    <igc-grid-toolbar>
+        <igc-grid-toolbar-actions>
+            <igc-grid-toolbar-hiding></igc-grid-toolbar-hiding>
+        </igc-grid-toolbar-actions>
+    </igc-grid-toolbar>
+</igc-grid>
+```
+
+```tsx
+<IgrGrid>
+    <IgrGridToolbar key="toolbar">
+        <IgrGridToolbarActions key="toolbarActions">
+            <IgrGridToolbarHiding key="toolbarHiding"></IgrGridToolbarHiding>
+        </IgrGridToolbarActions>
+    </IgrGridToolbar>
+</IgrGrid>
 ```
 
 `{ComponentName}` にはツールバーの列非表示 UI に便利なプロパティがあります。
@@ -118,39 +137,43 @@ _language: ja
 `Title` プロパティを使用して、ツールバーのドロップダウン ボタンに表示されるタイトルを設定します。
 
 ```html
-<div class="grid__wrapper">
-    <igx-grid [data]="localdata">
-        <igx-grid-toolbar>
-            <igx-grid-toolbar-actions>
-                <igx-grid-toolbar-hiding #hidingActionRef title="Column Hiding"></igx-grid-toolbar-hiding>
-            </igx-grid-toolbar-actions>
-        </igx-grid-toolbar>
-    </igx-grid>
-</div>
+<igx-grid [data]="localdata">
+    <igx-grid-toolbar>
+        <igx-grid-toolbar-actions>
+            <igx-grid-toolbar-hiding #hidingActionRef title="Column Hiding"></igx-grid-toolbar-hiding>
+        </igx-grid-toolbar-actions>
+    </igx-grid-toolbar>
+</igx-grid>
 ```
 
 ```razor
-<div class="grid__wrapper">
-    <{ComponentSelector} Data=northwindEmployees>
-        <IgbGridToolbar>
-            <IgbGridToolbarActions>
-                <IgbGridToolbarHiding @ref=HidingAction Title="Column Hiding"></IgbGridToolbarHiding>
-            </IgbGridToolbarActions>
-       </IgbGridToolbar>
-    </{ComponentSelector}>
-</div>
+<{ComponentSelector} Data=northwindEmployees>
+    <IgbGridToolbar>
+        <IgbGridToolbarActions>
+            <IgbGridToolbarHiding @ref=HidingAction Title="Column Hiding"></IgbGridToolbarHiding>
+        </IgbGridToolbarActions>
+    </IgbGridToolbar>
+</{ComponentSelector}>
 ```
 
 ```html
-<div class="grid__wrapper">
-    <igc-grid id="grid">
-        <igc-grid-toolbar>
-            <igc-grid-toolbar-actions>
-                <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding"></igc-grid-toolbar-hiding>
-            </igc-grid-toolbar-actions>
-        </igc-grid-toolbar>
-    </igc-grid>
-</div>
+<igc-grid id="grid">
+    <igc-grid-toolbar>
+        <igc-grid-toolbar-actions>
+            <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding"></igc-grid-toolbar-hiding>
+        </igc-grid-toolbar-actions>
+    </igc-grid-toolbar>
+</igc-grid>
+```
+
+```tsx
+<IgrGrid>
+    <IgrGridToolbar key="toolbar">
+        <IgrGridToolbarActions key="toolbarActions">
+            <IgrGridToolbarHiding key="toolbarHiding" title="Column Hiding"></IgrGridToolbarHiding>
+        </IgrGridToolbarActions>
+    </IgrGridToolbar>
+</IgrGrid>
 ```
 
 <!-- Angular -->
@@ -313,21 +336,24 @@ export class AppModule {}
 列の `DisableHiding` プロパティを true に設定すると、ユーザーが列非表示 UI によって列を非表示にできません。
 
 ```html
-<div class="gridContainer">
-    <igx-grid>
-        <igx-column [field]="'ContactName'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
-        <igx-column [field]="'ContactTitle'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
-    </igx-grid>
-</div>
+<igx-grid>
+    <igx-column [field]="'ContactName'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
+    <igx-column [field]="'ContactTitle'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
+</igx-grid>
 ```
 
 ```html
-<div class="gridContainer">
-    <igc-grid>
-        <igc-column field="ContactName" data-type="String" sortable="true" disable-hiding="true"></igc-column>
-        <igc-column field="ContactTitle" data-type="String" sortable="true" disable-hiding="true"></igc-column>
-    </igc-grid>
-</div>
+<igc-grid>
+    <igc-column field="ContactName" data-type="String" sortable="true" disable-hiding="true"></igc-column>
+    <igc-column field="ContactTitle" data-type="String" sortable="true" disable-hiding="true"></igc-column>
+</igc-grid>
+```
+
+```tsx
+<IgrGrid>
+    <IgrColumn field="ContactName" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
+    <IgrColumn field="ContactTitle" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
+</IgrGrid>
 ```
 
 ```razor
@@ -487,18 +513,22 @@ $custom-button: button-theme(
 
 <!-- end: Angular -->
 
-<!-- Blazor, WebComponents -->
+<!-- Blazor, WebComponents, React -->
 ## スタイル設定
 
 グリッドは、利用可能な [CSS 変数](../theming.md)の一部を設定することでさらにカスタマイズできます。
 これを実現するために、最初にグリッドに割り当てるクラスを使用します。
 
-```ts
-<igc-grid class="grid">
+```html
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid Class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
 
 次に、関連するコンポーネントに関連する CSS 変数を設定します。スタイルも `igx-column-actions` にのみ適用するので、グリッドの残りの部分は影響を受けません。
@@ -506,32 +536,32 @@ $custom-button: button-theme(
 ```css
 .grid  igx-column-actions {
     /* Main Column Actions styles */
-    --igx-column-actions-background-color: #292826;
-    --igx-column-actions-title-color: #ffcd0f;
+    --ig-column-actions-background-color: #292826;
+    --ig-column-actions-title-color: #ffcd0f;
 
     /* Checkbox styles */
-    --igx-checkbox-tick-color: #292826;
-    --igx-checkbox-label-color: #ffcd0f;
-    --igx-checkbox-empty-color: #ffcd0f;
-    --igx-checkbox-fill-color: #ffcd0f;
+    --ig-checkbox-tick-color: #292826;
+    --ig-checkbox-label-color: #ffcd0f;
+    --ig-checkbox-empty-color: #ffcd0f;
+    --ig-checkbox-fill-color: #ffcd0f;
 
     /* Input styles */
-    --igx-input-group-idle-text-color: white;
-    --igx-input-group-filled-text-color: #ffcd0f;
-    --igx-input-group-focused-text-color: #ffcd0f;
-    --igx-input-group-focused-border-color: #ffcd0f;
-    --igx-input-group-focused-secondary-color: #ffcd0f;
+    --ig-input-group-idle-text-color: white;
+    --ig-input-group-filled-text-color: #ffcd0f;
+    --ig-input-group-focused-text-color: #ffcd0f;
+    --ig-input-group-focused-border-color: #ffcd0f;
+    --ig-input-group-focused-secondary-color: #ffcd0f;
 
     /* Buttons styles */
-    --igx-button-foreground: #292826;
-    --igx-button-background: #ffcd0f;
-    --igx-button-hover-background: #404040;
-    --igx-button-hover-foreground: #ffcd0f;
-    --igx-button-focus-background: #ffcd0f;
-    --igx-button-focus-foreground: black;
-    --igx-button-focus-visible-background: #ffcd0f;
-    --igx-button-focus-visible-foreground: black;
-    --igx-button-disabled-foreground: #ffcd0f;
+    --ig-button-foreground: #292826;
+    --ig-button-background: #ffcd0f;
+    --ig-button-hover-background: #404040;
+    --ig-button-hover-foreground: #ffcd0f;
+    --ig-button-focus-background: #ffcd0f;
+    --ig-button-focus-foreground: black;
+    --ig-button-focus-visible-background: #ffcd0f;
+    --ig-button-focus-visible-foreground: black;
+    --ig-button-disabled-foreground: #ffcd0f;
 }
 ```
 
@@ -539,7 +569,7 @@ $custom-button: button-theme(
 
 `sample="/{ComponentSample}/column-hiding-toolbar-style", height="570", alt="{Platform} {ComponentTitle} 列非表示ツールバーのスタイル"`
 
-<!-- end: Blazor, WebComponents -->
+<!-- end: Blazor, WebComponents, React -->
 
 ## API リファレンス
 

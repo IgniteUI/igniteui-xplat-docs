@@ -15,8 +15,6 @@ The following example represents `Form` that has some inputs, buttons and a chec
 
 `sample="/inputs/form/overview", height="300", alt="{Platform} Form Example"`
 
-
-
 ## Usage
 
 <!-- WebComponents -->
@@ -34,6 +32,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcButtonComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->

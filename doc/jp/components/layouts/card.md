@@ -133,10 +133,10 @@ defineComponents(IgcCardComponent);
             <IgrRipple />
         </IgrButton>
         <div slot="end">
-            <IgrIconButton iconName="twitter" collection="material">
+            <IgrIconButton name="twitter" collection="material">
                 <IgrRipple />
             </IgrIconButton>
-            <IgrIconButton iconName="facebook" collection="material">
+            <IgrIconButton name="facebook" collection="material">
                 <IgrRipple />
             </IgrIconButton>
         </div>
@@ -474,10 +474,10 @@ defineComponents(IgcCardComponent);
         <IgrRipple />
     </IgrButton>
     <div slot="end">
-        <IgrIconButton ref={this.iconRef} className="marginIcon" iconName="twitter" collection="material">
+        <IgrIconButton ref={this.iconRef} className="marginIcon" name="twitter" collection="material">
             <IgrRipple />
         </IgrIconButton>
-        <IgrIconButton iconName="facebook" collection="material">
+        <IgrIconButton name="facebook" collection="material">
             <IgrRipple />
         </IgrIconButton>
     </div>
@@ -516,6 +516,7 @@ igc-icon-button+igc-icon-button {
 
 ### まとめ
 このトピックでは Card コンポーネントの詳細について説明しました。シンプルなカードを作成し、画像をいくつか追加して、もう少し魅力的にしました。カード内にアバター、ボタン、アイコンなどの追加の {Platform} を使用して、エクスペリエンスを充実させ、いくつかの機能を追加しました。そして最後に、基本要素の原色を変更することでカードの外観を変更しました。
+
 
 <div class="divider"></div>
 

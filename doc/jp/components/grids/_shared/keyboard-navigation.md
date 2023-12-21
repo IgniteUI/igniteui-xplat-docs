@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} キーボード ナビゲーション
 
- `{ComponentName}` のキーボード ナビゲーションは、さまざまなキーボード操作をユーザーに提供します。これにより `{ComponentName}` のアクセシビリティが向上し、内部の要素 (セル、行、列ヘッダー、ツールバー、フッターなど) をナビゲートできるようになります。この機能はデフォルトで有効になっています。デフォルトの動作を簡単にオーバーライドするオプションがあります。
+{Platform} {ComponentTitle} の {ProductName} キーボード ナビゲーションは、さまざまなキーボード操作をユーザーに提供します。これにより `{ComponentName}` のアクセシビリティが向上し、内部の要素 (セル、行、列ヘッダー、ツールバー、フッターなど) をナビゲートできるようになります。この機能はデフォルトで有効になっています。デフォルトの動作を簡単にオーバーライドするオプションがあります。
 
 `{ComponentName}` のタブが削減され、ナビゲーションが W3C のアクセシビリティ標準に準拠し、使いやすくなりました。
 
@@ -22,7 +22,7 @@ _language: ja
 * **{ComponentTitle} ページネーター** (有効な場合)
 
 > [!Note]
-> この変更のため、<kbd>tab</kbd> と  <kbd>Shift + Tab</kbd> キーでセル間を移動することは `{ComponentName}` でサポートされなくなりました。
+> この変更のため、<kbd>Tab</kbd> と  <kbd>Shift</kbd> + <kbd>Tab</kbd> キーでセル間を移動することは `{ComponentName}` でサポートされなくなりました。
 > <kbd>Tab</kbd> キーを押すと、**グループ化 / ツール バー** -> **ヘッダー** -> **本体** -> **集計** -> **フッター/ページネーター**の順序にタブ位置を移動します。
 
 > [!Note]
@@ -36,25 +36,25 @@ _language: ja
 
 ### キーの組み合わせ
 
- - <kbd>上矢印</kbd> - ヘッダーで 1 つ上のセルへ移動 (ループなし)複数行レイアウトまたは複数列ヘッダーが定義されている場合のみ使用できます。
- - <kbd>下矢印</kbd> - ヘッダーの 1 つ下のセルに移動 (ラッピングなし)複数行レイアウトまたは複数列ヘッダーが定義されている場合のみ使用できます。
- - <kbd>左矢印</kbd> - 1 つ左のセルへ移動 (ループなし)
- - <kbd>右矢印</kbd> - 1 つ右のセルへ移動 (行間のラッピングなし)
- - <kbd>Ctrl + 左矢印</kbd> - 行の左端のセルへ移動; 複数行レイアウトまたは複数列ヘッダーが有効な場合、同じレベルの左端のセルへ移動
+ - <kbd>↑</kbd> - ヘッダーで 1 つ上のセルへ移動 (ループなし)複数行レイアウトまたは複数列ヘッダーが定義されている場合のみ使用できます。
+ - <kbd>↓</kbd> - ヘッダーの 1 つ下のセルに移動 (ラッピングなし)複数行レイアウトまたは複数列ヘッダーが定義されている場合のみ使用できます。
+ - <kbd>←</kbd> - 1 つ左のセルへ移動 (ループなし)
+ - <kbd>→</kbd> - 1 つ右のセルへ移動 (行間のラッピングなし)
+ - <kbd>Ctrl</kbd> + <kbd>←</kbd> - 行の左端のセルへ移動; 複数行レイアウトまたは複数列ヘッダーが有効な場合、同じレベルの左端のセルへ移動
  - <kbd>Home</kbd> - 行の左端のセルへ移動; 複数行レイアウトまたは複数列ヘッダーが有効な場合、同じレベルの左端のセルへ移動
- - <kbd>Ctrl + 右矢印</kbd> - 行の右端のセルへ移動; 複数行レイアウトまたは複数列ヘッダーが有効な場合、同じレベルの右端のセルへ移動
+ - <kbd>Ctrl</kbd> + <kbd>→</kbd> - 行の右端のセルへ移動; 複数行レイアウトまたは複数列ヘッダーが有効な場合、同じレベルの右端のセルへ移動
  - <kbd>End</kbd> - 行の右端のセルへ移動; 複数行レイアウトまたは複数列ヘッダーが有効な場合、同じレベルの右端のセルへ移動
- - <kbd>Alt + L</kbd> - 詳細フィルタリングが有効な場合、詳細フィルタリング ダイアログを開きます。
- - <kbd>Ctrl + Shift + L</kbd> - 列がフィルター可能な場合、Excel スタイル フィルターまたはデフォルト (行) フィルターを開きます。
- - <kbd>Ctrl + 上矢印</kbd> - アクティブな列ヘッダーを昇順にソートします。列が昇順で既にソートされている場合、ソート状態を削除します。
- - <kbd>Ctrl + 下矢印</kbd> - アクティブな列ヘッダーを降順にソートします。列が降順で既にソートされている場合、ソート状態を削除します。
+ - <kbd>Alt</kbd> + <kbd>L</kbd> - 詳細フィルタリングが有効な場合、詳細フィルタリング ダイアログを開きます。
+ - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd> - 列がフィルター可能な場合、Excel スタイル フィルターまたはデフォルト (行) フィルターを開きます。
+ - <kbd>Ctrl</kbd> + <kbd>↑</kbd> - アクティブな列ヘッダーを昇順にソートします。列が昇順で既にソートされている場合、ソート状態を削除します。
+ - <kbd>Ctrl</kbd> + <kbd>↓</kbd> - アクティブな列ヘッダーを降順にソートします。列が降順で既にソートされている場合、ソート状態を削除します。
  - <kbd>Space</kbd> - 列を選択します。列がすでに選択されている場合、選択を解除します。
  <!-- ComponentStart:Grid -->
- - <kbd>Shift + Alt + 左矢印</kbd> - 列がグループ化可能としてマークされている場合、列をグループ化します。
+ - <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>←</kbd> - 列がグループ化可能としてマークされている場合、列をグループ化します。
  <!-- ComponentEnd:Grid -->
- - <kbd>Shift + Alt + 右矢印</kbd> - 列がグループ化可能としてマークされている場合、列のグループ化を解除します。
- - <kbd>Alt +左矢印</kbd> または <kbd>Alt + 上矢印</kbd> - 列が縮小されていない場合、列グループ ヘッダーを縮小します。
- - <kbd>Alt +右矢印</kbd> または <kbd>Alt + 下矢印</kbd> - 列がまだ展開されていない場合、列グループヘッダーを展開します。
+ - <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>→</kbd> - 列がグループ化可能としてマークされている場合、列のグループ化を解除します。
+ - <kbd>Alt</kbd> + <kbd>←</kbd> または <kbd>Alt</kbd> + <kbd>↑</kbd> - 列が縮小されていない場合、列グループ ヘッダーを縮小します。
+ - <kbd>Alt</kbd> + <kbd>→</kbd> または <kbd>Alt</kbd> + <kbd>↓</kbd> - 列がまだ展開されていない場合、列グループヘッダーを展開します。
 
 ## 本体ナビゲーション
 
@@ -64,37 +64,37 @@ _language: ja
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
-- <kbd>上矢印</kbd> - 1 つ上のセルへ移動。
-- <kbd>下矢印</kbd> - 1 つ下のセルへ移動。
+- <kbd>↑</kbd> - 1 つ上のセルへ移動。
+- <kbd>↓</kbd> - 1 つ下のセルへ移動。
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-- <kbd>上矢印</kbd> - 1 つ上のセルへ移動、必要に応じてグリッド階層の 1 つ上のレベルへ移動 (ラッピングなし)
-- <kbd>下矢印</kbd> - 1 つ下のセルへ移動、必要に応じてグリッド階層の 1 つ下のレベルへ移動 (ラッピングなし)
+- <kbd>↑</kbd> - 1 つ上のセルへ移動、必要に応じてグリッド階層の 1 つ上のレベルへ移動 (ラッピングなし)
+- <kbd>↓</kbd> - 1 つ下のセルへ移動、必要に応じてグリッド階層の 1 つ下のレベルへ移動 (ラッピングなし)
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
- - <kbd>左矢印</kbd> - 1 つ左のセルへ移動 (行間のラッピングなし)
- - <kbd>右矢印</kbd> - 1 つ右のセルへ移動 (行間のラッピングなし)
- - <kbd>Ctrl + 左矢印</kbd> - 行の左端のセルへ移動
- - <kbd>Ctrl + 右矢印</kbd> - 行の右端のセルへ移動
- - <kbd>Ctrl + 上矢印</kbd> - 列の最初のセルへ移動
- - <kbd>Ctrl + 下矢印</kbd> - 列の最後のセルへ移動
+ - <kbd>←</kbd> - 1 つ左のセルへ移動 (行間のラッピングなし)
+ - <kbd>→</kbd> - 1 つ右のセルへ移動 (行間のラッピングなし)
+ - <kbd>Ctrl</kbd> + <kbd>←</kbd> - 行の左端のセルへ移動
+ - <kbd>Ctrl</kbd> + <kbd>→</kbd> - 行の右端のセルへ移動
+ - <kbd>Ctrl</kbd> + <kbd>↑</kbd> - 列の最初のセルへ移動
+ - <kbd>Ctrl</kbd> + <kbd>↓</kbd> - 列の最後のセルへ移動
  - <kbd>Home</kbd> - 行の左端のセルへ移動
  - <kbd>End</kbd> - 行の右端のセルへ移動
- - <kbd>Ctrl + Home</kbd> - グリッドの最も左上のデータ セルへ移動
- - <kbd>Ctrl + End</kbd> - グリッドの最も右下のデータ セルへ移動
+ - <kbd>Ctrl</kbd> + <kbd>Home</kbd> - グリッドの最も左上のデータ セルへ移動
+ - <kbd>Ctrl</kbd> + <kbd>End</kbd> - グリッドの最も右下のデータ セルへ移動
  - <kbd>Page Up</kbd> - 1 ページ (ビューポート) 上へスクロール
  - <kbd>Page Down</kbd> - 1 ページ (ビューポート) 下へスクロール
  - <kbd>Enter</kbd> - 編集モードに入る
  - <kbd>F2</kbd> - 編集モードに入る
  - <kbd>Esc</kbd> - 編集モードを終了する
  - <kbd>Tab</kbd> - 編集モードのセルがある場合のみ使用できます。行の次の編集可能なセルにフォーカスを移動します。行の最後のセルに達した場合、フォーカスを次の行の最初の編集可能なセルに移動します。[行編集](row-editing.md)が有効な場合、フォーカスを編集可能な一番右のセルから **[キャンセル]** および **[完了]** ボタンへ移動し、**[完了]** ボタンから行の一番左の編集可能なセルへ移動します。
- - <kbd>Shift + Tab</kbd> - 編集モードのセルがある場合のみ使用できます。行の一つ前の編集可能なセルにフォーカスを移動します。行の最初のセルに達した場合、フォーカスを前の行の最後の編集可能なセルに移動します。[行編集](row-editing.md)が有効な場合、フォーカスを編集可能な一番右のセルから **[キャンセル]** および **[完了]** ボタンへ移動し、**[完了]** ボタンから行の一番右の編集可能なセルへ移動します。
+ - <kbd>Shift</kbd> + <kbd>Tab</kbd> - 編集モードのセルがある場合のみ使用できます。行の一つ前の編集可能なセルにフォーカスを移動します。行の最初のセルに達した場合、フォーカスを前の行の最後の編集可能なセルに移動します。[行編集](row-editing.md)が有効な場合、フォーカスを編集可能な一番右のセルから **[キャンセル]** および **[完了]** ボタンへ移動し、**[完了]** ボタンから行の一番右の編集可能なセルへ移動します。
  - <kbd>Space</kbd> - [行の選択](row-selection.md)が有効な場合、行を選択します。
- - <kbd>Alt + 左矢印</kbd> または <kbd>Alt + 上矢印</kbd> -
+ - <kbd>Alt</kbd> + <kbd>←</kbd> または <kbd>Alt</kbd> + <kbd>↑</kbd> -
  <!-- ComponentStart: Grid -->
   グループ行はグループを縮小します。
  <!-- ComponentEnd: Grid -->
@@ -104,7 +104,7 @@ _language: ja
  <!-- ComponentStart: TreeGrid -->
   現在のノードを縮小します。
  <!-- ComponentEnd: TreeGrid -->
- - <kbd>Alt + 右矢印</kbd> または <kbd>Alt + 下矢印</kbd> -  <!-- ComponentStart: Grid -->
+ - <kbd>Alt</kbd> + <kbd>→</kbd> または <kbd>Alt</kbd> + <kbd>↓</kbd> -  <!-- ComponentStart: Grid -->
   グループ行はグループを展開します。
  <!-- ComponentEnd: Grid -->
  <!-- ComponentStart: HierarchicalGrid -->
@@ -114,24 +114,23 @@ _language: ja
   現在のノードを展開します。
  <!-- ComponentEnd: TreeGrid -->
  <!-- ComponentStart: Grid -->
- - <kbd>Alt + 左矢印</kbd> または <kbd>Alt + 上矢印</kbd> - マスター/詳細行で詳細ビューを縮小します。
- - <kbd>Alt + 右矢印</kbd> または <kbd>Alt + 下矢印</kbd> - マスター/詳細行で詳細ビューを展開します。
+ - <kbd>Alt</kbd> + <kbd>←</kbd> または <kbd>Alt</kbd> + <kbd>↑</kbd> - マスター/詳細行で詳細ビューを縮小します。
+ - <kbd>Alt</kbd> + <kbd>→</kbd> または <kbd>Alt</kbd> + <kbd>↓</kbd> - マスター/詳細行で詳細ビューを展開します。
  - <kbd>Space</kbd> - グループ行上 - `RowSelection` プロパティが複数に設定されている場合、グループ内のすべての行を選択します。
  <!-- ComponentEnd: Grid -->
 
 
-<!-- Angular -->
 
 以下のデモサンプルで上記のすべての操作を実行できます。ナビゲーション可能なグリッド要素をフォーカスすると、利用可能な操作のリストが表示されます。
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 
 ## デモ
 
 
 `sample="/{ComponentSample}/keyboard-navigation-guide", height="600", alt="{Platform} {ComponentTitle} キーボード ナビゲーション ガイド"`
 
-<!-- end: Angular, WebComponents -->
+<!-- end: Angular, WebComponents, React -->
 
 ## カスタム キーボード ナビゲーション
 
@@ -187,6 +186,11 @@ igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
 }, false);
 ```
 
+```tsx
+<{ComponentSelector} id="grid1" primaryKey="ProductID" gridKeydown={customKeydown}>
+</{ComponentSelector}>
+```
+
 ```ts
 constructor() {
         var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
@@ -198,6 +202,24 @@ constructor() {
         this._bind();
 
     }
+```
+
+```typescript
+function customKeydown(s: IgrGridBaseDirective, e: IgrGridKeydownEventArgs) {
+  const detail = e.detail
+  const target= detail.target;
+  const evt = detail.event;
+  const type = detail.targetType;
+
+  if (type === GridKeydownTargetType.DataCell && target.editMode && evt.key.toLowerCase() === 'tab') {
+      // 1. USER INPUT VALIDATION ON TAB
+      
+  }
+  if (type === GridKeydownTargetType.DataCell && evt.key.toLowerCase() === 'enter') {
+      // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
+
+  }
+}
 ```
 <!-- ComponentEnd: Grid -->
 
@@ -217,9 +239,13 @@ public customKeydown(args: any) {
     }
 }
 ```
+<!-- Angular, WebComponents, Blazor -->
 
 イベント引数の値に基づいて、独自のロジックを提供する 2つ のケースを識別しました (上記を参照)。API のメソッドを使用して、目的の処理を実行しましょう。ユーザーが編集モードでセル上で <kbd>Tab</kbd> キーを押している場合、入力の検証を実行します。ユーザーがセル上で <kbd>Enter</kbd> キーを押すと、次の行のセルへフォーカスを移動します。
 
+<!-- end: Angular, WebComponents, Blazor -->
+
+<!-- Angular, WebComponents -->
 ```typescript
     // 1. USER INPUT VALIDATION ON TAB
     if (target.column.dataType === 'number' && target.editValue < 10) {
@@ -231,6 +257,20 @@ public customKeydown(args: any) {
             obj.target.activate();
         });
 ```
+<!-- end: Angular, WebComponents -->
+
+<!-- React -->
+
+イベント引数の値に基づいて、独自のロジックを提供する 2 つのケースを特定しました (上記を参照)。API のメソッドを使用して、目的の処理を実行しましょう。ユーザーが編集モードのセル上で <kbd>Tab</kbd> キーを押すと、入力の検証を実行します。
+
+```typescript
+    // 1. USER INPUT VALIDATION ON TAB
+    if (target.column.dataType === 'number' && target.editValue < 10) {
+        // alert the user that the input is invalid
+        return;
+    }
+```
+<!-- end: React -->
 
 ```razor
 
@@ -260,7 +300,7 @@ igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
 > 実装の詳細は、サンプルコードを参照してください。
 
 実装したカスタム シナリオを試すには以下のデモを使用してください。
-- **Grammy Nominations** 列のセルをダブルクリックするか <kbd>F2</kbd> キーを押し、値を `-2` に変更して <kbd>Tab</kbd> キーを押します。プロンプト メッセージが表示されます。
+- 数値列のセルをダブルクリックするか <kbd>F2</kbd> キーを押し、値を **7** に変更して <kbd>Tab</kbd> キーを押します。プロンプト メッセージが表示されます。
 - セルを選択して <kbd>Enter</kbd> キー を数回押します。キーを押すたびに、同じ列の下にある次の行のセルへフォーカスを移動します。
 
 #### デモ

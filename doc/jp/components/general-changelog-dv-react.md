@@ -10,6 +10,15 @@ namespace: Infragistics.Controls.Charts
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
+## **{PackageVerChanges-23-2}**
+
+### 新しいコンポーネント
+
+* [Grid](grids/data-grid.md) - これは新しい完全に機能するクロスプラットフォーム グリッドで、フィルタリング、ソート、テンプレート、行の選択、行のグループ化、行のピン固定、移動可能な列などの機能が含まれています。
+
+### 非推奨のコンポーネント
+> [DataGrid](grids/data-grid/overview.md) - DataGrid は非推奨です。[Grid](grids/data-grid.md) を参照してください。
+
 ## **{PackageVerChanges-23-1}**
 
 ### 新しいコンポーネント
@@ -18,7 +27,7 @@ namespace: Infragistics.Controls.Charts
 
 ### {PackageCharts} チャート
 
-* [ValueLayer](charts/features/chart-overlays.md#{PlatformLower}-value-layer) - `ValueLayer` という名前の新しいシリーズ タイプが公開されました。 これにより、Maximum、Minimum、Average など、プロットされたデータのさまざまな焦点のオーバーレイを描画できます。これは、新しい `ValueLines` コレクションに追加することで、`CategoryChart` と `FinancialChart` に適用されます。
+* [ValueLayer](charts/features/chart-overlays.md#{PlatformLower}-value-layer) - `ValueLayer` という名前の新しいシリーズ タイプが公開されました。これにより、Maximum、Minimum、Average など、プロットされたデータのさまざまな焦点のオーバーレイを描画できます。これは、新しい `ValueLines` コレクションに追加することで、`CategoryChart` と `FinancialChart` に適用されます。
 
 * **ダッシュ配列**を `XamDataChart` のシリーズのさまざまな部分に適用できるようになりました。これは、チャートにプロットされた[シリーズ](charts/types/line-chart.md#{PlatformLower}-折れ線チャートのスタイル設定)、チャートの[グリッド線](charts/features/chart-axis-gridlines.md#{PlatformLower}-軸グリッド線のプロパティ)、およびチャートにプロットされたシリーズの[トレンドライン](charts/features/chart-trendlines.md#{PlatformLower}-チャート-トレンドラインのダッシュ配列の例)に適用できます。
 

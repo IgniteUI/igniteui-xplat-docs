@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Sorting
 
-In {Platform} `{ComponentName}`, data sorting is enabled on a per-column level, meaning that the `{ComponentName}` can have a mix of sortable and non-sortable columns. Performing {Platform} sort actions enables you to change the display order of the records based on specified criteria.
+The {ProductName} Data Sorting feature in {Platform} {ComponentTitle} is enabled on a per-column level, meaning that the `{ComponentName}` can have a mix of sortable and non-sortable columns. Performing {Platform} sort actions enables you to change the display order of the records based on specified criteria.
 
 <!-- Angular -->
 
@@ -43,6 +43,10 @@ This is done via the `Sortable` input. With the `{ComponentName}` sorting, you c
 <igc-column field="ProductName" header="Product Name" data-type="string" sortable="true"></igc-column>
 ```
 
+```tsx
+<IgrColumn field="ProductName" header="Product Name" dataType="string" sortable="true"></IgrColumn>
+```
+
 ## Sorting Indicators
 
 Having a certain amount of sorted columns could be really confusing if there is no indication of the sorted order.
@@ -71,6 +75,10 @@ import { SortingDirection } from 'igniteui-angular';
 import { SortingDirection } from 'igniteui-webcomponents-grids';
 ```
 <!-- end: WebComponents -->
+
+```tsx
+import { SortingDirection } from "igniteui-react-grids";
+```
 
 <!-- Angular -->
 ```typescript
@@ -119,17 +127,40 @@ this.grid.sort([
 }
 ```
 
+
+```tsx
+// Perform a case insensitive ascending sort on the ProductName column.
+gridRef.current.sort([{ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true }]);
+
+// Perform sorting on both the ProductName and Price columns.
+gridRef.current.sort([
+    { fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true },
+    { fieldName: 'Price', dir: SortingDirection.Desc }
+]);
+```
+
+
 > [!Note]
 > Sorting is performed using our `DefaultSortingStrategy` algorithm. Any `Column` or `ISortingExpression` can use a custom implementation of the `ISortingStrategy` as a substitute algorithm. This is useful when custom sorting needs to be defined for complex template columns, or image columns, for example.
 
 As with the filtering behavior, you can clear the sorting state by using the `ClearSort` method:
 
+<!-- Angular, WebComponents -->
 ```typescript
 // Removes the sorting state from the ProductName column
 this.grid.clearSort('ProductName');
 
 // Removes the sorting state from every column in the {ComponentTitle}
 this.grid.clearSort();
+```
+<!-- end: Angular, WebComponents -->
+
+```tsx
+// Removes the sorting state from the ProductName column
+gridRef.current.clearSort('ProductName');
+
+// Removes the sorting state from every column in the {ComponentTitle}
+gridRef.current.clearSort();
 ```
 
 ```razor
@@ -191,6 +222,15 @@ public connectedCallback() {
 ```
 <!-- end: WebComponents -->
 
+```tsx
+useEffect(() => {
+    gridRef.current.sortingExpressions = [
+        { fieldName: 'UnitsInStock', dir: SortingDirection.Asc, ignoreCase: true },
+        { fieldName: 'ProductName', dir: SortingDirection.Desc }
+    ];
+}, [])
+```
+
 > [!Note]
 > If values of type `string` are used by a column of `DataType` `Date`, the `{ComponentName}` won't parse them to `Date` objects and using `{ComponentName}` `Sorting` won't work as expected. If you want to use `string` objects, additional logic should be implemented on an application level, in order to parse the values to `Date` objects.
 
@@ -242,6 +282,18 @@ public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
 }
 ```
 
+```tsx
+function sortHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
+    return (
+        <>
+            <IgrIcon name='unfold_more'></IgrIcon>
+        </>
+    );
+}
+
+<IgrGrid sortHeaderIconTemplate={sortHeaderIconTemplate}></IgrGrid>
+```
+
 <!-- Angular -->
 
 - `IgxSortAscendingHeaderIconDirective` – re-templates the sorting icon when the column is sorted in ascending order.
@@ -277,6 +329,18 @@ constructor() {
 public sortAscendingHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
     return html`<igc-icon name="expand_less"></igc-icon>`;
 }
+```
+
+```tsx
+function sortAscendingHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
+    return (
+        <>
+            <IgrIcon name='expand_less'></IgrIcon>
+        </>
+    );
+}
+
+<IgrGrid sortAscendingHeaderIconTemplate={sortAscendingHeaderIconTemplate}></IgrGrid>
 ```
 
 <!-- Angular -->
@@ -315,6 +379,18 @@ constructor() {
 public sortDescendingHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
     return html`<igc-icon name="expand_more"></igc-icon>`;
 }
+```
+
+```tsx
+function sortDescendingHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
+    return (
+        <>
+            <IgrIcon name='expand_more'></IgrIcon>
+        </>
+    );
+}
+
+<IgrGrid sortDescendingHeaderIconTemplate={sortDescendingHeaderIconTemplate}></IgrGrid>
 ```
 
 <!-- Angular -->
@@ -425,18 +501,25 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 ## Styling
 
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
 ```html
-<igc-grid class="grid"></igc-grid>
+<{ComponentSelector} class="grid">
+</{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid class="grid"></IgbGrid>
+<{ComponentSelector} class="grid">
+</{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid">
+</{ComponentSelector}>
 ```
 
 Then set the related CSS properties to this class:
@@ -451,7 +534,7 @@ Then set the related CSS properties to this class:
 
 `sample="/{ComponentSample}/column-sorting-style", height="550", alt="{Platform} {ComponentTitle} column sorting style"`
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 ## API References
 

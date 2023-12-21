@@ -254,6 +254,11 @@ Trend Actions
  - `ShowCrosshairs`: A `ToolActionCheckbox` that toggles mouse-over crosshair annotations via the chart's `CrosshairsDisplayMode` property.
  - `ShowGridlines`: A `ToolActionCheckbox` that toggles extra gridlines by applying a `MajorStroke` to the X-Axis.
 
+Save to Image Action
+
+- `CopyAsImage`: A `ToolActionLabel` that exposes an option to copy the chart to the clipboard.
+ - `CopyHeader`: A sub section header.
+
 ### Vertical Orientation
 
 By default the {Platform} Toolbar is shown horizontally, but it also has the ability to shown vertically by setting the `Orientation` property.
@@ -273,8 +278,8 @@ By default the {Platform} Toolbar is shown horizontally, but it also has the abi
 ```tsx
 <IgrToolbar orientation="Vertical" />
 ```
-<!-- The following example demonstrates the vertical orientation of the {Platform} Toolbar.
-`sample="/charts/toolbar/layout-in-vertical-orientation", height="600", alt="{Platform} Verical Orientation"` -->
+The following example demonstrates the vertical orientation of the {Platform} Toolbar.
+`sample="/charts/toolbar/layout-in-vertical-orientation", height="600", alt="{Platform} Verical Orientation"`
 
 <!-- ## Styling/Theming
 
