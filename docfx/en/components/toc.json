@@ -716,7 +716,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Row Actions",
         "href": "grids/tree-grid/row-actions.md",
         "status": "NEW"
