@@ -1,27 +1,28 @@
-{"types":[
-  { "originalName":"DataGridToolbar",
-    "names":[{"platform":"Blazor","fileName":"DataGridToolbar.cs","mappedName":"IgbDataGridToolbar"}],
+{  "types":[
+  {
+    "originalName": "DataGridToolbar",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-grids",
+    "names":[{"platform": "Blazor","fileName": "DataGridToolbar.cs","mappedName": "IgbDataGridToolbar"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"IgbDataGrid","mappedName":"TargetGrid"}],"originalName":"TargetGrid"},
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ToolbarTitle"}],"originalName":"ToolbarTitle"},
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ToolbarTitleColor"}],"originalName":"ToolbarTitleColor"},
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"BackgroundColor"}],"originalName":"BackgroundColor"},
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"DialogBackgroundColor"}],"originalName":"DialogBackgroundColor"},
-    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ColumnChooser"}],"originalName":"ColumnChooser"},
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ColumnChooserText"}],"originalName":"ColumnChooserText"},
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ColumnChooserTitle"}],"originalName":"ColumnChooserTitle"},
-    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ColumnPinning"}],"originalName":"ColumnPinning"},
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ColumnPinningText"}],"originalName":"ColumnPinningText"},
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ColumnPinningTitle"}],"originalName":"ColumnPinningTitle"},
-    { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthBottom"}],"originalName":"borderWidth.bottom"},
-    { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthLeft"}],"originalName":"borderWidth.left"},
-    { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthRight"}],"originalName":"borderWidth.right"},
-    { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthTop"}],"originalName":"borderWidth.top"},
-    { "names":[{"platform":"Blazor","mappedType":"ControlDisplayDensity","mappedName":"Density"}],"originalName":"Density"},
-    { "names":[{"platform":"Blazor","mappedType":"BaseControlTheme","mappedName":"BaseTheme"}],"originalName":"BaseTheme"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportVisualModel"}],"originalName":"ExportVisualModel"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "BackgroundColor"}], "originalName": "BackgroundColor"},
+      {"names":[{"platform": "Blazor", "mappedType": "BaseControlTheme","mappedName": "BaseTheme"}], "originalName": "BaseTheme"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ColumnChooser"}], "originalName": "ColumnChooser"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ColumnChooserText"}], "originalName": "ColumnChooserText"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ColumnChooserTitle"}], "originalName": "ColumnChooserTitle"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ColumnPinning"}], "originalName": "ColumnPinning"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ColumnPinningText"}], "originalName": "ColumnPinningText"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ColumnPinningTitle"}], "originalName": "ColumnPinningTitle"},
+      {"names":[{"platform": "Blazor", "mappedType": "ControlDisplayDensity","mappedName": "Density"}], "originalName": "Density"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "DialogBackgroundColor"}], "originalName": "DialogBackgroundColor"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportSerializedVisualModel"}], "originalName": "ExportSerializedVisualModel"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportVisualModel"}], "originalName": "ExportVisualModel"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbDataGrid","mappedName": "TargetGrid"}], "originalName": "TargetGrid"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ToolbarTitle"}], "originalName": "ToolbarTitle"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ToolbarTitleColor"}], "originalName": "ToolbarTitleColor"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BorderWidthBottom"}], "originalName": "borderWidth.bottom"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BorderWidthLeft"}], "originalName": "borderWidth.left"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BorderWidthRight"}], "originalName": "borderWidth.right"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BorderWidthTop"}], "originalName": "borderWidth.top"} ]
+  }]
+}

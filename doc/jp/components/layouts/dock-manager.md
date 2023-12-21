@@ -6,7 +6,7 @@ _language: ja
 mentionedTypes: ["DockManager", "DocumentHost", "DockManagerLayout", "DockManagerPaneType", "ContentPane", "SplitPane", "TabGroupPane", "PinnedLocation", "PaneHeaderElement"]
 ---
 
-# {Platform} ドック マネージャーの概要
+# {Platform} Dock Manager (ドック マネージャー) の概要
 
 Infragistics {Platform} Dock Manager は、ペインでアプリケーションのレイアウトを管理する方法を提供します。エンド ユーザーはペインをピン固定、サイズ変更、移動、最大化、非表示にすることでカスタマイズできます。
 
@@ -443,11 +443,7 @@ igc-dockmanager::part(pane-header-maximize-button) {
 
 すべて適切に設定できると、カスタマイズされたアイコンとタブ領域を持つ DockManager が表示されます。以下は結果です。
 
-<!-- WebComponents -->
 `sample="/layouts/dock-manager/customize-buttons", height="700", alt="{Platform} Dock Manager カスタマイズ ボタンの例"`
-
-
-<!-- end: WebComponents -->
 
 以下は、すべてのボタンとスプリッター ハンドルのスロット名のリストです。
 
@@ -517,18 +513,18 @@ igc-dockmanager::part(pane-header-maximize-button) {
 
 ### ドッキング
 
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>上矢印</kbd> グローバルの上へのドック。
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>下矢印</kbd> グローバルの下へのドック。
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>右矢印</kbd> グローバルの右へのドック。
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>左矢印</kbd> グローバルのの左へのドック。
-- <kbd>Shift</kbd> + <kbd>上矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが上にドッキングされます。
-- <kbd>Shift</kbd> + <kbd>下矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが下にドッキングされます。
-- <kbd>Shift</kbd> + <kbd>右矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが右にドッキングされます。
-- <kbd>Shift</kbd> + <kbd>左矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが左にドッキングされます。
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd> グローバルの上へのドック。
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↓</kbd> グローバルの下へのドック。
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>→</kbd> グローバルの右へのドック。
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd> グローバルのの左へのドック。
+- <kbd>Shift</kbd> + <kbd>↑</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが上にドッキングされます。
+- <kbd>Shift</kbd> + <kbd>↓</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが下にドッキングされます。
+- <kbd>Shift</kbd> + <kbd>→</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが右にドッキングされます。
+- <kbd>Shift</kbd> + <kbd>←</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが左にドッキングされます。
 
 ### ナビゲーション
- - <kbd>Cmd/Ctrl</kbd> + <kbd>F6</kbd> または <kbd>Cmd/Ctrl</kbd> + <kbd>右矢印</kbd> ドキュメント ホストの次のタブにフォーカスします。
- - <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> または <kbd>Cmd/Ctrl</kbd> + <kbd>左矢印</kbd> ドキュメント ホストの前のタブにフォーカスします。
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>F6</kbd> または <kbd>Cmd/Ctrl</kbd> + <kbd>→</kbd> ドキュメント ホストの次のタブにフォーカスします。
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> または <kbd>Cmd/Ctrl</kbd> + <kbd>←</kbd> ドキュメント ホストの前のタブにフォーカスします。
  - <kbd>Alt</kbd> + <kbd>F6</kbd> 次のコンテンツ ペインにフォーカスします。
  - <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> 前のコンテンツ ペインにフォーカスします。
 
@@ -545,8 +541,6 @@ igc-dockmanager::part(pane-header-maximize-button) {
  - <kbd>Alt</kbd> + <kbd>F3</kbd> アクティブなペインを閉じます。
 
 サンプル [demo](dock-manager.md#{PlatformLower}-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
-
-<!-- WebComponents -->
 
 ## スタイル設定
 
@@ -616,6 +610,7 @@ igc-dockmanager::part(content-pane) {
 | `splitter-handle` | スプリッターのハンドル。 |
 | `horizontal` | 水平位置を示します。`splitter-handle` に適用されます。 |
 | `vertical` | 垂直位置を示します。`splitter-handle` に適用されます。 |
+<!-- WebComponents -->
 
 ## テーマ
 
@@ -631,7 +626,7 @@ igc-dockmanager::part(content-pane) {
 
 ## ローカライズ
 
-ドック マネージャー コンポーネントは、コンテキスト メニュー、ツールチップ、および aria 属性で使用される文字列のローカライズをサポートします。デフォルトでは、ドック マネージャー はその親の [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) 属性を検索してページの言語を検出します。[lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) 属性が設定されていないか、ドック マネージャーがサポートしない値に設定されている場合、デフォルトの言語は [英語  (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN) です。ドック マネージャーは、[英語  (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN)、[日本語  (jp)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsJP)、[韓国語  (ko)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsKO)、[スペイン語  (es)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsES) の組み込みローカライズ文字列を提供します。その他の言語のリソース文字列を提供するには、[addResourceStrings]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#addResourceStrings) メソッドを使用します。
+ドック マネージャー コンポーネントは、コンテキスト メニュー、ツールチップ、および aria 属性で使用される文字列のローカライズをサポートします。デフォルトでは、ドック マネージャー はその親の [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) 属性を検索してページの言語を検出します。[lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) 属性が設定されていないか、ドック マネージャーがサポートしない値に設定されている場合、デフォルトの言語は [英語 (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN) です。ドック マネージャーは、[英語 (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN)、[日本語 (jp)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsJP)、[韓国語 (ko)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsKO)、[スペイン語 (es)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsES) の組み込みローカライズ文字列を提供します。その他の言語のリソース文字列を提供するには、[addResourceStrings]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#addResourceStrings) メソッドを使用します。
 
 ```ts
 import { addResourceStrings } from 'igniteui-dockmanager';

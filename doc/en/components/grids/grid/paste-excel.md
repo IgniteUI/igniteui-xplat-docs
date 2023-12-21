@@ -12,7 +12,7 @@ The {ProductName} `Grid` can read Excel data that is copied to the clipboard. In
 ## {Platform} Paste from Excel Example
 
 This sample demonstrates how to implement pasting from Excel into the `Grid` Material UI table.
-To work with the sample open up any Excel spreadsheet, copy some rows, and paste it into the grid using the keyboard (Ctrl + V, Shift + Insert, Command + V).
+To work with the sample open up any Excel spreadsheet, copy some rows, and paste it into the grid using the keyboard (<kbd>Ctrl</kbd> + <kbd>V</kbd>, <kbd>Shift</kbd> + <kbd>Insert</kbd>,<kbd>Command</kbd> + <kbd>V</kbd>).
 
 On the top there is a dropdown button with 2 options:
 <ol>

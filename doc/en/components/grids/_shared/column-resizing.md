@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform}  {ComponentTitle} Column Resizing Overview
 
-With deferred grid column resizing, the user will see a temporary resize indicator while the {Platform} drag resizing operation is in effect. In the `{ComponentName}`, new column width is applied once the drag operation has ended.
+The {ProductName} Column Resizing feature in {Platform} {ComponentTitle} allows users to easily adjust the width of the columns of the `{ComponentName}`. By default, they will see a temporary resize indicator while the drag resizing operation is in effect. There are several resizing options available - Resizing Columns in Pixels/Percentages, Restrict Column Resizing, Auto-Size Columns on Double Click, and Auto-Size Columns on Initialization.
 
 ## {Platform}  {ComponentTitle} Column Resizing Example
 
@@ -33,6 +33,10 @@ With deferred grid column resizing, the user will see a temporary resize indicat
 <igc-column field="ID" width="100px" resizable="true"></igc-column>
 ```
 
+```tsx
+<IgrColumn field="ID" resizable="true" width="100px"></IgrColumn>
+```
+
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -47,6 +51,10 @@ With deferred grid column resizing, the user will see a temporary resize indicat
 
 ```html
 <igc-column field="Artist" resizable="true"></igc-column>
+```
+
+```tsx
+<IgrColumn field="Artist" resizable="true"></IgrColumn>
 ```
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -75,23 +83,18 @@ You can subscribe to the `ColumnResized` event of the `{ComponentName}` to imple
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-
-    this._bind = () => {
-        grid1.data = this.data;
-        grid1.columnResized = this.onResize;
-    }
-    this._bind();
+    grid1.data = this.data;
+    grid1.columnResized = this.onResize;
 }
-```
-<!-- end: WebComponents -->
 
-```typescript
 public onResize(event) {
     this.col = event.column;
     this.pWidth = event.prevWidth;
     this.nWidth = event.newWidth;
 }
+
 ```
+<!-- end: WebComponents -->
 
 ```razor
 <{ComponentSelector} Data=data AutoGenerate=false ColumnResized="onResize">
@@ -107,6 +110,19 @@ public onResize(event) {
         string nWidth = args.Detail.NewWidth;
     }
 }
+```
+
+```tsx
+function onResize(grid: IgrGridBaseDirective, event: IgrColumnMovingEventArgs) {
+  IgrColumn col = event.detail.column;
+  string pWidth = event.detail.prevWidth;
+  string nWidth = event.detail.newWidth;
+}
+
+<{ComponentSelector} id="grid" autoGenerate="false" columnResized={onResize}>
+    <IgrColumn field="ID" width="100px" resizable="true"></IgrColumn>
+    <IgrColumn field="CompanyName" width="100px" resizable="true"></IgrColumn>
+</{ComponentSelector}>
 ```
 
 <!-- ComponentEnd: Grid -->
@@ -132,12 +148,8 @@ public onResize(event) {
 ```ts
 constructor() {
     var treeGrid = this.treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
-
-    this._bind = () => {
-        treeGrid.data = this.data;
-        treeGrid.columnResized = this.onResize;
-    }
-    this._bind();
+    treeGrid.data = this.data;
+    treeGrid.columnResized = this.onResize;
 }
 ```
 <!-- end: WebComponents -->
@@ -186,12 +198,8 @@ public onResize(event) {
 ```ts
 constructor() {
     var hierarchicalGrid = this.hierarchicalGrid = document.getElementById('hierarchicalGrid') as IgcHierarchicalGridComponent;
-
-    this._bind = () => {
-        hierarchicalGrid.data = this.data;
-        hierarchicalGrid.columnResized = this.onResize;
-    }
-    this._bind();
+    hierarchicalGrid.data = this.data;
+    hierarchicalGrid.columnResized = this.onResize;
 }
 ```
 
@@ -239,6 +247,14 @@ This means that the following configuration is possible:
     <igc-column field="CompanyName" width="100px" resizable="true"></igc-column>
     <igc-column field="ContactTitle" resizable="true"></igc-column>
 </igc-grid>
+```
+
+```tsx
+<IgrGrid id="grid" auto-generate="false">
+    <IgrColumn field="ID" width="10%" resizable="true"></IgrColumn>
+    <IgrColumn field="CompanyName" width="100px" resizable="true"></IgrColumn>
+    <IgrColumn field="ContactTitle" resizable="true"></IgrColumn>
+</IgrGrid>
 ```
 
 <!-- ComponentEnd: Grid -->
@@ -319,6 +335,11 @@ You can also configure the minimum and maximum allowable column widths. This is 
             min-width="60px" max-width="230px"></igc-column>
 ```
 
+```tsx
+<IgrColumn field="ID" width="100px" resizable="true"
+            min-width="60px" max-width="230px"></IgrColumn>
+```
+
 ```razor
 <IgbColumn Field="ContactTitle" Resizable=true Width="100px" MinWidth="60px" MaxWidth="230px"></IgbColumn>
 ```
@@ -336,6 +357,11 @@ This means the following configurations are possible:
             min-width="60px" max-width="230px"></igc-column>
 ```
 
+```tsx
+<IgrColumn field="ID" width="10%" resizable="true"
+            min-width="60px" max-width="230px"></IgrColumn>
+```
+
 ```razor
 <IgbColumn Field="ContactTitle" Resizable=true Width="10%" MinWidth="60px" MaxWidth="230px"></IgbColumn>
 ```
@@ -349,6 +375,11 @@ or
 ```html
 <igc-column field="ID" width="100px" resizable="true"
             min-width="5%" max-width="15%"></igc-column>
+```
+
+```tsx
+<IgrColumn field="ID" width="100px" resizable="true"
+            min-width="5%" max-width="15%"></IgrColumn>
 ```
 
 ```razor
@@ -373,12 +404,13 @@ column.autosize();
 ```typescript
 constructor() {
     var id = this.id = document.getElementById('ID') as IgcColumnComponent;
-
-    this._bind = () => {
-        id.autosize();
-    }
-    this._bind();
+    id.autosize();
 }
+```
+
+```tsx
+    const column = grid.getColumnByName('ID');
+    column.autosize();
 ```
 
 ```razor
@@ -403,6 +435,10 @@ Each column can be set to auto-size on initialization by setting `Width` to 'aut
 
 ```html
 <igc-column width='auto'>
+```
+
+```tsx
+<IgrColumn width='auto'>
 ```
 
 ```razor
@@ -465,7 +501,7 @@ Then set the related CSS properties for that class:
 
 ```css
 #grid {
-    --ig-grid-resize-line-color: #0288D1;
+    --resize-line-color: #0288D1;
 }
 ```
 
@@ -475,7 +511,7 @@ Then set the related CSS properties for that class:
 
 ```css
 #treeGrid {
-    --ig-grid-resize-line-color: #0288D1;
+    --resize-line-color: #0288D1;
 }
 ```
 
@@ -485,7 +521,7 @@ Then set the related CSS properties for that class:
 
 ```css
 #hierarchicalGrid {
-    --ig-grid-resize-line-color: #0288D1;
+    --resize-line-color: #0288D1;
 }
 ```
 
@@ -493,7 +529,7 @@ Then set the related CSS properties for that class:
 
 ### Styling Example
 
-`sample="/{ComponentSample}/column-resize-styling", height="650", alt="{Platform} {ComponentTitle} Cell Editing Styling Example"`
+`sample="/{ComponentSample}/cell-editing-style", height="650", alt="{Platform} {ComponentTitle} Cell Editing Styling Example"`
 
 <!-- end: WebComponents, Blazor -->
 
@@ -599,6 +635,39 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
+
+<!-- WebComponents, Blazor, React -->
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In case you would like to change the color of the resize handle, you need to set a class for the grid first:
+
+```html
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
+```
+
+```razor
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+Then set the related CSS property for that class:
+
+```css
+.grid {
+    --ig-grid-resize-line-color: #f35b04;
+}
+```
+
+### Demo
+
+`sample="/{ComponentSample}/column-resizing-styling", height="550", alt="{Platform} {ComponentTitle} Column Resizing Styling Example"`
+
+<!-- end: WebComponents, Blazor, React -->
+
 
 ## API References
 

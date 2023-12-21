@@ -2,7 +2,7 @@
 title: {Platform} Charts & Graphs Library | {ProductName}
 _description: {ProductName} Charts & Graphs is an extensive library of data visualizations that enable stunning, interactive charts for your web and mobile apps. Try for FREE.
 _keywords: {Platform} Charts, Chart, Infragistics
-mentionedTypes: ["DomainChart", "FinancialChart", "CategoryChart", "XamDataChart"]
+mentionedTypes: ["DomainChart", "FinancialChart", "CategoryChart", "XamDataChart", "CategoryChartType"]
 ---
 # {Platform} Charts & Graphs Overview
 
@@ -34,6 +34,18 @@ The {Platform} product has over 65 different chart and graph types for any scena
 - Trends Lines and other Data Analysis features
 
 Built with a modular design of axis, markers, series, legend, and annotation layers, the {Platform} chart makes it easy to design a render any type of data story. Build a simple chart with a single data series, or build more complex data stories with multiple series of data, with multiple axis in composite views.
+
+## Category and Financial Chart vs. Data Chart
+
+The {Platform} Category and Financial Chart is what we refer to as our doman specific charts. It's a wrapper around {Platform} Data Chart that assumes your domain is a category, or financial price series.
+
+Choosing these specific domain charts allows to simplify the API and draw a lot of interfaces about the data to automatically configure the chart scenario, all without needing to explicitly define attributes such as axes, series, and annotations. In contrast, the data chart is very explicit and every critical part of the chart needs to be defined.
+
+Domain charts are using a data chart at its core; so the same performance optimizations apply to both. The difference lies in whether they are trying to make things very easy to specifiy for the developer, or to be as flexible as possible. {Platform} Data Chart is more verbose, unlocking all of our charting capabilities you need, allowing you to mix and match of any number of series, axes or annotation for example. For the category and financial charts, there might be a siutation that cannot be easily done that the data chart is more suited for, such as a series with a scatter series with a numeric x axis.
+
+It can be difficult to know which chart to pick at first. It's crucial to understand the type of series and how many additional features you want to present. For a more light-weight basic category or financial series, we recommend using one of the domain charts. For more advances scenarios we recommend using {Platform} Data Chart, such as presenting something other than what is covered by the category chart's `ChartType` property such as a stacked or scatter series, or numeric or time-based data. It's worth noting that the {Platform} Financial Chart covers only column, OHLC bar, candlestick, and line series types.
+
+We make {Platform} Category and Financial Chart easier to use, the good news you can always switch to data chart in the future. 
 
 ### {Platform} Bar Chart
 
