@@ -857,14 +857,13 @@ We'll also display a custom error message using [Toast](../../notifications/toas
 
 The first thing we need to do is bind to the grid's event:
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} (cellEdit)="handleCellEdit($event)">
 </{ComponentSelector}>
 ```
 
-```razor
-<{ComponentSelector} CellEditScript="HandleCellEdit" />
-```
+<!-- end: Angular -->
 
 <!-- React -->
 ```tsx
@@ -873,47 +872,7 @@ The first thing we need to do is bind to the grid's event:
 ```
 <!-- end: React -->
 
-
-<!-- ComponentStart: Grid -->
-```ts
-constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-
-    this._bind = () => {
-        grid.cellEdit = this.handleCellEdit;
-    }
-    this._bind();
-}
-```
-
-<!-- ComponentEnd: Grid -->
-<!-- ComponentStart: TreeGrid -->
-```ts
-constructor() {
-    var treeGrid = this.treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
-
-    this._bind = () => {
-        treeGrid.cellEdit = this.handleCellEdit;
-    }
-    this._bind();
-}
-```
-<!-- ComponentEnd: TreeGrid -->
-<!-- ComponentStart: HierarchicalGrid -->
-```ts
-constructor() {
-    var hGrid = this.hGrid = document.getElementById('hGrid') as IgcHierarchicalGridComponent;
-
-    this._bind = () => {
-        hGrid.cellEdit = this.handleCellEdit;
-    }
-    this._bind();
-}
-```
-<!-- ComponentEnd: HierarchicalGrid -->
-
 <!-- Blazor, WebComponents -->
-The first thing we need to do is bind to the grid's event:
 
 ```razor
 <{ComponentSelector} CellEditScript="HandleCellEdit" />
@@ -922,9 +881,9 @@ The first thing we need to do is bind to the grid's event:
 <!-- ComponentStart: Grid -->
 ```typescript
 constructor() {
-    var grid = document.getElementById('gri') as IgcGridComponent;
+    var grid = document.getElementById('grid') as IgcGridComponent;
     this.webGridCellEdit = this.webGridCellEdit.bind(this);
-    grid.addEventListener("cellEdit", this.webGriCellEdit);
+    grid.addEventListener("cellEdit", this.webGridCellEdit);
 }
 ```
 <!-- ComponentEnd: Grid -->
@@ -934,16 +893,19 @@ constructor() {
 constructor() {
     var treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
     this.webTreeGridCellEdit = this.webTreeGridCellEdit.bind(this);
-
-    this._bind = () => {
-        treeGrid.addEventListener("cellEdit", this.webTreeGridCellEdit);
-    }
-
-    this._bind();
-
+    treeGrid.addEventListener("cellEdit", this.webTreeGridCellEdit);
 }
 ```
 <!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```ts
+constructor() {
+    var hGrid = document.getElementById('hGrid') as IgcHierarchicalGridComponent;
+    hGrid.addEventListener("cellEdit", this.webHierarchicalGridCellEdit);
+}
+```
+<!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- end: Blazor, WebComponents -->
 
@@ -951,7 +913,7 @@ The `CellEdit` emits whenever **any** cell's value is about to be committed. In 
 
 <!-- ComponentStart: Grid -->
 
-<!-- Angular, WebComponents -->
+<!-- Angular -->
 ```typescript
 export class MyGridEventsComponent {
     public handleCellEdit(event: IGridEditEventArgs): void {
@@ -969,7 +931,26 @@ export class MyGridEventsComponent {
     }
 }
 ```
-<!-- end: Angular, WebComponents -->
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```typescript
+public webGridCellEdit(event: CustomEvent<IgcGridEditEventArgs>): void {
+    const column = event.detail.column;
+    if (column.field === 'UnitsOnOrder') {
+            const rowData = event.detail.rowData;
+            if (!rowData) {
+                return;
+            }
+            if (event.detail.newValue > rowData.UnitsInStock) {
+                event.cancel = true;
+                alert("You cannot order more than the units in stock!");
+            }
+    }
+}
+
+```
+<!-- end: WebComponents -->
 
 <!-- React -->
 ```typescript
