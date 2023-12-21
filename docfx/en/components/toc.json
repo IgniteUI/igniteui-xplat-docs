@@ -734,7 +734,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Row Editing",
         "href": "grids/tree-grid/row-editing.md",
         "status": "NEW"

@@ -732,7 +732,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "行の編集",
         "href": "grids/tree-grid/row-editing.md",
         "status": "NEW"
