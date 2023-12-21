@@ -698,15 +698,15 @@ In addition to the predefined themes, the grid could be further customized by se
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
 ```html
-<igc-grid class="grid"></igc-grid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 ```tsx
-<IgrGrid className="grid"></IgrGrid>
+<{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
 
 Then set the related CSS properties to this class:
