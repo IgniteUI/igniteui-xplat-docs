@@ -12,6 +12,10 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerChanges-23-2}**
 
+### .NET 8.0 support
+
+* 2023.2 release now support .NET 8. For more information on .NET 8 please refer to [this article on Microsoft's site](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-8) .
+
 ### {PackageGrids} (Toolbar - Beta)
 
 * A new tool has been added, as a default tool, to save the chart to an image via the clipboard.
