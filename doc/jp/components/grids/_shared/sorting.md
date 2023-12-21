@@ -54,12 +54,9 @@ _language: ja
 
 `{ComponentName}` は、ソートされた各列のインデックスを示すことにより、この問題の解決策を提供します。
 
-<!-- ComponentStart: Grid -->
 
 `sample="/{ComponentSample}/column-sorting-indicators", height="550", alt="{Platform} {ComponentTitle} 列ソート インジケーター"`
 
-
-<!-- ComponentEnd: Grid -->
 
 ## API でのソート
 
@@ -260,8 +257,10 @@ useEffect(() => {
 <!-- end: Angular -->
 - `SortHeaderIconTemplate` – ソートが適用されない場合にソート アイコンを再テンプレート化します。
 
+
+<!-- ComponentStart: Grid, TreeGrid -->
 ```razor
-<IgbGrid SortHeaderIconTemplate="SortDefaultTemplate">
+<{ComponentSelector} SortHeaderIconTemplate="SortDefaultTemplate"></{ComponentSelector}>
 
 @code {
     public RenderFragment<IgbGridHeaderTemplateContext> SortDefaultTemplate = (ctx) =>
@@ -270,10 +269,11 @@ useEffect(() => {
     };
 }
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
 
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var grid = this.grid = document.getElementById('grid') as {ComponentName}Component;
     grid.data = this.data;
     grid.sortHeaderIconTemplate = this.sortHeaderIconTemplate;
 }
@@ -309,8 +309,10 @@ function sortHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
 
 - `SortAscendingHeaderIconTemplate` – 列が昇順にソートされたときにソート アイコンを再テンプレート化します。
 
+<!-- ComponentStart: Grid, TreeGrid -->
+
 ```razor
-<IgbGrid SortAscendingHeaderIconTemplate="SortAscendingTemplate">
+<{ComponentSelector} SortAscendingHeaderIconTemplate="SortAscendingTemplate"></{ComponentSelector}>
 
 @code {
     public RenderFragment<IgbGridHeaderTemplateContext> SortAscendingTemplate = (ctx) =>
@@ -319,10 +321,11 @@ function sortHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
     };
 }
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
 
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var grid = this.grid = document.getElementById('grid') as {ComponentName}Component;
     grid.data = this.data;
     grid.sortAscendingHeaderIconTemplate = this.sortAscendingHeaderIconTemplate;
 }
@@ -346,7 +349,7 @@ function sortAscendingHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
 
 <!-- Angular -->
 
-- `IgxSortAscendingHeaderIconDirective` – 列が降順でソートされたときにソート アイコンを再テンプレート化します。
+- `IgxSortDescendningHeaderIconDirective` – 列が降順でソートされたときにソート アイコンを再テンプレート化します。
 
 ```html
 <ng-template igxSortDescendingHeaderIcon>
@@ -358,9 +361,9 @@ function sortAscendingHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
 
 - `SortDescendingHeaderIconTemplate` – 列が降順にソートされたときにソート アイコンを再テンプレート化します。
 
-
+<!-- ComponentStart: Grid, TreeGrid -->
 ```razor
-<IgbGrid SortDescendingHeaderIconTemplate="SortDescendingTemplate">
+<{ComponentSelector} SortDescendingHeaderIconTemplate="SortDescendingTemplate"></{ComponentSelector}>
 
 @code {
     public RenderFragment<IgbGridHeaderTemplateContext> SortDescendingTemplate = (ctx) =>
@@ -369,10 +372,11 @@ function sortAscendingHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
     };
 }
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
 
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var grid = this.grid = document.getElementById('grid') as {ComponentName}Component;
     grid.data = this.data;
     grid.sortDescendingHeaderIconTemplate = this.sortDescendingHeaderIconTemplate;
 }
