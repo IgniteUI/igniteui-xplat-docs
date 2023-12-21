@@ -740,7 +740,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Row Pinning",
         "href": "grids/tree-grid/row-pinning.md",
         "status": "NEW"
