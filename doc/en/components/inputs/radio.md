@@ -12,7 +12,7 @@ The {ProductName} Radio component allows the user to select a single option from
 
 ## {ProductName} Radio Example
 
-`sample="/inputs/radio/group", height="100", alt="{Platform} Radio & Radio Group Example"`
+`sample="/inputs/radio/group", height="150", alt="{Platform} Radio & Radio Group Example"`
 
 
 <div class="divider--half"></div>
@@ -34,6 +34,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -77,15 +80,6 @@ You will also need to link an additional CSS file to apply the styling to the `R
 
 The simplest way to start using the `Radio` is as follows:
 
-```tsx
-<IgrRadioGroup>
-  <IgrRadio value="apple"><span>Apple</span></IgrRadio>
-  <IgrRadio value="banana"><span>Banana</span></IgrRadio>
-  <IgrRadio value="Mango"><span>Mango</span></IgrRadio>
-  <IgrRadio value="orange"><span>Orange</span></IgrRadio>
-</IgrRadioGroup>
-```
-
 ```html
 <igc-radio-group>
   <igc-radio>Apple</igc-radio>
@@ -93,6 +87,15 @@ The simplest way to start using the `Radio` is as follows:
   <igc-radio>Mango</igc-radio>
   <igc-radio>Orange</igc-radio>
 </igc-radio-group>
+```
+
+```tsx
+<IgrRadioGroup>
+  <IgrRadio value="apple"><span>Apple</span></IgrRadio>
+  <IgrRadio value="banana"><span>Banana</span></IgrRadio>
+  <IgrRadio value="Mango"><span>Mango</span></IgrRadio>
+  <IgrRadio value="orange"><span>Orange</span></IgrRadio>
+</IgrRadioGroup>
 ```
 
 ```razor
@@ -192,7 +195,7 @@ You can use the `checked` attribute to toggle on the radio.
 </IgbRadioGroup>
 ```
 
-`sample="/inputs/radio/group", height="100", alt="{Platform} Radio Example"`
+`sample="/inputs/radio/group", height="150", alt="{Platform} Radio Example"`
 
 
 
@@ -247,7 +250,7 @@ You can use the `disabled` attribute to disable the radio.
 </IgbRadioGroup>
 ```
 
-`sample="/inputs/radio/disabled", height="100", alt="{Platform} Radio Example"`
+`sample="/inputs/radio/disabled", height="150", alt="{Platform} Radio Example"`
 
 
 

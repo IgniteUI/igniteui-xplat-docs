@@ -15,7 +15,6 @@ The {ProductName} ComboBox component provides a list of options from which users
 
 `sample="/inputs/combo/overview", height="400", alt="{Platform} Combo Example"`
 
-
 <div class="divider--half"></div>
 
 ## Getting Started with {Platform} ComboBox
@@ -27,7 +26,7 @@ First, you need to install the {ProductName} by running the following command:
 npm install {PackageWebComponents}
 ```
 
-Before using the `ComboBox` component, you need to register it together with its additional components:
+Before using the `ComboBox` component, you need to register it together with its additional components and necessary CSS:
 
 ```ts
 import { defineComponents, IgcComboComponent }
@@ -36,6 +35,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcComboComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
@@ -231,7 +233,7 @@ The {ProductName} Combo component supports most of the `Input` properties, such 
 
 When the combo component is focused and the list of options is **not visible**:
 
-- Open the list of options using <kbd>Down/Alt + Down</kbd> keys.
+- Open the list of options using <kbd>Down/Alt</kbd> + <kbd>Down</kbd> keys.
 
 When the combo component is focused and the list of options is **visible**:
 
@@ -240,7 +242,7 @@ When the combo component is focused and the list of options is **visible**:
 - Using the <kbd>Home</kbd> or <kbd>End</kbd> keys will activate the first or the last item in the list.
 - Using the <kbd>Space</kbd> key will select the active item.
 - Using the <kbd>Enter</kbd> key will select the active item and close the list of options.
-- Using the <kbd>Esc</kbd> or <kbd>Tab/Shift + Tab</kbd> keys will close the list of options.
+- Using the <kbd>Esc</kbd> or <kbd>Tab/Shift</kbd> + <kbd>Tab</kbd> keys will close the list of options.
 
 ## Styling {Platform} ComboBox
 
@@ -280,9 +282,6 @@ You can change the appearance of the {ProductName} `Combo` component and its ite
 ## API Reference
 
 * `Combo`
-* `ComboItem`
-* `ComboHeader`
-* `ComboList`
 
 ## Additional Resources
 

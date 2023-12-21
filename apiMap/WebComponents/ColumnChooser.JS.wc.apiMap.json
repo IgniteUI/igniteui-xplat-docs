@@ -1,12 +1,18 @@
-{"extraFiles":["igc-column-chooser-module.ts"],
+{
+  "extraFiles": ["igc-column-chooser-module.ts"],
   "types":[
-  { "originalName":"ColumnChooser",
-    "names":[{"platform":"WebComponents","fileName":"igc-column-chooser-component.ts","mappedName":"IgcColumnChooserComponent"}],
+  {
+    "originalName": "ColumnChooser",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-grids",
+    "names":[{"platform": "WebComponents","fileName": "igc-column-chooser-component.ts","mappedName": "IgcColumnChooserComponent"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"IgcDataGridComponent","mappedName":"targetGrid"}],"originalName":"TargetGrid"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"title"}],"originalName":"Title"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"titleColor"}],"originalName":"TitleColor"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"filterPlaceholderText"}],"originalName":"FilterPlaceholderText"},
-    { "names":[{"platform":"WebComponents","mappedType":"BaseControlTheme","mappedName":"baseTheme"}],"originalName":"BaseTheme"},
-    { "names":[{"platform":"WebComponents","mappedType":"ControlDisplayDensity","mappedName":"density"}],"originalName":"Density"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"backgroundColor"}],"originalName":"BackgroundColor"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "backgroundColor"}], "originalName": "BackgroundColor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "BaseControlTheme","mappedName": "baseTheme"}], "originalName": "BaseTheme"},
+      {"names":[{"platform": "WebComponents", "mappedType": "ControlDisplayDensity","mappedName": "density"}], "originalName": "Density"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "filterPlaceholderText"}], "originalName": "FilterPlaceholderText"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcDataGridComponent","mappedName": "targetGrid"}], "originalName": "TargetGrid"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "title"}], "originalName": "Title"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "titleColor"}], "originalName": "TitleColor"} ]
+  }]
+}

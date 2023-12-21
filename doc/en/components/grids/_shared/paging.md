@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} Paging - Infragistics
+title: {Platform} {ComponentTitle} Paging - {ProductName}
 _description: Configure {Platform} pagination and create custom pages in the {Platform} table by Ignite UI, get data for the requested pages with variety of events.
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Paging, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
@@ -8,7 +8,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Pagination Overview
 
-Pagination is used to split a large set of data into a sequence of pages that have similar content. {Platform} table pagination improves user experience and data interaction. `{ComponentName}` pagination is configurable via a separate component projected in the grid tree by defining a `Paginator` tag, similar to adding of a column. As in any {Platform} table, the pagination in the `{ComponentName}` supports template for custom pages.
+The {ProductName} Pagination feature in {Platform} {ComponentTitle} is used to split a large set of data into a sequence of pages that have similar content. React grid pagination improves user experience and data interaction. `{ComponentName}` pagination is configurable via a separate component projected in the grid tree by defining a `Paginator`  tag, similar to adding of a column. As in any {Platform} table, the pagination in the {Platform} {ComponentTitle} supports template for custom pages.
 
 ## {Platform} {ComponentTitle} Pagination Example
 
@@ -46,6 +46,15 @@ The following example represents `{ComponentName}` pagination and exposes the op
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} height="500px" width="100%" displayDensity="cosy">
+    <IgrPaginator key="paginator" perPage="10">
+    </IgrPaginator>
+</{ComponentSelector}>
+```
+<!-- end: React -->
 
 <!-- Angular -->
 ```html
@@ -110,16 +119,22 @@ The `Paginator` component is used along with the `{ComponentName}` component in 
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
     var paginator = this.paginator = document.getElementById('paginator') as IgcPaginatorComponent;
-
-    this._bind = () => {
-        grid.data = this.data;
-        paginator.page = grid.page;
-        paginator.totalRecords = grid.totalRecords;
-        paginator.selectOptions = selectOptions;
-        paginator.displayDensity = grid.displayDensity;
-    }
-    this._bind();
+    const selectOptions = [5, 15, 20, 50];
+    grid.data = this.data;
+    paginator.page = grid.page;
+    paginator.totalRecords = grid.totalRecords;
+    paginator.selectOptions = selectOptions;
+    paginator.displayDensity = grid.displayDensity;
 }
+```
+
+```tsx
+const selectOptions = [5, 15, 20, 50];
+
+<{ComponentSelector}>
+    <IgrPaginator key="paginator" perPage={10} page={1} selectOptions={selectOptions} displayDensity="cosy">
+    </IgrPaginator>
+</{ComponentSelector}>
 ```
 
 <!-- ComponentEnd: Grid, TreeGrid -->

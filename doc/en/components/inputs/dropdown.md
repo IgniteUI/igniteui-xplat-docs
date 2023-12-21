@@ -19,8 +19,6 @@ The following {Platform} Dropdown List example demonstrates the use of simple in
 
 `sample="/inputs/dropdown/overview", height="220", alt="{Platform} Dropdown Example"`
 
-
-
 ## How to use the Dropdown List with {ProductName}
 
 <!-- WebComponents -->
@@ -39,6 +37,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcDropdownComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -99,7 +100,7 @@ The preferred placement of the {Platform} Dropdown can be set using the `Placeme
 
 ### Selection
 
-The `Dropdown` emits the `igcChange` event when the user selects an item. The `Select` method of the Dropdown allows you to select an item by its index or value.
+The `Dropdown` emits the `Change` event when the user selects an item. The `Select` method of the Dropdown allows you to select an item by its index or value.
 
 ### Item
 

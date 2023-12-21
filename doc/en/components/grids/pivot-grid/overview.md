@@ -249,20 +249,20 @@ public pivotConfigHierarchy: IgcPivotConfiguration = {
             displayName: 'Amount of Sale',
             aggregate: {
                 key: 'SUM',
-                aggregator: IgxTotalSaleAggregate.totalSale,
+                aggregator: IgcTotalSaleAggregate.totalSale,
                 label: 'Sum of Sale'
             },
             aggregateList: [{
                 key: 'SUM',
-                aggregator: IgxTotalSaleAggregate.totalSale,
+                aggregator: IgcTotalSaleAggregate.totalSale,
                 label: 'Sum of Sale'
             }, {
                 key: 'MIN',
-                aggregator: IgxTotalSaleAggregate.totalMin,
+                aggregator: IgcTotalSaleAggregate.totalMin,
                 label: 'Minimum of Sale'
             }, {
                 key: 'MAX',
-                aggregator: IgxTotalSaleAggregate.totalMax,
+                aggregator: IgcTotalSaleAggregate.totalMax,
                 label: 'Maximum of Sale'
             }]
         }
@@ -351,26 +351,34 @@ Let's take a look at a basic pivot configuration:
         columns: [
             {
 
-                memberName: 'Product',
-                memberFunction: (data) => data.Product.Name,
+                memberName: 'ProductName',
+                memberFunction: (data) => data.ProductName,
+                enabled: true
+            },
+            {
+
+                memberName: 'SellerCity',
+                memberFunction: (data) => data.SellerCity,
                 enabled: true
             }
+
 
         ],
         rows: [
             {
-                memberName: 'Seller',
-                memberFunction: (data) => data.Seller.Name,
+                memberName: 'SellerName',
+                memberFunction: (data) => data.SellerName,
                 enabled: true,
             }
         ],
         values: [
             {
-                member: 'NumberOfUnits',
+                member: 'AmountofSale',
+                displayName: "Amount of Sale",
                 aggregate: {
-                    aggregator: IgxPivotNumericAggregate.sum,
-                    key: 'sum',
-                    label: 'Sum'
+                    aggregator: IgcPivotNumericAggregate.sum,
+                    key: 'SUM',
+                    label: 'Sum of Sale'
                 },
                 enabled: true
 
@@ -384,22 +392,28 @@ Let's take a look at a basic pivot configuration:
     IgbPivotConfiguration pivotConfiguration = new IgbPivotConfiguration();
     pivotConfiguration.Rows.Add(new IgbPivotDimension()
         {
-            MemberName = "Product",
+            MemberName = "SellerName",
             Enabled = true,
             Name = "pivotDimension1"
         });
     pivotConfiguration.Columns.Add(new IgbPivotDimension()
         {
-            MemberName = "Country",
+            MemberName = "ProductName",
+            Enabled = true,
+            Name = "pivotDimension2"
+        });
+    pivotConfiguration.Columns.Add(new IgbPivotDimension()
+        {
+            MemberName = "SellerCity",
             Enabled = true,
             Name = "pivotDimension2"
         });
     pivotConfiguration.Values.Add(new IgbPivotValue()
         {
-            Member = "UnitsSold",
+            Member = "AmountofSale",
             Name = "pivotValue1",
             Enabled = true,
-            Aggregate = new IgbPivotAggregator() { Key = "sum", AggregatorName = PivotAggregationType.SUM, Label = "Sum" }
+            Aggregate = new IgbPivotAggregator() { Key = "SUM", AggregatorName = PivotAggregationType.SUM, Label = "Sum" }
         });
 }
 ```
@@ -411,45 +425,35 @@ The members match fields available in the provided data source:
 public data = [
 [
     {
-        Product: {
-            Name: 'Clothing',
-            UnitPrice: '12.814860936633712'
-        },
-        Seller: {
-            Name: 'Stanley Brooker',
-            City: 'Seattle'
-        },
-        Date: '2007-01-01T00:00:00',
-        Value: '94.2652032683907',
-        NumberOfUnits: '282'
+        ProductName: `Clothing`,
+        ProductUnitPrice: 12.8,
+        SellerName: `Stanley Brooker`,
+        SellerCity: `Seattle`,
+        Date: `2007-01-01T00:00:00`,
+        Value: 94.4,
+        NumberOfUnits: 282
     },
 ];
 ```
 
 ```razor
-public PivotSalesData()
+public PivotDataFlat()
 {
-    this.Add(new PivotSalesDataItem()
+    this.Add(new PivotDataFlatItem()
     {
-        Country = @"UK",
-        Product = @"Vermont",
-        UnitsSold = @"501",
-        ManufacturingPrice = 15,
-        SalePrice = 23,
-        GrossSales = 26440,
-        Discounts = double.NaN,
-        Sales = 26440,
-        COGS = 16185,
-        Profit = 11255,
-        Date = @"1/1/20",
-        MonthName = @"January",
-        Year = @"2020"
+        ProductName = @"Clothing",
+            ProductUnitPrice = 12.8,
+            SellerName = @"Stanley Brooker",
+            SellerCity = @"Seattle",
+            Date = @"2007-01-01T00:00:00",
+            Value = 94.4,
+            NumberOfUnits = 282
     });
 ```
 
 ### Full Configuration Example
 
-Using above code will result in the following example which groups the Product Categories unique columns, Sellers Countries in unique rows and displays the related aggregations for the number of units in the related cells:
+Using above code will result in the following example which groups the Date unique columns, Product Name and Seller City in unique rows and displays the related aggregations for the amount of sale in the related cells:
 
 `sample="/{PivotGridSample}/features", height="700", alt="{Platform} Pivot Grid Basic Features Example"`
 
