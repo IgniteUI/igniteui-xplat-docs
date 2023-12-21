@@ -155,7 +155,7 @@ A column is pinned to the right of the rightmost pinned column. Changing the ord
 
 <!-- Blazor -->
 
-A column is pinned to the right of the rightmost pinned column. Changing the order of the pinned columns can be done by subscribing to the `ColumnPinnedScript` event and providing a JavaScript function for changing the `InsertAtIndex` property of the event arguments to the desired position index.
+A column is pinned to the right of the rightmost pinned column. Changing the order of the pinned columns can be done by subscribing to the `ColumnPinScript` event and providing a JavaScript function for changing the `InsertAtIndex` property of the event arguments to the desired position index.
 
 <!-- end: Blazor -->
 
@@ -175,7 +175,7 @@ A column is pinned to the right of the rightmost pinned column. Changing the ord
 
 ```typescript
 constructor() {
-    var dataGrid = this.dataGrid = document.getElementById('dataGrid') as IgcGridComponent;
+    var dataGrid = document.getElementById('dataGrid') as {ComponentName}Component;
     dataGrid.data = this.data;
     dataGrid.addEventListener("columnPin", this.columnPinning);
 }
@@ -226,7 +226,7 @@ public pinningConfig: IPinningConfig = { columns: ColumnPinningPosition.End };
 ```
 
 ```typescript
-var grid = (this.grid = document.getElementById('dataGrid') as any) as IgcGridComponent;
+var grid = document.getElementById('dataGrid') as {ComponentName}Component;
 grid.pinning = { columns: ColumnPinningPosition.End };
 ```
 <!-- end: WebComponents -->
@@ -243,7 +243,7 @@ pinningConfig.columns = ColumnPinningPosition.End;
 <!-- end: React -->
 
 ```razor
-<{ComponentSelector} Data=data AutoGenerate=true Pinning="pinningConfig"></IgbGrid>
+<{ComponentSelector} Data=data AutoGenerate=true Pinning="pinningConfig"></{ComponentSelector}>
 
 @code {
     private IgbPinningConfig pinningConfig = new() {
@@ -281,33 +281,34 @@ This can be done by creating a header template for the columns with a custom ico
 ```
 ```html
 <igc-grid id="grid1" width="100%" height="500px" auto-generate="false">
-        <igc-column id="Name" field="Name" data-type="String" width="250px"></igc-column>
-        <igc-column id="Title" field="Title" data-type="String" width="300px"></igc-column>
-        <igc-column id="ID" field="ID" data-type="Number" width="200px"></igc-column>
-        <igc-column id="HireDate" field="HireDate" header="Hire Date" data-type="Date" width="200px"></igc-column>
-        <igc-column id="Age" field="Age" data-type="Number" width="200px"></igc-column>
-        <igc-column id="Address" field="Address" data-type="String" width="200px"></igc-column>
-        <igc-column id="City" field="City" data-type="String" width="200px"></igc-column>
-        <igc-column id="Country" field="Country" data-type="String" width="200px"></igc-column>
-        <igc-column id="Fax" field="Fax" data-type="String" width="200px"></igc-column>
-        <igc-column id="PostalCode" field="PostalCode" header="Postal Code" data-type="String" width="200px"></igc-column>
-        <igc-column id="Phone" field="Phone" data-type="String" width="200px"></igc-column>
+    <igc-column id="Name" field="Name" data-type="String" width="250px"></igc-column>
+    <igc-column id="Title" field="Title" data-type="String" width="300px"></igc-column>
+    <igc-column id="ID" field="ID" data-type="Number" width="200px"></igc-column>
+    <igc-column id="HireDate" field="HireDate" header="Hire Date" data-type="Date" width="200px"></igc-column>
+    <igc-column id="Age" field="Age" data-type="Number" width="200px"></igc-column>
+    <igc-column id="Address" field="Address" data-type="String" width="200px"></igc-column>
+    <igc-column id="City" field="City" data-type="String" width="200px"></igc-column>
+    <igc-column id="Country" field="Country" data-type="String" width="200px"></igc-column>
+    <igc-column id="Fax" field="Fax" data-type="String" width="200px"></igc-column>
+    <igc-column id="PostalCode" field="PostalCode" header="Postal Code" data-type="String" width="200px"></igc-column>
+    <igc-column id="Phone" field="Phone" data-type="String" width="200px"></igc-column>
 </igc-grid>
 ```
 ```ts
 constructor() {
-    var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
-    var Name = this.Name = document.getElementById('Name') as IgcColumnComponent;
-    var Title = this.Title = document.getElementById('Title') as IgcColumnComponent;
-    var ID = this.ID = document.getElementById('ID') as IgcColumnComponent;
-    var HireDate = this.HireDate = document.getElementById('HireDate') as IgcColumnComponent;
-    var Age = this.Age = document.getElementById('Age') as IgcColumnComponent;
-    var Address = this.Address = document.getElementById('Address') as IgcColumnComponent;
-    var City = this.City = document.getElementById('City') as IgcColumnComponent;
-    var Country = this.Country = document.getElementById('Country') as IgcColumnComponent;
-    var Fax = this.Fax = document.getElementById('Fax') as IgcColumnComponent;
-    var PostalCode = this.PostalCode = document.getElementById('PostalCode') as IgcColumnComponent;
-    var Phone = this.Phone = document.getElementById('Phone') as IgcColumnComponent;
+    var grid1 = document.getElementById('grid1') as IgcGridComponent;
+    var Name = document.getElementById('Name') as IgcColumnComponent;
+    var Title = document.getElementById('Title') as IgcColumnComponent;
+    var ID = document.getElementById('ID') as IgcColumnComponent;
+    var HireDate = document.getElementById('HireDate') as IgcColumnComponent;
+    var Age = document.getElementById('Age') as IgcColumnComponent;
+    var Address = document.getElementById('Address') as IgcColumnComponent;
+    var City = document.getElementById('City') as IgcColumnComponent;
+    var Country = document.getElementById('Country') as IgcColumnComponent;
+    var Fax = document.getElementById('Fax') as IgcColumnComponent;
+    var PostalCode = document.getElementById('PostalCode') as IgcColumnComponent;
+    var Phone = document.getElementById('Phone') as IgcColumnComponent;
+
     grid.data = this.data;
     Name.headerTemplate = this.pinHeaderTemplate;
     Title.headerTemplate = this.pinHeaderTemplate;
@@ -321,7 +322,6 @@ constructor() {
     PostalCode.headerTemplate = this.pinHeaderTemplate;
     Phone.headerTemplate = this.pinHeaderTemplate;
 }
-
 
 public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
@@ -427,8 +427,7 @@ function toggleColumnPin({ dataContext: ctx }: { dataContext: IgrColumnTemplateC
 </div>
 ```
 ```html
-<igc-tree-grid id="treeGrid" primary-key="ID" foreign-key="ParentID" auto-generate="false"
-    width="100%" height="620px">
+<igc-tree-grid id="treeGrid" primary-key="ID" foreign-key="ParentID" auto-generate="false" width="100%" height="620px">
     <igc-column id="Name" field="Name" data-type="String" width="250px"></igc-column>
     <igc-column id="Title" field="Title" data-type="String" width="300px"></igc-column>
     <igc-column id="ID" field="ID" data-type="Number" width="200px"></igc-column>
@@ -444,18 +443,19 @@ function toggleColumnPin({ dataContext: ctx }: { dataContext: IgrColumnTemplateC
 ```
 ```ts
 constructor() {
-    var treeGrid = this.treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
-    var Name = this.Name = document.getElementById('Name') as IgcColumnComponent;
-    var Title = this.Title = document.getElementById('Title') as IgcColumnComponent;
-    var ID = this.ID = document.getElementById('ID') as IgcColumnComponent;
-    var HireDate = this.HireDate = document.getElementById('HireDate') as IgcColumnComponent;
-    var Age = this.Age = document.getElementById('Age') as IgcColumnComponent;
-    var Address = this.Address = document.getElementById('Address') as IgcColumnComponent;
-    var City = this.City = document.getElementById('City') as IgcColumnComponent;
-    var Country = this.Country = document.getElementById('Country') as IgcColumnComponent;
-    var Fax = this.Fax = document.getElementById('Fax') as IgcColumnComponent;
-    var PostalCode = this.PostalCode = document.getElementById('PostalCode') as IgcColumnComponent;
-    var Phone = this.Phone = document.getElementById('Phone') as IgcColumnComponent;
+    var treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
+    var Name = document.getElementById('Name') as IgcColumnComponent;
+    var Title = document.getElementById('Title') as IgcColumnComponent;
+    var ID = document.getElementById('ID') as IgcColumnComponent;
+    var HireDate = document.getElementById('HireDate') as IgcColumnComponent;
+    var Age = document.getElementById('Age') as IgcColumnComponent;
+    var Address = document.getElementById('Address') as IgcColumnComponent;
+    var City = document.getElementById('City') as IgcColumnComponent;
+    var Country = document.getElementById('Country') as IgcColumnComponent;
+    var Fax = document.getElementById('Fax') as IgcColumnComponent;
+    var PostalCode = document.getElementById('PostalCode') as IgcColumnComponent;
+    var Phone = document.getElementById('Phone') as IgcColumnComponent;
+
     treeGrid.data = this.data;
     Name.headerTemplate = this.pinHeaderTemplate;
     Title.headerTemplate = this.pinHeaderTemplate;
@@ -478,6 +478,45 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
         </div>
     `;
 }
+```
+
+```razor
+<IgbTreeGrid AutoGenerate="false" Name="treeGrid" @ref="treeGrid" Data="EmployeesFlatData" PrimaryKey="ID" ForeignKey="ParentID">
+    <IgbColumn Field="Name" DataType="String" Pinned="true"
+    HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column1" @ref="column1"></IgbColumn>
+
+    <IgbColumn Field="Title" DataType="String" Pinned="true"
+    HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column2" @ref="column2"></IgbColumn>
+        
+    <IgbColumn Field="Phone" DataType="String"
+    HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column3" @ref="column3"></IgbColumn>
+            
+    <IgbColumn Field="Age" DataType="Number"
+    HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column4" @ref="column4"></IgbColumn>
+            
+    <IgbColumn Field="HireDate" DataType="Date"
+    HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column5" @ref="column5"></IgbColumn>
+            
+    <IgbColumn Field="OnPTO" DataType="Boolean"
+    HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column6" @ref="column6"></IgbColumn>
+</IgbTreeGrid> 
+
+
+// In JavaScript
+
+igRegisterScript("WebTreeGridPinHeaderTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    window.toggleColumnPin = function toggleColumnPin(field) {
+        var grid = document.getElementsByTagName("igc-tree-grid")[0];
+        var col = grid.getColumnByName(field);
+        col.pinned = !col.pinned;
+        grid.markForCheck();
+    }
+    return html`<div>
+    <span style="float:left">${ctx.column.field}</span>
+    <span style="float:right" onpointerdown='toggleColumnPin("${ctx.column.field}")'>📌</span>
+</div>`;
+}, false);
 ```
 <!-- ComponentEnd: TreeGrid -->
 
@@ -701,86 +740,25 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
 In case you would like to change some of the colors, you need to set an `ID` for the grid first:
 
-<!-- ComponentStart: Grid -->
 
 ```html
-<igc-grid id="grid"></igc-grid>
+<{ComponentSelector} id="grid"></{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid Id="grid"></IgbGrid>
+<{ComponentSelector} Id="grid"></{ComponentSelector}>
 ```
-
-```tsx
-<IgrGrid id="grid"></IgrGrid>
-```
-
-<!-- ComponentEnd: Grid -->
-
-<!-- ComponentStart: TreeGrid -->
-
-```html
-<igc-tree-grid id="treeGrid"></igc-tree-grid>
-```
-
-```razor
-<IgbTreeGrid Id="treeGrid"></IgbTreeGrid>
-```
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-```html
-<igc-hierarchical-grid id="hierarchicalGrid"></igc-hierarchical-grid>
-```
-
-```razor
-<IgbHierarchicalGrid Id="hierarchicalGrid"></IgbHierarchicalGrid>
-```
-
-<!-- ComponentEnd: HierarchicalGrid -->
 
 Then set the related CSS properties to this class:
 
-<!-- ComponentStart: Grid -->
-
 ```css
 #grid {
-    --pinned-border-width: 5px;
-    --pinned-border-color: #FFCD0F;
-    --pinned-border-style: double;
-    --cell-active-border-color: #FFCD0F;
+    --ig-grid-pinned-border-width: 5px;
+    --ig-grid-pinned-border-color: #FFCD0F;
+    --ig-grid-pinned-border-style: double;
+    --ig-grid-cell-active-border-color: #FFCD0F;
 }
 ```
-
-<!-- ComponentEnd: Grid -->
-
-<!-- ComponentStart: TreeGrid -->
-
-```css
-#treeGrid {
-    --pinned-border-width: 5px;
-    --pinned-border-color: #FFCD0F;
-    --pinned-border-style: double;
-    --cell-active-border-color: #FFCD0F;
-}
-```
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-```css
-#hierarchicalGrid {
-    --pinned-border-width: 5px;
-    --pinned-border-color: #FFCD0F;
-    --pinned-border-style: double;
-    --cell-active-border-color: #FFCD0F;
-}
-```
-
-<!-- ComponentEnd: HierarchicalGrid -->
 
 ### Demo
 
