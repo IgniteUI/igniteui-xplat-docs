@@ -692,7 +692,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Multi-Column Headers",
         "href": "grids/tree-grid/multi-column-headers.md",
         "status": "NEW"
