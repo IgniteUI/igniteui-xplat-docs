@@ -16,6 +16,21 @@ _language: ja
 
 バンドルされているすべてのテーマとそのパスの完全なリストは次のとおりです:
 
+<!-- React -->
+| 名前        | バリアント | 場所                                          |
+| ----------- | ------- | ------------------------------------------------- |
+| Bootstrap   | ライト   | igniteui-react-grids/grids/themes/light/bootstrap.css |
+| Material    | ライト   | igniteui-react-grids/grids/themes/light/material.css  |
+| Fluent      | ライト   | igniteui-react-grids/grids/themes/light/fluent.css    |
+| Indigo      | ライト   | igniteui-react-grids/grids/themes/light/indigo.css    |
+| Bootstrap   | ダーク    | igniteui-react-grids/grids/themes/dark/bootstrap.css  |
+| Material    | ダーク    | igniteui-react-grids/grids/themes/dark/material.css   |
+| Fluent      | ダーク    | igniteui-react-grids/grids/themes/dark/fluent.css     |
+| Indigo      | ダーク    | igniteui-react-grids/grids/themes/dark/indigo.css     |
+<!-- end: React -->
+
+
+<!-- WebComponents -->
 | 名前        | バリアント | 場所                                        |
 | ----------- | ------- | ------------------------------------------------- |
 | Bootstrap   | ライト   | igniteui-webcomponents/themes/light/bootstrap.css |
@@ -26,7 +41,6 @@ _language: ja
 | Material    | ダーク    | igniteui-webcomponents/themes/dark/material.css   |
 | Fluent      | ダーク    | igniteui-webcomponents/themes/dark/fluent.css     |
 | Indigo      | ダーク    | igniteui-webcomponents/themes/dark/indigo.css     |
-
 
 ## ランタイム テーマの切り替え
 
@@ -46,6 +60,8 @@ configureTheme("material");
 
 > [!Note]
 これは、内部スタイルを目的のテーマに切り替えるようにコンポーネントに指示するだけで、グローバル テーマ ファイルも上記のファイルのいずれかに切り替える必要があります。
+
+<!-- end: WebComponents -->
 
 ## API リファレンス
 

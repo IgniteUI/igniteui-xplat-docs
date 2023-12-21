@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} ソート
 
-{Platform} `{ComponentName}` では、列レベルでのデータ ソートが可能です。つまり、`{ComponentName}` にソート可能な列とソート不可の列の両方を持つことができます。{Platform} でソートを実行すると、指定した条件に基づいてレコードの表示順序を変更できます。
+{Platform} {ComponentTitle} の {ProductName} データ ソート機能は列ごとのレベルで有効になっています。つまり、`{ComponentName}` にはソート可能な列とソート不可能な列を混在させることができます。{Platform} でソートを実行すると、指定した条件に基づいてレコードの表示順序を変更できます。
 
 <!-- Angular -->
 
@@ -41,7 +41,11 @@ _language: ja
 ```
 
 ```html
-<igc-column field="ProductName" header="Product Name" data-type="String" sortable="true"></igc-column>
+<igc-column field="ProductName" header="Product Name" data-type="string" sortable="true"></igc-column>
+```
+
+```tsx
+<IgrColumn field="ProductName" header="Product Name" dataType="string" sortable="true"></IgrColumn>
 ```
 
 ## ソート インジケーター
@@ -72,6 +76,10 @@ import { SortingDirection } from 'igniteui-angular';
 import { SortingDirection } from 'igniteui-webcomponents-grids';
 ```
 <!-- end: WebComponents -->
+
+```tsx
+import { SortingDirection } from "igniteui-react-grids";
+```
 
 <!-- Angular -->
 ```typescript
@@ -120,17 +128,40 @@ this.grid.sort([
 }
 ```
 
+
+```tsx
+// Perform a case insensitive ascending sort on the ProductName column.
+gridRef.current.sort([{ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true }]);
+
+// Perform sorting on both the ProductName and Price columns.
+gridRef.current.sort([
+    { fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true },
+    { fieldName: 'Price', dir: SortingDirection.Desc }
+]);
+```
+
+
 > [!Note]
 > Sorting は、`DefaultSortingStrategy` アルゴリズムを使用して実行されます。`Column` または `ISortingExpression` は、代替アルゴリズムとして `ISortingStrategy` のカスタム実装を使用できます。たとえば複雑なテンプレート列や画像列にユーザー定義のソートを定義する必要がある場合に便利です。
 
 フィルター動作と同様に、ソート状態をクリアするには `ClearSort` メソッドを使用します。
 
+<!-- Angular, WebComponents -->
 ```typescript
 // Removes the sorting state from the ProductName column
 this.grid.clearSort('ProductName');
 
 // Removes the sorting state from every column in the {ComponentTitle}
 this.grid.clearSort();
+```
+<!-- end: Angular, WebComponents -->
+
+```tsx
+// Removes the sorting state from the ProductName column
+gridRef.current.clearSort('ProductName');
+
+// Removes the sorting state from every column in the {ComponentTitle}
+gridRef.current.clearSort();
 ```
 
 ```razor
@@ -192,6 +223,15 @@ public connectedCallback() {
 ```
 <!-- end: WebComponents -->
 
+```tsx
+useEffect(() => {
+    gridRef.current.sortingExpressions = [
+        { fieldName: 'UnitsInStock', dir: SortingDirection.Asc, ignoreCase: true },
+        { fieldName: 'ProductName', dir: SortingDirection.Desc }
+    ];
+}, [])
+```
+
 > [!Note]
 > `string` 型の値が `DataType` `Date` の列で使用される場合、`{ComponentName}` が値を `Date` オブジェクトに解析しないため `{ComponentName}` `Sorting` が正しく動作しません。`string` オブジェクトを使用する場合、値を `Date` オブジェクトに解析するためのロジックをアプリケーション レベルで実装する必要があります。
 
@@ -243,6 +283,18 @@ public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
 }
 ```
 
+```tsx
+function sortHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
+    return (
+        <>
+            <IgrIcon name='unfold_more'></IgrIcon>
+        </>
+    );
+}
+
+<IgrGrid sortHeaderIconTemplate={sortHeaderIconTemplate}></IgrGrid>
+```
+
 <!-- Angular -->
 
 - `IgxSortAscendingHeaderIconDirective` – 列が昇順にソートされたときにソート アイコンを再テンプレート化します。
@@ -278,6 +330,18 @@ constructor() {
 public sortAscendingHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
     return html`<igc-icon name="expand_less"></igc-icon>`;
 }
+```
+
+```tsx
+function sortAscendingHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
+    return (
+        <>
+            <IgrIcon name='expand_less'></IgrIcon>
+        </>
+    );
+}
+
+<IgrGrid sortAscendingHeaderIconTemplate={sortAscendingHeaderIconTemplate}></IgrGrid>
 ```
 
 <!-- Angular -->
@@ -316,6 +380,18 @@ constructor() {
 public sortDescendingHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
     return html`<igc-icon name="expand_more"></igc-icon>`;
 }
+```
+
+```tsx
+function sortDescendingHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
+    return (
+        <>
+            <IgrIcon name='expand_more'></IgrIcon>
+        </>
+    );
+}
+
+<IgrGrid sortDescendingHeaderIconTemplate={sortDescendingHeaderIconTemplate}></IgrGrid>
 ```
 
 <!-- Angular -->
@@ -426,33 +502,40 @@ $custom-theme: grid-theme(
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 ## スタイル設定
 
 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
 一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
 ```html
-<igc-grid class="grid"></igc-grid>
+<{ComponentSelector} class="grid">
+</{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid class="grid"></IgbGrid>
+<{ComponentSelector} class="grid">
+</{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid">
+</{ComponentSelector}>
 ```
 
 次に、そのクラスに関連する CSS プロパティを設定します。
 
 ```css
 .grid {
-    --igx-grid-sorted-header-icon-color: #ffb06a;
-    --igx-grid-sortable-header-icon-hover-color: black;
+    --ig-grid-sorted-header-icon-color: #ffb06a;
+    --ig-grid-sortable-header-icon-hover-color: black;
 }
 ```
 ### デモ
 
 `sample="/{ComponentSample}/column-sorting-style", height="550", alt="{Platform} {ComponentTitle} column sorting style"`
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 ## API リファレンス
 
