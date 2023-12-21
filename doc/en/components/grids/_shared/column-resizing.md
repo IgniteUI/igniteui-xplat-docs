@@ -501,7 +501,7 @@ Then set the related CSS properties for that class:
 
 ```css
 #grid {
-    --resize-line-color: #0288D1;
+    --ig-grid-resize-line-color: #0288D1;
 }
 ```
 
@@ -511,7 +511,7 @@ Then set the related CSS properties for that class:
 
 ```css
 #treeGrid {
-    --resize-line-color: #0288D1;
+    --ig-grid-resize-line-color: #0288D1;
 }
 ```
 
@@ -521,7 +521,7 @@ Then set the related CSS properties for that class:
 
 ```css
 #hierarchicalGrid {
-    --resize-line-color: #0288D1;
+    --ig-grid-resize-line-color: #0288D1;
 }
 ```
 
@@ -529,7 +529,7 @@ Then set the related CSS properties for that class:
 
 ### Styling Example
 
-`sample="/{ComponentSample}/cell-editing-style", height="650", alt="{Platform} {ComponentTitle} Cell Editing Styling Example"`
+`sample="/{ComponentSample}/column-resize-styling", height="650", alt="{Platform} {ComponentTitle} Cell Editing Styling Example"`
 
 <!-- end: WebComponents, Blazor -->
 
