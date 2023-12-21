@@ -371,7 +371,7 @@ Then set the related CSS properties to this class:
 ```
 ### Demo
 
-`sample="/{ComponentSample}/multi-row-layout-styling", height="755", alt="{Platform} {ComponentTitle} Multi Row Layout Styling Example"`
+`sample="/{ComponentSample}/multi-row-layout-style", height="755", alt="{Platform} {ComponentTitle} Multi Row Layout Styling Example"`
 
 
 <!-- end: WebComponents, Blazor, React -->

@@ -2,7 +2,7 @@
   {
     "originalName": "IDataSeriesAdapterRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "IDataSeriesAdapterRule.ts","mappedName": "IDataSeriesAdapterRule"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
@@ -11,7 +11,7 @@
   {
     "originalName": "DataSeriesAdapterRunContext",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "DataSeriesAdapterRunContext.ts","mappedName": "DataSeriesAdapterRunContext"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -52,7 +52,7 @@
   {
     "originalName": "DataSeriesDataProviderAnalyzer",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "DataSeriesDataProviderAnalyzer.ts","mappedName": "DataSeriesDataProviderAnalyzer"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -116,7 +116,7 @@
   {
     "originalName": "DataSeries",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "DataSeries.ts","mappedName": "DataSeries"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -148,7 +148,7 @@
   {
     "originalName": "DataSeriesMemberPathHint",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "DataSeriesMemberPathHint.ts","mappedName": "DataSeriesMemberPathHint"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -165,7 +165,7 @@
     "originalName": "DataSeriesIntent",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "DataSeriesIntent.ts","mappedName": "DataSeriesIntent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -200,7 +200,7 @@
     "originalName": "DataSeriesType",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "DataSeriesType.ts","mappedName": "DataSeriesType"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -243,7 +243,7 @@
     "originalName": "DataSeriesAxisType",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "DataSeriesAxisType.ts","mappedName": "DataSeriesAxisType"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -257,7 +257,7 @@
     "originalName": "DataSeriesMarker",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "DataSeriesMarker.ts","mappedName": "DataSeriesMarker"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -279,7 +279,7 @@
   {
     "originalName": "IExternalDataSeriesAdapter",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "IExternalDataSeriesAdapter.ts","mappedName": "IExternalDataSeriesAdapter"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IDataSourceLocalDataProvider","mappedName": "getDataProvider"}], "originalName": "GetDataProvider"},
@@ -288,7 +288,7 @@
   {
     "originalName": "SimpleFinancialPriceSeriesRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "SimpleFinancialPriceSeriesRule.ts","mappedName": "SimpleFinancialPriceSeriesRule"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -301,7 +301,7 @@
   {
     "originalName": "SimpleScatterSeriesRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "SimpleScatterSeriesRule.ts","mappedName": "SimpleScatterSeriesRule"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -317,7 +317,7 @@
   {
     "originalName": "SubCollectionsRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "SubCollectionsRule.ts","mappedName": "SubCollectionsRule"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -328,7 +328,7 @@
   {
     "originalName": "SimpleCategorySeriesRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "SimpleCategorySeriesRule.ts","mappedName": "SimpleCategorySeriesRule"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
