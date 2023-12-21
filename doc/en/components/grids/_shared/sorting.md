@@ -53,12 +53,9 @@ Having a certain amount of sorted columns could be really confusing if there is 
 
 The `{ComponentName}` provides a solution for this problem by indicating the index of each sorted column.
 
-<!-- ComponentStart: Grid -->
 
 `sample="/{ComponentSample}/column-sorting-indicators", height="550", alt="{Platform} {ComponentTitle} column sorting indicators"`
 
-
-<!-- ComponentEnd: Grid -->
 
 ## Sorting through the API
 
@@ -259,8 +256,10 @@ The sorting indicator icon in the column header can be customized using a templa
 <!-- end: Angular -->
 - `SortHeaderIconTemplate` – re-templates the sorting icon when no sorting is applied.
 
+
+<!-- ComponentStart: Grid, TreeGrid -->
 ```razor
-<IgbGrid SortHeaderIconTemplate="SortDefaultTemplate">
+<{ComponentSelector} SortHeaderIconTemplate="SortDefaultTemplate"></{ComponentSelector}>
 
 @code {
     public RenderFragment<IgbGridHeaderTemplateContext> SortDefaultTemplate = (ctx) =>
@@ -269,10 +268,11 @@ The sorting indicator icon in the column header can be customized using a templa
     };
 }
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
 
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var grid = this.grid = document.getElementById('grid') as {ComponentName}Component;
     grid.data = this.data;
     grid.sortHeaderIconTemplate = this.sortHeaderIconTemplate;
 }
@@ -308,8 +308,10 @@ function sortHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
 
 - `SortAscendingHeaderIconTemplate` – re-templates the sorting icon when the column is sorted in ascending order.
 
+<!-- ComponentStart: Grid, TreeGrid -->
+
 ```razor
-<IgbGrid SortAscendingHeaderIconTemplate="SortAscendingTemplate">
+<{ComponentSelector} SortAscendingHeaderIconTemplate="SortAscendingTemplate"></{ComponentSelector}>
 
 @code {
     public RenderFragment<IgbGridHeaderTemplateContext> SortAscendingTemplate = (ctx) =>
@@ -318,10 +320,11 @@ function sortHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
     };
 }
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
 
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var grid = this.grid = document.getElementById('grid') as {ComponentName}Component;
     grid.data = this.data;
     grid.sortAscendingHeaderIconTemplate = this.sortAscendingHeaderIconTemplate;
 }
@@ -357,9 +360,9 @@ function sortAscendingHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
 
 - `SortDescendingHeaderIconTemplate` – re-templates the sorting icon when the column is sorted in descending order.
 
-
+<!-- ComponentStart: Grid, TreeGrid -->
 ```razor
-<IgbGrid SortDescendingHeaderIconTemplate="SortDescendingTemplate">
+<{ComponentSelector} SortDescendingHeaderIconTemplate="SortDescendingTemplate"></{ComponentSelector}>
 
 @code {
     public RenderFragment<IgbGridHeaderTemplateContext> SortDescendingTemplate = (ctx) =>
@@ -368,10 +371,11 @@ function sortAscendingHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
     };
 }
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
 
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var grid = this.grid = document.getElementById('grid') as {ComponentName}Component;
     grid.data = this.data;
     grid.sortDescendingHeaderIconTemplate = this.sortDescendingHeaderIconTemplate;
 }

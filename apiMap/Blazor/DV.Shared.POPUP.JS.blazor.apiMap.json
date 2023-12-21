@@ -2,7 +2,7 @@
   {
     "originalName": "Popup",
     "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "Popup.cs","mappedName": "IgbPopup"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualAmbientShadowColor"}], "originalName": "ActualAmbientShadowColor"},
@@ -34,7 +34,7 @@
     "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "OnPopupEventArgs.cs","mappedName": "IgbOnPopupEventArgs"}]
   },
   {
@@ -42,7 +42,7 @@
     "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "OnClosedEventArgs.cs","mappedName": "IgbOnClosedEventArgs"}]
   }]
 }

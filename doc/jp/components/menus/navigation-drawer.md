@@ -17,8 +17,6 @@ _language: ja
 
 `sample="/menus/nav-drawer/add-drawer-items", height="300", alt="{Platform} Navigation Drawer 項目の例"`
 
-
-
 ## 使用方法
 
 <!-- WebComponents -->
@@ -77,6 +75,8 @@ import { defineComponents, IgcNavDrawerComponent } from 'igniteui-webcomponents'
 
 defineComponents(IgcNavDrawerComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 ## Navigation Drawer 項目の追加
 

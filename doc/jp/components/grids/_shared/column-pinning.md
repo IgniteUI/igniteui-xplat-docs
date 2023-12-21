@@ -785,7 +785,7 @@ $custom-theme: grid-theme(
 
 ### デモ
 
-`sample="/{GridSample}/column-pinning-styles", height="510", alt="{Platform} {ComponentTitle} ピン固定のスタイルの例"`
+`sample="/{ComponentSample}/column-pinning-styles", height="510", alt="{Platform} {ComponentTitle} ピン固定のスタイルの例"`
 
 <!-- end: WebComponents, Blazor -->
 
