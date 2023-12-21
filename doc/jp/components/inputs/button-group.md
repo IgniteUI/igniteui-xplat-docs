@@ -31,6 +31,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcButtonGroupComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
 <!-- end: WebComponents -->
 
 {ProductName} ボタン グループがインポートされたので、`ButtonGroup` とそのボタンの基本構成を開始できます。

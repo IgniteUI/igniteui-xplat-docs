@@ -28,7 +28,8 @@ To turn on the `{ComponentName}` component's Excel-style filtering, two inputs s
 <!-- end: Angular -->
 
 ```razor
-<IgbGrid AllowFiltering="true" FilterMode="FilterMode.ExcelStyleFilter" />
+<{ComponentSelector} AllowFiltering="true" FilterMode="FilterMode.ExcelStyleFilter" >
+</{ComponentSelector}>
 ```
 
 <!-- WebComponents -->
@@ -154,7 +155,18 @@ In the sample below **Product Name** and **Discontinued** columns have all four 
 ```
 
 ```razor
-Add tree grid snippet
+<IgbTreeGrid AutoGenerate="false" Name="grid" @ref="grid" Data="FoodsData" PrimaryKey="ID" ForeignKey="ParentID" Moving="true" AllowFiltering="true" FilterMode="FilterMode.ExcelStyleFilter">
+    <IgbColumn Field="ID" Header="ID">
+    </IgbColumn>
+    <IgbColumn Field="Name" Header="Product Name" Sortable="true">
+    </IgbColumn>
+    <IgbColumn Field="UnitPrice" Header="Unit Price" Sortable="false" DataType="GridColumnDataType.Number" DisablePinning="true" DisableHiding="true">
+    </IgbColumn>
+    <IgbColumn Field="AddedDate" Header="Added Date" Sortable="false" DataType="GridColumnDataType.Date">
+    </IgbColumn>
+    <IgbColumn Field="Discontinued" DataType="GridColumnDataType.Boolean" BodyTemplateScript="WebGridBooleanCellTemplate" Sortable="true" >
+    </IgbColumn>
+</IgbTreeGrid>
 ```
 
 ```html
@@ -280,13 +292,14 @@ If you want to further customize the Excel style filter menu, you can use the `E
 The following code demonstrates how to customize the Excel style filter menu using the `ExcelStyleHeaderIconTemplate`:
 
 ```razor
-<IgbGrid    
+<{ComponentSelector}    
     Name="grid"
     @ref="grid"
     Data="Data"    
     AllowFiltering="true"
     FilterMode="FilterMode.ExcelStyleFilter"
-    ExcelStyleHeaderIconTemplateScript="WebGridFilterAltIconTemplate"/>
+    ExcelStyleHeaderIconTemplateScript="WebGridFilterAltIconTemplate">
+</{ComponentSelector}>
 
 *** In JavaScript ***
 igRegisterScript("WebGridFilterAltIconTemplate", (ctx) => {
@@ -297,7 +310,7 @@ igRegisterScript("WebGridFilterAltIconTemplate", (ctx) => {
 
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var grid = this.grid = document.getElementById('grid') as {ComponentName}Component;
     grid.excelStyleHeaderIconTemplate = this.webGridFilterAltIconTemplate;
 }
 
@@ -602,6 +615,8 @@ The following sample demonstrates how to format the numeric values of a column a
 
 <!-- ComponentStart: TreeGrid -->
 
+<!-- Angular -->
+
 ## Tree Filter View
 
 By default, the Excel Style Filtering dialog displays the items in a list view. In order to display them in a tree view you can use the `TreeGridFilteringStrategy` and specify an array of column field names. Filter items will be displayed in a tree view for the speicified columns and in a list view for all other columns. The following sample demonstrates how to show filter items in a tree view for the first column:
@@ -610,6 +625,8 @@ By default, the Excel Style Filtering dialog displays the items in a list view. 
 
 
 <!-- ComponentEnd: TreeGrid -->
+
+<!-- end: Angular -->
 
 <!-- Angular -->
 
@@ -1033,7 +1050,7 @@ In addition to the predefined themes, the grid could be further customized by se
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
 ```html
-<igc-grid class="grid"></igc-grid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 ```tsx
@@ -1041,7 +1058,7 @@ In case you would like to change some of the colors, you need to set a class for
 ```
 
 ```razor
-<IgbGrid class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 Then set the related CSS properties to this class:

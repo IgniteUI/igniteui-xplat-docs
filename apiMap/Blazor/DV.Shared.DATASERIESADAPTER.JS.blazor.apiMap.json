@@ -2,7 +2,7 @@
   {
     "originalName": "IDataSeriesAdapterRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "IDataSeriesAdapterRule.cs","mappedName": "IDataSeriesAdapterRule"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
@@ -11,7 +11,7 @@
   {
     "originalName": "DataSeriesAdapterRunContext",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "DataSeriesAdapterRunContext.cs","mappedName": "DataSeriesAdapterRunContext"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -52,7 +52,7 @@
   {
     "originalName": "DataSeriesDataProviderAnalyzer",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "DataSeriesDataProviderAnalyzer.cs","mappedName": "DataSeriesDataProviderAnalyzer"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -116,7 +116,7 @@
   {
     "originalName": "DataSeries",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "DataSeries.cs","mappedName": "DataSeries"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -148,7 +148,7 @@
   {
     "originalName": "DataSeriesMemberPathHint",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "DataSeriesMemberPathHint.cs","mappedName": "DataSeriesMemberPathHint"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -164,7 +164,7 @@
   {
     "originalName": "IExternalDataSeriesAdapter",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "IExternalDataSeriesAdapter.cs","mappedName": "IExternalDataSeriesAdapter"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "DataSourceLocalDataProvider","mappedName": "getDataProvider"}], "originalName": "GetDataProvider"},
@@ -173,7 +173,7 @@
   {
     "originalName": "SimpleFinancialPriceSeriesRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "SimpleFinancialPriceSeriesRule.cs","mappedName": "SimpleFinancialPriceSeriesRule"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -186,7 +186,7 @@
   {
     "originalName": "SimpleScatterSeriesRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "SimpleScatterSeriesRule.cs","mappedName": "SimpleScatterSeriesRule"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -202,7 +202,7 @@
   {
     "originalName": "SubCollectionsRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "SubCollectionsRule.cs","mappedName": "SubCollectionsRule"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -213,7 +213,7 @@
   {
     "originalName": "SimpleCategorySeriesRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "SimpleCategorySeriesRule.cs","mappedName": "SimpleCategorySeriesRule"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
