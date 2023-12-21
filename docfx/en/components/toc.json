@@ -591,7 +591,7 @@
     "status": "",
     "items": [
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Advanced Filtering",
         "href": "grids/tree-grid/advanced-filtering.md",
         "status": "NEW"
