@@ -152,12 +152,12 @@ You can subscribe to the `ColumnMovingEnd` event of the `{ComponentName}` to imp
     <igc-column field="Change On Year(%)" data-type="Number" ></igc-column>
 </{ComponentSelector}>
 ```
+
 ```typescript
 constructor() {
-    var dataGrid = this.dataGrid = document.getElementById('dataGrid') as IgcGridComponent;
+    var dataGrid = this.dataGrid = document.getElementById('dataGrid') as {ComponentName}Component;
     dataGrid.data = this.data;
     dataGrid.addEventListener("columnMovingEnd", this.onColumnMovingEnd);
-
 }
 ```
 ```typescript

@@ -7,7 +7,7 @@
   {
     "originalName": "HeatTileGenerator",
     "originalNamespace": "Infragistics.Controls",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "igx-heat-tile-generator.ts","mappedName": "IgxHeatTileGenerator"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "blurRadius"}], "originalName": "BlurRadius"},
@@ -37,7 +37,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "Infragistics.Controls",
     "originalBaseTypeName": "DependencyObjectNotifier",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "igx-shape-data-source.ts","mappedName": "IgxShapeDataSource"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgRect",  "mappedName": "computedWorldRect"}], "originalName": "ComputedWorldRect"},
@@ -69,7 +69,7 @@
   {
     "originalName": "ShapeFilterRecordEventArgs",
     "originalNamespace": "Infragistics.Controls.Maps",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "igx-shape-filter-record-event-args.ts","mappedName": "IgxShapeFilterRecordEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxShapefileRecord","mappedName": "record"}], "originalName": "Record"},
@@ -80,7 +80,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "System.Windows",
     "originalBaseTypeName": "DependencyObject",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "igx-shapefile-record.ts","mappedName": "IgxShapefileRecord"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgRect",  "mappedName": "bounds"}], "originalName": "Bounds"},
@@ -93,7 +93,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "igx-get-tile-image-uri-args.ts","mappedName": "IgxGetTileImageUriArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "tileImageUri"}], "originalName": "TileImageUri"},
@@ -106,7 +106,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "System.Windows",
     "originalBaseTypeName": "DependencyObject",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "igx-triangulation-data-source.ts","mappedName": "IgxTriangulationDataSource"}]
   },
   {
@@ -114,7 +114,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "igx-downloading-multi-scale-image-event-args.ts","mappedName": "IgxDownloadingMultiScaleImageEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "uri"}], "originalName": "Uri"} ]
@@ -124,7 +124,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "igx-cancelling-multi-scale-image-event-args.ts","mappedName": "IgxCancellingMultiScaleImageEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "uri"}], "originalName": "Uri"} ]
@@ -134,7 +134,7 @@
     "originalNamespace": "Infragistics.Controls.Charts",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "igx-triangulation-status-event-args.ts","mappedName": "IgxTriangulationStatusEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "currentStatus"}], "originalName": "CurrentStatus"} ]

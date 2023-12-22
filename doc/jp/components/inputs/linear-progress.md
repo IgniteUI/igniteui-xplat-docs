@@ -13,8 +13,6 @@ _language: ja
 
 `sample="/inputs/linear-progress-indicator/simple", height="80", alt="{Platform} Linear Progress の例"`
 
-
-
 <div class="divider--half"></div>
 
 ## 使用方法
@@ -34,6 +32,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcLinearProgressComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -72,12 +73,12 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbLinearProgressModule));
 
 `LinearProgress` の使用を開始する最も簡単な方法は次のとおりです:
 
-```tsx
-<IgrLinearProgress value="100"></IgrLinearProgress>
-```
-
 ```html
 <igc-linear-progress value="100"></igc-linear-progress>
+```
+
+```tsx
+<IgrLinearProgress value="100"></IgrLinearProgress>
 ```
 
 ```razor

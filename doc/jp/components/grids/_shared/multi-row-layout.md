@@ -331,7 +331,7 @@ $my-custom-schema: extend($light-schema, (
 
 ### デモ
 
-`sample="/{ComponentSample}/multi-row-layout-styling", height="755", alt="{Platform} {ComponentTitle} 複数行レイアウトのスタイル設定の例"`
+`sample="/{ComponentSample}/multi-row-layout-style", height="755", alt="{Platform} {ComponentTitle} 複数行レイアウトのスタイル設定の例"`
 
 
 
