@@ -7,7 +7,7 @@ namespace: Infragistics.Controls
 ---
 
 # Theme {Platform} Data Grid
-With the {Platform} Theming engine, the {ComponentTitle} {ProductName} can be easily customized to match your brand identity.
+With the {Platform} Theming engine, the {ProductName} Grid can be easily customized to match your brand identity.
 In addition to predefined themes and palettes, you can further customize the look and feel of your data grid by using a set of CSS custom properties.
 
 ### Available theming properties
