@@ -21,8 +21,6 @@ In it, you can see how to define an accordion and its expansion panels. The samp
 
 `sample="/layouts/accordion/overview", height="460", alt="{Platform} Accordion Example"`
 
-
-
 <div class="divider--half"></div>
 
 ## Getting Started with {Platform} Accordion
@@ -42,6 +40,8 @@ import { defineComponents, IgcAccordionComponent } from 'igniteui-webcomponents'
 
 defineComponents(IgcAccordionComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -159,12 +159,12 @@ Keyboard navigation in the {Platform} Accordion provides a rich variety of keybo
 The Accordion navigation is compliant with W3C accessibility standards and convenient to use.
 
 **Key Combinations**
- - <kbd>Arrow Down</kbd> - moves the focus to the panel below
- - <kbd>Arrow Up</kbd> - moves the focus to the panel above
- - <kbd>Alt + Arrow Down</kbd> - opens the focused panel in the accordion
- - <kbd>Alt + Arrow Up</kbd> - closes the focused panel in the accordion
- - <kbd>Shift + Alt + Arrow Down</kbd> - opens all enabled panels (if singleExpand is set to true opens the focused panel)
- - <kbd>Shift + Alt + Arrow Up</kbd> - closes all enabled panels
+ - <kbd>↓</kbd> - moves the focus to the panel below
+ - <kbd>↑</kbd> - moves the focus to the panel above
+ - <kbd>Alt</kbd> + <kbd>↓</kbd> - opens the focused panel in the accordion
+ - <kbd>Alt</kbd> + <kbd>↑</kbd> - closes the focused panel in the accordion
+ - <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>↓</kbd> - opens all enabled panels (if singleExpand is set to true opens the focused panel)
+ - <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>↑</kbd> - closes all enabled panels
  - <kbd>Home</kbd> - navigates to the FIRST enabled panel in the accordion
  - <kbd>End</kbd> - navigates to the LAST enabled panel in the accordion
 

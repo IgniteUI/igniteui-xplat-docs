@@ -1,6 +1,11 @@
-{"types":[
-  { "originalName":"StockChangedEventArgs",
-    "names":[{"platform":"Blazor","fileName":"StockChangedEventArgs.cs","mappedName":"IgbStockChangedEventArgs"}],
+{  "types":[
+  {
+    "originalName": "StockChangedEventArgs",
+    "originalNamespace": "Infragistics.DataAdapters",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "StockChangedEventArgs.cs","mappedName": "IgbStockChangedEventArgs"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"string[]","mappedName":"AddedSymbols"}],"originalName":"AddedSymbols"},
-    { "names":[{"platform":"Blazor","mappedType":"string[]","mappedName":"RemovedSymbols"}],"originalName":"RemovedSymbols"}],"originalNamespace":"Infragistics.DataAdapters"}]}
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "AddedSymbols"}], "originalName": "AddedSymbols"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "RemovedSymbols"}], "originalName": "RemovedSymbols"} ]
+  }]
+}

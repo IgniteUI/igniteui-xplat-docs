@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # Row Actions in {Platform} {ComponentTitle}
 
-The `{ComponentName}` component in {ProductName} provides the ability to use an `ActionStrip` and utilize CRUD for row/cell components and row pinning. The Action Strip component can host predefined UI controls for these operations.
+The {ProductName} Row Actions feature in {Platform} {ComponentTitle} enables developers to use an `АctionStrip` and utilize CRUD for row/cell components and row pinning. There are several predefined UI controls for these operations that are applicable to a specific row in the `{ComponentName}` – editing and pinning.
 
 ## Usage
 
@@ -49,32 +49,70 @@ They are added inside the `{ComponentName}` and this is all needed to have an `A
 <!-- end: Angular -->
 
 ```razor
-    <{ComponentSelector} Data=northwindEmployees RowEditable="True" PrimaryKey="ID">
-        @foreach (var c in columns)
-        {
-            <IgbColumn Field="@c.Field">
-            </IgbColumn>
-        }
-        <IgbActionStrip @ref=actionstrip>
-            <IgbGridPinningActions></IgbGridPinningActions>
-            <IgbGridEditingActions></IgbGridEditingActions>
-        </IgbActionStrip>
-    </{ComponentSelector}>
+<IgbGrid Data=northwindEmployees RowEditable="True" PrimaryKey="ID">
+    @foreach (var c in columns)
+    {
+        <IgbColumn Field="@c.Field">
+        </IgbColumn>
+    }
+    <IgbActionStrip @ref=actionstrip>
+        <IgbGridPinningActions></IgbGridPinningActions>
+        <IgbGridEditingActions></IgbGridEditingActions>
+    </IgbActionStrip>
+</IgbGrid>
 ```
+
+<!-- ComponentStart: TreeGrid -->
+```razor
+<IgbTreeGrid Data=northwindEmployees RowEditable="True" PrimaryKey="ID">
+    @foreach (var c in columns)
+    {
+        <IgbColumn Field="@c.Field">
+        </IgbColumn>
+    }
+    <IgbActionStrip @ref=actionstrip>
+        <IgbGridPinningActions></IgbGridPinningActions>
+        <IgbGridEditingActions></IgbGridEditingActions>
+    </IgbActionStrip>
+</IgbTreeGrid>
+```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid" row-editable="true" primary-key="ID">
-    <igc-column field="field">
-    </igc-column>
-
-    <igc-action-strip id="actionStrip">
+<igc-grid row-editable="true" primary-key="ID">
+    <igc-column field="field"></igc-column>
+    <igc-action-strip>
         <igc-grid-pinning-actions></igc-grid-pinning-actions>
         <igc-grid-editing-actions></igc-grid-editing-actions>
     </igc-action-strip>
+</igc-grid>
+```
+<!-- ComponentStart: TreeGrid -->
+```html
+<igc-tree-grid row-editable="true" primary-key="ID">
+    <igc-column field="field"></igc-column>
+    <igc-action-strip>
+        <igc-grid-pinning-actions></igc-grid-pinning-actions>
+        <igc-grid-editing-actions></igc-grid-editing-actions>
+    </igc-action-strip>
+</igc-tree-grid>
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} id="grid" rowEditable="true" primaryKey="ID">
+    <IgrColumn field="field">
+    </IgrColumn>
+    <IgrActionStrip name="actionStrip">
+        <IgrGridPinningActions></IgrGridPinningActions>
+        <IgrGridEditingActions></IgrGridEditingActions>
+    </IgrActionStrip>
 </{ComponentSelector}>
 ```
-<!-- end: WebComponents -->
+<!-- end: React -->
 
 > [!Note]
 > When `ActionStripComponent` is a child component of the `{ComponentName}`, hovering a row will automatically show the UI.
@@ -132,6 +170,17 @@ These components expose templates giving flexibility for customization. For inst
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector}>
+    <IgrActionStrip name="actionStrip">
+        <IgrGridPinningActions></IgrGridPinningActions>
+        <IgrGridEditingActions editRow="true" deleteRow="false"></IgrGridEditingActions>
+    </IgrActionStrip>
+</{ComponentSelector}>
+```
+<!-- end: React -->
 
 `sample="/{ComponentSample}/action-strip", height="600", alt="{Platform} {ComponentTitle} Action Strip Example"`
 

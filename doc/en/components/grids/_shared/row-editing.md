@@ -1,5 +1,5 @@
 ---
-title: Editing Rows in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Editing Rows - {ProductName}
 _description: Want to enable row editing in {Platform} {ComponentTitle}? Need a powerful API for CRUD operations? Try our {ProductName} {ComponentTitle} rows editing component!
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Row Editing
 
-The `{ComponentName}` provides a convenient way to perform data manipulations through inline editing and a powerful API for {Platform} CRUD operations. Click on a row and press **Enter key** or simply double click with the mouse on the row that needs to be modified.
+The {ProductName} Row Editing feature in {Platform} {ComponentTitle} allows editing data directly within the `{ComponentName}`. On top of this convenient way to manipulate data, there’s a powerful API for full CRUD operations. You can perform grid row editing by clicking on a row and pressing **Enter key**. Another quick way is to double click with the mouse on the row that needs to be modified.
 
 ## {Platform} {ComponentTitle} Row Editing Example
 
@@ -20,7 +20,7 @@ The following sample demonstrates how to enable row editing in the `{ComponentNa
 
 
 > [!Note]
-> When a row is in edit mode, then clicking on a cell on another row will act like the Done button is pressed - submit all the changes of the previous row. If the new cell that gets focus is editable, then the new row also enters edit mode, while if the cell is not editable, then only the previous row exits edit mode.
+> When a row is in edit mode, clicking on a cell in another row will act like the "Done" button is pressed, submitting all changes made in the previous row. If the newly focused cell is editable, the new row enters edit mode as well. However, if the cell is not editable, only the previous row exits edit mode.
 
 ## Row Editing Usage
 
@@ -46,15 +46,15 @@ Define a `{ComponentName}` with bound data source and `RowEditable` set to true:
 ```html
 <{ComponentSelector} [data]="data" [primaryKey]="'ProductID'" width="100%" height="500px" [rowEditable]="true">
     <igx-column field="ProductID" header="Product ID" editable="false"></igx-column>
-    <igx-column field="ReorderLevel" header="ReorderLever" [dataType]="'number'"></igx-column>
-    <igx-column field="ProductName" header="ProductName" [dataType]="'string'"></igx-column>
-    <igx-column field="UnitsInStock" header="UnitsInStock" [dataType]="'number'">
+    <igx-column field="ReorderLevel" header="Reorder Level" [dataType]="'number'"></igx-column>
+    <igx-column field="ProductName" header="Product Name" [dataType]="'string'"></igx-column>
+    <igx-column field="UnitsInStock" header="Units In Stock" [dataType]="'number'">
         <ng-template igxCellEditor let-cell="cell">
             <input name="units" [(ngModel)]="cell.value" style="color: black" />
         </ng-template>
     </igx-column>
-    <igx-column field="OrderDate" [dataType]="'date'"></igx-column>
-    <igx-column field="Discontinued" header="Discontinued" [dataType]="'boolean'"></igx-column>
+    <igx-column field="OrderDate" header="Order Date" [dataType]="'date'"></igx-column>
+    <igx-column field="Discontinued" [dataType]="'boolean'"></igx-column>
 </{ComponentSelector}>
 ```
 <!-- end: Angular -->
@@ -63,21 +63,20 @@ Define a `{ComponentName}` with bound data source and `RowEditable` set to true:
 ```html
 <{ComponentSelector} id="grid" primary-key="ProductID" width="100%" height="500px" row-editable="true">
     <igc-column field="ProductID" header="Product ID" editable="false"></igc-column>
-    <igc-column field="ReorderLevel" header="ReorderLever" data-type="Number"></igc-column>
-    <igc-column field="ProductName" header="ProductName" data-type="String"></igc-column>
-    <igc-column id="unitsInStock" field="UnitsInStock" header="UnitsInStock" data-type="Number">
-    </igc-column>
-    <igc-column field="OrderDate" data-type="Date"></igc-column>
-    <igc-column field="Discontinued" header="Discontinued" data-type="Boolean"></igc-column>
+    <igc-column field="ReorderLevel" header="Reorder Level" data-type="number"></igc-column>
+    <igc-column field="ProductName" header="Product Name" data-type="string"></igc-column>
+    <igc-column id="unitsInStock" field="UnitsInStock" header="Units In Stock" data-type="number"></igc-column>
+    <igc-column field="OrderDate" field="Order Date" data-type="date"></igc-column>
+    <igc-column field="Discontinued" data-type="boolean"></igc-column>
 </{ComponentSelector}>
 ```
+
 ```ts
 constructor() {
-    var grid  = document.getElementById('grid') as IgcGridComponent;
+    var grid  = document.getElementById('grid') as {ComponentName}Component;
     var unitsInStock = document.getElementById('unitsInStock') as IgcColumnComponent;
     grid.data = this.data;
     unitsInStock.bodyTemplate = this.unitsInStockCellTemplate;
-
 }
 
 public unitsInStockCellTemplate = (ctx: IgcCellTemplateContext) => {
@@ -86,16 +85,36 @@ public unitsInStockCellTemplate = (ctx: IgcCellTemplateContext) => {
 ```
 <!-- end: WebComponents -->
 
+```tsx
+function unitsInStockCellTemplate(ctx: IgrCellTemplateContext) {
+    return (
+        <>
+            <input name="units" value={ctx.dataContext.cell.value} style={{color: "black"}} />;
+        </>
+    );
+}
+
+<{ComponentSelector} primaryKey="ProductID" width="100%" height="500px" rowEditable="true"
+    bodyTemplate={unitsInStockCellTemplate}>
+    <IgrColumn field="ProductID" header="Product ID" editable="false"></IgrColumn>
+    <IgrColumn field="ReorderLevel" header="ReorderLever" dataType="number"></IgrColumn>
+    <IgrColumn field="ProductName" header="ProductName" dataType="string"></IgrColumn>
+    <IgrColumn field="UnitsInStock" header="UnitsInStock" dataType="number"></IgrColumn>
+    <IgrColumn field="OrderDate" dataType="date"></IgrColumn>
+    <IgrColumn field="Discontinued" header="Discontinued" dataType="boolean"></IgrColumn>
+</{ComponentSelector}>
+```
+
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
 ```razor
  <{ComponentSelector} Width="100%"  
              Height="100%"
              PrimaryKey="Key"
-             AutoGenerate=false
-             Data=northwindEmployees
-             RowEditable=true>
-        <IgbColumn Field="ID" Editable=false></IgbColumn>
+             AutoGenerate="false"
+             Data="northwindEmployees"
+             RowEditable="true">
+        <IgbColumn Field="ID" Editable="false"></IgbColumn>
         <IgbColumn Field="ContactName"></IgbColumn>
         <IgbColumn Field="ContactTitle"></IgbColumn>
         <IgbColumn Field="City"></IgbColumn>
@@ -118,13 +137,11 @@ public unitsInStockCellTemplate = (ctx: IgcCellTemplateContext) => {
     }
 ```
 
-<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
-
 > [!Note]
 > Setting primary key is mandatory for row editing operations.
 
 > [!Note]
-> It's not needed to enable editing for individual columns. Using the `RowEditable` property in the `{ComponentName}`, will mean that all rows, with defined `Field` property, excluding primary one, will be editable. If you want to disable editing for specific column, then you set the `Editable` column's input to `false`.
+> Enabling editing for individual columns is not necessary. Using the `RowEditable` property in the `{ComponentName}`, all rows, with defined `Field` property (excluding the primary row) will be editable. If you want to disable editing for a specific column, simply set the `Editable` input of that column to `false`.
 
 <!-- Angular -->
 ```typescript
@@ -151,7 +168,7 @@ export class {ComponentName}RowEditSampleComponent {
 
 
 > [!Note]
-> The `{ComponentName}` uses internally a provider `BaseTransactionService` that holds pending cell changes, until row state submitted or cancelled.
+> The `{ComponentName}` utilizes `BaseTransactionService` - an internal provider that holds pending cell changes until the row state is either submitted or cancelled.
 
 ## Positioning
 
@@ -224,9 +241,19 @@ igRegisterScript("RowEditTextTemplate", (ctx) => {
 }, false);
  ```
 
- ```ts
+```ts
 public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
     return html`Changes: ${ctx.implicit}`;
+}
+```
+
+```tsx
+function rowEditTextTemplate(ctx: IgrGridRowEditTextTemplateContext) {
+    return (
+        <>
+            Changes: {ctx.dataContext.implicit}
+        </>
+    );
 }
 ```
 
@@ -256,13 +283,25 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
 }, false);
  ```
 
- ```ts
+```ts
 public rowEditActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
     const endRowEdit = ctx.implicit;
     return html`
         <button @click="${(event) => endRowEdit(false, event)}">Cancel</button>
         <button @click="${(event) => endRowEdit(true, event)}">Apply</button>
     `;
+}
+```
+
+```tsx
+function rowEditActionsTemplate(ctx: IgrGridRowEditActionsTemplateContext) {
+    const endRowEdit = ctx.dataContext.implicit;
+    return (
+        <>
+            <button onClick={(event) => endRowEdit(false, event)}>Cancel</button>
+            <button onClick={(event) => endRowEdit(true, event)}>Apply</button>
+        </>
+    );
 }
 ```
 
@@ -393,19 +432,23 @@ After styling the banner and buttons, we also define a custom style for [the cel
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 ## Styling
 
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
-```ts
-<igc-grid class="grid">
+```html
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid Class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 Then set the related CSS properties for that class:
@@ -416,13 +459,14 @@ Then set the related CSS properties for that class:
     --ig-banner-banner-message-color: #423589;
 }
 ```
+<!-- ComponentEnd: TreeGrid -->
 
 ### Demo
 
 `sample="/{ComponentSample}/row-editing-style", height="560", alt="{Platform} {ComponentTitle} Row Editing Styling Example"`
 
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 ## Known Issues and Limitations
 

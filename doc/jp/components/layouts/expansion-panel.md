@@ -14,8 +14,6 @@ _language: ja
 
 `sample="/layouts/expansion-panel/usage", height="320", alt="{Platform} 展開パネルの例"`
 
-
-
 <div class="divider--half"></div>
 
 ## 使用方法
@@ -34,6 +32,8 @@ import {defineComponents, IgcExpansionPanelComponent} from 'igniteui-webcomponen
 
 defineComponents(IgcExpansionPanelComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 <!-- end: WebComponents -->
 
@@ -147,8 +147,8 @@ IgrExpansionPanelModule.register();
 
 **キーの組み合わせ**
 
- - <kbd> Alt + 下矢印</kbd> - フォーカスされたパネルを展開します。
- - <kbd>Alt + 上矢印</kbd> - フォーカスされたパネルを縮小します。
+ - <kbd>Alt + ↓</kbd> - フォーカスされたパネルを展開します。
+ - <kbd>Alt + ↑</kbd> - フォーカスされたパネルを縮小します。
  - <kbd>Space</kbd> / <kbd>Enter</kbd> - フォーカスされたパネルの展開状態を切り替えます。
 
 

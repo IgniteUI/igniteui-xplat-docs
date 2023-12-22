@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 列ピン固定
 
-{ProductName} の**列ピン固定**は、ユーザーが特定の列順序で列をロックすることを可能にし、`{ComponentName}` での水平スクロール時にロックされた列が常に表示されます。{Platform} {ComponentTitle} には組み込みの列ピン固定 UI があり、`{ComponentName}` のツールバーで列の表示状態を変更できます。その他、カスタム UI を定義し、Column Pinning 機能を介して列のピン固定状態を変更できます。
+{Platform} を使用すると、開発者は列のピン固定機能を利用して特定の列を希望の順序でロックできるため、ユーザーが {Platform} の {ComponentTitle} を水平方向にスクロールしても常に可視性を確保できます。列ピン固定用の統合 UI があり、{Platform} {ComponentTitle} ツールバーからアクセスできます。さらに、開発者はカスタム ユーザー インターフェイスを構築し、列のピン固定状態を変更できる柔軟性を備えています。
 
 ## {Platform} {ComponentTitle} 列ピン固定の例
 
@@ -59,6 +59,16 @@ constructor() {
     grid.data = this.data;
 }
 ```
+<!-- React -->
+```tsx
+<{ComponentName} data={nwindData} autoGenerate="false">
+    <IgrColumn field="Name" pinned="true"></IgrColumn>
+    <IgrColumn field="AthleteNumber"></IgrColumn>
+    <IgrColumn field="TrackProgress"></IgrColumn>
+</{ComponentName}>
+```
+<!-- end: React -->
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -98,10 +108,21 @@ constructor() {
 `{ComponentName}` の `PinColumn` または `UnpinColumn` メソッドを使用してフィールド名によって列をピン固定またはピン固定解除できます。
 
 <!-- ComponentStart: Grid -->
+
+<!-- Angular, WebComponents -->
 ```typescript
 this.grid.pinColumn('AthleteNumber');
 this.grid.unpinColumn('Name');
 ```
+<!-- end: Angular, WebComponents -->
+
+
+<!-- React -->
+```typescript
+gridRef.current.pinColumn('AthleteNumber');
+gridRef.current.unpinColumn('Name');
+```
+<!-- end: React -->
 
 ```razor
 @code {
@@ -211,6 +232,17 @@ grid.pinning = { columns: ColumnPinningPosition.End };
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+```typescript
+const pinningConfig = new IgrPinningConfig();
+pinningConfig.columns = ColumnPinningPosition.End;
+```
+
+```tsx
+<IgrGrid data={nwindData} autoGenerate="true" pinning={pinningConfig}></IgrGrid>
+```
+<!-- end: React -->
+
 ```razor
 <{ComponentSelector} Data=data AutoGenerate=true Pinning="pinningConfig"></IgbGrid>
 
@@ -296,7 +328,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
         <div class="title-inner">
             <span style="float:left">${ctx.cell.column.header}</span>
-            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" click="${toggleColumn(ctx.cell.column)}"></igx-icon>
+            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" @click="${() => toggleColumn(ctx.cell.column)}"></igx-icon>
         </div>
     `;
 }
@@ -327,10 +359,46 @@ igRegisterScript("WebGridPinHeaderTemplate", (ctx) => {
     }
     return html`<div>
     <span style="float:left">${ctx.column.field}</span>
-    <span style="float:right" onpointerdown='toggleColumnPin("${ctx.column.field}")'>📌</span>
+    <span style="float:right" @pointerdown="${() => toggleColumnPin(ctx.column.field)}">📌</span>
 </div>`;
 }, false);
 ```
+
+<!-- React -->
+```tsx
+<IgrGrid autoGenerate="false" data={CustomersData} name="grid" ref={grid}>
+    <IgrColumn field="ID" hidden="true"></IgrColumn>
+
+    <IgrColumn field="CompanyName" header="Company" width="300px" 
+    name="column1" headerTemplate={toggleColumnPin}></IgrColumn>
+
+    <IgrColumn field="ContactName" header="Name" width="200px" pinned="true"
+    name="column2" headerTemplate={toggleColumnPin}> </IgrColumn>
+
+    <IgrColumn field="ContactTitle" header="Title" width="200px" pinned="true"
+    name="column3" headerTemplate={toggleColumnPin}> </IgrColumn>
+</IgrGrid>
+```
+
+```typescript
+function toggleColumnPin({ dataContext: ctx }: { dataContext: IgrColumnTemplateContext }) {
+  const togglePin = () => {
+    const col = ctx.column;
+    col.pinned = !col.pinned;
+  }
+  
+  const col = ctx.column;
+
+  return(
+    <div>
+      <span style={{ float: 'left' }}>{col.header}</span>
+      <span style={{ float: 'right' }} onClick={() => togglePin()}>📌</span>
+    </div>
+  );
+}
+```
+<!-- end: React -->
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -407,7 +475,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
         <div class="title-inner">
             <span style="float:left">${ctx.cell.column.header}</span>
-            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" click="${toggleColumn(ctx.cell.column)}"></igx-icon>
+            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" @click="${() => toggleColumn(ctx.cell.column)}"></igx-icon>
         </div>
     `;
 }
@@ -486,7 +554,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
         <div class="title-inner">
             <span style="float:left">${ctx.cell.column.header}</span>
-            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" click="${toggleColumn(ctx.cell.column)}"></igx-icon>
+            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" @click="${() => toggleColumn(ctx.cell.column)}"></igx-icon>
         </div>
     `;
 }
@@ -628,7 +696,7 @@ $custom-theme: grid-theme(
 <!-- ComponentEnd: Grid -->
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 ## スタイル設定
 
 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
@@ -642,6 +710,10 @@ $custom-theme: grid-theme(
 
 ```razor
 <IgbGrid Id="grid"></IgbGrid>
+```
+
+```tsx
+<IgrGrid id="grid"></IgrGrid>
 ```
 
 <!-- ComponentEnd: Grid -->
@@ -713,7 +785,7 @@ $custom-theme: grid-theme(
 
 ### デモ
 
-`sample="/{GridSample}/column-pinning-styles", height="510", alt="{Platform} {ComponentTitle} ピン固定のスタイルの例"`
+`sample="/{ComponentSample}/column-pinning-styles", height="510", alt="{Platform} {ComponentTitle} ピン固定のスタイルの例"`
 
 <!-- end: WebComponents, Blazor -->
 

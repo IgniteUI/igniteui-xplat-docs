@@ -10,7 +10,10 @@ _language: ja
 
 # {Platform} {ComponentTitle} 編集
 
-{ProductName} `{ComponentName}` コンポーネントは、レコードの作成、更新、削除などのデータ操作を簡単に実行できます。データの変更は、[セル編集](cell-editing.md)、[行編集](row-editing.md)、および一括編集 (追加予定) で実行できます。`{ComponentName}` は、これらの操作をカスタマイズできる強力なパブリック API を提供します。
+{Platform} {ComponentTitle} の {ProductName} セル編集機能を使用すると、レコードの作成、更新、削除などのデータ操作を簡単に実行できます。`{ComponentName}` は、これらの操作をカスタマイズできる強力なパブリック API を提供します。データ操作のフェーズは次のとおりです。
+- [セル編集](cell-editing.md)
+- [行編集](row-editing.md)
+- 一括編集 (追加予定)
 
 <!-- Angular -->
 
@@ -88,7 +91,7 @@ _language: ja
 
 以下のサンプルは、実行中の編集実行シーケンスを示しています。
 
-`sample="/{ComponentSample}/editing-lifecycle", height="620", alt="{Platform} {ComponentTitle} editing lifecycle"`
+`sample="/{ComponentSample}/editing-lifecycle", height="620", alt="{Platform} {ComponentTitle} 編集のライフサイクル"`
 
 
 ### 機能の統合
@@ -105,25 +108,25 @@ _language: ja
 
 たとえば、ユーザーがセル/行が編集モードのときに列をソートしようとする場合に、新しい値をコミットする方法を示します:
 
+<!-- Angular -->
+
 ```html
 <igx-grid #grid [data]="localData" [primaryKey]="'ProductID'" (sorting)="onSorting($event)">
 </igx-grid>
 ```
 
+<!-- end: Angular -->
+
 ```html
-<igc-grid id="grid" primary-key="ProductID" >
-</igc-grid>
+<{ComponentSelector} id="grid" primary-key="ProductID" >
+</{ComponentSelector}>
 ```
 
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-
-    this._bind = () => {
-        grid.data = this.data;
-        grid.addEventListener("sorting", this.onSorting);
-    }
-    this._bind();
+    var grid = document.getElementById('grid') as {ComponentName}Component;
+    grid.data = this.data;
+    grid.addEventListener("sorting", this.onSorting);
 
 }
 ```
@@ -141,18 +144,25 @@ public onSorting(event: ISortingEventArgs) {
 <!-- WebComponents -->
 
 ```typescript
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    grid.data = this.data;
+    grid.addEventListener("sorting", this.onSorting);
+}
+
 public onSorting(event: IgcSortingEventArgs) {
-    this.grid.endEdit(true);
+    var grid = document.getElementById('grid') as {ComponentName}Component;
+    grid.endEdit(true);
 }
 ```
 <!-- end: WebComponents -->
 
 ```razor
-<IgbGrid
+<{ComponentSelector}
     Id="grid"
     SortingScript="SortingHandler"
     RowEditable="true">
-</IgbGrid>
+</{ComponentSelector}>
 
 //In JavaScript
 function SortingHandler() {
@@ -161,9 +171,18 @@ function SortingHandler() {
 igRegisterScript("SortingHandler", SortingHandler, false);
 ```
 
+```tsx
+function onSorting(grid: IgrGridBaseDirective, event: IgrSortingEventArgs) {
+    grid.endEdit(true);
+}
+
+<IgrGrid data={localData} primaryKey="ProductID" sorting={onSorting}>
+</IgrGrid>
+```
+
 ## API リファレンス
 
-* `GridCell`
+* `Cell`
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
@@ -183,7 +202,7 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 <!-- end: Angular -->
 ## その他のリソース
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 
 
 * [列のデータ型](column-types.md#デフォルトのテンプレート)
@@ -200,7 +219,7 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 <!-- * [検索](search.md) -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- end: Angular, WebComponents -->
+<!-- end: Angular, WebComponents, React -->
 
 <!-- Blazor -->
 
@@ -214,6 +233,7 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
+* [検索](search.md)
 
 <!-- ComponentEnd:  Grid -->
 

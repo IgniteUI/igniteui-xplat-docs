@@ -1,21 +1,37 @@
-{"extraFiles":["igr-dv-interactivity-module.ts","igr-simple-default-tooltip.tsx"],
+{
+  "extraFiles": [
+    "igr-dv-interactivity-module.ts",
+    "igr-simple-default-tooltip.tsx"
+  ],
   "types":[
-  { "originalName":"KeyEventArgs",
-    "names":[{"platform":"React","fileName":"igr-key-event-args.ts","mappedName":"IgrKeyEventArgs"}],
+  {
+    "originalName": "KeyEventArgs",
+    "originalNamespace": "Infragistics.Controls.Inputs",
+    "originalBaseTypeNamespace": "System",
+    "originalBaseTypeName": "EventArgs",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "igr-key-event-args.ts","mappedName": "IgrKeyEventArgs"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"alt"}],"originalName":"Alt"},
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"ctrl"}],"originalName":"Ctrl"},
-    { "names":[{"platform":"React","mappedType":"number","mappedName":"keyCode"}],"originalName":"KeyCode"},
-    { "names":[{"platform":"React","mappedType":"ModifierKeys","mappedName":"modifiers"}],"originalName":"Modifiers"},
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"shift"}],"originalName":"Shift"},
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"defaultPrevented"}],"originalName":"DefaultPrevented"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"preventDefault"}],"originalName":"PreventDefault"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"stopPropagation"}],"originalName":"StopPropagation"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Inputs"},
-  { "originalName":"MouseButton","isEnum":true,
-    "names":[{"platform":"React","fileName":"MouseButton.ts","mappedName":"MouseButton"}],
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "alt"}], "originalName": "Alt"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "ctrl"}], "originalName": "Ctrl"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "defaultPrevented"}], "originalName": "DefaultPrevented"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "keyCode"}], "originalName": "KeyCode"},
+      {"names":[{"platform": "React", "mappedType": "ModifierKeys","mappedName": "modifiers"}], "originalName": "Modifiers"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "preventDefault"}], "originalName": "PreventDefault"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "shift"}], "originalName": "Shift"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "stopPropagation"}], "originalName": "StopPropagation"} ]
+  },
+  {
+    "originalName": "MouseButton",
+    "originalNamespace": "Infragistics.Controls.Inputs",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "MouseButton.ts","mappedName": "MouseButton"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"MouseButton","mappedName":"Left"}],"originalName":"Left"},
-    { "names":[{"platform":"React","mappedType":"MouseButton","mappedName":"Middle"}],"originalName":"Middle"},
-    { "names":[{"platform":"React","mappedType":"MouseButton","mappedName":"Right"}],"originalName":"Right"},
-    { "names":[{"platform":"React","mappedType":"MouseButton","mappedName":"Unkown"}],"originalName":"Unkown"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Inputs"}]}
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "MouseButton","mappedName": "Left"}], "originalName": "Left"},
+      {"names":[{"platform": "React", "mappedType": "MouseButton","mappedName": "Middle"}], "originalName": "Middle"},
+      {"names":[{"platform": "React", "mappedType": "MouseButton","mappedName": "Right"}], "originalName": "Right"},
+      {"names":[{"platform": "React", "mappedType": "MouseButton","mappedName": "Unkown"}], "originalName": "Unkown"} ]
+  }]
+}

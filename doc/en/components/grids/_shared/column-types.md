@@ -1,5 +1,5 @@
 ---
-title: Column Data Types in {Platform} for {ProductName}
+title: {Platform} {ComponentTitle} Column Data Types - {ProductName}
 _description: Handle cell and editing templates in {Platform} by choosing from several predefined column data types - number, string, date, boolean, currency and percent column.
 _keywords: Column Data Type , {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Column Types Overview
 
-{ProductName} `{ComponentName}` provides a default handling of *number*, *string*, *date*, *boolean*, *currency* and *percent* column data types, based on which the appearance of the default and editing templates will be present.
+The {Platform} {ComponentTitle} provides a default handling of *number*, *string*, *date*, *boolean*, *currency* and *percent* column data types, based on which the appearance of the default and editing templates will be present.
 
 <!-- ComponentStart: Grid -->
 
@@ -68,24 +68,27 @@ public formatOptions = this.options;
 
 ```ts
 private _formatOptions: any | null = null;
-    public get formatOptions(): any {
-        if (this._formatOptions == null)
-        {
-            var columnPipeArgs: any = {};
-            columnPipeArgs.digitsInfo = "1.4-4";
-            this._formatOptions = columnPipeArgs;
-        }
-        return this._formatOptions;
+public get formatOptions(): any {
+    if (this._formatOptions == null)
+    {
+        var columnPipeArgs: any = {};
+        columnPipeArgs.digitsInfo = "1.4-4";
+        this._formatOptions = columnPipeArgs;
     }
+    return this._formatOptions;
+}
 
 constructor() {
-    var column = this.column = document.getElementById('column') as IgcColumnComponent;
-
-    this._bind = () => {
-        column.pipeArgs = this.formatOptions;
-    }
-    this._bind();
+    var column = document.getElementById('column') as IgcColumnComponent;
+    column.pipeArgs = this.formatOptions;
 }
+```
+
+```tsx
+const formatOptions = new IgrColumnPipeArgs();
+formatOptions.digitsInfo = "1.4-4";
+
+<IgrColumn pipeArgs={formatOptions} dataType="number"></IgrColumn>
 ```
 
 ### DateTime, Date and Time
@@ -136,25 +139,29 @@ public formatOptions = this.options;
 
 ```ts
 private _formatDateOptions: any | null = null;
-    public get formatDateOptions(): any {
-        if (this._formatDateOptions == null)
-        {
-            var columnPipeArgs: any = {};
-            columnPipeArgs2.format = "long";
-            columnPipeArgs2.timezone = "UTC+0";
-            this._formatDateOptions = columnPipeArgs;
-        }
-        return this._formatDateOptions;
+public get formatDateOptions(): any {
+    if (this._formatDateOptions == null)
+    {
+        var columnPipeArgs: any = {};
+        columnPipeArgs2.format = "long";
+        columnPipeArgs2.timezone = "UTC+0";
+        this._formatDateOptions = columnPipeArgs;
     }
+    return this._formatDateOptions;
+}
 
 constructor() {
-    var column = this.column = document.getElementById('column') as IgcColumnComponent;
-
-    this._bind = () => {
-        column.pipeArgs = this.formatDateOptions;
-    }
-    this._bind();
+    var column = document.getElementById('column') as IgcColumnComponent;
+    column.pipeArgs = this.formatDateOptions;
 }
+```
+
+```tsx
+const formatOptions = new IgrColumnPipeArgs();
+formatOptions.format = "long";
+formatOptions.timezone = "UTC+0";
+
+<IgrColumn pipeArgs={formatOptions} dataType="date"></IgrColumn>
 ```
 
 Available timezones:
@@ -202,6 +209,15 @@ public timeFormats = [
 }
 ```
 
+```tsx
+const timeFormats = [
+    { format: 'shortTime', eq: 'h:mm a' },
+    { format: 'mediumTime', eq: 'h:mm:ss a' },
+    { format: 'longTime', eq: 'h:mm:ss a z' },
+    { format: 'fullTime', eq: 'h:mm:ss a zzzz' },
+];
+```
+
 #### Cell Editing
 
 When it comes to cell editing based on the column type a different editor will appear:
@@ -243,26 +259,36 @@ The default template is using material icons for visualization of boolean values
 </igc-column>
 ```
 
+```tsx
+<IgrColumn dataType="boolean"></IgrColumn>
+```
+
 ### Image
 
 Default template is using the value coming from the data as an image source to a default image template. The default image template will extract the name of the image file and set it as `alt` attribute of the image to meet the accessibility requirement. The displayed cell size is adjusted to the sizes of the images rendered, so keep in mind that large images will still be rendered and the grid rows will become as large as the images in the image column. Filtering, sorting and grouping will be turned off by default for image type columns. If you want to enable them, you need to provide custom strategies which perform the data operations.
 
+<!-- Angular -->
 ```html
 <igx-grid>
     <igx-column [dataType]="'image'">
     </igx-column>
 <igx-grid>
 ```
-
-```html
-<igc-grid id="grid1" auto-generate="false">
-    <igc-column field="Image" data-type="image">
-    </igc-column>
-</igc-grid>
-```
+<!-- end: Angular -->
 
 ```razor
 <IgbColumn DataType="GridColumnDataType.Image"></IgbColumn>
+```
+
+```html
+<igc-column field="Image" data-type="image">
+</igc-column>
+```
+
+```tsx
+<IgrGrid>
+    <IgrColumn field="Image" dataType="Image"></IgrColumn>
+</IgrGrid>
 ```
 
 When `AutoGenerate` is used for the columns, the grid analyses the values in the first data record. If a value is of type string and matches the pattern of a url ending in an image extension (gif, jpg, jpeg, tiff, png, webp, bmp) then the column will automatically be marked as `dataType === GridColumnDataType.Image` and a default image template will be rendered.
@@ -296,11 +322,11 @@ import { LOCALE_ID } from '@angular/core';
 
 <!-- end: Angular -->
 
-<!-- Blazor, WebComponents -->
+<!-- Blazor, WebComponents, React -->
 
 The default template will show a numeric value with currency symbol that would be either prefixed or suffixed.
 
-<!-- end: Blazor, WebComponents -->
+<!-- end: Blazor, WebComponents, React -->
 
 By using the `PipeArgs` input the end-user can customize the number format by *decimal point*, *currencyCode* and *display*.
 
@@ -336,8 +362,7 @@ public formatOptions = this.options;
 ```
 
 ```html
-<igc-column id="column" field="UnitsInStock"
-    data-type="currency">
+<igc-column id="column" field="UnitsInStock" data-type="currency">
 </igc-column>
 ```
 
@@ -355,13 +380,17 @@ private _formatOptions: any | null = null;
     }
 
 constructor() {
-    var column = this.column = document.getElementById('column') as IgcColumnComponent;
-
-    this._bind = () => {
-        column.pipeArgs = this.formatOptions;
-    }
-    this._bind();
+    var column = document.getElementById('column') as IgcColumnComponent;
+    column.pipeArgs = this.formatOptions;
 }
+```
+
+```tsx
+const formatOptions = new IgrColumnPipeArgs();
+formatOptions.digitsInfo = "1.4-4";
+formatOptions.display = "symbol-narrow";
+
+<IgrColumn pipeArgs={formatOptions} dataType="currency" field="UnitsInStock"></IgrColumn>
 ```
 
 | Parameter                 | Description                                                |
@@ -431,8 +460,7 @@ public formatPercentOptions = this.options;
 ```
 
 ```html
-<igc-column id="column" field="UnitsInStock"
-    data-type="percent">
+<igc-column id="column" field="UnitsInStock" data-type="percent">
 </igc-column>
 ```
 
@@ -449,13 +477,16 @@ private _formatPercentOptions: any | null = null;
     }
 
 constructor() {
-    var column = this.column = document.getElementById('column') as IgcColumnComponent;
-
-    this._bind = () => {
-        column.pipeArgs = this.formatPercentOptions;
-    }
-    this._bind();
+    var column = document.getElementById('column') as IgcColumnComponent;
+    column.pipeArgs = this.formatPercentOptions;
 }
+```
+
+```tsx
+const formatOptions = new IgrColumnPipeArgs();
+formatOptions.digitsInfo = "2.2-3";
+
+<IgrColumn pipeArgs={formatOptions} dataType="percent"></IgrColumn>
 ```
 
 > [!Note]
@@ -463,9 +494,7 @@ constructor() {
 
 ## Default Editing Template
 
-<!-- ComponentStart:  Grid -->
 See the editing templates part of [{ComponentTitle} Editing topic](editing.md#editing-templates)
-<!-- ComponentEnd:  Grid -->
 
 ## Custom Editing Template and Formatter
 
@@ -492,12 +521,8 @@ Custom template and column formatter definition will always take precedence over
 
 ```ts
 constructor() {
-    var unitsInStock = this.unitsInStock = document.getElementById('UnitsInStock') as IgcColumnComponent;
-
-    this._bind = () => {
-        unitsInStock.inlineEditorTemplate = this.editCellTemplate;
-    }
-    this._bind();
+    var unitsInStock = document.getElementById('UnitsInStock') as IgcColumnComponent;
+    unitsInStock.inlineEditorTemplate = this.editCellTemplate;
 }
 
 public editCellTemplate = (ctx: IgcCellTemplateContext) => {
@@ -505,10 +530,24 @@ public editCellTemplate = (ctx: IgcCellTemplateContext) => {
 }
 ```
 
+```tsx
+function editCellTemplate(ctx: IgrCellTemplateContext) {
+    return (
+        <>
+            <input></input>
+        </>
+    );
+}
+
+<IgrGrid autoGenerate="false">
+    <IgrColumn inlineEditorTemplate={editCellTemplate}></IgrColumn>
+</IgrGrid>
+```
+
 ```razor
-<IgbGrid>
+<{ComponentSelector}>
  <IgbColumn InlineEditorTemplate="EditTemplate"></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 @code {
     public RenderFragment<IgbCellTemplateContext> EditTemplate = (ctx) =>
     {
@@ -530,11 +569,7 @@ public editCellTemplate = (ctx: IgcCellTemplateContext) => {
 ```ts
 constructor() {
     var unitsInStock = this.unitsInStock = document.getElementById('UnitsInStock') as IgcColumnComponent;
-
-    this._bind = () => {
-        unitsInStock.formatter = this.formatCurrency;
-    }
-    this._bind();
+    unitsInStock.formatter = this.formatCurrency;
 }
 
 public formatCurrency(value: number) {
@@ -542,10 +577,20 @@ public formatCurrency(value: number) {
 }
 ```
 
+```tsx
+function formatCurrency(value: number) {
+    return `$ ${value.toFixed(0)}`;
+}
+
+<IgrGrid autoGenerate="false">
+    <IgrColumn formatter={formatCurrency} field="UnitsInStock"></IgrColumn>
+</IgrGrid>
+```
+
 ```razor
-<IgbGrid>
+<{ComponentSelector}>
  <IgbColumn FormatterScript="CurrencyFormatter"></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 
 //In Javascript
 igRegisterScript("CurrencyFormatter", (value) => {
@@ -574,7 +619,7 @@ public init(column: IgxColumnComponent) {
 
 ## API References
 
-* `GridCell`
+* `Cell`
 * `Column`
 * `PipeArgs`
 * `{ComponentName}`
@@ -582,10 +627,8 @@ public init(column: IgxColumnComponent) {
 * `DataType`
 
 ## Additional Resources
-<!-- ComponentStart:  Grid -->
-For custom templates you can see [cell editing topic](cell-editing.md#{PlatformLower}-grid-cell-editing-and-edit-templates-example)
 
-
+* For custom templates you can see [cell editing topic](cell-editing.md#cell-editing-templates)
 * [Editing](editing.md)
 * [Summaries](summaries.md)
-<!-- ComponentEnd:  Grid -->
+

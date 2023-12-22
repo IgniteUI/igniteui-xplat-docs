@@ -2,7 +2,7 @@
 title: {Platform} Chart API | Data Visualization Tools | Infragistics
 _description: Use Infragistics {ProductName} map provides useful API to configure and styles map visuals
 _keywords: {Platform} maps, geographic, map API, API, {ProductName},
-mentionedTypes: ['XamGeographicMap', 'Series', 'SeriesViewer', 'GeographicSymbolSeries', 'GeographicProportionalSymbolSeries', 'GeographicShapeSeries', 'GeographicHighDensityScatterSeries', 'GeographicScatterAreaSeries', 'GeographicContourLineSeries']
+mentionedTypes: ['XamGeographicMap', 'Series', 'SeriesViewer', 'GeographicSymbolSeries', 'GeographicProportionalSymbolSeries', 'GeographicShapeSeries', 'GeographicHighDensityScatterSeries', 'GeographicScatterAreaSeries', 'GeographicContourLineSeries', 'GeographicShapeSeriesBase']
 namespace: Infragistics.Controls.Maps
 ---
 

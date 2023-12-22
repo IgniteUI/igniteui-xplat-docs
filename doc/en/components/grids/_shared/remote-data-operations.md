@@ -1,5 +1,5 @@
 ---
-title: Remote Data Operations in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Remote Data Operations - {ProductName}
 _description: Start using Angular remote data operations like remote filtering, remote sorting, and remote scrolling to load data from a server with {ProductName}.
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Remote Data, Paging, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
@@ -8,7 +8,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Remote Data Operations
 <!-- Angular -->
-The {ProductName} `{ComponentName}` supports remote data operations such as remote virtualization, remote sorting, remote filtering and others. This allows the developer to perform these tasks on a server, retrieve the data that is produced and display it in the `{ComponentName}`.
+The {ProductName} Remote Data Operations feature in {Platform} {ComponentTitle} supports operations such as remote virtualization, remote sorting, remote filtering and others. This allows the developer to perform these tasks on a server, retrieve the data that is produced and display it in the `{ComponentName}`.
 
 ## {Platform} {ComponentTitle} Remote Data Operations Overview Example
 
@@ -87,7 +87,7 @@ When requesting data, you need to utilize the `IForOfState` interface, which pro
 
 <!-- end: Angular -->
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 
 ## Infinite Scroll
 
@@ -95,7 +95,7 @@ When requesting data, you need to utilize the `IForOfState` interface, which pro
 
 To implement infinite scroll, you have to fetch the data in chunks. The data that is already fetched should be stored locally and you have to determine the length of a chunk and how many chunks there are. You also have to keep a track of the last visible data row index in the grid. In this way, using the `StartIndex` and `ChunkSize` properties, you can determine if the user scrolls up and you have to show them already fetched data or scrolls down and you have to fetch more data from the end-point.
 
-<!-- end: Angular, WebComponents -->
+<!-- end: Angular, WebComponents, React -->
 
 <!-- Angular -->
 

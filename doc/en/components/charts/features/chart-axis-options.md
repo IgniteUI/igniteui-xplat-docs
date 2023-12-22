@@ -41,6 +41,14 @@ The chart also has the ability to consider auto-rotation of the labels if they w
 
 After setting the `AutoMarginAndAngleUpdateMode`, you can set the `ShouldAutoExpandMarginForInitialLabels` property to true to opt into the automatic margin or set the `ShouldConsiderAutoRotationForInitialLabels` property to true for the auto-rotation. You can also further customize the automatic margin that is applied by setting the `AutoExpandMarginExtraPadding` and `AutoExpandMarginMaximumValue` to provide extra space or a maximum possible margin, respectively.
 
+Custom label formats such as `NumberFormatSpecifier` and `DateTimeFormatSpecifier` can be added to each axis via the `XAxisLabelFormatSpecifier` and `YAxisLabelFormatSpecifier` collections. Commonly used for applying Intl.NumberFormat and Intl.DateTimeFormat language sensitive number, date and time formatting. In order for a custom format to be applied to the labels, the `YAxisLabelFormat` or `XAxisLabelFormat` need to be set to `{0}` on the `CategoryChart`.
+
+The following example formats the yAxis with a `NumberFormatSpecifier` to reprerent $USD prices for top box office movies in the United States.
+
+`sample="/charts/category-chart/format-specifiers", height="450", alt="{Platform} Format Specifiers for Axis Labels"`
+
+<div class="divider--half"></div>
+
 ## Axis Range Example
 
 In the {Platform} charts, you can define a range minimum and range maximum value of a numeric or time axis. The range minimum is the lowest value of the axis and the range maximum is the highest value of the axis. These are set by setting the `YAxisMinimumValue` and `YAxisMaximumValue` options.

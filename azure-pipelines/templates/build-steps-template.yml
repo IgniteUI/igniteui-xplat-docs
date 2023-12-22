@@ -13,7 +13,10 @@ steps:
       command: custom
       workingDir: ${{ parameters.workingDir }}
       verbose: ${{ parameters.isVerbose }}
-      customCommand: 'run build-${{ parameters.buildType }} -- --plat=${{ parameters.platform }} --lang=${{ parameters.language }}'
+      ${{ if eq(parameters.platform, 'Angular') }}:
+        customCommand: 'run build${{ parameters.platform }} -- --plat=${{ parameters.platform }} --lang=${{ parameters.language }}'
+      ${{ else }}:
+        customCommand: 'run build-${{ parameters.buildType }} -- --plat=${{ parameters.platform }} --lang=${{ parameters.language }}'
 
   - task: ArchiveFiles@2
     displayName: 'Package ${{ parameters.platform }} ${{ parameters.language }} - zip'

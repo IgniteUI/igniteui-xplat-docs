@@ -1,5 +1,5 @@
 ---
-title: Multi Row Layout in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Multi Row Layout - {ProductName}
 _description: Position and size columns in a more powerful way, using the multi-row layout functionality in the {ProductName} Data Grid. Check out examples and demos!
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Multi-Row Layout, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
@@ -8,7 +8,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Multi-row Layout
 
-Multi-row Layout extends the rendering capabilities of the `{ComponentName}`. The feature allows splitting a single data record into multiple visible rows.
+The Multi-row Layout in the {ProductName} extends the rendering capabilities of the {Platform} {ComponentTitle}. The feature allows splitting a single data record into multiple visible rows.
 
 ## {Platform} Multi-row Layout Example
 
@@ -91,6 +91,28 @@ The `Column` component exposes four `Input` properties to determine the location
 </igc-column-layout>
 ```
 
+```tsx
+<IgrColumnLayout>
+    <IgrColumn rowStart="1" colStart="1" rowEnd="3" field="ID"></IgrColumn>
+</IgrColumnLayout>
+<IgrColumnLayout>
+    <IgrColumn rowStart="1" colStart="1" colEnd="3" field="CompanyName"></IgrColumn>
+    <IgrColumn rowStart="2" colStart="1" colEnd="2" field="ContactName"></IgrColumn>
+    <IgrColumn rowStart="2" colStart="2" colEnd="3" field="ContactTitle"></IgrColumn>
+</IgrColumnLayout>
+<IgrColumnLayout>
+    <IgrColumn rowStart="1" colStart="1" colEnd="3" field="Country"></IgrColumn>
+    <IgrColumn rowStart="1" colStart="3" colEnd="5" field="Region"></IgrColumn>
+    <IgrColumn rowStart="1" colStart="5" colEnd="7" field="PostalCode"></IgrColumn>
+    <IgrColumn rowStart="2" colStart="1" colEnd="4" field="City"></IgrColumn>
+    <IgrColumn rowStart="2" colStart="4" colEnd="7" field="Address"></IgrColumn>
+</IgrColumnLayout>
+<IgrColumnLayout>
+    <IgrColumn rowStart="1" colStart="1" field="Phone"></IgrColumn>
+    <IgrColumn rowStart="2" colStart="1" field="Fax"></IgrColumn>
+</IgrColumnLayout>
+```
+
 The result of the above configuration can be seen on the screenshot below:
 
 <img src="../../../images/multi-row-layout-1.png" style="width: 100%"/>
@@ -119,14 +141,14 @@ The following features are currently **not** supported:
 
 ### Horizontal Navigation
 
-* <kbd>Arrow Left</kbd> or <kbd>Arrow Right</kbd> - move to the adjacent cell on the left/right within the current row unaffected by the column layouts that are defined. If the current cell spans on more than one row, <kbd>Arrow Left</kbd> and <kbd>Arrow Right</kbd> should navigate to the first cell on the left and right with the same `rowStart`, unless you have navigated to some other adjacent cell before. The navigation stores the starting navigation cell and navigates to the cells with the same `rowStart` if possible.
-* <kbd>Ctrl</kbd> + <kbd>Arrow Left</kbd> (<kbd>HOME</kbd>) or <kbd>Ctrl</kbd> + <kbd>Arrow Right</kbd> (<kbd>END</kbd>) - navigate to the start or end of the row and select the cell with accordance to the starting navigation cell.
+* <kbd>←</kbd> or <kbd>→</kbd> - move to the adjacent cell on the left/right within the current row unaffected by the column layouts that are defined. If the current cell spans on more than one row, <kbd>←</kbd> and <kbd>→</kbd> should navigate to the first cell on the left and right with the same `rowStart`, unless you have navigated to some other adjacent cell before. The navigation stores the starting navigation cell and navigates to the cells with the same `rowStart` if possible.
+* <kbd>Ctrl</kbd> + <kbd>←</kbd> (<kbd>HOME</kbd>) or <kbd>Ctrl</kbd> + <kbd>→</kbd> (<kbd>END</kbd>) - navigate to the start or end of the row and select the cell with accordance to the starting navigation cell.
 
 
 ### Vertical Navigation
 
-* <kbd>Arrow Up</kbd> or <kbd>Arrow Down</kbd> - move to the cell above/below in relation to a starting position and is unaffected by the rows. If the current cell spans on more than one column the next active cell will be selected with accordance to the starting navigation cell.
-* <kbd>Ctrl</kbd> + Arrow Up</kbd> or <kbd>Ctrl</kbd> + <kbd>Down</kbd> - Navigate and apply focus on the same column on the first or on the last row.
+* <kbd>↑</kbd> or <kbd>↓</kbd> - move to the cell above/below in relation to a starting position and is unaffected by the rows. If the current cell spans on more than one column the next active cell will be selected with accordance to the starting navigation cell.
+* <kbd>Ctrl</kbd> + <kbd>↑</kbd> or <kbd>Ctrl</kbd> + <kbd>Down</kbd> - Navigate and apply focus on the same column on the first or on the last row.
 * <kbd>Ctrl</kbd> + <kbd>Home</kbd> or <kbd>Ctrl</kbd> + <kbd>End</kbd> - Navigate to the first row and focus first cell or navigate to the last row and focus the last cell.
 
 
@@ -317,7 +339,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 ## Styling
 
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
@@ -329,6 +351,10 @@ In case you would like to change some of the colors, you need to set a class for
 
 ```razor
 <IgbGrid class="grid"></IgbGrid>
+```
+
+```tsx
+<IgrGrid className="grid"></IgrGrid>
 ```
 
 Then set the related CSS properties to this class:
@@ -345,10 +371,10 @@ Then set the related CSS properties to this class:
 ```
 ### Demo
 
-`sample="/{ComponentSample}/multi-row-layout-styling", height="755", alt="{Platform} {ComponentTitle} Multi Row Layout Styling Example"`
+`sample="/{ComponentSample}/multi-row-layout-style", height="755", alt="{Platform} {ComponentTitle} Multi Row Layout Styling Example"`
 
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 ## API References
 
