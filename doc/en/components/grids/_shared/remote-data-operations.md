@@ -87,7 +87,6 @@ When requesting data, you need to utilize the `IForOfState` interface, which pro
 
 <!-- end: Angular -->
 
-<!-- Angular, WebComponents, React -->
 
 ## Infinite Scroll
 
@@ -95,12 +94,12 @@ When requesting data, you need to utilize the `IForOfState` interface, which pro
 
 To implement infinite scroll, you have to fetch the data in chunks. The data that is already fetched should be stored locally and you have to determine the length of a chunk and how many chunks there are. You also have to keep a track of the last visible data row index in the grid. In this way, using the `StartIndex` and `ChunkSize` properties, you can determine if the user scrolls up and you have to show them already fetched data or scrolls down and you have to fetch more data from the end-point.
 
-<!-- end: Angular, WebComponents, React -->
+
+
+
+The first thing to do is fetch the first chunk of the data. Setting the `TotalItemCount` property is important, as it allows the grid to size its scrollbar correctly.
 
 <!-- Angular -->
-
-The first thing to do is use the `ngAfterViewInit` lifecycle hook to fetch the first chunk of the data. Setting the `TotalItemCount` property is important, as it allows the grid to size its scrollbar correctly.
-
 ```typescript
 public ngAfterViewInit() {
     this._remoteService.loadDataForPage(this.page, this.pageSize, (request) => {
@@ -115,11 +114,35 @@ public ngAfterViewInit() {
 }
 ```
 
+<!-- end: Angular -->
+
 ```razor
-BLAZOR CODE SNIPPET HERE
+@code {
+        protected override async Task OnAfterRenderAsync(bool firstRender)
+        {
+            if (firstRender)
+            {
+                var grid = this.grid;
+                grid.IsLoading = true;
+                double dataViewSize = 480.0 / 50.0;
+                this.PageSize = Convert.ToInt32(Math.Floor(dataViewSize * 1.5));
+                var data = await GetDataRemote(1, this.PageSize);
+                this.CachedData = data;
+                this.LocalData = this.CachedData;
+                grid.TotalItemCount = (this.PageSize * this.Page) + 1;
+                double pageCount = Math.Ceiling((double)this.TotalItems / (double)this.PageSize);
+                this.TotalPageCount = (int)pageCount;
+                grid.IsLoading = false;
+                StateHasChanged();
+            }
+
+        }
+}
 ```
 
 Additionally, you have to subscribe to the `DataPreLoad` output, so that you can provide the data needed by the grid when it tries to display a different chunk, rather than the currently loaded one. In the event handler, you have to determine whether to fetch new data or return data, that's already cached locally.
+
+<!-- Angular -->
 
 ```typescript
 public handlePreLoad() {
@@ -145,17 +168,84 @@ public handlePreLoad() {
     }
 }
 ```
-
-```razor
-BLAZOR CODE SNIPPET HERE
-```
-
 <!-- end: Angular -->
 
-<!-- WebComponents -->
-<!-- end: WebComponents -->
+```razor
+<IgbGrid AutoGenerate="false"
+         Height="480px"
+         Name="grid"
+         Id="grid"
+         Data="LocalData"
+         @ref="grid"
+         DataPreLoad="OnDataPreLoad">
+    <IgbColumn Name="ID"
+               Field="ProductID"
+               Header="ID">
+    </IgbColumn>
 
+    <IgbColumn Name="ProductName"
+               Field="ProductName"
+               Header="Product Name">
+    </IgbColumn>
 
+    <IgbColumn Name="QuantityPerUnit"
+               Field="QuantityPerUnit"
+               Header="Quantity Per Unit">
+    </IgbColumn>
+
+    <IgbColumn Name="UnitPrice"
+               Field="UnitPrice"
+               Header="Unit Price">
+    </IgbColumn>
+
+    <IgbColumn Name="OrderDate"
+               Field="OrderDate"
+               Header="Order Date">
+    </IgbColumn>
+
+    <IgbColumn Name="Discontinued"
+               Field="Discontinued"
+               Header="Discontinued">
+    </IgbColumn>
+
+</IgbGrid>
+@code {
+        private IgbGrid grid;
+        public async void OnDataPreLoad(IgbForOfStateEventArgs e)
+        {
+            int chunkSize = (int)e.Detail.ChunkSize;
+            int startIndex = (int)e.Detail.StartIndex;
+            int totalCount = (int)this.grid.TotalItemCount;
+
+            bool isLastChunk = totalCount == startIndex + chunkSize;
+            // when last chunk reached load another page of data
+            if (isLastChunk)
+            {
+                if (this.TotalPageCount == this.Page)
+                {
+                    this.LocalData = this.CachedData.Skip(startIndex).Take(chunkSize).ToList();
+                    return;
+                }
+
+                // add next page of remote data to cache
+                this.grid.IsLoading = true;
+                this.Page++;
+                var remoteData = await GetDataRemote(this.Page, this.PageSize);
+                this.CachedData.AddRange(remoteData);
+
+                var data = this.CachedData.Skip(startIndex).Take(chunkSize);
+                this.LocalData = data.ToList();
+                this.grid.IsLoading = false;
+                this.grid.TotalItemCount = Math.Min(this.Page * this.PageSize, this.TotalItems);
+            }
+            else
+            {
+                var data = this.CachedData.Skip(startIndex).Take(chunkSize).ToList();
+                this.LocalData = data;
+            }
+        }
+}
+```
 
 ### Infinite Scroll Demo
 

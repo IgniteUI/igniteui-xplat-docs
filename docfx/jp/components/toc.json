@@ -271,7 +271,7 @@
         "href": "grids/grid/paging.md"
       },
       {
-        "exclude": ["Angular", "Blazor"],
+        "exclude": ["Angular"],
         "name": "リモート データ操作",
         "href": "grids/grid/remote-data-operations.md"
       },

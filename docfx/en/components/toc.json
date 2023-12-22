@@ -273,7 +273,7 @@
         "href": "grids/grid/paging.md"
       },
       {
-        "exclude": ["Angular", "Blazor"],
+        "exclude": ["Angular"],
         "name": "Remote Data Operations",
         "href": "grids/grid/remote-data-operations.md"
       },
