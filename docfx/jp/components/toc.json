@@ -271,7 +271,7 @@
         "href": "grids/grid/paging.md"
       },
       {
-        "exclude": ["Angular", "Blazor"],
+        "exclude": ["Angular"],
         "name": "リモート データ操作",
         "href": "grids/grid/remote-data-operations.md"
       },
@@ -589,7 +589,7 @@
     "status": "",
     "items": [
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "高度なフィルタリング",
         "href": "grids/tree-grid/advanced-filtering.md",
         "status": "NEW"
@@ -732,13 +732,13 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "行の編集",
         "href": "grids/tree-grid/row-editing.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "行のピン固定",
         "href": "grids/tree-grid/row-pinning.md",
         "status": "NEW"
@@ -762,7 +762,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "サイズ設定",
         "href": "grids/tree-grid/sizing.md",
         "status": "NEW"
@@ -795,6 +795,12 @@
         "exclude": ["Angular", "React", "Blazor"],
         "name": "ロードオンデマンド",
         "href": "grids/tree-grid/load-on-demand.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "Live Data / Real-Time",
+        "href": "grids/tree-grid/live-data.md",
         "status": "NEW"
       }
     ]
