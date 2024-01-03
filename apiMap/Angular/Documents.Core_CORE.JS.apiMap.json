@@ -1,5 +1,12 @@
-{"types":[
-  { "originalName":"DocumentEncryptedException",
-    "names":[{"platform":"Angular","fileName":"DocumentEncryptedException.ts","mappedName":"DocumentEncryptedException"}],
+{  "types":[
+  {
+    "originalName": "DocumentEncryptedException",
+    "originalNamespace": "Infragistics.Documents.Core",
+    "originalBaseTypeNamespace": "System",
+    "originalBaseTypeName": "InvalidOperationException",
+    "packageName": "igniteui-excel",
+    "names":[{"platform": "Angular","fileName": "DocumentEncryptedException.ts","mappedName": "DocumentEncryptedException"}],
     "members":[
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"InvalidOperationException","originalBaseTypeNamespace":"System","packageName":"igniteui-excel","originalNamespace":"Infragistics.Documents.Core"}]}
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": ".ctor"}], "originalName": ".ctor"} ]
+  }]
+}

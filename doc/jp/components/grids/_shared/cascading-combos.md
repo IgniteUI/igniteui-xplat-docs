@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} のカスケード コンボ - インフラジスティックス
+title: {Platform} {ComponentTitle} カスケード コンボ - {ProductName}
 _description: {Platform} {ComponentTitle} を使用して、{ComponentTitle} のカスケード コンボを介して更新を実行します。デモと例をお試しください。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 _language: ja

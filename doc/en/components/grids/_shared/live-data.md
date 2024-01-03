@@ -1,5 +1,5 @@
 ---
-title: Live Data updates in {Platform} {ComponentTitle} for {ProductName}
+title: {Platform} {ComponentTitle} Live Data updates - {ProductName}
 _description: Check out how the {ProductName} {ComponentTitle} can handle thousands of updates per second, while staying responsive for user interactions.
 _keywords: {Platform} {ComponentKeywords} updates, {Platform} live data, infragistics
 sharedComponents: ["Grid", "TreeGrid"]
@@ -8,7 +8,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Live Data Updates
 
-The {Platform} `{ComponentName}` can handle thousands of updates per second, while staying responsive for user interactions.
+The {ProductName} Live Data Updates feature in {Platform} {ComponentTitle} is used for enabling real-time or near-real-time updates of data displayed within the grid. This is extremely useful in apps where data is constantly changing, like stock market trackers, live sports scores, or IoT (Internet of Things) dashboards. The `{ComponentName}` can handle thousands of updates per second, while staying responsive for user interactions.
 
 
 ## {Platform} Live-data Update Example
@@ -40,6 +40,12 @@ A service provides data to the component when the page loads, and when the slide
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+```tsx
+<{ComponentSelector} id="grid1"></{ComponentSelector}>
+```
+<!-- end: React -->
+
 ```razor
 public void OnStart()
 {
@@ -68,6 +74,28 @@ public startUpdate() {
 }
 ```
 
+<!-- React -->
+```typescript
+function startUpdate(frequency) {
+  const timer = setInterval(() => {
+    setData(prevData => FinancialDataClass.updateRandomPrices(prevData));
+  }, frequency);
+
+  setStartButtonDisabled(true);
+  setShowChartButtonDisabled(true);
+  setStopButtonDisabled(false);
+}
+```
+
+A change in the data field value or a change in the data object/data collection reference will trigger the corresponding pipes. However, this is not the case for columns, which are bound to [complex data objects](../data-grid.md#complex-data-binding). To resolve the situation, provide a new object reference for the data object containing the property. Example:
+
+```tsx
+<{ComponentSelector} id="grid1">
+    <IgrColumn field="price.usd"></IgrColumn>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
 A change in the data field value or a change in the data object/data collection reference will trigger the corresponding pipes. However, this is not the case for columns, which are bound to [complex data objects](../data-grid.md#complex-data-binding). To resolve the situation, provide a new object reference for the data object containing the property. Example:
 
 ```Razor
@@ -92,7 +120,7 @@ A change in the data field value or a change in the data object/data collection 
 ```
 <!-- end: WebComponents -->
 
-
+<!-- WebComponents -->
 ```typescript
 private updateData(data: any[]) {
     const newData = []
@@ -103,6 +131,20 @@ private updateData(data: any[]) {
     this.grid.data = newData;
 }
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```typescript
+private updateData(data: any[]) {
+    const newData = []
+    for (const rowData of data) {
+        rowData.price = { usd: getUSD(), eur: getEUR() };
+        newData.push({...rowData});
+    }
+    gridRef.current.data = newData;
+}
+```
+<!-- end: React -->
 
 ```razor
  grid1.Data = this.FinancialDataClass.UpdateRandomPrices(this.CurrentStocks);

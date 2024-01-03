@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} 行の追加 - インフラジスティックス
+title: {Platform} {ComponentTitle} 行の追加 - {ProductName}
 _description: {Platform} を使用して、定義済みの行追加機能の使用およびカスタマイズする方法を学びます。直感的なグリッド行の追加と CRUD 機能を利用できます。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -12,7 +12,8 @@ _language: ja
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
-`{ComponentName}` はインライン行追加や {Platform} CRUD 操作のための強力な API を通して便利なデータ操作方法を提供します。グリッドのテンプレートで編集アクションが有効になっている `ActionStrip` コンポーネントを追加し、行にホバーして提供されたボタンを使用するか、<kbd>ALT</kbd> + <kbd>+</kbd> を押して、行追加 UI を生成します。
+{Platform} {ComponentTitle} 行追加機能 {ProductName} を使用すると、ユーザーは別のフォームやページに移動することなく、新しいデータ レコードを入力して送信できます。{Platform} {ComponentTitle} を使用すると、ユーザーはインライン行追加と CRUD 操作用の強力な API を通じてデータを操作できます。
+グリッドのテンプレートで編集操作が有効になっている `ActionStrip` コンポーネントを追加します。その後、行にカーソルを置き、提供されたボタンを使用します。最後に <kbd>ALT</kbd> + <kbd>+</kbd> を押して、行追加 UI を表示します。
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
@@ -81,6 +82,23 @@ export class AppModule {}
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+```tsx
+<{ComponentSelector} autoGenerate="false" data={NwindData} primaryKey="ProductID" rowEditable="true">
+    <IgrColumn field="ProductID" header="Product ID" dataType="Number"></IgrColumn>
+    <IgrColumn field="ReorderLevel" header="Reorder Level" dataType="Number"></IgrColumn>
+    <IgrColumn field="ProductName" header="Product Name" dataType="String"></IgrColumn>
+    <IgrColumn field="UnitsInStock" header="Units In Stock" dataType="Number"></IgrColumn>
+    <IgrColumn field="OrderDate" header="Order Date" dataType="Date"></IgrColumn>
+    <IgrColumn field="Discontinued" header="Discontinued" dataType="Boolean"></IgrColumn>
+
+    <IgrActionStrip>
+        <IgrGridEditingActions addRow="true"></IgrGridEditingActions>
+    </IgrActionStrip>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
 ```razor
 <{ComponentSelector} AutoGenerate="false" Id="grid" Data="NwindData" PrimaryKey="ProductID" RowEditable="true">
     <IgbColumn Field="ProductID" Header="Product ID" DataType="GridColumnDataType.Number"></IgbColumn>
@@ -137,6 +155,21 @@ export class AppModule {}
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} autoGenerate="false" primaryKey="ID" foreignKey="ParentID" rowEditable="true">
+    <IgrColumn field="Name" header="Name" dataType="String"></IgrColumn>
+    <IgrColumn field="Title" header="Title" dataType="String"></IgrColumn>
+    <IgrColumn field="HireDate" header="Hire Date" dataType="Date"></IgrColumn>
+    <IgrColumn field="OnPTO" header="On PTO" dataType="Boolean"></IgrColumn>
+
+    <IgrActionStrip>
+        <IgrGridEditingActions addRow="true"></IgrGridEditingActions>
+    </IgrActionStrip>
+</{ComponentSelector}>
+```
+<!-- end: React -->
 
 ```razor
 <{ComponentSelector} AutoGenerate="false" Id="treegrid" PrimaryKey="ID" ForeignKey="ParentID" RowEditable="true">
@@ -303,10 +336,19 @@ export class AppModule {}
 
 `BeginAddRowById` を使用するには、`RowID` (PK) によって操作のコンテキストとして使用する行を指定する必要があります。このメソッドは、エンドユーザーが指定された行の [行の追加] アクション ストリップ ボタンをクリックしたかのように機能し、その下に UI を生成します。最初のパラメーターに `null` を渡すことで、UI をグリッドの最初の行としてス生成させることもできます。
 
+<!-- WebComponents -->
 ```typescript
 this.grid.beginAddRowById('ALFKI');  // Spawns the add row UI under the row with PK 'ALFKI'
 this.grid.beginAddRowById(null);     // Spawns the add row UI as the first record
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```typescript
+gridRef.current.beginAddRowById('ALFKI');  // Spawns the add row UI under the row with PK 'ALFKI'
+gridRef.current.beginAddRowById(null);     // Spawns the add row UI as the first record
+```
+<!-- end: React -->
 
 ```razor
 @code {
@@ -317,10 +359,19 @@ this.grid.beginAddRowById(null);     // Spawns the add row UI as the first recor
 
 `beginAddRowByIndex` メソッドも同様に機能しますが、UI が生成されるインデックスを指定する必要があります。許可される値の範囲は、0 からデータ ビューのサイズ -1 までです。
 
+<!-- WebComponents -->
 ```typescript
 this.grid.beginAddRowByIndex(10);   // Spawns the add row UI at index 10
 this.grid.beginAddRowByIndex(0);    // Spawns the add row UI as the first record
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```typescript
+gridRef.current.beginAddRowByIndex(10);   // Spawns the add row UI at index 10
+gridRef.current.beginAddRowByIndex(0);    // Spawns the add row UI as the first record
+```
+<!-- end: React -->
 
 ```razor
 @code {
@@ -426,6 +477,14 @@ this.grid.rowAddTextTemplate = (ctx: IgcGridEmptyTemplateContext) => {
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+```tsx
+gridRef.current.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
+    return ('Adding Row');
+}
+```
+<!-- end: React -->
+
 ```razor
 <{ComponentSelector} Data="data" PrimaryKey="ProductID" AutoGenerate="false" RowEditable="true" RowAddTextTemplate="addTextTemplate">
 </{ComponentSelector}>
@@ -466,8 +525,8 @@ REQUIRES FIX!
 ```ts
 this.grid.rowEditActionsTemplate = (endRowEdit: IgcGridRowEditActionsTemplateContext) => {
     return html`
-        <button @click="${evt => endRowEdit.$implicit(false, evt)}">Cancel</button>
-	    <button @click="${evt => endRowEdit.$implicit(true, evt)}">Apply</button>
+        <button @click="${evt => endRowEdit.implicit(false, evt)}">Cancel</button>
+	    <button @click="${evt => endRowEdit.implicit(true, evt)}">Apply</button>
     `;
 }
 ```
@@ -481,8 +540,8 @@ this.grid.rowEditActionsTemplate = (endRowEdit: IgcGridRowEditActionsTemplateCon
 igRegisterScript("rowEditActionsTemplate", (endRowEdit) => {
     var html = window.igTemplating.html;
     return html`<div class="row-actions">
-        <button @click="${evt => endRowEdit.$implicit(false, evt)}">Cancel</button>
-        <button @click="${evt => endRowEdit.$implicit(true, evt)}">Apply</button>
+        <button @click="${evt => endRowEdit.implicit(false, evt)}">Cancel</button>
+        <button @click="${evt => endRowEdit.implicit(true, evt)}">Apply</button>
     </div>`
 }, false);
 ```
