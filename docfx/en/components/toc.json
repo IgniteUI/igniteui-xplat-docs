@@ -273,6 +273,12 @@
         "href": "grids/grid/paging.md"
       },
       {
+        "exclude": [ "Angular" ],
+        "name": "Paste from Excel",
+        "href": "grids/grid/paste-excel.md",
+        "status": "NEW"
+      },
+      {
         "exclude": ["Angular"],
         "name": "Remote Data Operations",
         "href": "grids/grid/remote-data-operations.md"
