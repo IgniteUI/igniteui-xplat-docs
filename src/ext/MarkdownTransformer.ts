@@ -1632,13 +1632,13 @@ export class MarkdownTransformer {
                 this._envBrowser !== "") {
                 sampleHost = this._envBrowser;
 
-                //MT: we do not localize samples to JP language so we use EN samples
-                // if (filePath.indexOf("\\jp\\") > 0) {
-                //     // changing samples links to JP production website in JP topics
-                //     sampleHost = sampleHost.replace('www.infragistics.com', 'jp.infragistics.com');
-                //     // changing samples links to JP staging website in JP topics
-                //     sampleHost = sampleHost.replace('staging.infragistics.com', 'jp.staging.infragistics.com');
-                // }
+                // using JP samples in JP topics
+                if (filePath.indexOf("\\jp\\") > 0) {
+                    // changing samples links to JP production website in JP topics
+                    sampleHost = sampleHost.replace('www.infragistics.com', 'jp.infragistics.com');
+                    // changing samples links to JP staging website in JP topics
+                    sampleHost = sampleHost.replace('staging.infragistics.com', 'jp.staging.infragistics.com');
+                }
 
                 // fileContent = this.replaceAll(fileContent, "{environment:dvDemosBaseUrl}", sampleHost);
                 // fileContent = this.replaceAll(fileContent, "{environment:demosBaseUrl}", sampleHost);
