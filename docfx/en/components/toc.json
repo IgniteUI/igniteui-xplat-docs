@@ -1220,6 +1220,11 @@
           "href": "charts/features/chart-data-tooltip.md"
         },
         {
+          "name": "Chart Highlight Filter",
+          "href": "charts/features/chart-highlight-filter.md",
+          "status": "NEW"          
+        },
+        {
           "name": "Chart Highlighting",
           "href": "charts/features/chart-highlighting.md",
           "status": ""
