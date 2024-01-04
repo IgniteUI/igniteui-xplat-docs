@@ -10,13 +10,15 @@ namespace: Infragistics.Controls.Charts
 
 The {ProductName} Chart components support a data highlighting overlay that can enhance the visualization of the series plotted in those charts by allowing you to view a subset of the data plotted. This can help you to visualize things like target values versus actual values with your data set. This feature is demonstrates in the following example:
 
-`sample="/charts/data-chart/chart-highlight-filter", height="500", alt="{Platform} Highlight Filter Example"`
+`sample="/charts/data-chart/chart-highlight-filter-multiple-series", height="500", alt="{Platform} Highlight Filter Example"`
 
 Note that data highlighting feature is supported by the `XamDataChart` and `CategoryChart`, but it is configured in different ways in those controls due to the nature of how those controls work. The following will explain the different APIs for the highlight filter feature.
 
 ## Using Highlight Filter with DataChart
 
 In the `XamDataChart`, much of the highlight filter API happens on the series themselves, mainly by setting the `HighlightedValueMemberPath` property to the name of a property on your underlying data item that represents a subset of the data that you are looking to show. This will highlight the subset of data while showing the total set with a reduced opacity in the case of column and area series types, and a dashed line in the case of line series types.
+
+The following sample demonstrates using the `HighlightedValueMemberPath` to show the highlighting:
 
 The reduced opacity of the column and area series types is configurable by setting the `HighlightedValuesFadeOpacity` property on the series. You can also set the `HighlightedValuesDisplayMode` property to `Hidden` if you do not wish to see the overlay at all.
 
