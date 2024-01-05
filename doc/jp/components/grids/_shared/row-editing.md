@@ -21,7 +21,7 @@ _language: ja
 
 
 > [!Note]
-> 行が編集モードにある場合、他の行のセルをクリックすると [完了] ボタンが押されたように動作し、前の行の変更をすべての変更をサブミットします。フォーカスのある新しいセルが編集可能かどうか、新しい行が編集モードに入るかどうか、セルが編集できない場合は前の行のみ編集モードを終了します。
+> 行が編集モードにある場合、他の行のセルをクリックすると [完了] ボタンが押されたように動作し、前の行の変更をすべての変更をサブミットします。新しくフォーカスされたセルが編集可能な場合、新しい行も編集モードになります。ただし、セルが編集可能でない場合は、前の行のみが編集モードを終了します。
 
 ## 行編集の使用
 
@@ -47,15 +47,15 @@ export class AppModule {}
 ```html
 <{ComponentSelector} [data]="data" [primaryKey]="'ProductID'" width="100%" height="500px" [rowEditable]="true">
     <igx-column field="ProductID" header="Product ID" editable="false"></igx-column>
-    <igx-column field="ReorderLevel" header="ReorderLever" [dataType]="'number'"></igx-column>
-    <igx-column field="ProductName" header="ProductName" [dataType]="'string'"></igx-column>
-    <igx-column field="UnitsInStock" header="UnitsInStock" [dataType]="'number'">
+    <igx-column field="ReorderLevel" header="Reorder Level" [dataType]="'number'"></igx-column>
+    <igx-column field="ProductName" header="Product Name" [dataType]="'string'"></igx-column>
+    <igx-column field="UnitsInStock" header="Units In Stock" [dataType]="'number'">
         <ng-template igxCellEditor let-cell="cell">
             <input name="units" [(ngModel)]="cell.value" style="color: black" />
         </ng-template>
     </igx-column>
-    <igx-column field="OrderDate" [dataType]="'date'"></igx-column>
-    <igx-column field="Discontinued" header="Discontinued" [dataType]="'boolean'"></igx-column>
+    <igx-column field="OrderDate" header="Order Date" [dataType]="'date'"></igx-column>
+    <igx-column field="Discontinued" [dataType]="'boolean'"></igx-column>
 </{ComponentSelector}>
 ```
 <!-- end: Angular -->
@@ -64,17 +64,17 @@ export class AppModule {}
 ```html
 <{ComponentSelector} id="grid" primary-key="ProductID" width="100%" height="500px" row-editable="true">
     <igc-column field="ProductID" header="Product ID" editable="false"></igc-column>
-    <igc-column field="ReorderLevel" header="ReorderLever" data-type="Number"></igc-column>
-    <igc-column field="ProductName" header="ProductName" data-type="String"></igc-column>
-    <igc-column id="unitsInStock" field="UnitsInStock" header="UnitsInStock" data-type="Number">
-    </igc-column>
-    <igc-column field="OrderDate" data-type="Date"></igc-column>
-    <igc-column field="Discontinued" header="Discontinued" data-type="Boolean"></igc-column>
+    <igc-column field="ReorderLevel" header="Reorder Level" data-type="number"></igc-column>
+    <igc-column field="ProductName" header="Product Name" data-type="string"></igc-column>
+    <igc-column id="unitsInStock" field="UnitsInStock" header="Units In Stock" data-type="number"></igc-column>
+    <igc-column field="OrderDate" field="Order Date" data-type="date"></igc-column>
+    <igc-column field="Discontinued" data-type="boolean"></igc-column>
 </{ComponentSelector}>
 ```
+
 ```ts
 constructor() {
-    var grid  = document.getElementById('grid') as IgcGridComponent;
+    var grid  = document.getElementById('grid') as {ComponentName}Component;
     var unitsInStock = document.getElementById('unitsInStock') as IgcColumnComponent;
     grid.data = this.data;
     unitsInStock.bodyTemplate = this.unitsInStockCellTemplate;
@@ -112,10 +112,10 @@ function unitsInStockCellTemplate(ctx: IgrCellTemplateContext) {
  <{ComponentSelector} Width="100%"  
              Height="100%"
              PrimaryKey="Key"
-             AutoGenerate=false
-             Data=northwindEmployees
-             RowEditable=true>
-        <IgbColumn Field="ID" Editable=false></IgbColumn>
+             AutoGenerate="false"
+             Data="northwindEmployees"
+             RowEditable="true">
+        <IgbColumn Field="ID" Editable="false"></IgbColumn>
         <IgbColumn Field="ContactName"></IgbColumn>
         <IgbColumn Field="ContactTitle"></IgbColumn>
         <IgbColumn Field="City"></IgbColumn>
@@ -138,13 +138,11 @@ function unitsInStockCellTemplate(ctx: IgrCellTemplateContext) {
     }
 ```
 
-<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
-
 > [!Note]
 > プライマリキーは行編集操作で必須です。
 
 > [!Note]
-> 各列の編集を有効にする必要はありません。`{ComponentName}` で `RowEditable` プロパティを使用するとプライマリ行以外 `Field` プロパティを定義したすべての行が編集可能になります。特定の列の編集を無効にする場合、`Editable` 列の入力を **false** に設定します。
+> 個々の列の編集を有効にする必要はありません。`{ComponentName}` の `RowEditable` プロパティを使用すると、定義された `Field` プロパティを持つすべての行 (主行を除く) が編集可能になります。特定の列の編集を無効にしたい場合は、その列の `Editable` 入力を `false` に設定するだけです。
 
 <!-- Angular -->
 ```typescript
@@ -171,7 +169,7 @@ export class {ComponentName}RowEditSampleComponent {
 
 
 > [!Note]
-> `{ComponentName}` は、保留中のセル変更を保持するプロバイダー `BaseTransactionService` を行ステートをサブミットまたはキャンセルするまで内部使用します。
+> `{ComponentName}` は、行の状態が送信されるかキャンセルされるまで保留中のセルの変更を保持する内部プロバイダーである `BaseTransactionService` を利用します。
 
 ## 位置
 
@@ -462,13 +460,14 @@ $button-theme: button-theme(
     --ig-banner-banner-message-color: #423589;
 }
 ```
+<!-- ComponentEnd: TreeGrid -->
 
 ### デモ
 
 `sample="/{ComponentSample}/row-editing-style", height="560", alt="{Platform} {ComponentTitle} 行編集のスタイルの例"`
 
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 ## 既知の問題と制限
 

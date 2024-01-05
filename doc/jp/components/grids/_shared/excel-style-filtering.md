@@ -29,7 +29,8 @@ _language: ja
 <!-- end: Angular -->
 
 ```razor
-<IgbGrid AllowFiltering="true" FilterMode="FilterMode.ExcelStyleFilter" />
+<{ComponentSelector} AllowFiltering="true" FilterMode="FilterMode.ExcelStyleFilter" >
+</{ComponentSelector}>
 ```
 
 <!-- WebComponents -->
@@ -155,7 +156,18 @@ _language: ja
 ```
 
 ```razor
-Add tree grid snippet
+<IgbTreeGrid AutoGenerate="false" Name="grid" @ref="grid" Data="FoodsData" PrimaryKey="ID" ForeignKey="ParentID" Moving="true" AllowFiltering="true" FilterMode="FilterMode.ExcelStyleFilter">
+    <IgbColumn Field="ID" Header="ID">
+    </IgbColumn>
+    <IgbColumn Field="Name" Header="Product Name" Sortable="true">
+    </IgbColumn>
+    <IgbColumn Field="UnitPrice" Header="Unit Price" Sortable="false" DataType="GridColumnDataType.Number" DisablePinning="true" DisableHiding="true">
+    </IgbColumn>
+    <IgbColumn Field="AddedDate" Header="Added Date" Sortable="false" DataType="GridColumnDataType.Date">
+    </IgbColumn>
+    <IgbColumn Field="Discontinued" DataType="GridColumnDataType.Boolean" BodyTemplateScript="WebGridBooleanCellTemplate" Sortable="true" >
+    </IgbColumn>
+</IgbTreeGrid>
 ```
 
 ```html
@@ -281,13 +293,14 @@ Excel スタイル フィルター メニューをさらにカスタマイズす
 次のコードは、`ExcelStyleHeaderIconTemplate` を使用して Excel スタイル フィルター メニューをカスタマイズする方法を示しています。
 
 ```razor
-<IgbGrid    
+<{ComponentSelector}    
     Name="grid"
     @ref="grid"
     Data="Data"    
     AllowFiltering="true"
     FilterMode="FilterMode.ExcelStyleFilter"
-    ExcelStyleHeaderIconTemplateScript="WebGridFilterAltIconTemplate"/>
+    ExcelStyleHeaderIconTemplateScript="WebGridFilterAltIconTemplate">
+</{ComponentSelector}>
 
 *** In JavaScript ***
 igRegisterScript("WebGridFilterAltIconTemplate", (ctx) => {
@@ -298,7 +311,7 @@ igRegisterScript("WebGridFilterAltIconTemplate", (ctx) => {
 
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var grid = this.grid = document.getElementById('grid') as {ComponentName}Component;
     grid.excelStyleHeaderIconTemplate = this.webGridFilterAltIconTemplate;
 }
 
@@ -603,6 +616,8 @@ Excel スタイル フィルタリング ダイアログ内のリスト項目は
 
 <!-- ComponentStart: TreeGrid -->
 
+<!-- Angular -->
+
 ## ツリー フィルター ビュー
 
 デフォルトでは、Excel スタイル フィルタリング ダイアログはリスト ビューで項目を表示します。それらをツリー ビューに表示するには、`TreeGridFilteringStrategy` を使用して、列フィールド名の配列を指定します。フィルター項目は、指定された列の場合はツリー ビューに、他のすべての列の場合はリスト ビューに表示されます。次のサンプルは、最初の列のツリー ビューにフィルター項目を表示する方法を示しています:
@@ -611,6 +626,8 @@ Excel スタイル フィルタリング ダイアログ内のリスト項目は
 
 
 <!-- ComponentEnd: TreeGrid -->
+
+<!-- end: Angular -->
 
 <!-- Angular -->
 
@@ -1034,7 +1051,7 @@ $custom-drop-down: drop-down-theme(
 一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
 ```html
-<igc-grid class="grid"></igc-grid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 ```tsx
@@ -1042,7 +1059,7 @@ $custom-drop-down: drop-down-theme(
 ```
 
 ```razor
-<IgbGrid class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 次に、そのクラスに関連する CSS プロパティを設定します。
@@ -1064,6 +1081,7 @@ $custom-drop-down: drop-down-theme(
 * `Column`
 * `{ComponentName}`
 
+
 ## その他のリソース
 
 <!-- ComponentStart:  Grid -->
@@ -1076,6 +1094,7 @@ $custom-drop-down: drop-down-theme(
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
 <!-- ComponentEnd:  Grid -->
+
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
