@@ -417,25 +417,7 @@ TO-DO H-GRID CODE SNIPPET
 </igx-column-group>
 ```
 
-```html
-<igc-column-group id="General" header="General Information">
-</igc-column-group>
-```
-
-```ts
-constructor() {
-    var general = this.general = document.getElementById('General') as IgcColumnComponent;
-    general.headerTemplate = this.generalHeaderTemplate;
-}
-
-public generalHeaderTemplate = (ctx: IgcCellTemplateContext) => {
-    return html`
-        ${this.toUppercase(ctx.cell.column.header)}
-    `;
-}
-```
-
-複数の列グループに対して 1 つのテンプレートを再利用する場合は、列グループの `headerTemplate` プロパティを次のように設定できます:
+複数の列グループに対して 1 つのテンプレートを再利用する場合は、列グループの `HeaderTemplate` プロパティを次のように設定できます:
 
 ```html
 <ng-template #columnGroupHeaderTemplate let-columnGroup>
@@ -447,42 +429,11 @@ public generalHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 <igx-column-group header="Address Information" [headerTemplate]="columnGroupHeaderTemplate">
 </igx-column-group>
 ```
-
-```html
-<igc-column-group id="General" header="General Information">
-</igc-column-group>
-<igc-column-group id="Address" header="Address Information">
-</igc-column-group>
-```
-
-```ts
-constructor() {
-    var general = this.general = document.getElementById('General') as IgcColumnComponent;
-    var addresss = this.address = document.getElementById('Address') as IgcColumnComponent;
-    general.headerTemplate = this.columnGroupHeaderTemplate;
-    addresss.headerTemplate = this.columnGroupHeaderTemplate;
-}
-
-public columnGroupHeaderTemplate = (ctx: IgcCellTemplateContext) => {
-    return html`
-        ${this.toUppercase(ctx.cell.column.header)}
-    `;
-}
-```
 <!-- end: Angular -->
 
 <!-- Blazor -->
-
 グリッドの各列グループは個別のテンプレートを持つことができます。列グループは、`HeaderTemplate` プロパティの `RenderFragment` を想定しています。
 式は、列グループ オブジェクトと共にコンテキストとして提供されています。
-
-<!-- end: Blazor -->
-
-<!-- WebComponents, React -->
-
-グリッドの各列グループは個別のテンプレートを持つことができます。次のコード スニペットは、列グループの `HeaderTemplate` の使用方法を示しています:
-
-<!-- end: WebComponents, React -->
 
 ```razor
 <IgbColumnGroup Header="Address Information" HeaderTemplate="Template">
@@ -496,25 +447,68 @@ public columnGroupHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 }
 ```
 
+複数の列グループに対して 1 つのテンプレートを再利用する場合は、列グループの `HeaderTemplate` プロパティを次のように設定できます:
+
+```razor
+<IgbColumnGroup Header="General Information" HeaderTemplate="Template">
+</IgbColumnGroup>
+<IgbColumnGroup Header="Address Information" HeaderTemplate="Template">
+</IgbColumnGroup>
+
+@code {
+    public RenderFragment<IgbColumnTemplateContext> Template = (ctx) => {
+        string value = ctx.Column.Header.ToUpper();
+        return @<span>@value</span>;
+    };
+}
+```
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+グリッドの各列グループは個別のテンプレートを持つことができます。次のコード スニペットは、列グループの `HeaderTemplate` の使用方法を示しています:
+
 ```html
-<igc-column-group id="addressInfoGroup" header="Address Information"></igc-column-group>
+<igc-column-group id="addressInfo" header="Address Information">
+</igc-column-group>
 ```
 
-```typescript
+```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-    var columnGroup = this.columnGroup = document.getElementById('addressInfoGroup') as IgcColumnGroupComponent;
-    grid.data = this.customersData
-    columnGroup.headerTemplate = this.headerTemplate;
+    var addresss = this.addresss = document.getElementById('addressInfo') as IgcColumnGroupComponent;
+    addresss.headerTemplate = this.columnGroupHeaderTemplate;
 }
 
-public headerTemplate = (ctx: IgcColumnTemplateContext) => {
-    const column = (ctx as any).column;
-    return html`<div>
-             <span style="float:left">${column.header.toUpperCase()}</span>
-            </div>`;
-};
+public columnGroupHeaderTemplate = (ctx: IgcColumnTemplateContext) => {
+    return html`
+        ${ctx.column.header.toUpperCase()}
+    `;
+}
 ```
+
+複数の列グループに対して 1 つのテンプレートを再利用する場合は、列グループの `HeaderTemplate` プロパティを次のように設定できます:
+
+```html
+<igc-column-group id="generalInfo" header="General Information">
+</igc-column-group>
+<igc-column-group id="addressInfo" header="Address Information">
+</igc-column-group>
+```
+
+```ts
+constructor() {
+    var general = this.general = document.getElementById('generalInfo') as IgcColumnGroupComponent;
+    var addresss = this.address = document.getElementById('addressInfo') as IgcColumnGroupComponent;
+    general.headerTemplate = this.columnGroupHeaderTemplate;
+    addresss.headerTemplate = this.columnGroupHeaderTemplate;
+}
+
+public columnGroupHeaderTemplate = (ctx: IgcColumnTemplateContext) => {
+    return html`
+        ${ctx.column.header.toUpperCase()}
+    `;
+}
+```
+<!-- end: WebComponents -->
 
 ```tsx
 <IgrColumnGroup header="Contact Information" headerTemplate={groupHeaderTemplate}></IgrColumnGroup>
@@ -555,7 +549,7 @@ function groupHeaderTemplate(e: { dataContext: IgrColumnTemplateContext }) {
 ```
 
 ```ts
-public columnHeaderTemplate = (ctx: IgcCellTemplateContext) => {
+public columnHeaderTemplate = (ctx: IgcColumnTemplateContext) => {
     return html`
         <igc-icon draggable="false" @click="${() => this.onClick()}"></igc-icon>
     `;
@@ -577,6 +571,7 @@ function columnHeaderTemplate(e: { dataContext: IgrColumnTemplateContext }) {
 
 `sample="/{ComponentSample}/multi-column-headers-template", height="550", alt="{Platform} {ComponentTitle} 複数列ヘッダーテンプレートの例"`
 
+<!-- Angular -->
 ## スタイル設定
 
 ソート動作のスタイル設定は、すべてのテーマ関数とコンポーネント mixins が存在する `index` ファイルをインポートする必要があります。
@@ -697,22 +692,22 @@ import 'core-js/es7/array';
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 ## スタイル設定
 
 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
 一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
 ```html
-<igc-grid class="grid"></igc-grid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 ```tsx
-<IgrGrid className="grid"></IgrGrid>
+<{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
 
 次に、そのクラスに関連する CSS プロパティを設定します。
@@ -731,7 +726,7 @@ import 'core-js/es7/array';
 `sample="/{ComponentSample}/multi-column-headers-styling", height="500", alt="{Platform} {ComponentTitle} 複数列ヘッダーのスタイル サンプル"`
 
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 ## API リファレンス
 
