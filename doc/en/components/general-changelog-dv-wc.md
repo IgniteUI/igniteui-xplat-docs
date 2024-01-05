@@ -9,11 +9,13 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
-## **{PackageVerChanges-23-2}**
+## **{PackageVerChanges-23-2.2}**
 
 ### {PackageCharts} Charts
 
 * [Chart Highlight Filter](charts/features/chart-highlight-filter.md) - The `CategoryChart` and `DataChart` now expose a way to highlight and animate in and out of a subset of data. The display of this highlight depends on the series type. For column and area series, the subset will be shown on top of the total set of data where the subset will be colored by the actual brush of the series, and the total set will have a reduced opacity. For line series, the subset will be shown as a dotted line.
+
+## **{PackageVerChanges-23-2}**
 
 ### {PackageGrids} (Toolbar - Beta)
 
