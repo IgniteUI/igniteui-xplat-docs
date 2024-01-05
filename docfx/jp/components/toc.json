@@ -610,7 +610,7 @@
         "href": "grids/tree-grid/collapsible-column-groups.md"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "列のタイプ",
         "href": "grids/tree-grid/column-types.md",
         "status": "NEW"
@@ -690,7 +690,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "複数列ヘッダー",
         "href": "grids/tree-grid/multi-column-headers.md",
         "status": "NEW"
@@ -714,7 +714,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "行の操作",
         "href": "grids/tree-grid/row-actions.md",
         "status": "NEW"
@@ -1216,6 +1216,11 @@
         {
           "name": "チャートのデータ ツールチップ",
           "href": "charts/features/chart-data-tooltip.md"
+        },
+        {
+          "name": "チャートの強調表示フィルター",
+          "href": "charts/features/chart-highlight-filter.md",
+          "status": "NEW"          
         },
         {
           "name": "チャート強調表示",

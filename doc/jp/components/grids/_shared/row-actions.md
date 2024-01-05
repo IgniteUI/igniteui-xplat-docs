@@ -50,31 +50,56 @@ import { IgxActionStripModule } from 'igniteui-angular';
 <!-- end: Angular -->
 
 ```razor
-    <{ComponentSelector} Data=northwindEmployees RowEditable="True" PrimaryKey="ID">
-        @foreach (var c in columns)
-        {
-            <IgbColumn Field="@c.Field">
-            </IgbColumn>
-        }
-        <IgbActionStrip @ref=actionstrip>
-            <IgbGridPinningActions></IgbGridPinningActions>
-            <IgbGridEditingActions></IgbGridEditingActions>
-        </IgbActionStrip>
-    </{ComponentSelector}>
+<IgbGrid Data=northwindEmployees RowEditable="True" PrimaryKey="ID">
+    @foreach (var c in columns)
+    {
+        <IgbColumn Field="@c.Field">
+        </IgbColumn>
+    }
+    <IgbActionStrip @ref=actionstrip>
+        <IgbGridPinningActions></IgbGridPinningActions>
+        <IgbGridEditingActions></IgbGridEditingActions>
+    </IgbActionStrip>
+</IgbGrid>
 ```
+
+<!-- ComponentStart: TreeGrid -->
+```razor
+<IgbTreeGrid Data=northwindEmployees RowEditable="True" PrimaryKey="ID">
+    @foreach (var c in columns)
+    {
+        <IgbColumn Field="@c.Field">
+        </IgbColumn>
+    }
+    <IgbActionStrip @ref=actionstrip>
+        <IgbGridPinningActions></IgbGridPinningActions>
+        <IgbGridEditingActions></IgbGridEditingActions>
+    </IgbActionStrip>
+</IgbTreeGrid>
+```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid" row-editable="true" primary-key="ID">
-    <igc-column field="field">
-    </igc-column>
-
-    <igc-action-strip id="actionStrip">
+<igc-grid row-editable="true" primary-key="ID">
+    <igc-column field="field"></igc-column>
+    <igc-action-strip>
         <igc-grid-pinning-actions></igc-grid-pinning-actions>
         <igc-grid-editing-actions></igc-grid-editing-actions>
     </igc-action-strip>
-</{ComponentSelector}>
+</igc-grid>
 ```
+<!-- ComponentStart: TreeGrid -->
+```html
+<igc-tree-grid row-editable="true" primary-key="ID">
+    <igc-column field="field"></igc-column>
+    <igc-action-strip>
+        <igc-grid-pinning-actions></igc-grid-pinning-actions>
+        <igc-grid-editing-actions></igc-grid-editing-actions>
+    </igc-action-strip>
+</igc-tree-grid>
+```
+<!-- ComponentEnd: TreeGrid -->
 <!-- end: WebComponents -->
 
 <!-- React -->

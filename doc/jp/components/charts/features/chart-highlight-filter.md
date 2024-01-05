@@ -11,13 +11,15 @@ _language: ja
 
 {ProductName} Chart コンポーネントは、プロットされたデータのサブセットを表示できるようにすることで、これらのチャートにプロットされた系列の視覚化を強化できるデータ強調表示オーバーレイをサポートしています。これは、データセットの目標値と実際の値などを視覚化するのに役立ちます。以下の例で、この機能を説明します。
 
-`sample="/charts/data-chart/chart-highlight-filter", height="500", alt="{Platform} 強調表示フィルターの例"`
+`sample="/charts/data-chart/chart-highlight-filter-multiple-series", height="500", alt="{Platform} 強調表示フィルターの例"`
 
 データ強調表示機能は `XamDataChart` および `CategoryChart` でサポートされていますが、これらのコントロールの動作の性質上、それぞれ異なる方法で構成されることに注意してください。以下では、強調表示フィルター機能のさまざまな API について説明します。
 
 ## DataChart での強調表示フィルターの使用
 
 `XamDataChart` では、強調表示フィルター API の多くは主に、表示したいデータのサブセットを示すデータ項目のプロパティ名を `HighlightedValueMemberPath` プロパティに設定することによって、シリーズ自体が生成されます。これにより、列シリーズおよびエリア シリーズ タイプの場合は不透明度を下げて全体セットが表示され、線シリーズ タイプの場合は破線が表示されることで、データのサブセットが強調表示されます。
+
+以下のサンプルは、`HighlightedValueMemberPath` を使用して強調表示を表示する方法を示しています。
 
 列およびエリア シリーズ の場合の不透明度の低減は、シリーズの `HighlightedValuesFadeOpacity` プロパティを設定することで構成できます。オーバーレイをまったく表示したくない場合は、`HighlightedValuesDisplayMode` プロパティを `Hidden` に設定することもできます。
 
