@@ -13,7 +13,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 > This topic discusses changes only for components that are not included in the {PackageAngularComponents} package.
 > For changes specific to {PackageAngularComponents} components, please see CHANGELOG.MD at [Ignite UI Angular Changes](https://github.com/IgniteUI/igniteui-angular/blob/master/)
 
-## **{PackageVerChanges-23-2.1}**
+## **{PackageVerChanges-23-2-1}**
 
 ### {PackageCharts} Charts
 
