@@ -142,7 +142,7 @@ function unitsInStockCellTemplate(ctx: IgrCellTemplateContext) {
 > プライマリキーは行編集操作で必須です。
 
 > [!Note]
-> 個々の列の編集を有効にする必要はありません。`{ComponentName}` の `RowEditable` プロパティを使用すると、定義された `Field` プロパティを持つすべての行 (主行を除く) が編集可能になります。特定の列の編集を無効にしたい場合は、その列の `Editable` 入力を `false` に設定するだけです。
+> 個々の列の編集を有効にする必要はありません。`{ComponentName}` の `RowEditable` プロパティを使用すると、定義された `Field` プロパティを持つすべての行 (主行を除く) が編集可能になります。特定の列の編集を無効にしたい場合は、その列の `Editable` 入力を **false** に設定するだけです。
 
 <!-- Angular -->
 ```typescript
