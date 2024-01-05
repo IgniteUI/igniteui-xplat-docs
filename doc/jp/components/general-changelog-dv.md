@@ -14,11 +14,13 @@ namespace: Infragistics.Controls.Charts
 > このトピックでは、{PackageAngularComponents} パッケージに含まれていないコンポーネントの変更についてのみ説明します。
 > {PackageAngularComponents} コンポーネントに固有の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md) の CHANGELOG.MD を参照してください。
 
-## **{PackageVerChanges-23-2}**
+## **{PackageVerChanges-23-2-JAN}**
 
 ### {PackageCharts} チャート
 
 * [チャート強調表示フィルター](charts/features/chart-highlight-filter.md) - `CategoryChart` と `DataChart` は、データのサブセットの内外で強調表示およびアニメーション化する方法を公開するようになりました。この強調表示の表示はシリーズのタイプによって異なります。列およびエリア シリーズの場合、サブセットはデータの合計セットの上に表示され、サブセットはシリーズの実際のブラシによって色付けされ、合計セットは不透明度を下げます。折れ線シリーズの場合、サブセットは点線で表示されます。
+
+## **{PackageVerChanges-23-2}**
 
 ### {PackageGrids} (Toolbar - ベータ版)
 
