@@ -90,15 +90,24 @@ function updateCell() {
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
+<!-- Angular, WebComponents -->
 ```typescript
 public updateCell() {
     this.treeGrid.updateCell(newValue, rowID, 'Age');
 }
 ```
-
+<!-- end: Angular, WebComponents -->
 ```razor
 this.treeGrid.UpdateCell(newValue, rowID, 'ReorderLevel')
 ```
+
+<!-- React -->
+```typescript
+function updateCell() {
+    treeGrid.updateCell(newValue, rowID, 'Age');
+}
+```
+<!-- end: React -->
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -148,6 +157,7 @@ function updateCell() {
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
+<!-- Angular, WebComponents -->
 ```typescript
 public updateCell() {
     const cell = this.treeGrid.getCellByColumn(rowIndex, 'Age');
@@ -156,6 +166,7 @@ public updateCell() {
     cell.update(9999);
 }
 ```
+<!-- end: Angular, WebComponents -->
 
 ```razor
 private UpdateCell() {
@@ -163,6 +174,17 @@ private UpdateCell() {
     cell.Update(9999);
 }
 ```
+
+<!-- React -->
+```typescript
+function updateCell() {
+    const cell = treeGrid.getCellByColumn(rowIndex, 'Age');
+    // You can also get cell by rowID if primary key is defined
+    // const cell = this.treeGrid.getCellByKey(rowID, 'Age');
+    cell.update(9999);
+}
+```
+<!-- end: React -->
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -320,7 +342,7 @@ constructor() {
         column1.inlineEditorTemplate = this.webGridCellEditCellTemplate;
         column2.inlineEditorTemplate = this.webGridCellEditCellTemplate;
         column3.inlineEditorTemplate = this.webGridCellEditCellTemplate;
-    }
+}
 
 
 public webGridCellEditCellTemplate = (ctx: IgcCellTemplateContext) => {
@@ -339,7 +361,7 @@ public webGridCellEditCellTemplate = (ctx: IgcCellTemplateContext) => {
               ${cellValues}
         </igc-select>
     `;
-    }
+}
 
 ```
 Working sample of the above can be found here for further referencee: 
@@ -577,6 +599,7 @@ grid1Ref.current.addRow(record);
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
+<!-- Angular, WebComponents -->
 ```typescript
 public addNewChildRow() {
     // Adding a new record
@@ -586,12 +609,25 @@ public addNewChildRow() {
     this.treeGrid.addRow(record, 1);
 }
 ```
+<!-- end: Angular, WebComponents -->
 
 ```razor
 //Assuming we have a `GetNewRecord` method returning the new row data.
 const record = this.GetNewRecord();
 this.TreeGridRef.AddRow(record);
 ```
+
+<!-- React -->
+```tsx
+function addNewChildRow() {
+    // Adding a new record
+    // Assuming we have a `getNewRecord` method returning the new row data
+    // And specifying the parentRowID.
+    const record = getNewRecord();
+    treeGrid.addRow(record, 1);
+}
+```
+<!-- end: React>
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -648,6 +684,7 @@ row.update(newData);
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
+<!-- Angular, WebComponents -->
 ```typescript
 // Updating the whole row
 this.treeGrid.updateRow(newData, this.selectedCell.cellID.rowID);
@@ -662,6 +699,24 @@ this.selectedCell.update(newData);
 const row = this.treeGrid.getRowByKey(rowID);
 row.update(newData);
 ```
+<!-- end: Angular, WebComponents -->
+
+<!-- React -->
+```typescript
+// Updating the whole row
+treeGridRef.current.updateRow(newData, this.selectedCell.cellID.rowID);
+
+// Just a particular cell through the Grid API
+treeGridRef.current.updateCell(newData, this.selectedCell.cellID.rowID, this.selectedCell.column.field);
+
+// Directly using the cell `update` method
+selectedCell.update(newData);
+
+// Directly using the row `update` method
+const row = treeGridRef.current.getRowByKey(rowID);
+row.update(newData);
+```
+<!-- end: React -->
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -710,6 +765,7 @@ row.delete();
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
+<!-- Angular, WebComponents -->
 ```typescript
 // Delete row through Tree Grid API
 this.treeGrid.deleteRow(this.selectedCell.cellID.rowID);
@@ -717,7 +773,17 @@ this.treeGrid.deleteRow(this.selectedCell.cellID.rowID);
 const row = this.treeGrid.getRowByIndex(rowIndex);
 row.delete();
 ```
+<!-- end: Angular, WebComponents -->
 
+<!-- React -->
+```typescript
+// Delete row through Grid API
+treeGridRef.current.deleteRow(selectedCell.cellID.rowID);
+// Delete row through row object
+const row = treeGridRef.current.getRowByIndex(rowIndex);
+row.delete();
+```
+<!-- end: React -->
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -865,6 +931,7 @@ If the value entered in a cell under the **Units On Order** column is larger tha
 
 <!-- ComponentStart: TreeGrid -->
 
+<!-- Angular, WebComponents -->
 ```typescript
 export class MyTreeGridEventsComponent {
     public handleCellEdit(event: IGridEditEventArgs): void {
@@ -885,6 +952,7 @@ export class MyTreeGridEventsComponent {
     }
 }
 ```
+<!-- end: Angular, WebComponents -->
 
 ```razor
 *** In JavaScript ***
@@ -899,6 +967,24 @@ igRegisterScript("HandleCellEdit", (ev) => {
     }
 }, false);
 ```
+<!-- React -->
+```typescript
+function handleCellEdit(s: IgrGridBaseDirective, args: IgrGridEditEventArgs): void {
+    const column = args.detail.column;
+
+    if (column.field === 'UnitsOnOrder') {
+        const rowData = args.detail.rowData;
+        if (!rowData) {
+            return;
+        }
+        if (args.detail.newValue > rowData.UnitsInStock) {
+            args.detail.cancel = true;
+            alert("You cannot order more than the units in stock!");  
+        }
+    }
+}
+```
+<!-- end: React -->
 
 If the value entered in a cell under the **Units On Order** column is larger than the available amount (the value under **Units in Stock**), the editing will be cancelled and the user will be alerted to the cancellation.
 
@@ -1101,7 +1187,7 @@ In addition to the steps above, we can also style the controls that are used for
 
 <!-- Blazor, WebComponents, React -->
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart:  Grid, TreeGrid -->
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -1111,6 +1197,6 @@ In addition to the steps above, we can also style the controls that are used for
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
 * [Searching](search.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd:  Grid, TreeGrid -->
 
 <!-- end: Blazor, WebComponents, React -->
