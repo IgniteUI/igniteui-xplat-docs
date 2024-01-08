@@ -109,6 +109,13 @@ export class AppModule {}
 import { IgrTreeGrid } from '@infragistics/igniteui-react-grids/igr-tree-grid';
 ```
 
+```razor
+// eg. Program.cs register the following:
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbTreeGridModule)
+);
+```
+
 <!-- end: Angular, React, Blazor -->
 
 ## Usage
@@ -306,7 +313,7 @@ We can also enable the summaries, the filtering, sorting, editing, moving and re
 ```
 
 ```tsx
-    <IgrTreeGrid autoGenerate="false" data={this.EMPLOYEE_DATA} primaryKey="ID" childDataKey="Employees" row-selection="multiple" displayDensity="Cosy">
+    <IgrTreeGrid autoGenerate="false" data={this.EMPLOYEE_DATA} primaryKey="ID" childDataKey="Employees" rowSelection="multiple" displayDensity="Cosy">
         <IgrPaginator perPage="10"></IgrPaginator>
         <IgrColumn field="Name" header="Name" dataType="String"></IgrColumn>
         <IgrColumn field="ID" header="ID" dataType="Number"></IgrColumn>
@@ -350,7 +357,7 @@ Finally, we can enable the toolbar of our tree grid, along with the column hidin
 ```
 
 ```tsx
-    <IgrTreeGrid autoGenerate="false" data={this.EMPLOYEE_DATA} primaryKey="ID" childDataKey="Employees" row-selection="multiple" displayDensity="Cosy">
+    <IgrTreeGrid autoGenerate="false" data={this.EMPLOYEE_DATA} primaryKey="ID" childDataKey="Employees" rowSelection="multiple" displayDensity="Cosy">
         <IgrPaginator perPage="10"></IgrPaginator>
          <IgrGridToolbar>
             <IgrGridToolbarActions>
@@ -440,10 +447,10 @@ Here is the template of the component which demonstrates how to configure the tr
 ```
 
 ```tsx
- <IgrTreeGrid auto-generate="false" name="treeGrid" id="treeGrid" primary-key="ID" foreign-key="ParentID" row-selection="multiple">
-    <IgrColumn field="Name" data-type="string"></IgrColumn>
+ <IgrTreeGrid autoGenerate="false" name="treeGrid" id="treeGrid" primaryKey="ID" foreignKey="ParentID" rowSelection="multiple">
+    <IgrColumn field="Name" dataType="string"></IgrColumn>
     <IgrColumn field="JobTitle" header="Job Title"></IgrColumn>
-    <IgrColumn field="Age" data-type="number"></IgrColumn>
+    <IgrColumn field="Age" dataType="number"></IgrColumn>
 </IgrTreeGrid>
 ```
 
@@ -470,8 +477,8 @@ In addition we will enable the row selection feature of the tree grid by using t
 ```
 
 ```tsx
- <IgrTreeGrid auto-generate="false" name="treeGrid" id="treeGrid" primary-key="ID" foreign-key="ParentID" moving="true" allowFiltering="true" row-selection="multiple" rowEditable="true">
-    <IgrColumn field="Name" data-type="string" sortable="true"></IgrColumn>
+ <IgrTreeGrid autoGenerate="false" name="treeGrid" id="treeGrid" primaryKey="ID" foreignKey="ParentID" moving="true" allowFiltering="true" rowSelection="multiple" rowEditable="true">
+    <IgrColumn field="Name" dataType="string" sortable="true"></IgrColumn>
     <IgrColumn field="JobTitle" header="Job Title" sortable="true"></IgrColumn>
     <IgrColumn field="Age" data-type="number"sortable="true"></IgrColumn>
 </IgrTreeGrid>
@@ -507,7 +514,7 @@ The indentation of the tree grid cell persists across other tree grid features l
 - Exported Excel worksheets reflect the hierarchy by grouping the records as they are grouped in the tree grid itself. All records expanded states would also be persisted and reflected.
 - When exporting to CSV, levels and expanded states are ignored and all data is exported as flat.
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 ## {Platform} Tree Grid Styling Configuration
 
 
@@ -536,7 +543,7 @@ Then set the related CSS properties for that class:
 
 `sample="/{TreeGridSample}/overview-styling", height="700", alt="{Platform} Tree Grid styling"`
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 
 ## API References
