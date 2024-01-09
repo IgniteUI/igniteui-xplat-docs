@@ -9,31 +9,29 @@ _language: ja
 
 # {Platform} Chart 強調表示フィルター
 
-{ProductName} Chart コンポーネントは、プロットされたデータのサブセットを表示できるようにすることで、これらのチャートにプロットされた系列の視覚化を強化できるデータ強調表示オーバーレイをサポートしています。これは、データセットの目標値と実際の値などを視覚化するのに役立ちます。以下の例で、この機能を説明します。
+{ProductName} Chart コンポーネントは、プロットされたデータのサブセットを表示できるようにすることで、これらのチャートにプロットされた系列の視覚化を強化できるデータ強調表示オーバーレイをサポートしています。これを有効にすると、列シリーズおよびエリア シリーズ タイプの場合は不透明度を下げて全体セットが表示され、線シリーズ タイプの場合は破線が表示されることで、データのサブセットが強調表示されます。これは、データセットの目標値と実際の値などを視覚化するのに役立ちます。以下の例で、この機能を説明します。
 
 `sample="/charts/data-chart/chart-highlight-filter-multiple-series", height="500", alt="{Platform} 強調表示フィルターの例"`
 
-データ強調表示機能は `XamDataChart` および `CategoryChart` でサポートされていますが、これらのコントロールの動作の性質上、それぞれ異なる方法で構成されることに注意してください。以下では、強調表示フィルター機能のさまざまな API について説明します。
+データ強調表示機能は `XamDataChart` および `CategoryChart` でサポートされていますが、これらのコントロールの動作の性質上、それぞれ異なる方法で構成されることに注意してください。ただし、この機能で変わらない点は、強調表示を表示したい場合は `HighlightedValuesDisplayMode` プロパティを `Overlay` に設定する必要があることです。以下では、強調表示フィルター機能のさまざまな設定について説明します。
 
 ## DataChart での強調表示フィルターの使用
 
-`XamDataChart` では、強調表示フィルター API の多くは主に、表示したいデータのサブセットを示すデータ項目のプロパティ名を `HighlightedValueMemberPath` プロパティに設定することによって、シリーズ自体が生成されます。これにより、列シリーズおよびエリア シリーズ タイプの場合は不透明度を下げて全体セットが表示され、線シリーズ タイプの場合は破線が表示されることで、データのサブセットが強調表示されます。
+`XamDataChart` では、強調表示フィルター API の多くは主に、強調表示するデータのサブセットを表すコレクションに `HighlightedItemsSource` プロパティを設定することによって、シリーズ自体で発生します。`HighlightedItemsSource` 内の項目の数は、強調表示するシリーズの `ItemsSource` にバインドされているデータの数と一致する必要があります。カテゴリ シリーズの場合は、デフォルトで強調表示パスとして定義した `ValueMemberPath` が使用されます。このページの上部にあるサンプルでは、​​`XamDataChart` の `HighlightedItemsSource` を使用してオーバーレイを表示しています。
 
-以下のサンプルは、`HighlightedValueMemberPath` を使用して強調表示を表示する方法を示しています。
+シリーズの `HighlightedItemsSource` と `ItemsSource` の間でスキーマが一致しない場合は、シリーズの `HighlightedValueMemberPath` プロパティを使用してこれを構成できます。さらに、シリーズ自体の `ItemsSource` を強調表示ソースとして使用し、サブセットを表すデータ項目にパスを設定したい場合は、これを行うことができます。これは、`HighlightedItemsSource` を提供せずに、`HighlightedValueMemberPath` プロパティをそのパスに設定するだけで行われます。
 
 列およびエリア シリーズ の場合の不透明度の低減は、シリーズの `HighlightedValuesFadeOpacity` プロパティを設定することで構成できます。オーバーレイをまったく表示したくない場合は、`HighlightedValuesDisplayMode` プロパティを `Hidden` に設定することもできます。
 
-デフォルトでは、`HighlightedValueMemberPath` に使用されるデータ ソースは、シリーズまたはチャートの `ItemsSource` に設定したものになりますが、シリーズの `HighlightedItemsSource` プロパティを使用して独自のデータ ソースを提供することもできます。カテゴリ シリーズを使用している場合は、`HighlightedItemsSource` のスキーマがそのシリーズの `ItemsSource` プロパティのスキーマと一致する必要があることに注意してください。
-
 強調表示フィルターによって表示されるシリーズの部分は、チャートの凡例レイヤーとツールチップ レイヤーに個別に表示されます。`HighlightedTitleSuffix` を設定することで、ツールチップと凡例に表示されるタイトルを構成できます。これにより、指定した値がシリーズの `Title` の末尾に追加されます。
 
-次の例は、`XamDataChart` コントロール内のデータ強調表示オーバーレイ機能の使用法を示しています。
+次の例は、`HighlightedValueMemberPath` を使用した `XamDataChart` コントロール内のデータ強調表示オーバーレイ機能の使用法を示しています。
 
 `sample="/charts/data-chart/chart-highlight-filter", height="500", alt="{Platform} 強調表示フィルターの例"`
 
 ## CategoryChart での強調表示フィルターの使用
 
-`CategoryChart` 強調表示フィルターは、`InitialHighlightFilter` プロパティを設定することによってチャート上で発生します。`CategoryChart` は、デフォルトで、基になるデータ項目のすべてのプロパティを考慮します。そのため、データのサブセットをフィルタリングできるようにデータをグループ化および集計できるように、チャート上でも `InitialGroups` を定義する必要があります。`InitialGroups` を基になるデータ項目の値パスに設定して、重複した値を持つパスでグループ化することができます。 
+`CategoryChart` 強調表示フィルターは、`InitialHighlightFilter` プロパティを設定することによってチャート上で発生します。`CategoryChart` は、デフォルトで、基になるデータ項目のすべてのプロパティを考慮します。そのため、データのサブセットをフィルタリングできるようにデータをグループ化および集計できるように、チャート上でも `InitialGroups` を定義する必要があります。`InitialGroups` を基になるデータ項目の値パスに設定して、重複した値を持つパスでグループ化することができます。
 
 <!-- Unsure of this part. Need to review -->
 <!-- ????? The `InitialHighlightFilter` is done using OData filter query syntax. The syntax for this is an abbreviation of the filter operator. For example, if you wanted to have an InitialHighlightFilter of "Month not equals January" it would be represented as "Month ne 'January'"-->
