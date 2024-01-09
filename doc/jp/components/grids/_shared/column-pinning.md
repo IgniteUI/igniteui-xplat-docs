@@ -10,7 +10,8 @@ _language: ja
 
 # {Platform} {ComponentTitle} 列ピン固定
 
-{Platform} を使用すると、開発者は列のピン固定機能を利用して特定の列を希望の順序でロックできるため、ユーザーが {Platform} の {ComponentTitle} を水平方向にスクロールしても常に可視性を確保できます。列ピン固定用の統合 UI があり、{Platform} {ComponentTitle} ツールバーからアクセスできます。さらに、開発者はカスタム ユーザー インターフェイスを構築し、列のピン固定状態を変更できる柔軟性を備えています。
+{Platform} {ComponentTitle} の {ProductName} 列のピン固定機能を使用すると、開発者は特定の列を希望の順序でロックできるため、ユーザーが `Grid` を水平方向にスクロールしている場合でも、常に可視性を確保できます。
+列ピン固定用の統合 UI があり、{Platform} {ComponentTitle} ツールバーからアクセスできます。さらに、開発者は、列のピン状態を変更するカスタム ユーザー インターフェイスを柔軟に構築できます。
 
 ## {Platform} {ComponentTitle} 列ピン固定の例
 
