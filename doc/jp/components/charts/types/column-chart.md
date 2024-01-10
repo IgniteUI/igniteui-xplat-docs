@@ -73,7 +73,7 @@ _language: ja
 
 {Platform} 縦棒チャートには、外観のスタイル設定と変更のための多くのオプションがあります。
 
-`XamCategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドします:
+`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドします:
 
 `sample="/charts/category-chart/column-chart-styling", height="600", alt="{Platform} 縦棒チャートのスタイル設定"`
 
