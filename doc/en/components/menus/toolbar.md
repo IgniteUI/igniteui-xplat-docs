@@ -2,7 +2,7 @@
 title: {Platform} Toolbar Component | {ProductName}
 _description: See how you can easily get started with {Platform} Toolbar Component. Compatible with the Data Chart. Extend your .
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Toolbar components, {Platform} Toolbar controls
-mentionedTypes: ["Toolbar", "ToolAction", "DomainChart", "CategoryChart", "XamDataChart"]
+mentionedTypes: ["Toolbar", "ToolAction", "DomainChart", "CategoryChart", "XamDataChart", "TrendLineType"]
 ---
 
 # {Platform} Toolbar Overview
@@ -242,12 +242,12 @@ Trend Actions
       - `Average`:  A `ToolActionCheckbox` that displays a dashed horizontal line along the yAxis at the average value of the series.
   - `TrendsMenu`: A sub menu containing tools for applying various trendlines to the `XamDataChart` plot area.
     - `TrendsHeader`: A sub menu section header for the following three tools:
-      - `Exponential`: A `ToolActionRadio` that sets the `TrendLineType` on each series in the chart to `ExponentialFit`.
-      - `Linear`: A `ToolActionRadio` that sets the `TrendLineType` on each series in the chart to `LinearFit`.
-      - `Logarithmic`: A `ToolActionRadio` that sets the `TrendLineType` on each series in the the chart to `LogarithmicFit`.
+      - **Exponential**: A `ToolActionRadio` that sets the `TrendLineType` on each series in the chart to **ExponentialFit**.
+      - **Linear**: A `ToolActionRadio` that sets the `TrendLineType` on each series in the chart to **LinearFit**.
+      - **Logarithmic**: A `ToolActionRadio` that sets the `TrendLineType` on each series in the the chart to **LogarithmicFit**.
  - `HelpersHeader`: A sub section header.
   - `SeriesAvg`: A `ToolActionCheckbox` that adds or removes a `ValueLayer` to the chart's series collection using the `ValueLayerValueMode` of type `Average`.
-  - `ValueLabelsMenu`: A sub menu containing varous tools for showing different annotations on the `XamDataChart`'s plot area.
+  - `ValueLabelsMenu`: A sub menu containing various tools for showing different annotations on the `XamDataChart`'s plot area.
     - `ValueLabelsHeader`: A sub menu section header for the following tools:
       - `ShowValueLabels`: A `ToolActionCheckbox` that toggles data point values by using a `CalloutLayer`.
       - `ShowLastValueLabel`: A `ToolActionCheckbox` that toggles final value axis annotations by using a `FinalValueLayer`.
