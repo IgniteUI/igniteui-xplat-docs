@@ -2,7 +2,7 @@
 title: {Platform} Toolbar コンポーネント | {ProductName}
 _description: {Platform} ツールバー コンポーネントを簡単に始める方法をご覧ください。データ チャートと互換性があります。
 _keywords: {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, {Platform}, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} ツールバー コンポーネント, {Platform} ツールバー コントロール
-mentionedTypes: ["Toolbar", "ToolAction", "DomainChart", "CategoryChart", "XamDataChart"]
+mentionedTypes: ["Toolbar", "ToolAction", "DomainChart", "CategoryChart", "XamDataChart", "TrendLineType"]
 _language: ja
 ---
 
@@ -243,9 +243,9 @@ builder.Services.AddIgniteUIBlazor(
       - `Average`:  シリーズの平均値で yAxis に沿って水平破線を表示する `ToolActionCheckbox`。
   - `TrendsMenu`: さまざまな近似曲線を `XamDataChart` プロット領域に適用するためのツールを含むサブ メニュー。
     - `TrendsHeader`: 次の 3 つのツールのサブメニュー セクション ヘッダー:
-      - `Exponential`: チャート内の各シリーズの `TrendLineType` を `ExponentialFit` に設定する `ToolActionRadio`。
-      - `Linear`: チャート内の各シリーズの `TrendLineType` を `LinearFit` に設定する `ToolActionRadio`。
-      - `Logarithmic`: チャート内の各シリーズの `TrendLineType` を `LogarithmicFit` に設定する `ToolActionRadio`。
+      - **Exponential**: チャート内の各シリーズの `TrendLineType` を **ExponentialFit** に設定する `ToolActionRadio`。
+      - **Linear**: チャート内の各シリーズの `TrendLineType` を **LinearFit** に設定する `ToolActionRadio`。
+      - **Logarithmic**: チャート内の各シリーズの `TrendLineType` を **LogarithmicFit** に設定する `ToolActionRadio`。
  - `HelpersHeader`: サブ セクションのヘッダー。
   - `SeriesAvg`: `Average` タイプの `ValueLayerValueMode` を使用して、チャートのシリーズ コレクションに `ValueLayer` を追加または削除する `ToolActionCheckbox`。
   - `ValueLabelsMenu`: `XamDataChart` のプロット領域に注釈を表示するためのさまざまなツールを含むサブ メニュー。

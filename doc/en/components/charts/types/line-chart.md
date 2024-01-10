@@ -2,7 +2,7 @@
 title: {Platform} Line Chart and Graph | {ProductName}
 _description: The {Platform} Line chart is capable of handling high volumes of data, ranging into millions of data points, and updating them every few milliseconds. Try for FREE.
 _keywords: {Platform} Charts, Line Chart, Line Graph, Infragistics
-mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "Legend", "PolarLineSeries", "RadialLineSeries", "StackedLineSeries", "Stacked100LineSeries", 'Series']
+mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "Legend", "PolarLineSeries", "RadialLineSeries", "StackedLineSeries", "Stacked100LineSeries", 'Series', "CategoryChartType"]
 namespace: Infragistics.Controls.Charts
 ---
 # {Platform} Line Chart
@@ -11,7 +11,7 @@ The {ProductName} Line Chart or Line Graph is a type of category charts that sho
 
 ## {Platform} Line Chart Example
 
-You can create the {Platform} Line Chart in the `CategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to **Line** enum, as shown in the example below.
+You can create the {Platform} Line Chart in the `CategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `Line` enum, as shown in the example below.
 
 `sample="/charts/category-chart/line-chart-multiple-sources", height="600", alt="{Platform} Line Chart Multiple Sources"`
 
