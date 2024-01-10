@@ -72,7 +72,7 @@ The Column Chart is able to render multiple columns per category for comparison 
 
 The {Platform} Column Chart has many options for styling and modification of the visual appearance.
 
-You can create this type of chart in the `XamCategoryChart` control by binding your data, as shown in the example below:
+You can create this type of chart in the `CategoryChart` control by binding your data, as shown in the example below:
 
 `sample="/charts/category-chart/column-chart-styling", height="600", alt="{Platform} Column Chart Styling"`
 
