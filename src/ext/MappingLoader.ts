@@ -3,11 +3,17 @@ export class MappingLoader {
     public namespace: string | null = null;
 
     getPlatformTypeName(name: string, platform: APIPlatform, filePath: string) {
-        let type = this.getType(name, filePath);
+        var isExplicit = false;
+        // check for explicit API types, e.g. @TrendLineType enum type instead of Category.TrendLineType property
+        if (name && name.indexOf('@') == 0) {
+            name = name.substring(1);
+            isExplicit = true; 
+        }
+        var type = this.getType(name, filePath);
         if (type) {
             for (let name of type.names) {
                 if (name.platform == platform) {
-                    return name.mappedName;
+                    return isExplicit ? "@" + name.mappedName : name.mappedName;
                 }
             }
         }
