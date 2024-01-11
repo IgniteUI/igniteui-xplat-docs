@@ -2,7 +2,7 @@
 title: {Platform} Chart API | Data Visualization Tools | Infragistics
 _description: Use Infragistics {ProductName} chart provides useful API to configure and styles chart visuals
 _keywords: {Platform} charts, chart API, API, {ProductName}, Infragistics
-mentionedTypes: ["XamDataChart", "CategoryChart", "FinancialChart", "SeriesViewer", "XamDoughnutChart", "XamPieChart", and "XamSparkline" ]
+mentionedTypes: ["XamDataChart", "CategoryChart", "FinancialChart", "SeriesViewer", "XamDoughnutChart", "XamPieChart", "XamSparkline" ]
 namespace: Infragistics.Controls.Charts
 ---
 

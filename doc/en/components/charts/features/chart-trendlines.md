@@ -43,15 +43,15 @@ You can find more information about related chart features in these topics:
 
 The `CategoryChart` and `FinancialChart` components share the following API properties:
 
-- `TrendLineBrushes`
-- `TrendLinePeriod`
-- `TrendLineThickness`
-- `TrendLineType`
+- `DomainChart.TrendLineBrushes`
+- `DomainChart.TrendLinePeriod`
+- `DomainChart.TrendLineThickness`
+- `DomainChart.TrendLineType`
 
 In the `XamDataChart` component, most types of series have the following API properties:
 
-- `TrendLineBrush`
-- `TrendLineDashArray`
-- `TrendLinePeriod`
-- `TrendLineThickness`
-- `TrendLineType`
+- `ScatterBase.TrendLineBrush`
+- `ScatterBase.TrendLineDashArray`
+- `ScatterBase.TrendLinePeriod`
+- `ScatterBase.TrendLineThickness`
+- `ScatterBase.TrendLineType`
