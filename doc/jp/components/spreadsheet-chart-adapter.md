@@ -11,10 +11,7 @@ _language: ja
 
 ## {Platform} Spreadsheet チャート アダプターの例
 
-
 `sample="/excel/spreadsheet/adapter-chart", height="500", alt="{Platform} Spreadsheet チャート アダプターの例"`
-
-
 
 <div class="divider--half"></div>
 
@@ -146,7 +143,7 @@ ModuleManager.register(
 
 ## コード スニペット
 
-以下のコード スニペットは、`XamSpreadsheet` コントロールで現在表示されているワークシートにハイパーリンクを追加する方法を示しています。
+以下のコード スニペットは、`Spreadsheet` コントロールで現在表示されているワークシートにハイパーリンクを追加する方法を示しています。
 
 ```typescript
 this.spreadsheet.chartAdapter = new SpreadsheetChartAdapter();
@@ -207,4 +204,3 @@ ExcelUtility.loadFromUrl(process.env.PUBLIC_URL + "/ExcelFiles/ChartData.xlsx").
  - `SpreadsheetChartAdapter`
  - `Spreadsheet`
  - `Workbook`
- - `XamSpreadsheet`
