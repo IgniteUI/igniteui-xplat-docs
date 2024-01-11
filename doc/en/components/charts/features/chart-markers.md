@@ -2,7 +2,7 @@
 title: {Platform} Chart Markers | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Chart Markers
 _keywords: {Platform} Charts, Markers, Infragistics
-mentionedTypes: ["CategoryChart"]
+mentionedTypes: ["CategoryChart", "CategoryChartType", "MarkerType"]
 namespace: Infragistics.Controls.Charts
 ---
 
@@ -12,7 +12,7 @@ In {ProductName}, markers are visual elements that display the values of data po
 
 # {Platform} Chart Marker Example
 
-In the following example, the [Line Chart](../types/line-chart.md) is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019 with markers enabled by setting the `MarkerType` property to "Circle."
+In the following example, the [Line Chart](../types/line-chart.md) is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019 with markers enabled by setting the `MarkerType` property to `Circle` enum value.
 
 The colors of the markers are also managed by setting the `MarkerBrushes` and `MarkerOutlines` properties in the sample below. The markers and `ChartType` is configurable in this sample by using the drop-downs as well.
 

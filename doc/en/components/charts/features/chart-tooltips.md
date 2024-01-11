@@ -52,8 +52,6 @@ This example shows how to create custom tooltips for each series in {Platform} D
 
 `sample="/charts/data-chart/tooltip-template", height="500", alt="{Platform} Tooltip Template"`
 
-
-
 <div class="divider--half"></div>
 
 ## Additional Resources
@@ -64,13 +62,6 @@ You can find more information about related chart features in these topics:
 - [Chart Markers](chart-markers.md)
 
 ## API References
-
-The following is a list of API members mentioned in the above sections:
-
-- `ToolTipType`
-- `CategoryChart`
-- `XamDataChart`
-
 
 The `CategoryChart` and `FinancialChart` components share the following API properties:
 
