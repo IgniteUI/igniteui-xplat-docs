@@ -181,28 +181,17 @@ function onSorting(grid: IgrGridBaseDirective, event: IgrSortingEventArgs) {
 
 ## API References
 
-* `Cell`
+* `{ComponentName}`
 
-<!-- ComponentStart: Grid, HierarchicalGrid -->
-
-* `GridRow`
-
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
-
-<!-- ComponentStart: TreeGrid -->
-
-* `TreeGridRow`
-
-<!-- ComponentEnd: TreeGrid -->
 <!-- Angular -->
-* `DatePickerComponent`
-* `CheckboxComponent`
+* `DatePicker`
+* `Checkbox`
 * `Overlay`
 <!-- end: Angular -->
+
 ## Additional Resources
 
 <!-- Angular, WebComponents, React -->
-
 
 * [Column Data Types](column-types.md#default-template)
 * [Virtualization and Performance](virtualization.md)
