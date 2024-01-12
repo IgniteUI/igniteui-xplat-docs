@@ -34,6 +34,7 @@ The goal here is to provide cross platform long form doc for Angular, Blazor, Re
   * [API Mapping Files](#API-Mapping-Files)
   * [API Resource Links](#API-Resource-Links)
   * [Merging Branches](#Merging-Branches)
+  * [Updating Angular Docs](#updating-angular-docs)
 
 
 ## Getting Started
@@ -377,3 +378,31 @@ git push
 
 - ask RE team to deploy DocFX build to production
 
+
+
+#### Updating Angular Docs
+
+The [Angular docs](https://github.com/IgniteUI/igniteui-docfx) repo is automatically updated with changes made in markdown (.md) files in the xplat-docs repo. However, changes make to table of content, are not and they must to be manually propagated by following these instructions:
+
+- clone or get latest on the [Angular igniteui-docfx](https://github.com/IgniteUI/igniteui-docfx) repo
+
+- open [xplat-docs](https://github.com/IgniteUI/igniteui-xplat-docs) repo in VS Code
+
+- open terminal window
+
+- run this command to generate output files for angular docs:
+```
+yarn run build-docfx-angular
+```
+
+- compare and propagate changes from the xplat-docs TOC file: 
+```
+C:\WORK\igniteui-xplat-docs\dist\Angular\en\components\toc.yml 
+``` 
+
+- to the angular TOC file:
+``` 
+C:\WORK\igniteui-docfx\en\components\toc.yml
+``` 
+
+- create a pull request for the [Angular igniteui-docfx](https://github.com/IgniteUI/igniteui-docfx) repo
