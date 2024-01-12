@@ -380,13 +380,7 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 ## API References
 
 * `{ComponentName}`
-* `Cell`
-<!-- ComponentStart: Grid, HierarchicalGrid -->
-* `GridRow`
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
-<!-- ComponentStart: TreeGrid -->
-* `TreeGridRow`
-<!-- ComponentEnd: TreeGrid -->
+
 
 ## Additional Resources
 

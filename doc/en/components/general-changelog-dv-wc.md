@@ -125,10 +125,10 @@ These new chart improvements include:
 
 ### {PackageGrids} (Data Grid)
 
-* Changed `Column` to `DataGridColumn`
-* Changed `GridCellEventArgs` to `DataGridCellEventArgs`
-* Changed `GridSelectionMode` to `DataGridSelectionMode`
-* Changed `SummaryOperand` to `DataSourceSummaryOperand`
+* Changed **{IgPrefix}Column** to `DataGridColumn`
+* Changed **GridCellEventArgs** to `DataGridCellEventArgs`
+* Changed **GridSelectionMode** to `DataGridSelectionMode`
+* Changed **SummaryOperand** to `DataSourceSummaryOperand`
 
 ## **{PackageVerChanges-22-1}**
 ### {PackageCharts}

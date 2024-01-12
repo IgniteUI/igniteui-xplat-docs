@@ -132,4 +132,4 @@ A full list of the available Ignite UI CLI commands and their usage (like passin
 | [ig doc](https://github.com/IgniteUI/igniteui-cli/wiki/doc) | | Searches the Infragistics knowledge base for information about a given search term
 | [ig list](https://github.com/IgniteUI/igniteui-cli/wiki/list) | l |  Lists all templates for the specified framework and type. When you run the command within a project folder it will list all templates for the project's framework and type, even if you provide different ones.
 | [ig test](https://github.com/IgniteUI/igniteui-cli/wiki/test) |  | Executes the tests for the current project.
-| ig version | -v | Shows Ignite UI CLI version installed locally, or globally if local is missing |
+| [ig version](https://github.com/IgniteUI/igniteui-cli/wiki) | -v | Shows Ignite UI CLI version installed locally, or globally if local is missing |
