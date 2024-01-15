@@ -2,7 +2,7 @@
 title: {Platform} 折れ線チャートとグラフ | {ProductName}
 _description: {Platform} 折れ線チャートは、数百万のデータポイントに及ぶ大量のデータを処理し、数ミリ秒ごとに更新することができます。無料でお試しください。
 _keywords: {Platform} Charts, Line Chart, Line Graph, Infragistics, {Platform} チャート, 折れ線チャート, 折れ線グラフ, インフラジスティックス
-mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "Legend", "PolarLineSeries", "RadialLineSeries", "StackedLineSeries", "Stacked100LineSeries", 'Series']
+mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "Legend", "PolarLineSeries", "RadialLineSeries", "StackedLineSeries", "Stacked100LineSeries", "Series", "CategoryChartType"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -12,7 +12,7 @@ _language: ja
 
 ## {Platform} 折れ線チャートの例
 
-次の例に示すように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを **Line** 列挙型に設定することで、`CategoryChart`コントロールに {Platform} 折れ線チャートを作成できます。
+次の例に示すように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを `Line` 列挙型に設定することで、`CategoryChart`コントロールに {Platform} 折れ線チャートを作成できます。
 
 `sample="/charts/category-chart/line-chart-multiple-sources", height="600", alt="{Platform} 複数ソースの折れ線チャート"`
 

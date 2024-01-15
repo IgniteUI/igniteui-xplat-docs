@@ -1211,21 +1211,13 @@ $custom-grid-theme: grid-theme(
 
 ## API リファレンス
 
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+* `{ComponentName}`
 
-* `GridRow`
-
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
-<!-- ComponentStart: TreeGrid -->
-
-* `TreeGridRow`
-
-<!-- ComponentEnd: TreeGrid -->
-* `Cell`
 <!-- Angular -->
 * `InputDirective`
 <!-- end:Angular -->
-* `DatePickerComponent`
+
+* `DatePicker`
 
 ## その他のリソース
 

@@ -44,15 +44,15 @@ _language: ja
 
 `CategoryChart` コンポーネントと `FinancialChart` コンポーネントは、次の API プロパティを共有します:
 
-- `TrendLineBrushes`
-- `TrendLinePeriod`
-- `TrendLineThickness`
-- `TrendLineType`
+- `DomainChart.TrendLineBrushes`
+- `DomainChart.TrendLinePeriod`
+- `DomainChart.TrendLineThickness`
+- `DomainChart.TrendLineType`
 
 `XamDataChart` コンポーネントでは、シリーズのほとんどのタイプに次の API プロパティがあります:
 
-- `TrendLineBrush`
-- `TrendLineDashArray`
-- `TrendLinePeriod`
-- `TrendLineThickness`
-- `TrendLineType`
+- `ScatterBase.TrendLineBrush`
+- `ScatterBase.TrendLineDashArray`
+- `ScatterBase.TrendLinePeriod`
+- `ScatterBase.TrendLineThickness`
+- `ScatterBase.TrendLineType`

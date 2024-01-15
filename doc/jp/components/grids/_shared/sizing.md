@@ -245,12 +245,7 @@ _language: ja
 ## API リファレンス
 
 * `{ComponentName}`
-<!-- ComponentStart: Grid, HierarchicalGrid, PivotGrid -->
-* `GridRow`
-<!-- ComponentEnd: Grid, HierarchicalGrid, PivotGrid -->
-<!-- ComponentStart: TreeGrid -->
-* `TreeGridRow`
-<!-- ComponentEnd: TreeGrid -->
+
 
 ## その他のリソース
 
