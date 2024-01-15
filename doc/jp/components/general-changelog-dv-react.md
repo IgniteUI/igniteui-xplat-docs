@@ -84,10 +84,10 @@ namespace: Infragistics.Controls.Charts
 
 ### {PackageGrids} (データ グリッド)
 
-* `Column` を `DataGridColumn` に変更しました。
-* `GridCellEventArgs` を `DataGridCellEventArgs` に変更しました。
-* `GridSelectionMode` を `DataGridSelectionMode` に変更しました。
-* `SummaryOperand` を `DataSourceSummaryOperand` に変更しました。
+* **{IgPrefix}Column** を `DataGridColumn` に変更しました。
+* **GridCellEventArgs** を `DataGridCellEventArgs` に変更しました。
+* **GridSelectionMode** を `DataGridSelectionMode` に変更しました。
+* **SummaryOperand** を `DataSourceSummaryOperand` に変更しました。
 
 ## **{PackageVerChanges-22-1}**
 ### {PackageCharts} (チャート)
