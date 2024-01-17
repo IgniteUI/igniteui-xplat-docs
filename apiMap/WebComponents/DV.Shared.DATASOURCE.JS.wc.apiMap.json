@@ -4,7 +4,7 @@
   {
     "originalName": "FilterExpressionParsingHelper",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "FilterExpressionParsingHelper.ts","mappedName": "FilterExpressionParsingHelper"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
@@ -13,7 +13,7 @@
     "originalName": "FlatDataProviderJoinType",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "FlatDataProviderJoinType.ts","mappedName": "FlatDataProviderJoinType"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -25,7 +25,7 @@
     "originalName": "FlatDataProviderJoinCollisionType",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "FlatDataProviderJoinCollisionType.ts","mappedName": "FlatDataProviderJoinCollisionType"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -38,7 +38,7 @@
   {
     "originalName": "AsyncVirtualDataSourceDataProviderWorkerSettings",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "AsyncVirtualDataSourceDataProviderWorkerSettings.ts","mappedName": "AsyncVirtualDataSourceDataProviderWorkerSettings"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -51,7 +51,7 @@
   {
     "originalName": "AsyncVirtualDataSourceProviderTaskDataHolder",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "AsyncVirtualDataSourceProviderTaskDataHolder.ts","mappedName": "AsyncVirtualDataSourceProviderTaskDataHolder"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
@@ -59,7 +59,7 @@
   {
     "originalName": "AsyncDataSourcePageTaskHolder",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "AsyncDataSourcePageTaskHolder.ts","mappedName": "AsyncDataSourcePageTaskHolder"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -68,7 +68,7 @@
   {
     "originalName": "AsyncDataSourcePageRequest",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "AsyncDataSourcePageRequest.ts","mappedName": "AsyncDataSourcePageRequest"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -84,7 +84,7 @@
   {
     "originalName": "AsyncVirtualDataSourceProviderWorker",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "AsyncVirtualDataSourceProviderWorker.ts","mappedName": "AsyncVirtualDataSourceProviderWorker"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -134,7 +134,7 @@
   {
     "originalName": "FilterFactory",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "FilterFactory.ts","mappedName": "FilterFactory"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -187,7 +187,7 @@
   {
     "originalName": "FilterExpression",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "FilterExpression.ts","mappedName": "FilterExpression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -278,7 +278,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "FilterExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "OperationFilterExpression.ts","mappedName": "OperationFilterExpression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -312,7 +312,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "FilterExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "FunctionFilterExpression.ts","mappedName": "FunctionFilterExpression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -335,7 +335,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "FilterExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "PropertyReferenceFilterExpression.ts","mappedName": "PropertyReferenceFilterExpression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -351,7 +351,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "FilterExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "LiteralFilterExpression.ts","mappedName": "LiteralFilterExpression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -370,7 +370,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "FilterExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "WrapperExpression.ts","mappedName": "WrapperExpression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -393,7 +393,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "TodayExpression.ts","mappedName": "TodayExpression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -406,7 +406,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "TomorrowExpression.ts","mappedName": "TomorrowExpression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -419,7 +419,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "YesterdayExpression.ts","mappedName": "YesterdayExpression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -432,7 +432,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "OffsettableWeekExpression.ts","mappedName": "OffsettableWeekExpression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -445,7 +445,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "OffsettableWeekExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "ThisWeekExpression.ts","mappedName": "ThisWeekExpression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -457,7 +457,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "OffsettableWeekExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "NextWeekExpression.ts","mappedName": "NextWeekExpression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -469,7 +469,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "OffsettableWeekExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "LastWeekExpression.ts","mappedName": "LastWeekExpression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -481,7 +481,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "ThisMonthExpression.ts","mappedName": "ThisMonthExpression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -494,7 +494,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "NextMonthExpression.ts","mappedName": "NextMonthExpression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -507,7 +507,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "LastMonthExpression.ts","mappedName": "LastMonthExpression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -520,7 +520,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "ThisYearExpression.ts","mappedName": "ThisYearExpression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -533,7 +533,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "NextYearExpression.ts","mappedName": "NextYearExpression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -546,7 +546,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "LastYearExpression.ts","mappedName": "LastYearExpression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -559,7 +559,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "YearToDateExpression.ts","mappedName": "YearToDateExpression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -572,7 +572,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "ThisQuarterExpression.ts","mappedName": "ThisQuarterExpression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -585,7 +585,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "NextQuarterExpression.ts","mappedName": "NextQuarterExpression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -598,7 +598,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "LastQuarterExpression.ts","mappedName": "LastQuarterExpression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -611,7 +611,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "Q1Expression.ts","mappedName": "Q1Expression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -624,7 +624,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "Q2Expression.ts","mappedName": "Q2Expression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -637,7 +637,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "Q3Expression.ts","mappedName": "Q3Expression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -650,7 +650,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "Q4Expression.ts","mappedName": "Q4Expression"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -662,7 +662,7 @@
     "originalName": "FilterExpressionFunctionType",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "FilterExpressionFunctionType.ts","mappedName": "FilterExpressionFunctionType"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -696,7 +696,7 @@
     "originalName": "FilterExpressionOperatorType",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "FilterExpressionOperatorType.ts","mappedName": "FilterExpressionOperatorType"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -721,7 +721,7 @@
     "originalName": "FilterExpressionWrapperType",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "FilterExpressionWrapperType.ts","mappedName": "FilterExpressionWrapperType"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -749,7 +749,7 @@
   {
     "originalName": "FilterExpressionCollection",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "igc-filter-expression-collection.ts","mappedName": "IgcFilterExpressionCollection"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "add"}], "originalName": "Add"},
@@ -768,7 +768,7 @@
   {
     "originalName": "FilterExpressionVisitor",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "FilterExpressionVisitor.ts","mappedName": "FilterExpressionVisitor"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -782,7 +782,7 @@
     "originalName": "DataSourceSectionHeaderDisplayMode",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "DataSourceSectionHeaderDisplayMode.ts","mappedName": "DataSourceSectionHeaderDisplayMode"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -792,7 +792,7 @@
   {
     "originalName": "DataSourceAggregatedResult",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "DataSourceAggregatedResult.ts","mappedName": "DataSourceAggregatedResult"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -806,7 +806,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "FilterExpressionVisitor",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "ContainsPropertyDataSourceFilterExpressionVisitor.ts","mappedName": "ContainsPropertyDataSourceFilterExpressionVisitor"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -819,7 +819,7 @@
     "originalName": "DataSourceSummaryScope",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "DataSourceSummaryScope.ts","mappedName": "DataSourceSummaryScope"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -832,7 +832,7 @@
     "originalName": "DataSourceRowType",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "DataSourceRowType.ts","mappedName": "DataSourceRowType"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -849,7 +849,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "igc-data-source-schema-changed-event-args.ts","mappedName": "IgcDataSourceSchemaChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "count"}], "originalName": "Count"},
@@ -860,7 +860,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "igc-data-source-row-expansion-changed-event-args.ts","mappedName": "IgcDataSourceRowExpansionChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "newState"}], "originalName": "NewState"},
@@ -872,7 +872,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "igc-data-source-data-provider-schema-changed-event-args.ts","mappedName": "IgcDataSourceDataProviderSchemaChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "count"}], "originalName": "Count"},
@@ -882,7 +882,7 @@
     "originalName": "DataSourceSchemaPropertyType",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "DataSourceSchemaPropertyType.ts","mappedName": "DataSourceSchemaPropertyType"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -902,7 +902,7 @@
   {
     "originalName": "DefaultDataSourceSchema",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "DefaultDataSourceSchema.ts","mappedName": "DefaultDataSourceSchema"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -921,7 +921,7 @@
     "originalName": "DataSourcePageRequestPriority",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "DataSourcePageRequestPriority.ts","mappedName": "DataSourcePageRequestPriority"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -932,7 +932,7 @@
   {
     "originalName": "ISectionInformation",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "ISectionInformation.ts","mappedName": "ISectionInformation"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "endIndex"}], "originalName": "EndIndex"},
@@ -944,7 +944,7 @@
   {
     "originalName": "IODataLiteralEmitter",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "ODataLiteralEmitter.ts","mappedName": "ODataLiteralEmitter"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "emitLiteral"}], "originalName": "EmitLiteral"} ]
@@ -952,7 +952,7 @@
   {
     "originalName": "DefaultODataLiteralEmitter",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "DefaultODataLiteralEmitter.ts","mappedName": "DefaultODataLiteralEmitter"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -965,7 +965,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "FilterExpressionVisitor",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "ODataDataSourceFilterExpressionVisitor.ts","mappedName": "ODataDataSourceFilterExpressionVisitor"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -984,7 +984,7 @@
   {
     "originalName": "ODataDataSourceSchema",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "ODataDataSourceSchema.ts","mappedName": "ODataDataSourceSchema"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -1002,7 +1002,7 @@
   {
     "originalName": "ISummaryResult",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "ISummaryResult.ts","mappedName": "ISummaryResult"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "any[]",   "mappedName": "groupKey"}], "originalName": "GroupKey"},
@@ -1014,7 +1014,7 @@
   {
     "originalName": "DefaultSummaryResult",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "DefaultSummaryResult.ts","mappedName": "DefaultSummaryResult"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -1034,7 +1034,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "SummaryCalculator",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "SumSummaryCalculator.ts","mappedName": "SumSummaryCalculator"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -1052,7 +1052,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "SummaryCalculator",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "CountSummaryCalculator.ts","mappedName": "CountSummaryCalculator"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -1070,7 +1070,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "SummaryCalculator",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "AverageSummaryCalculator.ts","mappedName": "AverageSummaryCalculator"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -1089,7 +1089,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "SummaryCalculator",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "MaxSummaryCalculator.ts","mappedName": "MaxSummaryCalculator"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -1108,7 +1108,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "SummaryCalculator",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "MinSummaryCalculator.ts","mappedName": "MinSummaryCalculator"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -1125,7 +1125,7 @@
   {
     "originalName": "SummaryCalculator",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "SummaryCalculator.ts","mappedName": "SummaryCalculator"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -1149,7 +1149,7 @@
     "originalName": "DataSourceSummaryOperand",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "DataSourceSummaryOperand.ts","mappedName": "DataSourceSummaryOperand"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -1163,7 +1163,7 @@
   {
     "originalName": "SummaryDescription",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "SummaryDescription.ts","mappedName": "SummaryDescription"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -1187,7 +1187,7 @@
   {
     "originalName": "ProvideCalculatorEventArgs",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "igc-provide-calculator-event-args.ts","mappedName": "IgcProvideCalculatorEventArgs"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "SummaryCalculator","mappedName": "calculator"}], "originalName": "Calculator"} ]
@@ -1195,7 +1195,7 @@
   {
     "originalName": "TransactionState",
     "originalNamespace": "Infragistics.Controls.DataSource.Transactions",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "igc-transaction-state.ts","mappedName": "IgcTransactionState"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "id"}], "originalName": "ID"},
@@ -1207,7 +1207,7 @@
     "originalName": "TransactionType",
     "originalNamespace": "Infragistics.Controls.DataSource.Transactions",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "TransactionType.ts","mappedName": "TransactionType"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -1219,7 +1219,7 @@
     "originalName": "TransactionEvent",
     "originalNamespace": "Infragistics.Controls.DataSource.Transactions",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "TransactionEvent.ts","mappedName": "TransactionEvent"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -1234,7 +1234,7 @@
     "originalName": "TransactionPendingState",
     "originalNamespace": "Infragistics.Controls.DataSource.Transactions",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "TransactionPendingState.ts","mappedName": "TransactionPendingState"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},

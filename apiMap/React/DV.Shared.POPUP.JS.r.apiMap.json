@@ -4,7 +4,7 @@
   {
     "originalName": "Popup",
     "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "React","fileName": "igr-popup.ts","mappedName": "IgrPopup"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "actualAmbientShadowColor"}], "originalName": "ActualAmbientShadowColor"},
@@ -38,7 +38,7 @@
     "originalName": "PopupAlignment",
     "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "React","fileName": "PopupAlignment.ts","mappedName": "PopupAlignment"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -51,7 +51,7 @@
     "originalName": "PopupDirection",
     "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "React","fileName": "PopupDirection.ts","mappedName": "PopupDirection"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -65,7 +65,7 @@
     "originalName": "PopupPointerPosition",
     "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "React","fileName": "PopupPointerPosition.ts","mappedName": "PopupPointerPosition"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -79,7 +79,7 @@
     "originalName": "PopupAnimationType",
     "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "React","fileName": "PopupAnimationType.ts","mappedName": "PopupAnimationType"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -91,7 +91,7 @@
     "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "React","fileName": "igr-on-popup-event-args.ts","mappedName": "IgrOnPopupEventArgs"}]
   },
   {
@@ -99,7 +99,7 @@
     "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "React","fileName": "igr-on-closed-event-args.ts","mappedName": "IgrOnClosedEventArgs"}]
   }]
 }

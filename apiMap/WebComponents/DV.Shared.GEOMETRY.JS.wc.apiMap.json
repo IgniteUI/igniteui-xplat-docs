@@ -2,7 +2,7 @@
   {
     "originalName": "FlattenerSettings",
     "originalNamespace": "Infragistics",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "FlattenerSettings.ts","mappedName": "FlattenerSettings"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
