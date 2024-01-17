@@ -2,16 +2,17 @@
   {
     "originalName": "IDataSeriesAdapterRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Angular","fileName": "IDataSeriesAdapterRule.ts","mappedName": "IDataSeriesAdapterRule"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"} ]
   },
   {
     "originalName": "DataSeriesAdapterRunContext",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Angular","fileName": "DataSeriesAdapterRunContext.ts","mappedName": "DataSeriesAdapterRunContext"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -20,6 +21,7 @@
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "clearDataSeries"}], "originalName": "ClearDataSeries"},
       {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "excludedProperties"}], "originalName": "ExcludedProperties"},
       {"names":[{"platform": "Angular", "mappedType": "IDataSourceLocalDataProvider","mappedName": "getCurrentDataSource"}], "originalName": "GetCurrentDataSource"},
+      {"names":[{"platform": "Angular", "mappedType": "IDataSourceLocalDataProvider","mappedName": "getCurrentHighlightingDataSource"}], "originalName": "GetCurrentHighlightingDataSource"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "getCurrentPath"}], "originalName": "GetCurrentPath"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "getCurrentPathSegment"}], "originalName": "GetCurrentPathSegment"},
       {"names":[{"platform": "Angular", "mappedType": "DataSeries","mappedName": "getDataSeriesAt"}], "originalName": "GetDataSeriesAt"},
@@ -32,11 +34,13 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "localize"}], "originalName": "Localize"},
       {"names":[{"platform": "Angular", "mappedType": "IgxDataSeriesAdapterImplementation","mappedName": "owner"}], "originalName": "Owner"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "popDataSource"}], "originalName": "PopDataSource"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "popHighlightingDataSource"}], "originalName": "PopHighlightingDataSource"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "popParentTitle"}], "originalName": "PopParentTitle"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "popPath"}], "originalName": "PopPath"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "popSubProvider"}], "originalName": "PopSubProvider"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "populateDataSeries"}], "originalName": "PopulateDataSeries"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "pushDataSource"}], "originalName": "PushDataSource"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "pushHighlightingDataSource"}], "originalName": "PushHighlightingDataSource"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "pushParentTitle"}], "originalName": "PushParentTitle"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "pushPath"}], "originalName": "PushPath"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "recurseRules"}], "originalName": "RecurseRules"},
@@ -44,6 +48,7 @@
       {"names":[{"platform": "Angular", "mappedType": "IgxDataSeriesCollection","mappedName": "_dataSeries"}], "originalName": "_dataSeries"},
       {"names":[{"platform": "Angular", "mappedType": "Stack","mappedName": "_dataSources"}], "originalName": "_dataSources"},
       {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "_excludedProeprties"}], "originalName": "_excludedProeprties"},
+      {"names":[{"platform": "Angular", "mappedType": "Stack","mappedName": "_highlightingDataSources"}], "originalName": "_highlightingDataSources"},
       {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "_includedProperties"}], "originalName": "_includedProperties"},
       {"names":[{"platform": "Angular", "mappedType": "Stack","mappedName": "_parentTitles"}], "originalName": "_parentTitles"},
       {"names":[{"platform": "Angular", "mappedType": "Stack","mappedName": "_paths"}], "originalName": "_paths"},
@@ -52,7 +57,7 @@
   {
     "originalName": "DataSeriesDataProviderAnalyzer",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Angular","fileName": "DataSeriesDataProviderAnalyzer.ts","mappedName": "DataSeriesDataProviderAnalyzer"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -116,7 +121,7 @@
   {
     "originalName": "DataSeries",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Angular","fileName": "DataSeries.ts","mappedName": "DataSeries"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -133,6 +138,7 @@
       {"names":[{"platform": "Angular", "mappedType": "DataSeriesMemberPathHint","mappedName": "getMemberPathHintAt"}], "originalName": "GetMemberPathHintAt"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "getMemberPathHintCount"}], "originalName": "GetMemberPathHintCount"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "hasMatchingHint"}], "originalName": "HasMatchingHint"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "highlightedData"}], "originalName": "HighlightedData"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"},
@@ -148,7 +154,7 @@
   {
     "originalName": "DataSeriesMemberPathHint",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Angular","fileName": "DataSeriesMemberPathHint.ts","mappedName": "DataSeriesMemberPathHint"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -165,7 +171,7 @@
     "originalName": "DataSeriesIntent",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Angular","fileName": "DataSeriesIntent.ts","mappedName": "DataSeriesIntent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -200,7 +206,7 @@
     "originalName": "DataSeriesType",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Angular","fileName": "DataSeriesType.ts","mappedName": "DataSeriesType"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -243,7 +249,7 @@
     "originalName": "DataSeriesAxisType",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Angular","fileName": "DataSeriesAxisType.ts","mappedName": "DataSeriesAxisType"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -257,7 +263,7 @@
     "originalName": "DataSeriesMarker",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Angular","fileName": "DataSeriesMarker.ts","mappedName": "DataSeriesMarker"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -279,7 +285,7 @@
   {
     "originalName": "IExternalDataSeriesAdapter",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Angular","fileName": "IExternalDataSeriesAdapter.ts","mappedName": "IExternalDataSeriesAdapter"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IDataSourceLocalDataProvider","mappedName": "getDataProvider"}], "originalName": "GetDataProvider"},
@@ -288,7 +294,7 @@
   {
     "originalName": "SimpleFinancialPriceSeriesRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Angular","fileName": "SimpleFinancialPriceSeriesRule.ts","mappedName": "SimpleFinancialPriceSeriesRule"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -296,17 +302,19 @@
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "except"}], "originalName": "Except"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "getDataSourceTitle"}], "originalName": "GetDataSourceTitle"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"} ]
   },
   {
     "originalName": "SimpleScatterSeriesRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Angular","fileName": "SimpleScatterSeriesRule.ts","mappedName": "SimpleScatterSeriesRule"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "createScatterSeries"}], "originalName": "CreateScatterSeries"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
       {"names":[{"platform": "Angular", "mappedType": "List","mappedName": "getXProps"}], "originalName": "GetXProps"},
       {"names":[{"platform": "Angular", "mappedType": "List","mappedName": "getYProps"}], "originalName": "GetYProps"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isXProp"}], "originalName": "IsXProp"},
@@ -317,24 +325,26 @@
   {
     "originalName": "SubCollectionsRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Angular","fileName": "SubCollectionsRule.ts","mappedName": "SubCollectionsRule"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "collectionTransformationThreshold"}], "originalName": "CollectionTransformationThreshold"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"} ]
   },
   {
     "originalName": "SimpleCategorySeriesRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Angular","fileName": "SimpleCategorySeriesRule.ts","mappedName": "SimpleCategorySeriesRule"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "distinctCheckThreshold"}], "originalName": "DistinctCheckThreshold"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "fallbackTypeIfUnsupported"}], "originalName": "FallbackTypeIfUnsupported"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "useColumnThreshold"}], "originalName": "UseColumnThreshold"} ]
   }]

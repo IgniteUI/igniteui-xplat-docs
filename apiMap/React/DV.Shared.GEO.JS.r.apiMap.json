@@ -7,7 +7,7 @@
   {
     "originalName": "HeatTileGenerator",
     "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "igr-heat-tile-generator.ts","mappedName": "IgrHeatTileGenerator"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "blurRadius"}], "originalName": "BlurRadius"},
@@ -37,7 +37,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "Infragistics.Controls",
     "originalBaseTypeName": "DependencyObjectNotifier",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "igr-shape-data-source.ts","mappedName": "IgrShapeDataSource"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "IgRect",  "mappedName": "computedWorldRect"}], "originalName": "ComputedWorldRect"},
@@ -69,7 +69,7 @@
   {
     "originalName": "ShapeFilterRecordEventArgs",
     "originalNamespace": "Infragistics.Controls.Maps",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "igr-shape-filter-record-event-args.ts","mappedName": "IgrShapeFilterRecordEventArgs"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "IgrShapefileRecord","mappedName": "record"}], "originalName": "Record"},
@@ -80,7 +80,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "System.Windows",
     "originalBaseTypeName": "DependencyObject",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "igr-shapefile-record.ts","mappedName": "IgrShapefileRecord"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "IgRect",  "mappedName": "bounds"}], "originalName": "Bounds"},
@@ -93,7 +93,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "igr-get-tile-image-uri-args.ts","mappedName": "IgrGetTileImageUriArgs"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "tileImageUri"}], "originalName": "TileImageUri"},
@@ -106,7 +106,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "System.Windows",
     "originalBaseTypeName": "DependencyObject",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "igr-triangulation-data-source.ts","mappedName": "IgrTriangulationDataSource"}]
   },
   {
@@ -114,7 +114,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "igr-downloading-multi-scale-image-event-args.ts","mappedName": "IgrDownloadingMultiScaleImageEventArgs"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "uri"}], "originalName": "Uri"} ]
@@ -124,7 +124,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "igr-cancelling-multi-scale-image-event-args.ts","mappedName": "IgrCancellingMultiScaleImageEventArgs"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "uri"}], "originalName": "Uri"} ]
@@ -134,7 +134,7 @@
     "originalNamespace": "Infragistics.Controls.Charts",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "igr-triangulation-status-event-args.ts","mappedName": "IgrTriangulationStatusEventArgs"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "currentStatus"}], "originalName": "CurrentStatus"} ]

@@ -2,7 +2,7 @@
   {
     "originalName": "FlattenerSettings",
     "originalNamespace": "Infragistics",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "FlattenerSettings.cs","mappedName": "FlattenerSettings"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},

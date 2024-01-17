@@ -146,6 +146,8 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getSeriesValueType"}], "originalName": "GetSeriesValueType"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getSeriesValueTypePosition"}], "originalName": "GetSeriesValueTypePosition"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getSeriesValueTypePositionFromValue"}], "originalName": "GetSeriesValueTypePositionFromValue"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "highlightedXMemberPath"}], "originalName": "HighlightedXMemberPath"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "highlightedYMemberPath"}], "originalName": "HighlightedYMemberPath"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isCustomScatterMarkerStyleAllowed"}], "originalName": "IsCustomScatterMarkerStyleAllowed"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isCustomScatterStyleAllowed"}], "originalName": "IsCustomScatterStyleAllowed"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isScatter"}], "originalName": "IsScatter"},

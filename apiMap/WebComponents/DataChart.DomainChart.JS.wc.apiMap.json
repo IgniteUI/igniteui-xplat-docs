@@ -96,6 +96,8 @@
       {"names":[{"platform": "WebComponents", "mappedType": "IgcChartSortDescriptionCollection","mappedName": "groupSortDescriptions"}], "originalName": "GroupSortDescriptions"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "groupSorts"}], "originalName": "GroupSorts"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "hideToolTip"}], "originalName": "HideToolTip"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcFilterExpressionCollection","mappedName": "highlightFilterExpressions"}], "originalName": "HighlightFilterExpressions"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesHighlightedValuesDisplayMode","mappedName": "highlightedValuesDisplayMode"}], "originalName": "HighlightedValuesDisplayMode"},
       {"names":[{"platform": "WebComponents", "mappedType": "SeriesHighlightingBehavior","mappedName": "highlightingBehavior"}], "originalName": "HighlightingBehavior"},
       {"names":[{"platform": "WebComponents", "mappedType": "SeriesHighlightingMode","mappedName": "highlightingMode"}], "originalName": "HighlightingMode"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "horizontalViewScrollbarCornerRadius"}], "originalName": "HorizontalViewScrollbarCornerRadius"},
@@ -111,13 +113,18 @@
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "horizontalViewScrollbarTrackEndInset"}], "originalName": "HorizontalViewScrollbarTrackEndInset"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "horizontalViewScrollbarTrackStartInset"}], "originalName": "HorizontalViewScrollbarTrackStartInset"},
       {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "includedProperties"}], "originalName": "IncludedProperties"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "initialFilter"}], "originalName": "InitialFilter"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcFilterExpressionCollection","mappedName": "initialFilterExpressions"}], "originalName": "InitialFilterExpressions"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcChartSortDescriptionCollection","mappedName": "initialGroupDescriptions"}], "originalName": "InitialGroupDescriptions"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcChartSortDescriptionCollection","mappedName": "initialGroupSortDescriptions"}], "originalName": "InitialGroupSortDescriptions"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "initialGroups"}], "originalName": "InitialGroups"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "initialHighlightFilter"}], "originalName": "InitialHighlightFilter"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcFilterExpressionCollection","mappedName": "initialHighlightFilterExpressions"}], "originalName": "InitialHighlightFilterExpressions"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcChartSortDescriptionCollection","mappedName": "initialSortDescriptions"}], "originalName": "InitialSortDescriptions"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "initialSorts"}], "originalName": "InitialSorts"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "initialSummaries"}], "originalName": "InitialSummaries"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcChartSummaryDescriptionCollection","mappedName": "initialSummaryDescriptions"}], "originalName": "InitialSummaryDescriptions"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isDetached"}], "originalName": "IsDetached"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isHorizontalZoomEnabled"}], "originalName": "IsHorizontalZoomEnabled"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isSeriesHighlightingEnabled"}], "originalName": "IsSeriesHighlightingEnabled"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isVerticalZoomEnabled"}], "originalName": "IsVerticalZoomEnabled"},
@@ -498,5 +505,14 @@
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "item"}], "originalName": "Item"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcSeriesComponent","mappedName": "series"}], "originalName": "Series"} ]
+  },
+  {
+    "originalName": "FilterStringErrorsParsingEventArgs",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "WebComponents","fileName": "igc-filter-string-errors-parsing-event-args.ts","mappedName": "IgcFilterStringErrorsParsingEventArgs"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "errors"}], "originalName": "Errors"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "propertyName"}], "originalName": "PropertyName"} ]
   }]
 }

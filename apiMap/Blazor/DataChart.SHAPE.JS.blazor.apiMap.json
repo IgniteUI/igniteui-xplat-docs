@@ -137,6 +137,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItem"}], "originalName": "GetItem"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemValue"}], "originalName": "GetItemValue"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HighlightedShapeMemberPath"}], "originalName": "HighlightedShapeMemberPath"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsCustomShapeMarkerStyleAllowed"}], "originalName": "IsCustomShapeMarkerStyleAllowed"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsCustomShapeStyleAllowed"}], "originalName": "IsCustomShapeStyleAllowed"},
       {"names":[{"platform": "Blazor", "mappedType": "ShapeItemSearchMode","mappedName": "ItemSearchMode"}], "originalName": "ItemSearchMode"},

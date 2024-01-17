@@ -7,7 +7,7 @@
   {
     "originalName": "HeatTileGenerator",
     "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "WebComponents","fileName": "igc-heat-tile-generator.ts","mappedName": "IgcHeatTileGenerator"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "blurRadius"}], "originalName": "BlurRadius"},
@@ -37,7 +37,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "Infragistics.Controls",
     "originalBaseTypeName": "DependencyObjectNotifier",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "WebComponents","fileName": "igc-shape-data-source.ts","mappedName": "IgcShapeDataSource"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "IgRect",  "mappedName": "computedWorldRect"}], "originalName": "ComputedWorldRect"},
@@ -69,7 +69,7 @@
   {
     "originalName": "ShapeFilterRecordEventArgs",
     "originalNamespace": "Infragistics.Controls.Maps",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "WebComponents","fileName": "igc-shape-filter-record-event-args.ts","mappedName": "IgcShapeFilterRecordEventArgs"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "IgcShapefileRecord","mappedName": "record"}], "originalName": "Record"},
@@ -80,7 +80,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "System.Windows",
     "originalBaseTypeName": "DependencyObject",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "WebComponents","fileName": "igc-shapefile-record.ts","mappedName": "IgcShapefileRecord"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "IgRect",  "mappedName": "bounds"}], "originalName": "Bounds"},
@@ -93,7 +93,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "WebComponents","fileName": "igc-get-tile-image-uri-args.ts","mappedName": "IgcGetTileImageUriArgs"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "tileImageUri"}], "originalName": "TileImageUri"},
@@ -106,7 +106,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "System.Windows",
     "originalBaseTypeName": "DependencyObject",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "WebComponents","fileName": "igc-triangulation-data-source.ts","mappedName": "IgcTriangulationDataSource"}]
   },
   {
@@ -114,7 +114,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "WebComponents","fileName": "igc-downloading-multi-scale-image-event-args.ts","mappedName": "IgcDownloadingMultiScaleImageEventArgs"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "uri"}], "originalName": "Uri"} ]
@@ -124,7 +124,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "WebComponents","fileName": "igc-cancelling-multi-scale-image-event-args.ts","mappedName": "IgcCancellingMultiScaleImageEventArgs"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "uri"}], "originalName": "Uri"} ]
@@ -134,7 +134,7 @@
     "originalNamespace": "Infragistics.Controls.Charts",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "WebComponents","fileName": "igc-triangulation-status-event-args.ts","mappedName": "IgcTriangulationStatusEventArgs"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "currentStatus"}], "originalName": "CurrentStatus"} ]

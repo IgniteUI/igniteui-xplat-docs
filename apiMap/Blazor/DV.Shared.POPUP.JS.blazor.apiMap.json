@@ -2,7 +2,7 @@
   {
     "originalName": "Popup",
     "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "Popup.cs","mappedName": "IgbPopup"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualAmbientShadowColor"}], "originalName": "ActualAmbientShadowColor"},
@@ -20,6 +20,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportSerializedVisualModel"}], "originalName": "ExportSerializedVisualModel"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportVisualModel"}], "originalName": "ExportVisualModel"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsClosing"}], "originalName": "IsClosing"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsFixed"}], "originalName": "IsFixed"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsFocusable"}], "originalName": "IsFocusable"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsHitTestVisible"}], "originalName": "IsHitTestVisible"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsPointerEnabled"}], "originalName": "IsPointerEnabled"},
@@ -27,14 +28,15 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "PointerBackground"}], "originalName": "PointerBackground"},
       {"names":[{"platform": "Blazor", "mappedType": "PopupPointerPosition","mappedName": "PointerPosition"}], "originalName": "PointerPosition"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "PointerSize"}], "originalName": "PointerSize"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ShowRelativeToExclusionRect"}], "originalName": "ShowRelativeToExclusionRect"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ShowRelativeToExclusionRect"}], "originalName": "ShowRelativeToExclusionRect"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "UseTopLayer"}], "originalName": "UseTopLayer"} ]
   },
   {
     "originalName": "OnPopupEventArgs",
     "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "OnPopupEventArgs.cs","mappedName": "IgbOnPopupEventArgs"}]
   },
   {
@@ -42,7 +44,7 @@
     "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "OnClosedEventArgs.cs","mappedName": "IgbOnClosedEventArgs"}]
   }]
 }

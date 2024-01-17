@@ -37,6 +37,8 @@
       {"names":[{"platform": "React", "mappedType": "(time: number) => number","mappedName": "transitionInEasingFunction"}], "originalName": "TransitionInEasingFunction"},
       {"names":[{"platform": "React", "mappedType": "CategoryTransitionInMode","mappedName": "transitionInMode"}], "originalName": "TransitionInMode"},
       {"names":[{"platform": "React", "mappedType": "TransitionInSpeedType","mappedName": "transitionInSpeedType"}], "originalName": "TransitionInSpeedType"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "transitionOutDuration"}], "originalName": "TransitionOutDuration"},
+      {"names":[{"platform": "React", "mappedType": "(time: number) => number","mappedName": "transitionOutEasingFunction"}], "originalName": "TransitionOutEasingFunction"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "xAxisActualMaximum"}], "originalName": "XAxisActualMaximum"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "xAxisActualMinimum"}], "originalName": "XAxisActualMinimum"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "xAxisEnhancedIntervalPreferMoreCategoryLabels"}], "originalName": "XAxisEnhancedIntervalPreferMoreCategoryLabels"},

@@ -2,13 +2,13 @@
   {
     "originalName": "ITileGenerator",
     "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "TileGenerator.cs","mappedName": "IgbTileGenerator"}]
   },
   {
     "originalName": "HeatTileGenerator",
     "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "HeatTileGenerator.cs","mappedName": "IgbHeatTileGenerator"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BlurRadius"}], "originalName": "BlurRadius"},
@@ -37,7 +37,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "Infragistics.Controls",
     "originalBaseTypeName": "DependencyObjectNotifier",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "ShapeDataSource.cs","mappedName": "IgbShapeDataSource"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "Rect","mappedName": "ComputedWorldRect"}], "originalName": "ComputedWorldRect"},
@@ -65,7 +65,7 @@
   {
     "originalName": "ShapeFilterRecordEventArgs",
     "originalNamespace": "Infragistics.Controls.Maps",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "ShapeFilterRecordEventArgs.cs","mappedName": "IgbShapeFilterRecordEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbShapefileRecord","mappedName": "Record"}], "originalName": "Record"},
@@ -76,7 +76,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "System.Windows",
     "originalBaseTypeName": "DependencyObject",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "ShapefileRecord.cs","mappedName": "IgbShapefileRecord"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "Rect","mappedName": "Bounds"}], "originalName": "Bounds"},
@@ -89,7 +89,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "GetTileImageUriArgs.cs","mappedName": "IgbGetTileImageUriArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "TileImageUri"}], "originalName": "TileImageUri"},
@@ -102,7 +102,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "System.Windows",
     "originalBaseTypeName": "DependencyObject",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "TriangulationDataSource.cs","mappedName": "IgbTriangulationDataSource"}]
   },
   {
@@ -110,7 +110,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "DownloadingMultiScaleImageEventArgs.cs","mappedName": "IgbDownloadingMultiScaleImageEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Uri"}], "originalName": "Uri"} ]
@@ -120,7 +120,7 @@
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "CancellingMultiScaleImageEventArgs.cs","mappedName": "IgbCancellingMultiScaleImageEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Uri"}], "originalName": "Uri"} ]
@@ -130,7 +130,7 @@
     "originalNamespace": "Infragistics.Controls.Charts",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "TriangulationStatusEventArgs.cs","mappedName": "IgbTriangulationStatusEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "CurrentStatus"}], "originalName": "CurrentStatus"} ]

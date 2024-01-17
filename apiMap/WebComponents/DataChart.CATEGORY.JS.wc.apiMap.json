@@ -82,6 +82,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getSeriesValueType"}], "originalName": "GetSeriesValueType"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getSeriesValueTypePosition"}], "originalName": "GetSeriesValueTypePosition"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getSeriesValueTypePositionFromValue"}], "originalName": "GetSeriesValueTypePositionFromValue"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "highlightedValueMemberPath"}], "originalName": "HighlightedValueMemberPath"},
       {"names":[{"platform": "WebComponents", "mappedType": "CategorySeriesMarkerCollisionAvoidance","mappedName": "markerCollisionAvoidance"}], "originalName": "MarkerCollisionAvoidance"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "scrollIntoView"}], "originalName": "ScrollIntoView"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "trendLineBrush"}], "originalName": "TrendLineBrush"},

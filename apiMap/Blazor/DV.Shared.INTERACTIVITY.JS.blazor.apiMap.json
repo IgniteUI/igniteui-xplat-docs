@@ -4,7 +4,7 @@
     "originalNamespace": "Infragistics.Controls.Inputs",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "KeyEventArgs.cs","mappedName": "IgbKeyEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Alt"}], "originalName": "Alt"},

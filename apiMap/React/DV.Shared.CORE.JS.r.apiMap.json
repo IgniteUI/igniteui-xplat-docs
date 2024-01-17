@@ -3,7 +3,7 @@
     "originalName": "InterpolationMode",
     "originalNamespace": "Infragistics",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "InterpolationMode.ts","mappedName": "InterpolationMode"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -13,7 +13,7 @@
   {
     "originalName": "EasingFunctions",
     "originalNamespace": "Infragistics",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "EasingFunctions.ts","mappedName": "EasingFunctions"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
@@ -23,7 +23,7 @@
     "originalNamespace": "Infragistics",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "igr-double-value-changed-event-args.ts","mappedName": "IgrDoubleValueChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "newValue"}], "originalName": "NewValue"},
@@ -33,7 +33,7 @@
     "originalName": "ErrorBarCalculatorReference",
     "originalNamespace": "Infragistics",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "ErrorBarCalculatorReference.ts","mappedName": "ErrorBarCalculatorReference"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -44,7 +44,7 @@
     "originalName": "ErrorBarCalculatorType",
     "originalNamespace": "Infragistics",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "ErrorBarCalculatorType.ts","mappedName": "ErrorBarCalculatorType"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -57,7 +57,7 @@
   {
     "originalName": "CaptureImageSettings",
     "originalNamespace": "Infragistics",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "igr-capture-image-settings.ts","mappedName": "IgrCaptureImageSettings"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "addToClipboard"}], "originalName": "AddToClipboard"},
@@ -68,7 +68,7 @@
     "originalNamespace": "Infragistics",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "igr-image-captured-event-args.ts","mappedName": "IgrImageCapturedEventArgs"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "base64Data"}], "originalName": "Base64Data"},
@@ -79,7 +79,7 @@
     "originalName": "CaptureImageFormat",
     "originalNamespace": "Infragistics",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "CaptureImageFormat.ts","mappedName": "CaptureImageFormat"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -89,7 +89,7 @@
   {
     "originalName": "FocusEventArgs",
     "originalNamespace": "Infragistics",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "igr-focus-event-args.ts","mappedName": "IgrFocusEventArgs"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "target"}], "originalName": "Target"} ]
@@ -99,7 +99,7 @@
     "originalNamespace": "Infragistics",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "igr-rect-changed-event-args.ts","mappedName": "IgrRectChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "IgRect",  "mappedName": "newRect"}], "originalName": "NewRect"},
@@ -109,7 +109,7 @@
     "originalName": "InteractionState",
     "originalNamespace": "Infragistics.Controls",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "InteractionState.ts","mappedName": "InteractionState"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -121,7 +121,7 @@
   {
     "originalName": "SvgIconRegistry",
     "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "SvgIconRegistry.ts","mappedName": "SvgIconRegistry"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -132,7 +132,7 @@
   {
     "originalName": "FormatSpecifier",
     "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "igr-format-specifier.ts","dynamicModuleName": "igr-format-specifier-dynamic-module.ts","moduleName": "igr-format-specifier-module.ts","mappedName": "IgrFormatSpecifier"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getLocalCulture"}], "originalName": "GetLocalCulture"} ]
@@ -142,7 +142,7 @@
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
     "originalBaseTypeName": "FormatSpecifier",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "igr-number-format-specifier.ts","dynamicModuleName": "igr-number-format-specifier-dynamic-module.ts","moduleName": "igr-number-format-specifier-module.ts","mappedName": "IgrNumberFormatSpecifier"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "compactDisplay"}], "originalName": "CompactDisplay"},
@@ -170,7 +170,7 @@
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
     "originalBaseTypeName": "FormatSpecifier",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "igr-date-time-format-specifier.ts","dynamicModuleName": "igr-date-time-format-specifier-dynamic-module.ts","moduleName": "igr-date-time-format-specifier-module.ts","mappedName": "IgrDateTimeFormatSpecifier"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "calendar"}], "originalName": "Calendar"},
@@ -198,7 +198,7 @@
   {
     "originalName": "ISyncableObservableCollectionChangedListener",
     "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "SyncableObservableCollectionChangedListener.ts","mappedName": "SyncableObservableCollectionChangedListener"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "onChanged"}], "originalName": "OnChanged"} ]
@@ -206,7 +206,7 @@
   {
     "originalName": "DataContext",
     "originalNamespace": "Infragistics.Controls.Charts",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "igr-data-context.ts","mappedName": "IgrDataContext"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "actualItemBrush"}], "originalName": "ActualItemBrush"},
@@ -221,7 +221,7 @@
     "originalName": "LegendItemBadgeMode",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "LegendItemBadgeMode.ts","mappedName": "LegendItemBadgeMode"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -232,7 +232,7 @@
     "originalName": "LegendItemBadgeShape",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "LegendItemBadgeShape.ts","mappedName": "LegendItemBadgeShape"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -249,7 +249,7 @@
     "originalName": "TrendLineType",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "TrendLineType.ts","mappedName": "TrendLineType"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -272,7 +272,7 @@
     "originalName": "UnknownValuePlotting",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "UnknownValuePlotting.ts","mappedName": "UnknownValuePlotting"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -284,7 +284,7 @@
     "originalNamespace": "Infragistics.Controls.Charts",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "igr-property-updated-event-args.ts","mappedName": "IgrPropertyUpdatedEventArgs"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "newValue"}], "originalName": "NewValue"},
@@ -295,7 +295,7 @@
     "originalName": "DataAbbreviationMode",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "DataAbbreviationMode.ts","mappedName": "DataAbbreviationMode"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -314,7 +314,7 @@
     "originalName": "DataLegendSummaryType",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "DataLegendSummaryType.ts","mappedName": "DataLegendSummaryType"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -329,7 +329,7 @@
     "originalName": "DataLegendUnitsMode",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "DataLegendUnitsMode.ts","mappedName": "DataLegendUnitsMode"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -341,7 +341,7 @@
     "originalName": "DataLegendLabelMode",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "DataLegendLabelMode.ts","mappedName": "DataLegendLabelMode"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -353,7 +353,7 @@
     "originalName": "DataLegendValueMode",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "DataLegendValueMode.ts","mappedName": "DataLegendValueMode"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -365,7 +365,7 @@
     "originalName": "DataLegendHeaderTimeMode",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "DataLegendHeaderTimeMode.ts","mappedName": "DataLegendHeaderTimeMode"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -380,7 +380,7 @@
     "originalName": "DataLegendHeaderDateMode",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "DataLegendHeaderDateMode.ts","mappedName": "DataLegendHeaderDateMode"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -395,7 +395,7 @@
     "originalName": "DataToolTipLayerGroupingMode",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "DataToolTipLayerGroupingMode.ts","mappedName": "DataToolTipLayerGroupingMode"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -407,7 +407,7 @@
     "originalName": "DataTooltipGroupedPositionX",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "DataTooltipGroupedPositionX.ts","mappedName": "DataTooltipGroupedPositionX"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -432,7 +432,7 @@
     "originalName": "DataTooltipGroupedPositionY",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "DataTooltipGroupedPositionY.ts","mappedName": "DataTooltipGroupedPositionY"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -457,7 +457,7 @@
     "originalName": "DataLegendSeriesValueType",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "DataLegendSeriesValueType.ts","mappedName": "DataLegendSeriesValueType"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -482,7 +482,7 @@
     "originalName": "DataLegendSeriesGroup",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "DataLegendSeriesGroup.ts","mappedName": "DataLegendSeriesGroup"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -500,7 +500,7 @@
   {
     "originalName": "DataLegendSeriesContext",
     "originalNamespace": "Infragistics.Controls.Charts",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "igr-data-legend-series-context.ts","mappedName": "IgrDataLegendSeriesContext"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getSeriesValue"}], "originalName": "GetSeriesValue"},
@@ -513,7 +513,7 @@
   {
     "originalName": "DataLegendSeriesValueInfo",
     "originalNamespace": "Infragistics.Controls.Charts",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "igr-data-legend-series-value-info.ts","mappedName": "IgrDataLegendSeriesValueInfo"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "allowLabels"}], "originalName": "AllowLabels"},
@@ -547,7 +547,7 @@
     "originalNamespace": "Infragistics.Controls.Charts",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalBaseTypeName": "DataLegendSeriesValueInfo",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "igr-data-legend-summary-column.ts","mappedName": "IgrDataLegendSummaryColumn"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "addLabel"}], "originalName": "AddLabel"},
@@ -561,7 +561,7 @@
     "originalName": "BaseControlTheme",
     "originalNamespace": "Infragistics.Controls.Theming.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "BaseControlTheme.ts","mappedName": "BaseControlTheme"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -577,7 +577,7 @@
     "originalName": "ElevationMode",
     "originalNamespace": "Infragistics.Controls.Theming.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "ElevationMode.ts","mappedName": "ElevationMode"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -589,7 +589,7 @@
     "originalName": "ControlDisplayDensity",
     "originalNamespace": "Infragistics.Controls.Theming.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "ControlDisplayDensity.ts","mappedName": "ControlDisplayDensity"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -601,7 +601,7 @@
   {
     "originalName": "IToolbarTarget",
     "originalNamespace": "Infragistics.Controls.Toolbar",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "IToolbarTarget.ts","mappedName": "IToolbarTarget"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "addCommandAvailabilityListener"}], "originalName": "AddCommandAvailabilityListener"},
@@ -616,13 +616,13 @@
   {
     "originalName": "ICommandAvailabilityListener",
     "originalNamespace": "Infragistics.Controls.Toolbar",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "ICommandAvailabilityListener.ts","mappedName": "ICommandAvailabilityListener"}]
   },
   {
     "originalName": "ICommandStateChangedListener",
     "originalNamespace": "Infragistics.Controls.Toolbar",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "ICommandStateChangedListener.ts","mappedName": "ICommandStateChangedListener"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "onCommandStateChanged"}], "originalName": "OnCommandStateChanged"} ]
@@ -631,7 +631,7 @@
     "originalName": "ToolActionType",
     "originalNamespace": "Infragistics.Controls.Toolbar",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "ToolActionType.ts","mappedName": "ToolActionType"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -650,7 +650,7 @@
     "originalName": "ToolCommandStateType",
     "originalNamespace": "Infragistics.Controls.Toolbar",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "ToolCommandStateType.ts","mappedName": "ToolCommandStateType"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -662,7 +662,7 @@
     "originalName": "ToolCommandExecutionState",
     "originalNamespace": "Infragistics.Controls.Toolbar",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "ToolCommandExecutionState.ts","mappedName": "ToolCommandExecutionState"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -673,7 +673,7 @@
   {
     "originalName": "ToolActionInfo",
     "originalNamespace": "Infragistics.Controls.Toolbar",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "ToolActionInfo.ts","mappedName": "ToolActionInfo"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -706,7 +706,7 @@
     "originalNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeName": "ToolActionInfo",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "ToolActionCheckboxInfo.ts","mappedName": "ToolActionCheckboxInfo"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -718,7 +718,7 @@
     "originalNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeName": "ToolActionInfo",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "ToolActionRadioInfo.ts","mappedName": "ToolActionRadioInfo"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -731,7 +731,7 @@
     "originalNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeName": "ToolActionInfo",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "ToolActionIconButtonInfo.ts","mappedName": "ToolActionIconButtonInfo"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -744,7 +744,7 @@
     "originalNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeName": "ToolActionInfo",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "ToolActionLabelInfo.ts","mappedName": "ToolActionLabelInfo"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -755,7 +755,7 @@
     "originalNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeName": "ToolActionIconButtonInfo",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "ToolActionIconMenuInfo.ts","mappedName": "ToolActionIconMenuInfo"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -766,7 +766,7 @@
     "originalNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeName": "ToolActionInfo",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "ToolActionNumberInputInfo.ts","mappedName": "ToolActionNumberInputInfo"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -778,7 +778,7 @@
     "originalNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeName": "ToolActionInfo",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "ToolActionSeparatorInfo.ts","mappedName": "ToolActionSeparatorInfo"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -791,7 +791,7 @@
     "originalNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeName": "ToolActionInfo",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "ToolActionGroupHeaderInfo.ts","mappedName": "ToolActionGroupHeaderInfo"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -800,7 +800,7 @@
   {
     "originalName": "ToolCommand",
     "originalNamespace": "Infragistics.Controls.Toolbar",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "ToolCommand.ts","mappedName": "ToolCommand"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -810,7 +810,7 @@
   {
     "originalName": "ToolCommandArgument",
     "originalNamespace": "Infragistics.Controls.Toolbar",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "ToolCommandArgument.ts","mappedName": "ToolCommandArgument"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},

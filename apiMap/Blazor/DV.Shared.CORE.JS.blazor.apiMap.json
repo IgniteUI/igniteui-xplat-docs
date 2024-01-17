@@ -2,7 +2,7 @@
   {
     "originalName": "EasingFunctions",
     "originalNamespace": "Infragistics",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "EasingFunctions.cs","mappedName": "EasingFunctions"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
@@ -12,7 +12,7 @@
     "originalNamespace": "Infragistics",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "DoubleValueChangedEventArgs.cs","mappedName": "IgbDoubleValueChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "NewValue"}], "originalName": "NewValue"},
@@ -22,7 +22,7 @@
     "originalName": "ErrorBarCalculatorReference",
     "originalNamespace": "Infragistics",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "ErrorBarCalculatorReference.cs","mappedName": "ErrorBarCalculatorReference"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -33,7 +33,7 @@
     "originalName": "ErrorBarCalculatorType",
     "originalNamespace": "Infragistics",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "ErrorBarCalculatorType.cs","mappedName": "ErrorBarCalculatorType"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -46,7 +46,7 @@
   {
     "originalName": "CaptureImageSettings",
     "originalNamespace": "Infragistics",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "CaptureImageSettings.cs","mappedName": "IgbCaptureImageSettings"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "AddToClipboard"}], "originalName": "AddToClipboard"},
@@ -57,7 +57,7 @@
     "originalNamespace": "Infragistics",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "ImageCapturedEventArgs.cs","mappedName": "IgbImageCapturedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Base64Data"}], "originalName": "Base64Data"},
@@ -69,7 +69,7 @@
     "originalNamespace": "Infragistics",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "RectChangedEventArgs.cs","mappedName": "IgbRectChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "Rect","mappedName": "NewRect"}], "originalName": "NewRect"},
@@ -78,7 +78,7 @@
   {
     "originalName": "SvgIconRegistry",
     "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "SvgIconRegistry.cs","mappedName": "SvgIconRegistry"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -89,7 +89,7 @@
   {
     "originalName": "FormatSpecifier",
     "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "FormatSpecifier.cs","mappedName": "IgbFormatSpecifier"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetLocalCulture"}], "originalName": "GetLocalCulture"} ]
@@ -99,7 +99,7 @@
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
     "originalBaseTypeName": "FormatSpecifier",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "NumberFormatSpecifier.cs","mappedName": "IgbNumberFormatSpecifier"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "CompactDisplay"}], "originalName": "CompactDisplay"},
@@ -127,7 +127,7 @@
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
     "originalBaseTypeName": "FormatSpecifier",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "DateTimeFormatSpecifier.cs","mappedName": "IgbDateTimeFormatSpecifier"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Calendar"}], "originalName": "Calendar"},
@@ -155,7 +155,7 @@
   {
     "originalName": "ISyncableObservableCollectionChangedListener",
     "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "SyncableObservableCollectionChangedListener.cs","mappedName": "SyncableObservableCollectionChangedListener"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "onChanged"}], "originalName": "OnChanged"} ]
@@ -163,7 +163,7 @@
   {
     "originalName": "DataContext",
     "originalNamespace": "Infragistics.Controls.Charts",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "DataContext.cs","mappedName": "IgbDataContext"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualItemBrush"}], "originalName": "ActualItemBrush"},
@@ -179,7 +179,7 @@
     "originalNamespace": "Infragistics.Controls.Charts",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "PropertyUpdatedEventArgs.cs","mappedName": "IgbPropertyUpdatedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "NewValue"}], "originalName": "NewValue"},
@@ -189,7 +189,7 @@
   {
     "originalName": "DataLegendSeriesContext",
     "originalNamespace": "Infragistics.Controls.Charts",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "DataLegendSeriesContext.cs","mappedName": "IgbDataLegendSeriesContext"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValue"}], "originalName": "GetSeriesValue"},
@@ -202,7 +202,7 @@
   {
     "originalName": "DataLegendSeriesValueInfo",
     "originalNamespace": "Infragistics.Controls.Charts",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "DataLegendSeriesValueInfo.cs","mappedName": "IgbDataLegendSeriesValueInfo"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "AllowLabels"}], "originalName": "AllowLabels"},
@@ -235,7 +235,7 @@
     "originalNamespace": "Infragistics.Controls.Charts",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalBaseTypeName": "DataLegendSeriesValueInfo",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "DataLegendSummaryColumn.cs","mappedName": "IgbDataLegendSummaryColumn"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "AddLabel"}], "originalName": "AddLabel"},
@@ -245,13 +245,13 @@
   {
     "originalName": "ILegendContext",
     "originalNamespace": "Infragistics.Controls.Charts",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "ILegendContext.cs","mappedName": "LegendContext"}]
   },
   {
     "originalName": "ILegendSeries",
     "originalNamespace": "Infragistics.Controls.Charts",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "ILegendSeries.cs","mappedName": "LegendSeries"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ResolveLegendIndex"}], "originalName": "ResolveLegendIndex"} ]
@@ -259,13 +259,13 @@
   {
     "originalName": "ILegendOwner",
     "originalNamespace": "Infragistics.Controls.Charts",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "ILegendOwner.cs","mappedName": "LegendOwner"}]
   },
   {
     "originalName": "IToolbarTarget",
     "originalNamespace": "Infragistics.Controls.Toolbar",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "IToolbarTarget.cs","mappedName": "IToolbarTarget"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "addCommandAvailabilityListener"}], "originalName": "AddCommandAvailabilityListener"},
@@ -280,13 +280,13 @@
   {
     "originalName": "ICommandAvailabilityListener",
     "originalNamespace": "Infragistics.Controls.Toolbar",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "ICommandAvailabilityListener.cs","mappedName": "ICommandAvailabilityListener"}]
   },
   {
     "originalName": "ICommandStateChangedListener",
     "originalNamespace": "Infragistics.Controls.Toolbar",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "ICommandStateChangedListener.cs","mappedName": "ICommandStateChangedListener"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "onCommandStateChanged"}], "originalName": "OnCommandStateChanged"} ]
@@ -294,7 +294,7 @@
   {
     "originalName": "ToolActionInfo",
     "originalNamespace": "Infragistics.Controls.Toolbar",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "ToolActionInfo.cs","mappedName": "IgbToolActionInfo"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbToolActionInfo[]","mappedName": "Actions"}], "originalName": "Actions"},
@@ -324,7 +324,7 @@
     "originalNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeName": "ToolActionInfo",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "ToolActionCheckboxInfo.cs","mappedName": "IgbToolActionCheckboxInfo"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsChecked"}], "originalName": "IsChecked"} ]
@@ -334,7 +334,7 @@
     "originalNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeName": "ToolActionInfo",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "ToolActionRadioInfo.cs","mappedName": "IgbToolActionRadioInfo"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Channel"}], "originalName": "Channel"},
@@ -345,7 +345,7 @@
     "originalNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeName": "ToolActionInfo",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "ToolActionIconButtonInfo.cs","mappedName": "IgbToolActionIconButtonInfo"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsMenuOpenOnStart"}], "originalName": "IsMenuOpenOnStart"},
@@ -356,7 +356,7 @@
     "originalNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeName": "ToolActionInfo",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "ToolActionLabelInfo.cs","mappedName": "IgbToolActionLabelInfo"}]
   },
   {
@@ -364,7 +364,7 @@
     "originalNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeName": "ToolActionIconButtonInfo",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "ToolActionIconMenuInfo.cs","mappedName": "IgbToolActionIconMenuInfo"}]
   },
   {
@@ -372,7 +372,7 @@
     "originalNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeName": "ToolActionInfo",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "ToolActionNumberInputInfo.cs","mappedName": "IgbToolActionNumberInputInfo"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Value"}], "originalName": "Value"} ]
@@ -382,7 +382,7 @@
     "originalNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeName": "ToolActionInfo",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "ToolActionSeparatorInfo.cs","mappedName": "IgbToolActionSeparatorInfo"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsGroupHeaderSeparator"}], "originalName": "IsGroupHeaderSeparator"},
@@ -393,13 +393,13 @@
     "originalNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeName": "ToolActionInfo",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "ToolActionGroupHeaderInfo.cs","mappedName": "IgbToolActionGroupHeaderInfo"}]
   },
   {
     "originalName": "ToolCommand",
     "originalNamespace": "Infragistics.Controls.Toolbar",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "ToolCommand.cs","mappedName": "IgbToolCommand"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbToolCommandArgumentCollection","mappedName": "ArgumentsList"}], "originalName": "ArgumentsList"},
@@ -408,7 +408,7 @@
   {
     "originalName": "ToolCommandArgument",
     "originalNamespace": "Infragistics.Controls.Toolbar",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Blazor","fileName": "ToolCommandArgument.cs","mappedName": "IgbToolCommandArgument"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ArgumentName"}], "originalName": "ArgumentName"},

@@ -137,6 +137,8 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValueMarkerBoundingBox"}], "originalName": "GetSeriesValueMarkerBoundingBox"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValueType"}], "originalName": "GetSeriesValueType"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HighlightedXMemberPath"}], "originalName": "HighlightedXMemberPath"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HighlightedYMemberPath"}], "originalName": "HighlightedYMemberPath"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsCustomScatterMarkerStyleAllowed"}], "originalName": "IsCustomScatterMarkerStyleAllowed"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsCustomScatterStyleAllowed"}], "originalName": "IsCustomScatterStyleAllowed"},
       {"names":[{"platform": "Blazor", "mappedType": "ScatterItemSearchMode","mappedName": "ItemSearchMode"}], "originalName": "ItemSearchMode"},

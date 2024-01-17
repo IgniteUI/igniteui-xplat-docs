@@ -9,7 +9,7 @@
     "originalNamespace": "Infragistics.Controls.Inputs",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "igr-key-event-args.ts","mappedName": "IgrKeyEventArgs"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "alt"}], "originalName": "Alt"},
@@ -25,7 +25,7 @@
     "originalName": "MouseButton",
     "originalNamespace": "Infragistics.Controls.Inputs",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "React","fileName": "MouseButton.ts","mappedName": "MouseButton"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},

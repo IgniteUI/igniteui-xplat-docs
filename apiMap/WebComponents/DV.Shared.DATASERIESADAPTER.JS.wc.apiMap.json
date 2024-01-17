@@ -2,16 +2,17 @@
   {
     "originalName": "IDataSeriesAdapterRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "WebComponents","fileName": "IDataSeriesAdapterRule.ts","mappedName": "IDataSeriesAdapterRule"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"} ]
   },
   {
     "originalName": "DataSeriesAdapterRunContext",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "WebComponents","fileName": "DataSeriesAdapterRunContext.ts","mappedName": "DataSeriesAdapterRunContext"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -20,6 +21,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "clearDataSeries"}], "originalName": "ClearDataSeries"},
       {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "excludedProperties"}], "originalName": "ExcludedProperties"},
       {"names":[{"platform": "WebComponents", "mappedType": "IDataSourceLocalDataProvider","mappedName": "getCurrentDataSource"}], "originalName": "GetCurrentDataSource"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IDataSourceLocalDataProvider","mappedName": "getCurrentHighlightingDataSource"}], "originalName": "GetCurrentHighlightingDataSource"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "getCurrentPath"}], "originalName": "GetCurrentPath"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "getCurrentPathSegment"}], "originalName": "GetCurrentPathSegment"},
       {"names":[{"platform": "WebComponents", "mappedType": "DataSeries","mappedName": "getDataSeriesAt"}], "originalName": "GetDataSeriesAt"},
@@ -32,11 +34,13 @@
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "localize"}], "originalName": "Localize"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcDataSeriesAdapterImplementation","mappedName": "owner"}], "originalName": "Owner"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "popDataSource"}], "originalName": "PopDataSource"},
+      {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "popHighlightingDataSource"}], "originalName": "PopHighlightingDataSource"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "popParentTitle"}], "originalName": "PopParentTitle"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "popPath"}], "originalName": "PopPath"},
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "popSubProvider"}], "originalName": "PopSubProvider"},
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "populateDataSeries"}], "originalName": "PopulateDataSeries"},
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "pushDataSource"}], "originalName": "PushDataSource"},
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "pushHighlightingDataSource"}], "originalName": "PushHighlightingDataSource"},
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "pushParentTitle"}], "originalName": "PushParentTitle"},
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "pushPath"}], "originalName": "PushPath"},
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "recurseRules"}], "originalName": "RecurseRules"},
@@ -44,6 +48,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "IgcDataSeriesCollection","mappedName": "_dataSeries"}], "originalName": "_dataSeries"},
       {"names":[{"platform": "WebComponents", "mappedType": "Stack","mappedName": "_dataSources"}], "originalName": "_dataSources"},
       {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "_excludedProeprties"}], "originalName": "_excludedProeprties"},
+      {"names":[{"platform": "WebComponents", "mappedType": "Stack","mappedName": "_highlightingDataSources"}], "originalName": "_highlightingDataSources"},
       {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "_includedProperties"}], "originalName": "_includedProperties"},
       {"names":[{"platform": "WebComponents", "mappedType": "Stack","mappedName": "_parentTitles"}], "originalName": "_parentTitles"},
       {"names":[{"platform": "WebComponents", "mappedType": "Stack","mappedName": "_paths"}], "originalName": "_paths"},
@@ -52,7 +57,7 @@
   {
     "originalName": "DataSeriesDataProviderAnalyzer",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "WebComponents","fileName": "DataSeriesDataProviderAnalyzer.ts","mappedName": "DataSeriesDataProviderAnalyzer"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -116,7 +121,7 @@
   {
     "originalName": "DataSeries",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "WebComponents","fileName": "DataSeries.ts","mappedName": "DataSeries"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -133,6 +138,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesMemberPathHint","mappedName": "getMemberPathHintAt"}], "originalName": "GetMemberPathHintAt"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "getMemberPathHintCount"}], "originalName": "GetMemberPathHintCount"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "hasMatchingHint"}], "originalName": "HasMatchingHint"},
+      {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "highlightedData"}], "originalName": "HighlightedData"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"},
@@ -148,7 +154,7 @@
   {
     "originalName": "DataSeriesMemberPathHint",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "WebComponents","fileName": "DataSeriesMemberPathHint.ts","mappedName": "DataSeriesMemberPathHint"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -165,7 +171,7 @@
     "originalName": "DataSeriesIntent",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "WebComponents","fileName": "DataSeriesIntent.ts","mappedName": "DataSeriesIntent"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -200,7 +206,7 @@
     "originalName": "DataSeriesType",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "WebComponents","fileName": "DataSeriesType.ts","mappedName": "DataSeriesType"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -243,7 +249,7 @@
     "originalName": "DataSeriesAxisType",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "WebComponents","fileName": "DataSeriesAxisType.ts","mappedName": "DataSeriesAxisType"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -257,7 +263,7 @@
     "originalName": "DataSeriesMarker",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "WebComponents","fileName": "DataSeriesMarker.ts","mappedName": "DataSeriesMarker"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -279,7 +285,7 @@
   {
     "originalName": "IExternalDataSeriesAdapter",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "WebComponents","fileName": "IExternalDataSeriesAdapter.ts","mappedName": "IExternalDataSeriesAdapter"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "IDataSourceLocalDataProvider","mappedName": "getDataProvider"}], "originalName": "GetDataProvider"},
@@ -288,7 +294,7 @@
   {
     "originalName": "SimpleFinancialPriceSeriesRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "WebComponents","fileName": "SimpleFinancialPriceSeriesRule.ts","mappedName": "SimpleFinancialPriceSeriesRule"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -296,17 +302,19 @@
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "except"}], "originalName": "Except"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "getDataSourceTitle"}], "originalName": "GetDataSourceTitle"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"} ]
   },
   {
     "originalName": "SimpleScatterSeriesRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "WebComponents","fileName": "SimpleScatterSeriesRule.ts","mappedName": "SimpleScatterSeriesRule"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "createScatterSeries"}], "originalName": "CreateScatterSeries"},
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
       {"names":[{"platform": "WebComponents", "mappedType": "List","mappedName": "getXProps"}], "originalName": "GetXProps"},
       {"names":[{"platform": "WebComponents", "mappedType": "List","mappedName": "getYProps"}], "originalName": "GetYProps"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isXProp"}], "originalName": "IsXProp"},
@@ -317,24 +325,26 @@
   {
     "originalName": "SubCollectionsRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "WebComponents","fileName": "SubCollectionsRule.ts","mappedName": "SubCollectionsRule"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "collectionTransformationThreshold"}], "originalName": "CollectionTransformationThreshold"},
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"} ]
   },
   {
     "originalName": "SimpleCategorySeriesRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "WebComponents","fileName": "SimpleCategorySeriesRule.ts","mappedName": "SimpleCategorySeriesRule"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "distinctCheckThreshold"}], "originalName": "DistinctCheckThreshold"},
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "fallbackTypeIfUnsupported"}], "originalName": "FallbackTypeIfUnsupported"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "useColumnThreshold"}], "originalName": "UseColumnThreshold"} ]
   }]

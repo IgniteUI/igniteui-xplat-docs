@@ -3,7 +3,7 @@
     "originalName": "ScrollbarStyle",
     "originalNamespace": "Infragistics.Controls.Navigation",
     "isEnum":true,
-    "packageName": "igniteui-core",
+    "packageName": "undefined",
     "names":[{"platform": "Angular","fileName": "ScrollbarStyle.ts","mappedName": "ScrollbarStyle"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
