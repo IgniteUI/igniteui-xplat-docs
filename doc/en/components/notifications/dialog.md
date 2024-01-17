@@ -28,6 +28,12 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
+```ts
+import { defineComponents, IgcDialogComponent } from 'igniteui-webcomponents';
+
+defineComponents(IgcDialogComponent);
+```
+
 <!-- React -->
 
 First, you need to the install the corresponding {ProductName} npm package by running the following command:
@@ -46,12 +52,6 @@ IgrDialogModule.register();
 ```
 
 <!-- end: React -->
-
-```ts
-import { defineComponents, IgcDialogComponent } from 'igniteui-webcomponents';
-
-defineComponents(IgcDialogComponent);
-```
 
 For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
