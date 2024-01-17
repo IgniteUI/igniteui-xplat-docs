@@ -47,7 +47,7 @@
   },
   "keywords": [],
   "author": "infragistics",
-  "repository": "http://tfs.infragistics.local:8080/tfs/Engineering/IgInternalApplicationsGit/_git/xplat-docfx",
+  "repository": "https://github.com/IgniteUI/igniteui-xplat-docs",
   "license": "ISC",
   "dependencies": {
     "es6-shim": "^0.35.3",

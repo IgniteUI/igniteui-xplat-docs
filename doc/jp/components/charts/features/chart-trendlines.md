@@ -17,7 +17,7 @@ _language: ja
 
 # {Platform} チャート トレンドラインの例
 
-次のサンプルは、`QuinticFit` トレンドラインが最初に適用された、2013 年から 2017 年までの Microsoft の株価トレンドを示す `FinancialChart` を示しています。適用されるトレンドラインのタイプを変更できるドロップダウンがあり、可能なすべてのトレンドライン タイプがそのドロップダウン内に一覧表示されます。
+次のサンプルは、**QuinticFit** トレンドラインが最初に適用された、2013 年から 2017 年までの Microsoft の株価トレンドを示す `FinancialChart` を示しています。適用されるトレンドラインのタイプを変更できるドロップダウンがあり、可能なすべてのトレンドライン タイプがそのドロップダウン内に一覧表示されます。
 
 `sample="/charts/financial-chart/trendlines", height="500", alt="{Platform} トレンドラインの例"`
 
@@ -26,7 +26,7 @@ _language: ja
 
 # {Platform} チャート トレンドラインのダッシュ配列の例
 
-次のサンプルは、`TrendLineDashArray` プロパティを介して適用された `QuarticFit` 破線トレンドラインを持つ `FinancialPriceSeries` を示す `XamDataChart` を示しています。
+次のサンプルは、`TrendLineDashArray` プロパティを介して適用された **QuarticFit** 破線トレンドラインを持つ `FinancialPriceSeries` を示す `XamDataChart` を示しています。
 
 `sample="/charts/data-chart/dash-array-trendline", height="500", alt="{Platform} トレンドラインの例"`
 
@@ -44,15 +44,15 @@ _language: ja
 
 `CategoryChart` コンポーネントと `FinancialChart` コンポーネントは、次の API プロパティを共有します:
 
-- `TrendLineBrushes`
-- `TrendLinePeriod`
-- `TrendLineThickness`
-- `TrendLineType`
+- `DomainChart.TrendLineBrushes`
+- `DomainChart.TrendLinePeriod`
+- `DomainChart.TrendLineThickness`
+- `DomainChart.TrendLineType`
 
 `XamDataChart` コンポーネントでは、シリーズのほとんどのタイプに次の API プロパティがあります:
 
-- `TrendLineBrush`
-- `TrendLineDashArray`
-- `TrendLinePeriod`
-- `TrendLineThickness`
-- `TrendLineType`
+- `ScatterBase.TrendLineBrush`
+- `ScatterBase.TrendLineDashArray`
+- `ScatterBase.TrendLinePeriod`
+- `ScatterBase.TrendLineThickness`
+- `ScatterBase.TrendLineType`

@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in React documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "React",
-  "samplesCount": 514,
+  "samplesCount": 579,
   "samplesHost": "https://staging.infragistics.com/react-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -39,6 +39,9 @@
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/axis-titles": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-axis-options"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/chart-highlight-filter": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-highlight-filter"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/column-chart-multiple-sources": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-overview",
@@ -168,6 +171,12 @@
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/callout-layer-styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-annotations"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/chart-highlight-filter": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-highlight-filter"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/chart-highlight-filter-multiple-series": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-highlight-filter"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/chart-navigation": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/chart-features",
@@ -447,6 +456,9 @@
     "https://staging.infragistics.com/react-demos/samples/samples/charts/toolbar/layout-actions-for-data-chart": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/menus/toolbar"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/toolbar/layout-in-vertical-orientation": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/menus/toolbar"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/charts/tree-map/layout": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/treemap-chart"
     ],
@@ -595,9 +607,6 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/binding-local-data": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/local-data"
     ],
-    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/binding-remote-data": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/remote-data"
-    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/cell-activation": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/cell-activation"
     ],
@@ -662,8 +671,7 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/localization"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/overview": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/overview",
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grids"
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/overview"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/pager": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/row-paging"
@@ -689,18 +697,6 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/type-comparison-table": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/type-comparison-table"
     ],
-    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/type-heatmap-table": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/type-heatmap-table"
-    ],
-    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/type-marketing-table": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grids"
-    ],
-    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/type-matrix-table": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/type-matrix-table"
-    ],
-    "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/type-periodic-table": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/type-periodic-table"
-    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-cascading-combo": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cascading-combos"
     ],
@@ -710,23 +706,44 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/advanced-filtering-options": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/advanced-filtering"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/advanced-filtering-style": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/advanced-filtering"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/binding-composite-data": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/binding-nested-data-1": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-editing-sample": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-editing"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-editing-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-editing"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-selection-mode": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-selection",
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/selection"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-selection-style": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-selection"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/clipboard-operations": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/clipboard-interactions"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-auto-sizing": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-resizing"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-collapsible-groups": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/collapsible-column-groups"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-data-types": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-types"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-hiding-toolbar": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-hiding"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-hiding-toolbar-style": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-hiding"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-moving-options": [
@@ -744,16 +761,22 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-pinning-right-side": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-pinning"
     ],
-    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-resizing": [
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-pinning-styles": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-pinning"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-resize-styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-resizing"
     ],
-    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-resizing-styling": [
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-resizing": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-resizing"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-selection-group": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-selection"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-selection-mode": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-selection"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-selection-styles": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-selection"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-sorting-indicators": [
@@ -789,6 +812,9 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/data-summary-template": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/summaries"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/editing-columns": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-editing"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/editing-events": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-editing"
     ],
@@ -810,11 +836,20 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/excel-style-filtering-sample-3": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/excel-style-filtering"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/excel-style-filtering-style": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/excel-style-filtering"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/filtering-options": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/filtering"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/filtering-style": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/filtering"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/finjs": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/live-data"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/groupby-custom": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/groupby"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/groupby-expressions": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/groupby"
@@ -822,7 +857,13 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/groupby-paging": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/groupby"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/groupby-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/groupby"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/groupby-summary-options": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/summaries"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/groupby-summary-styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/summaries"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/infinite-scroll": [
@@ -834,6 +875,9 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/keyboard-mrl-navigation": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/multi-row-layout"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/keyboard-navigation-guide": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/keyboard-navigation"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/layout-display-density": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/display-density"
     ],
@@ -843,17 +887,22 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/multi-cell-selection-mode": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-selection"
     ],
-    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/multi-column-header-template": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/collapsible-column-groups",
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/multi-column-headers"
-    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/multi-column-headers-export": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/export-excel"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/multi-column-headers-overview": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/multi-column-headers"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/multi-column-headers-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/multi-column-headers"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/multi-column-headers-template": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/multi-column-headers"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/multi-row-layout-options": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/multi-row-layout"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/multi-row-layout-style": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/multi-row-layout"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/overview": [
@@ -887,6 +936,9 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/row-pinning-options": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/row-pinning"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/row-pinning-style": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/row-pinning"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/row-reorder": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/row-drag"
     ],
@@ -902,6 +954,9 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/row-styles": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/conditional-cell-styling"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/state-persistence-main": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/state-persistence"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/toolbar-sample-1": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/toolbar"
     ],
@@ -911,20 +966,44 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/toolbar-sample-3": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/toolbar"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/toolbar-style": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/toolbar"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/action-strip": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/row-actions"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/advanced-filtering-options": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/advanced-filtering"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/advanced-filtering-style": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/advanced-filtering"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-editing-sample": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/cell-editing"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-editing-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/cell-editing"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-selection-mode": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/cell-selection",
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/selection"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-selection-style": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/cell-selection"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/clipboard-operations": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/clipboard-interactions"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-auto-sizing": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/column-resizing"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-collapsible-groups": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/collapsible-column-groups"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-hiding-toolbar": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/column-hiding"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-hiding-toolbar-style": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/column-hiding"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-moving-options": [
@@ -942,10 +1021,13 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-pinning-right-side": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/column-pinning"
     ],
-    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-resizing": [
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-pinning-styles": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/column-pinning"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-resize-styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/column-resizing"
     ],
-    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-resizing-styling": [
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-resizing": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/column-resizing"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-selection-group": [
@@ -953,6 +1035,12 @@
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-selection-mode": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/column-selection"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-selection-styles": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/column-selection"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-sorting-indicators": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/sorting"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-sorting-options": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/sorting"
@@ -978,6 +1066,9 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/data-summary-template": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/summaries"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/editing-columns": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/cell-editing"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/editing-events": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/cell-editing"
     ],
@@ -996,8 +1087,17 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/excel-style-filtering-sample-3": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/excel-style-filtering"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/excel-style-filtering-style": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/excel-style-filtering"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/filtering-options": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/filtering"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/filtering-style": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/filtering"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/groupby-summary-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/summaries"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/keyboard-custom-navigation": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/keyboard-navigation"
@@ -1005,12 +1105,11 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/keyboard-mrl-navigation": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/multi-row-layout"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/keyboard-navigation-guide": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/keyboard-navigation"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/layout-display-density": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/display-density"
-    ],
-    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/multi-column-header-template": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/collapsible-column-groups",
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/multi-column-headers"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/multi-column-headers-export": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/export-excel"
@@ -1018,7 +1117,16 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/multi-column-headers-overview": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/multi-column-headers"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/multi-column-headers-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/multi-column-headers"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/multi-column-headers-template": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/multi-column-headers"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/multi-row-layout-options": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/multi-row-layout"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/multi-row-layout-style": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/multi-row-layout"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/row-adding": [
@@ -1048,6 +1156,9 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/row-pinning-options": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/row-pinning"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/row-pinning-style": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/row-pinning"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/row-reorder": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/row-drag"
     ],
@@ -1060,6 +1171,9 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/row-styles": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/conditional-cell-styling"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/state-persistence-main": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/state-persistence"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/toolbar-sample-1": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/toolbar"
     ],
@@ -1067,6 +1181,9 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/toolbar"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/toolbar-sample-3": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/toolbar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/toolbar-style": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/toolbar"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/list/add-list-items": [
@@ -1084,8 +1201,14 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/cell-selection-mode": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/pivot-grid/selection"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/clipboard-operations": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/pivot-grid/clipboard-interactions"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/conditional-row-selectors": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/pivot-grid/row-selection"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/data-persistence-noop": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/pivot-grid/state-persistence"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/excel-style-filtering-sample-1": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/pivot-grid/excel-style-filtering"
@@ -1094,6 +1217,9 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/pivot-grid/excel-style-filtering"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/excel-style-filtering-sample-3": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/pivot-grid/excel-style-filtering"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/excel-style-filtering-style": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/pivot-grid/excel-style-filtering"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/row-editing-options": [
@@ -1108,20 +1234,44 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/row-selection-template-numbers": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/pivot-grid/row-selection"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/state-persistence-main": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/pivot-grid/state-persistence"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/action-strip": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/row-actions"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/advanced-filtering-options": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/advanced-filtering"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/advanced-filtering-style": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/advanced-filtering"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-editing-sample": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/cell-editing"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-editing-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/cell-editing"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-selection-mode": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/cell-selection",
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/selection"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-selection-style": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/cell-selection"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/clipboard-operations": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/clipboard-interactions"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-auto-sizing": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/column-resizing"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-collapsible-groups": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/collapsible-column-groups"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-hiding-toolbar": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/column-hiding"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-hiding-toolbar-style": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/column-hiding"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-moving-options": [
@@ -1139,10 +1289,13 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-pinning-right-side": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/column-pinning"
     ],
-    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-resizing": [
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-pinning-styles": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/column-pinning"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-resize-styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/column-resizing"
     ],
-    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-resizing-styling": [
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-resizing": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/column-resizing"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-selection-group": [
@@ -1150,6 +1303,12 @@
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-selection-mode": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/column-selection"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-selection-styles": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/column-selection"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-sorting-indicators": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/sorting"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-sorting-options": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/sorting"
@@ -1181,6 +1340,9 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/data-summary-template": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/summaries"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/editing-columns": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/cell-editing"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/editing-events": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/cell-editing"
     ],
@@ -1199,14 +1361,20 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/excel-style-filtering-sample-3": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/excel-style-filtering"
     ],
-    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/filter-view": [
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/excel-style-filtering-style": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/excel-style-filtering"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/filtering-options": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/filtering"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/filtering-style": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/filtering"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/finjs": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/live-data"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/groupby-summary-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/summaries"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/keyboard-custom-navigation": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/keyboard-navigation"
@@ -1214,15 +1382,14 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/keyboard-mrl-navigation": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/multi-row-layout"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/keyboard-navigation-guide": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/keyboard-navigation"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/layout-display-density": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/display-density"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/multi-cell-selection-mode": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/cell-selection"
-    ],
-    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/multi-column-header-template": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/collapsible-column-groups",
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/multi-column-headers"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/multi-column-headers-export": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/export-excel"
@@ -1230,7 +1397,16 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/multi-column-headers-overview": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/multi-column-headers"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/multi-column-headers-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/multi-column-headers"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/multi-column-headers-template": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/multi-column-headers"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/multi-row-layout-options": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/multi-row-layout"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/multi-row-layout-style": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/multi-row-layout"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/row-adding": [
@@ -1260,6 +1436,9 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/row-pinning-options": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/row-pinning"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/row-pinning-style": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/row-pinning"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/row-reorder": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/row-drag"
     ],
@@ -1272,6 +1451,9 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/row-styles": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/conditional-cell-styling"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/state-persistence-main": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/state-persistence"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/toolbar-sample-1": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/toolbar"
     ],
@@ -1279,6 +1461,9 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/toolbar"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/toolbar-sample-3": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/toolbar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/toolbar-style": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/toolbar"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree/basic-example": [
@@ -1467,10 +1652,16 @@
     "https://staging.infragistics.com/react-demos/samples/samples/layouts/card/styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/card"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/dock-manager/customize-buttons": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/dock-manager"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/layouts/dock-manager/embedding-frames": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/dock-manager-embedding-frames"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/layouts/dock-manager/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/dock-manager"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/dock-manager/styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/dock-manager"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/layouts/dock-manager/updating-panes": [
@@ -1613,7 +1804,7 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
     ]
   },
-  "topicsCount": 265,
+  "topicsCount": 270,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-react/react/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -1710,6 +1901,11 @@
       "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/data-tooltip",
       "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/data-tooltip-formatting-currency",
       "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/data-tooltip-styling-props"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-highlight-filter": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/chart-highlight-filter",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/chart-highlight-filter",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/chart-highlight-filter-multiple-series"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-highlighting": [
       "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/column-chart-with-highlighting"
@@ -2050,9 +2246,6 @@
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/performance": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/performance"
     ],
-    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/remote-data": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/binding-remote-data"
-    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/row-grouping": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/row-group-descriptions",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/row-grouping"
@@ -2069,37 +2262,37 @@
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/type-comparison-table": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/type-comparison-table"
     ],
-    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/type-heatmap-table": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/type-heatmap-table"
-    ],
-    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/type-matrix-table": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/type-matrix-table"
-    ],
-    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/type-periodic-table": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/type-periodic-table"
-    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/type-sparkline-table": [
       "https://staging.infragistics.com/react-demos/samples/samples/charts/sparkline/grid"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/advanced-filtering": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/advanced-filtering-options"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/advanced-filtering-options",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/advanced-filtering-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cascading-combos": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-cascading-combo"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-editing": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-editing-sample",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-editing-styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/editing-columns",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/editing-events",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/editing-excel-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-selection": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-selection-mode",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-selection-style",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/multi-cell-selection-mode"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/clipboard-interactions": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/clipboard-operations"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/collapsible-column-groups": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/multi-column-header-template"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-collapsible-groups"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-hiding": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-hiding-toolbar"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-hiding-toolbar",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-hiding-toolbar-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-moving": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-moving-options",
@@ -2108,16 +2301,18 @@
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-pinning": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-pinning",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-pinning-options",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-pinning-right-side"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-pinning-right-side",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-pinning-styles"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-resizing": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-auto-sizing",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-resizing",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-resizing-styling"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-resize-styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-resizing"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-selection": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-selection-group",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-selection-mode"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-selection-mode",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-selection-styles"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-types": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-data-types"
@@ -2137,21 +2332,26 @@
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/excel-style-filtering": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/excel-style-filtering-sample-1",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/excel-style-filtering-sample-2",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/excel-style-filtering-sample-3"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/excel-style-filtering-sample-3",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/excel-style-filtering-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/export-excel": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/excel-exporting",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/multi-column-headers-export"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/filtering": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/filtering-options"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/filtering-options",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/filtering-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/groupby": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/groupby-custom",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/groupby-expressions",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/groupby-paging"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/groupby-paging",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/groupby-styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/keyboard-navigation": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/keyboard-custom-navigation"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/keyboard-custom-navigation",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/keyboard-navigation-guide"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/live-data": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/finjs"
@@ -2160,12 +2360,14 @@
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/master-detail"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/multi-column-headers": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/multi-column-header-template",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/multi-column-headers-overview"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/multi-column-headers-overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/multi-column-headers-styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/multi-column-headers-template"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/multi-row-layout": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/keyboard-mrl-navigation",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/multi-row-layout-options"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/multi-row-layout-options",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/multi-row-layout-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/paging": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/row-paging-basic",
@@ -2190,7 +2392,8 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/row-pinning": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/row-pinning-extra-column",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/row-pinning-options"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/row-pinning-options",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/row-pinning-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/row-selection": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/conditional-row-selectors",
@@ -2210,40 +2413,50 @@
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-sorting-options",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-sorting-style"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/state-persistence": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/state-persistence-main"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/summaries": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/data-summary-options",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/data-summary-template",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/groupby-summary-options"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/groupby-summary-options",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/groupby-summary-styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/toolbar": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/toolbar-sample-1",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/toolbar-sample-2",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/toolbar-sample-3"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/toolbar-sample-3",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/toolbar-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/virtualization": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/data-performance-virtualization"
-    ],
-    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grids": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/overview",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/type-marketing-table"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grids-header": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/overview"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/advanced-filtering": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/advanced-filtering-options"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/advanced-filtering-options",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/advanced-filtering-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/cell-editing": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-editing-sample",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-editing-styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/editing-columns",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/editing-events"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/cell-selection": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-selection-mode"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-selection-mode",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-selection-style"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/clipboard-interactions": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/clipboard-operations"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/collapsible-column-groups": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/multi-column-header-template"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-collapsible-groups"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/column-hiding": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-hiding-toolbar"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-hiding-toolbar",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-hiding-toolbar-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/column-moving": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-moving-options",
@@ -2252,16 +2465,18 @@
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/column-pinning": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-pinning",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-pinning-options",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-pinning-right-side"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-pinning-right-side",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-pinning-styles"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/column-resizing": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-auto-sizing",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-resizing",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-resizing-styling"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-resize-styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-resizing"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/column-selection": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-selection-group",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-selection-mode"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-selection-mode",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-selection-styles"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/conditional-cell-styling": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/conditional-cell-style-1",
@@ -2278,25 +2493,30 @@
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/excel-style-filtering": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/excel-style-filtering-sample-1",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/excel-style-filtering-sample-2",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/excel-style-filtering-sample-3"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/excel-style-filtering-sample-3",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/excel-style-filtering-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/export-excel": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/excel-exporting",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/multi-column-headers-export"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/filtering": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/filtering-options"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/filtering-options",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/filtering-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/keyboard-navigation": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/keyboard-custom-navigation"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/keyboard-custom-navigation",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/keyboard-navigation-guide"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/multi-column-headers": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/multi-column-header-template",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/multi-column-headers-overview"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/multi-column-headers-overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/multi-column-headers-styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/multi-column-headers-template"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/multi-row-layout": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/keyboard-mrl-navigation",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/multi-row-layout-options"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/multi-row-layout-options",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/multi-row-layout-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/paging": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/row-paging-basic",
@@ -2318,7 +2538,8 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/row-pinning": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/row-pinning-extra-column",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/row-pinning-options"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/row-pinning-options",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/row-pinning-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/row-selection": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/conditional-row-selectors",
@@ -2329,17 +2550,23 @@
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-selection-mode"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/sorting": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-sorting-indicators",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-sorting-options",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-sorting-style"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/state-persistence": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/state-persistence-main"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/summaries": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/data-summary-options",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/data-summary-template"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/data-summary-template",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/groupby-summary-styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/toolbar": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/toolbar-sample-1",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/toolbar-sample-2",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/toolbar-sample-3"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/toolbar-sample-3",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/toolbar-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/virtualization": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/data-performance-virtualization"
@@ -2350,10 +2577,14 @@
       "https://staging.infragistics.com/react-demos/samples/samples/grids/list/overview",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/list/styling"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/pivot-grid/clipboard-interactions": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/clipboard-operations"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/pivot-grid/excel-style-filtering": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/excel-style-filtering-sample-1",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/excel-style-filtering-sample-2",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/excel-style-filtering-sample-3"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/excel-style-filtering-sample-3",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/excel-style-filtering-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/pivot-grid/row-editing": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/row-editing-options",
@@ -2367,24 +2598,37 @@
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/pivot-grid/selection": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/cell-selection-mode"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/pivot-grid/state-persistence": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/data-persistence-noop",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/state-persistence-main"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree/basic-example"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/advanced-filtering": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/advanced-filtering-options"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/advanced-filtering-options",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/advanced-filtering-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/cell-editing": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-editing-sample",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-editing-styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/editing-columns",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/editing-events"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/cell-selection": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-selection-mode",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-selection-style",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/multi-cell-selection-mode"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/clipboard-interactions": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/clipboard-operations"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/collapsible-column-groups": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/multi-column-header-template"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-collapsible-groups"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/column-hiding": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-hiding-toolbar"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-hiding-toolbar",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-hiding-toolbar-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/column-moving": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-moving-options",
@@ -2393,16 +2637,18 @@
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/column-pinning": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-pinning",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-pinning-options",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-pinning-right-side"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-pinning-right-side",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-pinning-styles"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/column-resizing": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-auto-sizing",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-resizing",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-resizing-styling"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-resize-styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-resizing"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/column-selection": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-selection-group",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-selection-mode"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-selection-mode",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-selection-styles"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/conditional-cell-styling": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/conditional-cell-style-1",
@@ -2420,28 +2666,32 @@
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/excel-style-filtering-sample-1",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/excel-style-filtering-sample-2",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/excel-style-filtering-sample-3",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/filter-view"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/excel-style-filtering-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/export-excel": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/excel-exporting",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/multi-column-headers-export"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/filtering": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/filtering-options"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/filtering-options",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/filtering-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/keyboard-navigation": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/keyboard-custom-navigation"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/keyboard-custom-navigation",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/keyboard-navigation-guide"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/live-data": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/finjs"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/multi-column-headers": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/multi-column-header-template",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/multi-column-headers-overview"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/multi-column-headers-overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/multi-column-headers-styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/multi-column-headers-template"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/multi-row-layout": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/keyboard-mrl-navigation",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/multi-row-layout-options"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/multi-row-layout-options",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/multi-row-layout-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/paging": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/row-paging-basic",
@@ -2463,7 +2713,8 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/row-pinning": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/row-pinning-extra-column",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/row-pinning-options"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/row-pinning-options",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/row-pinning-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/row-selection": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/conditional-row-selectors",
@@ -2477,18 +2728,24 @@
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-selection-mode"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/sorting": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-sorting-indicators",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-sorting-options",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-sorting-style"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/state-persistence": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/state-persistence-main"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/summaries": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/data-summary-children",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/data-summary-options",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/data-summary-template"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/data-summary-template",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/groupby-summary-styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/toolbar": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/toolbar-sample-1",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/toolbar-sample-2",
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/toolbar-sample-3"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/toolbar-sample-3",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/toolbar-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/virtualization": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/data-performance-virtualization"
@@ -2581,7 +2838,9 @@
       "https://staging.infragistics.com/react-demos/samples/samples/layouts/card/styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/dock-manager": [
-      "https://staging.infragistics.com/react-demos/samples/samples/layouts/dock-manager/overview"
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/dock-manager/customize-buttons",
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/dock-manager/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/dock-manager/styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/dock-manager-embedding-frames": [
       "https://staging.infragistics.com/react-demos/samples/samples/layouts/dock-manager/embedding-frames"
@@ -2620,7 +2879,8 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/menus/toolbar": [
       "https://staging.infragistics.com/react-demos/samples/samples/charts/toolbar/actions-built-in-category-chart",
-      "https://staging.infragistics.com/react-demos/samples/samples/charts/toolbar/layout-actions-for-data-chart"
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/toolbar/layout-actions-for-data-chart",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/toolbar/layout-in-vertical-orientation"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/notifications/snackbar": [
       "https://staging.infragistics.com/react-demos/samples/samples/notifications/snackbar/action-text",

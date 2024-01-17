@@ -229,33 +229,47 @@ public classEditTemplate = (ctx: IgcCellTemplateContext) => {
 
 <!-- end: Angular -->
 
+<!-- Blazor, WebComponents -->
+
+セルに適用されるカスタム テンプレートを提供する場合は、そのテンプレートをセル自体またはそのヘッダーに渡すことができます。まず、通常どおりに列を作成します。
+
 <!-- Blazor -->
 
-セルに適用されるカスタム テンプレートを提供する場合は、そのテンプレートをセル自体またはそのヘッダーに渡すことができます。
-
-```Razor
-
+<!-- ComponentStart: Grid -->
+```razor
 <IgbColumn
-    Field="race"
-    Header="Race"
+    Field="Race"
     DataType="GridColumnDataType.String"
     InlineEditorTemplateScript="WebGridCellEditCellTemplate"
     Editable="true"
     Name="column1"
     @ref="column1">
 </IgbColumn>
-
-
 ```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```razor
+<IgbColumn
+    Field="Category"
+    DataType="GridColumnDataType.String"
+    InlineEditorTemplateScript="WebTreeGridCellEditCellTemplate"
+    Editable="true"
+    Name="column1"
+    @ref="column1">
+</IgbColumn>
+```
+<!-- ComponentEnd: TreeGrid -->
 
 そしてテンプレートを渡します:
 
 ```razor
-*** JavaScript の場合***
+*** In JavaScript ***
+
 igRegisterScript("WebGridCellEditCellTemplate", (ctx) => {
     let cellValues = [];
     let uniqueValues = [];
-    for(const i of this.webGridCellEditSampleRoleplay){
+    for(const i of ctx.cell.grid.data){
         const field = ctx.cell.column.field;
         if(uniqueValues.indexOf(i[field]) === -1 )
         {
@@ -270,64 +284,80 @@ igRegisterScript("WebGridCellEditCellTemplate", (ctx) => {
 </div>`;
 }, false);
 ```
-
-上記のサンプルは、こちらで参照できます。 
-
-`sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} セル編集テンプレート サンプル"`
-
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
 
-セルに適用されるカスタム テンプレートを提供する場合は、そのテンプレートをセル自体またはそのヘッダーに渡すことができます。まず、通常どおりに列を作成します。
+<!-- ComponentStart: Grid -->
 
 ```html
-
 <igc-column
-    field="race"
-    header="Race"
+    field="Race"
     data-type="string"
     editable="true"
     name="column1"
     id="column1">
 </igc-column>
-
 ```
 
 そして、テンプレートを index.ts ファイルのこの列に渡します。
 
-```ts
-
+```typescript
 constructor() {
-        var grid1 = document.getElementById('grid1') as IgcGridComponent;
-        var column1 = document.getElementById('column1') as IgcColumnComponent;
-        var column2 = document.getElementById('column2') as IgcColumnComponent;
-        var column3 = document.getElementById('column3') as IgcColumnComponent;
+    var grid1 = document.getElementById('grid1') as {ComponentName}Component;
+    var column1 = document.getElementById('column1') as IgcColumnComponent;
+    var column2 = document.getElementById('column2') as IgcColumnComponent;
+    var column3 = document.getElementById('column3') as IgcColumnComponent;
 
-        grid1.data = this.webGridCellEditSampleRoleplay;
-        column1.inlineEditorTemplate = this.webGridCellEditCellTemplate;
-        column2.inlineEditorTemplate = this.webGridCellEditCellTemplate;
-        column3.inlineEditorTemplate = this.webGridCellEditCellTemplate;
-    }
+    grid1.data = this.webGridCellEditSampleRoleplay;
+    column1.inlineEditorTemplate = this.webGridCellEditCellTemplate;
+    column2.inlineEditorTemplate = this.webGridCellEditCellTemplate;
+    column3.inlineEditorTemplate = this.webGridCellEditCellTemplate;
+}
 
 
 public webGridCellEditCellTemplate = (ctx: IgcCellTemplateContext) => {
-        let cellValues: any = [];
-        let uniqueValues: any = [];
-        for(const i of (this.webGridCellEditSampleRoleplay as any)){
-            const field: string = ctx.cell.column.field;
-            if(uniqueValues.indexOf(i[field]) === -1 )
-            {
-                cellValues.push(html`<igc-select-item value=${i[field]}>${(i[field])}</igc-select-item>`);
-                uniqueValues.push(i[field]);
-            }
+    let cellValues: any = [];
+    let uniqueValues: any = [];
+    for(const i of (this.webGridCellEditSampleRoleplay as any)){
+        const field: string = ctx.cell.column.field;
+        if(uniqueValues.indexOf(i[field]) === -1 )
+        {
+            cellValues.push(html`<igc-select-item value=${i[field]}>${(i[field])}</igc-select-item>`);
+            uniqueValues.push(i[field]);
         }
-        return html`
+    }
+    return html`
         <igc-select style="width:100%; height:100%" size="large" @igcChange=${(e: any) => ctx.cell.editValue = e.detail.value}>
-              ${cellValues}
+            ${cellValues}
         </igc-select>
     `;
-    }
+}
+```
+
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```html
+<igc-column
+    field="Category"
+    data-type="string"
+    editable="true"
+    name="column1"
+    id="column1">
+</igc-column>
+```
+
+そして、テンプレートを index.ts ファイルのこの列に渡します。
+
+```typescript
+constructor() {
+    var treeGrid = document.getElementById('treeGrid') as {ComponentName}Component;
+    var column1 = document.getElementById('column1') as IgcColumnComponent;
+
+    treeGrid.data = this.ordersTreeData;
+    column1.inlineEditorTemplate = this.webTreeGridCellEditCellTemplate;
+}
 
 ```
 
@@ -376,11 +406,9 @@ public webGridCellEditCellTemplate = (ctx: IgcCellTemplateContext) => {
 ```
 <!-- ComponentEnd: TreeGrid -->
 
-上記のサンプルは、さらに参照するためにここにあります。
-
-`sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} セル編集テンプレート サンプル"`
-
 <!-- end: WebComponents -->
+
+<!-- end: Blazor, WebComponents -->
 
 <!-- React -->
 
@@ -435,9 +463,9 @@ const webGridCellEditCellTemplate = useCallback((ctx: IgrCellTemplateContext) =>
 ```
 上記のサンプルは、さらに参照するためにここにあります。
 
-`sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} セル編集テンプレート サンプル"`
+上記のサンプルは、こちらで参照できます。
 
-<!-- end: React -->
+`sample="/{ComponentSample}/cell-editing-sample", height="650", alt="{Platform} {ComponentTitle} セル編集テンプレート サンプル"`
 
 <!-- Angular -->
 
@@ -679,6 +707,21 @@ row.update(newData);
 ```
 <!-- end: React -->
 
+
+```razor
+// Updating the whole row
+this.grid.UpdateRow(newData, this.selectedCell.cellID.rowID);
+
+// Just a particular cell through the Grid API
+this.grid.UpdateCell(newData, this.selectedCell.cellID.rowID, this.selectedCell.column.field);
+
+// Directly using the cell `update` method
+this.selectedCell.Update(newData);
+
+// Directly using the row `update` method
+const row = this.grid.GetRowByKey(rowID);
+row.Update(newData);
+```
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -696,6 +739,22 @@ this.selectedCell.update(newData);
 const row = this.treeGrid.getRowByKey(rowID);
 row.update(newData);
 ```
+
+```razor
+// Updating the whole row
+this.treeGrid.UpdateRow(newData, this.selectedCell.cellID.rowID);
+
+// Just a particular cell through the Tree Grid API
+this.treeGrid.UpdateCell(newData, this.selectedCell.cellID.rowID, this.selectedCell.column.field);
+
+// Directly using the cell `update` method
+this.selectedCell.Update(newData);
+
+// Directly using the row `update` method
+const row = this.treeGrid.GetRowByKey(rowID);
+row.Update(newData);
+```
+
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -741,6 +800,14 @@ row.delete();
 ```
 <!-- end: React -->
 
+```razor
+// Delete row through Grid API
+this.grid.DeleteRow(this.selectedCell.cellID.rowID);
+// Delete row through row object
+const row = this.grid.GetRowByIndex(rowIndex);
+row.Delete();
+```
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -752,6 +819,13 @@ const row = this.treeGrid.getRowByIndex(rowIndex);
 row.delete();
 ```
 
+```razor
+// Delete row through Tree Grid API
+this.treeGrid.DeleteRow(this.selectedCell.cellID.rowID);
+// Delete row through row object
+const row = this.treeGrid.GetRowByIndex(rowIndex);
+row.Delete();
+```
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -784,14 +858,13 @@ row.delete();
 
 最初に必要なことは、グリッドのイベントにバインドすることです。
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} (cellEdit)="handleCellEdit($event)">
 </{ComponentSelector}>
 ```
 
-```razor
-<{ComponentSelector} CellEditScript="HandleCellEdit" />
-```
+<!-- end: Angular -->
 
 <!-- React -->
 ```tsx
@@ -800,49 +873,48 @@ row.delete();
 ```
 <!-- end: React -->
 
+<!-- Blazor, WebComponents -->
 
-<!-- ComponentStart: Grid -->
-```ts
-constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-
-    this._bind = () => {
-        grid.cellEdit = this.handleCellEdit;
-    }
-    this._bind();
-}
+```razor
+<{ComponentSelector} CellEditScript="HandleCellEdit" />
 ```
 
-<!-- ComponentEnd: Grid -->
-<!-- ComponentStart: TreeGrid -->
-```ts
+<!-- ComponentStart: Grid -->
+```typescript
 constructor() {
-    var treeGrid = this.treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
+    var grid = document.getElementById('grid') as IgcGridComponent;
+    this.webGridCellEdit = this.webGridCellEdit.bind(this);
+    grid.addEventListener("cellEdit", this.webGridCellEdit);
+}
+```
+<!-- ComponentEnd: Grid -->
 
-    this._bind = () => {
-        treeGrid.cellEdit = this.handleCellEdit;
-    }
-    this._bind();
+<!-- ComponentStart: TreeGrid -->
+```typescript
+constructor() {
+    var treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
+    this.webTreeGridCellEdit = this.webTreeGridCellEdit.bind(this);
+    treeGrid.addEventListener("cellEdit", this.webTreeGridCellEdit);
 }
 ```
 <!-- ComponentEnd: TreeGrid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
 ```ts
 constructor() {
-    var hGrid = this.hGrid = document.getElementById('hGrid') as IgcHierarchicalGridComponent;
-
-    this._bind = () => {
-        hGrid.cellEdit = this.handleCellEdit;
-    }
-    this._bind();
+    var hGrid = document.getElementById('hGrid') as IgcHierarchicalGridComponent;
+    hGrid.addEventListener("cellEdit", this.webHierarchicalGridCellEdit);
 }
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- end: Blazor, WebComponents -->
+
 `CellEdit` は、セルの**値**がコミットされる直前に発生します。**CellEdit** の定義では、アクションを実行する前に特定の列を確認する必要があります。
 
 <!-- ComponentStart: Grid -->
 
-<!-- Angular, WebComponents -->
+<!-- Angular -->
 ```typescript
 export class MyGridEventsComponent {
     public handleCellEdit(event: IGridEditEventArgs): void {
@@ -860,7 +932,26 @@ export class MyGridEventsComponent {
     }
 }
 ```
-<!-- end: Angular, WebComponents -->
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```typescript
+public webGridCellEdit(event: CustomEvent<IgcGridEditEventArgs>): void {
+    const column = event.detail.column;
+    if (column.field === 'UnitsOnOrder') {
+            const rowData = event.detail.rowData;
+            if (!rowData) {
+                return;
+            }
+            if (event.detail.newValue > rowData.UnitsInStock) {
+                event.cancel = true;
+                alert("You cannot order more than the units in stock!");
+            }
+    }
+}
+
+```
+<!-- end: WebComponents -->
 
 <!-- React -->
 ```typescript
@@ -894,46 +985,50 @@ igRegisterScript("HandleCellEdit", (ev) => {
 }, false);
 ```
 **Units On Order (注文済み)** 列の下のセルに入力された値が使用可能量 (**Units in Stock、在庫数** の値) よりも大きい場合、編集はキャンセルされ、ユーザーにキャンセルの警告が表示されます。
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
 
 ```typescript
-export class MyTreeGridEventsComponent {
-    public handleCellEdit(event: IGridEditEventArgs): void {
-        const column = event.column;
-        if (column.field === 'Age') {
-            if (event.newValue < 18) {
-                event.cancel = true;
-                this.toast.message = 'Employees must be at least 18 years old!';
-                this.toast.open();
-            }
-        } else if (column.field === 'HireDate') {
-            if (event.newValue > new Date().getTime()) {
-                event.cancel = true;
-                this.toast.message = 'The employee hire date must be in the past!';
-                this.toast.open();
-            }
+public webTreeGridCellEdit(event: CustomEvent<IgcGridEditEventArgs>): void {
+    const column = event.detail.column;
+    		
+    if (column.field === 'Age') {
+        if (event.detail.newValue < 18) {
+            event.detail.cancel = true;
+            alert('Employees must be at least 18 years old!');
+        }
+    } else if (column.field === 'HireDate') {
+        if (event.detail.newValue > new Date().getTime()) {
+            event.detail.cancel = true;
+            alert('The employee hire date must be in the past!');
         }
     }
 }
+
 ```
 
 ```razor
 *** In JavaScript ***
 igRegisterScript("HandleCellEdit", (ev) => {
-    var d = ev.detail;
+    const column = event.detail.column;
 
-    if (d.column != null && d.column.field == "UnitsOnOrder") {
-        if (d.newValue > d.rowData.UnitsInStock) {
-            d.cancel = true;
-            alert("You cannot order more than the units in stock!")
-        }
-    }
+	if (column.field === 'Age') {
+		if (event.detail.newValue < 18) {
+			event.detail.cancel = true;
+			alert('Employees must be at least 18 years old!');
+		}
+	} else if (column.field === 'HireDate') {
+		if (event.detail.newValue > new Date().getTime()) {
+			event.detail.cancel = true;
+			alert('The employee hire date must be in the past!');
+		}
+	}
 }, false);
 ```
 
-**Units On Order (注文済み)** 列の下のセルに入力された値が使用可能量 (**Units in Stock、在庫数** の値) よりも大きい場合、編集はキャンセルされ、ユーザーにキャンセルの警告が表示されます。
+**Age (年齢)** 列の下のセルに入力された値が 18 未満である場合、または **HireDate (雇用日)** 列の値が将来の場合、編集はキャンセルされ、ユーザーにキャンセルについての警告が表示されます。
 
 <!-- Angular -->
 
@@ -981,8 +1076,9 @@ export class MyHGridEventsComponent {
 事前定義されたテーマに加えて、利用可能な [CSS プロパティ](../theming.md)を設定することでグリッドをさらにカスタマイズできます。
 一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
+<!-- ComponentStart: Grid -->
 ```html
-<igc-grid class="grid">
+<igc-grid class="grid"></igc-grid>
 ```
 
 ```razor
@@ -1001,6 +1097,26 @@ export class MyHGridEventsComponent {
     --ig-grid-cell-editing-background: lightblue;
 }
 ```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```html
+<igc-tree-grid class="treeGrid"></igc-tree-grid>
+```
+
+```razor
+<IgbTreeGrid Class="treeGrid"></IgbTreeGrid>
+```
+
+次に、そのクラスに関連する CSS プロパティを設定します。
+
+```css
+.treeGrid {
+    --ig-grid-edit-mode-color: orange;
+    --ig-grid-cell-editing-background: lightblue;
+}
+```
+<!-- ComponentEnd: TreeGrid -->
 
 ### スタイル設定の例
 
@@ -1095,21 +1211,13 @@ $custom-grid-theme: grid-theme(
 
 ## API リファレンス
 
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+* `{ComponentName}`
 
-* `GridRow`
-
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
-<!-- ComponentStart: TreeGrid -->
-
-* `TreeGridRow`
-
-<!-- ComponentEnd: TreeGrid -->
-* `Cell`
 <!-- Angular -->
 * `InputDirective`
 <!-- end:Angular -->
-* `DatePickerComponent`
+
+* `DatePicker`
 
 ## その他のリソース
 

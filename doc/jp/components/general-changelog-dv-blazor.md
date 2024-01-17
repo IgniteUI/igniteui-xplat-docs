@@ -11,6 +11,16 @@ namespace: Infragistics.Controls.Charts
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
+## **{PackageVerChanges-23-2-JAN}**
+
+### .NET 8.0 のサポート
+
+* 2023.2 リリースでは .NET 8 がサポートされます。.NET 8 の詳細については、[Microsoft サイト](https://learn.microsoft.com/ja-jp/dotnet/core/whats-new/dotnet-8)をご確認ください。
+
+### {PackageCharts} チャート
+
+* [チャート強調表示フィルター](charts/features/chart-highlight-filter.md) - `CategoryChart` と `DataChart` は、データのサブセットの内外で強調表示およびアニメーション化する方法を公開するようになりました。この強調表示の表示はシリーズのタイプによって異なります。列およびエリア シリーズの場合、サブセットはデータの合計セットの上に表示され、サブセットはシリーズの実際のブラシによって色付けされ、合計セットは不透明度を下げます。折れ線シリーズの場合、サブセットは点線で表示されます。
+
 ## **{PackageVerChanges-23-2}**
 
 ### {PackageGrids} (Toolbar - ベータ版)
@@ -18,6 +28,7 @@ namespace: Infragistics.Controls.Charts
 * クリップボードを介してチャートを画像に保存するための新しいツールがデフォルトのツールとして追加されました。
 * ツールバーの `Orientation` プロパティを介して垂直方向が追加されました。デフォルトでは、ツールバーは水平方向ですが、ツールバーを垂直方向に表示できるようになり、ツールが左右にポップアップ表示されます。
 * ツールバーの `renderImageFromText` メソッドを介してカスタム SVG アイコンのサポートが追加され、カスタム ツールの作成がさらに強化されました。
+
 ### {PackageGrids} (Grid)
 * 新規機能:
     - [状態保持](grids/grid/state-persistence.md)
@@ -118,10 +129,10 @@ namespace: Infragistics.Controls.Charts
 
 ### {PackageGrids} (データ グリッド)
 
-* `Column` を `DataGridColumn` に変更しました。
-* `GridCellEventArgs` を `DataGridCellEventArgs` に変更しました。
-* `GridSelectionMode` を `DataGridSelectionMode` に変更しました。
-* `SummaryOperand` を `DataSourceSummaryOperand` に変更しました。
+* **{IgPrefix}Column** を `DataGridColumn` に変更しました。
+* **GridCellEventArgs** を `DataGridCellEventArgs` に変更しました。
+* **GridSelectionMode** を `DataGridSelectionMode` に変更しました。
+* **SummaryOperand** を `DataSourceSummaryOperand` に変更しました。
 
 ## **{PackageVerChanges-22-1}**
 

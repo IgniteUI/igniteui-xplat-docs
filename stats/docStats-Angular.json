@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in Angular documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "Angular",
-  "samplesCount": 187,
+  "samplesCount": 192,
   "samplesHost": "https://staging.infragistics.com/angular-demos-dv/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -40,6 +40,9 @@
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/axis-titles": [
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-options"
     ],
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/chart-highlight-filter": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-highlight-filter"
+    ],
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/column-chart-multiple-sources": [
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-overview",
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/column-chart"
@@ -75,6 +78,9 @@
     ],
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/data-tooltip-positioning": [
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-data-tooltip"
+    ],
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/format-specifiers": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-options"
     ],
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/high-frequency": [
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-performance",
@@ -165,6 +171,12 @@
     ],
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/callout-layer-styling": [
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-annotations"
+    ],
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/chart-highlight-filter": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-highlight-filter"
+    ],
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/chart-highlight-filter-multiple-series": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-highlight-filter"
     ],
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/chart-navigation": [
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-features",
@@ -443,6 +455,9 @@
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/toolbar/layout-actions-for-data-chart": [
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/menus/toolbar"
     ],
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/toolbar/layout-in-vertical-orientation": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/menus/toolbar"
+    ],
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/tree-map/layout": [
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/treemap-chart"
     ],
@@ -623,7 +638,7 @@
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-type-shape-polyline-series"
     ]
   },
-  "topicsCount": 91,
+  "topicsCount": 92,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-angular/angular/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -691,6 +706,7 @@
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/axis-overlap",
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/axis-range",
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/axis-titles",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/format-specifiers",
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/axis-types"
     ],
     "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-axis-types": [
@@ -719,6 +735,11 @@
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/data-tooltip",
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/data-tooltip-formatting-currency",
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/data-tooltip-styling-props"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-highlight-filter": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/chart-highlight-filter",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/chart-highlight-filter",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/chart-highlight-filter-multiple-series"
     ],
     "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-highlighting": [
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/column-chart-with-highlighting"
@@ -984,7 +1005,8 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/menus/toolbar": [
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/toolbar/actions-built-in-category-chart",
-      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/toolbar/layout-actions-for-data-chart"
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/toolbar/layout-actions-for-data-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/toolbar/layout-in-vertical-orientation"
     ],
     "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/radial-gauge": [
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/radial-gauge/animation",
