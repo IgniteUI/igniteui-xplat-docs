@@ -50,6 +50,8 @@
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "highMemberPath"}], "originalName": "HighMemberPath"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "highlightedHighMemberPath"}], "originalName": "HighlightedHighMemberPath"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "highlightedLowMemberPath"}], "originalName": "HighlightedLowMemberPath"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "lowMemberPath"}], "originalName": "LowMemberPath"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "scrollIntoView"}], "originalName": "ScrollIntoView"} ]
   },

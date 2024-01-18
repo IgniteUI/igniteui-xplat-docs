@@ -240,6 +240,7 @@
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "actualAreaFillOpacity"}], "originalName": "ActualAreaFillOpacity"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "actualBrush"}], "originalName": "ActualBrush"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesHighlightedValuesDisplayMode","mappedName": "actualHighlightedValuesDisplayMode"}], "originalName": "ActualHighlightedValuesDisplayMode"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "actualHighlightingFadeOpacity"}], "originalName": "ActualHighlightingFadeOpacity"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "actualIsDropShadowEnabled"}], "originalName": "ActualIsDropShadowEnabled"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "actualIsSplineShapePartOfRange"}], "originalName": "ActualIsSplineShapePartOfRange"},
@@ -298,6 +299,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getSeriesValueMarkerBoundingBox"}], "originalName": "GetSeriesValueMarkerBoundingBox"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getSeriesValuePositionFromSeriesPixel"}], "originalName": "GetSeriesValuePositionFromSeriesPixel"},
+      {"names":[{"platform": "WebComponents", "mappedType": "any[]",   "mappedName": "highlightedDataSource"}], "originalName": "HighlightedItemsSource"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "highlightingFadeOpacity"}], "originalName": "HighlightingFadeOpacity"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isDropShadowEnabled"}], "originalName": "IsDropShadowEnabled"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isSplineShapePartOfRange"}], "originalName": "IsSplineShapePartOfRange"},

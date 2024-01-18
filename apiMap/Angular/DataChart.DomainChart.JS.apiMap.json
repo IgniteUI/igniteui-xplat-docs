@@ -96,6 +96,8 @@
       {"names":[{"platform": "Angular", "mappedType": "IgxChartSortDescriptionCollection","mappedName": "groupSortDescriptions"}], "originalName": "GroupSortDescriptions"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "groupSorts"}], "originalName": "GroupSorts"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "hideToolTip"}], "originalName": "HideToolTip"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxFilterExpressionCollection","mappedName": "highlightFilterExpressions"}], "originalName": "HighlightFilterExpressions"},
+      {"names":[{"platform": "Angular", "mappedType": "SeriesHighlightedValuesDisplayMode","mappedName": "highlightedValuesDisplayMode"}], "originalName": "HighlightedValuesDisplayMode"},
       {"names":[{"platform": "Angular", "mappedType": "SeriesHighlightingBehavior","mappedName": "highlightingBehavior"}], "originalName": "HighlightingBehavior"},
       {"names":[{"platform": "Angular", "mappedType": "SeriesHighlightingMode","mappedName": "highlightingMode"}], "originalName": "HighlightingMode"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "horizontalViewScrollbarCornerRadius"}], "originalName": "HorizontalViewScrollbarCornerRadius"},
@@ -111,13 +113,18 @@
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "horizontalViewScrollbarTrackEndInset"}], "originalName": "HorizontalViewScrollbarTrackEndInset"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "horizontalViewScrollbarTrackStartInset"}], "originalName": "HorizontalViewScrollbarTrackStartInset"},
       {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "includedProperties"}], "originalName": "IncludedProperties"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "initialFilter"}], "originalName": "InitialFilter"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxFilterExpressionCollection","mappedName": "initialFilterExpressions"}], "originalName": "InitialFilterExpressions"},
       {"names":[{"platform": "Angular", "mappedType": "IgxChartSortDescriptionCollection","mappedName": "initialGroupDescriptions"}], "originalName": "InitialGroupDescriptions"},
       {"names":[{"platform": "Angular", "mappedType": "IgxChartSortDescriptionCollection","mappedName": "initialGroupSortDescriptions"}], "originalName": "InitialGroupSortDescriptions"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "initialGroups"}], "originalName": "InitialGroups"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "initialHighlightFilter"}], "originalName": "InitialHighlightFilter"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxFilterExpressionCollection","mappedName": "initialHighlightFilterExpressions"}], "originalName": "InitialHighlightFilterExpressions"},
       {"names":[{"platform": "Angular", "mappedType": "IgxChartSortDescriptionCollection","mappedName": "initialSortDescriptions"}], "originalName": "InitialSortDescriptions"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "initialSorts"}], "originalName": "InitialSorts"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "initialSummaries"}], "originalName": "InitialSummaries"},
       {"names":[{"platform": "Angular", "mappedType": "IgxChartSummaryDescriptionCollection","mappedName": "initialSummaryDescriptions"}], "originalName": "InitialSummaryDescriptions"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isDetached"}], "originalName": "IsDetached"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isHorizontalZoomEnabled"}], "originalName": "IsHorizontalZoomEnabled"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isSeriesHighlightingEnabled"}], "originalName": "IsSeriesHighlightingEnabled"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isVerticalZoomEnabled"}], "originalName": "IsVerticalZoomEnabled"},
@@ -498,5 +505,14 @@
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "item"}], "originalName": "Item"},
       {"names":[{"platform": "Angular", "mappedType": "IgxSeriesComponent","mappedName": "series"}], "originalName": "Series"} ]
+  },
+  {
+    "originalName": "FilterStringErrorsParsingEventArgs",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Angular","fileName": "igx-filter-string-errors-parsing-event-args.ts","mappedName": "IgxFilterStringErrorsParsingEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "errors"}], "originalName": "Errors"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "propertyName"}], "originalName": "PropertyName"} ]
   }]
 }
