@@ -31,6 +31,8 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemIndex"}], "originalName": "GetItemIndex"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemValue"}], "originalName": "GetItemValue"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HighlightedAngleMemberPath"}], "originalName": "HighlightedAngleMemberPath"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HighlightedRadiusMemberPath"}], "originalName": "HighlightedRadiusMemberPath"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsCustomPolarMarkerStyleAllowed"}], "originalName": "IsCustomPolarMarkerStyleAllowed"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsCustomPolarStyleAllowed"}], "originalName": "IsCustomPolarStyleAllowed"},
       {"names":[{"platform": "Blazor", "mappedType": "ScatterItemSearchMode","mappedName": "ItemSearchMode"}], "originalName": "ItemSearchMode"},

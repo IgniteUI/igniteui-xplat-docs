@@ -197,6 +197,7 @@
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ActualAreaFillOpacity"}], "originalName": "ActualAreaFillOpacity"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualBrush"}], "originalName": "ActualBrush"},
+      {"names":[{"platform": "Blazor", "mappedType": "SeriesHighlightedValuesDisplayMode","mappedName": "ActualHighlightedValuesDisplayMode"}], "originalName": "ActualHighlightedValuesDisplayMode"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ActualHighlightingFadeOpacity"}], "originalName": "ActualHighlightingFadeOpacity"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ActualIsDropShadowEnabled"}], "originalName": "ActualIsDropShadowEnabled"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ActualIsSplineShapePartOfRange"}], "originalName": "ActualIsSplineShapePartOfRange"},
@@ -255,6 +256,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValueMarkerBoundingBox"}], "originalName": "GetSeriesValueMarkerBoundingBox"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValuePositionFromSeriesPixel"}], "originalName": "GetSeriesValuePositionFromSeriesPixel"},
+      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "HighlightedDataSource"}], "originalName": "HighlightedItemsSource"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "HighlightingFadeOpacity"}], "originalName": "HighlightingFadeOpacity"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsDropShadowEnabled"}], "originalName": "IsDropShadowEnabled"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsSplineShapePartOfRange"}], "originalName": "IsSplineShapePartOfRange"},

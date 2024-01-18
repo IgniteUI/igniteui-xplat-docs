@@ -16,6 +16,7 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getSeriesValue"}], "originalName": "GetSeriesValue"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "hasValueAxis"}], "originalName": "HasValueAxis"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "highlightedValueMemberPath"}], "originalName": "HighlightedValueMemberPath"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isValueAxisInverted"}], "originalName": "IsValueAxisInverted"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "scrollIntoView"}], "originalName": "ScrollIntoView"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "trendLineBrush"}], "originalName": "TrendLineBrush"},

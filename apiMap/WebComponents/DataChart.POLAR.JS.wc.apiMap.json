@@ -32,6 +32,8 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getItemIndex"}], "originalName": "GetItemIndex"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "highlightedAngleMemberPath"}], "originalName": "HighlightedAngleMemberPath"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "highlightedRadiusMemberPath"}], "originalName": "HighlightedRadiusMemberPath"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isCustomPolarMarkerStyleAllowed"}], "originalName": "IsCustomPolarMarkerStyleAllowed"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isCustomPolarStyleAllowed"}], "originalName": "IsCustomPolarStyleAllowed"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isPolar"}], "originalName": "IsPolar"},
