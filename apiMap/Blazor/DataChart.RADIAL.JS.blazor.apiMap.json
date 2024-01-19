@@ -15,6 +15,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetPreviousOrExactIndex"}], "originalName": "GetPreviousOrExactIndex"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValue"}], "originalName": "GetSeriesValue"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HighlightedValueMemberPath"}], "originalName": "HighlightedValueMemberPath"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ScrollIntoView"}], "originalName": "ScrollIntoView"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "TrendLineBrush"}], "originalName": "TrendLineBrush"},
       {"names":[{"platform": "Blazor", "mappedType": "double[]","mappedName": "TrendLineDashArray"}], "originalName": "TrendLineDashArray"},

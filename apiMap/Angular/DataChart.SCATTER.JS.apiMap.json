@@ -146,6 +146,8 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getSeriesValueType"}], "originalName": "GetSeriesValueType"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getSeriesValueTypePosition"}], "originalName": "GetSeriesValueTypePosition"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getSeriesValueTypePositionFromValue"}], "originalName": "GetSeriesValueTypePositionFromValue"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "highlightedXMemberPath"}], "originalName": "HighlightedXMemberPath"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "highlightedYMemberPath"}], "originalName": "HighlightedYMemberPath"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCustomScatterMarkerStyleAllowed"}], "originalName": "IsCustomScatterMarkerStyleAllowed"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCustomScatterStyleAllowed"}], "originalName": "IsCustomScatterStyleAllowed"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isScatter"}], "originalName": "IsScatter"},
