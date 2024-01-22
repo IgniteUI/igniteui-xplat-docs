@@ -427,6 +427,10 @@ With the mini variant, the Navigation Drawer changes its width instead of closin
         </IgrNavDrawerItem>
     </div>
 </IgrNavDrawer>
+
+<IgrButton clicked={this.onButtonClick}>
+    <span>Toggle</span>
+</IgrButton>
 ```
 
 And here's the result:
