@@ -56,6 +56,8 @@ import { IgrDropdownModule, IgrDropdown } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
 IgrDropdownModule.register();
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 <!-- end: React -->
 
 <!-- Blazor -->
@@ -80,6 +82,17 @@ The simplest way to start using the `Dropdown` is as follows:
     <igc-dropdown-item>Option 2</igc-dropdown-item>
     <igc-dropdown-item>Option 3</igc-dropdown-item>
 </igc-dropdown>
+```
+
+```tsx
+<IgrDropdown>
+    <div slot="target">
+        <IgrButton><span>Options</span></IgrButton>
+    </div>
+    <IgrDropdownItem><span>Option 1</span></IgrDropdownItem>
+    <IgrDropdownItem><span>Option 2</span></IgrDropdownItem>
+    <IgrDropdownItem><span>Option 3</span></IgrDropdownItem>
+</IgrDropdown>
 ```
 
 ### Target
