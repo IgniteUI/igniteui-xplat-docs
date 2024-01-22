@@ -457,6 +457,12 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
+    "originalName": "ColumnState",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-column-state.ts","mappedName": "IgrColumnState"}]
+  },
+  {
     "originalName": "ColumnTemplateContext",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -1013,7 +1019,7 @@
       {"names":[{"platform": "React", "mappedType": "IgrGridSortingStrategy","mappedName": "sortStrategy"}], "originalName": "SortStrategy"},
       {"names":[{"platform": "React", "mappedType": "IgrSortingExpression[]","mappedName": "sortingExpressions"}], "originalName": "SortingExpressions"},
       {"names":[{"platform": "React", "mappedType": "IgrSortingOptions","mappedName": "sortingOptions"}], "originalName": "SortingOptions"},
-      {"names":[{"platform": "React", "mappedType": "IgrGriStateCollection","mappedName": "stateComponents"}], "originalName": "StateComponents"},
+      {"names":[{"platform": "React", "mappedType": "IgrStateCollection","mappedName": "stateComponents"}], "originalName": "StateComponents"},
       {"names":[{"platform": "React", "mappedType": "GridSummaryCalculationMode","mappedName": "summaryCalculationMode"}], "originalName": "SummaryCalculationMode"},
       {"names":[{"platform": "React", "mappedType": "GridSummaryPosition","mappedName": "summaryPosition"}], "originalName": "SummaryPosition"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "summaryRowHeight"}], "originalName": "SummaryRowHeight"},
@@ -1346,6 +1352,51 @@
     "names":[{"platform": "React","fileName": "igr-grid-sorting-strategy.ts","mappedName": "IgrGridSortingStrategy"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "sort"}], "originalName": "Sort"} ]
+  },
+  {
+    "originalName": "GridState",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "GridStateBaseDirective",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-grid-state.ts","dynamicModuleName": "igr-grid-state-dynamic-module.ts","moduleName": "igr-grid-state-module.ts","mappedName": "IgrGridState"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "applyState"}], "originalName": "ApplyState"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "applyStateFromString"}], "originalName": "ApplyStateFromString"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getState"}], "originalName": "GetState"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getStateAsString"}], "originalName": "GetStateAsString"} ]
+  },
+  {
+    "originalName": "GridStateBaseDirective",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-grid-state-base-directive.ts","dynamicModuleName": "igr-grid-state-base-directive-dynamic-module.ts","moduleName": "igr-grid-state-base-directive-module.ts","mappedName": "IgrGridStateBaseDirective"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
+      {"names":[{"platform": "React", "mappedType": "IgrGridStateOptions","mappedName": "options"}], "originalName": "Options"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "GridStateCollection",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-grid-state-collection.ts","mappedName": "IgrGridStateCollection"}]
+  },
+  {
+    "originalName": "GridStateComponentEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-grid-state-component-event-args.ts","mappedName": "IgrGridStateComponentEventArgs"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "IgrGridState","mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "GridStateInfo",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-grid-state-info.ts","mappedName": "IgrGridStateInfo"}]
   },
   {
     "originalName": "GridTemplateContext",
@@ -1735,6 +1786,12 @@
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "React","fileName": "igr-paginator-resource-strings.ts","mappedName": "IgrPaginatorResourceStrings"}]
+  },
+  {
+    "originalName": "PagingState",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-paging-state.ts","mappedName": "IgrPagingState"}]
   },
   {
     "originalName": "PathSegment",
@@ -2562,19 +2619,6 @@
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"} ]
   },
   {
-    "originalName": "GridStateDirective",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "React","fileName": "igr-grid-state-directive.ts","dynamicModuleName": "igr-grid-state-directive-dynamic-module.ts","moduleName": "igr-grid-state-directive-module.ts","mappedName": "IgrGridStateDirective"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getState"}], "originalName": "GetState"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
-      {"names":[{"platform": "React", "mappedType": "IgrGridStateOptions","mappedName": "options"}], "originalName": "Options"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
     "originalName": "GridToolbarBaseAction",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -2593,25 +2637,6 @@
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "React","fileName": "igr-summary-expression.ts","mappedName": "IgrSummaryExpression"}]
-  },
-  {
-    "originalName": "GridState",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "GridStateDirective",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "React","fileName": "igr-grid-state.ts","dynamicModuleName": "igr-grid-state-dynamic-module.ts","moduleName": "igr-grid-state-module.ts","mappedName": "IgrGridState"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "applyState"}], "originalName": "ApplyState"},
-      {"names":[{"platform": "React", "mappedType": "IgrGridStateOptions","mappedName": "options"}], "originalName": "Options"} ]
-  },
-  {
-    "originalName": "GridStateComponentEventArgs",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "React","fileName": "igr-grid-state-component-event-args.ts","mappedName": "IgrGridStateComponentEventArgs"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "IgrGridState","mappedName": "detail"}], "originalName": "Detail"} ]
   },
   {
     "originalName": "GridStateOptions",

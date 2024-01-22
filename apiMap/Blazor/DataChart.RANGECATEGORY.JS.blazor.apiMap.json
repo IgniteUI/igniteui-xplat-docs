@@ -44,6 +44,8 @@
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemValue"}], "originalName": "GetItemValue"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HighMemberPath"}], "originalName": "HighMemberPath"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HighlightedHighMemberPath"}], "originalName": "HighlightedHighMemberPath"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HighlightedLowMemberPath"}], "originalName": "HighlightedLowMemberPath"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LowMemberPath"}], "originalName": "LowMemberPath"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ScrollIntoView"}], "originalName": "ScrollIntoView"} ]
   },
