@@ -1666,7 +1666,7 @@
     "href": "inputs/input.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "Blazor"],
     "name": "Mask Input",
     "href": "inputs/mask-input.md"
   },
