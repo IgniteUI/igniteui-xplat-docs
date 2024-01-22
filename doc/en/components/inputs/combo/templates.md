@@ -120,6 +120,14 @@ To render a custom header above the list of options pass content to the `header`
 </IgbCombo>
 ```
 
+```tsx
+<IgrCombo>
+  <header slot="header">
+        Header content goes here
+  </header>
+</IgrCombo>
+```
+
 ### Footer Slot
 To render a custom footer below the list of options pass content to the `footer` slot:
 
@@ -137,6 +145,14 @@ To render a custom footer below the list of options pass content to the `footer`
 </IgbCombo>
 ```
 
+```tsx
+<IgrCombo>
+  <footer slot="footer">
+        Footer content goes here
+  </footer>
+</IgrCombo>
+```
+
 ### Empty List Slot
 To render a custom content when the filtering operation returns no result, use the `empty` slot:
 
@@ -150,6 +166,12 @@ To render a custom content when the filtering operation returns no result, use t
 <IgbCombo> 
     <div slot="empty">¯\_(ツ)_/¯</div>
 </IgbCombo>
+```
+
+```tsx
+<IgrCombo>
+  <div slot="empty">¯\_(ツ)_/¯</div>
+</IgrCombo>
 ```
 
 ### Toggle Icon Slot
@@ -167,6 +189,14 @@ The toggle icon in the combo input can also be modified via the `toggle-icon` sl
 </IgbCombo>
 ```
 
+```tsx
+<IgrCombo>
+  <span slot="toggle-icon">
+    <IgbIcon name="down"></IgbIcon>
+  </span>
+</IgrCombo>
+```
+
 ### Clear Icon Slot
 The clear icon can be changed via the `clear-icon` slot:
 
@@ -180,6 +210,14 @@ The clear icon can be changed via the `clear-icon` slot:
 <IgbCombo> 
     <IgbIcon name="clear" slot="clear-icon"></IgbIcon>
 </IgbCombo>
+```
+
+```tsx
+<IgrCombo>
+  <span slot="clear-icon">
+    <IgbIcon name="clear"></IgbIcon>
+  </span>
+</IgrCombo>
 ```
 
 <!-- WebComponents -->

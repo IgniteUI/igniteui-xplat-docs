@@ -58,6 +58,25 @@ You will also need to link an additional CSS file to apply the styling to the `C
 ```
 <!-- end: Blazor -->
 
+<!-- React -->
+
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the {Platform} `ComboBox`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrComboModule, IgrCombo } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrComboModule.register();
+```
+
+<!-- end: React -->
+
 >[!WARNING]
 > The `Combo` component doesn't work with the standard `<form>` element. Use `Form` instead.
 
@@ -119,6 +138,26 @@ export class Sample {
 }
 ```
 
+```tsx
+interface City {
+  id: string;
+  name: string;
+}
+
+const cities: City[] = [
+  { name: "London", id: "UK01" },
+  { name: "Sofia", id: "BG01" },
+  { name: "New York", id: "NY01" },
+];
+
+<IgrCombo
+    valueKey="id"
+    displayKey="name"
+    data={cities}
+    value={["BG01"]}
+></IgrCombo>
+```
+
 ### Data value and display properties
 
 When the combo is bound to a list of complex data (i.e. objects), we need to specify a property that the control will use to handle item selection. The component exposes the following properties:
@@ -146,6 +185,16 @@ console.log(combo.value);
 
 // Change the selected items to New York and London
 combo.value = ['NY01', 'UK01'];
+```
+
+```tsx
+const comboRef = useRef<IgrCombo>(null);
+
+// Given the overview example from above this will return ['BG01']
+console.log(comboRef.current.value);
+
+// Change the selected items to New York and London
+comboRef.current.value = ['NY01', 'UK01'];
 ```
 
 ### Selection API
@@ -191,6 +240,12 @@ combo.deselect(['BG01', 'BG02', 'BG03', 'BG04']);
 }
 ```
 
+```tsx
+// Select/deselect items by their IDs as valueKey is set to 'id'
+comboRef.current.select(["UK01", "UK02", "UK03", "UK04", "UK05"]);
+comboRef.current.deselect(["UK01", "UK02", "UK03", "UK04", "UK05"]);
+```
+
 #### Select/deselect all items:
 ```ts
 // Select/deselect all items
@@ -210,12 +265,24 @@ combo.deselect();
 }
 ```
 
+```tsx
+// Select/deselect all items
+comboRef.current.select([]);
+comboRef.current.deselect([]);
+```
+
 If the `ValueKey` property is omitted, you will have to list the items you wish to select/deselect as objects references:
 
 ```ts
 // Select/deselect values by object references when no valueKey is provided
 combo.select([cities[1], cities[5]]);
 combo.deselect([cities[1], cities[5]]);
+```
+
+```tsx
+// Select/deselect values by object references when no valueKey is provided
+comboRef.current.select([cities[1], cities[5]]);
+comboRef.current.deselect([cities[1], cities[5]]);
 ```
 
 `sample="/inputs/combo/selection", height="380", alt="{Platform} Combo Selection Example"`

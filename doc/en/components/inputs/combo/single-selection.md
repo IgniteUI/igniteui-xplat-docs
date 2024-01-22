@@ -21,6 +21,10 @@ To enable single-selection and quick filtering, set the `SingleSelect` property 
 <IgbCombo SingleSelect></IgbCombo>
 ```
 
+```tsx
+<IgrCombo singleSelect></IgrCombo>
+```
+
 `sample="/inputs/combo/simplified", height="400", alt="{Platform} Single Selection Combo Example"`
 
 <div class="divider--half"></div>
@@ -50,6 +54,11 @@ combo.select('BG01');
 }
 ```
 
+```tsx
+// select the item matching the 'BG01' value of the value key field.
+comboRef.current.select('BG01');
+```
+
 To deselect an item without making a new selection, call the `deselect` method.
 
 #### Deselecting items:
@@ -67,6 +76,11 @@ combo.deselect('BG01');
 
     this.Combo.Deselect(new object[] { "UK01" });
 }
+```
+
+```tsx
+// deselect the item matching the 'BG01' value of the value key field.
+comboRef.current.select('BG01');
 ```
 
 ## Disabled features

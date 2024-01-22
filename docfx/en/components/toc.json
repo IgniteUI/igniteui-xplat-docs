@@ -1616,7 +1616,7 @@
     "href": "inputs/chip.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Combo Box",    
     "href": "inputs/combo/overview.md",
     "items": [

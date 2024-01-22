@@ -43,6 +43,18 @@ You will also need to link an additional CSS file to apply the styling to the `S
 
 <!-- end: Blazor -->
 
+<!-- React -->
+
+```tsx
+import { IgrComboModule, IgrCombo, IgrSwitchModule, IgrSwitch  } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrComboModule.register();
+IgrSwitchModule.register();
+```
+
+<!-- end: React -->
+
 Then, we will add event handlers to all switch components so that we can control the combo features by toggling the switches:
 
 ```ts
@@ -105,6 +117,24 @@ switchDisable.addEventListener("igcChange", () => {
 }
 ```
 
+```tsx
+const comboRef = useRef<IgrCombo>(null);
+const switchCaseSensitiveRef = useRef<IgrSwitch>(null);
+
+const disableFiltering = (switchComponent: IgrSwitch) => {
+    comboRef.current.disableFiltering =
+    switchCaseSensitiveRef.current.disabled = switchComponent.checked;
+};
+
+const showCaseSencitiveIcon = (switchComponent: IgrSwitch) => {
+    comboRef.current.caseSensitiveIcon = switchComponent.checked;
+};
+
+const disableCombo = (switchComponent: IgrSwitch) => {
+    comboRef.current.disabled = switchComponent.checked;
+};
+```
+
 Note that grouping is enabled/disabled by setting the `GroupKey` property to a corresponding data source field:
 
 ```ts
@@ -126,6 +156,12 @@ switchGroup.addEventListener("igcChange", () => {
 }
 ```
 
+```tsx
+const enableGrouping = (switchComponent: IgrSwitch) => {
+    comboRef.current.groupKey = switchComponent.checked ? "country" : undefined;
+  };
+```
+
 ## Features
 
 ### Filtering
@@ -140,6 +176,10 @@ Filtering options can be further enhanced by enabling the search case sensitivit
 
 ```razor
 <IgbCombo DisableFiltering="true" CaseSensitiveIcon="true" />
+```
+
+```tsx
+<IgrCombo disableFiltering="true" caseSensitiveIcon="true"></IgrCombo>
 ```
 
 #### Filtering Options
@@ -157,6 +197,15 @@ const options = {
 combo.filteringOptions = options;
 ```
 
+```tsx
+const options = {
+    filterKey: 'country',
+    caseSensitive: true
+};
+
+comboRef.current.filteringOptions = options;
+```
+
 ### Grouping
 
 Defining a `GroupKey` option will group the items, according to the provided key:
@@ -167,6 +216,10 @@ Defining a `GroupKey` option will group the items, according to the provided key
 
 ```razor
 <IgbCombo GroupKey="region" />
+```
+
+```tsx
+<IgrCombo groupKey="region" />
 ```
 
 > [!Note]
@@ -184,6 +237,10 @@ The ComboBox component also exposes an option for setting whether groups should 
 <IgbCombo GroupSorting="desc" />
 ```
 
+```tsx
+<IgrCombo groupSorting="desc" />
+```
+
 ### Label
 
 The `Combo` label can be set easily using the `Label` property:
@@ -194,6 +251,10 @@ The `Combo` label can be set easily using the `Label` property:
 
 ```razor
 <IgbCombo Label="Cities" />
+```
+
+```tsx
+<IgrCombo label="Cities" />
 ```
 
 ### Placeholder
@@ -208,6 +269,10 @@ A placeholder text can be specified for both the ComboBox component input and th
 <IgbCombo Placeholder="Pick a city" PlaceholderSearch="Search for a city" />
 ```
 
+```tsx
+<IgrCombo placeholder="Pick a city" placeholderSearch="Search for a city" />
+```
+
 ### Autofocus
 
 If you want your ComboBox to be automatically focused on page load you can use the following code:
@@ -218,6 +283,10 @@ If you want your ComboBox to be automatically focused on page load you can use t
 
 ```razor
 <IgbCombo Autofocus="true" />
+```
+
+```tsx
+<IgrCombo autofocus="true" />
 ```
 
 ### Search Input Focus
@@ -232,6 +301,10 @@ The ComboBox search input is focused by default. To disable this feature and mov
 <IgbCombo AutofocusList="true" />
 ```
 
+```tsx
+<IgrCombo autofocusList="true" />
+```
+
 ### Required
 
 The ComboBox can be marked as required by setting the required property.
@@ -244,6 +317,10 @@ The ComboBox can be marked as required by setting the required property.
 <IgbCombo Required="true" />
 ```
 
+```tsx
+<IgrCombo required="true" />
+```
+
 ### Disable ComboBox
 
 You can disable the ComboBox using the `Disabled` property:
@@ -254,6 +331,10 @@ You can disable the ComboBox using the `Disabled` property:
 
 ```razor
 <IgbCombo Disabled="true" />
+```
+
+```tsx
+<IgrCombo disabled="true" />
 ```
 
 <!-- WebComponents -->
