@@ -41,6 +41,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemValue"}], "originalName": "GetItemValue"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValueType"}], "originalName": "GetSeriesValueType"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValueTypePosition"}], "originalName": "GetSeriesValueTypePosition"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HighlightedValueMemberPath"}], "originalName": "HighlightedValueMemberPath"},
       {"names":[{"platform": "Blazor", "mappedType": "CategorySeriesMarkerCollisionAvoidance","mappedName": "MarkerCollisionAvoidance"}], "originalName": "MarkerCollisionAvoidance"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ScrollIntoView"}], "originalName": "ScrollIntoView"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "TrendLineBrush"}], "originalName": "TrendLineBrush"},

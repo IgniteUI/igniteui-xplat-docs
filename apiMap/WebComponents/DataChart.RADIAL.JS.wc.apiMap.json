@@ -16,6 +16,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getSeriesValue"}], "originalName": "GetSeriesValue"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "hasValueAxis"}], "originalName": "HasValueAxis"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "highlightedValueMemberPath"}], "originalName": "HighlightedValueMemberPath"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isValueAxisInverted"}], "originalName": "IsValueAxisInverted"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "scrollIntoView"}], "originalName": "ScrollIntoView"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "trendLineBrush"}], "originalName": "TrendLineBrush"},

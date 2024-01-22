@@ -2,6 +2,40 @@
   "extraFiles": ["igx-local-data-source-module.ts"],
   "types":[
   {
+    "originalName": "FilterExpressionParsingHelper",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "FilterExpressionParsingHelper.ts","mappedName": "FilterExpressionParsingHelper"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+  },
+  {
+    "originalName": "FlatDataProviderJoinType",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "FlatDataProviderJoinType.ts","mappedName": "FlatDataProviderJoinType"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "FlatDataProviderJoinType","mappedName": "Join"}], "originalName": "Join"},
+      {"names":[{"platform": "Angular", "mappedType": "FlatDataProviderJoinType","mappedName": "Left"}], "originalName": "Left"},
+      {"names":[{"platform": "Angular", "mappedType": "FlatDataProviderJoinType","mappedName": "Right"}], "originalName": "Right"} ]
+  },
+  {
+    "originalName": "FlatDataProviderJoinCollisionType",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "FlatDataProviderJoinCollisionType.ts","mappedName": "FlatDataProviderJoinCollisionType"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "FlatDataProviderJoinCollisionType","mappedName": "Auto"}], "originalName": "Auto"},
+      {"names":[{"platform": "Angular", "mappedType": "FlatDataProviderJoinCollisionType","mappedName": "LeftOnly"}], "originalName": "LeftOnly"},
+      {"names":[{"platform": "Angular", "mappedType": "FlatDataProviderJoinCollisionType","mappedName": "PreferLeft"}], "originalName": "PreferLeft"},
+      {"names":[{"platform": "Angular", "mappedType": "FlatDataProviderJoinCollisionType","mappedName": "PreferRight"}], "originalName": "PreferRight"},
+      {"names":[{"platform": "Angular", "mappedType": "FlatDataProviderJoinCollisionType","mappedName": "RightOnly"}], "originalName": "RightOnly"} ]
+  },
+  {
     "originalName": "AsyncVirtualDataSourceDataProviderWorkerSettings",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "packageName": "igniteui-core",
@@ -766,6 +800,20 @@
       {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "keys"}], "originalName": "Keys"},
       {"names":[{"platform": "Angular", "mappedType": "TransactionType","mappedName": "transactionType"}], "originalName": "TransactionType"},
       {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "values"}], "originalName": "Values"} ]
+  },
+  {
+    "originalName": "ContainsPropertyDataSourceFilterExpressionVisitor",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeName": "FilterExpressionVisitor",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "ContainsPropertyDataSourceFilterExpressionVisitor.ts","mappedName": "ContainsPropertyDataSourceFilterExpressionVisitor"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "contains"}], "originalName": "Contains"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "visitPropertyReferenceExpression"}], "originalName": "VisitPropertyReferenceExpression"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "_contains"}], "originalName": "_contains"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "_targetProperty"}], "originalName": "_targetProperty"} ]
   },
   {
     "originalName": "DataSourceSummaryScope",

@@ -146,6 +146,8 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getSeriesValueType"}], "originalName": "GetSeriesValueType"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getSeriesValueTypePosition"}], "originalName": "GetSeriesValueTypePosition"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getSeriesValueTypePositionFromValue"}], "originalName": "GetSeriesValueTypePositionFromValue"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "highlightedXMemberPath"}], "originalName": "HighlightedXMemberPath"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "highlightedYMemberPath"}], "originalName": "HighlightedYMemberPath"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isCustomScatterMarkerStyleAllowed"}], "originalName": "IsCustomScatterMarkerStyleAllowed"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isCustomScatterStyleAllowed"}], "originalName": "IsCustomScatterStyleAllowed"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isScatter"}], "originalName": "IsScatter"},
