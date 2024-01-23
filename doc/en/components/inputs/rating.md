@@ -22,6 +22,16 @@ npm install {PackageWebComponents}
 
 <!-- end: WebComponents -->
 
+<!-- React -->
+
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+<!-- end: React -->
+
 Before using the `Rating`, you need to register it as follows:
 
 <!-- Blazor -->
@@ -51,14 +61,6 @@ For a complete introduction to the {ProductName}, read the [*Getting Started*](.
 <!-- end: WebComponents -->
 
 <!-- React -->
-First, you need to the install the corresponding {ProductName} npm package by running the following command:
-
-```cmd
-npm install igniteui-react
-```
-
-You will then need to import the `Rating`, its necessary CSS, and register its module, like so:
-
 ```tsx
 import { IgrRatingModule, IgrRating } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
@@ -79,6 +81,12 @@ The simplest way to start using the `Rating` is as follows:
 <IgbRating></IgbRating>
 ```
 <!-- end: Blazor -->
+
+<!-- React -->
+```tsx
+  <IgrRating></IgrRating>
+```
+<!-- end: React -->
 
 This will create a five-star rating component that can be used to input and read data from.
 
@@ -108,6 +116,28 @@ The `Rating` component allows you to use custom symbols in place of the default 
 </IgbRating>
 ```
 <!-- end: Blazor -->
+
+<!-- React -->
+```tsx
+  <IgrRating label="Rate Experience" step=".5" size="large" hoverPreview="true">
+    <IgrRatingSymbol key="0">
+        <IgrIcon ref={this.iconRef} name='heart' collection="material" key="heart0"></IgrIcon>
+    </IgrRatingSymbol>
+    <IgrRatingSymbol key="1">
+        <IgrIcon  name='heart' collection="material" key="heart1"></IgrIcon>                           
+    </IgrRatingSymbol>
+    <IgrRatingSymbol key="2">
+      	<IgrIcon  name='heart' collection="material" key="heart2"></IgrIcon>                           
+    </IgrRatingSymbol>
+    <IgrRatingSymbol key="3">
+       	<IgrIcon  name='heart' collection="material" key="heart3"></IgrIcon>                           
+    </IgrRatingSymbol>
+    <IgrRatingSymbol key="4">
+       	<IgrIcon  name='heart' collection="material" key="heart4"></IgrIcon>                           
+    </IgrRatingSymbol>                        
+</IgrRating> 
+```
+<!-- end: React -->
 
 `sample="/inputs/rating/custom", height="150", alt="{Platform} Rating Custom Symbols Example"`
 
@@ -141,7 +171,34 @@ The {ProductName} Rating component has a single selection mode that allows users
 ```
 <!-- end: Blazor -->
 
-`sample="/inputs/rating/custom", height="150", alt="{Platform} Rating with Single Selection"`
+<!-- React -->
+```tsx
+  <IgrRating single="true">
+    <IgrRatingSymbol key="0">                           
+	<div key="div0">😣</div>	
+	<div key="empty-div0" slot="empty">😣</div>
+    </IgrRatingSymbol>
+    <IgrRatingSymbol key="1">                           
+ 	<div key="div1">😣</div>
+        <div key="empty-div1" slot="empty">😣</div>
+    </IgrRatingSymbol>
+    <IgrRatingSymbol key="2">                           
+        <div key="div2">😣</div>
+        <div key="empty-div2" slot="empty">😣</div>
+    </IgrRatingSymbol>
+    <IgrRatingSymbol key="3">                           
+        <div key="div3">😣</div>
+        <div key="empty-div3" slot="empty">😣</div>
+    </IgrRatingSymbol>
+    <IgrRatingSymbol key="4">                           
+        <div key="div4">😣</div>
+        <div key="empty-div4" slot="empty">😣</div>
+    </IgrRatingSymbol>                         
+</IgrRating>
+```
+<!-- end: React -->
+
+`sample="/inputs/rating/single-selection", height="150", alt="{Platform} Rating with Single Selection"`
 
 
 > Keep in mind that the `step` attribute doesn't work with single selection mode.
@@ -166,6 +223,15 @@ The {ProductName} Rating component allows users to use different icons/elements 
 </IgbRatingSymbol>
 ```
 <!-- end: Blazor -->
+
+<!-- React -->
+```tsx
+<IgrRatingSymbol key="0">
+    <div key="div0"><IgrIcon name='bandage' collection="material" key="default0"></IgrIcon></div>
+    <div key="empty-div0" slot='empty'><IgrIcon name='bacteria' collection="material" key="empty0"></IgrIcon></div> 
+</IgrRatingSymbol> 
+```
+<!-- end: React -->
 
 `sample="/inputs/rating/empty", height="150", alt="{Platform} Rating with Empty and Selected state"`
 
@@ -205,6 +271,10 @@ The `hover-preview` attribute makes the component show the possible outcome of u
 The `HoverPreview` attribute makes the component show the possible outcome of user selection on hover. It is useful when you want to give instant feedback about what the selected value could be.
 <!-- end: Blazor -->
 
+<!-- React -->
+The `hoverPreview` attribute makes the component show the possible outcome of user selection on hover. It is useful when you want to give instant feedback about what the selected value could be.
+<!-- end: React -->
+
 #### Read-Only
 
 The `ReadOnly` attribute allows the users to set the `Rating` in read-only mode. This attribute is useful when you want to use the component for information purposes only.
@@ -233,6 +303,10 @@ The `Rating` component emits two separate events - `igcHover` and `igcChange`.
 The `Rating` component emits two separate events - `Hover` and `Change`.
 <!-- end: Blazor -->
 
+<!-- React -->
+The `Rating` component emits two separate events - `hover` and `change`.
+<!-- end: React -->
+
 #### Hover Event
 
 <!-- WebComponents -->
@@ -243,6 +317,10 @@ The `igcHover` event is fired when hovering over a symbol. It provides the value
 The `Hover` event is fired when hovering over a symbol. It provides the value of the symbol under the mouse cursor. Useful for creating custom value labels and readouts.
 <!-- end: Blazor -->
 
+<!-- React -->
+The `hover` event is fired when hovering over a symbol. It provides the value of the symbol under the mouse cursor. Useful for creating custom value labels and readouts.
+<!-- end: React -->
+
 #### Change Event
 
 <!-- WebComponents -->
@@ -252,6 +330,10 @@ The `igcChange` event is fired when the selected value changes.
 <!-- Blazor -->
 The `Change` event is fired when the selected value changes.
 <!-- end: Blazor -->
+
+<!-- React -->
+The `change` event is fired when the selected value changes.
+<!-- end: React -->
 
 ## Styling
 
