@@ -30,6 +30,8 @@
       {"names":[{"platform": "Blazor", "mappedType": "String","mappedName": "TransitionInEasingFunction"}], "originalName": "TransitionInEasingFunction"},
       {"names":[{"platform": "Blazor", "mappedType": "CategoryTransitionInMode","mappedName": "TransitionInMode"}], "originalName": "TransitionInMode"},
       {"names":[{"platform": "Blazor", "mappedType": "TransitionInSpeedType","mappedName": "TransitionInSpeedType"}], "originalName": "TransitionInSpeedType"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "TransitionOutDuration"}], "originalName": "TransitionOutDuration"},
+      {"names":[{"platform": "Blazor", "mappedType": "String","mappedName": "TransitionOutEasingFunction"}], "originalName": "TransitionOutEasingFunction"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "XAxisEnhancedIntervalPreferMoreCategoryLabels"}], "originalName": "XAxisEnhancedIntervalPreferMoreCategoryLabels"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "XAxisGap"}], "originalName": "XAxisGap"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "XAxisInterval"}], "originalName": "XAxisInterval"},

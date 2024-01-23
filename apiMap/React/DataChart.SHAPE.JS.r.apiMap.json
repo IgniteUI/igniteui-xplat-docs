@@ -156,6 +156,7 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getItem"}], "originalName": "GetItem"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "highlightedShapeMemberPath"}], "originalName": "HighlightedShapeMemberPath"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isCustomShapeMarkerStyleAllowed"}], "originalName": "IsCustomShapeMarkerStyleAllowed"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isCustomShapeStyleAllowed"}], "originalName": "IsCustomShapeStyleAllowed"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}], "originalName": "IsMarkerlessDisplayPreferred"},

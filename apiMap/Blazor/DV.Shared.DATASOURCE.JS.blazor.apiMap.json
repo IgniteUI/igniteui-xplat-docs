@@ -1,5 +1,13 @@
 {  "types":[
   {
+    "originalName": "FilterExpressionParsingHelper",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "FilterExpressionParsingHelper.cs","mappedName": "FilterExpressionParsingHelper"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+  },
+  {
     "originalName": "AsyncVirtualDataSourceDataProviderWorkerSettings",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "packageName": "igniteui-core",
@@ -479,6 +487,20 @@
       {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "Values"}], "originalName": "Values"} ]
   },
   {
+    "originalName": "ContainsPropertyDataSourceFilterExpressionVisitor",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeName": "FilterExpressionVisitor",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "ContainsPropertyDataSourceFilterExpressionVisitor.cs","mappedName": "ContainsPropertyDataSourceFilterExpressionVisitor"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "contains"}], "originalName": "Contains"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "visitPropertyReferenceExpression"}], "originalName": "VisitPropertyReferenceExpression"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "_contains"}], "originalName": "_contains"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "_targetProperty"}], "originalName": "_targetProperty"} ]
+  },
+  {
     "originalName": "IDataSource",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "packageName": "igniteui-core",
@@ -607,6 +629,14 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetItemValue"}], "originalName": "SetItemValue"},
       {"names":[{"platform": "Blazor", "mappedType": "DataSourceSummaryScope","mappedName": "SummaryScope"}], "originalName": "SummaryScope"},
       {"names":[{"platform": "Blazor", "mappedType": "DataSourceDataProviderUpdateNotifier","mappedName": "UpdateNotifier"}], "originalName": "UpdateNotifier"} ]
+  },
+  {
+    "originalName": "IDataSourceClonableDataProvider",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "IDataSourceClonableDataProvider.cs","mappedName": "DataSourceClonableDataProvider"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Clone"}], "originalName": "Clone"} ]
   },
   {
     "originalName": "IDataSourceDataProviderUpdateNotifier",

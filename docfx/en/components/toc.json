@@ -1431,7 +1431,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Accordion",
     "href": "layouts/accordion.md",
     "status": ""
@@ -1641,7 +1641,7 @@
     ]
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Dropdown",
     "href": "inputs/dropdown.md"
   },
@@ -1672,7 +1672,7 @@
     "href": "inputs/input.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "Blazor"],
     "name": "Mask Input",
     "href": "inputs/mask-input.md"
   },
@@ -1687,12 +1687,12 @@
     "href": "inputs/radio.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Select",
     "href": "inputs/select.md"    
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Rating",
     "href": "inputs/rating.md"
   },

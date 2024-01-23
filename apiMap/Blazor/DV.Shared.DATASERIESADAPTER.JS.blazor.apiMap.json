@@ -6,6 +6,7 @@
     "names":[{"platform": "Blazor","fileName": "IDataSeriesAdapterRule.cs","mappedName": "IDataSeriesAdapterRule"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
       {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"} ]
   },
   {
@@ -20,6 +21,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "clearDataSeries"}], "originalName": "ClearDataSeries"},
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "excludedProperties"}], "originalName": "ExcludedProperties"},
       {"names":[{"platform": "Blazor", "mappedType": "DataSourceLocalDataProvider","mappedName": "getCurrentDataSource"}], "originalName": "GetCurrentDataSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceLocalDataProvider","mappedName": "getCurrentHighlightingDataSource"}], "originalName": "GetCurrentHighlightingDataSource"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getCurrentPath"}], "originalName": "GetCurrentPath"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getCurrentPathSegment"}], "originalName": "GetCurrentPathSegment"},
       {"names":[{"platform": "Blazor", "mappedType": "DataSeries","mappedName": "getDataSeriesAt"}], "originalName": "GetDataSeriesAt"},
@@ -32,11 +34,13 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "localize"}], "originalName": "Localize"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbDataSeriesAdapterImplementation","mappedName": "owner"}], "originalName": "Owner"},
       {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "popDataSource"}], "originalName": "PopDataSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "popHighlightingDataSource"}], "originalName": "PopHighlightingDataSource"},
       {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "popParentTitle"}], "originalName": "PopParentTitle"},
       {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "popPath"}], "originalName": "PopPath"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "popSubProvider"}], "originalName": "PopSubProvider"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "populateDataSeries"}], "originalName": "PopulateDataSeries"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "pushDataSource"}], "originalName": "PushDataSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "pushHighlightingDataSource"}], "originalName": "PushHighlightingDataSource"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "pushParentTitle"}], "originalName": "PushParentTitle"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "pushPath"}], "originalName": "PushPath"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "recurseRules"}], "originalName": "RecurseRules"},
@@ -44,6 +48,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "IgbDataSeriesCollection","mappedName": "_dataSeries"}], "originalName": "_dataSeries"},
       {"names":[{"platform": "Blazor", "mappedType": "Stack","mappedName": "_dataSources"}], "originalName": "_dataSources"},
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "_excludedProeprties"}], "originalName": "_excludedProeprties"},
+      {"names":[{"platform": "Blazor", "mappedType": "Stack","mappedName": "_highlightingDataSources"}], "originalName": "_highlightingDataSources"},
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "_includedProperties"}], "originalName": "_includedProperties"},
       {"names":[{"platform": "Blazor", "mappedType": "Stack","mappedName": "_parentTitles"}], "originalName": "_parentTitles"},
       {"names":[{"platform": "Blazor", "mappedType": "Stack","mappedName": "_paths"}], "originalName": "_paths"},
@@ -133,6 +138,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "DataSeriesMemberPathHint","mappedName": "getMemberPathHintAt"}], "originalName": "GetMemberPathHintAt"},
       {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "getMemberPathHintCount"}], "originalName": "GetMemberPathHintCount"},
       {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "hasMatchingHint"}], "originalName": "HasMatchingHint"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "highlightedData"}], "originalName": "HighlightedData"},
       {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"},
@@ -181,6 +187,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "except"}], "originalName": "Except"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getDataSourceTitle"}], "originalName": "GetDataSourceTitle"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
       {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"} ]
   },
   {
@@ -192,6 +199,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "createScatterSeries"}], "originalName": "CreateScatterSeries"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
       {"names":[{"platform": "Blazor", "mappedType": "List","mappedName": "getXProps"}], "originalName": "GetXProps"},
       {"names":[{"platform": "Blazor", "mappedType": "List","mappedName": "getYProps"}], "originalName": "GetYProps"},
       {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "isXProp"}], "originalName": "IsXProp"},
@@ -208,6 +216,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "collectionTransformationThreshold"}], "originalName": "CollectionTransformationThreshold"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
       {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"} ]
   },
   {
@@ -220,6 +229,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "distinctCheckThreshold"}], "originalName": "DistinctCheckThreshold"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "fallbackTypeIfUnsupported"}], "originalName": "FallbackTypeIfUnsupported"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
       {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"},
       {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "useColumnThreshold"}], "originalName": "UseColumnThreshold"} ]
   }]

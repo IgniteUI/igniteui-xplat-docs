@@ -22,6 +22,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "exportSerializedVisualModel"}], "originalName": "ExportSerializedVisualModel"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "exportVisualModel"}], "originalName": "ExportVisualModel"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isClosing"}], "originalName": "IsClosing"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isFixed"}], "originalName": "IsFixed"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isFocusable"}], "originalName": "IsFocusable"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isHitTestVisible"}], "originalName": "IsHitTestVisible"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isPointerEnabled"}], "originalName": "IsPointerEnabled"},
@@ -30,7 +31,8 @@
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "pointerBackground"}], "originalName": "PointerBackground"},
       {"names":[{"platform": "WebComponents", "mappedType": "PopupPointerPosition","mappedName": "pointerPosition"}], "originalName": "PointerPosition"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "pointerSize"}], "originalName": "PointerSize"},
-      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "showRelativeToExclusionRect"}], "originalName": "ShowRelativeToExclusionRect"} ]
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "showRelativeToExclusionRect"}], "originalName": "ShowRelativeToExclusionRect"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "useTopLayer"}], "originalName": "UseTopLayer"} ]
   },
   {
     "originalName": "PopupAlignment",
