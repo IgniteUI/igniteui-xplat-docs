@@ -243,6 +243,10 @@ function updateApiFormat(jsonContent) {
             if (t.originalBaseTypeName !== undefined) typeInfo += '    "originalBaseTypeName":"' + t.originalBaseTypeName + '",\n'; 
             if (t.isEnum !== undefined) typeInfo += '    "isEnum":' + t.isEnum + ',\n'; 
             
+            if (!t.packageName) {
+                t.packageName = "igniteui-core";
+            }
+
             typeInfo += '    "packageName":"' + t.packageName + '",\n'; 
 
             if (t.names && t.names.length > 0) {

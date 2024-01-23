@@ -82,6 +82,7 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getSeriesValueType"}], "originalName": "GetSeriesValueType"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getSeriesValueTypePosition"}], "originalName": "GetSeriesValueTypePosition"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getSeriesValueTypePositionFromValue"}], "originalName": "GetSeriesValueTypePositionFromValue"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "highlightedValueMemberPath"}], "originalName": "HighlightedValueMemberPath"},
       {"names":[{"platform": "Angular", "mappedType": "CategorySeriesMarkerCollisionAvoidance","mappedName": "markerCollisionAvoidance"}], "originalName": "MarkerCollisionAvoidance"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "scrollIntoView"}], "originalName": "ScrollIntoView"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "trendLineBrush"}], "originalName": "TrendLineBrush"},
