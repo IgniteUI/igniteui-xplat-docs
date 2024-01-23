@@ -1,7 +1,7 @@
 ---
 title: Use {ProductName} components in Next.js application | Infragistics
-_description: Use Infragistics' {Platform} components to create apps and improve data visualization with the world’s fastest, virtualized, real-time {Platform} data grid and streaming financial and business and financial charts in Next.js.
-_keywords: {ProductName}, Infragistics, Next.js
+_description: Use Infragistics' {Platform} components to create apps and improve data visualization with the world’s fastest {Platform} data grid and charts in Next.js.
+_keywords: {ProductName} Next.js, {ProductName} Components in Next.js, Infragistics
 mentionedTypes: []
 ---
 
