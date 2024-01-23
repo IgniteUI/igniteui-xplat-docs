@@ -45,6 +45,31 @@ defineComponents(IgcAccordionComponent);
 
 <!-- end: WebComponents -->
 
+<!-- React -->
+
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`Accordion` および `ExpansionPanel` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import {
+  IgrAccordion,
+  IgrAccordionModule,
+  IgrExpansionPanel,
+  IgrExpansionPanelModule,
+} from "igniteui-react";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
+
+IgrAccordionModule.register();
+IgrExpansionPanelModule.register();
+```
+
+<!-- end: React -->
+
 `Accordion` を使用する前に、次のように登録する必要があります:
 
 ```razor
@@ -108,6 +133,19 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbAccordionModule));
 </IgbAccordion>
 ```
 
+```tsx
+<IgrAccordion singleExpand={true}>
+  <IgrExpansionPanel>
+    <div slot="title">Title Panel 1</div>
+    <div>Content Panel 1</div>
+  </IgrExpansionPanel>
+  <IgrExpansionPanel>
+    <div slot="title">Title Panel 2</div>
+    <div>Content Panel 2</div>
+  </IgrExpansionPanel>
+</IgrAccordion>
+```
+
 <!-- WebComponents -->
 
 `Panels` アクセサーを使用して、`Accordion` のすべての子の拡張パネルを含むコレクションへの参照を取得できます。
@@ -123,6 +161,7 @@ constructor() {
 ```
 
 <!-- end: WebComponents -->
+
 上記で示したように、`SingleExpand` プロパティを使用すると、一度に 1 つまたは複数のパネルを展開できるかどうかを設定できます。
 
 `HideAll` メソッドと `ShowAll` メソッドを使用すると、`Accordion` のすべての `ExpansionPanel` をプログラムでそれぞれ省略したり展開したりできます。

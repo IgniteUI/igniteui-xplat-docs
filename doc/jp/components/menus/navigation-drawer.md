@@ -428,6 +428,10 @@ public onMenuIconClick() {
         </IgrNavDrawerItem>
     </div>
 </IgrNavDrawer>
+
+<IgrButton clicked={this.onButtonClick}>
+    <span>Toggle</span>
+</IgrButton>
 ```
 
 以下は結果です:
