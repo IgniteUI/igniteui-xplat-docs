@@ -1686,7 +1686,7 @@
     "href": "inputs/select.md"    
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Rating",
     "href": "inputs/rating.md"
   },
