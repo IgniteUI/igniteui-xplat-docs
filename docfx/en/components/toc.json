@@ -1425,7 +1425,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Accordion",
     "href": "layouts/accordion.md",
     "status": ""
