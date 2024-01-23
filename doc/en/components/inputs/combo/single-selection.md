@@ -39,10 +39,12 @@ Here's how to select/deselect an item programmatically in a single selection com
 
 #### Selecting items:
 
+<!-- WebComponents -->
 ```ts
 // select the item matching the 'BG01' value of the value key field.
 combo.select('BG01');
 ```
+<!-- end: WebComponents -->
 
 ```razor
 <IgbCombo SingleSelect @ref="Combo"></IgbCombo>
@@ -54,19 +56,23 @@ combo.select('BG01');
 }
 ```
 
+<!-- React -->
 ```tsx
 // select the item matching the 'BG01' value of the value key field.
 comboRef.current.select('BG01');
 ```
+<!-- end: React -->
 
 To deselect an item without making a new selection, call the `deselect` method.
 
 #### Deselecting items:
 
+<!-- WebComponents -->
 ```ts
 // deselect the item matching the 'BG01' value of the value key field.
 combo.deselect('BG01');
 ```
+<!-- end: WebComponents -->
 
 ```razor
 <IgbCombo SingleSelect @ref="Combo"></IgbCombo>
@@ -78,10 +84,12 @@ combo.deselect('BG01');
 }
 ```
 
+<!-- React -->
 ```tsx
 // deselect the item matching the 'BG01' value of the value key field.
-comboRef.current.select('BG01');
+comboRef.current.deselect('BG01');
 ```
+<!-- end: React -->
 
 ## Disabled features
 

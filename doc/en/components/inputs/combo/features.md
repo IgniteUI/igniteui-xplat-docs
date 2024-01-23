@@ -57,6 +57,24 @@ IgrSwitchModule.register();
 
 Then, we will add event handlers to all switch components so that we can control the combo features by toggling the switches:
 
+```tsx
+const comboRef = useRef<IgrCombo>(null);
+const switchCaseSensitiveRef = useRef<IgrSwitch>(null);
+
+const disableFiltering = (switchComponent: IgrSwitch) => {
+    comboRef.current.disableFiltering =
+    switchCaseSensitiveRef.current.disabled = switchComponent.checked;
+};
+
+const showCaseSencitiveIcon = (switchComponent: IgrSwitch) => {
+    comboRef.current.caseSensitiveIcon = switchComponent.checked;
+};
+
+const disableCombo = (switchComponent: IgrSwitch) => {
+    comboRef.current.disabled = switchComponent.checked;
+};
+```
+
 ```ts
 let combo = document.getElementById('combo') as IgcComboComponent<City>;
 
@@ -117,24 +135,6 @@ switchDisable.addEventListener("igcChange", () => {
 }
 ```
 
-```tsx
-const comboRef = useRef<IgrCombo>(null);
-const switchCaseSensitiveRef = useRef<IgrSwitch>(null);
-
-const disableFiltering = (switchComponent: IgrSwitch) => {
-    comboRef.current.disableFiltering =
-    switchCaseSensitiveRef.current.disabled = switchComponent.checked;
-};
-
-const showCaseSencitiveIcon = (switchComponent: IgrSwitch) => {
-    comboRef.current.caseSensitiveIcon = switchComponent.checked;
-};
-
-const disableCombo = (switchComponent: IgrSwitch) => {
-    comboRef.current.disabled = switchComponent.checked;
-};
-```
-
 Note that grouping is enabled/disabled by setting the `GroupKey` property to a corresponding data source field:
 
 ```ts
@@ -159,7 +159,7 @@ switchGroup.addEventListener("igcChange", () => {
 ```tsx
 const enableGrouping = (switchComponent: IgrSwitch) => {
     comboRef.current.groupKey = switchComponent.checked ? "country" : undefined;
-  };
+};
 ```
 
 ## Features
@@ -188,6 +188,7 @@ The {ProductName} `ComboBox` component exposes one more filtering property that 
 
 The following code snippet shows how to filter the cities from our data source by country instead of name. We are also making the filtering case-sensitive by default:
 
+<!-- WebComponents -->
 ```ts
 const options = {
     filterKey: 'country',
@@ -196,7 +197,9 @@ const options = {
 
 combo.filteringOptions = options;
 ```
+<!-- end: WebComponents -->
 
+<!-- React -->
 ```tsx
 const options = {
     filterKey: 'country',
@@ -205,6 +208,7 @@ const options = {
 
 comboRef.current.filteringOptions = options;
 ```
+<!-- end: React -->
 
 ### Grouping
 
