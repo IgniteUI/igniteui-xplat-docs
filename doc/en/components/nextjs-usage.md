@@ -253,3 +253,14 @@ export default function GridDynamicComponent() {
 
 > [!Note]
 > Implementing lazy loading for components can enhance performance, but it is advisable to use it exclusively when the components are not immediately visible on the page.
+
+## Additional Resources
+
+* [Ignite UI for React](../components/general-getting-started.md)
+* [Grid Overview](../components/grids/data-grid.md)
+* [Next.js Documentation](https://nextjs.org/docs)
+
+Our community is active and always welcoming to new ideas.
+
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})
