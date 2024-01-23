@@ -62,6 +62,26 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 
 <!-- end: Blazor -->
 
+<!-- React -->
+
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`Select` および `SelectItem` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrSelectModule, IgrSelect, IgrSelectItemModule, IgrSelectItem } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrSelectModule.register();
+IgrSelectItemModule.register();
+```
+
+<!-- end: React -->
+
 > [!Note]
 > ヘッダーとグループの選択コンポーネントは、使用しない限り必須ではないことに注意してください。
 
@@ -88,6 +108,19 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 </IgbSelect>
 ```
 <!-- end: Blazor -->
+
+<!-- React -->
+
+```tsx
+<IgrSelect>
+  <IgrSelectItem value="Orange"><span>Orange</span></IgrSelectItem>
+  <IgrSelectItem value="Apple"><span>Apple</span></IgrSelectItem>
+  <IgrSelectItem value="Banana"><span>Banana</span></IgrSelectItem>
+  <IgrSelectItem value="Mango"><span>Mango</span></IgrSelectItem>
+</IgrSelect>
+```
+
+<!-- end: React -->
 
 ### Select (選択)
 
@@ -122,6 +155,18 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 </IgbSelect>
 ```
 <!-- end: Blazor -->
+
+<!-- React -->
+
+```tsx
+<IgrSelect>
+  <IgrSelectHeader>
+    <span>Tasks</span>
+  </IgrSelectHeader>
+</IgrSelect>
+```
+
+<!-- end: React -->
 
 ### Group (グループ)
 
@@ -188,6 +233,42 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 ```
 <!-- end: Blazor -->
 
+<!-- React -->
+
+```tsx
+<IgrSelect>
+  <IgrSelectGroup>
+    <span slot="label">Europe</span>
+
+    <IgrSelectItem>
+      <span slot="prefix">
+        <IgrIcon name="place" ref={iconPlace} collection="material"></IgrIcon>
+      </span>
+      <span> Germany </span>
+      <span slot="suffix">DE</span>
+    </IgrSelectItem>
+
+    <IgrSelectItem>
+      <span slot="prefix">
+        <IgrIcon name="place" ref={iconPlace} collection="material"></IgrIcon>
+      </span>
+      <span> France </span>
+      <span slot="suffix">FR</span>
+    </IgrSelectItem>
+
+    <IgrSelectItem>
+      <span slot="prefix">
+        <IgrIcon name="place" ref={iconPlace} collection="material"></IgrIcon>
+      </span>
+      <span> Spain </span>
+      <span slot="suffix">ES</span>
+    </IgrSelectItem>
+  </IgrSelectGroup>
+</IgrSelect>
+```
+
+<!-- end: React -->
+
 ## 検証
 
 さらに、`Select` は、`Required`、`Disabled`、`Autofocus` など、ほとんどの `Input` プロパティをサポートします。コンポーネントは、その検証にバインドされたメソッドも公開します。
@@ -215,7 +296,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 > [!Note]
 > `Select` コンポーネントは、項目の**単一**選択のみをサポートします。
 
-<!-- WebComponents -->
+<!-- WebComponents, React -->
 
 ## スタイル設定
 
@@ -253,7 +334,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 
 
 
-<!-- end: WebComponents -->
+<!-- end: WebComponents, React -->
 
 
 ## API リファレンス
