@@ -3,7 +3,7 @@ title: {Platform} Chart Trendlines | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Chart Trendlines
 _keywords: {Platform} Charts, Trendlines, Infragistics
 _language: kr
-mentionedTypes: ["FinancialChart", "CategoryChart", "XamDataChart", "TrendLineType"]
+mentionedTypes: ["DomainChart", "FinancialChart", "CategoryChart", "XamDataChart", "TrendLineType"]
 ---
 
 # {Platform} Chart Trendlines
