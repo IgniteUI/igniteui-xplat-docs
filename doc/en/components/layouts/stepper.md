@@ -37,6 +37,24 @@ defineComponents(IgcStepperComponent);
 For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Stepper`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrStepperModule, IgrStepper, IgrStep } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrStepperModule.register();
+```
+
+<!-- end: React -->
 ```razor
 // in Program.cs file
 
@@ -89,6 +107,16 @@ Steps can be declared using one of the following approaches.
 </IgbStepper>
 ```
 
+```tsx
+<IgrStepper>
+    {this.StepsData.map(item => 
+        <IgrStep key={item.title} disabled={item.disabled}>
+            <p slot="title">{item.title}</p>
+        </IgrStep>
+    }
+</IgrStepper>
+```
+
 - Creating static steps
 
 ```html
@@ -111,6 +139,17 @@ Steps can be declared using one of the following approaches.
        <p slot="title">Step 2</p>
     </IgbStep>
 </IgbStepper>
+```
+
+```tsx
+<IgrStepper>
+    <IgrStep>
+       <p slot="title">Step 1</p>
+    </IgrStep>
+     <IgrStep>
+       <p slot="title">Step 2</p>
+    </IgrStep>
+</IgrStepper>
 ```
 For each step the user has the ability to configure indicator, title and subtitle using the `Indicator`, `Title` and `Subtitle` slots as follows:
 
@@ -143,6 +182,20 @@ For each step the user has the ability to configure indicator, title and subtitl
     </IgbStep>
 </IgbStepper>
 ```
+
+```tsx
+<IgrStepper>
+    <IgrStep>
+        <IgrIcon slot="indicator" name="home" collection="material" />
+        <p slot="title">Home</p>
+        <p slot="subtitle">Home Sub Title</p>
+        <div>
+            Step Content
+            ...
+        </div>
+    </IgrStep>
+</IgrStepper>
+```
 <img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 500px" src="../../images/stepper/stepper-step.png"/>
 
 ### Orientation in {Platform} Stepper
@@ -163,23 +216,6 @@ The sample below demonstrates how stepper orientation and titles position could 
 
 `sample="/layouts/stepper/orientation", height="528", alt="{Platform} Stepper Orientation Example"`
 
-
-
-<div class="divider--half"></div>
-
-### Stepper Animations
-
-The {Platform} `Stepper` Animations provide the end-users with a beautiful experience interacting with the defined steps. The available animation options differ depending on the orientation of the stepper.
-
-When the stepper is horizontally orientated, it is configured to use the `slide` animation by default. It also supports `fade` as an alternative. The animations are configured through the `horizontalAnimation` input.
-
-In a vertically orientated layout, the animation type could be defined using the `verticalAnimation` property. By default, its value is set to `grow` and the user has the ability to set it to `fade` as well.
-
-Setting `none` to both animation type inputs disables stepper animations.
-
-The `Stepper` component also gives you the ability to configure the duration of the transition between the steps. This could be achieved through the `animationDuration` property, which takes a number as an argument and it is common to both orientations. The default value is set to 320ms.
-
-`sample="/layouts/stepper/animations", height="600", alt="{Platform} Stepper Animations Example"`
 
 
 <div class="divider--half"></div>
@@ -269,9 +305,25 @@ The sample below demonstrates all exposed step types and how they could be chang
 
 `sample="/layouts/stepper/steptypes", height="300", alt="{Platform} Step Types Example"`
 
+<div class="divider--half"></div>
 
+<!-- WebComponents -->
+### Stepper Animations
+
+The {Platform} `Stepper` Animations provide the end-users with a beautiful experience interacting with the defined steps. The available animation options differ depending on the orientation of the stepper.
+
+When the stepper is horizontally orientated, it is configured to use the `slide` animation by default. It also supports `fade` as an alternative. The animations are configured through the `horizontalAnimation` input.
+
+In a vertically orientated layout, the animation type could be defined using the `verticalAnimation` property. By default, its value is set to `grow` and the user has the ability to set it to `fade` as well.
+
+Setting `none` to both animation type inputs disables stepper animations.
+
+The `Stepper` component also gives you the ability to configure the duration of the transition between the steps. This could be achieved through the `animationDuration` property, which takes a number as an argument and it is common to both orientations. The default value is set to 320ms.
+
+`sample="/layouts/stepper/animations", height="600", alt="{Platform} Stepper Animations Example"`
 
 <div class="divider--half"></div>
+<!-- end: WebComponents -->
 
 ## Keyboard Navigation
 
