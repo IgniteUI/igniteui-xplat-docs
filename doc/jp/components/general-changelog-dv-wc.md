@@ -22,8 +22,6 @@ namespace: Infragistics.Controls.Charts
 * 新規機能:
     - [状態保持](grids/grid/state-persistence.md)
 
-## **{PackageVerChanges-23-2}**
-
 ### {PackageGrids} (Toolbar - ベータ版)
 
 * クリップボードを介してチャートを画像に保存するための新しいツールがデフォルトのツールとして追加されました。
