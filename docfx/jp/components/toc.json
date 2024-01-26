@@ -1423,7 +1423,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "アコーディオン",
     "href": "layouts/accordion.md",
     "status": ""
@@ -1633,7 +1633,7 @@
     ]
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "ドロップダウン",
     "href": "inputs/dropdown.md"
   },
@@ -1664,7 +1664,7 @@
     "href": "inputs/input.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "Blazor"],
     "name": "マスク入力",
     "href": "inputs/mask-input.md"
   },
@@ -1679,12 +1679,12 @@
     "href": "inputs/radio.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "選択",
     "href": "inputs/select.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "評価",
     "href": "inputs/rating.md"
   },

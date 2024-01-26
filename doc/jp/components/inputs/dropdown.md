@@ -57,6 +57,8 @@ import { IgrDropdownModule, IgrDropdown } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
 IgrDropdownModule.register();
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 <!-- end: React -->
 
 <!-- Blazor -->
@@ -81,6 +83,17 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbDropdownModule));
     <igc-dropdown-item>Option 2</igc-dropdown-item>
     <igc-dropdown-item>Option 3</igc-dropdown-item>
 </igc-dropdown>
+```
+
+```tsx
+<IgrDropdown>
+    <div slot="target">
+        <IgrButton><span>Options</span></IgrButton>
+    </div>
+    <IgrDropdownItem><span>Option 1</span></IgrDropdownItem>
+    <IgrDropdownItem><span>Option 2</span></IgrDropdownItem>
+    <IgrDropdownItem><span>Option 3</span></IgrDropdownItem>
+</IgrDropdown>
 ```
 
 ### Target (ターゲット)

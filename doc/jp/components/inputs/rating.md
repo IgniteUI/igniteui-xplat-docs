@@ -23,6 +23,16 @@ npm install {PackageWebComponents}
 
 <!-- end: WebComponents -->
 
+<!-- React -->
+
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+<!-- end: React -->
+
 `Rating` を使用する前に、次のように登録する必要があります:
 
 <!-- Blazor -->
@@ -52,14 +62,6 @@ defineComponents(IgcRatingComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
-
-```cmd
-npm install igniteui-react
-```
-
-次に、以下のように、`Rating` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
-
 ```tsx
 import { IgrRatingModule, IgrRating } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
@@ -81,11 +83,17 @@ IgrRatingModule.register();
 ```
 <!-- end: Blazor -->
 
+<!-- React -->
+```tsx
+  <IgrRating></IgrRating>
+```
+<!-- end: React -->
+
 これにより、データの入力と読み取りに使用できる 5 つ星の評価コンポーネントが作成されます。
 
 ## カスタム シンボルの使用
 
-評価コンポーネントを使用すると、デフォルトの星シンボルの代わりにカスタム シンボルを使用できます。SVG、アイコン、または別の Unicode シンボルなどの別のシンボルを使用する場合は、`Rating` の開く括弧と閉じる括弧の間に `RatingSymbol` コンポーネントを配置する必要があります。
+`Rating` コンポーネントを使用すると、デフォルトの星シンボルの代わりにカスタム シンボルを使用できます。SVG、アイコン、または別の Unicode シンボルなどの別のシンボルを使用する場合は、`Rating` の開く括弧と閉じる括弧の間に `RatingSymbol` コンポーネントを配置する必要があります。
 
 <!-- WebComponents -->
 ```html
@@ -109,6 +117,28 @@ IgrRatingModule.register();
 </IgbRating>
 ```
 <!-- end: Blazor -->
+
+<!-- React -->
+```tsx
+  <IgrRating label="Rate Experience" step=".5" size="large" hoverPreview="true">
+    <IgrRatingSymbol key="0">
+        <IgrIcon ref={this.iconRef} name='heart' collection="material" key="heart0"></IgrIcon>
+    </IgrRatingSymbol>
+    <IgrRatingSymbol key="1">
+        <IgrIcon  name='heart' collection="material" key="heart1"></IgrIcon>                           
+    </IgrRatingSymbol>
+    <IgrRatingSymbol key="2">
+      	<IgrIcon  name='heart' collection="material" key="heart2"></IgrIcon>                           
+    </IgrRatingSymbol>
+    <IgrRatingSymbol key="3">
+       	<IgrIcon  name='heart' collection="material" key="heart3"></IgrIcon>                           
+    </IgrRatingSymbol>
+    <IgrRatingSymbol key="4">
+       	<IgrIcon  name='heart' collection="material" key="heart4"></IgrIcon>                           
+    </IgrRatingSymbol>                        
+</IgrRating> 
+```
+<!-- end: React -->
 
 `sample="/inputs/rating/custom", height="150", alt="{Platform} Rating カスタム シンボルの例"`
 
@@ -142,7 +172,34 @@ IgrRatingModule.register();
 ```
 <!-- end: Blazor -->
 
-`sample="/inputs/rating/custom", height="150", alt="{Platform} 単一選択による {Platform} Rating"`
+<!-- React -->
+```tsx
+  <IgrRating single="true">
+    <IgrRatingSymbol key="0">                           
+	<div key="div0">😣</div>	
+	<div key="empty-div0" slot="empty">😣</div>
+    </IgrRatingSymbol>
+    <IgrRatingSymbol key="1">                           
+ 	<div key="div1">😣</div>
+        <div key="empty-div1" slot="empty">😣</div>
+    </IgrRatingSymbol>
+    <IgrRatingSymbol key="2">                           
+        <div key="div2">😣</div>
+        <div key="empty-div2" slot="empty">😣</div>
+    </IgrRatingSymbol>
+    <IgrRatingSymbol key="3">                           
+        <div key="div3">😣</div>
+        <div key="empty-div3" slot="empty">😣</div>
+    </IgrRatingSymbol>
+    <IgrRatingSymbol key="4">                           
+        <div key="div4">😣</div>
+        <div key="empty-div4" slot="empty">😣</div>
+    </IgrRatingSymbol>                         
+</IgrRating>
+```
+<!-- end: React -->
+
+`sample="/inputs/rating/single-selection", height="150", alt="{Platform} 単一選択による {Platform} Rating"`
 
 
 > `step` 属性は単一選択モードでは機能しないことに注意してください。
@@ -167,6 +224,15 @@ IgrRatingModule.register();
 </IgbRatingSymbol>
 ```
 <!-- end: Blazor -->
+
+<!-- React -->
+```tsx
+<IgrRatingSymbol key="0">
+    <div key="div0"><IgrIcon name='bandage' collection="material" key="default0"></IgrIcon></div>
+    <div key="empty-div0" slot='empty'><IgrIcon name='bacteria' collection="material" key="empty0"></IgrIcon></div> 
+</IgrRatingSymbol> 
+```
+<!-- end: React -->
 
 `sample="/inputs/rating/empty", height="150", alt="{Platform} 空および選択状態の {Platform} Rating"`
 
@@ -203,8 +269,12 @@ IgrRatingModule.register();
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
-`HoverPreview` 属性により、ホバー時にユーザーが選択した場合の様子がコンポーネントに表示されます。選択した値が何であるかについて即座にフィードバックしたい場合に便利です。
+`HoverPreview` 属性により、ホバー時にユーザー選択の可能な結果がコンポーネントに表示されます。選択した値が何であるかについて即座にフィードバックしたい場合に便利です。
 <!-- end: Blazor -->
+
+<!-- React -->
+`hoverPreview` 属性により、ホバー時にユーザー選択の可能な結果がコンポーネントに表示されます。選択した値が何であるかについて即座にフィードバックしたい場合に便利です。
+<!-- end: React -->
 
 #### Read-Only (読み取り専用)
 
@@ -234,6 +304,10 @@ IgrRatingModule.register();
 `Rating` コンポーネントは、`Hover` と `Change` の 2 つの個別のイベントを発行します。
 <!-- end: Blazor -->
 
+<!-- React -->
+`Rating` コンポーネントは、`hover` と `change` の 2 つの個別のイベントを発行します。
+<!-- end: React -->
+
 #### Hover Event (ホバー イベント)
 
 <!-- WebComponents -->
@@ -244,6 +318,10 @@ IgrRatingModule.register();
 `Hover` イベントは、シンボルにカーソルを合わせると発生します。マウス カーソルの下にあるシンボルの値を提供します。カスタム値ラベルと読み出しを作成するのに役立ちます。
 <!-- end: Blazor -->
 
+<!-- React -->
+`hover` イベントは、シンボルにカーソルを合わせると発生します。マウス カーソルの下にあるシンボルの値を提供します。カスタム値ラベルと読み出しを作成するのに役立ちます。
+<!-- end: React -->
+
 #### Change Event (変更イベント)
 
 <!-- WebComponents -->
@@ -253,6 +331,10 @@ IgrRatingModule.register();
 <!-- Blazor -->
 選択した値が変更されると、`Change` イベントが発生します。
 <!-- end: Blazor -->
+
+<!-- React -->
+選択した値が変更されると、`change` イベントが発生します。
+<!-- end: React -->
 
 ## スタイル設定
 
