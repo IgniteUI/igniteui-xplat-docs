@@ -21,10 +21,6 @@ All notable changes for each version of {ProductName} are documented on this pag
 * New Features Added:
     - [State Persistence](grids/grid/state-persistence.md)
 
-## **{PackageVerChanges-23-2}**
-
-### New Components
-
 ### {PackageGrids} (Toolbar - Beta)
 
 * A new tool has been added, as a default tool, to save the chart to an image via the clipboard.
