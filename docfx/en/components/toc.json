@@ -113,6 +113,12 @@
     "status": "UPDATED"
   },
   {
+    "exclude": ["Angular", "Blazor", "WebComponents"],
+    "name": "Integrating Ignite UI for React with Next.js",
+    "href": "nextjs-usage.md",
+    "status": "NEW"
+  },
+  {
     "note": "THIS MAIN NODE FOR OLD XPLAT GRID",
     "exclude": ["Angular", "Blazor", "WebComponents", "React"],
     "name": "Grids & Lists",
