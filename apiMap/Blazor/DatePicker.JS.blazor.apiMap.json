@@ -36,10 +36,12 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "FormatString"}], "originalName": "FormatString"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "IconColor"}], "originalName": "IconColor"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsDisabled"}], "originalName": "IsDisabled"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsFixed"}], "originalName": "IsFixed"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Label"}], "originalName": "Label"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LabelTextColor"}], "originalName": "LabelTextColor"},
       {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "MaxDate"}], "originalName": "MaxDate"},
       {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "MinDate"}], "originalName": "MinDate"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "OpenAsChild"}], "originalName": "OpenAsChild"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "OpenOnFocus"}], "originalName": "OpenOnFocus"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Placeholder"}], "originalName": "Placeholder"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Select"}], "originalName": "Select"},
@@ -48,6 +50,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ShowWeekNumbers"}], "originalName": "ShowWeekNumbers"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "TextColor"}], "originalName": "TextColor"},
       {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "Today"}], "originalName": "Today"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "UseTopLayer"}], "originalName": "UseTopLayer"},
       {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "Value"}], "originalName": "Value"} ]
   },
   {

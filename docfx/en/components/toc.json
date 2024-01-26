@@ -113,6 +113,12 @@
     "status": "UPDATED"
   },
   {
+    "exclude": ["Angular", "Blazor", "WebComponents"],
+    "name": "Integrating Ignite UI for React with Next.js",
+    "href": "nextjs-usage.md",
+    "status": "NEW"
+  },
+  {
     "note": "THIS MAIN NODE FOR OLD XPLAT GRID",
     "exclude": ["Angular", "Blazor", "WebComponents", "React"],
     "name": "Grids & Lists",
@@ -273,7 +279,7 @@
         "href": "grids/grid/paging.md"
       },
       {
-        "exclude": ["Angular", "Blazor"],
+        "exclude": ["Angular"],
         "name": "Remote Data Operations",
         "href": "grids/grid/remote-data-operations.md"
       },
@@ -591,7 +597,7 @@
     "status": "",
     "items": [
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Advanced Filtering",
         "href": "grids/tree-grid/advanced-filtering.md",
         "status": "NEW"
@@ -692,7 +698,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Multi-Column Headers",
         "href": "grids/tree-grid/multi-column-headers.md",
         "status": "NEW"
@@ -716,7 +722,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Row Actions",
         "href": "grids/tree-grid/row-actions.md",
         "status": "NEW"
@@ -734,13 +740,13 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Row Editing",
         "href": "grids/tree-grid/row-editing.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Row Pinning",
         "href": "grids/tree-grid/row-pinning.md",
         "status": "NEW"
@@ -764,7 +770,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Sizing",
         "href": "grids/tree-grid/sizing.md",
         "status": "NEW"
@@ -797,6 +803,12 @@
         "exclude": ["Angular", "React", "Blazor"],
         "name": "Load On Demand",
         "href": "grids/tree-grid/load-on-demand.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "Live Data / Real-Time",
+        "href": "grids/tree-grid/live-data.md",
         "status": "NEW"
       }
     ]
@@ -1214,6 +1226,11 @@
           "href": "charts/features/chart-data-tooltip.md"
         },
         {
+          "name": "Chart Highlight Filter",
+          "href": "charts/features/chart-highlight-filter.md",
+          "status": "NEW"          
+        },
+        {
           "name": "Chart Highlighting",
           "href": "charts/features/chart-highlighting.md",
           "status": ""
@@ -1414,7 +1431,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Accordion",
     "href": "layouts/accordion.md",
     "status": ""
@@ -1453,7 +1470,7 @@
         "href": "layouts/dock-manager-electron.md"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular", "React", "Blazor"],
         "name": "Customization",
         "href": "layouts/dock-manager-customization.md",
         "status": "NEW"
@@ -1624,7 +1641,7 @@
     ]
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Dropdown",
     "href": "inputs/dropdown.md"
   },
@@ -1655,7 +1672,7 @@
     "href": "inputs/input.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "Blazor"],
     "name": "Mask Input",
     "href": "inputs/mask-input.md"
   },
@@ -1670,12 +1687,12 @@
     "href": "inputs/radio.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Select",
     "href": "inputs/select.md"    
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Rating",
     "href": "inputs/rating.md"
   },

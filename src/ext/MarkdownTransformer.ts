@@ -73,22 +73,37 @@ function getBlazorNamespaceLookup() {
 
 function getApiLink(apiRoot: string, typeName: string, memberName: string | null, options: any): any {
     let mappings: MappingLoader = options.mappings;
-    let resolvedTypeName: string | null = typeName;
     let isClass = false;
     let isInterface = false;
     let isEnum = false;
-    let platform = <APIPlatform>options.platform;
+    let platformType = <APIPlatform>options.platform;
+    let platformName = getPlatformName(platformType).toLowerCase();
     let packageName: string | null = null;
 
+    // console.log("getApiLink ");
+    // console.log("getApiLink typeName=" + typeName + " memberName=" + memberName); 
+    // check for explicit API types, e.g. @TrendLineType enum type instead of Category.TrendLineType property
+    if (typeName && typeName.indexOf('@') == 0) {
+        typeName = typeName.substring(1);
+        memberName = null;
+    }
+    let resolvedType: string | null = typeName;
+
+    // console.log("getApiLink typeName=" + typeName + " memberName=" + memberName); 
+
     if (!(typeName.indexOf(options.platformPascalPrefix) == 0)) {
-        resolvedTypeName = mappings.getPlatformTypeName(typeName, <APIPlatform>options.platform, options.filePath);
-        if (resolvedTypeName) {
+        // console.log("getApiLink filePath=" + options.filePath);
+        resolvedType = mappings.getPlatformTypeName(typeName, platformType, options.filePath);
+        // console.log("getApiLink resolvedName=" + resolvedType);
+        if (resolvedType) {
             let typeInfo = mappings.getType(typeName, options.filePath);
             if (typeInfo) {
                 if (typeInfo.isEnum) {
                     isEnum = true;
-                } else {
-                    //todo: interfaces.
+                //TODO: uncomment when API mapping annotates interfaces
+                // } else if (typeInfo.isInterface) { 
+                //     isInterface = true;
+                } else { // if (!isEnum) {
                     isClass = true;
                 }
 
@@ -100,27 +115,29 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
     } else {
         isClass = true;
     }
+    // console.log("getApiLink isClass=" + isClass + " isEnum=" + isEnum );
+    // console.log("getApiLink packageName=" + packageName);
 
     let blazorNamespace: string = "IgniteUI.Blazor.Controls";
     let linkText: string | null = null;
-    if (resolvedTypeName) {
+    if (resolvedType) {
         //         https://infragistics.com/blazor-apps/blazor-api/api/IgniteUI.Blazor.Controls.IgbCategoryChart.html
         // https://infragistics.com/products/ignite-ui-react/api/docs/typescript/latest/classes/igrcategorychart.html
-        if (platform === APIPlatform.Blazor) {
+        if (platformType === APIPlatform.Blazor) {
             var blazorNamespaceLookup = getBlazorNamespaceLookup();
-            if (blazorNamespaceLookup[resolvedTypeName]) {
-                blazorNamespace = blazorNamespaceLookup[resolvedTypeName];
+            if (blazorNamespaceLookup[resolvedType]) {
+                blazorNamespace = blazorNamespaceLookup[resolvedType];
             }
-            linkText = apiRoot + blazorNamespace + "." + resolvedTypeName + ".html";
+            linkText = apiRoot + blazorNamespace + "." + resolvedType + ".html";
             // console.log( blazorNamespaceLookup[resolvedTypeName] + " " + resolvedTypeName + " " + linkText);
 
         } else { // Angular || React || WC
 
-            let char1 = resolvedTypeName[0];
-
-            if(char1 == "I"){
-                let char2 = resolvedTypeName[1];
-                if(char2.toUpperCase() == char2){
+            // check for interfaces, e.g. IChartLegend
+            let char1 = resolvedType[0];
+            if (char1 == "I") {
+                let char2 = resolvedType[1];
+                if( char2.toUpperCase() == char2) {
                     isClass = false;
                     isEnum = false;
                     isInterface = true;
@@ -130,27 +147,29 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
             let packageText = "";
             if (packageName) {
                 if (packageName == "igniteui-webgrids") {
-                    const packageSuffix = (platform == APIPlatform.React ? "" : "_grids") + "_grids.";
-                    packageText = "igniteui_" + getPlatformName(<APIPlatform>options.platform).toLowerCase() + packageSuffix;
+                    const packageSuffix = (platformType == APIPlatform.React ? "" : "_grids") + "_grids.";
+                    packageText = "igniteui_" + platformName + packageSuffix;
                 } else if (packageName == "igniteui-webinputs") {
                     packageText = "";
-                    if (platform == APIPlatform.React) {
+                    if (platformType == APIPlatform.React) {
                         packageText = "igniteui_react.";
                     }
                 } else {
                     packageText = packageName;
-                    packageText = packageText.replace("igniteui-", "igniteui-" + getPlatformName(<APIPlatform>options.platform).toLowerCase() + "-");
+                    packageText = packageText.replace("igniteui-", "igniteui-" + platformName + "-");
                     packageText = packageText.replace(/-/gm, "_");
                     packageText += ".";
                 }
             }
 
+            // console.log("getApiLink packageText=" + packageText);
+            // console.log("getApiLink resolvedName=" + resolvedType);
             if (isClass) {
-                linkText = apiRoot + "classes/" + packageText + resolvedTypeName.toLowerCase() + ".html";
+                linkText = apiRoot + "classes/" + packageText + resolvedType.toLowerCase() + ".html";
             } else if (isEnum) {
-                linkText = apiRoot + "enums/" + + packageText + resolvedTypeName.toLowerCase() + ".html";
+                linkText = apiRoot + "enums/" + packageText + resolvedType.toLowerCase() + ".html";
             } else if (isInterface) {
-                linkText = apiRoot + "interfaces/" + packageText + resolvedTypeName.toLowerCase() + ".html";
+                linkText = apiRoot + "interfaces/" + packageText + resolvedType.toLowerCase() + ".html";
             }
         }
     }
@@ -158,9 +177,9 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
     if (linkText && memberName) {
         //         https://infragistics.com/blazor-apps/blazor-api/api/IgniteUI.Blazor.Controls.IgbCategoryChart.html#ChartType
         // https://infragistics.com/products/ignite-ui-react/api/docs/typescript/latest/classes/igrcategorychart.html#charttype
-        if (platform === APIPlatform.Blazor) {
+        if (platformType === APIPlatform.Blazor) {
             var prefix = blazorNamespace.split('.').join('_') + '_';
-            linkText = linkText + "#" + prefix + resolvedTypeName + '_' + memberName;
+            linkText = linkText + "#" + prefix + resolvedType + '_' + memberName;
             // if (linkText.indexOf('.IgbDataGrid') > 0) {
             //     linkText = linkText + "#" + prefix + 'IgbDataGrid_' + memberName;
             // } else {
@@ -171,6 +190,7 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
         }
     }
 
+    // console.log("getApiLink linkText=" + linkText);
     if (linkText) {
         return {
             type: "link",
@@ -178,7 +198,7 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
             value: "",
             children: [{
                 type: "inlineCode",
-                value: memberName ? memberName : resolvedTypeName
+                value: memberName ? memberName : resolvedType
             }]
         };
     } else {
@@ -575,13 +595,17 @@ function transformDocLinks(options: any) {
         }
 
         reference = reference.replace("doc://", "");
+        // console.log("reference=" + reference);
         let referenceParts = reference.split("/");
         let controlName = referenceParts[0];
+        // console.log("controlName1=" + controlName);
+        // console.log("transformControlNames=" + options.docs.transformControlNames);
         if (options.docs.transformControlNames) {
             let resolvedName = mappings.getPlatformMemberName(
                 <string>options.typeName,
                 <APIPlatform>options.platform,
                 <string>controlName, options.filePath);
+                // console.log("resolvedName=" + resolvedName);
             if (resolvedName) {
                 controlName = resolvedName;
             }
@@ -602,8 +626,6 @@ function transformDocLinks(options: any) {
         } else {
             docUrl = docUrl.replace("{CONTROL_NAME}", controlName);
         }
-
-
         node.url = docUrl;
     }
 
@@ -1632,13 +1654,13 @@ export class MarkdownTransformer {
                 this._envBrowser !== "") {
                 sampleHost = this._envBrowser;
 
-                //MT: we do not localize samples to JP language so we use EN samples
-                // if (filePath.indexOf("\\jp\\") > 0) {
-                //     // changing samples links to JP production website in JP topics
-                //     sampleHost = sampleHost.replace('www.infragistics.com', 'jp.infragistics.com');
-                //     // changing samples links to JP staging website in JP topics
-                //     sampleHost = sampleHost.replace('staging.infragistics.com', 'jp.staging.infragistics.com');
-                // }
+                // using JP samples in JP topics
+                if (filePath.indexOf("\\jp\\") > 0) {
+                    // changing samples links to JP production website in JP topics
+                    sampleHost = sampleHost.replace('www.infragistics.com', 'jp.infragistics.com');
+                    // changing samples links to JP staging website in JP topics
+                    sampleHost = sampleHost.replace('staging.infragistics.com', 'jp.staging.infragistics.com');
+                }
 
                 // fileContent = this.replaceAll(fileContent, "{environment:dvDemosBaseUrl}", sampleHost);
                 // fileContent = this.replaceAll(fileContent, "{environment:demosBaseUrl}", sampleHost);

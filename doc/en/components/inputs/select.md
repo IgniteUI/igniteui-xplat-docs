@@ -61,6 +61,26 @@ You will also need to link an additional CSS file to apply the styling to the `S
 
 <!-- end: Blazor -->
 
+<!-- React -->
+
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Select` and the `SelectItem`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrSelectModule, IgrSelect, IgrSelectItemModule, IgrSelectItem } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrSelectModule.register();
+IgrSelectItemModule.register();
+```
+
+<!-- end: React -->
+
 > [!Note]
 > Please note that the select header and group components are not mandatory unless you want to use them.
 
@@ -87,6 +107,19 @@ To start using the component add the `Select` along with a list of `SelectItem`'
 </IgbSelect>
 ```
 <!-- end: Blazor -->
+
+<!-- React -->
+
+```tsx
+<IgrSelect>
+  <IgrSelectItem value="Orange"><span>Orange</span></IgrSelectItem>
+  <IgrSelectItem value="Apple"><span>Apple</span></IgrSelectItem>
+  <IgrSelectItem value="Banana"><span>Banana</span></IgrSelectItem>
+  <IgrSelectItem value="Mango"><span>Mango</span></IgrSelectItem>
+</IgrSelect>
+```
+
+<!-- end: React -->
 
 ### Select
 
@@ -121,6 +154,18 @@ You can use the `SelectHeader` to provide a header for a group of items.
 </IgbSelect>
 ```
 <!-- end: Blazor -->
+
+<!-- React -->
+
+```tsx
+<IgrSelect>
+  <IgrSelectHeader>
+    <span>Tasks</span>
+  </IgrSelectHeader>
+</IgrSelect>
+```
+
+<!-- end: React -->
 
 ### Group
 
@@ -187,6 +232,42 @@ Multiple `SelectItem`s can be placed between the opening and closing brackets of
 ```
 <!-- end: Blazor -->
 
+<!-- React -->
+
+```tsx
+<IgrSelect>
+  <IgrSelectGroup>
+    <span slot="label">Europe</span>
+
+    <IgrSelectItem>
+      <span slot="prefix">
+        <IgrIcon name="place" ref={iconPlace} collection="material"></IgrIcon>
+      </span>
+      <span> Germany </span>
+      <span slot="suffix">DE</span>
+    </IgrSelectItem>
+
+    <IgrSelectItem>
+      <span slot="prefix">
+        <IgrIcon name="place" ref={iconPlace} collection="material"></IgrIcon>
+      </span>
+      <span> France </span>
+      <span slot="suffix">FR</span>
+    </IgrSelectItem>
+
+    <IgrSelectItem>
+      <span slot="prefix">
+        <IgrIcon name="place" ref={iconPlace} collection="material"></IgrIcon>
+      </span>
+      <span> Spain </span>
+      <span slot="suffix">ES</span>
+    </IgrSelectItem>
+  </IgrSelectGroup>
+</IgrSelect>
+```
+
+<!-- end: React -->
+
 ## Validation
 
 In addition, the `Select` supports most of the `Input` properties, such as `Required`, `Disabled`, `Autofocus`, etc. The component also exposes a method bound to its validation:
@@ -214,7 +295,7 @@ When the select is focused and the list of options is **visible**:
 > [!Note]
 > The `Select` component supports only **single** selection of items.
 
-<!-- WebComponents -->
+<!-- WebComponents, React -->
 
 ## Styling
 
@@ -252,7 +333,7 @@ You can change the appearance of the {ProductName} `Select` component and its it
 
 
 
-<!-- end: WebComponents -->
+<!-- end: WebComponents, React -->
 
 
 ## API Reference

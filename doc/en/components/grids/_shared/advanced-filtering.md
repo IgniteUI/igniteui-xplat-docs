@@ -44,6 +44,15 @@ To enable the advanced filtering, the `AllowAdvancedFiltering` input property sh
     <IgbGridToolbar></IgbGridToolbar>
 </{ComponentSelector}>
 ```
+
+<!-- ComponentStart: TreeGrid -->
+```razor
+<IgbTreeGrid Data=data AutoGenerate="true" AllowAdvancedFiltering="true">
+    <IgbGridToolbar></IgbGridToolbar>
+</IgbTreeGrid>
+```
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- WebComponents -->
 ```html
 <{ComponentSelector} id="grid" auto-generate="true" allow-advanced-filtering="true">
@@ -56,6 +65,23 @@ constructor() {
     grid.data = this.data
 }
 ```
+
+<!-- ComponentStart: TreeGrid -->
+```html
+<igc-tree-grid id="grid" auto-generate="true" allow-advanced-filtering="true">
+    <igc-grid-toolbar></igc-grid-toolbar>
+</igc-tree-grid>
+```
+
+
+```ts
+constructor() {
+    let grid = document.getElementById("grid") as IgcTreeGridComponent;
+    grid.data = this.data
+}
+```
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- end: WebComponents -->
 <!-- React -->
 ```html
@@ -525,9 +551,18 @@ In case you would like to change some of the colors, you need to set a class for
 <IgbGrid class="grid"></IgbGrid>
 ```
 
-```tsx
-<{ComponentName} className="grid"></{ComponentName}>
+
+<!-- ComponentStart: TreeGrid -->
+
+```html
+<igc-tree-grid class="grid"></igc-tree-grid>
 ```
+
+```razor
+<IgbTreeGrid class="grid"></IgbTreeGrid>
+```
+
+<!-- ComponentEnd: TreeGrid -->
 
 Then set the related CSS properties to this class:
 

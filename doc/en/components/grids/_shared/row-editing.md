@@ -20,7 +20,7 @@ The following sample demonstrates how to enable row editing in the `{ComponentNa
 
 
 > [!Note]
-> When a row is in edit mode, then clicking on a cell on another row will act like the Done button is pressed - submit all the changes of the previous row. If the new cell that gets focus is editable, then the new row also enters edit mode, while if the cell is not editable, then only the previous row exits edit mode.
+> When a row is in edit mode, clicking on a cell in another row will act like the "Done" button is pressed, submitting all changes made in the previous row. If the newly focused cell is editable, the new row enters edit mode as well. However, if the cell is not editable, only the previous row exits edit mode.
 
 ## Row Editing Usage
 
@@ -46,15 +46,15 @@ Define a `{ComponentName}` with bound data source and `RowEditable` set to true:
 ```html
 <{ComponentSelector} [data]="data" [primaryKey]="'ProductID'" width="100%" height="500px" [rowEditable]="true">
     <igx-column field="ProductID" header="Product ID" editable="false"></igx-column>
-    <igx-column field="ReorderLevel" header="ReorderLever" [dataType]="'number'"></igx-column>
-    <igx-column field="ProductName" header="ProductName" [dataType]="'string'"></igx-column>
-    <igx-column field="UnitsInStock" header="UnitsInStock" [dataType]="'number'">
+    <igx-column field="ReorderLevel" header="Reorder Level" [dataType]="'number'"></igx-column>
+    <igx-column field="ProductName" header="Product Name" [dataType]="'string'"></igx-column>
+    <igx-column field="UnitsInStock" header="Units In Stock" [dataType]="'number'">
         <ng-template igxCellEditor let-cell="cell">
             <input name="units" [(ngModel)]="cell.value" style="color: black" />
         </ng-template>
     </igx-column>
-    <igx-column field="OrderDate" [dataType]="'date'"></igx-column>
-    <igx-column field="Discontinued" header="Discontinued" [dataType]="'boolean'"></igx-column>
+    <igx-column field="OrderDate" header="Order Date" [dataType]="'date'"></igx-column>
+    <igx-column field="Discontinued" [dataType]="'boolean'"></igx-column>
 </{ComponentSelector}>
 ```
 <!-- end: Angular -->
@@ -63,17 +63,17 @@ Define a `{ComponentName}` with bound data source and `RowEditable` set to true:
 ```html
 <{ComponentSelector} id="grid" primary-key="ProductID" width="100%" height="500px" row-editable="true">
     <igc-column field="ProductID" header="Product ID" editable="false"></igc-column>
-    <igc-column field="ReorderLevel" header="ReorderLever" data-type="Number"></igc-column>
-    <igc-column field="ProductName" header="ProductName" data-type="String"></igc-column>
-    <igc-column id="unitsInStock" field="UnitsInStock" header="UnitsInStock" data-type="Number">
-    </igc-column>
-    <igc-column field="OrderDate" data-type="Date"></igc-column>
-    <igc-column field="Discontinued" header="Discontinued" data-type="Boolean"></igc-column>
+    <igc-column field="ReorderLevel" header="Reorder Level" data-type="number"></igc-column>
+    <igc-column field="ProductName" header="Product Name" data-type="string"></igc-column>
+    <igc-column id="unitsInStock" field="UnitsInStock" header="Units In Stock" data-type="number"></igc-column>
+    <igc-column field="OrderDate" field="Order Date" data-type="date"></igc-column>
+    <igc-column field="Discontinued" data-type="boolean"></igc-column>
 </{ComponentSelector}>
 ```
+
 ```ts
 constructor() {
-    var grid  = document.getElementById('grid') as IgcGridComponent;
+    var grid  = document.getElementById('grid') as {ComponentName}Component;
     var unitsInStock = document.getElementById('unitsInStock') as IgcColumnComponent;
     grid.data = this.data;
     unitsInStock.bodyTemplate = this.unitsInStockCellTemplate;
@@ -111,10 +111,10 @@ function unitsInStockCellTemplate(ctx: IgrCellTemplateContext) {
  <{ComponentSelector} Width="100%"  
              Height="100%"
              PrimaryKey="Key"
-             AutoGenerate=false
-             Data=northwindEmployees
-             RowEditable=true>
-        <IgbColumn Field="ID" Editable=false></IgbColumn>
+             AutoGenerate="false"
+             Data="northwindEmployees"
+             RowEditable="true">
+        <IgbColumn Field="ID" Editable="false"></IgbColumn>
         <IgbColumn Field="ContactName"></IgbColumn>
         <IgbColumn Field="ContactTitle"></IgbColumn>
         <IgbColumn Field="City"></IgbColumn>
@@ -137,13 +137,11 @@ function unitsInStockCellTemplate(ctx: IgrCellTemplateContext) {
     }
 ```
 
-<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
-
 > [!Note]
 > Setting primary key is mandatory for row editing operations.
 
 > [!Note]
-> It's not needed to enable editing for individual columns. Using the `RowEditable` property in the `{ComponentName}`, will mean that all rows, with defined `Field` property, excluding primary one, will be editable. If you want to disable editing for specific column, then you set the `Editable` column's input to `false`.
+> Enabling editing for individual columns is not necessary. Using the `RowEditable` property in the `{ComponentName}`, all rows, with defined `Field` property (excluding the primary row) will be editable. If you want to disable editing for a specific column, simply set the `Editable` input of that column to `false`.
 
 <!-- Angular -->
 ```typescript
@@ -170,7 +168,7 @@ export class {ComponentName}RowEditSampleComponent {
 
 
 > [!Note]
-> The `{ComponentName}` uses internally a provider `BaseTransactionService` that holds pending cell changes, until row state submitted or cancelled.
+> The `{ComponentName}` utilizes `BaseTransactionService` - an internal provider that holds pending cell changes until the row state is either submitted or cancelled.
 
 ## Positioning
 
@@ -461,6 +459,7 @@ Then set the related CSS properties for that class:
     --ig-banner-banner-message-color: #423589;
 }
 ```
+<!-- ComponentEnd: TreeGrid -->
 
 ### Demo
 

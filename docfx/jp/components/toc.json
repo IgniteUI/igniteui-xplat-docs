@@ -271,7 +271,7 @@
         "href": "grids/grid/paging.md"
       },
       {
-        "exclude": ["Angular", "Blazor"],
+        "exclude": ["Angular"],
         "name": "リモート データ操作",
         "href": "grids/grid/remote-data-operations.md"
       },
@@ -589,7 +589,7 @@
     "status": "",
     "items": [
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "高度なフィルタリング",
         "href": "grids/tree-grid/advanced-filtering.md",
         "status": "NEW"
@@ -610,7 +610,7 @@
         "href": "grids/tree-grid/collapsible-column-groups.md"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "列のタイプ",
         "href": "grids/tree-grid/column-types.md",
         "status": "NEW"
@@ -690,7 +690,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "複数列ヘッダー",
         "href": "grids/tree-grid/multi-column-headers.md",
         "status": "NEW"
@@ -714,7 +714,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "行の操作",
         "href": "grids/tree-grid/row-actions.md",
         "status": "NEW"
@@ -732,13 +732,13 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "行の編集",
         "href": "grids/tree-grid/row-editing.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "行のピン固定",
         "href": "grids/tree-grid/row-pinning.md",
         "status": "NEW"
@@ -762,7 +762,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "サイズ設定",
         "href": "grids/tree-grid/sizing.md",
         "status": "NEW"
@@ -795,6 +795,12 @@
         "exclude": ["Angular", "React", "Blazor"],
         "name": "ロードオンデマンド",
         "href": "grids/tree-grid/load-on-demand.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "Live Data / Real-Time",
+        "href": "grids/tree-grid/live-data.md",
         "status": "NEW"
       }
     ]
@@ -1212,6 +1218,11 @@
           "href": "charts/features/chart-data-tooltip.md"
         },
         {
+          "name": "チャートの強調表示フィルター",
+          "href": "charts/features/chart-highlight-filter.md",
+          "status": "NEW"          
+        },
+        {
           "name": "チャート強調表示",
           "href": "charts/features/chart-highlighting.md",
           "status": ""
@@ -1412,7 +1423,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "アコーディオン",
     "href": "layouts/accordion.md",
     "status": ""
@@ -1451,7 +1462,7 @@
         "href": "layouts/dock-manager-electron.md"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular", "React", "Blazor"],
         "name": "カスタマイズ",
         "href": "layouts/dock-manager-customization.md",
         "status": "NEW"
@@ -1622,7 +1633,7 @@
     ]
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "ドロップダウン",
     "href": "inputs/dropdown.md"
   },
@@ -1653,7 +1664,7 @@
     "href": "inputs/input.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "Blazor"],
     "name": "マスク入力",
     "href": "inputs/mask-input.md"
   },
@@ -1668,12 +1679,12 @@
     "href": "inputs/radio.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "選択",
     "href": "inputs/select.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "評価",
     "href": "inputs/rating.md"
   },

@@ -182,6 +182,7 @@ igRegisterScript("WebGridExportEventMultiColumnHeaders", (ev) => {
 ```
 <!-- ComponentEnd: TreeGrid -->
 
+
 <!-- Angular -->
 ## エクスポートするコンテンツのカスタマイズ
 
@@ -230,15 +231,9 @@ this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('
 
 ## API リファレンス
 
-以下は、その他の Excel Exporter サービスの API です。
-
 * `ExcelExporterService`
 * `ExcelExporterOptions`
-
-使用したその他のコンポーネント:
-
-* [{ComponentTitle} API]({environment:dvDemosBaseUrl}/classes/{ComponentTitle}.md)
-* [{ComponentTitle} スタイル]({environment:sassApiUrl}/index.html#function-grid-theme)
+* `{ComponentName}`
 
 ## その他のリソース
 

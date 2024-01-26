@@ -244,12 +244,7 @@ The difference is that for the child grid, when `Height` is set to percentages, 
 ## API References
 
 * `{ComponentName}`
-<!-- ComponentStart: Grid, HierarchicalGrid, PivotGrid -->
-* `GridRow`
-<!-- ComponentEnd: Grid, HierarchicalGrid, PivotGrid -->
-<!-- ComponentStart: TreeGrid -->
-* `TreeGridRow`
-<!-- ComponentEnd: TreeGrid -->
+
 
 ## Additional Resources
 

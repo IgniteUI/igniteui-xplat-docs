@@ -230,15 +230,9 @@ When you are exporting data from the `{ComponentName}` component, the export pro
 
 ## API References
 
-The Excel Exporter service has a few more APIs to explore, which are listed below.
-
 * `ExcelExporterService`
-* `ExcelExporterOptions`
-
-Additional components that were used:
-
-* [{ComponentTitle} API]({environment:dvDemosBaseUrl}/classes/{ComponentTitle}.md)
-* [{ComponentTitle} Styles]({environment:sassApiUrl}/index.html#function-grid-theme)
+* `ExcelExporterOptions` 
+* `{ComponentName}`
 
 ## Additional Resources
 

@@ -45,6 +45,15 @@ _language: ja
     <IgbGridToolbar></IgbGridToolbar>
 </{ComponentSelector}>
 ```
+
+<!-- ComponentStart: TreeGrid -->
+```razor
+<IgbTreeGrid Data=data AutoGenerate="true" AllowAdvancedFiltering="true">
+    <IgbGridToolbar></IgbGridToolbar>
+</IgbTreeGrid>
+```
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- WebComponents -->
 ```html
 <{ComponentSelector} id="grid" auto-generate="true" allow-advanced-filtering="true">
@@ -57,6 +66,23 @@ constructor() {
     grid.data = this.data
 }
 ```
+
+<!-- ComponentStart: TreeGrid -->
+```html
+<igc-tree-grid id="grid" auto-generate="true" allow-advanced-filtering="true">
+    <igc-grid-toolbar></igc-grid-toolbar>
+</igc-tree-grid>
+```
+
+
+```ts
+constructor() {
+    let grid = document.getElementById("grid") as IgcTreeGridComponent;
+    grid.data = this.data
+}
+```
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- end: WebComponents -->
 <!-- React -->
 ```html
@@ -511,7 +537,7 @@ $custom-drop-down: drop-down-theme(
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 ## スタイル設定
 
 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
@@ -525,9 +551,18 @@ $custom-drop-down: drop-down-theme(
 <IgbGrid class="grid"></IgbGrid>
 ```
 
-```tsx
-<{ComponentName} className="grid"></{ComponentName}>
+
+<!-- ComponentStart: TreeGrid -->
+
+```html
+<igc-tree-grid class="grid"></igc-tree-grid>
 ```
+
+```razor
+<IgbTreeGrid class="grid"></IgbTreeGrid>
+```
+
+<!-- ComponentEnd: TreeGrid -->
 
 次に、そのクラスに関連する CSS プロパティを設定します。
 
@@ -541,7 +576,7 @@ $custom-drop-down: drop-down-theme(
 
 `sample="/{ComponentSample}/advanced-filtering-style", height="530", alt="{Platform} {ComponentTitle} 高度なフィルタリング スタイル"`
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 ## API リファレンス
 

@@ -4,7 +4,7 @@
   {
     "originalName": "Popup",
     "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "igc-popup-component.ts","mappedName": "IgcPopupComponent"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "actualAmbientShadowColor"}], "originalName": "ActualAmbientShadowColor"},
@@ -22,6 +22,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "exportSerializedVisualModel"}], "originalName": "ExportSerializedVisualModel"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "exportVisualModel"}], "originalName": "ExportVisualModel"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isClosing"}], "originalName": "IsClosing"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isFixed"}], "originalName": "IsFixed"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isFocusable"}], "originalName": "IsFocusable"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isHitTestVisible"}], "originalName": "IsHitTestVisible"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isPointerEnabled"}], "originalName": "IsPointerEnabled"},
@@ -30,13 +31,14 @@
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "pointerBackground"}], "originalName": "PointerBackground"},
       {"names":[{"platform": "WebComponents", "mappedType": "PopupPointerPosition","mappedName": "pointerPosition"}], "originalName": "PointerPosition"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "pointerSize"}], "originalName": "PointerSize"},
-      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "showRelativeToExclusionRect"}], "originalName": "ShowRelativeToExclusionRect"} ]
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "showRelativeToExclusionRect"}], "originalName": "ShowRelativeToExclusionRect"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "useTopLayer"}], "originalName": "UseTopLayer"} ]
   },
   {
     "originalName": "PopupAlignment",
     "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "PopupAlignment.ts","mappedName": "PopupAlignment"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -49,7 +51,7 @@
     "originalName": "PopupDirection",
     "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "PopupDirection.ts","mappedName": "PopupDirection"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -63,7 +65,7 @@
     "originalName": "PopupPointerPosition",
     "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "PopupPointerPosition.ts","mappedName": "PopupPointerPosition"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -77,7 +79,7 @@
     "originalName": "PopupAnimationType",
     "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "PopupAnimationType.ts","mappedName": "PopupAnimationType"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -89,7 +91,7 @@
     "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "igc-on-popup-event-args.ts","mappedName": "IgcOnPopupEventArgs"}]
   },
   {
@@ -97,7 +99,7 @@
     "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "WebComponents","fileName": "igc-on-closed-event-args.ts","mappedName": "IgcOnClosedEventArgs"}]
   }]
 }

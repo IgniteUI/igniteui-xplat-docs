@@ -470,6 +470,36 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
+    "originalName": "ColumnState",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-column-state.ts","mappedName": "IgcColumnState"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "columnGroup"}], "originalName": "ColumnGroup"},
+      {"names":[{"platform": "WebComponents", "mappedType": "GridColumnDataType","mappedName": "dataType"}], "originalName": "DataType"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "disableHiding"}], "originalName": "DisableHiding"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "editable"}], "originalName": "Editable"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "field"}], "originalName": "Field"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "filterable"}], "originalName": "Filterable"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "filteringIgnoreCase"}], "originalName": "FilteringIgnoreCase"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "groupable"}], "originalName": "Groupable"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "hasSummary"}], "originalName": "HasSummary"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "header"}], "originalName": "Header"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "headerClasses"}], "originalName": "HeaderClasses"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "headerGroupClasses"}], "originalName": "HeaderGroupClasses"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "hidden"}], "originalName": "Hidden"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "maxWidth"}], "originalName": "MaxWidth"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "movable"}], "originalName": "Movable"},
+      {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "parent"}], "originalName": "Parent"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "pinned"}], "originalName": "Pinned"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "resizable"}], "originalName": "Resizable"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "searchable"}], "originalName": "Searchable"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "sortable"}], "originalName": "Sortable"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "sortingIgnoreCase"}], "originalName": "SortingIgnoreCase"},
+      {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "width"}], "originalName": "Width"} ]
+  },
+  {
     "originalName": "ColumnTemplateContext",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -1055,7 +1085,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "IgcGridSortingStrategy","mappedName": "sortStrategy"}], "originalName": "SortStrategy"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcSortingExpression[]","mappedName": "sortingExpressions"}], "originalName": "SortingExpressions"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcSortingOptions","mappedName": "sortingOptions"}], "originalName": "SortingOptions"},
-      {"names":[{"platform": "WebComponents", "mappedType": "IgcGriStateCollection","mappedName": "stateComponents"}], "originalName": "StateComponents"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcStateCollection","mappedName": "stateComponents"}], "originalName": "StateComponents"},
       {"names":[{"platform": "WebComponents", "mappedType": "GridSummaryCalculationMode","mappedName": "summaryCalculationMode"}], "originalName": "SummaryCalculationMode"},
       {"names":[{"platform": "WebComponents", "mappedType": "GridSummaryPosition","mappedName": "summaryPosition"}], "originalName": "SummaryPosition"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "summaryRowHeight"}], "originalName": "SummaryRowHeight"},
@@ -1567,6 +1597,74 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "sort"}], "originalName": "Sort"} ]
   },
   {
+    "originalName": "GridState",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "GridStateBaseDirective",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-grid-state.ts","dynamicModuleName": "igc-grid-state-dynamic-module.ts","moduleName": "igc-grid-state-module.ts","mappedName": "IgcGridState"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "applyState"}], "originalName": "ApplyState"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "applyStateFromString"}], "originalName": "ApplyStateFromString"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getState"}], "originalName": "GetState"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getStateAsString"}], "originalName": "GetStateAsString"} ]
+  },
+  {
+    "originalName": "GridStateBaseDirective",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-grid-state-base-directive.ts","dynamicModuleName": "igc-grid-state-base-directive-dynamic-module.ts","moduleName": "igc-grid-state-base-directive-module.ts","mappedName": "IgcGridStateBaseDirective"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridStateOptions","mappedName": "options"}], "originalName": "Options"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "GridStateCollection",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-grid-state-collection.ts","mappedName": "IgcGridStateCollection"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "id"}], "originalName": "Id"},
+      {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "parentRowID"}], "originalName": "ParentRowID"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridState","mappedName": "state"}], "originalName": "State"} ]
+  },
+  {
+    "originalName": "GridStateComponentEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-grid-state-component-event-args.ts","mappedName": "IgcGridStateComponentEventArgs"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridState","mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "GridStateInfo",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-grid-state-info.ts","mappedName": "IgcGridStateInfo"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcFilteringExpressionsTree","mappedName": "advancedFiltering"}], "originalName": "AdvancedFiltering"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridSelectionRange[]","mappedName": "cellSelection"}], "originalName": "CellSelection"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "columnSelection"}], "originalName": "ColumnSelection"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcColumnState[]","mappedName": "columns"}], "originalName": "Columns"},
+      {"names":[{"platform": "WebComponents", "mappedType": "any[]",   "mappedName": "expansion"}], "originalName": "Expansion"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcFilteringExpressionsTree","mappedName": "filtering"}], "originalName": "Filtering"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGroupingState","mappedName": "groupBy"}], "originalName": "GroupBy"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "id"}], "originalName": "Id"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "moving"}], "originalName": "Moving"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcPagingState","mappedName": "paging"}], "originalName": "Paging"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcPinningConfig","mappedName": "pinningConfig"}], "originalName": "PinningConfig"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcPivotConfiguration","mappedName": "pivotConfiguration"}], "originalName": "PivotConfiguration"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridStateCollection[]","mappedName": "rowIslands"}], "originalName": "RowIslands"},
+      {"names":[{"platform": "WebComponents", "mappedType": "any[]",   "mappedName": "rowPinning"}], "originalName": "RowPinning"},
+      {"names":[{"platform": "WebComponents", "mappedType": "any[]",   "mappedName": "rowSelection"}], "originalName": "RowSelection"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcSortingExpression[]","mappedName": "sorting"}], "originalName": "Sorting"} ]
+  },
+  {
     "originalName": "GridTemplateContext",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -1995,6 +2093,16 @@
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "igx_paginator_next_page_button_text"}], "originalName": "Igx_paginator_next_page_button_text"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "igx_paginator_pager_text"}], "originalName": "Igx_paginator_pager_text"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "igx_paginator_previous_page_button_text"}], "originalName": "Igx_paginator_previous_page_button_text"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "PagingState",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-paging-state.ts","mappedName": "IgcPagingState"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "recordsPerPage"}], "originalName": "RecordsPerPage"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
@@ -2894,19 +3002,6 @@
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"} ]
   },
   {
-    "originalName": "GridStateDirective",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "WebComponents","fileName": "igc-grid-state-directive.ts","dynamicModuleName": "igc-grid-state-directive-dynamic-module.ts","moduleName": "igc-grid-state-directive-module.ts","mappedName": "IgcGridStateDirective"}],
-    "members":[
-      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getState"}], "originalName": "GetState"},
-      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
-      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridStateOptions","mappedName": "options"}], "originalName": "Options"},
-      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
     "originalName": "GridToolbarBaseAction",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -2929,25 +3024,6 @@
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "customSummary"}], "originalName": "CustomSummary"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "fieldName"}], "originalName": "FieldName"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
-    "originalName": "GridState",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "GridStateDirective",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "WebComponents","fileName": "igc-grid-state.ts","dynamicModuleName": "igc-grid-state-dynamic-module.ts","moduleName": "igc-grid-state-module.ts","mappedName": "IgcGridState"}],
-    "members":[
-      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "applyState"}], "originalName": "ApplyState"},
-      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridStateOptions","mappedName": "options"}], "originalName": "Options"} ]
-  },
-  {
-    "originalName": "GridStateComponentEventArgs",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "WebComponents","fileName": "igc-grid-state-component-event-args.ts","mappedName": "IgcGridStateComponentEventArgs"}],
-    "members":[
-      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridState","mappedName": "detail"}], "originalName": "Detail"} ]
   },
   {
     "originalName": "GridStateOptions",
