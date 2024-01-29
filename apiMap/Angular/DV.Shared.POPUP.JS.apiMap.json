@@ -22,6 +22,7 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "exportSerializedVisualModel"}], "originalName": "ExportSerializedVisualModel"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "exportVisualModel"}], "originalName": "ExportVisualModel"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isClosing"}], "originalName": "IsClosing"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isFixed"}], "originalName": "IsFixed"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isFocusable"}], "originalName": "IsFocusable"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isHitTestVisible"}], "originalName": "IsHitTestVisible"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isPointerEnabled"}], "originalName": "IsPointerEnabled"},
@@ -30,7 +31,8 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "pointerBackground"}], "originalName": "PointerBackground"},
       {"names":[{"platform": "Angular", "mappedType": "PopupPointerPosition","mappedName": "pointerPosition"}], "originalName": "PointerPosition"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "pointerSize"}], "originalName": "PointerSize"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "showRelativeToExclusionRect"}], "originalName": "ShowRelativeToExclusionRect"} ]
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "showRelativeToExclusionRect"}], "originalName": "ShowRelativeToExclusionRect"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "useTopLayer"}], "originalName": "UseTopLayer"} ]
   },
   {
     "originalName": "PopupAlignment",

@@ -50,6 +50,8 @@
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "highMemberPath"}], "originalName": "HighMemberPath"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "highlightedHighMemberPath"}], "originalName": "HighlightedHighMemberPath"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "highlightedLowMemberPath"}], "originalName": "HighlightedLowMemberPath"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "lowMemberPath"}], "originalName": "LowMemberPath"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "scrollIntoView"}], "originalName": "ScrollIntoView"} ]
   },

@@ -82,6 +82,7 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getSeriesValueType"}], "originalName": "GetSeriesValueType"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getSeriesValueTypePosition"}], "originalName": "GetSeriesValueTypePosition"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getSeriesValueTypePositionFromValue"}], "originalName": "GetSeriesValueTypePositionFromValue"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "highlightedValueMemberPath"}], "originalName": "HighlightedValueMemberPath"},
       {"names":[{"platform": "React", "mappedType": "CategorySeriesMarkerCollisionAvoidance","mappedName": "markerCollisionAvoidance"}], "originalName": "MarkerCollisionAvoidance"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "scrollIntoView"}], "originalName": "ScrollIntoView"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "trendLineBrush"}], "originalName": "TrendLineBrush"},

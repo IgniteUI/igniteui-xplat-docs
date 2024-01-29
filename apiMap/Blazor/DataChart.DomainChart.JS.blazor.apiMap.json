@@ -93,6 +93,8 @@
       {"names":[{"platform": "Blazor", "mappedType": "IgbChartSortDescriptionCollection","mappedName": "GroupSortDescriptions"}], "originalName": "GroupSortDescriptions"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "GroupSorts"}], "originalName": "GroupSorts"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "HideToolTip"}], "originalName": "HideToolTip"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpressionCollection","mappedName": "HighlightFilterExpressions"}], "originalName": "HighlightFilterExpressions"},
+      {"names":[{"platform": "Blazor", "mappedType": "SeriesHighlightedValuesDisplayMode","mappedName": "HighlightedValuesDisplayMode"}], "originalName": "HighlightedValuesDisplayMode"},
       {"names":[{"platform": "Blazor", "mappedType": "SeriesHighlightingBehavior","mappedName": "HighlightingBehavior"}], "originalName": "HighlightingBehavior"},
       {"names":[{"platform": "Blazor", "mappedType": "SeriesHighlightingMode","mappedName": "HighlightingMode"}], "originalName": "HighlightingMode"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "HorizontalViewScrollbarCornerRadius"}], "originalName": "HorizontalViewScrollbarCornerRadius"},
@@ -108,9 +110,13 @@
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "HorizontalViewScrollbarTrackEndInset"}], "originalName": "HorizontalViewScrollbarTrackEndInset"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "HorizontalViewScrollbarTrackStartInset"}], "originalName": "HorizontalViewScrollbarTrackStartInset"},
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "IncludedProperties"}], "originalName": "IncludedProperties"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "InitialFilter"}], "originalName": "InitialFilter"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpressionCollection","mappedName": "InitialFilterExpressions"}], "originalName": "InitialFilterExpressions"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbChartSortDescriptionCollection","mappedName": "InitialGroupDescriptions"}], "originalName": "InitialGroupDescriptions"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbChartSortDescriptionCollection","mappedName": "InitialGroupSortDescriptions"}], "originalName": "InitialGroupSortDescriptions"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "InitialGroups"}], "originalName": "InitialGroups"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "InitialHighlightFilter"}], "originalName": "InitialHighlightFilter"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpressionCollection","mappedName": "InitialHighlightFilterExpressions"}], "originalName": "InitialHighlightFilterExpressions"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbChartSortDescriptionCollection","mappedName": "InitialSortDescriptions"}], "originalName": "InitialSortDescriptions"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "InitialSorts"}], "originalName": "InitialSorts"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "InitialSummaries"}], "originalName": "InitialSummaries"},
@@ -382,5 +388,14 @@
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "Item"}], "originalName": "Item"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbSeries","mappedName": "Series"}], "originalName": "Series"} ]
+  },
+  {
+    "originalName": "FilterStringErrorsParsingEventArgs",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "FilterStringErrorsParsingEventArgs.cs","mappedName": "IgbFilterStringErrorsParsingEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Errors"}], "originalName": "Errors"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "PropertyName"}], "originalName": "PropertyName"} ]
   }]
 }
