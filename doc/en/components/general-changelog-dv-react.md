@@ -11,7 +11,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerChanges-23-2-JAN}**
 
-### {PackageCharts} Charts
+### {PackageCharts} (Charts)
 
 * [Chart Highlight Filter](charts/features/chart-highlight-filter.md) - The `CategoryChart` and `DataChart` now expose a way to highlight and animate in and out of a subset of data. The display of this highlight depends on the series type. For column and area series, the subset will be shown on top of the total set of data where the subset will be colored by the actual brush of the series, and the total set will have a reduced opacity. For line series, the subset will be shown as a dotted line.
 
@@ -43,7 +43,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 * [Toolbar](menus/toolbar.md) - Beta. This component is a companion container for UI operations to be used primarily with our charting components. The toolbar will dynamically update with a preset of properties and tool items when linked to our `XamDataChart` or `CategoryChart` components. You'll be able to create custom tools for your project allowing end users to provide changes, offering an endless amount of customization.
 
-### {PackageCharts} Charts
+### {PackageCharts} (Charts)
 
 * [ValueLayer](charts/features/chart-overlays.md#{PlatformLower}-value-layer) - A new series type named the `ValueLayer` is now exposed which can allow you to render an overlay for different focal points of the plotted data such as Maximum, Minimum, and Average. This is applied to the `CategoryChart` and `FinancialChart` by adding to the new `ValueLines` collection.
 
