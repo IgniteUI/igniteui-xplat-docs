@@ -44,16 +44,16 @@ mentionedTypes: ['XamBulletGraph']
 2 - ターミナル ウィンドウに以下のコマンドのいずれかを入力します。
 
 ```cmd
-npx create-react-app my-app-name --typescript
+npx create-react-app MyAppName --typescript
 ```
 ```cmd
-yarn create react-app my-app-name --typescript
+yarn create react-app MyAppName --typescript
 ```
 
 アプローチに応じて、`npx` または `yarn` が必要になります。以上のコマンドについての詳細は<a href="https://facebook.github.io/create-react-app/docs/adding-typescript" target="_blank">こちら</a>を参照してください。
 
 ```cmd
-cd my-app-name
+cd MyAppName
 ```
 
 <!-- end: React -->
