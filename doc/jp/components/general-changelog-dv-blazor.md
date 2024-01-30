@@ -17,7 +17,7 @@ namespace: Infragistics.Controls.Charts
 
 * 2023.2 リリースでは .NET 8 がサポートされます。.NET 8 の詳細については、[Microsoft サイト](https://learn.microsoft.com/ja-jp/dotnet/core/whats-new/dotnet-8)をご確認ください。
 
-### {PackageCharts} チャート
+### {PackageCharts} (チャート)
 
 * [チャート強調表示フィルター](charts/features/chart-highlight-filter.md) - `CategoryChart` と `DataChart` は、データのサブセットの内外で強調表示およびアニメーション化する方法を公開するようになりました。この強調表示の表示はシリーズのタイプによって異なります。列およびエリア シリーズの場合、サブセットはデータの合計セットの上に表示され、サブセットはシリーズの実際のブラシによって色付けされ、合計セットは不透明度を下げます。折れ線シリーズの場合、サブセットは点線で表示されます。
 
@@ -39,7 +39,7 @@ namespace: Infragistics.Controls.Charts
 
 * [Toolbar](menus/toolbar.md) - ベータ版。このコンポーネントは、主にチャート コンポーネントで使用される UI 操作のコンパニオン コンテナーです。ツールバーは、`XamDataChart` または `CategoryChart` コンポーネントにリンクされると、プロパティとツールのプリセットで動的に更新されますが、プロジェクト用のカスタム ツールを作成する機能も提供します。
 
-### {PackageCharts} チャート
+### {PackageCharts} (チャート)
 
 * [ValueLayer](charts/features/chart-overlays.md#{PlatformLower}-value-layer) - `ValueLayer` という名前の新しいシリーズ タイプが公開されました。これにより、Maximum、Minimum、Average など、プロットされたデータのさまざまな焦点のオーバーレイを描画できます。これは、新しい `ValueLines` コレクションに追加することで、`CategoryChart` と `FinancialChart` に適用されます。
 
