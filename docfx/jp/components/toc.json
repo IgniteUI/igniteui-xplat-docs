@@ -113,6 +113,12 @@
     "status": "UPDATED"
   },
   {
+    "exclude": ["Angular", "Blazor", "WebComponents"],
+    "name": "Ignite UI for React と Next.js の統合",
+    "href": "nextjs-usage.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular", "Blazor", "WebComponents", "React"],
     "name": "グリッド & リスト",
     "header": true,
