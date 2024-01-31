@@ -64,37 +64,24 @@ cd MyAppName
 {ProductName} は、UI ウィジェット、コンポーネント、デザイン ツール用の UI キット、および Web コンポーネント用のサポート サービスの完全なセットです。開発者が、最新のデスクトップ ブラウザー、モバイル エクスペリエンス、およびブラウザーの Web コンポーネント API をターゲットとするプログレッシブ Web アプリ (PWA) 向けの最新の高性能 HTML5 および JavaScript アプリを構築できるように設計されています。
 
 ## チャートおよびグラフ
-{ProductName} チャートおよびグラフは、65 種類以上のシリーズと組み合わせを通じて、あらゆる種類のデータを魅力的でインタラクティブなグラフとダッシュボードに視覚化できるライブラリです。速度と美しさを追求し、すべてのモダンブラウザーで動作するように設計されており、完全なタッチ操作とインタラクティブ機能により、あらゆるデバイスでレスポンシブなビジュアルをすばやく構築できます。
+{ProductName} には、[チャートとグラフ](charts/chart-overview.md)のライブラリが含まれており、65 種類以上のチャート シリーズと組み合わせを通じて、あらゆる種類のデータを魅力的でインタラクティブなグラフとダッシュボードに視覚化できるライブラリです。速度と美しさを追求し、すべてのモダンブラウザーで動作するように設計されており、完全なタッチ操作とインタラクティブ機能により、あらゆるデバイスでレスポンシブなビジュアルをすばやく構築できます。
 
 ## ゲージ
-{ProductName} ゲージは、簡単かつ直感的な方法でデータを示すために使用されるラジアル ゲージ コンポーネントとリニア ゲージ コンポーネントを提供します。
-ラジアル ゲージには、定義済みの形状とスケールを作成するためのさまざまなカスタマイズ オプションがあります。
-リニア ゲージは、スケールおよび 1 つ以上の範囲と比較した値の単純なビューを提供します。1 つのスケール、1 セットの目盛り、および 1 セットのラベルをサポートします。
-
-{ProductName} ゲージには、ダッシュボードで使用されているメーターとゲージを単純な棒チャートに置き換えて、データの視覚化を作成できる `XamBulletGraph` コンポーネントも含まれています。
+{ProductName} は、簡単かつ直感的な方法でデータを示すために使用される[ラジアル ゲージ](radial-gauge.md)、[リニア ゲージ](linear-gauge.md)と[バレット グラフ](bullet-graph.md) コンポーネントを提供します。[ラジアル ゲージ](radial-gauge.md)には、定義済みの形状とスケールを作成するためのさまざまなカスタマイズ オプションがあります。[リニア ゲージ](linear-gauge.md)は、スケールおよび 1 つ以上の範囲と比較した値の単純なビューを提供します。1 つのスケール、1 セットの目盛り、および 1 セットのラベルをサポートします。[バレット グラフ](bullet-graph.md) コンポーネントを使用すると、ダッシュボードで使用されるメーターとゲージを単純な棒チャートに置き換えて、データの視覚化を作成できます。
 
 ## マップ
-{ProductName} マップは、アプリケーションで地理データを視覚化する機能を提供します。マーカー、線、多角形、さらにはインタラクティブなビットマップの形状で、多くの地理的位置で構成されるデータ セットを描画できます。複数のマップ レイヤーを地理データでオーバーレイし、特定の地理的位置をマークし、カスタム マーカーと色を使用して情報を表示できます。
+{ProductName} [地理マップ](geo-map.md)は、アプリケーションで地理データを視覚化する機能を提供します。マーカー、線、多角形、さらにはインタラクティブなビットマップの形状で、多くの地理的位置で構成されるデータ セットを描画できます。複数のマップ レイヤーを地理データでオーバーレイし、特定の地理的位置をマークし、カスタム マーカーと色を使用して情報を表示できます。
 
 ## グリッドと入力
-{ProductName} グリッドは、わずかな設定でデータをバインドおよび表示できるグリッド コンポーネントです。また、フィルタリング、ソート、グループ化、ピン固定などの機能も提供します。
+{ProductName} は、[データ グリッド](grids/data-grid.md)、[リスト](grids/list.md)、[ツリー](grids/tree.md)、さらには[スプレッドシート](spreadsheet-overview.md)の形式で、わずかな設定でデータをバインドおよび表示できるいくつかの[グリッド](grids/grids-header.md) コンポーネントを提供します。また、フィルタリング、ソート、グループ化、ピン固定などの機能も提供します。
 
-## IgniteUI Web コンポーネント
-{ProductName} は UI コンポーネントの完全なライブラリであり、依存関係のないアプローチでカプセル化と再利用可能なコンポーネントの概念を使用して、最新の Web アプリケーションを構築する機能を提供します。[ストーリーブックはこちら](https://igniteui.github.io/igniteui-webcomponents)をご覧ください!
-
-すべてのコンポーネントは [Indigo.Design デザイン システム](https://jp.infragistics.com/products/appbuilder/ui-toolkit)に基づいており、[App Builder](https://appbuilder.indigo.design/) によって完全にサポートされており、Sketch、Adobe XD、および Figma 用のすぐに使用できる UI キットによって支えられています。
+## ボタン、入力、レイアウト、メニュー 
+{ProductName} は、依存関係のないアプローチでカプセル化と再利用可能なコンポーネントの概念を使用して、最新の Web アプリケーションを構築できるようにするさまざまなタイプの[ボタン](inputs/button.md)、[入力](inputs/input.md)、[メニュー](menus/navbar.md)、[レイアウト](layouts/tabs.md)を提供します。[ストーリーブックはこちら](https://igniteui.github.io/igniteui-webcomponents)をご覧ください!これらのコンポーネントは [Indigo Design System](https://jp.infragistics.com/products/appbuilder/ui-toolkit) に基づいており、[App Builder](https://appbuilder.indigo.design/) によって完全にサポートされており、Sketch、Adobe XD、および Figma 用のすぐに使用できる UI キットによって支えられています。
 
 # {ProductName} を使用した作業の開始
 
-このトピックでは、Ignite UI for Web Components を使用して Web コンポーネント アプリケーションを作成するための手順を説明します。
+このセクションでは、Ignite UI for Web Components を使用して Web コンポーネント アプリケーションを作成するための手順を説明します。
 
-## Ignite UI Web Components の例
-
-`sample="/maps/geo-map/display-osm-imagery", height="750", alt="{Platform} Overview Example"`
-
-
-
-# 構成
 
 ## IgniteUI CLI をインストールする
 
@@ -167,8 +154,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 <igc-badge></igc-badge>
 ```
 
-# Charts および Map Web コンポーネント パッケージをインストールする
-## 手順 1 - Web コンポーネント プロジェクトの作成
+## Charts および Map Web コンポーネント パッケージをインストールする
+
+### 手順 1 - Web コンポーネント プロジェクトの作成
 
 1 - コマンドラインを開き、**wc-html** という名前のディレクトリを作成します。
 ```cmd
@@ -234,7 +222,7 @@ code .
 },
 ```
 
-## 手順 2 - ポリフィルのインストール
+### 手順 2 - ポリフィルのインストール
 
 1 - **VS Code** でターミナルを開きます (**[表示]** -> **[ターミナル]** メニューまたは <kbd>CTRL</kbd> + <kbd>`</kbd> キーを押します)
 
@@ -250,7 +238,7 @@ import '@webcomponents/custom-elements/custom-elements.min';
 import '@webcomponents/custom-elements/src/native-shim.js';
 ```
 
-## 手順 3 - Ignite UI for Web Components と lit-html をインストール
+### 手順 3 - Ignite UI for Web Components と lit-html をインストール
 
 1 - **npm** を使用して Ignite UI for Web コンポーネントをインストールします。この例では、Map Web コンポーネントをインストールします。
 
@@ -288,7 +276,7 @@ ModuleManager.register(
 </body>
 ```
 
-## 手順 4 - Web コンポーネント プロジェクトのビルドと実行
+### 手順 4 - Web コンポーネント プロジェクトのビルドと実行
 
 1 - **VS Code** でターミナルを開き、**build** スクリプトを実行します。
 
@@ -317,9 +305,13 @@ npm run build
 > [!Note]
 > Live Server は Visual Studio Code の拡張機能で、静的および動的ページの自動更新機能を備えたローカル開発サーバーを起動できます。この拡張機能は、Visual Studio Code の [拡張機能] タブから、または [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) からダウンロードしてインストールできます。
 
-4 - ローカル サーバー上の Web ブラウザーを使用して **index.html** に移動すると、Ignite UI for Web Components のスプレッドシートがブラウザーに表示されます。
+4 - ローカル サーバー上の Web ブラウザーを使用して **index.html** に移動します。最終結果には、インタラクティブなワールドマップが表示されます。
 
-<img src="../images/general/geo-map.png" />
+<!-- <img src="../images/general/geo-map.png" /> -->
+
+`sample="/maps/geo-map/display-osm-imagery", height="750", alt="{Platform} 概要の例"`
+
+
 <!-- end: WebComponents -->
 
 <!-- Angular, React -->
@@ -419,11 +411,12 @@ function App() {
 npm run-script start
 ```
 
-コマンドを実行した後、プロジェクトがローカルでビルドされて提供されます。これでデフォルトのブラウザーで自動的に開き、プロジェクトで {ProductName} コンポーネントを使用できるようになります。
+コマンドを実行した後、プロジェクトがローカルでビルドされて提供されます。これでデフォルトのブラウザーで自動的に開き、プロジェクトで {ProductName} コンポーネントを使用できるようになります。最終結果には、インタラクティブなワールドマップが表示されます。
 
-以下の画像は、上記を実行した結果です。
+<!-- <img src="../images/general/geo-map.png" /> -->
 
-<img src="../images/general/geo-map.png" />
+`sample="/maps/geo-map/display-osm-imagery", height="750", alt="{Platform} 概要の例"`
+
 <!-- end: Angular, React -->
 
 <!-- Blazor -->

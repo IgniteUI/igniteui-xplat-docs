@@ -43,8 +43,8 @@ _language: ja
 2 - ターミナル ウィンドウに以下のコマンドを入力します。
 
 ```cmd
-npx create-next-app@latest my-app-name
-cd my-app-name
+npx create-next-app@latest MyAppName
+cd MyAppName
 ```
 
 ## 既存の Next.js アプリの更新
