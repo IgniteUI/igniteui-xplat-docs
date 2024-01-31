@@ -42,8 +42,8 @@ With above prerequisites installed, we can create a new Next.js application.
 2 - Type the following commands in terminal window:
 
 ```cmd
-npx create-next-app@latest my-app-name
-cd my-app-name
+npx create-next-app@latest MyAppName
+cd MyAppName
 ```
 
 ## Updating Existing Next.js App
