@@ -43,16 +43,16 @@ With above prerequisites installed, we can create a new React application.
 2 - Type one of these commands in terminal window:
 
 ```cmd
-npx create-react-app my-app-name --typescript
+npx create-react-app MyAppName --typescript
 ```
 ```cmd
-yarn create react-app my-app-name --typescript
+yarn create react-app MyAppName --typescript
 ```
 
 Depending on the approach `npx` or `yarn` will be required. Refer to this <a href="https://facebook.github.io/create-react-app/docs/adding-typescript" target="_blank">website</a> for more information on above commands.
 
 ```cmd
-cd my-app-name
+cd MyAppName
 ```
 
 <!-- end: React -->
@@ -63,37 +63,24 @@ cd my-app-name
 {ProductName} is a complete set of UI widgets, components, UI kits for design tools and supporting services for Web Components. Designed to enable developers to build the most modern, high-performance HTML5 & JavaScript apps for modern desktop browsers, mobile experiences and progressive web apps (PWA’s) targeting the browsers web components APIs.
 
 ## Charts & Graphs
-{ProductName} Charts & Graphs is a library that lets you visualize any type of data through its 65+ types of series and combinations into stunning and interactive charts and dashboards. Built for speed and beauty, designed to work on every modern browser and with complete touch and interactivity, you can quickly build responsive visuals on any device.
+{ProductName} contains a library of [Charts & Graphs](charts/chart-overview.md) that lets you visualize any type of data through its 65+ types of chart series and combinations into stunning and interactive charts and dashboards. Built for speed and beauty, designed to work on every modern browser and with complete touch and interactivity, you can quickly build responsive visuals on any device.
 
 ## Gauges
-{ProductName} Gauges provides a radial and a linear gauge components used to illustrate data in an easy and intuitive way.
-The radial gauge has a variety of customization options in order to create a predefined shape and scale.
-The linear gauge provides a simple view of a value compared against a scale and one or more ranges. It supports one scale, one set of tick marks and one set of labels.
-
-{ProductName} Gauges also includes a `XamBulletGraph` component that lets you create data visualizations, replacing meters and gauges that are used on dashboards with simple bar charts.
+{ProductName} provides [Radial Gauge](radial-gauge.md), [Linear Gauge](linear-gauge.md), and [Bullet Graph](bullet-graph.md) components used to illustrate data in an easy and intuitive way. The [Radial Gauge](radial-gauge.md) has a variety of customization options in order to create a predefined shape and scale. The [Linear Gauge](linear-gauge.md) provides a simple view of a value compared against a scale and one or more ranges. It supports one scale, one set of tick marks and one set of labels. The [Bullet Graph](bullet-graph.md) component that lets you create data visualizations, replacing meters and gauges that are used on dashboards with simple bar charts.
 
 ## Maps
-{ProductName} Maps brings the ability to visualize geographic data in your application. It can render data sets consisting of many geographic locations in shapes of markers, lines, polygons, or even interactive bitmaps. It allows you to overlay multiple map layers with geographic data, mark specific geographic locations and display information using custom markers and colors.
+{ProductName} [Geographic Maps](geo-map.md) brings the ability to visualize geographic data in your application. It can render data sets consisting of many geographic locations in shapes of markers, lines, polygons, or even interactive bitmaps. It allows you to overlay multiple map layers with geographic data, mark specific geographic locations and display information using custom markers and colors.
 
 ## Grids & Inputs
-{ProductName} Grid is a grid component that allows you to bind and display data with little configuration. It also provides features such as filtering, sorting, grouping, pinning and more.
-
-## IgniteUI Web Components
-{ProductName} is a complete library of UI components, giving you the ability to build modern web applications using encapsulation and the concept of reusable components in a dependency-free approach. See the [Storybook Here](https://igniteui.github.io/igniteui-webcomponents)!
-
-All components are based on the [Indigo.Design Design System](https://www.infragistics.com/products/appbuilder/ui-toolkit), are fully supported by [App Builder](https://appbuilder.indigo.design/) and are backed by ready-to-use UI kits for Sketch, Adobe XD and Figma.
+{ProductName} provides several [Grids](grids/grids-header.md) components that allows you to bind and display data with little configuration in form of [Data Grid](grids/data-grid.md), [List](grids/list.md), [Tree](grids/tree.md), and even [Spreadsheet](spreadsheet-overview.md). It also provides features such as filtering, sorting, grouping, pinning and more.
+                                                                                                          
+## Buttons, Inputs, Layouts & Menus  
+{ProductName} provides various types of [Buttons](inputs/button.md), [Inputs](inputs/input.md), [Menus](menus/navbar.md), and [Layouts](layouts/tabs.md) that give you the ability to build modern web applications using encapsulation and the concept of reusable components in a dependency-free approach. See the [Storybook Here](https://igniteui.github.io/igniteui-webcomponents). These components are based on the [Indigo Design System](https://www.infragistics.com/products/appbuilder/ui-toolkit), are fully supported by [App Builder](https://appbuilder.indigo.design/) and are backed by ready-to-use UI kits for Sketch, Adobe XD and Figma.
 
 # Getting Started With {ProductName}
 
-This topic provides step-by-step instructions for creating Web Components application with Ignite UI for Web Components.
+This section provides step-by-step instructions for creating Web Components application with Ignite UI for Web Components.
 
-## Ignite UI Web Components Example
-
-`sample="/maps/geo-map/display-osm-imagery", height="750", alt="{Platform} Overview Example"`
-
-
-
-# Configuration
 
 ## Install IgniteUI CLI
 
@@ -166,8 +153,9 @@ After the components are imported you can use them in your html:
 <igc-badge></igc-badge>
 ```
 
-# Install Charts and Map Web Component packages
-## Step 1 - Create the Web Component Project
+## Install Charts and Map Packages
+
+### Step 1 - Create the Web Component Project
 
 1 - Open a command line and create a directory named **wc-html**
 ```cmd
@@ -233,7 +221,7 @@ code .
 },
 ```
 
-## Step 2 - Install Polyfills
+### Step 2 - Install Polyfills
 
 1 - Open a terminal in **VS Code** (**View** -> **Terminal** menu or press <kbd>CTRL</kbd> + <kbd>`</kbd> keys)
 
@@ -249,7 +237,7 @@ import '@webcomponents/custom-elements/custom-elements.min';
 import '@webcomponents/custom-elements/src/native-shim.js';
 ```
 
-## Step 3 - Install Ignite UI for Web Components and lit-html
+### Step 3 - Install Ignite UI for Web Components and lit-html
 
 1 - Install the Ignite UI for Web Component using **npm**. In this example, we will install the Map web component:
 
@@ -287,7 +275,7 @@ ModuleManager.register(
 </body>
 ```
 
-## Step 4 - Build and Run the Web Component Project
+### Step 4 - Build and Run the Web Component Project
 
 1 - Open a terminal in **VS Code** and execute the **build** script
 
@@ -316,9 +304,13 @@ npm run build
 > [!Note]
 > Live Server is an extension to Visual Studio Code that allows you to launch a local development server with live reload feature for static & dynamic pages. This extension can be installed via the Visual Studio Code Extensions tab, or by downloading it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
-4 - Navigate to the **index.html** using a web browser on your local server, and the Ignite UI for Web Components map should now be rendered with shape of the world.
+4 - Navigate to the **index.html** using a web browser on your local server. The final result should show interactive map of the world:
 
-<img src="../images/general/geo-map.png" />
+<!-- <img src="../images/general/geo-map.png" /> -->
+
+`sample="/maps/geo-map/display-osm-imagery", height="750", alt="{Platform} Overview Example"`
+
+
 <!-- end: WebComponents -->
 
 <!-- Angular, React -->
@@ -418,11 +410,12 @@ Finally, we can run our new application by using one of the following commands:
 npm run-script start
 ```
 
-After executing this command, your project will be built and served locally on your computer. It will automatically open in your default browser and you will be able to use {ProductName} components in your project.
+After executing this command, your project will be built and served locally on your computer. It will automatically open in your default browser and you will be able to use {ProductName} components in your project. The final result should show interactive map of the world:
 
-The final result should look something like this screenshot:
+<!-- <img src="../images/general/geo-map.png" /> -->
 
-<img src="../images/general/geo-map.png" />
+`sample="/maps/geo-map/display-osm-imagery", height="750", alt="{Platform} Overview Example"`
+
 <!-- end: Angular, React -->
 
 <!-- Blazor -->

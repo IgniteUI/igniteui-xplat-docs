@@ -7,7 +7,7 @@ namespace: Infragistics.Controls
 _language: ja
 ---
 
-# {Platform} 展開パネルの概要
+# {Platform} Expansion Panel (展開パネル) の概要
 {ProductName} 展開パネルは、縮小または展開の 2 つの状態で描画できる軽量のアコーディオン コンポーネントです。展開パネルは、マウス クリックまたはキーボード操作によって切り替えることができます。
 
 ## {Platform} 展開パネルの例

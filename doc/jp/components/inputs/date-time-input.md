@@ -6,9 +6,9 @@ mentionedTypes: ['DateTimeInput']
 _language: ja
 ---
 
-# {Platform} 日時入力の概要
+# {Platform} Date Time Input (日時入力) の概要
 
-{ProductName} 日時入力を使用すると、ユーザーは選択した入力要素で日付と時刻を設定および編集できます。ユーザーは、編集可能なマスクされた入力を使用して、日付と時刻の両方の部分を編集できます。さらに、検証に最小値と最大値だけでなく、希望の表示形式および入力形式の設定を指定できます。
+{ProductName} Date Time Input を使用すると、ユーザーは選択した入力要素で日付と時刻を設定および編集できます。ユーザーは、編集可能なマスクされた入力を使用して、日付と時刻の両方の部分を編集できます。さらに、検証に最小値と最大値だけでなく、希望の表示形式および入力形式の設定を指定できます。
 
 `sample="/inputs/date-time-input/overview", height="150", alt="{Platform} 日時入力の概要の例"`
 
