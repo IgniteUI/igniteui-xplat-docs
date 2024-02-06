@@ -116,7 +116,7 @@ The Hierarchical Grid supports two ways of binding to data:
 
 If the application loads the whole hierarchical data as an array of objects referencing children arrays of objects, then the Hierarchical Grid can be configured to read it and bind to it automatically. Here is an example of a properly structured hierarchical data source:
 
-```javascript
+```ts
 export const singers = [{
     "Artist": "Naomí Yepes",
     "Photo": "assets/images/hgrid/naomi.png",
@@ -174,7 +174,7 @@ Each *{RowIslandSelector}* should specify the key of the property that holds the
 
 ### Using Load-On-Demand
 
-Most applications are designed to load as little data as possible initially, which results in faster load times. In such cases {ComponentSelector} may be configured to allow user-created services to feed it with data on demand.
+Most applications are designed to load as little data as possible initially, which results in faster load times. In such cases {HierarchicalGridSelector} may be configured to allow user-created services to feed it with data on demand.
 
 <!-- Angular -->
 ```html
@@ -260,7 +260,80 @@ export class RemoteLoDService {
 ```
 <!-- end: Angular -->
 
-TODO: Add for other platforms snippets for load of demand
+<!-- WebComponents -->
+```html
+<igc-hierarchical-grid id="hGrid" primary-key="CustomerID" auto-generate="true" height="600px" width="100%">
+    <igc-row-island id="ordersRowIsland" child-data-key="Orders" primary-key="OrderID" auto-generate="true">
+        <igc-row-island id="orderDetailsRowIsland" child-data-key="Order_Details" primary-key="ProductID" auto-generate="true"></igc-row-island>
+    </igc-row-island>
+</igc-hierarchical-grid>
+```
+
+```ts
+import { getData } from "./remoteService";
+
+export class HierarchicalGridLoadOnDemand {
+    constructor() {
+        const hierarchicalGrid = document.getElementById("hGrid") as IgcHierarchicalGridComponent;
+        const ordersRowIsland = document.getElementById("ordersRowIsland");
+        const orderDetailsRowIsland = document.getElementById("orderDetailsRowIsland");
+        ordersRowIsland.addEventListener("gridCreated", (event: any) => {
+            this.gridCreated(event, "CustomerID");
+        });
+        orderDetailsRowIsland.addEventListener("gridCreated", (event: any) => {
+            this.gridCreated(event, "OrderID");
+        });
+        hierarchicalGrid.isLoading = true;
+        getData({ parentID: null, rootLevel: true, key: "Customers" }).then((data: any) => {
+            hierarchicalGrid.isLoading = false;
+            hierarchicalGrid.data = data;
+            hierarchicalGrid.markForCheck();
+        });
+    }
+
+    public gridCreated(event: CustomEvent<IgcGridCreatedEventArgs>, _parentKey: string) {
+        const context = event.detail;
+        const dataState = {
+            key: context.owner.key,
+            parentID: context.parentID,
+            parentKey: _parentKey,
+            rootLevel: false
+        };
+        context.grid.isLoading = true;
+        getData(dataState).then((data: any[]) => {
+            context.grid.isLoading = false;
+            context.grid.data = data;
+            context.grid.markForCheck();
+        });
+    }
+}
+```
+
+```ts
+const URL = `https://services.odata.org/V4/Northwind/Northwind.svc/`;
+export function getData(dataState?: any): any {
+    return fetch(buildUrl(dataState))
+        .then((result) => result.json())
+        .then((data) => data["value"]);
+}
+
+function buildUrl(dataState: any) {
+    let qS = "";
+    if (dataState) {
+        qS += `${dataState.key}?`;
+
+        if (!dataState.rootLevel) {
+            if (typeof dataState.parentID === "string") {
+                qS += `$filter=${dataState.parentKey} eq '${dataState.parentID}'`;
+            } else {
+                qS += `$filter=${dataState.parentKey} eq ${dataState.parentID}`;
+            }
+        }
+    }
+    return `${URL}${qS}`;
+}
+```
+<!-- end: WebComponents -->
 
 ## Hide/Show row expand indicators
 
@@ -314,7 +387,7 @@ The grid features could be enabled and configured through the {RowIslandSelector
         <igc-column field="ChildLevels"></igc-column>
         <igc-column field="ProductName" has-summary="true"></igc-column>
     </igc-column-group>
-    <igc-row-island child-data-key="childData" auto-generate="false" row-selection="multiple" #layout1>
+    <igc-row-island child-data-key="childData" auto-generate="false" row-selection="multiple">
         <igc-column field="ID" has-summary="true" data-type="number"></igc-column>
         <igc-column-group header="Information2">
             <igc-column field="ChildLevels"></igc-column>
