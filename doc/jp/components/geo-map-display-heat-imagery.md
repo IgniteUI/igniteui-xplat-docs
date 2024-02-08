@@ -7,7 +7,7 @@ _language: ja
 ---
 # {Platform} ヒート画像の表示
 
-{ProductName} マップ コントロールには、Shape ファイルをタイル シリーズにロードして地理空間データをロードすることにより、`ShapefileConverter` によって生成される `ShapeFileRecords` を使用して、ヒートマップ画像を表示する機能があります。
+{ProductName} マップ コントロールには、Shape ファイルをタイル シリーズにロードして地理空間データをロードすることにより、`ShapefileConverter` によって生成される `ShapeFileRecord` を使用して、ヒートマップ画像を表示する機能があります。
 
 このトピックを読み進めるための前提条件として、[シェープ ファイルを地理的データにバインディング](geo-map-binding-shp-file.md)をお読みください。
 
@@ -345,11 +345,9 @@ public onDataLoaded(csvData: string) {
 ## API リファレンス
 
  - `HeatTileGenerator`
- - `HeatTileGenerator`
  - `MaximumColor`
  - `MinimumColor`
- - `ShapeFileRecord`
- - `ShapeFileRecords`
+ - `ShapefileRecord`
  - `ShapefileConverter`
  - `TileGeneratorMapImagery`
  - `TileGenerator`
