@@ -54,27 +54,37 @@ npm install --save {PackageInputs}
 npm install --save {PackageLayouts}
 ```
 
+You also need to include the following import to use the grid:
+
 <!-- WebComponents -->
-
-You also need to include the following import to use the hierarchical grid:
-
 ```typescript
-import 'igniteui-webcomponents-grids/grids/combined';
+import 'igniteui-webcomponents-grids/grids/combined.js';
+```
+<!-- end: WebComponents -->
+
+```tsx
+import "igniteui-react-grids/grids";
 ```
 
 The corresponding styles should also be referenced. You can choose light or dark option for one of the [themes](../../themes/overview.md) and based on your project configuration to import it:
 
+<!-- WebComponents -->
 ```typescript
 import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 ```
+<!-- end: WebComponents -->
 
+```tsx
+import 'igniteui-react-grids/grids/themes/light/bootstrap.css'
+```
+
+<!-- WebComponents -->
 Or to link it:
 ```typescript
 <link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
 ```
-
-For more details on how to customize the appearance of the hierarchical grid, you may have a look at the [styling](overview.md#Styling) section.
 <!-- end: WebComponents -->
+For more details on how to customize the appearance of the hierarchical grid, you may have a look at the [styling](overview.md#Styling) section.
 
 <!-- end: Angular, React, WebComponents -->
 
@@ -160,7 +170,7 @@ Each *{RowIslandSelector}* should specify the key of the property that holds the
 ```
 
 ```html
-<igc-hierarchical-grid data="singers" auto-generate="true">
+<igc-hierarchical-grid auto-generate="true">
     <igc-row-island child-data-key="Albums" auto-generate="true">
         <igc-row-island child-data-key="Songs" auto-generate="true">
         </igc-row-island>
@@ -168,6 +178,17 @@ Each *{RowIslandSelector}* should specify the key of the property that holds the
     <igc-row-island child-data-key="Tours" auto-generate="true">
     </igc-row-island>
 </igc-hierarchical-grid>
+```
+
+```tsx
+<IgrHierarchicalGrid data={singers} autoGenerate="true">
+    <IgrRowIsland childDataKey="Albums" autoGenerate="true">
+        <IgrRowIsland childDataKey="Songs" autoGenerate="true">
+        </IgrRowIsland>
+    </IgrRowIsland>
+    <IgrRowIsland childDataKey="Tours" autoGenerate="true">
+    </IgrRowIsland>
+</IgrHierarchicalGrid>
 ```
 > [!NOTE]
 > Note that instead of `data` the user configures only the `key` that the {HierarchicalGridSelector} needs to read to set the data automatically.
@@ -294,7 +315,7 @@ export class HierarchicalGridLoadOnDemand {
     public gridCreated(event: CustomEvent<IgcGridCreatedEventArgs>, _parentKey: string) {
         const context = event.detail;
         const dataState = {
-            key: context.owner.key,
+            key: context.owner.childDataKey,
             parentID: context.parentID,
             parentKey: _parentKey,
             rootLevel: false
@@ -308,7 +329,76 @@ export class HierarchicalGridLoadOnDemand {
     }
 }
 ```
+<!-- end: WebComponents -->
 
+```tsx
+import { getData } from "./remoteService";
+
+export default function Sample() {
+  const hierarchicalGrid = useRef(null);
+  function gridCreated(
+    rowIsland: IgrRowIsland,
+    event: IgrGridCreatedEventArgs,
+    _parentKey: string
+  ) {
+    const context = event.detail;
+    const dataState = {
+      key: rowIsland.childDataKey,
+      parentID: context.parentID,
+      parentKey: _parentKey,
+      rootLevel: false,
+    };
+    context.grid.isLoading = true;
+    getData(dataState).then((data: any[]) => {
+      context.grid.isLoading = false;
+      context.grid.data = data;
+      context.grid.markForCheck();
+    });
+  }
+  useEffect(() => {
+    hierarchicalGrid.current.isLoading = true;
+    getData({ parentID: null, rootLevel: true, key: "Customers" }).then(
+      (data: any) => {
+        hierarchicalGrid.current.isLoading = false;
+        hierarchicalGrid.current.data = data;
+        hierarchicalGrid.current.markForCheck();
+      }
+    );
+  }, []);
+
+  return (
+    <IgrHierarchicalGrid
+        ref={hierarchicalGrid}
+        primaryKey="CustomerID"
+        autoGenerate="true"
+        height="600px"
+        width="100%"
+    >
+        <IgrRowIsland
+        childDataKey="Orders"
+        primaryKey="OrderID"
+        autoGenerate="true"
+        gridCreated={(
+            rowIsland: IgrRowIsland,
+            e: IgrGridCreatedEventArgs
+        ) => gridCreated(rowIsland, e, "CustomerID")}
+        >
+        <IgrRowIsland
+            childDataKey="Order_Details"
+            primaryKey="ProductID"
+            autoGenerate="true"
+            gridCreated={(
+            rowIsland: IgrRowIsland,
+            e: IgrGridCreatedEventArgs
+            ) => gridCreated(rowIsland, e, "OrderID")}
+        ></IgrRowIsland>
+        </IgrRowIsland>
+    </IgrHierarchicalGrid>
+  );
+}
+```
+
+<!-- WebComponents, React -->
 ```ts
 const URL = `https://services.odata.org/V4/Northwind/Northwind.svc/`;
 export function getData(dataState?: any): any {
@@ -333,7 +423,7 @@ function buildUrl(dataState: any) {
     return `${URL}${qS}`;
 }
 ```
-<!-- end: WebComponents -->
+<!-- end: WebComponents, React -->
 
 ## Hide/Show row expand indicators
 
@@ -347,6 +437,11 @@ If you have a way to provide information whether a row has children prior to its
 ```html
 <igc-hierarchical-grid data="data" primary-key="ID" has-children-key="hasChildren">
 </igc-hierarchical-grid>
+```
+
+```tsx
+<IgrHierarchicalGrid data={data} primaryKey="ID" hasChildrenKey="hasChildren">
+</IgrHierarchicalGrid>
 ```
 
 Note that setting the `HasChildrenKey` property is not required. In case you don't provide it, expansion indicators will be displayed for each row.
@@ -398,6 +493,26 @@ The grid features could be enabled and configured through the {RowIslandSelector
     <igc-paginator>
     </igc-paginator>
 </igc-hierarchical-grid>
+```
+
+```tsx
+<IgrHierarchicalGrid data={localData} autoGenerate="false"
+    allowFiltering='true' height="600px" width="800px">
+    <IgrColumn field="ID" pinned="true" filterable="true"></IgrColumn>
+    <IgrColumnGroup header="Information">
+        <IgrColumn field="ChildLevels"></IgrColumn>
+        <IgrColumn field="ProductName" hasSummary="true"></IgrColumn>
+    </IgrColumnGroup>
+    <IgrRowIsland childDataKey="childData" autoGenerate="false" rowSelection="multiple">
+        <IgrColumn field="ID" hasSummary="true" data-type="number"></IgrColumn>
+        <IgrColumnGroup header="Information2">
+            <IgrColumn field="ChildLevels"></IgrColumn>
+            <IgrColumn field="ProductName"></IgrColumn>
+        </IgrColumnGroup>
+        <IgrPaginator perPage={5}></IgrPaginator>
+    <IgrRowIsland>
+    <IgrPaginator></IgrPaginator>
+</IgrHierarchicalGrid>
 ```
 
 The following grid features work on a per grid level, which means that each grid instance manages them independently of the rest of the grids:
