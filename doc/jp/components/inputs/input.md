@@ -5,7 +5,7 @@ _keywords: {Platform} input, {ProductName}, Infragistics, {Platform} 入力, イ
 mentionedTypes: ['Input', 'Icon', 'Radio']
 _language: ja
 ---
-# {Platform} Input の概要
+# {Platform} Input (入力) の概要
 
 {ProductName} Input は、ユーザーがデータを入力できるコンポーネントです。
 
