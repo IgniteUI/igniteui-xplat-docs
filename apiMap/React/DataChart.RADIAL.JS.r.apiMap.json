@@ -16,6 +16,7 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getSeriesValue"}], "originalName": "GetSeriesValue"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "hasValueAxis"}], "originalName": "HasValueAxis"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "highlightedValueMemberPath"}], "originalName": "HighlightedValueMemberPath"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isValueAxisInverted"}], "originalName": "IsValueAxisInverted"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "scrollIntoView"}], "originalName": "ScrollIntoView"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "trendLineBrush"}], "originalName": "TrendLineBrush"},

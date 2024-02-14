@@ -381,13 +381,6 @@ $custom-grid-theme: grid-theme(
 ## API リファレンス
 
 * `{ComponentName}`
-* `Cell`
-<!-- ComponentStart: Grid, HierarchicalGrid -->
-* `GridRow`
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
-<!-- ComponentStart: TreeGrid -->
-* `TreeGridRow`
-<!-- ComponentEnd: TreeGrid -->
 
 ## その他のリソース
 

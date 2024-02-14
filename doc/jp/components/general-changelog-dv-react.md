@@ -10,25 +10,32 @@ namespace: Infragistics.Controls.Charts
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
-## **{PackageVerChanges-23-2.1}**
+## **{PackageVerChanges-23-2-JAN}**
 
-### {PackageGrids} (Toolbar - ベータ版)
+### {PackageCharts} (チャート)
 
-* クリップボードを介してチャートを画像に保存するための新しいツールがデフォルトのツールとして追加されました。
-* ツールバーの `Orientation` プロパティを介して垂直方向が追加されました。デフォルトでは、ツールバーは水平方向ですが、ツールバーを垂直方向に表示できるようになり、ツールが左右にポップアップ表示されます。
-* ツールバーの `renderImageFromText` メソッドを介してカスタム SVG アイコンのサポートが追加され、カスタム ツールの作成がさらに強化されました。
+* [チャート強調表示フィルター](charts/features/chart-highlight-filter.md) - `CategoryChart` と `XamDataChart` は、データのサブセットの内外で強調表示およびアニメーション化する方法を公開するようになりました。この強調表示の表示はシリーズのタイプによって異なります。列およびエリア シリーズの場合、サブセットはデータの合計セットの上に表示され、サブセットはシリーズの実際のブラシによって色付けされ、合計セットは不透明度を下げます。折れ線シリーズの場合、サブセットは点線で表示されます。
+
+## **{PackageVerChanges-23-2-DEC}**
+
 ### {PackageGrids} (Grid)
+
 * 新規機能:
     - [状態保持](grids/grid/state-persistence.md)
 
 ## **{PackageVerChanges-23-2}**
 
-### 新しいコンポーネント
+### {PackageGrids} (Toolbar - ベータ版)
+
+* クリップボードを介してチャートを画像に保存するための保存ツール アクションが追加されました。
+* ツールバーの `Orientation` プロパティを介して垂直方向が追加されました。デフォルトでは、ツールバーは水平方向ですが、ツールバーを垂直方向に表示できるようになり、ツールが左右にポップアップ表示されます。
+* ツールバーの `renderImageFromText` メソッドを介してカスタム SVG アイコンのサポートが追加され、カスタム ツールの作成がさらに強化されました。
 
 * [Grid](grids/data-grid.md) - これは新しい完全に機能するクロスプラットフォーム グリッドで、フィルタリング、ソート、テンプレート、行の選択、行のグループ化、行のピン固定、移動可能な列などの機能が含まれています。
 
 ### 非推奨のコンポーネント
-> [DataGrid](grids/data-grid/overview.md) - DataGrid は非推奨です。[Grid](grids/data-grid.md) を参照してください。
+
+> [DataGrid](grids/data-grid/overview.md) - DataGrid は非推奨です。[Grid](grids/data-grid.md) を使用してください。
 
 ## **{PackageVerChanges-23-1}**
 
@@ -36,7 +43,7 @@ namespace: Infragistics.Controls.Charts
 
 * [Toolbar](menus/toolbar.md) - ベータ版。このコンポーネントは、主にチャート コンポーネントで使用される UI 操作のコンパニオン コンテナーです。ツールバーは、`XamDataChart` または `CategoryChart` コンポーネントにリンクされると、プロパティとツール項目のプリセットで動的に更新されます。プロジェクト用のカスタム ツールを作成して、エンド ユーザーが変更を提供できるようになり、無限のカスタマイズが可能になります。
 
-### {PackageCharts} チャート
+### {PackageCharts} (チャート)
 
 * [ValueLayer](charts/features/chart-overlays.md#{PlatformLower}-value-layer) - `ValueLayer` という名前の新しいシリーズ タイプが公開されました。これにより、Maximum、Minimum、Average など、プロットされたデータのさまざまな焦点のオーバーレイを描画できます。これは、新しい `ValueLines` コレクションに追加することで、`CategoryChart` と `FinancialChart` に適用されます。
 
@@ -44,9 +51,7 @@ namespace: Infragistics.Controls.Charts
 
 ## **{PackageVerChanges-22-2}**
 
-デフォルトの動作を大幅に改善し、カテゴリ チャート API を改良して使いやすくしました。
-
-これらの新しいチャートの改善点は次のとおりです:
+デフォルトの動作を大幅に改善し、カテゴリ チャート API を改良して使いやすくしました。これらの新しいチャートの改善点は次のとおりです:
 
 * ブラウザー / 画面サイズに基づいた水平ラベル回転のレスポンシブ レイアウト。
 * すべてのプラットフォームでの丸型ラベルの描画が強化されました。
@@ -76,10 +81,10 @@ namespace: Infragistics.Controls.Charts
 
 ### {PackageGrids} (データ グリッド)
 
-* `Column` を `DataGridColumn` に変更しました。
-* `GridCellEventArgs` を `DataGridCellEventArgs` に変更しました。
-* `GridSelectionMode` を `DataGridSelectionMode` に変更しました。
-* `SummaryOperand` を `DataSourceSummaryOperand` に変更しました。
+* **{IgPrefix}Column** を `DataGridColumn` に変更しました。
+* **GridCellEventArgs** を `DataGridCellEventArgs` に変更しました。
+* **GridSelectionMode** を `DataGridSelectionMode` に変更しました。
+* **SummaryOperand** を `DataSourceSummaryOperand` に変更しました。
 
 ## **{PackageVerChanges-22-1}**
 ### {PackageCharts} (チャート)
@@ -87,7 +92,7 @@ namespace: Infragistics.Controls.Charts
 * 高度に構成可能な [DataLegend](charts/features/chart-data-legend.md) コンポーネントが追加されました。これは、`Legend` とよく似たコンポーネントですが、シリーズの値を表示し、シリーズの行と値の列をフィルタリングし、値のスタイルとフォーマットを行うための多くの構成プロパティを提供します。
 * 高度に構成可能な [DataToolTip](charts/features/chart-data-tooltip.md) が追加されました。これは、シリーズの値とタイトル、およびシリーズの凡例バッジをツールチップに表示します。これは、すべてのチャート タイプのデフォルトのツールチップになりました。
 * 積層シリーズのアニメーションとトランジションインのサポートが追加されました。`IsTransitionInEnabled` プロパティを true に設定すると、アニメーションを有効にできます。そこから、`TransitionInDuration` プロパティを設定してアニメーションが完了するまでの時間を決定し、`TransitionInMode` でアニメーションのタイプを決定できます。
-* 追加された `AssigningCategoryStyle` イベントは、`DataChart` のすべてのシリーズで利用できるようになりました。このイベントは、背景色の `Fill` や強調表示など、シリーズ項目の外観を条件付きで構成する場合に処理されます。
+* 追加された `AssigningCategoryStyle` イベントは、`XamDataChart` のすべてのシリーズで利用できるようになりました。このイベントは、背景色の `Fill` や強調表示など、シリーズ項目の外観を条件付きで構成する場合に処理されます。
 * CalloutLayer の新しい `AllowedPositions` 列挙体。チャート内のどこにコールアウトを配置するかを制限するために使用されます。デフォルトでは、コールアウトは最適な場所に配置されますが、これは `TopLeft`、`TopRight`、`BottomLeft`、または `BottomRight` を強制するために使用されます。
 * 注釈レイヤーに追加された新しいコーナー半径プロパティ。各コールアウトのコーナーを丸めるために使用されます。コーナー半径がデフォルトで追加されていることに注意してください。
     - CalloutLayer の `CalloutCornerRadius`
@@ -101,10 +106,7 @@ namespace: Infragistics.Controls.Charts
 
 ### {PackageGrids} (データ グリッド)
 
-* 新規機能:
-- [行のページング](grids/data-grid/row-paging.md)
-
-ページネーションは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。ページネーションを使用すると、データを設定された行数で表示することができ、ユーザーはスクロール バーを使用せずにデータを順次閲覧することができます。テーブル ページネーションの UI には通常、現在のページ、合計ページ、ユーザーがページをめくるためのクリック可能な [前へ] と [次へ] の矢印 / ボタンなどが含まれます。
+新機能 - [行ページング](grids/data-grid/row-paging.md)を追加しました。これは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。ページネーションを使用すると、データを設定された行数で表示することができ、ユーザーはスクロール バーを使用せずにデータを順次閲覧することができます。テーブル ページネーションの UI には通常、現在のページ、合計ページ、ユーザーがページをめくるためのクリック可能な [前へ] と [次へ] の矢印 / ボタンなどが含まれます。
 
 ## **{PackageVerChanges-21-2.1}**
 
@@ -187,7 +189,7 @@ namespace: Infragistics.Controls.Charts
 ## **{PackageVerChanges-21-1}**
 ### {PackageCharts} (チャート)
 
-このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。例えば、`DataChart`、`CategoryChart`、および `FinancialChart`。
+このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。例えば、`XamDataChart`、`CategoryChart`、および `FinancialChart`。
 
 * 棒/縦棒/ウォーターフォール シリーズを、角丸ではなく角が四角になるように変更しました。
 * heat min プロパティの 散布高密度シリーズの色を <span style="color:#8a5bb1">#8a5bb1</span> から <span style="color:#000000">#000000</span> に変更しました。

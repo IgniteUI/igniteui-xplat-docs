@@ -526,19 +526,6 @@ import 'core-js/es7/array';
 
 * `{ComponentName}`
 
-<!-- ComponentStart: Grid, HierarchicalGrid, PivotGrid -->
-
-* `GridRow`
-
-<!-- ComponentEnd: Grid, HierarchicalGrid, PivotGrid -->
-
-<!-- ComponentStart: TreeGrid -->
-
-* `TreeGridRow`
-
-<!-- ComponentEnd: TreeGrid -->
-
-* `Cell`
 
 ## その他のリソース
 

@@ -32,6 +32,8 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getItemIndex"}], "originalName": "GetItemIndex"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "highlightedAngleMemberPath"}], "originalName": "HighlightedAngleMemberPath"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "highlightedRadiusMemberPath"}], "originalName": "HighlightedRadiusMemberPath"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCustomPolarMarkerStyleAllowed"}], "originalName": "IsCustomPolarMarkerStyleAllowed"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCustomPolarStyleAllowed"}], "originalName": "IsCustomPolarStyleAllowed"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isPolar"}], "originalName": "IsPolar"},

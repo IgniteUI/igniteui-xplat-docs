@@ -34,6 +34,7 @@ The goal here is to provide cross platform long form doc for Angular, Blazor, Re
   * [API Mapping Files](#API-Mapping-Files)
   * [API Resource Links](#API-Resource-Links)
   * [Merging Branches](#Merging-Branches)
+  * [Updating Angular Docs](#updating-angular-docs)
 
 
 ## Getting Started
@@ -205,13 +206,7 @@ yarn install
 
 > NOTE: Do not use `npm` because you will not be able to run docs locally.
 
-You can host the DocFX locally with this command *npm* (PS in admin mode required):
-
-```cmd
-npm start
-```
-
-You can host the DocFX locally with this command *yarn*:
+You can host the DocFX locally with this command *yarn* (PS in admin mode required):
 
 ```cmd
 yarn start
@@ -221,12 +216,7 @@ Which will show you English documentation for Blazor platform by default.
 
 You can change platform by running one of the following commands with:
 
-<!-- ```cmd
-yarn start --plat=WebComponents
-yarn start --plat=React
-yarn start --plat=Angular
-yarn start --plat=Blazor
-
+<!-- ```cmd 
 For internal use only:
     npm run startBlazorStaging
     (Note staging samples only )
@@ -240,66 +230,73 @@ yarn startBlazor
 
 If you want see the output for a different language you can use the lang switches:
 
-<!-- ```cmd
-yarn start --lang=jp --plat=WebComponents
-yarn start --lang=en --plat=WebComponents
-yarn start --lang=kr --plat=WebComponents
-``` -->
 
 ```cmd
 yarn startWC --lang=jp
-yarn startWC --lang=en
-yarn startWC --lang=kr
+yarn startReact --lang=jp
+yarn startBlazor --lang=jp
 ```
 
 The `start` command will watch for changes to the input md files and re-run the compile and refresh browsers if a file has changed.
 
-Note, Angular cannot run through xplat-docfx directly. Because Angular output gets combined with the igniteui-docfx site.
+> NOTE: Angular cannot run through xplat-docfx directly. Because Angular output gets combined with the igniteui-docfx site.
 ​If changes here needed to be tested, and with samples simultaneously, ensure docs are updated and merged. The xplat-docfx build then auto submits a PR against igniteui-docfx which needs to be updated for the angular content to join that site. Then clone, and npm start igniteui-docfx at
    https://github.com/IgniteUI/igniteui-docfx
 
 
 ## Building Docs
 
-To test just the output of your transformed remarks, when authored as below described:
+Run these commands to test just transformation of markdown files to the ./dist/ output folder:
 
 | Command                       | Description  |
 |-------------------------------|--------------|
-| `yarn run buildAngular`       | transforms the content for Angular  |
-| `yarn run buildBlazor`        | transforms the content for Blazor  |
-| `yarn run buildReact`         | transforms the content for React  |
-| `yarn run buildWebComponents` | transforms the content for WebComponents  |
+| `yarn run buildAngular`       | transforms the content for Angular with local links |
+| `yarn run buildBlazor`        | transforms the content for Blazor with local links |
+| `yarn run buildReact`         | transforms the content for React with local links |
+| `yarn run buildWC` | transforms the content for WC with local links |
 
-You can build the site output with:
+NOTE the output will have API links and links to samples hosted locally. 
+
+You can transform markdown topics to output content for staging with these commands:
+
+| Command                            | Description  |
+|------------------------------------|--------------|
+| `yarn run stageBuildAngular`       | transforms docs for Angular with staging links |
+| `yarn run stageBuildBlazor`        | transforms docs for Blazor with staging links  |
+| `yarn run stageBuildReact`         | transforms docs for React  with staging links |
+| `yarn run stageBuildWC` | transforms docs for WC with staging links  |
+
+
+You can also build output for whole the DocFX website with these commands:
 
 ```cmd
-yarn build
+yarn build-staging --lang=jp --plat=WebComponents
+yarn build-staging --lang=en --plat=WebComponents
+
+yarn build-staging --lang=jp --plat=React
+yarn build-staging --lang=jp --plat=React
+
+yarn build-staging --lang=en --plat=Angular
+yarn build-staging --lang=kr --plat=Angular
+
+yarn build-staging --lang=jp --plat=Blazor
+yarn build-staging --lang=en --plat=Blazor
 ```
 
-Which supports all the same command line switches. There are also production and staging variants:
-
-```cmd
-yarn build-staging --lang=jp
-yarn build-staging --lang=en
-yarn build-staging --lang=kr
-```
+There are also production and staging variants:
 
 ```cmd
 yarn build-production --lang=jp --plat=WebComponents
 yarn build-production --lang=en --plat=WebComponents
-yarn build-production --lang=kr --plat=WebComponents
 
 yarn build-production --lang=jp --plat=React
 yarn build-production --lang=en --plat=React
-yarn build-production --lang=kr --plat=React
 
 yarn build-production --lang=jp --plat=Angular
 yarn build-production --lang=en --plat=Angular
-yarn build-production --lang=kr --plat=Angular
 
 yarn build-production --lang=jp --plat=Blazor
 yarn build-production --lang=en --plat=Blazor
-yarn build-production --lang=kr --plat=Blazor
 ```
 
 ## Maintenance
@@ -381,3 +378,31 @@ git push
 
 - ask RE team to deploy DocFX build to production
 
+
+
+#### Updating Angular Docs
+
+The [Angular docs](https://github.com/IgniteUI/igniteui-docfx) repo is automatically updated with changes made in markdown (.md) files in the xplat-docs repo. However, changes make to table of content, are not and they must to be manually propagated by following these instructions:
+
+- clone or get latest on the [Angular igniteui-docfx](https://github.com/IgniteUI/igniteui-docfx) repo
+
+- open [xplat-docs](https://github.com/IgniteUI/igniteui-xplat-docs) repo in VS Code
+
+- open terminal window
+
+- run this command to generate output files for angular docs:
+```
+yarn run build-docfx-angular
+```
+
+- compare and propagate changes from the xplat-docs TOC file: 
+```
+C:\WORK\igniteui-xplat-docs\dist\Angular\en\components\toc.yml 
+``` 
+
+- to the angular TOC file:
+``` 
+C:\WORK\igniteui-docfx\en\components\toc.yml
+``` 
+
+- create a pull request for the [Angular igniteui-docfx](https://github.com/IgniteUI/igniteui-docfx) repo

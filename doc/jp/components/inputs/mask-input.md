@@ -33,6 +33,30 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcMaskInputComponent);
 ```
 
+<!-- React -->
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`MaskInput` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+```tsx
+import { IgrMaskInput, IgrMaskInputModule } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrMaskInputModule.register();
+```
+<!-- end: React -->
+
+```tsx
+<IgrMaskInput mask="00000">
+    <span slot="prefix">
+        <IgrIcon ref={this.iconLocationRef} name="location" collection="material"></IgrIcon>
+    </span>
+    <span slot="helper-text">ZIP Code</span>
+</IgrMaskInput>
+```
+
 {ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 ### マスクのルール
@@ -66,6 +90,15 @@ defineComponents(IgcMaskInputComponent);
 </igc-mask-input>
 ```
 
+```tsx
+<IgrMaskInput mask="(####) 00-00-00 Ext. 9999">
+    <span slot="prefix">
+        <IgrIcon ref={this.iconPhoneRef} name="phone" collection="material"></IgrIcon>
+    </span>
+    <span slot="helper-text">Phone number</span>
+</IgrMaskInput>
+```
+
 その後、ブラウザーに次のように表示されます:
 
 `sample="/inputs/mask-input/applying-mask", height="150", alt="{Platform} マスク入力マスクの適用の例"`
@@ -80,6 +113,10 @@ defineComponents(IgcMaskInputComponent);
 <igc-mask-input id="mask-input" mask="(####) 00-00-00 Ext. 9999" prompt="-"></igc-mask-input>
 ```
 
+```tsx
+<IgrMaskInput mask="(####) 00-00-00 Ext. 9999" prompt="-"></IgrMaskInput>
+```
+
 デフォルトでは、`prompt` 文字はアンダースコアです。
 
 ### プレースホルダー
@@ -88,6 +125,10 @@ defineComponents(IgcMaskInputComponent);
 
 ```html
 <igc-mask-input id="mask-input" mask="00/00/0000" placeholder="dd/MM/yyyy"></igc-mask-input>
+```
+
+```tsx
+<IgrMaskInput mask="00/00/0000" placeholder="dd/MM/yyyy"></IgrMaskInput>
 ```
 
 ### 値モード

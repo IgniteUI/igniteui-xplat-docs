@@ -113,6 +113,12 @@
     "status": "UPDATED"
   },
   {
+    "exclude": ["Angular", "Blazor", "WebComponents"],
+    "name": "Integrating Ignite UI for React with Next.js",
+    "href": "nextjs-usage.md",
+    "status": "NEW"
+  },
+  {
     "note": "THIS MAIN NODE FOR OLD XPLAT GRID",
     "exclude": ["Angular", "Blazor", "WebComponents", "React"],
     "name": "Grids & Lists",
@@ -1226,6 +1232,11 @@
           "href": "charts/features/chart-data-tooltip.md"
         },
         {
+          "name": "Chart Highlight Filter",
+          "href": "charts/features/chart-highlight-filter.md",
+          "status": "NEW"          
+        },
+        {
           "name": "Chart Highlighting",
           "href": "charts/features/chart-highlighting.md",
           "status": ""
@@ -1426,7 +1437,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Accordion",
     "href": "layouts/accordion.md",
     "status": ""
@@ -1465,7 +1476,7 @@
         "href": "layouts/dock-manager-electron.md"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular", "React", "Blazor"],
         "name": "Customization",
         "href": "layouts/dock-manager-customization.md",
         "status": "NEW"
@@ -1636,7 +1647,7 @@
     ]
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Dropdown",
     "href": "inputs/dropdown.md"
   },
@@ -1667,7 +1678,7 @@
     "href": "inputs/input.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "Blazor"],
     "name": "Mask Input",
     "href": "inputs/mask-input.md"
   },
@@ -1682,12 +1693,12 @@
     "href": "inputs/radio.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Select",
     "href": "inputs/select.md"    
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Rating",
     "href": "inputs/rating.md"
   },

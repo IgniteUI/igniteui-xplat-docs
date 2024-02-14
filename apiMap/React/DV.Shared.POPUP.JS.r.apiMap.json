@@ -22,6 +22,7 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "exportSerializedVisualModel"}], "originalName": "ExportSerializedVisualModel"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "exportVisualModel"}], "originalName": "ExportVisualModel"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isClosing"}], "originalName": "IsClosing"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isFixed"}], "originalName": "IsFixed"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isFocusable"}], "originalName": "IsFocusable"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isHitTestVisible"}], "originalName": "IsHitTestVisible"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isPointerEnabled"}], "originalName": "IsPointerEnabled"},
@@ -30,7 +31,8 @@
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "pointerBackground"}], "originalName": "PointerBackground"},
       {"names":[{"platform": "React", "mappedType": "PopupPointerPosition","mappedName": "pointerPosition"}], "originalName": "PointerPosition"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "pointerSize"}], "originalName": "PointerSize"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "showRelativeToExclusionRect"}], "originalName": "ShowRelativeToExclusionRect"} ]
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "showRelativeToExclusionRect"}], "originalName": "ShowRelativeToExclusionRect"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "useTopLayer"}], "originalName": "UseTopLayer"} ]
   },
   {
     "originalName": "PopupAlignment",

@@ -525,19 +525,6 @@ When the grid has no `PrimaryKey` set and remote data scenarios are enabled (whe
 
 * `{ComponentName}`
 
-<!-- ComponentStart: Grid, HierarchicalGrid, PivotGrid -->
-
-* `GridRow`
-
-<!-- ComponentEnd: Grid, HierarchicalGrid, PivotGrid -->
-
-<!-- ComponentStart: TreeGrid -->
-
-* `TreeGridRow`
-
-<!-- ComponentEnd: TreeGrid -->
-
-* `Cell`
 
 ## Additional Resources
 
