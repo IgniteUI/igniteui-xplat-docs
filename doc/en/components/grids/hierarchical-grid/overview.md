@@ -156,6 +156,48 @@ export const singers = [{
     }]
 }];
 ```
+```razor
+public class SingersData : List<SingersDataItem>
+{
+    public SingersData()
+    {
+        this.Add(new SingersDataItem()
+        {
+            Artist = "Naomí Yepes",
+            Photo = "assets/images/hgrid/naomi.png",
+            Debut = "2011",
+            GrammyNomination = 6,
+            GrammyAwards = 0,
+            Tours = new List<ToursItem>() {
+            new ToursItem() {
+                Tour = "Faithful Tour",
+                StartedOn = new DateTime(),
+                Location = "Worldwide",
+                Headliner = "NO",
+                TouredBy = "Naomí Yepes"
+            }
+           },
+            Albums = new List<AlbumItem>() {
+            new AlbumItem() {
+                Album = "Dream Driven",
+                LaunchDate = new DateTime(),
+                BillboardReview= "81",
+                Artist = "Naomí Yepes",
+                Songs = new List<SongItem>() {
+                    new SongItem() {
+                        Number = "1",
+                        Title="Intro",
+                        Released = "*",
+                        Genre = "Rock",
+                        Album ="Dream Driven"
+                    }
+                }
+            }
+           }
+        });
+    }
+}
+```
 Each *{RowIslandSelector}* should specify the key of the property that holds the children data.
 
 ```html
@@ -190,8 +232,17 @@ Each *{RowIslandSelector}* should specify the key of the property that holds the
     </IgrRowIsland>
 </IgrHierarchicalGrid>
 ```
+
+```razor
+<IgbHierarchicalGrid Data="SingersData" AutoGenerate="true">
+    <IgbRowIsland ChildDataKey="Tours" AutoGenerate="true"></IgbRowIsland>
+    <IgbRowIsland ChildDataKey="Albums"AutoGenerate="true">
+        <IgbRowIsland ChildDataKey="Songs" AutoGenerate="true"></IgbRowIsland>
+    </IgbRowIsland>
+</IgbHierarchicalGrid>
+```
 > [!NOTE]
-> Note that instead of `data` the user configures only the `key` that the {HierarchicalGridSelector} needs to read to set the data automatically.
+> Note that instead of `data` the user configures only the `childDataKey` that the {HierarchicalGridSelector} needs to read to set the data automatically.
 
 ### Using Load-On-Demand
 
@@ -425,6 +476,10 @@ function buildUrl(dataState: any) {
 ```
 <!-- end: WebComponents, React -->
 
+```razor
+TODO: Waiting for event handlers on row islands
+```
+
 ## Hide/Show row expand indicators
 
 If you have a way to provide information whether a row has children prior to its expanding, you could use the `HasChildrenKey` input property. This way you could provide a boolean property from the data objects which indicates whether an expansion indicator should be displayed.
@@ -442,6 +497,11 @@ If you have a way to provide information whether a row has children prior to its
 ```tsx
 <IgrHierarchicalGrid data={data} primaryKey="ID" hasChildrenKey="hasChildren">
 </IgrHierarchicalGrid>
+```
+
+```razor
+<IgbHierarchicalGrid Data="data" PrimaryKey="ID" HasChildrenKey="hasChildren">
+</IgbHierarchicalGrid>
 ```
 
 Note that setting the `HasChildrenKey` property is not required. In case you don't provide it, expansion indicators will be displayed for each row.
@@ -504,7 +564,7 @@ The grid features could be enabled and configured through the {RowIslandSelector
         <IgrColumn field="ProductName" hasSummary="true"></IgrColumn>
     </IgrColumnGroup>
     <IgrRowIsland childDataKey="childData" autoGenerate="false" rowSelection="multiple">
-        <IgrColumn field="ID" hasSummary="true" data-type="number"></IgrColumn>
+        <IgrColumn field="ID" hasSummary="true" dataType="number"></IgrColumn>
         <IgrColumnGroup header="Information2">
             <IgrColumn field="ChildLevels"></IgrColumn>
             <IgrColumn field="ProductName"></IgrColumn>
@@ -513,6 +573,26 @@ The grid features could be enabled and configured through the {RowIslandSelector
     <IgrRowIsland>
     <IgrPaginator></IgrPaginator>
 </IgrHierarchicalGrid>
+```
+
+```razor
+<IgbHierarchicalGrid Data="localData" AutoGenerate="false"
+    AllowFiltering="true" Height="600px" Width="800px">
+    <IgbColumn Field="ID" Pinned="true" Filterable="true"></IgbColumn>
+    <IgbColumnGroup Header="Information">
+        <IgbColumn Field="ChildLevels"></IgbColumn>
+        <IgbColumn Field="ProductName" HasSummary="true"></IgbColumn>
+    </IgbColumnGroup>
+    <IgbRowIsland ChildDataKey="childData" AutoGenerate="false" RowSelection="GridSelectionMode.Multiple">
+        <IgbColumn Field="ID" HasSummary="true" DataType="number"></IgbColumn>
+        <IgbColumnGroup Header="Information2">
+            <IgbColumn Field="ChildLevels"></IgbColumn>
+            <IgbColumn Field="ProductName"></IgbColumn>
+        </IgbColumnGroup>
+        <IgbPaginator PerPage="5"></IgbPaginator>
+    <IgbRowIsland>
+    <IgbPaginator></IgbPaginator>
+</IgbHierarchicalGrid>
 ```
 
 The following grid features work on a per grid level, which means that each grid instance manages them independently of the rest of the grids:
@@ -555,8 +635,8 @@ Calling CRUD API methods should still be done through each separate grid instanc
 Check out the How-to [Build CRUD operations with igxGrid](../general/how-to/how-to-perform-crud.md) topic.
 <!-- end: Angular -->
 
-## Styling
 <!-- Angular -->
+## Styling
 The igxHierarchicalGrid allows styling through the [Ignite UI for Angular Theme Library](../themes/sass/component-themes.md). The grid's [theme]({environment:sassApiUrl}/index.html#function-grid-theme) exposes a wide variety of properties, which allow the customization of all the features of the grid.
 
 In the below steps, we are going through the steps of customizing the igxHierarchicalGrid styling.
@@ -686,7 +766,9 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 >The sample will not be affected by the selected global theme from `Change Theme`.
 <!-- end: Angular -->
 
+
 <!-- WebComponents, Blazor, React -->
+## Styling
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md). In case you would like to change the header background and text color, you need to set a class for the grid first:
 
 <!-- WebComponents -->
@@ -696,7 +778,7 @@ In addition to the predefined themes, the grid could be further customized by se
 <!-- end: WebComponents -->
 
 ```tsx
-<IgrHierarchcalGrid className="grid"></IgrHierarchcalGrid>
+<IgrHierarchicalGrid className="grid"></IgrHierarchicalGrid>
 ```
 
 ```razor
@@ -711,6 +793,7 @@ Then set the `--header-background` and `--header-text-color` CSS properties for 
     --header-text-color: #FFF;
 }
 ```
+
 <!-- end: WebComponents, Blazor, React -->
 
 ## Known Limitations
