@@ -827,7 +827,8 @@
   {
     "exclude": ["Angular"],
     "name": "Tree",
-    "href": "grids/tree.md"
+    "href": "grids/tree.md",
+    "status": "UPDATED"
   },
   {
     "exclude": ["Angular", "Blazor", "WebComponents", "React"],
