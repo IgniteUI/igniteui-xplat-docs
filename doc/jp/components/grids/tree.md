@@ -194,7 +194,7 @@ builder.Services.AddIgniteUIBlazor(
 
 `TreeItem` は展開または折り畳むことができます。
 - 項目の展開インジケーター *(デフォルトの動作)* をクリックします。
-- `Tree` の `ToggleNodeOnClick` プロパティが `true` に設定されている場合、項目をクリックします。
+- `Tree` の `ToggleNodeOnClick` プロパティが **true** に設定されている場合、項目をクリックします。
 
 ```html
 <igc-tree toggle-node-on-click="true">
