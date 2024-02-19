@@ -277,6 +277,12 @@
         "href": "grids/grid/paging.md"
       },
       {
+        "exclude": [ "Angular" ],
+        "name": "Excel から貼り付け",
+        "href": "grids/grid/paste-excel.md",
+        "status": "NEW"
+      },
+      {
         "exclude": ["Angular"],
         "name": "リモート データ操作",
         "href": "grids/grid/remote-data-operations.md"
