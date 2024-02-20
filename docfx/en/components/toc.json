@@ -365,17 +365,11 @@
     ]
   },
   {
-    "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+    "exclude": ["Angular"],
     "name": "Hierarchical Grid",
     "href": "grids/hierarchical-grid/overview.md",
     "status": "",
     "items": [
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Advanced Filtering",
-        "href": "grids/hierarchical-grid/advanced-filtering.md",
-        "status": ""
-      },
       {
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Cell Editing",
@@ -449,16 +443,24 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
-        "name": "Excel Style Filtering",
-        "href": "grids/hierarchical-grid/excel-style-filtering.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Filtering",
         "href": "grids/hierarchical-grid/filtering.md",
-        "status": ""
+        "status": "NEW",
+        "items": [
+          {
+            "exclude": ["Angular"],
+            "name": "Advanced Filtering",
+            "href": "grids/hierarchical-grid/advanced-filtering.md",
+            "status": "NEW"
+          },
+          {
+            "exclude": ["Angular"],
+            "name": "Excel Style Filtering",
+            "href": "grids/hierarchical-grid/excel-style-filtering.md",
+            "status": "NEW"
+          }
+        ]
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
