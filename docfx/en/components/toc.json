@@ -365,10 +365,10 @@
     ]
   },
   {
-    "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+    "exclude": ["Angular"],
     "name": "Hierarchical Grid",
     "href": "grids/hierarchical-grid/overview.md",
-    "status": "",
+    "status": "NEW",
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents"],
@@ -395,10 +395,10 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Column Hiding",
         "href": "grids/hierarchical-grid/column-hiding.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
