@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in WebComponents documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "WebComponents",
-  "samplesCount": 677,
+  "samplesCount": 678,
   "samplesHost": "https://staging.infragistics.com/webcomponents-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -1772,6 +1772,9 @@
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/rating/empty": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/rating"
     ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/rating/single-selection": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/rating"
+    ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/rating/styling": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/rating"
     ],
@@ -3202,6 +3205,7 @@
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/rating/basic",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/rating/custom",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/rating/empty",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/rating/single-selection",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/rating/styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/ripple": [

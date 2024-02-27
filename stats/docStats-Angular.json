@@ -607,6 +607,7 @@
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-display-heat-imagery"
     ],
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/display-osm-imagery": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/general-getting-started",
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-display-osm-imagery"
     ],
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/navigation": [
@@ -933,6 +934,9 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/excel-library-working-with-sparklines": [
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/excel-library/working-with-sparklines"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/general-getting-started": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/display-osm-imagery"
     ],
     "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map": [
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/type-scatter-bubble-series"

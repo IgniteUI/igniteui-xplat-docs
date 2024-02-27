@@ -11,23 +11,21 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerChanges-23-2-JAN}**
 
-### {PackageCharts} Charts
+### {PackageCharts} (Charts)
 
-* [Chart Highlight Filter](charts/features/chart-highlight-filter.md) - The `CategoryChart` and `DataChart` now expose a way to highlight and animate in and out of a subset of data. The display of this highlight depends on the series type. For column and area series, the subset will be shown on top of the total set of data where the subset will be colored by the actual brush of the series, and the total set will have a reduced opacity. For line series, the subset will be shown as a dotted line.
+* [Chart Highlight Filter](charts/features/chart-highlight-filter.md) - The `CategoryChart` and `XamDataChart` now expose a way to highlight and animate in and out of a subset of data. The display of this highlight depends on the series type. For column and area series, the subset will be shown on top of the total set of data where the subset will be colored by the actual brush of the series, and the total set will have a reduced opacity. For line series, the subset will be shown as a dotted line.
 
 ## **{PackageVerChanges-23-2-DEC}**
 
 ### {PackageGrids} (Grid)
-* New Features Added:
-    - [State Persistence](grids/grid/state-persistence.md)
+
+* Added New Features - [State Persistence](grids/grid/state-persistence.md)
 
 ## **{PackageVerChanges-23-2}**
 
-### New Components
-
 ### {PackageGrids} (Toolbar - Beta)
 
-* A new tool has been added, as a default tool, to save the chart to an image via the clipboard.
+* Save tool action has been added to save the chart to an image via the clipboard.
 * Vertical orientation has been added via the toolbar's `Orientation` property. By default the toolbar is horizontal, now the toolbar can be shown in vertical orientation where the tools will popup to the left/right respectfully. 
 * Custom SVG icons support was added via the toolbar's `renderImageFromText` method, further enhancing custom tool creation.
 
@@ -35,7 +33,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### Deprecated Components
 
-> [DataGrid](grids/data-grid/overview.md) - The DataGrid is deprecated, please refer to [Grid](grids/data-grid.md)
+> [DataGrid](grids/data-grid/overview.md) - The DataGrid is deprecated, please use [Grid](grids/data-grid.md) 
 
 ## **{PackageVerChanges-23-1}**
 
@@ -43,7 +41,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 * [Toolbar](menus/toolbar.md) - Beta. This component is a companion container for UI operations to be used primarily with our charting components. The toolbar will dynamically update with a preset of properties and tool items when linked to our `XamDataChart` or `CategoryChart` components. You'll be able to create custom tools for your project allowing end users to provide changes, offering an endless amount of customization.
 
-### {PackageCharts} Charts
+### {PackageCharts} (Charts)
 
 * [ValueLayer](charts/features/chart-overlays.md#{PlatformLower}-value-layer) - A new series type named the `ValueLayer` is now exposed which can allow you to render an overlay for different focal points of the plotted data such as Maximum, Minimum, and Average. This is applied to the `CategoryChart` and `FinancialChart` by adding to the new `ValueLines` collection.
 
@@ -51,9 +49,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerChanges-22-2}**
 
-Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use.
-
-These new chart improvements include:
+Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use. These new chart improvements include:
 
 * Responsive layouts for horizontal label rotation based on browser / screen size.
 * Enhanced rendering for rounded labels on all platforms.
@@ -94,7 +90,7 @@ These new chart improvements include:
 * Added the highly-configurable [DataLegend](charts/features/chart-data-legend.md) component, which works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values.
 * Added the highly-configurable [DataToolTip](charts/features/chart-data-tooltip.md) which displays values and titles of series as well as legend badges of series in a tooltip. This is now the default tooltip for all chart types.
 * Added animation and transition-in support for Stacked Series. Animations can be enabled by setting the `IsTransitionInEnabled` property to true. From there, you can set the `TransitionInDuration` property to determine how long your animation should take to complete and the `TransitionInMode` to determine the type of animation that takes place.
-* Added `AssigningCategoryStyle` event, is now available to all series in `DataChart`. This event is handled when you want to conditionally configure aspects of the series items such as `Fill` background-color and highlighting.
+* Added `AssigningCategoryStyle` event, is now available to all series in `XamDataChart`. This event is handled when you want to conditionally configure aspects of the series items such as `Fill` background-color and highlighting.
 * New `AllowedPositions` enumeration for CalloutLayer. Used to limit where the callouts are to be placed within the chart. By default, the callouts are intelligently placed in the best place but this used to force for example `TopLeft`, `TopRight`, `BottomLeft` or `BottomRight`.
 * New corner radius properties added for Annotation Layers; used to round-out the corners of each of the callouts. Note, a corner radius has now been added by default.
     - `CalloutCornerRadius` for CalloutLayer
@@ -108,10 +104,7 @@ These new chart improvements include:
 
 ### {PackageGrids} (Data Grid)
 
-* New Feature Added:
-- [Row Paging](grids/data-grid/row-paging.md)
-
-Pagination is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
+Added New Feature - [Row Paging](grids/data-grid/row-paging.md) which is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
 
 ## **{PackageVerChanges-21-2.1}**
 
@@ -195,7 +188,7 @@ This release introduces a few improvements and simplifications to visual design 
 ## **{PackageVerChanges-21-1}**
 ### {PackageCharts} (Charts)
 
-This release introduces several new and improved visual design and configuration options for all of the chart components, e.g. `DataChart`, `CategoryChart`, and `FinancialChart`.
+This release introduces several new and improved visual design and configuration options for all of the chart components, e.g. `XamDataChart`, `CategoryChart`, and `FinancialChart`.
 
 * Changed Bar/Column/Waterfall series to have square corners instead of rounded corners
 * Changed Scatter High Density series’ colors for heat min property from <span style="color:#8a5bb1">#8a5bb1</span> to <span style="color:#000000">#000000</span>

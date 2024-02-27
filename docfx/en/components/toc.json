@@ -113,6 +113,12 @@
     "status": "UPDATED"
   },
   {
+    "exclude": ["Angular", "Blazor", "WebComponents"],
+    "name": "Integrating Ignite UI for React with Next.js",
+    "href": "nextjs-usage.md",
+    "status": "NEW"
+  },
+  {
     "note": "THIS MAIN NODE FOR OLD XPLAT GRID",
     "exclude": ["Angular", "Blazor", "WebComponents", "React"],
     "name": "Grids & Lists",
@@ -271,6 +277,12 @@
         "exclude": ["Angular"],
         "name": "Paging",
         "href": "grids/grid/paging.md"
+      },
+      {
+        "exclude": [ "Angular" ],
+        "name": "Paste from Excel",
+        "href": "grids/grid/paste-excel.md",
+        "status": "NEW"
       },
       {
         "exclude": ["Angular"],
@@ -815,7 +827,8 @@
   {
     "exclude": ["Angular"],
     "name": "Tree",
-    "href": "grids/tree.md"
+    "href": "grids/tree.md",
+    "status": "UPDATED"
   },
   {
     "exclude": ["Angular", "Blazor", "WebComponents", "React"],
@@ -1425,7 +1438,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Accordion",
     "href": "layouts/accordion.md",
     "status": ""
@@ -1681,12 +1694,12 @@
     "href": "inputs/radio.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Select",
     "href": "inputs/select.md"    
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Rating",
     "href": "inputs/rating.md"
   },
