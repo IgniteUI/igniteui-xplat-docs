@@ -1741,7 +1741,7 @@
      "href": "notifications/toast.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "ダイアログ",
     "href": "notifications/dialog.md"
   },
