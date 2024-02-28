@@ -1178,7 +1178,7 @@ Then set the related CSS variables for the related components. We will apply the
 
 <!-- ComponentStart: HierarchicalGrid -->
 ```css
-#hierarchicalGrid igc-grid-toolbar-actions, igx-column-actions {
+#hierarchicalGrid {
     /* Main Column Actions styles */
     --ig-column-actions-background-color: #292826;
     --ig-column-actions-title-color: #ffcd0f;
