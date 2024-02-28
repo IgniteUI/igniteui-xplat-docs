@@ -10,9 +10,9 @@ The {Platform} Stepper Component provides a wizard-like workflow and is used for
 
 ## {Platform} Stepper Example
 
-The following {ProductName} Stepper Example below shows the component in action. It visualizes the process that an end-user must pass through to change the credentials of their credit card, following several consecutive steps.
+The following {ProductName} Stepper Example below shows the component in action. It visualizes the process that an end-user must pass through to configure an order details, following several consecutive steps.
 
-`sample="/layouts/stepper/overview", height="725", alt="{Platform} Stepper Example"`
+`sample="/layouts/stepper/linear", height="430", alt="{Platform} Linear Stepper Example"`
 
 <div class="divider--half"></div>
 
@@ -232,20 +232,46 @@ The sample below demonstrates how stepper orientation and titles position could 
 
 The {Platform} `Stepper` gives you the opportunity to set its steps flow using the `Linear` property. By default, linear is set to *false* and the user is enabled to select any non-disabled step in the `Stepper`.
 
+
+```html
+<igc-stepper linear="true">
+    <igc-step>
+       <p slot="title">Step 1</p>
+    </igc-step>
+    <igc-step>
+       <p slot="title">Step 2</p>
+    </igc-step>
+</igc-stepper>
+```
+
+```razor
+<IgbStepper Linear="True">
+    <IgbStep>
+       <p slot="title">Step 1</p>
+    </IgbStep>
+     <IgbStep>
+       <p slot="title">Step 2</p>
+    </IgbStep>
+</IgbStepper>
+```
+
+```tsx
+<IgrStepper linear="true">
+    <IgrStep>
+       <p slot="title">Step 1</p>
+    </IgrStep>
+     <IgrStep>
+       <p slot="title">Step 2</p>
+    </IgrStep>
+</IgrStepper>
+```
+
 When the linear property is set to *true*, the stepper will require the current non-optional step to be valid before proceeding to the next one.
 
 If the current non-optional step is not valid you cannot go forward to the next step until you validate the current one.
 
 > [!Note]
 > Optional steps validity is not taken into account in order to move forward.
-
-The following example demonstrates how to configure a linear stepper:
-
-`sample="/layouts/stepper/linear", height="430", alt="{Platform} Linear Stepper Example"`
-
-
-
-<div class="divider--half"></div>
 
 ### Step Interactions
 
