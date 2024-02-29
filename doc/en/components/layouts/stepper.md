@@ -245,7 +245,7 @@ The {Platform} `Stepper` gives you the opportunity to set its steps flow using t
 ```
 
 ```razor
-<IgbStepper Linear="True">
+<IgbStepper Linear="true">
     <IgbStep>
        <p slot="title">Step 1</p>
     </IgbStep>
