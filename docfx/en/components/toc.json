@@ -1750,7 +1750,7 @@
      "href": "notifications/toast.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Dialog",
     "href": "notifications/dialog.md"    
   },
