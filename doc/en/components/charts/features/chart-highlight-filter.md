@@ -28,6 +28,8 @@ The following example demonstrates the usage of the data highlighting overlay fe
 
 `sample="/charts/data-chart/chart-highlight-filter", height="500", alt="{Platform} Highlight Filter Example"`
 
+If the `DataLegend` or `DataToolTipLayer` is used then the highlighted series will appear groupped. This can be managed by setting the `HighlightedValuesDataLegendGroup` property on the series to categorize them appropriately.
+
 ## Using Highlight Filter in CategoryChart
 
 The `CategoryChart` highlight filter happens on the chart by setting the `InitialHighlightFilter` property. Since the `CategoryChart` takes all of the properties on your underlying data item into account by default, you will need to define the `InitialGroups` on the chart as well so that the data can be grouped and aggregated in a way that you can have a subset of the data to filter on. You can set the `InitialGroups` to a value path in your underlying data item to group by a path that has duplicate values. 
