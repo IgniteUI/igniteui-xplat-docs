@@ -371,7 +371,7 @@
     "status": "NEW",
     "items": [
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Collapsible Column Groups",
         "href": "grids/hierarchical-grid/collapsible-column-groups.md",
         "status": "NEW"
