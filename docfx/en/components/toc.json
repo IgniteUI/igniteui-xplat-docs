@@ -401,7 +401,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Column Types",
         "href": "grids/hierarchical-grid/column-types.md",
         "status": "NEW"
