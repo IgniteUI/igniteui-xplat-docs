@@ -123,7 +123,7 @@ public exportButtonHandler() {
 <!-- end: Angular -->
 
 <!-- WebComponents -->
-<!-- ComponentStart: Grid -->
+<!-- ComponentStart: Grid, TreeGrid -->
 ```ts
 constructor() {
   var gridToolbarExporter1 = document.getElementById('gridToolbarExporter1') as IgcGridToolbarExporterComponent;
@@ -134,7 +134,7 @@ public webGridExportEventFreezeHeaders(args: any): void {
   args.detail.options.freezeHeaders = true;
 }
 ```
-<!-- ComponentEnd: Grid -->
+<!-- ComponentEnd: Grid, TreeGrid -->
 <!-- end: WebComponents -->
 
 <!-- WebComponents -->
