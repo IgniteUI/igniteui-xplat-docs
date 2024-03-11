@@ -107,18 +107,42 @@ OHLC 価格の **TypicalPrice** (標準価格) とパーセンテージの **Cha
 `sample="/charts/financial-chart/data-legend-formatting-currency", height="450", alt="{Platform} 通貨の書式設定"`
 
 
+## {Platform} データ凡例のグループ化
 
-## {Platform} データ凡例のスタイル設定イベント
+`DataLegendGroup` は、すべてのタイプのシリーズで、データ凡例内のシリーズ グループを分類する文字列に設定できます。各グループには、別のシリーズ グループが表示される前に、独自の集計行が表示されます。
+各グループには、別のシリーズ グループが表示される前に、独自の集計行が表示されます。
 
-`XamDataLegend` には、対応する行を描画するときに発生する 5 つのイベントがあります。それらのイベントを、その使用目的とあわせて以下に示します:
+## {Platform} データ凡例のスタイル設定 & イベント
 
-- `StyleHeaderRow`: このイベントは、ヘッダー行を描画するときに 1 回発生します。
+凡例のグループ化部分を含むいくつかのプロパティが公開されています。 
+
+- `GroupTextMargin`
+- `GroupTextColor`
+- `GroupTextFontSize`
+- `GroupTextFontFamily`
+- `GroupTextFontStyle`
+- `GroupTextFontStretch`
+- `GroupTextFontWeight`
+- `HeaderTextMargin`
+- `HeaderTextColor`  
+- `HeaderTextFontSize`
+- `HeaderTextFontFamily`
+- `HeaderTextFontStyle`
+- `HeaderTextFontStretch` 
+- `HeaderTextFontWeight`
+
+`XamDataLegend` には、値が更新されているマウス操作中であっても、対応する行を描画するときに発生するいくつかのイベントがあります。それらのイベントを、その使用目的とあわせて以下に示します:
+
+- `StyleGroupRow`: このイベントは、グループ行に表示されるテキストのスタイルを設定するために、グループごとに発生します。
+- `StyleHeaderRow`: このイベントは、ヘッダー行を描画するときに発生します。
 - `StyleSeriesRow`: このイベントは、シリーズの行ごとに 1 回発生し、シリーズの値の条件付きスタイル設定を可能にします。
 - `StyleSeriesColumn`: このイベントは、シリーズの列ごとに 1 回発生し、シリーズの値の条件付きスタイル設定を可能にします。
 - `StyleSummaryRow`: このイベントは、集計行を描画するときに 1 回発生します。
 - `StyleSummaryColumn`: このイベントは、集計列を描画するときに 1 回発生します。
 
-上記の各イベントは、引数として `DataLegendStylingRowEventArgs` パラメーターを公開します。これにより、各項目のテキスト、テキストの色、および行の全体的な可視性をカスタマイズできます。イベント引数は、イベント固有のプロパティも公開します。たとえば、`StyleSeriesRow` イベントはシリーズごとに発生するため、イベント引数は、シリーズを表す行の、シリーズ インデックスとシリーズ タイトルを返します。
+一部のイベントは、引数として `DataLegendStylingRowEventArgs` パラメーターを公開します。これにより、各項目のテキスト、テキストの色、および行の全体的な可視性をカスタマイズできます。イベント引数は、イベント固有のプロパティも公開します。たとえば、`StyleSeriesRow` イベントはシリーズごとに発生するため、イベント引数は、シリーズを表す行の、シリーズ インデックスとシリーズ タイトルを返します。
+
+`StylesummaryColumn` および `SeriesStyleColumn` イベントは、シリーズ内の各フィールドをカスタマイズするために、引数として `DataLegendStylingColumnEventArgs` パラメーターを公開します。イベント引数は、列インデックスや値メンバーなどの列に関するプロパティに関連するイベント固有のプロパティも公開します。
 
 ## API リファレンス
 
