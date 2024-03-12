@@ -136,7 +136,7 @@
     "exclude": ["Angular"],
     "name": "Grid",
     "href": "grids/data-grid.md",
-    "status": "NEW",
+    "status": "UPDATED",
     "items": [
       {
         "exclude": ["Angular"],
@@ -1232,16 +1232,18 @@
         },
         {
           "name": "Chart Data Legend",
-          "href": "charts/features/chart-data-legend.md"
+          "href": "charts/features/chart-data-legend.md",
+          "status": "UPDATED"
         },
         {
           "name": "Chart Data Tooltip",
-          "href": "charts/features/chart-data-tooltip.md"
+          "href": "charts/features/chart-data-tooltip.md",
+          "status": "UPDATED"
         },
         {
           "name": "Chart Highlight Filter",
           "href": "charts/features/chart-highlight-filter.md",
-          "status": "NEW"          
+          "status": "UPDATED"          
         },
         {
           "name": "Chart Highlighting",
@@ -1260,7 +1262,7 @@
         {
           "name": "Chart Overlays",
           "href": "charts/features/chart-overlays.md",
-          "status": "UPDATED"
+          "status": ""
         },
         {
           "name": "Chart Performance",
@@ -1281,7 +1283,7 @@
         {
           "name": "Chart Trendlines",
           "href": "charts/features/chart-trendlines.md",
-          "status": "UPDATED"
+          "status": ""
         }
       ]
   },
@@ -1591,7 +1593,7 @@
   {
     "name": "Radial Gauge",
     "href": "radial-gauge.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
     "exclude": ["Angular"],
