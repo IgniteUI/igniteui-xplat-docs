@@ -513,7 +513,7 @@
         "status": "NEW",
         "items": [
           {
-            "exclude": ["Angular", "React", "WebComponents"],
+            "exclude": ["Angular"],
             "name": "Cell Selection",
             "href": "grids/hierarchical-grid/cell-selection.md",
             "status": "NEW"

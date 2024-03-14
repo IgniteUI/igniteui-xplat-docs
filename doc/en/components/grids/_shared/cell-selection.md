@@ -7,7 +7,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
 ---
 
-# {Platform} Cell Selection
+# {Platform} {ComponentTitle} Cell Selection
 
 The {ProductName} Cell Selection in {Platform} {ComponentTitle} enables rich data select capabilities and offers powerful API in the `{ComponentName}` component. The {Platform} {ComponentTitle} supports three selection modes:
 
@@ -21,7 +21,7 @@ In the `{ComponentName}` you can specify the cell selection mode on grid level. 
 
 Let's dive deeper into each of these options.
 
-## {Platform} Cell Selection Example
+## {Platform} {ComponentTitle} Cell Selection Example
 
 The sample below demonstrates the three types of `{ComponentName}`'s **cell selection** behavior. Use the buttons below to enable each of the available selection modes. A brief description will be provided on each button interaction through a snackbar message box.
 
@@ -300,6 +300,35 @@ Then set the related CSS properties for that class:
 
 <!-- ComponentEnd: TreeGrid -->
 
+<!-- ComponentStart: HierarchicalGrid -->
+
+<!-- WebComponents -->
+```ts
+<igc-hierarchical-grid class="hGrid"></igc-hierarchical-grid>
+```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrHierarchicalGrid className="hGrid"></IgrHierarchicalGrid>
+```
+
+```razor
+<IgbHierarchicalGrid Class="hGrid"></IgbHierarchicalGrid>
+```
+
+Then set the related CSS properties for that class:
+
+```css
+.hGrid {
+    --ig-grid-cell-selected-text-color: #fff;
+    --ig-grid-cell-active-border-color: #f2c43c;
+    --ig-grid-cell-selected-background: #0062a3;
+    --ig-grid-cell-editing-background: #0062a3;
+}
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
+
 ### Demo
 
 `sample="/{ComponentSample}/cell-selection-style", height="620", alt="{Platform} {ComponentTitle} Cell Selection Styling Example"`
@@ -384,7 +413,7 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 
 ## Additional Resources
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart:  Grid, HierarchicalGrid -->
 * [Selection](selection.md)
 * [Row Selection](row-selection.md)
 * [Filtering](filtering.md)
