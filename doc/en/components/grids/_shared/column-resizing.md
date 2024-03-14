@@ -275,7 +275,7 @@ This means that the following configuration is possible:
 ```
 
 ```tsx
-<IgrGrid id="grid" auto-generate="false">
+<IgrGrid id="grid" autoGenerate="false">
     <IgrColumn field="ID" width="10%" resizable="true"></IgrColumn>
     <IgrColumn field="CompanyName" width="100px" resizable="true"></IgrColumn>
     <IgrColumn field="ContactTitle" resizable="true"></IgrColumn>
@@ -339,7 +339,7 @@ This means that the following configuration is possible:
 ```
 
 ```tsx
-<{ComponentSelector} id="hierarchicalGrid" columnResized={onResize} auto-generate="false"
+<{ComponentSelector} id="hierarchicalGrid" columnResized={onResize} autoGenerate="false"
     height="600px" width="100%">
     <IgrColumn field="Artist" resizable="true" width="10%"></IgrColumn>
     <IgrColumn field="GrammyNominations" resizable="true" width="100px"></IgrColumn>
@@ -377,7 +377,7 @@ You can also configure the minimum and maximum allowable column widths. This is 
 
 ```tsx
 <IgrColumn field="ID" width="100px" resizable="true"
-            min-width="60px" max-width="230px"></IgrColumn>
+            minWidth="60px" maxWidth="230px"></IgrColumn>
 ```
 
 ```razor
@@ -399,7 +399,7 @@ You can also configure the minimum and maximum allowable column widths. This is 
 
 ```tsx
 <IgrColumn field="Artist" width="100px" resizable="true"
-            min-width="60px" max-width="230px"></IgrColumn>
+            minWidth="60px" maxWidth="230px"></IgrColumn>
 ```
 
 ```razor
@@ -425,7 +425,7 @@ This means the following configurations are possible:
 
 ```tsx
 <IgrColumn field="ID" width="10%" resizable="true"
-            min-width="60px" max-width="230px"></IgrColumn>
+            minWidth="60px" maxWidth="230px"></IgrColumn>
 ```
 
 ```razor
@@ -447,7 +447,7 @@ This means the following configurations are possible:
 
 ```tsx
 <IgrColumn field="Artist" width="100px" resizable="true"
-            min-width="60px" max-width="230px"></IgrColumn>
+            minWidth="60px" maxWidth="230px"></IgrColumn>
 ```
 
 ```razor
@@ -471,7 +471,7 @@ or
 
 ```tsx
 <IgrColumn field="ID" width="100px" resizable="true"
-            min-width="5%" max-width="15%"></IgrColumn>
+            minWidth="5%" maxWidth="15%"></IgrColumn>
 ```
 
 ```razor
@@ -493,7 +493,7 @@ or
 
 ```tsx
 <IgrColumn field="Artist" width="100px" resizable="true"
-            min-width="60px" max-width="15%"></IgrColumn>
+            minWidth="60px" maxWidth="15%"></IgrColumn>
 ```
 
 ```razor
@@ -535,7 +535,7 @@ constructor() {
 @code {
     private {ComponentSelector} gridRef;
 
-    protected void OnInitialize()
+    private void AutosizeColumn()
     {
         IgbColumn column = gridRef.Columns.Where((col) => { return col.Field == "ID"; }).FirstOrDefault();
         column.Autosize(false);
@@ -557,8 +557,8 @@ column.autosize();
 
 ```typescript
 constructor() {
-    var id = this.id = document.getElementById('Artist') as IgcColumnComponent;
-    id.autosize();
+    var column = this.column = document.getElementById('Artist') as IgcColumnComponent;
+    column.autosize();
 }
 ```
 
@@ -571,7 +571,7 @@ column.autosize();
 @code {
     private {ComponentSelector} gridRef;
 
-    protected void OnInitialize()
+    private void AutosizeColumn()
     {
         IgbColumn column = gridRef.Columns.Where((col) => { return col.Field == "Artist"; }).FirstOrDefault();
         column.Autosize(false);
