@@ -302,6 +302,145 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
     </IgbRowIsland>
 </{ComponentSelector}>
 ```
+<!-- React -->
+
+```tsx
+<{ComponentSelector}
+   autoGenerate="false"
+   data={this.singersData}
+   id="hGrid"
+   primaryKey="ID"
+   rowEditable="true"
+   ref={this.hierarchicalGrid1Ref}>
+   <IgrActionStrip>
+     <IgrGridEditingActions
+        addRow="true">
+       </IgrGridEditingActions>
+   </IgrActionStrip>
+   <IgrColumn
+       field="Artist"
+       header="Artist"
+       dataType="String"
+       resizable="true">
+   </IgrColumn>
+   <IgrColumn
+       field="Debut"
+       header="Debut"
+       dataType="Number"
+       minWidth="88px"
+       maxWidth="230px"
+       resizable="true">
+   </IgrColumn>
+   <IgrColumn
+       field="GrammyNominations"
+       header="Grammy Nominations"
+       dataType="String"
+       resizable="true">
+   </IgrColumn>
+   <IgrColumn
+       field="GrammyAwards"
+       header="Grammy Awards"
+       dataType="String"
+       resizable="true">
+   </IgrColumn>
+   <IgrRowIsland
+       childDataKey="Albums"
+       autoGenerate="false">
+       <IgrColumn
+           field="Album"
+           header="Album"
+           dataType="String"
+           resizable="true">
+       </IgrColumn>
+       <IgrColumn
+           field="LaunchDate"
+           header="Launch Date"
+           dataType="Date"
+           resizable="true">
+       </IgrColumn>
+       <IgrColumn
+           field="BillboardReview"
+           header="Billboard Review"
+           dataType="String"
+           resizable="true">
+       </IgrColumn>
+       <IgrColumn
+           field="USBillboard200"
+           header="US Billboard 200"
+           dataType="String"
+           resizable="true">
+       </IgrColumn>
+       <IgrRowIsland
+           childDataKey="Songs"
+           autoGenerate="false">
+           <IgrActionStrip>
+                <IgrGridEditingActions
+                    addRow="true">
+                </IgrGridEditingActions>
+            </IgrActionStrip>
+           <IgrColumn
+               field="Number"
+               header="No."
+               dataType="String"
+               resizable="true">
+           </IgrColumn>
+           <IgrColumn
+               field="Title"
+               header="Title"
+               dataType="String"
+               resizable="true">
+           </IgrColumn>
+           <IgrColumn
+               field="Released"
+               header="Released"
+               dataType="String"
+               resizable="true">
+           </IgrColumn>
+           <IgrColumn
+               field="Genre"
+               header="Genre"
+               dataType="String"
+               resizable="true">
+           </IgrColumn>
+       </IgrRowIsland>
+   </IgrRowIsland>
+   <IgrRowIsland
+       childDataKey="Tours"
+       autoGenerate="false">
+           <IgrActionStrip>
+                <IgrGridEditingActions
+                    addRow="true">
+                </IgrGridEditingActions>
+            </IgrActionStrip>                  
+       <IgrColumn
+           field="Tour"
+           header="Tour"
+           dataType="String"
+           resizable="true">
+       </IgrColumn>
+       <IgrColumn
+           field="StartedOn"
+           header="Started on"
+           dataType="String"
+           resizable="true">
+       </IgrColumn>
+       <IgrColumn
+           field="Location"
+           header="Location"
+           dataType="String"
+           resizable="true">
+       </IgrColumn>
+       <IgrColumn
+           field="Headliner"
+           header="Headliner"
+           dataType="String"
+           resizable="true">
+       </IgrColumn>
+   </IgrRowIsland>
+</{ComponentSelector}>
+```
+
+<!-- end: React -->
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
