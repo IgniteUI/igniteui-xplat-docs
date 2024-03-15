@@ -1499,7 +1499,7 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Stepper",
     "href": "layouts/stepper.md",
     "status": ""
