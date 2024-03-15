@@ -371,73 +371,73 @@
     "status": "NEW",
     "items": [
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Collapsible Column Groups",
         "href": "grids/hierarchical-grid/collapsible-column-groups.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Column Hiding",
         "href": "grids/hierarchical-grid/column-hiding.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Column Moving",
         "href": "grids/hierarchical-grid/column-moving.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Column Pinning",
         "href": "grids/hierarchical-grid/column-pinning.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Column Resizing",
         "href": "grids/hierarchical-grid/column-resizing.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Column Types",
         "href": "grids/hierarchical-grid/column-types.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Conditional Styling",
         "href": "grids/hierarchical-grid/conditional-cell-styling.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Display Density",
         "href": "grids/hierarchical-grid/display-density.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Editing",
         "href": "grids/hierarchical-grid/editing.md",
         "status": "NEW",
         "items": [
           {
-            "exclude": ["Angular", "React", "WebComponents"],
+            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
             "name": "Cell Editing",
             "href": "grids/hierarchical-grid/cell-editing.md",
             "status": "NEW"
           },
           {
-            "exclude": ["Angular", "React", "WebComponents"],
+            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
             "name": "Row Adding",
             "href": "grids/hierarchical-grid/row-adding.md",
             "status": "NEW"
           },
           {
-            "exclude": ["Angular", "WebComponents"],
+            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
             "name": "Row Editing",
             "href": "grids/hierarchical-grid/row-editing.md",
             "status": "NEW"
@@ -445,19 +445,19 @@
         ]
       },
       {
-        "exclude": ["Angular"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Filtering",
         "href": "grids/hierarchical-grid/filtering.md",
         "status": "NEW",
         "items": [
           {
-            "exclude": ["Angular", "React", "WebComponents"],
+            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
             "name": "Advanced Filtering",
             "href": "grids/hierarchical-grid/advanced-filtering.md",
             "status": "NEW"
           },
           {
-            "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
             "name": "Excel Style Filtering",
             "href": "grids/hierarchical-grid/excel-style-filtering.md",
             "status": "NEW"
@@ -465,25 +465,25 @@
         ]
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Multi-Column Headers",
         "href": "grids/hierarchical-grid/multi-column-headers.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Multi-Row Layout",
         "href": "grids/hierarchical-grid/multi-row-layout.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Paging",
         "href": "grids/hierarchical-grid/paging.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Remote Data Operations",
         "href": "grids/hierarchical-grid/remote-data-operations.md",
         "status": "NEW"
@@ -495,37 +495,37 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Row Dragging",
         "href": "grids/hierarchical-grid/row-drag.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Row Pinning",
         "href": "grids/hierarchical-grid/row-pinning.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Selection",
         "href": "grids/hierarchical-grid/selection.md",
         "status": "NEW",
         "items": [
           {
-            "exclude": ["Angular", "React", "WebComponents"],
+            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
             "name": "Cell Selection",
             "href": "grids/hierarchical-grid/cell-selection.md",
             "status": "NEW"
           },
           {
-            "exclude": ["Angular", "React", "WebComponents"],
+            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
             "name": "Column Selection",
             "href": "grids/hierarchical-grid/column-selection.md",
             "status": "NEW"
           },
           {
-            "exclude": ["Angular", "React", "WebComponents"],
+            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
             "name": "Row Selection",
             "href": "grids/hierarchical-grid/row-selection.md",
             "status": "NEW"
@@ -533,13 +533,13 @@
         ]
       },
       {
-        "exclude": ["Angular"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Sizing",
         "href": "grids/hierarchical-grid/sizing.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Sorting",
         "href": "grids/hierarchical-grid/sorting.md",
         "status": "NEW"
@@ -551,19 +551,19 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Summaries",
         "href": "grids/hierarchical-grid/summaries.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Virtualization and performance",
         "href": "grids/hierarchical-grid/virtualization.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Keyboard navigation",
         "href": "grids/hierarchical-grid/keyboard-navigation.md",
         "status": "NEW"
