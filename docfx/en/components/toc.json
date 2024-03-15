@@ -419,7 +419,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Editing",
         "href": "grids/hierarchical-grid/editing.md",
         "status": "NEW",
@@ -431,7 +431,7 @@
             "status": "NEW"
           },
           {
-            "exclude": ["Angular", "React", "WebComponents"],
+            "exclude": ["Angular"],
             "name": "Row Adding",
             "href": "grids/hierarchical-grid/row-adding.md",
             "status": "NEW"
