@@ -67,15 +67,10 @@ public formatOptions = this.options;
 ```
 
 ```ts
-private _formatOptions: any | null = null;
 public get formatOptions(): any {
-    if (this._formatOptions == null)
-    {
-        var columnPipeArgs: any = {};
-        columnPipeArgs.digitsInfo = "1.4-4";
-        this._formatOptions = columnPipeArgs;
-    }
-    return this._formatOptions;
+  return {
+    digitsInfo: "1.4-4"
+  };
 }
 
 constructor() {
@@ -138,16 +133,11 @@ public formatOptions = this.options;
 ```
 
 ```ts
-private _formatDateOptions: any | null = null;
 public get formatDateOptions(): any {
-    if (this._formatDateOptions == null)
-    {
-        var columnPipeArgs: any = {};
-        columnPipeArgs2.format = "long";
-        columnPipeArgs2.timezone = "UTC+0";
-        this._formatDateOptions = columnPipeArgs;
-    }
-    return this._formatDateOptions;
+    return {
+        format: "long",
+        timezone: "UTC+0"
+    };
 }
 
 constructor() {
@@ -286,9 +276,7 @@ Default template is using the value coming from the data as an image source to a
 ```
 
 ```tsx
-<IgrGrid>
-    <IgrColumn field="Image" dataType="Image"></IgrColumn>
-</IgrGrid>
+<IgrColumn field="Image" dataType="image"></IgrColumn>
 ```
 
 When `AutoGenerate` is used for the columns, the grid analyses the values in the first data record. If a value is of type string and matches the pattern of a url ending in an image extension (gif, jpg, jpeg, tiff, png, webp, bmp) then the column will automatically be marked as `dataType === GridColumnDataType.Image` and a default image template will be rendered.
@@ -367,17 +355,12 @@ public formatOptions = this.options;
 ```
 
 ```ts
-private _formatOptions: any | null = null;
-    public get formatOptions(): any {
-        if (this._formatOptions == null)
-        {
-            var columnPipeArgs: any = {};
-            columnPipeArgs.digitsInfo = "1.4-4";
-            columnPipeArgs.display = "symbol-narrow";
-            this._formatOptions = columnPipeArgs;
-        }
-        return this._formatOptions;
-    }
+public get formatOptions(): any {
+    return {
+        digitsInfo: '3.4-4',
+        display: 'symbol-narrow'
+    };
+}
 
 constructor() {
     var column = document.getElementById('column') as IgcColumnComponent;
@@ -465,16 +448,18 @@ public formatPercentOptions = this.options;
 ```
 
 ```ts
-private _formatPercentOptions: any | null = null;
-    public get formatPercentOptions(): any {
-        if (this._formatPercentOptions == null)
-        {
-            var columnPipeArgs: any = {};
-            columnPipeArgs.digitsInfo = "2.2-3";
-            this._formatPercentOptions = columnPipeArgs;
-        }
-        return this._formatPercentOptions;
-    }
+public get formatPercentOptions(): any {
+    return {
+        /**
+        * Decimal representation options, specified by a string in the following format:
+        * `{minIntegerDigits}`.`{minFractionDigits}`-`{maxFractionDigits}`.
+        * `minIntegerDigits`: The minimum number of integer digits before the decimal point. Default is 1.
+        * `minFractionDigits`: The minimum number of digits after the decimal point. Default is 0.
+        * `maxFractionDigits`: The maximum number of digits after the decimal point. Default is 3.
+        */
+        digitsInfo: '2.2-3'
+    };
+}
 
 constructor() {
     var column = document.getElementById('column') as IgcColumnComponent;
@@ -483,6 +468,13 @@ constructor() {
 ```
 
 ```tsx
+/**
+* Decimal representation options, specified by a string in the following format:
+* `{minIntegerDigits}`.`{minFractionDigits}`-`{maxFractionDigits}`.
+* `minIntegerDigits`: The minimum number of integer digits before the decimal point. Default is 1.
+* `minFractionDigits`: The minimum number of digits after the decimal point. Default is 0.
+* `maxFractionDigits`: The maximum number of digits after the decimal point. Default is 3.
+*/
 const formatOptions = new IgrColumnPipeArgs();
 formatOptions.digitsInfo = "2.2-3";
 
@@ -501,22 +493,23 @@ See the editing templates part of [{ComponentTitle} Editing topic](editing.md#ed
 Custom template and column formatter definition will always take precedence over the column data type set:
 
 ### Custom Template
-
+<!-- Angular -->
 ```html
-<igx-grid #grid1 [data]="data | async" [autoGenerate]="false">
+<{ComponentSelector} #grid1 [data]="data | async" [autoGenerate]="false">
     <igx-column [field]="'UnitsInStock'" [dataType]="'currency'" [pipeArgs]="formatOptions" [editable]="true">
         <ng-template igxCellEditor let-value>
             {{ value | currency:'USD':'symbol':'1.0-0'}}
         </ng-template>
     </igx-column>
-</igx-grid>
+</{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```html
-<igc-grid id="grid1" auto-generate="false">
+<{ComponentSelector} id="grid1" auto-generate="false">
     <igc-column id="UnitsInStock" field="UnitsInStock" data-type="currency" editable="true">
     </igc-column>
-</igc-grid>
+</{ComponentSelector}>
 ```
 
 ```ts
@@ -539,9 +532,9 @@ function editCellTemplate(ctx: IgrCellTemplateContext) {
     );
 }
 
-<IgrGrid autoGenerate="false">
+<{ComponentSelector} autoGenerate="false">
     <IgrColumn inlineEditorTemplate={editCellTemplate}></IgrColumn>
-</IgrGrid>
+</{ComponentSelector}>
 ```
 
 ```razor
@@ -560,10 +553,10 @@ function editCellTemplate(ctx: IgrCellTemplateContext) {
 ### Column Formatter
 
 ```html
-<igc-grid id="grid1" auto-generate="false">
+<{ComponentSelector} id="grid1" auto-generate="false">
     <igc-column id="UnitsInStock" field="UnitsInStock" data-type="currency">
     </igc-column>
-</igc-grid>
+</{ComponentSelector}>
 ```
 
 ```ts
@@ -582,9 +575,9 @@ function formatCurrency(value: number) {
     return `$ ${value.toFixed(0)}`;
 }
 
-<IgrGrid autoGenerate="false">
+<{ComponentSelector} autoGenerate="false">
     <IgrColumn formatter={formatCurrency} field="UnitsInStock"></IgrColumn>
-</IgrGrid>
+</{ComponentSelector}>
 ```
 
 ```razor
