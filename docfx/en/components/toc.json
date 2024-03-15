@@ -489,7 +489,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Row Actions",
         "href": "grids/hierarchical-grid/row-actions.md",
         "status": "NEW"
