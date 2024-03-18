@@ -677,9 +677,10 @@ The Hierarchical Grid allows the users to conveniently collapse all its currentl
 
 <img class="responsive-img" src="../../../images/unfold_less_icon_screenshot.jpg" srcset="../../images/unfold_less_icon_screenshoto@2x.jpg 2x" />
 
-## Sizing
+<!-- TODO: uncomment when sizing topic is ready -->
+<!-- ## Sizing
 
-See the [Hierarchical Grid Sizing](sizing.md) topic.
+See the [Hierarchical Grid Sizing](sizing.md) topic. -->
 
 <!-- Angular -->
 ## CRUD operations
@@ -869,8 +870,8 @@ Then set the `--header-background` and `--header-text-color` CSS properties for 
 * `Column`
 * `Cell`
 
-
-## Additional Resources
+<!-- TODO: uncomment when all of the topics are ready -->
+<!-- ## Additional Resources
 
 * [Grid Sizing](sizing.md)
 * [Virtualization and Performance](virtualization.md)
@@ -881,7 +882,7 @@ Then set the `--header-background` and `--header-text-color` CSS properties for 
 * [Column Moving](column-moving.md)
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+* [Selection](selection.md) -->
 
 Our community is active and always welcoming to new ideas.
 
