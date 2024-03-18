@@ -9,6 +9,34 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## ***{PackageVerChanges-23-2-MAR}**
+
+### {PackageGrids}
+
+- New [`HierarchicalGrid`](grids/hierarchical-grid/overview.md) component
+
+### {PackageCommon}
+
+- New `Textarea` component
+- New `ButtonGroup` component
+- `DockManager`
+  - New `ProximityDock` property. If enabled, docking indicators are not visible and the end user can dock the dragged pane by dragging it close to the target pane edges.
+  - New `ContainedInBoundaries` property. Determines whether the floating panes are kept inside the Dock Manager boundaries. Defaults to `false`.
+  - New `ShowPaneHeaders` property. Determines whether pane headers are only shown on hover or always visible. Defaults to `always`.
+- `Input`, `MaskInput`, `DateTimeInput`, `Rating`
+	- `Readonly` has been renamed to `ReadOnly`
+- `Input`
+	- `Maxlength` has been renamed to `MaxLength`
+	- `Minlength` has been renamed to `MinLength`
+
+#### Deprecations
+
+- The `Form` component has been deprecated. Please, use the native form element instead.
+- `DateTimeInput`
+    - `MinValue` and `MaxValue` properties have been deprecated. Please, use `Min` and `Max` instead.
+- `RangeSlider`
+    - `AriaLabelLower` and `AriaLabelUpper` properties have been deprecated. Please, use `ThumbLabelLower` and `ThumbLabelUpper` instead.
+
 ## **{PackageVerChanges-23-2-JAN}**
 
 ### {PackageCharts} (Charts)
