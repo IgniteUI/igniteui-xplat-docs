@@ -533,7 +533,7 @@
         ]
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Sizing",
         "href": "grids/hierarchical-grid/sizing.md",
         "status": "NEW"
