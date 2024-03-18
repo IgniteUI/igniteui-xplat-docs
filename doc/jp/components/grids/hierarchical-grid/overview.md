@@ -678,9 +678,10 @@ function buildUrl(dataState) {
 
 <img class="responsive-img" src="../../../images/unfold_less_icon_screenshot.jpg" srcset="../../images/unfold_less_icon_screenshoto@2x.jpg 2x" />
 
-## サイズ変更
+<!-- TODO: uncomment when sizing topic is ready -->
+<!-- ## サイズ変更
 
-「[階層グリッドのサイズ変更](sizing.md)」トピックを確認してください。
+「[階層グリッドのサイズ変更](sizing.md)」トピックを確認してください。 -->
 
 <!-- Angular -->
 ## CRUD 操作
@@ -870,8 +871,8 @@ $custom-theme: grid-theme(
 * `Column`
 * `Cell`
 
-
-## その他のリソース
+<!-- TODO: uncomment when all of the topics are ready -->
+<!-- ## その他のリソース
 
 * [グリッドのサイズ設定](sizing.md)
 * [仮想化とパフォーマンス](virtualization.md)
@@ -882,7 +883,7 @@ $custom-theme: grid-theme(
 * [列移動](column-moving.md)
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+* [選択](selection.md) -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
