@@ -35,9 +35,9 @@ A brief description will be provided on each button interaction through a snackb
 
 ## {Platform} {ComponentTitle} Selection Options
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart:  Grid, HierarchicalGrid -->
 The {ProductName} `{ComponentName}` component provides three different selection modes - [Row selection](row-selection.md), [Cell selection](cell-selection.md) and [Column selection](column-selection.md). By default only **Multi-cell selection** mode is enabled in the `{ComponentName}`. In order to change/enable selection mode you can use `RowSelection`, `CellSelection` or `Selectable` properties.
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd:  Grid, HierarchicalGrid -->
 
 ### {Platform} {ComponentTitle} Row Selection
 
@@ -47,11 +47,11 @@ Property `RowSelection` enables you to specify the following options:
 - `Single` - Selection of only one row within the `{ComponentName}` would be available.
 - `Multiple` - Multi-row selection would be available by using the row selectors, with a key combination like <kbd>ctrl</kbd> + <kbd>click</kbd>, or by pressing the <kbd>space key</kbd> once a cell is focused.
 
-<!-- ComponentStart: TreeGrid -->
+<!-- ComponentStart: TreeGrid, HierarchicalGrid -->
 
 - `MultipleCascade` -  This is a mode for cascading selection, resulting in the selection of all children in the tree below the record that the user selects with user interaction. In this mode a parent's selection state entirely depends on the selection state of its children.
 
-<!-- ComponentEnd: TreeGrid -->
+<!-- ComponentEnd: TreeGrid, HierarchicalGrid -->
 
 > Go to [Row selection topic](row-selection.md) for more information.
 
