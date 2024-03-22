@@ -419,7 +419,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Editing",
         "href": "grids/hierarchical-grid/editing.md",
         "status": "NEW",
