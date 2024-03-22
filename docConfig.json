@@ -91,7 +91,8 @@
             { "name": "{HierarchicalGridSelector}",   "value": "igx-hierarchical-grid"},
             { "name": "{HierarchicalGridPackage}",    "value": "igniteui-angular-grids"},
             { "name": "{HierarchicalGridSample}",     "value": "grids/hierarchical-grid"},
-            { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""}
+            { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""},
+            { "name": "{RowIslandSelector}",           "value": "igx-row-island"}
 
         ],
         "samplesBrowsers" : {
@@ -199,6 +200,7 @@
             { "name": "{HierarchicalGridPackage}",    "value": "igniteui-react-grids"},
             { "name": "{HierarchicalGridSample}",     "value": "grids/hierarchical-grid"},
             { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""},
+            { "name": "{RowIslandSelector}",           "value": "IgrRowIsland"},
 
             { "name": "{CanonicalLinkToGridMain}",            "value": " ", "note": "do not remove spaces"},
             { "name": "{CanonicalLinkToGridCellEditing}",     "value": " ", "note": "do not remove spaces"},
@@ -270,6 +272,7 @@
             { "name": "{PackageVerChanges-22-2.1}",   "value": "4.0.4 (December 2022)"},
             { "name": "{PackageVerChanges-22-2.2}",   "value": "4.2.5 (April 2023)"},
             { "name": "{PackageVerChanges-23-1}",     "value": "4.3.0 (June 2023)"},
+            { "name": "{PackageVerChanges-23-2}",     "value": "4.3.2 (October 2023)"},
             { "name": "{PackageVerChanges-23-2-DEC}", "value": "4.6.0 (December 2023)"},
             { "name": "{PackageVerChanges-23-2-JAN}", "value": "4.7.0 (January 2024)"},
             { "name": "{PackageVerLatest}",         "value": "4.7.0"},
@@ -320,6 +323,7 @@
             { "name": "{HierarchicalGridPackage}",    "value": "igniteui-webcomponents-grids"},
             { "name": "{HierarchicalGridSample}",     "value": "grids/hierarchical-grid"},
             { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""},
+            { "name": "{RowIslandSelector}",           "value": "igc-row-island"},
 
             { "name": "{CanonicalLinkToGridMain}",            "value": "grids/data-grid", "note": "data-grid is really gird overview topic"},
             { "name": "{CanonicalLinkToGridCellEditing}",     "value": "grids/grid/cell-editing"},
@@ -509,6 +513,7 @@
             { "name": "{HierarchicalGridPackage}",    "value": "igniteui-blazor-grids"},
             { "name": "{HierarchicalGridSample}",     "value": "grids/hierarchical-grid"},
             { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""},
+            { "name": "{RowIslandSelector}",           "value": "IgbRowIsland"},
 
             { "name": "{CanonicalLinkToGridMain}",            "value": "grids/data-grid", "note": "data-grid is really gird overview topic"},
             { "name": "{CanonicalLinkToGridCellEditing}",     "value": "grids/grid/cell-editing"},

@@ -191,7 +191,39 @@ In order to render a tree you do not necessarily need a data set - individual it
 
 ### Item Interactions
 
-The `Tree` provides the following API methods for item interactions:
+`TreeItem` could be expanded or collapsed:
+- by clicking on the item expand indicator *(default behavior)*.
+- by clicking on the item if the `Tree` `ToggleNodeOnClick` property is set to `true`.
+
+```html
+<igc-tree toggle-node-on-click="true">
+    <igc-tree-item label="North America">
+        <igc-tree-item label="United States"></igc-tree-item>
+        <igc-tree-item label="Canada"></igc-tree-item>
+        <igc-tree-item label="Mexico"></igc-tree-item>
+    </igc-tree-item>
+    <igc-tree-item label="South America">
+        <igc-tree-item label="Brazil"></igc-tree-item>
+    </igc-tree-item>
+</igc-tree>
+```
+
+By default, multiple items could be expanded at the same time. In order to change this behavior and allow expanding only single branch at a time, the `SingleBranchExpand` property could be enabled. This way when an item is expanded, all of the others already expanded branches in the same level will be collapsed.
+
+```html
+<igc-tree single-branch-expand="true">
+    <igc-tree-item label="North America">
+        <igc-tree-item label="United States"></igc-tree-item>
+        <igc-tree-item label="Canada"></igc-tree-item>
+        <igc-tree-item label="Mexico"></igc-tree-item>
+    </igc-tree-item>
+    <igc-tree-item label="South America">
+        <igc-tree-item label="Brazil"></igc-tree-item>
+    </igc-tree-item>
+</igc-tree>
+```
+
+In addition, the `Tree` provides the following API methods for item interactions:
 
 - `expand` - expands all items. If an items array is passed, expands only the specified items.
 - `collapse` - collapses all items. If an items array is passed, collapses only the specified items.
