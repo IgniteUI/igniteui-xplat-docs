@@ -57,9 +57,9 @@ In the `{ComponentName}`, if you set `RowEditable` property to true, and the `Ed
  - For `boolean` data type, default template is using `Checkbox`.
  - For `currency` data type, default template is using `InputGroup` with prefix/suffix configuration based on application or grid locale settings.
  - For `percent` data type, default template is using `InputGroup` with suffix element that shows a preview of the edited value in percents.
- <!-- ComponentStart:  Grid, HierarchicalGrid -->
+ <!-- ComponentStart:  Grid -->
  - For custom templates you can see [Cell Editing topic](cell-editing.md#{PlatformLower}-grid-cell-editing-and-edit-templates-example)
- <!-- ComponentEnd:  Grid, HierarchicalGrid -->
+ <!-- ComponentEnd:  Grid -->
 
 <!-- ComponentStart:  Grid, HierarchicalGrid -->
 All available column data types could be found in the official [Column types topic](column-types.md#default-template).
