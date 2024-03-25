@@ -557,6 +557,12 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular"],
+        "name": "Toolbar",
+        "href": "grids/hierarchical-grid/toolbar.md",
+        "status": "NEW"
+      },
+      {
         "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Virtualization and performance",
         "href": "grids/hierarchical-grid/virtualization.md",
