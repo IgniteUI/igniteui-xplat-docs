@@ -395,7 +395,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Column Resizing",
         "href": "grids/hierarchical-grid/column-resizing.md",
         "status": "NEW"
