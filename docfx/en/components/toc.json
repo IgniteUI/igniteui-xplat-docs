@@ -383,7 +383,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Column Moving",
         "href": "grids/hierarchical-grid/column-moving.md",
         "status": "NEW"
