@@ -12,7 +12,7 @@ All {Platform} Charts support highlighting of visuals such as lines, columns, an
 
 ## {Platform} Chart Highlighting Example
 
-The following example demonstrates the different highlighting options that are available on the {Platform} chart. Click on the checkboxes to enable the different highlight types.
+The following example demonstrates the different highlighting options that are available on the {Platform} chart. Click on the dropdowns to enable the different highlight types.
 
 `sample="/charts/category-chart/column-chart-with-highlighting", height="500", alt="{Platform} Highlighting Example"`
 

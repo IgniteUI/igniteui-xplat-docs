@@ -12,7 +12,7 @@ The {Platform} chart's hover interactions and annotations are implemented throug
 
 ## {Platform} Annotations Example
 
-The following example demonstrates the annotation layers that are available on the {Platform} chart. Click on the checkboxes to turn each layer on and off.
+The following example demonstrates the annotation layers that are available on the {Platform} chart. Click on the dropdowns to turn each layer on and off.
 
 `sample="/charts/category-chart/line-chart-with-annotations", height="600", alt="{Platform} Annotations Example"`
 
