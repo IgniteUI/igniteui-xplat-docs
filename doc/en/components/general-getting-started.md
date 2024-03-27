@@ -470,7 +470,7 @@ var app = builder.Build();
 @using IgniteUI.Blazor.Controls
 ```
 
-3 - Add the Style Sheet in the **<head\>** element of the **Pages/_Layout.cshtml** file:
+3a - Add the Style Sheet in the **<head\>** element of the **Pages/_Layout.cshtml** or **Pages/_Host.cshtml** file:
 
 ```razor
 <head>
@@ -478,7 +478,7 @@ var app = builder.Build();
 </head>
 ```
 
-4 - Add Script Reference to the **Pages/_Host.cshtml** file:
+3b - Add Script References:
 
 ```razor
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
@@ -503,7 +503,7 @@ public void ConfigureServices(IServiceCollection services)
 @using IgniteUI.Blazor.Controls
 ```
 
-3 - Add the Style Sheet in the **<head\>** element of the **Pages/_Host.cshtml** file:
+3a - Add the Style Sheet in the **<head\>** element of the **Pages/_Host.cshtml** file:
 
 ```razor
 <head>
@@ -511,7 +511,7 @@ public void ConfigureServices(IServiceCollection services)
 </head>
 ```
 
-4 - Add Script Reference to the **Pages/_Host.cshtml** file:
+3b - Add Script Reference to the **Pages/_Host.cshtml** file:
 
 ```razor
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>

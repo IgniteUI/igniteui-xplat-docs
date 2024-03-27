@@ -192,6 +192,38 @@ builder.Services.AddIgniteUIBlazor(
 
 ### 項目のインタラクション
 
+`TreeItem` は展開または折り畳むことができます。
+- 項目の展開インジケーター *(デフォルトの動作)* をクリックします。
+- `Tree` の `ToggleNodeOnClick` プロパティが **true** に設定されている場合、項目をクリックします。
+
+```html
+<igc-tree toggle-node-on-click="true">
+    <igc-tree-item label="North America">
+        <igc-tree-item label="United States"></igc-tree-item>
+        <igc-tree-item label="Canada"></igc-tree-item>
+        <igc-tree-item label="Mexico"></igc-tree-item>
+    </igc-tree-item>
+    <igc-tree-item label="South America">
+        <igc-tree-item label="Brazil"></igc-tree-item>
+    </igc-tree-item>
+</igc-tree>
+```
+
+デフォルトでは、複数の項目を同時に展開できます。この動作を変更し、一度に 1 つのブランチのみを展開できるようにするには、`SingleBranchExpand` プロパティを有効にします。このようにして、項目が展開されると、同じレベル内ですでに展開されている他のすべてのブランチが縮小されます。
+
+```html
+<igc-tree single-branch-expand="true">
+    <igc-tree-item label="North America">
+        <igc-tree-item label="United States"></igc-tree-item>
+        <igc-tree-item label="Canada"></igc-tree-item>
+        <igc-tree-item label="Mexico"></igc-tree-item>
+    </igc-tree-item>
+    <igc-tree-item label="South America">
+        <igc-tree-item label="Brazil"></igc-tree-item>
+    </igc-tree-item>
+</igc-tree>
+```
+
 `Tree` は、項目のインタラクションのために次の API メソッドを提供します:
 
 - `expand` - すべての項目を展開します。項目配列が渡されると、指定された項目のみが展開されます。

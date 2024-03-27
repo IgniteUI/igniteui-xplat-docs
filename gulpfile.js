@@ -1513,8 +1513,8 @@ function logSampleLinks(cb, platform, server) {
     var components = [
         "grids/grid",
         "grids/tree-grid",
+        "grids/hierarchical-grid"
     //  "grids/pivot-grid",
-    //  "grids/hierarchical-grid"
     ];
 
     gulp.src([

@@ -471,7 +471,7 @@ var app = builder.Build();
 @using IgniteUI.Blazor.Controls
 ```
 
-3 - **Pages/_Layout.cshtml** ファイルの **<head\>** 要素にスタイル シートを追加します。
+3a - **Pages/_Layout.cshtml** または **Pages/_Host.cshtml** ファイルの **<head\>** 要素にスタイル シートを追加します。
 
 ```razor
 <head>
@@ -479,7 +479,7 @@ var app = builder.Build();
 </head>
 ```
 
-4 - スクリプト参照を **Pages/_Host.cshtml** ファイルに追加します。
+3b - スクリプト参照を追加します。
 
 ```razor
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
@@ -504,7 +504,7 @@ public void ConfigureServices(IServiceCollection services)
 @using IgniteUI.Blazor.Controls
 ```
 
-3 - **Pages/_Host.cshtml** ファイルの **<head\>** 要素にスタイル シートを追加します。
+3a - **Pages/_Host.cshtml** ファイルの **<head\>** 要素にスタイル シートを追加します。
 
 ```razor
 <head>
@@ -512,7 +512,7 @@ public void ConfigureServices(IServiceCollection services)
 </head>
 ```
 
-4 - スクリプト参照を **Pages/_Host.cshtml** ファイルに追加します。
+3b - スクリプト参照を **Pages/_Host.cshtml** ファイルに追加します。
 
 ```razor
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>

@@ -832,7 +832,7 @@
   {
     "name": "Radial Gauge",
     "href": "radial-gauge.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
     "exclude": ["Blazor"],

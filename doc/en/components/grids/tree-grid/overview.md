@@ -80,7 +80,7 @@ For more details on how to customize the appearance of the tree grid, you may ha
 
 <!-- end: Angular, React, WebComponents -->
 
-<!-- Angular, React, Blazor -->
+<!-- Angular, Blazor -->
 ### Component Modules
 
 ```razor
@@ -105,7 +105,7 @@ import { IgxTreeGridModule } from 'igniteui-angular';
 export class AppModule {}
 ```
 
-<!-- end: Angular, React, Blazor -->
+<!-- end: Angular, Blazor -->
 
 ## Usage
 

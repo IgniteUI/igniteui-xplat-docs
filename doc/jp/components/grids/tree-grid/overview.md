@@ -81,7 +81,7 @@ import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 
 <!-- end: Angular, React, WebComponents -->
 
-<!-- Angular, React, Blazor -->
+<!-- Angular, Blazor -->
 ### コンポーネント モジュール
 
 ```razor
@@ -106,7 +106,7 @@ import { IgxTreeGridModule } from 'igniteui-angular';
 export class AppModule {}
 ```
 
-<!-- end: Angular, React, Blazor -->
+<!-- end: Angular, Blazor -->
 
 ## 使用方法
 

@@ -2,12 +2,12 @@
 title: {Platform} マップ | データ可視化ツール | インフラジスティックス
 _description: インフラジスティックスの {Platform} JavaScript マップを使用してヒートマップ画像を表示します。{ProductName} マップのサンプルを是非お試しください!
 _keywords: {Platform} map, heat map imagery, {ProductName}, Infragistics, {Platform} マップ, ヒートマップ画像, インフラジスティックス
-mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'HeatTileGenerator', 'GeographicTileSeries']
 _language: ja
 ---
 # {Platform} ヒート画像の表示
 
-{ProductName} マップ コントロールには、Shape ファイルをタイル シリーズにロードして地理空間データをロードすることにより、`ShapefileConverter` によって生成される `ShapeFileRecords` を使用して、ヒートマップ画像を表示する機能があります。
+{ProductName} マップ コントロールには、Shape ファイルをタイル シリーズにロードして地理空間データをロードすることにより、`ShapefileConverter` によって生成される `ShapeFileRecord` を使用して、ヒートマップ画像を表示する機能があります。
 
 このトピックを読み進めるための前提条件として、[シェープ ファイルを地理的データにバインディング](geo-map-binding-shp-file.md)をお読みください。
 
@@ -19,7 +19,7 @@ _language: ja
 
 <div class="divider--half"></div>
 
-`ShapefileConverter` がそのシェイプ ファイルを読み込むと、そのデータを ShapeFileRecord オブジェクトに変換します。これらのオブジェクトは、`ShapefileConverter` の `GetPointData()` メソッドから取得でき、`TileGenerator` プロパティに割り当てられた `HeatTileGenerator` で `TileGeneratorMapImagery` オブジェクトを使用してヒートマップを作成するために使用できます。この `TileGeneratorMapImagery` は、`TileImagery` ソースとして地理タイルシリーズで使用できます。
+`ShapefileConverter` がそのシェイプ ファイルを読み込むと、そのデータを `ShapefileRecord` オブジェクトに変換します。これらのオブジェクトは、`ShapefileConverter` の `GetPointData()` メソッドから取得でき、`TileGenerator` プロパティに割り当てられた `HeatTileGenerator` で `TileGeneratorMapImagery` オブジェクトを使用してヒートマップを作成するために使用できます。この `TileGeneratorMapImagery` は、`TileImagery` ソースとして `GeographicTileSeries` で使用できます。
 
 `HeatTileGenerator` オブジェクトは、`XValues`、`YValues`、`Values` の 3 つの値パスを持つように機能します。これらの使用方法の例として、人口に関する情報を持つ形状ファイルの場合、`XValues` を経度、`YValues` を緯度、`Values` を人口データとみなすことができます。これらの各プロパティは、`number[]` を取得します。
 
@@ -344,12 +344,11 @@ public onDataLoaded(csvData: string) {
 
 ## API リファレンス
 
- - `HeatTileGenerator`
+ - `GeographicTileSeries`
  - `HeatTileGenerator`
  - `MaximumColor`
  - `MinimumColor`
- - `ShapeFileRecord`
- - `ShapeFileRecords`
+ - `ShapefileRecord`
  - `ShapefileConverter`
  - `TileGeneratorMapImagery`
  - `TileGenerator`

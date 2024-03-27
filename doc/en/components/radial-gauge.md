@@ -390,6 +390,11 @@ The radial gauge labels are visual elements displaying numeric values at a speci
 
 `sample="/gauges/radial-gauge/labels", height="320", alt="{Platform} radial gauge labels"`
 
+## Optical Scaling - Title, Subtitle, and Labels
+
+The radial gauge's labels and titles can change it's scaling. To enable this, first set `OpticalScalingEnabled` to true. Then you can set `OpticalScalingSize` which manages the size at which labels have 100% optical scaling. Labels will have larger fonts when gauge's size is larger. For example, labels will have a 200% larger font size when this property is set to 500 and the gauge px size is doubled to eg. 1000.
+
+`sample="/gauges/radial-gauge/optical-scaling", height="500", alt="{Platform} radial gauge labels"`
 
 ## Tick Marks
 Tick marks are thin lines radiating from the center of the radial gauge. There are two types of tick marks: major and minor. Major tick marks are displayed at the `Interval` between the `MinimumValue` and `MaximumValue` properties. Use the `MinorTickCount` property to specify the number of minor tick marks displayed between each major tick mark. You can control the length of tick marks by setting a fraction (between 0 and 1) to `TickStartExtent`, `TickEndExtent`, `MinorTickStartExtent`, and `MinorTickEndExtent` properties.
