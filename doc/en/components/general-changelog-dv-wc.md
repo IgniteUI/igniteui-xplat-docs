@@ -9,6 +9,12 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## ***{PackageVerChanges-23-2-MAR}**
+
+### {PackageGrids}
+
+- New [`HierarchicalGrid`](grids/hierarchical-grid/overview.md) component
+
 ## **{PackageVerChanges-23-2-JAN}**
 
 ### {PackageCharts} (Charts)
