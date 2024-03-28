@@ -180,7 +180,7 @@ The slider components expose CSS parts for their inner elements. The following t
 
 The following sample demonstrates how to style the track fill and thumb parts:
 
-`sample="/inputs/slider/styling", height="120", alt="{Platform} Slider Styling Example"`
+`sample="/inputs/slider/styling", height="250", alt="{Platform} Slider Styling Example"`
 
 
 
