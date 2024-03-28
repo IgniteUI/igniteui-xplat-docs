@@ -10,7 +10,7 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
-## ***{PackageVerChanges-23-2-MAR}**
+## **{PackageVerChanges-23-2-MAR}**
 
 ### New Components
 
