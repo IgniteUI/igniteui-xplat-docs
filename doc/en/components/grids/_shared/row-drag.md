@@ -316,6 +316,55 @@ The drag handle icon can be templated using the grid's `DragIndicatorIconTemplat
 
 To do so, we can use the `DragIndicatorIcon` to pass a template inside of the `{ComponentSelector}`'s body:
 
+<!-- ComponentStart: HierarchicalGrid -->
+
+```tsx
+    function dragIndicatorIconTemplate(ctx: IgrHierarchicalGridEmptyTemplateContext) {
+        return (
+            <>
+                <IgrIcon name="drag_handle" collection="material" />
+            </>
+        );
+    }
+
+    <IgrHierarchicalGrid rowDraggable="true" dragIndicatorIcon={dragIndicatorIconTemplate}>
+    </IgrHierarchicalGrid>
+```
+
+```razor
+<IgHierarchicalbGrid Data="CustomersData" PrimaryKey="ID" RowDraggable="true" DragIndicatorIconTemplate="dragIndicatorIconTemplate" @ref="grid">
+</IgbHierarchicalGrid>
+
+private RenderFragment<IgbHierarchicalGridEmptyTemplateContext> dragIndicatorIconTemplate = (context) =>
+{
+    return @<div>
+        <IgbIcon IconName="drag_handle" Collection="material"></IgbIcon>
+    </div>;
+};
+```
+
+<!-- WebComponents -->
+
+```html
+<{ComponentSelector} row-draggable="true">
+</{ComponentSelector}>
+``
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcHierarchicalGridComponent;
+    grid.dragIndicatorIcon = this.dragIndicatorIconTemplate;
+}
+
+public dragIndicatorIconTemplate = (ctx: IgcHierarchicalGridEmptyTemplateContext) => {
+    return html`<igc-icon name="drag_handle" collection="material"></igc-icon>`;
+}
+```
+
+<!-- end: WebComponents -->
+
+<!-- ComponentEnd: HierarchicalGrid -->
+
 <!-- Angular -->
 ```html
 <{ComponentSelector}>
