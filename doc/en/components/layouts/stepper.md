@@ -333,7 +333,7 @@ The sample below demonstrates all exposed step types and how they could be chang
 
 <div class="divider--half"></div>
 
-<!-- WebComponents -->
+<!-- WebComponents, React -->
 ### Stepper Animations
 
 The {Platform} `Stepper` Animations provide the end-users with a beautiful experience interacting with the defined steps. The available animation options differ depending on the orientation of the stepper.
@@ -349,7 +349,7 @@ The `Stepper` component also gives you the ability to configure the duration of 
 `sample="/layouts/stepper/animations", height="600", alt="{Platform} Stepper Animations Example"`
 
 <div class="divider--half"></div>
-<!-- end: WebComponents -->
+<!-- end: WebComponents, React -->
 
 ## Keyboard Navigation
 
