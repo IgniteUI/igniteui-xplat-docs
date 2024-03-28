@@ -15,6 +15,8 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 * [Ignite UI for Angular Changelog at Github](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)
 
+## **{PackageVerChanges-23-2-MAR}**
+
 ## **{PackageVerChanges-23-2-JAN}**
 
 ### {PackageCharts} (Charts)

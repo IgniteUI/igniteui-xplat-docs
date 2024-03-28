@@ -16,6 +16,8 @@ namespace: Infragistics.Controls.Charts
 
 * [Ignite UI for Angular 変更ログ](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)
 
+## **{PackageVerChanges-23-2-MAR}**
+
 ## **{PackageVerChanges-23-2-JAN}**
 
 ### {PackageCharts} (チャート)

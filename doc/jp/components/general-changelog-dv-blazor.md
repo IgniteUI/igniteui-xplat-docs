@@ -11,6 +11,8 @@ namespace: Infragistics.Controls.Charts
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
+## **{PackageVerChanges-23-2-MAR}**
+
 ## **{PackageVerChanges-23-2-JAN}**
 
 ### .NET 8.0 のサポート
