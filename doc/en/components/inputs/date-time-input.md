@@ -232,7 +232,11 @@ The `DateTimeInput` exposes public `StepUp` and `StepDown` methods. They increme
 
 In the first scenario, if no specific DatePart is passed to the method, a default DatePart will increment or decrement, based on the specified `InputFormat` and the internal component implementation. In the second scenario, you can explicitly specify what DatePart to manipulate as it may suite different requirements. Also, both methods accept an optional `delta` parameter of type number which can be used to set the stepUp/stepDown step.
 
+<!-- WebComponents, Blazor -->
+
 Additionally, `SpinDelta` is a property that can be used to apply a different delta to each date time segment. It will be applied when spinning with the keyboard, mouse wheel or with the `StepUp` and `StepDown` methods, as long as they don't have the delta parameter provided since it will take precedence over `SpinDelta`.
+
+<!-- end: WebComponents, Blazor -->
 
 ```ts
 const input = document.getElementById('dateTimeInput') as IgcDateTimeInputComponent;
@@ -244,19 +248,6 @@ const spinDelta: DatePartDeltas = {
 };
 
 input.spinDelta = spinDelta;
-```
-
-```tsx
-private spinDelta: IgrDatePartDeltas = {
-        date: 2,
-        month: 3,
-        year: 10,
-};
-
-public dateTimeInputRef(input: IgrDateTimeInput) {
-    if (!input) { return; }
-    input.spinDelta = this.spinDelta;
-}
 ```
 
 Try it in the example below:
