@@ -15,6 +15,12 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 * [Ignite UI for Angular Changelog at Github](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)
 
+## **{PackageVerChanges-23-2-MAR}**
+
+### {PackageGauges}
+
+- New `OpticalScalingEnabled` and `OpticalScalingSize` properties for the `RadialGauge`. This new feature will manage the size at which labels, titles, and subtitles of the gauge have 100% optical scaling. You can read more about this new feature [here](radial-gauge.md#optical-scaling)
+
 ## **{PackageVerChanges-23-2-JAN}**
 
 ### {PackageCharts} (Charts)
