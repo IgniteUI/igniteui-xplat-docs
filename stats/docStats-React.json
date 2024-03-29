@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in React documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "React",
-  "samplesCount": 579,
+  "samplesCount": 602,
   "samplesHost": "https://staging.infragistics.com/react-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -1532,6 +1532,27 @@
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/chip/variants": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/chip"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/dropdown/group": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/dropdown"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/dropdown/header": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/dropdown"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/dropdown/item": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/dropdown"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/dropdown/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/dropdown"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/dropdown/position": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/dropdown"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/dropdown/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/dropdown"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/dropdown/target": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/dropdown"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/form/overview": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/form"
     ],
@@ -1559,6 +1580,15 @@
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/input/styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/input"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/mask-input/applying-mask": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/mask-input"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/mask-input/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/mask-input"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/mask-input/value-modes": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/mask-input"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/radio/alignment": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/radio"
     ],
@@ -1577,11 +1607,41 @@
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/radio/styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/radio"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/rating/basic": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/rating"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/rating/custom": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/rating"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/rating/empty": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/rating"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/rating/single-selection": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/rating"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/rating/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/rating"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/ripple/button": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/ripple"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/ripple/color": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/ripple"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/select/group": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/select"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/select/header": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/select"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/select/item": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/select"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/select/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/select"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/select/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/select"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/slider/constraints": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/slider"
@@ -1624,6 +1684,15 @@
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/switches/overview": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/switch"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/accordion/customization": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/accordion"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/accordion/nested-scenario": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/accordion"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/accordion/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/accordion"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/layouts/avatar/icon": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/avatar"
@@ -1713,6 +1782,7 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-heat-imagery"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-osm-imagery": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/general-getting-started",
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-osm-imagery"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/navigation": [
@@ -1804,7 +1874,7 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
     ]
   },
-  "topicsCount": 270,
+  "topicsCount": 276,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-react/react/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -2109,6 +2179,9 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/excel-library-working-with-sparklines": [
       "https://staging.infragistics.com/react-demos/samples/samples/excel/excel-library/working-with-sparklines"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/general-getting-started": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-osm-imagery"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map": [
       "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/type-scatter-bubble-series"
@@ -2779,6 +2852,15 @@
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/chip/styling",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/chip/variants"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/dropdown": [
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/dropdown/group",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/dropdown/header",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/dropdown/item",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/dropdown/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/dropdown/position",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/dropdown/styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/dropdown/target"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/form": [
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/form/overview"
     ],
@@ -2794,6 +2876,11 @@
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/input/size",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/input/styling"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/mask-input": [
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/mask-input/applying-mask",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/mask-input/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/mask-input/value-modes"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/radio": [
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/radio/alignment",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/radio/disabled",
@@ -2802,9 +2889,23 @@
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/radio/label",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/radio/styling"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/rating": [
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/rating/basic",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/rating/custom",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/rating/empty",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/rating/single-selection",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/rating/styling"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/ripple": [
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/ripple/button",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/ripple/color"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/select": [
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/select/group",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/select/header",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/select/item",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/select/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/select/styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/slider": [
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/slider/constraints",
@@ -2823,6 +2924,11 @@
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/switches/disabled",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/switches/label",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/switches/overview"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/accordion": [
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/accordion/customization",
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/accordion/nested-scenario",
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/accordion/overview"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/avatar": [
       "https://staging.infragistics.com/react-demos/samples/samples/layouts/avatar/icon",

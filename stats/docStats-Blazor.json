@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in Blazor documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "Blazor",
-  "samplesCount": 617,
+  "samplesCount": 613,
   "samplesHost": "https://staging.infragistics.com/blazor-client/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -1627,6 +1627,9 @@
     "https://staging.infragistics.com/blazor-client/samples/samples/inputs/rating/empty": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/rating"
     ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/inputs/rating/single-selection": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/rating"
+    ],
     "https://staging.infragistics.com/blazor-client/samples/samples/inputs/rating/styling": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/rating"
     ],
@@ -1726,32 +1729,17 @@
     "https://staging.infragistics.com/blazor-client/samples/samples/layouts/card/styling": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/card"
     ],
-    "https://staging.infragistics.com/blazor-client/samples/samples/layouts/dock-manager/contained-in-boundaries": [
-      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/dock-manager-customization"
-    ],
     "https://staging.infragistics.com/blazor-client/samples/samples/layouts/dock-manager/customize-buttons": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/dock-manager"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/layouts/dock-manager/embedding-frames": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/dock-manager-embedding-frames"
     ],
-    "https://staging.infragistics.com/blazor-client/samples/samples/layouts/dock-manager/focus-panes": [
-      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/dock-manager-customization"
-    ],
-    "https://staging.infragistics.com/blazor-client/samples/samples/layouts/dock-manager/hide-pane-headers": [
-      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/dock-manager-customization"
-    ],
     "https://staging.infragistics.com/blazor-client/samples/samples/layouts/dock-manager/overview": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/dock-manager"
     ],
-    "https://staging.infragistics.com/blazor-client/samples/samples/layouts/dock-manager/proximity-dock": [
-      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/dock-manager-customization"
-    ],
     "https://staging.infragistics.com/blazor-client/samples/samples/layouts/dock-manager/styling": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/dock-manager"
-    ],
-    "https://staging.infragistics.com/blazor-client/samples/samples/layouts/dock-manager/toggle-inner-dock": [
-      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/dock-manager-customization"
     ],
     "https://staging.infragistics.com/blazor-client/samples/samples/layouts/dock-manager/updating-panes": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/dock-manager-updating-panes"
@@ -1920,7 +1908,7 @@
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/scheduling/calendar"
     ]
   },
-  "topicsCount": 273,
+  "topicsCount": 272,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -2956,6 +2944,7 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/rating/basic",
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/rating/custom",
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/rating/empty",
+      "https://staging.infragistics.com/blazor-client/samples/samples/inputs/rating/single-selection",
       "https://staging.infragistics.com/blazor-client/samples/samples/inputs/rating/styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/inputs/ripple": [
@@ -3008,13 +2997,6 @@
       "https://staging.infragistics.com/blazor-client/samples/samples/layouts/dock-manager/customize-buttons",
       "https://staging.infragistics.com/blazor-client/samples/samples/layouts/dock-manager/overview",
       "https://staging.infragistics.com/blazor-client/samples/samples/layouts/dock-manager/styling"
-    ],
-    "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/dock-manager-customization": [
-      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/dock-manager/contained-in-boundaries",
-      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/dock-manager/focus-panes",
-      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/dock-manager/hide-pane-headers",
-      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/dock-manager/proximity-dock",
-      "https://staging.infragistics.com/blazor-client/samples/samples/layouts/dock-manager/toggle-inner-dock"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/dock-manager-embedding-frames": [
       "https://staging.infragistics.com/blazor-client/samples/samples/layouts/dock-manager/embedding-frames"
