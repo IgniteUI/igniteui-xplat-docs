@@ -26,7 +26,7 @@ _language: ja
 - 新しい `ButtonGroup` コンポーネント
 - `DockManager`
     - 新しい `ProximityDock` プロパティ。有効にすると、ドッキング インジケーターは表示されなくなり、エンド ユーザーは、ドラッグしたペインをターゲット ペインの端に近づけてドラッグすることでドッキングできます
-    - 新しい `ContainedInBoundaries` プロパティ。フローティング ペインを Dock Manager の境界内に保持するかどうかを決定します。デフォルトは `false` です。
+    - 新しい `ContainedInBoundaries` プロパティ。フローティング ペインを Dock Manager の境界内に保持するかどうかを決定します。デフォルトは **false** です。
     - 新しい `ShowPaneHeaders` プロパティ。ペインのヘッダーをホバー時にのみ表示するか、常に表示するかを決定します。デフォルトは `always` です。
 - `Input`、`MaskInput`、`DateTimeInput`、`Rating`
     - `Readonly` は `ReadOnly` に名前が変更されました。
@@ -34,7 +34,7 @@ _language: ja
     - `Maxlength` は `MaxLength` に名前が変更されました。
     - `Minlength` は `MinLength` に名前が変更されました。
 - `Tree`
-    - ノードをクリックすると展開状態が変更されるかどうかを決定する `toggleNodeOnClick` プロパティが追加されました。デフォルトは `false` です。
+    - ノードをクリックすると展開状態が変更されるかどうかを決定する `toggleNodeOnClick` プロパティが追加されました。デフォルトは **false** です。
 - `Rating`
      - `allowReset` が追加されました。有効にすると、同じ値を選択するとコンポーネントがリセットされます。**動作の変更** - 以前のリリースでは、これが Rating コンポーネントのデフォルトの動作でした。アプリケーションでこの動作を維持する必要がある場合は、必ず `allowReset` を設定してください。
 - `Select`、`Dropdown` 
