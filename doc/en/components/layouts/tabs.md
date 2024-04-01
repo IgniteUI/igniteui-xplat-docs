@@ -19,7 +19,7 @@ The {Platform} Tabs example below displays three different tabs aligned in a sin
 
 ## How to use Tabs with {ProductName}
 
-<!-- WebComponents -->
+<!-- WebComponents, React -->
 
 First, you need to install the {ProductName} by running the following command:
 
@@ -27,9 +27,13 @@ First, you need to install the {ProductName} by running the following command:
 npm install {PackageWebComponents}
 ```
 
-<!-- end: WebComponents -->
+<!-- end: WebComponents, React -->
 
 Before using the `Tabs`, you need to register it as follows:
+
+```tsx
+IgrTabsModule.register();
+```
 
 
 ```razor
@@ -70,6 +74,17 @@ Simple `Tabs` declaration is done as follows:
 </IgbTabs>
 ```
 
+```tsx
+<IgrTabs>
+    <IgrTab panel="first">Tab 1</IgrTab>
+    <IgrTab panel="second">Tab 2</IgrTab>
+    <IgrTab panel="third">Tab 3</IgrTab>
+    <IgrTabPanel id="first">Panel 1</IgrTabPanel>
+    <IgrTabPanel id="second">Panel 2</IgrTabPanel>
+    <IgrTabPanel id="third">Panel 3</IgrTabPanel>
+</IgrTabs>
+```
+
 ### Selection
 
 The `Tabs` emits `Change` event when the user selects an item either by key press or click. The `Select` method allows you to select a tab by specifying its panel as string value.
@@ -88,6 +103,10 @@ A tab is disabled by setting the `Disabled` attribute:
 
 ```razor
 <IgbTab Panel="first" Disabled>Tab 1</IgbTab>
+```
+
+```tsx
+<IgrTab panel="first" disabled={true}>Tab 1</IgrTab>
 ```
 
 ### Alignment
