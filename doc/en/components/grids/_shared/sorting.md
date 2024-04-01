@@ -383,7 +383,6 @@ useEffect(() => {
 The `{ComponentName}` supports remote sorting, which is demonstrated in the [{ComponentTitle} Remote Data Operations](remote-data-operations.md) topic.
 
 <!-- end: Angular -->
-
 <!-- ComponentEnd: Grid -->
 
 ## Sorting Indicators Templates
@@ -399,10 +398,11 @@ The sorting indicator icon in the column header can be customized using a templa
 </ng-template>
 ```
 <!-- end: Angular -->
+
 - `SortHeaderIconTemplate` – re-templates the sorting icon when no sorting is applied.
 
-
-<!-- ComponentStart: Grid, TreeGrid -->
+<!-- Blazor -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
 <{ComponentSelector} SortHeaderIconTemplate="SortDefaultTemplate"></{ComponentSelector}>
 
@@ -413,8 +413,10 @@ The sorting indicator icon in the column header can be customized using a templa
     };
 }
 ```
-<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: Blazor -->
 
+<!-- WebComponents -->
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as {ComponentName}Component;
@@ -426,7 +428,10 @@ public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
     return html`<igc-icon name="unfold_more"></igc-icon>`;
 }
 ```
+<!-- end: WebComponents -->
 
+<!-- React -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 function sortHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
     return (
@@ -436,8 +441,10 @@ function sortHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
     );
 }
 
-<IgrGrid sortHeaderIconTemplate={sortHeaderIconTemplate}></IgrGrid>
+<{ComponentSelector} sortHeaderIconTemplate={sortHeaderIconTemplate}></{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: React -->
 
 <!-- Angular -->
 
@@ -453,8 +460,8 @@ function sortHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
 
 - `SortAscendingHeaderIconTemplate` – re-templates the sorting icon when the column is sorted in ascending order.
 
-<!-- ComponentStart: Grid, TreeGrid -->
-
+<!-- Blazor -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
 <{ComponentSelector} SortAscendingHeaderIconTemplate="SortAscendingTemplate"></{ComponentSelector}>
 
@@ -465,8 +472,10 @@ function sortHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
     };
 }
 ```
-<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: Blazor -->
 
+<!-- WebComponents -->
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as {ComponentName}Component;
@@ -478,7 +487,10 @@ public sortAscendingHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => 
     return html`<igc-icon name="expand_less"></igc-icon>`;
 }
 ```
+<!-- end: WebComponents -->
 
+<!-- React -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 function sortAscendingHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
     return (
@@ -488,8 +500,10 @@ function sortAscendingHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
     );
 }
 
-<IgrGrid sortAscendingHeaderIconTemplate={sortAscendingHeaderIconTemplate}></IgrGrid>
+<{ComponentSelector} sortAscendingHeaderIconTemplate={sortAscendingHeaderIconTemplate}></{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: React -->
 
 <!-- Angular -->
 
@@ -505,7 +519,8 @@ function sortAscendingHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
 
 - `SortDescendingHeaderIconTemplate` – re-templates the sorting icon when the column is sorted in descending order.
 
-<!-- ComponentStart: Grid, TreeGrid -->
+<!-- Blazor -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
 <{ComponentSelector} SortDescendingHeaderIconTemplate="SortDescendingTemplate"></{ComponentSelector}>
 
@@ -516,8 +531,10 @@ function sortAscendingHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
     };
 }
 ```
-<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: Blazor -->
 
+<!-- WebComponents -->
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as {ComponentName}Component;
@@ -529,7 +546,10 @@ public sortDescendingHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) =>
     return html`<igc-icon name="expand_more"></igc-icon>`;
 }
 ```
+<!-- end: WebComponents -->
 
+<!-- React -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 function sortDescendingHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
     return (
@@ -539,8 +559,10 @@ function sortDescendingHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
     );
 }
 
-<IgrGrid sortDescendingHeaderIconTemplate={sortDescendingHeaderIconTemplate}></IgrGrid>
+<{ComponentSelector} sortDescendingHeaderIconTemplate={sortDescendingHeaderIconTemplate}></{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: React -->
 
 <!-- Angular -->
 
