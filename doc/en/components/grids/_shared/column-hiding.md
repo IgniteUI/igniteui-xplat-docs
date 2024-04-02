@@ -190,14 +190,6 @@ For this purpose all we have to do is set both the `GridToolbarActions` and the 
             <igx-grid-toolbar-hiding></igx-grid-toolbar-hiding>
         </igx-grid-toolbar-actions>
     </igx-grid-toolbar>
-
-    <igx-row-island>
-        <igx-grid-toolbar>
-            <igx-grid-toolbar-actions>
-                <igx-grid-toolbar-hiding></igx-grid-toolbar-hiding>
-            </igx-grid-toolbar-actions>
-        </igx-grid-toolbar>
-    </igx-row-island>
 </igx-hierarchical-grid>
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -212,14 +204,6 @@ For this purpose all we have to do is set both the `GridToolbarActions` and the 
             <igc-grid-toolbar-hiding></igc-grid-toolbar-hiding>
         </igc-grid-toolbar-actions>
     </igc-grid-toolbar>
-
-    <igc-row-island>
-        <igc-grid-toolbar>
-            <igc-grid-toolbar-actions>
-                <igc-grid-toolbar-hiding> </igc-grid-toolbar-hiding>
-            </igc-grid-toolbar-actions>
-        </igc-grid-toolbar>
-    </igc-row-island>
 </igc-hierarchical-grid>
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -235,15 +219,6 @@ For this purpose all we have to do is set both the `GridToolbarActions` and the 
             </IgbGridToolbarHiding>
         </IgbGridToolbarActions>
     </IgbGridToolbar>
-
-    <IgbRowIsland>
-        <IgbGridToolbar>
-            <IgbGridToolbarActions>
-                <IgbGridToolbarHiding>
-                </IgbGridToolbarHiding>
-            </IgbGridToolbarActions>
-        </IgbGridToolbar>
-    </IgbRowIsland>
 </{ComponentSelector}>
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -258,14 +233,6 @@ For this purpose all we have to do is set both the `GridToolbarActions` and the 
             <IgrGridToolbarHiding></IgrGridToolbarHiding>
         </IgrGridToolbarActions>
     </IgrGridToolbar>
-
-    <IgrRowIsland>
-        <IgrGridToolbar>
-            <IgrGridToolbarActions>
-                <IgrGridToolbarHiding></IgrGridToolbarHiding>
-            </IgrGridToolbarActions>
-        </IgrGridToolbar>
-    </IgrRowIsland>
 </IgrHierarchicalGrid>
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
