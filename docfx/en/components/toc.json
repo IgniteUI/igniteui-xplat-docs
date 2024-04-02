@@ -21,7 +21,7 @@
     ]
   },
   {
-    "exclude": ["Blazor"],
+    "exclude": ["Blazor", "Angular"],
     "name": "Getting Started",
     "href": "general-getting-started.md",
     "status": ""
