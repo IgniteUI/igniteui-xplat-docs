@@ -391,11 +391,11 @@ IgrRadialGaugeModule.register();
 
 `sample="/gauges/radial-gauge/labels", height="320", alt="{Platform} ラジアル ゲージのラベル"`
 
-## オプティカル スケーリング - タイトル、サブタイトル、ラベル
+## オプティカル スケーリング
 
 ラジアル ゲージのラベルとタイトルにより、スケーリングを変更できます。これを有効にするには、まず `OpticalScalingEnabled` を true に設定します。次に、ラベルが 100% のオプティカル スケーリングを持つサイズを管理する `OpticalScalingSize` を設定できます。ゲージのサイズが大きくなると、ラベルのフォントも大きくなります。たとえば、このプロパティが 500 に設定され、ゲージのピクセル単位のサイズが 2 倍の 1000 になると、ラベルのフォント サイズは 200% 大きくなります。
 
-`sample="/gauges/radial-gauge/optical-scaling", height="500", alt="{Platform} ラジアル ゲージのラベル"`
+`sample="/gauges/radial-gauge/optical-scaling", height="500", alt="{Platform} ラジアル ゲージのオプティカル スケーリング"`
 
 ## 目盛
 目盛は、ラジアル ゲージの中央から放射状に表示される細い線です。目盛には、主目盛および副目盛の 2 種類があり、主目盛りは `MinimumValue` と `MaximumValue` の間の `Interval` に表示されます。また `MinorTickCount` プロパティは、隣接する 2 つの主目盛間の副目盛の数を指定します。目盛りの長さは、`TickStartExtent`、`TickEndExtent`、`MinorTickStartExtent`、`MinorTickEndExtent` に少数値 (0 から 1 の間) を設定して制御できます。
