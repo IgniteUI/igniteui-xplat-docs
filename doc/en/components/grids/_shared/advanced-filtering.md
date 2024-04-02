@@ -39,6 +39,23 @@ To enable the advanced filtering, the `AllowAdvancedFiltering` input property sh
 </{ComponentSelector}>
 ```
 <!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} [data]="data" [autoGenerate]="true" [allowAdvancedFiltering]="true">
+    <igc-grid-toolbar></igc-grid-toolbar>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```html
+<{ComponentSelector} data={nwindData} autoGenerate="false" ref={gridRef} allowAdvancedFiltering="true">
+    <IgrGridToolbar></IgrGridToolbar>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
 ```razor
 <{ComponentSelector} Data=data AutoGenerate="true" AllowAdvancedFiltering="true">
     <IgbGridToolbar></IgbGridToolbar>
