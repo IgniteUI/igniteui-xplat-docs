@@ -19,7 +19,7 @@ The {Platform} Tabs example below displays three different tabs aligned in a sin
 
 ## How to use Tabs with {ProductName}
 
-<!-- WebComponents, React -->
+<!-- WebComponents -->
 
 First, you need to install the {ProductName} by running the following command:
 
@@ -27,11 +27,23 @@ First, you need to install the {ProductName} by running the following command:
 npm install {PackageWebComponents}
 ```
 
-<!-- end: WebComponents, React -->
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+<!-- end: React -->
 
 Before using the `Tabs`, you need to register it as follows:
 
 ```tsx
+import { IgrTabsModule, IgrTabs, IgrTab,  IgrTabPanel} from "igniteui-react";
+
 IgrTabsModule.register();
 ```
 
