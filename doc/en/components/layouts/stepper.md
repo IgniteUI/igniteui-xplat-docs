@@ -76,7 +76,7 @@ You will also need to link an additional CSS file to apply the styling to the `S
 Now you can start with a basic configuration of the {Platform} `Stepper` and its steps.
 
 ## How To Use {Platform} Stepper
-The `Step` is the representation of every step that belongs to the `Stepper`. Steps provide `Invalid`, `Active`, `Optional`, `Disabled` and `Complete` properties, which give you the ability to configure the step states according to your business requirement.
+The `Step` is the representation of every step that belongs to the `Stepper`. Steps provide `Step.Invalid`, `Step.Active`, `Step.Optional`, `Step.Disabled` and `Step.Complete` properties, which give you the ability to configure the step states according to your business requirement.
 
 ### Declaring {Platform} Stepper
 Steps can be declared using one of the following approaches.
@@ -338,9 +338,9 @@ The sample below demonstrates all exposed step types and how they could be chang
 
 The {Platform} `Stepper` Animations provide the end-users with a beautiful experience interacting with the defined steps. The available animation options differ depending on the orientation of the stepper.
 
-When the stepper is horizontally orientated, it is configured to use the `slide` animation by default. It also supports `fade` as an alternative. The animations are configured through the `horizontalAnimation` input.
+When the stepper is horizontally orientated, it is configured to use the `slide` animation by default. It also supports `fade` as an alternative. The animations are configured through the `HorizontalAnimation` input.
 
-In a vertically orientated layout, the animation type could be defined using the `verticalAnimation` property. By default, its value is set to `grow` and the user has the ability to set it to `fade` as well.
+In a vertically orientated layout, the animation type could be defined using the `VerticalAnimation` property. By default, its value is set to `grow` and the user has the ability to set it to `fade` as well.
 
 Setting `none` to both animation type inputs disables stepper animations.
 
