@@ -162,7 +162,7 @@ Each tab has default slot to display information - icon, text or both and `prefi
 
 
 
-### Styling
+## Styling
 
 The `Tabs` component exposes CSS parts for all of its elements:
 
