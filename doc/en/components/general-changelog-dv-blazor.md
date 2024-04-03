@@ -10,6 +10,12 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## **{PackageVerChanges-23-2-APR}**
+
+- `DatePicker` 
+
+    - Bug fix related to clearing/changing values.
+
 ## **{PackageVerChanges-23-2-MAR}**
 
 ### New Components
