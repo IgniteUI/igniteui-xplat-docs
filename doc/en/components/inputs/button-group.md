@@ -69,7 +69,7 @@ For a complete introduction to the {ProductName}, read the [*Getting Started*](.
 
 Now that you have the {ProductName} Button Group imported, you can start with a basic configuration of the `ButtonGroup` and its buttons.
 
-Use the `ButtonGroup` selector to wrap your `ToggleButton`s and display them into a button group. If you want a button to be selected by default, use the `selected` attribute:
+Use the `ButtonGroup` selector to wrap your `ToggleButton`s and display them into a button group. If you want a button to be selected by default, use the `Selected` attribute:
 
 ```html
  <igc-button-group>
@@ -140,12 +140,12 @@ Use the `ButtonGroup` selector to wrap your `ToggleButton`s and display them int
 ## Examples
 
 ### Alignment
-Use the `alignment` property to set the orientation of the buttons in the button group.
+Use the `Alignment` property to set the orientation of the buttons in the button group.
 
 `sample="/inputs/button-group/alignment", height="220", alt="{Platform} Button Group Alignment Example"`
 
 ### Selection
-In order to configure the {ProductName} `ButtonGroup` selection, you could use its `selection` property. This property accepts the following three modes: 
+In order to configure the {ProductName} `ButtonGroup` selection, you could use its `Selection` property. This property accepts the following three modes: 
 - **single** - default selection mode of the button group. A single button can be selected/deselected by the user.
 - **single-required** - mimics a radio group behavior. Only one button can be selected and once initial selection is made, deselection is not possible through user interaction.
 - **multiple** - multiple buttons in the group can be selected and deselected.
@@ -154,9 +154,7 @@ The sample below demonstrates the exposed `ButtonGroup` selection modes:
 
 `sample="/inputs/button-group/selection", height="170", alt="{Platform} Button Group Selection Example"`
 
-<!-- React, WebComponents -->
-A `ToggleButton` could be marked as selected via its `selected` attribute or through the `ButtonGroup` `selectedItems` attribute:
-<!-- end: React, WebComponents -->
+A `ToggleButton` could be marked as selected via its `Selected` attribute or through the `ButtonGroup` `SelectedItems` attribute:
 
 ```html
 <igc-button-group selected-items='["bold"]'>
@@ -194,7 +192,6 @@ A `ToggleButton` could be marked as selected via its `selected` attribute or thr
 </IgrButtonGroup>
 ```
 
-<!-- React, WebComponents -->
 ```razor
 <IgbButtonGroup SelectedItems='["bold"]'>
     <IgbToggleButton Value="bold">
@@ -213,9 +210,7 @@ A `ToggleButton` could be marked as selected via its `selected` attribute or thr
 ```
 
 > [!Note]
-> Setting `ToggleButton` value attribute is mandatory for using the `selectedItems` property of the `ButtonGroup`.
-
-<!-- end: React, WebComponents -->
+> Setting `ToggleButton` `Value` attribute is mandatory for using the `SelectedItems` property of the `ButtonGroup`.
 
 ### Size
 The `--ig-size` CSS custom property can be used to control the size of the button group.
