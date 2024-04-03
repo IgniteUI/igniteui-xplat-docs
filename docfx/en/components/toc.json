@@ -58,7 +58,7 @@
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
+    "exclude": ["Blazor", "Angular"],
     "name": "Licensing",
     "href": "general-licensing.md",
     "status": ""
