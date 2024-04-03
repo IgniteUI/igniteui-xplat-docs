@@ -532,14 +532,14 @@ The `RowChangesCount` property is exposed and it holds the count of the changed 
 </ng-template>
  ```
 
- ```razor
+```razor
 igRegisterScript("RowEditTextTemplate", (ctx) => {
     var html = window.igTemplating.html;
     return html`<div>
    Changes: ${ctx.implicit}
 </div>`;
 }, false);
- ```
+```
 
 ```ts
 public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
@@ -547,6 +547,8 @@ public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
 }
 ```
 
+<!-- React -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 function rowEditTextTemplate(ctx: IgrGridRowEditTextTemplateContext) {
     return (
@@ -556,6 +558,8 @@ function rowEditTextTemplate(ctx: IgrGridRowEditTextTemplateContext) {
     );
 }
 ```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: React -->
 
 ### Customizing Buttons
 
@@ -565,14 +569,14 @@ Customizing the buttons of the row editing overlay also possible via templating.
 If you want the buttons to be part of the keyboard navigation, then each on of them should have the `RowEditTabStopDirective`.
 <!-- end:Angular -->
 
- ```html
+```html
  <ng-template igxRowEditActions let-endRowEdit>
 	<button igxButton igxRowEditTabStop (click)="endRowEdit(false)">Cancel</button>
 	<button igxButton igxRowEditTabStop (click)="endRowEdit(true)">Apply</button>
 </ng-template>
- ```
+```
 
- ```razor
+```razor
  igRegisterScript("RowEditActionsTemplate", (ctx) => {
     var html = window.igTemplating.html;
     window.endRowEdit = ctx.implicit;
@@ -581,7 +585,7 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
 	<button @click="(event) => endRowEdit(true, event)">Apply</button>
 </div>`;
 }, false);
- ```
+```
 
 ```ts
 public rowEditActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
@@ -593,6 +597,8 @@ public rowEditActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
 }
 ```
 
+<!-- React -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 function rowEditActionsTemplate(ctx: IgrGridRowEditActionsTemplateContext) {
     const endRowEdit = ctx.dataContext.implicit;
@@ -604,6 +610,8 @@ function rowEditActionsTemplate(ctx: IgrGridRowEditActionsTemplateContext) {
     );
 }
 ```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: React -->
 
 <!-- Angular -->
 
