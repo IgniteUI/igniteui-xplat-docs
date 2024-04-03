@@ -2,13 +2,65 @@
 title: {Platform} 新機能 | {ProductName} | インフラジスティックス
 _description: {ProductName} の新機能について学んでください。
 _keywords: Changelog, What's New, {ProductName}, Infragistics, 変更ログ, 新機能, インフラジスティックス
-_language: ja
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "Toolbar", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Grid", "GridSelectionMode", DataGridCellEventArgs, DataGridSelectionMode, DataSourceSummaryOperand]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "Toolbar", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Grid", "GridSelectionMode", DataGridCellEventArgs, DataGridSelectionMode, DataSourceSummaryOperand, "RadialGauge"]
 namespace: Infragistics.Controls.Charts
+_language: ja
 ---
 # {ProductName} 変更ログ
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
+
+## **{PackageVerChanges-23-2-MAR}**
+
+### {PackageGrids}
+
+- 新しい [`HierarchicalGrid`](grids/hierarchical-grid/overview.md) コンポーネント
+
+### {PackageGauges}
+
+- `RadialGauge` の新しい `OpticalScalingEnabled` プロパティと `OpticalScalingSize` プロパティ。この新機能は、ゲージのラベル、タイトル、サブタイトルが 100% のオプティカル スケーリングを持つサイズを管理します。この新機能の詳細については、[こちら](radial-gauge.md#オプティカル-スケーリング)を参照してください。
+
+### {PackageCommon}
+
+- 新しい `Textarea` コンポーネント
+- 新しい `ButtonGroup` コンポーネント
+- `DockManager`
+    - 新しい `ProximityDock` プロパティ。有効にすると、ドッキング インジケーターは表示されなくなり、エンド ユーザーは、ドラッグしたペインをターゲット ペインの端に近づけてドラッグすることでドッキングできます
+    - 新しい `ContainedInBoundaries` プロパティ。フローティング ペインを Dock Manager の境界内に保持するかどうかを決定します。デフォルトは **false** です。
+    - 新しい `ShowPaneHeaders` プロパティ。ペインのヘッダーをホバー時にのみ表示するか、常に表示するかを決定します。デフォルトは `always` です。
+- `Input`、`MaskInput`、`DateTimeInput`、`Rating`
+    - `Readonly` は `ReadOnly` に名前が変更されました。
+- `Input`
+    - `Maxlength` は `MaxLength` に名前が変更されました。
+    - `Minlength` は `MinLength` に名前が変更されました。
+- `Tree`
+    - ノードをクリックすると展開状態が変更されるかどうかを決定する `toggleNodeOnClick` プロパティが追加されました。デフォルトは **false** です。
+- `Rating`
+     - `allowReset` が追加されました。有効にすると、同じ値を選択するとコンポーネントがリセットされます。**動作の変更** - 以前のリリースでは、これが Rating コンポーネントのデフォルトの動作でした。アプリケーションでこの動作を維持する必要がある場合は、必ず `allowReset` を設定してください。
+- `Select`、`Dropdown` 
+    - `selectedItem`、`items`、および `groups` ゲッターが公開されました。
+
+#### 非推奨
+
+- `Form` コンポーネントは非推奨になりました。代わりにネイティブのフォーム要素を使用してください。
+- `size` プロパティと属性は、すべてのコンポーネントで非推奨になりました。代わりに `--ig-size` CSS カスタム プロパティを使用してください。次の例では、Avatar コンポーネントのサイズを小さく設定します:
+    ```css
+    .avatar {
+        --ig-size: var(--ig-size-small);
+    }
+    ```
+- `DateTimeInput`
+    - `MinValue` および `MaxValue` プロパティは非推奨になりました。代わりに `Min` および `Max` を使用してください。
+- `RangeSlider`
+    - `AriaLabelLower` および `AriaLabelUpper` プロパティは非推奨になりました。代わりに `ThumbLabelLower` および `ThumbLabelUpper` を使用してください。
+
+#### 削除済
+
+- デフォルトの属性を隠していた独自の `dir` 属性が削除されました。これは互換性のある変更です。
+- `Slider` - `ariaLabel` シャドウ プロパティ。これは互換性のある変更です。
+- `Checkbox` - `ariaLabelledBy` シャドウ属性。これは互換性のある変更です。
+- `Switch` - `ariaLabelledBy` シャドウ属性。これは互換性のある変更です。
+- `Radio` - `ariaLabelledBy` シャドウ属性。これは互換性のある変更です。
 
 ## **{PackageVerChanges-23-2-JAN}**
 

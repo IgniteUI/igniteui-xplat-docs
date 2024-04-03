@@ -134,7 +134,7 @@
     "exclude": ["Angular"],
     "name": "グリッド",
     "href": "grids/data-grid.md",
-    "status": "NEW",
+    "status": "UPDATED",
     "items": [
       {
         "exclude": ["Angular"],
@@ -343,7 +343,7 @@
         "exclude": ["Angular"],
         "name": "状態の保持",
         "href": "grids/grid/state-persistence.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular"],
@@ -363,202 +363,208 @@
     ]
   },
   {
-    "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+    "exclude": ["Angular"],
     "name": "階層グリッド",
     "href": "grids/hierarchical-grid/overview.md",
-    "status": "",
+    "status": "NEW",
     "items": [
       {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "高度なフィルタリング",
-        "href": "grids/hierarchical-grid/advanced-filtering.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "セルの編集",
-        "href": "grids/hierarchical-grid/cell-editing.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "セルの選択",
-        "href": "grids/hierarchical-grid/cell-selection.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "縮小可能な列グループ",
         "href": "grids/hierarchical-grid/collapsible-column-groups.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "列の非表示",
         "href": "grids/hierarchical-grid/column-hiding.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "列の移動",
         "href": "grids/hierarchical-grid/column-moving.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "列のピン固定",
         "href": "grids/hierarchical-grid/column-pinning.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "列のサイズ変更",
         "href": "grids/hierarchical-grid/column-resizing.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "列の選択",
-        "href": "grids/hierarchical-grid/column-selection.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "列のタイプ",
         "href": "grids/hierarchical-grid/column-types.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "条件付きスタイル設定",
         "href": "grids/hierarchical-grid/conditional-cell-styling.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "表示密度",
         "href": "grids/hierarchical-grid/display-density.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "編集",
         "href": "grids/hierarchical-grid/editing.md",
-        "status": ""
+        "status": "NEW",
+        "items": [
+          {
+            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "name": "セルの編集",
+            "href": "grids/hierarchical-grid/cell-editing.md",
+            "status": "NEW"
+          },
+          {
+            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "name": "行の追加",
+            "href": "grids/hierarchical-grid/row-adding.md",
+            "status": "NEW"
+          },
+          {
+            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "name": "行の編集",
+            "href": "grids/hierarchical-grid/row-editing.md",
+            "status": "NEW"
+          }
+        ]
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
-        "name": "Excel スタイル フィルタリング",
-        "href": "grids/hierarchical-grid/excel-style-filtering.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "フィルタリング",
         "href": "grids/hierarchical-grid/filtering.md",
-        "status": ""
+        "status": "NEW",
+        "items": [
+          {
+            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "name": "高度なフィルタリング",
+            "href": "grids/hierarchical-grid/advanced-filtering.md",
+            "status": "NEW"
+          },
+          {
+            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "name": "Excel スタイル フィルタリング",
+            "href": "grids/hierarchical-grid/excel-style-filtering.md",
+            "status": "NEW"
+          }
+        ]
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "複数列ヘッダー",
         "href": "grids/hierarchical-grid/multi-column-headers.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "複数行レイアウト",
         "href": "grids/hierarchical-grid/multi-row-layout.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "ページング",
         "href": "grids/hierarchical-grid/paging.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "リモート データ操作",
         "href": "grids/hierarchical-grid/remote-data-operations.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "行の操作",
         "href": "grids/hierarchical-grid/row-actions.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "行の追加",
-        "href": "grids/hierarchical-grid/row-adding.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "行のドラッグ",
         "href": "grids/hierarchical-grid/row-drag.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "WebComponents"],
-        "name": "行の編集",
-        "href": "grids/hierarchical-grid/row-editing.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "行のピン固定",
         "href": "grids/hierarchical-grid/row-pinning.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "行の選択",
-        "href": "grids/hierarchical-grid/row-selection.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "選択",
         "href": "grids/hierarchical-grid/selection.md",
-        "status": ""
+        "status": "NEW",
+        "items": [
+          {
+            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "name": "セルの選択",
+            "href": "grids/hierarchical-grid/cell-selection.md",
+            "status": "NEW"
+          },
+          {
+            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "name": "列の選択",
+            "href": "grids/hierarchical-grid/column-selection.md",
+            "status": "NEW"
+          },
+          {
+            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "name": "行の選択",
+            "href": "grids/hierarchical-grid/row-selection.md",
+            "status": "NEW"
+          }
+        ]
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "サイズ設定",
         "href": "grids/hierarchical-grid/sizing.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "ソート",
         "href": "grids/hierarchical-grid/sorting.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "状態の保持",
         "href": "grids/hierarchical-grid/state-persistence.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "集計",
         "href": "grids/hierarchical-grid/summaries.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "仮想化とパフォーマンス",
         "href": "grids/hierarchical-grid/virtualization.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "キーボード ナビゲーション",
         "href": "grids/hierarchical-grid/keyboard-navigation.md",
-        "status": ""
+        "status": "NEW"
       }
     ]
   },
@@ -604,7 +610,7 @@
         "exclude": ["Angular", "React"],
         "name": "高度なフィルタリング",
         "href": "grids/tree-grid/advanced-filtering.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React"],
@@ -625,13 +631,13 @@
         "exclude": ["Angular", "React"],
         "name": "列のタイプ",
         "href": "grids/tree-grid/column-types.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "条件付きスタイル設定",
         "href": "grids/tree-grid/conditional-cell-styling.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React"],
@@ -642,13 +648,13 @@
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "列の非表示",
         "href": "grids/tree-grid/column-hiding.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React"],
         "name": "列の移動",
         "href": "grids/tree-grid/column-moving.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React"],
@@ -669,151 +675,151 @@
         "exclude": ["Angular", "React"],
         "name": "表示密度",
         "href": "grids/tree-grid/display-density.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React"],
         "name": "編集",
         "href": "grids/tree-grid/editing.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React"],
         "name": "Excel へエクスポート",
         "href": "grids/tree-grid/export-excel.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "Excel スタイル フィルタリング",
         "href": "grids/tree-grid/excel-style-filtering.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React"],
         "name": "フィルタリング",
         "href": "grids/tree-grid/filtering.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React"],
         "name": "キーボード ナビゲーション",
         "href": "grids/tree-grid/keyboard-navigation.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React"],
         "name": "複数列ヘッダー",
         "href": "grids/tree-grid/multi-column-headers.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "複数行レイアウト",
         "href": "grids/tree-grid/multi-row-layout.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "ページング",
         "href": "grids/tree-grid/paging.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "リモート データ操作",
         "href": "grids/tree-grid/remote-data-operations.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React"],
         "name": "行の操作",
         "href": "grids/tree-grid/row-actions.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "行の追加",
         "href": "grids/tree-grid/row-adding.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "行のドラッグ",
         "href": "grids/tree-grid/row-drag.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React"],
         "name": "行の編集",
         "href": "grids/tree-grid/row-editing.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React"],
         "name": "行のピン固定",
         "href": "grids/tree-grid/row-pinning.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "行の選択",
         "href": "grids/tree-grid/row-selection.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "検索",
         "href": "grids/tree-grid/search.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "選択",
         "href": "grids/tree-grid/selection.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React"],
         "name": "サイズ設定",
         "href": "grids/tree-grid/sizing.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React"],
         "name": "ソート",
         "href": "grids/tree-grid/sorting.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "状態の保持",
         "href": "grids/tree-grid/state-persistence.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "集計",
         "href": "grids/tree-grid/summaries.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "仮想化とパフォーマンス",
         "href": "grids/tree-grid/virtualization.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React", "Blazor"],
         "name": "ロードオンデマンド",
         "href": "grids/tree-grid/load-on-demand.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Angular", "React"],
         "name": "Live Data / Real-Time",
         "href": "grids/tree-grid/live-data.md",
-        "status": "NEW"
+        "status": ""
       }
     ]
   },
@@ -825,7 +831,8 @@
   {
     "exclude": ["Angular"],
     "name": "ツリー",
-    "href": "grids/tree.md"
+    "href": "grids/tree.md",
+    "status": "UPDATED"
   },
   {
     "exclude": ["Angular", "Blazor", "WebComponents", "React"],
@@ -1223,16 +1230,18 @@
         },
         {
           "name": "チャートのデータ凡例",
-          "href": "charts/features/chart-data-legend.md"
+          "href": "charts/features/chart-data-legend.md",
+          "status": "UPDATED"
         },
         {
           "name": "チャートのデータ ツールチップ",
-          "href": "charts/features/chart-data-tooltip.md"
+          "href": "charts/features/chart-data-tooltip.md",
+          "status": "UPDATED"
         },
         {
           "name": "チャートの強調表示フィルター",
           "href": "charts/features/chart-highlight-filter.md",
-          "status": "NEW"          
+          "status": "UPDATED"
         },
         {
           "name": "チャート強調表示",
@@ -1251,7 +1260,7 @@
         {
           "name": "チャート オーバーレイ",
           "href": "charts/features/chart-overlays.md",
-          "status": "UPDATED"
+          "status": ""
         },
         {
           "name": "チャート パフォーマンス",
@@ -1272,7 +1281,7 @@
         {
           "name": "チャート トレンドライン",
           "href": "charts/features/chart-trendlines.md",
-          "status": "UPDATED"
+          "status": ""
         }
       ]
   },
@@ -1488,7 +1497,7 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "ステッパー",
     "href": "layouts/stepper.md",
     "status": ""
@@ -1582,7 +1591,7 @@
   {
     "name": "ラジアル ゲージ",
     "href": "radial-gauge.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
     "exclude": ["Angular"],
@@ -1741,7 +1750,7 @@
      "href": "notifications/toast.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "ダイアログ",
     "href": "notifications/dialog.md"
   },
