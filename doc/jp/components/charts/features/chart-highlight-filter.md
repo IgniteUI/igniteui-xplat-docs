@@ -25,8 +25,6 @@ _language: ja
 
 強調表示フィルターによって表示されるシリーズの部分は、チャートの凡例レイヤーとツールチップ レイヤーに個別に表示されます。`HighlightedTitleSuffix` を設定することで、ツールチップと凡例に表示されるタイトルを構成できます。これにより、指定した値がシリーズの `Title` の末尾に追加されます。
 
-`DataLegend` または `DataToolTipLayer` を使用すると、強調表示されたシリーズがグループ化されて表示されます。これは、シリーズの `HighlightedValuesDataLegendGroup` プロパティを設定してシリーズを適切に分類することで管理できます。
-
 次の例は、`HighlightedValueMemberPath` を使用した `XamDataChart` コントロール内のデータ強調表示オーバーレイ機能の使用法を示しています。
 
 `sample="/charts/data-chart/chart-highlight-filter", height="500", alt="{Platform} 強調表示フィルターの例"`
