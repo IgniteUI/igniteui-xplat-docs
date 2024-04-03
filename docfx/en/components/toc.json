@@ -507,7 +507,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Selection",
         "href": "grids/hierarchical-grid/selection.md",
         "status": "NEW",
