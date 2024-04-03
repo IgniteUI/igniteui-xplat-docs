@@ -336,7 +336,7 @@ linear プロパティが *true* に設定されている場合、ステッパ�
 
 <div class="divider--half"></div>
 
-<!-- WebComponents -->
+<!-- WebComponents, React -->
 ### Stepper のアニメーション
 
 {Platform} の `Stepper` のアニメーションにより、エンドユーザーは、定義されたステップを操作しているときに美しいユーザー操作体験を得ることができます。使用可能なアニメーション オプションは、ステッパーの向きによって異なります。
@@ -352,7 +352,7 @@ linear プロパティが *true* に設定されている場合、ステッパ�
 `sample="/layouts/stepper/animations", height="600", alt="{Platform} Stepper アニメーションの例"`
 
 <div class="divider--half"></div>
-<!-- end: WebComponents -->
+<!-- end: WebComponents, React -->
 
 ## キーボード ナビゲーション
 
