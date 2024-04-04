@@ -507,7 +507,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Selection",
         "href": "grids/hierarchical-grid/selection.md",
         "status": "NEW",
@@ -572,6 +572,12 @@
         "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Keyboard navigation",
         "href": "grids/hierarchical-grid/keyboard-navigation.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "Load on Demand",
+        "href": "grids/hierarchical-grid/load-on-demand.md",
         "status": "NEW"
       }
     ]
