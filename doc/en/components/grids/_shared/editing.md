@@ -232,15 +232,21 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 ```
 
 <!-- React -->
+<!-- ComponentStart: HierarchicalGrid -->
 ```tsx
 <IgrHierarchicalGrid data={localData} primaryKey="ProductID" sorting={onSorting}>
 </IgrHierarchicalGrid>
 ```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: React -->
+<!-- React -->
+<!-- ComponentStart: HierarchicalGrid -->
 ```tsx
 public onSorting(grid: IgrGridBaseDirective, event: IgrSortingEventArgs) {
     hierarchicalGrid.endEdit(true);
 }
 ```
+<!-- ComponentEnd: HierarchicalGrid -->
 <!-- end: React -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
