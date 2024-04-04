@@ -316,55 +316,6 @@ The drag handle icon can be templated using the grid's `DragIndicatorIconTemplat
 
 To do so, we can use the `DragIndicatorIcon` to pass a template inside of the `{ComponentSelector}`'s body:
 
-<!-- ComponentStart: HierarchicalGrid -->
-
-```tsx
-    function dragIndicatorIconTemplate(ctx: IgrHierarchicalGridEmptyTemplateContext) {
-        return (
-            <>
-                <IgrIcon name="drag_handle" collection="material" />
-            </>
-        );
-    }
-
-    <IgrHierarchicalGrid rowDraggable="true" dragIndicatorIcon={dragIndicatorIconTemplate}>
-    </IgrHierarchicalGrid>
-```
-
-```razor
-<IgHierarchicalbGrid Data="CustomersData" PrimaryKey="ID" RowDraggable="true" DragIndicatorIconTemplate="dragIndicatorIconTemplate" @ref="grid">
-</IgbHierarchicalGrid>
-
-private RenderFragment<IgbHierarchicalGridEmptyTemplateContext> dragIndicatorIconTemplate = (context) =>
-{
-    return @<div>
-        <IgbIcon IconName="drag_handle" Collection="material"></IgbIcon>
-    </div>;
-};
-```
-
-<!-- WebComponents -->
-
-```html
-<{ComponentSelector} row-draggable="true">
-</{ComponentSelector}>
-``
-
-```ts
-constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcHierarchicalGridComponent;
-    grid.dragIndicatorIcon = this.dragIndicatorIconTemplate;
-}
-
-public dragIndicatorIconTemplate = (ctx: IgcHierarchicalGridEmptyTemplateContext) => {
-    return html`<igc-icon name="drag_handle" collection="material"></igc-icon>`;
-}
-```
-
-<!-- end: WebComponents -->
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
 <!-- Angular -->
 ```html
 <{ComponentSelector}>
@@ -740,8 +691,6 @@ export class TreeGridRowReorderComponent {
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-<!-- Angular -->
-
 ```typescript
 export class HGridRowReorderComponent {
     public rowDragStart(args: any): void {
@@ -792,100 +741,6 @@ export class HGridRowReorderComponent {
     }
 }
 ```
-
-<!-- end: Angular -->
-
-<!-- React -->
-```tsx
-    public  webHierarchicalGridReorderRowHandler(sender: IgrHierarchicalGrid, args: IgrRowDragEndEventArgs): void {
-        const ghostElement = args.detail.dragDirective.ghostElement;
-        const dragElementPos = ghostElement.getBoundingClientRect();        
-        const grid = this.hierarchicalGrid;
-        grid.collapseAll();
-        const rows = Array.prototype.slice.call(document.getElementsByTagName("igx-hierarchical-grid-row"));        
-        const currRowIndex = this.getCurrentRowIndex(rows,
-        { x: dragElementPos.x, y: dragElementPos.y });        
-        if (currRowIndex === -1) { return; }
-        // remove the row that was dragged and place it onto its new location
-        grid.deleteRow(args.detail.dragData.key);
-        grid.data.splice(currRowIndex, 0, args.detail.dragData.data);
-    }
- 
-    public getCurrentRowIndex(rowList: any[], cursorPosition: any) {
-        for (const row of rowList) {
-            const rowRect = row.getBoundingClientRect();
-            if (cursorPosition.y > rowRect.top + window.scrollY && cursorPosition.y < rowRect.bottom + window.scrollY &&
-                cursorPosition.x > rowRect.left + window.scrollX && cursorPosition.x < rowRect.right + window.scrollX) {
-                // return the index of the targeted row
-                return parseInt(row.attributes["data-rowindex"].value);
-            }
-        }
-        return -1;
-    }
-```
-<!-- end: React -->
-
-
-```typescript
-public webGridReorderRowHandler(args: CustomEvent<IgcRowDragEndEventArgs>): void {
-    const ghostElement = args.detail.dragDirective.ghostElement;
-    const dragElementPos = ghostElement.getBoundingClientRect();
-    const grid = document.getElementsByTagName("igc-hierarchical-grid")[0] as any;
-    const rows = Array.prototype.slice.call(document.getElementsByTagName("igx-grid-row"));
-    const currRowIndex = this.getCurrentRowIndex(rows,
-    { x: dragElementPos.x, y: dragElementPos.y });
-    if (currRowIndex === -1) { return; }
-    // remove the row that was dragged and place it onto its new location
-    grid.deleteRow(args.detail.dragData.key);
-    grid.data.splice(currRowIndex, 0, args.detail.dragData.data);
-}
-public getCurrentRowIndex(rowList: any[], cursorPosition) {
-    for (const row of rowList) {
-        const rowRect = row.getBoundingClientRect();
-        if (cursorPosition.y > rowRect.top + window.scrollY && cursorPosition.y < rowRect.bottom + window.scrollY &&
-            cursorPosition.x > rowRect.left + window.scrollX && cursorPosition.x < rowRect.right + window.scrollX) {
-            // return the index of the targeted row
-            return parseInt(row.attributes["data-rowindex"].value);
-        }
-    }
-    return -1;
-}
-```
-
-
-<!-- Blazor -->
-```razor
-<IgbHierarchicalGrid Data="SingersData" PrimaryKey="ID" RowDraggable="true" RowDragEndScript="WebGridReorderRowHandler"></IgbHierarchicalGrid >
-
-//In JavaScript
-igRegisterScript("WebGridReorderRowHandler", (args) => {
-    const ghostElement = args.detail.dragDirective.ghostElement;
-    const dragElementPos = ghostElement.getBoundingClientRect();
-    const grid = document.getElementsByTagName("igc-hierarchical-grid")[0];
-    const rows = Array.prototype.slice.call(document.getElementsByTagName("igx-hierarchical-grid-row"));
-    const currRowIndex = this.getCurrentRowIndex(rows,
-    { x: dragElementPos.x, y: dragElementPos.y });
-    if (currRowIndex === -1) { return; }
-    // remove the row that was dragged and place it onto its new location
-    grid.deleteRow(args.detail.dragData.key);
-    grid.data.splice(currRowIndex, 0, args.detail.dragData.data);
-}, false);
- 
-function getCurrentRowIndex(rowList, cursorPosition) {
-    for (const row of rowList) {
-        const rowRect = row.getBoundingClientRect();
-        if (cursorPosition.y > rowRect.top + window.scrollY && cursorPosition.y < rowRect.bottom + window.scrollY &&
-            cursorPosition.x > rowRect.left + window.scrollX && cursorPosition.x < rowRect.right + window.scrollX) {
-            // return the index of the targeted row
-            return parseInt(row.attributes["data-rowindex"].value);
-        }
-    }    
-    return -1;
-}
-```
-<!-- end: Blazor -->
-
-<!-- ComponentEnd: HierarchicalGrid -->
 
 With these few easy steps, you've configured a grid that allows reordering rows via drag/drop! You can see the above code in action in the following demo.
 

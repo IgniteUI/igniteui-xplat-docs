@@ -495,7 +495,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular"],
+        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Row Dragging",
         "href": "grids/hierarchical-grid/row-drag.md",
         "status": "NEW"
