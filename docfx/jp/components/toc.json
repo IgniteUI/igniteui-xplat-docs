@@ -21,7 +21,7 @@
     ]
   },
   {
-    "exclude": ["Blazor"],
+    "exclude": ["Blazor", "Angular"],
     "name": "作業の開始",
     "href": "general-getting-started.md",
     "status": ""
@@ -58,7 +58,7 @@
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
+    "exclude": ["Blazor", "Angular"],
     "name": "ライセンス",
     "href": "general-licensing.md",
     "status": ""
