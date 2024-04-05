@@ -23,9 +23,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerChanges-23-2-APR}**
 
-- `DatePicker` 
-
-    - Bug fix related to clearing/changing values.
+- `Bug Fixes` 
 
 ## **{PackageVerChanges-23-2-MAR}**
 
