@@ -185,9 +185,8 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
 
 <!-- ComponentEnd: TreeGrid -->
 
-<!-- ComponentStart: HierarchicalGrid -->
-
 <!-- Angular -->
+<!-- ComponentStart: HierarchicalGrid -->
 ```html
 <{ComponentSelector} igxPreventDocumentScroll [data]="localdata"
     [autoGenerate]="false" [primaryKey]="'Debut'" [rowEditable]="true">
@@ -225,9 +224,11 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
     </igx-row-island>
 </{ComponentSelector}>
 ```
+<!-- ComponentEnd: HierarchicalGrid -->
 <!-- end: Angular -->
 
 <!-- WebComponents -->
+<!-- ComponentStart: HierarchicalGrid -->
 ```html
 <{ComponentSelector} id="hGrid" auto-generate="false" primary-key="Debut" row-editable="true">
     <igc-column field="Artist" data-type="String"></igc-column>
@@ -264,8 +265,11 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
     </igc-row-island>
 </{ComponentSelector}>
 ```
+<!-- ComponentEnd: HierarchicalGrid -->
 <!-- end: WebComponents -->
 
+<!-- Blazor -->
+<!-- ComponentStart: HierarchicalGrid -->
 ```razor
 <{ComponentSelector} AutoGenerate="false" Id="hGrid" PrimaryKey="Debut" RowEditable="true">
     <IgbColumn Field="Artist" Header="Artist" DataType="GridColumnDataType.String"></IgbColumn>
@@ -302,8 +306,11 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
     </IgbRowIsland>
 </{ComponentSelector}>
 ```
-<!-- React -->
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: Blazor -->
 
+<!-- React -->
+<!-- ComponentStart: HierarchicalGrid -->
 ```tsx
 <{ComponentSelector}
    autoGenerate="false"
@@ -439,10 +446,8 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
    </IgrRowIsland>
 </{ComponentSelector}>
 ```
-
-<!-- end: React -->
-
 <!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: React -->
 
 > **Note**:
 > Setting primary key is mandatory for row adding operations.
@@ -598,6 +603,7 @@ After a new row is added through the row adding UI, its position and/or visibili
 Customizing the text of the row adding overlay is possible using the `RowAddTextDirective`.
 
 <!-- Angular -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <{ComponentSelector} [data]="data" [primaryKey]="'ProductID'" [autoGenerate]="false" [rowEditable]="true">
     <ng-template igxRowAddText>
@@ -605,24 +611,41 @@ Customizing the text of the row adding overlay is possible using the `RowAddText
     </ng-template>
 </{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Angular -->
 
 <!-- WebComponents -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```ts
 this.grid.rowAddTextTemplate = (ctx: IgcGridEmptyTemplateContext) => {
     return html`Adding Row`;
 }
 ```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: WebComponents -->
 
 <!-- React -->
+<!-- ComponentStart: Grid -->
 ```tsx
 gridRef.current.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
     return ('Adding Row');
 }
-```
+```            
+<!-- ComponentEnd: Grid -->
 <!-- end: React -->
 
+<!-- React -->
+<!-- ComponentStart: HierarchicalGrid -->
+```tsx
+gridRef.current.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
+    return ('Adding Row');
+}
+```            
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: React -->
+
+<!-- Blazor -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
 <{ComponentSelector} Data="data" PrimaryKey="ProductID" AutoGenerate="false" RowEditable="true" RowAddTextTemplate="addTextTemplate">
 </{ComponentSelector}>
@@ -633,7 +656,9 @@ gridRef.current.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
         return @<span>Adding Row</span>;
     };
 }
-```
+```                 
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: Blazor -->
 
 <!-- Angular -->
 ### Customizing Buttons
