@@ -93,7 +93,7 @@ If you want to disable cell selection you can just set `CellSelection` to **none
 Below are the methods that you can use in order to select ranges, clear selection or get selected cells data.
 
 
-<!-- Angular, WebComponents, React -->
+<!-- Angular, WebComponents, React, Blazor -->
 
 ### Select range
 
@@ -111,7 +111,29 @@ const range = { rowStart: 2, rowEnd: 2, columnStart: 1, columnEnd: 1 };
 gridRef.current.selectRange(range);
 ```
 
-<!-- end: Angular, WebComponents, React -->
+<!-- Blazor -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
+```razor
+<{ComponentSelector} @ref=grid  CellSelection="GridSelectionMode.Multiple" AutoGenerate=true></<{ComponentSelector}>
+
+@code {
+    private {ComponentSelector} grid;
+
+    private async void SetSelection()
+    {        
+        IgbGridSelectionRange selectionRange = new IgbGridSelectionRange();
+        selectionRange.ColumnStart = 1;
+        selectionRange.ColumnEnd = 1;
+        selectionRange.RowStart = 2;
+        selectionRange.RowEnd = 2;
+
+        this.grid.SelectRange(new IgbGridSelectionRange[] {});
+    }
+}
+```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: Blazor -->
+<!-- end: Angular, WebComponents, React, Blazor -->
 
 ### Clear cell selection
 
@@ -144,10 +166,10 @@ gridRef.current.clearCellSelection();
 `GetSelectedData` will return array of the selected data in Dictionary format. Examples below:
 
 ```razor
-<IgbGrid @ref=grid  CellSelection="GridSelectionMode.Multiple" AutoGenerate=true></IgbGrid>
+<{ComponentSelector} @ref=grid  CellSelection="GridSelectionMode.Multiple" AutoGenerate=true></<{ComponentSelector}>
 
 @code {
-    private IgbGrid grid;
+    private {ComponentSelector} grid;
 
     private async void GetSelectedData()
     {
