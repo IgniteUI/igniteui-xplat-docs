@@ -11,6 +11,12 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerChanges-23-2-MAR}**
 
+### {PackageCharts}
+
+- `XamRadialChart` 
+    - New Label Mode
+        The `CategoryAngleAxis` for the now exposes a `LabelMode` property that allows you to further configure the location of the labels. This allows you to toggle between the default mode by selecting the `Center` enum, or use the new mode, `ClosestPoint`, which will bring the labels closer to the circular plot area.
+        
 ### {PackageGauges}
 
 - `XamRadialGauge`
