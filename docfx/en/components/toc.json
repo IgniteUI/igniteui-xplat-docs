@@ -445,6 +445,12 @@
         ]
       },
       {
+        "exclude": ["Angular"],
+        "name": "Export to Excel",
+        "href": "grids/hierarchical-grid/export-excel.md",
+        "status": "NEW"
+      },
+      {
         "exclude": ["Angular", "Blazor", "React", "WebComponents"],
         "name": "Filtering",
         "href": "grids/hierarchical-grid/filtering.md",
