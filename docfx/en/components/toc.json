@@ -495,7 +495,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Row Actions",
         "href": "grids/hierarchical-grid/row-actions.md",
         "status": "NEW"
