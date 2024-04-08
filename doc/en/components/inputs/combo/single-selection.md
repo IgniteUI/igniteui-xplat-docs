@@ -9,7 +9,7 @@ mentionedTypes: ['Combo', 'Single Selection Combo', 'ComboItem', 'ComboHeader', 
 
 The {Platform} `ComboBox` supports single-selection mode and quick filtering of the list of items via the main input prompt. Users can quickly type in the item they are looking for and be presented with a list of options. Upon pressing the enter key, the first highlighted match will be selected.
 
-## {Platform} Single Selectoin Example
+## {Platform} Single Selection Example
 
 To enable single-selection and quick filtering, set the `SingleSelect` property on the `ComboBox` component. The user experience and keyboard navigation will mostly stay the same, but instead of having to type in your search query into a special filtering box above the list of options, the main input box will be used.
 
