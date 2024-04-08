@@ -471,7 +471,7 @@
         ]
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Multi-Column Headers",
         "href": "grids/hierarchical-grid/multi-column-headers.md",
         "status": "NEW"
