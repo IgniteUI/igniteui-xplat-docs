@@ -21,7 +21,7 @@
     ]
   },
   {
-    "exclude": ["Blazor"],
+    "exclude": ["Blazor", "Angular"],
     "name": "Getting Started",
     "href": "general-getting-started.md",
     "status": ""
@@ -58,7 +58,7 @@
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
+    "exclude": ["Blazor", "Angular"],
     "name": "Licensing",
     "href": "general-licensing.md",
     "status": ""
@@ -419,7 +419,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Editing",
         "href": "grids/hierarchical-grid/editing.md",
         "status": "NEW",
@@ -437,7 +437,7 @@
             "status": "NEW"
           },
           {
-            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "exclude": ["Angular"],
             "name": "Row Editing",
             "href": "grids/hierarchical-grid/row-editing.md",
             "status": "NEW"
