@@ -812,10 +812,10 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "Virtualization and performance",
         "href": "grids/tree-grid/virtualization.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "Blazor"],
