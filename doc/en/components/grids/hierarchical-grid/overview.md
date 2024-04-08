@@ -20,7 +20,7 @@ In this {Platform} grid example you can see how users can visualize hierarchical
 
 ### Dependencies
 
-To get started with the {Platform} hierarchical grid, first you need to install the {ProductName} package.
+To get started with the {Platform} hierarchical grid, first you need to install the {ProductName} <!-- React, WebComponents -->grids<!-- end: React, WebComponents --> package.
 
 <!-- Blazor -->
 
@@ -45,13 +45,8 @@ Afterwards, you may start implementing the control by adding the following names
 
 <!-- Angular, React, WebComponents -->
 
-When installing the {Platform} hierarchical grid package, the core package must also be installed.
-
 ```cmd
-npm install --save {PackageCore}
 npm install --save {PackageGrids}
-npm install --save {PackageInputs}
-npm install --save {PackageLayouts}
 ```
 
 You also need to include the following import to use the grid:

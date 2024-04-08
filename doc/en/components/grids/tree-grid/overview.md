@@ -23,7 +23,7 @@ In this example, you can see how users can manipulate hierarchical or flat data.
 
 ### Dependencies
 
-To get started with the {Platform} tree grid, first you need to install the {ProductName} package.
+To get started with the {Platform} tree grid, first you need to install the {ProductName} <!-- React, WebComponents -->grids<!-- end: React, WebComponents --> package.
 
 <!-- Blazor -->
 
@@ -48,12 +48,8 @@ Afterwards, you may start implementing the control by adding the following names
 
 <!-- Angular, React, WebComponents -->
 
-When installing the {Platform} tree grid package, the core package must also be installed.
-
 ```cmd
-npm install --save {PackageCore}
 npm install --save {PackageGrids}
-npm install --save {PackageInputs}
 ```
 
 <!-- WebComponents -->
