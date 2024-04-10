@@ -686,7 +686,7 @@
         "href": "grids/tree-grid/column-selection.md"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Display Density",
         "href": "grids/tree-grid/display-density.md",
         "status": ""
