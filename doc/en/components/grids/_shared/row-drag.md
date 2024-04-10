@@ -319,7 +319,7 @@ To do so, we can use the `DragIndicatorIcon` to pass a template inside of the `{
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```tsx
-    function dragIndicatorIconTemplate(ctx: IgrHierarchicalGridEmptyTemplateContext) {
+    function dragIndicatorIconTemplate(ctx: IgrGridEmptyTemplateContext) {
         return (
             <>
                 <IgrIcon name="drag_handle" collection="material" />
@@ -335,7 +335,7 @@ To do so, we can use the `DragIndicatorIcon` to pass a template inside of the `{
 <IgHierarchicalbGrid Data="CustomersData" PrimaryKey="ID" RowDraggable="true" DragIndicatorIconTemplate="dragIndicatorIconTemplate" @ref="grid">
 </IgbHierarchicalGrid>
 
-private RenderFragment<IgbHierarchicalGridEmptyTemplateContext> dragIndicatorIconTemplate = (context) =>
+private RenderFragment<IgbGridEmptyTemplateContext> dragIndicatorIconTemplate = (context) =>
 {
     return @<div>
         <IgbIcon IconName="drag_handle" Collection="material"></IgbIcon>
@@ -346,17 +346,17 @@ private RenderFragment<IgbHierarchicalGridEmptyTemplateContext> dragIndicatorIco
 <!-- WebComponents -->
 
 ```html
-<{ComponentSelector} row-draggable="true">
+<{ComponentSelector} row-draggable="true" id="grid">
 </{ComponentSelector}>
 ``
 
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcHierarchicalGridComponent;
-    grid.dragIndicatorIcon = this.dragIndicatorIconTemplate;
+    grid.dragIndicatorIconTemplate = this.dragIndicatorIconTemplate;
 }
 
-public dragIndicatorIconTemplate = (ctx: IgcHierarchicalGridEmptyTemplateContext) => {
+public dragIndicatorIconTemplate = (ctx: IgcGridEmptyTemplateContext) => {
     return html`<igc-icon name="drag_handle" collection="material"></igc-icon>`;
 }
 ```
