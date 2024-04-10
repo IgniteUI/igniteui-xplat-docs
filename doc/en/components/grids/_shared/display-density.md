@@ -49,7 +49,6 @@ As you can see in the demo above, the `{ComponentName}` provides three density o
 </{ComponentSelector}>
 ```
 
-
 or
 
 <!-- WebComponents -->
@@ -84,6 +83,7 @@ Let's now continue with our sample and see in action how the `DisplayDensity` is
 </div>
 ```
 
+<!-- ComponentStart: Grid -->
 ```razor
 <div class="options vertical">
     <IgbPropertyEditorPanel
@@ -132,6 +132,7 @@ Let's now continue with our sample and see in action how the `DisplayDensity` is
     </IgrPropertyEditorPropertyDescription>
 </IgrPropertyEditorPanel>
 ```
+<!-- ComponentEnd: Grid -->
 
 ```typescript
 @ViewChild(IgxButtonGroupComponent) public buttonGroup: IgxButtonGroupComponent;
@@ -158,6 +159,57 @@ public ngOnInit() {
     ];
 }
 ```
+
+<!-- ComponentStart: HierarchicalGrid -->
+```razor
+<div class="options vertical">
+    <IgbPropertyEditorPanel
+    DescriptionType="WebHierarchicalGrid"
+    IsHorizontal="true"
+    IsWrappingEnabled="true"
+    Name="PropertyEditor"
+    @ref="propertyEditor">
+        <IgbPropertyEditorPropertyDescription
+        PropertyPath="DisplayDensity"
+        Name="DisplayDensityEditor"
+        @ref="displayDensityEditor">
+        </IgbPropertyEditorPropertyDescription>
+    </IgbPropertyEditorPanel>
+</div>
+```
+
+```html
+<div class="density-chooser">
+    <igc-property-editor-panel
+    description-type="WebHierarchicalGrid"
+    is-horizontal="true"
+    is-wrapping-enabled="true"
+    name="PropertyEditor"
+    id="propertyEditor">
+        <igc-property-editor-property-description
+        property-path="DisplayDensity"
+        name="DisplayDensityEditor"
+        id="displayDensityEditor">
+        </igc-property-editor-property-description>
+    </igc-property-editor-panel>
+</div>
+```
+
+```tsx
+<IgrPropertyEditorPanel
+    ref={propertyEditorRef}
+    componentRenderer={renderer}
+    target={grid}
+    descriptionType="WebHierarchicalGrid"
+    isHorizontal="true"
+    isWrappingEnabled="true">
+    <IgrPropertyEditorPropertyDescription
+        propertyPath="DisplayDensity"
+        name="DisplayDensityEditor">
+    </IgrPropertyEditorPropertyDescription>
+</IgrPropertyEditorPanel>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
 
 Now we can add the markup.
 
@@ -893,7 +945,9 @@ AllowFiltering="true">
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 Finally, let's provide the necessary logic in order to actually apply the density:
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
 <!-- Angular -->
 ```typescript
