@@ -113,7 +113,7 @@ public onResize(event) {
 ```
 
 ```tsx
-function onResize(grid: IgrGridBaseDirective, event: IgrColumnMovingEventArgs) {
+function onResize(grid: IgrGridBaseDirective, event: IgrColumnResizeEventArgs) {
   IgrColumn col = event.detail.column;
   string pWidth = event.detail.prevWidth;
   string nWidth = event.detail.newWidth;
@@ -151,15 +151,26 @@ constructor() {
     treeGrid.data = this.data;
     treeGrid.columnResized = this.onResize;
 }
-```
-<!-- end: WebComponents -->
 
-```typescript
 public onResize(event) {
     this.col = event.column;
     this.pWidth = event.prevWidth;
     this.nWidth = event.newWidth;
 }
+```
+<!-- end: WebComponents -->
+
+```tsx
+function onResize(grid: IgrGridBaseDirective, event: IgrColumnResizeEventArgs) {
+  IgrColumn col = event.detail.column;
+  string pWidth = event.detail.prevWidth;
+  string nWidth = event.detail.newWidth;
+}
+
+<{ComponentSelector} data={data} autoGenerate="false" primaryKey="ID" foreignKey="ParentID" columnResized={onResize}>
+    <IgrColumn field="Title" width="100px" resizable="true"></IgrColumn>
+    <IgrColumn field="HireDate" width="100px" resizable="true"></IgrColumn>
+</{ComponentSelector}>
 ```
 
 ```razor
@@ -214,7 +225,7 @@ public onResize(event) {
 <!-- end: WebComponents -->
 
 ```tsx
-function onResize(grid: IgrGridBaseDirective, event: IgrColumnMovingEventArgs) {
+function onResize(grid: IgrGridBaseDirective, event: IgrColumnResizeEventArgs) {
   IgrColumn col = event.detail.column;
   string pWidth = event.detail.prevWidth;
   string nWidth = event.detail.newWidth;
@@ -307,6 +318,14 @@ This means that the following configuration is possible:
     <igc-column field="HireDate" resizable="true" width="100px"></igc-column>
     <igc-column field="Age" data-type="Number" resizable="true"></igc-column>
 </igc-tree-grid>
+```
+
+```tsx
+<{ComponentSelector} data={data} autoGenerate="false" primaryKey="ID" foreignKey="ParentID" columnResized={onResize}>
+    <IgrColumn field="Title" resizable="true" width="10%"></IgrColumn>
+    <IgrColumn field="HireDate" resizable="true" width="100px"></IgrColumn>
+    <IgrColumn field="Age" dataType="number" resizable="true"></IgrColumn>
+</{ComponentSelector}>
 ```
 
 <!-- ComponentEnd: TreeGrid -->
@@ -527,8 +546,8 @@ constructor() {
 ```
 
 ```tsx
-    const column = grid.getColumnByName('ID');
-    column.autosize();
+const column = grid.getColumnByName('ID');
+column.autosize();
 ```
 
 ```razor
@@ -750,7 +769,6 @@ Then set the related CSS property for that class:
 
 ## Additional Resources
 
-<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -759,7 +777,6 @@ Then set the related CSS property for that class:
 * [Column Moving](column-moving.md)
 * [Column Pinning](column-pinning.md)
 * [Selection](selection.md)
-<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 
