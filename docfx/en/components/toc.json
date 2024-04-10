@@ -563,7 +563,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Virtualization and performance",
         "href": "grids/hierarchical-grid/virtualization.md",
         "status": "NEW"
