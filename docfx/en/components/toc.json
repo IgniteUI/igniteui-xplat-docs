@@ -800,7 +800,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Sorting",
         "href": "grids/tree-grid/sorting.md",
         "status": ""
