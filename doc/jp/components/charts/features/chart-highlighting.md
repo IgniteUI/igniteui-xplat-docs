@@ -7,17 +7,11 @@ namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 
-# {Platform} チャート強調表示
-
-すべての {Platform} チャートは、エンド ユーザーがプロット領域に描画されたデータ項目の上にマウス カーソルを置いたときに、線、列、マーカーなどのビジュアルの強調表示をサポートします。強調表示は、`CategoryChart`、`FinancialChart`、および `XamDataChart` コントロールによってサポートされており、強調表示機能を使用するための同じ API を備えています。
-
 ## {Platform} チャート強調表示の例
 
-以下の例は、{Platform} チャートで使用できるさまざまな強調表示オプションを示しています。チェックボックスをクリックして強調表示タイプを有効にします。
+以下の例は、{Platform} チャートで使用できるさまざまな強調表示オプションを示しています。
 
-`sample="/charts/category-chart/column-chart-with-highlighting", height="500", alt="{Platform} チャート強調表示の例"`
-
-
+`sample="/charts/category-chart/annotations-highlighting", height="500", alt="{Platform} チャート強調表示の例"`
 
 <div class="divider--half"></div>
 
@@ -25,9 +19,21 @@ _language: ja
 
 すべての {Platform} チャートは、さまざまな強調表示オプションをサポートしています。`HighlightingMode` は、プロット領域に描画されたシリーズ/データ項目にマウスを合わせたときに明るくまたはフェードするように設定できます。`HighlightingBehavior` は、強調表示の効果をトリガーするために、直接または最も近いデータ項目に設定できます。強調表示のモードと動作は、`CategoryChart`、`FinancialChart`、および `XamDataChart` コントロールでサポートされており、強調表示機能を使用するための同じ API を備えています。
 
+以下の例は、`HighlightingMode` {Platform} チャートを示しています。
+
+`sample="/charts/category-chart/highlighting-mode", height="500", alt="{Platform} 強調表示モードの例"`
+
+以下の例は、`HighlightingBehavior` {Platform} チャートを示しています。
+
+`sample="/charts/category-chart/highlighting-behavior", height="500", alt="{Platform} 強調表示モードの例"`
+
 # {Platform} チャート凡例の強調表示
 
 すべての {Platform} チャートは、凡例の強調表示をサポートしています。`LegendHighlightingMode` を有効にすると、マウスが凡例マーカー項目にカーソルを合わせると、描画されたシリーズがプロット領域で強調表示されます。凡例の強調表示は、`CategoryChart`、`FinancialChart`、および `XamDataChart` コントロールでサポートされており、強調表示機能を使用するための同じ API を備えています。
+
+以下の例は、凡例シリーズ強調表示の {Platform} チャートを示しています。
+
+`sample="/charts/category-chart/legend-highlighting", height="500", alt="{Platform} 強調表示モードの例"`
 
 ## 強調表示レイヤー
 
@@ -38,6 +44,11 @@ _language: ja
 2. 項目ハイライトは、その位置に縞模様の図形を描画したりマーカーを描画したりすることでシリーズの項目を強調表示します。これは、`IsItemHighlightingEnabled` プロパティを true に設定することで有効になります。
 
 3. カテゴリ ハイライトはすべてのカテゴリ軸を対象にします。カーソル位置に最も近い軸領域を照らす図形を描画します。これは、`IsCategoryHighlightingEnabled` プロパティを true に設定することで有効になります。
+
+以下の例は、{Platform} チャートで使用できるさまざまな強調表示レイヤーを示しています。
+
+`sample="/charts/category-chart/column-chart-with-highlighting", height="500", alt="{Platform} 強調表示の例"`
+
 
 ## その他のリソース
 

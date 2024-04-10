@@ -11,9 +11,9 @@ _language: ja
 
 ## {Platform} ステッパーの例
 
-次の {ProductName} ステッパーの例は、動作中のコンポーネントを示しています。これは、エンド ユーザーがクレジット カードの資格情報を変更するために通過しなければならないプロセスを、いくつかの連続したステップに従って視覚化します。
+次の {ProductName} ステッパーの例は、動作中のコンポーネントを示しています。これは、エンドユーザーが注文の詳細を構成するために通過しなければならないプロセスを、いくつかの連続したステップに従って視覚化します。
 
-`sample="/layouts/stepper/overview", height="725", alt="{Platform} ステッパーの例"`
+`sample="/layouts/stepper/linear", height="430", alt="{Platform} リニア ステッパーの例"`
 
 <div class="divider--half"></div>
 
@@ -38,6 +38,24 @@ defineComponents(IgcStepperComponent);
 {ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`Stepper` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrStepperModule, IgrStepper, IgrStep } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrStepperModule.register();
+```
+
+<!-- end: React -->
 ```razor
 // in Program.cs file
 
@@ -59,7 +77,7 @@ builder.Services.AddIgniteUIBlazor(
 これで、{Platform} `Stepper` とそのパネルの基本構成から始めることができます。
 
 ## {Platform} ステッパーの使用方法
-`Step` は、`Stepper` に属するすべてのステップの表現です。ステップは `Invalid`、`Active`、`Optional`、`Disabled`、`Complete` プロパティを提供し、ビジネス要件に応じてステップの状態を構成できます。
+`Step` は、`Stepper` に属するすべてのステップの表現です。ステップは `Step.Invalid`、`Step.Active`、`Step.Optional`、`Step.Disabled`、`Step.Complete` プロパティを提供し、ビジネス要件に応じてステップの状態を構成できます。
 
 ### {Platform} ステッパーの宣言
 ステップは、以下の方法のいずれかを使用して宣言できます。
@@ -90,6 +108,16 @@ builder.Services.AddIgniteUIBlazor(
 </IgbStepper>
 ```
 
+```tsx
+<IgrStepper>
+    {this.StepsData.map(item => 
+        <IgrStep key={item.title} disabled={item.disabled}>
+            <p slot="title">{item.title}</p>
+        </IgrStep>
+    }
+</IgrStepper>
+```
+
 - 静的ステップの作成
 
 ```html
@@ -113,6 +141,18 @@ builder.Services.AddIgniteUIBlazor(
     </IgbStep>
 </IgbStepper>
 ```
+
+```tsx
+<IgrStepper>
+    <IgrStep>
+       <p slot="title">Step 1</p>
+    </IgrStep>
+     <IgrStep>
+       <p slot="title">Step 2</p>
+    </IgrStep>
+</IgrStepper>
+```
+
 各ステップで、`Indicator`、`Title`、および `Subtitle` スロットを使用してインジケーター、タイトル、およびサブタイトルを構成できます。
 
 > [!Note]
@@ -144,6 +184,21 @@ builder.Services.AddIgniteUIBlazor(
     </IgbStep>
 </IgbStepper>
 ```
+
+```tsx
+<IgrStepper>
+    <IgrStep>
+        <IgrIcon slot="indicator" name="home" collection="material" />
+        <p slot="title">Home</p>
+        <p slot="subtitle">Home Sub Title</p>
+        <div>
+            Step Content
+            ...
+        </div>
+    </IgrStep>
+</IgrStepper>
+```
+
 <img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 500px" src="../../images/stepper/stepper-step.png"/>
 
 ### {Platform} ステッパーの向きの変更
@@ -168,23 +223,6 @@ builder.Services.AddIgniteUIBlazor(
 
 <div class="divider--half"></div>
 
-### Stepper のアニメーション
-
-{Platform} の `Stepper` のアニメーションにより、エンドユーザーは、定義されたステップを操作しているときに美しいユーザー操作体験を得ることができます。使用可能なアニメーション オプションは、ステッパーの向きによって異なります。
-
-ステッパーが水平方向の場合、デフォルトでは `slide` アニメーションを使用するように設定されています。その他に `fade` アニメーションもサポートされます。アニメーションは、`horizontalAnimation` 入力を介して構成されます。
-
-垂直方向のレイアウトでは、アニメーション タイプは `verticalAnimationType` プロパティを使用して定義できます。デフォルトでは、その値は `grow` に設定されており、ユーザーはそれを `fade` に設定することもできます。
-
-両方のアニメーション タイプ入力に `none` を設定すると、ステッパー アニメーションが無効になります。
-
-`Stepper` コンポーネントを使用すると、ステップ間の遷移にかかる時間を設定することもできます。これは、数値を受け取る `animationDuration` プロパティで設定でき、いずれのレイアウト方向でも共通の設定です。デフォルト値は 320ms に設定されています。
-
-`sample="/layouts/stepper/animations", height="600", alt="{Platform} Stepper アニメーションの例"`
-
-
-<div class="divider--half"></div>
-
 ### ステップ状態
 {Platform} `Stepper` は 5 つのステップ状態をサポートし、それぞれがデフォルトで異なるスタイルを適用します。
 - **active** - ステップが現在表示されているかどうかを決定します。設計上、ユーザーが明示的にステップの active 属性を *true* に設定しない場合、最初の有効なステップがアクティブになります。
@@ -197,20 +235,46 @@ builder.Services.AddIgniteUIBlazor(
 
 {Platform} `Stepper` は、`Linear` プロパティを使用してステップ フローを設定できます。デフォルトで、linear は *false* に設定され、ユーザーは `Stepper` で無効にされていないステップを選択できます。
 
+
+```html
+<igc-stepper linear="true">
+    <igc-step>
+       <p slot="title">Step 1</p>
+    </igc-step>
+    <igc-step>
+       <p slot="title">Step 2</p>
+    </igc-step>
+</igc-stepper>
+```
+
+```razor
+<IgbStepper Linear="true">
+    <IgbStep>
+       <p slot="title">Step 1</p>
+    </IgbStep>
+     <IgbStep>
+       <p slot="title">Step 2</p>
+    </IgbStep>
+</IgbStepper>
+```
+
+```tsx
+<IgrStepper linear="true">
+    <IgrStep>
+       <p slot="title">Step 1</p>
+    </IgrStep>
+     <IgrStep>
+       <p slot="title">Step 2</p>
+    </IgrStep>
+</IgrStepper>
+```
+
 linear プロパティが *true* に設定されている場合、ステッパーは次のステップに進む前に現在のオプションではないステップを有効にする必要があります。
 
 現在のオプションではないステップが有効でない場合、現在のステップを検証するまで次のステップに進むことができません。
 
 > [!Note]
 > オプションのステップの有効性は考慮されません。
-
-以下の例は、リニア ステッパーを構成する方法を示しています。
-
-`sample="/layouts/stepper/linear", height="430", alt="{Platform} リニア ステッパーの例"`
-
-
-
-<div class="divider--half"></div>
 
 ### ステップ操作
 
@@ -249,7 +313,7 @@ linear プロパティが *true* に設定されている場合、ステッパ�
 向きが垂直に設定され、タイトルの位置が**定義されていない**場合、タイトルはインジケーターの**後**に表示されます。
 
 > [!Note]
-> **titlePosition** プロパティは、ステッパーの StepType プロパティが *full* に設定されている場合に**のみ**適用できます。
+> **titlePosition** プロパティは、ステッパーの stepType プロパティが *full* に設定されている場合に**のみ**適用できます。
 
 **Indicator (インジケーター)**
 
@@ -270,9 +334,25 @@ linear プロパティが *true* に設定されている場合、ステッパ�
 
 `sample="/layouts/stepper/steptypes", height="300", alt="{Platform} ステップ タイプの例"`
 
+<div class="divider--half"></div>
 
+<!-- WebComponents, React -->
+### Stepper のアニメーション
+
+{Platform} の `Stepper` のアニメーションにより、エンドユーザーは、定義されたステップを操作しているときに美しいユーザー操作体験を得ることができます。使用可能なアニメーション オプションは、ステッパーの向きによって異なります。
+
+ステッパーが水平方向の場合、デフォルトでは `slide` アニメーションを使用するように設定されています。その他に `fade` アニメーションもサポートされます。アニメーションは、`HorizontalAnimation` 入力を介して構成されます。
+
+垂直方向のレイアウトでは、アニメーション タイプは `VerticalAnimation` プロパティを使用して定義できます。デフォルトでは、その値は `grow` に設定されており、ユーザーはそれを `fade` に設定することもできます。
+
+両方のアニメーション タイプ入力に `none` を設定すると、ステッパー アニメーションが無効になります。
+
+`Stepper` コンポーネントを使用すると、ステップ間の遷移にかかる時間を設定することもできます。これは、数値を受け取る `animationDuration` プロパティで設定でき、いずれのレイアウト方向でも共通の設定です。デフォルト値は 320ms に設定されています。
+
+`sample="/layouts/stepper/animations", height="600", alt="{Platform} Stepper アニメーションの例"`
 
 <div class="divider--half"></div>
+<!-- end: WebComponents, React -->
 
 ## キーボード ナビゲーション
 
@@ -297,24 +377,24 @@ linear プロパティが *true* に設定されている場合、ステッパ�
 
 | 部分名 | 説明 |
 | ---------|------------ |
-| `header-container` | ステップのヘッダーとそのセパレーターのラッパー。 |
-| `disabled` | 使用不可な状態を示します。ヘッダー コンテナーに適用されます。 |
-| `complete-start` | 現在のステップの完了状態を示します。ヘッダー コンテナーに適用されます。 |
-| `complete-end` | 前のステップの完了状態を示します。ヘッダー コンテナーに適用されます。 |
-| `optional` | オプションの状態を示します。ヘッダー コンテナーに適用されます。 |
-| `invalid` | オプションの状態を示します。ヘッダー コンテナーに適用されます。 |
-| `top` | タイトルがインジケーターの上にあることを示します。ヘッダー コンテナーに適用されます。 |
-| `bottom` | タイトルがインジケーターの下にあることを示します。ヘッダー コンテナーに適用されます。 |
-| `start` | タイトルがインジケーターの前にあることを示します。ヘッダー コンテナーに適用されます。 |
-| `end` | タイトルがインジケーターの後にあることを示します。ヘッダー コンテナーに適用されます。 |
-| `header` | ステップのインジケーターとテキストのラッパー。 |
-| `indicator` | Tステップのインジケーター。 |
-| `text` | ステップのタイトルとサブタイトルのラッパー。 |
-| `empty` | ステップにタイトルとサブタイトルが提供されていないことを示します。テキストに適用されます。 |
-| `title` | ステップのタイトル。 |
-| `subtitle` | ステップのサブタイトル。 |
-| `body` | ステップのコンテンツのラッパー。 |
-| `content` | ステップのコンテンツ。 |
+| `header-container` | ステップのヘッダーとそのセパレーターのラッパー。|
+| `disabled` | 使用不可な状態を示します。ヘッダー コンテナーに適用されます。|
+| `complete-start` | 現在のステップの完了状態を示します。ヘッダー コンテナーに適用されます。|
+| `complete-end` | 前のステップの完了状態を示します。ヘッダー コンテナーに適用されます。|
+| `optional` | オプションの状態を示します。ヘッダー コンテナーに適用されます。|
+| `invalid` | オプションの状態を示します。ヘッダー コンテナーに適用されます。|
+| `top` | タイトルがインジケーターの上にあることを示します。ヘッダー コンテナーに適用されます。|
+| `bottom` | タイトルがインジケーターの下にあることを示します。ヘッダー コンテナーに適用されます。|
+| `start` | タイトルがインジケーターの前にあることを示します。ヘッダー コンテナーに適用されます。|
+| `end` | タイトルがインジケーターの後にあることを示します。ヘッダー コンテナーに適用されます。|
+| `header` | ステップのインジケーターとテキストのラッパー。|
+| `indicator` | Tステップのインジケーター。|
+| `text` | ステップのタイトルとサブタイトルのラッパー。|
+| `empty` | ステップにタイトルとサブタイトルが提供されていないことを示します。テキストに適用されます。|
+| `title` | ステップのタイトル。|
+| `subtitle` | ステップのサブタイトル。|
+| `body` | ステップのコンテンツのラッパー。|
+| `content` | ステップのコンテンツ。|
 
 これらの CSS パーツを使用して、次のように `Stepper` コンポーネントの外観をカスタマイズできます:
 
