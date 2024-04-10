@@ -794,7 +794,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Sizing",
         "href": "grids/tree-grid/sizing.md",
         "status": ""
