@@ -746,7 +746,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Row Actions",
         "href": "grids/tree-grid/row-actions.md",
         "status": ""
