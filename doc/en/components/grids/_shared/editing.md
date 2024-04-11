@@ -61,14 +61,14 @@ In the `{ComponentName}`, if you set `RowEditable` property to true, and the `Ed
  - For custom templates you can see [Cell Editing topic](cell-editing.md#{PlatformLower}-grid-cell-editing-and-edit-templates-example)
  <!-- ComponentEnd:  Grid -->
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart:  Grid, TreeGrid -->
 All available column data types could be found in the official [Column types topic](column-types.md#default-template).
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd:  Grid, TreeGrid -->
 
 ### Event Arguments and Sequence
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart:  Grid, TreeGrid -->
 The grid exposes a wide array of events that provide greater control over the editing experience. These events are fired during the [**Row Editing**](row-editing.md) and [**Cell Editing**](cell-editing.md) lifecycle - when starting, committing or canceling the editing action.
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd:  Grid, TreeGrid -->
 
  | Event           | Description                                                                                                                                               | Arguments                  | Cancellable |
  | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ----------- |
@@ -110,27 +110,9 @@ Example how to commit new values, if user tries to sort the column while a cell/
 <!-- Angular -->
 
 ```html
-<igx-grid #grid [data]="localData" [primaryKey]="'ProductID'" (sorting)="onSorting($event)">
-</igx-grid>
-```
-
-<!-- end: Angular -->
-
-```html
-<{ComponentSelector} id="grid" primary-key="ProductID" >
+<{ComponentSelector} #grid [data]="localData" [primaryKey]="'ProductID'" (sorting)="onSorting($event)">
 </{ComponentSelector}>
 ```
-
-```ts
-constructor() {
-    var grid = document.getElementById('grid') as {ComponentName}Component;
-    grid.data = this.data;
-    grid.addEventListener("sorting", this.onSorting);
-
-}
-```
-
-<!-- Angular -->
 
 ```typescript
 public onSorting(event: ISortingEventArgs) {
@@ -141,10 +123,14 @@ public onSorting(event: ISortingEventArgs) {
 <!-- end: Angular -->
 
 <!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" primary-key="ProductID" >
+</{ComponentSelector}>
+```
 
 ```typescript
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var grid = this.grid = document.getElementById('grid') as {ComponentName}Component;
     grid.data = this.data;
     grid.addEventListener("sorting", this.onSorting);
 }
@@ -170,14 +156,18 @@ function SortingHandler() {
 igRegisterScript("SortingHandler", SortingHandler, false);
 ```
 
+<!-- React -->
+<!-- ComponentStart: Grid, TreeGrid -->
 ```tsx
 function onSorting(grid: IgrGridBaseDirective, event: IgrSortingEventArgs) {
     grid.endEdit(true);
 }
 
-<IgrGrid data={localData} primaryKey="ProductID" sorting={onSorting}>
-</IgrGrid>
+<{ComponentName} data={localData} primaryKey="ProductID" sorting={onSorting}>
+</{ComponentName}>
 ```
+<!-- end: React -->
+<!-- ComponentEnd: Grid, TreeGrid -->
 
 ## API References
 
