@@ -284,7 +284,7 @@ function disableSummary() {
 ```
 ```ts
 constructor() {
-    var hierarchicalGrid = this.hierarchicalGrid = document.getElementById('hierarchicalGrid') as IgcGridComponent;
+    var hierarchicalGrid = this.hierarchicalGrid = document.getElementById('hierarchicalGrid') as {ComponentName};
     var enableBtn = this.enableBtn = document.getElementById('enableBtn') as HTMLButtonElement;
     var disableBtn = this.disableBtn = document.getElementById('disableBtn') as HTMLButtonElement;
     hierarchicalGrid.data = this.data;
@@ -552,7 +552,7 @@ And now let's add our custom summary to the column `GrammyAwards`. We will achie
 ```
 ```ts
 constructor() {
-    var hierarchicalGrid = this.hierarchicalGrid = document.getElementById('hierarchicalGrid') as IgcGridComponent;
+    var hierarchicalGrid = this.hierarchicalGrid = document.getElementById('hierarchicalGrid') as {ComponentName};
     var grammyAwards = this.grammyAwards = document.getElementById('grammyAwards') as IgcColumnComponent;
     hierarchicalGrid.data = this.data;
     grammyAwards.summaries = this.mySummary;
