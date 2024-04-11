@@ -190,11 +190,11 @@ Also, if you need to change the default expand/collapse indicator, we provide te
 
 ```html
 <igc-column-group id="info" header="Customer Information" collapsible="true">
-    <igc-column field="CustomerName" header="Fullname" data-type="String" visible-when-collapsed="true"></igx-column>
-    <igc-column field="CustomerID" header="Customer ID" data-type="String" visible-when-collapsed="false"></igx-column>
+    <igc-column field="CustomerName" header="Fullname" data-type="String" visible-when-collapsed="true"></igc-column>
+    <igc-column field="CustomerID" header="Customer ID" data-type="String" visible-when-collapsed="false"></igc-column>
     <igc-column-group id="address" header="Customer Address" collapsible="true">
-        <igc-column field="Country" header="Country" data-type="String" sortable="true" visible-when-collapsed="true"></igx-column>
-        <igc-column field="City" header="City" data-type="String" sortable="true" visible-when-collapsed="false"></igx-column>
+        <igc-column field="Country" header="Country" data-type="String" sortable="true" visible-when-collapsed="true"></igc-column>
+        <igc-column field="City" header="City" data-type="String" sortable="true" visible-when-collapsed="false"></igc-column>
     </igc-column-group>
 </igc-column-group>
 ```
@@ -214,12 +214,21 @@ public indTemplate = (ctx: IgcColumnTemplateContext) => {
 ```
 
 ```tsx
-  function collapsibleIndicatorTemplate(e: { dataContext: IgrColumnTemplateContext }) {
+<IgrColumnGroup id="info" header="Customer Information" collapsible="true" collapsibleIndicatorTemplate={this.collapsibleIndicatorTemplate}>
+    <IgrColumn field="CustomerName" header="Fullname" dataType="String" visibleWhenCollapsed="true"></IgrColumn>
+    <IgrColumn field="CustomerID" header="Customer ID" dataType="String" visibleWhenCollapsed="false"></IgrColumn>
+    <IgrColumnGroup id="address" header="Customer Address" collapsible="true">
+        <IgrColumn field="Country" header="Country" dataType="String" sortable="true" visibleWhenCollapsed="true"></IgrColumn>
+        <IgrColumn field="City" header="City" dataType="String" sortable="true" visibleWhenCollapsed="false"></IgrColumn>
+    </IgrColumnGroup>
+</IgrColumnGroup>
+
+function collapsibleIndicatorTemplate(e: { dataContext: IgrColumnTemplateContext }) {
     return (
     <div>
       <IgrIcon iconName={e.dataContext.column.expanded ? 'remove' : 'add'}></IgrIcon>
     </div>)
-  }
+}
 ```
 
 <!-- end: Angular, WebComponents, React -->

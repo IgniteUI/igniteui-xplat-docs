@@ -637,7 +637,7 @@
         "href": "grids/tree-grid/clipboard-interactions.md"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Collapsible Column Groups",
         "href": "grids/tree-grid/collapsible-column-groups.md"
       },
