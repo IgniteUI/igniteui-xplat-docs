@@ -681,7 +681,7 @@
         "href": "grids/tree-grid/column-resizing.md"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Column Selection",
         "href": "grids/tree-grid/column-selection.md"
       },
