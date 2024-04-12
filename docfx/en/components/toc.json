@@ -377,13 +377,13 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Column Hiding",
         "href": "grids/hierarchical-grid/column-hiding.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Column Moving",
         "href": "grids/hierarchical-grid/column-moving.md",
         "status": "NEW"
@@ -395,13 +395,13 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Column Resizing",
         "href": "grids/hierarchical-grid/column-resizing.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Column Types",
         "href": "grids/hierarchical-grid/column-types.md",
         "status": "NEW"
@@ -437,12 +437,18 @@
             "status": "NEW"
           },
           {
-            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "exclude": ["Angular"],
             "name": "Row Editing",
             "href": "grids/hierarchical-grid/row-editing.md",
             "status": "NEW"
           }
         ]
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "Export to Excel",
+        "href": "grids/hierarchical-grid/export-excel.md",
+        "status": "NEW"
       },
       {
         "exclude": ["Angular", "Blazor", "React", "WebComponents"],
@@ -465,7 +471,7 @@
         ]
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Multi-Column Headers",
         "href": "grids/hierarchical-grid/multi-column-headers.md",
         "status": "NEW"
@@ -489,7 +495,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Row Actions",
         "href": "grids/hierarchical-grid/row-actions.md",
         "status": "NEW"
@@ -525,7 +531,7 @@
             "status": "NEW"
           },
           {
-            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "exclude": ["Angular"],
             "name": "Row Selection",
             "href": "grids/hierarchical-grid/row-selection.md",
             "status": "NEW"
@@ -533,13 +539,13 @@
         ]
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Sizing",
         "href": "grids/hierarchical-grid/sizing.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Sorting",
         "href": "grids/hierarchical-grid/sorting.md",
         "status": "NEW"
@@ -551,13 +557,13 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Summaries",
         "href": "grids/hierarchical-grid/summaries.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Virtualization and performance",
         "href": "grids/hierarchical-grid/virtualization.md",
         "status": "NEW"

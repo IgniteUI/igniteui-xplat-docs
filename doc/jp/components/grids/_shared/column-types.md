@@ -68,15 +68,10 @@ public formatOptions = this.options;
 ```
 
 ```ts
-private _formatOptions: any | null = null;
 public get formatOptions(): any {
-    if (this._formatOptions == null)
-    {
-        var columnPipeArgs: any = {};
-        columnPipeArgs.digitsInfo = "1.4-4";
-        this._formatOptions = columnPipeArgs;
-    }
-    return this._formatOptions;
+  return {
+    digitsInfo: "1.4-4"
+  };
 }
 
 constructor() {
@@ -139,16 +134,11 @@ public formatOptions = this.options;
 ```
 
 ```ts
-private _formatDateOptions: any | null = null;
 public get formatDateOptions(): any {
-    if (this._formatDateOptions == null)
-    {
-        var columnPipeArgs: any = {};
-        columnPipeArgs2.format = "long";
-        columnPipeArgs2.timezone = "UTC+0";
-        this._formatDateOptions = columnPipeArgs;
-    }
-    return this._formatDateOptions;
+    return {
+        format: "long",
+        timezone: "UTC+0"
+    };
 }
 
 constructor() {
@@ -287,9 +277,7 @@ const timeFormats = [
 ```
 
 ```tsx
-<IgrGrid>
-    <IgrColumn field="Image" dataType="Image"></IgrColumn>
-</IgrGrid>
+<IgrColumn field="Image" dataType="image"></IgrColumn>
 ```
 
 列に `AutoGenerate` を使用すると、グリッドは最初のデータ レコードの値を分析します。値が文字列型で、画像拡張子 (gif、jpg、jpeg、tiff、png、webp、bmp) で終わる URL のパターンと一致する場合、列は自動的に `dataType === GridColumnDataType.Image` としてマークされ、デフォルトの画像テンプレートが描画されます。
@@ -368,17 +356,12 @@ public formatOptions = this.options;
 ```
 
 ```ts
-private _formatOptions: any | null = null;
-    public get formatOptions(): any {
-        if (this._formatOptions == null)
-        {
-            var columnPipeArgs: any = {};
-            columnPipeArgs.digitsInfo = "1.4-4";
-            columnPipeArgs.display = "symbol-narrow";
-            this._formatOptions = columnPipeArgs;
-        }
-        return this._formatOptions;
-    }
+public get formatOptions(): any {
+    return {
+        digitsInfo: '3.4-4',
+        display: 'symbol-narrow'
+    };
+}
 
 constructor() {
     var column = document.getElementById('column') as IgcColumnComponent;
@@ -405,7 +388,8 @@ formatOptions.display = "symbol-narrow";
 *display - デフォルトの en-US ロケールの場合、USD コードは省略記号 $ または記号 US$ で表すことができます。
 
 <!-- ComponentStart:  Grid -->
-セルの値を編集すると、**通貨記号**がサフィックスまたはプレフィックスとして表示されます。詳細については、公式の[セル編集トピック](cell-editing.md#セル編集と編集テンプレートの例)を参照してください。<!-- ComponentEnd:  Grid -->
+セルの値を編集すると、**通貨記号**がサフィックスまたはプレフィックスとして表示されます。詳細については、公式の[セル編集トピック](cell-editing.md#セル編集と編集テンプレートの例)を参照してください。
+<!-- ComponentEnd:  Grid -->
 
 > 注: 上/下矢印キーを使用する場合、値は digitsInfo - minFractionDigits (小数点以下の最小桁数。デフォルトは 0 です。) に基づいてステップで増減します。
 
@@ -465,16 +449,18 @@ public formatPercentOptions = this.options;
 ```
 
 ```ts
-private _formatPercentOptions: any | null = null;
-    public get formatPercentOptions(): any {
-        if (this._formatPercentOptions == null)
-        {
-            var columnPipeArgs: any = {};
-            columnPipeArgs.digitsInfo = "2.2-3";
-            this._formatPercentOptions = columnPipeArgs;
-        }
-        return this._formatPercentOptions;
-    }
+public get formatPercentOptions(): any {
+    return {
+        /**
+        * Decimal representation options, specified by a string in the following format:
+        * `{minIntegerDigits}`.`{minFractionDigits}`-`{maxFractionDigits}`.
+        * `minIntegerDigits`: The minimum number of integer digits before the decimal point. Default is 1.
+        * `minFractionDigits`: The minimum number of digits after the decimal point. Default is 0.
+        * `maxFractionDigits`: The maximum number of digits after the decimal point. Default is 3.
+        */
+        digitsInfo: '2.2-3'
+    };
+}
 
 constructor() {
     var column = document.getElementById('column') as IgcColumnComponent;
@@ -483,6 +469,13 @@ constructor() {
 ```
 
 ```tsx
+/**
+* Decimal representation options, specified by a string in the following format:
+* `{minIntegerDigits}`.`{minFractionDigits}`-`{maxFractionDigits}`.
+* `minIntegerDigits`: The minimum number of integer digits before the decimal point. Default is 1.
+* `minFractionDigits`: The minimum number of digits after the decimal point. Default is 0.
+* `maxFractionDigits`: The maximum number of digits after the decimal point. Default is 3.
+*/
 const formatOptions = new IgrColumnPipeArgs();
 formatOptions.digitsInfo = "2.2-3";
 
@@ -501,22 +494,23 @@ formatOptions.digitsInfo = "2.2-3";
 カスタム テンプレートと列フォーマッタの定義は、列データ型セットより常に優先されます。
 
 ### カスタム テンプレート
-
+<!-- Angular -->
 ```html
-<igx-grid #grid1 [data]="data | async" [autoGenerate]="false">
+<{ComponentSelector} #grid1 [data]="data | async" [autoGenerate]="false">
     <igx-column [field]="'UnitsInStock'" [dataType]="'currency'" [pipeArgs]="formatOptions" [editable]="true">
         <ng-template igxCellEditor let-value>
             {{ value | currency:'USD':'symbol':'1.0-0'}}
         </ng-template>
     </igx-column>
-</igx-grid>
+</{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```html
-<igc-grid id="grid1" auto-generate="false">
+<{ComponentSelector} id="grid1" auto-generate="false">
     <igc-column id="UnitsInStock" field="UnitsInStock" data-type="currency" editable="true">
     </igc-column>
-</igc-grid>
+</{ComponentSelector}>
 ```
 
 ```ts
@@ -539,9 +533,9 @@ function editCellTemplate(ctx: IgrCellTemplateContext) {
     );
 }
 
-<IgrGrid autoGenerate="false">
+<{ComponentSelector} autoGenerate="false">
     <IgrColumn inlineEditorTemplate={editCellTemplate}></IgrColumn>
-</IgrGrid>
+</{ComponentSelector}>
 ```
 
 ```razor
@@ -560,10 +554,10 @@ function editCellTemplate(ctx: IgrCellTemplateContext) {
 ### 列の書式設定
 
 ```html
-<igc-grid id="grid1" auto-generate="false">
+<{ComponentSelector} id="grid1" auto-generate="false">
     <igc-column id="UnitsInStock" field="UnitsInStock" data-type="currency">
     </igc-column>
-</igc-grid>
+</{ComponentSelector}>
 ```
 
 ```ts
@@ -582,9 +576,9 @@ function formatCurrency(value: number) {
     return `$ ${value.toFixed(0)}`;
 }
 
-<IgrGrid autoGenerate="false">
+<{ComponentSelector} autoGenerate="false">
     <IgrColumn formatter={formatCurrency} field="UnitsInStock"></IgrColumn>
-</IgrGrid>
+</{ComponentSelector}>
 ```
 
 ```razor
