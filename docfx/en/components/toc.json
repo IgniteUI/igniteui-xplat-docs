@@ -698,7 +698,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Export to Excel",
         "href": "grids/tree-grid/export-excel.md",
         "status": ""
