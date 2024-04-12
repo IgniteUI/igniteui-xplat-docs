@@ -59,7 +59,7 @@ The predefined `Actions` and `Title` UI components are added inside the `GridToo
 <IgrGrid>
     <IgrGridToolbar key="toolbar">
         <IgrGridToolbarTitle key="toolbarTitle">
-            Grid Toolbar
+            <span key="toolbarTitleText">Grid Toolbar<span>
         </IgrGridToolbarTitle>
         <IgrGridToolbarActions key="toolbarActions">
             <IgrGridToolbarAdvancedFiltering key="advancedFiltering"></IgrGridToolbarAdvancedFiltering>
@@ -160,7 +160,7 @@ The predefined `Actions` and `Title` UI components are added inside the `GridToo
 <IgrHierarchicalGrid>
     <IgrGridToolbar key="toolbar">
         <IgrGridToolbarTitle key="toolbarTitle">
-            Hierarchical Grid Toolbar
+            <span key="toolbarTitleText">Hierarchical Grid Toolbar<span>
         </IgrGridToolbarTitle>
         <IgrGridToolbarActions key="toolbarActions">
             <IgrGridToolbarAdvancedFiltering key="advancedFiltering"></IgrGridToolbarAdvancedFiltering>
@@ -287,6 +287,7 @@ Of course, each of these UIs can be added independently of each other, or may no
 
 For a comprehensive look over each of the default UI components, continue reading the **Features** section below.
 
+<!-- Angular, WebComponents -->
 <!-- ComponentStart: HierarchicalGrid -->
 ## Toolbar with Child Grids
 
@@ -312,24 +313,16 @@ This will make sure you always have the correct grid instance in the scope of yo
 ```
 <!-- end: Angular -->
 
-<!-- WebComponents, React, Blazor -->
+<!-- WebComponents -->
 Due to certain limitations in how the child grids of an `{ComponentSelector}` are implemented and how DI scope works, to define a toolbar component inside the `{RowIslandSelector}`, use the `ToolbarTemplate` input property. This allows child grids to create their own separate toolbar instances:
-<!-- end: WebComponents, React, Blazor -->
+<!-- end: WebComponents -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- WebComponents -->
 <!-- ComponentStart: HierarchicalGrid -->
-```html
-<igc-hierarchical-grid>
-    ...
-    <igc-row-island id="rowIsland1">
-    </igc-row-island>
-</igc-hierarchical-grid>
-```
-
 ```ts
 constructor() {
-    var rowIsland1 = this.rowIsland1 = document.getElementById('rowIsland1') as IgcRowIslandComponent;
+    var rowIsland1 = document.getElementById('rowIsland1') as IgcRowIslandComponent;
     rowIsland1.toolbarTemplate = this.rowIslandToolbarTemplate;
 }
 
@@ -344,11 +337,17 @@ public rowIslandToolbarTemplate = () => {
     </igc-grid-toolbar>`;
 }
 ```
+
+```html
+<igc-hierarchical-grid>
+    ...
+    <igc-row-island id="rowIsland1">
+    </igc-row-island>
+</igc-hierarchical-grid>
+```
 <!-- ComponentEnd: HierarchicalGrid -->
 <!-- end: WebComponents -->
 
-<!-- Blazor -->
-<!-- ComponentStart: HierarchicalGrid -->
 ```razor
 <IgbHierarchicalGrid>
     ...
@@ -369,11 +368,7 @@ igRegisterScript("RowIslandToolbarTemplate", () => {
     </igc-grid-toolbar>`;
 }, false);
 ```
-<!-- ComponentEnd: HierarchicalGrid -->
-<!-- end: Blazor -->
 
-<!-- React -->
-<!-- ComponentStart: HierarchicalGrid -->
 ```tsx
 function rowIslandToolbarTemplate = () => {
     return (
@@ -394,9 +389,7 @@ function rowIslandToolbarTemplate = () => {
     </IgrRowIsland>
 </IgrHierarchicalGrid>
 ```
-<!-- ComponentEnd: HierarchicalGrid -->
-<!-- end: React -->
-
+<!-- end: Angular, WebComponents -->
 
 ## Features
 
@@ -442,7 +435,9 @@ Users can provide anything from simple text to more involved templates.
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 ```tsx
 <IgrGridToolbar key="toolbar">
-    <IgrGridToolbarTitle key="toolbarTitle">Grid toolbar title</IgrGridToolbarTitle>
+    <IgrGridToolbarTitle key="toolbarTitle">
+        <span key="toolbarTitleText">Grid toolbar title<span>
+    </IgrGridToolbarTitle>
 </IgrGridToolbar>
 ```
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
@@ -959,7 +954,7 @@ igRegisterScript("WebGridToolbarExporting", (evt) => {
 ```
 ```ts
 constructor() {
-    var hierarchicalGrid = this.hierarchicalGrid = document.getElementById('hierarchicalGrid') as IgcHierarchicalGridComponent;
+    var hierarchicalGrid = document.getElementById('hierarchicalGrid') as IgcHierarchicalGridComponent;
     hierarchicalGrid.addEventListener("toolbarExporting", this.configureExport);
 }
 
@@ -1027,7 +1022,7 @@ The sample belows uses has significant amount of data, in order to increase the 
 `sample="/{ComponentSample}/data-exporting-indicator", height="370", alt="{Platform} {ComponentTitle} data exporting indicator"`
 
 
-
+<!-- Angular, WebComponents, Blazor -->
 ## Custom Content
 
 <!-- Angular -->
@@ -1087,12 +1082,14 @@ Here is a sample snippet:
 ```tsx
 <{ComponentSelector}>
     <IgrGridToolbar>
-        <IgrGridToolbarTitle>title</IgrGridToolbarTitle>
+        <IgrGridToolbarTitle key="toolbarTitle">
+            <span key="toolbarTitleText">title<span>
+        </IgrGridToolbarTitle>
         {/*
             Everything between the toolbar tags except the default toolbar components
             will be projected as custom content.
         */}
-        <IgrGridToolbarActions>
+        <IgrGridToolbarActions key="toolbarActions">
         </IgrGridToolbarActions>
     </IgrGridToolbar>
 </{ComponentSelector}>
@@ -1105,7 +1102,7 @@ Here is a sample snippet:
 ```razor
 <{ComponentSelector}>
     <IgbGridToolbar>
-        <IgrGridToolbarTitle>title</IgrGridToolbarTitle>
+        <IgbGridToolbarTitle>title</IgbGridToolbarTitle>
         @*
             Everything between the toolbar tags except the default toolbar components
             will be projected as custom content.
@@ -1122,6 +1119,7 @@ The following sample demonstrates how to add an additional button to the toolbar
 
 `sample="/{ComponentSample}/toolbar-sample-4", height="420", alt="{Platform} {ComponentTitle} toolbar sample 4"`
 
+<!-- end: Angular, WebComponents, Blazor -->
 
 <!-- WebComponents, Blazor, React -->
 
@@ -1276,6 +1274,15 @@ The last step is to **include** the newly created themes.
 <div class="divider"></div>
 
 <!-- end: Angular -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+<!-- React, Blazor -->
+## Known Limitations
+
+> [!Note]
+> Currently, defining a toolbar component inside the {RowIslandSelector} is not supported.
+<!-- end: React, Blazor -->
+<!-- ComponentEnd: HierarchicalGrid -->
 
 ## API References
 
