@@ -525,7 +525,7 @@
             "status": "NEW"
           },
           {
-            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "exclude": ["Angular"],
             "name": "Column Selection",
             "href": "grids/hierarchical-grid/column-selection.md",
             "status": "NEW"
