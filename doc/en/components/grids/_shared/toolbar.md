@@ -18,11 +18,19 @@ The {ProductName} Toolbar in is a container for UI operations in the {Platform} 
 
 The toolbar and the predefined UI components support {Platform} events and expose API for developers.
 
-
+<!-- ComponentStart: Grid -->
 ## {Platform} Toolbar Grid Example
 
+`sample="/{ComponentSample}/toolbar-sample-1", height="420", alt="{Platform} {ComponentTitle} Toolbar Example"`
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+<!-- Angular, WebComponents -->
+## {Platform} Toolbar Grid Example
 
 `sample="/{ComponentSample}/toolbar-sample-1", height="420", alt="{Platform} {ComponentTitle} Toolbar Example"`
+<!-- end: Angular, WebComponents -->
+<!-- ComponentEnd: HierarchicalGrid -->
 
 The predefined `Actions` and `Title` UI components are added inside the `GridToolbar` and this is all needed to have a toolbar providing default interactions with the corresponding Grid features:
 
@@ -401,8 +409,15 @@ These features can be enabled independently from each other by following a patte
 
 Listed below are the main features of the toolbar with example code for each of them.
 
+<!-- ComponentStart: Grid -->
 `sample="/{ComponentSample}/toolbar-sample-2", height="630", alt="{Platform} {ComponentTitle} toolbar sample 2"`
+<!-- ComponentEnd: Grid -->
 
+<!-- ComponentStart: HierarchicalGrid -->
+<!-- Angular, WebComponents -->
+`sample="/{ComponentSample}/toolbar-sample-2", height="630", alt="{Platform} {ComponentTitle} toolbar sample 2"`
+<!-- end: Angular, WebComponents -->
+<!-- ComponentEnd: HierarchicalGrid -->
 
 
 ### Title
