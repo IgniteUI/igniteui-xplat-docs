@@ -330,9 +330,10 @@ To do so, we can use the `DragIndicatorIcon` to pass a template inside of the `{
     <IgrHierarchicalGrid rowDraggable="true" dragIndicatorIcon={dragIndicatorIconTemplate}>
     </IgrHierarchicalGrid>
 ```
-
+<!-- Blazor -->
+<!-- ComponentStart: HierarchicalGrid -->
 ```razor
-<IgHierarchicalbGrid Data="CustomersData" PrimaryKey="ID" RowDraggable="true" DragIndicatorIconTemplate="dragIndicatorIconTemplate" @ref="grid">
+<IgbHierarchicalGrid Data="CustomersData" PrimaryKey="ID" RowDraggable="true" DragIndicatorIconTemplate="dragIndicatorIconTemplate" @ref="grid">
 </IgbHierarchicalGrid>
 
 private RenderFragment<IgbGridEmptyTemplateContext> dragIndicatorIconTemplate = (context) =>
@@ -342,13 +343,15 @@ private RenderFragment<IgbGridEmptyTemplateContext> dragIndicatorIconTemplate = 
     </div>;
 };
 ```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: Blazor -->
 
 <!-- WebComponents -->
 
 ```html
 <{ComponentSelector} row-draggable="true" id="grid">
 </{ComponentSelector}>
-``
+```
 
 ```ts
 constructor() {
