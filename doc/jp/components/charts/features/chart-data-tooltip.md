@@ -72,12 +72,6 @@ _language: ja
 `sample="/charts/financial-chart/data-tooltip", height="450", alt="{Platform} ファイナンシャル チャート データ ツールチップの例"`
 
 
-
-## {Platform} データ チャートのデータ ツールチップのグループ化
-
-`DataLegendGroup` は、すべてのタイプのシリーズで、データ凡例内のシリーズ グループを分類する文字列に設定できます。各グループには、別のシリーズ グループが表示される前に、独自の集計行が表示されます。
-各グループには、別のシリーズ グループが表示される前に、独自の集計行が表示されます。データ ツールチップ レイヤーで `GroupingMode` を 「Grouped」 に設定し、`LabelDisplayMode` を 「Visible」 に設定する必要があります。
-
 ## {Platform} カテゴリ チャート & ファイナンシャル チャートのデータ ツールチップのグループ化と配置
 
 `DataToolTipGroupingMode` プロパティを `Grouped` または `Individual` に設定して、複数のシリーズのコンテンツを 1 つのツールチップにグループ化するか、各シリーズのコンテンツを複数のツールチップに分割することができます。`Grouped` モードでは、`DataToolTipGroupedPositionModeX` プロパティと `DataToolTipGroupedPositionModeY` プロパティを設定することにより、ツールチップが表示される場所をカスタマイズできます。これにより、ツールチップの水平方向と垂直方向の配置を、マウス位置に最も近いシリーズ ポイントに追従させるか、プロット領域の端に固定するかをカスタマイズできます。
@@ -100,35 +94,9 @@ _language: ja
 
 ## {Platform} データ ツールチップの値モード
 
-レイヤーの `DataToolTipValueFormatMode` プロパティを変更することにより、**DataToolTip** 内の値のデフォルトの 10 進表示を通貨表示に変更できます。**DataToolTip** は、`DataToolTipValueFormatCulture` プロパティを使用し、対応するカルチャ タグに設定することにより、表示されている通貨記号のカルチャを変更する機能も公開します。たとえば、次のサンプルは、`DataToolTipValueFormatCulture` が「en-GB」に設定されたチャートを示しています。
+レイヤーの `DataToolTipValueFormatMode` プロパティを変更することにより、**DataToolTip** 内の値のデフォルトの 10 進表示を通貨表示に変更できます。**DataToolTip** は、`DataToolTipValueFormatCulture` プロパティを使用し、対応するカルチャ タグに設定することにより、表示されている通貨記号のカルチャを変更する機能も公開します。たとえば、次のサンプルは、`DataToolTipValueFormatCulture` が 「en-GB」 に設定されたチャートを示しています。
 
 `sample="/charts/financial-chart/data-tooltip-formatting-currency", height="450", alt="{Platform} ファイナンシャル チャート データ ツールチップの通貨の書式設定"`
-
-## {Platform} データ ツールチップのスタイル設定
-
-**DataToolTip** は、各タイプの列をスタイル設定するためのプロパティを提供します。これらの各プロパティ名は、Title、Label、Value、Units で始まり、テキストの色、フォント、およびマージンのスタイルを設定できます。たとえば、これらのそれぞれのテキストの色を設定する場合は、`DataToolTipTitleTextColor`、`DataToolTipLabelTextColor`、`DataToolTipValueTextColor`、および `DataToolTipUnitsTextColor` プロパティを設定します。
-
-次の例は、上記のスタイル設定プロパティの使用法を示しています:
-
-`sample="/charts/financial-chart/data-tooltip-styling-props", height="450", alt="{Platform} ファイナンシャル チャート データ ツールチップのスタイル設定"`
-
-ツールチップのグループ化部分を含むいくつかのプロパティが公開されています。
-
-- `GroupTextMargin`
-- `GroupTextColor`
-- `GroupTextFontSize`
-- `GroupTextFontFamily`
-- `GroupTextFontStyle`
-- `GroupTextFontStretch`
-- `GroupTextFontWeight`
-- `HeaderTextMargin`
-- `HeaderTextColor`  
-- `HeaderTextFontSize`
-- `HeaderTextFontFamily`
-- `HeaderTextFontStyle`
-- `HeaderTextFontStretch` 
-- `HeaderTextFontWeight`
-
 
 ## API リファレンス
 
