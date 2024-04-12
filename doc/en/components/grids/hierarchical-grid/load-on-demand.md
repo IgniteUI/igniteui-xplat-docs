@@ -10,7 +10,7 @@ namespace: Infragistics.Controls
 
 The Ignite UI for {Platform} `HierarchicalGrid` allows fast rendering by requesting the minimum amount of data to be retrieved from the server so that the user can see the result in view and interact with the visible data as quickly as possible. Initially only the root grid’s data is retrieved and rendered, only after the user expands a row containing a child grid, he will receive the data for that particular child grid. This mechanism, also known as Load on Demand, can be easily configured to work with any remote data.
 
-This topic demonstrates how to configure Load on Demand by creating a Remote Service Provider that communicates with an already available remote oData v4 Service. Here's the working demo and later we will go through it step by step and describe the process of creating it.
+This topic demonstrates how to configure Load on Demand by creating a Remote Service Provider. Here's the working demo and later we will go through it step by step and describe the process of creating it.
 
 ## {Platform} Hierarchical Grid Load On Demand Example
 
@@ -22,51 +22,9 @@ First we will prepare our service provider so we will be ready to get the data w
 
 #### Getting basic data
 
-<!-- Angular -->
-We will be communicating with our backend service over HTTP protocol using the XMLHttpRequest interface the browsers provide. In order to achieve this more easily we will use Angular's [`HttpClient`](https://angular.io/api/common/http/HttpClient) module that offers a simplified client HTTP API. That way in order to get our data we will need this simple method in our service:
+In this case, we will use local data, however, the service provider can be easily configured to work with any remote data as well.
 
-```typescript
-public getData(dataState): Observable<any[]> {
-    return this.http.get(this.buildUrl(dataState)).pipe(
-        map(response => response['value']),
-    );
-}
-```
-
-As you can see `this.http` will be a reference to our `HttpCLient` module, and `buildUrl()` will be the method that will generate our url based on the data that we have received. We map our response so we get only the value of our result and return an Observable, since this is executed asynchronously. That way we can later subscribe to it, process it further in our application and pass it to our grid.
-<!-- end: Angular -->
-
-<!-- WebComponents, React -->
-We will be communicating with our backend service over HTTP protocol using the [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/fetch) global function the browsers provide. That way in order to get our data we will need this simple method in our service:
-
-```ts
-function getData(dataState) {
-    return fetch(buildUrl(dataState))
-        .then((result) => result.json())
-        .then((data) => data['value']);
-}
-```
-
-As you can see `buildUrl()` will be the method that will generate our url based on the data that we have received. We map our response so we get only the value of our result and return a Promise, since this is executed asynchronously. That way we can later subscribe to it, process it further in our application and pass it to our grid.
-<!-- end: WebComponents, React -->
-
-<!-- Blazor -->
-We will be communicating with our backend service over HTTP protocol using the [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/fetch) global function the browsers provide. That way in order to get our data we will need this simple method in our service:
-
-```razor
-function getData(dataState) {
-    return fetch(buildUrl(dataState))
-        .then((result) => result.json())
-        .then((data) => data['value']);
-}
-```
-
-As you can see `buildUrl()` will be the method that will generate our url based on the data that we have received. We map our response so we get only the value of our result and return a Promise, since this is executed asynchronously. That way we can later subscribe to it, process it further in our application and pass it to our grid.
-<!-- end: Blazor -->
-
-#### Building our request url
-
-Next we will define how we should build our URL for the GET request. This is where we will be able to get the data for our main grid but also for any child grid inside it. We will use the `Customers` data from [here](https://services.odata.org/V4/Northwind/Northwind.svc/) for our root level and use `Order` and `Order_Details` for the lower levels. The model will differ per application but we will use the following one:
+The model will differ per application but we will use the following one:
 
 <img class="responsive-img" src="../../../images/hgrid-database.jpg" />
 
@@ -82,29 +40,11 @@ export interface IDataState {
     parentKey: string;
     rootLevel: boolean;
 }
-
-//...
-public buildUrl(dataState: IDataState): string {
-    let qS = "";
-    if (dataState) {
-        qS += `${dataState.key}?`;
-
-        if (!dataState.rootLevel) {
-            if (typeof dataState.parentID === "string") {
-                qS += `$filter=${dataState.parentKey} eq '${dataState.parentID}'`;
-            } else {
-                qS += `$filter=${dataState.parentKey} eq ${dataState.parentID}`;
-            }
-        }
-    }
-    return `${this.url}${qS}`;
-}
-//...
 ```
 <!-- end: Angular -->
 
 <!-- WebComponents, React -->
-We will define all this in the `dataState` object. An example:
+We will define all this in a `dataState` object. An example:
 
 ```ts
 const dataState: {
@@ -115,27 +55,11 @@ const dataState: {
 } = {
     //...
 };
-
-function buildUrl(dataState: any) {
-    let qS = "";
-    if (dataState) {
-        qS += `${dataState.key}?`;
-
-        if (!dataState.rootLevel) {
-            if (typeof dataState.parentID === "string") {
-                qS += `$filter=${dataState.parentKey} eq '${dataState.parentID}'`;
-            } else {
-                qS += `$filter=${dataState.parentKey} eq ${dataState.parentID}`;
-            }
-        }
-    }
-    return `${URL}${qS}`;
-}
 ```
 <!-- end: WebComponents, React -->
 
 <!-- Blazor -->
-We will define all this in the `dataState` object. An example:
+We will define all this in a `dataState` object. An example:
 
 ```razor
 const dataState: {
@@ -146,132 +70,53 @@ const dataState: {
 } = {
     //...
 };
-
-function buildUrl(dataState) {
-    let qS = "";
-    if (dataState) {
-        qS += `${dataState.key}?`;
-
-        if (!dataState.rootLevel) {
-            if (typeof dataState.parentID === "string") {
-                qS += `$filter=${dataState.parentKey} eq '${dataState.parentID}'`;
-            } else {
-                qS += `$filter=${dataState.parentKey} eq ${dataState.parentID}`;
-            }
-        }
-    }
-    return `${URL}${qS}`;
-}
 ```
 <!-- end: Blazor -->
 
-#### Result
-
-<!-- Angular -->
-Finally, this is how our `remote-lod.service.ts` would look like:
-
-```typescript
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
-
-export interface IDataState {
-    key: string;
-    parentID: any;
-    parentKey: string;
-    rootLevel: boolean;
-}
-
-@Injectable()
-export class RemoteLoDService {
-    url = `https://services.odata.org/V4/Northwind/Northwind.svc/`;
-
-    constructor(private http: HttpClient) { }
-
-    public getData(dataState: IDataState): Observable<any[]> {
-        return this.http.get(this.buildUrl(dataState)).pipe(
-            map((response) => response['value'])
-        );
-    }
-
-    public buildUrl(dataState: IDataState): string {
-        let qS = "";
-        if (dataState) {
-            qS += `${dataState.key}?`;
-
-            if (!dataState.rootLevel) {
-                if (typeof dataState.parentID === "string") {
-                    qS += `$filter=${dataState.parentKey} eq '${dataState.parentID}'`;
-                } else {
-                    qS += `$filter=${dataState.parentKey} eq ${dataState.parentID}`;
-                }
-            }
-        }
-        return `${this.url}${qS}`;
-    }
-}
-```
-<!-- end: Angular -->
-
 <!-- WebComponents, React -->
-Finally, this is how our remote service would look like:
+That way in order to get our data we will need this simple method in our service:
 
 ```ts
-const URL = `https://services.odata.org/V4/Northwind/Northwind.svc/`;
+export async function getData(dataState: any): Promise<any[]> {
+    const key = dataState.key as "Customers" | "Orders" | "Order_Details";
+    let resultData: any[] = DATA[key];
 
-export function getData(dataState?: any): any {
-    return fetch(buildUrl(dataState))
-        .then((result) => result.json())
-        .then((data) => data["value"]);
-}
+    if (!dataState.rootLevel) {
+        resultData = resultData.filter((record: any) => record[dataState.parentKey] === dataState.parentID);
+    } 
 
-function buildUrl(dataState: any) {
-    let qS = "";
-    if (dataState) {
-        qS += `${dataState.key}?`;
-
-        if (!dataState.rootLevel) {
-            if (typeof dataState.parentID === "string") {
-                qS += `$filter=${dataState.parentKey} eq '${dataState.parentID}'`;
-            } else {
-                qS += `$filter=${dataState.parentKey} eq ${dataState.parentID}`;
-            }
-        }
-    }
-    return `${URL}${qS}`;
+    return new Promise<any[]>((resolve) => {
+        setTimeout(() => {
+            resolve(resultData);
+        }, 1000);
+    });
 }
 ```
+
+As you can see the result data will be generated based on the data state that we have received. This way we will be able to get the data for our main grid but also for any child grid inside it. We return a [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) and simulate a delay using the [`setTimeout()`](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout) global function the browsers provide. That way we can later subscribe to it, process it further in our application and pass it to our grid.
 <!-- end: WebComponents, React -->
 
 <!-- Blazor -->
-Finally, this is how our remote service would look like:
+That way in order to get our data we will need this simple method in our service:
 
 ```razor
-const URL = `https://services.odata.org/V4/Northwind/Northwind.svc/`;
+function getData(dataState) {
+    const key = dataState.key;
+    let resultData = DATA[key];
 
-function getData(dataState): any {
-    return fetch(buildUrl(dataState))
-        .then((result) => result.json())
-        .then((data) => data["value"]);
-}
-
-function buildUrl(dataState) {
-    let qS = "";
-    if (dataState) {
-        qS += `${dataState.key}?`;
-
-        if (!dataState.rootLevel) {
-            if (typeof dataState.parentID === "string") {
-                qS += `$filter=${dataState.parentKey} eq '${dataState.parentID}'`;
-            } else {
-                qS += `$filter=${dataState.parentKey} eq ${dataState.parentID}`;
-            }
-        }
+    if (!dataState.rootLevel) {
+        resultData = resultData.filter((record) => record[dataState.parentKey] === dataState.parentID);
     }
-    return `${URL}${qS}`;
+
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(resultData);
+        }, 1000);
+    });
 }
 ```
+
+As you can see the result data will be generated based on the data state that we have received. This way we will be able to get the data for our main grid but also for any child grid inside it. We return a [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) and simulate a delay using the [`setTimeout()`](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout) global function the browsers provide. That way we can later subscribe to it, process it further in our application and pass it to our grid.
 <!-- end: Blazor -->
 
 ### Hierarchical Grid Setup
