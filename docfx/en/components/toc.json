@@ -425,7 +425,7 @@
         "status": "NEW",
         "items": [
           {
-            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "exclude": ["Angular"],
             "name": "Cell Editing",
             "href": "grids/hierarchical-grid/cell-editing.md",
             "status": "NEW"
