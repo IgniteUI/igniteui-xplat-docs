@@ -106,19 +106,13 @@ You have the ability to change the default decimal display of values within the 
 
 `sample="/charts/financial-chart/data-legend-formatting-currency", height="450", alt="{Platform} Formatting Currency Example"`
 
+The `XamDataLegend` has several events that fire when rendering their corresponding row, even during mouse interactions where the values are updating. These events are listed below with a description of what they are designed to be used for:
 
-
-## {Platform} Data Legend Styling Events
-
-The `XamDataLegend` has three events that fire when rendering their corresponding row. These events are listed below with a description of what they are designed to be used for:
-
-- `StyleHeaderRow`: This event fires once when rendering the header row.
 - `StyleSeriesRow`: This event fires once for each series row, which allows conditional styling of the values of the series.
 - `StyleSeriesColumn`: This event fires once for each series column, which allows conditional styling of the different columns for the series in the chart.
 - `StyleSummaryRow`: This event fires once when rendering the summary row.
 - `StyleSummaryColumn`: This event fires once when rendering the summary column.
 
-Each of the above events exposes a `DataLegendStylingRowEventArgs` parameter as its arguments, which lets you customize each item's text, text color, and the overall visibility of the row. The event arguments also expose event-specific properties. For example, since the `StyleSeriesRow` event fires for each series, the event arguments will return the series index and series title for the row that represents the series.
 
 ## API References
 
