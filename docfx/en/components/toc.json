@@ -425,7 +425,7 @@
         "status": "NEW",
         "items": [
           {
-            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "exclude": ["Angular"],
             "name": "Cell Editing",
             "href": "grids/hierarchical-grid/cell-editing.md",
             "status": "NEW"
@@ -501,7 +501,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Row Dragging",
         "href": "grids/hierarchical-grid/row-drag.md",
         "status": "NEW"
@@ -519,13 +519,13 @@
         "status": "NEW",
         "items": [
           {
-            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "exclude": ["Angular"],
             "name": "Cell Selection",
             "href": "grids/hierarchical-grid/cell-selection.md",
             "status": "NEW"
           },
           {
-            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "exclude": ["Angular"],
             "name": "Column Selection",
             "href": "grids/hierarchical-grid/column-selection.md",
             "status": "NEW"
@@ -557,9 +557,15 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Summaries",
         "href": "grids/hierarchical-grid/summaries.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "Toolbar",
+        "href": "grids/hierarchical-grid/toolbar.md",
         "status": "NEW"
       },
       {
