@@ -413,7 +413,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Display Density",
         "href": "grids/hierarchical-grid/display-density.md",
         "status": "NEW"
