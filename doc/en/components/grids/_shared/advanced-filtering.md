@@ -40,29 +40,51 @@ To enable the advanced filtering, the `AllowAdvancedFiltering` input property sh
 ```
 <!-- end: Angular -->
 
-<!-- WebComponents -->
+<!-- ComponentStart: Grid -->
 ```html
-<{ComponentSelector} [data]="data" [autoGenerate]="true" [allowAdvancedFiltering]="true">
+<igc-grid id="grid" auto-generate="true" allow-advanced-filtering="true">
     <igc-grid-toolbar></igc-grid-toolbar>
-</{ComponentSelector}>
+<igc-grid>
 ```
-<!-- end: WebComponents -->
+```ts
+constructor() {
+    let grid = document.getElementById("grid") as IgcGridComponent;
+    grid.data = this.data
+}
+```
 
-<!-- React -->
-```html
-<{ComponentSelector} data={nwindData} autoGenerate="false" ref={gridRef} allowAdvancedFiltering="true">
+```tsx
+<IgrGrid data={nwindData} autoGenerate="false" ref={gridRef} allowAdvancedFiltering="true">
     <IgrGridToolbar></IgrGridToolbar>
-</{ComponentSelector}>
+</IgrGrid>
 ```
-<!-- end: React -->
 
 ```razor
 <{ComponentSelector} Data=data AutoGenerate="true" AllowAdvancedFiltering="true">
     <IgbGridToolbar></IgbGridToolbar>
 </{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
+```html
+<igc-tree-grid id="treeGrid" auto-generate="true" allow-advanced-filtering="true">
+    <igc-grid-toolbar></igc-grid-toolbar>
+</igc-tree-grid>
+```
+```ts
+constructor() {
+    let treeGrid = document.getElementById("treeGrid") as IgcTreeGridComponent;
+    treeGrid.data = this.data
+}
+```
+
+```tsx
+<IgrTreeGrid data={nwindData} autoGenerate="false" allowAdvancedFiltering="true">
+    <IgrGridToolbar></IgrGridToolbar>
+</IgrTreeGrid>
+```
+
 ```razor
 <IgbTreeGrid Data=data AutoGenerate="true" AllowAdvancedFiltering="true">
     <IgbGridToolbar></IgbGridToolbar>
@@ -70,54 +92,38 @@ To enable the advanced filtering, the `AllowAdvancedFiltering` input property sh
 ```
 <!-- ComponentEnd: TreeGrid -->
 
-<!-- WebComponents -->
+<!-- ComponentStart: HierarchicalGrid -->
 ```html
-<{ComponentSelector} id="grid" auto-generate="true" allow-advanced-filtering="true">
+<igc-hierarchical-grid id="hierarchicalGrid" auto-generate="true" allow-advanced-filtering="true">
     <igc-grid-toolbar></igc-grid-toolbar>
-</{ComponentSelector}>
+</igc-hierarchical-grid>
 ```
 ```ts
 constructor() {
-    let grid = (document.getElementById("grid") as IgcGridComponent);
-    grid.data = this.data
+    let hierarchicalGrid = document.getElementById("hierarchicalGrid") as IgcHierarchicalGridComponent;
+    hierarchicalGrid.data = this.data
 }
 ```
+<!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- ComponentStart: TreeGrid -->
-```html
-<igc-tree-grid id="grid" auto-generate="true" allow-advanced-filtering="true">
-    <igc-grid-toolbar></igc-grid-toolbar>
-</igc-tree-grid>
+<!-- Blazor -->
+<!-- ComponentStart: HierarchicalGrid -->
+```razor
+<IgbHierarchicalGrid Data=data AutoGenerate="true" AllowAdvancedFiltering="true">
+    <IgbGridToolbar></IgbGridToolbar>
+</IgbHierarchicalGrid>
 ```
-
-
-```ts
-constructor() {
-    let grid = document.getElementById("grid") as IgcTreeGridComponent;
-    grid.data = this.data
-}
-```
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- end: WebComponents -->
-<!-- React -->
-```html
-<{ComponentSelector} data={this.nwindData} autoGenerate="false" ref={this.gridRef} allowAdvancedFiltering="true">
-    <IgrGridToolbar>
-        <IgrGridToolbarActions>
-            <IgrGridToolbarAdvancedFilering></IgrGridToolbarAdvancedFilering>
-        </IgrGridToolbarActions>
-    </IgrGridToolbar>
-</{ComponentSelector}>
-```
-<!-- end: React -->
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: Blazor -->
 
 <!-- React -->
+<!-- ComponentStart: HierarchicalGrid -->
 ```tsx
-<{ComponentSelector} data={nwindData} autoGenerate="false" ref={gridRef} allowAdvancedFiltering="true">
+<IgrHierarchicalGrid data={nwindData} autoGenerate="false" allowAdvancedFiltering="true">
     <IgrGridToolbar></IgrGridToolbar>
-</{ComponentSelector}>
+</IgrHierarchicalGrid>
 ```
+<!-- ComponentEnd: HierarchicalGrid -->
 <!-- end: React -->
 
 The advanced filtering generates a `FilteringExpressionsTree` which is stored in the `AdvancedFilteringExpressionsTree` input property. You could use the `AdvancedFilteringExpressionsTree` property to set an initial state of the advanced filtering.
@@ -560,26 +566,21 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
+<!-- WebComponents -->
 ```html
-<igc-grid class="grid"></igc-grid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
+```
+<!-- end: React -->
 
 ```razor
-<IgbGrid class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
-
-
-<!-- ComponentStart: TreeGrid -->
-
-```html
-<igc-tree-grid class="grid"></igc-tree-grid>
-```
-
-```razor
-<IgbTreeGrid class="grid"></IgbTreeGrid>
-```
-
-<!-- ComponentEnd: TreeGrid -->
 
 Then set the related CSS properties to this class:
 
