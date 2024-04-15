@@ -431,7 +431,7 @@
             "status": "NEW"
           },
           {
-            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "exclude": ["Angular"],
             "name": "Row Adding",
             "href": "grids/hierarchical-grid/row-adding.md",
             "status": "NEW"
