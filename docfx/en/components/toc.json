@@ -770,7 +770,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Row Editing",
         "href": "grids/tree-grid/row-editing.md",
         "status": ""
