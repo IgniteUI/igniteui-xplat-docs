@@ -24,7 +24,7 @@ _language: ja
 
 ## **{PackageVerChanges-23-2-APR}**
 
-- `Bug Fixes` 
+- `バグ修正` 
 
 ## **{PackageVerChanges-23-2-MAR}**
 
