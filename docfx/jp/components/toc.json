@@ -429,7 +429,7 @@
             "status": "NEW"
           },
           {
-            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "exclude": ["Angular"],
             "name": "行の追加",
             "href": "grids/hierarchical-grid/row-adding.md",
             "status": "NEW"
