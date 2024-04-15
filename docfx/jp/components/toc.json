@@ -423,7 +423,7 @@
         "status": "NEW",
         "items": [
           {
-            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "exclude": ["Angular"],
             "name": "セルの編集",
             "href": "grids/hierarchical-grid/cell-editing.md",
             "status": "NEW"
@@ -499,7 +499,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "行のドラッグ",
         "href": "grids/hierarchical-grid/row-drag.md",
         "status": "NEW"
@@ -517,13 +517,13 @@
         "status": "NEW",
         "items": [
           {
-            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "exclude": ["Angular"],
             "name": "セルの選択",
             "href": "grids/hierarchical-grid/cell-selection.md",
             "status": "NEW"
           },
           {
-            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "exclude": ["Angular"],
             "name": "列の選択",
             "href": "grids/hierarchical-grid/column-selection.md",
             "status": "NEW"
@@ -555,13 +555,19 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "集計",
         "href": "grids/hierarchical-grid/summaries.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
+        "name": "ツールバー",
+        "href": "grids/hierarchical-grid/toolbar.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular"],
         "name": "仮想化とパフォーマンス",
         "href": "grids/hierarchical-grid/virtualization.md",
         "status": "NEW"
