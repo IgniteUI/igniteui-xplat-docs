@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in React documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "React",
-  "samplesCount": 603,
+  "samplesCount": 602,
   "samplesHost": "https://staging.infragistics.com/react-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -908,9 +908,6 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/overview": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid",
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grids-header"
-    ],
-    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/paste": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/paste-excel"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/row-adding": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/row-adding"
@@ -1877,7 +1874,7 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
     ]
   },
-  "topicsCount": 277,
+  "topicsCount": 276,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-react/react/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -2448,9 +2445,6 @@
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/paging": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/row-paging-basic",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/row-paging-options"
-    ],
-    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/paste-excel": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/paste"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/remote-data-operations": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/infinite-scroll"

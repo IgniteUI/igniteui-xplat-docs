@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in WebComponents documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "WebComponents",
-  "samplesCount": 679,
+  "samplesCount": 678,
   "samplesHost": "https://staging.infragistics.com/webcomponents-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -932,9 +932,6 @@
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/overview": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/data-grid",
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/grids-header"
-    ],
-    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/paste": [
-      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/grid/paste-excel"
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/row-adding": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/grid/row-adding"
@@ -2105,7 +2102,7 @@
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/scheduling/calendar"
     ]
   },
-  "topicsCount": 303,
+  "topicsCount": 301,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -2689,9 +2686,6 @@
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/grid/paging": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/row-paging-basic",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/row-paging-options"
-    ],
-    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/grid/paste-excel": [
-      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/paste"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/grid/remote-data-operations": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/infinite-scroll"
