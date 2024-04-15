@@ -110,7 +110,6 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
     </IgrColumnGroup>
 </{ComponentSelector}>
 ```
-
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -303,7 +302,6 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
     </IgrColumnGroup>
 </{ComponentSelector}>
 ```
-
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
