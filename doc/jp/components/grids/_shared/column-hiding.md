@@ -26,6 +26,7 @@ _language: ja
 
 `{ComponentName}` を作成してからデータをバインドします。列でフィルタリングとソートも有効にします。
 
+<!-- ComponentStart: Grid, TreeGrid -->
 ```html
 <igx-grid #grid id="grid" [data]="data" [autoGenerate]="false" width="100%" height="560px" [allowFiltering]="true">
     <igx-column [field]="'ID'" dataType="string" [sortable]="true" [hidden]="true"></igx-column>
@@ -85,6 +86,53 @@ _language: ja
     <IgrColumn field="Phone" dataType="string" sortable="true"></IgrColumn>
 </IgrGrid>
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```html
+<igx-hierarchical-grid class="hgrid" [data]="localdata" [allowFiltering]="true">
+    <igx-column field="Artist" [sortable]="true" [disableHiding]="true"></igx-column>
+    <igx-column field="Photo"></igx-column>
+    <igx-column field="Debut" [sortable]="true" [hidden]="true"></igx-column>
+    <igx-column field="Grammy Nominations" [sortable]="true" [hidden]="true"></igx-column>
+    <igx-column field="Grammy Awards" [sortable]="true"></igx-column>
+</igx-hierarchical-grid>
+```
+
+```html
+<igc-hierarchical-grid auto-generate="false" primary-key="ID" allow-filtering="true" name="hierarchicalGrid1" id="hierarchicalGrid1">
+    <igc-column field="Artist" header="Artist" data-type="string" sortable="true"></igc-column>
+    <igc-column field="Photo" header="Photo" data-type="image"></igc-column>
+    <igc-column field="Debut" header="Debut" data-type="number" hidden="true"></igc-column>
+    <igc-column field="GrammyNominations" header="Grammy Nominations" data-type="number" sortable="true" hidden="true"></igc-column>
+    <igc-column field="GrammyAwards" header="Grammy Awards" data-type="number" sortable="true"> </igc-column>
+</igc-hierarchical-grid>
+```
+
+```tsx
+<IgrHierarchicalGrid autoGenerate="false" data={this.singersData} primaryKey="ID" allowFiltering="true"ref={this.hierarchicalGrid1Ref}>
+    <IgrColumn field="Artist" header="Artist" dataType="String" sortable="true"></IgrColumn>
+    <IgrColumn field="Photo" header="Photo" dataType="Image"></IgrColumn>
+    <IgrColumn field="Debut" header="Debut" dataType="Number" hidden="true"></IgrColumn>
+    <IgrColumn field="GrammyNominations" header="Grammy Nominations" dataType="Number" sortable="true" hidden="true"></IgrColumn>
+    <IgrColumn field="GrammyAwards" header="Grammy Awards" dataType="Number" sortable="true"></IgrColumn>
+</IgrHierarchicalGrid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- Blazor -->
+<!-- ComponentStart: HierarchicalGrid -->
+```razor
+<{ComponentSelector} AutoGenerate="false" Data="SingersData" PrimaryKey="ID" AllowFiltering="true" Name="hierarchicalGrid1" @ref="hierarchicalGrid1">
+    <IgbColumn Field="Artist" Header="Artist" DataType="GridColumnDataType.String" Sortable="true"></IgbColumn>
+    <IgbColumn Field="Photo" Header="Photo" DataType="GridColumnDataType.Image"></IgbColumn>
+    <IgbColumn Field="Debut" Header="Debut" DataType="GridColumnDataType.Number" Hidden="true"></IgbColumn>
+    <IgbColumn Field="GrammyNominations" Header="Grammy Nominations" DataType="GridColumnDataType.Number" Sortable="true" Hidden="true"></IgbColumn>
+    <IgbColumn Field="GrammyAwards" Header="Grammy Awards" DataType="GridColumnDataType.Number" Sortable="true"></IgbColumn>
+</{ComponentSelector}>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: Blazor -->
 
 ## ツールバーの列非表示 UI
 
@@ -92,6 +140,7 @@ _language: ja
 
 これには、`{ComponentName}` 内に `GridToolbarActions` と `GridToolbarHiding` の両方を設定することだけです。ツールバーにタイトルを追加するには、`GridToolbarTitle` を設定し、{ComponentTitle} のラッパーにカスタム スタイルを設定します。
 
+<!-- ComponentStart: Grid, TreeGrid -->
 ```html
 <igx-grid [data]="localdata">
     <igx-grid-toolbar>
@@ -131,11 +180,70 @@ _language: ja
     </IgrGridToolbar>
 </IgrGrid>
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
+
+<!-- Angular -->
+<!-- ComponentStart: HierarchicalGrid -->
+```html
+<igx-hierarchical-grid [data]="localdata">
+    <igx-grid-toolbar>
+        <igx-grid-toolbar-actions>
+            <igx-grid-toolbar-hiding></igx-grid-toolbar-hiding>
+        </igx-grid-toolbar-actions>
+    </igx-grid-toolbar>
+</igx-hierarchical-grid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: Angular -->
+
+<!-- Web Components -->
+<!-- ComponentStart: HierarchicalGrid -->
+```html
+<igc-hierarchical-grid id="hierarchicalGrid1">
+    <igc-grid-toolbar>
+        <igc-grid-toolbar-actions>
+            <igc-grid-toolbar-hiding></igc-grid-toolbar-hiding>
+        </igc-grid-toolbar-actions>
+    </igc-grid-toolbar>
+</igc-hierarchical-grid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: Web Components -->
+
+<!-- Blazor -->
+<!-- ComponentStart: HierarchicalGrid -->
+```razor
+<{ComponentSelector} Data="SingersData">
+    <IgbGridToolbar>
+        <IgbGridToolbarActions>
+            <IgbGridToolbarHiding>
+            </IgbGridToolbarHiding>
+        </IgbGridToolbarActions>
+    </IgbGridToolbar>
+</{ComponentSelector}>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: Blazor -->
+
+<!-- React -->
+<!-- ComponentStart: HierarchicalGrid -->
+```tsx
+<IgrHierarchicalGrid data={this.singersData}>
+    <IgrGridToolbar>
+        <IgrGridToolbarActions>
+            <IgrGridToolbarHiding></IgrGridToolbarHiding>
+        </IgrGridToolbarActions>
+    </IgrGridToolbar>
+</IgrHierarchicalGrid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: React -->
 
 `{ComponentName}` にはツールバーの列非表示 UI に便利なプロパティがあります。
 
 `Title` プロパティを使用して、ツールバーのドロップダウン ボタンに表示されるタイトルを設定します。
 
+<!-- ComponentStart: Grid, TreeGrid -->
 ```html
 <igx-grid [data]="localdata">
     <igx-grid-toolbar>
@@ -175,6 +283,63 @@ _language: ja
     </IgrGridToolbar>
 </IgrGrid>
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
+
+<!-- Angular -->
+<!-- ComponentStart: HierarchicalGrid -->
+```html
+<igx-hierarchical-grid [data]="localdata">
+    <igx-grid-toolbar>
+        <igx-grid-toolbar-actions>
+            <igx-grid-toolbar-hiding #hidingActionRef title="Column Hiding"></igx-grid-toolbar-hiding>
+        </igx-grid-toolbar-actions>
+    </igx-grid-toolbar>
+</igx-hierarchical-grid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: Angular -->
+
+<!-- Blazor -->
+<!-- ComponentStart: HierarchicalGrid -->
+```razor
+<{ComponentSelector} Data=SingersData>
+    <IgbGridToolbar>
+        <IgbGridToolbarActions>
+            <IgbGridToolbarHiding Title="Column Hiding"></IgbGridToolbarHiding>
+        </IgbGridToolbarActions>
+    </IgbGridToolbar>
+</{ComponentSelector}>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: Blazor -->
+
+<!-- Web Components -->
+<!-- ComponentStart: HierarchicalGrid -->
+```html
+<igc-hierarchical-grid id="hierarchicalGrid1">
+    <igc-grid-toolbar>
+        <igc-grid-toolbar-actions>
+            <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding"></igc-grid-toolbar-hiding>
+        </igc-grid-toolbar-actions>
+    </igc-grid-toolbar>
+</igc-hierarchical-grid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: Web Components -->
+
+<!-- React -->
+<!-- ComponentStart: HierarchicalGrid -->
+```tsx
+<IgrHierarchicalGrid>
+    <IgrGridToolbar key="toolbar">
+        <IgrGridToolbarActions key="toolbarActions">
+            <IgrGridToolbarHiding key="toolbarHiding" title="Column Hiding"></IgrGridToolbarHiding>
+        </IgrGridToolbarActions>
+    </IgrGridToolbar>
+</IgrHierarchicalGrid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: React -->
 
 <!-- Angular -->
 
@@ -332,9 +497,11 @@ export class AppModule {}
 </div>
 ```
 <!-- end: Angular -->
+
 ### 列の非表示の無効化
 列の `DisableHiding` プロパティを true に設定すると、ユーザーが列非表示 UI によって列を非表示にできません。
 
+<!-- ComponentStart: Grid, TreeGrid -->
 ```html
 <igx-grid>
     <igx-column [field]="'ContactName'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
@@ -362,6 +529,53 @@ export class AppModule {}
     <IgbColumn Field="ContactTitle" Sortable=true DisableHiding=true></IgbColumn>
 </{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```html
+<igx-hierarchical-grid>
+    <igx-column [field]="'Artist'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
+    <igx-column [field]="'GrammyAwards'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
+
+    <igx-row-island>
+        <igx-column [field]="'Album'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
+    </igx-row-island>
+</igx-hierarchical-grid>
+```
+
+```html
+<igc-hierarchical-grid>
+    <igc-column field="Artist" data-type="String" sortable="true" disable-hiding="true"></igc-column>
+    <igc-column field="GrammyAwards" data-type="String" sortable="true" disable-hiding="true"></igc-column>
+
+    <igc-row-island>
+        <igc-column field="Album" data-type="String" sortable="true" disable-hiding="true"></igc-column>
+    </igc-row-island>
+</igc-hierarchical-grid>
+```
+
+```tsx
+<IgrHierarchicalGrid>
+    <IgrColumn field="Artist" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
+    <IgrColumn field="GrammyAwards" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
+
+    <IgrRowIsland>
+        <IgrColumn field="Album" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
+    </IgrRowIsland>
+</IgrHierarchicalGrid>
+```
+
+```razor
+<{ComponentSelector}>
+    <IgbColumn Field="Artist" Sortable=true DisableHiding=true></IgbColumn>
+    <IgbColumn Field="GrammyAwards" Sortable=true DisableHiding=true></IgbColumn>
+
+    <IgbRowIsland>
+        <IgbColumn Field="Album" Sortable=true DisableHiding=true></IgbColumn>
+    </IgbRowIsland>
+</{ComponentSelector}>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- Angular -->
 列非表示 UI コンポーネントは以下のようになります。
@@ -519,6 +733,7 @@ $custom-button: button-theme(
 グリッドは、利用可能な [CSS 変数](../theming.md)の一部を設定することでさらにカスタマイズできます。
 これを実現するために、最初にグリッドに割り当てるクラスを使用します。
 
+<!-- ComponentStart: Grid, TreeGrid -->
 ```html
 <{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
@@ -530,9 +745,25 @@ $custom-button: button-theme(
 ```tsx
 <{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```html
+<{ComponentSelector} class="hierarchical-grid"></{ComponentSelector}>
+```
+
+```razor
+<{ComponentSelector} class="hierarchical-grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="hierarchical-grid"></{ComponentSelector}>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
 
 次に、関連するコンポーネントに関連する CSS 変数を設定します。スタイルも `igx-column-actions` にのみ適用するので、グリッドの残りの部分は影響を受けません。
 
+<!-- ComponentStart: Grid, TreeGrid -->
 ```css
 .grid  igx-column-actions {
     /* Main Column Actions styles */
@@ -564,6 +795,41 @@ $custom-button: button-theme(
     --ig-button-disabled-foreground: #ffcd0f;
 }
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```css
+#hierarchicalGrid {
+    /* Main Column Actions styles */
+    --ig-column-actions-background-color: #292826;
+    --ig-column-actions-title-color: #ffcd0f;
+
+    /* Checkbox styles */
+    --ig-checkbox-tick-color: #292826;
+    --ig-checkbox-label-color: #ffcd0f;
+    --ig-checkbox-empty-color: #ffcd0f;
+    --ig-checkbox-fill-color: #ffcd0f;
+
+    /* Input styles */
+    --ig-input-group-idle-text-color: white;
+    --ig-input-group-filled-text-color: #ffcd0f;
+    --ig-input-group-focused-text-color: #ffcd0f;
+    --ig-input-group-focused-border-color: #ffcd0f;
+    --ig-input-group-focused-secondary-color: #ffcd0f;
+
+    /* Buttons styles */
+    --ig-button-foreground: #292826;
+    --ig-button-background: #ffcd0f;
+    --ig-button-hover-background: #404040;
+    --ig-button-hover-foreground: #ffcd0f;
+    --ig-button-focus-background: #ffcd0f;
+    --ig-button-focus-foreground: black;
+    --ig-button-focus-visible-background: #ffcd0f;
+    --ig-button-focus-visible-foreground: black;
+    --ig-button-disabled-foreground: #ffcd0f;
+}
+```
+<!-- ComponentEnd: HierarchicalGrid -->
 
 ### デモ
 
@@ -581,14 +847,14 @@ $custom-button: button-theme(
 * `ColumnActionsComponent`
 <!-- end: Angular -->
 
-<!-- Blazor, WebComponents -->
+<!-- Blazor, WebComponents, React -->
 このトピックでは、`{ComponentName}` のツールバーの定義済みの列非表示 UI の使用方法について学びました。以下は、列非表示 UI のその他の API です。
 
 * `ColumnActionsComponent`
 
 その他のコンポーネント (またはそのいずれか) で使用した API:
 
-<!-- end: Blazor, WebComponents -->
+<!-- end: Blazor, WebComponents, React -->
 
 `Column` プロパティ:
 * `DisableHiding`
@@ -627,6 +893,7 @@ $custom-button: button-theme(
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
 <!-- ComponentEnd:  Grid -->
+
 コミュニティに参加して新しいアイデアをご提案ください。
 
 * [{ProductName} **フォーラム (英語)**]({ForumsLink})
