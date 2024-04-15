@@ -59,23 +59,19 @@ Property `Filterable` enables you to specify the following options:
 </{ComponentSelector}>
 ```
 
-<!-- WebComponents -->
 ```html
 <{ComponentSelector} id="grid1" auto-generate="false" allow-filtering="true">
     <igc-column field="ProductName" data-type="string"></igc-column>
     <igc-column field="Price" data-type="number" filterable="false"></igc-column>
-<{ComponentSelector}>
+</{ComponentSelector}>
 ```
-<!-- end: WebComponents -->
 
-<!-- React -->
 ```tsx
 <{ComponentSelector} data={this.nwindData} autoGenerate="false" ref={this.gridRef} allowFiltering="true">
     <IgrColumn field="ProductName" dataType="String"></IgrColumn>
     <IgrColumn field="UnitPrice" data-type="Number" filterable="false"></IgrColumn>
 </{ComponentSelector}>
 ```
-<!-- end: React -->
 
 To enable the [Advanced filtering](advanced-filtering.md) however, you need to set the `AllowAdvancedFiltering` input property to **true**.
 
@@ -651,7 +647,7 @@ In addition to the predefined themes, the grid could be further customized by se
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
 <!-- WebComponents -->
-```ts
+```html
 <{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
