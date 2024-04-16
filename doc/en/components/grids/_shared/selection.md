@@ -63,9 +63,9 @@ Property `CellSelection` enables you to specify the following options:
 - `Single` - Selection of only one cell within the `{ComponentName}` would be available.
 - `Multiple` - Currently, this is the default state of the selection in the `{ComponentName}`. Multi-cell selection is available by mouse dragging over the cells, after a left button mouse clicked continuously.
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart:  Grid, TreeGrid, HierarchicalGrid -->
 > Go to [Cell selection topic](cell-selection.md) for more information.
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd:  Grid, TreeGrid, HierarchicalGrid -->
 
 ### {Platform} {ComponentTitle} Column Selection
 
@@ -77,9 +77,9 @@ This leads to the following three variations:
 - Multi column selection - holding <kbd>ctrl</kbd> + <kbd>mouse click</kbd> over the column cells.
 - Range column selection - holding <kbd>shift</kbd> + <kbd>mouse click</kbd> selects everything in between.
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart:  Grid, TreeGrid, HierarchicalGrid -->
 > Go to [Column selection topic](column-selection.md) for more information.
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd:  Grid, TreeGrid, HierarchicalGrid -->
 
 <!-- ComponentStart: Grid -->
 
