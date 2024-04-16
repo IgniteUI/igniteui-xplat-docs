@@ -371,7 +371,7 @@
     "status": "NEW",
     "items": [
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Collapsible Column Groups",
         "href": "grids/hierarchical-grid/collapsible-column-groups.md",
         "status": "NEW"
@@ -407,7 +407,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Conditional Styling",
         "href": "grids/hierarchical-grid/conditional-cell-styling.md",
         "status": "NEW"
