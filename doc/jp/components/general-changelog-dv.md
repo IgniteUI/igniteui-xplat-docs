@@ -2,9 +2,9 @@
 title: {Platform} 新機能 | {ProductName} | インフラジスティックス
 _description: {ProductName} の新機能について学んでください。
 _keywords: Changelog, What's New, {ProductName}, Infragistics, 変更ログ, 新機能, インフラジスティックス
-_language: ja
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "Toolbar", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend"]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "Toolbar", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "XamRadialGauge"]
 namespace: Infragistics.Controls.Charts
+_language: ja
 ---
 # {ProductName} 変更ログ
 
@@ -15,6 +15,12 @@ namespace: Infragistics.Controls.Charts
 > igniteui-angular コンポーネントに固有の変更については CHANGELOG.MD を参照してください。
 
 * [Ignite UI for Angular 変更ログ](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)
+
+## **{PackageVerChanges-23-2-MAR}**
+
+### {PackageGauges}
+
+- `XamRadialGauge` の新しい `OpticalScalingEnabled` プロパティと `OpticalScalingSize` プロパティ。この新機能は、ゲージのラベル、タイトル、サブタイトルが 100% のオプティカル スケーリングを持つサイズを管理します。この新機能の詳細については、[こちら](radial-gauge.md#オプティカル-スケーリング)を参照してください。
 
 ## **{PackageVerChanges-23-2-JAN}**
 
