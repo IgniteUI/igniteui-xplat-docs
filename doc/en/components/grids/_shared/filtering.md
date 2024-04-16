@@ -576,20 +576,16 @@ constructor() {
 <!-- grid-custom-filtering.component.html -->
 
 <igc-hierarchical-grid auto-generate="false" allow-filtering="true">
-    <igc-column id="Artist" field="Artist" filterable='true' data-type="string" [filters]="caseSensitiveFilteringOperand"></igc-column>
-    <igc-column id="HasGrammyAward" field="HasGrammyAward" filterable='true' data-type="boolean" [filters]="booleanFilteringOperand"></igc-column>
+    <igc-column id="Artist" field="Artist" filterable='true' data-type="string"></igc-column>
+    <igc-column id="HasGrammyAward" field="HasGrammyAward" filterable='true' data-type="boolean"></igc-column>
 </igc-hierarchical-grid>
 ```
 ```ts
 constructor() {
-    var artist = this.artist = document.getElementById('Artist') as IgcColumnComponent;
-    var hasGrammyAward = this.hasGrammyAward = document.getElementById('HasGrammyAward') as IgcColumnComponent;
-
-    this._bind = () => {
-        artist.bodyTemplate = this.caseSensitiveFilteringOperand;
-        hasGrammyAward.bodyTemplate = this.booleanFilteringOperand;
-    }
-    this._bind();
+    var artist = document.getElementById('Artist') as IgcColumnComponent;
+    var hasGrammyAward = document.getElementById('HasGrammyAward') as IgcColumnComponent;
+    artist.filters = this.caseSensitiveFilteringOperand;
+    hasGrammyAward.filters = this.booleanFilteringOperand;
 }
 ```
 
@@ -653,12 +649,12 @@ In case you would like to change some of the colors, you need to set a class for
 <!-- end: WebComponents -->
 
 ```razor
-<{ComponentSelector} Class="grid"></ComponentSelector>
+<{ComponentSelector} Class="grid"></{ComponentSelector}>
 ```
 
 <!-- React -->
 ```tsx
-<IgrGrid className="grid"></IgrGrid>
+<{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
 <!-- end: React -->
 
