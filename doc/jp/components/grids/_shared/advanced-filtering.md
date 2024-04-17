@@ -40,13 +40,52 @@ _language: ja
 </{ComponentSelector}>
 ```
 <!-- end: Angular -->
+
+<!-- ComponentStart: Grid -->
+```html
+<igc-grid id="grid" auto-generate="true" allow-advanced-filtering="true">
+    <igc-grid-toolbar></igc-grid-toolbar>
+<igc-grid>
+```
+```ts
+constructor() {
+    let grid = document.getElementById("grid") as IgcGridComponent;
+    grid.data = this.data
+}
+```
+
+```tsx
+<IgrGrid data={nwindData} autoGenerate="false" ref={gridRef} allowAdvancedFiltering="true">
+    <IgrGridToolbar></IgrGridToolbar>
+</IgrGrid>
+```
+
 ```razor
 <{ComponentSelector} Data=data AutoGenerate="true" AllowAdvancedFiltering="true">
     <IgbGridToolbar></IgbGridToolbar>
 </{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
+```html
+<igc-tree-grid id="treeGrid" auto-generate="true" allow-advanced-filtering="true">
+    <igc-grid-toolbar></igc-grid-toolbar>
+</igc-tree-grid>
+```
+```ts
+constructor() {
+    let treeGrid = document.getElementById("treeGrid") as IgcTreeGridComponent;
+    treeGrid.data = this.data
+}
+```
+
+```tsx
+<IgrTreeGrid data={nwindData} autoGenerate="false" allowAdvancedFiltering="true">
+    <IgrGridToolbar></IgrGridToolbar>
+</IgrTreeGrid>
+```
+
 ```razor
 <IgbTreeGrid Data=data AutoGenerate="true" AllowAdvancedFiltering="true">
     <IgbGridToolbar></IgbGridToolbar>
@@ -54,54 +93,38 @@ _language: ja
 ```
 <!-- ComponentEnd: TreeGrid -->
 
-<!-- WebComponents -->
+<!-- ComponentStart: HierarchicalGrid -->
 ```html
-<{ComponentSelector} id="grid" auto-generate="true" allow-advanced-filtering="true">
+<igc-hierarchical-grid id="hierarchicalGrid" auto-generate="true" allow-advanced-filtering="true">
     <igc-grid-toolbar></igc-grid-toolbar>
-</{ComponentSelector}>
+</igc-hierarchical-grid>
 ```
 ```ts
 constructor() {
-    let grid = (document.getElementById("grid") as IgcGridComponent);
-    grid.data = this.data
+    let hierarchicalGrid = document.getElementById("hierarchicalGrid") as IgcHierarchicalGridComponent;
+    hierarchicalGrid.data = this.data
 }
 ```
+<!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- ComponentStart: TreeGrid -->
-```html
-<igc-tree-grid id="grid" auto-generate="true" allow-advanced-filtering="true">
-    <igc-grid-toolbar></igc-grid-toolbar>
-</igc-tree-grid>
+<!-- Blazor -->
+<!-- ComponentStart: HierarchicalGrid -->
+```razor
+<IgbHierarchicalGrid Data=data AutoGenerate="true" AllowAdvancedFiltering="true">
+    <IgbGridToolbar></IgbGridToolbar>
+</IgbHierarchicalGrid>
 ```
-
-
-```ts
-constructor() {
-    let grid = document.getElementById("grid") as IgcTreeGridComponent;
-    grid.data = this.data
-}
-```
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- end: WebComponents -->
-<!-- React -->
-```html
-<{ComponentSelector} data={this.nwindData} autoGenerate="false" ref={this.gridRef} allowAdvancedFiltering="true">
-    <IgrGridToolbar>
-        <IgrGridToolbarActions>
-            <IgrGridToolbarAdvancedFilering></IgrGridToolbarAdvancedFilering>
-        </IgrGridToolbarActions>
-    </IgrGridToolbar>
-</{ComponentSelector}>
-```
-<!-- end: React -->
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: Blazor -->
 
 <!-- React -->
+<!-- ComponentStart: HierarchicalGrid -->
 ```tsx
-<{ComponentSelector} data={nwindData} autoGenerate="false" ref={gridRef} allowAdvancedFiltering="true">
+<IgrHierarchicalGrid data={nwindData} autoGenerate="false" allowAdvancedFiltering="true">
     <IgrGridToolbar></IgrGridToolbar>
-</{ComponentSelector}>
+</IgrHierarchicalGrid>
 ```
+<!-- ComponentEnd: HierarchicalGrid -->
 <!-- end: React -->
 
 高度なフィルタリングは、`AdvancedFilteringExpressionsTree` 入力プロパティに保存される `FilteringExpressionsTree` を生成します。`AdvancedFilteringExpressionsTree` プロパティを使用して、高度なフィルタリングの初期状態を設定できます。
@@ -196,6 +219,7 @@ componentDidMount() {
 }
 ```-->
 <!-- end: React -->
+
 
 `{ComponentName}` ツールバーを表示したくない場合は、`OpenAdvancedFilteringDialog` および `CloseAdvancedFilteringDialog` メソッドを使用して、高度なフィルタリング ダイアログをコーディングを使用して開いたり閉じたりできます。
 
@@ -543,26 +567,21 @@ $custom-drop-down: drop-down-theme(
 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
 一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
+<!-- WebComponents -->
 ```html
-<igc-grid class="grid"></igc-grid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
+```
+<!-- end: React -->
 
 ```razor
-<IgbGrid class="grid"></IgbGrid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
-
-
-<!-- ComponentStart: TreeGrid -->
-
-```html
-<igc-tree-grid class="grid"></igc-tree-grid>
-```
-
-```razor
-<IgbTreeGrid class="grid"></IgbTreeGrid>
-```
-
-<!-- ComponentEnd: TreeGrid -->
 
 次に、そのクラスに関連する CSS プロパティを設定します。
 

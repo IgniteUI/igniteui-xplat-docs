@@ -2,7 +2,7 @@
 title: {Platform} What's New | {ProductName} | Infragistics
 _description: Learn about new features in the {ProductName}.
 _keywords: Changelog, What's New,  {ProductName}, Infragistics
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "Toolbar", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Infragistics.Controls.Grid", "Infragistics.Controls.GridSelectionMode", "Infragistics.Controls.DataGridCellEventArgs", "Infragistics.Controls.GridBaseDirective", "MaskInput", "Shape", "RoundShape"]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "Toolbar", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Infragistics.Controls.Grid", "Infragistics.Controls.GridSelectionMode", "Infragistics.Controls.DataGridCellEventArgs", "Infragistics.Controls.GridBaseDirective", "MaskInput", "Shape", "RoundShape", "XamRadialGauge, XamLinearGauge, XamBulletGraph, XamTreemap", "XamRadialChart"]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls.Charts
 ---
@@ -10,27 +10,99 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## **{PackageVerChanges-23-2-APR2}**
+
+- `XamBulletGraph`
+    - The Performance bar will now reflect a difference between the value and new `HighlightValue` when the `HighlightValueDisplayMode` is applied to the 'Overlay' setting. The highlight value will show a filtered/subset measured percentage as a filled in color while the remaining bar's appearance will appear faded to the assigned value, illustrating the performance in real-time.
+- `XamLinearGauge`
+    - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear. 
+- `XamRadialGauge`
+    - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear. 
+- `XamTreemap`
+    - Now exposes a `HighlightingMode` property that allows you to configure the mouse-over highlighting of the items in the tree map. This property takes two options: `Brighten` where the highlight will apply to the item that you hover the mouse over only, and `FadeOthers` where the highlight of the hovered item will remain the same, but everything else will fade out. This highlight is animated, and can be controlled using the `HighlightingTransitionDuration` property.
+
+## **{PackageVerChanges-23-2-APR}**
+
+- `Bug Fixes` 
+
+## **{PackageVerChanges-23-2-MAR}**
+
+### New Components
+
+- [`HierarchicalGrid`](grids/hierarchical-grid/overview.md) component
+- `Textarea` component
+- `ButtonGroup` component
+
+### New Features
+
+- `DockManager`
+    - New `ProximityDock` property. If enabled, docking indicators are not visible and the end user can dock the dragged pane by dragging it close to the target pane edges.
+    - New `ContainedInBoundaries` property. Determines whether the floating panes are kept inside the Dock Manager boundaries. Defaults to `false`.
+    - New `ShowPaneHeaders` property. Determines whether pane headers are only shown on hover or always visible. Defaults to `always`.
+- `Tree`
+    - Added `toggleNodeOnClick` property that determines whether clicking over a node will change its expanded state or not. Defaults to `false`.
+- `Rating`
+    - `allowReset` added. When enabled selecting the same value will reset the component. **Behavioral change** - In previous releases this was the default behavior of the rating component. Make sure to set `allowReset` if you need to keep this behavior in your application.
+- `Select`, `Dropdown` 
+    - exposed `selectedItem`, `items` and `groups` getters
+- `XamRadialGauge`
+    - New title/subtitle properties. `TitleText`, `SubtitleText` will appear near the bottom the gauge. In addition, the various title/subtitle font properties were added such as `TitleFontSize`, `TitleFontFamily`, `TitleFontStyle`, `TitleFontWeight` and `TitleExtent`. Finally, the new `TitleDisplaysValue` will allow the value to correspond with the needle's position.  
+    - New `OpticalScalingEnabled` and `OpticalScalingSize` properties for the `XamRadialGauge`. This new feature will manage the size at which labels, titles, and subtitles of the gauge have 100% optical scaling. You can read more about this new feature [here](radial-gauge.md#optical-scaling)
+    - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear.  
+- `XamRadialChart` 
+    - New Label Mode
+        The `CategoryAngleAxis` for the now exposes a `LabelMode` property that allows you to further configure the location of the labels. This allows you to toggle between the default mode by selecting the `Center` enum, or use the new mode, `ClosestPoint`, which will bring the labels closer to the circular plot area.
+
+### General
+
+- `Input`, `MaskInput`, `DateTimeInput`, `Rating`
+	- `Readonly` has been renamed to `ReadOnly`
+- `Input`
+	- `Maxlength` has been renamed to `MaxLength`
+	- `Minlength` has been renamed to `MinLength`
+
+### Deprecations
+
+- The `size` property and attribute have been deprecated for all components. Use the `--ig-size` CSS custom property instead. The following example sets the size of the avatar component to small:
+    ```css
+    .avatar {
+        --ig-size: var(--ig-size-small);
+    }
+    ```
+- `DateTimeInput`
+    - `MinValue` and `MaxValue` properties have been deprecated. Please, use `Min` and `Max` instead.
+- `RangeSlider`
+    - `AriaLabelLower` and `AriaLabelUpper` properties have been deprecated. Please, use `ThumbLabelLower` and `ThumbLabelUpper` instead.
+
+### Removed
+
+- Removed our own `dir` attribute which shadowed the default one. This is a non-breaking change.
+- `Slider` - `ariaLabel` shadowed property. This is a non-breaking change.
+- `Checkbox` - `ariaLabelledBy` shadowed attribute. This is a non-breaking change.
+- `Switch` - `ariaLabelledBy` shadowed attribute. This is a non-breaking change.
+- `Radio` - `ariaLabelledBy` shadowed attribute. This is a non-breaking change.
+
 ## **{PackageVerChanges-23-2-JAN}**
 
 ### .NET 8.0 support
 
 * 2023.2 release now support .NET 8. For more information on .NET 8 please refer to [this article on Microsoft's site](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-8) .
 
-### {PackageCharts} Charts
+### {PackageCharts} (Charts)
 
-* [Chart Highlight Filter](charts/features/chart-highlight-filter.md) - The `CategoryChart` and `DataChart` now expose a way to highlight and animate in and out of a subset of data. The display of this highlight depends on the series type. For column and area series, the subset will be shown on top of the total set of data where the subset will be colored by the actual brush of the series, and the total set will have a reduced opacity. For line series, the subset will be shown as a dotted line.
+* [Chart Highlight Filter](charts/features/chart-highlight-filter.md) - The `CategoryChart` and `XamDataChart` now expose a way to highlight and animate in and out of a subset of data. The display of this highlight depends on the series type. For column and area series, the subset will be shown on top of the total set of data where the subset will be colored by the actual brush of the series, and the total set will have a reduced opacity. For line series, the subset will be shown as a dotted line.
 
 ## **{PackageVerChanges-23-2}**
 
 ### {PackageGrids} (Toolbar - Beta)
 
-* A new tool has been added, as a default tool, to save the chart to an image via the clipboard.
+* Save tool action has been added to save the chart to an image via the clipboard.
 * Vertical orientation has been added via the toolbar's `Orientation` property. By default the toolbar is horizontal, now the toolbar can be shown in vertical orientation where the tools will popup to the left/right respectfully. 
 * Custom SVG icons support was added via the toolbar's `renderImageFromText` method, further enhancing custom tool creation.
 
 ### {PackageGrids} (Grid)
-* New Features Added:
-    - [State Persistence](grids/grid/state-persistence.md)
+
+* Added New Features - [State Persistence](grids/grid/state-persistence.md)
 
 ## **{PackageVerChanges-23-1}**
 
@@ -38,7 +110,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 * [Toolbar](menus/toolbar.md) - Beta. This component is a companion container for UI operations to be used primarily with our charting components. The toolbar will dynamically update with a preset of properties and tools when linked to our `XamDataChart` or `CategoryChart` components, but it also gives you the ability to create custom tools for your project.
 
-### {PackageCharts} Charts
+### {PackageCharts} (Charts)
 
 * [ValueLayer](charts/features/chart-overlays.md#{PlatformLower}-value-layer) - A new series type named the `ValueLayer` is now exposed which can allow you to render an overlay for different focal points of the plotted data such as Maximum, Minimum, and Average. This is applied to the `CategoryChart` and `FinancialChart` by adding to the new `ValueLines` collection.
 
@@ -96,9 +168,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### {PackageCharts} (Charts)
 
-Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use.
-
-These new chart improvements include:
+Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use. These new chart improvements include:
 
 * Responsive layouts for horizontal label rotation based on browser / screen size.
 * Enhanced rendering for rounded labels on all platforms.
@@ -140,7 +210,7 @@ These new chart improvements include:
 * Added the highly-configurable [DataLegend](charts/features/chart-data-legend.md) component, which works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values.
 * Added the highly-configurable [DataToolTip](charts/features/chart-data-tooltip.md) which displays values and titles of series as well as legend badges of series in a tooltip. This is now the default tooltip for all chart types.
 * Added animation and transition-in support for Stacked Series. Animations can be enabled by setting the `IsTransitionInEnabled` property to true. From there, you can set the `TransitionInDuration` property to determine how long your animation should take to complete and the `TransitionInMode` to determine the type of animation that takes place.
-* Added `AssigningCategoryStyle` event, is now available to all series in `DataChart`. This event is handled when you want to conditionally configure aspects of the series items such as `Fill` background-color and highlighting.
+* Added `AssigningCategoryStyle` event, is now available to all series in `XamDataChart`. This event is handled when you want to conditionally configure aspects of the series items such as `Fill` background-color and highlighting.
 * New `AllowedPositions` enumeration for CalloutLayer. Used to limit where the callouts are to be placed within the chart. By default, the callouts are intelligently placed in the best place but this used to force for example `TopLeft`, `TopRight`, `BottomLeft` or `BottomRight`.
 * New corner radius properties added for Annotation Layers; used to round-out the corners of each of the callouts. Note, a corner radius has now been added by default.
     - `CalloutCornerRadius` for CalloutLayer
@@ -154,10 +224,7 @@ These new chart improvements include:
 
 ### {PackageGrids} (Data Grid)
 
-* New Feature Added:
-- [Row Paging](grids/data-grid/row-paging.md)
-
-Pagination is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
+Added New Feature - [Row Paging](grids/data-grid/row-paging.md) which is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
 
 ### {PackageDockManager} (Dock Manager)
 
@@ -268,7 +335,7 @@ This release introduces a few improvements and simplifications to visual design 
 
 #### Charts & Maps
 
-This release introduces several new and improved visual design and configuration options for all of the chart components, e.g. `DataChart`, `CategoryChart`, and `FinancialChart`.
+This release introduces several new and improved visual design and configuration options for all of the chart components, e.g. `XamDataChart`, `CategoryChart`, and `FinancialChart`.
 
 * Changed Bar/Column/Waterfall series to have square corners instead of rounded corners
 * Changed Scatter High Density series’ colors for heat min property from <span style="color:#8a5bb1">#8a5bb1</span> to <span style="color:#000000">#000000</span>
