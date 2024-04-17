@@ -351,10 +351,21 @@ Then set the related CSS properties for that class:
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
+<!-- ComponentStart: Grid -->
+
 ### Demo
 
 `sample="/{ComponentSample}/cell-selection-style", height="620", alt="{Platform} {ComponentTitle} Cell Selection Styling Example"`
 
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+
+### Demo
+
+`sample="/{ComponentSample}/cell-selection-styling", height="620", alt="{Platform} {ComponentTitle} Cell Selection Styling Example"`
+
+<!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- end: WebComponents, Blazor, React -->
 
