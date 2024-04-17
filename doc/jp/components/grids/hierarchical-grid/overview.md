@@ -253,9 +253,9 @@ public class SingersData : List<SingersDataItem>
 ```html
 <!-- hierarchicalGridSample.component.html -->
 
-<igx-hierarchical-grid #hGrid [primaryKey]="'CustomerID'" [autoGenerate]="true" [height]="'600px'" [width]="'100%'">
-    <igx-row-island [key]="'Orders'" [primaryKey]="'OrderID'" [autoGenerate]="true"  (gridCreated)="gridCreated($event, 'CustomerID')">
-        <igx-row-island [key]="'Order_Details'" [primaryKey]="'ProductID'" [autoGenerate]="true" (gridCreated)="gridCreated($event, 'OrderID')">
+<igx-hierarchical-grid #hGrid [primaryKey]="'customerId'" [autoGenerate]="true" [height]="'600px'" [width]="'100%'">
+    <igx-row-island [key]="'Orders'" [primaryKey]="'orderId'" [autoGenerate]="true"  (gridCreated)="gridCreated($event, 'Customers')">
+        <igx-row-island [key]="'Details'" [primaryKey]="'productId'" [autoGenerate]="true" (gridCreated)="gridCreated($event, 'Orders')">
         </igx-row-island>
     </igx-row-island>
 </igx-hierarchical-grid>
@@ -304,27 +304,23 @@ export class HierarchicalGridLoDSampleComponent implements AfterViewInit {
 
 @Injectable()
 export class RemoteLoDService {
-    public url = `https://services.odata.org/V4/Northwind/Northwind.svc/`;
+    public url = `https://data-northwind.indigo.design/`;
 
     constructor(private http: HttpClient) { }
 
-    public getData(dataState?: any): Observable<any[]> {
+    public getData(dataState: any): Observable<any[]> {
         return this.http.get(this.buildUrl(dataState)).pipe(
-            map((response) => response["value"])
+            map((response) => response)
         );
     }
 
     public buildUrl(dataState) {
         let qS = "";
         if (dataState) {
-            qS += `${dataState.key}?`;
-
-            if (!dataState.rootLevel) {
-                if (typeof dataState.parentID === "string") {
-                    qS += `$filter=${dataState.parentKey} eq '${dataState.parentID}'`;
-                } else {
-                    qS += `$filter=${dataState.parentKey} eq ${dataState.parentID}`;
-                }
+            if (dataState.rootLevel) {
+                qS += `${dataState.key}`;
+            } else {
+                qS += `${dataState.parentKey}/${dataState.parentID}/${dataState.key}`;
             }
         }
         return `${this.url}${qS}`;
@@ -335,9 +331,9 @@ export class RemoteLoDService {
 
 <!-- WebComponents -->
 ```html
-<igc-hierarchical-grid id="hGrid" primary-key="CustomerID" auto-generate="true" height="600px" width="100%">
-    <igc-row-island id="ordersRowIsland" child-data-key="Orders" primary-key="OrderID" auto-generate="true">
-        <igc-row-island id="orderDetailsRowIsland" child-data-key="Order_Details" primary-key="ProductID" auto-generate="true"></igc-row-island>
+<igc-hierarchical-grid id="hGrid" primary-key="customerId" auto-generate="true" height="600px" width="100%">
+    <igc-row-island id="ordersRowIsland" child-data-key="Orders" primary-key="orderId" auto-generate="true">
+        <igc-row-island id="orderDetailsRowIsland" child-data-key="Details" primary-key="productId" auto-generate="true"></igc-row-island>
     </igc-row-island>
 </igc-hierarchical-grid>
 ```
@@ -350,13 +346,16 @@ export class HierarchicalGridLoadOnDemand {
         const hierarchicalGrid = document.getElementById("hGrid") as IgcHierarchicalGridComponent;
         const ordersRowIsland = document.getElementById("ordersRowIsland");
         const orderDetailsRowIsland = document.getElementById("orderDetailsRowIsland");
+
         ordersRowIsland.addEventListener("gridCreated", (event: any) => {
-            this.gridCreated(event, "CustomerID");
+            this.gridCreated(event, "Customers");
         });
         orderDetailsRowIsland.addEventListener("gridCreated", (event: any) => {
-            this.gridCreated(event, "OrderID");
+            this.gridCreated(event, "Orders");
         });
+
         hierarchicalGrid.isLoading = true;
+
         getData({ parentID: null, rootLevel: true, key: "Customers" }).then((data: any) => {
             hierarchicalGrid.isLoading = false;
             hierarchicalGrid.data = data;
@@ -387,7 +386,8 @@ export class HierarchicalGridLoadOnDemand {
 import { getData } from "./remoteService";
 
 export default function Sample() {
-  const hierarchicalGrid = useRef(null);
+  const hierarchicalGrid = useRef<IgrHierarchicalGrid>(null);
+
   function gridCreated(
     rowIsland: IgrRowIsland,
     event: IgrGridCreatedEventArgs,
@@ -407,6 +407,7 @@ export default function Sample() {
       context.grid.markForCheck();
     });
   }
+
   useEffect(() => {
     hierarchicalGrid.current.isLoading = true;
     getData({ parentID: null, rootLevel: true, key: "Customers" }).then(
@@ -421,28 +422,28 @@ export default function Sample() {
   return (
     <IgrHierarchicalGrid
         ref={hierarchicalGrid}
-        primaryKey="CustomerID"
+        primaryKey="customerId"
         autoGenerate="true"
         height="600px"
         width="100%"
     >
         <IgrRowIsland
         childDataKey="Orders"
-        primaryKey="OrderID"
+        primaryKey="orderId"
         autoGenerate="true"
         gridCreated={(
             rowIsland: IgrRowIsland,
             e: IgrGridCreatedEventArgs
-        ) => gridCreated(rowIsland, e, "CustomerID")}
+        ) => gridCreated(rowIsland, e, "Customers")}
         >
         <IgrRowIsland
-            childDataKey="Order_Details"
-            primaryKey="ProductID"
+            childDataKey="Details"
+            primaryKey="productId"
             autoGenerate="true"
             gridCreated={(
             rowIsland: IgrRowIsland,
             e: IgrGridCreatedEventArgs
-            ) => gridCreated(rowIsland, e, "OrderID")}
+            ) => gridCreated(rowIsland, e, "Orders")}
         ></IgrRowIsland>
         </IgrRowIsland>
     </IgrHierarchicalGrid>
@@ -452,24 +453,20 @@ export default function Sample() {
 
 <!-- WebComponents, React -->
 ```ts
-const URL = `https://services.odata.org/V4/Northwind/Northwind.svc/`;
-export function getData(dataState?: any): any {
+const URL = `https://data-northwind.indigo.design/`;
+
+export function getData(dataState: any): any {
     return fetch(buildUrl(dataState))
-        .then((result) => result.json())
-        .then((data) => data["value"]);
+        .then((result) => result.json());
 }
 
 function buildUrl(dataState: any) {
     let qS = "";
     if (dataState) {
-        qS += `${dataState.key}?`;
-
-        if (!dataState.rootLevel) {
-            if (typeof dataState.parentID === "string") {
-                qS += `$filter=${dataState.parentKey} eq '${dataState.parentID}'`;
-            } else {
-                qS += `$filter=${dataState.parentKey} eq ${dataState.parentID}`;
-            }
+        if (dataState.rootLevel) {
+            qS += `${dataState.key}`;
+        } else {
+            qS += `${dataState.parentKey}/${dataState.parentID}/${dataState.key}`;
         }
     }
     return `${URL}${qS}`;
@@ -478,10 +475,10 @@ function buildUrl(dataState: any) {
 <!-- end: WebComponents, React -->
 
 ```razor
-<IgbHierarchicalGrid Id="hGrid" AutoGenerate="true" PrimaryKey="CustomerID" Height="600px"
+<IgbHierarchicalGrid Id="hGrid" AutoGenerate="true" PrimaryKey="customerId" Height="600px"
     RenderedScript="OnGridRendered">
-    <IgbRowIsland ChildDataKey="Orders" PrimaryKey="OrderID" AutoGenerate="true" GridCreatedScript="OnGridCreated">
-        <IgbRowIsland ChildDataKey="Order_Details" PrimaryKey="ProductID" AutoGenerate="true" GridCreatedScript="OnGridCreated"></IgbRowIsland>
+    <IgbRowIsland ChildDataKey="Orders" PrimaryKey="orderId" AutoGenerate="true" GridCreatedScript="OnGridCreated">
+        <IgbRowIsland ChildDataKey="Details" PrimaryKey="productId" AutoGenerate="true" GridCreatedScript="OnGridCreated"></IgbRowIsland>
     </IgbRowIsland>
 </IgbHierarchicalGrid>
 
@@ -499,7 +496,7 @@ igRegisterScript("OnGridRendered", () => {
 
 igRegisterScript("OnGridCreated", (args) => {
     const context = args.detail;
-    const _parentKey = context.owner.childDataKey === "Orders" ? "CustomerID" : "OrderID";
+    const _parentKey = context.owner.childDataKey === "Orders" ? "Customers" : "Orders";
     const dataState = {
         key: context.owner.childDataKey,
         parentID: context.parentID,
@@ -514,24 +511,20 @@ igRegisterScript("OnGridCreated", (args) => {
       });
 }, false)
 
-const DATA_URL = `https://services.odata.org/V4/Northwind/Northwind.svc/`;
+const DATA_URL = `https://data-northwind.indigo.design/`;
+
 function getData(dataState) {
     return fetch(buildUrl(dataState))
-        .then((result) => result.json())
-        .then((data) => data["value"]);
+        .then((result) => result.json());
 }
 
 function buildUrl(dataState) {
     let qS = "";
     if (dataState) {
-        qS += `${dataState.key}?`;
-
-        if (!dataState.rootLevel) {
-            if (typeof dataState.parentID === "string") {
-                qS += `$filter=${dataState.parentKey} eq '${dataState.parentID}'`;
-            } else {
-                qS += `$filter=${dataState.parentKey} eq ${dataState.parentID}`;
-            }
+        if (dataState.rootLevel) {
+            qS += `${dataState.key}`;
+        } else {
+            qS += `${dataState.parentKey}/${dataState.parentID}/${dataState.key}`;
         }
     }
     return `${DATA_URL}${qS}`;
