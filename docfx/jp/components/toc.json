@@ -369,7 +369,7 @@
     "status": "NEW",
     "items": [
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "縮小可能な列グループ",
         "href": "grids/hierarchical-grid/collapsible-column-groups.md",
         "status": "NEW"
@@ -405,13 +405,13 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "条件付きスタイル設定",
         "href": "grids/hierarchical-grid/conditional-cell-styling.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "表示密度",
         "href": "grids/hierarchical-grid/display-density.md",
         "status": "NEW"
@@ -449,19 +449,19 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "フィルタリング",
         "href": "grids/hierarchical-grid/filtering.md",
         "status": "NEW",
         "items": [
           {
-            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "exclude": ["Angular"],
             "name": "高度なフィルタリング",
             "href": "grids/hierarchical-grid/advanced-filtering.md",
             "status": "NEW"
           },
           {
-            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "exclude": ["Angular"],
             "name": "Excel スタイル フィルタリング",
             "href": "grids/hierarchical-grid/excel-style-filtering.md",
             "status": "NEW"
