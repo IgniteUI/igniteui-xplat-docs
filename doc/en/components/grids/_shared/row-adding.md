@@ -139,6 +139,7 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
 <!-- end: Angular -->
 
 <!-- WebComponents -->
+<!-- ComponentStart: TreeGrid -->
 ```html
 <{ComponentSelector} id="treeGrid" primary-key="ID" foreign-key="ParentID" row-editable="true">
     <igc-column field="Name" data-type="String"></igc-column>
@@ -153,9 +154,11 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
     </igc-action-strip>
 </{ComponentSelector}>
 ```
+<!-- ComponentStart: TreeGrid -->
 <!-- end: WebComponents -->
 
 <!-- React -->
+<!-- ComponentStart: TreeGrid -->
 ```tsx
 <{ComponentSelector} autoGenerate="false" primaryKey="ID" foreignKey="ParentID" rowEditable="true">
     <IgrColumn field="Name" header="Name" dataType="String"></IgrColumn>
@@ -168,8 +171,10 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
     </IgrActionStrip>
 </{ComponentSelector}>
 ```
+<!-- ComponentStart: TreeGrid -->
 <!-- end: React -->
 
+<!-- ComponentStart: TreeGrid -->
 ```razor
 <{ComponentSelector} AutoGenerate="false" Id="treegrid" PrimaryKey="ID" ForeignKey="ParentID" RowEditable="true">
     <IgbColumn Field="Name" Header="Name" DataType="GridColumnDataType.String"></IgbColumn>
@@ -182,6 +187,7 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
     </IgbActionStrip>
 </{ComponentSelector}>
 ```
+<!-- ComponentStart: TreeGrid -->
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -625,23 +631,13 @@ this.grid.rowAddTextTemplate = (ctx: IgcGridEmptyTemplateContext) => {
 <!-- end: WebComponents -->
 
 <!-- React -->
-<!-- ComponentStart: Grid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 gridRef.current.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
     return ('Adding Row');
 }
 ```            
-<!-- ComponentEnd: Grid -->
-<!-- end: React -->
-
-<!-- React -->
-<!-- ComponentStart: HierarchicalGrid -->
-```tsx
-gridRef.current.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
-    return ('Adding Row');
-}
-```            
-<!-- ComponentEnd: HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid-->
 <!-- end: React -->
 
 <!-- Blazor -->
