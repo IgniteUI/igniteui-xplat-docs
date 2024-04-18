@@ -73,7 +73,9 @@ Property `Filterable` enables you to specify the following options:
 </{ComponentSelector}>
 ```
 
-To enable the [Advanced filtering](advanced-filtering.md) however, you need to set the `AllowAdvancedFiltering` input property to **true**.
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
+To enable the [Advanced filtering](advanced-filtering.md) however, you need to set the `AllowAdvancedFiltering` input property to **true**.7
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
 <!-- Angular -->
 ```html
@@ -125,6 +127,7 @@ The filtering feature is enabled for the `{ComponentName}` component by setting 
 </{ComponentSelector}>
 ```
 <!-- end: Angular -->
+
 <!-- WebComponents -->
 ```html
 <{ComponentSelector} auto-generate="false" allow-filtering="true">
@@ -144,7 +147,6 @@ The filtering feature is enabled for the `{ComponentName}` component by setting 
 </{ComponentSelector}>
 ```
 <!-- end: React -->
-
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -367,6 +369,8 @@ this.grid.filteringLogic = FilteringLogic.OR;
 
 <!-- React -->
 ```tsx
+import { FilteringLogic } from "igniteui-react-grids";
+
 <{ComponentName} filteringLogic={FilteringLogic.Or}></{ComponentName}>
 ```
 <!-- end: React -->

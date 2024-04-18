@@ -716,7 +716,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Filtering",
         "href": "grids/tree-grid/filtering.md",
         "status": ""
