@@ -186,9 +186,8 @@ export class AppModule {}
 
 <!-- ComponentEnd: TreeGrid -->
 
-<!-- ComponentStart: HierarchicalGrid -->
-
 <!-- Angular -->
+<!-- ComponentStart: HierarchicalGrid -->
 ```html
 <{ComponentSelector} igxPreventDocumentScroll [data]="localdata"
     [autoGenerate]="false" [primaryKey]="'Debut'" [rowEditable]="true">
@@ -226,9 +225,11 @@ export class AppModule {}
     </igx-row-island>
 </{ComponentSelector}>
 ```
+<!-- ComponentEnd: HierarchicalGrid -->
 <!-- end: Angular -->
 
 <!-- WebComponents -->
+<!-- ComponentStart: HierarchicalGrid -->
 ```html
 <{ComponentSelector} id="hGrid" auto-generate="false" primary-key="Debut" row-editable="true">
     <igc-column field="Artist" data-type="String"></igc-column>
@@ -265,8 +266,11 @@ export class AppModule {}
     </igc-row-island>
 </{ComponentSelector}>
 ```
+<!-- ComponentEnd: HierarchicalGrid -->
 <!-- end: WebComponents -->
 
+<!-- Blazor -->
+<!-- ComponentStart: HierarchicalGrid -->
 ```razor
 <{ComponentSelector} AutoGenerate="false" Id="hGrid" PrimaryKey="Debut" RowEditable="true">
     <IgbColumn Field="Artist" Header="Artist" DataType="GridColumnDataType.String"></IgbColumn>
@@ -303,8 +307,148 @@ export class AppModule {}
     </IgbRowIsland>
 </{ComponentSelector}>
 ```
-
 <!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: Blazor -->
+
+<!-- React -->
+<!-- ComponentStart: HierarchicalGrid -->
+```tsx
+<{ComponentSelector}
+   autoGenerate="false"
+   data={this.singersData}
+   id="hGrid"
+   primaryKey="ID"
+   rowEditable="true"
+   ref={this.hierarchicalGrid1Ref}>
+   <IgrActionStrip>
+     <IgrGridEditingActions
+        addRow="true">
+       </IgrGridEditingActions>
+   </IgrActionStrip>
+   <IgrColumn
+       field="Artist"
+       header="Artist"
+       dataType="String"
+       resizable="true">
+   </IgrColumn>
+   <IgrColumn
+       field="Debut"
+       header="Debut"
+       dataType="Number"
+       minWidth="88px"
+       maxWidth="230px"
+       resizable="true">
+   </IgrColumn>
+   <IgrColumn
+       field="GrammyNominations"
+       header="Grammy Nominations"
+       dataType="String"
+       resizable="true">
+   </IgrColumn>
+   <IgrColumn
+       field="GrammyAwards"
+       header="Grammy Awards"
+       dataType="String"
+       resizable="true">
+   </IgrColumn>
+   <IgrRowIsland
+       childDataKey="Albums"
+       autoGenerate="false">
+       <IgrColumn
+           field="Album"
+           header="Album"
+           dataType="String"
+           resizable="true">
+       </IgrColumn>
+       <IgrColumn
+           field="LaunchDate"
+           header="Launch Date"
+           dataType="Date"
+           resizable="true">
+       </IgrColumn>
+       <IgrColumn
+           field="BillboardReview"
+           header="Billboard Review"
+           dataType="String"
+           resizable="true">
+       </IgrColumn>
+       <IgrColumn
+           field="USBillboard200"
+           header="US Billboard 200"
+           dataType="String"
+           resizable="true">
+       </IgrColumn>
+       <IgrRowIsland
+           childDataKey="Songs"
+           autoGenerate="false">
+           <IgrActionStrip>
+                <IgrGridEditingActions
+                    addRow="true">
+                </IgrGridEditingActions>
+            </IgrActionStrip>
+           <IgrColumn
+               field="Number"
+               header="No."
+               dataType="String"
+               resizable="true">
+           </IgrColumn>
+           <IgrColumn
+               field="Title"
+               header="Title"
+               dataType="String"
+               resizable="true">
+           </IgrColumn>
+           <IgrColumn
+               field="Released"
+               header="Released"
+               dataType="String"
+               resizable="true">
+           </IgrColumn>
+           <IgrColumn
+               field="Genre"
+               header="Genre"
+               dataType="String"
+               resizable="true">
+           </IgrColumn>
+       </IgrRowIsland>
+   </IgrRowIsland>
+   <IgrRowIsland
+       childDataKey="Tours"
+       autoGenerate="false">
+           <IgrActionStrip>
+                <IgrGridEditingActions
+                    addRow="true">
+                </IgrGridEditingActions>
+            </IgrActionStrip>                  
+       <IgrColumn
+           field="Tour"
+           header="Tour"
+           dataType="String"
+           resizable="true">
+       </IgrColumn>
+       <IgrColumn
+           field="StartedOn"
+           header="Started on"
+           dataType="String"
+           resizable="true">
+       </IgrColumn>
+       <IgrColumn
+           field="Location"
+           header="Location"
+           dataType="String"
+           resizable="true">
+       </IgrColumn>
+       <IgrColumn
+           field="Headliner"
+           header="Headliner"
+           dataType="String"
+           resizable="true">
+       </IgrColumn>
+   </IgrRowIsland>
+</{ComponentSelector}>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: React -->
 
 > **注**:
 > プライマリ キーは行追加操作で必須です。
@@ -460,6 +604,7 @@ this.treeGrid.beginAddRowByIndex(null);       // Spawns the add row UI as the fi
 行追加オーバーレイのテキストのカスタマイズは、`RowAddTextDirective` を使用して可能です。
 
 <!-- Angular -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <{ComponentSelector} [data]="data" [primaryKey]="'ProductID'" [autoGenerate]="false" [rowEditable]="true">
     <ng-template igxRowAddText>
@@ -467,24 +612,41 @@ this.treeGrid.beginAddRowByIndex(null);       // Spawns the add row UI as the fi
     </ng-template>
 </{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Angular -->
 
 <!-- WebComponents -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```ts
 this.grid.rowAddTextTemplate = (ctx: IgcGridEmptyTemplateContext) => {
     return html`Adding Row`;
 }
 ```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: WebComponents -->
 
 <!-- React -->
+<!-- ComponentStart: Grid -->
+```tsx
+gridRef.current.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
+    return ('Adding Row');
+}
+```            
+<!-- ComponentEnd: Grid -->
+<!-- end: React -->
+
+<!-- React -->
+<!-- ComponentStart: HierarchicalGrid -->
 ```tsx
 gridRef.current.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
     return ('Adding Row');
 }
 ```
+<!-- ComponentEnd: HierarchicalGrid -->
 <!-- end: React -->
 
+<!-- Blazor -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
 <{ComponentSelector} Data="data" PrimaryKey="ProductID" AutoGenerate="false" RowEditable="true" RowAddTextTemplate="addTextTemplate">
 </{ComponentSelector}>
@@ -496,6 +658,8 @@ gridRef.current.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
     };
 }
 ```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: Blazor -->
 
 <!-- Angular -->
 ### ボタンのカスタマイズ
