@@ -621,7 +621,7 @@
     ]
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Tree Grid",
     "href": "grids/tree-grid/overview.md",
     "status": "",
@@ -822,6 +822,12 @@
         "name": "Summaries",
         "href": "grids/tree-grid/summaries.md",
         "status": ""
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "Toolbar",
+        "href": "grids/tree-grid/toolbar.md",
+        "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],

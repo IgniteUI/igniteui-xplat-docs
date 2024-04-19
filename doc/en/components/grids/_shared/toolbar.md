@@ -18,11 +18,11 @@ The {ProductName} Toolbar in is a container for UI operations in the {Platform} 
 
 The toolbar and the predefined UI components support {Platform} events and expose API for developers.
 
-<!-- ComponentStart: Grid -->
+<!-- ComponentStart: Grid, TreeGrid -->
 ## {Platform} Toolbar Grid Example
 
 `sample="/{ComponentSample}/toolbar-sample-1", height="420", alt="{Platform} {ComponentTitle} Toolbar Example"`
-<!-- ComponentEnd: Grid -->
+<!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 <!-- Angular, WebComponents -->
@@ -97,6 +97,7 @@ The predefined `Actions` and `Title` UI components are added inside the `GridToo
 ```
 <!-- ComponentEnd: Grid -->
 
+<!-- Angular -->
 <!-- ComponentStart: TreeGrid -->
 ```html
 <igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" [autoGenerate]="true">
@@ -111,6 +112,11 @@ The predefined `Actions` and `Title` UI components are added inside the `GridToo
     </igx-grid-toolbar>
 </igx-tree-grid>
 ```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+<!-- ComponentStart: TreeGrid -->
 ```html
 <igc-tree-grid id="treeGrid" primary-key="ID" foreign-key="ParentID" auto-generate="true">
     <igc-grid-toolbar>
@@ -125,6 +131,48 @@ The predefined `Actions` and `Title` UI components are added inside the `GridToo
 </igc-tree-grid>
 ```
 <!-- ComponentEnd: TreeGrid -->
+<!-- end: WebComponents -->
+
+<!-- React -->
+<!-- ComponentStart: TreeGrid -->
+```tsx
+<IgrTreeGrid data={data} primaryKey="ID" foreignKey="ParentID" autoGenerate="true">
+    <IgrGridToolbar key="toolbar">
+        <IgrGridToolbarTitle key="toolbarTitle">
+            <span key="toolbarTitleText">Tree Grid Toolbar<span>
+        </IgrGridToolbarTitle>
+        <IgrGridToolbarActions key="toolbarActions">
+            <IgrGridToolbarAdvancedFiltering key="advancedFiltering"></IgrGridToolbarAdvancedFiltering>
+            <IgrGridToolbarPinning key="pinning"></IgrGridToolbarPinning>
+            <IgrGridToolbarHiding key="hiding"></IgrGridToolbarHiding>
+            <IgrGridToolbarExporter key="export"></IgrGridToolbarExporter>
+        </IgrGridToolbarActions>
+    </IgrGridToolbar>
+</IgrTreeGrid>
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: React -->
+
+<!-- Blazor -->
+<!-- ComponentStart: TreeGrid -->
+```razor
+<IgbTreeGrid Data="Data" PrimaryKey="ID" ForeignKey="ParentID" AutoGenerate="true">
+    <IgbGridToolbar>
+        <IgbGridToolbarActions>
+            <IgbGridToolbarAdvancedFiltering>
+            </IgbGridToolbarAdvancedFiltering>
+            <IgbGridToolbarHiding>
+            </IgbGridToolbarHiding>
+            <IgbGridToolbarPinning>
+            </IgbGridToolbarPinning>
+            <IgbGridToolbarExporter>
+            </IgbGridToolbarExporter>
+        </IgbGridToolbarActions>
+    </IgbGridToolbar>
+</IgbTreeGrid>
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: Blazor -->
 
 <!-- Angular -->
 <!-- ComponentStart: HierarchicalGrid -->
@@ -234,6 +282,7 @@ Of course, each of these UIs can be added independently of each other, or may no
 ```
 <!-- ComponentEnd: Grid -->
 
+<!-- Angular -->
 <!-- ComponentStart: TreeGrid -->
 ```html
 <igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" [autoGenerate]="true">
@@ -241,6 +290,11 @@ Of course, each of these UIs can be added independently of each other, or may no
     </igx-grid-toolbar>
 </igx-tree-grid>
 ```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+<!-- ComponentStart: TreeGrid -->
 ```html
 <igc-tree-grid primary-key="ID" foreign-key="ParentID" auto-generate="true">
     <igc-grid-toolbar>
@@ -248,6 +302,29 @@ Of course, each of these UIs can be added independently of each other, or may no
 </igc-tree-grid>
 ```
 <!-- ComponentEnd: TreeGrid -->
+<!-- end: WebComponents -->
+
+<!-- React -->
+<!-- ComponentStart: TreeGrid -->
+```tsx
+<IgrTreeGrid data={data} primaryKey="ID" foreignKey="ParentID" autoGenerate="true">
+    <IgrGridToolbar key="toolbar">
+    </IgrGridToolbar>
+</IgrTreeGrid>
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: React -->
+
+<!-- Blazor -->
+<!-- ComponentStart: TreeGrid -->
+```razor
+<IgbTreeGrid Data="Data" PrimaryKey="ID" ForeignKey="ParentID" AutoGenerate="true">
+    <IgbGridToolbar>
+    </IgbGridToolbar>
+</IgbTreeGrid>
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: Blazor -->
 
 <!-- Angular -->
 <!-- ComponentStart: HierarchicalGrid -->
@@ -409,9 +486,9 @@ These features can be enabled independently from each other by following a patte
 
 Listed below are the main features of the toolbar with example code for each of them.
 
-<!-- ComponentStart: Grid -->
+<!-- ComponentStart: Grid, TreeGrid -->
 `sample="/{ComponentSample}/toolbar-sample-2", height="630", alt="{Platform} {ComponentTitle} toolbar sample 2"`
-<!-- ComponentEnd: Grid -->
+<!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 <!-- Angular, WebComponents -->
@@ -427,27 +504,27 @@ Setting a title for the toolbar in your grid is achieved by using the `GridToolb
 Users can provide anything from simple text to more involved templates.
 
 <!-- Angular -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igx-grid-toolbar>
     <igx-grid-toolbar-title>Grid toolbar title</igx-grid-toolbar-title>
 </igx-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Angular -->
 
 <!-- WebComponents -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-title>Grid toolbar title</igc-grid-toolbar-title>
 </igc-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: WebComponents -->
 
 <!-- React -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 <IgrGridToolbar key="toolbar">
     <IgrGridToolbarTitle key="toolbarTitle">
@@ -455,17 +532,17 @@ Users can provide anything from simple text to more involved templates.
     </IgrGridToolbarTitle>
 </IgrGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: React -->
 
 <!-- Blazor -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
 <IgbGridToolbar>
     <IgbGridToolbarTitle>Grid toolbar title</IgbGridToolbarTitle>
 </IgbGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Blazor -->
 
 ### Actions
@@ -476,7 +553,7 @@ As with the title portion of the toolbar, users can provide anything inside that
 toolbar interaction components.
 
 <!-- Angular -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igx-grid-toolbar>
     <igx-grid-toolbar-actions>
@@ -486,11 +563,11 @@ toolbar interaction components.
     </igx-grid-toolbar-actions>
 </igx-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Angular -->
 
 <!-- WebComponents -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
@@ -498,11 +575,11 @@ toolbar interaction components.
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
 <IgbGridToolbar>
     <IgbGridToolbarActions>
@@ -510,11 +587,11 @@ toolbar interaction components.
     </IgbGridToolbarActions>
 </IgbGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Blazor -->
 
 <!-- React -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 <IgrGridToolbar key="toolbar">
     <IgrGridToolbarActions key="toolbarActions">
@@ -522,7 +599,7 @@ toolbar interaction components.
     </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: React -->
 
 <!-- Angular -->
@@ -588,7 +665,7 @@ The `GridToolbarPinning` component provides the default UI for interacting with 
 The component is setup to work out of the box with the parent grid containing the toolbar as well as several input properties for customizing the UI, such as the component title, the placeholder for the component input and the height of the dropdown itself.
 
 <!-- Angular -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igx-grid-toolbar>
     <igx-grid-toolbar-actions>
@@ -601,11 +678,11 @@ The component is setup to work out of the box with the parent grid containing th
     </igx-grid-toolbar-actions>
 </igx-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Angular -->
 
 <!-- WebComponents -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
@@ -617,11 +694,11 @@ The component is setup to work out of the box with the parent grid containing th
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
 <IgbGridToolbar>
     <IgbGridToolbarActions>
@@ -629,11 +706,11 @@ The component is setup to work out of the box with the parent grid containing th
     </IgbGridToolbarActions>
 </IgbGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Blazor -->
 
 <!-- React -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 <IgrGridToolbar key="toolbar">
     <IgrGridToolbarActions key="toolbarActions">
@@ -641,7 +718,7 @@ The component is setup to work out of the box with the parent grid containing th
     </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: React -->
 
 ### Column Hiding
@@ -650,7 +727,7 @@ The `GridToolbarHiding` provides the default UI for interacting with column hidi
 title, the placeholder for the component input and the height of the dropdown itself.
 
 <!-- Angular -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igx-grid-toolbar>
     <igx-grid-toolbar-actions>
@@ -663,11 +740,11 @@ title, the placeholder for the component input and the height of the dropdown it
     </igx-grid-toolbar-actions>
 </igx-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Angular -->
 
 <!-- WebComponents -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
@@ -679,11 +756,11 @@ title, the placeholder for the component input and the height of the dropdown it
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
 <IgbGridToolbar>
     <IgbGridToolbarActions>
@@ -691,11 +768,11 @@ title, the placeholder for the component input and the height of the dropdown it
     </IgbGridToolbarActions>
 </IgbGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Blazor -->
 
 <!-- React -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 <IgrGridToolbar key="toolbar">
     <IgrGridToolbarActions key="toolbarActions">
@@ -703,7 +780,7 @@ title, the placeholder for the component input and the height of the dropdown it
     </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: React -->
 
 ### Advanced Filtering
@@ -711,7 +788,7 @@ title, the placeholder for the component input and the height of the dropdown it
 Toolbar Advanced Filtering component provides the default UI for the Advanced Filtering feature. The component exposes a way to change the default text of the button.
 
 <!-- Angular -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igx-grid-toolbar>
     <igx-grid-toolbar-actions>
@@ -719,11 +796,11 @@ Toolbar Advanced Filtering component provides the default UI for the Advanced Fi
     </igx-grid-toolbar-actions>
 </igx-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Angular -->
 
 <!-- WebComponents -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
@@ -731,11 +808,11 @@ Toolbar Advanced Filtering component provides the default UI for the Advanced Fi
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
 <IgbGridToolbar>
     <IgbGridToolbarActions>
@@ -743,11 +820,11 @@ Toolbar Advanced Filtering component provides the default UI for the Advanced Fi
     </IgbGridToolbarActions>
 </IgbGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Blazor -->
 
 <!-- React -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 <IgrGridToolbar key="toolbar">
     <IgrGridToolbarActions key="toolbarActions">
@@ -755,7 +832,7 @@ Toolbar Advanced Filtering component provides the default UI for the Advanced Fi
     </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: React -->
 
 ### Data Exporting
@@ -800,7 +877,7 @@ These range from changing the display text, to enabling/disabling options in the
 Here is a snippet showing some of the options which can be customized through the {Platform} template:
 
 <!-- Angular -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igx-grid-toolbar>
     <igx-grid-toolbar-actions>
@@ -817,11 +894,11 @@ Here is a snippet showing some of the options which can be customized through th
     </igx-grid-toolbar-actions>
 </igx-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Angular -->
 
 <!-- WebComponents -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
@@ -830,11 +907,11 @@ Here is a snippet showing some of the options which can be customized through th
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
 <IgbGridToolbar>
     <IgbGridToolbarActions>
@@ -842,11 +919,11 @@ Here is a snippet showing some of the options which can be customized through th
     </IgbGridToolbarActions>
 </IgbGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Blazor -->
 
 <!-- React -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 <IgrGridToolbar key="toolbar">
     <IgrGridToolbarActions key="toolbarActions">
@@ -854,7 +931,7 @@ Here is a snippet showing some of the options which can be customized through th
     </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: React -->
 
 In addition to changing the exported filename, the user can further configure the exporter options by waiting for the `ToolbarExporting` event and customizing the options entry in the event properties.
@@ -961,6 +1038,60 @@ igRegisterScript("WebGridToolbarExporting", (evt) => {
 
 <!-- ComponentEnd: Grid -->
 
+<!-- ComponentStart: TreeGrid -->
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="treeGrid"></{ComponentSelector}>
+```
+```ts
+constructor() {
+    var treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
+    treeGrid.addEventListener("toolbarExporting", this.configureExport);
+}
+
+public configureExport(evt: CustomEvent<IgcGridToolbarExportEventArgs>) {
+    const args = evt.detail;
+    const options: IgcExporterOptionsBase = args.options;
+    if (options) {
+        options.fileName = `Report_${new Date().toDateString()}`;
+        (args.exporter as any).columnExporting.subscribe((columnArgs: any) => {
+            columnArgs.cancel = columnArgs.header === 'Name';
+        });
+    }
+}
+```
+<!-- end: WebComponents -->
+
+```tsx
+function configureExport(evt: IgrGridToolbarExportEventArgs) {
+    const args = evt.detail;
+    const options: IgrExporterOptionsBase = args.options;
+
+    options.fileName = `Report_${new Date().toDateString()}`;
+    (args.exporter as any).columnExporting.subscribe((columnArgs: any) => {
+        columnArgs.cancel = columnArgs.header === 'Name';
+    });
+}
+
+<{ComponentSelector} toolbarExporting={configureExport}>
+</{ComponentSelector}>
+```
+
+```razor
+<{ComponentSelector} ToolbarExportingScript="ConfigureExport"></{ComponentSelector}>
+
+// In Javascript
+igRegisterScript("ConfigureExport", (evt) => {
+    const args = evt.detail;
+    const options = args.options;
+    options.fileName = `Report_${new Date().toDateString()}`;
+    args.exporter.columnExporting.subscribe((columnArgs) => {
+        columnArgs.cancel = columnArgs.header === 'Name';
+    });
+}, false);
+```
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
 
 <!-- WebComponents -->
@@ -1052,7 +1183,7 @@ If the actions part of the toolbar component is not sufficient for a particular 
 Here is a sample snippet:
 
 <!-- Angular -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <{ComponentSelector} #gridRef>
     <igx-grid-toolbar>
@@ -1071,11 +1202,11 @@ Here is a sample snippet:
     </igx-grid-toolbar>
 </{ComponentSelector}>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Angular -->
 
 <!-- WebComponents -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <{ComponentSelector} id="grid">
     <igc-grid-toolbar>
@@ -1089,11 +1220,11 @@ Here is a sample snippet:
     </igc-grid-toolbar>
 </{ComponentSelector}>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: WebComponents -->
 
 <!-- React -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 <{ComponentSelector}>
     <IgrGridToolbar>
@@ -1109,11 +1240,11 @@ Here is a sample snippet:
     </IgrGridToolbar>
 </{ComponentSelector}>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: React -->
 
 <!-- Blazor -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
 <{ComponentSelector}>
     <IgbGridToolbar>
@@ -1127,7 +1258,7 @@ Here is a sample snippet:
     </IgbGridToolbar>
 </{ComponentSelector}>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Blazor -->
 
 The following sample demonstrates how to add an additional button to the toolbar to clear the sorting set by clicking on the columns' headers:
