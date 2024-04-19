@@ -1785,7 +1785,13 @@
     "href": "scheduling/calendar.md"
   },
   {
-    "exclude": ["Angular"],
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Date Picker",
+    "href": "scheduling/date-picker.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "WebComponents"],
     "name": "Date Picker",
     "href": "editors/date-picker.md",
     "status": ""
