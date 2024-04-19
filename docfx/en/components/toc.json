@@ -776,7 +776,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Row Pinning",
         "href": "grids/tree-grid/row-pinning.md",
         "status": ""
