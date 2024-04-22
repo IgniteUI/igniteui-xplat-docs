@@ -740,10 +740,10 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "Paging",
         "href": "grids/tree-grid/paging.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
