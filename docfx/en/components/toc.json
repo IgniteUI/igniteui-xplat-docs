@@ -621,7 +621,7 @@
     ]
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Tree Grid",
     "href": "grids/tree-grid/overview.md",
     "status": "",
@@ -654,10 +654,10 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "Conditional Styling",
         "href": "grids/tree-grid/conditional-cell-styling.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "exclude": ["Angular", "React"],

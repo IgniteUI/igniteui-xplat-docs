@@ -89,14 +89,14 @@ igRegisterScript("RowClassesHandler", () => {
 <!-- WebComponents -->
 ```ts
 public rowClasses = {
-    activeRow: (row) => row.index === 0
+    activeRow: (row: IgcRowType) => row.index === 0
 }
 ```
 <!-- end: WebComponents -->
 
 ```tsx
 const rowClasses = {
-    activeRow: (row) => row.index === 0
+    activeRow: (row: IgrRowType) => row.index === 0
 }
 ```
 
@@ -122,8 +122,20 @@ The `{ComponentName}` control exposes the `RowStyles` property which allows cond
 
 > The callback signature for both `RowStyles` and `RowClasses` is:
 
+<!-- Angular -->
 ```ts
 (row: RowType) => boolean
+```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```ts
+(row: IgcRowType) => boolean
+```
+<!-- end: WebComponents -->
+
+```tsx
+(row: IgrRowType) => boolean
 ```
 
 ```razor
@@ -191,7 +203,7 @@ constructor() {
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
-
+<!-- Angular -->
 ```typescript
 public background = (row: RowType) => row.data.data['Title'] === 'CEO' ? '#6c757d' :
     row.data.data['Title'].includes('President') ? '#adb5bd' : row.data.data['Title'].includes('Director') ?  '#ced4da' :
@@ -207,9 +219,53 @@ public rowStyles = {
     color: (row: RowType) => row.data.data['Title'] === 'CEO' ? '#fff' : null
 };
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```typescript
+public rowStyles = {
+    'background': (row: IgcRowType) => row.data['Title'] === 'CEO' ? '#6c757d' :
+        row.data['Title'].includes('President') ? '#adb5bd' :
+        row.data['Title'].includes('Director') ? '#ced4da' :
+        row.data['Title'].includes('Manager') ? '#dee2e6' :
+        row.data['Title'].includes('Lead') ? '#e9ecef' :
+        row.data['Title'].includes('Senior') ? '#f8f9fa' : null,
+    'border-left': (row: IgcRowType) => row.data.data['Title'] === 'CEO' || row.data.data['Title'].includes('President') ?
+        '2px solid' : null,
+    'border-color': (row: IgcRowType) => row.data.data['Title'] === 'CEO' ? '#495057' : null,
+    color: (row: IgcRowType) => row.data.data['Title'] === 'CEO' ? '#fff' : null
+};
+```
+<!-- end: WebComponents -->
 
 ```razor
-Add treegrid styles
+igRegisterScript("WebTreeGridRowStylesHandler", () => {
+    return {
+        'background': (row) => row.data['Title'] === 'CEO' ? '#6c757d' :
+            row.data['Title'].includes('President') ? '#adb5bd' :
+            row.data['Title'].includes('Director') ? '#ced4da' :
+            row.data['Title'].includes('Manager') ? '#dee2e6' :
+            row.data['Title'].includes('Lead') ? '#e9ecef' :
+            row.data['Title'].includes('Senior') ? '#f8f9fa' : null,
+        'border-left': (row) => row.data['Title'] === 'CEO' || row.data['Title'].includes('President') ? '2px solid' : null,
+        'border-color': (row) => row.data['Title'] === 'CEO' ? '#495057' : null,
+        'color': (row) => row.data['Title'] === 'CEO' ? '#fff' : null
+    };
+}, true);
+```
+
+```tsx
+const rowStyles = {
+    'background': (row: IgrRowType) => row.data['Title'] === 'CEO' ? '#6c757d' :
+        row.data['Title'].includes('President') ?'#adb5bd' :
+        row.data['Title'].includes('Director') ? '#ced4da' :
+        row.data['Title'].includes('Manager') ? '#dee2e6' :
+        row.data['Title'].includes('Lead') ? '#e9ecef' :
+        row.data['Title'].includes('Senior') ? '#f8f9fa' : null,
+    'border-left': (row: IgrRowType) => row.data['Title'] === 'CEO' || row.data['Title'].includes('President') ? '2px solid' : null,
+    'border-color': (row: IgrRowType) => row.data['Title'] === 'CEO' ? '#495057' : null,
+    'color': (row: IgrRowType) => row.data['Title'] === 'CEO' ? '#fff' : null
+};
 ```
 
 <!-- Angular -->
@@ -219,6 +275,9 @@ Add treegrid styles
         width="100%" height="550px" [rowStyles]="rowStyles">
 </igx-tree-grid>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
 ```html
 <igc-tree-grid id="treeGrid" moving="true" primary-key="ID" foreign-key="ParentID"
         width="100%" height="550px">
@@ -230,10 +289,16 @@ constructor() {
     treeGrid.rowStyles = this.rowStyles;
 }
 ```
-<!-- end: Angular -->
+<!-- end: WebComponents -->
 
 ```razor
-Add treegrid markup
+<IgbTreeGrid AutoGenerate="true" PrimaryKey="ID" ForeignKey="ParentID" Data="Data" RowStylesScript="WebTreeGridRowStylesHandler">
+</IgbTreeGrid>
+```
+
+```tsx
+<IgrTreeGrid autoGenerate="true" primaryKey="ID" foreignKey="ParentID" data={data} rowStyles={rowStyles}>
+</IgrTreeGrid>
 ```
 
 <!-- ComponentEnd: TreeGrid -->
@@ -382,28 +447,28 @@ constructor() {
     </ng-template>
 </igx-column>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
 ```html
-<igc-column id="UnitPrice" field="UnitPrice" header="Unit Price"  data-type="Number"></igc-column>
+<igc-column id="unitPrice" field="UnitPrice" header="Unit Price" data-type="currency"></igc-column>
 ```
 ```ts
 constructor() {
-    var UnitPrice = this.UnitPrice = document.getElementById('UnitPrice') as IgcColumnComponent;
-    UnitPrice.cellClasses = this.priceClasses;
-    UnitPrice.bodyTemplate = this.unitPriceTemplate;
-}
-public unitPriceTemplate = (ctx: IgcCellTemplateContext) => {
-    return html`
-        ${if (ctx.cell.value == 0)}
-        <span>-</span>
-        ${if (ctx.cell.value != 0)}
-        <span>${ctx.cell.value}</span>
-    `;
+    var unitPrice = this.UnitPrice = document.getElementById('unitPrice') as IgcColumnComponent;
+    unitPrice.cellClasses = this.unitPriceCellClasses;
 }
 ```
-<!-- end: Angular -->
+<!-- end: WebComponents -->
 
 ```razor
-Add tree grid example
+<IgbColumn Field="UnitPrice" Header="Unit Price" DataType="GridColumnDataType.Currency" CellClassesScript="UnitPriceCellClassesHandler">
+</IgbColumn>
+```
+
+```tsx
+<IgrColumn field="UnitPrice" header="Unit Price" dataType="currency" cellClasses={unitPriceCellClasses}>
+</IgrColumn>
 ```
 
 <!-- ComponentEnd: TreeGrid -->
@@ -520,26 +585,48 @@ igRegisterScript("GrammyNominationsCellClassesHandler", () => {
 
 
 <!-- ComponentStart: TreeGrid -->
-
+<!-- WebComponents -->
 ```typescript
-private upPriceCondition = (rowData: any, columnKey: any): boolean => {
-    return rowData[columnKey] > 25;
-}
-
 private downPriceCondition = (rowData: any, columnKey: any): boolean => {
-    return rowData[columnKey] <= 25;
+    return rowData[columnKey] <= 5;
 }
 
-public priceClasses = {
+private upPriceCondition = (rowData: any, columnKey: any): boolean => {
+    return rowData[columnKey] > 5;
+}
+
+public unitPriceCellClasses = {
     downPrice: this.downPriceCondition,
     upPrice: this.upPriceCondition
 };
 ```
+<!-- end: WebComponents -->
 
 ```razor
-Add treegrid example
+igRegisterScript("UnitPriceCellClassesHandler", () => {
+    return {
+        downPrice: (rowData, columnKey) => rowData[columnKey] <= 5,
+        upPrice: (rowData, columnKey) => rowData[columnKey] > 5,
+    };
+}, true);
 ```
 
+```tsx
+function upPriceCondition(rowData: any, columnKey: any): boolean {
+    return rowData[columnKey] > 5;
+}
+
+function downPriceCondition(rowData: any, columnKey: any): boolean {
+    return rowData[columnKey] <= 5;
+}
+
+const unitPriceCellClasses = {
+    downPrice: downPriceCondition,
+    upPrice: upPriceCondition
+};
+```
+
+<!-- Angular -->
 ```scss
 ::ng-deep {
     .upPrice {
@@ -549,6 +636,17 @@ Add treegrid example
     .downPrice {
         color: green;
     }
+}
+```
+<!-- end: Angular -->
+
+```css
+.upPrice {
+    color: red !important;
+}
+
+.downPrice {
+    color: green !important;
 }
 ```
 
@@ -743,6 +841,68 @@ constructor() {
 <IgrColumn cellStyles={webGridCellStyles}></IgrColumn>
 ```
 <!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+<!-- WebComponents -->
+```ts
+public webTreeGridCellStylesHandler = {
+    background: (rowData, columnKey, cellValue, rowIndex) => rowIndex % 2 === 0 ? "#EFF4FD" : null,
+    color: (rowData, columnKey, cellValue, rowIndex) => {
+        if (columnKey === "UnitPrice") {
+            if (cellValue > 10) return "#dc3545";
+            if (cellValue < 5) return "#28a745";
+            if (cellValue >= 5 && cellValue <= 10) return "#17a2b8";
+        }
+    }
+}
+```
+```html
+<igc-column id="col1">
+</igc-column>
+```
+```ts
+constructor() {
+    var col1 = document.getElementById('col1') as IgcColumnComponent;
+    col1.cellStyles = this.webTreeGridCellStylesHandler;
+}
+```
+<!-- end: WebComponents -->
+
+```razor
+igRegisterScript("WebTreeGridCellStylesHandler", () => {
+    return {
+        background: (rowData, columnKey, cellValue, rowIndex) => rowIndex % 2 === 0 ? "#EFF4FD" : null,
+        color: (rowData, columnKey, cellValue, rowIndex) => {
+            if (columnKey === "UnitPrice") {
+                if (cellValue > 10) return "#dc3545";
+                if (cellValue < 5) return "#28a745";
+                if (cellValue >= 5 && cellValue <= 10) return "#17a2b8";
+            }
+        }
+    };
+}, true);
+```
+```razor
+<IgbColumn CellStylesScript="WebTreeGridCellStylesHandler">
+</IgbColumn>
+```
+
+```tsx
+const webTreeGridCellStyles = {
+    background: (rowData, columnKey, cellValue, rowIndex) => rowIndex % 2 === 0 ? "#EFF4FD" : null,
+    color: (rowData, columnKey, cellValue, rowIndex) => {
+        if (columnKey === "UnitPrice") {
+            if (cellValue > 10) return "#dc3545";
+            if (cellValue < 5) return "#28a745";
+            if (cellValue >= 5 && cellValue <= 10) return "#17a2b8";
+        }
+    }
+}
+```
+```tsx
+<IgrColumn cellStyles={webTreeGridCellStyles}></IgrColumn>
+```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 ```razor
