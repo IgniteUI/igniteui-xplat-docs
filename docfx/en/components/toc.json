@@ -621,7 +621,7 @@
     ]
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Tree Grid",
     "href": "grids/tree-grid/overview.md",
     "status": "",
@@ -764,7 +764,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "Row Dragging",
         "href": "grids/tree-grid/row-drag.md",
         "status": ""
