@@ -77,7 +77,7 @@ builder.Services.AddIgniteUIBlazor(
 これで、{Platform} `Stepper` とそのパネルの基本構成から始めることができます。
 
 ## {Platform} ステッパーの使用方法
-`Step` は、`Stepper` に属するすべてのステップの表現です。ステップは `Invalid`、`Active`、`Optional`、`Disabled`、`Complete` プロパティを提供し、ビジネス要件に応じてステップの状態を構成できます。
+`Step` は、`Stepper` に属するすべてのステップの表現です。ステップは `Step.Invalid`、`Step.Active`、`Step.Optional`、`Step.Disabled`、`Step.Complete` プロパティを提供し、ビジネス要件に応じてステップの状態を構成できます。
 
 ### {Platform} ステッパーの宣言
 ステップは、以下の方法のいずれかを使用して宣言できます。
@@ -336,14 +336,14 @@ linear プロパティが *true* に設定されている場合、ステッパ�
 
 <div class="divider--half"></div>
 
-<!-- WebComponents -->
+<!-- WebComponents, React -->
 ### Stepper のアニメーション
 
 {Platform} の `Stepper` のアニメーションにより、エンドユーザーは、定義されたステップを操作しているときに美しいユーザー操作体験を得ることができます。使用可能なアニメーション オプションは、ステッパーの向きによって異なります。
 
-ステッパーが水平方向の場合、デフォルトでは `slide` アニメーションを使用するように設定されています。その他に `fade` アニメーションもサポートされます。アニメーションは、`horizontalAnimation` 入力を介して構成されます。
+ステッパーが水平方向の場合、デフォルトでは `slide` アニメーションを使用するように設定されています。その他に `fade` アニメーションもサポートされます。アニメーションは、`HorizontalAnimation` 入力を介して構成されます。
 
-垂直方向のレイアウトでは、アニメーション タイプは `verticalAnimationType` プロパティを使用して定義できます。デフォルトでは、その値は `grow` に設定されており、ユーザーはそれを `fade` に設定することもできます。
+垂直方向のレイアウトでは、アニメーション タイプは `VerticalAnimation` プロパティを使用して定義できます。デフォルトでは、その値は `grow` に設定されており、ユーザーはそれを `fade` に設定することもできます。
 
 両方のアニメーション タイプ入力に `none` を設定すると、ステッパー アニメーションが無効になります。
 
@@ -352,7 +352,7 @@ linear プロパティが *true* に設定されている場合、ステッパ�
 `sample="/layouts/stepper/animations", height="600", alt="{Platform} Stepper アニメーションの例"`
 
 <div class="divider--half"></div>
-<!-- end: WebComponents -->
+<!-- end: WebComponents, React -->
 
 ## キーボード ナビゲーション
 
