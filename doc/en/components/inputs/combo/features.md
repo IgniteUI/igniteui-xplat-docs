@@ -66,7 +66,7 @@ const disableFiltering = (switchComponent: IgrSwitch) => {
     switchCaseSensitiveRef.current.disabled = switchComponent.checked;
 };
 
-const showCaseSencitiveIcon = (switchComponent: IgrSwitch) => {
+const showCaseSensitiveIcon = (switchComponent: IgrSwitch) => {
     comboRef.current.caseSensitiveIcon = switchComponent.checked;
 };
 

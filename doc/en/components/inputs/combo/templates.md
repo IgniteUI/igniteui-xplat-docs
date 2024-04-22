@@ -21,6 +21,7 @@ The {ProductName} ComboBox component allows defining custom templates for differ
 
 The `itemTemplate` is a custom template that if defined should be used when rendering items in the list of options.
 
+<!-- WebComponents -->
 ```ts
 import { ComboItemTemplate } from 'igniteui-webcomponents';
 
@@ -32,6 +33,7 @@ const itemTemplate: ComboItemTemplate<City> = ({ item }) => {
 
 combo.itemTempate = itemTemplate;
 ```
+<!-- end: WebComponents -->
 
 <!-- Blazor -->
 To template your items in a Blazor app, you need to define a template in a separate JavaScript file. Let's create a new file under the `wwwroot` directory called `templates.js`.
@@ -69,6 +71,7 @@ Then in our application we can refer to the template we declared via the `ItemTe
 
 The `groupHeaderTemplate` is a custom template that if defined should be used when rendering group headers in the list of options.
 
+<!-- WebComponents -->
 ```ts
 import { ComboItemTemplate } from 'igniteui-webcomponents';
 
@@ -78,6 +81,7 @@ const groupHeaderTemplate: ComboItemTemplate<City> = ({ item }) => {
 
 combo.groupHeaderTemplate = groupHeaderTemplate;
 ```
+<!-- end: WebComponents -->
 
 <!-- Blazor -->
 First define the group header template:
