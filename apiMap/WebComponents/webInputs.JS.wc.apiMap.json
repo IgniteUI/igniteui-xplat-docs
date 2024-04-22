@@ -817,6 +817,10 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "expandToItem"}], "originalName": "ExpandToItem"},
       {"names":[{"platform": "WebComponents", "mappedType": "TreeSelection","mappedName": "selection"}], "originalName": "Selection"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "expand"}], "originalName": "Expand"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "collapse"}], "originalName": "Collapse"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "select"}], "originalName": "Select"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "deselect"}], "originalName": "Deselect"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "singleBranchExpand"}], "originalName": "SingleBranchExpand"},
       {"names":[{"platform": "WebComponents", "mappedType": "SizableComponentSize","mappedName": "size"}], "originalName": "Size"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "toggleNodeOnClick"}], "originalName": "ToggleNodeOnClick"} ]
