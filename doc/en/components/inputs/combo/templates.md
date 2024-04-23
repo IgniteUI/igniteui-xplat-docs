@@ -64,8 +64,25 @@ Then in our application we can refer to the template we declared via the `ItemTe
 ```razor
 <IgbCombo ItemTemplateScript="ComboItemTemplate"></IgbCombo>
 ```
-
 <!-- end: Blazor -->
+
+<!-- React -->
+```tsx
+<IgrCombo
+    valueKey="id"
+    displayKey="name"
+    groupKey="country"
+    data={cities}
+    itemTemplate={renderItemTemplate}
+></IgrCombo>
+
+function renderItemTemplate(props: { dataContext: any}): any {
+    return (
+      <span><b>{props.dataContext.name}</b> [{props.dataContext.id}]</span>
+    );
+}
+```
+<!-- end: React -->
 
 ### Group Header Template
 
@@ -101,8 +118,25 @@ Then in our application we can refer to the template we declared via the `GroupH
 ```razor
 <IgbCombo GroupHeaderTemplateScript="ComboGroupHeaderTemplate"></IgbCombo>
 ```
-
 <!-- end: Blazor -->
+
+<!-- React -->
+```tsx
+<IgrCombo
+    valueKey="id"
+    displayKey="name"
+    groupKey="country"
+    data={cities}
+    groupHeaderTemplate={renderGroupHeaderTemplate}
+></IgrCombo>
+
+function renderGroupHeaderTemplate(props: { dataContext: any}): any {
+    return (
+    <span>Country of {props.dataContext.country}</span>
+    );
+}
+```
+<!-- end: React -->
 
 ## Slots
 Other than custom templates, the {ProductName} ComboBox component exposes several slots that allow users to pass custom content to different combo parts.
