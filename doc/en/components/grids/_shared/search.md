@@ -23,6 +23,7 @@ The following example represents `{ComponentName}` with search input box that al
 
 Let's start by creating our grid and binding it to our data. We will also add some custom styles for the components we will be using!
 
+<!-- ComponentStart: Grid -->
 <!-- Angular -->
 
 ```html
@@ -75,9 +76,65 @@ Let's start by creating our grid and binding it to our data. We will also add so
     <IgrColumn field="MarketNotion" dataType="number" sortable="true"></IgrColumn>  
 </{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+<!-- Angular -->
+```html
+<igx-tree-grid #treeGrid1 [data]="data" [autoGenerate]="false" primaryKey="ID" foreignKey="ParentID" height="480px" width="100%" [allowFiltering]="true">
+    <igx-column [field]="'Name'" dataType="string" [sortable]="true"></igx-column>
+    <igx-column [field]="'ID'" dataType="number" [sortable]="true"></igx-column>
+    <igx-column [field]="'Title'" dataType="string" [sortable]="true"></igx-column>
+    <igx-column [field]="'Age'" dataType="number" [sortable]="true"></igx-column>
+    <igx-column [field]="'HireDate'" dataType="date" [sortable]="true"></igx-column>
+</igx-tree-grid>
+```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<igc-tree-grid id="treeGrid" auto-generate="false" primary-key="ID" foreign-key="ParentID" allow-filtering="true" height="480px">
+    <igc-column field="Name" data-type="string" sortable="true"></igc-column>        
+    <igc-column field="ID" data-type="number" sortable="true"></igc-column>        
+    <igc-column field="Title" data-type="string" sortable="true"></igc-column>        
+    <igc-column field="Age" data-type="number" sortable="true"></igc-column>        
+    <igc-column field="HireDate" data-type="date" sortable="true"></igc-column>        
+</igc-tree-grid>
+```
+```ts
+private treeGrid: IgcTreeGridComponent;
+
+constructor() {
+    this.treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
+    this.treeGrid.data = new EmployeesFlatData();
+}
+```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrTreeGrid ref={gridRef} data={data} autoGenerate="false" primaryKey="ID" foreignKey="ParentID" allowFiltering="true" height="480px">
+    <IgrColumn field="Name" dataType="string" sortable="true"></IgrColumn>        
+    <IgrColumn field="ID" dataType="number" sortable="true"></IgrColumn>        
+    <IgrColumn field="Title" dataType="string" sortable="true"></IgrColumn>        
+    <IgrColumn field="Age" dataType="number" sortable="true"></IgrColumn>        
+    <IgrColumn field="HireDate" dataType="date" sortable="true"></IgrColumn>  
+</IgrTreeGrid>
+```
+
+```razor
+<IgbTreeGrid @ref=treeGrid AutoGenerate=false Data=EmployeesFlatData PrimaryKey="ID" ForeignKey="ParentID" AllowFiltering=true Height="480px">
+    <IgbColumn Field="Name" DataType="GridColumnDataType.String" Sortable=true></IgbColumn>
+    <IgbColumn Field="ID" DataType="GridColumnDataType.Number" Sortable=true></IgbColumn>
+    <IgbColumn Field="Title" DataType="GridColumnDataType.String" Sortable=true></IgbColumn>
+    <IgbColumn Field="Age" DataType="GridColumnDataType.Number" Sortable=true></IgbColumn>
+    <IgbColumn Field="HireDate" DataType="GridColumnDataType.Date" Sortable=true></IgbColumn>
+</IgbTreeGrid>
+```
+<!-- ComponentEnd: TreeGrid -->
 
 Great, and now let's prepare for the search API of our `{ComponentName}`! We can create a few properties, which can be used for storing the currently searched text and whether the search is case sensitive and/or by an exact match.
 
+<!-- ComponentStart: Grid -->
 <!-- Angular -->
 
 ```typescript
@@ -119,6 +176,42 @@ const exactMatchChipRef = useRef<IgrChip>(null);
 const iconButtonNextRef = useRef<IgrIconButton>(null);
 const [searchText, setSearchText] = useState('')
 ```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+<!-- WebComponents -->
+```ts
+private treeGrid: IgcTreeGridComponent;    
+
+private searchBox: IgcInputComponent;
+
+private clearIcon: IgcIconComponent;
+private nextIconButton: IgcIconButtonComponent;
+private prevIconButton: IgcIconButtonComponent;
+
+private caseSensitiveChip: IgcChipComponent;
+private exactMatchChip: IgcChipComponent;
+```
+<!-- end: WebComponents -->
+
+```razor
+private IgbTreeGrid treeGrid;
+
+public string searchText = "";
+public bool caseSensitive = false;
+public bool exactMatch = false;
+```
+
+```tsx
+const gridRef = useRef<IgrTreeGrid>(null);
+const clearIconRef = useRef<IgrIconButton>(null);
+const iconButtonPrevRef = useRef<IgrIconButton>(null);
+const caseSensitiveChipRef = useRef<IgrChip>(null);
+const exactMatchChipRef = useRef<IgrChip>(null);
+const iconButtonNextRef = useRef<IgrIconButton>(null);
+const [searchText, setSearchText] = useState('')
+```
+<!-- ComponentEnd: TreeGrid -->
 
 ### {Platform} Search Box Input
 
@@ -149,6 +242,7 @@ When searching by an exact match, the search API will highlight as results only 
 
 The methods from above return a **number** value (the number of times the `{ComponentName}` contains the given string).
 
+<!-- ComponentStart: Grid -->
 <!-- Angular -->
 ```html
 <!--searchgrid.component.html-->
@@ -181,6 +275,37 @@ public nextSearch(){
 ```
 
 <!-- end: WebComponents -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+<!-- WebComponents -->
+```html
+<igc-input id="searchBox" name="searchBox">
+</igc-input>
+```
+```ts
+constructor() {
+    this.searchBox = document.getElementById('searchBox') as IgcInputComponent;
+    this.caseSensitiveChip = document.getElementById('caseSensitiveChip') as IgcChipComponent;
+    this.exactMatchChip = document.getElementById('exactMatchChip') as IgcChipComponent;
+}
+
+public nextSearch() {
+    this.treeGrid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+}
+```
+<!-- end: WebComponents -->
+
+```razor
+<IgbInput ValueChanging="OnValueChanging" Value="@searchText" />
+```
+```razor
+public void NextSearch()
+{
+    this.treeGrid.FindNext(this.searchText, this.caseSensitive, this.exactMatch);
+}
+```
+<!-- ComponentEnd: TreeGrid -->
 
 ```tsx
 function handleOnSearchChange(input: IgrInput, event: IgrComponentValueChangedEventArgs) {
@@ -232,6 +357,7 @@ In order to freely search and navigate among our search results, let's create a 
 ```
 <!-- end: Angular -->
 
+<!-- ComponentStart: Grid -->
 ```razor
 <IgbIconButton Variant="IconButtonVariant.Flat" @onclick="PrevSearch">
     <IgbIcon IconName="prev" Collection="material"/>
@@ -279,6 +405,55 @@ public nextSearch() {
 }
 ```
 <!-- end: WebComponents -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+<!-- WebComponents -->
+```html
+<igc-icon-button id="prevIconBtn" variant="flat" name="prev" collection="material" ></igc-icon-button>
+<igc-icon-button id="nextIconBtn" variant="flat" name="next" collection="material"></igc-icon-button>
+```
+```ts
+constructor() {
+    this.nextIconButton = document.getElementById('nextIconBtn') as IgcIconButtonComponent;
+    this.prevIconButton = document.getElementById('prevIconBtn') as IgcIconButtonComponent;
+    this.nextIconButton.addEventListener("click", this.nextSearch);
+    this.prevIconButton.addEventListener("click", this.prevSearch);
+}
+
+public prevSearch() {
+    this.treeGrid.findPrev(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+}
+
+public nextSearch() {
+    this.treeGrid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+}
+```
+<!-- end: WebComponents -->
+
+```razor
+<IgbIconButton Variant="IconButtonVariant.Flat" @onclick="PrevSearch">
+    <IgbIcon IconName="prev" Collection="material"/>
+</IgbIconButton>
+<IgbIconButton Variant="IconButtonVariant.Flat" @onclick="NextSearch">
+    <IgbIcon IconName="next" Collection="material" />
+</IgbIconButton>
+
+@code {
+    private IgbTreeGrid treeGrid;
+
+    public void PrevSearch()
+    {
+        this.treeGrid.FindPrevAsync(this.searchText, this.caseSensitive, this.exactMatch);
+    }
+
+    public void NextSearch()
+    {
+        this.treeGrid.FindNextAsync(this.searchText, this.caseSensitive, this.exactMatch);
+    }
+}
+```
+<!-- ComponentEnd: TreeGrid -->
 
 ```tsx
 function prevSearch() {
@@ -319,6 +494,7 @@ public searchKeyDown(ev) {
 ```
 <!-- end: Angular -->
 
+<!-- ComponentStart: Grid -->
 <!-- WebComponents -->
 ```html
 <input id="search1"/>
@@ -389,6 +565,78 @@ We can also allow the users to navigate the results by using the keyboard's <kbd
     }
 }
 ```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+<!-- WebComponents -->
+```html
+<igc-input id="searchBox" name="searchBox">
+</igc-input>
+```
+```ts
+constructor() {
+    this.searchBox = document.getElementById('searchBox') as IgcInputComponent;
+
+    this.searchBox.addEventListener("keydown", (evt) => { this.onSearchKeydown(evt); });
+    this.searchBox.addEventListener("igcInput", (evt) => {
+        this.treeGrid.findNext(evt.detail, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+    });
+}
+
+public onSearchKeydown(evt: KeyboardEvent) {  
+    if (evt.key === 'Enter' || evt.key === 'ArrowDown') {
+        evt.preventDefault();
+        this.treeGrid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+    } else if (evt.key === 'ArrowUp') {
+        evt.preventDefault();
+        this.treeGrid.findPrev(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+    }
+}
+```
+<!-- end: WebComponents -->
+
+```tsx
+function searchKeyDown(e: KeyboardEvent<HTMLElement>) {
+    if (e.key === 'Enter' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        gridRef.current.findPrev(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    }
+}
+
+function handleOnSearchChange(input: IgrInput, event: IgrComponentValueChangedEventArgs) {
+    setSearchText(event.detail);
+    gridRef.current.findNext(event.detail, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+}
+
+<div onKeyDown={searchKeyDown}>
+    <IgrInput name="searchBox" value={searchText} inputOcurred={handleOnSearchChange}></IgrInput>
+</div>
+```
+
+```razor
+<IgbInput ValueChanging="OnValueChanging" Value="@searchText" @onkeydown="OnSearchKeyDown" />
+
+@code {
+    private void OnSearchKeyDown(KeyboardEventArgs evt)
+    {
+        if (evt.Key == "Enter" || evt.Key == "ArrowDown") {
+            this.treeGrid.FindNextAsync(this.searchText, this.caseSensitive, this.exactMatch);
+        } else if (evt.Key == "ArrowUp") {
+            this.treeGrid.FindPrevAsync(this.searchText, this.caseSensitive, this.exactMatch);
+        }
+    }
+
+    public void OnValueChanging(string newValue)
+    {
+        this.searchText = newValue;
+        this.treeGrid.FindNextAsync(this.searchText, this.caseSensitive, this.exactMatch);
+    }
+}
+```
+<!-- ComponentEnd: TreeGrid -->
 
 ### Case Sensitive and Exact Match
 
@@ -420,6 +668,7 @@ public updateExactSearch() {
 ```
 <!-- end: Angular -->
 
+<!-- ComponentStart: Grid -->
 <!-- WebComponents -->
 Now let's allow the user to choose whether the search should be case sensitive and/or by an exact match. For this purpose we can use simple checkbox inputs and bind to its `change` event where we can use the checkbox `checked` state.
 
@@ -448,6 +697,32 @@ public updateSearch() {
 }
 ```
 <!-- end: WebComponents -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+<!-- WebComponents -->
+Now let's allow the user to choose whether the search should be case sensitive and/or by an exact match. For this purpose we can use simple selectable `Chips` and bind to the `igcSelect` event to determine when the user interacts with them.
+
+```html
+<igc-chip selectable="true" id="caseSensitiveChip">Case Sensitive</igc-chip>
+<igc-chip selectable="true" id="exactMatchChip">Exact Match</igc-chip>
+```
+
+```ts
+constructor() {
+    this.caseSensitiveChip = document.getElementById('caseSensitiveChip') as IgcChipComponent;
+    this.exactMatchChip = document.getElementById('exactMatchChip') as IgcChipComponent;
+
+    this.caseSensitiveChip.addEventListener("igcSelect", (evt) => {
+        this.treeGrid.findNext(this.searchBox.value, evt.detail, this.exactMatchChip.selected);
+    });
+    this.exactMatchChip.addEventListener("igcSelect", (evt) => {
+        this.treeGrid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, evt.detail);
+    });
+}
+```
+<!-- end: WebComponents -->
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- Blazor -->
 
@@ -487,10 +762,10 @@ function updateSearch() {
 }
 
 <IgrChip ref={caseSensitiveChipRef} key="caseSensitiveChip" selectable="true">
-<span key="caseSensitive">Case Sensitive</span>
+    <span key="caseSensitive">Case Sensitive</span>
 </IgrChip>
 <IgrChip ref={exactMatchChipRef} key="exactMatchChip" selectable="true">
-<span key="exactMatch">Exact Match</span>
+    <span key="exactMatch">Exact Match</span>
 </IgrChip>
 ```
 
@@ -530,6 +805,7 @@ import { defineComponents, IgcInputComponent, IgcChipComponent, IgcIconComponent
 defineComponents(IgcInputComponent, IgcChipComponent, IgcIconComponent, IgcIconButtonComponent);
 ```
 
+<!-- ComponentStart: Grid -->
 ```tsx
 import { IgrGridModule } from "igniteui-react-grids";
 import { IgrChipModule } from "igniteui-react";
@@ -537,6 +813,17 @@ import { IgrChipModule } from "igniteui-react";
 const mods: any[] = [IgrGridModule, IgrChipModule];
 mods.forEach((m) => m.register());
 ```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```tsx
+import { IgrTreeGridModule } from "igniteui-react-grids";
+import { IgrChipModule } from "igniteui-react";
+
+const mods: any[] = [IgrTreeGridModule, IgrChipModule, IgrIconButtonModule, IgrInputModule];
+mods.forEach((m) => m.register());
+```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- Blazor -->
 
@@ -544,6 +831,7 @@ To do this, let's go and grab the `Input`, `Icon`, `IconButton` and the `Chip` m
 
 <!-- end: Blazor -->
 
+<!-- ComponentStart: Grid -->
 ```razor
 // eg. Program.cs register the following:
 builder.Services.AddIgniteUIBlazor(
@@ -552,7 +840,20 @@ builder.Services.AddIgniteUIBlazor(
     typeof(IgbIconButtonModule),
     typeof(IgbIconModule)
 );
-
+```
+<!-- ComponentEnd: Grid -->
+<!-- ComponentStart: TreeGrid -->
+```razor
+// eg. Program.cs register the following:
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbTreeGridModule),
+    typeof(IgbInputModule),
+    typeof(IgbIconButtonModule),
+    typeof(IgbIconModule)
+);
+```
+<!-- ComponentEnd: TreeGrid -->
+```razor
 @code {
     private IgbIcon searchIconRef { get; set; }
     const string searchIcon = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' /></svg>";
@@ -571,7 +872,7 @@ builder.Services.AddIgniteUIBlazor(
                 this.searchIconRef.RegisterIconFromTextAsync("clear", clearIcon, "material");
             }));
         }
-    
+    }
 }
 ```
 
@@ -638,10 +939,11 @@ constructor() {
 
 <!-- Blazor -->
 
-We will wrap all of our components inside an `Input`. On the left we will toggle between a search and a delete/clear icon (depending on whether the search input is empty or not). In the center, we will position the input itself. In addition, whenever the delete icon is clicked, we will update our `SearchText` and invoke the `{ComponentName}`'s `ClearSearch` method to clear the highlights.
+We will wrap all of our components inside an `Input`. <!-- ComponentStart: Grid -->On the left we will toggle between a search and a delete/clear icon (depending on whether the search input is empty or not).<!-- ComponentEnd: Grid --> In the center, we will position the input itself. In addition, whenever the delete icon is clicked, we will update our `SearchText` and invoke the `{ComponentName}`'s `ClearSearch` method to clear the highlights.
 
 <!-- end: Blazor -->
 
+<!-- ComponentStart: Grid -->
 ```razor
 <IgbInput ValueChanging="OnValueChanging" Value="@searchText" @onkeydown="OnSearchKeyDown">
     @if (searchText.Length == 0)
@@ -670,7 +972,34 @@ We will wrap all of our components inside an `Input`. On the left we will toggle
         </IgbIconButton>
     </div>
 </IgbInput>
+```
+<!-- ComponentEnd: Grid -->
+<!-- ComponentStart: TreeGrid -->
+```razor
+<IgbInput ValueChanging="OnValueChanging" Value="@searchText" @onkeydown="OnSearchKeyDown">
+    <IgbIcon slot="prefix" IconName="clear" Collection="material" @onclick="ClearSearch"/>
 
+    <div class="chips" slot="suffix">
+        <IgbChip Selectable=true SelectedChanged="UpdateCase">
+            Case Sensitive
+        </IgbChip>
+        <IgbChip  Selectable=true SelectedChanged="UpdateExactSearch">
+            Exact Match
+        </IgbChip>
+    </div>
+    <div class="searchButtons" slot="suffix">
+        <IgbIconButton Variant="IconButtonVariant.Flat" @onclick="PrevSearch">
+            <IgbIcon IconName="prev" Collection="material"/>
+        </IgbIconButton>
+        <IgbIconButton Variant="IconButtonVariant.Flat" @onclick="NextSearch">
+            <IgbIcon IconName="next" Collection="material" />
+        </IgbIconButton>
+    </div>
+</IgbInput>
+```
+<!-- ComponentEnd: TreeGrid -->
+
+```razor
 @code {
 
     public void clearSearch()
@@ -792,6 +1121,7 @@ public showResults() {
 </div>
 ```
 
+<!-- ComponentStart: Grid -->
 ```ts
 constructor() {
     const input = document.getElementById("searchBox") as IgcInputComponent;
@@ -804,16 +1134,33 @@ public updateSearch() {
     grid.findNext(input.value, caseSensitiveChip.selected, exactMatchChip.selected);
 }
 ```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```ts
+constructor() {
+    this.caseSensitiveChip = document.getElementById('caseSensitiveChip') as IgcChipComponent;
+    this.exactMatchChip = document.getElementById('exactMatchChip') as IgcChipComponent;
+
+    this.caseSensitiveChip.addEventListener("igcSelect", (evt) => {
+        this.treeGrid.findNext(this.searchBox.value, evt.detail, this.exactMatchChip.selected);
+    });
+    this.exactMatchChip.addEventListener("igcSelect", (evt) => {
+        this.treeGrid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, evt.detail);
+    });
+}
+```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- end: WebComponents -->
 
 ```tsx
 <div slot="suffix" key="chipSuffix">
     <IgrChip ref={caseSensitiveChipRef} key="caseSensitiveChip" selectable="true">
-    <span key="caseSensitive">Case Sensitive</span>
+        <span key="caseSensitive">Case Sensitive</span>
     </IgrChip>
     <IgrChip ref={exactMatchChipRef} key="exactMatchChip" selectable="true">
-    <span key="exactMatch">Exact Match</span>
+        <span key="exactMatch">Exact Match</span>
     </IgrChip>
 </div>
 ```
@@ -876,7 +1223,10 @@ constructor() {
     nextIconButton.addEventListener("click", this.nextSearch);
     prevIconButton.addEventListener("click", this.prevSearch);
 }
+```
 
+<!-- ComponentStart: Grid -->
+```ts
 public nextSearch() {
     const grid = document.getElementById('grid') as IgcGridComponent;
     const caseSensitiveChip = document.getElementById('caseSensitiveChip') as IgcChipComponent;
@@ -891,6 +1241,20 @@ public prevSearch() {
     grid.findPrev(input.value, caseSensitiveChip.selected, exactMatchChip.selected);
 }
 ```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```ts
+public prevSearch() {
+    this.treeGrid.findPrev(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+}
+
+public nextSearch() {
+    this.treeGrid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+}
+```
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- end: WebComponents -->
 
 ```tsx
@@ -977,7 +1341,6 @@ Additional components with relative APIs that were used:
 
 ## Additional Resources
 
-<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Filtering](filtering.md)
 * [Paging](paging.md)
@@ -987,7 +1350,6 @@ Additional components with relative APIs that were used:
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 
