@@ -60,7 +60,7 @@ namespace: Infragistics.Controls
 
 In this {ProductName} Grid example, you can see how users can do both basic and excel-style filtering, live-data sorting, and use grid summaries as well as cell templating. The demo also includes paging set to display 10 items per page.
 
-`sample="/{GridSample}/overview", height="700", alt="{Platform} grid example"`
+`sample="/{GridSample}/overview", img-src="../../images/marketing/grid-overview-sample.jpg", height="700", alt="{Platform} grid example"`
 
 
 
