@@ -94,7 +94,21 @@ In the following example, the treemap demonstrates the ability of changing the l
 
 `sample="/charts/tree-map/styling", height="600", alt="{Platform} Treemap Styling"`
 
+### {Platform} Treemap Highlighting
 
+In the following example, the treemap demonstrates the ability of node highlighting. There are two options for this feature. Each node can individually brighten, by decreasing its opacity, or cause all other nodes to trigger the same effect. To enable this feature, set `HighlightingMode`to Brighten or FadeOthers.
+
+`sample="/charts/tree-map/highlighting", height="600", alt="{Platform} Treemap Highlighting"`
+
+## {Platform} Treemap Percent based highlighting 
+
+`HighlightedItemsSource`: Specifies the datasource to read highlighted values from. If null then highlighted values are read from the ItemsSource property.
+`HighlightedValueMemberPath`: Specifies the name of the property in the datasource where the highlighted values are read.
+`HighlightedValueOpacity`: Controls the opacity of the normal value behind the highlighted value.
+`HighlightedValuesDisplayMode`: Enables or disables highlighted values.
+ - Auto: The treemap decides what mode to use.
+ - Overlay: The treemap displays highlighted values over top the normal value with a slight opacity applied to the normal value.
+ - Hidden: The treemap does not show highlighted values.
 
 <div class="divider--half"></div>
 
