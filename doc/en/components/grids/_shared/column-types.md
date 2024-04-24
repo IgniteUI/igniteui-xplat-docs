@@ -11,14 +11,14 @@ namespace: Infragistics.Controls
 
 The {Platform} {ComponentTitle} provides a default handling of *number*, *string*, *date*, *boolean*, *currency* and *percent* column data types, based on which the appearance of the default and editing templates will be present.
 
-<!-- ComponentStart: Grid -->
+<!-- ComponentStart: Grid, TreeGrid -->
 
 ## {Platform} {ComponentTitle} Column Types Example
 
 `sample="/{ComponentSample}/column-data-types", height="550", alt="{Platform} {ComponentTitle} column data types"`
 
 
-<!-- ComponentEnd: Grid -->
+<!-- ComponentEnd: Grid, TreeGrid -->
 
 ## {Platform} {ComponentTitle} Default Template
 
@@ -624,4 +624,3 @@ public init(column: IgxColumnComponent) {
 * For custom templates you can see [cell editing topic](cell-editing.md#cell-editing-templates)
 * [Editing](editing.md)
 * [Summaries](summaries.md)
-
