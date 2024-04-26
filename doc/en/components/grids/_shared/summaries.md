@@ -639,13 +639,23 @@ class WebGridDiscontinuedSummary {
 `sample="/{ComponentSample}/data-summaries-custom", height="650", alt="{Platform} {ComponentTitle} data summary custom"`
 
 <!-- end: WebComponents -->
+<!-- ComponentEnd: Grid, TreeGrid -->
 
+<!-- ComponentStart: Grid -->
 <!-- Blazor -->
 
 `sample="/{ComponentSample}/data-summary-options", height="650", alt="{Platform} {ComponentTitle} data summary options"`
 
 <!-- end: Blazor -->
-<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+<!-- Blazor -->
+
+`sample="/{ComponentSample}/data-summaries-custom", height="650", alt="{Platform} {ComponentTitle} data summary custom"`
+
+<!-- end: Blazor -->
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 `sample="/{ComponentSample}/data-summary-options", height="650", alt="{Platform} {ComponentTitle} data summary options"`
@@ -897,8 +907,15 @@ Then set the related CSS properties for that class:
 
 ### Demo
 
-`sample="/{ComponentSample}/groupby-summary-styling", height="710", alt="{Platform} {ComponentTitle} groupby summary styling"`
 <!-- ComponentEnd: Grid, TreeGrid -->
+
+<!-- ComponentStart: Grid -->
+`sample="/{ComponentSample}/groupby-summary-styling", height="710", alt="{Platform} {ComponentTitle} groupby summary styling"`
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+`sample="/{ComponentSample}/data-summary-options-styling", height="710", alt="{Platform} {ComponentTitle} summary styling"`
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 ```html
