@@ -22,6 +22,10 @@ _language: ja
 <IgbCombo SingleSelect></IgbCombo>
 ```
 
+```tsx
+<IgrCombo singleSelect></IgrCombo>
+```
+
 `sample="/inputs/combo/simplified", height="400", alt="{Platform} 単一選択コンボの例"`
 
 <div class="divider--half"></div>
@@ -36,10 +40,12 @@ _language: ja
 
 #### 項目の選択:
 
+<!-- WebComponents -->
 ```ts
 // select the item matching the 'BG01' value of the value key field.
 combo.select('BG01');
 ```
+<!-- end: WebComponents -->
 
 ```razor
 <IgbCombo SingleSelect @ref="Combo"></IgbCombo>
@@ -51,14 +57,23 @@ combo.select('BG01');
 }
 ```
 
+<!-- React -->
+```tsx
+// select the item matching the 'BG01' value of the value key field.
+comboRef.current.select('BG01');
+```
+<!-- end: React -->
+
 新たに選択せずに項目の選択を解除するには、`deselect` メソッドを呼び出します。
 
 #### 項目の選択解除:
 
+<!-- WebComponents -->
 ```ts
 // deselect the item matching the 'BG01' value of the value key field.
 combo.deselect('BG01');
 ```
+<!-- end: WebComponents -->
 
 ```razor
 <IgbCombo SingleSelect @ref="Combo"></IgbCombo>
@@ -69,6 +84,13 @@ combo.deselect('BG01');
     this.Combo.Deselect(new object[] { "UK01" });
 }
 ```
+
+<!-- React -->
+```tsx
+// deselect the item matching the 'BG01' value of the value key field.
+comboRef.current.deselect('BG01');
+```
+<!-- end: React -->
 
 ## 無効な機能
 
