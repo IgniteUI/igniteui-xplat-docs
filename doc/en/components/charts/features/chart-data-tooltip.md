@@ -71,6 +71,15 @@ The following example demonstrates a data tooltip with the added columns of Open
 `sample="/charts/financial-chart/data-tooltip", height="450", alt="{Platform} Financial Chart Data Tooltip Example"`
 
 
+
+## {Platform} Data Tooltip Grouping for Data Chart
+
+`DataLegendGroup` can be set, on all types of series, to a string that will categorize a group of series in Data Legend. Each group will have its own summary row displayed before another group of series is displayed: 
+By default, DataLegend will hide names of groups, but you can display group names by setting the `GroupRowVisible` property to true. `GroupingMode` should be set to "Grouped" and `LabelDisplayMode` should be set to "Visible" on the Data Tooltip Layer.
+
+`sample="/charts/data-chart/data-tooltip-grouping", height="450", alt="{Platform} Data Tooltip Grouping"`
+
+
 ## {Platform} Data Tooltip Grouping & Positioning for Category Chart & Financial Chart
 
 You can set `DataToolTipGroupingMode` property to either `Grouped` or `Individual` to group content for multiple series into single tooltip or separate content for each series in multiple tooltips. In the `Grouped` mode, you can customize where the tooltip is shown by setting the `DataToolTipGroupedPositionModeX` and `DataToolTipGroupedPositionModeY` properties. This essentially allows you to customize the horizontal and vertical alignments of the tooltip and whether you want it to track to the closest series points to the mouse position or pin the tooltip to edge of plot area.
@@ -96,6 +105,32 @@ The following example demonstrates a **DataToolTip** with the minimum and maximu
 You can change the default decimal display of values within the **DataToolTip** to be currency by changing the `DataToolTipValueFormatMode` property of the layer. The **DataToolTip** also exposes the ability to modify the culture of the displayed currency symbol by using its `DataToolTipValueFormatCulture` property and setting it to its corresponding culture tag. For example, the following sample demonstrates a chart with the `DataToolTipValueFormatCulture` set to "en-GB":
 
 `sample="/charts/financial-chart/data-tooltip-formatting-currency", height="450", alt="{Platform} Financial Chart Data Tooltip Formatting Currency Example"`
+
+## {Platform} Data Tooltip Styling
+
+The **DataToolTip** provides properties for styling each type of column. Each of these properties begins with Title, Label, Value, or Units, and you can style the text's color, font, and margin. For example, if you wanted to set the text color of each of these, you would set the `DataToolTipTitleTextColor`, `DataToolTipLabelTextColor`, `DataToolTipValueTextColor`, and `DataToolTipUnitsTextColor` properties.
+
+The following example demonstrates usage of the styling properties mentioned above:
+
+`sample="/charts/financial-chart/data-tooltip-styling-props", height="450", alt="{Platform} Financial Chart Data Tooltip Styling Example"`
+
+Several properties are exposed including grouping portions of the tooltip. 
+
+- `GroupTextMargin`
+- `GroupTextColor`
+- `GroupTextFontSize`
+- `GroupTextFontFamily`
+- `GroupTextFontStyle`
+- `GroupTextFontStretch`
+- `GroupTextFontWeight`
+- `HeaderTextMargin`
+- `HeaderTextColor`  
+- `HeaderTextFontSize`
+- `HeaderTextFontFamily`
+- `HeaderTextFontStyle`
+- `HeaderTextFontStretch` 
+- `HeaderTextFontWeight`
+
 
 ## API References
 
