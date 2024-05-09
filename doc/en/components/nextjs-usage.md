@@ -254,6 +254,17 @@ export default function GridDynamicComponent() {
 > [!Note]
 > Implementing lazy loading for components can enhance performance, but it is advisable to use it exclusively when the components are not immediately visible on the page.
 
+## Limitations
+- If your Next.js project is using Page routing then you should transpile the {ProductName} packages using the `next.config.js` options. Your config should contain the following:
+```tsx
+const nextConfig = {
+    transpilePackages: ['igniteui-react'],
+    experimental: {
+        esmExternals: "loose",
+    }
+}
+```
+
 ## Additional Resources
 
 * [Ignite UI for React](../components/general-getting-started.md)
