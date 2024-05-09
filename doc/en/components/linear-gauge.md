@@ -254,6 +254,87 @@ This is the primary measure displayed by the linear gauge component and is visua
 
 `sample="/gauges/linear-gauge/needle", height="125", alt="{Platform} linear gauge needle"`
 
+## Highlight Needle
+
+The linear gauge can be modified to show a second needle. This will make the main needle's `Value` appear with a lower opacity. To enable this first set `HighlightValueDisplayMode` to Overlay and then apply a `HighlightValue`.
+
+```html
+<igx-linear-gauge
+    #linearGauge
+    height="80px" 
+    width="400px"
+    value=70
+    minimumValue=0 
+    maximumValue=100 
+    interval=10
+    labelInterval=10
+    labelExtent=0.025
+    labelsPreTerminal=0
+    labelsPostInitial=0
+    needleBrush="Blue"
+    highlightValueDisplayMode="Overlay"
+    highlightValue=25
+    isHighlightNeedleDraggingEnabled=true>
+</igx-linear-gauge>
+```
+
+```tsx
+<IgrLinearGauge
+    height="80px"
+    width="100%"
+    value={75}
+    minimumValue={0} 
+    maximumValue={100} 
+    interval={10}
+    labelInterval={10}
+    labelExtent={0.025}
+    labelsPreTerminal={0}
+    labelsPostInitial={0}
+    needleBrush='blue'
+    highlightValueDisplayMode="Overlay"
+    highlightValue={25} 
+    isHighlightNeedleDraggingEnabled={true}
+    />
+```
+
+```html
+<igc-linear-gauge
+    id="gauge"
+    height="80px"
+    width="100%"
+    minimum-value="0" 
+    maximum-value="100" 
+    value="75"
+    interval="10"
+    label-interval="10"
+    label-extent="0.025"
+    labels-pre-terminal="0"
+    labels-post-initial="0"
+    needle-brush="blue"
+    highlight-value-display-mode="Overlay"
+    highlight-value=25 
+    is-highlight-needle-dragging-enabled=true>
+</igc-linear-gauge>
+```
+
+```razor
+<IgbLinearGauge Height="80px" Width="100%"
+    MinimumValue="0" 
+    MaximumValue="100" 
+    Value="75"
+    Interval="10"
+    LabelInterval="10"
+    LabelExtent="0.025"
+    LabelsPreTerminal="0"
+    LabelsPostInitial="0"
+    NeedleBrush="Blue"
+    HighlightValueDisplayMode="HighlightedValueDisplayMode.Overlay"
+    HighlightValue=25
+    IsHighlightNeedleDraggingEnabled=true>
+</IgbLinearGauge>
+```
+
+`sample="/gauges/linear-gauge/highlight-needle", height="125", alt="{Platform} linear gauge highlight needle"`
 
 ## Ranges
 The ranges are visual elements that highlight a specified range of values on a scale. Their purpose is to visually communicate the qualitative state of the performance bar measure, illustrating at the same times the degree to which it resides within that state.
