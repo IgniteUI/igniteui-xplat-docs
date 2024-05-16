@@ -258,9 +258,83 @@ MaximumValue="55" TargetValue="43">
 
 `sample="/gauges/bullet-graph/measures", height="125", alt="{Platform} ブレット グラフ メジャー"`
 
+## Highlight Value
+
+バレット グラフのパフォーマンス値をさらに変更して、進捗状況をハイライト値として表示することもできます。これにより、`Value` が低い不透明度で表示されます。良い例としては、`Value` が 50 で、`HighlightValue` が 25 に設定されている場合です。これは、`TargetValue` の値が何に設定されているかに関係なく、50% のパフォーマンスを表します。これを有効にするには、まず `HighlightValueDisplayMode` を Overlay に設定し、次に `HighlightValue` を `Value` よりも低い値に適用します。
+
+```html
+<igx-bullet-graph
+    #bulletGraph
+    height="80px" 
+    width="400px"
+    value=70 
+    targetValue=90
+    minimumValue=0 
+    maximumValue=100 
+    interval=10
+    labelInterval=10
+    labelExtent=0.025
+    labelsPreTerminal=0
+    labelsPostInitial=0
+    highlightValueDisplayMode="Overlay"
+    highlightValue=25>
+  </igx-bullet-graph>
+```
+
+```tsx
+<IgrBulletGraph
+    height="80px"
+    width="100%"
+    value={70} 
+    targetValue={90}
+    interval={10}
+    minimumValue={0} 
+    maximumValue={100} 
+    labelInterval={10}
+    labelExtent={0.025}
+    labelsPreTerminal={0}
+    labelsPostInitial={0}
+    highlightValueDisplayMode="Overlay"
+    highlightValue={25} />
+```
+
+```html
+<igc-bullet-graph
+    id="gauge"
+    height="80px"
+    width="100%"
+    minimum-value="0" 
+    maximum-value="100"
+    value="70" 
+    interval="10"
+    target-value="90"
+    label-interval="10"
+    label-extent="0.025"
+    labels-pre-terminal="0"
+    labels-post-initial="0"
+    highlight-value-display-mode="Overlay"
+    highlight-value="25" >
+</igc-bullet-graph>
+```
+
+```razor
+<IgbBulletGraph Height="80px" Width="100%"
+    MinimumValue="0" 
+    Value="70"
+    TargetValue="90"
+    Interval="10"
+    MaximumValue="100" 
+    LabelInterval="10"
+    LabelExtent="0.025"
+    HighlightValueDisplayMode="HighlightedValueDisplayMode.Overlay"
+    HighlightValue=25>
+</IgbBulletGraph>
+```
+
+`sample="/gauges/bullet-graph/highlight-needle", height="125", alt="{Platform} バレット グラフの針のハイライト"`
 
 ## 比較範囲
-範囲はスケールで指定した値の範囲を強調表示する視覚的な要素です。その目的は、パフォーマンス バー メジャーの質的状態を視覚で伝えると同時に、その状態をレベルとして示すことにあります。
+範囲はスケールで指定した値の範囲をハイライト表示する視覚的な要素です。その目的は、パフォーマンス バー メジャーの質的状態を視覚で伝えると同時に、その状態をレベルとして示すことにあります。
 
 ```html
 <igx-bullet-graph
@@ -576,7 +650,7 @@ MaximumValue="55" TargetValue="43">
 
 
 ## スケール
-スケールはゲージで値の全範囲を強調表示する視覚的な要素です。外観やスケールの図形のカスタマイズ、更にスケールを反転 (`IsScaleInverted` プロパティを使用) させて、すべてのラベルを左から右ではなく、右から左へ描画することもできます。
+スケールはゲージで値の全範囲をハイライト表示する視覚的な要素です。外観やスケールの図形のカスタマイズ、更にスケールを反転 (`IsScaleInverted` プロパティを使用) させて、すべてのラベルを左から右ではなく、右から左へ描画することもできます。
 
 ```html
 <igx-bullet-graph
