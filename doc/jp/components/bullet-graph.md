@@ -258,7 +258,7 @@ MaximumValue="55" TargetValue="43">
 
 `sample="/gauges/bullet-graph/measures", height="125", alt="{Platform} ブレット グラフ メジャー"`
 
-## Highlight Value
+## ハイライト値
 
 バレット グラフのパフォーマンス値をさらに変更して、進捗状況をハイライト値として表示することもできます。これにより、`Value` が低い不透明度で表示されます。良い例としては、`Value` が 50 で、`HighlightValue` が 25 に設定されている場合です。これは、`TargetValue` の値が何に設定されているかに関係なく、50% のパフォーマンスを表します。これを有効にするには、まず `HighlightValueDisplayMode` を Overlay に設定し、次に `HighlightValue` を `Value` よりも低い値に適用します。
 
