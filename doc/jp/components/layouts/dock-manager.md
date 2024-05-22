@@ -286,7 +286,7 @@ const layout: IgcDockManagerLayout = {
 
 ### アクティブ ペイン
 
-ドック マネージャー コンポーネントは、フォーカスを含むコンテンツ ペインを強調表示し、`ActivePane` プロパティで公開します。プロパティを設定することによってアクティブ ペインをプログラムで変更できます。`ActivePaneChanged` イベントにサブスクライブして、`ActivePane` プロパティの変更をリッスンすることもできます。
+ドック マネージャー コンポーネントは、フォーカスを含むコンテンツ ペインをハイライト表示し、`ActivePane` プロパティで公開します。プロパティを設定することによってアクティブ ペインをプログラムで変更できます。`ActivePaneChanged` イベントにサブスクライブして、`ActivePane` プロパティの変更をリッスンすることもできます。
 
 ```ts
 this.dockManager.addEventListener('activePaneChanged', ev => {
