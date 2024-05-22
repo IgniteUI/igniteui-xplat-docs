@@ -1760,6 +1760,12 @@
     "header": true
   },
   {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "Banner",
+    "href": "notifications/banner.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular"],
     "name": "Snackbar",
     "href": "notifications/snackbar.md"
