@@ -61,7 +61,7 @@ _language: ja
 
 この {ProductName} Grid の例では、ユーザーが基本スタイルと Excel スタイルの両方のフィルタリング、ライブ データのソート、およびグリッド集計とセル テンプレートの使用を実行する方法を確認できます。デモには、1 ページあたり 10 項目を表示するように設定されたページングも含まれています。
 
-`sample="/{GridSample}/overview", img-src="../../images/marketing/grid-overview-sample.jpg", height="700", alt="{Platform} grid の例"`
+`sample="/{GridSample}/overview", img-src="https://static.infragistics.com/marketing/Website/products/ignite-ui-blazor/ignite-ui-blazor-client-grid", height="700", alt="{Platform} grid の例"`
 
 
 
