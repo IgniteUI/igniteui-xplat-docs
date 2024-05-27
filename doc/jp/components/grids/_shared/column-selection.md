@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 列選択の概要
 
-{Platform} {ComponentTitle} の {ProductName} 列選択機能は、シングルクリックで列全体を選択して強調表示する、簡略化された Excel のような方法を提供します。これは `columnSelection` 入力を通じて有効にできます。豊富な API のおかげで、この機能により、選択状態の操作、選択された部分からのデータ抽出、データ分析操作、視覚化が簡単に行えます。
+{Platform} {ComponentTitle} の {ProductName} 列選択機能は、シングルクリックで列全体を選択してハイライト表示する、簡略化された Excel のような方法を提供します。これは `columnSelection` 入力を通じて有効にできます。豊富な API のおかげで、この機能により、選択状態の操作、選択された部分からのデータ抽出、データ分析操作、視覚化が簡単に行えます。
 
 ## {Platform} {ComponentTitle} 列選択の例
 

@@ -464,7 +464,7 @@ Blazor データ グリッドの作成について詳しくは、このチュー
 - [パフォーマンス](performance.md)
 - [行のピン固定](row-pinning.md)
 - [行グループ](row-grouping.md)
-- [行の強調表示](row-highlighting.md)
+- [行のハイライト表示](row-highlighting.md)
 
 <!-- TODO fix build flagging list items -->
 <!-- React -->

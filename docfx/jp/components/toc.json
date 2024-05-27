@@ -1521,7 +1521,7 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "タブ",
     "href": "layouts/tabs.md",
     "status": ""
@@ -1653,7 +1653,7 @@
     "href": "inputs/chip.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "コンボ ボックス",
     "href": "inputs/combo/overview.md",
     "items": [

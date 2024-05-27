@@ -21,6 +21,7 @@ _language: ja
 ## {ProductName} でタブを使用する方法
 
 <!-- WebComponents -->
+
 まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
@@ -29,7 +30,23 @@ npm install {PackageWebComponents}
 
 <!-- end: WebComponents -->
 
+<!-- React -->
+
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+<!-- end: React -->
+
 `Tabs` を使用する前に、次のように登録する必要があります:
+
+```tsx
+import { IgrTabsModule, IgrTabs, IgrTab,  IgrTabPanel} from "igniteui-react";
+
+IgrTabsModule.register();
+```
 
 
 ```razor
@@ -70,6 +87,17 @@ defineComponents(IgcTabsComponent);
 </IgbTabs>
 ```
 
+```tsx
+<IgrTabs>
+    <IgrTab panel="first">Tab 1</IgrTab>
+    <IgrTab panel="second">Tab 2</IgrTab>
+    <IgrTab panel="third">Tab 3</IgrTab>
+    <IgrTabPanel id="first">Panel 1</IgrTabPanel>
+    <IgrTabPanel id="second">Panel 2</IgrTabPanel>
+    <IgrTabPanel id="third">Panel 3</IgrTabPanel>
+</IgrTabs>
+```
+
 ### 選択
 
 ユーザーがキーを押すかクリックして項目を選択すると、`Tabs` は `Change` イベントを発行します。`Select` メソッドを使用すると、パネルを文字列値として指定してタブを選択できます。
@@ -88,6 +116,10 @@ defineComponents(IgcTabsComponent);
 
 ```razor
 <IgbTab Panel="first" Disabled>Tab 1</IgbTab>
+```
+
+```tsx
+<IgrTab panel="first" disabled={true}>Tab 1</IgrTab>
 ```
 
 ### 配置
@@ -131,7 +163,7 @@ defineComponents(IgcTabsComponent);
 
 
 
-### スタイル設定
+## スタイル設定
 
 `Tabs` コンポーネントは、そのすべての要素の CSS パーツを公開します。
 

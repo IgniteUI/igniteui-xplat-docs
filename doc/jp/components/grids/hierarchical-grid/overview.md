@@ -21,7 +21,7 @@ _language: ja
 
 ### 依存関係
 
-{Platform} 階層グリッドを初期化するには、{ProductName} パッケージをインストールする必要があります。
+{Platform} 階層グリッドを初期化するには、<!-- Blazor -->{PackageCommon} パッケージ<!-- end: Blazor --><!-- WebComponents -->`{PackageGrids}` パッケージ<!-- end: WebComponents --><!-- React -->`{PackageCommon}` と `{PackageGrids}` パッケージ<!-- end: React -->をインストールする必要があります。
 
 <!-- Blazor -->
 
@@ -44,16 +44,22 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 
 <!-- end: Blazor -->
 
-<!-- Angular, React, WebComponents -->
+<!-- end: Blazor -->
 
-{Platform} 階層グリッドのパッケージをインストールするときは、core パッケージもインストールする必要があります。
-
+<!-- Angular, WebComponents -->
 ```cmd
-npm install --save {PackageCore}
 npm install --save {PackageGrids}
-npm install --save {PackageInputs}
-npm install --save {PackageLayouts}
 ```
+<!-- end: Angular, WebComponents -->
+
+<!-- React -->
+```cmd
+npm install --save {PackageCommon}
+npm install --save {PackageGrids}
+```
+<!-- end: React -->
+
+<!-- Angular, React, WebComponents -->
 
 グリッドを使用するには、次のインポートも含める必要があります。
 
