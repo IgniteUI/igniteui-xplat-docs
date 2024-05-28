@@ -13,6 +13,8 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### {PackageCharts}
 
+ - New Data Filtering via the `InitialFilter` property. Apply filter expressions to filter the chart data to a subset of records. Can be used for drill down large data.
+
 - `XamRadialChart` 
     - New Label Mode
         The `CategoryAngleAxis` for the now exposes a `LabelMode` property that allows you to further configure the location of the labels. This allows you to toggle between the default mode by selecting the `Center` enum, or use the new mode, `ClosestPoint`, which will bring the labels closer to the circular plot area.
