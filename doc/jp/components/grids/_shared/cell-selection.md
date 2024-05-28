@@ -8,9 +8,9 @@ namespace: Infragistics.Controls
 _language: ja
 ---
 
-# {Platform} セルの選択
+# {Platform} {ComponentTitle} セルの選択
 
-{Platform} {ComponentTitle} の {ProductName} セル選択により、豊富なデータ選択機能が有効になり、グリッド コンポーネントで強力な API が提供されます。 {Platform} {ComponentTitle} は、次の 3 つの選択モードをサポートしています。
+{Platform} {ComponentTitle} の {ProductName} セル選択により、豊富なデータ選択機能が有効になり、`{ComponentName}` コンポーネントで強力な API が提供されます。 {Platform} {ComponentTitle} は、次の 3 つの選択モードをサポートしています。
 
 - {ComponentTitle} 複数セルの選択
 - {ComponentTitle} 単一選択
@@ -32,7 +32,7 @@ _language: ja
 
 ## 選択タイプ
 
-### {ComponentTitle} 複数セルの選択
+### {Platform} {ComponentTitle} 複数セルの選択
 
 <!-- ComponentStart: HierarchicalGrid -->
 これは、親グリッドと子グリッドの両方でのデフォルトのセル選択モードです。セルの選択は一度に 1 つのグリッドで行うことができますが、クロス グリッド範囲の選択を行うことか、複数のグリッドでセルを選択することはできないことに注意してください。範囲選択およびマウス ドラッグ機能に関連する各キーの組み合わせは、同じグリッドでのみ使用できます。
@@ -94,7 +94,7 @@ _language: ja
 以下は、範囲の選択、選択の解除、または選択したセル データを取得する方法です。
 
 
-<!-- Angular, WebComponents, React -->
+<!-- Angular, WebComponents, React, Blazor -->
 
 ### 範囲の選択
 
@@ -112,7 +112,29 @@ const range = { rowStart: 2, rowEnd: 2, columnStart: 1, columnEnd: 1 };
 gridRef.current.selectRange(range);
 ```
 
-<!-- end: Angular, WebComponents, React -->
+<!-- Blazor -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
+```razor
+<{ComponentSelector} @ref=grid  CellSelection="GridSelectionMode.Multiple" AutoGenerate=true></<{ComponentSelector}>
+
+@code {
+    private {ComponentSelector} grid;
+
+    private async void SetSelection()
+    {        
+        IgbGridSelectionRange selectionRange = new IgbGridSelectionRange();
+        selectionRange.ColumnStart = 1;
+        selectionRange.ColumnEnd = 1;
+        selectionRange.RowStart = 2;
+        selectionRange.RowEnd = 2;
+
+        this.grid.SelectRange(new IgbGridSelectionRange[] {});
+    }
+}
+```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: Blazor -->
+<!-- end: Angular, WebComponents, React, Blazor -->
 
 ### セル選択のクリア
 
@@ -145,10 +167,10 @@ gridRef.current.clearCellSelection();
 `GetSelectedData` は、選択されたデータの配列をディクショナリで返します。以下は例です。
 
 ```razor
-<IgbGrid @ref=grid  CellSelection="GridSelectionMode.Multiple" AutoGenerate=true></IgbGrid>
+<{ComponentSelector} @ref=grid  CellSelection="GridSelectionMode.Multiple" AutoGenerate=true></<{ComponentSelector}>
 
 @code {
-    private IgbGrid grid;
+    private {ComponentSelector} grid;
 
     private async void GetSelectedData()
     {
@@ -301,6 +323,35 @@ expectedData = [
 
 <!-- ComponentEnd: TreeGrid -->
 
+<!-- ComponentStart: HierarchicalGrid -->
+
+<!-- WebComponents -->
+```ts
+<igc-hierarchical-grid class="hGrid"></igc-hierarchical-grid>
+```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrHierarchicalGrid className="hGrid"></IgrHierarchicalGrid>
+```
+
+```razor
+<IgbHierarchicalGrid Class="hGrid"></IgbHierarchicalGrid>
+```
+
+Then set the related CSS properties for that class:
+
+```css
+.hGrid {
+    --ig-grid-cell-selected-text-color: #fff;
+    --ig-grid-cell-active-border-color: #f2c43c;
+    --ig-grid-cell-selected-background: #0062a3;
+    --ig-grid-cell-editing-background: #0062a3;
+}
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
+
 ### デモ
 
 `sample="/{ComponentSample}/cell-selection-style", height="620", alt="{Platform} {ComponentTitle} セル選択のスタイル設定の例"`
@@ -366,7 +417,7 @@ $custom-grid-theme: grid-theme(
 ```
 
 
-カスタム テーマを適用すると、選択したグリッドセルが選択した色で強調表示されます。
+カスタム テーマを適用すると、選択したグリッドセルが選択した色でハイライト表示されます。
 
 ### デモ
 `sample="/{ComponentSample}/multi-cell-selection-style", height="620", alt="{Platform} {ComponentTitle} 複数セル選択の例"`
@@ -382,9 +433,10 @@ $custom-grid-theme: grid-theme(
 
 * `{ComponentName}`
 
+
 ## その他のリソース
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart:  Grid, HierarchicalGrid -->
 * [選択](selection.md)
 * [行選択](row-selection.md)
 * [フィルタリング](filtering.md)
