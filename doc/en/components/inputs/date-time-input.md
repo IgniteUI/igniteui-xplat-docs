@@ -55,6 +55,18 @@ IgrDateTimeInputModule.register();
 
 Before using the `DateTimeInput`, you need to register it as follows:
 
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbDateTimeInputModule));
+```
+
+You will also need to link an additional CSS file to apply the styling to the `DateTimeInput` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
 <!-- end: Blazor -->
 
 ### Value binding
@@ -74,6 +86,14 @@ public dateTimeInputRef(input: IgrDateTimeInput) {
 }
 ```
 
+```razor
+<IgbDateTimeInput @ref="DateTimeInputRef" Value="@Date">
+    <IgbIcon IconName="clear" Collection="myIcons" slot="prefix" @onclick="OnClear"></IgbIcon>
+</IgbDateTimeInput>
+```
+
+<!-- WebComponents, React -->
+
 The `DateTimeInput` also accepts [ISO 8601](https://tc39.es/ecma262/#sec-date-time-string-format) strings.
 
 The string can be a full `ISO` string, in the format `YYYY-MM-DDTHH:mm:ss.sssZ` or it could be separated into date-only and time-only portions.
@@ -88,6 +108,8 @@ Time-only strings are normally not defined in the `ECMA` specification, however 
 If a full `ISO` string is bound, the directive will parse it only if all elements required by [Date.parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#date_time_string_format) are provided.
 
 All falsy values, including `InvalidDate` will be parsed as `null`. Incomplete date-only, time-only, or full `ISO` strings will be parsed as `InvalidDate`.
+
+<!-- end: WebComponents, React -->
 
 ### Keyboard Navigation
 
@@ -138,6 +160,12 @@ To set a specific input format, pass it as a string to the `DateTimeInput`. This
 
 ```tsx
 <IgrDateTimeInput ref={this.dateTimeInputRef} inputFormat="dd-MM-yy" displayFormat="medium"></IgrDateTimeInput>
+```
+
+```razor
+<IgbDateTimeInput @ref="DateTimeInputRef" InputFormat="dd-MM-yy" DisplayFormat="medium">
+    <IgbIcon IconName="clear" Collection="myIcons" slot="prefix" @onclick="OnClear"></IgbIcon>
+</IgbDateTimeInput>
 ```
 
 If all went well, you should see the following in your browser:
@@ -199,16 +227,16 @@ Furthermore, users can construct a displayFormat string using the supported symb
 
 ## Min/max value
 
-You can specify `MinValue` and `MaxValue` properties to restrict input and control the validity of the component. Just like the `Value` property, they can be of type `string`.
+You can specify `Min` and `Max` properties to restrict input and control the validity of the component. Just like the `Value` property, they can be of type `string`.
 
 ```ts
 const input = document.querySelector('igc-date-time-input') as IgcDateTimeInputComponent;
 
-input.minValue = new Date(2021, 0, 1);
+input.min = new Date(2021, 0, 1);
 ```
 
 ```html
-<igc-date-time-input max-value="2022-01-01T21:00:00.000Z"></igc-date-time-input>
+<igc-date-time-input max="2022-01-01T21:00:00.000Z"></igc-date-time-input>
 ```
 
 ```tsx
@@ -219,7 +247,13 @@ public dateTimeInputRef(input: IgrDateTimeInput) {
 ```
 
 ```tsx
- <IgrDateTimeInput ref={this.dateTimeInputRef} maxValue={new Date(2024, 6, 25)}></IgrDateTimeInput>
+ <IgrDateTimeInput ref={this.dateTimeInputRef} max={new Date(2024, 6, 25)}></IgrDateTimeInput>
+```
+
+```razor
+<IgbDateTimeInput @ref="DateTimeInputRef" MinValue="@MinDate" MaxValue="@MaxDate">
+    <IgbIcon IconName="clear" Collection="myIcons" slot="prefix" @onclick="OnClear"></IgbIcon>
+</IgbDateTimeInput>
 ```
 
 If all went well, the component will be `invalid` if the value is greater or lower than the given dates. Check out the example below:
