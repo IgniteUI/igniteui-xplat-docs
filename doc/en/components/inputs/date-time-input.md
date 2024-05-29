@@ -242,7 +242,7 @@ input.min = new Date(2021, 0, 1);
 ```tsx
 public dateTimeInputRef(input: IgrDateTimeInput) {
     if (!input) { return; }
-    input.minValue = new Date(2021, 0, 1);
+    input.min = new Date(2021, 0, 1);
 }
 ```
 
@@ -251,7 +251,7 @@ public dateTimeInputRef(input: IgrDateTimeInput) {
 ```
 
 ```razor
-<IgbDateTimeInput @ref="DateTimeInputRef" MinValue="@MinDate" MaxValue="@MaxDate">
+<IgbDateTimeInput @ref="DateTimeInputRef" Min="@MinDate" Max="@MaxDate">
     <IgbIcon IconName="clear" Collection="myIcons" slot="prefix" @onclick="OnClear"></IgbIcon>
 </IgbDateTimeInput>
 ```
