@@ -1523,7 +1523,7 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Tabs",
     "href": "layouts/tabs.md",
     "status": ""
@@ -1655,7 +1655,7 @@
     "href": "inputs/chip.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Combo Box",    
     "href": "inputs/combo/overview.md",
     "items": [
@@ -1710,7 +1710,7 @@
     "href": "inputs/mask-input.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Date Time Input",
     "href": "inputs/date-time-input.md"
   },

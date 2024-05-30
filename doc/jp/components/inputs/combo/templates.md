@@ -22,6 +22,7 @@ _language: ja
 
 `itemTemplate` はカスタム テンプレートであり、定義されている場合は、オプションのリスト内の項目を描画するときに使用する必要があります。
 
+<!-- WebComponents -->
 ```ts
 import { ComboItemTemplate } from 'igniteui-webcomponents';
 
@@ -33,6 +34,7 @@ const itemTemplate: ComboItemTemplate<City> = ({ item }) => {
 
 combo.itemTempate = itemTemplate;
 ```
+<!-- end: WebComponents -->
 
 <!-- Blazor -->
 Blazor アプリで項目をテンプレート化するには、別の JavaScript ファイルでテンプレートを定義する必要があります。`wwwroot` ディレクトリの下に `templates.js` という名前の新しいファイルを作成します。
@@ -66,10 +68,29 @@ igRegisterScript("ComboItemTemplate", itemTemplate, false);
 
 <!-- end: Blazor -->
 
+<!-- React -->
+```tsx
+<IgrCombo
+    valueKey="id"
+    displayKey="name"
+    groupKey="country"
+    data={cities}
+    itemTemplate={renderItemTemplate}
+></IgrCombo>
+
+function renderItemTemplate(props: { dataContext: any}): any {
+    return (
+      <span><b>{props.dataContext.name}</b> [{props.dataContext.id}]</span>
+    );
+}
+```
+<!-- end: React -->
+
 ### Group Header Template (グループ ヘッダー テンプレート)
 
 `groupHeaderTemplate` はカスタム テンプレートであり、定義されている場合は、オプションのリストでグループ ヘッダーを描画するときに使用する必要があります。
 
+<!-- WebComponents -->
 ```ts
 import { ComboItemTemplate } from 'igniteui-webcomponents';
 
@@ -79,6 +100,7 @@ const groupHeaderTemplate: ComboItemTemplate<City> = ({ item }) => {
 
 combo.groupHeaderTemplate = groupHeaderTemplate;
 ```
+<!-- end: WebComponents -->
 
 <!-- Blazor -->
 まず、グループ ヘッダー テンプレートを定義します。
@@ -101,6 +123,24 @@ igRegisterScript('ComboGroupHeaderTemplate', groupHeaderTemplate, false)
 
 <!-- end: Blazor -->
 
+<!-- React -->
+```tsx
+<IgrCombo
+    valueKey="id"
+    displayKey="name"
+    groupKey="country"
+    data={cities}
+    groupHeaderTemplate={renderGroupHeaderTemplate}
+></IgrCombo>
+
+function renderGroupHeaderTemplate(props: { dataContext: any}): any {
+    return (
+    <span>Country of {props.dataContext.country}</span>
+    );
+}
+```
+<!-- end: React -->
+
 ## スロット
 カスタム テンプレート以外に、{ProductName} コンボボックス コンポーネントは、ユーザーがカスタム コンテンツをさまざまなコンボ パーツに渡すことを可能にするいくつかのスロットを公開します。
 
@@ -121,6 +161,14 @@ igRegisterScript('ComboGroupHeaderTemplate', groupHeaderTemplate, false)
 </IgbCombo>
 ```
 
+```tsx
+<IgrCombo>
+  <header slot="header">
+        Header content goes here
+  </header>
+</IgrCombo>
+```
+
 ### フッター スロット
 オプションのリストの下にカスタム フッターをレンダリングするには、コンテンツを `footer` スロットに渡します。
 
@@ -138,6 +186,14 @@ igRegisterScript('ComboGroupHeaderTemplate', groupHeaderTemplate, false)
 </IgbCombo>
 ```
 
+```tsx
+<IgrCombo>
+  <footer slot="footer">
+        Footer content goes here
+  </footer>
+</IgrCombo>
+```
+
 ### 空のリスト スロット
 フィルタリング操作で結果が返されない場合にカスタム コンテンツをレンダリングするには、`empty` スロットを使用します。
 
@@ -151,6 +207,12 @@ igRegisterScript('ComboGroupHeaderTemplate', groupHeaderTemplate, false)
 <IgbCombo> 
     <div slot="empty">¯\_(ツ)_/¯</div>
 </IgbCombo>
+```
+
+```tsx
+<IgrCombo>
+  <div slot="empty">¯\_(ツ)_/¯</div>
+</IgrCombo>
 ```
 
 ### トグル アイコン スロット
@@ -168,6 +230,14 @@ igRegisterScript('ComboGroupHeaderTemplate', groupHeaderTemplate, false)
 </IgbCombo>
 ```
 
+```tsx
+<IgrCombo>
+  <span slot="toggle-icon">
+    <IgbIcon name="down"></IgbIcon>
+  </span>
+</IgrCombo>
+```
+
 ### クリア アイコン スロット
 クリア アイコンは、`clear-icon` スロットを介して変更できます。
 
@@ -181,6 +251,14 @@ igRegisterScript('ComboGroupHeaderTemplate', groupHeaderTemplate, false)
 <IgbCombo> 
     <IgbIcon name="clear" slot="clear-icon"></IgbIcon>
 </IgbCombo>
+```
+
+```tsx
+<IgrCombo>
+  <span slot="clear-icon">
+    <IgbIcon name="clear"></IgbIcon>
+  </span>
+</IgrCombo>
 ```
 
 <!-- WebComponents -->
