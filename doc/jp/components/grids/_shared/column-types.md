@@ -12,14 +12,14 @@ _language: ja
 
 {Platform} {ComponentTitle} は、デフォルトおよび編集テンプレートの外観に基づいて、number (数値)、string (文字列)、date (日付)、boolean (ブール値)、currency (通貨) および percent (パーセント) 列のデータ型のデフォルト処理を提供します。
 
-<!-- ComponentStart: Grid -->
+<!-- ComponentStart: Grid, TreeGrid -->
 
 ## {Platform} {ComponentTitle} 列タイプの例
 
-`sample="/{ComponentSample}/column-data-types", height="550", alt="{Platform} {ComponentTitle} column data types"`
+`sample="/{ComponentSample}/column-data-types", height="550", alt="{Platform} {ComponentTitle} 列のデータ タイプ"`
 
 
-<!-- ComponentEnd: Grid -->
+<!-- ComponentEnd: Grid, TreeGrid -->
 
 ## {Platform} {ComponentTitle} デフォルト テンプレート
 

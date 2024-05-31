@@ -1708,7 +1708,7 @@
     "href": "inputs/mask-input.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "日時入力",
     "href": "inputs/date-time-input.md"
   },
