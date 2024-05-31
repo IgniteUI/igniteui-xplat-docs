@@ -1740,6 +1740,12 @@
   },
   {
     "exclude": ["Angular"],
+    "name": "Action Strip",
+    "href": "inputs/action-strip.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular"],
     "name": "Ripple",
     "href": "inputs/ripple.md"
   },
