@@ -38,7 +38,7 @@ public getData(dataState): Observable<any[]> {
 <!-- end: Angular -->
 
 <!-- WebComponents, React -->
-ブラウザーが提供する [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/fetch) グローバル関数を使用した HTTP プロトコルでバックエンドサービスと通信します。データを取得にはサービスのシンプルなメソッドが必要となります。
+ブラウザーが提供する [`fetch()`](https://developer.mozilla.org/ja/docs/Web/API/fetch) グローバル関数を使用した HTTP プロトコルでバックエンドサービスと通信します。データを取得にはサービスのシンプルなメソッドが必要となります。
 
 ```ts
 export function getData(dataState: any): any {

@@ -1693,12 +1693,6 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "複数列コンボ ボックス",
-    "href": "editors/multi-column-combobox.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular"],
     "name": "入力",
     "href": "inputs/input.md"
   },
@@ -1708,7 +1702,7 @@
     "href": "inputs/mask-input.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "日時入力",
     "href": "inputs/date-time-input.md"
   },
@@ -2020,5 +2014,11 @@
         "status": ""
       }
     ]
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "複数列コンボ ボックス",
+    "href": "editors/multi-column-combobox.md",
+    "status": ""
   }
 ]
