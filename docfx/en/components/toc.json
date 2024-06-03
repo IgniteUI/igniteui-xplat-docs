@@ -1735,6 +1735,11 @@
     "href": "inputs/switch.md"
   },
   {
+    "exclude": ["Angular"],
+    "name": "Text Area",
+    "href": "inputs/text-area.md"
+  },
+  {
     "name": "Interactions",
     "header": true
   },
