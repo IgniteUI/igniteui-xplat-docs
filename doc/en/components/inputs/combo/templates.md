@@ -21,6 +21,7 @@ The {ProductName} ComboBox component allows defining custom templates for differ
 
 The `itemTemplate` is a custom template that if defined should be used when rendering items in the list of options.
 
+<!-- WebComponents -->
 ```ts
 import { ComboItemTemplate } from 'igniteui-webcomponents';
 
@@ -32,6 +33,7 @@ const itemTemplate: ComboItemTemplate<City> = ({ item }) => {
 
 combo.itemTempate = itemTemplate;
 ```
+<!-- end: WebComponents -->
 
 <!-- Blazor -->
 To template your items in a Blazor app, you need to define a template in a separate JavaScript file. Let's create a new file under the `wwwroot` directory called `templates.js`.
@@ -62,13 +64,31 @@ Then in our application we can refer to the template we declared via the `ItemTe
 ```razor
 <IgbCombo ItemTemplateScript="ComboItemTemplate"></IgbCombo>
 ```
-
 <!-- end: Blazor -->
+
+<!-- React -->
+```tsx
+<IgrCombo
+    valueKey="id"
+    displayKey="name"
+    groupKey="country"
+    data={cities}
+    itemTemplate={renderItemTemplate}
+></IgrCombo>
+
+function renderItemTemplate(props: { dataContext: any}): any {
+    return (
+      <span><b>{props.dataContext.name}</b> [{props.dataContext.id}]</span>
+    );
+}
+```
+<!-- end: React -->
 
 ### Group Header Template
 
 The `groupHeaderTemplate` is a custom template that if defined should be used when rendering group headers in the list of options.
 
+<!-- WebComponents -->
 ```ts
 import { ComboItemTemplate } from 'igniteui-webcomponents';
 
@@ -78,6 +98,7 @@ const groupHeaderTemplate: ComboItemTemplate<City> = ({ item }) => {
 
 combo.groupHeaderTemplate = groupHeaderTemplate;
 ```
+<!-- end: WebComponents -->
 
 <!-- Blazor -->
 First define the group header template:
@@ -97,8 +118,25 @@ Then in our application we can refer to the template we declared via the `GroupH
 ```razor
 <IgbCombo GroupHeaderTemplateScript="ComboGroupHeaderTemplate"></IgbCombo>
 ```
-
 <!-- end: Blazor -->
+
+<!-- React -->
+```tsx
+<IgrCombo
+    valueKey="id"
+    displayKey="name"
+    groupKey="country"
+    data={cities}
+    groupHeaderTemplate={renderGroupHeaderTemplate}
+></IgrCombo>
+
+function renderGroupHeaderTemplate(props: { dataContext: any}): any {
+    return (
+    <span>Country of {props.dataContext.country}</span>
+    );
+}
+```
+<!-- end: React -->
 
 ## Slots
 Other than custom templates, the {ProductName} ComboBox component exposes several slots that allow users to pass custom content to different combo parts.
@@ -120,6 +158,14 @@ To render a custom header above the list of options pass content to the `header`
 </IgbCombo>
 ```
 
+```tsx
+<IgrCombo>
+  <header slot="header">
+        Header content goes here
+  </header>
+</IgrCombo>
+```
+
 ### Footer Slot
 To render a custom footer below the list of options pass content to the `footer` slot:
 
@@ -137,6 +183,14 @@ To render a custom footer below the list of options pass content to the `footer`
 </IgbCombo>
 ```
 
+```tsx
+<IgrCombo>
+  <footer slot="footer">
+        Footer content goes here
+  </footer>
+</IgrCombo>
+```
+
 ### Empty List Slot
 To render a custom content when the filtering operation returns no result, use the `empty` slot:
 
@@ -150,6 +204,12 @@ To render a custom content when the filtering operation returns no result, use t
 <IgbCombo> 
     <div slot="empty">¯\_(ツ)_/¯</div>
 </IgbCombo>
+```
+
+```tsx
+<IgrCombo>
+  <div slot="empty">¯\_(ツ)_/¯</div>
+</IgrCombo>
 ```
 
 ### Toggle Icon Slot
@@ -167,6 +227,14 @@ The toggle icon in the combo input can also be modified via the `toggle-icon` sl
 </IgbCombo>
 ```
 
+```tsx
+<IgrCombo>
+  <span slot="toggle-icon">
+    <IgbIcon name="down"></IgbIcon>
+  </span>
+</IgrCombo>
+```
+
 ### Clear Icon Slot
 The clear icon can be changed via the `clear-icon` slot:
 
@@ -180,6 +248,14 @@ The clear icon can be changed via the `clear-icon` slot:
 <IgbCombo> 
     <IgbIcon name="clear" slot="clear-icon"></IgbIcon>
 </IgbCombo>
+```
+
+```tsx
+<IgrCombo>
+  <span slot="clear-icon">
+    <IgbIcon name="clear"></IgbIcon>
+  </span>
+</IgrCombo>
 ```
 
 <!-- WebComponents -->
