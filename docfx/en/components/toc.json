@@ -1249,6 +1249,11 @@
           "href": "charts/features/chart-data-aggregations.md"
         },
         {
+          "name": "Chart Data Filtering",
+          "href": "charts/features/chart-data-filtering.md",
+          "status": "NEW"
+        },
+        {
           "name": "Chart Data Legend",
           "href": "charts/features/chart-data-legend.md",
           "status": "UPDATED"
