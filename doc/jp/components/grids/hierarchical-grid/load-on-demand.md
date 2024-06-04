@@ -11,7 +11,7 @@ _language: ja
 
 Ignite UI for {Platform} `HierarchicalGrid` は、要求するサーバーからのデータを最低限にすることによりすばやく描画できます。このため、ユーザーがビューで結果を確認でき、表示データをインタラクティブに操作できます。初期時にグリッドのデータのみが取得されて描画され、ユーザーが子グリッドを含む行を拡張した後のみ、特定の子グリッドのデータを取得します。このメカニズムは、ロードオンデマンドであらゆるリモートデータとの設定が簡単にできます。
 
-このトピックは、既に利用可能なリモート oData v4 サービスと通信してリモート サービス プロバイダーを作成し、ロードオンデマンドを設定する方法を説明します。以下は、デモと作成手順を示します。
+このトピックは、既に利用可能なリモート サービスと通信してリモート サービス プロバイダーを作成し、ロードオンデマンドを設定する方法を説明します。以下は、デモと作成手順を示します。
 
 ## {Platform} Hierarchical Grid ロードオンデマンドの例
 
@@ -29,26 +29,25 @@ Ignite UI for {Platform} `HierarchicalGrid` は、要求するサーバーから
 ```typescript
 public getData(dataState): Observable<any[]> {
     return this.http.get(this.buildUrl(dataState)).pipe(
-        map(response => response['value']),
+        map(response => response),
     );
 }
 ```
 
-`this.http` は、`HttpCLient` モジュールの参照となり、`buildUrl()` は取得したデータに基づいて url を生成するメソッドになります。実行された非同期のため、返信をマップして結果値のみ取得し、Observable を返します。それにより後でサブスクライブし、アプリケーションで処理を進めてグリッドへ渡すことができます。
+`this.http` は、`HttpCLient` モジュールの参照となり、`buildUrl()` は取得したデータに基づいて url を生成するメソッドになります。実行された非同期のため、返信をマップし、Observable を返します。それにより後でサブスクライブし、アプリケーションで処理を進めてグリッドへ渡すことができます。
 <!-- end: Angular -->
 
 <!-- WebComponents, React -->
-ブラウザーが提供する [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/fetch) グローバル関数を使用した HTTP プロトコルでバックエンドサービスと通信します。データを取得にはサービスのシンプルなメソッドが必要となります。
+ブラウザーが提供する [`fetch()`](https://developer.mozilla.org/ja/docs/Web/API/fetch) グローバル関数を使用した HTTP プロトコルでバックエンドサービスと通信します。データを取得にはサービスのシンプルなメソッドが必要となります。
 
 ```ts
-function getData(dataState) {
+export function getData(dataState: any): any {
     return fetch(buildUrl(dataState))
-        .then((result) => result.json())
-        .then((data) => data['value']);
+        .then((result) => result.json());
 }
 ```
 
-`buildUrl()` は取得したデータに基づいて url を生成するメソッドになります。実行された非同期のため、返信をマップして結果値のみ取得し、Promise を返します。それにより後でサブスクライブし、アプリケーションで処理を進めてグリッドへ渡すことができます。
+`buildUrl()` は取得したデータに基づいて url を生成するメソッドになります。実行された非同期のため、Promise を返します。それにより後でサブスクライブし、アプリケーションで処理を進めてグリッドへ渡すことができます。
 <!-- end: WebComponents, React -->
 
 <!-- Blazor -->
@@ -57,17 +56,16 @@ function getData(dataState) {
 ```razor
 function getData(dataState) {
     return fetch(buildUrl(dataState))
-        .then((result) => result.json())
-        .then((data) => data['value']);
+        .then((result) => result.json());
 }
 ```
 
-`buildUrl()` は取得したデータに基づいて url を生成するメソッドになります。実行された非同期のため、返信をマップして結果値のみ取得し、Promise を返します。それにより後でサブスクライブし、アプリケーションで処理を進めてグリッドへ渡すことができます。
+`buildUrl()` は取得したデータに基づいて url を生成するメソッドになります。実行された非同期のため、Promise を返します。それにより後でサブスクライブし、アプリケーションで処理を進めてグリッドへ渡すことができます。
 <!-- end: Blazor -->
 
 #### 要求 URL のビルド
 
-次に GET 要求の URL をビルドする方法を定義します。メイン グリッドのデータを取得できますが含まれる子グリッドのデータも取得できます。ルート レベルに[こちら](https://services.odata.org/V4/Northwind/Northwind.svc/)の `Customers` データを使用し、それ以外のレベルには `Order` と `Order_Details` を使用します。このモデルはアプリケーションごとに異なりますが、ここでは以下を使用します。
+次に GET 要求の URL をビルドする方法を定義します。メイン グリッドのデータを取得できますが含まれる子グリッドのデータも取得できます。ルート レベルに[こちら](https://data-northwind.indigo.design/swagger/index.html)の `Customers` データを使用し、それ以外のレベルには `Orders` と `Details` を使用します。このモデルはアプリケーションごとに異なりますが、ここでは以下を使用します。
 
 <img class="responsive-img" src="../../../images/hgrid-database.jpg" />
 
@@ -88,14 +86,10 @@ export interface IDataState {
 public buildUrl(dataState: IDataState): string {
     let qS = "";
     if (dataState) {
-        qS += `${dataState.key}?`;
-
-        if (!dataState.rootLevel) {
-            if (typeof dataState.parentID === "string") {
-                qS += `$filter=${dataState.parentKey} eq '${dataState.parentID}'`;
-            } else {
-                qS += `$filter=${dataState.parentKey} eq ${dataState.parentID}`;
-            }
+        if (dataState.rootLevel) {
+            qS += `${dataState.key}`;
+        } else {
+            qS += `${dataState.parentKey}/${dataState.parentID}/${dataState.key}`;
         }
     }
     return `${this.url}${qS}`;
@@ -120,14 +114,10 @@ const dataState: {
 function buildUrl(dataState: any) {
     let qS = "";
     if (dataState) {
-        qS += `${dataState.key}?`;
-
-        if (!dataState.rootLevel) {
-            if (typeof dataState.parentID === "string") {
-                qS += `$filter=${dataState.parentKey} eq '${dataState.parentID}'`;
-            } else {
-                qS += `$filter=${dataState.parentKey} eq ${dataState.parentID}`;
-            }
+        if (dataState.rootLevel) {
+            qS += `${dataState.key}`;
+        } else {
+            qS += `${dataState.parentKey}/${dataState.parentID}/${dataState.key}`;
         }
     }
     return `${URL}${qS}`;
@@ -151,17 +141,13 @@ const dataState: {
 function buildUrl(dataState) {
     let qS = "";
     if (dataState) {
-        qS += `${dataState.key}?`;
-
-        if (!dataState.rootLevel) {
-            if (typeof dataState.parentID === "string") {
-                qS += `$filter=${dataState.parentKey} eq '${dataState.parentID}'`;
-            } else {
-                qS += `$filter=${dataState.parentKey} eq ${dataState.parentID}`;
-            }
+        if (dataState.rootLevel) {
+            qS += `${dataState.key}`;
+        } else {
+            qS += `${dataState.parentKey}/${dataState.parentID}/${dataState.key}`;
         }
     }
-    return `${URL}${qS}`;
+    return `${DATA_URL}${qS}`;
 }
 ```
 <!-- end: Blazor -->
@@ -186,27 +172,23 @@ export interface IDataState {
 
 @Injectable()
 export class RemoteLoDService {
-    url = `https://services.odata.org/V4/Northwind/Northwind.svc/`;
+    public url = `https://data-northwind.indigo.design/`;
 
     constructor(private http: HttpClient) { }
 
     public getData(dataState: IDataState): Observable<any[]> {
         return this.http.get(this.buildUrl(dataState)).pipe(
-            map((response) => response['value'])
+            map((response) => response)
         );
     }
 
     public buildUrl(dataState: IDataState): string {
         let qS = "";
         if (dataState) {
-            qS += `${dataState.key}?`;
-
-            if (!dataState.rootLevel) {
-                if (typeof dataState.parentID === "string") {
-                    qS += `$filter=${dataState.parentKey} eq '${dataState.parentID}'`;
-                } else {
-                    qS += `$filter=${dataState.parentKey} eq ${dataState.parentID}`;
-                }
+            if (dataState.rootLevel) {
+                qS += `${dataState.key}`;
+            } else {
+                qS += `${dataState.parentKey}/${dataState.parentID}/${dataState.key}`;
             }
         }
         return `${this.url}${qS}`;
@@ -219,25 +201,20 @@ export class RemoteLoDService {
 最後に、リモート サービスは以下のようになります。
 
 ```ts
-const URL = `https://services.odata.org/V4/Northwind/Northwind.svc/`;
+const URL = `https://data-northwind.indigo.design/`;
 
-export function getData(dataState?: any): any {
+export function getData(dataState: any): any {
     return fetch(buildUrl(dataState))
-        .then((result) => result.json())
-        .then((data) => data["value"]);
+        .then((result) => result.json());
 }
 
 function buildUrl(dataState: any) {
     let qS = "";
     if (dataState) {
-        qS += `${dataState.key}?`;
-
-        if (!dataState.rootLevel) {
-            if (typeof dataState.parentID === "string") {
-                qS += `$filter=${dataState.parentKey} eq '${dataState.parentID}'`;
-            } else {
-                qS += `$filter=${dataState.parentKey} eq ${dataState.parentID}`;
-            }
+        if (dataState.rootLevel) {
+            qS += `${dataState.key}`;
+        } else {
+            qS += `${dataState.parentKey}/${dataState.parentID}/${dataState.key}`;
         }
     }
     return `${URL}${qS}`;
@@ -249,28 +226,23 @@ function buildUrl(dataState: any) {
 最後に、リモート サービスは以下のようになります。
 
 ```razor
-const URL = `https://services.odata.org/V4/Northwind/Northwind.svc/`;
+const DATA_URL = `https://data-northwind.indigo.design/`;
 
-function getData(dataState): any {
+function getData(dataState) {
     return fetch(buildUrl(dataState))
-        .then((result) => result.json())
-        .then((data) => data["value"]);
+        .then((result) => result.json());
 }
 
 function buildUrl(dataState) {
     let qS = "";
     if (dataState) {
-        qS += `${dataState.key}?`;
-
-        if (!dataState.rootLevel) {
-            if (typeof dataState.parentID === "string") {
-                qS += `$filter=${dataState.parentKey} eq '${dataState.parentID}'`;
-            } else {
-                qS += `$filter=${dataState.parentKey} eq ${dataState.parentID}`;
-            }
+        if (dataState.rootLevel) {
+            qS += `${dataState.key}`;
+        } else {
+            qS += `${dataState.parentKey}/${dataState.parentID}/${dataState.key}`;
         }
     }
-    return `${URL}${qS}`;
+    return `${DATA_URL}${qS}`;
 }
 ```
 <!-- end: Blazor -->
@@ -281,28 +253,28 @@ function buildUrl(dataState) {
 
 #### テンプレートの地祇
 
-最初に階層グリッド テンプレートを必要な階層レベルで定義します。customers のルート グリッド `PrimaryKey` は最初のレベルの orders の `CustomerID` です。`OrderID` と各 order 詳細の `ProductID` です。各データベース テーブルとキーで初期テンプレートを定義します。
+最初に階層グリッド テンプレートを必要な階層レベルで定義します。customers のルート グリッド `PrimaryKey` は最初のレベルの orders の `customerId` です。`orderId` と各 order 詳細の `productId` です。各データベース テーブルとキーで初期テンプレートを定義します。
 
 <!-- Angular -->
 ```html
-<igx-hierarchical-grid #hGrid [primaryKey]="'CustomerID'" [autoGenerate]="false" [height]="'600px'" [width]="'100%'">
-    <igx-column field="CustomerID" [hidden]="true"></igx-column>
-    <igx-column field="CompanyName"></igx-column>
-    <igx-column field="ContactName"></igx-column>
-    <igx-column field="ContactTitle"></igx-column>
-    <igx-column field="Country"></igx-column>
-    <igx-column field="Phone"></igx-column>
-    <igx-row-island [key]="'Orders'" [primaryKey]="'OrderID'" [autoGenerate]="false" >
-        <igx-column field="OrderID" [hidden]="true"></igx-column>
-        <igx-column field="ShipCountry"></igx-column>
-        <igx-column field="ShipCity"></igx-column>
-        <igx-column field="ShipAddress"></igx-column>
-        <igx-column field="OrderDate"></igx-column>
-        <igx-row-island [key]="'Order_Details'" [primaryKey]="'ProductID'" [autoGenerate]="false" >
+<igx-hierarchical-grid #hGrid [primaryKey]="'customerId'" [autoGenerate]="false" [height]="'600px'" [width]="'100%'">
+    <igx-column field="customerId" [hidden]="true"></igx-column>
+    <igx-column field="companyName" header="Company Name"></igx-column>
+    <igx-column field="contactName" header="Contact Name"></igx-column>
+    <igx-column field="contactTitle" header="Contact Title"></igx-column>
+    <igx-column field="address.country" header="Country"></igx-column>
+    <igx-column field="address.phone" header="Phone"></igx-column>
+    <igx-row-island [key]="'Orders'" [primaryKey]="'orderId'" [autoGenerate]="false" >
+        <igx-column field="orderId" [hidden]="true"></igx-column>
+        <igx-column field="shipAddress.country" header="Ship Country"></igx-column>
+        <igx-column field="shipAddress.city" header="Ship City"></igx-column>
+        <igx-column field="shipAddress.street" header="Ship Address"></igx-column>
+        <igx-column field="orderDate" header="Order Date"></igx-column>
+        <igx-row-island [key]="'Details'" [primaryKey]="'productId'" [autoGenerate]="false" >
             <igx-column field="ProductID" [hidden]="true"></igx-column>
-            <igx-column field="Quantity"></igx-column>
-            <igx-column field="UnitPrice"></igx-column>
-            <igx-column field="Discount"></igx-column>
+            <igx-column field="quantity" header="Quantity"></igx-column>
+            <igx-column field="unitPrice" header="UnitPrice"></igx-column>
+            <igx-column field="discount" header="Discount"></igx-column>
         </igx-row-island>
     </igx-row-island>
 </igx-hierarchical-grid>
@@ -311,25 +283,25 @@ function buildUrl(dataState) {
 
 <!-- WebComponents -->
 ```html
-<igc-hierarchical-grid id="hGrid" primary-key="CustomerID" height="600px">
-    <igc-column field="CustomerID" hidden="true"></igc-column>
-    <igc-column field="CompanyName" header="Company Name"></igc-column>
-    <igc-column field="ContactName" header="Contact Name"></igc-column>
-    <igc-column field="ContactTitle" header="Contact Title"></igc-column>
-    <igc-column field="Country"></igc-column>
-    <igc-column field="Phone"></igc-column>
-    <igc-row-island child-data-key="Orders" primary-key="OrderID">
-      <igc-column field="OrderID" hidden="true"></igc-column>
-      <igc-column field="ShipCountry" header="Ship Country"></igc-column>
-      <igc-column field="ShipCity" header="Ship City"></igc-column>
-      <igc-column field="ShipAddress" header="Ship Address"></igc-column>
-      <igc-column field="OrderDate" header="Order Date" data-type="date"></igc-column>
-      <igc-row-island child-data-key="Order_Details" primary-key="ProductID">
-        <igc-column field="ProductID" hidden="true"></igc-column>
-        <igc-column field="Quantity"></igc-column>
-        <igc-column field="UnitPrice" header="Unit Price"></igc-column>
-        <igc-column field="Discount"></igc-column>
-      </igc-row-island>
+<igc-hierarchical-grid id="hGrid" primary-key="customerId" height="600px">
+    <igc-column field="customerId" hidden="true"></igc-column>
+    <igc-column field="companyName" header="Company Name"></igc-column>
+    <igc-column field="contactName" header="Contact Name"></igc-column>
+    <igc-column field="contactTitle" header="Contact Title"></igc-column>
+    <igc-column field="address.country" header="Country"></igc-column>
+    <igc-column field="address.phone" header="Phone"></igc-column>
+    <igc-row-island child-data-key="Orders" primary-key="orderId">
+        <igc-column field="orderId" hidden="true"></igc-column>
+        <igc-column field="shipAddress.country" header="Ship Country"></igc-column>
+        <igc-column field="shipAddress.city" header="Ship City"></igc-column>
+        <igc-column field="shipAddress.street" header="Ship Address"></igc-column>
+        <igc-column field="orderDate" header="Order Date" data-type="date"></igc-column>
+        <igc-row-island child-data-key="Details" primary-key="productId">
+            <igc-column field="productId" hidden="true"></igc-column>
+            <igc-column field="quantity" header="Quantity"></igc-column>
+            <igc-column field="unitPrice" header="Unit Price"></igc-column>
+            <igc-column field="discount" header="Discount"></igc-column>
+        </igc-row-island>
     </igc-row-island>
 </igc-hierarchical-grid>
 ```
@@ -337,25 +309,25 @@ function buildUrl(dataState) {
 
 <!-- React -->
 ```tsx
-<IgrHierarchicalGrid ref={hierarchicalGrid} primaryKey="CustomerID" height="600px">
-    <IgrColumn field="CustomerID" hidden={true}></IgrColumn>
-    <IgrColumn field="CompanyName" header="Company Name"></IgrColumn>
-    <IgrColumn field="ContactName" header="Contact Name"></IgrColumn>
-    <IgrColumn field="ContactTitle" header="Contact Title"></IgrColumn>
-    <IgrColumn field="Country"></IgrColumn>
-    <IgrColumn field="Phone"></IgrColumn>
-    <IgrRowIsland childDataKey="Orders" primaryKey="OrderID">
-      <IgrColumn field="OrderID" hidden={true}></IgrColumn>
-      <IgrColumn field="ShipCountry" header="Ship Country"></IgrColumn>
-      <IgrColumn field="ShipCity" header="Ship City"></IgrColumn>
-      <IgrColumn field="ShipAddress" header="Ship Address"></IgrColumn>
-      <IgrColumn field="OrderDate" header="Order Date" dataType="date"></IgrColumn>
-      <IgrRowIsland childDataKey="Order_Details" primaryKey="ProductID">
-        <IgrColumn field="ProductID" hidden={true}></IgrColumn>
-        <IgrColumn field="Quantity"></IgrColumn>
-        <IgrColumn field="UnitPrice" header="Unit Price"></IgrColumn>
-        <IgrColumn field="Discount"></IgrColumn>
-      </IgrRowIsland>
+<IgrHierarchicalGrid ref={hierarchicalGrid} primaryKey="customerId" height="600px">
+    <IgrColumn field="customerId" hidden={true}></IgrColumn>
+    <IgrColumn field="companyName" header="Company Name"></IgrColumn>
+    <IgrColumn field="contactName" header="Contact Name"></IgrColumn>
+    <IgrColumn field="contactTitle" header="Contact Title"></IgrColumn>
+    <IgrColumn field="address.country" header="Country"></IgrColumn>
+    <IgrColumn field="address.phone" header="Phone"></IgrColumn>
+    <IgrRowIsland childDataKey="Orders" primaryKey="orderId">
+        <IgrColumn field="orderId" hidden={true}></IgrColumn>
+        <IgrColumn field="shipAddress.country" header="Ship Country"></IgrColumn>
+        <IgrColumn field="shipAddress.city" header="Ship City"></IgrColumn>
+        <IgrColumn field="shipAddress.street" header="Ship Address"></IgrColumn>
+        <IgrColumn field="orderDate" header="Order Date" dataType="date"></IgrColumn>
+        <IgrRowIsland childDataKey="Details" primaryKey="productId">
+            <IgrColumn field="productId" hidden={true}></IgrColumn>
+            <IgrColumn field="quantity" header="Quantity"></IgrColumn>
+            <IgrColumn field="unitPrice" header="Unit Price"></IgrColumn>
+            <IgrColumn field="discount" header="Discount"></IgrColumn>
+        </IgrRowIsland>
     </IgrRowIsland>
 </IgrHierarchicalGrid>
 ```
@@ -363,24 +335,24 @@ function buildUrl(dataState) {
 
 <!-- Blazor -->
 ```razor
-<IgbHierarchicalGrid Id="hGrid" PrimaryKey="CustomerID" Height="600px">
-    <IgbColumn Field="CustomerID" Hidden="true"></IgbColumn>
-    <IgbColumn Field="CompanyName" Header="Company Name"></IgbColumn>
-    <IgbColumn Field="ContactName" Header="Contact Name"></IgbColumn>
-    <IgbColumn Field="ContactTitle" Header="Contact Title"></IgbColumn>
-    <IgbColumn Field="Country"></IgbColumn>
-    <IgbColumn Field="Phone"></IgbColumn>
-    <IgbRowIsland ChildDataKey="Orders" PrimaryKey="OrderID">
-        <IgbColumn Field="OrderID" Hidden="true"></IgbColumn>
-        <IgbColumn Field="ShipCountry" Header="Ship Country"></IgbColumn>
-        <IgbColumn Field="ShipCity" Header="Ship City"></IgbColumn>
-        <IgbColumn Field="ShipAddress" Header="Ship Address"></IgbColumn>
-        <IgbColumn Field="OrderDate" Header="Order Date" DataType="GridColumnDataType.Date"></IgbColumn>
-        <IgbRowIsland ChildDataKey="Order_Details" PrimaryKey="ProductID">
-            <IgbColumn Field="ProductID" Hidden="true"></IgbColumn>
-            <IgbColumn Field="Quantity"></IgbColumn>
-            <IgbColumn Field="UnitPrice" Header="Unit Price"></IgbColumn>
-            <IgbColumn Field="Discount"></IgbColumn>
+<IgbHierarchicalGrid Id="hGrid" PrimaryKey="customerId" Height="600px">
+    <IgbColumn Field="customerId" Hidden="true"></IgbColumn>
+    <IgbColumn Field="companyName" Header="Company Name"></IgbColumn>
+    <IgbColumn Field="contactName" Header="Contact Name"></IgbColumn>
+    <IgbColumn Field="contactTitle" Header="Contact Title"></IgbColumn>
+    <IgbColumn Field="address.country" Header="Country"></IgbColumn>
+    <IgbColumn Field="address.phone" Header="Phone"></IgbColumn>
+    <IgbRowIsland ChildDataKey="Orders" PrimaryKey="orderId">
+        <IgbColumn Field="orderId" Hidden="true"></IgbColumn>
+        <IgbColumn Field="shipAddress.country" Header="Ship Country"></IgbColumn>
+        <IgbColumn Field="shipAddress.city" Header="Ship City"></IgbColumn>
+        <IgbColumn Field="shipAddress.street" Header="Ship Address"></IgbColumn>
+        <IgbColumn Field="orderDate" Header="Order Date" DataType="GridColumnDataType.Date"></IgbColumn>
+        <IgbRowIsland ChildDataKey="Details" PrimaryKey="productId">
+            <IgbColumn Field="productId" Hidden="true"></IgbColumn>
+            <IgbColumn Field="quantity" Header="Quantity"></IgbColumn>
+            <IgbColumn Field="unitPrice" Header="Unit Price"></IgbColumn>
+            <IgbColumn Field="discount" Header="Discount"></IgbColumn>
         </IgbRowIsland>
     </IgbRowIsland>
 </IgbHierarchicalGrid>
@@ -433,24 +405,24 @@ function buildUrl(dataState) {
 
 <!-- Angular -->
 ```html
-<igx-hierarchical-grid #hGrid [primaryKey]="'CustomerID'" [autoGenerate]="false" [height]="'600px'" [width]="'100%'">
-    <igx-column field="CustomerID" [hidden]="true"></igx-column>
-    <igx-column field="CompanyName"></igx-column>
-    <igx-column field="ContactName"></igx-column>
-    <igx-column field="ContactTitle"></igx-column>
-    <igx-column field="Country"></igx-column>
-    <igx-column field="Phone"></igx-column>
-    <igx-row-island [key]="'Orders'" [primaryKey]="'OrderID'" [autoGenerate]="false" (gridCreated)="gridCreated($event, 'CustomerID')">
-        <igx-column field="OrderID" [hidden]="true"></igx-column>
-        <igx-column field="ShipCountry"></igx-column>
-        <igx-column field="ShipCity"></igx-column>
-        <igx-column field="ShipAddress"></igx-column>
-        <igx-column field="OrderDate"></igx-column>
-        <igx-row-island [key]="'Order_Details'" [primaryKey]="'ProductID'" [autoGenerate]="false" (gridCreated)="gridCreated($event, 'OrderID')">
+<igx-hierarchical-grid #hGrid [primaryKey]="'customerId'" [autoGenerate]="false" [height]="'600px'" [width]="'100%'">
+    <igx-column field="customerId" [hidden]="true"></igx-column>
+    <igx-column field="companyName" header="Company Name"></igx-column>
+    <igx-column field="contactName" header="Contact Name"></igx-column>
+    <igx-column field="contactTitle" header="Contact Title"></igx-column>
+    <igx-column field="address.country" header="Country"></igx-column>
+    <igx-column field="address.phone" header="Phone"></igx-column>
+    <igx-row-island [key]="'Orders'" [primaryKey]="'orderId'" [autoGenerate]="false" (gridCreated)="gridCreated($event, 'Customers')">
+        <igx-column field="orderId" [hidden]="true"></igx-column>
+        <igx-column field="shipAddress.country" header="Ship Country"></igx-column>
+        <igx-column field="shipAddress.city" header="Ship City"></igx-column>
+        <igx-column field="shipAddress.street" header="Ship Address"></igx-column>
+        <igx-column field="orderDate" header="Order Date"></igx-column>
+        <igx-row-island [key]="'Details'" [primaryKey]="'productId'" [autoGenerate]="false" (gridCreated)="gridCreated($event, 'Orders')">
             <igx-column field="ProductID" [hidden]="true"></igx-column>
-            <igx-column field="Quantity"></igx-column>
-            <igx-column field="UnitPrice"></igx-column>
-            <igx-column field="Discount"></igx-column>
+            <igx-column field="quantity" header="Quantity"></igx-column>
+            <igx-column field="unitPrice" header="UnitPrice"></igx-column>
+            <igx-column field="discount" header="Discount"></igx-column>
         </igx-row-island>
     </igx-row-island>
 </igx-hierarchical-grid>
@@ -459,25 +431,25 @@ function buildUrl(dataState) {
 
 <!-- WebComponents -->
 ```html
-<igc-hierarchical-grid id="hGrid" primary-key="CustomerID" height="600px">
-    <igc-column field="CustomerID" hidden="true"></igc-column>
-    <igc-column field="CompanyName" header="Company Name"></igc-column>
-    <igc-column field="ContactName" header="Contact Name"></igc-column>
-    <igc-column field="ContactTitle" header="Contact Title"></igc-column>
-    <igc-column field="Country"></igc-column>
-    <igc-column field="Phone"></igc-column>
-    <igc-row-island id="ordersRowIsland" child-data-key="Orders" primary-key="OrderID">
-      <igc-column field="OrderID" hidden="true"></igc-column>
-      <igc-column field="ShipCountry" header="Ship Country"></igc-column>
-      <igc-column field="ShipCity" header="Ship City"></igc-column>
-      <igc-column field="ShipAddress" header="Ship Address"></igc-column>
-      <igc-column field="OrderDate" header="Order Date" data-type="date"></igc-column>
-      <igc-row-island id="orderDetailsRowIsland" child-data-key="Order_Details" primary-key="ProductID">
-        <igc-column field="ProductID" hidden="true"></igc-column>
-        <igc-column field="Quantity"></igc-column>
-        <igc-column field="UnitPrice" header="Unit Price"></igc-column>
-        <igc-column field="Discount"></igc-column>
-      </igc-row-island>
+<igc-hierarchical-grid id="hGrid" primary-key="customerId" height="600px">
+    <igc-column field="customerId" hidden="true"></igc-column>
+    <igc-column field="companyName" header="Company Name"></igc-column>
+    <igc-column field="contactName" header="Contact Name"></igc-column>
+    <igc-column field="contactTitle" header="Contact Title"></igc-column>
+    <igc-column field="address.country" header="Country"></igc-column>
+    <igc-column field="address.phone" header="Phone"></igc-column>
+    <igc-row-island id="ordersRowIsland" child-data-key="Orders" primary-key="orderId">
+        <igc-column field="orderId" hidden="true"></igc-column>
+        <igc-column field="shipAddress.country" header="Ship Country"></igc-column>
+        <igc-column field="shipAddress.city" header="Ship City"></igc-column>
+        <igc-column field="shipAddress.street" header="Ship Address"></igc-column>
+        <igc-column field="orderDate" header="Order Date" data-type="date"></igc-column>
+        <igc-row-island id="orderDetailsRowIsland" child-data-key="Details" primary-key="productId">
+            <igc-column field="productId" hidden="true"></igc-column>
+            <igc-column field="quantity" header="Quantity"></igc-column>
+            <igc-column field="unitPrice" header="Unit Price"></igc-column>
+            <igc-column field="discount" header="Discount"></igc-column>
+        </igc-row-island>
     </igc-row-island>
 </igc-hierarchical-grid>
 ```
@@ -487,11 +459,11 @@ constructor() {
     const orderDetailsRowIsland = document.getElementById("orderDetailsRowIsland");
 
     ordersRowIsland.addEventListener("gridCreated", (event: any) => {
-        this.gridCreated(event, "CustomerID");
+        this.gridCreated(event, "Customers");
     });
 
     orderDetailsRowIsland.addEventListener("gridCreated", (event: any) => {
-        this.gridCreated(event, "OrderID");
+        this.gridCreated(event, "Orders");
     });
 }
 ```
@@ -499,38 +471,38 @@ constructor() {
 
 <!-- React -->
 ```tsx
-<IgrHierarchicalGrid ref={hierarchicalGrid} primaryKey="CustomerID" height="600px">
-    <IgrColumn field="CustomerID" hidden={true}></IgrColumn>
-    <IgrColumn field="CompanyName" header="Company Name"></IgrColumn>
-    <IgrColumn field="ContactName" header="Contact Name"></IgrColumn>
-    <IgrColumn field="ContactTitle" header="Contact Title"></IgrColumn>
-    <IgrColumn field="Country"></IgrColumn>
-    <IgrColumn field="Phone"></IgrColumn>
+<IgrHierarchicalGrid ref={hierarchicalGrid} primaryKey="customerId" height="600px">
+    <IgrColumn field="customerId" hidden={true}></IgrColumn>
+    <IgrColumn field="companyName" header="Company Name"></IgrColumn>
+    <IgrColumn field="contactName" header="Contact Name"></IgrColumn>
+    <IgrColumn field="contactTitle" header="Contact Title"></IgrColumn>
+    <IgrColumn field="address.country" header="Country"></IgrColumn>
+    <IgrColumn field="address.phone" header="Phone"></IgrColumn>
     <IgrRowIsland
-        childDataKey="Orders"
-        primaryKey="OrderID"
-        gridCreated={(
-          rowIsland: IgrRowIsland,
-          e: IgrGridCreatedEventArgs
-        ) => gridCreated(rowIsland, e, "CustomerID")}
+      childDataKey="Orders"
+      primaryKey="orderId"
+      gridCreated={(
+        rowIsland: IgrRowIsland,
+        e: IgrGridCreatedEventArgs
+      ) => gridCreated(rowIsland, e, "Customers")}
     >
-        <IgrColumn field="OrderID" hidden={true}></IgrColumn>
-        <IgrColumn field="ShipCountry" header="Ship Country"></IgrColumn>
-        <IgrColumn field="ShipCity" header="Ship City"></IgrColumn>
-        <IgrColumn field="ShipAddress" header="Ship Address"></IgrColumn>
-        <IgrColumn field="OrderDate" header="Order Date" dataType="date"></IgrColumn>
+        <IgrColumn field="orderId" hidden={true}></IgrColumn>
+        <IgrColumn field="shipAddress.country" header="Ship Country"></IgrColumn>
+        <IgrColumn field="shipAddress.city" header="Ship City"></IgrColumn>
+        <IgrColumn field="shipAddress.street" header="Ship Address"></IgrColumn>
+        <IgrColumn field="orderDate" header="Order Date" dataType="date"></IgrColumn>
         <IgrRowIsland
-            childDataKey="Order_Details"
-            primaryKey="ProductID"
-            gridCreated={(
-              rowIsland: IgrRowIsland,
-              e: IgrGridCreatedEventArgs
-            ) => gridCreated(rowIsland, e, "OrderID")}
+          childDataKey="Details"
+          primaryKey="productId"
+          gridCreated={(
+            rowIsland: IgrRowIsland,
+            e: IgrGridCreatedEventArgs
+          ) => gridCreated(rowIsland, e, "Orders")}
         >
-            <IgrColumn field="ProductID" hidden={true}></IgrColumn>
-            <IgrColumn field="Quantity"></IgrColumn>
-            <IgrColumn field="UnitPrice" header="Unit Price"></IgrColumn>
-            <IgrColumn field="Discount"></IgrColumn>
+            <IgrColumn field="productId" hidden={true}></IgrColumn>
+            <IgrColumn field="quantity" header="Quantity"></IgrColumn>
+            <IgrColumn field="unitPrice" header="Unit Price"></IgrColumn>
+            <IgrColumn field="discount" header="Discount"></IgrColumn>
         </IgrRowIsland>
     </IgrRowIsland>
 </IgrHierarchicalGrid>
@@ -539,24 +511,24 @@ constructor() {
 
 <!-- Blazor -->
 ```razor
-<IgbHierarchicalGrid Id="hGrid" PrimaryKey="CustomerID" Height="600px">
-    <IgbColumn Field="CustomerID" Hidden="true"></IgbColumn>
-    <IgbColumn Field="CompanyName" Header="Company Name"></IgbColumn>
-    <IgbColumn Field="ContactName" Header="Contact Name"></IgbColumn>
-    <IgbColumn Field="ContactTitle" Header="Contact Title"></IgbColumn>
-    <IgbColumn Field="Country"></IgbColumn>
-    <IgbColumn Field="Phone"></IgbColumn>
-    <IgbRowIsland ChildDataKey="Orders" PrimaryKey="OrderID" GridCreatedScript="OnGridCreated">
-        <IgbColumn Field="OrderID" Hidden="true"></IgbColumn>
-        <IgbColumn Field="ShipCountry" Header="Ship Country"></IgbColumn>
-        <IgbColumn Field="ShipCity" Header="Ship City"></IgbColumn>
-        <IgbColumn Field="ShipAddress" Header="Ship Address"></IgbColumn>
-        <IgbColumn Field="OrderDate" Header="Order Date" DataType="GridColumnDataType.Date"></IgbColumn>
-        <IgbRowIsland ChildDataKey="Order_Details" PrimaryKey="ProductID" GridCreatedScript="OnGridCreated">
-            <IgbColumn Field="ProductID" Hidden="true"></IgbColumn>
-            <IgbColumn Field="Quantity"></IgbColumn>
-            <IgbColumn Field="UnitPrice" Header="Unit Price"></IgbColumn>
-            <IgbColumn Field="Discount"></IgbColumn>
+<IgbHierarchicalGrid Id="hGrid" PrimaryKey="customerId" Height="600px">
+    <IgbColumn Field="customerId" Hidden="true"></IgbColumn>
+    <IgbColumn Field="companyName" Header="Company Name"></IgbColumn>
+    <IgbColumn Field="contactName" Header="Contact Name"></IgbColumn>
+    <IgbColumn Field="contactTitle" Header="Contact Title"></IgbColumn>
+    <IgbColumn Field="address.country" Header="Country"></IgbColumn>
+    <IgbColumn Field="address.phone" Header="Phone"></IgbColumn>
+    <IgbRowIsland ChildDataKey="Orders" PrimaryKey="orderId" GridCreatedScript="OnGridCreated">
+        <IgbColumn Field="orderId" Hidden="true"></IgbColumn>
+        <IgbColumn Field="shipAddress.country" Header="Ship Country"></IgbColumn>
+        <IgbColumn Field="shipAddress.city" Header="Ship City"></IgbColumn>
+        <IgbColumn Field="shipAddress.street" Header="Ship Address"></IgbColumn>
+        <IgbColumn Field="orderDate" Header="Order Date" DataType="GridColumnDataType.Date"></IgbColumn>
+        <IgbRowIsland ChildDataKey="Details" PrimaryKey="productId" GridCreatedScript="OnGridCreated">
+            <IgbColumn Field="productId" Hidden="true"></IgbColumn>
+            <IgbColumn Field="quantity" Header="Quantity"></IgbColumn>
+            <IgbColumn Field="unitPrice" Header="Unit Price"></IgbColumn>
+            <IgbColumn Field="discount" Header="Discount"></IgbColumn>
         </IgbRowIsland>
     </IgbRowIsland>
 </IgbHierarchicalGrid>
@@ -720,7 +692,7 @@ function gridCreated(rowIsland: IgrRowIsland, event: IgrGridCreatedEventArgs, _p
 ```razor
 igRegisterScript("OnGridCreated", (args) => {
     const context = args.detail;
-    const _parentKey = context.owner.childDataKey === "Orders" ? "CustomerID" : "OrderID";
+    const _parentKey = context.owner.childDataKey === "Orders" ? "Customers" : "Orders";
     const dataState = {
         key: context.owner.childDataKey,
         parentID: context.parentID,
@@ -803,11 +775,11 @@ constructor() {
     const orderDetailsRowIsland = document.getElementById("orderDetailsRowIsland");
 
     ordersRowIsland.addEventListener("gridCreated", (event: any) => {
-        this.gridCreated(event, "CustomerID");
+        this.gridCreated(event, "Customers");
     });
 
     orderDetailsRowIsland.addEventListener("gridCreated", (event: any) => {
-        this.gridCreated(event, "OrderID");
+        this.gridCreated(event, "Orders");
     });
 
     hierarchicalGrid.isLoading = true;
@@ -892,7 +864,7 @@ igRegisterScript("OnGridRendered", () => {
 
 igRegisterScript("OnGridCreated", (args) => {
     const context = args.detail;
-    const _parentKey = context.owner.childDataKey === "Orders" ? "CustomerID" : "OrderID";
+    const _parentKey = context.owner.childDataKey === "Orders" ? "Customers" : "Orders";
     const dataState = {
         key: context.owner.childDataKey,
         parentID: context.parentID,

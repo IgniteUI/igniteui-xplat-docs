@@ -44,7 +44,37 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 
 <!-- end: Blazor -->
 
+<!-- React -->
+
+```tsx
+import { IgrComboModule, IgrCombo, IgrSwitchModule, IgrSwitch  } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrComboModule.register();
+IgrSwitchModule.register();
+```
+
+<!-- end: React -->
+
 次に、スイッチを切り替えてコンボ機能を制御できるように、すべてのスイッチ コンポーネントにイベント ハンドラーを追加します。
+
+```tsx
+const comboRef = useRef<IgrCombo>(null);
+const switchCaseSensitiveRef = useRef<IgrSwitch>(null);
+
+const disableFiltering = (switchComponent: IgrSwitch) => {
+    comboRef.current.disableFiltering =
+    switchCaseSensitiveRef.current.disabled = switchComponent.checked;
+};
+
+const showCaseSensitiveIcon = (switchComponent: IgrSwitch) => {
+    comboRef.current.caseSensitiveIcon = switchComponent.checked;
+};
+
+const disableCombo = (switchComponent: IgrSwitch) => {
+    comboRef.current.disabled = switchComponent.checked;
+};
+```
 
 ```ts
 let combo = document.getElementById('combo') as IgcComboComponent<City>;
@@ -127,6 +157,12 @@ switchGroup.addEventListener("igcChange", () => {
 }
 ```
 
+```tsx
+const enableGrouping = (switchComponent: IgrSwitch) => {
+    comboRef.current.groupKey = switchComponent.checked ? "country" : undefined;
+};
+```
+
 ## 機能
 
 ### フィルタリング
@@ -143,12 +179,17 @@ switchGroup.addEventListener("igcChange", () => {
 <IgbCombo DisableFiltering="true" CaseSensitiveIcon="true" />
 ```
 
+```tsx
+<IgrCombo disableFiltering="true" caseSensitiveIcon="true"></IgrCombo>
+```
+
 #### フィルタリング オプション
 
 {ProductName} `ComboBox` コンポーネントは、`FilterKey` オプションと `CaseSensitive` オプションの両方の構成を渡すことができるフィルター プロパティをもう 1 つ公開しています。`FilterKey` は、オプションのリストをフィルタリングするためにどのデータ ソース フィールドを使用する必要があるかを示します。`CaseSensitive` オプションは、フィルタリングで大文字と小文字を区別するかどうかを示します。
 
 次のコード スニペットは、名前ではなく国でデータ ソースから都市をフィルター処理する方法を示しています。また、デフォルトで大文字と小文字を区別するフィルタリングを行います。
 
+<!-- WebComponents -->
 ```ts
 const options = {
     filterKey: 'country',
@@ -157,6 +198,18 @@ const options = {
 
 combo.filteringOptions = options;
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+const options = {
+    filterKey: 'country',
+    caseSensitive: true
+};
+
+comboRef.current.filteringOptions = options;
+```
+<!-- end: React -->
 
 ### グループ化
 
@@ -168,6 +221,10 @@ combo.filteringOptions = options;
 
 ```razor
 <IgbCombo GroupKey="region" />
+```
+
+```tsx
+<IgrCombo groupKey="region" />
 ```
 
 > [!Note]
@@ -185,6 +242,10 @@ combo.filteringOptions = options;
 <IgbCombo GroupSorting="desc" />
 ```
 
+```tsx
+<IgrCombo groupSorting="desc" />
+```
+
 ### ラベル
 
 `Combo` ラベルは、`Label` プロパティを使用して簡単に設定できます。
@@ -195,6 +256,10 @@ combo.filteringOptions = options;
 
 ```razor
 <IgbCombo Label="Cities" />
+```
+
+```tsx
+<IgrCombo label="Cities" />
 ```
 
 ### プレースホルダー
@@ -209,6 +274,10 @@ combo.filteringOptions = options;
 <IgbCombo Placeholder="Pick a city" PlaceholderSearch="Search for a city" />
 ```
 
+```tsx
+<IgrCombo placeholder="Pick a city" placeholderSearch="Search for a city" />
+```
+
 ### オートフォーカス
 
 コンボボックスをページの読み込みに自動的にフォーカスさせたい場合は、次のコードを使用できます。
@@ -219,6 +288,10 @@ combo.filteringOptions = options;
 
 ```razor
 <IgbCombo Autofocus="true" />
+```
+
+```tsx
+<IgrCombo autofocus="true" />
 ```
 
 ### 検索入力のフォーカス
@@ -233,6 +306,10 @@ combo.filteringOptions = options;
 <IgbCombo AutofocusList="true" />
 ```
 
+```tsx
+<IgrCombo autofocusList="true" />
+```
+
 ### 必須
 
 required プロパティを設定することで、コンボボックスを必須としてマークできます。
@@ -245,6 +322,10 @@ required プロパティを設定することで、コンボボックスを必�
 <IgbCombo Required="true" />
 ```
 
+```tsx
+<IgrCombo required="true" />
+```
+
 ### コンボボックスを無効にする
 
 `Disabled` プロパティを使用してコンボボックスを無効にできます。
@@ -255,6 +336,10 @@ required プロパティを設定することで、コンボボックスを必�
 
 ```razor
 <IgbCombo Disabled="true" />
+```
+
+```tsx
+<IgrCombo disabled="true" />
 ```
 
 <!-- WebComponents -->
