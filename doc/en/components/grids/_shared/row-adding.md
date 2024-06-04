@@ -154,7 +154,7 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
     </igc-action-strip>
 </{ComponentSelector}>
 ```
-<!-- ComponentStart: TreeGrid -->
+<!-- ComponentEnd: TreeGrid -->
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -171,7 +171,7 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
     </IgrActionStrip>
 </{ComponentSelector}>
 ```
-<!-- ComponentStart: TreeGrid -->
+<!-- ComponentEnd: TreeGrid -->
 <!-- end: React -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -187,7 +187,7 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
     </IgbActionStrip>
 </{ComponentSelector}>
 ```
-<!-- ComponentStart: TreeGrid -->
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentEnd: TreeGrid -->
 
