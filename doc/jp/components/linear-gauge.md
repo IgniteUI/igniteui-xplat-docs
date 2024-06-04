@@ -253,11 +253,92 @@ ModuleManager.register(
 ```
 
 
-`sample="/gauges/linear-gauge/needle", height="125", alt="{Platform} linear gauge needle"`
+`sample="/gauges/linear-gauge/needle", height="125", alt="{Platform} リニア ゲージのneedle"`
 
+## 針のハイライト
+
+リニア ゲージを変更して、2 番目の針を表示できます。これにより、メイン針の `Value` の不透明度が低く表示されます。これを有効にするには、まず `HighlightValueDisplayMode` を Overlay に設定し、次に `HighlightValue` を適用します。
+
+```html
+<igx-linear-gauge
+    #linearGauge
+    height="80px" 
+    width="400px"
+    value=70
+    minimumValue=0 
+    maximumValue=100 
+    interval=10
+    labelInterval=10
+    labelExtent=0.025
+    labelsPreTerminal=0
+    labelsPostInitial=0
+    needleBrush="Blue"
+    highlightValueDisplayMode="Overlay"
+    highlightValue=25
+    isHighlightNeedleDraggingEnabled=true>
+</igx-linear-gauge>
+```
+
+```tsx
+<IgrLinearGauge
+    height="80px"
+    width="100%"
+    value={75}
+    minimumValue={0} 
+    maximumValue={100} 
+    interval={10}
+    labelInterval={10}
+    labelExtent={0.025}
+    labelsPreTerminal={0}
+    labelsPostInitial={0}
+    needleBrush='blue'
+    highlightValueDisplayMode="Overlay"
+    highlightValue={25} 
+    isHighlightNeedleDraggingEnabled={true}
+    />
+```
+
+```html
+<igc-linear-gauge
+    id="gauge"
+    height="80px"
+    width="100%"
+    minimum-value="0" 
+    maximum-value="100" 
+    value="75"
+    interval="10"
+    label-interval="10"
+    label-extent="0.025"
+    labels-pre-terminal="0"
+    labels-post-initial="0"
+    needle-brush="blue"
+    highlight-value-display-mode="Overlay"
+    highlight-value=25 
+    is-highlight-needle-dragging-enabled=true>
+</igc-linear-gauge>
+```
+
+```razor
+<IgbLinearGauge Height="80px" Width="100%"
+    MinimumValue="0" 
+    MaximumValue="100" 
+    Value="75"
+    Interval="10"
+    LabelInterval="10"
+    LabelExtent="0.025"
+    LabelsPreTerminal="0"
+    LabelsPostInitial="0"
+    NeedleBrush="Blue"
+    HighlightValueDisplayMode="HighlightedValueDisplayMode.Overlay"
+    HighlightValue=25
+    IsHighlightNeedleDraggingEnabled=true>
+</IgbLinearGauge>
+```
+
+`sample="/gauges/linear-gauge/highlight-needle", height="125", alt="{Platform} リニア ゲージの針のハイライト"`
 
 ## 範囲
-範囲はスケールで指定した値の範囲を強調表示する視覚的な要素です。その目的は、パフォーマンス バー メジャーの質的状態を視覚で伝えると同時に、その状態をレベルとして示すことにあります。
+範囲はスケールで指定した値の範囲をハイライト表示する視覚的な要素です。その目的は、パフォーマンス バー メジャーの質的状態を視覚で伝えると同時に、その状態をレベルとして示すことにあります。
 
 ```html
 <igx-linear-gauge
@@ -341,7 +422,7 @@ ModuleManager.register(
 ```
 
 
-`sample="/gauges/linear-gauge/ranges", height="125", alt="{Platform} linear gauge ranges"`
+`sample="/gauges/linear-gauge/ranges", height="125", alt="{Platform} リニア ゲージの範囲"`
 
 
 ## 目盛
@@ -428,7 +509,7 @@ ModuleManager.register(
 </IgbLinearGauge>
 ```
 
-`sample="/gauges/linear-gauge/tickmarks", height="125", alt="{Platform} linear gauge tickmarks"`
+`sample="/gauges/linear-gauge/tickmarks", height="125", alt="{Platform} リニア ゲージの目盛"`
 
 
 ## ラベル
@@ -488,7 +569,7 @@ ModuleManager.register(
 ```
 
 
-`sample="/gauges/linear-gauge/labels", height="125", alt="{Platform} linear gauge labels"`
+`sample="/gauges/linear-gauge/labels", height="125", alt="{Platform} リニア ゲージのラベル"`
 
 
 ## バッキング
@@ -547,11 +628,11 @@ ModuleManager.register(
 ```
 
 
-`sample="/gauges/linear-gauge/backing", height="125", alt="{Platform} linear gauge backing"`
+`sample="/gauges/linear-gauge/backing", height="125", alt="{Platform} リニア ゲージのバッキング"`
 
 
 ## スケール
-スケールはゲージで値の全範囲を強調表示する視覚的な要素です。外観やスケールの図形のカスタマイズ、更にスケールを反転 (`IsScaleInverted` プロパティを使用) させて、すべてのラベルを左から右ではなく、右から左へ描画することもできます。
+スケールはゲージで値の全範囲をハイライト表示する視覚的な要素です。外観やスケールの図形のカスタマイズ、更にスケールを反転 (`IsScaleInverted` プロパティを使用) させて、すべてのラベルを左から右ではなく、右から左へ描画することもできます。
 
 ```html
 <igx-linear-gauge
@@ -615,7 +696,7 @@ ModuleManager.register(
 ```
 
 
-`sample="/gauges/linear-gauge/scale", height="125", alt="{Platform} linear gauge scale"`
+`sample="/gauges/linear-gauge/scale", height="125", alt="{Platform} リニア ゲージのスケール"`
 
 
 ## まとめ
