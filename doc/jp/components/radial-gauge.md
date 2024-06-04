@@ -267,7 +267,7 @@ IgrRadialGaugeModule.register();
 
 ## スケール
 
-スケールは視覚要素で、`MinimumValue` と `MaximumValue` 値を設定してゲージの値範囲全体を強調表示できます。バッキングとともにゲージの全体的な図形を定義します。`ScaleStartAngle` と `ScaleEndAngle` プロパティは、スケールの円弧の境界線を定義します。`ScaleSweepDirection` プロパティが、スケールが時計回りまたは反時計回りのどちらの方向に動くかを指定します。`ScaleBrush`、`ScaleStartExtent`、`ScaleEndExtent` プロパティを設定してスケールの外観をカスタマイズできます。
+スケールは視覚要素で、`MinimumValue` と `MaximumValue` 値を設定してゲージの値範囲全体をハイライト表示できます。バッキングとともにゲージの全体的な図形を定義します。`ScaleStartAngle` と `ScaleEndAngle` プロパティは、スケールの円弧の境界線を定義します。`ScaleSweepDirection` プロパティが、スケールが時計回りまたは反時計回りのどちらの方向に動くかを指定します。`ScaleBrush`、`ScaleStartExtent`、`ScaleEndExtent` プロパティを設定してスケールの外観をカスタマイズできます。
 
 ```html
 <igx-radial-gauge
@@ -473,7 +473,7 @@ IgrRadialGaugeModule.register();
 
 
 ## 範囲
-範囲に `MinimumValue` や `MaximumValue` プロパティで指定した連続値の境界を強調表示します。開始値と終了値を指定してゲージに複数の範囲を追加でき、各範囲には、`Brush` や `Outline` などのカスタマイズ プロパティがあります。または、`RangeBrushes` や `RangeOutlines` プロパティを範囲の色リストに設定することもできます。
+範囲に `MinimumValue` や `MaximumValue` プロパティで指定した連続値の境界をハイライト表示します。開始値と終了値を指定してゲージに複数の範囲を追加でき、各範囲には、`Brush` や `Outline` などのカスタマイズ プロパティがあります。または、`RangeBrushes` や `RangeOutlines` プロパティを範囲の色リストに設定することもできます。
 
 ```html
 <igx-radial-gauge
@@ -650,6 +650,75 @@ IgrRadialGaugeModule.register();
 
 `sample="/gauges/radial-gauge/needle", height="320", alt="{Platform} ラジアル ゲージの針"`
 
+## 針のハイライト
+
+ラジアル ゲージを変更して、2 番目の針を表示できます。これにより、メイン針の `Value` の不透明度が低く表示されます。これを有効にするには、まず `HighlightValueDisplayMode` を Overlay に設定し、次に `HighlightValue` を適用します。
+
+```html
+<igx-radial-gauge #radialGauge
+    labelExtent=0.65
+    labelInterval=10
+    titleDisplaysValue=true
+    highlightValueDisplayMode="Overlay"
+    highlightValue=25
+    isHighlightNeedleDraggingEnabled=true
+    isNeedleDraggingEnabled=true
+    height="100%" width="100%"
+    minimumValue=0 value=75
+    maximumValue=80 interval=10  >
+</igx-radial-gauge>
+```
+
+```tsx
+<IgrRadialGauge                    
+    highlightValueDisplayMode="Overlay"
+    highlightValue="25"
+    isHighlightNeedleDraggingEnabled="true"
+    isNeedleDraggingEnabled="true"
+    titleDisplaysValue="true"
+    label-interval="10"
+    label-extent="0.65"        
+    height="100%"
+    width="100%"
+    minimumValue={0} value={75}
+    maximumValue={80} interval={10} />
+```
+
+```html
+<igc-radial-gauge
+    id="gauge"
+    highlight-value-display-mode="Overlay"
+    highlight-value="25"
+    is-highlight-needle-dragging-enabled="true"
+    is-needle-dragging-enabled="true"
+    title-displays-value="true"
+    label-interval="10"
+    label-extent="0.65"        
+    height="100%"
+    width="100%"
+    minimum-value="0" value="75"
+    maximum-value="80" interval="10" >
+</igc-radial-gauge>
+```
+
+```razor
+<IgbLinearGauge Height="80px" Width="100%"
+    MinimumValue="0" 
+    MaximumValue="100" 
+    Value="75"
+    Interval="10"
+    LabelInterval="10"
+    LabelExtent="0.025"
+    LabelsPreTerminal="0"
+    LabelsPostInitial="0"
+    NeedleBrush="Blue"
+    HighlightValueDisplayMode="HighlightedValueDisplayMode.Overlay"
+    HighlightValue=25
+    IsHighlightNeedleDraggingEnabled=true>
+</IgbLinearGauge>
+```
+
+`sample="/gauges/radial-gauge/highlight-needle", height="125", alt="{Platform} ラジアル ゲージの針のハイライト"`
 
 ## まとめ
 上記すべてのコード スニペットを以下のコード ブロックにまとめています。プロジェクトに簡単にコピーしてブレットグラフのすべての機能を再現できます。
