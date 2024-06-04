@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 行の選択
 
-{Platform} {ComponentTitle} の {ProductName} 行選択機能を使用すると、ユーザーは 1 つまたは複数のデータ行を対話的に選択、強調表示、または選択解除できます。`{ComponentName}` 内に使用可能な選択モードがいくつかあります。
+{Platform} {ComponentTitle} の {ProductName} 行選択機能を使用すると、ユーザーは 1 つまたは複数のデータ行を対話的に選択、ハイライト表示、または選択解除できます。`{ComponentName}` 内に使用可能な選択モードがいくつかあります。
 - None (なし) 選択
 - Multiple (複数) 選択
 - Single (単一) 選択
@@ -25,7 +25,7 @@ _language: ja
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
-以下のサンプルは、`{ComponentName}` の 3 種類の**行選択**動作を示しています。以下のボタンを使用して、利用可能な各選択モードを有効にします。スナックバーのメッセージ ボックスを介して、各ボタンの操作に関する簡単な説明が提供されます。スイッチ ボタンを使用して、行セレクター チェックボックスを非表示または表示します。
+以下のサンプルは、`{ComponentName}` の 3 種類の**行選択**動作を示しています。以下のドロップダウンを使用して、利用可能な各選択モードを有効にします。チェックボックスを使用して、行セレクター チェックボックスを非表示または表示します。
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
