@@ -12,6 +12,10 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerChanges-23-2-APR2}**
 
+### {PackageCharts} (Charts)
+
+Data Filtering via the `InitialFilter` property. Apply filter expressions to filter the chart data to a subset of records. Can be used for drill down large data.
+
 - `XamBulletGraph`
     - The Performance bar will now reflect a difference between the value and new `HighlightValue` when the `HighlightValueDisplayMode` is applied to the 'Overlay' setting. The highlight value will show a filtered/subset measured percentage as a filled in color while the remaining bar's appearance will appear faded to the assigned value, illustrating the performance in real-time.
 - `XamLinearGauge`

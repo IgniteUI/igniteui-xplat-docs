@@ -1,6 +1,6 @@
 ---
 title: {Platform} データ グリッド | セル選択 | 選択 | インフラジスティックス
-_description: インフラジスティックスの {Platform} データ グリッドのセルおよび行選択を使用して、テーブルの領域を強調表示します。{ProductName} テーブルの単一行選択または複数行選択を設定する方法について説明します。
+_description: インフラジスティックスの {Platform} データ グリッドのセルおよび行選択を使用して、テーブルの領域をハイライト表示します。{ProductName} テーブルの単一行選択または複数行選択を設定する方法について説明します。
 _keywords: {Platform} Table, Data Grid, cell selection, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, セル選択, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.GridSelectionMode']
 namespace: Infragistics.Controls

@@ -34,14 +34,44 @@ defineComponents(IgcDateTimeInput);
 
 <!-- end: WebComponents -->
 
+<!-- React -->
+
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`DateTimeInput` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrDateTimeInput, IgrDateTimeInputModule } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrDateTimeInputModule.register();
+```
+
+<!-- end: React -->
+
 <!-- Blazor -->
 
 `DateTimeInput` を使用する前に、次のように登録する必要があります:
 
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbDateTimeInputModule));
+```
+
+また、`DateTimeInput` コンポーネントにスタイルを適用するために、追加の CSS ファイルをリンクする必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
 <!-- end: Blazor -->
 
 ### 値バインディング
-`DateTimeInput` コンポーネントの値を設定する最も簡単な方法は、Date オブジェクトを `value` プロパティに渡すことです。
+`DateTimeInput` コンポーネントの値を設定する最も簡単な方法は、Date オブジェクトを `Value` プロパティに渡すことです。
 
 ```typescript
 const input = document.querySelector('igc-date-time-input') as IgcDateTimeInputComponent;
@@ -50,20 +80,37 @@ const date = new Date();
 input.value = date;
 ```
 
+```tsx
+public dateTimeInputRef(input: IgrDateTimeInput) {
+    if (!input) { return; }
+    input.value = new Date();
+}
+```
+
+```razor
+<IgbDateTimeInput @ref="DateTimeInputRef" Value="@Date">
+    <IgbIcon IconName="clear" Collection="myIcons" slot="prefix" @onclick="OnClear"></IgbIcon>
+</IgbDateTimeInput>
+```
+
+<!-- WebComponents, React -->
+
 `DateTimeInput` は、[ISO 8601](https://tc39.es/ecma262/#sec-date-time-string-format) 文字列も受け入れます。
 
 文字列は、`YYYY-MM-DDTHH:mm:ss.sssZ` の形式の完全な `ISO` 文字列にすることも、日付のみと時間のみの部分に分割することもできます。
 
 ##### 日付のみ
-日付のみの文字列がコンポーネントの `value` プロパティにバインドされている場合は、`YYYY-MM-DD` の形式である必要があります。`inputFormat` は、入力に値を入力するときに引き続き使用され、同じ形式である必要はありません。さらに、日付のみの文字列をバインドする場合、ディレクティブは時刻を `T00:00:00` に強制することにより、時刻のずれを防ぎます。
+日付のみの文字列がコンポーネントの `Value` プロパティにバインドされている場合は、`YYYY-MM-DD` の形式である必要があります。`InputFormat` は、入力に値を入力するときに引き続き使用され、同じ形式である必要はありません。さらに、日付のみの文字列をバインドする場合、ディレクティブは時刻を `T00:00:00` に強制することにより、時刻のずれを防ぎます。
 
 ##### 時刻のみ
 時刻のみの文字列は通常、`ECMA` 仕様では定義されていませんが、時刻のみのソリューションを必要とするシナリオにディレクティブを統合できるようにするために、24 時間形式 (`HH:mm:ss`) をサポートしています。12 時間形式はサポートされていません。
 
 ##### 完全な ISO 文字列
-完全な ISO 文字列がバインドされている場合、ディレクティブは、[Date.parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#date_time_string_format) に必要なすべての要素が提供されている場合にのみそれを解析します。
+完全な ISO 文字列がバインドされている場合、ディレクティブは、[Date.parse](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#date_time_string_format) に必要なすべての要素が提供されている場合にのみそれを解析します。
 
 `InvalidDate` を含むすべての falsy の値は、`null` として解析されます。不完全な日付のみ、時間のみ、または完全な `ISO` 文字列は、`InvalidDate` として解析されます。
+
+<!-- end: WebComponents, React -->
 
 ### キーボード ナビゲーション
 
@@ -85,10 +132,10 @@ input.value = date;
 
 `DateTimeInput` は、さまざまな表示形式と入力形式をサポートしています。
 
-[Intl.DateTimeFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat) を使用して、`long` と `short`、`medium` と `full` などの事前定義された書式オプションをサポートできるようにします。さらに、`dd-MM-yy` などのサポートされている文字から構築されたカスタム文字列を受け入れることもできます。また、`displayFormat` が指定されていない場合、コンポーネントは `inputFormat` をそのまま使用します。
+[Intl.DateTimeFormat](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat) を使用して、`long` と `short`、`medium` と `full` などの事前定義された書式オプションをサポートできるようにします。さらに、`dd-MM-yy` などのサポートされている文字から構築されたカスタム文字列を受け入れることもできます。また、`DisplayFormat` が指定されていない場合、コンポーネントは `InputFormat` をそのまま使用します。
 
 ### 入力書式
-次の表は、コンポーネントの `inputFormat` でサポートされている形式を示しています。
+次の表は、コンポーネントの `InputFormat` でサポートされている形式を示しています。
 
 |書式|説明|
 |-------|----------|
@@ -106,10 +153,20 @@ input.value = date;
 | `mm` | 先行ゼロが明示的に設定された分。 |
 | `tt` | 12 時間形式の AM/PM セクション。 |
 
-特定の入力形式を設定するには、それを文字列として `DateTimeInput` に渡します。これにより、予想されるユーザー入力形式と `mask` の両方が設定されます。さらに、`inputFormat` はロケール ベースであるため、何も指定されていない場合、エディターはデフォルトで `dd/MM/yyyy` になります。
+特定の入力形式を設定するには、それを文字列として `DateTimeInput` に渡します。これにより、予想されるユーザー入力形式と `mask` の両方が設定されます。さらに、`InputFormat` はロケール ベースであるため、何も指定されていない場合、エディターはデフォルトで `dd/MM/yyyy` になります。
 
 ```html
 <igc-date-time-input input-format="dd-MM-yy" display-format="medium"/>
+```
+
+```tsx
+<IgrDateTimeInput ref={this.dateTimeInputRef} inputFormat="dd-MM-yy" displayFormat="medium"></IgrDateTimeInput>
+```
+
+```razor
+<IgbDateTimeInput @ref="DateTimeInputRef" InputFormat="dd-MM-yy" DisplayFormat="medium">
+    <IgbIcon IconName="clear" Collection="myIcons" slot="prefix" @onclick="OnClear"></IgbIcon>
+</IgbDateTimeInput>
 ```
 
 以下は結果です:
@@ -166,34 +223,55 @@ input.value = date;
 |   | `tttt` | 長い | noon |
 |   | `ttttt` | 狭い | n |
 
-> 注:
-多くのロケールは、指定された書式に関係なく、同じ期間文字列を使用します。また、12 時間制を使用した場合にのみ効果があります。
+> [!Note]
+> 多くのロケールは、指定された書式に関係なく、同じ期間文字列を使用します。また、12 時間制を使用した場合にのみ効果があります。
 
 ## 最小値 / 最大値
 
-`minValue` および `maxValue` プロパティを指定して、コンポーネントの入力を制限し、有効性を制御できます。`value` プロパティと同様に、`string` 型にすることができます。
+`Min` および `Max` プロパティを指定して、コンポーネントの入力を制限し、有効性を制御できます。`Value` プロパティと同様に、`string` 型にすることができます。
 
 ```ts
 const input = document.querySelector('igc-date-time-input') as IgcDateTimeInputComponent;
 
-input.minValue = new Date(2021, 0, 1);
+input.min = new Date(2021, 0, 1);
 ```
 
 ```html
-<igc-date-time-input max-value="2022-01-01T21:00:00.000Z"></igc-date-time-input>
+<igc-date-time-input max="2022-01-01T21:00:00.000Z"></igc-date-time-input>
 ```
 
-すべてがうまくいった場合、値が指定された日付よりも大きいか小さい場合、コンポーネントは`無効`になります。以下の例をご覧ください:
+```tsx
+public dateTimeInputRef(input: IgrDateTimeInput) {
+    if (!input) { return; }
+    input.min = new Date(2021, 0, 1);
+}
+```
+
+```tsx
+ <IgrDateTimeInput ref={this.dateTimeInputRef} max={new Date(2024, 6, 25)}></IgrDateTimeInput>
+```
+
+```razor
+<IgbDateTimeInput @ref="DateTimeInputRef" Min="@MinDate" Max="@MaxDate">
+    <IgbIcon IconName="clear" Collection="myIcons" slot="prefix" @onclick="OnClear"></IgbIcon>
+</IgbDateTimeInput>
+```
+
+すべてがうまくいった場合、値が指定された日付よりも大きいか小さい場合、コンポーネントは `invalid` になります。以下の例をご覧ください:
 
 `sample="/inputs/date-time-input/min-max-value", height="150", alt="{Platform} 日時入力最小 / 最大値の例"`
 
 ## ステップアップ / ステップダウン
 
-`DateTimeInput` は、公開な `stepUp` メソッドと `stepDown` メソッドを公開します。現在設定されている日付と時刻の特定の `DatePart` を増減し、いくつかの方法で使用できます。
+`DateTimeInput` は、公開な `StepUp` メソッドと `StepDown` メソッドを公開します。現在設定されている日付と時刻の特定の `DatePart` を増減し、いくつかの方法で使用できます。
 
-最初のシナリオでは、特定の DatePart がメソッドに渡されない場合、指定した `inputFormat` および内部コンポーネントの実装に基づいてデフォルトの DatePart が増減します。2 番目のシナリオでは、さまざまな要件を満たすために操作する DatePart を明示的に指定できます。また、どちらのメソッドも、stepUp/stepDown ステップを設定するために使用できるタイプ番号のオプションの `delta` パラメーターを受け入れます。
+最初のシナリオでは、特定の DatePart がメソッドに渡されない場合、指定した `InputFormat` および内部コンポーネントの実装に基づいてデフォルトの DatePart が増減します。2 番目のシナリオでは、さまざまな要件を満たすために操作する DatePart を明示的に指定できます。また、どちらのメソッドも、stepUp/stepDown ステップを設定するために使用できるタイプ番号のオプションの `delta` パラメーターを受け入れます。
 
-さらに、`spinDelta` は、各日時セグメントに異なる delta を適用するために使用できるプロパティです。キーボード、マウス ホイール、または `stepUp` メソッドと `stepDown` メソッドを使用してスピンする場合に適用されます。ただし、`spinDelta` よりも優先されるため、delta パラメーターが提供されていない場合に限ります。
+<!-- WebComponents, Blazor -->
+
+さらに、`SpinDelta` は、各日時セグメントに異なる delta を適用するために使用できるプロパティです。キーボード、マウス ホイール、または `StepUp` メソッドと `StepDown` メソッドを使用してスピンする場合に適用されます。ただし、`SpinDelta` よりも優先されるため、delta パラメーターが提供されていない場合に限ります。
+
+<!-- end: WebComponents, Blazor -->
 
 ```ts
 const input = document.getElementById('dateTimeInput') as IgcDateTimeInputComponent;
