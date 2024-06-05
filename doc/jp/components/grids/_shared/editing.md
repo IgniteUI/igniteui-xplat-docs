@@ -62,14 +62,14 @@ _language: ja
  - カスタム テンプレートについては、[セル編集トピック](cell-editing.md#セル編集テンプレート)を参照してください。
  <!-- ComponentEnd:  Grid -->
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart:  Grid, HierarchicalGrid -->
 すべての利用可能な列データ型は、公式の[列タイプトピック](column-types.md#デフォルトのテンプレート)にあります。
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd:  Grid, HierarchicalGrid -->
 
 ### イベントの引数とシーケンス
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart:  Grid, HierarchicalGrid -->
 グリッドは、編集エクスペリエンスをより詳細に制御できる広範なイベントを公開します。これらのイベントは、[**行の編集**](row-editing.md)および[**セルの編集**](cell-editing.md)のライフサイクル - 編集の開始、コミット、またはキャンセル時に発生します。
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd:  Grid, HierarchicalGrid -->
 
  | イベント           | 説明                                                                                                                                               | 引数                  | キャンセル可能 |
  | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ----------- |
@@ -108,6 +108,7 @@ _language: ja
 
 たとえば、ユーザーがセル/行が編集モードのときに列をソートしようとする場合に、新しい値をコミットする方法を示します:
 
+<!-- ComponentStart: Grid, TreeGrid -->
 <!-- Angular -->
 
 ```html
@@ -179,6 +180,76 @@ function onSorting(grid: IgrGridBaseDirective, event: IgrSortingEventArgs) {
 <IgrGrid data={localData} primaryKey="ProductID" sorting={onSorting}>
 </IgrGrid>
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+<!-- Angular -->
+```html
+<igx-hierarchical-grid #grid [data]="localData" [primaryKey]="'ProductID'" (sorting)="onSorting($event)">
+</igx-hierarchical-grid>
+```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="hierarchicalGrid" primary-key="ProductID" >
+</{ComponentSelector}>
+```
+
+```ts
+constructor() {
+    var hierarchicalGrid = document.getElementById('hierarchicalGrid') as {ComponentName}Component;
+    hierarchicalGrid.data = this.data;
+    hierarchicalGrid.addEventListener("sorting", this.onSorting);
+}
+
+public onSorting(event: IgcSortingEventArgs) {
+    var hierarchicalGrid = document.getElementById('hierarchicalGrid') as {ComponentName}Component;
+    hierarchicalGrid.endEdit(true);
+}
+```
+<!-- end: WebComponents -->
+
+<!-- Angular -->
+```typescript
+public onSorting(event: ISortingEventArgs) {
+    this.hierarchicalGrid.endEdit(true);
+}
+```
+<!-- end: Angular -->
+
+```razor
+<{ComponentSelector}
+    Id="hierarchicalGrid"
+    SortingScript="SortingHandler"
+    RowEditable="true">
+</{ComponentSelector}>
+
+//In JavaScript
+function SortingHandler() {
+    hierarchicalGrid.endEdit(true);
+}
+igRegisterScript("SortingHandler", SortingHandler, false);
+```
+
+<!-- React -->
+<!-- ComponentStart: HierarchicalGrid -->
+```tsx
+<IgrHierarchicalGrid data={localData} primaryKey="ProductID" sorting={onSorting}>
+</IgrHierarchicalGrid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: React -->
+<!-- React -->
+<!-- ComponentStart: HierarchicalGrid -->
+```tsx
+public onSorting(grid: IgrGridBaseDirective, event: IgrSortingEventArgs) {
+    hierarchicalGrid.endEdit(true);
+}
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: React -->
+<!-- ComponentEnd: HierarchicalGrid -->
 
 ## API リファレンス
 

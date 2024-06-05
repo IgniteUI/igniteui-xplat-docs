@@ -316,6 +316,90 @@ The drag handle icon can be templated using the grid's `DragIndicatorIconTemplat
 
 To do so, we can use the `DragIndicatorIcon` to pass a template inside of the `{ComponentSelector}`'s body:
 
+<!-- ComponentStart: HierarchicalGrid -->
+
+```tsx
+    function dragIndicatorIconTemplate(ctx: IgrGridEmptyTemplateContext) {
+        return (
+            <>
+                <IgrIcon name="drag_handle" collection="material" />
+            </>
+        );
+    }
+
+    <IgrHierarchicalGrid rowDraggable="true" dragIndicatorIcon={dragIndicatorIconTemplate}>
+    </IgrHierarchicalGrid>
+```
+<!-- Blazor -->
+<!-- ComponentStart: HierarchicalGrid -->
+```razor
+<IgbHierarchicalGrid Data="CustomersData" PrimaryKey="ID" RowDraggable="true" DragIndicatorIconTemplate="dragIndicatorIconTemplate" @ref="grid">
+</IgbHierarchicalGrid>
+
+private RenderFragment<IgbGridEmptyTemplateContext> dragIndicatorIconTemplate = (context) =>
+{
+    return @<div>
+        <IgbIcon IconName="drag_handle" Collection="material"></IgbIcon>
+    </div>;
+};
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
+```html
+<{ComponentSelector} row-draggable="true" id="grid">
+</{ComponentSelector}>
+```
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcHierarchicalGridComponent;
+    grid.dragIndicatorIconTemplate = this.dragIndicatorIconTemplate;
+}
+
+public dragIndicatorIconTemplate = (ctx: IgcGridEmptyTemplateContext) => {
+    return html`<igc-icon name="drag_handle" collection="material"></igc-icon>`;
+}
+```
+
+<!-- end: WebComponents -->
+
+<!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+```tsx
+    function dragIndicatorIconTemplate(ctx: IgrGridEmptyTemplateContext) {
+        return (
+            <>
+                <IgrIcon name="drag_handle" collection="material" />
+            </>
+        );
+    }
+
+    <IgrTreeGrid rowDraggable="true" dragIndicatorIcon={dragIndicatorIconTemplate}>
+    </IgrTreeGrid>
+```
+<!-- Blazor -->
+<!-- ComponentStart: TreeGrid -->
+```razor
+<IgbTreeGrid Data="CustomersData" PrimaryKey="ID" RowDraggable="true" DragIndicatorIconTemplate="dragIndicatorIconTemplate" @ref="grid">
+</IgbTreeGrid>
+
+private RenderFragment<IgbGridEmptyTemplateContext> dragIndicatorIconTemplate = (context) =>
+{
+    return @<div>
+        <IgbIcon IconName="drag_handle" Collection="material"></IgbIcon>
+    </div>;
+};
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: Blazor -->
+
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- Angular -->
 ```html
 <{ComponentSelector}>
@@ -326,25 +410,9 @@ To do so, we can use the `DragIndicatorIcon` to pass a template inside of the `{
 ```
 <!-- end: Angular -->
 
-<!-- WebComponents -->
+<!-- ComponentStart: Grid -->
 
-```html
-<{ComponentSelector} row-draggable="true">
-</{ComponentSelector}>
-``
 
-```ts
-constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-    grid.dragIndicatorIcon = this.dragIndicatorIconTemplate;
-}
-
-public dragIndicatorIconTemplate = (ctx: IgcGridEmptyTemplateContext) => {
-    return html`<igc-icon name="drag_handle" collection="material"></igc-icon>`;
-}
-```
-
-<!-- end: WebComponents -->
 
 ```tsx
 function dragIndicatorIconTemplate(ctx: IgrGridEmptyTemplateContext) {
@@ -370,6 +438,7 @@ private RenderFragment<IgbGridEmptyTemplateContext> dragIndicatorIconTemplate = 
     </div>;
 };
 ```
+<!-- ComponentEnd: Grid -->
 
 <!-- Angular -->
 Once we've set the new icon template, we also need to adjust the **DEFAULT** icon in our **DragIcon enum**, so it's properly change by the `ChangeIcon` method:
@@ -471,6 +540,91 @@ Since all of the actions will be happening _inside_ of the grid's body, that's w
 
 With the help of the grid's row drag events you can create a grid that allows you to reorder rows by dragging them.
 
+<!-- ComponentStart: HierarchicalGrid -->
+
+<!-- WebComponents -->
+
+```html
+<igc-hierarchical-grid id="hGrid" row-draggable="true" primary-key="ID">
+</igc-hierarchical-grid>
+```
+
+```ts
+constructor() {
+    var hGrid = this.grihGridd = document.getElementById('hGrid') as IgcHierarchicalGridComponent;
+    hGrid.addEventListener("rowDragEnd", this.webHierarchicalGridReorderRowHandler)
+}
+```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrHierarchicalGrid rowDraggable="true" primaryKey="ID" rowDragEnd={webHierarchicalGridReorderRowHandler}>
+</IgHierarchicalGrid>
+```
+
+```razor
+<IgbHierarchicalGrid Data="CustomersData" PrimaryKey="ID" RowDraggable="true" RowDragEndScript="WebHierarchicalGridReorderRowHandler"></IgbHierarchicalGrid>
+
+// In JavaScript
+igRegisterScript("WebHierarchicalGridReorderRowHandler", (args) => {
+    const ghostElement = args.detail.dragDirective.ghostElement;
+    const dragElementPos = ghostElement.getBoundingClientRect();
+    const grid = document.getElementsByTagName("igc-hierarchical-grid")[0];
+    const rows = Array.prototype.slice.call(document.getElementsByTagName("igx-hierarchical-grid-row"));
+    const currRowIndex = this.getCurrentRowIndex(rows,
+    { x: dragElementPos.x, y: dragElementPos.y });
+    if (currRowIndex === -1) { return; }
+    // remove the row that was dragged and place it onto its new location
+    grid.deleteRow(args.detail.dragData.key);
+    grid.data.splice(currRowIndex, 0, args.detail.dragData.data);
+}, false);
+ 
+function getCurrentRowIndex(rowList, cursorPosition) {
+    for (const row of rowList) {
+        const rowRect = row.getBoundingClientRect();
+        if (cursorPosition.y > rowRect.top + window.scrollY && cursorPosition.y < rowRect.bottom + window.scrollY &&
+            cursorPosition.x > rowRect.left + window.scrollX && cursorPosition.x < rowRect.right + window.scrollX) {
+            // return the index of the targeted row
+            return parseInt(row.attributes["data-rowindex"].value);
+        }
+    }    
+    return -1;
+}
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+<!-- WebComponents -->
+
+```html
+<igc-tree-grid id="tGrid" row-draggable="true" primary-key="ID">
+</igc-tree-grid>
+```
+
+```ts
+constructor() {
+    var tGrid = this.tGrid = document.getElementById('tGrid') as IgcTreeGridComponent;
+    tGrid.addEventListener("rowDragStart", this.webTreeGridReorderRowStartHandler);
+    tGrid.addEventListener("rowDragEnd", this.webTreeGridReorderRowHandler);
+}
+```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrTreeGrid rowDraggable="true" primaryKey="ID" rowDragStart={webTreeGridReorderRowStartHandler} rowDragEnd={webTreeGridReorderRowStartHandler}>
+</IgrTreeGrid>
+```
+
+```razor
+<IgbTreeGrid Data="CustomersData" PrimaryKey="ID" RowDraggable="true" RowDragStartScript="WebTreeGridReorderRowStartHandler" RowDragEndScript="WebTreeGridReorderRowHandler"></IgbTreeGrid>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: Grid -->
+
 <!-- WebComponents -->
 
 ```html
@@ -486,11 +640,16 @@ constructor() {
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+
 ```tsx
 <IgrGrid rowDraggable="true" primaryKey="ID" rowDragEnd={webGridReorderRowHandler}>
 </IgrGrid>
 ```
 
+<!-- end: React -->
+
+<!-- Blazor -->
 ```razor
 <IgbGrid Data="CustomersData" PrimaryKey="ID" RowDraggable="true" RowDragEndScript="WebGridReorderRowHandler"></IgbGrid>
 
@@ -520,6 +679,9 @@ function getCurrentRowIndex(rowList, cursorPosition) {
     return -1;
 }
 ```
+<!-- end: Blazor -->
+
+<!-- ComponentEnd: Grid -->
 
 <!--  end: WebComponents, Blazor, React -->
 
@@ -619,6 +781,7 @@ function getCurrentRowIndex(rowList: any[], cursorPosition) {
 
 <!-- ComponentEnd: Grid -->
 
+<!-- Angular -->
 <!-- ComponentStart: TreeGrid -->
 
 ```typescript
@@ -688,8 +851,193 @@ export class TreeGridRowReorderComponent {
 ```
 
 <!-- ComponentEnd: TreeGrid -->
+<!-- end: Angular -->
+
+<!-- React -->
+<!-- ComponentStart: TreeGrid -->
+
+```tsx
+public webTreeGridReorderRowStartHandler(args){
+        const draggedRow = args.detail.dragData;
+        if(draggedRow.expanded){
+            draggedRow.expanded = false;
+        }
+    }
+
+    public webTreeGridReorderRowHandler(args): void {
+        const ghostElement = args.detail.dragDirective.ghostElement;
+        const dragElementPos = ghostElement.getBoundingClientRect();
+        const grid = this.treeGrid;
+        const rows = Array.prototype.slice.call(document.getElementsByTagName("igx-tree-grid-row"));
+        const currRowIndex = this.getCurrentRowIndex(rows,
+        { x: dragElementPos.x, y: dragElementPos.y });
+        if (currRowIndex === -1) { return; }
+        const draggedRow = args.detail.dragData.data;
+        const childRows = this.findChildRows(grid.data, draggedRow);
+        //remove the row that was dragged and place it onto its new location
+        grid.deleteRow(args.detail.dragData.key);
+        grid.data.splice(currRowIndex, 0, args.detail.dragData.data);
+        // reinsert the child rows
+        childRows.reverse().forEach(childRow => {
+            grid.data.splice(currRowIndex + 1, 0, childRow);
+        });
+    }
+
+    private findChildRows(rows: any[], parent: any): any[] {
+        const childRows: any[] = [];
+        rows.forEach(row => {
+            if (row.ParentID === parent.ID) {
+                childRows.push(row);
+                // Recursively find children of current row
+                const grandchildren = this.findChildRows(rows, row);
+                childRows.push(...grandchildren);
+            }
+        });
+        return childRows;
+    }
+
+    public getCurrentRowIndex(rowList: any[], cursorPosition: any) {
+        for (const row of rowList) {
+            const rowRect = row.getBoundingClientRect();
+            if (cursorPosition.y > rowRect.top + window.scrollY && cursorPosition.y < rowRect.bottom + window.scrollY &&
+                cursorPosition.x > rowRect.left + window.scrollX && cursorPosition.x < rowRect.right + window.scrollX) {
+                // return the index of the targeted row
+                return parseInt(row.attributes["data-rowindex"].value);
+            }
+        }
+        return -1;
+    }
+```
+
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: React -->
+
+<!-- WebComponents -->
+<!-- ComponentStart: TreeGrid -->
+
+```ts
+public webTreeGridReorderRowStartHandler(args: CustomEvent<IgcRowDragStartEventArgs){
+        const draggedRow = args.detail.dragElement;
+        const grid = this.treeGrid;
+        const row = grid.getRowByIndex(draggedRow.getAttribute('data-rowindex'));
+        if(row.expanded){
+            row.expanded = false;
+        }
+    }
+
+    public webTreeGridReorderRowHandler(args: CustomEvent<IgcRowDragEndEventArgs>): void {
+        const ghostElement = args.detail.dragDirective.ghostElement;
+        const dragElementPos = ghostElement.getBoundingClientRect();
+        const grid = this.treeGrid;
+        const rows = Array.prototype.slice.call(document.getElementsByTagName("igx-tree-grid-row"));
+        const currRowIndex = this.getCurrentRowIndex(rows,
+        { x: dragElementPos.x, y: dragElementPos.y });
+        if (currRowIndex === -1) { return; }
+        const draggedRow = args.detail.dragData.data;
+        const childRows = this.findChildRows(grid.data, draggedRow);
+        //remove the row that was dragged and place it onto its new location
+        grid.deleteRow(args.detail.dragData.key);
+        grid.data.splice(currRowIndex, 0, args.detail.dragData.data);
+        // reinsert the child rows
+        childRows.reverse().forEach(childRow => {
+            grid.data.splice(currRowIndex + 1, 0, childRow);
+        });
+    }
+
+    private findChildRows(rows: any[], parent: any): any[] {
+        const childRows: any[] = [];
+        rows.forEach(row => {
+            if (row.ParentID === parent.ID) {
+                childRows.push(row);
+                // Recursively find children of current row
+                const grandchildren = this.findChildRows(rows, row);
+                childRows.push(...grandchildren);
+            }
+        });
+        return childRows;
+    }
+
+    public getCurrentRowIndex(rowList: any[], cursorPosition: any) {
+        for (const row of rowList) {
+            const rowRect = row.getBoundingClientRect();
+            if (cursorPosition.y > rowRect.top + window.scrollY && cursorPosition.y < rowRect.bottom + window.scrollY &&
+                cursorPosition.x > rowRect.left + window.scrollX && cursorPosition.x < rowRect.right + window.scrollX) {
+                // return the index of the targeted row
+                return parseInt(row.attributes["data-rowindex"].value);
+            }
+        }
+        return -1;
+    }
+```
+
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+<!-- ComponentStart: TreeGrid -->
+
+```razor
+//in JavaScript
+igRegisterScript("WebTreeGridReorderRowStartHandler", (args) => {
+    const draggedRow = args.detail.dragElement;
+    const row = this.treeGrid.getRowByIndex(draggedRow.getAttribute('data-rowindex'));
+    if (row.expanded) {
+        row.expanded = false;
+    }
+}, false);
+
+igRegisterScript("WebTreeGridReorderRowHandler", (args) => {
+    const ghostElement = args.detail.dragDirective.ghostElement;
+    const dragElementPos = ghostElement.getBoundingClientRect();
+    const grid = document.getElementsByTagName("igc-tree-grid")[0];
+    const rows = Array.prototype.slice.call(document.getElementsByTagName("igx-tree-grid-row"));
+    const currRowIndex = this.getCurrentRowIndex(rows,
+    { x: dragElementPos.x, y: dragElementPos.y });
+    if (currRowIndex === -1) { return; }
+    // remove the row that was dragged and place it onto its new location
+    const draggedRow = args.detail.dragData.data;
+    const childRows = this.findChildRows(grid.data, draggedRow);
+    //remove the row that was dragged and place it onto its new location
+    grid.deleteRow(args.detail.dragData.key);
+    grid.data.splice(currRowIndex, 0, args.detail.dragData.data);
+    // reinsert the child rows
+    childRows.reverse().forEach(childRow => {
+        grid.data.splice(currRowIndex + 1, 0, childRow);
+    });
+}, false);
+
+function findChildRows(rows, parent) {
+    const childRows = [];
+    rows.forEach(row => {
+        if (row.ParentID === parent.ID) {
+            childRows.push(row);
+            // Recursively find children of current row
+            const grandchildren = this.findChildRows(rows, row);
+            childRows.push(...grandchildren);
+        }
+    });
+    return childRows;
+}
+
+function getCurrentRowIndex(rowList, cursorPosition) {
+    for (const row of rowList) {
+        const rowRect = row.getBoundingClientRect();
+        if (cursorPosition.y > rowRect.top + window.scrollY && cursorPosition.y < rowRect.bottom + window.scrollY &&
+            cursorPosition.x > rowRect.left + window.scrollX && cursorPosition.x < rowRect.right + window.scrollX) {
+            // return the index of the targeted row
+            return parseInt(row.attributes["data-rowindex"].value);
+        }
+    }
+    return -1;
+}
+```
+
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: Blazor -->
 
 <!-- ComponentStart: HierarchicalGrid -->
+
+<!-- Angular -->
 
 ```typescript
 export class HGridRowReorderComponent {
@@ -741,6 +1089,98 @@ export class HGridRowReorderComponent {
     }
 }
 ```
+
+<!-- end: Angular -->
+
+<!-- React -->
+```tsx
+    public  webHierarchicalGridReorderRowHandler(sender: IgrHierarchicalGrid, args: IgrRowDragEndEventArgs): void {
+        const ghostElement = args.detail.dragDirective.ghostElement;
+        const dragElementPos = ghostElement.getBoundingClientRect();        
+        const grid = this.hierarchicalGrid;
+        grid.collapseAll();
+        const rows = Array.prototype.slice.call(document.getElementsByTagName("igx-hierarchical-grid-row"));        
+        const currRowIndex = this.getCurrentRowIndex(rows,
+        { x: dragElementPos.x, y: dragElementPos.y });        
+        if (currRowIndex === -1) { return; }
+        // remove the row that was dragged and place it onto its new location
+        grid.deleteRow(args.detail.dragData.key);
+        grid.data.splice(currRowIndex, 0, args.detail.dragData.data);
+    }
+ 
+    public getCurrentRowIndex(rowList: any[], cursorPosition: any) {
+        for (const row of rowList) {
+            const rowRect = row.getBoundingClientRect();
+            if (cursorPosition.y > rowRect.top + window.scrollY && cursorPosition.y < rowRect.bottom + window.scrollY &&
+                cursorPosition.x > rowRect.left + window.scrollX && cursorPosition.x < rowRect.right + window.scrollX) {
+                // return the index of the targeted row
+                return parseInt(row.attributes["data-rowindex"].value);
+            }
+        }
+        return -1;
+    }
+```
+<!-- end: React -->
+
+
+```typescript
+public webGridReorderRowHandler(args: CustomEvent<IgcRowDragEndEventArgs>): void {
+    const ghostElement = args.detail.dragDirective.ghostElement;
+    const dragElementPos = ghostElement.getBoundingClientRect();
+    const grid = document.getElementsByTagName("igc-hierarchical-grid")[0] as any;
+    const rows = Array.prototype.slice.call(document.getElementsByTagName("igx-grid-row"));
+    const currRowIndex = this.getCurrentRowIndex(rows,
+    { x: dragElementPos.x, y: dragElementPos.y });
+    if (currRowIndex === -1) { return; }
+    // remove the row that was dragged and place it onto its new location
+    grid.deleteRow(args.detail.dragData.key);
+    grid.data.splice(currRowIndex, 0, args.detail.dragData.data);
+}
+public getCurrentRowIndex(rowList: any[], cursorPosition) {
+    for (const row of rowList) {
+        const rowRect = row.getBoundingClientRect();
+        if (cursorPosition.y > rowRect.top + window.scrollY && cursorPosition.y < rowRect.bottom + window.scrollY &&
+            cursorPosition.x > rowRect.left + window.scrollX && cursorPosition.x < rowRect.right + window.scrollX) {
+            // return the index of the targeted row
+            return parseInt(row.attributes["data-rowindex"].value);
+        }
+    }
+    return -1;
+}
+```
+
+
+<!-- Blazor -->
+```razor
+<IgbHierarchicalGrid Data="SingersData" PrimaryKey="ID" RowDraggable="true" RowDragEndScript="WebGridReorderRowHandler"></IgbHierarchicalGrid >
+
+//In JavaScript
+igRegisterScript("WebGridReorderRowHandler", (args) => {
+    const ghostElement = args.detail.dragDirective.ghostElement;
+    const dragElementPos = ghostElement.getBoundingClientRect();
+    const grid = document.getElementsByTagName("igc-hierarchical-grid")[0];
+    const rows = Array.prototype.slice.call(document.getElementsByTagName("igx-hierarchical-grid-row"));
+    const currRowIndex = this.getCurrentRowIndex(rows,
+    { x: dragElementPos.x, y: dragElementPos.y });
+    if (currRowIndex === -1) { return; }
+    // remove the row that was dragged and place it onto its new location
+    grid.deleteRow(args.detail.dragData.key);
+    grid.data.splice(currRowIndex, 0, args.detail.dragData.data);
+}, false);
+ 
+function getCurrentRowIndex(rowList, cursorPosition) {
+    for (const row of rowList) {
+        const rowRect = row.getBoundingClientRect();
+        if (cursorPosition.y > rowRect.top + window.scrollY && cursorPosition.y < rowRect.bottom + window.scrollY &&
+            cursorPosition.x > rowRect.left + window.scrollX && cursorPosition.x < rowRect.right + window.scrollX) {
+            // return the index of the targeted row
+            return parseInt(row.attributes["data-rowindex"].value);
+        }
+    }    
+    return -1;
+}
+```
+<!-- end: Blazor -->
 
 <!-- ComponentEnd: HierarchicalGrid -->
 

@@ -33,14 +33,44 @@ For a complete introduction to the {ProductName}, read the [*Getting Started*](.
 
 <!-- end: WebComponents -->
 
+<!-- React -->
+
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `DateTimeInput`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrDateTimeInput, IgrDateTimeInputModule } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrDateTimeInputModule.register();
+```
+
+<!-- end: React -->
+
 <!-- Blazor -->
 
 Before using the `DateTimeInput`, you need to register it as follows:
 
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbDateTimeInputModule));
+```
+
+You will also need to link an additional CSS file to apply the styling to the `DateTimeInput` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
 <!-- end: Blazor -->
 
 ### Value binding
-The easiest way to set the value of the `DateTimeInput` component is by passing a Date object to the `value` property:
+The easiest way to set the value of the `DateTimeInput` component is by passing a Date object to the `Value` property:
 
 ```typescript
 const input = document.querySelector('igc-date-time-input') as IgcDateTimeInputComponent;
@@ -49,12 +79,27 @@ const date = new Date();
 input.value = date;
 ```
 
+```tsx
+public dateTimeInputRef(input: IgrDateTimeInput) {
+    if (!input) { return; }
+    input.value = new Date();
+}
+```
+
+```razor
+<IgbDateTimeInput @ref="DateTimeInputRef" Value="@Date">
+    <IgbIcon IconName="clear" Collection="myIcons" slot="prefix" @onclick="OnClear"></IgbIcon>
+</IgbDateTimeInput>
+```
+
+<!-- WebComponents, React -->
+
 The `DateTimeInput` also accepts [ISO 8601](https://tc39.es/ecma262/#sec-date-time-string-format) strings.
 
 The string can be a full `ISO` string, in the format `YYYY-MM-DDTHH:mm:ss.sssZ` or it could be separated into date-only and time-only portions.
 
 ##### Date-only
-If a date-only string is bound to the `value` property of the component, it needs to be in the format `YYYY-MM-DD`. The `inputFormat` is still used when typing values in the input and it does not have to be in the same format. Additionally, when binding a date-only string, the directive will prevent time shifts by coercing the time to be `T00:00:00`.
+If a date-only string is bound to the `Value` property of the component, it needs to be in the format `YYYY-MM-DD`. The `InputFormat` is still used when typing values in the input and it does not have to be in the same format. Additionally, when binding a date-only string, the directive will prevent time shifts by coercing the time to be `T00:00:00`.
 
 ##### Time-only
 Time-only strings are normally not defined in the `ECMA` specification, however to allow the directive to be integrated in scenarios which require time-only solutions, it supports the 24 hour format - `HH:mm:ss`. The 12 hour format is not supported.
@@ -63,6 +108,8 @@ Time-only strings are normally not defined in the `ECMA` specification, however 
 If a full `ISO` string is bound, the directive will parse it only if all elements required by [Date.parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#date_time_string_format) are provided.
 
 All falsy values, including `InvalidDate` will be parsed as `null`. Incomplete date-only, time-only, or full `ISO` strings will be parsed as `InvalidDate`.
+
+<!-- end: WebComponents, React -->
 
 ### Keyboard Navigation
 
@@ -84,10 +131,10 @@ The `DateTimeInput` has intuitive keyboard navigation that makes it easy to incr
 
 The `DateTimeInput` supports different display and input formats.
 
-It uses [Intl.DateTimeFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat) which allows it to support predefined format options, such as `long` and `short`, `medium` and `full`. Additionally, it can also accept a custom string constructed from supported characters, such as `dd-MM-yy`. Also, if no `displayFormat` is provided, the component will use the `inputFormat` as such.
+It uses [Intl.DateTimeFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat) which allows it to support predefined format options, such as `long` and `short`, `medium` and `full`. Additionally, it can also accept a custom string constructed from supported characters, such as `dd-MM-yy`. Also, if no `DisplayFormat` is provided, the component will use the `InputFormat` as such.
 
 ### Input Format
-The table bellow shows formats that are supported by the component's `inputFormat`:
+The table bellow shows formats that are supported by the component's `InputFormat`:
 
 |Format|Description|
 |-------|----------|
@@ -105,10 +152,20 @@ The table bellow shows formats that are supported by the component's `inputForma
 | `mm` | Minutes with an explicitly set leading zero. |
 | `tt` | AM/PM section for 12-hour format. |
 
-To set a specific input format, pass it as a string to the `DateTimeInput`. This will set both the expected user input format and the `mask`. Additionally, the `inputFormat` is locale based, so if none is provided, the editor will default to `dd/MM/yyyy`.
+To set a specific input format, pass it as a string to the `DateTimeInput`. This will set both the expected user input format and the `mask`. Additionally, the `InputFormat` is locale based, so if none is provided, the editor will default to `dd/MM/yyyy`.
 
 ```html
 <igc-date-time-input input-format="dd-MM-yy" display-format="medium"/>
+```
+
+```tsx
+<IgrDateTimeInput ref={this.dateTimeInputRef} inputFormat="dd-MM-yy" displayFormat="medium"></IgrDateTimeInput>
+```
+
+```razor
+<IgbDateTimeInput @ref="DateTimeInputRef" InputFormat="dd-MM-yy" DisplayFormat="medium">
+    <IgbIcon IconName="clear" Collection="myIcons" slot="prefix" @onclick="OnClear"></IgbIcon>
+</IgbDateTimeInput>
 ```
 
 If all went well, you should see the following in your browser:
@@ -170,16 +227,33 @@ Furthermore, users can construct a displayFormat string using the supported symb
 
 ## Min/max value
 
-You can specify `minValue` and `maxValue` properties to restrict input and control the validity of the component. Just like the `value` property, they can be of type `string`.
+You can specify `Min` and `Max` properties to restrict input and control the validity of the component. Just like the `Value` property, they can be of type `string`.
 
 ```ts
 const input = document.querySelector('igc-date-time-input') as IgcDateTimeInputComponent;
 
-input.minValue = new Date(2021, 0, 1);
+input.min = new Date(2021, 0, 1);
 ```
 
 ```html
-<igc-date-time-input max-value="2022-01-01T21:00:00.000Z"></igc-date-time-input>
+<igc-date-time-input max="2022-01-01T21:00:00.000Z"></igc-date-time-input>
+```
+
+```tsx
+public dateTimeInputRef(input: IgrDateTimeInput) {
+    if (!input) { return; }
+    input.min = new Date(2021, 0, 1);
+}
+```
+
+```tsx
+ <IgrDateTimeInput ref={this.dateTimeInputRef} max={new Date(2024, 6, 25)}></IgrDateTimeInput>
+```
+
+```razor
+<IgbDateTimeInput @ref="DateTimeInputRef" Min="@MinDate" Max="@MaxDate">
+    <IgbIcon IconName="clear" Collection="myIcons" slot="prefix" @onclick="OnClear"></IgbIcon>
+</IgbDateTimeInput>
 ```
 
 If all went well, the component will be `invalid` if the value is greater or lower than the given dates. Check out the example below:
@@ -188,11 +262,15 @@ If all went well, the component will be `invalid` if the value is greater or low
 
 ## Step up/down
 
-The `DateTimeInput` exposes public `stepUp` and `stepDown` methods. They increment or decrement a specific `DatePart` of the currently set date and time and can be used in a couple of ways.
+The `DateTimeInput` exposes public `StepUp` and `StepDown` methods. They increment or decrement a specific `DatePart` of the currently set date and time and can be used in a couple of ways.
 
-In the first scenario, if no specific DatePart is passed to the method, a default DatePart will increment or decrement, based on the specified `inputFormat` and the internal component implementation. In the second scenario, you can explicitly specify what DatePart to manipulate as it may suite different requirements. Also, both methods accept an optional `delta` parameter of type number which can be used to set the stepUp/stepDown step.
+In the first scenario, if no specific DatePart is passed to the method, a default DatePart will increment or decrement, based on the specified `InputFormat` and the internal component implementation. In the second scenario, you can explicitly specify what DatePart to manipulate as it may suite different requirements. Also, both methods accept an optional `delta` parameter of type number which can be used to set the stepUp/stepDown step.
 
-Additionally, `spinDelta` is a property that can be used to apply a different delta to each date time segment. It will be applied when spinning with the keyboard, mouse wheel or with the `stepUp` and `stepDown` methods, as long as they don't have the delta parameter provided since it will take precedence over `spinDelta`.
+<!-- WebComponents, Blazor -->
+
+Additionally, `SpinDelta` is a property that can be used to apply a different delta to each date time segment. It will be applied when spinning with the keyboard, mouse wheel or with the `StepUp` and `StepDown` methods, as long as they don't have the delta parameter provided since it will take precedence over `SpinDelta`.
+
+<!-- end: WebComponents, Blazor -->
 
 ```ts
 const input = document.getElementById('dateTimeInput') as IgcDateTimeInputComponent;
