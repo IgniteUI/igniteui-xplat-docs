@@ -1,29 +1,30 @@
 ---
-title: {Platform} Hierarchical Grid | Fastest {Platform} Hierarchical Table | Infragistics
-_description: The {ProductName} Hierarchical Grid provides the necessary tools to load data on demand for each child grid that is expanded. That way the volume of data would be greatly reduced and can be retrieved only when the user needs it.
-_keywords: {Platform} hierarchical grid, igniteui for {Platform}, infragistics
+title: {Platform} 階層グリッド | 最速の {Platform} 階層テーブル | インフラジスティックス
+_description: {ProductName} Hierarchical Grid は、展開された各子グリッドでロードオンデマンドに必要なツールを提供します。データ量が大幅に軽減されてユーザがデータを必要な場合のみ取得されます。
+_keywords: {Platform} hierarchical grid, igniteui for {Platform}, infragistics, {Platform} 階層グリッド, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
+_language: ja
 ---
 
-# Hierarchical Grid Load On Demand
+# Hierarchical Grid ロードオンデマンド
 
-The Ignite UI for {Platform} `HierarchicalGrid` allows fast rendering by requesting the minimum amount of data to be retrieved from the server so that the user can see the result in view and interact with the visible data as quickly as possible. Initially only the root grid’s data is retrieved and rendered, only after the user expands a row containing a child grid, he will receive the data for that particular child grid. This mechanism, also known as Load on Demand, can be easily configured to work with any remote data.
+Ignite UI for {Platform} `HierarchicalGrid` は、要求するサーバーからのデータを最低限にすることによりすばやく描画できます。このため、ユーザーがビューで結果を確認でき、表示データをインタラクティブに操作できます。初期時にグリッドのデータのみが取得されて描画され、ユーザーが子グリッドを含む行を拡張した後のみ、特定の子グリッドのデータを取得します。このメカニズムは、ロードオンデマンドであらゆるリモートデータとの設定が簡単にできます。
 
-This topic demonstrates how to configure Load on Demand by creating a Remote Service Provider that communicates with an already available remote service. Here's the working demo and later we will go through it step by step and describe the process of creating it.
+このトピックは、既に利用可能なリモート サービスと通信してリモート サービス プロバイダーを作成し、ロードオンデマンドを設定する方法を説明します。以下は、デモと作成手順を示します。
 
-## {Platform} Hierarchical Grid Load On Demand Example
+## {Platform} Hierarchical Grid ロードオンデマンドの例
 
-`sample="/{HierarchicalGridSample}/data-performance-virtualization", height="700", alt="{Platform} Hierarchical Grid Load On Demand Example"`
+`sample="/{HierarchicalGridSample}/data-performance-virtualization", height="700", alt="{Platform} Hierarchical Grid ロードオンデマンドの例"`
 
-### Remote Service Provider
+### リモート サービス プロバイダー
 
-First we will prepare our service provider so we will be ready to get the data we would need for the hierarchical grid.
+はじめにサービス プロバイダーを準備して階層グリッドに必要なデータを取得します。
 
-#### Getting basic data
+#### 基本データの取得
 
 <!-- Angular -->
-We will be communicating with our backend service over HTTP protocol using the XMLHttpRequest interface the browsers provide. In order to achieve this more easily we will use Angular's [`HttpClient`](https://angular.io/api/common/http/HttpClient) module that offers a simplified client HTTP API. That way in order to get our data we will need this simple method in our service:
+ブラウザーが提供する XMLHttpRequest インターフェイス を使用した HTTP プロトコルでバックエンドサービスと通信します。簡易的なクライアント HTTP API を提供する Angular の [`HttpClient`](https://angular.io/api/common/http/HttpClient) モジュールを使用してより簡単に行うことができます。データを取得にはサービスのシンプルなメソッドが必要となります。
 
 ```typescript
 public getData(dataState): Observable<any[]> {
@@ -33,11 +34,11 @@ public getData(dataState): Observable<any[]> {
 }
 ```
 
-As you can see `this.http` will be a reference to our `HttpCLient` module, and `buildUrl()` will be the method that will generate our url based on the data that we have received. We map our response and return an Observable, since this is executed asynchronously. That way we can later subscribe to it, process it further in our application and pass it to our grid.
+`this.http` は、`HttpCLient` モジュールの参照となり、`buildUrl()` は取得したデータに基づいて url を生成するメソッドになります。実行された非同期のため、返信をマップし、Observable を返します。それにより後でサブスクライブし、アプリケーションで処理を進めてグリッドへ渡すことができます。
 <!-- end: Angular -->
 
 <!-- WebComponents, React -->
-We will be communicating with our backend service over HTTP protocol using the [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/fetch) global function the browsers provide. That way in order to get our data we will need this simple method in our service:
+ブラウザーが提供する [`fetch()`](https://developer.mozilla.org/ja/docs/Web/API/fetch) グローバル関数を使用した HTTP プロトコルでバックエンドサービスと通信します。データを取得にはサービスのシンプルなメソッドが必要となります。
 
 ```ts
 export function getData(dataState: any): any {
@@ -46,11 +47,11 @@ export function getData(dataState: any): any {
 }
 ```
 
-As you can see `buildUrl()` will be the method that will generate our url based on the data that we have received. We return a Promise, since this is executed asynchronously. That way we can later subscribe to it, process it further in our application and pass it to our grid.
+`buildUrl()` は取得したデータに基づいて url を生成するメソッドになります。実行された非同期のため、Promise を返します。それにより後でサブスクライブし、アプリケーションで処理を進めてグリッドへ渡すことができます。
 <!-- end: WebComponents, React -->
 
 <!-- Blazor -->
-We will be communicating with our backend service over HTTP protocol using the [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/fetch) global function the browsers provide. That way in order to get our data we will need this simple method in our service:
+ブラウザーが提供する [`fetch()`](https://developer.mozilla.org/ja-JP/docs/Web/API/fetch) グローバル関数を使用した HTTP プロトコルでバックエンドサービスと通信します。データを取得にはサービスのシンプルなメソッドが必要となります。
 
 ```razor
 function getData(dataState) {
@@ -59,19 +60,19 @@ function getData(dataState) {
 }
 ```
 
-As you can see `buildUrl()` will be the method that will generate our url based on the data that we have received. We return a Promise, since this is executed asynchronously. That way we can later subscribe to it, process it further in our application and pass it to our grid.
+`buildUrl()` は取得したデータに基づいて url を生成するメソッドになります。実行された非同期のため、Promise を返します。それにより後でサブスクライブし、アプリケーションで処理を進めてグリッドへ渡すことができます。
 <!-- end: Blazor -->
 
-#### Building our request url
+#### 要求 URL のビルド
 
-Next we will define how we should build our URL for the GET request. This is where we will be able to get the data for our main grid but also for any child grid inside it. We will use the `Customers` data from [here](https://data-northwind.indigo.design/swagger/index.html) for our root level and use `Orders` and `Details` for the lower levels. The model will differ per application but we will use the following one:
+次に GET 要求の URL をビルドする方法を定義します。メイン グリッドのデータを取得できますが含まれる子グリッドのデータも取得できます。ルート レベルに[こちら](https://data-northwind.indigo.design/swagger/index.html)の `Customers` データを使用し、それ以外のレベルには `Orders` と `Details` を使用します。このモデルはアプリケーションごとに異なりますが、ここでは以下を使用します。
 
 <img class="responsive-img" src="../../../images/hgrid-database.jpg" />
 
-What we first need is the `key` of our table to determine from where to get the data for the desired grid, the primary key of the parent row and its unique ID.
+はじめに必要となるのはグリッドのデータ、親業のプライマリキーとその一意の ID をどこから取得するかを決定するテーブルの `key` が必要です。
 
 <!-- Angular -->
-We will define all this in an interface called `IDataState`. An example:
+インターフェイス `IDataState` でこれらすべてを定義します。例:
 
 ```typescript
 export interface IDataState {
@@ -98,7 +99,7 @@ public buildUrl(dataState: IDataState): string {
 <!-- end: Angular -->
 
 <!-- WebComponents, React -->
-We will define all this in the `dataState` object. An example:
+これらすべてを `dataState` オブジェクトで定義します。例:
 
 ```ts
 const dataState: {
@@ -125,7 +126,7 @@ function buildUrl(dataState: any) {
 <!-- end: WebComponents, React -->
 
 <!-- Blazor -->
-We will define all this in the `dataState` object. An example:
+これらすべてを `dataState` オブジェクトで定義します。例:
 
 ```razor
 const dataState: {
@@ -151,10 +152,10 @@ function buildUrl(dataState) {
 ```
 <!-- end: Blazor -->
 
-#### Result
+#### 結果
 
 <!-- Angular -->
-Finally, this is how our `remote-lod.service.ts` would look like:
+最後に `remote-lod.service.ts` は以下のようになります。
 
 ```typescript
 import { HttpClient } from '@angular/common/http';
@@ -197,7 +198,7 @@ export class RemoteLoDService {
 <!-- end: Angular -->
 
 <!-- WebComponents, React -->
-Finally, this is how our remote service would look like:
+最後に、リモート サービスは以下のようになります。
 
 ```ts
 const URL = `https://data-northwind.indigo.design/`;
@@ -222,7 +223,7 @@ function buildUrl(dataState: any) {
 <!-- end: WebComponents, React -->
 
 <!-- Blazor -->
-Finally, this is how our remote service would look like:
+最後に、リモート サービスは以下のようになります。
 
 ```razor
 const DATA_URL = `https://data-northwind.indigo.design/`;
@@ -246,13 +247,13 @@ function buildUrl(dataState) {
 ```
 <!-- end: Blazor -->
 
-### Hierarchical Grid Setup
+### 階層グリッドの`設定
 
-Next we will setup our hierarchical grid and connect it to our remote service provider.
+次に階層グリッドを設定してリモート サービス プロバイダーに接続します。
 
-#### Template defining
+#### テンプレートの地祇
 
-First we will define our hierarchical grid template with the levels of hierarchy that we expect to have. We know that our root grid `PrimaryKey` for the customers is their `customerId`, for their orders on the first level -  `orderId` and respectively for order details - `productId`. Knowing each database table and their keys allows us to define our initial template:
+最初に階層グリッド テンプレートを必要な階層レベルで定義します。customers のルート グリッド `PrimaryKey` は最初のレベルの orders の `customerId` です。`orderId` と各 order 詳細の `productId` です。各データベース テーブルとキーで初期テンプレートを定義します。
 
 <!-- Angular -->
 ```html
@@ -358,49 +359,49 @@ First we will define our hierarchical grid template with the levels of hierarchy
 ```
 <!-- end: Blazor -->
 
-There is one thing missing in our template though, and that is the data for our root level hierarchical grid, and eventually its children.
+ルート レベル階層グリッドと最終的にはその子のデータがテンプレートに必要となります。
 
 <!-- Angular -->
-We will easily set the data of the root grid after getting its data from the service in our code later, since we can use the `#hGrid` reference.
+`#hGrid` 参照が使用できるため、コードでサービスからデータ取得後にルート グリッドのデータを簡単に設定できます。
 <!-- end: Angular -->
 
 <!-- WebComponents -->
-We will easily set the data of the root grid after getting its data from the service in our code later, since we can use the `id="hGrid"` reference.
+`id="hGrid"` 参照が使用できるため、コードでサービスからデータ取得後にルート グリッドのデータを簡単に設定できます。
 <!-- end: WebComponents -->
 
 <!-- React -->
-We will easily set the data of the root grid after getting its data from the service in our code later, since we can use the `ref={hierarchicalGrid}` reference.
+`ref={hierarchicalGrid}` 参照が使用できるため、コードでサービスからデータ取得後にルート グリッドのデータを簡単に設定できます。
 <!-- end: React -->
 
 <!-- Blazor -->
-We will easily set the data of the root grid after getting its data from the service in our code later, since we can use the `Id="hGrid"` reference.
+`Id="hGrid"` 参照が使用できるため、コードでサービスからデータ取得後にルート グリッドのデータを簡単に設定できます。
 <!-- end: Blazor -->
 
-Setting the data for any child that has been expanded is a bit different. When a row is expanded for the first time, a new child `HierarchicalGrid` is rendered for it and we need to get the reference for the newly created grid to set its data. That is why each `RowIsland` component provides the `GridCreated` event that is fired when a new child grid is created for that specific row island. We can use that to get the reference we need for the new grid, request its data from the service, and apply it.
+展開されている子にデータを設定する方法は異なります。行がはじめて展開されたときに新し子 `HierarchicalGrid` が描画がされるため、データを設定するために新しく作成されたグリッドの参照を取得する必要があります。各 `RowIsland` コンポーネントに `GridCreated` イベントがあり、特定の子アイランドに新しい子グリッドが作成されたときに発生します。新しいグリッドの参照を取得するために使用でき、サービスからデータを要求して適用します。
 
-We can use one method for all row islands since we built our service so that it needs only information if it is the root level, the key of the row island, the primary key of the parent row, and its unique identifier. All this information can be accessed either directly from the event arguments, or from the row island responsible for triggering the event. 
+サービスをビルドしているためルートレベルの場合に情報のみが必要なため、すべてのアイランドに 1 メソッドを使用できます。このすべての情報には、イベント引数から直接またはイベントをトリガーする行アイランドからアクセスできます。 
 
 <!-- Angular, WebComponents, React -->
-Let's name the method that we will use `gridCreated`.
+`gridCreated` を使用するメソッドに名前を付けます。
 <!-- end: Angular, WebComponents, React -->
 
 <!-- Blazor -->
-Let's name the method that we will use `OnGridCreated`.
+`OnGridCreated` を使用するメソッドに名前を付けます。
 <!-- end: Blazor -->
 
 <!-- Angular, WebComponents -->
-Since the `GridCreated` event provides the `parentID` property, a reference to the row island as `owner` and the new child `grid` property, it will be passed as the first argument. We are only missing information about the parent row's `primaryKey`, but we can easily pass that as a second argument, depending on which row island we bind. 
+`GridCreated` イベントは `parentID` プロパティ、`owner` として行アイランドへの参照、新しい子 `grid` プロパティを提供するため、最初の引数として渡されます。親行の `primaryKey` についての情報はありませんが、バインドした行アイランドに基づいて 2 番目の引数として簡単に渡すことができます。 
 <!-- end: Angular, WebComponents -->
 
 <!-- React -->
-Since the `GridCreated` event provides a reference to the row island, the `parentID` property, and the new child `grid` property, this will be passed as the first and second arguments. We are only missing information about the parent row's `primaryKey`, but we can easily pass that as a third argument, depending on which row island we bind.
+`GridCreated` イベントは行アイランド、`parentID` プロパティ、および新しい子グリッド プロパティへの参照を提供するため、これは最初と 2 番目の引数として渡されます。親行の `primaryKey` についての情報はありませんが、バインドした行アイランドに基づいて 2 番目の引数として簡単に渡すことができます。
 <!-- end: React -->
 
 <!-- Blazor -->
-Since the `GridCreated` event provides the `parentID` property, a reference to the row island as `owner` and the new child `grid` property, it will be passed as the first argument. We are only missing information about the parent row's `primaryKey`, but we can easily determine that based on the row island `ChildDataKey`.
+`GridCreated` イベントは `parentID` プロパティ、`owner` として行アイランドへの参照、新しい子 `grid` プロパティを提供するため、最初の引数として渡されます。親行の `primaryKey` についての情報しかありませんが、行アイランドの `ChildDataKey` に基づいてそれを簡単に判断できます。
 <!-- end: Blazor -->
 
-The template file, with these changes added, would look like this:
+変更を加えたテンプレート ファイルは以下のようになります。
 
 <!-- Angular -->
 ```html
@@ -534,12 +535,12 @@ constructor() {
 ```
 <!-- end: Blazor -->
 
-#### Connecting our service
+#### サービスへ接続
 
-One of our final steps now will be to connect our previously created service to our hierarchical grid.
+最後の手順の 1 つとして、以前作成したサービスに階層グリッドを接続することです。
 
 <!-- Angular -->
-Since we defined it as an `Injectable`, we can pass it as a provider to our application. We will get a reference to our root grid as well, by using `ViewChild` query to set its data:
+`Injectable` として定義するため、プロバイダーとしてアプリケーションへ渡すことができます。`ViewChild` クエリをデータに設定してルートグリッドへの参照も取得します。
 
 ```typescript
 @Component({
@@ -556,7 +557,7 @@ export class HierarchicalGridLoDSampleComponent {
 }
 ```
 
-In order to make sure that our grid is rendered before we request its data from the service and assign it, we will use the `AfterViewInit` lifecycle hook. As it doesn't have any parents we can only pass that `rootLevel` is **true**, and the key for it, to the `getData` of our service. Since it returns an observable we will need to subscribe to it:
+グリッドがサービスのデータを要求して割り当てる前に描画されることを確認するために、ライフサイクル フックを使用します。親がないため、`rootLevel` は **true** でそのキーのみをサービスの `getData` へ渡すことができます。サブスクライブする必要のある observable を返します。
 
 ```typescript
 public ngAfterViewInit() {
@@ -569,7 +570,7 @@ public ngAfterViewInit() {
 <!-- end: Angular -->
 
 <!-- WebComponents -->
-We will get a reference to our root grid to set its data. As it doesn't have any parents we can only pass that `rootLevel` is **true**, and the key for it, to the `getData` of our service. Since it returns a Promise we will need to subscribe to it:
+ルート グリッドへの参照を取得して、そのデータを設定します。親がないため、`rootLevel` は **true** でそのキーのみをサービスの `getData` へ渡すことができます。サブスクライブする必要のある Promise を返します。
 
 ```ts
 constructor() {
@@ -584,13 +585,13 @@ constructor() {
 <!-- end: WebComponents -->
 
 <!-- React -->
-We will get a reference to our root grid via the `useRef` React hook to set its data:
+`useRef` React フックを介してルート グリッドへの参照を取得し、そのデータを設定します。
 
 ```tsx
 const hierarchicalGrid = useRef<IgrHierarchicalGrid>(null);
 ```
 
-In order to make sure that our grid is rendered before we request its data from the service and assign it, we will use the `useEffect` React hook. As it doesn't have any parents we can only pass that `rootLevel` is **true**, and the key for it, to the `getData` of our service. Since it returns a Promise we will need to subscribe to it:
+グリッドがサービスのデータを要求して割り当てる前に描画されることを確認するために、`useEffect` React フックを使用します。親がないため、`rootLevel` は **true** でそのキーのみをサービスの `getData` へ渡すことができます。サブスクライブする必要のある Promise を返します。
 
 ```tsx
 useEffect(() => {
@@ -605,7 +606,7 @@ useEffect(() => {
 <!-- end: React -->
 
 <!-- Blazor -->
-We will get a reference to our root grid to set its data. In order to make sure that our grid is rendered before we request its data from the service and assign it, we will use the `Rendered` event. As it doesn't have any parents we can only pass that `rootLevel` is **true**, and the key for it, to the `getData` of our service. Since it returns a Promise we will need to subscribe to it:
+ルート グリッドへの参照を取得して、そのデータを設定します。グリッドがサービスのデータを要求して割り当てる前に描画されることを確認するために、`Rendered` イベントを使用します。親がないため、`rootLevel` は **true** でそのキーのみをサービスの `getData` へ渡すことができます。サブスクライブする必要のある Promise を返します。
 
 ```razor
 igRegisterScript("OnGridRendered", () => {
@@ -621,14 +622,14 @@ igRegisterScript("OnGridRendered", () => {
 <!-- end: Blazor -->
 
 <!-- Angular, WebComponents, React -->
-Next, we only need to create our `gridCreated` method that will request data for any new child grid created.
+次に作成した新しい子グリッドのデータを要求する `gridCreated` メソッドを作成する必要があります。
 <!-- end: Angular, WebComponents, React -->
 
 <!-- Blazor -->
-Next, we only need to create our `OnGridCreated` method that will request data for any new child grid created.
+次に作成した新しい子グリッドのデータを要求する `OnGridCreated` メソッドを作成する必要があります。
 <!-- end: Blazor -->
 
-It will be similar to getting the root level grid data, just this time we will need to pass more information, like `parentID` and `parentKey`. `rootLevel` will be **false** for any child:
+ルート レベル グリッド データの取得と同様に、ここでは`parentID` や `parentKey` などの情報を渡す必要があります。`rootLevel` はいずれの子も **false** です。
 
 <!-- Angular -->
 ```typescript
@@ -707,13 +708,13 @@ igRegisterScript("OnGridCreated", (args) => {
 ```
 <!-- end: Blazor -->
 
-With this, the setup of our application is almost done. This last step aims to improve the user experience by informing the user that the data is still loading so he doesn't have to look at an empty grid in the meantime. That's why the `HierarchicalGrid` supports a loading indicator that can be displayed while the grid is empty. If new data is received, the loading indicator will hide and the data will be rendered. 
+これにより、アプリケーションの設定はほぼ完了です。最後の手順は、空グリッドを表示する代わりにユーザーにデータがまだ読み込み中であることを通知してユーザー エクスペリエンスを向上します。`HierarchicalGrid` は、グリッドが空のときに表示できるインジケーターの読み込みサポートします。新しいデータが取得されると読み込みインジケーターが非表示となりデータが描画されます。 
 
-#### Setup of loading indication
+#### 読み込み通知の設定
 
-The `HierarchicalGrid` can display a loading indicator by setting the `IsLoading` property to **true** while there is no data. We need to set it initially for the root grid and also when creating new child grids, until their data is loaded. We could always set it to **true** in our template, but we want to hide it and display that the grid has no data if the service returns an empty array by setting it to **false**.
+`HierarchicalGrid` は、`IsLoading` プロパティを **true** に設定して読み込みインジケーターを表示できます。データが読み込まれるまでルートグリッドにあらかじめ設定しますが、新しい子グリッドを作成する際にも必要です。テンプレートで常に **true** に設定できますが、**false** に設定してサービスが空配列を返した場合は非表示にしてデータのないグリッドを表示できます。
 
-In this case the final version of our configuration would look like this:
+以下は構成の最終バージョンです。
 
 <!-- Angular -->
 ```typescript
@@ -882,16 +883,16 @@ igRegisterScript("OnGridCreated", (args) => {
 ```
 <!-- end: Blazor -->
 
-### API References
+### API リファレンス
 
 * `HierarchicalGrid`
 * `RowIsland`
 
-### Additional Resources
+### その他のリソース
 
-* [Hierarchical Grid Component](overview.md)
+* [Hierarchical Grid コンポーネント](overview.md)
 
-Our community is active and always welcoming to new ideas.
+コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

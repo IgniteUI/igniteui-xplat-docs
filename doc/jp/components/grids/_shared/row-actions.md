@@ -79,6 +79,22 @@ import { IgxActionStripModule } from 'igniteui-angular';
 ```
 <!-- ComponentEnd: TreeGrid -->
 
+<!-- ComponentStart: HierarchicalGrid -->
+```razor
+<IgbHierarchicalGrid Data=northwindEmployees RowEditable="True" PrimaryKey="ID">
+    @foreach (var c in columns)
+    {
+        <IgbColumn Field="@c.Field">
+        </IgbColumn>
+    }
+    <IgbActionStrip @ref=actionstrip>
+        <IgbGridPinningActions></IgbGridPinningActions>
+        <IgbGridEditingActions></IgbGridEditingActions>
+    </IgbActionStrip>
+</IgbHierarchicalGrid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+
 <!-- WebComponents -->
 ```html
 <igc-grid row-editable="true" primary-key="ID">
@@ -100,9 +116,22 @@ import { IgxActionStripModule } from 'igniteui-angular';
 </igc-tree-grid>
 ```
 <!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```html
+<igc-hierarchical-grid row-editable="true" primary-key="ID">
+    <igc-column field="field"></igc-column>
+    <igc-action-strip>
+        <igc-grid-pinning-actions></igc-grid-pinning-actions>
+        <igc-grid-editing-actions></igc-grid-editing-actions>
+    </igc-action-strip>
+</igc-hierarchical-grid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
 <!-- end: WebComponents -->
 
 <!-- React -->
+<!-- ComponentStart: Grid, TreeGrid -->
 ```tsx
 <{ComponentSelector} id="grid" rowEditable="true" primaryKey="ID">
     <IgrColumn field="field">
@@ -113,6 +142,20 @@ import { IgxActionStripModule } from 'igniteui-angular';
     </IgrActionStrip>
 </{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```tsx
+<IgrHierarchicalGrid id="hierarchicalGrid" rowEditable="true" primaryKey="ID">
+    <IgrColumn field="field">
+    </IgrColumn>
+    <IgrActionStrip name="actionStrip">
+        <IgrGridPinningActions></IgrGridPinningActions>
+        <IgrGridEditingActions></IgrGridEditingActions>
+    </IgrActionStrip>
+</IgrHierarchicalGrid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
 <!-- end: React -->
 
 > [!Note]
@@ -139,6 +182,7 @@ import { IgxActionStripModule } from 'igniteui-angular';
 </{ComponentSelector}>
 ```
 
+<!-- ComponentStart: Grid, TreeGrid -->
 ```razor
 <div class="grid__wrapper">
     <{ComponentSelector} Data=northwindEmployees>
@@ -157,11 +201,33 @@ import { IgxActionStripModule } from 'igniteui-angular';
     </{ComponentSelector}>
 </div>
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
 
-<!-- end: Angular -->
+<!-- ComponentStart: HierarchicalGrid -->
+```razor
+<div class="grid__wrapper">
+    <IgbHierarchicalGrid Data=northwindEmployees>
+        <IgbActionStrip @ref=actionstrip>
+            <IgbGridPinningActions></IgbGridPinningActions>
+            <IgbButton Title="Edit" @onclick="() => StartEdit(actionstrip.Context)">
+                <IgbIcon>edit</IgbIcon>
+            </IgbButton>
+            @if (!IsDeleted(actionstrip.Context))
+            {
+                <IgbButton Title="Delete" @onclick="() => Delete(actionstrip.Context)">
+                    <IgbIcon>delete</IgbIcon>
+                </IgbButton>
+            }
+        </IgbActionStrip>
+    </IgbHierarchicalGrid>
+</div>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: Angular, Blazor -->
 
 
 <!-- WebComponents -->
+<!-- ComponentStart: Grid, TreeGrid -->
 ```html
 <{ComponentSelector}>
     <igc-action-strip #actionstrip>
@@ -170,17 +236,42 @@ import { IgxActionStripModule } from 'igniteui-angular';
     </igc-action-strip>
 </{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```html
+<igc-hierarchical-grid>
+    <igc-action-strip #actionstrip>
+        <igc-grid-pinning-actions></igc-grid-pinning-actions>
+        <igc-grid-editing-actions edit-row="true" delete-row="true"></igc-grid-editing-actions>
+    </igc-action-strip>
+</igc-hierarchical-grid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
 <!-- end: WebComponents -->
 
 <!-- React -->
+<!-- ComponentStart: Grid, TreeGrid -->
 ```tsx
 <{ComponentSelector}>
     <IgrActionStrip name="actionStrip">
         <IgrGridPinningActions></IgrGridPinningActions>
-        <IgrGridEditingActions editRow="true" deleteRow="false"></IgrGridEditingActions>
+        <IgrGridEditingActions editRow="true" deleteRow="true"></IgrGridEditingActions>
     </IgrActionStrip>
 </{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```tsx
+<IgrHierarchicalGrid>
+    <IgrActionStrip name="actionStrip">
+        <IgrGridPinningActions></IgrGridPinningActions>
+        <IgrGridEditingActions editRow="true" deleteRow="true"></IgrGridEditingActions>
+    </IgrActionStrip>
+</IgrHierarchicalGrid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
 <!-- end: React -->
 
 `sample="/{ComponentSample}/action-strip", height="600", alt="{Platform} {ComponentTitle} アクション ストリップの例"`

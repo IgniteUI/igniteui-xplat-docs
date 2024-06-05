@@ -182,18 +182,21 @@ public onResize(event) {
 <!-- ComponentEnd: TreeGrid -->
 <!-- ComponentStart: HierarchicalGrid -->
 
+<!-- Angular -->
 ```html
-<igx-hierarchical-grid class="hgrid" [data]="localdata" (columnResized)="onResize($event)" [autoGenerate]="false"
+<{ComponentSelector} class="hgrid" [data]="localdata" (columnResized)="onResize($event)" [autoGenerate]="false"
         [height]="'600px'" [width]="'100%'" #hierarchicalGrid>
     <igx-column field="Artist" [resizable]="true"></igx-column>
-</igx-hierarchical-grid>
+</{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
+<!-- WebComponents -->
 ```html
-<igc-hierarchical-grid id="treeGrid" auto-generate="false" primary-key="ID" foreign-key="ParentID"
+<{ComponentSelector} id="hierarchicalGrid" auto-generate="false" primary-key="ID" foreign-key="ParentID"
     height="600px" width="100%">
     <igc-column field="Artist" resizable="true"></igc-column>
-</igc-hierarchical-grid>
+</{ComponentSelector}>
 ```
 
 ```ts
@@ -202,18 +205,40 @@ constructor() {
     hierarchicalGrid.data = this.data;
     hierarchicalGrid.columnResized = this.onResize;
 }
-```
 
-```typescript
 public onResize(event) {
     this.col = event.column;
     this.pWidth = event.prevWidth;
     this.nWidth = event.newWidth;
 }
 ```
+<!-- end: WebComponents -->
+
+```tsx
+function onResize(grid: IgrGridBaseDirective, event: IgrColumnMovingEventArgs) {
+  IgrColumn col = event.detail.column;
+  string pWidth = event.detail.prevWidth;
+  string nWidth = event.detail.newWidth;
+}
+
+<{ComponentSelector} id="hierarchicalGrid" autoGenerate="false" columnResized={onResize}>
+    <IgrColumn field="Artist" resizable="true"></IgrColumn>
+</{ComponentSelector}>
+```
 
 ```razor
-TO DO!
+<{ComponentSelector} Data=data AutoGenerate=false ColumnResized="onResize">
+    <IgbColumn Field="Artist" Resizable=true></IgbColumn>
+</{ComponentSelector}>
+
+@code {
+    private void onResize(IgbColumnResizeEventArgs args)
+    {
+        IgbColumnType col = args.Detail.Column;
+        string pWidth = args.Detail.PrevWidth;
+        string nWidth = args.Detail.NewWidth;
+    }
+}
 ```
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -251,7 +276,7 @@ TO DO!
 ```
 
 ```tsx
-<IgrGrid id="grid" auto-generate="false">
+<IgrGrid id="grid" autoGenerate="false">
     <IgrColumn field="ID" width="10%" resizable="true"></IgrColumn>
     <IgrColumn field="CompanyName" width="100px" resizable="true"></IgrColumn>
     <IgrColumn field="ContactTitle" resizable="true"></IgrColumn>
@@ -307,7 +332,20 @@ TO DO!
 ```
 
 ```razor
-TO DO!
+<{ComponentSelector} Data=data ColumnResized="onResize" AutoGenerate=false Height="600px" Width="100%">
+    <IgbColumn Field="Artist" Resizable=true Width="10%"></IgbColumn>
+    <IgbColumn Field="GrammyNominations" Resizable=true Width="100px"></IgbColumn>
+    <IgbColumn Field="GrammyAwards" Resizable=true></IgbColumn>
+</{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} id="hierarchicalGrid" columnResized={onResize} autoGenerate="false"
+    height="600px" width="100%">
+    <IgrColumn field="Artist" resizable="true" width="10%"></IgrColumn>
+    <IgrColumn field="GrammyNominations" resizable="true" width="100px"></IgrColumn>
+    <IgrColumn field="GrammyAwards" resizable="true"></IgrColumn>
+</{ComponentSelector}>
 ```
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -327,6 +365,8 @@ TO DO!
 
 列の最小幅および最大幅の構成も可能です。`Column` の `MinWidth` および `MaxWidth`入力によって制御されます。この場合、サイズ変更インジケーターのドラッグ操作が制限されます。列が `MinWidth` および `MaxWidth` によって定義される範囲以外にサイズ変更できないことをユーザーに通知します。
 
+<!-- ComponentStart: Grid, TreeGrid -->
+
 ```html
 <igx-column [field]="'ID'" width="100px" [resizable]="true"
             [minWidth]="'60px'" [maxWidth]="'230px'"></igx-column>
@@ -338,16 +378,42 @@ TO DO!
 
 ```tsx
 <IgrColumn field="ID" width="100px" resizable="true"
-            min-width="60px" max-width="230px"></IgrColumn>
+            minWidth="60px" maxWidth="230px"></IgrColumn>
 ```
 
 ```razor
 <IgbColumn Field="ContactTitle" Resizable=true Width="100px" MinWidth="60px" MaxWidth="230px"></IgbColumn>
 ```
 
+<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentStart: HierarchicalGrid -->
+
+```html
+<igx-column [field]="'Artist'" width="100px" [resizable]="true"
+            [minWidth]="'60px'" [maxWidth]="'230px'"></igx-column>
+```
+
+```html
+<igc-column field="Artist" width="100px" resizable="true"
+            min-width="60px" max-width="230px"></igc-column>
+```
+
+```tsx
+<IgrColumn field="Artist" width="100px" resizable="true"
+            minWidth="60px" maxWidth="230px"></IgrColumn>
+```
+
+```razor
+<IgbColumn Field="Artist" Resizable=true Width="100px" MinWidth="60px" MaxWidth="230px"></IgbColumn>
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
+
 列幅の最小値と最大値のタイプ (ピクセルまたはパーセンテージ) を混在させることができます。最小値と最大値がパーセンテージに設定されている場合、それぞれの列サイズはピクセルと同様の正確なサイズに制限されます。
 
 つまり、次の構成が可能です。
+
+<!-- ComponentStart: Grid, TreeGrid -->
 
 ```html
 <igx-column [field]="'ID'" width="10%" [resizable]="true"
@@ -360,14 +426,40 @@ TO DO!
 
 ```tsx
 <IgrColumn field="ID" width="10%" resizable="true"
-            min-width="60px" max-width="230px"></IgrColumn>
+            minWidth="60px" maxWidth="230px"></IgrColumn>
 ```
 
 ```razor
 <IgbColumn Field="ContactTitle" Resizable=true Width="10%" MinWidth="60px" MaxWidth="230px"></IgbColumn>
 ```
 
+<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentStart: HierarchicalGrid -->
+
+```html
+<igx-column [field]="'Artist'" width="100px" [resizable]="true"
+            [minWidth]="'60px'" [maxWidth]="'230px'"></igx-column>
+```
+
+```html
+<igc-column field="Artist" width="100px" resizable="true"
+            min-width="60px" max-width="230px"></igc-column>
+```
+
+```tsx
+<IgrColumn field="Artist" width="100px" resizable="true"
+            minWidth="60px" maxWidth="230px"></IgrColumn>
+```
+
+```razor
+<IgbColumn Field="Artist" Resizable=true Width="100px" MinWidth="60px" MaxWidth="230px"></IgbColumn>
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
+
 または
+
+<!-- ComponentStart: Grid, TreeGrid -->
 
 ```html
 <igx-column [field]="'ID'" width="100px" [resizable]="true"
@@ -380,18 +472,44 @@ TO DO!
 
 ```tsx
 <IgrColumn field="ID" width="100px" resizable="true"
-            min-width="5%" max-width="15%"></IgrColumn>
+            minWidth="5%" maxWidth="15%"></IgrColumn>
 ```
 
 ```razor
 <IgbColumn Field="ID" Resizable=true Width="100px" MinWidth="5%" MaxWidth="15%"></IgbColumn>
 ```
 
+<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentStart: HierarchicalGrid -->
+
+```html
+<igx-column [field]="'Artist'" width="100px" [resizable]="true"
+            [minWidth]="'60px'" [maxWidth]="'15%'"></igx-column>
+```
+
+```html
+<igc-column field="Artist" width="100px" resizable="true"
+            min-width="60px" max-width="15%"></igc-column>
+```
+
+```tsx
+<IgrColumn field="Artist" width="100px" resizable="true"
+            minWidth="60px" maxWidth="15%"></IgrColumn>
+```
+
+```razor
+<IgbColumn Field="Artist" Resizable=true Width="100px" MinWidth="60px" MaxWidth="15%"></IgbColumn>
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
+
 ## ダブルクリックで列の自動サイズ調整
 
 各列ヘッダーの右側をダブルクリックして列を**自動サイズ**調整することができます。列は、現在表示されているヘッダーを含む一番長いセル値にサイズ設定されます。この動作はデフォルトで有効なため、追加で構成する必要はありません。ただし、`MaxWidth` がその列に設定され、新しい幅が `MaxWidth` 値より大きい場合、列は自動サイズ調整されません。この場合、列が `MaxWidth` 値に設定されます。
 
 また、`Column` の `Autosize` メソッドで列を動的に自動でサイズ変更できます。
+
+<!-- ComponentStart: Grid, TreeGrid -->
 
 <!-- Angular -->
 ```typescript
@@ -418,13 +536,51 @@ constructor() {
 @code {
     private {ComponentSelector} gridRef;
 
-    protected void OnInitialize()
+    private void AutosizeColumn()
     {
         IgbColumn column = gridRef.Columns.Where((col) => { return col.Field == "ID"; }).FirstOrDefault();
         column.Autosize(false);
     }
 }
 ```
+
+<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentStart: HierarchicalGrid -->
+
+<!-- Angular -->
+```typescript
+@ViewChild('@@igObjectRef') @@igObjectRef: {ComponentName};
+
+let column = this.@@igObjectRef.columnList.filter(c => c.field === 'Artist')[0];
+column.autosize();
+```
+<!-- end: Angular -->
+
+```typescript
+constructor() {
+    var column = this.column = document.getElementById('Artist') as IgcColumnComponent;
+    column.autosize();
+}
+```
+
+```tsx
+const column = grid.getColumnByName('Artist');
+column.autosize();
+```
+
+```razor
+@code {
+    private {ComponentSelector} gridRef;
+
+    private void AutosizeColumn()
+    {
+        IgbColumn column = gridRef.Columns.Where((col) => { return col.Field == "Artist"; }).FirstOrDefault();
+        column.Autosize(false);
+    }
+}
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
 
 ## 初期化時に列を自動サイズ調整
 
@@ -451,6 +607,7 @@ constructor() {
 このアプローチは、初期化後の自動サイズ変更よりもパフォーマンスが最適化されており、特に多数の列のサイズを自動サイズ設定する必要がある場合に推奨されます。
 
 `sample="/{ComponentSample}/column-auto-sizing", height="550", alt="{Platform} {ComponentTitle} 列のサイズ変更の例"`
+
 <!-- Angular -->
 
 ## スタイル設定

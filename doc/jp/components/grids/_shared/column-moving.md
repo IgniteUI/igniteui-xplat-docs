@@ -65,6 +65,7 @@ function headerTemplate(ctx: IgrCellTemplateContext) {
 ## 概要
 
 **列移動**機能は各列レベルで有効にできます。つまり、`{ComponentName}` に移動可能な列または移動不可の列の両方を含むことができます。`{ComponentName}` の `Moving` 入力によって制御されます。
+<!-- ComponentStart: Grid -->
 
 <!-- Angular -->
 ```html
@@ -88,6 +89,45 @@ function headerTemplate(ctx: IgrCellTemplateContext) {
 ```
 <!-- end: React -->
 
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+
+<!-- Angular -->
+```html
+<{ComponentSelector} [moving]="true">
+    ...
+    <{RowIslandSelector} [moving]="true"></{RowIslandSelector}>
+</{ComponentSelector}>
+```
+<!-- end: Angular -->
+
+```razor
+<{ComponentSelector} Moving=true>
+    ...
+    <{RowIslandSelector} Moving=true></{RowIslandSelector}>
+</{ComponentSelector}>
+```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} moving="true">
+    ...
+    <{RowIslandSelector} moving="true"></{RowIslandSelector}>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} moving="true">
+    ...
+    <{RowIslandSelector} moving="true"></{RowIslandSelector}>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
+<!-- ComponentEnd: HierarchicalGrid -->
 ## API
 
 ドラッグアンドドロップ機能に加えて、列の移動機能には、プログラムで列を移動/並べ替えできる API メソッドも用意されています。
@@ -170,6 +210,7 @@ public onColumnMovingEnd(event) {
 ```
 <!-- end: WebComponents -->
 
+<!-- ComponentStart: Grid, HierarchicalGrid -->
 ```tsx
 function onColumnMovingEnd(grid: IgrGridBaseDirective, event: IgrColumnMovingEventArgs) {
    if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {
@@ -182,6 +223,8 @@ function onColumnMovingEnd(grid: IgrGridBaseDirective, event: IgrColumnMovingEve
     <IgrColumn field="Change On Year(%)" dataType="Number" ></IgrColumn>
 </{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid, HierarchicalGrid -->
+
 ```razor
     <{ComponentSelector} ShowGroupArea="true" @ref='Grid' Width="100%" Height="100%"
              AllowFiltering=true
