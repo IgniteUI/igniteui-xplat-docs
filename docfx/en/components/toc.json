@@ -1523,7 +1523,7 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Tabs",
     "href": "layouts/tabs.md",
     "status": ""
@@ -1655,7 +1655,7 @@
     "href": "inputs/chip.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Combo Box",    
     "href": "inputs/combo/overview.md",
     "items": [
@@ -1695,12 +1695,6 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Multi-Column Combo Box",
-    "href": "editors/multi-column-combobox.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular"],
     "name": "Input",
     "href": "inputs/input.md"
   },
@@ -1710,7 +1704,7 @@
     "href": "inputs/mask-input.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Date Time Input",
     "href": "inputs/date-time-input.md"
   },
@@ -2022,5 +2016,11 @@
         "status": ""
       }
     ]
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Multi-Column Combo Box",
+    "href": "editors/multi-column-combobox.md",
+    "status": ""
   }
 ]

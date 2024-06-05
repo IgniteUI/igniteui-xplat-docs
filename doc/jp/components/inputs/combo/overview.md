@@ -59,6 +59,25 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbComboModule));
 ```
 <!-- end: Blazor -->
 
+<!-- React -->
+
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、{Platform} `ComboBox` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrComboModule, IgrCombo } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrComboModule.register();
+```
+
+<!-- end: React -->
+
 >[!WARNING]
 > `Combo` コンポーネントは標準の `<form>` 要素では機能しません。代わりに `Form` を使用してください。
 
@@ -120,6 +139,26 @@ export class Sample {
 }
 ```
 
+```tsx
+interface City {
+  id: string;
+  name: string;
+}
+
+const cities: City[] = [
+  { name: "London", id: "UK01" },
+  { name: "Sofia", id: "BG01" },
+  { name: "New York", id: "NY01" },
+];
+
+<IgrCombo
+    valueKey="id"
+    displayKey="name"
+    data={cities}
+    value={["BG01"]}
+></IgrCombo>
+```
+
 ### データ値と表示プロパティ
 
 コンボは複雑なデータ (オブジェクト) の配列にバインドされている場合、コントロールが項目の選択を処理するために使用するプロパティを指定する必要があります。コンポーネントは以下のプロパティを公開します:
@@ -149,6 +188,16 @@ console.log(combo.value);
 combo.value = ['NY01', 'UK01'];
 ```
 
+```tsx
+const comboRef = useRef<IgrCombo>(null);
+
+// Given the overview example from above this will return ['BG01']
+console.log(comboRef.current.value);
+
+// Change the selected items to New York and London
+comboRef.current.value = ['NY01', 'UK01'];
+```
+
 ### 選択 API
 
 コンボ コンポーネントは、現在選択されている項目を変更できる API を公開します。
@@ -156,11 +205,13 @@ combo.value = ['NY01', 'UK01'];
 ユーザーの操作によってオプションのリストから項目を選択する以外に、プログラムで項目を選択することもできます。これは、`select` および `deselect` メソッドを介して行われます。項目の配列をこれらのメソッドに渡すことができます。メソッドが引数なしで呼び出された場合、呼び出されたメソッドに応じて、すべての項目が選択 / 選択解除されます。コンボ コンポーネントに `ValueKey` を指定した場合は、選択 / 選択解除する項目の値キーを渡す必要があります。
 
 #### 一部の項目を選択 / 選択解除:
+<!-- WebComponents -->
 ```ts
 // Select/deselect items by their IDs as valueKey is set to 'id'
 combo.select(['BG01', 'BG02', 'BG03', 'BG04']);
 combo.deselect(['BG01', 'BG02', 'BG03', 'BG04']);
 ```
+<!-- end: WebComponents -->
 
 ```razor
 <IgbCombo
@@ -192,12 +243,22 @@ combo.deselect(['BG01', 'BG02', 'BG03', 'BG04']);
 }
 ```
 
+<!-- React -->
+```tsx
+// Select/deselect items by their IDs as valueKey is set to 'id'
+comboRef.current.select(["UK01", "UK02", "UK03", "UK04", "UK05"]);
+comboRef.current.deselect(["UK01", "UK02", "UK03", "UK04", "UK05"]);
+```
+<!-- end: React -->
+
 #### すべての項目を選択 / 選択解除:
+<!-- WebComponents -->
 ```ts
 // Select/deselect all items
 combo.select();
 combo.deselect();
 ```
+<!-- end: WebComponents -->
 
 ```razor
 @code {
@@ -211,15 +272,33 @@ combo.deselect();
 }
 ```
 
+<!-- React -->
+```tsx
+// Select/deselect all items
+comboRef.current.select([]);
+comboRef.current.deselect([]);
+```
+<!-- end: React -->
+
 `ValueKey` プロパティを省略した場合は、オブジェクト参照として選択 / 選択解除する項目を列挙する必要があります。
 
+<!-- WebComponents -->
 ```ts
 // Select/deselect values by object references when no valueKey is provided
 combo.select([cities[1], cities[5]]);
 combo.deselect([cities[1], cities[5]]);
 ```
+<!-- end: WebComponents -->
 
-`sample="/inputs/combo/selection", height="400", alt="{Platform} Combo 選択の例"`
+<!-- React -->
+```tsx
+// Select/deselect values by object references when no valueKey is provided
+comboRef.current.select([cities[1], cities[5]]);
+comboRef.current.deselect([cities[1], cities[5]]);
+```
+<!-- end: React -->
+
+`sample="/inputs/combo/selection", height="380", alt="{Platform} Combo 選択の例"`
 
 
 
