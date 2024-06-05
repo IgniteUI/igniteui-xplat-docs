@@ -682,9 +682,10 @@
         "href": "grids/tree-grid/column-pinning.md"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Column Resizing",
-        "href": "grids/tree-grid/column-resizing.md"
+        "href": "grids/tree-grid/column-resizing.md",
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular", "React"],
