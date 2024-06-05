@@ -118,24 +118,76 @@ _language: ja
 
 ```html
 <igx-hierarchical-grid [data]="localdata" displayDensity="compact" [moving]="true" [allowFiltering]="true">
-    <igx-column field="CustomerID" sortable="true" resizable="true"></igx-column>
+    <igx-column field="CustomerID" data-type="string" sortable="true" resizable="true"></igx-column>
     <igx-column-group header="Address Information">
         <igx-column-group header="Location">
-            <igx-column field="Address" sortable="true" resizable="true"></igx-column>
-            <igx-column field="City" sortable="true" resizable="true"></igx-column>
-            <igx-column field="PostalCode" sortable="true" resizable="true"></igx-column>
-            <igx-column field="Country" sortable="true" resizable="true"></igx-column>
+            <igx-column field="Address" data-type="string" sortable="true" resizable="true"></igx-column>
+            <igx-column field="City" data-type="string" sortable="true" resizable="true"></igx-column>
+            <igx-column field="PostalCode" data-type="string" sortable="true" resizable="true"></igx-column>
+            <igx-column field="Country" data-type="string" sortable="true" resizable="true"></igx-column>
         </igx-column-group>
         <igx-column-group header="Contact Information">
-            <igx-column field="Phone" sortable="true" resizable="true"></igx-column>
-            <igx-column field="Fax" sortable="true" resizable="true"></igx-column>
+            <igx-column field="Phone" data-type="string" sortable="true" resizable="true"></igx-column>
+            <igx-column field="Fax" data-type="string" sortable="true" resizable="true"></igx-column>
         </igx-column-group>
     </igx-column-group>
 </igx-hierarchical-grid>
 ```
 
 ```razor
-TO-DO H-GRID CODE SNIPPET
+<{ComponentSelector} Data="HierarchicalCustomers" Name="hierarchicalGrid" @ref="hierarchicalGrid" Id="hierarchicalGrid" PrimaryKey="ID" Moving="true" AllowFiltering="true">
+    <IgbColumn Field="CustomerID" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+    <IgbColumnGroup Header="Address Information">
+        <IgbColumnGroup Header="Location">
+            <IgbColumn Field="Address" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+            <IgbColumn Field="City" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+            <IgbColumn Field="PostalCode" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+            <IgbColumn Field="Country" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+        </IgbColumnGroup>
+        <IgbColumnGroup Header="Contact Information">
+            <IgbColumn Field="Phone" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+            <IgbColumn Field="Fax" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+        </IgbColumnGroup>
+    </IgbColumnGroup>
+</{ComponentSelector}>
+```
+
+<!-- WebComponents -->
+```html
+<igc-hierarchical-grid auto-generate="false" name="hierarchicalGrid" id="hierarchicalGrid" primary-key="ID" moving="true" allow-filtering="true">
+    <igc-column field="CustomerID" sortable="true" resizable="true"> </igc-column>
+    <igc-column-group header="Address Information">
+        <igc-column-group header="Location">
+            <igc-column field="Address" sortable="true" resizable="true"></igc-column>
+            <igc-column field="City" sortable="true" resizable="true"></igc-column>
+            <igc-column field="PostalCode" sortable="true" resizable="true"></igc-column>
+            <igc-column field="Country" sortable="true" resizable="true"></igc-column>
+        </igc-column-group>
+        <igc-column-group header="Contact Information">
+            <igc-column field="Phone" sortable="true" resizable="true"></igc-column>
+            <igc-column field="Fax" sortable="true" resizable="true"></igc-column>
+        </igc-column-group>
+    </igc-column-group>
+</igc-hierarchical-grid>
+```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrHierarchicalGrid autoGenerate="false" data={this.hierarchicalCustomers} ref={this.hierarchicalGridRef} id="hierarchicalGrid" primaryKey="ID" moving="true" allowFiltering="true">
+    <IgrColumn sortable="true" resizable="true" field="CustomerID" dataType={GridColumnDataType.String}></IgrColumn>
+    <IgrColumnGroup header="Address Information">
+        <IgrColumnGroup header="Location">
+            <IgrColumn sortable="true" resizable="true" field="Address" dataType={GridColumnDataType.String}></IgrColumn>
+            <IgrColumn sortable="true" resizable="true" field="City" dataType={GridColumnDataType.String}></IgrColumn>
+            <IgrColumn sortable="true" resizable="true" field="PostalCode" dataType={GridColumnDataType.String}></IgrColumn>
+            <IgrColumn sortable="true" resizable="true" field="Country" dataType={GridColumnDataType.String}></IgrColumn>
+        </IgrColumnGroup>
+        <IgrColumnGroup header="Contact Information">
+            <IgrColumn sortable="true" resizable="true" field="Phone" dataType={GridColumnDataType.String}></IgrColumn>
+            <IgrColumn sortable="true" resizable="true" field="Fax" dataType={GridColumnDataType.String}></IgrColumn>
+        </IgrColumnGroup>
+    </IgrColumnGroup>
+</IgrHierarchicalGrid>
 ```
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -260,7 +312,7 @@ TO-DO H-GRID CODE SNIPPET
 ```html
 <igx-hierarchical-grid [data]="localdata" displayDensity="compact" [allowFiltering]="true" [moving]="true">
     <igx-column field="CustomerID" sortable="true" resizable="true"></igx-column>
-    <igx-column-group pinned]="false" header="General Information">
+    <igx-column-group [pinned]="false" header="General Information">
         <igx-column field="CompanyName" sortable="true" resizable="true"></igx-column>
         <igx-column-group header="Person Details">
             <igx-column field="ContactName" sortable="true" resizable="true"></igx-column>
@@ -271,7 +323,44 @@ TO-DO H-GRID CODE SNIPPET
 ```
 
 ```razor
-TO-DO H-GRID CODE SNIPPET
+<{ComponentSelector} Data="HierarchicalCustomers" Name="hierarchicalGrid" @ref="hierarchicalGrid" Id="hierarchicalGrid" PrimaryKey="ID" Moving="true" AllowFiltering="true">
+    <IgbColumn Field="CustomerID" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+    <IgbColumnGroup Header="General Information">
+        <IgbColumn Field="CompanyName" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+        <IgbColumnGroup Header="Person Details">
+            <IgbColumn Field="ContactName" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+            <IgbColumn Field="ContactTitle" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+        </IgbColumnGroup>
+    </IgbColumnGroup>
+</{ComponentSelector}>
+```
+
+<!-- WebComponents -->
+```html
+<igc-hierarchical-grid auto-generate="false" name="hierarchicalGrid" id="hierarchicalGrid" primary-key="ID" moving="true" allow-filtering="true">
+    <igc-column field="CustomerID" dataType="string" sortable="true" resizable="true"> </igc-column>
+    <igc-column-group header="General Information">
+        <igc-column field="CompanyName" dataType="string" sortable="true" resizable="true"></igc-column>
+        <igc-column-group header="Person Details">
+            <igc-column field="ContactName" dataType="string" sortable="true" resizable="true"></igc-column>
+            <igc-column field="ContactTitle" dataType="string" sortable="true" resizable="true"></igc-column>
+        </igc-column-group>
+    </igc-column-group>
+</igc-hierarchical-grid>
+```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrHierarchicalGrid autoGenerate="false" data={this.hierarchicalCustomers} ref={this.hierarchicalGridRef} id="hierarchicalGrid" primaryKey="ID" moving="true" allowFiltering="true">
+    <IgrColumn sortable="true" resizable="true" field="CustomerID" dataType={GridColumnDataType.String}></IgrColumn>
+    <IgrColumnGroup header="General Information">
+        <IgrColumn sortable="true" resizable="true" field="CompanyName" dataType={GridColumnDataType.String}></IgrColumn>
+        <IgrColumnGroup header="Person Details">
+            <IgrColumn sortable="true" resizable="true" field="ContactName" dataType={GridColumnDataType.String}></IgrColumn>
+            <IgrColumn sortable="true" resizable="true" field="ContactTitle" dataType={GridColumnDataType.String}></IgrColumn>
+        </IgrColumnGroup>
+    </IgrColumnGroup>
+</IgrHierarchicalGrid>
 ```
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -286,7 +375,7 @@ TO-DO H-GRID CODE SNIPPET
 <!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" height="600px" [allowFiltering]="true">
-    <igx-column-group  [movable]="true" [pinned]="true" header="General Information">
+    <igx-column-group [movable]="true" [pinned]="true" header="General Information">
         <igx-column [movable]="true" sortable="true" resizable="true" field="CompanyName"></igx-column>
     </igx-column-group>
     <igx-column sortable="true" resizable="true" field="Phone"></igx-column>
@@ -398,7 +487,44 @@ TO-DO H-GRID CODE SNIPPET
 ```
 
 ```razor
-TO-DO H-GRID CODE SNIPPET
+<{ComponentSelector} Data="HierarchicalCustomers" Name="hierarchicalGrid" @ref="hierarchicalGrid" Id="hierarchicalGrid" PrimaryKey="ID" Moving="true" AllowFiltering="true">
+    <IgbColumn Field="CustomerID" Sortable=true Resizable=true Movable=true DataType="GridColumnDataType.String"></IgbColumn>
+    <IgbColumnGroup Movable=true Pinned="true" Header="General Information">
+        <IgbColumn Field="CompanyName" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+        <IgbColumnGroup Movable=true Pinned="true" Header="General Information">
+            <IgbColumn Field="ContactName" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+            <IgbColumn Field="ContactTitle" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+        </IgbColumnGroup>
+    </IgbColumnGroup>
+</{ComponentSelector}>
+```
+
+<!-- WebComponents -->
+```html
+<igc-hierarchical-grid auto-generate="false" name="hierarchicalGrid" id="hierarchicalGrid" primary-key="ID" moving="true" allow-filtering="true">
+    <igc-column field="CustomerID" dataType="string" movable="true" pinned="true" sortable="true" resizable="true"> </igc-column>
+    <igc-column-group movable="true" pinned="true" header="General Information">
+        <igc-column field="CompanyName" dataType="string" sortable="true" resizable="true"></igc-column>
+        <igc-column-group header="Person Details">
+            <igc-column field="ContactName" dataType="string" sortable="true" resizable="true"></igc-column>
+            <igc-column field="ContactTitle" dataType="string" sortable="true" resizable="true"></igc-column>
+        </igc-column-group>
+    </igc-column-group>
+</igc-hierarchical-grid>
+```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrHierarchicalGrid autoGenerate="false" data={this.hierarchicalCustomers} ref={this.hierarchicalGridRef} id="hierarchicalGrid" primaryKey="ID" moving="true" allowFiltering="true">
+    <IgrColumn sortable="true" resizable="true" movable="true" pinned="true" field="CustomerID" dataType={GridColumnDataType.String}></IgrColumn>
+    <IgrColumnGroup movable="true" pinned="true" header="General Information">
+        <IgrColumn sortable="true" resizable="true" field="CompanyName" dataType={GridColumnDataType.String}></IgrColumn>
+        <IgrColumnGroup header="Person Details">
+            <IgrColumn sortable="true" resizable="true" field="ContactName" dataType={GridColumnDataType.String}></IgrColumn>
+            <IgrColumn sortable="true" resizable="true" field="ContactTitle" dataType={GridColumnDataType.String}></IgrColumn>
+        </IgrColumnGroup>
+    </IgrColumnGroup>
+</IgrHierarchicalGrid>
 ```
 
 <!-- ComponentEnd: HierarchicalGrid -->

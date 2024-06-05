@@ -64,6 +64,7 @@ function headerTemplate(ctx: IgrCellTemplateContext) {
 ## Overview
 
 **Column moving** feature is enabled on a per-grid level, meaning that the `{ComponentName}` could have either movable or immovable columns. This is done via the `Moving` input of the `{ComponentName}`.
+<!-- ComponentStart: Grid -->
 
 <!-- Angular -->
 ```html
@@ -87,6 +88,45 @@ function headerTemplate(ctx: IgrCellTemplateContext) {
 ```
 <!-- end: React -->
 
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+
+<!-- Angular -->
+```html
+<{ComponentSelector} [moving]="true">
+    ...
+    <{RowIslandSelector} [moving]="true"></{RowIslandSelector}>
+</{ComponentSelector}>
+```
+<!-- end: Angular -->
+
+```razor
+<{ComponentSelector} Moving=true>
+    ...
+    <{RowIslandSelector} Moving=true></{RowIslandSelector}>
+</{ComponentSelector}>
+```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} moving="true">
+    ...
+    <{RowIslandSelector} moving="true"></{RowIslandSelector}>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} moving="true">
+    ...
+    <{RowIslandSelector} moving="true"></{RowIslandSelector}>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
+<!-- ComponentEnd: HierarchicalGrid -->
 ## API
 
 In addition to the drag and drop functionality, the Column Moving feature also provides API methods to allow moving a column/reordering columns programmatically:
@@ -169,6 +209,7 @@ public onColumnMovingEnd(event) {
 ```
 <!-- end: WebComponents -->
 
+<!-- ComponentStart: Grid, HierarchicalGrid -->
 ```tsx
 function onColumnMovingEnd(grid: IgrGridBaseDirective, event: IgrColumnMovingEventArgs) {
    if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {
@@ -181,6 +222,8 @@ function onColumnMovingEnd(grid: IgrGridBaseDirective, event: IgrColumnMovingEve
     <IgrColumn field="Change On Year(%)" dataType="Number" ></IgrColumn>
 </{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid, HierarchicalGrid -->
+
 ```razor
     <{ComponentSelector} ShowGroupArea="true" @ref='Grid' Width="100%" Height="100%"
              AllowFiltering=true

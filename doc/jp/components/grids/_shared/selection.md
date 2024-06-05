@@ -36,9 +36,9 @@ _language: ja
 
 ## {Platform} {ComponentTitle} 選択のオプション
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart:  Grid, HierarchicalGrid -->
 {ProductName} `{ComponentName}` コンポーネントは、[行選択](row-selection.md)、[セル選択](cell-selection.md)、[列選択](column-selection.md)の 3 つの選択モードを提供します。デフォルトでは、`{ComponentName}` で**複数セル選択**モードのみが有効になっています。選択モードの変更または有効化は、`RowSelection`、`CellSelection` または `Selectable` プロパティを使用します。
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd:  Grid, HierarchicalGrid -->
 
 ### {Platform} {ComponentTitle} 行選択
 
@@ -48,11 +48,11 @@ _language: ja
 - `Single` - `{ComponentName}` 内の 1 行のみの選択が利用可能になります。
 - `Multiple` - 複数行の選択は、<kbd>Ctrl</kbd> + <kbd>クリック</kbd>、<kbd>Space キー</kbd> を押して行セレクターを使用することにより、複数行の選択が可能になります。
 
-<!-- ComponentStart: TreeGrid -->
+<!-- ComponentStart: TreeGrid, HierarchicalGrid -->
 
 - `MultipleCascade` -  これはカスケード選択のモードであり、ユーザーがユーザーの操作で選択したレコードの下のツリー内のすべての子が選択されます。このモードでは、親の選択状態はその子の選択状態に完全に依存します。
 
-<!-- ComponentEnd: TreeGrid -->
+<!-- ComponentEnd: TreeGrid, HierarchicalGrid -->
 
 > 詳細については、[行選択トピック](row-selection.md)を参照してください。
 

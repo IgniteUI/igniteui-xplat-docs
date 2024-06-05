@@ -130,7 +130,7 @@ The `ExpansionPanel` control allows all sorts of content to be added inside of i
 
 The `ExpansionPanel` allows for easy customization of the header through the exposed *title*, *subTitle* and *indicator* slots.
 
-Configuring the position of the expansion indicator can be done through the `indicatorAlignment` property of the Expansion Panel. The possible options are **start**, **end** or **none**.
+Configuring the position of the expansion indicator can be done through the `IndicatorPosition` property of the Expansion Panel. The possible options are **start**, **end** or **none**.
 
 The next code sample demonstrates how to configure the component's button to go on the *right* side.
 
