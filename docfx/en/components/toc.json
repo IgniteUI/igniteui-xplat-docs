@@ -624,7 +624,7 @@
     "exclude": ["Angular"],
     "name": "Tree Grid",
     "href": "grids/tree-grid/overview.md",
-    "status": "",
+    "status": ["NEW_REACT"],
     "items": [
       {
         "exclude": ["Angular", "React"],
@@ -648,16 +648,16 @@
         "href": "grids/tree-grid/collapsible-column-groups.md"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Column Types",
         "href": "grids/tree-grid/column-types.md",
-        "status": ""
+        "status": ["NEW_REACT"]
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "Conditional Styling",
         "href": "grids/tree-grid/conditional-cell-styling.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "exclude": ["Angular", "React"],
@@ -682,9 +682,10 @@
         "href": "grids/tree-grid/column-pinning.md"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Column Resizing",
-        "href": "grids/tree-grid/column-resizing.md"
+        "href": "grids/tree-grid/column-resizing.md",
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular", "React"],
@@ -740,10 +741,10 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "Paging",
         "href": "grids/tree-grid/paging.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
@@ -758,10 +759,10 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "Row Adding",
         "href": "grids/tree-grid/row-adding.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
@@ -788,10 +789,10 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "Search",
         "href": "grids/tree-grid/search.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
@@ -830,10 +831,10 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "Virtualization and performance",
         "href": "grids/tree-grid/virtualization.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "Blazor"],
@@ -1529,7 +1530,7 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Tabs",
     "href": "layouts/tabs.md",
     "status": ""
@@ -1661,7 +1662,7 @@
     "href": "inputs/chip.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Combo Box",    
     "href": "inputs/combo/overview.md",
     "items": [
@@ -1701,12 +1702,6 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Multi-Column Combo Box",
-    "href": "editors/multi-column-combobox.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular"],
     "name": "Input",
     "href": "inputs/input.md"
   },
@@ -1716,7 +1711,7 @@
     "href": "inputs/mask-input.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Date Time Input",
     "href": "inputs/date-time-input.md"
   },
@@ -2028,5 +2023,11 @@
         "status": ""
       }
     ]
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Multi-Column Combo Box",
+    "href": "editors/multi-column-combobox.md",
+    "status": ""
   }
 ]
