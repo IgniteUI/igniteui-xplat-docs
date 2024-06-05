@@ -524,7 +524,7 @@ public editCellTemplate = (ctx: IgcCellTemplateContext) => {
 ```
 
 ```tsx
-function editCellTemplate(ctx: IgrCellTemplateContext) {
+function editCellTemplate(ctx: { dataContext: IgrCellTemplateContext }) {
     return (
         <>
             <input></input>
