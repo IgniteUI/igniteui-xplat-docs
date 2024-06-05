@@ -369,7 +369,7 @@
     "status": "NEW",
     "items": [
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "縮小可能な列グループ",
         "href": "grids/hierarchical-grid/collapsible-column-groups.md",
         "status": "NEW"
@@ -405,13 +405,13 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "条件付きスタイル設定",
         "href": "grids/hierarchical-grid/conditional-cell-styling.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "表示密度",
         "href": "grids/hierarchical-grid/display-density.md",
         "status": "NEW"
@@ -423,13 +423,13 @@
         "status": "NEW",
         "items": [
           {
-            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "exclude": ["Angular"],
             "name": "セルの編集",
             "href": "grids/hierarchical-grid/cell-editing.md",
             "status": "NEW"
           },
           {
-            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "exclude": ["Angular"],
             "name": "行の追加",
             "href": "grids/hierarchical-grid/row-adding.md",
             "status": "NEW"
@@ -449,19 +449,19 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "フィルタリング",
         "href": "grids/hierarchical-grid/filtering.md",
         "status": "NEW",
         "items": [
           {
-            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "exclude": ["Angular"],
             "name": "高度なフィルタリング",
             "href": "grids/hierarchical-grid/advanced-filtering.md",
             "status": "NEW"
           },
           {
-            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "exclude": ["Angular"],
             "name": "Excel スタイル フィルタリング",
             "href": "grids/hierarchical-grid/excel-style-filtering.md",
             "status": "NEW"
@@ -499,7 +499,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "行のドラッグ",
         "href": "grids/hierarchical-grid/row-drag.md",
         "status": "NEW"
@@ -517,13 +517,13 @@
         "status": "NEW",
         "items": [
           {
-            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "exclude": ["Angular"],
             "name": "セルの選択",
             "href": "grids/hierarchical-grid/cell-selection.md",
             "status": "NEW"
           },
           {
-            "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+            "exclude": ["Angular"],
             "name": "列の選択",
             "href": "grids/hierarchical-grid/column-selection.md",
             "status": "NEW"
@@ -555,13 +555,19 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "集計",
         "href": "grids/hierarchical-grid/summaries.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
+        "name": "ツールバー",
+        "href": "grids/hierarchical-grid/toolbar.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular"],
         "name": "仮想化とパフォーマンス",
         "href": "grids/hierarchical-grid/virtualization.md",
         "status": "NEW"
@@ -1515,7 +1521,7 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "タブ",
     "href": "layouts/tabs.md",
     "status": ""
@@ -1647,7 +1653,7 @@
     "href": "inputs/chip.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "コンボ ボックス",
     "href": "inputs/combo/overview.md",
     "items": [
@@ -1687,12 +1693,6 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "複数列コンボ ボックス",
-    "href": "editors/multi-column-combobox.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular"],
     "name": "入力",
     "href": "inputs/input.md"
   },
@@ -1702,7 +1702,7 @@
     "href": "inputs/mask-input.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "日時入力",
     "href": "inputs/date-time-input.md"
   },
@@ -2014,5 +2014,11 @@
         "status": ""
       }
     ]
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "複数列コンボ ボックス",
+    "href": "editors/multi-column-combobox.md",
+    "status": ""
   }
 ]
