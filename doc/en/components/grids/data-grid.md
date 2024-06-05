@@ -70,7 +70,7 @@ In this {ProductName} Grid example, you can see how users can do both basic and 
 
 ### Dependencies
 
-To get started with the {Platform} Data Grid, first you need to install the {ProductName} package.
+To get started with the {Platform} Data Grid, first you need to install the <!-- Blazor -->{PackageCommon} package.<!-- end: Blazor --><!-- WebComponents -->`{PackageGrids}` package.<!-- end: WebComponents --><!-- React -->`{PackageCommon}` and `{PackageGrids}` packages.<!-- end: React -->
 
 <!-- Blazor -->
 
@@ -92,15 +92,20 @@ Afterwards, you may start implementing the control by adding the following names
 ```
 <!-- end: Blazor -->
 
-<!-- Angular, React, WebComponents -->
-When installing the {Platform} grid package, the core, inputs and layout packages must also be installed.
-
+<!-- Angular, WebComponents -->
 ```cmd
-npm install --save {PackageCore}
 npm install --save {PackageGrids}
-npm install --save {PackageInputs}
-npm install --save {PackageLayouts}
 ```
+<!-- end: Angular, WebComponents -->
+
+<!-- React -->
+```cmd
+npm install --save {PackageCommon}
+npm install --save {PackageGrids}
+```
+<!-- end: React -->
+
+<!-- Angular, React, WebComponents -->
 
 You also need to include the following import to use the grid:
 

@@ -1,7 +1,7 @@
 ---
-title: {Platform} Data Grid | 行の強調表示 | インフラジスティックス
-_description: マウスオーバーでインフラジスティックス {Platform} データ グリッドの行強調表示の構成。{ProductName} テーブルの行強調表示を設定する方法について説明します。
-_keywords: {Platform} Table, Data Grid, row highlighting, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 行の強調表示, インフラジスティックス
+title: {Platform} Data Grid | 行のハイライト表示 | インフラジスティックス
+_description: マウスオーバーでインフラジスティックス {Platform} データ グリッドの行ハイライト表示の構成。{ProductName} テーブルの行ハイライト表示を設定する方法について説明します。
+_keywords: {Platform} Table, Data Grid, row highlighting, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 行のハイライト表示, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
 _canonicalLink: {CanonicalLinkToGridMain}
@@ -15,14 +15,14 @@ _language: ja
 
 <!-- end: Blazor, WebComponents -->
 
-# {Platform} Grid 強調表示
+# {Platform} Grid ハイライト表示
 
-{ProductName} Data Table / Data Grid は、行の強調表示の構成をサポートします。
+{ProductName} Data Table / Data Grid は、行のハイライト表示の構成をサポートします。
 
-## {Platform} Grid 強調表示の例
+## {Platform} Grid ハイライト表示の例
 
 
-`sample="/grids/data-grid/row-highlighting", height="600", alt="{Platform} Grid 強調表示の例"`
+`sample="/grids/data-grid/row-highlighting", height="600", alt="{Platform} Grid ハイライト表示の例"`
 
 
 
@@ -30,13 +30,13 @@ _language: ja
 
 ## 概要
 
-{Platform} データ内のレコードの強調表示は、{Platform} グリッド の `IsRowHoverEnabled` ブール値プロパティを設定して切り替えることができます。これはデフォルトで有効になっていることに注意してください。
+{Platform} データ内のレコードのハイライト表示は、{Platform} グリッド の `IsRowHoverEnabled` ブール値プロパティを設定して切り替えることができます。これはデフォルトで有効になっていることに注意してください。
 
 さらに、`RowHoverBackground` 文字列プロパティを 16 進数値に設定して色を設定できます。
 
 ## コード スニペット
 
-以下は、{Platform} データ グリッドで行の強調表示を有効にし、青色を適用する方法を示します。
+以下は、{Platform} データ グリッドで行のハイライト表示を有効にし、青色を適用する方法を示します。
 
 ```tsx
 <IgrDataGrid

@@ -649,6 +649,75 @@ You can enable an interactive mode of the gauge (using `IsNeedleDraggingEnabled`
 
 `sample="/gauges/radial-gauge/needle", height="320", alt="{Platform} radial gauge needle"`
 
+## Highlight Needle
+
+The radial gauge can be modified to show a second needle. This will make the main needle's `Value` appear with a lower opacity. To enable this first set `HighlightValueDisplayMode` to Overlay and then apply a `HighlightValue`.
+
+```html
+<igx-radial-gauge #radialGauge
+    labelExtent=0.65
+    labelInterval=10
+    titleDisplaysValue=true
+    highlightValueDisplayMode="Overlay"
+    highlightValue=25
+    isHighlightNeedleDraggingEnabled=true
+    isNeedleDraggingEnabled=true
+    height="100%" width="100%"
+    minimumValue=0 value=75
+    maximumValue=80 interval=10  >
+</igx-radial-gauge>
+```
+
+```tsx
+<IgrRadialGauge                    
+    highlightValueDisplayMode="Overlay"
+    highlightValue="25"
+    isHighlightNeedleDraggingEnabled="true"
+    isNeedleDraggingEnabled="true"
+    titleDisplaysValue="true"
+    label-interval="10"
+    label-extent="0.65"        
+    height="100%"
+    width="100%"
+    minimumValue={0} value={75}
+    maximumValue={80} interval={10} />
+```
+
+```html
+<igc-radial-gauge
+    id="gauge"
+    highlight-value-display-mode="Overlay"
+    highlight-value="25"
+    is-highlight-needle-dragging-enabled="true"
+    is-needle-dragging-enabled="true"
+    title-displays-value="true"
+    label-interval="10"
+    label-extent="0.65"        
+    height="100%"
+    width="100%"
+    minimum-value="0" value="75"
+    maximum-value="80" interval="10" >
+</igc-radial-gauge>
+```
+
+```razor
+<IgbLinearGauge Height="80px" Width="100%"
+    MinimumValue="0" 
+    MaximumValue="100" 
+    Value="75"
+    Interval="10"
+    LabelInterval="10"
+    LabelExtent="0.025"
+    LabelsPreTerminal="0"
+    LabelsPostInitial="0"
+    NeedleBrush="Blue"
+    HighlightValueDisplayMode="HighlightedValueDisplayMode.Overlay"
+    HighlightValue=25
+    IsHighlightNeedleDraggingEnabled=true>
+</IgbLinearGauge>
+```
+
+`sample="/gauges/radial-gauge/highlight-needle", height="125", alt="{Platform} radial gauge highlight needle"`
 
 ## Summary
 For your convenience, all above code snippets are combined into one code block below that you can easily copy to your project and see the radial gauge with all features and visuals enabled.
