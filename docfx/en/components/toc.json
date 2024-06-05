@@ -654,10 +654,10 @@
         "status": ["NEW_REACT"]
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "Conditional Styling",
         "href": "grids/tree-grid/conditional-cell-styling.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "exclude": ["Angular", "React"],
