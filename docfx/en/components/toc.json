@@ -648,10 +648,10 @@
         "href": "grids/tree-grid/collapsible-column-groups.md"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Column Types",
         "href": "grids/tree-grid/column-types.md",
-        "status": ""
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular"],
