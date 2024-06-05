@@ -93,7 +93,7 @@ Let's start by creating our grid and binding it to our data. We will also add so
 
 <!-- WebComponents -->
 ```html
-<igc-tree-grid id="treeGrid" auto-generate="false" primary-key="ID" foreign-key="ParentID" allow-filtering="true" height="480px">
+<igc-tree-grid id="treeGrid" auto-generate="false" primary-key="ID" foreign-key="ParentID" allow-filtering="true" height="100%" width="100%">
     <igc-column field="Name" data-type="string" sortable="true"></igc-column>        
     <igc-column field="ID" data-type="number" sortable="true"></igc-column>        
     <igc-column field="Title" data-type="string" sortable="true"></igc-column>        
@@ -112,7 +112,7 @@ constructor() {
 <!-- end: WebComponents -->
 
 ```tsx
-<IgrTreeGrid ref={gridRef} data={data} autoGenerate="false" primaryKey="ID" foreignKey="ParentID" allowFiltering="true" height="480px">
+<IgrTreeGrid ref={gridRef} data={data} autoGenerate="false" primaryKey="ID" foreignKey="ParentID" allowFiltering="true" height="100%" width="100%">
     <IgrColumn field="Name" dataType="string" sortable="true"></IgrColumn>        
     <IgrColumn field="ID" dataType="number" sortable="true"></IgrColumn>        
     <IgrColumn field="Title" dataType="string" sortable="true"></IgrColumn>        
@@ -122,7 +122,7 @@ constructor() {
 ```
 
 ```razor
-<IgbTreeGrid @ref=treeGrid AutoGenerate=false Data=EmployeesFlatData PrimaryKey="ID" ForeignKey="ParentID" AllowFiltering=true Height="480px">
+<IgbTreeGrid @ref=treeGrid AutoGenerate=false Data=EmployeesFlatData PrimaryKey="ID" ForeignKey="ParentID" AllowFiltering=true Height="100%" Width="100%">
     <IgbColumn Field="Name" DataType="GridColumnDataType.String" Sortable=true></IgbColumn>
     <IgbColumn Field="ID" DataType="GridColumnDataType.Number" Sortable=true></IgbColumn>
     <IgbColumn Field="Title" DataType="GridColumnDataType.String" Sortable=true></IgbColumn>
@@ -185,7 +185,7 @@ private treeGrid: IgcTreeGridComponent;
 
 private searchBox: IgcInputComponent;
 
-private clearIcon: IgcIconComponent;
+private icon: IgcIconComponent;
 private nextIconButton: IgcIconButtonComponent;
 private prevIconButton: IgcIconButtonComponent;
 
@@ -204,12 +204,13 @@ public bool exactMatch = false;
 
 ```tsx
 const gridRef = useRef<IgrTreeGrid>(null);
+const searchIconRef = useRef<IgrIconButton>(null);
 const clearIconRef = useRef<IgrIconButton>(null);
+const iconButtonNextRef = useRef<IgrIconButton>(null);
 const iconButtonPrevRef = useRef<IgrIconButton>(null);
 const caseSensitiveChipRef = useRef<IgrChip>(null);
 const exactMatchChipRef = useRef<IgrChip>(null);
-const iconButtonNextRef = useRef<IgrIconButton>(null);
-const [searchText, setSearchText] = useState('')
+const [searchText, setSearchText] = useState('');
 ```
 <!-- ComponentEnd: TreeGrid -->
 
@@ -271,10 +272,22 @@ constructor() {
 public nextSearch(){
     this.grid.findNext(this.searchBox.value, false, false);
 }
-
 ```
-
 <!-- end: WebComponents -->
+
+```tsx
+function handleOnSearchChange(input: IgrInput, event: IgrComponentValueChangedEventArgs) {
+    setSearchText(event.detail);
+}
+
+function nextSearch() {
+    gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+}
+
+
+<IgrInput name="searchBox" value={searchText} inputOcurred={handleOnSearchChange}>
+</IgrInput>
+```
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -298,18 +311,17 @@ public nextSearch() {
 
 ```razor
 <IgbInput ValueChanging="OnValueChanging" Value="@searchText" />
-```
-```razor
+
 public void NextSearch()
 {
     this.treeGrid.FindNext(this.searchText, this.caseSensitive, this.exactMatch);
 }
 ```
-<!-- ComponentEnd: TreeGrid -->
 
 ```tsx
 function handleOnSearchChange(input: IgrInput, event: IgrComponentValueChangedEventArgs) {
     setSearchText(event.detail);
+    gridRef.current.findNext(event.detail, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
 }
 
 function nextSearch() {
@@ -320,6 +332,7 @@ function nextSearch() {
 <IgrInput name="searchBox" value={searchText} inputOcurred={handleOnSearchChange}>
 </IgrInput>
 ```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- Angular -->
 
@@ -818,7 +831,7 @@ mods.forEach((m) => m.register());
 <!-- ComponentStart: TreeGrid -->
 ```tsx
 import { IgrTreeGridModule } from "igniteui-react-grids";
-import { IgrChipModule } from "igniteui-react";
+import { IgrChipModule, IgrIconButtonModule, IgrInputModule } from "igniteui-react";
 
 const mods: any[] = [IgrTreeGridModule, IgrChipModule, IgrIconButtonModule, IgrInputModule];
 mods.forEach((m) => m.register());
@@ -860,6 +873,7 @@ builder.Services.AddIgniteUIBlazor(
     const string prevIcon = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z'></path></svg>";
     const string nextIcon = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'></path></svg>";
     const string clearIcon = "<svg width='24' height='24' viewBox='0 0 24 24' title='Clear'><path d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></svg>";
+    
     protected override void OnAfterRender(bool firstRender)
     {
         if (this.searchIconRef != null && firstRender)
@@ -900,6 +914,16 @@ We will wrap all of our components inside an [InputGroup](../input-group.md). On
 </igx-input-group>
 ```
 
+<!-- Angular -->
+```typescript
+public clearSearch() {
+    this.searchText = '';
+    this.@@igObjectRef.clearSearch();
+}
+```
+<!-- end: Angular -->
+
+<!-- ComponentStart: Grid -->
 ```html
 <igc-input id="searchBox" name="searchBox">
     <igc-icon id="clearIcon" slot="prefix" name="clear" collection="material"></igc-icon>
@@ -914,15 +938,6 @@ We will wrap all of our components inside an [InputGroup](../input-group.md). On
 </igc-input>
 ```
 
-<!-- Angular -->
-```typescript
-public clearSearch() {
-    this.searchText = '';
-    this.@@igObjectRef.clearSearch();
-}
-```
-<!-- end: Angular -->
-
 <!-- WebComponents -->
 ```typescript
 constructor() {
@@ -936,79 +951,6 @@ constructor() {
 }
 ```
 <!-- end: WebComponents -->
-
-<!-- Blazor -->
-
-We will wrap all of our components inside an `Input`. <!-- ComponentStart: Grid -->On the left we will toggle between a search and a delete/clear icon (depending on whether the search input is empty or not).<!-- ComponentEnd: Grid --> In the center, we will position the input itself. In addition, whenever the delete icon is clicked, we will update our `SearchText` and invoke the `{ComponentName}`'s `ClearSearch` method to clear the highlights.
-
-<!-- end: Blazor -->
-
-<!-- ComponentStart: Grid -->
-```razor
-<IgbInput ValueChanging="OnValueChanging" Value="@searchText" @onkeydown="OnSearchKeyDown">
-    @if (searchText.Length == 0)
-    {
-        <IgbIcon @ref="searchIconRef" slot="prefix" IconName="search" Collection="material"/>
-    }
-    @if (searchText.Length > 0)
-    {
-        <IgbIcon slot="prefix" IconName="clear" Collection="material" @onclick="ClearSearch"/>
-    }
-
-    <div class="chips" slot="suffix">
-        <IgbChip Selectable=true SelectedChanged="UpdateCase">
-            Case Sensitive
-        </IgbChip>
-        <IgbChip  Selectable=true SelectedChanged="UpdateExactSearch">
-            Exact Match
-        </IgbChip>
-    </div>
-    <div class="searchButtons" slot="suffix">
-        <IgbIconButton Variant="IconButtonVariant.Flat" @onclick="PrevSearch">
-            <IgbIcon IconName="prev" Collection="material"/>
-        </IgbIconButton>
-        <IgbIconButton Variant="IconButtonVariant.Flat" @onclick="NextSearch">
-            <IgbIcon IconName="next" Collection="material" />
-        </IgbIconButton>
-    </div>
-</IgbInput>
-```
-<!-- ComponentEnd: Grid -->
-<!-- ComponentStart: TreeGrid -->
-```razor
-<IgbInput ValueChanging="OnValueChanging" Value="@searchText" @onkeydown="OnSearchKeyDown">
-    <IgbIcon slot="prefix" IconName="clear" Collection="material" @onclick="ClearSearch"/>
-
-    <div class="chips" slot="suffix">
-        <IgbChip Selectable=true SelectedChanged="UpdateCase">
-            Case Sensitive
-        </IgbChip>
-        <IgbChip  Selectable=true SelectedChanged="UpdateExactSearch">
-            Exact Match
-        </IgbChip>
-    </div>
-    <div class="searchButtons" slot="suffix">
-        <IgbIconButton Variant="IconButtonVariant.Flat" @onclick="PrevSearch">
-            <IgbIcon IconName="prev" Collection="material"/>
-        </IgbIconButton>
-        <IgbIconButton Variant="IconButtonVariant.Flat" @onclick="NextSearch">
-            <IgbIcon IconName="next" Collection="material" />
-        </IgbIconButton>
-    </div>
-</IgbInput>
-```
-<!-- ComponentEnd: TreeGrid -->
-
-```razor
-@code {
-
-    public void clearSearch()
-    {
-        this.searchText = "";
-        this.grid.ClearSearchAsync();
-    }
-}
-```
 
 ```tsx
 const prevIconText =
@@ -1050,6 +992,156 @@ useEffect(() => {
         </IgrIconButton>
     </div>
 </IgrInput>
+```
+
+<!-- Blazor -->
+
+We will wrap all of our components inside an `Input`. On the left we will toggle between a search and a delete/clear icon (depending on whether the search input is empty or not). In the center, we will position the input itself. In addition, whenever the delete icon is clicked, we will update our `SearchText` and invoke the `{ComponentName}`'s `ClearSearch` method to clear the highlights.
+
+<!-- end: Blazor -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+We will wrap all of our components inside an `Input`. On the left we will toggle between a search and a delete/clear icon (depending on whether the search input is empty or not). In the center, we will position the input itself. In addition, whenever the delete icon is clicked, we will update our `SearchText` and invoke the `{ComponentName}`'s `ClearSearch` method to clear the highlights.
+
+```html
+<igc-input id="searchBox" name="searchBox">
+    <igc-icon id="icon" slot="prefix" name="search" collection="material"></igc-icon>
+    <div slot="suffix">
+        <igc-chip selectable="true" id="caseSensitiveChip">Case Sensitive</igc-chip>
+        <igc-chip selectable="true" id="exactMatchChip">Exact Match</igc-chip>
+    </div>
+    <div slot="suffix">
+        <igc-icon-button id="prevIconBtn" variant="flat" name="prev" collection="material" ></igc-icon-button>
+        <igc-icon-button id="nextIconBtn" variant="flat" name="next" collection="material"></igc-icon-button>
+    </div>
+</igc-input>
+```
+
+<!-- WebComponents -->
+```typescript
+constructor() {
+    const prevIconText = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z'></path></svg>";
+    const nextIconText = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'></path></svg>";
+    const searchIconText = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' /></svg>";
+    const clearIconText = "<svg width='24' height='24' viewBox='0 0 24 24' title='Clear'><path d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></svg>";
+
+    registerIconFromText('prev', prevIconText, 'material');
+    registerIconFromText('next', nextIconText, 'material');
+    registerIconFromText('search', searchIconText, 'material');
+    registerIconFromText('clear', clearIconText, 'material');
+
+    this.icon = document.getElementById('icon') as IgcIconComponent;
+    this.searchBox = document.getElementById('searchBox') as IgcInputComponent;
+
+    this.searchBox.addEventListener('igcInput', (evt) => {
+        this.icon.name = evt.detail ? 'clear' : 'search';
+    });
+    this.icon.addEventListener('click', this.clearSearch);
+}
+
+public clearSearch() {
+    this.searchBox.value = '';
+    this.icon.name = 'search';
+    this.treeGrid.clearSearch();
+}
+```
+<!-- end: WebComponents -->
+
+```tsx
+const prevIconText =
+  "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z'></path></svg>";
+const nextIconText =
+  "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'></path></svg>";
+const searchIconText =
+  "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' /></svg>";
+const clearIconText =
+  "<svg width='24' height='24' viewBox='0 0 24 24' title='Clear'><path d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></svg>";
+
+useEffect(() => {
+    if (searchIconRef?.current) {
+        searchIconRef.current.registerIconFromText("search", searchIconText, "material");
+        searchIconRef.current.registerIconFromText("clear", clearIconText, "material");
+    }
+    if (iconButtonPrevRef?.current) {
+        iconButtonPrevRef.current.registerIconFromText("prev", prevIconText,"material");
+    }
+    if (iconButtonNextRef?.current) {
+        iconButtonNextRef.current.registerIconFromText("next", nextIconText, "material");
+    }
+}, []);
+
+function clearSearch() {
+  setSearchText('');
+  gridRef.current.clearSearch();
+}
+
+<IgrInput name="searchBox" value={searchText} inputOcurred={handleOnSearchChange}>
+    <div slot="prefix" key="prefix">
+        {searchText.length === 0 ? (
+          <IgrIconButton key="searchIcon" ref={searchIconRef} variant="flat" name="search" collection="material">
+          </IgrIconButton>
+        ) : (
+          <IgrIconButton key="clearIcon" ref={clearIconRef} variant="flat" name="clear" collection="material" clicked={clearSearch}>
+          </IgrIconButton>
+        )}        
+    </div>
+    <div slot="suffix" key="chipSuffix">
+        <IgrChip ref={caseSensitiveChipRef} key="caseSensitiveChip" selectable="true">
+        <span key="caseSensitive">Case Sensitive</span>
+        </IgrChip>
+        <IgrChip ref={exactMatchChipRef} key="exactMatchChip" selectable="true">
+        <span key="exactMatch">Exact Match</span>
+        </IgrChip>
+    </div>
+    <div slot="suffix" key="buttonsSuffix">
+        <IgrIconButton key="prevIconButton" ref={iconButtonPrevRef} variant="flat" name="prev" collection="material" clicked={prevSearch}>
+        </IgrIconButton>
+        <IgrIconButton key="nextIconButton" ref={iconButtonNextRef} variant="flat" name="next" collection="material" clicked={nextSearch}>
+        </IgrIconButton>
+    </div>
+</IgrInput>
+```
+<!-- ComponentEnd: TreeGrid -->
+
+```razor
+<IgbInput ValueChanging="OnValueChanging" Value="@searchText" @onkeydown="OnSearchKeyDown">
+    @if (searchText.Length == 0)
+    {
+        <IgbIcon @ref="searchIconRef" slot="prefix" IconName="search" Collection="material"/>
+    }
+    @if (searchText.Length > 0)
+    {
+        <IgbIcon slot="prefix" IconName="clear" Collection="material" @onclick="ClearSearch"/>
+    }
+
+    <div class="chips" slot="suffix">
+        <IgbChip Selectable=true SelectedChanged="UpdateCase">
+            Case Sensitive
+        </IgbChip>
+        <IgbChip  Selectable=true SelectedChanged="UpdateExactSearch">
+            Exact Match
+        </IgbChip>
+    </div>
+    <div class="searchButtons" slot="suffix">
+        <IgbIconButton Variant="IconButtonVariant.Flat" @onclick="PrevSearch">
+            <IgbIcon IconName="prev" Collection="material"/>
+        </IgbIconButton>
+        <IgbIconButton Variant="IconButtonVariant.Flat" @onclick="NextSearch">
+            <IgbIcon IconName="next" Collection="material" />
+        </IgbIconButton>
+    </div>
+</IgbInput>
+
+@code {
+
+    public void clearSearch()
+    {
+        this.searchText = "";
+        this.grid.ClearSearchAsync();
+    }
+}
 ```
 
 On the right in our input group, let's create three separate containers with the following purposes:
@@ -1142,10 +1234,10 @@ constructor() {
     this.caseSensitiveChip = document.getElementById('caseSensitiveChip') as IgcChipComponent;
     this.exactMatchChip = document.getElementById('exactMatchChip') as IgcChipComponent;
 
-    this.caseSensitiveChip.addEventListener("igcSelect", (evt) => {
+    this.caseSensitiveChip.addEventListener('igcSelect', (evt) => {
         this.treeGrid.findNext(this.searchBox.value, evt.detail, this.exactMatchChip.selected);
     });
-    this.exactMatchChip.addEventListener("igcSelect", (evt) => {
+    this.exactMatchChip.addEventListener('igcSelect', (evt) => {
         this.treeGrid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, evt.detail);
     });
 }
@@ -1156,13 +1248,20 @@ constructor() {
 
 ```tsx
 <div slot="suffix" key="chipSuffix">
-    <IgrChip ref={caseSensitiveChipRef} key="caseSensitiveChip" selectable="true">
+    <IgrChip ref={caseSensitiveChipRef} key="caseSensitiveChip" selectable="true" select={handleCaseSensitiveChange}>
         <span key="caseSensitive">Case Sensitive</span>
     </IgrChip>
-    <IgrChip ref={exactMatchChipRef} key="exactMatchChip" selectable="true">
+    <IgrChip ref={exactMatchChipRef} key="exactMatchChip" selectable="true" select={handleExactMatchChange}>
         <span key="exactMatch">Exact Match</span>
     </IgrChip>
 </div>
+
+function handleCaseSensitiveChange(chip: IgrChip, event: IgrComponentBoolValueChangedEventArgs) {
+  gridRef.current.findNext(searchText, event.detail, exactMatchChipRef.current.selected);
+}
+function handleExactMatchChange(chip: IgrChip, event: IgrComponentBoolValueChangedEventArgs) {
+  gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, event.detail);
+}
 ```
 
 ```razor
