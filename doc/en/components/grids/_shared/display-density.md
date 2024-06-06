@@ -160,6 +160,57 @@ public ngOnInit() {
 }
 ```
 
+<!-- ComponentStart: TreeGrid -->
+```razor
+<div class="options vertical">
+    <IgbPropertyEditorPanel
+    DescriptionType="WebTreeGrid"
+    IsHorizontal="true"
+    IsWrappingEnabled="true"
+    Name="PropertyEditor"
+    @ref="propertyEditor">
+        <IgbPropertyEditorPropertyDescription
+        PropertyPath="DisplayDensity"
+        Name="DisplayDensityEditor"
+        @ref="displayDensityEditor">
+        </IgbPropertyEditorPropertyDescription>
+    </IgbPropertyEditorPanel>
+</div>
+```
+
+```html
+<div class="density-chooser">
+    <igc-property-editor-panel
+    description-type="WebTreeGrid"
+    is-horizontal="true"
+    is-wrapping-enabled="true"
+    name="PropertyEditor"
+    id="propertyEditor">
+        <igc-property-editor-property-description
+        property-path="DisplayDensity"
+        name="DisplayDensityEditor"
+        id="displayDensityEditor">
+        </igc-property-editor-property-description>
+    </igc-property-editor-panel>
+</div>
+```
+
+```tsx
+<IgrPropertyEditorPanel
+    ref={propertyEditorRef}
+    componentRenderer={renderer}
+    target={grid}
+    descriptionType="WebTreeGrid"
+    isHorizontal="true"
+    isWrappingEnabled="true">
+    <IgrPropertyEditorPropertyDescription
+        propertyPath="DisplayDensity"
+        name="DisplayDensityEditor">
+    </IgrPropertyEditorPropertyDescription>
+</IgrPropertyEditorPanel>
+```
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
 ```razor
 <div class="options vertical">
@@ -271,21 +322,6 @@ Now we can add the markup.
 
 ```razor
 <div class="container vertical">
-    <div class="options vertical">
-        <IgbPropertyEditorPanel
-        DescriptionType="WebGrid"
-        IsHorizontal="true"
-        IsWrappingEnabled="true"
-        Name="PropertyEditor"
-        @ref="propertyEditor">
-            <IgbPropertyEditorPropertyDescription
-            PropertyPath="DisplayDensity"
-            Name="DisplayDensityEditor"
-            @ref="displayDensityEditor">
-            </IgbPropertyEditorPropertyDescription>
-        </IgbPropertyEditorPanel>
-    </div>
-
     <div class="container vertical fill">
         <IgbGrid
         AutoGenerate="false"
@@ -445,20 +481,6 @@ Now we can add the markup.
 ```
 
 ```html
-<div class="density-chooser">
-    <igc-property-editor-panel
-    description-type="WebGrid"
-    is-horizontal="true"
-    is-wrapping-enabled="true"
-    name="PropertyEditor"
-    id="PropertyEditor">
-        <igc-property-editor-property-description
-        property-path="DisplayDensity"
-        name="DisplayDensityEditor"
-        id="displayDensityEditor">
-        </igc-property-editor-property-description>
-    </igc-property-editor-panel>
-</div>
 <igc-grid id="grid" width="100%" height="550px" allow-filtering="true">
     <igc-column-group  header="Customer Information">
     <igc-column field="CustomerName" header="Customer Name" data-type="String" sortable="true" has-summary="true">
@@ -550,7 +572,6 @@ Now we can add the markup.
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
-
 ```html
 <div class="density-chooser">
     <igx-buttongroup [values]="displayDensities" (selected)="selectDensity($event)"></igx-buttongroup>
@@ -637,20 +658,6 @@ Now we can add the markup.
 ```
 
 ```html
-<div class="density-chooser">
-    <igc-property-editor-panel
-    description-type="WebGrid"
-    is-horizontal="true"
-    is-wrapping-enabled="true"
-    name="PropertyEditor"
-    id="PropertyEditor">
-        <igc-property-editor-property-description
-        property-path="DisplayDensity"
-        name="DisplayDensityEditor"
-        id="displayDensityEditor">
-        </igc-property-editor-property-description>
-    </igc-property-editor-panel>
-</div>
 <igc-tree-grid id="grid" primary-key="ID" foreign-key="ParentID" width="100%"
     height="550px" allow-filtering="true">
     <igc-column field="Name" data-type="String" sortable="true" has-summary="true" width="200px"></igc-column>
@@ -689,30 +696,35 @@ Now we can add the markup.
     </igc-column-group>
 </igc-tree-grid>
 ```
-```ts
-constructor() {
-    var propertyEditor = this.propertyEditor = document.getElementById('PropertyEditor') as IgcPropertyEditorPanelComponent;
-    var grid = this.grid = document.getElementById('grid') as IgcTreeGridComponent;
-    propertyEditor.componentRenderer = this.renderer;
-    propertyEditor.target = this.grid;
-    grid.data = this.data;
-}
 
-private _componentRenderer: ComponentRenderer = null;
-public get renderer(): ComponentRenderer {
-    if (this._componentRenderer == null) {
-        this._componentRenderer = new ComponentRenderer();
-        var context = this._componentRenderer.context;
-        PropertyEditorPanelDescriptionModule.register(context);
-        WebGridDescriptionModule.register(context);
-    }
-    return this._componentRenderer;
-}
+```tsx
+<IgrTreeGrid autoGenerate="false" ref={this.treeGridRef} id="treeGrid" data={this.employeesFlatDetails} primaryKey="ID" foreignKey="ParentID" allowFiltering="true">
+    <IgrColumn field="Name" dataType="String" sortable="true" hasSummary="true" width="200"></IgrColumn>
+    <IgrColumnGroup header="General Information">
+        <IgrColumn field="HireDate" dataType="Date" sortable="true" hasSummary="true"></IgrColumn>
+        <IgrColumnGroup header="Personal Details">
+            <IgrColumn field="ID" dataType="Number" filterable="false"></IgrColumn>
+            <IgrColumn field="Title" dataType="String" sortable="true" hasSummary="true"></IgrColumn>
+            <IgrColumn field="Age" dataType="Number" sortable="true" hasSummary="true" filterable="false"></IgrColumn>
+        </IgrColumnGroup>
+    </IgrColumnGroup>
+    <IgrColumnGroup header="Address Information">
+        <IgrColumnGroup header="Location">
+            <IgrColumn field="Country" dataType="String" sortable="true" hasSummary="true"></IgrColumn>
+            <IgrColumn field="City" dataType="String" sortable="true" hasSummary="true"></IgrColumn>
+            <IgrColumn field="Address" dataType="String" sortable="true" hasSummary="true"></IgrColumn>
+        </IgrColumnGroup>
+        <IgrColumnGroup header="Contact Information">
+            <IgrColumn field="Phone" dataType="String" sortable="true" hasSummary="true"></IgrColumn>
+            <IgrColumn field="Fax" dataType="String" sortable="true" hasSummary="true"></IgrColumn>
+            <IgrColumn field="PostalCode" dataType="String" sortable="true" hasSummary="true"></IgrColumn>
+        </IgrColumnGroup>
+    </IgrColumnGroup>
+</IgrTreeGrid>
 ```
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
-
 ```html
 <div class="density-chooser">
     <igx-buttongroup [values]="displayDensities" (selected)="selectDensity($event)"></igx-buttongroup>
@@ -875,20 +887,6 @@ AllowFiltering="true">
 ```
 
 ```html
-<div class="density-chooser">
-    <igc-property-editor-panel
-    description-type="WebGrid"
-    is-horizontal="true"
-    is-wrapping-enabled="true"
-    name="PropertyEditor"
-    id="PropertyEditor">
-        <igc-property-editor-property-description
-        property-path="DisplayDensity"
-        name="DisplayDensityEditor"
-        id="displayDensityEditor">
-        </igc-property-editor-property-description>
-    </igc-property-editor-panel>
-</div>
 <igc-hierarchical-grid id="grid" height="600px" width="100%" allow-filtering="true">
     <igc-column field="CustomerID"></igc-column>
     <igc-column field="CompanyName"></igc-column>
@@ -1003,21 +1001,9 @@ public get renderer(): ComponentRenderer {
     return this._componentRenderer;
 }
 ```
-<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: WebComponents -->
 
-Finally, let's provide the necessary logic in order to actually apply the density:
-
-<!-- Angular -->
-```typescript
-@ViewChild('grid', { read: {ComponentName} })
-public grid: {ComponentName};
-
-public selectDensity(event) {
-    this.density = this.displayDensities[event.index].label;
-}
-```
-<!-- end: Angular -->
-
+<!-- Blazor -->
 ```razor
 @code {
     private Action BindElements { get; set; }
@@ -1035,7 +1021,9 @@ public selectDensity(event) {
     private {ComponentSelector} grid;
 }
 ```
+<!-- end: Blazor -->
 
+<!-- React -->
 ```tsx
 private propertyEditor: IgrPropertyEditorPanel
 private propertyEditorRef(r: IgrPropertyEditorPanel) {
@@ -1067,38 +1055,7 @@ private _componentRenderer: ComponentRenderer = null;
     return this._componentRenderer;
 }
 ```
-
-```tsx
-private propertyEditor: IgrPropertyEditorPanel
-private propertyEditorRef(r: IgrPropertyEditorPanel) {
-        this.propertyEditor = r;
-        this.setState({});
-}
-private displayDensityEditor: IgrPropertyEditorPropertyDescription
-private grid: {ComponentName}
-private gridRef(r: {ComponentName}) {
-    this.grid = r;
-    this.setState({});
-}
-
-constructor(props: any) {
-    super(props);
-
-    this.propertyEditorRef = this.propertyEditorRef.bind(this);
-    this.gridRef = this.gridRef.bind(this);
-}
-
-private _componentRenderer: ComponentRenderer = null;
-  public get renderer(): ComponentRenderer {
-    if (this._componentRenderer == null) {
-      this._componentRenderer = new ComponentRenderer();
-      var context = this._componentRenderer.context;
-      PropertyEditorPanelDescriptionModule.register(context);
-      WebHierarchicalGridDescriptionModule.register(context);
-    }
-    return this._componentRenderer;
-}
-```
+<!-- end: React -->
 
 Another option that `{ComponentName}` provides for you, in order to be able to change the height of the rows in the `{ComponentName}`, is the property `RowHeight`. So let's see in action how this property affects the `{ComponentName}` layout along with the `DisplayDensity`.
 
@@ -1150,7 +1107,6 @@ We can now extend our sample and add `RowHeight` property to the `{ComponentName
 * `Column`
 
 ## Additional Resources
-<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Editing](editing.md)
 * [Paging](paging.md)
@@ -1161,7 +1117,6 @@ We can now extend our sample and add `RowHeight` property to the `{ComponentName
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
 * [Searching](search.md)
-<!-- ComponentEnd:  Grid -->
 
 
 Our community is active and always welcoming to new ideas.
