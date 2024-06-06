@@ -688,9 +688,10 @@
         "status": ["NEW_REACT"]
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Column Selection",
-        "href": "grids/tree-grid/column-selection.md"
+        "href": "grids/tree-grid/column-selection.md",
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular", "React"],
