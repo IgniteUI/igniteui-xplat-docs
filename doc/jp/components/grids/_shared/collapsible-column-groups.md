@@ -215,12 +215,21 @@ public indTemplate = (ctx: IgcColumnTemplateContext) => {
 ```
 
 ```tsx
-  function collapsibleIndicatorTemplate(e: { dataContext: IgrColumnTemplateContext }) {
+<IgrColumnGroup collapsible="true" header="Customer Information" collapsibleIndicatorTemplate={indicatorTemplate}>
+    <IgrColumn field="CustomerName" header="Fullname" visibleWhenCollapsed="true"></IgrColumn>
+    <IgrColumn field="CustomerID" header="Customer ID" visibleWhenCollapsed="false"></IgrColumn>
+    <IgrColumnGroup header="Customer Address" collapsibleIndicatorTemplate={indicatorTemplate}>
+        <IgrColumn field="Country" sortable="true" visibleWhenCollapsed="true"></IgrColumn>
+        <IgrColumn field="City" sortable="true" visibleWhenCollapsed="false"></IgrColumn>
+    </IgrColumnGroup>
+</IgrColumnGroup>
+
+function indicatorTemplate(e: { dataContext: IgrColumnTemplateContext }) {
     return (
     <div>
-      <IgrIcon iconName={e.dataContext.column.expanded ? 'remove' : 'add'}></IgrIcon>
+        <IgrIcon iconName={e.dataContext.column.expanded ? 'remove' : 'add'}></IgrIcon>
     </div>)
-  }
+}
 ```
 
 <!-- end: Angular, WebComponents, React -->
