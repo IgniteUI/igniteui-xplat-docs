@@ -718,7 +718,7 @@ IgrRadialGaugeModule.register();
 </IgbLinearGauge>
 ```
 
-`sample="/gauges/radial-gauge/highlight-needle", height="125", alt="{Platform} ラジアル ゲージの針のハイライト"`
+`sample="/gauges/radial-gauge/highlight-needle", height="320", alt="{Platform} ラジアル ゲージの針のハイライト"`
 
 ## まとめ
 上記すべてのコード スニペットを以下のコード ブロックにまとめています。プロジェクトに簡単にコピーしてブレットグラフのすべての機能を再現できます。

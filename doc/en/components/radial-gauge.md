@@ -717,7 +717,7 @@ The radial gauge can be modified to show a second needle. This will make the mai
 </IgbLinearGauge>
 ```
 
-`sample="/gauges/radial-gauge/highlight-needle", height="125", alt="{Platform} radial gauge highlight needle"`
+`sample="/gauges/radial-gauge/highlight-needle", height="320", alt="{Platform} radial gauge highlight needle"`
 
 ## Summary
 For your convenience, all above code snippets are combined into one code block below that you can easily copy to your project and see the radial gauge with all features and visuals enabled.
