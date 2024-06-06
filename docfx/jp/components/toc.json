@@ -1247,6 +1247,11 @@
           "href": "charts/features/chart-data-aggregations.md"
         },
         {
+          "name": "",
+          "href": "charts/features/chart-data-filtering.md",
+          "status": "NEW"
+        },
+        {
           "name": "チャートのデータ凡例",
           "href": "charts/features/chart-data-legend.md",
           "status": "UPDATED"
