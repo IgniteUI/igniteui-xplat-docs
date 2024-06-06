@@ -72,13 +72,12 @@ Single row selection can now be easily set up, the only thing you need to do, is
 ```
 ```ts
 constructor() {
-    const grid = document.getElementById('grid') as IgcGridComponent;
+    const grid = document.getElementById('grid') as {ComponentName}Component;
     grid.data = this.data;
     grid.addEventListener("rowSelectionChanging", this.handleRowSelection);
 }
 ```
-
-```typescript
+```ts
 public handleRowSelection(args: IgcRowSelectionEventArgs) {
     if (args.detail.added.length && args.detail.added[0] === 3) {
         args.detail.cancel = true;
@@ -185,6 +184,12 @@ To enable cascade row selection in the `{ComponentName}` just set the `RowSelect
     </{ComponentSelector}>
 ```
 
+```tsx
+<IgrTreeGrid id="grid" primaryKey="ID" foreignKey="ParentID" autoGenerate="true"
+        rowSelection="MultipleCascade" allowFiltering="true">
+</IgrTreeGrid>
+```
+
 In this mode a parent's selection state entirely depends on the selection state of its children. When a parent has some selected and some deselected children, its checkbox is in an indeterminate state.
 
 <!-- ComponentEnd: TreeGrid -->
@@ -223,6 +228,7 @@ The code snippet below can be used to select one or multiple rows simultaneously
 ```
 <!-- end: Angular -->
 
+<!-- Blazor -->
 ```razor
     <{ComponentSelector} Width="100%"
              Id="grid"
@@ -235,7 +241,7 @@ The code snippet below can be used to select one or multiple rows simultaneously
     </{ComponentSelector}>
     <IgbButton @onclick=Select>Select</IgbButton>
     @code {
-        public IgbGrid grid;
+        public {ComponentSelector} grid;
         private async void Select()
         {
             object[] array = new object[] { 1,2, 5 };
@@ -243,6 +249,7 @@ The code snippet below can be used to select one or multiple rows simultaneously
         }
     }
 ```
+<!-- end: Blazor -->
 
 <!-- WebComponents -->
 ```html
@@ -260,7 +267,7 @@ constructor() {
     document.getElementById("select").addEventListener("click", this.onClickSelect);
 }
 public onClickSelect() {
-    const grid = document.getElementById("grid") as IgcGridComponent;
+    const grid = document.getElementById("grid") as {ComponentName}Component;
     grid.selectRows([1,2,5], true);
 }
 ```
@@ -306,7 +313,7 @@ If you need to deselect rows programmatically, you can use the `DeselectRows` me
     </{ComponentSelector}>
     <IgbButton @onclick=Deselect>Deselect</IgbButton>
     @code {
-        public IgbGrid grid;
+        public {ComponentSelector} grid;
         private async void Deselect()
         {
             object[] array = new object[] { 1, 2, 5 };
@@ -330,7 +337,7 @@ constructor() {
     document.getElementById("deselect").addEventListener("click", this.onClickDeselect);
 }
 public onClickDeselect() {
-    const grid = document.getElementById("grid") as IgcGridComponent;
+    const grid = document.getElementById("grid") as {ComponentName}Component;
     grid.deselectRows([1,2,5]);
 }
 ```
@@ -369,9 +376,15 @@ When there is some change in the row selection `RowSelectionChanging` event is e
 ```
 <!-- end: Angular -->
 
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid">
+</{ComponentSelector}>
+```
+
 ```ts
 constructor() {
-    const grid = document.getElementById('grid') as IgcGridComponent;
+    const grid = document.getElementById('grid') as {ComponentName}Component;
     grid.data = this.data;
     grid.addEventListener("rowSelectionChanging", this.handleRowSelectionChange);
 }
@@ -380,6 +393,7 @@ public handleRowSelectionChange(args) {
     args.detail.cancel = true; // this will cancel the row selection
 }
 ```
+<!-- end: WebComponents -->
 
 ```tsx
 function handleRowSelectionChange(args: IgrRowSelectionEventArgs) {
@@ -425,7 +439,7 @@ If you need to see which rows are currently selected, you can get their row IDs 
 
 ```typescript
 public getSelectedRows() {
-    const grid = document.getElementById('grid') as IgcGridComponent;
+    const grid = document.getElementById('grid') as {ComponentName}Component;
     const currentSelection = grid.selectedRows; // return array of row IDs
 }
 ```
@@ -442,7 +456,7 @@ public getSelectedRows() {
     </{ComponentSelector}>
     <IgbButton @onclick=GetSelected>Get selected</IgbButton>
     @code {
-        public IgbGrid grid;
+        public {ComponentSelector} grid;
         private async void GetSelected()
         {
             var selected = this.grid.SelectedRows;
@@ -470,10 +484,9 @@ Additionally, assigning row IDs to `SelectedRows` will allow you to change the g
 <!-- end: Angular -->
 
 ```ts
-
 public mySelectedRows = [1, 2, 3]; // an array of row IDs
 constructor() {
-    const grid = document.getElementById('grid') as IgcGridComponent;
+    const grid = document.getElementById('grid') as {ComponentName}Component;
     grid.data = this.data;
     grid.selectedRows = this.mySelectedRows;
 }
@@ -592,6 +605,7 @@ The `rowID` property can be used to get a reference of an `{ComponentSelector}` 
     <igx-checkbox (click)="onSelectorClick($event, rowContext.key)"></igx-checkbox>
 </ng-template>
 ```
+
 ```ts
 public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
     return html`
@@ -684,7 +698,7 @@ auto-generate="true">
 
 ```ts
 constructor() {
-    const grid = document.getElementById('grid') as IgcGridComponent;
+    const grid = document.getElementById('grid') as {ComponentName}Component;
     grid.data = this.data;
     grid.headSelectorTemplate = this.headSelectorTemplate;
 }
@@ -744,8 +758,7 @@ This demo shows the usage of custom header and row selectors. The latter uses `R
 
 
 
-<!-- ComponentStart: Grid -->
-
+<!-- ComponentStart: Grid, TreeGrid -->
 
 ### Excel Style Row Selectors Demo
 
@@ -756,16 +769,13 @@ This demo uses custom templates to resemble Excel-like header and row selectors.
 `sample="/{ComponentSample}/row-selection-template-excel", height="550", alt="{Platform} {ComponentTitle} Selection Template Excel Example"`
 
 
-
-
-<!-- ComponentEnd: Grid -->
+<!-- ComponentEnd: Grid, TreeGrid -->
 
 ### Conditional Selection Demo
 
 This demo prevents some rows from being selected using the `RowSelectionChanging` event and a custom template with disabled checkbox for non-selectable rows.
 
 `sample="/{ComponentSample}/conditional-row-selectors", height="550", alt="{Platform} {ComponentTitle} Conditional Row Selectors Example"`
-
 
 
 ## API References
@@ -776,7 +786,7 @@ This demo prevents some rows from being selected using the `RowSelectionChanging
 
 ## Additional Resources
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart:  Grid, TreeGrid -->
 * [Selection](selection.md)
 * [Cell selection](cell-selection.md)
 * [Paging](paging.md)
@@ -787,7 +797,7 @@ This demo prevents some rows from being selected using the `RowSelectionChanging
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Virtualization and Performance](virtualization.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd:  Grid, TreeGrid -->
 
 Our community is active and always welcoming to new ideas.
 
