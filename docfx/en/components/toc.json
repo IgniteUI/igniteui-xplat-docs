@@ -826,6 +826,12 @@
       },
       {
         "exclude": ["Angular"],
+        "name": "Toolbar",
+        "href": "grids/tree-grid/toolbar.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular"],
         "name": "Virtualization and performance",
         "href": "grids/tree-grid/virtualization.md",
         "status": "NEW"
