@@ -77,7 +77,7 @@ import { SortingDirection } from 'igniteui-webcomponents-grids';
 import { SortingDirection } from "igniteui-react-grids";
 ```
 
-<!-- ComponentStart: Grid, TreeGrid -->
+<!-- ComponentStart: Grid -->
 <!-- Angular -->
 ```typescript
 
@@ -91,7 +91,6 @@ this.grid.sort([
 ]);
 ```
 <!-- end: Angular -->
-
 
 <!-- WebComponents -->
 ```typescript
@@ -125,7 +124,6 @@ this.grid.sort([
 }
 ```
 
-
 ```tsx
 // Perform a case insensitive ascending sort on the ProductName column.
 gridRef.current.sort([{ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true }]);
@@ -136,7 +134,66 @@ gridRef.current.sort([
     { fieldName: 'Price', dir: SortingDirection.Desc }
 ]);
 ```
-<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+<!-- Angular -->
+```typescript
+
+// Perform a case insensitive ascending sort on the ProductName column.
+this.treeGrid.sort({ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true });
+
+// Perform sorting on both the ProductName and Price columns.
+this.treeGrid.sort([
+    { fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true },
+    { fieldName: 'Price', dir: SortingDirection.Desc }
+]);
+```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```typescript
+
+// Perform a case insensitive ascending sort on the ProductName column.
+this.treeGrid.sort([{ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true }]);
+
+// Perform sorting on both the ProductName and Price columns.
+this.treeGrid.sort([
+    { fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true },
+    { fieldName: 'Price', dir: SortingDirection.Desc }
+]);
+```
+<!-- end: WebComponents -->
+
+```razor
+@code {
+    this.grtreeGridid.SortAsync(new IgbSortingExpression[]
+        {
+            new IgbSortingExpression
+            {
+                FieldName = "CompanyName",
+                Dir = SortingDirection.Asc
+            },
+            new IgbSortingExpression
+            {
+                FieldName = "Country",
+                Dir = SortingDirection.Asc
+            }
+        });
+}
+```
+
+```tsx
+// Perform a case insensitive ascending sort on the ProductName column.
+treeGridRef.current.sort([{ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true }]);
+
+// Perform sorting on both the ProductName and Price columns.
+treeGridRef.current.sort([
+    { fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true },
+    { fieldName: 'Price', dir: SortingDirection.Desc }
+]);
+```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 <!-- Angular -->
@@ -203,7 +260,7 @@ hierarchicalGridRef.current.sort([
 
 As with the filtering behavior, you can clear the sorting state by using the `ClearSort` method:
 
-<!-- ComponentStart: Grid, TreeGrid -->
+<!-- ComponentStart: Grid -->
 <!-- Angular, WebComponents -->
 ```typescript
 // Removes the sorting state from the ProductName column
@@ -231,7 +288,37 @@ gridRef.current.clearSort();
     this.grid.ClearSortAsync("");
 }
 ```
-<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+<!-- Angular, WebComponents -->
+```typescript
+// Removes the sorting state from the ProductName column
+this.treeGrid.clearSort('ProductName');
+
+// Removes the sorting state from every column in the {ComponentTitle}
+this.treeGrid.clearSort();
+```
+<!-- end: Angular, WebComponents -->
+
+```tsx
+// Removes the sorting state from the ProductName column
+treeGridRef.current.clearSort('ProductName');
+
+// Removes the sorting state from every column in the {ComponentTitle}
+treeGridRef.current.clearSort();
+```
+
+```razor
+@code {
+    @*Removes the sorting state from the Title column*@
+    this.treeGrid.ClearSortAsync("Title");
+
+    @*Removes the sorting state from every column in the Grid*@
+    this.treeGrid.ClearSortAsync("");
+}
+```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 <!-- Angular, WebComponents -->
@@ -273,7 +360,7 @@ hierarchicalGridRef.current.clearSort();
 
 It is possible to set the initial sorting state of the `{ComponentName}` by passing an array of sorting expressions to the `SortingExpressions` property of the `{ComponentName}`.
 
-<!-- ComponentStart: Grid, TreeGrid -->
+<!-- ComponentStart: Grid -->
 <!-- Angular -->
 ```typescript
 public ngOnInit() {
@@ -321,7 +408,57 @@ useEffect(() => {
     ];
 }, [])
 ```
-<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+<!-- Angular -->
+```typescript
+public ngOnInit() {
+    this.treeGrid.sortingExpressions = [
+        { fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true },
+        { fieldName: 'Price', dir: SortingDirection.Desc }
+    ];
+}
+```
+<!-- end: Angular -->
+
+```razor
+@code {
+    protected override void OnAfterRender(bool first)
+    {
+        if (first)
+        {
+            this.treeGrid.SortingExpressions = new IgbSortingExpression[]{
+                new IgbSortingExpression()
+                {
+                    FieldName = "Title",
+                    Dir = SortingDirection.Asc
+                }};
+        }
+    }
+}
+```
+
+<!-- WebComponents -->
+```typescript
+public connectedCallback() {
+    this.treeGrid.sortingExpressions = [
+        { fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true },
+        { fieldName: 'Price', dir: SortingDirection.Desc }
+    ];
+}
+```
+<!-- end: WebComponents -->
+
+```tsx
+useEffect(() => {
+    treeGridRef.current.sortingExpressions = [
+        { fieldName: 'UnitsInStock', dir: SortingDirection.Asc, ignoreCase: true },
+        { fieldName: 'ProductName', dir: SortingDirection.Desc }
+    ];
+}, [])
+```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 <!-- Angular -->
