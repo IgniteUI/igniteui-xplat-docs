@@ -1106,6 +1106,7 @@ We can now extend our sample and add `RowHeight` property to the `{ComponentName
 * `{ComponentName}`
 * `Column`
 
+<!-- ComponentStart: Grid -->
 ## Additional Resources
 * [Virtualization and Performance](virtualization.md)
 * [Editing](editing.md)
@@ -1117,7 +1118,7 @@ We can now extend our sample and add `RowHeight` property to the `{ComponentName
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
 * [Searching](search.md)
-
+<!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 
