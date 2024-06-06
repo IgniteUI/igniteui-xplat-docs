@@ -59,25 +59,23 @@ Property `Filterable` enables you to specify the following options:
 </{ComponentSelector}>
 ```
 
-<!-- WebComponents -->
 ```html
 <{ComponentSelector} id="grid1" auto-generate="false" allow-filtering="true">
     <igc-column field="ProductName" data-type="string"></igc-column>
     <igc-column field="Price" data-type="number" filterable="false"></igc-column>
-<{ComponentSelector}>
+</{ComponentSelector}>
 ```
-<!-- end: WebComponents -->
 
-<!-- React -->
 ```tsx
 <{ComponentSelector} data={this.nwindData} autoGenerate="false" ref={this.gridRef} allowFiltering="true">
     <IgrColumn field="ProductName" dataType="String"></IgrColumn>
     <IgrColumn field="UnitPrice" data-type="Number" filterable="false"></IgrColumn>
 </{ComponentSelector}>
 ```
-<!-- end: React -->
 
-To enable the [Advanced filtering](advanced-filtering.md) however, you need to set the `AllowAdvancedFiltering` input property to **true**.
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
+To enable the [Advanced filtering](advanced-filtering.md) however, you need to set the `AllowAdvancedFiltering` input property to **true**.7
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
 <!-- Angular -->
 ```html
@@ -129,6 +127,7 @@ The filtering feature is enabled for the `{ComponentName}` component by setting 
 </{ComponentSelector}>
 ```
 <!-- end: Angular -->
+
 <!-- WebComponents -->
 ```html
 <{ComponentSelector} auto-generate="false" allow-filtering="true">
@@ -148,7 +147,6 @@ The filtering feature is enabled for the `{ComponentName}` component by setting 
 </{ComponentSelector}>
 ```
 <!-- end: React -->
-
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -371,6 +369,8 @@ this.grid.filteringLogic = FilteringLogic.OR;
 
 <!-- React -->
 ```tsx
+import { FilteringLogic } from "igniteui-react-grids";
+
 <{ComponentName} filteringLogic={FilteringLogic.Or}></{ComponentName}>
 ```
 <!-- end: React -->
@@ -580,20 +580,16 @@ constructor() {
 <!-- grid-custom-filtering.component.html -->
 
 <igc-hierarchical-grid auto-generate="false" allow-filtering="true">
-    <igc-column id="Artist" field="Artist" filterable='true' data-type="string" [filters]="caseSensitiveFilteringOperand"></igc-column>
-    <igc-column id="HasGrammyAward" field="HasGrammyAward" filterable='true' data-type="boolean" [filters]="booleanFilteringOperand"></igc-column>
+    <igc-column id="Artist" field="Artist" filterable='true' data-type="string"></igc-column>
+    <igc-column id="HasGrammyAward" field="HasGrammyAward" filterable='true' data-type="boolean"></igc-column>
 </igc-hierarchical-grid>
 ```
 ```ts
 constructor() {
-    var artist = this.artist = document.getElementById('Artist') as IgcColumnComponent;
-    var hasGrammyAward = this.hasGrammyAward = document.getElementById('HasGrammyAward') as IgcColumnComponent;
-
-    this._bind = () => {
-        artist.bodyTemplate = this.caseSensitiveFilteringOperand;
-        hasGrammyAward.bodyTemplate = this.booleanFilteringOperand;
-    }
-    this._bind();
+    var artist = document.getElementById('Artist') as IgcColumnComponent;
+    var hasGrammyAward = document.getElementById('HasGrammyAward') as IgcColumnComponent;
+    artist.filters = this.caseSensitiveFilteringOperand;
+    hasGrammyAward.filters = this.booleanFilteringOperand;
 }
 ```
 
@@ -651,18 +647,18 @@ In addition to the predefined themes, the grid could be further customized by se
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
 <!-- WebComponents -->
-```ts
+```html
 <{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
 
 ```razor
-<{ComponentSelector} Class="grid"></ComponentSelector>
+<{ComponentSelector} Class="grid"></{ComponentSelector}>
 ```
 
 <!-- React -->
 ```tsx
-<IgrGrid className="grid"></IgrGrid>
+<{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
 <!-- end: React -->
 

@@ -21,6 +21,10 @@ To enable single-selection and quick filtering, set the `SingleSelect` property 
 <IgbCombo SingleSelect></IgbCombo>
 ```
 
+```tsx
+<IgrCombo singleSelect></IgrCombo>
+```
+
 `sample="/inputs/combo/simplified", height="400", alt="{Platform} Single Selection Combo Example"`
 
 <div class="divider--half"></div>
@@ -35,10 +39,12 @@ Here's how to select/deselect an item programmatically in a single selection com
 
 #### Selecting items:
 
+<!-- WebComponents -->
 ```ts
 // select the item matching the 'BG01' value of the value key field.
 combo.select('BG01');
 ```
+<!-- end: WebComponents -->
 
 ```razor
 <IgbCombo SingleSelect @ref="Combo"></IgbCombo>
@@ -50,14 +56,23 @@ combo.select('BG01');
 }
 ```
 
+<!-- React -->
+```tsx
+// select the item matching the 'BG01' value of the value key field.
+comboRef.current.select('BG01');
+```
+<!-- end: React -->
+
 To deselect an item without making a new selection, call the `deselect` method.
 
 #### Deselecting items:
 
+<!-- WebComponents -->
 ```ts
 // deselect the item matching the 'BG01' value of the value key field.
 combo.deselect('BG01');
 ```
+<!-- end: WebComponents -->
 
 ```razor
 <IgbCombo SingleSelect @ref="Combo"></IgbCombo>
@@ -68,6 +83,13 @@ combo.deselect('BG01');
     this.Combo.Deselect(new object[] { "UK01" });
 }
 ```
+
+<!-- React -->
+```tsx
+// deselect the item matching the 'BG01' value of the value key field.
+comboRef.current.deselect('BG01');
+```
+<!-- end: React -->
 
 ## Disabled features
 
