@@ -826,6 +826,12 @@
       },
       {
         "exclude": ["Angular"],
+        "name": "Toolbar",
+        "href": "grids/tree-grid/toolbar.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular"],
         "name": "Virtualization and performance",
         "href": "grids/tree-grid/virtualization.md",
         "status": "NEW"
@@ -1248,6 +1254,11 @@
         {
           "name": "Chart Data Aggregations",
           "href": "charts/features/chart-data-aggregations.md"
+        },
+        {
+          "name": "Chart Data Filtering",
+          "href": "charts/features/chart-data-filtering.md",
+          "status": "NEW"
         },
         {
           "name": "Chart Data Legend",
