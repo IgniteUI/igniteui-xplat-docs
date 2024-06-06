@@ -795,10 +795,10 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "Selection",
         "href": "grids/tree-grid/selection.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "exclude": ["Angular", "React"],
@@ -823,6 +823,12 @@
         "name": "Summaries",
         "href": "grids/tree-grid/summaries.md",
         "status": ""
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "Toolbar",
+        "href": "grids/tree-grid/toolbar.md",
+        "status": "NEW"
       },
       {
         "exclude": ["Angular"],
