@@ -52,7 +52,7 @@ _language: ja
 
 {Platform} 棒チャート (棒グラフ) は、さまざまなカテゴリのデータの頻度、カウント、合計、または平均を、同じ幅と異なる長さの水平棒でエンコードされたデータとすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。これらは、時間の経過に伴う項目の価値の変動、データ分布、ソートされたデータのランキング (高から低、最悪から最高) を表示するのに理想的です。データは、チャートの左から右にデータ ポイントの値に向かって伸びる長方形のコレクションを使用して表されます。[棒チャート](types/bar-chart.md)の詳細をご覧ください。
 
-`sample="/charts/data-chart/bar-chart-multiple-sources", height="600", alt="{Platform} 複数ソースの棒チャート"`
+`sample="/charts/data-chart/bar-chart-multiple-sources", img-src="https://static.infragistics.com/marketing/Website/products/Ignite-UI-for-Angular/ignite-ui-angular-bar-chart", height="600", alt="{Platform} 複数ソースの棒チャート"`
 
 
 
