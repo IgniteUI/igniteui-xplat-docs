@@ -9,9 +9,16 @@ namespace: Infragistics.Controls
 
 # Theme {Platform} Grid
 With the {Platform} Theming css, the {ProductName} Grid can be easily customized to match your brand identity.
-In addition to predefined themes and palettes, you can further customize the look and feel of your data grid by using a set of CSS custom properties.
+In addition to predefined themes and palettes, you can further customize the look and feel of your data grid by using an alternate set of CSS custom properties.
 
 `sample="/grids/grid/overview-dark", height="500", alt="{Platform} Grid Dark Theme Example"`
+
+
+<!-- Blazor -->
+<head>
+    <link href="_content/IgniteUI.Blazor/themes/grid/dark/bootstrap.css" rel="stylesheet" />
+</head>
+<!-- end: Blazor -->
 
 ## Additional Resources
 
