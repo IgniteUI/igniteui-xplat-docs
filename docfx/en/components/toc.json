@@ -700,16 +700,16 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Editing",
         "href": "grids/tree-grid/editing.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Export to Excel",
         "href": "grids/tree-grid/export-excel.md",
-        "status": ""
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
@@ -820,10 +820,10 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "Summaries",
         "href": "grids/tree-grid/summaries.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "exclude": ["Angular"],
