@@ -356,6 +356,11 @@
         "exclude": ["Angular"],
         "name": "Virtualization and performance",
         "href": "grids/grid/virtualization.md"
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "Theming",
+        "href": "grids/theming-grid.md"
       }
     ]
   },
