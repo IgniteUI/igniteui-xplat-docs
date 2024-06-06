@@ -819,10 +819,10 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "Summaries",
         "href": "grids/tree-grid/summaries.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "exclude": ["Angular"],
