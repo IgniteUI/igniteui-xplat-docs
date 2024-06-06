@@ -683,9 +683,10 @@
         "status": ["NEW_REACT"]
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Column Selection",
-        "href": "grids/tree-grid/column-selection.md"
+        "href": "grids/tree-grid/column-selection.md",
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular", "React"],
@@ -694,16 +695,16 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Editing",
         "href": "grids/tree-grid/editing.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Export to Excel",
         "href": "grids/tree-grid/export-excel.md",
-        "status": ""
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
@@ -724,7 +725,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Multi-Column Headers",
         "href": "grids/tree-grid/multi-column-headers.md",
         "status": ""
@@ -790,10 +791,10 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "Selection",
         "href": "grids/tree-grid/selection.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "exclude": ["Angular", "React"],
@@ -814,10 +815,16 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "Summaries",
         "href": "grids/tree-grid/summaries.md",
-        "status": ""
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "Toolbar",
+        "href": "grids/tree-grid/toolbar.md",
+        "status": "NEW"
       },
       {
         "exclude": ["Angular"],
