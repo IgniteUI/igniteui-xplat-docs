@@ -110,7 +110,7 @@ Let's start by creating our `{ComponentName}` and binding it to our data. We wil
     <IgbColumn Field="ID" Sortable=true Hidden=true></IgbColumn>
     <IgbColumn Field="Title" Sortable=true></IgbColumn>
     <IgbColumn Field="HireDate" Sortable=true></IgbColumn>
-    <IgbColumn Field="Age"  Sortable=true></IgbColumn>
+    <IgbColumn Field="Age" Sortable=true></IgbColumn>
     <IgbColumn Field="Address" Sortable=true></IgbColumn>
     <IgbColumn Field="City" Sortable=true></IgbColumn>
     <IgbColumn Field="Country" Sortable=true></IgbColumn>
@@ -960,7 +960,7 @@ In order to achieve that, we will use a class that we will first assign to the g
 ```
 
 ```razor
-<{ComponentSelector} id="treeGrid"></{ComponentSelector}>
+<{ComponentSelector} Id="treeGrid"></{ComponentSelector}>
 ```
 
 ```tsx
