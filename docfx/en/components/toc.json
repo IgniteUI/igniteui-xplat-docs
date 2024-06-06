@@ -717,7 +717,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Filtering",
         "href": "grids/tree-grid/filtering.md",
         "status": ""
@@ -783,10 +783,10 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "Row Selection",
         "href": "grids/tree-grid/row-selection.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "exclude": ["Angular"],
@@ -1254,6 +1254,11 @@
         {
           "name": "Chart Data Aggregations",
           "href": "charts/features/chart-data-aggregations.md"
+        },
+        {
+          "name": "Chart Data Filtering",
+          "href": "charts/features/chart-data-filtering.md",
+          "status": "NEW"
         },
         {
           "name": "Chart Data Legend",
