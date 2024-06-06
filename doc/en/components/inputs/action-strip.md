@@ -153,7 +153,7 @@ The `Action Strip` component exposes `action-strip` CSS part that allows us to s
 
 ```css
 igc-action-strip {
-  --ig-action-strip-background: #005eec;
+  --ig-action-strip-background: rgba(236, 236, 236, 0.4);
 }
 ```
 
@@ -161,7 +161,7 @@ Also, the `Action Strip Actions's` provide `action-strip-actions` CSS part that 
 
 ```css
 igc-action-strip {
-  --ig-action-strip-actions-background: #005eec;
+  --ig-action-strip-actions-background: rgba(255, 255, 255, 0.8);
 }
 ```
 
