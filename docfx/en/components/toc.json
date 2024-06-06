@@ -811,7 +811,7 @@
         "exclude": ["Angular"],
         "name": "Sorting",
         "href": "grids/tree-grid/sorting.md",
-        "status": ""
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
