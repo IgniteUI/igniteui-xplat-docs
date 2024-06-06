@@ -1,7 +1,7 @@
 ---
 title: {Platform} Text Area | Data Visualization Tools | Infragistics
-_description: Infragistics' {Platform} Text Area is a component where the user can enter a sizeable amount of free-form text. Improve your application with {ProductName}!
-_keywords: {Platform} input, {ProductName}, Infragistics
+_description: Infragistics' {Platform} Text Area is a component where the user can enter a sizeable amount of free-form text.
+_keywords: {ProductName}, UI controls, {Platform} widgets, Web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Input, {Platform} Textarea components, {Platform} Textarea controls
 mentionedTypes: ['Input', 'Icon', 'Textarea', 'Toast']
 ---
 # {Platform} Text Area Overview
@@ -18,13 +18,11 @@ The {ProductName} Text Area represents a multi-line plain-text editing control, 
 
 <!-- end:React, WebComponents, Blazor -->
 
-
 ## Dependencies
 
 To get started with the Text Area component, you first need to register its module.
 
 <!-- Blazor -->
-
 
 ```razor
 // in Program.cs file
@@ -39,7 +37,6 @@ You will also need to link an additional CSS file to apply the styling to the `T
 ```
 
 <!-- end: Blazor -->
-
 <!-- WebComponents -->
 
 To get started we need to import the `Textarea` in our typescript file and register the component by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
@@ -142,17 +139,13 @@ igc-textarea::part(suffix) {
 
 `sample="/inputs/textarea/styling", height="150", alt="{Platform} Text Area Styling"`
 
-
-
 <div class="divider"></div>
-
 
 ## API References
 
  - `Icon`
  - `Textarea`
-- `Toast`
-
+ - `Toast`
 
 ## Additional Resources
 

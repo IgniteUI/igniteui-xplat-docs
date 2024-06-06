@@ -1744,7 +1744,8 @@
   {
     "exclude": ["Angular"],
     "name": "Text Area",
-    "href": "inputs/text-area.md"
+    "href": "inputs/text-area.md",
+    "status": "NEW"
   },
   {
     "name": "Interactions",
