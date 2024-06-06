@@ -152,6 +152,8 @@ public webGridExportEventFreezeHeaders(args: CustomEvent<IgcExporterEvent>): voi
 <!-- ComponentEnd: HierarchicalGrid -->
 <!-- end: WebComponents -->
 
+<!-- React -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 function exportEventFreezeHeaders(grid: IgrGridBaseDirective, args: IgrExporterEvent) {
     args.detail.options.freezeHeaders = true;
@@ -163,23 +165,10 @@ function exportEventFreezeHeaders(grid: IgrGridBaseDirective, args: IgrExporterE
   </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
-
-<!-- React -->
-<!-- ComponentStart: HierarchicalGrid -->
-```tsx
-function exportEventFreezeHeaders(sender: IgrGridToolbarExporter, args: IgrExporterEventEventArgs) {
-    args.detail.options.freezeHeaders = true;
-}
-
-<IgrGridToolbar>
-  <IgrGridToolbarActions>
-    <IgrGridToolbarExporter exportStarted={exportEventFreezeHeaders}></IgrGridToolbarExporter>
-  </IgrGridToolbarActions>
-</IgrGridToolbar>
-```
-<!-- ComponentEnd: HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: React -->
 
+<!-- ComponentStart: Grid, TreeGrid -->
 ```razor
  <{ComponentSelector}>
     <IgbGridToolbar>
@@ -195,6 +184,8 @@ igRegisterScript("WebGridExportEventFreezeHeaders", (ev) => {
     ev.detail.options.freezeHeaders = false;
 }, false);
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
+
 <!-- Blazor -->
 <!-- ComponentStart: HierarchicalGrid -->
 ```razor
@@ -214,25 +205,6 @@ igRegisterScript("WebHierarchicalGridExportEventFreezeHeaders", (ev) => {
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 <!-- end: Blazor -->
-
-<!-- ComponentStart: TreeGrid -->
-```razor
- <{ComponentSelector}>
-    <IgbGridToolbar>
-      <IgbGridToolbarActions>
-        <IgbGridToolbarExporter
-          ExportExcel="true" ExportStartedScript="WebGridExportEventMultiColumnHeaders">
-        </IgbGridToolbarExporter>
-      </IgbGridToolbarActions>
-    </IgbGridToolbar>
- </{ComponentSelector}>
-
-igRegisterScript("WebGridExportEventMultiColumnHeaders", (ev) => {
-    ev.detail.options.ignoreMultiColumnHeaders = false;
-}, false);
-```
-<!-- ComponentEnd: TreeGrid -->
-
 
 <!-- Angular -->
 ## Customizing the Exported Content
