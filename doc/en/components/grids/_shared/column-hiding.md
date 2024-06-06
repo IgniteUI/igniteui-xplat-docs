@@ -90,60 +90,64 @@ Let's start by creating our `{ComponentName}` and binding it to our data. We wil
 <!-- ComponentStart: TreeGrid -->
 ```html
 <igx-tree-grid #grid id="treeGrid" [data]="data" [autoGenerate]="false" width="100%" height="560px" [allowFiltering]="true">
-    <igx-column [field]="'ID'" dataType="string" [sortable]="true" [hidden]="true"></igx-column>
-    <igx-column [field]="'ContactName'" dataType="string" [sortable]="true" [hidden]="true"></igx-column>
-    <igx-column [field]="'ContactTitle'" dataType="string" [sortable]="true"></igx-column>
-    <igx-column [field]="'City'" dataType="string" [sortable]="true"></igx-column>
-    <igx-column [field]="'CompanyName'" dataType="string" [sortable]="true"></igx-column>
-    <igx-column [field]="'Fax'" dataType="string" [sortable]="true"></igx-column>
+    <igx-column [field]="'Name'" dataType="string" [sortable]="true" [hidden]="true"></igx-column>
+    <igx-column [field]="'ID'" dataType="number" [sortable]="true" [hidden]="true"></igx-column>
+    <igx-column [field]="'Title'" dataType="string" [sortable]="true"></igx-column>
+    <igx-column [field]="'HireDate'" dataType="date" [sortable]="true"></igx-column>
+    <igx-column [field]="'Age'" dataType="number" [sortable]="true"></igx-column>
     <igx-column [field]="'Address'" dataType="string" [sortable]="true"></igx-column>
-    <igx-column [field]="'PostalCode'" dataType="string" [sortable]="true"></igx-column>
+    <igx-column [field]="'City'" dataType="string" [sortable]="true"></igx-column>
     <igx-column [field]="'Country'" dataType="string" [sortable]="true"></igx-column>
+    <igx-column [field]="'Fax'" dataType="string" [sortable]="true"></igx-column>
+    <igx-column [field]="'PostalCode'" dataType="string" [sortable]="true"></igx-column>
     <igx-column [field]="'Phone'" dataType="string" [sortable]="true"></igx-column>
 </igx-tree-grid>
 ```
 
 ```razor
 <{ComponentSelector} Data=northwindEmployees AutoGenerate=false Width="100%" Height="100%" AllowFiltering=true>
+    <IgbColumn Field="Name" Sortable=true Hidden=true></IgbColumn>
     <IgbColumn Field="ID" Sortable=true Hidden=true></IgbColumn>
-    <IgbColumn Field="ContactName" Sortable=true Hidden=true></IgbColumn>
-    <IgbColumn Field="ContactTitle" Sortable=true></IgbColumn>
-    <IgbColumn Field="City"  Sortable=true></IgbColumn>
-    <IgbColumn Field="CompanyName" Sortable=true></IgbColumn>
-    <IgbColumn Field="Fax" Sortable=true></IgbColumn>
+    <IgbColumn Field="Title" Sortable=true></IgbColumn>
+    <IgbColumn Field="HireDate" Sortable=true></IgbColumn>
+    <IgbColumn Field="Age"  Sortable=true></IgbColumn>
     <IgbColumn Field="Address" Sortable=true></IgbColumn>
-    <IgbColumn Field="PostalCode" Sortable=true></IgbColumn>
+    <IgbColumn Field="City" Sortable=true></IgbColumn>
     <IgbColumn Field="Country" Sortable=true></IgbColumn>
+    <IgbColumn Field="Fax" Sortable=true></IgbColumn>
+    <IgbColumn Field="PostalCode" Sortable=true></IgbColumn>
     <IgbColumn Field="Phone" Sortable=true></IgbColumn>
 </{ComponentSelector}>
 ```
 
 ```html
 <igc-tree-grid id="treeGrid" auto-generate="false" width="100%" height="560px" allow-filtering="true">
-    <igc-column field="ID" data-type="String" sortable="true" hidden="true"></igc-column>
-    <igc-column field="ContactName" data-type="String" sortable="true" hidden="true"></igc-column>
-    <igc-column field="ContactTitle" data-type="String" sortable="true"></igc-column>
-    <igc-column field="City" data-type="String" sortable="true"></igc-column>
-    <igc-column field="CompanyName" data-type="String" sortable="true"></igc-column>
-    <igc-column field="Fax" data-type="String" sortable="true"></igc-column>
-    <igc-column field="Address" data-type="String" sortable="true"></igc-column>
-    <igc-column field="PostalCode" data-type="String" sortable="true"></igc-column>
-    <igc-column field="Country" data-type="String" sortable="true"></igc-column>
-    <igc-column field="Phone" data-type="String" sortable="true"></igc-column>
+    <igc-column field="Name" data-type="string" sortable="true" hidden="true"></igc-column>
+    <igc-column field="ID" data-type="number" sortable="true" hidden="true"></igc-column>
+    <igc-column field="Title" data-type="string" sortable="true"></igc-column>
+    <igc-column field="HireDate" data-type="date" sortable="true"></igc-column>
+    <igc-column field="Age" data-type="number" sortable="true"></igc-column>
+    <igc-column field="Address" data-type="string" sortable="true"></igc-column>
+    <igc-column field="City" data-type="string" sortable="true"></igc-column>
+    <igc-column field="Country" data-type="string" sortable="true"></igc-column>
+    <igc-column field="Fax" data-type="string" sortable="true"></igc-column>
+    <igc-column field="PostalCode" data-type="string" sortable="true"></igc-column>
+    <igc-column field="Phone" data-type="string" sortable="true"></igc-column>
 </igc-tree-grid>
 ```
 
 ```tsx
 <IgrTreeGrid autoGenerate="false" width="100%" height="560px" allowFiltering="true">
-    <IgrColumn field="ID" dataType="string" sortable="true" hidden="true"></IgrColumn>
-    <IgrColumn field="ContactName" dataType="String" sortable="true" hidden="true"></IgrColumn>
-    <IgrColumn field="ContactTitle" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="City" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="CompanyName" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="Fax" dataType="string" sortable="true"></IgrColumn>
+    <IgrColumn field="Name" dataType="string" sortable="true" hidden="true"></IgrColumn>
+    <IgrColumn field="ID" dataType="number" sortable="true" hidden="true"></IgrColumn>
+    <IgrColumn field="Title" dataType="string" sortable="true"></IgrColumn>
+    <IgrColumn field="HireDate" dataType="date" sortable="true"></IgrColumn>
+    <IgrColumn field="Age" dataType="number" sortable="true"></IgrColumn>
     <IgrColumn field="Address" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="PostalCode" dataType="string" sortable="true"></IgrColumn>
+    <IgrColumn field="City" dataType="string" sortable="true"></IgrColumn>
     <IgrColumn field="Country" dataType="string" sortable="true"></IgrColumn>
+    <IgrColumn field="Fax" dataType="string" sortable="true"></IgrColumn>
+    <IgrColumn field="PostalCode" dataType="string" sortable="true"></IgrColumn>
     <IgrColumn field="Phone" dataType="string" sortable="true"></IgrColumn>
 </IgrTreeGrid>
 ```
@@ -707,29 +711,29 @@ We can easily prevent the user from being able to hide columns through the colum
 <!-- ComponentStart: TreeGrid -->
 ```html
 <igx-tree-grid>
-    <igx-column [field]="'ContactName'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
-    <igx-column [field]="'ContactTitle'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
+    <igx-column [field]="'Name'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
+    <igx-column [field]="'Title'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
 </igx-grid>
 ```
 
 ```html
 <igc-tree-grid>
-    <igc-column field="ContactName" data-type="String" sortable="true" disable-hiding="true"></igc-column>
-    <igc-column field="ContactTitle" data-type="String" sortable="true" disable-hiding="true"></igc-column>
+    <igc-column field="Name" data-type="string" sortable="true" disable-hiding="true"></igc-column>
+    <igc-column field="Title" data-type="string" sortable="true" disable-hiding="true"></igc-column>
 </igc-tree-grid>
 ```
 
 ```tsx
 <IgrTreeGrid>
-    <IgrColumn field="ContactName" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
-    <IgrColumn field="ContactTitle" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
+    <IgrColumn field="Name" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
+    <IgrColumn field="Title" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
 </IgrTreeGrid>
 ```
 
 ```razor
 <{ComponentSelector} Data=northwindEmployees AutoGenerate=false>
-    <IgbColumn Field="ContactName" Sortable=true DisableHiding=true></IgbColumn>
-    <IgbColumn Field="ContactTitle" Sortable=true DisableHiding=true></IgbColumn>
+    <IgbColumn Field="Name" Sortable=true DisableHiding=true></IgbColumn>
+    <IgbColumn Field="Title" Sortable=true DisableHiding=true></IgbColumn>
 </{ComponentSelector}>
 ```
 <!-- ComponentEnd: TreeGrid -->
@@ -952,15 +956,15 @@ In order to achieve that, we will use a class that we will first assign to the g
 
 <!-- ComponentStart: TreeGrid -->
 ```html
-<{ComponentSelector} class="tree-grid"></{ComponentSelector}>
+<{ComponentSelector} id="treeGrid"></{ComponentSelector}>
 ```
 
 ```razor
-<{ComponentSelector} class="tree-grid"></{ComponentSelector}>
+<{ComponentSelector} id="treeGrid"></{ComponentSelector}>
 ```
 
 ```tsx
-<{ComponentSelector} className="tree-grid"></{ComponentSelector}>
+<{ComponentSelector} id="treeGrid"></{ComponentSelector}>
 ```
 <!-- ComponentEnd: TreeGrid -->
 
