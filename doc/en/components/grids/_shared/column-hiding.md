@@ -729,7 +729,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 <!-- Blazor, WebComponents, React -->
 ## Styling
 
-The grid could be further customized by setting some of the available [CSS variables](../theming.md).
+The grid could be further customized by setting some of the available [CSS variables](../theming-grid.md).
 In order to achieve that, we will use a class that we will first assign to the grid:
 
 <!-- ComponentStart: Grid, TreeGrid -->
