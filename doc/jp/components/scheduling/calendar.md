@@ -252,7 +252,7 @@ this.calendar.disabledDates = [{ type: DateRangeType.Between, dateRange: range }
 
 ### 特定の日付
 
-`SpecialDates` プロパティは、`DisabledDates` とほぼ同じ構成原則を使用しています。特別な日付は強調表示されたルック アンド フィールを持ち、無効な日付とは異なり、選択することができます。
+`SpecialDates` プロパティは、`DisabledDates` とほぼ同じ構成原則を使用しています。特別な日付はハイライト表示されたルック アンド フィールを持ち、無効な日付とは異なり、選択することができます。
 
 Calendar に特別な日付を追加しましょう。これを行うために、`DateRangeDescriptor` を作成し、現在の月の 3 日から 8 日までの日付を渡します。
 
