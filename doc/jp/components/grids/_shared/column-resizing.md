@@ -114,7 +114,7 @@ public onResize(event) {
 ```
 
 ```tsx
-function onResize(grid: IgrGridBaseDirective, event: IgrColumnMovingEventArgs) {
+function onResize(grid: IgrGridBaseDirective, event: IgrColumnResizeEventArgs) {
   IgrColumn col = event.detail.column;
   string pWidth = event.detail.prevWidth;
   string nWidth = event.detail.newWidth;
@@ -152,15 +152,26 @@ constructor() {
     treeGrid.data = this.data;
     treeGrid.columnResized = this.onResize;
 }
-```
-<!-- end: WebComponents -->
 
-```typescript
 public onResize(event) {
     this.col = event.column;
     this.pWidth = event.prevWidth;
     this.nWidth = event.newWidth;
 }
+```
+<!-- end: WebComponents -->
+
+```tsx
+function onResize(grid: IgrGridBaseDirective, event: IgrColumnResizeEventArgs) {
+  IgrColumn col = event.detail.column;
+  string pWidth = event.detail.prevWidth;
+  string nWidth = event.detail.newWidth;
+}
+
+<{ComponentSelector} data={data} autoGenerate="false" primaryKey="ID" foreignKey="ParentID" columnResized={onResize}>
+    <IgrColumn field="Title" width="100px" resizable="true"></IgrColumn>
+    <IgrColumn field="HireDate" width="100px" resizable="true"></IgrColumn>
+</{ComponentSelector}>
 ```
 
 ```razor
@@ -215,7 +226,7 @@ public onResize(event) {
 <!-- end: WebComponents -->
 
 ```tsx
-function onResize(grid: IgrGridBaseDirective, event: IgrColumnMovingEventArgs) {
+function onResize(grid: IgrGridBaseDirective, event: IgrColumnResizeEventArgs) {
   IgrColumn col = event.detail.column;
   string pWidth = event.detail.prevWidth;
   string nWidth = event.detail.newWidth;
@@ -308,6 +319,14 @@ function onResize(grid: IgrGridBaseDirective, event: IgrColumnMovingEventArgs) {
     <igc-column field="HireDate" resizable="true" width="100px"></igc-column>
     <igc-column field="Age" data-type="Number" resizable="true"></igc-column>
 </igc-tree-grid>
+```
+
+```tsx
+<{ComponentSelector} data={data} autoGenerate="false" primaryKey="ID" foreignKey="ParentID" columnResized={onResize}>
+    <IgrColumn field="Title" resizable="true" width="10%"></IgrColumn>
+    <IgrColumn field="HireDate" resizable="true" width="100px"></IgrColumn>
+    <IgrColumn field="Age" dataType="number" resizable="true"></IgrColumn>
+</{ComponentSelector}>
 ```
 
 <!-- ComponentEnd: TreeGrid -->
@@ -528,8 +547,8 @@ constructor() {
 ```
 
 ```tsx
-    const column = grid.getColumnByName('ID');
-    column.autosize();
+const column = grid.getColumnByName('ID');
+column.autosize();
 ```
 
 ```razor
@@ -751,7 +770,6 @@ $custom-grid-theme: grid-theme(
 
 ## その他のリソース
 
-<!-- ComponentStart:  Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
@@ -760,7 +778,6 @@ $custom-grid-theme: grid-theme(
 * [列の移動](column-moving.md)
 * [列のピン固定](column-pinning.md)
 * [選択](selection.md)
-<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
