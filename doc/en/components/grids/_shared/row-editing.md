@@ -166,6 +166,7 @@ constructor() {
     grid.data = this.data;
 }
 ```
+<!-- end: WebComponents -->
 
 ```tsx
 <{ComponentSelector} primaryKey="ID" width="100%" height="500px" rowEditable="true">
@@ -177,19 +178,13 @@ constructor() {
 ```
 
 ```razor
- <{ComponentSelector} Width="100%"  
-             Height="100%"
-             PrimaryKey="ID"
-             AutoGenerate="false"
-             Data="data"
-             RowEditable="true">
+ <{ComponentSelector} Width="100%" Height="100%" PrimaryKey="ID" AutoGenerate="false" Data="data" RowEditable="true">
         <IgbColumn Field="Name" Header="Name" DataType="GridColumnDataType.String"></IgbColumn>
         <IgbColumn Field="Age" Header="Age" DataType="GridColumnDataType.Number"></IgbColumn>
         <IgbColumn Field="Title" Header="Title" DataType="GridColumnDataType.String"></IgbColumn>
         <IgbColumn Field="HireDate" Header="Hire Date" DataType="GridColumnDataType.Date"></IgbColumn>
-    </{ComponentSelector}>
+</{ComponentSelector}>
 ```
-<!-- end: WebComponents -->
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
