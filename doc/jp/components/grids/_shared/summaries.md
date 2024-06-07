@@ -395,7 +395,7 @@ function disableSummary() {
 <button onClick={enableSummary}>Enable Summary</button>
 <button onClick={disableSummary}>Disable Summary </button>
 ```
-<!-- ComponentEnd: HierarchicalGrid --><!-- ComponentEnd: HierarchicalGrid -->
+<!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- ComponentStart: TreeGrid -->
 <!-- Angular -->
