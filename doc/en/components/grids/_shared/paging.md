@@ -34,7 +34,7 @@ The following example represents `{ComponentName}` pagination and exposes the op
 <!-- end: Angular -->
 
 ```razor
-<{ComponentSelector} @ref=grid Width="100%" Height="500px" Data=marketData DisplayDensity="DisplayDensity.Cosy">
+<{ComponentSelector} @ref=grid Width="100%" Height="500px" Data=Data DisplayDensity="DisplayDensity.Cosy">
     <IgbPaginator PerPage="10"></IgbPaginator>
 </{ComponentSelector}>
 ```
@@ -102,12 +102,13 @@ The `Paginator` component is used along with the `{ComponentName}` component in 
 <!-- end: Angular -->
 
 ```razor
-<{ComponentSelector} @ref=grid Data=marketData DisplayDensity="DisplayDensity.Compact">
+<{ComponentSelector} @ref=grid Data=Data DisplayDensity="DisplayDensity.Compact">
     <IgbPaginator Page="grid.Page" TotalRecords="grid.TotalRecords" PerPage="10" DisplayDensity="grid.DisplayDensity">
     </IgbPaginator>
 </{ComponentSelector}>
 ```
 
+<!-- WebComponents -->
 ```html
 <{ComponentSelector} id="grid">
     <igc-paginator id="paginator" per-page="10">
@@ -117,7 +118,7 @@ The `Paginator` component is used along with the `{ComponentName}` component in 
 
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var grid = this.grid = document.getElementById('grid') as {ComponentName};
     var paginator = this.paginator = document.getElementById('paginator') as IgcPaginatorComponent;
     const selectOptions = [5, 15, 20, 50];
     grid.data = this.data;
@@ -127,6 +128,7 @@ constructor() {
     paginator.displayDensity = grid.displayDensity;
 }
 ```
+<!-- end: WebComponents -->
 
 ```tsx
 const selectOptions = [5, 15, 20, 50];
@@ -395,7 +397,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ## Additional Resources
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart:  Grid, TreeGrid -->
 
 <!-- * [Paginator](../paginator.md) -->
 * [Virtualization and Performance](virtualization.md)
@@ -406,7 +408,8 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-<!-- ComponentEnd:  Grid -->
+
+<!-- ComponentEnd:  Grid, TreeGrid -->
 
 Our community is active and always welcoming to new ideas.
 

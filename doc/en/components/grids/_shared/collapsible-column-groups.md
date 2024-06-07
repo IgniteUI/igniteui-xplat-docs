@@ -226,7 +226,7 @@ public indTemplate = (ctx: IgcColumnTemplateContext) => {
 function collapsibleIndicatorTemplate(e: { dataContext: IgrColumnTemplateContext }) {
     return (
     <div>
-      <IgrIcon iconName={e.dataContext.column.expanded ? 'remove' : 'add'}></IgrIcon>
+        <IgrIcon iconName={e.dataContext.column.expanded ? 'remove' : 'add'}></IgrIcon>
     </div>)
 }
 ```

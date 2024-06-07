@@ -257,6 +257,80 @@ Performance value is the primary measure displayed by the component and it is vi
 
 `sample="/gauges/bullet-graph/measures", height="125", alt="{Platform} bullet graph measures"`
 
+## Highlight Value
+
+The bullet graph's performance value can be further modified to show progress represented as a highlighted value. This will make the `Value` appear with a lower opacity. A good example is if `Value` is 50 and  `HighlightValue` is set to 25. This would represent a performance of 50% regardless of what the value of `TargetValue` is set to. To enable this first set `HighlightValueDisplayMode` to Overlay and then apply a `HighlightValue` to something lower than `Value`.
+
+```html
+<igx-bullet-graph
+    #bulletGraph
+    height="80px" 
+    width="400px"
+    value=70 
+    targetValue=90
+    minimumValue=0 
+    maximumValue=100 
+    interval=10
+    labelInterval=10
+    labelExtent=0.025
+    labelsPreTerminal=0
+    labelsPostInitial=0
+    highlightValueDisplayMode="Overlay"
+    highlightValue=25>
+  </igx-bullet-graph>
+```
+
+```tsx
+<IgrBulletGraph
+    height="80px"
+    width="100%"
+    value={70} 
+    targetValue={90}
+    interval={10}
+    minimumValue={0} 
+    maximumValue={100} 
+    labelInterval={10}
+    labelExtent={0.025}
+    labelsPreTerminal={0}
+    labelsPostInitial={0}
+    highlightValueDisplayMode="Overlay"
+    highlightValue={25} />
+```
+
+```html
+<igc-bullet-graph
+    id="gauge"
+    height="80px"
+    width="100%"
+    minimum-value="0" 
+    maximum-value="100"
+    value="70" 
+    interval="10"
+    target-value="90"
+    label-interval="10"
+    label-extent="0.025"
+    labels-pre-terminal="0"
+    labels-post-initial="0"
+    highlight-value-display-mode="Overlay"
+    highlight-value="25" >
+</igc-bullet-graph>
+```
+
+```razor
+<IgbBulletGraph Height="80px" Width="100%"
+    MinimumValue="0" 
+    Value="70"
+    TargetValue="90"
+    Interval="10"
+    MaximumValue="100" 
+    LabelInterval="10"
+    LabelExtent="0.025"
+    HighlightValueDisplayMode="HighlightedValueDisplayMode.Overlay"
+    HighlightValue=25>
+</IgbBulletGraph>
+```
+
+`sample="/gauges/bullet-graph/highlight-needle", height="125", alt="{Platform} bullet graph highlight needle"`
 
 ## Comparative Ranges
 The ranges are visual elements that highlight a specified range of values on a scale. Their purpose is to visually communicate the qualitative state of the performance bar measure, illustrating at the same time the degree to which it resides within that state.

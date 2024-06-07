@@ -24,7 +24,7 @@ _language: ja
 
 ### 依存関係
 
-{Platform} ツリー グリッドを初期化するには、{ProductName} パッケージをインストールする必要があります。
+{Platform} ツリー グリッドを初期化するには、<!-- Blazor -->{PackageCommon} パッケージ<!-- end: Blazor --><!-- WebComponents -->`{PackageGrids}` パッケージ<!-- end: WebComponents --><!-- React -->`{PackageCommon}` と `{PackageGrids}` パッケージ<!-- end: React -->をインストールする必要があります。
 
 <!-- Blazor -->
 
@@ -49,13 +49,18 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 
 <!-- Angular, React, WebComponents -->
 
-{Platform} ツリー グリッドのパッケージをインストールするときは、core パッケージもインストールする必要があります。
-
+<!-- Angular, WebComponents -->
 ```cmd
-npm install --save {PackageCore}
 npm install --save {PackageGrids}
-npm install --save {PackageInputs}
 ```
+<!-- end: Angular, WebComponents -->
+
+<!-- React -->
+```cmd
+npm install --save {PackageCommon}
+npm install --save {PackageGrids}
+```
+<!-- end: React -->
 
 <!-- WebComponents -->
 
