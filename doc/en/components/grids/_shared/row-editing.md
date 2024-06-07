@@ -43,7 +43,7 @@ export class AppModule {}
 
 Define a `{ComponentName}` with bound data source and `RowEditable` set to true:
 
-<!-- ComponentStart: Grid, TreeGrid -->
+<!-- ComponentStart: Grid -->
 <!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [primaryKey]="'ProductID'" width="100%" height="500px" [rowEditable]="true">
@@ -136,7 +136,61 @@ function unitsInStockCellTemplate(ctx: IgrCellTemplateContext) {
         }
     }
 ```
-<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+<!-- Angular -->
+```html
+<{ComponentSelector} [data]="data" [primaryKey]="'ID'" width="100%" height="500px" [rowEditable]="true">
+    <igx-column field="Name" header="Name" [dataType]="'string'"></igx-column>
+    <igx-column field="Age" header="Reorder Level" [dataType]="'number'"></igx-column>
+    <igx-column field="Title" header="Title" [dataType]="'string'">
+    <igx-column field="HireDate" header="Hire Date" [dataType]="'date'"></igx-column>
+</{ComponentSelector}>
+```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" primary-key="ID" width="100%" height="500px" row-editable="true">
+    <igc-column field="Name" header="Name" data-type="string"></igc-column>
+    <igc-column field="Age" header="Age" data-type="number"></igc-column>
+    <igc-column field="Title" header="Title" data-type="string"></igc-column>
+    <igc-column field="HireDate" field="Hire Date" data-type="date"></igc-column>
+</{ComponentSelector}>
+```
+
+```ts
+constructor() {
+    var grid  = document.getElementById('grid') as {ComponentName}Component;
+    grid.data = this.data;
+}
+```
+
+```tsx
+<{ComponentSelector} primaryKey="ID" width="100%" height="500px" rowEditable="true">
+    <IgrColumn field="Name" header="Name" dataType="string"></IgrColumn>
+    <IgrColumn field="Age" header="Age" dataType="number"></IgrColumn>
+    <IgrColumn field="Title" header="Title" dataType="string"></IgrColumn>
+    <IgrColumn field="HireDate" header="Hire Date" dataType="date"></IgrColumn>
+</{ComponentSelector}>
+```
+
+```razor
+ <{ComponentSelector} Width="100%"  
+             Height="100%"
+             PrimaryKey="ID"
+             AutoGenerate="false"
+             Data="data"
+             RowEditable="true">
+        <IgbColumn Field="Name" Header="Name" DataType="GridColumnDataType.String"></IgbColumn>
+        <IgbColumn Field="Age" Header="Age" DataType="GridColumnDataType.Number"></IgbColumn>
+        <IgbColumn Field="Title" Header="Title" DataType="GridColumnDataType.String"></IgbColumn>
+        <IgbColumn Field="HireDate" Header="Hire Date" DataType="GridColumnDataType.Date"></IgbColumn>
+    </{ComponentSelector}>
+```
+<!-- end: WebComponents -->
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 <!-- Angular -->
