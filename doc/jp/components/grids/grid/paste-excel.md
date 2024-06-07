@@ -33,7 +33,7 @@ _language: ja
 ## 使用方法
 
 
-最初にグリッドの `rendered` イベントにバインドして、テキスト領域要素を作成して管理します。
+最初にグリッドの `rendered` イベントにバインドして、テキスト エリア要素を作成して管理します。
 
 ```tsx
 <IgrGrid autoGenerate="false" data={this.invoicesData} rendered={this.webGridPasteFromExcel} ref={this.gridRef} id="grid" primaryKey="OrderID">
