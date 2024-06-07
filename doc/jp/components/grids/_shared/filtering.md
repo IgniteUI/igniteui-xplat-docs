@@ -60,23 +60,19 @@ _language: ja
 </{ComponentSelector}>
 ```
 
-<!-- WebComponents -->
 ```html
 <{ComponentSelector} id="grid1" auto-generate="false" allow-filtering="true">
     <igc-column field="ProductName" data-type="string"></igc-column>
     <igc-column field="Price" data-type="number" filterable="false"></igc-column>
-<{ComponentSelector}>
+</{ComponentSelector}>
 ```
-<!-- end: WebComponents -->
 
-<!-- React -->
 ```tsx
 <{ComponentSelector} data={this.nwindData} autoGenerate="false" ref={this.gridRef} allowFiltering="true">
     <IgrColumn field="ProductName" dataType="String"></IgrColumn>
     <IgrColumn field="UnitPrice" data-type="Number" filterable="false"></IgrColumn>
 </{ComponentSelector}>
 ```
-<!-- end: React -->
 
 [高度なフィルタリング](advanced-filtering.md) を有効にするには、`AllowAdvancedFiltering` 入力プロパティを **true** に設定します。
 
@@ -580,20 +576,16 @@ constructor() {
 <!-- grid-custom-filtering.component.html -->
 
 <igc-hierarchical-grid auto-generate="false" allow-filtering="true">
-    <igc-column id="Artist" field="Artist" filterable='true' data-type="string" [filters]="caseSensitiveFilteringOperand"></igc-column>
-    <igc-column id="HasGrammyAward" field="HasGrammyAward" filterable='true' data-type="boolean" [filters]="booleanFilteringOperand"></igc-column>
+    <igc-column id="Artist" field="Artist" filterable='true' data-type="string"></igc-column>
+    <igc-column id="HasGrammyAward" field="HasGrammyAward" filterable='true' data-type="boolean"></igc-column>
 </igc-hierarchical-grid>
 ```
 ```ts
 constructor() {
-    var artist = this.artist = document.getElementById('Artist') as IgcColumnComponent;
-    var hasGrammyAward = this.hasGrammyAward = document.getElementById('HasGrammyAward') as IgcColumnComponent;
-
-    this._bind = () => {
-        artist.bodyTemplate = this.caseSensitiveFilteringOperand;
-        hasGrammyAward.bodyTemplate = this.booleanFilteringOperand;
-    }
-    this._bind();
+    var artist = document.getElementById('Artist') as IgcColumnComponent;
+    var hasGrammyAward = document.getElementById('HasGrammyAward') as IgcColumnComponent;
+    artist.filters = this.caseSensitiveFilteringOperand;
+    hasGrammyAward.filters = this.booleanFilteringOperand;
 }
 ```
 
@@ -651,18 +643,18 @@ public matchingRecordsOnlyStrategy = new TreeGridMatchingRecordsOnlyFilteringStr
 一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
 <!-- WebComponents -->
-```ts
+```html
 <{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
 
 ```razor
-<{ComponentSelector} Class="grid"></ComponentSelector>
+<{ComponentSelector} Class="grid"></{ComponentSelector}>
 ```
 
 <!-- React -->
 ```tsx
-<IgrGrid className="grid"></IgrGrid>
+<{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
 <!-- end: React -->
 

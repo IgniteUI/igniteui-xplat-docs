@@ -469,7 +469,9 @@
             { "name": "{PackageVerChanges-23-2}",    "value": "23.2.97 (December 2023)"},
             { "name": "{PackageVerChanges-23-2-JAN}","value": "23.2.110 (January 2024)"},
             { "name": "{PackageVerChanges-23-2-MAR}", "value": "23.2.189 (March 2024)"  },
-            { "name": "{PackageVerLatest}",          "value": "23.2.189"},
+            { "name": "{PackageVerChanges-23-2-APR}", "value": "23.2.191 (April 2024)"  },
+            { "name": "{PackageVerChanges-23-2-APR2}", "value": "23.2.204"  },
+            { "name": "{PackageVerLatest}",          "value": "23.2.204"},
 
             { "name": "{RepoSamples}",   "value": "https://github.com/IgniteUI/igniteui-blazor-examples/tree/master/samples"},
             { "name": "{RepoBrowser}",   "value": "https://github.com/IgniteUI/igniteui-blazor-examples/tree/master/browser"},

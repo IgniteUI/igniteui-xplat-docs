@@ -2848,10 +2848,10 @@ ieee754@^1.2.1:
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
   integrity sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==
 
-igniteui-docfx-template@3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/igniteui-docfx-template/-/igniteui-docfx-template-3.6.0.tgz#3407fc99d6c98015ec96185b8094e6ea0a2eb16b"
-  integrity sha512-VZhV3QI1iJaW/AGcKuPeGZ/fLKQlpTAB05Q+pZ9j5nvzBdBcrx67Hdc2K0d6NchNWBYSnwnWD/62CcpyQTWkiQ==
+igniteui-docfx-template@3.7.5:
+  version "3.7.5"
+  resolved "https://registry.yarnpkg.com/igniteui-docfx-template/-/igniteui-docfx-template-3.7.5.tgz#764f5f0db630110a891719b79da4e85d96dfee27"
+  integrity sha512-0wJY0C6+7JQ25i9huWEyrm6cZH3odhDZIzTnTdskL/iYHZbLS3ajdBNGf4j7DaKeWmjSTq2lykDwwiY6rsUixQ==
   dependencies:
     "@stackblitz/sdk" "^1.5.3"
     anchor-js "^4.3.0"
