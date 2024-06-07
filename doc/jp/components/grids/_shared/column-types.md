@@ -525,7 +525,7 @@ public editCellTemplate = (ctx: IgcCellTemplateContext) => {
 ```
 
 ```tsx
-function editCellTemplate(ctx: IgrCellTemplateContext) {
+function editCellTemplate(ctx: { dataContext: IgrCellTemplateContext }) {
     return (
         <>
             <input></input>
@@ -625,4 +625,3 @@ public init(column: IgxColumnComponent) {
 カスタム テンプレートについては、[セル編集トピック](cell-editing.md#セル編集テンプレート)を参照してください。
 * [編集](editing.md)
 * [集計](summaries.md)
-
