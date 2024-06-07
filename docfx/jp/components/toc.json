@@ -641,7 +641,7 @@
         "href": "grids/tree-grid/clipboard-interactions.md"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "縮小可能な列グループ",
         "href": "grids/tree-grid/collapsible-column-groups.md"
       },
@@ -1006,7 +1006,7 @@
         "href": "grids/data-grid/row-grouping.md"
       },
       {
-        "name": "行の強調表示",
+        "name": "行のハイライト表示",
         "href": "grids/data-grid/row-highlighting.md",
         "status": ""
       },
@@ -1270,12 +1270,12 @@
           "status": "UPDATED"
         },
         {
-          "name": "チャートの強調表示フィルター",
+          "name": "チャートのハイライト表示フィルター",
           "href": "charts/features/chart-highlight-filter.md",
           "status": "UPDATED"
         },
         {
-          "name": "チャート強調表示",
+          "name": "チャートのハイライト表示",
           "href": "charts/features/chart-highlighting.md",
           "status": ""
         },
@@ -2017,7 +2017,7 @@
       },
       {
         "exclude": ["Angular"],
-        "name": "行の強調表示",
+        "name": "行のハイライト表示",
         "href": "grids/data-grid/row-highlighting.md",
         "status": ""
       },
