@@ -74,7 +74,9 @@ _language: ja
 </{ComponentSelector}>
 ```
 
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 [高度なフィルタリング](advanced-filtering.md) を有効にするには、`AllowAdvancedFiltering` 入力プロパティを **true** に設定します。
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
 <!-- Angular -->
 ```html
@@ -126,6 +128,7 @@ _language: ja
 </{ComponentSelector}>
 ```
 <!-- end: Angular -->
+
 <!-- WebComponents -->
 ```html
 <{ComponentSelector} auto-generate="false" allow-filtering="true">
@@ -145,7 +148,6 @@ _language: ja
 </{ComponentSelector}>
 ```
 <!-- end: React -->
-
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -368,6 +370,8 @@ this.grid.filteringLogic = FilteringLogic.OR;
 
 <!-- React -->
 ```tsx
+import { FilteringLogic } from "igniteui-react-grids";
+
 <{ComponentName} filteringLogic={FilteringLogic.Or}></{ComponentName}>
 ```
 <!-- end: React -->
@@ -801,7 +805,7 @@ $dark-button: button-theme(
 
 テーマ エンジンを使用して[スキーマ](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
 
-すべてのコンポーネントに提供されている定義済みスキーマ (この場合は (`light-grid`、`light-input-group` および `light-button` スキーマ) の 1 つを拡張します。
+すべてのコンポーネントに提供されている定義済みスキーマ (この場合は `light-grid`、`light-input-group` および `light-button` スキーマ) の 1 つを拡張します。
 
 ```scss
 // Extending the light grid schema
