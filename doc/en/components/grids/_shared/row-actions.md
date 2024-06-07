@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # Row Actions in {Platform} {ComponentTitle}
 
-The {ProductName} Row Actions feature in {Platform} {ComponentTitle} enables developers to use an `АctionStrip` and utilize CRUD for row/cell components and row pinning. There are several predefined UI controls for these operations that are applicable to a specific row in the `{ComponentName}` – editing and pinning.
+The {ProductName} Row Actions feature in {Platform} {ComponentTitle} enables developers to use an `ActionStrip` and utilize CRUD for row/cell components and row pinning. There are several predefined UI controls for these operations that are applicable to a specific row in the `{ComponentName}` – editing and pinning.
 
 ## Usage
 
@@ -130,7 +130,7 @@ They are added inside the `{ComponentName}` and this is all needed to have an `A
 <!-- end: WebComponents -->
 
 <!-- React -->
-<!-- ComponentStart: Grid, TreeGrid -->
+<!-- ComponentStart: Grid -->
 ```tsx
 <{ComponentSelector} id="grid" rowEditable="true" primaryKey="ID">
     <IgrColumn field="field">
@@ -141,7 +141,20 @@ They are added inside the `{ComponentName}` and this is all needed to have an `A
     </IgrActionStrip>
 </{ComponentSelector}>
 ```
-<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```tsx
+<{ComponentSelector} id="treeGrid" rowEditable="true" primaryKey="ID">
+    <IgrColumn field="field">
+    </IgrColumn>
+    <IgrActionStrip name="actionStrip">
+        <IgrGridPinningActions></IgrGridPinningActions>
+        <IgrGridEditingActions></IgrGridEditingActions>
+    </IgrActionStrip>
+</{ComponentSelector}>
+```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 ```tsx
@@ -160,11 +173,9 @@ They are added inside the `{ComponentName}` and this is all needed to have an `A
 > [!Note]
 > When `ActionStripComponent` is a child component of the `{ComponentName}`, hovering a row will automatically show the UI.
 
-<!-- Angular, Blazor -->
-
 ## Custom Implementation
 
-These components expose templates giving flexibility for customization. For instance, if we would like to use the `ActionStripComponent` for a Gmail scenario with row actions such as **delete**, **edit** and etc. You can simply create button component with icon, add click event to it and insert it into the `ActionStripComponent`.
+These components expose templates giving flexibility for customization. For instance, if we would like to use the `ActionStrip` for a Gmail scenario with row actions such as **delete**, **edit** and etc. You can simply create button component with icon, add click event to it and insert it into the `ActionStrip`.
 
 
 ```html
@@ -222,8 +233,6 @@ These components expose templates giving flexibility for customization. For inst
 </div>
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
-<!-- end: Angular, Blazor -->
-
 
 <!-- WebComponents -->
 <!-- ComponentStart: Grid, TreeGrid -->
@@ -274,7 +283,6 @@ These components expose templates giving flexibility for customization. For inst
 <!-- end: React -->
 
 `sample="/{ComponentSample}/action-strip", height="600", alt="{Platform} {ComponentTitle} Action Strip Example"`
-
 
 
 <!-- Angular -->
