@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # Row Actions in {Platform} {ComponentTitle}
 
-The {ProductName} Row Actions feature in {Platform} {ComponentTitle} enables developers to use an `АctionStrip` and utilize CRUD for row/cell components and row pinning. There are several predefined UI controls for these operations that are applicable to a specific row in the `{ComponentName}` – editing and pinning.
+The {ProductName} Row Actions feature in {Platform} {ComponentTitle} enables developers to use an `ActionStrip` and utilize CRUD for row/cell components and row pinning. There are several predefined UI controls for these operations that are applicable to a specific row in the `{ComponentName}` – editing and pinning.
 
 ## Usage
 
@@ -175,7 +175,7 @@ They are added inside the `{ComponentName}` and this is all needed to have an `A
 
 ## Custom Implementation
 
-These components expose templates giving flexibility for customization. For instance, if we would like to use the `ActionStripComponent` for a Gmail scenario with row actions such as **delete**, **edit** and etc. You can simply create button component with icon, add click event to it and insert it into the `ActionStripComponent`.
+These components expose templates giving flexibility for customization. For instance, if we would like to use the `ActionStrip` for a Gmail scenario with row actions such as **delete**, **edit** and etc. You can simply create button component with icon, add click event to it and insert it into the `ActionStrip`.
 
 
 ```html
