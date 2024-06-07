@@ -19,11 +19,11 @@ _language: ja
 
 ツールバーと事前定義された UI コンポーネントは、{Platform} イベントをサポートし、開発者向けに API を公開します。
 
-<!-- ComponentStart: Grid -->
+<!-- ComponentStart: Grid, TreeGrid -->
 ## {Platform} ツールバー グリッドの例
 
 `sample="/{ComponentSample}/toolbar-sample-1", height="420", alt="{Platform} {ComponentTitle} ツールバーの例"`
-<!-- ComponentEnd: Grid -->
+<!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 <!-- Angular, WebComponents -->
@@ -98,6 +98,7 @@ _language: ja
 ```
 <!-- ComponentEnd: Grid -->
 
+<!-- Angular -->
 <!-- ComponentStart: TreeGrid -->
 ```html
 <igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" [autoGenerate]="true">
@@ -112,6 +113,11 @@ _language: ja
     </igx-grid-toolbar>
 </igx-tree-grid>
 ```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+<!-- ComponentStart: TreeGrid -->
 ```html
 <igc-tree-grid id="treeGrid" primary-key="ID" foreign-key="ParentID" auto-generate="true">
     <igc-grid-toolbar>
@@ -126,6 +132,48 @@ _language: ja
 </igc-tree-grid>
 ```
 <!-- ComponentEnd: TreeGrid -->
+<!-- end: WebComponents -->
+
+<!-- React -->
+<!-- ComponentStart: TreeGrid -->
+```tsx
+<IgrTreeGrid data={data} primaryKey="ID" foreignKey="ParentID" autoGenerate="true">
+    <IgrGridToolbar key="toolbar">
+        <IgrGridToolbarTitle key="toolbarTitle">
+            <span key="toolbarTitleText">Tree Grid Toolbar<span>
+        </IgrGridToolbarTitle>
+        <IgrGridToolbarActions key="toolbarActions">
+            <IgrGridToolbarAdvancedFiltering key="advancedFiltering"></IgrGridToolbarAdvancedFiltering>
+            <IgrGridToolbarPinning key="pinning"></IgrGridToolbarPinning>
+            <IgrGridToolbarHiding key="hiding"></IgrGridToolbarHiding>
+            <IgrGridToolbarExporter key="export"></IgrGridToolbarExporter>
+        </IgrGridToolbarActions>
+    </IgrGridToolbar>
+</IgrTreeGrid>
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: React -->
+
+<!-- Blazor -->
+<!-- ComponentStart: TreeGrid -->
+```razor
+<IgbTreeGrid Data="Data" PrimaryKey="ID" ForeignKey="ParentID" AutoGenerate="true">
+    <IgbGridToolbar>
+        <IgbGridToolbarActions>
+            <IgbGridToolbarAdvancedFiltering>
+            </IgbGridToolbarAdvancedFiltering>
+            <IgbGridToolbarHiding>
+            </IgbGridToolbarHiding>
+            <IgbGridToolbarPinning>
+            </IgbGridToolbarPinning>
+            <IgbGridToolbarExporter>
+            </IgbGridToolbarExporter>
+        </IgbGridToolbarActions>
+    </IgbGridToolbar>
+</IgbTreeGrid>
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: Blazor -->
 
 <!-- Angular -->
 <!-- ComponentStart: HierarchicalGrid -->
@@ -235,6 +283,7 @@ _language: ja
 ```
 <!-- ComponentEnd: Grid -->
 
+<!-- Angular -->
 <!-- ComponentStart: TreeGrid -->
 ```html
 <igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" [autoGenerate]="true">
@@ -242,6 +291,11 @@ _language: ja
     </igx-grid-toolbar>
 </igx-tree-grid>
 ```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+<!-- ComponentStart: TreeGrid -->
 ```html
 <igc-tree-grid primary-key="ID" foreign-key="ParentID" auto-generate="true">
     <igc-grid-toolbar>
@@ -249,6 +303,29 @@ _language: ja
 </igc-tree-grid>
 ```
 <!-- ComponentEnd: TreeGrid -->
+<!-- end: WebComponents -->
+
+<!-- React -->
+<!-- ComponentStart: TreeGrid -->
+```tsx
+<IgrTreeGrid data={data} primaryKey="ID" foreignKey="ParentID" autoGenerate="true">
+    <IgrGridToolbar key="toolbar">
+    </IgrGridToolbar>
+</IgrTreeGrid>
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: React -->
+
+<!-- Blazor -->
+<!-- ComponentStart: TreeGrid -->
+```razor
+<IgbTreeGrid Data="Data" PrimaryKey="ID" ForeignKey="ParentID" AutoGenerate="true">
+    <IgbGridToolbar>
+    </IgbGridToolbar>
+</IgbTreeGrid>
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: Blazor -->
 
 <!-- Angular -->
 <!-- ComponentStart: HierarchicalGrid -->
@@ -410,9 +487,9 @@ function rowIslandToolbarTemplate = () => {
 
 以下にリストされているのは、ツールバーの主な機能と、それぞれのサンプル コードです。
 
-<!-- ComponentStart: Grid -->
+<!-- ComponentStart: Grid, TreeGrid -->
 `sample="/{ComponentSample}/toolbar-sample-2", height="630", alt="{Platform} {ComponentTitle} ツールバー サンプル 2"`
-<!-- ComponentEnd: Grid -->
+<!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 <!-- Angular, WebComponents -->
@@ -428,27 +505,27 @@ function rowIslandToolbarTemplate = () => {
 ユーザーは、単純なテキストからより複雑なテンプレートまで、どんなものでも提供できます。
 
 <!-- Angular -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igx-grid-toolbar>
     <igx-grid-toolbar-title>Grid toolbar title</igx-grid-toolbar-title>
 </igx-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Angular -->
 
 <!-- WebComponents -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-title>Grid toolbar title</igc-grid-toolbar-title>
 </igc-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: WebComponents -->
 
 <!-- React -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 <IgrGridToolbar key="toolbar">
     <IgrGridToolbarTitle key="toolbarTitle">
@@ -456,17 +533,17 @@ function rowIslandToolbarTemplate = () => {
     </IgrGridToolbarTitle>
 </IgrGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: React -->
 
 <!-- Blazor -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
 <IgbGridToolbar>
     <IgbGridToolbarTitle>Grid toolbar title</IgbGridToolbarTitle>
 </IgbGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Blazor -->
 
 ### 操作
@@ -476,7 +553,7 @@ function rowIslandToolbarTemplate = () => {
 ツールバーのタイトル部分と同様に、ユーザーは、デフォルトのツールバー インタラクション コンポーネントを含め、そのテンプレート部分内にどんなものでも提供できます。
 
 <!-- Angular -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igx-grid-toolbar>
     <igx-grid-toolbar-actions>
@@ -486,11 +563,11 @@ function rowIslandToolbarTemplate = () => {
     </igx-grid-toolbar-actions>
 </igx-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Angular -->
 
 <!-- WebComponents -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
@@ -498,11 +575,11 @@ function rowIslandToolbarTemplate = () => {
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
 <IgbGridToolbar>
     <IgbGridToolbarActions>
@@ -510,11 +587,11 @@ function rowIslandToolbarTemplate = () => {
     </IgbGridToolbarActions>
 </IgbGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Blazor -->
 
 <!-- React -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 <IgrGridToolbar key="toolbar">
     <IgrGridToolbarActions key="toolbarActions">
@@ -522,7 +599,7 @@ function rowIslandToolbarTemplate = () => {
     </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: React -->
 
 <!-- Angular -->
@@ -588,7 +665,7 @@ constructor() {
 コンポーネントは、ツールバーを含む親グリッドと、コンポーネントのタイトル、コンポーネント入力のプレースホルダー、ドロップダウン自体の高さなど、UI をカスタマイズするためのいくつかの入力プロパティを使用して、そのまま動作します。
 
 <!-- Angular -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igx-grid-toolbar>
     <igx-grid-toolbar-actions>
@@ -601,11 +678,11 @@ constructor() {
     </igx-grid-toolbar-actions>
 </igx-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Angular -->
 
 <!-- WebComponents -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
@@ -617,11 +694,11 @@ constructor() {
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
 <IgbGridToolbar>
     <IgbGridToolbarActions>
@@ -629,11 +706,11 @@ constructor() {
     </IgbGridToolbarActions>
 </IgbGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Blazor -->
 
 <!-- React -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 <IgrGridToolbar key="toolbar">
     <IgrGridToolbarActions key="toolbarActions">
@@ -641,7 +718,7 @@ constructor() {
     </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: React -->
 
 ### 列の非表示
@@ -649,7 +726,7 @@ constructor() {
 `GridToolbarHiding` は、列非表示を操作するためのデフォルトの UI を提供します。コンポーネントのタイトル、コンポーネント入力のプレースホルダー、ドロップダウン自体の高さなど、UI をカスタマイズするための同じ入力プロパティを公開します。
 
 <!-- Angular -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igx-grid-toolbar>
     <igx-grid-toolbar-actions>
@@ -662,11 +739,11 @@ constructor() {
     </igx-grid-toolbar-actions>
 </igx-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Angular -->
 
 <!-- WebComponents -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
@@ -678,11 +755,11 @@ constructor() {
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
 <IgbGridToolbar>
     <IgbGridToolbarActions>
@@ -690,11 +767,11 @@ constructor() {
     </IgbGridToolbarActions>
 </IgbGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Blazor -->
 
 <!-- React -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 <IgrGridToolbar key="toolbar">
     <IgrGridToolbarActions key="toolbarActions">
@@ -702,7 +779,7 @@ constructor() {
     </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: React -->
 
 ### 高度なフィルタリング
@@ -710,7 +787,7 @@ constructor() {
 ツールバーの高度なフィルタリング コンポーネントは、高度なフィルタリング機能のデフォルトの UI を提供します。コンポーネントは、ボタンのデフォルトのテキストを変更する方法を公開します。
 
 <!-- Angular -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igx-grid-toolbar>
     <igx-grid-toolbar-actions>
@@ -718,11 +795,11 @@ constructor() {
     </igx-grid-toolbar-actions>
 </igx-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Angular -->
 
 <!-- WebComponents -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
@@ -730,11 +807,11 @@ constructor() {
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
 <IgbGridToolbar>
     <IgbGridToolbarActions>
@@ -742,11 +819,11 @@ constructor() {
     </IgbGridToolbarActions>
 </IgbGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Blazor -->
 
 <!-- React -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 <IgrGridToolbar key="toolbar">
     <IgrGridToolbarActions key="toolbarActions">
@@ -754,7 +831,7 @@ constructor() {
     </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: React -->
 
 ### データのエクスポート
@@ -798,7 +875,7 @@ export class AppModule { ... }
 これは、{Platform} テンプレートを介してカスタマイズできるいくつかのオプションを示すスニペットです。
 
 <!-- Angular -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igx-grid-toolbar>
     <igx-grid-toolbar-actions>
@@ -815,11 +892,11 @@ export class AppModule { ... }
     </igx-grid-toolbar-actions>
 </igx-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Angular -->
 
 <!-- WebComponents -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
@@ -828,11 +905,11 @@ export class AppModule { ... }
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
 <IgbGridToolbar>
     <IgbGridToolbarActions>
@@ -840,11 +917,11 @@ export class AppModule { ... }
     </IgbGridToolbarActions>
 </IgbGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Blazor -->
 
 <!-- React -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 <IgrGridToolbar key="toolbar">
     <IgrGridToolbarActions key="toolbarActions">
@@ -852,7 +929,7 @@ export class AppModule { ... }
     </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: React -->
 
 エクスポートされたファイル名を変更することに加えて、ユーザーは `ToolbarExporting` イベントを待機し、イベント プロパティのオプション エントリをカスタマイズすることで、エクスポーター オプションをさらに構成できます。
@@ -959,6 +1036,60 @@ igRegisterScript("WebGridToolbarExporting", (evt) => {
 
 <!-- ComponentEnd: Grid -->
 
+<!-- ComponentStart: TreeGrid -->
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="treeGrid"></{ComponentSelector}>
+```
+```ts
+constructor() {
+    var treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
+    treeGrid.addEventListener("toolbarExporting", this.configureExport);
+}
+
+public configureExport(evt: CustomEvent<IgcGridToolbarExportEventArgs>) {
+    const args = evt.detail;
+    const options: IgcExporterOptionsBase = args.options;
+    if (options) {
+        options.fileName = `Report_${new Date().toDateString()}`;
+        (args.exporter as any).columnExporting.subscribe((columnArgs: any) => {
+            columnArgs.cancel = columnArgs.header === 'Name';
+        });
+    }
+}
+```
+<!-- end: WebComponents -->
+
+```tsx
+function configureExport(evt: IgrGridToolbarExportEventArgs) {
+    const args = evt.detail;
+    const options: IgrExporterOptionsBase = args.options;
+
+    options.fileName = `Report_${new Date().toDateString()}`;
+    (args.exporter as any).columnExporting.subscribe((columnArgs: any) => {
+        columnArgs.cancel = columnArgs.header === 'Name';
+    });
+}
+
+<{ComponentSelector} toolbarExporting={configureExport}>
+</{ComponentSelector}>
+```
+
+```razor
+<{ComponentSelector} ToolbarExportingScript="ConfigureExport"></{ComponentSelector}>
+
+// In Javascript
+igRegisterScript("ConfigureExport", (evt) => {
+    const args = evt.detail;
+    const options = args.options;
+    options.fileName = `Report_${new Date().toDateString()}`;
+    args.exporter.columnExporting.subscribe((columnArgs) => {
+        columnArgs.cancel = columnArgs.header === 'Name';
+    });
+}, false);
+```
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
 
 <!-- WebComponents -->
@@ -1050,7 +1181,7 @@ igRegisterScript("ConfigureExport", (evt) => {
 サンプル スニペットは次のとおりです。
 
 <!-- Angular -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <{ComponentSelector} #gridRef>
     <igx-grid-toolbar>
@@ -1069,11 +1200,11 @@ igRegisterScript("ConfigureExport", (evt) => {
     </igx-grid-toolbar>
 </{ComponentSelector}>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Angular -->
 
 <!-- WebComponents -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <{ComponentSelector} id="grid">
     <igc-grid-toolbar>
@@ -1087,11 +1218,11 @@ igRegisterScript("ConfigureExport", (evt) => {
     </igc-grid-toolbar>
 </{ComponentSelector}>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: WebComponents -->
 
 <!-- React -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 <{ComponentSelector}>
     <IgrGridToolbar>
@@ -1107,11 +1238,11 @@ igRegisterScript("ConfigureExport", (evt) => {
     </IgrGridToolbar>
 </{ComponentSelector}>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: React -->
 
 <!-- Blazor -->
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
 <{ComponentSelector}>
     <IgbGridToolbar>
@@ -1125,7 +1256,7 @@ igRegisterScript("ConfigureExport", (evt) => {
     </IgbGridToolbar>
 </{ComponentSelector}>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Blazor -->
 
 以下のサンプルは、列ヘッダーをクリックして並べ替えセットをクリアするためのボタンをツールバーに追加する方法です。

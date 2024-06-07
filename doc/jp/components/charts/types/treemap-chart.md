@@ -2,7 +2,7 @@
 title: {Platform} ツリーマップ | データ可視化ツール | 方向 | レイアウト | データ バインディング | インフラジスティックス
 _description: インフラジスティックスの {Platform} ツリーマップ コントロールを使用して、複数のレベルをサポートするストリップ、長方形、およびスライスアンドダイス アルゴリズムのデータ ポイントの相対的なウェイトを表示します。{ProductName} ツリーマップについて説明します。
 _keywords: {Platform} Tree Map, Treemap, layout, orientation, {ProductName}, Infragistics, {Platform} ツリーマップ, ツリーマップ, レイアウト, 方向, インフラジスティックス
-mentionedTypes: ["Treemap", "TreemapOrientation", "TreemapLayoutType"]
+mentionedTypes: ["Treemap", "TreemapOrientation", "TreemapLayoutType", "TreemapHighlightingMode", "TreemapHighlightedValueDisplayMode"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -104,13 +104,13 @@ _language: ja
 
 ## {Platform} ツリーマップのパーセントベースのハイライト 
 
-`HighlightedItemsSource`: ハイライト表示された値を読み取るデータ ソースを指定します。null の場合、ハイライト表示された値は ItemsSource プロパティから読み取られます。
-`HighlightedValueMemberPath`: ハイライト表示された値が読み取られるデータ ソース内のプロパティの名前を指定します。
-`HighlightedValueOpacity`: ハイライト表示された値の背後にある通常の値の不透明度を制御します。
-`HighlightedValuesDisplayMode`: ハイライト表示された値を有効または無効にします。
- - Auto: ツリーマップによって、使用するモードが決まります。
- - Overlay: ツリーマップには、通常の値の上にハイライト表示された値が表示され、通常の値にはわずかに不透明度が適用されます。
- - Hidden: ツリーマップにはハイライト表示された値は表示されません。
+- `HighlightedItemsSource`: ハイライト表示された値を読み取るデータ ソースを指定します。null の場合、ハイライト表示された値は ItemsSource プロパティから読み取られます。
+- `HighlightedValueMemberPath`: ハイライト表示された値が読み取られるデータ ソース内のプロパティの名前を指定します。
+- `HighlightedValueOpacity`: ハイライト表示された値の背後にある通常の値の不透明度を制御します。
+- `HighlightedValuesDisplayMode`: ハイライト表示された値を有効または無効にします。
+    - Auto: ツリーマップによって、使用するモードが決まります。
+    - Overlay: ツリーマップには、通常の値の上にハイライト表示された値が表示され、通常の値にはわずかに不透明度が適用されます。
+    - Hidden: ツリーマップにはハイライト表示された値は表示されません。
 
 `sample="/charts/tree-map/highlighting-percent-based", height="600", alt="{Platform} ツリーマップのパーセントベースのハイライト"`
 
@@ -129,4 +129,6 @@ _language: ja
 
 - `Treemap`
 - `LayoutOrientation`
+- `HighlightedValuesDisplayMode`
+- `HighlightedValueMemberPath`
 - `LayoutType`

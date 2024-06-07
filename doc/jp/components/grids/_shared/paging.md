@@ -35,7 +35,7 @@ _language: ja
 <!-- end: Angular -->
 
 ```razor
-<{ComponentSelector} @ref=grid Width="100%" Height="500px" Data=marketData DisplayDensity="DisplayDensity.Cosy">
+<{ComponentSelector} @ref=grid Width="100%" Height="500px" Data=Data DisplayDensity="DisplayDensity.Cosy">
     <IgbPaginator PerPage="10"></IgbPaginator>
 </{ComponentSelector}>
 ```
@@ -103,12 +103,13 @@ _language: ja
 <!-- end: Angular -->
 
 ```razor
-<{ComponentSelector} @ref=grid Data=marketData DisplayDensity="DisplayDensity.Compact">
+<{ComponentSelector} @ref=grid Data=Data DisplayDensity="DisplayDensity.Compact">
     <IgbPaginator Page="grid.Page" TotalRecords="grid.TotalRecords" PerPage="10" DisplayDensity="grid.DisplayDensity">
     </IgbPaginator>
 </{ComponentSelector}>
 ```
 
+<!-- WebComponents -->
 ```html
 <{ComponentSelector} id="grid">
     <igc-paginator id="paginator" per-page="10">
@@ -118,7 +119,7 @@ _language: ja
 
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var grid = this.grid = document.getElementById('grid') as {ComponentName};
     var paginator = this.paginator = document.getElementById('paginator') as IgcPaginatorComponent;
     const selectOptions = [5, 15, 20, 50];
     grid.data = this.data;
@@ -128,6 +129,7 @@ constructor() {
     paginator.displayDensity = grid.displayDensity;
 }
 ```
+<!-- end: WebComponents -->
 
 ```tsx
 const selectOptions = [5, 15, 20, 50];
@@ -396,7 +398,7 @@ $dark-button: button-theme(
 
 ## その他のリソース
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart:  Grid, TreeGrid -->
 
 <!-- * [ページネーター](../paginator.md) -->
 * [仮想化とパフォーマンス](virtualization.md)
@@ -407,7 +409,8 @@ $dark-button: button-theme(
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
-<!-- ComponentEnd:  Grid -->
+
+<!-- ComponentEnd:  Grid, TreeGrid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
