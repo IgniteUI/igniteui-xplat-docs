@@ -2038,6 +2038,11 @@
         "name": "Row Pinning",
         "href": "grids/data-grid/row-pinning.md",
         "status": ""
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "Theming",
+        "href": "grids/theming.md"
       }
     ]
   },

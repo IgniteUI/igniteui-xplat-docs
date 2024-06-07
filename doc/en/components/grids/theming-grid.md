@@ -14,11 +14,11 @@ In addition to predefined themes and palettes, you can further customize the loo
 `sample="/grids/grid/overview-dark", height="500", alt="{Platform} Grid Dark Theme Example"`
 
 
-<!-- Blazor -->
+```razor
 <head>
     <link href="_content/IgniteUI.Blazor/themes/grid/dark/bootstrap.css" rel="stylesheet" />
 </head>
-<!-- end: Blazor -->
+```
 
 ## Additional Resources
 
