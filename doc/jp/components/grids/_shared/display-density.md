@@ -161,6 +161,57 @@ public ngOnInit() {
 }
 ```
 
+<!-- ComponentStart: TreeGrid -->
+```razor
+<div class="options vertical">
+    <IgbPropertyEditorPanel
+    DescriptionType="WebTreeGrid"
+    IsHorizontal="true"
+    IsWrappingEnabled="true"
+    Name="PropertyEditor"
+    @ref="propertyEditor">
+        <IgbPropertyEditorPropertyDescription
+        PropertyPath="DisplayDensity"
+        Name="DisplayDensityEditor"
+        @ref="displayDensityEditor">
+        </IgbPropertyEditorPropertyDescription>
+    </IgbPropertyEditorPanel>
+</div>
+```
+
+```html
+<div class="density-chooser">
+    <igc-property-editor-panel
+    description-type="WebTreeGrid"
+    is-horizontal="true"
+    is-wrapping-enabled="true"
+    name="PropertyEditor"
+    id="propertyEditor">
+        <igc-property-editor-property-description
+        property-path="DisplayDensity"
+        name="DisplayDensityEditor"
+        id="displayDensityEditor">
+        </igc-property-editor-property-description>
+    </igc-property-editor-panel>
+</div>
+```
+
+```tsx
+<IgrPropertyEditorPanel
+    ref={propertyEditorRef}
+    componentRenderer={renderer}
+    target={grid}
+    descriptionType="WebTreeGrid"
+    isHorizontal="true"
+    isWrappingEnabled="true">
+    <IgrPropertyEditorPropertyDescription
+        propertyPath="DisplayDensity"
+        name="DisplayDensityEditor">
+    </IgrPropertyEditorPropertyDescription>
+</IgrPropertyEditorPanel>
+```
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
 ```razor
 <div class="options vertical">
@@ -272,21 +323,6 @@ public ngOnInit() {
 
 ```razor
 <div class="container vertical">
-    <div class="options vertical">
-        <IgbPropertyEditorPanel
-        DescriptionType="WebGrid"
-        IsHorizontal="true"
-        IsWrappingEnabled="true"
-        Name="PropertyEditor"
-        @ref="propertyEditor">
-            <IgbPropertyEditorPropertyDescription
-            PropertyPath="DisplayDensity"
-            Name="DisplayDensityEditor"
-            @ref="displayDensityEditor">
-            </IgbPropertyEditorPropertyDescription>
-        </IgbPropertyEditorPanel>
-    </div>
-
     <div class="container vertical fill">
         <IgbGrid
         AutoGenerate="false"
@@ -446,20 +482,6 @@ public ngOnInit() {
 ```
 
 ```html
-<div class="density-chooser">
-    <igc-property-editor-panel
-    description-type="WebGrid"
-    is-horizontal="true"
-    is-wrapping-enabled="true"
-    name="PropertyEditor"
-    id="PropertyEditor">
-        <igc-property-editor-property-description
-        property-path="DisplayDensity"
-        name="DisplayDensityEditor"
-        id="displayDensityEditor">
-        </igc-property-editor-property-description>
-    </igc-property-editor-panel>
-</div>
 <igc-grid id="grid" width="100%" height="550px" allow-filtering="true">
     <igc-column-group  header="Customer Information">
     <igc-column field="CustomerName" header="Customer Name" data-type="String" sortable="true" has-summary="true">
@@ -507,6 +529,7 @@ public ngOnInit() {
     </igx-column-group>
 </igx-grid>
 ```
+
 ```tsx
 <IgrGrid autoGenerate="false" ref={gridRef} data={invoicesData} allowFiltering="true">
     <IgrColumn field="CustomerName" header="Customer Name" dataType="String" sortable="true" hasSummary="true">
@@ -550,7 +573,6 @@ public ngOnInit() {
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
-
 ```html
 <div class="density-chooser">
     <igx-buttongroup [values]="displayDensities" (selected)="selectDensity($event)"></igx-buttongroup>
@@ -635,21 +657,8 @@ public ngOnInit() {
     </IgbColumnGroup>
 </IgbTreeGrid>
 ```
+
 ```html
-<div class="density-chooser">
-    <igc-property-editor-panel
-    description-type="WebGrid"
-    is-horizontal="true"
-    is-wrapping-enabled="true"
-    name="PropertyEditor"
-    id="PropertyEditor">
-        <igc-property-editor-property-description
-        property-path="DisplayDensity"
-        name="DisplayDensityEditor"
-        id="displayDensityEditor">
-        </igc-property-editor-property-description>
-    </igc-property-editor-panel>
-</div>
 <igc-tree-grid id="grid" primary-key="ID" foreign-key="ParentID" width="100%"
     height="550px" allow-filtering="true">
     <igc-column field="Name" data-type="String" sortable="true" has-summary="true" width="200px"></igc-column>
@@ -688,10 +697,35 @@ public ngOnInit() {
     </igc-column-group>
 </igc-tree-grid>
 ```
+
+```tsx
+<IgrTreeGrid autoGenerate="false" ref={this.treeGridRef} id="treeGrid" data={this.employeesFlatDetails} primaryKey="ID" foreignKey="ParentID" allowFiltering="true">
+    <IgrColumn field="Name" dataType="String" sortable="true" hasSummary="true" width="200"></IgrColumn>
+    <IgrColumnGroup header="General Information">
+        <IgrColumn field="HireDate" dataType="Date" sortable="true" hasSummary="true"></IgrColumn>
+        <IgrColumnGroup header="Personal Details">
+            <IgrColumn field="ID" dataType="Number" filterable="false"></IgrColumn>
+            <IgrColumn field="Title" dataType="String" sortable="true" hasSummary="true"></IgrColumn>
+            <IgrColumn field="Age" dataType="Number" sortable="true" hasSummary="true" filterable="false"></IgrColumn>
+        </IgrColumnGroup>
+    </IgrColumnGroup>
+    <IgrColumnGroup header="Address Information">
+        <IgrColumnGroup header="Location">
+            <IgrColumn field="Country" dataType="String" sortable="true" hasSummary="true"></IgrColumn>
+            <IgrColumn field="City" dataType="String" sortable="true" hasSummary="true"></IgrColumn>
+            <IgrColumn field="Address" dataType="String" sortable="true" hasSummary="true"></IgrColumn>
+        </IgrColumnGroup>
+        <IgrColumnGroup header="Contact Information">
+            <IgrColumn field="Phone" dataType="String" sortable="true" hasSummary="true"></IgrColumn>
+            <IgrColumn field="Fax" dataType="String" sortable="true" hasSummary="true"></IgrColumn>
+            <IgrColumn field="PostalCode" dataType="String" sortable="true" hasSummary="true"></IgrColumn>
+        </IgrColumnGroup>
+    </IgrColumnGroup>
+</IgrTreeGrid>
+```
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
-
 ```html
 <div class="density-chooser">
     <igx-buttongroup [values]="displayDensities" (selected)="selectDensity($event)"></igx-buttongroup>
@@ -854,20 +888,6 @@ AllowFiltering="true">
 ```
 
 ```html
-<div class="density-chooser">
-    <igc-property-editor-panel
-    description-type="WebGrid"
-    is-horizontal="true"
-    is-wrapping-enabled="true"
-    name="PropertyEditor"
-    id="PropertyEditor">
-        <igc-property-editor-property-description
-        property-path="DisplayDensity"
-        name="DisplayDensityEditor"
-        id="displayDensityEditor">
-        </igc-property-editor-property-description>
-    </igc-property-editor-panel>
-</div>
 <igc-hierarchical-grid id="grid" height="600px" width="100%" allow-filtering="true">
     <igc-column field="CustomerID"></igc-column>
     <igc-column field="CompanyName"></igc-column>
@@ -984,6 +1004,7 @@ public get renderer(): ComponentRenderer {
 ```
 <!-- end: WebComponents -->
 
+<!-- Blazor -->
 ```razor
 @code {
     private Action BindElements { get; set; }
@@ -1001,7 +1022,9 @@ public get renderer(): ComponentRenderer {
     private {ComponentSelector} grid;
 }
 ```
+<!-- end: Blazor -->
 
+<!-- React -->
 ```tsx
 private propertyEditor: IgrPropertyEditorPanel
 private propertyEditorRef(r: IgrPropertyEditorPanel) {
@@ -1033,6 +1056,7 @@ private _componentRenderer: ComponentRenderer = null;
     return this._componentRenderer;
 }
 ```
+<!-- end: React -->
 
 `{ComponentName}` の行の高さを変更するその他のオプションに `RowHeight` プロパティがあります。このプロパティと `DisplayDensity` プションが `{ComponentName}` レイアウトにどのように動作に影響するかを以下で確認できます。
 
@@ -1083,8 +1107,8 @@ private _componentRenderer: ComponentRenderer = null;
 * `{ComponentName}`
 * `Column`
 
+<!-- ComponentStart: Grid -->
 ## その他のリソース
-<!-- ComponentStart:  Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [編集](editing.md)
 * [ページング](paging.md)
@@ -1095,8 +1119,7 @@ private _componentRenderer: ComponentRenderer = null;
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
 * [検索](search.md)
-<!-- ComponentEnd:  Grid -->
-
+<!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
