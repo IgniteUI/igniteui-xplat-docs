@@ -212,11 +212,19 @@ Finally, we will add a `toast`, displaying a message about the WiFi state. The r
 
 ## Styling
 
-The banner component exposes several CSS parts (`base`, `prefix`, and `actions`) to give you full control over its style.
+The banner component exposes several CSS parts (`base`, `spacer`, `message`, `illustration`, `content` and `actions`) to give you full control over its style.
 
 ```css
-igc-banner::part(base) {
+igc-banner::part(spacer) {
     background: #dedede;
+}
+
+igc-banner::part(illustration) {
+    color: #666666;
+}
+
+igc-banner::part(content) {
+    color: #151515;
 }
 ```
 
