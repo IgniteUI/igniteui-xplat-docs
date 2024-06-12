@@ -1645,7 +1645,7 @@
     "href": "inputs/button.md"
   },
   {
-    "exclude": ["Angular", "Blazor", "React"],
+    "exclude": ["Angular"],
     "name": "Button Group",
     "href": "inputs/button-group.md",
     "status": "NEW"
