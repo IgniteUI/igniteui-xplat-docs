@@ -24,6 +24,16 @@ The reduced opacity of the column and area series types is configurable by setti
 
 The part of the series shown by the highlight filter will be represented in the legend and tooltip layers of the chart separately. You can configure the title that this is given in the tooltip and legend by setting the `HighlightedTitleSuffix`. This will append the value that you provide to the end of the `Title` of the series.
 
+If the `DataLegend` or `DataToolTipLayer` is used then the highlighted series will appear grouped. This can be managed by setting the `HighlightedValuesDataLegendGroup` property on the series to categorize them appropriately.
+
+The following example demonstrates the usage of the data legend grouping and highlighting overlay feature within the `XamDataChart` control using the `HighlightedValuesDataLegendGroup`:
+
+`sample="/charts/data-chart/data-legend-grouping-and-highlighting", height="500", alt="{Platform} Data Legend Grouping Highlight Example"`
+
+The following example demonstrates the usage of the data legend grouping and highlighting overlay feature within the `XamDataChart` control using the `HighlightedValuesDataLegendGroup`:
+
+`sample="/charts/data-chart/data-tooltip-grouping-and-highlighting", height="500", alt="{Platform} Data Tooltip Grouping Highlight Example"`
+
 The following example demonstrates the usage of the data highlighting overlay feature within the `XamDataChart` control using the `HighlightedValueMemberPath`:
 
 `sample="/charts/data-chart/chart-highlight-filter", height="500", alt="{Platform} Highlight Filter Example"`
