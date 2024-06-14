@@ -338,7 +338,7 @@ The scale is visual element that highlights full range of values in the gauge wh
 ## Labels and Titles
 The radial gauge labels are visual elements displaying numeric values at a specified interval between values of the `MinimumValue` and `MaximumValue` properties. You can position labels by setting the `LabelExtent` property to a fraction, where 0 represents center of gauge and 1 represents outer extent of the gauge backing. Also, you can customize labels setting various styling properties such as `FontBrush` and `Font`.
 
-`TitleText` & `SubtitleText` properties are available and can be used to display both custom text for the needle. In addition, `TitleDisplaysValue` | `SubtitleDisplaysValue` will let you replace the custom text with the needle's value. So you can occupy custom text for the title but show the value via the subtitle and vice versa.
+`TitleText` and `SubtitleText` properties are available and can both be used to display custom text for the needle. In addition, `TitleDisplaysValue` and `SubtitleDisplaysValue` will let you replace the custom text with the needle's value. So you can occupy custom text for the title but show the value via the subtitle and vice versa.
 
 If the highlight needle is shown, as explained below, then custom text can be shown via  `HighlightLabelText`, otherwise `HighlightLabelDisplaysValue` can be enabled and display it's value.
 
