@@ -25,7 +25,7 @@ The {ProductName} has a built-in column hiding UI, which can be used through the
 
 Let's start by creating our `{ComponentName}` and binding it to our data. We will also enable both filtering and sorting for the columns.
 
-<!-- ComponentStart: Grid, TreeGrid -->
+<!-- ComponentStart: Grid -->
 ```html
 <igx-grid #grid id="grid" [data]="data" [autoGenerate]="false" width="100%" height="560px" [allowFiltering]="true">
     <igx-column [field]="'ID'" dataType="string" [sortable]="true" [hidden]="true"></igx-column>
@@ -85,7 +85,73 @@ Let's start by creating our `{ComponentName}` and binding it to our data. We wil
     <IgrColumn field="Phone" dataType="string" sortable="true"></IgrColumn>
 </IgrGrid>
 ```
-<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```html
+<igx-tree-grid #grid id="treeGrid" [data]="data" [autoGenerate]="false" width="100%" height="560px" [allowFiltering]="true">
+    <igx-column [field]="'Name'" dataType="string" [sortable]="true" [hidden]="true"></igx-column>
+    <igx-column [field]="'ID'" dataType="number" [sortable]="true" [hidden]="true"></igx-column>
+    <igx-column [field]="'Title'" dataType="string" [sortable]="true"></igx-column>
+    <igx-column [field]="'HireDate'" dataType="date" [sortable]="true"></igx-column>
+    <igx-column [field]="'Age'" dataType="number" [sortable]="true"></igx-column>
+    <igx-column [field]="'Address'" dataType="string" [sortable]="true"></igx-column>
+    <igx-column [field]="'City'" dataType="string" [sortable]="true"></igx-column>
+    <igx-column [field]="'Country'" dataType="string" [sortable]="true"></igx-column>
+    <igx-column [field]="'Fax'" dataType="string" [sortable]="true"></igx-column>
+    <igx-column [field]="'PostalCode'" dataType="string" [sortable]="true"></igx-column>
+    <igx-column [field]="'Phone'" dataType="string" [sortable]="true"></igx-column>
+</igx-tree-grid>
+```
+
+```razor
+<{ComponentSelector} Data=northwindEmployees AutoGenerate=false Width="100%" Height="100%" AllowFiltering=true>
+    <IgbColumn Field="Name" Sortable=true Hidden=true></IgbColumn>
+    <IgbColumn Field="ID" Sortable=true Hidden=true></IgbColumn>
+    <IgbColumn Field="Title" Sortable=true></IgbColumn>
+    <IgbColumn Field="HireDate" Sortable=true></IgbColumn>
+    <IgbColumn Field="Age" Sortable=true></IgbColumn>
+    <IgbColumn Field="Address" Sortable=true></IgbColumn>
+    <IgbColumn Field="City" Sortable=true></IgbColumn>
+    <IgbColumn Field="Country" Sortable=true></IgbColumn>
+    <IgbColumn Field="Fax" Sortable=true></IgbColumn>
+    <IgbColumn Field="PostalCode" Sortable=true></IgbColumn>
+    <IgbColumn Field="Phone" Sortable=true></IgbColumn>
+</{ComponentSelector}>
+```
+
+```html
+<igc-tree-grid id="treeGrid" auto-generate="false" width="100%" height="560px" allow-filtering="true">
+    <igc-column field="Name" data-type="string" sortable="true" hidden="true"></igc-column>
+    <igc-column field="ID" data-type="number" sortable="true" hidden="true"></igc-column>
+    <igc-column field="Title" data-type="string" sortable="true"></igc-column>
+    <igc-column field="HireDate" data-type="date" sortable="true"></igc-column>
+    <igc-column field="Age" data-type="number" sortable="true"></igc-column>
+    <igc-column field="Address" data-type="string" sortable="true"></igc-column>
+    <igc-column field="City" data-type="string" sortable="true"></igc-column>
+    <igc-column field="Country" data-type="string" sortable="true"></igc-column>
+    <igc-column field="Fax" data-type="string" sortable="true"></igc-column>
+    <igc-column field="PostalCode" data-type="string" sortable="true"></igc-column>
+    <igc-column field="Phone" data-type="string" sortable="true"></igc-column>
+</igc-tree-grid>
+```
+
+```tsx
+<IgrTreeGrid autoGenerate="false" width="100%" height="560px" allowFiltering="true">
+    <IgrColumn field="Name" dataType="string" sortable="true" hidden="true"></IgrColumn>
+    <IgrColumn field="ID" dataType="number" sortable="true" hidden="true"></IgrColumn>
+    <IgrColumn field="Title" dataType="string" sortable="true"></IgrColumn>
+    <IgrColumn field="HireDate" dataType="date" sortable="true"></IgrColumn>
+    <IgrColumn field="Age" dataType="number" sortable="true"></IgrColumn>
+    <IgrColumn field="Address" dataType="string" sortable="true"></IgrColumn>
+    <IgrColumn field="City" dataType="string" sortable="true"></IgrColumn>
+    <IgrColumn field="Country" dataType="string" sortable="true"></IgrColumn>
+    <IgrColumn field="Fax" dataType="string" sortable="true"></IgrColumn>
+    <IgrColumn field="PostalCode" dataType="string" sortable="true"></IgrColumn>
+    <IgrColumn field="Phone" dataType="string" sortable="true"></IgrColumn>
+</IgrTreeGrid>
+```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 ```html
@@ -139,7 +205,7 @@ The built-in Column Hiding UI is placed inside an `DropDown` in the `{ComponentN
 
 For this purpose all we have to do is set both the `GridToolbarActions` and the `GridToolbarHiding` inside of the `{ComponentName}`. We will also add a title to our toolbar by using the `GridToolbarTitle` and a custom style for our {ComponentTitle}'s wrapper.
 
-<!-- ComponentStart: Grid, TreeGrid -->
+<!-- ComponentStart: Grid -->
 ```html
 <igx-grid [data]="localdata">
     <igx-grid-toolbar>
@@ -179,7 +245,63 @@ For this purpose all we have to do is set both the `GridToolbarActions` and the 
     </IgrGridToolbar>
 </IgrGrid>
 ```
-<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentEnd: Grid -->
+
+<!-- Angular -->
+<!-- ComponentStart: TreeGrid -->
+```html
+<igx-tree-grid [data]="localdata">
+    <igx-grid-toolbar>
+        <igx-grid-toolbar-actions>
+            <igx-grid-toolbar-hiding></igx-grid-toolbar-hiding>
+        </igx-grid-toolbar-actions>
+    </igx-grid-toolbar>
+</igx-tree-grid>
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: Angular -->
+
+<!-- Blazor -->
+<!-- ComponentStart: TreeGrid -->
+```razor
+<{ComponentSelector} Data=northwindEmployees>
+    <IgbGridToolbar>
+        <IgbGridToolbarActions>
+            <IgbGridToolbarHiding></IgbGridToolbarHiding>
+        </IgbGridToolbarActions>
+    </IgbGridToolbar>
+</{ComponentSelector}>
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: Blazor -->
+
+<!-- Web Components -->
+<!-- ComponentStart: TreeGrid -->
+```html
+<igc-tree-grid>
+    <igc-grid-toolbar>
+        <igc-grid-toolbar-actions>
+            <igc-grid-toolbar-hiding></igc-grid-toolbar-hiding>
+        </igc-grid-toolbar-actions>
+    </igc-grid-toolbar>
+</igc-tree-grid>
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: Web Components -->
+
+<!-- React -->
+<!-- ComponentStart: TreeGrid -->
+```tsx
+<IgrTreeGrid>
+    <IgrGridToolbar key="toolbar">
+        <IgrGridToolbarActions key="toolbarActions">
+            <IgrGridToolbarHiding key="toolbarHiding"></IgrGridToolbarHiding>
+        </IgrGridToolbarActions>
+    </IgrGridToolbar>
+</IgrTreeGrid>
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: React -->
 
 <!-- Angular -->
 <!-- ComponentStart: HierarchicalGrid -->
@@ -242,7 +364,7 @@ The `{ComponentName}` provides us with some useful properties when it comes to u
 
 By using the `Title` property, we will set the title that is displayed inside the dropdown button in the toolbar.
 
-<!-- ComponentStart: Grid, TreeGrid -->
+<!-- ComponentStart: Grid -->
 ```html
 <igx-grid [data]="localdata">
     <igx-grid-toolbar>
@@ -282,7 +404,63 @@ By using the `Title` property, we will set the title that is displayed inside th
     </IgrGridToolbar>
 </IgrGrid>
 ```
-<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentEnd: Grid -->
+
+<!-- Angular -->
+<!-- ComponentStart: TreeGrid -->
+```html
+<igx-tree-grid [data]="localdata">
+    <igx-grid-toolbar>
+        <igx-grid-toolbar-actions>
+            <igx-grid-toolbar-hiding #hidingActionRef title="Column Hiding"></igx-grid-toolbar-hiding>
+        </igx-grid-toolbar-actions>
+    </igx-grid-toolbar>
+</igx-tree-grid>
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: Angular -->
+
+<!-- Blazor -->
+<!-- ComponentStart: TreeGrid -->
+```razor
+<{ComponentSelector} Data=northwindEmployees>
+    <IgbGridToolbar>
+        <IgbGridToolbarActions>
+            <IgbGridToolbarHiding @ref=HidingAction Title="Column Hiding"></IgbGridToolbarHiding>
+        </IgbGridToolbarActions>
+    </IgbGridToolbar>
+</{ComponentSelector}>
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: Blazor -->
+
+<!-- Web Components -->
+<!-- ComponentStart: TreeGrid -->
+```html
+<igc-tree-grid id="treeGrid">
+    <igc-grid-toolbar>
+        <igc-grid-toolbar-actions>
+            <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding"></igc-grid-toolbar-hiding>
+        </igc-grid-toolbar-actions>
+    </igc-grid-toolbar>
+</igc-tree-grid>
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: Web Components -->
+
+<!-- React -->
+<!-- ComponentStart: TreeGrid -->
+```tsx
+<IgrTreeGrid>
+    <IgrGridToolbar key="toolbar">
+        <IgrGridToolbarActions key="toolbarActions">
+            <IgrGridToolbarHiding key="toolbarHiding" title="Column Hiding"></IgrGridToolbarHiding>
+        </IgrGridToolbarActions>
+    </IgrGridToolbar>
+</IgrTreeGrid>
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: React -->
 
 <!-- Angular -->
 <!-- ComponentStart: HierarchicalGrid -->
@@ -500,7 +678,7 @@ Now all we have to do is bind the `Checked` property of both radio buttons respe
 ### Disable hiding of a column
 We can easily prevent the user from being able to hide columns through the column hiding UI by simply setting their `DisableHiding` property to true.
 
-<!-- ComponentStart: Grid, TreeGrid -->
+<!-- ComponentStart: Grid -->
 ```html
 <igx-grid>
     <igx-column [field]="'ContactName'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
@@ -528,7 +706,37 @@ We can easily prevent the user from being able to hide columns through the colum
     <IgbColumn Field="ContactTitle" Sortable=true DisableHiding=true></IgbColumn>
 </{ComponentSelector}>
 ```
-<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```html
+<igx-tree-grid>
+    <igx-column [field]="'Name'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
+    <igx-column [field]="'Title'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
+</igx-grid>
+```
+
+```html
+<igc-tree-grid>
+    <igc-column field="Name" data-type="string" sortable="true" disable-hiding="true"></igc-column>
+    <igc-column field="Title" data-type="string" sortable="true" disable-hiding="true"></igc-column>
+</igc-tree-grid>
+```
+
+```tsx
+<IgrTreeGrid>
+    <IgrColumn field="Name" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
+    <IgrColumn field="Title" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
+</IgrTreeGrid>
+```
+
+```razor
+<{ComponentSelector} Data=northwindEmployees AutoGenerate=false>
+    <IgbColumn Field="Name" Sortable=true DisableHiding=true></IgbColumn>
+    <IgbColumn Field="Title" Sortable=true DisableHiding=true></IgbColumn>
+</{ComponentSelector}>
+```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 ```html
@@ -732,7 +940,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 The grid could be further customized by setting some of the available [CSS variables](../theming.md).
 In order to achieve that, we will use a class that we will first assign to the grid:
 
-<!-- ComponentStart: Grid, TreeGrid -->
+<!-- ComponentStart: Grid -->
 ```html
 <{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
@@ -744,7 +952,21 @@ In order to achieve that, we will use a class that we will first assign to the g
 ```tsx
 <{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
-<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```html
+<{ComponentSelector} id="treeGrid"></{ComponentSelector}>
+```
+
+```razor
+<{ComponentSelector} Id="treeGrid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} id="treeGrid"></{ComponentSelector}>
+```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 ```html
@@ -762,7 +984,7 @@ In order to achieve that, we will use a class that we will first assign to the g
 
 Then set the related CSS variables for the related components. We will apply the styles also only on the `igx-column-actions`, so the rest of the grid is unaffected:
 
-<!-- ComponentStart: Grid, TreeGrid -->
+<!-- ComponentStart: Grid -->
 ```css
 .grid  igx-column-actions {
     /* Main Column Actions styles */
@@ -794,7 +1016,41 @@ Then set the related CSS variables for the related components. We will apply the
     --ig-button-disabled-foreground: #ffcd0f;
 }
 ```
-<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```css
+#treeGrid {
+    /* Main Column Actions styles */
+    --ig-column-actions-background-color: #292826;
+    --ig-column-actions-title-color: #ffcd0f;
+
+    /* Checkbox styles */
+    --ig-checkbox-tick-color: #292826;
+    --ig-checkbox-label-color: #ffcd0f;
+    --ig-checkbox-empty-color: #ffcd0f;
+    --ig-checkbox-fill-color: #ffcd0f;
+
+    /* Input styles */
+    --ig-input-group-idle-text-color: white;
+    --ig-input-group-filled-text-color: #ffcd0f;
+    --ig-input-group-focused-text-color: #ffcd0f;
+    --ig-input-group-focused-border-color: #ffcd0f;
+    --ig-input-group-focused-secondary-color: #ffcd0f;
+
+    /* Buttons styles */
+    --ig-button-foreground: #292826;
+    --ig-button-background: #ffcd0f;
+    --ig-button-hover-background: #404040;
+    --ig-button-hover-foreground: #ffcd0f;
+    --ig-button-focus-background: #ffcd0f;
+    --ig-button-focus-foreground: black;
+    --ig-button-focus-visible-background: #ffcd0f;
+    --ig-button-focus-visible-foreground: black;
+    --ig-button-disabled-foreground: #ffcd0f;
+}
+```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 ```css

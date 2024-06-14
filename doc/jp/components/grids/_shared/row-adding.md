@@ -140,6 +140,7 @@ export class AppModule {}
 <!-- end: Angular -->
 
 <!-- WebComponents -->
+<!-- ComponentStart: TreeGrid -->
 ```html
 <{ComponentSelector} id="treeGrid" primary-key="ID" foreign-key="ParentID" row-editable="true">
     <igc-column field="Name" data-type="String"></igc-column>
@@ -154,9 +155,11 @@ export class AppModule {}
     </igc-action-strip>
 </{ComponentSelector}>
 ```
+<!-- ComponentEnd: TreeGrid -->
 <!-- end: WebComponents -->
 
 <!-- React -->
+<!-- ComponentStart: TreeGrid -->
 ```tsx
 <{ComponentSelector} autoGenerate="false" primaryKey="ID" foreignKey="ParentID" rowEditable="true">
     <IgrColumn field="Name" header="Name" dataType="String"></IgrColumn>
@@ -169,8 +172,10 @@ export class AppModule {}
     </IgrActionStrip>
 </{ComponentSelector}>
 ```
+<!-- ComponentEnd: TreeGrid -->
 <!-- end: React -->
 
+<!-- ComponentStart: TreeGrid -->
 ```razor
 <{ComponentSelector} AutoGenerate="false" Id="treegrid" PrimaryKey="ID" ForeignKey="ParentID" RowEditable="true">
     <IgbColumn Field="Name" Header="Name" DataType="GridColumnDataType.String"></IgbColumn>
@@ -183,6 +188,7 @@ export class AppModule {}
     </IgbActionStrip>
 </{ComponentSelector}>
 ```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -626,23 +632,13 @@ this.grid.rowAddTextTemplate = (ctx: IgcGridEmptyTemplateContext) => {
 <!-- end: WebComponents -->
 
 <!-- React -->
-<!-- ComponentStart: Grid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 gridRef.current.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
     return ('Adding Row');
 }
 ```            
-<!-- ComponentEnd: Grid -->
-<!-- end: React -->
-
-<!-- React -->
-<!-- ComponentStart: HierarchicalGrid -->
-```tsx
-gridRef.current.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
-    return ('Adding Row');
-}
-```
-<!-- ComponentEnd: HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid-->
 <!-- end: React -->
 
 <!-- Blazor -->
