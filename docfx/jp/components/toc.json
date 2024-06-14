@@ -1211,7 +1211,7 @@
   {
     "name": "ツリーマップ",
     "href": "charts/types/treemap-chart.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
     "name": "チャート API",
@@ -1268,6 +1268,11 @@
           "name": "チャートのデータ ツールチップ",
           "href": "charts/features/chart-data-tooltip.md",
           "status": "UPDATED"
+        },
+        {
+          "name": "Chart Data Selection",
+          "href": "charts/features/chart-data-selection.md",
+          "status": "NEW"
         },
         {
           "name": "チャートの強調表示フィルター",
@@ -1612,12 +1617,12 @@
   {
     "name": "ブレッドグラフ",
     "href": "bullet-graph.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
     "name": "リニア ゲージ",
     "href": "linear-gauge.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
     "name": "ラジアル ゲージ",
