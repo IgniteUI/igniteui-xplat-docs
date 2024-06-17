@@ -309,6 +309,10 @@ Then set the related CSS properties for that class:
 <IgbTreeGrid Class="treeGrid"></IgbTreeGrid>
 ```
 
+```tsx
+<IgrTreeGrid className="treeGrid"></IgrTreeGrid>
+```
+
 Then set the related CSS properties for that class:
 
 ```css
