@@ -25,6 +25,16 @@ _language: ja
 
 ハイライト表示フィルターによって表示されるシリーズの部分は、チャートの凡例レイヤーとツールチップ レイヤーに個別に表示されます。`HighlightedTitleSuffix` を設定することで、ツールチップと凡例に表示されるタイトルを構成できます。これにより、指定した値がシリーズの `Title` の末尾に追加されます。
 
+`DataLegend` または `DataToolTipLayer` を使用すると、ハイライト表示されたシリーズがグループ化されて表示されます。これは、シリーズの `HighlightedValuesDataLegendGroup` プロパティを設定してシリーズを適切に分類することで管理できます。
+
+次の例は、`HighlightedValuesDataLegendGroup` を使用した `XamDataChart` コントロール内のデータ凡例のグループ化とデータ ハイライト オーバーレイ機能の使用法を示しています。
+
+`sample="/charts/data-chart/data-legend-grouping-and-highlighting", height="500", alt="{Platform} データ凡例のグループ化のハイライト表示の例"`
+
+次の例は、`HighlightedValuesDataLegendGroup` を使用した `XamDataChart` コントロール内のデータ ツールチップのグループ化とデータ ハイライト オーバーレイ機能の使用法を示しています。
+
+`sample="/charts/data-chart/data-tooltip-grouping-and-highlighting", height="500", alt="{Platform} データ ツールチップのグループ化のハイライト表示の例"`
+
 次の例は、`HighlightedValueMemberPath` を使用した `XamDataChart` コントロール内のデータハイライト表示オーバーレイ機能の使用法を示しています。
 
 `sample="/charts/data-chart/chart-highlight-filter", height="500", alt="{Platform} ハイライト表示フィルターの例"`
@@ -59,7 +69,7 @@ HighlightedHighMemberPath, HighlightedLowMemberPath, HighlightedOpenMemberPath, 
 以下は上記のセクションで説明した API メンバーのリストです。
 
 
-| `CategoryChart` プロパティ                    | `XamDataChart` プロパティ | 
+| `CategoryChart` プロパティ                       | `XamDataChart` プロパティ | 
 | ----------------------------------------------|---------------------------|
 | `CategoryChart.HighlightedItemsSource`        | `Series.HighlightedItemsSource`  |
 | `CategoryChart.HighlightedTitleSuffix`        | `Series.HighlightedTitleSuffix`  | 
