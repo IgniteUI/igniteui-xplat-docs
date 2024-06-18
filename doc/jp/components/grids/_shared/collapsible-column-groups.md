@@ -191,11 +191,11 @@ npm install igniteui-react-grids
 
 ```html
 <igc-column-group id="info" header="Customer Information" collapsible="true">
-    <igc-column field="CustomerName" header="Fullname" data-type="String" visible-when-collapsed="true"></igx-column>
-    <igc-column field="CustomerID" header="Customer ID" data-type="String" visible-when-collapsed="false"></igx-column>
+    <igc-column field="CustomerName" header="Fullname" data-type="String" visible-when-collapsed="true"></igc-column>
+    <igc-column field="CustomerID" header="Customer ID" data-type="String" visible-when-collapsed="false"></igc-column>
     <igc-column-group id="address" header="Customer Address" collapsible="true">
-        <igc-column field="Country" header="Country" data-type="String" sortable="true" visible-when-collapsed="true"></igx-column>
-        <igc-column field="City" header="City" data-type="String" sortable="true" visible-when-collapsed="false"></igx-column>
+        <igc-column field="Country" header="Country" data-type="String" sortable="true" visible-when-collapsed="true"></igc-column>
+        <igc-column field="City" header="City" data-type="String" sortable="true" visible-when-collapsed="false"></igc-column>
     </igc-column-group>
 </igc-column-group>
 ```
@@ -215,16 +215,16 @@ public indTemplate = (ctx: IgcColumnTemplateContext) => {
 ```
 
 ```tsx
-<IgrColumnGroup collapsible="true" header="Customer Information" collapsibleIndicatorTemplate={indicatorTemplate}>
-    <IgrColumn field="CustomerName" header="Fullname" visibleWhenCollapsed="true"></IgrColumn>
-    <IgrColumn field="CustomerID" header="Customer ID" visibleWhenCollapsed="false"></IgrColumn>
-    <IgrColumnGroup header="Customer Address" collapsibleIndicatorTemplate={indicatorTemplate}>
-        <IgrColumn field="Country" sortable="true" visibleWhenCollapsed="true"></IgrColumn>
-        <IgrColumn field="City" sortable="true" visibleWhenCollapsed="false"></IgrColumn>
+<IgrColumnGroup id="info" header="Customer Information" collapsible="true" collapsibleIndicatorTemplate={this.collapsibleIndicatorTemplate}>
+    <IgrColumn field="CustomerName" header="Fullname" dataType="String" visibleWhenCollapsed="true"></IgrColumn>
+    <IgrColumn field="CustomerID" header="Customer ID" dataType="String" visibleWhenCollapsed="false"></IgrColumn>
+    <IgrColumnGroup id="address" header="Customer Address" collapsible="true">
+        <IgrColumn field="Country" header="Country" dataType="String" sortable="true" visibleWhenCollapsed="true"></IgrColumn>
+        <IgrColumn field="City" header="City" dataType="String" sortable="true" visibleWhenCollapsed="false"></IgrColumn>
     </IgrColumnGroup>
 </IgrColumnGroup>
 
-function indicatorTemplate(e: { dataContext: IgrColumnTemplateContext }) {
+function collapsibleIndicatorTemplate(e: { dataContext: IgrColumnTemplateContext }) {
     return (
     <div>
         <IgrIcon iconName={e.dataContext.column.expanded ? 'remove' : 'add'}></IgrIcon>

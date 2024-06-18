@@ -78,7 +78,7 @@ import { SortingDirection } from 'igniteui-webcomponents-grids';
 import { SortingDirection } from "igniteui-react-grids";
 ```
 
-<!-- ComponentStart: Grid, TreeGrid -->
+<!-- ComponentStart: Grid -->
 <!-- Angular -->
 ```typescript
 
@@ -92,7 +92,6 @@ this.grid.sort([
 ]);
 ```
 <!-- end: Angular -->
-
 
 <!-- WebComponents -->
 ```typescript
@@ -126,7 +125,6 @@ this.grid.sort([
 }
 ```
 
-
 ```tsx
 // Perform a case insensitive ascending sort on the ProductName column.
 gridRef.current.sort([{ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true }]);
@@ -137,7 +135,66 @@ gridRef.current.sort([
     { fieldName: 'Price', dir: SortingDirection.Desc }
 ]);
 ```
-<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+<!-- Angular -->
+```typescript
+
+// Perform a case insensitive ascending sort on the Category column.
+this.treeGrid.sort({ fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true });
+
+// Perform sorting on both the Category and Price columns.
+this.treeGrid.sort([
+    { fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true },
+    { fieldName: 'Price', dir: SortingDirection.Desc }
+]);
+```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```typescript
+
+// Perform a case insensitive ascending sort on the Category column.
+this.treeGrid.sort([{ fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true }]);
+
+// Perform sorting on both the Category and Price columns.
+this.treeGrid.sort([
+    { fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true },
+    { fieldName: 'Price', dir: SortingDirection.Desc }
+]);
+```
+<!-- end: WebComponents -->
+
+```razor
+@code {
+    this.grtreeGridid.SortAsync(new IgbSortingExpression[]
+        {
+            new IgbSortingExpression
+            {
+                FieldName = "Category",
+                Dir = SortingDirection.Asc
+            },
+            new IgbSortingExpression
+            {
+                FieldName = "Price",
+                Dir = SortingDirection.Desc
+            }
+        });
+}
+```
+
+```tsx
+// Perform a case insensitive ascending sort on the Category column.
+treeGridRef.current.sort([{ fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true }]);
+
+// Perform sorting on both the Category and Price columns.
+treeGridRef.current.sort([
+    { fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true },
+    { fieldName: 'Price', dir: SortingDirection.Desc }
+]);
+```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 <!-- Angular -->
@@ -204,7 +261,7 @@ hierarchicalGridRef.current.sort([
 
 フィルター動作と同様に、ソート状態をクリアするには `ClearSort` メソッドを使用します。
 
-<!-- ComponentStart: Grid, TreeGrid -->
+<!-- ComponentStart: Grid -->
 <!-- Angular, WebComponents -->
 ```typescript
 // Removes the sorting state from the ProductName column
@@ -232,7 +289,37 @@ gridRef.current.clearSort();
     this.grid.ClearSortAsync("");
 }
 ```
-<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+<!-- Angular, WebComponents -->
+```typescript
+// Removes the sorting state from the Category column
+this.treeGrid.clearSort('Category');
+
+// Removes the sorting state from every column in the {ComponentTitle}
+this.treeGrid.clearSort();
+```
+<!-- end: Angular, WebComponents -->
+
+```tsx
+// Removes the sorting state from the Category column
+treeGridRef.current.clearSort('Category');
+
+// Removes the sorting state from every column in the {ComponentTitle}
+treeGridRef.current.clearSort();
+```
+
+```razor
+@code {
+    @*Removes the sorting state from the Category column*@
+    this.treeGrid.ClearSortAsync("Category");
+
+    @*Removes the sorting state from every column in the Grid*@
+    this.treeGrid.ClearSortAsync("");
+}
+```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 <!-- Angular, WebComponents -->
@@ -274,7 +361,7 @@ hierarchicalGridRef.current.clearSort();
 
 `{ComponentName}` でソート状態を初期設定するには、ソート式の配列を `{ComponentName}` の `SortingExpressions` プロパティに渡します。
 
-<!-- ComponentStart: Grid, TreeGrid -->
+<!-- ComponentStart: Grid -->
 <!-- Angular -->
 ```typescript
 public ngOnInit() {
@@ -322,7 +409,57 @@ useEffect(() => {
     ];
 }, [])
 ```
-<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+<!-- Angular -->
+```typescript
+public ngOnInit() {
+    this.treeGrid.sortingExpressions = [
+        { fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true },
+        { fieldName: 'Price', dir: SortingDirection.Desc }
+    ];
+}
+```
+<!-- end: Angular -->
+
+```razor
+@code {
+    protected override void OnAfterRender(bool first)
+    {
+        if (first)
+        {
+            this.treeGrid.SortingExpressions = new IgbSortingExpression[]{
+                new IgbSortingExpression()
+                {
+                    FieldName = "Category",
+                    Dir = SortingDirection.Asc
+                }};
+        }
+    }
+}
+```
+
+<!-- WebComponents -->
+```typescript
+public connectedCallback() {
+    this.treeGrid.sortingExpressions = [
+        { fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true },
+        { fieldName: 'Price', dir: SortingDirection.Desc }
+    ];
+}
+```
+<!-- end: WebComponents -->
+
+```tsx
+useEffect(() => {
+    treeGridRef.current.sortingExpressions = [
+        { fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true },
+        { fieldName: 'Price', dir: SortingDirection.Desc }
+    ];
+}, [])
+```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 <!-- Angular -->
@@ -632,7 +769,7 @@ $custom-theme: grid-theme(
 
 テーマ エンジンを使用して[**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
 
-すべてのコンポーネントに提供されている 2 つの定義済みスキーマのいずれかを拡張します。この場合は [_light-grid]({environment:sassApiUrl}/index.html#variable-_light-grid)です。
+すべてのコンポーネントに提供されている 2 つの定義済みスキーマのいずれかを拡張します。この場合は [_light-grid]({environment:sassApiUrl}/index.html#variable-_light-grid) です。
 
 ```scss
 // Extending the light grid schema

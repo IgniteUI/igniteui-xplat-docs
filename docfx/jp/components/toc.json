@@ -625,25 +625,28 @@
     "status": ["NEW_REACT"],
     "items": [
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "高度なフィルタリング",
         "href": "grids/tree-grid/advanced-filtering.md",
-        "status": ""
+        "status": ["NEW_REACT"]
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "セルの編集",
-        "href": "grids/tree-grid/cell-editing.md"
+        "href": "grids/tree-grid/cell-editing.md",
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular"],
         "name": "クリップボードの操作",
-        "href": "grids/tree-grid/clipboard-interactions.md"
+        "href": "grids/tree-grid/clipboard-interactions.md",
+        "status": ["NEW_REACT"]
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "縮小可能な列グループ",
-        "href": "grids/tree-grid/collapsible-column-groups.md"
+        "href": "grids/tree-grid/collapsible-column-groups.md",
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular"],
@@ -695,13 +698,13 @@
         "exclude": ["Angular"],
         "name": "表示密度",
         "href": "grids/tree-grid/display-density.md",
-        "status": ""
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular"],
         "name": "編集",
         "href": "grids/tree-grid/editing.md",
-        "status": ""
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular"],
@@ -710,16 +713,16 @@
         "status": ["NEW_REACT"]
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Excel スタイル フィルタリング",
         "href": "grids/tree-grid/excel-style-filtering.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "exclude": ["Angular"],
         "name": "フィルタリング",
         "href": "grids/tree-grid/filtering.md",
-        "status": ""
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular", "React"],
@@ -731,7 +734,7 @@
         "exclude": ["Angular"],
         "name": "複数列ヘッダー",
         "href": "grids/tree-grid/multi-column-headers.md",
-        "status": ""
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
@@ -752,10 +755,10 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "行の操作",
         "href": "grids/tree-grid/row-actions.md",
-        "status": ""
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular"],
@@ -767,19 +770,19 @@
         "exclude": ["Angular"],
         "name": "行のドラッグ",
         "href": "grids/tree-grid/row-drag.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "行の編集",
         "href": "grids/tree-grid/row-editing.md",
-        "status": ""
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular"],
         "name": "行のピン固定",
         "href": "grids/tree-grid/row-pinning.md",
-        "status": ""
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular"],
@@ -803,13 +806,13 @@
         "exclude": ["Angular"],
         "name": "サイズ設定",
         "href": "grids/tree-grid/sizing.md",
-        "status": ""
+        "status": ["NEW_REACT"]
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "ソート",
         "href": "grids/tree-grid/sorting.md",
-        "status": ""
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
@@ -1006,7 +1009,7 @@
         "href": "grids/data-grid/row-grouping.md"
       },
       {
-        "name": "行の強調表示",
+        "name": "行のハイライト表示",
         "href": "grids/data-grid/row-highlighting.md",
         "status": ""
       },
@@ -1270,12 +1273,12 @@
           "status": "UPDATED"
         },
         {
-          "name": "チャートの強調表示フィルター",
+          "name": "チャートのハイライト表示フィルター",
           "href": "charts/features/chart-highlight-filter.md",
           "status": "UPDATED"
         },
         {
-          "name": "チャート強調表示",
+          "name": "チャートのハイライト表示",
           "href": "charts/features/chart-highlighting.md",
           "status": ""
         },
@@ -1640,7 +1643,7 @@
     "href": "inputs/button.md"
   },
   {
-    "exclude": ["Angular", "Blazor", "React"],
+    "exclude": ["Angular"],
     "name": "ボタン グループ",
     "href": "inputs/button-group.md",
     "status": "NEW"
@@ -2017,7 +2020,7 @@
       },
       {
         "exclude": ["Angular"],
-        "name": "行の強調表示",
+        "name": "行のハイライト表示",
         "href": "grids/data-grid/row-highlighting.md",
         "status": ""
       },
