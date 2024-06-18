@@ -663,9 +663,10 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Cell Selection",
-        "href": "grids/tree-grid/cell-selection.md"
+        "href": "grids/tree-grid/cell-selection.md",
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular"],

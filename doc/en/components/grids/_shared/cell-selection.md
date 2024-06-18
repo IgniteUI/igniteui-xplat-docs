@@ -300,13 +300,18 @@ Then set the related CSS properties for that class:
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
-
+<!-- WebComponents -->
 ```ts
 <igc-tree-grid class="treeGrid"></igc-tree-grid>
 ```
+<!-- end: WebComponents -->
 
 ```razor
 <IgbTreeGrid Class="treeGrid"></IgbTreeGrid>
+```
+
+```tsx
+<IgrTreeGrid className="treeGrid"></IgrTreeGrid>
 ```
 
 Then set the related CSS properties for that class:
