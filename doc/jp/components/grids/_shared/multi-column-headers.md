@@ -111,7 +111,6 @@ _language: ja
     </IgrColumnGroup>
 </{ComponentSelector}>
 ```
-
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -304,7 +303,6 @@ _language: ja
     </IgrColumnGroup>
 </{ComponentSelector}>
 ```
-
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->

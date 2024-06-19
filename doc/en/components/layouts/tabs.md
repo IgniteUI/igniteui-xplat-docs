@@ -29,7 +29,23 @@ npm install {PackageWebComponents}
 
 <!-- end: WebComponents -->
 
+<!-- React -->
+
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+<!-- end: React -->
+
 Before using the `Tabs`, you need to register it as follows:
+
+```tsx
+import { IgrTabsModule, IgrTabs, IgrTab,  IgrTabPanel} from "igniteui-react";
+
+IgrTabsModule.register();
+```
 
 
 ```razor
@@ -70,6 +86,17 @@ Simple `Tabs` declaration is done as follows:
 </IgbTabs>
 ```
 
+```tsx
+<IgrTabs>
+    <IgrTab panel="first">Tab 1</IgrTab>
+    <IgrTab panel="second">Tab 2</IgrTab>
+    <IgrTab panel="third">Tab 3</IgrTab>
+    <IgrTabPanel id="first">Panel 1</IgrTabPanel>
+    <IgrTabPanel id="second">Panel 2</IgrTabPanel>
+    <IgrTabPanel id="third">Panel 3</IgrTabPanel>
+</IgrTabs>
+```
+
 ### Selection
 
 The `Tabs` emits `Change` event when the user selects an item either by key press or click. The `Select` method allows you to select a tab by specifying its panel as string value.
@@ -88,6 +115,10 @@ A tab is disabled by setting the `Disabled` attribute:
 
 ```razor
 <IgbTab Panel="first" Disabled>Tab 1</IgbTab>
+```
+
+```tsx
+<IgrTab panel="first" disabled={true}>Tab 1</IgrTab>
 ```
 
 ### Alignment
@@ -131,7 +162,7 @@ Each tab has default slot to display information - icon, text or both and `prefi
 
 
 
-### Styling
+## Styling
 
 The `Tabs` component exposes CSS parts for all of its elements:
 
