@@ -1185,7 +1185,7 @@
   {
     "name": "Treemap",
     "href": "charts/types/treemap-chart.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
     "name": "Chart API",
@@ -1237,11 +1237,16 @@
           "name": "Chart Data Legend",
           "href": "charts/features/chart-data-legend.md",
           "status": "UPDATED"
-        },
+        },        
         {
           "name": "Chart Data Tooltip",
           "href": "charts/features/chart-data-tooltip.md",
           "status": "UPDATED"
+        },
+        {
+          "name": "Chart Data Selection",
+          "href": "charts/features/chart-data-selection.md",
+          "status": "NEW"
         },
         {
           "name": "Chart Highlight Filter",
@@ -1586,12 +1591,12 @@
   {
     "name": "Bullet Graph",
     "href": "bullet-graph.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
     "name": "Linear Gauge",
     "href": "linear-gauge.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
     "name": "Radial Gauge",

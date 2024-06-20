@@ -657,14 +657,14 @@ The radial gauge can be modified to show a second needle. This will make the mai
 <igx-radial-gauge #radialGauge
     labelExtent=0.65
     labelInterval=10
-    titleDisplaysValue=true
     highlightValueDisplayMode="Overlay"
-    highlightValue=25
+    highlightValue=50
+    highlightLabelDisplaysValue=true
+    highlightLabelSnapsToNeedlePivot=true
     isHighlightNeedleDraggingEnabled=true
-    isNeedleDraggingEnabled=true
     height="100%" width="100%"
-    minimumValue=0 value=75
-    maximumValue=80 interval=10  >
+    minimumValue=0 value=30
+    maximumValue=100 interval=10  >
 </igx-radial-gauge>
 ```
 
@@ -680,40 +680,39 @@ The radial gauge can be modified to show a second needle. This will make the mai
     height="100%"
     width="100%"
     minimumValue={0} value={75}
-    maximumValue={80} interval={10} />
+    maximumValue={80} interval={10}  />
 ```
 
 ```html
 <igc-radial-gauge
     id="gauge"
+    highlight-value="50"
     highlight-value-display-mode="Overlay"
-    highlight-value="25"
+    highlight-label-displays-value="true"
+    highlight-label-snaps-to-needle-pivot="true"
     is-highlight-needle-dragging-enabled="true"
-    is-needle-dragging-enabled="true"
-    title-displays-value="true"
     label-interval="10"
     label-extent="0.65"        
     height="100%"
     width="100%"
-    minimum-value="0" value="75"
-    maximum-value="80" interval="10" >
+    minimum-value="0" value="30"
+    maximum-value="100" interval="10">
 </igc-radial-gauge>
 ```
 
 ```razor
 <IgbLinearGauge Height="80px" Width="100%"
-    MinimumValue="0" 
-    MaximumValue="100" 
-    Value="75"
+    MinimumValue="0"
+    MaximumValue="100"
+    Value="30"
     Interval="10"
     LabelInterval="10"
-    LabelExtent="0.025"
-    LabelsPreTerminal="0"
-    LabelsPostInitial="0"
-    NeedleBrush="Blue"
-    HighlightValueDisplayMode="HighlightedValueDisplayMode.Overlay"
-    HighlightValue=25
-    IsHighlightNeedleDraggingEnabled=true>
+    LabelExtent="0.65"
+    HighlightValue="50"
+    HighlightValueDisplayMode=HighlightedValueDisplayMode.Overlay
+    HighlightLabelDisplaysValue=true
+    HighlightLabelSnapsToNeedlePivot=true
+    IsHighlightNeedleDraggingEnabled=true
 </IgbLinearGauge>
 ```
 
