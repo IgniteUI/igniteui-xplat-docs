@@ -466,34 +466,46 @@ If you want to provide a custom template which will be applied to a cell, you ca
 and pass the templates to this column in the index.ts file:
 
 ```typescript
-
-const webGridCellEditCellTemplate = useCallback((ctx: IgrCellTemplateContext) => {
-    const cellValues: any = [];
-    const uniqueValues: any = [];
-    for(const i of (webGridCellEditSampleRoleplay as any)){
-      const field: string = ctx.cell.column.field;
-      if(uniqueValues.indexOf(i[field]) === -1 )
-      {
-        cellValues.push(<IgrSelectItem key={i[field]} value={i[field]}>{i[field]}</IgrSelectItem>);
+public webGridCellEditCellTemplate = (e: { dataContext: IgrCellTemplateContext; }) => {
+    let cellValues: any = [];
+    let uniqueValues: any = [];
+    const cell = e.dataContext.cell;
+    const colIndex = cell.id.columnID;
+    const field: string = this.grid1.getColumnByVisibleIndex(colIndex).field;
+    const key = field + "_" + cell.id.rowID;
+    let index = 0;
+    for (const i of this.roleplayDataStats as any) {
+      if (uniqueValues.indexOf(i[field]) === -1) {
+        cellValues.push(
+          <>
+            <IgrSelectItem
+              selected={e.dataContext.cell.value == i[field]}
+              value={i[field]}
+              key={key + "_" + index}
+            >
+              <div key={key + "_" + index}>{i[field]}</div>
+            </IgrSelectItem>
+          </>
+        );
         uniqueValues.push(i[field]);
       }
+      index++;
     }
     return (
-      <IgrSelect style={{width: '100%', height: '100%'}} size="large" change={(e: any) => ctx.cell.editValue = e.detail.value}>
-            {cellValues}
-      </IgrSelect>
+      <>
+        <IgrSelect
+          key={key}
+          change={(x: any) => {
+            setTimeout(() => {
+              cell.editValue = x.value;
+            });
+          }}
+        >
+          {cellValues}
+        </IgrSelect>
+      </>
     );
-  }, [webGridCellEditSampleRoleplay]);
-
-  useEffect(() => {
-    const column1 = grid1Ref.current.getColumnByName('column1');
-
-    grid1Ref.current.data = webGridCellEditSampleRoleplay;
-    column1.inlineEditorTemplate = webGridCellEditCellTemplate;
-      
-    
-  }, [webGridCellEditSampleRoleplay, webGridCellEditCellTemplate]);
-
+  };
 ```
 <!-- end: React -->
 
