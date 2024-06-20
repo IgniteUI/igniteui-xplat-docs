@@ -2,7 +2,7 @@
 title: {Platform} Treemap | Data Visualization Tools | Orientation | Layout | Data Binding | Infragistics
 _description: Use Infragistics' {Platform} Treemap control show relative weighting of data points at more than one level supporting strip, squarified, and slice-and-dice algorithms. Learn about {ProductName} treemap!
 _keywords: {Platform} Tree Map, Treemap, layout, orientation, {ProductName}, Infragistics
-mentionedTypes: ["Treemap", "TreemapOrientation", "TreemapLayoutType"]
+mentionedTypes: ["Treemap", "TreemapOrientation", "TreemapLayoutType", "TreemapHighlightingMode", "TreemapHighlightedValueDisplayMode"]
 namespace: Infragistics.Controls.Charts
 ---
 # {Platform} Treemap
@@ -102,13 +102,13 @@ In the following example, the treemap demonstrates the ability of node highlight
 
 ## {Platform} Treemap Percent based highlighting 
 
-`HighlightedItemsSource`: Specifies the datasource to read highlighted values from. If null, then highlighted values are read from the ItemsSource property.
-`HighlightedValueMemberPath`: Specifies the name of the property in the datasource where the highlighted values are read.
-`HighlightedValueOpacity`: Controls the opacity of the normal value behind the highlighted value.
-`HighlightedValuesDisplayMode`: Enables or disables highlighted values.
- - Auto: The treemap decides what mode to use.
- - Overlay: The treemap displays highlighted values over top the normal value with a slight opacity applied to the normal value.
- - Hidden: The treemap does not show highlighted values.
+- `HighlightedItemsSource`: Specifies the datasource to read highlighted values from. If null, then highlighted values are read from the ItemsSource property.
+- `HighlightedValueMemberPath`: Specifies the name of the property in the datasource where the highlighted values are read.
+- `HighlightedValueOpacity`: Controls the opacity of the normal value behind the highlighted value.
+- `HighlightedValuesDisplayMode`: Enables or disables highlighted values.
+    - Auto: The treemap decides what mode to use.
+    - Overlay: The treemap displays highlighted values over top the normal value with a slight opacity applied to the normal value.
+    - Hidden: The treemap does not show highlighted values.
 
 `sample="/charts/tree-map/highlighting-percent-based", height="600", alt="{Platform} Treemap Percent based Highlighting"`
 
@@ -127,4 +127,6 @@ The following is a list of API members mentioned in the above sections:
 
 - `Treemap`
 - `LayoutOrientation`
+- `HighlightedValuesDisplayMode`
+- `HighlightedValueMemberPath`
 - `LayoutType`

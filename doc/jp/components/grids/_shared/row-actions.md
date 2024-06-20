@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} の行操作
 
-{Platform} {ComponentTitle} の {ProductName} 行操作機能を使用すると、開発者は `АctionStrip` を使用し、行/セル コンポーネントと行のピン固定に CRUD を利用できます。これらの操作 (編集とピン固定) には、`{ComponentName}` の特定の行に適用できる事前定義された UI コントロールがいくつかあります。
+{Platform} {ComponentTitle} の {ProductName} 行操作機能を使用すると、開発者は `ActionStrip` を使用し、行/セル コンポーネントと行のピン固定に CRUD を利用できます。これらの操作 (編集とピン固定) には、`{ComponentName}` の特定の行に適用できる事前定義された UI コントロールがいくつかあります。
 
 ## 使用方法
 
@@ -131,7 +131,7 @@ import { IgxActionStripModule } from 'igniteui-angular';
 <!-- end: WebComponents -->
 
 <!-- React -->
-<!-- ComponentStart: Grid, TreeGrid -->
+<!-- ComponentStart: Grid -->
 ```tsx
 <{ComponentSelector} id="grid" rowEditable="true" primaryKey="ID">
     <IgrColumn field="field">
@@ -142,7 +142,20 @@ import { IgxActionStripModule } from 'igniteui-angular';
     </IgrActionStrip>
 </{ComponentSelector}>
 ```
-<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```tsx
+<{ComponentSelector} id="treeGrid" rowEditable="true" primaryKey="ID">
+    <IgrColumn field="field">
+    </IgrColumn>
+    <IgrActionStrip name="actionStrip">
+        <IgrGridPinningActions></IgrGridPinningActions>
+        <IgrGridEditingActions></IgrGridEditingActions>
+    </IgrActionStrip>
+</{ComponentSelector}>
+```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 ```tsx
@@ -161,11 +174,9 @@ import { IgxActionStripModule } from 'igniteui-angular';
 > [!Note]
 > `ActionStripComponent` が `{ComponentName}` の子コンポーネントの場合、行をホバーすると UI が自動的に表示されます。
 
-<!-- Angular -->
-
 ## カスタムの実装
 
-これらのコンポーネントは、カスタマイズのための柔軟性を提供するテンプレートを公開します。たとえば、**delete**、**edit** などの行アクションがある Gmail シナリオで `ActionStripComponent` を使用する場合、`igx-icon` でボタン コンポーネントを作成します。そして、クリック イベントを追加し、`ActionStripComponent` に挿入します。
+これらのコンポーネントは、カスタマイズのための柔軟性を提供するテンプレートを公開します。たとえば、**delete**、**edit** などの行アクションがある Gmail シナリオで `ActionStrip` を使用する場合、アイコンでボタン コンポーネントを作成します。そして、クリック イベントを追加し、`ActionStrip` に挿入します。
 
 
 ```html
@@ -223,8 +234,6 @@ import { IgxActionStripModule } from 'igniteui-angular';
 </div>
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
-<!-- end: Angular, Blazor -->
-
 
 <!-- WebComponents -->
 <!-- ComponentStart: Grid, TreeGrid -->
@@ -275,7 +284,6 @@ import { IgxActionStripModule } from 'igniteui-angular';
 <!-- end: React -->
 
 `sample="/{ComponentSample}/action-strip", height="600", alt="{Platform} {ComponentTitle} アクション ストリップの例"`
-
 
 
 <!-- Angular -->
