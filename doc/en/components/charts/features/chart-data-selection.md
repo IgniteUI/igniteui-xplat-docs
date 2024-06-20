@@ -6,7 +6,7 @@ mentionedTypes: ["XamDataChart", "Legend", "CategoryChart", "FinancialChart", "X
 namespace: Infragistics.Controls.Charts
 ---
 
-# {Platform} Chart Data Selection
+# {Platform} Chart Selection
 
 COMING SOON
 
@@ -14,4 +14,6 @@ COMING SOON
 
 The following is a list of API members mentioned in the above sections:
 
-- `CategoryChart`
+| `CategoryChart` Properties                    | `XamDataChart` Properties | 
+| ----------------------------------------------|---------------------------|
+|                                               |                           |
