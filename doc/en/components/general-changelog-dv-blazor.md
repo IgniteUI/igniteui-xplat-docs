@@ -12,18 +12,13 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### {PackageCharts} (Charts)
 
-* [Data Legend Grouping](charts/features/chart-data-legend.md#{PlatformLower}-data-legend-grouping)
-* [Data Tooltip Grouping](charts/features/chart-data-tooltip.md#{PlatformLower}-data-tooltip-grouping-for-data-chart)
-    - New grouping feature added. The property `GroupRowVisible` toggles grouping with each series opting in can assign group text via the `DataLegendGroup` property. If the same value is applied to more than one series then they will appear grouped.
+* [Data Legend Grouping](charts/features/chart-data-legend.md#{PlatformLower}-data-legend-grouping) & [Data Tooltip Grouping](charts/features/chart-data-tooltip.md#{PlatformLower}-data-tooltip-grouping-for-data-chart) - New grouping feature added. The property `GroupRowVisible` toggles grouping with each series opting in can assign group text via the `DataLegendGroup` property. If the same value is applied to more than one series then they will appear grouped.
 
-- [Treemap Highlighting](charts/types/treemap-chart.md#{PlatformLower}-treemap-highlighting)
-- New highlighting feature enabled by the `HighlightingMode` property to either brighten or fade other nodes on mouse hover.
+- [Treemap Highlighting](charts/types/treemap-chart.md#{PlatformLower}-treemap-highlighting) - New highlighting feature enabled by the `HighlightingMode` property to either brighten or fade other nodes on mouse hover.
+    
+- [Treemap Percent-based Highlighting](charts/types/treemap-chart.md#{PlatformLower}-treemap-percent-based-highlighting) - New percent-based highlighting, allowing nodes to fill-in its backcolor up to a specific value either by a member on your data item or by supplying a new datasource.
 
-- [Treemap Percent-based Highlighting](charts/types/treemap-chart.md#{PlatformLower}-treemap-percent-based-highlighting)
-    - New percent-based highlighting, allowing nodes to fill-in its backcolor up to a specific value either by a member on your data item or by supplying a new datasource. 
-
-- [Chart Selection](charts/types/treemap-chart.md#{PlatformLower}-treemap-percent-based-highlighting)
-    - New percent-based highlighting, allowing nodes to fill-in its backcolor up to a specific value either by a member on your data item or by supplying a new datasource. 
+- [Chart Selection](charts/features/chart-data-selection.md) - New series selection styling. This is adopted broadly across all category, financial and radial series for `CategoryChart` and `XamDataChart`. 
 
 ### {PackageGauges}
 
