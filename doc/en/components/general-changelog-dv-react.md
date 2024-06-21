@@ -9,6 +9,17 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## **{PackageVerChanges-24-1-JUN}**
+
+### {PackageCommon}
+- `Input`, `Textarea` - exposed `ValidateOnly` to enable validation rules being enforced without restricting user input.
+- `Dropdown` - `PositionStrategy` property is deprecated. The dropdown now uses the `Popover` API to render its container in the top layer of the browser viewport, making the property obsolete.
+- `DockManager` - `SplitPane` `IsMaximized` is deprecated. Having isMaximized set to true on a split pane level has no real effect as split panes serve as containers only, meaning they have no actual content to be shown maximized. Use the `IsMaximized` property of `TabGroupPane` and/or `ContentPane` instead.
+
+### {PackageGrids}
+- `DisplayDensity` deprecated in favor of the `--ig-size` CSS custom property.
+
+- `PivotGrid` - Configuration of the component can now be applied correctly.
 ### {PackageCharts} (Charts)
 
 * [Data Legend Grouping](charts/features/chart-data-legend.md#{PlatformLower}-data-legend-grouping)
