@@ -31,7 +31,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 - `Toolbar` - New `IsHighlighted` option for ToolAction for outlining a border around specific tools of choice.
 
-### {PackageGauges}
+### {PackageGauges} (Gauges)
 
 - `XamRadialGauge`
     - New label for the highlight needle. `HighlightLabelText` and `HighlightLabelSnapsToNeedlePivot` and many other styling related properties for the HighlightLabel were added.
