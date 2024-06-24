@@ -27,7 +27,15 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 - [Treemap Highlighting](charts/types/treemap-chart.md#{PlatformLower}-treemap-highlighting) - Now exposes a `HighlightingMode` property that allows you to configure the mouse-over highlighting of the items in the tree map. This property takes two options: `Brighten` where the highlight will apply to the item that you hover the mouse over only, and `FadeOthers` where the highlight of the hovered item will remain the same, but everything else will fade out. This highlight is animated, and can be controlled using the `HighlightingTransitionDuration` property.
     
-- [Treemap Percent-based Highlighting](charts/types/treemap-chart.md#{PlatformLower}-treemap-percent-based-highlighting) - New percent-based highlighting, allowing nodes to represent progress. The appearance is shown as a fill-in of its backcolor up to a specific value either by a member on your data item or by supplying a new `HighlightedItemsSource`. Can be toggled via `HighlightedValuesDisplayMode` and styled via `FillBrushes`.
+- [Treemap Percent-based Highlighting](charts/types/treemap-chart.md#{PlatformLower}-treemap-percent-based-highlighting) - New percent-based highlighting, allowing nodes to represent progress or subset of a collection. The appearance is shown as a fill-in of its backcolor up to a specific value either by a member on your data item or by supplying a new `HighlightedItemsSource`. Can be toggled via `HighlightedValuesDisplayMode` and styled via `FillBrushes`.
+
+- `XamToolbar` 
+    - New `IsHighlighted` option for ToolAction for outlining a border around specific tools of choice. 
+    - New `SubPanelToolAction` to organize sub menu tools in a table-like structure.
+    - Added `DataURL` for Icons. Icon considers DataURLs if there is no SVG configured with given CollectionName and IconName. SVG related properties like Stroke and Fill are ignored when using DataURL. 
+    - Added `SVGPaths`property existed previously, but now an array of strings is possible instead of a single string.
+    - Added `AddSvgPathsString` and `GetSvgPathsString` methods to `SvgIconRegistry`.
+    - New `IconFillColors` to ToolAction.
 
 ### {PackageGauges}
 
