@@ -36,14 +36,6 @@ All notable changes for each version of {ProductName} are documented on this pag
 - `XamRadialGauge`
     - New label for the highlight needle. `HighlightLabelText` and `HighlightLabelSnapsToNeedlePivot` and many other styling related properties for the HighlightLabel were added.
 
-### {PackageGrids} (Toolbar)
-
-* [Toolbar](menus/toolbar.md)
-    - Add Data URL support for Icon
-    - Added Multipath SVG Support
-    - Added SubPanel ToolAction
-    - Added `IsHighlighted` property to ToolAction. Draws a border around the tool.
-
 ## **{PackageVerChanges-23-2-MAR}**
 
 ### {PackageCharts}
