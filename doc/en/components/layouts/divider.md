@@ -138,6 +138,38 @@ The `middle` attribute is used in combination with the `--inset` css variable. W
 
 `sample="/layouts/divider/middle", height="220", alt="{Platform} Divider Middle Inset Example"`
 
+### Using Divider Inside Select Component
+
+```html
+<igc-select>
+  <igc-select-item>Item 1</igc-select-item>
+  <igc-select-item>Item 2</igc-select-item>
+  <igc-divider></igc-divider>
+  <igc-select-item>Item 3</igc-select-item>
+</igc-select>
+```
+
+```tsx
+<IgrSelect>
+  <IgrSelectItem><span>Item 1</span></IgrSelectItem>
+  <IgrSelectItem><span>Item 2</span></IgrSelectItem>
+  <IgrDivider></IgrDivider>
+  <IgrSelectItem><span>Item 2</span></IgrSelectItem>
+</IgrSelect>
+
+```
+
+```razor
+<IgrSelect>
+ <IgrSelectItem>Item 1</IgrSelectItem>
+ <IgrSelectItem>Item 2</IgrSelectItem>
+ <IgrDivider></IgrDivider>
+ <IgrSelectItem>Item 2</IgrSelectItem>
+</IgrSelect>
+```
+
+`sample="/layouts/divider/select", height="330", alt="{Platform} Divider Select Example"`
+
 ## CSS Variables
 ### Inset
 The `--inset` css variable shrinks the divider by the given amount from the start. If middle is set it will shrink from both sides.
