@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in WebComponents documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "WebComponents",
-  "samplesCount": 688,
+  "samplesCount": 703,
   "samplesHost": "https://staging.infragistics.com/webcomponents-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -139,6 +139,12 @@
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/category-chart/point-chart-styling": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/charts/types/point-chart"
     ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/category-chart/selection-modes": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/charts/features/chart-data-selection"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/category-chart/selection-multiple-modes": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/charts/features/chart-data-selection"
+    ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/category-chart/spline-multiple-sources": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/charts/chart-overview",
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/charts/types/spline-chart"
@@ -215,6 +221,21 @@
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/data-chart/dash-array-trendline": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/charts/features/chart-trendlines"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/data-chart/data-legend-grouping": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/charts/features/chart-data-legend"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/data-chart/data-legend-grouping-and-highlighting": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/charts/features/chart-highlight-filter"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/data-chart/data-legend-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/charts/features/chart-data-legend"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/data-chart/data-tooltip-grouping": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/charts/features/chart-data-tooltip"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/data-chart/data-tooltip-grouping-and-highlighting": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/charts/features/chart-highlight-filter"
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/data-chart/final-value-layer-styling": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/charts/features/chart-annotations"
@@ -398,6 +419,9 @@
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/charts/features/chart-data-tooltip"
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/financial-chart/data-tooltip-formatting-currency": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/charts/features/chart-data-tooltip"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/financial-chart/data-tooltip-styling-props": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/charts/features/chart-data-tooltip"
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/financial-chart/multiple-data": [
@@ -1422,9 +1446,6 @@
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/data-exporting-indicator": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/toolbar"
     ],
-    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/data-performance-virtualization": [
-      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/virtualization"
-    ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/data-searching": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/search"
     ],
@@ -1438,6 +1459,9 @@
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/summaries"
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/data-summary-options": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/summaries"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/data-summary-options-styling": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/summaries"
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/data-summary-template": [
@@ -1475,9 +1499,6 @@
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/finjs": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/live-data"
-    ],
-    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/groupby-summary-styling": [
-      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/summaries"
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/keyboard-custom-navigation": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/keyboard-navigation"
@@ -1557,6 +1578,9 @@
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/row-selection-mode": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/row-selection"
     ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/row-selection-template-excel": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/row-selection"
+    ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/row-selection-template-numbers": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/row-selection"
     ],
@@ -1565,6 +1589,12 @@
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/state-persistence-main": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/state-persistence"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/toolbar-sample-1": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/toolbar"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/toolbar-sample-2": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/toolbar"
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/toolbar-sample-3": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/toolbar"
@@ -1875,6 +1905,21 @@
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/switches/overview": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/switch"
     ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/textarea/form-integration": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/text-area"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/textarea/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/text-area"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/textarea/resize": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/text-area"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/textarea/slots": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/text-area"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/textarea/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/text-area"
+    ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/accordion/customization": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/layouts/accordion"
     ],
@@ -2133,7 +2178,7 @@
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/scheduling/calendar"
     ]
   },
-  "topicsCount": 305,
+  "topicsCount": 307,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -2223,21 +2268,31 @@
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/charts/features/chart-data-legend": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/category-chart/data-legend",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/category-chart/data-legend-formatting-decimals",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/data-chart/data-legend-grouping",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/data-chart/data-legend-styling",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/financial-chart/data-legend",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/financial-chart/data-legend-formatting-currency",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/financial-chart/data-legend-styling-props"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/charts/features/chart-data-selection": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/category-chart/selection-modes",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/category-chart/selection-multiple-modes"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/charts/features/chart-data-tooltip": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/category-chart/data-tooltip",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/category-chart/data-tooltip-formatting-decimals",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/category-chart/data-tooltip-positioning",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/data-chart/data-tooltip-grouping",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/financial-chart/data-tooltip",
-      "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/financial-chart/data-tooltip-formatting-currency"
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/financial-chart/data-tooltip-formatting-currency",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/financial-chart/data-tooltip-styling-props"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/charts/features/chart-highlight-filter": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/category-chart/chart-highlight-filter",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/data-chart/chart-highlight-filter",
-      "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/data-chart/chart-highlight-filter-multiple-series"
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/data-chart/chart-highlight-filter-multiple-series",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/data-chart/data-legend-grouping-and-highlighting",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/data-chart/data-tooltip-grouping-and-highlighting"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/charts/features/chart-highlighting": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/category-chart/annotations-highlighting",
@@ -3112,6 +3167,7 @@
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/row-selection": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/conditional-row-selectors",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/row-selection-mode",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/row-selection-template-excel",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/row-selection-template-numbers"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/search": [
@@ -3133,17 +3189,16 @@
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/data-summary-children",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/data-summary-formatter",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/data-summary-options",
-      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/data-summary-template",
-      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/groupby-summary-styling"
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/data-summary-options-styling",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/data-summary-template"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/toolbar": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/data-exporting-indicator",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/toolbar-sample-1",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/toolbar-sample-2",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/toolbar-sample-3",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/toolbar-sample-4",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/toolbar-style"
-    ],
-    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/virtualization": [
-      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/data-performance-virtualization"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/badge": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/badge/outlined",
@@ -3286,6 +3341,13 @@
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/switches/disabled",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/switches/label",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/switches/overview"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/text-area": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/textarea/form-integration",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/textarea/overview",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/textarea/resize",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/textarea/slots",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/textarea/styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/layouts/accordion": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/accordion/customization",
