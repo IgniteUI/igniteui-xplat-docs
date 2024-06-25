@@ -1544,6 +1544,12 @@
     "href": "layouts/tabs.md",
     "status": ""
   },
+   {
+    "exclude": ["Angular"],
+    "name": "Divider",
+    "href": "layouts/divider.md",
+    "status": "NEW"
+  },
   {
     "name": "Menus",
     "header": true
