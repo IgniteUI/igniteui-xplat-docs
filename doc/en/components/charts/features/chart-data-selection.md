@@ -57,7 +57,7 @@ Other selection modes offer various methods of selection. For example using `Sel
 
 `sample="/charts/category-chart/selection-multiple-modes", height="450", alt="{Platform} Category Chart Selection Multiple Modes Example"`
 
-## Configuring Multiple Selection
+## Configuring Outline Selection
 
 When `FocusBrush` is applied, selected series will appear with a border when the `SelectionMode` property is set to one of the focus options.
 
