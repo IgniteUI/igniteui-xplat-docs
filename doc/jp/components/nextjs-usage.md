@@ -255,6 +255,17 @@ export default function GridDynamicComponent() {
 > [!Note]
 > コンポーネントの遅延読み込みを実装するとパフォーマンスが向上しますが、コンポーネントがページ上にすぐに表示されない場合にのみ使用することをお勧めします。
 
+## 制限
+- Next.js プロジェクトでページ ルーティングを使用している場合は、`next.config.js` オプションを使用して {ProductName} パッケージをトランスパイルする必要があります。設定には次の内容が含まれている必要があります。
+```tsx
+const nextConfig = {
+    transpilePackages: ['igniteui-react'],
+    experimental: {
+        esmExternals: "loose",
+    }
+}
+```
+
 ## その他のリソース
 
 * [Ignite UI for React](../components/general-getting-started.md)
