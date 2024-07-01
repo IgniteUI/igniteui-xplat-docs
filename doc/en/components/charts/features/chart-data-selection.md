@@ -65,6 +65,8 @@ When `FocusBrush` is applied, selected series will appear with a border when the
 
 This example demonstrates another series type via the `XamDataChart` where each radial series can be selected with different colors.
 
+`sample="/charts/data-chart/radial-column-chart-selection", height="450", alt="{Platform} Radial Column Chart Selection Multiple Modes Example"`
+
 ## API References
 
 The following is a list of API members mentioned in the above sections:
