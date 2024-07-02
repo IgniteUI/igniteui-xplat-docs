@@ -1,6 +1,6 @@
 ---
 title: {Platform} チャートのデータ凡例 | データ視覚化ツール | インフラジスティックス
-_description: インフラジスティックス {ProductName} チャートでデータ凡例をお試しください!
+_description: インフラジスティックスの {ProductName} チャートでデータ凡例をお試しください!
 _keywords: {Platform} charts, chart legend, legend, legend types, {ProductName}, Infragistics, {Platform} チャート, チャート凡例, 凡例, 凡例タイプ, インフラジスティックス
 mentionedTypes: ["XamCategoryChart", "XamDataLegend", "Series", "DataLegendSummaryType", "DataAbbreviationMode" ]
 namespace: Infragistics.Controls.Charts

@@ -1,6 +1,6 @@
 ---
 title: {Platform} Data Grid | 行のハイライト表示 | インフラジスティックス
-_description: マウスオーバーでインフラジスティックス {Platform} データ グリッドの行ハイライト表示の構成。{ProductName} テーブルの行ハイライト表示を設定する方法について説明します。
+_description: マウスオーバーでインフラジスティックスの {Platform} データ グリッドの行ハイライト表示の構成。{ProductName} テーブルの行ハイライト表示を設定する方法について説明します。
 _keywords: {Platform} Table, Data Grid, row highlighting, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 行のハイライト表示, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls

@@ -95,14 +95,14 @@ _language: ja
 
 `sample="/charts/tree-map/styling", height="600", alt="{Platform} ツリーマップのスタイル設定"`
 
-### {Platform} ツリーマップのハイライト
+### {Platform} ツリーマップのハイライト表示
 
 次の例では、ツリーマップでノードのハイライト機能を示しています。
 この機能には 2 つのオプションがあります。各ノードは、不透明度を下げることで個別に明るくしたり、他のすべてのノードに同じ効果をトリガーさせたりすることができます。この機能を有効にするには、`HighlightingMode` を Brighten または FadeOthers に設定します。
 
 `sample="/charts/tree-map/highlighting", height="600", alt="{Platform} ツリーマップのハイライト"`
 
-## {Platform} ツリーマップのパーセントベースのハイライト 
+## {Platform} ツリーマップのパーセントベースのハイライト表示 
 
 - `HighlightedItemsSource`: ハイライト表示された値を読み取るデータ ソースを指定します。null の場合、ハイライト表示された値は ItemsSource プロパティから読み取られます。
 - `HighlightedValueMemberPath`: ハイライト表示された値が読み取られるデータ ソース内のプロパティの名前を指定します。
