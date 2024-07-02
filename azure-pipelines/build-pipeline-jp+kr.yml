@@ -50,7 +50,7 @@ stages:
     - task: DotnetGlobalToolInstaller@0
       inputs:
         name: 'Install dotnet'
-        versionSpec: '6.*'
+        versionSpec: '6.x'
         checkLatest: true
 
     - task: RegexReplace@3
