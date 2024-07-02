@@ -47,6 +47,12 @@ stages:
         versionSource: 'spec'
         versionSpec: '16.x'
 
+    - task: DotnetGlobalToolInstaller@0
+      inputs:
+        name: 'Install dotnet'
+        versionSpec: '6.*'
+        checkLatest: true
+
     - task: RegexReplace@3
       displayName: 'replace environment in doc/docfx'
       inputs:
