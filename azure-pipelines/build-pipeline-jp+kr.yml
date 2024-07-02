@@ -47,11 +47,10 @@ stages:
         versionSource: 'spec'
         versionSpec: '16.x'
 
-    - task: DotnetGlobalToolInstaller@0
+    - task: UseDotNet@2
       inputs:
-        name: 'Install dotnet'
-        versionSpec: '6.x'
-        checkLatest: true
+        packageType: 'sdk'
+        version: '6.x'
 
     - task: RegexReplace@3
       displayName: 'replace environment in doc/docfx'
