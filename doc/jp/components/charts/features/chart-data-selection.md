@@ -65,6 +65,8 @@ _language: ja
 
 この例では、各ラジアル シリーズを異なる色で選択できる `XamDataChart` を介した別のシリーズ タイプを示します。
 
+`sample="/charts/data-chart/radial-column-chart-selection", height="450", alt="{Platform} ラジアル縦棒チャートの複数モード選択の例"`
+
 ## API リファレンス
 
 以下は上記のセクションで説明した API メンバーのリストです。
