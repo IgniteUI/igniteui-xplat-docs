@@ -31,7 +31,7 @@ The {Platform} Charts allows you full control over configuring, formatting, and 
 
 <div class="divider--half"></div>
 
-## Axis Labels Management
+## Axis Labels Management and Formatting
 
 The axes of the chart have the ability to perform an enhanced calculation regarding the amount of space available to the labels of the owning axis. This enhanced calculation allows the axis to optimize the amount of space given to it in order to display more labels for the given axis.
 
