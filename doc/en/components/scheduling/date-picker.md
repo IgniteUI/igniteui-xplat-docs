@@ -14,7 +14,7 @@ The {ProductName} DatePicker Component lets users pick a single date through a m
 
 Below you can see a sample that demonstrates how the DatePicker works when users are enabled to pick a date through a manual text input and click on the calendar icon on the left to navigate to it. See how to render it. 
 
-`sample="/scheduling/date-picker/overview", height="150", alt="{Platform} Date Picker Input Overview Example"`
+`sample="/scheduling/date-picker/overview", height="500", alt="{Platform} Date Picker Input Overview Example"`
 
 ## Getting Started with {Platform} Datepicker
 
@@ -28,10 +28,10 @@ npm install {PackageWebComponents}
 You will then need to import the `DatePicker`, its necessary CSS, and register its module, like so:
 
 ```ts
-import { defineComponents, IgcDatePicker } from 'igniteui-webcomponents';
+import { defineComponents, IgcDatePickerComponent } from 'igniteui-webcomponents';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
-defineComponents(IgcDatePicker);
+defineComponents(IgcDatePickerComponent);
 ```
 
 For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
@@ -50,10 +50,10 @@ To instantiate a Datepicker in its default `dropdown` state, use the following c
 ```
 
 ### Options
-The `IgcDatePickerComponent` can be bound to a `date` or a `string`.
+The `DatePicker` can be bound to a `date` or a `string`.
 
 ```typescript
-const datepicker = document.querySelector('igc-date-picker') as IgcDatepickerComponent;
+const datepicker = document.querySelector('igc-date-picker') as IgcDatePickerComponent;
 const date = new Date();
 
 datepicker.value = date;
@@ -93,7 +93,7 @@ The picker's action buttons can be templated using the `actions` slot:
 
 ### Keyboard Navigation
 
-The `IgcDatePickerComponent` has intuitive keyboard navigation that makes it easy to increment, decrement, or jump through different DateParts among others without having to touch the mouse.
+The `DatePicker` has intuitive keyboard navigation that makes it easy to increment, decrement, or jump through different DateParts among others without having to touch the mouse.
 
 |Keys|Description|
 |----|-----------|
@@ -111,26 +111,26 @@ The `IgcDatePickerComponent` has intuitive keyboard navigation that makes it eas
 ## Examples
 
 ### Dialog Mode
-The `IgcDatePickerComponent` also supports a `dialog` mode:
+The `DatePicker` also supports a `dialog` mode:
 ```html
 <igc-date-picker id="datePicker" mode="dialog">
 </igc-date-picker>
 ```
-`sample="/scheduling/date-picker/dialog_mode", height="150", alt="{Platform} Date Picker Dialog Mode Example"`
+`sample="/scheduling/date-picker/dialog_mode", height="500", alt="{Platform} Date Picker Dialog Mode Example"`
 
 ### Display and input format
-`inputFormat` and `displayFormat` are properties which can be set to make the picker's editor follow a specified format. The `inputFormat` is locale based, so if none is provided, the picker will default to the one used by the browser.
+`InputFormat` and `DisplayFormat` are properties which can be set to make the picker's editor follow a specified format. The `InputFormat` is locale based, so if none is provided, the picker will default to the one used by the browser.
 
 A good thing to note is that the DatePicker Component will always add a leading zero on the `date` and `month` portions if they were provided in a format that does not have it, e.g. `d/M/yy` becomes `dd/MM/yy`. This applies only during editing.
 
-`displayFormat` is used to format the picker's input when it is not focused. If no `displayFormat` is provided, the picker will use the `inputFormat` as its `displayFormat`.
+`DisplayFormat` is used to format the picker's input when it is not focused. If no `DisplayFormat` is provided, the picker will use the `InputFormat` as its `DisplayFormat`.
 
 More information about these can be found in the `IgcDateTimeInput` format section.
 
-`sample="/scheduling/date-picker/format", height="150", alt="{Platform} Date Picker Input Fromat Example"`
+`sample="/scheduling/date-picker/format", height="500", alt="{Platform} Date Picker Input Fromat Example"`
 
 ### Increment and decrement
-The `IgcDatePickerComponent` exposes `stepUp` and `stepDown` methods. Both of which come from the `IgcDateTimeInput` and can be used for incrementing and decrementing a specific `DatePart` of the currently set date.
+The `DatePicker` exposes `StepUp` and `StepDown` methods. Both of which come from the `IgcDateTimeInput` and can be used for incrementing and decrementing a specific `DatePart` of the currently set date.
 
 ```html
 <igc-date-picker id="datePicker">
@@ -140,20 +140,20 @@ The `IgcDatePickerComponent` exposes `stepUp` and `stepDown` methods. Both of wh
 ```
 
 ### In Forms
-The `IgcDatePickerComponent` could be used in a form element, the component's `minValue` and `maxValue` properties act as form validators.
+The `DatePicker` could be used in a form element, the component's `Min` and `Max` properties act as form validators.
 
 In forms, we can handle the `igcChange` event of the component and update the value of the label.
 
-`sample="/scheduling/date-picker/form", height="150", alt="{Platform} Date Picker Input Form Example"`
+`sample="/scheduling/date-picker/form", height="500", alt="{Platform} Date Picker Input Form Example"`
 
 ### Calendar Specific settings
-The `IgcDatePickerComponent` can modify some of the calendar's settings via the properties that the date picker exposes. Some of these include `visibleMonths` which allows more than one calendar to be displayed when the picker expands, `weekStart` which determines the starting day of the week, `showWeekNumbers` which shows the number for each week in the year and more.
+The `DatePicker` can modify some of the calendar's settings via the properties that the date picker exposes. Some of these include `VisibleMonths` which allows more than one calendar to be displayed when the picker expands, `WeekStart` which determines the starting day of the week, `ShowWeekNumbers` which shows the number for each week in the year and more.
 
 ## Internationalization
 
-The localization of the `IgcDatePickerComponent` can be controlled through its `locale` input. 
+The localization of the `DatePicker` can be controlled through its `Locale` input. 
 
-Here is how a DatePicker with Japanese locale definition would look like:
+Here is how a `DatePicker` with Japanese locale definition would look like:
 ```html
 <igc-date-picker locale="ja-JP">
 </igc-date-picker>
@@ -163,13 +163,12 @@ Here is how a DatePicker with Japanese locale definition would look like:
 The `DatePicker` component derives from the `Input` and `Calendar` component, so it exposes all available CSS parts. See [Input Styling](../inputs/input.md#styling) and [Calendar Styling](calendar.md#styling) for reference.
 
 
-`sample="/scheduling/date-picker/styling", height="150", alt="{Platform} Date Picker Input Styling Example"`
+`sample="/scheduling/date-picker/styling", height="500", alt="{Platform} Date Picker Input Styling Example"`
 
 ## API References
 
  - `Input`
  - `Calendar`
- - `DateParts`
  - `DatePicker`
 
 
