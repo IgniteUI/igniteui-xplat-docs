@@ -64,9 +64,9 @@ _language: ja
 - `Single` - `{ComponentName}` 内の 1 セルのみの選択が利用可能になります。
 - `Multiple` - `{ComponentName}` の選択のデフォルト状態です。複数セルの選択は、マウスの左ボタンを連続してクリックした後、マウスをセル上にドラッグすることで利用できます。
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart:  Grid, TreeGrid, HierarchicalGrid -->
 > 詳細については、[セル選択トピック](cell-selection.md)を参照してください。
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd:  Grid, TreeGrid, HierarchicalGrid -->
 
 ### {Platform} {ComponentTitle} 列選択
 
@@ -78,9 +78,9 @@ _language: ja
 - Multi column selection (複数列の選択) - <kbd>Ctrl</kbd> キーを押しながら列セルを<kbd>マウス クリックします</kbd>。
 - Range column selection (列の範囲選択) - <kbd>Shift</kbd> キーを押しながら + <kbd>マウス クリック</kbd>、その間のすべての列が選択されます。
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart:  Grid, TreeGrid, HierarchicalGrid -->
 > 詳細については、[列選択トピック](column-selection.md)を参照してください。
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd:  Grid, TreeGrid, HierarchicalGrid -->
 
 <!-- ComponentStart: Grid -->
 

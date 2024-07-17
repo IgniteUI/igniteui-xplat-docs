@@ -1,6 +1,6 @@
 ---
-title: {Platform} チャート データの凡例 | データ視覚化ツール | インフラジスティックス
-_description: インフラジスティックス {ProductName} チャートでデータ凡例を使用する
+title: {Platform} チャートのデータ凡例 | データ視覚化ツール | インフラジスティックス
+_description: インフラジスティックスの {ProductName} チャートでデータ凡例をお試しください!
 _keywords: {Platform} charts, chart legend, legend, legend types, {ProductName}, Infragistics, {Platform} チャート, チャート凡例, 凡例, 凡例タイプ, インフラジスティックス
 mentionedTypes: ["XamCategoryChart", "XamDataLegend", "Series", "DataLegendSummaryType", "DataAbbreviationMode" ]
 namespace: Infragistics.Controls.Charts
@@ -23,7 +23,7 @@ _language: ja
 
 ヘッダー行には、カテゴリ シリーズとファイナンシャル シリーズにマウスを合わせると、x 軸の現在のラベルが表示されます。x 軸に日付が表示されている場合は、`HeaderFormatDate` プロパティと `HeaderFormatTime` プロパティを使用して、`XamDataLegend` の日付と時刻を書式設定できます。他のタイプのシリーズの場合、`XamDataLegend` はヘッダー行を描画しません。
 
-### シリーズ列
+### シリーズ行
 
 シリーズ行は、チャートにプロットされた各シリーズを表します。これらの行には、凡例バッジ、シリーズ タイトル、シリーズの実際の値 / 省略値、および指定されている場合は省略記号と測定単位が表示されます。`IncludedSeries` または `ExcludedSeries` プロパティをシリーズのインデックス (1、2、3) またはシリーズのタイトル (Tesla、Microsoft) のコレクションに設定することにより、シリーズの行をフィルタできます。
 
@@ -94,24 +94,61 @@ OHLC 価格の **TypicalPrice** (標準価格) とパーセンテージの **Cha
 
 ## {Platform} データ凡例値の書式設定
 
-`XamDataLegend` は、`ValueFormatAbbreviation` プロパティを使用して、大きな数値の自動省略形を提供します。これにより、単位の列に kilo、million、billion などの乗数が追加されます。`ValueFormatMinFractions` および `ValueFormatMaxFractions` を設定することにより、表示される小数桁数をカスタマイズできます。これにより、小数点以下に表示される最小桁数と最大桁数をそれぞれ決定できます。次の例は、これらのプロパティの使用方法を示しています:
+`XamDataLegend` は、`ValueFormatAbbreviation` プロパティを使用して、大きな数値の自動省略形を提供します。これにより、単位の列に kilo、million、billion などの乗数が追加されます。`ValueFormatMinFractions` および `ValueFormatMaxFractions` を設定することにより、表示される小数桁数をカスタマイズできます。これにより、小数点以下に表示される最小桁数と最大桁数をそれぞれ決定できます。
+次の例は、これらのプロパティの使用方法を示しています:
 
 `sample="/charts/category-chart/data-legend-formatting-decimals", height="450", alt="{Platform} データ凡例の小数の書式設定"`
 
 
 
-## {Platform} データ凡例値モード
+## {Platform} データ凡例の値モード
 
-`ValueFormatMode` プロパティを変更することにより、`XamDataLegend` 内の値のデフォルトの 10 進表示を通貨表示に変更することができます。また、`ValueFormatCulture` プロパティにカルチャ タグを設定することで、表示される通貨記号のカルチャを変更できます。たとえば、次のデータ凡例の例では、`ValueFormatCulture` が「en-GB」に設定されており、英国ポンド (£) の記号が表示されています:
+`ValueFormatMode` プロパティを変更することにより、`XamDataLegend` 内の値のデフォルトの 10 進表示を通貨表示に変更することができます。また、`ValueFormatCulture` プロパティにカルチャ タグを設定することで、表示される通貨記号のカルチャを変更できます。たとえば、次のデータ凡例の例では、`ValueFormatCulture` が 「en-GB」 に設定されており、英国ポンド (£) の記号が表示されています:
 
 `sample="/charts/financial-chart/data-legend-formatting-currency", height="450", alt="{Platform} 通貨の書式設定"`
 
+## {Platform} データ凡例のグループ化
+
+`DataLegendGroup` は、すべてのタイプのシリーズで、データ凡例内のシリーズ グループを分類する文字列に設定できます。各グループには、別のシリーズ グループが表示される前に、独自の集計行が表示されます。
+デフォルトでは、DataLegend はグループ名を非表示にしますが、`GroupRowVisible` プロパティを true に設定するとグループ名を表示できます。
+
+`sample="/charts/data-chart/data-legend-grouping", height="450", alt="{Platform} データ凡例のグループ化"`
+
+
+## {Platform} データ凡例のスタイル設定とイベント
+
+凡例のグループ化部分を含むいくつかのプロパティが公開されています。
+
+- `GroupRowMargin`
+- `GroupTextMargin`
+- `GroupTextColor`
+- `GroupTextFontSize`
+- `GroupTextFontFamily`
+- `GroupTextFontStyle`
+- `GroupTextFontStretch`
+- `GroupTextFontWeight`
+- `HeaderTextMargin`
+- `HeaderTextColor`  
+- `HeaderTextFontSize`
+- `HeaderTextFontFamily`
+- `HeaderTextFontStyle`
+- `HeaderTextFontStretch` 
+- `HeaderTextFontWeight`
+
 `XamDataLegend` には、値が更新されているマウス操作中であっても、対応する行を描画するときに発生するいくつかのイベントがあります。それらのイベントを、その使用目的とあわせて以下に示します:
 
+- `StyleGroupRow`: このイベントは、グループ行に表示されるテキストのスタイルを設定するために、グループごとに発生します。
+- `StyleHeaderRow`: このイベントは、ヘッダー行を描画するときに発生します。
 - `StyleSeriesRow`: このイベントは、シリーズの行ごとに 1 回発生し、シリーズの値の条件付きスタイル設定を可能にします。
 - `StyleSeriesColumn`: このイベントは、シリーズの列ごとに 1 回発生し、シリーズの値の条件付きスタイル設定を可能にします。
 - `StyleSummaryRow`: このイベントは、集計行を描画するときに 1 回発生します。
 - `StyleSummaryColumn`: このイベントは、集計列を描画するときに 1 回発生します。
+
+一部のイベントは、引数として `DataLegendStylingRowEventArgs` パラメーターを公開します。これにより、各項目のテキスト、テキストの色、および行の全体的な可視性をカスタマイズできます。イベント引数は、イベント固有のプロパティも公開します。たとえば、`StyleSeriesRow` イベントはシリーズごとに発生するため、イベント引数は、シリーズを表す行の、シリーズ インデックスとシリーズ タイトルを返します。
+
+`StyleSummaryColumn` および `SeriesStyleColumn` イベントは、シリーズ内の各フィールドをカスタマイズするために、引数として `DataLegendStylingColumnEventArgs` パラメーターを公開します。イベント引数は、列インデックスや値メンバーなどの列に関するプロパティに関連するイベント固有のプロパティも公開します。
+
+`sample="/charts/data-chart/data-legend-styling", height="450", alt="{Platform} データ凡例のスタイル設定"`
 
 
 ## API リファレンス

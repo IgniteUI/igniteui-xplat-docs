@@ -232,15 +232,15 @@ grid.pinning = { rows: RowPinningPosition.Bottom };
     }
 ```
 
-<!-- ComponentStart: Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-    <{ComponentSelector} id="dataGrid" autoGenerate="true">
-    </{ComponentSelector}>
+<{ComponentSelector} id="dataGrid" autoGenerate="true">
+</{ComponentSelector}>
 
-    var hierarchicalGrid = document.getElementById("dataGrid") as IgrGrid;
-    hierarchicalGrid.pinning = { rows: RowPinningPosition.Bottom };
+var grid = document.getElementById("dataGrid") as {ComponentSelector};
+grid.pinning = { rows: RowPinningPosition.Bottom };
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
 ## Custom Row Pinning UI
 
@@ -325,7 +325,7 @@ public pinCellTemplate = (ctx: IgcCellTemplateContext) => {
 <!-- React -->
 ```tsx
 function cellPinCellTemplate(ctx: IgrCellTemplateContext) {
-    const index = ctx.dataContext.cell.id.rowIndex;
+    const index = ctx.dataContext.cell.row.index;
     return (
         <>
             <span onPointerDown={(e: any) => toggleRowPin(index)}>📌</span>

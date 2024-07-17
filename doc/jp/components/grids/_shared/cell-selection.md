@@ -301,13 +301,18 @@ expectedData = [
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
-
+<!-- WebComponents -->
 ```ts
 <igc-tree-grid class="treeGrid"></igc-tree-grid>
 ```
+<!-- end: WebComponents -->
 
 ```razor
 <IgbTreeGrid Class="treeGrid"></IgbTreeGrid>
+```
+
+```tsx
+<IgrTreeGrid className="treeGrid"></IgrTreeGrid>
 ```
 
 次に、そのクラスに関連する CSS プロパティを設定します。
@@ -417,7 +422,7 @@ $custom-grid-theme: grid-theme(
 ```
 
 
-カスタム テーマを適用すると、選択したグリッドセルが選択した色で強調表示されます。
+カスタム テーマを適用すると、選択したグリッドセルが選択した色でハイライト表示されます。
 
 ### デモ
 `sample="/{ComponentSample}/multi-cell-selection-style", height="620", alt="{Platform} {ComponentTitle} 複数セル選択の例"`

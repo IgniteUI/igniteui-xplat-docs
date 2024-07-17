@@ -415,7 +415,7 @@ function restoreGridState() {
 
 ## 列の復元
 
-`GridState` はデフォルトで列テンプレート、列フォーマッタなどを保持しません ([制限](state-persistence.md#制限)を参照))。これらの復元は、アプリケーション レベルのコードで実現できます。テンプレート化された列でこれを行う方法を示します。
+`GridState` はデフォルトで列テンプレート、列フォーマッタなどを保持しません ([制限](state-persistence.md#制限)を参照)。これらの復元は、アプリケーション レベルのコードで実現できます。テンプレート化された列でこれを行う方法を示します。
 
 1. テンプレート参照変数 (以下の例では `#activeTemplate`) を定義し、`ColumnInit` イベントにイベント ハンドラーを割り当てます。
 
@@ -751,7 +751,9 @@ setState snippet
 
 ## ピボット ストラテジの復元
 
-`GridState` は、リモート ピボット操作もカスタム ディメンション ストラテジも保持しません<!-- (詳細については、[Pivot Grid リモート操作]((./remote-operations.md)のサンプルを参照してください) ([制限](state-persistence.md#制限)を参照) -->。これらの復元は、アプリケーション レベルのコードで実現できます。`GridState` は、`StateParsed` と呼ばれるイベントを公開します。このイベントはグリッド状態が適用される前に追加で変更するために使用できます。以下はその方法です。
+`GridState` は、リモート ピボット操作もカスタム ディメンション ストラテジも保持しません。
+<!-- (詳細については、[Pivot Grid リモート操作](./remote-operations.md)のサンプルを参照してください) ([制限](state-persistence.md#制限)を参照) -->
+これらの復元は、アプリケーション レベルのコードで実現できます。`GridState` は、`StateParsed` と呼ばれるイベントを公開します。このイベントはグリッド状態が適用される前に追加で変更するために使用できます。以下はその方法です。
 
 > `StateParsed` は、文字列引数で `SetState` を使用している場合にのみ発行します。
 
@@ -821,11 +823,11 @@ state.setState(gridState.columnSelection);
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
 <!-- Angular -->
-* `GetState` メソッドは、JSON.stringify() メソッドを使用して、元のオブジェクトをJSON文字列に変換します。JSON.stringify() が関数をサポートしないため、`GridState` ディレクティブは、columns `Formatter`、`Filters`、`Summaries`、`SortStrategy`、`CellClasses`、`CellStyles`、`HeaderTemplate` および `BodyTemplate` プロパティを無視します。
-* <!-- end: Angular -->
+* `GetState` メソッドは、JSON.stringify() メソッドを使用して、元のオブジェクトを JSON 文字列に変換します。JSON.stringify() が関数をサポートしないため、`GridState` ディレクティブは、columns `Formatter`、`Filters`、`Summaries`、`SortStrategy`、`CellClasses`、`CellStyles`、`HeaderTemplate` および `BodyTemplate` プロパティを無視します。
+<!-- end: Angular -->
 
 <!-- Blazor, React, WebComponents -->
-* `GetStateAsString` メソッドは、JSON.stringify() メソッドを使用して、元のオブジェクトをJSON文字列に変換します。JSON.stringify() が関数をサポートしないため、`GridState` コンポーネントは、列の `Formatter`、`Filters`、`Summaries`、`SortStrategy`、`CellClasses`、`CellStyles`、`HeaderTemplate` および `BodyTemplate` プロパティを無視します。
+* `GetStateAsString` メソッドは、JSON.stringify() メソッドを使用して、元のオブジェクトを JSON 文字列に変換します。JSON.stringify() が関数をサポートしないため、`GridState` コンポーネントは、列の `Formatter`、`Filters`、`Summaries`、`SortStrategy`、`CellClasses`、`CellStyles`、`HeaderTemplate` および `BodyTemplate` プロパティを無視します。
 <!-- end: Blazor, React, WebComponents -->
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
@@ -833,7 +835,7 @@ state.setState(gridState.columnSelection);
 <!-- ComponentStart: PivotGrid -->
 
 <!-- Angular -->
-* `GetState` メソッドは、JSON.stringify() メソッドを使用して、元のオブジェクトをJSON文字列に変換します。JSON.stringify() は関数をサポートされていないため、`GridState` ディレクティブはピボット ディメンション `MemberFunction`、ピボット値 `Member`、`Formatter`、カスタム `Aggregate` 関数、`Styles`、およびピボット構成戦略 (`ColumnStrategy` および `RowStrategy`) を無視します。
+* `GetState` メソッドは、JSON.stringify() メソッドを使用して、元のオブジェクトを JSON 文字列に変換します。JSON.stringify() は関数をサポートされていないため、`GridState` ディレクティブはピボット ディメンション `MemberFunction`、ピボット値 `Member`、`Formatter`、カスタム `Aggregate` 関数、`Styles`、およびピボット構成戦略 (`ColumnStrategy` および `RowStrategy`) を無視します。
 <!-- end:Angular -->
 
 <!-- ComponentEnd: PivotGrid -->
