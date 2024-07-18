@@ -156,7 +156,7 @@ Let's create a banner with two custom buttons - one for dismissing the notificat
 > According to Google's [Material Design](https://material.io/design/components/banners.html#anatomy) guidelines, a banner should have a maximum of 2 buttons present. The `Banner` does not explicitly limit the number of elements under the `actions` slot, but it is strongly recommended to use up to 2 if you want to adhere to the material design guidelines.
 
 
-The dismiss option (`'Continue Offline'`) doesn't need any further logic, so it can just call the `hide()` method. The confirm action (`'Turn On Wifi'`), however, requires some additional logic, so we have to define it in the component. Then, we will add an event listener for the `click` event. The last step is to call the `refreshBanner()` method on each change, which will toggle the banner depending on the `wifiState`.
+The dismiss option (`'Continue Offline'`) doesn't need any further logic, so it can just call the `Hide` method. The confirm action (`'Turn On Wifi'`), however, requires some additional logic, so we have to define it in the component. Then, we will add an event listener for the `click` event. The last step is to call the `refreshBanner()` method on each change, which will toggle the banner depending on the `wifiState`.
 
 The navbar will have a Wifi icon and we will add an event listener for its `click` event as well. As the `refreshBanner()` method is called on each change, the icon will not only toggle the banner, but change according to the state of the connection:
 
@@ -206,7 +206,7 @@ public refreshBanner() {
 }
 ```
 
-Finally, we will add a `toast`, displaying a message about the WiFi state. The results of the templated banner can be seen in the demo below:
+Finally, we will add a `Toast`, displaying a message about the WiFi state. The results of the templated banner can be seen in the demo below:
 
 `sample="/notifications/banner/banner-advanced-sample", height="530", alt="{Platform} Banner Example"`
 
