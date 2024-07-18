@@ -250,7 +250,7 @@ setIconRef("control", "player", {
 ```
 <!-- end: WebComponents -->
 
-`sample="/layouts/icon/reference", height="70", alt="{Platform} Icon References"`
+`sample="/layouts/icon/references", height="70", alt="{Platform} Icon References"`
 
 ### Size
 
