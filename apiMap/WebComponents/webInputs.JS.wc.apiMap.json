@@ -22,6 +22,7 @@
     "igc-circular-gradient-module.ts",
     "igc-circular-progress-module.ts",
     "igc-combo-module.ts",
+    "igc-date-picker-module.ts",
     "igc-date-time-input-module.ts",
     "igc-dialog-module.ts",
     "igc-dock-manager-module.ts",

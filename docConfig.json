@@ -374,6 +374,7 @@
             "ComboComponent",
             "ComponentBoolValueChangedEventArgs",
             "ComponentValueChangedEventArgs",
+            "DatePicker",
             "DateRangeType",
             "DateRangeDescriptor",
             "DateTimeInputComponent",
