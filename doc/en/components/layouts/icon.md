@@ -205,7 +205,52 @@ public iconRef(icon: IgrIcon) {
 }
 ```
 
-Then you'd use it in the same way as described in the component sample above.
+### Icon References
+
+In the previous section we explored icon registration via either `registerIcon` or `registerIconFromText`. We can also create icon aliases that refer to already registered icons. This allows us to refer to the aliased icon in our template, giving us the freedom to swap icons by simply changing the underlying reference in our business logic, without modifying the markup.
+
+Let's say we have a couple of icons in our application that represent state - a play icon and a pause icon. We want to swap the play icon with the pause icon when something is playing and vice-versa.
+
+The traditional approach is to write some business logic in our template that does the swapping. By aliasing the icon, we can simply change the underlying reference so when the content is playing we swap the reference with the pause icon and vice-versa. To do this, we can use the `setIconRef` function.
+
+Enough talking, here's a practical example of how to achieve all of the above:
+
+<!-- WebComponents -->
+```ts
+import {
+  registerIcon,
+  registerIconFromText,
+  setIconRef,
+} from "igniteui-webcomponents";
+
+// Let's register the play and pause icons first
+registerIcon(
+  "play",
+  "https://cdn.jsdelivr.net/npm/material-design-icons@3.0.1/av/svg/production/ic_play_circle_filled_24px.svg",
+  "material"
+);
+
+registerIcon(
+  "pause",
+  "https://cdn.jsdelivr.net/npm/material-design-icons@3.0.1/av/svg/production/ic_pause_circle_filled_24px.svg",
+  "material"
+);
+
+const playing = false;
+
+// Let's create an alias for the player control icon
+setIconRef("control", "player", {
+    name: this.playing ? "pause" : "play",
+    collection: "material"
+});
+```
+
+```html
+<igc-icon name="control" collection="player"></igc-icon>
+```
+<!-- end: WebComponents -->
+
+`sample="/layouts/icon/reference", height="70", alt="{Platform} Icon References"`
 
 ### Size
 
