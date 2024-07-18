@@ -301,13 +301,18 @@ expectedData = [
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
-
+<!-- WebComponents -->
 ```ts
 <igc-tree-grid class="treeGrid"></igc-tree-grid>
 ```
+<!-- end: WebComponents -->
 
 ```razor
 <IgbTreeGrid Class="treeGrid"></IgbTreeGrid>
+```
+
+```tsx
+<IgrTreeGrid className="treeGrid"></IgrTreeGrid>
 ```
 
 次に、そのクラスに関連する CSS プロパティを設定します。
