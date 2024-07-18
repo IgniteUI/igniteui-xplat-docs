@@ -259,6 +259,11 @@ The methods from above return a **number** value (the number of times the `{Comp
 ```
 
 <!-- WebComponents -->
+```html
+<igc-input id="searchBox" name="searchBox">
+</igc-input>
+```
+
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
@@ -504,7 +509,7 @@ public searchKeyDown(ev) {
 <!-- ComponentStart: Grid -->
 <!-- WebComponents -->
 ```html
-<input id="search1"/>
+<input id="searchBox" name="searchBox"/>
 ```
 
 ```typescript
