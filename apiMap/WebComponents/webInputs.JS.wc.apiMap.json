@@ -3,6 +3,7 @@
     "igc-accordion-module.ts",
     "igc-avatar-module.ts",
     "igc-badge-module.ts",
+    "igc-banner-module.ts",
     "igc-base-alert-like-module.ts",
     "igc-base-combo-box-like-module.ts",
     "igc-base-option-like-module.ts",
@@ -156,6 +157,19 @@
     "names":[{"platform": "WebComponents","fileName": "igc-active-step-changing-args-event-args.ts","mappedName": "IgcActiveStepChangingArgsEventArgs"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "IgcActiveStepChangingArgsDetail","mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "Banner",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "WebComponents","fileName": "igc-banner-component.ts","mappedName": "IgcBannerComponent"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "open"}], "originalName": "Open"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "show"}], "originalName": "Show"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "hide"}], "originalName": "Hide"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "toggle"}], "originalName": "Toggle"} ]
   },
   {
     "originalName": "BaseAlertLike",
