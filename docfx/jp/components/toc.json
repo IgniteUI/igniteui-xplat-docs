@@ -1748,6 +1748,12 @@
     "header": true
   },
   {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "バナー",
+    "href": "notifications/banner.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular"],
     "name": "スナックバー",
     "href": "notifications/snackbar.md"
