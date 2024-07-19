@@ -1519,7 +1519,7 @@
     "status": ""
   },
    {
-    "exclude": ["Angular"],
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "Divider",
     "href": "layouts/divider.md",
     "status": "NEW"

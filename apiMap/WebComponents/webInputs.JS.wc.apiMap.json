@@ -25,6 +25,7 @@
     "igc-combo-module.ts",
     "igc-date-time-input-module.ts",
     "igc-dialog-module.ts",
+    "igc-divider-module.ts",
     "igc-dock-manager-module.ts",
     "igc-dropdown-group-module.ts",
     "igc-dropdown-header-module.ts",

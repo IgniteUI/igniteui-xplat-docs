@@ -86,7 +86,7 @@ The `Divider` is capable of displaying images, initials, or any other content, i
 ## Usage
 ### Vertical Divider
 
-If the `vertical` attribute is set you the direction of the divider would be changed from horizontal to vertical.
+If the `Vertical` attribute is set the direction of the divider would be changed from horizontal to vertical.
 
 ```html
 <igc-divider vertical></igc-divider>
@@ -104,7 +104,7 @@ If the `vertical` attribute is set you the direction of the divider would be cha
 
 ### Type
 
-The `type` attribute determines whether to render a `solid` or a `dashed` divider line. The default value is `solid`.
+The `Type` attribute determines whether to render a `solid` or a `dashed` divider line. The default value is `solid`.
 
 ```html
 <igc-divider type="dashed"></igc-divider>
@@ -120,25 +120,44 @@ The `type` attribute determines whether to render a `solid` or a `dashed` divide
 
 `sample="/layouts/divider/dashed", height="220", alt="{Platform} Divider Dashed Example"`
 
-### Middle
+### Inset Divider
 
-```html
-<igc-divider middle="true"></igc-divider>
+```css
+.withInset{
+    --inset: 100px;
+    --color:red;
+}
 ```
 
+```html
+// Both side
+<igc-divider middle="true" class="withInset"></igc-divider>
+// Left side only 
+<igc-divider></igc-divider>
+```
+
+
 ```tsx
-<IgrDivider middle="true"></IgrDivider>
+// Both side
+<IgrDivider middle="true" className="withInset"></IgrDivider>
+// Left side only 
+<IgrDivider  className="withInset"></IgrDivider>
 ```
 
 ```razor
-<IgbDivider Middle="True"></igrDivider>
+// Both side
+<IgbDivider Middle="True" class="withInset"</igrDivider>
+// Left side only 
+<IgbDivider class="withInset"</igrDivider>
 ```
 
-The `middle` attribute is used in combination with the `--inset` css variable. When set and `--inset` is provided, it will shrink the divider line from both sides. The default value of the `middle` attribute is false. 
+The `Middle` attribute is used in combination with the `--inset` css variable. When set and `--inset` is provided, it will shrink the divider line from both sides. The default value of the `Middle` attribute is false. 
 
 `sample="/layouts/divider/middle", height="220", alt="{Platform} Divider Middle Inset Example"`
 
 ### Using Divider Inside Select Component
+
+The following sample illustrates how divider component can be integrated within select component in order to distinguish two groups of items.
 
 ```html
 <igc-select>
