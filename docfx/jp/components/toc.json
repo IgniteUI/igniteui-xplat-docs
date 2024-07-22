@@ -1517,6 +1517,12 @@
     "status": ""
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "デバイダー",
+    "href": "layouts/divider.md",
+    "status": "NEW"
+  },
+  {
     "name": "メニュー",
     "header": true
   },
