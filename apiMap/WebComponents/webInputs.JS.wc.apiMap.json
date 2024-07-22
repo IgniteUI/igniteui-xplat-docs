@@ -26,6 +26,7 @@
     "igc-date-picker-module.ts",
     "igc-date-time-input-module.ts",
     "igc-dialog-module.ts",
+    "igc-divider-module.ts",
     "igc-dock-manager-module.ts",
     "igc-dropdown-group-module.ts",
     "igc-dropdown-header-module.ts",
@@ -362,6 +363,18 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "show"}], "originalName": "Show"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "title"}], "originalName": "Title"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "toggle"}], "originalName": "Toggle"} ]
+  },
+{
+    "originalName": "Divider",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "WebComponents","fileName": "igc-divider-component.ts","mappedName": "IgcDividerComponent"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "middle"}], "originalName": "Middle"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string", "mappedName": "type"}], "originalName": "Type"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean",  "mappedName": "vertical"}], "originalName": "Vertical"} ]
   },
   {
     "originalName": "ExpansionPanel",

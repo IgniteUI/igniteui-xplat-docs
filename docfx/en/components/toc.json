@@ -1518,6 +1518,12 @@
     "href": "layouts/tabs.md",
     "status": ""
   },
+   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Divider",
+    "href": "layouts/divider.md",
+    "status": "NEW"
+  },
   {
     "name": "Menus",
     "header": true
