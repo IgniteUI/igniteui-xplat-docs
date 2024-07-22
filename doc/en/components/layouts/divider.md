@@ -125,7 +125,7 @@ The `Type` attribute determines whether to render a `solid` or a `dashed` divide
 The `Divider` can be set in on both sides. To `inset` the divider, set the `Middle` attribute to true in combination with the `--inset` css variable. This will shrink the divider line from both sides. The default value of the `Middle` attribute is false.
 
 ```css
-// DividerStyles.css
+/* DividerStyles.css */
 .withInset{
     --inset: 100px;
     --color:red;
@@ -159,7 +159,7 @@ The `Divider` can be set in on both sides. To `inset` the divider, set the `Midd
 
 ### Using Divider Inside Select Component
 
-The following sample illustrates how the `Divider` component can be integrated within the `Select` component in order to distinguish two groups of items.
+The following sample illustrates how the `Divider` can be integrated within the `Select` in order to distinguish two groups of items.
 
 ```html
 <igc-select>
