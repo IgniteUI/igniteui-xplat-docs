@@ -379,6 +379,7 @@
             "DateRangeDescriptor",
             "DateTimeInputComponent",
             "DialogComponent",
+            "Divider",
             "DropdownComponent",
             "DropdownGroup",
             "DropdownHeader",
