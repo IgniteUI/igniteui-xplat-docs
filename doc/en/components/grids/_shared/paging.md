@@ -131,7 +131,6 @@ constructor() {
     paginator.page = grid.page;
     paginator.totalRecords = grid.totalRecords;
     paginator.selectOptions = selectOptions;
-    paginator.displayDensity = grid.displayDensity;
 }
 ```
 <!-- end: WebComponents -->
