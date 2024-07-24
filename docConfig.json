@@ -478,7 +478,8 @@
             { "name": "{PackageVerChanges-23-2-APR}", "value": "23.2.191 (April 2024)"  },
             { "name": "{PackageVerChanges-23-2-APR2}", "value": "23.2.204 (March 2024)"  },
             { "name": "{PackageVerChanges-24-1-JUN}", "value": "23.2.257 (June 2024)"  },
-            { "name": "{PackageVerLatest}",          "value": "23.2.257"},
+            { "name": "{PackageVerChanges-24-1-AUG}", "value": "24.1.* (August 2024)"  },
+            { "name": "{PackageVerLatest}",          "value": "24.1.*"},
 
             { "name": "{RepoSamples}",   "value": "https://github.com/IgniteUI/igniteui-blazor-examples/tree/master/samples"},
             { "name": "{RepoBrowser}",   "value": "https://github.com/IgniteUI/igniteui-blazor-examples/tree/master/browser"},
