@@ -749,7 +749,6 @@ When we define a custom paginator content we need to define the content in a way
     [(page)]="page"
     [(perPage)]="perPage"
     [selectOptions]="selectOptions"
-    [displayDensity]="grid1.displayDensity"
     (pageChange)="paginate($event)"
     (perPageChange)="perPageChange($event)">
     <igx-paginator-content>

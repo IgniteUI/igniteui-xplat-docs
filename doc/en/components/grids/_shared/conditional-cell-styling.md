@@ -1137,7 +1137,7 @@ function editDone(grid, evt) {
 * [Searching](search.md)
 <!-- * [Toolbar](toolbar.md) -->
 * [Multi-column Headers](multi-column-headers.md)
-* [Display Density](display-density.md)
+* [Size](size.md)
 <!-- ComponentEnd:  Grid -->
 
 
