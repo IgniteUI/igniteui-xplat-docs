@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 検索フィルター
 
-{Platform} {ComponentTitle} の {ProductName} 検索フィルター機能を使用すると、データのコレクション内の値を検索するプロセスが可能になります。この機能のセットアップが簡単になり、検索入力ボックス、ボタン、キーボード ナビゲーション、その他の便利な機能を使用して実装できるため、ユーザー エクスペリエンスがさらに向上します。ブラウザーにはネイティブなコンテンツ検索機能がありますが、ほとんどの場合で `{ComponentName}` は表示範囲外の行列を仮想化します。そのため、ネイティブ ブラウザー検索は DOM の一部でないため仮想化セルでデータを検索できません。{ComponentName} では、{Platform} Material テーブル ベースのグリッドの拡張により、**検索 API** を使用した**仮想コンテンツ**の検索が可能です。
+{Platform} {ComponentTitle} の {ProductName} 検索フィルター機能を使用すると、データのコレクション内の値を検索するプロセスが可能になります。この機能のセットアップが簡単になり、検索入力ボックス、ボタン、キーボード ナビゲーション、その他の便利な機能を使用して実装できるため、ユーザー エクスペリエンスがさらに向上します。ブラウザーにはネイティブなコンテンツ検索機能がありますが、ほとんどの場合で `{ComponentName}` は表示範囲外の行列を仮想化します。そのため、ネイティブ ブラウザー検索は DOM の一部でないため仮想化セルでデータを検索できません。`{ComponentName}` では、{Platform} Material テーブル ベースのグリッドの拡張により、**検索 API** を使用した**仮想コンテンツ**の検索が可能です。
 
 ## {Platform} 検索の例
 
@@ -152,6 +152,7 @@ public exactMatch: boolean = false;
 
     private searchBox: IgcInputComponent;
     
+    private searchIcon: IgcIconComponent;
     private clearIcon: IgcIconComponent;
     private nextIconButton: IgcIconButtonComponent;
     private prevIconButton: IgcIconButtonComponent;
@@ -170,6 +171,7 @@ public bool exactMatch = false;
 
 ```tsx
 const gridRef = useRef<IgrGrid>(null);
+const searchIconRef = useRef<IgrIconButton>(null)
 const clearIconRef = useRef<IgrIconButton>(null);
 const iconButtonPrevRef = useRef<IgrIconButton>(null);
 const caseSensitiveChipRef = useRef<IgrChip>(null);
@@ -279,6 +281,7 @@ public nextSearch(){
 ```tsx
 function handleOnSearchChange(input: IgrInput, event: IgrComponentValueChangedEventArgs) {
     setSearchText(event.detail);
+    gridRef.current.findNext(event.detail, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
 }
 
 function nextSearch() {
@@ -407,15 +410,11 @@ constructor() {
     prevIconButton.addEventListener("click", this.prevSearch);
 }
 public prevSearch() {
-    const grid = document.getElementById('grid') as IgcGridComponent;
-    const searchBox = document.getElementById('searchBox') as IgcInputComponent;
-    grid.findPrev(searchBox.value, false, false);
+    this.grid.findPrev(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
 }
 
 public nextSearch() {
-    const grid = document.getElementById('grid') as IgcGridComponent;
-    const searchBox = document.getElementById('searchBox') as IgcInputComponent;
-    grid.findNext(searchBox.value, false, false);
+    this.grid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
 }
 ```
 <!-- end: WebComponents -->
@@ -511,33 +510,26 @@ public searchKeyDown(ev) {
 <!-- ComponentStart: Grid -->
 <!-- WebComponents -->
 ```html
-<input id="search1"/>
+<input id="searchBox" name="searchBox"/>
 ```
 
 ```typescript
 constructor() {
-    const search1 = document.getElementById('search1') as HtmlInputElement;
-    search1.addEventListener('keydown', this.searchKeyDown);
-    search1.addEventListener('change', this.findNext);
+     searchBox.addEventListener("keydown", (evt) => { this.onSearchKeydown(evt); });
+     this.searchBox.addEventListener("igcInput", (evt) => {
+        this.searchIcon.name = evt.detail ? 'clear' : 'search';
+        this.grid.findNext(evt.detail, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+     });
 }
 
-public findNext(e) {
-    const searchText = e.target.value;
-    const caseSensitive = false;
-    const exactMatch = false;
-    const grid = document.getElementById('grid') as IgcGridComponent;
-    grid.findNext(searchText, caseSensitive, exactMatch)
-}
-
-public searchKeyDown(ev) {
-    const search1 = document.getElementById('search1') as HtmlInputElement;
-    const grid = document.getElementById('grid') as IgcGridComponent;
-    if (ev.key === 'Enter') {
-        ev.preventDefault();
-        grid.findNext(search1.value, false, false);
-    } else if (ev.key === 'ArrowUp' || ev.key === 'ArrowLeft') {
-        ev.preventDefault();
-        grid.findPrev(search1.value, false, false);
+public onSearchKeydown(evt: KeyboardEvent) {  
+        if (evt.key === 'Enter' || evt.key === 'ArrowDown') {
+            evt.preventDefault();
+            this.grid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+        } else if (evt.key === 'ArrowUp') {
+            evt.preventDefault();
+            this.grid.findPrev(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+        }
     }
 }
 ```
@@ -927,7 +919,7 @@ public clearSearch() {
 <!-- ComponentStart: Grid -->
 ```html
 <igc-input id="searchBox" name="searchBox">
-    <igc-icon id="clearIcon" slot="prefix" name="clear" collection="material"></igc-icon>
+    <igc-icon id="searchIcon" slot="prefix" name="search" collection="material"></igc-icon>
     <div slot="suffix">
         <igc-chip selectable="true" id="caseSensitiveChip">Case Sensitive</igc-chip>
         <igc-chip selectable="true" id="exactMatchChip">Exact Match</igc-chip>
@@ -945,10 +937,12 @@ constructor() {
     const prevIconText = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z'></path></svg>";
     const nextIconText = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'></path></svg>";
     const clearIconText = "<svg width='24' height='24' viewBox='0 0 24 24' title='Clear'><path d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></svg>";
+    const searchIconText = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' /></svg>";
 
     registerIconFromText("prev", prevIconText, "material");
     registerIconFromText("next", nextIconText, "material");
     registerIconFromText("clear", clearIconText, "material");
+    registerIconFromText("search", searchIconText, "material");
 }
 ```
 <!-- end: WebComponents -->
@@ -960,10 +954,13 @@ const nextIconText =
   "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'></path></svg>";
 const clearIconText =
   "<svg width='24' height='24' viewBox='0 0 24 24' title='Clear'><path d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></svg>";
+  const searchIconText =
+  "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' /></svg>";
 
 useEffect(() => {
-    if (clearIconRef?.current) {
-        clearIconRef.current.registerIconFromText("clear", clearIconText, "material");
+     if (searchIconRef?.current) {
+      searchIconRef.current.registerIconFromText("search", searchIconText, "material");
+      searchIconRef.current.registerIconFromText("clear", clearIconText, "material");
     }
     if (iconButtonPrevRef?.current) {
         iconButtonPrevRef.current.registerIconFromText("prev", prevIconText, "material");
@@ -975,8 +972,24 @@ useEffect(() => {
 
 <IgrInput name="searchBox" value={searchText} inputOcurred={handleOnSearchChange}>
     <div slot="prefix" key="prefix">
-        <IgrIconButton key="clearIcon" ref={clearIconRef} variant="flat" name="clear" collection="material" clicked={clearSearch}>
-        </IgrIconButton>
+        {searchText.length === 0 ? (
+            <IgrIconButton
+              key="searchIcon"
+              ref={searchIconRef} 
+              variant="flat"
+              name="search" 
+              collection="material"
+            ></IgrIconButton>
+            ) : (
+            <IgrIconButton
+              key="clearIcon"
+              ref={clearIconRef}
+              variant="flat"
+              name="clear"
+              collection="material"
+              clicked={clearSearch}
+            ></IgrIconButton>
+        )}
     </div>
     <div slot="suffix" key="chipSuffix">
         <IgrChip ref={caseSensitiveChipRef} key="caseSensitiveChip" selectable="true">
@@ -1004,7 +1017,7 @@ useEffect(() => {
 
 <!-- ComponentStart: TreeGrid -->
 
-`Input` 内のすべてのコンポーネントをラップします。左側で検索と 削除/クリア アイコンを切り替えます (検索入力が空かどうかに基づきます)。中央に入力を配置します。更に削除アイコンがクリックされたときに `SearchText` を更新し、{ComponentName} の `ClearSearch` メソッドを呼び出して強調表示をクリアします。
+`Input` 内のすべてのコンポーネントをラップします。左側で検索と 削除/クリア アイコンを切り替えます (検索入力が空かどうかに基づきます)。中央に入力を配置します。更に削除アイコンがクリックされたときに `SearchText` を更新し、`{ComponentName}` の `ClearSearch` メソッドを呼び出して強調表示をクリアします。
 
 ```html
 <igc-input id="searchBox" name="searchBox">
@@ -1056,7 +1069,7 @@ const prevIconText =
 const nextIconText =
   "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'></path></svg>";
 const searchIconText =
-  "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' /></svg>";
+"<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' /></svg>";
 const clearIconText =
   "<svg width='24' height='24' viewBox='0 0 24 24' title='Clear'><path d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></svg>";
 
@@ -1328,17 +1341,11 @@ constructor() {
 <!-- ComponentStart: Grid -->
 ```ts
 public nextSearch() {
-    const grid = document.getElementById('grid') as IgcGridComponent;
-    const caseSensitiveChip = document.getElementById('caseSensitiveChip') as IgcChipComponent;
-    const exactMatchChip = document.getElementById('exactMatchChip') as IgcChipComponent;
-    grid.findNext(input.value, caseSensitiveChip.selected, exactMatchChip.selected);
+    this.grid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
 }
 
 public prevSearch() {
-    const grid = document.getElementById('grid') as IgcGridComponent;
-    const caseSensitiveChip = document.getElementById('caseSensitiveChip') as IgcChipComponent;
-    const exactMatchChip = document.getElementById('exactMatchChip') as IgcChipComponent;
-    grid.findPrev(input.value, caseSensitiveChip.selected, exactMatchChip.selected);
+    this.grid.findPrev(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
 }
 ```
 <!-- ComponentEnd: Grid -->
@@ -1403,6 +1410,7 @@ function nextSearch() {
 |制限|説明|
 |--- |--- |
 |テンプレートを使用したセル内の検索|検索機能のハイライト表示が、デフォルトのセルテンプレートに対してのみ機能する問題。カスタム セル テンプレートを含む列がある場合、ハイライト表示が機能しないため、列フォーマッタなどの代替アプローチを使用するか、`Searchable` (検索可能な) プロパティを false に設定します。|
+|リモート仮想化| リモート仮想化の使用時に検索が正しく動作しません。|
 |セル テキストが切れる問題| セル内のテキストが長すぎるために検索テキストが省略記号によって切れている場合も、セルまでスクロールして一致カウントに含まれますが、ハイライト表示はされません。 |
 
 ## API リファレンス
