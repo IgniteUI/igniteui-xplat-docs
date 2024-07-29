@@ -10,6 +10,20 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## **{PackageVerChanges-24-1-AUG}**
+
+> [!Note]
+> The following breaking changes were introduced
+### General
+The `Combo` and `Input` are now generic, which require their `Value` to be specified so their type can be inferred.
+
+| Previously                       | Now                               |
+|----------------------------------|-----------------------------------|
+| `private IgbCombo Combo;`        | `private IgbCombo<string> Combo;` |
+| `private IgbInput Input;`        | `private IgbInput<string> Input;` |
+| `<IgbCombo …`                    | `<IgbCombo Value="val" ...`       |
+| `<IgbInput …`                    | `<IgbInput Value="val" ...`       |
+
 ## **{PackageVerChanges-24-1-JUN}**
 
 ### General
