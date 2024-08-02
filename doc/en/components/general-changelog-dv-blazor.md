@@ -10,6 +10,8 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## **{PackageVerChanges-24-1-JUN}**
+
 ### General
 - `Input`, `Textarea` - exposed `ValidateOnly` to enable validation rules being enforced without restricting user input.
 - `Dropdown` - `PositionStrategy` property is deprecated. The dropdown now uses the `Popover` API to render its container in the top layer of the browser viewport, making the property obsolete.
