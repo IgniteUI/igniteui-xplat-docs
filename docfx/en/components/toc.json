@@ -518,7 +518,7 @@
         "href": "grids/hierarchical-grid/sorting.md"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "Blazor"],
         "name": "State Persistence",
         "href": "grids/hierarchical-grid/state-persistence.md"
       },
@@ -786,7 +786,7 @@
         "status": ["NEW_REACT"]
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "Blazor"],
         "name": "State Persistence",
         "href": "grids/tree-grid/state-persistence.md",
         "status": ""
