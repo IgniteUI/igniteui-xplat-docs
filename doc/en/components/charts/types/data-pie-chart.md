@@ -152,9 +152,9 @@ When these conditions are met, the values of the subset will be highlighted, whi
 
 The `XamDataPieChart` supports animating its slices into view, as well as when a value changes.
 
-You can set the `IsTransitionInEnabled` property to `true` to have the pie chart animate into view. The type of animation performed can be configured by setting the `TransitionInMode` enumerated property to the type of animation you would like to see. Additionally, you can also set the `TransitionInSpeedType` property to scale with index, value, normal, or randomized. The duration of this animation can be controlled by the `TransitionInDuration` property, which takes a `TimeSpan`.
+You can set the `IsTransitionInEnabled` property to **true** to have the pie chart animate into view. The type of animation performed can be configured by setting the `TransitionInMode` enumerated property to the type of animation you would like to see. Additionally, you can also set the `TransitionInSpeedType` property to scale with index, value, normal, or randomized. The duration of this animation can be controlled by the `TransitionInDuration` property, which takes a `TimeSpan`.
 
-If you would like to animate data changes, this can also be done by setting the `AnimateSeriesWhenAxisRangeChanges` property to true. The duration of this change can be configured by setting the `TransitionDuration` property as well.
+If you would like to animate data changes, this can also be done by setting the `AnimateSeriesWhenAxisRangeChanges` property to **true**. The duration of this change can be configured by setting the `TransitionDuration` property as well.
 
 The following sample demonstrates the usage of animation in the `XamDataPieChart`:
 
