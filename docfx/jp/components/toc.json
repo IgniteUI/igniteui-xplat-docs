@@ -1098,6 +1098,11 @@
     "status": ""
   },
   {
+    "name": "Data Pie Chart",
+    "href": "charts/types/data-pie-chart.md",
+    "status": "NEW"
+  },
+  {
     "name": "ドーナツ チャート",
     "href": "charts/types/donut-chart.md",
     "status": ""
