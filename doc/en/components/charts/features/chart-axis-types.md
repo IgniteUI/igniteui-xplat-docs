@@ -116,6 +116,16 @@ The following example demonstrates usage of the `CategoryAngleAxis` type:
 
  `sample="/charts/data-chart/radial-area-chart", height="500", alt="{Platform} Category Angle Axis Example"`
 
+ ### Proportional Category Angle Axis
+
+The `ProportionalCategoryAngleAxis` treats its data as a sequence of category data items. The labels on this axis are placed along the edge of a circle according to their position in that sequence. This type of axis can display almost any type of data including strings and numbers.
+
+The `ProportionalCategoryAngleAxis` is generally used with the `NumericRadiusAxis` to plot a pie chart eg. [Radial Series](../types/radial-chart.md).
+
+The following example demonstrates usage of the `ProportionalCategoryAngleAxis` type:
+
+ `sample="/charts/data-chart/radial-proportional-category-angle-axis", height="500", alt="{Platform} Proportional Category Angle Axis Example"`
+
 ### Numeric Angle Axis
 
 The `NumericAngleAxis` treats its data as continuously varying numerical data items. The labels on this axis area placed along a radius line starting from the center of the circular plot. The location of the labels on the `NumericAngleAxis` varies according to the value in the data column mapped using the `RadiusMemberPath` property of the [Polar Series](../types/polar-chart.md) object or the `ValueMemberPath` property of the [Radial Series](../types/radial-chart.md) object.
