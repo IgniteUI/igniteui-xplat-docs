@@ -47,18 +47,18 @@ The {ProductName} State Persistence in {Platform} {ComponentTitle} allows develo
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-* `RowIslands`
+* **RowIslands**
     * saving/restoring features for all child grids down the hierarchy
-* `Sorting`
-* `Filtering`
-* `AdvancedFiltering`
-* `Paging`
-* `CellSelection`
-* `RowSelection`
-* `ColumnSelection`
-* `RowPinning`
-* `Expansion`
-* `Columns`
+* **Sorting**
+* **Filtering**
+* **AdvancedFiltering**
+* **Paging**
+* **CellSelection**
+* **RowSelection**
+* **ColumnSelection**
+* **RowPinning**
+* **Expansion**
+* **Columns**
     * Multi column headers
     * Columns order
     * Column properties defined by the `IColumnState` interface.
@@ -121,6 +121,7 @@ const sortingFilteringStates: IGridState = state.getState(false, ['sorting', 'fi
 <!-- end: Angular -->
 
 <!-- WebComponents -->
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 ```html
 <{ComponentSelector} id="grid">
     <igc-grid-state id="gridState"></igc-grid-state>
@@ -139,14 +140,18 @@ const stateString: string = gridState.getStateAsString();
 // get the sorting and filtering expressions
 const sortingFilteringStates: IgcGridStateInfo = gridState.getState(['sorting', 'filtering']);
 ```
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 <!-- end: WebComponents -->
 
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 ```tsx
-<IgrGrid>
+<{ComponentSelector}>
     <IgrGridState ref={(ref) => { gridState = ref; }}></IgrGridState>
-</IgrGrid>
+</{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 ```tsx
 // get an `IgrGridStateInfo` object, containing all features original state objects, as returned by the grid public API
 const state: IgrGridStateInfo = gridState.getState([]);
@@ -157,6 +162,7 @@ const stateString: string = gridState.getStateAsString([]);
 // get the sorting and filtering expressions
 const sortingFilteringStates: IgrGridStateInfo = gridState.getState(['sorting', 'filtering']);
 ```
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
 ```razor
 <{ComponentSelector}>
@@ -240,9 +246,11 @@ gridState.options = { cellSelection: false, sorting: false };
 ```
 <!-- end: WebComponents -->
 
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 ```tsx
 <IgrGridState options={{ cellSelection: false, sorting: false }}></IgrGridState>
 ```
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
 ```razor
 gridState.Options = new IgbGridStateOptions
@@ -315,13 +323,15 @@ public restoreGridStateString() {
 }
 ```
 <!-- end: WebComponents -->
-
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 ```tsx
-<IgrGrid rendered={restoreGridState}>
+<{ComponentSelector} rendered={restoreGridState}>
     <IgrGridState ref={(ref) => { gridState = ref; }}></IgrGridState>
-</IgrGrid>
+</{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 ```tsx
 useEffect(() => {
     restoreGridState();
@@ -357,6 +367,8 @@ function restoreGridState() {
     }
 }
 ```
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
+
 
 ```razor
 @using IgniteUI.Blazor.Controls
@@ -722,27 +734,45 @@ Add blazor handling for dimensionInit
 ## Restoring Child Grids
 Saving / Restoring state for the child grids is controlled by the `RowIslands` property and is enabled by default. `GridState` will use the same options for saving/restoring features both for the root grid and all child grids down the hierarchy. For example, if we pass the following options:
 
+<!-- ComponentStart: HierarchicalGrid -->
 ``` html
 <!-- public options = {selection: false, sorting: false, rowIslands: true} -->
 <igx-grid [igxGridState]="options"></igx-grid>
 ```
+<!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```ts
+gridState.options = { cellSelection: false, sorting: false, rowIslands: true };
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```tsx
+<IgrHierarchicalGrid>
+    <IgrGridState options={{ cellSelection: false, sorting: false, rowIslands: true }}></IgrGridState>
+</IgrHierarchicalGrid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+
 
 ```razor
 Blazor snippet
 ```
-
+<!-- ComponentStart: HierarchicalGrid -->
 Then the `GetState` API will return the state for all grids (root grid and child grids) features excluding `Selection` and `Sorting`. If later on the developer wants to restore only the `Filtering` state for all grids, use:
 
 ```typescript
-this.state.setState(state, ['filtering', 'rowIslands']);
+this.state.applyState(state, ['filtering', 'rowIslands']);
 ```
+<!-- ComponentEnd: HierarchicalGrid -->
 
 ```razor
 setState snippet
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- NOTE this sample is differed -->
+## Demo
 
 `sample="/{ComponentSample}/state-persistence-main", height="763", alt="{Platform} {ComponentTitle} State Persistence "`
 
@@ -810,12 +840,12 @@ Add snippet for blazor for restore state
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-* When restoring all grid features at once (using `SetState` API with no parameters), then column properties for the root grid might be resetted to default. If this happens, restore the columns or column selection feature separately after that:
+* When restoring all grid features at once (using `applyState` API with no parameters), then column properties for the root grid might be resetted to default. If this happens, restore the columns or column selection feature separately after that:
 
 ```typescript
-state.setState(gridState);
-state.setState(gridState.columns);
-state.setState(gridState.columnSelection);
+state.applyState(gridState);
+state.applyState(gridState.columns);
+state.applyState(gridState.columnSelection);
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
