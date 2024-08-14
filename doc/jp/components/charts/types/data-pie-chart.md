@@ -1,6 +1,6 @@
 ---
 title: {Platform} 円チャートとグラフ | {ProductName}
-_description: {ProductName}データ円チャートは、セクションに分割された円形の領域で構成される、円チャートを表示するための UI コントロールです。無料でお試しください。
+_description: {ProductName} データ円チャートは、セクションに分割された円形の領域で構成される、円チャートを表示するための UI コントロールです。無料でお試しください。
 _keywords: {Platform} charts, pie chart, {ProductName}, Infragistics, data binding, slice selection, animation, highlighting, legend, {Platform} チャート, 円チャート, インフラジスティックス, データ バインディング, スライスの選択, アニメーション, ハイライト表示, 凡例
 mentionedTypes: ["XamDataPieChart", "XamDataChart"]
 namespace: Infragistics.Controls.Charts
