@@ -3,22 +3,664 @@ title: {Platform} What's New | {ProductName} | Infragistics
 _description: Learn about new features in the {ProductName}.
 _keywords: Changelog, What's New,  {ProductName}, Infragistics
 mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "Toolbar", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Infragistics.Controls.Grid", "Infragistics.Controls.GridSelectionMode", "XamRadialGauge", "XamRadialChart", "Toolbar"]
-namespace: Infragistics.Controls.Charts
+namespace: Infragistics.Controls
 ---
 # {ProductName} Changelog
 
 All notable changes for each version of {ProductName} are documented on this page.
 
-## **{PackageVerChanges-24-1-JUN}**
+## {PackageGrids}
 
-### {PackageCommon}
-- `Input`, `Textarea` - exposed `ValidateOnly` to enable validation rules being enforced without restricting user input.
-- `Dropdown` - `PositionStrategy` property is deprecated. The dropdown now uses the `Popover` API to render its container in the top layer of the browser viewport, making the property obsolete.
-- `DockManager` - `SplitPane` `IsMaximized` is deprecated. Having isMaximized set to true on a split pane level has no real effect as split panes serve as containers only, meaning they have no actual content to be shown maximized. Use the `IsMaximized` property of `TabGroupPane` and/or `ContentPane` instead.
+### **{PackageVerChanges-24-1-JUN}**
 
-### {PackageGrids}
 - `DisplayDensity` deprecated in favor of the `--ig-size` CSS custom property.
-### {PackageCharts} (Charts)
+
+### **{PackageVerChanges-23-2-MAR}**
+
+- New [`HierarchicalGrid`](grids/hierarchical-grid/overview.md) component.
+
+### **{PackageVerChanges-23-2-DEC}**
+
+- Added New Features (Grid) - [State Persistence](grids/grid/state-persistence.md).
+
+### **{PackageVerChanges-22-2.2}**
+
+- A new argument `PrimaryKey` has been introduced to `IgcRowDataEventArgs`, and part of the event arguments that are emitted by the `RowAdded` and `RowDeleted` events. When the grid has a primary key attribute added, then the emitted primaryKey event argument represents the row ID, otherwise it defaults to undefined.
+- `RowSelectionChanging` event arguments are changed. Now, the `OldSelection`, `NewSelection`, `Added` and `Removed` collections no longer consist of the row keys of the selected elements when the grid has set a primaryKey, but now in any case the row data is emitted.
+- When the grid is working with remote data and a primary key has been set, the selected rows that are not currently part of the grid view will be emitted for a partial row data object.
+- When selected row is deleted from the grid component `RowSelectionChanging` event will no longer be emitted.
+- The `OnGroupingDone` event has been renamed to `GroupingDone` to not violate the no on-prefixed outputs convention.
+- The `OnDensityChanged` event has been renamed to `DensityChanged` to not violate the no on-prefixed outputs convention. All components exposing this event are affected.
+
+- `PivotGrid`: The `IgcPivotDateDimension` properties `InBaseDimension` and `InOption` have been deprecated and renamed to `BaseDimension` and `Options` respectively.
+
+### **{PackageVerChanges-22-2.1}**
+
+- New [Pivot Grid](grids/pivot-grid/overview.md) component.
+
+### **{PackageVerChanges-22-2}**
+
+- New [Grid](grids/data-grid.md) component.
+- New [Tree Grid](grids/tree-grid/overview.md) component.
+- `DataGrid`:
+  - Changed **{IgPrefix}Column** to `DataGridColumn`
+  - Changed **GridCellEventArgs** to `DataGridCellEventArgs`
+  - Changed **GridSelectionMode** to `DataGridSelectionMode`
+  - Changed **SummaryOperand** to `DataSourceSummaryOperand`
+
+### **{PackageVerChanges-22-1}**
+
+- `DataGrid`:
+  - Added New Feature - [Row Paging](grids/data-grid/row-paging.md) which is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
+
+### **{PackageVerChanges-21-2.1}**
+- `DataGrid`:
+  - Added `ValueMultiField`, of type string[], in the `ComboBoxColumn` to be used when your items in the drop down contain a key that consists of multiple fields.
+
+> [!Note]
+> The following breaking changes were introduced: Changed `ValueField` property from type string[] to string.
+
+### **{PackageVerChanges-21-2}**
+
+- `DataGrid`:
+  - New Features Added:
+      - [Filter Row](grids/data-grid/column-filtering.md)
+      - [Load/Save Layout Customizations](grids/data-grid/load-save-layout.md)
+      - [GroupBy Area for column grouping](grids/data-grid/row-grouping.md)
+      - [Cell Merging](grids/data-grid/cell-merging.md)
+  - New API:
+      - Added `SelectionChanged` event. Used to detect changes on selection interactions
+       e.g. Multiple row selection.
+  - Breaking Changes:
+      - Changed grid's SummaryScope property's type to SummaryScope from `DataSourceSummaryScope`
+      - Changed GroupHeaderDisplayMode property's type to GroupHeaderDisplayMode from `DataSourceSectionHeaderDisplayMode`
+
+
+### **{PackageVerChanges-21-1}**
+
+- `DataGrid`:
+  - Added `EditOnKeyPress` aka Excel-style Editing, instantly begin editing when typing.
+  - Added `EditModeClickAction` property - By default double-clicking is required to enter edit mode. This can be set to `SingleClick` to allow for edit mode to occur when selecting a new cell.
+  - Added `EnterKeyBehaviors` property - aka Excel-style Navigation (Enter Behavior) – controls the behavior of the enter key, e.g. Options are (none, edit, move up, down, left, right)
+  - Added `EnterKeyBehaviorAfterEdit` property - While in edit-mode, this property controls when enter is pressed, e.g. Options are (moves to the cell below, above, right, left)
+  - Added `SelectAllRows` - method.
+  - Added Row Range Selection - With `GridSelectionMode` property set to MultipleRow the following new functionality is now included:
+    - Click and drag to select rows
+    - Shift and click to select multiple rows.
+    - Shift and press the up/down arrow keys to select multiple rows.
+  - Pressing space bar toggles selection of active row via `GridSelectionMode` property set to MultipleRow or SingleRow
+  - Added Column Summaries to Column Options Dialog.
+
+### **{PackageVerChangedFields}**
+
+- `DataGrid`:
+
+> [!Note]
+> These breaking changes were introduce in the grid package.
+
+- Changed name of PropertyPath
+
+The data grid component property `propertyPath` has been renamed to `field`. This applies to all Column types, GroupDescription, SortDescription & SummaryDescription.
+
+```html
+<igc-text-column field="Name"></igc-text-column>
+```
+
+```ts
+import { IgcColumnSummaryDescription, IgcColumnSortDescription, IgcColumnGroupDescription} from 'igniteui-webcomponents-grids'
+const productCount = new IgcColumnSummaryDescription();
+productCount.field = "ProductName";
+const colSortDesc = new IgcColumnSortDescription();
+colSortDesc.field = "UnitsInStock";
+const income = new IgcColumnGroupDescription();
+income.field = "Income";
+```
+
+### **{PackageVerRenamedGrid}**
+
+- `DataGrid`:
+
+- Changed Name of Live Grid - the data grid component and it's corresponding module's names have changed from "LiveGrid" to "DataGrid".
+
+> [!Note]
+> These breaking changes were introduce in these packages and components only:
+
+The new code for importing the grid and it's corresponding module is:
+
+```ts
+import { IgcDataGrid } from "igniteui-webcomponents-grids";
+import { IgcDataGridModule } from 'igniteui-webcomponents-grids';
+```
+
+- Required Peer Dependency for `DataGrid`
+
+The data grid component requires the "inputs" package.
+
+```ts
+**npm install --save {PackageInputs}**
+```
+
+
+## {PackageCommon}
+
+### **{PackageCommonVerChanges-4.11.1}**
+
+#### Changed
+- `Stepper` - Design changes in vertical mode.
+
+### **{PackageCommonVerChanges-4.11.0}**
+
+#### Changed
+- `Toast`, `Rating`, `Stepper` - Styling changes in Indigo Theme.
+
+### **{PackageCommonVerChanges-4.10.0}**
+
+#### Added
+- New [Banner](notifications/banner.md) component
+- New [Divider](layouts/divider.md) component
+- New [DatePicker](scheduling/date-picker.md) component
+- `RadioGroup` - Bind underlying radio components name and checked state through the radio group.
+
+#### Deprecated
+- `Input` `Inputmode` property. Aligned with the native `inputMode` DOM property instead.
+
+#### Fixed
+- `Input`, `Textarea` - passing `undefined` to value sets the underlying input value to undefined.
+- `MaskInput` - after a form `reset` call correctly update underlying input value and placeholder state.
+- `Tree` - setting `--ig-size` on the item `indicator` CSS Part will now change the size of the icon.
+- `DateTimeInput` - double emit of `igcChange` in certain scenarios.
+- `NavDrawer` - mini variant is not initially rendered when not in an open state.
+- `Combo`:
+  - Selecting an entry using the `Enter` key now correctly works in single selection mode.
+  - Turning on the `DisableFiltering` option now clears any previously entered search term.
+  - Entering a search term in single selection mode that already matches the selected item now works correctly.
+
+### **{PackageCommonVerChanges-4.9.0}**
+
+#### Added
+- `ButtonGroup` - now allows resetting the selection state via the `SelectedItems` property.
+- `Input`, `Textarea` - exposed `ValidateOnly` to enable validation rules being enforced without restricting user input.
+
+#### Changed
+- `Combo`, `Select` and `Dropdown` - now use the native `Popover` API.
+
+#### Deprecated
+- `Dropdown` - `PositionStrategy` property is deprecated. The dropdown now uses the `Popover` API to render its container in the top layer of the browser viewport, making the property obsolete.
+
+#### Fixed
+- `DateTimeInput` - Label in Material theme is broken when component is in read-only mode.
+
+### **{PackageCommonVerChanges-4.8.2}**
+
+#### Fixed
+- `Textarea` - resize handle position for non-suffixed textarea.
+- `Tabs` - error when dynamically creating and adding a tab group and tabs in a single call stack.
+- `Checkbox`/`Switch` - participate in form submission when initially checked.
+- `Dialog` - `igcClosed` fired before the component was actually closed/hidden.
+
+### **{PackageCommonVerChanges-4.8.1}**
+
+#### Fixed
+- `DateTimeInput` - `InputFormat` is not applied to an already set value.
+- `Checkbox`, `Radio`, `Switch` - apply form validation synchronously.
+- `Select`, `Dropdown` - Unable to select item when clicking on a wrapping element inside the dropdown/select item slot.
+- `Tree` - active state is correctly applied to the correct tree node on click.
+
+### **{PackageCommonVerChanges-4.8.0}**
+
+#### Added
+- `Combo` can now set `GroupSorting` to none which shows the groups in the order of the provided data.
+- `Button`/`IconButton` - updated visual looks across themes, new states.
+- `NavBar` - added border in Bootstrap theme.
+
+#### Changed
+- Grouping in `Combo` no longer sorts the data. `GroupSorting` property now affects the sorting direction only of the groups. **Behavioral change**: In previous release the sorting directions of the groups sorted the items as well. If you want to achieve this behavior you can pass already sorted data to the `Combo`.
+
+#### Deprecated
+- `Slider` - `aria-label-upper` and `aria-label-lower` are deprecated and will be removed in the next major release. Use `thumb-label-upper` and `thumb-label-lower` instead.
+
+#### Fixed
+- `Button` - Slotted icon size.
+- `ButtonGroup`
+  - Updated Fluent theme look.
+  - Disabled state in Safari.
+- `Combo`/`Select` - Style issues.
+- `Slider`
+  - Clicks on the slider track now use the track element width as a basis for the calculation.
+  - Input events are no longer emitted while continuously dragging the slider thumb and exceeding upper/lower bounds.
+  - When setting `upper-bound`/`lower-bound` before `min`/`max`, the slider will no longer overwrite the bound properties with the previous values of `min`/`max`.
+  - The `aria-label` bound to the slider thumb is no longer reset on consequent renders.
+- `Input`
+  - Default validators are run synchronously.
+  - Style issues.
+- `DateTimeInput` - `setRangeText()` updates underlying value.
+
+### **{PackageCommonVerChanges-4.7.0}**
+
+#### Added
+- `Tree` - Added `ToggleNodeOnClick` property that determines whether clicking over a node will change its expanded state or not. Defaults to `false`.
+
+- `Rating` - `AllowReset` added. When enabled selecting the same value will reset the component. **Behavioral change**: In previous releases this was the default behavior of the rating component. Make sure to set `allowReset` if you need to keep this behavior in your application.
+
+#### Changed
+- Improved WAI-ARIA compliance for `Avatar`, `Badge` and `Combo`.
+#### Fixed
+- Active item visual styles for `Dropdown`, `Select` and `Combo`.
+- `NavDrawer` - mini variant broken visual style.
+
+### **{PackageCommonVerChanges-4.6.0}**
+
+#### Added
+- `action` slot added to `Snackbar`.
+- `indicator-expanded` slot added to `ExpansionPanel`.
+- `toggle-icon-expanded` slot added to `Select`.
+- `Select`, `Dropdown` - exposed `selectedItem`, `items` and `groups` getters.
+
+#### Changed
+- Updated the package to Lit v3.
+- Components dark variants are now bound to their shadow root.
+- Components implement default sizes based on current theme.
+- `ButtonGroup` - changed events to non-cancellable.
+- Optimized components CSS and reduced bundle size.
+- WAI-ARIA improvements for `Icon`, `Select`, `Dropdown` and `List`.
+
+#### Fixed
+- `Textarea` missing styling parts.
+- `TreeItem` disabled styles.
+- `Snackbar` removed unnecessary styles.
+- `TreeItem` hover state visual design.
+- `Calendar` not keeping focus state when switching views.
+
+### **{PackageCommonVerChanges-4.5.0}**
+
+#### Added
+
+- New [Text Area](inputs/text-area.md) component.
+- New [Button Group](inputs/button-group.md) component.
+- New `ToggleButton`.
+- `NavDrawer` now supports CSS transitions.
+- Position attribute for `Toast` and `Snackbar`.
+
+#### Deprecated
+
+The `size` property and attribute have been deprecated for all components. Use the `--ig-size` CSS custom property instead. The following example sets the size of the `Avatar` component to small:
+
+```css
+igc-avatar {
+  --ig-size: var(--ig-size-small);
+}
+```
+
+#### Fixed
+- Combo items position in Safari.
+- Calendar navigation buttons in RTL context.
+- Export `IgcComboChangeEventArgs` type.
+- Combo value and selection states with lazy data binding.
+- Various style and theming fixes and adjustments.
+
+### **{PackageCommonVerChanges-4.4.0}**
+
+#### Added
+- The following components are now Form Associated Custom Elements. They are automatically associated with a parent `<form>`
+  and behave like a browser-provided control:
+  - `Button` & `IconButton`
+  - `Checkbox`
+  - `Combo`
+  - `DateTimeInput`
+  - `Input`
+  - `MaskInput`
+  - `Radio`
+  - `Rating`
+  - Single `Slider`
+  - `Select`
+  - `Switch`
+- `Stepper` now supports animations.
+
+#### Changed
+- `Rating` fluent theme colors.
+- `Stepper` indicator styles and color schemas.
+
+#### Deprecated
+- `IgcForm` component is deprecated.
+- `Input`:
+  - `minlength` property is deprecated and will be removed in the next major version. Use `minLength` instead.
+  - `maxlength` property is deprecated and will be removed in the next major version. Use `maxLength` instead.
+  - `readonly` property is deprecated and will be removed in the next major version. Use `readOnly` instead.
+- `MaskInput`:
+  - `readonly` property is deprecated and will be removed in the next major version. Use `readOnly` instead.
+- `DateTimeInput`:
+  - `readonly` property is deprecated and will be removed in the next major version. Use `readOnly` instead.
+  - `minValue` property is deprecated and will be removed in the next major version. Use `min` instead.
+  - `maxValue` property is deprecated and will be removed in the next major version. Use `max` instead.
+- `Rating`:
+  - `readonly` property is deprecated and will be removed in the next major version. Use `readOnly` instead.
+
+#### Removed
+- Removed our own `dir` attribute which shadowed the default one. This is a **non-breaking change**.
+- `Slider` - `ariaLabel` shadowed property. This is a **non-breaking change**.
+- `Checkbox` - `ariaLabelledBy` shadowed attribute. This is a **non-breaking change**.
+- `Switch` - `ariaLabelledBy` shadowed attribute. This is a **non-breaking change**.
+- `Radio` - `ariaLabelledBy` shadowed attribute. This is a **non-breaking change**.
+
+#### Fixed
+- `Input` - outlined variant styling issues and indigo theme issues.
+- `Select` - outlined variant styling issues
+- `DateTimeInput` - `spinUp/spinDown` calls moving the caret when the input is focused.
+
+### **{PackageCommonVerChanges-4.3.1}**
+
+#### Added
+- `Tree` - component animations.
+- Components border radius is consumed from their schemas.
+
+#### Changed
+- `Combo`, `Input`, `Select` - schema colors.
+- `Dropdown` - schema colors.
+- `Icon` - updated theming styles and size.
+
+#### Fixed
+- `Combo` - single selection not working in certain scenarios.
+- `Dropdown` - various styling fixes.
+- `IconButton` - border radius with ripple.
+- `IconButton` - fixed wrong color in Fluent theme.
+- `Input` - various styling fixes.
+- `TreeItem` - assign closest *igc-tree-item* ancestor as a parent.
+- `Tabs` - internal **hidden** styles and custom display property.
+
+### **{PackageCommonVerChanges-4.3.0}**
+
+#### Added
+- `Combo`:
+  - `matchDiacritics` to the filtering options property. Defaults to **false**. If set to **true** the filter distinguishes between accented letters and their base letters. Otherwise strings are normalized and then matched.
+  - `selection` property which returns the current selection as an array of data objects.
+- `Card`: Support explicit height
+- `Dialog`: Added animations
+- `Snackbar`: Added animations
+- `Toast`: Added animations
+
+#### Changed
+- `Combo`:
+  - `value` is no longer readonly and can be explicitly set. The value attribute also supports declarative binding,
+  accepting a valid JSON stringified array.
+  - `value` type changed from `string[]` to `ComboValue<T>[]` where
+  ```ts
+  ComboValue<T> = T | T[keyof T]
+  ```
+  - `igcChange` event object properties are also changed to reflect the new `value` type:
+  ```typescript
+  interface IgcComboChangeEventArgs<T> {
+    newValue: ComboValue<T>[];
+    items: T[];
+    type: ComboChangeType;
+  }
+  ```
+
+#### Deprecated
+- `Select`: Deprecated `sameWidth`, `positionStrategy` and `flip`. They will be removed in the next major release.
+
+#### Fixed
+- `Select`: `prefix`/`suffix`/`helper-text` slots not being rendered.
+- `Tabs`: Nested tabs selection.
+- `Dialog`: Backdrop doesn't overlay elements.
+- `Dropdown`: Listbox position on initial open state.
+- `Stepper`: Stretch vertically in parent container.
+- `Navbar`: Wrong colors in fluent theme.
+- Animation player throws errors when height is unspecified.
+- `DateTimeInput`: Intl.DateTimeFormat issues in Chromium based browsers.
+
+### **{PackageCommonVerChanges-4.2.3}**
+
+#### Deprecated
+- `Dialog` - Property `closeOnEscape` is deprecated in favor of new property `keepOpenOnEscape`.
+
+#### Fixed
+- `Radio`- colors in selected focus state.
+- `IconButton` - set icon size to match other design system products.
+- `Chip` - removed outline styles for Fluent and Material themes.
+- `Calendar` - navigation to date on set value.
+- `Tabs` - not taking the full height of their parents.
+
+### **{PackageCommonVerChanges-4.2.2}**
+
+#### Deprecated
+- `Button` - The `prefix`/`suffix` slots are no longer needed and will be removed in the next major release.
+
+#### Fixed
+- `Button` - UI inconsistencies.
+- `Calendar` - Fluent theme inconsistencies.
+- `Combo` - Selection via API doesn't work on a searched list.
+- `Dialog` - Fluent theme inconsistency.
+- `Input` - UI inconsistencies.
+- `Toast` - Fluent theme inconsistency.
+- Components missing in defineAllComponents.
+- Wrong host sizes for `Avatar`, `Badge`, `Button` and `IconButton`.
+
+### **{PackageCommonVerChanges-4.2.1}**
+
+#### Fixed
+- `Combo` - Matching item not activated on filtering in single selection mode.
+
+### **{PackageCommonVerChanges-4.2.0}**
+
+#### Added
+- `Combo` - Single Selection mode via the `single-select` attribute.
+
+#### Fixed
+- `Input` - UI inconsistencies.
+- `Badge` - Doesn't correctly render `igc-icon` and font icons.
+- `Radio` - UI inconsistencies.
+- `NavDrawer` - Can't override item margin.
+
+### **{PackageCommonVerChanges-4.1.1}**
+
+#### Fixed
+- `Input`
+  - position label based on component size.
+  - material themes don't match design.
+  - do not cache the underlying input.
+- Card - color discrepancy between WC and Angular.
+- Theme - update stale `--igc-*` variables to `--ig-*`.
+- Removed dangling references after element disconnect.
+
+### **{PackageCommonVerChanges-4.1.0}**
+
+#### Added
+- New [Stepper](layouts/stepper.md) component.
+- New [Combo](inputs/combo/overview.md) component.
+- `MaskInput` - Skip literal positions when deleting symbols in the component
+
+#### Fixed
+- `MaskInput` - Validation state on user input.
+
+### **{PackageCommonVerChanges-4.0.0}**
+
+#### Changed
+- Themes
+  - Build - Utilize [Ignite UI Theming](https://github.com/IgniteUI/igniteui-theming) package when building themes.
+  - Sizing - Introduced CSS variables that allow runtime CSS configuration of the size for all or individual components.
+  - Spacing - Introduced CSS variables that allow runtime CSS configuration of the internal spacing (padding/margin) of components.
+  - Scrollbars - Added the ability to style application-level scrollbars by setting the `ig-scrollbar` CSS class on any element.
+
+### **{PackageCommonVerChanges-3.4.2}**
+
+#### Fixed
+- Resolved importing error for `DateRangeType`.
+
+### **{PackageCommonVerChanges-3.4.1}**
+
+#### Changed
+- `Slider` - updated theme with the latest fluent spec.
+- `Calendar` - updated weekend days color.
+
+#### Fixed
+- `Tabs` `selected` attribute breaks content visibility on init.
+
+### **{PackageCommonVerChanges-3.4.0}**
+
+#### Added
+- New [Dialog](notifications/dialog.md) component.
+- New [Select](inputs/select.md) component.
+
+#### Fixed
+- `Calendar` - range selection a11y improvements.
+- `RangeSlider` - a11y improvements for choosing range values.
+- `Rating` - improved a11y with assistive software now reading the total number of items.
+- `Toast` - added `role="alert"` to the message container for assistive software to read it without the need of focusing.
+- `Chip` - made remove button accessible with the keyboard.
+- `Button` `prefix`/`suffix` does not align icons to the button text.
+
+### **{PackageCommonVerChanges-3.3.1}**
+
+#### Changed
+- `Tree` - Removed theme-specified height.
+
+#### Fixed
+- `Dropdown` - Dispose of top-level event listeners.
+- `LinearProgress` - Indeterminate animation in Safari.
+- `RadioGroup` - Child radio components auto-registration.
+
+### **{PackageCommonVerChanges-3.3.0}**
+
+#### Added
+- New [DateTimeInput](inputs/date-time-input.md) component.
+- New [Tabs](layouts/tabs.md) component.
+- New [Accordion](layouts/accordion.md) component.
+- Typography styles in themes.
+
+#### Changed
+- `Rating` - Added support for single selection and empty symbols.
+- `Slider` - Improved slider steps rendering.
+- Components will now auto register their dependencies when they are registered in `defineComponents`
+
+```typescript
+import { IgcDropdownComponent, defineComponents } from 'igniteui-webcomponents';
+// will automatically register the dropdown item & group elements
+// as well as their dependencies if any
+defineComponents(IgcDropdownComponent);
+```
+
+Check the official [documentation](https://www.infragistics.com/products/ignite-ui-web-components/web-components/componentsgeneral-getting-started) for more information.
+
+#### Fixed
+- Remove input helper text container when it is empty.
+- `Icon` not showing in Safari.
+- `Checkbox` not showing in Safari.
+- `Button` stretches correctly in flex containers.
+- Various theming issues.
+- `Dropdown` - bug fixes and improvements.
+
+### **{PackageCommonVerChanges-3.2.0}**
+
+#### Added
+- New [MaskInput](inputs/mask-input.md) component.
+- New [ExpansionPanel](layouts/expansion-panel.md) component.
+- New [Tree](grids/tree.md) component.
+- `Rating` - Added `selected` CSS part and exposed CSS variable to control symbol sizes.
+- `IconButton` - Allow slotted content.
+
+#### Fixed
+- `NavDrawer` - Various styles fixes.
+- Buttons - Vertical align and focus management.
+- `Input` - Overflow for `suffix`/`prefix`.
+- `Switch` - Collapse with small sizes.
+- `List` - Overflow behaviour.
+
+### **{PackageCommonVerChanges-3.1.0}**
+
+#### Added
+- `Chip`: Added `prefix` and `suffix` slots.
+- `Snackbar`: Added `toggle` method.
+
+#### Deprecated
+- `Chip`: Previously exposed `start` and `end` slots are replaced by `prefix` and `suffix`. They remain active, but are now deprecated and will be removed in a future version.
+
+#### Fixed
+- `Chip`:
+  - Auto load internal icons.
+  - Selected chip is misaligned.
+- Package: ESM internal import paths.
+
+### **{PackageCommonVerChanges-3.0.0}**
+
+#### Changed
+- **Breaking Change**: All dropdown related classes renamed from `IgcDropDown*` to `IgcDropdown*`
+
+### **{PackageCommonVerChanges-2.2.0}**
+
+#### Added
+- New [DropDown](inputs/dropdown.md) component.
+- `Calendar`: Active date can be set via an attribute.
+
+### **{PackageCommonVerChanges-2.1.1}**
+
+#### Added
+- Control border radius and elevation from `--igc-radius-factor` and `--igc-elevation-factor`:
+
+Example:
+
+```css
+/* Make all components square and remove all shadows */
+:root {
+  --igc-radius-factor: 0;
+  --igc-elevation-factor: 0;
+}
+```
+
+### **{PackageCommonVerChanges-2.1.0}**
+
+#### Added
+- New [LinearProgress](inputs/linear-progress.md) component.
+- New [CircularProgress](inputs/circular-progress.md) component.
+- New [Chip](inputs/chip.md) component.
+- New [Snackbar](notifications/snackbar.md) component.
+- New [Toast](notifications/toast.md) component.
+- New [Rating](inputs/rating.md) component.
+- Component themes can be changed at runtime by calling the `configureTheme(theme: Theme)` function
+
+### **{PackageCommonVerChanges-2.0.0}**
+
+#### Added
+- Dark Themes
+- New [Slider](inputs/slider.md) component.
+- New [RangeSlider](inputs/slider.md) component.
+- Support `required` property in `Radio` component.
+
+#### Changed
+- Fix checkbox/switch validity status
+- Split `Calendar`'s `value: Date | Date[]` property into two properties - `value: Date` and `values: Date[]`
+- Replaced `Calendar`'s `hasHeader` property & `has-header` attribute with `hideHeader` & `hide-header` respectively.
+- Replaced `Card`'s `outlined` property with `elevated`.
+
+#### Removed
+- Removed `igcOpening`, `igcOpened`, `igcClosing` and `igcClosed` events from `NavDrawer` component.
+
+### **{PackageCommonVerChanges-1.0.0}**
+
+Initial release of Ignite UI Web Components
+
+#### Added
+- [Avatar](layouts/avatar.md) component
+- [Badge](inputs/badge.md) component
+- [Button](inputs/button.md) component
+- [Calendar](scheduling/calendar.md) component
+- [Card](layouts/card.md) component
+- [Checkbox](inputs/checkbox.md) component
+- [Form](inputs/form.md) component
+- [Icon](layouts/icon.md) component
+- [IconButton](inputs/icon-button.md) component
+- [Input](inputs/input.md) component
+- [List](grids/list.md) component
+- [Navigation bar](menus/navbar.md) component
+- [Navigation drawer](menus/navigation-drawer.md) component
+- [Radio group](inputs/radio.md) component
+- [Radio](inputs/radio.md) component
+- [Ripple](inputs/ripple.md) component
+- [Switch](inputs/switch.md) component
+
+
+## {PackageCharts}
+
+### **{PackageVerChanges-24-1-JUN}**
 
 * [Data Legend Grouping](charts/features/chart-data-legend.md#{PlatformLower}-data-legend-grouping) & [Data Tooltip Grouping](charts/features/chart-data-tooltip.md#{PlatformLower}-data-tooltip-grouping-for-data-chart) - New grouping feature added. The property `GroupRowVisible` toggles grouping with each series opting in can assign group text via the `DataLegendGroup` property. If the same value is applied to more than one series then they will appear grouped. Useful for large datasets that need to be categorized and organized for all users.
 
@@ -30,14 +672,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 - `Toolbar` - New `IsHighlighted` option for ToolAction for outlining a border around specific tools of choice.
 
-### {PackageGauges} (Gauges)
-
-- `XamRadialGauge`
-    - New label for the highlight needle. `HighlightLabelText` and `HighlightLabelSnapsToNeedlePivot` and many other styling related properties for the HighlightLabel were added.
-
-## **{PackageVerChanges-23-2-MAR}**
-
-### {PackageCharts}
+### **{PackageVerChanges-23-2-MAR}**
 
  - New Data Filtering via the `InitialFilter` property. Apply filter expressions to filter the chart data to a subset of records. Can be used for drill down large data.
 
@@ -45,104 +680,26 @@ All notable changes for each version of {ProductName} are documented on this pag
     - New Label Mode
         The `CategoryAngleAxis` for the now exposes a `LabelMode` property that allows you to further configure the location of the labels. This allows you to toggle between the default mode by selecting the `Center` enum, or use the new mode, `ClosestPoint`, which will bring the labels closer to the circular plot area.
 
-### {PackageGauges}
-
-- `XamRadialGauge`
-    - New title/subtitle properties. `TitleText`, `SubtitleText` will appear near the bottom the gauge. In addition, the various title/subtitle font properties were added such as `TitleFontSize`, `TitleFontFamily`, `TitleFontStyle`, `TitleFontWeight` and `TitleExtent`. Finally, the new `TitleDisplaysValue` will allow the value to correspond with the needle's position.  
-    - New `OpticalScalingEnabled` and `OpticalScalingSize` properties for the `XamRadialGauge`. This new feature will manage the size at which labels, titles, and subtitles of the gauge have 100% optical scaling. You can read more about this new feature [here](radial-gauge.md#optical-scaling)
-    - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear.  
-- `XamLinearGauge`
-    - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear. 
-- `XamBulletGraph`
-    - The Performance bar will now reflect a difference between the value and new `HighlightValue` when the `HighlightValueDisplayMode` is applied to the 'Overlay' setting. The highlight value will show a filtered/subset completed measured percentage as a filled in color while the remaining bar's appearance will appear faded to the assigned value, illustrating the performance in real-time.
-
-### {PackageGrids}
-
-- New [`HierarchicalGrid`](grids/hierarchical-grid/overview.md) component
-
-## **{PackageVerChanges-23-2-JAN}**
-
-### {PackageCharts} (Charts)
+### **{PackageVerChanges-23-2-JAN}**
 
 * [Chart Highlight Filter](charts/features/chart-highlight-filter.md) - The `CategoryChart` and `XamDataChart` now expose a way to highlight and animate in and out of a subset of data. The display of this highlight depends on the series type. For column and area series, the subset will be shown on top of the total set of data where the subset will be colored by the actual brush of the series, and the total set will have a reduced opacity. For line series, the subset will be shown as a dotted line.
 
-## **{PackageVerChanges-23-2-DEC}**
+### **{PackageVerChanges-23-2}**
 
-### {PackageGrids} (Grid)
+- [Toolbar](menus/toolbar.md) - Beta:
+  - Save tool action has been added to save the chart to an image via the clipboard.
+  - Vertical orientation has been added via the toolbar's `Orientation` property. By default the toolbar is horizontal, now the toolbar can be shown in vertical orientation where the tools will popup to the left/right respectfully. 
+  - Custom SVG icons support was added via the toolbar's `renderImageFromText` method, further enhancing custom tool creation.
 
-* Added New Features - [State Persistence](grids/grid/state-persistence.md)
+### **{PackageVerChanges-23-1}**
 
-## **{PackageVerChanges-23-2}**
+- New [Toolbar](menus/toolbar.md) - Beta component. This component is a companion container for UI operations to be used primarily with our charting components. The toolbar will dynamically update with a preset of properties and tool items when linked to our `XamDataChart` or `CategoryChart` components. You'll be able to create custom tools for your project allowing end users to provide changes, offering an endless amount of customization.
 
-### {PackageGrids} (Toolbar - Beta)
+- [ValueLayer](charts/features/chart-overlays.md#{PlatformLower}-value-layer) - A new series type named the `ValueLayer` is now exposed which can allow you to render an overlay for different focal points of the plotted data such as Maximum, Minimum, and Average. This is applied to the `CategoryChart` and `FinancialChart` by adding to the new `ValueLines` collection.
 
-* Save tool action has been added to save the chart to an image via the clipboard.
-* Vertical orientation has been added via the toolbar's `Orientation` property. By default the toolbar is horizontal, now the toolbar can be shown in vertical orientation where the tools will popup to the left/right respectfully. 
-* Custom SVG icons support was added via the toolbar's `renderImageFromText` method, further enhancing custom tool creation.
+- It is now possible to apply a **dash array** to the different parts of the series of the `XamDataChart`. You can apply this to the [series](charts/types/line-chart.md#{PlatformLower}-styling-line-chart) plotted in the chart, the [gridlines](charts/features/chart-axis-gridlines.md#{PlatformLower}-axis-gridlines-properties) of the chart, and the [trendlines](charts/features/chart-trendlines.md#{PlatformLower}-chart-trendlines-dash-array-example) of the series plotted in the chart.
 
-## **{PackageVerChanges-23-1}**
-
-### New Components
-
-* [Toolbar](menus/toolbar.md) - Beta. This component is a companion container for UI operations to be used primarily with our charting components. The toolbar will dynamically update with a preset of properties and tool items when linked to our `XamDataChart` or `CategoryChart` components. You'll be able to create custom tools for your project allowing end users to provide changes, offering an endless amount of customization.
-
-### {PackageCharts} (Charts)
-
-* [ValueLayer](charts/features/chart-overlays.md#{PlatformLower}-value-layer) - A new series type named the `ValueLayer` is now exposed which can allow you to render an overlay for different focal points of the plotted data such as Maximum, Minimum, and Average. This is applied to the `CategoryChart` and `FinancialChart` by adding to the new `ValueLines` collection.
-
-* It is now possible to apply a **dash array** to the different parts of the series of the `XamDataChart`. You can apply this to the [series](charts/types/line-chart.md#{PlatformLower}-styling-line-chart) plotted in the chart, the [gridlines](charts/features/chart-axis-gridlines.md#{PlatformLower}-axis-gridlines-properties) of the chart, and the [trendlines](charts/features/chart-trendlines.md#{PlatformLower}-chart-trendlines-dash-array-example) of the series plotted in the chart.
-
-## **{PackageVerChanges-22-2.2}**
-
-### New Components
-
-* [Dialog](notifications/dialog.md)
-* [Select](inputs/select.md)
-
-### {PackageGrids} (Data Grid)
-
-* A new argument `PrimaryKey` has been introduced to `IgcRowDataEventArgs`, and part of the event arguments that are emitted by the `RowAdded` and `RowDeleted` events. When the grid has a primary key attribute added, then the emitted primaryKey event argument represents the row ID, otherwise it defaults to undefined.
-* `RowSelectionChanging` event arguments are changed. Now, the `OldSelection`, `NewSelection`, `Added` and `Removed` collections no longer consist of the row keys of the selected elements when the grid has set a primaryKey, but now in any case the row data is emitted.
-* When the grid is working with remote data and a primary key has been set, the selected rows that are not currently part of the grid view will be emitted for a partial row data object.
-* When selected row is deleted from the grid component `RowSelectionChanging` event will no longer be emitted.
-* The `OnGroupingDone` event has been renamed to `GroupingDone` to not violate the no on-prefixed outputs convention.
-* The `OnDensityChanged` event has been renamed to `DensityChanged` to not violate the no on-prefixed outputs convention. All components exposing this event are affected.
-
-### {PackageInputs}
-
-* `IgcDateTimeInput`, the StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date) is now trimmed down to DatePart instead of DateTimeInputDatePart
-* `IgcRadio` and `IgcRadioGroup`, added component validation along with styles for invalid state
-* `IgcMask`, added the capability to escape mask pattern literals.
-* `IgcBadge` added a `Shape` property that controls the shape of the badge and can be either `Square` or `Rounded`. The default shape of the badge is rounded.
-* `IgcAvatar`, the `RoundShape` property has been deprecated and will be removed in a future version. Users can control the shape of the avatar by the newly added `Shape` attribute that can be `Square`, `Rounded` or `Circle`. The default shape of the avatar is `Square`.
-
-### {PackageGrids} (Pivot Grid)
-
-* The `IgcPivotDateDimension` properties `InBaseDimension` and `InOption` have been deprecated and renamed to `BaseDimension` and `Options` respectively.
-
-### {PackageDockManager} (DockManager)
-
-* [Dock Manager's](layouts/dock-manager.md) Panes collection now has a protected setter; requires you to call Add rather than set panes in a nested structure when creating them.
-
-## **{PackageVerChanges-22-2.1}**
-
-### New Components
-
-* [Accordion](layouts/accordion.md)
-* [Combo Box](inputs/combo/overview.md)
-* [Expansion Panel](layouts/expansion-panel.md)
-* [Pivot Grid](grids/pivot-grid/overview.md)
-* [Stepper](layouts/stepper.md)
-* [Tabs](layouts/tabs.md)
-
-## **{PackageVerChanges-22-2}**
-
-### New Components
-
-* [Grid](grids/data-grid.md)
-* [Tree Grid](grids/tree-grid/overview.md)
-
-### {PackageCharts}
+### **{PackageVerChanges-22-2}**
 
 Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use. These new chart improvements include:
 
@@ -172,15 +729,8 @@ Added significant improvements to default behaviors, and refined the Category Ch
 > [!Note]
 [Chart Aggregation](charts/features/chart-data-aggregations.md) will not work when using `IncludedProperties` | `ExcludedProperties`. These properties on the chart are meant for non-aggregated data. Once you attempt to aggregate data these properties should no longer be used. The reason it does not work is because aggregation replaces the collection that is passed to the chart for render.  The include/exclude properties are designed to filter in/out properties of that data and those properties no longer exist in the new aggregated collection.
 
-### {PackageGrids} (Data Grid)
 
-* Changed **{IgPrefix}Column** to `DataGridColumn`
-* Changed **GridCellEventArgs** to `DataGridCellEventArgs`
-* Changed **GridSelectionMode** to `DataGridSelectionMode`
-* Changed **SummaryOperand** to `DataSourceSummaryOperand`
-
-## **{PackageVerChanges-22-1}**
-### {PackageCharts}
+### **{PackageVerChanges-22-1}**
 
 * Added the highly-configurable [DataLegend](charts/features/chart-data-legend.md) component, which works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values.
 * Added the highly-configurable [DataToolTip](charts/features/chart-data-tooltip.md) which displays values and titles of series as well as legend badges of series in a tooltip. This is now the default tooltip for all chart types.
@@ -197,102 +747,10 @@ Added significant improvements to default behaviors, and refined the Category Ch
 * New `XAxisMaximumGap`, determines the maximum allowed value for the plotted series when using `XAxisGap`. The gap determines the amount of space between columns or bars of plotted series.
 * New `XAxisMinimumGapSize`, determines the minimum allowed pixel-based value for the plotted series when using `XAxisGap` to ensure there is always some spacing between each category.
 
-### {PackageGrids} (Data Grid)
-
-Added New Feature - [Row Paging](grids/data-grid/row-paging.md) which is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
-
-### New Components
-
-* [Chip](inputs/chip.md)
-* [Circular Progress](inputs/circular-progress.md)
-* [Linear Progress](inputs/linear-progress.md)
-* [Drop Down](inputs/dropdown.md)
-* [Slider & Range Slider](inputs/slider.md)
-* [Snackbar](notifications/snackbar.md)
-* [Toast](notifications/toast.md)
-
-<div class="divider--half"></div>
-
-## **2.0.0**
-### {PackageComponents}
-#### New Components & Themes
-
-These are related only in the **{PackageComponents}** package.
-
-* Added [Slider](inputs/slider.md)
-* Added [Range Slider](inputs/slider.md)
-* Added Dark Theme which change structure of previous themes from:
-`igniteui-webcomponents/themes/bootstrap.css`
-to:
-`igniteui-webcomponents/themes/light/bootstrap.css` for light theme
-`igniteui-webcomponents/themes/dark/bootstrap.css`  for Dark theme
-
-#### Major changes
-
-This release introduces few major changes in the API of the Calendar, Card, Navigation Drawer and Radio components.
-
-* Added a feature to support `required` property in Radio component.
-* Breaking Changes:
-    * Split Calendar component's **value: Date | Date[]** property into two properties - `value`: Date and `values`: Date[].
-    * Replaced Calendar component's **hasHeader** property & **has-header** attribute with `hideHeader` & `hide-header` respectively.
-    * Replaced Card component's **outlined** property with `elevated`.
-    * Removed **igcOpening**, **igcOpened**, **igcClosing** and **igcClosed** events from Navigation drawer component.
-
-<div class="divider--half"></div>
-
-## **{PackageVerChanges-21-2.1}**
-
-### {PackageGrids} (Data Grid)
-
-#### Data Grid
-- Added `ValueMultiField`, of type string[], in the `ComboBoxColumn` to be used when your items in the drop down contain a key that consists of multiple fields.
-
-> [!Note]
-> The following breaking changes were introduced
-
-- Changed `ValueField` property from type string[] to string.
-
-### {PackageInputs}
-
-#### Date Picker
-- Changed ValueChanged event to `SelectedValueChanged`.
-
-#### Multi-Column ComboBox
-- Changed `TextChanged` event to `TextValueChanged`.
-- Changed `ValueChanged` event to `SelectedValueChanged`.
-
-<div class="divider--half"></div>
-
-## **1.0.0**
-### {PackageComponents}
-#### New Components
-
-These are related only in the **{PackageComponents}** package.
-
-* [Avatar](layouts/avatar.md)
-* [Badge](inputs/badge.md)
-* [Button & Icon Button](inputs/button.md)
-* [Calendar](scheduling/calendar.md)
-* [Card](layouts/card.md)
-* [Checkbox](inputs/checkbox.md)
-* [Form](inputs/form.md)
-* [Icon](layouts/icon.md)
-* [Input](inputs/input.md)
-* [List](grids/list.md)
-* [Navigation Bar](menus/navbar.md)
-* [Navigation Drawer](menus/navigation-drawer.md)
-* [Radio & Radio Group](inputs/radio.md)
-* [Ripple](inputs/ripple.md)
-* [Switch](inputs/switch.md)
-
-<div class="divider--half"></div>
-
-## **{PackageVerChanges-21-2}**
+### **{PackageVerChanges-21-2}**
 
 > [!Note]
 > Please ensure package "lit-html": "^2.0.0" or newer is added to your project for optimal compatibility.
-
-### {PackageCharts} (Charts)
 
 This release introduces a few improvements and simplifications to visual design and configuration options for the geographic map and all chart components.
 
@@ -325,26 +783,7 @@ This release introduces a few improvements and simplifications to visual design 
 | -------------------- | ------------------- |
 | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br> |
 
-<div class="divider--half"></div>
-
-### {PackageGrids} (Data Grid)
-
-* New Features Added:
-    - [Filter Row](grids/data-grid/column-filtering.md)
-    - [Load/Save Layout Customizations](grids/data-grid/load-save-layout.md)
-    - [GroupBy Area for column grouping](grids/data-grid/row-grouping.md)
-    - [Cell Merging](grids/data-grid/cell-merging.md)
-* New API:
-    - Added `SelectionChanged` event. Used to detect changes on selection interactions
-     e.g. Multiple row selection.
-* Breaking Changes:
-    - Changed grid's SummaryScope property's type to SummaryScope from `DataSourceSummaryScope`
-    - Changed GroupHeaderDisplayMode property's type to GroupHeaderDisplayMode from `DataSourceSectionHeaderDisplayMode`
-
-<div class="divider--half"></div>
-
-## **{PackageVerChanges-21-1}**
-### {PackageCharts} (Charts)
+### **{PackageVerChanges-21-1}**
 
 This release introduces several new and improved visual design and configuration options for all of the chart components, e.g. `XamDataChart`, `CategoryChart`, and `FinancialChart`.
 
@@ -395,7 +834,43 @@ for example:
 * Added horizontal `Orientation` property to ItemLegend that can be used with Bubble, Donut, and Pie Chart
 * Added `LegendHighlightingMode` property - Enables series highlighting when hovering over legend items
 
-### {PackageMaps} (GeoMap)
+
+## {PackageInputs}
+
+### **{PackageVerChanges-22-2.2}**
+
+* `IgcDateTimeInput`, the StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date) is now trimmed down to DatePart instead of DateTimeInputDatePart
+* `IgcRadio` and `IgcRadioGroup`, added component validation along with styles for invalid state
+* `IgcMask`, added the capability to escape mask pattern literals.
+* `IgcBadge` added a `Shape` property that controls the shape of the badge and can be either `Square` or `Rounded`. The default shape of the badge is rounded.
+* `IgcAvatar`, the `RoundShape` property has been deprecated and will be removed in a future version. Users can control the shape of the avatar by the newly added `Shape` attribute that can be `Square`, `Rounded` or `Circle`. The default shape of the avatar is `Square`.
+
+### **{PackageVerChanges-21-2.1}**
+
+- Date Picker:
+  * Changed ValueChanged event to `SelectedValueChanged`.
+- Multi-Column ComboBox:
+  * Changed `TextChanged` event to `TextValueChanged`.
+  * Changed `ValueChanged` event to `SelectedValueChanged`.
+
+### **{PackageVerChanges-21-1}**
+
+- Date Picker:
+  - `ShowTodayButton` - Toggles Today button visibility
+  - `Label` - Adds a label above the date value
+  - `Placeholder` property - adds custom text when no value is selected
+  - `FormatString` - Customize input date string e.g. (`yyyy-MM-dd`)
+  - `DateFormat` - Specifies whether to display selected dates as LongDate or ShortDate
+  - `FirstDayOfWeek` - Specifies first day of week
+  - `FirstWeekOfYear` - Specifies when to display first week of the year, e.g. (First Full Week, First Four day Week)
+  - `ShowWeekNumbers` - Toggles Week number visibility
+  - `MinDate` & `MaxDate` - Date limits, specifying a range of available selectable dates.
+  - Added Accessibility
+
+
+## {PackageMaps}
+
+### **{PackageVerChanges-21-1}**
 
 > [!Note]
 > These features are CTP
@@ -405,95 +880,27 @@ for example:
 * Added support for highlighting of the shape series
 * Added support for some annotation layers for the shape series
 
-<div class="divider--half"></div>
 
-### {PackageGrids}
+## {PackageGauges}
 
-* Added `EditOnKeyPress` aka Excel-style Editing, instantly begin editing when typing.
-* Added `EditModeClickAction` property - By default double-clicking is required to enter edit mode. This can be set to `SingleClick` to allow for edit mode to occur when selecting a new cell.
-* Added `EnterKeyBehaviors` property - aka Excel-style Navigation (Enter Behavior) – controls the behavior of the enter key, e.g. Options are (none, edit, move up, down, left, right)
-* Added `EnterKeyBehaviorAfterEdit` property - While in edit-mode, this property controls when enter is pressed, e.g. Options are (moves to the cell below, above, right, left)
-* Added `SelectAllRows` - method.
-* Added Row Range Selection - With `GridSelectionMode` property set to MultipleRow the following new functionality is now included:
-    - Click and drag to select rows
-    - Shift and click to select multiple rows.
-    - Shift and press the up/down arrow keys to select multiple rows.
-* Pressing space bar toggles selection of active row via `GridSelectionMode` property set to MultipleRow or SingleRow
-* Added Column Summaries to Column Options Dialog.
+### **{PackageVerChanges-24-1-JUN}**
 
-### {PackageInputs}
+- `XamRadialGauge`
+    - New label for the highlight needle. `HighlightLabelText` and `HighlightLabelSnapsToNeedlePivot` and many other styling related properties for the HighlightLabel were added.
 
-#### Date Picker
+### **{PackageVerChanges-23-2-MAR}**
 
-* `ShowTodayButton` - Toggles Today button visibility
-* `Label` - Adds a label above the date value
-* `Placeholder` property - adds custom text when no value is selected
-* `FormatString` - Customize input date string e.g. (`yyyy-MM-dd`)
-* `DateFormat` - Specifies whether to display selected dates as LongDate or ShortDate
-* `FirstDayOfWeek` - Specifies first day of week
-* `FirstWeekOfYear` - Specifies when to display first week of the year, e.g. (First Full Week, First Four day Week)
-* `ShowWeekNumbers` - Toggles Week number visibility
-* `MinDate` & `MaxDate` - Date limits, specifying a range of available selectable dates.
-* Added Accessibility
+- `XamRadialGauge`
+    - New title/subtitle properties. `TitleText`, `SubtitleText` will appear near the bottom the gauge. In addition, the various title/subtitle font properties were added such as `TitleFontSize`, `TitleFontFamily`, `TitleFontStyle`, `TitleFontWeight` and `TitleExtent`. Finally, the new `TitleDisplaysValue` will allow the value to correspond with the needle's position.  
+    - New `OpticalScalingEnabled` and `OpticalScalingSize` properties for the `XamRadialGauge`. This new feature will manage the size at which labels, titles, and subtitles of the gauge have 100% optical scaling. You can read more about this new feature [here](radial-gauge.md#optical-scaling)
+    - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear.  
+- `XamLinearGauge`
+    - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear. 
+- `XamBulletGraph`
+    - The Performance bar will now reflect a difference between the value and new `HighlightValue` when the `HighlightValueDisplayMode` is applied to the 'Overlay' setting. The highlight value will show a filtered/subset completed measured percentage as a filled in color while the remaining bar's appearance will appear faded to the assigned value, illustrating the performance in real-time.
 
-<div class="divider--half"></div>
-
-## **{PackageVerChangedFields}**
-
-### {PackageGrids} (Data Grid)
-
-> [!Note]
-> These breaking changes were introduce in the grid package.
-
-- Changed name of PropertyPath
-
-The data grid component property `propertyPath` has been renamed to `field`. This applies to all Column types, GroupDescription, SortDescription & SummaryDescription.
-
-```html
- <igc-text-column field="Name"></igc-text-column>
-```
-
-```ts
-import { IgcColumnSummaryDescription, IgcColumnSortDescription, IgcColumnGroupDescription} from 'igniteui-webcomponents-grids'
-const productCount = new IgcColumnSummaryDescription();
-productCount.field = "ProductName";
-const colSortDesc = new IgcColumnSortDescription();
-colSortDesc.field = "UnitsInStock";
-const income = new IgcColumnGroupDescription();
-income.field = "Income";
-```
-
-## **{PackageVerRenamedGrid}**
-
-### {PackageGrids} (Data Grid)
-
-- Changed Name of Live Grid
-
-The data grid component and it's corresponding module's names have changed from "LiveGrid" to "DataGrid".
-
-> [!Note]
-> These breaking changes were introduce in these packages and components only:
-
-The new code for importing the grid and it's corresponding module is:
-
-```ts
-import { IgcDataGrid } from "igniteui-webcomponents-grids";
-import { IgcDataGridModule } from 'igniteui-webcomponents-grids';
-```
-
-- Required Peer Dependency for Data Grid
-
-The data grid component requires the "inputs" package.
-
-```ts
-**npm install --save {PackageInputs}**
-```
-<!-- end: React, WebComponents -->
-
-<div class="divider--half"></div>
-
-<!-- Angular, React, WebComponents -->
-## **{PackageVerChangedImports}**
+## **gauges/charts/maps/grids**
+### **{PackageVerChangedImports}**
 
 - Changed Import Statements
 
@@ -569,3 +976,254 @@ import { IgcGeographicMapModule } from "igniteui-webcomponents-maps/ES5/igc-geog
 import { IgcLiveGridModule } from 'igniteui-webcomponents-grids/ES5/igc-live-grid-module';
 import { IgcLiveGridComponent } from 'igniteui-webcomponents-grids/ES5/igc-live-grid-component';
 ```
+
+## {PackageDockManager}
+
+### **{PackageDockManagerVerChanges-1.14.4}**
+
+#### Deprecated
+- `SplitPane` `IsMaximized` is deprecated. Having isMaximized set to true on a split pane level has no real effect as split panes serve as containers only, meaning they have no actual content to be shown maximized. Use the `IsMaximized` property of `TabGroupPane` and/or `ContentPane` instead.
+
+### **{PackageDockManagerVerChanges-1.14.3}**
+
+#### Fixed
+- Dock manager throws errors with Vite-based builds.
+- Docking to edge in an empty root split pane throws errors.
+
+### **{PackageDockManagerVerChanges-1.14.2}**
+
+#### Fixed
+- Constraining panels inside the dock manager boundaries with quick drags.
+
+### **{PackageDockManagerVerChanges-1.14.1}**
+
+#### Fixed
+- Proximity dock rtl check
+
+### **{PackageDockManagerVerChanges-1.14.0}**
+
+#### New features
+
+- Add `showPaneHeaders` property.
+- Add `proximityDock` property.
+- Add `containedInBoundaries` property.
+
+#### Enhancements
+- Add `contentId` of elements as CSS parts.
+
+#### Fixed
+- Maximizing and unpinning panes leads to unclickable panes.
+- Center dock is possible in a pane that has `AcceptsInnerDock` set to **true** if the `AllowInnerDock` of `DockManager` is set to **false**.
+
+### **{PackageDockManagerVerChanges-1.13.0}**
+
+#### New features
+- Add `FocusPane` method.
+- Add `AllowInnerDock` and `AcceptsInnerDock` properties.
+
+#### Enhancements
+- Save pane maximized state in layout.
+
+#### Fixed
+- Tab selection order is not preserved.
+
+#### **{PackageDockManagerVerChanges-1.12.5}**
+
+#### New features
+- Add `paneScroll` event.
+
+#### Fixed
+- ТabGroupPane: Pinning one of several unpinned panes results in all the panes getting pinned.
+- Context menu not positioning correctly in RTL mode.
+- Active pane is not retained when docking with keyboard.
+
+### **{PackageDockManagerVerChanges-1.12.4}**
+
+#### Fixed
+- Active pane incorrectly set when more than one Tab Group Pane is within a Floating Pane.
+
+### **{PackageDockManagerVerChanges-1.12.3}**
+
+#### Fixed
+- Error is thrown when dropping pane in a separate window.
+
+### **{PackageDockManagerVerChanges-1.12.2}**
+
+#### Enhancements
+- Add `tabs-more-menu-content` and `tabs-more-menu-item` CSS parts.
+
+#### Fixed
+- Docking indicator left/right arrows positions are reversed in RTL mode.
+- Context menu not positioning correctly.
+- Missing overloads for `addEventListener` and `removeEventListener`.
+
+### **{PackageDockManagerVerChanges-1.12.1}**
+
+#### Enhancements
+- Include pane information in `splitterResizeStart` and `splitterResizeEnd` events.
+- `DockManager` is now exported as class.
+
+#### Fixed
+- Contents in slots with `unpinnedHeaderId` are not updated correctly.
+
+### **{PackageDockManagerVerChanges-1.12.0}**
+
+#### Fixed
+- Docking not working with `allowFloating: false`.
+- Flyout pane closing while active.
+- Focusable elements does not receive focus.
+- Navigating with pane navigator does not bring selected floating window on top.
+- Event `splitterResizeStart` can't be cancelled.
+- Tabs context menu not positioning correctly.
+
+### **{PackageDockManagerVerChanges-1.11.3}**
+
+#### New features
+- Add `contextMenuPosition` property
+- Add `selected` option for `tab-header-close-button` CSS part
+
+### **{PackageDockManagerVerChanges-1.11.2}**
+
+#### New features
+- Add `hovered` option for `tab-header-close-button` CSS part
+
+### **{PackageDockManagerVerChanges-1.11.1}**
+
+#### Fixed
+- CSS part fixes for `tab-header`
+
+### **{PackageDockManagerVerChanges-1.11.0}**
+
+#### New features
+- Add options for `ShowHeaderIconOnHover` property for different buttons
+- Add `horizontal` and `vertical` options for `splitter-handle` CSS part
+- Add `header-title` CSS part
+- Add `hover` option for `tab-header-close-button` CSS part in active/inactive states
+- Add `paneHeaderCloseButton` and `tabHeaderCloseButton` slots
+
+### **{PackageDockManagerVerChanges-1.10.0}**
+
+#### New features
+-  Add `ShowHeaderIconOnHover` property.
+
+#### Fixed
+- Active pane is not retained on float/dock.
+- Splitter styles are not applied.
+- `click` event on customized header buttons is not working.
+- Removed erroneous dock indicators while dragging over splitter.
+
+### **{PackageDockManagerVerChanges-1.9.0}**
+
+#### Fixed
+- Styles not applied.
+- Resize in RTL mode.
+
+### **{PackageDockManagerVerChanges-1.8.0}**
+
+#### New features
+- Customize dock manager buttons.
+- `LayoutChange` event which fires when the layout updates.
+
+### **{PackageDockManagerVerChanges-1.7.0}**
+
+#### New features
+- Customizable floating pane header.
+- `Disabled` property per pane.
+- `DocumentOnly` property which allows content pane to be docked only inside a document host.
+- `AllowEmpty` property for split and tab group panes which allows displaying empty areas.
+- `DisableKeyboardNavigation` property on the dock manager.
+
+#### Fixed
+- Docking indicators appear over the currently dragged floating pane.
+
+### **{PackageDockManagerVerChanges-1.6.0}**
+
+#### New features
+- Customize dock manager panes and tabs.
+
+#### Fixed
+- A floating pane is draggable outside of the page.
+
+### **{PackageDockManagerVerChanges-1.5.0}**
+
+#### New features
+- `AllowMaximize` property per pane.
+
+#### Fixed
+- Unpinned pane is closing automatically upon clicking on its content.
+- Panes selected from the overflow menu are not activated if there is an unpinned pane from the same tab group.
+
+### **{PackageDockManagerVerChanges-1.4.1}**
+
+#### Fixed
+- Pane with `allowPinning: false` placed inside tab group can be unpinned.
+- Normalize a maximized pane when navigating away from it via the keyboard.
+
+### **{PackageDockManagerVerChanges-1.4.0}**
+
+#### New features
+- Reorder tabs without creating floating pane.
+- Keyboard navigation.
+- Pane navigator.
+- Enable/disable floating pane resizing.
+- Events for floating pane resizing.
+
+#### Fixed
+- Select pane when activated.
+- Flyout unpinned pane when activated.
+- Error thrown when hosting external popup inside pane.
+- Tab selection is lost with nested Dock Manager components.
+- Floating pane containing panes with disabled floating and docking cannot be moved.
+- Exception thrown when docking floating pane inside empty dock manager.
+
+### **{PackageDockManagerVerChanges-1.3.0}**
+
+#### New features
+- More tabs menu appears when there is not enough space to display all tab headers.
+- Hide pane without removing it from the layout using its `hidden` property.
+- Header slot properties for tab and unpinned pane - `tabHeaderId` and `unpinnedHeaderId`.
+
+### **{PackageDockManagerVerChanges-1.2.0}**
+
+#### New features
+- Active pane.
+- Localization support.
+
+#### Fixed
+- Errors thrown when dragging the last document host tab and there is unpinned pane.
+- Tabs content disappears after docking a pane with `allowFloating: false`.
+- Exception thrown when quickly switching between docking indicators.
+
+### **{PackageDockManagerVerChanges-1.1.0}**
+
+#### New features
+- Maximizing panes.
+- Docking preview shadow.
+- ARIA support.
+- API for external drag/drop support.
+- Properties and events for user interactions such as closing, pinning, dragging.
+- Support for `ng update` for Angular projects.
+
+### **{PackageDockManagerVerChanges-1.0.3}**
+
+#### Enhancements
+- Resize splitter using the keyboard.
+
+### **{PackageDockManagerVerChanges-1.0.2}**
+
+#### Fixed
+- Pane goes out of view when resized to its minimum size.
+
+### **{PackageDockManagerVerChanges-1.0.1}**
+
+#### Enhancements
+- Add active color css variable.
+- Add keyboard support for context menu.
+
+#### Fixed
+- Selection is not working on first click when context menu is opened.
+- Single tab is not rendered correctly after pinning/unpinning its sibling.
+
+### **{PackageDockManagerVerChanges-1.0.0}**
+
+Initial release of Ignite UI Dock Manager.

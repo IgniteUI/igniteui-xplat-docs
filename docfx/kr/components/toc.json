@@ -336,6 +336,11 @@
     "status": ""
   },
   {
+    "name": "Data Pie Chart",
+    "href": "charts/types/data-pie-chart.md",
+    "status": "NEW"
+  },
+  {
     "name": "Donut Chart",
     "href": "charts/types/donut-chart.md",
     "status": ""
