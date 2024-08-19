@@ -17,6 +17,9 @@
     "igc-card-header-module.ts",
     "igc-card-media-module.ts",
     "igc-card-module.ts",
+    "igc-carousel-module.ts",
+    "igc-carousel-indicator-module.ts",
+    "igc-carousel-slide-module.ts",
     "igc-checkbox-base-module.ts",
     "igc-checkbox-module.ts",
     "igc-chip-module.ts",
@@ -1719,6 +1722,44 @@
     "names":[{"platform": "WebComponents","fileName": "igc-card-component.ts","mappedName": "IgcCardComponent"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "elevated"}], "originalName": "Elevated"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "Carousel",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "WebComponents","fileName": "igc-carousel-component.ts","mappedName": "IgcCarouselComponent"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean","mappedName": "skipLoop"}], "originalName": "SkipLoop"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean","mappedName": "skipIndicator"}], "originalName": "SkipIndicator"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean","mappedName": "skipNavigation"}], "originalName": "SkipNavigation"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean","mappedName": "skipPauseOnInteraction"}], "originalName": "SkipPauseOnInteraction"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean","mappedName": "vertical"}], "originalName": "Vertical"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number","mappedName": "interval"}], "originalName": "Interval"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number","mappedName": "maximumIndicatorsCount"}], "originalName": "MaximumIndicatorsCount"},
+      {"names":[{"platform": "WebComponents", "mappedType": "CarouselIndicatorsOrientation","mappedName": "indicatorsOrientation"}], "originalName": "IndicatorsOrientation"},
+      {"names":[{"platform": "WebComponents", "mappedType": "CarouselAnimationsType","mappedName": "animationsType"}], "originalName": "AnimationsType"} ]
+  },
+  {
+    "originalName": "Slide",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "WebComponents","fileName": "igc-carousel-slide-component.ts","mappedName": "IgcCarouselSlideComponent"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "active"}], "originalName": "Active"} ]
+  },
+  {
+    "originalName": "Indicator",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "WebComponents","fileName": "igc-carousel-indicator-component.ts","mappedName": "IgcCarouselIndicatorComponent"}],
+    "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
