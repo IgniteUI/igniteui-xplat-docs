@@ -121,7 +121,7 @@ const sortingFilteringStates: IGridState = state.getState(false, ['sorting', 'fi
 <!-- end: Angular -->
 
 <!-- WebComponents -->
-<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 ```html
 <{ComponentSelector} id="grid">
     <igc-grid-state id="gridState"></igc-grid-state>
@@ -140,7 +140,7 @@ const stateString: string = gridState.getStateAsString();
 // get the sorting and filtering expressions
 const sortingFilteringStates: IgcGridStateInfo = gridState.getState(['sorting', 'filtering']);
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 <!-- end: WebComponents -->
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
@@ -260,7 +260,7 @@ gridState.Options = new IgbGridStateOptions
     };
 ```
 
-The simple to use single-point API's allows to achieve a full state persistence functionality in just a few lines of code. **Copy paste the code from below** - it will save the grid state in the browser `SessionStorage` object every time the user leaves the current page. Whenever the user returns to main page, the grid state will be restored. No more need to configure those complex advanced filtering and sorting expressions every time to get the data you want - do it once and have the code from below do the rest for your users:
+The simple to use single-point API's allows to achieve a full state persistence functionality in just a few lines of code. **Copy paste the code from below** - it will save the grid state in the browser `LocalStorage` object every time the user leaves the current page. Whenever the user returns to main page, the grid state will be restored. No more need to configure those complex advanced filtering and sorting expressions every time to get the data you want - do it once and have the code from below do the rest for your users:
 
 <!-- Angular -->
 ```typescript
@@ -663,6 +663,21 @@ public void OnColumnInit(IgbColumnComponentEventArgs args)
 </igx-pivot-grid>
 ```
 
+```html
+<igc-pivot-grid id="grid">
+    <igc-grid-state id="gridState"></igc-grid-state>
+</igc-pivot-grid>
+```
+
+```ts
+ constructor() {
+    var grid = document.getElementById('grid') as IgcPivotGridComponent;
+    grid.pivotConfiguration = this.pivotConfiguration;
+    grid.addEventListener("valueInit", (ev:any) => this.onValueInit(ev));
+    grid.addEventListener("dimensionInit", (ev:any) => this.onDimensionInit(ev));
+}
+```
+
 ```razor
 blazor snippet
 ```
@@ -671,6 +686,7 @@ blazor snippet
 
 * In the `ValueInit` event handler set all custom aggregators, formatters and styles:
 
+<!-- Angular -->
 ```typescript
 public onValueInit(value: IPivotValue) {
     // Needed only for custom aggregators, formatter or styles.
@@ -696,6 +712,35 @@ public onValueInit(value: IPivotValue) {
     }
 }
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```ts
+public onValueInit(event: any) {
+    const value: IgcPivotValue = event.detail;
+    if (value.member === 'AmountofSale') {
+        value.aggregate.aggregator = this.totalSale;
+        value.aggregateList?.forEach((aggr: any) => {
+            switch (aggr.key) {
+                case 'SUM':
+                    aggr.aggregator = this.totalSale;
+                    break;
+                case 'MIN':
+                    aggr.aggregator = this.totalMin;
+                    break;
+                case 'MAX':
+                    aggr.aggregator = this.totalMax;
+                    break;
+            }
+        });
+    } else if (value.member === 'Value') {
+        value.formatter = (value: any) => value ? '$' + parseFloat(value).toFixed(3) : undefined;
+        value.styles.upFontValue = (rowData: any, columnKey: any): boolean => parseFloat(rowData.aggregationValues.get(columnKey.field)) > 150
+        value.styles.downFontValue = (rowData: any, columnKey: any): boolean => parseFloat(rowData.aggregationValues.get(columnKey.field)) <= 150;
+    }
+}
+```
+<!-- end: WebComponents -->
 
 ```razor
 Add blazor handling for valueInit
@@ -703,6 +748,7 @@ Add blazor handling for valueInit
 
 * In the `DimensionInit` event handler set all custom `MemberFunction` implementations:
 
+<!-- Angular -->
 ```typescript
 public onDimensionInit(dim: IPivotDimension) {
     switch (dim.memberName) {
@@ -721,6 +767,29 @@ public onDimensionInit(dim: IPivotDimension) {
     }
 }
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```ts
+public onDimensionInit(event: any) {
+    const dim: IgcPivotDimension = event.detail;
+    switch (dim.memberName) {
+        case 'AllProducts':
+            dim.memberFunction = () => 'All Products';
+            break;
+        case 'ProductCategory':
+            dim.memberFunction = (data: any) => data.ProductName;
+            break;
+        case 'City':
+            dim.memberFunction = (data: any) => data.City;
+            break;
+        case 'SellerName':
+            dim.memberFunction = (data: any) => data.SellerName;
+            break;
+    }
+}
+```
+<!-- end: WebComponents -->
 
 ```razor
 Add blazor handling for dimensionInit
@@ -788,6 +857,7 @@ setState snippet
 
 * Set custom sorting strategy and custom pivot column and row dimension strategies:
 
+<!-- Angular -->
 ```html
 <igx-pivot-grid #grid [data]="data" [pivotConfiguration]="pivotConfigHierarchy" [defaultExpandState]='true'
     [igxGridState]="options" [sortStrategy]="customStrategy" [showPivotConfigurationUI]='false' [superCompactMode]="true" [height]="'500px'">
@@ -809,13 +879,48 @@ public pivotConfigHierarchy: IPivotConfiguration = {
     filters: [...]
 };
 ```
+<!-- end: Angular -->
 
+<!-- WebComponents -->
+<!-- ComponentStart: PivotGrid -->
+```html
+    <igc-pivot-grid default-expand-state="true" super-compact-mode="true" show-pivot-configuration-ui="false"
+        height="600px" id="grid">
+        <igc-grid-state id="gridState"></igc-grid-state>
+    </igc-pivot-grid>
+```
+<!-- ComponentEnd: PivotGrid -->
+
+```ts
+public pivotConfiguration: IgcPivotConfiguration = {
+    columnStrategy: IgcNoopPivotDimensionsStrategy.instance(),
+    rowStrategy: IgcNoopPivotDimensionsStrategy.instance(),
+    columns: [...],
+    rows: [...],
+    values: [...],
+    filters: [...]
+};
+private gridState: IgcGridStateComponent;
+
+constructor() {
+    var grid = document.getElementById("grid") as IgcPivotGridComponent;
+    this.gridState = document.getElementById('gridState') as IgcGridStateComponent;
+    grid.pivotConfiguration = this.pivotConfiguration;
+    PivotNoopData.getData().then((value) => {
+        grid.data = value;
+    });
+    this.gridState.addEventListener('stateParsed', (ev:any) => this.stateParsedHandler(ev) );
+}
+```
+
+<!-- end: WebComponents -->
 ```razor
 Add snippet for blazor
 ```
 
-* Restoring the state from the `SessionStorage` and applying the custom strategies looks like the following:
+* Restoring the state from the `LocalStorage` and applying the custom strategies looks like the following:
 
+<!-- Angular -->
 ```typescript
 public restoreState() {
     const state = window.sessionStorage.getItem('grid-state');
@@ -827,7 +932,23 @@ public restoreState() {
     this.state.setState(state as string);
 }
 ```
+<!-- end: Angular -->
+<!-- WebComponents -->
+```ts
+public restoreGridState() {
+    const state = window.localStorage.getItem(this.stateKey);
+    if (state) {
+        this.gridState.applyStateFromString(state);
+    }
+}
 
+public stateParsedHandler(ev: any) {
+    const parsedState = ev.detail;
+    parsedState.pivotConfiguration.rowStrategy = IgcNoopPivotDimensionsStrategy.instance();
+    parsedState.pivotConfiguration.columnStrategy = IgcNoopPivotDimensionsStrategy.instance();
+}
+```
+<!-- end: WebComponents -->
 ```razor
 Add snippet for blazor for restore state
 ```
@@ -863,10 +984,7 @@ state.applyState(gridState.columnSelection);
 
 <!-- ComponentStart: PivotGrid -->
 
-<!-- Angular -->
-* `GetState` method uses JSON.stringify() method to convert the original objects to a JSON string. JSON.stringify() does not support Functions, thats why the `GridState` directive will ignore the pivot dimension `MemberFunction`, pivot values `Member`, `Formatter`, custom `Aggregate` functions,
- `Styles` and pivot configuration strategies: `ColumnStrategy` and `RowStrategy`.
-<!-- end:Angular -->
+* `GetState` method uses JSON.stringify() method to convert the original objects to a JSON string. JSON.stringify() does not support Functions, thats why the `GridState` directive will ignore the pivot dimension `MemberFunction`, pivot values `Member`, `Formatter`, custom `Aggregate` functions, `Styles` and pivot configuration strategies: `ColumnStrategy` and `RowStrategy`.
 
 <!-- ComponentEnd: PivotGrid -->
 
@@ -887,6 +1005,6 @@ state.applyState(gridState.columnSelection);
 
 
 <!-- * [Pivot Grid Features](features.md) -->
-<!-- * [Pivot Grid Remote Operations](remote-operations.md) -->
+* [Pivot Grid Remote Operations](remote-operations.md)
 
 <!-- ComponentEnd: PivotGrid -->
