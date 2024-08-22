@@ -358,6 +358,11 @@
         "exclude": ["Angular"],
         "name": "Theming",
         "href": "grids/theming.md"
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "Customize Icons",
+        "href": "grids/grid/icons.md"
       }
     ]
   },
