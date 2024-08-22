@@ -73,7 +73,12 @@ Chart Selection can also be configured in code where selected items in the chart
 The matcher is ideal for using in charts, such as the `CategoryChart` when you do not have access to the actual series, like the `XamDataChart`. In this case you if you know the properties that your datasource contained you can surmise the ValueMemberPaths that the series would have. For example, if you datasource has numeric properties Nuclear, Coal, Oil, Solar then you know there are series created for each of these properties. If you want to highlight the series bound to Solar values, you can add a ChartSelection object to the `SelectedSeriesItems` collection using a matcher with the following properties set
    
 For example, if you datasource has numeric properties Nuclear, Coal, Oil, Solar then you know there are series created for each of these properties. If you want to select the series bound to Solar values, you can add a ChartSelection object to the SelectedSeriesItems collection using a matcher with the following properties set.
-    
+
+<!-- Blazor -->
+
+ `sample="/charts/category-chart/selection-matcher", height="500", alt="{Platform} Selection Matcher"`
+
+<!-- end: Blazor -->
 
 ## API References
 
