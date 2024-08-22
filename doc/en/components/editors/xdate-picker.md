@@ -79,7 +79,7 @@ The {Platform} XDate Picker editor component consists of three default parts - t
 | `Placeholder` | string  |  A custom string to be displayed when the value within the edit portion of the calendar is cleared. |
 | `ShowClearButton` | bool  |  Defaults to true, the clear button is directly to the left of the calendar button, visualized by an X. When clicked, it will clear the `Value` of the XDate Picker. The clear button's visibility can be toggled on and off. |
 | `ShowTodayButton`| bool  |  The today is directly below the dates when the calendar is opened. When clicked, it will select the current date. The today button's visibility can be toggled on and off. |
-| `ShowWeekNumbers` | bool | Week numbers can be displayed as a number, at the left of every row of dates, in the drop down portion of the xdate picker. The week number's visibility can be toggled on and off. |
+| `ShowWeekNumbers` | bool | Week numbers can be displayed as a number, at the left of every row of dates, in the drop down portion of the XDate Picker. The week number's visibility can be toggled on and off. |
 | `FirstWeekOfYear` | enum | Configures the start of the week numbers for the entire year. Can be set to FirstDay, FirstFourDayWeek, FirstFullWeek. |
 | `OpenOnFocus` | bool | By default, the dropdown portion of the XDate Picker is opened on single click, forcing the user to click the calendar button to drop down the calendar. |
 | `Value` | date | Sets the value of the XDate Picker and selects it in the dropdown calendar. |
