@@ -1098,6 +1098,11 @@
     "status": ""
   },
   {
+    "name": "データ円チャート",
+    "href": "charts/types/data-pie-chart.md",
+    "status": "NEW"
+  },
+  {
     "name": "ドーナツ チャート",
     "href": "charts/types/donut-chart.md",
     "status": ""
@@ -1517,6 +1522,12 @@
     "status": ""
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "デバイダー",
+    "href": "layouts/divider.md",
+    "status": "NEW"
+  },
+  {
     "name": "メニュー",
     "header": true
   },
@@ -1748,6 +1759,12 @@
     "header": true
   },
   {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "バナー",
+    "href": "notifications/banner.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular"],
     "name": "スナックバー",
     "href": "notifications/snackbar.md"
@@ -1773,7 +1790,13 @@
     "href": "scheduling/calendar.md"
   },
   {
-    "exclude": ["Angular"],
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "日付ピッカー",
+    "href": "scheduling/date-picker.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "WebComponents"],
     "name": "日付ピッカー",
     "href": "editors/date-picker.md",
     "status": ""
