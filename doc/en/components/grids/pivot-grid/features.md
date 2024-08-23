@@ -100,6 +100,17 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 ```
 
 <!-- end:Blazor -->
+
+<!-- React -->
+
+```tsx
+const dimension: IgrPivotDimension = new IgrPivotDimension();
+dimension.memberName = "SellerName";
+dimension.enabled = true;
+dimension.sortDirection = SortingDirection.Asc;
+```
+<!-- end: React -->
+
 ## Dimensions Resizing
 
 Row dimensions can be resized similarly to column resizing - via a resizing indicator that can be found on the right edge of the cells.
@@ -134,6 +145,18 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 ```
 
 <!-- end:Blazor -->
+
+
+<!-- React -->
+
+```tsx
+const dimension: IgrPivotDimension = new IgrPivotDimension();
+dimension.memberName = "SellerName";
+dimension.enabled = true;
+dimension.width = "400px";
+```
+<!-- end: React -->
+
 ## Dimensions Selection
 
 The {PivotGridTitle} supports single selection which is enabled just like in the base grid. For example:
@@ -161,6 +184,13 @@ The {PivotGridTitle} supports single selection which is enabled just like in the
 </{PivotGridSelector}>
 ```
 
+<!--React -->
+```tsx
+<IgrPivotGrid data={pivotData} pivotConfiguration={pivotConfiguration} rowSelection={GridSelectionMode.Single}>
+</IgrPivotGrid>
+```
+<!-- end: React -->
+
 In case there are multiple row or column dimensions which would create groups that span multiple rows/columns, selection is applied to all cells that belong to the selected group.
 
 ## Super Compact Mode
@@ -180,6 +210,13 @@ The `PivotGrid` component provides a `SuperCompactMode` input. It is suitable fo
 ```razor
 <{PivotGridSelector} SuperCompactMode=true></{PivotGridSelector}>
 ```
+
+<!--React -->
+```tsx
+<IgrPivotGrid data={pivotData} pivotConfiguration={pivotConfiguration} superCompactMode={true}>
+</IgrPivotGrid>
+```
+<!-- end: React -->
 
 ## Additional Summary Column
 
