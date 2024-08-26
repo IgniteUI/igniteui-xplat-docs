@@ -115,7 +115,7 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```html
-<igx-hierarchical-grid [data]="localdata" displayDensity="compact" [moving]="true" [allowFiltering]="true">
+<igx-hierarchical-grid [data]="localdata" [moving]="true" [allowFiltering]="true">
     <igx-column field="CustomerID" data-type="string" sortable="true" resizable="true"></igx-column>
     <igx-column-group header="Address Information">
         <igx-column-group header="Location">
@@ -307,7 +307,7 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```html
-<igx-hierarchical-grid [data]="localdata" displayDensity="compact" [allowFiltering]="true" [moving]="true">
+<igx-hierarchical-grid [data]="localdata" [allowFiltering]="true" [moving]="true">
     <igx-column field="CustomerID" sortable="true" resizable="true"></igx-column>
     <igx-column-group [pinned]="false" header="General Information">
         <igx-column field="CompanyName" sortable="true" resizable="true"></igx-column>
@@ -471,7 +471,7 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```html
-<igx-hierarchical-grid [data]="localdata" displayDensity="compact" [allowFiltering]="true" [moving]="true">
+<igx-hierarchical-grid [data]="localdata" [allowFiltering]="true" [moving]="true">
     <igx-column field="CustomerID" sortable="true" resizable="true"></igx-column>
     <igx-column-group [pinned]="false" header="General Information">
         <igx-column field="CompanyName" sortable="true" resizable="true"></igx-column>
