@@ -36,30 +36,18 @@ setIconRef('filter_list', 'default', {
 
 <!-- React -->
 
-
-```tsx
- <IgrIcon ref={this.iconRef}></IgrIcon>
-```
-
 ```ts
-private iconInstance: IgrIcon;
-public iconRef(icon: IgrIcon){
-    if (!icon){
-            return;
-    }
-    this.iconInstance = icon;
-    // Add a new 'material' icon called 'filter_list' from string
-    this.iconInstance.registerIconFromText("filter_list", '<svg>...</svg>', "material");
+// Add a new 'material' icon called 'filter_list' from string
+registerIconFromText("filter_list", '<svg>...</svg>', "material");
 
-    // Add a new 'material' icon called 'my-filter_list' from svg url
-    this.iconInstance.registerIcon("filter_list", "url" , "material")
+// Add a new 'material' icon called 'my-filter_list' from svg url
+registerIcon("filter_list", "url" , "material")
 
-    // Sets the icon reference to the new registered icon.
-    this.iconInstance.setIconRef('filter_list', 'default', {
+// Sets the icon reference to the new registered icon.
+setIconRef('filter_list', 'default', {
             name: 'filter_list',
             collection: 'material',
-    } as IgrIconMeta);
-}
+});
 ```
 <!-- end: React -->
 
