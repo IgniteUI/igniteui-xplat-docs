@@ -189,11 +189,6 @@
       },
       {
         "exclude": ["Angular"],
-        "name": "Display Density",
-        "href": "grids/grid/display-density.md"
-      },
-      {
-        "exclude": ["Angular"],
         "name": "Editing",
         "href": "grids/grid/editing.md",
         "items": [
@@ -340,6 +335,12 @@
       },
       {
         "exclude": ["Angular"],
+        "name": "Size",
+        "href": "grids/grid/size.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular"],
         "name": "Sizing",
         "href": "grids/grid/sizing.md"
       },
@@ -410,11 +411,6 @@
         "exclude": ["Angular"],
         "name": "Conditional Styling",
         "href": "grids/hierarchical-grid/conditional-cell-styling.md"
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Display Density",
-        "href": "grids/hierarchical-grid/display-density.md"
       },
       {
         "exclude": ["Angular"],
@@ -516,6 +512,12 @@
             "href": "grids/hierarchical-grid/row-selection.md"
           }
         ]
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "Size",
+        "href": "grids/hierarchical-grid/size.md",
+        "status": "NEW"
       },
       {
         "exclude": ["Angular"],
@@ -643,12 +645,6 @@
         "exclude": ["Angular"],
         "name": "Column Resizing",
         "href": "grids/tree-grid/column-resizing.md",
-        "status": ["NEW_REACT"]
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Display Density",
-        "href": "grids/tree-grid/display-density.md",
         "status": ["NEW_REACT"]
       },
       {
@@ -782,6 +778,12 @@
             "status": ["NEW_REACT"]
           }
         ]
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "Size",
+        "href": "grids/tree-grid/size.md",
+        "status": "NEW"
       },
       {
         "exclude": ["Angular"],

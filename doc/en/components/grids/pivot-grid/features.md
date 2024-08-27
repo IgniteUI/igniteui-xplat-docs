@@ -164,7 +164,7 @@ The {PivotGridTitle} supports single selection which is enabled just like in the
 In case there are multiple row or column dimensions which would create groups that span multiple rows/columns, selection is applied to all cells that belong to the selected group.
 
 ## Super Compact Mode
-The `PivotGrid` component provides a `SuperCompactMode` input. It is suitable for cases that require a lot of cells to be present on the screen at once. If enabled the option ignores the `DisplayDensity` option for the {PivotGridTitle}. Enabling `SuperCompactMode` also sets the `DisplayDensity` input to `Compact` for each child component(like `Chip`) that does not have the `SuperCompactMode` option.
+The `PivotGrid` component provides a `SuperCompactMode` input. It is suitable for cases that require a lot of cells to be present on the screen at once. If enabled the option ignores the `--ig-size` CSS variable for the {PivotGridTitle}. Enabling `SuperCompactMode` also sets the `--ig-size` to `small` for each child component(like `Chip`) that does not have the `SuperCompactMode` option.
 <!-- Angular -->
 ```html
 <{PivotGridSelector} [superCompactMode]="true"></{PivotGridSelector}>
