@@ -378,12 +378,12 @@ function restoreGridState() {
 @inject IJSRuntime JS
 @inject NavigationManager Navigation
 
-<IgbGrid Rendered="OnGridRendered">
+<{ComponentSelector} Rendered="OnGridRendered">
     <IgbGridState @ref="gridState"></IgbGridState>
     <IgbColumn Field="ContactName" Header="Name" MinWidth="200px" ></IgbColumn>
     <IgbColumn Field="ContactTitle" Header="Title" MinWidth="200px" Sortable="true" Filterable="true" Groupable="true"></IgbColumn>
     <IgbColumn Field="CompanyName" Header="Company" MinWidth="200px" Sortable="true" Filterable="true" Groupable="true"></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 
 @code {
     protected override void OnAfterRender(bool firstRender)
@@ -826,7 +826,20 @@ gridState.options = { cellSelection: false, sorting: false, rowIslands: true };
 
 
 ```razor
-Blazor snippet
+<IgbHierarchicalGrid>
+    <IgbGridState @ref="gridState"></IgbGridState>
+</IgbHierarchicalGrid>
+
+@code {
+    private IgbGridState gridState;
+
+    gridState.Options = new IgbGridStateOptions
+    {
+        CellSelection = false,
+        Sorting = false,
+        RowIslands = true
+    };
+}
 ```
 <!-- ComponentStart: HierarchicalGrid -->
 Then the `GetState` API will return the state for all grids (root grid and child grids) features excluding `Selection` and `Sorting`. If later on the developer wants to restore only the `Filtering` state for all grids, use:
@@ -836,10 +849,15 @@ this.state.applyState(state, ['filtering', 'rowIslands']);
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
+<!-- ComponentStart: HierarchicalGrid -->
+Then the `GetState` API will return the state for all grids (root grid and child grids) features excluding `Selection` and `Sorting`. If later on the developer wants to restore only the `Filtering` state for all grids, use:
 ```razor
-setState snippet
+gridState.ApplyStateFromString(gridStateString, new string[] { "filtering", "rowIslands" });
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- ComponentEnd: HierarchicalGrid -->
+
 
 ## Demo
 
@@ -882,6 +900,7 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 <!-- end: Angular -->
 
 <!-- WebComponents -->
+
 <!-- ComponentStart: PivotGrid -->
 ```html
     <igc-pivot-grid default-expand-state="true" super-compact-mode="true" show-pivot-configuration-ui="false"
@@ -914,6 +933,7 @@ constructor() {
 ```
 
 <!-- end: WebComponents -->
+<!-- ComponentStart: PivotGrid -->
 ```razor
 Add snippet for blazor
 ```
@@ -949,11 +969,15 @@ public stateParsedHandler(ev: any) {
 }
 ```
 <!-- end: WebComponents -->
+
+
 ```razor
 Add snippet for blazor for restore state
 ```
 
+
 `sample="/{ComponentSample}/data-persistence-noop", height="580", alt="{Platform} {ComponentTitle} data persistence noop"`
+<!-- ComponentEnd: PivotGrid -->
 
 <!-- ComponentEnd: PivotGrid -->
 
@@ -988,11 +1012,11 @@ state.applyState(gridState.columnSelection);
 
 <!-- ComponentEnd: PivotGrid -->
 
-## Additional Resources
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
 <!-- ComponentStart:  Grid -->
+## Additional Resources
 * [Paging](paging.md)
 * [Filtering](filtering.md)
 * [Sorting](sorting.md)
@@ -1005,6 +1029,7 @@ state.applyState(gridState.columnSelection);
 
 
 <!-- * [Pivot Grid Features](features.md) -->
+<!-- WebComponents -->
 * [Pivot Grid Remote Operations](remote-operations.md)
-
+<!-- end: WebComponents -->
 <!-- ComponentEnd: PivotGrid -->
