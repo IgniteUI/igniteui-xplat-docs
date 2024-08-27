@@ -235,7 +235,7 @@ The `DatePicker` also supports a `dialog` mode:
 ```razor
 <IgbDatePicker Mode="DatePickerMode.Dialog"></IgbDatePicker>
 ```
-`sample="/scheduling/date-picker/dialog_mode", height="500", alt="{Platform} Date Picker Dialog Mode Example"`
+`sample="/scheduling/date-picker/dialog-mode", height="500", alt="{Platform} Date Picker Dialog Mode Example"`
 
 ### Display and input format
 `InputFormat` and `DisplayFormat` are properties which can be set to make the picker's editor follow a specified format. The `InputFormat` is locale based, so if none is provided, the picker will default to the one used by the browser.
