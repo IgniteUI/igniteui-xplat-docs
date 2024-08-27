@@ -13,7 +13,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### **{PackageVerChanges-24-1-JUN}**
 
-- `DisplayDensity` deprecated in favor of the `--ig-size` CSS custom property. Check out the [Grid Size](grids/grid/size.md) topic for more.
+- `DisplayDensity` deprecated in favor of the `--ig-size` CSS custom property. Check out the [Grid Size](grids/grid/size.md) topic for more regarding the Grid.
 
 ### **{PackageVerChanges-23-2-MAR}**
 
@@ -142,6 +142,35 @@ The data grid component requires the "inputs" package.
 
 
 ## {PackageCommon}
+
+### **{PackageCommonVerChanges-5.0.0}**
+
+- `Icon`
+  - Added `setIconRef` method. This allows to register and replace icons by SVG files.
+  - All components now use icons by reference internally so that it's easy to replace them without explicitly providing custom templates.
+
+**BREAKING CHANGES**:
+
+- Removed `Form` component. Use native form instead.
+- Removed `size` property in favor of the `--ig-size` CSS custom property for the following components:
+  - `Avatar`, `Button`,`IconButton`, `Calendar`, `Chip`, `Dropdown`, `Icon`, `Input`, `List`, `Rating`, `Snackbar`, `Tabs`, `Tree`
+- Removed custom `igcFocus` and `igcBlur` events. Use the native `focus` and `blur` events instead for the following components:
+  - `Button`, `IconButton`, `Checkbox`, `Switch`, `Combo`, `DateTimeInput`, `Input`, `MaskInput`, `Radio`, `SelectComponent`, `Textarea`
+- `Checkbox`, `Switch` ,`Radio`
+  - Changed `igcChange` event arguments from `CustomEvent<boolean>` to `CustomEvent<{ checked: boolean; value: string | undefined }>`
+- `Combo`, `SelectComponent`
+  - Removed `positionStrategy`, `flip`, `sameWidth` properties.
+- `Dialog`
+  - Renamed The `closeOnEscape` property to `keepOpenOnEscape`.
+- `Dropdown`
+  - Removed `positionStrategy` property.
+- `Input`
+  - Removed `maxlength` and `minlength` properties. Use the native `maxLength` and `minLength` properties or `max` and `min` instead.
+  - Renamed `readonly` and `inputmode` properties to `readOnly` and `inputMode`.
+- `RangeSlider`
+  - Renamed `ariaThumbLower`/`ariaThumbUpper` properties to `thumbLabelLower`/`thumbLabelUpper`.
+- `Rating`
+  - Renamed `readonly` property to `readOnly`.
 
 ### **{PackageCommonVerChanges-4.11.1}**
 

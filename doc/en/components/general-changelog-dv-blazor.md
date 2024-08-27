@@ -10,6 +10,50 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## **{PackageVerChanges-24-1-AUG}**
+
+### General
+
+- New `Banner` component.
+- New `DatePicker` component.
+- New `Divider` component.
+- `Icon`
+  - Added `SetIconRef` method. This allows to register and replace icons by SVG files.
+  - All components now use icons by reference internally so that it's easy to replace them without explicitly providing custom templates.
+- `Combo`, `DatePicker`, `Dialog`, `Dropdown`,  `ExpansionPanel`, `NavDrawer`, `Toast`, `Snackbar`, **IgbSelectComponent**
+  - Toggle methods `Show`, `Hide`, `Toggle` methods return **true** now on success. Otherwise **false**.
+
+**BREAKING CHANGES**:
+
+- Renamed old `DatePicker` to **IgbXDatePicker**.
+- Removed `Form` component. Use native form instead.
+- Removed `size` property in favor of the `--ig-size` CSS custom property for the following components:
+  - `Avatar`, `Button`,`IconButton`, `Calendar`, `Chip`, `Dropdown`, `Icon`, `Input`, `List`, `Rating`, `Snackbar`, `Tabs`, `Tree`
+- `Badge`, `Chip`, `LinearProgress`, `CircularProgress`
+  - Renamed `Variant` property type to `StyleVariant`.
+- `Calendar`
+  - Renamed `WeekStart` property type to `WeekDays`.
+- `Checkbox`, `Switch`
+  - Changed `Change` event argument type from `ComponentBoolValueChangedEventArgs` to `CheckboxChangeEventArgs`.
+- `Combo`, `SelectComponent`
+  - Removed `PositionStrategy`, `Flip`, `SameWidth` properties.
+- `DateTimeInput`
+  - Removed `MaxValue` and `MinValue` properties. Used `Max` and `Min` instead.
+- `Dialog`
+  - Renamed `CloseOnEscape` property to `KeepOpenOnEscape`.
+- `Dropdown`
+  - Removed `PositionStrategy` property.
+- `Input`
+  - Removed `Maxlength` and `Minlength` properties. Use the `Max` and `Min` properties instead.
+  - Renamed `Readonly` and `Inputmode` properties to `ReadOnly` and `InputMode`.
+  - Changed `InputMode` type also to `string`.
+- `Radio`
+  - Changed `Change` event argument type from `ComponentBoolValueChangedEventArgs` to `RadioChangeEventArgs`.
+- `RangeSlider`
+  - Removed `AriaThumbLower` and `AriaThumbUpper` properties. Use `ThumbLabelLower` and `ThumbLabelUpper` instead.
+- `Rating`
+  - Renamed `Readonly` property to `ReadOnly`.
+
 ## **{PackageVerChanges-24-1-JUN}**
 
 ### General

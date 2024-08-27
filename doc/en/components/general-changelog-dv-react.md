@@ -9,6 +9,53 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## **{PackageVerChanges-24-1-AUG}**
+
+### {PackageCommon}
+
+- New `Banner` component.
+- New `DatePicker` component.
+- New `Divider` component.
+- Added support for native events to all components.
+- `Icon`
+  - Added `setIconRef` method. This allows to register and replace icons by SVG files.
+  - All components now use icons by reference internally so that it's easy to replace them without explicitly providing custom templates.
+- `Combo`, `DatePicker`, `Dialog`, `Dropdown`,  `ExpansionPanel`, `NavDrawer`, `Toast`, `Snackbar`, **IgrSelectComponent**
+  - Toggle methods `show`, `hide`, `toggle` methods return **true** now on success, otherwise **false**.
+- `Button`, `IconButton`, `Checkbox`, `Switch`, `Combo`, `DateTimeInput`, `Input`, `MaskInput`, `Radio`, `SelectComponent`, `Textarea`
+  - Deprecated custom `focus` and `blur` events. Use the native `onFocus` and `onBlur` events instead
+
+**BREAKING CHANGES**:
+
+- Renamed old `DatePicker` to **IgrXDatePicker**.
+- Removed `Form` component. Use native form instead.
+- Removed `size` property in favor of the `--ig-size` CSS custom property for the following components:
+  - `Avatar`, `Button`,`IconButton`, `Calendar`, `Chip`, `Dropdown`, `Icon`, `Input`, `List`, `Rating`, `Snackbar`, `Tabs`, `Tree`
+- `Badge`, `Chip`, `LinearProgress`, `CircularProgress`
+  - Renamed `Variant` property type to `StyleVariant`.
+- `Calendar`
+  - Renamed `WeekStart` property type to `WeekDays`.
+- `Checkbox`, `Switch`
+  - Changed `change` event argument type from `ComponentBoolValueChangedEventArgs` to `CheckboxChangeEventArgs`.
+- `Combo`, `SelectComponent`
+  - Removed `positionStrategy`, `flip`, `sameWidth` properties.
+- `DateTimeInput`
+  - Removed `maxValue` and `minValue` properties. Used `max` and `min` instead.
+- `Dialog`
+  - Renamed `closeOnEscape` property to `keepOpenOnEscape`.
+- `Dropdown`
+  - Removed `positionStrategy` property.
+- `Input`
+  - Removed `maxlength` and `minlength` properties. Use the `max` and `min` properties instead.
+  - Renamed `readonly` and `inputmode` properties to `readOnly` and `inputMode`.
+  - Changed `inputMode` type also to `string`.
+- `Radio`
+  - Changed `change` event argument type from `ComponentBoolValueChangedEventArgs` to `RadioChangeEventArgs`.
+- `RangeSlider`
+  - Removed `ariaThumbLower` and `ariaThumbUpper` properties. Use `thumbLabelLower` and `thumbLabelUpper` instead.
+- `Rating`
+  - Renamed `readonly` property to `readOnly`.
+
 ## **{PackageVerChanges-24-1-JUN}**
 
 ### {PackageCommon}
