@@ -32,6 +32,39 @@ defineComponents(IgcBannerComponent);
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Banner`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrBannerModule, IgrBanner } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrButtonModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
+Before using the `Banner`, you need to register it as follows:
+
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbBannerModule));
+```
+
+You will also need to link an additional CSS file to apply the styling to the `Banner` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+<!-- end: Blazor -->
+
 For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 ### Show Banner
@@ -46,6 +79,33 @@ In order to display the banner component, use its `Show` method and call it on a
 </igc-banner>
 ```
 
+```tsx
+<IgrButton clicked={() => bannerRef.current.show()}>
+    <span>Show Banner</span>
+</IgrButton>
+
+<IgrBanner ref={bannerRef}>
+    <span key="message">You are currently offline.</span>
+</IgrBanner>
+```
+
+```razor
+<IgbButton @onclick="ShowBanner">Show Banner</IgbButton>
+
+<IgbBanner @ref="bannerRef">
+    You are currently offline.
+</IgbBanner>
+
+@code {
+    private IgbBanner bannerRef;
+
+    private void ShowBanner()
+    {
+        this.bannerRef.ShowAsync();
+    }
+}
+```
+
 > [!NOTE]
 > The `Banner` includes a default action button `OK`, which closes the banner.
 
@@ -56,7 +116,7 @@ The `Banner` component allows templating of its content while still sticking as 
 
 ### Changing the banner message
 
-Configuring the message displayed in the banner is easy - just change the content you are passing to the `igc-banner` tag. The text will show up in the specified banner area and the banner will use its default template when displaying it. Below, we will change the content of our sample banner to be a bit more descriptive:
+Configuring the message displayed in the banner is easy - just change the content you are passing to the <!-- WebComponents -->`igc-banner`<!-- end: WebComponents --><!-- React -->`IgrBanner`<!-- end: React --><!-- Blazor -->`IgbBanner`<!-- end: Blazor --> tag. The text will show up in the specified banner area and the banner will use its default template when displaying it. Below, we will change the content of our sample banner to be a bit more descriptive:
 
 ```html
 <igc-banner id="banner">
@@ -64,14 +124,26 @@ Configuring the message displayed in the banner is easy - just change the conten
 </igc-banner>
 ```
 
+```tsx
+<IgrBanner ref={bannerRef}>
+    <span key="message">You have lost connection to the internet. This app is offline.</span>
+</IgrBanner>
+```
+
+```razor
+<IgbBanner @ref="bannerRef">
+    You have lost connection to the internet. This app is offline.
+</IgbBanner>
+```
+
 ### Adding an icon
 
-An [`igc-icon`](../layouts/icon.md) can be displayed in the banner by using the banner's `prefix` slot. The icon will always be positioned at the beginning of the banner message.
+An `Icon` can be displayed in the banner by using the banner's `prefix` slot. The icon will always be positioned at the beginning of the banner message.
 
 > [!NOTE]
-> If several `igc-icon` elements are inserted, the banner will try to position all of them at the beginning. It is strongly advised to pass only one `igc-icon` directly to the banner.
+> If several `Icon` elements are inserted, the banner will try to position all of them at the beginning. It is strongly advised to pass only one `Icon` directly to the banner.
 
-To pass an `igc-icon` to your banner, use the `prefix` slot:
+To pass an `Icon` to your banner, use the `prefix` slot:
 
 ```html
 <igc-banner id="banner">
@@ -80,13 +152,41 @@ To pass an `igc-icon` to your banner, use the `prefix` slot:
 </igc-banner>
 ```
 
-If you want to use an `igc-icon` in your banner message, simply insert it in the banner's content:
+```tsx
+<IgrBanner ref={bannerRef}>
+    <IgrIcon key="icon" slot="prefix" name="signal_wifi_off"></IgrIcon>
+    <span key="message">You have lost connection to the internet. This app is offline.</span>
+</IgrBanner>
+```
+
+```razor
+<IgbBanner @ref="bannerRef">
+    <IgbIcon slot="prefix" IconName="signal_wifi_off" Collection="material"></IgbIcon>
+    You have lost connection to the internet. This app is offline.
+</IgbBanner>
+```
+
+If you want to use an `Icon` in your banner message, simply insert it in the banner's content:
 
 ```html
 <igc-banner id="banner">
     You have lost connection to the internet. This app is offline.
     <igc-icon name="signal_wifi_off"></igc-icon>
 </igc-banner>
+```
+
+```tsx
+<IgrBanner ref={bannerRef}>
+    <span key="message">You have lost connection to the internet. This app is offline.</span>
+    <IgrIcon key="icon" name="signal_wifi_off"></IgrIcon>
+</IgrBanner>
+```
+
+```razor
+<IgbBanner @ref="bannerRef">
+    You have lost connection to the internet. This app is offline.
+    <IgbIcon IconName="signal_wifi_off" Collection="material"></IgbIcon>
+</IgbBanner>
 ```
 
 ### Changing the banner button
@@ -104,6 +204,41 @@ The `Banner` exposes the `actions` slot for templating the banner buttons. This 
         </igc-button>
     </div>
 </igc-banner>
+```
+
+```tsx
+<IgrBanner ref={bannerRef}>
+    <IgrIcon key="icon" slot="prefix" name="signal_wifi_off"></IgrIcon>
+    <span key="message">You have lost connection to the internet. This app is offline.</span>
+    <div key="actions" slot="actions">
+        <IgrButton key="button" variant="flat" clicked={() => bannerRef.current.toggle()}>
+            <IgrRipple key="ripple" />
+            <span key="action-text">Toggle Banner</span>
+        </IgrButton>
+    </div>
+</IgrBanner>
+```
+
+```razor
+<IgbBanner @ref="bannerRef">
+    <IgbIcon slot="prefix" IconName="signal_wifi_off" Collection="material"></IgbIcon>
+    You have lost connection to the internet. This app is offline.
+    <div slot="actions">
+        <IgbButton Variant="ButtonVariant.Flat" @onclick="OnButtonClick">
+            Toggle Banner
+            <IgbRipple />
+        </IgbButton>
+    </div>
+</IgbBanner>
+
+@code {
+    private IgbBanner bannerRef;
+
+    private void OnButtonClick()
+    {
+        this.bannerRef.ToggleAsync();
+    }
+}
 ```
 
 `sample="/notifications/banner/banner-sample-2", height="530", alt="{Platform} Banner Example"`
@@ -125,6 +260,46 @@ const banner = document.getElementById('banner') as IgcBannerComponent;
 banner.addEventListener('igcClosing', (event) => {
   event.preventDefault();
 });
+```
+
+```tsx
+<IgrBanner ref={bannerRef}>
+    ...
+</IgrBanner>
+
+const bannerRef = useRef<IgrBanner>(null);
+
+useEffect(() => {
+    bannerRef.current.nativeElement.addEventListener('igcClosing', (event) => {
+        event.preventDefault();
+    });
+}, [])
+```
+
+```razor
+<IgbBanner id="banner">
+    ...
+</IgbBanner>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("handleClosing");
+        }
+    }
+}
+```
+```razor
+//In JavaScript:
+function handleClosing() {
+    const banner = document.getElementById('banner');
+
+    banner.addEventListener('igcClosing', (event) => {
+        event.preventDefault();
+    });
+}
 ```
 
 > [!NOTE]
@@ -151,7 +326,48 @@ Let's create a banner with two custom buttons - one for dismissing the notificat
 </igc-banner>
 ```
 
+```tsx
+<IgrBanner ref={bannerRef}>
+    <IgrIcon key="icon" slot="prefix" name="signal_wifi_off"></IgrIcon>
+    <span key="message">You have lost connection to the internet. This app is offline.</span>
+    <div key="actions" slot="actions">
+        <IgrButton key="button-offline" variant="flat" clicked={() => bannerRef.current.hide()}>
+            <IgrRipple key="ripple-offline" />
+            <span key="action-offline">Continue Offline</span>
+        </IgrButton>
+        <IgrButton key="button-wifi" variant="flat" clicked={() => refreshBanner()}>
+            <IgrRipple key="ripple-wifi" />
+            <span key="action-wifi">Turn On Wifi</span>
+        </IgrButton>
+    </div>
+</IgrBanner>
+```
 
+```razor
+<IgbBanner @ref="bannerRef">
+    <IgbIcon IconName="signal_wifi_off" Collection="material" slot="prefix"></IgbIcon>
+    You have lost connection to the internet. This app is offline.
+    <div slot="actions">
+        <IgbButton Variant="ButtonVariant.Flat" @onclick="HideBanner">
+            Continue Offline
+            <IgbRipple />
+        </IgbButton>
+        <IgbButton Variant="ButtonVariant.Flat" @onclick="RefreshBanner">
+            Turn On Wifi
+            <IgbRipple />
+        </IgbButton>
+    </div>
+</IgbBanner>
+
+@code {
+    private IgbBanner bannerRef;
+
+    private void HideBanner()
+    {
+        this.bannerRef.HideAsync();
+    }
+}
+```
 
 > According to Google's [Material Design](https://material.io/design/components/banners.html#anatomy) guidelines, a banner should have a maximum of 2 buttons present. The `Banner` does not explicitly limit the number of elements under the `actions` slot, but it is strongly recommended to use up to 2 if you want to adhere to the material design guidelines.
 
@@ -203,6 +419,79 @@ public refreshBanner() {
         this.banner.show();
     }
     this.wifiState = !this.wifiState;
+}
+```
+
+```tsx
+<IgrNavbar>
+    <h1 key="header">Gallery</h1>
+    <IgrIcon ref={iconRef} key="icon" name="signal_wifi_off" slot="end" onClick={() => refreshBanner()}></IgrIcon>
+</IgrNavbar>
+
+<IgrBanner ref={bannerRef}>
+    ...
+    <div key="actions" slot="actions">
+        ...
+        <IgrButton key="button-wifi" variant="flat" clicked={() => refreshBanner()}>
+            <IgrRipple key="ripple-wifi" />
+            <span key="action-wifi">Turn On Wifi</span>
+        </IgrButton>
+    </div>
+</IgrBanner>
+
+const bannerRef = useRef<IgrBanner>(null);
+const iconRef = useRef<IgrIcon>(null);
+
+const [wifiState, setWifiState] = useState(false);
+
+function refreshBanner() {
+    if (!wifiState) {
+        iconRef.current.name = 'signal_wifi_4_bar';
+        bannerRef.current.hide();
+    } else {
+        iconRef.current.name = 'signal_wifi_off';
+        bannerRef.current.show();
+    }
+    setWifiState(current => !current);
+}
+```
+
+```razor
+<IgbNavbar>
+    <h1>Gallery</h1>
+    <IgbIcon @ref="iconRef" IconName="@iconName" Collection="material" slot="end" @onclick="RefreshBanner"></IgbIcon>
+</IgbNavbar>
+
+<IgbBanner @ref="bannerRef">
+    ...
+    <div slot="actions">
+        ...
+        <IgbButton Variant="ButtonVariant.Flat" @onclick="RefreshBanner">
+            Turn On Wifi
+            <IgbRipple />
+        </IgbButton>
+    </div>
+</IgbBanner>
+
+@code {
+    private IgbBanner bannerRef;
+    private string iconName = "signal_wifi_off";
+    private bool wifiState = false;
+    
+    private void RefreshBanner()
+    {
+        if (!this.wifiState)
+        {
+            this.iconName = "signal_wifi_4_bar";
+            this.bannerRef.HideAsync();
+        }
+        else
+        {
+            this.iconName = "signal_wifi_off";
+            this.bannerRef.ShowAsync();
+        }
+        this.wifiState = !this.wifiState;
+    }
 }
 ```
 

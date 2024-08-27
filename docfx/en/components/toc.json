@@ -1763,7 +1763,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "Blazor", "React"],
+    "exclude": ["Angular"],
     "name": "Banner",
     "href": "notifications/banner.md",
     "status": "NEW"
