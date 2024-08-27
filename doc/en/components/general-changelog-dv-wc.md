@@ -13,7 +13,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### **{PackageVerChanges-24-1-JUN}**
 
-- `DisplayDensity` deprecated in favor of the `--ig-size` CSS custom property.
+- `DisplayDensity` deprecated in favor of the `--ig-size` CSS custom property. Check out the [Grid Size](grids/grid/size.md) topic for more.
 
 ### **{PackageVerChanges-23-2-MAR}**
 
