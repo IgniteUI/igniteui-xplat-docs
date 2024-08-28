@@ -1138,7 +1138,7 @@ function editDone(grid, evt) {
 * [検索](search.md)
 <!-- * [Toolbar](toolbar.md) -->
 * [複数列ヘッダー](multi-column-headers.md)
-* [表示密度](display-density.md)
+* [サイズ](size.md)
 <!-- ComponentEnd:  Grid -->
 
 

@@ -14,7 +14,7 @@ _language: ja
 
 ### **{PackageVerChanges-24-1-JUN}**
 
-- `DisplayDensity` 非推奨となり、代わりに `--ig-size` CSS カスタム プロパティが使用されるようになりました。
+- `DisplayDensity` 非推奨となり、代わりに `--ig-size` CSS カスタム プロパティが使用されるようになりました。詳細については、[グリッド サイズ](grids/grid/size.md) トピックを参照してください。
 
 ### **{PackageVerChanges-23-2-MAR}**
 

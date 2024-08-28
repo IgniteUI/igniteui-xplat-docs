@@ -119,6 +119,16 @@
     "status": "UPDATED"
   },
   {
+    "exclude": ["Angular"],
+    "name": "インタラクティビティ",
+    "header": true,
+    "href": "interactivity/accessibility-compliance.md"
+  },
+  {
+    "name": "アクセシビリティの遵守",
+    "href": "interactivity/accessibility-compliance.md"
+  },
+  {
     "exclude": ["Angular", "Blazor", "WebComponents", "React"],
     "name": "グリッド & リスト",
     "header": true,
@@ -174,11 +184,6 @@
         "exclude": ["Angular"],
         "name": "条件付きスタイル設定",
         "href": "grids/grid/conditional-cell-styling.md"
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "表示密度",
-        "href": "grids/grid/display-density.md"
       },
       {
         "exclude": ["Angular"],
@@ -328,6 +333,12 @@
       },
       {
         "exclude": ["Angular"],
+        "name": "サイズ",
+        "href": "grids/grid/size.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular"],
         "name": "サイズ設定",
         "href": "grids/grid/sizing.md"
       },
@@ -398,11 +409,6 @@
         "exclude": ["Angular"],
         "name": "条件付きスタイル設定",
         "href": "grids/hierarchical-grid/conditional-cell-styling.md"
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "表示密度",
-        "href": "grids/hierarchical-grid/display-density.md"
       },
       {
         "exclude": ["Angular"],
@@ -504,6 +510,12 @@
             "href": "grids/hierarchical-grid/row-selection.md"
           }
         ]
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "サイズ",
+        "href": "grids/hierarchical-grid/size.md",
+        "status": "NEW"
       },
       {
         "exclude": ["Angular"],
@@ -631,12 +643,6 @@
         "exclude": ["Angular"],
         "name": "列のサイズ変更",
         "href": "grids/tree-grid/column-resizing.md",
-        "status": ["NEW_REACT"]
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "表示密度",
-        "href": "grids/tree-grid/display-density.md",
         "status": ["NEW_REACT"]
       },
       {
@@ -770,6 +776,12 @@
             "status": ["NEW_REACT"]
           }
         ]
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "サイズ",
+        "href": "grids/tree-grid/size.md",
+        "status": "NEW"
       },
       {
         "exclude": ["Angular"],
