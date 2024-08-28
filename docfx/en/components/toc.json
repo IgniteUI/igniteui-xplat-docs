@@ -119,6 +119,16 @@
     "status": "UPDATED"
   },
   {
+    "exclude": ["Angular"],
+    "name": "Interactivity",
+    "header": true,
+    "href": "interactivity/accessibility-compliance.md"
+  },
+  {
+    "name": "Accessibility Compliance",
+    "href": "interactivity/accessibility-compliance.md"
+  },
+  {
     "note": "THIS MAIN NODE FOR OLD XPLAT GRID",
     "exclude": ["Angular", "Blazor", "WebComponents", "React"],
     "name": "Grids & Lists",
