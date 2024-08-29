@@ -613,7 +613,7 @@ public activeTemplate = (ctx: IgcCellTemplateContext) => {
 }
 ```
 
-<!-- ComponentEnd: HierarchicalGrid  -->
+<!-- ComponentEnd: HierarchicalGrid -->
 
 2. Query the template view in the component using @ViewChild or @ViewChildren decorator. In the `ColumnInit` event handler, assign the template to the column `BodyTemplate` property:
 
@@ -692,7 +692,7 @@ public void OnColumnInit(IgbColumnComponentEventArgs args)
     grid.addEventListener("dimensionInit", (ev:any) => this.onDimensionInit(ev));
 }
 ```
-<!-- ComponentStart: PivotGrid -->
+
 ```tsx
       <IgrPivotGrid
         ref={gridRef}
@@ -703,8 +703,6 @@ public void OnColumnInit(IgbColumnComponentEventArgs args)
         <IgrGridState ref={gridStateRef}></IgrGridState>
       </IgrPivotGrid>
 ```
-<!-- ComponentEnd: PivotGrid -->
-
 
 ```razor
 blazor snippet
@@ -859,17 +857,18 @@ Add blazor handling for dimensionInit
 ## Restoring Child Grids
 Saving / Restoring state for the child grids is controlled by the `RowIslands` property and is enabled by default. `GridState` will use the same options for saving/restoring features both for the root grid and all child grids down the hierarchy. For example, if we pass the following options:
 
-<!-- ComponentStart: HierarchicalGrid -->
 ``` html
 <!-- public options = {selection: false, sorting: false, rowIslands: true} -->
 <igx-grid [igxGridState]="options"></igx-grid>
 ```
-<!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- ComponentStart: HierarchicalGrid -->
+
+<!-- Angular, WebComponents -->
 ```ts
 gridState.options = { cellSelection: false, sorting: false, rowIslands: true };
 ```
+<!-- end: Angular, WebComponents -->
+
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -880,7 +879,7 @@ gridState.options = { cellSelection: false, sorting: false, rowIslands: true };
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-
+<!-- ComponentStart: HierarchicalGrid -->
 ```razor
 <IgbHierarchicalGrid>
     <IgbGridState @ref="gridState"></IgbGridState>
@@ -897,21 +896,21 @@ gridState.options = { cellSelection: false, sorting: false, rowIslands: true };
     };
 }
 ```
+<!-- ComponentEnd: HierarchicalGrid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
 Then the `GetState` API will return the state for all grids (root grid and child grids) features excluding `Selection` and `Sorting`. If later on the developer wants to restore only the `Filtering` state for all grids, use:
 
 ```typescript
 this.state.applyState(state, ['filtering', 'rowIslands']);
 ```
-<!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- ComponentStart: HierarchicalGrid -->
+<!-- Blazor -->
 Then the `GetState` API will return the state for all grids (root grid and child grids) features excluding `Selection` and `Sorting`. If later on the developer wants to restore only the `Filtering` state for all grids, use:
 ```razor
 gridState.ApplyStateFromString(gridStateString, new string[] { "filtering", "rowIslands" });
 ```
-<!-- ComponentEnd: HierarchicalGrid -->
-
+<!-- end: Blazor -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
@@ -957,14 +956,14 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 
 <!-- WebComponents -->
 
-<!-- ComponentStart: PivotGrid -->
+
 ```html
     <igc-pivot-grid default-expand-state="true" super-compact-mode="true" show-pivot-configuration-ui="false"
         height="600px" id="grid">
         <igc-grid-state id="gridState"></igc-grid-state>
     </igc-pivot-grid>
 ```
-<!-- ComponentEnd: PivotGrid -->
+
 
 ```ts
 public pivotConfiguration: IgcPivotConfiguration = {
@@ -989,7 +988,7 @@ constructor() {
 ```
 
 <!-- end: WebComponents -->
-<!-- ComponentStart: PivotGrid -->
+
 ```razor
 Add snippet for blazor
 ```
@@ -1035,7 +1034,6 @@ Add snippet for blazor for restore state
 `sample="/{ComponentSample}/data-persistence-noop", height="580", alt="{Platform} {ComponentTitle} data persistence noop"`
 <!-- end: Angular, WebComponents -->
 
-<!-- ComponentEnd: PivotGrid -->
 
 <!-- ComponentEnd: PivotGrid -->
 
