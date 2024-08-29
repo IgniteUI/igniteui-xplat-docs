@@ -14,7 +14,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 ### **{PackageVerChanges-24-1-AUG}**
 
 - `PivotGrid`
-  - Added `sortable` property for a `PivotDimention`.
+  - Added `sortable` property for a `PivotDimension`.
   - Added horizontal layout. Can be enabled inside the new `pivotUI` property as `rowLayout` `horizontal`.
   - Added row dimension summaries for horizontal layout only. Can be enabled for each `PivotDimension` by setting `horizontalSummary` to **true**.
   - Added `horizontalSummariesPosition` property to the `pivotUI`, configuring horizontal summaries position.
@@ -32,7 +32,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 - `PivotGrid`
   - removed `showPivotConfigurationUI` property. Use `pivotUI` and set inside it the new `showConfiguration` option.
 - `Column`
-  - Removed `movable` property. Use Grid's `moving` poperty now.
+  - Removed `movable` property. Use Grid's `moving` property now.
   - Removed `columnChildren` property. Use `childColumns` instead.
 - `ColumnGroup`
   - Removed `children` property. Use `childColumns` instead.
@@ -620,7 +620,7 @@ Check the official [documentation](https://www.infragistics.com/products/ignite-
 - Buttons - Vertical align and focus management.
 - `Input` - Overflow for `suffix`/`prefix`.
 - `Switch` - Collapse with small sizes.
-- `List` - Overflow behaviour.
+- `List` - Overflow behavior.
 
 ### **{PackageCommonVerChanges-3.1.0}**
 
@@ -721,7 +721,7 @@ Initial release of Ignite UI Web Components
 
 * [Data Legend Grouping](charts/features/chart-data-legend.md#{PlatformLower}-data-legend-grouping) & [Data Tooltip Grouping](charts/features/chart-data-tooltip.md#{PlatformLower}-data-tooltip-grouping-for-data-chart) - New grouping feature added. The property `GroupRowVisible` toggles grouping with each series opting in can assign group text via the `DataLegendGroup` property. If the same value is applied to more than one series then they will appear grouped. Useful for large datasets that need to be categorized and organized for all users.
 
-- [Chart Selection](charts/features/chart-data-selection.md) - New series selection styling. This is adopted broadly across all category, financial and radial series for `CategoryChart` and `XamDataChart`. Series can be clicked and shown a different color, brightened or faded, and focus outlines. Manage which items are effected through individual series or entire data item. Multiple series and markers are supported. Useful for illustrating various differences or similarities between values of a partcular dataitem. Also  `SelectedSeriesItemsChanged` event and `SelectedSeriesItems` are available for additional help to build out robust business requirements surrouding other actions that can take place within an application such as a popup or other screen with data analysis based on the selection. 
+- [Chart Selection](charts/features/chart-data-selection.md) - New series selection styling. This is adopted broadly across all category, financial and radial series for `CategoryChart` and `XamDataChart`. Series can be clicked and shown a different color, brightened or faded, and focus outlines. Manage which items are effected through individual series or entire data item. Multiple series and markers are supported. Useful for illustrating various differences or similarities between values of a particular dataitem. Also  `SelectedSeriesItemsChanged` event and `SelectedSeriesItems` are available for additional help to build out robust business requirements surrounding other actions that can take place within an application such as a popup or other screen with data analysis based on the selection. 
 
 - [Proportional Category Angle Axis](charts/types/radial-chart.md) - New axes for the Radial Pie Series in the `XamDataChart`, to enable creating pie charts in the allowing robust visualizations using all the added power of the data chart.
 

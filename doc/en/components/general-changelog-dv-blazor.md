@@ -60,7 +60,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 ### {PackageGrids}
 
 - `PivotGrid`
-  - Added `Sortable` property for a `PivotDimention`.
+  - Added `Sortable` property for a `PivotDimension`.
   - Added horizontal layout. Can be enabled inside the new `PivotUI` property as `RowLayout` `Horizontal`.
   - Added row dimension summaries for horizontal layout only. Can be enabled for each `PivotDimension` by setting `HorizontalSummary` to **true**.
   - Added `HorizontalSummariesPosition` property to the `PivotUI`, configuring horizontal summaries position.
@@ -78,7 +78,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 - `PivotGrid`
   - removed `ShowPivotConfigurationUI` property. Use `PivotUI` and set inside it the new `ShowConfiguration` option.
 - `Column`
-  - Removed `Movable` property. Use Grid's `Moving` poperty now.
+  - Removed `Movable` property. Use Grid's `Moving` property now.
   - Removed `ColumnChildren` property. Use `ChildColumns` instead.
 - `ColumnGroup`
   - Removed `Children` property. Use `ChildColumns` instead.
@@ -102,7 +102,7 @@ The type of Values from `PivotConfiguration` option is now array of IgbPivotValu
 
 * [Data Legend Grouping](charts/features/chart-data-legend.md#{PlatformLower}-data-legend-grouping) & [Data Tooltip Grouping](charts/features/chart-data-tooltip.md#{PlatformLower}-data-tooltip-grouping-for-data-chart) - New grouping feature added. The property `GroupRowVisible` toggles grouping with each series opting in can assign group text via the `DataLegendGroup` property. If the same value is applied to more than one series then they will appear grouped. Useful for large datasets that need to be categorized and organized for all users.
 
-- [Chart Selection](charts/features/chart-data-selection.md) - New series selection styling. This is adopted broadly across all category, financial and radial series for `CategoryChart` and `XamDataChart`. Series can be clicked and shown a different color, brightened or faded, and focus outlines. Manage which items are effected through individual series or entire data item. Multiple series and markers are supported. Useful for illustrating various differences or similarities between values of a partcular dataitem. Also  `SelectedSeriesItemsChanged` event and `SelectedSeriesItems` are available for additional help to build out robust business requirements surrouding other actions that can take place within an application such as a popup or other screen with data analysis based on the selection.  
+- [Chart Selection](charts/features/chart-data-selection.md) - New series selection styling. This is adopted broadly across all category, financial and radial series for `CategoryChart` and `XamDataChart`. Series can be clicked and shown a different color, brightened or faded, and focus outlines. Manage which items are effected through individual series or entire data item. Multiple series and markers are supported. Useful for illustrating various differences or similarities between values of a particular dataitem. Also  `SelectedSeriesItemsChanged` event and `SelectedSeriesItems` are available for additional help to build out robust business requirements surrounding other actions that can take place within an application such as a popup or other screen with data analysis based on the selection.  
 
 - [Proportional Category Angle Axis](charts/types/radial-chart.md) - New axes for the Radial Pie Series in the `XamDataChart`, to enable creating pie charts in the allowing robust visualizations using all the added power of the data chart.
 
