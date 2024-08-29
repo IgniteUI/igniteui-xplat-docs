@@ -564,7 +564,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "Blazor"],
+        "exclude": ["Angular", "Blazor"],
         "name": "State Persistence",
         "href": "grids/pivot-grid/state-persistence.md",
         "status": ""

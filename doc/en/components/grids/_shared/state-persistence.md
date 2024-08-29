@@ -68,6 +68,7 @@ The {ProductName} State Persistence in {Platform} {ComponentTitle} allows develo
 
 <!-- ComponentStart: PivotGrid -->
 
+<!-- Angular, WebComponents -->
 * `Sorting`
 * `Filtering`
 * `CellSelection`
@@ -78,6 +79,20 @@ The {ProductName} State Persistence in {Platform} {ComponentTitle} allows develo
     * Pivot Configuration properties defined by the `IPivotConfiguration` interface.
     * Pivot Dimension and Value functions are restored using application level code, see [Restoring Pivot Configuration](state-persistence.md#restoring-pivot-configuration) section.
     * Pivot Row and Column strategies are also restored using application level code, see [Restoring Pivot Strategies](state-persistence.md#restoring-pivot-strategies) section.
+<!-- end: Angular, WebComponents -->
+
+<!-- Blazor, React -->
+* `Sorting`
+* `Filtering`
+* `CellSelection`
+* `RowSelection`
+* `ColumnSelection`
+* `Expansion`
+* `PivotConfiguration`
+    * Pivot Configuration properties defined by the `IPivotConfiguration` interface.
+    * Pivot Dimension and Value functions are restored using application level code, see [Restoring Pivot Configuration](state-persistence.md#restoring-pivot-configuration) section.
+<!-- end: Blazor, React -->
+
 
 <!-- ComponentEnd: PivotGrid -->
 
@@ -143,15 +158,15 @@ const sortingFilteringStates: IgcGridStateInfo = gridState.getState(['sorting', 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 <!-- end: WebComponents -->
 
-<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 ```tsx
 <{ComponentSelector}>
     <IgrGridState ref={(ref) => { gridState = ref; }}></IgrGridState>
 </{ComponentSelector}>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 
-<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 ```tsx
 // get an `IgrGridStateInfo` object, containing all features original state objects, as returned by the grid public API
 const state: IgrGridStateInfo = gridState.getState([]);
@@ -162,7 +177,7 @@ const stateString: string = gridState.getStateAsString([]);
 // get the sorting and filtering expressions
 const sortingFilteringStates: IgrGridStateInfo = gridState.getState(['sorting', 'filtering']);
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 
 ```razor
 <{ComponentSelector}>
@@ -246,11 +261,11 @@ gridState.options = { cellSelection: false, sorting: false };
 ```
 <!-- end: WebComponents -->
 
-<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 ```tsx
 <IgrGridState options={{ cellSelection: false, sorting: false }}></IgrGridState>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 
 ```razor
 gridState.Options = new IgbGridStateOptions
@@ -323,15 +338,15 @@ public restoreGridStateString() {
 }
 ```
 <!-- end: WebComponents -->
-<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 ```tsx
 <{ComponentSelector} rendered={restoreGridState}>
     <IgrGridState ref={(ref) => { gridState = ref; }}></IgrGridState>
 </{ComponentSelector}>
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 
-<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 ```tsx
 useEffect(() => {
     restoreGridState();
@@ -367,7 +382,7 @@ function restoreGridState() {
     }
 }
 ```
-<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 
 
 ```razor
@@ -677,6 +692,19 @@ public void OnColumnInit(IgbColumnComponentEventArgs args)
     grid.addEventListener("dimensionInit", (ev:any) => this.onDimensionInit(ev));
 }
 ```
+<!-- ComponentStart: PivotGrid -->
+```tsx
+      <IgrPivotGrid
+        ref={gridRef}
+        data={gridData}
+        pivotConfiguration={pivotConfiguration}
+        valueInit={onValueInit}
+      >
+        <IgrGridState ref={gridStateRef}></IgrGridState>
+      </IgrPivotGrid>
+```
+<!-- ComponentEnd: PivotGrid -->
+
 
 ```razor
 blazor snippet
@@ -742,11 +770,39 @@ public onValueInit(event: any) {
 ```
 <!-- end: WebComponents -->
 
+```tsx
+  function onValueInit(s: IgrPivotGrid, event: IgrPivotValueEventArgs) {
+    const value: IgrPivotValueDetail = event.detail;
+    if (value.member === "AmountofSale") {
+      value.aggregate.aggregator = totalSale;
+      value.aggregateList?.forEach((aggr: any) => {
+        switch (aggr.key) {
+          case "SUM":
+            aggr.aggregator = totalSale;
+            break;
+          case "MIN":
+            aggr.aggregator = totalMin;
+            break;
+          case "MAX":
+            aggr.aggregator = totalMax;
+            break;
+        }
+      });
+    } else if (value.member === "Value") {
+      value.styles.upFontValue = (rowData: any, columnKey: any): boolean =>
+        parseFloat(rowData.aggregationValues.get(columnKey.field)) > 150;
+      value.styles.downFontValue = (rowData: any, columnKey: any): boolean =>
+        parseFloat(rowData.aggregationValues.get(columnKey.field)) <= 150;
+    }
+  }
+```
+
 ```razor
 Add blazor handling for valueInit
 ```
-
+<!-- Angular, WebComponents -->
 * In the `DimensionInit` event handler set all custom `MemberFunction` implementations:
+<!-- end: Angular, WebComponents -->
 
 <!-- Angular -->
 ```typescript
@@ -864,7 +920,7 @@ gridState.ApplyStateFromString(gridStateString, new string[] { "filtering", "row
 `sample="/{ComponentSample}/state-persistence-main", height="763", alt="{Platform} {ComponentTitle} State Persistence "`
 
 <!-- ComponentStart: PivotGrid -->
-
+<!-- Angular, WebComponents -->
 ## Restoring Pivot Strategies
 
 `GridState` will not persist neither remote pivot operations nor custom dimension strategies.
@@ -977,6 +1033,8 @@ Add snippet for blazor for restore state
 
 
 `sample="/{ComponentSample}/data-persistence-noop", height="580", alt="{Platform} {ComponentTitle} data persistence noop"`
+<!-- end: Angular, WebComponents -->
+
 <!-- ComponentEnd: PivotGrid -->
 
 <!-- ComponentEnd: PivotGrid -->
