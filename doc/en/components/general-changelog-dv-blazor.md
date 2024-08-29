@@ -35,7 +35,10 @@ All notable changes for each version of {ProductName} are documented on this pag
   - Renamed `WeekStart` property type to `WeekDays`.
 - `Checkbox`, `Switch`
   - Changed `Change` event argument type from `ComponentBoolValueChangedEventArgs` to `CheckboxChangeEventArgs`.
-- `Combo`, `SelectComponent`
+- `Combo`
+  - The `IgbCombo` is now of generic type and its type needs to be specified either by setting `T` or other methods. That way binding to `Value` allows for collection as well.
+  - Removed `PositionStrategy`, `Flip`, `SameWidth` properties.
+- `SelectComponent`
   - Removed `PositionStrategy`, `Flip`, `SameWidth` properties.
 - `DateTimeInput`
   - Removed `MaxValue` and `MinValue` properties. Used `Max` and `Min` instead.
@@ -53,6 +56,34 @@ All notable changes for each version of {ProductName} are documented on this pag
   - Removed `AriaThumbLower` and `AriaThumbUpper` properties. Use `ThumbLabelLower` and `ThumbLabelUpper` instead.
 - `Rating`
   - Renamed `Readonly` property to `ReadOnly`.
+
+### {PackageGrids}
+
+- `PivotGrid`
+  - Added `Sortable` property for a `PivotDimention`.
+  - Added horizontal layout. Can be enabled inside the new `PivotUI` property as `RowLayout` `Horizontal`.
+  - Added row dimension summaries for horizontal layout only. Can be enabled for each `PivotDimension` by setting `HorizontalSummary` to **true**.
+  - Added `HorizontalSummariesPosition` property to the `PivotUI`, configuring horizontal summaries position.
+  - Added row headers for the row dimensions. Can be enabled inside the new `PivotUI` property as `ShowHeaders` **true**.
+  - Keyboard navigation now can move in to row headers back and forth from any row dimension headers or column headers.
+  - Added keyboard interactions for row dimension collapse using `Alt + Arrows` and row headers sorting using `Ctrl + Arrow Up/Down`.
+
+**BREAKING CHANGES**:
+- `Grids`, `RowIsland`
+  - Removed `DisplayDensity` deprecated property.
+  - Renamed `ActualColumns`, `ContentColumns` properties to `ActualColumnList` and `ContentColumnList`.
+  - Renamed `RowDelete` and `RowAdd` event argument type to `RowDataCancelableEventArgs`.
+  - Renamed `ContextMenu` event argument type to `GridContextMenuEventArgs`.
+  - Removed `GridEditEventArgs`,  `GridEditDoneEventArgs`, `PinRowEventArgs` events `RowID` and `PrimaryKey` properties. Use `RowKey` instead.
+- `PivotGrdi`
+  - removed `ShowPivotConfigurationUI` property. Use `PivotUI` and set inside it the new `ShowConfiguration` option.
+- `Column`
+  - Removed `Movable` property. Use `Grid` `Moving` poperty now.
+  - Removed `ColumnChildren` property. Use `ChildColumns` instead.
+- `ColumnGroup`
+  - Removed `Children` property. Use `ChildColumns` instead.
+- `Paginator`
+  - Removed `IsFirstPageDisabled` and `IsLastPageDisabled` properties. Use `IsFirstPage` and `IsLastPage` instead.
 
 ## **{PackageVerChanges-24-1-JUN}**
 

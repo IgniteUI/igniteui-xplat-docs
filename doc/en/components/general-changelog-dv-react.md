@@ -56,6 +56,34 @@ All notable changes for each version of {ProductName} are documented on this pag
 - `Rating`
   - Renamed `readonly` property to `readOnly`.
 
+  ### {PackageGrids}
+
+- `PivotGrid`
+  - Added `sortable` property for a `PivotDimention`.
+  - Added horizontal layout. Can be enabled inside the new `pivotUI` property as `rowLayout` `horizontal`.
+  - Added row dimension summaries for horizontal layout only. Can be enabled for each `PivotDimension` by setting `horizontalSummary` to **true**.
+  - Added `horizontalSummariesPosition` property to the `pivotUI`, configuring horizontal summaries position.
+  - Added row headers for the row dimensions. Can be enabled inside the new `pivotUI` property as `showHeaders` **true**.
+  - Keyboard navigation now can move in to row headers back and forth from any row dimension headers or column headers.
+  - Added keyboard interactions for row dimension collapse using `Alt + Arrows` and row headers sorting using `Ctrl + Arrow Up/Down`.
+
+**BREAKING CHANGES**:
+- `Grids`, `RowIsland`
+  - Removed `displayDensity` deprecated property.
+  - Renamed `actualColumns`, `contentColumns` properties to `actualColumnList` and `contentColumnList`. Use `column` or `columnList` property to get all columns now.
+  - Renamed `rowDelete` and `rowAdd` event argument type to `RowDataCancelableEventArgs`.
+  - Renamed `contextMenu` event argument type to `GridContextMenuEventArgs`.
+  - Removed `GridEditEventArgs`,  `GridEditDoneEventArgs`, `PinRowEventArgs` events `rowID` and `primaryKey` properties. Use `rowKey` instead.
+- `PivotGrdi`
+  - removed `showPivotConfigurationUI` property. Use `pivotUI` and set inside it the new `showConfiguration` option.
+- `Column`
+  - Removed `movable` property. Use `Grid` `moving` poperty now.
+  - Removed `columnChildren` property. Use `childColumns` instead.
+- `ColumnGroup`
+  - Removed `children` property. Use `childColumns` instead.
+- `Paginator`
+  - Removed `isFirstPageDisabled` and `isLastPageDisabled` properties. Use `isFirstPage` and `isLastPage` instead.
+
 ## **{PackageVerChanges-24-1-JUN}**
 
 ### {PackageCommon}
