@@ -69,16 +69,16 @@ All notable changes for each version of {ProductName} are documented on this pag
   - Added keyboard interactions for row dimension collapse using `Alt + Arrows` and row headers sorting using `Ctrl + Arrow Up/Down`.
 
 **BREAKING CHANGES**:
-- `Grids`, `RowIsland`
+- `All Grids`, `RowIsland`
   - Removed `DisplayDensity` deprecated property.
   - Renamed `ActualColumns`, `ContentColumns` properties to `ActualColumnList` and `ContentColumnList`.
   - Renamed `RowDelete` and `RowAdd` event argument type to `RowDataCancelableEventArgs`.
   - Renamed `ContextMenu` event argument type to `GridContextMenuEventArgs`.
   - Removed `GridEditEventArgs`,  `GridEditDoneEventArgs`, `PinRowEventArgs` events `RowID` and `PrimaryKey` properties. Use `RowKey` instead.
-- `PivotGrdi`
+- `PivotGrid`
   - removed `ShowPivotConfigurationUI` property. Use `PivotUI` and set inside it the new `ShowConfiguration` option.
 - `Column`
-  - Removed `Movable` property. Use `Grid` `Moving` poperty now.
+  - Removed `Movable` property. Use Grid's `Moving` poperty now.
   - Removed `ColumnChildren` property. Use `ChildColumns` instead.
 - `ColumnGroup`
   - Removed `Children` property. Use `ChildColumns` instead.

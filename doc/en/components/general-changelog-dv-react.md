@@ -20,9 +20,9 @@ All notable changes for each version of {ProductName} are documented on this pag
 - `Icon`
   - Added `setIconRef` method. This allows to register and replace icons by SVG files.
   - All components now use icons by reference internally so that it's easy to replace them without explicitly providing custom templates.
-- `Combo`, `DatePicker`, `Dialog`, `Dropdown`,  `ExpansionPanel`, `NavDrawer`, `Toast`, `Snackbar`, **IgrSelectComponent**
+- `Combo`, `DatePicker`, `Dialog`, `Dropdown`,  `ExpansionPanel`, `NavDrawer`, `Toast`, `Snackbar`, IgrSelect
   - Toggle methods `show`, `hide`, `toggle` methods return **true** now on success, otherwise **false**.
-- `Button`, `IconButton`, `Checkbox`, `Switch`, `Combo`, `DateTimeInput`, `Input`, `MaskInput`, `Radio`, `SelectComponent`, `Textarea`
+- IgrButton, `IconButton`, `Checkbox`, `Switch`, `Combo`, `DateTimeInput`, `Input`, `MaskInput`, `Radio`, IgrSelect, `Textarea`
   - Deprecated custom `focus` and `blur` events. Use the native `onFocus` and `onBlur` events instead
 
 **BREAKING CHANGES**:
@@ -56,10 +56,10 @@ All notable changes for each version of {ProductName} are documented on this pag
 - `Rating`
   - Renamed `readonly` property to `readOnly`.
 
-  ### {PackageGrids}
+### {PackageGrids}
 
 - `PivotGrid`
-  - Added `sortable` property for a `PivotDimention`.
+  - Added `sortable` property for a `PivotDimension`.
   - Added horizontal layout. Can be enabled inside the new `pivotUI` property as `rowLayout` `horizontal`.
   - Added row dimension summaries for horizontal layout only. Can be enabled for each `PivotDimension` by setting `horizontalSummary` to **true**.
   - Added `horizontalSummariesPosition` property to the `pivotUI`, configuring horizontal summaries position.
@@ -68,16 +68,17 @@ All notable changes for each version of {ProductName} are documented on this pag
   - Added keyboard interactions for row dimension collapse using `Alt + Arrows` and row headers sorting using `Ctrl + Arrow Up/Down`.
 
 **BREAKING CHANGES**:
-- `Grids`, `RowIsland`
+
+- `All Grids`, `RowIsland`
   - Removed `displayDensity` deprecated property.
   - Renamed `actualColumns`, `contentColumns` properties to `actualColumnList` and `contentColumnList`. Use `column` or `columnList` property to get all columns now.
   - Renamed `rowDelete` and `rowAdd` event argument type to `RowDataCancelableEventArgs`.
   - Renamed `contextMenu` event argument type to `GridContextMenuEventArgs`.
   - Removed `GridEditEventArgs`,  `GridEditDoneEventArgs`, `PinRowEventArgs` events `rowID` and `primaryKey` properties. Use `rowKey` instead.
-- `PivotGrdi`
+- `PivotGrid`
   - removed `showPivotConfigurationUI` property. Use `pivotUI` and set inside it the new `showConfiguration` option.
 - `Column`
-  - Removed `movable` property. Use `Grid` `moving` poperty now.
+  - Removed `movable` property. Use Grid's `moving` poperty now.
   - Removed `columnChildren` property. Use `childColumns` instead.
 - `ColumnGroup`
   - Removed `children` property. Use `childColumns` instead.
