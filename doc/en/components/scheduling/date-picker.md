@@ -11,7 +11,7 @@ The {ProductName} Date Picker is a feature rich component used for entering a da
 The {ProductName} Date Picker Component lets users pick a single date through a month-view calendar dropdown or editable input field. The {Platform} Date Picker also supports a dialog mode for selection from the calendar only, locale-aware and customizable date formatting and validation integration. 
 
 > [!NOTE]
-> The `DatePicker` is a brand new component from {ProductName} version xx.x. The old `DatePicker` prior to this version has been renamed to `XDatePicker` and its respective documentation page can be found under "Deprecated Components"
+> The `DatePicker` is a brand new component from {ProductName} version <!-- WebComponents -->5.0.0<!-- end: WebComponents --><!-- React -->18.7.0<!-- end: React -->. The old `DatePicker` prior to this version has been renamed to `XDatePicker` and its respective documentation page can be found under "Deprecated Components"
 
 ## {Platform} Date Picker Example
 

@@ -9,7 +9,7 @@ mentionedTypes: ['XDatePicker']
 The XDate Picker component allows users to use a drop-down calendar UI allowing the intuitive selection of a day, month and year. This can be helpful when an application user needs to select specific dates, and multiple editors can be combined to create a date-range UI.
 
 > [!WARNING]
-> The `XDatePicker` component is deprecated from version xx.x of {ProductName}. For the latest supported {ProductName} Date Picker component refer to its respective page under "Scheduling"
+> The `XDatePicker` component is deprecated from version <!-- WebComponents -->5.0.0<!-- end: WebComponents --><!-- React -->18.7.0<!-- end: React --> of {ProductName}. For the latest supported {ProductName} Date Picker component refer to its respective page under "Scheduling".
 
 ## {Platform} XDate Picker Example
 
