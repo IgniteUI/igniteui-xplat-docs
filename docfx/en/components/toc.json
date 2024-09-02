@@ -562,10 +562,10 @@
     ]
   },
   {
-    "exclude": ["Angular", "React" ],
+    "exclude": ["Angular"],
     "name": "Pivot Grid",
     "href": "grids/pivot-grid/overview.md",
-    "status": "",
+    "status": ["NEW_REACT"],
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
@@ -580,10 +580,10 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "WebComponents"],
         "name": "Features",
         "href": "grids/pivot-grid/features.md",
-        "status": ""
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular", "React", "Blazor"],
