@@ -119,6 +119,16 @@
     "status": "UPDATED"
   },
   {
+    "exclude": ["Angular"],
+    "name": "Interactivity",
+    "header": true,
+    "href": "interactivity/accessibility-compliance.md"
+  },
+  {
+    "name": "Accessibility Compliance",
+    "href": "interactivity/accessibility-compliance.md"
+  },
+  {
     "note": "THIS MAIN NODE FOR OLD XPLAT GRID",
     "exclude": ["Angular", "Blazor", "WebComponents", "React"],
     "name": "Grids & Lists",
@@ -520,7 +530,7 @@
         "href": "grids/hierarchical-grid/sorting.md"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "State Persistence",
         "href": "grids/hierarchical-grid/state-persistence.md"
       },
@@ -552,10 +562,10 @@
     ]
   },
   {
-    "exclude": ["Angular", "React" ],
+    "exclude": ["Angular"],
     "name": "Pivot Grid",
     "href": "grids/pivot-grid/overview.md",
-    "status": "",
+    "status": ["NEW_REACT"],
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
@@ -564,16 +574,16 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "State Persistence",
         "href": "grids/pivot-grid/state-persistence.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "WebComponents"],
         "name": "Features",
         "href": "grids/pivot-grid/features.md",
-        "status": ""
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular", "React", "Blazor"],
@@ -788,7 +798,7 @@
         "status": ["NEW_REACT"]
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "State Persistence",
         "href": "grids/tree-grid/state-persistence.md",
         "status": ""
