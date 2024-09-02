@@ -1,86 +1,74 @@
 ---
-title: {Platform} {ComponentTitle} 表示密度 - {ProductName}
-_description: {ComponentTitle} コンポーネントに表示密度機能を適用する方法を説明します。{ProductName} のコンパクト ビュー オプションのセットを使用できます。
-_keywords: material density, {Platform}, {ProductName}, Infragistics, マテリアル密度, インフラジスティックス
+title: {Platform} {ComponentTitle} サイズ - {ProductName}
+_description: {ComponentTitle} コンポーネントにサイズ機能を適用する方法を説明します。{ProductName} のコンパクト ビュー オプションのセットを使用できます。
+_keywords: material size, {Platform}, {ProductName}, Infragistics, マテリアル サイズ, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
 _language: ja
 ---
 
-# {Platform} {ComponentTitle} 表示密度
+# {Platform} {ComponentTitle} サイズ
 
-{Platform} {ComponentTitle} の {ProductName} 表示密度を使用すると、ユーザーは `{ComponentName}` 内のデータの間隔とレイアウトを制御できます。[密度](https://material.io/design/layout/applying-density.html)を変更することで、大量のコンテンツを操作するときのユーザー エクスペリエンスを大幅に向上させることができます。次の 3 つの表示密度オプションから選択できます。
-- Cozy
-- Comfortable
-- Compact
+{ProductName} の {Platform} {ComponentTitle}サイズ機能を使用すると、ユーザーは `{ComponentName}` 内のデータの間隔とレイアウトを制御できます。`--ig-size` を変更することで、大量のコンテンツを操作するときのユーザー エクスペリエンスを大幅に向上させることができます。次の 3 つのサイズ オプションから選択できます。
+- `--ig-size-large`
+- `--ig-size-medium`
+- `--ig-size-small`
 
-## {Platform} {ComponentTitle} 表示密度の例
+## {Platform} {ComponentTitle} サイズの例
 
-`sample="/{ComponentSample}/layout-display-density", height="620", alt="{Platform} {ComponentTitle} 表示密度の例"`
+`sample="/{ComponentSample}/layout-display-density", height="620", alt="{Platform} {ComponentTitle} サイズの例"`
 
 
 
 ## 使用方法
 
-上記デモで示されるように、`{ComponentName}` は 3 つの密度オプション (**compact、cosy、comfortable**) を提供します。以下のコード スニペットは、`DisplayDensity` を設定する方法を示します。
+上記デモで示されるように、`{ComponentName}` は 3 つのサイズ オプション (**small**、**medium**、**large**) を提供します。以下のコード スニペットは、`--ig-size` をインラインまたは CSS クラスの一部として設定する方法を示しています。
+
+```css
+.gridSize {
+    --ig-size: var(--ig-size-medium);
+}
+```
 
 <!-- Angular -->
 ```html
-<{ComponentSelector} #grid [data]="data" [displayDensity]="'cosy'" >
+<{ComponentSelector} #grid class="gridSize" [data]="data">
 </{ComponentSelector}>
 ```
 <!-- end: Angular -->
 
 ```razor
-<{ComponentSelector} DisplayDensity="DisplayDensity.Cosy" Data=northwindEmployees @ref=grid>
+<{ComponentSelector} Class="gridSize" Data=northwindEmployees @ref=grid>
 </{ComponentSelector}>
 ```
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid" display-density="cosy" >
+<{ComponentSelector} id="grid" class="gridSize">
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
 
 
 ```tsx
-<{ComponentSelector} id="grid" displayDensity="cosy" >
+<{ComponentSelector} id="grid" className="gridSize">
 </{ComponentSelector}>
 ```
 
-または
-
-<!-- WebComponents -->
-```typescript
-this.grid.displayDensity = 'cosy';
-```
-<!-- end: WebComponents -->
-
-```tsx
-gridRef.current.displayDensity = 'cosy';
-```
-
-```razor
-@code {
-    this.grid.DisplayDensity = DisplayDensity.Cosy;
-}
-```
-
-各オプションを `{ComponentName}` に反映する方法を紹介します。表示密度オプション間で切り替える際に各 `{ComponentName}` 要素の高さとそのパディングが変更されます。カスタムの列 `Width` を適用する場合、左右のパディングより大きくする必要があることに注意してください。
- - **comfortable** - これはデフォルトの `{ComponentName}` 表示密度です。密度が最も低く、行の高さが `50px` です。左と右のパディングが `24px` で最小列 `Width` は `80px` です。
- - **cosy** - 中密度で、行の高さは `40px` です。左と右のパディングが `16px` で最小列 `Width` は `64px` です。
- - **compact** - これは最高密度で行の高さは `32px` です。左と右のパディングが `12px` で最小列 `Width` は `56px` です。
+各オプションを `{ComponentName}` に反映する方法を紹介します。サイズ オプション間で切り替える際に各 `{ComponentName}` 要素の高さとそのパディングが変更されます。カスタムの列 `Width` を適用する場合、左右のパディングより大きくする必要があることに注意してください。
+ - **large** - これはデフォルトの `{ComponentName}` サイズです。サイズが最も低く、行の高さが `50px` です。左と右のパディングが `24px` で最小列 `Width` は `80px` です。
+ - **medium** - 中サイズで、行の高さは `40px` です。左と右のパディングが `16px` で最小列 `Width` は `64px` です。
+ - **small** - 強度が最も高く、行の高さは `32px` です。左と右のパディングが `12px` で最小列 `Width` は `56px` です。
 
 > [!Note]
 > 現在サイズは**オーバーライドできません**。
 
-引き続きサンプルを使用して `DisplayDensity` の適用方法について説明します。最初に各密度を切り替えるボタンを追加します。
+引き続きサンプルを使用して、`--ig-size` の適用方法について説明します。最初に各サイズを切り替えるボタンを追加します。
 
 ```html
-<div class="density-chooser">
-    <igx-buttongroup [values]="displayDensities"></igx-buttongroup>
+<div class="size-chooser">
+    <igx-buttongroup [values]="sizes"></igx-buttongroup>
 </div>
 ```
 
@@ -94,16 +82,20 @@ gridRef.current.displayDensity = 'cosy';
     Name="PropertyEditor"
     @ref="propertyEditor">
         <IgbPropertyEditorPropertyDescription
-        PropertyPath="DisplayDensity"
-        Name="DisplayDensityEditor"
-        @ref="displayDensityEditor">
+        Name="SizeEditor"
+        @ref="sizeEditor"
+        Label="Grid Size:"
+        ValueType="PropertyEditorValueType.EnumValue"
+        DropDownNames="@(new string[] { "Small", "Medium", "Large" })"
+        DropDownValues="@(new string[] { "Small", "Medium", "Large" })"
+        ChangedScript="WebGridSetGridSize">
         </IgbPropertyEditorPropertyDescription>
     </IgbPropertyEditorPanel>
 </div>
 ```
 
 ```html
-<div class="density-chooser">
+<div class="size-chooser">
     <igc-property-editor-panel
     description-type="WebGrid"
     is-horizontal="true"
@@ -111,9 +103,12 @@ gridRef.current.displayDensity = 'cosy';
     name="PropertyEditor"
     id="propertyEditor">
         <igc-property-editor-property-description
-        property-path="DisplayDensity"
-        name="DisplayDensityEditor"
-        id="displayDensityEditor">
+        name="SizeEditor"
+        id="SizeEditor"
+        label="Grid Size:"
+        value-type="EnumValue"
+        drop-down-names="Small, Medium, Large"
+        drop-down-values="Small, Medium, Large">
         </igc-property-editor-property-description>
     </igc-property-editor-panel>
 </div>
@@ -128,8 +123,12 @@ gridRef.current.displayDensity = 'cosy';
     isHorizontal="true"
     isWrappingEnabled="true">
     <IgrPropertyEditorPropertyDescription
-        propertyPath="DisplayDensity"
-        name="DisplayDensityEditor">
+        name="SizeEditor"
+        label="Grid Size:"
+        valueType="EnumValue"
+        dropDownNames={["Small", "Medium", "Large"]}
+        dropDownValues={["Small", "Medium", "Large"]}
+        changed={this.webGridSetGridSize}>
     </IgrPropertyEditorPropertyDescription>
 </IgrPropertyEditorPanel>
 ```
@@ -137,24 +136,24 @@ gridRef.current.displayDensity = 'cosy';
 
 ```typescript
 @ViewChild(IgxButtonGroupComponent) public buttonGroup: IgxButtonGroupComponent;
-public density = 'compact';
-public displayDensities;
+public size = 'small';
+public sizes;
 
 public ngOnInit() {
-    this.displayDensities = [
+    this.sizes = [
         {
-            label: 'compact',
-            selected: this.density === 'compact',
+            label: 'small',
+            selected: this.size === 'small',
             togglable: true
         },
         {
-            label: 'cosy',
-            selected: this.density === 'cosy',
+            label: 'medium',
+            selected: this.sie === 'medium',
             togglable: true
         },
         {
-            label: 'comfortable',
-            selected: this.density === 'comfortable',
+            label: 'large',
+            selected: this.size === 'large',
             togglable: true
         }
     ];
@@ -171,16 +170,20 @@ public ngOnInit() {
     Name="PropertyEditor"
     @ref="propertyEditor">
         <IgbPropertyEditorPropertyDescription
-        PropertyPath="DisplayDensity"
-        Name="DisplayDensityEditor"
-        @ref="displayDensityEditor">
+        Name="SizeEditor"
+        @ref="sizeEditor"
+        Label="Grid Size:"
+        ValueType="PropertyEditorValueType.EnumValue"
+        DropDownNames="@(new string[] { "Small", "Medium", "Large" })"
+        DropDownValues="@(new string[] { "Small", "Medium", "Large" })"
+        ChangedScript="WebGridSetGridSize">
         </IgbPropertyEditorPropertyDescription>
     </IgbPropertyEditorPanel>
 </div>
 ```
 
 ```html
-<div class="density-chooser">
+<div class="size-chooser">
     <igc-property-editor-panel
     description-type="WebTreeGrid"
     is-horizontal="true"
@@ -188,9 +191,12 @@ public ngOnInit() {
     name="PropertyEditor"
     id="propertyEditor">
         <igc-property-editor-property-description
-        property-path="DisplayDensity"
-        name="DisplayDensityEditor"
-        id="displayDensityEditor">
+        name="SizeEditor"
+        id="SizeEditor"
+        label="Grid Size:"
+        value-type="EnumValue"
+        drop-down-names="Small, Medium, Large"
+        drop-down-values="Small, Medium, Large">
         </igc-property-editor-property-description>
     </igc-property-editor-panel>
 </div>
@@ -205,8 +211,12 @@ public ngOnInit() {
     isHorizontal="true"
     isWrappingEnabled="true">
     <IgrPropertyEditorPropertyDescription
-        propertyPath="DisplayDensity"
-        name="DisplayDensityEditor">
+        name="SizeEditor"
+        label="Grid Size:"
+        valueType="EnumValue"
+        dropDownNames={["Small", "Medium", "Large"]}
+        dropDownValues={["Small", "Medium", "Large"]}
+        changed={this.webGridSetGridSize}>
     </IgrPropertyEditorPropertyDescription>
 </IgrPropertyEditorPanel>
 ```
@@ -222,16 +232,20 @@ public ngOnInit() {
     Name="PropertyEditor"
     @ref="propertyEditor">
         <IgbPropertyEditorPropertyDescription
-        PropertyPath="DisplayDensity"
-        Name="DisplayDensityEditor"
-        @ref="displayDensityEditor">
+        Name="SizeEditor"
+        @ref="sizeEditor"
+        Label="Grid Size:"
+        ValueType="PropertyEditorValueType.EnumValue"
+        DropDownNames="@(new string[] { "Small", "Medium", "Large" })"
+        DropDownValues="@(new string[] { "Small", "Medium", "Large" })"
+        ChangedScript="WebGridSetGridSize">
         </IgbPropertyEditorPropertyDescription>
     </IgbPropertyEditorPanel>
 </div>
 ```
 
 ```html
-<div class="density-chooser">
+<div class="size-chooser">
     <igc-property-editor-panel
     description-type="WebHierarchicalGrid"
     is-horizontal="true"
@@ -239,9 +253,12 @@ public ngOnInit() {
     name="PropertyEditor"
     id="propertyEditor">
         <igc-property-editor-property-description
-        property-path="DisplayDensity"
-        name="DisplayDensityEditor"
-        id="displayDensityEditor">
+        name="SizeEditor"
+        id="SizeEditor"
+        label="Grid Size:"
+        value-type="EnumValue"
+        drop-down-names="Small, Medium, Large"
+        drop-down-values="Small, Medium, Large">
         </igc-property-editor-property-description>
     </igc-property-editor-panel>
 </div>
@@ -256,8 +273,12 @@ public ngOnInit() {
     isHorizontal="true"
     isWrappingEnabled="true">
     <IgrPropertyEditorPropertyDescription
-        propertyPath="DisplayDensity"
-        name="DisplayDensityEditor">
+        name="SizeEditor"
+        label="Grid Size:"
+        valueType="EnumValue"
+        dropDownNames={["Small", "Medium", "Large"]}
+        dropDownValues={["Small", "Medium", "Large"]}
+        changed={this.webGridSetGridSize}>
     </IgrPropertyEditorPropertyDescription>
 </IgrPropertyEditorPanel>
 ```
@@ -267,10 +288,10 @@ public ngOnInit() {
 
 <!-- ComponentStart: Grid -->
 ```html
-<div class="density-chooser">
-    <igx-buttongroup [values]="displayDensities" (selected)="selectDensity($event)"></igx-buttongroup>
+<div class="size-chooser">
+    <igx-buttongroup [values]="sizes" (selected)="selectSize($event)"></igx-buttongroup>
 </div>
-<igx-grid #grid [data]="data" [displayDensity]="density" width="100%" height="550px" [allowFiltering]="true">
+<igx-grid #grid [data]="data" width="100%" height="550px" [allowFiltering]="true">
     <igx-column-group  header="Customer Information">
     <igx-column field="CustomerName" header="Customer Name" [dataType]="'string'" [sortable]="true" [hasSummary]="true">
     </igx-column>
@@ -328,154 +349,27 @@ public ngOnInit() {
         AutoGenerate="false"
         Data="InvoicesData"
         AllowFiltering="true"
+        Id="grid"
         Name="grid"
         @ref="grid">
-            <IgbColumn
-            Field="CustomerName"
-            Header="Customer Name"
-            Sortable="true"
-            HasSummary="true"
-            DataType="GridColumnDataType.String">
-            </IgbColumn>
-
-            <IgbColumn
-            Field="Country"
-            Header="Country"
-            DataType="GridColumnDataType.String"
-            Sortable="true"
-            HasSummary="true">
-            </IgbColumn>
-
-            <IgbColumn
-            Field="City"
-            Header="City"
-            DataType="GridColumnDataType.String"
-            Sortable="true"
-            HasSummary="true">
-            </IgbColumn>
-
-            <IgbColumn
-            Field="Address"
-            Header="Address"
-            DataType="GridColumnDataType.String"
-            Sortable="true"
-            HasSummary="true">
-            </IgbColumn>
-
-            <IgbColumn
-            Field="PostalCode"
-            Header="Postal Code"
-            DataType="GridColumnDataType.String"
-            Sortable="true"
-            HasSummary="true">
-            </IgbColumn>
-
-            <IgbColumn
-            Field="Salesperson"
-            Header="Sales Person"
-            DataType="GridColumnDataType.String"
-            Sortable="true"
-            HasSummary="true">
-            </IgbColumn>
-
-            <IgbColumn
-            Field="ShipperName"
-            Header="Shipper Name"
-            DataType="GridColumnDataType.String"
-            Sortable="true"
-            HasSummary="true">
-            </IgbColumn>
-
-            <IgbColumn
-            Field="OrderDate"
-            Header="Order Date"
-            DataType="GridColumnDataType.Date"
-            Sortable="true"
-            HasSummary="true">
-            </IgbColumn>
-
-            <IgbColumn
-            Field="ProductID"
-            Header="ID"
-            DataType="GridColumnDataType.String"
-            Sortable="true"
-            HasSummary="true">
-            </IgbColumn>
-
-            <IgbColumn
-            Field="ProductName"
-            Header="Name"
-            DataType="GridColumnDataType.String"
-            Sortable="true"
-            HasSummary="true">
-            </IgbColumn>
-
-            <IgbColumn
-            Field="UnitPrice"
-            Header="Unit Price"
-            DataType="GridColumnDataType.Number"
-            Sortable="true"
-            HasSummary="true"
-            Filterable="false">
-            </IgbColumn>
-
-            <IgbColumn
-            Field="Quantity"
-            Header="Quantity"
-            DataType="GridColumnDataType.Number"
-            Sortable="true"
-            HasSummary="true"
-            Filterable="false">
-            </IgbColumn>
-
-            <IgbColumn
-            Field="Discontinued"
-            Header="Discontinued"
-            DataType="GridColumnDataType.Boolean"
-            Sortable="true"
-            HasSummary="true">
-            </IgbColumn>
-
-            <IgbColumn
-            Field="Discontinued"
-            Header="Discontinued"
-            DataType="GridColumnDataType.Boolean"
-            Sortable="true"
-            HasSummary="true">
-            </IgbColumn>
-
-            <IgbColumn
-            Field="ShipName"
-            Header="Name"
-            DataType="GridColumnDataType.String"
-            Sortable="true"
-            HasSummary="true">
-            </IgbColumn>
-
-            <IgbColumn
-            Field="ShipCountry"
-            Header="Country"
-            DataType="GridColumnDataType.String"
-            Sortable="true"
-            HasSummary="true">
-            </IgbColumn>
-
-            <IgbColumn
-            Field="ShipCity"
-            Header="City"
-            DataType="GridColumnDataType.String"
-            Sortable="true"
-            HasSummary="true">
-            </IgbColumn>
-
-            <IgbColumn
-            Field="ShipPostalCode"
-            Header="Postal Code"
-            DataType="GridColumnDataType.String"
-            Sortable="true"
-            HasSummary="true">
-            </IgbColumn>
-
+            <IgbColumn Field="CustomerName" Header="Customer Name" Sortable="true" HasSummary="true" DataType="GridColumnDataType.String"></IgbColumn>
+            <IgbColumn Field="Country" Header="Country" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true"></IgbColumn>
+            <IgbColumn Field="City" Header="City" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true"></IgbColumn>
+            <IgbColumn Field="Address" Header="Address" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true"></IgbColumn>
+            <IgbColumn Field="PostalCode" Header="Postal Code" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true"></IgbColumn>
+            <IgbColumn Field="Salesperson" Header="Sales Person" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true"></IgbColumn>
+            <IgbColumn Field="ShipperName" Header="Shipper Name" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true"></IgbColumn>
+            <IgbColumn Field="OrderDate" Header="Order Date" DataType="GridColumnDataType.Date" Sortable="true" HasSummary="true"></IgbColumn>
+            <IgbColumn Field="ProductID" Header="ID" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true"></IgbColumn>
+            <IgbColumn Field="ProductName" Header="Name" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true"></IgbColumn>
+            <IgbColumn Field="UnitPrice" Header="Unit Price" DataType="GridColumnDataType.Number" Sortable="true" HasSummary="true" Filterable="false"></IgbColumn>
+            <IgbColumn Field="Quantity" Header="Quantity" DataType="GridColumnDataType.Number" Sortable="true" HasSummary="true" Filterable="false"></IgbColumn>
+            <IgbColumn Field="Discontinued" Header="Discontinued" DataType="GridColumnDataType.Boolean" Sortable="true" HasSummary="true"></IgbColumn>
+            <IgbColumn Field="Discontinued" Header="Discontinued" DataType="GridColumnDataType.Boolean" Sortable="true" HasSummary="true"></IgbColumn>
+            <IgbColumn Field="ShipName" Header="Name" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true"></IgbColumn>
+            <IgbColumn Field="ShipCountry" Header="Country" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true"> </IgbColumn>
+            <IgbColumn Field="ShipCity" Header="City" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true"></IgbColumn>
+            <IgbColumn Field="ShipPostalCode" Header="Postal Code" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true"></IgbColumn>
         </IgbGrid>
     </div>
 </div>
@@ -531,7 +425,7 @@ public ngOnInit() {
 ```
 
 ```tsx
-<IgrGrid autoGenerate="false" ref={gridRef} data={invoicesData} allowFiltering="true">
+<IgrGrid id="grid" autoGenerate="false" ref={gridRef} data={invoicesData} allowFiltering="true">
     <IgrColumn field="CustomerName" header="Customer Name" dataType="String" sortable="true" hasSummary="true">
     </IgrColumn>
     <IgrColumn field="Country" header="Country" dataType="String" sortable="true" hasSummary="true">
@@ -574,10 +468,10 @@ public ngOnInit() {
 
 <!-- ComponentStart: TreeGrid -->
 ```html
-<div class="density-chooser">
-    <igx-buttongroup [values]="displayDensities" (selected)="selectDensity($event)"></igx-buttongroup>
+<div class="size-chooser">
+    <igx-buttongroup [values]="sizes"></igx-buttongroup>
 </div>
-<igx-tree-grid #grid [data]="data" primaryKey="ID" foreignKey="ParentID" [displayDensity]="density" width="100%"
+<igx-tree-grid #grid id="grid" [data]="data" primaryKey="ID" foreignKey="ParentID" width="100%"
     height="550px" [allowFiltering]="true">
     <igx-column field="Name" dataType="string" [sortable]="true" [hasSummary]="true" width="200px"></igx-column>
     <igx-column-group [pinned]="false" header="General Information">
@@ -621,7 +515,7 @@ public ngOnInit() {
 ```
 
 ```razor
-<IgbTreeGrid AutoGenerate="false" Name="treeGrid" @ref="treeGrid" Id="treeGrid" Data="EmployeesFlatDetails" PrimaryKey="ID" 
+<IgbTreeGrid AutoGenerate="false" Name="treeGrid" @ref="treeGrid" Id="grid" Data="EmployeesFlatDetails" PrimaryKey="ID" 
  ForeignKey="ParentID" AllowFiltering="true">
     <IgbColumn Field="Name" DataType="GridColumnDataType.String" Sortable="true" HasSummary="true" Width="200">
     </IgbColumn>
@@ -699,7 +593,7 @@ public ngOnInit() {
 ```
 
 ```tsx
-<IgrTreeGrid autoGenerate="false" ref={this.treeGridRef} id="treeGrid" data={this.employeesFlatDetails} primaryKey="ID" foreignKey="ParentID" allowFiltering="true">
+<IgrTreeGrid autoGenerate="false" ref={this.treeGridRef} id="grid" data={this.employeesFlatDetails} primaryKey="ID" foreignKey="ParentID" allowFiltering="true">
     <IgrColumn field="Name" dataType="String" sortable="true" hasSummary="true" width="200"></IgrColumn>
     <IgrColumnGroup header="General Information">
         <IgrColumn field="HireDate" dataType="Date" sortable="true" hasSummary="true"></IgrColumn>
@@ -727,10 +621,10 @@ public ngOnInit() {
 
 <!-- ComponentStart: HierarchicalGrid -->
 ```html
-<div class="density-chooser">
-    <igx-buttongroup [values]="displayDensities" (selected)="selectDensity($event)"></igx-buttongroup>
+<div class="size-chooser">
+    <igx-buttongroup [values]="sizes"></igx-buttongroup>
 </div>
-<igx-hierarchical-grid #grid [data]="localdata" [height]="'600px'" [width]="'100%'" [allowFiltering]="true">
+<igx-hierarchical-grid #grid id="grid" [data]="localdata" [height]="'600px'" [width]="'100%'" [allowFiltering]="true">
     <igx-column field="CustomerID"></igx-column>
     <igx-column field="CompanyName"></igx-column>
     <igx-column field="ContactName"></igx-column>
@@ -768,120 +662,36 @@ public ngOnInit() {
 ```
 
 ```razor
-<IgbHierarchicalGrid
-AutoGenerate="false"
-Name="hierarchicalGrid"
-@ref="hierarchicalGrid"
-Id="hierarchicalGrid"
-AllowFiltering="true">
-    <IgbColumn
-    Field="CustomerID"
-    DataType="GridColumnDataType.String">
-    </IgbColumn>
-    <IgbColumn
-    Field="CompanyName"
-    DataType="GridColumnDataType.String">
-    </IgbColumn>
-    <IgbColumn
-    Field="ContactName"
-    DataType="GridColumnDataType.String">
-    </IgbColumn>
-    <IgbColumn
-    Field="Address"
-    DataType="GridColumnDataType.String">
-    </IgbColumn>
-    <IgbColumn
-    Field="City"
-    DataType="GridColumnDataType.String">
-    </IgbColumn>
-    <IgbColumn
-    Field="PostalCode"
-    DataType="GridColumnDataType.String">
-    </IgbColumn>
-    <IgbColumn
-    Field="Country"
-    DataType="GridColumnDataType.String">
-    </IgbColumn>
-    <IgbColumn
-    Field="Phone"
-    DataType="GridColumnDataType.String">
-    </IgbColumn>
-    <IgbColumn
-    Field="Fax"
-    DataType="GridColumnDataType.String">
-    </IgbColumn>
+<IgbHierarchicalGrid AutoGenerate="false" Name="hierarchicalGrid" @ref="hierarchicalGrid" Id="grid" AllowFiltering="true">
+    <IgbColumn Field="CustomerID" DataType="GridColumnDataType.String"></IgbColumn>
+    <IgbColumn Field="CompanyName" DataType="GridColumnDataType.String"></IgbColumn>
+    <IgbColumn Field="ContactName" DataType="GridColumnDataType.String"></IgbColumn>
+    <IgbColumn Field="Address" DataType="GridColumnDataType.String"></IgbColumn>
+    <IgbColumn Field="City" DataType="GridColumnDataType.String"></IgbColumn>
+    <IgbColumn Field="PostalCode" DataType="GridColumnDataType.String"></IgbColumn>
+    <IgbColumn Field="Country" DataType="GridColumnDataType.String"></IgbColumn>
+    <IgbColumn Field="Phone" DataType="GridColumnDataType.String"></IgbColumn>
+    <IgbColumn Field="Fax" DataType="GridColumnDataType.String"></IgbColumn>
     
-    <IgbRowIsland
-    ChildDataKey="Orders"
-    AutoGenerate="false">
-        <IgbColumn
-        Field="OrderID"
-        DataType="GridColumnDataType.Number">
-        </IgbColumn>
-        <IgbColumn
-        Field="EmployeeID"
-        DataType="GridColumnDataType.Number">
-        </IgbColumn>
-        <IgbColumn
-        Field="OrderDate"
-        DataType="GridColumnDataType.Date">
-        </IgbColumn>
-        <IgbColumn
-        Field="RequiredDate"
-        DataType="GridColumnDataType.Date">
-        </IgbColumn>
-        <IgbColumn
-        Field="ShippedDate"
-        DataType="GridColumnDataType.Date">
-        </IgbColumn>
-        <IgbColumn
-        Field="ShipVia"
-        DataType="GridColumnDataType.Number">
-        </IgbColumn>
-        <IgbColumn
-        Field="Freight"
-        DataType="GridColumnDataType.Number">
-        </IgbColumn>
-        <IgbColumn
-        Field="ShipName"
-        DataType="GridColumnDataType.String">
-        </IgbColumn>
-        <IgbColumn
-        Field="ShipAddress"
-        DataType="GridColumnDataType.String">
-        </IgbColumn>
-        <IgbColumn
-        Field="ShipCity"
-        DataType="GridColumnDataType.String">
-        </IgbColumn>
-        <IgbColumn
-        Field="ShipPostalCode"
-        DataType="GridColumnDataType.String">
-        </IgbColumn>
-        <IgbColumn
-        Field="ShipCountry"
-        DataType="GridColumnDataType.String">
-        </IgbColumn>
+    <IgbRowIsland ChildDataKey="Orders" AutoGenerate="false">
+        <IgbColumn Field="OrderID" DataType="GridColumnDataType.Number"></IgbColumn>
+        <IgbColumn Field="EmployeeID" DataType="GridColumnDataType.Number"></IgbColumn>
+        <IgbColumn Field="OrderDate" DataType="GridColumnDataType.Date"></IgbColumn>
+        <IgbColumn Field="RequiredDate" DataType="GridColumnDataType.Date"></IgbColumn>
+        <IgbColumn Field="ShippedDate" DataType="GridColumnDataType.Date"></IgbColumn>
+        <IgbColumn Field="ShipVia" DataType="GridColumnDataType.Number"></IgbColumn>
+        <IgbColumn Field="Freight" DataType="GridColumnDataType.Number"></IgbColumn>
+        <IgbColumn Field="ShipName" DataType="GridColumnDataType.String"></IgbColumn>
+        <IgbColumn Field="ShipAddress" DataType="GridColumnDataType.String"></IgbColumn>
+        <IgbColumn Field="ShipCity" DataType="GridColumnDataType.String"></IgbColumn>
+        <IgbColumn Field="ShipPostalCode" DataType="GridColumnDataType.String"></IgbColumn>
+        <IgbColumn Field="ShipCountry" DataType="GridColumnDataType.String"></IgbColumn>
         
-        <IgbRowIsland
-        ChildDataKey="OrderDetails"
-        AutoGenerate="false">
-            <IgbColumn
-            Field="ProductID"
-            DataType="GridColumnDataType.Number">
-            </IgbColumn>
-            <IgbColumn
-            Field="UnitPrice"
-            DataType="GridColumnDataType.Number">
-            </IgbColumn>
-            <IgbColumn
-            Field="Quantity"
-            DataType="GridColumnDataType.Number">
-            </IgbColumn>
-            <IgbColumn
-            Field="Discount"
-            DataType="GridColumnDataType.Number">
-            </IgbColumn>
+        <IgbRowIsland ChildDataKey="OrderDetails" AutoGenerate="false">
+            <IgbColumn Field="ProductID" DataType="GridColumnDataType.Number"></IgbColumn>
+            <IgbColumn Field="UnitPrice" DataType="GridColumnDataType.Number"></IgbColumn>
+            <IgbColumn Field="Quantity" DataType="GridColumnDataType.Number"></IgbColumn>
+            <IgbColumn Field="Discount" DataType="GridColumnDataType.Number"></IgbColumn>
         </IgbRowIsland>
     </IgbRowIsland>
 </IgbHierarchicalGrid>
@@ -967,16 +777,22 @@ AllowFiltering="true">
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
-最後に密度を適用するためのロジックを実装します。
+最後にサイズを適用するためのロジックを実装します。
 <!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
 <!-- Angular -->
 ```typescript
-@ViewChild('grid', { read: {ComponentName} })
-public grid: {ComponentName};
+@ViewChild('grid', { read: IgxGridComponent })
+public grid: IgxGridComponent;
 
-public selectDensity(event) {
-    this.density = this.displayDensities[event.index].label;
+public selectSize(event: any) {
+    this.size = this.sizes[event.index].label;
+}
+
+
+@HostBinding('style.--ig-size')
+protected get sizeStyle() {
+    return `var(--ig-size-${this.size})`;
 }
 ```
 <!-- end: Angular -->
@@ -985,9 +801,12 @@ public selectDensity(event) {
 ```ts
 constructor() {
     var propertyEditor = this.propertyEditor = document.getElementById('PropertyEditor') as IgcPropertyEditorPanelComponent;
+    var sizeEditor = this.sizeEditor = document.getElementById('SizeEditor') as IgcPropertyEditorPropertyDescriptionComponent;
     var grid = this.grid = document.getElementById('grid') as {ComponentName};
     propertyEditor.componentRenderer = this.renderer;
     propertyEditor.target = this.grid;
+    this.webGridSetGridSize = this.webGridSetGridSize.bind(this);
+    sizeEditor.changed = this.webGridSetGridSize;
     grid.data = this.data;
 }
 
@@ -1001,25 +820,24 @@ public get renderer(): ComponentRenderer {
     }
     return this._componentRenderer;
 }
+
+public webGridSetGridSize(sender: any, args: IgcPropertyEditorPropertyDescriptionChangedEventArgs): void {
+    var newVal = (args.newValue as string).toLowerCase();
+    var grid = document.getElementById("grid");
+    grid.style.setProperty('--ig-size', `var(--ig-size-${newVal})`);
+}
 ```
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
 ```razor
 @code {
-    private Action BindElements { get; set; }
-
-    protected override void OnAfterRender(bool firstRender)
-    {
-        var propertyEditor = this.propertyEditor;
-        var displayDensityEditor = this.displayDensityEditor;
-        var grid = this.grid;
-        propertyEditor.Target = this.grid;
-    }
-
-    private IgbPropertyEditorPanel propertyEditor;
-    private IgbPropertyEditorPropertyDescription displayDensityEditor;
-    private {ComponentSelector} grid;
+    *** In JavaScript ***
+    igRegisterScript("WebGridSetGridSize", (sender, evtArgs) => {
+        var newVal = evtArgs.newValue.toLowerCase();
+        var grid = document.getElementById("grid");
+        grid.style.setProperty('--ig-size', `var(--ig-size-${newVal})`);
+    }, false);
 }
 ```
 <!-- end: Blazor -->
@@ -1031,7 +849,7 @@ private propertyEditorRef(r: IgrPropertyEditorPanel) {
         this.propertyEditor = r;
         this.setState({});
 }
-private displayDensityEditor: IgrPropertyEditorPropertyDescription
+private sizeEditor: IgrPropertyEditorPropertyDescription
 private grid: {ComponentName}
 private gridRef(r: {ComponentName}) {
     this.grid = r;
@@ -1042,6 +860,7 @@ constructor(props: any) {
     super(props);
 
     this.propertyEditorRef = this.propertyEditorRef.bind(this);
+    this.webGridSetGridSize = this.webGridSetGridSize.bind(this);
     this.gridRef = this.gridRef.bind(this);
 }
 
@@ -1055,32 +874,40 @@ private _componentRenderer: ComponentRenderer = null;
     }
     return this._componentRenderer;
 }
+
+public webGridSetGridSize(sender: any, args: IgrPropertyEditorPropertyDescriptionChangedEventArgs): void {
+    var newVal = (args.newValue as string).toLowerCase();
+    var grid = document.getElementById("grid");
+    grid.style.setProperty('--ig-size', `var(--ig-size-${newVal})`);
+}
 ```
 <!-- end: React -->
 
-`{ComponentName}` の行の高さを変更するその他のオプションに `RowHeight` プロパティがあります。このプロパティと `DisplayDensity` プションが `{ComponentName}` レイアウトにどのように動作に影響するかを以下で確認できます。
+`{ComponentName}` の行の高さを変更するその他のオプションに `RowHeight` プロパティがあります。このプロパティと `--ig-size` プションが `{ComponentName}` レイアウトにどのように動作に影響するかを以下で確認できます。
 
 以下を確認してください。
- - **`RowHeight` を指定した場合**、`DisplayDensity` オプションは行の高さに影響しません。
- - `DisplayDensity` は、上記の理由により**残りすべての {ComponentTitle} 要素に影響します**。
+ - **`RowHeight` を指定した場合**、`--ig-size`  CSS 変数は行の高さに影響しません。
+ - `--ig-size` は、上記の理由により**残りすべての {ComponentTitle} 要素に影響します**。
 
 サンプル機能を拡張して `RowHeight` プロパティを `{ComponentName}` に追加します。
 
 <!-- Angular -->
  ```html
- <{ComponentSelector} #grid [data]="data" [displayDensity]="density" [rowHeight]="'80px'" width="100%"
- height="550px" [allowFiltering]="true">
+ <{ComponentSelector} #grid class="gridSize" width="100%" height="550px" [data]="data" [rowHeight]="'80px'" [allowFiltering]="true">
  </{ComponentSelector}>
  ```
  <!-- end: Angular -->
 
  ```razor
- <{ComponentSelector} Width="100%" Height="100%"
-             @ref="grid"
-             AutoGenerate="true"
-             Data="northwindEmployees"
-             RowHeight="rowHeight"
-             DisplayDensity="@density">
+ <{ComponentSelector}
+    @ref="grid"
+    Id="grid"
+    Class="gridSize"
+    Width="100%"
+    Height="100%"
+    AutoGenerate="true"
+    Data="northwindEmployees"
+    RowHeight="rowHeight">
 </{ComponentSelector}>
 
 @code {
@@ -1090,15 +917,13 @@ private _componentRenderer: ComponentRenderer = null;
 
  <!-- WebComponents -->
  ```html
- <{ComponentSelector} id="grid" display-density="cosy" row-height="80px" width="100%"
- height="550px" allow-filtering="true">
+ <{ComponentSelector} id="grid" class="gridSize" row-height="80px" width="100%" height="550px" allow-filtering="true">
  </{ComponentSelector}>
  ```
  <!-- end: WebComponents -->
 
  ```tsx
- <{ComponentSelector} id="grid" displayDensity="cosy" rowHeight="80px" width="100%"
- height="550px" allowFiltering="true">
+ <{ComponentSelector} id="grid" className="gridSize" rowHeight="80px" width="100%" height="550px" allowFiltering="true">
  </{ComponentSelector}>
  ```
 
