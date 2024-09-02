@@ -123,6 +123,7 @@ public exportButtonHandler() {
 <!-- end: Angular -->
 
 <!-- WebComponents -->
+<!-- ComponentStart: Grid, TreeGrid -->
 ```ts
 constructor() {
   var gridToolbarExporter1 = document.getElementById('gridToolbarExporter1') as IgcGridToolbarExporterComponent;
@@ -133,8 +134,26 @@ public webGridExportEventFreezeHeaders(args: any): void {
   args.detail.options.freezeHeaders = true;
 }
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
 <!-- end: WebComponents -->
 
+<!-- WebComponents -->
+<!-- ComponentStart: HierarchicalGrid -->
+```ts
+constructor() {
+  var hGridToolbarExporter = document.getElementById('hGridToolbarExporter') as IgcGridToolbarExporterComponent;
+  hGridToolbarExporter.addEventListener("exportStarted", this.webGridExportEventFreezeHeaders);
+}
+
+public webGridExportEventFreezeHeaders(args: CustomEvent<IgcExporterEvent>): void {
+  args.detail.options.freezeHeaders = true;
+}
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: WebComponents -->
+
+<!-- React -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 function exportEventFreezeHeaders(grid: IgrGridBaseDirective, args: IgrExporterEvent) {
     args.detail.options.freezeHeaders = true;
@@ -146,41 +165,46 @@ function exportEventFreezeHeaders(grid: IgrGridBaseDirective, args: IgrExporterE
   </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: React -->
 
+<!-- ComponentStart: Grid, TreeGrid -->
 ```razor
  <{ComponentSelector}>
     <IgbGridToolbar>
       <IgbGridToolbarActions>
         <IgbGridToolbarExporter
-          ExportExcel="true" ExportStartedScript="WebGridExportEventMultiColumnHeaders">
+          ExportExcel="true" ExportStartedScript="WebGridExportEventFreezeHeaders">
         </IgbGridToolbarExporter>
       </IgbGridToolbarActions>
     </IgbGridToolbar>
  </{ComponentSelector}>
 
-igRegisterScript("WebGridExportEventMultiColumnHeaders", (ev) => {
-    ev.detail.options.ignoreMultiColumnHeaders = false;
+igRegisterScript("WebGridExportEventFreezeHeaders", (ev) => {
+    ev.detail.options.freezeHeaders = false;
 }, false);
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
 
-<!-- ComponentStart: TreeGrid -->
+<!-- Blazor -->
+<!-- ComponentStart: HierarchicalGrid -->
 ```razor
  <{ComponentSelector}>
     <IgbGridToolbar>
       <IgbGridToolbarActions>
         <IgbGridToolbarExporter
-          ExportExcel="true" ExportStartedScript="WebGridExportEventMultiColumnHeaders">
+          ExportExcel="true" ExportStartedScript="WebHierarchicalGridExportEventFreezeHeaders">
         </IgbGridToolbarExporter>
       </IgbGridToolbarActions>
     </IgbGridToolbar>
  </{ComponentSelector}>
 
-igRegisterScript("WebGridExportEventMultiColumnHeaders", (ev) => {
-    ev.detail.options.ignoreMultiColumnHeaders = false;
+igRegisterScript("WebHierarchicalGridExportEventFreezeHeaders", (ev) => {
+    ev.detail.options.freezeHeaders = false;
 }, false);
 ```
-<!-- ComponentEnd: TreeGrid -->
-
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: Blazor -->
 
 <!-- Angular -->
 ## Customizing the Exported Content

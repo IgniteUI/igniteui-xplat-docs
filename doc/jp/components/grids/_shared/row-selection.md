@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 行の選択
 
-{Platform} {ComponentTitle} の {ProductName} 行選択機能を使用すると、ユーザーは 1 つまたは複数のデータ行を対話的に選択、強調表示、または選択解除できます。`{ComponentName}` 内に使用可能な選択モードがいくつかあります。
+{Platform} {ComponentTitle} の {ProductName} 行選択機能を使用すると、ユーザーは 1 つまたは複数のデータ行を対話的に選択、ハイライト表示、または選択解除できます。`{ComponentName}` 内に使用可能な選択モードがいくつかあります。
 - None (なし) 選択
 - Multiple (複数) 選択
 - Single (単一) 選択
@@ -25,7 +25,7 @@ _language: ja
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
-以下のサンプルは、`{ComponentName}` の 3 種類の**行選択**動作を示しています。以下のボタンを使用して、利用可能な各選択モードを有効にします。スナックバーのメッセージ ボックスを介して、各ボタンの操作に関する簡単な説明が提供されます。スイッチ ボタンを使用して、行セレクター チェックボックスを非表示または表示します。
+以下のサンプルは、`{ComponentName}` の 3 種類の**行選択**動作を示しています。以下のドロップダウンを使用して、利用可能な各選択モードを有効にします。チェックボックスを使用して、行セレクター チェックボックスを非表示または表示します。
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
@@ -73,13 +73,12 @@ _language: ja
 ```
 ```ts
 constructor() {
-    const grid = document.getElementById('grid') as IgcGridComponent;
+    const grid = document.getElementById('grid') as {ComponentName}Component;
     grid.data = this.data;
     grid.addEventListener("rowSelectionChanging", this.handleRowSelection);
 }
 ```
-
-```typescript
+```ts
 public handleRowSelection(args: IgcRowSelectionEventArgs) {
     if (args.detail.added.length && args.detail.added[0] === 3) {
         args.detail.cancel = true;
@@ -186,6 +185,12 @@ function handleRowSelection(args: IgrRowSelectionEventArgs) {
     </{ComponentSelector}>
 ```
 
+```tsx
+<IgrTreeGrid id="grid" primaryKey="ID" foreignKey="ParentID" autoGenerate="true"
+        rowSelection="MultipleCascade" allowFiltering="true">
+</IgrTreeGrid>
+```
+
 このモードでは、親の選択状態はその子の選択状態に完全に依存します。親に選択された子と選択解除された子がある場合、そのチェックボックスは不確定な状態になります。
 
 <!-- ComponentEnd: TreeGrid -->
@@ -224,6 +229,7 @@ function handleRowSelection(args: IgrRowSelectionEventArgs) {
 ```
 <!-- end: Angular -->
 
+<!-- Blazor -->
 ```razor
     <{ComponentSelector} Width="100%"
              Id="grid"
@@ -236,7 +242,7 @@ function handleRowSelection(args: IgrRowSelectionEventArgs) {
     </{ComponentSelector}>
     <IgbButton @onclick=Select>Select</IgbButton>
     @code {
-        public IgbGrid grid;
+        public {ComponentSelector} grid;
         private async void Select()
         {
             object[] array = new object[] { 1,2, 5 };
@@ -244,6 +250,7 @@ function handleRowSelection(args: IgrRowSelectionEventArgs) {
         }
     }
 ```
+<!-- end: Blazor -->
 
 <!-- WebComponents -->
 ```html
@@ -261,7 +268,7 @@ constructor() {
     document.getElementById("select").addEventListener("click", this.onClickSelect);
 }
 public onClickSelect() {
-    const grid = document.getElementById("grid") as IgcGridComponent;
+    const grid = document.getElementById("grid") as {ComponentName}Component;
     grid.selectRows([1,2,5], true);
 }
 ```
@@ -307,7 +314,7 @@ function onClickSelect() {
     </{ComponentSelector}>
     <IgbButton @onclick=Deselect>Deselect</IgbButton>
     @code {
-        public IgbGrid grid;
+        public {ComponentSelector} grid;
         private async void Deselect()
         {
             object[] array = new object[] { 1, 2, 5 };
@@ -331,7 +338,7 @@ constructor() {
     document.getElementById("deselect").addEventListener("click", this.onClickDeselect);
 }
 public onClickDeselect() {
-    const grid = document.getElementById("grid") as IgcGridComponent;
+    const grid = document.getElementById("grid") as {ComponentName}Component;
     grid.deselectRows([1,2,5]);
 }
 ```
@@ -370,9 +377,15 @@ function onClickDeselect() {
 ```
 <!-- end: Angular -->
 
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid">
+</{ComponentSelector}>
+```
+
 ```ts
 constructor() {
-    const grid = document.getElementById('grid') as IgcGridComponent;
+    const grid = document.getElementById('grid') as {ComponentName}Component;
     grid.data = this.data;
     grid.addEventListener("rowSelectionChanging", this.handleRowSelectionChange);
 }
@@ -381,6 +394,7 @@ public handleRowSelectionChange(args) {
     args.detail.cancel = true; // this will cancel the row selection
 }
 ```
+<!-- end: WebComponents -->
 
 ```tsx
 function handleRowSelectionChange(args: IgrRowSelectionEventArgs) {
@@ -426,7 +440,7 @@ function handleRowSelectionChange(args: IgrRowSelectionEventArgs) {
 
 ```typescript
 public getSelectedRows() {
-    const grid = document.getElementById('grid') as IgcGridComponent;
+    const grid = document.getElementById('grid') as {ComponentName}Component;
     const currentSelection = grid.selectedRows; // return array of row IDs
 }
 ```
@@ -443,7 +457,7 @@ public getSelectedRows() {
     </{ComponentSelector}>
     <IgbButton @onclick=GetSelected>Get selected</IgbButton>
     @code {
-        public IgbGrid grid;
+        public {ComponentSelector} grid;
         private async void GetSelected()
         {
             var selected = this.grid.SelectedRows;
@@ -471,10 +485,9 @@ function getSelectedRows() {
 <!-- end: Angular -->
 
 ```ts
-
 public mySelectedRows = [1, 2, 3]; // an array of row IDs
 constructor() {
-    const grid = document.getElementById('grid') as IgcGridComponent;
+    const grid = document.getElementById('grid') as {ComponentName}Component;
     grid.data = this.data;
     grid.selectedRows = this.mySelectedRows;
 }
@@ -593,6 +606,7 @@ function rowSelectorTemplate(ctx: IgrRowSelectorTemplateContext) {
     <igx-checkbox (click)="onSelectorClick($event, rowContext.key)"></igx-checkbox>
 </ng-template>
 ```
+
 ```ts
 public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
     return html`
@@ -685,7 +699,7 @@ auto-generate="true">
 
 ```ts
 constructor() {
-    const grid = document.getElementById('grid') as IgcGridComponent;
+    const grid = document.getElementById('grid') as {ComponentName}Component;
     grid.data = this.data;
     grid.headSelectorTemplate = this.headSelectorTemplate;
 }
@@ -745,8 +759,7 @@ function headSelectorTemplate(ctx: IgcHeadSelectorTemplateContext) {
 
 
 
-<!-- ComponentStart: Grid -->
-
+<!-- ComponentStart: Grid, TreeGrid -->
 
 ### Excel スタイル行セレクターのデモ
 
@@ -757,16 +770,13 @@ function headSelectorTemplate(ctx: IgcHeadSelectorTemplateContext) {
 `sample="/{ComponentSample}/row-selection-template-excel", height="550", alt="{Platform} {ComponentTitle} 選択テンプレート Excel の例"`
 
 
-
-
-<!-- ComponentEnd: Grid -->
+<!-- ComponentEnd: Grid, TreeGrid -->
 
 ### 条件付き選択のデモ
 
 このデモでは、`RowSelectionChanging` イベントと、選択できない行のチェックボックスが無効になっているカスタム テンプレートを使用して、一部の行が選択されないようにします。
 
 `sample="/{ComponentSample}/conditional-row-selectors", height="550", alt="{Platform} {ComponentTitle} 条件行セレクターの例"`
-
 
 
 ## API リファレンス
@@ -777,7 +787,7 @@ function headSelectorTemplate(ctx: IgcHeadSelectorTemplateContext) {
 
 ## その他のリソース
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart:  Grid, TreeGrid -->
 * [選択](selection.md)
 * [セル選択](cell-selection.md)
 * [ページング](paging.md)
@@ -788,7 +798,7 @@ function headSelectorTemplate(ctx: IgcHeadSelectorTemplateContext) {
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [仮想化とパフォーマンス](virtualization.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd:  Grid, TreeGrid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

@@ -267,7 +267,7 @@ IgrRadialGaugeModule.register();
 
 ## スケール
 
-スケールは視覚要素で、`MinimumValue` と `MaximumValue` 値を設定してゲージの値範囲全体を強調表示できます。バッキングとともにゲージの全体的な図形を定義します。`ScaleStartAngle` と `ScaleEndAngle` プロパティは、スケールの円弧の境界線を定義します。`ScaleSweepDirection` プロパティが、スケールが時計回りまたは反時計回りのどちらの方向に動くかを指定します。`ScaleBrush`、`ScaleStartExtent`、`ScaleEndExtent` プロパティを設定してスケールの外観をカスタマイズできます。
+スケールは視覚要素で、`MinimumValue` と `MaximumValue` 値を設定してゲージの値範囲全体をハイライト表示できます。バッキングとともにゲージの全体的な図形を定義します。`ScaleStartAngle` と `ScaleEndAngle` プロパティは、スケールの円弧の境界線を定義します。`ScaleSweepDirection` プロパティが、スケールが時計回りまたは反時計回りのどちらの方向に動くかを指定します。`ScaleBrush`、`ScaleStartExtent`、`ScaleEndExtent` プロパティを設定してスケールの外観をカスタマイズできます。
 
 ```html
 <igx-radial-gauge
@@ -391,11 +391,11 @@ IgrRadialGaugeModule.register();
 
 `sample="/gauges/radial-gauge/labels", height="320", alt="{Platform} ラジアル ゲージのラベル"`
 
-## オプティカル スケーリング - タイトル、サブタイトル、ラベル
+## オプティカル スケーリング
 
 ラジアル ゲージのラベルとタイトルにより、スケーリングを変更できます。これを有効にするには、まず `OpticalScalingEnabled` を true に設定します。次に、ラベルが 100% のオプティカル スケーリングを持つサイズを管理する `OpticalScalingSize` を設定できます。ゲージのサイズが大きくなると、ラベルのフォントも大きくなります。たとえば、このプロパティが 500 に設定され、ゲージのピクセル単位のサイズが 2 倍の 1000 になると、ラベルのフォント サイズは 200% 大きくなります。
 
-`sample="/gauges/radial-gauge/optical-scaling", height="320", alt="{Platform} ラジアル ゲージのラベル"`
+`sample="/gauges/radial-gauge/optical-scaling", height="500", alt="{Platform} ラジアル ゲージのオプティカル スケーリング"`
 
 ## 目盛
 目盛は、ラジアル ゲージの中央から放射状に表示される細い線です。目盛には、主目盛および副目盛の 2 種類があり、主目盛りは `MinimumValue` と `MaximumValue` の間の `Interval` に表示されます。また `MinorTickCount` プロパティは、隣接する 2 つの主目盛間の副目盛の数を指定します。目盛りの長さは、`TickStartExtent`、`TickEndExtent`、`MinorTickStartExtent`、`MinorTickEndExtent` に少数値 (0 から 1 の間) を設定して制御できます。
@@ -473,7 +473,7 @@ IgrRadialGaugeModule.register();
 
 
 ## 範囲
-範囲に `MinimumValue` や `MaximumValue` プロパティで指定した連続値の境界を強調表示します。開始値と終了値を指定してゲージに複数の範囲を追加でき、各範囲には、`Brush` や `Outline` などのカスタマイズ プロパティがあります。または、`RangeBrushes` や `RangeOutlines` プロパティを範囲の色リストに設定することもできます。
+範囲に `MinimumValue` や `MaximumValue` プロパティで指定した連続値の境界をハイライト表示します。開始値と終了値を指定してゲージに複数の範囲を追加でき、各範囲には、`Brush` や `Outline` などのカスタマイズ プロパティがあります。または、`RangeBrushes` や `RangeOutlines` プロパティを範囲の色リストに設定することもできます。
 
 ```html
 <igx-radial-gauge
@@ -650,6 +650,74 @@ IgrRadialGaugeModule.register();
 
 `sample="/gauges/radial-gauge/needle", height="320", alt="{Platform} ラジアル ゲージの針"`
 
+## 針のハイライト
+
+ラジアル ゲージを変更して、2 番目の針を表示できます。これにより、メイン針の `Value` の不透明度が低く表示されます。これを有効にするには、まず `HighlightValueDisplayMode` を Overlay に設定し、次に `HighlightValue` を適用します。
+
+```html
+<igx-radial-gauge #radialGauge
+    labelExtent=0.65
+    labelInterval=10
+    highlightValueDisplayMode="Overlay"
+    highlightValue=50
+    highlightLabelDisplaysValue=true
+    highlightLabelSnapsToNeedlePivot=true
+    isHighlightNeedleDraggingEnabled=true
+    height="100%" width="100%"
+    minimumValue=0 value=30
+    maximumValue=100 interval=10  >
+</igx-radial-gauge>
+```
+
+```tsx
+<IgrRadialGauge                    
+    highlightValueDisplayMode="Overlay"
+    highlightValue="25"
+    isHighlightNeedleDraggingEnabled="true"
+    isNeedleDraggingEnabled="true"
+    titleDisplaysValue="true"
+    label-interval="10"
+    label-extent="0.65"        
+    height="100%"
+    width="100%"
+    minimumValue={0} value={75}
+    maximumValue={80} interval={10}  />
+```
+
+```html
+<igc-radial-gauge
+    id="gauge"
+    highlight-value="50"
+    highlight-value-display-mode="Overlay"
+    highlight-label-displays-value="true"
+    highlight-label-snaps-to-needle-pivot="true"
+    is-highlight-needle-dragging-enabled="true"
+    label-interval="10"
+    label-extent="0.65"        
+    height="100%"
+    width="100%"
+    minimum-value="0" value="30"
+    maximum-value="100" interval="10">
+</igc-radial-gauge>
+```
+
+```razor
+<IgbLinearGauge Height="80px" Width="100%"
+    MinimumValue="0"
+    MaximumValue="100"
+    Value="30"
+    Interval="10"
+    LabelInterval="10"
+    LabelExtent="0.65"
+    HighlightValue="50"
+    HighlightValueDisplayMode=HighlightedValueDisplayMode.Overlay
+    HighlightLabelDisplaysValue=true
+    HighlightLabelSnapsToNeedlePivot=true
+    IsHighlightNeedleDraggingEnabled=true
+</IgbLinearGauge>
+```
+
+`sample="/gauges/radial-gauge/highlight-needle", height="320", alt="{Platform} ラジアル ゲージの針のハイライト"`
 
 ## まとめ
 上記すべてのコード スニペットを以下のコード ブロックにまとめています。プロジェクトに簡単にコピーしてブレットグラフのすべての機能を再現できます。

@@ -85,8 +85,8 @@ The simplest way to start using the `Tree` is as follows:
 
 ### Declaring a tree
 `TreeItem` is the representation of every item that belongs to the `Tree`.
-Items provide `disabled`, `active`, `selected` and `expanded` properties, which give you opportunity to configure the states of the item as per your requirement.
-The `value` property can be used to add a reference to the data entry the item represents.
+Items provide `Disabled`, `Active`, `Selected` and `Expanded` properties, which give you opportunity to configure the states of the item as per your requirement.
+The `Value` property can be used to add a reference to the data entry the item represents.
 
 <!-- WebComponents, Blazor -->
 
@@ -124,7 +124,7 @@ Items can be bound to a data model so that their expanded and selected states ar
 
 - Declaring a tree by creating static unbound items
 
-In order to render a tree you do not necessarily need a data set - individual items can be created without an underlying data model using the exposed `label` property or provide a custom slot content for the `TreeItem` label.
+In order to render a tree you do not necessarily need a data set - individual items can be created without an underlying data model using the exposed `Label` property or provide a custom slot content for the `TreeItem` label.
 
 ```html
 <igc-tree>
@@ -222,17 +222,18 @@ By default, multiple items could be expanded at the same time. In order to chang
     </igc-tree-item>
 </igc-tree>
 ```
-
+<!-- WebComponents -->
 In addition, the `Tree` provides the following API methods for item interactions:
 
-- `expand` - expands all items. If an items array is passed, expands only the specified items.
-- `collapse` - collapses all items. If an items array is passed, collapses only the specified items.
-- `select` - selects all items. If an items array is passed, selects only the specified items. Does not emit `Selection` event.
-- `deselect` - deselects all items. If an items array is passed, deselects only the specified items. Does not emit `Selection` event.
+- `Tree.Expand` - expands all items. If an items array is passed, expands only the specified items.
+- `Tree.Collapse` - collapses all items. If an items array is passed, collapses only the specified items.
+- `Tree.Select` - selects all items. If an items array is passed, selects only the specified items. Does not emit `selection` event.
+- `Tree.Deselect` - deselects all items. If an items array is passed, deselects only the specified items. Does not emit `selection` event.
+<!-- end: WebComponents -->
 
 ## {Platform} Tree Selection
 
-In order to setup item selection in the {ProductName} Tree component, you just need to set its `selection` property. This property accepts the following three modes: **None**, **Multiple** and **Cascade**. Below we will take a look at each of them in more detail.
+In order to setup item selection in the {ProductName} Tree component, you just need to set its `Selection` property. This property accepts the following three modes: **None**, **Multiple** and **Cascade**. Below we will take a look at each of them in more detail.
 
 ### None
 
@@ -240,7 +241,7 @@ In the `Tree` by default item selection is disabled. Users cannot select or dese
 
 ### Multiple
 
-To enable multiple item selection in the `Tree` just set the `selection` property to **multiple**. This will render a checkbox for every item. Each item has two states - selected or not. This mode supports multiple selection.
+To enable multiple item selection in the `Tree` just set the `Selection` property to **multiple**. This will render a checkbox for every item. Each item has two states - selected or not. This mode supports multiple selection.
 
 ```html
 <igc-tree selection="multiple">

@@ -1,6 +1,6 @@
 ---
 title: {Platform} チャート データ ツールチップ | データ視覚化ツール | インフラジスティックス
-_description: データ ツールチップ レイヤーで Infragistics {ProductName} チャートを使用してください!
+_description: データ ツールチップ レイヤーで Infragistics {ProductName} チャートをお試しください!
 _keywords: {Platform} charts, chart legend, legend, legend types, {ProductName}, Infragistics, {Platform} チャート, チャート凡例, 凡例, 凡例タイプ, インフラジスティックス
 mentionedTypes: ["XamDataChart", "Legend", "CategoryChart", "FinancialChart", "XamDataLegend", "DataToolTipLayer"]
 namespace: Infragistics.Controls.Charts
@@ -75,8 +75,10 @@ _language: ja
 
 ## {Platform} データ チャートのデータ ツールチップのグループ化
 
-`DataLegendGroup` は、すべてのタイプのシリーズで、データ凡例内のシリーズ グループを分類する文字列に設定できます。各グループには、別のシリーズ グループが表示される前に、独自の集計行が表示されます。
-各グループには、別のシリーズ グループが表示される前に、独自の集計行が表示されます。データ ツールチップ レイヤーで `GroupingMode` を 「Grouped」 に設定し、`LabelDisplayMode` を 「Visible」 に設定する必要があります。
+`DataLegendGroup` は、すべてのタイプのシリーズで、データ凡例内のシリーズ グループを分類する文字列に設定できます。各グループには、別のシリーズ グループが表示される前に、独自の集計行が表示されます。デフォルトでは、DataLegend はグループ名を非表示にしますが、`GroupRowVisible` プロパティを true に設定するとグループ名を表示できます。データ ツールチップ レイヤーで `GroupingMode` を 「Grouped」 に設定し、`LabelDisplayMode` を 「Visible」 に設定する必要があります。
+
+`sample="/charts/data-chart/data-tooltip-grouping", height="450", alt="{Platform} データ ツールチップのグループ化"`
+
 
 ## {Platform} カテゴリ チャート & ファイナンシャル チャートのデータ ツールチップのグループ化と配置
 
@@ -100,7 +102,7 @@ _language: ja
 
 ## {Platform} データ ツールチップの値モード
 
-レイヤーの `DataToolTipValueFormatMode` プロパティを変更することにより、**DataToolTip** 内の値のデフォルトの 10 進表示を通貨表示に変更できます。**DataToolTip** は、`DataToolTipValueFormatCulture` プロパティを使用し、対応するカルチャ タグに設定することにより、表示されている通貨記号のカルチャを変更する機能も公開します。たとえば、次のサンプルは、`DataToolTipValueFormatCulture` が「en-GB」に設定されたチャートを示しています。
+レイヤーの `DataToolTipValueFormatMode` プロパティを変更することにより、**DataToolTip** 内の値のデフォルトの 10 進表示を通貨表示に変更できます。**DataToolTip** は、`DataToolTipValueFormatCulture` プロパティを使用し、対応するカルチャ タグに設定することにより、表示されている通貨記号のカルチャを変更する機能も公開します。たとえば、次のサンプルは、`DataToolTipValueFormatCulture` が 「en-GB」 に設定されたチャートを示しています。
 
 `sample="/charts/financial-chart/data-tooltip-formatting-currency", height="450", alt="{Platform} ファイナンシャル チャート データ ツールチップの通貨の書式設定"`
 

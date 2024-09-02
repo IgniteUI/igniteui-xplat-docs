@@ -92,7 +92,7 @@ _language: ja
 | --body-summaries-text-color              | 色                    | 本体に配置される集計グループのテキストの色。                                       |
 | --root-summaries-background              | 色                    | フッターに配置される集計グループの背景色。                               |
 | --root-summaries-text-color              | 色                    | フッターに配置される集計グループのテキストの色。                                     |
-| --row-highlight                          | 色                    | グリッド行の強調表示の色。                                                                |
+| --row-highlight                          | 色                    | グリッド行のハイライト表示の色。                                                                |
 | --row-ghost-background                   | 色                    | ドラッグされている行の背景色。                                                     |
 | --row-drag-color                         | 色                    | ドラッグ ハンドルの色。                                                                |
 | --drop-area-border-radius                | 0 ～ 1 の数   | ドロップ領域に使用される境界半径。0 ～ 1 の任意の小数、ピクセル、またはパーセントを指定できます。 |

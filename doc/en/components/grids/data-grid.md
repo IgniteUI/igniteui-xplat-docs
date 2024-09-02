@@ -60,7 +60,7 @@ namespace: Infragistics.Controls
 
 In this {ProductName} Grid example, you can see how users can do both basic and excel-style filtering, live-data sorting, and use grid summaries as well as cell templating. The demo also includes paging set to display 10 items per page.
 
-`sample="/{GridSample}/overview", height="700", alt="{Platform} grid example"`
+`sample="/{GridSample}/overview", img-src="https://static.infragistics.com/marketing/Website/products/ignite-ui-blazor/ignite-ui-blazor-client-grid", height="700", alt="{Platform} grid example"`
 
 
 
@@ -70,7 +70,7 @@ In this {ProductName} Grid example, you can see how users can do both basic and 
 
 ### Dependencies
 
-To get started with the {Platform} Data Grid, first you need to install the {ProductName} package.
+To get started with the {Platform} Data Grid, first you need to install the <!-- Blazor -->{PackageCommon} package.<!-- end: Blazor --><!-- WebComponents -->`{PackageGrids}` package.<!-- end: WebComponents --><!-- React -->`{PackageCommon}` and `{PackageGrids}` packages.<!-- end: React -->
 
 <!-- Blazor -->
 
@@ -92,15 +92,20 @@ Afterwards, you may start implementing the control by adding the following names
 ```
 <!-- end: Blazor -->
 
-<!-- Angular, React, WebComponents -->
-When installing the {Platform} grid package, the core, inputs and layout packages must also be installed.
-
+<!-- Angular, WebComponents -->
 ```cmd
-npm install --save {PackageCore}
 npm install --save {PackageGrids}
-npm install --save {PackageInputs}
-npm install --save {PackageLayouts}
 ```
+<!-- end: Angular, WebComponents -->
+
+<!-- React -->
+```cmd
+npm install --save {PackageCommon}
+npm install --save {PackageGrids}
+```
+<!-- end: React -->
+
+<!-- Angular, React, WebComponents -->
 
 You also need to include the following import to use the grid:
 
@@ -1503,11 +1508,11 @@ The custom template for the column, that will render the nested data:
                     </igx-expansion-panel-header>
                     <igx-expansion-panel-body>
                         <div class="description">
-                            <igx-input-group (keydown)="stop($event)" displayDensity="compact">
+                            <igx-input-group (keydown)="stop($event)">
                                 <label igxLabel for="title">Title</label>
                                 <input type="text" name="title" igxInput [(ngModel)]="person.Title" style="text-overflow: ellipsis;" />
                             </igx-input-group>
-                            <igx-input-group (keydown)="stop($event)" displayDensity="compact" style="width: 15%;">
+                            <igx-input-group (keydown)="stop($event)" style="width: 15%;">
                                 <label igxLabel for="age">Age</label>
                                 <input type="number" name="age" igxInput [(ngModel)]="person.Age" />
                             </igx-input-group>
@@ -2032,7 +2037,7 @@ To facilitate your work, apply the comment in the `src/styles.scss` file.
 |Grid `width` does not depend on the column widths | The `width` of all columns does not determine the spanning of the grid itself. It is determined by the parent container dimensions or the defined grid's `width`.|
 |Grid nested in parent container | When grid's `width` is not set and it is placed in a parent container with defined dimensions, the grid spans to this container.|
 |Grid `OnPush` ChangeDetectionStrategy |The grid operates with `ChangeDetectionStrategy.OnPush` so whenever some customization appears make sure that the grid is notified about the changes that happens.|
-| Columns have a minimum allowed column width. Depending on the `displayDensity` option, they are as follows: <br/>"compact": 56px <br/> "cosy": 64px <br/> "comfortable ": 80px | If width less than the minimum allowed is set it will not affect the rendered elements. They will render with the minimum allowed width for the corresponding `displayDensity`. This may lead to an unexpected behavior with horizontal virtualization and is therefore not supported.
+| Columns have a minimum allowed column width. Depending on the `--ig-size` CSS variable, they are as follows: <br/>"small": 56px <br/> "medium": 64px <br/> "large ": 80px | If width less than the minimum allowed is set it will not affect the rendered elements. They will render with the minimum allowed width for the corresponding `--ig-size`. This may lead to an unexpected behavior with horizontal virtualization and is therefore not supported.
 | Row height is not affected by the height of cells that are not currently rendered in view. | Because of virtualization a column with a custom template (that changes the cell height) that is not in the view will not affect the row height. The row height will be affected only while the related column is scrolled in the view.
 
 ## API References

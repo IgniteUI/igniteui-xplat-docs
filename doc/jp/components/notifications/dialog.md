@@ -35,6 +35,25 @@ import { defineComponents, IgcDialogComponent } from 'igniteui-webcomponents';
 defineComponents(IgcDialogComponent);
 ```
 
+<!-- React -->
+
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、{Platform} `Dialog` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrDialogModule, IgrDialog } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrDialogModule.register();
+```
+
+<!-- end: React -->
+
 {ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 <!-- Blazor -->
@@ -85,6 +104,27 @@ Dialog コンポーネントを表示する最も簡単な方法は、`Show` メ
 </igc-dialog>
 ```
 
+```tsx
+<IgrButton variant="contained" clicked={this.onDialogShow}>
+    <span>Show Dialog</span>
+</IgrButton>
+
+<IgrDialog ref={this.onDialogRef}>
+    <span>Dialog Message</span>
+</IgrDialog>
+
+public onDialogRef(dialog: IgrDialog) {
+    if (!dialog) { return; }
+    this.dialogRef = dialog;
+}
+
+public onDialogShow() {
+    if (this.dialogRef) {
+        this.dialogRef.show();
+    }
+}
+```
+
 Dialog コンポーネントは `Open` プロパティを提供します。これにより、アプリケーション シナリオに従ってその状態を構成できます。
 
 Dialog のタイトルを設定するには、`Title` プロパティを使用します。ただし、`title` スロットにコンテンツが指定されている場合は、プロパティよりも優先されます。
@@ -97,11 +137,11 @@ Dialog のタイトルを設定するには、`Title` プロパティを使用�
 
 `CloseOnOutsideClick` プロパティを使用して、ダイアログの外側をクリックしたときにダイアログを閉じるかどうかを構成します。デフォルト値は **false** です。
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 
 `sample="/notifications/dialog/closing-variations", height="400", alt="{Platform} Dialog Closing のバリエーション"`
 
-<!-- end: Angular, WebComponents -->
+<!-- end: Angular, WebComponents, React -->
 
 ### (フォーム)
 

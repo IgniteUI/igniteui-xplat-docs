@@ -58,7 +58,11 @@ _language: ja
 
 `sample="/charts/data-chart/radial-area-chart-styling", height="600", alt="{Platform} ラジアル エリア チャートのスタイル設定"`
 
+<div class="divider--half"></div>
 
+## {Platform} ラジアル チャートの設定
+
+さらに、ラベルはチャートの近くまたは広い位置に表示されるように設定できます。これは、`CategoryAngleAxis` の `LabelMode` プロパティで設定できます。
 
 <div class="divider--half"></div>
 

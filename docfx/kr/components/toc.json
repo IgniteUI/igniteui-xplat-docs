@@ -336,6 +336,11 @@
     "status": ""
   },
   {
+    "name": "Data Pie Chart",
+    "href": "charts/types/data-pie-chart.md",
+    "status": "NEW"
+  },
+  {
     "name": "Donut Chart",
     "href": "charts/types/donut-chart.md",
     "status": ""
@@ -421,7 +426,7 @@
   {
     "name": "Treemap",
     "href": "charts/types/treemap-chart.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
     "exclude": ["Blazor"],
@@ -822,12 +827,12 @@
   {
     "name": "Bullet Graph",
     "href": "bullet-graph.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
     "name": "Linear Gauge",
     "href": "linear-gauge.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
     "name": "Radial Gauge",

@@ -3,6 +3,7 @@
     "igc-accordion-module.ts",
     "igc-avatar-module.ts",
     "igc-badge-module.ts",
+    "igc-banner-module.ts",
     "igc-base-alert-like-module.ts",
     "igc-base-combo-box-like-module.ts",
     "igc-base-option-like-module.ts",
@@ -22,8 +23,10 @@
     "igc-circular-gradient-module.ts",
     "igc-circular-progress-module.ts",
     "igc-combo-module.ts",
+    "igc-date-picker-module.ts",
     "igc-date-time-input-module.ts",
     "igc-dialog-module.ts",
+    "igc-divider-module.ts",
     "igc-dock-manager-module.ts",
     "igc-dropdown-group-module.ts",
     "igc-dropdown-header-module.ts",
@@ -156,6 +159,19 @@
     "names":[{"platform": "WebComponents","fileName": "igc-active-step-changing-args-event-args.ts","mappedName": "IgcActiveStepChangingArgsEventArgs"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "IgcActiveStepChangingArgsDetail","mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "Banner",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "WebComponents","fileName": "igc-banner-component.ts","mappedName": "IgcBannerComponent"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "open"}], "originalName": "Open"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "show"}], "originalName": "Show"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "hide"}], "originalName": "Hide"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "toggle"}], "originalName": "Toggle"} ]
   },
   {
     "originalName": "BaseAlertLike",
@@ -347,6 +363,18 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "show"}], "originalName": "Show"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "title"}], "originalName": "Title"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "toggle"}], "originalName": "Toggle"} ]
+  },
+{
+    "originalName": "Divider",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "WebComponents","fileName": "igc-divider-component.ts","mappedName": "IgcDividerComponent"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "middle"}], "originalName": "Middle"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string", "mappedName": "type"}], "originalName": "Type"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean",  "mappedName": "vertical"}], "originalName": "Vertical"} ]
   },
   {
     "originalName": "ExpansionPanel",
@@ -817,6 +845,10 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "expandToItem"}], "originalName": "ExpandToItem"},
       {"names":[{"platform": "WebComponents", "mappedType": "TreeSelection","mappedName": "selection"}], "originalName": "Selection"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "expand"}], "originalName": "Expand"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "collapse"}], "originalName": "Collapse"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "select"}], "originalName": "Select"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "deselect"}], "originalName": "Deselect"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "singleBranchExpand"}], "originalName": "SingleBranchExpand"},
       {"names":[{"platform": "WebComponents", "mappedType": "SizableComponentSize","mappedName": "size"}], "originalName": "Size"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "toggleNodeOnClick"}], "originalName": "ToggleNodeOnClick"} ]
@@ -1526,6 +1558,26 @@
       {"names":[{"platform": "WebComponents", "mappedType": "Date","mappedName": "value"}], "originalName": "Value"},
       {"names":[{"platform": "WebComponents", "mappedType": "Date[]","mappedName": "values"}], "originalName": "Values"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "visibleMonths"}], "originalName": "VisibleMonths"} ]
+  },
+  {
+    "originalName": "DatePicker",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "WebComponents","fileName": "igc-date-picker-component.ts","mappedName": "IgcDatePickerComponent"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "Date","mappedName": "activeDate"}], "originalName": "ActiveDate"},
+      {"names":[{"platform": "WebComponents", "mappedType": "Date","mappedName": "min"}], "originalName": "Min"},
+      {"names":[{"platform": "WebComponents", "mappedType": "Date","mappedName": "max"}], "originalName": "Max"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string","mappedName": "inputFormat"}], "originalName": "InputFormat"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string","mappedName": "displayFormat"}], "originalName": "DisplayFormat"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string","mappedName": "locale"}], "originalName": "Locale"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number","mappedName": "visibleMonths"}], "originalName": "VisibleMonths"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean","mappedName": "showWeekNumbers"}], "originalName": "ShowWeekNumbers"},
+      {"names":[{"platform": "WebComponents", "mappedType": "DatePickerWeekStart","mappedName": "weekStart"}], "originalName": "WeekStart"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method","mappedName": "stepDown"}], "originalName": "StepDown"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method","mappedName": "stepUp"}], "originalName": "StepUp"} ]
   },
   {
     "originalName": "DateRangeDescriptor",
