@@ -119,6 +119,16 @@
     "status": "UPDATED"
   },
   {
+    "exclude": ["Angular"],
+    "name": "Interactivity",
+    "header": true,
+    "href": "interactivity/accessibility-compliance.md"
+  },
+  {
+    "name": "Accessibility Compliance",
+    "href": "interactivity/accessibility-compliance.md"
+  },
+  {
     "note": "THIS MAIN NODE FOR OLD XPLAT GRID",
     "exclude": ["Angular", "Blazor", "WebComponents", "React"],
     "name": "Grids & Lists",
@@ -176,11 +186,6 @@
         "exclude": ["Angular"],
         "name": "Conditional Styling",
         "href": "grids/grid/conditional-cell-styling.md"
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Display Density",
-        "href": "grids/grid/display-density.md"
       },
       {
         "exclude": ["Angular"],
@@ -330,6 +335,12 @@
       },
       {
         "exclude": ["Angular"],
+        "name": "Size",
+        "href": "grids/grid/size.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular"],
         "name": "Sizing",
         "href": "grids/grid/sizing.md"
       },
@@ -405,11 +416,6 @@
         "exclude": ["Angular"],
         "name": "Conditional Styling",
         "href": "grids/hierarchical-grid/conditional-cell-styling.md"
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Display Density",
-        "href": "grids/hierarchical-grid/display-density.md"
       },
       {
         "exclude": ["Angular"],
@@ -514,6 +520,12 @@
       },
       {
         "exclude": ["Angular"],
+        "name": "Size",
+        "href": "grids/hierarchical-grid/size.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular"],
         "name": "Sizing",
         "href": "grids/hierarchical-grid/sizing.md"
       },
@@ -523,7 +535,7 @@
         "href": "grids/hierarchical-grid/sorting.md"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "State Persistence",
         "href": "grids/hierarchical-grid/state-persistence.md"
       },
@@ -555,10 +567,10 @@
     ]
   },
   {
-    "exclude": ["Angular", "React" ],
+    "exclude": ["Angular"],
     "name": "Pivot Grid",
     "href": "grids/pivot-grid/overview.md",
-    "status": "",
+    "status": ["NEW_REACT"],
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
@@ -567,16 +579,16 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "State Persistence",
         "href": "grids/pivot-grid/state-persistence.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "WebComponents"],
         "name": "Features",
         "href": "grids/pivot-grid/features.md",
-        "status": ""
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular", "React", "Blazor"],
@@ -638,12 +650,6 @@
         "exclude": ["Angular"],
         "name": "Column Resizing",
         "href": "grids/tree-grid/column-resizing.md",
-        "status": ["NEW_REACT"]
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Display Density",
-        "href": "grids/tree-grid/display-density.md",
         "status": ["NEW_REACT"]
       },
       {
@@ -780,6 +786,12 @@
       },
       {
         "exclude": ["Angular"],
+        "name": "Size",
+        "href": "grids/tree-grid/size.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular"],
         "name": "Sizing",
         "href": "grids/tree-grid/sizing.md",
         "status": ["NEW_REACT"]
@@ -791,7 +803,7 @@
         "status": ["NEW_REACT"]
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "State Persistence",
         "href": "grids/tree-grid/state-persistence.md",
         "status": ""
@@ -1797,19 +1809,13 @@
     "href": "scheduling/calendar.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular"],
     "name": "Date Picker",
     "href": "scheduling/date-picker.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "WebComponents"],
-    "name": "Date Picker",
-    "href": "editors/date-picker.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Styling & Themes",
     "header": true
   },
@@ -2045,6 +2051,12 @@
     "exclude": ["Angular"],
     "name": "Multi-Column Combo Box",
     "href": "editors/multi-column-combobox.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "XDate Picker",
+    "href": "editors/xdate-picker.md",
     "status": ""
   }
 ]
