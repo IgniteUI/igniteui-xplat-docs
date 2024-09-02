@@ -101,6 +101,17 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 ```
 
 <!-- end:Blazor -->
+
+<!-- React -->
+
+```tsx
+const dimension: IgrPivotDimension = new IgrPivotDimension();
+dimension.memberName = "SellerName";
+dimension.enabled = true;
+dimension.sortDirection = SortingDirection.Asc;
+```
+<!-- end: React -->
+
 ## ディメンションのサイズ変更
 
 行のサイズは、列のサイズ変更と同様に、セルの右端にあるサイズ変更インジケーターを介してサイズ変更できます。
@@ -135,6 +146,18 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 ```
 
 <!-- end:Blazor -->
+
+
+<!-- React -->
+
+```tsx
+const dimension: IgrPivotDimension = new IgrPivotDimension();
+dimension.memberName = "SellerName";
+dimension.enabled = true;
+dimension.width = "400px";
+```
+<!-- end: React -->
+
 ## ディメンションの選択
 
 {PivotGridTitle} は、ベース グリッドと同じように有効になる単一選択をサポートします。例:
@@ -162,6 +185,13 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 </{PivotGridSelector}>
 ```
 
+<!--React -->
+```tsx
+<IgrPivotGrid data={pivotData} pivotConfiguration={pivotConfiguration} rowSelection={GridSelectionMode.Single}>
+</IgrPivotGrid>
+```
+<!-- end: React -->
+
 複数の行 / 列にまたがるグループを作成する複数の行または列のディメンションがある場合、選択は、選択されたグループに属するすべてのセルに適用されます。
 
 ## スーパー コンパクト モード
@@ -181,6 +211,13 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 ```razor
 <{PivotGridSelector} SuperCompactMode=true></{PivotGridSelector}>
 ```
+
+<!--React -->
+```tsx
+<IgrPivotGrid data={pivotData} pivotConfiguration={pivotConfiguration} superCompactMode={true}>
+</IgrPivotGrid>
+```
+<!-- end: React -->
 
 ## 追加の集計列
 

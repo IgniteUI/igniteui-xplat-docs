@@ -528,7 +528,7 @@
         "href": "grids/hierarchical-grid/sorting.md"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "状態の保持",
         "href": "grids/hierarchical-grid/state-persistence.md"
       },
@@ -560,10 +560,10 @@
     ]
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "ピボット グリッド",
     "href": "grids/pivot-grid/overview.md",
-    "status": "",
+    "status": ["NEW_REACT"],
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
@@ -572,16 +572,16 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "状態の保持",
         "href": "grids/pivot-grid/state-persistence.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "WebComponents"],
         "name": "機能",
         "href": "grids/pivot-grid/features.md",
-        "status": ""
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular", "React", "Blazor"],
@@ -796,7 +796,7 @@
         "status": ["NEW_REACT"]
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "状態の保持",
         "href": "grids/tree-grid/state-persistence.md",
         "status": ""
