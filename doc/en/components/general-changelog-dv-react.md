@@ -9,13 +9,13 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
-## **{PackageVerChanges-24-1-AUG}**
+## **{PackageVerChanges-24-1-SEP}**
 
 ### {PackageCommon}
 
-- New `Banner` component.
-- New `DatePicker` component.
-- New `Divider` component.
+- New [Banner](notifications/banner.md) component.
+- New [DatePicker](scheduling/date-picker.md) component.
+- New [Divider](layouts/divider.md) component.
 - Added support for native events to all components.
 - `Icon`
   - Added `setIconRef` method. This allows to register and replace icons by SVG files.

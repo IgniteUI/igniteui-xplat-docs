@@ -11,7 +11,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## {PackageGrids}
 
-### **{PackageVerChanges-24-1-AUG}**
+### **{PackageVerChanges-24-1-SEP}**
 
 - `PivotGrid`
   - Added `sortable` property for a `PivotDimension`.
