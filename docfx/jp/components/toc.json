@@ -1691,11 +1691,6 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "フォーム",
-    "href": "inputs/form.md"
-  },
-  {
-    "exclude": ["Angular"],
     "name": "アイコン",
     "href": "layouts/icon.md"
   },
