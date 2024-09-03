@@ -373,7 +373,8 @@
       {
         "exclude": ["Angular"],
         "name": "Customize Icons",
-        "href": "grids/grid/icons.md"
+        "href": "grids/grid/icons.md",
+        "status": "NEW"
       }
     ]
   },
