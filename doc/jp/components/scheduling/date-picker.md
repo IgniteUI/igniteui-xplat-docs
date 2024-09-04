@@ -236,7 +236,7 @@ DatePicker は `dialog` モードもサポートしています。
 ```razor
 <IgbDatePicker Mode="DatePickerMode.Dialog"></IgbDatePicker>
 ```
-`sample="/scheduling/date-picker/dialog-mode", height="500", alt="{Platform} Date Picker Dialog Mode Example"`
+`sample="/scheduling/date-picker/dialog-mode", height="500", alt="{Platform} Date Picker Dialog モードの例"`
 
 ### 表示および入力形式
 `InputFormat` および `DisplayFormat` は、ピッカーのエディターが指定された形式に従うように設定できるプロパティです。`InputFormat` はロケール ベースであるため、何も指定されていない場合、ピッカーはデフォルトでブラウザーで使用されるものになります。
@@ -303,7 +303,7 @@ DatePicker は `dialog` モードもサポートしています。
 フォームでは、コンポーネントの `Change` イベントを処理し、ラベルの値を更新できます。
 <!-- end: Blazor -->
 
-`sample="/scheduling/date-picker/form", height="500", alt="{Platform} Date Picker Input Form Example"`
+`sample="/scheduling/date-picker/form", height="500", alt="{Platform} Date Picker 入力フォームの例"`
 
 ### カレンダー固有の設定
 `DatePicker` は、Date Picker が公開するプロパティを通じて、カレンダーの設定の一部を変更できます。これらの一部には、ピッカーが展開されたときに複数のカレンダーを表示できる `VisibleMonths`、週の開始日を決定する `WeekStart`、年の各週の番号を表示する `ShowWeekNumbers` などが含まれます。
