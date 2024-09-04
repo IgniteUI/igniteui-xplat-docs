@@ -181,7 +181,7 @@ builder.Services.AddIgniteUIBlazor(
 
 次のサンプルは、トラックの塗りつぶしとつまみのパーツのスタイルを設定する方法を示しています。
 
-`sample="/inputs/slider/styling", height="120", alt="{Platform} Slider スタイル設定の例"`
+`sample="/inputs/slider/styling", height="250", alt="{Platform} Slider スタイル設定の例"`
 
 
 
