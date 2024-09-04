@@ -45,7 +45,7 @@ You will then need to import the `Banner`, its necessary CSS, and register its m
 import { IgrBannerModule, IgrBanner } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
-IgrButtonModule.register();
+IgrBannerModule.register();
 ```
 <!-- end: React -->
 
@@ -116,7 +116,7 @@ The `Banner` component allows templating of its content while still sticking as 
 
 ### Changing the banner message
 
-Configuring the message displayed in the banner is easy - just change the content you are passing to the <!-- WebComponents -->`igc-banner`<!-- end: WebComponents --><!-- React -->`IgrBanner`<!-- end: React --><!-- Blazor -->`IgbBanner`<!-- end: Blazor --> tag. The text will show up in the specified banner area and the banner will use its default template when displaying it. Below, we will change the content of our sample banner to be a bit more descriptive:
+Configuring the message displayed in the banner is easy - just change the content you are passing to the `{BannerSelector}` tag. The text will show up in the specified banner area and the banner will use its default template when displaying it. Below, we will change the content of our sample banner to be a bit more descriptive:
 
 ```html
 <igc-banner id="banner">
