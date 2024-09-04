@@ -231,7 +231,6 @@ function onColumnMovingEnd(grid: IgrGridBaseDirective, event: IgrColumnMovingEve
              FilterMode="FilterMode.ExcelStyleFilter"
              AutoGenerate=true
              Data=northwindEmployees
-             DisplayDensity="DisplayDensity.Compact"
              Moving="true"
              ColumnMovingEndScript='onColumnMovingEnd'>
     </{ComponentSelector}>
