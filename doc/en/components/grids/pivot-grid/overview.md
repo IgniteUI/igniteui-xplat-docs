@@ -49,6 +49,13 @@ The {Platform} {PivotGridName} can be configured via the `PivotConfiguration` pr
 </IgbPivotGrid>
 ```
 
+<!--React -->
+```tsx
+<IgrPivotGrid data={pivotData} pivotConfiguration={pivotConfiguration}>
+</IgrPivotGrid>
+```
+<!-- end: React -->
+
 It is defined by three main dimensions: **rows**, **columns** and **values**. The **rows** and **columns** define the grouped structure that is displayed in the rows and columns of the grid. The **values** define the aggregation fields and the aggregation that will be used to calculate and display the related values of the groups.
 
 A filter can also be defined via the **filters** configuration property. It can be used for fields that you do not want to add as a dimension or a value but would like to filter their related member values via the UI.
@@ -56,15 +63,28 @@ A filter can also be defined via the **filters** configuration property. It can 
 ### Dimensions Configuration
 
 Each basic dimension configuration requires a `MemberName` that matches a field from the provided **data**.
-<!-- Angular -->
-Or a `MemberFunction` that extracts a value from the record in case of complex objects or other custom scenarios.
-<!-- Angular -->
+
 
 Multiple sibling dimensions can be defined, which creates a more complex nested group in the related row or column dimension area.
 
 The dimensions can be reordered or moved from one area to another via their corresponding chips using drag & drop.
 
 A dimension can also describe an expandable hierarchy via the `ChildLevel` property, for example:
+
+
+<!-- React -->
+
+```tsx
+const childDimension = new IgrPivotDimension();
+childDimension.memberName = "ProductCategory";
+const dimension: IgrPivotDimension = new IgrPivotDimension();
+dimension.memberName = "AllProducts";
+dimension.enabled = true;
+dimension.childLevel = childDimension;
+```
+<!-- end: React -->
+
+<!-- WebComponents -->
 ```typescript
    {
             memberFunction: () => 'All',
@@ -77,7 +97,9 @@ A dimension can also describe an expandable hierarchy via the `ChildLevel` prope
             }
     }
 ```
+<!-- end: WebComponents -->
 
+<!-- Blazor -->
 ```razor
 @code {
     var pivotConfiguration = new IgbPivotConfiguration();
@@ -90,6 +112,8 @@ A dimension can also describe an expandable hierarchy via the `ChildLevel` prope
         });
 }
 ```
+<!-- end: Blazor -->
+
 In this case the dimension renders an expander in the related section of the grid (row or column) and allows the children to be expanded or collapsed as part of the hierarchy. By default the row dimensions are initially expanded. This behavior can be controlled with the `DefaultExpandState` property of the Pivot Grid.
 
 ### Predefined Dimensions
@@ -104,6 +128,22 @@ As part of the Pivot Grid some additional predefined dimensions are exposed for 
     - Full Date
 
 It can be set for rows or columns, for example:
+
+<!-- React -->
+```ts
+const pivotConfiguration = new IgrPivotConfiguration();
+
+const dateDimension = new IgrPivotDateDimension();
+dateDimension.memberName = "Date";
+dateDimension.enabled = true;
+const baseDimension = new IgrPivotDimension();
+baseDimension.memberName = "Date";
+baseDimension.enabled = true;
+
+dateDimension.baseDimension = baseDimension;
+pivotConfiguration1.columns = [dateDimension];
+```
+<!-- end: React -->
 
 <!-- Angular -->
 ```typescript
@@ -151,6 +191,18 @@ It also allows for further customization via the second option parameter in orde
 ```
 <!-- end: Angular -->
 
+
+<!-- React -->
+```tsx
+const options: IgrPivotDateDimensionOptions = {} as IgrPivotDateDimensionOptions;
+options.years = true;
+options.months = false;
+options.quarters = true;
+options.fullDate = false;
+dateDimension.options = options;
+```
+<!-- end: React -->
+
 <!-- WebComponents -->
 ```typescript
  new IgcPivotDateDimension({ memberName: 'Date', enabled: true }, {
@@ -197,6 +249,23 @@ A value configuration requires a **member** that matches a field from the provid
     Contains the following aggregation functions: `COUNT`.
 
 The current aggregation function can be changed at runtime using the value chip's drop-down. By default, it displays a list of available aggregations based on the field's data type. A custom list of aggregations can also be set via the `AggregateList` property, for example:
+
+<!-- React -->
+```typescript
+const pivotConfiguration = new IgrPivotConfiguration();
+const value = new IgrPivotValue();
+value.member = "AmountofSale";
+value.displayName = "Amount of Sale";
+value.enabled = true;
+const aggregator = new IgrPivotAggregator();
+aggregator.key = "SUM";
+aggregator.label = "Sum of Sale";
+aggregator.aggregatorName = PivotAggregationType.SUM;
+value.aggregate = aggregator;
+pivotConfiguration.values = [value];
+value.aggregateList = [aggregator];
+```
+<!-- end: React -->
 
 <!-- Angular -->
 ```typescript
@@ -309,6 +378,50 @@ The `Enable` property controls if a given `PivotDimension` or `PivotValue` is ac
 ### Full Configuration Code
 
 Let's take a look at a basic pivot configuration:
+
+<!-- React -->
+
+```tsx
+const pivotConfiguration1: IgrPivotConfiguration = new IgrPivotConfiguration();
+
+const igrPivotDateDimension1 = new IgrPivotDimension();
+igrPivotDateDimension1.memberName = "Date";
+igrPivotDateDimension1.enabled = true;
+
+pivotConfiguration1.columns = [igrPivotDateDimension1];
+const igrPivotDimension2: IgrPivotDimension = new IgrPivotDimension();
+igrPivotDimension2.memberName = "ProductName";
+igrPivotDimension2.enabled = true;
+
+const igrPivotDimension3: IgrPivotDimension = new IgrPivotDimension();
+igrPivotDimension3.memberName = "SellerCity";
+igrPivotDimension3.enabled = true;
+
+pivotConfiguration1.rows = [igrPivotDimension2,igrPivotDimension3];
+const igrPivotDimension4: IgrPivotDimension = new IgrPivotDimension();
+igrPivotDimension4.memberName = "SellerName";
+igrPivotDimension4.enabled = true;
+
+pivotConfiguration1.filters = [igrPivotDimension4];
+const igrPivotValue1: IgrPivotValue = new IgrPivotValue();
+igrPivotValue1.member = "ProductUnitPrice";
+igrPivotValue1.displayName = "Amount of Sale";
+igrPivotValue1.dataType = GridColumnDataType.Currency;
+igrPivotValue1.enabled = true;
+const igrPivotAggregator1: IgrPivotAggregator = new IgrPivotAggregator();
+igrPivotAggregator1.key = "SUM";
+igrPivotAggregator1.label = "Sum of Sale";
+igrPivotAggregator1.aggregatorName = PivotAggregationType.SUM;
+
+igrPivotValue1.aggregate = igrPivotAggregator1;
+const igrPivotAggregator2: IgrPivotAggregator = new IgrPivotAggregator();
+igrPivotAggregator2.key = "SUM";
+igrPivotAggregator2.label = "Sum of Sale";
+igrPivotAggregator2.aggregatorName = PivotAggregationType.SUM;
+pivotConfiguration1.values = [igrPivotValue1];
+```
+
+<!-- end: React -->
 
 <!-- Angular -->
 ```typescript

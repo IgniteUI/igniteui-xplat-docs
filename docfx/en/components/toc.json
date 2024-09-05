@@ -369,6 +369,12 @@
         "exclude": ["Angular"],
         "name": "Theming",
         "href": "grids/theming.md"
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "Customize Icons",
+        "href": "grids/grid/icons.md",
+        "status": "NEW"
       }
     ]
   },
@@ -530,7 +536,7 @@
         "href": "grids/hierarchical-grid/sorting.md"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "State Persistence",
         "href": "grids/hierarchical-grid/state-persistence.md"
       },
@@ -562,10 +568,10 @@
     ]
   },
   {
-    "exclude": ["Angular", "React" ],
+    "exclude": ["Angular"],
     "name": "Pivot Grid",
     "href": "grids/pivot-grid/overview.md",
-    "status": "",
+    "status": ["NEW_REACT"],
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
@@ -574,16 +580,16 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "State Persistence",
         "href": "grids/pivot-grid/state-persistence.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "WebComponents"],
         "name": "Features",
         "href": "grids/pivot-grid/features.md",
-        "status": ""
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular", "React", "Blazor"],
@@ -798,7 +804,7 @@
         "status": ["NEW_REACT"]
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "State Persistence",
         "href": "grids/tree-grid/state-persistence.md",
         "status": ""
@@ -1693,11 +1699,6 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Form",
-    "href": "inputs/form.md"
-  },
-  {
-    "exclude": ["Angular"],
     "name": "Icon",
     "href": "layouts/icon.md"
   },
@@ -1804,19 +1805,13 @@
     "href": "scheduling/calendar.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular"],
     "name": "Date Picker",
     "href": "scheduling/date-picker.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "WebComponents"],
-    "name": "Date Picker",
-    "href": "editors/date-picker.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Styling & Themes",
     "header": true
   },
@@ -2052,6 +2047,12 @@
     "exclude": ["Angular"],
     "name": "Multi-Column Combo Box",
     "href": "editors/multi-column-combobox.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "XDate Picker",
+    "href": "editors/xdate-picker.md",
     "status": ""
   }
 ]

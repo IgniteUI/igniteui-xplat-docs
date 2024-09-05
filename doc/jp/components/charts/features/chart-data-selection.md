@@ -67,6 +67,20 @@ _language: ja
 
 `sample="/charts/data-chart/radial-column-chart-selection", height="450", alt="{Platform} ラジアル縦棒チャートの複数モード選択の例"`
 
+## プログラムによる選択
+
+チャートの選択項目は、起動時や実行時にチャートの選択項目を表示するようにコードで設定することもできます。これは、`CategoryChart` の `SelectedSeriesCollection` に項目を追加することで実現できます。`ChartSelection` オブジェクトの `Matcher` プロパティを使用すると、「マッチャー」に基づいてシリーズを選択できます。これはチャートから実際のシリーズにアクセスできない場合に最適です。データ ソースに含まれるプロパティがわかっていれば、シリーズが使用される `ValueMemberPath` を使用できます。 
+
+マッチャーは、`XamDataChart` のように実際のシリーズにアクセスできない場合、`CategoryChart` などのチャートで使用するのに最適です。この場合、データ ソースに含まれるプロパティがわかっていれば、シリーズに含まれる ValueMemberPaths を推測できます。たとえば、データ ソースに Nuclear、Coal、Oil、Solar という数値プロパティがある場合、これらのプロパティごとにシリーズが作成されていることがわかります。Solar 値にバインドされたシリーズを強調表示する場合は、次のプロパティが設定されたマッチャーを使用して、ChartSelection オブジェクトを `SelectedSeriesItems` コレクションに追加できます。
+   
+たとえば、データ ソースに Nuclear、Coal、Oil、Solar という数値プロパティがある場合、これらのプロパティごとにシリーズが作成されていることがわかります。Solar 値にバインドされたシリーズを選択する場合は、次のプロパティが設定されたマッチャーを使用して、ChartSelection オブジェクトを SelectedSeriesItems コレクションに追加できます。
+
+<!-- Blazor -->
+
+ `sample="/charts/category-chart/selection-matcher", height="500", alt="{Platform} 選択マッチャー"`
+
+<!-- end: Blazor -->
+
 ## API リファレンス
 
 以下は上記のセクションで説明した API メンバーのリストです。
