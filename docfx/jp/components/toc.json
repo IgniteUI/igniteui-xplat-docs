@@ -367,6 +367,12 @@
         "exclude": ["Angular"],
         "name": "テーマ設定",
         "href": "grids/theming.md"
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "アイコンのカスタマイズ",
+        "href": "grids/grid/icons.md",
+        "status": "NEW"
       }
     ]
   },
@@ -1797,19 +1803,13 @@
     "href": "scheduling/calendar.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular"],
     "name": "日付ピッカー",
     "href": "scheduling/date-picker.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "WebComponents"],
-    "name": "日付ピッカー",
-    "href": "editors/date-picker.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "スタイル設定およびとテーマ",
     "header": true
   },
@@ -2045,6 +2045,12 @@
     "exclude": ["Angular"],
     "name": "複数列コンボ ボックス",
     "href": "editors/multi-column-combobox.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "XDate ピッカー",
+    "href": "editors/xdate-picker.md",
     "status": ""
   }
 ]
