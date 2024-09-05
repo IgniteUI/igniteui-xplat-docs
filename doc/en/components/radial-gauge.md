@@ -394,7 +394,7 @@ Each of these labels for the needle have various styling attributes you can appl
 
 ## Title & Subtitle
 
-`TitleText` and `SubtitleText` properties are available and can both be used to display custom text for the needle. In addition, `TitleDisplaysValue` and `SubtitleDisplaysValue` will let you replace the custom text with the needle's value. So you can occupy custom text for the title but show the value via the subtitle and vice versa.
+`TitleText` and `SubtitleText` properties are available and can both be used to display custom text for the needle. Alternatively, `TitleDisplaysValue` and `SubtitleDisplaysValue`, when set to true, will let display the needle's value and override `TitleText` and `SubtitleText`. So you can occupy custom text for the title but show the value via the subtitle and vice versa.
 
 If the highlight needle is shown, as explained below, then custom text can be shown via  `HighlightLabelText`, otherwise `HighlightLabelDisplaysValue` can be enabled and display it's value.
 
