@@ -648,7 +648,7 @@ Ignite UI Web Components の初期リリース
 - [Calendar](scheduling/calendar.md) コンポーネント
 - [Card](layouts/card.md) コンポーネント
 - [Checkbox](inputs/checkbox.md) コンポーネント
-- [Form](inputs/form.md) コンポーネント
+- Form コンポーネント
 - [Icon](layouts/icon.md) コンポーネント
 - [IconB utton](inputs/icon-button.md) コンポーネント
 - [Input](inputs/input.md) コンポーネント
