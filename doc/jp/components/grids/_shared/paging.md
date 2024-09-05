@@ -25,9 +25,15 @@ _language: ja
 
 <!-- end: Angular -->
 
+```css
+.gridSize {
+    --ig-size: var(--ig-size-small);
+}
+```
+
 <!-- Angular -->
 ```html
-<{ComponentSelector} #grid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
+<{ComponentSelector} #grid class="gridSize" [data]="data" [height]="'500px'" [width]="'100%'">
     <igx-paginator [perPage]="10">
     </igx-paginator>
 </{ComponentSelector}>
@@ -35,13 +41,13 @@ _language: ja
 <!-- end: Angular -->
 
 ```razor
-<{ComponentSelector} @ref=grid Width="100%" Height="500px" Data=Data DisplayDensity="DisplayDensity.Cosy">
+<{ComponentSelector} @ref=grid Class="gridSize" Width="100%" Height="500px" Data=Data>
     <IgbPaginator PerPage="10"></IgbPaginator>
 </{ComponentSelector}>
 ```
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid" height="500px" width="100%" display-density="Cosy">
+<{ComponentSelector} id="grid" class="gridSize" height="500px" width="100%" >
     <igc-paginator per-page="10">
     </igc-paginator>
 </{ComponentSelector}>
@@ -50,7 +56,7 @@ _language: ja
 
 <!-- React -->
 ```tsx
-<{ComponentSelector} height="500px" width="100%" displayDensity="cosy">
+<{ComponentSelector} className="gridSize" height="500px" width="100%">
     <IgrPaginator key="paginator" perPage="10">
     </IgrPaginator>
 </{ComponentSelector}>
@@ -94,24 +100,24 @@ _language: ja
 
 <!-- Angular -->
 ```html
-<{ComponentSelector} #grid [data]="data">
+<{ComponentSelector} #grid [data]="data" className="gridSize">
     <igx-paginator #paginator [(page)]="grid.page" [totalRecords]="grid.totalRecords" [(perPage)]="10"
-            [selectOptions]="selectOptions" [displayDensity]="grid.displayDensity">
+            [selectOptions]="selectOptions">
     </igx-paginator>
 </{ComponentSelector}>
 ```
 <!-- end: Angular -->
 
 ```razor
-<{ComponentSelector} @ref=grid Data=Data DisplayDensity="DisplayDensity.Compact">
-    <IgbPaginator Page="grid.Page" TotalRecords="grid.TotalRecords" PerPage="10" DisplayDensity="grid.DisplayDensity">
+<{ComponentSelector} @ref=grid Data=Data className="gridSize">
+    <IgbPaginator Page="grid.Page" TotalRecords="grid.TotalRecords" PerPage="10">
     </IgbPaginator>
 </{ComponentSelector}>
 ```
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid">
+<{ComponentSelector} id="grid" className="gridSize">
     <igc-paginator id="paginator" per-page="10">
     </igc-paginator>
 </{ComponentSelector}>
@@ -126,7 +132,6 @@ constructor() {
     paginator.page = grid.page;
     paginator.totalRecords = grid.totalRecords;
     paginator.selectOptions = selectOptions;
-    paginator.displayDensity = grid.displayDensity;
 }
 ```
 <!-- end: WebComponents -->
@@ -134,8 +139,8 @@ constructor() {
 ```tsx
 const selectOptions = [5, 15, 20, 50];
 
-<{ComponentSelector}>
-    <IgrPaginator key="paginator" perPage={10} page={1} selectOptions={selectOptions} displayDensity="cosy">
+<{ComponentSelector} className="gridSize">
+    <IgrPaginator key="paginator" perPage={10} page={1} selectOptions={selectOptions}>
     </IgrPaginator>
 </{ComponentSelector}>
 ```
