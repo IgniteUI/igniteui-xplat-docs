@@ -15,7 +15,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 * [Ignite UI for Angular CHANGELOG.md at Github](https://github.com/IgniteUI/igniteui-angular/blob/master)
 
-## **{PackageVerChanges-24-1-AUG}**
+## **{PackageVerChanges-24-1-SEP}**
 
 - [Data Pie Chart](charts/types/data-pie-chart.md) - The `DataPieChart` is a new component that renders a pie chart. This component works similarly to the `CategoryChart`, in that it will automatically detect the properties on your underlying data model while allowing selection, highlighting, animation and legend support via the ItemLegend component.
 
