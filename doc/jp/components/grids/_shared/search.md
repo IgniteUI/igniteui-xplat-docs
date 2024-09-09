@@ -1023,7 +1023,7 @@ useEffect(() => {
 
 <!-- ComponentStart: TreeGrid -->
 
-`Input` 内のすべてのコンポーネントをラップします。左側で検索と 削除/クリア アイコンを切り替えます (検索入力が空かどうかに基づきます)。中央に入力を配置します。更に削除アイコンがクリックされたときに `SearchText` を更新し、`{ComponentName}` の `ClearSearch` メソッドを呼び出して強調表示をクリアします。
+`Input` 内のすべてのコンポーネントをラップします。左側で検索と 削除/クリア アイコンを切り替えます (検索入力が空かどうかに基づきます)。中央に入力を配置します。更に削除アイコンがクリックされたときに `SearchText` を更新し、`{ComponentName}` の `ClearSearch` メソッドを呼び出してハイライト表示をクリアします。
 
 ```html
 <igc-input id="searchBox" name="searchBox">
