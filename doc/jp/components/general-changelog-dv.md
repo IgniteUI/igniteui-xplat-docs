@@ -2,7 +2,7 @@
 title: {Platform} 新機能 | {ProductName} | インフラジスティックス
 _description: {ProductName} の新機能について学んでください。
 _keywords: Changelog, What's New, {ProductName}, Infragistics, 変更ログ, 新機能, インフラジスティックス
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "Toolbar", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "XamRadialGauge", "XamRadialChart", "Toolbar"]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "Toolbar", "XamGeographicMap", "DatePicker", "DataPieChart", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "XamRadialGauge", "XamRadialChart", "Toolbar"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -14,7 +14,25 @@ _language: ja
 > このトピックでは、{PackageAngularComponents} パッケージに含まれていないコンポーネントの変更についてのみ説明します。
 > igniteui-angular コンポーネントに固有の変更については CHANGELOG.MD を参照してください。
 
-* [Ignite UI for Angular 変更ログ](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)
+* [Ignite UI for Angular 変更ログ (GitHub)](https://github.com/IgniteUI/igniteui-angular/blob/master)
+
+## **{PackageVerChanges-24-1-SEP}**
+
+- [データ円チャート](charts/types/data-pie-chart.md) - `DataPieChart` は円ャートを表示する新しいコンポーネントです。このコンポーネントは、`CategoryChart` と同様に動作し、基になるデータ モデルのプロパティを自動的に検出しながら、ItemLegend コンポーネントを介して選択、強調表示、アニメーション、凡例のサポートを可能にします。
+
+- [比例カテゴリ角度軸](charts/types/radial-chart.md) - `XamDataChart` のラジアル円シリーズの新しい軸により、データ チャートのすべての追加機能を使用してロバスト可能な視覚化をする円チャートの作成が可能になります。
+
+- `Toolbar` 
+
+    - 新しい ToolActionCheckboxList
+        選択用のチェックボックスを備えた項目のコレクションを表示する新しい CheckboxList ToolAction。ToolAction CheckboxList 内のグリッドの高さは 5 項目まで大きくなり、その後スクロールバーが表示されます。
+
+    - 新しいフィルタリングのサポート
+
+    - 軸フィールドの変更
+        CategoryChart をターゲットにする場合のツールバーの新しいデフォルトの IconMenu。
+        ラベル フィールドは X 軸にマップされ、値フィールドは Y 軸にマップされます。
+        ターゲット チャートは、行われた変更にリアルタイムで反応します。チャートに ItemsSource が設定されていない場合、IconMenu は非表示になります。
 
 ## **{PackageVerChanges-24-1-JUN}**
 
@@ -26,8 +44,6 @@ _language: ja
 
 - [チャートの選択](charts/features/chart-data-selection.md) - 新しいシリーズ選択のスタイル設定。これは、`CategoryChart` および `XamDataChart` のすべてのカテゴリ、財務、およびラジアル シリーズに広く採用されています。シリーズはクリックして異なる色で表示したり、明るくしたり、薄くしたり、フォーカスのアウトラインを表示したりできます。個々のシリーズまたはデータ項目全体を通じて影響を受ける項目を管理します。
 複数のシリーズとマーカーがサポートされています。特定のデータ項目の値間のさまざまな相違点や類似点を示すのに役立ちます。また、`SelectedSeriesItemsChanged` イベントと `SelectedSeriesItems` は、選択内容に基づいたデータ分析を行うポップアップやその他の画面など、アプリケーション内で実行できるその他のアクションを取り巻く堅牢なビジネス要件を構築するための追加の支援として利用できます。 
-
-- [比例カテゴリ角度軸](charts/types/radial-chart.md) - `XamDataChart` のラジアル円シリーズの新しい軸により、データ チャートのすべての追加機能を使用してロバスト可能な視覚化をする円チャートの作成が可能になります。
 
 - [ツリーマップのハイライト表示](charts/types/treemap-chart.md#{PlatformLower}-リーマップのハイライト表示) - ツリー マップの項目のマウスオーバーによるハイライト表示を構成できる `HighlightingMode` プロパティが公開されました。このプロパティには 2 つのオプションがあります: `Brighten` では、マウスを置いた項目にのみハイライト表示が適用され、`FadeOthers` では、マウスホバーした項目のハイライト表示はそのままで、それ以外はすべてフェードアウトします。このハイライト表示はアニメーション化されており、`HighlightingTransitionDuration` プロパティを使用して制御できます。
 
