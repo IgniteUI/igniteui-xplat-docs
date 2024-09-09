@@ -1699,11 +1699,6 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Form",
-    "href": "inputs/form.md"
-  },
-  {
-    "exclude": ["Angular"],
     "name": "Icon",
     "href": "layouts/icon.md"
   },
