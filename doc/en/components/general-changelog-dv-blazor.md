@@ -10,6 +10,84 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## **{PackageVerChanges-24-1-SEP}**
+
+### General
+
+- New [Banner](notifications/banner.md) component.
+- New [DatePicker](scheduling/date-picker.md) component.
+- New `Divider` component.
+- `Icon`
+  - Added `SetIconRef` method. This allows to register and replace icons by SVG files.
+  - All components now use icons by reference internally so that it's easy to replace them without explicitly providing custom templates.
+- `Combo`, `DatePicker`, `Dialog`, `Dropdown`,  `ExpansionPanel`, `NavDrawer`, `Toast`, `Snackbar`, **IgbSelectComponent**
+  - Toggle methods `Show`, `Hide`, `Toggle` methods return **true** now on success. Otherwise **false**.
+- `RadioGroup`
+  - Added `Name` and `Value` properties. `Value` also supports two-way binding.
+
+**BREAKING CHANGES**:
+
+- Renamed old **IgbDatePicker** to **IgbXDatePicker**.
+- Removed `Form` component. Use native form instead.
+- Removed `size` property in favor of the `--ig-size` CSS custom property for the following components:
+  - `Avatar`, `Button`,`IconButton`, `Calendar`, `Chip`, `Dropdown`, `Icon`, `Input`, `List`, `Rating`, `Snackbar`, `Tabs`, `Tree`
+- `Badge`, `Chip`, `LinearProgress`, `CircularProgress`
+  - Renamed `Variant` property type to `StyleVariant`.
+- `Calendar`
+  - Renamed `WeekStart` property type to `WeekDays`.
+- `Checkbox`, `Switch`
+  - Changed `Change` event argument type from `ComponentBoolValueChangedEventArgs` to `CheckboxChangeEventArgs`.
+- `Combo`
+  - The `IgbCombo` is now of generic type and the `Value` type is now of type `T[]`. This means that either you need to specify `T` or it will be inferred by the assigned `Value` type.
+  - Removed `PositionStrategy`, `Flip`, `SameWidth` properties.
+- **IgbSelectComponent**
+  - Removed `PositionStrategy`, `Flip`, `SameWidth` properties.
+- `DateTimeInput`
+  - Removed `MaxValue` and `MinValue` properties. Use `Max` and `Min` instead.
+- `Dropdown`
+  - Removed `PositionStrategy` property.
+- `Input`
+  - Removed old named `Maxlength` and `Minlength` properties. Use `MaxLength` and `MinLength`.
+  - Removed old named `Readonly` and `Inputmode` properties. Use `ReadOnly` and `InputMode`.
+  - Changed `InputMode` type also to `string`.
+- `Radio`
+  - Changed `Change` event argument type from `ComponentBoolValueChangedEventArgs` to `RadioChangeEventArgs`.
+- `RangeSlider`
+  - Removed `AriaThumbLower` and `AriaThumbUpper` properties. Use `ThumbLabelLower` and `ThumbLabelUpper` instead.
+- `Rating`
+  - Renamed `Readonly` property to `ReadOnly`.
+
+### {PackageGrids}
+
+- `All Grids`
+ - Added `GetColumns` / `GetColumnsAsync` methods, which return the grid columns collection.
+ - Added new `RowClick` event.
+- `PivotGrid`
+  - Added `Sortable` property for a `PivotDimension`.
+  - Added horizontal layout. Can be enabled inside the new `PivotUI` property as `RowLayout` `Horizontal`.
+  - Added row dimension summaries for horizontal layout only. Can be enabled for each `PivotDimension` by setting `HorizontalSummary` to **true**.
+  - Added `HorizontalSummariesPosition` property to the `PivotUI`, configuring horizontal summaries position.
+  - Added row headers for the row dimensions. Can be enabled inside the new `PivotUI` property as `ShowHeaders` **true**.
+  - Keyboard navigation now can move in to row headers back and forth from any row dimension headers or column headers.
+  - Added keyboard interactions for row dimension collapse using `Alt + Arrows` and row headers sorting using `Ctrl + Arrow Up/Down`.
+
+**BREAKING CHANGES**:
+- `All Grids`, `RowIsland`
+  - Removed `DisplayDensity` deprecated property.
+  - Renamed `Columns`, `ActualColumns`, `ContentColumns` properties to `ColumnList`, `ActualColumnList` and `ContentColumnList`. Recommended to use the new `GetColumns` method instead.
+  - Renamed `RowDelete` and `RowAdd` event argument type to `RowDataCancelableEventArgs`.
+  - Renamed `ContextMenu` event argument type to `GridContextMenuEventArgs`.
+  - Removed `GridEditEventArgs`,  `GridEditDoneEventArgs`, `PinRowEventArgs` events `RowID` and `PrimaryKey` properties. Use `RowKey` instead.
+- `PivotGrid`
+  - removed `ShowPivotConfigurationUI` property. Use `PivotUI` and set inside it the new `ShowConfiguration` option.
+- `Column`
+  - Removed `Movable` property. Use Grid's `Moving` property now.
+  - Removed `ColumnChildren` property. Use `ChildColumns` instead.
+- `ColumnGroup`
+  - Removed `Children` property. Use `ChildColumns` instead.
+- `Paginator`
+  - Removed `IsFirstPageDisabled` and `IsLastPageDisabled` properties. Use `IsFirstPage` and `IsLastPage` instead.
+
 ## **{PackageVerChanges-24-1-JUN}**
 
 ### General
@@ -27,7 +105,7 @@ The type of Values from `PivotConfiguration` option is now array of IgbPivotValu
 
 * [Data Legend Grouping](charts/features/chart-data-legend.md#{PlatformLower}-data-legend-grouping) & [Data Tooltip Grouping](charts/features/chart-data-tooltip.md#{PlatformLower}-data-tooltip-grouping-for-data-chart) - New grouping feature added. The property `GroupRowVisible` toggles grouping with each series opting in can assign group text via the `DataLegendGroup` property. If the same value is applied to more than one series then they will appear grouped. Useful for large datasets that need to be categorized and organized for all users.
 
-- [Chart Selection](charts/features/chart-data-selection.md) - New series selection styling. This is adopted broadly across all category, financial and radial series for `CategoryChart` and `XamDataChart`. Series can be clicked and shown a different color, brightened or faded, and focus outlines. Manage which items are effected through individual series or entire data item. Multiple series and markers are supported. Useful for illustrating various differences or similarities between values of a partcular dataitem. Also  `SelectedSeriesItemsChanged` event and `SelectedSeriesItems` are available for additional help to build out robust business requirements surrouding other actions that can take place within an application such as a popup or other screen with data analysis based on the selection.  
+- [Chart Selection](charts/features/chart-data-selection.md) - New series selection styling. This is adopted broadly across all category, financial and radial series for `CategoryChart` and `XamDataChart`. Series can be clicked and shown a different color, brightened or faded, and focus outlines. Manage which items are effected through individual series or entire data item. Multiple series and markers are supported. Useful for illustrating various differences or similarities between values of a particular dataitem. Also  `SelectedSeriesItemsChanged` event and `SelectedSeriesItems` are available for additional help to build out robust business requirements surrounding other actions that can take place within an application such as a popup or other screen with data analysis based on the selection.  
 
 - [Proportional Category Angle Axis](charts/types/radial-chart.md) - New axes for the Radial Pie Series in the `XamDataChart`, to enable creating pie charts in the allowing robust visualizations using all the added power of the data chart.
 
