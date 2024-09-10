@@ -18,6 +18,7 @@ _language: ja
 - `DockManager` - `SplitPane` の `IsMaximized` は非推奨です。分割ペイン レベルで isMaximized を true に設定しても、分割ペインはコンテナーとしてのみ機能し、最大化されて表示される実際のコンテンツがないため、実際の効果はありません。代わりに、`TabGroupPane` および/または `ContentPane` の `IsMaximized` プロパティを使用してください。
 
 ### {PackageGrids}
+
 - `DisplayDensity` は非推奨となり、代わりに `--ig-size` CSS カスタム プロパティが使用されるようになりました。詳細については、[グリッド サイズ](grids/grid/size.md) トピックを参照してください。
 
 - `PivotGrid` - コンポーネントの構成が正しく適用できるようになりました。

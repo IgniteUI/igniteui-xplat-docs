@@ -636,7 +636,8 @@
       {
         "exclude": ["Angular", "React"],
         "name": "Column Pinning",
-        "href": "grids/tree-grid/column-pinning.md"
+        "href": "grids/tree-grid/column-pinning.md",
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular"],
@@ -762,6 +763,7 @@
         "name": "Size",
         "href": "grids/tree-grid/size.md",
         "status": "NEW"
+
       },
       {
         "exclude": ["Angular"],

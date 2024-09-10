@@ -95,7 +95,9 @@ All notable changes for each version of {ProductName} are documented on this pag
 - `DockManager` - `SplitPane` `IsMaximized` is deprecated. Having isMaximized set to true on a split pane level has no real effect as split panes serve as containers only, meaning they have no actual content to be shown maximized. Use the `IsMaximized` property of `TabGroupPane` and/or `ContentPane` instead.
 
 ### {PackageGrids}
+
 - `DisplayDensity` deprecated in favor of the `--ig-size` CSS custom property. Check out the [Grid Size](grids/grid/size.md) topic for more.
+
 
 - `PivotGrid` - Configuration of the component can now be applied correctly.
 ### {PackageCharts} (Charts)
