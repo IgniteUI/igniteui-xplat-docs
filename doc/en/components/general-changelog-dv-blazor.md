@@ -16,7 +16,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 - New [Banner](notifications/banner.md) component.
 - New [DatePicker](scheduling/date-picker.md) component.
-- New [Divider](layouts/divider.md) component.
+- New `Divider` component.
 - `Icon`
   - Added `SetIconRef` method. This allows to register and replace icons by SVG files.
   - All components now use icons by reference internally so that it's easy to replace them without explicitly providing custom templates.
