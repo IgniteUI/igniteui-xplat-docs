@@ -24,6 +24,8 @@ All notable changes for each version of {ProductName} are documented on this pag
   - Toggle methods `show`, `hide`, `toggle` methods return **true** now on success, otherwise **false**.
 - IgrButton, `IconButton`, `Checkbox`, `Switch`, `Combo`, `DateTimeInput`, `Input`, `MaskInput`, `Radio`, IgrSelect, `Textarea`
   - Deprecated custom `focus` and `blur` events. Use the native `onFocus` and `onBlur` events instead
+- `RadioGroup`
+  - Added `Name` and `Value` properties.
 
 **BREAKING CHANGES**:
 
@@ -41,12 +43,10 @@ All notable changes for each version of {ProductName} are documented on this pag
   - Removed `positionStrategy`, `flip`, `sameWidth` properties.
 - `DateTimeInput`
   - Removed `maxValue` and `minValue` properties. Used `max` and `min` instead.
-- `Dialog`
-  - Renamed `closeOnEscape` property to `keepOpenOnEscape`.
 - `Dropdown`
   - Removed `positionStrategy` property.
 - `Input`
-  - Removed `maxlength` and `minlength` properties. Use the `max` and `min` properties instead.
+  - Renamed `maxlength` and `minlength` properties to `maxLength` and `minLength`.
   - Renamed `readonly` and `inputmode` properties to `readOnly` and `inputMode`.
   - Changed `inputMode` type also to `string`.
 - `Radio`
@@ -58,6 +58,8 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### {PackageGrids}
 
+- `All Grids`
+ - Added new `RowClick` event.
 - `PivotGrid`
   - Added `sortable` property for a `PivotDimension`.
   - Added horizontal layout. Can be enabled inside the new `pivotUI` property as `rowLayout` `horizontal`.

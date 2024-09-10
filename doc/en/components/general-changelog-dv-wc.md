@@ -13,6 +13,8 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### **{PackageVerChanges-24-1-SEP}**
 
+- `All Grids`
+ - Added new `RowClick` event.
 - `PivotGrid`
   - Added `sortable` property for a `PivotDimension`.
   - Added horizontal layout. Can be enabled inside the new `pivotUI` property as `rowLayout` `horizontal`.
@@ -176,6 +178,8 @@ The data grid component requires the "inputs" package.
 - `Icon`
   - Added `setIconRef` method. This allows to register and replace icons by SVG files.
   - All components now use icons by reference internally so that it's easy to replace them without explicitly providing custom templates.
+- `RadioGroup`
+  - Added `name` and `value` properties.
 
 **BREAKING CHANGES**:
 

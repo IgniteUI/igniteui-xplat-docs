@@ -22,6 +22,8 @@ All notable changes for each version of {ProductName} are documented on this pag
   - All components now use icons by reference internally so that it's easy to replace them without explicitly providing custom templates.
 - `Combo`, `DatePicker`, `Dialog`, `Dropdown`,  `ExpansionPanel`, `NavDrawer`, `Toast`, `Snackbar`, **IgbSelectComponent**
   - Toggle methods `Show`, `Hide`, `Toggle` methods return **true** now on success. Otherwise **false**.
+- `RadioGroup`
+  - Added `Name` and `Value` properties. `Value` also supports two-way binding.
 
 **BREAKING CHANGES**:
 
@@ -36,18 +38,16 @@ All notable changes for each version of {ProductName} are documented on this pag
 - `Checkbox`, `Switch`
   - Changed `Change` event argument type from `ComponentBoolValueChangedEventArgs` to `CheckboxChangeEventArgs`.
 - `Combo`
-  - The `IgbCombo` is now of generic type and its type needs to be specified either by setting `T` or other methods. That way binding to `Value` allows for collection as well.
+  - The `IgbCombo` is now of generic type and its type needs to be specified by assigning `T` to desired value type. That way binding to `Value` allows for collection as well.
   - Removed `PositionStrategy`, `Flip`, `SameWidth` properties.
 - `SelectComponent`
   - Removed `PositionStrategy`, `Flip`, `SameWidth` properties.
 - `DateTimeInput`
   - Removed `MaxValue` and `MinValue` properties. Used `Max` and `Min` instead.
-- `Dialog`
-  - Renamed `CloseOnEscape` property to `KeepOpenOnEscape`.
 - `Dropdown`
   - Removed `PositionStrategy` property.
 - `Input`
-  - Removed `Maxlength` and `Minlength` properties. Use the `Max` and `Min` properties instead.
+  - Renamed `Maxlength` and `Minlength` properties to `MaxLength` and `MinLength`.
   - Renamed `Readonly` and `Inputmode` properties to `ReadOnly` and `InputMode`.
   - Changed `InputMode` type also to `string`.
 - `Radio`
@@ -59,6 +59,9 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### {PackageGrids}
 
+- `All Grids`
+ - Added `GetColumns` / `GetColumnsAsync` methods, which return the grid columns collection.
+ - Added new `RowClick` event.
 - `PivotGrid`
   - Added `Sortable` property for a `PivotDimension`.
   - Added horizontal layout. Can be enabled inside the new `PivotUI` property as `RowLayout` `Horizontal`.
@@ -71,7 +74,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 **BREAKING CHANGES**:
 - `All Grids`, `RowIsland`
   - Removed `DisplayDensity` deprecated property.
-  - Renamed `ActualColumns`, `ContentColumns` properties to `ActualColumnList` and `ContentColumnList`.
+  - Renamed `ActualColumns`, `ContentColumns` properties to `ActualColumnList` and `ContentColumnList`. Recommended to use the new `GetColumns` method.
   - Renamed `RowDelete` and `RowAdd` event argument type to `RowDataCancelableEventArgs`.
   - Renamed `ContextMenu` event argument type to `GridContextMenuEventArgs`.
   - Removed `GridEditEventArgs`,  `GridEditDoneEventArgs`, `PinRowEventArgs` events `RowID` and `PrimaryKey` properties. Use `RowKey` instead.
