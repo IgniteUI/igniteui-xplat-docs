@@ -150,12 +150,10 @@ In order to configure the {ProductName} `ButtonGroup` selection, you could use i
 - **single-required** - mimics a radio group behavior. Only one button can be selected and once initial selection is made, deselection is not possible through user interaction.
 - **multiple** - multiple buttons in the group can be selected and deselected.
 
-<!-- WebComponents, Blazor -->
 The sample below demonstrates the exposed `ButtonGroup` selection modes:
 
 `sample="/inputs/button-group/selection", height="170", alt="{Platform} Button Group Selection Example"`
 
-<!-- end: WebComponents, Blazor -->
 
 <!-- WebComponents, React -->
 A `ToggleButton` could be marked as selected via its `Selected` attribute or through the `ButtonGroup` `SelectedItems` attribute:
