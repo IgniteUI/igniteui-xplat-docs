@@ -38,7 +38,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 - `Checkbox`, `Switch`
   - Changed `Change` event argument type from `ComponentBoolValueChangedEventArgs` to `CheckboxChangeEventArgs`.
 - `Combo`
-  - The `IgbCombo` is now of generic type and its type needs to be specified by assigning `T` to desired value type. That way binding to `Value` allows for collection as well.
+  - The `IgbCombo` is now of generic type and the `Value` type is now of type `T[]`. This means that either you need to specify `T` or it will be inferred by the assigned `Value` type.
   - Removed `PositionStrategy`, `Flip`, `SameWidth` properties.
 - `SelectComponent`
   - Removed `PositionStrategy`, `Flip`, `SameWidth` properties.
