@@ -3,6 +3,7 @@
     "igr-accordion-module.ts",
     "igr-avatar-module.ts",
     "igr-badge-module.ts",
+    "igr-banner-module.ts",
     "igr-base-alert-like-module.ts",
     "igr-base-combo-box-like-module.ts",
     "igr-base-option-like-module.ts",
@@ -156,6 +157,19 @@
     "names":[{"platform": "React","fileName": "igr-active-step-changing-args-event-args.ts","mappedName": "IgrActiveStepChangingArgsEventArgs"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "IgrActiveStepChangingArgsDetail","mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "Banner",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-banner-component.ts","mappedName": "IgrBanner"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "open"}], "originalName": "Open"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "show"}], "originalName": "Show"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "hide"}], "originalName": "Hide"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "toggle"}], "originalName": "Toggle"} ]
   },
   {
     "originalName": "BaseAlertLike",

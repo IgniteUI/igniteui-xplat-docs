@@ -95,8 +95,9 @@
             { "name": "{HierarchicalGridPackage}",    "value": "igniteui-angular-grids"},
             { "name": "{HierarchicalGridSample}",     "value": "grids/hierarchical-grid"},
             { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""},
-            { "name": "{RowIslandSelector}",           "value": "igx-row-island"}
+            { "name": "{RowIslandSelector}",           "value": "igx-row-island"},
 
+            { "name": "{BannerSelector}",             "value": "igx-banner"}
         ],
         "samplesBrowsers" : {
             "development": "http://localhost:4200",
@@ -206,6 +207,8 @@
             { "name": "{HierarchicalGridSample}",     "value": "grids/hierarchical-grid"},
             { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""},
             { "name": "{RowIslandSelector}",           "value": "IgrRowIsland"},
+
+            { "name": "{BannerSelector}",             "value": "IgrBanner"},
 
             { "name": "{CanonicalLinkToGridMain}",            "value": " ", "note": "do not remove spaces"},
             { "name": "{CanonicalLinkToGridCellEditing}",     "value": " ", "note": "do not remove spaces"},
@@ -395,6 +398,8 @@
             { "name": "{HierarchicalGridSample}",     "value": "grids/hierarchical-grid"},
             { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""},
             { "name": "{RowIslandSelector}",           "value": "igc-row-island"},
+
+            { "name": "{BannerSelector}",             "value": "igc-banner"},
 
             { "name": "{CanonicalLinkToGridMain}",            "value": "grids/data-grid", "note": "data-grid is really gird overview topic"},
             { "name": "{CanonicalLinkToGridCellEditing}",     "value": "grids/grid/cell-editing"},
@@ -592,6 +597,8 @@
             { "name": "{HierarchicalGridSample}",     "value": "grids/hierarchical-grid"},
             { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""},
             { "name": "{RowIslandSelector}",           "value": "IgbRowIsland"},
+
+            { "name": "{BannerSelector}",             "value": "IgbBanner"},
 
             { "name": "{CanonicalLinkToGridMain}",            "value": "grids/data-grid", "note": "data-grid is really gird overview topic"},
             { "name": "{CanonicalLinkToGridCellEditing}",     "value": "grids/grid/cell-editing"},

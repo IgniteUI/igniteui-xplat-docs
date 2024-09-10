@@ -80,6 +80,19 @@
       {"names":[{"platform": "Blazor", "mappedType": "IgbActiveStepChangingArgsDetail","mappedName": "Detail"}], "originalName": "Detail"} ]
   },
   {
+    "originalName": "Banner",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Blazor","fileName": "Banner.cs","mappedName": "IgbBanner"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "open"}], "originalName": "Open"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "show"}], "originalName": "Show"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "hide"}], "originalName": "Hide"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "toggle"}], "originalName": "Toggle"} ]
+  },
+  {
     "originalName": "BaseAlertLike",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
