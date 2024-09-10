@@ -52,7 +52,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 * [Calendar](scheduling/calendar.md)
 * [Card](layouts/card.md)
 * [Checkbox](inputs/checkbox.md)
-* [Form](inputs/form.md)
+* Form
 * [Icon](layouts/icon.md)
 * [List](grids/list.md)
 * [Navbar](menus/navbar.md)
@@ -73,7 +73,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 * [Button & Icon Button](inputs/button.md)
 * [Card](layouts/card.md)
 * [Checkbox](inputs/checkbox.md)
-* [Form](inputs/form.md)
+* Form
 * [Icon](layouts/icon.md)
 * [List](grids/list.md)
 * [Navbar](menus/navbar.md)

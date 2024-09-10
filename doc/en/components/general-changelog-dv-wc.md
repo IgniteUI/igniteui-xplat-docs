@@ -702,7 +702,7 @@ Initial release of Ignite UI Web Components
 - [Calendar](scheduling/calendar.md) component
 - [Card](layouts/card.md) component
 - [Checkbox](inputs/checkbox.md) component
-- [Form](inputs/form.md) component
+- Form component
 - [Icon](layouts/icon.md) component
 - [IconButton](inputs/icon-button.md) component
 - [Input](inputs/input.md) component

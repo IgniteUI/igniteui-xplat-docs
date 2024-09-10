@@ -157,86 +157,15 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 ```
 
 <!-- React -->
-<!-- ComponentStart: Grid, TreeGrid -->
 ```tsx
-function onSorting(grid: IgrGridBaseDirective, event: IgrSortingEventArgs) {
+function onSorting(grid: {ComponentName}, event: IgrSortingEventArgs) {
     grid.endEdit(true);
 }
 
-<{ComponentName} data={localData} primaryKey="ProductID" sorting={onSorting}>
-</{ComponentName}>
-```
-<!-- end: React -->
-<!-- ComponentEnd: Grid, TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-<!-- Angular -->
-```html
-<igx-hierarchical-grid #grid [data]="localData" [primaryKey]="'ProductID'" (sorting)="onSorting($event)">
-</igx-hierarchical-grid>
-```
-<!-- end: Angular -->
-
-<!-- WebComponents -->
-```html
-<{ComponentSelector} id="hierarchicalGrid" primary-key="ProductID" >
+<{ComponentSelector} data={localData} primaryKey="ProductID" sorting={onSorting}>
 </{ComponentSelector}>
 ```
-
-```ts
-constructor() {
-    var hierarchicalGrid = document.getElementById('hierarchicalGrid') as {ComponentName}Component;
-    hierarchicalGrid.data = this.data;
-    hierarchicalGrid.addEventListener("sorting", this.onSorting);
-}
-
-public onSorting(event: IgcSortingEventArgs) {
-    var hierarchicalGrid = document.getElementById('hierarchicalGrid') as {ComponentName}Component;
-    hierarchicalGrid.endEdit(true);
-}
-```
-<!-- end: WebComponents -->
-
-<!-- Angular -->
-```typescript
-public onSorting(event: ISortingEventArgs) {
-    this.hierarchicalGrid.endEdit(true);
-}
-```
-<!-- end: Angular -->
-
-```razor
-<{ComponentSelector}
-    Id="hierarchicalGrid"
-    SortingScript="SortingHandler"
-    RowEditable="true">
-</{ComponentSelector}>
-
-//In JavaScript
-function SortingHandler() {
-    hierarchicalGrid.endEdit(true);
-}
-igRegisterScript("SortingHandler", SortingHandler, false);
-```
-
-<!-- React -->
-<!-- ComponentStart: HierarchicalGrid -->
-```tsx
-<IgrHierarchicalGrid data={localData} primaryKey="ProductID" sorting={onSorting}>
-</IgrHierarchicalGrid>
-```
-<!-- ComponentEnd: HierarchicalGrid -->
 <!-- end: React -->
-<!-- React -->
-<!-- ComponentStart: HierarchicalGrid -->
-```tsx
-public onSorting(grid: IgrGridBaseDirective, event: IgrSortingEventArgs) {
-    hierarchicalGrid.endEdit(true);
-}
-```
-<!-- ComponentEnd: HierarchicalGrid -->
-<!-- end: React -->
-<!-- ComponentEnd: HierarchicalGrid -->
 
 ## API References
 

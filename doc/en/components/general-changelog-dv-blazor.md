@@ -383,7 +383,7 @@ Added New Feature - [Row Paging](grids/data-grid/row-paging.md) which is used to
 * [Button & Icon Button](inputs/button.md)
 * [Card](layouts/card.md)
 * [Checkbox](inputs/checkbox.md)
-* [Form](inputs/form.md)
+* Form
 * [Icon](layouts/icon.md)
 * [List](grids/list.md)
 * [Navigation Bar](menus/navbar.md)
