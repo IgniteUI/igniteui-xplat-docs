@@ -856,12 +856,6 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Form",
-    "href": "inputs/form.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "React"],
     "name": "Button",
     "href": "inputs/button.md",
     "status": "NEW"

@@ -335,8 +335,10 @@ The scale is visual element that highlights full range of values in the gauge wh
 `sample="/gauges/radial-gauge/scale", height="320", alt="{Platform} radial gauge scale"`
 
 
-## Labels
+## Labels and Titles
 The radial gauge labels are visual elements displaying numeric values at a specified interval between values of the `MinimumValue` and `MaximumValue` properties. You can position labels by setting the `LabelExtent` property to a fraction, where 0 represents center of gauge and 1 represents outer extent of the gauge backing. Also, you can customize labels setting various styling properties such as `FontBrush` and `Font`.
+
+Each of these labels for the needle have various styling attributes you can apply to change the font, angle, brush and distance from the center of the gauge such as `TitleExtent`, `TitleAngle`, `SubtitleFontSize`, `HighlightLabelBrush`. 
 
 ```html
 <igx-radial-gauge
@@ -389,6 +391,40 @@ The radial gauge labels are visual elements displaying numeric values at a speci
 
 
 `sample="/gauges/radial-gauge/labels", height="320", alt="{Platform} radial gauge labels"`
+
+## Title & Subtitle
+
+`TitleText` and `SubtitleText` properties are available and can both be used to display custom text for the needle. Alternatively, `TitleDisplaysValue` and `SubtitleDisplaysValue`, when set to true, will let display the needle's value and override `TitleText` and `SubtitleText`. So you can occupy custom text for the title but show the value via the subtitle and vice versa.
+
+If the highlight needle is shown, as explained below, then custom text can be shown via  `HighlightLabelText`, otherwise `HighlightLabelDisplaysValue` can be enabled and display it's value.
+
+```html
+<igx-radial-gauge
+    titleText="Global Sales"
+    subtitleText="2024">
+</igx-radial-gauge>
+```
+
+```tsx
+<IgrRadialGauge
+    titleText="Global Sales"
+    subtitleText="2024"
+/>
+```
+
+```html
+<igc-radial-gauge
+  title-text="Global Sales"
+  subtitle-text="2024">
+</igc-radial-gauge>
+```
+
+```razor
+<IgbRadialGauge
+  TitleText="Global Sales"
+  SubTitleText="2024">
+</IgbRadialGauge>
+```
 
 ## Optical Scaling
 
@@ -651,7 +687,7 @@ You can enable an interactive mode of the gauge (using `IsNeedleDraggingEnabled`
 
 ## Highlight Needle
 
-The radial gauge can be modified to show a second needle. This will make the main needle's `Value` appear with a lower opacity. To enable this first set `HighlightValueDisplayMode` to Overlay and then apply a `HighlightValue`.
+The radial gauge can be modified to show a second needle. This will make the main needle's `Value` appear with a lower opacity. To enable this first set `HighlightValueDisplayMode` to Overlay and then apply a `HighlightValue`. 
 
 ```html
 <igx-radial-gauge #radialGauge

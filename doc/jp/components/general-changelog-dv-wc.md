@@ -648,7 +648,7 @@ Ignite UI Web Components の初期リリース
 - [Calendar](scheduling/calendar.md) コンポーネント
 - [Card](layouts/card.md) コンポーネント
 - [Checkbox](inputs/checkbox.md) コンポーネント
-- [Form](inputs/form.md) コンポーネント
+- Form コンポーネント
 - [Icon](layouts/icon.md) コンポーネント
 - [IconB utton](inputs/icon-button.md) コンポーネント
 - [Input](inputs/input.md) コンポーネント
@@ -740,7 +740,7 @@ Ignite UI Web Components の初期リリース
 * 高度に構成可能な [DataLegend](charts/features/chart-data-legend.md) コンポーネントを追加しました。これは、`Legend` とよく似ていますが、シリーズの値を表示し、シリーズの行と値の列をフィルタリングし、値のスタイルとフォーマットを行うための多くの構成プロパティを提供します。
 * 高度に構成可能な [DataToolTip](charts/features/chart-data-tooltip.md) が追加されました。これは、シリーズの値とタイトル、およびシリーズの凡例バッジをツールチップに表示します。これは、すべてのチャート タイプのデフォルトのツールチップになりました。
 * 積層シリーズのアニメーションとトランジションインのサポートが追加されました。`IsTransitionInEnabled` プロパティを true に設定すると、アニメーションを有効にできます。そこから、`TransitionInDuration` プロパティを設定してアニメーションが完了するまでの時間を決定し、`TransitionInMode` でアニメーションのタイプを決定できます。
-* 追加された `AssigningCategoryStyle` イベントは、`XamDataChart` のすべてのシリーズで利用できるようになりました。このイベントは、背景色の `Fill` や強調表示など、シリーズ項目の外観を条件付きで構成する場合に処理されます。
+* 追加された `AssigningCategoryStyle` イベントは、`XamDataChart` のすべてのシリーズで利用できるようになりました。このイベントは、背景色の `Fill` やハイライト表示など、シリーズ項目の外観を条件付きで構成する場合に処理されます。
 * CalloutLayer の新しい `AllowedPositions` 列挙体。チャート内のどこにコールアウトを配置するかを制限するために使用されます。デフォルトでは、コールアウトは最適な場所に配置されますが、これは `TopLeft`、`TopRight`、`BottomLeft`、または `BottomRight` を強制するために使用されます。
 * 注釈レイヤーに追加された新しいコーナー半径プロパティ。各コールアウトのコーナーを丸めるために使用されます。コーナー半径がデフォルトで追加されていることに注意してください。
     - CalloutLayer の `CalloutCornerRadius`
@@ -811,10 +811,10 @@ Ignite UI Web Components の初期リリース
     - chart.`PlotAreaMarginRight`
     - chart.`PlotAreaMarginBottom`
     - chart.`ComputedPlotAreaMarginMode`
-* 新しい強調表示プロパティ:
+* 新しいハイライト表示プロパティ:
     - chart.`HighlightingMode` - ホバーされたシリーズとホバーされていないシリーズをフェードまたは明るくするかを設定します。
-    - chart.`HighlightingBehavior` - 真上または最も近い項目など、マウスの位置に応じてシリーズを強調表示するかどうかを設定します。
-    - 以前のリリースでは、強調表示はホバー時にフェードするように制限されていたことに注意してください。
+    - chart.`HighlightingBehavior` - 真上または最も近い項目など、マウスの位置に応じてシリーズをハイライト表示するかどうかを設定します。
+    - 以前のリリースでは、ハイライト表示はホバー時にフェードするように制限されていたことに注意してください。
 * 積層型、散布、極座標、ラジアル、およびシェイプ シリーズにハイライト表示を追加しました。
 * 積層型、散布、極座標、ラジアル、およびシェイプ シリーズに注釈レイヤーを追加しました。
 * 積層型シリーズ内の個々の積層フラグメントのデータ ソースをオーバーライドするためのサポートが追加されました。
@@ -837,7 +837,7 @@ Ignite UI Web Components の初期リリース
 #### チャート凡例
 
 * バブル、ドーナツ、および円チャートで使用できる水平方向の `Orientation` プロパティを ItemLegend に追加しました
-* `LegendHighlightingMode` プロパティの追加 - 凡例項目にホバーした時にシリーズの強調表示を有効にします
+* `LegendHighlightingMode` プロパティの追加 - 凡例項目にホバーした時にシリーズのハイライト表示を有効にします
 
 
 ## {PackageInputs}
@@ -882,7 +882,7 @@ Ignite UI Web Components の初期リリース
 
 * マップの表示を折り返すためのサポートが追加されました (水平方向に無限にスクロールできます)。
 * 座標原点を折り返しながら、一部のマップ シリーズの表示をシフトするためのサポートが追加されました。
-* シェイプ シリーズの強調表示のサポートが追加されました。
+* シェイプ シリーズのハイライト表示のサポートが追加されました。
 * シェイプ シリーズの一部の注釈レイヤーのサポートが追加されました。
 
 
