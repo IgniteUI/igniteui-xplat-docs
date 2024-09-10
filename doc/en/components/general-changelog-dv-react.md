@@ -20,34 +20,34 @@ All notable changes for each version of {ProductName} are documented on this pag
 - `Icon`
   - Added `setIconRef` method. This allows to register and replace icons by SVG files.
   - All components now use icons by reference internally so that it's easy to replace them without explicitly providing custom templates.
-- `Combo`, `DatePicker`, `Dialog`, `Dropdown`,  `ExpansionPanel`, `NavDrawer`, `Toast`, `Snackbar`, IgrSelect
+- `Combo`, `DatePicker`, `Dialog`, `Dropdown`,  `ExpansionPanel`, `NavDrawer`, `Toast`, `Snackbar`, **IgrSelectComponent**
   - Toggle methods `show`, `hide`, `toggle` methods return **true** now on success, otherwise **false**.
-- IgrButton, `IconButton`, `Checkbox`, `Switch`, `Combo`, `DateTimeInput`, `Input`, `MaskInput`, `Radio`, IgrSelect, `Textarea`
+- **IgrButtonComponent**, `IconButton`, `Checkbox`, `Switch`, `Combo`, `DateTimeInput`, `Input`, `MaskInput`, `Radio`, **IgrSelectComponent**, `Textarea`
   - Deprecated custom `focus` and `blur` events. Use the native `onFocus` and `onBlur` events instead
 - `RadioGroup`
   - Added `Name` and `Value` properties.
 
 **BREAKING CHANGES**:
 
-- Renamed old `DatePicker` to **IgrXDatePicker**.
+- Renamed old **IgrDatePicker** to **IgrXDatePicker**.
 - Removed `Form` component. Use native form instead.
 - Removed `size` property in favor of the `--ig-size` CSS custom property for the following components:
-  - `Avatar`, `Button`,`IconButton`, `Calendar`, `Chip`, `Dropdown`, `Icon`, `Input`, `List`, `Rating`, `Snackbar`, `Tabs`, `Tree`
+  - `Avatar`,  **IgrButtonComponent**, `IconButton`, `Calendar`, `Chip`, `Dropdown`, `Icon`, `Input`, `List`, `Rating`, `Snackbar`, `Tabs`, `Tree`
 - `Badge`, `Chip`, `LinearProgress`, `CircularProgress`
   - Renamed `Variant` property type to `StyleVariant`.
 - `Calendar`
   - Renamed `WeekStart` property type to `WeekDays`.
 - `Checkbox`, `Switch`
   - Changed `change` event argument type from `ComponentBoolValueChangedEventArgs` to `CheckboxChangeEventArgs`.
-- `Combo`, `SelectComponent`
+- `Combo`, **IgrSelectComponent**
   - Removed `positionStrategy`, `flip`, `sameWidth` properties.
 - `DateTimeInput`
-  - Removed `maxValue` and `minValue` properties. Used `max` and `min` instead.
+  - Removed `maxValue` and `minValue` properties. Use `max` and `min` instead.
 - `Dropdown`
   - Removed `positionStrategy` property.
 - `Input`
-  - Renamed `maxlength` and `minlength` properties to `maxLength` and `minLength`.
-  - Renamed `readonly` and `inputmode` properties to `readOnly` and `inputMode`.
+  - Removed old named `maxlength` and `minlength` properties. Use `maxLength` and `minLength`.
+  - Removed old named `readonly` and `inputmode` properties. Use `readOnly` and `inputMode`.
   - Changed `inputMode` type also to `string`.
 - `Radio`
   - Changed `change` event argument type from `ComponentBoolValueChangedEventArgs` to `RadioChangeEventArgs`.
@@ -73,7 +73,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 - `All Grids`, `RowIsland`
   - Removed `displayDensity` deprecated property.
-  - Renamed `actualColumns`, `contentColumns` properties to `actualColumnList` and `contentColumnList`. Use `column` or `columnList` property to get all columns now.
+  - Renamed `actualColumns`, `contentColumns` properties to `actualColumnList` and `contentColumnList`. Use `columns` or `columnList` property to get all columns now.
   - Renamed `rowDelete` and `rowAdd` event argument type to `RowDataCancelableEventArgs`.
   - Renamed `contextMenu` event argument type to `GridContextMenuEventArgs`.
   - Removed `GridEditEventArgs`,  `GridEditDoneEventArgs`, `PinRowEventArgs` events `rowID` and `primaryKey` properties. Use `rowKey` instead.

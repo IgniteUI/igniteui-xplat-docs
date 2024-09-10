@@ -27,7 +27,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 **BREAKING CHANGES**:
 
-- Renamed old `DatePicker` to **IgbXDatePicker**.
+- Renamed old **IgbDatePicker** to **IgbXDatePicker**.
 - Removed `Form` component. Use native form instead.
 - Removed `size` property in favor of the `--ig-size` CSS custom property for the following components:
   - `Avatar`, `Button`,`IconButton`, `Calendar`, `Chip`, `Dropdown`, `Icon`, `Input`, `List`, `Rating`, `Snackbar`, `Tabs`, `Tree`
@@ -40,15 +40,15 @@ All notable changes for each version of {ProductName} are documented on this pag
 - `Combo`
   - The `IgbCombo` is now of generic type and the `Value` type is now of type `T[]`. This means that either you need to specify `T` or it will be inferred by the assigned `Value` type.
   - Removed `PositionStrategy`, `Flip`, `SameWidth` properties.
-- `SelectComponent`
+- **IgbSelectComponent**
   - Removed `PositionStrategy`, `Flip`, `SameWidth` properties.
 - `DateTimeInput`
-  - Removed `MaxValue` and `MinValue` properties. Used `Max` and `Min` instead.
+  - Removed `MaxValue` and `MinValue` properties. Use `Max` and `Min` instead.
 - `Dropdown`
   - Removed `PositionStrategy` property.
 - `Input`
-  - Renamed `Maxlength` and `Minlength` properties to `MaxLength` and `MinLength`.
-  - Renamed `Readonly` and `Inputmode` properties to `ReadOnly` and `InputMode`.
+  - Removed old named `Maxlength` and `Minlength` properties. Use `MaxLength` and `MinLength`.
+  - Removed old named `Readonly` and `Inputmode` properties. Use `ReadOnly` and `InputMode`.
   - Changed `InputMode` type also to `string`.
 - `Radio`
   - Changed `Change` event argument type from `ComponentBoolValueChangedEventArgs` to `RadioChangeEventArgs`.
@@ -74,7 +74,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 **BREAKING CHANGES**:
 - `All Grids`, `RowIsland`
   - Removed `DisplayDensity` deprecated property.
-  - Renamed `ActualColumns`, `ContentColumns` properties to `ActualColumnList` and `ContentColumnList`. Recommended to use the new `GetColumns` method.
+  - Renamed `Columns`, `ActualColumns`, `ContentColumns` properties to `ColumnList`, `ActualColumnList` and `ContentColumnList`. Recommended to use the new `GetColumns` method instead.
   - Renamed `RowDelete` and `RowAdd` event argument type to `RowDataCancelableEventArgs`.
   - Renamed `ContextMenu` event argument type to `GridContextMenuEventArgs`.
   - Removed `GridEditEventArgs`,  `GridEditDoneEventArgs`, `PinRowEventArgs` events `RowID` and `PrimaryKey` properties. Use `RowKey` instead.

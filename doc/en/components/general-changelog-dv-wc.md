@@ -187,10 +187,10 @@ The data grid component requires the "inputs" package.
 - Removed `size` property in favor of the `--ig-size` CSS custom property for the following components:
   - `Avatar`, `Button`,`IconButton`, `Calendar`, `Chip`, `Dropdown`, `Icon`, `Input`, `List`, `Rating`, `Snackbar`, `Tabs`, `Tree`
 - Removed custom `igcFocus` and `igcBlur` events. Use the native `focus` and `blur` events instead for the following components:
-  - `Button`, `IconButton`, `Checkbox`, `Switch`, `Combo`, `DateTimeInput`, `Input`, `MaskInput`, `Radio`, `SelectComponent`, `Textarea`
+  - `Button`, `IconButton`, `Checkbox`, `Switch`, `Combo`, `DateTimeInput`, `Input`, `MaskInput`, `Radio`, **IgcSelectComponent**, `Textarea`
 - `Checkbox`, `Switch` ,`Radio`
   - Changed `igcChange` event arguments from `CustomEvent<boolean>` to `CustomEvent<{ checked: boolean; value: string | undefined }>`
-- `Combo`, `SelectComponent`
+- `Combo`, **IgcSelectComponent**
   - Removed `positionStrategy`, `flip`, `sameWidth` properties.
 - `Dialog`
   - Renamed The `closeOnEscape` property to `keepOpenOnEscape`.
