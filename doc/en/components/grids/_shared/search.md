@@ -38,8 +38,14 @@ Let's start by creating our grid and binding it to our data. We will also add so
 ```
 <!-- end: Angular -->
 
+```css
+.gridSize {
+    --ig-size: var(--ig-size-small);
+}
+```
+
 ```razor
-<{ComponentSelector} @ref=grid Width="100%" Height="480px" AllowFiltering=true AutoGenerate=false Data=marketData DisplayDensity="DisplayDensity.Compact">
+<{ComponentSelector} @ref=grid Class="gridSize" Width="100%" Height="480px" AllowFiltering=true AutoGenerate=false Data=marketData>
     <IgbColumn Field="IndustrySector" DataType="GridColumnDataType.String" Sortable=true></IgbColumn>
     <IgbColumn Field="IndustryGroup" DataType="GridColumnDataType.String" Sortable=true></IgbColumn>
     <IgbColumn Field="SectorType" DataType="GridColumnDataType.String" Sortable=true></IgbColumn>
@@ -57,7 +63,7 @@ Let's start by creating our grid and binding it to our data. We will also add so
 ```
 
 ```html
-<{ComponentSelector} id="grid1" auto-generate="false" allow-filtering="true">
+<{ComponentSelector} id="grid1" class="gridSize" auto-generate="false" allow-filtering="true">
     <igc-column field="IndustrySector" data-type="string" sortable="true"></igc-column>
     <igc-column field="IndustryGroup" data-type="string" sortable="true"></igc-column>
     <igc-column field="SectorType" data-type="string" sortable="true"></igc-column>
@@ -68,7 +74,7 @@ Let's start by creating our grid and binding it to our data. We will also add so
 ```
 
 ```tsx
-<{ComponentSelector} ref={gridRef} autoGenerate="false" allowFiltering="true" displayDensity="compact" data={data}>
+<{ComponentSelector} ref={gridRef} className="gridSize" autoGenerate="false" allowFiltering="true" data={data}>
     <IgrColumn field="IndustrySector" dataType="string" sortable="true"></IgrColumn>        
     <IgrColumn field="IndustryGroup" dataType="string" sortable="true"></IgrColumn>        
     <IgrColumn field="SectorType" dataType="string" sortable="true"></IgrColumn>        
@@ -151,6 +157,7 @@ public exactMatch: boolean = false;
 
     private searchBox: IgcInputComponent;
     
+    private searchIcon: IgcIconComponent;
     private clearIcon: IgcIconComponent;
     private nextIconButton: IgcIconButtonComponent;
     private prevIconButton: IgcIconButtonComponent;
@@ -169,6 +176,7 @@ public bool exactMatch = false;
 
 ```tsx
 const gridRef = useRef<IgrGrid>(null);
+const searchIconRef = useRef<IgrIconButton>(null)
 const clearIconRef = useRef<IgrIconButton>(null);
 const iconButtonPrevRef = useRef<IgrIconButton>(null);
 const caseSensitiveChipRef = useRef<IgrChip>(null);
@@ -278,6 +286,7 @@ public nextSearch(){
 ```tsx
 function handleOnSearchChange(input: IgrInput, event: IgrComponentValueChangedEventArgs) {
     setSearchText(event.detail);
+    gridRef.current.findNext(event.detail, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
 }
 
 function nextSearch() {
@@ -406,15 +415,11 @@ constructor() {
     prevIconButton.addEventListener("click", this.prevSearch);
 }
 public prevSearch() {
-    const grid = document.getElementById('grid') as IgcGridComponent;
-    const searchBox = document.getElementById('searchBox') as IgcInputComponent;
-    grid.findPrev(searchBox.value, false, false);
+    this.grid.findPrev(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
 }
 
 public nextSearch() {
-    const grid = document.getElementById('grid') as IgcGridComponent;
-    const searchBox = document.getElementById('searchBox') as IgcInputComponent;
-    grid.findNext(searchBox.value, false, false);
+    this.grid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
 }
 ```
 <!-- end: WebComponents -->
@@ -510,33 +515,26 @@ public searchKeyDown(ev) {
 <!-- ComponentStart: Grid -->
 <!-- WebComponents -->
 ```html
-<input id="search1"/>
+<input id="searchBox" name="searchBox"/>
 ```
 
 ```typescript
 constructor() {
-    const search1 = document.getElementById('search1') as HtmlInputElement;
-    search1.addEventListener('keydown', this.searchKeyDown);
-    search1.addEventListener('change', this.findNext);
+     searchBox.addEventListener("keydown", (evt) => { this.onSearchKeydown(evt); });
+     this.searchBox.addEventListener("igcInput", (evt) => {
+        this.searchIcon.name = evt.detail ? 'clear' : 'search';
+        this.grid.findNext(evt.detail, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+     });
 }
 
-public findNext(e) {
-    const searchText = e.target.value;
-    const caseSensitive = false;
-    const exactMatch = false;
-    const grid = document.getElementById('grid') as IgcGridComponent;
-    grid.findNext(searchText, caseSensitive, exactMatch)
-}
-
-public searchKeyDown(ev) {
-    const search1 = document.getElementById('search1') as HtmlInputElement;
-    const grid = document.getElementById('grid') as IgcGridComponent;
-    if (ev.key === 'Enter') {
-        ev.preventDefault();
-        grid.findNext(search1.value, false, false);
-    } else if (ev.key === 'ArrowUp' || ev.key === 'ArrowLeft') {
-        ev.preventDefault();
-        grid.findPrev(search1.value, false, false);
+public onSearchKeydown(evt: KeyboardEvent) {  
+        if (evt.key === 'Enter' || evt.key === 'ArrowDown') {
+            evt.preventDefault();
+            this.grid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+        } else if (evt.key === 'ArrowUp') {
+            evt.preventDefault();
+            this.grid.findPrev(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+        }
     }
 }
 ```
@@ -926,7 +924,7 @@ public clearSearch() {
 <!-- ComponentStart: Grid -->
 ```html
 <igc-input id="searchBox" name="searchBox">
-    <igc-icon id="clearIcon" slot="prefix" name="clear" collection="material"></igc-icon>
+    <igc-icon id="searchIcon" slot="prefix" name="search" collection="material"></igc-icon>
     <div slot="suffix">
         <igc-chip selectable="true" id="caseSensitiveChip">Case Sensitive</igc-chip>
         <igc-chip selectable="true" id="exactMatchChip">Exact Match</igc-chip>
@@ -944,10 +942,12 @@ constructor() {
     const prevIconText = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z'></path></svg>";
     const nextIconText = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'></path></svg>";
     const clearIconText = "<svg width='24' height='24' viewBox='0 0 24 24' title='Clear'><path d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></svg>";
+    const searchIconText = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' /></svg>";
 
     registerIconFromText("prev", prevIconText, "material");
     registerIconFromText("next", nextIconText, "material");
     registerIconFromText("clear", clearIconText, "material");
+    registerIconFromText("search", searchIconText, "material");
 }
 ```
 <!-- end: WebComponents -->
@@ -959,10 +959,13 @@ const nextIconText =
   "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'></path></svg>";
 const clearIconText =
   "<svg width='24' height='24' viewBox='0 0 24 24' title='Clear'><path d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></svg>";
+  const searchIconText =
+  "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' /></svg>";
 
 useEffect(() => {
-    if (clearIconRef?.current) {
-        clearIconRef.current.registerIconFromText("clear", clearIconText, "material");
+     if (searchIconRef?.current) {
+      searchIconRef.current.registerIconFromText("search", searchIconText, "material");
+      searchIconRef.current.registerIconFromText("clear", clearIconText, "material");
     }
     if (iconButtonPrevRef?.current) {
         iconButtonPrevRef.current.registerIconFromText("prev", prevIconText, "material");
@@ -974,8 +977,24 @@ useEffect(() => {
 
 <IgrInput name="searchBox" value={searchText} inputOcurred={handleOnSearchChange}>
     <div slot="prefix" key="prefix">
-        <IgrIconButton key="clearIcon" ref={clearIconRef} variant="flat" name="clear" collection="material" clicked={clearSearch}>
-        </IgrIconButton>
+        {searchText.length === 0 ? (
+            <IgrIconButton
+              key="searchIcon"
+              ref={searchIconRef} 
+              variant="flat"
+              name="search" 
+              collection="material"
+            ></IgrIconButton>
+            ) : (
+            <IgrIconButton
+              key="clearIcon"
+              ref={clearIconRef}
+              variant="flat"
+              name="clear"
+              collection="material"
+              clicked={clearSearch}
+            ></IgrIconButton>
+        )}
     </div>
     <div slot="suffix" key="chipSuffix">
         <IgrChip ref={caseSensitiveChipRef} key="caseSensitiveChip" selectable="true">
@@ -1055,7 +1074,7 @@ const prevIconText =
 const nextIconText =
   "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'></path></svg>";
 const searchIconText =
-  "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' /></svg>";
+"<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' /></svg>";
 const clearIconText =
   "<svg width='24' height='24' viewBox='0 0 24 24' title='Clear'><path d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></svg>";
 
@@ -1327,17 +1346,11 @@ constructor() {
 <!-- ComponentStart: Grid -->
 ```ts
 public nextSearch() {
-    const grid = document.getElementById('grid') as IgcGridComponent;
-    const caseSensitiveChip = document.getElementById('caseSensitiveChip') as IgcChipComponent;
-    const exactMatchChip = document.getElementById('exactMatchChip') as IgcChipComponent;
-    grid.findNext(input.value, caseSensitiveChip.selected, exactMatchChip.selected);
+    this.grid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
 }
 
 public prevSearch() {
-    const grid = document.getElementById('grid') as IgcGridComponent;
-    const caseSensitiveChip = document.getElementById('caseSensitiveChip') as IgcChipComponent;
-    const exactMatchChip = document.getElementById('exactMatchChip') as IgcChipComponent;
-    grid.findPrev(input.value, caseSensitiveChip.selected, exactMatchChip.selected);
+    this.grid.findPrev(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
 }
 ```
 <!-- ComponentEnd: Grid -->

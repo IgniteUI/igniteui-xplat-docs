@@ -750,7 +750,6 @@ BLAZOR CODE SNIPPET HERE
     [(page)]="page"
     [(perPage)]="perPage"
     [selectOptions]="selectOptions"
-    [displayDensity]="grid1.displayDensity"
     (pageChange)="paginate($event)"
     (perPageChange)="perPageChange($event)">
     <igx-paginator-content>
