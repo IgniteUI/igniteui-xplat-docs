@@ -67,6 +67,7 @@ _language: ja
 
 `sample="/charts/data-chart/radial-column-chart-selection", height="450", alt="{Platform} ラジアル縦棒チャートの複数モード選択の例"`
 
+
 ## プログラムによる選択
 
 チャートの選択項目は、起動時や実行時にチャートの選択項目を表示するようにコードで設定することもできます。これは、`CategoryChart` の `SelectedSeriesCollection` に項目を追加することで実現できます。`ChartSelection` オブジェクトの `Matcher` プロパティを使用すると、「マッチャー」に基づいてシリーズを選択できます。これはチャートから実際のシリーズにアクセスできない場合に最適です。データ ソースに含まれるプロパティがわかっていれば、シリーズが使用される `ValueMemberPath` を使用できます。 
