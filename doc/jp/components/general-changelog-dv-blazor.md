@@ -11,6 +11,84 @@ _language: ja
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
+## **{PackageVerChanges-24-1-SEP}**
+
+### 一般
+
+- 新しい [Banner](notifications/banner.md) コンポーネント。
+- 新しい [DatePicker](scheduling/date-picker.md) コンポーネント。
+- 新しい `Divider` コンポーネント。
+- `Icon`
+  - `SetIconRef` メソッドが追加されました。これにより、アイコンを SVG ファイルで登録および置き換えることができます。
+  - すべてのコンポーネントが内部的な参照によるアイコンを使用するようになり、カスタム テンプレートを明示的に提供しなくても簡単に置き換えられるようになりました。
+- `Combo`、`DatePicker`、`Dialog`、`Dropdown`、`ExpansionPanel`、`NavDrawer`、`Toast`、`Snackbar`、**IgbSelectComponent**
+  - トグル メソッドの `Show`、`Hide`、`Toggle` メソッドは、成功した場合に **true** を返すようになりました。そうでない場合は **false**。
+- `RadioGroup`
+  - `Name` および `Value` プロパティを追加しました。`Value` は双方向バインディングもサポートします。
+
+**重大な変更**:
+
+- 古い **IgbDatePicker** の名前を **IgbXDatePicker** に変更しました。
+- `Form` コンポーネントを削除しました。代わりにネイティブのフォームを使用してください。
+- 以下のコンポーネントの `size` プロパティが削除され、代わりに `--ig-size` CSS カスタム プロパティが使用されるようになりました。
+  - `Avatar`、`Button`、`IconButton`、`Calendar`、`Chip`、`Dropdown`、`Icon`、`Input`、`List`、`Rating`、`Snackbar`、`Tabs`、`Tree`
+- `Badge`、`Chip`、`LinearProgress`、`CircularProgress`
+  - `Variant` プロパティ タイプの名前を `StyleVariant` に変更しました。
+- `Calendar`
+  - `WeekStart` プロパティ タイプの名前を `WeekDays` に変更しました。
+- `Checkbox`、`Switch`
+  - `Change` イベント引数タイプを `ComponentBoolValueChangedEventArgs` から `CheckboxChangeEventArgs` に変更しました。
+- `Combo`
+  - `IgbCombo` はジェネリック タイプになり、`Value` タイプは `T[]` タイプになりました。つまり、`T` を指定するか、割り当てられた `Value` タイプによって推論される必要があります。
+  - `PositionStrategy`、`Flip`、`SameWidth` プロパティが削除されました。
+- **IgbSelectComponent**
+  - `PositionStrategy`、`Flip`、`SameWidth` プロパティが削除されました。
+- `DateTimeInput`
+  - `MaxValue` および `MinValue` プロパティが削除されました。代わりに `Max` および `Min` を使用してください。
+- `Dropdown`
+  - `PositionStrategy` プロパティが削除されました。
+- `Input`
+  - 古い名前の `Maxlength` および `Minlength` プロパティが削除されました。`MaxLength` および `MinLength` を使用してください。
+  - 古い名前の `Readonly` および `Inputmode` プロパティが削除されました。`ReadOnly` および `InputMode` を使用してください。
+  - `InputMode` タイプも `string` (文字列) に変更されました。
+- `Radio`
+  - `Change` イベント引数タイプを `ComponentBoolValueChangedEventArgs` から `RadioChangeEventArgs` に変更しました。
+- `RangeSlider`
+  - `AriaThumbLower` および `AriaThumbUpper` プロパティが削除されました。代わりに `ThumbLabelLower` および `ThumbLabelUpper` を使用してください。
+- `Rating`
+  - `Readonly` プロパティの名前を `ReadOnly` に変更しました。
+
+### {PackageGrids}
+
+- `すべてのグリッド`
+ - グリッド列コレクションを返す `GetColumns` / `GetColumnsAsync` メソッドが追加されました。
+ - 新しい `RowClick` イベントが追加されました。
+- `PivotGrid`
+  - `PivotDimension` に `Sortable` プロパティが追加されました。
+  - 水平レイアウトが追加されました。新しい `PivotUI` プロパティ内で `RowLayout` `Horizontal` として有効にできます。
+  - 水平レイアウトのみの行ディメンション サマリーが追加されました。`HorizontalSummary` を **true** に設定することで、各 `PivotDimension` に対して有効にできます。
+  - 水平集計の位置を設定するための `HorizontalSummariesPosition` プロパティを `PivotUI` に追加しました。
+  - 行ディメンションの行ヘッダーが追加されました。新しい `PivotUI` プロパティ内で `ShowHeaders` **true** として有効にできます。
+  - キーボード ナビゲーションで行ディメンションヘッダーや列ヘッダーから行ヘッダーへ移動できるようになりました。
+  - キーボード操作で行ディメンションの縮小 (Alt + 矢印キー) および行ヘッダーのソート (Ctrl + 矢印上/下) ができるようになりました。
+
+**重大な変更**:
+- `すべてのグリッド`、`RowIsland`
+  - `DisplayDensity` の非推奨のプロパティが削除されました。
+  - `Columns`、`ActualColumns`、`ContentColumns` プロパティの名前が `ColumnList`、`ActualColumnList`、`ContentColumnList` に変更されました。代わりに新しい `GetColumns` メソッドを使用することをお勧めします。
+  - `RowDelete` および `RowAdd` イベント引数タイプの名前を `RowDataCancelableEventArgs` に変更しました。
+  - `ContextMenu` イベント引数タイプの名前を `GridContextMenuEventArgs` に変更しました。
+  - `GridEditEventArgs`、`GridEditDoneEventArgs`、`PinRowEventArgs` イベントの `RowID` および `PrimaryKey` プロパティが削除されました。代わりに `RowKey` を使用してください。
+- `PivotGrid`
+  - `ShowPivotConfigurationUI` プロパティが削除されました。`PivotUI` を使用して、その中に新しい `ShowConfiguration` オプションを設定してください。
+- `Column`
+  - `Movable` プロパティが削除されました。グリッドの `Moving` プロパティを使用してください。
+  - `ColumnChildren` プロパティが削除されました。代わりに `ChildColumns` を使用してください。
+- `ColumnGroup`
+  - `Children` プロパティが削除されました。代わりに `ChildColumns` を使用してください。
+- `Paginator`
+  - `IsFirstPageDisabled` および `IsLastPageDisabled` プロパティが削除されました。代わりに、`IsFirstPage` および `IsLastPage` を使用してください。
+
 ## **{PackageVerChanges-24-1-JUN}**
 
 ### 一般
