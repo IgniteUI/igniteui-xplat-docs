@@ -13,7 +13,7 @@ _language: ja
 
 ## **{PackageVerChanges-24-1-SEP}**
 
-### General
+### 一般
 
 - 新しい [Banner](notifications/banner.md) コンポーネント。
 - 新しい [DatePicker](scheduling/date-picker.md) コンポーネント。
