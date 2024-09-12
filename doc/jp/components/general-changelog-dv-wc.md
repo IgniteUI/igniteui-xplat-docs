@@ -6,9 +6,41 @@ mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "Tool
 namespace: Infragistics.Controls
 _language: ja
 ---
+
 # {ProductName} 変更ログ
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
+
+### **{PackageVerChanges-24-1-SEP}**
+
+- `すべてのグリッド`
+ - 新しい `RowClick` イベントが追加されました。
+- `PivotGrid`
+  - `PivotDimension` に `sortable` プロパティが追加されました。
+  - 水平レイアウトが追加されました。新しい `pivotUI` プロパティ内で `rowLayout` `horizontal` として有効にできます。
+  - 水平レイアウトのみの行ディメンション サマリーが追加されました。`horizontalSummary` を **true** に設定することで、各 `PivotDimension` に対して有効にできます。
+  - 水平集計の位置を設定するための `horizontalSummariesPosition` プロパティを `pivotUI` に追加しました。
+  - 行ディメンションの行ヘッダーが追加されました。新しい `pivotUI` プロパティ内で `showHeaders` **true** として有効にできます。
+  - キーボード ナビゲーションで行ディメンションヘッダーや列ヘッダーから行ヘッダーへ移動できるようになりました。
+  - キーボード操作で行ディメンションの縮小 (Alt + 矢印キー) および行ヘッダーのソート (Ctrl + 矢印上/下) ができるようになりました。
+
+**重大な変更**:
+- `すべてのグリッド`、`RowIsland`
+  - `displayDensity` の非推奨のプロパティが削除されました。
+  - `actualColumns`、`contentColumns` プロパティの名前を、`actualColumnList` および `contentColumnList` に変更しました。すべての列を取得するには、`column` または `columnList` プロパティを使用してください。
+  - `rowDelete` および `rowAdd` イベント引数タイプの名前を `RowDataCancelableEventArgs` に変更しました。
+  - `contextMenu` イベント引数タイプの名前を `GridContextMenuEventArgs` に変更しました。
+  - `GridEditEventArgs`、`GridEditDoneEventArgs`、`PinRowEventArgs` イベントの `rowID` および `primaryKey` プロパティが削除されました。代わりに `rowKey` を使用してください。
+- `PivotGrid`
+  - `showPivotConfigurationUI` プロパティが削除されました。`pivotUI` を使用して、その中に新しい `showConfiguration` オプションを設定してください。
+- `Column`
+  - `movable` プロパティが削除されました。グリッドの `moving` プロパティを使用してください。
+  - `columnChildren` プロパティが削除されました。代わりに `childColumns` を使用してください。
+- `ColumnGroup`
+  - `children` プロパティが削除されました。代わりに `childColumns` を使用してください。
+- `Paginator`
+  - `isFirstPageDisabled` および `isLastPageDisabled` プロパティが削除されました。代わりに、`isFirstPage` および `isLastPage` を使用してください。
+
 
 ### **{PackageVerChanges-24-1-JUN}**
 
@@ -164,6 +196,37 @@ Data Grid コンポーネントには 「inputs」 パッケージが必要で�
 
 
 ## {PackageCommon}
+
+### **{PackageCommonVerChanges-5.0.0}**
+
+- `Icon`
+  - `setIconRef` メソッドが追加されました。これにより、アイコンを SVG ファイルで登録および置き換えることができます。
+  - すべてのコンポーネントが内部的な参照によるアイコンを使用するようになり、カスタム テンプレートを明示的に提供しなくても簡単に置き換えられるようになりました。
+- `RadioGroup`
+  - `name` および `value` プロパティを追加しました。
+
+**重大な変更**:
+
+- `Form` コンポーネントを削除しました。代わりにネイティブのフォームを使用してください。
+- 以下のコンポーネントの `size` プロパティが削除され、代わりに `--ig-size` CSS カスタム プロパティが使用されるようになりました。
+  - `Avatar`、`Button`,`IconButton`、`Calendar`、`Chip`、`Dropdown`、`Icon`、`Input`、`List`、`Rating`、`Snackbar`、`Tabs`、`Tree`
+- カスタム `igcFocus` および `igcBlur` イベントが削除されました。次のコンポーネントには、代わりにネイティブの `focus` イベントと `blur` イベントを使用してください。
+  - `Button`、`IconButton`、`Checkbox`、`Switch`、`Combo`、`DateTimeInput`、`Input`、`MaskInput`、`Radio`、**IgcSelectComponent**、`Textarea`
+- `Checkbox`、`Switch`、`Radio`
+  - `igcChange` イベント引数を `CustomEvent<boolean>` から `CustomEvent<{ checked: boolean; value: string | undefined }>` に変更しました。
+- `Combo`、**IgcSelectComponent**
+  - `positionStrategy`、`flip`、`sameWidth` プロパティが削除されました。
+- `Dialog`
+  - `closeOnEscape` プロパティの名前を `keepOpenOnEscape` に変更しました。
+- `Dropdown`
+  - `positionStrategy` プロパティが削除されました。
+- `Input`
+  - `maxlength` および `minlength` プロパティが削除されました。代わりに、ネイティブの `maxLength` および `minLength` プロパティ、または `max` および `min` を使用してください。
+  - `readonly` および `inputmode` プロパティの名前を `readOnly` および `inputMode` に変更しました。
+- `RangeSlider`
+  - `ariaThumbLower`/`ariaThumbUpper` プロパティの名前を、`thumbLabelLower`/`thumbLabelUpper` に変更しました。
+- `Rating`
+  - `readonly` プロパティの名前を `readOnly` に変更しました。
 
 ### **{PackageCommonVerChanges-4.11.1}**
 
