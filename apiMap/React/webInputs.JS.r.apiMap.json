@@ -23,6 +23,7 @@
     "igr-circular-gradient-module.ts",
     "igr-circular-progress-module.ts",
     "igr-combo-module.ts",
+    "igr-date-picker-module.ts",
     "igr-date-time-input-module.ts",
     "igr-dialog-module.ts",
     "igr-dock-manager-module.ts",
@@ -1566,6 +1567,26 @@
       {"names":[{"platform": "React", "mappedType": "Date","mappedName": "value"}], "originalName": "Value"},
       {"names":[{"platform": "React", "mappedType": "Date[]","mappedName": "values"}], "originalName": "Values"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "visibleMonths"}], "originalName": "VisibleMonths"} ]
+  },
+  {
+    "originalName": "DatePicker",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-date-picker.ts","mappedName": "IgrDatePicker"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "Date","mappedName": "activeDate"}], "originalName": "ActiveDate"},
+      {"names":[{"platform": "React", "mappedType": "Date","mappedName": "min"}], "originalName": "Min"},
+      {"names":[{"platform": "React", "mappedType": "Date","mappedName": "max"}], "originalName": "Max"},
+      {"names":[{"platform": "React", "mappedType": "string","mappedName": "inputFormat"}], "originalName": "InputFormat"},
+      {"names":[{"platform": "React", "mappedType": "string","mappedName": "displayFormat"}], "originalName": "DisplayFormat"},
+      {"names":[{"platform": "React", "mappedType": "string","mappedName": "locale"}], "originalName": "Locale"},
+      {"names":[{"platform": "React", "mappedType": "number","mappedName": "visibleMonths"}], "originalName": "VisibleMonths"},
+      {"names":[{"platform": "React", "mappedType": "boolean","mappedName": "showWeekNumbers"}], "originalName": "ShowWeekNumbers"},
+      {"names":[{"platform": "React", "mappedType": "DatePickerWeekStart","mappedName": "weekStart"}], "originalName": "WeekStart"},
+      {"names":[{"platform": "React", "mappedType": "method","mappedName": "stepDown"}], "originalName": "StepDown"},
+      {"names":[{"platform": "React", "mappedType": "method","mappedName": "stepUp"}], "originalName": "StepUp"} ]
   },
   {
     "originalName": "DateRangeDescriptor",
