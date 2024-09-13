@@ -151,12 +151,10 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonGroupModule));
 - **single-required** - ラジオ グループの動作を模倣します。選択できるボタンは 1 つだけであり、最初に選択すると、ユーザーの操作を通じて選択を解除することはできません。
 - **multiple** - グループ内の複数のボタンを選択または選択解除できます。
 
-<!-- WebComponents, Blazor -->
 以下のサンプルは、公開された `ButtonGroup` 選択モードを示しています。
 
 `sample="/inputs/button-group/selection", height="170", alt="{Platform} Button Group の選択例"`
 
-<!-- end: WebComponents, Blazor -->
 
 <!-- WebComponents, React -->
 `ToggleButton` は、`Selected` 属性または `ButtonGroup` の `SelectedItems` 属性を通じて選択済みとしてマークできます。
