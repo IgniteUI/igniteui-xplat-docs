@@ -61,6 +61,11 @@ stages:
           versionSource: 'spec'
           versionSpec: '16.x'
 
+      - task: UseDotNet@2
+        inputs:
+          packageType: 'sdk'
+          version: '6.x'
+
       - task: RegexReplace@3
         displayName: 'replace environment in doc/docfx'
         inputs:
