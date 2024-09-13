@@ -12,6 +12,24 @@ _language: ja
 
 ## **{PackageVerChanges-24-1-SEP}**
 
+### {PackageCharts} (チャート)
+ 
+- 新しい[データ円チャート](charts/types/data-pie-chart.md) - `DataPieChart` は円ャートを表示する新しいコンポーネントです。このコンポーネントは、`CategoryChart` と同様に動作し、基になるデータ モデルのプロパティを自動的に検出しながら、ItemLegend コンポーネントを介して選択、強調表示、アニメーション、凡例のサポートを可能にします。
+
+- 新しい [比例カテゴリ角度軸](charts/types/radial-chart.md) - スライスをプロットするための、`XamDataChart` のラジアル円シリーズの新しい軸。円チャートに似ており、データ ポイントが円グラフ内のセグメントとして表されます。
+
+- `Toolbar`
+
+    - 新しい ToolActionCheckboxList。
+        選択用のチェックボックスを備えた項目のコレクションを表示する新しい CheckboxList ToolAction。 ToolAction CheckboxList 内のグリッドの高さは 5 項目まで大きくなり、その後スクロールバーが表示されます。
+
+    - 新しいフィルタリングのサポート。
+
+    - 軸フィールドの変更。
+        CategoryChart をターゲットにする場合のツールバーの新しいデフォルトの IconMenu。
+        ラベル フィールドは X 軸にマップされ、値フィールドは Y 軸にマップされます。
+        ターゲット チャートは、行われた変更にリアルタイムで反応します。チャートに ItemsSource が設定されていない場合、IconMenu は非表示になります。
+
 ### {PackageCommon}
 
 - 新しい [Banner](notifications/banner.md) コンポーネント。
