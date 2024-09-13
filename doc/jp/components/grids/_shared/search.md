@@ -39,8 +39,14 @@ _language: ja
 ```
 <!-- end: Angular -->
 
+```css
+.gridSize {
+    --ig-size: var(--ig-size-small);
+}
+```
+
 ```razor
-<{ComponentSelector} @ref=grid Width="100%" Height="480px" AllowFiltering=true AutoGenerate=false Data=marketData DisplayDensity="DisplayDensity.Compact">
+<{ComponentSelector} @ref=grid Class="gridSize" Width="100%" Height="480px" AllowFiltering=true AutoGenerate=false Data=marketData>
     <IgbColumn Field="IndustrySector" DataType="GridColumnDataType.String" Sortable=true></IgbColumn>
     <IgbColumn Field="IndustryGroup" DataType="GridColumnDataType.String" Sortable=true></IgbColumn>
     <IgbColumn Field="SectorType" DataType="GridColumnDataType.String" Sortable=true></IgbColumn>
@@ -58,7 +64,7 @@ _language: ja
 ```
 
 ```html
-<{ComponentSelector} id="grid1" auto-generate="false" allow-filtering="true">
+<{ComponentSelector} id="grid1" class="gridSize" auto-generate="false" allow-filtering="true">
     <igc-column field="IndustrySector" data-type="string" sortable="true"></igc-column>
     <igc-column field="IndustryGroup" data-type="string" sortable="true"></igc-column>
     <igc-column field="SectorType" data-type="string" sortable="true"></igc-column>
@@ -69,7 +75,7 @@ _language: ja
 ```
 
 ```tsx
-<{ComponentSelector} ref={gridRef} autoGenerate="false" allowFiltering="true" displayDensity="compact" data={data}>
+<{ComponentSelector} ref={gridRef} className="gridSize" autoGenerate="false" allowFiltering="true" data={data}>
     <IgrColumn field="IndustrySector" dataType="string" sortable="true"></IgrColumn>        
     <IgrColumn field="IndustryGroup" dataType="string" sortable="true"></IgrColumn>        
     <IgrColumn field="SectorType" dataType="string" sortable="true"></IgrColumn>        
@@ -1017,7 +1023,7 @@ useEffect(() => {
 
 <!-- ComponentStart: TreeGrid -->
 
-`Input` 内のすべてのコンポーネントをラップします。左側で検索と 削除/クリア アイコンを切り替えます (検索入力が空かどうかに基づきます)。中央に入力を配置します。更に削除アイコンがクリックされたときに `SearchText` を更新し、`{ComponentName}` の `ClearSearch` メソッドを呼び出して強調表示をクリアします。
+`Input` 内のすべてのコンポーネントをラップします。左側で検索と 削除/クリア アイコンを切り替えます (検索入力が空かどうかに基づきます)。中央に入力を配置します。更に削除アイコンがクリックされたときに `SearchText` を更新し、`{ComponentName}` の `ClearSearch` メソッドを呼び出してハイライト表示をクリアします。
 
 ```html
 <igc-input id="searchBox" name="searchBox">

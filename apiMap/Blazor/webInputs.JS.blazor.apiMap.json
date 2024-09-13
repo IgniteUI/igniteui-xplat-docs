@@ -80,6 +80,19 @@
       {"names":[{"platform": "Blazor", "mappedType": "IgbActiveStepChangingArgsDetail","mappedName": "Detail"}], "originalName": "Detail"} ]
   },
   {
+    "originalName": "Banner",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Blazor","fileName": "Banner.cs","mappedName": "IgbBanner"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "open"}], "originalName": "Open"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "show"}], "originalName": "Show"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "hide"}], "originalName": "Hide"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "toggle"}], "originalName": "Toggle"} ]
+  },
+  {
     "originalName": "BaseAlertLike",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
@@ -1470,6 +1483,26 @@
       {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "Value"}], "originalName": "Value"},
       {"names":[{"platform": "Blazor", "mappedType": "DateTime[]","mappedName": "Values"}], "originalName": "Values"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "VisibleMonths"}], "originalName": "VisibleMonths"} ]
+  },
+  {
+    "originalName": "DatePicker",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Blazor","fileName": "DatePicker.cs","mappedName": "IgbDatePicker"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "Date","mappedName": "ActiveDate"}], "originalName": "ActiveDate"},
+      {"names":[{"platform": "Blazor", "mappedType": "Date","mappedName": "Min"}], "originalName": "Min"},
+      {"names":[{"platform": "Blazor", "mappedType": "Date","mappedName": "Max"}], "originalName": "Max"},
+      {"names":[{"platform": "Blazor", "mappedType": "string","mappedName": "InputFormat"}], "originalName": "InputFormat"},
+      {"names":[{"platform": "Blazor", "mappedType": "string","mappedName": "DisplayFormat"}], "originalName": "DisplayFormat"},
+      {"names":[{"platform": "Blazor", "mappedType": "string","mappedName": "Locale"}], "originalName": "Locale"},
+      {"names":[{"platform": "Blazor", "mappedType": "number","mappedName": "VisibleMonths"}], "originalName": "VisibleMonths"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean","mappedName": "ShowWeekNumbers"}], "originalName": "ShowWeekNumbers"},
+      {"names":[{"platform": "Blazor", "mappedType": "DatePickerWeekStart","mappedName": "WeekStart"}], "originalName": "WeekStart"},
+      {"names":[{"platform": "Blazor", "mappedType": "method","mappedName": "StepDown"}], "originalName": "StepDown"},
+      {"names":[{"platform": "Blazor", "mappedType": "method","mappedName": "StepUp"}], "originalName": "StepUp"} ]
   },
   {
     "originalName": "IDateRangeDescriptor",

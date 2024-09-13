@@ -336,8 +336,10 @@ IgrRadialGaugeModule.register();
 `sample="/gauges/radial-gauge/scale", height="320", alt="{Platform} ラジアル ゲージのスケール"`
 
 
-## ラベル
+## ラベルとタイトル
 ゲージ ラベルは `MinimumValue` と `MaximumValue` の値の間で指定された間隔で数値を表示する視覚要素です。0 はゲージ中央、1 はゲージ バッキングの外側範囲を表す `LabelExtent` プロパティで小数を使用してラベルの配置を設定できます。`FontBrush` や `Font` など、さまざまなスタイル プロパティを設定してラベルをカスタマイズできます。
+
+これらの針のラベルにはそれぞれ、`TitleExtent`、`TitleAngle`、`SubtitleFontSize`、`HighlightLabelBrush` など、フォント、角度、ブラシ、ゲージの中心からの距離を変更するために適用できるさまざまなスタイル属性があります。
 
 ```html
 <igx-radial-gauge
@@ -390,6 +392,40 @@ IgrRadialGaugeModule.register();
 
 
 `sample="/gauges/radial-gauge/labels", height="320", alt="{Platform} ラジアル ゲージのラベル"`
+
+## タイトルとサブタイトル
+
+`TitleText` プロパティと `SubtitleText` プロパティが使用可能であり、どちらも針のカスタム テキストを表示するために使用できます。あるいは、`TitleDisplaysValue` と `SubtitleDisplaysValue` を true に設定すると、針の値が表示され、`TitleText` と `SubtitleText` がオーバーライドされます。したがって、タイトルにカスタム テキストを使用しながらサブタイトルで値を表示したり、その逆を行ったりすることができます。
+
+以下に説明するように針のハイライトが表示されている場合は、`HighlightLabelText` を介してカスタム テキストを表示できます。それ以外の場合は、`HighlightLabelDisplaysValue` を有効にしてその値を表示できます。
+
+```html
+<igx-radial-gauge
+    titleText="Global Sales"
+    subtitleText="2024">
+</igx-radial-gauge>
+```
+
+```tsx
+<IgrRadialGauge
+    titleText="Global Sales"
+    subtitleText="2024"
+/>
+```
+
+```html
+<igc-radial-gauge
+  title-text="Global Sales"
+  subtitle-text="2024">
+</igc-radial-gauge>
+```
+
+```razor
+<IgbRadialGauge
+  TitleText="Global Sales"
+  SubTitleText="2024">
+</IgbRadialGauge>
+```
 
 ## オプティカル スケーリング
 
