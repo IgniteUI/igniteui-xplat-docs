@@ -22,6 +22,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
     - New ToolActionCheckboxList
         A new CheckboxList ToolAction that displays a collection of items with checkboxes for selecting. A grid inside ToolAction CheckboxList grows in height up to 5 items, then a scrollbar is displayed.
+        Requires IgbCheckboxListModule to be registered.
 
     - New Filtering Support
 
