@@ -6,15 +6,89 @@ mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "Tool
 namespace: Infragistics.Controls
 _language: ja
 ---
+
 # {ProductName} 変更ログ
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
-## {PackageGrids}
+### **{PackageVerChanges-24-1-SEP}**
+
+#### {PackageCharts} (チャート)
+ 
+- 新しい[データ円チャート](charts/types/data-pie-chart.md) - `DataPieChart` は円ャートを表示する新しいコンポーネントです。このコンポーネントは、`CategoryChart` と同様に動作し、基になるデータ モデルのプロパティを自動的に検出しながら、ItemLegend コンポーネントを介して選択、強調表示、アニメーション、凡例のサポートを可能にします。
+
+- 新しい [比例カテゴリ角度軸](charts/types/radial-chart.md) - スライスをプロットするための、`XamDataChart` のラジアル円シリーズの新しい軸。円チャートに似ており、データ ポイントが円グラフ内のセグメントとして表されます。
+
+- `Toolbar`
+
+    - 新しい ToolActionCheckboxList。
+        選択用のチェックボックスを備えた項目のコレクションを表示する新しい CheckboxList ToolAction。 ToolAction CheckboxList 内のグリッドの高さは 5 項目まで大きくなり、その後スクロールバーが表示されます。
+
+    - 新しいフィルタリングのサポート。
+
+    - 軸フィールドの変更。
+        CategoryChart をターゲットにする場合のツールバーの新しいデフォルトの IconMenu。
+        ラベル フィールドは X 軸にマップされ、値フィールドは Y 軸にマップされます。
+        ターゲット チャートは、行われた変更にリアルタイムで反応します。チャートに ItemsSource が設定されていない場合、IconMenu は非表示になります。
+
+#### {PackageGrids}
+
+- `すべてのグリッド`
+ - 新しい `RowClick` イベントが追加されました。
+- `PivotGrid`
+  - `PivotDimension` に `sortable` プロパティが追加されました。
+  - 水平レイアウトが追加されました。新しい `pivotUI` プロパティ内で `rowLayout` `horizontal` として有効にできます。
+  - 水平レイアウトのみの行ディメンション サマリーが追加されました。`horizontalSummary` を **true** に設定することで、各 `PivotDimension` に対して有効にできます。
+  - 水平集計の位置を設定するための `horizontalSummariesPosition` プロパティを `pivotUI` に追加しました。
+  - 行ディメンションの行ヘッダーが追加されました。新しい `pivotUI` プロパティ内で `showHeaders` **true** として有効にできます。
+  - キーボード ナビゲーションで行ディメンションヘッダーや列ヘッダーから行ヘッダーへ移動できるようになりました。
+  - キーボード操作で行ディメンションの縮小 (Alt + 矢印キー) および行ヘッダーのソート (Ctrl + 矢印上/下) ができるようになりました。
+
+**重大な変更**:
+- `すべてのグリッド`、`RowIsland`
+  - `displayDensity` の非推奨のプロパティが削除されました。
+  - `actualColumns`、`contentColumns` プロパティの名前を、`actualColumnList` および `contentColumnList` に変更しました。すべての列を取得するには、`column` または `columnList` プロパティを使用してください。
+  - `rowDelete` および `rowAdd` イベント引数タイプの名前を `RowDataCancelableEventArgs` に変更しました。
+  - `contextMenu` イベント引数タイプの名前を `GridContextMenuEventArgs` に変更しました。
+  - `GridEditEventArgs`、`GridEditDoneEventArgs`、`PinRowEventArgs` イベントの `rowID` および `primaryKey` プロパティが削除されました。代わりに `rowKey` を使用してください。
+- `PivotGrid`
+  - `showPivotConfigurationUI` プロパティが削除されました。`pivotUI` を使用して、その中に新しい `showConfiguration` オプションを設定してください。
+- `Column`
+  - `movable` プロパティが削除されました。グリッドの `moving` プロパティを使用してください。
+  - `columnChildren` プロパティが削除されました。代わりに `childColumns` を使用してください。
+- `ColumnGroup`
+  - `children` プロパティが削除されました。代わりに `childColumns` を使用してください。
+- `Paginator`
+  - `isFirstPageDisabled` および `isLastPageDisabled` プロパティが削除されました。代わりに、`isFirstPage` および `isLastPage` を使用してください。
+
 
 ### **{PackageVerChanges-24-1-JUN}**
 
-- `DisplayDensity` 非推奨となり、代わりに `--ig-size` CSS カスタム プロパティが使用されるようになりました。
+#### {PackageCommon}
+- `Input`、`Textarea` - ユーザー入力を制限することなく検証ルールを適用できるように `ValidateOnly` を公開しました。
+- `Dropdown` - `PositionStrategy` プロパティは非推奨です。ドロップダウンは、ブラウザー ビューポートの最上位レイヤーにコンテナーをレンダリングするために `Popover` API を使用するようになったため、このプロパティは廃止されました。
+- `DockManager` - `SplitPane` の `IsMaximized` は非推奨です。分割ペイン レベルで isMaximized を true に設定しても、分割ペインはコンテナーとしてのみ機能し、最大化されて表示される実際のコンテンツがないため、実際の効果はありません。代わりに、`TabGroupPane` および/または `ContentPane` の `IsMaximized` プロパティを使用してください。
+
+#### {PackageGrids}
+- `DisplayDensity` 非推奨となり、代わりに `--ig-size` CSS カスタム プロパティが使用されるようになりました。詳細については、[グリッド サイズ](grids/grid/size.md) トピックを参照してください。
+
+#### {PackageCharts} (チャート)
+
+* [データ凡例のグループ化](charts/features/chart-data-legend.md#{PlatformLower}-データ凡例のグループ化) と [データ ツールチップのグループ化](charts/features/chart-data-tooltip.md#{PlatformLower}-データ-チャートのデータ-ツールチップのグループ化) - 新しいグループ化機能が追加されました。`GroupRowVisible` プロパティは、各シリーズのグループ化を切り替え、オプトインすると `DataLegendGroup` プロパティを介してグループ テキストを割り当てることができます 同じ値が複数のシリーズに適用されている場合、それらはグループ化されて表示されます。すべてのユーザー向けに分類および整理する必要がある大規模なデータセットに役立ちます。
+
+- [チャートの選択](charts/features/chart-data-selection.md) - 新しいシリーズ選択のスタイル設定。これは、`CategoryChart` および `XamDataChart` のすべてのカテゴリ、財務、およびラジアル シリーズに広く採用されています。シリーズはクリックして異なる色で表示したり、明るくしたり、薄くしたり、フォーカスのアウトラインを表示したりできます。個々のシリーズまたはデータ項目全体を通じて影響を受ける項目を管理します。
+複数のシリーズとマーカーがサポートされています。特定のデータ項目の値間のさまざまな相違点や類似点を示すのに役立ちます。また、`SelectedSeriesItemsChanged` イベントと `SelectedSeriesItems` は、選択内容に基づいたデータ分析を行うポップアップやその他の画面など、アプリケーション内で実行できるその他のアクションを取り巻く堅牢なビジネス要件を構築するための追加の支援として利用できます。 
+
+- [ツリーマップのハイライト表示](charts/types/treemap-chart.md#{PlatformLower}-リーマップのハイライト表示) - ツリー マップの項目のマウスオーバーによるハイライト表示を構成できる `HighlightingMode` プロパティが公開されました。このプロパティには 2 つのオプションがあります: `Brighten` では、マウスを置いた項目にのみハイライト表示が適用され、`FadeOthers` では、マウスホバーした項目のハイライト表示はそのままで、それ以外はすべてフェードアウトします。このハイライト表示はアニメーション化されており、`HighlightingTransitionDuration` プロパティを使用して制御できます。
+
+- [ツリーマップのパーセントベースのハイライト表示](charts/types/treemap-chart.md#{PlatformLower}-ツリーマップのパーセントベースのハイライト表示) - 新しいパーセントベースのハイライト表示により、ノードはコレクションの進行状況またはサブセットを表すことができます。外観は、データ項目のメンバーによって、または新しい `HighlightedItemsSource` を指定することによって、特定の値までの背景色の塗りつぶしとして表示されます。`HighlightedValuesDisplayMode` で切り替えることができ、`FillBrushes` でスタイルを設定できます。
+
+- `Toolbar` - 選択した特定のツールの周囲に境界線を描くための ToolAction の新しい `IsHighlighted` オプション。
+
+#### {PackageGauges} (ゲージ)
+
+- `XamRadialGauge`
+    - ハイライト針の新しいラベル。`HighlightLabelText` と `HighlightLabelSnapsToNeedlePivot` および、その他の HighlightLabel の多くのスタイル関連プロパティが追加されました。
 
 ### **{PackageVerChanges-23-2-MAR}**
 
@@ -71,7 +145,6 @@ _language: ja
       - [セルの結合](grids/data-grid/cell-merging.md)
   - 新規 API:
       - `SelectionChanged` イベントを追加しました。複数行の選択など、選択のインタラクションの変化を検出するために使用されます。
-       
   - 重大な変更:
       - グリッドの SummaryScope プロパティのタイプを `DataSourceSummaryScope` から SummaryScope に変更しました。
       - GroupHeaderDisplayMode プロパティのタイプを `DataSourceSectionHeaderDisplayMode` から GroupHeaderDisplayMode に変更しました。
@@ -143,6 +216,37 @@ Data Grid コンポーネントには 「inputs」 パッケージが必要で�
 
 
 ## {PackageCommon}
+
+### **{PackageCommonVerChanges-5.0.0}**
+
+- `Icon`
+  - `setIconRef` メソッドが追加されました。これにより、アイコンを SVG ファイルで登録および置き換えることができます。
+  - すべてのコンポーネントが内部的な参照によるアイコンを使用するようになり、カスタム テンプレートを明示的に提供しなくても簡単に置き換えられるようになりました。
+- `RadioGroup`
+  - `name` および `value` プロパティを追加しました。
+
+**重大な変更**:
+
+- `Form` コンポーネントを削除しました。代わりにネイティブのフォームを使用してください。
+- 以下のコンポーネントの `size` プロパティが削除され、代わりに `--ig-size` CSS カスタム プロパティが使用されるようになりました。
+  - `Avatar`、`Button`,`IconButton`、`Calendar`、`Chip`、`Dropdown`、`Icon`、`Input`、`List`、`Rating`、`Snackbar`、`Tabs`、`Tree`
+- カスタム `igcFocus` および `igcBlur` イベントが削除されました。次のコンポーネントには、代わりにネイティブの `focus` イベントと `blur` イベントを使用してください。
+  - `Button`、`IconButton`、`Checkbox`、`Switch`、`Combo`、`DateTimeInput`、`Input`、`MaskInput`、`Radio`、**IgcSelectComponent**、`Textarea`
+- `Checkbox`、`Switch`、`Radio`
+  - `igcChange` イベント引数を `CustomEvent<boolean>` から `CustomEvent<{ checked: boolean; value: string | undefined }>` に変更しました。
+- `Combo`、**IgcSelectComponent**
+  - `positionStrategy`、`flip`、`sameWidth` プロパティが削除されました。
+- `Dialog`
+  - `closeOnEscape` プロパティの名前を `keepOpenOnEscape` に変更しました。
+- `Dropdown`
+  - `positionStrategy` プロパティが削除されました。
+- `Input`
+  - `maxlength` および `minlength` プロパティが削除されました。代わりに、ネイティブの `maxLength` および `minLength` プロパティ、または `max` および `min` を使用してください。
+  - `readonly` および `inputmode` プロパティの名前を `readOnly` および `inputMode` に変更しました。
+- `RangeSlider`
+  - `ariaThumbLower`/`ariaThumbUpper` プロパティの名前を、`thumbLabelLower`/`thumbLabelUpper` に変更しました。
+- `Rating`
+  - `readonly` プロパティの名前を `readOnly` に変更しました。
 
 ### **{PackageCommonVerChanges-4.11.1}**
 
@@ -649,7 +753,7 @@ Ignite UI Web Components の初期リリース
 - [Calendar](scheduling/calendar.md) コンポーネント
 - [Card](layouts/card.md) コンポーネント
 - [Checkbox](inputs/checkbox.md) コンポーネント
-- [Form](inputs/form.md) コンポーネント
+- Form コンポーネント
 - [Icon](layouts/icon.md) コンポーネント
 - [IconB utton](inputs/icon-button.md) コンポーネント
 - [Input](inputs/input.md) コンポーネント
@@ -669,6 +773,8 @@ Ignite UI Web Components の初期リリース
 * [データ凡例のグループ化](charts/features/chart-data-legend.md#{PlatformLower}-データ凡例のグループ化) & [データ ツールチップのグループ化](charts/features/chart-data-tooltip.md#{PlatformLower}-データ-チャートのデータ-ツールチップのグループ化) - 新しいグループ化機能が追加されました。`GroupRowVisible` プロパティは、各シリーズのグループ化を切り替え、オプトインすると `DataLegendGroup` プロパティを介してグループ テキストを割り当てることができます。同じ値が複数のシリーズに適用されている場合、それらはグループ化されて表示されます。すべてのユーザー向けに分類および整理する必要がある大規模なデータセットに役立ちます。
 
 - [チャートの選択](charts/features/chart-data-selection.md) - 新しいシリーズ選択のスタイル設定。これは、`CategoryChart` および `XamDataChart` のすべてのカテゴリ、財務、およびラジアル シリーズに広く採用されています。シリーズはクリックして異なる色で表示したり、明るくしたり、薄くしたり、フォーカスのアウトラインを表示したりできます。個々のシリーズまたはデータ項目全体を通じて影響を受ける項目を管理します。複数のシリーズとマーカーがサポートされています。特定のデータ項目の値間のさまざまな相違点や類似点を示すのに役立ちます。また、`SelectedSeriesItemsChanged` イベントと `SelectedSeriesItems` は、選択内容に基づいたデータ分析を行うポップアップやその他の画面など、アプリケーション内で実行できるその他のアクションを取り巻く堅牢なビジネス要件を構築するための追加の支援として利用できます.
+
+- [比例カテゴリ角度軸](charts/types/radial-chart.md) - `XamDataChart` のラジアル円シリーズの新しい軸により、データ チャートのすべての追加機能を使用してロバスト可能な視覚化をする円チャートの作成が可能になります。
 
 - [ツリーマップのハイライト表示](charts/types/treemap-chart.md#{PlatformLower}-ツリーマップのハイライト表示) - ツリー マップの項目のマウスオーバーによるハイライト表示を構成できる `HighlightingMode` プロパティが公開されました。このプロパティには 2 つのオプションがあります: `Brighten` では、マウスを置いた項目にのみハイライト表示が適用され、`FadeOthers` では、マウスホバーした項目のハイライト表示はそのままで、それ以外はすべてフェードアウトします。このハイライト表示はアニメーション化されており、`HighlightingTransitionDuration`  プロパティを使用して制御できます。
     
@@ -739,7 +845,7 @@ Ignite UI Web Components の初期リリース
 * 高度に構成可能な [DataLegend](charts/features/chart-data-legend.md) コンポーネントを追加しました。これは、`Legend` とよく似ていますが、シリーズの値を表示し、シリーズの行と値の列をフィルタリングし、値のスタイルとフォーマットを行うための多くの構成プロパティを提供します。
 * 高度に構成可能な [DataToolTip](charts/features/chart-data-tooltip.md) が追加されました。これは、シリーズの値とタイトル、およびシリーズの凡例バッジをツールチップに表示します。これは、すべてのチャート タイプのデフォルトのツールチップになりました。
 * 積層シリーズのアニメーションとトランジションインのサポートが追加されました。`IsTransitionInEnabled` プロパティを true に設定すると、アニメーションを有効にできます。そこから、`TransitionInDuration` プロパティを設定してアニメーションが完了するまでの時間を決定し、`TransitionInMode` でアニメーションのタイプを決定できます。
-* 追加された `AssigningCategoryStyle` イベントは、`XamDataChart` のすべてのシリーズで利用できるようになりました。このイベントは、背景色の `Fill` や強調表示など、シリーズ項目の外観を条件付きで構成する場合に処理されます。
+* 追加された `AssigningCategoryStyle` イベントは、`XamDataChart` のすべてのシリーズで利用できるようになりました。このイベントは、背景色の `Fill` やハイライト表示など、シリーズ項目の外観を条件付きで構成する場合に処理されます。
 * CalloutLayer の新しい `AllowedPositions` 列挙体。チャート内のどこにコールアウトを配置するかを制限するために使用されます。デフォルトでは、コールアウトは最適な場所に配置されますが、これは `TopLeft`、`TopRight`、`BottomLeft`、または `BottomRight` を強制するために使用されます。
 * 注釈レイヤーに追加された新しいコーナー半径プロパティ。各コールアウトのコーナーを丸めるために使用されます。コーナー半径がデフォルトで追加されていることに注意してください。
     - CalloutLayer の `CalloutCornerRadius`
@@ -810,10 +916,10 @@ Ignite UI Web Components の初期リリース
     - chart.`PlotAreaMarginRight`
     - chart.`PlotAreaMarginBottom`
     - chart.`ComputedPlotAreaMarginMode`
-* 新しい強調表示プロパティ:
+* 新しいハイライト表示プロパティ:
     - chart.`HighlightingMode` - ホバーされたシリーズとホバーされていないシリーズをフェードまたは明るくするかを設定します。
-    - chart.`HighlightingBehavior` - 真上または最も近い項目など、マウスの位置に応じてシリーズを強調表示するかどうかを設定します。
-    - 以前のリリースでは、強調表示はホバー時にフェードするように制限されていたことに注意してください。
+    - chart.`HighlightingBehavior` - 真上または最も近い項目など、マウスの位置に応じてシリーズをハイライト表示するかどうかを設定します。
+    - 以前のリリースでは、ハイライト表示はホバー時にフェードするように制限されていたことに注意してください。
 * 積層型、散布、極座標、ラジアル、およびシェイプ シリーズにハイライト表示を追加しました。
 * 積層型、散布、極座標、ラジアル、およびシェイプ シリーズに注釈レイヤーを追加しました。
 * 積層型シリーズ内の個々の積層フラグメントのデータ ソースをオーバーライドするためのサポートが追加されました。
@@ -836,7 +942,7 @@ Ignite UI Web Components の初期リリース
 #### チャート凡例
 
 * バブル、ドーナツ、および円チャートで使用できる水平方向の `Orientation` プロパティを ItemLegend に追加しました
-* `LegendHighlightingMode` プロパティの追加 - 凡例項目にホバーした時にシリーズの強調表示を有効にします
+* `LegendHighlightingMode` プロパティの追加 - 凡例項目にホバーした時にシリーズのハイライト表示を有効にします
 
 
 ## {PackageInputs}
@@ -881,7 +987,7 @@ Ignite UI Web Components の初期リリース
 
 * マップの表示を折り返すためのサポートが追加されました (水平方向に無限にスクロールできます)。
 * 座標原点を折り返しながら、一部のマップ シリーズの表示をシフトするためのサポートが追加されました。
-* シェイプ シリーズの強調表示のサポートが追加されました。
+* シェイプ シリーズのハイライト表示のサポートが追加されました。
 * シェイプ シリーズの一部の注釈レイヤーのサポートが追加されました。
 
 

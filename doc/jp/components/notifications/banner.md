@@ -33,6 +33,39 @@ defineComponents(IgcBannerComponent);
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`Banner` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrBannerModule, IgrBanner } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrBannerModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
+`Banner` を使用する前に、次のように登録する必要があります:
+
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbBannerModule));
+```
+
+スタイルを `Banner` コンポーネントに適用するには、追加の CSS ファイルをリンクする必要もあります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+<!-- end: Blazor -->
+
 {ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 ### Banner の表示
@@ -47,6 +80,33 @@ Banner コンポーネントを表示するには、ボタン クリックで `S
 </igc-banner>
 ```
 
+```tsx
+<IgrButton clicked={() => bannerRef.current.show()}>
+    <span>Show Banner</span>
+</IgrButton>
+
+<IgrBanner ref={bannerRef}>
+    <span key="message">You are currently offline.</span>
+</IgrBanner>
+```
+
+```razor
+<IgbButton @onclick="ShowBanner">Show Banner</IgbButton>
+
+<IgbBanner @ref="bannerRef">
+    You are currently offline.
+</IgbBanner>
+
+@code {
+    private IgbBanner bannerRef;
+
+    private void ShowBanner()
+    {
+        this.bannerRef.ShowAsync();
+    }
+}
+```
+
 > [!NOTE]
 > `Banner` には、バナーを閉じるデフォルトの `OK` アクション ボタンが含まれています。
 
@@ -57,7 +117,7 @@ Banner コンポーネントを表示するには、ボタン クリックで `S
 
 ### バナー メッセージの変更
 
-`igc-banner` タグに渡されるコンテンツを変更することによりバナーに表示されるメッセージを設定できます。指定したバナー領域にテキストが表示され、表示時にバナーはデフォルト テンプレートを使用します。以下は、サンプル バナーのコンテンツを変更してより多くの情報を提供します。
+`{BannerSelector}` タグに渡されるコンテンツを変更することによりバナーに表示されるメッセージを設定できます。指定したバナー領域にテキストが表示され、表示時にバナーはデフォルト テンプレートを使用します。以下は、サンプル バナーのコンテンツを変更してより多くの情報を提供します。
 
 ```html
 <igc-banner id="banner">
@@ -65,14 +125,26 @@ Banner コンポーネントを表示するには、ボタン クリックで `S
 </igc-banner>
 ```
 
+```tsx
+<IgrBanner ref={bannerRef}>
+    <span key="message">You have lost connection to the internet. This app is offline.</span>
+</IgrBanner>
+```
+
+```razor
+<IgbBanner @ref="bannerRef">
+    You have lost connection to the internet. This app is offline.
+</IgbBanner>
+```
+
 ### アイコンの追加
 
-バナーの `prefix` スロットを使用して、[`igc-icon`](../layouts/icon.md) をバナーに表示できます。Icon は常にバナー メッセージの最初に配置されます。
+バナーの `prefix` スロットを使用して、`Icon` をバナーに表示できます。Icon は常にバナー メッセージの最初に配置されます。
 
 > [!NOTE]
-> 複数の `igc-icon` 要素が挿入される場合、バナーはそれらすべてを最初に配置しようとします。`igc-icon` は 1 つのみ、直接渡すことに注意してください。
+> 複数の `Icon` 要素が挿入される場合、バナーはそれらすべてを最初に配置しようとします。`Icon` は 1 つのみ、直接渡すことに注意してください。
 
-`igc-icon` をバナーに渡すには、`prefix` スロットを使用します。
+`Icon` をバナーに渡すには、`prefix` スロットを使用します。
 
 ```html
 <igc-banner id="banner">
@@ -81,13 +153,41 @@ Banner コンポーネントを表示するには、ボタン クリックで `S
 </igc-banner>
 ```
 
-バナー メッセージで `igc-icon` を使用する場合は、バナーのコンテンツに挿入するだけです。
+```tsx
+<IgrBanner ref={bannerRef}>
+    <IgrIcon key="icon" slot="prefix" name="signal_wifi_off"></IgrIcon>
+    <span key="message">You have lost connection to the internet. This app is offline.</span>
+</IgrBanner>
+```
+
+```razor
+<IgbBanner @ref="bannerRef">
+    <IgbIcon slot="prefix" IconName="signal_wifi_off" Collection="material"></IgbIcon>
+    You have lost connection to the internet. This app is offline.
+</IgbBanner>
+```
+
+バナー メッセージで `Icon` を使用したい場合は、バナーのコンテンツに挿入するだけです。
 
 ```html
 <igc-banner id="banner">
     You have lost connection to the internet. This app is offline.
     <igc-icon name="signal_wifi_off"></igc-icon>
 </igc-banner>
+```
+
+```tsx
+<IgrBanner ref={bannerRef}>
+    <span key="message">You have lost connection to the internet. This app is offline.</span>
+    <IgrIcon key="icon" name="signal_wifi_off"></IgrIcon>
+</IgrBanner>
+```
+
+```razor
+<IgbBanner @ref="bannerRef">
+    You have lost connection to the internet. This app is offline.
+    <IgbIcon IconName="signal_wifi_off" Collection="material"></IgbIcon>
+</IgbBanner>
 ```
 
 ### バナー ボタンの変更
@@ -105,6 +205,41 @@ Banner コンポーネントを表示するには、ボタン クリックで `S
         </igc-button>
     </div>
 </igc-banner>
+```
+
+```tsx
+<IgrBanner ref={bannerRef}>
+    <IgrIcon key="icon" slot="prefix" name="signal_wifi_off"></IgrIcon>
+    <span key="message">You have lost connection to the internet. This app is offline.</span>
+    <div key="actions" slot="actions">
+        <IgrButton key="button" variant="flat" clicked={() => bannerRef.current.toggle()}>
+            <IgrRipple key="ripple" />
+            <span key="action-text">Toggle Banner</span>
+        </IgrButton>
+    </div>
+</IgrBanner>
+```
+
+```razor
+<IgbBanner @ref="bannerRef">
+    <IgbIcon slot="prefix" IconName="signal_wifi_off" Collection="material"></IgbIcon>
+    You have lost connection to the internet. This app is offline.
+    <div slot="actions">
+        <IgbButton Variant="ButtonVariant.Flat" @onclick="OnButtonClick">
+            Toggle Banner
+            <IgbRipple />
+        </IgbButton>
+    </div>
+</IgbBanner>
+
+@code {
+    private IgbBanner bannerRef;
+
+    private void OnButtonClick()
+    {
+        this.bannerRef.ToggleAsync();
+    }
+}
 ```
 
 `sample="/notifications/banner/banner-sample-2", height="530", alt="{Platform} Banner の例"`
@@ -126,6 +261,46 @@ const banner = document.getElementById('banner') as IgcBannerComponent;
 banner.addEventListener('igcClosing', (event) => {
   event.preventDefault();
 });
+```
+
+```tsx
+<IgrBanner ref={bannerRef}>
+    ...
+</IgrBanner>
+
+const bannerRef = useRef<IgrBanner>(null);
+
+useEffect(() => {
+    bannerRef.current.nativeElement.addEventListener('igcClosing', (event) => {
+        event.preventDefault();
+    });
+}, [])
+```
+
+```razor
+<IgbBanner id="banner">
+    ...
+</IgbBanner>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("handleClosing");
+        }
+    }
+}
+```
+```razor
+//In JavaScript:
+function handleClosing() {
+    const banner = document.getElementById('banner');
+
+    banner.addEventListener('igcClosing', (event) => {
+        event.preventDefault();
+    });
+}
 ```
 
 > [!NOTE]
@@ -152,7 +327,48 @@ banner.addEventListener('igcClosing', (event) => {
 </igc-banner>
 ```
 
+```tsx
+<IgrBanner ref={bannerRef}>
+    <IgrIcon key="icon" slot="prefix" name="signal_wifi_off"></IgrIcon>
+    <span key="message">You have lost connection to the internet. This app is offline.</span>
+    <div key="actions" slot="actions">
+        <IgrButton key="button-offline" variant="flat" clicked={() => bannerRef.current.hide()}>
+            <IgrRipple key="ripple-offline" />
+            <span key="action-offline">Continue Offline</span>
+        </IgrButton>
+        <IgrButton key="button-wifi" variant="flat" clicked={() => refreshBanner()}>
+            <IgrRipple key="ripple-wifi" />
+            <span key="action-wifi">Turn On Wifi</span>
+        </IgrButton>
+    </div>
+</IgrBanner>
+```
 
+```razor
+<IgbBanner @ref="bannerRef">
+    <IgbIcon IconName="signal_wifi_off" Collection="material" slot="prefix"></IgbIcon>
+    You have lost connection to the internet. This app is offline.
+    <div slot="actions">
+        <IgbButton Variant="ButtonVariant.Flat" @onclick="HideBanner">
+            Continue Offline
+            <IgbRipple />
+        </IgbButton>
+        <IgbButton Variant="ButtonVariant.Flat" @onclick="RefreshBanner">
+            Turn On Wifi
+            <IgbRipple />
+        </IgbButton>
+    </div>
+</IgbBanner>
+
+@code {
+    private IgbBanner bannerRef;
+
+    private void HideBanner()
+    {
+        this.bannerRef.HideAsync();
+    }
+}
+```
 
 > Google の[マテリアル デザイン ガイドライン](https://material.io/design/components/banners.html#anatomy)では、バナーはに表示するボタンは 2 つまでです。`Banner` は、`actions` スロットの要素数を明示的に制限しませんが、マテリアル デザイン ガイドに従う場合は、最大 2 つの要素を使用することを強くお勧めします。
 
@@ -204,6 +420,79 @@ public refreshBanner() {
         this.banner.show();
     }
     this.wifiState = !this.wifiState;
+}
+```
+
+```tsx
+<IgrNavbar>
+    <h1 key="header">Gallery</h1>
+    <IgrIcon ref={iconRef} key="icon" name="signal_wifi_off" slot="end" onClick={() => refreshBanner()}></IgrIcon>
+</IgrNavbar>
+
+<IgrBanner ref={bannerRef}>
+    ...
+    <div key="actions" slot="actions">
+        ...
+        <IgrButton key="button-wifi" variant="flat" clicked={() => refreshBanner()}>
+            <IgrRipple key="ripple-wifi" />
+            <span key="action-wifi">Turn On Wifi</span>
+        </IgrButton>
+    </div>
+</IgrBanner>
+
+const bannerRef = useRef<IgrBanner>(null);
+const iconRef = useRef<IgrIcon>(null);
+
+const [wifiState, setWifiState] = useState(false);
+
+function refreshBanner() {
+    if (!wifiState) {
+        iconRef.current.name = 'signal_wifi_4_bar';
+        bannerRef.current.hide();
+    } else {
+        iconRef.current.name = 'signal_wifi_off';
+        bannerRef.current.show();
+    }
+    setWifiState(current => !current);
+}
+```
+
+```razor
+<IgbNavbar>
+    <h1>Gallery</h1>
+    <IgbIcon @ref="iconRef" IconName="@iconName" Collection="material" slot="end" @onclick="RefreshBanner"></IgbIcon>
+</IgbNavbar>
+
+<IgbBanner @ref="bannerRef">
+    ...
+    <div slot="actions">
+        ...
+        <IgbButton Variant="ButtonVariant.Flat" @onclick="RefreshBanner">
+            Turn On Wifi
+            <IgbRipple />
+        </IgbButton>
+    </div>
+</IgbBanner>
+
+@code {
+    private IgbBanner bannerRef;
+    private string iconName = "signal_wifi_off";
+    private bool wifiState = false;
+    
+    private void RefreshBanner()
+    {
+        if (!this.wifiState)
+        {
+            this.iconName = "signal_wifi_4_bar";
+            this.bannerRef.HideAsync();
+        }
+        else
+        {
+            this.iconName = "signal_wifi_off";
+            this.bannerRef.ShowAsync();
+        }
+        this.wifiState = !this.wifiState;
+    }
 }
 ```
 
