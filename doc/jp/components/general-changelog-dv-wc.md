@@ -1312,7 +1312,7 @@ import { IgcLiveGridComponent } from 'igniteui-webcomponents-grids/ES5/igc-live-
 - ARIA のサポート。
 - 外部ドラッグ/ドロップをサポートする API。
 - 閉じる、ピン固定、ドラッグなどのユーザー操作のプロパティとイベント。
-- Angular プロジェクトの `ng update` のサポート。
+- Angular プロジェクトの **ng update** のサポート。
 
 ### **{PackageDockManagerVerChanges-1.0.3}**
 
