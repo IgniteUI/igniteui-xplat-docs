@@ -2,13 +2,142 @@
 title: {Platform} 新機能 | {ProductName} | インフラジスティックス
 _description: {ProductName} の新機能について学んでください。
 _keywords: Changelog, What's New, {ProductName}, Infragistics, 変更ログ, 新機能, インフラジスティックス
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "Toolbar", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Grid", "GridSelectionMode", DataGridCellEventArgs, DataGridSelectionMode, DataSourceSummaryOperand, "XamRadialGauge", "XamRadialChart"]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "Toolbar", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Grid", "GridSelectionMode", DataGridCellEventArgs, DataGridSelectionMode, DataSourceSummaryOperand, "XamRadialGauge", "XamRadialChart", "Toolbar"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 # {ProductName} 変更ログ
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
+
+## **{PackageVerChanges-24-1-SEP}**
+
+### {PackageCharts} (チャート)
+ 
+- 新しい[データ円チャート](charts/types/data-pie-chart.md) - `DataPieChart` は円ャートを表示する新しいコンポーネントです。このコンポーネントは、`CategoryChart` と同様に動作し、基になるデータ モデルのプロパティを自動的に検出しながら、ItemLegend コンポーネントを介して選択、強調表示、アニメーション、凡例のサポートを可能にします。
+
+- 新しい [比例カテゴリ角度軸](charts/types/radial-chart.md) - スライスをプロットするための、`XamDataChart` のラジアル円シリーズの新しい軸。円チャートに似ており、データ ポイントが円グラフ内のセグメントとして表されます。
+
+- `Toolbar`
+
+    - 新しい ToolActionCheckboxList。
+        選択用のチェックボックスを備えた項目のコレクションを表示する新しい CheckboxList ToolAction。 ToolAction CheckboxList 内のグリッドの高さは 5 項目まで大きくなり、その後スクロールバーが表示されます。
+
+    - 新しいフィルタリングのサポート。
+
+    - 軸フィールドの変更。
+        CategoryChart をターゲットにする場合のツールバーの新しいデフォルトの IconMenu。
+        ラベル フィールドは X 軸にマップされ、値フィールドは Y 軸にマップされます。
+        ターゲット チャートは、行われた変更にリアルタイムで反応します。チャートに ItemsSource が設定されていない場合、IconMenu は非表示になります。
+
+### {PackageCommon}
+
+- 新しい [Banner](notifications/banner.md) コンポーネント。
+- 新しい [DatePicker](scheduling/date-picker.md) コンポーネント。
+- 新しい `Divider` コンポーネント。
+- すべてのコンポーネントにネイティブ イベントのサポートが追加されました。
+- `Icon`
+  - `setIconRef` メソッドが追加されました。これにより、アイコンを SVG ファイルで登録および置き換えることができます。
+  - すべてのコンポーネントが内部的な参照によるアイコンを使用するようになり、カスタム テンプレートを明示的に提供しなくても簡単に置き換えられるようになりました。
+- `Combo`、`DatePicker`、`Dialog`、`Dropdown`、 `ExpansionPanel`、`NavDrawer`、`Toast`、`Snackbar`、**IgrSelectComponent**
+  - トグル メソッドの `show`、`hide`、`toggle` メソッドは、成功した場合に **true** を返すようになりました。そうでない場合は **false**。
+- **IgrButtonComponent**、`IconButton`、`Checkbox`、`Switch`、`Combo`、`DateTimeInput`、`Input`、`MaskInput`、`Radio`、**IgrSelectComponent**、`Textarea`
+  - カスタムの `focus` および `blur` イベントは非推奨になりました。代わりにネイティブの `onFocus` および `onBlur` イベントを使用してください。
+- `RadioGroup`
+  - `Name` および `Value` プロパティを追加しました。
+
+**重大な変更**:
+
+- 古い **IgrDatePicker** の名前を **IgrXDatePicker** に変更しました。
+- `Form` コンポーネントを削除しました。代わりにネイティブのフォームを使用してください。
+- 以下のコンポーネントの `size` プロパティが削除され、代わりに `--ig-size` CSS カスタム プロパティが使用されるようになりました。
+  - `Avatar`、 **IgrButtonComponent**、`IconButton`、`Calendar`、`Chip`、`Dropdown`、`Icon`、`Input`、`List`、`Rating`、`Snackbar`、`Tabs`、`Tree`
+- `Badge`、`Chip`、`LinearProgress`、`CircularProgress`
+  - `Variant` プロパティ タイプの名前を `StyleVariant` に変更しました。
+- `Calendar`
+  - `WeekStart` プロパティ タイプの名前を `WeekDays` に変更しました。
+- `Checkbox`、`Switch`
+  - `change` イベント引数タイプを `ComponentBoolValueChangedEventArgs` から `CheckboxChangeEventArgs` に変更しました。
+- `Combo`、**IgrSelectComponent**
+  - `positionStrategy`、`flip`、`sameWidth` プロパティが削除されました。
+- `DateTimeInput`
+  - `maxValue` および `minValue` プロパティが削除されました。代わりに `max` および `min` を使用してください。
+- `Dropdown`
+  - `positionStrategy` プロパティが削除されました。
+- `Input`
+  - 古い名前の `maxlength` および `minlength` プロパティが削除されました。`maxLength` および `minLength` を使用してください。
+  - 古い名前の `readonly` および `inputmode` プロパティが削除されました。`readOnly` および `inputMode` を使用してください。
+  - `inputMode` タイプも `string` (文字列) に変更されました。
+- `Radio`
+  - `change` イベント引数タイプを `ComponentBoolValueChangedEventArgs` から `RadioChangeEventArgs` に変更しました。
+- `RangeSlider`
+  - `ariaThumbLower` および `ariaThumbUpper` プロパティが削除されました。代わりに `thumbLabelLower` および `thumbLabelUpper` を使用してください。
+- `Rating`
+  - `readonly` プロパティの名前を `readOnly` に変更しました。
+
+### {PackageGrids}
+
+- `すべてのグリッド`
+ - 新しい `RowClick` イベントが追加されました。
+- `PivotGrid`
+  - `PivotDimension` に `sortable` プロパティが追加されました。
+  - 水平レイアウトが追加されました。新しい `pivotUI` プロパティ内で `rowLayout` `horizontal` として有効にできます。
+  - 水平レイアウトのみの行ディメンション サマリーが追加されました。`horizontalSummary` を **true** に設定することで、各 `PivotDimension` に対して有効にできます。
+  - 水平集計の位置を設定するための `horizontalSummariesPosition` プロパティを `pivotUI` に追加しました。
+  - 行ディメンションの行ヘッダーが追加されました。新しい `pivotUI` プロパティ内で `showHeaders` **true** として有効にできます。
+  - キーボード ナビゲーションで行ディメンションヘッダーや列ヘッダーから行ヘッダーへ移動できるようになりました。
+  - キーボード操作で行ディメンションの縮小 (Alt + 矢印キー) および行ヘッダーのソート (Ctrl + 矢印上/下) ができるようになりました。
+
+**重大な変更**:
+
+- `すべてのグリッド`、`RowIsland`
+  - `displayDensity` の非推奨のプロパティが削除されました。
+  - `actualColumns`、`contentColumns` プロパティの名前を、`actualColumnList` および `contentColumnList` に変更しました。すべての列を取得するには、`columns` または `columnList` プロパティを使用してください。
+  - `rowDelete` および `rowAdd` イベント引数タイプの名前を `RowDataCancelableEventArgs` に変更しました。
+  - `contextMenu` イベント引数タイプの名前を `GridContextMenuEventArgs` に変更しました。
+  - `GridEditEventArgs`、`GridEditDoneEventArgs`、`PinRowEventArgs` イベントの `rowID` および `primaryKey` プロパティが削除されました。代わりに `rowKey` を使用してください。
+- `PivotGrid`
+  - `showPivotConfigurationUI` プロパティが削除されました。`pivotUI` を使用して、その中に新しい `showConfiguration` オプションを設定してください。
+- `Column`
+  - `movable` プロパティが削除されました。グリッドの `moving` プロパティを使用してください。
+  - `columnChildren` プロパティが削除されました。代わりに `childColumns` を使用してください。
+- `ColumnGroup`
+  - `children` プロパティが削除されました。代わりに `childColumns` を使用してください。
+- `Paginator`
+  - `isFirstPageDisabled` および `isLastPageDisabled` プロパティが削除されました。代わりに、`isFirstPage` および `isLastPage` を使用してください。
+
+## **{PackageVerChanges-24-1-JUN}**
+
+### {PackageCommon}
+- `Input`、`Textarea` - ユーザー入力を制限することなく検証ルールを適用できるように `ValidateOnly` を公開しました。
+- `Dropdown` - `PositionStrategy` プロパティは非推奨です。ドロップダウンは、ブラウザー ビューポートの最上位レイヤーにコンテナーをレンダリングするために `Popover` API を使用するようになったため、このプロパティは廃止されました。
+- `DockManager` - `SplitPane` の `IsMaximized` は非推奨です。分割ペイン レベルで isMaximized を true に設定しても、分割ペインはコンテナーとしてのみ機能し、最大化されて表示される実際のコンテンツがないため、実際の効果はありません。代わりに、`TabGroupPane` および/または `ContentPane` の `IsMaximized` プロパティを使用してください。
+
+### {PackageGrids}
+
+- `DisplayDensity` は非推奨となり、代わりに `--ig-size` CSS カスタム プロパティが使用されるようになりました。詳細については、[グリッド サイズ](grids/grid/size.md) トピックを参照してください。
+
+- `PivotGrid` - コンポーネントの構成が正しく適用できるようになりました。
+
+### {PackageCharts} (チャート)
+
+* [データ凡例のグループ化](charts/features/chart-data-legend.md#{PlatformLower}-データ凡例のグループ化) と [データ ツールチップのグループ化](charts/features/chart-data-tooltip.md#{PlatformLower}-データ-チャートのデータ-ツールチップのグループ化) - 新しいグループ化機能が追加されました。`GroupRowVisible` プロパティは、各シリーズのグループ化を切り替え、オプトインすると `DataLegendGroup` プロパティを介してグループ テキストを割り当てることができます 同じ値が複数のシリーズに適用されている場合、それらはグループ化されて表示されます。すべてのユーザー向けに分類および整理する必要がある大規模なデータセットに役立ちます。
+
+- [チャートの選択](charts/features/chart-data-selection.md) - 新しいシリーズ選択のスタイル設定。これは、`CategoryChart` および `XamDataChart` のすべてのカテゴリ、財務、およびラジアル シリーズに広く採用されています。シリーズはクリックして異なる色で表示したり、明るくしたり、薄くしたり、フォーカスのアウトラインを表示したりできます。個々のシリーズまたはデータ項目全体を通じて影響を受ける項目を管理します。
+複数のシリーズとマーカーがサポートされています。特定のデータ項目の値間のさまざまな相違点や類似点を示すのに役立ちます。また、`SelectedSeriesItemsChanged` イベントと `SelectedSeriesItems` は、選択内容に基づいたデータ分析を行うポップアップやその他の画面など、アプリケーション内で実行できるその他のアクションを取り巻く堅牢なビジネス要件を構築するための追加の支援として利用できます。 
+
+- [比例カテゴリ角度軸](charts/types/radial-chart.md) - `XamDataChart` のラジアル円シリーズの新しい軸により、データ チャートのすべての追加機能を使用してロバスト可能な視覚化をする円チャートの作成が可能になります。
+
+- [ツリーマップのハイライト表示](charts/types/treemap-chart.md#{PlatformLower}-リーマップのハイライト表示) - ツリー マップの項目のマウスオーバーによるハイライト表示を構成できる `HighlightingMode` プロパティが公開されました。このプロパティには 2 つのオプションがあります: `Brighten` では、マウスを置いた項目にのみハイライト表示が適用され、`FadeOthers` では、マウスホバーした項目のハイライト表示はそのままで、それ以外はすべてフェードアウトします。このハイライト表示はアニメーション化されており、`HighlightingTransitionDuration` プロパティを使用して制御できます。
+
+- [ツリーマップのパーセントベースのハイライト表示](charts/types/treemap-chart.md#{PlatformLower}-ツリーマップのパーセントベースのハイライト表示) - 新しいパーセントベースのハイライト表示により、ノードはコレクションの進行状況またはサブセットを表すことができます。外観は、データ項目のメンバーによって、または新しい `HighlightedItemsSource` を指定することによって、特定の値までの背景色の塗りつぶしとして表示されます。`HighlightedValuesDisplayMode` で切り替えることができ、`FillBrushes` でスタイルを設定できます。
+
+- `Toolbar` - 選択した特定のツールの周囲に境界線を描くための ToolAction の新しい `IsHighlighted` オプション。
+
+### {PackageGauges} (ゲージ)
+
+- `XamRadialGauge`
+    - ハイライト針の新しいラベル。`HighlightLabelText` と `HighlightLabelSnapsToNeedlePivot` および、その他の HighlightLabel の多くのスタイル関連プロパティが追加されました。
 
 ## **{PackageVerChanges-23-2-MAR}**
 

@@ -48,18 +48,18 @@ _language: ja
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-* `RowIslands`
+* **RowIslands**
     * 階層のすべての子グリッドの保存/復元機能
-* `Sorting`
-* `Filtering`
-* `AdvancedFiltering`
-* `Paging`
-* `CellSelection`
-* `RowSelection`
-* `ColumnSelection`
-* `RowPinning`
-* `Expansion`
-* `Columns`
+* **Sorting**
+* **Filtering**
+* **AdvancedFiltering**
+* **Paging**
+* **CellSelection**
+* **RowSelection**
+* **ColumnSelection**
+* **RowPinning**
+* **Expansion**
+* **Columns**
     * **新規**: 複数列ヘッダーが標準でサポートされるようになりました。
     * 列の順序
     * `IColumnState` インターフェイスによって定義される列プロパティ。
@@ -69,16 +69,29 @@ _language: ja
 
 <!-- ComponentStart: PivotGrid -->
 
+<!-- Angular, WebComponents -->
 * `Sorting`
 * `Filtering`
 * `CellSelection`
-* `RowSelection`
 * `ColumnSelection`
 * `Expansion`
 * `PivotConfiguration`
     * `IPivotConfiguration` インターフェイスによって定義されるピボット構成プロパティ。
     * ピボットのディメンションと値の関数は、アプリケーションレベルのコードを使用して復元されます。「[ピボット構成の復元](state-persistence.md#ピボット構成の復元)」セクションを参照してください。
     * ピボットの行と列のストラテジもアプリケーション レベルのコードを使用して復元されます。「[ピボットのストラテジの復元](state-persistence.md#ピボットのストラテジの復元)」セクションを参照してください。
+<!-- end: Angular, WebComponents -->
+
+<!-- Blazor, React -->
+* `Sorting`
+* `Filtering`
+* `CellSelection`
+* `ColumnSelection`
+* `Expansion`
+* `PivotConfiguration`
+    * `IPivotConfiguration` iインターフェイスによって定義されるピボット構成プロパティ。
+    * ピボットのディメンションと値の関数は、アプリケーションレベルのコードを使用して復元されます。「[ピボット構成の復元](state-persistence.md#ピボット構成の復元)」セクションを参照してください。
+<!-- end: Blazor, React -->
+
 
 <!-- ComponentEnd: PivotGrid -->
 
@@ -122,6 +135,7 @@ const sortingFilteringStates: IGridState = state.getState(false, ['sorting', 'fi
 <!-- end: Angular -->
 
 <!-- WebComponents -->
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 ```html
 <{ComponentSelector} id="grid">
     <igc-grid-state id="gridState"></igc-grid-state>
@@ -140,14 +154,18 @@ const stateString: string = gridState.getStateAsString();
 // get the sorting and filtering expressions
 const sortingFilteringStates: IgcGridStateInfo = gridState.getState(['sorting', 'filtering']);
 ```
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 <!-- end: WebComponents -->
 
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 ```tsx
-<IgrGrid>
+<{ComponentSelector}>
     <IgrGridState ref={(ref) => { gridState = ref; }}></IgrGridState>
-</IgrGrid>
+</{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 ```tsx
 // get an `IgrGridStateInfo` object, containing all features original state objects, as returned by the grid public API
 const state: IgrGridStateInfo = gridState.getState([]);
@@ -158,6 +176,7 @@ const stateString: string = gridState.getStateAsString([]);
 // get the sorting and filtering expressions
 const sortingFilteringStates: IgrGridStateInfo = gridState.getState(['sorting', 'filtering']);
 ```
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 
 ```razor
 <{ComponentSelector}>
@@ -241,9 +260,11 @@ gridState.options = { cellSelection: false, sorting: false };
 ```
 <!-- end: WebComponents -->
 
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 ```tsx
 <IgrGridState options={{ cellSelection: false, sorting: false }}></IgrGridState>
 ```
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 
 ```razor
 gridState.Options = new IgbGridStateOptions
@@ -253,7 +274,7 @@ gridState.Options = new IgbGridStateOptions
     };
 ```
 
-これらのシンプルなシングル ポイント API を使用すると、わずか数行のコードで完全な状態維持機能を実現できます。**下からコードをコピーして貼り付けます** - ユーザーが現在のページを離れるたびに、ブラウザーの `SessionStorage` オブジェクトにグリッドの状態が保存されます。ユーザーがメイン ページに戻るときに、グリッドの状態が復元されます。必要なデータを取得するために、複雑で高度なフィルタリングやソートの式を毎回設定する必要はなくなりました。一度実行して、以下のコードでユーザーに代わって処理してください。
+これらのシンプルなシングル ポイント API を使用すると、わずか数行のコードで完全な状態維持機能を実現できます。**下からコードをコピーして貼り付けます** - ユーザーが現在のページを離れるたびに、ブラウザーの `LocalStorage` オブジェクトにグリッドの状態が保存されます。ユーザーがメイン ページに戻るときに、グリッドの状態が復元されます。必要なデータを取得するために、複雑で高度なフィルタリングやソートの式を毎回設定する必要はなくなりました。一度実行して、以下のコードでユーザーに代わって処理してください。
 
 <!-- Angular -->
 ```typescript
@@ -316,13 +337,15 @@ public restoreGridStateString() {
 }
 ```
 <!-- end: WebComponents -->
-
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 ```tsx
-<IgrGrid rendered={restoreGridState}>
+<{ComponentSelector} rendered={restoreGridState}>
     <IgrGridState ref={(ref) => { gridState = ref; }}></IgrGridState>
-</IgrGrid>
+</{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 ```tsx
 useEffect(() => {
     restoreGridState();
@@ -358,6 +381,8 @@ function restoreGridState() {
     }
 }
 ```
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
+
 
 ```razor
 @using IgniteUI.Blazor.Controls
@@ -367,12 +392,12 @@ function restoreGridState() {
 @inject IJSRuntime JS
 @inject NavigationManager Navigation
 
-<IgbGrid Rendered="OnGridRendered">
+<{ComponentSelector} Rendered="OnGridRendered">
     <IgbGridState @ref="gridState"></IgbGridState>
     <IgbColumn Field="ContactName" Header="Name" MinWidth="200px" ></IgbColumn>
     <IgbColumn Field="ContactTitle" Header="Title" MinWidth="200px" Sortable="true" Filterable="true" Groupable="true"></IgbColumn>
     <IgbColumn Field="CompanyName" Header="Company" MinWidth="200px" Sortable="true" Filterable="true" Groupable="true"></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 
 @code {
     protected override void OnAfterRender(bool firstRender)
@@ -587,7 +612,7 @@ public activeTemplate = (ctx: IgcCellTemplateContext) => {
 }
 ```
 
-<!-- ComponentEnd: HierarchicalGrid  -->
+<!-- ComponentEnd: HierarchicalGrid -->
 
 2. @ViewChild または @ViewChildren デコレータを使用して、コンポーネントのテンプレート ビューをクエリします。`ColumnInit` イベント ハンドラーで、テンプレートを列の `BodyTemplate` プロパティに割り当てます。
 
@@ -652,14 +677,47 @@ public void OnColumnInit(IgbColumnComponentEventArgs args)
 </igx-pivot-grid>
 ```
 
+```html
+<igc-pivot-grid id="grid">
+    <igc-grid-state id="gridState"></igc-grid-state>
+</igc-pivot-grid>
+```
+
+```ts
+ constructor() {
+    var grid = document.getElementById('grid') as IgcPivotGridComponent;
+    grid.pivotConfiguration = this.pivotConfiguration;
+    grid.addEventListener("valueInit", (ev:any) => this.onValueInit(ev));
+    grid.addEventListener("dimensionInit", (ev:any) => this.onDimensionInit(ev));
+}
+```
+
+```tsx
+      <IgrPivotGrid
+        ref={gridRef}
+        data={gridData}
+        pivotConfiguration={pivotConfiguration}
+        valueInit={onValueInit}
+      >
+        <IgrGridState ref={gridStateRef}></IgrGridState>
+      </IgrPivotGrid>
+```
+
 ```razor
-blazor snippet
+    <IgbPivotGrid
+        @ref="grid"
+        Width="95%"
+        Height="500px"
+        PivotConfiguration="PivotConfiguration"
+        ValueInitScript="OnValueInit">
+    </IgbPivotGrid>
 ```
 
 > `DimensionInit` および `ValueInit` イベントは、`PivotConfiguration` プロパティで定義された値とディメンションごとに発行されます。
 
 * `ValueInit` イベント ハンドラーで、すべてのカスタム集計、フォーマッタ、およびスタイルを設定します。
 
+<!-- Angular -->
 ```typescript
 public onValueInit(value: IPivotValue) {
     // Needed only for custom aggregators, formatter or styles.
@@ -685,13 +743,116 @@ public onValueInit(value: IPivotValue) {
     }
 }
 ```
+<!-- end: Angular -->
 
-```razor
-Add blazor handling for valueInit
+<!-- WebComponents -->
+```ts
+public onValueInit(event: any) {
+    const value: IgcPivotValue = event.detail;
+    if (value.member === 'AmountofSale') {
+        value.aggregate.aggregator = this.totalSale;
+        value.aggregateList?.forEach((aggr: any) => {
+            switch (aggr.key) {
+                case 'SUM':
+                    aggr.aggregator = this.totalSale;
+                    break;
+                case 'MIN':
+                    aggr.aggregator = this.totalMin;
+                    break;
+                case 'MAX':
+                    aggr.aggregator = this.totalMax;
+                    break;
+            }
+        });
+    } else if (value.member === 'Value') {
+        value.formatter = (value: any) => value ? '$' + parseFloat(value).toFixed(3) : undefined;
+        value.styles.upFontValue = (rowData: any, columnKey: any): boolean => parseFloat(rowData.aggregationValues.get(columnKey.field)) > 150
+        value.styles.downFontValue = (rowData: any, columnKey: any): boolean => parseFloat(rowData.aggregationValues.get(columnKey.field)) <= 150;
+    }
+}
+```
+<!-- end: WebComponents -->
+
+```tsx
+  function onValueInit(s: IgrPivotGrid, event: IgrPivotValueEventArgs) {
+    const value: IgrPivotValueDetail = event.detail;
+    if (value.member === "AmountofSale") {
+      value.aggregate.aggregator = totalSale;
+      value.aggregateList?.forEach((aggr: any) => {
+        switch (aggr.key) {
+          case "SUM":
+            aggr.aggregator = totalSale;
+            break;
+          case "MIN":
+            aggr.aggregator = totalMin;
+            break;
+          case "MAX":
+            aggr.aggregator = totalMax;
+            break;
+        }
+      });
+    } else if (value.member === "Value") {
+      value.styles.upFontValue = (rowData: any, columnKey: any): boolean =>
+        parseFloat(rowData.aggregationValues.get(columnKey.field)) > 150;
+      value.styles.downFontValue = (rowData: any, columnKey: any): boolean =>
+        parseFloat(rowData.aggregationValues.get(columnKey.field)) <= 150;
+    }
+  }
 ```
 
-* `DimensionInit` イベント ハンドラーで、すべてのカスタム `MemberFunction` 実装を設定します。
+```razor
+// In Javascript
+const totalSale = (members, data) => {
+    return data.reduce((accumulator, value) => accumulator + value.ProductUnitPrice * value.NumberOfUnits, 0);
+};
 
+const totalMin = (members, data) => {
+    let min = 0;
+    if (data.length === 1) {
+        min = data[0].ProductUnitPrice * data[0].NumberOfUnits;
+    } else if (data.length > 1) {
+        const mappedData = data.map(x => x.ProductUnitPrice * x.NumberOfUnits);
+        min = mappedData.reduce((a, b) => Math.min(a, b));
+    }
+    return min;
+};
+
+const totalMax = (members, data) => {
+    let max = 0;
+    if (data.length === 1) {
+        max = data[0].ProductUnitPrice * data[0].NumberOfUnits;
+    } else if (data.length > 1) {
+        const mappedData = data.map(x => x.ProductUnitPrice * x.NumberOfUnits);
+        max = mappedData.reduce((a, b) => Math.max(a, b));
+    }
+    return max;
+};
+
+igRegisterScript("OnValueInit", (args) => {
+    const value = args.detail;
+    if (value.member === "AmountOfSale") {
+      value.aggregate.aggregator = totalSale;
+      value.aggregateList?.forEach((aggr) => {
+        switch (aggr.key) {
+          case "SUM":
+            aggr.aggregator = totalSale;
+            break;
+          case "MIN":
+            aggr.aggregator = totalMin;
+            break;
+          case "MAX":
+            aggr.aggregator = totalMax;
+            break;
+        }
+      });
+    }
+}, false);
+```
+<!-- Angular, WebComponents -->
+* In the `DimensionInit` event handler set all custom `MemberFunction` implementations:
+<!-- end: Angular, WebComponents -->
+
+<!-- Angular -->
 ```typescript
 public onDimensionInit(dim: IPivotDimension) {
     switch (dim.memberName) {
@@ -710,10 +871,29 @@ public onDimensionInit(dim: IPivotDimension) {
     }
 }
 ```
+<!-- end: Angular -->
 
-```razor
-Add blazor handling for dimensionInit
+<!-- WebComponents -->
+```ts
+public onDimensionInit(event: any) {
+    const dim: IgcPivotDimension = event.detail;
+    switch (dim.memberName) {
+        case 'AllProducts':
+            dim.memberFunction = () => 'All Products';
+            break;
+        case 'ProductCategory':
+            dim.memberFunction = (data: any) => data.ProductName;
+            break;
+        case 'City':
+            dim.memberFunction = (data: any) => data.City;
+            break;
+        case 'SellerName':
+            dim.memberFunction = (data: any) => data.SellerName;
+            break;
+    }
+}
 ```
+<!-- end: WebComponents -->
 
 <!-- ComponentEnd: PivotGrid -->
 
@@ -728,27 +908,64 @@ Add blazor handling for dimensionInit
 <igx-grid [igxGridState]="options"></igx-grid>
 ```
 
-```razor
-Blazor snippet
+
+<!-- Angular, WebComponents -->
+```ts
+gridState.options = { cellSelection: false, sorting: false, rowIslands: true };
 ```
+<!-- end: Angular, WebComponents -->
 
-`GetState` API は、`Selection` と `Sorting` を除くすべてのグリッド (ルート グリッドと子グリッド) 機能の状態を返します。開発者が後ですべてのグリッドの `Filtering` 状態のみを復元するには、以下を使用します。
+<!-- ComponentEnd: HierarchicalGrid -->
 
-```typescript
-this.state.setState(state, ['filtering', 'rowIslands']);
-```
-
-```razor
-setState snippet
+<!-- ComponentStart: HierarchicalGrid -->
+```tsx
+<IgrHierarchicalGrid>
+    <IgrGridState options={{ cellSelection: false, sorting: false, rowIslands: true }}></IgrGridState>
+</IgrHierarchicalGrid>
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- NOTE this sample is differed -->
+<!-- ComponentStart: HierarchicalGrid -->
+```razor
+<IgbHierarchicalGrid>
+    <IgbGridState @ref="gridState"></IgbGridState>
+</IgbHierarchicalGrid>
 
-`sample="/{ComponentSample}/state-persistence-main", height="763", alt="{Platform} {ComponentTitle} State Persistence "`
+@code {
+    private IgbGridState gridState;
+
+    gridState.Options = new IgbGridStateOptions
+    {
+        CellSelection = false,
+        Sorting = false,
+        RowIslands = true
+    };
+}
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+`GetState` API は、`Selection` と `Sorting` を除くすべてのグリッド (ルート グリッドと子グリッド) 機能の状態を返します。開発者が後ですべてのグリッドの `Filtering` 状態のみを復元するには、以下を使用します。
+
+```typescript
+this.state.applyState(state, ['filtering', 'rowIslands']);
+```
+
+<!-- Blazor -->
+`GetState` API は、`Selection` と `Sorting` を除くすべてのグリッド (ルート グリッドと子グリッド) 機能の状態を返します。開発者が後ですべてのグリッドの `Filtering` 状態のみを復元するには、以下を使用します。
+```razor
+gridState.ApplyStateFromString(gridStateString, new string[] { "filtering", "rowIslands" });
+```
+<!-- end: Blazor -->
+<!-- ComponentEnd: HierarchicalGrid -->
+
+
+## デモ
+
+`sample="/{ComponentSample}/state-persistence-main", height="763", alt="{Platform} {ComponentTitle} 状態保持"`
 
 <!-- ComponentStart: PivotGrid -->
-
+<!-- Angular, WebComponents -->
 ## ピボット ストラテジの復元
 
 `GridState` は、リモート ピボット操作もカスタム ディメンション ストラテジも保持しません。
@@ -759,6 +976,7 @@ setState snippet
 
 * カスタム ソート方法およびカスタム ピボット列/行ディメンション ストラテジを設定します。
 
+<!-- Angular -->
 ```html
 <igx-pivot-grid #grid [data]="data" [pivotConfiguration]="pivotConfigHierarchy" [defaultExpandState]='true'
     [igxGridState]="options" [sortStrategy]="customStrategy" [showPivotConfigurationUI]='false' [superCompactMode]="true" [height]="'500px'">
@@ -780,6 +998,42 @@ public pivotConfigHierarchy: IPivotConfiguration = {
     filters: [...]
 };
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
+
+```html
+    <igc-pivot-grid default-expand-state="true" super-compact-mode="true" show-pivot-configuration-ui="false"
+        height="600px" id="grid">
+        <igc-grid-state id="gridState"></igc-grid-state>
+    </igc-pivot-grid>
+```
+
+
+```ts
+public pivotConfiguration: IgcPivotConfiguration = {
+    columnStrategy: IgcNoopPivotDimensionsStrategy.instance(),
+    rowStrategy: IgcNoopPivotDimensionsStrategy.instance(),
+    columns: [...],
+    rows: [...],
+    values: [...],
+    filters: [...]
+};
+private gridState: IgcGridStateComponent;
+
+constructor() {
+    var grid = document.getElementById("grid") as IgcPivotGridComponent;
+    this.gridState = document.getElementById('gridState') as IgcGridStateComponent;
+    grid.pivotConfiguration = this.pivotConfiguration;
+    PivotNoopData.getData().then((value) => {
+        grid.data = value;
+    });
+    this.gridState.addEventListener('stateParsed', (ev:any) => this.stateParsedHandler(ev) );
+}
+```
+
+<!-- end: WebComponents -->
 
 ```razor
 Add snippet for blazor
@@ -787,6 +1041,7 @@ Add snippet for blazor
 
 * `SessionStorage` から状態を復元し、カスタム ストラテジを適用します。
 
+<!-- Angular -->
 ```typescript
 public restoreState() {
     const state = window.sessionStorage.getItem('grid-state');
@@ -798,12 +1053,33 @@ public restoreState() {
     this.state.setState(state as string);
 }
 ```
+<!-- end: Angular -->
+<!-- WebComponents -->
+```ts
+public restoreGridState() {
+    const state = window.localStorage.getItem(this.stateKey);
+    if (state) {
+        this.gridState.applyStateFromString(state);
+    }
+}
+
+public stateParsedHandler(ev: any) {
+    const parsedState = ev.detail;
+    parsedState.pivotConfiguration.rowStrategy = IgcNoopPivotDimensionsStrategy.instance();
+    parsedState.pivotConfiguration.columnStrategy = IgcNoopPivotDimensionsStrategy.instance();
+}
+```
+<!-- end: WebComponents -->
+
 
 ```razor
 Add snippet for blazor for restore state
 ```
 
-`sample="/{ComponentSample}/data-persistence-noop", height="580", alt="{Platform} {ComponentTitle} data persistence noop"`
+
+`sample="/{ComponentSample}/data-persistence-noop", height="580", alt="{Platform} {ComponentTitle} データ保持 NO-OP"`
+<!-- end: Angular, WebComponents -->
+
 
 <!-- ComponentEnd: PivotGrid -->
 
@@ -811,12 +1087,12 @@ Add snippet for blazor for restore state
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-* パラメーターなしで `SetState` API を使用してすべてのグリッド機能を一度に復元する場合、ルート グリッドの列プロパティがデフォルトにリセットされる場合があります。その場合は、後で列または列の選択機能を復元してください。
+* パラメーターなしで `applyState` API を使用してすべてのグリッド機能を一度に復元する場合、ルート グリッドの列プロパティがデフォルトにリセットされる場合があります。その場合は、後で列または列の選択機能を復元してください。
 
 ```typescript
-state.setState(gridState);
-state.setState(gridState.columns);
-state.setState(gridState.columnSelection);
+state.applyState(gridState);
+state.applyState(gridState.columns);
+state.applyState(gridState.columnSelection);
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -834,17 +1110,15 @@ state.setState(gridState.columnSelection);
 
 <!-- ComponentStart: PivotGrid -->
 
-<!-- Angular -->
 * `GetState` メソッドは、JSON.stringify() メソッドを使用して、元のオブジェクトを JSON 文字列に変換します。JSON.stringify() は関数をサポートされていないため、`GridState` ディレクティブはピボット ディメンション `MemberFunction`、ピボット値 `Member`、`Formatter`、カスタム `Aggregate` 関数、`Styles`、およびピボット構成戦略 (`ColumnStrategy` および `RowStrategy`) を無視します。
-<!-- end:Angular -->
 
 <!-- ComponentEnd: PivotGrid -->
 
-## その他のリソース
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
 <!-- ComponentStart:  Grid -->
+## その他のリソース
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
 * [ソート](sorting.md)
@@ -857,6 +1131,7 @@ state.setState(gridState.columnSelection);
 
 
 <!-- * [ピボット グリッド機能](features.md) -->
-<!-- * [ピボット グリッドのリモート操作](remote-operations.md) -->
-
+<!-- WebComponents -->
+* [ピボット グリッドのリモート操作](remote-operations.md)
+<!-- end: WebComponents -->
 <!-- ComponentEnd: PivotGrid -->

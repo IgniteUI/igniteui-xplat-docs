@@ -115,8 +115,17 @@
   {
     "exclude": ["Angular", "Blazor", "WebComponents"],
     "name": "Integrating Ignite UI for React with Next.js",
-    "href": "nextjs-usage.md",
-    "status": "UPDATED"
+    "href": "nextjs-usage.md"
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Interactivity",
+    "header": true,
+    "href": "interactivity/accessibility-compliance.md"
+  },
+  {
+    "name": "Accessibility Compliance",
+    "href": "interactivity/accessibility-compliance.md"
   },
   {
     "note": "THIS MAIN NODE FOR OLD XPLAT GRID",
@@ -176,11 +185,6 @@
         "exclude": ["Angular"],
         "name": "Conditional Styling",
         "href": "grids/grid/conditional-cell-styling.md"
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Display Density",
-        "href": "grids/grid/display-density.md"
       },
       {
         "exclude": ["Angular"],
@@ -330,6 +334,12 @@
       },
       {
         "exclude": ["Angular"],
+        "name": "Size",
+        "href": "grids/grid/size.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular"],
         "name": "Sizing",
         "href": "grids/grid/sizing.md"
       },
@@ -358,6 +368,12 @@
         "exclude": ["Angular"],
         "name": "Theming",
         "href": "grids/theming-grid.md"
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "Customize Icons",
+        "href": "grids/grid/icons.md",
+        "status": "NEW"
       }
     ]
   },
@@ -400,11 +416,6 @@
         "exclude": ["Angular"],
         "name": "Conditional Styling",
         "href": "grids/hierarchical-grid/conditional-cell-styling.md"
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Display Density",
-        "href": "grids/hierarchical-grid/display-density.md"
       },
       {
         "exclude": ["Angular"],
@@ -509,6 +520,12 @@
       },
       {
         "exclude": ["Angular"],
+        "name": "Size",
+        "href": "grids/hierarchical-grid/size.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular"],
         "name": "Sizing",
         "href": "grids/hierarchical-grid/sizing.md"
       },
@@ -518,7 +535,7 @@
         "href": "grids/hierarchical-grid/sorting.md"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "State Persistence",
         "href": "grids/hierarchical-grid/state-persistence.md"
       },
@@ -550,10 +567,10 @@
     ]
   },
   {
-    "exclude": ["Angular", "React" ],
+    "exclude": ["Angular"],
     "name": "Pivot Grid",
     "href": "grids/pivot-grid/overview.md",
-    "status": "",
+    "status": ["NEW_REACT"],
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
@@ -562,16 +579,16 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "State Persistence",
         "href": "grids/pivot-grid/state-persistence.md",
-        "status": ""
+        "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "WebComponents"],
         "name": "Features",
         "href": "grids/pivot-grid/features.md",
-        "status": ""
+        "status": ["NEW_REACT"]
       },
       {
         "exclude": ["Angular", "React", "Blazor"],
@@ -585,43 +602,36 @@
     "exclude": ["Angular"],
     "name": "Tree Grid",
     "href": "grids/tree-grid/overview.md",
-    "status": ["NEW_REACT"],
     "items": [
       {
         "exclude": ["Angular"],
         "name": "Clipboard Interactions",
-        "href": "grids/tree-grid/clipboard-interactions.md",
-        "status": ["NEW_REACT"]
+        "href": "grids/tree-grid/clipboard-interactions.md"
       },
       {
         "exclude": ["Angular"],
         "name": "Collapsible Column Groups",
-        "href": "grids/tree-grid/collapsible-column-groups.md",
-        "status": ["NEW_REACT"]
+        "href": "grids/tree-grid/collapsible-column-groups.md"
       },
       {
         "exclude": ["Angular"],
         "name": "Column Types",
-        "href": "grids/tree-grid/column-types.md",
-        "status": ["NEW_REACT"]
+        "href": "grids/tree-grid/column-types.md"
       },
       {
         "exclude": ["Angular"],
         "name": "Conditional Styling",
-        "href": "grids/tree-grid/conditional-cell-styling.md",
-        "status": ["NEW_REACT"]
+        "href": "grids/tree-grid/conditional-cell-styling.md"
       },
       {
         "exclude": ["Angular"],
         "name": "Column Hiding",
-        "href": "grids/tree-grid/column-hiding.md",
-        "status": ["NEW_REACT"]
+        "href": "grids/tree-grid/column-hiding.md"
       },
       {
         "exclude": ["Angular", "React"],
         "name": "Column Moving",
-        "href": "grids/tree-grid/column-moving.md",
-        "status": ["NEW_REACT"]
+        "href": "grids/tree-grid/column-moving.md"
       },
       {
         "exclude": ["Angular", "React"],
@@ -632,64 +642,49 @@
       {
         "exclude": ["Angular"],
         "name": "Column Resizing",
-        "href": "grids/tree-grid/column-resizing.md",
-        "status": ["NEW_REACT"]
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Display Density",
-        "href": "grids/tree-grid/display-density.md",
-        "status": ["NEW_REACT"]
+        "href": "grids/tree-grid/column-resizing.md"
       },
       {
         "exclude": ["Angular"],
         "name": "Editing",
         "href": "grids/tree-grid/editing.md",
-        "status": ["NEW_REACT"],
         "items": [
           {
             "exclude": ["Angular"],
             "name": "Cell Editing",
-            "href": "grids/tree-grid/cell-editing.md",
-            "status": ["NEW_REACT"]
+            "href": "grids/tree-grid/cell-editing.md"
           },
           {
             "exclude": ["Angular"],
             "name": "Row Adding",
-            "href": "grids/tree-grid/row-adding.md",
-            "status": ["NEW_REACT"]
+            "href": "grids/tree-grid/row-adding.md"
           },
           {
             "exclude": ["Angular"],
             "name": "Row Editing",
-            "href": "grids/tree-grid/row-editing.md",
-            "status": ["NEW_REACT"]
+            "href": "grids/tree-grid/row-editing.md"
           }
         ]
       },
       {
         "exclude": ["Angular"],
         "name": "Export to Excel",
-        "href": "grids/tree-grid/export-excel.md",
-        "status": ["NEW_REACT"]
+        "href": "grids/tree-grid/export-excel.md"
       },
       {
         "exclude": ["Angular"],
         "name": "Filtering",
         "href": "grids/tree-grid/filtering.md",
-        "status": ["NEW_REACT"],
         "items": [
           {
             "exclude": ["Angular"],
             "name": "Advanced Filtering",
-            "href": "grids/tree-grid/advanced-filtering.md",
-            "status": ["NEW_REACT"]
+            "href": "grids/tree-grid/advanced-filtering.md"
           },
           {
             "exclude": ["Angular", "React"],
             "name": "Excel Style Filtering",
-            "href": "grids/tree-grid/excel-style-filtering.md",
-            "status": ["NEW_REACT"]
+            "href": "grids/tree-grid/excel-style-filtering.md"
           }
         ]
       },
@@ -702,8 +697,7 @@
       {
         "exclude": ["Angular"],
         "name": "Multi-Column Headers",
-        "href": "grids/tree-grid/multi-column-headers.md",
-        "status": ["NEW_REACT"]
+        "href": "grids/tree-grid/multi-column-headers.md"
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
@@ -714,8 +708,7 @@
       {
         "exclude": ["Angular"],
         "name": "Paging",
-        "href": "grids/tree-grid/paging.md",
-        "status": ["NEW_REACT"]
+        "href": "grids/tree-grid/paging.md"
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
@@ -726,67 +719,64 @@
       {
         "exclude": ["Angular"],
         "name": "Row Actions",
-        "href": "grids/tree-grid/row-actions.md",
-        "status": ["NEW_REACT"]
+        "href": "grids/tree-grid/row-actions.md"
       },
       {
         "exclude": ["Angular"],
         "name": "Row Dragging",
-        "href": "grids/tree-grid/row-drag.md",
-        "status": ["NEW_REACT"]
+        "href": "grids/tree-grid/row-drag.md"
       },
       {
         "exclude": ["Angular"],
         "name": "Row Pinning",
-        "href": "grids/tree-grid/row-pinning.md",
-        "status": ["NEW_REACT"]
+        "href": "grids/tree-grid/row-pinning.md"
       },
       {
         "exclude": ["Angular"],
         "name": "Search",
-        "href": "grids/tree-grid/search.md",
-        "status": ["NEW_REACT"]
+        "href": "grids/tree-grid/search.md"
       },
       {
         "exclude": ["Angular"],
         "name": "Selection",
         "href": "grids/tree-grid/selection.md",
-        "status": ["NEW_REACT"],
         "items": [
           {
             "exclude": ["Angular"],
             "name": "Cell Selection",
-            "href": "grids/tree-grid/cell-selection.md",
-            "status": ["NEW_REACT"]
+            "href": "grids/tree-grid/cell-selection.md"
           },
           {
             "exclude": ["Angular"],
             "name": "Column Selection",
-            "href": "grids/tree-grid/column-selection.md",
-            "status": ["NEW_REACT"]
+            "href": "grids/tree-grid/column-selection.md"
           },
           {
             "exclude": ["Angular"],
             "name": "Row Selection",
-            "href": "grids/tree-grid/row-selection.md",
-            "status": ["NEW_REACT"]
+            "href": "grids/tree-grid/row-selection.md"
           }
         ]
       },
       {
         "exclude": ["Angular"],
+        "name": "Size",
+        "href": "grids/tree-grid/size.md",
+        "status": "NEW"
+
+      },
+      {
+        "exclude": ["Angular"],
         "name": "Sizing",
-        "href": "grids/tree-grid/sizing.md",
-        "status": ["NEW_REACT"]
+        "href": "grids/tree-grid/sizing.md"
       },
       {
         "exclude": ["Angular"],
         "name": "Sorting",
-        "href": "grids/tree-grid/sorting.md",
-        "status": ["NEW_REACT"]
+        "href": "grids/tree-grid/sorting.md"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular"],
         "name": "State Persistence",
         "href": "grids/tree-grid/state-persistence.md",
         "status": ""
@@ -794,20 +784,17 @@
       {
         "exclude": ["Angular"],
         "name": "Summaries",
-        "href": "grids/tree-grid/summaries.md",
-        "status": ["NEW_REACT"]
+        "href": "grids/tree-grid/summaries.md"
       },
       {
         "exclude": ["Angular"],
         "name": "Toolbar",
-        "href": "grids/tree-grid/toolbar.md",
-        "status": ["NEW_REACT"]
+        "href": "grids/tree-grid/toolbar.md"
       },
       {
         "exclude": ["Angular"],
         "name": "Virtualization and performance",
-        "href": "grids/tree-grid/virtualization.md",
-        "status": ["NEW_REACT"]
+        "href": "grids/tree-grid/virtualization.md"
       },
       {
         "exclude": ["Angular", "React", "Blazor"],
@@ -831,8 +818,7 @@
   {
     "exclude": ["Angular"],
     "name": "Tree",
-    "href": "grids/tree.md",
-    "status": "UPDATED"
+    "href": "grids/tree.md"
   },
   {
     "exclude": ["Angular", "Blazor", "WebComponents", "React"],
@@ -1103,6 +1089,11 @@
     "name": "Composite Chart",
     "href": "charts/types/composite-chart.md",
     "status": ""
+  },
+  {
+    "name": "Data Pie Chart",
+    "href": "charts/types/data-pie-chart.md",
+    "status": "NEW"
   },
   {
     "name": "Donut Chart",
@@ -1500,8 +1491,7 @@
       {
         "exclude": ["Angular", "React", "Blazor"],
         "name": "Customization",
-        "href": "layouts/dock-manager-customization.md",
-        "status": "NEW"
+        "href": "layouts/dock-manager-customization.md"
       }
     ]
   },
@@ -1523,14 +1513,18 @@
     "href": "layouts/tabs.md",
     "status": ""
   },
+   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Divider",
+    "href": "layouts/divider.md"
+  },
   {
     "name": "Menus",
     "header": true
   },
   {
     "name": "Toolbar",
-    "href": "menus/toolbar.md",
-    "status": "PREVIEW"
+    "href": "menus/toolbar.md"
   },
   {
     "exclude": ["Angular"],
@@ -1626,8 +1620,7 @@
   {
     "exclude": ["Angular"],
     "name": "Button Group",
-    "href": "inputs/button-group.md",
-    "status": "NEW"
+    "href": "inputs/button-group.md"
   },
   {
     "exclude": ["Angular"],
@@ -1672,11 +1665,6 @@
     "exclude": ["Angular"],
     "name": "Dropdown",
     "href": "inputs/dropdown.md"
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Form",
-    "href": "inputs/form.md"
   },
   {
     "exclude": ["Angular"],
@@ -1726,8 +1714,7 @@
   {
     "exclude": ["Angular"],
     "name": "Text Area",
-    "href": "inputs/text-area.md",
-    "status": "NEW"
+    "href": "inputs/text-area.md"
   },
   {
     "name": "Interactions",
@@ -1753,6 +1740,12 @@
     "exclude": ["Angular"],
     "name": "Notifications",
     "header": true
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Banner",
+    "href": "notifications/banner.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
@@ -1782,11 +1775,11 @@
   {
     "exclude": ["Angular"],
     "name": "Date Picker",
-    "href": "editors/date-picker.md",
-    "status": ""
+    "href": "scheduling/date-picker.md",
+    "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Styling & Themes",
     "header": true
   },
@@ -2027,6 +2020,12 @@
     "exclude": ["Angular"],
     "name": "Multi-Column Combo Box",
     "href": "editors/multi-column-combobox.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "XDate Picker",
+    "href": "editors/xdate-picker.md",
     "status": ""
   }
 ]

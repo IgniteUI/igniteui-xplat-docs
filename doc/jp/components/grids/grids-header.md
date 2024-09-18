@@ -251,7 +251,7 @@ h3#excel-library-for-the-angular-grid ~ h3{
 
 <!-- <li>[**Excel へのエクスポート**](grid/export-excel.md) ([**データ可視化**](excel-library-working-with-charts.md)を含む)</li> -->
 
-<li>行の高さとサイズ変更を調整する[**表示密度**](grid/display-density.md)</li>
+<li>行の高さとサイズ変更を調整する[**サイズ**](grid/size.md)</li>
 
 <!-- <li>[**スパークライン列**](sparkline.md#デモ)や画像列などの列テンプレート</li> -->
 </ul>
@@ -474,7 +474,7 @@ Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセ�
                 <li>インタラクティブな [Outlook スタイルのようなグループ化](grid/groupby.md)</li>
                 <li>グリッド セルまたは列のデータに基づいた[列集計](grid/summaries.md)</li>
                 <!-- <li>[Excel へのエクスポート](grid/export-excel.md) ([データ可視化](excel-library-working-with-charts.md)を含む)</li> -->
-                <li>行の高さとサイズ変更を調整する[表示密度](grid/display-density.md)</li>
+                <li>行の高さとサイズ変更を調整する[サイズ](grid/size.md)</li>
                 <!-- <li>[スパークライン列](sparkline.md)や画像列などの列テンプレート</li> -->
             </ul>
         </div>
