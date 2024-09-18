@@ -2,7 +2,7 @@
 title: {Platform} Chart API | Data Visualization Tools | Infragistics
 _description: Use Infragistics {ProductName} chart provides useful API to configure and styles chart visuals
 _keywords: {Platform} charts, chart API, API, {ProductName}, Infragistics
-mentionedTypes: ["XamDataChart", "CategoryChart", "FinancialChart", "SeriesViewer", "XamDoughnutChart", "XamPieChart", "XamSparkline" ]
+mentionedTypes: ["XamDataChart", "CategoryChart", "FinancialChart", "SeriesViewer", "XamDoughnutChart", "XamPieChart", "XamSparkline", "DataPieChart" ]
 namespace: Infragistics.Controls.Charts
 ---
 
@@ -80,18 +80,28 @@ The {Platform} `XamDoughnutChart` has the following API members:
 - `AllowSliceExplosion`
 - `AllowSliceSelection`
 - `InnerExtent`
-- `SliceClick`
+
+## {Platform} Pie Chart API Members
+
+The {Platform} `DataPieChart` has the following API members:
+
+- `DataPieChart.ChartType`
+- `DataPieChart.HighlightingBehavior`
+- `DataPieChart.OthersCategoryThreshold`
+- `DataPieChart.OthersCategoryType`
+- `DataPieChart.SelectionMode`
+- `DataPieChart.SelectionBehavior`
 
 ## {Platform} Pie Chart API Members
 
 The {Platform} `XamPieChart` has the following API members:
 
-- `LegendItemBadgeTemplate`
-- `LegendItemTemplate`
-- `LegendLabelMemberPath`
-- `OthersCategoryThreshold`
-- `OthersCategoryType`
-- `SelectionMode`
+- `XamPieChart.LegendItemBadgeTemplate`
+- `XamPieChart.LegendItemTemplate`
+- `XamPieChart.LegendLabelMemberPath`
+- `XamPieChart.OthersCategoryThreshold`
+- `XamPieChart.OthersCategoryType`
+- `XamPieChart.SelectionMode`
 
 ## {Platform} Sparkline Chart API Members
 
