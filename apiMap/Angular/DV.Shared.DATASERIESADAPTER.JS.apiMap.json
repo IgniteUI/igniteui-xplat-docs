@@ -7,6 +7,7 @@
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"} ]
   },
   {
@@ -69,6 +70,10 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "extractTitle"}], "originalName": "ExtractTitle"},
       {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "getAllCollectionProperties"}], "originalName": "GetAllCollectionProperties"},
       {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "getAllDateTimeProperties"}], "originalName": "GetAllDateTimeProperties"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "getAllDistinctMonotonicNumericProperties"}], "originalName": "GetAllDistinctMonotonicNumericProperties"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "getAllExcludedDateTimeProperties"}], "originalName": "GetAllExcludedDateTimeProperties"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "getAllExcludedDistinctMonotonicNumericProperties"}], "originalName": "GetAllExcludedDistinctMonotonicNumericProperties"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "getAllExcludedStringProperties"}], "originalName": "GetAllExcludedStringProperties"},
       {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "getAllNumericProperties"}], "originalName": "GetAllNumericProperties"},
       {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "getAllObjectProperties"}], "originalName": "GetAllObjectProperties"},
       {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "getAllPropertiesWithIntent"}], "originalName": "GetAllPropertiesWithIntent"},
@@ -86,6 +91,7 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "getFirstNumericProperty"}], "originalName": "GetFirstNumericProperty"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "getFirstStringProperty"}], "originalName": "GetFirstStringProperty"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "getFirstStringPropertyPreferringDistinct"}], "originalName": "GetFirstStringPropertyPreferringDistinct"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "getMatchingExcludedProperties"}], "originalName": "GetMatchingExcludedProperties"},
       {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "getMatchingProperties"}], "originalName": "GetMatchingProperties"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "getNonNullPropertyValue"}], "originalName": "GetNonNullPropertyValue"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "getParentTitle"}], "originalName": "GetParentTitle"},
@@ -140,6 +146,7 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "hasMatchingHint"}], "originalName": "HasMatchingHint"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "highlightedData"}], "originalName": "HighlightedData"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isMatch"}], "originalName": "IsMatch"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "removeMemberPathHint"}], "originalName": "RemoveMemberPathHint"},
@@ -225,6 +232,7 @@
       {"names":[{"platform": "Angular", "mappedType": "DataSeriesType","mappedName": "FinancialPrice"}], "originalName": "FinancialPrice"},
       {"names":[{"platform": "Angular", "mappedType": "DataSeriesType","mappedName": "ItemToolTipLayer"}], "originalName": "ItemToolTipLayer"},
       {"names":[{"platform": "Angular", "mappedType": "DataSeriesType","mappedName": "Line"}], "originalName": "Line"},
+      {"names":[{"platform": "Angular", "mappedType": "DataSeriesType","mappedName": "Pie"}], "originalName": "Pie"},
       {"names":[{"platform": "Angular", "mappedType": "DataSeriesType","mappedName": "Point"}], "originalName": "Point"},
       {"names":[{"platform": "Angular", "mappedType": "DataSeriesType","mappedName": "ScatterArea"}], "originalName": "ScatterArea"},
       {"names":[{"platform": "Angular", "mappedType": "DataSeriesType","mappedName": "ScatterBubble"}], "originalName": "ScatterBubble"},
@@ -254,10 +262,14 @@
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "Angular", "mappedType": "DataSeriesAxisType","mappedName": "Category"}], "originalName": "Category"},
+      {"names":[{"platform": "Angular", "mappedType": "DataSeriesAxisType","mappedName": "CategoryAngle"}], "originalName": "CategoryAngle"},
       {"names":[{"platform": "Angular", "mappedType": "DataSeriesAxisType","mappedName": "ContinuousDateTime"}], "originalName": "ContinuousDateTime"},
       {"names":[{"platform": "Angular", "mappedType": "DataSeriesAxisType","mappedName": "DiscreteDateTime"}], "originalName": "DiscreteDateTime"},
       {"names":[{"platform": "Angular", "mappedType": "DataSeriesAxisType","mappedName": "Linear"}], "originalName": "Linear"},
-      {"names":[{"platform": "Angular", "mappedType": "DataSeriesAxisType","mappedName": "Logarithmic"}], "originalName": "Logarithmic"} ]
+      {"names":[{"platform": "Angular", "mappedType": "DataSeriesAxisType","mappedName": "Logarithmic"}], "originalName": "Logarithmic"},
+      {"names":[{"platform": "Angular", "mappedType": "DataSeriesAxisType","mappedName": "ProportionalCategoryAngle"}], "originalName": "ProportionalCategoryAngle"},
+      {"names":[{"platform": "Angular", "mappedType": "DataSeriesAxisType","mappedName": "RadialLinear"}], "originalName": "RadialLinear"},
+      {"names":[{"platform": "Angular", "mappedType": "DataSeriesAxisType","mappedName": "RadialLogarithmic"}], "originalName": "RadialLogarithmic"} ]
   },
   {
     "originalName": "DataSeriesMarker",
@@ -292,6 +304,21 @@
       {"names":[{"platform": "Angular", "mappedType": "IDataSource","mappedName": "getLocalDataSource"}], "originalName": "GetLocalDataSource"} ]
   },
   {
+    "originalName": "SimplePieSeriesRule",
+    "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "SimplePieSeriesRule.ts","mappedName": "SimplePieSeriesRule"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "distinctCheckThreshold"}], "originalName": "DistinctCheckThreshold"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "fallbackTypeIfUnsupported"}], "originalName": "FallbackTypeIfUnsupported"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "useColumnThreshold"}], "originalName": "UseColumnThreshold"} ]
+  },
+  {
     "originalName": "SimpleFinancialPriceSeriesRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
     "packageName": "igniteui-core",
@@ -303,6 +330,7 @@
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "except"}], "originalName": "Except"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "getDataSourceTitle"}], "originalName": "GetDataSourceTitle"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"} ]
   },
   {
@@ -315,6 +343,7 @@
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "createScatterSeries"}], "originalName": "CreateScatterSeries"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
       {"names":[{"platform": "Angular", "mappedType": "List","mappedName": "getXProps"}], "originalName": "GetXProps"},
       {"names":[{"platform": "Angular", "mappedType": "List","mappedName": "getYProps"}], "originalName": "GetYProps"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isXProp"}], "originalName": "IsXProp"},
@@ -332,6 +361,7 @@
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "collectionTransformationThreshold"}], "originalName": "CollectionTransformationThreshold"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"} ]
   },
   {
@@ -345,6 +375,7 @@
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "fallbackTypeIfUnsupported"}], "originalName": "FallbackTypeIfUnsupported"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "useColumnThreshold"}], "originalName": "UseColumnThreshold"} ]
   }]

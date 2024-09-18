@@ -67,7 +67,8 @@
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "IgRect",  "mappedName": "bounds"}], "originalName": "Bounds"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"},
-      {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "item"}], "originalName": "Item"} ]
+      {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "item"}], "originalName": "Item"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgPoint", "mappedName": "position"}], "originalName": "Position"} ]
   },
   {
     "originalName": "XamFunnelChart",
@@ -77,13 +78,19 @@
     "packageName": "igniteui-charts",
     "names":[{"platform": "WebComponents","fileName": "igc-funnel-chart-component.ts","mappedName": "IgcFunnelChartComponent"}],
     "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "HighlightedValueDisplayMode","mappedName": "actualHighlightValueDisplayMode"}], "originalName": "ActualHighlightValueDisplayMode"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "actualHighlightValueOpacity"}], "originalName": "ActualHighlightValueOpacity"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "allowSliceSelection"}], "originalName": "AllowSliceSelection"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "bottomEdgeWidth"}], "originalName": "BottomEdgeWidth"},
       {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "brushes"}], "originalName": "Brushes"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "exportSerializedVisualData"}], "originalName": "ExportSerializedVisualData"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "flush"}], "originalName": "Flush"},
       {"names":[{"platform": "WebComponents", "mappedType": "(arg1: any, arg2: number, arg3: any) => string","mappedName": "formatInnerLabel"}], "originalName": "FormatInnerLabel"},
       {"names":[{"platform": "WebComponents", "mappedType": "(arg1: any, arg2: number, arg3: any) => string","mappedName": "formatOuterLabel"}], "originalName": "FormatOuterLabel"},
       {"names":[{"platform": "WebComponents", "mappedType": "FunnelSliceDisplay","mappedName": "funnelSliceDisplay"}], "originalName": "FunnelSliceDisplay"},
+      {"names":[{"platform": "WebComponents", "mappedType": "HighlightedValueDisplayMode","mappedName": "highlightValueDisplayMode"}], "originalName": "HighlightValueDisplayMode"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "highlightValueOpacity"}], "originalName": "HighlightValueOpacity"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "highlightedValueMemberPath"}], "originalName": "HighlightedValueMemberPath"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "innerLabelMemberPath"}], "originalName": "InnerLabelMemberPath"},
       {"names":[{"platform": "WebComponents", "mappedType": "Visibility","mappedName": "innerLabelVisibility"}], "originalName": "InnerLabelVisibility"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isInverted"}], "originalName": "IsInverted"},

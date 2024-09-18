@@ -31,6 +31,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "PrimaryKey"}], "originalName": "PrimaryKey"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "RemoveKeyValue"}], "originalName": "RemoveKeyValue"},
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "RowHeight"}], "originalName": "RowHeight"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "RowHoverBackgroundColor"}], "originalName": "RowHoverBackgroundColor"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ScrollbarBackground"}], "originalName": "ScrollbarBackground"},
       {"names":[{"platform": "Blazor", "mappedType": "ScrollbarStyle","mappedName": "ScrollbarStyle"}], "originalName": "ScrollbarStyle"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SearchBackgroundColor"}], "originalName": "SearchBackgroundColor"},
@@ -53,7 +54,8 @@
     "names":[{"platform": "Blazor","fileName": "CheckedChangedEventArgs.cs","mappedName": "IgbCheckedChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Index"}], "originalName": "Index"},
-      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsChecked"}], "originalName": "IsChecked"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsChecked"}], "originalName": "IsChecked"},
+      {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "PrimaryKey"}], "originalName": "PrimaryKey"} ]
   },
   {
     "originalName": "SelectAllCheckboxChangedEventArgs",

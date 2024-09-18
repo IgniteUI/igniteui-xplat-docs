@@ -45,7 +45,6 @@
     "igx-nav-drawer-item-module.ts",
     "igx-nav-drawer-module.ts",
     "igx-navbar-module.ts",
-    "igx-popover-module.ts",
     "igx-progress-base-module.ts",
     "igx-radio-group-module.ts",
     "igx-radio-module.ts",
@@ -105,6 +104,34 @@
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "month"}], "originalName": "Month"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "seconds"}], "originalName": "Seconds"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "year"}], "originalName": "Year"} ]
+  },
+  {
+    "originalName": "PaneScrollEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Angular","fileName": "igx-pane-scroll-event-args.ts","mappedName": "IgxPaneScrollEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "IgxPaneScrollEventArgsDetail","mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "PaneScrollEventArgsDetail",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Angular","fileName": "igx-pane-scroll-event-args-detail.ts","mappedName": "IgxPaneScrollEventArgsDetail"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "IgxContentPaneComponent","mappedName": "pane"}], "originalName": "Pane"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "SplitterResizeEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Angular","fileName": "igx-splitter-resize-event-args.ts","mappedName": "IgxSplitterResizeEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "SplitPaneOrientation","mappedName": "orientation"}], "originalName": "Orientation"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxDockManagerPaneComponent","mappedName": "pane"}], "originalName": "Pane"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "paneHeight"}], "originalName": "PaneHeight"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "paneWidth"}], "originalName": "PaneWidth"} ]
   },
   {
     "originalName": "TreeSelectionChangeDetail",
@@ -215,9 +242,7 @@
     "names":[{"platform": "Angular","fileName": "igx-button-group-component.ts","mappedName": "IgxButtonGroupComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "ButtonGroupAlignment","mappedName": "alignment"}], "originalName": "Alignment"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "disconnectedCallback"}], "originalName": "DisconnectedCallback"},
       {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "selectedItems"}], "originalName": "SelectedItems"},
       {"names":[{"platform": "Angular", "mappedType": "ButtonGroupSelection","mappedName": "selection"}], "originalName": "Selection"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
@@ -271,6 +296,7 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"},
       {"names":[{"platform": "Angular", "mappedType": "(arg: any) => any","mappedName": "itemTemplate"}], "originalName": "ItemTemplate"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "label"}], "originalName": "Label"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "open"}], "originalName": "Open"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "outlined"}], "originalName": "Outlined"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "placeholder"}], "originalName": "Placeholder"},
@@ -303,7 +329,8 @@
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "ComboChangeType","mappedName": "changeType"}], "originalName": "ChangeType"},
       {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "items"}], "originalName": "Items"},
-      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "newValue"}], "originalName": "NewValue"} ]
+      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "newValue"}], "originalName": "NewValue"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
     "originalName": "ComboTemplateProps",
@@ -439,7 +466,7 @@
     "packageName": "igniteui-webinputs",
     "names":[{"platform": "Angular","fileName": "igx-pane-close-event-args-detail.ts","mappedName": "IgxPaneCloseEventArgsDetail"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "IgxContentPaneComponent[]","mappedName": "panes"}], "originalName": "Panes"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxContentPaneCollection","mappedName": "panes"}], "originalName": "Panes"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "IgxDockManagerPaneComponent","mappedName": "sourcePane"}], "originalName": "SourcePane"} ]
   },
@@ -449,7 +476,7 @@
     "packageName": "igniteui-webinputs",
     "names":[{"platform": "Angular","fileName": "igx-pane-drag-end-event-args-detail.ts","mappedName": "IgxPaneDragEndEventArgsDetail"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "IgxContentPaneComponent[]","mappedName": "panes"}], "originalName": "Panes"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxContentPaneCollection","mappedName": "panes"}], "originalName": "Panes"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "IgxDockManagerPaneComponent","mappedName": "sourcePane"}], "originalName": "SourcePane"} ]
   },
@@ -461,7 +488,7 @@
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxPaneDragActionComponent","mappedName": "action"}], "originalName": "Action"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isValid"}], "originalName": "IsValid"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxContentPaneComponent[]","mappedName": "panes"}], "originalName": "Panes"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxContentPaneCollection","mappedName": "panes"}], "originalName": "Panes"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "IgxDockManagerPaneComponent","mappedName": "sourcePane"}], "originalName": "SourcePane"} ]
   },
@@ -471,7 +498,7 @@
     "packageName": "igniteui-webinputs",
     "names":[{"platform": "Angular","fileName": "igx-pane-drag-start-event-args-detail.ts","mappedName": "IgxPaneDragStartEventArgsDetail"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "IgxContentPaneComponent[]","mappedName": "panes"}], "originalName": "Panes"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxContentPaneCollection","mappedName": "panes"}], "originalName": "Panes"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "IgxDockManagerPaneComponent","mappedName": "sourcePane"}], "originalName": "SourcePane"} ]
   },
@@ -493,29 +520,9 @@
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "UnpinnedLocation","mappedName": "location"}], "originalName": "Location"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "newValue"}], "originalName": "NewValue"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxContentPaneComponent[]","mappedName": "panes"}], "originalName": "Panes"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxContentPaneCollection","mappedName": "panes"}], "originalName": "Panes"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "IgxContentPaneComponent","mappedName": "sourcePane"}], "originalName": "SourcePane"} ]
-  },
-  {
-    "originalName": "Popover",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "Angular","fileName": "igx-popover-component.ts","mappedName": "IgxPopoverComponent"}],
-    "members":[
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "anchor"}], "originalName": "Anchor"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "disconnectedCallback"}], "originalName": "DisconnectedCallback"},
-      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "flip"}], "originalName": "Flip"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "offset"}], "originalName": "Offset"},
-      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "open"}], "originalName": "Open"},
-      {"names":[{"platform": "Angular", "mappedType": "DropdownPlacement","mappedName": "placement"}], "originalName": "Placement"},
-      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "sameWidth"}], "originalName": "SameWidth"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
-      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "shift"}], "originalName": "Shift"},
-      {"names":[{"platform": "Angular", "mappedType": "PopoverStrategy","mappedName": "strategy"}], "originalName": "Strategy"} ]
   },
   {
     "originalName": "Select",
@@ -536,6 +543,7 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"},
       {"names":[{"platform": "Angular", "mappedType": "IgxSelectItemComponent[]","mappedName": "items"}], "originalName": "Items"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "label"}], "originalName": "Label"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "outlined"}], "originalName": "Outlined"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "placeholder"}], "originalName": "Placeholder"},
       {"names":[{"platform": "Angular", "mappedType": "DropdownPlacement","mappedName": "placement"}], "originalName": "Placement"},
@@ -555,7 +563,6 @@
     "names":[{"platform": "Angular","fileName": "igx-select-group-component.ts","mappedName": "IgxSelectGroupComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "disconnectedCallback"}], "originalName": "DisconnectedCallback"},
       {"names":[{"platform": "Angular", "mappedType": "IgxSelectItemComponent[]","mappedName": "items"}], "originalName": "Items"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
@@ -596,7 +603,6 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "active"}], "originalName": "Active"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "complete"}], "originalName": "Complete"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "firstUpdated"}], "originalName": "FirstUpdated"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "optional"}], "originalName": "Optional"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
@@ -705,6 +711,7 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "label"}], "originalName": "Label"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "maxLength"}], "originalName": "MaxLength"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "minLength"}], "originalName": "MinLength"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "outlined"}], "originalName": "Outlined"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "placeholder"}], "originalName": "Placeholder"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "readOnly"}], "originalName": "ReadOnly"},
@@ -712,13 +719,13 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "required"}], "originalName": "Required"},
       {"names":[{"platform": "Angular", "mappedType": "TextareaResize","mappedName": "resize"}], "originalName": "Resize"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "rows"}], "originalName": "Rows"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "scrollTo"}], "originalName": "ScrollTo"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "select"}], "originalName": "Select"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setCustomValidity"}], "originalName": "SetCustomValidity"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setRangeText"}], "originalName": "SetRangeText"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setSelectionRange"}], "originalName": "SetSelectionRange"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "spellcheck"}], "originalName": "Spellcheck"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "validateOnly"}], "originalName": "ValidateOnly"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"},
       {"names":[{"platform": "Angular", "mappedType": "TextareaWrap","mappedName": "wrap"}], "originalName": "Wrap"} ]
   },
@@ -770,15 +777,18 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "allowFloatingPanesResize"}], "originalName": "AllowFloatingPanesResize"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "allowInnerDock"}], "originalName": "AllowInnerDock"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "allowMaximize"}], "originalName": "AllowMaximize"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "containedInBoundaries"}], "originalName": "ContainedInBoundaries"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "disableKeyboardNavigation"}], "originalName": "DisableKeyboardNavigation"},
       {"names":[{"platform": "Angular", "mappedType": "IgxDockManagerPaneComponent","mappedName": "draggedPane"}], "originalName": "DraggedPane"},
       {"names":[{"platform": "Angular", "mappedType": "IgxDockManagerPoint","mappedName": "dropPosition"}], "originalName": "DropPosition"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "focusPane"}], "originalName": "FocusPane"},
       {"names":[{"platform": "Angular", "mappedType": "IgxDockManagerLayout","mappedName": "layout"}], "originalName": "Layout"},
       {"names":[{"platform": "Angular", "mappedType": "IgxDockManagerPaneComponent","mappedName": "maximizedPane"}], "originalName": "MaximizedPane"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "proximityDock"}], "originalName": "ProximityDock"},
       {"names":[{"platform": "Angular", "mappedType": "IgxDockManagerResourceStrings","mappedName": "resourceStrings"}], "originalName": "ResourceStrings"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
-      {"names":[{"platform": "Angular", "mappedType": "DockManagerShowHeaderIconOnHover","mappedName": "showHeaderIconOnHover"}], "originalName": "ShowHeaderIconOnHover"} ]
+      {"names":[{"platform": "Angular", "mappedType": "DockManagerShowHeaderIconOnHover","mappedName": "showHeaderIconOnHover"}], "originalName": "ShowHeaderIconOnHover"},
+      {"names":[{"platform": "Angular", "mappedType": "DockManagerShowPaneHeaders","mappedName": "showPaneHeaders"}], "originalName": "ShowPaneHeaders"} ]
   },
   {
     "originalName": "LayoutChangeEventArgs",
@@ -856,7 +866,6 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "expand"}], "originalName": "Expand"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "expandWithEvent"}], "originalName": "ExpandWithEvent"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "expanded"}], "originalName": "Expanded"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "firstUpdated"}], "originalName": "FirstUpdated"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "label"}], "originalName": "Label"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "level"}], "originalName": "Level"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "loading"}], "originalName": "Loading"},
@@ -1201,13 +1210,16 @@
       {"names":[{"platform": "Angular", "mappedType": "InputInputmode","mappedName": "inputmode"}], "originalName": "Inputmode"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "max"}], "originalName": "Max"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "maxLength"}], "originalName": "MaxLength"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "maxlength"}], "originalName": "Maxlength"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "min"}], "originalName": "Min"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "minLength"}], "originalName": "MinLength"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "minlength"}], "originalName": "Minlength"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "pattern"}], "originalName": "Pattern"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "select"}], "originalName": "Select"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "step"}], "originalName": "Step"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "stepDown"}], "originalName": "StepDown"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "stepUp"}], "originalName": "StepUp"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "validateOnly"}], "originalName": "ValidateOnly"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"} ]
   },
   {
@@ -1231,13 +1243,9 @@
       {"names":[{"platform": "Angular", "mappedType": "DropdownScrollStrategy","mappedName": "scrollStrategy"}], "originalName": "ScrollStrategy"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "select"}], "originalName": "Select"},
       {"names":[{"platform": "Angular", "mappedType": "IgxDropdownItemComponent","mappedName": "selectedItem"}], "originalName": "SelectedItem"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "show"}], "originalName": "Show"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "showTarget"}], "originalName": "Show"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "show2"}], "originalName": "Show"},
       {"names":[{"platform": "Angular", "mappedType": "SizableComponentSize","mappedName": "size"}], "originalName": "Size"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "toggle"}], "originalName": "Toggle"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "toggleTarget"}], "originalName": "Toggle"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "toggle2"}], "originalName": "Toggle"} ]
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "toggleTarget"}], "originalName": "Toggle"} ]
   },
   {
     "originalName": "Chip",
@@ -1328,9 +1336,11 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "focusComponent"}], "originalName": "FocusComponent"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "label"}], "originalName": "Label"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "outlined"}], "originalName": "Outlined"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "placeholder"}], "originalName": "Placeholder"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "readOnly"}], "originalName": "ReadOnly"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "readonly"}], "originalName": "Readonly"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "reportValidity"}], "originalName": "ReportValidity"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "required"}], "originalName": "Required"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setCustomValidity"}], "originalName": "SetCustomValidity"},
@@ -1383,6 +1393,7 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "label"}], "originalName": "Label"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "max"}], "originalName": "Max"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "readOnly"}], "originalName": "ReadOnly"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "readonly"}], "originalName": "Readonly"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "reportValidity"}], "originalName": "ReportValidity"},
@@ -1460,6 +1471,8 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "ariaLabelLower"}], "originalName": "AriaLabelLower"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "ariaLabelUpper"}], "originalName": "AriaLabelUpper"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "lower"}], "originalName": "Lower"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "thumbLabelLower"}], "originalName": "ThumbLabelLower"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "thumbLabelUpper"}], "originalName": "ThumbLabelUpper"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "upper"}], "originalName": "Upper"} ]
   },
   {
@@ -1471,8 +1484,8 @@
     "names":[{"platform": "Angular","fileName": "igx-slider-component.ts","mappedName": "IgxSliderComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "checkValidity"}], "originalName": "CheckValidity"},
-      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "reportValidity"}], "originalName": "ReportValidity"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setCustomValidity"}], "originalName": "SetCustomValidity"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "stepDown"}], "originalName": "StepDown"},
@@ -1488,6 +1501,7 @@
     "names":[{"platform": "Angular","fileName": "igx-slider-base-component.ts","mappedName": "IgxSliderBaseComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "discreteTrack"}], "originalName": "DiscreteTrack"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "hidePrimaryLabels"}], "originalName": "HidePrimaryLabels"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "hideSecondaryLabels"}], "originalName": "HideSecondaryLabels"},
@@ -1721,6 +1735,7 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "focusComponent"}], "originalName": "FocusComponent"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"},
       {"names":[{"platform": "Angular", "mappedType": "CheckboxBaseLabelPosition","mappedName": "labelPosition"}], "originalName": "LabelPosition"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "reportValidity"}], "originalName": "ReportValidity"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "required"}], "originalName": "Required"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setCustomValidity"}], "originalName": "SetCustomValidity"},
@@ -1957,6 +1972,7 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "focusComponent"}], "originalName": "FocusComponent"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"},
       {"names":[{"platform": "Angular", "mappedType": "RadioLabelPosition","mappedName": "labelPosition"}], "originalName": "LabelPosition"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "reportValidity"}], "originalName": "ReportValidity"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "required"}], "originalName": "Required"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setCustomValidity"}], "originalName": "SetCustomValidity"},

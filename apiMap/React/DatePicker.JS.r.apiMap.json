@@ -1,5 +1,5 @@
 {
-  "extraFiles": ["igr-date-picker-module.ts"],
+  "extraFiles": ["igr-x-date-picker-module.ts"],
   "types":[
   {
     "originalName": "DateTimeValueFormatter",
@@ -25,7 +25,7 @@
     "originalName": "DatePicker",
     "originalNamespace": "Infragistics.Controls.Inputs.Implementation",
     "packageName": "igniteui-inputs",
-    "names":[{"platform": "React","fileName": "igr-date-picker.ts","mappedName": "IgrDatePicker"}],
+    "names":[{"platform": "React","fileName": "igr-x-date-picker.ts","mappedName": "IgrXDatePicker"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "allowTextInput"}], "originalName": "AllowTextInput"},
       {"names":[{"platform": "React", "mappedType": "BaseControlTheme","mappedName": "baseTheme"}], "originalName": "BaseTheme"},
