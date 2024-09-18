@@ -316,6 +316,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getItem"}], "originalName": "GetItem"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getItemSpan"}], "originalName": "GetItemSpan"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getMemberPathValue"}], "originalName": "GetMemberPathValue"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getNextOrExactIndex"}], "originalName": "GetNextOrExactIndex"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getPreviousOrExactIndex"}], "originalName": "GetPreviousOrExactIndex"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getSeriesHighValue"}], "originalName": "GetSeriesHighValue"},

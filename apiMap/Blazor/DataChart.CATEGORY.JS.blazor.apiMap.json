@@ -39,6 +39,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "ConsolidatedItemHitTestBehavior","mappedName": "ConsolidatedItemHitTestBehavior"}], "originalName": "ConsolidatedItemHitTestBehavior"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItem"}], "originalName": "GetItem"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemValue"}], "originalName": "GetItemValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetMemberPathValue"}], "originalName": "GetMemberPathValue"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValueType"}], "originalName": "GetSeriesValueType"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValueTypePosition"}], "originalName": "GetSeriesValueTypePosition"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HighlightedValueMemberPath"}], "originalName": "HighlightedValueMemberPath"},

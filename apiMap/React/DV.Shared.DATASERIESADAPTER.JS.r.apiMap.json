@@ -7,6 +7,7 @@
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"} ]
   },
   {
@@ -69,6 +70,10 @@
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "extractTitle"}], "originalName": "ExtractTitle"},
       {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "getAllCollectionProperties"}], "originalName": "GetAllCollectionProperties"},
       {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "getAllDateTimeProperties"}], "originalName": "GetAllDateTimeProperties"},
+      {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "getAllDistinctMonotonicNumericProperties"}], "originalName": "GetAllDistinctMonotonicNumericProperties"},
+      {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "getAllExcludedDateTimeProperties"}], "originalName": "GetAllExcludedDateTimeProperties"},
+      {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "getAllExcludedDistinctMonotonicNumericProperties"}], "originalName": "GetAllExcludedDistinctMonotonicNumericProperties"},
+      {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "getAllExcludedStringProperties"}], "originalName": "GetAllExcludedStringProperties"},
       {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "getAllNumericProperties"}], "originalName": "GetAllNumericProperties"},
       {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "getAllObjectProperties"}], "originalName": "GetAllObjectProperties"},
       {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "getAllPropertiesWithIntent"}], "originalName": "GetAllPropertiesWithIntent"},
@@ -86,6 +91,7 @@
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "getFirstNumericProperty"}], "originalName": "GetFirstNumericProperty"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "getFirstStringProperty"}], "originalName": "GetFirstStringProperty"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "getFirstStringPropertyPreferringDistinct"}], "originalName": "GetFirstStringPropertyPreferringDistinct"},
+      {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "getMatchingExcludedProperties"}], "originalName": "GetMatchingExcludedProperties"},
       {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "getMatchingProperties"}], "originalName": "GetMatchingProperties"},
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "getNonNullPropertyValue"}], "originalName": "GetNonNullPropertyValue"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "getParentTitle"}], "originalName": "GetParentTitle"},
@@ -140,6 +146,7 @@
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "hasMatchingHint"}], "originalName": "HasMatchingHint"},
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "highlightedData"}], "originalName": "HighlightedData"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isMatch"}], "originalName": "IsMatch"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"},
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "removeMemberPathHint"}], "originalName": "RemoveMemberPathHint"},
@@ -225,6 +232,7 @@
       {"names":[{"platform": "React", "mappedType": "DataSeriesType","mappedName": "FinancialPrice"}], "originalName": "FinancialPrice"},
       {"names":[{"platform": "React", "mappedType": "DataSeriesType","mappedName": "ItemToolTipLayer"}], "originalName": "ItemToolTipLayer"},
       {"names":[{"platform": "React", "mappedType": "DataSeriesType","mappedName": "Line"}], "originalName": "Line"},
+      {"names":[{"platform": "React", "mappedType": "DataSeriesType","mappedName": "Pie"}], "originalName": "Pie"},
       {"names":[{"platform": "React", "mappedType": "DataSeriesType","mappedName": "Point"}], "originalName": "Point"},
       {"names":[{"platform": "React", "mappedType": "DataSeriesType","mappedName": "ScatterArea"}], "originalName": "ScatterArea"},
       {"names":[{"platform": "React", "mappedType": "DataSeriesType","mappedName": "ScatterBubble"}], "originalName": "ScatterBubble"},
@@ -254,10 +262,14 @@
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "React", "mappedType": "DataSeriesAxisType","mappedName": "Category"}], "originalName": "Category"},
+      {"names":[{"platform": "React", "mappedType": "DataSeriesAxisType","mappedName": "CategoryAngle"}], "originalName": "CategoryAngle"},
       {"names":[{"platform": "React", "mappedType": "DataSeriesAxisType","mappedName": "ContinuousDateTime"}], "originalName": "ContinuousDateTime"},
       {"names":[{"platform": "React", "mappedType": "DataSeriesAxisType","mappedName": "DiscreteDateTime"}], "originalName": "DiscreteDateTime"},
       {"names":[{"platform": "React", "mappedType": "DataSeriesAxisType","mappedName": "Linear"}], "originalName": "Linear"},
-      {"names":[{"platform": "React", "mappedType": "DataSeriesAxisType","mappedName": "Logarithmic"}], "originalName": "Logarithmic"} ]
+      {"names":[{"platform": "React", "mappedType": "DataSeriesAxisType","mappedName": "Logarithmic"}], "originalName": "Logarithmic"},
+      {"names":[{"platform": "React", "mappedType": "DataSeriesAxisType","mappedName": "ProportionalCategoryAngle"}], "originalName": "ProportionalCategoryAngle"},
+      {"names":[{"platform": "React", "mappedType": "DataSeriesAxisType","mappedName": "RadialLinear"}], "originalName": "RadialLinear"},
+      {"names":[{"platform": "React", "mappedType": "DataSeriesAxisType","mappedName": "RadialLogarithmic"}], "originalName": "RadialLogarithmic"} ]
   },
   {
     "originalName": "DataSeriesMarker",
@@ -292,6 +304,21 @@
       {"names":[{"platform": "React", "mappedType": "IDataSource","mappedName": "getLocalDataSource"}], "originalName": "GetLocalDataSource"} ]
   },
   {
+    "originalName": "SimplePieSeriesRule",
+    "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "SimplePieSeriesRule.ts","mappedName": "SimplePieSeriesRule"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "distinctCheckThreshold"}], "originalName": "DistinctCheckThreshold"},
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "fallbackTypeIfUnsupported"}], "originalName": "FallbackTypeIfUnsupported"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "useColumnThreshold"}], "originalName": "UseColumnThreshold"} ]
+  },
+  {
     "originalName": "SimpleFinancialPriceSeriesRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
     "packageName": "igniteui-core",
@@ -303,6 +330,7 @@
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "except"}], "originalName": "Except"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "getDataSourceTitle"}], "originalName": "GetDataSourceTitle"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"} ]
   },
   {
@@ -315,6 +343,7 @@
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "createScatterSeries"}], "originalName": "CreateScatterSeries"},
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
       {"names":[{"platform": "React", "mappedType": "List","mappedName": "getXProps"}], "originalName": "GetXProps"},
       {"names":[{"platform": "React", "mappedType": "List","mappedName": "getYProps"}], "originalName": "GetYProps"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isXProp"}], "originalName": "IsXProp"},
@@ -332,6 +361,7 @@
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "collectionTransformationThreshold"}], "originalName": "CollectionTransformationThreshold"},
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"} ]
   },
   {
@@ -345,6 +375,7 @@
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "fallbackTypeIfUnsupported"}], "originalName": "FallbackTypeIfUnsupported"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "useColumnThreshold"}], "originalName": "UseColumnThreshold"} ]
   }]

@@ -7,6 +7,7 @@
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"} ]
   },
   {
@@ -69,6 +70,10 @@
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "extractTitle"}], "originalName": "ExtractTitle"},
       {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "getAllCollectionProperties"}], "originalName": "GetAllCollectionProperties"},
       {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "getAllDateTimeProperties"}], "originalName": "GetAllDateTimeProperties"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "getAllDistinctMonotonicNumericProperties"}], "originalName": "GetAllDistinctMonotonicNumericProperties"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "getAllExcludedDateTimeProperties"}], "originalName": "GetAllExcludedDateTimeProperties"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "getAllExcludedDistinctMonotonicNumericProperties"}], "originalName": "GetAllExcludedDistinctMonotonicNumericProperties"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "getAllExcludedStringProperties"}], "originalName": "GetAllExcludedStringProperties"},
       {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "getAllNumericProperties"}], "originalName": "GetAllNumericProperties"},
       {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "getAllObjectProperties"}], "originalName": "GetAllObjectProperties"},
       {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "getAllPropertiesWithIntent"}], "originalName": "GetAllPropertiesWithIntent"},
@@ -86,6 +91,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "getFirstNumericProperty"}], "originalName": "GetFirstNumericProperty"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "getFirstStringProperty"}], "originalName": "GetFirstStringProperty"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "getFirstStringPropertyPreferringDistinct"}], "originalName": "GetFirstStringPropertyPreferringDistinct"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "getMatchingExcludedProperties"}], "originalName": "GetMatchingExcludedProperties"},
       {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "getMatchingProperties"}], "originalName": "GetMatchingProperties"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "getNonNullPropertyValue"}], "originalName": "GetNonNullPropertyValue"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "getParentTitle"}], "originalName": "GetParentTitle"},
@@ -140,6 +146,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "hasMatchingHint"}], "originalName": "HasMatchingHint"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "highlightedData"}], "originalName": "HighlightedData"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isMatch"}], "originalName": "IsMatch"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"},
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "removeMemberPathHint"}], "originalName": "RemoveMemberPathHint"},
@@ -225,6 +232,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesType","mappedName": "FinancialPrice"}], "originalName": "FinancialPrice"},
       {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesType","mappedName": "ItemToolTipLayer"}], "originalName": "ItemToolTipLayer"},
       {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesType","mappedName": "Line"}], "originalName": "Line"},
+      {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesType","mappedName": "Pie"}], "originalName": "Pie"},
       {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesType","mappedName": "Point"}], "originalName": "Point"},
       {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesType","mappedName": "ScatterArea"}], "originalName": "ScatterArea"},
       {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesType","mappedName": "ScatterBubble"}], "originalName": "ScatterBubble"},
@@ -254,10 +262,14 @@
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesAxisType","mappedName": "Category"}], "originalName": "Category"},
+      {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesAxisType","mappedName": "CategoryAngle"}], "originalName": "CategoryAngle"},
       {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesAxisType","mappedName": "ContinuousDateTime"}], "originalName": "ContinuousDateTime"},
       {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesAxisType","mappedName": "DiscreteDateTime"}], "originalName": "DiscreteDateTime"},
       {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesAxisType","mappedName": "Linear"}], "originalName": "Linear"},
-      {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesAxisType","mappedName": "Logarithmic"}], "originalName": "Logarithmic"} ]
+      {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesAxisType","mappedName": "Logarithmic"}], "originalName": "Logarithmic"},
+      {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesAxisType","mappedName": "ProportionalCategoryAngle"}], "originalName": "ProportionalCategoryAngle"},
+      {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesAxisType","mappedName": "RadialLinear"}], "originalName": "RadialLinear"},
+      {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesAxisType","mappedName": "RadialLogarithmic"}], "originalName": "RadialLogarithmic"} ]
   },
   {
     "originalName": "DataSeriesMarker",
@@ -292,6 +304,21 @@
       {"names":[{"platform": "WebComponents", "mappedType": "IDataSource","mappedName": "getLocalDataSource"}], "originalName": "GetLocalDataSource"} ]
   },
   {
+    "originalName": "SimplePieSeriesRule",
+    "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "WebComponents","fileName": "SimplePieSeriesRule.ts","mappedName": "SimplePieSeriesRule"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "distinctCheckThreshold"}], "originalName": "DistinctCheckThreshold"},
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "fallbackTypeIfUnsupported"}], "originalName": "FallbackTypeIfUnsupported"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "useColumnThreshold"}], "originalName": "UseColumnThreshold"} ]
+  },
+  {
     "originalName": "SimpleFinancialPriceSeriesRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
     "packageName": "igniteui-core",
@@ -303,6 +330,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "except"}], "originalName": "Except"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "getDataSourceTitle"}], "originalName": "GetDataSourceTitle"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"} ]
   },
   {
@@ -315,6 +343,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "createScatterSeries"}], "originalName": "CreateScatterSeries"},
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
       {"names":[{"platform": "WebComponents", "mappedType": "List","mappedName": "getXProps"}], "originalName": "GetXProps"},
       {"names":[{"platform": "WebComponents", "mappedType": "List","mappedName": "getYProps"}], "originalName": "GetYProps"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isXProp"}], "originalName": "IsXProp"},
@@ -332,6 +361,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "collectionTransformationThreshold"}], "originalName": "CollectionTransformationThreshold"},
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"} ]
   },
   {
@@ -345,6 +375,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "fallbackTypeIfUnsupported"}], "originalName": "FallbackTypeIfUnsupported"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "useColumnThreshold"}], "originalName": "UseColumnThreshold"} ]
   }]
