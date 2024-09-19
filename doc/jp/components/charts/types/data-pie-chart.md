@@ -2,7 +2,7 @@
 title: {Platform} 円チャートとグラフ | {ProductName}
 _description: {ProductName} データ円チャートは、セクションに分割された円形の領域で構成される、円チャートを表示するための UI コントロールです。無料でお試しください。
 _keywords: {Platform} charts, pie chart, {ProductName}, Infragistics, data binding, slice selection, animation, highlighting, legend, {Platform} チャート, 円チャート, インフラジスティックス, データ バインディング, スライスの選択, アニメーション, ハイライト表示, 凡例
-mentionedTypes: ["DataPieChart", "XamDataChart"]
+mentionedTypes: ["DataPieChart", "XamDataChart", "OthersCategoryType", "SeriesSelectionMode", "SeriesSelectionBehavior", "SeriesHighlightingBehavior"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -12,7 +12,7 @@ _language: ja
 
 ## {Platform} データ円チャートの例
 
-データ項目を文字列と数値データでバインドすることで、`DataPieChart` の {Platform} 円チャートが作成できます。これらのデータ値を足すと可視化率100%になります。
+データ項目を文字列と数値データでバインドすることで、`DataPieChart` の {Platform} 円チャートが作成できます。これらのデータ値を足すと可視化率 100% になります。
 
 `sample="/charts/data-pie-chart/overview", height="600", alt="{Platform} データ円チャートの概要"`
 
@@ -20,16 +20,7 @@ _language: ja
 
 ## {Platform} データ円チャートの推奨事項
 
-円チャートは小さなデータ セットに適しており、一目で読みやすいです。円チャートは、部分から全体への視覚化の 1 つのタイプにすぎません。その他は次のとおりです。
-
-- ドーナツ (リング)
-- ファンネル
-- 積層型エリア
-- 積層型 100% エリア (積層型パーセンテージ エリア)
-- 積層型棒
-- 積層型 100% 棒 (積層型パーセンテージ棒)
-- ツリーマップ
-- ウォーターフォール
+円チャートは小さなデータ セットに適しており、一目で読みやすいです。円チャートは、ドーナツ (リング) チャート、ファンネル チャート、積層型エリア チャート、積層型棒チャート、ツリーマップなど、部分から全体への視覚化の 1 つのタイプです。
 
 {Platform} データ円チャートには、次のようなデータを分析するためのビューア ツールを提供するインタラクティブ機能が含まれています。
 
@@ -173,9 +164,11 @@ ItemLegend バッジを変更することもできます。デフォルトでは
 
 以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
 
+- `ChartType`
 - `OthersCategoryThreshold`
 - `OthersCategoryType`
 - `SelectionMode`
+- `SelectionBehavior`
 
  |チャート タイプ       | コントロール名   | API メンバー |
  |-----------------|----------------|------------ |
