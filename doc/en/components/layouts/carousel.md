@@ -43,13 +43,13 @@ Use the `Carousel` selector to wrap your `Slide`s. The slides may feature any va
 ```html
 <igc-carousel>
     <igc-carousel-slide>
-        <img src="assets/images/carousel/ignite-ui-angular-indigo-design.png"/>
+        <img src="assets/images/carousel/ignite-ui-indigo-design.png"/>
     </igc-carousel-slide>
     <igc-carousel-slide>
         <img src="assets/images/carousel/slider-image-chart.png"/>
     </igc-carousel-slide>
     <igc-carousel-slide>
-        <img src="assets/images/carousel/ignite-ui-angular-charts.png"/>
+        <img src="assets/images/carousel/ignite-ui-charts.png"/>
     </igc-carousel-slide>
 </igc-carousel>
 ```
@@ -75,10 +75,10 @@ If you want a slide to be active by default, use the `Active` attribute:
 
 ### Carousel Configuration
 
-By default, the `Carousel` has its `SkipLoop` property set to **false** (*looping occurs when the first slide comes after the last by navigating using the Next action, or when the last slide comes after the first by using the Previous action*). The looping behavior can be disabled by setting the value of the `SkipLoop` property to **true**.
+By default, the `Carousel` has its `DisableLoop` property set to **false** (*looping occurs when the first slide comes after the last by navigating using the Next action, or when the last slide comes after the first by using the Previous action*). The looping behavior can be disabled by setting the value of the `DisableLoop` property to **true**.
 
 ```html
-<igc-carousel skip-loop="true">
+<igc-carousel disable-loop="true">
     ...
 </igc-carousel>
 ```
@@ -91,10 +91,10 @@ To keep track of each slide index, the carousel has indicators that are position
 </igc-carousel>
 ```
 
-By default, the `Carousel` displays its navigation buttons and indicators. Use the `SkipIndicator` property to hide the indicators and the `SkipNavigation` property to hide the navigation buttons.
+By default, the `Carousel` displays its navigation buttons and indicators. Use the `HideIndicators` property to hide the indicators and the `HideNavigation` property to hide the navigation buttons.
 
 ```html
-<igc-carousel skip-navigation="true" skip-indicator="true">
+<igc-carousel hide-navigation="true" hide-indicators="true">
     ...
 </igc-carousel>
 ```
@@ -136,7 +136,7 @@ The {ProductName} Carousel component allows users to use different elements for 
 
 ### Custom navigation buttons
 
-To achieve this we will use the `previous-button` and `next-button` slots:
+To achieve this, use the `previous-button` and `next-button` slots:
 
 ```html
 <igc-carousel>
@@ -189,9 +189,9 @@ This carousel is going to contain slides with forms and images:
 
 Animated slide transitions provide the end-users a nice experience when interacting with the carousel.
 
-The carousel is configured to use the `slide` animation by default but it also supports `fade` as an alternative animation.
+The carousel is configured to use the `slide` animation by default, but it also supports `fade` as an alternative animation.
 
-Use the `AnimationsType` property to change the animation.
+Use the `AnimationType` property to change the animation.
 
 ```html
 <igc-carousel animation-type="fade">
@@ -212,7 +212,13 @@ The demo below demonstrates the different types of animations, which the carouse
 
 Transition and navigation are the most important carousel features.
 
-The navigation in the carousel can be handled by interacting with the navigation buttons and indicators.
+The navigation in the carousel can be handled by the user through navigation buttons, indicators, keyboard navigation and touch interaction on mobile devices.
+
+### Touch gestures
+
+By default, the carousel can be used on any touch-enabled device.
+
+The carousel [animations](carousel.md#animations) are fully supported on touch devices, which makes the carousel consistent with any platform and great when used in progressive web applications ([PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)).
 
 ### Keyboard navigation
 
@@ -230,10 +236,10 @@ The `Carousel` can be easily configured to change the slides automatically, with
 
 >[!NOTE]
 >Hovering the mouse over any carousel content or moving keyboard focus to any of the carousel content pauses automatic transitioning. Automatic transitioning resumes when the mouse moves away from the carousel or when keyboard focus moves out of the carousel content. 
-This can be prevented by setting `SkipPauseOnInteraction` property to **true**.
+This can be prevented by setting `DisablePauseOnInteraction` property to **true**.
 
 ```html
-<igc-carousel interval="2000" skip-pause-on-interaction="true">
+<igc-carousel interval="2000" disable-pause-on-interaction="true">
     ...
 </igc-carousel>
 ```
@@ -244,8 +250,8 @@ Let's create a fully automated carousel with looping enabled. We will configure 
 
 
 To achieve this goal, we have to do the following configurations to the carousel:
- - enable the `SkipPauseOnInteraction` property
- - enable the `SkipNavigation` property
+ - enable the `DisablePauseOnInteraction` property
+ - enable the `HideNavigation` property
  - enable the `Vertical` property
  - add transition `Interval`
  - add custom `Indicator` for each slide
@@ -254,8 +260,8 @@ Our carousel will look like this in the template:
 
 ```html
 <igc-carousel
-    skip-pause-on-interaction="true"
-    skip-navigation="true"
+    disable-pause-on-interaction="true"
+    hide-navigation="true"
     vertical="true"
     interval="2000"
     animation-type="fade"

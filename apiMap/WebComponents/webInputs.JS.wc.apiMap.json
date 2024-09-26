@@ -1699,15 +1699,15 @@
     "packageName": "igniteui-webinputs",
     "names":[{"platform": "WebComponents","fileName": "igc-carousel-component.ts","mappedName": "IgcCarouselComponent"}],
     "members":[
-      {"names":[{"platform": "WebComponents", "mappedType": "boolean","mappedName": "skipLoop"}], "originalName": "SkipLoop"},
-      {"names":[{"platform": "WebComponents", "mappedType": "boolean","mappedName": "skipIndicator"}], "originalName": "SkipIndicator"},
-      {"names":[{"platform": "WebComponents", "mappedType": "boolean","mappedName": "skipNavigation"}], "originalName": "SkipNavigation"},
-      {"names":[{"platform": "WebComponents", "mappedType": "boolean","mappedName": "skipPauseOnInteraction"}], "originalName": "SkipPauseOnInteraction"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean","mappedName": "disableLoop"}], "originalName": "DisableLoop"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean","mappedName": "hideIndicators"}], "originalName": "HideIndicators"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean","mappedName": "hideNavigation"}], "originalName": "HideNavigation"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean","mappedName": "disablePauseOnInteraction"}], "originalName": "DisablePauseOnInteraction"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean","mappedName": "vertical"}], "originalName": "Vertical"},
       {"names":[{"platform": "WebComponents", "mappedType": "number","mappedName": "interval"}], "originalName": "Interval"},
       {"names":[{"platform": "WebComponents", "mappedType": "number","mappedName": "maximumIndicatorsCount"}], "originalName": "MaximumIndicatorsCount"},
       {"names":[{"platform": "WebComponents", "mappedType": "CarouselIndicatorsOrientation","mappedName": "indicatorsOrientation"}], "originalName": "IndicatorsOrientation"},
-      {"names":[{"platform": "WebComponents", "mappedType": "CarouselAnimationsType","mappedName": "animationsType"}], "originalName": "AnimationsType"} ]
+      {"names":[{"platform": "WebComponents", "mappedType": "CarouselAnimationType","mappedName": "animationType"}], "originalName": "AnimationType"} ]
   },
   {
     "originalName": "Slide",
