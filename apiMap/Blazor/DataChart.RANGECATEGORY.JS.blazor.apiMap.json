@@ -43,6 +43,7 @@
     "names":[{"platform": "Blazor","fileName": "RangeCategorySeries.cs","mappedName": "IgbRangeCategorySeries"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemValue"}], "originalName": "GetItemValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetMemberPathValue"}], "originalName": "GetMemberPathValue"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HighMemberPath"}], "originalName": "HighMemberPath"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HighlightedHighMemberPath"}], "originalName": "HighlightedHighMemberPath"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HighlightedLowMemberPath"}], "originalName": "HighlightedLowMemberPath"},

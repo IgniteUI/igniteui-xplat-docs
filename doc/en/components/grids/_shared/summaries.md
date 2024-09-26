@@ -764,7 +764,7 @@ igRegisterScript("WebHierarchicalGridCustomSummary", (event) => {
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- ComponentStart: TreeGrid -->
-And now let's add our custom summary to the column `Title `. We will achieve that by setting the Summaries` property to the class we create below.
+And now let's add our custom summary to the column `Title`. We will achieve that by setting the Summaries` property to the class we create below.
 <!-- Angular -->
 ```html
 <{ComponentSelector} #treeGrid [data]="data" [autoGenerate]="false" height="800px" width="800px">

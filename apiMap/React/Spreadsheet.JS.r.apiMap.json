@@ -651,6 +651,7 @@
       {"names":[{"platform": "React", "mappedType": "CellFill","mappedName": "fill"}], "originalName": "Fill"},
       {"names":[{"platform": "React", "mappedType": "IWorkbookFont","mappedName": "font"}], "originalName": "Font"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "formatString"}], "originalName": "FormatString"},
+      {"names":[{"platform": "React", "mappedType": "Nullable","mappedName": "hidden"}], "originalName": "Hidden"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "indent"}], "originalName": "Indent"},
       {"names":[{"platform": "React", "mappedType": "Nullable","mappedName": "locked"}], "originalName": "Locked"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "rotation"}], "originalName": "Rotation"},

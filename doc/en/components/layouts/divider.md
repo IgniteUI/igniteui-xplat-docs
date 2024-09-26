@@ -11,7 +11,7 @@ The {ProductName} Divider allows the content author to easily create a horizonta
 
 ## {Platform} Divider Example
 
-`sample="/layouts/divider/base", height="220", alt="{Platform} Divider Example"`
+`sample="/layouts/divider/overview", height="220", alt="{Platform} Divider Example"`
 
 <div class="divider--half"></div>
 

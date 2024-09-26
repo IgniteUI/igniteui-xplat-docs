@@ -30,6 +30,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItem"}], "originalName": "GetItem"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemIndex"}], "originalName": "GetItemIndex"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemValue"}], "originalName": "GetItemValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetMemberPathValue"}], "originalName": "GetMemberPathValue"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HighlightedAngleMemberPath"}], "originalName": "HighlightedAngleMemberPath"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HighlightedRadiusMemberPath"}], "originalName": "HighlightedRadiusMemberPath"},

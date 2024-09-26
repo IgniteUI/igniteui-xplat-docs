@@ -66,6 +66,7 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getItem"}], "originalName": "GetItem"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getItemIndex"}], "originalName": "GetItemIndex"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getMemberPathValue"}], "originalName": "GetMemberPathValue"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getNextOrExactIndex"}], "originalName": "GetNextOrExactIndex"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getOffsetValue"}], "originalName": "GetOffsetValue"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getPreviousOrExactIndex"}], "originalName": "GetPreviousOrExactIndex"},

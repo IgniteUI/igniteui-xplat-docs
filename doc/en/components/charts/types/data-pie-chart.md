@@ -2,7 +2,7 @@
 title: {Platform} Pie Charts and Graphs | {ProductName}
 _description: The {ProductName} data pie chart is a specialized UI control that renders a pie chart, consisting of a circular area divided into sections.  Try for FREE.
 _keywords: {Platform} charts, pie chart, {ProductName}, Infragistics, data binding, slice selection, animation, highlighting, legend
-mentionedTypes: ["XamDataPieChart", "XamDataChart"]
+mentionedTypes: ["DataPieChart", "XamDataChart", "OthersCategoryType", "SeriesSelectionMode", "SeriesSelectionBehavior", "SeriesHighlightingBehavior"]
 namespace: Infragistics.Controls.Charts
 ---
 # {Platform} Data Pie Chart
@@ -11,7 +11,7 @@ The {ProductName} Data Pie Chart is a part-to-whole chart that shows how categor
 
 ## {Platform} Data Pie Chart Example
 
-You can create the {Platform} Pie Chart in the `XamDataPieChart` by binding your data items with a string and a numeric data value. These data values will add up to a value of 100% of visualization.
+You can create the {Platform} Pie Chart in the `DataPieChart` by binding your data items with a string and a numeric data value. These data values will add up to a value of 100% of visualization.
 
 `sample="/charts/data-pie-chart/overview", height="600", alt="{Platform} Data Pie Chart Overview"`
 
@@ -19,16 +19,7 @@ You can create the {Platform} Pie Chart in the `XamDataPieChart` by binding your
 
 ## {Platform} Data Pie Chart Recommendations
 
-Pie Charts are appropriate for small data sets and are easy to read at a glance. Pie charts are just one type of part-to-whole visualization. Others include:
-
-- Doughnut (Ring)
-- Funnel
-- Stacked Area
-- Stacked 100% Area (Stacked Percentage Area)
-- Stacked Bar
-- Stacked 100% Bar (Stacked Percentage Bar)
-- Treemap
-- Waterfall
+Pie Charts are appropriate for small data sets and are easy to read at a glance. Pie charts are just one type of part-to-whole visualization such as Doughnut (Ring) Chart, Funnel Chart, Stacked Area Chart, Stacked Bar Chart, and Treemap.
 
 The {Platform} Data Pie Chart includes interactive features that give the viewer tools to analyze data, like:
 
@@ -63,11 +54,11 @@ Legends are used to show information about each point, to know about its contrib
 
 In order to display a legend next to the pie chart an ItemLegend needs to be created and assigned to the `Legend` property. The ItemLegend will display its items in vertical orientation as a default, but this can be changed by setting its `Orientation` property.
 
-The labels shown on the legend will display the same content as the label that is shown for each slice in the `XamDataPieChart` by default, but this can be modified by utilizing the `LegendSliceLabelContentMode` property on the chart. This exposes an enumeration that allows you to show the label, value, percentage, or any combination of those as the legend's content for each slice in the chart.
+The labels shown on the legend will display the same content as the label that is shown for each slice in the `DataPieChart` by default, but this can be modified by utilizing the `LegendSliceLabelContentMode` property on the chart. This exposes an enumeration that allows you to show the label, value, percentage, or any combination of those as the legend's content for each slice in the chart.
 
 You can also modify the ItemLegend badge. By default, it appears as a filled circle corresponding to the color of the associated chart slice. You can configure this by using the `LegendItemBadgeShape` property on the chart, and you can set this to be a circle, line, bar, column, and more.
 
-Below is an example that demonstrates usage of the ItemLegend with the `XamDataPieChart`.
+Below is an example that demonstrates usage of the ItemLegend with the `DataPieChart`.
 
 `sample="/charts/data-pie-chart/legend", height="600", alt="{Platform} Data Pie Chart Legend"`
 
@@ -77,15 +68,15 @@ Below is an example that demonstrates usage of the ItemLegend with the `XamDataP
 
 Sometimes, the underlying data for the pie chart will contain many items with small values. In this case, the Others category will permit automatic aggregation of several data values into a single slice.
 
-The Others category in the `XamDataPieChart` has three main, configurable properties - `OthersCategoryType`, `OthersCategoryThreshold`, and `OthersCategoryText` that allow you to configure how the Others slice in the chart is shown. These are each described below:
+The Others category in the `DataPieChart` has three main, configurable properties - `OthersCategoryType`, `OthersCategoryThreshold`, and `OthersCategoryText` that allow you to configure how the Others slice in the chart is shown. These are each described below:
 
-The `OthersCategoryType` property works in tandem with the `OthersCategoryThreshold` property of the `XamDataPieChart`. For the `OthersCategoryType`, you can define whether you want the `OthersCategoryThreshold` to be evaluated as a number or a percentage. For example, if you decide on number and set the `OthersCategoryThreshold` to 5, any slices that have a value less than 5 will become part of the Others category. Using the same value of 5 with a percent type, any values that are less than 5 percent of the total values of the `XamDataPieChart` will become part of the Others category.
+The `OthersCategoryType` property works in tandem with the `OthersCategoryThreshold` property of the `DataPieChart`. For the `OthersCategoryType`, you can define whether you want the `OthersCategoryThreshold` to be evaluated as a number or a percentage. For example, if you decide on number and set the `OthersCategoryThreshold` to 5, any slices that have a value less than 5 will become part of the Others category. Using the same value of 5 with a percent type, any values that are less than 5 percent of the total values of the `DataPieChart` will become part of the Others category.
 
 By default, the Others slice will be represented by a label of "Others." You can change this by modifying the `OthersCategoryText` property of the chart.
 
-If you want to ensure that the Others category does not show up in the `XamDataPieChart`, you can set the `OthersCategoryThreshold` to 0.
+If you want to ensure that the Others category does not show up in the `DataPieChart`, you can set the `OthersCategoryThreshold` to 0.
 
-The following sample demonstrates usage of the Others slice in the `XamDataPieChart`:
+The following sample demonstrates usage of the Others slice in the `DataPieChart`:
 
 `sample="/charts/data-pie-chart/others", height="600", alt="{Platform} Data Pie Chart Others"`
 
@@ -93,7 +84,7 @@ The following sample demonstrates usage of the Others slice in the `XamDataPieCh
 
 ## {Platform} Data Pie Chart Selection
 
-The `XamDataPieChart` supports slice selection by mouse click on the slices plotted in the chart. This can be configured by utilizing the `SelectionBehavior` and `SelectionMode` properties of the chart, described below:
+The `DataPieChart` supports slice selection by mouse click on the slices plotted in the chart. This can be configured by utilizing the `SelectionBehavior` and `SelectionMode` properties of the chart, described below:
 
 The main two options of the `SelectionBehavior` are `PerDataItemSingleSelect` and `PerDataItemMultiSelect`, which will enable single and multiple selection, respectively.
 
@@ -113,7 +104,7 @@ The `SelectionMode` property exposes an enumeration that determines how the pie 
 
 When a slice is selected, its underlying data item will be added to the SelectedSeriesItems collection of the chart. As such, the XamDataPieChart exposes the SelectedSeriesItemsChanged event to detect when a slice has been selected and this collection is changed.
 
-The following sample demonstrates the selection feature of the `XamDataPieChart` control:
+The following sample demonstrates the selection feature of the `DataPieChart` control:
 
 `sample="/charts/data-pie-chart/selection", height="600", alt="{Platform} Data Pie Chart Selection"`
 
@@ -121,7 +112,7 @@ The following sample demonstrates the selection feature of the `XamDataPieChart`
 
 ## {Platform} Data Pie Chart Highlighting
 
-The `XamDataPieChart` supports mouse over highlighting, as well as a highlighting overlay that can be configured by providing a separate data source.
+The `DataPieChart` supports mouse over highlighting, as well as a highlighting overlay that can be configured by providing a separate data source.
 
 First, the `HighlightingBehavior` enumerated property determines how a slice will be highlighted. The following are the options of that property and what they do:
 
@@ -138,11 +129,11 @@ The `HighlightingMode` enumerated property determines how the data pie chart sli
 - `FadeOthersSpecific`: The specific slice will retain its color when the mouse position is over or near it, while the others will appear faded.
 - `None`: The series and slices will not be highlighted.
 
-The following example demonstrates the mouse highlighting behaviors of the `XamDataPieChart` component:
+The following example demonstrates the mouse highlighting behaviors of the `DataPieChart` component:
 
 `sample="/charts/data-pie-chart/highlighting", height="600", alt="{Platform} Data Pie Chart Highlighting"`
 
-In addition to the mouse highlighting, the `XamDataPieChart` exposes a highlight filter capability that can display a subset of your data. This is applied by specifying a `HighlightedDataSource` for the control and by setting the `HighlightedValuesDisplayMode` property to `Overlay`. The `HighlightedDataSource` expects a subset of the data assigned to the `DataSource` property of the `XamDataPieChart`.
+In addition to the mouse highlighting, the `DataPieChart` exposes a highlight filter capability that can display a subset of your data. This is applied by specifying a `HighlightedDataSource` for the control and by setting the `HighlightedValuesDisplayMode` property to `Overlay`. The `HighlightedDataSource` expects a subset of the data assigned to the `DataSource` property of the `DataPieChart`.
 
 When these conditions are met, the values of the subset will be highlighted, while the remainder of the full set of data will be faded - effectively creating a highlight for the subset and allowing easier visualization of a subset of your data within the same control.
 
@@ -150,13 +141,13 @@ When these conditions are met, the values of the subset will be highlighted, whi
 
 ## {Platform} Data Pie Chart Animation
 
-The `XamDataPieChart` supports animating its slices into view, as well as when a value changes.
+The `DataPieChart` supports animating its slices into view, as well as when a value changes.
 
 You can set the `IsTransitionInEnabled` property to **true** to have the pie chart animate into view. The type of animation performed can be configured by setting the `TransitionInMode` enumerated property to the type of animation you would like to see. Additionally, you can also set the `TransitionInSpeedType` property to scale with index, value, normal, or randomized. The duration of this animation can be controlled by the `TransitionInDuration` property, which takes a `TimeSpan`.
 
 If you would like to animate data changes, this can also be done by setting the `AnimateSeriesWhenAxisRangeChanges` property to **true**. The duration of this change can be configured by setting the `TransitionDuration` property as well.
 
-The following sample demonstrates the usage of animation in the `XamDataPieChart`:
+The following sample demonstrates the usage of animation in the `DataPieChart`:
 
 `sample="/charts/data-pie-chart/animation", height="600", alt="{Platform} Data Pie Chart Animation"`
 
@@ -172,12 +163,14 @@ The following sample demonstrates the usage of animation in the `XamDataPieChart
 
 The following table lists API members mentioned in the above sections:
 
+- `ChartType`
 - `OthersCategoryThreshold`
 - `OthersCategoryType`
 - `SelectionMode`
+- `SelectionBehavior`
 
  |Chart Type       | Control Name   | API Members |
  |-----------------|----------------|------------ |
- |Data Pie Chart      | `XamDataPieChart`     | `XamDataPieChart` |
+ |Data Pie Chart      | `DataPieChart`     | `DataPieChart` |
  |Item Legend | `ItemLegend` | `ItemLegend` |
 

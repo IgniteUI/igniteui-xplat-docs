@@ -44,6 +44,21 @@
       {"names":[{"platform": "Blazor", "mappedType": "ErrorBarCalculatorType","mappedName": "StandardError"}], "originalName": "StandardError"} ]
   },
   {
+    "originalName": "HighlightingInfo",
+    "originalNamespace": "Infragistics",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "HighlightingInfo.cs","mappedName": "IgbHighlightingInfo"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "Context"}], "originalName": "Context"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "EndIndex"}], "originalName": "EndIndex"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsExclusive"}], "originalName": "IsExclusive"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsFullRange"}], "originalName": "IsFullRange"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsMarker"}], "originalName": "IsMarker"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Progress"}], "originalName": "Progress"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "StartIndex"}], "originalName": "StartIndex"},
+      {"names":[{"platform": "Blazor", "mappedType": "HighlightingState","mappedName": "State"}], "originalName": "State"} ]
+  },
+  {
     "originalName": "CaptureImageSettings",
     "originalNamespace": "Infragistics",
     "packageName": "igniteui-core",
@@ -82,9 +97,14 @@
     "names":[{"platform": "Blazor","fileName": "SvgIconRegistry.cs","mappedName": "SvgIconRegistry"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "addDataURLString"}], "originalName": "AddDataURLString"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "addSvgPathString"}], "originalName": "AddSvgPathString"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "addSvgPathsString"}], "originalName": "AddSvgPathsString"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getDataURLString"}], "originalName": "GetDataURLString"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getSvgPathString"}], "originalName": "GetSvgPathString"},
-      {"names":[{"platform": "Blazor", "mappedType": "Dictionary","mappedName": "_collections"}], "originalName": "_collections"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "getSvgPathsString"}], "originalName": "GetSvgPathsString"},
+      {"names":[{"platform": "Blazor", "mappedType": "Dictionary","mappedName": "_collections"}], "originalName": "_collections"},
+      {"names":[{"platform": "Blazor", "mappedType": "Dictionary","mappedName": "_dataURLs"}], "originalName": "_dataURLs"} ]
   },
   {
     "originalName": "FormatSpecifier",
@@ -195,7 +215,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValue"}], "originalName": "GetSeriesValue"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValueInfo"}], "originalName": "GetSeriesValueInfo"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValues"}], "originalName": "GetSeriesValues"},
-      {"names":[{"platform": "Blazor", "mappedType": "DataLegendSeriesGroup","mappedName": "SeriesGroup"}], "originalName": "SeriesGroup"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SeriesFamily"}], "originalName": "SeriesFamily"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetSeriesValue"}], "originalName": "SetSeriesValue"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetSeriesValueInfo"}], "originalName": "SetSeriesValueInfo"} ]
   },
@@ -223,6 +243,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "MemberPath"}], "originalName": "MemberPath"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "MemberSymbol"}], "originalName": "MemberSymbol"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "MemberUnit"}], "originalName": "MemberUnit"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "OrderIndex"}], "originalName": "OrderIndex"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Value"}], "originalName": "Value"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueNegativePrefix"}], "originalName": "ValueNegativePrefix"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueNegativeSuffix"}], "originalName": "ValueNegativeSuffix"},
@@ -304,12 +325,15 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "CommandId"}], "originalName": "CommandId"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "DisabledTextColor"}], "originalName": "DisabledTextColor"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "IconCollectionName"}], "originalName": "IconCollectionName"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "IconHeight"}], "originalName": "IconHeight"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "IconName"}], "originalName": "IconName"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "IconViewBoxHeight"}], "originalName": "IconViewBoxHeight"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "IconViewBoxLeft"}], "originalName": "IconViewBoxLeft"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "IconViewBoxTop"}], "originalName": "IconViewBoxTop"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "IconViewBoxWidth"}], "originalName": "IconViewBoxWidth"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "IconWidth"}], "originalName": "IconWidth"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsDisabled"}], "originalName": "IsDisabled"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsHighlighted"}], "originalName": "IsHighlighted"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "PaddingBottom"}], "originalName": "PaddingBottom"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "PaddingLeft"}], "originalName": "PaddingLeft"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "PaddingRight"}], "originalName": "PaddingRight"},
@@ -328,6 +352,19 @@
     "names":[{"platform": "Blazor","fileName": "ToolActionCheckboxInfo.cs","mappedName": "IgbToolActionCheckboxInfo"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsChecked"}], "originalName": "IsChecked"} ]
+  },
+  {
+    "originalName": "ToolActionCheckboxListInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "ToolActionCheckboxListInfo.cs","mappedName": "IgbToolActionCheckboxListInfo"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "DataMemberPath"}], "originalName": "DataMemberPath"},
+      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "DataSource"}], "originalName": "ItemsSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "PrimaryKey"}], "originalName": "PrimaryKey"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectedMemberPath"}], "originalName": "SelectedMemberPath"} ]
   },
   {
     "originalName": "ToolActionRadioInfo",

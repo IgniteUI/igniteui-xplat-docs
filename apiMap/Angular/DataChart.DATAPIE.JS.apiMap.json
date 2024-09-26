@@ -1,0 +1,98 @@
+{
+  "extraFiles": [
+    "igx-data-pie-chart-core-module.ts",
+    "igx-data-pie-chart-module.ts",
+    "igx-data-pie-chart-toolbar-module.ts"
+  ],
+  "types":[
+  {
+    "originalName": "DataPieChart",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "DataPieBaseChart",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Angular","fileName": "igx-data-pie-chart-component.ts","mappedName": "IgxDataPieChartComponent"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "DataPieChartType","mappedName": "chartType"}], "originalName": "ChartType"},
+      {"names":[{"platform": "Angular", "mappedType": "DomainType","mappedName": "domainType"}], "originalName": "DomainType"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "exportSerializedVisualData"}], "originalName": "ExportSerializedVisualData"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isTransitionInEnabled"}], "originalName": "IsTransitionInEnabled"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "transitionInDuration"}], "originalName": "TransitionInDuration"},
+      {"names":[{"platform": "Angular", "mappedType": "(time: number) => number","mappedName": "transitionInEasingFunction"}], "originalName": "TransitionInEasingFunction"},
+      {"names":[{"platform": "Angular", "mappedType": "CategoryTransitionInMode","mappedName": "transitionInMode"}], "originalName": "TransitionInMode"},
+      {"names":[{"platform": "Angular", "mappedType": "TransitionInSpeedType","mappedName": "transitionInSpeedType"}], "originalName": "TransitionInSpeedType"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "transitionOutDuration"}], "originalName": "TransitionOutDuration"},
+      {"names":[{"platform": "Angular", "mappedType": "(time: number) => number","mappedName": "transitionOutEasingFunction"}], "originalName": "TransitionOutEasingFunction"} ]
+  },
+  {
+    "originalName": "DataPieBaseChart",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "RadialBaseChart",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Angular","fileName": "igx-data-pie-base-chart-component.ts","mappedName": "IgxDataPieBaseChartComponent"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "angleAxisFavorLabellingScaleEnd"}], "originalName": "AngleAxisFavorLabellingScaleEnd"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "angleAxisInterval"}], "originalName": "AngleAxisInterval"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "angleAxisMinorInterval"}], "originalName": "AngleAxisMinorInterval"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "darkSliceLabelColor"}], "originalName": "DarkSliceLabelColor"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "innerExtent"}], "originalName": "InnerExtent"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "labelMemberPath"}], "originalName": "LabelMemberPath"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "legendLabelMemberPath"}], "originalName": "LegendLabelMemberPath"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "legendOthersSliceLabelFormat"}], "originalName": "LegendOthersSliceLabelFormat"},
+      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "legendOthersSliceLabelFormatSpecifiers"}], "originalName": "LegendOthersSliceLabelFormatSpecifiers"},
+      {"names":[{"platform": "Angular", "mappedType": "RadialLabelMode","mappedName": "legendSliceLabelContentMode"}], "originalName": "LegendSliceLabelContentMode"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "legendSliceLabelFormat"}], "originalName": "LegendSliceLabelFormat"},
+      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "legendSliceLabelFormatSpecifiers"}], "originalName": "LegendSliceLabelFormatSpecifiers"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "lightSliceLabelColor"}], "originalName": "LightSliceLabelColor"},
+      {"names":[{"platform": "Angular", "mappedType": "CollisionAvoidanceType","mappedName": "markerCollision"}], "originalName": "MarkerCollision"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "othersCategoryText"}], "originalName": "OthersCategoryText"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "othersCategoryThreshold"}], "originalName": "OthersCategoryThreshold"},
+      {"names":[{"platform": "Angular", "mappedType": "OthersCategoryType","mappedName": "othersCategoryType"}], "originalName": "OthersCategoryType"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "othersSliceLabelFormat"}], "originalName": "OthersSliceLabelFormat"},
+      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "othersSliceLabelFormatSpecifiers"}], "originalName": "OthersSliceLabelFormatSpecifiers"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "radiusExtent"}], "originalName": "RadiusExtent"},
+      {"names":[{"platform": "Angular", "mappedType": "RadialLabelMode","mappedName": "sliceLabelContentMode"}], "originalName": "SliceLabelContentMode"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "sliceLabelContentSeparator"}], "originalName": "SliceLabelContentSeparator"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "sliceLabelFormat"}], "originalName": "SliceLabelFormat"},
+      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "sliceLabelFormatSpecifiers"}], "originalName": "SliceLabelFormatSpecifiers"},
+      {"names":[{"platform": "Angular", "mappedType": "CalloutCollisionMode","mappedName": "sliceLabelPositionMode"}], "originalName": "SliceLabelPositionMode"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "startAngle"}], "originalName": "StartAngle"},
+      {"names":[{"platform": "Angular", "mappedType": "PieChartSweepDirection","mappedName": "sweepDirection"}], "originalName": "SweepDirection"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "valueAxisAbbreviateLargeNumbers"}], "originalName": "ValueAxisAbbreviateLargeNumbers"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "valueAxisActualMaximum"}], "originalName": "ValueAxisActualMaximum"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "valueAxisActualMinimum"}], "originalName": "ValueAxisActualMinimum"},
+      {"names":[{"platform": "Angular", "mappedType": "AxisRangeBufferMode","mappedName": "valueAxisAutoRangeBufferMode"}], "originalName": "ValueAxisAutoRangeBufferMode"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "valueAxisFavorLabellingScaleEnd"}], "originalName": "ValueAxisFavorLabellingScaleEnd"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "valueAxisInterval"}], "originalName": "ValueAxisInterval"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "valueAxisIsLogarithmic"}], "originalName": "ValueAxisIsLogarithmic"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "valueAxisLogarithmBase"}], "originalName": "ValueAxisLogarithmBase"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "valueAxisMaximumValue"}], "originalName": "ValueAxisMaximumValue"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "valueAxisMinimumValue"}], "originalName": "ValueAxisMinimumValue"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "valueAxisMinorInterval"}], "originalName": "ValueAxisMinorInterval"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "valueMemberPath"}], "originalName": "ValueMemberPath"} ]
+  },
+  {
+    "originalName": "PieChartSweepDirection",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "isEnum":true,
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Angular","fileName": "PieChartSweepDirection.ts","mappedName": "PieChartSweepDirection"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "PieChartSweepDirection","mappedName": "Auto"}], "originalName": "Auto"},
+      {"names":[{"platform": "Angular", "mappedType": "PieChartSweepDirection","mappedName": "Clockwise"}], "originalName": "Clockwise"},
+      {"names":[{"platform": "Angular", "mappedType": "PieChartSweepDirection","mappedName": "Counterclockwise"}], "originalName": "Counterclockwise"} ]
+  },
+  {
+    "originalName": "DataPieChartType",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "isEnum":true,
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Angular","fileName": "DataPieChartType.ts","mappedName": "DataPieChartType"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "DataPieChartType","mappedName": "Auto"}], "originalName": "Auto"},
+      {"names":[{"platform": "Angular", "mappedType": "DataPieChartType","mappedName": "PieSingleRing"}], "originalName": "PieSingleRing"} ]
+  }]
+}

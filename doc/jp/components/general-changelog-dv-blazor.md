@@ -23,6 +23,7 @@ _language: ja
 
     - 新しい ToolActionCheckboxList。
         選択用のチェックボックスを備えた項目のコレクションを表示する新しい CheckboxList ToolAction。 ToolAction CheckboxList 内のグリッドの高さは 5 項目まで大きくなり、その後スクロールバーが表示されます。
+        IgbCheckboxListModule を登録する必要があります。
 
     - 新しいフィルタリングのサポート。
 
@@ -78,9 +79,9 @@ _language: ja
 
 ### {PackageGrids}
 
-- `すべてのグリッド`
- - グリッド列コレクションを返す `GetColumns` / `GetColumnsAsync` メソッドが追加されました。
- - 新しい `RowClick` イベントが追加されました。
+- **すべてのグリッド**
+  - グリッド列コレクションを返す `GetColumns` / `GetColumnsAsync` メソッドが追加されました。
+  - 新しい `RowClick` イベントが追加されました。
 - `PivotGrid`
   - `PivotDimension` に `Sortable` プロパティが追加されました。
   - 水平レイアウトが追加されました。新しい `PivotUI` プロパティ内で `RowLayout` `Horizontal` として有効にできます。
@@ -88,10 +89,11 @@ _language: ja
   - 水平集計の位置を設定するための `HorizontalSummariesPosition` プロパティを `PivotUI` に追加しました。
   - 行ディメンションの行ヘッダーが追加されました。新しい `PivotUI` プロパティ内で `ShowHeaders` **true** として有効にできます。
   - キーボード ナビゲーションで行ディメンションヘッダーや列ヘッダーから行ヘッダーへ移動できるようになりました。
-  - キーボード操作で行ディメンションの縮小 (Alt + 矢印キー) および行ヘッダーのソート (Ctrl + 矢印上/下) ができるようになりました。
+  - キーボード操作で行ディメンションの縮小 (<kbd>Alt</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd>) および行ヘッダーのソート (<kbd>Ctrl</kbd> + <kbd>↑</kbd> <kbd>↓</kbd>) ができるようになりました。
 
 **重大な変更**:
-- `すべてのグリッド`、`RowIsland`
+- **すべてのグリッド**
+  - `RowIsland`
   - `DisplayDensity` の非推奨のプロパティが削除されました。
   - `Columns`、`ActualColumns`、`ContentColumns` プロパティの名前が `ColumnList`、`ActualColumnList`、`ContentColumnList` に変更されました。代わりに新しい `GetColumns` メソッドを使用することをお勧めします。
   - `RowDelete` および `RowAdd` イベント引数タイプの名前を `RowDataCancelableEventArgs` に変更しました。

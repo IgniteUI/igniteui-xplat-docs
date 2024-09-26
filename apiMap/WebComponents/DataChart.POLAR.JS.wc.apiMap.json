@@ -31,6 +31,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getItem"}], "originalName": "GetItem"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getItemIndex"}], "originalName": "GetItemIndex"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getMemberPathValue"}], "originalName": "GetMemberPathValue"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "highlightedAngleMemberPath"}], "originalName": "HighlightedAngleMemberPath"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "highlightedRadiusMemberPath"}], "originalName": "HighlightedRadiusMemberPath"},

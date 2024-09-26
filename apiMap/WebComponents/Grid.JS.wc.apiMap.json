@@ -961,6 +961,18 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "provideContainer"}], "originalName": "ProvideContainer"} ]
   },
   {
+    "originalName": "PagedDataProvider",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeName": "DataSourceLocalDataProvider",
+    "packageName": "igniteui-grids",
+    "names":[{"platform": "WebComponents","fileName": "PagedDataProvider.ts","mappedName": "PagedDataProvider"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcDataGridPagerComponent","mappedName": "_pager"}], "originalName": "_pager"} ]
+  },
+  {
     "originalName": "PageChangedEventArgs",
     "originalNamespace": "Infragistics.Controls.Grid.Implementation",
     "originalBaseTypeNamespace": "System",

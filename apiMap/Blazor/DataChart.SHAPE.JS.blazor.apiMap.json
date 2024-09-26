@@ -50,6 +50,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "IgbValueBrushScale","mappedName": "ActualFillScale"}], "originalName": "ActualFillScale"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbValueBrushScale","mappedName": "FillScale"}], "originalName": "FillScale"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemValue"}], "originalName": "GetItemValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetMemberPathValue"}], "originalName": "GetMemberPathValue"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueMemberAsLegendLabel"}], "originalName": "ValueMemberAsLegendLabel"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueMemberAsLegendUnit"}], "originalName": "ValueMemberAsLegendUnit"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueMemberPath"}], "originalName": "ValueMemberPath"},
@@ -99,6 +100,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "IgbColorScale","mappedName": "ColorScale"}], "originalName": "ColorScale"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItem"}], "originalName": "GetItem"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemValue"}], "originalName": "GetItemValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetMemberPathValue"}], "originalName": "GetMemberPathValue"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "UpdateActualColorScale"}], "originalName": "UpdateActualColorScale"} ]
   },
   {
@@ -136,6 +138,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetExactItemIndex"}], "originalName": "GetExactItemIndex"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItem"}], "originalName": "GetItem"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemValue"}], "originalName": "GetItemValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetMemberPathValue"}], "originalName": "GetMemberPathValue"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HighlightedShapeMemberPath"}], "originalName": "HighlightedShapeMemberPath"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsCustomShapeMarkerStyleAllowed"}], "originalName": "IsCustomShapeMarkerStyleAllowed"},
@@ -159,6 +162,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "CanUseAsXAxis"}], "originalName": "CanUseAsXAxis"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "CanUseAsYAxis"}], "originalName": "CanUseAsYAxis"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemValue"}], "originalName": "GetItemValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetMemberPathValue"}], "originalName": "GetMemberPathValue"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "TriangleVertexMemberPath1"}], "originalName": "TriangleVertexMemberPath1"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "TriangleVertexMemberPath2"}], "originalName": "TriangleVertexMemberPath2"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "TriangleVertexMemberPath3"}], "originalName": "TriangleVertexMemberPath3"},

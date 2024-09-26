@@ -55,6 +55,45 @@
       {"names":[{"platform": "React", "mappedType": "ErrorBarCalculatorType","mappedName": "StandardError"}], "originalName": "StandardError"} ]
   },
   {
+    "originalName": "HighlightingInfo",
+    "originalNamespace": "Infragistics",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "igr-highlighting-info.ts","mappedName": "IgrHighlightingInfo"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "context"}], "originalName": "Context"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "endIndex"}], "originalName": "EndIndex"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isExclusive"}], "originalName": "IsExclusive"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isFullRange"}], "originalName": "IsFullRange"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isMarker"}], "originalName": "IsMarker"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "progress"}], "originalName": "Progress"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "startIndex"}], "originalName": "StartIndex"},
+      {"names":[{"platform": "React", "mappedType": "HighlightingState","mappedName": "state"}], "originalName": "State"} ]
+  },
+  {
+    "originalName": "HighlightingState",
+    "originalNamespace": "Infragistics",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "HighlightingState.ts","mappedName": "HighlightingState"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "HighlightingState","mappedName": "Inward"}], "originalName": "In"},
+      {"names":[{"platform": "React", "mappedType": "HighlightingState","mappedName": "Outward"}], "originalName": "Out"},
+      {"names":[{"platform": "React", "mappedType": "HighlightingState","mappedName": "Static"}], "originalName": "Static"} ]
+  },
+  {
+    "originalName": "HighlightedValueDisplayMode",
+    "originalNamespace": "Infragistics",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "HighlightedValueDisplayMode.ts","mappedName": "HighlightedValueDisplayMode"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "HighlightedValueDisplayMode","mappedName": "Auto"}], "originalName": "Auto"},
+      {"names":[{"platform": "React", "mappedType": "HighlightedValueDisplayMode","mappedName": "Hidden"}], "originalName": "Hidden"},
+      {"names":[{"platform": "React", "mappedType": "HighlightedValueDisplayMode","mappedName": "Overlay"}], "originalName": "Overlay"} ]
+  },
+  {
     "originalName": "CaptureImageSettings",
     "originalNamespace": "Infragistics",
     "packageName": "igniteui-core",
@@ -125,9 +164,14 @@
     "names":[{"platform": "React","fileName": "SvgIconRegistry.ts","mappedName": "SvgIconRegistry"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "addDataURLString"}], "originalName": "AddDataURLString"},
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "addSvgPathString"}], "originalName": "AddSvgPathString"},
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "addSvgPathsString"}], "originalName": "AddSvgPathsString"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "getDataURLString"}], "originalName": "GetDataURLString"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "getSvgPathString"}], "originalName": "GetSvgPathString"},
-      {"names":[{"platform": "React", "mappedType": "Dictionary","mappedName": "_collections"}], "originalName": "_collections"} ]
+      {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "getSvgPathsString"}], "originalName": "GetSvgPathsString"},
+      {"names":[{"platform": "React", "mappedType": "Dictionary","mappedName": "_collections"}], "originalName": "_collections"},
+      {"names":[{"platform": "React", "mappedType": "Dictionary","mappedName": "_dataURLs"}], "originalName": "_dataURLs"} ]
   },
   {
     "originalName": "FormatSpecifier",
@@ -218,6 +262,19 @@
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "thickness"}], "originalName": "Thickness"} ]
   },
   {
+    "originalName": "HighlightedValueLabelMode",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "HighlightedValueLabelMode.ts","mappedName": "HighlightedValueLabelMode"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "HighlightedValueLabelMode","mappedName": "Auto"}], "originalName": "Auto"},
+      {"names":[{"platform": "React", "mappedType": "HighlightedValueLabelMode","mappedName": "LabelBoth"}], "originalName": "LabelBoth"},
+      {"names":[{"platform": "React", "mappedType": "HighlightedValueLabelMode","mappedName": "PreferHighlighted"}], "originalName": "PreferHighlighted"},
+      {"names":[{"platform": "React", "mappedType": "HighlightedValueLabelMode","mappedName": "PreferOriginal"}], "originalName": "PreferOriginal"} ]
+  },
+  {
     "originalName": "LegendItemBadgeMode",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
@@ -244,6 +301,52 @@
       {"names":[{"platform": "React", "mappedType": "LegendItemBadgeShape","mappedName": "Line"}], "originalName": "Line"},
       {"names":[{"platform": "React", "mappedType": "LegendItemBadgeShape","mappedName": "Marker"}], "originalName": "Marker"},
       {"names":[{"platform": "React", "mappedType": "LegendItemBadgeShape","mappedName": "Square"}], "originalName": "Square"} ]
+  },
+  {
+    "originalName": "CalloutCollisionMode",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "CalloutCollisionMode.ts","mappedName": "CalloutCollisionMode"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "CalloutCollisionMode","mappedName": "Auto"}], "originalName": "Auto"},
+      {"names":[{"platform": "React", "mappedType": "CalloutCollisionMode","mappedName": "Greedy"}], "originalName": "Greedy"},
+      {"names":[{"platform": "React", "mappedType": "CalloutCollisionMode","mappedName": "GreedyCenterOfMass"}], "originalName": "GreedyCenterOfMass"},
+      {"names":[{"platform": "React", "mappedType": "CalloutCollisionMode","mappedName": "RadialBestFit"}], "originalName": "RadialBestFit"},
+      {"names":[{"platform": "React", "mappedType": "CalloutCollisionMode","mappedName": "RadialCenter"}], "originalName": "RadialCenter"},
+      {"names":[{"platform": "React", "mappedType": "CalloutCollisionMode","mappedName": "RadialInsideEnd"}], "originalName": "RadialInsideEnd"},
+      {"names":[{"platform": "React", "mappedType": "CalloutCollisionMode","mappedName": "RadialOutsideEnd"}], "originalName": "RadialOutsideEnd"},
+      {"names":[{"platform": "React", "mappedType": "CalloutCollisionMode","mappedName": "SimulatedAnnealing"}], "originalName": "SimulatedAnnealing"} ]
+  },
+  {
+    "originalName": "OthersCategoryType",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "OthersCategoryType.ts","mappedName": "OthersCategoryType"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "OthersCategoryType","mappedName": "Number"}], "originalName": "Number"},
+      {"names":[{"platform": "React", "mappedType": "OthersCategoryType","mappedName": "Percent"}], "originalName": "Percent"} ]
+  },
+  {
+    "originalName": "RadialLabelMode",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "RadialLabelMode.ts","mappedName": "RadialLabelMode"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "RadialLabelMode","mappedName": "Auto"}], "originalName": "Auto"},
+      {"names":[{"platform": "React", "mappedType": "RadialLabelMode","mappedName": "Label"}], "originalName": "Label"},
+      {"names":[{"platform": "React", "mappedType": "RadialLabelMode","mappedName": "LabelAndPercentage"}], "originalName": "LabelAndPercentage"},
+      {"names":[{"platform": "React", "mappedType": "RadialLabelMode","mappedName": "LabelAndValue"}], "originalName": "LabelAndValue"},
+      {"names":[{"platform": "React", "mappedType": "RadialLabelMode","mappedName": "LabelAndValueAndPercentage"}], "originalName": "LabelAndValueAndPercentage"},
+      {"names":[{"platform": "React", "mappedType": "RadialLabelMode","mappedName": "Normal"}], "originalName": "Normal"},
+      {"names":[{"platform": "React", "mappedType": "RadialLabelMode","mappedName": "Percentage"}], "originalName": "Percentage"},
+      {"names":[{"platform": "React", "mappedType": "RadialLabelMode","mappedName": "Value"}], "originalName": "Value"},
+      {"names":[{"platform": "React", "mappedType": "RadialLabelMode","mappedName": "ValueAndPercentage"}], "originalName": "ValueAndPercentage"} ]
   },
   {
     "originalName": "TrendLineType",
@@ -360,6 +463,17 @@
       {"names":[{"platform": "React", "mappedType": "DataLegendValueMode","mappedName": "Auto"}], "originalName": "Auto"},
       {"names":[{"platform": "React", "mappedType": "DataLegendValueMode","mappedName": "Currency"}], "originalName": "Currency"},
       {"names":[{"platform": "React", "mappedType": "DataLegendValueMode","mappedName": "Decimal"}], "originalName": "Decimal"} ]
+  },
+  {
+    "originalName": "DataLegendLayoutMode",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "DataLegendLayoutMode.ts","mappedName": "DataLegendLayoutMode"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "DataLegendLayoutMode","mappedName": "Table"}], "originalName": "Table"},
+      {"names":[{"platform": "React", "mappedType": "DataLegendLayoutMode","mappedName": "Vertical"}], "originalName": "Vertical"} ]
   },
   {
     "originalName": "DataLegendHeaderTimeMode",
@@ -479,23 +593,24 @@
       {"names":[{"platform": "React", "mappedType": "DataLegendSeriesValueType","mappedName": "YValue"}], "originalName": "YValue"} ]
   },
   {
-    "originalName": "DataLegendSeriesGroup",
+    "originalName": "DataLegendSeriesFamily",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
     "packageName": "igniteui-core",
-    "names":[{"platform": "React","fileName": "DataLegendSeriesGroup.ts","mappedName": "DataLegendSeriesGroup"}],
+    "names":[{"platform": "React","fileName": "DataLegendSeriesFamily.ts","mappedName": "DataLegendSeriesFamily"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
-      {"names":[{"platform": "React", "mappedType": "DataLegendSeriesGroup","mappedName": "Category"}], "originalName": "Category"},
-      {"names":[{"platform": "React", "mappedType": "DataLegendSeriesGroup","mappedName": "Financial"}], "originalName": "Financial"},
-      {"names":[{"platform": "React", "mappedType": "DataLegendSeriesGroup","mappedName": "Geographic"}], "originalName": "Geographic"},
-      {"names":[{"platform": "React", "mappedType": "DataLegendSeriesGroup","mappedName": "Indicator"}], "originalName": "Indicator"},
-      {"names":[{"platform": "React", "mappedType": "DataLegendSeriesGroup","mappedName": "Polar"}], "originalName": "Polar"},
-      {"names":[{"platform": "React", "mappedType": "DataLegendSeriesGroup","mappedName": "Radial"}], "originalName": "Radial"},
-      {"names":[{"platform": "React", "mappedType": "DataLegendSeriesGroup","mappedName": "Range"}], "originalName": "Range"},
-      {"names":[{"platform": "React", "mappedType": "DataLegendSeriesGroup","mappedName": "Scatter"}], "originalName": "Scatter"},
-      {"names":[{"platform": "React", "mappedType": "DataLegendSeriesGroup","mappedName": "Shape"}], "originalName": "Shape"},
-      {"names":[{"platform": "React", "mappedType": "DataLegendSeriesGroup","mappedName": "Stacked"}], "originalName": "Stacked"} ]
+      {"names":[{"platform": "React", "mappedType": "DataLegendSeriesFamily","mappedName": "Category"}], "originalName": "Category"},
+      {"names":[{"platform": "React", "mappedType": "DataLegendSeriesFamily","mappedName": "Financial"}], "originalName": "Financial"},
+      {"names":[{"platform": "React", "mappedType": "DataLegendSeriesFamily","mappedName": "Geographic"}], "originalName": "Geographic"},
+      {"names":[{"platform": "React", "mappedType": "DataLegendSeriesFamily","mappedName": "Highlight"}], "originalName": "Highlight"},
+      {"names":[{"platform": "React", "mappedType": "DataLegendSeriesFamily","mappedName": "Indicator"}], "originalName": "Indicator"},
+      {"names":[{"platform": "React", "mappedType": "DataLegendSeriesFamily","mappedName": "Polar"}], "originalName": "Polar"},
+      {"names":[{"platform": "React", "mappedType": "DataLegendSeriesFamily","mappedName": "Radial"}], "originalName": "Radial"},
+      {"names":[{"platform": "React", "mappedType": "DataLegendSeriesFamily","mappedName": "Range"}], "originalName": "Range"},
+      {"names":[{"platform": "React", "mappedType": "DataLegendSeriesFamily","mappedName": "Scatter"}], "originalName": "Scatter"},
+      {"names":[{"platform": "React", "mappedType": "DataLegendSeriesFamily","mappedName": "Shape"}], "originalName": "Shape"},
+      {"names":[{"platform": "React", "mappedType": "DataLegendSeriesFamily","mappedName": "Stacked"}], "originalName": "Stacked"} ]
   },
   {
     "originalName": "DataLegendSeriesContext",
@@ -506,7 +621,7 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getSeriesValue"}], "originalName": "GetSeriesValue"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getSeriesValueInfo"}], "originalName": "GetSeriesValueInfo"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getSeriesValues"}], "originalName": "GetSeriesValues"},
-      {"names":[{"platform": "React", "mappedType": "DataLegendSeriesGroup","mappedName": "seriesGroup"}], "originalName": "SeriesGroup"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "seriesFamily"}], "originalName": "SeriesFamily"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setSeriesValue"}], "originalName": "SetSeriesValue"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setSeriesValueInfo"}], "originalName": "SetSeriesValueInfo"} ]
   },
@@ -534,6 +649,7 @@
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "memberPath"}], "originalName": "MemberPath"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "memberSymbol"}], "originalName": "MemberSymbol"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "memberUnit"}], "originalName": "MemberUnit"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "orderIndex"}], "originalName": "OrderIndex"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "toString"}], "originalName": "ToString"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "value"}], "originalName": "Value"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "valueNegativePrefix"}], "originalName": "ValueNegativePrefix"},
@@ -637,6 +753,7 @@
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "Button"}], "originalName": "Button"},
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "Checkbox"}], "originalName": "Checkbox"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "CheckboxList"}], "originalName": "CheckboxList"},
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "GroupHeader"}], "originalName": "GroupHeader"},
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "IconButton"}], "originalName": "IconButton"},
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "IconMenu"}], "originalName": "IconMenu"},
@@ -644,6 +761,7 @@
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "NumberInput"}], "originalName": "NumberInput"},
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "Radio"}], "originalName": "Radio"},
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "Separator"}], "originalName": "Separator"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "SubPanel"}], "originalName": "SubPanel"},
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "Unknown"}], "originalName": "Unknown"} ]
   },
   {
@@ -684,12 +802,15 @@
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "commandId"}], "originalName": "CommandId"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "disabledTextColor"}], "originalName": "DisabledTextColor"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "iconCollectionName"}], "originalName": "IconCollectionName"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "iconHeight"}], "originalName": "IconHeight"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "iconName"}], "originalName": "IconName"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "iconViewBoxHeight"}], "originalName": "IconViewBoxHeight"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "iconViewBoxLeft"}], "originalName": "IconViewBoxLeft"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "iconViewBoxTop"}], "originalName": "IconViewBoxTop"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "iconViewBoxWidth"}], "originalName": "IconViewBoxWidth"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "iconWidth"}], "originalName": "IconWidth"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isDisabled"}], "originalName": "IsDisabled"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isHighlighted"}], "originalName": "IsHighlighted"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "paddingBottom"}], "originalName": "PaddingBottom"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "paddingLeft"}], "originalName": "PaddingLeft"},
@@ -711,6 +832,21 @@
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isChecked"}], "originalName": "IsChecked"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"} ]
+  },
+  {
+    "originalName": "ToolActionCheckboxListInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "ToolActionCheckboxListInfo.ts","mappedName": "ToolActionCheckboxListInfo"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "dataMemberPath"}], "originalName": "DataMemberPath"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "dataSource"}], "originalName": "ItemsSource"},
+      {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "primaryKey"}], "originalName": "PrimaryKey"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "selectedMemberPath"}], "originalName": "SelectedMemberPath"},
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"} ]
   },
   {
