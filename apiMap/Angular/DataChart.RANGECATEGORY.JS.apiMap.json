@@ -49,6 +49,7 @@
     "names":[{"platform": "Angular","fileName": "igx-range-category-series-component.ts","mappedName": "IgxRangeCategorySeriesComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getMemberPathValue"}], "originalName": "GetMemberPathValue"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "highMemberPath"}], "originalName": "HighMemberPath"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "highlightedHighMemberPath"}], "originalName": "HighlightedHighMemberPath"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "highlightedLowMemberPath"}], "originalName": "HighlightedLowMemberPath"},

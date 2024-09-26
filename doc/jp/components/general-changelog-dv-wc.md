@@ -23,6 +23,7 @@ _language: ja
 
     - 新しい ToolActionCheckboxList。
         選択用のチェックボックスを備えた項目のコレクションを表示する新しい CheckboxList ToolAction。 ToolAction CheckboxList 内のグリッドの高さは 5 項目まで大きくなり、その後スクロールバーが表示されます。
+        IgcCheckboxListModule を登録する必要があります。
 
     - 新しいフィルタリングのサポート。
 
@@ -33,8 +34,8 @@ _language: ja
 
 #### {PackageGrids}
 
-- `すべてのグリッド`
- - 新しい `RowClick` イベントが追加されました。
+- **すべてのグリッド**
+  - 新しい `RowClick` イベントが追加されました。
 - `PivotGrid`
   - `PivotDimension` に `sortable` プロパティが追加されました。
   - 水平レイアウトが追加されました。新しい `pivotUI` プロパティ内で `rowLayout` `horizontal` として有効にできます。
@@ -42,10 +43,11 @@ _language: ja
   - 水平集計の位置を設定するための `horizontalSummariesPosition` プロパティを `pivotUI` に追加しました。
   - 行ディメンションの行ヘッダーが追加されました。新しい `pivotUI` プロパティ内で `showHeaders` **true** として有効にできます。
   - キーボード ナビゲーションで行ディメンションヘッダーや列ヘッダーから行ヘッダーへ移動できるようになりました。
-  - キーボード操作で行ディメンションの縮小 (Alt + 矢印キー) および行ヘッダーのソート (Ctrl + 矢印上/下) ができるようになりました。
+  - キーボード操作で行ディメンションの縮小 (<kbd>Alt</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd>) および行ヘッダーのソート (<kbd>Ctrl</kbd> + <kbd>↑</kbd> <kbd>↓</kbd>) ができるようになりました。
 
 **重大な変更**:
-- `すべてのグリッド`、`RowIsland`
+- **すべてのグリッド**
+  - `RowIsland`
   - `displayDensity` の非推奨のプロパティが削除されました。
   - `actualColumns`、`contentColumns` プロパティの名前を、`actualColumnList` および `contentColumnList` に変更しました。すべての列を取得するには、`column` または `columnList` プロパティを使用してください。
   - `rowDelete` および `rowAdd` イベント引数タイプの名前を `RowDataCancelableEventArgs` に変更しました。
@@ -1312,7 +1314,7 @@ import { IgcLiveGridComponent } from 'igniteui-webcomponents-grids/ES5/igc-live-
 - ARIA のサポート。
 - 外部ドラッグ/ドロップをサポートする API。
 - 閉じる、ピン固定、ドラッグなどのユーザー操作のプロパティとイベント。
-- Angular プロジェクトの `ng update` のサポート。
+- Angular プロジェクトの **ng update** のサポート。
 
 ### **{PackageDockManagerVerChanges-1.0.3}**
 

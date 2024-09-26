@@ -43,17 +43,6 @@
       {"names":[{"platform": "WebComponents", "mappedType": "LeaderLineType","mappedName": "Straight"}], "originalName": "Straight"} ]
   },
   {
-    "originalName": "OthersCategoryType",
-    "originalNamespace": "Infragistics.Controls.Charts",
-    "isEnum":true,
-    "packageName": "igniteui-charts",
-    "names":[{"platform": "WebComponents","fileName": "OthersCategoryType.ts","mappedName": "OthersCategoryType"}],
-    "members":[
-      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
-      {"names":[{"platform": "WebComponents", "mappedType": "OthersCategoryType","mappedName": "Number"}], "originalName": "Number"},
-      {"names":[{"platform": "WebComponents", "mappedType": "OthersCategoryType","mappedName": "Percent"}], "originalName": "Percent"} ]
-  },
-  {
     "originalName": "SliceSelectionMode",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
@@ -160,6 +149,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "IgPoint", "mappedName": "origin"}], "originalName": "Origin"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "originalEvent"}], "originalName": "OriginalEvent"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "outline"}], "originalName": "Outline"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgPoint", "mappedName": "position"}], "originalName": "Position"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "radius"}], "originalName": "Radius"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "startAngle"}], "originalName": "StartAngle"} ]
   },

@@ -68,8 +68,13 @@
       {"names":[{"platform": "WebComponents", "mappedType": "IgRect",  "mappedName": "effectiveViewport"}], "originalName": "EffectiveViewport"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "endTiledZoomingIfRunning"}], "originalName": "EndTiledZoomingIfRunning"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "flush"}], "originalName": "Flush"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "focusBrush"}], "originalName": "FocusBrush"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionMode","mappedName": "focusMode"}], "originalName": "FocusMode"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "focusTransitionDuration"}], "originalName": "FocusTransitionDuration"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcChartSelectedItemCollection","mappedName": "focusedSeriesItems"}], "originalName": "FocusedSeriesItems"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getActualWindowScaleHorizontal"}], "originalName": "GetActualWindowScaleHorizontal"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getActualWindowScaleVertical"}], "originalName": "GetActualWindowScaleVertical"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getAnimationIdleVersionNumber"}], "originalName": "GetAnimationIdleVersionNumber"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getCurrentActualWindowRect"}], "originalName": "GetCurrentActualWindowRect"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getDesiredToolbarActions"}], "originalName": "GetDesiredToolbarActions"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "hideToolTip"}], "originalName": "HideToolTip"},
@@ -91,6 +96,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "horizontalViewScrollbarTrackEndInset"}], "originalName": "HorizontalViewScrollbarTrackEndInset"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "horizontalViewScrollbarTrackStartInset"}], "originalName": "HorizontalViewScrollbarTrackStartInset"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "interactionPixelScalingRatio"}], "originalName": "InteractionPixelScalingRatio"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "isAnimationActive"}], "originalName": "IsAnimationActive"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isAntiAliasingEnabledDuringInteraction"}], "originalName": "IsAntiAliasingEnabledDuringInteraction"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isDetached"}], "originalName": "IsDetached"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isMap"}], "originalName": "IsMap"},
@@ -115,6 +121,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "plotAreaBackground"}], "originalName": "PlotAreaBackground"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "preferHigherResolutionTiles"}], "originalName": "PreferHigherResolutionTiles"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgRect",  "mappedName": "previewRect"}], "originalName": "PreviewRect"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "queueForAnimationIdle"}], "originalName": "QueueForAnimationIdle"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "removeCommandAvailabilityListener"}], "originalName": "RemoveCommandAvailabilityListener"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "removeCommandStateChangedListener"}], "originalName": "RemoveCommandStateChangedListener"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "renderToImage"}], "originalName": "RenderToImage"},
@@ -122,6 +129,11 @@
       {"names":[{"platform": "WebComponents", "mappedType": "InteractionState","mappedName": "rightButtonDefaultInteraction"}], "originalName": "RightButtonDefaultInteraction"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "rightMargin"}], "originalName": "RightMargin"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "scrollbarsAnimationDuration"}], "originalName": "ScrollbarsAnimationDuration"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcChartSelectedItemCollection","mappedName": "selectedSeriesItems"}], "originalName": "SelectedSeriesItems"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionBehavior","mappedName": "selectionBehavior"}], "originalName": "SelectionBehavior"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "selectionBrush"}], "originalName": "SelectionBrush"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionMode","mappedName": "selectionMode"}], "originalName": "SelectionMode"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "selectionTransitionDuration"}], "originalName": "SelectionTransitionDuration"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "shouldPanOnMaximumZoom"}], "originalName": "ShouldPanOnMaximumZoom"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "shouldSimulateHoverMoveCrosshairPoint"}], "originalName": "ShouldSimulateHoverMoveCrosshairPoint"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "simulateHover"}], "originalName": "SimulateHover"},
@@ -433,6 +445,30 @@
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "referenceValue"}], "originalName": "ReferenceValue"} ]
   },
   {
+    "originalName": "ChartSelection",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "WebComponents","fileName": "igc-chart-selection.ts","dynamicModuleName": "igc-chart-selection-dynamic-module.ts","moduleName": "igc-chart-selection-module.ts","mappedName": "IgcChartSelection"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "equals"}], "originalName": "Equals"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getHashCode"}], "originalName": "GetHashCode"},
+      {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "item"}], "originalName": "Item"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcSeriesMatcher","mappedName": "matcher"}], "originalName": "Matcher"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcSeriesComponent","mappedName": "series"}], "originalName": "Series"} ]
+  },
+  {
+    "originalName": "SeriesMatcher",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "WebComponents","fileName": "igc-series-matcher.ts","dynamicModuleName": "igc-series-matcher-dynamic-module.ts","moduleName": "igc-series-matcher-module.ts","mappedName": "IgcSeriesMatcher"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "memberPath"}], "originalName": "MemberPath"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "memberPathType"}], "originalName": "MemberPathType"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "title"}], "originalName": "Title"} ]
+  },
+  {
     "originalName": "SeriesLayer",
     "originalNamespace": "Infragistics.Controls.Charts",
     "originalBaseTypeNamespace": "System.Windows",
@@ -512,33 +548,6 @@
       {"names":[{"platform": "WebComponents", "mappedType": "TransitionOutSpeedType","mappedName": "ValueScaled"}], "originalName": "ValueScaled"} ]
   },
   {
-    "originalName": "HighlightingState",
-    "originalNamespace": "Infragistics.Controls.Charts",
-    "isEnum":true,
-    "packageName": "igniteui-charts",
-    "names":[{"platform": "WebComponents","fileName": "HighlightingState.ts","mappedName": "HighlightingState"}],
-    "members":[
-      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
-      {"names":[{"platform": "WebComponents", "mappedType": "HighlightingState","mappedName": "Inward"}], "originalName": "In"},
-      {"names":[{"platform": "WebComponents", "mappedType": "HighlightingState","mappedName": "Outward"}], "originalName": "Out"},
-      {"names":[{"platform": "WebComponents", "mappedType": "HighlightingState","mappedName": "Static"}], "originalName": "Static"} ]
-  },
-  {
-    "originalName": "HighlightingInfo",
-    "originalNamespace": "Infragistics.Controls.Charts",
-    "packageName": "igniteui-charts",
-    "names":[{"platform": "WebComponents","fileName": "igc-highlighting-info.ts","mappedName": "IgcHighlightingInfo"}],
-    "members":[
-      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "endIndex"}], "originalName": "EndIndex"},
-      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isExclusive"}], "originalName": "IsExclusive"},
-      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isFullRange"}], "originalName": "IsFullRange"},
-      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isMarker"}], "originalName": "IsMarker"},
-      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "progress"}], "originalName": "Progress"},
-      {"names":[{"platform": "WebComponents", "mappedType": "IgcSeriesComponent","mappedName": "series"}], "originalName": "Series"},
-      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "startIndex"}], "originalName": "StartIndex"},
-      {"names":[{"platform": "WebComponents", "mappedType": "HighlightingState","mappedName": "state"}], "originalName": "State"} ]
-  },
-  {
     "originalName": "SeriesHitTestMode",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
@@ -565,17 +574,6 @@
       {"names":[{"platform": "WebComponents", "mappedType": "ChartHitTestMode","mappedName": "MixedFavoringComputational"}], "originalName": "MixedFavoringComputational"} ]
   },
   {
-    "originalName": "HighlightingMode",
-    "originalNamespace": "Infragistics.Controls.Charts",
-    "isEnum":true,
-    "packageName": "igniteui-charts",
-    "names":[{"platform": "WebComponents","fileName": "HighlightingMode.ts","mappedName": "HighlightingMode"}],
-    "members":[
-      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
-      {"names":[{"platform": "WebComponents", "mappedType": "HighlightingMode","mappedName": "Closest"}], "originalName": "Closest"},
-      {"names":[{"platform": "WebComponents", "mappedType": "HighlightingMode","mappedName": "DirectlyOver"}], "originalName": "DirectlyOver"} ]
-  },
-  {
     "originalName": "RenderRequestedEventArgs",
     "originalNamespace": "Infragistics.Controls.Charts",
     "originalBaseTypeNamespace": "System",
@@ -584,6 +582,26 @@
     "names":[{"platform": "WebComponents","fileName": "igc-render-requested-event-args.ts","mappedName": "IgcRenderRequestedEventArgs"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "animate"}], "originalName": "Animate"} ]
+  },
+  {
+    "originalName": "TransitionOutCompletedEventArgs",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "System",
+    "originalBaseTypeName": "EventArgs",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "WebComponents","fileName": "igc-transition-out-completed-event-args.ts","mappedName": "IgcTransitionOutCompletedEventArgs"}]
+  },
+  {
+    "originalName": "AxisAngleLabelMode",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "isEnum":true,
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "WebComponents","fileName": "AxisAngleLabelMode.ts","mappedName": "AxisAngleLabelMode"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "AxisAngleLabelMode","mappedName": "Auto"}], "originalName": "Auto"},
+      {"names":[{"platform": "WebComponents", "mappedType": "AxisAngleLabelMode","mappedName": "Center"}], "originalName": "Center"},
+      {"names":[{"platform": "WebComponents", "mappedType": "AxisAngleLabelMode","mappedName": "ClosestPoint"}], "originalName": "ClosestPoint"} ]
   },
   {
     "originalName": "AxisRangeBufferMode",
@@ -647,7 +665,8 @@
       {"names":[{"platform": "WebComponents", "mappedType": "ScatterItemSearchMode","mappedName": "ClosestPointOnClosestLine"}], "originalName": "ClosestPointOnClosestLine"},
       {"names":[{"platform": "WebComponents", "mappedType": "ScatterItemSearchMode","mappedName": "ClosestVisiblePoint"}], "originalName": "ClosestVisiblePoint"},
       {"names":[{"platform": "WebComponents", "mappedType": "ScatterItemSearchMode","mappedName": "ClosestVisiblePointOnClosestLine"}], "originalName": "ClosestVisiblePointOnClosestLine"},
-      {"names":[{"platform": "WebComponents", "mappedType": "ScatterItemSearchMode","mappedName": "None"}], "originalName": "None"} ]
+      {"names":[{"platform": "WebComponents", "mappedType": "ScatterItemSearchMode","mappedName": "None"}], "originalName": "None"},
+      {"names":[{"platform": "WebComponents", "mappedType": "ScatterItemSearchMode","mappedName": "TopVisiblePoint"}], "originalName": "TopVisiblePoint"} ]
   },
   {
     "originalName": "ShapeItemSearchMode",
@@ -662,6 +681,44 @@
       {"names":[{"platform": "WebComponents", "mappedType": "ShapeItemSearchMode","mappedName": "ClosestPointOnClosestShape"}], "originalName": "ClosestPointOnClosestShape"},
       {"names":[{"platform": "WebComponents", "mappedType": "ShapeItemSearchMode","mappedName": "ClosestShape"}], "originalName": "ClosestShape"},
       {"names":[{"platform": "WebComponents", "mappedType": "ShapeItemSearchMode","mappedName": "None"}], "originalName": "None"} ]
+  },
+  {
+    "originalName": "SeriesSelectionMode",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "isEnum":true,
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "WebComponents","fileName": "SeriesSelectionMode.ts","mappedName": "SeriesSelectionMode"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionMode","mappedName": "Auto"}], "originalName": "Auto"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionMode","mappedName": "Brighten"}], "originalName": "Brighten"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionMode","mappedName": "FadeOthers"}], "originalName": "FadeOthers"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionMode","mappedName": "FocusColorFill"}], "originalName": "FocusColorFill"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionMode","mappedName": "FocusColorOutline"}], "originalName": "FocusColorOutline"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionMode","mappedName": "FocusColorThickOutline"}], "originalName": "FocusColorThickOutline"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionMode","mappedName": "GrayscaleOthers"}], "originalName": "GrayscaleOthers"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionMode","mappedName": "None"}], "originalName": "None"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionMode","mappedName": "SelectionColorFill"}], "originalName": "SelectionColorFill"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionMode","mappedName": "SelectionColorOutline"}], "originalName": "SelectionColorOutline"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionMode","mappedName": "SelectionColorThickOutline"}], "originalName": "SelectionColorThickOutline"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionMode","mappedName": "ThickOutline"}], "originalName": "ThickOutline"} ]
+  },
+  {
+    "originalName": "SeriesSelectionBehavior",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "isEnum":true,
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "WebComponents","fileName": "SeriesSelectionBehavior.ts","mappedName": "SeriesSelectionBehavior"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionBehavior","mappedName": "Auto"}], "originalName": "Auto"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionBehavior","mappedName": "PerDataItemMultiSelect"}], "originalName": "PerDataItemMultiSelect"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionBehavior","mappedName": "PerDataItemSingleSelect"}], "originalName": "PerDataItemSingleSelect"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionBehavior","mappedName": "PerSeriesAndDataItemGlobalSingleSelect"}], "originalName": "PerSeriesAndDataItemGlobalSingleSelect"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionBehavior","mappedName": "PerSeriesAndDataItemMultiSelect"}], "originalName": "PerSeriesAndDataItemMultiSelect"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionBehavior","mappedName": "PerSeriesAndDataItemSingleSelect"}], "originalName": "PerSeriesAndDataItemSingleSelect"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionBehavior","mappedName": "PerSeriesMultiSelect"}], "originalName": "PerSeriesMultiSelect"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionBehavior","mappedName": "PerSeriesSingleSelect"}], "originalName": "PerSeriesSingleSelect"} ]
   },
   {
     "originalName": "SeriesViewerScrollbarMode",
@@ -979,19 +1036,30 @@
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "endIndex"}], "originalName": "EndIndex"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "fadeOpacity"}], "originalName": "FadeOpacity"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "fill"}], "originalName": "Fill"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcHighlightingInfo","mappedName": "focusHighlightingInfo"}], "originalName": "FocusHighlightingInfo"},
       {"names":[{"platform": "WebComponents", "mappedType": "(orderedStartIndex: number, orderedEndIndex: number) => any[]","mappedName": "getItems"}], "originalName": "GetItems"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "hasDateRange"}], "originalName": "HasDateRange"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "highlightingHandled"}], "originalName": "HighlightingHandled"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcHighlightingInfo","mappedName": "highlightingInfo"}], "originalName": "HighlightingInfo"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isNegativeShape"}], "originalName": "IsNegativeShape"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isThumbnail"}], "originalName": "IsThumbnail"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "maxAllSeriesFocusHighlightingProgress"}], "originalName": "MaxAllSeriesFocusHighlightingProgress"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "maxAllSeriesHighlightingProgress"}], "originalName": "MaxAllSeriesHighlightingProgress"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "maxAllSeriesSelectionHighlightingProgress"}], "originalName": "MaxAllSeriesSelectionHighlightingProgress"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "Opacity"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcHighlightingInfo","mappedName": "selectionHighlightingInfo"}], "originalName": "SelectionHighlightingInfo"},
       {"names":[{"platform": "WebComponents", "mappedType": "Date","mappedName": "startDate"}], "originalName": "StartDate"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "startIndex"}], "originalName": "StartIndex"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "Stroke"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "sumAllSeriesFocusHighlightingProgress"}], "originalName": "SumAllSeriesFocusHighlightingProgress"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "sumAllSeriesHighlightingProgress"}], "originalName": "SumAllSeriesHighlightingProgress"},
-      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "totalAllSeriesHighlightingProgress"}], "originalName": "TotalAllSeriesHighlightingProgress"} ]
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "sumAllSeriesSelectionHighlightingProgress"}], "originalName": "SumAllSeriesSelectionHighlightingProgress"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "totalAllSeriesFocusHighWaterMark"}], "originalName": "TotalAllSeriesFocusHighWaterMark"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "totalAllSeriesFocusHighlightingProgress"}], "originalName": "TotalAllSeriesFocusHighlightingProgress"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "totalAllSeriesHighWaterMark"}], "originalName": "TotalAllSeriesHighWaterMark"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "totalAllSeriesHighlightingProgress"}], "originalName": "TotalAllSeriesHighlightingProgress"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "totalAllSeriesSelectionHighWaterMark"}], "originalName": "TotalAllSeriesSelectionHighWaterMark"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "totalAllSeriesSelectionHighlightingProgress"}], "originalName": "TotalAllSeriesSelectionHighlightingProgress"} ]
   },
   {
     "originalName": "AssigningCategoryStyleEventArgsBase",
@@ -1099,7 +1167,11 @@
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "actualMarkerBrush"}], "originalName": "ActualMarkerBrush"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "actualMarkerOutline"}], "originalName": "ActualMarkerOutline"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgDataTemplate","mappedName": "actualMarkerTemplate"}], "originalName": "ActualMarkerTemplate"},
+      {"names":[{"platform": "WebComponents", "mappedType": "MarkerType","mappedName": "actualMarkerType"}], "originalName": "ActualMarkerType"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "effectiveIsMarkerCircular"}], "originalName": "EffectiveIsMarkerCircular"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "hasMarkers"}], "originalName": "HasMarkers"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "hasVisibleMarkers"}], "originalName": "HasVisibleMarkers"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isCustomMarkerCircular"}], "originalName": "IsCustomMarkerCircular"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "markerBrush"}], "originalName": "MarkerBrush"},
       {"names":[{"platform": "WebComponents", "mappedType": "MarkerFillMode","mappedName": "markerFillMode"}], "originalName": "MarkerFillMode"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "markerOutline"}], "originalName": "MarkerOutline"},
@@ -1124,19 +1196,6 @@
       {"names":[{"platform": "WebComponents", "mappedType": "AxisLabelsLocation","mappedName": "OutsideLeft"}], "originalName": "OutsideLeft"},
       {"names":[{"platform": "WebComponents", "mappedType": "AxisLabelsLocation","mappedName": "OutsideRight"}], "originalName": "OutsideRight"},
       {"names":[{"platform": "WebComponents", "mappedType": "AxisLabelsLocation","mappedName": "OutsideTop"}], "originalName": "OutsideTop"} ]
-  },
-  {
-    "originalName": "AxisOrientation",
-    "originalNamespace": "Infragistics.Controls.Charts",
-    "isEnum":true,
-    "packageName": "igniteui-charts",
-    "names":[{"platform": "WebComponents","fileName": "AxisOrientation.ts","mappedName": "AxisOrientation"}],
-    "members":[
-      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
-      {"names":[{"platform": "WebComponents", "mappedType": "AxisOrientation","mappedName": "Angular"}], "originalName": "Angular"},
-      {"names":[{"platform": "WebComponents", "mappedType": "AxisOrientation","mappedName": "Horizontal"}], "originalName": "Horizontal"},
-      {"names":[{"platform": "WebComponents", "mappedType": "AxisOrientation","mappedName": "Radial"}], "originalName": "Radial"},
-      {"names":[{"platform": "WebComponents", "mappedType": "AxisOrientation","mappedName": "Vertical"}], "originalName": "Vertical"} ]
   },
   {
     "originalName": "BrushSelectionMode",
@@ -1193,19 +1252,6 @@
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "WebComponents", "mappedType": "WindowResponse","mappedName": "Deferred"}], "originalName": "Deferred"},
       {"names":[{"platform": "WebComponents", "mappedType": "WindowResponse","mappedName": "Immediate"}], "originalName": "Immediate"} ]
-  },
-  {
-    "originalName": "EnableErrorBars",
-    "originalNamespace": "Infragistics.Controls.Charts",
-    "isEnum":true,
-    "packageName": "igniteui-charts",
-    "names":[{"platform": "WebComponents","fileName": "EnableErrorBars.ts","mappedName": "EnableErrorBars"}],
-    "members":[
-      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
-      {"names":[{"platform": "WebComponents", "mappedType": "EnableErrorBars","mappedName": "Both"}], "originalName": "Both"},
-      {"names":[{"platform": "WebComponents", "mappedType": "EnableErrorBars","mappedName": "Negative"}], "originalName": "Negative"},
-      {"names":[{"platform": "WebComponents", "mappedType": "EnableErrorBars","mappedName": "None"}], "originalName": "None"},
-      {"names":[{"platform": "WebComponents", "mappedType": "EnableErrorBars","mappedName": "Positive"}], "originalName": "Positive"} ]
   },
   {
     "originalName": "AxisRangeChangedEventArgs",
@@ -1360,6 +1406,28 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "toString"}], "originalName": "ToString"} ]
   },
   {
+    "originalName": "SeriesViewerSelectedSeriesItemsChangedEventArgs",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "System",
+    "originalBaseTypeName": "EventArgs",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "WebComponents","fileName": "igc-series-viewer-selected-series-items-changed-event-args.ts","mappedName": "IgcSeriesViewerSelectedSeriesItemsChangedEventArgs"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcChartSelectedItemCollection","mappedName": "currentItems"}], "originalName": "CurrentItems"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcChartSelectedItemCollection","mappedName": "newItems"}], "originalName": "NewItems"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcChartSelectedItemCollection","mappedName": "oldItems"}], "originalName": "OldItems"} ]
+  },
+  {
+    "originalName": "SeriesViewerSelectedSeriesItemsChangingEventArgs",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "SeriesViewerSelectedSeriesItemsChangedEventArgs",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "WebComponents","fileName": "igc-series-viewer-selected-series-items-changing-event-args.ts","mappedName": "IgcSeriesViewerSelectedSeriesItemsChangingEventArgs"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "cancel"}], "originalName": "Cancel"} ]
+  },
+  {
     "originalName": "DataChartMouseButtonEventArgs",
     "originalNamespace": "Infragistics.Controls.Charts",
     "originalBaseTypeNamespace": "System",
@@ -1368,10 +1436,12 @@
     "names":[{"platform": "WebComponents","fileName": "igc-data-chart-mouse-button-event-args.ts","mappedName": "IgcDataChartMouseButtonEventArgs"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "IgcSeriesViewerComponent","mappedName": "chart"}], "originalName": "Chart"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgPoint", "mappedName": "chartPosition"}], "originalName": "ChartPosition"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getPosition"}], "originalName": "GetPosition"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "handled"}], "originalName": "Handled"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "item"}], "originalName": "Item"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "originalSource"}], "originalName": "OriginalSource"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgPoint", "mappedName": "plotAreaPosition"}], "originalName": "PlotAreaPosition"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcSeriesComponent","mappedName": "series"}], "originalName": "Series"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "toString"}], "originalName": "ToString"} ]
   },
@@ -1384,9 +1454,11 @@
     "names":[{"platform": "WebComponents","fileName": "igc-chart-mouse-event-args.ts","mappedName": "IgcChartMouseEventArgs"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "IgcSeriesViewerComponent","mappedName": "chart"}], "originalName": "Chart"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgPoint", "mappedName": "chartPosition"}], "originalName": "ChartPosition"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getPosition"}], "originalName": "GetPosition"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "item"}], "originalName": "Item"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "originalSource"}], "originalName": "OriginalSource"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgPoint", "mappedName": "plotAreaPosition"}], "originalName": "PlotAreaPosition"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcSeriesComponent","mappedName": "series"}], "originalName": "Series"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "toString"}], "originalName": "ToString"} ]
   },
@@ -1401,6 +1473,8 @@
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "actualAreaFillOpacity"}], "originalName": "ActualAreaFillOpacity"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "actualBrush"}], "originalName": "ActualBrush"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "actualCloseLabel"}], "originalName": "ActualCloseLabel"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "actualFocusBrush"}], "originalName": "ActualFocusBrush"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionMode","mappedName": "actualFocusMode"}], "originalName": "ActualFocusMode"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "actualHighLabel"}], "originalName": "ActualHighLabel"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "actualHighlightedValuesFadeOpacity"}], "originalName": "ActualHighlightedValuesFadeOpacity"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "actualHighlightingFadeOpacity"}], "originalName": "ActualHighlightingFadeOpacity"},
@@ -1416,17 +1490,25 @@
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "actualOutline"}], "originalName": "ActualOutline"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "actualRadiusLabel"}], "originalName": "ActualRadiusLabel"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "actualResolution"}], "originalName": "ActualResolution"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "actualSelectionBrush"}], "originalName": "ActualSelectionBrush"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesSelectionMode","mappedName": "actualSelectionMode"}], "originalName": "ActualSelectionMode"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "actualThickness"}], "originalName": "ActualThickness"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "actualValueLabel"}], "originalName": "ActualValueLabel"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "actualVolumeLabel"}], "originalName": "ActualVolumeLabel"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "areaFillOpacity"}], "originalName": "AreaFillOpacity"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "autoCalloutLabelFormat"}], "originalName": "AutoCalloutLabelFormat"},
+      {"names":[{"platform": "WebComponents", "mappedType": "any[]",   "mappedName": "autoCalloutLabelFormatSpecifiers"}], "originalName": "AutoCalloutLabelFormatSpecifiers"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "autoCalloutValueLabelFormat"}], "originalName": "AutoCalloutValueLabelFormat"},
+      {"names":[{"platform": "WebComponents", "mappedType": "any[]",   "mappedName": "autoCalloutValueLabelFormatSpecifiers"}], "originalName": "AutoCalloutValueLabelFormatSpecifiers"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "brush"}], "originalName": "Brush"},
       {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "coercionMethods"}], "originalName": "CoercionMethods"},
       {"names":[{"platform": "WebComponents", "mappedType": "number[]","mappedName": "dashArray"}], "originalName": "DashArray"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "dataLegendGroup"}], "originalName": "DataLegendGroup"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "dataLegendKey"}], "originalName": "DataLegendKey"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgDataTemplate","mappedName": "discreteLegendItemTemplate"}], "originalName": "DiscreteLegendItemTemplate"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "expectFunctions"}], "originalName": "ExpectFunctions"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "finalValue"}], "originalName": "FinalValue"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "focusBrush"}], "originalName": "FocusBrush"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "fromWorldPosition"}], "originalName": "FromWorldPosition"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getEffectiveViewport"}], "originalName": "GetEffectiveViewport"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getExactItemIndex"}], "originalName": "GetExactItemIndex"},
@@ -1435,6 +1517,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getItemSpan"}], "originalName": "GetItemSpan"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getMainContentViewport"}], "originalName": "GetMainContentViewport"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getMemberPathValue"}], "originalName": "GetMemberPathValue"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getNextOrExactIndex"}], "originalName": "GetNextOrExactIndex"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getPreviousOrExactIndex"}], "originalName": "GetPreviousOrExactIndex"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getSeriesHighValue"}], "originalName": "GetSeriesHighValue"},
@@ -1453,9 +1536,12 @@
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "hasMarkers"}], "originalName": "HasMarkers"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "hasOnlyMarkers"}], "originalName": "HasOnlyMarkers"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "hasValueAxis"}], "originalName": "HasValueAxis"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "hasVisibleMarkers"}], "originalName": "HasVisibleMarkers"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "hideToolTips"}], "originalName": "HideToolTips"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "hideToolTipsImmediate"}], "originalName": "HideToolTipsImmediate"},
+      {"names":[{"platform": "WebComponents", "mappedType": "Visibility","mappedName": "highlightedLegendItemVisibility"}], "originalName": "HighlightedLegendItemVisibility"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "highlightedTitleSuffix"}], "originalName": "HighlightedTitleSuffix"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "highlightedValuesDataLegendGroup"}], "originalName": "HighlightedValuesDataLegendGroup"},
       {"names":[{"platform": "WebComponents", "mappedType": "SeriesHighlightedValuesDisplayMode","mappedName": "highlightedValuesDisplayMode"}], "originalName": "HighlightedValuesDisplayMode"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcSeriesLayerPropertyOverlayCollection","mappedName": "highlightedValuesExtraPropertyOverlays"}], "originalName": "HighlightedValuesExtraPropertyOverlays"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "highlightedValuesFadeOpacity"}], "originalName": "HighlightedValuesFadeOpacity"},
@@ -1472,6 +1558,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isAreaOrLine"}], "originalName": "IsAreaOrLine"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isBar"}], "originalName": "IsBar"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isCategory"}], "originalName": "IsCategory"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isColoredItemwise"}], "originalName": "IsColoredItemwise"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isColumn"}], "originalName": "IsColumn"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isComponentHighlightingModeIgnored"}], "originalName": "IsComponentHighlightingModeIgnored"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isDefaultCrosshairBehaviorDisabled"}], "originalName": "IsDefaultCrosshairBehaviorDisabled"},
@@ -1485,8 +1572,10 @@
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isFinancialWaterfall"}], "originalName": "IsFinancialWaterfall"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isFragment"}], "originalName": "IsFragment"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isGeographic"}], "originalName": "IsGeographic"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isHighlightOverlay"}], "originalName": "IsHighlightOverlay"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isHighlightingEnabled"}], "originalName": "IsHighlightingEnabled"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isIndexed"}], "originalName": "IsIndexed"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isLayer"}], "originalName": "IsLayer"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isLineContour"}], "originalName": "IsLineContour"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isLineOnly"}], "originalName": "IsLineOnly"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}], "originalName": "IsMarkerlessDisplayPreferred"},
@@ -1540,6 +1629,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "resolveTooltipBrush"}], "originalName": "ResolveTooltipBrush"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "safeActualBrush"}], "originalName": "SafeActualBrush"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "scrollIntoView"}], "originalName": "ScrollIntoView"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "selectionBrush"}], "originalName": "SelectionBrush"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNegativeColors"}], "originalName": "SetNegativeColors"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "shadowBlur"}], "originalName": "ShadowBlur"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "shadowColor"}], "originalName": "ShadowColor"},
@@ -1547,6 +1637,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "shadowOffsetY"}], "originalName": "ShadowOffsetY"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "shouldAnimateOnDataSourceSwap"}], "originalName": "ShouldAnimateOnDataSourceSwap"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "shouldHideAutoCallouts"}], "originalName": "ShouldHideAutoCallouts"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "shouldRemoveHighlightedDataOnLayerHidden"}], "originalName": "ShouldRemoveHighlightedDataOnLayerHidden"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "shouldShiftOpacityForSafeActualBrush"}], "originalName": "ShouldShiftOpacityForSafeActualBrush"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "showDefaultTooltip"}], "originalName": "ShowDefaultTooltip"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "simulateHover"}], "originalName": "SimulateHover"},
@@ -1562,6 +1653,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "transitionOutDuration"}], "originalName": "TransitionOutDuration"},
       {"names":[{"platform": "WebComponents", "mappedType": "(time: number) => number","mappedName": "transitionOutEasingFunction"}], "originalName": "TransitionOutEasingFunction"},
       {"names":[{"platform": "WebComponents", "mappedType": "TransitionOutSpeedType","mappedName": "transitionOutSpeedType"}], "originalName": "TransitionOutSpeedType"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "useItemWiseColors"}], "originalName": "UseItemWiseColors"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "useSingleShadow"}], "originalName": "UseSingleShadow"},
       {"names":[{"platform": "WebComponents", "mappedType": "Visibility","mappedName": "visibility"}], "originalName": "Visibility"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "visibleRangeMarginBottom"}], "originalName": "VisibleRangeMarginBottom"},
@@ -1569,24 +1661,5 @@
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "visibleRangeMarginRight"}], "originalName": "VisibleRangeMarginRight"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "visibleRangeMarginTop"}], "originalName": "VisibleRangeMarginTop"},
       {"names":[{"platform": "WebComponents", "mappedType": "SeriesVisibleRangeMode","mappedName": "visibleRangeMode"}], "originalName": "VisibleRangeMode"} ]
-  },
-  {
-    "originalName": "ActualLegendItemBadgeShape",
-    "originalNamespace": "Infragistics.Controls.Charts",
-    "isEnum":true,
-    "packageName": "igniteui-charts",
-    "names":[{"platform": "WebComponents","fileName": "ActualLegendItemBadgeShape.ts","mappedName": "ActualLegendItemBadgeShape"}],
-    "members":[
-      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
-      {"names":[{"platform": "WebComponents", "mappedType": "ActualLegendItemBadgeShape","mappedName": "BarShape"}], "originalName": "BarShape"},
-      {"names":[{"platform": "WebComponents", "mappedType": "ActualLegendItemBadgeShape","mappedName": "CircleShape"}], "originalName": "CircleShape"},
-      {"names":[{"platform": "WebComponents", "mappedType": "ActualLegendItemBadgeShape","mappedName": "ColumnShape"}], "originalName": "ColumnShape"},
-      {"names":[{"platform": "WebComponents", "mappedType": "ActualLegendItemBadgeShape","mappedName": "HiddenShape"}], "originalName": "HiddenShape"},
-      {"names":[{"platform": "WebComponents", "mappedType": "ActualLegendItemBadgeShape","mappedName": "LineMarkerless"}], "originalName": "LineMarkerless"},
-      {"names":[{"platform": "WebComponents", "mappedType": "ActualLegendItemBadgeShape","mappedName": "LineWithMarker"}], "originalName": "LineWithMarker"},
-      {"names":[{"platform": "WebComponents", "mappedType": "ActualLegendItemBadgeShape","mappedName": "MarkerShape"}], "originalName": "MarkerShape"},
-      {"names":[{"platform": "WebComponents", "mappedType": "ActualLegendItemBadgeShape","mappedName": "SquareFinancial"}], "originalName": "SquareFinancial"},
-      {"names":[{"platform": "WebComponents", "mappedType": "ActualLegendItemBadgeShape","mappedName": "SquareIndicator"}], "originalName": "SquareIndicator"},
-      {"names":[{"platform": "WebComponents", "mappedType": "ActualLegendItemBadgeShape","mappedName": "SquareShape"}], "originalName": "SquareShape"} ]
   }]
 }

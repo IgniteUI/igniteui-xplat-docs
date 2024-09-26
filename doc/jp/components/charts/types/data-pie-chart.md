@@ -2,7 +2,7 @@
 title: {Platform} 円チャートとグラフ | {ProductName}
 _description: {ProductName} データ円チャートは、セクションに分割された円形の領域で構成される、円チャートを表示するための UI コントロールです。無料でお試しください。
 _keywords: {Platform} charts, pie chart, {ProductName}, Infragistics, data binding, slice selection, animation, highlighting, legend, {Platform} チャート, 円チャート, インフラジスティックス, データ バインディング, スライスの選択, アニメーション, ハイライト表示, 凡例
-mentionedTypes: ["XamDataPieChart", "XamDataChart"]
+mentionedTypes: ["DataPieChart", "XamDataChart", "OthersCategoryType", "SeriesSelectionMode", "SeriesSelectionBehavior", "SeriesHighlightingBehavior"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -12,7 +12,7 @@ _language: ja
 
 ## {Platform} データ円チャートの例
 
-データ項目を文字列と数値データでバインドすることで、`XamDataPieChart` の {Platform} 円チャートが作成できます。これらのデータ値を足すと可視化率100%になります。
+データ項目を文字列と数値データでバインドすることで、`DataPieChart` の {Platform} 円チャートが作成できます。これらのデータ値を足すと可視化率 100% になります。
 
 `sample="/charts/data-pie-chart/overview", height="600", alt="{Platform} データ円チャートの概要"`
 
@@ -20,16 +20,7 @@ _language: ja
 
 ## {Platform} データ円チャートの推奨事項
 
-円チャートは小さなデータ セットに適しており、一目で読みやすいです。円チャートは、部分から全体への視覚化の 1 つのタイプにすぎません。その他は次のとおりです。
-
-- ドーナツ (リング)
-- ファンネル
-- 積層型エリア
-- 積層型 100% エリア (積層型パーセンテージ エリア)
-- 積層型棒
-- 積層型 100% 棒 (積層型パーセンテージ棒)
-- ツリーマップ
-- ウォーターフォール
+円チャートは小さなデータ セットに適しており、一目で読みやすいです。円チャートは、ドーナツ (リング) チャート、ファンネル チャート、積層型エリア チャート、積層型棒チャート、ツリーマップなど、部分から全体への視覚化の 1 つのタイプです。
 
 {Platform} データ円チャートには、次のようなデータを分析するためのビューア ツールを提供するインタラクティブ機能が含まれています。
 
@@ -64,11 +55,11 @@ _language: ja
 
 円チャートの隣に凡例を表示するには、ItemLegend を作成し、`Legend` プロパティに割り当てます。ItemLegend はデフォルトでは項目を縦方向に表示しますが、これは `Orientation` プロパティを設定することで変更できます。
 
-凡例に表示されるラベルには、デフォルトで `XamDataPieChart` の各スライスに表示されるラベルと同じ内容が表示されますが、チャートの `LegendSliceLabelContentMode` プロパティを使用してこれを変更できます。これにより、ラベル、値、パーセンテージ、またはそれらの任意の組み合わせをチャート内の各スライスの凡例のコンテンツとして表示できる列挙が公開されます。
+凡例に表示されるラベルには、デフォルトで `DataPieChart` の各スライスに表示されるラベルと同じ内容が表示されますが、チャートの `LegendSliceLabelContentMode` プロパティを使用してこれを変更できます。これにより、ラベル、値、パーセンテージ、またはそれらの任意の組み合わせをチャート内の各スライスの凡例のコンテンツとして表示できる列挙が公開されます。
 
 ItemLegend バッジを変更することもできます。デフォルトでは、関連付けられているチャートのスライスの色に対応する塗りつぶされた円として表示されます。これを設定するには、チャートの `LegendItemBadgeShape` プロパティを使用し、円、折れ線、棒、縦棒などに設定できます。
 
-以下は、`XamDataPieChart` での ItemLegend の使用例です。
+以下は、`DataPieChart` での ItemLegend の使用例です。
 
 `sample="/charts/data-pie-chart/legend", height="600", alt="{Platform} データ円チャートの凡例"`
 
@@ -78,15 +69,15 @@ ItemLegend バッジを変更することもできます。デフォルトでは
 
 円チャートの基本データに、小さい値を含む多くの項目が含まれる場合があります。この場合、Others カテゴリは、単一スライスへの複数のデータ値の自動集計を許可します。
 
-`XamDataPieChart` の「その他」カテゴリには、`OthersCategoryType`、`OthersCategoryThreshold`、`OthersCategoryText` という 3 つの主要な構成可能なプロパティがあり、これらを使用して、チャート内の「その他」スライスの表示方法を構成できます。これらについては、それぞれ以下で説明します。
+`DataPieChart` の「その他」カテゴリには、`OthersCategoryType`、`OthersCategoryThreshold`、`OthersCategoryText` という 3 つの主要な構成可能なプロパティがあり、これらを使用して、チャート内の「その他」スライスの表示方法を構成できます。これらについては、それぞれ以下で説明します。
 
-`OthersCategoryType` プロパティは、`XamDataPieChart` の `OthersCategoryThreshold` プロパティと連動して機能します。`OthersCategoryType` では、`OthersCategoryThreshold` を数値として評価するか、パーセンテージとして評価するかを定義できます。たとえば、数値を選択し、`OthersCategoryThreshold` を 5 に設定すると、5 未満の値を持つスライスはすべて「その他」カテゴリの一部になります。パーセント タイプで同じ値 5 を使用すると、`XamDataPieChart` の合計値の 5 パーセント未満の値はすべて「その他」カテゴリの一部になります。
+`OthersCategoryType` プロパティは、`DataPieChart` の `OthersCategoryThreshold` プロパティと連動して機能します。`OthersCategoryType` では、`OthersCategoryThreshold` を数値として評価するか、パーセンテージとして評価するかを定義できます。たとえば、数値を選択し、`OthersCategoryThreshold` を 5 に設定すると、5 未満の値を持つスライスはすべて「その他」カテゴリの一部になります。パーセント タイプで同じ値 5 を使用すると、`DataPieChart` の合計値の 5 パーセント未満の値はすべて「その他」カテゴリの一部になります。
 
 デフォルトでは、「その他」スライスは「その他」というラベルで表されます。チャートの `OthersCategoryText` プロパティを変更することでこれを変更できます。
 
-`XamDataPieChart` に「その他」カテゴリが表示されないようにするには、`OthersCategoryThreshold` を 0 に設定します。
+`DataPieChart` に「その他」カテゴリが表示されないようにするには、`OthersCategoryThreshold` を 0 に設定します。
 
-以下のサンプルは、`XamDataPieChart` 内の Others スライスの使用方法を示しています。
+以下のサンプルは、`DataPieChart` 内の Others スライスの使用方法を示しています。
 
 `sample="/charts/data-pie-chart/others", height="600", alt="{Platform} 円チャートのその他"`
 
@@ -94,7 +85,7 @@ ItemLegend バッジを変更することもできます。デフォルトでは
 
 ## {Platform} データ円チャートの選択
 
-`XamDataPieChart` は、チャートにプロットされたスライスをマウスでクリックしてスライスを選択できる機能をサポートしています。これは、以下で説明するチャートの `SelectionBehavior` プロパティと `SelectionMode` プロパティを利用して構成できます。
+`DataPieChart` は、チャートにプロットされたスライスをマウスでクリックしてスライスを選択できる機能をサポートしています。これは、以下で説明するチャートの `SelectionBehavior` プロパティと `SelectionMode` プロパティを利用して構成できます。
 
 `SelectionBehavior` の主な 2 つのオプションは `PerDataItemSingleSelect` と `PerDataItemMultiSelect` で、それぞれ単一選択と複数選択を有効にします。
 
@@ -114,7 +105,7 @@ ItemLegend バッジを変更することもできます。デフォルトでは
 
 スライスが選択されると、その基になるデータ項目がチャートの SelectedSeriesItems コレクションに追加されます。そのため、XamDataPieChart は SelectedSeriesItemsChanged イベントを公開して、スライスが選択されてこのコレクションが変更されたことを検出します。
 
-以下のサンプルは、`XamDataPieChart` コントロールの選択機能を示しています。
+以下のサンプルは、`DataPieChart` コントロールの選択機能を示しています。
 
 `sample="/charts/data-pie-chart/selection", height="600", alt="{Platform} 円チャートの選択"`
 
@@ -122,7 +113,7 @@ ItemLegend バッジを変更することもできます。デフォルトでは
 
 ## {Platform} データ円チャートのハイライト表示
 
-`XamDataPieChart` は、マウス オーバーによるハイライト表示と、別のデータ ソースを提供することで設定できるハイライト表示オーバーレイをサポートしています。
+`DataPieChart` は、マウス オーバーによるハイライト表示と、別のデータ ソースを提供することで設定できるハイライト表示オーバーレイをサポートしています。
 
 `HighlightingBehavior` 列挙プロパティは、スライスがどのようにハイライト表示されるかを決定します。以下はそのプロパティのオプションとその機能です。
 
@@ -139,11 +130,11 @@ ItemLegend バッジを変更することもできます。デフォルトでは
 - `FadeOthersSpecific`: マウスの位置がそのスライスの上または近くにある場合、そのスライスの色は保持されますが、他のスライスの色は薄く表示されます。
 - `None`: シリーズとスライスはハイライト表示されません。
 
-以下の例は、`XamDataPieChart` コンポーネントのマウスハイライト表示の動作を示しています。
+以下の例は、`DataPieChart` コンポーネントのマウスハイライト表示の動作を示しています。
 
 `sample="/charts/data-pie-chart/highlighting", height="600", alt="{Platform} データ円チャートのハイライト表示"`
 
-マウスのハイライト表示に加えて、`XamDataPieChart` はデータのサブセットを表示できるハイライト表示フィルター機能を公開します。これは、コントロールの `HighlightedDataSource` を指定し、`HighlightedValuesDisplayMode` プロパティを `Overlay` に設定することによって適用されます。`HighlightedDataSource` は、`XamDataPieChart` の `DataSource` プロパティに割り当てられたデータのサブセットを想定しています。
+マウスのハイライト表示に加えて、`DataPieChart` はデータのサブセットを表示できるハイライト表示フィルター機能を公開します。これは、コントロールの `HighlightedDataSource` を指定し、`HighlightedValuesDisplayMode` プロパティを `Overlay` に設定することによって適用されます。`HighlightedDataSource` は、`DataPieChart` の `DataSource` プロパティに割り当てられたデータのサブセットを想定しています。
 
 これらの条件が満たされると、サブセットの値がハイライト表示され、データの全セットの残りの部分はフェードアウトされます。これにより、サブセットが効果的にハイライトされ、同じコントロール内でデータのサブセットをより簡単に視覚化できるようになります。
 
@@ -151,13 +142,13 @@ ItemLegend バッジを変更することもできます。デフォルトでは
 
 ## {Platform} データ円チャートのアニメーション
 
-`XamDataPieChart` は、スライスの表示や値の変更時のアニメーション化をサポートしています。
+`DataPieChart` は、スライスの表示や値の変更時のアニメーション化をサポートしています。
 
 `IsTransitionInEnabled` プロパティを **true** に設定すると、円チャートがアニメーションで表示されます。実行されるアニメーションのタイプは、`TransitionInMode` 列挙プロパティを表示したいアニメーションのタイプに設定することで構成できます。さらに、`TransitionInSpeedType` プロパティを、インデックス、値、通常、またはランダム化でスケー​​ルするように設定することもできます。このアニメーションの期間は、`TimeSpan` を受け取る `TransitionInDuration` プロパティで制御できます。
 
 データの変更をアニメーション化する場合は、`AnimateSeriesWhenAxisRangeChanges` プロパティを **true** に設定することでも実行できます。この変更の期間は、`TransitionDuration` プロパティを設定することでも構成できます。
 
-以下のは、`XamDataPieChart` コントロールでのアニメーションを使用する方法を示しています。
+以下のは、`DataPieChart` コントロールでのアニメーションを使用する方法を示しています。
 
 `sample="/charts/data-pie-chart/animation", height="600", alt="{Platform} データ円チャートのアニメーション"`
 
@@ -173,12 +164,14 @@ ItemLegend バッジを変更することもできます。デフォルトでは
 
 以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
 
+- `ChartType`
 - `OthersCategoryThreshold`
 - `OthersCategoryType`
 - `SelectionMode`
+- `SelectionBehavior`
 
  |チャート タイプ       | コントロール名   | API メンバー |
  |-----------------|----------------|------------ |
- |データ円チャート      | `XamDataPieChart`     | `XamDataPieChart` |
+ |データ円チャート      | `DataPieChart`     | `DataPieChart` |
  |項目凡例 | `ItemLegend` | `ItemLegend` |
 

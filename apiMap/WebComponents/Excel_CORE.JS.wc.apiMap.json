@@ -1589,6 +1589,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "IWorkbookFont","mappedName": "font"}], "originalName": "Font"},
       {"names":[{"platform": "WebComponents", "mappedType": "WorksheetCellFormatOptions","mappedName": "formatOptions"}], "originalName": "FormatOptions"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "formatString"}], "originalName": "FormatString"},
+      {"names":[{"platform": "WebComponents", "mappedType": "Nullable","mappedName": "hidden"}], "originalName": "Hidden"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "indent"}], "originalName": "Indent"},
       {"names":[{"platform": "WebComponents", "mappedType": "WorkbookColorInfo","mappedName": "leftBorderColorInfo"}], "originalName": "LeftBorderColorInfo"},
       {"names":[{"platform": "WebComponents", "mappedType": "CellBorderLineStyle","mappedName": "leftBorderStyle"}], "originalName": "LeftBorderStyle"},

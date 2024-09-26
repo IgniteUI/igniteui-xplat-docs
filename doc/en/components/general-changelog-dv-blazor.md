@@ -78,9 +78,9 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### {PackageGrids}
 
-- `All Grids`
- - Added `GetColumns` / `GetColumnsAsync` methods, which return the grid columns collection.
- - Added new `RowClick` event.
+- **All Grids** 
+  - Added `GetColumns` / `GetColumnsAsync` methods, which return the grid columns collection.
+  - Added new `RowClick` event.
 - `PivotGrid`
   - Added `Sortable` property for a `PivotDimension`.
   - Added horizontal layout. Can be enabled inside the new `PivotUI` property as `RowLayout` `Horizontal`.
@@ -88,10 +88,11 @@ All notable changes for each version of {ProductName} are documented on this pag
   - Added `HorizontalSummariesPosition` property to the `PivotUI`, configuring horizontal summaries position.
   - Added row headers for the row dimensions. Can be enabled inside the new `PivotUI` property as `ShowHeaders` **true**.
   - Keyboard navigation now can move in to row headers back and forth from any row dimension headers or column headers.
-  - Added keyboard interactions for row dimension collapse using `Alt + Arrows` and row headers sorting using `Ctrl + Arrow Up/Down`.
+  - Added keyboard interactions for row dimension collapse using <kbd>Alt</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> arrows and row headers sorting using <kbd>Ctrl</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> arrows.
 
 **BREAKING CHANGES**:
-- `All Grids`, `RowIsland`
+- **All Grids** 
+  - `RowIsland`
   - Removed `DisplayDensity` deprecated property.
   - Renamed `Columns`, `ActualColumns`, `ContentColumns` properties to `ColumnList`, `ActualColumnList` and `ContentColumnList`. Recommended to use the new `GetColumns` method instead.
   - Renamed `RowDelete` and `RowAdd` event argument type to `RowDataCancelableEventArgs`.

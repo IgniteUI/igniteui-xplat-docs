@@ -123,7 +123,7 @@ datePickerRef.current.value = new Date();
 }
 ```
 <!-- WebComponents -->
-文字列がピッカーにバインドされている場合は、`ISO 8601` 形式の文字列である必要があります。
+文字列がピッカーにバインドされている場合は、**ISO 8601** 形式の文字列である必要があります。
 ```html
 <igc-date-picker value="2000-01-01"></igc-date-picker>
 ```

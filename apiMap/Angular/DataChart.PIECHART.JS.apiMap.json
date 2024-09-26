@@ -43,17 +43,6 @@
       {"names":[{"platform": "Angular", "mappedType": "LeaderLineType","mappedName": "Straight"}], "originalName": "Straight"} ]
   },
   {
-    "originalName": "OthersCategoryType",
-    "originalNamespace": "Infragistics.Controls.Charts",
-    "isEnum":true,
-    "packageName": "igniteui-charts",
-    "names":[{"platform": "Angular","fileName": "OthersCategoryType.ts","mappedName": "OthersCategoryType"}],
-    "members":[
-      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
-      {"names":[{"platform": "Angular", "mappedType": "OthersCategoryType","mappedName": "Number"}], "originalName": "Number"},
-      {"names":[{"platform": "Angular", "mappedType": "OthersCategoryType","mappedName": "Percent"}], "originalName": "Percent"} ]
-  },
-  {
     "originalName": "SliceSelectionMode",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
@@ -160,6 +149,7 @@
       {"names":[{"platform": "Angular", "mappedType": "IgPoint", "mappedName": "origin"}], "originalName": "Origin"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "originalEvent"}], "originalName": "OriginalEvent"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "outline"}], "originalName": "Outline"},
+      {"names":[{"platform": "Angular", "mappedType": "IgPoint", "mappedName": "position"}], "originalName": "Position"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "radius"}], "originalName": "Radius"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "startAngle"}], "originalName": "StartAngle"} ]
   },

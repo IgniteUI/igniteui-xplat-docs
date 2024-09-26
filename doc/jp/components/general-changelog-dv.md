@@ -26,6 +26,7 @@ _language: ja
 
     - 新しい ToolActionCheckboxList
         選択用のチェックボックスを備えた項目のコレクションを表示する新しい CheckboxList ToolAction。ToolAction CheckboxList 内のグリッドの高さは 5 項目まで大きくなり、その後スクロールバーが表示されます。
+        IgxCheckboxListModule を登録する必要があります。
 
     - 新しいフィルタリングのサポート
 

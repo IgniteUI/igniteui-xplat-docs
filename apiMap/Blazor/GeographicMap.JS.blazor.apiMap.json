@@ -289,6 +289,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItem"}], "originalName": "GetItem"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemSpan"}], "originalName": "GetItemSpan"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemValue"}], "originalName": "GetItemValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetMemberPathValue"}], "originalName": "GetMemberPathValue"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetNextOrExactIndex"}], "originalName": "GetNextOrExactIndex"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetPreviousOrExactIndex"}], "originalName": "GetPreviousOrExactIndex"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesHighValue"}], "originalName": "GetSeriesHighValue"},

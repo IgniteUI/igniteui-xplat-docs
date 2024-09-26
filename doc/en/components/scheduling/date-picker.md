@@ -122,7 +122,7 @@ datePickerRef.current.value = new Date();
 }
 ```
 <!-- WebComponents -->
-If a string is bound to the picker, it needs to be in the `ISO 8601` format:
+If a string is bound to the picker, it needs to be in the **ISO 8601** format:
 ```html
 <igc-date-picker value="2000-01-01"></igc-date-picker>
 ```
