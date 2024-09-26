@@ -737,7 +737,7 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 <!-- WebComponents, Blazor, React -->
 ## Styling
 
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming-grid.md).
 In case you would like to change some of the colors, you need to set an `ID` for the grid first:
 
 
