@@ -1887,7 +1887,7 @@ export class MarkdownTransformer {
         return lines.join('\n');
     }
 
-    verifyMarkdown(fileContent: string, filePath: string): any {
+    verifyMarkdown222(fileContent: string, filePath: string): any {
         var md = new MarkdownContent(fileContent, filePath);
         var mdValidated = false;
 
