@@ -2021,7 +2021,7 @@ export class MarkdownTransformer {
             let words = line.split(' ');
             for (const word of words) {
 
-                var item = word.replace('\r', '').replace(',', '');
+                var item = word.replace('\r/g', '').replace(',', '');
                 if (item.includes('sample=')) continue;
                 if (item.includes('```')) continue;
 
