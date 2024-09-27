@@ -71,26 +71,26 @@ After setting the `useAccessibility` property to **true**, this will enable a ra
 
 Navigating within the Grid
 
-- <b>Ctrl + Alt + Arrow Key Right</b>: Navigate one cell up.
-- <b>Ctrl + Alt + Arrow Key Left</b>: Navigate one cell left.
-- <b>Ctrl + Alt + Arrow Key Down</b>: Navigate one cell below.
-- <b>Ctrl + Alt + Arrow Key Up</b>: Navigate one cell above.
-- <b>Ctrl + Alt + Home</b>: Navigate to first column header.
-- <b>Ctrl + Alt + End</b>: Navigate to last visible cell.
-- <b>Ctrl + Alt + Shift + ↑</b>	Navigate to current column header.
-- <b>Ctrl + Alt + Shift + ↓</b>	Navigate to last cell in current column.
-- <b>Ctrl + Alt + Shift + ←</b>	Navigate to first cell in current row.
-- <b>Ctrl + Alt + Shift + →</b>	Navigate to last cell in current row.
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>→</kbd>: Navigate one cell up.
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>←</kbd>: Navigate one cell left.
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>↓</kbd>: Navigate one cell below.
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>↑</kbd>: Navigate one cell above.
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Home</kbd>: Navigate to first column header.
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>End</kbd>: Navigate to last visible cell.
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd>	Navigate to current column header.
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>↓</kbd>	Navigate to last cell in current column.
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd>	Navigate to first cell in current row.
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>→</kbd>	Navigate to last cell in current row.
 
 Screen Reader Commands
 
-- <b>Ctrl OR Alt + Num Pad 5</b>: Read current cell.
-- <b>Insert + Shift + ↑</b>: Read current row.
-- <b>Insert + Shift + Home</b>: Read from start of row.
-- <b>Insert + Shift + Page Up</b>: Read to end of row from current cell.
-- <b>Insert + Shift + Num Pad 5</b>: Read current column.
-- <b>Insert + Shift + End</b>: Read from top of column.
-- <b>Insert + Shift + Page Down</b>: Read to bottom of column.
+- <kbd>Ctrl OR Alt</kbd> + <kbd>Num Pad 5</kbd>: Read current cell.
+- <kbd>Insert</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd>: Read current row.
+- <kbd>Insert</kbd> + <kbd>Shift</kbd> + <kbd>Home</kbd>: Read from start of row.
+- <kbd>Insert</kbd> + <kbd>Shift</kbd> + <kbd>Page Up</kbd>: Read to end of row from current cell.
+- <kbd>Insert</kbd> + <kbd>Shift</kbd> + <kbd>Num Pad 5</kbd>: Read current column.
+- <kbd>Insert</kbd> + <kbd>Shift</kbd> + <kbd>End</kbd>: Read from top of column.
+- <kbd>Insert</kbd> + <kbd>Shift</kbd> + <kbd>Page Down</kbd>: Read to bottom of column.
 
 ## Code Snippet
 

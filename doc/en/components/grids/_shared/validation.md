@@ -1,5 +1,5 @@
 ---
-title: Editing and Validation in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Editing and Validation - {ProductName}
 _description: Validate the input of the users in grid and notify them if it's valid or not while using {Platform} {ComponentTitle}. See demos & examples!
 _keywords: {Platform} validation, {ProductName}, infragistics,
 mentionedTypes: [{ComponentApiMembers}]
@@ -8,7 +8,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Editing and Validation
 
-The `{ComponentName}` provides editing that has a built-in validation mechanism of user input when editing cells/rows. It extends the form validation functionality to allow easier integration with a well known functionality. When the state of the editor changes, visual indicators are applied to the edited cell.
+The {Platform} {ComponentName} provides editing that has a built-in Validation mechanism of user input when editing cells/rows. It extends the form validation functionality to allow easier integration with a well known functionality. When the state of the editor changes, visual indicators are applied to the edited cell in the `{ComponentName}`.
 
 ## Configuration
 
@@ -429,7 +429,7 @@ private rowValidator(): ValidatorFn {
 
         const age = formGroup.get('Age');
         const hireDate = formGroup.get('HireDate');
-        if((new Date().getFullYear() - new Date(hireDate.value).getFullYear()) + 18 >= age.value) {
+        if ((new Date().getFullYear() - new Date(hireDate.value).getFullYear()) + 18 >= age.value) {
             returnObject['ageLessHireDate'] = true;
         }
 
@@ -539,9 +539,9 @@ The first thing we need to do is import the `themes/index` file - this gives us 
 ```
 
 ### Include the styles
-In order to change the error color you can use the css variable `--igx-error-500`:
+In order to change the error color you can use the css variable `--ig-error-500`:
 ```scss
---igx-error-500: 34, 80%, 63%;
+--ig-error-500: 34, 80%, 63%;
 ```
 
 ### Custom Templates
@@ -659,11 +659,12 @@ public cellStyles = {
 
 <!-- Blazor -->
 
-
+<!-- ComponentStart:  Grid -->
 * [{ComponentTitle} Editing](editing.md)
 * [{ComponentTitle} Row Editing](row-editing.md)
 * [{ComponentTitle} Row Adding](row-adding.md)
 * [{ComponentTitle} Transactions](batch-editing.md)
+<!-- ComponentEnd:  Grid -->
 
 <!-- end: Blazor -->
 

@@ -229,7 +229,7 @@ for (let i = 0; i < 250; i++) {
         firstName = this.getRandomItem(maleNames);
         maleCount++;
 
-        if(maleCount > 26){
+        if (maleCount > 26) {
              maleCount = 0;
         }
 
@@ -244,7 +244,7 @@ for (let i = 0; i < 250; i++) {
         firstName = this.getRandomItem(femaleNames);
         femaleCount++;
 
-        if(femaleCount > 24){
+        if (femaleCount > 24) {
             femaleCount = 0;
         }
 

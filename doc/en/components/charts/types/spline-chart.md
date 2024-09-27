@@ -2,7 +2,7 @@
 title: {Platform} Spline Chart | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Spline Chart
 _keywords: {Platform} Charts, Spline Chart, Infragistics
-mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "SplineSeries", "StackedSplineSeries", "Stacked100SplineSeries", 'Series']
+mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "SplineSeries", "StackedSplineSeries", "Stacked100SplineSeries", 'Series', "CategoryChartType"]
 ---
 # {Platform} Spline Chart
 
@@ -10,7 +10,7 @@ The {ProductName} Spline Chart belongs to a group of Category Charts that render
 
 ## {Platform} Spline Chart Example
 
-The following example shows how to create {Platform} Spline Chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to **Spline** enum.
+The following example shows how to create {Platform} Spline Chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Spline` enum.
 
 `sample="/charts/category-chart/spline-multiple-sources", height="600", alt="{Platform} Spline Chart Multiple Sources"`
 

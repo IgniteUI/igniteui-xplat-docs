@@ -1,5 +1,5 @@
 ---
-title: Multi-Column Headers in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Multi-Column Headers - {ProductName}
 _description: Start grouping column headers by placing them under a common hierarchical header with the help of {ProductName} grid and combine them into multi headers.
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Multi-Column Headers, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
@@ -8,7 +8,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Multi-Column Headers Overview
 
-The {Platform} `{ComponentName}` supports multi-column headers which allow you to group columns by placing them under a common multi-header. Each multi-column headers group could be a representation of combinations between other groups or columns within the Material UI grid.
+The {ProductName} Multi-Column Headers feature in {Platform} {ComponentTitle} allows you to group columns by placing them under a common multi-header. Each multi-column headers group in the `{ComponentName}` could be a representation of combinations between other groups or columns. This feature is particularly useful when dealing with large datasets where scrolling horizontally might be cumbersome.
 
 ## {Platform} {ComponentTitle} Multi-Column Headers Example
 
@@ -54,6 +54,16 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
 ```
 <!-- end: WebComponents -->
 
+```tsx
+<{ComponentSelector} allowFiltering="true">
+    <IgrColumnGroup header="Contact Information">
+        <IgrColumn sortable="true" resizable="true" field="Phone"></IgrColumn>
+        <IgrColumn sortable="true" resizable="true" field="Fax"></IgrColumn>
+        <IgrColumn sortable="true" resizable="true" field="PostalCode"></IgrColumn>
+    </IgrColumnGroup>
+</{ComponentSelector}>
+```
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -91,30 +101,91 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
 ```
 <!-- end: WebComponents -->
 
+```tsx
+<{ComponentSelector} primaryKey="ID" foreignKey="ParentID">
+    <IgrColumnGroup header="Contact Information">
+        <IgrColumn sortable="true" resizable="true" field="Phone" dataType={GridColumnDataType.String}></IgrColumn>
+        <IgrColumn sortable="true" resizable="true" field="Fax" dataType={GridColumnDataType.String}></IgrColumn>
+        <IgrColumn sortable="true" resizable="true" field="PostalCode" dataType={GridColumnDataType.String}></IgrColumn>
+    </IgrColumnGroup>
+</{ComponentSelector}>
+```
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```html
-<igx-hierarchical-grid [data]="localdata" displayDensity="compact" [moving]="true" [allowFiltering]="true">
-    <igx-column field="CustomerID" sortable="true" resizable="true"></igx-column>
+<igx-hierarchical-grid [data]="localdata" [moving]="true" [allowFiltering]="true">
+    <igx-column field="CustomerID" data-type="string" sortable="true" resizable="true"></igx-column>
     <igx-column-group header="Address Information">
         <igx-column-group header="Location">
-            <igx-column field="Address" sortable="true" resizable="true"></igx-column>
-            <igx-column field="City" sortable="true" resizable="true"></igx-column>
-            <igx-column field="PostalCode" sortable="true" resizable="true"></igx-column>
-            <igx-column field="Country" sortable="true" resizable="true"></igx-column>
+            <igx-column field="Address" data-type="string" sortable="true" resizable="true"></igx-column>
+            <igx-column field="City" data-type="string" sortable="true" resizable="true"></igx-column>
+            <igx-column field="PostalCode" data-type="string" sortable="true" resizable="true"></igx-column>
+            <igx-column field="Country" data-type="string" sortable="true" resizable="true"></igx-column>
         </igx-column-group>
         <igx-column-group header="Contact Information">
-            <igx-column field="Phone" sortable="true" resizable="true"></igx-column>
-            <igx-column field="Fax" sortable="true" resizable="true"></igx-column>
+            <igx-column field="Phone" data-type="string" sortable="true" resizable="true"></igx-column>
+            <igx-column field="Fax" data-type="string" sortable="true" resizable="true"></igx-column>
         </igx-column-group>
     </igx-column-group>
 </igx-hierarchical-grid>
 ```
 
 ```razor
-TO-DO H-GRID CODE SNIPPET
+<{ComponentSelector} Data="HierarchicalCustomers" Name="hierarchicalGrid" @ref="hierarchicalGrid" Id="hierarchicalGrid" PrimaryKey="ID" Moving="true" AllowFiltering="true">
+    <IgbColumn Field="CustomerID" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+    <IgbColumnGroup Header="Address Information">
+        <IgbColumnGroup Header="Location">
+            <IgbColumn Field="Address" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+            <IgbColumn Field="City" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+            <IgbColumn Field="PostalCode" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+            <IgbColumn Field="Country" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+        </IgbColumnGroup>
+        <IgbColumnGroup Header="Contact Information">
+            <IgbColumn Field="Phone" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+            <IgbColumn Field="Fax" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+        </IgbColumnGroup>
+    </IgbColumnGroup>
+</{ComponentSelector}>
+```
+
+<!-- WebComponents -->
+```html
+<igc-hierarchical-grid auto-generate="false" name="hierarchicalGrid" id="hierarchicalGrid" primary-key="ID" moving="true" allow-filtering="true">
+    <igc-column field="CustomerID" sortable="true" resizable="true"> </igc-column>
+    <igc-column-group header="Address Information">
+        <igc-column-group header="Location">
+            <igc-column field="Address" sortable="true" resizable="true"></igc-column>
+            <igc-column field="City" sortable="true" resizable="true"></igc-column>
+            <igc-column field="PostalCode" sortable="true" resizable="true"></igc-column>
+            <igc-column field="Country" sortable="true" resizable="true"></igc-column>
+        </igc-column-group>
+        <igc-column-group header="Contact Information">
+            <igc-column field="Phone" sortable="true" resizable="true"></igc-column>
+            <igc-column field="Fax" sortable="true" resizable="true"></igc-column>
+        </igc-column-group>
+    </igc-column-group>
+</igc-hierarchical-grid>
+```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrHierarchicalGrid autoGenerate="false" data={this.hierarchicalCustomers} ref={this.hierarchicalGridRef} id="hierarchicalGrid" primaryKey="ID" moving="true" allowFiltering="true">
+    <IgrColumn sortable="true" resizable="true" field="CustomerID" dataType={GridColumnDataType.String}></IgrColumn>
+    <IgrColumnGroup header="Address Information">
+        <IgrColumnGroup header="Location">
+            <IgrColumn sortable="true" resizable="true" field="Address" dataType={GridColumnDataType.String}></IgrColumn>
+            <IgrColumn sortable="true" resizable="true" field="City" dataType={GridColumnDataType.String}></IgrColumn>
+            <IgrColumn sortable="true" resizable="true" field="PostalCode" dataType={GridColumnDataType.String}></IgrColumn>
+            <IgrColumn sortable="true" resizable="true" field="Country" dataType={GridColumnDataType.String}></IgrColumn>
+        </IgrColumnGroup>
+        <IgrColumnGroup header="Contact Information">
+            <IgrColumn sortable="true" resizable="true" field="Phone" dataType={GridColumnDataType.String}></IgrColumn>
+            <IgrColumn sortable="true" resizable="true" field="Fax" dataType={GridColumnDataType.String}></IgrColumn>
+        </IgrColumnGroup>
+    </IgrColumnGroup>
+</IgrHierarchicalGrid>
 ```
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -161,6 +232,18 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+```tsx
+<{ComponentSelector} height="600px" allowFiltering="true">
+    <IgrColumnGroup header="General Information">
+        <IgrColumn movable="true" sortable="true" resizable="true" field="CompanyName"></IgrColumn>
+        <IgrColumnGroup movable="true" header="Person Details">
+            <IgrColumn movable="true" pinned="false" sortable="true" resizable="true" field="ContactName"></IgrColumn>
+            <IgrColumn movable="true" sortable="true" resizable="true" field="ContactTitle"></IgrColumn>
+        </IgrColumnGroup>
+    </IgrColumnGroup>
+</{ComponentSelector}>
+```
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -207,14 +290,26 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
 ```
 <!-- end: WebComponents -->
 
+```tsx
+<{ComponentSelector} primaryKey="ID" foreignKey="ParentID" moving="true">
+    <IgrColumnGroup pinned="false" header="General Information">
+        <IgrColumn field="HireDate" sortable="true" resizable="true" dataType={GridColumnDataType.Date}></IgrColumn>
+        <IgrColumnGroup header="Person Details">
+            <IgrColumn field="ID" resizable="true" filterable="true" dataType={GridColumnDataType.Number}></IgrColumn>
+            <IgrColumn field="Title" sortable="true" resizable="true" dataType={GridColumnDataType.String}></IgrColumn>
+            <IgrColumn field="Age" sortable="true" resizable="true" dataType={GridColumnDataType.Number}></IgrColumn>
+        </IgrColumnGroup>
+    </IgrColumnGroup>
+</{ComponentSelector}>
+```
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```html
-<igx-hierarchical-grid [data]="localdata" displayDensity="compact" [allowFiltering]="true" [moving]="true">
+<igx-hierarchical-grid [data]="localdata" [allowFiltering]="true" [moving]="true">
     <igx-column field="CustomerID" sortable="true" resizable="true"></igx-column>
-    <igx-column-group pinned]="false" header="General Information">
+    <igx-column-group [pinned]="false" header="General Information">
         <igx-column field="CompanyName" sortable="true" resizable="true"></igx-column>
         <igx-column-group header="Person Details">
             <igx-column field="ContactName" sortable="true" resizable="true"></igx-column>
@@ -225,7 +320,44 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
 ```
 
 ```razor
-TO-DO H-GRID CODE SNIPPET
+<{ComponentSelector} Data="HierarchicalCustomers" Name="hierarchicalGrid" @ref="hierarchicalGrid" Id="hierarchicalGrid" PrimaryKey="ID" Moving="true" AllowFiltering="true">
+    <IgbColumn Field="CustomerID" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+    <IgbColumnGroup Header="General Information">
+        <IgbColumn Field="CompanyName" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+        <IgbColumnGroup Header="Person Details">
+            <IgbColumn Field="ContactName" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+            <IgbColumn Field="ContactTitle" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+        </IgbColumnGroup>
+    </IgbColumnGroup>
+</{ComponentSelector}>
+```
+
+<!-- WebComponents -->
+```html
+<igc-hierarchical-grid auto-generate="false" name="hierarchicalGrid" id="hierarchicalGrid" primary-key="ID" moving="true" allow-filtering="true">
+    <igc-column field="CustomerID" dataType="string" sortable="true" resizable="true"> </igc-column>
+    <igc-column-group header="General Information">
+        <igc-column field="CompanyName" dataType="string" sortable="true" resizable="true"></igc-column>
+        <igc-column-group header="Person Details">
+            <igc-column field="ContactName" dataType="string" sortable="true" resizable="true"></igc-column>
+            <igc-column field="ContactTitle" dataType="string" sortable="true" resizable="true"></igc-column>
+        </igc-column-group>
+    </igc-column-group>
+</igc-hierarchical-grid>
+```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrHierarchicalGrid autoGenerate="false" data={this.hierarchicalCustomers} ref={this.hierarchicalGridRef} id="hierarchicalGrid" primaryKey="ID" moving="true" allowFiltering="true">
+    <IgrColumn sortable="true" resizable="true" field="CustomerID" dataType={GridColumnDataType.String}></IgrColumn>
+    <IgrColumnGroup header="General Information">
+        <IgrColumn sortable="true" resizable="true" field="CompanyName" dataType={GridColumnDataType.String}></IgrColumn>
+        <IgrColumnGroup header="Person Details">
+            <IgrColumn sortable="true" resizable="true" field="ContactName" dataType={GridColumnDataType.String}></IgrColumn>
+            <IgrColumn sortable="true" resizable="true" field="ContactTitle" dataType={GridColumnDataType.String}></IgrColumn>
+        </IgrColumnGroup>
+    </IgrColumnGroup>
+</IgrHierarchicalGrid>
 ```
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -240,7 +372,7 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
 <!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" height="600px" [allowFiltering]="true">
-    <igx-column-group  [movable]="true" [pinned]="true" header="General Information">
+    <igx-column-group [movable]="true" [pinned]="true" header="General Information">
         <igx-column [movable]="true" sortable="true" resizable="true" field="CompanyName"></igx-column>
     </igx-column-group>
     <igx-column sortable="true" resizable="true" field="Phone"></igx-column>
@@ -273,6 +405,17 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+```tsx
+<{ComponentSelector} height="600px" allowFiltering="true">
+    <IgrColumnGroup movable="true" pinned="true" header="General Information">
+        <IgrColumn movable="true" sortable="true" resizable="true" field="CompanyName"></IgrColumn>
+    </IgrColumnGroup>
+    <IgrColumn sortable="true" resizable="true" field="Phone"></IgrColumn>
+    <IgrColumn sortable="true" resizable="true" field="Fax"></IgrColumn>
+    <IgrColumn sortable="true" resizable="true" field="PostalCode"></IgrColumn>
+</{ComponentSelector}>
+```
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -312,12 +455,23 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+```tsx
+<{ComponentSelector} primaryKey="ID" foreignKey="ParentID" moving="true">
+    <IgrColumnGroup header="Contact Information">
+        <IgrColumn field="Phone" movable="true" sortable="true" resizable="true" dataType={GridColumnDataType.String}></IgrColumn>
+    </IgrColumnGroup>
+    <IgrColumn field="Name" sortable="true" resizable="true" dataType={GridColumnDataType.String}></IgrColumn>
+    <IgrColumn field="Title" sortable="true" resizable="true" dataType={GridColumnDataType.String}></IgrColumn>
+    <IgrColumn field="Age" sortable="true" resizable="true" dataType={GridColumnDataType.Number}></IgrColumn>
+</{ComponentSelector}>
+```
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```html
-<igx-hierarchical-grid [data]="localdata" displayDensity="compact" [allowFiltering]="true" [moving]="true">
+<igx-hierarchical-grid [data]="localdata" [allowFiltering]="true" [moving]="true">
     <igx-column field="CustomerID" sortable="true" resizable="true"></igx-column>
     <igx-column-group [pinned]="false" header="General Information">
         <igx-column field="CompanyName" sortable="true" resizable="true"></igx-column>
@@ -330,7 +484,44 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
 ```
 
 ```razor
-TO-DO H-GRID CODE SNIPPET
+<{ComponentSelector} Data="HierarchicalCustomers" Name="hierarchicalGrid" @ref="hierarchicalGrid" Id="hierarchicalGrid" PrimaryKey="ID" Moving="true" AllowFiltering="true">
+    <IgbColumn Field="CustomerID" Sortable=true Resizable=true Movable=true DataType="GridColumnDataType.String"></IgbColumn>
+    <IgbColumnGroup Movable=true Pinned="true" Header="General Information">
+        <IgbColumn Field="CompanyName" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+        <IgbColumnGroup Movable=true Pinned="true" Header="General Information">
+            <IgbColumn Field="ContactName" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+            <IgbColumn Field="ContactTitle" Sortable=true Resizable=true DataType="GridColumnDataType.String"></IgbColumn>
+        </IgbColumnGroup>
+    </IgbColumnGroup>
+</{ComponentSelector}>
+```
+
+<!-- WebComponents -->
+```html
+<igc-hierarchical-grid auto-generate="false" name="hierarchicalGrid" id="hierarchicalGrid" primary-key="ID" moving="true" allow-filtering="true">
+    <igc-column field="CustomerID" dataType="string" movable="true" pinned="true" sortable="true" resizable="true"> </igc-column>
+    <igc-column-group movable="true" pinned="true" header="General Information">
+        <igc-column field="CompanyName" dataType="string" sortable="true" resizable="true"></igc-column>
+        <igc-column-group header="Person Details">
+            <igc-column field="ContactName" dataType="string" sortable="true" resizable="true"></igc-column>
+            <igc-column field="ContactTitle" dataType="string" sortable="true" resizable="true"></igc-column>
+        </igc-column-group>
+    </igc-column-group>
+</igc-hierarchical-grid>
+```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrHierarchicalGrid autoGenerate="false" data={this.hierarchicalCustomers} ref={this.hierarchicalGridRef} id="hierarchicalGrid" primaryKey="ID" moving="true" allowFiltering="true">
+    <IgrColumn sortable="true" resizable="true" movable="true" pinned="true" field="CustomerID" dataType={GridColumnDataType.String}></IgrColumn>
+    <IgrColumnGroup movable="true" pinned="true" header="General Information">
+        <IgrColumn sortable="true" resizable="true" field="CompanyName" dataType={GridColumnDataType.String}></IgrColumn>
+        <IgrColumnGroup header="Person Details">
+            <IgrColumn sortable="true" resizable="true" field="ContactName" dataType={GridColumnDataType.String}></IgrColumn>
+            <IgrColumn sortable="true" resizable="true" field="ContactTitle" dataType={GridColumnDataType.String}></IgrColumn>
+        </IgrColumnGroup>
+    </IgrColumnGroup>
+</IgrHierarchicalGrid>
 ```
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -349,29 +540,7 @@ The `ng-template` is provided with the column group object as a context.
 </igx-column-group>
 ```
 
-```html
-<igc-column-group id="General" header="General Information">
-</igc-column-group>
-```
-
-```ts
-constructor() {
-    var general = this.general = document.getElementById('General') as IgcColumnComponent;
-
-    this._bind = () => {
-        general.headerTemplate = this.generalHeaderTemplate;
-    }
-    this._bind();
-}
-
-public generalHeaderTemplate = (ctx: IgcCellTemplateContext) => {
-    return html`
-        ${this.toUppercase(ctx.cell.column.header)}
-    `;
-}
-```
-
-If you want to re-use a single template for several column groups, you could set the `headerTemplate` property of the column group like this:
+If you want to re-use a single template for several column groups, you could set the `HeaderTemplate` property of the column group like this:
 
 ```html
 <ng-template #columnGroupHeaderTemplate let-columnGroup>
@@ -383,46 +552,11 @@ If you want to re-use a single template for several column groups, you could set
 <igx-column-group header="Address Information" [headerTemplate]="columnGroupHeaderTemplate">
 </igx-column-group>
 ```
-
-```html
-<igc-column-group id="General" header="General Information">
-</igc-column-group>
-<igc-column-group id="Address" header="Address Information">
-</igc-column-group>
-```
-
-```ts
-constructor() {
-    var general = this.general = document.getElementById('General') as IgcColumnComponent;
-    var addresss = this.address = document.getElementById('Address') as IgcColumnComponent;
-
-    this._bind = () => {
-        general.headerTemplate = this.columnGroupHeaderTemplate;
-        addresss.headerTemplate = this.columnGroupHeaderTemplate;
-    }
-    this._bind();
-}
-
-public columnGroupHeaderTemplate = (ctx: IgcCellTemplateContext) => {
-    return html`
-        ${this.toUppercase(ctx.cell.column.header)}
-    `;
-}
-```
 <!-- end: Angular -->
 
 <!-- Blazor -->
-
 Each of the column groups of the grid can be templated separately. The column group expects `RenderFragment` for the `HeaderTemplate` property.
 The expression is provided with the column group object as a context.
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-Each of the column groups of the grid can be templated separately. The following code snippet demonstrates how to use the `HeaderTemplate` of a column group:
-
-<!-- end: WebComponents -->
 
 ```razor
 <IgbColumnGroup Header="Address Information" HeaderTemplate="Template">
@@ -436,31 +570,83 @@ Each of the column groups of the grid can be templated separately. The following
 }
 ```
 
+If you want to re-use a single template for several column groups, you could set the `HeaderTemplate` property of the column group like this:
+
+```razor
+<IgbColumnGroup Header="General Information" HeaderTemplate="Template">
+</IgbColumnGroup>
+<IgbColumnGroup Header="Address Information" HeaderTemplate="Template">
+</IgbColumnGroup>
+
+@code {
+    public RenderFragment<IgbColumnTemplateContext> Template = (ctx) => {
+        string value = ctx.Column.Header.ToUpper();
+        return @<span>@value</span>;
+    };
+}
+```
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+Each of the column groups of the grid can be templated separately. The following code snippet demonstrates how to use the `HeaderTemplate` of a column group:
+
 ```html
-<igc-column-group id="addressInfoGroup" header="Address Information"></igc-column-group>
+<igc-column-group id="addressInfo" header="Address Information">
+</igc-column-group>
 ```
 
-```typescript
+```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-    var columnGroup = this.columnGroup = document.getElementById('addressInfoGroup') as IgcColumnGroupComponent;
-
-    this._bind = () => {
-        grid.data = this.customersData
-        columnGroup.headerTemplate = this.headerTemplate;
-    }
-    this._bind();
+    var addresss = this.addresss = document.getElementById('addressInfo') as IgcColumnGroupComponent;
+    addresss.headerTemplate = this.columnGroupHeaderTemplate;
 }
 
-public headerTemplate = (ctx: IgcColumnTemplateContext) => {
-    const column = (ctx as any).column;
-    return html`<div>
-             <span style="float:left">${column.header.toUpperCase()}</span>
-            </div>`;
-};
+public columnGroupHeaderTemplate = (ctx: IgcColumnTemplateContext) => {
+    return html`
+        ${ctx.column.header.toUpperCase()}
+    `;
+}
 ```
 
-<!-- Angular -->
+If you want to re-use a single template for several column groups, you could set the `HeaderTemplate` property of the column group like this:
+
+```html
+<igc-column-group id="generalInfo" header="General Information">
+</igc-column-group>
+<igc-column-group id="addressInfo" header="Address Information">
+</igc-column-group>
+```
+
+```ts
+constructor() {
+    var general = this.general = document.getElementById('generalInfo') as IgcColumnGroupComponent;
+    var addresss = this.address = document.getElementById('addressInfo') as IgcColumnGroupComponent;
+    general.headerTemplate = this.columnGroupHeaderTemplate;
+    addresss.headerTemplate = this.columnGroupHeaderTemplate;
+}
+
+public columnGroupHeaderTemplate = (ctx: IgcColumnTemplateContext) => {
+    return html`
+        ${ctx.column.header.toUpperCase()}
+    `;
+}
+```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrColumnGroup header="Contact Information" headerTemplate={groupHeaderTemplate}></IgrColumnGroup>
+```
+
+```tsx
+function groupHeaderTemplate(e: { dataContext: IgrColumnTemplateContext }) {
+    const column = e.dataContext.column as IgrColumnGroup;
+    return (
+      <div>
+        <span style={{ float: "left" }}>{column.header.toUpperCase()}</span>
+      </div>
+    );
+}
+```
 
 > [!Note]
 > If a header is re-templated and the corresponding column group is movable, you have to set the **draggable** attribute to **false** on the templated elements, so that you can handle any of the events that are applied!
@@ -486,17 +672,29 @@ public headerTemplate = (ctx: IgcColumnTemplateContext) => {
 ```
 
 ```ts
-public columnHeaderTemplate = (ctx: IgcCellTemplateContext) => {
+public columnHeaderTemplate = (ctx: IgcColumnTemplateContext) => {
     return html`
-        <igc-icon draggable="false" click="${this.onClick()}"></igc-icon>
+        <igc-icon draggable="false" @click="${() => this.onClick()}"></igc-icon>
     `;
+}
+```
+
+```tsx
+function columnHeaderTemplate(e: { dataContext: IgrColumnTemplateContext }) {
+    const column = e.dataContext.column as IgrColumnGroup;
+    return (
+      <span onClick={onClick}>
+        <IgrIcon data-draggable="false"></IgrIcon>
+      </span>
+    );
 }
 ```
 
 The following sample demonstrates how to implement collapsible column groups using header templates.
 
-`sample="/{ComponentSample}/multi-column-header-template", height="550", alt="{Platform} {ComponentTitle} Multi Column Header Template Sample"`
+`sample="/{ComponentSample}/multi-column-headers-template", height="550", alt="{Platform} {ComponentTitle} Multi Column Header Template Sample"`
 
+<!-- Angular -->
 ## Styling
 
 To get started with styling the sorting behavior, we need to import the `index` file, where all the theme functions and component mixins live:
@@ -617,6 +815,42 @@ import 'core-js/es7/array';
 
 <!-- end: Angular -->
 
+<!-- WebComponents, Blazor, React -->
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming-grid.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```html
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```razor
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
+```
+
+Then set the related CSS properties to this class:
+
+```css
+.grid {
+    --ig-grid-header-background: #e0f3ff;
+    --ig-grid-header-text-color: #e41c77;
+    --ig-grid-header-border-width: 1px;
+    --ig-grid-header-border-style: solid;
+    --ig-grid-header-border-color: rgba(0, 0, 0, 0.08);
+}
+```
+### Demo
+
+`sample="/{ComponentSample}/multi-column-headers-styling", height="500", alt="{Platform} {ComponentTitle} Multi Column Headers Styling Sample"`
+
+
+<!-- end: WebComponents, Blazor, React -->
+
 ## API References
 
 * `{ComponentName}`
@@ -624,6 +858,7 @@ import 'core-js/es7/array';
 
 ## Additional Resources
 
+<!-- ComponentStart:  Grid -->
 * [Grid Overview](../data-grid.md)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
@@ -633,6 +868,7 @@ import 'core-js/es7/array';
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
 * [Group by](groupby.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

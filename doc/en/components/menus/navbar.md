@@ -16,8 +16,6 @@ The following example represents a `Navbar` with icons and text header:
 
 `sample="/menus/nav-bar/overview", height="100", alt="{Platform} Navbar Overview Example"`
 
-
-
 ## Usage
 
 <!-- WebComponents -->
@@ -42,6 +40,8 @@ import { defineComponents, IgcNavbarComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcNavbarComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 <!-- Blazor -->
 

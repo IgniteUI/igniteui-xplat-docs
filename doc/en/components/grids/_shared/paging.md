@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} Paging - Infragistics
+title: {Platform} {ComponentTitle} Paging - {ProductName}
 _description: Configure {Platform} pagination and create custom pages in the {Platform} table by Ignite UI, get data for the requested pages with variety of events.
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Paging, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
@@ -8,7 +8,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Pagination Overview
 
-Pagination is used to split a large set of data into a sequence of pages that have similar content. {Platform} table pagination improves user experience and data interaction. `{ComponentName}` pagination is configurable via a separate component projected in the grid tree by defining a `Paginator` tag, similar to adding of a column. As in any {Platform} table, the pagination in the `{ComponentName}` supports template for custom pages.
+The {ProductName} Pagination feature in {Platform} {ComponentTitle} is used to split a large set of data into a sequence of pages that have similar content. React grid pagination improves user experience and data interaction. `{ComponentName}` pagination is configurable via a separate component projected in the grid tree by defining a `Paginator`  tag, similar to adding of a column. As in any {Platform} table, the pagination in the {Platform} {ComponentTitle} supports template for custom pages.
 
 ## {Platform} {ComponentTitle} Pagination Example
 
@@ -24,9 +24,15 @@ The following example represents `{ComponentName}` pagination and exposes the op
 
 <!-- end: Angular -->
 
+```css
+.gridSize {
+    --ig-size: var(--ig-size-small);
+}
+```
+
 <!-- Angular -->
 ```html
-<{ComponentSelector} #grid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
+<{ComponentSelector} #grid class="gridSize" [data]="data" [height]="'500px'" [width]="'100%'">
     <igx-paginator [perPage]="10">
     </igx-paginator>
 </{ComponentSelector}>
@@ -34,18 +40,27 @@ The following example represents `{ComponentName}` pagination and exposes the op
 <!-- end: Angular -->
 
 ```razor
-<{ComponentSelector} @ref=grid Width="100%" Height="500px" Data=marketData DisplayDensity="DisplayDensity.Cosy">
+<{ComponentSelector} @ref=grid Class="gridSize" Width="100%" Height="500px" Data=Data>
     <IgbPaginator PerPage="10"></IgbPaginator>
 </{ComponentSelector}>
 ```
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid" height="500px" width="100%" display-density="Cosy">
+<{ComponentSelector} id="grid" class="gridSize" height="500px" width="100%" >
     <igc-paginator per-page="10">
     </igc-paginator>
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} className="gridSize" height="500px" width="100%">
+    <IgrPaginator key="paginator" perPage="10">
+    </IgrPaginator>
+</{ComponentSelector}>
+```
+<!-- end: React -->
 
 <!-- Angular -->
 ```html
@@ -72,7 +87,7 @@ The following example represents `{ComponentName}` pagination and exposes the op
 
 Group rows participate in the paging process along with data rows. They count towards the page size for each page. Collapsed rows are not included in the paging process.
 
-Integration between Paging and Group By is described in the [Group By](groupby.md#grid-group-by-with-paging) topic.
+Integration between Paging and Group By is described in the [Group By](groupby.md#{PlatformLower}-grid-group-by-with-paging) topic.
 
 <!-- ComponentEnd: Grid -->
 
@@ -84,23 +99,24 @@ The `Paginator` component is used along with the `{ComponentName}` component in 
 
 <!-- Angular -->
 ```html
-<{ComponentSelector} #grid [data]="data">
+<{ComponentSelector} #grid [data]="data" className="gridSize">
     <igx-paginator #paginator [(page)]="grid.page" [totalRecords]="grid.totalRecords" [(perPage)]="10"
-            [selectOptions]="selectOptions" [displayDensity]="grid.displayDensity">
+            [selectOptions]="selectOptions">
     </igx-paginator>
 </{ComponentSelector}>
 ```
 <!-- end: Angular -->
 
 ```razor
-<{ComponentSelector} @ref=grid Data=marketData DisplayDensity="DisplayDensity.Compact">
-    <IgbPaginator Page="grid.Page" TotalRecords="grid.TotalRecords" PerPage="10" DisplayDensity="grid.DisplayDensity">
+<{ComponentSelector} @ref=grid Data=Data className="gridSize">
+    <IgbPaginator Page="grid.Page" TotalRecords="grid.TotalRecords" PerPage="10">
     </IgbPaginator>
 </{ComponentSelector}>
 ```
 
+<!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid">
+<{ComponentSelector} id="grid" className="gridSize">
     <igc-paginator id="paginator" per-page="10">
     </igc-paginator>
 </{ComponentSelector}>
@@ -108,18 +124,24 @@ The `Paginator` component is used along with the `{ComponentName}` component in 
 
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var grid = this.grid = document.getElementById('grid') as {ComponentName};
     var paginator = this.paginator = document.getElementById('paginator') as IgcPaginatorComponent;
-
-    this._bind = () => {
-        grid.data = this.data;
-        paginator.page = grid.page;
-        paginator.totalRecords = grid.totalRecords;
-        paginator.selectOption = selectOptions;
-        paginator.displayDensity = grid.displayDensity;
-    }
-    this._bind();
+    const selectOptions = [5, 15, 20, 50];
+    grid.data = this.data;
+    paginator.page = grid.page;
+    paginator.totalRecords = grid.totalRecords;
+    paginator.selectOptions = selectOptions;
 }
+```
+<!-- end: WebComponents -->
+
+```tsx
+const selectOptions = [5, 15, 20, 50];
+
+<{ComponentSelector} className="gridSize">
+    <IgrPaginator key="paginator" perPage={10} page={1} selectOptions={selectOptions}>
+    </IgrPaginator>
+</{ComponentSelector}>
 ```
 
 <!-- ComponentEnd: Grid, TreeGrid -->
@@ -309,7 +331,7 @@ $dark-paginator-schema: extend($_dark-pagination,
                color: ("primary", 200)
             ),
             border-color:(
-               color:( "primary", 500)
+               color: ("primary", 500)
             )
         )
 );
@@ -317,22 +339,22 @@ $dark-paginator-schema: extend($_dark-pagination,
 $dark-button-schema: extend($_dark-button,
         (
             icon-color:(
-               color:("secondary", 700)
+               color: ("secondary", 700)
             ),
             icon-hover-color:(
-               color:("primary", 500)
+               color: ("primary", 500)
             ),
             icon-hover-background:(
-               color:("secondary", 500)
+               color: ("secondary", 500)
             ),
             icon-focus-color:(
-               color:("primary", 500)
+               color: ("primary", 500)
             ),
             icon-focus-background:(
-               color:("secondary", 500)
+               color: ("secondary", 500)
             ),
             disabled-color:(
-               color:("primary", 700)
+               color: ("primary", 700)
             )
         )
 );
@@ -376,9 +398,11 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ## API References
 * `{ComponentName}`
-* `GridPaginator`
+* `Paginator`
 
 ## Additional Resources
+
+<!-- ComponentStart:  Grid, TreeGrid -->
 
 <!-- * [Paginator](../paginator.md) -->
 * [Virtualization and Performance](virtualization.md)
@@ -389,6 +413,8 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
+
+<!-- ComponentEnd:  Grid, TreeGrid -->
 
 Our community is active and always welcoming to new ideas.
 

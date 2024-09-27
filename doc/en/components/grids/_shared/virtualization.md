@@ -2,7 +2,6 @@
 title: {Platform} {ComponentTitle} Virtualization and Performance - {ProductName}
 _description: The {ProductName} Virtualization is the core mechanic behind the speed & performance of the grid when handling large data sets. Try for free!
 _keywords: {Platform} {ComponentTitle}, {ComponentTitle} performance, data table virtualization, {ProductName}
-_canonicalLink: grid/virtualization
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
@@ -12,11 +11,13 @@ namespace: Infragistics.Controls
 
 In {ProductName}, the `{ComponentName}` control virtualizes its content both vertically and horizontally.
 
+<!-- ComponentStart: Grid, HierarchicalGrid -->
+
 ## {Platform} {ComponentTitle} Virtualization and Performance Example
 
 `sample="/{ComponentSample}/data-performance-virtualization", height="550", alt="{Platform} {ComponentTitle} Virtualization and Performance Example"`
 
-
+<!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 ## Enabling Virtualization
 
@@ -57,7 +58,6 @@ Without information about the sizes of the container and the items before render
 * `Column`
 
 ## Additional Resources
-
 
 * [Paging](paging.md)
 * [Filtering](filtering.md)

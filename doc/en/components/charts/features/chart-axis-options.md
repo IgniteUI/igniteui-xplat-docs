@@ -31,7 +31,7 @@ The {Platform} Charts allows you full control over configuring, formatting, and 
 
 <div class="divider--half"></div>
 
-## Axis Labels Management
+## Axis Labels Management & Formatting
 
 The axes of the chart have the ability to perform an enhanced calculation regarding the amount of space available to the labels of the owning axis. This enhanced calculation allows the axis to optimize the amount of space given to it in order to display more labels for the given axis.
 
@@ -40,6 +40,14 @@ This enhanced calculation is something that you need to opt-in to, which you can
 The chart also has the ability to consider auto-rotation of the labels if they will not fit in the allotted space as well as the ability to apply an automatic margin to the plot area to ensure the labels can fit. This is something that can be opted into initially by first setting the `AutoMarginAndAngleUpdateMode` property on the chart to either `SizeChanging` or `SizeChangingAndZoom`. This will tell the chart when to re-evaluate the auto margin and angle applied to the labels, if desired.
 
 After setting the `AutoMarginAndAngleUpdateMode`, you can set the `ShouldAutoExpandMarginForInitialLabels` property to true to opt into the automatic margin or set the `ShouldConsiderAutoRotationForInitialLabels` property to true for the auto-rotation. You can also further customize the automatic margin that is applied by setting the `AutoExpandMarginExtraPadding` and `AutoExpandMarginMaximumValue` to provide extra space or a maximum possible margin, respectively.
+
+Custom label formats such as `NumberFormatSpecifier` and `DateTimeFormatSpecifier` can be added to each axis via the `XAxisLabelFormatSpecifier` and `YAxisLabelFormatSpecifier` collections. Commonly used for applying Intl.NumberFormat and Intl.DateTimeFormat language sensitive number, date and time formatting. In order for a custom format to be applied to the labels, the `YAxisLabelFormat` or `XAxisLabelFormat` need to be set to data item's property name on the `CategoryChart`, eg. `{Date}`. For the `FinancialChart` the number is the context because it uses a numeric axis, therefore this needs to be set to `{0}`.
+
+The following example formats the yAxis with a `NumberFormatSpecifier` to reprerent $USD prices for top box office movies in the United States.
+
+`sample="/charts/category-chart/format-specifiers", height="450", alt="{Platform} Format Specifiers for Axis Labels"`
+
+<div class="divider--half"></div>
 
 ## Axis Range Example
 

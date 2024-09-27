@@ -32,7 +32,7 @@ _language: ja
 
 <div class="divider--half"></div>
 
-## 軸ラベルの管理
+## 軸ラベルの管理と書式設定
 
 チャートの軸には、所有する軸のラベルに使用可能なスペースの量に関する拡張計算を実行する機能があります。この拡張された計算により、軸は、指定された軸に対してより多くのラベルを表示するために、指定されたスペースの量を最適化できます。
 
@@ -41,6 +41,14 @@ _language: ja
 チャートには、ラベルが割り当てられたスペースに収まらない場合にラベルの自動回転を考慮する機能と、ラベルが収まるようにプロット領域に自動マージンを適用する機能もあります。これは、最初にチャートの `AutoMarginAndAngleUpdateMode` プロパティを `SizeChanging` または `SizeChangingAndZoom` に設定することで最初にオプトインできるものです。これにより、必要に応じて、ラベルに適用された自動マージンと角度をいつ再評価するかがチャートに通知されます。
 
 `AutoMarginAndAngleUpdateMode` を設定した後、`ShouldAutoExpandMarginForInitialLabels` プロパティを true に設定して自動マージンをオプトインするか `ShouldConsiderAutoRotationForInitialLabels` プロパティを true に設定して自動回転を行うことができます。`AutoExpandMarginExtraPadding` と `AutoExpandMarginMaximumValue` を設して、それぞれ追加のスペースまたは可能な最大マージンを提供することにより、適用される自動マージンをさらにカスタマイズすることもできます。
+
+`NumberFormatSpecifier` や `DateTimeFormatSpecifier` などのカスタム ラベル書式は、`XAxisLabelFormatSpecifier` および `YAxisLabelFormatSpecifier` コレクションを介して各軸に追加できます。一般に、Intl.NumberFormat および Intl.DateTimeFormat の言語に依存した数値、日付、時刻の書式設定を適用するために使用されます。ラベルにカスタム書式を適用するには、`YAxisLabelFormat` または `XAxisLabelFormat` を `CategoryChart` のデータ項目のプロパティ名 (例: `{Date}`) に設定する必要があります。`FinancialChart` の場合、数値軸を使用するため、数値がコンテキストとなり、これを `{0}` に設定する必要があります。
+
+次の例では、yAxis を `NumberFormatSpecifier` でフォーマットして、米国のトップ興行収入映画の $USD 価格を表します。
+
+`sample="/charts/category-chart/format-specifiers", height="450", alt="軸ラベルの {Platform} 書式指定子"`
+
+<div class="divider--half"></div>
 
 ## 軸範囲の例
 

@@ -53,8 +53,6 @@ _language: ja
 
 `sample="/charts/data-chart/tooltip-template", height="500", alt="{Platform} ツールチップ テンプレート"`
 
-
-
 <div class="divider--half"></div>
 
 ## その他のリソース
@@ -65,13 +63,6 @@ _language: ja
 - [チャート マーカー](chart-markers.md)
 
 ## API リファレンス
-
-以下は、上記のセクションで説明した API メンバーのリストです。
-
-- `ToolTipType`
-- `CategoryChart`
-- `XamDataChart`
-
 
 `CategoryChart` コンポーネントと `FinancialChart` コンポーネントは、次の API プロパティを共有します:
 

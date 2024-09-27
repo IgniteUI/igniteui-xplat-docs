@@ -32,6 +32,8 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcRippleComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -71,18 +73,18 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbRippleModule));
 
 `Ripple` の使用を開始する最も簡単な方法は次のとおりです:
 
-```tsx
-<IgrButton>
-  <IgrRipple></IgrRipple>
-  <span>Ripple Button</span>
-</IgrButton>
-```
-
 ```html
 <igc-button>
   <igc-ripple></igc-ripple>
   Ripple Button
 </igc-button>
+```
+
+```tsx
+<IgrButton>
+  <IgrRipple></IgrRipple>
+  <span>Ripple Button</span>
+</IgrButton>
 ```
 
 ```razor

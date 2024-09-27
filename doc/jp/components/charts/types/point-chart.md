@@ -55,9 +55,9 @@ _language: ja
 次のトピックに従って、`CategoryChart` コントロールの代わりに `XamDataChart` コントロールを使用して、より高度なタイプの {Platform} ポイント チャートを作成できます。
 
 - [散布バブル チャート](bubble-chart.md)
-- [散布マーカー チャート](scatter-chart.md#{Platform}-散布マーカー-チャート)
-- [散布高密度チャート](scatter-chart.md#{Platform}-散布高密度チャート)
-- [極座標型マーカー チャート](polar-chart.md#{Platform}-極座標型マーカー-チャート)
+- [散布マーカー チャート](scatter-chart.md#{PlatformLower}-散布マーカー-チャート)
+- [散布高密度チャート](scatter-chart.md#{PlatformLower}-散布高密度チャート)
+- [極座標型マーカー チャート](polar-chart.md#{PlatformLower}-極座標型マーカー-チャート)
 
 ## その他のリソース
 

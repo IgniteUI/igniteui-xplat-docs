@@ -72,6 +72,8 @@ import { defineComponents, IgcSnackbarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcSnackbarComponent);
 ```
 
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 The simplest way to display the snackbar component is to use its `Show` method and call it on a button click.
 
 ```html
@@ -94,12 +96,12 @@ The simplest way to display the snackbar component is to use its `Show` method a
     <span>Snackbar Message</span>
 </IgrSnackbar>
 
-public onSnackbarRef(snackbar: IgrSnackbar){
+public onSnackbarRef(snackbar: IgrSnackbar) {
     if (!snackbar) { return; }
     this.snackbarRef = snackbar;
 }
 public onShowButtonClicked() {
-    if(this.snackbarRef){
+    if (this.snackbarRef) {
         this.snackbarRef.show();
     }
 }

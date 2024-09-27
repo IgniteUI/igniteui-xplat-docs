@@ -32,7 +32,8 @@ defineComponents(IgcComboComponent, IgcSwitchComponent);
 ```razor
 // in Program.cs file
 
-builder.Services.AddIgniteUIBlazor(typeof(IgbComboModule, IgbSwitchModule));
+builder.Services.AddIgniteUIBlazor(typeof(IgbComboModule));
+builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 ```
 
 また、追加の CSS ファイルをリンクして、スタイルを `Switch` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
@@ -43,7 +44,37 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbComboModule, IgbSwitchModule));
 
 <!-- end: Blazor -->
 
-次に、スイッチを切り替えてコンボ機能を制御できるように、すべてのスイッチ コンポーネントにイベント リスナーを追加します。
+<!-- React -->
+
+```tsx
+import { IgrComboModule, IgrCombo, IgrSwitchModule, IgrSwitch  } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrComboModule.register();
+IgrSwitchModule.register();
+```
+
+<!-- end: React -->
+
+次に、スイッチを切り替えてコンボ機能を制御できるように、すべてのスイッチ コンポーネントにイベント ハンドラーを追加します。
+
+```tsx
+const comboRef = useRef<IgrCombo>(null);
+const switchCaseSensitiveRef = useRef<IgrSwitch>(null);
+
+const disableFiltering = (switchComponent: IgrSwitch) => {
+    comboRef.current.disableFiltering =
+    switchCaseSensitiveRef.current.disabled = switchComponent.checked;
+};
+
+const showCaseSensitiveIcon = (switchComponent: IgrSwitch) => {
+    comboRef.current.caseSensitiveIcon = switchComponent.checked;
+};
+
+const disableCombo = (switchComponent: IgrSwitch) => {
+    comboRef.current.disabled = switchComponent.checked;
+};
+```
 
 ```ts
 let combo = document.getElementById('combo') as IgcComboComponent<City>;
@@ -65,6 +96,46 @@ switchDisable.addEventListener("igcChange", () => {
 });
 ```
 
+```razor
+<IgbCombo 
+    Label="Cities" 
+    Placeholder="Pick a city" 
+    Data="Data" 
+    ValueKey="Id" 
+    DisplayKey="Name"
+    DisableFiltering="@DisableFiltering"
+    CaseSensitiveIcon="@CaseSensitiveIcon"
+    GroupKey="@Group"
+    Disabled="@Disabled">
+</IgbCombo>
+
+<IgbSwitch Change="@OnDisableFilteringClick">Disable Filtering</IgbSwitch>
+<IgbSwitch Change="@OnCaseSensitiveClick" Disabled="@DisableFiltering">Show Case-sensitive Icon</IgbSwitch>
+<IgbSwitch Change="@OnGroupClick">Enable Grouping</IgbSwitch>
+<IgbSwitch Change="@OnDisableClick">Disable Combo</IgbSwitch>
+
+@code {
+    private bool DisableFiltering = false;
+    private bool CaseSensitiveIcon = false;
+    private bool Disabled = false;
+
+    public void OnDisableFilteringClick(IgbComponentBoolValueChangedEventArgs e) {
+        IgbSwitch sw = e.Parent as IgbSwitch;
+        this.DisableFiltering = sw.Checked;
+    }
+
+    public void OnCaseSensitiveClick(IgbComponentBoolValueChangedEventArgs e) {
+        IgbSwitch sw = e.Parent as IgbSwitch;
+        this.CaseSensitiveIcon = sw.Checked;
+    }
+
+    public void OnDisableClick(IgbComponentBoolValueChangedEventArgs e) {
+        IgbSwitch sw = e.Parent as IgbSwitch;
+        this.Disabled = sw.Checked;
+    }
+}
+```
+
 グループ化は、`GroupKey` プロパティを対応するデータ ソース フィールドに設定することで有効/無効になることに注意してください。
 
 ```ts
@@ -73,6 +144,23 @@ let switchGroup = document.getElementById('grouping') as IgcSwitchComponent;
 switchGroup.addEventListener("igcChange", () => {
     this.combo.groupKey = switchGroup.checked ? "country" : undefined;
 });
+```
+
+```razor
+@code {
+    private string Group = "";
+
+    public void OnGroupClick(IgbComponentBoolValueChangedEventArgs e) {
+        IgbSwitch sw = e.Parent as IgbSwitch;
+        this.Group = sw.Checked ? "Country" : "";
+    }
+}
+```
+
+```tsx
+const enableGrouping = (switchComponent: IgrSwitch) => {
+    comboRef.current.groupKey = switchComponent.checked ? "country" : undefined;
+};
 ```
 
 ## 機能
@@ -91,12 +179,17 @@ switchGroup.addEventListener("igcChange", () => {
 <IgbCombo DisableFiltering="true" CaseSensitiveIcon="true" />
 ```
 
+```tsx
+<IgrCombo disableFiltering="true" caseSensitiveIcon="true"></IgrCombo>
+```
+
 #### フィルタリング オプション
 
 {ProductName} `ComboBox` コンポーネントは、`FilterKey` オプションと `CaseSensitive` オプションの両方の構成を渡すことができるフィルター プロパティをもう 1 つ公開しています。`FilterKey` は、オプションのリストをフィルタリングするためにどのデータ ソース フィールドを使用する必要があるかを示します。`CaseSensitive` オプションは、フィルタリングで大文字と小文字を区別するかどうかを示します。
 
 次のコード スニペットは、名前ではなく国でデータ ソースから都市をフィルター処理する方法を示しています。また、デフォルトで大文字と小文字を区別するフィルタリングを行います。
 
+<!-- WebComponents -->
 ```ts
 const options = {
     filterKey: 'country',
@@ -105,6 +198,18 @@ const options = {
 
 combo.filteringOptions = options;
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+const options = {
+    filterKey: 'country',
+    caseSensitive: true
+};
+
+comboRef.current.filteringOptions = options;
+```
+<!-- end: React -->
 
 ### グループ化
 
@@ -116,6 +221,10 @@ combo.filteringOptions = options;
 
 ```razor
 <IgbCombo GroupKey="region" />
+```
+
+```tsx
+<IgrCombo groupKey="region" />
 ```
 
 > [!Note]
@@ -133,6 +242,10 @@ combo.filteringOptions = options;
 <IgbCombo GroupSorting="desc" />
 ```
 
+```tsx
+<IgrCombo groupSorting="desc" />
+```
+
 ### ラベル
 
 `Combo` ラベルは、`Label` プロパティを使用して簡単に設定できます。
@@ -143,6 +256,10 @@ combo.filteringOptions = options;
 
 ```razor
 <IgbCombo Label="Cities" />
+```
+
+```tsx
+<IgrCombo label="Cities" />
 ```
 
 ### プレースホルダー
@@ -157,6 +274,10 @@ combo.filteringOptions = options;
 <IgbCombo Placeholder="Pick a city" PlaceholderSearch="Search for a city" />
 ```
 
+```tsx
+<IgrCombo placeholder="Pick a city" placeholderSearch="Search for a city" />
+```
+
 ### オートフォーカス
 
 コンボボックスをページの読み込みに自動的にフォーカスさせたい場合は、次のコードを使用できます。
@@ -167,6 +288,10 @@ combo.filteringOptions = options;
 
 ```razor
 <IgbCombo Autofocus="true" />
+```
+
+```tsx
+<IgrCombo autofocus="true" />
 ```
 
 ### 検索入力のフォーカス
@@ -181,6 +306,10 @@ combo.filteringOptions = options;
 <IgbCombo AutofocusList="true" />
 ```
 
+```tsx
+<IgrCombo autofocusList="true" />
+```
+
 ### 必須
 
 required プロパティを設定することで、コンボボックスを必須としてマークできます。
@@ -191,6 +320,10 @@ required プロパティを設定することで、コンボボックスを必�
 
 ```razor
 <IgbCombo Required="true" />
+```
+
+```tsx
+<IgrCombo required="true" />
 ```
 
 ### コンボボックスを無効にする
@@ -205,13 +338,14 @@ required プロパティを設定することで、コンボボックスを必�
 <IgbCombo Disabled="true" />
 ```
 
+```tsx
+<IgrCombo disabled="true" />
+```
+
 <!-- WebComponents -->
 ## API リファレンス
 
 * `Combo`
-* `ComboItem`
-* `ComboHeader`
-* `ComboList`
 
 <!-- end: WebComponents -->
 ## その他のリソース

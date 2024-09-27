@@ -1,6 +1,6 @@
 ---
 title: {Platform} ブレット グラフ | データ可視化ツール | インフラジスティックス
-_description: インフラジスティックスの {Platform} ブレット グラフ コントロールを使用すると、範囲を表示し、複数の測定値を比較するダッシュボードを作成できます。インフラジスティックス データ視覚化ツールを是非お試しください!
+_description: インフラジスティックスの {Platform} ブレット グラフ コントロールを使用すると、範囲を表示し、複数の測定値を比較するダッシュボードを作成できます。インフラジスティックスのデータ視覚化ツールを是非お試しください!
 _keywords: {Platform} Bullet Graph, animation, labels, needle, scales, ranges, tick marks, Infragistics, ブレット グラフ, インフラジスティックス, {Platform} ブレット グラフ, アニメーション, ラベル, ニードル, スケール, 範囲, 目盛, インフラジスティックス
 mentionedTypes: ['XamBulletGraph']
 namespace: Infragistics.Controls.Gauges
@@ -90,8 +90,8 @@ ModuleManager.register(
                    width="300"
                    minimumValue="5"
                    maximumValue="55"
-                   value = "35"
-                   targetValue = "43">
+                   value="35"
+                   targetValue="43">
         <igx-linear-graph-range startValue="0"
                                 endValue="15"
                                 brush="#828181">
@@ -110,10 +110,10 @@ ModuleManager.register(
 ```tsx
  <IgrBulletGraph height="100"
                    width="300"
-                   minimumValue= {5}
-                   maximumValue= {55}
-                   value = {35}
-                   targetValue = {43}>
+                   minimumValue={5}
+                   maximumValue={55}
+                   value={35}
+                   targetValue={43}>
         <IgrLinearGraphRange startValue={0}
                                 endValue={15}
                                 brush="#828181"/>
@@ -132,7 +132,7 @@ ModuleManager.register(
     minimum-value="5"
     maximum-value="55"
     value="35"
-    target-value = "43">
+    target-value="43">
     <igc-linear-graph-range
       start-value="0"
       end-value="15"
@@ -256,11 +256,85 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-`sample="/gauges/bullet-graph/measures", height="125", alt="{Platform} bullet graph measures"`
+`sample="/gauges/bullet-graph/measures", height="125", alt="{Platform} ブレット グラフ メジャー"`
 
+## ハイライト値
+
+バレット グラフのパフォーマンス値をさらに変更して、進捗状況をハイライト値として表示することもできます。これにより、`Value` が低い不透明度で表示されます。良い例としては、`Value` が 50 で、`HighlightValue` が 25 に設定されている場合です。これは、`TargetValue` の値が何に設定されているかに関係なく、50% のパフォーマンスを表します。これを有効にするには、まず `HighlightValueDisplayMode` を Overlay に設定し、次に `HighlightValue` を `Value` よりも低い値に適用します。
+
+```html
+<igx-bullet-graph
+    #bulletGraph
+    height="80px" 
+    width="400px"
+    value=70 
+    targetValue=90
+    minimumValue=0 
+    maximumValue=100 
+    interval=10
+    labelInterval=10
+    labelExtent=0.025
+    labelsPreTerminal=0
+    labelsPostInitial=0
+    highlightValueDisplayMode="Overlay"
+    highlightValue=25>
+  </igx-bullet-graph>
+```
+
+```tsx
+<IgrBulletGraph
+    height="80px"
+    width="100%"
+    value={70} 
+    targetValue={90}
+    interval={10}
+    minimumValue={0} 
+    maximumValue={100} 
+    labelInterval={10}
+    labelExtent={0.025}
+    labelsPreTerminal={0}
+    labelsPostInitial={0}
+    highlightValueDisplayMode="Overlay"
+    highlightValue={25} />
+```
+
+```html
+<igc-bullet-graph
+    id="gauge"
+    height="80px"
+    width="100%"
+    minimum-value="0" 
+    maximum-value="100"
+    value="70" 
+    interval="10"
+    target-value="90"
+    label-interval="10"
+    label-extent="0.025"
+    labels-pre-terminal="0"
+    labels-post-initial="0"
+    highlight-value-display-mode="Overlay"
+    highlight-value="25" >
+</igc-bullet-graph>
+```
+
+```razor
+<IgbBulletGraph Height="80px" Width="100%"
+    MinimumValue="0" 
+    Value="70"
+    TargetValue="90"
+    Interval="10"
+    MaximumValue="100" 
+    LabelInterval="10"
+    LabelExtent="0.025"
+    HighlightValueDisplayMode="HighlightedValueDisplayMode.Overlay"
+    HighlightValue=25>
+</IgbBulletGraph>
+```
+
+`sample="/gauges/bullet-graph/highlight-needle", height="125", alt="{Platform} バレット グラフの針のハイライト"`
 
 ## 比較範囲
-範囲はスケールで指定した値の範囲を強調表示する視覚的な要素です。その目的は、パフォーマンス バー メジャーの質的状態を視覚で伝えると同時に、その状態をレベルとして示すことにあります。
+範囲はスケールで指定した値の範囲をハイライト表示する視覚的な要素です。その目的は、パフォーマンス バー メジャーの質的状態を視覚で伝えると同時に、その状態をレベルとして示すことにあります。
 
 ```html
 <igx-bullet-graph
@@ -367,7 +441,7 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-`sample="/gauges/bullet-graph/ranges", height="125", alt="{Platform} bullet graph ranges"`
+`sample="/gauges/bullet-graph/ranges", height="125", alt="{Platform} ブレット グラフの範囲"`
 
 
 ## 目盛
@@ -454,7 +528,7 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-`sample="/gauges/bullet-graph/tickmarks", height="125", alt="{Platform} bullet graph tickmarks"`
+`sample="/gauges/bullet-graph/tickmarks", height="125", alt="{Platform}  ブレット グラフの目盛"`
 
 
 ## ラベル
@@ -515,7 +589,7 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-`sample="/gauges/bullet-graph/labels", height="125", alt="{Platform} bullet graph labels"`
+`sample="/gauges/bullet-graph/labels", height="125", alt="{Platform} ブレット グラフのラベル"`
 
 
 ## バッキング
@@ -572,11 +646,11 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-`sample="/gauges/bullet-graph/background", height="125", alt="{Platform} bullet graph background"`
+`sample="/gauges/bullet-graph/background", height="125", alt="{Platform} ブレット グラフのバッキング"`
 
 
 ## スケール
-スケールはゲージで値の全範囲を強調表示する視覚的な要素です。外観やスケールの図形のカスタマイズ、更にスケールを反転 (`IsScaleInverted` プロパティを使用) させて、すべてのラベルを左から右ではなく、右から左へ描画することもできます。
+スケールはゲージで値の全範囲をハイライト表示する視覚的な要素です。外観やスケールの図形のカスタマイズ、更にスケールを反転 (`IsScaleInverted` プロパティを使用) させて、すべてのラベルを左から右ではなく、右から左へ描画することもできます。
 
 ```html
 <igx-bullet-graph
@@ -632,7 +706,7 @@ MaximumValue="55" TargetValue="43">
 </IgbBulletGraph>
 ```
 
-`sample="/gauges/bullet-graph/scale", height="125", alt="{Platform} bullet graph scale"`
+`sample="/gauges/bullet-graph/scale", height="125", alt="{Platform} ブレット グラフのスケール"`
 
 
 ## まとめ

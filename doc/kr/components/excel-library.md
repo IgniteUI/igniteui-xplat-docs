@@ -107,39 +107,38 @@ ExcelUtility.save(workbook, "fileName");
 ```
 
 <!-- Angular -->
-><div class="divider--half"></div>
->
+<div class="divider--half"></div>
+
 ## Managing Heap
->
->Due to the size of the Excel Library, it's recommended to disable the source map generation.
->
->Modify `angular.json` by setting the `vendorSourceMap` option under architect => build => options and under serve => options:
->
+
+Due to the size of the Excel Library, it's recommended to disable the source map generation.
+
+Modify `angular.json` by setting the `vendorSourceMap` option under architect => build => options and under serve => options:
+
 ```ts
-...
-    "architect": {
-        "build": {
-          "builder": "...",
-          "options": {
-            "vendorSourceMap": false,
-            "outputPath": "dist",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "tsConfig": "src/tsconfig.app.json",
-                  // ...
-          },
-              // ...
+  // ...
+  "architect": {
+      "build": {
+        "builder": "...",
+        "options": {
+          "vendorSourceMap": false,
+          "outputPath": "dist",
+          "index": "src/index.html",
+          "main": "src/main.ts",
+          "tsConfig": "src/tsconfig.app.json",
+                // ...
         },
-        "serve": {
-          "builder": "...",
-          "options": {
-            "vendorSourceMap": false,
-            "browserTarget": "my-app:build"
-          },
-              // ...
+            // ...
+      },
+      "serve": {
+        "builder": "...",
+        "options": {
+          "vendorSourceMap": false,
+          "browserTarget": "my-app:build"
         },
-        // ...
-      }
+            // ...
+      },
+      // ...
+    }
 ```
->
 <!-- end:Angular -->

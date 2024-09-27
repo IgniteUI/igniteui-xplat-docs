@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 検索フィルター
 
-{Platform} `{ComponentName}` により、データのコレクション内の値を見つけるプロセスが可能になります。この機能のセットアップが簡単になり、検索入力ボックス、ボタン、キーボード ナビゲーション、その他の便利な機能を使用して実装できるため、ユーザー エクスペリエンスがさらに向上します。ブラウザーにはネイティブなコンテンツ検索機能がありますが、ほとんどの場合で `{ComponentName}` は表示範囲外の行列を仮想化します。そのため、ネイティブ グリッド検索は DOM の一部でないため仮想化セルでデータを検索できません。`{ComponentName}` では、{ProductName} Material テーブル ベースのグリッドの拡張により、**検索 API** を使用した**仮想コンテンツ**の検索が可能です。
+{Platform} {ComponentTitle} の {ProductName} 検索フィルター機能を使用すると、データのコレクション内の値を検索するプロセスが可能になります。この機能のセットアップが簡単になり、検索入力ボックス、ボタン、キーボード ナビゲーション、その他の便利な機能を使用して実装できるため、ユーザー エクスペリエンスがさらに向上します。ブラウザーにはネイティブなコンテンツ検索機能がありますが、ほとんどの場合で `{ComponentName}` は表示範囲外の行列を仮想化します。そのため、ネイティブ ブラウザー検索は DOM の一部でないため仮想化セルでデータを検索できません。`{ComponentName}` では、{Platform} Material テーブル ベースのグリッドの拡張により、**検索 API** を使用した**仮想コンテンツ**の検索が可能です。
 
 ## {Platform} 検索の例
 
@@ -25,25 +25,34 @@ _language: ja
 グリッドを作成してからデータをバインドします。コンポーネントにカスタム スタイルも追加しました。
 
 <!-- ComponentStart: Grid -->
+<!-- Angular -->
+
 ```html
-<igx-grid #grid1 id="grid1" [data]="data" [autoGenerate]="false" [allowFiltering]="true">
+<{ComponentSelector} #grid1 id="grid1" [data]="data" [autoGenerate]="false" [allowFiltering]="true">
     <igx-column [field]="'IndustrySector'" dataType="string" [sortable]="true"></igx-column>
     <igx-column [field]="'IndustryGroup'" dataType="string" [sortable]="true"></igx-column>
     <igx-column [field]="'SectorType'" dataType="string" [sortable]="true"></igx-column>
     <igx-column [field]="'KRD'" dataType="number" [sortable]="true"></igx-column>
     <igx-column [field]="'MarketNotion'" dataType="number" [sortable]="true"></igx-column>
     <igx-column [field]="'Date'" dataType="date" [sortable]="true"></igx-column>
-</igx-grid>
+</{ComponentSelector}>
+```
+<!-- end: Angular -->
+
+```css
+.gridSize {
+    --ig-size: var(--ig-size-small);
+}
 ```
 
 ```razor
-<IgbGrid @ref=grid Width="100%" Height="480px" AllowFiltering=true AutoGenerate=false Data=marketData DisplayDensity="DisplayDensity.Compact">
+<{ComponentSelector} @ref=grid Class="gridSize" Width="100%" Height="480px" AllowFiltering=true AutoGenerate=false Data=marketData>
     <IgbColumn Field="IndustrySector" DataType="GridColumnDataType.String" Sortable=true></IgbColumn>
     <IgbColumn Field="IndustryGroup" DataType="GridColumnDataType.String" Sortable=true></IgbColumn>
     <IgbColumn Field="SectorType" DataType="GridColumnDataType.String" Sortable=true></IgbColumn>
     <IgbColumn Field="KRD" DataType="GridColumnDataType.Number" Sortable=true></IgbColumn>
     <IgbColumn Field="MarketNotion" DataType="GridColumnDataType.Number" Sortable=true></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 
 @code {
     protected override void OnInitialized()
@@ -55,21 +64,31 @@ _language: ja
 ```
 
 ```html
-<igc-grid id="grid1" auto-generate="false" allow-filtering="true">
-    <igc-column field="IndustrySector" data-type="String" sortable="true"></igc-column>
-    <igc-column field="IndustryGroup" data-type="String" sortable="true"></igc-column>
-    <igc-column field="SectorType" data-type="String" sortable="true"></igc-column>
-    <igc-column field="KRD" data-type="Number" sortable="true"></igc-column>
-    <igc-column field="MarketNotion" data-type="Number" sortable="true"></igc-column>
-    <igc-column field="Date" data-type="Date" sortable="true"></igc-column>
-</igc-grid>
+<{ComponentSelector} id="grid1" class="gridSize" auto-generate="false" allow-filtering="true">
+    <igc-column field="IndustrySector" data-type="string" sortable="true"></igc-column>
+    <igc-column field="IndustryGroup" data-type="string" sortable="true"></igc-column>
+    <igc-column field="SectorType" data-type="string" sortable="true"></igc-column>
+    <igc-column field="KRD" data-type="number" sortable="true"></igc-column>
+    <igc-column field="MarketNotion" data-type="number" sortable="true"></igc-column>
+    <igc-column field="Date" data-type="date" sortable="true"></igc-column>
+</{ComponentSelector}>
 ```
 
+```tsx
+<{ComponentSelector} ref={gridRef} className="gridSize" autoGenerate="false" allowFiltering="true" data={data}>
+    <IgrColumn field="IndustrySector" dataType="string" sortable="true"></IgrColumn>        
+    <IgrColumn field="IndustryGroup" dataType="string" sortable="true"></IgrColumn>        
+    <IgrColumn field="SectorType" dataType="string" sortable="true"></IgrColumn>        
+    <IgrColumn field="KRD" dataType="number" sortable="true"></IgrColumn>        
+    <IgrColumn field="MarketNotion" dataType="number" sortable="true"></IgrColumn>  
+</{ComponentSelector}>
+```
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
+<!-- Angular -->
 ```html
-<igx-tree-grid #treeGrid1 [data]="data" [autoGenerate]="false" primaryKey="ID" foreignKey="ParentID" [allowFiltering]="true">
+<igx-tree-grid #treeGrid1 [data]="data" [autoGenerate]="false" primaryKey="ID" foreignKey="ParentID" height="480px" width="100%" [allowFiltering]="true">
     <igx-column [field]="'Name'" dataType="string" [sortable]="true"></igx-column>
     <igx-column [field]="'ID'" dataType="number" [sortable]="true"></igx-column>
     <igx-column [field]="'Title'" dataType="string" [sortable]="true"></igx-column>
@@ -77,51 +96,78 @@ _language: ja
     <igx-column [field]="'HireDate'" dataType="date" [sortable]="true"></igx-column>
 </igx-tree-grid>
 ```
+<!-- end: Angular -->
 
-```razor
-TODO TREEGRID SNIPPET
+<!-- WebComponents -->
+```html
+<igc-tree-grid id="treeGrid" auto-generate="false" primary-key="ID" foreign-key="ParentID" allow-filtering="true" height="100%" width="100%">
+    <igc-column field="Name" data-type="string" sortable="true"></igc-column>        
+    <igc-column field="ID" data-type="number" sortable="true"></igc-column>        
+    <igc-column field="Title" data-type="string" sortable="true"></igc-column>        
+    <igc-column field="Age" data-type="number" sortable="true"></igc-column>        
+    <igc-column field="HireDate" data-type="date" sortable="true"></igc-column>        
+</igc-tree-grid>
+```
+```ts
+private treeGrid: IgcTreeGridComponent;
+
+constructor() {
+    this.treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
+    this.treeGrid.data = new EmployeesFlatData();
+}
+```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrTreeGrid ref={gridRef} data={data} autoGenerate="false" primaryKey="ID" foreignKey="ParentID" allowFiltering="true" height="100%" width="100%">
+    <IgrColumn field="Name" dataType="string" sortable="true"></IgrColumn>        
+    <IgrColumn field="ID" dataType="number" sortable="true"></IgrColumn>        
+    <IgrColumn field="Title" dataType="string" sortable="true"></IgrColumn>        
+    <IgrColumn field="Age" dataType="number" sortable="true"></IgrColumn>        
+    <IgrColumn field="HireDate" dataType="date" sortable="true"></IgrColumn>  
+</IgrTreeGrid>
 ```
 
-```html
-<igc-tree-grid id="treeGrid1" auto-generate="false" primary-key="ID" foreign-key="ParentID" allow-filtering="true">
-    <igc-column field="Name" data-type="String" sortable="true"></igc-column>
-    <igc-column field="ID" data-type="Number" sortable="true"></igc-column>
-    <igc-column field="Title" data-type="String" sortable="true"></igc-column>
-    <igc-column field="Age" dataTdata-typeype="Number" sortable="true"></igc-column>
-    <igc-column field="HireDate" data-type="Date" sortable="true"></igc-column>
-</igc-tree-grid>
+```razor
+<IgbTreeGrid @ref=treeGrid AutoGenerate=false Data=EmployeesFlatData PrimaryKey="ID" ForeignKey="ParentID" AllowFiltering=true Height="100%" Width="100%">
+    <IgbColumn Field="Name" DataType="GridColumnDataType.String" Sortable=true></IgbColumn>
+    <IgbColumn Field="ID" DataType="GridColumnDataType.Number" Sortable=true></IgbColumn>
+    <IgbColumn Field="Title" DataType="GridColumnDataType.String" Sortable=true></IgbColumn>
+    <IgbColumn Field="Age" DataType="GridColumnDataType.Number" Sortable=true></IgbColumn>
+    <IgbColumn Field="HireDate" DataType="GridColumnDataType.Date" Sortable=true></IgbColumn>
+</IgbTreeGrid>
 ```
 <!-- ComponentEnd: TreeGrid -->
 
-```css
-.grid__wrapper {
-    margin: 15px;
-}
+では、`{ComponentName}` の検索 API の準備をしましょう。検索したテキストの保存、また大文字小文字の区別や完全一致 (またはそのいずれか) に使用するプロパティを作成できます。
 
-.offset {
-    margin-bottom: 15px;
-}
-
-.resultsText {
-    font-size: 0.875rem;
-}
-
-.chips {
-    margin-left: 5px;
-}
-
-.searchButtons {
-    margin-left: 5px;
-}
-```
-
-`{ComponentName}` の検索 API を使用します。検索したテキストの保存、また大文字小文字の区別や完全一致 (またはそのいずれか) に使用するプロパティを作成できます。
+<!-- ComponentStart: Grid -->
+<!-- Angular -->
 
 ```typescript
 public searchText: string = '';
 public caseSensitive: boolean = false;
 public exactMatch: boolean = false;
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
+```typescript
+    private grid: IgcGridComponent;    
+
+    private searchBox: IgcInputComponent;
+    
+    private searchIcon: IgcIconComponent;
+    private clearIcon: IgcIconComponent;
+    private nextIconButton: IgcIconButtonComponent;
+    private prevIconButton: IgcIconButtonComponent;
+
+    private caseSensitiveChip: IgcChipComponent;
+    private exactMatchChip: IgcChipComponent;
+```
+
+<!-- end: WebComponents -->
 
 ```razor
 public string searchText = "";
@@ -129,7 +175,60 @@ public bool caseSensitive = false;
 public bool exactMatch = false;
 ```
 
+```tsx
+const gridRef = useRef<IgrGrid>(null);
+const searchIconRef = useRef<IgrIconButton>(null)
+const clearIconRef = useRef<IgrIconButton>(null);
+const iconButtonPrevRef = useRef<IgrIconButton>(null);
+const caseSensitiveChipRef = useRef<IgrChip>(null);
+const exactMatchChipRef = useRef<IgrChip>(null);
+const iconButtonNextRef = useRef<IgrIconButton>(null);
+const [searchText, setSearchText] = useState('')
+```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+<!-- WebComponents -->
+```ts
+private treeGrid: IgcTreeGridComponent;    
+
+private searchBox: IgcInputComponent;
+
+private icon: IgcIconComponent;
+private nextIconButton: IgcIconButtonComponent;
+private prevIconButton: IgcIconButtonComponent;
+
+private caseSensitiveChip: IgcChipComponent;
+private exactMatchChip: IgcChipComponent;
+```
+<!-- end: WebComponents -->
+
+```razor
+private IgbTreeGrid treeGrid;
+
+public string searchText = "";
+public bool caseSensitive = false;
+public bool exactMatch = false;
+```
+
+```tsx
+const gridRef = useRef<IgrTreeGrid>(null);
+const searchIconRef = useRef<IgrIconButton>(null);
+const clearIconRef = useRef<IgrIconButton>(null);
+const iconButtonNextRef = useRef<IgrIconButton>(null);
+const iconButtonPrevRef = useRef<IgrIconButton>(null);
+const caseSensitiveChipRef = useRef<IgrChip>(null);
+const exactMatchChipRef = useRef<IgrChip>(null);
+const [searchText, setSearchText] = useState('');
+```
+<!-- ComponentEnd: TreeGrid -->
+
 ### {Platform} 検索ボックス入力
+
+
+<!-- WebComponents -->
+検索入力を作成します。input 要素を取得することで、その現在の値を取得できます。これにより、`{ComponentName}` の `FindNext` メソッドと `FindPrev` メソッドを使用して、`SearchText` が出現するすべての箇所をハイライト表示し、(呼び出したメソッドに応じて) 次 / 前の箇所にスクロールできるようになります。
+<!-- end: WebComponents -->
 
 <!-- Angular -->
 検索入力を作成します。`SearchText` を ngModel として新しく作成した入力へバインドして ngModelChange イベントにサブスクライブします。ユーザーによる各 `SearchText` のすべての変更を検出できます。これによって `{ComponentName}` の `FindNext` と `FindPrev` メソッドを使用して `SearchText` のすべての出現を強調し、次へまたは前 (呼び出すメソッドに基づいて) へスクロールできます。
@@ -139,16 +238,21 @@ public bool exactMatch = false;
 検索入力を作成します。新しく作成した入力の `Value` プロパティに `SearchText` をバインドし、`ValueChanging` イベントをサブスクライブすることで、ユーザーによるすべての `SearchText` の変更を検出できます。これによって `{ComponentName}` の `FindNext` と `FindPrev` メソッドを使用して `SearchText` のすべての出現を強調し、次へまたは前 (呼び出すメソッドに基づいて) へスクロールできます。
 <!-- end: Blazor -->
 
+<!-- React -->
+検索入力を作成します。`searchText` を新しく作成したinput要素の `value` プロパティにバインドし、`inputOccured` イベントをサブスクライブすることで、ユーザーによるすべての `searchText` の変更を検出できます。これにより、`{ComponentName}` の `findNext` メソッドと `findPrev` メソッドを使用して、`searchText` が出現するすべての箇所をハイライト表示し、(呼び出したメソッドに応じて) 次 / 前の箇所にスクロールできるようになります。
+<!-- end: React -->
+
 `FindNext` と `FindPrev` メソッドの両方に 3 つの引数があります。
 
 - `Text`: **string** (検索テキスト)
 - (オプション) `CaseSensitive`: **boolean** (検索で完全一致するかどうか、デフォルト値は false)。
 - (オプション) `ExactMatch`: **boolean** (検索で完全一致するかどうか、デフォルト値は false)。
 
-完全一致で検索した場合、検索 API は `SearchText` と完全一致 (大文字小文字の区別を含む) するセル値のみ結果として強調表示します。たとえば、文字列 'software' と 'Software' は大文字小文字を区別しない場合は完全一致となります。
+完全一致で検索した場合、検索 API は `SearchText` と完全一致 (大文字小文字の区別を含む) するセル値のみ結果としてハイライト表示します。たとえば、文字列 'software' と 'Software' は大文字小文字を区別しない場合は完全一致となります。
 
 上記のメソッドは **number** 値を返します (`{ComponentName}` で指定した文字列が含まれる回数)。
 
+<!-- ComponentStart: Grid -->
 <!-- Angular -->
 ```html
 <!--searchgrid.component.html-->
@@ -163,28 +267,82 @@ public bool exactMatch = false;
 
 <!-- WebComponents -->
 ```html
-<!--searchgrid.component.html-->
+<igc-input id="searchBox" name="searchBox">
+</igc-input>
+```
 
-<input id="search1" placeholder="Search" />
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    this.searchBox = document.getElementById('searchBox') as IgcInputComponent;
+    grid.data = new MarketData();
+}
+
+public nextSearch(){
+    this.grid.findNext(this.searchBox.value, false, false);
+}
+```
+<!-- end: WebComponents -->
+
+```tsx
+function handleOnSearchChange(input: IgrInput, event: IgrComponentValueChangedEventArgs) {
+    setSearchText(event.detail);
+    gridRef.current.findNext(event.detail, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+}
+
+function nextSearch() {
+    gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+}
+
+
+<IgrInput name="searchBox" value={searchText} inputOcurred={handleOnSearchChange}>
+</IgrInput>
+```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+<!-- WebComponents -->
+```html
+<igc-input id="searchBox" name="searchBox">
+</igc-input>
 ```
 ```ts
 constructor() {
-    var search1 = this.search1 = document.getElementById('search1') as HtmlInputElement;
-
-    this._bind = () => {
-        search1.addEventListener('change', searchValue);
-    }
-    this._bind();
+    this.searchBox = document.getElementById('searchBox') as IgcInputComponent;
+    this.caseSensitiveChip = document.getElementById('caseSensitiveChip') as IgcChipComponent;
+    this.exactMatchChip = document.getElementById('exactMatchChip') as IgcChipComponent;
 }
-public searchValue(e) {
-    var searchText = e.target.value;
-    var caseSensitive = false;
-    var exactMatch = false;
-    grid.findNext(searchText, caseSensitive, exactMatch)
+
+public nextSearch() {
+    this.treeGrid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+}
+```
+<!-- end: WebComponents -->
+
+```razor
+<IgbInput ValueChanging="OnValueChanging" Value="@searchText" />
+
+public void NextSearch()
+{
+    this.treeGrid.FindNext(this.searchText, this.caseSensitive, this.exactMatch);
 }
 ```
 
-<!-- end: WebComponents -->
+```tsx
+function handleOnSearchChange(input: IgrInput, event: IgrComponentValueChangedEventArgs) {
+    setSearchText(event.detail);
+    gridRef.current.findNext(event.detail, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+}
+
+function nextSearch() {
+    gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+}
+
+
+<IgrInput name="searchBox" value={searchText} inputOcurred={handleOnSearchChange}>
+</IgrInput>
+```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- Angular -->
 
@@ -208,23 +366,21 @@ public searchValue(e) {
 
 <!-- end: Angular -->
 
-<!-- Blazor -->
-
-<!-- TO DO -->
-
-<!-- end: Blazor -->
-
 ### 検索ボタンの追加
 
 ボタンの各クリック イベント ハンドラー内で `FindNext` と `FindPrev` メソッドを呼び出して検索や検索結果をナビゲーションするためのボタンを作成します。
 
+
+<!-- Angular -->
 ```html
 <div class="searchButtons">
     <input type="button" value="Previous" (click)="@@igObjectRef.findPrev(searchText, caseSensitive, exactMatch)" />
     <input type="button" value="Next" (click)="@@igObjectRef.findNext(searchText, caseSensitive, exactMatch)" />
 </div>
 ```
+<!-- end: Angular -->
 
+<!-- ComponentStart: Grid -->
 ```razor
 <IgbIconButton Variant="IconButtonVariant.Flat" @onclick="PrevSearch">
     <IgbIcon IconName="prev" Collection="material"/>
@@ -234,6 +390,7 @@ public searchValue(e) {
 </IgbIconButton>
 
 @code {
+    private IgbGrid grid;
     public void PrevSearch()
     {
         this.grid.FindPrevAsync(this.searchText, this.caseSensitive, this.exactMatch);
@@ -248,44 +405,94 @@ public searchValue(e) {
 
 <!-- WebComponents -->
 ```html
-<div class="searchButtons">
-    <input id="prevBtn" type="button" value="Previous"/>
-    <input id="nextBtn" type="button" value="Next"/>
-</div>
+<igc-icon-button id="prevIconBtn" variant="flat" name="prev" collection="material" ></igc-icon-button>
+<igc-icon-button id="nextIconBtn" variant="flat" name="next" collection="material"></igc-icon-button>
 ```
 ```ts
 constructor() {
-    var prevBtn = this.prevBtn = document.getElementById('prevBtn') as HtmlInputElement;
-    var nextBtn = this.nextBtn = document.getElementById('nextBtn') as HtmlInputElement;
+    var nextIconButton = document.getElementById('nextIconBtn') as IgcIconButtonComponent;
+    var prevIconButton = document.getElementById('prevIconBtn') as IgcIconButtonComponent;
+    nextIconButton.addEventListener("click", this.nextSearch);
+    prevIconButton.addEventListener("click", this.prevSearch);
+}
+public prevSearch() {
+    this.grid.findPrev(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+}
 
-    this._bind = () => {
-        prevBtn.addEventListener('change', findPrev);
-        nextBtn.addEventListener('change', findPrev);
-    }
-    this._bind();
+public nextSearch() {
+    this.grid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
 }
-public findPrev(e) {
-    var searchText = e.target.value;
-    var caseSensitive = false;
-    var exactMatch = false;
-    grid.findPrev(searchText, caseSensitive, exactMatch)
+```
+<!-- end: WebComponents -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+<!-- WebComponents -->
+```html
+<igc-icon-button id="prevIconBtn" variant="flat" name="prev" collection="material" ></igc-icon-button>
+<igc-icon-button id="nextIconBtn" variant="flat" name="next" collection="material"></igc-icon-button>
+```
+```ts
+constructor() {
+    this.nextIconButton = document.getElementById('nextIconBtn') as IgcIconButtonComponent;
+    this.prevIconButton = document.getElementById('prevIconBtn') as IgcIconButtonComponent;
+    this.nextIconButton.addEventListener("click", this.nextSearch);
+    this.prevIconButton.addEventListener("click", this.prevSearch);
 }
-public findNext(e) {
-    var searchText = e.target.value;
-    var caseSensitive = false;
-    var exactMatch = false;
-    grid.findNext(searchText, caseSensitive, exactMatch)
+
+public prevSearch() {
+    this.treeGrid.findPrev(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+}
+
+public nextSearch() {
+    this.treeGrid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
 }
 ```
 <!-- end: WebComponents -->
 
+```razor
+<IgbIconButton Variant="IconButtonVariant.Flat" @onclick="PrevSearch">
+    <IgbIcon IconName="prev" Collection="material"/>
+</IgbIconButton>
+<IgbIconButton Variant="IconButtonVariant.Flat" @onclick="NextSearch">
+    <IgbIcon IconName="next" Collection="material" />
+</IgbIconButton>
+
+@code {
+    private IgbTreeGrid treeGrid;
+
+    public void PrevSearch()
+    {
+        this.treeGrid.FindPrevAsync(this.searchText, this.caseSensitive, this.exactMatch);
+    }
+
+    public void NextSearch()
+    {
+        this.treeGrid.FindNextAsync(this.searchText, this.caseSensitive, this.exactMatch);
+    }
+}
+```
+<!-- ComponentEnd: TreeGrid -->
+
+```tsx
+function prevSearch() {
+    gridRef.current.findPrev(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+}
+
+function nextSearch() {
+    gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+}
+
+<IgrIconButton key="prevIconButton" ref={iconButtonPrevRef} variant="flat" name="prev" collection="material" clicked={prevSearch}>
+</IgrIconButton>
+<IgrIconButton key="nextIconButton" ref={iconButtonNextRef} variant="flat" name="next" collection="material" clicked={nextSearch}>
+</IgrIconButton>
+```
+
+
 ### キーボード検索の追加
 
-<!-- Angular -->
-
-ユーザーは矢印キーと <kbd>Enter</kbd> キーで結果を移動できます。 `PreventDefault` メソッドのデフォルト キャレットの移動を防止する検索入力の **keydown** イベントを処理し、ユーザーが押したキーに基づいて `FindNext`/`FindPrev` メソッドを呼び出します。
-
-<!-- end: Angular -->
+ユーザーは矢印キーと <kbd>Enter</kbd> キーで結果を移動できます。`PreventDefault` メソッドのデフォルト キャレットの移動を防止する検索入力の **keydown** イベントを処理し、ユーザーが押したキーに基づいて `FindNext`/`FindPrev` メソッドを呼び出します。
 
 <!-- Angular -->
 ```html
@@ -306,44 +513,53 @@ public searchKeyDown(ev) {
 ```
 <!-- end: Angular -->
 
+<!-- ComponentStart: Grid -->
 <!-- WebComponents -->
 ```html
-<input id="search1" placeholder="Search" />
+<input id="searchBox" name="searchBox"/>
 ```
 
 ```typescript
 constructor() {
-    var search1 = this.search1 = document.getElementById('search1') as HtmlInputElement;
-
-    this._bind = () => {
-        search1.addEventListener('keydown', searchKeyDown);
-        search1.addEventListener('change', findNext);
-    }
-    this._bind();
+     searchBox.addEventListener("keydown", (evt) => { this.onSearchKeydown(evt); });
+     this.searchBox.addEventListener("igcInput", (evt) => {
+        this.searchIcon.name = evt.detail ? 'clear' : 'search';
+        this.grid.findNext(evt.detail, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+     });
 }
 
-public findNext(e) {
-    var searchText = e.target.value;
-    var caseSensitive = false;
-    var exactMatch = false;
-    grid.findNext(searchText, caseSensitive, exactMatch)
-}
-
-public searchKeyDown(ev) {
-    if (ev.key === 'Enter') {
-        ev.preventDefault();
-        this.grid.findNext(this.searchText, this.caseSensitive, this.exactMatch);
-    } else if (ev.key === 'ArrowUp' || ev.key === 'ArrowLeft') {
-        ev.preventDefault();
-        this.grid.findPrev(this.searchText, this.caseSensitive, this.exactMatch);
+public onSearchKeydown(evt: KeyboardEvent) {  
+        if (evt.key === 'Enter' || evt.key === 'ArrowDown') {
+            evt.preventDefault();
+            this.grid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+        } else if (evt.key === 'ArrowUp') {
+            evt.preventDefault();
+            this.grid.findPrev(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+        }
     }
 }
 ```
 <!-- end: WebComponents -->
 
+```tsx
+function searchKeyDown(e: KeyboardEvent<HTMLElement>) {
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+        e.preventDefault();
+        gridRef.current.findPrev(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    }
+}
+
+ <div onKeyDown={searchKeyDown}>
+    <IgrInput name="searchBox" value={searchText} inputOcurred={handleOnSearchChange}></IgrInput>
+</div>
+```
+
 <!-- Blazor -->
 
-ユーザーは<kbd>Enter</kbd> キーで結果を移動できます。 これを実現するために、検索の **keydown** イベントを処理し、ユーザーが <kbd>Shift</kbd> キーを押したかどうかに応じて `FindNext`/`FindPrev` メソッドを呼び出すことができます。
+ユーザーは <kbd>Enter</kbd> キーで結果を移動できます。これを実現するために、検索の **keydown** イベントを処理し、ユーザーが <kbd>Shift</kbd> キーを押したかどうかに応じて `FindNext`/`FindPrev` メソッドを呼び出すことができます。
 
 <!-- end: Blazor -->
 
@@ -361,6 +577,78 @@ public searchKeyDown(ev) {
     }
 }
 ```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+<!-- WebComponents -->
+```html
+<igc-input id="searchBox" name="searchBox">
+</igc-input>
+```
+```ts
+constructor() {
+    this.searchBox = document.getElementById('searchBox') as IgcInputComponent;
+
+    this.searchBox.addEventListener("keydown", (evt) => { this.onSearchKeydown(evt); });
+    this.searchBox.addEventListener("igcInput", (evt) => {
+        this.treeGrid.findNext(evt.detail, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+    });
+}
+
+public onSearchKeydown(evt: KeyboardEvent) {  
+    if (evt.key === 'Enter' || evt.key === 'ArrowDown') {
+        evt.preventDefault();
+        this.treeGrid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+    } else if (evt.key === 'ArrowUp') {
+        evt.preventDefault();
+        this.treeGrid.findPrev(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+    }
+}
+```
+<!-- end: WebComponents -->
+
+```tsx
+function searchKeyDown(e: KeyboardEvent<HTMLElement>) {
+    if (e.key === 'Enter' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        gridRef.current.findPrev(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    }
+}
+
+function handleOnSearchChange(input: IgrInput, event: IgrComponentValueChangedEventArgs) {
+    setSearchText(event.detail);
+    gridRef.current.findNext(event.detail, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+}
+
+<div onKeyDown={searchKeyDown}>
+    <IgrInput name="searchBox" value={searchText} inputOcurred={handleOnSearchChange}></IgrInput>
+</div>
+```
+
+```razor
+<IgbInput ValueChanging="OnValueChanging" Value="@searchText" @onkeydown="OnSearchKeyDown" />
+
+@code {
+    private void OnSearchKeyDown(KeyboardEventArgs evt)
+    {
+        if (evt.Key == "Enter" || evt.Key == "ArrowDown") {
+            this.treeGrid.FindNextAsync(this.searchText, this.caseSensitive, this.exactMatch);
+        } else if (evt.Key == "ArrowUp") {
+            this.treeGrid.FindPrevAsync(this.searchText, this.caseSensitive, this.exactMatch);
+        }
+    }
+
+    public void OnValueChanging(string newValue)
+    {
+        this.searchText = newValue;
+        this.treeGrid.FindNextAsync(this.searchText, this.caseSensitive, this.exactMatch);
+    }
+}
+```
+<!-- ComponentEnd: TreeGrid -->
 
 ### 大文字と小文字の区別と完全一致
 
@@ -392,7 +680,10 @@ public updateExactSearch() {
 ```
 <!-- end: Angular -->
 
+<!-- ComponentStart: Grid -->
 <!-- WebComponents -->
+次に完全一致の検索で大文字と小文字を区別するかどうかをユーザーが選択できるようにします。この目的のために、単純なチェックボックス入力を使用し、その `change` イベントにバインドして、チェックボックスの `checked` 状態を使用できます。
+
 ```html
 <span>Case sensitive</span>
 <input id="case" type="checkbox">
@@ -403,29 +694,47 @@ public updateExactSearch() {
 
 ```typescript
 constructor() {
-    var case = this.case = document.getElementById('case') as HtmlInputElement;
-    var exact = this.exact = document.getElementById('exact') as HtmlInputElement;
-
-    this._bind = () => {
-        case.checked = this.caseSensitive;
-        exact.checked = this.exactMatch;
-        case.addEventListener('change', updateSearch);
-        exact.addEventListener('change', updateExactSearch);
-    }
-    this._bind();
+    const case = document.getElementById("case") as HTMLInputElement;
+    const exact = document.getElementById("exact") as HTMLInputElement;
+    case.addEventListener("change", this.updateSearch);
+    exact.addEventListener("change", this.updateSearch);
 }
 
 public updateSearch() {
-    this.caseSensitive = !this.caseSensitive;
-    this.grid.findNext(this.searchText, this.caseSensitive, this.exactMatch);
-}
-
-public updateExactSearch() {
-    this.exactMatch = !this.exactMatch;
-    this.grid.findNext(this.searchText, this.caseSensitive, this.exactMatch);
+    const search1 = document.getElementById("search1") as HTMLInputElement;
+    const case = document.getElementById("case") as HTMLInputElement;
+    const exact = document.getElementById("exact") as HTMLInputElement;
+    const grid = document.getElementById("grid") as IgcGridComponent;
+    grid.findNext(search1.value, case.checked, exact.checked);
 }
 ```
 <!-- end: WebComponents -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+<!-- WebComponents -->
+次に完全一致の検索で大文字と小文字を区別するかどうかをユーザーが選択できるようにします。この目的のために、単純な選択可能な `Chips` を使用し、`igcSelect` イベントにバインドして、ユーザーがいつチップを操作したかを判断できます。
+
+```html
+<igc-chip selectable="true" id="caseSensitiveChip">Case Sensitive</igc-chip>
+<igc-chip selectable="true" id="exactMatchChip">Exact Match</igc-chip>
+```
+
+```ts
+constructor() {
+    this.caseSensitiveChip = document.getElementById('caseSensitiveChip') as IgcChipComponent;
+    this.exactMatchChip = document.getElementById('exactMatchChip') as IgcChipComponent;
+
+    this.caseSensitiveChip.addEventListener("igcSelect", (evt) => {
+        this.treeGrid.findNext(this.searchBox.value, evt.detail, this.exactMatchChip.selected);
+    });
+    this.exactMatchChip.addEventListener("igcSelect", (evt) => {
+        this.treeGrid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, evt.detail);
+    });
+}
+```
+<!-- end: WebComponents -->
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- Blazor -->
 
@@ -453,10 +762,28 @@ public updateExactSearch() {
     }
 }
 ```
+<!-- React -->
+次に完全一致の検索で大文字と小文字を区別するかどうかをユーザーが選択できるようにします。この目的のために、`IgrChip` を使用してその参照を取得し、`selected` プロパティを使用できます。
+<!-- end: React -->
+```tsx
+const caseSensitiveChipRef = useRef<IgrChip>(null);
+const exactMatchChipRef = useRef<IgrChip>(null);
+
+function updateSearch() {
+    gridRef.current.findNext("searchValue", caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+}
+
+<IgrChip ref={caseSensitiveChipRef} key="caseSensitiveChip" selectable="true">
+    <span key="caseSensitive">Case Sensitive</span>
+</IgrChip>
+<IgrChip ref={exactMatchChipRef} key="exactMatchChip" selectable="true">
+    <span key="exactMatch">Exact Match</span>
+</IgrChip>
+```
 
 ### 保持
 
-`{ComponentName}` のフィルターやソート、レコードの追加や削除をする場合を想定します。そのような処理の後、現在の検索が自動的に更新されて `SearchText` に一致するテキストが保持されます。更に検索がページングで動作し、`{ComponentName}` の `PerPage` プロパティの変更時も強調表示が保持されます。
+`{ComponentName}` のフィルターやソート、レコードの追加や削除をする場合を想定します。そのような処理の後、現在の検索が自動的に更新されて `SearchText` に一致するテキストが保持されます。更に検索がページングで動作し、`{ComponentName}` の `PerPage` プロパティの変更時もハイライト表示が保持されます。
 
 ### アイコンの追加
 
@@ -485,23 +812,30 @@ export class AppModule {}
 ```
 
 ```typescript
-import {
-    igcXNameModule,
-    IgcXInputGroupModule,
-    IgcXIconModule,
-    IgcXRippleModule,
-    IgcXButtonModule,
-    IgcXChipsModule
-} from 'igniteui-webcomponents-inputs';
+import { defineComponents, IgcInputComponent, IgcChipComponent, IgcIconComponent, IgcIconButtonComponent, registerIconFromText } from "igniteui-webcomponents";
 
-ModuleManager.register(
-    IgcXInputGroupModule,
-    IgcXIconModule,
-    IgcXRippleModule,
-    IgcXButtonModule,
-    IgcXChipsModule
-);
+defineComponents(IgcInputComponent, IgcChipComponent, IgcIconComponent, IgcIconButtonComponent);
 ```
+
+<!-- ComponentStart: Grid -->
+```tsx
+import { IgrGridModule } from "igniteui-react-grids";
+import { IgrChipModule } from "igniteui-react";
+
+const mods: any[] = [IgrGridModule, IgrChipModule];
+mods.forEach((m) => m.register());
+```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```tsx
+import { IgrTreeGridModule } from "igniteui-react-grids";
+import { IgrChipModule, IgrIconButtonModule, IgrInputModule } from "igniteui-react";
+
+const mods: any[] = [IgrTreeGridModule, IgrChipModule, IgrIconButtonModule, IgrInputModule];
+mods.forEach((m) => m.register());
+```
+<!-- ComponentEnd: TreeGrid -->
 
 <!-- Blazor -->
 
@@ -509,6 +843,7 @@ ModuleManager.register(
 
 <!-- end: Blazor -->
 
+<!-- ComponentStart: Grid -->
 ```razor
 // eg. Program.cs register the following:
 builder.Services.AddIgniteUIBlazor(
@@ -517,13 +852,39 @@ builder.Services.AddIgniteUIBlazor(
     typeof(IgbIconButtonModule),
     typeof(IgbIconModule)
 );
-
+```
+<!-- ComponentEnd: Grid -->
+<!-- ComponentStart: TreeGrid -->
+```razor
+// eg. Program.cs register the following:
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbTreeGridModule),
+    typeof(IgbInputModule),
+    typeof(IgbIconButtonModule),
+    typeof(IgbIconModule)
+);
+```
+<!-- ComponentEnd: TreeGrid -->
+```razor
 @code {
-    protected override void OnInitialized()
+    private IgbIcon searchIconRef { get; set; }
+    const string searchIcon = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' /></svg>";
+    const string prevIcon = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z'></path></svg>";
+    const string nextIcon = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'></path></svg>";
+    const string clearIcon = "<svg width='24' height='24' viewBox='0 0 24 24' title='Clear'><path d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></svg>";
+    
+    protected override void OnAfterRender(bool firstRender)
     {
-        base.OnInitialized();
-
-        this.marketData = MarketData.GetData();
+        if (this.searchIconRef != null && firstRender)
+        {
+            this.searchIconRef.EnsureReady().ContinueWith(new Action<Task>((e) =>
+            {
+                this.searchIconRef.RegisterIconFromTextAsync("search", searchIcon, "material");
+                this.searchIconRef.RegisterIconFromTextAsync("prev", prevIcon, "material");
+                this.searchIconRef.RegisterIconFromTextAsync("next", nextIcon, "material");
+                this.searchIconRef.RegisterIconFromTextAsync("clear", clearIcon, "material");
+            }));
+        }
     }
 }
 ```
@@ -532,7 +893,7 @@ builder.Services.AddIgniteUIBlazor(
 
 <!-- Angular -->
 
-[InputGroup](../input-group.md) 内のすべてのコンポーネントをラップします。左側で検索と 削除/クリア アイコンを切り替えます (検索入力が空かどうかに基づきます)。中央に入力を配置します。更に削除アイコンがクリックされたときに `SearchText` を更新し、`{ComponentName}` の `ClearSearch` メソッドを呼び出して強調表示をクリアします。
+[InputGroup](../input-group.md) 内のすべてのコンポーネントをラップします。左側で検索と 削除/クリア アイコンを切り替えます (検索入力が空かどうかに基づきます)。中央に入力を配置します。更に削除アイコンがクリックされたときに `SearchText` を更新し、`{ComponentName}` の `ClearSearch` メソッドを呼び出してハイライト表示をクリアします。
 
 <!-- end: Angular -->
 
@@ -552,20 +913,6 @@ builder.Services.AddIgniteUIBlazor(
 </igx-input-group>
 ```
 
-```html
-<igc-input-group type="search" class="offset">
-    <igc-prefix>
-        <igc-icon>search</igx-icon>
-        <igc-icon>clear</igx-icon>
-    </igc-prefix>
-
-    <input id="search1" placeholder="Search" />
-
-    <igc-suffix>
-        ...
-    </igc-suffix>
-</igc-input-group>
-```
 <!-- Angular -->
 ```typescript
 public clearSearch() {
@@ -575,20 +922,208 @@ public clearSearch() {
 ```
 <!-- end: Angular -->
 
+<!-- ComponentStart: Grid -->
+```html
+<igc-input id="searchBox" name="searchBox">
+    <igc-icon id="searchIcon" slot="prefix" name="search" collection="material"></igc-icon>
+    <div slot="suffix">
+        <igc-chip selectable="true" id="caseSensitiveChip">Case Sensitive</igc-chip>
+        <igc-chip selectable="true" id="exactMatchChip">Exact Match</igc-chip>
+    </div>
+    <div slot="suffix">
+        <igc-icon-button id="prevIconBtn" variant="flat" name="prev" collection="material" ></igc-icon-button>
+        <igc-icon-button id="nextIconBtn" variant="flat" name="next" collection="material"></igc-icon-button>
+    </div>
+</igc-input>
+```
+
 <!-- WebComponents -->
 ```typescript
-public clearSearch() {
-    this.searchText = '';
-    this.grid.clearSearch();
+constructor() {
+    const prevIconText = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z'></path></svg>";
+    const nextIconText = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'></path></svg>";
+    const clearIconText = "<svg width='24' height='24' viewBox='0 0 24 24' title='Clear'><path d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></svg>";
+    const searchIconText = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' /></svg>";
+
+    registerIconFromText("prev", prevIconText, "material");
+    registerIconFromText("next", nextIconText, "material");
+    registerIconFromText("clear", clearIconText, "material");
+    registerIconFromText("search", searchIconText, "material");
 }
 ```
 <!-- end: WebComponents -->
 
+```tsx
+const prevIconText =
+  "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z'></path></svg>";
+const nextIconText =
+  "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'></path></svg>";
+const clearIconText =
+  "<svg width='24' height='24' viewBox='0 0 24 24' title='Clear'><path d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></svg>";
+  const searchIconText =
+  "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' /></svg>";
+
+useEffect(() => {
+     if (searchIconRef?.current) {
+      searchIconRef.current.registerIconFromText("search", searchIconText, "material");
+      searchIconRef.current.registerIconFromText("clear", clearIconText, "material");
+    }
+    if (iconButtonPrevRef?.current) {
+        iconButtonPrevRef.current.registerIconFromText("prev", prevIconText, "material");
+    }
+    if (iconButtonNextRef?.current) {
+        iconButtonNextRef.current.registerIconFromText("next", nextIconText, "material");
+    }
+}, []);
+
+<IgrInput name="searchBox" value={searchText} inputOcurred={handleOnSearchChange}>
+    <div slot="prefix" key="prefix">
+        {searchText.length === 0 ? (
+            <IgrIconButton
+              key="searchIcon"
+              ref={searchIconRef} 
+              variant="flat"
+              name="search" 
+              collection="material"
+            ></IgrIconButton>
+            ) : (
+            <IgrIconButton
+              key="clearIcon"
+              ref={clearIconRef}
+              variant="flat"
+              name="clear"
+              collection="material"
+              clicked={clearSearch}
+            ></IgrIconButton>
+        )}
+    </div>
+    <div slot="suffix" key="chipSuffix">
+        <IgrChip ref={caseSensitiveChipRef} key="caseSensitiveChip" selectable="true">
+        <span key="caseSensitive">Case Sensitive</span>
+        </IgrChip>
+        <IgrChip ref={exactMatchChipRef} key="exactMatchChip" selectable="true">
+        <span key="exactMatch">Exact Match</span>
+        </IgrChip>
+    </div>
+    <div slot="suffix" key="buttonsSuffix">
+        <IgrIconButton key="prevIconButton" ref={iconButtonPrevRef} variant="flat" name="prev" collection="material" clicked={prevSearch}>
+        </IgrIconButton>
+        <IgrIconButton key="nextIconButton" ref={iconButtonNextRef} variant="flat" name="next" collection="material" clicked={nextSearch}>
+        </IgrIconButton>
+    </div>
+</IgrInput>
+```
+
 <!-- Blazor -->
 
-`Input` 内のすべてのコンポーネントをラップします。左側で検索と 削除/クリア アイコンを切り替えます (検索入力が空かどうかに基づきます)。中央に入力を配置します。更に削除アイコンがクリックされたときに `SearchText` を更新し、`{ComponentName}` の `ClearSearch` メソッドを呼び出して強調表示をクリアします。
+`Input` 内のすべてのコンポーネントをラップします。左側で検索と 削除/クリア アイコンを切り替えます (検索入力が空かどうかに基づきます)。中央に入力を配置します。更に削除アイコンがクリックされたときに `SearchText` を更新し、`{ComponentName}` の `ClearSearch` メソッドを呼び出してハイライト表示をクリアします。
 
 <!-- end: Blazor -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+`Input` 内のすべてのコンポーネントをラップします。左側で検索と 削除/クリア アイコンを切り替えます (検索入力が空かどうかに基づきます)。中央に入力を配置します。更に削除アイコンがクリックされたときに `SearchText` を更新し、`{ComponentName}` の `ClearSearch` メソッドを呼び出してハイライト表示をクリアします。
+
+```html
+<igc-input id="searchBox" name="searchBox">
+    <igc-icon id="icon" slot="prefix" name="search" collection="material"></igc-icon>
+    <div slot="suffix">
+        <igc-chip selectable="true" id="caseSensitiveChip">Case Sensitive</igc-chip>
+        <igc-chip selectable="true" id="exactMatchChip">Exact Match</igc-chip>
+    </div>
+    <div slot="suffix">
+        <igc-icon-button id="prevIconBtn" variant="flat" name="prev" collection="material" ></igc-icon-button>
+        <igc-icon-button id="nextIconBtn" variant="flat" name="next" collection="material"></igc-icon-button>
+    </div>
+</igc-input>
+```
+
+<!-- WebComponents -->
+```typescript
+constructor() {
+    const prevIconText = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z'></path></svg>";
+    const nextIconText = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'></path></svg>";
+    const searchIconText = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' /></svg>";
+    const clearIconText = "<svg width='24' height='24' viewBox='0 0 24 24' title='Clear'><path d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></svg>";
+
+    registerIconFromText('prev', prevIconText, 'material');
+    registerIconFromText('next', nextIconText, 'material');
+    registerIconFromText('search', searchIconText, 'material');
+    registerIconFromText('clear', clearIconText, 'material');
+
+    this.icon = document.getElementById('icon') as IgcIconComponent;
+    this.searchBox = document.getElementById('searchBox') as IgcInputComponent;
+
+    this.searchBox.addEventListener('igcInput', (evt) => {
+        this.icon.name = evt.detail ? 'clear' : 'search';
+    });
+    this.icon.addEventListener('click', this.clearSearch);
+}
+
+public clearSearch() {
+    this.searchBox.value = '';
+    this.icon.name = 'search';
+    this.treeGrid.clearSearch();
+}
+```
+<!-- end: WebComponents -->
+
+```tsx
+const prevIconText =
+  "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z'></path></svg>";
+const nextIconText =
+  "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'></path></svg>";
+const searchIconText =
+"<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' /></svg>";
+const clearIconText =
+  "<svg width='24' height='24' viewBox='0 0 24 24' title='Clear'><path d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></svg>";
+
+useEffect(() => {
+    if (searchIconRef?.current) {
+        searchIconRef.current.registerIconFromText("search", searchIconText, "material");
+        searchIconRef.current.registerIconFromText("clear", clearIconText, "material");
+    }
+    if (iconButtonPrevRef?.current) {
+        iconButtonPrevRef.current.registerIconFromText("prev", prevIconText,"material");
+    }
+    if (iconButtonNextRef?.current) {
+        iconButtonNextRef.current.registerIconFromText("next", nextIconText, "material");
+    }
+}, []);
+
+function clearSearch() {
+  setSearchText('');
+  gridRef.current.clearSearch();
+}
+
+<IgrInput name="searchBox" value={searchText} inputOcurred={handleOnSearchChange}>
+    <div slot="prefix" key="prefix">
+        {searchText.length === 0 ? (
+          <IgrIconButton key="searchIcon" ref={searchIconRef} variant="flat" name="search" collection="material">
+          </IgrIconButton>
+        ) : (
+          <IgrIconButton key="clearIcon" ref={clearIconRef} variant="flat" name="clear" collection="material" clicked={clearSearch}>
+          </IgrIconButton>
+        )}        
+    </div>
+    <div slot="suffix" key="chipSuffix">
+        <IgrChip ref={caseSensitiveChipRef} key="caseSensitiveChip" selectable="true">
+        <span key="caseSensitive">Case Sensitive</span>
+        </IgrChip>
+        <IgrChip ref={exactMatchChipRef} key="exactMatchChip" selectable="true">
+        <span key="exactMatch">Exact Match</span>
+        </IgrChip>
+    </div>
+    <div slot="suffix" key="buttonsSuffix">
+        <IgrIconButton key="prevIconButton" ref={iconButtonPrevRef} variant="flat" name="prev" collection="material" clicked={prevSearch}>
+        </IgrIconButton>
+        <IgrIconButton key="nextIconButton" ref={iconButtonNextRef} variant="flat" name="next" collection="material" clicked={nextSearch}>
+        </IgrIconButton>
+    </div>
+</IgrInput>
+```
+<!-- ComponentEnd: TreeGrid -->
 
 ```razor
 <IgbInput ValueChanging="OnValueChanging" Value="@searchText" @onkeydown="OnSearchKeyDown">
@@ -620,27 +1155,6 @@ public clearSearch() {
 </IgbInput>
 
 @code {
-    private IgbIcon searchIconRef { get; set; }
-    const string searchIcon = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' /></svg>";
-    const string prevIcon = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z'></path></svg>";
-    const string nextIcon = "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'></path></svg>";
-    const string clearIcon = "<svg width='24' height='24' viewBox='0 0 24 24' title='Clear'><path d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></svg>";
-
-    protected override void OnAfterRender(bool firstRender)
-    {
-        base.OnAfterRender(firstRender);
-
-        if (this.searchIconRef != null && firstRender)
-        {
-            this.searchIconRef.EnsureReady().ContinueWith(new Action<Task>((e) =>
-            {
-                this.searchIconRef.RegisterIconFromTextAsync("search", searchIcon, "material");
-                this.searchIconRef.RegisterIconFromTextAsync("prev", prevIcon, "material");
-                this.searchIconRef.RegisterIconFromTextAsync("next", nextIcon, "material");
-                this.searchIconRef.RegisterIconFromTextAsync("clear", clearIcon, "material");
-            }));
-        }
-    }
 
     public void clearSearch()
     {
@@ -668,15 +1182,7 @@ public clearSearch() {
     </div>
 </igx-suffix>
 ```
-<!-- end: Angular -->
 
-<!-- Blazor -->
-
-<!-- TO DO -->
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
 ```html
 <igc-suffix >
     <div class="resultsText">
@@ -697,11 +1203,12 @@ public showResults() {
     }
 }
 ```
-<!-- end: WebComponents -->
+
+<!-- end: Angular -->
+
+- 以下は `CaseSensitive` と `ExactMatch` を切り替えるチップを表示する方法です。プロパティに基づいて色が変わる 2 つのチップでチェックボックスを 置き換えます。チップをクリックすると、どちらのチップがクリックされたかによって各ハンドラーを呼び出します。
 
 <!-- Angular -->
-
-- 以下は `CaseSensitive` と `ExactMatch` を切り替えるチップを表示する方法です。プロパティに基づいて色が変わる 2 つのチップでチェックボックスを 置き換えます。チップをクリックすると、どちらのチップがクリックされたかによって各ハンドラー `UpdateSearch` または `UpdateExactSearch` を呼び出します。
 
 ```html
 <div class="chips">
@@ -715,8 +1222,94 @@ public showResults() {
     </igx-chips-area>
 </div>
 ```
+<!-- end: Angular -->
+
+
+<!-- WebComponents -->
+```html
+<div slot="suffix">
+    <igc-chip selectable="true" id="caseSensitiveChip">Case Sensitive</igc-chip>
+    <igc-chip selectable="true" id="exactMatchChip">Exact Match</igc-chip>
+</div>
+```
+
+<!-- ComponentStart: Grid -->
+```ts
+constructor() {
+    const input = document.getElementById("searchBox") as IgcInputComponent;
+    input.addEventListener("change", this.updateSearch);
+}
+public updateSearch() {
+    const grid = document.getElementById('grid') as IgcGridComponent;
+    const caseSensitiveChip = document.getElementById('caseSensitiveChip') as IgcChipComponent;
+    const exactMatchChip = document.getElementById('exactMatchChip') as IgcChipComponent;
+    grid.findNext(input.value, caseSensitiveChip.selected, exactMatchChip.selected);
+}
+```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```ts
+constructor() {
+    this.caseSensitiveChip = document.getElementById('caseSensitiveChip') as IgcChipComponent;
+    this.exactMatchChip = document.getElementById('exactMatchChip') as IgcChipComponent;
+
+    this.caseSensitiveChip.addEventListener('igcSelect', (evt) => {
+        this.treeGrid.findNext(this.searchBox.value, evt.detail, this.exactMatchChip.selected);
+    });
+    this.exactMatchChip.addEventListener('igcSelect', (evt) => {
+        this.treeGrid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, evt.detail);
+    });
+}
+```
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- end: WebComponents -->
+
+```tsx
+<div slot="suffix" key="chipSuffix">
+    <IgrChip ref={caseSensitiveChipRef} key="caseSensitiveChip" selectable="true" select={handleCaseSensitiveChange}>
+        <span key="caseSensitive">Case Sensitive</span>
+    </IgrChip>
+    <IgrChip ref={exactMatchChipRef} key="exactMatchChip" selectable="true" select={handleExactMatchChange}>
+        <span key="exactMatch">Exact Match</span>
+    </IgrChip>
+</div>
+
+function handleCaseSensitiveChange(chip: IgrChip, event: IgrComponentBoolValueChangedEventArgs) {
+  gridRef.current.findNext(searchText, event.detail, exactMatchChipRef.current.selected);
+}
+function handleExactMatchChange(chip: IgrChip, event: IgrComponentBoolValueChangedEventArgs) {
+  gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, event.detail);
+}
+```
+
+```razor
+    <div class="chips" slot="suffix">
+        <IgbChip Selectable=true SelectedChanged="UpdateCase">
+            Case Sensitive
+        </IgbChip>
+        <IgbChip  Selectable=true SelectedChanged="UpdateExactSearch">
+            Exact Match
+        </IgbChip>
+    </div>
+
+@code {
+    public void UpdateCase(bool selected) {
+        this.caseSensitive = selected;
+        this.grid.FindNextAsync(this.searchText, this.caseSensitive, this.exactMatch);
+    }
+
+    public void UpdateExactSearch(bool selected) {
+        this.exactMatch = selected;
+        this.grid.FindNextAsync(this.searchText, this.caseSensitive, this.exactMatch);
+    }
+}
+```
 
 - 検索ナビゲーション ボタンは、マテリアルアイコンを使用して入力を Ripple スタイルボタンにします。click イベントのハンドラーはそのままで `FindNext`/`FindPrev` メソッドを呼び出します。
+
+<!-- Angular -->
 
 ```html
 <igx-suffix>
@@ -732,102 +1325,99 @@ public showResults() {
 ```
 <!-- end: Angular -->
 
+
 <!-- WebComponents -->
+
 ```html
-<div class="chips">
-    <igc-chips-area>
-        <igc-chip id="case">
-            <span>Case Sensitive</span>
-        </igc-chip>
-        <igc-chip id="exact">
-            <span>Exact Match</span>
-        </igc-chip>
-    </igc-chips-area>
+<div slot="suffix">
+    <igc-icon-button id="prevIconBtn" variant="flat" name="prev" collection="material" ></igc-icon-button>
+    <igc-icon-button id="nextIconBtn" variant="flat" name="next" collection="material"></igc-icon-button>
 </div>
 ```
 
 ```typescript
 constructor() {
-    var case = this.case = document.getElementById('case') as HtmlInputElement;
-    var exact = this.exact = document.getElementById('exact') as HtmlInputElement;
-
-    this._bind = () => {
-        case.checked = this.caseSensitive;
-        exact.checked = this.exactMatch;
-        case.addEventListener('change', updateSearch);
-        exact.addEventListener('change', updateExactSearch);
-    }
-    this._bind();
-}
-
-public updateSearch() {
-    this.caseSensitive = !this.caseSensitive;
-    this.grid.findNext(this.searchText, this.caseSensitive, this.exactMatch);
-}
-
-public updateExactSearch() {
-    this.exactMatch = !this.exactMatch;
-    this.grid.findNext(this.searchText, this.caseSensitive, this.exactMatch);
+    const nextIconButton = this.nextIconButton = document.getElementById('nextIconBtn') as IgcIconButtonComponent;
+    const prevIconButton = this.prevIconButton = document.getElementById('prevIconBtn') as IgcIconButtonComponent;
+    nextIconButton.addEventListener("click", this.nextSearch);
+    prevIconButton.addEventListener("click", this.prevSearch);
 }
 ```
 
-```html
-<igc-suffix>
-    <div class="searchButtons">
-        <button id="prevBtn">
-            <igc-icon fontSet="material">navigate_before</igx-icon>
-        </button>
-        <button id="nextBtn">
-            <igc-icon fontSet="material">navigate_next</igx-icon>
-        </button>
-    </div>
-</igc-suffix>
-```
+<!-- ComponentStart: Grid -->
 ```ts
-constructor() {
-    var prevBtn = this.prevBtn = document.getElementById('prevBtn') as HtmlInputElement;
-    var nextBtn = this.nextBtn = document.getElementById('nextBtn') as HtmlInputElement;
+public nextSearch() {
+    this.grid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+}
 
-    this._bind = () => {
-        prevBtn.addEventListener('change', findPrev);
-        nextBtn.addEventListener('change', findPrev);
-    }
-    this._bind();
-}
-public findPrev(e) {
-    var searchText = e.target.value;
-    var caseSensitive = false;
-    var exactMatch = false;
-    grid.findPrev(searchText, caseSensitive, exactMatch)
-}
-public findNext(e) {
-    var searchText = e.target.value;
-    var caseSensitive = false;
-    var exactMatch = false;
-    grid.findNext(searchText, caseSensitive, exactMatch)
+public prevSearch() {
+    this.grid.findPrev(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
 }
 ```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```ts
+public prevSearch() {
+    this.treeGrid.findPrev(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+}
+
+public nextSearch() {
+    this.treeGrid.findNext(this.searchBox.value, this.caseSensitiveChip.selected, this.exactMatchChip.selected);
+}
+```
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- end: WebComponents -->
 
+```tsx
+function prevSearch() {
+    gridRef.current.findPrev(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+}
+
+function nextSearch() {
+    gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+}
+
+<div slot="suffix" key="buttonsSuffix">
+    <IgrIconButton key="prevIconButton" ref={iconButtonPrevRef} variant="flat" name="prev" collection="material" clicked={prevSearch}>
+    </IgrIconButton>
+    <IgrIconButton key="nextIconButton" ref={iconButtonNextRef} variant="flat" name="next" collection="material" clicked={nextSearch}>
+    </IgrIconButton>
+</div>
+```
+
+
+```razor
+<div class="searchButtons" slot="suffix">
+    <IgbIconButton Variant="IconButtonVariant.Flat" @onclick="PrevSearch">
+        <IgbIcon IconName="prev" Collection="material"/>
+    </IgbIconButton>
+    <IgbIconButton Variant="IconButtonVariant.Flat" @onclick="NextSearch">
+        <IgbIcon IconName="next" Collection="material" />
+    </IgbIconButton>
+</div>
+@code {
+    public void PrevSearch()
+    {
+        this.grid.FindPrevAsync(this.searchText, this.caseSensitive, this.exactMatch);
+    }
+
+    public void NextSearch()
+    {
+        this.grid.FindNextAsync(this.searchText, this.caseSensitive, this.exactMatch);
+    }
+}
+```
+
 ## 既知の問題と制限
-<!-- Angular -->
+
 
 |制限|説明|
 |--- |--- |
-|テンプレートを使用したセル内の検索|検索機能の強調表示が、デフォルトのセルテンプレートに対してのみ機能する問題。カスタム セル テンプレートを含む列がある場合、強調表示が機能しないため、列フォーマッタなどの代替アプローチを使用するか、`Searchable` (検索可能な) プロパティを false に設定します。|
-|リモート仮想化| リモート仮想化の使用時に検索が正しく動作しない問題。|
-|セル テキストが切れる問題| セル内のテキストが長すぎるために検索テキストが省略記号によって切れている場合も、セルまでスクロールして一致カウントに含まれますが、強調表示はされません。 |
-
-<!-- end: Angular -->
-
-<!-- Blazor -->
-
-|制限|説明|
-|--- |--- |
-|テンプレートを使用したセル内の検索|検索機能の強調表示が、デフォルトのセルテンプレートに対してのみ機能する問題。カスタム セル テンプレートを含む列がある場合、強調表示が機能しないため、列フォーマッタなどの代替アプローチを使用するか、`Searchable` (検索可能な) プロパティを false に設定します。|
-|セル テキストが切れる問題| セル内のテキストが長すぎるために検索テキストが省略記号によって切れている場合も、セルまでスクロールして一致カウントに含まれますが、強調表示はされません。 |
-
-<!-- end: Blazor -->
+|テンプレートを使用したセル内の検索|検索機能のハイライト表示が、デフォルトのセルテンプレートに対してのみ機能する問題。カスタム セル テンプレートを含む列がある場合、ハイライト表示が機能しないため、列フォーマッタなどの代替アプローチを使用するか、`Searchable` (検索可能な) プロパティを false に設定します。|
+|リモート仮想化| リモート仮想化の使用時に検索が正しく動作しません。|
+|セル テキストが切れる問題| セル内のテキストが長すぎるために検索テキストが省略記号によって切れている場合も、セルまでスクロールして一致カウントに含まれますが、ハイライト表示はされません。 |
 
 ## API リファレンス
 
@@ -842,7 +1432,7 @@ public findNext(e) {
 `Column` プロパティ:
 -   `Searchable`
 
-その他のコンポーネントおよびディレクティブ (またはそのいずれか) で使用した API:
+その他のコンポーネント (またはそのいずれか) で使用した API:
 
 <!-- Angular -->
 
@@ -863,7 +1453,6 @@ public findNext(e) {
 <!-- end: Blazor -->
 
 ## その他のリソース
-
 
 * [仮想化とパフォーマンス](virtualization.md)
 * [フィルタリング](filtering.md)

@@ -7,7 +7,7 @@ _language: ja
 ---
 # {Platform} Spreadsheet の条件付き書式設定
 
-{Platform} Spreadsheet コンポーネントは、ワークシートのセルに条件付き書式を設定できます。これにより、条件に基づいてデータのさまざまな部分を強調表示できます。
+{Platform} Spreadsheet コンポーネントは、ワークシートのセルに条件付き書式を設定できます。これにより、条件に基づいてデータのさまざまな部分をハイライト表示できます。
 
 ## {Platform} Spreadsheet の条件付き書式設定の例
 

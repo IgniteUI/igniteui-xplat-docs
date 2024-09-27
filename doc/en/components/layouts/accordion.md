@@ -2,8 +2,10 @@
 title: {Platform} Accordion | Accordion | Infragistics
 _description: Accordion is used to build vertical expandable panels in accordion menu.
 _keywords: {Platform} Accordion, {ProductName}, Infragistics
-mentionedTypes: ['Accordion', 'ExpansionPanel']
+mentionedTypes: ['Accordion', 'Infragistics.Controls.Layouts.Implementation.ExpansionPanel']
+namespace: Infragistics.Controls
 ---
+
 
 # {Platform} Accordion Overview
 
@@ -18,8 +20,6 @@ The following is a basic {ProductName} Accordion example of a FAQ section. It op
 In it, you can see how to define an accordion and its expansion panels. The sample also demonstrates the two types of expansion behavior. The switch button sets the `SingleExpand` property to toggle between single and multiple branches to be expanded at a time.
 
 `sample="/layouts/accordion/overview", height="460", alt="{Platform} Accordion Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -41,7 +41,34 @@ import { defineComponents, IgcAccordionComponent } from 'igniteui-webcomponents'
 defineComponents(IgcAccordionComponent);
 ```
 
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
+
+<!-- React -->
+
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Accordion` and the `ExpansionPanel`, its necessary CSS, and register its module, like so:
+
+```tsx
+import {
+  IgrAccordion,
+  IgrAccordionModule,
+  IgrExpansionPanel,
+  IgrExpansionPanelModule,
+} from "igniteui-react";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
+
+IgrAccordionModule.register();
+IgrExpansionPanelModule.register();
+```
+
+<!-- end: React -->
 
 Before using the `Accordion`, you need to register it as follows:
 
@@ -70,7 +97,7 @@ Panels provide `Disabled` and `Open` properties, which give you the ability to c
 
 ### Declaring an Accordion
 
-The accordion wraps all expansion panel`s declared inside it.
+The accordion wraps all expansion panels declared inside it.
 
 ```html
 <igc-accordion id="accordion" single-expand="true">
@@ -106,6 +133,19 @@ The accordion wraps all expansion panel`s declared inside it.
 </IgbAccordion>
 ```
 
+```tsx
+<IgrAccordion singleExpand={true}>
+  <IgrExpansionPanel>
+    <div slot="title">Title Panel 1</div>
+    <div>Content Panel 1</div>
+  </IgrExpansionPanel>
+  <IgrExpansionPanel>
+    <div slot="title">Title Panel 2</div>
+    <div>Content Panel 2</div>
+  </IgrExpansionPanel>
+</IgrAccordion>
+```
+
 <!-- WebComponents -->
 
 Using the `Panels` accessor you can get a reference to the collection containing all expansion panels children of the `Accordion`.
@@ -121,6 +161,7 @@ constructor() {
 ```
 
 <!-- end: WebComponents -->
+
 As demonstrated above, the `SingleExpand`property gives you the ability to set whether single or multiple panels can be expanded at a time.
 
 By using the `HideAll` and `ShowAll` methods you can respectively collapse and expand all `ExpansionPanel`s of the `Accordion` programmatically.
@@ -157,12 +198,12 @@ Keyboard navigation in the {Platform} Accordion provides a rich variety of keybo
 The Accordion navigation is compliant with W3C accessibility standards and convenient to use.
 
 **Key Combinations**
- - <kbd>Arrow Down</kbd> - moves the focus to the panel below
- - <kbd>Arrow Up</kbd> - moves the focus to the panel above
- - <kbd>Alt + Arrow Down</kbd> - opens the focused panel in the accordion
- - <kbd>Alt + Arrow Up</kbd> - closes the focused panel in the accordion
- - <kbd>Shift + Alt + Arrow Down</kbd> - opens all enabled panels (if singleExpand is set to true opens the focused panel)
- - <kbd>Shift + Alt + Arrow Up</kbd> - closes all enabled panels
+ - <kbd>↓</kbd> - moves the focus to the panel below
+ - <kbd>↑</kbd> - moves the focus to the panel above
+ - <kbd>Alt</kbd> + <kbd>↓</kbd> - opens the focused panel in the accordion
+ - <kbd>Alt</kbd> + <kbd>↑</kbd> - closes the focused panel in the accordion
+ - <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>↓</kbd> - opens all enabled panels (if singleExpand is set to true opens the focused panel)
+ - <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>↑</kbd> - closes all enabled panels
  - <kbd>Home</kbd> - navigates to the FIRST enabled panel in the accordion
  - <kbd>End</kbd> - navigates to the LAST enabled panel in the accordion
 

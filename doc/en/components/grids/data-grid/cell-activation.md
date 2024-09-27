@@ -35,20 +35,20 @@ The {ProductName} Data Table / Data Grid supports a cell activation feature that
 
 After setting the `ActivationMode` property of the grid to `Cell`, this will enable a range of keyboard navigation options in the data grid. Below is a description of each of the key presses / combinations and the effect they will have relative to the currently activated cell:
 
-- <b>Arrow Key Up</b>: Navigate one cell up.
-- <b>Arrow Key Down</b>: Navigate one cell down.
-- <b>Arrow Key Left</b>: Navigate one cell to the left on the current row only.
-- <b>Arrow Key Right</b>: Navigate one cell to the right on the current row only.
-- <b>Page Up</b>: Scroll the grid one viewport page up.
-- <b>Page Down</b>: Scroll the grid one viewport page down.
-- <b>Tab</b>: Move the active cell to the next cell to the right, or the left-most cell of the next row if the last cell of that row is reached.
-- <b>Shift + Tab</b>: Move the active cell to the next cell to the left, or the right-most cell of the previous row if the first cell of that row is reached.
-- <b>Ctrl + Arrow Key Up</b>: Move to the top cell in the column.
-- <b>Ctrl + Arrow Key Down</b>: Move to the bottom cell in the column.
-- <b>Ctrl + Arrow Key Left</b>: Move to the left-most cell in the row.
-- <b>Ctrl + Arrow Key Right</b>: Move to the right-most cell in the row.
-- <b>Ctrl + Home</b>: Move to the top-left cell in the grid.
-- <b>Ctrl + End</b>: Move to the bottom-right cell in the grid.
+- <kbd>↑</kbd>: Navigate one cell up.
+- <kbd>↓</kbd>: Navigate one cell down.
+- <kbd>←</kbd>: Navigate one cell to the left on the current row only.
+- <kbd>→</kbd>: Navigate one cell to the right on the current row only.
+- <kbd>Page Up</kbd>: Scroll the grid one viewport page up.
+- <kbd>Page Down</kbd>: Scroll the grid one viewport page down.
+- <kbd>Tab</kbd>: Move the active cell to the next cell to the right, or the left-most cell of the next row if the last cell of that row is reached.
+- <kbd>Shift</kbd> + <kbd>Tab</kbd>: Move the active cell to the next cell to the left, or the right-most cell of the previous row if the first cell of that row is reached.
+- <kbd>Ctrl</kbd> + <kbd>↑</kbd>: Move to the top cell in the column.
+- <kbd>Ctrl</kbd> + <kbd>↓</kbd>: Move to the bottom cell in the column.
+- <kbd>Ctrl</kbd> + <kbd>←</kbd>: Move to the left-most cell in the row.
+- <kbd>Ctrl</kbd> + <kbd>→</kbd>: Move to the right-most cell in the row.
+- <kbd>Ctrl</kbd> + <kbd>Home</kbd>: Move to the top-left cell in the grid.
+- <kbd>Ctrl</kbd> + <kbd>End</kbd>: Move to the bottom-right cell in the grid.
 
 ## API References
 

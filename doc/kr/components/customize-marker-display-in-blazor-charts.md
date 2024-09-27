@@ -64,14 +64,14 @@ Then, bind the sample data to the IgbScatterSeries data source, provided in the 
 
 ```razor
 @* In the markup in the sample Razor component (.razor) *@
-<IgbDataChart Height = "320px" Width = "320px">
-    <IgbNumericXAxis Name = "xAxis" MinimumValue = "0" MaximumValue = "7"/>
-    <IgbNumericYAxis Name = "yAxis" MinimumValue = "0" MaximumValue = "10"/>
-    <IgbScatterSeries DataSource = "@DataSource"
-        XMemberPath = "XValue"
-        YMemberPath = "YValue"
-        XAxisName = "xAxis"
-        YAxisName = "yAxis"/>
+<IgbDataChart Height="320px" Width="320px">
+    <IgbNumericXAxis Name="xAxis" MinimumValue="0" MaximumValue="7"/>
+    <IgbNumericYAxis Name="yAxis" MinimumValue="0" MaximumValue="10"/>
+    <IgbScatterSeries DataSource="@DataSource"
+        XMemberPath="XValue"
+        YMemberPath="YValue"
+        XAxisName="xAxis"
+        YAxisName="yAxis"/>
 </IgbDataChart>
 ```
 
@@ -86,10 +86,10 @@ Moving on to customization now. Let’s tweak the display of the markers to show
 We must define a factory function that returns a JavaScript object with two methods - measure and render. This function is called from the Ignite UI toolbox each time a marker is drawn.
 
 ```razor
-// wwwroot / customMarkerTemplateFunc.js
-function customMarkerTemplateFunc () {
+// in /wwwroot/customMarkerTemplateFunc.js
+function customMarkerTemplateFunc() {
     return {
-        measure: function (mesureInfo) {},
+        measure: function (measureInfo) {},
         render: function (renderInfo) {}
    }
 }
@@ -103,9 +103,9 @@ In other words, the value of each property of the SampleDataType record type can
 As a result, when calling this method the width and height of the marker (both in px) are set in the width and height fields of the argument.
 
 ```razor
-// wwwroot / customMarkerTemplateFunc.js
+// in /wwwroot/customMarkerTemplateFunc.js
 
-function customMarkerTemplateFunc () {
+function customMarkerTemplateFunc() {
     return {
         measure: function ( measureInfo ) {
            // In this example, based on the Volume property value of the data to draw
@@ -118,8 +118,6 @@ function customMarkerTemplateFunc () {
        }
    }
 }
-
-...
 ```
 
 ## Implementing a render Method for the Marker's Custom Rendering Object
@@ -131,11 +129,11 @@ Therefore, when calling the render method, the data to be drawn can be reference
 You will see that the method draws a marker on the 2D context object of the HTML Canvas element passed via that argument.
 
 ```razor
-// wwwroot / customMarkerTemplateFunc.js
+// in /wwwroot/customMarkerTemplateFunc.js
 
-function customMarkerTemplateFunc () {
+function customMarkerTemplateFunc() {
     return {
-        ...
+        // ...
         render: function ( renderInfo ) {
             // Since the renderInfo passed as an argument is packed with coordinate-related information for drawing,
             // Take this out
@@ -157,7 +155,6 @@ function customMarkerTemplateFunc () {
         }
     }
 }
-...
 ```
 Note you can implement any custom drawing with the HTML Canvas 2D context.
 
@@ -165,33 +162,33 @@ However, since the render method is responsible for rendering the markers, it is
 
 ## Registering a Factory Function in the Ignite UI That Returns a Custom Drawing Object for the Marker
 
-Once the measure and render methods are implemented, call the igRegisterScript() function provided by Ignite UI. This will register the function that returns an object with two methods - measure and render. Then, specify the "script name" character string in the first argument of the igRegisterScript () function.
+Once the measure and render methods are implemented, call the igRegisterScript function provided by Ignite UI. This will register the function that returns an object with two methods - measure and render. Then, specify the "script name" character string in the first argument of the igRegisterScript function.
 
 With Ignite UI, it is identified by the “script name” specified in this first argument, regardless of the name of the actual JavaScript function.
 
 ```razor
-// wwwroot / customMarkerTemplateFunc.js
+// in /wwwroot/customMarkerTemplateFunc.js
 
-function customMarkerTemplateFunc ( ) {
-...
+function customMarkerTemplateFunc() {
+    // ...
 }
 
 // Register the factory function implemented above in the Ignite UI.
 // (* The "script" name specified in the first argument of this registration is used
 // regardless of the JavaScript name of the factory function.
-igRegisterScript ( "customMarkerTemplateFunc" , customMarkerTemplateFunc );
+igRegisterScript("customMarkerTemplateFunc", customMarkerTemplateFunc);
 ```
 
 The above JavaScript program is loaded into the browser. However, in order to avoid global pollution, when the above script registration is executed, the JavaScript program up to this point is wrapped in an anonymous function that is immediately executed.
 
 ```razor
-// wwwroot / customMarkerTemplateFunc.js
+// in /wwwroot/customMarkerTemplateFunc.js
 
-(function () {
-    function customMarkerTemplateFunc ( ) {
-        ...
+(function() {
+    function customMarkerTemplateFunc() {
+        // ...
     }
-    igRegisterScript ("customMarkerTemplateFunc" , customMarkerTemplateFunc);
+    igRegisterScript("customMarkerTemplateFunc", customMarkerTemplateFunc);
 }) ();
 ```
 This completes the implementation on the JavaScript side.
@@ -201,28 +198,28 @@ The created JavaScript program file (.js) should be included in the fallback pag
 Mind the arrangement order of the script elements in order to ensure it will be loaded after the JavaScript runtime of Ignite UI for Blazor.
 
 ```razor
+<!-- ... -->
 <script src="_content / IgniteUI.Blazor / app.bundle.js"> </script>
 
-<!-After JavaScript in Ignite UI for Blazor,
-Load a custom drawing JavaScript program for marker display->
+<!-- After JavaScript in Ignite UI for Blazor,
+Load a custom drawing JavaScript program for marker display -->
 
 <script src="customMarkerTemplateFunc.js"></script>
-...
 ```
 
 ## Specifying the “Script Name” in the Series Parameters
 
 Finally, specify the "script name" in the series parameter to use the JavaScript program for custom rendering of markers created up to this point.
 
-There is a string parameter called MarkerTemplateScript, where you specify the script name of the JavaScript program that will perform the custom drawing of the marker. It is identified by the character string specified in the first argument when registering with the igRegisterScript () JavaScript function.
+There is a string parameter called MarkerTemplateScript, where you specify the script name of the JavaScript program that will perform the custom drawing of the marker. It is identified by the character string specified in the first argument when registering with the igRegisterScript function.
 
 ```razor
 @* In the markup in the sample Razor component (.razor) *@
-<IgbDataChart Height = "320px" Width = "320px">
-    ...
-    <IgbScatterSeries ...
-    ...
-    MarkerTemplateScript = "customMarkerTemplateFunc"/>
+<IgbDataChart Height="320px" Width="320px">
+    @* ... *@
+    <IgbScatterSeries
+    @* ... *@
+    MarkerTemplateScript="customMarkerTemplateFunc"/>
 </IgbDataChart>
 ```
 The scatter plot is now displayed with markers of size and fill color according to the properties of the bound item.

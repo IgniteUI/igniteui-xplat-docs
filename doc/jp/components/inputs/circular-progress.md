@@ -13,8 +13,6 @@ _language: ja
 
 `sample="/inputs/circular-progress-indicator/simple", height="150", alt="{Platform} Circular Progress の例"`
 
-
-
 <div class="divider--half"></div>
 
 ## 使用方法
@@ -34,6 +32,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcCircularProgressComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -71,12 +72,12 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCircularProgressModule));
 
 `CircularProgress` の使用を開始する最も簡単な方法は次のとおりです:
 
-```tsx
-<IgrCircularProgress value="100"></IgrCircularProgress>
-```
-
 ```html
 <igc-circular-progress value="100"></igc-circular-progress>
+```
+
+```tsx
+<IgrCircularProgress value="100"></IgrCircularProgress>
 ```
 
 ```razor
@@ -148,7 +149,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCircularProgressModule));
 
 
 > [!Note]
->{ProductName} `CircularProgress` のグラデーション スロットとして定義された `CircularGradient` ごとに、[SVG Stop](https://developer.mozilla.org/ja/docs/Web/SVG/Element/stop) 要素が作成されます。`color`、`offset`、および `opacity` として渡された値は、それ以上の検証なしで、SVG 要素の stop-color、offset、および stop-opacity として設定されます。
+>{ProductName} `CircularProgress` のグラデーション スロットとして定義された `CircularGradient` ごとに、[SVG stop](https://developer.mozilla.org/ja/docs/Web/SVG/Element/stop) 要素が作成されます。`color`、`offset`、および `opacity` として渡された値は、それ以上の検証なしで、SVG 要素の stop-color、offset、および stop-opacity として設定されます。
 
 ```tsx
 <IgrCircularProgress >

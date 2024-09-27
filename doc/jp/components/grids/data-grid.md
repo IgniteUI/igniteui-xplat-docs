@@ -61,7 +61,7 @@ _language: ja
 
 この {ProductName} Grid の例では、ユーザーが基本スタイルと Excel スタイルの両方のフィルタリング、ライブ データのソート、およびグリッド集計とセル テンプレートの使用を実行する方法を確認できます。デモには、1 ページあたり 10 項目を表示するように設定されたページングも含まれています。
 
-`sample="/{GridSample}/overview", height="700", alt="{Platform} grid の例"`
+`sample="/{GridSample}/overview", img-src="https://static.infragistics.com/marketing/Website/products/ignite-ui-blazor/ignite-ui-blazor-client-grid", height="700", alt="{Platform} grid の例"`
 
 
 
@@ -71,7 +71,7 @@ _language: ja
 
 ### 依存関係
 
-{Platform} Data Grid を初期化するには、{ProductName} パッケージをインストールする必要があります。
+{Platform} Data Grid を初期化するには、<!-- Blazor -->{PackageCommon} パッケージ<!-- end: Blazor --><!-- WebComponents -->`{PackageGrids}` パッケージ<!-- end: WebComponents --><!-- React -->`{PackageCommon}` と `{PackageGrids}` パッケージ<!-- end: React -->をインストールする必要があります。
 
 <!-- Blazor -->
 
@@ -93,39 +93,53 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 ```
 <!-- end: Blazor -->
 
-<!-- Angular, React, WebComponents -->
-{Platform} グリッドのパッケージをインストールするときに、core (コア)、inputs (入力)、および layouts (レイアウト) パッケージもインストールする必要があります。
-
+<!-- Angular, WebComponents -->
 ```cmd
-npm install --save {PackageCore}
 npm install --save {PackageGrids}
-npm install --save {PackageInputs}
-npm install --save {PackageLayouts}
 ```
+<!-- end: Angular, WebComponents -->
 
-<!-- WebComponents -->
+<!-- React -->
+```cmd
+npm install --save {PackageCommon}
+npm install --save {PackageGrids}
+```
+<!-- end: React -->
+
+<!-- Angular, React, WebComponents -->
 
 グリッドを使用するには、次のインポートも含める必要があります。
 
+<!-- WebComponents -->
 ```typescript
 import 'igniteui-webcomponents-grids/grids/combined.js';
+```
+<!-- end: WebComponents -->
+
+```tsx
+import "igniteui-react-grids/grids";
 ```
 
 対応するスタイルも参照する必要があります。[テーマ](../themes/overview.md)の 1 つにライトモードのオプションまたはダークモードのオプションを選択し、プロジェクト構成に基づいてインポートできます:
 
+<!-- WebComponents -->
 ```typescript
 import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 ```
+<!-- end: WebComponents -->
 
+```tsx
+import 'igniteui-react-grids/grids/themes/light/bootstrap.css'
+```
+
+<!-- WebComponents -->
 またはそれをリンクするには:
 ```typescript
 <link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
 ```
-
-グリッドの外観をカスタマイズする方法の詳細については、[スタイリング](data-grid.md#web-components-グリッド-スタイルの構成)セクションを参照してください。
-
 <!-- end: WebComponents -->
 
+グリッドの外観をカスタマイズする方法の詳細については、[スタイル設定](data-grid.md#{PlatformLower}-grid-スタイル設定の構成) セクションを参照してください。
 <!-- end: Angular, React, WebComponents -->
 
 <!-- Angular, React, Blazor -->
@@ -148,12 +162,17 @@ import { IgxGridModule } from 'igniteui-angular';
 
 @NgModule({
     imports: [
-        ...
+        // ...
         IgxGridModule,
-        ...
+        // ...
     ]
 })
 export class AppModule {}
+```
+
+```tsx
+import { IgrGridModule } from "igniteui-react-grids";
+IgrGridModule.register();
 ```
 
 <!-- end: Angular, React, Blazor -->
@@ -182,6 +201,10 @@ constructor() {
 }
 ```
 
+```tsx
+<IgrGrid id="grid1" data={localData} autoGenerate="true"></IgrGrid>
+```
+
 `Id` プロパティは文字列値で、設定されない場合に自動生成生成されるグリッドの一意識別子です。`data` はグリッドをローカル データにバインドします。
 
 `AutoGenerate` プロパティは、データ ソース フィールドに基づいてグリッドの `Column` コンポーネントを自動生成するようにグリッドに指示します。列の適切なデータ型の決定を試みます。それ以外の場合、開発者は列およびデータ ソース フィールドへのマッピングを明示的に定義する必要があります。
@@ -198,7 +221,7 @@ constructor() {
 
 グリッド編集の各操作にはバッチ操作が含まれます。つまり、API には、編集を単一のサーバー呼び出しにグループ化するオプションがあります。または、グリッドの操作を使用して、グリッドの編集を実行したり、発生した操作を更新したりできます。CRUD 操作を備えた編集グリッドとしての優れた開発者エクスペリエンスに加えて、Angular グリッドには Excel のようなキーボード ナビゲーションが含まれます。一般的なデフォルトのグリッド ナビゲーションに加えて、お客様のニーズを満たすためにナビゲーション オプションを上書きするオプションが含まれています。優れたナビゲーション スキームを備えた編集可能なグリッドは、最新の業務アプリケーションにとって重要であり、Ignite UI グリッドを使用すると簡単になります。
 
-このトピックに続いて、[セル テンプレート](data-grid.md#セル-テンプレート)と[セル編集テンプレート](data-grid.md#セル編集テンプレート)および編集について詳しく学習します。
+このトピックに続いて、[セル テンプレート](data-grid.md#セル-テンプレート) と[セル編集テンプレート](data-grid.md#セル編集テンプレート) および編集について詳しく学習します。
 
 ## グリッドの列構成
 
@@ -234,12 +257,7 @@ constructor() {
 ```typescript
 constructor() {
     var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
-
-    this._bind = () => {
-        grid1.data = this.data;
-    }
-
-    this._bind();
+    grid1.data = this.data;
 }
 ```
 
@@ -249,6 +267,14 @@ constructor() {
     <IgbColumn Field="AthleteNumber" Sortable=true Header="Athlete Number" Filterable=false/>
     <IgbColumn Field="TrackProgress" Header="Track Progress" Filterable=false />
 </IgbGrid>
+```
+
+```tsx
+<IgrGrid id="grid1" autoGenerate="false" allowFiltering="true" data={localData}>
+    <IgrColumn field="Name" sortable="true"></igc-column>
+    <IgrColumn field="AthleteNumber" sortable="true" header="Athlete number" filterable="false"></IgrColumn>
+    <IgrColumn id="trackProgress" field="TrackProgress" header="Track progress" filterable="false"></IgrColumn>
+</IgrGrid>
 ```
 
 <!-- Angular -->
@@ -326,7 +352,23 @@ function formatUppercase(value) {
 }
 ```
 
-> [!Note]
+```tsx
+function nameHeaderTemplate(ctx: IgrColumnTemplateContext) {
+    return (
+    <>
+     {formatUppercase(ctx.dataContext.column.field)}
+    </>
+    );
+}
+
+function formatUppercase(value: string) {
+    return value.toUpperCase();
+}
+
+<IgrGrid id="name" field="Name" headerTemplate={nameHeaderTemplate}></IgrGrid>
+```
+
+> **注**:
 >グループ化 / 移動機能と一緒にヘッダー テンプレートを使用すると、列ヘッダー領域はドラッグ可能になりヘッダー テンプレートのカスタム要素部分にドラッグ不可としてマークするまでアクセスできません。以下の例をご覧ください。
 
 ```html
@@ -347,23 +389,31 @@ function formatUppercase(value) {
 ```typescript
 constructor() {
     var productName = this.productName = document.getElementById('productName') as IgcColumnComponent;
-
-    this._bind = () => {
-        productName.headerTemplate = this.productNameHeaderTemplate;
-    }
-
-    this._bind();
+    productName.headerTemplate = this.productNameHeaderTemplate;
 }
 
-public productNameHeaderTemplate = (ctx: IgcCellTemplateContext) => {
+public productNameHeaderTemplate = (ctx: IgcColumnTemplateContext) => {
     return html`
-        <div class="text">${ctx.cell.column.field}</div>
-        <igc-icon click="${toggleSummary(ctx.cell.column)}" [attr.draggable]="false">functions</igc-icon>
+        <div class="text">${ctx.column.field}</div>
+        <igc-icon @click="${() => this.toggleSummary(ctx.column)}" name="functions" draggable="false"></igc-icon>
     `;
 }
 
-public toggleSummary(column: IgxColumnComponent) {
+public toggleSummary(column: IgcColumnComponent) {
 }
+```
+
+```tsx
+function productNameHeaderTemplate(ctx: IgrColumnTemplateContext) {
+    return (
+        <>
+            <div class="text">${ctx.dataContext.column.field}</div>
+            <IgrIcon onClick={() => toggleSummary(ctx.dataContext.column)} name="functions" draggable="false"></IgrIcon>
+        </>
+    );
+}
+
+<IgrColumn id="productName" field="ProductName" header="Product Name" groupable="true" hasSummary="true" headerTemplate={productNameHeaderTemplate}></IgrColumn>
 ```
 
 ```razor
@@ -375,8 +425,8 @@ igRegisterScript("ProductNameHeaderTemplate", (ctx) => {
     var html = window.igTemplating.html;
 
     return html`
-        <div class="text">${ctx.cell.column.field}</div>
-        <igc-icon [attr.draggable]="false">functions</igc-icon>
+        <div class="text">${ctx.column.field}</div>
+        <igc-icon name="functions" draggable="false"></igc-icon>
     `;
 }, false)
 ```
@@ -402,21 +452,17 @@ igRegisterScript("ProductNameHeaderTemplate", (ctx) => {
 ```typescript
 constructor() {
     var name = this.name = document.getElementById('name') as IgcColumnComponent;
-
-    this._bind = () => {
-        name.bodyTemplate = this.nameCellTemplate;
-    }
-
-    this._bind();
+    name.bodyTemplate = this.nameCellTemplate;
 }
 
 public nameCellTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        ${this.formatTitleCase(ctx.cell.value)}
+        ${this.formatTitleCase(ctx.implicit)}
     `;
 }
 
 public formatTitleCase(value: string) {
+    return value.toUpperCase();
 }
 ```
 
@@ -427,12 +473,28 @@ public formatTitleCase(value: string) {
 igRegisterScript("NameCellTemplate", (ctx) => {
     var html = window.igTemplating.html;
 
-    return html`${this.formatTitleCase(ctx.cell.value)}`;
+    return html`${this.formatTitleCase(ctx.implicit)}`;
 }, false);
 
 function formatTitleCase(value) {
-    return value;
+    return value.toUpperCase();
 }
+```
+
+```tsx
+function formatTitleCase(value: string) {
+    return value.toUpperCase();
+}
+
+function nameCellTemplate(ctx: IgrCellTemplateContext) {
+  return (
+  <>
+   {formatTitleCase(ctx.dataContext.implicit)}
+  </>
+  );
+}
+
+<IgrColumn id="name" field="Name" bodyTemplate={nameCellTemplate}></IgrColumn>
 ```
 
 上記のスニペットで暗示的に提供されたセル値への参照を取得します。データを表示し、セルの値にカスタム スタイル設定およびパイプ変換を適用する場合に使用します。ただし、`Cell` インスタンスを以下のように使用するとより効果的です。
@@ -466,66 +528,106 @@ constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
     var name = this.name = document.getElementById('name') as IgcColumnComponent;
     var subscription = this.subscription = document.getElementById('subscription') as IgcColumnComponent;
-
-    this._bind = () => {
-        grid.data = this.data;
-        name.bodyTemplate = this.nameCellTemplate;
-        subscription.bodyTemplate = this.subscriptionCellTemplate;
-    }
-
-    this._bind();
+    grid.data = this.data;
+    name.bodyTemplate = this.nameCellTemplate;
+    subscription.bodyTemplate = this.subscriptionCellTemplate;
 }
 
 public nameCellTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <span tabindex="0" onkeydown="${this.deleteRow(ctx.cell.id)}">${this.formatTitleCase(ctx.cell.value)}</span>
+        <span tabindex="0" @keydown="${() => this.deleteRow(ctx.cell.id.rowIndex)}">${this.formatTitleCase(ctx.cell.value)}</span>
     `;
 }
 
 public subscriptionCellTemplate = (ctx: IgcCellTemplateContext) => {
-    return html`
-        <input type="checkbox" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}" />
-    `;
+    if (ctx.cell.value) {
+            return html` <input type="checkbox" checked /> `;
+    } else {
+            return html` <input type="checkbox"/> `;
+    }
 }
 
-public updateValue(value: boolean) {
-}
-
-public deleteRow(rowId: number) {
+public deleteRow(rowIndex: number) {
+     this.grid.deleteRow(rowIndex);
 }
 
 public formatTitleCase(value: string) {
+    return value.toUpperCase();
 }
 ```
 
+```tsx
+function nameCellTemplate(ctx: IgrCellTemplateContext) {
+    return (
+        <>
+            <span tabindex="0" keydown={() => deleteRow(ctx.dataContext.cell.id.rowIndex)}>
+            {formatTitleCase(ctx.dataContext.cell.value)}
+            </span>
+        </>
+    );
+}
+
+function subscriptionCellTemplate(ctx: IgrCellTemplateContext) {
+    if (ctx.dataContext.cell.value) {
+            return (
+                <>
+                 <input type="checkbox" checked />
+                </>
+            );
+    } else {
+            return (
+                <>
+                 <input type="checkbox"/>
+                </>
+            );
+    }
+}
+
+function deleteRow(rowIndex: number) {
+    grid.deleteRow(rowIndex);
+}
+
+function formatTitleCase(value: string) {
+    return value.toUpperCase();
+}
+
+<IgrGrid id="grid" autoGenerate="false" data={data}>
+    <IgrColumn id="name" field="Name" dataType="string" bodyTemplate={nameCellTemplate}></IgrColumn>
+    <IgrColumn id="subscription" field="Subscription" dataType="boolean" bodyTemplate={subscriptionCellTemplate}></IgrColumn>
+</IgrGrid>
+```
+
 ```razor
-<IgbGrid AutoGenerate=false>
+<IgbGrid Id="grid" AutoGenerate=false>
     <IgbColumn Field="Name" BodyTemplateScript="NameCellTemplate" />
     <IgbColumn Field="Subscription" BodyTemplateScript="SubscriptionCellTemplate" />
 </IgbGrid>
 
 //In JavaScript:
 igRegisterScript("NameCellTemplate", (ctx) => {
-    var html = window.igTemplating.html;
+       var html = window.igTemplating.html;
     return html`
-        <span tabindex="0" onkeydown="${this.deleteRow(ctx.cell.id)}">${this.formatTitleCase(ctx.cell.value)}</span>
+        <span tabindex="0" @keyup=${(e) => this.deleteRow(e, ctx.cell.id.rowIndex)}> ${this.formatTitleCase(ctx.cell.value)}</span >
     `;
 }, false);
 
 igRegisterScript("SubscriptionCellTemplate", (ctx) => {
     var html = window.igTemplating.html;
-    return html`
-        <input type="checkbox" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}" />
-    `;
+     if (ctx.cell.value) {
+            return html` <input type="checkbox" checked /> `;
+    } else {
+            return html` <input type="checkbox"/> `;
+    }
 }, false);
 
-function updateValue(value) {
-}
-
-function deleteRow(rowId) {
+function deleteRow(e, rowIndex) {
+    if (e.code === "Delete") {
+        this.grid.deleteRow(rowIndex);
+    }
 }
 
 function formatTitleCase(value) {
+    return value.toUpperCase();
 }
 ```
 
@@ -535,7 +637,7 @@ function formatTitleCase(value) {
 
 <!-- end: Angular -->
 
-> [!Note]
+> **注**:
 > グリッドは、数値、文字列、日付、およびブール列タイプのデフォルトの処理を公開します。例えば、ブール列タイプの場合に列はデフォルトで true/false の代わりに `check` または `close` アイコンを表示します。
 
 <!-- Angular -->
@@ -568,12 +670,7 @@ function formatTitleCase(value) {
 ```typescript
 constructor() {
     var price = this.price = document.getElementById('price') as IgcColumnComponent;
-
-    this._bind = () => {
-        price.inlineEditorTemplate = this.priceCellTemplate;
-    }
-
-    this._bind();
+    price.inlineEditorTemplate = this.priceCellTemplate;
 }
 
 public priceCellTemplate = (ctx: IgcCellTemplateContext) => {
@@ -581,12 +678,31 @@ public priceCellTemplate = (ctx: IgcCellTemplateContext) => {
         <label>
             Enter the new price tag
         </label>
-        <input name="price" type="number" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}"  />
+        <input name="price" type="number" value="${ctx.cell.value}" @change="${() => this.updateValue(ctx.cell.value)}"  />
     `;
 }
 
 public updateValue(value: number) {
 }
+```
+
+```tsx
+function priceCellTemplate(ctx: IgrCellTemplateContext) {
+    return (
+        <>
+            <label>
+                Enter the new price tag
+            </label>
+            <input name="price" type="number" value={ctx.dataContext.cell.value} 
+                change={() => this.updateValue(ctx.dataContext.cell.value)}/>
+        </>
+    );
+}
+
+function updateValue(value: number) {
+}
+
+<IgrColumn id="price" field="Price" dataType="number" editable="true" inlineEditorTemplate={priceCellTemplate}></IgrColumn>
 ```
 
 ```razor
@@ -600,11 +716,12 @@ igRegisterScript("PriceCellTemplate", (ctx) => {
         <label>
             Enter the new price tag
         </label>
-        <input name="price" type="number" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}"  />
+        <input name="price" type="number" value="${ctx.cell.value}"
+        @change=${(e) => this.updateValue(e, ctx.cell.value)} />
     `;
 }, false);
 
-function updateValue(value) {
+function updateValue(event, value) {
 }
 ```
 
@@ -636,7 +753,7 @@ public normalView: TemplateRef<any>;
 @ViewChild("smallView", { read: TemplateRef })
 public smallView: TemplateRef<any>;
 
-....
+// ...
 
 const column = this.grid.getColumnByName("User");
 // Return the appropriate template based on some condition.
@@ -667,6 +784,36 @@ public smallViewTemplate = (ctx: IgcCellTemplateContext) => {
         <div class="user-details-small">${ ctx.cell.value }</div>
     `;
 }
+```
+
+```tsx
+<IgrGrid>
+    {/* Column declarations */}
+</IgrGrid>
+```
+
+```tsx
+function normalViewTemplate(ctx: IgrCellTemplateContext) {
+    return (
+        <>
+            <div class="user-details">{ ctx.dataContext.cell.value }</div>
+            <UserDetailsComponent></UserDetailsComponent>
+        </>
+    );
+}
+
+function smallViewTemplate(ctx: IgrCellTemplateContext) {
+    return (
+        <>
+            <div class="user-details-small">{ ctx.dataContext.cell.value }</div>
+        </>
+    );
+}
+
+const column = grid.getColumnByName("User");
+// Return the appropriate template based on some condition.
+// For example saved user settings, viewport size, etc.
+column.bodyTemplate = smallViewTemplate;
 ```
 
 ```razor
@@ -711,7 +858,16 @@ public initColumns(column: IgxGridColumn) {
 ```
 ```typescript
 public initColumns(column: IgcGridColumn) {
-    const column: IgcGridComponent = column;
+    if (column.field === 'ProductName') {
+        column.sortable = true;
+        column.editable = true;
+    }
+}
+```
+
+```tsx
+function initColumns(grid: IgrGridBaseDirective, args: IgrColumnComponentEventArgs) {
+    const column: IgrColumn = args.detail;
     if (column.field === 'ProductName') {
         column.sortable = true;
         column.editable = true;
@@ -726,7 +882,7 @@ public initColumns(column: IgcGridColumn) {
     public void OnColumnInit(IgbColumnComponentEventArgs args)
     {
         IgbColumn column = args.Detail;
-        if(column.Field == "ProductName"){
+        if (column.Field == "ProductName") {
             column.Sortable = true;
             column.Editable = true;
         }
@@ -780,30 +936,35 @@ private _columnPipeArgs: any | null = null;
 
 constructor() {
     var orderDate = this.orderDate = document.getElementById('orderDate') as IgcColumnComponent;
-
-    this._bind = () => {
-        orderDate.pipeArgs = this.columnPipeArgs;
-    }
-
-    this._bind();
+    orderDate.pipeArgs = this.columnPipeArgs;
 }
+```
+
+```tsx
+const columnPipeArgs = {
+    format: "longDate",
+    timezone: "UTC",
+    digitsInfo: "1.2-2"
+};
+
+<IgrColumn field="OrderDate" dataType="date" pipeArgs={columnPipeArgs}></IgrColumn>
 ```
 
 ```razor
 <IgbColumn Field="OrderDate"
            DataType=GridColumnDataType.Date
-           PipeArgs=@(new IgbColumnPipeArgs(){ Timezone="UTC+0", DigitsInfo="1.2-2", Format = "longDate" }) />
+           PipeArgs=@(new IgbColumnPipeArgs() { Timezone="UTC+0", DigitsInfo="1.2-2", Format = "longDate" }) />
 
 <IgbColumn Field="UnitPrice"
            DataType=GridColumnDataType.Date
-           PipeArgs=@(new IgbColumnPipeArgs(){ Timezone="UTC+0", DigitsInfo="1.2-2", Format = "longDate" }) />
+           PipeArgs=@(new IgbColumnPipeArgs() { Timezone="UTC+0", DigitsInfo="1.2-2", Format = "longDate" }) />
 ```
 
 `OrderDate` 列は `Format` および `Timezone` プロパティのみに遵守しますが、`UnitPrice` は `DigitsInfo` のみに遵守します。
 
 すべての利用可能な列データ型は、公式の[列タイプ トピック](grid/column-types.md#デフォルトのテンプレート)にあります。
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 
 ## グリッド データの構造
 
@@ -834,20 +995,24 @@ const POJO = [{
   }];
 ```
 
->[!WARNING]
+>**警告**:
 >**キー値に配列を含まないでください。**
 
 >`AutoGenerate` 列を使用する場合、**データ キーが同一である必要があります**。
 
-<!-- end: Angular, WebComponents -->
+<!-- end: Angular, WebComponents, React -->
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 ## グリッドのデータ バインディング
 
 はじめにリモート データ サービスにバインドするためにグリッドを変更します。大規模なアプリケーション レベルでは一般的なシナリオです。
 
 <!-- WebComponents -->
-これを行うには、JSON 応答を受信する特定の URL からデータを取得し、それをグリッドのデータ ソースとして使用される `northwindEmployees` プロパティに割り当てます。
+これを行うには、JSON 応答を受信して指定された URL からデータを取得し、それをグリッドのデータ ソースとして使用されるグリッドの `data` プロパティに割り当てます。
+
+```html
+<igc-grid id="grid1"></igc-grid>
+```
 
 ```typescript
 public fetchData(url: string): void {
@@ -856,20 +1021,32 @@ public fetchData(url: string): void {
       .then(data => this.onDataLoaded(data));
 }
 public onDataLoaded(jsonData: any[]) {
-    this.northwindEmployees = jsonData;
-  }
-
-@property()
-private northwindEmployees?: any[];
-```
-
-次に、グリッドをそのデータにバインドできます:
-
-```html
-<igc-grid id="grid1" .data="${this.northwindEmployees}">
+    var grid1 = document.getElementById("grid1") as IgcGridComponent;
+    grid1.data = jsonData;
+}
 ```
 
 <!-- end:WebComponents -->
+
+<!-- React -->
+これを行うには、JSON 応答を受信して指定された URL からデータを取得し、それをグリッドのデータ ソースとして使用されるグリッドの `data` プロパティに割り当てます。
+
+```tsx
+<IgrGrid ref={gridRef}></IgrGrid>
+```
+
+```tsx
+function fetchData(url: string): void {
+    fetch(url)
+      .then(response => response.json())
+      .then(data => onDataLoaded(data));
+}
+function onDataLoaded(jsonData: any[]) {
+    gridRef.current.data = jsonData;
+  }
+```
+
+<!-- end:React -->
 
 <!-- Angular -->
 
@@ -997,7 +1174,7 @@ export class MyComponent implements OnInit {
 **注**: リモート データにバインドする場合、グリッドの `AutoGenerate` プロパティは使用しないことをお勧めします。データを検証して適切な列を生成するためにデータが利用可能である必要があります。リモート サービスの応答が完了するまでデータが利用できないため、グリッドはエラーを発生します。リモート サービスへバインド時に `AutoGenerate` を使用する機能は今後追加予定です。
 
 
-<!-- end: Angular, WebComponents -->
+<!-- end: Angular, WebComponents, React -->
 ## 複雑なデータ バインディング
 
 `Grid` は、データ レコード内のプロパティのパスを介した複合オブジェクト (1 レベルより深いネストを含む) へのバインドをサポートします。
@@ -1054,6 +1231,11 @@ public class AminoWeight
 <igc-column field="weight.residue"></igc-column>
 ```
 
+```tsx
+<IgrColumn field="weight.molecular"></IgrColumn>
+<IgrColumn field="weight.residue"></IgrColumn>
+```
+
 ```razor
 <IgbColumn Field="Weight.Molecular" />
 <IgbColumn Field="Weight.Residue" />
@@ -1062,24 +1244,40 @@ public class AminoWeight
 <!-- Angular -->
 
 詳しくは、以下のサンプルを参照してください。このバインディングのタイプは、グリッドに期待されるすべてのデフォルト機能をサポートします。
-
 つまり、追加の構成を行わなくても、すべてのソートおよびフィルタリング操作がそのまま使用できます。トランザクションの有無に関係なく、グループ化と編集の操作、およびバインドされた列のセルをテンプレート化する機能についても同様です。
 
->[!WARNING]
+>**警告**:
 >グリッドは、`PrimaryKey`、`ForeignKey`、および `ChildKey` プロパティのこの種のバインディングをサポート**していません**。
 
 <!-- NOTE this sample is differed -->
 
-`sample="/{GridSample}/binding-nested-data-2", height="460", alt="{Platform} {GridTitle} binding nested data 2"`
-
+`sample="/{GridSample}/binding-nested-data-2", height="460", alt="{Platform} {GridTitle} ネストされたデータのバインディング 2"`
 
 <!-- end: Angular -->
 
 `Grid` で複雑なデータをバインドまたは複合データ (複数の列から) を可視化する別の方法は、列にカスタム ボディ テンプレートを使用することです。通常、以下のことができます。
-    - ネストされたデータを含むセルの `value` を使用します。
-    - `row.data` にアクセスするためにテンプレートの `cell` オブジェクトを使用します。それから、セルから任意の値 (`cell.row.data[field]` や `cell.row.data[field][nestedField]` など) を取得します。
 
-それをテンプレートに挿入します。
+- ネストされたデータを含むセルの `value` を使用します。
+
+<!-- Angular -->
+
+- `row.data` にアクセスするためにテンプレートの `cell` オブジェクトを使用します。それから、セルから任意の値 (`cell.row.data[field]` や `cell.row.data[field][nestedField]` など) を取得します。それをテンプレートに挿入します。
+
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
+- テンプレート内の `cell` オブジェクトを使用し、そこから `ctx.cell.id.rowIndex` または `ctx.cell.id.rowID` にアクセスして、グリッドの API 経由で行を取得します。そこから任意の値を取得し、テンプレートに補間します。
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+- テンプレート内の `cell` オブジェクトを使用し、そこから `ctx.dataContext.cell.id.rowIndex` または `ctx.dataContext.cell.id.rowID` にアクセスして、グリッドの API 経由で行を取得します。そこから任意の値を取得し、テンプレート内で補間します。
+
+<!-- end: React -->
+
+<!-- Angular -->
 
 ```html
 <igx-column field="abbreviation.long" header="Long">
@@ -1095,19 +1293,17 @@ public class AminoWeight
 </igx-column>
 ```
 
+<!-- end: Angular -->
+<!-- WebComponents -->
 ```html
 <igc-column id="abbreviationLong" field="abbreviation.long"></igc-column>
 ```
 
 ```typescript
 constructor() {
+    var grid = (this.grid = document.getElementById("grid") as IgcGridComponent);
     var abbreviationLong = this.abbreviationLong = document.getElementById('abbreviationLong') as IgcColumnComponent;
-
-    this._bind = () => {
-        abbreviationLong.bodyTemplate = this.abbreviationLongCellTemplate;
-    }
-
-    this._bind();
+    abbreviationLong.bodyTemplate = this.abbreviationLongCellTemplate;
 }
 
 public abbreviationLongCellTemplate = (ctx: IgcCellTemplateContext) => {
@@ -1115,19 +1311,46 @@ public abbreviationLongCellTemplate = (ctx: IgcCellTemplateContext) => {
         <div>
             <div>
                 ${ ctx.cell.value }
-                ${ this.getName(ctx.cell.id) }
-                ${ this.getWeight(ctx.cell.id) }
+                    ${this.getName(ctx.cell.id.rowIndex)} 
+                    ${this.getWeight(ctx.cell.id.rowIndex)}
             </div>
         </div>
     `;
 }
 
-public getName(rowId: number){
-    //row.data['name']
+public getName(rowIndex: number) {
+    return this.grid.getRowByIndex(rowIndex).data["Name"];
 }
-public getWeight(rowId: number){
-    //row.data['weight']['molecular']
+public getWeight(rowIndex: number) {
+    return this.grid.getRowByIndex(rowIndex).data["weight"]["molecular"];
 }
+```
+<!-- end: WebComponents -->
+
+
+```tsx
+function getName(rowIndex: number) {
+    return grid.getRowByIndex(rowIndex).data["Name"];
+}
+function getWeight(rowIndex: number) {
+    return grid.getRowByIndex(rowIndex).data["weight"]["molecular"];
+}
+
+function abbreviationLongCellTemplate(ctx: IgrCellTemplateContext) {
+    return (
+        <>
+            <div>
+            <div>
+                { ctx.dataContext.cell.value }
+                    {getName(ctx.dataContext.cell.id.rowIndex)} 
+                    {getWeight(ctx.dataContext.cell.id.rowIndex)}
+            </div>
+        </div>
+        </>
+    )
+}
+
+<IgrColumn id="abbreviationLong" field="abbreviation.long" bodyTemplate={abbreviationLongCellTemplate}></IgrColumn>
 ```
 
 ```razor
@@ -1140,19 +1363,20 @@ igRegisterScript("AbbreviationLongCellTemplate", (ctx) => {
         <div>
             <div>
                 ${ctx.cell.value}
-                ${this.GetName(ctx.cell)}
-                ${this.GetWeight(ctx.cell)}
+                ${this.GetName(ctx.cell.id.rowIndex)}
+                ${this.GetWeight(ctx.cell.id.rowIndex)}
             </div>
         </div>
     `;
 }, false);
 
-function GetName(value) {
+function GetName(rowIndex) {
+    return this.grid.getRowByIndex(rowIndex).data["Name"];
 
 }
 
-function GetWeight(value) {
-
+function GetWeight(rowIndex) {
+    return this.grid.getRowByIndex(rowIndex).data["Weight"]["Molecular"];
 }
 ```
 
@@ -1281,11 +1505,11 @@ public class EmployeesNestedData : List<EmployeesNestedDataItem>
                     </igx-expansion-panel-header>
                     <igx-expansion-panel-body>
                         <div class="description">
-                            <igx-input-group (keydown)="stop($event)" displayDensity="compact">
+                            <igx-input-group (keydown)="stop($event)">
                                 <label igxLabel for="title">Title</label>
                                 <input type="text" name="title" igxInput [(ngModel)]="person.Title" style="text-overflow: ellipsis;" />
                             </igx-input-group>
-                            <igx-input-group (keydown)="stop($event)" displayDensity="compact" style="width: 15%;">
+                            <igx-input-group (keydown)="stop($event)" style="width: 15%;">
                                 <label igxLabel for="age">Age</label>
                                 <input type="number" name="age" igxInput [(ngModel)]="person.Age" />
                             </igx-input-group>
@@ -1304,51 +1528,54 @@ public class EmployeesNestedData : List<EmployeesNestedDataItem>
 ```typescript
 constructor() {
     var employees = this.employees = document.getElementById('employees') as IgcColumnComponent;
-
-    this._bind = () => {
-        employees.bodyTemplate = this.addressCellTemplate;
-    }
-
-    this._bind();
+    employees.bodyTemplate = this.addressCellTemplate;
 }
 
 public addressCellTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <div class="employees-container">
-            <igc-expansion-panel >
-                <igc-expansion-panel-header iconPosition="right">
-                    <igc-expansion-panel-description>
-                        ${this.getName(ctx.cell.id.rowIndex)}
-                    </igc-expansion-panel-description>
-                </igc-expansion-panel-header>
-                <igc-expansion-panel-body>
-                    <div class="description">
-                        <igc-input-group keydown="${this.stop()}" display-density="compact">
-                            <label for="title">Title</label>
-                            <input type="text" name="title" value="${this.getTitle(ctx.cell.id.rowIndex)}" style="text-overflow: ellipsis;" />
-                        </igc-input-group>
-                        <igc-input-group keydown="${this.stop()}" display-density="compact" style="width: 15%;">
-                            <label for="age">Age</label>
-                            <input type="number" name="age" value="${this.getAge(ctx.cell.id.rowIndex)}" />
-                        </igc-input-group>
-                    </div>
-                </igc-expansion-panel-body>
-            </igc-expansion-panel>
-        </div>
+    <igc-expansion-panel>
+            <div slot="title" style="font-size: 1.1em; font-weight: bold; margin-top: 1rem; margin-bottom: 0.25rem;">
+            ${ctx.cell.value[0].Name}
+            </div>
+            <div class="description">
+                <div style="display: flex; align-items: center;">
+                    <div for="title" style="width: 2rem; margin: 0rem;">Title</div>
+                    <input id='Title' type="text" name="title" value="${ctx.cell.value[0].Title}" style="text-overflow: ellipsis;" />
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <div for="age" style="width: 2rem; margin: 0rem;">Age</div>
+                    <input id='Age' type="text" name="title" value="${ctx.cell.value[0].Age}" style="text-overflow: ellipsis;" />
+                </div>
+            </div>
+        </igc-expansion-panel>
     `;
 }
+```
 
-public stop() {
+```tsx
+function addressCellTemplate(ctx: IgrCellTemplateContext) {
+    return (
+        <>
+            <IgrExpansionPanel>
+                <div slot="title" style={{font-size: '1.1em'; font-weight: 'bold'; margin-top: '1rem'; margin-bottom: '0.25rem'}}>
+                {ctx.dataContext.cell.value[0].Name}
+                </div>
+                <div className="description">
+                    <div style={{display: 'flex'; align-items: 'center'}}>
+                        <div for="title" style={{width: '2rem'; margin: '0rem'}}>Title</div>
+                        <input id='Title' type="text" name="title" value="${ctx.dataContext.cell.value[0].Title}" style={{text-overflow: 'ellipsis'}} />
+                    </div>
+                    <div style={{display: 'flex'; align-items: 'center'}}>
+                        <div for="age" style={{width: '2rem'; margin: '0rem'}}>Age</div>
+                        <input id='Age' type="text" name="title" value="${ctx.dataContext.cell.value[0].Age}" style={{text-overflow: 'ellipsis'}} />
+                    </div>
+                </div>
+            </IgrExpansionPanel>
+        </>
+    )
 }
 
-public getName(rowId: number) {
-}
-
-public getTitle(rowId: number) {
-}
-
-public getAge(rowId: number) {
-}
+<IgrColumn field="Employees" header="Employees" width="40%" bodyTemplate={addressCellTemplate}></IgrColumn>
 ```
 
 ```razor
@@ -1357,7 +1584,7 @@ public getAge(rowId: number) {
 //In JavaScript:
 igRegisterScript("WebGridNestedDataCellTemplate", (ctx) => {
     var html = window.igTemplating.html;
-    window.keyUpHandler = function () {
+    window.keyUpHandler = function() {
         ctx.cell.row.data[window.event.target.id] = window.event.target.value;
     }
     const people = ctx.cell.value;
@@ -1388,7 +1615,7 @@ igRegisterScript("WebGridNestedDataCellTemplate", (ctx) => {
 以下は、この設定の結果です。
 
 
-`sample="/{GridSample}/binding-nested-data-1", height="460", alt="{Platform} {GridTitle} binding nested data 1"`
+`sample="/{GridSample}/binding-nested-data-1", height="460", alt="{Platform} {GridTitle} ネストされたデータのバインディング 1"`
 
 
 ### フラット データの操作の概要
@@ -1464,19 +1691,14 @@ public class CustomersData : List<CustomersDataItem>
 ```typescript
 constructor() {
     var address = this.address = document.getElementById('address') as IgcColumnComponent;
-
-    this._bind = () => {
-        address.bodyTemplate = this.addressCellTemplate;
-    }
-
-    this._bind();
+    address.bodyTemplate = this.addressCellTemplate;
 }
 
 public addressCellTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
         <div class="address-container">
         <!-- In the Address column combine the Country, City and PostCode values of the corresponding data record -->
-            <span><strong>Country:</strong> ${this.getName(ctx.cell.id.rowIndex)}</span>
+            <span><strong>Country:</strong> ${this.getCountry(ctx.cell.id.rowIndex)}</span>
             <br/>
             <span><strong>City:</strong> ${this.getCity(ctx.cell.id.rowIndex)}</span>
             <br/>
@@ -1485,14 +1707,48 @@ public addressCellTemplate = (ctx: IgcCellTemplateContext) => {
     `;
 }
 
-public getCountry(rowId: number) {
+public getCountry(rowIndex: number) {
+    return this.grid.getRowByIndex(rowIndex).data["Country"];
 }
 
-public getCity(rowId: number) {
+public getCity(rowIndex: number) {
+     return this.grid.getRowByIndex(rowIndex).data["City"];
 }
 
-public getPostalCode(rowId: number) {
+public getPostalCode(rowIndex: number) {
+     return this.grid.getRowByIndex(rowIndex).data["PostalCode"];
 }
+```
+
+```tsx
+function getCountry(rowIndex: number) {
+    return grid.getRowByIndex(rowIndex).data["Country"];
+}
+
+function getCity(rowIndex: number) {
+     return grid.getRowByIndex(rowIndex).data["City"];
+}
+
+function getPostalCode(rowIndex: number) {
+     return grid.getRowByIndex(rowIndex).data["PostalCode"];
+}
+
+function addressCellTemplate(ctx: IgrCellTemplateContext) {
+    return (
+        <>
+            <div className="address-container">
+            // In the Address column combine the Country, City and PostCode values of the corresponding data record
+                <span><strong>Country:</strong> {getCountry(ctx.dataContext.cell.id.rowIndex)}</span>
+                <br/>
+                <span><strong>City:</strong> {getCity(ctx.dataContext.cell.id.rowIndex)}</span>
+                <br/>
+                <span><strong>Postal Code:</strong> {getPostalCode(ctx.dataContext.cell.id.rowIndex)}</span>
+            </div>
+        </>
+    );
+}
+
+<IgrColumn field="Address" header="Address" width="25%" editable="true" bodyTemplate={addressCellTemplate}></IgrColumn>
 ```
 
 ```razor
@@ -1554,50 +1810,80 @@ igRegisterScript("AddressCellTemplate", (ctx) => {
 ```typescript
 constructor() {
     var address = this.address = document.getElementById('address') as IgcColumnComponent;
+    address.inlineEditorTemplate = this.webGridCompositeAddressEditCellTemplate;
+}
 
-    this._bind = () => {
-        address.inlineEditorTemplate = this.addressEditCellTemplate;
+public webGridCompositeAddressEditCellTemplate = (ctx: IgcCellTemplateContext) => {
+    var cell = ctx.cell as any;
+    if (cell === undefined || cell.row === undefined || cell.row.data === undefined) {
+        return html``
     }
 
-    this._bind();
-}
+    function keyUpHandler(event: any, ctx: IgcCellTemplateContext) {
+        var cell = ctx.cell as any;
+        if (cell !== undefined && cell.row !== undefined && cell.row.data !== undefined) {
+            cell.row.data[event.target.id] = event.target.value;
+        }
+        }
 
-public addressEditCellTemplate = (ctx: IgcCellTemplateContext) => {
-    return html`
-        <div class="address-container">
-            <span>
-                <strong>Country:</strong> ${this.getName(ctx.cell.id)}
-                <igc-input-group width="100%">
-                        <input onchange="${this.updateCountry(ctx.cell.id)}" />
-                </igc-input-group>
-            </span>
-            <br/>
-            <span>
-                <strong>City:</strong> ${this.getCity(ctx.cell.id)}
-                <igc-input-group width="100%">
-                        <input onchange="${this.updateCity(ctx.cell.id)}" />
-                </igc-input-group>
-            </span>
-            <br/>
-            <span>
-                <strong>Postal Code:</strong> ${this.getPostalCode(ctx.cell.id)}
-                <igc-input-group width="100%">
-                        <input onchange="${this.updatePostalCode(ctx.cell.id)}" />
-                </igc-input-group>
-            </span>
-            <br/>
+    return html`<div class="address-container--edit" style="display: inline-grid">
+            <div>
+                <span><strong>Country:</strong></span>
+                <input id='Country' @keyup=${(e: any) => keyUpHandler(e, ctx)} value="${cell.row.data.Country}"></input>
+                <br>
+                <span><strong>City:</strong></span>
+                <input id='City' @keyup=${(e: any) => keyUpHandler(e, ctx)} value="${cell.row.data.City}"></input>
+            </div>
+            <div>
+                <span><strong>Postal Code:</strong></span>
+                <input id='PostalCode' @keyup=${(e: any) => keyUpHandler(e, ctx)} value="${cell.row.data.PostalCode}"></input>
+                <br>
+                <span><strong>Selected:</strong></span>
+                <input id='Phone' @keyup=${(e: any) => keyUpHandler(e, ctx)} value="${cell.row.data.Phone}"></input>
+            </div>
+            <br>
+        </div>`;
+}
+```
+
+```tsx
+function webGridCompositeAddressEditCellTemplate(ctx: IgrCellTemplateContext) {
+    var cell = ctx.dataContext.cell as any;
+    if (cell === undefined || cell.row === undefined || cell.row.data === undefined) {
+        return (<></>)
+    }
+
+    function keyUpHandler(event: any, ctx: IgrCellTemplateContext) {
+        var cell = ctx.dataContext.cell as any;
+        if (cell !== undefined && cell.row !== undefined && cell.row.data !== undefined) {
+            cell.row.data[event.target.id] = event.target.value;
+        }
+    }
+
+    return (
+        <>
+            <div className="address-container--edit" style={{display: 'inline-grid'}}>
+            <div>
+                <span><strong>Country:</strong></span>
+                <input id='Country' keyup={(e: any) => keyUpHandler(e, ctx)} value={cell.dataContext.row.data.Country}></input>
+                <br>
+                <span><strong>City:</strong></span>
+                <input id='City' keyup={(e: any) => keyUpHandler(e, ctx)} value={cell.dataContext.row.data.City}></input>
+            </div>
+            <div>
+                <span><strong>Postal Code:</strong></span>
+                <input id='PostalCode' keyup={(e: any) => keyUpHandler(e, ctx)} value={cell.dataContext.row.data.PostalCode}></input>
+                <br>
+                <span><strong>Selected:</strong></span>
+                <input id='Phone' keyup={(e: any) => keyUpHandler(e, ctx)} value={cell.dataContext.row.data.Phone}></input>
+            </div>
+            <br>
         </div>
-    `;
+        </>
+    );
 }
 
-public updateCountry(rowId: number) {
-}
-
-public updateCity(rowId: number) {
-}
-
-public updatePostalCode(rowId: number) {
-}
+<IgrColumn field="Address" dataType="number" width="25%" editable="true" inlineEditorTemplate={webGridCompositeAddressEditCellTemplate}></IgrColumn>
 ```
 
 ```razor
@@ -1608,7 +1894,7 @@ public updatePostalCode(rowId: number) {
 //In JavaScript:
 igRegisterScript("AddressEditCellTemplate", (ctx) => {
     var html = window.igTemplating.html;
-    window.keyUpHandler = function () {
+    window.keyUpHandler = function() {
         ctx.cell.row.data[window.event.target.id] = window.event.target.value;
     }
 
@@ -1636,7 +1922,7 @@ igRegisterScript("AddressEditCellTemplate", (ctx) => {
 
 前のセクションのコード スニペットを使用すると、次の `Grid` の例になります。
 
-`sample="/{GridSample}/binding-composite-data", height="550", alt="{Platform} {GridTitle} binding composite data"`
+`sample="/{GridSample}/binding-composite-data", height="550", alt="{Platform} {GridTitle} 複合データ バインディング"`
 
 
 ## キーボード ナビゲーション
@@ -1689,17 +1975,27 @@ platformBrowserDynamic()
 <!-- end: Angular -->
 
 ## {Platform} Grid スタイル設定の構成
-> [!Note]
+> **注**:
 > グリッドは **css グリッド レイアウト**を使用しますが、これは**プレフィックスなしでは IE ではサポートされていません**。その結果、適切に描画されません。
 
-<!-- WebComponents -->
-定義済みのテーマに加えて、利用可能な [CSS プロパティ](theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。ヘッダーの背景とテキストの色を変更したい場合は、最初にグリッドのクラスを設定する必要があります:
+<!-- WebComponents, Blazor, React -->
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
 
-```typescript
-<igc-grid class="grid">
+<!-- WebComponents -->
+```html
+<igc-grid class="grid"></igc-grid>
+```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrGrid className="grid"></IgrGrid>
 ```
 
-次に、そのクラスの `--header-background` および `--header-text-color` CSS プロパティを設定します:
+```razor
+ <IgbGrid Class="grid"></IgbGrid>
+```
+
+ヘッダーの背景とテキストの色を変更したい場合は、最初にグリッドのクラスを設定する必要があります:
 
 ```css
 .grid {
@@ -1707,7 +2003,8 @@ platformBrowserDynamic()
     --header-text-color: #FFF;
 }
 ```
-<!-- end: WebComponents -->
+
+<!-- end: WebComponents, Blazor, React -->
 
 <!--  Angular -->
 [**Angular**](https://angular.io/) では、[Autoprefixer](https://www.npmjs.com/package/autoprefixer) プラグインのおかげで、ほとんどのスタイルに暗黙的にプレフィックスが付けられます。
@@ -1737,7 +2034,7 @@ platformBrowserDynamic()
 |グリッドの `width` が列幅に依存しない | すべての列の `width` でグリッド自体のスパンは決定しません。親コンテナーのディメンションまたは定義したグリッドの `width` で決定されます。|
 |親コンテナーでネストされた Grid | グリッドの `width` を設定せずに定義済みのディメンションで親コンテナーに配置した場合、グリッドがコンテナーに合わせてスパンします。|
 |グリッドの `OnPush` ChangeDetectionStrategy | `ChangeDetectionStrategy.OnPush` を処理し、カスタム表示されたときにグリッドに発生した変更について通知します。|
-| 列には設定可能な最小幅があります。`displayDensity` オプションに基づき、<br/>"compact": 56px <br/> "cosy": 64px <br/> "comfortable": 80px があります。 | 許容される最小幅未満に設定した場合、描画される要素に影響はありません。`displayDensity` に対応する許容される最小幅で描画します。水平方向の仮想化は予期しない動作を招く場合があるためサポートしていません。
+| 列には設定可能な最小幅があります。`--ig-size` CSS 変数に基づき、<br/>"small": 56px <br/> "medium": 64px <br/> "large": 80px があります。 | 許容される最小幅未満に設定した場合、描画される要素に影響はありません。`--ig-size` に対応する許容される最小幅で描画します。水平方向の仮想化は予期しない動作を招く場合があるためサポートしていません。
 | ビューに描画されていないセル高さは行の高さに影響しません。 | 仮想化のため、セルの高さを変更するビューにないカスタム テンプレートの列は行の高さに影響しません。関連する列がビューにスクロールされるときのみ行の高さに影響します。
 
 ## API リファレンス

@@ -12,7 +12,7 @@ _language: ja
 
 ## {Platform} 選択の例
 
-`sample="/inputs/select/overview", height="220", alt="{Platform} Select の例"`
+`sample="/inputs/select/overview", height="275", alt="{Platform} Select の例"`
 
 
 <div class="divider--half"></div>
@@ -40,6 +40,8 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcSelectComponent);
 ```
 
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
@@ -59,6 +61,26 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 ```
 
 <!-- end: Blazor -->
+
+<!-- React -->
+
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`Select` および `SelectItem` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrSelectModule, IgrSelect, IgrSelectItemModule, IgrSelectItem } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrSelectModule.register();
+IgrSelectItemModule.register();
+```
+
+<!-- end: React -->
 
 > [!Note]
 > ヘッダーとグループの選択コンポーネントは、使用しない限り必須ではないことに注意してください。
@@ -87,22 +109,35 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 ```
 <!-- end: Blazor -->
 
+<!-- React -->
+
+```tsx
+<IgrSelect>
+  <IgrSelectItem value="Orange"><span>Orange</span></IgrSelectItem>
+  <IgrSelectItem value="Apple"><span>Apple</span></IgrSelectItem>
+  <IgrSelectItem value="Banana"><span>Banana</span></IgrSelectItem>
+  <IgrSelectItem value="Mango"><span>Mango</span></IgrSelectItem>
+</IgrSelect>
+```
+
+<!-- end: React -->
+
 ### Select (選択)
 
-`Select` コンポーネントは `Form` コンポーネント内で使用できるため、登録する `Name` プロパティを公開します。また、`Label`、`Placeholder`、および `Size` プロパティもあります。`Outlined` プロパティは、Material テーマに関してのみ、スタイリング目的で使用されます。デフォルトのスロットを除いて、コンポーネントは、`header`、`footer`、`helper-text`、`prefix`、`suffix`、および `toggle-icon` を含む他のいくつかのスロットを提供します。
+`Select` コンポーネントは `Form` コンポーネント内で使用できるため、登録する `Name` プロパティを公開します。また、`Label` および `Placeholder` プロパティもあります。`Outlined` プロパティは、Material テーマに関してのみ、スタイリング目的で使用されます。デフォルトのスロットを除いて、コンポーネントは、`header`、`footer`、`helper-text`、`prefix`、`suffix`、および `toggle-icon` を含む他のいくつかのスロットを提供します。コンポーネントのサイズは、`--ig-size` CSS 変数を使用して変更できます。
 
 ### Item (項目)
 
 `SelectItem` コンポーネントを使用すると、ユーザーは `Select` コントロールで使用されるオプションのリストを宣言的に指定できます。各項目は、選択時に保持されるデータを表す `Value` プロパティを提供します。`SelectItem` には、項目のテキスト コンテンツを指定できるデフォルトのスロットがあります。このテキスト コンテンツは、`Value` プロパティが `SelectItem` に存在しない場合に値として使用されます。`prefix` スロットと `suffix` スロットを使用して、`SelectItem` コンテンツの前後に描画されるカスタム コンテンツを提供することもできます。`Selected` プロパティを設定することにより、選択した項目を事前定義できます。`Disabled` プロパティを使用して、一部またはすべての項目を無効にすることもできます。
 
-`sample="/inputs/select/item", height="220", alt="{Platform} Select Item の例"`
+`sample="/inputs/select/item", height="275", alt="{Platform} Select Item の例"`
 
 
 ### Header (ヘッダー)
 
 `SelectHeader` を使用して、項目のグループのヘッダーを提供できます。
 
-`sample="/inputs/select/header", height="250", alt="{Platform} Select Header の例"`
+`sample="/inputs/select/header", height="275", alt="{Platform} Select Header の例"`
 
 
 <!-- WebComponents -->
@@ -121,6 +156,18 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 ```
 <!-- end: Blazor -->
 
+<!-- React -->
+
+```tsx
+<IgrSelect>
+  <IgrSelectHeader>
+    <span>Tasks</span>
+  </IgrSelectHeader>
+</IgrSelect>
+```
+
+<!-- end: React -->
+
 ### Group (グループ)
 
 複数の `SelectItem` を `SelectGroup` コンポーネントの開く括弧と閉じる括弧の間に配置して、ユーザーがそれらを視覚的にグループ化できるようにすることができます。`SelectGroup` は、その `label` スロットを介してラベルを付け、その `Disabled` プロパティを介して無効にすることができます。
@@ -128,7 +175,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 > [!Note]
 > 選択グループが無効になっている場合、そのグループの個別の項目を有効にすることはできないことに注意してください。
 
-`sample="/inputs/select/group", height="480", alt="{Platform} Select Group の例"`
+`sample="/inputs/select/group", height="500", alt="{Platform} Select Group の例"`
 
 <!-- WebComponents -->
 ```html
@@ -186,6 +233,42 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 ```
 <!-- end: Blazor -->
 
+<!-- React -->
+
+```tsx
+<IgrSelect>
+  <IgrSelectGroup>
+    <span slot="label">Europe</span>
+
+    <IgrSelectItem>
+      <span slot="prefix">
+        <IgrIcon name="place" ref={iconPlace} collection="material"></IgrIcon>
+      </span>
+      <span> Germany </span>
+      <span slot="suffix">DE</span>
+    </IgrSelectItem>
+
+    <IgrSelectItem>
+      <span slot="prefix">
+        <IgrIcon name="place" ref={iconPlace} collection="material"></IgrIcon>
+      </span>
+      <span> France </span>
+      <span slot="suffix">FR</span>
+    </IgrSelectItem>
+
+    <IgrSelectItem>
+      <span slot="prefix">
+        <IgrIcon name="place" ref={iconPlace} collection="material"></IgrIcon>
+      </span>
+      <span> Spain </span>
+      <span slot="suffix">ES</span>
+    </IgrSelectItem>
+  </IgrSelectGroup>
+</IgrSelect>
+```
+
+<!-- end: React -->
+
 ## 検証
 
 さらに、`Select` は、`Required`、`Disabled`、`Autofocus` など、ほとんどの `Input` プロパティをサポートします。コンポーネントは、その検証にバインドされたメソッドも公開します。
@@ -196,24 +279,24 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 
 選択がフォーカスされ、オプションのリストが**表示されていない**場合:
 
-- <kbd>ALT + 上矢印 / 下矢印</kbd> の組み合わせを使用するか、<kbd>Space</kbd> または <kbd>Enter</kbd> キーをクリックして、`Select` を開きます。
-- <kbd>ALT + 上矢印 / 下矢印</kbd> の組み合わせ、または <kbd>Enter</kbd>、<kbd>Space</kbd>、<kbd>Esc</kbd>、`Tab` キーのいずれかを使用して、`Select` を閉じます。
-- <kbd>上 / 左矢印</kbd> キーを使用すると、リスト内の前の項目が選択されます。
-- <kbd>下 / 右矢印</kbd> キーを使用すると、リスト内の次の項目が選択されます。
+- <kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> の組み合わせを使用するか、<kbd>Space</kbd> または <kbd>Enter</kbd> キーをクリックして、`Select` を開きます。
+- <kbd>ALT</kbd> + <kbd>↑</kbd> または <kbd>↓</kbd> の組み合わせ、または <kbd>Enter</kbd>、<kbd>Space</kbd>、<kbd>Esc</kbd>、`Tab` キーのいずれかを使用して、`Select` を閉じます。
+- <kbd>←</kbd> <kbd>→</kbd> キーを使用すると、リスト内の前の項目が選択されます。
+- <kbd>↑</kbd> <kbd>↓</kbd> キーを使用すると、リスト内の次の項目が選択されます。
 - <kbd>Home</kbd> キーまたは <kbd>End</kbd> キーを使用すると、リストの最初または最後の項目が選択されます。
 - 文字を入力すると、項目のリストが照会され、現在のユーザー入力に最も近いものが選択されます。
 
 選択がフォーカスされ、オプションのリストが**表示されている**場合:
 
 - <kbd>Enter</kbd> キーまたは <kbd>Space</kbd> キーを使用すると、項目が選択され、リストが閉じます。
-- <kbd>上 / 左矢印</kbd>キーを使用すると、リスト内の前の項目がアクティブになります。
-- <kbd>下 / 右矢印</kbd>キーを使用すると、リスト内の次の項目がアクティブになります。
+- <kbd>←</kbd> <kbd>→</kbd> キーを使用すると、リスト内の前の項目がアクティブになります。
+- <kbd>↑</kbd> <kbd>↓</kbd> キーを使用すると、リスト内の次の項目がアクティブになります。
 - <kbd>Home</kbd> キーまたは <kbd>End</kbd> キーを使用すると、リストの最初または最後の項目がアクティブになります。
 
 > [!Note]
 > `Select` コンポーネントは、項目の**単一**選択のみをサポートします。
 
-<!-- WebComponents -->
+<!-- WebComponents, React -->
 
 ## スタイル設定
 
@@ -251,7 +334,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 
 
 
-<!-- end: WebComponents -->
+<!-- end: WebComponents, React -->
 
 
 ## API リファレンス

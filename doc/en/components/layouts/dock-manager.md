@@ -294,6 +294,22 @@ this.dockManager.addEventListener('activePaneChanged', ev => {
 });
 ```
 
+### Update Layout
+
+In some scenarios you may need to customize the layout of the Dock Manager by adding or removing a pane, changing orientation, etc., for example:
+
+```ts
+const splitPane = this.dockManager.layout.rootPane.panes[0] as IgcSplitPane;
+const contentPane = splitPane.panes[0] as IgcContentPane;
+this.dockManager.removePane(contentPane);
+```
+
+This will only update the layout object. To trigger an update of the Dock Manager so the changes are reflected in the UI, the layout object should be re-assigned:
+
+```ts
+this.dockManager.layout = { ...this.dockManager.layout };
+```
+
 ### Save/Load Layout
 
 To restore or persist a layout, you simply have to get/set the value of the `Layout` property. Here is how to save the layout as a stringified JSON:
@@ -308,14 +324,6 @@ private saveLayout() {
 private loadLayout() {
     this.dockManager.layout = JSON.parse(this.savedLayout);
 }
-```
-
-Please note that modifying any of the properties of the layout object will not trigger an update of the Dock Manager. If that is your goal, you should replace the whole layout object like so:
-
-```ts
-const layout = this.dockManager.layout;
-layout.rootPane.orientation = IgcSplitPaneOrientation.vertical;
-this.dockManager.layout = { ...layout };
 ```
 
 ### Adding Panes At Runtime
@@ -434,11 +442,7 @@ igc-dockmanager::part(pane-header-maximize-button) {
 
 If everything went well, we should now have a DockManager with customized icons and tab area. Let's have a look at it:
 
-<!-- WebComponents -->
 `sample="/layouts/dock-manager/customize-buttons", height="700", alt="{Platform} Dock Manager Customize Buttons Example"`
-
-
-<!-- end: WebComponents -->
 
 Below you can find a list containing the slot names for all of the buttons as well as the splitter handle:
 
@@ -508,18 +512,18 @@ The shortcuts are as follows:
 
 ### Docking
 
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Arrow up</kbd> Docks to global top
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Arrow down</kbd> Docks to global bottom
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Arrow right</kbd> Docks to global right
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Arrow left</kbd> Docks to global left
-- <kbd>Shift</kbd> + <kbd>Arrow Up</kbd> With multiple tabs in a tab group splits the view and docks the focused tab above
-- <kbd>Shift</kbd> + <kbd>Arrow down</kbd> With multiple tabs in a tab group splits the view and docks the focused tab below
-- <kbd>Shift</kbd> + <kbd>Arrow right</kbd> With multiple tabs in a tab group splits the view and docks the focused tab right
-- <kbd>Shift</kbd> + <kbd>Arrow left</kbd> With multiple tabs in a tab group splits the view and docks the focused tab left
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd> Docks to global top
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↓</kbd> Docks to global bottom
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>→</kbd> Docks to global right
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd> Docks to global left
+- <kbd>Shift</kbd> + <kbd>↑</kbd> With multiple tabs in a tab group splits the view and docks the focused tab above
+- <kbd>Shift</kbd> + <kbd>↓</kbd> With multiple tabs in a tab group splits the view and docks the focused tab below
+- <kbd>Shift</kbd> + <kbd>→</kbd> With multiple tabs in a tab group splits the view and docks the focused tab right
+- <kbd>Shift</kbd> + <kbd>←</kbd> With multiple tabs in a tab group splits the view and docks the focused tab left
 
 ### Navigating
- - <kbd>Cmd/Ctrl</kbd> + <kbd>F6</kbd> or <kbd>Cmd/Ctrl</kbd> + <kbd>Arrow right</kbd> Focuses next tab in document host
- - <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> or <kbd>Cmd/Ctrl</kbd> + <kbd>Arrow left</kbd> Focuses previous tab in document host
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>F6</kbd> or <kbd>Cmd/Ctrl</kbd> + <kbd>→</kbd> Focuses next tab in document host
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> or <kbd>Cmd/Ctrl</kbd> + <kbd>←</kbd> Focuses previous tab in document host
  - <kbd>Alt</kbd> + <kbd>F6</kbd> Focuses next content pane
  - <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> Focuses previous content pane
 
@@ -535,9 +539,7 @@ The shortcuts are as follows:
 ### Other
  - <kbd>Alt</kbd> + <kbd>F3</kbd> Closes the active pane
 
-Practice all of the above mentioned actions in the sample [demo](dock-manager.md#{Platform}-dock-manager-example).
-
-<!-- WebComponents -->
+Practice all of the above mentioned actions in the sample [demo](dock-manager.md#{PlatformLower}-dock-manager-example).
 
 ## Styling
 
@@ -607,6 +609,8 @@ In the following example, we demonstrate the ability of customizing the Dock Man
 | `splitter-handle` | The splitter handle. |
 | `horizontal` | Indicates a horizontal position. Applies to `splitter-handle`. |
 | `vertical` | Indicates a vertical position. Applies to `splitter-handle`. |
+
+<!-- WebComponents -->
 
 ### Themes
 

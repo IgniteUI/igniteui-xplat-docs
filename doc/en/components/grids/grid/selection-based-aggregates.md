@@ -52,7 +52,7 @@ Change the selection to see summaries of the currently selected range.
 ## API References
 
 * `GridComponent`
-* `GridCell`
+* `Cell`
 
 ## Additional Resources
 <div class="divider--half"></div>

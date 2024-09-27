@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} のクリップボードの操作 - インフラジスティックス
+title: {Platform} {ComponentTitle} クリップボード操作 - {ProductName}
 _description: {Platform} {ComponentTitle} のクリップボード機能は、データを Excel、その他のプログラムにコピー、貼り付け、エクスポートするための高速で簡単、カスタマイズ可能な方法を提供します。今すぐお試しください。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -64,7 +64,7 @@ _language: ja
 
 ## その他のリソース
 
-
+<!-- ComponentStart:  Grid -->
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
 * [ソート](sorting.md)
@@ -73,6 +73,7 @@ _language: ja
 * [選択](selection.md)
 * [仮想化とパフォーマンス](virtualization.md)
 * [複数列ヘッダー](multi-column-headers.md)
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

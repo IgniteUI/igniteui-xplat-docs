@@ -1,5 +1,5 @@
 ---
-title: Advanced Filtering in {Platform} {ComponentTitle} for {ProductName}
+title: {Platform} {ComponentTitle} Advanced Filtering - {ProductName}
 _description: Learn how to configure advanced filter of data with the {Platform} {ComponentTitle}. The grid advanced filtering is more convenient and engaging than ever.
 _keywords: Advanced Filtering, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -10,7 +10,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Advanced Filtering
 
-The Advanced filtering provides a dialog which allows the creation of groups with filtering conditions across all columns for any {Platform} table like the `{ComponentName}`.
+The {ProductName} Advanced Filtering in {Platform} {ComponentTitle} allows you to manipulate data by providing you with a dialog where you can create different groups with filtering conditions across all columns in the `{ComponentName}`. 
 
 ## {Platform} {ComponentTitle} Advanced Filtering Example
 
@@ -39,27 +39,92 @@ To enable the advanced filtering, the `AllowAdvancedFiltering` input property sh
 </{ComponentSelector}>
 ```
 <!-- end: Angular -->
+
+<!-- ComponentStart: Grid -->
+```html
+<igc-grid id="grid" auto-generate="true" allow-advanced-filtering="true">
+    <igc-grid-toolbar></igc-grid-toolbar>
+<igc-grid>
+```
+```ts
+constructor() {
+    let grid = document.getElementById("grid") as IgcGridComponent;
+    grid.data = this.data
+}
+```
+
+```tsx
+<IgrGrid data={nwindData} autoGenerate="false" ref={gridRef} allowAdvancedFiltering="true">
+    <IgrGridToolbar></IgrGridToolbar>
+</IgrGrid>
+```
+
 ```razor
 <{ComponentSelector} Data=data AutoGenerate="true" AllowAdvancedFiltering="true">
     <IgbGridToolbar></IgbGridToolbar>
 </{ComponentSelector}>
 ```
-<!-- WebComponents -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
 ```html
-<{ComponentSelector} id="grid" auto-generate="true" allow-advanced-filtering="true">
+<igc-tree-grid id="treeGrid" auto-generate="true" allow-advanced-filtering="true">
     <igc-grid-toolbar></igc-grid-toolbar>
-</{ComponentSelector}>
+</igc-tree-grid>
 ```
 ```ts
 constructor() {
-    let grid = (document.getElementById("grid") as IgcGridComponent);
-    this._bind = () => {
-            grid.data = this.data
-    }
-    this._bind();
+    let treeGrid = document.getElementById("treeGrid") as IgcTreeGridComponent;
+    treeGrid.data = this.data
 }
 ```
-<!-- end: WebComponents -->
+
+```tsx
+<IgrTreeGrid data={nwindData} autoGenerate="false" allowAdvancedFiltering="true">
+    <IgrGridToolbar></IgrGridToolbar>
+</IgrTreeGrid>
+```
+
+```razor
+<IgbTreeGrid Data=data AutoGenerate="true" AllowAdvancedFiltering="true">
+    <IgbGridToolbar></IgbGridToolbar>
+</IgbTreeGrid>
+```
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```html
+<igc-hierarchical-grid id="hierarchicalGrid" auto-generate="true" allow-advanced-filtering="true">
+    <igc-grid-toolbar></igc-grid-toolbar>
+</igc-hierarchical-grid>
+```
+```ts
+constructor() {
+    let hierarchicalGrid = document.getElementById("hierarchicalGrid") as IgcHierarchicalGridComponent;
+    hierarchicalGrid.data = this.data
+}
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- Blazor -->
+<!-- ComponentStart: HierarchicalGrid -->
+```razor
+<IgbHierarchicalGrid Data=data AutoGenerate="true" AllowAdvancedFiltering="true">
+    <IgbGridToolbar></IgbGridToolbar>
+</IgbHierarchicalGrid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: Blazor -->
+
+<!-- React -->
+<!-- ComponentStart: HierarchicalGrid -->
+```tsx
+<IgrHierarchicalGrid data={nwindData} autoGenerate="false" allowAdvancedFiltering="true">
+    <IgrGridToolbar></IgrGridToolbar>
+</IgrHierarchicalGrid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: React -->
 
 The advanced filtering generates a `FilteringExpressionsTree` which is stored in the `AdvancedFilteringExpressionsTree` input property. You could use the `AdvancedFilteringExpressionsTree` property to set an initial state of the advanced filtering.
 
@@ -95,6 +160,7 @@ ngAfterViewInit(): void {
 
 <!-- end: Angular -->
 
+<!-- WebComponents -->
 ```typescript
 connectedCallback(): void {
     const tree = new IgcFilteringExpressionsTree(FilteringLogic.And);
@@ -121,10 +187,42 @@ connectedCallback(): void {
     grid.advancedFilteringExpressionsTree = tree;
 }
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+<!--```typescript
+This code snippet cannot currently be achieved in React
+componentDidMount() {
+    const tree = new IgrFilteringExpressionsTree(FilteringLogic.And);
+    tree.filteringOperands.push({
+        fieldName: 'ProductName',
+        condition: new IgrStringFilteringOperand.condition('contains'),
+        searchVal: 'cha',
+        ignoreCase: true
+    });
+    const subTree = new IgrFilteringExpressionsTree(FilteringLogic.Or);
+    subTree.filteringOperands.push({
+        fieldName: 'ProductName',
+        condition: new IgrStringFilteringOperand.condition('doesNotContain'),
+        searchVal: 'b',
+        ignoreCase: true
+    });
+    subTree.filteringOperands.push({
+        fieldName: 'ProductName',
+        condition: new IgrStringFilteringOperand.condition('startsWith'),
+        searchVal: 'Chan',
+        ignoreCase: true
+    });
+    tree.filteringOperands.push(subTree);
+    gridRef.current.advancedFilteringExpressionsTree = tree;
+}
+```-->
+<!-- end: React -->
+
 
 In case you don't want to show the `{ComponentName}` toolbar, you could use the `OpenAdvancedFilteringDialog` and `CloseAdvancedFilteringDialog` methods to open and close the advanced filtering dialog programmatically.
 
->
+> [!Note]
 > You can enable both the **QuickFilter**/**ExcelStyleFilter** and the advanced filtering user interfaces in the `{ComponentName}`. Both filtering user interfaces will work independently of one another. The final filtered result in the `{ComponentName}` is the intersection between the results of the two filters.
 
 <!-- Angular -->
@@ -462,6 +560,42 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- end: Angular -->
 
+<!-- WebComponents, Blazor, React -->
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming-grid.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
+```
+<!-- end: React -->
+
+```razor
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+Then set the related CSS properties to this class:
+
+```css
+.grid {
+    --ig-grid-filtering-row-background: #ffcd0f;
+    --ig-grid-filtering-background-or: #d83434;
+}
+```
+### Demo
+
+`sample="/{ComponentSample}/advanced-filtering-style", height="530", alt="{Platform} {ComponentTitle} advanced filtering style"`
+
+<!-- end: WebComponents, Blazor, React -->
+
 ## API References
 
 * `Column`
@@ -469,7 +603,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ## Additional Resources
 
-
+<!-- ComponentStart:  Grid -->
 * [Filtering](filtering.md)
 * [Excel Style Filtering](excel-style-filtering.md)
 * [Virtualization and Performance](virtualization.md)
@@ -480,6 +614,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

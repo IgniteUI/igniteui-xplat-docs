@@ -10,11 +10,9 @@ The {Platform} Stepper Component provides a wizard-like workflow and is used for
 
 ## {Platform} Stepper Example
 
-The following {ProductName} Stepper Example below shows the component in action. It visualizes the process that an end-user must pass through to change the credentials of their credit card, following several consecutive steps.
+The following {ProductName} Stepper Example below shows the component in action. It visualizes the process that an end-user must pass through to configure an order details, following several consecutive steps.
 
-`sample="/layouts/stepper/overview", height="725", alt="{Platform} Stepper Example"`
-
-
+`sample="/layouts/stepper/linear", height="430", alt="{Platform} Linear Stepper Example"`
 
 <div class="divider--half"></div>
 
@@ -36,12 +34,49 @@ import { defineComponents, IgcStepperComponent } from 'igniteui-webcomponents';
 defineComponents(IgcStepperComponent);
 ```
 
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
+
+<!-- React -->
+
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Stepper`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrStepperModule, IgrStepper, IgrStep } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrStepperModule.register();
+```
+
+<!-- end: React -->
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbStepperModule)
+);
+```
+
+<!-- Blazor -->
+
+You will also need to link an additional CSS file to apply the styling to the `Stepper` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
 
 Now you can start with a basic configuration of the {Platform} `Stepper` and its steps.
 
 ## How To Use {Platform} Stepper
-The `Step` is the representation of every step that belongs to the `Stepper`. Steps provide `Invalid`, `Active`, `Optional`, `Disabled` and `Complete` properties, which give you the ability to configure the step states according to your business requirement.
+The `Step` is the representation of every step that belongs to the `Stepper`. Steps provide `Step.Invalid`, `Step.Active`, `Step.Optional`, `Step.Disabled` and `Step.Complete` properties, which give you the ability to configure the step states according to your business requirement.
 
 ### Declaring {Platform} Stepper
 Steps can be declared using one of the following approaches.
@@ -61,6 +96,27 @@ Steps can be declared using one of the following approaches.
 </igc-stepper>
 ```
 
+```razor
+<IgbStepper>
+    @foreach (var item in this.StepsData)
+    {
+        <IgbStep Disabled="@item.Disabled">
+          <p slot="title">@item.Title</p>
+        </IgbStep>
+    }
+</IgbStepper>
+```
+
+```tsx
+<IgrStepper>
+    {this.StepsData.map(item => 
+        <IgrStep key={item.title} disabled={item.disabled}>
+            <p slot="title">{item.title}</p>
+        </IgrStep>
+    }
+</IgrStepper>
+```
+
 - Creating static steps
 
 ```html
@@ -72,6 +128,28 @@ Steps can be declared using one of the following approaches.
        <p slot="title">Step 2</p>
     </igc-step>
 </igc-stepper>
+```
+
+```razor
+<IgbStepper>
+    <IgbStep>
+       <p slot="title">Step 1</p>
+    </IgbStep>
+     <IgbStep>
+       <p slot="title">Step 2</p>
+    </IgbStep>
+</IgbStepper>
+```
+
+```tsx
+<IgrStepper>
+    <IgrStep>
+       <p slot="title">Step 1</p>
+    </IgrStep>
+     <IgrStep>
+       <p slot="title">Step 2</p>
+    </IgrStep>
+</IgrStepper>
 ```
 For each step the user has the ability to configure indicator, title and subtitle using the `Indicator`, `Title` and `Subtitle` slots as follows:
 
@@ -86,10 +164,37 @@ For each step the user has the ability to configure indicator, title and subtitl
        <p slot="subtitle">Home Sub Title</p>
        <div>
           Step Content
-          ...
        </div>
     </igc-step>
 </igc-stepper>
+```
+
+```razor
+<IgbStepper>
+    <IgbStep>
+       <IgbIcon slot="indicator" IconName="home" Collection="material" />
+       <p slot="title">Home</p>
+       <p slot="subtitle">Home Sub Title</p>
+       <div>
+          Step Content
+          ...
+       </div>
+    </IgbStep>
+</IgbStepper>
+```
+
+```tsx
+<IgrStepper>
+    <IgrStep>
+        <IgrIcon slot="indicator" name="home" collection="material" />
+        <p slot="title">Home</p>
+        <p slot="subtitle">Home Sub Title</p>
+        <div>
+            Step Content
+            ...
+        </div>
+    </IgrStep>
+</IgrStepper>
 ```
 <img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 500px" src="../../images/stepper/stepper-step.png"/>
 
@@ -127,20 +232,46 @@ The sample below demonstrates how stepper orientation and titles position could 
 
 The {Platform} `Stepper` gives you the opportunity to set its steps flow using the `Linear` property. By default, linear is set to *false* and the user is enabled to select any non-disabled step in the `Stepper`.
 
+
+```html
+<igc-stepper linear="true">
+    <igc-step>
+       <p slot="title">Step 1</p>
+    </igc-step>
+    <igc-step>
+       <p slot="title">Step 2</p>
+    </igc-step>
+</igc-stepper>
+```
+
+```razor
+<IgbStepper Linear="true">
+    <IgbStep>
+       <p slot="title">Step 1</p>
+    </IgbStep>
+     <IgbStep>
+       <p slot="title">Step 2</p>
+    </IgbStep>
+</IgbStepper>
+```
+
+```tsx
+<IgrStepper linear="true">
+    <IgrStep>
+       <p slot="title">Step 1</p>
+    </IgrStep>
+     <IgrStep>
+       <p slot="title">Step 2</p>
+    </IgrStep>
+</IgrStepper>
+```
+
 When the linear property is set to *true*, the stepper will require the current non-optional step to be valid before proceeding to the next one.
 
 If the current non-optional step is not valid you cannot go forward to the next step until you validate the current one.
 
 > [!Note]
 > Optional steps validity is not taken into account in order to move forward.
-
-The following example demonstrates how to configure a linear stepper:
-
-`sample="/layouts/stepper/linear", height="430", alt="{Platform} Linear Stepper Example"`
-
-
-
-<div class="divider--half"></div>
 
 ### Step Interactions
 
@@ -200,7 +331,21 @@ The sample below demonstrates all exposed step types and how they could be chang
 
 `sample="/layouts/stepper/steptypes", height="300", alt="{Platform} Step Types Example"`
 
+<div class="divider--half"></div>
 
+### Stepper Animations
+
+The {Platform} `Stepper` Animations provide the end-users with a beautiful experience interacting with the defined steps. The available animation options differ depending on the orientation of the stepper.
+
+When the stepper is horizontally orientated, it is configured to use the `slide` animation by default. It also supports `fade` as an alternative. The animations are configured through the `HorizontalAnimation` input.
+
+In a vertically orientated layout, the animation type could be defined using the `VerticalAnimation` property. By default, its value is set to `grow` and the user has the ability to set it to `fade` as well.
+
+Setting `none` to both animation type inputs disables stepper animations.
+
+The `Stepper` component also gives you the ability to configure the duration of the transition between the steps. This could be achieved through the `animationDuration` property, which takes a number as an argument and it is common to both orientations. The default value is set to 320ms.
+
+`sample="/layouts/stepper/animations", height="600", alt="{Platform} Stepper Animations Example"`
 
 <div class="divider--half"></div>
 
@@ -212,14 +357,14 @@ The {Platform} `Stepper` navigation is compliant with [W3 accessability standard
 **Key Combinations**
 
  - <kbd>Tab</kbd> - moves the focus to the next tabbable element
- - <kbd>Shift + Tab</kbd> - moves the focus to the previous tabbable element
- - <kbd>Arrow Down</kbd> - moves the focus to the header of the next accessible step when the stepper is **vertically orientated**
- - <kbd>Arrow Up</kbd> - moves the focus to the header of the previous accessible step when the stepper is **vertically orientated**
- - <kbd>Arrow Left</kbd> - moves the focus to the header of the previous accessible step in both orientations
- - <kbd>Arrow Right</kbd> - moves the focus to the header of the next accessible step in both orientations
+ - <kbd>Shift</kbd> + <kbd>Tab</kbd> - moves the focus to the previous tabbable element
+ - <kbd>↓</kbd> - moves the focus to the header of the next accessible step when the stepper is **vertically orientated**
+ - <kbd>↑</kbd> - moves the focus to the header of the previous accessible step when the stepper is **vertically orientated**
+ - <kbd>←</kbd> - moves the focus to the header of the previous accessible step in both orientations
+ - <kbd>→</kbd> - moves the focus to the header of the next accessible step in both orientations
  - <kbd>Home</kbd> - moves the focus to the header of the FIRST enabled step in the stepper
  - <kbd>End</kbd> - moves the focus to the header of the LAST enabled step in the stepper
- - <kbd>Enter / Space</kbd> - activates the currently focused step
+ - <kbd>Enter</kbd> or <kbd>Space</kbd> - activates the currently focused step
 
 ## Styling {Platform} Stepper
 

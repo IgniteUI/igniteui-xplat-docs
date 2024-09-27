@@ -7,9 +7,9 @@ mentionedTypes: ['Tree', 'TreeItem', 'Icon', 'CircularProgress']
 
 # {Platform} Tree Overview
 
-{ProductName} Tree, also known as TreeView component, is a high-performance control that visualizes expandable data structures within a tree-like UI, enabling you to apply load on demand for child items. The {ProductName} Tree also provides features like expanding and collapsing nodes, nested app navigation, {ProductName} Tree nodes either can be generated manually or from a bound data source.  
+{ProductName} Tree, also known as TreeView component, is a high-performance control that visualizes expandable data structures within a tree-like UI, enabling you to apply load on demand for child items. The {ProductName} Tree also provides features like expanding and collapsing nodes, nested app navigation, {ProductName} Tree nodes either can be generated manually or from a bound data source.
 
-For end-users this means they can easily navigate across different app pages, use selection, checkboxes, add texts, icons, images and more. 
+For end-users this means they can easily navigate across different app pages, use selection, checkboxes, add texts, icons, images and more.
 
 The {ProductName} Tree component allows users to represent hierarchical data in a tree-view structure, maintaining parent-child relationships, as well as to define static tree-view structure without a corresponding data model. Its primary purpose is to allow end-users to visualize and navigate within hierarchical data structures. The `Tree` component also provides load on demand capabilities, item activation, multiple and cascade selection of items through built-in checkboxes, built-in keyboard navigation and more.
 
@@ -40,6 +40,8 @@ Before using the `Tree`, you need to register it as follows:
 import { defineComponents, IgcTreeComponent } from 'igniteui-webcomponents';
 defineComponents(IgcTreeComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -83,8 +85,8 @@ The simplest way to start using the `Tree` is as follows:
 
 ### Declaring a tree
 `TreeItem` is the representation of every item that belongs to the `Tree`.
-Items provide `disabled`, `active`, `selected` and `expanded` properties, which give you opportunity to configure the states of the item as per your requirement.
-The `value` property can be used to add a reference to the data entry the item represents.
+Items provide `Disabled`, `Active`, `Selected` and `Expanded` properties, which give you opportunity to configure the states of the item as per your requirement.
+The `Value` property can be used to add a reference to the data entry the item represents.
 
 <!-- WebComponents, Blazor -->
 
@@ -122,7 +124,7 @@ Items can be bound to a data model so that their expanded and selected states ar
 
 - Declaring a tree by creating static unbound items
 
-In order to render a tree you do not necessarily need a data set - individual items can be created without an underlying data model using the exposed `label` property or provide a custom slot content for the `TreeItem` label.
+In order to render a tree you do not necessarily need a data set - individual items can be created without an underlying data model using the exposed `Label` property or provide a custom slot content for the `TreeItem` label.
 
 ```html
 <igc-tree>
@@ -189,16 +191,49 @@ In order to render a tree you do not necessarily need a data set - individual it
 
 ### Item Interactions
 
-The `Tree` provides the following API methods for item interactions:
+`TreeItem` could be expanded or collapsed:
+- by clicking on the item expand indicator *(default behavior)*.
+- by clicking on the item if the `Tree` `ToggleNodeOnClick` property is set to `true`.
 
-- `expand` - expands all items. If an items array is passed, expands only the specified items.
-- `collapse` - collapses all items. If an items array is passed, collapses only the specified items.
-- `select` - selects all items. If an items array is passed, selects only the specified items. Does not emit `Selection` event.
-- `deselect` - deselects all items. If an items array is passed, deselects only the specified items. Does not emit `Selection` event.
+```html
+<igc-tree toggle-node-on-click="true">
+    <igc-tree-item label="North America">
+        <igc-tree-item label="United States"></igc-tree-item>
+        <igc-tree-item label="Canada"></igc-tree-item>
+        <igc-tree-item label="Mexico"></igc-tree-item>
+    </igc-tree-item>
+    <igc-tree-item label="South America">
+        <igc-tree-item label="Brazil"></igc-tree-item>
+    </igc-tree-item>
+</igc-tree>
+```
+
+By default, multiple items could be expanded at the same time. In order to change this behavior and allow expanding only single branch at a time, the `SingleBranchExpand` property could be enabled. This way when an item is expanded, all of the others already expanded branches in the same level will be collapsed.
+
+```html
+<igc-tree single-branch-expand="true">
+    <igc-tree-item label="North America">
+        <igc-tree-item label="United States"></igc-tree-item>
+        <igc-tree-item label="Canada"></igc-tree-item>
+        <igc-tree-item label="Mexico"></igc-tree-item>
+    </igc-tree-item>
+    <igc-tree-item label="South America">
+        <igc-tree-item label="Brazil"></igc-tree-item>
+    </igc-tree-item>
+</igc-tree>
+```
+<!-- WebComponents -->
+In addition, the `Tree` provides the following API methods for item interactions:
+
+- `Tree.Expand` - expands all items. If an items array is passed, expands only the specified items.
+- `Tree.Collapse` - collapses all items. If an items array is passed, collapses only the specified items.
+- `Tree.Select` - selects all items. If an items array is passed, selects only the specified items. Does not emit `selection` event.
+- `Tree.Deselect` - deselects all items. If an items array is passed, deselects only the specified items. Does not emit `selection` event.
+<!-- end: WebComponents -->
 
 ## {Platform} Tree Selection
 
-In order to setup item selection in the {ProductName} Tree component, you just need to set its `selection` property. This property accepts the following three modes: **None**, **Multiple** and **Cascade**. Below we will take a look at each of them in more detail.
+In order to setup item selection in the {ProductName} Tree component, you just need to set its `Selection` property. This property accepts the following three modes: **None**, **Multiple** and **Cascade**. Below we will take a look at each of them in more detail.
 
 ### None
 
@@ -206,7 +241,7 @@ In the `Tree` by default item selection is disabled. Users cannot select or dese
 
 ### Multiple
 
-To enable multiple item selection in the `Tree` just set the `selection` property to **multiple**. This will render a checkbox for every item. Each item has two states - selected or not. This mode supports multiple selection.
+To enable multiple item selection in the `Tree` just set the `Selection` property to **multiple**. This will render a checkbox for every item. Each item has two states - selected or not. This mode supports multiple selection.
 
 ```html
 <igc-tree selection="multiple">
@@ -244,29 +279,29 @@ In this mode a parent's selection state entirely depends on the selection state 
 ## Keyboard Navigation
 Keyboard navigation in `Tree` provides a rich variety of keyboard interactions for the user. This functionality is enabled by default and allows users to navigate through the items.
 
-The `Tree` navigation is compliant with W3C accesibility standards and convenient to use.
+The `Tree` navigation is compliant with W3C accessibility standards and convenient to use.
 
 **Key Combinations**
 
- - <kbd>Arrow Down</kbd> - navigates to the next visible item. Marks the item as active. Does nothing if on the LAST item.
- - <kbd>Ctrl + Arrow Down</kbd> - navigates to the next visible item. Does nothing if on the LAST item.
- - <kbd>Arrow Up</kbd> - navigates to the previous visible item. Marks the item as active. Does nothing if on the FIRST item.
- - <kbd>Ctrl + Arrow Up</kbd> - navigates to the previous visible item. Does nothing if on the FIRST item.
- - <kbd>Arrow Left</kbd> - on an expanded parent item, collapses it. If the item is collapsed or does not have children, moves to its parent item. Does nothing if there is no parent item.
- - <kbd>Arrow Right</kbd> - on an expanded parent item, navigates to the first child of the item. If on a collapsed parent item, expands it. Does nothing if the item does not have children.
+ - <kbd>↓</kbd> - navigates to the next visible item. Marks the item as active. Does nothing if on the LAST item.
+ - <kbd>Ctrl</kbd> + <kbd>↓</kbd> - navigates to the next visible item. Does nothing if on the LAST item.
+ - <kbd>↑</kbd> - navigates to the previous visible item. Marks the item as active. Does nothing if on the FIRST item.
+ - <kbd>Ctrl</kbd> + <kbd>↑</kbd> - navigates to the previous visible item. Does nothing if on the FIRST item.
+ - <kbd>←</kbd> - on an expanded parent item, collapses it. If the item is collapsed or does not have children, moves to its parent item. Does nothing if there is no parent item.
+ - <kbd>→</kbd> - on an expanded parent item, navigates to the first child of the item. If on a collapsed parent item, expands it. Does nothing if the item does not have children.
  - <kbd>Home</kbd> - navigates to the FIRST item.
  - <kbd>End</kbd> - navigates to the LAST visible item.
  - <kbd>Tab</kbd> - navigates to the next focusable element on the page, outside of the tree.
- - <kbd>Shift + Tab</kbd> - navigates to the previous focusable element on the page, outside of the tree.
+ - <kbd>Shift</kbd> + <kbd>Tab</kbd> - navigates to the previous focusable element on the page, outside of the tree.
  - <kbd>Space</kbd> - toggles selection of the current item. Marks the node as active.
- - <kbd>Shift + Space</kbd> - toggles selection of all items between the active one and the one pressed Space while holding Shift if selection is enabled.
+ - <kbd>Shift</kbd> + <kbd>Space</kbd> - toggles selection of all items between the active one and the one pressed Space while holding Shift if selection is enabled.
  - <kbd>Enter</kbd> - activates the focused item. If the item has link in it, opens the link.
  - <kbd>*</kbd> - expands the item and all sibling items on the same level.
 
-When selection is enabled, end-user selection of items is only allowed through the rendered checkbox. Since both selection types allow multiple selection, the following mouse + keyboard interactions are available:
+When selection is enabled, end-user selection of items is only allowed through the rendered checkbox. Since both selection types allow multiple selection, the following mouse and keyboard interactions are available:
 
  - <kbd>Click</kbd> - when performed on the item checkbox, toggles selection of the item if selection is enabled. Otherwise, focuses the item
- - <kbd>Shift + Click</kbd> - when performed on the item checkbox, toggles selection of all items between the active one and the one clicked while holding Shift if selection is enabled
+ - <kbd>Shift</kbd> + <kbd>Click</kbd> - when performed on the item checkbox, toggles selection of all items between the active one and the one clicked while holding Shift if selection is enabled
 
 <!-- WebComponents -->
 
@@ -281,6 +316,17 @@ The {ProductName} Tree can be rendered in such way that it requires the minimal 
 After the user clicks the expand icon, it is replaced by a loading indicator. When the loading property resolves to false, the loading indicator disappears and the children are loaded.
 
 You can provide a custom slot content for the loading area using the `loadingIndicator` slot. If such slot is not defined, the `CircularProgress` is used.
+
+### Load On Demand With Virtualization
+
+Loading a greater number of children on demand in the {ProductName} Tree might negatively impact performance since the tree items are declaratively defined by design. The following demo showcases how the [@lit-labs/virtualizer](https://github.com/lit/lit/tree/main/packages/labs/virtualizer) library can be used to render the child tree items in a virtualized container. The result is improved performance as only the visible chunk of children is rendered in the DOM.
+
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/tree-load-on-demand-virtualized"
+           alt="$Platform$ Tree Load On Demand Virtualized Example"
+           github-src="grids/tree/load-on-demand-virtualized">
+</code-view>
 
 <!-- end: WebComponents -->
 

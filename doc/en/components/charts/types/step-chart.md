@@ -2,7 +2,7 @@
 title: {Platform} Step Chart | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Step Chart
 _keywords: {Platform} Charts, Step Chart, Step Area Chart, Step Line Chart, Infragistics
-mentionedTypes: ["DomainChart", "CategoryChart", "CategoryChartType", 'Series']
+mentionedTypes: ["DomainChart", "CategoryChart", "CategoryChartType", 'Series', "CategoryChartType"]
 namespace: Infragistics.Controls.Charts
 ---
 # {Platform} Step Chart
@@ -11,7 +11,7 @@ The {ProductName} Step Chart belongs to a group of category charts that render a
 
 ## {Platform} Step Area Chart
 
-You can create {Platform} Step Area Chart in the `CategoryChart` control by setting `ChartType` property to **StepArea** enum, as shown in the example below.
+You can create {Platform} Step Area Chart in the `CategoryChart` control by setting `ChartType` property to `StepArea` enum, as shown in the example below.
 
 `sample="/charts/category-chart/step-area-multiple-sources", height="600", alt="{Platform} Step Area Chart Multiple Sources"`
 

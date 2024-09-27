@@ -2,7 +2,7 @@
 title: {Platform} マップ | データ可視化ツール | シェープ ファイル リファレンス | シェープ ファイルの編集 | インフラジスティックス
 _description: インフラジスティックスの {Platform} マップで使用するシェープ ファイル形式について説明します。{ProductName} マップ チュートリアルを是非お試しください!
 _keywords: {Platform} map, shape files, {ProductName}, Infragistics, shape editing, {Platform} マップ, シェープ ファイル, シェイプの編集, インフラジスティックス
-mentionedTypes: ['XamGeographicMap']
+mentionedTypes: ['XamGeographicMap', 'GeographicShapeSeriesBase', 'Series']
 _language: ja
 ---
 

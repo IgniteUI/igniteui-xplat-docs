@@ -13,7 +13,6 @@ The {Platform} Checkbox is a component that lets you add checkboxes to your {Pla
 
 `sample="/inputs/checkbox/overview", height="100", alt="{Platform} Checkbox Example"`
 
-
 <div class="divider--half"></div>
 
 ## Usage
@@ -35,6 +34,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcCheckboxComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->

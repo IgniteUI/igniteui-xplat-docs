@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} ページング - インフラジスティックス
+title: {Platform} {ComponentTitle} ページング - {ProductName}
 _description: {Platform} ページネーションを構成し、Ignite UI によって {Platform} テーブルにカスタム ページを作成し、さまざまなイベントで要求されたページのデータを取得します。
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Paging, {Platform}, {ComponentKeywords}, {ProductName}, ページング, インフラジスティックス
@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} ページネーションの概要
 
-ページネーションは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。{Platform} テーブルのページネーションにより、ユーザー エクスペリエンスとデータ操作が向上します。`{ComponentName}` ページネーションは、列の追加と同様に、`Paginator` タグを定義することにより、グリッド ツリーに投影された別のコンポーネントを介して構成できます。他の {Platform} テーブルと同様に、`{ComponentName}` のページネーションはカスタム ページのテンプレートをサポートしています。
+{Platform} {ComponentTitle} の {ProductName} ページネーション機能は、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。React グリッドのページネーションにより、ユーザー エクスペリエンスとデータ操作が向上します。`{ComponentName}` ページネーションは、列の追加と同様に、`Paginator` タグを定義することにより、グリッド ツリーに投影された別のコンポーネントを介して構成できます。他の {Platform} テーブルと同様に、{Platform} {ComponentTitle} のページネーションはカスタム ページのテンプレートをサポートしています。
 
 ## {Platform} {ComponentTitle} ページネーションの例
 
@@ -25,9 +25,15 @@ _language: ja
 
 <!-- end: Angular -->
 
+```css
+.gridSize {
+    --ig-size: var(--ig-size-small);
+}
+```
+
 <!-- Angular -->
 ```html
-<{ComponentSelector} #grid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
+<{ComponentSelector} #grid class="gridSize" [data]="data" [height]="'500px'" [width]="'100%'">
     <igx-paginator [perPage]="10">
     </igx-paginator>
 </{ComponentSelector}>
@@ -35,18 +41,27 @@ _language: ja
 <!-- end: Angular -->
 
 ```razor
-<{ComponentSelector} @ref=grid Width="100%" Height="500px" Data=marketData DisplayDensity="DisplayDensity.Cosy">
+<{ComponentSelector} @ref=grid Class="gridSize" Width="100%" Height="500px" Data=Data>
     <IgbPaginator PerPage="10"></IgbPaginator>
 </{ComponentSelector}>
 ```
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid" height="500px" width="100%" display-density="Cosy">
+<{ComponentSelector} id="grid" class="gridSize" height="500px" width="100%" >
     <igc-paginator per-page="10">
     </igc-paginator>
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} className="gridSize" height="500px" width="100%">
+    <IgrPaginator key="paginator" perPage="10">
+    </IgrPaginator>
+</{ComponentSelector}>
+```
+<!-- end: React -->
 
 <!-- Angular -->
 ```html
@@ -73,7 +88,7 @@ _language: ja
 
 グループ行は、データ行とともにページング プロセスに関係します。それらは各ページのページ サイズにカウントされます。折りたたまれた行はページング プロセスに含まれません。
 
-ページングとグループ化の統合については、[グループ化](groupby.md#grid-ページングでグループ化)のトピックで説明しています。
+ページングとグループ化の統合については、[グループ化](groupby.md#{PlatformLower}-grid-ページングでグループ化)のトピックで説明しています。
 
 <!-- ComponentEnd: Grid -->
 
@@ -85,23 +100,24 @@ _language: ja
 
 <!-- Angular -->
 ```html
-<{ComponentSelector} #grid [data]="data">
+<{ComponentSelector} #grid [data]="data" className="gridSize">
     <igx-paginator #paginator [(page)]="grid.page" [totalRecords]="grid.totalRecords" [(perPage)]="10"
-            [selectOptions]="selectOptions" [displayDensity]="grid.displayDensity">
+            [selectOptions]="selectOptions">
     </igx-paginator>
 </{ComponentSelector}>
 ```
 <!-- end: Angular -->
 
 ```razor
-<{ComponentSelector} @ref=grid Data=marketData DisplayDensity="DisplayDensity.Compact">
-    <IgbPaginator Page="grid.Page" TotalRecords="grid.TotalRecords" PerPage="10" DisplayDensity="grid.DisplayDensity">
+<{ComponentSelector} @ref=grid Data=Data className="gridSize">
+    <IgbPaginator Page="grid.Page" TotalRecords="grid.TotalRecords" PerPage="10">
     </IgbPaginator>
 </{ComponentSelector}>
 ```
 
+<!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid">
+<{ComponentSelector} id="grid" className="gridSize">
     <igc-paginator id="paginator" per-page="10">
     </igc-paginator>
 </{ComponentSelector}>
@@ -109,18 +125,24 @@ _language: ja
 
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var grid = this.grid = document.getElementById('grid') as {ComponentName};
     var paginator = this.paginator = document.getElementById('paginator') as IgcPaginatorComponent;
-
-    this._bind = () => {
-        grid.data = this.data;
-        paginator.page = grid.page;
-        paginator.totalRecords = grid.totalRecords;
-        paginator.selectOption = selectOptions;
-        paginator.displayDensity = grid.displayDensity;
-    }
-    this._bind();
+    const selectOptions = [5, 15, 20, 50];
+    grid.data = this.data;
+    paginator.page = grid.page;
+    paginator.totalRecords = grid.totalRecords;
+    paginator.selectOptions = selectOptions;
 }
+```
+<!-- end: WebComponents -->
+
+```tsx
+const selectOptions = [5, 15, 20, 50];
+
+<{ComponentSelector} className="gridSize">
+    <IgrPaginator key="paginator" perPage={10} page={1} selectOptions={selectOptions}>
+    </IgrPaginator>
+</{ComponentSelector}>
 ```
 
 <!-- ComponentEnd: Grid, TreeGrid -->
@@ -150,7 +172,9 @@ TO-DO H-GRID CODE SNIPPET
 
 ### 子グリッド内のページネーター設定
 
+<!-- Angular -->
 `{ComponentName}` の子グリッドの実装方法および DI スコープの動作には一定の制限があるため、`RowIsland` タグ内でページネーターコンポーネントを定義する場合、ページネーター自体で `Paginator` ディレクティブを必ず使用してください。これにより、子グリッドが参照として正しいページネーター インスタンスを持つようになります。
+<!-- end:Angular -->
 
 ```html
 <igx-hierarchical-grid>
@@ -308,7 +332,7 @@ $dark-paginator-schema: extend($_dark-pagination,
                color: ("primary", 200)
             ),
             border-color:(
-               color:( "primary", 500)
+               color: ("primary", 500)
             )
         )
 );
@@ -316,22 +340,22 @@ $dark-paginator-schema: extend($_dark-pagination,
 $dark-button-schema: extend($_dark-button,
         (
             icon-color:(
-               color:("secondary", 700)
+               color: ("secondary", 700)
             ),
             icon-hover-color:(
-               color:("primary", 500)
+               color: ("primary", 500)
             ),
             icon-hover-background:(
-               color:("secondary", 500)
+               color: ("secondary", 500)
             ),
             icon-focus-color:(
-               color:("primary", 500)
+               color: ("primary", 500)
             ),
             icon-focus-background:(
-               color:("secondary", 500)
+               color: ("secondary", 500)
             ),
             disabled-color:(
-               color:("primary", 700)
+               color: ("primary", 700)
             )
         )
 );
@@ -375,9 +399,11 @@ $dark-button: button-theme(
 
 ## API リファレンス
 * `{ComponentName}`
-* `GridPaginator`
+* `Paginator`
 
 ## その他のリソース
+
+<!-- ComponentStart:  Grid, TreeGrid -->
 
 <!-- * [ページネーター](../paginator.md) -->
 * [仮想化とパフォーマンス](virtualization.md)
@@ -388,6 +414,8 @@ $dark-button: button-theme(
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
+
+<!-- ComponentEnd:  Grid, TreeGrid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

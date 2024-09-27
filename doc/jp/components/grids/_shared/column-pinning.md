@@ -10,17 +10,18 @@ _language: ja
 
 # {Platform} {ComponentTitle} 列ピン固定
 
-{ProductName} の**列ピン固定**は、ユーザーが特定の列順序で列をロックすることを可能にし、`{ComponentName}` での水平スクロール時にロックされた列が常に表示されます。{Platform} {ComponentTitle} には組み込みの列ピン固定 UI があり、`{ComponentName}` のツールバーで列の表示状態を変更できます。その他、カスタム UI を定義し、Column Pinning 機能を介して列のピン固定状態を変更できます。
+{Platform} {ComponentTitle} の {ProductName} 列のピン固定機能を使用すると、開発者は特定の列を希望の順序でロックできるため、ユーザーが `Grid` を水平方向にスクロールしている場合でも、常に可視性を確保できます。
+列ピン固定用の統合 UI があり、{Platform} {ComponentTitle} ツールバーからアクセスできます。さらに、開発者は、列のピン状態を変更するカスタム ユーザー インターフェイスを柔軟に構築できます。
 
 ## {Platform} {ComponentTitle} 列ピン固定の例
 
 以下の例は、1 つまたは複数の列を `{ComponentName}` の左側または右側にピン固定する方法を示しています。
 
-`sample="/{ComponentSample}/column-pinning-options", height="510", alt="{Platform} {ComponentTitle} 列ピン固定の例"`
+`sample="/{ComponentSample}/column-pinning", height="510", alt="{Platform} {ComponentTitle} 列ピン固定の例"`
 
 
 
-## Column Pinning API
+## 列ピン固定の API
 
 列のピン固定は `Column` の `Pinned` プロパティによって制御されます。デフォルトでピン固定列は `{ComponentName}` の左側に固定して描画され、`{ComponentName}` 本体のピン固定されていない列は水平スクロールされます。
 
@@ -48,25 +49,27 @@ _language: ja
 <igc-grid id="grid1" width="700px" auto-generate="false">
     <igc-column field="Name" pinned="true"></igc-column>
     <igc-column field="AthleteNumber"></igc-column>
-    <igc-column field="TrackProgress"></igxc-column>
+    <igc-column field="TrackProgress"></igc-column>
     <igc-paginator per-page="10">
     </igc-paginator>
 </igc-grid>
 ```
 ```ts
 constructor() {
-        var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-        this.initColumns = this.initColumns.bind(this);
-        this.selectCell = this.selectCell.bind(this);
-
-        this._bind = () => {
-            grid.data = this.data;
-            grid.columnInit = this.initColumns;
-            grid.selected = this.selectCell;
-        }
-        this._bind();
-    }
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    grid.data = this.data;
+}
 ```
+<!-- React -->
+```tsx
+<{ComponentName} data={nwindData} autoGenerate="false">
+    <IgrColumn field="Name" pinned="true"></IgrColumn>
+    <IgrColumn field="AthleteNumber"></IgrColumn>
+    <IgrColumn field="TrackProgress"></IgrColumn>
+</{ComponentName}>
+```
+<!-- end: React -->
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -106,10 +109,21 @@ constructor() {
 `{ComponentName}` の `PinColumn` または `UnpinColumn` メソッドを使用してフィールド名によって列をピン固定またはピン固定解除できます。
 
 <!-- ComponentStart: Grid -->
+
+<!-- Angular, WebComponents -->
 ```typescript
 this.grid.pinColumn('AthleteNumber');
 this.grid.unpinColumn('Name');
 ```
+<!-- end: Angular, WebComponents -->
+
+
+<!-- React -->
+```typescript
+gridRef.current.pinColumn('AthleteNumber');
+gridRef.current.unpinColumn('Name');
+```
+<!-- end: React -->
 
 ```razor
 @code {
@@ -139,11 +153,11 @@ this.hierarchicalGrid.unpinColumn('Debut');
 
 列をピン固定すると、一番右に配置されたピン固定列の右にピン固定されます。ピン固定列の順序を変更するには、`ColumnPin` イベントでイベント引数の `InsertAtIndex` プロパティを適切な位置インデックスに変更します。
 
-<!-- end: Angular, React, WebComponents -->
+<!-- end: Angular, React, WebComponents, React -->
 
 <!-- Blazor -->
 
-列をピン固定すると、一番右に配置されたピン固定列の右にピン固定されます。ピン固定列の順序を変更するには、`ColumnPinnedScript` イベントをサブスクライブし、イベント引数の `InsertAtIndex` プロパティを目的の位置インデックスに変更するための JavaScript 関数を提供します。
+列をピン固定すると、一番右に配置されたピン固定列の右にピン固定されます。ピン固定列の順序を変更するには、`ColumnPinScript` イベントをサブスクライブし、イベント引数の `InsertAtIndex` プロパティを目的の位置インデックスに変更するための JavaScript 関数を提供します。
 
 <!-- end: Blazor -->
 
@@ -163,13 +177,9 @@ this.hierarchicalGrid.unpinColumn('Debut');
 
 ```typescript
 constructor() {
-    var dataGrid = this.dataGrid = document.getElementById('dataGrid') as IgcGridComponent;
-
-    this._bind = () => {
-        dataGrid.data = this.data;
-        datagrid.columnPin = this.columnPinning;
-    }
-    this._bind();
+    var dataGrid = document.getElementById('dataGrid') as {ComponentName}Component;
+    dataGrid.data = this.data;
+    dataGrid.addEventListener("columnPin", this.columnPinning);
 }
 ```
 
@@ -177,24 +187,24 @@ constructor() {
 
 ```typescript
 public columnPinning(event) {
-    if (event.column.field === 'Name') {
-        event.insertAtIndex = 0;
+    if (event.detail.column.field === 'Name') {
+        event.detail.insertAtIndex = 0;
     }
 }
 ```
 
 ```razor
-<{ComponentSelector} Data=data AutoGenerate=true ColumnPinnedScript="onColumnPin"/>
+<{ComponentSelector} Data=data AutoGenerate=true ColumnPinScript="onColumnPin"/>
 
 
 //In JavaScript
-function onColumnPinned(e) {
+function onColumnPin(e) {
     if (e.detail.column.field == "Country") {
         e.detail.insertAtIndex = 0;
     }
 }
 
-igRegisterScript("onColumnPinned", onColumnPinned, false);
+igRegisterScript("onColumnPin", onColumnPin, false);
 ```
 
 ## ピン固定の位置
@@ -218,13 +228,24 @@ public pinningConfig: IPinningConfig = { columns: ColumnPinningPosition.End };
 ```
 
 ```typescript
-var grid = (this.grid = document.getElementById('dataGrid') as any) as IgcGridComponent;
+var grid = document.getElementById('dataGrid') as {ComponentName}Component;
 grid.pinning = { columns: ColumnPinningPosition.End };
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+```typescript
+const pinningConfig = new IgrPinningConfig();
+pinningConfig.columns = ColumnPinningPosition.End;
+```
+
+```tsx
+<IgrGrid data={nwindData} autoGenerate="true" pinning={pinningConfig}></IgrGrid>
+```
+<!-- end: React -->
+
 ```razor
-<{ComponentSelector} Data=data AutoGenerate=true Pinning="pinningConfig"></IgbGrid>
+<{ComponentSelector} Data=data AutoGenerate=true Pinning="pinningConfig"></{ComponentSelector}>
 
 @code {
     private IgbPinningConfig pinningConfig = new() {
@@ -235,10 +256,8 @@ grid.pinning = { columns: ColumnPinningPosition.End };
 
 ### デモ
 
-`sample="/{ComponentSample}/column-pinning-right-side", height="510", alt="{Platform} {ComponentTitle} column pinning right side"`
+`sample="/{ComponentSample}/column-pinning-right-side", height="510", alt="{Platform} {ComponentTitle} 列を右側にピン固定"`
 
-
-<!-- Angular -->
 
 ## カスタム列ピン固定 UI
 
@@ -252,7 +271,7 @@ grid.pinning = { columns: ColumnPinningPosition.End };
 ```html
 <igx-grid #grid1 [data]="data" [width]="'100%'" [height]="'500px'">
     <igx-column #col *ngFor="let c of columns" [field]="c.field" [header]="c.header" [width]="c.width" [pinned]='c.pinned'
-        [hidden]='c.hidden' [headerClasses]="'customHeaderSyle'">
+        [hidden]='c.hidden' [headerClasses]="'customHeaderStyle'">
         <ng-template igxHeader>
             <div class="title-inner">
                 <span style="float:left">{{col.header}}</span>
@@ -264,61 +283,123 @@ grid.pinning = { columns: ColumnPinningPosition.End };
 ```
 ```html
 <igc-grid id="grid1" width="100%" height="500px" auto-generate="false">
-        <igc-column id="Name" field="Name" data-type="String" width="250px"></igc-column>
-        <igc-column id="Title" field="Title" data-type="String" width="300px"></igc-column>
-        <igc-column id="ID" field="ID" data-type="Number" width="200px"></igc-column>
-        <igc-column id="HireDate" field="HireDate" header="Hire Date" data-type="Date" width="200px"></igc-column>
-        <igc-column id="Age" field="Age" data-type="Number" width="200px"></igc-column>
-        <igc-column id="Address" field="Address" data-type="String" width="200px"></igc-column>
-        <igc-column id="City" field="City" data-type="String" width="200px"></igc-column>
-        <igc-column id="Country" field="Country" data-type="String" width="200px"></igc-column>
-        <igc-column id="Fax" field="Fax" data-type="String" width="200px"></igc-column>
-        <igc-column id="PostalCode" field="PostalCode" header="Postal Code" data-type="String" width="200px"></igc-column>
-        <igc-column id="Phone" field="Phone" data-type="String" width="200px"></igc-column>
+    <igc-column id="Name" field="Name" data-type="String" width="250px"></igc-column>
+    <igc-column id="Title" field="Title" data-type="String" width="300px"></igc-column>
+    <igc-column id="ID" field="ID" data-type="Number" width="200px"></igc-column>
+    <igc-column id="HireDate" field="HireDate" header="Hire Date" data-type="Date" width="200px"></igc-column>
+    <igc-column id="Age" field="Age" data-type="Number" width="200px"></igc-column>
+    <igc-column id="Address" field="Address" data-type="String" width="200px"></igc-column>
+    <igc-column id="City" field="City" data-type="String" width="200px"></igc-column>
+    <igc-column id="Country" field="Country" data-type="String" width="200px"></igc-column>
+    <igc-column id="Fax" field="Fax" data-type="String" width="200px"></igc-column>
+    <igc-column id="PostalCode" field="PostalCode" header="Postal Code" data-type="String" width="200px"></igc-column>
+    <igc-column id="Phone" field="Phone" data-type="String" width="200px"></igc-column>
 </igc-grid>
 ```
 ```ts
 constructor() {
-    var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
-    var Name = this.Name = document.getElementById('Name') as IgcColumnComponent;
-    var Title = this.Title = document.getElementById('Title') as IgcColumnComponent;
-    var ID = this.ID = document.getElementById('ID') as IgcColumnComponent;
-    var HireDate = this.HireDate = document.getElementById('HireDate') as IgcColumnComponent;
-    var Age = this.Age = document.getElementById('Age') as IgcColumnComponent;
-    var Address = this.Address = document.getElementById('Address') as IgcColumnComponent;
-    var City = this.City = document.getElementById('City') as IgcColumnComponent;
-    var Country = this.Country = document.getElementById('Country') as IgcColumnComponent;
-    var Fax = this.Fax = document.getElementById('Fax') as IgcColumnComponent;
-    var PostalCode = this.PostalCode = document.getElementById('PostalCode') as IgcColumnComponent;
-    var Phone = this.Phone = document.getElementById('Phone') as IgcColumnComponent;
+    var grid1 = document.getElementById('grid1') as IgcGridComponent;
+    var Name = document.getElementById('Name') as IgcColumnComponent;
+    var Title = document.getElementById('Title') as IgcColumnComponent;
+    var ID = document.getElementById('ID') as IgcColumnComponent;
+    var HireDate = document.getElementById('HireDate') as IgcColumnComponent;
+    var Age = document.getElementById('Age') as IgcColumnComponent;
+    var Address = document.getElementById('Address') as IgcColumnComponent;
+    var City = document.getElementById('City') as IgcColumnComponent;
+    var Country = document.getElementById('Country') as IgcColumnComponent;
+    var Fax = document.getElementById('Fax') as IgcColumnComponent;
+    var PostalCode = document.getElementById('PostalCode') as IgcColumnComponent;
+    var Phone = document.getElementById('Phone') as IgcColumnComponent;
 
-    this._bind = () => {
-        grid.data = this.data;
-        Name.headerTemplate = this.pinHeaderTemplate;
-        Title.headerTemplate = this.pinHeaderTemplate;
-        ID.headerTemplate = this.pinHeaderTemplate;
-        HireDate.headerTemplate = this.pinHeaderTemplate;
-        Age.headerTemplate = this.pinHeaderTemplate;
-        Address.headerTemplate = this.pinHeaderTemplate;
-        City.headerTemplate = this.pinHeaderTemplate;
-        Country.headerTemplate = this.pinHeaderTemplate;
-        Fax.headerTemplate = this.pinHeaderTemplate;
-        PostalCode.headerTemplate = this.pinHeaderTemplate;
-        Phone.headerTemplate = this.pinHeaderTemplate;
-    }
-    this._bind();
-}
+    grid.data = this.data;
+    Name.headerTemplate = this.pinHeaderTemplate;
+    Title.headerTemplate = this.pinHeaderTemplate;
+    ID.headerTemplate = this.pinHeaderTemplate;
+    HireDate.headerTemplate = this.pinHeaderTemplate;
+    Age.headerTemplate = this.pinHeaderTemplate;
+    Address.headerTemplate = this.pinHeaderTemplate;
+    City.headerTemplate = this.pinHeaderTemplate;
+    Country.headerTemplate = this.pinHeaderTemplate;
+    Fax.headerTemplate = this.pinHeaderTemplate;
+    PostalCode.headerTemplate = this.pinHeaderTemplate;
+    Phone.headerTemplate = this.pinHeaderTemplate;
 }
 
 public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
         <div class="title-inner">
             <span style="float:left">${ctx.cell.column.header}</span>
-            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" click="${toggleColumn(ctx.cell.column)}"></igx-icon>
+            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" @click="${() => toggleColumn(ctx.cell.column)}"></igx-icon>
         </div>
     `;
 }
 ```
+
+```razor
+<IgbGrid AutoGenerate="false" Data="CustomersData" Name="grid" @ref="grid">
+    <IgbColumn Field="ID" Hidden="true"></IgbColumn>
+
+    <IgbColumn Field="CompanyName" Header="Company" Width="300px" 
+    HeaderTemplateScript="WebGridPinHeaderTemplate" Name="column1" @ref="column1"></IgbColumn>
+
+    <IgbColumn Field="ContactName" Header="Name" Width="200px" Pinned="true"
+    HeaderTemplateScript="WebGridPinHeaderTemplate" Name="column2" @ref="column2"> </IgbColumn>
+
+    <IgbColumn Field="ContactTitle" Header="Title" Width="200px" Pinned="true"
+    HeaderTemplateScript="WebGridPinHeaderTemplate" Name="column3" @ref="column3"> </IgbColumn>
+</IgbGrid>
+
+// In JavaScript
+igRegisterScript("WebGridPinHeaderTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    window.toggleColumnPin = function toggleColumnPin(field) {
+        var grid = document.getElementsByTagName("igc-grid")[0];
+        var col = grid.getColumnByName(field);
+        col.pinned = !col.pinned;
+        grid.markForCheck();
+    }
+    return html`<div>
+    <span style="float:left">${ctx.column.field}</span>
+    <span style="float:right" @pointerdown="${() => toggleColumnPin(ctx.column.field)}">📌</span>
+</div>`;
+}, false);
+```
+
+<!-- React -->
+```tsx
+<IgrGrid autoGenerate="false" data={CustomersData} name="grid" ref={grid}>
+    <IgrColumn field="ID" hidden="true"></IgrColumn>
+
+    <IgrColumn field="CompanyName" header="Company" width="300px" 
+    name="column1" headerTemplate={toggleColumnPin}></IgrColumn>
+
+    <IgrColumn field="ContactName" header="Name" width="200px" pinned="true"
+    name="column2" headerTemplate={toggleColumnPin}> </IgrColumn>
+
+    <IgrColumn field="ContactTitle" header="Title" width="200px" pinned="true"
+    name="column3" headerTemplate={toggleColumnPin}> </IgrColumn>
+</IgrGrid>
+```
+
+```typescript
+function toggleColumnPin({ dataContext: ctx }: { dataContext: IgrColumnTemplateContext }) {
+  const togglePin = () => {
+    const col = ctx.column;
+    col.pinned = !col.pinned;
+  }
+  
+  const col = ctx.column;
+
+  return(
+    <div>
+      <span style={{ float: 'left' }}>{col.header}</span>
+      <span style={{ float: 'right' }} onClick={() => togglePin()}>📌</span>
+    </div>
+  );
+}
+```
+<!-- end: React -->
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -348,8 +429,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 </div>
 ```
 ```html
-<igc-tree-grid id="treeGrid" primary-key="ID" foreign-key="ParentID" auto-generate="false"
-    width="100%" height="620px">
+<igc-tree-grid id="treeGrid" primary-key="ID" foreign-key="ParentID" auto-generate="false" width="100%" height="620px">
     <igc-column id="Name" field="Name" data-type="String" width="250px"></igc-column>
     <igc-column id="Title" field="Title" data-type="String" width="300px"></igc-column>
     <igc-column id="ID" field="ID" data-type="Number" width="200px"></igc-column>
@@ -365,44 +445,80 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 ```
 ```ts
 constructor() {
-    var treeGrid = this.treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
-    var Name = this.Name = document.getElementById('Name') as IgcColumnComponent;
-    var Title = this.Title = document.getElementById('Title') as IgcColumnComponent;
-    var ID = this.ID = document.getElementById('ID') as IgcColumnComponent;
-    var HireDate = this.HireDate = document.getElementById('HireDate') as IgcColumnComponent;
-    var Age = this.Age = document.getElementById('Age') as IgcColumnComponent;
-    var Address = this.Address = document.getElementById('Address') as IgcColumnComponent;
-    var City = this.City = document.getElementById('City') as IgcColumnComponent;
-    var Country = this.Country = document.getElementById('Country') as IgcColumnComponent;
-    var Fax = this.Fax = document.getElementById('Fax') as IgcColumnComponent;
-    var PostalCode = this.PostalCode = document.getElementById('PostalCode') as IgcColumnComponent;
-    var Phone = this.Phone = document.getElementById('Phone') as IgcColumnComponent;
+    var treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
+    var Name = document.getElementById('Name') as IgcColumnComponent;
+    var Title = document.getElementById('Title') as IgcColumnComponent;
+    var ID = document.getElementById('ID') as IgcColumnComponent;
+    var HireDate = document.getElementById('HireDate') as IgcColumnComponent;
+    var Age = document.getElementById('Age') as IgcColumnComponent;
+    var Address = document.getElementById('Address') as IgcColumnComponent;
+    var City = document.getElementById('City') as IgcColumnComponent;
+    var Country = document.getElementById('Country') as IgcColumnComponent;
+    var Fax = document.getElementById('Fax') as IgcColumnComponent;
+    var PostalCode = document.getElementById('PostalCode') as IgcColumnComponent;
+    var Phone = document.getElementById('Phone') as IgcColumnComponent;
 
-    this._bind = () => {
-        treeGrid.data = this.data;
-        Name.headerTemplate = this.pinHeaderTemplate;
-        Title.headerTemplate = this.pinHeaderTemplate;
-        ID.headerTemplate = this.pinHeaderTemplate;
-        HireDate.headerTemplate = this.pinHeaderTemplate;
-        Age.headerTemplate = this.pinHeaderTemplate;
-        Address.headerTemplate = this.pinHeaderTemplate;
-        City.headerTemplate = this.pinHeaderTemplate;
-        Country.headerTemplate = this.pinHeaderTemplate;
-        Fax.headerTemplate = this.pinHeaderTemplate;
-        PostalCode.headerTemplate = this.pinHeaderTemplate;
-        Phone.headerTemplate = this.pinHeaderTemplate;
-    }
-    this._bind();
+    treeGrid.data = this.data;
+    Name.headerTemplate = this.pinHeaderTemplate;
+    Title.headerTemplate = this.pinHeaderTemplate;
+    ID.headerTemplate = this.pinHeaderTemplate;
+    HireDate.headerTemplate = this.pinHeaderTemplate;
+    Age.headerTemplate = this.pinHeaderTemplate;
+    Address.headerTemplate = this.pinHeaderTemplate;
+    City.headerTemplate = this.pinHeaderTemplate;
+    Country.headerTemplate = this.pinHeaderTemplate;
+    Fax.headerTemplate = this.pinHeaderTemplate;
+    PostalCode.headerTemplate = this.pinHeaderTemplate;
+    Phone.headerTemplate = this.pinHeaderTemplate;
 }
 
 public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
         <div class="title-inner">
             <span style="float:left">${ctx.cell.column.header}</span>
-            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" click="${toggleColumn(ctx.cell.column)}"></igx-icon>
+            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" @click="${() => toggleColumn(ctx.cell.column)}"></igx-icon>
         </div>
     `;
 }
+```
+
+```razor
+<IgbTreeGrid AutoGenerate="false" Name="treeGrid" @ref="treeGrid" Data="EmployeesFlatData" PrimaryKey="ID" ForeignKey="ParentID">
+    <IgbColumn Field="Name" DataType="String" Pinned="true"
+    HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column1" @ref="column1"></IgbColumn>
+
+    <IgbColumn Field="Title" DataType="String" Pinned="true"
+    HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column2" @ref="column2"></IgbColumn>
+        
+    <IgbColumn Field="Phone" DataType="String"
+    HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column3" @ref="column3"></IgbColumn>
+            
+    <IgbColumn Field="Age" DataType="Number"
+    HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column4" @ref="column4"></IgbColumn>
+            
+    <IgbColumn Field="HireDate" DataType="Date"
+    HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column5" @ref="column5"></IgbColumn>
+            
+    <IgbColumn Field="OnPTO" DataType="Boolean"
+    HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column6" @ref="column6"></IgbColumn>
+</IgbTreeGrid> 
+
+
+// In JavaScript
+
+igRegisterScript("WebTreeGridPinHeaderTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    window.toggleColumnPin = function toggleColumnPin(field) {
+        var grid = document.getElementsByTagName("igc-tree-grid")[0];
+        var col = grid.getColumnByName(field);
+        col.pinned = !col.pinned;
+        grid.markForCheck();
+    }
+    return html`<div>
+    <span style="float:left">${ctx.column.field}</span>
+    <span style="float:right" onpointerdown='toggleColumnPin("${ctx.column.field}")'>📌</span>
+</div>`;
+}, false);
 ```
 <!-- ComponentEnd: TreeGrid -->
 
@@ -449,7 +565,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
             <igc-column field="Quantity" width="150px"></igx-column>
             <igc-column field="Discount" width="150px"></igx-column>
         </igc-row-island>
-    </igxc-row-island>
+    </igc-row-island>
 </igc-hierarchical-grid>
 ```
 ```ts
@@ -464,26 +580,21 @@ constructor() {
     var ShippedDate = this.ShippedDate = document.getElementById('ShippedDate') as IgcColumnComponent;
     var ShipVia = this.ShipVia = document.getElementById('ShipVia') as IgcColumnComponent;
 
-
-    this._bind = () => {
-        hGrid.data = this.data;
-        CompanyName.headerTemplate = this.pinHeaderTemplate;
-        ContactName.headerTemplate = this.pinHeaderTemplate;
-        ContactTitle.headerTemplate = this.pinHeaderTemplate;
-
-        OrderDate.headerTemplate = this.pinHeaderTemplate;
-        RequiredDate.headerTemplate = this.pinHeaderTemplate;
-        ShippedDate.headerTemplate = this.pinHeaderTemplate;
-        ShipVia.headerTemplate = this.pinHeaderTemplate;
-    }
-    this._bind();
+    hGrid.data = this.data;
+    CompanyName.headerTemplate = this.pinHeaderTemplate;
+    ContactName.headerTemplate = this.pinHeaderTemplate;
+    ContactTitle.headerTemplate = this.pinHeaderTemplate;
+    OrderDate.headerTemplate = this.pinHeaderTemplate;
+    RequiredDate.headerTemplate = this.pinHeaderTemplate;
+    ShippedDate.headerTemplate = this.pinHeaderTemplate;
+    ShipVia.headerTemplate = this.pinHeaderTemplate;
 }
 
 public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
         <div class="title-inner">
             <span style="float:left">${ctx.cell.column.header}</span>
-            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" click="${toggleColumn(ctx.cell.column)}"></igx-icon>
+            <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" @click="${() => toggleColumn(ctx.cell.column)}"></igx-icon>
         </div>
     `;
 }
@@ -493,11 +604,6 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 カスタムアイコンをクリックすると、関連する列のピン状態は、列の API メソッドを使用して変更できます。
 
 ```typescript
-public toggleColumn(col: IgxColumnComponent) {
-    col.pinned ? col.unpin() : col.pin();
-}
-```
-```typescript
 public toggleColumn(col: IgcColumnComponent) {
     col.pinned ? col.unpin() : col.pin();
 }
@@ -505,10 +611,8 @@ public toggleColumn(col: IgcColumnComponent) {
 
 ### デモ
 
-`sample="/{ComponentSample}/column-pinning-options", height="510", alt="{Platform} {ComponentTitle} column pinning options"`
+`sample="/{ComponentSample}/column-pinning-options", height="510", alt="{Platform} {ComponentTitle} 列のピン固定オプション"`
 
-
-<!-- end: Angular -->
 
 ## ピン固定の制限
 
@@ -548,7 +652,7 @@ $custom-theme: grid-theme(
 
 ### カスタム カラー パレットの定義
 上記で説明したアプローチでは、色の値がハード コーディングされていました。または、[igx-palette]({environment:sassApiUrl}/index.html#function-igx-palette) および [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) 関数を使用して、柔軟性を高めることができます。
-`igx-palette` generates a color palette, based on provided primary and secondary colors.
+`igx-palette` は指定した一次色と二次色に基づいてカラーパレットを生成します。
 
  ```scss
 $primary-color: #292826;
@@ -575,14 +679,14 @@ $custom-theme: grid-theme(
 `$custom-theme` には前のセクションと同じプロパティが含まれていますが、今回は色がハードコードされていません。代わりに、カスタム `igx-palette` パレットが使用され、特定のカラーバリアントを使用して、プライマリ カラーとセカンダリ カラーから色が取得されました。
 
 ### カスタム スキーマの定義
-[**スキーマ**](../themes/sass/schemas.md) のすべての利点を備えた柔軟な構造を構築できます。**スキーマ** はテーマを作成させるための方法です。
+[**スキーマ**](../themes/sass/schemas.md)のすべての利点を備えた柔軟な構造を構築できます。**スキーマ**はテーマを作成させるための方法です。
 すべてのコンポーネントに提供される 2 つの事前定義されたスキーマのいずれかを拡張します。この場合、`$_light_grid` を使用します。
 ```scss
 $custom-grid-schema: extend($_light-grid,(
     pinned-border-width: 5px,
     pinned-border-style: double,
-    pinned-border-color: color:("secondary", 500),
-    cell-active-border-color: color:("secondary", 500)
+    pinned-border-color: color: ("secondary", 500),
+    cell-active-border-color: color: ("secondary", 500)
 ));
 ```
 カスタム スキーマを適用するには、`light` グローバルまたは `dark` グローバルを拡張する必要があります。プロセス全体が実際にコンポーネントにカスタム スキーマを提供し、その後、それぞれのコンポーネントテーマに追加します。
@@ -623,7 +727,7 @@ $custom-theme: grid-theme(
 
 <!-- NOTE this sample is differed -->
 
-`sample="/{ComponentSample}/column-pinning-styles", height="506", alt="{Platform} {ComponentTitle} column pinning styles"`
+`sample="/{ComponentSample}/column-pinning-styles", height="506", alt="{Platform} {ComponentTitle} 列のピン固定スタイル"`
 
 
 > [!Note]
@@ -632,12 +736,44 @@ $custom-theme: grid-theme(
 <!-- ComponentEnd: Grid -->
 <!-- end: Angular -->
 
+<!-- WebComponents, Blazor, React -->
+## スタイル設定
+
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
+一部の色を変更したい場合は、最初にグリッドの `ID` を設定する必要があります。
+
+
+```html
+<{ComponentSelector} id="grid"></{ComponentSelector}>
+```
+
+```razor
+<{ComponentSelector} Id="grid"></{ComponentSelector}>
+```
+
+Then set the related CSS properties to this class:
+
+```css
+#grid {
+    --ig-grid-pinned-border-width: 5px;
+    --ig-grid-pinned-border-color: #FFCD0F;
+    --ig-grid-pinned-border-style: double;
+    --ig-grid-cell-active-border-color: #FFCD0F;
+}
+```
+
+### デモ
+
+`sample="/{ComponentSample}/column-pinning-styles", height="510", alt="{Platform} {ComponentTitle} ピン固定のスタイルの例"`
+
+<!-- end: WebComponents, Blazor -->
+
 ## API リファレンス
 * `{ComponentName}`
-* `ColumnComponent`
+* `Column`
 
 ## その他のリソース
-
+<!-- ComponentStart:  Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
@@ -646,6 +782,7 @@ $custom-theme: grid-theme(
 * [列の移動](column-moving.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

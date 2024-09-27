@@ -13,11 +13,11 @@ _language: ja
 
 # {Platform} データ集計の例
 
-次の例は、`XAxis` の Country メンバーでグループ化し、Sales Sum に基づいて集計と並べ替えを適用する[縦棒チャート](../types/column-chart.md)を示しています。
+次の例は、`XAxis` の Country メンバーごとにグループ化する[縦棒チャート](../types/column-chart.md)を示しており、各データ項目内の他のプロパティ (Product、MonthName、Year など) に変更して販売データを集計できます。また、グループ化されたプロパティを望ましい順序で取得するために、概要とソートのオプションも利用できます。
+
+`InitialSummaries` と `GroupSorts` のドロップダウン内にある短縮関数は、割り当てたプロパティに基づいて正しい結果が得られるように適用されていることに注意してください (例: Sum(sales) as Sales | Sales Desc)。
 
 `sample="/charts/category-chart/data-aggregations", height="500", alt="{Platform} データ集計の例"`
-
-
 
 ```html
 <igx-category-chart

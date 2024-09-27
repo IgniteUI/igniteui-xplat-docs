@@ -20,8 +20,6 @@ Ignite UI for {Platform} ドロップダウン コンポーネントは、事前
 
 `sample="/inputs/dropdown/overview", height="220", alt="{Platform} Dropdown の例"`
 
-
-
 ## {ProductName} で Dropdown List を使用する方法
 
 <!-- WebComponents -->
@@ -40,6 +38,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcDropdownComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -56,6 +57,8 @@ import { IgrDropdownModule, IgrDropdown } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
 IgrDropdownModule.register();
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 <!-- end: React -->
 
 <!-- Blazor -->
@@ -82,6 +85,17 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbDropdownModule));
 </igc-dropdown>
 ```
 
+```tsx
+<IgrDropdown>
+    <div slot="target">
+        <IgrButton><span>Options</span></IgrButton>
+    </div>
+    <IgrDropdownItem><span>Option 1</span></IgrDropdownItem>
+    <IgrDropdownItem><span>Option 2</span></IgrDropdownItem>
+    <IgrDropdownItem><span>Option 3</span></IgrDropdownItem>
+</IgrDropdown>
+```
+
 ### Target (ターゲット)
 
 {Platform} ドロップダウン リストは、ターゲットに対して相対的に配置されます。`target` スロットを使用すると、クリック時に `open` プロパティを切り替える組み込みコンポーネントを提供できます。場合によっては、外部ターゲットを使用するか、別のイベントを使用してドロップダウンの開始を切り替えることができます。これは、ターゲットをパラメーターとして提供できる `Show`、`Hide`、および `Toggle` メソッドを使用して実現できます。デフォルトでは、ドロップダウン リストは CSS の `absolute` 位置を使用します。ターゲット要素が固定コンテナー内にあるが、ドロップダウンがそうではない場合、{Platform} ドロップダウンの `PositionStrategy` を `fixed` に設定する必要があります。ドロップダウン リストは、その内容に基づいて自動的にサイズ変更されます。リストの幅をターゲットと同じにする場合は、`SameWidth` プロパティを **true** に設定する必要があります。
@@ -100,7 +114,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbDropdownModule));
 
 ### 選択
 
-ユーザーが項目を選択すると、`Dropdown` は `igcChange` イベントを発行します。ドロップダウンの `Select` メソッドを使用すると、インデックスまたは値で項目を選択できます。
+ユーザーが項目を選択すると、`Dropdown` は `Change` イベントを発行します。ドロップダウンの `Select` メソッドを使用すると、インデックスまたは値で項目を選択できます。
 
 ### Item (項目)
 

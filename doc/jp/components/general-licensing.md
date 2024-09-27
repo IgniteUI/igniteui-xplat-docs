@@ -18,8 +18,8 @@ Ignite UI ライセンス契約および使用条件の詳細については、[
 
 インフラジスティックスは、以下の無料の非営利および再販禁止 (NFR) ライセンスを提供しています。
 
-  - Microsoft MVP、Microsoft Regional Director、Google Developer Expert などの開発者プログラムに参加している場合。  
-  - 小学生、中学生、大学生、または教育機関、または教授である場合。  
+  - Microsoft MVP、Microsoft Regional Director、Google Developer Expert などの開発者プログラムに参加している場合。
+  - 小学生、中学生、大学生、または教育機関、または教授である場合。
 
 無料の非商用の NFR ライセンスを取得する資格がある場合、またはライセンスに関する質問がある場合は、[お問い合わせ](https://jp.infragistics.com/about-us/contact-us)ください。
 
@@ -82,8 +82,15 @@ npm install @infragistics/igniteui-dockmanager
 
 {ProductName} パッケージをスコープに設定したため、プライベート フィードおよび npmjs.org からのパッケージを同時にインストールするためにレジストリを変更する必要はありません。
 
-#### プロジェクト ソースに追加の変更が必要になる場合があります。
-トライアル版からライセンス パッケージにアップグレードする場合:
+### ライセンス パッケージの更新後のプロジェクト ソースの変更
+
+トライアル版からライセンス版パッケージにアップグレードする場合、新しいパッケージは `@infragistics` の下でスコープされます。
+その結果、次のいずれかを行うことができます。
+
+- すべてのトライアル版パッケージに対してグローバル置換を実行し、プロジェクト内のすべてのファイルにわたってライセンス版スコープ付きバージョンに変更します。たとえば、すべての `igniteui-dockmanager` 参照を `@infragicstics/igniteui-dockmanager` に置き換えます。この変更は、そのようなパッケージが使用されているすべてのインポートに影響します。
+
+  **または**
+
 - プロジェクトの **tsconfig.json** に **paths** マッピングを追加します。
 
 ```json
@@ -100,6 +107,33 @@ npm install @infragistics/igniteui-dockmanager
   }
 }
 ```
+
+<!-- React -->
+必要となる可能性のある React パッケージのすべてのパス マッピングを含む完全な例を次に示します。
+
+```json
+      "paths": {
+        "igniteui-react-core": ["node_modules/igniteui-react-core", "node_modules/@infragistics/igniteui-react-core"],
+        "igniteui-react-charts": ["node_modules/igniteui-react-charts", "node_modules/@infragistics/igniteui-react-charts"],
+        "igniteui-react-grids": ["node_modules/igniteui-react-grids", "node_modules/@infragistics/igniteui-react-grids"],
+        "igniteui-react-grids/grids": ["node_modules/igniteui-react-grids/grids", "node_modules/@infragistics/igniteui-react-grids/grids"],
+        "igniteui-react-gauges": ["node_modules/igniteui-react-gauges", "node_modules/@infragistics/igniteui-react-gauges"],
+        "igniteui-react-inputs": ["node_modules/igniteui-react-inputs", "node_modules/@infragistics/igniteui-react-inputs"],
+        "igniteui-react-layouts": ["node_modules/igniteui-react-layouts", "node_modules/@infragistics/igniteui-react-layouts"],
+        "igniteui-react-maps": ["node_modules/igniteui-react-maps", "node_modules/@infragistics/igniteui-react-maps"],
+        "igniteui-react": ["node_modules/igniteui-react", "node_modules/@infragistics/igniteui-react"],
+        "igniteui-react-excel": ["node_modules/igniteui-react-excel", "node_modules/@infragistics/igniteui-react-excel"],
+        "igniteui-react-datasources": ["node_modules/igniteui-react-datasources", "node_modules/@infragistics/igniteui-react-datasources"],
+        "igniteui-react-spreadsheet": ["node_modules/igniteui-react-spreadsheet", "node_modules/@infragistics/igniteui-react-spreadsheet"],
+        "igniteui-react-spreadsheet-chart-adapter": ["node_modules/igniteui-react-spreadsheet-chart-adapter", "node_modules/@infragistics/igniteui-react-spreadsheet-chart-adapter"],
+        "igniteui-webcomponents": ["node_modules/igniteui-webcomponents", "node_modules/@infragistics/igniteui-webcomponents"],
+        "igniteui-dockmanager": ["node_modules/igniteui-dockmanager", "node_modules/@infragisics/igniteui-dockmanager"],
+        "igniteui-dockmanager/loader": ["node_modules/igniteui-dockmanager/loader", "node_modules/@infragistics/igniteui-dockmanager/loader"]
+      }
+```
+
+
+<!-- end: React -->
 
 - テーマのインポートを以下のように変更します。
 
@@ -149,12 +183,6 @@ steps:
   displayName: 'Npm config auth'
 ```
 
-<img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 380px"
-  src="../images/general/azure-ci-pipelines-ci-yml-3.jpg"
-  data-src="../images/general/azure-ci-pipelines-ci-yml-3.jpg"
-  alt="Azure Pipelines CI yml update"
-  title="Azure Pipelines CI yml update" />
-
 **npm registry** および **token** 変数を追加します。
 
 <img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 600px"
@@ -185,11 +213,11 @@ before_install:
 
 ### GitHub Actions の構成
 
-`npm i(ci)` 手順の前に以下のスクリプトを [CI ワークフロー構成](https://help.github.com/en/actions/language-and-framework-guides/using-nodejs-with-github-actions)に追加します:
+**npm i(ci)** 手順の前に以下のスクリプトを [CI ワークフロー構成](https://help.github.com/en/actions/language-and-framework-guides/using-nodejs-with-github-actions)に追加します:
 
 ```cmd
 - run: echo "@infragistics:registry=https://packages.infragistics.com/npm/js-licensed/" >> ~/.npmrc
 - run: echo "//packages.infragistics.com/npm/js-licensed/:_auth=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
 ```
 
-[*シークレット* (暗号化された環境変数)](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) を定義してアクセス トークンなどの機密情報に対して GitHub Actions ワークフローでそれらを使用します。 
+[*シークレット* (暗号化された環境変数)](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) を定義してアクセス トークンなどの機密情報に対して GitHub Actions ワークフローでそれらを使用します。

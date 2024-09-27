@@ -10,10 +10,7 @@ The {Platform} Spreadsheet component allows displaying charts in your `Spreadshe
 
 ## {Platform} Spreadsheet Chart Adapter Example
 
-
 `sample="/excel/spreadsheet/adapter-chart", height="500", alt="{Platform} Spreadsheet Chart Adapter Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -145,7 +142,7 @@ ModuleManager.register(
 
 ## Code Snippet
 
-The following code snippet demonstrates how to add charts to the currently viewed worksheet in the `XamSpreadsheet` control:
+The following code snippet demonstrates how to add charts to the currently viewed worksheet in the `Spreadsheet` control:
 
 ```typescript
 this.spreadsheet.chartAdapter = new SpreadsheetChartAdapter();
@@ -206,4 +203,3 @@ ExcelUtility.loadFromUrl(process.env.PUBLIC_URL + "/ExcelFiles/ChartData.xlsx").
  - `SpreadsheetChartAdapter`
  - `Spreadsheet`
  - `Workbook`
- - `XamSpreadsheet`

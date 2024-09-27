@@ -74,6 +74,7 @@ import { defineComponents, IgcListComponent } from 'igniteui-webcomponents';
 defineComponents(IgcListComponent);
 ```
 
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 ### Add List Items
 
@@ -343,13 +344,13 @@ The `start` slot is meant to be used for adding some kind of media before all ot
 
 The `end` slot is meant to be used for list items that have some kind of action or metadata, represented, for example, by a switch, a button, a checkbox, etc. We will use `Button` components.
 
-Let's also allow the user to choose the size of the list by using its `size` property. We will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the list.
+Let's also allow the user to change the size of the list using the `--ig-size` CSS variable. We will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size of the list.
 
 ```html
 <igc-radio-group id="radio-group" alignment="horizontal">
     <igc-radio name="size" value="small" label-position="after">Small</igc-radio>
     <igc-radio name="size" value="medium" label-position="after">Medium</igc-radio>
-    <igc-radio name="size" value="large" label-position="after" checked="true">Large</igc-radio>
+    <igc-radio name="size" value="large" label-position="after" checked>Large</igc-radio>
 </igc-radio-group>
 ```
 
@@ -358,7 +359,7 @@ this.list = document.getElementById('list') as IgcListComponent;
 this.radioGroup = document.getElementById('radio-group') as IgcRadioGroupComponent;
 
 this.radioGroup.addEventListener('click', (radio: any) => {
-    this.list.size = radio.target.value;
+    this.list.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
 });
 ```
 

@@ -73,61 +73,103 @@ function getBlazorNamespaceLookup() {
 
 function getApiLink(apiRoot: string, typeName: string, memberName: string | null, options: any): any {
     let mappings: MappingLoader = options.mappings;
-    let resolvedTypeName: string | null = typeName;
     let isClass = false;
     let isInterface = false;
     let isEnum = false;
-    let platform = <APIPlatform>options.platform;
+    let platformType = <APIPlatform>options.platform;
+    let platformName = getPlatformName(platformType).toLowerCase();
+    let packageName: string | null = null;
+
+    // console.log("getApiLink ");
+    // console.log("getApiLink typeName=" + typeName + " memberName=" + memberName); 
+    // check for explicit API types, e.g. @TrendLineType enum type instead of Category.TrendLineType property
+    if (typeName && typeName.indexOf('@') == 0) {
+        typeName = typeName.substring(1);
+        memberName = null;
+    }
+    let resolvedType: string | null = typeName;
+
+    // console.log("getApiLink typeName=" + typeName + " memberName=" + memberName); 
 
     if (!(typeName.indexOf(options.platformPascalPrefix) == 0)) {
-        resolvedTypeName = mappings.getPlatformTypeName(typeName, <APIPlatform>options.platform);
-        if (resolvedTypeName) {
-            let typeInfo = mappings.getType(typeName);
+        // console.log("getApiLink filePath=" + options.filePath);
+        resolvedType = mappings.getPlatformTypeName(typeName, platformType, options.filePath);
+        // console.log("getApiLink resolvedName=" + resolvedType);
+        if (resolvedType) {
+            let typeInfo = mappings.getType(typeName, options.filePath);
             if (typeInfo) {
                 if (typeInfo.isEnum) {
                     isEnum = true;
-                } else {
-                    //todo: interfaces.
+                //TODO: uncomment when API mapping annotates interfaces
+                // } else if (typeInfo.isInterface) { 
+                //     isInterface = true;
+                } else { // if (!isEnum) {
                     isClass = true;
+                }
+
+                if (typeInfo.packageName) {
+                    packageName = typeInfo.packageName;
                 }
             }
         }
     } else {
         isClass = true;
     }
+    // console.log("getApiLink isClass=" + isClass + " isEnum=" + isEnum );
+    // console.log("getApiLink packageName=" + packageName);
 
     let blazorNamespace: string = "IgniteUI.Blazor.Controls";
     let linkText: string | null = null;
-    if (resolvedTypeName) {
+    if (resolvedType) {
         //         https://infragistics.com/blazor-apps/blazor-api/api/IgniteUI.Blazor.Controls.IgbCategoryChart.html
         // https://infragistics.com/products/ignite-ui-react/api/docs/typescript/latest/classes/igrcategorychart.html
-        if (platform === APIPlatform.Blazor) {
+        if (platformType === APIPlatform.Blazor) {
             var blazorNamespaceLookup = getBlazorNamespaceLookup();
-            if (blazorNamespaceLookup[resolvedTypeName]) {
-                blazorNamespace = blazorNamespaceLookup[resolvedTypeName];
+            if (blazorNamespaceLookup[resolvedType]) {
+                blazorNamespace = blazorNamespaceLookup[resolvedType];
             }
-            linkText = apiRoot + blazorNamespace + "." + resolvedTypeName + ".html";
+            linkText = apiRoot + blazorNamespace + "." + resolvedType + ".html";
             // console.log( blazorNamespaceLookup[resolvedTypeName] + " " + resolvedTypeName + " " + linkText);
 
         } else { // Angular || React || WC
 
-            let char1 = resolvedTypeName[0];
-
-            if(char1 == "I"){
-                let char2 = resolvedTypeName[1];
-                if(char2.toUpperCase() == char2){
+            // check for interfaces, e.g. IChartLegend
+            let char1 = resolvedType[0];
+            if (char1 == "I") {
+                let char2 = resolvedType[1];
+                if( char2.toUpperCase() == char2) {
                     isClass = false;
                     isEnum = false;
                     isInterface = true;
                 }
             }
 
+            let packageText = "";
+            if (packageName) {
+                if (packageName == "igniteui-webgrids") {
+                    const packageSuffix = (platformType == APIPlatform.React ? "" : "_grids") + "_grids.";
+                    packageText = "igniteui_" + platformName + packageSuffix;
+                } else if (packageName == "igniteui-webinputs") {
+                    packageText = "";
+                    if (platformType == APIPlatform.React) {
+                        packageText = "igniteui_react.";
+                    }
+                } else {
+                    packageText = packageName;
+                    packageText = packageText.replace("igniteui-", "igniteui-" + platformName + "-");
+                    packageText = packageText.replace(/-/gm, "_");
+                    packageText += ".";
+                }
+            }
+
+            // console.log("getApiLink packageText=" + packageText);
+            // console.log("getApiLink resolvedName=" + resolvedType);
             if (isClass) {
-                linkText = apiRoot + "classes/" + resolvedTypeName.toLowerCase() + ".html";
+                linkText = apiRoot + "classes/" + packageText + resolvedType.toLowerCase() + ".html";
             } else if (isEnum) {
-                linkText = apiRoot + "enums/" + resolvedTypeName.toLowerCase() + ".html";
+                linkText = apiRoot + "enums/" + packageText + resolvedType.toLowerCase() + ".html";
             } else if (isInterface) {
-                linkText = apiRoot + "interfaces/" + resolvedTypeName.toLowerCase() + ".html";
+                linkText = apiRoot + "interfaces/" + packageText + resolvedType.toLowerCase() + ".html";
             }
         }
     }
@@ -135,19 +177,20 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
     if (linkText && memberName) {
         //         https://infragistics.com/blazor-apps/blazor-api/api/IgniteUI.Blazor.Controls.IgbCategoryChart.html#ChartType
         // https://infragistics.com/products/ignite-ui-react/api/docs/typescript/latest/classes/igrcategorychart.html#charttype
-        if (platform === APIPlatform.Blazor) {
+        if (platformType === APIPlatform.Blazor) {
             var prefix = blazorNamespace.split('.').join('_') + '_';
-            linkText = linkText + "#" + prefix + resolvedTypeName + '_' + memberName;
+            linkText = linkText + "#" + prefix + resolvedType + '_' + memberName;
             // if (linkText.indexOf('.IgbDataGrid') > 0) {
             //     linkText = linkText + "#" + prefix + 'IgbDataGrid_' + memberName;
             // } else {
             //     linkText = linkText + "#" + prefix + memberName;
             // }
         } else { // Angular, React, WC
-            linkText = linkText + "#" + memberName.toLowerCase();
+            linkText = linkText + "#" + memberName;
         }
     }
 
+    // console.log("getApiLink linkText=" + linkText);
     if (linkText) {
         return {
             type: "link",
@@ -155,7 +198,7 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
             value: "",
             children: [{
                 type: "inlineCode",
-                value: memberName ? memberName : resolvedTypeName
+                value: memberName ? memberName : resolvedType
             }]
         };
     } else {
@@ -256,7 +299,7 @@ function transformCodeRefs(options: any) {
         let resolvedName = mappings.getPlatformMemberName(
             <string>options.typeName,
             <APIPlatform>options.platform,
-            <string>memberName);
+            <string>memberName, options.filePath);
         apiTypeName = options.typeName;
 
         if (resolvedName == null && options.mentionedTypes &&
@@ -266,7 +309,7 @@ function transformCodeRefs(options: any) {
                 resolvedName = mappings.getPlatformMemberName(
                     <string>type,
                     <APIPlatform>options.platform,
-                    <string>memberName);
+                    <string>memberName, options.filePath);
                 if (resolvedName !== null) {
                     apiTypeName = type;
                     break;
@@ -277,7 +320,7 @@ function transformCodeRefs(options: any) {
         if (resolvedName == null) {
             resolvedName = mappings.getPlatformTypeName(
                 <string>memberName,
-                <APIPlatform>options.platform);
+                <APIPlatform>options.platform, options.filePath);
 
             if (resolvedName !== null) {
                 isTypeName = true;
@@ -308,12 +351,12 @@ function transformCodeRefs(options: any) {
             }
 
             if (link) {
-                // override Angular/React/WC Dock Manager to stand-alone API docs for Dock Manager
-                // because API docs for Dock Manager are NOT in Angular/React/WC API docs, e.g.
+                // override Angular/WC Dock Manager to stand-alone API docs for Dock Manager
+                // because API docs for Dock Manager are NOT in Angular/WC API docs, e.g.
                 // WORKS - https://staging.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html
                 // FAILS - https://staging.infragistics.com/products/ignite-ui-web-components/api/docs/typescript/latest/classes/igcdockmanagercomponent.html
                 let platform = getPlatformName(options.platform);
-                if (platform === "Angular" || platform === "React" || platform === "WebComponents") {
+                if (platform === "Angular" || platform === "WebComponents") {
 
                     var dockEnums = [
                         "DockManagerPaneType",
@@ -454,6 +497,7 @@ function getFrontMatterTypes(options: any, filePath: string) {
             throw new Error(filePath + '\n' + error.message + "\n" + "Failed parsing:\n" + node.value + "\n")
         }
         // console.log("setFrontMatterTypes=" + filePath);
+        let mentionedNamespace: string | null = null;
         if (ym.mentionedTypes) {
             // console.log("mentionedTypes=" + ym.mentionedTypes);
             let mt = ym.mentionedTypes;
@@ -468,9 +512,13 @@ function getFrontMatterTypes(options: any, filePath: string) {
             }
             options.mentionedTypes = arr;
             let mappings = <MappingLoader>options.mappings;
+
             for (let i = 0; i < options.mentionedTypes.length; i++) {
                 let currType = options.mentionedTypes[i];
-                let currTypeInfo = mappings.getType(currType);
+                let currTypeInfo = mappings.getType(currType, options.filePath);
+                if (currTypeInfo?.originalNamespace) {
+                    mentionedNamespace = currTypeInfo.originalNamespace;
+                }
                 if (currTypeInfo) {
                     if (currTypeInfo.originalBaseTypeName) {
                         let fullName = currTypeInfo.originalBaseTypeNamespace + "." +
@@ -496,6 +544,13 @@ function getFrontMatterTypes(options: any, filePath: string) {
             options.namespace = ym.namespace;
             if (options.mappings) {
                 options.mappings.namespace = options.namespace;
+            }
+        } else {
+            if (mentionedNamespace) {
+                options.namespace = mentionedNamespace;
+                if (options.mappings) {
+                    options.mappings.namespace = mentionedNamespace;
+                }
             }
         }
 
@@ -540,13 +595,17 @@ function transformDocLinks(options: any) {
         }
 
         reference = reference.replace("doc://", "");
+        // console.log("reference=" + reference);
         let referenceParts = reference.split("/");
         let controlName = referenceParts[0];
+        // console.log("controlName1=" + controlName);
+        // console.log("transformControlNames=" + options.docs.transformControlNames);
         if (options.docs.transformControlNames) {
             let resolvedName = mappings.getPlatformMemberName(
                 <string>options.typeName,
                 <APIPlatform>options.platform,
-                <string>controlName);
+                <string>controlName, options.filePath);
+                // console.log("resolvedName=" + resolvedName);
             if (resolvedName) {
                 controlName = resolvedName;
             }
@@ -567,8 +626,6 @@ function transformDocLinks(options: any) {
         } else {
             docUrl = docUrl.replace("{CONTROL_NAME}", controlName);
         }
-
-
         node.url = docUrl;
     }
 
@@ -1030,6 +1087,10 @@ function transformSamples(options: any) {
                 sample.alt = part.replace('alt=', "").split('"').join('').trim();
             }
 
+            if (part.indexOf('img-src=') >= 0) {
+                sample.imgSrc = part.replace('img-src=', "").split('"').join('').trim();
+            }
+
             if (part.indexOf('height=') >= 0) {
                 sample.height = part.replace('height=', "").split('"').join('').replace('px', "").trim();
             }
@@ -1078,6 +1139,9 @@ function transformSamples(options: any) {
         // generating <code-view />
         var str = '';
         str += '<code-view style="height: ' + sample.height + 'px" alt="' + sample.alt + '"\n';
+        if (sample.imgSrc) {
+            str += '      img-src="' + sample.imgSrc + '"\n';
+        }
         str += '           data-demos-base-url="' + sampleHostEnvironment + '"\n';
      // str += '                    iframe-src="' + sampleHostEnvironment + '/' + sample.route + '"\n';
         str += '                    iframe-src="' + sampleHostEnvironment + '/' + sample.path + '"\n';
@@ -1364,13 +1428,15 @@ function omitFencedCode(options: any) {
         }
 
         //highlight.js, used by docfx, doesn't currently support tsx highlighting.
-        if (lang.toLowerCase() == "tsx") {
-            lang = "ts";
-        }
-        if (lang.toLowerCase() == "razor") {
-            lang = "html";
-        }
-        node.lang = lang;
+        //since igniteui-docfx-template 3.6.0, there is custom tsx support
+        //if (lang.toLowerCase() == "tsx") {
+        //    node.lang = "ts";
+        //}
+        // commented out since the igniteui-docfx-templat supports razor language
+        //if (lang.toLowerCase() == "razor") {
+        //    node.lang = "html";
+        //}
+        //node.lang = lang;
         //console.log(node);
     }
 
@@ -1425,8 +1491,7 @@ export class MarkdownTransformer {
             case APIPlatform.React:
                 if (!PlatformDetectorRule.isTS(language) &&
                 !PlatformDetectorRule.isTSX(language) &&
-                 language !== "js" &&
-                 !PlatformDetectorRule.isHTML(language)) {
+                 language !== "js") {
                     return true;
                 }
 
@@ -1596,10 +1661,11 @@ export class MarkdownTransformer {
             if (this._envBrowser !== undefined &&
                 this._envBrowser !== "") {
                 sampleHost = this._envBrowser;
+
+                // using JP samples in JP topics
                 if (filePath.indexOf("\\jp\\") > 0) {
                     // changing samples links to JP production website in JP topics
                     sampleHost = sampleHost.replace('www.infragistics.com', 'jp.infragistics.com');
-
                     // changing samples links to JP staging website in JP topics
                     sampleHost = sampleHost.replace('staging.infragistics.com', 'jp.staging.infragistics.com');
                 }
@@ -1797,12 +1863,37 @@ export class MarkdownTransformer {
         return errorsCount;
     }
 
-    verifyMetadata(fileContent: string, filePath: string): any {
+    verifyLinksToTopic(fileContent: string): string {
+
+        let lines = fileContent.split('\n');
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i];
+            let words = line.split(' ');
+            for (let w = 0; w < words.length; w++) {
+                let word = words[w];
+                let hasPlatformVariable = word.toLowerCase().indexOf("{platform") >= 0;
+                if (word.indexOf(".md#") >= 0 && hasPlatformVariable) {
+                    word = word.split('{platform}').join('{PlatformLower}');
+                    word = word.split('{Platform}').join('{PlatformLower}');
+                    word = word.split('{platformlower}').join('{PlatformLower}');
+                    if (word !== words[w]) {
+                        console.log("auto-correct link: \n" + words[w] + " to \n" + word);
+                        words[w] = word;
+                    }
+                }
+            }
+            lines[i] = words.join(' ');
+        }
+        return lines.join('\n');
+    }
+
+    verifyMarkdown(fileContent: string, filePath: string): any {
         var md = new MarkdownContent(fileContent, filePath);
         var mdValidated = false;
 
-        if (md.metadata.hasContent())
-        {
+        if (md.metadata === undefined || !md.metadata.hasContent()) {
+            console.log("ERROR: missing metadata section wrapped with '---' in " + filePath);
+        } else {
             // if (md.isLocalEN()) {
             //     md.metadata.language = '_language: en';
             // }
@@ -1843,11 +1934,10 @@ export class MarkdownTransformer {
             {
                 mdValidated = true;
             }
-        } else {
-            console.log("ERROR: missing metadata section wrapped with '---' in " + filePath);
         }
 
         //console.log("metadata " + filePath);
+        fileContent = this.verifyLinksToTopic(fileContent);
 
         return { fileContent: fileContent, isValid: mdValidated};
     }
@@ -2216,7 +2306,12 @@ export class MarkdownTransformer {
             }
             else if (node.updated) {
                 node.status = "UPDATED";
-            } else {
+            }else if (node.preview) {
+                node.status = "PREVIEW";
+            } else if (node.beta) {
+                node.status = "BETA";
+            }
+             else {
                 node.status = "";
             }
 
@@ -2231,6 +2326,8 @@ export class MarkdownTransformer {
             // clearing YML props since they are stored in node.status prop
             node.updated = undefined;
             node.new = undefined;
+            node.preview = undefined;
+            node.beta = undefined;
 
             // recursively convert items nodes if they exist
             if (node.items !== undefined &&
@@ -2254,7 +2351,7 @@ export class MarkdownTransformer {
         let jsonFile = fs.readFileSync(jsonPath);
         let jsonContent = jsonFile.toString();
 
-        let tocNodes = this.filterTOC(jsonContent, platform, language, excludedFiles);
+        let tocNodes = this.filterTOC(jsonContent, platform, language, excludedFiles); //here
 
         // optional start:
         // let tocPath = jsonPath.replace('toc.json', 'toc_' + platform + '.json')
@@ -2328,6 +2425,12 @@ export class MarkdownTransformer {
                     else if (status.toUpperCase() === "UPDATED") {
                         yml += tab + "  updated: true" + "\n";
                     }
+                    else if (status.toUpperCase() === "PREVIEW") {
+                        yml += tab + "  preview: true" + "\n";
+                    }
+                    else if (status.toUpperCase() === "BETA") {
+                        yml += tab + "  beta: true" + "\n";
+                    }
                     else { // status === ""
                         yml += tab + "  new: false" + "\n";
                     }
@@ -2382,6 +2485,10 @@ export class MarkdownTransformer {
                     // node.href = node.href.replace(".md", ".html");
                 }
 
+                if (node.status) {
+                    node.status = this.parseNodeStatus(node.status, platform);
+                }
+
                 node.exclude = undefined;
                 // recursively check if child items need to be excluded
                 if (node.items !== undefined &&
@@ -2396,6 +2503,18 @@ export class MarkdownTransformer {
             }
         }
         return matchingNodes;
+    }
+
+    parseNodeStatus(status: string | string[], platform: string) {
+        let resultStatus = '';
+        if (status instanceof Array) {
+            const platformStatus = status.find(s => s.toLowerCase().indexOf(platform.toLowerCase()) !== -1) || '';
+            //Platform status looks like NEW_REACT or UPDATED_WEBCOMPONENTS
+            resultStatus = platformStatus.toLowerCase().split('_')[0];
+        } else {
+            resultStatus = status;
+        }
+        return resultStatus;
     }
 
     getNodeInfo(node: TocNode) {
@@ -2460,11 +2579,13 @@ export class Strings {
 
 export class TocNode {
     public name: string;
-    public status?: string;
+    public status?: string | string[];
     public href?: string;
     public header?: boolean;
     public new?: boolean;
     public updated?: boolean;
+    public preview?: boolean;
+    public beta?: boolean;
     public items?: TocNode[];
     public exclude?: string[];
 

@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} for {ProductName} の高度なフィルタリング
+title: {Platform} {ComponentTitle} 高度なフィルタリング - {ProductName} 
 _description: {Platform} {ComponentTitle} でデータの高度なフィルターを設定する方法。グリッドの高度なフィルタリングがより使いやすくなりました。
 _keywords: Advanced Filtering, {Platform}, {ProductName}, Infragistics, 高度なフィルタリング, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -11,7 +11,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 高度なフィルタリング
 
-高度なフィルタリングは、`{ComponentName}` のような任意の {Platform} テーブルの全列に及ぶフィルタリング条件を持つグループを作成できるダイアログを提供します。
+{Platform} {ComponentTitle} の {ProductName} 高度なフィルタリングを使用すると、`{ComponentName}` のすべての列にわたるフィルタリング条件を使用してさまざまなグループを作成できるダイアログが表示されるため、データを操作できます。
 
 ## {Platform} {ComponentTitle} 高度なフィルタリングの例
 
@@ -40,27 +40,92 @@ _language: ja
 </{ComponentSelector}>
 ```
 <!-- end: Angular -->
+
+<!-- ComponentStart: Grid -->
+```html
+<igc-grid id="grid" auto-generate="true" allow-advanced-filtering="true">
+    <igc-grid-toolbar></igc-grid-toolbar>
+<igc-grid>
+```
+```ts
+constructor() {
+    let grid = document.getElementById("grid") as IgcGridComponent;
+    grid.data = this.data
+}
+```
+
+```tsx
+<IgrGrid data={nwindData} autoGenerate="false" ref={gridRef} allowAdvancedFiltering="true">
+    <IgrGridToolbar></IgrGridToolbar>
+</IgrGrid>
+```
+
 ```razor
 <{ComponentSelector} Data=data AutoGenerate="true" AllowAdvancedFiltering="true">
     <IgbGridToolbar></IgbGridToolbar>
 </{ComponentSelector}>
 ```
-<!-- WebComponents -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
 ```html
-<{ComponentSelector} id="grid" auto-generate="true" allow-advanced-filtering="true">
+<igc-tree-grid id="treeGrid" auto-generate="true" allow-advanced-filtering="true">
     <igc-grid-toolbar></igc-grid-toolbar>
-</{ComponentSelector}>
+</igc-tree-grid>
 ```
 ```ts
 constructor() {
-    let grid = (document.getElementById("grid") as IgcGridComponent);
-    this._bind = () => {
-            grid.data = this.data
-    }
-    this._bind();
+    let treeGrid = document.getElementById("treeGrid") as IgcTreeGridComponent;
+    treeGrid.data = this.data
 }
 ```
-<!-- end: WebComponents -->
+
+```tsx
+<IgrTreeGrid data={nwindData} autoGenerate="false" allowAdvancedFiltering="true">
+    <IgrGridToolbar></IgrGridToolbar>
+</IgrTreeGrid>
+```
+
+```razor
+<IgbTreeGrid Data=data AutoGenerate="true" AllowAdvancedFiltering="true">
+    <IgbGridToolbar></IgbGridToolbar>
+</IgbTreeGrid>
+```
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```html
+<igc-hierarchical-grid id="hierarchicalGrid" auto-generate="true" allow-advanced-filtering="true">
+    <igc-grid-toolbar></igc-grid-toolbar>
+</igc-hierarchical-grid>
+```
+```ts
+constructor() {
+    let hierarchicalGrid = document.getElementById("hierarchicalGrid") as IgcHierarchicalGridComponent;
+    hierarchicalGrid.data = this.data
+}
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- Blazor -->
+<!-- ComponentStart: HierarchicalGrid -->
+```razor
+<IgbHierarchicalGrid Data=data AutoGenerate="true" AllowAdvancedFiltering="true">
+    <IgbGridToolbar></IgbGridToolbar>
+</IgbHierarchicalGrid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: Blazor -->
+
+<!-- React -->
+<!-- ComponentStart: HierarchicalGrid -->
+```tsx
+<IgrHierarchicalGrid data={nwindData} autoGenerate="false" allowAdvancedFiltering="true">
+    <IgrGridToolbar></IgrGridToolbar>
+</IgrHierarchicalGrid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: React -->
 
 高度なフィルタリングは、`AdvancedFilteringExpressionsTree` 入力プロパティに保存される `FilteringExpressionsTree` を生成します。`AdvancedFilteringExpressionsTree` プロパティを使用して、高度なフィルタリングの初期状態を設定できます。
 
@@ -96,6 +161,7 @@ ngAfterViewInit(): void {
 
 <!-- end: Angular -->
 
+<!-- WebComponents -->
 ```typescript
 connectedCallback(): void {
     const tree = new IgcFilteringExpressionsTree(FilteringLogic.And);
@@ -122,10 +188,42 @@ connectedCallback(): void {
     grid.advancedFilteringExpressionsTree = tree;
 }
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+<!--```typescript
+This code snippet cannot currently be achieved in React
+componentDidMount() {
+    const tree = new IgrFilteringExpressionsTree(FilteringLogic.And);
+    tree.filteringOperands.push({
+        fieldName: 'ProductName',
+        condition: new IgrStringFilteringOperand.condition('contains'),
+        searchVal: 'cha',
+        ignoreCase: true
+    });
+    const subTree = new IgrFilteringExpressionsTree(FilteringLogic.Or);
+    subTree.filteringOperands.push({
+        fieldName: 'ProductName',
+        condition: new IgrStringFilteringOperand.condition('doesNotContain'),
+        searchVal: 'b',
+        ignoreCase: true
+    });
+    subTree.filteringOperands.push({
+        fieldName: 'ProductName',
+        condition: new IgrStringFilteringOperand.condition('startsWith'),
+        searchVal: 'Chan',
+        ignoreCase: true
+    });
+    tree.filteringOperands.push(subTree);
+    gridRef.current.advancedFilteringExpressionsTree = tree;
+}
+```-->
+<!-- end: React -->
+
 
 `{ComponentName}` ツールバーを表示したくない場合は、`OpenAdvancedFilteringDialog` および `CloseAdvancedFilteringDialog` メソッドを使用して、高度なフィルタリング ダイアログをコーディングを使用して開いたり閉じたりできます。
 
->
+> [!Note]
 >`{ComponentName}` で **QuickFilter**/**ExcelStyleFilter** と高度なフィルタリング ユーザー インターフェイスの両方を有効にできます。両フィルタリング ユーザー インターフェイスは、互いに依存せずに機能します。`{ComponentName}` の最終的なフィルター結果は、2 つのフィルター結果の共通部分です。
 
 <!-- Angular -->
@@ -345,7 +443,7 @@ $custom-drop-down: drop-down-theme(
 
 ### スキーマの使用
 
-テーマ エンジンを使用して [**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
+テーマ エンジンを使用して[**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
 
 すべてのコンポーネント (この場合は [light-grid]({environment:sassApiUrl}/index.html#variable-_light-grid)、[light-button]({environment:sassApiUrl}/index.html#variable-_light-button)、[light-button-group]({environment:sassApiUrl}/index.html#variable-_light-button-group)、[light-chip]({environment:sassApiUrl}/index.html#variable-_light-chip)、[light-input-group]({environment:sassApiUrl}/index.html#variable-_light-input-group) および [light-drop-down]({environment:sassApiUrl}/index.html#variable-_light-drop-down)) に提供されている 2 つの定義済みスキーマのいずれかを拡張します。
 
@@ -455,13 +553,49 @@ $custom-drop-down: drop-down-theme(
 
 <!-- NOTE this sample is differed -->
 
-`sample="/{ComponentSample}/advanced-filtering-style", height="530", alt="{Platform} {ComponentTitle} advanced filtering style"`
+`sample="/{ComponentSample}/advanced-filtering-style", height="530", alt="{Platform} {ComponentTitle} 高度なフィルタリング スタイル"`
 
 
 > [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->
+
+<!-- WebComponents, Blazor, React -->
+## スタイル設定
+
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
+一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
+```
+<!-- end: React -->
+
+```razor
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+次に、そのクラスに関連する CSS プロパティを設定します。
+
+```css
+.grid {
+    --ig-grid-filtering-row-background: #ffcd0f;
+    --ig-grid-filtering-background-or: #d83434;
+}
+```
+### デモ
+
+`sample="/{ComponentSample}/advanced-filtering-style", height="530", alt="{Platform} {ComponentTitle} 高度なフィルタリング スタイル"`
+
+<!-- end: WebComponents, Blazor, React -->
 
 ## API リファレンス
 
@@ -470,7 +604,7 @@ $custom-drop-down: drop-down-theme(
 
 ## その他のリソース
 
-
+<!-- ComponentStart:  Grid -->
 * [フィルタリング](filtering.md)
 * [Excel スタイル フィルタリング](excel-style-filtering.md)
 * [仮想化とパフォーマンス](virtualization.md)
@@ -481,6 +615,7 @@ $custom-drop-down: drop-down-theme(
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

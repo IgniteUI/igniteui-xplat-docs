@@ -248,7 +248,7 @@ class CustomDomestic extends SummaryCalculator
         return new DefaultSummaryResult(this.propertyName, SummaryOperand.Custom, this.usCountries)
     }
     public aggregate(a: any): void {
-        if(a.Countries === "USA")
+        if (a.Countries === "USA")
         {
             this.usCountries++;
         }
@@ -288,7 +288,7 @@ class CustomDomestic extends SummaryCalculator
        return new DefaultSummaryResult(this.propertyName, SummaryOperand.Custom, this.usCountries)
     }
     public aggregate(a: any): void {
-       if(a.Countries === "USA")
+       if (a.Countries === "USA")
        {
             this.usCountries++;
        }

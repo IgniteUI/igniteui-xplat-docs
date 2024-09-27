@@ -15,6 +15,21 @@ To enable a theme, a theme file should be loaded. Depending on your project conf
 
 Here's the complete list of all bundled themes and their path:
 
+<!-- React -->
+| Name        | Variant | Location                                          |
+| ----------- | ------- | ------------------------------------------------- |
+| Bootstrap   | Light   | igniteui-react-grids/grids/themes/light/bootstrap.css |
+| Material    | Light   | igniteui-react-grids/grids/themes/light/material.css  |
+| Fluent      | Light   | igniteui-react-grids/grids/themes/light/fluent.css    |
+| Indigo      | Light   | igniteui-react-grids/grids/themes/light/indigo.css    |
+| Bootstrap   | Dark    | igniteui-react-grids/grids/themes/dark/bootstrap.css  |
+| Material    | Dark    | igniteui-react-grids/grids/themes/dark/material.css   |
+| Fluent      | Dark    | igniteui-react-grids/grids/themes/dark/fluent.css     |
+| Indigo      | Dark    | igniteui-react-grids/grids/themes/dark/indigo.css     |
+<!-- end: React -->
+
+
+<!-- WebComponents -->
 | Name        | Variant | Location                                          |
 | ----------- | ------- | ------------------------------------------------- |
 | Bootstrap   | Light   | igniteui-webcomponents/themes/light/bootstrap.css |
@@ -25,7 +40,6 @@ Here's the complete list of all bundled themes and their path:
 | Material    | Dark    | igniteui-webcomponents/themes/dark/material.css   |
 | Fluent      | Dark    | igniteui-webcomponents/themes/dark/fluent.css     |
 | Indigo      | Dark    | igniteui-webcomponents/themes/dark/indigo.css     |
-
 
 ## Runtime Theme Switching
 
@@ -45,6 +59,8 @@ configureTheme("material");
 
 > [!Note]
 This only tells components to switch their internal styles to the desired theme, you should also switch the global theme file to one of the listed files above.
+
+<!-- end: WebComponents -->
 
 ## API References
 

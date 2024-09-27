@@ -2,20 +2,26 @@ export class MappingLoader {
 
     public namespace: string | null = null;
 
-    getPlatformTypeName(name: string, platform: APIPlatform) {
-        let type = this.getType(name);
+    getPlatformTypeName(name: string, platform: APIPlatform, filePath: string) {
+        var isExplicit = false;
+        // check for explicit API types, e.g. @TrendLineType enum type instead of Category.TrendLineType property
+        if (name && name.indexOf('@') == 0) {
+            name = name.substring(1);
+            isExplicit = true; 
+        }
+        var type = this.getType(name, filePath);
         if (type) {
             for (let name of type.names) {
                 if (name.platform == platform) {
-                    return name.mappedName;
+                    return isExplicit ? "@" + name.mappedName : name.mappedName;
                 }
             }
         }
         return null;
     }
 
-    getTypeMember(name: string, memberName: string) {
-        let typeInfo = this.getType(name);
+    getTypeMember(name: string, memberName: string, filePath: string) {
+        let typeInfo = this.getType(name, filePath);
         if (!typeInfo) {
             return null;
         }
@@ -28,8 +34,8 @@ export class MappingLoader {
         return null;
     }
 
-    getPlatformMemberName(name: string, platform: APIPlatform, memberName: string) {
-        let member = this.getTypeMember(name, memberName);
+    getPlatformMemberName(name: string, platform: APIPlatform, memberName: string, filePath: string) {
+        let member = this.getTypeMember(name, memberName, filePath);
         if (member == null) {
             return null;
         }
@@ -43,7 +49,7 @@ export class MappingLoader {
         return null;
     }
 
-    getType(name: string) : APITypeInfo | undefined {
+    getType(name: string, filePath: string) : APITypeInfo | undefined {
         if (name === undefined || name === null){
             return undefined;
         }
@@ -60,9 +66,9 @@ export class MappingLoader {
                 }
 
                 if (this.namespace) {
-                    return this.getType(this.namespace + "." + name);
+                    return this.getType(this.namespace + "." + name, filePath);
                 } else {
-                    throw new Error("type name is not unique, use namespace qualified!. Found '" + name + "' with namespace: " + this.namespace);
+                    throw new Error("type name is not unique, use namespace qualified!. Found '" + name + "' with namespace: " + this.namespace + "\n>> Found in: " + filePath + "\n>> Stack Trace:");
                     // console.log(this._aliasedNames);
                     // if (name === "Grid") {
                     //     var gridAPI = this._quickTypeMap.get("Grid");
@@ -127,6 +133,10 @@ export class MappingLoader {
                     )
                 }
             }
+        }
+
+        if (source.packageName) {
+            target.packageName = source.packageName;
         }
 
         if (source.names) {
@@ -252,6 +262,7 @@ export interface APITypeInfo {
     originalBaseTypeNamespace?: string;
     originalName: string;
     originalNamespace: string;
+    packageName: string;
     members?: APIMemberInfo[];
     names: APIPlatformNameGroup[];
     isEnum: boolean;

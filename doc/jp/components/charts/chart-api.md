@@ -2,7 +2,7 @@
 title: {Platform} チャート API | データ可視化 ツール | インフラジスティックス
 _description: インフラジスティックスの {ProductName} チャートは、チャートのビジュアルを構成およびスタイル設定するための便利な API を提供します。
 _keywords: {Platform} charts, chart API, API, {ProductName}, Infragistics, {Platform} チャート, チャート API, インフラジスティックス
-mentionedTypes: ["XamDataChart", "CategoryChart", "FinancialChart", "SeriesViewer", "XamDoughnutChart", "XamPieChart", and "XamSparkline" ]
+mentionedTypes: ["XamDataChart", "CategoryChart", "FinancialChart", "SeriesViewer", "XamDoughnutChart", "XamPieChart", "XamSparkline", "DataPieChart" ]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -81,18 +81,28 @@ _language: ja
 - `AllowSliceExplosion`
 - `AllowSliceSelection`
 - `InnerExtent`
-- `SliceClick`
+
+## {Platform} データ円チャート API メンバー
+
+{Platform} `DataPieChart` には、次の API メンバーがあります。
+
+- `DataPieChart.ChartType`
+- `DataPieChart.HighlightingBehavior`
+- `DataPieChart.OthersCategoryThreshold`
+- `DataPieChart.OthersCategoryType`
+- `DataPieChart.SelectionMode`
+- `DataPieChart.SelectionBehavior`
 
 ## {Platform} 円チャート API メンバー
 
 {Platform} `XamPieChart` には、次の API メンバーがあります。
 
-- `LegendItemBadgeTemplate`
-- `LegendItemTemplate`
-- `LegendLabelMemberPath`
-- `OthersCategoryThreshold`
-- `OthersCategoryType`
-- `SelectionMode`
+- `XamPieChart.LegendItemBadgeTemplate`
+- `XamPieChart.LegendItemTemplate`
+- `XamPieChart.LegendLabelMemberPath`
+- `XamPieChart.OthersCategoryThreshold`
+- `XamPieChart.OthersCategoryType`
+- `XamPieChart.SelectionMode`
 
 ## {Platform} スパークライン チャート API メンバー
 

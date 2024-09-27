@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} for {ProductName} の Excel スタイル フィルタリング
+title: {Platform} {ComponentTitle} Excel スタイル フィルタリング - {ProductName}
 _description: {Platform} {ComponentTitle} で Excel フィルタリングを構成する方法を説明します。さまざまなオプションを有効/無効にし、Excel スタイル フィルター メニューを自由にカスタマイズできます。
 _keywords: excel like filter, {Platform}, {ProductName}, Infragistics, excel のようなフィルター, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -10,16 +10,16 @@ _language: ja
 
 # {Platform} {ComponentTitle} の Excel スタイル フィルタリング
 
-{Platform} `{ComponentName}` は、Excel のようなフィルタリング UI を提供する Excel スタイルのフィルタリング機能を公開します。
+{Platform} {ComponentTitle} は、Excel のようなフィルタリング UI を提供する Excel スタイルのフィルタリング機能を公開します。これにより、大規模なデータセットを操作するプロセスが簡素化されます。主なアイデアは、無関係なエントリを排除しながら、最も関連性の高いデータをフィルタリングできるようにすることです。
 
 ## {Platform} {ComponentTitle} Excel スタイル フィルタリングの例
 
-`sample="/{ComponentSample}/excel-style-filtering-sample-1", height="620", alt="{Platform} {ComponentTitle} excel style filtering sample 1"`
+`sample="/{ComponentSample}/excel-style-filtering-sample-1", height="950", alt="{Platform} {ComponentTitle} Excel スタイルのフィルタリング サンプル 1"`
 
 
 ## 使用方法
 
-`Grid` コンポーネントの Excel スタイル フィルタリングをオンにするには、2 つの入力を設定します。`AllowFiltering` を **true** に設定し、`FilterMode` を `ExcelStyleFilter` に設定してください。
+`{ComponentName}` コンポーネントの Excel スタイル フィルタリングをオンにするには、2 つの入力を設定します。`AllowFiltering` を **true** に設定し、`FilterMode` を `ExcelStyleFilter` に設定してください。
 
 <!-- Angular -->
 ```html
@@ -29,15 +29,23 @@ _language: ja
 <!-- end: Angular -->
 
 ```razor
-<IgbGrid AllowFiltering="true" FilterMode="FilterMode.ExcelStyleFilter" />
+<{ComponentSelector} AllowFiltering="true" FilterMode="FilterMode.ExcelStyleFilter" >
+</{ComponentSelector}>
 ```
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} auto-generate="true" allow-filtering="true" filter-mode="ExcelStyleFilter" >
+<{ComponentSelector} auto-generate="true" allow-filtering="true" filter-mode="excelStyleFilter" >
 </{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} data={nwindData} autoGenerate="true" allowFiltering="true" filterMode={FilterMode.ExcelStyleFilter}>
+</{ComponentSelector}>
+```
+<!-- end: React -->
 
 ## インタラクション
 
@@ -47,7 +55,7 @@ _language: ja
 
 検索ボックスに入力してフィルターを適用すると、検索条件に一致する項目のみが選択されます。ただし、現在フィルターされている項目に項目を追加したい場合は、**[現在の選択をフィルターに追加]** オプションを選択する必要があります。
 
-フィルターをクリアしたい場合、`[すべて選択]` オプションをチェックして [適用] ボタンを押します。
+フィルターをクリアしたい場合、**[すべて選択]** オプションをチェックして [適用] ボタンを押します。
 
 異なる式でフィルターを適用する場合、**テキスト フィルター**をクリックし、特定の列で使用できるフィルター演算子のサブメニューを開きます。いずれかを選択してカスタム フィルター ダイアログを開き、フィルターとロジック演算子を使用して式を追加できます。[クリア] ボタンでフィルターをクリアできます。
 
@@ -74,16 +82,13 @@ _language: ja
 ```
 
 ```razor
-    <IgbGrid Data=northwindEmployees
-             AllowFiltering="true"
-             FilterMode="FilterMode.ExcelStyleFilter"
-             AutoGenerate="false">
-        <IgbColumn Field="ProductName" Sortable="true"></IgbColumn>
-        <IgbColumn Field="UnitPrice" Sortable="true" DisablePinning="true" DisableHiding="true"></IgbColumn>
-        <IgbColumn Field="QuantityPerUnit" Sortable="false" DisablePinning="true" DisableHiding="true"></IgbColumn>
-        <IgbColumn Field="OrderDate" Sortable="true" DisablePinning="false" DisableHiding="true"></IgbColumn>
-        <IgbColumn Field="Discontinued" Sortable="true"></IgbColumn>
-    </IgbGrid>
+<IgbGrid AutoGenerate="false" Data=northwindEmployees AllowFiltering="true" FilterMode="FilterMode.ExcelStyleFilter">
+    <IgbColumn Field="ProductName" Sortable="true"></IgbColumn>
+    <IgbColumn Field="UnitPrice" Sortable="true" DisablePinning="true" DisableHiding="true"></IgbColumn>
+    <IgbColumn Field="QuantityPerUnit" Sortable="false" DisablePinning="true" DisableHiding="true"></IgbColumn>
+    <IgbColumn Field="OrderDate" Sortable="true" DisablePinning="false" DisableHiding="true"></IgbColumn>
+    <IgbColumn Field="Discontinued" Sortable="true"></IgbColumn>
+</IgbGrid>
 ```
 
 ```html
@@ -99,6 +104,21 @@ _language: ja
     <igc-column field="Discontinued" header="Discontinued" sortable="true" data-type="Boolean">
     </igc-column>
 </igc-grid>
+```
+
+```tsx
+<IgrGrid data={nwindData} autoGenerate="false" allowFiltering="true" filterMode={FilterMode.ExcelStyleFilter}>
+    <IgrColumn field="ProductName" header="Product Name" sortable="true" dataType="String">
+    </IgrColumn>
+    <IgrColumn field="QuantityPerUnit" header="Quantity Per Unit" sortable="false" disable-pinning="true" disable-hiding="true" data-type="String">
+    </IgrColumn>
+    <IgrColumn field="UnitPrice" header="Unit Price" disable-pinning="true" disable-hiding="true" sortable="true" data-type="Number">
+    </IgrColumn>
+    <IgrColumn field="OrderDate" header="Order Date" sortable="false"  data-type="Date">
+    </IgrColumn>
+    <IgrColumn field="Discontinued" header="Discontinued" sortable="true" data-type="Boolean">
+    </IgrColumn>      
+</IgrGrid>  
 ```
 
 以下のサンプルの **Product Name** と **Discontinued** 列で 4 つすべての機能が有効です。**Quantity Per Unit** で 4 機能すべてが無効、**Unit Price** でソートのみが有効、**Order Date** でピン固定と非表示のみ有効です。すべてが `Selectable` です。
@@ -133,7 +153,18 @@ _language: ja
 ```
 
 ```razor
-Add tree grid snippet
+<IgbTreeGrid AutoGenerate="false" Data="FoodsData" PrimaryKey="ID" ForeignKey="ParentID" Moving="true" AllowFiltering="true" FilterMode="FilterMode.ExcelStyleFilter">
+    <IgbColumn Field="ID" Header="ID">
+    </IgbColumn>
+    <IgbColumn Field="Name" Header="Product Name" Sortable="true">
+    </IgbColumn>
+    <IgbColumn Field="UnitPrice" Header="Unit Price" Sortable="false" DataType="GridColumnDataType.Number" DisablePinning="true" DisableHiding="true">
+    </IgbColumn>
+    <IgbColumn Field="AddedDate" Header="Added Date" Sortable="false" DataType="GridColumnDataType.Date">
+    </IgbColumn>
+    <IgbColumn Field="Discontinued" DataType="GridColumnDataType.Boolean" BodyTemplateScript="WebGridBooleanCellTemplate" Sortable="true" >
+    </IgbColumn>
+</IgbTreeGrid>
 ```
 
 ```html
@@ -159,7 +190,7 @@ Add tree grid snippet
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```html
-<igx-hierarchical-grid class="hgrid" [data]="localdata" [autoGenerate]="false" [moving]="true" [allowFiltering]='true' filterMode="excelStyleFilter"
+<igx-hierarchical-grid [data]="localdata" [autoGenerate]="false" [moving]="true" [allowFiltering]='true' filterMode="excelStyleFilter"
     [height]="'650px'" [width]="'100%'" [rowHeight]="'65px'" #hierarchicalGrid>
     <igx-column field="Artist" [filterable]='true' [sortable]="true"></igx-column>
     <igx-column field="Photo" [filterable]='false'>
@@ -170,65 +201,46 @@ Add tree grid snippet
         </ng-template>
     </igx-column>
     <igx-column field="Debut" [filterable]='true' [disablePinning]="true" [disableHiding]="true"></igx-column>
-    <igx-column field="Grammy Nominations" [filterable]='true' [dataType]="'number'" [sortable]="false"></igx-column>
-    <igx-column field="Grammy Awards" [filterable]='true' [dataType]="'number'"></igx-column>
-
-    <igx-row-island [key]="'Albums'" [autoGenerate]="false" [allowFiltering]='true' filterMode="excelStyleFilter">
-        <igx-column field="Album" [filterable]='true'></igx-column>
-        <igx-column field="Launch Date" [filterable]='true' [dataType]="'date'"></igx-column>
-        <igx-column field="Billboard Review" [filterable]='true' [dataType]="'number'"></igx-column>
-        <igx-column field="US Billboard 200" [filterable]='true' [dataType]="'number'"></igx-column>
-    <igx-row-island [key]="'Songs'" [autoGenerate]="false" >
-            <igx-column field="No."></igx-column>
-            <igx-column field="Title"></igx-column>
-            <igx-column field="Released"></igx-column>
-            <igx-column field="Genre"></igx-column>
-    </igx-row-island>
-    </igx-row-island>
-
-    <igx-row-island [key]="'Tours'" [autoGenerate]="false">
-        <igx-column field="Tour"></igx-column>
-        <igx-column field="Started on"></igx-column>
-        <igx-column field="Location"></igx-column>
-        <igx-column field="Headliner"></igx-column>
-    </igx-row-island>
+    <igx-column field="GrammyNominations" [filterable]='true' [dataType]="'number'" [sortable]="false"></igx-column>
+    <igx-column field="GrammyAwards" [filterable]='true' [dataType]="'number'"></igx-column>
+    <!-- ... -->
 </igx-hierarchical-grid>
 ```
 
-```razor
-Add blazor snippets here
+```html
+<igc-hierarchical-grid auto-gGenerate="false" moving="true" allow-filtering='true' filter-mode="ExcelStyleFilter"
+    height="650px" width="100%" id="hierarchicalGrid">
+    <igc-column field="Artist" filterable='true' sortable="true"></igc-column>
+    <igc-column field="Photo" filterable='false'></igc-column>
+    <igc-column field="Debut" filterable='true' disable-pinning="true" disable-hiding="true"></igc-column>
+    <igc-column field="GrammyNominations" header="Grammy Nominations" filterable='true' date-type="Number" sortable="false"></igc-column>
+    <igc-column field="GrammyAwards" header="Grammy Awards" filterable='true' date-type="Number"></igc-column>
+    <!-- ... -->
+</igc-hierarchical-grid>
 ```
 
-```html
-<igc-hierarchical-grid class="hgrid" auto-gGenerate="false" moving="true" allow-filtering='true' filter-mode="ExcelStyleFilter"
-    height="650px" width="100%" rowHeight="65px" id="hierarchicalGrid">
-    <igc-column field="Artist" filterable='true' sortable="true"></igc-column>
-    <igc-column field="Photo" filterable='false'>
-    </igc-column>
-    <igc-column field="Debut" filterable='true' disable-pinning="true" disable-hiding="true"></igc-column>
-    <igc-column field="Grammy Nominations" filterable='true' date-type="Number" sortable="false"></igc-column>
-    <igc-column field="Grammy Awards" filterable='true' date-type="Number"></igc-column>
+```tsx
+<IgrHierarchicalGrid autoGenerate="false" allowFiltering="true" filterMode={FilterMode.ExcelStyleFilter}
+    height="650px" width="100%" id="hierarchicalGrid">
+    <IgrColumn field="Artist" filterable="true" sortable="true" ></IgrColumn>
+    <IgrColumn field="Photo" filterable="false"></IgrColumn>
+    <IgrColumn field="Debut" filterable="true" disablePinning="true" disableHiding="true"></IgrColumn>
+    <IgrColumn field="GrammyNominations" header="Grammy Nominations" filterable="true" sortable="false" data-type="Number"></IgrColumn>
+    <IgrColumn field="GrammyAwards" header="Grammy Awards" filterable="true" data-type="Number"></IgrColumn>
+    {/* ... */}
+</IgrHierarchicalGrid>  
+```
 
-    <igc-row-island key="Albums" auto-gGenerate="false" allow-filtering='true' filter-mode="ExcelStyleFilter">
-        <igc-column field="Album" filterable='true'></igc-column>
-        <igc-column field="Launch Date" filterable='true' date-type="Date"></igc-column>
-        <igc-column field="Billboard Review" filterable='true' date-type="Number"></igc-column>
-        <igc-column field="US Billboard 200" filterable='true' date-type="Number"></igc-column>
-    <igc-row-island key="Songs" auto-generate="false" >
-            <igc-column field="No."></igc-column>
-            <igc-column field="Title"></igc-column>
-            <igc-column field="Released"></igc-column>
-            <igc-column field="Genre"></igc-column>
-    </igc-row-island>
-    </igc-row-island>
-
-    <igc-row-island key="Tours" auto-generate="false">
-        <igc-column field="Tour"></igc-column>
-        <igc-column field="Started on"></igc-column>
-        <igc-column field="Location"></igc-column>
-        <igc-column field="Headliner"></igc-column>
-    </igc-row-island>
-</igc-hierarchical-grid>
+```razor
+<IgbHierarchicalGrid AutoGenerate="false" Moving="true" AllowFiltering="true" FilterMode="FilterMode.ExcelStyleFilter"
+    Height="650px" Width="100%" Id="hierarchicalGrid">
+    <IgbColumn Field="Artist" Filterable="true" Sortable="true"></IgbColumn>
+    <IgbColumn Field="Photo" Filterable="false"></IgbColumn>
+    <IgbColumn Field="Debut" Filterable="true" DisablePinning="true" DisableHiding="true"></IgbColumn>
+    <IgbColumn Field="GrammyNominations" Header="Grammy Nominations" DataType="GridColumnDataType.Number" Filterable="true" Sortable="true" ></IgbColumn>
+    <IgbColumn Field="GrammyAwards" Header="Grammy Awards" DataType="GridColumnDataType.Number" Filterable="true"></IgbColumn>
+    @* ... *@
+</IgbHierarchicalGrid>
 ```
 
 下のサンプルでは、「Artist」 列では 3 つの機能がすべて有効化され、「Debut」 では 3 つすべてが無効化され、「Grammy Nominations」 ではピン固定と非表示のみが設定されています。
@@ -252,20 +264,19 @@ Add blazor snippets here
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents, Blazor, React -->
 
 Excel スタイル フィルター メニューをさらにカスタマイズする場合は、`ExcelStyleHeaderIconTemplate` プロパティを使用して、メニューのヘッダー アイコンのカスタム テンプレートを定義できます。
 
 次のコードは、`ExcelStyleHeaderIconTemplate` を使用して Excel スタイル フィルター メニューをカスタマイズする方法を示しています。
 
 ```razor
-<IgbGrid    
-    Name="grid"
-    @ref="grid"
+<{ComponentSelector}
     Data="Data"    
     AllowFiltering="true"
     FilterMode="FilterMode.ExcelStyleFilter"
-    ExcelStyleHeaderIconTemplateScript="WebGridFilterAltIconTemplate"/>
+    ExcelStyleHeaderIconTemplateScript="WebGridFilterAltIconTemplate">
+</{ComponentSelector}>
 
 *** In JavaScript ***
 igRegisterScript("WebGridFilterAltIconTemplate", (ctx) => {
@@ -274,9 +285,10 @@ igRegisterScript("WebGridFilterAltIconTemplate", (ctx) => {
 }, false);
 ```
 
+<!-- WebComponents -->
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var grid = this.grid = document.getElementById('grid') as {ComponentName}Component;
     grid.excelStyleHeaderIconTemplate = this.webGridFilterAltIconTemplate;
 }
 
@@ -284,8 +296,27 @@ public webGridFilterAltIconTemplate = (ctx: IgcCellTemplateContext) => {
     return html`<img height="15px" width="15px" src="http://static.infragistics.com/xplatform/images/grid/propeller-logo.svg" title="Continued" alt="Continued" />`
 }
 ```
+<!-- end: WebComponents -->
 
-<!-- end: WebComponents, Blazor -->
+```tsx
+const webGridFilterAltIconTemplate = ({dataContext: IgrCellTemplateContext}) => {
+  return (
+    <img 
+      height="15px" 
+      width="15px" 
+      src="http://static.infragistics.com/xplatform/images/grid/propeller-logo.svg" 
+      title="Continued" 
+      alt="Continued" 
+    />
+  );
+}
+
+<{ComponentSelector} autoGenerate="true" allowFiltering="true" filterMode="excelStyleFilter" 
+    excelStyleHeaderIconTemplate={webGridFilterAltIconTemplate}>
+</{ComponentSelector}>
+```
+
+<!-- end: WebComponents, Blazor, React -->
 
 <!-- ComponentStart: Grid -->
 
@@ -557,6 +588,8 @@ Excel スタイル フィルタリング ダイアログ内のリスト項目は
 
 <!-- ComponentStart: TreeGrid -->
 
+<!-- Angular -->
+
 ## ツリー フィルター ビュー
 
 デフォルトでは、Excel スタイル フィルタリング ダイアログはリスト ビューで項目を表示します。それらをツリー ビューに表示するには、`TreeGridFilteringStrategy` を使用して、列フィールド名の配列を指定します。フィルター項目は、指定された列の場合はツリー ビューに、他のすべての列の場合はリスト ビューに表示されます。次のサンプルは、最初の列のツリー ビューにフィルター項目を表示する方法を示しています:
@@ -565,6 +598,8 @@ Excel スタイル フィルタリング ダイアログ内のリスト項目は
 
 
 <!-- ComponentEnd: TreeGrid -->
+
+<!-- end: Angular -->
 
 <!-- Angular -->
 
@@ -662,7 +697,7 @@ Add snippet for blazor
 
 ### デモ
 
-`sample="/{ComponentSample}/external-outlet", height="700", alt="{Platform} {ComponentTitle} external outlet"`
+`sample="/{ComponentSample}/external-outlet", height="700", alt="{Platform} {ComponentTitle} 表示要素が重なる場合のアウトレット"`
 
 <!-- end: Angular -->
 
@@ -823,7 +858,7 @@ $custom-drop-down:drop-down-theme(
 
 ### スキーマの使用
 
-テーマ エンジンを使用して [**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
+テーマ エンジンを使用して[**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
 
 すべてのコンポーネント (この場合は[light-grid]({environment:sassApiUrl}/index.html#variable-_light-grid)、[light-input-group]({environment:sassApiUrl}/index.html#variable-_light-input-group)、[light-button]({environment:sassApiUrl}/index.html#variable-_light-button)、[light-list]({environment:sassApiUrl}/index.html#variable-_light-list)、[light-checkbox]({environment:sassApiUrl}/index.html#variable-_light-checkbox)、[light-drop-down]({environment:sassApiUrl}/index.html#variable-_light-drop-down)) に提供される 2 つの定義済みスキーマのいずれかを拡張します。
 
@@ -973,7 +1008,7 @@ $custom-drop-down: drop-down-theme(
 
 ### デモ
 
-`sample="/{ComponentSample}/excel-style-filtering-style", height="950", alt="{Platform} {ComponentTitle} excel style filtering style"`
+`sample="/{ComponentSample}/excel-style-filtering-style", height="950", alt="{Platform} {ComponentTitle} Excel スタイルのフィルタリング スタイル"`
 
 
 > [!Note]
@@ -981,14 +1016,47 @@ $custom-drop-down: drop-down-theme(
 
 <!-- end: Angular -->
 
+<!-- WebComponents, Blazor, React -->
+## スタイル設定
+
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
+一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
+
+```html
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
+```
+
+```razor
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+次に、そのクラスに関連する CSS プロパティを設定します。
+
+```css
+.grid {
+    --ig-grid-filtering-row-background: #ffcd0f;
+    --ig-list-item-background: #ffcd0f;
+}
+```
+### デモ
+
+`sample="/{ComponentSample}/excel-style-filtering-style", height="950", alt="{Platform} {ComponentTitle} Excel スタイルのフィルタリング スタイル"`
+
+<!-- end: WebComponents, Blazor, React -->
+
 ## API リファレンス
 
 * `Column`
-* `Grid`
+* `{ComponentName}`
+
 
 ## その他のリソース
 
-
+<!-- ComponentStart:  Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [ソート](sorting.md)
@@ -997,6 +1065,7 @@ $custom-drop-down: drop-down-theme(
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 
 コミュニティに参加して新しいアイデアをご提案ください。

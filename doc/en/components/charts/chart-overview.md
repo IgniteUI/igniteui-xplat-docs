@@ -2,7 +2,7 @@
 title: {Platform} Charts & Graphs Library | {ProductName}
 _description: {ProductName} Charts & Graphs is an extensive library of data visualizations that enable stunning, interactive charts for your web and mobile apps. Try for FREE.
 _keywords: {Platform} Charts, Chart, Infragistics
-mentionedTypes: ["DomainChart", "FinancialChart", "CategoryChart", "XamDataChart"]
+mentionedTypes: ["DomainChart", "FinancialChart", "CategoryChart", "XamDataChart", "CategoryChartType"]
 ---
 # {Platform} Charts & Graphs Overview
 
@@ -35,11 +35,23 @@ The {Platform} product has over 65 different chart and graph types for any scena
 
 Built with a modular design of axis, markers, series, legend, and annotation layers, the {Platform} chart makes it easy to design a render any type of data story. Build a simple chart with a single data series, or build more complex data stories with multiple series of data, with multiple axis in composite views.
 
+## Category and Financial Chart vs. Data Chart
+
+The {Platform} Category and Financial Chart is what we refer to as our domain specific charts. It's a wrapper around {Platform} Data Chart that assumes your domain is a category, or financial price series.
+
+Choosing these specific domain charts allows to simplify the API and draw a lot of interfaces about the data to automatically configure the chart scenario, all without needing to explicitly define attributes such as axes, series, and annotations. In contrast, the data chart is very explicit and every critical part of the chart needs to be defined.
+
+Domain charts are using a data chart at its core; so the same performance optimizations apply to both. The difference lies in whether they are trying to make things very easy to specify for the developer, or to be as flexible as possible. {Platform} Data Chart is more verbose, unlocking all of our charting capabilities you need, allowing you to mix and match of any number of series, axes or annotation for example. For the category and financial charts, there might be a situation that cannot be easily done that the data chart is more suited for, such as a series with a scatter series with a numeric x axis.
+
+It can be difficult to know which chart to pick at first. It's crucial to understand the type of series and how many additional features you want to present. For a more light-weight basic category or financial series, we recommend using one of the domain charts. For more advances scenarios we recommend using {Platform} Data Chart, such as presenting something other than what is covered by the category chart's `CategoryCHart.ChartType` property such as a stacked or scatter series, or numeric or time-based data. It's worth noting that the {Platform} Financial Chart covers only column, OHLC bar, candlestick, and line series types.
+
+We make {Platform} Category and Financial Chart easier to use, the good news you can always switch to data chart in the future. 
+
 ### {Platform} Bar Chart
 
 The {Platform} Bar Chart, or Bar Graph is among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories with data encoded by horizontal bars of equal width and differing lengths. They are ideal for showing variations in the value of an item over time, data distribution, sorted data ranking (high to low, worst to best). Data is represented using a collection of rectangles that extend from the left to right of the chart towards the values of data points. Learn more about our [bar chart](types/bar-chart.md)
 
-`sample="/charts/data-chart/bar-chart-multiple-sources", height="600", alt="{Platform} Bar Chart Multiple Sources"`
+`sample="/charts/data-chart/bar-chart-multiple-sources", img-src="https://static.infragistics.com/marketing/Website/products/Ignite-UI-for-Angular/ignite-ui-angular-bar-chart", height="600", alt="{Platform} Bar Chart Multiple Sources"`
 
 
 
@@ -221,15 +233,15 @@ Visualize your data by creating new [Composite Chart](types/Composite-chart.md) 
 
 ### Custom Tooltips
 
-Visualize your data by creating new composite views and overlapping multiple series in single chart. In the Chart, you can create [Custom Tooltips](features/chart-tooltips.md#{Platform}-Chart-Tooltip-Template) with images, data binding, and even combine tooltips of multiple series into single tooltip.
+Visualize your data by creating new composite views and overlapping multiple series in single chart. In the Chart, you can create [Custom Tooltips](features/chart-tooltips.md#{PlatformLower}-chart-tooltip-template) with images, data binding, and even combine tooltips of multiple series into single tooltip.
 
 ### High-Performance, Real-Time Charting
 
-Display thousands of data points with milliseconds-level updates in real time with live, streaming data. You will experience no lag, no screen-flicker, and no visual delays, even as you interact with the chart on a touch-device. For a demo, refer to the [Chart with High-Frequency](features/chart-performance.md#{Platform}-Chart-with-High-Frequency) topic.
+Display thousands of data points with milliseconds-level updates in real time with live, streaming data. You will experience no lag, no screen-flicker, and no visual delays, even as you interact with the chart on a touch-device. For a demo, refer to the [Chart with High-Frequency](features/chart-performance.md#{PlatformLower}-chart-with-high-frequency) topic.
 
 ### High-Volume Data Handling
 
-Optimize [Chart Performance](features/chart-performance.md) to render millions of data points while the chart keeps providing smooth performance when end-users tries zooming in/out or navigating chart content. For a demo, refer to the [Chart with High-Volume](features/chart-performance.md#{Platform}-Chart-with-High-Volume) topic.
+Optimize [Chart Performance](features/chart-performance.md) to render millions of data points while the chart keeps providing smooth performance when end-users tries zooming in/out or navigating chart content. For a demo, refer to the [Chart with High-Volume](features/chart-performance.md#{PlatformLower}-chart-with-high-volume) topic.
 
 ### Modular Design
 
@@ -261,7 +273,7 @@ alt="{Platform} Charts Interactive Panning and Zooming"/>
 
 ### Markers, Tooltips, and Templates
 
-Use one of 10 [Marker Types](features/chart-markers.md) or create your own [Marker Template](features/chart-markers.md#{Platform}-Chart-Marker-Templates) to highlight data or use simple [Tooltips](features/chart-tooltips.md) or multi-axis and multi-series chart with [Custom Tooltips](features/chart-tooltips.md#{Platform}-Chart-Tooltip-Template) to give more context and meaning to your data.
+Use one of 10 [Marker Types](features/chart-markers.md) or create your own [Marker Template](features/chart-markers.md#{PlatformLower}-chart-marker-templates) to highlight data or use simple [Tooltips](features/chart-tooltips.md) or multi-axis and multi-series chart with [Custom Tooltips](features/chart-tooltips.md#{PlatformLower}-chart-tooltip-template) to give more context and meaning to your data.
 
 <img class="responsive-img" src="../../images/charts/ignite-ui-angular-financial-chart-custom-tooltips-1100.jpg"
 alt="{Platform} Charts Markers, Tooltips, and Templates"/>

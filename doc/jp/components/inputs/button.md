@@ -8,13 +8,11 @@ _language: ja
 
 # {Platform} Button (ボタン) の概要
 
-{Platform} Button コンポーネントを使用すると、{Platform} アプリでアクションをトリガーするクリック可能な要素を有効にできます。ボタンのバリアントの設定方法、ラップされた要素のスタイルの構成方法、およびサイズの定義方法を完全に制御できます。Button コンポーネントは、{Platform} Button OnClick イベント、{Platform} ボタンの切り替え、{Platform} ボタンの無効化などを通じて柔軟性を提供します。
+{Platform} Button コンポーネントを使用すると、{Platform} アプリでアクションをトリガーするクリック可能な要素を有効にできます。ボタンのバリアントの設定方法、ラップされた要素のスタイルの構成方法、およびサイズの定義方法を完全に制御できます。Button コンポーネントは、{Platform} Button <!-- WebComponents, Blazor -->OnClick イベント<!-- end: WebComponents, Blazor --><!-- React -->クリックされたコールバック<!-- end: React -->、{Platform} ボタンの切り替え、{Platform} ボタンの無効化などを通じて柔軟性を提供します。
 
 ## {Platform} Button の例
 
 `sample="/inputs/button/overview", height="100", alt="{Platform} Button の例"`
-
-
 
 ## 使用方法
 
@@ -33,6 +31,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcButtonComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -71,12 +72,12 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 
 `Button` の使用を開始する最も簡単な方法は次のとおりです:
 
-```tsx
-<IgrButton />
-```
-
 ```html
 <igc-button>Click me</igc-button>
+```
+
+```tsx
+<IgrButton />
 ```
 
 ```razor
@@ -110,7 +111,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 `Href` 属性が設定されている場合、ボタン コンポーネントはその内部構造を [`<button>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/button) から [`<a>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/a) タイプの要素に変更します。その場合、ボタンは通常のリンクと考えることができます。`Href` 属性を設定すると、`Rel`、`Target` および `Download` 属性も設定できます。
 ボタン コンポーネントが実際の [`<button>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/button) 要素を内部で使用する場合、プロパティを次のいずれかの値に設定することで、その `DisplayType` を指定できます。
 
-- `submit` - フォーム データを送信する場合
+- `Submit` - フォーム データを送信する場合
 - `reset` - フォーム データを初期値にリセットする場合
 - `button` - ウェブページのどこかにカスタム機能を備えたボタンを追加する場合
 
@@ -118,7 +119,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 
 ### Contained ボタン
 
-`variant` を使用して、コンポーネント テンプレートにシンプルなフラット ボタンを追加します。バリアントを設定しない場合、デフォルトではフラットに設定されることに注意してください。
+`variant` を使用して、コンポーネント テンプレートにシンプルな contained ボタンを追加します。バリアントを設定しない場合、デフォルトでは contained に設定されることに注意してください。
 
 ```tsx
 <IgrButton variant="contained"><span>Contained</span></IgrButton>
@@ -190,7 +191,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 
 ## ボタンのサイズ設定
 
-`size` プロパティを使用して、ユーザーが `button` のサイズを選択できるようにすることができます。これを行うには、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびにボタンの size プロパティを変更します。
+ユーザーは、CSS 変数 `--ig-size` を使用して `button` コンポーネントのサイズを変更できます。次の例では、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびにボタンの size プロパティを変更します。
 
 ```ts
 import { defineComponents, IgcButtonComponent, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
@@ -213,11 +214,11 @@ this.containedButton = document.getElementById('contained-btn') as IgcButtonComp
 this.fabButton = document.getElementById('fab-btn') as IgcButtonComponent;
 
 this.radioGroup.addEventListener('click', (radio: any) => {
-    this.outlinedButton.size = radio.target.value;
-    this.flatButton.size = radio.target.value;
-    this.containedButton.size = radio.target.value;
-    this.fabButton.size = radio.target.value;
-});
+    this.outlinedButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
+    this.flatButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
+    this.containedButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
+    this.fabButton.style.setProperty('--ig-size', `var(--ig-size-${radio.target.value})`);
+}); 
 ```
 
 ```tsx

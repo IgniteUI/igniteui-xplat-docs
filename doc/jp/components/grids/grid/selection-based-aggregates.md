@@ -53,7 +53,7 @@ const dates = data.filter(rec => isDate(rec));
 ## API リファレンス
 
 * `GridComponent`
-* `GridCell`
+* `Cell`
 
 ## その他のリソース
 <div class="divider--half"></div>

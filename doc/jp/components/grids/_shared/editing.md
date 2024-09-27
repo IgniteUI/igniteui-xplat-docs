@@ -10,7 +10,10 @@ _language: ja
 
 # {Platform} {ComponentTitle} 編集
 
-{ProductName} `{ComponentName}` コンポーネントは、レコードの作成、更新、削除などのデータ操作を簡単に実行できます。データの変更は、[セル編集](cell-editing.md)、[行編集](row-editing.md)、および一括編集 (追加予定) で実行できます。`{ComponentName}` は、これらの操作をカスタマイズできる強力なパブリック API を提供します。
+{Platform} {ComponentTitle} の {ProductName} セル編集機能を使用すると、レコードの作成、更新、削除などのデータ操作を簡単に実行できます。`{ComponentName}` は、これらの操作をカスタマイズできる強力なパブリック API を提供します。データ操作のフェーズは次のとおりです。
+- [セル編集](cell-editing.md)
+- [行編集](row-editing.md)
+- 一括編集 (追加予定)
 
 <!-- Angular -->
 
@@ -55,13 +58,18 @@ _language: ja
  - `boolean` データ型ではデフォルトのテンプレートは `Checkbox` を使用します。
  - `currency` データ型の場合、デフォルトのテンプレートは、アプリケーションまたはグリッドのロケール設定に基づいたプレフィックス/サフィックス構成の `InputGroup` を使用します。
  - `percent` パーセントデータ型の場合、デフォルトのテンプレートは、編集された値のプレビューをパーセントで表示するサフィックス要素を持つ `InputGroup` を使用します。
+ <!-- ComponentStart:  Grid -->
  - カスタム テンプレートについては、[セル編集トピック](cell-editing.md#セル編集テンプレート)を参照してください。
+ <!-- ComponentEnd:  Grid -->
 
+<!-- ComponentStart:  Grid, TreeGrid, HierarchicalGrid -->
 すべての利用可能な列データ型は、公式の[列タイプトピック](column-types.md#デフォルトのテンプレート)にあります。
+<!-- ComponentEnd:  Grid, TreeGrid, HierarchicalGrid -->
 
 ### イベントの引数とシーケンス
-
+<!-- ComponentStart:  Grid, TreeGrid, HierarchicalGrid -->
 グリッドは、編集エクスペリエンスをより詳細に制御できる広範なイベントを公開します。これらのイベントは、[**行の編集**](row-editing.md)および[**セルの編集**](cell-editing.md)のライフサイクル - 編集の開始、コミット、またはキャンセル時に発生します。
+<!-- ComponentEnd:  Grid, TreeGrid, HierarchicalGrid -->
 
  | イベント           | 説明                                                                                                                                               | 引数                  | キャンセル可能 |
  | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ----------- |
@@ -83,7 +91,7 @@ _language: ja
 
 以下のサンプルは、実行中の編集実行シーケンスを示しています。
 
-`sample="/{ComponentSample}/editing-lifecycle", height="620", alt="{Platform} {ComponentTitle} editing lifecycle"`
+`sample="/{ComponentSample}/editing-lifecycle", height="620", alt="{Platform} {ComponentTitle} 編集のライフサイクル"`
 
 
 ### 機能の統合
@@ -100,48 +108,47 @@ _language: ja
 
 たとえば、ユーザーがセル/行が編集モードのときに列をソートしようとする場合に、新しい値をコミットする方法を示します:
 
-```html
-<igx-grid #grid [data]="localData" [primaryKey]="'ProductID'" (sorting)="onSorting($event)">
-</igx-grid>
-```
+<!-- Angular -->
 
 ```html
-<igc-grid id="grid" primary-key="ProductID" (sorting)="onSorting($event)">
-</igc-grid>
-```
-
-```ts
-constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-
-    this._bind = () => {
-        grid.data = this.data;
-        grid.sorting = this.onSorting;
-    }
-    this._bind();
-
-}
+<{ComponentSelector} #grid [data]="localData" [primaryKey]="'ProductID'" (sorting)="onSorting($event)">
+</{ComponentSelector}>
 ```
 
 ```typescript
 public onSorting(event: ISortingEventArgs) {
     this.grid.endEdit(true);
-    // (event.owner as IgxGridComponent).endEdit(true);
-}
-```
-```typescript
-public onSorting(event: IgcSortingEventArgs) {
-    this.grid.endEdit(true);
-    // (event.owner as IgxGridComponent).endEdit(true);
 }
 ```
 
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" primary-key="ProductID" >
+</{ComponentSelector}>
+```
+
+```typescript
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as {ComponentName}Component;
+    grid.data = this.data;
+    grid.addEventListener("sorting", this.onSorting);
+}
+
+public onSorting(event: IgcSortingEventArgs) {
+    var grid = document.getElementById('grid') as {ComponentName}Component;
+    grid.endEdit(true);
+}
+```
+<!-- end: WebComponents -->
+
 ```razor
-<IgbGrid
+<{ComponentSelector}
     Id="grid"
     SortingScript="SortingHandler"
     RowEditable="true">
-</IgbGrid>
+</{ComponentSelector}>
 
 //In JavaScript
 function SortingHandler() {
@@ -150,29 +157,30 @@ function SortingHandler() {
 igRegisterScript("SortingHandler", SortingHandler, false);
 ```
 
+<!-- React -->
+```tsx
+function onSorting(grid: {ComponentName}, event: IgrSortingEventArgs) {
+    grid.endEdit(true);
+}
+
+<{ComponentSelector} data={localData} primaryKey="ProductID" sorting={onSorting}>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
 ## API リファレンス
 
-* `GridCell`
-
-<!-- ComponentStart: Grid, HierarchicalGrid -->
-
-* `GridRow`
-
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
-
-<!-- ComponentStart: TreeGrid -->
-
-* `TreeGridRow`
-
-<!-- ComponentEnd: TreeGrid -->
-
-* `DatePickerComponent`
-* `CheckboxComponent`
-* `Overlay`
-## その他のリソース
+* `{ComponentName}`
 
 <!-- Angular -->
+* `DatePicker`
+* `Checkbox`
+* `Overlay`
+<!-- end: Angular -->
 
+## その他のリソース
+
+<!-- Angular, WebComponents, React -->
 
 * [列のデータ型](column-types.md#デフォルトのテンプレート)
 * [仮想化とパフォーマンス](virtualization.md)
@@ -185,14 +193,14 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 * [選択](selection.md)
 
 <!-- ComponentStart: HierarchicalGrid -->
-* [検索](search.md)
+<!-- * [検索](search.md) -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- end: Angular -->
+<!-- end: Angular, WebComponents, React -->
 
 <!-- Blazor -->
 
-
+<!-- ComponentStart:  Grid -->
 * [列のデータ型](column-types.md#デフォルトのテンプレート)
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
@@ -202,9 +210,12 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
+* [検索](search.md)
+
+<!-- ComponentEnd:  Grid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
-* [検索](search.md)
+<!-- * [Searching](search.md) -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- end: Blazor -->

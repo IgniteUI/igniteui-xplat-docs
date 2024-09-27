@@ -12,11 +12,11 @@ In the {ProductName} `CategoryChart` control Data Aggregations feature allows yo
 
 # {Platform} Data Aggregations Example
 
-The following example depicts a [Column Chart](../types/column-chart.md) that groups by the Country member of the `XAxis` and applies a summary and sort based on the Sales Sum.
+The following example depicts a [Column Chart](../types/column-chart.md) that groups by the Country member of the `XAxis` and can be changed to other properties within each data item such as Product, MonthName, and Year to aggregate the sales data. Also a summary and sort option is available to get a desirable order for the grouped property. 
+
+Note, the abbreviated functions found within the dropdowns for `InitialSummaries` and `GroupSorts` have be applied as shown to get a correct result based on the property you assign. eg. Sum(sales) as Sales | Sales Desc
 
 `sample="/charts/category-chart/data-aggregations", height="500", alt="{Platform} Data Aggregations Example"`
-
-
 
 ```html
 <igx-category-chart

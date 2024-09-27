@@ -178,13 +178,12 @@ private void SaveFile(byte[] bytes, string fileName, string mime)
 <!--Angular -->
 
 ## ヒープの管理
->
->Excel Library のサイズに因り、ソースマップの生成を無効にすることを推奨します。
->
->architect => build => options から serve の options で `vendorSourceMap` オプションを設定して `angular.json` を変更します。
->
+
+Excel Library のサイズに因り、ソースマップの生成を無効にすることを推奨します。
+
+architect => build => options から serve の options で `vendorSourceMap` オプションを設定して `angular.json` を変更します。
+
 ```ts
-...
     "architect": {
         "build": {
           "builder": "...",

@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} の列の並べ替えと移動 - インフラジスティックス
+title: {Platform} {ComponentTitle} 列の並べ替えと移動 - {ProductName}
 _description: カスタム列順序を設定し、マウスのドラッグ/ドロップまたはタッチジェスチャ、または {Platform} Column Moving API を使用して列の並べ替えを有効にします。{ProductName} を今すぐお試しください。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -10,7 +10,7 @@ _language: ja
 
 # {ComponentTitle} の列の並べ替えと移動
 
-{ProductName}  の `{ComponentName}` コンポーネントは、標準ドラッグ/ドロップのマウス/タッチによるジェスチャ、または列移動 API を使用した順序変更のための**列移動**機能を提供します。列の移動は、固定列と固定されていない列、および[複数列ヘッダー](multi-column-headers.md)の両方で機能します。列を固定領域に移動すると列が固定され、または逆に固定領域の外に列を移動すると、列の固定が解除されます。
+{Platform} {ComponentTitle} の {ProductName} 列移動機能を使用すると、列をすばやく簡単に並べ替えることができます。これは、列移動 API を使用するか、マウスまたはタッチ ジェスチャを使用してヘッダーを別の位置にドラッグ アンド ドロップすることによって実行できます。{Platform} {ComponentTitle} では、ピン固定された列とピン固定されていない列、および[複数列ヘッダー](multi-column-headers.md)に対しても列の移動を有効にすることができます。
 
 > [!Note]
 > 列と列グループ間の順序変更は、それらが階層の同じレベルにあり、両方が同じグループにある場合にのみ許可されます。列/列グループが最上位の列である場合、列/列グループ間を移動できます。
@@ -23,7 +23,7 @@ _language: ja
 <!-- end: Angular -->
 
 > [!Note]
-> ピン固定領域が最大幅 (`{ComponentName}` 幅合計の 80 %) を超えた場合、ドロップ操作が禁止されていてピン固定ができないことをヒントの表示でエンドユーザーに通知します。つまり、ピン固定領域に列をドロップできません。
+> ピン固定領域が最大幅 (`{ComponentName}` 幅合計の 80%) を超えた場合、ドロップ操作が禁止されていてピン固定ができないことをヒントの表示でエンドユーザーに通知します。つまり、ピン固定領域に列をドロップできません。
 
 ```html
 <ng-template igxHeader>
@@ -32,17 +32,27 @@ _language: ja
 ```
 
 ```razor
-    public RenderFragment<IgbColumnTemplateContext> headerTemplate = (context) =>
+    public RenderFragment<IgbColumnTemplateContext> headerTemplate => (context) =>
     {
-        return @<IgbIcon Collection="fas" IconName="fa-thumbtack" onclick="onClick()"></IgbIcon>;
+        return @<IgbIcon Collection="fas" IconName="fa-thumbtack" draggable="false" @onclick="() => onClick()"></IgbIcon>;
     };
 ```
 
 ```ts
 public headerTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <igc-icon draggable="false" click="${this.onClick()}"></igc-icon>
+        <igc-icon draggable="false" @click="${() => this.onClick()}"></igc-icon>
     `;
+}
+```
+
+```tsx
+function headerTemplate(ctx: IgrCellTemplateContext) {
+    return (
+    <>
+       <IgrIcon draggable="false" onClick={onClick}></IgrIcon>
+    </>
+    );
 }
 ```
 
@@ -55,6 +65,7 @@ public headerTemplate = (ctx: IgcCellTemplateContext) => {
 ## 概要
 
 **列移動**機能は各列レベルで有効にできます。つまり、`{ComponentName}` に移動可能な列または移動不可の列の両方を含むことができます。`{ComponentName}` の `Moving` 入力によって制御されます。
+<!-- ComponentStart: Grid -->
 
 <!-- Angular -->
 ```html
@@ -72,13 +83,57 @@ public headerTemplate = (ctx: IgcCellTemplateContext) => {
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+```tsx
+<{ComponentSelector} moving="true"></{ComponentSelector}>
+```
+<!-- end: React -->
+
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+
+<!-- Angular -->
+```html
+<{ComponentSelector} [moving]="true">
+    ...
+    <{RowIslandSelector} [moving]="true"></{RowIslandSelector}>
+</{ComponentSelector}>
+```
+<!-- end: Angular -->
+
+```razor
+<{ComponentSelector} Moving=true>
+    ...
+    <{RowIslandSelector} Moving=true></{RowIslandSelector}>
+</{ComponentSelector}>
+```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} moving="true">
+    ...
+    <{RowIslandSelector} moving="true"></{RowIslandSelector}>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} moving="true">
+    ...
+    <{RowIslandSelector} moving="true"></{RowIslandSelector}>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
+<!-- ComponentEnd: HierarchicalGrid -->
 ## API
 
 ドラッグアンドドロップ機能に加えて、列の移動機能には、プログラムで列を移動/並べ替えできる API メソッドも用意されています。
 
-<!-- Angular -->
-
 `MoveColumn` - 列を別の列 (ターゲット) の前または後に移動します。最初のパラメーターは移動する列で、2 番目のパラメーターはターゲット列です。オプションの 3 番目のパラメーター `Position` (`DropPosition` 値を表す) でターゲット列の前または後に列を配置するかどうかを決定します。
+
 
 ```typescript
 // Move the ID column after the Name column
@@ -88,18 +143,15 @@ const nameColumn = grid.getColumnByName("Name");
 grid.moveColumn(idColumn, nameColumn, DropPosition.AfterDropTarget);
 ```
 
-<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
-
 ```razor
-    public IgbColumn Col1 { get; set; }
-    public IgbColumn Col2 { get; set; }
-    public void HandleClick()
+    public async void HandleClick()
     {
+        IgbColumn Col1 = await this.grid.GetColumnByVisibleIndexAsync(0);
+        IgbColumn Col2 = await this.grid.GetColumnByVisibleIndexAsync(1);
         this.Grid.MoveColumn(Col1,Col2, DropPosition.AfterDropTarget);
     }
 ```
 
-<!-- end: Angular -->
 
 `Move` - 列を指定した表示インデックスに移動します。渡されたインデックス パラメーターが無効である場合 (負である/列数を超える場合)、または列がこのインデックスに移動できない場合 (別のグループ内にある場合)、操作は実行されません。
 
@@ -109,20 +161,13 @@ const idColumn = grid.getColumnByName("ID");
 idColumn.move(3);
 ```
 
-<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
-
-
-<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
-
 ```razor
-    public IgbColumn Col1 { get; set; };
-    public void HandleClick()
+    public async void HandleClick()
     {
+        IgbColumn Col1 = await this.grid.GetColumnByVisibleIndexAsync(0);
         this.Col1.Move(3);
     }
 ```
-
-<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
 列移動機能を使用する場合、操作が成功すると、`ColumnMovingEnd` イベントが発生することに注意してください。また、ドラッグアンドドロップ機能と比較して、列移動機能を使用するために `Moving` プロパティを true に設定する必要がないことにも注意してください。
 
@@ -130,7 +175,7 @@ idColumn.move(3);
 
 列のドラッグアンドドロップ操作を可能にする列移動に関連するイベントが複数あります。`ColumnMovingStart`、`ColumnMoving`、および `ColumnMovingEnd` です。
 
-`{ComponentName}` の `ColumnMovingEnd`  イベントを処理し、列が新しい位置にドロップされたときにカスタム ロジックを実装できます。たとえば、以下のスニペットでは、**Change On Year(%)** 列の後に **Category** のドロップをキャンセルできます。
+`{ComponentName}` の `ColumnMovingEnd` イベントを処理し、列が新しい位置にドロップされたときにカスタム ロジックを実装できます。たとえば、以下のスニペットでは、**Change On Year(%)** 列の後に **Category** のドロップをキャンセルできます。
 
 <!-- Angular -->
 ```html
@@ -144,30 +189,41 @@ idColumn.move(3);
 <!-- WebComponents -->
 ```html
 <{ComponentSelector} id="dataGrid" auto-generate="false" moving="true">
-    <igc-column field="Category"></igx-column>
-    <igc-column field="Change On Year(%)" data-type="Number" ></igx-column>
+    <igc-column field="Category"></igc-column>
+    <igc-column field="Change On Year(%)" data-type="Number" ></igc-column>
 </{ComponentSelector}>
 ```
+
 ```typescript
 constructor() {
-    var dataGrid = this.dataGrid = document.getElementById('dataGrid') as IgcGridComponent;
-
-    this._bind = () => {
-        dataGrid.data = this.data;
-        datagrid.columnMovingEnd = this.onColumnMovingEnd;
+    var dataGrid = this.dataGrid = document.getElementById('dataGrid') as {ComponentName}Component;
+    dataGrid.data = this.data;
+    dataGrid.addEventListener("columnMovingEnd", this.onColumnMovingEnd);
+}
+```
+```typescript
+public onColumnMovingEnd(event) {
+    if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {
+        event.detail.cancel = true;
     }
-    this._bind();
 }
 ```
 <!-- end: WebComponents -->
 
-```typescript
-public onColumnMovingEnd(event) {
-    if (event.source.field === "Category" && event.target.field === "Change On Year(%)") {
-        event.cancel = true;
+<!-- ComponentStart: Grid, HierarchicalGrid -->
+```tsx
+function onColumnMovingEnd(grid: IgrGridBaseDirective, event: IgrColumnMovingEventArgs) {
+   if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {
+        event.detail.cancel = true;
     }
 }
+
+<{ComponentSelector} autoGenerate="false" moving="true" data={data} columnMovingEnd={onColumnMovingEnd}>
+    <IgrColumn field="Category"></IgrColumn>
+    <IgrColumn field="Change On Year(%)" dataType="Number" ></IgrColumn>
+</{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 ```razor
     <{ComponentSelector} ShowGroupArea="true" @ref='Grid' Width="100%" Height="100%"
@@ -175,7 +231,6 @@ public onColumnMovingEnd(event) {
              FilterMode="FilterMode.ExcelStyleFilter"
              AutoGenerate=true
              Data=northwindEmployees
-             DisplayDensity="DisplayDensity.Compact"
              Moving="true"
              ColumnMovingEndScript='onColumnMovingEnd'>
     </{ComponentSelector}>
@@ -220,7 +275,7 @@ $dark-grid-column-moving-theme: grid-theme(
 ```
 
 > [!Note]
-> コンポーネントの [**View Encapsulation**](/components/themes/sass/component-themes.html#表示のカプセル化) ストラテジに基づいて、::ng-deep を使用してこのカプセル化を`解除する`必要があります。
+> コンポーネントの [**View Encapsulation**](/components/themes/sass/component-themes.html#表示のカプセル化) ストラテジに基づいて、`::ng-deep` を使用してこのカプセル化を`解除する`必要があります。
 
 ```scss
 :host {
@@ -275,13 +330,13 @@ $dark-grid-column-moving-schema: extend($_light-grid,
                color: ("secondary", 200)
             ),
             ghost-header-icon-color:(
-               color:( "primary", 500)
+               color: ("primary", 500)
             )
         )
 );
 ```
 
-カスタム スキーマを適用するには、グローバル ([light]({environment:sassApiUrl}/index.html#variable-light-schema) または [dark]({environment:sassApiUrl}/index.html#variable-light-schema)) の 1 つを**拡張する**必要があります。これは基本的にカスタム スキーマでコンポーネントを指し示し、その後それぞれのコンポーネント テーマに追加するものです。
+カスタム スキーマを適用するには、グローバル ([light]({environment:sassApiUrl}/index.html#variable-light-schema) または [dark]({environment:sassApiUrl}/index.html#variable-dark-schema)) の 1 つを**拡張する**必要があります。これは基本的にカスタム スキーマでコンポーネントを指し示し、その後それぞれのコンポーネント テーマに追加するものです。
 
 ```scss
 // Extending the global dark-schema
@@ -311,12 +366,48 @@ $dark-grid-column-moving-theme: grid-theme(
 
 <!-- end: Angular -->
 
+<!-- WebComponents, Blazor, React -->
+## スタイル設定
+
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
+
+色を変更したい場合は、最初にグリッドのクラスを設定する必要があります:
+
+```html
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
+```
+
+```razor
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+次に、関連する CSS プロパティをこのクラスに設定します:
+
+```css
+.grid {
+    --ig-grid-ghost-header-text-color: #f4d45c;
+    --ig-grid-ghost-header-background: #ad9d9d;
+    --ig-grid-ghost-header-icon-color: #f4d45c;
+}
+```
+### デモ
+
+`sample="/{ComponentSample}/column-moving-styles", height="650", alt="{Platform} {ComponentTitle} Grid 移動のスタイル設定の例"`
+
+<!-- end: WebComponents, Blazor, React -->
+
 ## API リファレンス
 
 * `Column`
 * `{ComponentName}`
 
 ## その他のリソース
+
+<!-- ComponentStart:  Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
@@ -325,9 +416,8 @@ $dark-grid-column-moving-theme: grid-theme(
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
-<!-- ComponentStart: HierarchicalGrid -->
 * [検索](search.md)
-<!-- ComponentEnd: HierarchicalGrid -->
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

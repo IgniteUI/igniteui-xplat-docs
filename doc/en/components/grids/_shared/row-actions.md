@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # Row Actions in {Platform} {ComponentTitle}
 
-The `{ComponentName}` component in {ProductName} provides the ability to use an `ActionStrip` and utilize CRUD for row/cell components and row pinning. The Action Strip component can host predefined UI controls for these operations.
+The {ProductName} Row Actions feature in {Platform} {ComponentTitle} enables developers to use an `ActionStrip` and utilize CRUD for row/cell components and row pinning. There are several predefined UI controls for these operations that are applicable to a specific row in the `{ComponentName}` – editing and pinning.
 
 ## Usage
 
@@ -49,41 +49,135 @@ They are added inside the `{ComponentName}` and this is all needed to have an `A
 <!-- end: Angular -->
 
 ```razor
-    <{ComponentSelector} Data=northwindEmployees RowEditable="True" PrimaryKey="ID">
-        @foreach (var c in columns)
-        {
-            <IgbColumn Field="@c.Field">
-            </IgbColumn>
-        }
-        <IgbActionStrip @ref=actionstrip>
-            <IgbGridPinningActions></IgbGridPinningActions>
-            <IgbGridEditingActions></IgbGridEditingActions>
-        </IgbActionStrip>
-    </{ComponentSelector}>
+<IgbGrid Data=northwindEmployees RowEditable="True" PrimaryKey="ID">
+    @foreach (var c in columns)
+    {
+        <IgbColumn Field="@c.Field">
+        </IgbColumn>
+    }
+    <IgbActionStrip @ref=actionstrip>
+        <IgbGridPinningActions></IgbGridPinningActions>
+        <IgbGridEditingActions></IgbGridEditingActions>
+    </IgbActionStrip>
+</IgbGrid>
 ```
+
+<!-- ComponentStart: TreeGrid -->
+```razor
+<IgbTreeGrid Data=northwindEmployees RowEditable="True" PrimaryKey="ID">
+    @foreach (var c in columns)
+    {
+        <IgbColumn Field="@c.Field">
+        </IgbColumn>
+    }
+    <IgbActionStrip @ref=actionstrip>
+        <IgbGridPinningActions></IgbGridPinningActions>
+        <IgbGridEditingActions></IgbGridEditingActions>
+    </IgbActionStrip>
+</IgbTreeGrid>
+```
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```razor
+<IgbHierarchicalGrid Data=northwindEmployees RowEditable="True" PrimaryKey="ID">
+    @foreach (var c in columns)
+    {
+        <IgbColumn Field="@c.Field">
+        </IgbColumn>
+    }
+    <IgbActionStrip @ref=actionstrip>
+        <IgbGridPinningActions></IgbGridPinningActions>
+        <IgbGridEditingActions></IgbGridEditingActions>
+    </IgbActionStrip>
+</IgbHierarchicalGrid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid" row-editable="true" primary-key="ID">
-    <igc-column field="field">
-    </igc-column>
-
-    <igc-action-strip id="actionStrip">
+<igc-grid row-editable="true" primary-key="ID">
+    <igc-column field="field"></igc-column>
+    <igc-action-strip>
         <igc-grid-pinning-actions></igc-grid-pinning-actions>
         <igc-grid-editing-actions></igc-grid-editing-actions>
     </igc-action-strip>
+</igc-grid>
+```
+<!-- ComponentStart: TreeGrid -->
+```html
+<igc-tree-grid row-editable="true" primary-key="ID">
+    <igc-column field="field"></igc-column>
+    <igc-action-strip>
+        <igc-grid-pinning-actions></igc-grid-pinning-actions>
+        <igc-grid-editing-actions></igc-grid-editing-actions>
+    </igc-action-strip>
+</igc-tree-grid>
+```
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```html
+<igc-hierarchical-grid row-editable="true" primary-key="ID">
+    <igc-column field="field"></igc-column>
+    <igc-action-strip>
+        <igc-grid-pinning-actions></igc-grid-pinning-actions>
+        <igc-grid-editing-actions></igc-grid-editing-actions>
+    </igc-action-strip>
+</igc-hierarchical-grid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: WebComponents -->
+
+<!-- React -->
+<!-- ComponentStart: Grid -->
+```tsx
+<{ComponentSelector} id="grid" rowEditable="true" primaryKey="ID">
+    <IgrColumn field="field">
+    </IgrColumn>
+    <IgrActionStrip name="actionStrip">
+        <IgrGridPinningActions></IgrGridPinningActions>
+        <IgrGridEditingActions></IgrGridEditingActions>
+    </IgrActionStrip>
 </{ComponentSelector}>
 ```
-<!-- end: WebComponents -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```tsx
+<{ComponentSelector} id="treeGrid" rowEditable="true" primaryKey="ID">
+    <IgrColumn field="field">
+    </IgrColumn>
+    <IgrActionStrip name="actionStrip">
+        <IgrGridPinningActions></IgrGridPinningActions>
+        <IgrGridEditingActions></IgrGridEditingActions>
+    </IgrActionStrip>
+</{ComponentSelector}>
+```
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```tsx
+<IgrHierarchicalGrid id="hierarchicalGrid" rowEditable="true" primaryKey="ID">
+    <IgrColumn field="field">
+    </IgrColumn>
+    <IgrActionStrip name="actionStrip">
+        <IgrGridPinningActions></IgrGridPinningActions>
+        <IgrGridEditingActions></IgrGridEditingActions>
+    </IgrActionStrip>
+</IgrHierarchicalGrid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: React -->
 
 > [!Note]
 > When `ActionStripComponent` is a child component of the `{ComponentName}`, hovering a row will automatically show the UI.
 
 ## Custom Implementation
 
-These components expose templates giving flexibility for customization. For instance, if we would like to use the `ActionStripComponent` for a Gmail scenario with row actions such as **delete**, **edit** and etc. You can simply create button component with icon, add click event to it and insert it into the `ActionStripComponent`.
+These components expose templates giving flexibility for customization. For instance, if we would like to use the `ActionStrip` for a Gmail scenario with row actions such as **delete**, **edit** and etc. You can simply create button component with icon, add click event to it and insert it into the `ActionStrip`.
 
-<!-- Angular -->
+
 ```html
 <{ComponentSelector}>
     <igx-action-strip #actionstrip>
@@ -97,19 +191,19 @@ These components expose templates giving flexibility for customization. For inst
     </igx-action-strip>
 </{ComponentSelector}>
 ```
-<!-- end: Angular -->
 
+<!-- ComponentStart: Grid, TreeGrid -->
 ```razor
 <div class="grid__wrapper">
     <{ComponentSelector} Data=northwindEmployees>
         <IgbActionStrip @ref=actionstrip>
             <IgbGridPinningActions></IgbGridPinningActions>
-            <IgbButton Title="Edit" @onclick="StartEdit(actionstrip.Context)">
+            <IgbButton Title="Edit" @onclick="() => StartEdit(actionstrip.Context)">
                 <IgbIcon>edit</IgbIcon>
             </IgbButton>
             @if (!IsDeleted(actionstrip.Context))
             {
-                <IgbButton Title="Delete" @onclick='Delete(actionstrip.Context)'>
+                <IgbButton Title="Delete" @onclick="() => Delete(actionstrip.Context)">
                     <IgbIcon>delete</IgbIcon>
                 </IgbButton>
             }
@@ -117,8 +211,31 @@ These components expose templates giving flexibility for customization. For inst
     </{ComponentSelector}>
 </div>
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```razor
+<div class="grid__wrapper">
+    <IgbHierarchicalGrid Data=northwindEmployees>
+        <IgbActionStrip @ref=actionstrip>
+            <IgbGridPinningActions></IgbGridPinningActions>
+            <IgbButton Title="Edit" @onclick="() => StartEdit(actionstrip.Context)">
+                <IgbIcon>edit</IgbIcon>
+            </IgbButton>
+            @if (!IsDeleted(actionstrip.Context))
+            {
+                <IgbButton Title="Delete" @onclick="() => Delete(actionstrip.Context)">
+                    <IgbIcon>delete</IgbIcon>
+                </IgbButton>
+            }
+        </IgbActionStrip>
+    </IgbHierarchicalGrid>
+</div>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- WebComponents -->
+<!-- ComponentStart: Grid, TreeGrid -->
 ```html
 <{ComponentSelector}>
     <igc-action-strip #actionstrip>
@@ -127,10 +244,45 @@ These components expose templates giving flexibility for customization. For inst
     </igc-action-strip>
 </{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```html
+<igc-hierarchical-grid>
+    <igc-action-strip #actionstrip>
+        <igc-grid-pinning-actions></igc-grid-pinning-actions>
+        <igc-grid-editing-actions edit-row="true" delete-row="true"></igc-grid-editing-actions>
+    </igc-action-strip>
+</igc-hierarchical-grid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
 <!-- end: WebComponents -->
 
-`sample="/{ComponentSample}/action-strip", height="600", alt="{Platform} {ComponentTitle} Action Strip Example"`
+<!-- React -->
+<!-- ComponentStart: Grid, TreeGrid -->
+```tsx
+<{ComponentSelector}>
+    <IgrActionStrip name="actionStrip">
+        <IgrGridPinningActions></IgrGridPinningActions>
+        <IgrGridEditingActions editRow="true" deleteRow="true"></IgrGridEditingActions>
+    </IgrActionStrip>
+</{ComponentSelector}>
+```
+<!-- ComponentEnd: Grid, TreeGrid -->
 
+<!-- ComponentStart: HierarchicalGrid -->
+```tsx
+<IgrHierarchicalGrid>
+    <IgrActionStrip name="actionStrip">
+        <IgrGridPinningActions></IgrGridPinningActions>
+        <IgrGridEditingActions editRow="true" deleteRow="true"></IgrGridEditingActions>
+    </IgrActionStrip>
+</IgrHierarchicalGrid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: React -->
+
+`sample="/{ComponentSample}/action-strip", height="600", alt="{Platform} {ComponentTitle} Action Strip Example"`
 
 
 <!-- Angular -->
@@ -142,9 +294,11 @@ These components expose templates giving flexibility for customization. For inst
 
 ## API References
 
+<!-- Angular -->
+
 For more detailed information regarding the Action Strip API, refer to the following links:
 
-* `ActionStripComponent`
+* `ActionStrip`
 
 Additional components and/or directives that can be used within the Action Strip:
 
@@ -153,8 +307,8 @@ Additional components and/or directives that can be used within the Action Strip
 
 <!-- end: Angular -->
 
-* `GridPinningActionsComponent`
-* `GridEditingActionsComponent`
+* `GridPinningActions`
+* `GridEditingActions`
 
 Our community is active and always welcoming to new ideas.
 

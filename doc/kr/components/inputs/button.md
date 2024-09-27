@@ -43,7 +43,7 @@ With `prefix` and `suffix` slots we can add different content before and after t
 The button component will change its internal structure from a [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) to an [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) type element when the `href` attribute is set. In that case the button can be thought of as a regular link. Setting the `href` attribute will allow you to also set the `rel`, `target` and `download` attributes.
 In the case when the button component uses an actual `button` element internally, we can specify its `Type` by setting the property to any of the following values:
 
-- `submit` - when we want to submit the form data
+- `Submit` - when we want to submit the form data
 - `reset` - when we want to reset form data to its initial values
 - `button` - when we want to add button with a custom functionality anywhere on a webpage
 

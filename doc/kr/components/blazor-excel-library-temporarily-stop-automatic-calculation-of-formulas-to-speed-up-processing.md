@@ -85,16 +85,16 @@ Call the SuspendCalculations () and ResumeCalculations () methods of the Workboo
 
 ```razor
 @using Infragistics.Documents.Excel
-...
+@* ... *@
 var workbook = Workbook.Load ( ... );
 
-// Calling SuspendCalculations () will stop the automatic calculation of formulas.
-workbook. SuspendCalculations ();
+// Calling SuspendCalculations function will stop the automatic calculation of formulas.
+workbook.SuspendCalculations();
 
-// ... Here is where you read, write, etc. the cells contained in this Workbook...
-// Call ResumeCalculations ()to resume the automatic formula calculation.
+// Here is where you read, write, etc. the cells contained in this Workbook
+// Call ResumeCalculations function to resume the automatic formula calculation.
 
-workbook. ResumeCalculations ();
+workbook.ResumeCalculations();
 ```
 
 However, there are two basic cases when this method of temporarily stopping the automatic calculation of formulas cannot be applied to improve the processing speed.

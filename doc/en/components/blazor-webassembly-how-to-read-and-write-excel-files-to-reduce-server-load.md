@@ -75,11 +75,10 @@ Next, the JavaScript files provided by the NuGet "IgniteUI.Blazor.Documents.Exce
 In the wwwroot/index.html file (the fallback page in the Blazor WebAssembly project) we add a `<script>` tag as follows:
 
 ```razor
-....
-<script src = "_content/IgniteUI.Blazor/app.bundle.js"></script>
+<script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
 <!-👇 Add this line->
-<script src = "_content/IgniteUI.Blazor.Documents.Excel/excel.js"></script>
-<script src = "_framework/blazor.webassembly.js"></script> </body></ html>
+<script src="_content/IgniteUI.Blazor.Documents.Excel/excel.js"></script>
+<script src="_framework/blazor.webassembly.js"></script> </body></ html>
 ```
 
 ### Workbook.inprocessruntime - Setting Static Property
@@ -90,13 +89,13 @@ This can be done by using the following code:
 
 ```razor
 @inject IJSRuntime JSRuntime
-...
+@* ... *@
 @code {
     // ...
     // ⚠️ Note-To use the Excel library on Blazor WebAssembly,
     // you need to initialize the Workbook.InProcessRuntime static property.
-    if (Workbook.InProcessRuntime == null )
-    Workbook.InProcessRuntime = this .JSRuntime as IJSInProcessRuntime;
+    if (Workbook.InProcessRuntime == null)
+        Workbook.InProcessRuntime = this .JSRuntime as IJSInProcessRuntime;
     // ...
 ```
 
@@ -109,7 +108,7 @@ Note that the download triggering process on Blazor applications used an MIT-lic
 ```razor
 @inject HttpClient HttpClient
 @inject IJSRuntime JSRuntime
-...
+@* ... *@
 @code
 {
     // ...
@@ -134,14 +133,14 @@ Note that the download triggering process on Blazor applications used an MIT-lic
         var row = 2;
         foreach (var item in this._EarthquakeCountParDays)
         {
-            sheet.GetCell ($"A{row}").Value = item.Date;
-            sheet.GetCell ($"B{row}").Value = item.Count;
+            sheet.GetCell($"A{row}").Value = item.Date;
+            sheet.GetCell($"B{row}").Value = item.Count;
             row++;
         }
 
         // Export the completed Workbook object to a .xlsx file format and have it downloaded by your browser.
         await using var memStream = new MemoryStream();
-        workBook.Save (memStream);
+        workBook.Save(memStream);
         await this.JSRuntime.InvokeDownloadAsync("Book.xlsx", "application / octet-stream" ,memStream.ToArray());
     }
     // ...
@@ -189,14 +188,14 @@ First, in the Blazor WebAssembly project file (.csproj), arrange the <BlazorWe
 
 ```razor
 <!- Blazor WebAssembly project file (.csproj) ->
-<Project Sdk = "Microsoft.NET.Sdk.BlazorWebAssembly" >
-  <!-...->
-  <!-Specify the file name of the assembly file (.dll) that you want to lazy load in the BlazorWebAssemblyLazyLoad element. ->
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly" >
+
+  <!- Specify the file name of the assembly file (.dll) that you want to lazy load in the BlazorWebAssemblyLazyLoad element. ->
   <ItemGroup>
-    <BlazorWebAssemblyLazyLoad Include = "IgniteUI.Blazor.Documents.Core.dll" />
-    <BlazorWebAssemblyLazyLoad Include = "IgniteUI.Blazor.Documents.Excel.dll" />
+    <BlazorWebAssemblyLazyLoad Include="IgniteUI.Blazor.Documents.Core.dll" />
+    <BlazorWebAssemblyLazyLoad Include="IgniteUI.Blazor.Documents.Excel.dll" />
   </ItemGroup>
-  <!-...->
+
 </ Project>
 ```
 
@@ -209,8 +208,8 @@ In this sample application, the assembly file of the Infragistics Blazor Excel l
 
 ```razor
 @using Microsoft.AspNetCore.Components.WebAssembly.Services
-...
 @inject LazyAssemblyLoader AssemblyLoader
+@* ... *@
 @code {
     // ...
     // <summary>
@@ -239,7 +238,7 @@ However, when clicking the download button, we get a "System.IO.FileNotFoundExce
 This exception occurs when a method that references a type that exists in the assembly being lazy-loaded is attempting to resolve a type in the scope of the same method that is doing the lazy-loading, but the assembly has not yet been loaded. To work around this issue, the processing that references a type which exists in the assembly being lazy-loaded (such as the Workbook class in this sample application) should be cut out into a separate, independent method and then called (see below). See below:
 
 ```razor
-...
+@* ... *@
 @code {
     // ...
     // <summary>

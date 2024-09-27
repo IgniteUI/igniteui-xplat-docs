@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} Column Selection - Infragistics
+title: {Platform} {ComponentTitle} Column Selection - {ProductName}
 _description: Learn how to configure column selection with {ProductName} {ComponentTitle}. This makes grid interactions much easier and faster than ever.
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, column selection
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Column Selection Overview
 
-In the `{ComponentName}`, Column Selection feature provides an easy way to select an entire column with a single click. It emphasizes the importance of a particular column by focusing the header cell(s) and everything below. The feature comes with a rich API that allows for manipulation of the selection state, data extraction from the selected fractions and data analysis operations and visualizations.
+The {Platform} {ComponentTitle} Column Selection feature in {ProductName} offers a simplified and Excel-like way to select and highlight an entire column with a single click. It can be enabled through the `columnSelection` input. Thanks to the rich API, the feature allows for easy manipulation of the selection state, data extraction from the selected fractions, data analysis operations, and visualizations.
 
 ## {Platform} {ComponentTitle} Column Selection Example
 
@@ -86,6 +86,47 @@ The **API** provides some additional capabilities when it comes to the **non-vis
 
 More information regarding the API manipulations could be found in the [API References](#api-references) section.
 
+<!-- WebComponents, Blazor, React -->
+
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming-grid.md).
+In case you would like to change some of the colors, you need to set a `class` for the grid first:
+
+```html
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
+```
+
+```razor
+<{ComponentSelector} class="grid"></{ComponentSelector}>
+```
+
+Then set the related CSS properties to this class:
+
+
+```css
+.grid {
+    --ig-grid-row-selected-background: #0062A3;
+    --ig-grid-row-selected-text-color: #ecaa53;
+    --ig-grid-row-selected-hover-background: #0062A3;
+    --ig-grid-header-selected-text-color: #ecaa53;
+    --ig-grid-header-selected-background: #0062A3;
+    --ig-grid-row-selected-hover-text-color: #ecaa53;
+    --ig-grid-row-selected-hover-background: #0062A3;
+}
+```
+
+### Demo
+
+`sample="/{ComponentSample}/column-selection-styles", height="570", alt="{Platform} {ComponentTitle} column selection styles"`
+
+
+<!-- end: WebComponents, Blazor, React -->
+
 <!-- Angular -->
 
 ## Styling
@@ -99,12 +140,10 @@ Before diving into the styling options, the core module and all component mixins
 // @import '~igniteui-angular/lib/core/styles/themes/index';
 ```
 
-```razor
-TO DO
-```
-
 > [!Note]
->Please note that [row selection](row-selection.md) and [column selection](column-selection.md) can't be manipulated   independently. They depend on the same `variables`.
+<!-- ComponentStart:  Grid -->
+>Please note that [row selection](row-selection.md) and [column selection](column-selection.md) can't be manipulated independently. They depend on the same `variables`.
+<!-- ComponentEnd:  Grid -->
 
 With that being said, let's move on and change the **selection** and **hover** styles. <br/>
 
@@ -124,10 +163,6 @@ $custom-grid-theme: grid-theme(
 );
 ```
 
-```razor
-TO DO
-```
-
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
@@ -140,10 +175,6 @@ $custom-grid-theme: grid-theme(
     $header-selected-text-color: #ECAA53,
     $header-selected-background: #011627
 );
-```
-
-```razor
-TO DO
 ```
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
@@ -163,10 +194,6 @@ The last step is to include the custom `{ComponentSelector}` theme.
 @include css-vars($custom-grid-theme)
 ```
 
-```razor
-TO DO
-```
-
 ### Overriding the Base Theme
 In order to style components for Internet Explorer 11, we have to use a different approach, since it doesn't support CSS variables.
 
@@ -179,10 +206,6 @@ In order to style components for Internet Explorer 11, we have to use a differen
         @include grid($custom-column-selection-theme);
     }
 }
-```
-
-```razor
-TO DO
 ```
 
 ### Demo
@@ -226,7 +249,7 @@ The column selection UI has a few more APIs to explore, which are listed below.
 
 ## Additional Resources
 
-
+<!-- ComponentStart:  Grid -->
 * [Selection](selection.md)
 * [Cell Selection](cell-selection.md)
 * [Paging](paging.md)
@@ -237,6 +260,7 @@ The column selection UI has a few more APIs to explore, which are listed below.
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Virtualization and Performance](virtualization.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

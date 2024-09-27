@@ -22,6 +22,7 @@ _language: ja
 
 `itemTemplate` はカスタム テンプレートであり、定義されている場合は、オプションのリスト内の項目を描画するときに使用する必要があります。
 
+<!-- WebComponents -->
 ```ts
 import { ComboItemTemplate } from 'igniteui-webcomponents';
 
@@ -33,11 +34,63 @@ const itemTemplate: ComboItemTemplate<City> = ({ item }) => {
 
 combo.itemTempate = itemTemplate;
 ```
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+Blazor アプリで項目をテンプレート化するには、別の JavaScript ファイルでテンプレートを定義する必要があります。`wwwroot` ディレクトリの下に `templates.js` という名前の新しいファイルを作成します。
+
+このファイルでは、次のように新しい項目テンプレートを宣言できます。
+
+```js
+const html = window.igTemplating.html;
+
+const itemTemplate = ({ item }) => {
+    return html`<span><b>${item.Name}</b> [${item.Id}]</span>`;
+}
+
+igRegisterScript("ComboItemTemplate", itemTemplate, false);
+```
+
+`wwwroot` の下の `index.html` に `templates.js` ファイルを必ず含めてください。
+
+```html
+<body>
+    <!-- importing JS used in the razor pages -->
+    <script src="templates.js"></script>
+</body>
+```
+
+次に、アプリケーションで `ItemTemplateScript` プロパティを介して宣言したテンプレートを参照できます。
+
+```razor
+<IgbCombo ItemTemplateScript="ComboItemTemplate"></IgbCombo>
+```
+
+<!-- end: Blazor -->
+
+<!-- React -->
+```tsx
+<IgrCombo
+    valueKey="id"
+    displayKey="name"
+    groupKey="country"
+    data={cities}
+    itemTemplate={renderItemTemplate}
+></IgrCombo>
+
+function renderItemTemplate(props: { dataContext: any}): any {
+    return (
+      <span><b>{props.dataContext.name}</b> [{props.dataContext.id}]</span>
+    );
+}
+```
+<!-- end: React -->
 
 ### Group Header Template (グループ ヘッダー テンプレート)
 
 `groupHeaderTemplate` はカスタム テンプレートであり、定義されている場合は、オプションのリストでグループ ヘッダーを描画するときに使用する必要があります。
 
+<!-- WebComponents -->
 ```ts
 import { ComboItemTemplate } from 'igniteui-webcomponents';
 
@@ -47,6 +100,46 @@ const groupHeaderTemplate: ComboItemTemplate<City> = ({ item }) => {
 
 combo.groupHeaderTemplate = groupHeaderTemplate;
 ```
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+まず、グループ ヘッダー テンプレートを定義します。
+
+```js
+const html = window.igTemplating.html;
+
+const groupHeaderTemplate = ({ item }) => {
+    return html`<span>Country of ${item.Country}</span>`;
+}
+
+igRegisterScript('ComboGroupHeaderTemplate', groupHeaderTemplate, false)
+```
+
+次に、アプリケーションで `GroupHeaderTemplateScript` プロパティを介して宣言したテンプレートを参照できます。
+
+```razor
+<IgbCombo GroupHeaderTemplateScript="ComboGroupHeaderTemplate"></IgbCombo>
+```
+
+<!-- end: Blazor -->
+
+<!-- React -->
+```tsx
+<IgrCombo
+    valueKey="id"
+    displayKey="name"
+    groupKey="country"
+    data={cities}
+    groupHeaderTemplate={renderGroupHeaderTemplate}
+></IgrCombo>
+
+function renderGroupHeaderTemplate(props: { dataContext: any}): any {
+    return (
+    <span>Country of {props.dataContext.country}</span>
+    );
+}
+```
+<!-- end: React -->
 
 ## スロット
 カスタム テンプレート以外に、{ProductName} コンボボックス コンポーネントは、ユーザーがカスタム コンテンツをさまざまなコンボ パーツに渡すことを可能にするいくつかのスロットを公開します。
@@ -60,6 +153,22 @@ combo.groupHeaderTemplate = groupHeaderTemplate;
 </igc-combo>
 ```
 
+```razor
+<IgbCombo> 
+    <header slot="header">
+        Header content goes here
+    </header>
+</IgbCombo>
+```
+
+```tsx
+<IgrCombo>
+  <header slot="header">
+        Header content goes here
+  </header>
+</IgrCombo>
+```
+
 ### フッター スロット
 オプションのリストの下にカスタム フッターをレンダリングするには、コンテンツを `footer` スロットに渡します。
 
@@ -67,6 +176,22 @@ combo.groupHeaderTemplate = groupHeaderTemplate;
 <igc-combo>
   <div slot="footer">Custom footer content</div>
 </igc-combo>
+```
+
+```razor
+<IgbCombo> 
+    <footer slot="footer">
+        Footer content goes here
+    </footer>
+</IgbCombo>
+```
+
+```tsx
+<IgrCombo>
+  <footer slot="footer">
+        Footer content goes here
+  </footer>
+</IgrCombo>
 ```
 
 ### 空のリスト スロット
@@ -78,6 +203,18 @@ combo.groupHeaderTemplate = groupHeaderTemplate;
 </igc-combo>
 ```
 
+```razor
+<IgbCombo> 
+    <div slot="empty">¯\_(ツ)_/¯</div>
+</IgbCombo>
+```
+
+```tsx
+<IgrCombo>
+  <div slot="empty">¯\_(ツ)_/¯</div>
+</IgrCombo>
+```
+
 ### トグル アイコン スロット
 コンボ入力のトグル アイコンは、`toggle-icon` スロットを介して変更することもできます。
 
@@ -85,6 +222,20 @@ combo.groupHeaderTemplate = groupHeaderTemplate;
 <igc-combo>
   <igc-icon name="down" slot="toggle-icon"></igc-icon>
 </igc-combo>
+```
+
+```razor
+<IgbCombo> 
+    <IgbIcon name="down" slot="toggle-icon"></IgbIcon>
+</IgbCombo>
+```
+
+```tsx
+<IgrCombo>
+  <span slot="toggle-icon">
+    <IgbIcon name="down"></IgbIcon>
+  </span>
+</IgrCombo>
 ```
 
 ### クリア アイコン スロット
@@ -96,13 +247,24 @@ combo.groupHeaderTemplate = groupHeaderTemplate;
 </igc-combo>
 ```
 
+```razor
+<IgbCombo> 
+    <IgbIcon name="clear" slot="clear-icon"></IgbIcon>
+</IgbCombo>
+```
+
+```tsx
+<IgrCombo>
+  <span slot="clear-icon">
+    <IgbIcon name="clear"></IgbIcon>
+  </span>
+</IgrCombo>
+```
+
 <!-- WebComponents -->
 ## API リファレンス
 
 * `Combo`
-* `ComboItem`
-* `ComboHeader`
-* `ComboList`
 
 <!-- end: WebComponents -->
 

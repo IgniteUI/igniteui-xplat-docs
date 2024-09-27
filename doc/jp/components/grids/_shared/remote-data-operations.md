@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} のリモート データ操作 - インフラジスティックス
+title: {Platform} {ComponentTitle} リモート データ操作 - {ProductName}
 _description: リモート フィルタリング、リモートソート、リモート スクロールなどの Angular リモート データ操作を使用して、{ProductName} のサーバーからデータをロードします。
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Remote Data, Paging, {Platform}, {ComponentKeywords}, {ProductName}, ページング, リモート データ, インフラジスティックス
@@ -8,8 +8,8 @@ _language: ja
 ---
 
 # {Platform} {ComponentTitle} のリモート データ操作
-
-{ProductName} `{ComponentName}` は、リモート仮想化、リモート ソート、リモート フィルタリングなどのリモート データ操作をサポートします。これにより、開発者はこれらのタスクをサーバー上で実行し、生成されたデータを取得して `{ComponentName}` に表示できます。
+<!-- Angular -->
+{Platform} {ComponentTitle} の {ProductName} リモート データ操作機能は、リモート仮想化、リモート ソート、リモート フィルタリングなどのリモート データ操作をサポートします。これにより、開発者はこれらのタスクをサーバー上で実行し、生成されたデータを取得して `{ComponentName}` に表示できます。
 
 ## {Platform} {ComponentTitle} リモート データ操作概要の例
 
@@ -18,10 +18,10 @@ _language: ja
 `sample="/{ComponentSample}/remote-filtering-data", height="550", alt="{Platform} {ComponentTitle} リモート データ操作概要の例"`
 
 
-
+<!-- end: Angular -->
 デフォルトで、`{ComponentName}` は独自のロジックを使用してデータ操作を実行します。
 
-これらのタスクをリモートで実行し、`{ComponentName}`で公開される特定の入力とイベントを使用して `{ComponentName}` に結果のデータを供給できます。
+これらのタスクをリモートで実行し、`{ComponentName}` で公開される特定の入力とイベントを使用して `{ComponentName}` に結果のデータを供給できます。
 
 <!-- Angular -->
 
@@ -88,7 +88,6 @@ BLAZOR CODE SNIPPET HERE
 
 <!-- end: Angular -->
 
-<!-- Angular -->
 
 ## 無限スクロール
 
@@ -96,8 +95,12 @@ BLAZOR CODE SNIPPET HERE
 
 無限スクロールを実装するには、データを分割してフェッチする必要があります。すでにフェッチされたデータはローカルに保存し、チャンクの長さおよび数を決定する必要があります。また、グリッドで最後に表示されるデータ行インデックスを追跡する必要があります。このように、`StartIndex` と `ChunkSize` プロパティを使用して、ユーザーが上にスクロールして既にフェッチしたデータを表示するか、下にスクロールしてエンドポイントからさらにデータをフェッチする必要があるかを決定できます。
 
-最初に、データの最初のチャンクをフェッチするために `ngAfterViewInit` ライフサイクル フックを使用します。`TotalItemCount` プロパティはグリッドがスクロールバーのサイズを正しく設定できるために重要です。
 
+
+
+最初に、データの最初のチャンクをフェッチします。`TotalItemCount` プロパティはグリッドがスクロールバーのサイズを正しく設定できるようにするために重要です。
+
+<!-- Angular -->
 ```typescript
 public ngAfterViewInit() {
     this._remoteService.loadDataForPage(this.page, this.pageSize, (request) => {
@@ -112,11 +115,35 @@ public ngAfterViewInit() {
 }
 ```
 
+<!-- end: Angular -->
+
 ```razor
-BLAZOR CODE SNIPPET HERE
+@code {
+        protected override async Task OnAfterRenderAsync(bool firstRender)
+        {
+            if (firstRender)
+            {
+                var grid = this.grid;
+                grid.IsLoading = true;
+                double dataViewSize = 480.0 / 50.0;
+                this.PageSize = Convert.ToInt32(Math.Floor(dataViewSize * 1.5));
+                var data = await GetDataRemote(1, this.PageSize);
+                this.CachedData = data;
+                this.LocalData = this.CachedData;
+                grid.TotalItemCount = (this.PageSize * this.Page) + 1;
+                double pageCount = Math.Ceiling((double)this.TotalItems / (double)this.PageSize);
+                this.TotalPageCount = (int)pageCount;
+                grid.IsLoading = false;
+                StateHasChanged();
+            }
+
+        }
+}
 ```
 
 さらに、`DataPreLoad` 出力にサブスクライブする必要があります。これにより、グリッドが現在ロードされているものではなく、異なるチャンクを表示しようとするときに必要なデータを提供できます。イベント ハンドラーで、ローカルに既にキャッシュされている新しいデータをフェッチするか、データを返すかを決定する必要があります。
+
+<!-- Angular -->
 
 ```typescript
 public handlePreLoad() {
@@ -142,25 +169,93 @@ public handlePreLoad() {
     }
 }
 ```
-
-```razor
-BLAZOR CODE SNIPPET HERE
-```
-
 <!-- end: Angular -->
 
-<!-- Angular -->
+```razor
+<IgbGrid AutoGenerate="false"
+         Height="480px"
+         Name="grid"
+         Id="grid"
+         Data="LocalData"
+         @ref="grid"
+         DataPreLoad="OnDataPreLoad">
+    <IgbColumn Name="ID"
+               Field="ProductID"
+               Header="ID">
+    </IgbColumn>
+
+    <IgbColumn Name="ProductName"
+               Field="ProductName"
+               Header="Product Name">
+    </IgbColumn>
+
+    <IgbColumn Name="QuantityPerUnit"
+               Field="QuantityPerUnit"
+               Header="Quantity Per Unit">
+    </IgbColumn>
+
+    <IgbColumn Name="UnitPrice"
+               Field="UnitPrice"
+               Header="Unit Price">
+    </IgbColumn>
+
+    <IgbColumn Name="OrderDate"
+               Field="OrderDate"
+               Header="Order Date">
+    </IgbColumn>
+
+    <IgbColumn Name="Discontinued"
+               Field="Discontinued"
+               Header="Discontinued">
+    </IgbColumn>
+
+</IgbGrid>
+@code {
+        private IgbGrid grid;
+        public async void OnDataPreLoad(IgbForOfStateEventArgs e)
+        {
+            int chunkSize = (int)e.Detail.ChunkSize;
+            int startIndex = (int)e.Detail.StartIndex;
+            int totalCount = (int)this.grid.TotalItemCount;
+
+            bool isLastChunk = totalCount == startIndex + chunkSize;
+            // when last chunk reached load another page of data
+            if (isLastChunk)
+            {
+                if (this.TotalPageCount == this.Page)
+                {
+                    this.LocalData = this.CachedData.Skip(startIndex).Take(chunkSize).ToList();
+                    return;
+                }
+
+                // add next page of remote data to cache
+                this.grid.IsLoading = true;
+                this.Page++;
+                var remoteData = await GetDataRemote(this.Page, this.PageSize);
+                this.CachedData.AddRange(remoteData);
+
+                var data = this.CachedData.Skip(startIndex).Take(chunkSize);
+                this.LocalData = data.ToList();
+                this.grid.IsLoading = false;
+                this.grid.TotalItemCount = Math.Min(this.Page * this.PageSize, this.TotalItems);
+            }
+            else
+            {
+                var data = this.CachedData.Skip(startIndex).Take(chunkSize).ToList();
+                this.LocalData = data;
+            }
+        }
+}
+```
 
 ### 無限スクロールのデモ
 
-<!-- NOTE this sample is differed -->
-
-`sample="/{ComponentSample}/data-performance-infinite-scroll", height="550", alt="{Platform} {ComponentTitle} リモート データ操作の無限スクロールの例"`
+`sample="/{ComponentSample}/infinite-scroll", height="550", alt="{Platform} {ComponentTitle} リモート データ操作の無限スクロールの例"`
 
 
 
-<!-- end: Angular -->
 
+<!-- Angular -->
 ## リモート ソート/フィルタリング
 
 リモート ソートおよびフィルタリングは、`DataPreLoad`、`SortingExpressionsChange`、および `FilteringExpressionsTreeChange` 出力にサブスクライブし、パブリック `{ComponentName}` プロパティの `TotalItemCount` をサービスから送信される個々の情報とともに設定し、受け取った引数に基づいて適切な要求を作成します。
@@ -295,7 +390,7 @@ BLAZOR CODE SNIPPET HERE
 
 Excel スタイル フィルタリング ダイアログ内のリスト項目は、それぞれの列の一意の値を表します。`{ComponentName}` は、デフォルトでデータソースに基づいてこれらの値を生成します。リモート フィルタリングの場合、グリッドのデータにはサーバーからのすべてのデータが含まれていません。これらの一意の値を手動で提供し、オンデマンドで読み込むために、`{ComponentName}` の `UniqueColumnValuesStrategy` 入力を利用できます。この入力は、実際には 3 つの引数を提供するメソッドです。
 
-- `Column`  - それぞれの列インスタンス。
+- `Column` - それぞれの列インスタンス。
 - `FilteringExpressionsTree` - フィルタリング式ツリー。各列に基づいて削減されます。
 - `Done` - サーバーから取得されたときに、新しく生成された列値で呼び出されるコールバック。
 
@@ -655,7 +750,6 @@ BLAZOR CODE SNIPPET HERE
     [(page)]="page"
     [(perPage)]="perPage"
     [selectOptions]="selectOptions"
-    [displayDensity]="grid1.displayDensity"
     (pageChange)="paginate($event)"
     (perPageChange)="perPageChange($event)">
     <igx-paginator-content>
@@ -918,6 +1012,7 @@ BLAZOR CODE SNIPPET HERE
 
 
 <!-- ComponentEnd: Grid -->
+<!-- end: Angular -->
 
 ## 既知の問題と制限
 
@@ -934,7 +1029,7 @@ BLAZOR CODE SNIPPET HERE
 * `{ComponentName}`
 
 ## その他のリソース
-
+<!-- ComponentStart:  Grid -->
 * [ページング](paging.md)
 * [仮想化とパフォーマンス](virtualization.md)
 * [フィルタリング](filtering.md)
@@ -944,6 +1039,7 @@ BLAZOR CODE SNIPPET HERE
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

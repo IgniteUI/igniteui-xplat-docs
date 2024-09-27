@@ -5,7 +5,7 @@ _keywords: {Platform} input, {ProductName}, Infragistics, {Platform} 入力, イ
 mentionedTypes: ['Input', 'Icon', 'Radio']
 _language: ja
 ---
-# {Platform} Input の概要
+# {Platform} Input (入力) の概要
 
 {ProductName} Input は、ユーザーがデータを入力できるコンポーネントです。
 
@@ -50,7 +50,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbInputModule));
 
 <!-- WebComponents -->
 
-開始するには、typescript ファイルに `Input` をインポートし、次のように [defineComponents()](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
+開始するには、typescript ファイルに `Input` をインポートし、次のように [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
 
 ```ts
 import { defineComponents, IgcInputComponent } from 'igniteui-webcomponents';
@@ -58,6 +58,8 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcInputComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 <!-- end: WebComponents -->
 
@@ -79,12 +81,12 @@ IgrInputModule.register();
 
 `Input` コンポーネントをインポートしたら、使用を開始する準備ができているので、最初の Input を追加しましょう。
 
-```tsx
-<IgrInput type="email" label="Subscribe"></IgrInput>
-```
-
 ```html
 <igc-input type="email" label="Subscribe" placeholder="john.doe@mail.com"></igc-input>
+```
+
+```tsx
+<IgrInput type="email" label="Subscribe"></IgrInput>
 ```
 
 ```razor
@@ -109,10 +111,9 @@ IgrInputModule.register();
 
 ## Input のサイズ設定
 
-`Size` プロパティを使用して、ユーザーが `Input` のサイズを選択できるようにすることができます。これを行うには、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびに、Input のサイズを変更します。
+ユーザーが `--ig-size` CSS 変数を使用して `Input` のサイズを変更できるようにすることができます。これを行うには、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびに、Input のサイズを変更します。
 
 `sample="/inputs/input/size", height="320", alt="{Platform} Input サイズ設定の例"`
-
 
 
 上記のサンプルでは、次の属性の使用法を示しています:
@@ -140,17 +141,17 @@ Input コンポーネントは、その内部要素のほとんどすべての C
 | helper-text | ヘルパー テキスト ラッパー。 |
 
 ```scss
-igc-input::part(input){
+igc-input::part(input) {
     background-color: rgb(169, 214, 229);
     border-color: rgb(42, 111, 151);
 }
 
-igc-input::part(label){
+igc-input::part(label) {
     color: rgb(1, 42, 74);
 }
 
 igc-input::part(prefix),
-igc-input::part(suffix){
+igc-input::part(suffix) {
     color: white;
     border-color: rgb(42, 111, 151);
     background-color: rgb(70, 143, 175);

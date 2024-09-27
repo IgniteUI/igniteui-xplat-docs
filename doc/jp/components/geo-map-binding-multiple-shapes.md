@@ -2,7 +2,7 @@
 title: {Platform} マップ | データ可視化ツール | 複数のデータ図形のバインディング | インフラジスティックス
 _description: インフラジスティックスの {Platform} を使用して、複数の地理的シリーズオブジェクトを追加し、いくつかのシェープファイルを地理空間データとオーバーレイすることができます。{ProductName} マップ チュートリアルを是非お試しください!
 _keywords: {Platform} map, shape files, {ProductName}, Infragistics, data binding, {Platform} マップ, シェープ ファイル, データ バインディング, インフラジスティックス
-mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series', 'GeographicShapeSeriesBase']
 namespace: Infragistics.Controls.Maps
 _language: ja
 ---

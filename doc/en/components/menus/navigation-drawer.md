@@ -16,8 +16,6 @@ This sample demonstrates how to create `NavDrawer` component.
 
 `sample="/menus/nav-drawer/add-drawer-items", height="300", alt="{Platform} Navigation Drawer Items Example"`
 
-
-
 ## Usage
 
 <!-- WebComponents -->
@@ -77,6 +75,8 @@ import { defineComponents, IgcNavDrawerComponent } from 'igniteui-webcomponents'
 defineComponents(IgcNavDrawerComponent);
 ```
 
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 ## Adding Navigation Drawer Items
 
 The simplest way to start using the `NavDrawer` is as follows:
@@ -120,13 +120,13 @@ The simplest way to start using the `NavDrawer` is as follows:
     </IgrNavDrawerHeaderItem>
     <IgrNavDrawerItem>
         <div slot="icon">
-            <IgrIcon iconName="home" collection="material" />
+            <IgrIcon name="home" collection="material" />
         </div>
         <span slot="content">Home</span>
     </IgrNavDrawerItem>
     <IgrNavDrawerItem>
         <div slot="icon">
-            <IgrIcon iconName="search" collection="material" />
+            <IgrIcon name="search" collection="material" />
         </div>
         <span slot="content">Search</span>
     </IgrNavDrawerItem>
@@ -190,7 +190,7 @@ To enhance our component a bit, we can use it in conjunction with the `Navbar`. 
 ```tsx
 <IgrNavbar>
     <div slot="start">
-        <IgrIcon iconName="menu" collection="material"/>
+        <IgrIcon name="menu" collection="material"/>
     </div>
     <h2>Home</h2>
 </IgrNavbar>
@@ -201,13 +201,13 @@ To enhance our component a bit, we can use it in conjunction with the `Navbar`. 
     </IgrNavDrawerHeaderItem>
     <IgrNavDrawerItem>
         <div slot="icon">
-            <IgrIcon iconName="home" collection="material" />
+            <IgrIcon name="home" collection="material" />
         </div>
         <span slot="content">Home</span>
     </IgrNavDrawerItem>
     <IgrNavDrawerItem>
         <div slot="icon">
-            <IgrIcon iconName="search" collection="material" />
+            <IgrIcon name="search" collection="material" />
         </div>
         <span slot="content">Search</span>
     </IgrNavDrawerItem>
@@ -320,7 +320,7 @@ menu!.addEventListener('click', () => {
 })
 
 document.getElementById('root')!.onclick = (e) => {
-    if(e.target != document.getElementById('navDrawer')) {
+    if (e.target != document.getElementById('navDrawer')) {
         navDrawer.hide();
     }
 }
@@ -329,7 +329,7 @@ document.getElementById('root')!.onclick = (e) => {
 ```razor
 public void OnMenuIconClick()
 {
-    if(this.NavDrawerRef != null)
+    if (this.NavDrawerRef != null)
     {
         this.NavDrawerRef.Show();
     }
@@ -404,29 +404,33 @@ With the mini variant, the Navigation Drawer changes its width instead of closin
 <IgrNavDrawer>
     <IgrNavDrawerItem>
         <div slot="icon">
-            <IgrIcon iconName="home" collection="material" />
+            <IgrIcon name="home" collection="material" />
         </div>
         <span slot="content">Home</span>
     </IgrNavDrawerItem>
     <IgrNavDrawerItem>
         <div slot="icon">
-            <IgrIcon iconName="search" collection="material"/>
+            <IgrIcon name="search" collection="material"/>
         </div>
         <span slot="content">Search</span>
     </IgrNavDrawerItem>
     <div slot="mini">
         <IgrNavDrawerItem>
             <div slot="icon">
-                <IgrIcon iconName="home" collection="material"/>
+                <IgrIcon name="home" collection="material"/>
             </div>
         </IgrNavDrawerItem>
         <IgrNavDrawerItem>
             <div slot="icon">
-                <IgrIcon iconName="search" collection="material" />
+                <IgrIcon name="search" collection="material" />
             </div>
         </IgrNavDrawerItem>
     </div>
 </IgrNavDrawer>
+
+<IgrButton clicked={this.onButtonClick}>
+    <span>Toggle</span>
+</IgrButton>
 ```
 
 And here's the result:

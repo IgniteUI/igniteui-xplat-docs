@@ -1,5 +1,5 @@
 ---
-title: Collapsible Column Groups in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} Collapsible Column Groups - {ProductName}
 _description: Take advantage of the capability to show\hide smaller and concise set of data with the use of collapsible column groups in our {Platform} {ComponentTitle}. Try it now!
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -8,7 +8,7 @@ namespace: Infragistics.Controls
 ---
 # {Platform} {ComponentTitle} Collapsible Column Groups Overview
 
-Multi-column headers allow you to have multiple levels of nested columns and column groups. They also provide the ability to mark each column group as **collapsible**. **Collapsible multi-column headers** make it possible to collapse/expand, i.e. to show and hide the nested headers under the current one, which will give you a shortened/summarized information for example.
+The {ProductName} Collapsible Column Groups feature in {Platform} {ComponentTitle} allows you to organize and manage multiple levels of nested columns and column groups in the `{ComponentName}` by grouping them together and providing the option to collapse or expand these groups for improved data visualization and navigation.
 
 ## {Platform} {ComponentTitle} Collapsible Column Groups Example
 
@@ -34,11 +34,18 @@ ng add igniteui-angular
 
 <!-- WebComponents -->
 ```cmd
-npm install @webcomponents/custom-elements
+npm install --save igniteui-webcomponents-core
+npm install --save igniteui-webcomponents-grids
 ```
 <!-- end: WebComponents -->
 
-For a complete introduction to the {ProductName}, read the [getting started](../..\general-getting-started.md) topic.
+<!-- React -->
+```cmd
+npm install igniteui-react-grids
+```
+<!-- end: React -->
+
+For a complete introduction to the {ProductName}, read the [getting started](../../general-getting-started.md) topic.
 
 Also, we strongly suggest that you take a brief look at [multi-column headers](multi-column-headers.md) topic, to see more detailed information on how to setup the column groups in your grid.
 
@@ -105,6 +112,31 @@ Let's see the markup below:
 </igc-column-group>
 ```
 
+```tsx
+<IgrColumnGroup collapsible="true" header="Customer Information">
+    <IgrColumn field="CustomerName" header="Customer Name" visibleWhenCollapsed="true">
+    </IgrColumn>
+    <IgrColumn field="CustomerID" header="Customer ID" visibleWhenCollapsed="false">
+    </IgrColumn>
+    <IgrColumn field="CustomerFirstName" header="First Name" visibleWhenCollapsed="false">
+    </IgrColumn>
+    <IgrColumn field="CustomerLastName" header="Last Name" visibleWhenCollapsed="false">
+    </IgrColumn>
+    <IgrColumnGroup header="Customer Address">
+        <IgrColumn field="CustomerAddress"  header="Full Address" width="250px" visibleWhenCollapsed="true">
+        </IgrColumn>
+        <IgrColumn field="Address" visibleWhenCollapsed="false">
+        </IgrColumn>
+        <IgrColumn  field="City" visibleWhenCollapsed="false">
+        </IgrColumn>
+        <IgrColumn field="Country" visibleWhenCollapsed="false">
+        </IgrColumn>
+        <IgrColumn field="PostalCode" header="Postal Code" visibleWhenCollapsed="false">
+        </IgrColumn>
+    </IgrColumnGroup>
+</IgrColumnGroup>
+```
+
 To summarize, every child column has three states:
 -	Can be always visible, no matter the expanded state of its parent.
 -	Can be visible, when its parent is collapsed.
@@ -112,8 +144,7 @@ To summarize, every child column has three states:
 
 The initial state of the column group which is specified as collapsible is `Expanded` set to **true**, but you can easily change this behavior by setting it to **false**.
 
-<!-- Angular -->
-
+<!-- Angular, WebComponents, React -->
 ## Expand/Collapse Indicator Template
 
 Default expand indicator for the `{ComponentName}` is the following:
@@ -125,6 +156,83 @@ Default collapse indicator for the `{ComponentName}` is the following:
 <img class="responsive-img" src="../../../images/general/collapsed_indicator.png" style="width: 400px; height: 130px"/>
 
 Also, if you need to change the default expand/collapse indicator, we provide templating options in order to achieve this.
+
+<!-- CollapsibleIndicatorTemplate not being reevaluated: Work Item #23864  -->
+```razor
+ <IgbColumnGroup @ref="infoColumn" Header="Customer Information" Collapsible="true">
+    <IgbColumn Field="CustomerName" Header="Full name" VisibleWhenCollapsed="true"></IgbColumn>
+    <IgbColumn Field="CustomerID" Header="Customer ID" VisibleWhenCollapsed="false"></IgbColumn>
+    <IgbColumn Field="FirstName" Header="First Name" VisibleWhenCollapsed="false"></IgbColumn>
+    <IgbColumn Field="LastName" Header="Last Name" VisibleWhenCollapsed="false"></IgbColumn>
+    <IgbColumnGroup @ref="addressColumn" Header="Customer Address">
+        <IgbColumn Field="Country" Header="Country" Sortable="true"></IgbColumn>
+        <IgbColumn Field="City" Header="City" Sortable="true"></IgbColumn>
+    </IgbColumnGroup>
+ </IgbColumnGroup>
+
+@code {
+    private IgbColumnGroup infoColumn;
+    private IgbColumnGroup addressColumn;
+
+    public RenderFragment<IgbColumnTemplateContext> ColumnIndicatorTemplate = (context) =>
+    {
+        string icon = context.Column.Expanded ? "remove" : "add";
+        return @<IgbIcon IconName="@icon" Collection="material"></IgbIcon>;
+    };
+    
+    protected override void OnAfterRender(bool firstRender)
+    {
+        this.infoColumn.CollapsibleIndicatorTemplate = this.ColumnIndicatorTemplate;
+        this.addressColumn.CollapsibleIndicatorTemplate = this.ColumnIndicatorTemplate;
+    }
+}
+```
+
+```html
+<igc-column-group id="info" header="Customer Information" collapsible="true">
+    <igc-column field="CustomerName" header="Fullname" data-type="String" visible-when-collapsed="true"></igc-column>
+    <igc-column field="CustomerID" header="Customer ID" data-type="String" visible-when-collapsed="false"></igc-column>
+    <igc-column-group id="address" header="Customer Address" collapsible="true">
+        <igc-column field="Country" header="Country" data-type="String" sortable="true" visible-when-collapsed="true"></igc-column>
+        <igc-column field="City" header="City" data-type="String" sortable="true" visible-when-collapsed="false"></igc-column>
+    </igc-column-group>
+</igc-column-group>
+```
+```ts
+constructor() {
+    var info = document.getElementById('info') as IgcColumnGroupComponent;
+    var address = document.getElementById('address') as IgcColumnGroupComponent;
+    info.collapsibleIndicatorTemplate = this.indTemplate;
+    address.collapsibleIndicatorTemplate = this.indTemplate;
+}
+
+public indTemplate = (ctx: IgcColumnTemplateContext) => {
+    return html`
+        <igc-icon name="${ctx.column.expanded ? 'remove' : 'add'}" draggable="false"></igc-icon>
+    `;
+}
+```
+
+```tsx
+<IgrColumnGroup id="info" header="Customer Information" collapsible="true" collapsibleIndicatorTemplate={this.collapsibleIndicatorTemplate}>
+    <IgrColumn field="CustomerName" header="Fullname" dataType="String" visibleWhenCollapsed="true"></IgrColumn>
+    <IgrColumn field="CustomerID" header="Customer ID" dataType="String" visibleWhenCollapsed="false"></IgrColumn>
+    <IgrColumnGroup id="address" header="Customer Address" collapsible="true">
+        <IgrColumn field="Country" header="Country" dataType="String" sortable="true" visibleWhenCollapsed="true"></IgrColumn>
+        <IgrColumn field="City" header="City" dataType="String" sortable="true" visibleWhenCollapsed="false"></IgrColumn>
+    </IgrColumnGroup>
+</IgrColumnGroup>
+
+function collapsibleIndicatorTemplate(e: { dataContext: IgrColumnTemplateContext }) {
+    return (
+    <div>
+        <IgrIcon iconName={e.dataContext.column.expanded ? 'remove' : 'add'}></IgrIcon>
+    </div>)
+}
+```
+
+<!-- end: Angular, WebComponents, React -->
+<!-- Angular -->
 
 ### Using Property
 
@@ -142,43 +250,6 @@ You can define custom expand/collapse template and provide it to each of the col
         <igx-column field="City" header="City" [dataType]="'string'" [sortable]="true" [visibleWhenCollapsed]="false"></igx-column>
     </igx-column-group>
 </igx-column-group>
-```
-
-```razor
-    public RenderFragment<IgbColumnTemplateContext> Template = (context) =>
-    {
-        string icon = context.Column.Expanded ? "remove" : "add";
-        return @<IgbIcon IconName="@icon" Collection="material"></IgbIcon>;
-    };
-```
-
-```html
-<igc-column-group id="info" header="Customer Information" collapsible="true">
-    <igc-column field="CustomerName" header="Fullname" data-type="String" visible-when-collapsed="true"></igx-column>
-    <igc-column field="CustomerID" header="Customer ID" data-type="String" visible-when-collapsed="false"></igx-column>
-    <igc-column-group id="address" header="Customer Address" collapsible="true">
-        <igc-column field="Country" header="Country" data-type="String" sortable="true" visible-when-collapsed="true"></igx-column>
-        <igc-column field="City" header="City" data-type="String" sortable="true" visible-when-collapsed="false"></igx-column>
-    </igc-column-group>
-</igc-column-group>
-```
-```ts
-constructor() {
-    var info = this.info = document.getElementById('info') as IgcColumnGroupComponent;
-    var address = this.address = document.getElementById('address') as IgcColumnGroupComponent;
-
-    this._bind = () => {
-        info.collapsibleIndicatorTemplateRef = this.indTemplate;
-        address.collapsibleIndicatorTemplateRef = this.indTemplate;
-    }
-    this._bind();
-}
-
-public indTemplate = (ctx: IgcCellTemplateContext) => {
-    return html`
-        <igc-icon draggable="false" >${ctx.cell.column.expanded ? 'remove' : 'add'} </igc-icon>
-    `;
-}
 ```
 
 ### Using igxCollapsibleIndicator Directive
@@ -199,37 +270,9 @@ Another way to achieve this behavior is to use the igxCollapsibleIndicator direc
 </igx-column-group>
 ```
 
-```html
-<igc-column-group id="info" header="Customer Information" collapsible="true">
-    <igc-column field="CustomerName" header="Fullname" data-type="string" visible-when-collapsed="true"></igx-column>
-    <igc-column field="CustomerID" header="Customer ID" data-type="string" visible-when-collapsed="false"></igx-column>
-    <igc-column-group id="address" header="Customer Address" collapsible="true">
-        <igc-column field="Country" header="Country" data-type="string" sortable="true" visible-when-collapsed="true"></igx-column>
-        <igc-column field="City" header="City" data-type="string" sortable="true" visible-when-collapsed="false"></igx-column>
-    </igc-column-group>
-</igc-column-group>
-```
-```ts
-constructor() {
-    var info = this.info = document.getElementById('info') as IgcColumnGroupComponent;
-    var address = this.address = document.getElementById('address') as IgcColumnGroupComponent;
-
-    this._bind = () => {
-        info.collapsibleIndicatorTemplateRef = this.indTemplate;
-        address.collapsibleIndicatorTemplateRef = this.indTemplate;
-    }
-    this._bind();
-}
-
-public indTemplate = (ctx: IgcCellTemplateContext) => {
-    return html`
-        <igc-icon draggable="false" >${ctx.cell.column.expanded ? 'remove' : 'add'} </igc-icon>
-    `;
-}
-```
 <!-- end: Angular -->
 
-> [!Note]
+> **Note**
 > Please keep in mind that initially collapse group option takes precedence over column hidden - If you declared your column to be hidden using the property
 > hidden and you have a group defined where the same column should be shown, the column will be shown.
 
@@ -241,7 +284,7 @@ public indTemplate = (ctx: IgcCellTemplateContext) => {
 
 ## Additional Resources
 
-
+<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -250,6 +293,7 @@ public indTemplate = (ctx: IgcCellTemplateContext) => {
 * [Column Moving](column-moving.md)
 * [Column Pinning](column-pinning.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

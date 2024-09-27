@@ -136,7 +136,7 @@ div#faqs-accordion-wrapper {
     border-bottom: none;
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
 
     div#list-features-included {
         -webkit-box-orient: vertical;
@@ -1127,7 +1127,7 @@ Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセ�
 <!-- end: Blazor -->
 
 <script>
-    (function(){
+    (function() {
         var acc = document.getElementsByClassName("faqs-accordion");
         var i;
 

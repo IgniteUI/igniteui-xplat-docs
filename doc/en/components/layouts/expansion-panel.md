@@ -2,7 +2,8 @@
 title: {Platform} Expansion Panel | Expansion Panel | Infragistics
 _description: Expansion Panel component provides an easily configurable expandable component with two states - collapsed and expanded.
 _keywords: {Platform} Expansion Panel, {ProductName}, Infragistics
-mentionedTypes: ['ExpansionPanel']
+mentionedTypes: ['Infragistics.Controls.Layouts.Implementation.ExpansionPanel']
+namespace: Infragistics.Controls
 ---
 
 # {Platform} Expansion Panel Overview
@@ -11,8 +12,6 @@ The {ProductName} Expansion Panel is a lightweight accordion component which can
 ## {Platform} Expansion Panel Example
 
 `sample="/layouts/expansion-panel/usage", height="320", alt="{Platform} Expansion Panel Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -32,6 +31,8 @@ import {defineComponents, IgcExpansionPanelComponent} from 'igniteui-webcomponen
 
 defineComponents(IgcExpansionPanelComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -129,7 +130,7 @@ The `ExpansionPanel` control allows all sorts of content to be added inside of i
 
 The `ExpansionPanel` allows for easy customization of the header through the exposed *title*, *subTitle* and *indicator* slots.
 
-Configuring the position of the expansion indicator can be done through the `indicatorAlignment` property of the Expansion Panel. The possible options are **start**, **end** or **none**.
+Configuring the position of the expansion indicator can be done through the `IndicatorPosition` property of the Expansion Panel. The possible options are **start**, **end** or **none**.
 
 The next code sample demonstrates how to configure the component's button to go on the *right* side.
 
@@ -145,8 +146,8 @@ The {ProductName} Expansion Panel keyboard navigation is compliant with W3C acce
 
 **Key Combinations**
 
- - <kbd>Alt + Arrow Down</kbd> - expands the focused panel
- - <kbd>Alt + Arrow Up</kbd> - collapses the focused panel
+ - <kbd>Alt + ↓</kbd> - expands the focused panel
+ - <kbd>Alt + ↑</kbd> - collapses the focused panel
  - <kbd>Space</kbd>/<kbd>Enter</kbd> - toggle the expansion state of the focused panel
 
 

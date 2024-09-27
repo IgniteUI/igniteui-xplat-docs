@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Sorting
 
-In {Platform} `{ComponentName}`, data sorting is enabled on a per-column level, meaning that the `{ComponentName}` can have a mix of sortable and non-sortable columns. Performing {Platform} sort actions enables you to change the display order of the records based on specified criteria.
+The {ProductName} Data Sorting feature in {Platform} {ComponentTitle} is enabled on a per-column level, meaning that the `{ComponentName}` can have a mix of sortable and non-sortable columns. Performing {Platform} sort actions enables you to change the display order of the records based on specified criteria.
 
 <!-- Angular -->
 
@@ -40,7 +40,11 @@ This is done via the `Sortable` input. With the `{ComponentName}` sorting, you c
 ```
 
 ```html
-<igc-column field="ProductName" header="Product Name" data-type="String" sortable="true"></igc-column>
+<igc-column field="ProductName" header="Product Name" data-type="string" sortable="true"></igc-column>
+```
+
+```tsx
+<IgrColumn field="ProductName" header="Product Name" dataType="string" sortable="true"></IgrColumn>
 ```
 
 ## Sorting Indicators
@@ -49,12 +53,9 @@ Having a certain amount of sorted columns could be really confusing if there is 
 
 The `{ComponentName}` provides a solution for this problem by indicating the index of each sorted column.
 
-<!-- ComponentStart: Grid -->
 
 `sample="/{ComponentSample}/column-sorting-indicators", height="550", alt="{Platform} {ComponentTitle} column sorting indicators"`
 
-
-<!-- ComponentEnd: Grid -->
 
 ## Sorting through the API
 
@@ -72,7 +73,14 @@ import { SortingDirection } from 'igniteui-webcomponents-grids';
 ```
 <!-- end: WebComponents -->
 
+```tsx
+import { SortingDirection } from "igniteui-react-grids";
+```
+
+<!-- ComponentStart: Grid -->
+<!-- Angular -->
 ```typescript
+
 // Perform a case insensitive ascending sort on the ProductName column.
 this.grid.sort({ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true });
 
@@ -82,6 +90,21 @@ this.grid.sort([
     { fieldName: 'Price', dir: SortingDirection.Desc }
 ]);
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```typescript
+
+// Perform a case insensitive ascending sort on the ProductName column.
+this.grid.sort([{ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true }]);
+
+// Perform sorting on both the ProductName and Price columns.
+this.grid.sort([
+    { fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true },
+    { fieldName: 'Price', dir: SortingDirection.Desc }
+]);
+```
+<!-- end: WebComponents -->
 
 ```razor
 @code {
@@ -101,17 +124,159 @@ this.grid.sort([
 }
 ```
 
+```tsx
+// Perform a case insensitive ascending sort on the ProductName column.
+gridRef.current.sort([{ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true }]);
+
+// Perform sorting on both the ProductName and Price columns.
+gridRef.current.sort([
+    { fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true },
+    { fieldName: 'Price', dir: SortingDirection.Desc }
+]);
+```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+<!-- Angular -->
+```typescript
+
+// Perform a case insensitive ascending sort on the Category column.
+this.treeGrid.sort({ fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true });
+
+// Perform sorting on both the Category and Price columns.
+this.treeGrid.sort([
+    { fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true },
+    { fieldName: 'Price', dir: SortingDirection.Desc }
+]);
+```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```typescript
+
+// Perform a case insensitive ascending sort on the Category column.
+this.treeGrid.sort([{ fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true }]);
+
+// Perform sorting on both the Category and Price columns.
+this.treeGrid.sort([
+    { fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true },
+    { fieldName: 'Price', dir: SortingDirection.Desc }
+]);
+```
+<!-- end: WebComponents -->
+
+```razor
+@code {
+    this.grtreeGridid.SortAsync(new IgbSortingExpression[]
+        {
+            new IgbSortingExpression
+            {
+                FieldName = "Category",
+                Dir = SortingDirection.Asc
+            },
+            new IgbSortingExpression
+            {
+                FieldName = "Price",
+                Dir = SortingDirection.Desc
+            }
+        });
+}
+```
+
+```tsx
+// Perform a case insensitive ascending sort on the Category column.
+treeGridRef.current.sort([{ fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true }]);
+
+// Perform sorting on both the Category and Price columns.
+treeGridRef.current.sort([
+    { fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true },
+    { fieldName: 'Price', dir: SortingDirection.Desc }
+]);
+```
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+<!-- Angular -->
+```typescript
+
+// Perform a case insensitive ascending sort on the ProductName column.
+this.hierarchicalGrid.sort({ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true });
+
+// Perform sorting on both the ProductName and Price columns.
+this.hierarchicalGrid.sort([
+    { fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true },
+    { fieldName: 'Price', dir: SortingDirection.Desc }
+]);
+```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```typescript
+
+// Perform a case insensitive ascending sort on the ProductName column.
+this.hierarchicalGrid.sort([{ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true }]);
+
+// Perform sorting on both the ProductName and Price columns.
+this.hierarchicalGrid.sort([
+    { fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true },
+    { fieldName: 'Price', dir: SortingDirection.Desc }
+]);
+```
+<!-- end: WebComponents -->
+
+```razor
+@code {
+    this.hierarchicalGrid.SortAsync(new IgbSortingExpression[]
+        {
+            new IgbSortingExpression
+            {
+                FieldName = "CompanyName",
+                Dir = SortingDirection.Asc
+            },
+            new IgbSortingExpression
+            {
+                FieldName = "Country",
+                Dir = SortingDirection.Asc
+            }
+        });
+}
+```
+
+
+```tsx
+// Perform a case insensitive ascending sort on the ProductName column.
+hierarchicalGridRef.current.sort([{ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true }]);
+
+// Perform sorting on both the ProductName and Price columns.
+hierarchicalGridRef.current.sort([
+    { fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true },
+    { fieldName: 'Price', dir: SortingDirection.Desc }
+]);
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+
 > [!Note]
 > Sorting is performed using our `DefaultSortingStrategy` algorithm. Any `Column` or `ISortingExpression` can use a custom implementation of the `ISortingStrategy` as a substitute algorithm. This is useful when custom sorting needs to be defined for complex template columns, or image columns, for example.
 
 As with the filtering behavior, you can clear the sorting state by using the `ClearSort` method:
 
+<!-- ComponentStart: Grid -->
+<!-- Angular, WebComponents -->
 ```typescript
 // Removes the sorting state from the ProductName column
 this.grid.clearSort('ProductName');
 
 // Removes the sorting state from every column in the {ComponentTitle}
 this.grid.clearSort();
+```
+<!-- end: Angular, WebComponents -->
+
+```tsx
+// Removes the sorting state from the ProductName column
+gridRef.current.clearSort('ProductName');
+
+// Removes the sorting state from every column in the {ComponentTitle}
+gridRef.current.clearSort();
 ```
 
 ```razor
@@ -123,6 +288,67 @@ this.grid.clearSort();
     this.grid.ClearSortAsync("");
 }
 ```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+<!-- Angular, WebComponents -->
+```typescript
+// Removes the sorting state from the Category column
+this.treeGrid.clearSort('Category');
+
+// Removes the sorting state from every column in the {ComponentTitle}
+this.treeGrid.clearSort();
+```
+<!-- end: Angular, WebComponents -->
+
+```tsx
+// Removes the sorting state from the Category column
+treeGridRef.current.clearSort('Category');
+
+// Removes the sorting state from every column in the {ComponentTitle}
+treeGridRef.current.clearSort();
+```
+
+```razor
+@code {
+    @*Removes the sorting state from the Category column*@
+    this.treeGrid.ClearSortAsync("Category");
+
+    @*Removes the sorting state from every column in the Grid*@
+    this.treeGrid.ClearSortAsync("");
+}
+```
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+<!-- Angular, WebComponents -->
+```typescript
+// Removes the sorting state from the ProductName column
+this.hierarchicalGrid.clearSort('ProductName');
+
+// Removes the sorting state from every column in the {ComponentTitle}
+this.hierarchicalGrid.clearSort();
+```
+<!-- end: Angular, WebComponents -->
+
+```tsx
+// Removes the sorting state from the ProductName column
+hierarchicalGridRef.current.clearSort('ProductName');
+
+// Removes the sorting state from every column in the {ComponentTitle}
+hierarchicalGridRef.current.clearSort();
+```
+
+```razor
+@code {
+    @*Removes the sorting state from the Title column*@
+    this.hierarchicalGrid.ClearSortAsync("Title");
+
+    @*Removes the sorting state from every column in the Grid*@
+    this.hierarchicalGrid.ClearSortAsync("");
+}
+```
+<!-- ComponentEnd: HierarchicalGrid -->
 
 > [!Note]
 > The `SortStrategy` of the `{ComponentName}` is of different type compared to the `SortStrategy` of the `Column`, since they work in different scopes and expose different parameters.
@@ -134,6 +360,7 @@ this.grid.clearSort();
 
 It is possible to set the initial sorting state of the `{ComponentName}` by passing an array of sorting expressions to the `SortingExpressions` property of the `{ComponentName}`.
 
+<!-- ComponentStart: Grid -->
 <!-- Angular -->
 ```typescript
 public ngOnInit() {
@@ -173,6 +400,116 @@ public connectedCallback() {
 ```
 <!-- end: WebComponents -->
 
+```tsx
+useEffect(() => {
+    gridRef.current.sortingExpressions = [
+        { fieldName: 'UnitsInStock', dir: SortingDirection.Asc, ignoreCase: true },
+        { fieldName: 'ProductName', dir: SortingDirection.Desc }
+    ];
+}, [])
+```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+<!-- Angular -->
+```typescript
+public ngOnInit() {
+    this.treeGrid.sortingExpressions = [
+        { fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true },
+        { fieldName: 'Price', dir: SortingDirection.Desc }
+    ];
+}
+```
+<!-- end: Angular -->
+
+```razor
+@code {
+    protected override void OnAfterRender(bool first)
+    {
+        if (first)
+        {
+            this.treeGrid.SortingExpressions = new IgbSortingExpression[]{
+                new IgbSortingExpression()
+                {
+                    FieldName = "Category",
+                    Dir = SortingDirection.Asc
+                }};
+        }
+    }
+}
+```
+
+<!-- WebComponents -->
+```typescript
+public connectedCallback() {
+    this.treeGrid.sortingExpressions = [
+        { fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true },
+        { fieldName: 'Price', dir: SortingDirection.Desc }
+    ];
+}
+```
+<!-- end: WebComponents -->
+
+```tsx
+useEffect(() => {
+    treeGridRef.current.sortingExpressions = [
+        { fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true },
+        { fieldName: 'Price', dir: SortingDirection.Desc }
+    ];
+}, [])
+```
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+<!-- Angular -->
+```typescript
+public ngOnInit() {
+    this.hierarchicalGrid.sortingExpressions = [
+        { fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true },
+        { fieldName: 'Price', dir: SortingDirection.Desc }
+    ];
+}
+```
+<!-- end: Angular -->
+
+```razor
+@code {
+    protected override void OnAfterRender(bool first)
+    {
+        if (first)
+        {
+            this.hierarchicalGrid.SortingExpressions = new IgbSortingExpression[]{
+                new IgbSortingExpression()
+                {
+                    FieldName = "Title",
+                    Dir = SortingDirection.Asc
+                }};
+        }
+    }
+}
+```
+
+<!-- WebComponents -->
+```typescript
+public connectedCallback() {
+    this.hierarchicalGrid.sortingExpressions = [
+        { fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true },
+        { fieldName: 'Price', dir: SortingDirection.Desc }
+    ];
+}
+```
+<!-- end: WebComponents -->
+
+```tsx
+useEffect(() => {
+    hierarchicalGridRef.current.sortingExpressions = [
+        { fieldName: 'UnitsInStock', dir: SortingDirection.Asc, ignoreCase: true },
+        { fieldName: 'ProductName', dir: SortingDirection.Desc }
+    ];
+}, [])
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+
 > [!Note]
 > If values of type `string` are used by a column of `DataType` `Date`, the `{ComponentName}` won't parse them to `Date` objects and using `{ComponentName}` `Sorting` won't work as expected. If you want to use `string` objects, additional logic should be implemented on an application level, in order to parse the values to `Date` objects.
 
@@ -183,18 +520,11 @@ public connectedCallback() {
 The `{ComponentName}` supports remote sorting, which is demonstrated in the [{ComponentTitle} Remote Data Operations](remote-data-operations.md) topic.
 
 <!-- end: Angular -->
-
 <!-- ComponentEnd: Grid -->
 
 ## Sorting Indicators Templates
 
 The sorting indicator icon in the column header can be customized using a template. The following properties are available for templating the sorting indicator for any sorting state (ascending, descending, none):
-
-<!-- Angular -->
-
-The sorting indicator icon in the column header can be customized using a template. The following directives are available for templating the sorting indicator for any sorting state (ascending, descending, none):
-
-<!-- end: Angular -->
 
 <!-- Angular -->
 - `IgxSortHeaderIconDirective` – re-templates the sorting icon when no sorting is applied.
@@ -205,10 +535,13 @@ The sorting indicator icon in the column header can be customized using a templa
 </ng-template>
 ```
 <!-- end: Angular -->
+
 - `SortHeaderIconTemplate` – re-templates the sorting icon when no sorting is applied.
 
+<!-- Blazor -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
-<IgbGrid SortHeaderIconTemplate="SortDefaultTemplate">
+<{ComponentSelector} SortHeaderIconTemplate="SortDefaultTemplate"></{ComponentSelector}>
 
 @code {
     public RenderFragment<IgbGridHeaderTemplateContext> SortDefaultTemplate = (ctx) =>
@@ -217,12 +550,38 @@ The sorting indicator icon in the column header can be customized using a templa
     };
 }
 ```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: Blazor -->
 
+<!-- WebComponents -->
 ```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as {ComponentName}Component;
+    grid.data = this.data;
+    grid.sortHeaderIconTemplate = this.sortHeaderIconTemplate;
+}
+
 public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
-    return html`<igc-icon icon-name="unfold_more></igc-icon>`;
+    return html`<igc-icon name="unfold_more"></igc-icon>`;
 }
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
+```tsx
+function sortHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
+    return (
+        <>
+            <IgrIcon name='unfold_more'></IgrIcon>
+        </>
+    );
+}
+
+<{ComponentSelector} sortHeaderIconTemplate={sortHeaderIconTemplate}></{ComponentSelector}>
+```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: React -->
 
 <!-- Angular -->
 
@@ -238,8 +597,10 @@ public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
 
 - `SortAscendingHeaderIconTemplate` – re-templates the sorting icon when the column is sorted in ascending order.
 
+<!-- Blazor -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
-<IgbGrid SortAscendingHeaderIconTemplate="SortAscendingTemplate">
+<{ComponentSelector} SortAscendingHeaderIconTemplate="SortAscendingTemplate"></{ComponentSelector}>
 
 @code {
     public RenderFragment<IgbGridHeaderTemplateContext> SortAscendingTemplate = (ctx) =>
@@ -248,6 +609,38 @@ public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
     };
 }
 ```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as {ComponentName}Component;
+    grid.data = this.data;
+    grid.sortAscendingHeaderIconTemplate = this.sortAscendingHeaderIconTemplate;
+}
+
+public sortAscendingHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
+    return html`<igc-icon name="expand_less"></igc-icon>`;
+}
+```
+<!-- end: WebComponents -->
+
+<!-- React -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
+```tsx
+function sortAscendingHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
+    return (
+        <>
+            <IgrIcon name='expand_less'></IgrIcon>
+        </>
+    );
+}
+
+<{ComponentSelector} sortAscendingHeaderIconTemplate={sortAscendingHeaderIconTemplate}></{ComponentSelector}>
+```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: React -->
 
 <!-- Angular -->
 
@@ -263,9 +656,10 @@ public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
 
 - `SortDescendingHeaderIconTemplate` – re-templates the sorting icon when the column is sorted in descending order.
 
-
+<!-- Blazor -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```razor
-<IgbGrid SortDescendingHeaderIconTemplate="SortDescendingTemplate">
+<{ComponentSelector} SortDescendingHeaderIconTemplate="SortDescendingTemplate"></{ComponentSelector}>
 
 @code {
     public RenderFragment<IgbGridHeaderTemplateContext> SortDescendingTemplate = (ctx) =>
@@ -274,12 +668,38 @@ public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
     };
 }
 ```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: Blazor -->
 
+<!-- WebComponents -->
 ```ts
-public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
-    return html`<igc-icon icon-name="expand_more></igc-icon>`;
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as {ComponentName}Component;
+    grid.data = this.data;
+    grid.sortDescendingHeaderIconTemplate = this.sortDescendingHeaderIconTemplate;
+}
+
+public sortDescendingHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
+    return html`<igc-icon name="expand_more"></igc-icon>`;
 }
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
+```tsx
+function sortDescendingHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
+    return (
+        <>
+            <IgrIcon name='expand_more'></IgrIcon>
+        </>
+    );
+}
+
+<{ComponentSelector} sortDescendingHeaderIconTemplate={sortDescendingHeaderIconTemplate}></{ComponentSelector}>
+```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: React -->
 
 <!-- Angular -->
 
@@ -389,13 +809,48 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- end: Angular -->
 
+<!-- WebComponents, Blazor, React -->
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming-grid.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```html
+<{ComponentSelector} class="grid">
+</{ComponentSelector}>
+```
+
+```razor
+<{ComponentSelector} class="grid">
+</{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} className="grid">
+</{ComponentSelector}>
+```
+
+Then set the related CSS properties to this class:
+
+```css
+.grid {
+    --ig-grid-sorted-header-icon-color: #ffb06a;
+    --ig-grid-sortable-header-icon-hover-color: black;
+}
+```
+### Demo
+
+`sample="/{ComponentSample}/column-sorting-style", height="550", alt="{Platform} {ComponentTitle} column sorting style"`
+
+<!-- end: WebComponents, Blazor, React -->
+
 ## API References
 
 * `SortingExpression`
 
 ## Additional Resources
 
-
+<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Sorting](sorting.md)
@@ -404,7 +859,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

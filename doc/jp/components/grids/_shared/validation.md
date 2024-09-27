@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} での編集と検証 - インフラジスティックス
+title: {Platform} {ComponentTitle} 編集と検証 - {ProductName}
 _description: グリッドでユーザーの入力を検証し、{Platform} {ComponentTitle} の使用中に有効かどうかを通知します。デモと例をお試しください。
 _keywords: {Platform} validation, {ProductName}, infragistics, {Platform} 検証, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,13 +9,13 @@ _language: ja
 
 # {Platform} {ComponentTitle} 編集と検証
 
-`{ComponentName}` は、セル / 行の編集時にユーザー入力の検証メカニズムが組み込まれた編集機能を提供します。これはフォームの検証機能を拡張し、既知の機能と簡単に統合できるようにします。エディターの状態が変更されると、視覚的なインジケーターが編集されたセルに適用されます。
+{Platform} {ComponentName} の編集は、セル/行の編集時のユーザー入力の検証メカニズムが組み込まれた編集を提供します。これはフォームの検証機能を拡張し、既知の機能と簡単に統合できるようにします。エディターの状態が変更されると、`{ComponentName}` 内の編集されたセルに視覚的なインジケーターが適用されます。
 
 ## 構成
 
 ### テンプレート駆動で構成する
 
-{Platform} Forms 検証ディレクティブは、`Column` で直接動作するよう拡張されています。同じ検証が `Column` で宣言的に設定される属性として利用できます。以下の検証は追加設定なしでサポートされます。
+{Platform} Forms 検証は、`Column` で直接動作するよう拡張されています。同じ検証が `Column` で宣言的に設定される属性として利用できます。以下の検証は追加設定なしでサポートされます。
 
 - Required
 - Min
@@ -24,6 +24,8 @@ _language: ja
 - MinLength
 - MaxLength
 - Pattern
+
+<!-- Angular -->
 
 列入力が設定され、値がメールとして書式設定されることを検証するには、関連するディレクティブを使用できます。
 
@@ -38,10 +40,6 @@ _language: ja
 以下のサンプルは、`{ComponentName}` に組み込み済みの `Required`、`Email` および `Min` 検証ディレクティブを使用する方法を示しています。
 
 `sample="/{ComponentSample}/data-validator-service", height="600", alt="{Platform} {ComponentTitle} 検証の基本例"`
-
-
-
-<!-- Angular -->
 
 ### リアクティブ フォームで構成する
 
@@ -432,7 +430,7 @@ private rowValidator(): ValidatorFn {
 
         const age = formGroup.get('Age');
         const hireDate = formGroup.get('HireDate');
-        if((new Date().getFullYear() - new Date(hireDate.value).getFullYear()) + 18 >= age.value) {
+        if ((new Date().getFullYear() - new Date(hireDate.value).getFullYear()) + 18 >= age.value) {
             returnObject['ageLessHireDate'] = true;
         }
 
@@ -542,9 +540,9 @@ public stateMessage(cell: IgxGridCell) {
 ```
 
 ### スタイルを含める
-エラーの色を変更するには、css 変数 `--igx-error-500` を使用します。
+エラーの色を変更するには、css 変数 `--ig-error-500` を使用します。
 ```scss
---igx-error-500: 34, 80%, 63%;
+--ig-error-500: 34, 80%, 63%;
 ```
 
 ### カスタム テンプレート
@@ -662,11 +660,12 @@ public cellStyles = {
 
 <!-- Blazor -->
 
-
+<!-- ComponentStart:  Grid -->
 * [{ComponentTitle} 編集](editing.md)
 * [{ComponentTitle} 行の編集](row-editing.md)
 * [{ComponentTitle} 行の追加](row-adding.md)
 * [{ComponentTitle} トランザクション](batch-editing.md)
+<!-- ComponentEnd:  Grid -->
 
 <!-- end: Blazor -->
 
