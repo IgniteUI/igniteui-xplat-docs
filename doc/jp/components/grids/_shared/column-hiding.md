@@ -938,7 +938,7 @@ $custom-button: button-theme(
 <!-- Blazor, WebComponents, React -->
 ## スタイル設定
 
-グリッドは、利用可能な [CSS 変数](../theming.md)の一部を設定することでさらにカスタマイズできます。
+グリッドは、利用可能な [CSS 変数](../theming-grid.md)の一部を設定することでさらにカスタマイズできます。
 これを実現するために、最初にグリッドに割り当てるクラスを使用します。
 
 <!-- ComponentStart: Grid -->
