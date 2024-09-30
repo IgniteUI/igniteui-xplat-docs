@@ -12,7 +12,7 @@ _language: ja
 
 ## {Platform} Divider の例
 
-`sample="/layouts/divider/base", height="220", alt="{Platform} Divider の例"`
+`sample="/layouts/divider/overview", height="220", alt="{Platform} Divider の例"`
 
 <div class="divider--half"></div>
 
