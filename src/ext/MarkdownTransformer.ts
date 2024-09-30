@@ -1,7 +1,10 @@
 import { MappingLoader, APIPlatform } from './MappingLoader';
+import { MarkdownContent, MarkdownSection, MarkdownMetadata, MarkdownLine } from './MarkdownContent';
+import { MarkdownVerifier } from './MarkdownVerifier';
 import { PlatformDetector, PlatformDetectorRule, FencedBlockInfo } from './PlatformDetector';
 import { JsonEx } from './JsonEx';
 import { ComponentDetector } from './ComponentDetector';
+
 
 let remark = require(`remark`);
 let parse = require('remark-parse');
@@ -1466,7 +1469,7 @@ export class MarkdownTransformer {
     private _envBrowser: string = "";
 
     public docsLanguage: string = '';
-    public docsAutoCorrect: boolean = false;
+    public docsVerifier: MarkdownVerifier | undefined;
 
     shouldOmitFencedCode(language: string, platform: APIPlatform[], components: string[], options: any) {
 
@@ -1541,6 +1544,9 @@ export class MarkdownTransformer {
         this._componentDetector = new ComponentDetector();
         this._docs = docs;
         this._envTarget = envTarget; // development || staging || production
+
+        if (this.docsVerifier === undefined)
+            this.docsVerifier = new MarkdownVerifier();
 
         // using vars in docConfig.json to replace samples URLs instead of using processor in igniteui-docfx-template
         let samplesBrowsers = docs['samplesBrowsers'];
@@ -1828,208 +1834,17 @@ export class MarkdownTransformer {
         }
         return url;
     }
-    verifyCodeViewer(fileContent: string, filePath: string): number {
-        // var fileContent = file.contents.toString();
-        // var filePath = file.dirname + "\\" + file.basename
-        // filePath = '.\\doc\\' + filePath.split('doc\\')[1];
-
-        var md = new MarkdownContent(fileContent, filePath);
-
-        // console.log("sections " + md.sections.length);
-        var errorsCount = 0;
-        for (const section of md.sections) {
-
-            for (const line of section.lines) {
-                if (line.isCodeViewer()) {
-
-                    // console.log(line.index + " s=" + line.isCodeViewerWithStyle());
-                    // console.log(line.index + " u=" + line.isCodeViewerWithURL());
-                    // console.log(line.index + " f=" + line.isCodeViewerWithIFrame());
-                    // console.log(line.index + " a=" + line.isCodeViewerWithAltName());
-                    // console.log(line.index + " g=" + line.isCodeViewerWithGithub());
-                    // console.log("");
-                    // console.log(line);
-                    if (!line.isCodeViewerWithGithub()) {
-                        var url = '"' + this.getGithubURL(line.content) + '"';
-                        console.log("");
-                        console.log('>> Missing github-src=' + url + ' on code-view in: ' +  filePath);
-                        console.log("" + line.content + "");
-                        errorsCount++;
-                    }
-                }
-            }
-        }
-        // errorsCount = 0;
-        return errorsCount;
-    }
-
-    verifyLinksToTopic(fileContent: string): string {
-
-        console.log("verifyLinksToTopic");
-        
-        let lines = fileContent.split('\n');
-        for (let i = 0; i < lines.length; i++) {
-            const line = lines[i];
-            let words = line.split(' ');
-            for (let w = 0; w < words.length; w++) {
-                let word = words[w];
-                let hasPlatformVariable = word.toLowerCase().indexOf("{platform") >= 0;
-                if (word.indexOf(".md#") >= 0 && hasPlatformVariable) {
-                    word = word.split('{platform}').join('{PlatformLower}');
-                    word = word.split('{Platform}').join('{PlatformLower}');
-                    word = word.split('{platformlower}').join('{PlatformLower}');
-                    if (word !== words[w]) {
-                        console.log("auto-correct link: \n" + words[w] + " to \n" + word);
-                        words[w] = word;
-                    }
-                }
-            }
-            lines[i] = words.join(' ');
-        }
-        return lines.join('\n');
-    }
-    verifyLinkToSample(str: string, filePath: string, lineIndex: number) {
-
-    }
-    verifyLinksAPI(fileContent: string, filePath: string): any {
-        var issues: any[] = [];
-        var lines = fileContent.split('\n');
-        var links = [];
-        for (let i = 0; i < lines.length; i++) {
-            let line = lines[i];
-            if (line.includes('| ')) continue;
-
-            let words = line.split(' ');
-            for (const word of words) {
-
-                var item = word.replace('\r/g', '').replace(',', '');
-                if (item.includes('sample=')) continue;
-                if (item.includes('```')) continue;
-
-                if (item.includes('-')) continue;
-                if (item.includes('<')) continue;
-                if (item.includes('`string')) continue;
-                if (item.includes('`number')) continue;
-                if (item.includes('`boolean')) continue;
-
-                if (item.startsWith('`')) {
-                    var check = this.verifyLinkToAPI(item, filePath, i)
-                    links.push(item);
-                    // console.log( filePath + ':' + i + " " + item);
-                }
-            }
-        }
-
-        console.log(links);
-    }
-
-    verifyLinkToAPI(str: string, filePath: string, lineIndex: number): string | null {
-
-        var location = filePath + ":" + lineIndex;
-        var skipTypes = ["boolean", "number", "string", "class"];
-        var skipValues = ["true", "false", "null", "undefined"];
-
-        if (str.includes('-')) null;
-        if (str.includes('<')) null;
-
-        var apiMember = str.split("`").join("").trim();
-        if (skipTypes.includes(apiMember)) return null;
-        if (skipValues.includes(apiMember)) return null;
-
-        if (str === ``)
-        {
-            return location + " API link cannot be empty: " + str;
-        }
-
-        if (str.startsWith("` "))
-        {
-            if (this.docsAutoCorrect) str = str.replace("` ", "`");
-
-            return location + " API link cannot start with space: " + str;
-        }
-        if (str.startsWith(" `"))
-        {
-            if (this.docsAutoCorrect) str = str.replace(" `", "`");
-
-            return location + " API link cannot end with space: " + str;
-        }
-
-        if (str[0] === str[0].toLowerCase())
-        {
-            if (this.docsAutoCorrect) str = str.replace( str[0].toLowerCase(),  str[0].toUpperCase());
-
-            return location + " API link cannot start with lowercase: " + str;
-        }
-
-        var platformPrefixes = ["Igb", "Igx", "Igr", "Igc"];
-        for (const prefix of platformPrefixes)
-        {
-            if (str.startsWith("`" + prefix))
-            {
-                if (this.docsAutoCorrect) str = str.replace("`" + prefix, "`");
-
-                return location + " API link cannot start with '" + prefix + "' prefix: " + str;
-            }
-        }
-
-        return null;
-    }
+    
 
     verifyMarkdown(fileContent: string, filePath: string): any {
         // console.log("verifyMarkdown... \n");
 
-        var md = new MarkdownContent(fileContent, filePath);
-        var mdValidated = false;
+        if (this.docsVerifier === undefined)
+            this.docsVerifier = new MarkdownVerifier();
+        
+        var result = this.docsVerifier.verifyMarkdown(fileContent, filePath);
 
-        if (md.metadata === undefined || !md.metadata.hasContent()) {
-            console.log("ERROR: missing metadata section wrapped with '---' in " + filePath);
-        } else {
-            // if (md.isLocalEN()) {
-            //     md.metadata.language = '_language: en';
-            // }
-
-            // auto-correct metadata
-            // if (md.isLocalJP()) {
-            //     md.metadata.language = '_language: jp';
-            // }
-
-            // if (md.isLocalKR()) {
-            //     md.metadata.language = '_language: kr';
-            // }
-
-            //fileContent = md.toString();
-            // console.log("metadata: \n" + md.metadata);
-
-            //var meta = md.metadata.toString();
-            if (!md.metadata.hasTitle())
-                console.log("ERROR: missing metadata 'title:' in " + filePath);
-            else if (!md.metadata.hasDescription())
-                console.log("ERROR: missing metadata '_description:' in " + filePath);
-            else if (!md.metadata.hasKeywords())
-                console.log("ERROR: missing metadata '_keywords:' in " + filePath);
-            else if (!md.metadata.hasLanguage() && !md.isLocalEN())
-                console.log("ERROR: missing metadata '_language:' in " + filePath);
-            else if (md.metadata.hasMentionedLinks())
-            {
-                if (!md.metadata.hasMentionedTypes() && !md.metadata.hasSharedComponents())
-                    console.log("ERROR: missing metadata 'mentionedTypes:' in " + filePath);
-                else if (md.metadata.mentionedLinks.includes("`true`"))
-                    console.log("ERROR: replace `true` with **true** in " + filePath);
-                else if (md.metadata.mentionedLinks.includes("`false`"))
-                    console.log("ERROR: replace `false` with **false** in " + filePath);
-                else
-                    mdValidated = true;
-            }
-            else
-            {
-                mdValidated = true;
-            }
-        }
-
-        //console.log("metadata " + filePath);
-        fileContent = this.verifyLinksToTopic(fileContent);
-
-        return { fileContent: fileContent, isValid: mdValidated};
+        return { fileContent: fileContent, isValid: result.isValid};
     }
 
     // updateGitIgnore(excludeFiles: string[])
@@ -2584,236 +2399,11 @@ export class TocNode {
     }
 }
 
-class MarkdownContent {
-    public sections: MarkdownSection[];
-    public metadata: MarkdownMetadata;
-    public content: string = '';
-    public filePath: string = '';
-    public sectionStrings: string[];
-    public apiMembers: string[] = [];
-
-    public isLocalEN() { return this.filePath.indexOf('\\en\\') >= 0 || this.filePath.indexOf('/en/') >= 0; }
-    public isLocalJP() { return this.filePath.indexOf('\\jp\\') >= 0 || this.filePath.indexOf('/jp/') >= 0; }
-    public isLocalKR() { return this.filePath.indexOf('\\kr\\') >= 0 || this.filePath.indexOf('/kr/') >= 0; }
-
-    public toString() {
-        var str = '';
-        if (this.metadata.hasContent()) {
-            str = '---\r\n' + this.metadata.toString() + '---\r\n\r\n';
-        }
-        for (const section of this.sections) {
-            str += section.toString() + '\r\n';
-        }
-        return str;
-    }
-
-    constructor(content: string, filePath: string) {
-
-        this.sections = [];
-        this.sectionStrings = [];
-        this.filePath = filePath;
-        this.metadata = new MarkdownMetadata('');
-
-        if (content === undefined) return;
-
-        var words = content.split(' ');
-        for (const word of words) {
-            if (word.indexOf("```") >= 0) continue;
-
-            if (word.startsWith("`") && word.endsWith("`"))
-                this.apiMembers.push(word);
-        }
-        this.apiMembers = this.apiMembers.filter((v, i, a) => a.indexOf(v) === i);
-
-        var parts = content.split('---');
-        if (parts === undefined) return;
-
-        if (parts.length < 3) { // metadata missing
-            // console.log('Failed on creating MarkdownContent from file without metadata ' + path);
-            // console.log(content);
-            // return;
-
-            this.metadata = new MarkdownMetadata('');
-            this.sectionStrings = parts[0].split('\n## ');
-        } else { // metadata found
-            this.metadata = new MarkdownMetadata(parts[1]);
-            this.metadata.mentionedLinks = this.apiMembers;
-            this.sectionStrings = parts[2].split('\n## ');
-        }
-        // console.log("parts: " + parts.length);
-        // console.log("parts0:" + parts[0]);
-        // console.log("parts1:" + parts[1]);
-        // console.log("parts2:" + parts[2]);
-
-        for (const s of this.sectionStrings) {
-            var section = new MarkdownSection('## ' + s);
-            section.index = this.sections.length;
-            this.sections.push(section);
-            // console.log("==================== section " +  this.sections.length + " ==================================================");
-            // console.log(section.content);
-        }
-        // this.sections.push(new MarkdownSection());
-
-    }
-}
-
-class MarkdownSection {
-
-    public content: string = '';
-    public lines: MarkdownLine[] = [];
-    public index: number = 0;
-
-    public withMetadata() { return this.content.indexOf('---') === 0; }
-    public withTopicList() { return this.content.indexOf('## Additional Resources') === 0; }
-    public withApiList() { return this.content.indexOf('## API References') === 0; }
-    public withCodeViewer() { return this.content.indexOf('<code-view') === 0; }
-
-    public withParagraphs() {
-        return !this.withMetadata() && !this.withCodeViewer() && !this.withTopicList();
-    }
-
-    public toString() {
-        var str = '';
-        for (const line of this.lines) {
-            var content = line.content.trim();
-            if (line.index === 0)
-                str = content + '\n';
-            else
-                str += content + '\r\n\r\n';
-        }
-        return str;
-    }
-
-    constructor(content: string) {
-
-        if (content === undefined) return;
-
-        this.content = content;
-        var contentLines = [];
-        if (this.withTopicList() || this.withApiList() || this.withMetadata()) {
-            contentLines = content.split('\r\n');
-        } else { // paragraphs
-            contentLines = content.split('\r\n\r\n');
-        }
-
-        for (const l of contentLines) {
-            var line = new MarkdownLine(l)
-            line.index = this.lines.length;
-            this.lines.push(line);
-            // console.log("== line " +  this.lines.length + " ======================");
-            // console.log(line.content);
-        }
-
-    }
-}
-
-class MarkdownMetadata  {
-
-    public content: string = '';
-    public lines: MarkdownLine[] = [];
-    public mentionedTypes: string = '';
-    public mentionedLinks: string[] = [];
-    public sharedComponents: string = '';
-    public targetComponent: string = 'NONE';
-    public title: string = '';
-    public keywords: string = '';
-    public description: string = '';
-    public language: string = '';
-
-    public isEmpty() { return this.content === ""; }
-    public hasContent() { return this.content !== ""; }
-    public hasMentionedTypes() { return this.mentionedTypes !== ""; }
-    public hasMentionedLinks() { return this.mentionedLinks.length > 0; }
-    public hasSharedComponents() { return this.sharedComponents !== ""; }
-    public hasTitle() { return this.title.indexOf('title:') >= 0; }
-    public hasKeywords() { return this.keywords.indexOf('_keywords:') >= 0; }
-    public hasLanguage() { return this.language.indexOf('_language:') >= 0; }
-    public hasDescription() { return this.description.indexOf('_description:') >= 0; }
-
-    public toString() {
-        var str: string = this.title + '\n';
-        if (this.hasDescription()) str += this.description + '\n';
-        if (this.hasLanguage()) str += this.language + '\n';
-        if (this.hasKeywords()) str += this.keywords + '\n';
-        if (this.hasMentionedLinks()) str += this.mentionedLinks.length + '\n';
-        if (this.hasMentionedTypes()) str += this.mentionedTypes + '\n';
-        return str;
-    }
-
-    constructor(content: string) {
-        if (content === undefined) return;
-
-        this.content = content;
-        var lines = content.split('\n');
-        for (const line of lines) {
-            this.lines.push(new MarkdownLine(line.trim()));
-            // find metadata lines while ignoring any commented out lines
-            if (line.indexOf('#') !== 0 && line.indexOf('title:') >= 0) this.title = line.trim();
-            if (line.indexOf('#') !== 0 && line.indexOf('_keywords:') >= 0) this.keywords = line.trim();
-            if (line.indexOf('#') !== 0 && line.indexOf('_language:') >= 0) this.language = line.trim();
-            if (line.indexOf('#') !== 0 && line.indexOf('_description:') >= 0) this.description = line.trim();
-            if (line.indexOf('#') !== 0 && line.indexOf('mentionedTypes:') >= 0) this.mentionedTypes = line.trim();
-            if (line.indexOf('#') !== 0 && line.indexOf('sharedComponents:') >= 0) this.sharedComponents = line.trim();
-            if (line.indexOf('#') !== 0 && line.indexOf('targetComponent:') >= 0) {
-                this.targetComponent = line.replace('targetComponent:', '').trim();
-            }
-        }
-    }
-
-
-
-}
-
-class MarkdownLine {
-
-    public content: string = '';
-    public index: number = 0;
-
-    constructor(content: string) {
-        if (content !== undefined) {
-            this.content = content;
-        }
-    }
-    public isCodeViewerWithGithub() { return this.content.indexOf('github-src') > 0; }
-    public isCodeViewerWithAltName() { return this.content.indexOf('alt=') > 0; }
-    public isCodeViewerWithIFrame() { return this.content.indexOf('iframe-src=') > 0; }
-    public isCodeViewerWithURL() { return this.content.indexOf('data-demos-base-url=') > 0; }
-    public isCodeViewerWithStyle() { return this.content.indexOf('style=') > 0; }
-
-    public isCodeViewer() { return this.content.indexOf('<code-view') === 0; }
-    public isDivider() { return this.content.indexOf('<div class="divider--half"') === 0; }
-    public isListItem() { return this.content.indexOf('- ') === 0; }
-    public isTitle() { return this.content.indexOf('#') === 0; }
-    public isEmpty() { return this.content.trim() === ''; }
-    public isCodeSnippet() {
-        return this.content.indexOf('```') === 0 ||
-               this.content.indexOf('   ') === 0 ||
-               this.content.indexOf('<Ig') >= 0;
-    }
-    public isParagraph() { return !this.isTitle() && !this.isDivider() && !this.isEmpty() && !this.isListItem() && !this.isCodeViewer(); }
-
-    // public getWords(): string[] {
-    //     var words = this.content.split(' ');
-    //     return words;
-    // }
-
-    // public getMembers(): string[] {
-    //     var words = this.getWords();
-    //     var apiMembers = [];
-    //     for (const word of words) {
-    //         if (word.indexOf('`') === 0 &&
-    //             apiMembers.indexOf(word) === -1)
-    //             apiMembers.push(word);
-    //     }
-    //     return apiMembers;
-    // }
-}
-
-class SharedSection {
-    components: string[] = [];
-    lines: string[] = [];
-    added: boolean = false;
-    constructor() {
-        // this.lines = [];
-    }
-}
+// class SharedSection {
+//     components: string[] = [];
+//     lines: string[] = [];
+//     added: boolean = false;
+//     constructor() {
+//         // this.lines = [];
+//     }
+// }

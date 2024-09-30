@@ -1180,8 +1180,11 @@ exports.verifyMarkdown = verifyMarkdown;
 
 
 function verifyMarkdown2(cb) {
-    // ensureEnvironment();
-    
+    ensureEnvironment();
+    if (transformer === null || transformer === undefined) {
+        if (cb) cb("MarkdownTransformer failed to load"); return;
+    }
+
     var mvFile = require('./src/ext/MarkdownVerifier');
     var mv = new mvFile.MarkdownVerifier();
     if (mv === null || mv === undefined) {
