@@ -120,7 +120,7 @@ _language: ja
 
 チャートの詳細については、次のトピックを参照してください。
 
-- [チャート](chart-overview.md)
+- [チャートの概要](chart-overview.md)
 - [チャート機能](chart-features.md)
 
 
