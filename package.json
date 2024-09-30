@@ -11,6 +11,7 @@
     "toc2json": "tsc && gulp generateTocJson --plat=Blazor --lang=en",
     "updateApiSection": "tsc && gulp updateApiSection",
     "verifyMarkdown": "tsc && gulp verifyMarkdown",
+    "verifyMarkdown2": "tsc && gulp verifyMarkdown2",
     "logArgs": "tsc && gulp logArgs --plat=Blazor --lang=en",
     "generateRedirects": "tsc && gulp generateRedirects",
     "build": "tsc",

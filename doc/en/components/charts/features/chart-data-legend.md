@@ -7,6 +7,36 @@ namespace: Infragistics.Controls.Charts
 ---
 
 # {Platform} Data Legend
+ 
+ > [DataGrid](grids/data-grid/overview.md) - The DataGrid is deprecated, please use [Grid](grids/data-grid.md) 
+
+
+`sample="/charts/category-chart/data-legend", height="450", alt="{Platform} Category Chart Data Legend Example"`
+
+
+
+### Header Row
+
+* bullet 1.
+* bullet 2.
+   - bullet A.
+   - bullet B.
+
+```tsx
+tsx code
+```
+
+```razor
+razor code
+```
+
+```ts
+ts code
+```
+
+No Line Below
+## No Lines
+No Line Above
 
 In {ProductName}, the `XamDataLegend` is highly-customizable version of the `Legend`, that shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values. This legend updates when moving the mouse inside of the plot area of the `CategoryChart`, `FinancialChart`, and `XamDataChart`. Also, it has a persistent state that remembers the last hovered point when the user's mouse pointer exits the plot area. It displays this content using a set of three type of rows (header, series, summary) and four types of columns (title, label, value, unit).
 

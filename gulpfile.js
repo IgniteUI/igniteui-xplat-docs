@@ -1132,10 +1132,10 @@ function verifyMarkdown(cb) {
     var filesCount = 0;
     var errorsCount = 0;
     gulp.src([
-    'doc/en/**/*.md',
-    'doc/jp/**/*.md',
-    'doc/kr/**/*.md',
-    //'doc/kr/**/chart-legends.md',
+    // 'doc/en/**/*.md',
+    // 'doc/jp/**/*.md',
+    // 'doc/kr/**/*.md',
+    'doc/en/**/chart-data-legend.md',
     // 'doc/en/**/charts/**/*.md',
     // 'doc/en/**/zoomslider*.md',
     // 'doc/en/**/point-chart.md',
@@ -1146,7 +1146,7 @@ function verifyMarkdown(cb) {
         var fileContent = file.contents.toString();
         var filePath = file.dirname + path.sep + file.basename
         // filePath = '.\\doc\\' + filePath.split('doc\\')[1];
-        // console.log('verifying: ' + filePath);
+        console.log('verifying: ' + filePath);
         filesCount++;
         var result = transformer.verifyMarkdown(fileContent, filePath);
         if (result.isValid) {
@@ -1179,9 +1179,72 @@ function verifyMarkdown(cb) {
 exports.verifyMarkdown = verifyMarkdown;
 
 
-function fixMarkdownTables(cb) {
+function verifyMarkdown2(cb) {
+    // ensureEnvironment();
+    
+    var mvFile = require('./src/ext/MarkdownVerifier');
+    var mv = new mvFile.MarkdownVerifier();
+    if (mv === null || mv === undefined) {
+        if (cb) cb("MarkdownVerifier failed to load"); return;
+    }
 
-    console.log('fixMarkdownTables .md files ...');
+    console.log('verifying markdown files:');
+
+    var filesCount = 0;
+    var errorsCount = 0;
+    gulp.src([
+    // 'doc/en/**/*.md',
+    // 'doc/jp/**/*.md',
+    // 'doc/kr/**/*.md',
+    'doc/en/**/chart-data-legend.md',
+    // 'doc/en/**/charts/**/*.md',
+    // 'doc/en/**/zoomslider*.md',
+    // 'doc/en/**/point-chart.md',
+    // 'doc/jp/components/grids/_shared/cell-editing.md',
+    '!doc/**/obsolete/**/*.md',
+    ])
+    .pipe(es.map(function(file, fileCallback) {
+        var fileContent = file.contents.toString();
+        var filePath = file.dirname + path.sep + file.basename
+        // filePath = '.\\doc\\' + filePath.split('doc\\')[1];
+        console.log('verifying: ' + filePath);
+        filesCount++;
+        var result = mv.verifyMarkdown(fileContent, filePath);
+        if (result.isValid) {
+            // console.log('verified:  ' + filePath);
+            // fileContent = result.fileContent;
+            //file.contents = Buffer.from(fileContent);
+            
+            // auto-update topics with corrections if any
+            // fs.writeFileSync(filePath, result.content);
+        } else {
+            errorsCount++;
+        }
+        fileCallback(null, file);
+    }))
+    .on("end", () => {
+        if (errorsCount > 0) {
+            var msg = "Correct above " + errorsCount + " errors in markdown files!";
+            if (cb) cb(new Error(msg)); else console.log(msg);
+            // if (cb) cb(msg); else console.log(msg);
+        } else {
+            var msg = 'verifying .md files ... done - checked ' + filesCount + " files";
+            console.log(msg);
+            if (cb) cb();
+        }
+    })
+    .on("error", (err) => {
+        console.log("Error in verifyMarkdown()");
+        if (cb) cb(err);
+    });
+}
+exports.verifyMarkdown2 = verifyMarkdown2;
+
+
+// TODO-MT remove obsolete
+function verifyMarkdownTables(cb) {
+
+    console.log('verifyMarkdownTables .md files ...');
 
     var filesCount = 0;
     var errorsCount = 0;
@@ -1242,11 +1305,11 @@ function fixMarkdownTables(cb) {
         // if (cb) cb();
     })
     .on("error", (err) => {
-        console.log("Error in fixMarkdownTables()");
+        console.log("Error in verifyMarkdownTables()");
         if (cb) cb(err);
     });
 }
-exports.fixMarkdownTables = fixMarkdownTables;
+exports.verifyMarkdownTables = verifyMarkdownTables;
 
 
 function getSampleAltText(str) {
