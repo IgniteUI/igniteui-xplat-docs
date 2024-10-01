@@ -666,7 +666,7 @@ Internet Explorer 11 のコンポーネントをスタイル設定するには�
 
 ## その他のリソース
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
@@ -675,7 +675,7 @@ Internet Explorer 11 のコンポーネントをスタイル設定するには�
 * [列の移動](column-moving.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

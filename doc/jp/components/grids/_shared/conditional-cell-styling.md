@@ -1123,7 +1123,7 @@ function editDone(grid, evt) {
 
 ## その他のリソース
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [編集](editing.md)
 * [ページング](paging.md)
@@ -1139,7 +1139,7 @@ function editDone(grid, evt) {
 <!-- * [Toolbar](toolbar.md) -->
 * [複数列ヘッダー](multi-column-headers.md)
 * [サイズ](size.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 
 コミュニティに参加して新しいアイデアをご提案ください。

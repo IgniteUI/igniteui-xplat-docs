@@ -441,7 +441,7 @@ $custom-grid-theme: grid-theme(
 
 ## その他のリソース
 
-<!-- ComponentStart:  Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, HierarchicalGrid -->
 * [選択](selection.md)
 * [行選択](row-selection.md)
 * [フィルタリング](filtering.md)
@@ -451,7 +451,7 @@ $custom-grid-theme: grid-theme(
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [仮想化とパフォーマンス](virtualization.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

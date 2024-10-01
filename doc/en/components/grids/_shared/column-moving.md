@@ -406,7 +406,7 @@ Then set the related CSS properties to this class:
 
 ## Additional Resources
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -416,7 +416,7 @@ Then set the related CSS properties to this class:
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
 * [Searching](search.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 

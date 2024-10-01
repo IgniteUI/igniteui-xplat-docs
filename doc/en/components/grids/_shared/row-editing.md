@@ -859,9 +859,9 @@ Then set the related CSS properties for that class:
 
 <!-- Blazor -->
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [{ComponentTitle} Editing](editing.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 <!-- * [{ComponentTitle} Transactions](batch-editing.md) -->
 

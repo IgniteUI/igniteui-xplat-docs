@@ -859,7 +859,7 @@ import 'core-js/es7/array';
 
 ## その他のリソース
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [Grid の概要](../data-grid.md)
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
@@ -869,7 +869,7 @@ import 'core-js/es7/array';
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
 * [グループ化](groupby.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

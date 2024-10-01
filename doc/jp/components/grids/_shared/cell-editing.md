@@ -1410,7 +1410,7 @@ $custom-grid-theme: grid-theme(
 
 <!-- Blazor, WebComponents, React -->
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
@@ -1420,6 +1420,6 @@ $custom-grid-theme: grid-theme(
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
 * [検索](search.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 <!-- end: Blazor, WebComponents, React -->

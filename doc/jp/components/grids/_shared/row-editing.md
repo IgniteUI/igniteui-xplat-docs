@@ -860,9 +860,9 @@ $button-theme: button-theme(
 
 <!-- Blazor -->
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [{ComponentTitle} 編集](editing.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 <!-- * [{ComponentTitle} Transactions](batch-editing.md) -->
 
