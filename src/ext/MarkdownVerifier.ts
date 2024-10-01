@@ -2,7 +2,7 @@
 
 console.log("MarkdownVerifier... loaded");
 
-import { MarkdownContent, MarkdownSection, MarkdownMetadata, MarkdownLine } from './MarkdownContent';
+import { MarkdownContent, MarkdownSection, MarkdownMetadata, MarkdownLine, LOG } from './MarkdownContent';
 
 var NEWLINE: string = '\r\n';
 var DOUBLE_LINE: string = '\r\n\r\n'; 
@@ -58,7 +58,7 @@ export class MarkdownVerifier {
 
     // public markdown: MarkdownResult = new MarkdownResult(); 
     public filePath: string = ""; 
-    public error: string = ""; 
+    // public error: string = ""; 
     public errors: string[] = []; 
     public isValid: boolean = true; 
     public docsAutoCorrect: boolean = false;
@@ -72,13 +72,21 @@ export class MarkdownVerifier {
 
     isMetadata(section: string): boolean { return section.startsWith("---"); }    
     isCode(section: string): boolean { return section.startsWith("```"); }   
-    isSample(section: string): boolean {  return section.startsWith("`sample="); }
+    isSample(section: string): boolean { return section.indexOf('sample="') >= 0; }
     isNote(section: string): boolean {  return section.startsWith("> "); }
     isTable(section: string): boolean { return section.startsWith("| "); }    
     isHeader(section: string): boolean { return section.startsWith("#"); }
     isImage(section: string): boolean {  return section.startsWith("<img "); }
     isBullet(section: string): boolean { return section.startsWith("* "); }
     
+    count(str: string, search: string) { 
+        var result = 0;
+        for (let i = 0; i < str.length; i++)
+            if (str[i] === search) result++;
+        return result;
+    };
+
+    isVariable(str: string): boolean { return str.indexOf("{")  >= 0 && str.indexOf("}") >= 0; }
     isNumber(str: string): boolean { 
         var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "-"];
         for (let i = 0; i < str.length; i++) {
@@ -145,23 +153,38 @@ export class MarkdownVerifier {
         this.initialize();
 
         this.errors = [];
+
+        content = this.verifyBuildFlags(content);
+
         var md = new MarkdownContent(content, filePath);
         // console.log(md.sections[0]);
         // md.sections[0].log();
 
         this.verifyMetadata(md);
-        // TODO refactor
-        // var verContent = this.verifyLinksToTopic(content);
+     
+        for (const section of md.sections) {
+
+            if (section.isHeader()) 
+                this.verifySectionHeader(section);
+            else if (section.isCode()) 
+                this.verifySectionCode(section);
+            else if (section.isSample()) 
+                this.verifySectionSample(section);
+            else if (section.isTable()) 
+                this.verifySectionTable(section);
+            // else 
+            //     this.verifySectionParagraph(section);
+        }
 
         this.filePath = filePath;
         this.isValid = true;
-        this.error = "";
+        // this.error = "";
  
 
         // TODO cleanup markdown
-        content = this.cleanup(content, filePath);
+        // content = this.cleanup(content, filePath);
   
-        var sections: string[] = content.split(DOUBLE_LINE); 
+        // var sections: string[] = content.split(DOUBLE_LINE); 
 
         // console.log(sections[0]);
         // console.log("-------------------------------------")
@@ -178,31 +201,6 @@ export class MarkdownVerifier {
         //     // console.log(">>>" + section + "<<<");
         //     // console.log(section);
 
-        //     if (sectionType === SectionType.Metadata) {
-        //         this.verifySectionMetadata(section);
-        //     }
-        //     else if (sectionType === SectionType.Header) {
-        //         this.verifySectionHeader(section);
-        //     }
-        //     else if (sectionType === SectionType.Sample) {
-        //         this.verifySectionSample(section);
-        //     }
-        //     else if (sectionType === SectionType.Code) {
-        //         this.verifySectionCode(section);
-        //     }
-        //     else if (sectionType === SectionType.Table) {
-        //         this.verifySectionTable(section);
-        //     }
-        //     else if (sectionType === SectionType.Paragraph) {
-        //         this.verifySectionParagraph(section);
-        //     } 
-        //     else if (sectionType === SectionType.Bullet) {
-        //         this.verifySectionParagraph(section);
-        //     } 
-        //     else {                
-        //         // console.log("verifySection Unknown");
-        //     }
-
         //     this.isValid = this.error === "";
 
         //     if (!this.isValid) {
@@ -215,11 +213,16 @@ export class MarkdownVerifier {
         markdown.filePath = filePath;
         markdown.content = content;
         markdown.isValid = this.isValid;
-        markdown.error = this.error;
+        // markdown.error = this.error;
 
-        if (this.errors.length > 0){
-            markdown.error = this.errors.join('\r\n');
+        if (this.errors.length > 0) {
             markdown.isValid = false;
+            markdown.error = this.errors.join(NEWLINE);
+            LOG.error(markdown.error);
+            // for (const msg of this.errors) {
+            //     LOG.error(msg);
+            // }
+            // console.log(markdown.error);
         } else {
             markdown.isValid = true;
         }
@@ -229,7 +232,7 @@ export class MarkdownVerifier {
 
     verifyMetadata(md: MarkdownContent) {
         if (md.metadata === undefined || !md.metadata.hasContent()) {
-            this.errors.push("ERROR: metadata is missing wrapped with '---' in " + md.filePath);
+            this.errors.push("ERROR: metadata is missing wrapped with '---'");
         } else {
             // if (md.isLocalEN()) {
             //     md.metadata.language = '_language: en';
@@ -249,95 +252,261 @@ export class MarkdownVerifier {
 
             //var meta = md.metadata.toString();
             if (!md.metadata.hasTitle())
-                this.errors.push("ERROR: metadata is missing 'title:' in " + md.filePath);
+                this.errors.push("Metadata is missing 'title:'");
             else if (!md.metadata.hasDescription())
-                this.errors.push("ERROR: metadata is missing '_description:' in " + md.filePath);
+                this.errors.push("Metadata is missing '_description:'");
             else if (!md.metadata.hasKeywords())
-                this.errors.push("ERROR: metadata is missing '_keywords:' in " + md.filePath);
+                this.errors.push("Metadata is missing '_keywords:'");
             else if (!md.metadata.hasLanguage() && !md.isLocalEN())
-                this.errors.push("ERROR: metadata is missing '_language:' in " + md.filePath);
+                this.errors.push("Metadata is missing '_language:'");
              
             if (md.metadata.mentionedTypes.includes("`"))
-                this.errors.push('ERROR: metadata has backticks (`) instead of double quotes (") ' + md.filePath);
+                this.errors.push("Metadata has backticks (`) instead of double quotes (\") in: " + md.metadata.mentionedTypes);
+            else if (md.metadata.mentionedTypes.includes("'"))
+                this.errors.push("Metadata has single quote (') instead of double quotes (\") in: " + md.metadata.mentionedTypes);
         
             if (md.metadata.hasMentionedLinks())
             {
                 if (!md.metadata.hasMentionedTypes() && !md.metadata.hasSharedComponents())
-                    this.errors.push("ERROR: metadata is missing 'mentionedTypes:' in " + md.filePath);
-                else if (md.metadata.mentionedLinks.includes("`true`"))
-                    this.errors.push("ERROR: replace `true` with **true** in " + md.filePath);
+                    this.errors.push("Metadata is missing 'mentionedTypes'");
+                
+                if (md.metadata.mentionedLinks.includes("`true`"))
+                    this.errors.push("Source keyword `true` is tagged as API members instead of **true**");
                 else if (md.metadata.mentionedLinks.includes("`false`"))
-                    this.errors.push("ERROR: replace `false` with **false** in " + md.filePath);
+                    this.errors.push("Source keyword `false` is tagged as API members instead of **false**");
             }
         }
     }
 
-    verifySectionMetadata(content: string) {
-        var meta = new MarkdownMetadata22();
+    
+    verifyBuildFlags(content: string): string {
+    
+        // finding all build flags for components
+        var lines = content.split(NEWLINE);
 
-        var lines = content.split(NEWLINE); 
+        var platformBuildFlags: string[] = [];
+        var componentsStartFlags: string[] = [];
+        var componentsEndFlags: string[] = [];
+ 
         for (let i = 0; i < lines.length; i++) {
-            if (lines[i].startsWith("title")) {
-                meta.hasTitle = true; 
-            } else if (lines[i].startsWith("_description")) {
-                meta.hasDescription = true; 
-            } else if (lines[i].startsWith("_keywords")) {
-                meta.hasKeywords = true; 
-            } else if (lines[i].startsWith("namespace")) {
-                meta.hasNamespace = true; 
-            } else if (lines[i].startsWith("mentionedTypes")) {
-                meta.hasTypes = true; 
+            let line = lines[i].trim();
 
-                if (lines[i].indexOf('`') > 0) {
-                    this.error = "Metadata cannot contain backticks in 'mentionedTypes'";
-                } else if (lines[i].indexOf("'") > 0) {
-                    this.error = "Metadata cannot contain single quotes in 'mentionedTypes'";
+            if (line.startsWith("<!-- end:")) {
+                if (!platformBuildFlags.includes(line)) {
+                     platformBuildFlags.push(line);
                 }
-                // TODO
-                // var types = lines[i].replace("mentionedTypes: ", "").replace("[","").replace("]","").trim().split(',');
+            }
+
+            if (line.startsWith("<!-- ComponentStart")) {
+                if (! componentsStartFlags.includes(line)) {
+                     componentsStartFlags.push(line);
+                }
+            }
+            if (line.startsWith("<!-- ComponentEnd")) {
+                if (!componentsEndFlags.includes(line)) {
+                    componentsEndFlags.push(line);
+                }
+            }
+        }
+    
+        // verifying matching platform build flags:
+        for (const platformFlagEnd of platformBuildFlags) {
+            var platformFlagStart = platformFlagEnd.replace('end: ', '');
+            var platformFlagStartCount = this.count(content, platformFlagStart);
+            var platformFlagEndCount = this.count(content, platformFlagEnd);
+
+            if (platformFlagStartCount < platformFlagEndCount) {
+                this.errors.push('Topic is missing "' + platformFlagStart + '" platform flag');
+            } else if (platformFlagStartCount > platformFlagEndCount) {
+                this.errors.push('Topic is missing "' + platformFlagEnd + '" platform flag');
+            } else {
+                content = content.split(platformFlagStart).join("");
+                content = content.split(platformFlagEnd).join("");
             }
         }
 
-        if (!meta.hasTitle) this.error = "Metadata is missing 'title'";
-        else if (!meta.hasKeywords) this.error = "Metadata is missing '_keywords'";
-        else if (!meta.hasDescription) this.error = "Metadata is missing '_description'";
-        else if (!meta.hasNamespace) this.error = "Metadata is missing 'namespace'";
-        else if (!meta.hasTypes) this.error = "Metadata is missing 'mentionedTypes'";
+        // verifying if the topic has matching component's start flags
+        for (const buildFlagStart of  componentsStartFlags) {
+            var buildFlagEnd = buildFlagStart.replace('ComponentStart','ComponentEnd');
+            var countBuildFlagStart = this.count(content, buildFlagStart);
+            var countBuildFlagEnd = this.count(content, buildFlagEnd);
 
-        // console.log("verifySectionMetadata");
+            if (countBuildFlagStart < countBuildFlagEnd) {
+                this.errors.push('Topic is missing "' + buildFlagStart + '" component flag');
+            } else if (countBuildFlagStart > countBuildFlagEnd) {
+                this.errors.push('Topic is missing "' + buildFlagEnd + '" component flag');
+            }
+        }
+
+        // verifying if the topic has matching component's end flags
+        for (const buildFlagEnd of componentsEndFlags) {
+            var buildFlagStart = buildFlagEnd.replace('ComponentEnd','ComponentStart');
+            var countBuildFlagStart = this.count(content, buildFlagStart);
+            var countBuildFlagEnd = this.count(content, buildFlagEnd);
+
+            if (countBuildFlagStart < countBuildFlagEnd) {
+                this.errors.push('Topic is missing "' + buildFlagStart + '" component flag');
+            } else if (countBuildFlagStart > countBuildFlagEnd) {
+                this.errors.push('Topic is missing "' + buildFlagEnd + '" component flag');
+            }
+        }
+
+        if ( componentsStartFlags.length > 0 || componentsEndFlags.length > 0) {
+
+            for (const buildFlag of  componentsStartFlags) {
+                content = content.split(buildFlag).join("");
+            } 
+            for (const buildFlag of componentsEndFlags) {
+                content = content.split(buildFlag).join("");
+            } 
+
+            // LOG.action('verifyBuildFlags',  componentsStartFlags.length + ' ' + componentsEndFlags.length);
+            // console.log(componentsStartFlags);
+            // console.log(componentsEndFlags);
+        }
+
+        return content;
     }
 
-    verifySectionParagraph(content: string) {
-        // console.log("verifySectionParagraph");
-        // var words = content.split(' ');
-        // for (var word of words) {
-            //TODO
+    verifySectionHeader(section: MarkdownSection) {
+        // console.log("verifySectionHeader >> " + section.content);
+        
+        // var forbidden: string[] = ['`', '\'', '"', '@', '$', '%', '^', '*', '=', '+', '_', '!', '~', '.', '<', ';', ':', '|', '\\', '<', '>', '[', ']', ]
+        // for (const symbol of forbidden) {
+        //     if (section.content.indexOf(symbol) >= 0) {
+        //         this.errors.push('Header has invalid character (' + symbol + ') in: ' + section.content);
+        //         break;
+        //     }
         // }
+       
     }
 
-
-    verifySectionHeader(content: string) {
-        // console.log("verifySectionHeader");
-    }
-
-    verifySectionCode(content: string) {
+    verifySectionCode(section: MarkdownSection) {
         // console.log("verifySectionCode");
 
         // starts with ```LANG
         // end with ```
     }
 
-    verifySectionTable(content: string) {
+    verifySectionTable(section: MarkdownSection) {
         // console.log("verifySectionNote");
     }
 
-    verifySectionNote(content: string) {
+    verifySectionNote(section: MarkdownSection) {
         // console.log("verifySectionNote");
     }
  
+    verifySectionSample(section: MarkdownSection) {
+        // console.log("verifySectionSample >> " + section.content);
+        this.isValid = false;
 
-    verifyLinkToTopic(content: string) {
-        // console.log("verifyLinkToTopic");
+        var sample = section.content;
+        // console.log(content);
+
+        if (!sample.startsWith('`')) {
+            this.errors.push('Sample does not start with backtick (`): '+ sample);
+        } else if (!sample.endsWith('`')) {
+            this.errors.push('Sample does not end with backtick (`): '+ sample);
+        }
+
+        if (sample.indexOf('sample=') < 0) {
+            this.errors.push('Sample is missing a link in: '+ sample);
+        } else if (sample.indexOf('height=') < 0) {
+            this.errors.push('Sample is missing "height" setting in: '+ sample);
+        } else if (sample.indexOf('alt=') < 0) {
+            this.errors.push('Sample is missing "alt" setting in: '+ sample);
+        } 
+
+        var parts = sample.split('`').join('').split(', ');
+        // console.log(words);
+        for (var word of parts) {
+            var item = word.trim();
+            if (item.startsWith("sample=")) {
+                var link = item.replace('sample=','').split('"').join('');
+                if (!link.startsWith("/")) {
+                    this.errors.push('Sample link must start with "/" in: '+ sample);
+                }
+                if (link.endsWith("/")) {
+                    this.errors.push('Sample link cannot end with "/" in: '+ sample);
+                } 
+            } 
+            if (item.startsWith("height=")) {
+                var height = item.replace('height=','').split('"').join('');
+                if (!this.isNumber(height))
+                    this.errors.push('Sample must have "height" set to a numeric value in: ' + sample);
+            } 
+        }
+
+    }
+
+    verifySectionParagraph(section: MarkdownSection) {
+        var paragraph = section.content;
+        if (paragraph === "") return;
+
+        // console.log("------------------------")
+        // LOG.action("verifySectionParagraph:", NEWLINE + paragraph);
+               
+        var brackets: any[] = [ 
+            { left: '{', right: '}' },
+            { left: '(', right: ')' },
+            { left: '[', right: ']' },
+            { left: '**', right: '**' },
+            { left: '`', right: '`' },
+        ];
+
+        for (var bracket of brackets) {
+            var countLeftBrackets = this.count(paragraph, bracket.left);
+            var countRightBrackets = this.count(paragraph, bracket.right);
+    
+            if (countLeftBrackets < countRightBrackets) {
+                this.errors.push('Paragraph is missing "' + bracket.left + '" in:' + NEWLINE + paragraph);
+            } else if (countLeftBrackets > countRightBrackets) {
+                this.errors.push('Paragraph is missing "' + bracket.right + '" in:' + NEWLINE + paragraph);
+            }
+        }
+        
+        var words = paragraph.split(' ');
+        for (var word of words) {
+
+            if (word.indexOf("{") >= 0 && word.indexOf("}") >= 0){
+                this.verifyVariable(word);
+            }
+            else if (word.indexOf("`") >= 0) {
+                this.verifyLinkToAPI(word);
+            }
+            else if (word.indexOf("(") >= 0 && word.indexOf("(") >= 0)
+            {
+                if (word.indexOf("http") >= 0 || word.indexOf("www.") >= 0)
+                    this.verifyLinkToSite(word);
+                else if (word.indexOf(".md") >= 0)
+                    this.verifyLinkToTopic(word);
+                
+            }
+        }
+    }
+
+    verifyVariable(str: string) {
+        // LOG.action("verifyVariable >>", str);
+
+        // TODO check if the variable matches with existing variable in docsConfig.json
+    }
+ 
+    verifyLinkToTopic(str: string) {
+        // LOG.action("verifyLinkToTopic >>", str);
+
+        // TODO check if the link to a topic matches with existing topics
+    }
+
+    verifyLinkToSite(str: string) {
+        // LOG.action("verifyLinkToSite >>", str);
+    }
+
+    verifyLinkToAPI(str: string) {
+        // LOG.action("verifyLinkToAPI >>", str.trim());
+
+        // 'true', 'false' 'string' 'number' 'boolean'
+
+        // TODO check if the api member matches with existing api mappings
     }
 
     verifyDocsVariable(content: string) {
@@ -357,106 +526,8 @@ export class MarkdownVerifier {
         //TODO load docsConfig.json to verify variables
 
     }
-
-    
-    verifyLinksToTopic(fileContent: string): string {
-
-        console.log("verifyLinksToTopic");
-        
-        let lines = fileContent.split('\n');
-        for (let i = 0; i < lines.length; i++) {
-            const line = lines[i];
-            let words = line.split(' ');
-            for (let w = 0; w < words.length; w++) {
-                let word = words[w];
-                let hasPlatformVariable = word.toLowerCase().indexOf("{platform") >= 0;
-                if (word.indexOf(".md#") >= 0 && hasPlatformVariable) {
-                    word = word.split('{platform}').join('{PlatformLower}');
-                    word = word.split('{Platform}').join('{PlatformLower}');
-                    word = word.split('{platformlower}').join('{PlatformLower}');
-                    if (word !== words[w]) {
-                        console.log("auto-correct link: \n" + words[w] + " to \n" + word);
-                        words[w] = word;
-                    }
-                }
-            }
-            lines[i] = words.join(' ');
-        }
-        return lines.join('\n');
-    }
-
-    verifySectionSample(content: string) {
-        // console.log("verifySectionSample");
-        this.isValid = false;
-
-        // console.log(content);
-
-        if (content.indexOf('sample=') < 0) {
-            this.error = 'Sample is missing a link in: '+ content;
-        } else if (content.indexOf('height=') < 0) {
-            this.error = 'Sample is missing "height" setting in: '+ content;
-        } else if (content.indexOf('alt=') < 0) {
-            this.error = 'Sample is missing "alt" setting in: '+ content;
-        } 
-
-        var words = content.split('`').join('').split(', ');
-        // console.log(words);
-        for (var word of words) {
-            var item = word.trim();
-            if (item.startsWith("sample=")) {
-                var link = item.replace('sample=','').split('"').join('');
-                if (!link.startsWith("/")) {
-                    this.error = 'Sample link must start with "/" in: '+ content;
-                }
-                if (link.endsWith("/")) {
-                    this.error = 'Sample link cannot end with "/" in: '+ content;
-                } 
-            } 
-            if (item.startsWith("height=")) {
-                var height = item.replace('height=','').split('"').join('');
-                if (!this.isNumber(height)) this.error = 'Sample must have "height" set to a numeric value in: ' + content;
-            } 
-        }
-
-    }
-
-    verifyLinkToSample(str: string, filePath: string, lineIndex: number) {
-
-    }
-
-    verifyLinksAPI(fileContent: string, filePath: string): any {
-        var issues: any[] = [];
-        var lines = fileContent.split('\n');
-        var links = [];
-        for (let i = 0; i < lines.length; i++) {
-            let line = lines[i];
-            if (line.includes('| ')) continue;
-
-            let words = line.split(' ');
-            for (const word of words) {
-
-                var item = word.replace('\r/g', '').replace(',', '');
-                if (item.includes('sample=')) continue;
-                if (item.includes('```')) continue;
-
-                if (item.includes('-')) continue;
-                if (item.includes('<')) continue;
-                if (item.includes('`string')) continue;
-                if (item.includes('`number')) continue;
-                if (item.includes('`boolean')) continue;
-
-                if (item.startsWith('`')) {
-                    var check = this.verifyLinkToAPI(item, filePath, i)
-                    links.push(item);
-                    // console.log( filePath + ':' + i + " " + item);
-                }
-            }
-        }
-
-        console.log(links);
-    }
-
-    verifyLinkToAPI(str: string, filePath: string, lineIndex: number): string | null {
+  
+    verifyLinkToAPI22(str: string, filePath: string, lineIndex: number): string | null {
 
         var location = filePath + ":" + lineIndex;
         var skipTypes = ["boolean", "number", "string", "class"];

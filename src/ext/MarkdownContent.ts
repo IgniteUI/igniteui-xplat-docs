@@ -1,5 +1,8 @@
 // this file provides classes for working with markdown content
 
+var NEWLINE: string = '\r\n';
+var DOUBLE_LINE: string = '\r\n\r\n'; 
+
 export class MarkdownContent {
     public sections: MarkdownSection[];
     public metadata: MarkdownMetadata;
@@ -45,24 +48,18 @@ export class MarkdownContent {
         if (parts === undefined) return;
 
         if (parts.length < 3) { // metadata missing
-            // console.log('Failed on creating MarkdownContent from file without metadata ' + path);
-            // console.log(content);
-            // return;
-
             this.metadata = new MarkdownMetadata('');
-            this.sectionStrings = parts[0].split('\n## ');
+            this.sectionStrings = parts[0].split(DOUBLE_LINE);
         } else { // metadata found
             this.metadata = new MarkdownMetadata(parts[1]);
             this.metadata.mentionedLinks = this.apiMembers;
-            this.sectionStrings = parts[2].split('\n## ');
-        }
-        // console.log("parts: " + parts.length);
-        // console.log("parts0:" + parts[0]);
-        // console.log("parts1:" + parts[1]);
-        // console.log("parts2:" + parts[2]);
+            this.sectionStrings = parts[2].split(DOUBLE_LINE);
+        } 
 
-        for (const s of this.sectionStrings) {
-            var section = new MarkdownSection('## ' + s);
+        // TODO store sectionStrings as local var
+        for (const str of this.sectionStrings) {
+            // var section = new MarkdownSection(str.trim());
+            var section = new MarkdownSection(str);
             section.index = this.sections.length;
             this.sections.push(section);
             // console.log("==================== section " +  this.sections.length + " ==================================================");
@@ -80,16 +77,24 @@ export class MarkdownSection {
     public lines: MarkdownLines = new MarkdownLines();
     
     public index: number = 0;
-    // public type: string = "";
+    public type: string = "";
 
-    public withMetadata() { return this.content.indexOf('---') === 0; }
-    public withTopicList() { return this.content.indexOf('## Additional Resources') === 0; }
-    public withApiList() { return this.content.indexOf('## API References') === 0; }
-    public withCodeViewer() { return this.content.indexOf('<code-view') === 0; }
-
-    public withParagraphs() {
-        return !this.withMetadata() && !this.withCodeViewer() && !this.withTopicList();
-    }
+    // public withMetadata() { return this.content.indexOf('---') === 0; }
+    // public withTopicList() { return this.content.indexOf('## Additional Resources') === 0; }
+    // public withApiList() { return this.content.indexOf('## API References') === 0; }
+    // public withCodeViewer() { return this.content.indexOf('<code-view') === 0; }
+    // public withParagraphs() {
+    //     return !this.withMetadata() && !this.withCodeViewer() && !this.withTopicList();
+    // }
+  
+    public isHeader(): boolean { return this.content.startsWith("#"); }
+    public isCode(): boolean { return this.content.startsWith("```") || this.content.startsWith("export class"); }  
+    public isSample(): boolean {  return this.content.startsWith("`sample="); }
+    public isNote(): boolean {  return this.content.startsWith("> "); }
+    public isTable(): boolean { return this.content.startsWith("| "); }    
+    public isImage(): boolean {  return this.content.startsWith("<img "); }
+    public isDivisor(): boolean {  return this.content.startsWith("<div "); }
+    public isBullet(): boolean { return this.content.startsWith("* "); }
 
     public log()  {
         console.log("MarkdownSection {");
@@ -122,11 +127,13 @@ export class MarkdownSection {
 
         this.content = content;
         var contentLines = [];
-        if (this.withTopicList() || this.withApiList() || this.withMetadata()) {
-            contentLines = content.split('\r\n');
-        } else { // paragraphs
-            contentLines = content.split('\r\n\r\n');
-        }
+        // if (this.withTopicList() || this.withApiList() || this.withMetadata()) {
+        //     contentLines = content.split('\r\n');
+        // } else { // paragraphs
+        //     contentLines = content.split('\r\n\r\n');
+        // }
+
+        contentLines = content.split(NEWLINE);
 
         // this.content = content.split('\r\n\r\n').join('\n');
 
@@ -279,6 +286,9 @@ export class LOG {
         hidden: "\x1b[8m",
         text: "\x1b[32m",
         number: "\x1b[33m",
+        action: "\x1b[34m",
+        warning: "\x1b[33m", 
+        error: "\x1b[31m",       
         
         fg: {
             black: "\x1b[30m",
@@ -316,6 +326,27 @@ export class LOG {
 
     public static line(name: string, value: any) {
         console.log(LOG.fmt(name, value));
+    }
+
+    public static action(name: string, str?: string) {
+        if (str === undefined)
+            console.log(LOG.Colors.action + name + LOG.Colors.reset);  
+        else 
+            console.log(LOG.Colors.action + name + LOG.Colors.reset + " " + str + LOG.Colors.reset);
+    }
+
+    public static error(name: string, str?: string) {
+        if (str === undefined)
+            console.log(LOG.Colors.error + "ERROR: " + name + LOG.Colors.reset);  
+        else 
+            console.log(LOG.Colors.error + "ERROR: " + name + LOG.Colors.reset + " " + str + LOG.Colors.reset);
+    }
+
+    public static warn(name: string, str?: string) {
+        if (str === undefined)
+            console.log(LOG.Colors.warning + " WARN: " + name + LOG.Colors.reset);  
+        else 
+            console.log(LOG.Colors.warning + " WARN: " + name + LOG.Colors.reset + " " + str + LOG.Colors.reset);
     }
 
     public static lines(items: any[]) {

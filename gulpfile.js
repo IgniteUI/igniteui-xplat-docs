@@ -1125,63 +1125,6 @@ exports.copyTemplateBackup = copyTemplateBackup;
 function verifyMarkdown(cb) {
     ensureEnvironment();
     if (transformer === null || transformer === undefined) {
-        if (cb) cb("transformer failed to load"); return;
-    }
-    console.log('verifying markdown files:');
-
-    var filesCount = 0;
-    var errorsCount = 0;
-    gulp.src([
-    // 'doc/en/**/*.md',
-    // 'doc/jp/**/*.md',
-    // 'doc/kr/**/*.md',
-    'doc/en/**/chart-data-legend.md',
-    // 'doc/en/**/charts/**/*.md',
-    // 'doc/en/**/zoomslider*.md',
-    // 'doc/en/**/point-chart.md',
-    // 'doc/jp/components/grids/_shared/cell-editing.md',
-    '!doc/**/obsolete/**/*.md',
-    ])
-    .pipe(es.map(function(file, fileCallback) {
-        var fileContent = file.contents.toString();
-        var filePath = file.dirname + path.sep + file.basename
-        // filePath = '.\\doc\\' + filePath.split('doc\\')[1];
-        console.log('verifying: ' + filePath);
-        filesCount++;
-        var result = transformer.verifyMarkdown(fileContent, filePath);
-        if (result.isValid) {
-            // console.log('verified:  ' + filePath);
-            // fileContent = result.fileContent;
-            //file.contents = Buffer.from(fileContent);
-            // auto-update topics with corrections if any
-            fs.writeFileSync(filePath, result.fileContent);
-        } else {
-            errorsCount++;
-        }
-        fileCallback(null, file);
-    }))
-    .on("end", () => {
-        if (errorsCount > 0) {
-            var msg = "Correct above " + errorsCount + " errors in markdown files!";
-            if (cb) cb(new Error(msg)); else console.log(msg);
-            // if (cb) cb(msg); else console.log(msg);
-        } else {
-            var msg = 'verifying .md files ... done - checked ' + filesCount + " files";
-            console.log(msg);
-            if (cb) cb();
-        }
-    })
-    .on("error", (err) => {
-        console.log("Error in verifyMarkdown()");
-        if (cb) cb(err);
-    });
-}
-exports.verifyMarkdown = verifyMarkdown;
-
-
-function verifyMarkdown2(cb) {
-    ensureEnvironment();
-    if (transformer === null || transformer === undefined) {
         if (cb) cb("MarkdownTransformer failed to load"); return;
     }
 
@@ -1196,11 +1139,12 @@ function verifyMarkdown2(cb) {
     var filesCount = 0;
     var errorsCount = 0;
     gulp.src([
-    // 'doc/en/**/*.md',
-    // 'doc/jp/**/*.md',
-    // 'doc/kr/**/*.md',
-    'doc/en/**/chart-data-legend.md',
+    'doc/en/**/*.md',
+    'doc/jp/**/*.md',
+    'doc/kr/**/*.md',
+    // 'doc/en/**/chart-data-legend.md',
     // 'doc/en/**/charts/**/*.md',
+    // 'doc/en/**/grids/**/*.md',
     // 'doc/en/**/zoomslider*.md',
     // 'doc/en/**/point-chart.md',
     // 'doc/jp/components/grids/_shared/cell-editing.md',
@@ -1228,7 +1172,7 @@ function verifyMarkdown2(cb) {
     .on("end", () => {
         if (errorsCount > 0) {
             var msg = "Correct above " + errorsCount + " errors in markdown files!";
-            if (cb) cb(new Error(msg)); else console.log(msg);
+            if (cb) cb(new Error(msg)); else console.error(msg);
             // if (cb) cb(msg); else console.log(msg);
         } else {
             var msg = 'verifying .md files ... done - checked ' + filesCount + " files";
@@ -1241,7 +1185,7 @@ function verifyMarkdown2(cb) {
         if (cb) cb(err);
     });
 }
-exports.verifyMarkdown2 = verifyMarkdown2;
+exports.verifyMarkdown = verifyMarkdown;
 
 
 // TODO-MT remove obsolete

@@ -1978,61 +1978,62 @@ export class MarkdownTransformer {
     //     return generatedFiles;
     // }
 
+    // TODO move to MarkdownVerifier
     updateApiSection(fileContent: string, filePath: string): string {
-        var newApiMembers = [];
+        var newApiMembers: string[] = [];
 
         var md = new MarkdownContent(fileContent, filePath);
 
         var apiSection = new MarkdownSection('');
-        for (const section of md.sections) {
-            if (section.index === 0) continue;
+        // for (const section of md.sections) {
+        //     if (section.index === 0) continue;
 
-            if (section.withApiList()) {
-                apiSection = section;
-                // console.log("==================== API " +  section.index + " ==================================================");
-                // console.log(section.content);
-                for (const line of section.lines) {
-                    if (!line.isListItem()) continue;
+        //     if (section.withApiList()) {
+        //         apiSection = section;
+        //         // console.log("==================== API " +  section.index + " ==================================================");
+        //         // console.log(section.content);
+        //         for (const line of section.lines) {
+        //             if (!line.isListItem()) continue;
 
-              //      console.log(line.index + " " + line.content);
-                }
+        //       //      console.log(line.index + " " + line.content);
+        //         }
 
-            } else if (section.withParagraphs()) {
-                // console.log("==================== section " +  section.index + " ==================================================");
-                // console.log(section.lines.length);
-                // console.log(section.content);
-                for (const line of section.lines) {
-                    if (line.isParagraph()) {
-                       // console.log(line.index + "\n" + line.content);
-                        // var members = line.getMembers();
-                        var words = line.content.split(' ');
-                        // apiMembers.push.apply(apiMembers, members);
-                        for (const word of words) {
-                            if (word.indexOf('`') === 0 &&
-                                newApiMembers.indexOf(word) === -1)
-                                newApiMembers.push('- ' + word);
-                        }
-                    }
-                    //
-                }
-            }
-        }
+        //     } else if (section.withParagraphs()) {
+        //         // console.log("==================== section " +  section.index + " ==================================================");
+        //         // console.log(section.lines.length);
+        //         // console.log(section.content);
+        //         for (const line of section.lines) {
+        //             if (line.isParagraph()) {
+        //                // console.log(line.index + "\n" + line.content);
+        //                 // var members = line.getMembers();
+        //                 var words = line.content.split(' ');
+        //                 // apiMembers.push.apply(apiMembers, members);
+        //                 for (const word of words) {
+        //                     if (word.indexOf('`') === 0 &&
+        //                         newApiMembers.indexOf(word) === -1)
+        //                         newApiMembers.push('- ' + word);
+        //                 }
+        //             }
+        //             //
+        //         }
+        //     }
+        // }
 
         // console.log("==============================================================");
 
-        for (const api of newApiMembers) {
-            var apiMissing = apiSection.content.indexOf(api) === -1;
-            if (apiMissing) {
-                //apiSection.content += api;;
-                var line = new MarkdownLine(api)
-                line.index = apiSection.lines.length;
-                apiSection.lines.push(line);
-            }
-            // for (const line of apiSection.lines) {
-            //     if (line.)
-            // }
-        }
-        apiSection.lines.sort((a, b) => (a.content > b.content) ? 1 : -1)
+        // for (const api of newApiMembers) {
+        //     var apiMissing = apiSection.content.indexOf(api) === -1;
+        //     if (apiMissing) {
+        //         //apiSection.content += api;;
+        //         var line = new MarkdownLine(api)
+        //         line.index = apiSection.lines.length;
+        //         apiSection.lines.push(line);
+        //     }
+        //     // for (const line of apiSection.lines) {
+        //     //     if (line.)
+        //     // }
+        // }
+        // apiSection.lines.sort((a, b) => (a.content > b.content) ? 1 : -1)
 
         var orgApiContent = apiSection.content;
         var newApiContent = '';
