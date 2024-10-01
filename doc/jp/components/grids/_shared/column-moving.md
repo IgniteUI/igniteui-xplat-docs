@@ -407,7 +407,7 @@ $dark-grid-column-moving-theme: grid-theme(
 
 ## その他のリソース
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
@@ -417,7 +417,7 @@ $dark-grid-column-moving-theme: grid-theme(
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
 * [検索](search.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

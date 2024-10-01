@@ -787,7 +787,7 @@ function headSelectorTemplate(ctx: IgcHeadSelectorTemplateContext) {
 
 ## その他のリソース
 
-<!-- ComponentStart:  Grid, TreeGrid -->
+<!-- ComponentStart: Grid, TreeGrid -->
 * [選択](selection.md)
 * [セル選択](cell-selection.md)
 * [ページング](paging.md)
@@ -798,7 +798,7 @@ function headSelectorTemplate(ctx: IgcHeadSelectorTemplateContext) {
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [仮想化とパフォーマンス](virtualization.md)
-<!-- ComponentEnd:  Grid, TreeGrid -->
+<!-- ComponentEnd: Grid, TreeGrid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

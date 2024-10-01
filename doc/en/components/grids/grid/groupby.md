@@ -2,7 +2,7 @@
 title: {Platform} Grid Group By | Group by multiple fields | Infragistics
 _description: Configure group by that allows visualizing of data records in {Platform} Material table, visualize the grouped data in separate and convenient column group.
 _keywords: {Platform}, Grid, {ProductName}, group by, Infragistics
-mentionedTypes: ['Infragistics.Controls.Grid']
+mentionedTypes: ["Infragistics.Controls.Grid"]
 namespace: Infragistics.Controls
 ---
 
@@ -468,7 +468,7 @@ The grouping UI supports the following keyboard interactions:
    - <kbd>SHIFT</kbd> + <kbd>RIGHT</kbd> - moves the focused chip right, changing the grouping order, if possible
    - <kbd>SPACE</kbd> - changes the sorting direction
    - <kbd>DELETE</kbd> - ungroups the field
-   - The seperate elements of the chip are also focusable and can be interacted with using the <kbd>ENTER</kbd> key.
+   - The separate elements of the chip are also focusable and can be interacted with using the <kbd>ENTER</kbd> key.
 
 <!-- WebComponents, Angular, React -->
 

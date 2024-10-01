@@ -2,7 +2,7 @@
 title: {Platform} Stepper Component - {ProductName}
 _description: {Platform} Stepper component is used to visualize content as a process and to show its progress by dividing the content into logical steps. Try it for FREE.
 _keywords: {Platform} Stepper, {ProductName}, Infragistics
-mentionedTypes: ['Stepper']
+mentionedTypes: ["Stepper"]
 ---
 
 # {Platform} Stepper Overview

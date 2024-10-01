@@ -3,7 +3,7 @@ title: {Platform} Map | Data Visualization Tools | Infragistics
 _description: Use Infragistics' {Platform} JavaScript map to display heat map imagery. Check out {ProductName} map demos!
 _keywords: {Platform} map, heat map imagery, {ProductName}, Infragistics
 _language: kr
-mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
+mentionedTypes: ["XamGeographicMap", "ShapefileConverter"]
 ---
 
 # {Platform} Displaying Heat Imagery

@@ -771,7 +771,7 @@ Then set the related CSS properties to this class:
 * `Column`
 
 ## Additional Resources
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -780,7 +780,7 @@ Then set the related CSS properties to this class:
 * [Column Moving](column-moving.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 

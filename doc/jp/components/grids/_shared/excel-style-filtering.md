@@ -1056,7 +1056,7 @@ $custom-drop-down: drop-down-theme(
 
 ## その他のリソース
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [ソート](sorting.md)
@@ -1065,7 +1065,7 @@ $custom-drop-down: drop-down-theme(
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 
 コミュニティに参加して新しいアイデアをご提案ください。

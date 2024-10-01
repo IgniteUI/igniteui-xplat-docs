@@ -2,7 +2,7 @@
 title: {Platform} Point Chart | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Point Chart
 _keywords: {Platform} Charts, Point Chart, Infragistics
-mentionedTypes: ["DomainChart", "CategoryChart", "CategoryChartType", "Legend", 'Series']
+mentionedTypes: ["DomainChart", "CategoryChart", "CategoryChartType", "Legend", "Series"]
 namespace: Infragistics.Controls.Charts
 ---
 # {Platform} Point Chart

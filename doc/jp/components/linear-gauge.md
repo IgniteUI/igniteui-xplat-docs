@@ -2,7 +2,7 @@
 title: {Platform} リニア ゲージ | データ可視化ツール | インフラジスティックス
 _description: インフラジスティックスの {Platform} リニア ゲージ コントロールを使用して、シンプルで簡潔なビューでデータを可視化します。{ProductName} リニア ゲージの設定可能な要素について説明します。
 _keywords: linear gauge, {ProductName}, Infragistics, animation, labels, needle, scales, ranges, tick marks, リニア ゲージ, インフラジスティックス, アニメーション, ラベル, 針, スケール, 範囲, 目盛
-mentionedTypes: ['XamLinearGauge']
+mentionedTypes: ["XamLinearGauge"]
 namespace: Infragistics.Controls.Gauges
 _language: ja
 ---

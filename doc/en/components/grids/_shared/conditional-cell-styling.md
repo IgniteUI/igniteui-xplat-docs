@@ -1122,7 +1122,7 @@ function editDone(grid, evt) {
 
 ## Additional Resources
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Editing](editing.md)
 * [Paging](paging.md)
@@ -1138,7 +1138,7 @@ function editDone(grid, evt) {
 <!-- * [Toolbar](toolbar.md) -->
 * [Multi-column Headers](multi-column-headers.md)
 * [Size](size.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 
 Our community is active and always welcoming to new ideas.

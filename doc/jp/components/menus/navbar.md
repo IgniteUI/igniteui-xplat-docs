@@ -2,7 +2,7 @@
 title: {Platform} Navbar | インフラジスティックス
 _description: インフラジスティックスの {Platform} ナビゲーション バーは、シームレスな統合により最適な UI エクスペリエンスを提供し、ユーザーがアプリケーション内をスムーズに移動できるようにします。{ProductName} を使用してアプリケーションを改善します。
 _keywords: {Platform} navbar, {ProductName}, Infragistics, {Platform} ナビゲーション バー, インフラジスティックス
-mentionedTypes: ['Navbar']
+mentionedTypes: ["Navbar"]
 _language: ja
 ---
 

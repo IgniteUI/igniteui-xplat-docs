@@ -440,7 +440,7 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 
 ## Additional Resources
 
-<!-- ComponentStart:  Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, HierarchicalGrid -->
 * [Selection](selection.md)
 * [Row Selection](row-selection.md)
 * [Filtering](filtering.md)
@@ -450,7 +450,7 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Virtualization and Performance](virtualization.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 

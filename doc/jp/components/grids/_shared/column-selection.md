@@ -141,9 +141,9 @@ API 操作の詳細については、[API リファレンス](#api-リファレ�
 ```
 
 > [!Note]
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 >[行選択](row-selection.md)と[列選択](column-selection.md)は個別に操作できないことに注意してください。同じ`変数`に依存します。
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 **選択**と**ホバー**のスタイル設定を変更します。 <br/>
 
@@ -249,7 +249,7 @@ Internet Explorer 11 のコンポーネントをスタイル設定するには�
 
 ## その他のリソース
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [選択](selection.md)
 * [セル選択](cell-selection.md)
 * [ページング](paging.md)
@@ -260,7 +260,7 @@ Internet Explorer 11 のコンポーネントをスタイル設定するには�
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [仮想化とパフォーマンス](virtualization.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

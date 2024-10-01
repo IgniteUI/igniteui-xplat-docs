@@ -1409,7 +1409,7 @@ In addition to the steps above, we can also style the controls that are used for
 
 <!-- Blazor, WebComponents, React -->
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -1419,6 +1419,6 @@ In addition to the steps above, we can also style the controls that are used for
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
 * [Searching](search.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 <!-- end: Blazor, WebComponents, React -->

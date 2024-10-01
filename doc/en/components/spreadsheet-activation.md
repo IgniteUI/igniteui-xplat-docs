@@ -2,7 +2,7 @@
 title: {Platform} Spreadsheet | Activation | Infragistics
 _description: Learn how to use the activation feature of the  {Platform} spreadsheet control which is split between the cells, panes and worksheets. Check out the {ProductName} spreadsheet demos!
 _keywords: Excel Spreadsheet, activation, {ProductName}, Infragistics
-mentionedTypes: ['Spreadsheet']
+mentionedTypes: ["Spreadsheet"]
 
 ---
 # {Platform} Spreadsheet Activation
