@@ -2,7 +2,7 @@
 title: {Platform} Divider | レイアウト コントロール | インフラジスティックス
 _description: インフラジスティックスの {Platform} Avatar コンポーネントを使用して、画像、アイコン、またはイニシャルを表示します。
 _keywords: {ProductName}, UI controls, {Platform} widgets, Web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} DIvider components, {Platform} Divider controls, UI コントロール, {Platform} ウィジェット, Web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Divider コンポーネント, {Platform} Divider コントロール
-mentionedTypes: ['Divider']
+mentionedTypes: ["Divider"]
 _language: ja
 ---
 

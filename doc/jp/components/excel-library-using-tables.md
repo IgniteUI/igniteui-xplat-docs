@@ -2,7 +2,7 @@
 title: {Platform} Excel ライブラリ | テーブルの使用 | インフラジスティックス
 _description: インフラジスティックスの {Platform} Excel ライブラリのテーブル機能を使用して、行と列のデータを書式設定します。詳細については、{ProductName} Excel のチュートリアルを参照してください。
 _keywords: Excel library, tables, {ProductName}, Infragistics, Excel ライブラリ, テーブル, インフラジスティックス
-mentionedTypes: ['Workbook', 'WorksheetTable', 'Worksheet', 'SortSettings']
+mentionedTypes: ["Workbook", "WorksheetTable", "Worksheet", "SortSettings"]
 _language: ja
 ---
 # {Platform} テーブルの使用

@@ -2,7 +2,7 @@
 title: {Platform} Linear Progress | Linear Progress | Infragistics
 _description: Display a progress bar and customize its appearance with endless color and striping options with Linear Progress Indicator component.
 _keywords: {Platform} Linear Progress, {ProductName}, Infragistics
-mentionedTypes: ['LinearProgress']
+mentionedTypes: ["LinearProgress"]
 ---
 
 # {Platform} Linear Progress Overview

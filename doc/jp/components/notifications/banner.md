@@ -2,7 +2,7 @@
 title: {Platform} Banner | インフラジスティックス
 _description: {ProductName} Banner コンポーネントを使用すると、開発者は、モバイル アプリケーションやデスクトップ アプリケーション内に、短くて邪魔にならないメッセージ (およびオプションのアクション) を簡単に統合できます。
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Banner components, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Banner コンポーネント
-mentionedTypes: ['Banner']
+mentionedTypes: ["Banner"]
 _language: ja
 ---
 

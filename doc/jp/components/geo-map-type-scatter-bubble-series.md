@@ -2,7 +2,7 @@
 title: {Platform} マップ | データ可視化ツール | 散布図比例シリーズ | データ バインディング | インフラジスティックス
 _description: インフラジスティックスの {Platform} マップの散布図比例シリーズを使用して、アプリケーション内のデータで指定された地理的な地点のマーカーをプロットします。{ProductName} マップ シーリズについての詳細を表示します。
 _keywords: {Platform} map, scatter proportional series, {ProductName}, Infragistics, {Platform} マップ, 散布図比例シリーズ, インフラジスティックス
-mentionedTypes: ['XamGeographicMap', 'Series']
+mentionedTypes: ["XamGeographicMap", "Series"]
 _language: ja
 ---
 # {Platform} 地理バブル マップ

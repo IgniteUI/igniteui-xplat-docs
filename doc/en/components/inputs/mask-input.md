@@ -2,7 +2,7 @@
 title: {Platform} MaskInput | Infragistics
 _description: Infragistics' {Platform} MaskInput allows the user to control input and format the visible value based on configurable mask rules
 _keywords: {Platform} input, {ProductName}, Infragistics
-mentionedTypes: ['MaskInput']
+mentionedTypes: ["MaskInput"]
 ---
 
 ## {Platform} Mask Input Overview

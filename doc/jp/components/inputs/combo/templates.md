@@ -2,7 +2,7 @@
 title: {Platform} コンボボックス コンポーネントのテンプレート – {ProductName}
 _description: {ProductName} コンボボックス コンポーネントのテンプレート
 _keywords: {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, {Platform}, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} コンボボックス コンポーネントのテンプレート
-mentionedTypes: ['Combo']
+mentionedTypes: ["Combo"]
 _language: ja
 ---
 

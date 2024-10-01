@@ -2,7 +2,7 @@
 title: {Platform} Button Group Component | {ProductName}
 _description: Get started with the {Platform} Button Group Component - series of {Platform} Toggle Buttons, exposing features such as layout and selection.
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Button Group Components, Infragistics
-mentionedTypes: ['ToggleButton', 'ButtonGroup']
+mentionedTypes: ["ToggleButton", "ButtonGroup"]
 ---
 
 # {Platform} Button Group Overview

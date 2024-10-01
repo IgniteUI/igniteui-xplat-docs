@@ -2,7 +2,7 @@
 title: {Platform} ポイント チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの {Platform} ポイント チャート
 _keywords: {Platform} Charts, Point Chart, Infragistics, {Platform} チャート, ポイント チャート, インフラジスティックス
-mentionedTypes: ["DomainChart", "CategoryChart", "CategoryChartType", "Legend", 'Series']
+mentionedTypes: ["DomainChart", "CategoryChart", "CategoryChartType", "Legend", "Series"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---

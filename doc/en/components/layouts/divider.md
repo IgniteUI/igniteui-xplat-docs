@@ -2,7 +2,7 @@
 title: {Platform} Divider | Layout Controls | Infragistics
 _description: Use Infragistics' {Platform} avatar component to display an image, icon, or initials.
 _keywords: {ProductName}, UI controls, {Platform} widgets, Web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} DIvider components, {Platform} Divider controls
-mentionedTypes: ['Divider']
+mentionedTypes: ["Divider"]
 ---
 
 # {Platform} Divider

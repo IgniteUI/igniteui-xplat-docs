@@ -240,7 +240,7 @@ const docHost: IgcDocumentHost = {
                     {
                         type: IgcDockManagerPaneType.contentPane,
                         contentId: 'content4',
-                        header: 'List'
+                        header: "List"
                     }
                 ]
             }

@@ -2,7 +2,7 @@
 title: {Platform} Spreadsheet | Hyperlinks | Infragistics
 _description: Use Infragistics' {Platform} spreadsheet control to display hyperlinks in the Excel workbook, which can link to websites, file directories and other worksheets. View {ProductName} spreadsheet tutorials!
 _keywords: Excel Spreadsheet, hyperlinks, {ProductName}, Infragistics
-mentionedTypes: ['Spreadsheet']
+mentionedTypes: ["Spreadsheet"]
 ---
 # {Platform} Spreadsheet Hyperlinks
 

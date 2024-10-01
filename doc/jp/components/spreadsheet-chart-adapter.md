@@ -2,7 +2,7 @@
 title: {Platform} スプレッドシート | チャート アダプター | インフラジスティックス
 _description: インフラジスティックスの {Platform} スプレッドシート コントロールに縦棒、折れ線、エリアなどのチャートを表示します。{ProductName} スプレッドシートにチャートを統合する方法について説明します。
 _keywords: Excel Spreadsheet, chart adapter, {ProductName}, Infragistics, Excel スプレッドシート、チャート アダプター, インフラジスティックス
-mentionedTypes: ['Spreadsheet', 'Worksheet', 'WorksheetShapeCollection', 'WorksheetChart']
+mentionedTypes: ["Spreadsheet", "Worksheet", "WorksheetShapeCollection", "WorksheetChart"]
 _language: ja
 ---
 # {Platform} Spreadsheet チャート アダプター

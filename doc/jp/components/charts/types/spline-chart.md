@@ -2,7 +2,7 @@
 title: {Platform} スプライン チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの {Platform} スプライン チャート
 _keywords: {Platform} Charts, Spline Chart, Infragistics, {Platform} チャート, スプライン チャート, インフラジスティックス
-mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "SplineSeries", "StackedSplineSeries", "Stacked100SplineSeries", 'Series', "CategoryChartType"]
+mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "SplineSeries", "StackedSplineSeries", "Stacked100SplineSeries", "Series", "CategoryChartType"]
 _language: ja
 ---
 # {Platform} スプライン チャート

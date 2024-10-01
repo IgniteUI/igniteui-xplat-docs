@@ -3,7 +3,7 @@ title: {Platform} NavDrawer | Infragistics
 _description: Infragistics' {Platform} NavDrawer provides side navigation that can be expanded or collapsed within the content
 _keywords: {Platform} navbar, {ProductName}, Infragistics
 _language: kr
-mentionedTypes: ['NavDrawer']
+mentionedTypes: ["NavDrawer"]
 ---
 
 # {Platform} Navigation Drawer Overview
