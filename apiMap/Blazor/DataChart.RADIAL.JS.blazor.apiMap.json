@@ -123,6 +123,7 @@
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemSpan"}], "originalName": "GetItemSpan"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValueBoundingBox"}], "originalName": "GetSeriesValueBoundingBox"},
+      {"names":[{"platform": "Blazor", "mappedType": "LegendEmptyValuesMode","mappedName": "LegendEmptyValuesMode"}], "originalName": "LegendEmptyValuesMode"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LegendLabelMemberPath"}], "originalName": "LegendLabelMemberPath"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "RadiusX"}], "originalName": "RadiusX"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "RadiusY"}], "originalName": "RadiusY"} ]

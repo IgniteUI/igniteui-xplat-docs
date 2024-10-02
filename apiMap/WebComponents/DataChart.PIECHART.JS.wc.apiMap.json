@@ -5,18 +5,6 @@
   ],
   "types":[
   {
-    "originalName": "LegendEmptyValuesMode",
-    "originalNamespace": "Infragistics.Controls.Charts",
-    "isEnum":true,
-    "packageName": "igniteui-charts",
-    "names":[{"platform": "WebComponents","fileName": "LegendEmptyValuesMode.ts","mappedName": "LegendEmptyValuesMode"}],
-    "members":[
-      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
-      {"names":[{"platform": "WebComponents", "mappedType": "LegendEmptyValuesMode","mappedName": "AlwaysHidden"}], "originalName": "AlwaysHidden"},
-      {"names":[{"platform": "WebComponents", "mappedType": "LegendEmptyValuesMode","mappedName": "AlwaysVisible"}], "originalName": "AlwaysVisible"},
-      {"names":[{"platform": "WebComponents", "mappedType": "LegendEmptyValuesMode","mappedName": "ShowWhenNoOthersCategory"}], "originalName": "ShowWhenNoOthersCategory"} ]
-  },
-  {
     "originalName": "LabelsPosition",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,

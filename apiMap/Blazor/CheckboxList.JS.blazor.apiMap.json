@@ -18,6 +18,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "ControlDisplayDensity","mappedName": "Density"}], "originalName": "Density"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "DeselectAll"}], "originalName": "DeselectAll"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "FilterPlaceholderText"}], "originalName": "FilterPlaceholderText"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetDesiredSize"}], "originalName": "GetDesiredSize"},
       {"names":[{"platform": "Blazor", "mappedType": "CheckboxListIndexType","mappedName": "IndexType"}], "originalName": "IndexType"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "IsEverythingSelected"}], "originalName": "IsEverythingSelected"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "IsNothingSelected"}], "originalName": "IsNothingSelected"},

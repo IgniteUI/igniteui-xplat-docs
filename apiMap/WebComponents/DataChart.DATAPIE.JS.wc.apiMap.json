@@ -38,6 +38,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "darkSliceLabelColor"}], "originalName": "DarkSliceLabelColor"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "innerExtent"}], "originalName": "InnerExtent"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "labelMemberPath"}], "originalName": "LabelMemberPath"},
+      {"names":[{"platform": "WebComponents", "mappedType": "LegendEmptyValuesMode","mappedName": "legendEmptyValuesMode"}], "originalName": "LegendEmptyValuesMode"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "legendLabelMemberPath"}], "originalName": "LegendLabelMemberPath"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "legendOthersSliceLabelFormat"}], "originalName": "LegendOthersSliceLabelFormat"},
       {"names":[{"platform": "WebComponents", "mappedType": "any[]",   "mappedName": "legendOthersSliceLabelFormatSpecifiers"}], "originalName": "LegendOthersSliceLabelFormatSpecifiers"},
