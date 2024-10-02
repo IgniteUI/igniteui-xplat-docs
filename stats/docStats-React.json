@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in React documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "React",
-  "samplesCount": 671,
+  "samplesCount": 681,
   "samplesHost": "https://staging.infragistics.com/react-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -539,19 +539,19 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/zoomslider-overview"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/editors/date-picker/date-limits": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/date-picker"
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/xdate-picker"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/editors/date-picker/editing": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/date-picker"
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/xdate-picker"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/editors/date-picker/format": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/date-picker"
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/xdate-picker"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/editors/date-picker/overview": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/date-picker"
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/xdate-picker"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/editors/date-picker/range": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/date-picker"
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/xdate-picker"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/editors/multi-column-combobox/overview": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/multi-column-combobox"
@@ -806,6 +806,9 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-selection-style": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-selection"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/change-icons-custom": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/icons"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/clipboard-operations": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/clipboard-interactions"
     ],
@@ -963,7 +966,7 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/keyboard-navigation"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/layout-display-density": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/display-density"
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/size"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/master-detail": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/master-detail"
@@ -992,6 +995,9 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/overview": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid",
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grids-header"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/overview-dark": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/theming-grid"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/paste": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/paste-excel"
@@ -1206,7 +1212,7 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/keyboard-navigation"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/layout-display-density": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/display-density"
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/size"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/multi-column-headers-export": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/export-excel"
@@ -1300,9 +1306,6 @@
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/conditional-row-selectors": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/pivot-grid/row-selection"
-    ],
-    "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/data-persistence-noop": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/pivot-grid/state-persistence"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/data-selector": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/pivot-grid/overview"
@@ -1493,7 +1496,7 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/keyboard-navigation"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/layout-display-density": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/display-density"
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/size"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/multi-cell-selection-mode": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/cell-selection"
@@ -1598,6 +1601,9 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/button-group"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/button-group/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/button-group"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/button-group/selection": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/button-group"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/button-group/size": [
@@ -1710,9 +1716,6 @@
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/dropdown/target": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/dropdown"
-    ],
-    "https://staging.infragistics.com/react-demos/samples/samples/inputs/form/overview": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/form"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/icon-button/size": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/icon-button"
@@ -2028,6 +2031,18 @@
     "https://staging.infragistics.com/react-demos/samples/samples/menus/nav-drawer/styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/menus/navigation-drawer"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/notifications/banner/banner-advanced-sample": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/notifications/banner"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/notifications/banner/banner-sample-1": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/notifications/banner"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/notifications/banner/banner-sample-2": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/notifications/banner"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/notifications/banner/banner-styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/notifications/banner"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/notifications/dialog/closing-variations": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/notifications/dialog"
     ],
@@ -2081,9 +2096,24 @@
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/week-numbers": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/calendar"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/scheduling/date-picker/dialog-mode": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/date-picker"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/scheduling/date-picker/form": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/date-picker"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/scheduling/date-picker/format": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/date-picker"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/scheduling/date-picker/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/date-picker"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/scheduling/date-picker/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/date-picker"
     ]
   },
-  "topicsCount": 295,
+  "topicsCount": 299,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-react/react/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -2390,15 +2420,15 @@
       "https://staging.infragistics.com/react-demos/samples/samples/charts/tree-map/overview",
       "https://staging.infragistics.com/react-demos/samples/samples/charts/tree-map/styling"
     ],
-    "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/date-picker": [
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/multi-column-combobox": [
+      "https://staging.infragistics.com/react-demos/samples/samples/editors/multi-column-combobox/overview"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/xdate-picker": [
       "https://staging.infragistics.com/react-demos/samples/samples/editors/date-picker/date-limits",
       "https://staging.infragistics.com/react-demos/samples/samples/editors/date-picker/editing",
       "https://staging.infragistics.com/react-demos/samples/samples/editors/date-picker/format",
       "https://staging.infragistics.com/react-demos/samples/samples/editors/date-picker/overview",
       "https://staging.infragistics.com/react-demos/samples/samples/editors/date-picker/range"
-    ],
-    "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/multi-column-combobox": [
-      "https://staging.infragistics.com/react-demos/samples/samples/editors/multi-column-combobox/overview"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/excel-library": [
       "https://staging.infragistics.com/react-demos/samples/samples/excel/excel-library/overview"
@@ -2634,9 +2664,6 @@
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/row-classes",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/row-styles"
     ],
-    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/display-density": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/layout-display-density"
-    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/editing": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/editing-lifecycle"
     ],
@@ -2659,6 +2686,9 @@
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/groupby-expressions",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/groupby-paging",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/groupby-styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/icons": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/change-icons-custom"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/keyboard-navigation": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/keyboard-custom-navigation",
@@ -2721,6 +2751,9 @@
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/selection": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-selection-mode",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/custom-context-menu"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/size": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/layout-display-density"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/sorting": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-sorting-indicators",
@@ -2800,9 +2833,6 @@
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/row-classes",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/row-styles"
     ],
-    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/display-density": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/layout-display-density"
-    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/editing": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/editing-lifecycle"
     ],
@@ -2872,6 +2902,9 @@
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/selection": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-selection-mode"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/size": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/layout-display-density"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/sorting": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-sorting-indicators",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-sorting-options",
@@ -2929,8 +2962,10 @@
       "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/cell-selection-mode"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/pivot-grid/state-persistence": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/data-persistence-noop",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/pivot-grid/state-persistence-main"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/theming-grid": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/overview-dark"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree/basic-example"
@@ -2988,9 +3023,6 @@
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/conditional-cell-style-2",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/row-classes",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/row-styles"
-    ],
-    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/display-density": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/layout-display-density"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/editing": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/editing-lifecycle"
@@ -3065,6 +3097,9 @@
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/selection": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-selection-mode"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/size": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/layout-display-density"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/sorting": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-sorting-indicators",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-sorting-options",
@@ -3105,6 +3140,7 @@
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/button-group": [
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/button-group/alignment",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/button-group/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/button-group/selection",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/button-group/size",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/button-group/styling"
     ],
@@ -3150,9 +3186,6 @@
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/dropdown/position",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/dropdown/styling",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/dropdown/target"
-    ],
-    "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/form": [
-      "https://staging.infragistics.com/react-demos/samples/samples/inputs/form/overview"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/icon-button": [
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/icon-button/size",
@@ -3298,6 +3331,12 @@
       "https://staging.infragistics.com/react-demos/samples/samples/charts/toolbar/layout-actions-for-data-chart",
       "https://staging.infragistics.com/react-demos/samples/samples/charts/toolbar/layout-in-vertical-orientation"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/notifications/banner": [
+      "https://staging.infragistics.com/react-demos/samples/samples/notifications/banner/banner-advanced-sample",
+      "https://staging.infragistics.com/react-demos/samples/samples/notifications/banner/banner-sample-1",
+      "https://staging.infragistics.com/react-demos/samples/samples/notifications/banner/banner-sample-2",
+      "https://staging.infragistics.com/react-demos/samples/samples/notifications/banner/banner-styling"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/notifications/dialog": [
       "https://staging.infragistics.com/react-demos/samples/samples/notifications/dialog/closing-variations",
       "https://staging.infragistics.com/react-demos/samples/samples/notifications/dialog/form",
@@ -3334,6 +3373,13 @@
       "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/size",
       "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/styling",
       "https://staging.infragistics.com/react-demos/samples/samples/scheduling/calendar/week-numbers"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/date-picker": [
+      "https://staging.infragistics.com/react-demos/samples/samples/scheduling/date-picker/dialog-mode",
+      "https://staging.infragistics.com/react-demos/samples/samples/scheduling/date-picker/form",
+      "https://staging.infragistics.com/react-demos/samples/samples/scheduling/date-picker/format",
+      "https://staging.infragistics.com/react-demos/samples/samples/scheduling/date-picker/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/scheduling/date-picker/styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/spreadsheet-activation": [
       "https://staging.infragistics.com/react-demos/samples/samples/excel/spreadsheet/activation"
