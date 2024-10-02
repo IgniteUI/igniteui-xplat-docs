@@ -11,7 +11,7 @@ _language: ja
 
 ## {Platform} スプライン チャートの例
 
-次の例は、データをバインドし、`ChartType` プロパティを `Spline` 列挙型に設定することにより、`CategoryChart` コントロールで {Platform} スプライン チャートを作成する方法を示しています。
+次の例は、データをバインドし、`CategoryChart.ChartType` プロパティを `Spline` 列挙型に設定することにより、`CategoryChart` コントロールで {Platform} スプライン チャートを作成する方法を示しています。
 
 `sample="/charts/category-chart/spline-multiple-sources", height="600", alt="{Platform} 複数ソースのスプライン チャート"`
 
@@ -23,7 +23,7 @@ _language: ja
 
 以下の例に示すように、スプライン チャートは、ヨーロッパで 2009 年以降の 10 年間の再生可能電力量など、値の経時変化を示すためによく使用されます。
 
-`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Spline` に設定します:
+`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`CategoryChart.ChartType` プロパティを `Spline` に設定します:
 
 `sample="/charts/category-chart/spline-single-source", height="600", alt="単一シリーズの {Platform} スプライン チャート"`
 
@@ -35,7 +35,7 @@ _language: ja
 
 スプライン チャートを使用すると、複数のシリーズを組み合わせて、時間の経過とともにどのように変化するかを比較または確認できます。中国と米国のデータを含むデータ ソースにバインドするだけで、チャートは追加データに合わせて自動的に更新されます。
 
-`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Spline` に設定します:
+`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`CategoryChart.ChartType` プロパティを `Spline` に設定します:
 
 `sample="/charts/category-chart/spline-multiple-sources", height="600", alt="複数シリーズの {Platform} スプライン チャート"`
 
@@ -47,7 +47,7 @@ _language: ja
 
 他のシリーズの複合などのより多くの機能を備えたスプライン チャートが必要な場合は、以下に示すように、マーカー、マーカー ブラシ、マーカー アウトライン、シリーズ ブラシ、シリーズ アウトラインを構成できます。
 
-`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Spline` に設定します:
+`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`CategoryChart.ChartType` プロパティを `Spline` に設定します:
 
 `sample="/charts/category-chart/spline-styling", height="600", alt="{Platform} スプライン チャートのスタイル設定"`
 
@@ -99,6 +99,6 @@ _language: ja
 
 | チャート タイプ          | コントロール名       | API メンバー |
 | --------------------|--------------------|-------------------------- |
-| スプライン              | `CategoryChart` | `ChartType` = `Spline` |
+| スプライン              | `CategoryChart` | `CategoryChart.ChartType` = `Spline` |
 | 積層型スプライン      | `XamDataChart`     | `StackedSplineSeries` |
 | 積層型 100% スプライン | `XamDataChart`     | `Stacked100SplineSeries` |

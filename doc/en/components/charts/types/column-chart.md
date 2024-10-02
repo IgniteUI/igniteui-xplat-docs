@@ -11,7 +11,7 @@ The {ProductName} Column Char, Column Graph, or Vertical Bar Chart is among the 
 
 ## {Platform} Column Chart Example
 
-You can create {Platform} Column Chart in the `CategoryChart` control by binding your data and setting `ChartType` to **Column** enum, as shown in the example below:
+You can create {Platform} Column Chart in the `CategoryChart` control by binding your data and setting `CategoryChart.ChartType` to **Column** enum, as shown in the example below:
 
 `sample="/charts/category-chart/column-chart-multiple-sources", height="600", alt="{Platform} Column Chart Multiple Sources"`
 
@@ -49,7 +49,7 @@ There are several uses cases for Column Charts. When you:
 
 Column Chart belongs to a group of Category Series and it is rendered using a collection of rectangles that extend from the bottom to top of the chart towards the values of data points.
 
-You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to **Column** value, as shown in the example below:
+You can create this type of chart in the `CategoryChart` control by binding your data and setting the `CategoryChart.ChartType` property to **Column** value, as shown in the example below:
 
 `sample="/charts/category-chart/column-chart-single-source", height="600", alt="{Platform} Column Chart with Single Source"`
 
@@ -59,7 +59,7 @@ You can create this type of chart in the `CategoryChart` control by binding your
 
 ## {Platform} Column Chart with Multiple Series
 
-The Column Chart is able to render multiple columns per category for comparison purposes. You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to **Column** value, as shown in the example below:
+The Column Chart is able to render multiple columns per category for comparison purposes. You can create this type of chart in the `CategoryChart` control by binding your data and setting the `CategoryChart.ChartType` property to **Column** value, as shown in the example below:
 
 `sample="/charts/category-chart/column-chart-multiple-sources", height="600", alt="{Platform} Column Chart with Multiple Sources"`
 
@@ -162,7 +162,7 @@ The following table lists API members mentioned in the above sections:
 
 | Chart Type          | Control Name       | API Members  |
 | --------------------|--------------------|------------------------  |
-| Column              | `CategoryChart`    | `ChartType` = **Column** |
+| Column              | `CategoryChart`    | `CategoryChart.ChartType` = **Column** |
 | Radial Column       | `XamDataChart`     | `RadialColumnSeries` |
 | Range Column        | `XamDataChart`     | `RangeColumnSeries` |
 | Stacked Column      | `XamDataChart`     | `StackedColumnSeries` |
