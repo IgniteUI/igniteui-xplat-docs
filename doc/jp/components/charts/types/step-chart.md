@@ -2,7 +2,7 @@
 title: {Platform} ステップ チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの {Platform} ステップ チャート
 _keywords: {Platform} Charts, Step Chart, Step Area Chart, Step Line Chart, Infragistics, {Platform} チャート, ステップ チャート, ステップ エリア チャート, ステップ折れ線チャート, インフラジスティックス
-mentionedTypes: ["DomainChart", "CategoryChart", "CategoryChartType", 'Series', "CategoryChartType"]
+mentionedTypes: ["DomainChart", "CategoryChart", "CategoryChartType", "Series", "CategoryChartType"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -12,7 +12,7 @@ _language: ja
 
 ## {Platform} ステップ エリア チャート
 
-`CategoryChart` コントロールでステップ エリア チャートを作成するには、以下の例のように、`ChartType` プロパティを `StepArea` 列挙型に設定します。
+`CategoryChart` コントロールでステップ エリア チャートを作成するには、以下の例のように、`CategoryChart.ChartType` プロパティを `StepArea` 列挙型に設定します。
 
 `sample="/charts/category-chart/step-area-multiple-sources", height="600", alt=" 複数ソースの {Platform} ステップ エリア チャート"`
 
@@ -24,7 +24,7 @@ _language: ja
 
 {Platform} ステップ折れ線チャートは、線の下の領域が塗りつぶされていないことを除いて、ステップ エリア チャートと非常によく似ています。
 
-次の例に示すように、データをバインドし、`ChartType` プロパティを `StepLine` 値に設定することで、`CategoryChart` コントロールでステップ折れ線チャートを作成できます。
+次の例に示すように、データをバインドし、`CategoryChart.ChartType` プロパティを `StepLine` 値に設定することで、`CategoryChart` コントロールでステップ折れ線チャートを作成できます。
 
 `sample="/charts/category-chart/step-line-multiple-sources", height="600", alt="複数ソースの {Platform} ステップ折れ線チャート"`
 
@@ -55,7 +55,7 @@ _language: ja
 以下は、上記のセクションで説明されている API メンバーのリストです。
 
 - `CategoryChart`
-- `ChartType`
+- `CategoryChart.ChartType`
 - `StepArea`
 - `StepLine`
 - `Brushes`

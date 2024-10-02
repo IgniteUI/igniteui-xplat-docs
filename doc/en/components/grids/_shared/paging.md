@@ -402,7 +402,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ## Additional Resources
 
-<!-- ComponentStart:  Grid, TreeGrid -->
+<!-- ComponentStart: Grid, TreeGrid -->
 
 <!-- * [Paginator](../paginator.md) -->
 * [Virtualization and Performance](virtualization.md)
@@ -414,7 +414,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
 
-<!-- ComponentEnd:  Grid, TreeGrid -->
+<!-- ComponentEnd: Grid, TreeGrid -->
 
 Our community is active and always welcoming to new ideas.
 

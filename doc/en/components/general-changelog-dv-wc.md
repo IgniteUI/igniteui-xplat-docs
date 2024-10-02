@@ -22,6 +22,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
     - New ToolActionCheckboxList
         A new CheckboxList ToolAction that displays a collection of items with checkboxes for selecting. A grid inside ToolAction CheckboxList grows in height up to 5 items, then a scrollbar is displayed.
+        Requires IgcCheckboxListModule to be registered.
 
     - New Filtering Support
 
@@ -32,8 +33,8 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 #### {PackageGrids}
 
-- `All Grids`
- - Added new `RowClick` event.
+- **All Grids** 
+  - Added new `RowClick` event.
 - `PivotGrid`
   - Added `sortable` property for a `PivotDimension`.
   - Added horizontal layout. Can be enabled inside the new `pivotUI` property as `rowLayout` `horizontal`.
@@ -41,10 +42,11 @@ All notable changes for each version of {ProductName} are documented on this pag
   - Added `horizontalSummariesPosition` property to the `pivotUI`, configuring horizontal summaries position.
   - Added row headers for the row dimensions. Can be enabled inside the new `pivotUI` property as `showHeaders` **true**.
   - Keyboard navigation now can move in to row headers back and forth from any row dimension headers or column headers.
-  - Added keyboard interactions for row dimension collapse using `Alt + Arrows` and row headers sorting using `Ctrl + Arrow Up/Down`.
+  - Added keyboard interactions for row dimension collapse using <kbd>Alt</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> arrows and row headers sorting using <kbd>Ctrl</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> arrows.
 
 **BREAKING CHANGES**:
-- `All Grids`, `RowIsland`
+- **All Grids** 
+  - `RowIsland`
   - Removed `displayDensity` deprecated property.
   - Renamed `actualColumns`, `contentColumns` properties to `actualColumnList` and `contentColumnList`. Use `column` or `columnList` property to get all columns now.
   - Renamed `rowDelete` and `rowAdd` event argument type to `RowDataCancelableEventArgs`.
@@ -1307,7 +1309,7 @@ import { IgcLiveGridComponent } from 'igniteui-webcomponents-grids/ES5/igc-live-
 - ARIA support.
 - API for external drag/drop support.
 - Properties and events for user interactions such as closing, pinning, dragging.
-- Support for `ng update` for Angular projects.
+- Support for **ng update** for Angular projects.
 
 ### **{PackageDockManagerVerChanges-1.0.3}**
 

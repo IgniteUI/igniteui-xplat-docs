@@ -3,7 +3,7 @@ title: {Platform} Badge | Infragistics
 _description: Infragistics' {Platform} Button provides different variants and styles which are easily configurable to match the appearance and functionality that we want to achieve.
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Button Components, Infragistics
 _language: kr
-mentionedTypes: ['Button', 'ButtonBase']
+mentionedTypes: ["Button", "ButtonBase"]
 ---
 
 # {Platform} Button Overview

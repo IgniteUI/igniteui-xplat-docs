@@ -2,7 +2,7 @@
 title: {Platform} Toast Notifications | {ProductName}
 _description: {ProductName} Toast コンポーネントを使用すると、開発者はモバイルおよびデスクトップ アプリケーション内に簡潔な 1 行のメッセージを簡単に統合できます。今すぐお試しください。
 _keywords: {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, {Platform}, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Toast コンポーネント
-mentionedTypes: ['Toast']
+mentionedTypes: ["Toast"]
 _language: ja
 ---
 

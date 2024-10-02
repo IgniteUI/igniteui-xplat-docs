@@ -2,7 +2,7 @@
 title: {Platform} 縦棒チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの {Platform} 縦棒チャート
 _keywords: {Platform} Charts, Column Chart, Column Graph, Vertical Bar Chart, Infragistics, {Platform} チャート, 縦棒チャート, 縦棒グラフ, 垂直棒チャート, インフラジスティックス
-mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "ColumnSeries", "WaterfallSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "RangeColumnSeries", "RadialColumnSeries", "CategoryChartType", 'Series']
+mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "ColumnSeries", "WaterfallSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "RangeColumnSeries", "RadialColumnSeries", "CategoryChartType", "Series"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -12,7 +12,7 @@ _language: ja
 
 ## {Platform} 縦棒チャートの例
 
-次の例に示すように、データをバインドし、`ChartType` を **Column** 列挙型に設定することで、`CategoryChart` コントロールに {Platform} 縦棒チャートを作成できます。
+次の例に示すように、データをバインドし、`CategoryChart.ChartType` を **Column** 列挙型に設定することで、`CategoryChart` コントロールに {Platform} 縦棒チャートを作成できます。
 
 `sample="/charts/category-chart/column-chart-multiple-sources", height="600", alt="{Platform} 複数ソースの縦棒チャート"`
 
@@ -50,7 +50,7 @@ _language: ja
 
 縦棒シリーズは、カテゴリ シリーズのグループに属し、チャートの下から上へデータ ポイント値に向かって延びる四角形のコレクションを使用して描画されます。
 
-`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを **Column** 値に設定します:
+`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`CategoryChart.ChartType` プロパティを **Column** 値に設定します:
 
 `sample="/charts/category-chart/column-chart-single-source", height="600", alt="単一シリーズの {Platform} 縦棒チャート"`
 
@@ -60,7 +60,7 @@ _language: ja
 
 ## 複数シリーズの {Platform} 縦棒チャート
 
-縦棒チャートは、比較のためにカテゴリごとに複数の列を描画できます。`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを **Column** 値に設定します:
+縦棒チャートは、比較のためにカテゴリごとに複数の列を描画できます。`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`CategoryChart.ChartType` プロパティを **Column** 値に設定します:
 
 `sample="/charts/category-chart/column-chart-multiple-sources", height="600", alt="複数シリーズの {Platform} 縦棒チャート"`
 
@@ -163,7 +163,7 @@ _language: ja
 
 | チャート タイプ          | コントロール名       | API メンバー |
 | --------------------|--------------------|------------------------ |
-| 縦棒              | `CategoryChart` | `ChartType` = **Column** |
+| 縦棒              | `CategoryChart` | `CategoryChart.ChartType` = **Column** |
 | ラジアル縦棒       | `XamDataChart`     | `RadialColumnSeries` |
 | 範囲縦棒        | `XamDataChart`     | `RangeColumnSeries` |
 | 積層型縦棒      | `XamDataChart`     | `StackedColumnSeries` |

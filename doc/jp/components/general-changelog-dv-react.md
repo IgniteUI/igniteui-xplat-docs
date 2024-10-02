@@ -12,6 +12,25 @@ _language: ja
 
 ## **{PackageVerChanges-24-1-SEP}**
 
+### {PackageCharts} (チャート)
+ 
+- 新しい[データ円チャート](charts/types/data-pie-chart.md) - `DataPieChart` は円ャートを表示する新しいコンポーネントです。このコンポーネントは、`CategoryChart` と同様に動作し、基になるデータ モデルのプロパティを自動的に検出しながら、ItemLegend コンポーネントを介して選択、強調表示、アニメーション、凡例のサポートを可能にします。
+
+- 新しい [比例カテゴリ角度軸](charts/types/radial-chart.md) - スライスをプロットするための、`XamDataChart` のラジアル円シリーズの新しい軸。円チャートに似ており、データ ポイントが円グラフ内のセグメントとして表されます。
+
+- `Toolbar`
+
+    - 新しい ToolActionCheckboxList。
+        選択用のチェックボックスを備えた項目のコレクションを表示する新しい CheckboxList ToolAction。 ToolAction CheckboxList 内のグリッドの高さは 5 項目まで大きくなり、その後スクロールバーが表示されます。
+        IgrCheckboxListModule を登録する必要があります。
+
+    - 新しいフィルタリングのサポート。
+
+    - 軸フィールドの変更。
+        CategoryChart をターゲットにする場合のツールバーの新しいデフォルトの IconMenu。
+        ラベル フィールドは X 軸にマップされ、値フィールドは Y 軸にマップされます。
+        ターゲット チャートは、行われた変更にリアルタイムで反応します。チャートに ItemsSource が設定されていない場合、IconMenu は非表示になります。
+
 ### {PackageCommon}
 
 - 新しい [Banner](notifications/banner.md) コンポーネント。
@@ -59,8 +78,8 @@ _language: ja
 
 ### {PackageGrids}
 
-- `すべてのグリッド`
- - 新しい `RowClick` イベントが追加されました。
+- **すべてのグリッド**
+  - 新しい `RowClick` イベントが追加されました。
 - `PivotGrid`
   - `PivotDimension` に `sortable` プロパティが追加されました。
   - 水平レイアウトが追加されました。新しい `pivotUI` プロパティ内で `rowLayout` `horizontal` として有効にできます。
@@ -68,11 +87,12 @@ _language: ja
   - 水平集計の位置を設定するための `horizontalSummariesPosition` プロパティを `pivotUI` に追加しました。
   - 行ディメンションの行ヘッダーが追加されました。新しい `pivotUI` プロパティ内で `showHeaders` **true** として有効にできます。
   - キーボード ナビゲーションで行ディメンションヘッダーや列ヘッダーから行ヘッダーへ移動できるようになりました。
-  - キーボード操作で行ディメンションの縮小 (Alt + 矢印キー) および行ヘッダーのソート (Ctrl + 矢印上/下) ができるようになりました。
+  - キーボード操作で行ディメンションの縮小 (<kbd>Alt</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd>) および行ヘッダーのソート (<kbd>Ctrl</kbd> + <kbd>↑</kbd> <kbd>↓</kbd>) ができるようになりました。
 
 **重大な変更**:
 
-- `すべてのグリッド`、`RowIsland`
+- **すべてのグリッド**
+  - `RowIsland`
   - `displayDensity` の非推奨のプロパティが削除されました。
   - `actualColumns`、`contentColumns` プロパティの名前を、`actualColumnList` および `contentColumnList` に変更しました。すべての列を取得するには、`columns` または `columnList` プロパティを使用してください。
   - `rowDelete` および `rowAdd` イベント引数タイプの名前を `RowDataCancelableEventArgs` に変更しました。

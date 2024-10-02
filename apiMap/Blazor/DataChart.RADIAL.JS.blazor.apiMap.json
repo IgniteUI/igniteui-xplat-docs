@@ -10,6 +10,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualTrendLineBrush"}], "originalName": "ActualTrendLineBrush"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetCategoryWidth"}], "originalName": "GetCategoryWidth"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemValue"}], "originalName": "GetItemValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetMemberPathValue"}], "originalName": "GetMemberPathValue"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetNextOrExactIndex"}], "originalName": "GetNextOrExactIndex"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetOffsetValue"}], "originalName": "GetOffsetValue"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetPreviousOrExactIndex"}], "originalName": "GetPreviousOrExactIndex"},
@@ -23,6 +24,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "TrendLineThickness"}], "originalName": "TrendLineThickness"},
       {"names":[{"platform": "Blazor", "mappedType": "TrendLineType","mappedName": "TrendLineType"}], "originalName": "TrendLineType"},
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "TrendLineZIndex"}], "originalName": "TrendLineZIndex"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "UseCategoryNormalizedValues"}], "originalName": "UseCategoryNormalizedValues"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueMemberAsLegendLabel"}], "originalName": "ValueMemberAsLegendLabel"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueMemberAsLegendUnit"}], "originalName": "ValueMemberAsLegendUnit"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueMemberPath"}], "originalName": "ValueMemberPath"} ]
@@ -46,6 +48,12 @@
     "names":[{"platform": "Blazor","fileName": "RadialBase.cs","mappedName": "IgbRadialBase"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbCategoryAngleAxis","mappedName": "AngleAxis"}], "originalName": "AngleAxis"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "AutoCalloutLabelPrecision"}], "originalName": "AutoCalloutLabelPrecision"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "AutoCalloutLabelValueSeparator"}], "originalName": "AutoCalloutLabelValueSeparator"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "AutoCalloutOthersLabelFormat"}], "originalName": "AutoCalloutOthersLabelFormat"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFormatSpecifierCollection","mappedName": "AutoCalloutOthersLabelFormatSpecifiers"}], "originalName": "AutoCalloutOthersLabelFormatSpecifiers"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "AutoCalloutPercentagePrecision"}], "originalName": "AutoCalloutPercentagePrecision"},
+      {"names":[{"platform": "Blazor", "mappedType": "RadialLabelMode","mappedName": "AutoCalloutRadialLabelMode"}], "originalName": "AutoCalloutRadialLabelMode"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "CanUseAsAngleAxis"}], "originalName": "CanUseAsAngleAxis"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "CanUseAsValueAxis"}], "originalName": "CanUseAsValueAxis"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ClipSeriesToBounds"}], "originalName": "ClipSeriesToBounds"},
@@ -57,8 +65,31 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetOffsetValue"}], "originalName": "GetOffsetValue"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsCustomRadialMarkerStyleAllowed"}], "originalName": "IsCustomRadialMarkerStyleAllowed"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsCustomRadialStyleAllowed"}], "originalName": "IsCustomRadialStyleAllowed"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsTransitionInEnabled"}], "originalName": "IsTransitionInEnabled"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LegendProportionalRadialLabelFormat"}], "originalName": "LegendProportionalRadialLabelFormat"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFormatSpecifierCollection","mappedName": "LegendProportionalRadialLabelFormatSpecifiers"}], "originalName": "LegendProportionalRadialLabelFormatSpecifiers"},
+      {"names":[{"platform": "Blazor", "mappedType": "RadialLabelMode","mappedName": "LegendRadialLabelMode"}], "originalName": "LegendRadialLabelMode"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "OthersLegendProportionalRadialLabelFormat"}], "originalName": "OthersLegendProportionalRadialLabelFormat"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFormatSpecifierCollection","mappedName": "OthersLegendProportionalRadialLabelFormatSpecifiers"}], "originalName": "OthersLegendProportionalRadialLabelFormatSpecifiers"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "OthersProportionalRadialLabelFormat"}], "originalName": "OthersProportionalRadialLabelFormat"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFormatSpecifierCollection","mappedName": "OthersProportionalRadialLabelFormatSpecifiers"}], "originalName": "OthersProportionalRadialLabelFormatSpecifiers"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ProportionalRadialLabelFormat"}], "originalName": "ProportionalRadialLabelFormat"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFormatSpecifierCollection","mappedName": "ProportionalRadialLabelFormatSpecifiers"}], "originalName": "ProportionalRadialLabelFormatSpecifiers"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ScrollIntoView"}], "originalName": "ScrollIntoView"},
+      {"names":[{"platform": "Blazor", "mappedType": "CategoryTransitionInMode","mappedName": "TransitionInMode"}], "originalName": "TransitionInMode"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbNumericRadiusAxis","mappedName": "ValueAxis"}], "originalName": "ValueAxis"} ]
+  },
+  {
+    "originalName": "ProportionalRadialLabelContext",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "ProportionalRadialLabelContext.cs","mappedName": "ProportionalRadialLabelContext"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "item"}], "originalName": "Item"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "label"}], "originalName": "Label"},
+      {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "percent"}], "originalName": "Percent"},
+      {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "value"}], "originalName": "Value"} ]
   },
   {
     "originalName": "RadialColumnSeries",
@@ -91,6 +122,9 @@
     "names":[{"platform": "Blazor","fileName": "RadialPieSeries.cs","mappedName": "IgbRadialPieSeries"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemSpan"}], "originalName": "GetItemSpan"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSeriesValueBoundingBox"}], "originalName": "GetSeriesValueBoundingBox"},
+      {"names":[{"platform": "Blazor", "mappedType": "LegendEmptyValuesMode","mappedName": "LegendEmptyValuesMode"}], "originalName": "LegendEmptyValuesMode"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LegendLabelMemberPath"}], "originalName": "LegendLabelMemberPath"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "RadiusX"}], "originalName": "RadiusX"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "RadiusY"}], "originalName": "RadiusY"} ]
   }]

@@ -1214,7 +1214,7 @@ public handleCellEdit(sender: IgrHierarchicalGrid, event: IgrGridEditEventArgs):
 
 <!-- WebComponents, Blazor, React -->
 
-事前定義されたテーマに加えて、利用可能な [CSS プロパティ](../theming.md)を設定することでグリッドをさらにカスタマイズできます。
+事前定義されたテーマに加えて、利用可能な [CSS プロパティ](../theming-grid.md)を設定することでグリッドをさらにカスタマイズできます。
 一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
 <!-- ComponentStart: Grid -->
@@ -1410,7 +1410,7 @@ $custom-grid-theme: grid-theme(
 
 <!-- Blazor, WebComponents, React -->
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
@@ -1420,6 +1420,6 @@ $custom-grid-theme: grid-theme(
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
 * [検索](search.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 <!-- end: Blazor, WebComponents, React -->

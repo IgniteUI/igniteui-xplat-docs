@@ -2,7 +2,7 @@
 title: {Platform} Spline Chart | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Spline Chart
 _keywords: {Platform} Charts, Spline Chart, Infragistics
-mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "SplineSeries", "StackedSplineSeries", "Stacked100SplineSeries", 'Series', "CategoryChartType"]
+mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "SplineSeries", "StackedSplineSeries", "Stacked100SplineSeries", "Series", "CategoryChartType"]
 ---
 # {Platform} Spline Chart
 
@@ -10,7 +10,7 @@ The {ProductName} Spline Chart belongs to a group of Category Charts that render
 
 ## {Platform} Spline Chart Example
 
-The following example shows how to create {Platform} Spline Chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Spline` enum.
+The following example shows how to create {Platform} Spline Chart in the `CategoryChart` control by binding your data and setting the `CategoryChart.ChartType` property to `Spline` enum.
 
 `sample="/charts/category-chart/spline-multiple-sources", height="600", alt="{Platform} Spline Chart Multiple Sources"`
 
@@ -22,7 +22,7 @@ The following example shows how to create {Platform} Spline Chart in the `Catego
 
 The Spline Chart is often used to show the change of value over time such as the amount of renewable electricity produced since 2009 over a ten-year period for Europe, as shown in the example below.
 
-You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Spline`, as shown in the example below:
+You can create this type of chart in the `CategoryChart` control by binding your data and setting the `CategoryChart.ChartType` property to `Spline`, as shown in the example below:
 
 `sample="/charts/category-chart/spline-single-source", height="600", alt="{Platform} Spline Chart with Single Source"`
 
@@ -34,7 +34,7 @@ You can create this type of chart in the `CategoryChart` control by binding your
 
 Since the Spline Chart allows you to combine multiple series and compare or see how they change over time. All we need to do is bind to a data source containing the data for China and the USA, and the chart will automatically update to fit the additional data.
 
-You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Spline`, as shown in the example below:
+You can create this type of chart in the `CategoryChart` control by binding your data and setting the `CategoryChart.ChartType` property to `Spline`, as shown in the example below:
 
 `sample="/charts/category-chart/spline-multiple-sources", height="600", alt="{Platform} Spline Chart with Multiple Sources"`
 
@@ -46,7 +46,7 @@ You can create this type of chart in the `CategoryChart` control by binding your
 
 If you need a Spline Chart with more features such as composite other series, you can configure the markers, marker brushes, marker outlines, series brushes and series outlines as demonstrated below.
 
-You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Spline`, as shown in the example below:
+You can create this type of chart in the `CategoryChart` control by binding your data and setting the `CategoryChart.ChartType` property to `Spline`, as shown in the example below:
 
 `sample="/charts/category-chart/spline-styling", height="600", alt="{Platform} Spline Chart Styling"`
 
@@ -98,6 +98,6 @@ The following table lists API members mentioned in the above sections:
 
 | Chart Type          | Control Name       | API Members |
 | --------------------|--------------------|-------------------------- |
-| Spline              | `CategoryChart` | `ChartType` = `Spline` |
+| Spline              | `CategoryChart` | `CategoryChart.ChartType` = `Spline` |
 | Stacked Spline      | `XamDataChart`     | `StackedSplineSeries` |
 | Stacked 100% Spline | `XamDataChart`     | `Stacked100SplineSeries` |

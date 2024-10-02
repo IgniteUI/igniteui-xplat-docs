@@ -94,6 +94,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "Point","mappedName": "Origin"}], "originalName": "Origin"},
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "OriginalEvent"}], "originalName": "OriginalEvent"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Outline"}], "originalName": "Outline"},
+      {"names":[{"platform": "Blazor", "mappedType": "Point","mappedName": "Position"}], "originalName": "Position"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Radius"}], "originalName": "Radius"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "StartAngle"}], "originalName": "StartAngle"} ]
   },

@@ -2,7 +2,7 @@
 title: {Platform} Dropdown List コンポーネント | {ProductName}
 _description: {Platform} Dropdown List コンポーネントを使用すると、インタラクティブ機能を追加し、アプリ内の項目のスクロール可能なリストにスタイル設定オプションを表示できます。今すぐをお試しください。
 _keywords: {Platform}, UI コントロール, web ウィジェット, UI ウィジェット, {Platform} ドロップダウン コンポーネント, インフラジスティックス
-mentionedTypes: ['Dropdown', 'DropdownItem', 'DropdownHeader', 'DropdownGroup']
+mentionedTypes: ["Dropdown", "DropdownItem", "DropdownHeader", "DropdownGroup"]
 _language: ja
 ---
 

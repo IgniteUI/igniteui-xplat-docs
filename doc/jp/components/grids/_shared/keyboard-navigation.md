@@ -49,9 +49,9 @@ _language: ja
  - <kbd>Ctrl</kbd> + <kbd>↑</kbd> - アクティブな列ヘッダーを昇順にソートします。列が昇順で既にソートされている場合、ソート状態を削除します。
  - <kbd>Ctrl</kbd> + <kbd>↓</kbd> - アクティブな列ヘッダーを降順にソートします。列が降順で既にソートされている場合、ソート状態を削除します。
  - <kbd>Space</kbd> - 列を選択します。列がすでに選択されている場合、選択を解除します。
- <!-- ComponentStart:Grid -->
+ <!-- ComponentStart: Grid -->
  - <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>←</kbd> - 列がグループ化可能としてマークされている場合、列をグループ化します。
- <!-- ComponentEnd:Grid -->
+ <!-- ComponentEnd: Grid -->
  - <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>→</kbd> - 列がグループ化可能としてマークされている場合、列のグループ化を解除します。
  - <kbd>Alt</kbd> + <kbd>←</kbd> または <kbd>Alt</kbd> + <kbd>↑</kbd> - 列が縮小されていない場合、列グループ ヘッダーを縮小します。
  - <kbd>Alt</kbd> + <kbd>→</kbd> または <kbd>Alt</kbd> + <kbd>↓</kbd> - 列がまだ展開されていない場合、列グループヘッダーを展開します。
@@ -330,7 +330,7 @@ igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
 
 ## その他のリソース
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [フィルタリング](filtering.md)
 * [ソート](sorting.md)
@@ -339,7 +339,7 @@ igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

@@ -310,9 +310,9 @@ The below sample demonstrates the cross-field validation in action.
 
 `sample="/{ComponentSample}/data-validator-service-cross-field", height="560", alt="{Platform} {ComponentTitle} Cross field Validation Example"`
 
-<!-- ComponentEnd:Grid -->
+<!-- ComponentEnd: Grid -->
 
-<!-- ComponentStart:HierarchicalGrid -->
+<!-- ComponentStart: HierarchicalGrid -->
 
 Cross-field validators can be added to the formGroup on the `FormGroupCreated` event. In them multiple fields can be compared for validity.
 
@@ -414,9 +414,9 @@ The below sample demonstrates cross-field validation in a `{ComponentName}` for 
 
 
 
-<!-- ComponentEnd:HierarchicalGrid -->
+<!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- ComponentStart:TreeGrid -->
+<!-- ComponentStart: TreeGrid -->
 
 The below sample demonstrates a cross-field validation between different field of the same record. It checks that a specified City for a person is in the Country currently set and vice versa. Also check if the age for a person was 18 already when it was hired.
 
@@ -517,7 +517,7 @@ The below sample demonstrates the cross-field validation in action.
 
 
 
-<!-- ComponentEnd:TreeGrid -->
+<!-- ComponentEnd: TreeGrid -->
 
 ## Styling
 
@@ -558,7 +558,7 @@ Changing the default error template allows setting custom classes and styles:
 ### Invalid Row and Cell styles
 
 Rows and cells provide API for the developers to know if a row or cell is invalid and what kind of errors are active.
-<!-- ComponentStart:Grid -->
+<!-- ComponentStart: Grid -->
 ```ts
 public rowStyles = {
     background: (row: RowType) => row.validation.status === 'INVALID' ? '#FF000033' : '#00000000'
@@ -575,9 +575,9 @@ public cellStyles = {
 <{ComponentInstance} [rowStyles]="rowStyles">
     <igx-column field="ReorderLevel" header="ReorderLever" required [cellClasses]="cellStyles">
 ```
-<!-- ComponentEnd:Grid -->
+<!-- ComponentEnd: Grid -->
 
-<!-- ComponentStart:HierarchicalGrid -->
+<!-- ComponentStart: HierarchicalGrid -->
 ```ts
 public rowStyles = {
     background: (row: RowType) => row.validation.status === 'INVALID' ? '#FF000033' : '#00000000'
@@ -607,10 +607,10 @@ public cellStyles = {
 </igx-hierarchical-grid>
 ```
 
-<!-- ComponentEnd:HierarchicalGrid -->
+<!-- ComponentEnd: HierarchicalGrid -->
 
 
-<!-- ComponentStart:TreeGrid -->
+<!-- ComponentStart: TreeGrid -->
 ```razor
 public rowStyles = {
     background: (row: RowType) => row.cells.find(c => c.validation.errors !== null && c.validation.errors !== undefined) ? '#FF000033' : '#00000000'
@@ -627,7 +627,7 @@ public cellStyles = {
 <igx-tree-grid [rowStyles]="rowStyles">
         <igx-column *ngFor="let c of columns" [field]="c.field" [dataType]="c.dataType" [header]="c.label" [required]="c.required" [cellClasses]="cellStyles">
 ```
-<!-- ComponentEnd:TreeGrid -->
+<!-- ComponentEnd: TreeGrid -->
 
 
 ### Demo
@@ -659,12 +659,12 @@ public cellStyles = {
 
 <!-- Blazor -->
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [{ComponentTitle} Editing](editing.md)
 * [{ComponentTitle} Row Editing](row-editing.md)
 * [{ComponentTitle} Row Adding](row-adding.md)
 * [{ComponentTitle} Transactions](batch-editing.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 <!-- end: Blazor -->
 

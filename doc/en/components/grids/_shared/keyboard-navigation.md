@@ -48,9 +48,9 @@ When the `{ComponentName}` header container is focused, the following key combin
  - <kbd>Ctrl</kbd> + <kbd>↑</kbd> sorts the active column header in ASC order. If the column is already sorted in ASC, sorting state is cleared.
  - <kbd>Ctrl</kbd> + <kbd>↓</kbd> sorts the active column header in DSC order. If the column is already sorted in DSC, sorting state is cleared.
  - <kbd>Space</kbd> selects the column. If the column is already selected, selection is cleared.
- <!-- ComponentStart:Grid -->
+ <!-- ComponentStart: Grid -->
  - <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>←</kbd> groups the column, if the column is marked as groupable.
- <!-- ComponentEnd:Grid -->
+ <!-- ComponentEnd: Grid -->
  - <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>→</kbd> ungroups the column, if the column is marked as groupable.
  - <kbd>Alt</kbd> + <kbd>←</kbd> or <kbd>Alt</kbd> + <kbd>↑</kbd> collapses the column group header, if the header is not already collapsed.
  - <kbd>Alt</kbd> + <kbd>→</kbd> or <kbd>Alt</kbd> + <kbd>↓</kbd> expands the column group header, if the header is not already expanded.
@@ -330,7 +330,7 @@ Use the demo below to try out the custom scenarios that we just implemented:
 
 ## Additional Resources
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Filtering](filtering.md)
 * [Sorting](sorting.md)
@@ -339,7 +339,7 @@ Use the demo below to try out the custom scenarios that we just implemented:
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 

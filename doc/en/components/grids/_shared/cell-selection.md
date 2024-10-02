@@ -268,7 +268,7 @@ The multi-cell selection is index based (DOM elements selection).
 
 ## Styling
 
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming-grid.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
 <!-- ComponentStart: Grid -->
@@ -440,7 +440,7 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 
 ## Additional Resources
 
-<!-- ComponentStart:  Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, HierarchicalGrid -->
 * [Selection](selection.md)
 * [Row Selection](row-selection.md)
 * [Filtering](filtering.md)
@@ -450,7 +450,7 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Virtualization and Performance](virtualization.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 

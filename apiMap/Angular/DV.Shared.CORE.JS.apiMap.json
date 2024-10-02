@@ -55,6 +55,45 @@
       {"names":[{"platform": "Angular", "mappedType": "ErrorBarCalculatorType","mappedName": "StandardError"}], "originalName": "StandardError"} ]
   },
   {
+    "originalName": "HighlightingInfo",
+    "originalNamespace": "Infragistics",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "igx-highlighting-info.ts","mappedName": "IgxHighlightingInfo"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "context"}], "originalName": "Context"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "endIndex"}], "originalName": "EndIndex"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isExclusive"}], "originalName": "IsExclusive"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isFullRange"}], "originalName": "IsFullRange"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isMarker"}], "originalName": "IsMarker"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "progress"}], "originalName": "Progress"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "startIndex"}], "originalName": "StartIndex"},
+      {"names":[{"platform": "Angular", "mappedType": "HighlightingState","mappedName": "state"}], "originalName": "State"} ]
+  },
+  {
+    "originalName": "HighlightingState",
+    "originalNamespace": "Infragistics",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "HighlightingState.ts","mappedName": "HighlightingState"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "HighlightingState","mappedName": "Inward"}], "originalName": "In"},
+      {"names":[{"platform": "Angular", "mappedType": "HighlightingState","mappedName": "Outward"}], "originalName": "Out"},
+      {"names":[{"platform": "Angular", "mappedType": "HighlightingState","mappedName": "Static"}], "originalName": "Static"} ]
+  },
+  {
+    "originalName": "HighlightedValueDisplayMode",
+    "originalNamespace": "Infragistics",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "HighlightedValueDisplayMode.ts","mappedName": "HighlightedValueDisplayMode"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "HighlightedValueDisplayMode","mappedName": "Auto"}], "originalName": "Auto"},
+      {"names":[{"platform": "Angular", "mappedType": "HighlightedValueDisplayMode","mappedName": "Hidden"}], "originalName": "Hidden"},
+      {"names":[{"platform": "Angular", "mappedType": "HighlightedValueDisplayMode","mappedName": "Overlay"}], "originalName": "Overlay"} ]
+  },
+  {
     "originalName": "CaptureImageSettings",
     "originalNamespace": "Infragistics",
     "packageName": "igniteui-core",
@@ -125,9 +164,14 @@
     "names":[{"platform": "Angular","fileName": "SvgIconRegistry.ts","mappedName": "SvgIconRegistry"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "addDataURLString"}], "originalName": "AddDataURLString"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "addSvgPathString"}], "originalName": "AddSvgPathString"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "addSvgPathsString"}], "originalName": "AddSvgPathsString"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "getDataURLString"}], "originalName": "GetDataURLString"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "getSvgPathString"}], "originalName": "GetSvgPathString"},
-      {"names":[{"platform": "Angular", "mappedType": "Dictionary","mappedName": "_collections"}], "originalName": "_collections"} ]
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "getSvgPathsString"}], "originalName": "GetSvgPathsString"},
+      {"names":[{"platform": "Angular", "mappedType": "Dictionary","mappedName": "_collections"}], "originalName": "_collections"},
+      {"names":[{"platform": "Angular", "mappedType": "Dictionary","mappedName": "_dataURLs"}], "originalName": "_dataURLs"} ]
   },
   {
     "originalName": "FormatSpecifier",
@@ -218,6 +262,19 @@
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "thickness"}], "originalName": "Thickness"} ]
   },
   {
+    "originalName": "HighlightedValueLabelMode",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "HighlightedValueLabelMode.ts","mappedName": "HighlightedValueLabelMode"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "HighlightedValueLabelMode","mappedName": "Auto"}], "originalName": "Auto"},
+      {"names":[{"platform": "Angular", "mappedType": "HighlightedValueLabelMode","mappedName": "LabelBoth"}], "originalName": "LabelBoth"},
+      {"names":[{"platform": "Angular", "mappedType": "HighlightedValueLabelMode","mappedName": "PreferHighlighted"}], "originalName": "PreferHighlighted"},
+      {"names":[{"platform": "Angular", "mappedType": "HighlightedValueLabelMode","mappedName": "PreferOriginal"}], "originalName": "PreferOriginal"} ]
+  },
+  {
     "originalName": "LegendItemBadgeMode",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
@@ -244,6 +301,52 @@
       {"names":[{"platform": "Angular", "mappedType": "LegendItemBadgeShape","mappedName": "Line"}], "originalName": "Line"},
       {"names":[{"platform": "Angular", "mappedType": "LegendItemBadgeShape","mappedName": "Marker"}], "originalName": "Marker"},
       {"names":[{"platform": "Angular", "mappedType": "LegendItemBadgeShape","mappedName": "Square"}], "originalName": "Square"} ]
+  },
+  {
+    "originalName": "CalloutCollisionMode",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "CalloutCollisionMode.ts","mappedName": "CalloutCollisionMode"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "CalloutCollisionMode","mappedName": "Auto"}], "originalName": "Auto"},
+      {"names":[{"platform": "Angular", "mappedType": "CalloutCollisionMode","mappedName": "Greedy"}], "originalName": "Greedy"},
+      {"names":[{"platform": "Angular", "mappedType": "CalloutCollisionMode","mappedName": "GreedyCenterOfMass"}], "originalName": "GreedyCenterOfMass"},
+      {"names":[{"platform": "Angular", "mappedType": "CalloutCollisionMode","mappedName": "RadialBestFit"}], "originalName": "RadialBestFit"},
+      {"names":[{"platform": "Angular", "mappedType": "CalloutCollisionMode","mappedName": "RadialCenter"}], "originalName": "RadialCenter"},
+      {"names":[{"platform": "Angular", "mappedType": "CalloutCollisionMode","mappedName": "RadialInsideEnd"}], "originalName": "RadialInsideEnd"},
+      {"names":[{"platform": "Angular", "mappedType": "CalloutCollisionMode","mappedName": "RadialOutsideEnd"}], "originalName": "RadialOutsideEnd"},
+      {"names":[{"platform": "Angular", "mappedType": "CalloutCollisionMode","mappedName": "SimulatedAnnealing"}], "originalName": "SimulatedAnnealing"} ]
+  },
+  {
+    "originalName": "OthersCategoryType",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "OthersCategoryType.ts","mappedName": "OthersCategoryType"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "OthersCategoryType","mappedName": "Number"}], "originalName": "Number"},
+      {"names":[{"platform": "Angular", "mappedType": "OthersCategoryType","mappedName": "Percent"}], "originalName": "Percent"} ]
+  },
+  {
+    "originalName": "RadialLabelMode",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "RadialLabelMode.ts","mappedName": "RadialLabelMode"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "RadialLabelMode","mappedName": "Auto"}], "originalName": "Auto"},
+      {"names":[{"platform": "Angular", "mappedType": "RadialLabelMode","mappedName": "Label"}], "originalName": "Label"},
+      {"names":[{"platform": "Angular", "mappedType": "RadialLabelMode","mappedName": "LabelAndPercentage"}], "originalName": "LabelAndPercentage"},
+      {"names":[{"platform": "Angular", "mappedType": "RadialLabelMode","mappedName": "LabelAndValue"}], "originalName": "LabelAndValue"},
+      {"names":[{"platform": "Angular", "mappedType": "RadialLabelMode","mappedName": "LabelAndValueAndPercentage"}], "originalName": "LabelAndValueAndPercentage"},
+      {"names":[{"platform": "Angular", "mappedType": "RadialLabelMode","mappedName": "Normal"}], "originalName": "Normal"},
+      {"names":[{"platform": "Angular", "mappedType": "RadialLabelMode","mappedName": "Percentage"}], "originalName": "Percentage"},
+      {"names":[{"platform": "Angular", "mappedType": "RadialLabelMode","mappedName": "Value"}], "originalName": "Value"},
+      {"names":[{"platform": "Angular", "mappedType": "RadialLabelMode","mappedName": "ValueAndPercentage"}], "originalName": "ValueAndPercentage"} ]
   },
   {
     "originalName": "TrendLineType",
@@ -290,6 +393,18 @@
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "newValue"}], "originalName": "NewValue"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "oldValue"}], "originalName": "OldValue"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "propertyName"}], "originalName": "PropertyName"} ]
+  },
+  {
+    "originalName": "LegendEmptyValuesMode",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "LegendEmptyValuesMode.ts","mappedName": "LegendEmptyValuesMode"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "LegendEmptyValuesMode","mappedName": "AlwaysHidden"}], "originalName": "AlwaysHidden"},
+      {"names":[{"platform": "Angular", "mappedType": "LegendEmptyValuesMode","mappedName": "AlwaysVisible"}], "originalName": "AlwaysVisible"},
+      {"names":[{"platform": "Angular", "mappedType": "LegendEmptyValuesMode","mappedName": "ShowWhenNoOthersCategory"}], "originalName": "ShowWhenNoOthersCategory"} ]
   },
   {
     "originalName": "DataAbbreviationMode",
@@ -360,6 +475,17 @@
       {"names":[{"platform": "Angular", "mappedType": "DataLegendValueMode","mappedName": "Auto"}], "originalName": "Auto"},
       {"names":[{"platform": "Angular", "mappedType": "DataLegendValueMode","mappedName": "Currency"}], "originalName": "Currency"},
       {"names":[{"platform": "Angular", "mappedType": "DataLegendValueMode","mappedName": "Decimal"}], "originalName": "Decimal"} ]
+  },
+  {
+    "originalName": "DataLegendLayoutMode",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "DataLegendLayoutMode.ts","mappedName": "DataLegendLayoutMode"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "DataLegendLayoutMode","mappedName": "Table"}], "originalName": "Table"},
+      {"names":[{"platform": "Angular", "mappedType": "DataLegendLayoutMode","mappedName": "Vertical"}], "originalName": "Vertical"} ]
   },
   {
     "originalName": "DataLegendHeaderTimeMode",
@@ -479,23 +605,24 @@
       {"names":[{"platform": "Angular", "mappedType": "DataLegendSeriesValueType","mappedName": "YValue"}], "originalName": "YValue"} ]
   },
   {
-    "originalName": "DataLegendSeriesGroup",
+    "originalName": "DataLegendSeriesFamily",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
     "packageName": "igniteui-core",
-    "names":[{"platform": "Angular","fileName": "DataLegendSeriesGroup.ts","mappedName": "DataLegendSeriesGroup"}],
+    "names":[{"platform": "Angular","fileName": "DataLegendSeriesFamily.ts","mappedName": "DataLegendSeriesFamily"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
-      {"names":[{"platform": "Angular", "mappedType": "DataLegendSeriesGroup","mappedName": "Category"}], "originalName": "Category"},
-      {"names":[{"platform": "Angular", "mappedType": "DataLegendSeriesGroup","mappedName": "Financial"}], "originalName": "Financial"},
-      {"names":[{"platform": "Angular", "mappedType": "DataLegendSeriesGroup","mappedName": "Geographic"}], "originalName": "Geographic"},
-      {"names":[{"platform": "Angular", "mappedType": "DataLegendSeriesGroup","mappedName": "Indicator"}], "originalName": "Indicator"},
-      {"names":[{"platform": "Angular", "mappedType": "DataLegendSeriesGroup","mappedName": "Polar"}], "originalName": "Polar"},
-      {"names":[{"platform": "Angular", "mappedType": "DataLegendSeriesGroup","mappedName": "Radial"}], "originalName": "Radial"},
-      {"names":[{"platform": "Angular", "mappedType": "DataLegendSeriesGroup","mappedName": "Range"}], "originalName": "Range"},
-      {"names":[{"platform": "Angular", "mappedType": "DataLegendSeriesGroup","mappedName": "Scatter"}], "originalName": "Scatter"},
-      {"names":[{"platform": "Angular", "mappedType": "DataLegendSeriesGroup","mappedName": "Shape"}], "originalName": "Shape"},
-      {"names":[{"platform": "Angular", "mappedType": "DataLegendSeriesGroup","mappedName": "Stacked"}], "originalName": "Stacked"} ]
+      {"names":[{"platform": "Angular", "mappedType": "DataLegendSeriesFamily","mappedName": "Category"}], "originalName": "Category"},
+      {"names":[{"platform": "Angular", "mappedType": "DataLegendSeriesFamily","mappedName": "Financial"}], "originalName": "Financial"},
+      {"names":[{"platform": "Angular", "mappedType": "DataLegendSeriesFamily","mappedName": "Geographic"}], "originalName": "Geographic"},
+      {"names":[{"platform": "Angular", "mappedType": "DataLegendSeriesFamily","mappedName": "Highlight"}], "originalName": "Highlight"},
+      {"names":[{"platform": "Angular", "mappedType": "DataLegendSeriesFamily","mappedName": "Indicator"}], "originalName": "Indicator"},
+      {"names":[{"platform": "Angular", "mappedType": "DataLegendSeriesFamily","mappedName": "Polar"}], "originalName": "Polar"},
+      {"names":[{"platform": "Angular", "mappedType": "DataLegendSeriesFamily","mappedName": "Radial"}], "originalName": "Radial"},
+      {"names":[{"platform": "Angular", "mappedType": "DataLegendSeriesFamily","mappedName": "Range"}], "originalName": "Range"},
+      {"names":[{"platform": "Angular", "mappedType": "DataLegendSeriesFamily","mappedName": "Scatter"}], "originalName": "Scatter"},
+      {"names":[{"platform": "Angular", "mappedType": "DataLegendSeriesFamily","mappedName": "Shape"}], "originalName": "Shape"},
+      {"names":[{"platform": "Angular", "mappedType": "DataLegendSeriesFamily","mappedName": "Stacked"}], "originalName": "Stacked"} ]
   },
   {
     "originalName": "DataLegendSeriesContext",
@@ -506,7 +633,7 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getSeriesValue"}], "originalName": "GetSeriesValue"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getSeriesValueInfo"}], "originalName": "GetSeriesValueInfo"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getSeriesValues"}], "originalName": "GetSeriesValues"},
-      {"names":[{"platform": "Angular", "mappedType": "DataLegendSeriesGroup","mappedName": "seriesGroup"}], "originalName": "SeriesGroup"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "seriesFamily"}], "originalName": "SeriesFamily"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setSeriesValue"}], "originalName": "SetSeriesValue"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setSeriesValueInfo"}], "originalName": "SetSeriesValueInfo"} ]
   },
@@ -534,6 +661,7 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "memberPath"}], "originalName": "MemberPath"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "memberSymbol"}], "originalName": "MemberSymbol"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "memberUnit"}], "originalName": "MemberUnit"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "orderIndex"}], "originalName": "OrderIndex"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "toString"}], "originalName": "ToString"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "value"}], "originalName": "Value"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "valueNegativePrefix"}], "originalName": "ValueNegativePrefix"},
@@ -637,6 +765,7 @@
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "Button"}], "originalName": "Button"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "Checkbox"}], "originalName": "Checkbox"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "CheckboxList"}], "originalName": "CheckboxList"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "GroupHeader"}], "originalName": "GroupHeader"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "IconButton"}], "originalName": "IconButton"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "IconMenu"}], "originalName": "IconMenu"},
@@ -644,6 +773,7 @@
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "NumberInput"}], "originalName": "NumberInput"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "Radio"}], "originalName": "Radio"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "Separator"}], "originalName": "Separator"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "SubPanel"}], "originalName": "SubPanel"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "Unknown"}], "originalName": "Unknown"} ]
   },
   {
@@ -684,12 +814,15 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "commandId"}], "originalName": "CommandId"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "disabledTextColor"}], "originalName": "DisabledTextColor"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "iconCollectionName"}], "originalName": "IconCollectionName"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "iconHeight"}], "originalName": "IconHeight"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "iconName"}], "originalName": "IconName"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "iconViewBoxHeight"}], "originalName": "IconViewBoxHeight"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "iconViewBoxLeft"}], "originalName": "IconViewBoxLeft"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "iconViewBoxTop"}], "originalName": "IconViewBoxTop"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "iconViewBoxWidth"}], "originalName": "IconViewBoxWidth"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "iconWidth"}], "originalName": "IconWidth"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isDisabled"}], "originalName": "IsDisabled"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isHighlighted"}], "originalName": "IsHighlighted"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "paddingBottom"}], "originalName": "PaddingBottom"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "paddingLeft"}], "originalName": "PaddingLeft"},
@@ -711,6 +844,21 @@
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isChecked"}], "originalName": "IsChecked"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"} ]
+  },
+  {
+    "originalName": "ToolActionCheckboxListInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "ToolActionCheckboxListInfo.ts","mappedName": "ToolActionCheckboxListInfo"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "dataMemberPath"}], "originalName": "DataMemberPath"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "dataSource"}], "originalName": "ItemsSource"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "primaryKey"}], "originalName": "PrimaryKey"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "selectedMemberPath"}], "originalName": "SelectedMemberPath"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"} ]
   },
   {

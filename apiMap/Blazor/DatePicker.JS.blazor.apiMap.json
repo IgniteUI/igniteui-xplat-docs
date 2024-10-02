@@ -23,7 +23,7 @@
     "originalName": "DatePicker",
     "originalNamespace": "Infragistics.Controls.Inputs.Implementation",
     "packageName": "igniteui-inputs",
-    "names":[{"platform": "Blazor","fileName": "DatePicker.cs","mappedName": "IgbDatePicker"}],
+    "names":[{"platform": "Blazor","fileName": "XDatePicker.cs","mappedName": "IgbXDatePicker"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "AllowTextInput"}], "originalName": "AllowTextInput"},
       {"names":[{"platform": "Blazor", "mappedType": "BaseControlTheme","mappedName": "BaseTheme"}], "originalName": "BaseTheme"},

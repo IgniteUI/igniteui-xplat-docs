@@ -3,7 +3,7 @@ title: {Platform} Form | Data Visualization Tools | Infragistics
 _description: Infragistics' {Platform} form is a component used to collect user input from interactive controls. Improve your application with Ignite UI for  {Platform}!
 _keywords: {Platform} form, {ProductName}, Infragistics
 _language: kr
-mentionedTypes: ['Form']
+mentionedTypes: ["Form"]
 ---
 
 # {Platform} Form Overview

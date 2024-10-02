@@ -3,7 +3,7 @@ title: {Platform} Spreadsheet | Grid Controls | Overview | Infragistics |
 _description: Use the Spreadsheet control to embed Excel document creation and editing experiences right into your application.
 _keywords: Spreadsheet, {ProductName}, Infragistics
 _language: kr
-mentionedTypes: ['Spreadsheet']
+mentionedTypes: ["Spreadsheet"]
 ---
 
 # {Platform} {Platform} Spreadsheet

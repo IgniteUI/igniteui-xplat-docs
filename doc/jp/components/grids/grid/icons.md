@@ -2,7 +2,7 @@
 title: {Platform} {ComponentTitle} アイコンのカスタマイズ - インフラジスティックス
 _description: {Platform} Grid のカスタム アイコンを構成します。
 _keywords: icons, custom icons, igniteui for {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, アイコン, カスタム アイコン, インフラジスティックス
-mentionedTypes: ['Infragistics.Controls.Grid']
+mentionedTypes: ["Infragistics.Controls.Grid"]
 _language: ja
 ---
 

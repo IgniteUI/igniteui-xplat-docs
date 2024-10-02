@@ -2,7 +2,7 @@
 title: {Platform} Date Picker Component - {ProductName}
 _description: Infragistics' {Platform} Date Picker allows the user to select a date from a calendar and set it in an input element.
 _keywords: {Platform} Date Picker, {ProductName}, Infragistics
-mentionedTypes: ['DatePicker']
+mentionedTypes: ["DatePicker"]
 ---
 
 # {Platform} Date Picker Component Overview
@@ -122,7 +122,7 @@ datePickerRef.current.value = new Date();
 }
 ```
 <!-- WebComponents -->
-If a string is bound to the picker, it needs to be in the `ISO 8601` format:
+If a string is bound to the picker, it needs to be in the **ISO 8601** format:
 ```html
 <igc-date-picker value="2000-01-01"></igc-date-picker>
 ```

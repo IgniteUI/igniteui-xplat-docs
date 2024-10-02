@@ -57,18 +57,18 @@ In the `{ComponentName}`, if you set `RowEditable` property to true, and the `Ed
  - For `boolean` data type, default template is using `Checkbox`.
  - For `currency` data type, default template is using `InputGroup` with prefix/suffix configuration based on application or grid locale settings.
  - For `percent` data type, default template is using `InputGroup` with suffix element that shows a preview of the edited value in percents.
- <!-- ComponentStart:  Grid -->
+ <!-- ComponentStart: Grid -->
  - For custom templates you can see [Cell Editing topic](cell-editing.md#{PlatformLower}-grid-cell-editing-and-edit-templates-example)
- <!-- ComponentEnd:  Grid -->
+ <!-- ComponentEnd: Grid -->
 
-<!-- ComponentStart:  Grid, TreeGrid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 All available column data types could be found in the official [Column types topic](column-types.md#default-template).
-<!-- ComponentEnd:  Grid, TreeGrid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
 ### Event Arguments and Sequence
-<!-- ComponentStart:  Grid, TreeGrid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 The grid exposes a wide array of events that provide greater control over the editing experience. These events are fired during the [**Row Editing**](row-editing.md) and [**Cell Editing**](cell-editing.md) lifecycle - when starting, committing or canceling the editing action.
-<!-- ComponentEnd:  Grid, TreeGrid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
  | Event           | Description                                                                                                                                               | Arguments                  | Cancellable |
  | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ----------- |
@@ -199,7 +199,7 @@ function onSorting(grid: {ComponentName}, event: IgrSortingEventArgs) {
 
 <!-- Blazor -->
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [Column Data Types](column-types.md#default-template)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
@@ -211,7 +211,7 @@ function onSorting(grid: {ComponentName}, event: IgrSortingEventArgs) {
 * [Selection](selection.md)
 * [Searching](search.md)
 
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 <!-- * [Searching](search.md) -->

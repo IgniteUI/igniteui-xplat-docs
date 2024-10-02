@@ -2,7 +2,7 @@
 title: {Platform} ボタン グループ コンポーネント | {ProductName}
 _description: {Platform} ボタン グループ コンポーネント - {Platform} 一連のトグル ボタンを使用して、レイアウトや選択などの機能を公開します。
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Button Group Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, {Platform} ボタン グループ コンポーネント, インフラジスティックス
-mentionedTypes: ['ToggleButton', 'ButtonGroup']
+mentionedTypes: ["ToggleButton", "ButtonGroup"]
 _language: ja
 ---
 
@@ -151,12 +151,10 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonGroupModule));
 - **single-required** - ラジオ グループの動作を模倣します。選択できるボタンは 1 つだけであり、最初に選択すると、ユーザーの操作を通じて選択を解除することはできません。
 - **multiple** - グループ内の複数のボタンを選択または選択解除できます。
 
-<!-- WebComponents, Blazor -->
 以下のサンプルは、公開された `ButtonGroup` 選択モードを示しています。
 
 `sample="/inputs/button-group/selection", height="170", alt="{Platform} Button Group の選択例"`
 
-<!-- end: WebComponents, Blazor -->
 
 <!-- WebComponents, React -->
 `ToggleButton` は、`Selected` 属性または `ButtonGroup` の `SelectedItems` 属性を通じて選択済みとしてマークできます。

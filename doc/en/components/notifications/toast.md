@@ -2,7 +2,7 @@
 title: {Platform} Toast Notifications | {ProductName}
 _description: With {ProductName} Toast component, developers can easily integrate a brief, single-line message within mobile and desktop applications. Try it Now
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Toast components
-mentionedTypes: ['Toast']
+mentionedTypes: ["Toast"]
 ---
 
 # {Platform} Toast Overview

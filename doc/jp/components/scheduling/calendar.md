@@ -2,7 +2,7 @@
 title: {Platform} Calendar コンポーネント - {ProductName}
 _description: {Platform} Calendar (カレンダー) コンポーネントを使用すると、ユーザーはアプリケーション用の直感的なカレンダーを作成し、3 つの異なる選択モードを使用して日付情報を表示できます。今すぐお試しください。
 _keywords: {Platform} Calendar, {Platform} カレンダー, {ProductName}, インフラジスティックス
-mentionedTypes: ['Calendar', 'DateRangeType', 'DateRangeDescriptor']
+mentionedTypes: ["Calendar", "DateRangeType", "DateRangeDescriptor"]
 _language: ja
 ---
 

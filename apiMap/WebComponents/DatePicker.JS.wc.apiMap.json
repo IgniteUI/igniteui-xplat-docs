@@ -1,5 +1,5 @@
 {
-  "extraFiles": ["igc-date-picker-module.ts"],
+  "extraFiles": ["igc-x-date-picker-module.ts"],
   "types":[
   {
     "originalName": "DateTimeValueFormatter",
@@ -25,7 +25,7 @@
     "originalName": "DatePicker",
     "originalNamespace": "Infragistics.Controls.Inputs.Implementation",
     "packageName": "igniteui-inputs",
-    "names":[{"platform": "WebComponents","fileName": "igc-date-picker-component.ts","mappedName": "IgcDatePickerComponent"}],
+    "names":[{"platform": "WebComponents","fileName": "igc-x-date-picker-component.ts","mappedName": "IgcXDatePickerComponent"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "allowTextInput"}], "originalName": "AllowTextInput"},
       {"names":[{"platform": "WebComponents", "mappedType": "BaseControlTheme","mappedName": "baseTheme"}], "originalName": "BaseTheme"},

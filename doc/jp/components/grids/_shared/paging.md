@@ -403,7 +403,7 @@ $dark-button: button-theme(
 
 ## その他のリソース
 
-<!-- ComponentStart:  Grid, TreeGrid -->
+<!-- ComponentStart: Grid, TreeGrid -->
 
 <!-- * [ページネーター](../paginator.md) -->
 * [仮想化とパフォーマンス](virtualization.md)
@@ -415,7 +415,7 @@ $dark-button: button-theme(
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
 
-<!-- ComponentEnd:  Grid, TreeGrid -->
+<!-- ComponentEnd: Grid, TreeGrid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
