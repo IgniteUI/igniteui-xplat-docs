@@ -21,6 +21,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "ControlDisplayDensity","mappedName": "density"}], "originalName": "Density"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "deselectAll"}], "originalName": "DeselectAll"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "filterPlaceholderText"}], "originalName": "FilterPlaceholderText"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getDesiredSize"}], "originalName": "GetDesiredSize"},
       {"names":[{"platform": "WebComponents", "mappedType": "CheckboxListIndexType","mappedName": "indexType"}], "originalName": "IndexType"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "isEverythingSelected"}], "originalName": "IsEverythingSelected"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "isNothingSelected"}], "originalName": "IsNothingSelected"},

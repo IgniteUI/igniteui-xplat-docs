@@ -395,6 +395,18 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "propertyName"}], "originalName": "PropertyName"} ]
   },
   {
+    "originalName": "LegendEmptyValuesMode",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "LegendEmptyValuesMode.ts","mappedName": "LegendEmptyValuesMode"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "LegendEmptyValuesMode","mappedName": "AlwaysHidden"}], "originalName": "AlwaysHidden"},
+      {"names":[{"platform": "Angular", "mappedType": "LegendEmptyValuesMode","mappedName": "AlwaysVisible"}], "originalName": "AlwaysVisible"},
+      {"names":[{"platform": "Angular", "mappedType": "LegendEmptyValuesMode","mappedName": "ShowWhenNoOthersCategory"}], "originalName": "ShowWhenNoOthersCategory"} ]
+  },
+  {
     "originalName": "DataAbbreviationMode",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,

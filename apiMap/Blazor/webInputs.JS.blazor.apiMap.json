@@ -1,5 +1,37 @@
 {  "types":[
   {
+    "originalName": "RadioChangeEventArgsDetail",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Blazor","fileName": "RadioChangeEventArgsDetail.cs","mappedName": "IgbRadioChangeEventArgsDetail"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Checked"}], "originalName": "Checked"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Value"}], "originalName": "Value"} ]
+  },
+  {
+    "originalName": "RadioGroup",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Blazor","fileName": "RadioGroup.cs","mappedName": "IgbRadioGroup"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "RadioGroupAlignment","mappedName": "Alignment"}], "originalName": "Alignment"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Value"}], "originalName": "Value"} ]
+  },
+  {
+    "originalName": "CheckboxChangeEventArgsDetail",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Blazor","fileName": "CheckboxChangeEventArgsDetail.cs","mappedName": "IgbCheckboxChangeEventArgsDetail"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Checked"}], "originalName": "Checked"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Value"}], "originalName": "Value"} ]
+  },
+  {
     "originalName": "DockManagerLayout",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webinputs",
@@ -29,6 +61,87 @@
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Year"}], "originalName": "Year"} ]
   },
   {
+    "originalName": "Banner",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Blazor","fileName": "Banner.cs","mappedName": "IgbBanner"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Hide"}], "originalName": "Hide"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Open"}], "originalName": "Open"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Show"}], "originalName": "Show"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Toggle"}], "originalName": "Toggle"} ]
+  },
+  {
+    "originalName": "CheckboxChangeEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Blazor","fileName": "CheckboxChangeEventArgs.cs","mappedName": "IgbCheckboxChangeEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "IgbCheckboxChangeEventArgsDetail","mappedName": "Detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "DatePicker",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseComboBoxLike",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Blazor","fileName": "DatePicker.cs","mappedName": "IgbDatePicker"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "ActiveDate"}], "originalName": "ActiveDate"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "CheckValidity"}], "originalName": "CheckValidity"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Clear"}], "originalName": "Clear"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ConnectedCallback"}], "originalName": "ConnectedCallback"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Disabled"}], "originalName": "Disabled"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbDateRangeDescriptor[]","mappedName": "DisabledDates"}], "originalName": "DisabledDates"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "DisplayFormat"}], "originalName": "DisplayFormat"},
+      {"names":[{"platform": "Blazor", "mappedType": "DatePickerHeaderOrientation","mappedName": "HeaderOrientation"}], "originalName": "HeaderOrientation"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "HideHeader"}], "originalName": "HideHeader"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "HideOutsideDays"}], "originalName": "HideOutsideDays"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "InputFormat"}], "originalName": "InputFormat"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Invalid"}], "originalName": "Invalid"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Label"}], "originalName": "Label"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Locale"}], "originalName": "Locale"},
+      {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "Max"}], "originalName": "Max"},
+      {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "Min"}], "originalName": "Min"},
+      {"names":[{"platform": "Blazor", "mappedType": "DatePickerMode","mappedName": "Mode"}], "originalName": "Mode"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "NonEditable"}], "originalName": "NonEditable"},
+      {"names":[{"platform": "Blazor", "mappedType": "DatePickerOrientation","mappedName": "Orientation"}], "originalName": "Orientation"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Outlined"}], "originalName": "Outlined"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Placeholder"}], "originalName": "Placeholder"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Prompt"}], "originalName": "Prompt"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ReadOnly"}], "originalName": "ReadOnly"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ReportValidity"}], "originalName": "ReportValidity"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Required"}], "originalName": "Required"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbCalendarResourceStrings","mappedName": "ResourceStrings"}], "originalName": "ResourceStrings"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Select"}], "originalName": "Select"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetCustomValidity"}], "originalName": "SetCustomValidity"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetRangeText"}], "originalName": "SetRangeText"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetSelectionRange"}], "originalName": "SetSelectionRange"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ShowWeekNumbers"}], "originalName": "ShowWeekNumbers"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbDateRangeDescriptor[]","mappedName": "SpecialDates"}], "originalName": "SpecialDates"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "StepDown"}], "originalName": "StepDown"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "StepUp"}], "originalName": "StepUp"},
+      {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "Value"}], "originalName": "Value"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "VisibleMonths"}], "originalName": "VisibleMonths"},
+      {"names":[{"platform": "Blazor", "mappedType": "WeekDays","mappedName": "WeekStart"}], "originalName": "WeekStart"} ]
+  },
+  {
+    "originalName": "Divider",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Blazor","fileName": "Divider.cs","mappedName": "IgbDivider"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "DividerType","mappedName": "LineType"}], "originalName": "LineType"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Middle"}], "originalName": "Middle"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Vertical"}], "originalName": "Vertical"} ]
+  },
+  {
     "originalName": "PaneScrollEventArgs",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webinputs",
@@ -46,6 +159,14 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
+    "originalName": "RadioChangeEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Blazor","fileName": "RadioChangeEventArgs.cs","mappedName": "IgbRadioChangeEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "IgbRadioChangeEventArgsDetail","mappedName": "Detail"}], "originalName": "Detail"} ]
+  },
+  {
     "originalName": "SplitterResizeEventArgs",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webinputs",
@@ -55,6 +176,14 @@
       {"names":[{"platform": "Blazor", "mappedType": "IgbDockManagerPane","mappedName": "Pane"}], "originalName": "Pane"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "PaneHeight"}], "originalName": "PaneHeight"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "PaneWidth"}], "originalName": "PaneWidth"} ]
+  },
+  {
+    "originalName": "IconMeta",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Blazor","fileName": "IconMeta.cs","mappedName": "IgbIconMeta"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Collection"}], "originalName": "Collection"} ]
   },
   {
     "originalName": "TreeSelectionChangeDetail",
@@ -171,27 +300,6 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
-    "originalName": "CalendarResourceStrings",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "Blazor","fileName": "CalendarResourceStrings.cs","mappedName": "IgbCalendarResourceStrings"}],
-    "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "EndDate"}], "originalName": "EndDate"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "NextMonth"}], "originalName": "NextMonth"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "NextYear"}], "originalName": "NextYear"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "NextYears"}], "originalName": "NextYears"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "PreviousMonth"}], "originalName": "PreviousMonth"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "PreviousYear"}], "originalName": "PreviousYear"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "PreviousYears"}], "originalName": "PreviousYears"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectDate"}], "originalName": "SelectDate"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectMonth"}], "originalName": "SelectMonth"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectRange"}], "originalName": "SelectRange"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectYear"}], "originalName": "SelectYear"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectedDate"}], "originalName": "SelectedDate"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "StartDate"}], "originalName": "StartDate"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "WeekLabel"}], "originalName": "WeekLabel"} ]
-  },
-  {
     "originalName": "Combo",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
@@ -232,7 +340,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Show"}], "originalName": "Show"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "SingleSelect"}], "originalName": "SingleSelect"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Toggle"}], "originalName": "Toggle"},
-      {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "Value"}], "originalName": "Value"},
+      {"names":[{"platform": "Blazor", "mappedType": "T[]","mappedName": "Value"}], "originalName": "Value"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueKey"}], "originalName": "ValueKey"} ]
   },
   {
@@ -255,12 +363,6 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
-    "originalName": "ComboTemplateProps",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "Blazor","fileName": "ComboTemplateProps.cs","mappedName": "IgbComboTemplateProps"}]
-  },
-  {
     "originalName": "DateTimeInput",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
@@ -274,9 +376,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "InputFormat"}], "originalName": "InputFormat"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Locale"}], "originalName": "Locale"},
       {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "Max"}], "originalName": "Max"},
-      {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "MaxValue"}], "originalName": "MaxValue"},
       {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "Min"}], "originalName": "Min"},
-      {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "MinValue"}], "originalName": "MinValue"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbDatePartDeltas","mappedName": "SpinDelta"}], "originalName": "SpinDelta"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "SpinLoop"}], "originalName": "SpinLoop"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "StepDown"}], "originalName": "StepDown"},
@@ -666,12 +766,6 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Value"}], "originalName": "Value"} ]
   },
   {
-    "originalName": "ToggleOptions",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "Blazor","fileName": "ToggleOptions.cs","mappedName": "IgbToggleOptions"}]
-  },
-  {
     "originalName": "TreeSelectionChange",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webinputs",
@@ -766,7 +860,6 @@
       {"names":[{"platform": "Blazor", "mappedType": "TreeSelection","mappedName": "Selection"}], "originalName": "Selection"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "SingleBranchExpand"}], "originalName": "SingleBranchExpand"},
-      {"names":[{"platform": "Blazor", "mappedType": "SizableComponentSize","mappedName": "Size"}], "originalName": "Size"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ToggleNodeOnClick"}], "originalName": "ToggleNodeOnClick"} ]
   },
   {
@@ -1113,7 +1206,6 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Href"}], "originalName": "Href"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Rel"}], "originalName": "Rel"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
-      {"names":[{"platform": "Blazor", "mappedType": "SizableComponentSize","mappedName": "Size"}], "originalName": "Size"},
       {"names":[{"platform": "Blazor", "mappedType": "ButtonBaseTarget","mappedName": "Target"}], "originalName": "Target"} ]
   },
   {
@@ -1127,7 +1219,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Autocomplete"}], "originalName": "Autocomplete"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Autofocus"}], "originalName": "Autofocus"},
       {"names":[{"platform": "Blazor", "mappedType": "InputType","mappedName": "DisplayType"}], "originalName": "DisplayType"},
-      {"names":[{"platform": "Blazor", "mappedType": "InputInputmode","mappedName": "Inputmode"}], "originalName": "Inputmode"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "InputMode"}], "originalName": "InputMode"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Max"}], "originalName": "Max"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "MaxLength"}], "originalName": "MaxLength"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Min"}], "originalName": "Min"},
@@ -1156,12 +1248,10 @@
       {"names":[{"platform": "Blazor", "mappedType": "IgbDropdownItem[]","mappedName": "Items"}], "originalName": "Items"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "NavigateTo"}], "originalName": "NavigateTo"},
       {"names":[{"platform": "Blazor", "mappedType": "DropdownPlacement","mappedName": "Placement"}], "originalName": "Placement"},
-      {"names":[{"platform": "Blazor", "mappedType": "DropdownPositionStrategy","mappedName": "PositionStrategy"}], "originalName": "PositionStrategy"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "SameWidth"}], "originalName": "SameWidth"},
       {"names":[{"platform": "Blazor", "mappedType": "DropdownScrollStrategy","mappedName": "ScrollStrategy"}], "originalName": "ScrollStrategy"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Select"}], "originalName": "Select"},
-      {"names":[{"platform": "Blazor", "mappedType": "IgbDropdownItem","mappedName": "SelectedItem"}], "originalName": "SelectedItem"},
-      {"names":[{"platform": "Blazor", "mappedType": "SizableComponentSize","mappedName": "Size"}], "originalName": "Size"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "IgbDropdownItem","mappedName": "SelectedItem"}], "originalName": "SelectedItem"} ]
   },
   {
     "originalName": "Chip",
@@ -1176,8 +1266,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Selectable"}], "originalName": "Selectable"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Selected"}], "originalName": "Selected"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
-      {"names":[{"platform": "Blazor", "mappedType": "SizableComponentSize","mappedName": "Size"}], "originalName": "Size"},
-      {"names":[{"platform": "Blazor", "mappedType": "ChipVariant","mappedName": "Variant"}], "originalName": "Variant"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "StyleVariant","mappedName": "Variant"}], "originalName": "Variant"} ]
   },
   {
     "originalName": "CircularGradient",
@@ -1246,9 +1335,7 @@
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "BlurComponent"}], "originalName": "BlurComponent"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "CheckValidity"}], "originalName": "CheckValidity"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ConnectedCallback"}], "originalName": "ConnectedCallback"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Disabled"}], "originalName": "Disabled"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "DisconnectedCallback"}], "originalName": "DisconnectedCallback"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "FocusComponent"}], "originalName": "FocusComponent"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Invalid"}], "originalName": "Invalid"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Label"}], "originalName": "Label"},
@@ -1260,8 +1347,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetCustomValidity"}], "originalName": "SetCustomValidity"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetRangeText"}], "originalName": "SetRangeText"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetSelectionRange"}], "originalName": "SetSelectionRange"},
-      {"names":[{"platform": "Blazor", "mappedType": "SizableComponentSize","mappedName": "Size"}], "originalName": "Size"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetSelectionRange"}], "originalName": "SetSelectionRange"} ]
   },
   {
     "originalName": "LinearProgress",
@@ -1290,7 +1376,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Max"}], "originalName": "Max"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Value"}], "originalName": "Value"},
-      {"names":[{"platform": "Blazor", "mappedType": "ProgressBaseVariant","mappedName": "Variant"}], "originalName": "Variant"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "StyleVariant","mappedName": "Variant"}], "originalName": "Variant"} ]
   },
   {
     "originalName": "Rating",
@@ -1312,7 +1398,6 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetCustomValidity"}], "originalName": "SetCustomValidity"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Single"}], "originalName": "Single"},
-      {"names":[{"platform": "Blazor", "mappedType": "SizableComponentSize","mappedName": "Size"}], "originalName": "Size"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Step"}], "originalName": "Step"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "StepDown"}], "originalName": "StepDown"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "StepUp"}], "originalName": "StepUp"},
@@ -1339,12 +1424,6 @@
     "names":[{"platform": "Blazor","fileName": "Snackbar.cs","mappedName": "IgbSnackbar"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActionText"}], "originalName": "ActionText"} ]
-  },
-  {
-    "originalName": "ThemeController",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "Blazor","fileName": "ThemeController.cs","mappedName": "IgbThemeController"}]
   },
   {
     "originalName": "Toast",
@@ -1380,8 +1459,6 @@
     "packageName": "igniteui-webinputs",
     "names":[{"platform": "Blazor","fileName": "RangeSlider.cs","mappedName": "IgbRangeSlider"}],
     "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "AriaLabelLower"}], "originalName": "AriaLabelLower"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "AriaLabelUpper"}], "originalName": "AriaLabelUpper"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Lower"}], "originalName": "Lower"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ThumbLabelLower"}], "originalName": "ThumbLabelLower"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ThumbLabelUpper"}], "originalName": "ThumbLabelUpper"},
@@ -1449,15 +1526,6 @@
       {"names":[{"platform": "Blazor", "mappedType": "IgbRangeSliderValue","mappedName": "Detail"}], "originalName": "Detail"} ]
   },
   {
-    "originalName": "FormData",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "Blazor","fileName": "FormData.cs","mappedName": "IgbFormData"}],
-    "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "Keys"}], "originalName": "Keys"},
-      {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "Values"}], "originalName": "Values"} ]
-  },
-  {
     "originalName": "Calendar",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
@@ -1473,7 +1541,6 @@
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "HideOutsideDays"}], "originalName": "HideOutsideDays"},
       {"names":[{"platform": "Blazor", "mappedType": "CalendarOrientation","mappedName": "Orientation"}], "originalName": "Orientation"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbCalendarResourceStrings","mappedName": "ResourceStrings"}], "originalName": "ResourceStrings"},
-      {"names":[{"platform": "Blazor", "mappedType": "SizableComponentSize","mappedName": "Size"}], "originalName": "Size"},
       {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "Value"}], "originalName": "Value"},
       {"names":[{"platform": "Blazor", "mappedType": "DateTime[]","mappedName": "Values"}], "originalName": "Values"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "VisibleMonths"}], "originalName": "VisibleMonths"} ]
@@ -1524,6 +1591,27 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Weekday"}], "originalName": "Weekday"} ]
   },
   {
+    "originalName": "CalendarResourceStrings",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Blazor","fileName": "CalendarResourceStrings.cs","mappedName": "IgbCalendarResourceStrings"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "EndDate"}], "originalName": "EndDate"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "NextMonth"}], "originalName": "NextMonth"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "NextYear"}], "originalName": "NextYear"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "NextYears"}], "originalName": "NextYears"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "PreviousMonth"}], "originalName": "PreviousMonth"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "PreviousYear"}], "originalName": "PreviousYear"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "PreviousYears"}], "originalName": "PreviousYears"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectDate"}], "originalName": "SelectDate"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectMonth"}], "originalName": "SelectMonth"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectRange"}], "originalName": "SelectRange"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectYear"}], "originalName": "SelectYear"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectedDate"}], "originalName": "SelectedDate"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "StartDate"}], "originalName": "StartDate"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "WeekLabel"}], "originalName": "WeekLabel"} ]
+  },
+  {
     "originalName": "CalendarBase",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
@@ -1537,7 +1625,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ShowWeekNumbers"}], "originalName": "ShowWeekNumbers"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbDateRangeDescriptor[]","mappedName": "SpecialDates"}], "originalName": "SpecialDates"},
-      {"names":[{"platform": "Blazor", "mappedType": "CalendarBaseWeekStart","mappedName": "WeekStart"}], "originalName": "WeekStart"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "WeekDays","mappedName": "WeekStart"}], "originalName": "WeekStart"} ]
   },
   {
     "originalName": "ComponentDataValueChangedEventArgs",
@@ -1656,28 +1744,6 @@
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Detail"}], "originalName": "Detail"} ]
   },
   {
-    "originalName": "Form",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "Blazor","fileName": "Form.cs","mappedName": "IgbForm"}],
-    "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Novalidate"}], "originalName": "Novalidate"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "PerformReset"}], "originalName": "PerformReset"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "PerformSubmit"}], "originalName": "PerformSubmit"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ReportValidity"}], "originalName": "ReportValidity"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
-    "originalName": "FormDataEventArgs",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "Blazor","fileName": "FormDataEventArgs.cs","mappedName": "IgbFormDataEventArgs"}],
-    "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "IgbFormData","mappedName": "Detail"}], "originalName": "Detail"} ]
-  },
-  {
     "originalName": "IconButton",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
@@ -1700,8 +1766,7 @@
     "packageName": "igniteui-webinputs",
     "names":[{"platform": "Blazor","fileName": "List.cs","mappedName": "IgbList"}],
     "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
-      {"names":[{"platform": "Blazor", "mappedType": "SizableComponentSize","mappedName": "Size"}], "originalName": "Size"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
     "originalName": "ListHeader",
@@ -1767,7 +1832,6 @@
     "names":[{"platform": "Blazor","fileName": "NavDrawerItem.cs","mappedName": "IgbNavDrawerItem"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Active"}], "originalName": "Active"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ConnectedCallback"}], "originalName": "ConnectedCallback"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Disabled"}], "originalName": "Disabled"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
@@ -1817,7 +1881,6 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Initials"}], "originalName": "Initials"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Blazor", "mappedType": "AvatarShape","mappedName": "Shape"}], "originalName": "Shape"},
-      {"names":[{"platform": "Blazor", "mappedType": "SizableComponentSize","mappedName": "Size"}], "originalName": "Size"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Src"}], "originalName": "Src"} ]
   },
   {
@@ -1831,7 +1894,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Outlined"}], "originalName": "Outlined"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Blazor", "mappedType": "BadgeShape","mappedName": "Shape"}], "originalName": "Shape"},
-      {"names":[{"platform": "Blazor", "mappedType": "BadgeVariant","mappedName": "Variant"}], "originalName": "Variant"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "StyleVariant","mappedName": "Variant"}], "originalName": "Variant"} ]
   },
   {
     "originalName": "Button",
@@ -1858,8 +1921,8 @@
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Mirrored"}], "originalName": "Mirrored"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "RegisterIcon"}], "originalName": "RegisterIcon"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "RegisterIconFromText"}], "originalName": "RegisterIconFromText"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
-      {"names":[{"platform": "Blazor", "mappedType": "SizableComponentSize","mappedName": "Size"}], "originalName": "Size"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetIconRef"}], "originalName": "SetIconRef"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
     "originalName": "Radio",
@@ -1882,17 +1945,6 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetCustomValidity"}], "originalName": "SetCustomValidity"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Value"}], "originalName": "Value"} ]
-  },
-  {
-    "originalName": "RadioGroup",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "Blazor","fileName": "RadioGroup.cs","mappedName": "IgbRadioGroup"}],
-    "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "RadioGroupAlignment","mappedName": "Alignment"}], "originalName": "Alignment"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
     "originalName": "Accordion",

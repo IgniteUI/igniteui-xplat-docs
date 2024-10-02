@@ -3,6 +3,7 @@
     "igx-accordion-module.ts",
     "igx-avatar-module.ts",
     "igx-badge-module.ts",
+    "igx-banner-module.ts",
     "igx-base-alert-like-module.ts",
     "igx-base-combo-box-like-module.ts",
     "igx-base-option-like-module.ts",
@@ -22,15 +23,16 @@
     "igx-circular-gradient-module.ts",
     "igx-circular-progress-module.ts",
     "igx-combo-module.ts",
+    "igx-date-picker-module.ts",
     "igx-date-time-input-module.ts",
     "igx-dialog-module.ts",
+    "igx-divider-module.ts",
     "igx-dock-manager-module.ts",
     "igx-dropdown-group-module.ts",
     "igx-dropdown-header-module.ts",
     "igx-dropdown-item-module.ts",
     "igx-dropdown-module.ts",
     "igx-expansion-panel-module.ts",
-    "igx-form-module.ts",
     "igx-icon-button-module.ts",
     "igx-icon-module.ts",
     "igx-input-base-module.ts",
@@ -74,6 +76,39 @@
   ],
   "types":[
   {
+    "originalName": "RadioChangeEventArgsDetail",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Angular","fileName": "igx-radio-change-event-args-detail.ts","mappedName": "IgxRadioChangeEventArgsDetail"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "checked"}], "originalName": "Checked"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"} ]
+  },
+  {
+    "originalName": "RadioGroup",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Angular","fileName": "igx-radio-group-component.ts","mappedName": "IgxRadioGroupComponent"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "RadioGroupAlignment","mappedName": "alignment"}], "originalName": "Alignment"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"} ]
+  },
+  {
+    "originalName": "CheckboxChangeEventArgsDetail",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Angular","fileName": "igx-checkbox-change-event-args-detail.ts","mappedName": "IgxCheckboxChangeEventArgsDetail"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "checked"}], "originalName": "Checked"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"} ]
+  },
+  {
     "originalName": "DockManagerLayout",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webinputs",
@@ -106,6 +141,88 @@
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "year"}], "originalName": "Year"} ]
   },
   {
+    "originalName": "Banner",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Angular","fileName": "igx-banner-component.ts","mappedName": "IgxBannerComponent"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "hide"}], "originalName": "Hide"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "open"}], "originalName": "Open"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "show"}], "originalName": "Show"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "toggle"}], "originalName": "Toggle"} ]
+  },
+  {
+    "originalName": "CheckboxChangeEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Angular","fileName": "igx-checkbox-change-event-args.ts","mappedName": "IgxCheckboxChangeEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "IgxCheckboxChangeEventArgsDetail","mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "DatePicker",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseComboBoxLike",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Angular","fileName": "igx-date-picker-component.ts","mappedName": "IgxDatePickerComponent"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "Date","mappedName": "activeDate"}], "originalName": "ActiveDate"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "checkValidity"}], "originalName": "CheckValidity"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "clear"}], "originalName": "Clear"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
+      {"names":[{"platform": "Angular", "mappedType": "IDateRangeDescriptor[]","mappedName": "disabledDates"}], "originalName": "DisabledDates"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "displayFormat"}], "originalName": "DisplayFormat"},
+      {"names":[{"platform": "Angular", "mappedType": "DatePickerHeaderOrientation","mappedName": "headerOrientation"}], "originalName": "HeaderOrientation"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "hideHeader"}], "originalName": "HideHeader"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "hideOutsideDays"}], "originalName": "HideOutsideDays"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "inputFormat"}], "originalName": "InputFormat"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "label"}], "originalName": "Label"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "locale"}], "originalName": "Locale"},
+      {"names":[{"platform": "Angular", "mappedType": "Date","mappedName": "max"}], "originalName": "Max"},
+      {"names":[{"platform": "Angular", "mappedType": "Date","mappedName": "min"}], "originalName": "Min"},
+      {"names":[{"platform": "Angular", "mappedType": "DatePickerMode","mappedName": "mode"}], "originalName": "Mode"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "nonEditable"}], "originalName": "NonEditable"},
+      {"names":[{"platform": "Angular", "mappedType": "DatePickerOrientation","mappedName": "orientation"}], "originalName": "Orientation"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "outlined"}], "originalName": "Outlined"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "placeholder"}], "originalName": "Placeholder"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "prompt"}], "originalName": "Prompt"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "readOnly"}], "originalName": "ReadOnly"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "reportValidity"}], "originalName": "ReportValidity"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "required"}], "originalName": "Required"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxCalendarResourceStrings","mappedName": "resourceStrings"}], "originalName": "ResourceStrings"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "select"}], "originalName": "Select"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setCustomValidity"}], "originalName": "SetCustomValidity"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setRangeText"}], "originalName": "SetRangeText"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setSelectionRange"}], "originalName": "SetSelectionRange"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "showWeekNumbers"}], "originalName": "ShowWeekNumbers"},
+      {"names":[{"platform": "Angular", "mappedType": "IDateRangeDescriptor[]","mappedName": "specialDates"}], "originalName": "SpecialDates"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "stepDown"}], "originalName": "StepDown"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "stepUp"}], "originalName": "StepUp"},
+      {"names":[{"platform": "Angular", "mappedType": "Date","mappedName": "value"}], "originalName": "Value"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "visibleMonths"}], "originalName": "VisibleMonths"},
+      {"names":[{"platform": "Angular", "mappedType": "WeekDays","mappedName": "weekStart"}], "originalName": "WeekStart"} ]
+  },
+  {
+    "originalName": "Divider",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Angular","fileName": "igx-divider-component.ts","mappedName": "IgxDividerComponent"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "DividerType","mappedName": "lineType"}], "originalName": "LineType"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "middle"}], "originalName": "Middle"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "vertical"}], "originalName": "Vertical"} ]
+  },
+  {
     "originalName": "PaneScrollEventArgs",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webinputs",
@@ -123,6 +240,14 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
+    "originalName": "RadioChangeEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Angular","fileName": "igx-radio-change-event-args.ts","mappedName": "IgxRadioChangeEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "IgxRadioChangeEventArgsDetail","mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
     "originalName": "SplitterResizeEventArgs",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webinputs",
@@ -132,6 +257,15 @@
       {"names":[{"platform": "Angular", "mappedType": "IgxDockManagerPaneComponent","mappedName": "pane"}], "originalName": "Pane"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "paneHeight"}], "originalName": "PaneHeight"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "paneWidth"}], "originalName": "PaneWidth"} ]
+  },
+  {
+    "originalName": "IconMeta",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Angular","fileName": "igx-icon-meta.ts","mappedName": "IgxIconMeta"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "collection"}], "originalName": "Collection"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"} ]
   },
   {
     "originalName": "TreeSelectionChangeDetail",
@@ -248,27 +382,6 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
-    "originalName": "CalendarResourceStrings",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "Angular","fileName": "igx-calendar-resource-strings.ts","mappedName": "IgxCalendarResourceStrings"}],
-    "members":[
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "endDate"}], "originalName": "EndDate"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "nextMonth"}], "originalName": "NextMonth"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "nextYear"}], "originalName": "NextYear"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "nextYears"}], "originalName": "NextYears"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "previousMonth"}], "originalName": "PreviousMonth"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "previousYear"}], "originalName": "PreviousYear"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "previousYears"}], "originalName": "PreviousYears"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "selectDate"}], "originalName": "SelectDate"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "selectMonth"}], "originalName": "SelectMonth"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "selectRange"}], "originalName": "SelectRange"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "selectYear"}], "originalName": "SelectYear"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "selectedDate"}], "originalName": "SelectedDate"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "startDate"}], "originalName": "StartDate"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "weekLabel"}], "originalName": "WeekLabel"} ]
-  },
-  {
     "originalName": "Combo",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
@@ -333,12 +446,6 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
-    "originalName": "ComboTemplateProps",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "Angular","fileName": "igx-combo-template-props.ts","mappedName": "IgxComboTemplateProps"}]
-  },
-  {
     "originalName": "DateTimeInput",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
@@ -352,9 +459,7 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "inputFormat"}], "originalName": "InputFormat"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "locale"}], "originalName": "Locale"},
       {"names":[{"platform": "Angular", "mappedType": "Date","mappedName": "max"}], "originalName": "Max"},
-      {"names":[{"platform": "Angular", "mappedType": "Date","mappedName": "maxValue"}], "originalName": "MaxValue"},
       {"names":[{"platform": "Angular", "mappedType": "Date","mappedName": "min"}], "originalName": "Min"},
-      {"names":[{"platform": "Angular", "mappedType": "Date","mappedName": "minValue"}], "originalName": "MinValue"},
       {"names":[{"platform": "Angular", "mappedType": "IgxDatePartDeltas","mappedName": "spinDelta"}], "originalName": "SpinDelta"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "spinLoop"}], "originalName": "SpinLoop"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "stepDown"}], "originalName": "StepDown"},
@@ -746,12 +851,6 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"} ]
   },
   {
-    "originalName": "ToggleOptions",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "Angular","fileName": "igx-toggle-options.ts","mappedName": "IgxToggleOptions"}]
-  },
-  {
     "originalName": "TreeSelectionChange",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webinputs",
@@ -846,7 +945,6 @@
       {"names":[{"platform": "Angular", "mappedType": "TreeSelection","mappedName": "selection"}], "originalName": "Selection"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "singleBranchExpand"}], "originalName": "SingleBranchExpand"},
-      {"names":[{"platform": "Angular", "mappedType": "SizableComponentSize","mappedName": "size"}], "originalName": "Size"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "toggleNodeOnClick"}], "originalName": "ToggleNodeOnClick"} ]
   },
   {
@@ -1193,7 +1291,6 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "href"}], "originalName": "Href"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "rel"}], "originalName": "Rel"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
-      {"names":[{"platform": "Angular", "mappedType": "SizableComponentSize","mappedName": "size"}], "originalName": "Size"},
       {"names":[{"platform": "Angular", "mappedType": "ButtonBaseTarget","mappedName": "target"}], "originalName": "Target"} ]
   },
   {
@@ -1207,13 +1304,11 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "autocomplete"}], "originalName": "Autocomplete"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "autofocus"}], "originalName": "Autofocus"},
       {"names":[{"platform": "Angular", "mappedType": "InputType","mappedName": "displayType"}], "originalName": "DisplayType"},
-      {"names":[{"platform": "Angular", "mappedType": "InputInputmode","mappedName": "inputmode"}], "originalName": "Inputmode"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "inputMode"}], "originalName": "InputMode"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "max"}], "originalName": "Max"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "maxLength"}], "originalName": "MaxLength"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "maxlength"}], "originalName": "Maxlength"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "min"}], "originalName": "Min"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "minLength"}], "originalName": "MinLength"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "minlength"}], "originalName": "Minlength"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "pattern"}], "originalName": "Pattern"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "select"}], "originalName": "Select"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "step"}], "originalName": "Step"},
@@ -1238,13 +1333,11 @@
       {"names":[{"platform": "Angular", "mappedType": "IgxDropdownItemComponent[]","mappedName": "items"}], "originalName": "Items"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "navigateTo"}], "originalName": "NavigateTo"},
       {"names":[{"platform": "Angular", "mappedType": "DropdownPlacement","mappedName": "placement"}], "originalName": "Placement"},
-      {"names":[{"platform": "Angular", "mappedType": "DropdownPositionStrategy","mappedName": "positionStrategy"}], "originalName": "PositionStrategy"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "sameWidth"}], "originalName": "SameWidth"},
       {"names":[{"platform": "Angular", "mappedType": "DropdownScrollStrategy","mappedName": "scrollStrategy"}], "originalName": "ScrollStrategy"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "select"}], "originalName": "Select"},
       {"names":[{"platform": "Angular", "mappedType": "IgxDropdownItemComponent","mappedName": "selectedItem"}], "originalName": "SelectedItem"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "showTarget"}], "originalName": "Show"},
-      {"names":[{"platform": "Angular", "mappedType": "SizableComponentSize","mappedName": "size"}], "originalName": "Size"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "toggleTarget"}], "originalName": "Toggle"} ]
   },
   {
@@ -1260,8 +1353,7 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "selectable"}], "originalName": "Selectable"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "selected"}], "originalName": "Selected"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
-      {"names":[{"platform": "Angular", "mappedType": "SizableComponentSize","mappedName": "size"}], "originalName": "Size"},
-      {"names":[{"platform": "Angular", "mappedType": "ChipVariant","mappedName": "variant"}], "originalName": "Variant"} ]
+      {"names":[{"platform": "Angular", "mappedType": "StyleVariant","mappedName": "variant"}], "originalName": "Variant"} ]
   },
   {
     "originalName": "CircularGradient",
@@ -1330,9 +1422,7 @@
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "blurComponent"}], "originalName": "BlurComponent"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "checkValidity"}], "originalName": "CheckValidity"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "disconnectedCallback"}], "originalName": "DisconnectedCallback"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "focusComponent"}], "originalName": "FocusComponent"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "label"}], "originalName": "Label"},
@@ -1340,14 +1430,12 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "outlined"}], "originalName": "Outlined"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "placeholder"}], "originalName": "Placeholder"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "readOnly"}], "originalName": "ReadOnly"},
-      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "readonly"}], "originalName": "Readonly"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "reportValidity"}], "originalName": "ReportValidity"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "required"}], "originalName": "Required"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setCustomValidity"}], "originalName": "SetCustomValidity"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setRangeText"}], "originalName": "SetRangeText"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setSelectionRange"}], "originalName": "SetSelectionRange"},
-      {"names":[{"platform": "Angular", "mappedType": "SizableComponentSize","mappedName": "size"}], "originalName": "Size"} ]
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setSelectionRange"}], "originalName": "SetSelectionRange"} ]
   },
   {
     "originalName": "LinearProgress",
@@ -1376,7 +1464,7 @@
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "max"}], "originalName": "Max"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "value"}], "originalName": "Value"},
-      {"names":[{"platform": "Angular", "mappedType": "ProgressBaseVariant","mappedName": "variant"}], "originalName": "Variant"} ]
+      {"names":[{"platform": "Angular", "mappedType": "StyleVariant","mappedName": "variant"}], "originalName": "Variant"} ]
   },
   {
     "originalName": "Rating",
@@ -1395,12 +1483,10 @@
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "max"}], "originalName": "Max"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "readOnly"}], "originalName": "ReadOnly"},
-      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "readonly"}], "originalName": "Readonly"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "reportValidity"}], "originalName": "ReportValidity"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setCustomValidity"}], "originalName": "SetCustomValidity"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "single"}], "originalName": "Single"},
-      {"names":[{"platform": "Angular", "mappedType": "SizableComponentSize","mappedName": "size"}], "originalName": "Size"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "step"}], "originalName": "Step"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "stepDown"}], "originalName": "StepDown"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "stepUp"}], "originalName": "StepUp"},
@@ -1427,12 +1513,6 @@
     "names":[{"platform": "Angular","fileName": "igx-snackbar-component.ts","mappedName": "IgxSnackbarComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "actionText"}], "originalName": "ActionText"} ]
-  },
-  {
-    "originalName": "ThemeController",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "Angular","fileName": "igx-theme-controller.ts","mappedName": "IgxThemeController"}]
   },
   {
     "originalName": "Toast",
@@ -1468,8 +1548,6 @@
     "packageName": "igniteui-webinputs",
     "names":[{"platform": "Angular","fileName": "igx-range-slider-component.ts","mappedName": "IgxRangeSliderComponent"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "ariaLabelLower"}], "originalName": "AriaLabelLower"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "ariaLabelUpper"}], "originalName": "AriaLabelUpper"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "lower"}], "originalName": "Lower"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "thumbLabelLower"}], "originalName": "ThumbLabelLower"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "thumbLabelUpper"}], "originalName": "ThumbLabelUpper"},
@@ -1538,15 +1616,6 @@
       {"names":[{"platform": "Angular", "mappedType": "IgxRangeSliderValue","mappedName": "detail"}], "originalName": "Detail"} ]
   },
   {
-    "originalName": "FormData",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "Angular","fileName": "igx-form-data.ts","mappedName": "IgxFormData"}],
-    "members":[
-      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "keys"}], "originalName": "Keys"},
-      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "values"}], "originalName": "Values"} ]
-  },
-  {
     "originalName": "Calendar",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
@@ -1562,7 +1631,6 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "hideOutsideDays"}], "originalName": "HideOutsideDays"},
       {"names":[{"platform": "Angular", "mappedType": "CalendarOrientation","mappedName": "orientation"}], "originalName": "Orientation"},
       {"names":[{"platform": "Angular", "mappedType": "IgxCalendarResourceStrings","mappedName": "resourceStrings"}], "originalName": "ResourceStrings"},
-      {"names":[{"platform": "Angular", "mappedType": "SizableComponentSize","mappedName": "size"}], "originalName": "Size"},
       {"names":[{"platform": "Angular", "mappedType": "Date","mappedName": "value"}], "originalName": "Value"},
       {"names":[{"platform": "Angular", "mappedType": "Date[]","mappedName": "values"}], "originalName": "Values"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "visibleMonths"}], "originalName": "VisibleMonths"} ]
@@ -1606,6 +1674,27 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "weekday"}], "originalName": "Weekday"} ]
   },
   {
+    "originalName": "CalendarResourceStrings",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Angular","fileName": "igx-calendar-resource-strings.ts","mappedName": "IgxCalendarResourceStrings"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "endDate"}], "originalName": "EndDate"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "nextMonth"}], "originalName": "NextMonth"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "nextYear"}], "originalName": "NextYear"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "nextYears"}], "originalName": "NextYears"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "previousMonth"}], "originalName": "PreviousMonth"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "previousYear"}], "originalName": "PreviousYear"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "previousYears"}], "originalName": "PreviousYears"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "selectDate"}], "originalName": "SelectDate"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "selectMonth"}], "originalName": "SelectMonth"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "selectRange"}], "originalName": "SelectRange"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "selectYear"}], "originalName": "SelectYear"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "selectedDate"}], "originalName": "SelectedDate"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "startDate"}], "originalName": "StartDate"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "weekLabel"}], "originalName": "WeekLabel"} ]
+  },
+  {
     "originalName": "CalendarBase",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
@@ -1619,7 +1708,7 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "showWeekNumbers"}], "originalName": "ShowWeekNumbers"},
       {"names":[{"platform": "Angular", "mappedType": "IDateRangeDescriptor[]","mappedName": "specialDates"}], "originalName": "SpecialDates"},
-      {"names":[{"platform": "Angular", "mappedType": "CalendarBaseWeekStart","mappedName": "weekStart"}], "originalName": "WeekStart"} ]
+      {"names":[{"platform": "Angular", "mappedType": "WeekDays","mappedName": "weekStart"}], "originalName": "WeekStart"} ]
   },
   {
     "originalName": "ComponentDataValueChangedEventArgs",
@@ -1751,28 +1840,6 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "detail"}], "originalName": "Detail"} ]
   },
   {
-    "originalName": "Form",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "Angular","fileName": "igx-form-component.ts","mappedName": "IgxFormComponent"}],
-    "members":[
-      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "novalidate"}], "originalName": "Novalidate"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "performReset"}], "originalName": "PerformReset"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "performSubmit"}], "originalName": "PerformSubmit"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "reportValidity"}], "originalName": "ReportValidity"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
-    "originalName": "FormDataEventArgs",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "Angular","fileName": "igx-form-data-event-args.ts","mappedName": "IgxFormDataEventArgs"}],
-    "members":[
-      {"names":[{"platform": "Angular", "mappedType": "IgxFormData","mappedName": "detail"}], "originalName": "Detail"} ]
-  },
-  {
     "originalName": "IconButton",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
@@ -1795,8 +1862,7 @@
     "packageName": "igniteui-webinputs",
     "names":[{"platform": "Angular","fileName": "igx-list-component.ts","mappedName": "IgxListComponent"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
-      {"names":[{"platform": "Angular", "mappedType": "SizableComponentSize","mappedName": "size"}], "originalName": "Size"} ]
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
     "originalName": "ListHeader",
@@ -1862,7 +1928,6 @@
     "names":[{"platform": "Angular","fileName": "igx-nav-drawer-item-component.ts","mappedName": "IgxNavDrawerItemComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "active"}], "originalName": "Active"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
@@ -1912,7 +1977,6 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "initials"}], "originalName": "Initials"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "AvatarShape","mappedName": "shape"}], "originalName": "Shape"},
-      {"names":[{"platform": "Angular", "mappedType": "SizableComponentSize","mappedName": "size"}], "originalName": "Size"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "src"}], "originalName": "Src"} ]
   },
   {
@@ -1926,7 +1990,7 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "outlined"}], "originalName": "Outlined"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "BadgeShape","mappedName": "shape"}], "originalName": "Shape"},
-      {"names":[{"platform": "Angular", "mappedType": "BadgeVariant","mappedName": "variant"}], "originalName": "Variant"} ]
+      {"names":[{"platform": "Angular", "mappedType": "StyleVariant","mappedName": "variant"}], "originalName": "Variant"} ]
   },
   {
     "originalName": "Button",
@@ -1953,8 +2017,8 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "mirrored"}], "originalName": "Mirrored"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "registerIcon"}], "originalName": "RegisterIcon"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "registerIconFromText"}], "originalName": "RegisterIconFromText"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
-      {"names":[{"platform": "Angular", "mappedType": "SizableComponentSize","mappedName": "size"}], "originalName": "Size"} ]
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setIconRef"}], "originalName": "SetIconRef"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
     "originalName": "Radio",
@@ -1978,17 +2042,6 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setCustomValidity"}], "originalName": "SetCustomValidity"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"} ]
-  },
-  {
-    "originalName": "RadioGroup",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "Angular","fileName": "igx-radio-group-component.ts","mappedName": "IgxRadioGroupComponent"}],
-    "members":[
-      {"names":[{"platform": "Angular", "mappedType": "RadioGroupAlignment","mappedName": "alignment"}], "originalName": "Alignment"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
     "originalName": "Accordion",
