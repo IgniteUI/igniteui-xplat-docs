@@ -12,7 +12,7 @@ _language: ja
 
 ## {Platform} 株価チャートの例
 
-`FinancialChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` 値に設定します。
+`FinancialChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`FinancialChart.ChartType` プロパティを `Line` 値に設定します。
 
 `sample="/charts/financial-chart/multiple-data", height="600", alt="{Platform} 株価チャートの例"`
 
@@ -128,7 +128,7 @@ _language: ja
 ### ズーム ペイン
 このペインはすべての表示されるペインのズームを制御します。このペインはデフォルトで表示されます。以下のコードのように `ZoomSliderType` を `none` に設定すると機能を無効にできます:
 
-注: `ZoomSliderType` オプションを `ChartType` オプションと同じ値に設定してください。このように、ズーム スライダーは価格ペインの正しいプレビューを表示します。以下のコードはその方法を示しています。
+注: `ZoomSliderType` オプションを `FinancialChart.ChartType` オプションと同じ値に設定してください。このように、ズーム スライダーは価格ペインの正しいプレビューを表示します。以下のコードはその方法を示しています。
 
 この例では、株価チャートは米国の収益をプロットしています。
 
@@ -152,7 +152,7 @@ _language: ja
 
 以下は、上記のセクションで説明した API メンバーのリストです。
 
-- `ChartType`
+- `FinancialChart.ChartType`
 - `CrosshairsSnapToData`
 - `ItemsSource`
 - `FinancialChart`

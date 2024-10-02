@@ -11,7 +11,7 @@ The {ProductName} Line Chart or Line Graph is a type of category charts that sho
 
 ## {Platform} Line Chart Example
 
-You can create the {Platform} Line Chart in the `CategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `Line` enum, as shown in the example below.
+You can create the {Platform} Line Chart in the `CategoryChart` control by binding your data to `ItemsSource` property and setting `CategoryChart.ChartType` property to `Line` enum, as shown in the example below.
 
 `sample="/charts/category-chart/line-chart-multiple-sources", height="600", alt="{Platform} Line Chart Multiple Sources"`
 
@@ -68,7 +68,7 @@ There are several common use cases for choosing a Line Chart:
 
 The {Platform} Line Chart is often used to show the change of value over time such as the amount of renewable electricity produced since 2009 over a ten-year period, as we have shown in the example below.
 
-You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
+You can create this type of chart in the `CategoryChart` control by binding your data and setting the `CategoryChart.ChartType` property to `Line`, as shown in the example below:
 
 `sample="/charts/category-chart/line-chart-single-source", height="600", alt="{Platform} Line Chart with Single Source"`
 
@@ -80,7 +80,7 @@ You can create this type of chart in the `CategoryChart` control by binding your
 
 Since the {Platform} Line Chart allows you to combine multiple series and compare or see how they change over time, let’s see how easy it is to achieve this. All we need to do is bind to a data source containing the data for China and the USA, and the line chart will automatically update to fit the additional data.
 
-You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
+You can create this type of chart in the `CategoryChart` control by binding your data and setting the `CategoryChart.ChartType` property to `Line`, as shown in the example below:
 
 `sample="/charts/category-chart/line-chart-multiple-sources", height="600", alt="{Platform} Line Chart with Multiple Sources"`
 
@@ -94,7 +94,7 @@ The {Platform} Line chart is capable of handling high volumes of data, ranging i
 
 In this example, we are streaming live data into the {Platform} Line Chart at an interval of your choosing. You can set the data points from 5,000 to 1 million and update the chart to optimize the scale based on the device you are rendering the chart on.
 
-You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
+You can create this type of chart in the `CategoryChart` control by binding your data and setting the `CategoryChart.ChartType` property to `Line`, as shown in the example below:
 
 `sample="/charts/category-chart/high-frequency", height="600", alt="{Platform} Line Chart Live Data Example"`
 
@@ -106,7 +106,7 @@ You can create this type of chart in the `CategoryChart` control by binding your
 
 Once our chart is set up, we may want to make some further styling customizations such as change the line colors, change the legend font family, and/or increase the size of the axis labels to make it easier to read.
 
-You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
+You can create this type of chart in the `CategoryChart` control by binding your data and setting the `CategoryChart.ChartType` property to `Line`, as shown in the example below:
 
 `sample="/charts/category-chart/line-chart-styling", height="600", alt="{Platform} Line Chart Styling"`
 
@@ -186,7 +186,7 @@ The following table lists API members mentioned in the above sections:
 
 | Chart Type        | Control Name       | API Members |
 | ------------------|--------------------|----------------------- |
-| Line              | `CategoryChart` | `ChartType` = `Line` |
+| Line              | `CategoryChart`    | `CategoryChart.ChartType` = `Line` |
 | Polar Line        | `XamDataChart`     | `PolarLineSeries` |
 | Radial Line       | `XamDataChart`     | `RadialLineSeries` |
 | Stacked Line      | `XamDataChart`     | `StackedLineSeries` |
