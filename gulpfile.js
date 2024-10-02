@@ -312,11 +312,13 @@ function testApiFormat(cb) {
 
 exports.testApiFormat = testApiFormat;
 
+var mappedFiles = {};
 // updates API mapping files in ./apiMap folder for specified platform
 function updateApiFor(platformName) {
     // cleanup previous API mapping files
     // del.sync("apiMap/" + platformName + "/*apiMap.json");
 
+    mappedFiles[platformName] = [];
     return gulp.src([
         fileRoot + "Source/*.JS/**/bin/**/" + platformName + "/*apiMap.json",
         // excluding API mapping files for conflicting components with WebInputs
@@ -328,7 +330,10 @@ function updateApiFor(platformName) {
         let fileContent = updateApiFormat(jsonContent);
         file.contents = Buffer.from(fileContent);
 
-        // let filePath = file.dirname + "\\" + file.basename;        
+        let filePath = file.dirname + "\\" + file.basename;
+        mappedFiles[platformName].push(filePath);
+    
+        LOG.info('mapping ' + filePath); 
         // let oldFileContent = fs.readFileSync(filePath).toString();
         // if (fileContent.trim() !== oldFileContent.trim()) {
             // file.contents = Buffer.from(fileContent);
@@ -338,14 +343,27 @@ function updateApiFor(platformName) {
         fileCallback(null, file);
     }))
     .pipe(flatten())
-    .pipe(gulp.dest("apiMap/" + platformName));
+    .pipe(gulp.dest("apiMap/" + platformName))
+    .on("end", () => {
+        LOG.action('mapping ... completed with ' + mappedFiles[platformName].length + ' files'); 
+    });
 }
+function updateApiStats(cb) {
+    var platforms = ['Angular', 'Blazor', 'React', 'WebComponents'];
+    for (const plat of platforms) {
+        if (mappedFiles[plat]) 
+            LOG.action('mapped ' + mappedFiles[plat].length + ' json files for ' + plat);
+    }
+    if (cb) cb();
+}
+
 // updates API mapping files in ./apiMap folder for all platforms
 exports.updateApiMapping = updateApiMapping = gulp.series(
     updateApiAngular,
     updateApiBlazor,
     updateApiReact,
     updateApiWebComponents,
+    updateApiStats
 );
 
 function updateApiSection(cb) {
