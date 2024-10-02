@@ -5,6 +5,7 @@ import { PlatformDetector, PlatformDetectorRule, FencedBlockInfo } from './Platf
 import { JsonEx } from './JsonEx';
 import { ComponentDetector } from './ComponentDetector';
 
+import { LOG } from './Logger';
 
 let remark = require(`remark`);
 let parse = require('remark-parse');
@@ -212,7 +213,7 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
 let warningsCount = 0;
 function transformWarning(msg: string) {
     warningsCount += 1;
-    console.log(pad(warningsCount, 4) + " WARNING: " + msg);
+    LOG.warn(pad(warningsCount, 4) + " - " + msg);
 }
 
 function pad(num: number, width: number) {
@@ -1551,17 +1552,17 @@ export class MarkdownTransformer {
         // using vars in docConfig.json to replace samples URLs instead of using processor in igniteui-docfx-template
         let samplesBrowsers = docs['samplesBrowsers'];
         if (samplesBrowsers === undefined) {
-            console.log('>> WARNING transformer did not find samplesBrowsers')
+            LOG.warn('transformer did not find samplesBrowsers')
         } else {
             this._envBrowser = samplesBrowsers[envTarget];
             if (this._envBrowser === undefined) {
                 this._envBrowser = "";
-                console.log('>> WARNING transformer did not find samplesBrowsers[' + envTarget + ']');
+                LOG.warn('transformer did not find samplesBrowsers[' + envTarget + ']');
             }
         }
 
         let platformName = APIPlatform[platform].toString();
-        console.log('>> transformer config: "' + platformName + '" platform, "' + this._envTarget + '" environment, browser: ' + this._envBrowser);
+        LOG.info('called transformer with config: platform="' + platformName + '", environment="' + this._envTarget + '", browser=' + this._envBrowser);
     }
 
     replaceAll(orgStr: string, oldStr: string, newStr: string): string {
@@ -2152,7 +2153,7 @@ export class MarkdownTransformer {
             excludedFiles = [];
 
         // console.log('generateTOC for "' + platform + '"  platform from');
-        console.log(">> TOC generating from: " + jsonPath + ' for ' + platform); // + '" and isFirstRelease=' + isFirstRelease);
+        LOG.action("TOC generating from: " + jsonPath + ' for ' + platform); // + '" and isFirstRelease=' + isFirstRelease);
 
         let jsonFile = fs.readFileSync(jsonPath);
         let jsonContent = jsonFile.toString();

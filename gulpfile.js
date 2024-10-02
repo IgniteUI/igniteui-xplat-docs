@@ -39,7 +39,8 @@ let DOCFX_TEMPLATE_GLOBAL = path.join(__dirname, `./node_modules/igniteui-docfx-
 let DOCFX_SITE = `${DOCFX_PATH}/_site`;
 let DOCFX_FORCE_OUTPUT = false; // this is true when building Angular CI (build-docfx-angular)
 
-function log(msg) { console.log(">> " + msg); }
+var LOG = require("./src/ext/Logger").LOG;
+function log(msg) { LOG.action(">> " + msg); }
 
 function ensureEnvironment() {
     if (mt == null) {
@@ -58,7 +59,7 @@ function ensureEnvironment() {
         //     throw "docsConfig,json does not have platform: " + platformName;
         // }
 
-        log("initialling environment...");
+        LOG.action("initialling environment...");
     }
 
     if (PLAT === 'Angular') {
@@ -96,7 +97,7 @@ function readMappings() {
 function transformFiles() {
     ensureEnvironment();
 
-    log("transforming files: ");
+    LOG.action("transforming files: ");
     let mapStream = through.obj(function(file, encoding, cb) {
 
       var fileContent = file.contents.toString();
@@ -508,7 +509,7 @@ function buildTOC(cb) {
     // excludedTopics.push('doc/**/jp/**/*.md');
     // excludedTopics.push('doc/**/kr/**/*.md');
 
-    log("excludedTopicPatterns: " + excludedTopics.length);
+    LOG.action("excludedTopicPatterns: " + excludedTopics.length);
 
     let platformName = PLAT;
     if (platformName === "Angular") {
@@ -522,14 +523,14 @@ function buildTOC(cb) {
     .pipe(es.map(function(file, fileCallback) {
         var filePath = file.path.split('\\').join('/');
         var fileLocal = 'doc/' + filePath.split('/doc/')[1];
-        // log(fileLocal);
+
         if (excludedFiles.indexOf(fileLocal) < 0) {
             excludedFiles.push(fileLocal);
         }
         fileCallback(null, file);
     }))
     .on("end", () => {
-        log("excludedTopicFiles: " + excludedFiles.length);
+        LOG.info("excludedTopicFiles: " + excludedFiles.length);
 
         let platformName = PLAT;
         ensureEnvironment();
@@ -545,11 +546,11 @@ function buildTOC(cb) {
         tocTopics = tocTopics.concat(jpTopics); // including JP topics
         tocTopics = tocTopics.concat(krTopics); // including KR topics
         tocTopics.sort();
-
-        log("tocTopics: " + tocTopics.length);
+      
+        LOG.action("TOC generated topics: " + tocTopics.length);
         // fs.writeFileSync("file-toc.txt", "file-toc \n" + tocTopics.join("\n"));
         // for (const topic of tocTopics) {
-        //     log("" + topic);
+        //    LOG.info(topic);
         // }
 
         var sharedComponents = []; // "grid", "hierarchical-grid", "pivot-grid", "tree-grid"];
@@ -589,11 +590,11 @@ function buildTOC(cb) {
         .on("end", () => {
 
             includedTopics.sort();
-            log("includedTopics: " + includedTopics.length);
+            LOG.info("includedTopics: " + includedTopics.length);
             // console.log(includedTopics);
             // fs.writeFileSync("file-included.txt", "file-included \n" + includedTopics.join("\n"));
             // for (const topic of includedTopics) {
-            //     log("" + topic);
+            //    LOG.info(topic);
             // }
             cb();
         })
@@ -605,17 +606,17 @@ exports.buildTOC = buildTOC;
 function buildPlatform(cb) {
     let platformName = PLAT;
     let apiPlatform = PLAT_API;
-    log("=========================================================");
-    log("building '" + PLAT + "' docs for '" + ENV_TARGET + "' environment and force docFX output is " + DOCFX_FORCE_OUTPUT );
+    LOG.info("=========================================================");
+    LOG.action("building '" + PLAT + "' docs for '" + ENV_TARGET + "' environment and force docFX output is " + DOCFX_FORCE_OUTPUT );
     ensureEnvironment();
 
-    log("building with " + includedTopics.length + " topics");
+    LOG.action("building with " + includedTopics.length + " topics");
     // for (const topic of includedTopics) {
-    //     log("act Topic " + topic);
+    //     LOG.action("act Topic " + topic);
     // }
 
     let apiSourcePath = './apiMap/' + platformName + '/**/*apiMap.json';
-    log("building with API mapping: " + apiSourcePath);
+    LOG.action("building with API mapping: " + apiSourcePath);
     gulp.src([
         apiSourcePath
     ],)
@@ -647,8 +648,8 @@ function buildPlatform(cb) {
             .pipe(gulp.dest("dist/" + platformName))
             .on("end", function () {
                 if (platformName == "Angular" && !DOCFX_FORCE_OUTPUT) {
-                    log("Copying " + PLAT + " .md and /images... done. Docfx build not executed.");
-                    log("=========================================================");
+                    LOG.action("copying " + PLAT + " .md and /images... done. Docfx build not executed.");
+                    LOG.info("=========================================================");
                     cb();
                 } else {
                     gulp.src([
@@ -657,8 +658,8 @@ function buildPlatform(cb) {
                     .pipe(transformStaticFiles(platformName))
                     .pipe(gulp.dest("dist/" + platformName))
                     .on("end", function () {
-                        log("building " + PLAT + " ... done ");
-                        log("=========================================================");
+                        LOG.action("building " + PLAT + " ... done ");
+                        LOG.info("=========================================================");
                         cb();
                     });
                 }
@@ -757,17 +758,17 @@ function generateTocFor(platform, language, isFirstRelease, excludedFiles) {
 }
 
 function copyWebConfig(cb) {
-    log("copying ./web.config to ./docfx/en/web.config ...");
-    log("copying ./web.config to ./docfx/jp/web.config ...");
-    log("copying ./web.config to ./docfx/kr/web.config ...");
+    LOG.action("copying ./web.config to ./docfx/en/web.config ...");
+    LOG.action("copying ./web.config to ./docfx/jp/web.config ...");
+    LOG.action("copying ./web.config to ./docfx/kr/web.config ...");
     gulp.src(['./web.config'])
     .pipe(gulp.dest("docfx/en"))
     .pipe(gulp.dest("docfx/jp"))
     .pipe(gulp.dest("docfx/kr"))
     .on("end", () => {
-        // log("copying ./web.config to ./docfx/en/web.config ... done");
-        // log("copying ./web.config to ./docfx/jp/web.config ... done");
-        // log("copying ./web.config to ./docfx/kr/web.config ... done");
+        // LOG.action("copying ./web.config to ./docfx/en/web.config ... done");
+        // LOG.action("copying ./web.config to ./docfx/jp/web.config ... done");
+        // LOG.action("copying ./web.config to ./docfx/kr/web.config ... done");
         if (cb) { cb() };
     })
 }
@@ -778,7 +779,7 @@ function updateSiteMap(cb) {
         ensureEnvironment();
     };
     var sitemapPath = DOCFX_SITE + "/sitemap.xml";
-    log("updating " + sitemapPath);
+    LOG.action("updating " + sitemapPath);
     let oldContent = fs.readFileSync(sitemapPath).toString();
     let newContent = oldContent.split('.html').join('');
     fs.writeFileSync(sitemapPath, newContent);
@@ -938,7 +939,7 @@ var verifyFiles = gulp.series(verifyMarkdown);
 
 function buildCore(cb) {
     // clean output files
-    log("cleaning ...");
+    LOG.action("cleaning ...");
     del.sync("dist/" + PLAT + "/**/*.*");
     del.sync("dist/" + PLAT + "/**");
     ensureEnvironment();
@@ -1023,7 +1024,7 @@ function platformify(json, platformName) {
 }
 
 function buildSite(cb) {
-    log("buildSite LANG=" + LANG + " CONF=" + DOCFX_CONF);
+    LOG.action("buildSite LANG=" + LANG + " CONF=" + DOCFX_CONF);
 
     return buildDocfx({
         siteDir: DOCFX_SITE,
@@ -1061,12 +1062,12 @@ exports['startWC']      = startWC      = gulp.series(buildDocfx_WC, serveCore);
 exports.watch = watch = gulp.series(buildDocfx_All, watchCore);
 
 function logArgs(cb) {
-    console.log('logArgs PLAT=' + PLAT + ' LANG=' + LANG);
+    LOG.info('logArgs PLAT=' + PLAT + ' LANG=' + LANG);
     ensureEnvironment();
     let platformName = PLAT; //"Angular";
 
     let isFirstRelease = docsConfig[platformName].isFirstRelease;
-    log("isFirstRelease " + isFirstRelease + " ... ");
+    LOG.info("isFirstRelease " + isFirstRelease + " ... ");
 
     cb();
 }
@@ -1134,7 +1135,7 @@ function verifyMarkdown(cb) {
         if (cb) cb("MarkdownVerifier failed to load"); return;
     }
 
-    console.log('verifying markdown files:');
+    LOG.action('verifying markdown files:');
 
     var filesCount = 0;
     var errorsCount = 0;
@@ -1172,16 +1173,16 @@ function verifyMarkdown(cb) {
     .on("end", () => {
         if (errorsCount > 0) {
             var msg = "Correct above " + errorsCount + " errors in markdown files!";
-            if (cb) cb(new Error(msg)); else console.error(msg);
+            if (cb) cb(new Error(msg)); else LOG.error(msg);
             // if (cb) cb(msg); else console.log(msg);
         } else {
-            var msg = 'verifying .md files ... done - checked ' + filesCount + " files";
-            console.log(msg);
+            LOG.action('verifying .md files ... done - checked ' + filesCount + " files");
             if (cb) cb();
         }
     })
     .on("error", (err) => {
-        console.log("Error in verifyMarkdown()");
+        LOG.error("verifying failed:");
+        LOG.info(err);
         if (cb) cb(err);
     });
 }

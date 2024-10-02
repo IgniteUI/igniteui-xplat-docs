@@ -2,7 +2,8 @@
 
 console.log("MarkdownVerifier... loaded");
 
-import { MarkdownContent, MarkdownSection, MarkdownMetadata, MarkdownLine, LOG } from './MarkdownContent';
+import { MarkdownContent, MarkdownSection, MarkdownMetadata, MarkdownLine } from './MarkdownContent';
+import { LOG } from './Logger';
 
 var NEWLINE: string = '\r\n';
 var DOUBLE_LINE: string = '\r\n\r\n'; 
