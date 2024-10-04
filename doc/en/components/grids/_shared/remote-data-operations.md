@@ -251,9 +251,6 @@ public handlePreLoad() {
 
 `sample="/{ComponentSample}/infinite-scroll", height="550", alt="{Platform} {ComponentTitle} Remote Data Operations Infinite Scroll Example"`
 
-
-
-
 <!-- Angular -->
 ## Remote Sorting/Filtering
 
@@ -492,12 +489,16 @@ BLAZOR CODE SNIPPET HERE
 
 <div class="divider--half"></div>
 
+<!-- end: Angular -->
+
 ## Remote Paging
 
 <!-- ComponentStart: Grid -->
 
 The paging feature can operate with remote data. In order to demonstrate this let's first declare our service that will be responsible for data fetching. We will need the count of all data items in order to calculate the page count. This logic will be added to our service.
 
+<!-- Angular -->
+
 ```typescript
 @Injectable()
 export class RemotePagingService {
@@ -529,15 +530,119 @@ export class RemotePagingService {
     }
 }
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
+```ts
+export class RemotePagingService {
+  public remoteData: BehaviorSubject<any[]> = new BehaviorSubject([]);
+  public dataLength: BehaviorSubject<number> = new BehaviorSubject(0);
+  public url = 'https://www.igniteui.com/api/products';
+
+  constructor() {}
+
+  public async getData(index?: number, perPage?: number): Promise<any> {
+    let qS = '';
+
+    if (index !== undefined && perPage !== undefined) {
+        qS = `?$skip=${index}&$top=${perPage}&$count=true`;
+    }
+
+    try {
+        const response = await fetch(`${this.url + qS}`);
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        throw error; // Propagate the error further
+    }
+}
+
+public async getDataLength(): Promise<number> {
+    try {
+        const response = await fetch(this.url);
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        return data.length; // Assuming the length is directly accessible in the JSON response
+    } catch (error) {
+        console.error('Error fetching data length:', error);
+        throw error; // Propagate the error further
+    }
+}
+```
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+
+As Blazor Server is already a remote instance, unlike the demos in the other platforms we do not need to set another remote instance for the data, as the data is already remote. In order to do remote paging, we just need to set a couple of methods ins the data class
 
 ```razor
-BLAZOR CODE SNIPPET HERE
+        public Task<List<NwindDataItem>> GetData(int index, int perPage)
+        {
+            var itemsToReturn = items.Skip(index).Take(perPage).ToList();
+            return Task.FromResult(itemsToReturn);
+        }
+
+        public Task<int> GetDataLength()
+        {
+            return Task.FromResult(items.Count);
+        }
 ```
+<!-- end: Blazor -->
+
+<!-- React -->
+```tsx
+const URL = `https://data-northwind.indigo.design/`;
+
+export class RemoteService {
+
+public getData(dataState: any, index?: number, perPage?: number): any {
+    return fetch(this.buildUrl(dataState, index, perPage))
+        .then((result) => result.json());
+}
+
+private buildUrl(dataState: any, index?: number, perPage?: number) {
+    let qS = "";
+    if (dataState) {
+            qS += `${dataState.key}`;
+    }
+
+    // Add index and perPage to the query string if they are defined
+    if (index !== undefined) {
+        qS += `?index=${index}`;
+        if (perPage !== undefined) {
+            qS += `&perPage=${perPage}`;
+        }
+    } else if (perPage !== undefined) {
+        qS += `?perPage=${perPage}`;
+    }
+
+    return `${URL}${qS}`;
+}
+
+public getDataLength(dataState: any): Promise<number> {
+    return fetch(this.buildUrl(dataState))
+        .then((result) => result.json())
+        .then((data) => data.length);
+}
+}
+```
+<!-- end: React -->
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 
+<!-- Angular -->
+
 The paging feature can operate with remote data. In order to demonstrate this let's first declare our service that will be responsible for data fetching. We will need the count of all data items in order to calculate the page count. This logic will be added to our service.
+
 
 ```typescript
 @Injectable()
@@ -571,15 +676,114 @@ export class RemotePagingService {
 }
 ```
 
-```razor
-BLAZOR CODE SNIPPET HERE
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```ts
+const URL = `https://data-northwind.indigo.design/`;
+
+
+
+export function getData(dataState: any, index?: number, perPage?: number): any {
+    return fetch(buildUrl(dataState, index, perPage))
+        .then((result) => result.json());
+}
+
+function buildUrl(dataState: any, index?: number, perPage?: number) {
+    let qS = "";
+    if (dataState) {
+        if (dataState.rootLevel) {
+            qS += `${dataState.key}`;
+        } else {
+            qS += `${dataState.parentKey}/${dataState.parentID}/${dataState.key}`;
+        }
+    }
+
+    // Add index and perPage to the query string if they are defined
+    if (index !== undefined) {
+        qS += `?index=${index}`;
+        if (perPage !== undefined) {
+            qS += `&perPage=${perPage}`;
+        }
+    } else if (perPage !== undefined) {
+        qS += `?perPage=${perPage}`;
+    }
+
+    return `${URL}${qS}`;
+}
+
+export function getDataLength(dataState: any): Promise<number> {
+    return fetch(buildUrl(dataState))
+        .then((result) => result.json())
+        .then((data) => data.length);
+}
 ```
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+As Blazor Server is already a remote instance, unlike the demos in the other platforms we do not need to set another remote instance for the data, as the data is already remote. In order to do remote paging, we just need to set a couple of methods ins the data class
+
+```razor
+        public Task<List<NwindDataItem>> GetData(int index, int perPage)
+        {
+            var itemsToReturn = items.Skip(index).Take(perPage).ToList();
+            return Task.FromResult(itemsToReturn);
+        }
+
+        public Task<int> GetDataLength()
+        {
+            return Task.FromResult(items.Count);
+        }
+```
+
+<!-- end: Blazor -->
+
+<!-- React -->
+```tsx
+const URL = `https://data-northwind.indigo.design/`;
+
+export class RemoteService {
+
+public getData(dataState: any, index?: number, perPage?: number): any {
+    return fetch(this.buildUrl(dataState, index, perPage))
+        .then((result) => result.json());
+}
+
+private buildUrl(dataState: any, index?: number, perPage?: number) {
+    let qS = "";
+    if (dataState) {
+            qS += `${dataState.key}`;
+    }
+
+    // Add index and perPage to the query string if they are defined
+    if (index !== undefined) {
+        qS += `?index=${index}`;
+        if (perPage !== undefined) {
+            qS += `&perPage=${perPage}`;
+        }
+    } else if (perPage !== undefined) {
+        qS += `?perPage=${perPage}`;
+    }
+
+    return `${URL}${qS}`;
+}
+
+public getDataLength(dataState: any): Promise<number> {
+    return fetch(this.buildUrl(dataState))
+        .then((result) => result.json())
+        .then((data) => data.length);
+}
+}
+```
+
+<!-- end: React -->
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
 After declaring the service, we need to create a component, which will be responsible for the `{ComponentName}` construction and data subscription.
 
 <!-- ComponentStart: Grid -->
+<!-- Angular -->
 ```typescript
 export class RemotePagingGridSample implements OnInit, AfterViewInit, OnDestroy {
     public data: Observable<any[]>;
@@ -603,13 +807,140 @@ export class RemotePagingGridSample implements OnInit, AfterViewInit, OnDestroy 
     }
 }
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+First we need to bind to the relevant events so when we change pages and the amount of records shown per page, the remote service will fetch the correct amount of data
+```ts
+constructor() {
+    this._bind = () => {
+        this.pager.addEventListener("perPageChange", ()=> {
+        this.paginate(this.page);
+       })
+       this.pager.addEventListener("pageChange", ((args: CustomEvent<any>) => {
+        this.paginate(args.detail);}) as EventListener);
+    }
+    this._bind();
+}
+``` 
+We also need to set the method for changing pages:
+```ts 
+public paginate(page: number) {
+        this.page = page;
+        const skip = this.page * this.perPage;
+        const top = this.perPage;
+    
+        this.remotePagingService.getData(skip, top).then((data)=> {
+          this.data = data; // Assign received data to this.data
+          this.grid.isLoading = false;
+          this.updateUI(); // Update the UI after receiving data
+        });
+```
+
+For further reference, please check the demo bellow:
+
+### Grid Remote Paging Demo  
+
+`sample="/{ComponentSample}/remote-paging-grid", height="550", alt="{Platform} {ComponentTitle} Grid Remote Paging Example"`
+
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+First we should load some data to the grid. It is best to do after the grid has been rendered to avoid any timing issues.
 
 ```razor
-BLAZOR CODE SNIPPET HERE
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await Paginate(0, PerPage);
+            totalRecordsCount = await NwindDataService.GetDataLength();
+            StateHasChanged();
+        }
+    }
 ```
+After that we just need to bind the paging events to our custom methods, and remote paging is set:
+
+```razor
+<IgbPaginator @ref="pager" PageChange="OnPageChange" PerPageChange="OnPerPageChange" TotalRecords="totalRecordsCount"></IgbPaginator>
+
+....
+
+@code {
+        private async void OnPerPageChange(IgbNumberEventArgs e)
+    {
+        PerPage = e.Detail;
+        await Paginate(0, e.Detail);
+    }
+
+    private async void OnPageChange(IgbNumberEventArgs e)
+    {
+        await Paginate(e.Detail, PerPage);
+    }
+    ...
+        private async Task Paginate(double page, double perPage)
+    {
+        this.page = page;
+        double skip = this.page * PerPage;
+        double top = PerPage;
+
+        try
+        {
+            data = await NwindDataService.GetData(Convert.ToInt32(skip), Convert.ToInt32(perPage));
+            isLoading = false;
+            UpdateUI();
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"Error fetching data: {ex.Message}");
+        }
+    }
+}
+```
+For further reference please check the full demo bellow:
+
+### Grid Remote Paging Demo  
+
+`sample="/{ComponentSample}/remote-paging-grid", height="550", alt="{Platform} {ComponentTitle} Grid Remote Paging Example"`
+
+<!-- end: Blazor -->
+
+<!-- React -->
+```tsx
+<IgrPaginator 
+          perPage="15"
+          ref={paginator}
+          pageChange={(evt: { page: number }) => paginate(evt.page)}
+          perPageChange={() => paginate(0)}>
+</IgrPaginator>
+```
+
+then set up the method:
+```tsx
+  function paginate(pageArgs: number) {
+    page = pageArgs;
+    const skip = page * perPage;
+    const top = perPage;
+
+    remoteServiceInstance.getData({ key: 'Customers' }, skip, top).then((incData:any)=> {
+      data = incData; 
+      grid.current.isLoading = false;
+      grid.current.markForCheck();// Update the UI after receiving data
+    });
+```
+For further reference please check the full sample bellow:
+
+### Grid Remote Paging Demo  
+
+`sample="/{ComponentSample}/remote-paging-grid", height="550", alt="{Platform} {ComponentTitle} Grid Remote Paging Example"`
+
+<!-- end: React -->
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
+
+<!-- Angular -->
 ```typescript
 export class HGridRemotePagingSampleComponent implements OnInit, AfterViewInit, OnDestroy {
     public data: BehaviorSubject<any> = new BehaviorSubject([]);
@@ -633,13 +964,138 @@ export class HGridRemotePagingSampleComponent implements OnInit, AfterViewInit, 
     }
 }
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+First we need to bind to the relevant events so when we change pages and the amount of records shown per page, the remote service will fetch the correct amount of data
+```ts
+constructor() {
+    this._bind = () => {
+        this.pager.addEventListener("perPageChange", ()=> {
+        this.paginate(this.page);
+       })
+       this.pager.addEventListener("pageChange", ((args: CustomEvent<any>) => {
+        this.paginate(args.detail);}) as EventListener);
+    }
+    this._bind();
+}
+``` 
+We also need to set the method for changing pages:
+```ts 
+public paginate(page: number) {
+        this.page = page;
+        const skip = this.page * this.perPage;
+        const top = this.perPage;
+    
+        this.remotePagingService.getData(skip, top).then((data)=> {
+          this.data = data; // Assign received data to this.data
+          this.grid.isLoading = false;
+          this.updateUI(); // Update the UI after receiving data
+        });
+```
+
+For further reference, please check the demo bellow:
+
+### Grid Remote Paging Demo  
+
+`sample="/{ComponentSample}/remote-paging-hgrid", height="550", alt="{Platform} {ComponentTitle} Hierarchical Grid Remote Paging Example"`
+
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+First we should load some data to the grid. It is best to do after the grid has been rendered to avoid any timing issues.
 
 ```razor
-BLAZOR CODE SNIPPET HERE
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await Paginate(0, PerPage);
+            totalRecordsCount = await NwindDataService.GetDataLength();
+            StateHasChanged();
+        }
+    }
 ```
+After that we just need to bind the paging events to our custom methods, and remote paging is set:
+
+```razor
+<IgbPaginator @ref="pager" PageChange="OnPageChange" PerPageChange="OnPerPageChange" TotalRecords="totalRecordsCount"></IgbPaginator>
+
+....
+
+@code {
+        private async void OnPerPageChange(IgbNumberEventArgs e)
+    {
+        PerPage = e.Detail;
+        await Paginate(0, e.Detail);
+    }
+
+    private async void OnPageChange(IgbNumberEventArgs e)
+    {
+        await Paginate(e.Detail, PerPage);
+    }
+    ...
+        private async Task Paginate(double page, double perPage)
+    {
+        this.page = page;
+        double skip = this.page * PerPage;
+        double top = PerPage;
+
+        try
+        {
+            data = await NwindDataService.GetData(Convert.ToInt32(skip), Convert.ToInt32(perPage));
+            isLoading = false;
+            UpdateUI();
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"Error fetching data: {ex.Message}");
+        }
+    }
+}
+```
+For further reference please check the full demo bellow:
+
+### Grid Remote Paging Demo  
+
+`sample="/{ComponentSample}/remote-paging-grid", height="550", alt="{Platform} {ComponentTitle} Hierarchical Grid Remote Paging Example"`
+
+<!-- end: Blazor -->
+
+<!-- React -->
+```tsx
+<IgrPaginator 
+          perPage="15"
+          ref={paginator}
+          pageChange={(evt: { page: number }) => paginate(evt.page)}
+          perPageChange={() => paginate(0)}>
+</IgrPaginator>
+```
+then set up the method:
+```tsx
+  function paginate(pageArgs: number) {
+    page = pageArgs;
+    const skip = page * perPage;
+    const top = perPage;
+
+    remoteServiceInstance.getData({ key: 'Customers' }, skip, top).then((incData:any)=> {
+      data = incData; 
+      grid.current.isLoading = false;
+      grid.current.markForCheck();// Update the UI after receiving data
+    });
+```
+For further reference please check the full sample bellow:
+
+### Grid Remote Paging Demo  
+
+`sample="/{ComponentSample}/remote-paging-hgrid", height="550", alt="{Platform} {ComponentTitle} Hierarchical Grid Remote Paging Example"`
+
+<!-- end: React -->
+
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- ComponentStart: TreeGrid -->
+<!-- Angular -->
 
 In this sample we will demonstrate how to display a certain number of root records per page no matter how many child records they have. In order to cancel the built-in Tree Grid paging algorithm, which displays a certain number of records no matter their level (root or child), we have to set the `PerPage` property to `Number.MAX_SAFE_INTEGER`.
 
@@ -1007,7 +1463,6 @@ As you can see in the `Paginate` method, custom pagination logic is performed, b
 #### Remote Paging with Batch Editing Demo
 
 `sample="/{ComponentSample}/remote-paging-batch-editing", height="620", alt="{Platform} {ComponentTitle} Remote Paging Batch Editing Example"`
-
 
 
 <!-- ComponentEnd: Grid -->
