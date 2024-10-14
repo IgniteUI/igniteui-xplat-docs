@@ -159,7 +159,7 @@ _language: ja
 
 ## **{PackageVerChanges-23-2-APR}**
 
-- `バグ修正` 
+- バグ修正
 
 ## **{PackageVerChanges-23-2-MAR}**
 
