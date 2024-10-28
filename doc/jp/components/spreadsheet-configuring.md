@@ -2,7 +2,7 @@
 title: {Platform} スプレッドシート | 設定 | セル | 数式 | ナビゲーション | 選択 | インフラジスティックス
 _description: {ProductName} によって {Platform} スプレッドシートを設定して、チャート データを向上させる方法について説明します。Infragistics はデータ可視化を向上させます。
 _keywords: Excel Spreadsheet, {ProductName}, Infragistics, Excel スプレッドシート, インフラジスティックス
-mentionedTypes: ['Spreadsheet']
+mentionedTypes: ["Spreadsheet"]
 _language: ja
 ---
 # {Platform} Spreadsheet の構成

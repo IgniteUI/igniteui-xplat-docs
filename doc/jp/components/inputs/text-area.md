@@ -2,7 +2,7 @@
 title: {Platform} Text Area (テキスト エリア) | データ可視化ツール | インフラジスティックス
 _description: Infragistics の {Platform} テキスト エリアは、ユーザーが大量の自由形式のテキストを入力できるコンポーネントです。
 _keywords: {ProductName}, UI controls, {Platform} widgets, Web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Input, {Platform} Textarea components, {Platform} Textarea controls, {ProductName}, UI コントロール, {Platform} ウィジェット, Web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Input, {Platform} Textarea コンポーネント, {Platform} Textarea コントロール
-mentionedTypes: ['Input', 'Icon', 'Textarea', 'Toast']
+mentionedTypes: ["Input", "Icon", "Textarea", "Toast"]
 _language: ja
 ---
 # {Platform} Text Area (テキスト エリア) の概要

@@ -563,7 +563,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 <!-- WebComponents, Blazor, React -->
 ## Styling
 
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming-grid.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
 <!-- WebComponents -->
@@ -603,7 +603,7 @@ Then set the related CSS properties to this class:
 
 ## Additional Resources
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [Filtering](filtering.md)
 * [Excel Style Filtering](excel-style-filtering.md)
 * [Virtualization and Performance](virtualization.md)
@@ -614,7 +614,7 @@ Then set the related CSS properties to this class:
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 

@@ -31,6 +31,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "DarkSliceLabelColor"}], "originalName": "DarkSliceLabelColor"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "InnerExtent"}], "originalName": "InnerExtent"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LabelMemberPath"}], "originalName": "LabelMemberPath"},
+      {"names":[{"platform": "Blazor", "mappedType": "LegendEmptyValuesMode","mappedName": "LegendEmptyValuesMode"}], "originalName": "LegendEmptyValuesMode"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LegendLabelMemberPath"}], "originalName": "LegendLabelMemberPath"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LegendOthersSliceLabelFormat"}], "originalName": "LegendOthersSliceLabelFormat"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbFormatSpecifierCollection","mappedName": "LegendOthersSliceLabelFormatSpecifiers"}], "originalName": "LegendOthersSliceLabelFormatSpecifiers"},

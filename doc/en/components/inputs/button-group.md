@@ -2,7 +2,7 @@
 title: {Platform} Button Group Component | {ProductName}
 _description: Get started with the {Platform} Button Group Component - series of {Platform} Toggle Buttons, exposing features such as layout and selection.
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Button Group Components, Infragistics
-mentionedTypes: ['ToggleButton', 'ButtonGroup']
+mentionedTypes: ["ToggleButton", "ButtonGroup"]
 ---
 
 # {Platform} Button Group Overview
@@ -155,11 +155,8 @@ The sample below demonstrates the exposed `ButtonGroup` selection modes:
 `sample="/inputs/button-group/selection", height="170", alt="{Platform} Button Group Selection Example"`
 
 
-<!-- WebComponents, React -->
 A `ToggleButton` could be marked as selected via its `Selected` attribute or through the `ButtonGroup` `SelectedItems` attribute:
-<!-- end: WebComponents, React -->
 
-<!-- WebComponents, React -->
 ```html
 <igc-button-group selected-items='["bold"]'>
     <igc-toggle-button value="bold">
@@ -215,8 +212,6 @@ A `ToggleButton` could be marked as selected via its `Selected` attribute or thr
 
 > [!Note]
 > Setting `ToggleButton` `Value` attribute is mandatory for using the `SelectedItems` property of the `ButtonGroup`.
-
-<!-- end: WebComponents, React -->
 
 ### Size
 The `--ig-size` CSS custom property can be used to control the size of the button group.

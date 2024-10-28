@@ -70,7 +70,7 @@ import 'igniteui-webcomponents-grids/grids/combined.js';
 <!-- end: WebComponents -->
 
 ```tsx
-import "igniteui-react-grids/grids";
+import "igniteui-react-grids/grids/combined.js";
 ```
 
 対応するスタイルも参照する必要があります。[テーマ](../../themes/overview.md)の 1 つにライトモードのオプションまたはダークモードのオプションを選択し、プロジェクト構成に基づいてインポートできます:
@@ -827,7 +827,7 @@ $custom-theme: grid-theme(
 
 <!-- WebComponents, Blazor, React -->
 ## スタイル設定
-定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。ヘッダーの背景とテキストの色を変更したい場合は、最初にグリッドのクラスを設定する必要があります:
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming-grid.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。ヘッダーの背景とテキストの色を変更したい場合は、最初にグリッドのクラスを設定する必要があります:
 
 <!-- WebComponents -->
 ```html

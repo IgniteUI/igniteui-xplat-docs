@@ -2,7 +2,7 @@
 title: {Platform} ラジアル チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの {Platform} ラジアル チャート
 _keywords: {Platform} Charts, Radial Chart, Infragistics, {Platform} チャート, ラジアル チャート, インフラジスティックス
-mentionedTypes: ["XamDataChart", "RadialLineSeries", 'Series']
+mentionedTypes: ["XamDataChart", "RadialLineSeries", "Series"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---

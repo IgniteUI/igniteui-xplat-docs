@@ -794,7 +794,7 @@ $button-theme: button-theme(
 
 ## スタイル設定
 
-定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming-grid.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
 一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
 ```html
@@ -860,9 +860,9 @@ $button-theme: button-theme(
 
 <!-- Blazor -->
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [{ComponentTitle} 編集](editing.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 <!-- * [{ComponentTitle} Transactions](batch-editing.md) -->
 

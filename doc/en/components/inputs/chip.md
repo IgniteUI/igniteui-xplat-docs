@@ -2,7 +2,7 @@
 title: {Platform} Chip | Infragistics
 _description: Infragistics' {Platform} Chip component allows you to display content in a predefined style to decorate other components anywhere in an application.
 _keywords: {Platform}, UI controls, web widgets, UI widgets, Web Components, {Platform} Chip Components, Infragistics
-mentionedTypes: ['Chip']
+mentionedTypes: ["Chip"]
 ---
 
 # {Platform} Chip Overview

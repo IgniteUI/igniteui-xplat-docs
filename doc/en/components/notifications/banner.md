@@ -2,7 +2,7 @@
 title: {Platform} Banner | Infragistics
 _description: With {ProductName} Banner component, developers can easily integrate a short, non-intrusive message (along with optional actions) within mobile and desktop applications.
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Banner components
-mentionedTypes: ['Banner']
+mentionedTypes: ["Banner"]
 ---
 
 # {Platform} Banner Overview

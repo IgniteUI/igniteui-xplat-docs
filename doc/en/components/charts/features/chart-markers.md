@@ -14,7 +14,7 @@ In {ProductName}, markers are visual elements that display the values of data po
 
 In the following example, the [Line Chart](../types/line-chart.md) is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019 with markers enabled by setting the `MarkerType` property to `Circle` enum value.
 
-The colors of the markers are also managed by setting the `MarkerBrushes` and `MarkerOutlines` properties in the sample below. The markers and `ChartType` is configurable in this sample by using the drop-downs as well.
+The colors of the markers are also managed by setting the `MarkerBrushes` and `MarkerOutlines` properties in the sample below. The markers and `CategoryChart.ChartType` is configurable in this sample by using the drop-downs as well.
 
 `sample="/charts/category-chart/marker-options", height="500", alt="{Platform} Configuration Options Example"`
 

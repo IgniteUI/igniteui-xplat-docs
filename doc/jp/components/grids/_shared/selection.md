@@ -36,9 +36,9 @@ _language: ja
 
 ## {Platform} {ComponentTitle} 選択のオプション
 
-<!-- ComponentStart:  Grid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, HierarchicalGrid -->
 {ProductName} `{ComponentName}` コンポーネントは、[行選択](row-selection.md)、[セル選択](cell-selection.md)、[列選択](column-selection.md)の 3 つの選択モードを提供します。デフォルトでは、`{ComponentName}` で**複数セル選択**モードのみが有効になっています。選択モードの変更または有効化は、`RowSelection`、`CellSelection` または `Selectable` プロパティを使用します。
-<!-- ComponentEnd:  Grid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 ### {Platform} {ComponentTitle} 行選択
 
@@ -64,9 +64,9 @@ _language: ja
 - `Single` - `{ComponentName}` 内の 1 セルのみの選択が利用可能になります。
 - `Multiple` - `{ComponentName}` の選択のデフォルト状態です。複数セルの選択は、マウスの左ボタンを連続してクリックした後、マウスをセル上にドラッグすることで利用できます。
 
-<!-- ComponentStart:  Grid, TreeGrid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 > 詳細については、[セル選択トピック](cell-selection.md)を参照してください。
-<!-- ComponentEnd:  Grid, TreeGrid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
 ### {Platform} {ComponentTitle} 列選択
 
@@ -78,9 +78,9 @@ _language: ja
 - Multi column selection (複数列の選択) - <kbd>Ctrl</kbd> キーを押しながら列セルを<kbd>マウス クリックします</kbd>。
 - Range column selection (列の範囲選択) - <kbd>Shift</kbd> キーを押しながら + <kbd>マウス クリック</kbd>、その間のすべての列が選択されます。
 
-<!-- ComponentStart:  Grid, TreeGrid, HierarchicalGrid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 > 詳細については、[列選択トピック](column-selection.md)を参照してください。
-<!-- ComponentEnd:  Grid, TreeGrid, HierarchicalGrid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
 <!-- ComponentStart: Grid -->
 
@@ -529,7 +529,7 @@ import 'core-js/es7/array';
 
 ## その他のリソース
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [行の選択](row-selection.md)
 * [セルの選択](cell-selection.md)
 * [ページング](paging.md)
@@ -538,7 +538,7 @@ import 'core-js/es7/array';
 * [集計](summaries.md)
 * [列の移動](column-moving.md)
 * [仮想化とパフォーマンス](virtualization.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

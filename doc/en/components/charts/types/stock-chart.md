@@ -2,7 +2,7 @@
 title: {Platform} Stock/Financial Charts | {ProductName}
 _description: The {ProductName} Stock Chart is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Try for FREE.
 _keywords: {Platform} Charts, Stock Chart, Financial Chart, Candlestick Chart, OHLC Chart, Infragistics
-mentionedTypes: ["DomainChart", "FinancialChart", "FinancialChartType", "IndicatorTypes", "ZoomSliderType", 'Series', "FinancialChartType"]
+mentionedTypes: ["DomainChart", "FinancialChart", "FinancialChartType", "IndicatorTypes", "ZoomSliderType", "Series", "FinancialChartType"]
 namespace: Infragistics.Controls.Charts
 ---
 # {Platform} Stock Chart
@@ -11,7 +11,7 @@ The {ProductName} Stock Chart, sometimes referred to as {Platform} Financial Cha
 
 ## {Platform} Stock Chart Example
 
-You can create Stock Chart using the `FinancialChart` control by binding your data and optionally setting `ChartType` property to `Line` value, as shown in the example below.
+You can create Stock Chart using the `FinancialChart` control by binding your data and optionally setting `CategoryChart.ChartType` property to `Line` value, as shown in the example below.
 
 `sample="/charts/financial-chart/multiple-data", height="600", alt="{Platform} Stock Chart Example"`
 
@@ -128,7 +128,7 @@ Note that is recommended to use line chart type if plotting multiple data source
 ### Zoom Pane
 This pane controls the zoom of all the displayed panes. This pane is displayed by default. It can be turned off by setting the `ZoomSliderType` to `none` as demonstrated in the following code:
 
-Note that you should set the `ZoomSliderType` option to the same value as the `ChartType` option is set to. This way, the zoom slider will show correct preview of the price pane. The following code demonstrates how to do this:
+Note that you should set the `ZoomSliderType` option to the same value as the `CategoryChart.ChartType` option is set to. This way, the zoom slider will show correct preview of the price pane. The following code demonstrates how to do this:
 
 In this example, the stock chart is plotting revenue for United States.
 
@@ -152,7 +152,7 @@ You can find more information about related chart features in these topics:
 
 The following table lists API members mentioned in the above sections:
 
-- `ChartType`
+- `CategoryChart.ChartType`
 - `CrosshairsSnapToData`
 - `ItemsSource`
 - `FinancialChart`

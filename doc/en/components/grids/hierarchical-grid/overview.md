@@ -67,7 +67,7 @@ import 'igniteui-webcomponents-grids/grids/combined.js';
 <!-- end: WebComponents -->
 
 ```tsx
-import "igniteui-react-grids/grids";
+import "igniteui-react-grids/grids/combined.js";
 ```
 
 The corresponding styles should also be referenced. You can choose light or dark option for one of the [themes](../../themes/overview.md) and based on your project configuration to import it:
@@ -824,7 +824,7 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 
 <!-- WebComponents, Blazor, React -->
 ## Styling
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md). In case you would like to change the header background and text color, you need to set a class for the grid first:
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming-grid.md). In case you would like to change the header background and text color, you need to set a class for the grid first:
 
 <!-- WebComponents -->
 ```html

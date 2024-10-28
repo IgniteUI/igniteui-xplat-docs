@@ -2,7 +2,7 @@
 title: {Platform} Circular Progress | Circular Progress | インフラジスティックス
 _description: Circular Progress Indicator コンポーネントを使用すると、開発者は無限のカスタマイズ オプションを使用して進行状況を円で表示できます。
 _keywords: {Platform} Circular Progress, {ProductName}, インフラジスティックス
-mentionedTypes: ['CircularProgress', 'CircularGradient']
+mentionedTypes: ["CircularProgress", "CircularGradient"]
 _language: ja
 ---
 

@@ -38,6 +38,7 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "darkSliceLabelColor"}], "originalName": "DarkSliceLabelColor"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "innerExtent"}], "originalName": "InnerExtent"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "labelMemberPath"}], "originalName": "LabelMemberPath"},
+      {"names":[{"platform": "Angular", "mappedType": "LegendEmptyValuesMode","mappedName": "legendEmptyValuesMode"}], "originalName": "LegendEmptyValuesMode"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "legendLabelMemberPath"}], "originalName": "LegendLabelMemberPath"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "legendOthersSliceLabelFormat"}], "originalName": "LegendOthersSliceLabelFormat"},
       {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "legendOthersSliceLabelFormatSpecifiers"}], "originalName": "LegendOthersSliceLabelFormatSpecifiers"},

@@ -2,7 +2,7 @@
 title: {Platform} Pivot Grid Custom Remote | Pivot Tables | Infragistics
 _description: Create fast, responsive {Platform} pivot grids and tables with Ignite UI for {Platform}. Perform complex data analysis via pivot data.
 _keywords: {Platform} pivot grid, {Platform} material pivot table, ignite ui for {Platform}, pivot grid customization, pivot grid remote, pivot remote
-mentionedTypes: ['Infragistics.Controls.PivotGrid']
+mentionedTypes: ["Infragistics.Controls.PivotGrid"]
 ---
 
 

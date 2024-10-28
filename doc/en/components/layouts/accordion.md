@@ -2,7 +2,7 @@
 title: {Platform} Accordion | Accordion | Infragistics
 _description: Accordion is used to build vertical expandable panels in accordion menu.
 _keywords: {Platform} Accordion, {ProductName}, Infragistics
-mentionedTypes: ['Accordion', 'Infragistics.Controls.Layouts.Implementation.ExpansionPanel']
+mentionedTypes: ["Accordion", "Infragistics.Controls.Layouts.Implementation.ExpansionPanel"]
 namespace: Infragistics.Controls
 ---
 

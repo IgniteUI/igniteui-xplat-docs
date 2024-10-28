@@ -2,7 +2,7 @@
 title: {Platform} Data Grid コンポーネント (Data Table) - インフラジスティックス
 _description: {ProductName} を使用して、超高速でレスポンシブな {Platform} データ グリッドとテーブルを作成します。編集、フィルタリング、データ バインディングなどをサポートします。今すぐお試しください。
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid, 作業の開始, グリッド, インフラジスティックス
-mentionedTypes: ['Infragistics.Controls.Grid', 'Infragistics.Controls.ColumnPipeArgs']
+mentionedTypes: ["Infragistics.Controls.Grid", "Infragistics.Controls.ColumnPipeArgs"]
 namespace: Infragistics.Controls
 _language: ja
 ---
@@ -117,7 +117,7 @@ import 'igniteui-webcomponents-grids/grids/combined.js';
 <!-- end: WebComponents -->
 
 ```tsx
-import "igniteui-react-grids/grids";
+import "igniteui-react-grids/grids/combined.js";
 ```
 
 対応するスタイルも参照する必要があります。[テーマ](../themes/overview.md)の 1 つにライトモードのオプションまたはダークモードのオプションを選択し、プロジェクト構成に基づいてインポートできます:
@@ -1979,7 +1979,7 @@ platformBrowserDynamic()
 > グリッドは **css グリッド レイアウト**を使用しますが、これは**プレフィックスなしでは IE ではサポートされていません**。その結果、適切に描画されません。
 
 <!-- WebComponents, Blazor, React -->
-定義済みのテーマに加えて、利用可能な [CSS プロパティ](theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../grids/theming-grid.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
 
 <!-- WebComponents -->
 ```html

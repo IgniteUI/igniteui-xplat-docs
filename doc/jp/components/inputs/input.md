@@ -2,7 +2,7 @@
 title: {Platform} Input | データ可視化ツール | インフラジスティックス
 _description: インフラジスティックスの {Platform} Input は、ユーザーがデータを入力できるコンポーネントです。{ProductName} を使用してアプリケーションを改善します。
 _keywords: {Platform} input, {ProductName}, Infragistics, {Platform} 入力, インフラジスティックス
-mentionedTypes: ['Input', 'Icon', 'Radio']
+mentionedTypes: ["Input", "Icon", "Radio"]
 _language: ja
 ---
 # {Platform} Input (入力) の概要

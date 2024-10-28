@@ -1213,7 +1213,7 @@ The result of the above validation being applied to our `{ComponentName}` can be
 
 <!-- WebComponents, Blazor, React -->
 
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS Properties](../theming.md).
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming-grid.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
 <!-- ComponentStart: Grid -->
@@ -1409,7 +1409,7 @@ In addition to the steps above, we can also style the controls that are used for
 
 <!-- Blazor, WebComponents, React -->
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -1419,6 +1419,6 @@ In addition to the steps above, we can also style the controls that are used for
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
 * [Searching](search.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 <!-- end: Blazor, WebComponents, React -->

@@ -12,7 +12,7 @@ _language: ja
 
 ## {Platform} エリア チャートの例
 
-`CategoryChart` コントロールでエリア チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを **Area** 列挙型に設定します。
+`CategoryChart` コントロールでエリア チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`CategoryChart.ChartType` プロパティを **Area** 列挙型に設定します。
 
 `sample="/charts/category-chart/area-chart-multiple-sources", height="600", alt="{Platform} 複数ソースのエリア チャート"`
 
@@ -54,7 +54,7 @@ _language: ja
 
 ## 単一シリーズの {Platform} エリア チャート
 
-{Platform} エリア チャートは、生産される再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Area` 値に設定します。
+{Platform} エリア チャートは、生産される再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`CategoryChart.ChartType` プロパティを `Area` 値に設定します。
 
 `sample="/charts/category-chart/area-chart-single-source", height="600", alt="単一シリーズの {Platform} エリア チャート"`
 
@@ -88,7 +88,7 @@ _language: ja
 
 ## {Platform} ステップ エリア チャート
 
-{ProductName} ステップ エリア チャートはカテゴリ チャートのグループに属し、連続する垂直線と水平線で接続されたポイントのコレクションを使用して描画され、線の下の領域は塗りつぶされます。値は y 軸に表示され、カテゴリが表示されます x 軸上。ステップ エリア チャートは、一定期間の変化量を強調するか、複数の項目を比較します。`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `StepArea` 値に設定します。
+{ProductName} ステップ エリア チャートはカテゴリ チャートのグループに属し、連続する垂直線と水平線で接続されたポイントのコレクションを使用して描画され、線の下の領域は塗りつぶされます。値は y 軸に表示され、カテゴリが表示されます x 軸上。ステップ エリア チャートは、一定期間の変化量を強調するか、複数の項目を比較します。`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`CategoryChart.ChartType` プロパティを `StepArea` 値に設定します。
 
 
 `sample="/charts/category-chart/step-area-multiple-sources", height="600", alt="{Platform} ステップ エリア チャート"`
@@ -199,8 +199,8 @@ _language: ja
 
 | チャート タイプ               | コントロール名       | API メンバー |
 | -------------------------|--------------------|----------------------- |
-| エリア                     | `CategoryChart` | `ChartType` = `Area` |
-| ステップ エリア                | `CategoryChart` | `ChartType` = `StepArea` |
+| エリア                     | `CategoryChart` | `CategoryChart.ChartType` = `Area` |
+| ステップ エリア                | `CategoryChart` | `CategoryChart.ChartType` = `StepArea` |
 | 範囲エリア               | `XamDataChart`     | `RangeAreaSeries` |
 | ラジアル エリア              | `XamDataChart`     | `RadialAreaSeries` |
 | 極座標エリア               | `XamDataChart`     | `PolarAreaSeries` |

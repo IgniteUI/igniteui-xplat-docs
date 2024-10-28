@@ -2,7 +2,7 @@
 title: {Platform} Date Picker コンポーネント – {ProductName}
 _description: インフラジスティックスの {Platform} Date Picker を使用すると、ユーザーはカレンダーから日付を選択し、入力要素に設定できます。
 _keywords: {Platform} Date Picker, {ProductName}, Infragistics, {Platform} 日付ピッカー, インフラジスティックス
-mentionedTypes: ['DatePicker']
+mentionedTypes: ["DatePicker"]
 _language: ja
 ---
 

@@ -365,7 +365,7 @@
       {
         "exclude": ["Angular"],
         "name": "テーマ設定",
-        "href": "grids/theming.md"
+        "href": "grids/theming-grid.md"
       },
       {
         "exclude": ["Angular"],
@@ -976,6 +976,11 @@
         "name": "行のピン固定",
         "href": "grids/data-grid/row-pinning.md",
         "status": ""
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "テーマ設定",
+        "href": "grids/theming.md"
       }
     ]
   },
@@ -2001,6 +2006,11 @@
         "name": "行のピン固定",
         "href": "grids/data-grid/row-pinning.md",
         "status": ""
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "テーマ設定",
+        "href": "grids/theming.md"
       }
     ]
   },

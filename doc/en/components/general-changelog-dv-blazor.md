@@ -156,7 +156,7 @@ Data Filtering via the `InitialFilter` property. Apply filter expressions to fil
 
 ## **{PackageVerChanges-23-2-APR}**
 
-- `Bug Fixes` 
+- Bug Fixes
 
 ## **{PackageVerChanges-23-2-MAR}**
 

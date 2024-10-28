@@ -15,7 +15,7 @@ _language: ja
 
 次の例では、[折れチャート](../types/line-chart.md)は、2009 年から 2019 年までのヨーロッパ、中国、および米国の国々の再生可能エネルギーの発電量を比較しています。マーカーが `MarkerType` プロパティを `Circle` 列挙値に設定して有効になっています。
 
-マーカーのカラーは、以下のサンプルの `MarkerBrushes`プロパティと `MarkerOutlines` プロパティを設定することによっても管理されます。このサンプルでは、ドロップダウンを使用してマーカーと `ChartType` を構成できます。
+マーカーのカラーは、以下のサンプルの `MarkerBrushes`プロパティと `MarkerOutlines` プロパティを設定することによっても管理されます。このサンプルでは、ドロップダウンを使用してマーカーと `CategoryChart.ChartType` を構成できます。
 
 `sample="/charts/category-chart/marker-options", height="500", alt="{Platform} 構成オプションの例"`
 

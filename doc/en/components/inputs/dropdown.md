@@ -2,7 +2,7 @@
 title: {Platform} Dropdown List Component | {ProductName}
 _description: With {Platform} Dropdown List component you can add interactivity and see styling options to a scrollable list of items in your app. Try it now.  {Platform} now.
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Dropdown Component, Infragistics
-mentionedTypes: ['Dropdown', 'DropdownItem', 'DropdownHeader', 'DropdownGroup']
+mentionedTypes: ["Dropdown", "DropdownItem", "DropdownHeader", "DropdownGroup"]
 ---
 
 # {Platform} Dropdown List Component - Overview

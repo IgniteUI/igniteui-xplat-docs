@@ -1116,13 +1116,13 @@ state.applyState(gridState.columnSelection);
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 ## Additional Resources
 * [Paging](paging.md)
 * [Filtering](filtering.md)
 * [Sorting](sorting.md)
 * [Selection](selection.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 

@@ -2,7 +2,7 @@
 title: {Platform} チャート パフォーマンス | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの {Platform} チャート パフォーマンス
 _keywords: {Platform} Charts, Performance, Infragistics, {Platform} チャート, パフォーマンス, インフラジスティックス
-mentionedTypes: ["DomainChart", "CategoryChart", "FinancialChart", "XamDataChart"]
+mentionedTypes: ["DomainChart", "CategoryChart", "FinancialChart", "XamDataChart", "FinancialChartVolumeType", "FinancialChartZoomSliderType"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -114,11 +114,9 @@ export class MultiDataSources {
         const dataSource1: any[] = [];
         dataSource1.push({ "Year": "1996", "Value": 148 });
         dataSource1.push({ "Year": "2000", "Value": 142 });
-
         const dataSource2: any[] = [];
         dataSource2.push({ "Year": "1996", "Value": 110 });
         dataSource2.push({ "Year": "2000", "Value": 115 });
-
         const multipleSources: any[] = [dataSource1, dataSource2];
         return multipleSources;
     }
@@ -145,7 +143,7 @@ this.Chart.excludedProperties = [ "CHN",  "FRN", "GER" ];
 
 ### チャート タイプ
 
-[折れ線チャート](../types/line-chart.md)などの単純なチャート タイプは、データ ポイント間のスプライン線の補間が複雑であるため、[スプライン チャート](../types/spline-chart.md)を使用するよりもパフォーマンスが速くなります。したがって、{Platform} `CategoryChart` の `ChartType` プロパティまたは `FinancialChart` コントロールを使用して、描画が高速なチャートのタイプを選択する必要があります。または、{Platform} `XamDataChart` コントロールで、シリーズのタイプをより高速なシリーズに変更することもできます。
+[折れ線チャート](../types/line-chart.md)などの単純なチャート タイプは、データ ポイント間のスプライン線の補間が複雑であるため、[スプライン チャート](../types/spline-chart.md)を使用するよりもパフォーマンスが速くなります。したがって、{Platform} `CategoryChart` の `CategoryChart.ChartType` プロパティまたは `FinancialChart` コントロールを使用して、描画が高速なチャートのタイプを選択する必要があります。または、{Platform} `XamDataChart` コントロールで、シリーズのタイプをより高速なシリーズに変更することもできます。
 
 次の表に、チャートの各グループで、パフォーマンスが速いものから遅いものの順にチャートのタイプを示します。
 
