@@ -185,7 +185,6 @@ This carousel is going to contain slides with forms and images:
 `sample="/layouts/carousel/components", height="600", alt="{Platform} Carousel With Components Example"`
 
 
-<!-- React, Blazor -->
 ## Animations
 
 Animated slide transitions provide the end-users a nice experience when interacting with the carousel.
@@ -208,7 +207,6 @@ The demo below demonstrates the different types of animations, which the carouse
 
 `sample="/layouts/carousel/animations", height="650", alt="{Platform} Carousel Animations Example"`
 
-<!-- end: React, Blazor -->
 
 ## Navigation
 
@@ -220,9 +218,7 @@ The navigation in the carousel can be handled by the user through navigation but
 
 By default, the carousel can be used on any touch-enabled device.
 
-<!-- React, Blazor -->
 The carousel [animations](carousel.md#animations) are fully supported on touch devices, which makes the carousel consistent with any platform and great when used in progressive web applications ([PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)).
-<!-- end: React, Blazor -->
 
 ### Keyboard navigation
 
