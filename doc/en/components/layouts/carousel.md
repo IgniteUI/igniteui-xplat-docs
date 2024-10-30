@@ -264,6 +264,7 @@ Our carousel will look like this in the template:
     hide-navigation="true"
     vertical="true"
     interval="2000"
+    animation-type="fade"
 >
     <igc-carousel-indicator>
         <img class="blurred" src="assets/images/carousel/WonderfulCoastThumb.png" width="50" height="60"/>
