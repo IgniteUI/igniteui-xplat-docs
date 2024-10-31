@@ -38,7 +38,7 @@ For a complete introduction to the {ProductName}, read the [*Getting Started*](.
 
 Now that you have the {ProductName} Carousel imported, you can start with a basic configuration of the `Carousel` and its slides.
 
-Use the `Carousel` selector to wrap your `Slide`s. The slides may feature any valid html content inside, including other components.
+Use the `Carousel` selector to wrap your slides. The slides may feature any valid html content inside, including other components.
 
 ```html
 <igc-carousel>
@@ -131,7 +131,7 @@ To add {Platform} custom carousel indicators, use the `Indicator`:
 </igc-carousel>
 ```
 
-The {ProductName} Carousel component allows users to use different elements for the active and inactive state of a single indicator. It is mandatory to provide 2 elements for each slot (empty and active) when declaring an indicator, even if they are the same.
+The {ProductName} Carousel component allows users to use different elements for the active and inactive state of a single indicator. It is mandatory to provide two elements for each slot (empty and active) when declaring an indicator, even if they are the same.
 
 
 ### Custom navigation buttons
