@@ -570,6 +570,98 @@ Using above code will result in the following example which groups the Date uniq
 
 `sample="/{PivotGridSample}/features", height="700", alt="{Platform} Pivot Grid Basic Features Example"`
 
+### Auto generate configuration
+The `autoGenerateConfig` property automatically generates dimensions and values based on the data source fields:
+
+- Numeric Fields:
+  - Created as `PivotValue` using `PivotNumericAggregate.sum` aggregator.
+  - Added to the values collection and enabled by default.
+
+- Non-Numeric Fields:
+  - Created as `PivotDimension`.
+  - Disabled by default.
+  - Added to the columns collection.
+
+- Date Fields(only the first `date` field is enabled, the other `date` fields apply non-numeric fields rule):
+  - Created as `PivotDateDimension`
+  - Enabled by default
+  - added to the rows collection.
+
+This feature allows developers to quickly create a pivot view without manually specifying dimensions and values. With a pivot selector next to the pivot grid, users can enable and reorder dimensions and values as needed.
+
+### Pivot Value Calculation Keys
+
+The Pivot grid provides a customization to the object keys fields it uses to do its pivot calculations.  
+A more detailed view of how they are used can be seen bellow in example data, where you can see already aggregated values:
+```json
+[
+    {
+        ProductCategory: 'All', AllProducts: 'All Products', All: 1000, 'All-Bulgaria': 774, 'All-USA': 829, 'All-Uruguay': 524,
+        AllProducts_records: [
+            { ProductCategory: 'Clothing', 'All-Bulgaria': 774, 'All-USA': 296, 'All-Uruguay': 456 },
+            { ProductCategory: 'Bikes', 'All-Uruguay': 68 },
+            { ProductCategory: 'Accessories', 'All-USA': 293 },
+            { ProductCategory: 'Components', 'All-USA': 240 }
+        ]
+    }
+];
+```
+
+All of these are stored in the **pivotKeys** property which is part of the `PivotConfiguration` and can be used to change the default pivot keys. 
+- **children** - Field that stores children for hierarchy building. It represents a map from grouped values and all the pivotGridRecords that are based on that value. It can be utilized in very specific scenarios, where there is a need to do something while creating the hierarchies. No need to change this for common usage.
+- **records** - Field that stores reference to the original data records. Can be seen in the example from above - **AllProducts_records**. Avoid setting fields in the data with the same name as this property. If your data records has **records** property, you can specify different and unique value for it using the **pivotKeys**.
+- **aggregations** - Field that stores aggregation values. It's applied while creating the hierarchies and also it should not be changed for common scenarios.
+- **level** - Field that stores dimension level based on its hierarchy. Avoid setting fields in the data with the same name as this property. If your data records has **level** property, you can specify different and unique value for it using the **pivotKeys**.
+- **columnDimensionSeparator** - Separator used when generating the unique column field values. It is the dash(**-**) from example value - **All-Bulgaria**.
+- **rowDimensionSeparator** - Separator used when generating the unique row field values. It's used when creating the **records** and **level** field.
+
+The default values are:
+```typescript
+{
+    aggregations: 'aggregations',
+    records: 'records',
+    children: 'children',
+    level: 'level',
+    rowDimensionSeparator: '_',
+    columnDimensionSeparator: '-'
+};
+```
+
+```razor
+@code {
+    {
+        aggregations: 'aggregations',
+        records: 'records',
+        children: 'children',
+        level: 'level',
+        rowDimensionSeparator: '_',
+        columnDimensionSeparator: '-'
+    };
+}
+```
+
+> [!Note]
+> If you have data field values that contain the default keys, make sure to change the separators that match to any other symbols that you are not currently using. Otherwise could lead to unexpected behavior in calculating and showing the aggregated values.
+
+<!-- Blazor -->
+When overriding the `PivotKeys` in Blazor, currently you will need to define all other keys, since assigning a new PivotKeys object, it replaces completely the default ones:
+
+```razor
+@code {
+    var pivotConfiguration = new IgbPivotConfiguration();
+    pivotConfiguration.PivotKeys = new IgbPivotKeys()
+    {
+        Aggregations = "aggregations",
+        Records = "records",
+        Children = "children",
+        Level = "level",
+        RowDimensionSeparator = "_",
+        ColumnDimensionSeparator = "^"
+    };
+}
+```
+<!-- end: Blazor -->
+
 ## Known Issues and Limitations
 
 |Limitation|Description|
