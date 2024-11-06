@@ -1464,6 +1464,12 @@
     "href": "layouts/card.md"
   },
   {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "カルーセル",
+    "href": "layouts/carousel.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular"],
     "name": "ドック マネージャー",
     "href": "layouts/dock-manager.md",
