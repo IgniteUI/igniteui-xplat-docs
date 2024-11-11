@@ -44,7 +44,7 @@ This topic contains the following sections:
 //nuget protocol v3
 nuget sources add -name "Infragistics" -source "https://packages.infragistics.com/nuget/licensed/v3/index.json" -username "your login email" -password "your password"
 
-//nuget protocol v2 or later
+//nuget protocol v2
 nuget sources add -name "Infragistics" -source "https://packages.infragistics.com/nuget/licensed" -username "your login email" -password "your password"
 ```
 
