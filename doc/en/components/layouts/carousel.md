@@ -34,6 +34,39 @@ defineComponents(IgcCarouselComponent);
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Carousel`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrCarouselModule, IgrCarousel, IgrCarouselSlide } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrCarouselModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
+Before using the `Carousel`, you need to register it as follows:
+
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbCarouselModule));
+```
+
+You will also need to link an additional CSS file to apply the styling to the `Carousel` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+<!-- end: Blazor -->
+
 For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 Now that you have the {ProductName} Carousel imported, you can start with a basic configuration of the `Carousel` and its slides.
@@ -54,6 +87,34 @@ Use the `Carousel` selector to wrap your slides. The slides may feature any vali
 </igc-carousel>
 ```
 
+```tsx
+<IgrCarousel>
+    <IgrCarouselSlide key="first">
+        <img src="assets/images/carousel/ignite-ui-angular-indigo-design.png" key="img"/>
+    </IgrCarouselSlide>
+    <IgrCarouselSlide key="second">
+        <img src="assets/images/carousel/slider-image-chart.png" key="img"/>
+    </IgrCarouselSlide>
+    <IgrCarouselSlide key="third">
+        <img src="assets/images/carousel/ignite-ui-angular-charts.png" key="img"/>
+    </IgrCarouselSlide>
+</IgrCarousel>
+```
+
+```razor
+<IgbCarousel>
+    <IgbCarouselSlide>
+        <img src="assets/images/carousel/ignite-ui-angular-indigo-design.png/>
+    </IgbCarouselSlide>
+    <IgbCarouselSlide>
+        <img src="assets/images/carousel/slider-image-chart.png"/>
+    </IgbCarouselSlide>
+    <IgbCarouselSlide>
+        <img src="assets/images/carousel/ignite-ui-angular-charts.png"/>
+    </IgbCarouselSlide>
+</IgbCarousel>
+```
+
 If you want a slide to be active by default, use the `Active` attribute:
 
 ```html
@@ -66,6 +127,30 @@ If you want a slide to be active by default, use the `Active` attribute:
         ...
     </igc-carousel-slide>
 </igc-carousel>
+```
+
+```tsx
+<IgrCarousel>
+    ...
+    <IgrCarouselSlide key="first">
+        ...
+    </IgrCarouselSlide>
+    <IgrCarouselSlide active={true} key="second">
+        ...
+    </IgrCarouselSlide>
+</IgrCarousel>
+```
+
+```razor
+<IgbCarousel>
+    ...
+    <IgbCarouselSlide>
+        ...
+    </IgbCarouselSlide>
+    <IgbCarouselSlide Active="true">
+        ...
+    </IgbCarouselSlide>
+</IgbCarousel>
 ```
 
 >[!NOTE]
@@ -83,12 +168,36 @@ By default, the `Carousel` has its `DisableLoop` property set to **false** (*loo
 </igc-carousel>
 ```
 
+```tsx
+<IgrCarousel disableLoop={true}>
+    ...
+</IgrCarousel>
+```
+
+```razor
+<IgbCarousel DisableLoop="true">
+    ...
+</IgbCarousel>
+```
+
 To keep track of each slide index, the carousel has indicators that are positioned at the `end` of the carousel by default. In order to change this behavior, use the `IndicatorsOrientation` property and assign it to `start`.
 
 ```html
 <igc-carousel indicators-orientation="start">
     ...
 </igc-carousel>
+```
+
+```tsx
+<IgrCarousel indicatorsOrientation={CarouselIndicatorsOrientation.Start}>
+    ...
+</IgrCarousel>
+```
+
+```razor
+<IgbCarousel IndicatorsOrientation="@CarouselIndicatorsOrientation.Start">
+    ...
+</IgbCarousel>
 ```
 
 By default, the `Carousel` displays its navigation buttons and indicators. Use the `HideIndicators` property to hide the indicators and the `HideNavigation` property to hide the navigation buttons.
@@ -99,12 +208,36 @@ By default, the `Carousel` displays its navigation buttons and indicators. Use t
 </igc-carousel>
 ```
 
+```tsx
+<IgrCarousel hideNavigation={true} hideIndicators={true}>
+    ...
+</IgrCarousel>
+```
+
+```razor
+<IgbCarousel HideNavigation="true" HideIndicators="true">
+    ...
+</IgbCarousel>
+```
+
 The `Carousel` supports vertical mode. Use the `Vertical` property to enable it.
 
 ```html
 <igc-carousel vertical="true">
     ...
 </igc-carousel>
+```
+
+```tsx
+<IgrCarousel vertical={true}>
+    ...
+</IgrCarousel>
+```
+
+```razor
+<IgbCarousel Vertical="true">
+    ...
+</IgbCarousel>
 ```
 
 ### Custom indicators
@@ -131,6 +264,46 @@ To add {Platform} custom carousel indicators, use the `Indicator`:
 </igc-carousel>
 ```
 
+```tsx
+<IgrCarousel>
+    <IgrCarouselIndicator key="first-indicator">
+        <span key="empty">🤍</span>
+        <span slot="active" key="active">❤️</span>
+    </IgrCarouselIndicator>
+    <IgrCarouselIndicator key="second-indicator">
+        <span key="empty">🤍</span>
+        <span slot="active" key="active">❤️</span>
+    </IgrCarouselIndicator>
+
+    <IgrCarouselSlide key="first">
+        <img src="assets/images/card/media/the_red_ice_forest.jpg" key="img"/>
+    </IgrCarouselSlide>
+    <IgrCarouselSlide key="second">
+        <img src="assets/images/card/media/yosemite.jpg" key="img"/>
+    </IgrCarouselSlide>
+</IgrCarousel>
+```
+
+```razor
+<IgbCarousel>
+    <IgbCarouselIndicator>
+        <span>🤍</span>
+        <span slot="active">❤️</span>
+    </IgbCarouselIndicator>
+    <IgbCarouselIndicator>
+        <span>🤍</span>
+        <span slot="active">❤️</span>
+    </IgbCarouselIndicator>
+
+    <IgbCarouselSlide>
+        <img src="assets/images/card/media/the_red_ice_forest.jpg"/>
+    </IgbCarouselSlide>
+    <IgbCarouselSlide>
+        <img src="assets/images/card/media/yosemite.jpg"/>
+    </IgbCarouselSlide>
+</IgbCarousel>
+```
+
 The {ProductName} Carousel component allows users to use different elements for the active and inactive state of a single indicator. It is mandatory to provide two elements for each slot (empty and active) when declaring an indicator, even if they are the same.
 
 
@@ -144,6 +317,22 @@ To achieve this, use the `previous-button` and `next-button` slots:
     <igc-icon slot="next-button" name="next" collection="material"></igc-icon>
     ...
 </igc-carousel>
+```
+
+```tsx
+<IgrCarousel>
+    <IgrIcon slot="previous-button" name="previous" collection="material" key="previous"></IgrIcon>
+    <IgrIcon slot="next-button" name="next" collection="material" key="next"></IgrIcon>
+    ...
+</IgrCarousel>
+```
+
+```razor
+<IgbCarousel>
+    <IgbIcon slot="previous-button" IconName="previous" Collection="material"></IgbIcon>
+    <IgbIcon slot="next-button" IconName="next" Collection="material"></IgbIcon>
+    ...
+</IgbCarousel>
 ```
 
 ### Slide containing other components
@@ -180,6 +369,74 @@ This carousel is going to contain slides with forms and images:
 </igc-carousel>
 ```
 
+```tsx
+<IgrCarousel>
+    <IgrCarouselSlide key="slide-1">
+        <div key="slide-content">
+            <img src="assets/images/svg/carousel/SignUp.svg"/>
+            <form>
+                <IgrInput type="text" placeholder="Username">
+                    <IgrIcon slot="prefix" name="person" key="icon"></IgrIcon>
+                </IgrInput>
+                <IgrInput type="password" placeholder="Password">
+                    <IgrIcon slot="prefix" name="password" key="icon"></IgrIcon>
+                </IgrInput>
+                <IgrButton type="reset">
+                    <span key="button-span">Sign In</span>
+                </IgrButton>
+            </form>
+        </div>
+    </IgrCarouselSlide>
+    <IgrCarouselSlide key="slide-2">
+        <div key="slide-content">
+            <img src="assets/images/svg/carousel/Route.svg"/>
+            <form>
+                <IgrInput type="text" placeholder="Search">
+                    <IgrIcon slot="prefix" name="search" key="icon"></IgrIcon>
+                </IgrInput>
+                <IgrButton type="reset">
+                    <span key="button-span">Search</span>
+                </IgrButton>
+            </form>
+        </div>
+    </IgrCarouselSlide>
+</IgrCarousel>
+```
+
+```razor
+<IgbCarousel>
+    <IgbCarouselSlide>
+        <div>
+            <img src="assets/images/svg/carousel/SignUp.svg"/>
+            <form>
+                <IgbInput Type="text" Placeholder="Username">
+                    <IgbIcon slot="prefix" IconName="person"></IgbIcon>
+                </IgbInput>
+                <IgbInput Type="password" Placeholder="Password">
+                    <IgbIcon slot="prefix" IconName="password"></IgbIcon>
+                </IgbInput>
+                <IgbButton Type="reset">
+                    <span>Sign In</span>
+                </IgbButton>
+            </form>
+        </div>
+    </IgbCarouselSlide>
+    <IgbCarouselSlide>
+        <div>
+            <img src="assets/images/svg/carousel/Route.svg"/>
+            <form>
+                <IgbInput Type="text" Placeholder="Search">
+                    <IgbIcon slot="prefix" IconName="search"></IgbIcon>
+                </IgbInput>
+                <IgbButton Type="reset">
+                    <span>Search</span>
+                </IgbButton>
+            </form>
+        </div>
+    </IgbCarouselSlide>
+</IgbCarousel>
+```
+
 #### Demo
 
 `sample="/layouts/carousel/components", height="600", alt="{Platform} Carousel With Components Example"`
@@ -197,6 +454,18 @@ Use the `AnimationType` property to change the animation.
 <igc-carousel animation-type="fade">
     ...
 </igc-carousel>
+```
+
+```tsx
+<IgrCarousel animationType={CarouselAnimationType.Fade}>
+    ...
+</IgrCarousel>
+```
+
+```razor
+<IgbCarousel AnimationType="@CarouselAnimationType.Fade">
+    ...
+</IgbCarousel>
 ```
 
 Setting `none` to the `AnimationType` property disables the animations.
@@ -242,6 +511,18 @@ This can be prevented by setting `DisablePauseOnInteraction` property to **true*
 <igc-carousel interval="2000" disable-pause-on-interaction="true">
     ...
 </igc-carousel>
+```
+
+```tsx
+<IgrCarousel interval={2000} disablePauseOnInteraction={true}>
+    ...
+</IgrCarousel>
+```
+
+```razor
+<IgbCarousel Interval="2000" DisablePauseOnInteraction="true">
+    ...
+</IgbCarousel>
 ```
 
 ## Advanced Example
@@ -303,6 +584,71 @@ Our carousel will look like this in the template:
         <img src="assets/images/carousel/AmazingBridge.png"/>
     </igc-carousel-slide>
 </igc-carousel>
+```
+
+```tsx
+const images = [
+    {
+        src: "https://www.infragistics.com/angular-demos-lob/assets/images/carousel/WonderfulCoast.png",
+        alt: "Wonderful Coast",
+    },
+    {
+        src: "https://www.infragistics.com/angular-demos-lob/assets/images/carousel/CulturalDip.png",
+        alt: "Cultural Dip",
+    },
+    {
+        src: "https://www.infragistics.com/angular-demos-lob/assets/images/carousel/GoldenBeaches.png",
+        alt: "Golden Beaches",
+    },
+    {
+        src: "https://www.infragistics.com/angular-demos-lob/assets/images/carousel/IslandOfHistory.png",
+        alt: "Island Of History",
+    },
+    {
+        src: "https://www.infragistics.com/angular-demos-lob/assets/images/carousel/AmazingBridge.png",
+        alt: "Amazing Bridge",
+    },
+];
+
+<IgrCarousel
+    disablePauseOnInteraction={true}
+    hideNavigation={true}
+    interval={2000}
+    vertical={true}
+    animationType={CarouselAnimationType.Fade}
+>
+    {images.map((image, index) => {
+        return (
+            <React.Fragment key={index}>
+                <IgrCarouselSlide key={`slide-${index}`}>
+                    <img src={image.src} alt={image.alt} key="slide-img" />
+                </IgrCarouselSlide>
+                <IgrCarouselIndicator key={`indicator-${index}`}>
+                    <img
+                        key="img-blur"
+                        className="blurred"
+                        src={image.src.replace(".png", "Thumb.png")}
+                        alt={`${image.alt} Thumb`}
+                        width="50"
+                        height="60"
+                    />
+                    <img
+                        key="img-active"
+                        slot="active"
+                        src={image.src.replace(".png", "Thumb.png")}
+                        alt={`${image.alt} Thumb Active`}
+                        width="50"
+                        height="60"
+                    />
+                </IgrCarouselIndicator>
+            </React.Fragment>
+        );
+    })}
+</IgrCarousel>
+```
+
+```razor
+
 ```
 
 These configurations will have the following result:
