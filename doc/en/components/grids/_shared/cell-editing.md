@@ -636,7 +636,13 @@ Please check the full sample for further reference:
 
 ##### {Platform} Grid Excel Style Editing Sample
 
+<!-- React -->
 `sample="/{ComponentSample}/editing-excel-style", height="550", alt="{Platform} {ComponentTitle} Excel Style Editing Example"`
+<!-- end: React -->
+
+<!-- WebComponents, Blazor -->
+`sample="/{ComponentSample}/editing-excel-style-custom", height="550", alt="{Platform} {ComponentTitle} Excel Style Editing Example"`
+<!-- end: WebComponents, Blazor -->
 
 Main benefits of the above approach include:
 
