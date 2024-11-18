@@ -1711,15 +1711,15 @@
     "packageName": "igniteui-webinputs",
     "names":[{"platform": "Blazor","fileName": "Carousel.cs","mappedName": "IgbCarousel"}],
     "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "boolean","mappedName": "disableLoop"}], "originalName": "DisableLoop"},
-      {"names":[{"platform": "Blazor", "mappedType": "boolean","mappedName": "hideIndicators"}], "originalName": "HideIndicators"},
-      {"names":[{"platform": "Blazor", "mappedType": "boolean","mappedName": "hideNavigation"}], "originalName": "HideNavigation"},
-      {"names":[{"platform": "Blazor", "mappedType": "boolean","mappedName": "disablePauseOnInteraction"}], "originalName": "DisablePauseOnInteraction"},
-      {"names":[{"platform": "Blazor", "mappedType": "boolean","mappedName": "vertical"}], "originalName": "Vertical"},
-      {"names":[{"platform": "Blazor", "mappedType": "number","mappedName": "interval"}], "originalName": "Interval"},
-      {"names":[{"platform": "Blazor", "mappedType": "number","mappedName": "maximumIndicatorsCount"}], "originalName": "MaximumIndicatorsCount"},
-      {"names":[{"platform": "Blazor", "mappedType": "CarouselIndicatorsOrientation","mappedName": "indicatorsOrientation"}], "originalName": "IndicatorsOrientation"},
-      {"names":[{"platform": "Blazor", "mappedType": "CarouselAnimationType","mappedName": "animationType"}], "originalName": "AnimationType"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "boolean","mappedName": "DisableLoop"}], "originalName": "DisableLoop"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean","mappedName": "HideIndicators"}], "originalName": "HideIndicators"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean","mappedName": "HideNavigation"}], "originalName": "HideNavigation"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean","mappedName": "DisablePauseOnInteraction"}], "originalName": "DisablePauseOnInteraction"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean","mappedName": "Vertical"}], "originalName": "Vertical"},
+      {"names":[{"platform": "Blazor", "mappedType": "number","mappedName": "Interval"}], "originalName": "Interval"},
+      {"names":[{"platform": "Blazor", "mappedType": "number","mappedName": "MaximumIndicatorsCount"}], "originalName": "MaximumIndicatorsCount"},
+      {"names":[{"platform": "Blazor", "mappedType": "CarouselIndicatorsOrientation","mappedName": "IndicatorsOrientation"}], "originalName": "IndicatorsOrientation"},
+      {"names":[{"platform": "Blazor", "mappedType": "CarouselAnimationType","mappedName": "AnimationType"}], "originalName": "AnimationType"} ]
   },
   {
     "originalName": "Slide",
@@ -1729,7 +1729,7 @@
     "packageName": "igniteui-webinputs",
     "names":[{"platform": "Blazor","fileName": "CarouselSlide.cs","mappedName": "IgbCarouselSlide"}],
     "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "active"}], "originalName": "Active"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "Active"}], "originalName": "Active"} ]
   },
   {
     "originalName": "Indicator",

@@ -104,13 +104,13 @@ Use the `Carousel` selector to wrap your slides. The slides may feature any vali
 ```razor
 <IgbCarousel>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/ignite-ui-angular-indigo-design.png/>
+        <img src="assets/images/carousel/ignite-ui-angular-indigo-design.png" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/slider-image-chart.png"/>
+        <img src="assets/images/carousel/slider-image-chart.png" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/ignite-ui-angular-charts.png"/>
+        <img src="assets/images/carousel/ignite-ui-angular-charts.png" />
     </IgbCarouselSlide>
 </IgbCarousel>
 ```
@@ -407,30 +407,26 @@ This carousel is going to contain slides with forms and images:
 <IgbCarousel>
     <IgbCarouselSlide>
         <div>
-            <img src="assets/images/svg/carousel/SignUp.svg"/>
+            <img src="assets/images/svg/carousel/SignUp.svg">
             <form>
-                <IgbInput Type="text" Placeholder="Username">
-                    <IgbIcon slot="prefix" IconName="person"></IgbIcon>
+                <IgbInput DisplayType="@InputType.Text" Placeholder="Username">
+                    <IgbIcon slot="prefix" IconName="person" Collection="material" @ref="iconRef"></IgbIcon>
                 </IgbInput>
-                <IgbInput Type="password" Placeholder="Password">
-                    <IgbIcon slot="prefix" IconName="password"></IgbIcon>
+                <IgbInput DisplayType="@InputType.Password" Placeholder="Password">
+                    <IgbIcon slot="prefix" IconName="password" Collection="material"></IgbIcon>
                 </IgbInput>
-                <IgbButton Type="reset">
-                    <span>Sign In</span>
-                </IgbButton>
+                <IgbButton DisplayType="@ButtonBaseType.Reset">Sign In</IgbButton>
             </form>
         </div>
     </IgbCarouselSlide>
     <IgbCarouselSlide>
         <div>
-            <img src="assets/images/svg/carousel/Route.svg"/>
+            <img src="assets/images/svg/carousel/Route.svg">
             <form>
-                <IgbInput Type="text" Placeholder="Search">
-                    <IgbIcon slot="prefix" IconName="search"></IgbIcon>
+                <IgbInput DisplayType="@InputType.Text" Placeholder="Search">
+                    <IgbIcon slot="prefix" IconName="search" Collection="material"></IgbIcon>
                 </IgbInput>
-                <IgbButton Type="reset">
-                    <span>Search</span>
-                </IgbButton>
+                <IgbButton DisplayType="@ButtonBaseType.Reset">Search</IgbButton>
             </form>
         </div>
     </IgbCarouselSlide>
@@ -474,7 +470,7 @@ Setting `none` to the `AnimationType` property disables the animations.
 
 The demo below demonstrates the different types of animations, which the carousel supports.
 
-`sample="/layouts/carousel/animations", height="650", alt="{Platform} Carousel Animations Example"`
+`sample="/layouts/carousel/animations", height="700", alt="{Platform} Carousel Animations Example"`
 
 
 ## Navigation
@@ -589,23 +585,23 @@ Our carousel will look like this in the template:
 ```tsx
 const images = [
     {
-        src: "https://www.infragistics.com/angular-demos-lob/assets/images/carousel/WonderfulCoast.png",
+        src: "assets/images/carousel/WonderfulCoast.png",
         alt: "Wonderful Coast",
     },
     {
-        src: "https://www.infragistics.com/angular-demos-lob/assets/images/carousel/CulturalDip.png",
+        src: "assets/images/carousel/CulturalDip.png",
         alt: "Cultural Dip",
     },
     {
-        src: "https://www.infragistics.com/angular-demos-lob/assets/images/carousel/GoldenBeaches.png",
+        src: "assets/images/carousel/GoldenBeaches.png",
         alt: "Golden Beaches",
     },
     {
-        src: "https://www.infragistics.com/angular-demos-lob/assets/images/carousel/IslandOfHistory.png",
+        src: "assets/images/carousel/IslandOfHistory.png",
         alt: "Island Of History",
     },
     {
-        src: "https://www.infragistics.com/angular-demos-lob/assets/images/carousel/AmazingBridge.png",
+        src: "assets/images/carousel/AmazingBridge.png",
         alt: "Amazing Bridge",
     },
 ];
@@ -648,7 +644,48 @@ const images = [
 ```
 
 ```razor
+<IgbCarousel DisablePauseOnInteraction="true"
+             HideNavigation="true"
+             Interval="2000"
+             Vertical="true"
+             AnimationType="@CarouselAnimationType.Fade">
+    <IgbCarouselIndicator>
+        <img class="blurred" src="assets/images/carousel/WonderfulCoastThumb.png" width="50" height="60" />
+        <img slot="active" src="assets/images/carousel/WonderfulCoastThumb.png" width="50" height="60" />
+    </IgbCarouselIndicator>
+    <IgbCarouselIndicator>
+        <img class="blurred" src="assets/images/carousel/CulturalDipThumb.png" width="50" height="60" />
+        <img slot="active" src="assets/images/carousel/CulturalDipThumb.png" width="50" height="60" />
+    </IgbCarouselIndicator>
+    <IgbCarouselIndicator>
+        <img class="blurred" src="assets/images/carousel/GoldenBeachesThumb.png" width="50" height="60" />
+        <img slot="active" src="assets/images/carousel/GoldenBeachesThumb.png" width="50" height="60" />
+    </IgbCarouselIndicator>
+    <IgbCarouselIndicator>
+        <img class="blurred" src="assets/images/carousel/IslandOfHistoryThumb.png" width="50" height="60" />
+        <img slot="active" src="assets/images/carousel/IslandOfHistoryThumb.png" width="50" height="60" />
+    </IgbCarouselIndicator>
+    <IgbCarouselIndicator>
+        <img class="blurred" src="assets/images/carousel/AmazingBridgeThumb.png" width="50" height="60" />
+        <img slot="active" src="assets/images/carousel/AmazingBridgeThumb.png" width="50" height="60" />
+    </IgbCarouselIndicator>
 
+    <IgbCarouselSlide>
+        <img src="assets/images/carousel/WonderfulCoast.png" />
+    </IgbCarouselSlide>
+    <IgbCarouselSlide>
+        <img src="assets/images/carousel/CulturalDip.png" />
+    </IgbCarouselSlide>
+    <IgbCarouselSlide>
+        <img src="assets/images/carousel/GoldenBeaches.png" />
+    </IgbCarouselSlide>
+    <IgbCarouselSlide>
+        <img src="assets/images/carousel/IslandOfHistory.png" />
+    </IgbCarouselSlide>
+    <IgbCarouselSlide>
+        <img src="assets/images/carousel/AmazingBridge.png" />
+    </IgbCarouselSlide>
+</IgbCarousel>
 ```
 
 These configurations will have the following result:
