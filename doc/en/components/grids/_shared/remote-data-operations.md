@@ -536,43 +536,32 @@ export class RemotePagingService {
 
 ```ts
 export class RemotePagingService {
-  public remoteData: BehaviorSubject<any[]> = new BehaviorSubject([]);
-  public dataLength: BehaviorSubject<number> = new BehaviorSubject(0);
-  public url = 'https://www.igniteui.com/api/products';
+    public static CUSTOMERS_URL = `https://data-northwind.indigo.design/Customers/GetCustomersWithPage`;
+    constructor() {}
 
-  constructor() {}
-
-  public async getData(index?: number, perPage?: number): Promise<any> {
-    let qS = '';
-
-    if (index !== undefined && perPage !== undefined) {
-        qS = `?$skip=${index}&$top=${perPage}&$count=true`;
+    public static getDataWithPaging(pageIndex?: number, pageSize?: number) {
+        return fetch(RemotePagingService.buildUrl(RemotePagingService.CUSTOMERS_URL, pageIndex, pageSize))
+        .then((result) => result.json())
+        .catch((error) => console.error(error.message));
     }
-
-    try {
-        const response = await fetch(`${this.url + qS}`);
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
+    
+    private static buildUrl(baseUrl: string, pageIndex?: number, pageSize?: number) {
+        let qS = "";
+        if (baseUrl) {
+                qS += `${baseUrl}`;
         }
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error('Error fetching data:', error);
-        throw error; // Propagate the error further
-    }
-}
 
-public async getDataLength(): Promise<number> {
-    try {
-        const response = await fetch(this.url);
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
+        // Add pageIndex and size to the query string if they are defined
+        if (pageIndex !== undefined) {
+            qS += `?pageIndex=${pageIndex}`;
+            if (pageSize !== undefined) {
+                qS += `&size=${pageSize}`;
+            }
+        } else if (pageSize !== undefined) {
+            qS += `?perPage=${pageSize}`;
         }
-        const data = await response.json();
-        return data.length; // Assuming the length is directly accessible in the JSON response
-    } catch (error) {
-        console.error('Error fetching data length:', error);
-        throw error; // Propagate the error further
+
+        return `${qS}`;
     }
 }
 ```
@@ -598,39 +587,33 @@ As Blazor Server is already a remote instance, unlike the demos in the other pla
 
 <!-- React -->
 ```tsx
-const URL = `https://data-northwind.indigo.design/`;
+const CUSTOMERS_URL = `https://data-northwind.indigo.design/Customers/GetCustomersWithPage`;
 
 export class RemoteService {
 
-public getData(dataState: any, index?: number, perPage?: number): any {
-    return fetch(this.buildUrl(dataState, index, perPage))
+    public static getDataWithPaging(pageIndex?: number, pageSize?: number) {
+        return fetch(this.buildUrl(CUSTOMERS_URL, pageIndex, pageSize))
         .then((result) => result.json());
-}
-
-private buildUrl(dataState: any, index?: number, perPage?: number) {
-    let qS = "";
-    if (dataState) {
-            qS += `${dataState.key}`;
     }
 
-    // Add index and perPage to the query string if they are defined
-    if (index !== undefined) {
-        qS += `?index=${index}`;
-        if (perPage !== undefined) {
-            qS += `&perPage=${perPage}`;
+    private static buildUrl(baseUrl: string, pageIndex?: number, pageSize?: number) {
+        let qS = "";
+        if (baseUrl) {
+                qS += `${baseUrl}`;
         }
-    } else if (perPage !== undefined) {
-        qS += `?perPage=${perPage}`;
+
+        // Add pageIndex and size to the query string if they are defined
+        if (pageIndex !== undefined) {
+            qS += `?pageIndex=${pageIndex}`;
+            if (pageSize !== undefined) {
+                qS += `&size=${pageSize}`;
+            }
+        } else if (pageSize !== undefined) {
+            qS += `?perPage=${pageSize}`;
+        }
+
+        return `${qS}`;
     }
-
-    return `${URL}${qS}`;
-}
-
-public getDataLength(dataState: any): Promise<number> {
-    return fetch(this.buildUrl(dataState))
-        .then((result) => result.json())
-        .then((data) => data.length);
-}
 }
 ```
 <!-- end: React -->
@@ -680,42 +663,41 @@ export class RemotePagingService {
 
 <!-- WebComponents -->
 ```ts
-const URL = `https://data-northwind.indigo.design/`;
+export class RemotePagingService {
+    public static BASE_URL = 'https://data-northwind.indigo.design/';
+    public static CUSTOMERS_URL = `${RemotePagingService.BASE_URL}Customers/GetCustomersWithPage`;
+  
+    constructor() {}
 
-
-
-export function getData(dataState: any, index?: number, perPage?: number): any {
-    return fetch(buildUrl(dataState, index, perPage))
-        .then((result) => result.json());
-}
-
-function buildUrl(dataState: any, index?: number, perPage?: number) {
-    let qS = "";
-    if (dataState) {
-        if (dataState.rootLevel) {
-            qS += `${dataState.key}`;
-        } else {
-            qS += `${dataState.parentKey}/${dataState.parentID}/${dataState.key}`;
-        }
-    }
-
-    // Add index and perPage to the query string if they are defined
-    if (index !== undefined) {
-        qS += `?index=${index}`;
-        if (perPage !== undefined) {
-            qS += `&perPage=${perPage}`;
-        }
-    } else if (perPage !== undefined) {
-        qS += `?perPage=${perPage}`;
-    }
-
-    return `${URL}${qS}`;
-}
-
-export function getDataLength(dataState: any): Promise<number> {
-    return fetch(buildUrl(dataState))
+    public static getDataWithPaging(pageIndex?: number, pageSize?: number) {
+        return fetch(RemotePagingService.buildUrl(RemotePagingService.CUSTOMERS_URL, pageIndex, pageSize))
         .then((result) => result.json())
-        .then((data) => data.length);
+        .catch((error) => console.error(error.message));
+    }
+    
+    public static getHierarchyDataById(parentEntityName: string, parentId: string, childEntityName: string) {
+        return fetch(`${RemotePagingService.BASE_URL}${parentEntityName}/${parentId}/${childEntityName}`)
+        .then((result) => result.json());
+    }
+
+    private static buildUrl(baseUrl: string, pageIndex?: number, pageSize?: number) {
+        let qS = "";
+        if (baseUrl) {
+                qS += `${baseUrl}`;
+        }
+
+        // Add pageIndex and size to the query string if they are defined
+        if (pageIndex !== undefined) {
+            qS += `?pageIndex=${pageIndex}`;
+            if (pageSize !== undefined) {
+                qS += `&size=${pageSize}`;
+            }
+        } else if (pageSize !== undefined) {
+            qS += `?perPage=${pageSize}`;
+        }
+
+        return `${qS}`;
+    }
 }
 ```
 <!-- end: WebComponents -->
@@ -740,39 +722,39 @@ As Blazor Server is already a remote instance, unlike the demos in the other pla
 
 <!-- React -->
 ```tsx
-const URL = `https://data-northwind.indigo.design/`;
+const BASE_URL = `https://data-northwind.indigo.design/`;
+const CUSTOMERS_URL = `${BASE_URL}Customers/GetCustomersWithPage`;
 
 export class RemoteService {
 
-public getData(dataState: any, index?: number, perPage?: number): any {
-    return fetch(this.buildUrl(dataState, index, perPage))
+    public static getCustomersDataWithPaging(pageIndex?: number, pageSize?: number) {
+        return fetch(this.buildUrl(CUSTOMERS_URL, pageIndex, pageSize))
         .then((result) => result.json());
-}
-
-private buildUrl(dataState: any, index?: number, perPage?: number) {
-    let qS = "";
-    if (dataState) {
-            qS += `${dataState.key}`;
     }
 
-    // Add index and perPage to the query string if they are defined
-    if (index !== undefined) {
-        qS += `?index=${index}`;
-        if (perPage !== undefined) {
-            qS += `&perPage=${perPage}`;
+    public static getHierarchyDataById(parentEntityName: string, parentId: string, childEntityName: string) {
+        return fetch(`${BASE_URL}${parentEntityName}/${parentId}/${childEntityName}`)
+        .then((result) => result.json());
+    }
+
+    private static buildUrl(baseUrl: string, pageIndex?: number, pageSize?: number) {
+        let qS = "";
+        if (baseUrl) {
+                qS += `${baseUrl}`;
         }
-    } else if (perPage !== undefined) {
-        qS += `?perPage=${perPage}`;
+
+        // Add pageIndex and size to the query string if they are defined
+        if (pageIndex !== undefined) {
+            qS += `?pageIndex=${pageIndex}`;
+            if (pageSize !== undefined) {
+                qS += `&size=${pageSize}`;
+            }
+        } else if (pageSize !== undefined) {
+            qS += `?perPage=${pageSize}`;
+        }
+
+        return `${qS}`;
     }
-
-    return `${URL}${qS}`;
-}
-
-public getDataLength(dataState: any): Promise<number> {
-    return fetch(this.buildUrl(dataState))
-        .then((result) => result.json())
-        .then((data) => data.length);
-}
 }
 ```
 
@@ -812,30 +794,59 @@ export class RemotePagingGridSample implements OnInit, AfterViewInit, OnDestroy 
 <!-- WebComponents -->
 First we need to bind to the relevant events so when we change pages and the amount of records shown per page, the remote service will fetch the correct amount of data
 ```ts
-constructor() {
-    this._bind = () => {
-        this.pager.addEventListener("perPageChange", ()=> {
-        this.paginate(this.page);
-       })
-       this.pager.addEventListener("pageChange", ((args: CustomEvent<any>) => {
-        this.paginate(args.detail);}) as EventListener);
-    }
-    this._bind();
-}
-``` 
-We also need to set the method for changing pages:
-```ts 
-public paginate(page: number) {
-        this.page = page;
-        const skip = this.page * this.perPage;
-        const top = this.perPage;
-    
-        this.remotePagingService.getData(skip, top).then((data)=> {
-          this.data = data; // Assign received data to this.data
-          this.grid.isLoading = false;
-          this.updateUI(); // Update the UI after receiving data
+  constructor() {
+      this.grid = document.getElementById('grid') as IgcGridComponent;
+      this.pager = document.getElementById('paginator') as IgcPaginatorComponent;
+      
+      this._bind = () => {
+        window.addEventListener("load", () => {
+          this.loadData(this.page,this.perPage);
         });
+
+        this.pager.addEventListener("perPageChange", ((args: CustomEvent<any>) => {
+          this.perPage = args.detail;
+          this.loadData(this.page, this.perPage);
+        }) as EventListener);
+
+        this.pager.addEventListener("pageChange", ((args: CustomEvent<any>) => {
+          this.page = args.detail;
+          this.loadData(this.page, this.perPage);
+        }) as EventListener);
+      }
+
+      this._bind();
+  }
+``` 
+We also need to set the method for loading data and update the UI accordingly:
+```ts 
+  private loadData(pageIndex?: number, pageSize?: number): void {
+    this.grid.isLoading = true;
+    
+    RemotePagingService.getDataWithPaging(pageIndex,pageSize)
+    .then((response: CustomersWithPageResponseModel) => {
+      this.totalRecordsCount = response.totalRecordsCount;
+      this.pager.perPage = pageSize;
+      this.pager.totalRecords = this.totalRecordsCount;
+      this.page = response.pageNumber;
+      this.data = response.items;
+      this.grid.isLoading = false;
+      this.updateUI(); // Update the UI after receiving data
+    })
+    .catch((error) => {
+      console.error(error.message);
+      // Stop loading even if error occurs. Prevents endless loading
+      this.grid.isLoading = false;
+      this.updateUI();
+    })
+  }
+
+    private updateUI(): void {
+    if (this.grid && this.data) { // Check if grid and data are available
+        this.grid.data = this.data;
+    }
+  }
 ```
+
 
 For further reference, please check the demo bellow:
 
@@ -907,27 +918,66 @@ For further reference please check the full demo bellow:
 
 <!-- React -->
 ```tsx
-<IgrPaginator 
-          perPage="15"
+     <IgrGrid
+          ref={grid}
+          data={data}
+          pagingMode={GridPagingMode.Remote}
+          primaryKey="customerId"
+          height="600px"
+          isLoading={isLoading}
+        >
+        <IgrPaginator 
+          perPage={perPage}
           ref={paginator}
-          pageChange={(evt: { page: number }) => paginate(evt.page)}
-          perPageChange={() => paginate(0)}>
-</IgrPaginator>
+          pageChange={onPageNumberChange}
+          perPageChange={onPageSizeChange}>
+        </IgrPaginator>
+          <IgrColumn field="customerId" hidden={true}></IgrColumn>
+          <IgrColumn field="companyName" header="Company Name"></IgrColumn>
+          <IgrColumn field="contactName" header="Contact Name"></IgrColumn>
+          <IgrColumn field="contactTitle" header="Contact Title"></IgrColumn>
+          <IgrColumn field="address.country" header="Country"></IgrColumn>
+          <IgrColumn field="address.phone" header="Phone"></IgrColumn>
+        </IgrGrid>
 ```
 
-then set up the method:
+then set up the state:
 ```tsx
-  function paginate(pageArgs: number) {
-    page = pageArgs;
-    const skip = page * perPage;
-    const top = perPage;
+  const grid = useRef<IgrGrid>(null);
+  const paginator = useRef<IgrPaginator>(null);
+  const [data, setData] = useState([]);
+  const [page, setPage] = useState(0);
+  const [perPage, setPerPage] = useState(15);
+  const [isLoading, setIsLoading] = useState(true);
 
-    remoteServiceInstance.getData({ key: 'Customers' }, skip, top).then((incData:any)=> {
-      data = incData; 
-      grid.current.isLoading = false;
-      grid.current.markForCheck();// Update the UI after receiving data
-    });
+  useEffect(() => {
+    loadGridData(page, perPage);
+  }, [page, perPage]);
 ```
+
+and finally set up the method for loading the data:
+```tsx
+  function loadGridData(pageIndex?: number, pageSize?: number) {
+    // Set loading state
+    setIsLoading(true);
+
+    // Fetch data
+    RemoteService.getDataWithPaging(pageIndex, pageSize)
+      .then((response: CustomersWithPageResponseModel) => {
+        setData(response.items);
+        // Stop loading when data is retrieved
+        setIsLoading(false);
+        paginator.current.totalRecords = response.totalRecordsCount;
+      })
+      .catch((error) => {
+        console.error(error.message);
+        setData([]);
+        // Stop loading even if error occurs. Prevents endless loading
+        setIsLoading(false);
+      })
+  }
+```
+
 For further reference please check the full sample bellow:
 
 ### Grid Remote Paging Demo  
@@ -969,29 +1019,101 @@ export class HGridRemotePagingSampleComponent implements OnInit, AfterViewInit, 
 <!-- WebComponents -->
 First we need to bind to the relevant events so when we change pages and the amount of records shown per page, the remote service will fetch the correct amount of data
 ```ts
-constructor() {
-    this._bind = () => {
-        this.pager.addEventListener("perPageChange", ()=> {
-        this.paginate(this.page);
-       })
-       this.pager.addEventListener("pageChange", ((args: CustomEvent<any>) => {
-        this.paginate(args.detail);}) as EventListener);
-    }
-    this._bind();
-}
-``` 
-We also need to set the method for changing pages:
-```ts 
-public paginate(page: number) {
-        this.page = page;
-        const skip = this.page * this.perPage;
-        const top = this.perPage;
+    constructor() {
+        this.hierarchicalGrid = document.getElementById("hGrid") as IgcHierarchicalGridComponent;
+        this.pager = document.getElementById('paginator') as IgcPaginatorComponent;
+        const ordersRowIsland = document.getElementById("ordersRowIsland") as IgcRowIslandComponent;
+        const orderDetailsRowIsland = document.getElementById("orderDetailsRowIsland") as IgcRowIslandComponent;
+
+        ordersRowIsland.paginatorTemplate = this.webHierarchicalGridPaginatorTemplate;
+        orderDetailsRowIsland.paginatorTemplate = this.webHierarchicalGridPaginatorTemplate;
+
+        this._bind = () => {
+            window.addEventListener("load", () => {
+                this.pager.perPage = this._perPage;
+                this.loadCustomersData(this.page,this.perPage);
+            });
+
+            this.pager.addEventListener("perPageChange", ((args: CustomEvent<any>) => {
+              this.perPage = args.detail;
+              this.loadCustomersData(this.page, this.perPage);
+            }) as EventListener);
+
+            this.pager.addEventListener("pageChange", ((args: CustomEvent<any>) => {
+              this.page = args.detail;
+              this.loadCustomersData(this.page, this.perPage);
+            }) as EventListener);
+
+            ordersRowIsland.addEventListener("gridCreated", (event: any) => {
+                this.gridCreated(event, "Customers");
+            });
     
-        this.remotePagingService.getData(skip, top).then((data)=> {
-          this.data = data; // Assign received data to this.data
-          this.grid.isLoading = false;
+            orderDetailsRowIsland.addEventListener("gridCreated", (event: any) => {
+                this.gridCreated(event, "Orders");
+            });
+        }
+    
+        this._bind();
+    }
+``` 
+We also need to set the method for loading data and update the UI accordingly:
+```ts 
+  private updateUI(): void {
+        if (this.hierarchicalGrid && this.data) { // Check if grid and data are available
+            this.hierarchicalGrid.data = this.data;
+        }
+    }
+
+    private loadCustomersData(pageIndex?: number, pageSize?: number): void {
+        this.hierarchicalGrid.isLoading = true;
+        
+        RemotePagingService.getDataWithPaging(pageIndex,pageSize)
+        .then((response: CustomersWithPageResponseModel) => {
+          this.totalRecordsCount = response.totalRecordsCount;
+          this.pager.perPage = pageSize;
+          this.pager.totalRecords = this.totalRecordsCount;
+          this.page = response.pageNumber;
+          this.data = response.items;
+          this.hierarchicalGrid.isLoading = false;
           this.updateUI(); // Update the UI after receiving data
+        })
+        .catch((error) => {
+          console.error(error.message);
+          this.hierarchicalGrid.data = [];
+          this.hierarchicalGrid.isLoading = false;
+          this.updateUI();
+        })
+      }
+```
+
+And finally we need to handle the behaviour behind the actual hierarchy levels of the Hierarchical Gird
+```ts
+    public gridCreated(event: CustomEvent<IgcGridCreatedEventArgs>, parentKey: string) {
+        const context = event.detail;
+        const parentId: string = context.parentID;
+        const childDataKey: string = context.owner.childDataKey;
+
+        context.grid.isLoading = true;
+        RemotePagingService.getHierarchyDataById(parentKey, parentId, childDataKey)
+        .then((data: any) => {
+          context.grid.data = data;
+          context.grid.isLoading = false;
+          context.grid.markForCheck();
+        })
+        .catch((error) => {
+          console.error(error.message);
+          context.grid.data = [];
+          context.grid.isLoading = false;
+          context.grid.markForCheck();
         });
+    }
+
+    public webHierarchicalGridPaginatorTemplate = () => {
+       return html `
+        <igc-paginator 
+            id="islandPaginator">
+        </igc-paginator>`
+    }
 ```
 
 For further reference, please check the demo bellow:
@@ -1064,31 +1186,130 @@ For further reference please check the full demo bellow:
 
 <!-- React -->
 ```tsx
-<IgrPaginator 
-          perPage="15"
-          ref={paginator}
-          pageChange={(evt: { page: number }) => paginate(evt.page)}
-          perPageChange={() => paginate(0)}>
-</IgrPaginator>
-```
-then set up the method:
-```tsx
-  function paginate(pageArgs: number) {
-    page = pageArgs;
-    const skip = page * perPage;
-    const top = perPage;
+  <IgrHierarchicalGrid
+          ref={hierarchicalGrid}
+          data={data}
+          pagingMode={GridPagingMode.Remote}
+          primaryKey="customerId"
+          height="600px"
+          isLoading={isLoading}
+        >
+          <IgrPaginator 
+            perPage={perPage}
+            ref={paginator}
+            pageChange={onPageNumberChange}
+            perPageChange={onPageSizeChange}>
+          </IgrPaginator>
+          <IgrColumn field="customerId" hidden={true}></IgrColumn>
+          <IgrColumn field="companyName" header="Company Name"></IgrColumn>
+          <IgrColumn field="contactName" header="Contact Name"></IgrColumn>
+          <IgrColumn field="contactTitle" header="Contact Title"></IgrColumn>
+          <IgrColumn field="address.country" header="Country"></IgrColumn>
+          <IgrColumn field="address.phone" header="Phone"></IgrColumn>
 
-    remoteServiceInstance.getData({ key: 'Customers' }, skip, top).then((incData:any)=> {
-      data = incData; 
-      grid.current.isLoading = false;
-      grid.current.markForCheck();// Update the UI after receiving data
-    });
+          <IgrRowIsland
+            childDataKey="Orders"
+            primaryKey="orderId"
+            gridCreated={(
+              rowIsland: IgrRowIsland,
+              e: IgrGridCreatedEventArgs
+            ) => gridCreated(rowIsland, e, "Customers")}
+          >
+            <IgrColumn field="orderId" hidden={true}></IgrColumn>
+            <IgrColumn field="shipAddress.country" header="Ship Country"></IgrColumn>
+            <IgrColumn field="shipAddress.city" header="Ship City"></IgrColumn>
+            <IgrColumn field="shipAddress.street" header="Ship Address"></IgrColumn>
+            <IgrColumn field="orderDate" header="Order Date" dataType="date"></IgrColumn>
+
+            <IgrRowIsland
+              childDataKey="Details"
+              primaryKey="productId"
+              gridCreated={(
+                rowIsland: IgrRowIsland,
+                e: IgrGridCreatedEventArgs
+              ) => gridCreated(rowIsland, e, "Orders")}
+            >
+              <IgrColumn field="productId" hidden={true}></IgrColumn>
+              <IgrColumn field="quantity" header="Quantity"></IgrColumn>
+              <IgrColumn field="unitPrice" header="Unit Price"></IgrColumn>
+              <IgrColumn field="discount" header="Discount"></IgrColumn>
+            </IgrRowIsland>
+          </IgrRowIsland>
+    </IgrHierarchicalGrid>
 ```
+then set up the state:
+```tsx
+  const hierarchicalGrid = useRef<IgrHierarchicalGrid>(null);
+  const paginator = useRef<IgrPaginator>(null);
+
+  const [data, setData] = useState([]);
+  const [page, setPage] = useState(0);
+  const [perPage, setPerPage] = useState(15);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    loadGridData(page, perPage);
+  }, [page, perPage]);
+```
+
+next set up the method for loading the data:
+```tsx
+  function loadGridData(pageIndex?: number, pageSize?: number) {
+    // Set loading state
+    setIsLoading(true);
+
+    // Fetch data
+    RemoteService.getCustomersDataWithPaging(pageIndex, pageSize)
+      .then((response: CustomersWithPageResponseModel) => {
+        setData(response.items);
+        // Stop loading when data is retrieved
+        setIsLoading(false);
+        paginator.current.totalRecords = response.totalRecordsCount;
+      })
+      .catch((error) => {
+        console.error(error.message);
+        setData([]);
+        // Stop loading even if error occurs. Prevents endless loading
+        setIsLoading(false);
+      })
+  }
+```
+<!-- end: React -->
+
+<!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- React -->
+
+and finally set up the behaviour for the RowIslands:
+<!-- ComponentStart: HierarchicalGrid -->
+```tsx
+  function gridCreated(rowIsland: IgrRowIsland, event: IgrGridCreatedEventArgs, parentKey: string) {
+    const context = event.detail;
+    const parentId: string = context.parentID;
+    const childDataKey: string = rowIsland.childDataKey;
+
+    RemoteService.getHierarchyDataById(parentKey, parentId, childDataKey)
+      .then((data: any) => {
+        context.grid.data = data;
+        context.grid.isLoading = false;
+        context.grid.markForCheck();
+      })
+      .catch((error) => {
+        console.error(error.message);
+        context.grid.data = [];
+        context.grid.isLoading = false;
+        context.grid.markForCheck();
+      })
+  }
+```
+
+
 For further reference please check the full sample bellow:
 
 ### Grid Remote Paging Demo  
 
 `sample="/{ComponentSample}/remote-paging-hgrid", height="550", alt="{Platform} {ComponentTitle} Hierarchical Grid Remote Paging Example"`
+<!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- end: React -->
 
