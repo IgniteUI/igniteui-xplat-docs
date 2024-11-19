@@ -17,6 +17,9 @@
     "igr-card-header-module.ts",
     "igr-card-media-module.ts",
     "igr-card-module.ts",
+    "igr-carousel-module.ts",
+    "igr-carousel-indicator-module.ts",
+    "igr-carousel-slide-module.ts",
     "igr-checkbox-base-module.ts",
     "igr-checkbox-module.ts",
     "igr-chip-module.ts",
@@ -1793,6 +1796,44 @@
     "names":[{"platform": "React","fileName": "igr-card.ts","mappedName": "IgrCard"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "elevated"}], "originalName": "Elevated"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "Carousel",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-carousel.ts","mappedName": "IgrCarousel"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "boolean","mappedName": "disableLoop"}], "originalName": "DisableLoop"},
+      {"names":[{"platform": "React", "mappedType": "boolean","mappedName": "hideIndicators"}], "originalName": "HideIndicators"},
+      {"names":[{"platform": "React", "mappedType": "boolean","mappedName": "hideNavigation"}], "originalName": "HideNavigation"},
+      {"names":[{"platform": "React", "mappedType": "boolean","mappedName": "disablePauseOnInteraction"}], "originalName": "DisablePauseOnInteraction"},
+      {"names":[{"platform": "React", "mappedType": "boolean","mappedName": "vertical"}], "originalName": "Vertical"},
+      {"names":[{"platform": "React", "mappedType": "number","mappedName": "interval"}], "originalName": "Interval"},
+      {"names":[{"platform": "React", "mappedType": "number","mappedName": "maximumIndicatorsCount"}], "originalName": "MaximumIndicatorsCount"},
+      {"names":[{"platform": "React", "mappedType": "CarouselIndicatorsOrientation","mappedName": "indicatorsOrientation"}], "originalName": "IndicatorsOrientation"},
+      {"names":[{"platform": "React", "mappedType": "CarouselAnimationType","mappedName": "animationType"}], "originalName": "AnimationType"} ]
+  },
+  {
+    "originalName": "Slide",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-carousel-slide.ts","mappedName": "IgrCarouselSlide"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "active"}], "originalName": "Active"} ]
+  },
+  {
+    "originalName": "Indicator",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-carousel-indicator.ts","mappedName": "IgrCarouselIndicator"}],
+    "members":[
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
