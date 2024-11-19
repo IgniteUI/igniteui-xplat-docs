@@ -10,7 +10,9 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
-#### {PackageCommon}
+## **{PackageVerChanges-24-2-NOV}**
+
+### General
 - New [Carousel](layouts/carousel.md) component.
 - `Input`
   - Changed `change` event argument type from `ComponentDataValueChangedEventArgs` to `ComponentValueChangedEventArgs`
