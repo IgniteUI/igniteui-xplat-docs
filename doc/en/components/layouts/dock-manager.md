@@ -88,7 +88,7 @@ The Dock Manager defines several pane types:
 * `TabGroupPane`
 * `DocumentHost`
 
-Each type of pane has a `Size` property. Depending on the parent orientation the size may affect either the width or the height of the pane. The size of a pane is relative to the sizes of its sibling panes and defaults to 100. If you have two sibling panes, where the first one has size set to 200 and the second one - size set to 100, the first will be twice the size of the second one. If the absolute size of their parent is 900px, they will be sized to 600px and 300px respectively.
+Each type of pane has a `Size` property. Depending on the parent orientation the size may affect either the width or the height of the pane. By default, the size of a pane is relative to the sizes of its sibling panes and defaults to 100. If you have two sibling panes, where the first one has size set to 200 and the second one - size set to 100, the first will be twice the size of the second one. If the absolute size of their parent is 900px, they will be sized to 600px and 300px respectively. If you want to show panes in pixels instead of relative size, you should set the `useFixedSize` of the parent split pane. For more information on this refer to [Split Panes Fixed Size Mode](dock-manager-customization.md#split-panes-fixed-size-mode) topic.
 
 The end-user can perform the following actions to customize the layout at runtime:
 * Pin/unpin a pane

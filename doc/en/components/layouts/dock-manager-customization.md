@@ -98,6 +98,64 @@ Try it in the example below:
 
 `sample="/layouts/dock-manager/contained-in-boundaries", height="600", alt="{Platform} Dock Manager Contained in Boundaries Example"`
 
+## Split Panes Fixed Size Mode
+
+By default, the size of a pane is relative to the sizes of its sibling panes and defaults to 100. If you have two sibling panes, where the first one has size set to 400 and the second one - size set to 200, the first will be twice the size of the second one.
+
+If you want to show panes in pixels instead of relative size, you should set the `useFixedSize` of the parent split pane. When this property is set to **true** all children are sized in pixels, based on their `size` property. With that modification, the first pane will span across 400 pixels and the second one - 200 pixels.
+
+```md
+> [!Note]
+> If the sum of the width/heights (depending on the split pane orientation) of the sibling panes is more than their parent, a scrollbar will appear and the split pane will become scrollable.
+```
+
+```ts
+const splitPaneRelativeSize: IgcSplitPane = {
+    type: IgcDockManagerPaneType.splitPane,
+    orientation: IgcSplitPaneOrientation.horizontal,
+    panes: [
+        {
+            type: IgcDockManagerPaneType.contentPane,
+            contentId: 'content1',
+            header: 'Pane 1',
+            size: 400 // Size will be relative to siblings
+        },
+        {
+            type: IgcDockManagerPaneType.contentPane,
+            contentId: 'content2',
+            header: 'Pane 2',
+            size: 200 // Size will be relative to siblings
+        }
+    ]
+}
+
+const splitPaneFixedSize: IgcSplitPane = {
+    type: IgcDockManagerPaneType.splitPane,
+    orientation: IgcSplitPaneOrientation.horizontal,
+    useFixedSize: true,
+    panes: [
+        {
+            type: IgcDockManagerPaneType.contentPane,
+            contentId: 'content3',
+            header: 'Pane 3',
+            size: 400 // Size will be applied in pixels
+        },
+        {
+            type: IgcDockManagerPaneType.contentPane,
+            contentId: 'content4',
+            header: 'Pane 4',
+            size: 200 // Size will be applied in pixels
+        }
+    ]
+}
+```
+
+Please note that when you dock a pane inside a split pane that has `useFixedSize` set to **true** the docked pane will then have the same width/height (depending on the split pane orientation) as the floating pane.
+
+Try it for yourself in the sample below:
+
+`sample="/layouts/dock-manager/split-pane-fixed-size", height="600", alt="{Platform} Dock Manager Split Pane Fixed Size Example"`
+
 ## API References
 
  - `DockManager`
