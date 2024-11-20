@@ -2,7 +2,7 @@
 title: {Platform} NavDrawer | Infragistics
 _description: Infragistics' {Platform} NavDrawer provides side navigation that can be expanded or collapsed within the content
 _keywords: {Platform} navbar, {ProductName}, Infragistics
-mentionedTypes: ['NavDrawer']
+mentionedTypes: ["NavDrawer"]
 ---
 
 # {Platform} Navigation Drawer Overview
@@ -15,8 +15,6 @@ The {ProductName} Navigation Drawer provides side navigation that can be expande
 This sample demonstrates how to create `NavDrawer` component.
 
 `sample="/menus/nav-drawer/add-drawer-items", height="300", alt="{Platform} Navigation Drawer Items Example"`
-
-
 
 ## Usage
 
@@ -76,6 +74,8 @@ import { defineComponents, IgcNavDrawerComponent } from 'igniteui-webcomponents'
 
 defineComponents(IgcNavDrawerComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 ## Adding Navigation Drawer Items
 
@@ -427,6 +427,10 @@ With the mini variant, the Navigation Drawer changes its width instead of closin
         </IgrNavDrawerItem>
     </div>
 </IgrNavDrawer>
+
+<IgrButton clicked={this.onButtonClick}>
+    <span>Toggle</span>
+</IgrButton>
 ```
 
 And here's the result:

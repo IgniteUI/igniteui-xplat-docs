@@ -89,18 +89,18 @@
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "radiusFactor"}], "originalName": "RadiusFactor"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "startAngle"}], "originalName": "StartAngle"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "valueMemberPath"}], "originalName": "ValueMemberPath"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "fill"}], "originalName": "leaderLineStyle.fill"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "leaderLineStyle.opacity"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "leaderLineStyle.stroke"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "leaderLineStyle.strokeThickness"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "fill"}], "originalName": "othersCategoryStyle.fill"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "othersCategoryStyle.opacity"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "othersCategoryStyle.stroke"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "othersCategoryStyle.strokeThickness"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "fill"}], "originalName": "selectedStyle.fill"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "selectedStyle.opacity"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "selectedStyle.stroke"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "selectedStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "string",  "mappedName": "fill"}], "originalName": "leaderLineStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "leaderLineStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "leaderLineStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "leaderLineStyle.strokeThickness"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "string",  "mappedName": "fill"}], "originalName": "othersCategoryStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "othersCategoryStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "othersCategoryStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "othersCategoryStyle.strokeThickness"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "string",  "mappedName": "fill"}], "originalName": "selectedStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "selectedStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "selectedStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "selectedStyle.strokeThickness"} ]
   },
   {
     "originalName": "XamDoughnutChart",
@@ -127,9 +127,9 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "notifySetItem"}], "originalName": "NotifySetItem"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "pixelScalingRatio"}], "originalName": "PixelScalingRatio"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "provideContainer"}], "originalName": "ProvideContainer"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "fill"}], "originalName": "selectedStyle.fill"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "selectedStyle.opacity"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "selectedStyle.stroke"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "selectedStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "string",  "mappedName": "fill"}], "originalName": "selectedStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "selectedStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "selectedStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "selectedStyle.strokeThickness"} ]
   }]
 }

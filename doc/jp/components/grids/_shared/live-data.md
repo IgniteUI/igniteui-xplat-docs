@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} のライブ データ更新
 
-{Platform} {ComponentTitle} の {ProductName} ライブ データ更新機能は、グリッド内に表示されるデータのリアルタイムまたはほぼリアルタイムの更新を可能にするために使用されます。 これは、株式市場のトラッカー、ライブ スポーツ スコア、IoT (Internet of Things) ダッシュボードなど、データが常に変化するアプリで非常に役立ちます。`{ComponentName}` は、ユーザーの操作に応答し続けている間、1 秒あたり数千の更新を処理できます。
+{Platform} {ComponentTitle} の {ProductName} ライブ データ更新機能は、グリッド内に表示されるデータのリアルタイムまたはほぼリアルタイムの更新を可能にするために使用されます。これは、株式市場のトラッカー、ライブ スポーツ スコア、IoT (Internet of Things) ダッシュボードなど、データが常に変化するアプリで非常に役立ちます。`{ComponentName}` は、ユーザーの操作に応答し続けている間、1 秒あたり数千の更新を処理できます。
 
 
 ## {Platform} ライブ データ更新の例
@@ -213,7 +213,7 @@ this.hubConnection.invoke('updateparameters', frequency, volume, live, updateAll
 * `Cell`
 
 ## その他のリソース
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
@@ -223,7 +223,7 @@ this.hubConnection.invoke('updateparameters', frequency, volume, live, updateAll
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

@@ -71,7 +71,7 @@ public exportButtonHandler() {
 }
 ```
 
-上記をすべて行うと、{ComponentTitle} コンポーネントとその下にボタンを確認できます。ボタンを押すととエクスポート処理をトリガーし、ブラウザーで 「ExportedDataFile.xlsx」 ファイルをダウンロードします。このファイルは MS Excel 形式の `{ComponentName}`  コンポーネントのデータを含みます。
+上記をすべて行うと、{ComponentTitle} コンポーネントとその下にボタンを確認できます。ボタンを押すととエクスポート処理をトリガーし、ブラウザーで 「ExportedDataFile.xlsx」 ファイルをダウンロードします。このファイルは MS Excel 形式の `{ComponentName}` コンポーネントのデータを含みます。
 <!-- end: Angular -->
 
 <!-- Angular -->
@@ -124,6 +124,7 @@ public exportButtonHandler() {
 <!-- end: Angular -->
 
 <!-- WebComponents -->
+<!-- ComponentStart: Grid, TreeGrid -->
 ```ts
 constructor() {
   var gridToolbarExporter1 = document.getElementById('gridToolbarExporter1') as IgcGridToolbarExporterComponent;
@@ -134,8 +135,26 @@ public webGridExportEventFreezeHeaders(args: any): void {
   args.detail.options.freezeHeaders = true;
 }
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
 <!-- end: WebComponents -->
 
+<!-- WebComponents -->
+<!-- ComponentStart: HierarchicalGrid -->
+```ts
+constructor() {
+  var hGridToolbarExporter = document.getElementById('hGridToolbarExporter') as IgcGridToolbarExporterComponent;
+  hGridToolbarExporter.addEventListener("exportStarted", this.webGridExportEventFreezeHeaders);
+}
+
+public webGridExportEventFreezeHeaders(args: CustomEvent<IgcExporterEvent>): void {
+  args.detail.options.freezeHeaders = true;
+}
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: WebComponents -->
+
+<!-- React -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 function exportEventFreezeHeaders(grid: IgrGridBaseDirective, args: IgrExporterEvent) {
     args.detail.options.freezeHeaders = true;
@@ -147,27 +166,46 @@ function exportEventFreezeHeaders(grid: IgrGridBaseDirective, args: IgrExporterE
   </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: React -->
 
+<!-- ComponentStart: Grid, TreeGrid -->
 ```razor
- <IgbGrid>
+ <{ComponentSelector}>
     <IgbGridToolbar>
       <IgbGridToolbarActions>
         <IgbGridToolbarExporter
-          ExportExcel="true" ExportStarted="WebGridExportEventMultiColumnHeaders">
+          ExportExcel="true" ExportStartedScript="WebGridExportEventFreezeHeaders">
         </IgbGridToolbarExporter>
       </IgbGridToolbarActions>
     </IgbGridToolbar>
- </IgbGrid>
+ </{ComponentSelector}>
 
-@code {
-
-  public void WebGridExportEventMultiColumnHeaders(IgbExporterEventEventArgs args)
-  {
-      bool exportMultiHeaders = (bool)exportHeaders.GetCurrentPrimitiveValue();
-      args.Detail.Options.FreezeHeaders = true;
-  }
-}
+igRegisterScript("WebGridExportEventFreezeHeaders", (ev) => {
+    ev.detail.options.freezeHeaders = false;
+}, false);
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
+
+<!-- Blazor -->
+<!-- ComponentStart: HierarchicalGrid -->
+```razor
+ <{ComponentSelector}>
+    <IgbGridToolbar>
+      <IgbGridToolbarActions>
+        <IgbGridToolbarExporter
+          ExportExcel="true" ExportStartedScript="WebHierarchicalGridExportEventFreezeHeaders">
+        </IgbGridToolbarExporter>
+      </IgbGridToolbarActions>
+    </IgbGridToolbar>
+ </{ComponentSelector}>
+
+igRegisterScript("WebHierarchicalGridExportEventFreezeHeaders", (ev) => {
+    ev.detail.options.freezeHeaders = false;
+}, false);
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: Blazor -->
 
 <!-- Angular -->
 ## エクスポートするコンテンツのカスタマイズ
@@ -204,6 +242,7 @@ this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('
 |--- |--- |
 |階層レベル|Excel エクスポーター サービスは、最大 8 レベルの階層を作成できます。|
 |ワークシートの最大サイズ|Excel でサポートされているワークシートの最大サイズは、1,048,576 行 x 16,384 列です。|
+|セルのスタイル設定|Excel エクスポーター サービスは、セル コンポーネントに適用されたカスタム スタイルのエクスポートをサポートしていません。このようなシナリオでは、[Excel ライブラリ](../../excel-library.md)を使用することをお勧めします。|
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -216,15 +255,9 @@ this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('
 
 ## API リファレンス
 
-以下は、その他の Excel Exporter サービスの API です。
-
 * `ExcelExporterService`
 * `ExcelExporterOptions`
-
-使用したその他のコンポーネント:
-
-* [{ComponentTitle} API]({environment:dvDemosBaseUrl}/classes/{ComponentTitle}.md)
-* [{ComponentTitle} スタイル]({environment:sassApiUrl}/index.html#function-grid-theme)
+* `{ComponentName}`
 
 ## その他のリソース
 

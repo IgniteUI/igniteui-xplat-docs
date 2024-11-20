@@ -2,12 +2,12 @@
 title: {Platform} マップ | データ可視化ツール | 散布図比例シリーズ | データ バインディング | インフラジスティックス
 _description: インフラジスティックスの {Platform} マップの散布図比例シリーズを使用して、アプリケーション内のデータで指定された地理的な地点のマーカーをプロットします。{ProductName} マップ シーリズについての詳細を表示します。
 _keywords: {Platform} map, scatter proportional series, {ProductName}, Infragistics, {Platform} マップ, 散布図比例シリーズ, インフラジスティックス
-mentionedTypes: ['XamGeographicMap', 'Series']
+mentionedTypes: ["XamGeographicMap", "Series"]
 _language: ja
 ---
 # {Platform} 地理バブル マップ
 
-{Platform} マップ コンポーネントでは、`GeographicProportionalSymbolSeries` を使用して、アプリケーションのデータで指定された地理的位置にバブルまたは相対マーカーをプロットできます。このマップ シリーズは、百貨店、倉庫、オフィスなど、特定のビジネス ケースに応じたポイントを強調表示する場合に役立ちます。また、動的な車両追跡のためにフリート管理システムまたは GPS システムでこの地図シリーズを使用することができます。
+{Platform} マップ コンポーネントでは、`GeographicProportionalSymbolSeries` を使用して、アプリケーションのデータで指定された地理的位置にバブルまたは相対マーカーをプロットできます。このマップ シリーズは、百貨店、倉庫、オフィスなど、特定のビジネス ケースに応じたポイントをハイライト表示する場合に役立ちます。また、動的な車両追跡のためにフリート管理システムまたは GPS システムでこの地図シリーズを使用することができます。
 
 ## {Platform} 地理バブル マップの例
 

@@ -2,7 +2,7 @@
 title: {Platform} Checkbox コンポーネント | {ProductName}
 _description: {Platform} Checkbox コンポーネントを使用してチェックボックスを追加し、エンドユーザーのチェック状態、チェックなし状態、または不確定状態を有効にする方法を紹介します。
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Checkbox components, {Platform} Checkbox controls, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Checkbox コンポーネント, {Platform} Checkbox コントロール
-mentionedTypes: ['Checkbox', 'Form']
+mentionedTypes: ["Checkbox", "Form"]
 _language: ja
 ---
 
@@ -13,7 +13,6 @@ _language: ja
 ## Checkbox の例
 
 `sample="/inputs/checkbox/overview", height="100", alt="{Platform} Checkbox の例"`
-
 
 <div class="divider--half"></div>
 
@@ -36,6 +35,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcCheckboxComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
 <!-- end: WebComponents -->
 
 <!-- React -->

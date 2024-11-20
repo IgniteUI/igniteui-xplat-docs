@@ -2,7 +2,7 @@
 title: Radio と Radio Group
 _description: {ProductName} Radio Button と Radio Group コントロールを使用すると、開発者はユーザーが選択できるオプションのリストをシームレスに表示して、テンプレート駆動型のリアクティブ フォームでより優れた UI を実現できます。
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Radio Button components, {Platform} Radio Button controls, {Platform} Radio Group component, {Platform} Radio Group control, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Radio Button コンポーネント, {Platform} Radio Button コントロール
-mentionedTypes: ['Radio', 'RadioGroup', 'Form']
+mentionedTypes: ["Radio", "RadioGroup", "Form"]
 _language: ja
 ---
 
@@ -35,6 +35,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -78,15 +81,6 @@ builder.Services.AddIgniteUIBlazor(
 
 `Radio` の使用を開始する最も簡単な方法は次のとおりです:
 
-```tsx
-<IgrRadioGroup>
-  <IgrRadio value="apple"><span>Apple</span></IgrRadio>
-  <IgrRadio value="banana"><span>Banana</span></IgrRadio>
-  <IgrRadio value="Mango"><span>Mango</span></IgrRadio>
-  <IgrRadio value="orange"><span>Orange</span></IgrRadio>
-</IgrRadioGroup>
-```
-
 ```html
 <igc-radio-group>
   <igc-radio>Apple</igc-radio>
@@ -94,6 +88,15 @@ builder.Services.AddIgniteUIBlazor(
   <igc-radio>Mango</igc-radio>
   <igc-radio>Orange</igc-radio>
 </igc-radio-group>
+```
+
+```tsx
+<IgrRadioGroup>
+  <IgrRadio value="apple"><span>Apple</span></IgrRadio>
+  <IgrRadio value="banana"><span>Banana</span></IgrRadio>
+  <IgrRadio value="Mango"><span>Mango</span></IgrRadio>
+  <IgrRadio value="orange"><span>Orange</span></IgrRadio>
+</IgrRadioGroup>
 ```
 
 ```razor

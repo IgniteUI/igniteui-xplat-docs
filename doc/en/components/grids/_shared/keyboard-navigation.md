@@ -48,9 +48,9 @@ When the `{ComponentName}` header container is focused, the following key combin
  - <kbd>Ctrl</kbd> + <kbd>↑</kbd> sorts the active column header in ASC order. If the column is already sorted in ASC, sorting state is cleared.
  - <kbd>Ctrl</kbd> + <kbd>↓</kbd> sorts the active column header in DSC order. If the column is already sorted in DSC, sorting state is cleared.
  - <kbd>Space</kbd> selects the column. If the column is already selected, selection is cleared.
- <!-- ComponentStart:Grid -->
+ <!-- ComponentStart: Grid -->
  - <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>←</kbd> groups the column, if the column is marked as groupable.
- <!-- ComponentEnd:Grid -->
+ <!-- ComponentEnd: Grid -->
  - <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>→</kbd> ungroups the column, if the column is marked as groupable.
  - <kbd>Alt</kbd> + <kbd>←</kbd> or <kbd>Alt</kbd> + <kbd>↑</kbd> collapses the column group header, if the header is not already collapsed.
  - <kbd>Alt</kbd> + <kbd>→</kbd> or <kbd>Alt</kbd> + <kbd>↓</kbd> expands the column group header, if the header is not already expanded.
@@ -135,12 +135,18 @@ Practice all of the above mentioned actions in the demo sample below. Focus any 
 
 Overriding the default behavior for a certain key or keys combination is one of the benefits that the **Keyboard Navigation** feature provides. For example: press the <kbd>Enter</kbd> or <kbd>Tab</kbd> key to navigate to the next cell or the cell below. This or any other navigation scenario is easily achieved by the **Keyboard Navigation** API:
 
-
+<!-- Blazor -->
 | API | Description | Arguments |
 |---------|-------------|-----------|
 | `GridKeydown` | An event that is emitted when any of key press/combinations described above is performed. Can be canceled. For any other key press/combination, use the default `onkeydown` event. | `GridKeydownEventArgs` |
 | `ActiveNodeChange` | An event that is emitted when the active node is changed. You can use it to determine the Active focus position (header, tbody etc.), column index, row index or nested level. | `ActiveNodeChangeEventArgs` |
+<!-- end: Blazor -->
+
 <!-- Angular, WebComponents -->
+| API | Description | Arguments |
+|---------|-------------|-----------|
+| `GridKeydown` | An event that is emitted when any of key press/combinations described above is performed. Can be canceled. For any other key press/combination, use the default `onkeydown` event. | `GridKeydownEventArgs` |
+| `ActiveNodeChange` | An event that is emitted when the active node is changed. You can use it to determine the Active focus position (header, tbody etc.), column index, row index or nested level. | `ActiveNodeChangeEventArgs` |
 | `NavigateTo` | Navigates to a position in the grid, based on provided `Rowindex` and `VisibleColumnIndex`. It can also execute a custom logic over the target element, through a callback function that accepts param of type ```{ targetType: GridKeydownTargetType, target: Object }``` . Usage: <br />```grid.navigateTo(10, 3, (args) => { args.target.nativeElement.focus(); });``` | ```RowIndex: number, VisibleColumnIndex: number, callback: ({ targetType: GridKeydownTargetType, target: Object }```) => {} |
 | `GetNextCell`| returns `ICellPosition` object, which defines the next cell by `RowIndex` and `VisibleColumnIndex`. A callback function can be passed as a third parameter of `GetNextCell` method. The callback function accepts `Column` as a param and returns a `boolean` value indication if a given criteria is met: <br />```const nextEditableCell = grid.getNextCell(0, 4, (col) => col.editable);``` | ```currentRowIndex: number, currentVisibleColumnIndex: number, callback: (Column) => boolean``` |
 | `GetPreviousCell` | returns `ICellPosition` object, which defines the previous cell by `RowIndex` and `VisibleColumnIndex`. A callback function can be passed as a third parameter of `GetPreviousCell` method. The callback function accepts `Column` as a param and returns a `boolean` value indication if a given criteria is met: <br />```const prevEditableCell = grid.getPreviousCell(0, 4, (col) => col.editable);``` | ``` CurrentRowIndex: number, CurrentVisibleColumnIndex: number, callback: (Column) => boolean ``` |
@@ -155,19 +161,24 @@ Overriding the default behavior for a certain key or keys combination is one of 
 
 Let's try the API to demonstrate how to achieve common scenarios like user input validation and custom navigation. First we need to register an event handler for the `GridKeydown` event:
 
-<!-- ComponentStart: Grid -->
+
+<!-- Angular -->
 ```html
 <igx-grid #grid1 [data]="data" [primaryKey]="'ProductID'" (gridKeydown)="customKeydown($event)">
 ```
+<!-- end: Angular -->
+
 ```html
 <{ComponentSelector} id="grid1" primary-key="ProductID">
 </{ComponentSelector}>
 ```
 
 ```razor
-<{ComponentSelector} PrimaryKey="ProductID" GridKeydownScript="WebGridCustomKBNav">
+<{ComponentSelector} Id="grid1" PrimaryKey="ProductID" GridKeydownScript="WebGridCustomKBNav">
 </{ComponentSelector}>
+```
 
+```razor
 // In JavaScript
 
 igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
@@ -175,7 +186,7 @@ igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
     const target = args.target;
     const evt = args.event;
     const type = args.targetType;
-    const grid = document.getElementsByTagName("igc-grid")[0];
+    const grid = document.getElementById("grid1");
 
     if (type === 'dataCell' && target.editMode && evt.key.toLowerCase() === 'tab') {
         // 1. USER INPUT VALIDATION ON TAB
@@ -192,15 +203,10 @@ igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
 
 ```ts
 constructor() {
-        var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-
-        this._bind = () => {
-            grid.data = this.data
-            grid.addEventListener("gridKeydown", this.customKeydown);
-        }
-        this._bind();
-
-    }
+        var grid = this.grid = document.getElementById('grid') as {ComponentName}Component;
+		grid.data = this.data
+		grid.addEventListener("gridKeydown", this.customKeydown);
+	}
 ```
 
 ```typescript
@@ -220,7 +226,6 @@ function customKeydown(s: IgrGridBaseDirective, e: IgrGridKeydownEventArgs) {
   }
 }
 ```
-<!-- ComponentEnd: Grid -->
 
 
 ```typescript
@@ -280,7 +285,7 @@ igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
     const target = args.target;
     const evt = args.event;
     const type = args.targetType;
-    const grid = document.getElementsByTagName("igc-grid")[0];
+    const grid = document.getElementById("grid1");
 
     // 1. USER INPUT VALIDATION ON TAB
     if (target.column.dataType === 'number' && target.editValue < 10) {
@@ -325,7 +330,7 @@ Use the demo below to try out the custom scenarios that we just implemented:
 
 ## Additional Resources
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Filtering](filtering.md)
 * [Sorting](sorting.md)
@@ -334,7 +339,7 @@ Use the demo below to try out the custom scenarios that we just implemented:
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 

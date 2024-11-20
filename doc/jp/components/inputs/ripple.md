@@ -2,7 +2,7 @@
 title: {Platform} Ripple
 _description: {ProductName} Ripple を使用すると、開発者は、視覚的に魅力的な UI 拡張のためにリップル アニメーション効果を受け取った領域を定義できます。
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Ripple components, {Platform} Ripple controls, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Ripple コンポーネント, {Platform} Ripple コントロール
-mentionedTypes: ['Ripple', 'Button']
+mentionedTypes: ["Ripple", "Button"]
 _language: ja
 ---
 
@@ -32,6 +32,8 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcRippleComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -71,18 +73,18 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbRippleModule));
 
 `Ripple` の使用を開始する最も簡単な方法は次のとおりです:
 
-```tsx
-<IgrButton>
-  <IgrRipple></IgrRipple>
-  <span>Ripple Button</span>
-</IgrButton>
-```
-
 ```html
 <igc-button>
   <igc-ripple></igc-ripple>
   Ripple Button
 </igc-button>
+```
+
+```tsx
+<IgrButton>
+  <IgrRipple></IgrRipple>
+  <span>Ripple Button</span>
+</IgrButton>
 ```
 
 ```razor

@@ -39,42 +39,91 @@ To enable the advanced filtering, the `AllowAdvancedFiltering` input property sh
 </{ComponentSelector}>
 ```
 <!-- end: Angular -->
+
+<!-- ComponentStart: Grid -->
+```html
+<igc-grid id="grid" auto-generate="true" allow-advanced-filtering="true">
+    <igc-grid-toolbar></igc-grid-toolbar>
+<igc-grid>
+```
+```ts
+constructor() {
+    let grid = document.getElementById("grid") as IgcGridComponent;
+    grid.data = this.data
+}
+```
+
+```tsx
+<IgrGrid data={nwindData} autoGenerate="false" ref={gridRef} allowAdvancedFiltering="true">
+    <IgrGridToolbar></IgrGridToolbar>
+</IgrGrid>
+```
+
 ```razor
 <{ComponentSelector} Data=data AutoGenerate="true" AllowAdvancedFiltering="true">
     <IgbGridToolbar></IgbGridToolbar>
 </{ComponentSelector}>
 ```
-<!-- WebComponents -->
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
 ```html
-<{ComponentSelector} id="grid" auto-generate="true" allow-advanced-filtering="true">
+<igc-tree-grid id="treeGrid" auto-generate="true" allow-advanced-filtering="true">
     <igc-grid-toolbar></igc-grid-toolbar>
-</{ComponentSelector}>
+</igc-tree-grid>
 ```
 ```ts
 constructor() {
-    let grid = (document.getElementById("grid") as IgcGridComponent);
-    grid.data = this.data
+    let treeGrid = document.getElementById("treeGrid") as IgcTreeGridComponent;
+    treeGrid.data = this.data
 }
 ```
-<!-- end: WebComponents -->
-<!-- React -->
-```html
-<{ComponentSelector} data={this.nwindData} autoGenerate="false" ref={this.gridRef} allowAdvancedFiltering="true">
-    <IgrGridToolbar>
-        <IgrGridToolbarActions>
-            <IgrGridToolbarAdvancedFilering></IgrGridToolbarAdvancedFilering>
-        </IgrGridToolbarActions>
-    </IgrGridToolbar>
-</{ComponentSelector}>
+
+```tsx
+<IgrTreeGrid data={nwindData} autoGenerate="false" allowAdvancedFiltering="true">
+    <IgrGridToolbar></IgrGridToolbar>
+</IgrTreeGrid>
 ```
-<!-- end: React -->
+
+```razor
+<IgbTreeGrid Data=data AutoGenerate="true" AllowAdvancedFiltering="true">
+    <IgbGridToolbar></IgbGridToolbar>
+</IgbTreeGrid>
+```
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```html
+<igc-hierarchical-grid id="hierarchicalGrid" auto-generate="true" allow-advanced-filtering="true">
+    <igc-grid-toolbar></igc-grid-toolbar>
+</igc-hierarchical-grid>
+```
+```ts
+constructor() {
+    let hierarchicalGrid = document.getElementById("hierarchicalGrid") as IgcHierarchicalGridComponent;
+    hierarchicalGrid.data = this.data
+}
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- Blazor -->
+<!-- ComponentStart: HierarchicalGrid -->
+```razor
+<IgbHierarchicalGrid Data=data AutoGenerate="true" AllowAdvancedFiltering="true">
+    <IgbGridToolbar></IgbGridToolbar>
+</IgbHierarchicalGrid>
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: Blazor -->
 
 <!-- React -->
+<!-- ComponentStart: HierarchicalGrid -->
 ```tsx
-<{ComponentSelector} data={nwindData} autoGenerate="false" ref={gridRef} allowAdvancedFiltering="true">
+<IgrHierarchicalGrid data={nwindData} autoGenerate="false" allowAdvancedFiltering="true">
     <IgrGridToolbar></IgrGridToolbar>
-</{ComponentSelector}>
+</IgrHierarchicalGrid>
 ```
+<!-- ComponentEnd: HierarchicalGrid -->
 <!-- end: React -->
 
 The advanced filtering generates a `FilteringExpressionsTree` which is stored in the `AdvancedFilteringExpressionsTree` input property. You could use the `AdvancedFilteringExpressionsTree` property to set an initial state of the advanced filtering.
@@ -514,19 +563,23 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 <!-- WebComponents, Blazor, React -->
 ## Styling
 
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming-grid.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
+<!-- WebComponents -->
 ```html
-<igc-grid class="grid"></igc-grid>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} className="grid"></{ComponentSelector}>
+```
+<!-- end: React -->
 
 ```razor
-<IgbGrid class="grid"></IgbGrid>
-```
-
-```tsx
-<{ComponentName} className="grid"></{ComponentName}>
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 
 Then set the related CSS properties to this class:
@@ -550,7 +603,7 @@ Then set the related CSS properties to this class:
 
 ## Additional Resources
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [Filtering](filtering.md)
 * [Excel Style Filtering](excel-style-filtering.md)
 * [Virtualization and Performance](virtualization.md)
@@ -561,7 +614,7 @@ Then set the related CSS properties to this class:
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 

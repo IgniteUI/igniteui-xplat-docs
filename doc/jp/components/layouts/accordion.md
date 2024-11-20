@@ -2,7 +2,7 @@
 title: {Platform} Accordion | アコーディオン | インフラジスティックス
 _description: アコーディオンは、アコーディオン メニューで垂直方向に展開可能なパネルを構築するために使用されます。
 _keywords: {Platform} Accordion, {ProductName}, Infragistics, {Platform} アコーディオン, インフラジスティックス
-mentionedTypes: ['Accordion', 'Infragistics.Controls.Layouts.Implementation.ExpansionPanel']
+mentionedTypes: ["Accordion", "Infragistics.Controls.Layouts.Implementation.ExpansionPanel"]
 namespace: Infragistics.Controls
 _language: ja
 ---
@@ -20,8 +20,6 @@ _language: ja
 その中で、アコーディオンとその展開パネルを定義する方法を見ることができます。このサンプルは、2 種類の展開動作も示します。切り替えボタンは `SingleExpand` プロパティを設定し、一度に展開する単一ブランチと複数ブランチを切り替えます。
 
 `sample="/layouts/accordion/overview", height="460", alt="{Platform} アコーディオンの例"`
-
-
 
 <div class="divider--half"></div>
 
@@ -43,7 +41,34 @@ import { defineComponents, IgcAccordionComponent } from 'igniteui-webcomponents'
 defineComponents(IgcAccordionComponent);
 ```
 
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
 <!-- end: WebComponents -->
+
+<!-- React -->
+
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`Accordion` および `ExpansionPanel` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import {
+  IgrAccordion,
+  IgrAccordionModule,
+  IgrExpansionPanel,
+  IgrExpansionPanelModule,
+} from "igniteui-react";
+import "igniteui-webcomponents/themes/light/bootstrap.css";
+
+IgrAccordionModule.register();
+IgrExpansionPanelModule.register();
+```
+
+<!-- end: React -->
 
 `Accordion` を使用する前に、次のように登録する必要があります:
 
@@ -55,7 +80,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbAccordionModule));
 
 <!-- Blazor -->
 
-また、追加の CSS ファイルをリンクして、スタイルを `Accordion` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml**フ ァイルに配置する必要があります:
+また、追加の CSS ファイルをリンクして、スタイルを `Accordion` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -108,6 +133,19 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbAccordionModule));
 </IgbAccordion>
 ```
 
+```tsx
+<IgrAccordion singleExpand={true}>
+  <IgrExpansionPanel>
+    <div slot="title">Title Panel 1</div>
+    <div>Content Panel 1</div>
+  </IgrExpansionPanel>
+  <IgrExpansionPanel>
+    <div slot="title">Title Panel 2</div>
+    <div>Content Panel 2</div>
+  </IgrExpansionPanel>
+</IgrAccordion>
+```
+
 <!-- WebComponents -->
 
 `Panels` アクセサーを使用して、`Accordion` のすべての子の拡張パネルを含むコレクションへの参照を取得できます。
@@ -123,6 +161,7 @@ constructor() {
 ```
 
 <!-- end: WebComponents -->
+
 上記で示したように、`SingleExpand` プロパティを使用すると、一度に 1 つまたは複数のパネルを展開できるかどうかを設定できます。
 
 `HideAll` メソッドと `ShowAll` メソッドを使用すると、`Accordion` のすべての `ExpansionPanel` をプログラムでそれぞれ省略したり展開したりできます。

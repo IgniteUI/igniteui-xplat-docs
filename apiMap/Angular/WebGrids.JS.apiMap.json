@@ -2,6 +2,7 @@
   "extraFiles": [
     "igx-column-dependencies-module.ts",
     "igx-grid-module.ts",
+    "igx-hierarchical-grid-module.ts",
     "igx-pivot-data-selector-module.ts",
     "igx-pivot-grid-module.ts",
     "igx-tree-grid-module.ts"
@@ -11,15 +12,16 @@
     "originalName": "ActionStrip",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "DisplayDensityBaseElement",
+    "originalBaseTypeName": "BaseElement",
     "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-action-strip-component.ts","dynamicModuleName": "igx-action-strip-dynamic-module.ts","moduleName": "igx-action-strip-module.ts","mappedName": "IgxActionStripComponent"}],
+    "names":[{"platform": "Angular","fileName": "igx-action-strip.ts","dynamicModuleName": "igx-action-strip-dynamic-module.ts","moduleName": "igx-action-strip-module.ts","mappedName": "IgxActionStrip"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxGridActionsBaseDirectiveCollection","mappedName": "actionButtons"}], "originalName": "ActionButtons"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "hidden"}], "originalName": "Hidden"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "hide"}], "originalName": "Hide"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "Angular", "mappedType": "IgxActionStripResourceStrings","mappedName": "resourceStrings"}], "originalName": "ResourceStrings"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "show"}], "originalName": "Show"} ]
   },
   {
@@ -85,9 +87,21 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Angular","fileName": "igx-base-exporter.ts","mappedName": "IgxBaseExporter"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "addPivotGridColumns"}], "originalName": "AddPivotGridColumns"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "exportData"}], "originalName": "ExportData"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "exportGrid"}], "originalName": "ExportGrid"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "BaseSearchInfo",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Angular","fileName": "igx-base-search-info.ts","mappedName": "IgxBaseSearchInfo"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "caseSensitive"}], "originalName": "CaseSensitive"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "content"}], "originalName": "Content"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "exactMatch"}], "originalName": "ExactMatch"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "matchCount"}], "originalName": "MatchCount"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "searchText"}], "originalName": "SearchText"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
@@ -149,17 +163,14 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
-    "originalName": "Cell",
+    "originalName": "CellPosition",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-cell.ts","mappedName": "IgxCell"}],
+    "names":[{"platform": "Angular","fileName": "igx-cell-position.ts","mappedName": "IgxCellPosition"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "castToNumber"}], "originalName": "CastToNumber"},
-      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "editValue"}], "originalName": "EditValue"},
-      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "pendingValue"}], "originalName": "PendingValue"},
-      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "primaryKey"}], "originalName": "PrimaryKey"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "rowIndex"}], "originalName": "RowIndex"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
-      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "state"}], "originalName": "State"} ]
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "visibleColumnIndex"}], "originalName": "VisibleColumnIndex"} ]
   },
   {
     "originalName": "CellTemplateContext",
@@ -181,11 +192,11 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "active"}], "originalName": "Active"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "calculateSizeToFit"}], "originalName": "CalculateSizeToFit"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "cellID"}], "originalName": "CellID"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxColumn","mappedName": "column"}], "originalName": "Column"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent","mappedName": "column"}], "originalName": "Column"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "editMode"}], "originalName": "EditMode"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "editValue"}], "originalName": "EditValue"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "editable"}], "originalName": "Editable"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirectiveComponent","mappedName": "grid"}], "originalName": "Grid"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirective","mappedName": "grid"}], "originalName": "Grid"},
       {"names":[{"platform": "Angular", "mappedType": "IgxGridCellIdentifier","mappedName": "id"}], "originalName": "Id"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "readonly"}], "originalName": "Readonly"},
       {"names":[{"platform": "Angular", "mappedType": "IgxRowType","mappedName": "row"}], "originalName": "Row"},
@@ -200,12 +211,37 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "width"}], "originalName": "Width"} ]
   },
   {
+    "originalName": "ChildGridRow",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Angular","fileName": "igx-child-grid-row-component.ts","dynamicModuleName": "igx-child-grid-row-dynamic-module.ts","moduleName": "igx-child-grid-row-module.ts","mappedName": "IgxChildGridRowComponent"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "data"}], "originalName": "Data"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "expanded"}], "originalName": "Expanded"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxRowIsland","mappedName": "layout"}], "originalName": "Layout"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "level"}], "originalName": "Level"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "ClipboardOptions",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Angular","fileName": "igx-clipboard-options.ts","mappedName": "IgxClipboardOptions"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "copyFormatters"}], "originalName": "CopyFormatters"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "copyHeaders"}], "originalName": "CopyHeaders"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "enabled"}], "originalName": "Enabled"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "separator"}], "originalName": "Separator"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
     "originalName": "Column",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
     "originalBaseTypeName": "BaseElement",
     "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-column.ts","dynamicModuleName": "igx-column-dynamic-module.ts","moduleName": "igx-column-module.ts","mappedName": "IgxColumn"}],
+    "names":[{"platform": "Angular","fileName": "igx-column-component.ts","dynamicModuleName": "igx-column-dynamic-module.ts","moduleName": "igx-column-module.ts","mappedName": "IgxColumnComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "additionalTemplateContext"}], "originalName": "AdditionalTemplateContext"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "autosize"}], "originalName": "Autosize"},
@@ -213,8 +249,12 @@
       {"names":[{"platform": "Angular", "mappedType": "(arg: IgxCellTemplateContext) => any","mappedName": "bodyTemplate"}], "originalName": "BodyTemplate"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "cellClasses"}], "originalName": "CellClasses"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "cellStyles"}], "originalName": "CellStyles"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent[]","mappedName": "childColumns"}], "originalName": "ChildColumns"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "colEnd"}], "originalName": "ColEnd"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "colStart"}], "originalName": "ColStart"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "columnGroup"}], "originalName": "ColumnGroup"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "columnLayout"}], "originalName": "ColumnLayout"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "columnLayoutChild"}], "originalName": "ColumnLayoutChild"},
       {"names":[{"platform": "Angular", "mappedType": "GridColumnDataType","mappedName": "dataType"}], "originalName": "DataType"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "disableHiding"}], "originalName": "DisableHiding"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "disablePinning"}], "originalName": "DisablePinning"},
@@ -223,6 +263,7 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "field"}], "originalName": "Field"},
       {"names":[{"platform": "Angular", "mappedType": "(arg: IgxColumnTemplateContext) => any","mappedName": "filterCellTemplate"}], "originalName": "FilterCellTemplate"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "filterable"}], "originalName": "Filterable"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxFilteringExpressionsTree","mappedName": "filteringExpressionsTree"}], "originalName": "FilteringExpressionsTree"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "filteringIgnoreCase"}], "originalName": "FilteringIgnoreCase"},
       {"names":[{"platform": "Angular", "mappedType": "IgxFilteringOperand","mappedName": "filters"}], "originalName": "Filters"},
       {"names":[{"platform": "Angular", "mappedType": "(value: any, rowData: any) => any","mappedName": "formatter"}], "originalName": "Formatter"},
@@ -235,10 +276,11 @@
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "headerStyles"}], "originalName": "HeaderStyles"},
       {"names":[{"platform": "Angular", "mappedType": "(arg: IgxColumnTemplateContext) => any","mappedName": "headerTemplate"}], "originalName": "HeaderTemplate"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "hidden"}], "originalName": "Hidden"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"},
       {"names":[{"platform": "Angular", "mappedType": "(arg: IgxCellTemplateContext) => any","mappedName": "inlineEditorTemplate"}], "originalName": "InlineEditorTemplate"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "level"}], "originalName": "Level"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "maxWidth"}], "originalName": "MaxWidth"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "minWidth"}], "originalName": "MinWidth"},
-      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "movable"}], "originalName": "Movable"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "move"}], "originalName": "Move"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "parentColumn"}], "originalName": "ParentColumn"},
@@ -259,7 +301,9 @@
       {"names":[{"platform": "Angular", "mappedType": "(summary: IgxSummaryResult, summaryOperand: IgxSummaryOperand) => any","mappedName": "summaryFormatter"}], "originalName": "SummaryFormatter"},
       {"names":[{"platform": "Angular", "mappedType": "(arg: IgxSummaryTemplateContext) => any","mappedName": "summaryTemplate"}], "originalName": "SummaryTemplate"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "title"}], "originalName": "Title"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent","mappedName": "topLevelParent"}], "originalName": "TopLevelParent"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "unpin"}], "originalName": "Unpin"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "visibleIndex"}], "originalName": "VisibleIndex"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "visibleWhenCollapsed"}], "originalName": "VisibleWhenCollapsed"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "width"}], "originalName": "Width"} ]
   },
@@ -269,7 +313,7 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Angular","fileName": "igx-column-component-event-args.ts","mappedName": "IgxColumnComponentEventArgs"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "IgxColumn","mappedName": "detail"}], "originalName": "Detail"} ]
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent","mappedName": "detail"}], "originalName": "Detail"} ]
   },
   {
     "originalName": "ColumnExportingEventArgs",
@@ -290,7 +334,7 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "cancel"}], "originalName": "Cancel"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "columnIndex"}], "originalName": "ColumnIndex"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "field"}], "originalName": "Field"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirectiveComponent","mappedName": "grid"}], "originalName": "Grid"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirective","mappedName": "grid"}], "originalName": "Grid"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "header"}], "originalName": "Header"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "skipFormatter"}], "originalName": "SkipFormatter"} ]
   },
@@ -300,10 +344,12 @@
     "originalBaseTypeNamespace": "Infragistics.Controls",
     "originalBaseTypeName": "Column",
     "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-column-group.ts","dynamicModuleName": "igx-column-group-dynamic-module.ts","moduleName": "igx-column-group-module.ts","mappedName": "IgxColumnGroup"}],
+    "names":[{"platform": "Angular","fileName": "igx-column-group-component.ts","dynamicModuleName": "igx-column-group-dynamic-module.ts","moduleName": "igx-column-group-module.ts","mappedName": "IgxColumnGroupComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxColumnCollection","mappedName": "children"}], "originalName": "Children"},
-      {"names":[{"platform": "Angular", "mappedType": "(arg: IgxColumnTemplateContext) => any","mappedName": "collapsibleIndicatorTemplate"}], "originalName": "CollapsibleIndicatorTemplate"} ]
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "collapsible"}], "originalName": "Collapsible"},
+      {"names":[{"platform": "Angular", "mappedType": "(arg: IgxColumnTemplateContext) => any","mappedName": "collapsibleIndicatorTemplate"}], "originalName": "CollapsibleIndicatorTemplate"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "expanded"}], "originalName": "Expanded"} ]
   },
   {
     "originalName": "ColumnLayout",
@@ -311,7 +357,7 @@
     "originalBaseTypeNamespace": "Infragistics.Controls",
     "originalBaseTypeName": "ColumnGroup",
     "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-column-layout.ts","dynamicModuleName": "igx-column-layout-dynamic-module.ts","moduleName": "igx-column-layout-module.ts","mappedName": "IgxColumnLayout"}]
+    "names":[{"platform": "Angular","fileName": "igx-column-layout-component.ts","dynamicModuleName": "igx-column-layout-dynamic-module.ts","moduleName": "igx-column-layout-module.ts","mappedName": "IgxColumnLayoutComponent"}]
   },
   {
     "originalName": "ColumnMovingEndEventArgs",
@@ -330,8 +376,8 @@
     "names":[{"platform": "Angular","fileName": "igx-column-moving-end-event-args-detail.ts","mappedName": "IgxColumnMovingEndEventArgsDetail"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "cancel"}], "originalName": "Cancel"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxColumn","mappedName": "source"}], "originalName": "Source"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxColumn","mappedName": "target"}], "originalName": "Target"} ]
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent","mappedName": "source"}], "originalName": "Source"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent","mappedName": "target"}], "originalName": "Target"} ]
   },
   {
     "originalName": "ColumnMovingEventArgs",
@@ -350,15 +396,7 @@
     "names":[{"platform": "Angular","fileName": "igx-column-moving-event-args-detail.ts","mappedName": "IgxColumnMovingEventArgsDetail"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "cancel"}], "originalName": "Cancel"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxColumn","mappedName": "source"}], "originalName": "Source"} ]
-  },
-  {
-    "originalName": "ColumnMovingService",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-column-moving-service.ts","mappedName": "IgxColumnMovingService"}],
-    "members":[
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent","mappedName": "source"}], "originalName": "Source"} ]
   },
   {
     "originalName": "ColumnMovingStartEventArgs",
@@ -376,7 +414,7 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Angular","fileName": "igx-column-moving-start-event-args-detail.ts","mappedName": "IgxColumnMovingStartEventArgsDetail"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "IgxColumn","mappedName": "source"}], "originalName": "Source"} ]
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent","mappedName": "source"}], "originalName": "Source"} ]
   },
   {
     "originalName": "ColumnPipeArgs",
@@ -402,7 +440,7 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Angular","fileName": "igx-column-resize-event-args-detail.ts","mappedName": "IgxColumnResizeEventArgsDetail"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "IgxColumn","mappedName": "column"}], "originalName": "Column"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent","mappedName": "column"}], "originalName": "Column"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "newWidth"}], "originalName": "NewWidth"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "prevWidth"}], "originalName": "PrevWidth"} ]
   },
@@ -447,13 +485,46 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
+    "originalName": "ColumnState",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Angular","fileName": "igx-column-state.ts","mappedName": "IgxColumnState"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "collapsible"}], "originalName": "Collapsible"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "columnGroup"}], "originalName": "ColumnGroup"},
+      {"names":[{"platform": "Angular", "mappedType": "GridColumnDataType","mappedName": "dataType"}], "originalName": "DataType"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "disableHiding"}], "originalName": "DisableHiding"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "disablePinning"}], "originalName": "DisablePinning"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "editable"}], "originalName": "Editable"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "expanded"}], "originalName": "Expanded"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "field"}], "originalName": "Field"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "filterable"}], "originalName": "Filterable"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "filteringIgnoreCase"}], "originalName": "FilteringIgnoreCase"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "groupable"}], "originalName": "Groupable"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "hasSummary"}], "originalName": "HasSummary"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "header"}], "originalName": "Header"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "headerClasses"}], "originalName": "HeaderClasses"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "headerGroupClasses"}], "originalName": "HeaderGroupClasses"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "hidden"}], "originalName": "Hidden"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "maxWidth"}], "originalName": "MaxWidth"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "parent"}], "originalName": "Parent"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "pinned"}], "originalName": "Pinned"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "resizable"}], "originalName": "Resizable"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "searchable"}], "originalName": "Searchable"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "sortable"}], "originalName": "Sortable"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "sortingIgnoreCase"}], "originalName": "SortingIgnoreCase"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "visibleWhenCollapsed"}], "originalName": "VisibleWhenCollapsed"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "width"}], "originalName": "Width"} ]
+  },
+  {
     "originalName": "ColumnTemplateContext",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Angular","fileName": "igx-column-template-context.ts","mappedName": "IgxColumnTemplateContext"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "IgxColumn","mappedName": "column"}], "originalName": "Column"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxColumn","mappedName": "implicit"}], "originalName": "Implicit"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent","mappedName": "column"}], "originalName": "Column"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent","mappedName": "implicit"}], "originalName": "Implicit"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
@@ -473,7 +544,7 @@
     "names":[{"platform": "Angular","fileName": "igx-column-toggled-event-args-detail.ts","mappedName": "IgxColumnToggledEventArgsDetail"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "checked"}], "originalName": "Checked"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxColumn","mappedName": "column"}], "originalName": "Column"} ]
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent","mappedName": "column"}], "originalName": "Column"} ]
   },
   {
     "originalName": "ColumnVisibilityChangedEventArgs",
@@ -551,25 +622,6 @@
     "names":[{"platform": "Angular","fileName": "igx-date-time-filtering-operand.ts","mappedName": "IgxDateTimeFilteringOperand"}]
   },
   {
-    "originalName": "DensityChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-density-changed-event-args.ts","mappedName": "IgxDensityChangedEventArgs"}],
-    "members":[
-      {"names":[{"platform": "Angular", "mappedType": "IgxDensityChangedEventArgsDetail","mappedName": "detail"}], "originalName": "Detail"} ]
-  },
-  {
-    "originalName": "DensityChangedEventArgsDetail",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseEventArgsDetail",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-density-changed-event-args-detail.ts","mappedName": "IgxDensityChangedEventArgsDetail"}],
-    "members":[
-      {"names":[{"platform": "Angular", "mappedType": "DisplayDensity","mappedName": "newDensity"}], "originalName": "NewDensity"},
-      {"names":[{"platform": "Angular", "mappedType": "DisplayDensity","mappedName": "oldDensity"}], "originalName": "OldDensity"} ]
-  },
-  {
     "originalName": "DimensionsChange",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -598,47 +650,24 @@
       {"names":[{"platform": "Angular", "mappedType": "IgxDimensionsChangeDetail","mappedName": "detail"}], "originalName": "Detail"} ]
   },
   {
-    "originalName": "DisplayDensityBase",
+    "originalName": "ExporterEventArgs",
     "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
     "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-display-density-base-component.ts","mappedName": "IgxDisplayDensityBaseComponent"}],
+    "names":[{"platform": "Angular","fileName": "igx-exporter-event-args.ts","mappedName": "IgxExporterEventArgs"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "DisplayDensity","mappedName": "displayDensity"}], "originalName": "DisplayDensity"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+      {"names":[{"platform": "Angular", "mappedType": "IgxExporterEventArgsDetail","mappedName": "detail"}], "originalName": "Detail"} ]
   },
   {
-    "originalName": "ExporterEvent",
+    "originalName": "ExporterEventArgsDetail",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-exporter-event.ts","mappedName": "IgxExporterEvent"}],
+    "names":[{"platform": "Angular","fileName": "igx-exporter-event-args-detail.ts","mappedName": "IgxExporterEventArgsDetail"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "cancel"}], "originalName": "Cancel"},
       {"names":[{"platform": "Angular", "mappedType": "IgxBaseExporter","mappedName": "exporter"}], "originalName": "Exporter"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirectiveComponent","mappedName": "grid"}], "originalName": "Grid"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirective","mappedName": "grid"}], "originalName": "Grid"},
       {"names":[{"platform": "Angular", "mappedType": "IgxExporterOptionsBase","mappedName": "options"}], "originalName": "Options"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
-    "originalName": "ExporterEventDetail",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-exporter-event-detail.ts","mappedName": "IgxExporterEventDetail"}],
-    "members":[
-      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "cancel"}], "originalName": "Cancel"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxBaseExporter","mappedName": "exporter"}], "originalName": "Exporter"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirectiveComponent","mappedName": "grid"}], "originalName": "Grid"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxExporterOptionsBase","mappedName": "options"}], "originalName": "Options"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
-    "originalName": "ExporterEventEventArgs",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-exporter-event-event-args.ts","mappedName": "IgxExporterEventEventArgs"}],
-    "members":[
-      {"names":[{"platform": "Angular", "mappedType": "IgxExporterEventDetail","mappedName": "detail"}], "originalName": "Detail"} ]
   },
   {
     "originalName": "ExporterOptionsBase",
@@ -671,16 +700,6 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "timezone"}], "originalName": "Timezone"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "weekStart"}], "originalName": "WeekStart"} ]
-  },
-  {
-    "originalName": "FieldValidationState",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "GridValidationState",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-field-validation-state.ts","mappedName": "IgxFieldValidationState"}],
-    "members":[
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "field"}], "originalName": "Field"} ]
   },
   {
     "originalName": "FilteringEventArgs",
@@ -719,12 +738,12 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Angular","fileName": "igx-filtering-expressions-tree.ts","mappedName": "IgxFilteringExpressionsTree"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "empty"}], "originalName": "Empty"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fieldName"}], "originalName": "FieldName"},
       {"names":[{"platform": "Angular", "mappedType": "IgxFilteringExpressionsTreeOrFilteringExpression[]","mappedName": "filteringOperands"}], "originalName": "FilteringOperands"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "find"}], "originalName": "Find"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "findIndex"}], "originalName": "FindIndex"},
       {"names":[{"platform": "Angular", "mappedType": "FilteringLogic","mappedName": "operator"}], "originalName": "Operator"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "owner"}], "originalName": "Owner"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "FilteringExpressionsTreeType","mappedName": "treeType"}], "originalName": "TreeType"} ]
   },
@@ -734,12 +753,12 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Angular","fileName": "igx-filtering-expressions-tree-detail.ts","mappedName": "IgxFilteringExpressionsTreeDetail"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "empty"}], "originalName": "Empty"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fieldName"}], "originalName": "FieldName"},
       {"names":[{"platform": "Angular", "mappedType": "IgxFilteringExpressionsTreeOrFilteringExpression[]","mappedName": "filteringOperands"}], "originalName": "FilteringOperands"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "find"}], "originalName": "Find"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "findIndex"}], "originalName": "FindIndex"},
       {"names":[{"platform": "Angular", "mappedType": "FilteringLogic","mappedName": "operator"}], "originalName": "Operator"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "owner"}], "originalName": "Owner"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "FilteringExpressionsTreeType","mappedName": "treeType"}], "originalName": "TreeType"} ]
   },
@@ -802,7 +821,8 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Angular","fileName": "igx-for-of-data-changing-event-args-detail.ts","mappedName": "IgxForOfDataChangingEventArgsDetail"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "containerSize"}], "originalName": "ContainerSize"} ]
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "containerSize"}], "originalName": "ContainerSize"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxForOfState","mappedName": "state"}], "originalName": "State"} ]
   },
   {
     "originalName": "ForOfState",
@@ -844,6 +864,7 @@
     "names":[{"platform": "Angular","fileName": "igx-grid-component.ts","mappedName": "IgxGridComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "addRow"}], "originalName": "AddRow"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "beforeColumnInit"}], "originalName": "BeforeColumnInit"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "beginAddRowByIndex"}], "originalName": "BeginAddRowByIndex"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "clearGrouping"}], "originalName": "ClearGrouping"},
       {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "data"}], "originalName": "Data"},
@@ -909,12 +930,12 @@
     "originalName": "GridBaseDirective",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "DisplayDensityBase",
+    "originalBaseTypeName": "BaseElement",
     "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-grid-base-directive-component.ts","mappedName": "IgxGridBaseDirectiveComponent"}],
+    "names":[{"platform": "Angular","fileName": "igx-grid-base-directive.ts","mappedName": "IgxGridBaseDirective"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxActionStripCollection","mappedName": "actionStripComponents"}], "originalName": "ActionStripComponents"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxColumnCollection","mappedName": "actualColumns"}], "originalName": "ActualColumns"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnCollection","mappedName": "actualColumnList"}], "originalName": "ActualColumnList"},
       {"names":[{"platform": "Angular", "mappedType": "(arg: any) => any","mappedName": "addRowEmptyTemplate"}], "originalName": "AddRowEmptyTemplate"},
       {"names":[{"platform": "Angular", "mappedType": "IgxFilteringExpressionsTree","mappedName": "advancedFilteringExpressionsTree"}], "originalName": "AdvancedFilteringExpressionsTree"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "allowAdvancedFiltering"}], "originalName": "AllowAdvancedFiltering"},
@@ -928,13 +949,14 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "clearFilter"}], "originalName": "ClearFilter"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "clearSearch"}], "originalName": "ClearSearch"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "clearSort"}], "originalName": "ClearSort"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxGridClipboardOptions","mappedName": "clipboardOptions"}], "originalName": "ClipboardOptions"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxClipboardOptions","mappedName": "clipboardOptions"}], "originalName": "ClipboardOptions"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "closeAdvancedFilteringDialog"}], "originalName": "CloseAdvancedFilteringDialog"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "collapseAll"}], "originalName": "CollapseAll"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "collapseRow"}], "originalName": "CollapseRow"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnCollection","mappedName": "columnList"}], "originalName": "ColumnList"},
       {"names":[{"platform": "Angular", "mappedType": "GridSelectionMode","mappedName": "columnSelection"}], "originalName": "ColumnSelection"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "columnWidth"}], "originalName": "ColumnWidth"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxColumnCollection","mappedName": "columns"}], "originalName": "Columns"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent[]","mappedName": "columns"}], "originalName": "Columns"},
       {"names":[{"platform": "Angular", "mappedType": "IgxDataCloneStrategy","mappedName": "dataCloneStrategy"}], "originalName": "DataCloneStrategy"},
       {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "dataView"}], "originalName": "DataView"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "defaultHeaderGroupMinWidth"}], "originalName": "DefaultHeaderGroupMinWidth"},
@@ -968,7 +990,9 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getColumnByName"}], "originalName": "GetColumnByName"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getColumnByVisibleIndex"}], "originalName": "GetColumnByVisibleIndex"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getHeaderGroupWidth"}], "originalName": "GetHeaderGroupWidth"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getNextCell"}], "originalName": "GetNextCell"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getPinnedWidth"}], "originalName": "GetPinnedWidth"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getPreviousCell"}], "originalName": "GetPreviousCell"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getRowData"}], "originalName": "GetRowData"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getSelectedColumnsData"}], "originalName": "GetSelectedColumnsData"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getSelectedData"}], "originalName": "GetSelectedData"},
@@ -981,17 +1005,19 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "hideRowSelectors"}], "originalName": "HideRowSelectors"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isLoading"}], "originalName": "IsLoading"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "isRecordPinnedByIndex"}], "originalName": "IsRecordPinnedByIndex"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxSearchInfo","mappedName": "lastSearchInfo"}], "originalName": "LastSearchInfo"},
       {"names":[{"platform": "Angular", "mappedType": "(arg: any) => any","mappedName": "loadingGridTemplate"}], "originalName": "LoadingGridTemplate"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "locale"}], "originalName": "Locale"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "markForCheck"}], "originalName": "MarkForCheck"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "moveColumn"}], "originalName": "MoveColumn"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "moving"}], "originalName": "Moving"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "navigateTo"}], "originalName": "NavigateTo"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "openAdvancedFilteringDialog"}], "originalName": "OpenAdvancedFilteringDialog"},
       {"names":[{"platform": "Angular", "mappedType": "IgxOverlayOutletDirective","mappedName": "outlet"}], "originalName": "Outlet"},
       {"names":[{"platform": "Angular", "mappedType": "IgxPaginatorCollection","mappedName": "paginationComponents"}], "originalName": "PaginationComponents"},
       {"names":[{"platform": "Angular", "mappedType": "GridPagingMode","mappedName": "pagingMode"}], "originalName": "PagingMode"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "pinColumn"}], "originalName": "PinColumn"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxColumn[]","mappedName": "pinnedColumns"}], "originalName": "PinnedColumns"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent[]","mappedName": "pinnedColumns"}], "originalName": "PinnedColumns"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "pinnedColumnsCount"}], "originalName": "PinnedColumnsCount"},
       {"names":[{"platform": "Angular", "mappedType": "IgxPinningConfig","mappedName": "pinning"}], "originalName": "Pinning"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "primaryKey"}], "originalName": "PrimaryKey"},
@@ -1019,6 +1045,7 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "selectRows"}], "originalName": "SelectRows"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "selectedColumns"}], "originalName": "SelectedColumns"},
       {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "selectedRows"}], "originalName": "SelectedRows"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "shouldGenerate"}], "originalName": "ShouldGenerate"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "showSummaryOnCollapse"}], "originalName": "ShowSummaryOnCollapse"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "snackbarDisplayTime"}], "originalName": "SnackbarDisplayTime"},
@@ -1029,6 +1056,7 @@
       {"names":[{"platform": "Angular", "mappedType": "IgxGridSortingStrategy","mappedName": "sortStrategy"}], "originalName": "SortStrategy"},
       {"names":[{"platform": "Angular", "mappedType": "IgxSortingExpression[]","mappedName": "sortingExpressions"}], "originalName": "SortingExpressions"},
       {"names":[{"platform": "Angular", "mappedType": "IgxSortingOptions","mappedName": "sortingOptions"}], "originalName": "SortingOptions"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxStateCollection","mappedName": "stateComponents"}], "originalName": "StateComponents"},
       {"names":[{"platform": "Angular", "mappedType": "GridSummaryCalculationMode","mappedName": "summaryCalculationMode"}], "originalName": "SummaryCalculationMode"},
       {"names":[{"platform": "Angular", "mappedType": "GridSummaryPosition","mappedName": "summaryPosition"}], "originalName": "SummaryPosition"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "summaryRowHeight"}], "originalName": "SummaryRowHeight"},
@@ -1037,12 +1065,12 @@
       {"names":[{"platform": "Angular", "mappedType": "IgxGridToolbarCollection","mappedName": "toolbar"}], "originalName": "Toolbar"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "totalRecords"}], "originalName": "TotalRecords"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "unpinColumn"}], "originalName": "UnpinColumn"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxColumn[]","mappedName": "unpinnedColumns"}], "originalName": "UnpinnedColumns"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent[]","mappedName": "unpinnedColumns"}], "originalName": "UnpinnedColumns"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "updateCell"}], "originalName": "UpdateCell"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "updateRow"}], "originalName": "UpdateRow"},
       {"names":[{"platform": "Angular", "mappedType": "GridValidationTrigger","mappedName": "validationTrigger"}], "originalName": "ValidationTrigger"},
       {"names":[{"platform": "Angular", "mappedType": "IgxForOfState","mappedName": "virtualizationState"}], "originalName": "VirtualizationState"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxColumn[]","mappedName": "visibleColumns"}], "originalName": "VisibleColumns"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent[]","mappedName": "visibleColumns"}], "originalName": "VisibleColumns"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "width"}], "originalName": "Width"} ]
   },
   {
@@ -1093,14 +1121,43 @@
       {"names":[{"platform": "Angular", "mappedType": "IgxGridClipboardEventDetail","mappedName": "detail"}], "originalName": "Detail"} ]
   },
   {
-    "originalName": "GridDataBindable",
+    "originalName": "GridContextMenuEventArgs",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-grid-data-bindable.ts","mappedName": "IgxGridDataBindable"}],
+    "names":[{"platform": "Angular","fileName": "igx-grid-context-menu-event-args.ts","mappedName": "IgxGridContextMenuEventArgs"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "data"}], "originalName": "Data"},
-      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "filteredData"}], "originalName": "FilteredData"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridContextMenuEventArgsDetail","mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "GridContextMenuEventArgsDetail",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Angular","fileName": "igx-grid-context-menu-event-args-detail.ts","mappedName": "IgxGridContextMenuEventArgsDetail"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "IgxCellType","mappedName": "cell"}], "originalName": "Cell"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "event"}], "originalName": "Event"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxRowType","mappedName": "row"}], "originalName": "Row"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "GridCreatedEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Angular","fileName": "igx-grid-created-event-args.ts","mappedName": "IgxGridCreatedEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridCreatedEventArgsDetail","mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "GridCreatedEventArgsDetail",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseEventArgsDetail",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Angular","fileName": "igx-grid-created-event-args-detail.ts","mappedName": "IgxGridCreatedEventArgsDetail"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "IgxHierarchicalGridComponent","mappedName": "grid"}], "originalName": "Grid"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxRowIsland","mappedName": "owner"}], "originalName": "Owner"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "parentID"}], "originalName": "ParentID"} ]
   },
   {
     "originalName": "GridEditDoneEventArgs",
@@ -1119,14 +1176,15 @@
     "names":[{"platform": "Angular","fileName": "igx-grid-edit-done-event-args-detail.ts","mappedName": "IgxGridEditDoneEventArgsDetail"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxGridCellIdentifier","mappedName": "cellID"}], "originalName": "CellID"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxColumn","mappedName": "column"}], "originalName": "Column"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent","mappedName": "column"}], "originalName": "Column"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isAddRow"}], "originalName": "IsAddRow"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "newValue"}], "originalName": "NewValue"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "oldValue"}], "originalName": "OldValue"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirectiveComponent","mappedName": "owner"}], "originalName": "Owner"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirective","mappedName": "owner"}], "originalName": "Owner"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "primaryKey"}], "originalName": "PrimaryKey"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "rowData"}], "originalName": "RowData"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "rowID"}], "originalName": "RowID"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "rowKey"}], "originalName": "RowKey"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "valid"}], "originalName": "Valid"} ]
   },
   {
@@ -1145,14 +1203,15 @@
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "cancel"}], "originalName": "Cancel"},
       {"names":[{"platform": "Angular", "mappedType": "IgxGridCellIdentifier","mappedName": "cellID"}], "originalName": "CellID"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxColumn","mappedName": "column"}], "originalName": "Column"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent","mappedName": "column"}], "originalName": "Column"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isAddRow"}], "originalName": "IsAddRow"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "newValue"}], "originalName": "NewValue"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "oldValue"}], "originalName": "OldValue"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirectiveComponent","mappedName": "owner"}], "originalName": "Owner"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirective","mappedName": "owner"}], "originalName": "Owner"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "primaryKey"}], "originalName": "PrimaryKey"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "rowData"}], "originalName": "RowData"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "rowID"}], "originalName": "RowID"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "rowKey"}], "originalName": "RowKey"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "valid"}], "originalName": "Valid"} ]
   },
@@ -1192,7 +1251,7 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Angular","fileName": "igx-grid-form-group-created-event-args-detail.ts","mappedName": "IgxGridFormGroupCreatedEventArgsDetail"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirectiveComponent","mappedName": "owner"}], "originalName": "Owner"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirective","mappedName": "owner"}], "originalName": "Owner"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
@@ -1243,6 +1302,15 @@
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "implicit"}], "originalName": "Implicit"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "GridPaginatorTemplateContext",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Angular","fileName": "igx-grid-paginator-template-context.ts","mappedName": "IgxGridPaginatorTemplateContext"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirective","mappedName": "implicit"}], "originalName": "Implicit"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
@@ -1315,6 +1383,7 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "igx_grid_excel_filter_sorting_desc_short"}], "originalName": "Igx_grid_excel_filter_sorting_desc_short"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "igx_grid_excel_filter_sorting_header"}], "originalName": "Igx_grid_excel_filter_sorting_header"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "igx_grid_excel_hide"}], "originalName": "Igx_grid_excel_hide"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "igx_grid_excel_matches_count"}], "originalName": "Igx_grid_excel_matches_count"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "igx_grid_excel_no_matches"}], "originalName": "Igx_grid_excel_no_matches"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "igx_grid_excel_number_filter"}], "originalName": "Igx_grid_excel_number_filter"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "igx_grid_excel_pin"}], "originalName": "Igx_grid_excel_pin"},
@@ -1396,7 +1465,6 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "igx_grid_pivot_empty_row_drop_area"}], "originalName": "Igx_grid_pivot_empty_row_drop_area"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "igx_grid_pivot_empty_value_drop_area"}], "originalName": "Igx_grid_pivot_empty_value_drop_area"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "igx_grid_pivot_filter_drop_chip"}], "originalName": "Igx_grid_pivot_filter_drop_chip"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "igx_grid_pivot_no_aggregator"}], "originalName": "Igx_grid_pivot_no_aggregator"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "igx_grid_pivot_row_drop_chip"}], "originalName": "Igx_grid_pivot_row_drop_chip"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "igx_grid_pivot_selector_columns"}], "originalName": "Igx_grid_pivot_selector_columns"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "igx_grid_pivot_selector_filters"}], "originalName": "Igx_grid_pivot_selector_filters"},
@@ -1447,7 +1515,7 @@
     "names":[{"platform": "Angular","fileName": "igx-grid-row-drag-ghost-context.ts","mappedName": "IgxGridRowDragGhostContext"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "data"}], "originalName": "Data"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirectiveComponent","mappedName": "grid"}], "originalName": "Grid"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirective","mappedName": "grid"}], "originalName": "Grid"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "implicit"}], "originalName": "Implicit"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
@@ -1468,6 +1536,25 @@
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "implicit"}], "originalName": "Implicit"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "GridRowEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Angular","fileName": "igx-grid-row-event-args.ts","mappedName": "IgxGridRowEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridRowEventArgsDetail","mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "GridRowEventArgsDetail",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseEventArgsDetail",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Angular","fileName": "igx-grid-row-event-args-detail.ts","mappedName": "IgxGridRowEventArgsDetail"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "event"}], "originalName": "Event"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxRowType","mappedName": "row"}], "originalName": "Row"} ]
   },
   {
     "originalName": "GridRowTemplateContext",
@@ -1504,8 +1591,8 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Angular","fileName": "igx-grid-selection-range.ts","mappedName": "IgxGridSelectionRange"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "columnEnd"}], "originalName": "ColumnEnd"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "columnStart"}], "originalName": "ColumnStart"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "columnEnd"}], "originalName": "ColumnEnd"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "columnStart"}], "originalName": "ColumnStart"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "rowEnd"}], "originalName": "RowEnd"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "rowStart"}], "originalName": "RowStart"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
@@ -1516,8 +1603,8 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Angular","fileName": "igx-grid-selection-range-detail.ts","mappedName": "IgxGridSelectionRangeDetail"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "columnEnd"}], "originalName": "ColumnEnd"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "columnStart"}], "originalName": "ColumnStart"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "columnEnd"}], "originalName": "ColumnEnd"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "columnStart"}], "originalName": "ColumnStart"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "rowEnd"}], "originalName": "RowEnd"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "rowStart"}], "originalName": "RowStart"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
@@ -1540,24 +1627,117 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "sort"}], "originalName": "Sort"} ]
   },
   {
+    "originalName": "GridState",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "GridStateBaseDirective",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Angular","fileName": "igx-grid-state.ts","dynamicModuleName": "igx-grid-state-dynamic-module.ts","moduleName": "igx-grid-state-module.ts","mappedName": "IgxGridState"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "applyState"}], "originalName": "ApplyState"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "applyStateFromString"}], "originalName": "ApplyStateFromString"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getState"}], "originalName": "GetState"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getStateAsString"}], "originalName": "GetStateAsString"} ]
+  },
+  {
+    "originalName": "GridStateBaseDirective",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Angular","fileName": "igx-grid-state-base-directive.ts","dynamicModuleName": "igx-grid-state-base-directive-dynamic-module.ts","moduleName": "igx-grid-state-base-directive-module.ts","mappedName": "IgxGridStateBaseDirective"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridStateOptions","mappedName": "options"}], "originalName": "Options"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "GridStateCollection",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Angular","fileName": "igx-grid-state-collection.ts","mappedName": "IgxGridStateCollection"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "id"}], "originalName": "Id"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "parentRowID"}], "originalName": "ParentRowID"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridState","mappedName": "state"}], "originalName": "State"} ]
+  },
+  {
+    "originalName": "GridStateInfo",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Angular","fileName": "igx-grid-state-info.ts","mappedName": "IgxGridStateInfo"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "IgxFilteringExpressionsTree","mappedName": "advancedFiltering"}], "originalName": "AdvancedFiltering"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridSelectionRange[]","mappedName": "cellSelection"}], "originalName": "CellSelection"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "columnSelection"}], "originalName": "ColumnSelection"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnState[]","mappedName": "columns"}], "originalName": "Columns"},
+      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "expansion"}], "originalName": "Expansion"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxFilteringExpressionsTree","mappedName": "filtering"}], "originalName": "Filtering"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGroupingState","mappedName": "groupBy"}], "originalName": "GroupBy"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "id"}], "originalName": "Id"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "moving"}], "originalName": "Moving"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxPagingState","mappedName": "paging"}], "originalName": "Paging"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxPinningConfig","mappedName": "pinningConfig"}], "originalName": "PinningConfig"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxPivotConfiguration","mappedName": "pivotConfiguration"}], "originalName": "PivotConfiguration"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridStateCollection[]","mappedName": "rowIslands"}], "originalName": "RowIslands"},
+      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "rowPinning"}], "originalName": "RowPinning"},
+      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "rowSelection"}], "originalName": "RowSelection"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxSortingExpression[]","mappedName": "sorting"}], "originalName": "Sorting"} ]
+  },
+  {
+    "originalName": "GridStateInfoDetail",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Angular","fileName": "igx-grid-state-info-detail.ts","mappedName": "IgxGridStateInfoDetail"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "IgxFilteringExpressionsTree","mappedName": "advancedFiltering"}], "originalName": "AdvancedFiltering"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridSelectionRange[]","mappedName": "cellSelection"}], "originalName": "CellSelection"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "columnSelection"}], "originalName": "ColumnSelection"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnState[]","mappedName": "columns"}], "originalName": "Columns"},
+      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "expansion"}], "originalName": "Expansion"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxFilteringExpressionsTree","mappedName": "filtering"}], "originalName": "Filtering"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGroupingState","mappedName": "groupBy"}], "originalName": "GroupBy"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "id"}], "originalName": "Id"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "moving"}], "originalName": "Moving"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxPagingState","mappedName": "paging"}], "originalName": "Paging"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxPinningConfig","mappedName": "pinningConfig"}], "originalName": "PinningConfig"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxPivotConfiguration","mappedName": "pivotConfiguration"}], "originalName": "PivotConfiguration"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridStateCollection[]","mappedName": "rowIslands"}], "originalName": "RowIslands"},
+      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "rowPinning"}], "originalName": "RowPinning"},
+      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "rowSelection"}], "originalName": "RowSelection"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxSortingExpression[]","mappedName": "sorting"}], "originalName": "Sorting"} ]
+  },
+  {
+    "originalName": "GridStateInfoEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Angular","fileName": "igx-grid-state-info-event-args.ts","mappedName": "IgxGridStateInfoEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridStateInfoDetail","mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
     "originalName": "GridTemplateContext",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Angular","fileName": "igx-grid-template-context.ts","mappedName": "IgxGridTemplateContext"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirectiveComponent","mappedName": "implicit"}], "originalName": "Implicit"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirective","mappedName": "implicit"}], "originalName": "Implicit"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
     "originalName": "GridToolbar",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "DisplayDensityBaseElement",
+    "originalBaseTypeName": "BaseElement",
     "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-grid-toolbar-component.ts","dynamicModuleName": "igx-grid-toolbar-dynamic-module.ts","moduleName": "igx-grid-toolbar-module.ts","mappedName": "IgxGridToolbarComponent"}],
+    "names":[{"platform": "Angular","fileName": "igx-grid-toolbar.ts","dynamicModuleName": "igx-grid-toolbar-dynamic-module.ts","moduleName": "igx-grid-toolbar-module.ts","mappedName": "IgxGridToolbar"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirectiveComponent","mappedName": "grid"}], "originalName": "Grid"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirective","mappedName": "grid"}], "originalName": "Grid"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "showProgress"}], "originalName": "ShowProgress"},
       {"names":[{"platform": "Angular", "mappedType": "IgxGridToolbarContentCollection","mappedName": "tools"}], "originalName": "Tools"} ]
   },
@@ -1596,8 +1776,7 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "exportCSV"}], "originalName": "ExportCSV"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "exportExcel"}], "originalName": "ExportExcel"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "exportGrid"}], "originalName": "ExportGrid"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "filename"}], "originalName": "Filename"},
-      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isExporting"}], "originalName": "IsExporting"} ]
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "filename"}], "originalName": "Filename"} ]
   },
   {
     "originalName": "GridToolbarExportEventArgs",
@@ -1617,7 +1796,7 @@
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "cancel"}], "originalName": "Cancel"},
       {"names":[{"platform": "Angular", "mappedType": "IgxBaseExporter","mappedName": "exporter"}], "originalName": "Exporter"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirectiveComponent","mappedName": "grid"}], "originalName": "Grid"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirective","mappedName": "grid"}], "originalName": "Grid"},
       {"names":[{"platform": "Angular", "mappedType": "IgxExporterOptionsBase","mappedName": "options"}], "originalName": "Options"} ]
   },
   {
@@ -1637,6 +1816,15 @@
     "names":[{"platform": "Angular","fileName": "igx-grid-toolbar-pinning.ts","dynamicModuleName": "igx-grid-toolbar-pinning-dynamic-module.ts","moduleName": "igx-grid-toolbar-pinning-module.ts","mappedName": "IgxGridToolbarPinning"}]
   },
   {
+    "originalName": "GridToolbarTemplateContext",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Angular","fileName": "igx-grid-toolbar-template-context.ts","mappedName": "IgxGridToolbarTemplateContext"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirective","mappedName": "implicit"}], "originalName": "Implicit"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
     "originalName": "GridToolbarTitle",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
@@ -1645,17 +1833,6 @@
     "names":[{"platform": "Angular","fileName": "igx-grid-toolbar-title.ts","dynamicModuleName": "igx-grid-toolbar-title-dynamic-module.ts","moduleName": "igx-grid-toolbar-title-module.ts","mappedName": "IgxGridToolbarTitle"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
-    "originalName": "GridValidationService",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-grid-validation-service.ts","mappedName": "IgxGridValidationService"}],
-    "members":[
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "clear"}], "originalName": "Clear"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getInvalid"}], "originalName": "GetInvalid"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "markAsTouched"}], "originalName": "MarkAsTouched"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
@@ -1682,7 +1859,7 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Angular","fileName": "igx-grid-validation-status-event-args-detail.ts","mappedName": "IgxGridValidationStatusEventArgsDetail"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirectiveComponent","mappedName": "owner"}], "originalName": "Owner"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirective","mappedName": "owner"}], "originalName": "Owner"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "ValidationStatus","mappedName": "status"}], "originalName": "Status"} ]
   },
@@ -1712,7 +1889,7 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Angular","fileName": "igx-group-by-record.ts","mappedName": "IgxGroupByRecord"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "IgxColumn","mappedName": "column"}], "originalName": "Column"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent","mappedName": "column"}], "originalName": "Column"},
       {"names":[{"platform": "Angular", "mappedType": "IgxSortingExpression","mappedName": "expression"}], "originalName": "Expression"},
       {"names":[{"platform": "Angular", "mappedType": "IgxGroupByRecord","mappedName": "groupParent"}], "originalName": "GroupParent"},
       {"names":[{"platform": "Angular", "mappedType": "IgxGroupByRecord[]","mappedName": "groups"}], "originalName": "Groups"},
@@ -1762,14 +1939,6 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
-    "originalName": "GroupByRowTemplateContextEventArgs",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-group-by-row-template-context-event-args.ts","mappedName": "IgxGroupByRowTemplateContextEventArgs"}],
-    "members":[
-      {"names":[{"platform": "Angular", "mappedType": "IgxGroupByRowTemplateContext","mappedName": "detail"}], "originalName": "Detail"} ]
-  },
-  {
     "originalName": "GroupingDoneEventArgs",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -1786,8 +1955,8 @@
     "names":[{"platform": "Angular","fileName": "igx-grouping-done-event-args-detail.ts","mappedName": "IgxGroupingDoneEventArgsDetail"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxSortingExpression[]","mappedName": "expressions"}], "originalName": "Expressions"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxColumn[]","mappedName": "groupedColumns"}], "originalName": "GroupedColumns"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxColumn[]","mappedName": "ungroupedColumns"}], "originalName": "UngroupedColumns"} ]
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent[]","mappedName": "groupedColumns"}], "originalName": "GroupedColumns"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent[]","mappedName": "ungroupedColumns"}], "originalName": "UngroupedColumns"} ]
   },
   {
     "originalName": "GroupingExpression",
@@ -1798,14 +1967,6 @@
     "names":[{"platform": "Angular","fileName": "igx-grouping-expression.ts","mappedName": "IgxGroupingExpression"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "groupingComparer"}], "originalName": "GroupingComparer"} ]
-  },
-  {
-    "originalName": "GroupingExpressionEventArgs",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-grouping-expression-event-args.ts","mappedName": "IgxGroupingExpressionEventArgs"}],
-    "members":[
-      {"names":[{"platform": "Angular", "mappedType": "IgxGroupingExpression[]","mappedName": "detail"}], "originalName": "Detail"} ]
   },
   {
     "originalName": "GroupingState",
@@ -1824,8 +1985,7 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Angular","fileName": "igx-header-type.ts","mappedName": "IgxHeaderType"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "IgxColumn","mappedName": "column"}], "originalName": "Column"},
-      {"names":[{"platform": "Angular", "mappedType": "DisplayDensity","mappedName": "density"}], "originalName": "Density"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent","mappedName": "column"}], "originalName": "Column"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "selectable"}], "originalName": "Selectable"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "selected"}], "originalName": "Selected"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
@@ -1853,6 +2013,41 @@
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "selectedCount"}], "originalName": "SelectedCount"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "totalCount"}], "originalName": "TotalCount"} ]
+  },
+  {
+    "originalName": "HierarchicalGrid",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "HierarchicalGridBaseDirective",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Angular","fileName": "igx-hierarchical-grid-component.ts","mappedName": "IgxHierarchicalGridComponent"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "IgxRowIslandCollection","mappedName": "childLayoutList"}], "originalName": "ChildLayoutList"},
+      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "data"}], "originalName": "Data"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "expandChildren"}], "originalName": "ExpandChildren"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "foreignKey"}], "originalName": "ForeignKey"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getCellByColumn"}], "originalName": "GetCellByColumn"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getCellByKey"}], "originalName": "GetCellByKey"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getDefaultExpandState"}], "originalName": "GetDefaultExpandState"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getRowByIndex"}], "originalName": "GetRowByIndex"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getRowByKey"}], "originalName": "GetRowByKey"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "id"}], "originalName": "Id"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "pinRow"}], "originalName": "PinRow"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxCellType[]","mappedName": "selectedCells"}], "originalName": "SelectedCells"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "totalItemCount"}], "originalName": "TotalItemCount"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "unpinRow"}], "originalName": "UnpinRow"} ]
+  },
+  {
+    "originalName": "HierarchicalGridBaseDirective",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "GridBaseDirective",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Angular","fileName": "igx-hierarchical-grid-base-directive.ts","mappedName": "IgxHierarchicalGridBaseDirective"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "hasChildrenKey"}], "originalName": "HasChildrenKey"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirective","mappedName": "rootGrid"}], "originalName": "RootGrid"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "showExpandAll"}], "originalName": "ShowExpandAll"} ]
   },
   {
     "originalName": "NumberFilteringOperand",
@@ -1940,10 +2135,12 @@
     "originalName": "Paginator",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "DisplayDensityBaseElement",
+    "originalBaseTypeName": "BaseElement",
     "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-paginator-component.ts","dynamicModuleName": "igx-paginator-dynamic-module.ts","moduleName": "igx-paginator-module.ts","mappedName": "IgxPaginatorComponent"}],
+    "names":[{"platform": "Angular","fileName": "igx-paginator.ts","dynamicModuleName": "igx-paginator-dynamic-module.ts","moduleName": "igx-paginator-module.ts","mappedName": "IgxPaginator"}],
     "members":[
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isFirstPage"}], "originalName": "IsFirstPage"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isLastPage"}], "originalName": "IsLastPage"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "nextPage"}], "originalName": "NextPage"},
       {"names":[{"platform": "Angular", "mappedType": "IgxOverlaySettings","mappedName": "overlaySettings"}], "originalName": "OverlaySettings"},
@@ -1953,6 +2150,7 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "previousPage"}], "originalName": "PreviousPage"},
       {"names":[{"platform": "Angular", "mappedType": "IgxPaginatorResourceStrings","mappedName": "resourceStrings"}], "originalName": "ResourceStrings"},
       {"names":[{"platform": "Angular", "mappedType": "number[]","mappedName": "selectOptions"}], "originalName": "SelectOptions"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "totalPages"}], "originalName": "TotalPages"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "totalRecords"}], "originalName": "TotalRecords"} ]
   },
@@ -1971,13 +2169,13 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
-    "originalName": "PathSegment",
+    "originalName": "PagingState",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-path-segment.ts","mappedName": "IgxPathSegment"}],
+    "names":[{"platform": "Angular","fileName": "igx-paging-state.ts","mappedName": "IgxPagingState"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "rowID"}], "originalName": "RowID"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "rowIslandKey"}], "originalName": "RowIslandKey"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "recordsPerPage"}], "originalName": "RecordsPerPage"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
@@ -1995,7 +2193,7 @@
     "names":[{"platform": "Angular","fileName": "igx-pin-column-cancellable-event-args-detail.ts","mappedName": "IgxPinColumnCancellableEventArgsDetail"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "cancel"}], "originalName": "Cancel"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxColumn","mappedName": "column"}], "originalName": "Column"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent","mappedName": "column"}], "originalName": "Column"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "insertAtIndex"}], "originalName": "InsertAtIndex"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isPinned"}], "originalName": "IsPinned"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
@@ -2016,7 +2214,7 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Angular","fileName": "igx-pin-column-event-args-detail.ts","mappedName": "IgxPinColumnEventArgsDetail"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "IgxColumn","mappedName": "column"}], "originalName": "Column"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent","mappedName": "column"}], "originalName": "Column"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "insertAtIndex"}], "originalName": "InsertAtIndex"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isPinned"}], "originalName": "IsPinned"} ]
   },
@@ -2050,6 +2248,7 @@
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "owner"}], "originalName": "Owner"},
       {"names":[{"platform": "Angular", "mappedType": "IgxRowType","mappedName": "row"}], "originalName": "Row"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "rowID"}], "originalName": "RowID"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "rowKey"}], "originalName": "RowKey"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
@@ -2058,6 +2257,7 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Angular","fileName": "igx-pivot-aggregator.ts","mappedName": "IgxPivotAggregator"}],
     "members":[
+      {"names":[{"platform": "Angular", "mappedType": "(members: any[], data: any[]) => void","mappedName": "aggregator"}], "originalName": "Aggregator"},
       {"names":[{"platform": "Angular", "mappedType": "PivotAggregationType","mappedName": "aggregatorName"}], "originalName": "AggregatorName"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "key"}], "originalName": "Key"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "label"}], "originalName": "Label"},
@@ -2070,13 +2270,13 @@
     "names":[{"platform": "Angular","fileName": "igx-pivot-configuration.ts","mappedName": "IgxPivotConfiguration"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxPivotDimensionStrategy","mappedName": "columnStrategy"}], "originalName": "ColumnStrategy"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxPivotDimensionCollection","mappedName": "columns"}], "originalName": "Columns"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxPivotDimensionCollection","mappedName": "filters"}], "originalName": "Filters"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxPivotDimension[]","mappedName": "columns"}], "originalName": "Columns"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxPivotDimension[]","mappedName": "filters"}], "originalName": "Filters"},
       {"names":[{"platform": "Angular", "mappedType": "IgxPivotKeys","mappedName": "pivotKeys"}], "originalName": "PivotKeys"},
       {"names":[{"platform": "Angular", "mappedType": "IgxPivotDimensionStrategy","mappedName": "rowStrategy"}], "originalName": "RowStrategy"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxPivotDimensionCollection","mappedName": "rows"}], "originalName": "Rows"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxPivotDimension[]","mappedName": "rows"}], "originalName": "Rows"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxPivotValueCollection","mappedName": "values"}], "originalName": "Values"} ]
+      {"names":[{"platform": "Angular", "mappedType": "IgxPivotValue[]","mappedName": "values"}], "originalName": "Values"} ]
   },
   {
     "originalName": "PivotConfigurationChangedEventArgs",
@@ -2118,6 +2318,7 @@
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxPivotDimension","mappedName": "baseDimension"}], "originalName": "BaseDimension"},
       {"names":[{"platform": "Angular", "mappedType": "GridColumnDataType","mappedName": "dataType"}], "originalName": "DataType"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "displayName"}], "originalName": "DisplayName"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "enabled"}], "originalName": "Enabled"},
       {"names":[{"platform": "Angular", "mappedType": "IgxPivotDateDimensionOptions","mappedName": "options"}], "originalName": "Options"},
       {"names":[{"platform": "Angular", "mappedType": "IgxGridResourceStrings","mappedName": "resourceStrings"}], "originalName": "ResourceStrings"} ]
@@ -2143,12 +2344,15 @@
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxPivotDimension","mappedName": "childLevel"}], "originalName": "ChildLevel"},
       {"names":[{"platform": "Angular", "mappedType": "GridColumnDataType","mappedName": "dataType"}], "originalName": "DataType"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "displayName"}], "originalName": "DisplayName"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "enabled"}], "originalName": "Enabled"},
       {"names":[{"platform": "Angular", "mappedType": "IgxFilteringExpressionsTree","mappedName": "filter"}], "originalName": "Filter"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "horizontalSummary"}], "originalName": "HorizontalSummary"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "level"}], "originalName": "Level"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "memberName"}], "originalName": "MemberName"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "SortingDirection","mappedName": "sortDirection"}], "originalName": "SortDirection"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "sortable"}], "originalName": "Sortable"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "width"}], "originalName": "Width"} ]
   },
   {
@@ -2159,12 +2363,15 @@
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxPivotDimension","mappedName": "childLevel"}], "originalName": "ChildLevel"},
       {"names":[{"platform": "Angular", "mappedType": "GridColumnDataType","mappedName": "dataType"}], "originalName": "DataType"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "displayName"}], "originalName": "DisplayName"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "enabled"}], "originalName": "Enabled"},
       {"names":[{"platform": "Angular", "mappedType": "IgxFilteringExpressionsTree","mappedName": "filter"}], "originalName": "Filter"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "horizontalSummary"}], "originalName": "HorizontalSummary"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "level"}], "originalName": "Level"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "memberName"}], "originalName": "MemberName"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Angular", "mappedType": "SortingDirection","mappedName": "sortDirection"}], "originalName": "SortDirection"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "sortable"}], "originalName": "Sortable"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "width"}], "originalName": "Width"} ]
   },
   {
@@ -2193,6 +2400,7 @@
     "names":[{"platform": "Angular","fileName": "igx-pivot-grid-component.ts","mappedName": "IgxPivotGridComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxPivotDimension[]","mappedName": "allDimensions"}], "originalName": "AllDimensions"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "autoGenerateConfig"}], "originalName": "AutoGenerateConfig"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "autoSizeRowDimension"}], "originalName": "AutoSizeRowDimension"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "data"}], "originalName": "Data"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "defaultExpandState"}], "originalName": "DefaultExpandState"},
@@ -2206,9 +2414,10 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "moveValue"}], "originalName": "MoveValue"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "notifyDimensionChange"}], "originalName": "NotifyDimensionChange"},
       {"names":[{"platform": "Angular", "mappedType": "IgxPivotConfiguration","mappedName": "pivotConfiguration"}], "originalName": "PivotConfiguration"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxPivotUISettings","mappedName": "pivotUI"}], "originalName": "PivotUI"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "removeDimension"}], "originalName": "RemoveDimension"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "removeValue"}], "originalName": "RemoveValue"},
-      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "showPivotConfigurationUI"}], "originalName": "ShowPivotConfigurationUI"},
+      {"names":[{"platform": "Angular", "mappedType": "(arg: IgxColumnTemplateContext) => any","mappedName": "rowDimensionHeaderTemplate"}], "originalName": "RowDimensionHeaderTemplate"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "sortDimension"}], "originalName": "SortDimension"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "superCompactMode"}], "originalName": "SuperCompactMode"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "toggleColumn"}], "originalName": "ToggleColumn"},
@@ -2234,10 +2443,12 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Angular","fileName": "igx-pivot-grid-record.ts","mappedName": "IgxPivotGridRecord"}],
     "members":[
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "dataIndex"}], "originalName": "DataIndex"},
       {"names":[{"platform": "Angular", "mappedType": "IgxPivotDimension[]","mappedName": "dimensions"}], "originalName": "Dimensions"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "level"}], "originalName": "Level"},
       {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "records"}], "originalName": "Records"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "totalRecordDimensionName"}], "originalName": "TotalRecordDimensionName"} ]
   },
   {
     "originalName": "PivotGridValueTemplateContext",
@@ -2263,13 +2474,25 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
+    "originalName": "PivotUISettings",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Angular","fileName": "igx-pivot-ui-settings.ts","mappedName": "IgxPivotUISettings"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "PivotSummaryPosition","mappedName": "horizontalSummariesPosition"}], "originalName": "HorizontalSummariesPosition"},
+      {"names":[{"platform": "Angular", "mappedType": "PivotRowLayoutType","mappedName": "rowLayout"}], "originalName": "RowLayout"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "showConfiguration"}], "originalName": "ShowConfiguration"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "showRowHeaders"}], "originalName": "ShowRowHeaders"} ]
+  },
+  {
     "originalName": "PivotValue",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Angular","fileName": "igx-pivot-value.ts","mappedName": "IgxPivotValue"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxPivotAggregator","mappedName": "aggregate"}], "originalName": "Aggregate"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxPivotAggregatorCollection","mappedName": "aggregateList"}], "originalName": "AggregateList"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxPivotAggregator[]","mappedName": "aggregateList"}], "originalName": "AggregateList"},
       {"names":[{"platform": "Angular", "mappedType": "GridColumnDataType","mappedName": "dataType"}], "originalName": "DataType"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "displayName"}], "originalName": "DisplayName"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "enabled"}], "originalName": "Enabled"},
@@ -2284,7 +2507,7 @@
     "names":[{"platform": "Angular","fileName": "igx-pivot-value-detail.ts","mappedName": "IgxPivotValueDetail"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxPivotAggregator","mappedName": "aggregate"}], "originalName": "Aggregate"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxPivotAggregatorCollection","mappedName": "aggregateList"}], "originalName": "AggregateList"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxPivotAggregator[]","mappedName": "aggregateList"}], "originalName": "AggregateList"},
       {"names":[{"platform": "Angular", "mappedType": "GridColumnDataType","mappedName": "dataType"}], "originalName": "DataType"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "displayName"}], "originalName": "DisplayName"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "enabled"}], "originalName": "Enabled"},
@@ -2310,7 +2533,6 @@
       {"names":[{"platform": "Angular", "mappedType": "GridHorizontalAlignment","mappedName": "horizontalStartPoint"}], "originalName": "HorizontalStartPoint"},
       {"names":[{"platform": "Angular", "mappedType": "IgxSize","mappedName": "minSize"}], "originalName": "MinSize"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
-      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "target"}], "originalName": "Target"},
       {"names":[{"platform": "Angular", "mappedType": "GridVerticalAlignment","mappedName": "verticalDirection"}], "originalName": "VerticalDirection"},
       {"names":[{"platform": "Angular", "mappedType": "GridVerticalAlignment","mappedName": "verticalStartPoint"}], "originalName": "VerticalStartPoint"} ]
   },
@@ -2325,15 +2547,29 @@
       {"names":[{"platform": "Angular", "mappedType": "IgxPositionSettings","mappedName": "settings"}], "originalName": "Settings"} ]
   },
   {
-    "originalName": "RecordValidationState",
+    "originalName": "RowDataCancelableEventArgs",
     "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "GridValidationState",
     "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-record-validation-state.ts","mappedName": "IgxRecordValidationState"}],
+    "names":[{"platform": "Angular","fileName": "igx-row-data-cancelable-event-args.ts","mappedName": "IgxRowDataCancelableEventArgs"}],
     "members":[
-      {"names":[{"platform": "Angular", "mappedType": "IgxFieldValidationState[]","mappedName": "fields"}], "originalName": "Fields"},
-      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "key"}], "originalName": "Key"} ]
+      {"names":[{"platform": "Angular", "mappedType": "IgxRowDataCancelableEventArgsDetail","mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "RowDataCancelableEventArgsDetail",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Angular","fileName": "igx-row-data-cancelable-event-args-detail.ts","mappedName": "IgxRowDataCancelableEventArgsDetail"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridCellIdentifier","mappedName": "cellID"}], "originalName": "CellID"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "data"}], "originalName": "Data"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isAddRow"}], "originalName": "IsAddRow"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "newValue"}], "originalName": "NewValue"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "oldValue"}], "originalName": "OldValue"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirective","mappedName": "owner"}], "originalName": "Owner"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "primaryKey"}], "originalName": "PrimaryKey"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "rowData"}], "originalName": "RowData"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "rowKey"}], "originalName": "RowKey"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
     "originalName": "RowDataEventArgs",
@@ -2352,7 +2588,9 @@
     "names":[{"platform": "Angular","fileName": "igx-row-data-event-args-detail.ts","mappedName": "IgxRowDataEventArgsDetail"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "data"}], "originalName": "Data"},
-      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "primaryKey"}], "originalName": "PrimaryKey"} ]
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "primaryKey"}], "originalName": "PrimaryKey"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "rowData"}], "originalName": "RowData"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "rowKey"}], "originalName": "RowKey"} ]
   },
   {
     "originalName": "RowDirective",
@@ -2434,6 +2672,145 @@
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "rowIndex"}], "originalName": "RowIndex"} ]
   },
   {
+    "originalName": "RowIsland",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Angular","fileName": "igx-row-island.ts","dynamicModuleName": "igx-row-island-dynamic-module.ts","moduleName": "igx-row-island-module.ts","mappedName": "IgxRowIsland"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "IgxActionStripCollection","mappedName": "actionStripComponents"}], "originalName": "ActionStripComponents"},
+      {"names":[{"platform": "Angular", "mappedType": "(arg: any) => any","mappedName": "addRowEmptyTemplate"}], "originalName": "AddRowEmptyTemplate"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxFilteringExpressionsTree","mappedName": "advancedFilteringExpressionsTree"}], "originalName": "AdvancedFilteringExpressionsTree"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "allowAdvancedFiltering"}], "originalName": "AllowAdvancedFiltering"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "allowFiltering"}], "originalName": "AllowFiltering"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "autoGenerate"}], "originalName": "AutoGenerate"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "autoGenerateExclude"}], "originalName": "AutoGenerateExclude"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "batchEditing"}], "originalName": "BatchEditing"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "beginAddRowById"}], "originalName": "BeginAddRowById"},
+      {"names":[{"platform": "Angular", "mappedType": "GridSelectionMode","mappedName": "cellSelection"}], "originalName": "CellSelection"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "childDataKey"}], "originalName": "ChildDataKey"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxRowIslandCollection","mappedName": "childLayoutList"}], "originalName": "ChildLayoutList"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "clearCellSelection"}], "originalName": "ClearCellSelection"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "clearFilter"}], "originalName": "ClearFilter"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "clearSearch"}], "originalName": "ClearSearch"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "clearSort"}], "originalName": "ClearSort"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxClipboardOptions","mappedName": "clipboardOptions"}], "originalName": "ClipboardOptions"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "closeAdvancedFilteringDialog"}], "originalName": "CloseAdvancedFilteringDialog"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "collapseAll"}], "originalName": "CollapseAll"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "collapseRow"}], "originalName": "CollapseRow"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnCollection","mappedName": "columnList"}], "originalName": "ColumnList"},
+      {"names":[{"platform": "Angular", "mappedType": "GridSelectionMode","mappedName": "columnSelection"}], "originalName": "ColumnSelection"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "columnWidth"}], "originalName": "ColumnWidth"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxColumnComponent[]","mappedName": "columns"}], "originalName": "Columns"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxDataCloneStrategy","mappedName": "dataCloneStrategy"}], "originalName": "DataCloneStrategy"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "defaultHeaderGroupMinWidth"}], "originalName": "DefaultHeaderGroupMinWidth"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "defaultRowHeight"}], "originalName": "DefaultRowHeight"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "deleteRow"}], "originalName": "DeleteRow"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "deselectAllColumns"}], "originalName": "DeselectAllColumns"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "deselectAllRows"}], "originalName": "DeselectAllRows"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "deselectColumns"}], "originalName": "DeselectColumns"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "deselectRows"}], "originalName": "DeselectRows"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "disableSummaries"}], "originalName": "DisableSummaries"},
+      {"names":[{"platform": "Angular", "mappedType": "(arg: IgxGridRowDragGhostContext) => any","mappedName": "dragGhostCustomTemplate"}], "originalName": "DragGhostCustomTemplate"},
+      {"names":[{"platform": "Angular", "mappedType": "(arg: IgxGridEmptyTemplateContext) => any","mappedName": "dragIndicatorIconTemplate"}], "originalName": "DragIndicatorIconTemplate"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "emptyFilteredGridMessage"}], "originalName": "EmptyFilteredGridMessage"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "emptyGridMessage"}], "originalName": "EmptyGridMessage"},
+      {"names":[{"platform": "Angular", "mappedType": "(arg: any) => any","mappedName": "emptyGridTemplate"}], "originalName": "EmptyGridTemplate"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "enableSummaries"}], "originalName": "EnableSummaries"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "endEdit"}], "originalName": "EndEdit"},
+      {"names":[{"platform": "Angular", "mappedType": "(arg: IgxGridHeaderTemplateContext) => any","mappedName": "excelStyleHeaderIconTemplate"}], "originalName": "ExcelStyleHeaderIconTemplate"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "expandAll"}], "originalName": "ExpandAll"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "expandChildren"}], "originalName": "ExpandChildren"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "expandRow"}], "originalName": "ExpandRow"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "filter"}], "originalName": "Filter"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "filterGlobal"}], "originalName": "FilterGlobal"},
+      {"names":[{"platform": "Angular", "mappedType": "FilterMode","mappedName": "filterMode"}], "originalName": "FilterMode"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxFilteringStrategy","mappedName": "filterStrategy"}], "originalName": "FilterStrategy"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxFilteringExpressionsTree","mappedName": "filteringExpressionsTree"}], "originalName": "FilteringExpressionsTree"},
+      {"names":[{"platform": "Angular", "mappedType": "FilteringLogic","mappedName": "filteringLogic"}], "originalName": "FilteringLogic"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "findNext"}], "originalName": "FindNext"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "findPrev"}], "originalName": "FindPrev"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getColumnByName"}], "originalName": "GetColumnByName"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getColumnByVisibleIndex"}], "originalName": "GetColumnByVisibleIndex"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getHeaderGroupWidth"}], "originalName": "GetHeaderGroupWidth"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getNextCell"}], "originalName": "GetNextCell"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getPinnedWidth"}], "originalName": "GetPinnedWidth"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getPreviousCell"}], "originalName": "GetPreviousCell"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getRowData"}], "originalName": "GetRowData"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getSelectedColumnsData"}], "originalName": "GetSelectedColumnsData"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getSelectedData"}], "originalName": "GetSelectedData"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getSelectedRanges"}], "originalName": "GetSelectedRanges"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "hasChildrenKey"}], "originalName": "HasChildrenKey"},
+      {"names":[{"platform": "Angular", "mappedType": "(arg: IgxHeadSelectorTemplateContext) => any","mappedName": "headSelectorTemplate"}], "originalName": "HeadSelectorTemplate"},
+      {"names":[{"platform": "Angular", "mappedType": "(arg: IgxGridTemplateContext) => any","mappedName": "headerCollapsedIndicatorTemplate"}], "originalName": "HeaderCollapsedIndicatorTemplate"},
+      {"names":[{"platform": "Angular", "mappedType": "(arg: IgxGridTemplateContext) => any","mappedName": "headerExpandedIndicatorTemplate"}], "originalName": "HeaderExpandedIndicatorTemplate"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "height"}], "originalName": "Height"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "hideRowSelectors"}], "originalName": "HideRowSelectors"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isLoading"}], "originalName": "IsLoading"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "isRecordPinnedByIndex"}], "originalName": "IsRecordPinnedByIndex"},
+      {"names":[{"platform": "Angular", "mappedType": "(arg: any) => any","mappedName": "loadingGridTemplate"}], "originalName": "LoadingGridTemplate"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "locale"}], "originalName": "Locale"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "markForCheck"}], "originalName": "MarkForCheck"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "moveColumn"}], "originalName": "MoveColumn"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "moving"}], "originalName": "Moving"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "navigateTo"}], "originalName": "NavigateTo"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "openAdvancedFilteringDialog"}], "originalName": "OpenAdvancedFilteringDialog"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxPaginatorCollection","mappedName": "paginationComponents"}], "originalName": "PaginationComponents"},
+      {"names":[{"platform": "Angular", "mappedType": "GridPagingMode","mappedName": "pagingMode"}], "originalName": "PagingMode"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "pinColumn"}], "originalName": "PinColumn"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxPinningConfig","mappedName": "pinning"}], "originalName": "Pinning"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "primaryKey"}], "originalName": "PrimaryKey"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "recalculateAutoSizes"}], "originalName": "RecalculateAutoSizes"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "refreshSearch"}], "originalName": "RefreshSearch"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridResourceStrings","mappedName": "resourceStrings"}], "originalName": "ResourceStrings"},
+      {"names":[{"platform": "Angular", "mappedType": "(arg: IgxGridEmptyTemplateContext) => any","mappedName": "rowAddTextTemplate"}], "originalName": "RowAddTextTemplate"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "rowClasses"}], "originalName": "RowClasses"},
+      {"names":[{"platform": "Angular", "mappedType": "(arg: IgxGridRowTemplateContext) => any","mappedName": "rowCollapsedIndicatorTemplate"}], "originalName": "RowCollapsedIndicatorTemplate"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "rowDraggable"}], "originalName": "RowDraggable"},
+      {"names":[{"platform": "Angular", "mappedType": "(arg: IgxGridRowEditActionsTemplateContext) => any","mappedName": "rowEditActionsTemplate"}], "originalName": "RowEditActionsTemplate"},
+      {"names":[{"platform": "Angular", "mappedType": "(arg: IgxGridRowEditTextTemplateContext) => any","mappedName": "rowEditTextTemplate"}], "originalName": "RowEditTextTemplate"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "rowEditable"}], "originalName": "RowEditable"},
+      {"names":[{"platform": "Angular", "mappedType": "(arg: IgxGridRowTemplateContext) => any","mappedName": "rowExpandedIndicatorTemplate"}], "originalName": "RowExpandedIndicatorTemplate"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "rowHeight"}], "originalName": "RowHeight"},
+      {"names":[{"platform": "Angular", "mappedType": "GridSelectionMode","mappedName": "rowSelection"}], "originalName": "RowSelection"},
+      {"names":[{"platform": "Angular", "mappedType": "(arg: IgxRowSelectorTemplateContext) => any","mappedName": "rowSelectorTemplate"}], "originalName": "RowSelectorTemplate"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "rowStyles"}], "originalName": "RowStyles"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "selectAllColumns"}], "originalName": "SelectAllColumns"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "selectAllRows"}], "originalName": "SelectAllRows"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "selectColumns"}], "originalName": "SelectColumns"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "selectRange"}], "originalName": "SelectRange"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "selectRowOnClick"}], "originalName": "SelectRowOnClick"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "selectRows"}], "originalName": "SelectRows"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "selectedColumns"}], "originalName": "SelectedColumns"},
+      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "selectedRows"}], "originalName": "SelectedRows"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "shouldGenerate"}], "originalName": "ShouldGenerate"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "showExpandAll"}], "originalName": "ShowExpandAll"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "showSummaryOnCollapse"}], "originalName": "ShowSummaryOnCollapse"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "snackbarDisplayTime"}], "originalName": "SnackbarDisplayTime"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "sort"}], "originalName": "Sort"},
+      {"names":[{"platform": "Angular", "mappedType": "(arg: IgxGridHeaderTemplateContext) => any","mappedName": "sortAscendingHeaderIconTemplate"}], "originalName": "SortAscendingHeaderIconTemplate"},
+      {"names":[{"platform": "Angular", "mappedType": "(arg: IgxGridHeaderTemplateContext) => any","mappedName": "sortDescendingHeaderIconTemplate"}], "originalName": "SortDescendingHeaderIconTemplate"},
+      {"names":[{"platform": "Angular", "mappedType": "(arg: IgxGridHeaderTemplateContext) => any","mappedName": "sortHeaderIconTemplate"}], "originalName": "SortHeaderIconTemplate"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridSortingStrategy","mappedName": "sortStrategy"}], "originalName": "SortStrategy"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxSortingExpression[]","mappedName": "sortingExpressions"}], "originalName": "SortingExpressions"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxSortingOptions","mappedName": "sortingOptions"}], "originalName": "SortingOptions"},
+      {"names":[{"platform": "Angular", "mappedType": "GridSummaryCalculationMode","mappedName": "summaryCalculationMode"}], "originalName": "SummaryCalculationMode"},
+      {"names":[{"platform": "Angular", "mappedType": "GridSummaryPosition","mappedName": "summaryPosition"}], "originalName": "SummaryPosition"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "summaryRowHeight"}], "originalName": "SummaryRowHeight"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "toggleColumnVisibility"}], "originalName": "ToggleColumnVisibility"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "toggleRow"}], "originalName": "ToggleRow"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridToolbarCollection","mappedName": "toolbar"}], "originalName": "Toolbar"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "totalRecords"}], "originalName": "TotalRecords"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "unpinColumn"}], "originalName": "UnpinColumn"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "updateCell"}], "originalName": "UpdateCell"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "updateRow"}], "originalName": "UpdateRow"},
+      {"names":[{"platform": "Angular", "mappedType": "GridValidationTrigger","mappedName": "validationTrigger"}], "originalName": "ValidationTrigger"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "width"}], "originalName": "Width"} ]
+  },
+  {
     "originalName": "RowSelectionEventArgs",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -2497,7 +2874,8 @@
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "cancel"}], "originalName": "Cancel"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "expanded"}], "originalName": "Expanded"},
-      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "rowID"}], "originalName": "RowID"} ]
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "rowID"}], "originalName": "RowID"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "rowKey"}], "originalName": "RowKey"} ]
   },
   {
     "originalName": "RowType",
@@ -2515,7 +2893,7 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "ephemeralKey"}], "originalName": "EphemeralKey"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "expanded"}], "originalName": "Expanded"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "focused"}], "originalName": "Focused"},
-      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirectiveComponent","mappedName": "grid"}], "originalName": "Grid"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridBaseDirective","mappedName": "grid"}], "originalName": "Grid"},
       {"names":[{"platform": "Angular", "mappedType": "IgxGroupByRecord","mappedName": "groupRow"}], "originalName": "GroupRow"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "hasChildren"}], "originalName": "HasChildren"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "inEditMode"}], "originalName": "InEditMode"},
@@ -2547,15 +2925,13 @@
   {
     "originalName": "SearchInfo",
     "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseSearchInfo",
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Angular","fileName": "igx-search-info.ts","mappedName": "IgxSearchInfo"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "activeMatchIndex"}], "originalName": "ActiveMatchIndex"},
-      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "caseSensitive"}], "originalName": "CaseSensitive"},
-      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "exactMatch"}], "originalName": "ExactMatch"},
-      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "matchInfoCache"}], "originalName": "MatchInfoCache"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "searchText"}], "originalName": "SearchText"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "matchInfoCache"}], "originalName": "MatchInfoCache"} ]
   },
   {
     "originalName": "Size",
@@ -2688,21 +3064,6 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "operate"}], "originalName": "Operate"} ]
   },
   {
-    "originalName": "ToggleDirective",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-toggle-directive.ts","mappedName": "IgxToggleDirective"}],
-    "members":[
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "id"}], "originalName": "Id"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "open"}], "originalName": "Open"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "reposition"}], "originalName": "Reposition"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setOffset"}], "originalName": "SetOffset"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "toggle"}], "originalName": "Toggle"} ]
-  },
-  {
     "originalName": "ToggleViewCancelableEventArgs",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -2819,17 +3180,6 @@
       {"names":[{"platform": "Angular", "mappedType": "IgxValuesChangeDetail","mappedName": "detail"}], "originalName": "Detail"} ]
   },
   {
-    "originalName": "DisplayDensityBaseElement",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-display-density-base-element-component.ts","mappedName": "IgxDisplayDensityBaseElementComponent"}],
-    "members":[
-      {"names":[{"platform": "Angular", "mappedType": "DisplayDensity","mappedName": "displayDensity"}], "originalName": "DisplayDensity"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
     "originalName": "FilteringExpressionsTreeOrFilteringExpression",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -2850,14 +3200,6 @@
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "columnID"}], "originalName": "ColumnID"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "rowID"}], "originalName": "RowID"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "rowIndex"}], "originalName": "RowIndex"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
-    "originalName": "GridClipboardOptions",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Angular","fileName": "igx-grid-clipboard-options.ts","mappedName": "IgxGridClipboardOptions"}],
-    "members":[
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
@@ -2897,5 +3239,28 @@
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "customSummary"}], "originalName": "CustomSummary"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fieldName"}], "originalName": "FieldName"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "GridStateOptions",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Angular","fileName": "igx-grid-state-options.ts","mappedName": "IgxGridStateOptions"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "advancedFiltering"}], "originalName": "AdvancedFiltering"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "cellSelection"}], "originalName": "CellSelection"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "columnSelection"}], "originalName": "ColumnSelection"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "columns"}], "originalName": "Columns"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "expansion"}], "originalName": "Expansion"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "filtering"}], "originalName": "Filtering"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "groupBy"}], "originalName": "GroupBy"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "moving"}], "originalName": "Moving"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "paging"}], "originalName": "Paging"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "pinningConfig"}], "originalName": "PinningConfig"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "pivotConfiguration"}], "originalName": "PivotConfiguration"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "rowIslands"}], "originalName": "RowIslands"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "rowPinning"}], "originalName": "RowPinning"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "rowSelection"}], "originalName": "RowSelection"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "sorting"}], "originalName": "Sorting"} ]
   }]
 }

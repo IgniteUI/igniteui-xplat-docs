@@ -2,7 +2,7 @@
 title: {Platform} Ripple
 _description: With {ProductName} Ripple, developers can define an area which received a ripple animation effect for a visually enticing UI enhancement.
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Ripple components, {Platform} Ripple controls
-mentionedTypes: ['Ripple', 'Button']
+mentionedTypes: ["Ripple", "Button"]
 ---
 
 # {Platform} Ripple Overview
@@ -31,6 +31,8 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcRippleComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -70,18 +72,18 @@ You will also need to link an additional CSS file to apply the styling to the `R
 
 The simplest way to start using the `Ripple` is as follows:
 
-```tsx
-<IgrButton>
-  <IgrRipple></IgrRipple>
-  <span>Ripple Button</span>
-</IgrButton>
-```
-
 ```html
 <igc-button>
   <igc-ripple></igc-ripple>
   Ripple Button
 </igc-button>
+```
+
+```tsx
+<IgrButton>
+  <IgrRipple></IgrRipple>
+  <span>Ripple Button</span>
+</IgrButton>
 ```
 
 ```razor

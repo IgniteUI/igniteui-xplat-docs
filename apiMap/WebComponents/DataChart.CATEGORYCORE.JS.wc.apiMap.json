@@ -17,6 +17,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "CategoryTransitionInMode","mappedName": "AccordionFromValueAxisMinimum"}], "originalName": "AccordionFromValueAxisMinimum"},
       {"names":[{"platform": "WebComponents", "mappedType": "CategoryTransitionInMode","mappedName": "Auto"}], "originalName": "Auto"},
       {"names":[{"platform": "WebComponents", "mappedType": "CategoryTransitionInMode","mappedName": "Expand"}], "originalName": "Expand"},
+      {"names":[{"platform": "WebComponents", "mappedType": "CategoryTransitionInMode","mappedName": "FromParent"}], "originalName": "FromParent"},
       {"names":[{"platform": "WebComponents", "mappedType": "CategoryTransitionInMode","mappedName": "FromZero"}], "originalName": "FromZero"},
       {"names":[{"platform": "WebComponents", "mappedType": "CategoryTransitionInMode","mappedName": "SweepFromBottom"}], "originalName": "SweepFromBottom"},
       {"names":[{"platform": "WebComponents", "mappedType": "CategoryTransitionInMode","mappedName": "SweepFromCategoryAxisMaximum"}], "originalName": "SweepFromCategoryAxisMaximum"},

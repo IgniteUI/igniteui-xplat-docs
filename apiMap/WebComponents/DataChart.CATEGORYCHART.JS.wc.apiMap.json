@@ -37,6 +37,8 @@
       {"names":[{"platform": "WebComponents", "mappedType": "(time: number) => number","mappedName": "transitionInEasingFunction"}], "originalName": "TransitionInEasingFunction"},
       {"names":[{"platform": "WebComponents", "mappedType": "CategoryTransitionInMode","mappedName": "transitionInMode"}], "originalName": "TransitionInMode"},
       {"names":[{"platform": "WebComponents", "mappedType": "TransitionInSpeedType","mappedName": "transitionInSpeedType"}], "originalName": "TransitionInSpeedType"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "transitionOutDuration"}], "originalName": "TransitionOutDuration"},
+      {"names":[{"platform": "WebComponents", "mappedType": "(time: number) => number","mappedName": "transitionOutEasingFunction"}], "originalName": "TransitionOutEasingFunction"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "xAxisActualMaximum"}], "originalName": "XAxisActualMaximum"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "xAxisActualMinimum"}], "originalName": "XAxisActualMinimum"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "xAxisEnhancedIntervalPreferMoreCategoryLabels"}], "originalName": "XAxisEnhancedIntervalPreferMoreCategoryLabels"},

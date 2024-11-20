@@ -2,13 +2,13 @@
 title: {Platform} 極座標チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの {Platform} 極座標チャート
 _keywords: {Platform} Charts, Polar Chart, Infragistics, {Platform} チャート, 極座標チャート, インフラジスティックス
-mentionedTypes: ["XamDataChart", "PolarAreaSeries", 'Series']
+mentionedTypes: ["XamDataChart", "PolarAreaSeries", "Series"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 # {Platform} 極座標チャート
 
-{ProductName} 極座標チャートは、デカルト (x、y) 座標系の代わりに極座標 (角度、半径) 座標系を使用してチャートにデータをプロットします。言い換えれば、極座標チャートは[散布図シリーズ](scatter-chart.md)の概念を使用していますが、横の線に沿って伸びるのではなく、円の周りでデータ ポイントをラップします。これらは、科学データのプロットによく用いられ (たとえば風向きや風速、地場の方向と強さ、ソーラー システムの機材の場所など)、予測結果からの収集データの偏差を強調表示できます。
+{ProductName} 極座標チャートは、デカルト (x、y) 座標系の代わりに極座標 (角度、半径) 座標系を使用してチャートにデータをプロットします。言い換えれば、極座標チャートは[散布図シリーズ](scatter-chart.md)の概念を使用していますが、横の線に沿って伸びるのではなく、円の周りでデータ ポイントをラップします。これらは、科学データのプロットによく用いられ (たとえば風向きや風速、地場の方向と強さ、ソーラー システムの機材の場所など)、予測結果からの収集データの偏差をハイライト表示できます。
 
 ## {Platform} 極座標エリア チャート
 

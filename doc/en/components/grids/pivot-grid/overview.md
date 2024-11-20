@@ -2,7 +2,7 @@
 title: {Platform} Pivot Grid & Table – {ProductName}
 _description: Create fast, responsive {Platform} pivot grids and tables with {ProductName}. Perform complex analysis and apply data sorting, grouping, or filtering.
 _keywords: {Platform} pivot grid, {Platform} material pivot table, {ProductName}, Infragistics
-mentionedTypes: ['Infragistics.Controls.PivotGrid']
+mentionedTypes: ["Infragistics.Controls.PivotGrid"]
 namespace: Infragistics.Controls
 ---
 
@@ -49,6 +49,13 @@ The {Platform} {PivotGridName} can be configured via the `PivotConfiguration` pr
 </IgbPivotGrid>
 ```
 
+<!--React -->
+```tsx
+<IgrPivotGrid data={pivotData} pivotConfiguration={pivotConfiguration}>
+</IgrPivotGrid>
+```
+<!-- end: React -->
+
 It is defined by three main dimensions: **rows**, **columns** and **values**. The **rows** and **columns** define the grouped structure that is displayed in the rows and columns of the grid. The **values** define the aggregation fields and the aggregation that will be used to calculate and display the related values of the groups.
 
 A filter can also be defined via the **filters** configuration property. It can be used for fields that you do not want to add as a dimension or a value but would like to filter their related member values via the UI.
@@ -56,15 +63,28 @@ A filter can also be defined via the **filters** configuration property. It can 
 ### Dimensions Configuration
 
 Each basic dimension configuration requires a `MemberName` that matches a field from the provided **data**.
-<!-- Angular -->
-Or a `MemberFunction` that extracts a value from the record in case of complex objects or other custom scenarios.
-<!-- Angular -->
+
 
 Multiple sibling dimensions can be defined, which creates a more complex nested group in the related row or column dimension area.
 
 The dimensions can be reordered or moved from one area to another via their corresponding chips using drag & drop.
 
 A dimension can also describe an expandable hierarchy via the `ChildLevel` property, for example:
+
+
+<!-- React -->
+
+```tsx
+const childDimension = new IgrPivotDimension();
+childDimension.memberName = "ProductCategory";
+const dimension: IgrPivotDimension = new IgrPivotDimension();
+dimension.memberName = "AllProducts";
+dimension.enabled = true;
+dimension.childLevel = childDimension;
+```
+<!-- end: React -->
+
+<!-- WebComponents -->
 ```typescript
    {
             memberFunction: () => 'All',
@@ -77,7 +97,9 @@ A dimension can also describe an expandable hierarchy via the `ChildLevel` prope
             }
     }
 ```
+<!-- end: WebComponents -->
 
+<!-- Blazor -->
 ```razor
 @code {
     var pivotConfiguration = new IgbPivotConfiguration();
@@ -90,6 +112,8 @@ A dimension can also describe an expandable hierarchy via the `ChildLevel` prope
         });
 }
 ```
+<!-- end: Blazor -->
+
 In this case the dimension renders an expander in the related section of the grid (row or column) and allows the children to be expanded or collapsed as part of the hierarchy. By default the row dimensions are initially expanded. This behavior can be controlled with the `DefaultExpandState` property of the Pivot Grid.
 
 ### Predefined Dimensions
@@ -104,6 +128,22 @@ As part of the Pivot Grid some additional predefined dimensions are exposed for 
     - Full Date
 
 It can be set for rows or columns, for example:
+
+<!-- React -->
+```ts
+const pivotConfiguration = new IgrPivotConfiguration();
+
+const dateDimension = new IgrPivotDateDimension();
+dateDimension.memberName = "Date";
+dateDimension.enabled = true;
+const baseDimension = new IgrPivotDimension();
+baseDimension.memberName = "Date";
+baseDimension.enabled = true;
+
+dateDimension.baseDimension = baseDimension;
+pivotConfiguration1.columns = [dateDimension];
+```
+<!-- end: React -->
 
 <!-- Angular -->
 ```typescript
@@ -150,6 +190,18 @@ It also allows for further customization via the second option parameter in orde
 });
 ```
 <!-- end: Angular -->
+
+
+<!-- React -->
+```tsx
+const options: IgrPivotDateDimensionOptions = {} as IgrPivotDateDimensionOptions;
+options.years = true;
+options.months = false;
+options.quarters = true;
+options.fullDate = false;
+dateDimension.options = options;
+```
+<!-- end: React -->
 
 <!-- WebComponents -->
 ```typescript
@@ -198,6 +250,23 @@ A value configuration requires a **member** that matches a field from the provid
 
 The current aggregation function can be changed at runtime using the value chip's drop-down. By default, it displays a list of available aggregations based on the field's data type. A custom list of aggregations can also be set via the `AggregateList` property, for example:
 
+<!-- React -->
+```typescript
+const pivotConfiguration = new IgrPivotConfiguration();
+const value = new IgrPivotValue();
+value.member = "AmountofSale";
+value.displayName = "Amount of Sale";
+value.enabled = true;
+const aggregator = new IgrPivotAggregator();
+aggregator.key = "SUM";
+aggregator.label = "Sum of Sale";
+aggregator.aggregatorName = PivotAggregationType.SUM;
+value.aggregate = aggregator;
+pivotConfiguration.values = [value];
+value.aggregateList = [aggregator];
+```
+<!-- end: React -->
+
 <!-- Angular -->
 ```typescript
 public pivotConfigHierarchy: IPivotConfiguration = {
@@ -249,20 +318,20 @@ public pivotConfigHierarchy: IgcPivotConfiguration = {
             displayName: 'Amount of Sale',
             aggregate: {
                 key: 'SUM',
-                aggregator: IgxTotalSaleAggregate.totalSale,
+                aggregator: IgcTotalSaleAggregate.totalSale,
                 label: 'Sum of Sale'
             },
             aggregateList: [{
                 key: 'SUM',
-                aggregator: IgxTotalSaleAggregate.totalSale,
+                aggregator: IgcTotalSaleAggregate.totalSale,
                 label: 'Sum of Sale'
             }, {
                 key: 'MIN',
-                aggregator: IgxTotalSaleAggregate.totalMin,
+                aggregator: IgcTotalSaleAggregate.totalMin,
                 label: 'Minimum of Sale'
             }, {
                 key: 'MAX',
-                aggregator: IgxTotalSaleAggregate.totalMax,
+                aggregator: IgcTotalSaleAggregate.totalMax,
                 label: 'Maximum of Sale'
             }]
         }
@@ -310,6 +379,50 @@ The `Enable` property controls if a given `PivotDimension` or `PivotValue` is ac
 
 Let's take a look at a basic pivot configuration:
 
+<!-- React -->
+
+```tsx
+const pivotConfiguration1: IgrPivotConfiguration = new IgrPivotConfiguration();
+
+const igrPivotDateDimension1 = new IgrPivotDimension();
+igrPivotDateDimension1.memberName = "Date";
+igrPivotDateDimension1.enabled = true;
+
+pivotConfiguration1.columns = [igrPivotDateDimension1];
+const igrPivotDimension2: IgrPivotDimension = new IgrPivotDimension();
+igrPivotDimension2.memberName = "ProductName";
+igrPivotDimension2.enabled = true;
+
+const igrPivotDimension3: IgrPivotDimension = new IgrPivotDimension();
+igrPivotDimension3.memberName = "SellerCity";
+igrPivotDimension3.enabled = true;
+
+pivotConfiguration1.rows = [igrPivotDimension2,igrPivotDimension3];
+const igrPivotDimension4: IgrPivotDimension = new IgrPivotDimension();
+igrPivotDimension4.memberName = "SellerName";
+igrPivotDimension4.enabled = true;
+
+pivotConfiguration1.filters = [igrPivotDimension4];
+const igrPivotValue1: IgrPivotValue = new IgrPivotValue();
+igrPivotValue1.member = "ProductUnitPrice";
+igrPivotValue1.displayName = "Amount of Sale";
+igrPivotValue1.dataType = GridColumnDataType.Currency;
+igrPivotValue1.enabled = true;
+const igrPivotAggregator1: IgrPivotAggregator = new IgrPivotAggregator();
+igrPivotAggregator1.key = "SUM";
+igrPivotAggregator1.label = "Sum of Sale";
+igrPivotAggregator1.aggregatorName = PivotAggregationType.SUM;
+
+igrPivotValue1.aggregate = igrPivotAggregator1;
+const igrPivotAggregator2: IgrPivotAggregator = new IgrPivotAggregator();
+igrPivotAggregator2.key = "SUM";
+igrPivotAggregator2.label = "Sum of Sale";
+igrPivotAggregator2.aggregatorName = PivotAggregationType.SUM;
+pivotConfiguration1.values = [igrPivotValue1];
+```
+
+<!-- end: React -->
+
 <!-- Angular -->
 ```typescript
       public pivotConfigHierarchy: IPivotConfiguration = {
@@ -351,26 +464,34 @@ Let's take a look at a basic pivot configuration:
         columns: [
             {
 
-                memberName: 'Product',
-                memberFunction: (data) => data.Product.Name,
+                memberName: 'ProductName',
+                memberFunction: (data) => data.ProductName,
+                enabled: true
+            },
+            {
+
+                memberName: 'SellerCity',
+                memberFunction: (data) => data.SellerCity,
                 enabled: true
             }
+
 
         ],
         rows: [
             {
-                memberName: 'Seller',
-                memberFunction: (data) => data.Seller.Name,
+                memberName: 'SellerName',
+                memberFunction: (data) => data.SellerName,
                 enabled: true,
             }
         ],
         values: [
             {
-                member: 'NumberOfUnits',
+                member: 'AmountofSale',
+                displayName: "Amount of Sale",
                 aggregate: {
-                    aggregator: IgxPivotNumericAggregate.sum,
-                    key: 'sum',
-                    label: 'Sum'
+                    aggregator: IgcPivotNumericAggregate.sum,
+                    key: 'SUM',
+                    label: 'Sum of Sale'
                 },
                 enabled: true
 
@@ -384,22 +505,28 @@ Let's take a look at a basic pivot configuration:
     IgbPivotConfiguration pivotConfiguration = new IgbPivotConfiguration();
     pivotConfiguration.Rows.Add(new IgbPivotDimension()
         {
-            MemberName = "Product",
+            MemberName = "SellerName",
             Enabled = true,
             Name = "pivotDimension1"
         });
     pivotConfiguration.Columns.Add(new IgbPivotDimension()
         {
-            MemberName = "Country",
+            MemberName = "ProductName",
+            Enabled = true,
+            Name = "pivotDimension2"
+        });
+    pivotConfiguration.Columns.Add(new IgbPivotDimension()
+        {
+            MemberName = "SellerCity",
             Enabled = true,
             Name = "pivotDimension2"
         });
     pivotConfiguration.Values.Add(new IgbPivotValue()
         {
-            Member = "UnitsSold",
+            Member = "AmountofSale",
             Name = "pivotValue1",
             Enabled = true,
-            Aggregate = new IgbPivotAggregator() { Key = "sum", AggregatorName = PivotAggregationType.SUM, Label = "Sum" }
+            Aggregate = new IgbPivotAggregator() { Key = "SUM", AggregatorName = PivotAggregationType.SUM, Label = "Sum" }
         });
 }
 ```
@@ -411,47 +538,129 @@ The members match fields available in the provided data source:
 public data = [
 [
     {
-        Product: {
-            Name: 'Clothing',
-            UnitPrice: '12.814860936633712'
-        },
-        Seller: {
-            Name: 'Stanley Brooker',
-            City: 'Seattle'
-        },
-        Date: '2007-01-01T00:00:00',
-        Value: '94.2652032683907',
-        NumberOfUnits: '282'
+        ProductName: `Clothing`,
+        ProductUnitPrice: 12.8,
+        SellerName: `Stanley Brooker`,
+        SellerCity: `Seattle`,
+        Date: `2007-01-01T00:00:00`,
+        Value: 94.4,
+        NumberOfUnits: 282
     },
 ];
 ```
 
 ```razor
-public PivotSalesData()
+public PivotDataFlat()
 {
-    this.Add(new PivotSalesDataItem()
+    this.Add(new PivotDataFlatItem()
     {
-        Country = @"UK",
-        Product = @"Vermont",
-        UnitsSold = @"501",
-        ManufacturingPrice = 15,
-        SalePrice = 23,
-        GrossSales = 26440,
-        Discounts = double.NaN,
-        Sales = 26440,
-        COGS = 16185,
-        Profit = 11255,
-        Date = @"1/1/20",
-        MonthName = @"January",
-        Year = @"2020"
+        ProductName = @"Clothing",
+            ProductUnitPrice = 12.8,
+            SellerName = @"Stanley Brooker",
+            SellerCity = @"Seattle",
+            Date = @"2007-01-01T00:00:00",
+            Value = 94.4,
+            NumberOfUnits = 282
     });
 ```
 
 ### Full Configuration Example
 
-Using above code will result in the following example which groups the Product Categories unique columns, Sellers Countries in unique rows and displays the related aggregations for the number of units in the related cells:
+Using above code will result in the following example which groups the Date unique columns, Product Name and Seller City in unique rows and displays the related aggregations for the amount of sale in the related cells:
 
 `sample="/{PivotGridSample}/features", height="700", alt="{Platform} Pivot Grid Basic Features Example"`
+
+### Auto generate configuration
+The `autoGenerateConfig` property automatically generates dimensions and values based on the data source fields:
+
+- Numeric Fields:
+  - Created as `PivotValue` using `PivotNumericAggregate.sum` aggregator.
+  - Added to the values collection and enabled by default.
+
+- Non-Numeric Fields:
+  - Created as `PivotDimension`.
+  - Disabled by default.
+  - Added to the columns collection.
+
+- Date Fields(only the first `date` field is enabled, the other `date` fields apply non-numeric fields rule):
+  - Created as `PivotDateDimension`
+  - Enabled by default
+  - added to the rows collection.
+
+This feature allows developers to quickly create a pivot view without manually specifying dimensions and values. With a pivot selector next to the pivot grid, users can enable and reorder dimensions and values as needed.
+
+### Pivot Value Calculation Keys
+
+The Pivot grid provides a customization to the object keys fields it uses to do its pivot calculations.  
+A more detailed view of how they are used can be seen bellow in example data, where you can see already aggregated values:
+```json
+[
+    {
+        ProductCategory: 'All', AllProducts: 'All Products', All: 1000, 'All-Bulgaria': 774, 'All-USA': 829, 'All-Uruguay': 524,
+        AllProducts_records: [
+            { ProductCategory: 'Clothing', 'All-Bulgaria': 774, 'All-USA': 296, 'All-Uruguay': 456 },
+            { ProductCategory: 'Bikes', 'All-Uruguay': 68 },
+            { ProductCategory: 'Accessories', 'All-USA': 293 },
+            { ProductCategory: 'Components', 'All-USA': 240 }
+        ]
+    }
+];
+```
+
+All of these are stored in the **pivotKeys** property which is part of the `PivotConfiguration` and can be used to change the default pivot keys. 
+- **children** - Field that stores children for hierarchy building. It represents a map from grouped values and all the pivotGridRecords that are based on that value. It can be utilized in very specific scenarios, where there is a need to do something while creating the hierarchies. No need to change this for common usage.
+- **records** - Field that stores reference to the original data records. Can be seen in the example from above - **AllProducts_records**. Avoid setting fields in the data with the same name as this property. If your data records has **records** property, you can specify different and unique value for it using the **pivotKeys**.
+- **aggregations** - Field that stores aggregation values. It's applied while creating the hierarchies and also it should not be changed for common scenarios.
+- **level** - Field that stores dimension level based on its hierarchy. Avoid setting fields in the data with the same name as this property. If your data records has **level** property, you can specify different and unique value for it using the **pivotKeys**.
+- **columnDimensionSeparator** - Separator used when generating the unique column field values. It is the dash(**-**) from example value - **All-Bulgaria**.
+- **rowDimensionSeparator** - Separator used when generating the unique row field values. It's used when creating the **records** and **level** field.
+
+The default values are:
+```typescript
+{
+    aggregations: 'aggregations',
+    records: 'records',
+    children: 'children',
+    level: 'level',
+    rowDimensionSeparator: '_',
+    columnDimensionSeparator: '-'
+};
+```
+
+```razor
+@code {
+    {
+        aggregations: 'aggregations',
+        records: 'records',
+        children: 'children',
+        level: 'level',
+        rowDimensionSeparator: '_',
+        columnDimensionSeparator: '-'
+    };
+}
+```
+
+> [!Note]
+> If you have data field values that contain the default keys, make sure to change the separators that match to any other symbols that you are not currently using. Otherwise could lead to unexpected behavior in calculating and showing the aggregated values.
+
+<!-- Blazor -->
+When overriding the `PivotKeys` in Blazor, currently you will need to define all other keys, since assigning a new PivotKeys object, it replaces completely the default ones:
+
+```razor
+@code {
+    var pivotConfiguration = new IgbPivotConfiguration();
+    pivotConfiguration.PivotKeys = new IgbPivotKeys()
+    {
+        Aggregations = "aggregations",
+        Records = "records",
+        Children = "children",
+        Level = "level",
+        RowDimensionSeparator = "_",
+        ColumnDimensionSeparator = "^"
+    };
+}
+```
+<!-- end: Blazor -->
 
 ## Known Issues and Limitations
 

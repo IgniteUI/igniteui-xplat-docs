@@ -2,7 +2,7 @@
 title: {Platform} Slider & Range Slider Components | {ProductName}
 _description: Learn how to configure a selection in a given range by using the thumb track with {Platform} Slider & Range Slider part of {ProductName}. Choose between single and range slider.
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Slider Components, Infragistics
-mentionedTypes: ['Slider', 'SliderLabel', 'RangeSlider']
+mentionedTypes: ["Slider", "SliderLabel", "RangeSlider"]
 ---
 
 # {Platform} Slider & Range Slider Overview
@@ -32,6 +32,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -68,15 +71,15 @@ builder.Services.AddIgniteUIBlazor(
 
 The simplest way to start using the `Slider` and `RangeSlider` is as follows:
 
+```html
+<igc-slider value="40"></igc-slider>
+<igc-range-slider lower="20" upper="70"></igc-range-slider>
+```
+
 ```tsx
  <IgrSlider value="40" />
     <span className="slider-label"></span>
 <IgrRangeSlider lower="20" upper="70"></IgrRangeSlider>
-```
-
-```html
-<igc-slider value="40"></igc-slider>
-<igc-range-slider lower="20" upper="70"></igc-range-slider>
 ```
 
 ```razor
@@ -177,7 +180,7 @@ The slider components expose CSS parts for their inner elements. The following t
 
 The following sample demonstrates how to style the track fill and thumb parts:
 
-`sample="/inputs/slider/styling", height="120", alt="{Platform} Slider Styling Example"`
+`sample="/inputs/slider/styling", height="250", alt="{Platform} Slider Styling Example"`
 
 
 

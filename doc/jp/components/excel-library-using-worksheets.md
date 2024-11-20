@@ -2,7 +2,7 @@
 title: {Platform} Excel ライブラリ | ワークシートの使用 | インフラジスティックス
 _description: インフラジスティックスの {Platform} Excel ライブラリを使用してワークシートの行やセルにデータを入力でき、対応する値を設定できます。{ProductName} Excel からアプリケーションへデータを簡単に転送できます。
 _keywords: Excel library, worksheet, {ProductName}, Infragistics, Excel ライブラリ, ワークシート, インフラジスティックス
-mentionedTypes: ['Workbook', 'Worksheet', 'WorksheetCell', 'DisplayOptions', 'WorksheetFilterSettings', 'IWorksheetCellFormat']
+mentionedTypes: ["Workbook", "Worksheet", "WorksheetCell", "DisplayOptions", "WorksheetFilterSettings", "IWorksheetCellFormat"]
 _language: ja
 ---
 # {Platform} ワークシートの使用
@@ -74,7 +74,7 @@ worksheet.DisplayOptions.GridlineColor = Core.Graphics.Colors.Red;
 ```
 
 ## ヘッダーの構成
-列ヘッダーと行ヘッダーは、列と行を視覚的に特定するために使用します。また、現在選択されているセルやセル領域を強調表示する場合にも使用します。
+列ヘッダーと行ヘッダーは、列と行を視覚的に特定するために使用します。また、現在選択されているセルやセル領域をハイライト表示する場合にも使用します。
 
 列と行のヘッダーは、ワークシートの `DisplayOptions` の `ShowRowAndColumnHeaders` プロパティを使用して、表示と非表示を切り替えることができます。以下のコードは、列と行ヘッダーを非表示にする方法を示します。
 

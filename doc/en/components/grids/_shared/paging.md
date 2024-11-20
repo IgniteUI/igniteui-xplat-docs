@@ -24,9 +24,15 @@ The following example represents `{ComponentName}` pagination and exposes the op
 
 <!-- end: Angular -->
 
+```css
+.gridSize {
+    --ig-size: var(--ig-size-small);
+}
+```
+
 <!-- Angular -->
 ```html
-<{ComponentSelector} #grid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
+<{ComponentSelector} #grid class="gridSize" [data]="data" [height]="'500px'" [width]="'100%'">
     <igx-paginator [perPage]="10">
     </igx-paginator>
 </{ComponentSelector}>
@@ -34,13 +40,13 @@ The following example represents `{ComponentName}` pagination and exposes the op
 <!-- end: Angular -->
 
 ```razor
-<{ComponentSelector} @ref=grid Width="100%" Height="500px" Data=marketData DisplayDensity="DisplayDensity.Cosy">
+<{ComponentSelector} @ref=grid Class="gridSize" Width="100%" Height="500px" Data=Data>
     <IgbPaginator PerPage="10"></IgbPaginator>
 </{ComponentSelector}>
 ```
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid" height="500px" width="100%" display-density="Cosy">
+<{ComponentSelector} id="grid" class="gridSize" height="500px" width="100%" >
     <igc-paginator per-page="10">
     </igc-paginator>
 </{ComponentSelector}>
@@ -49,7 +55,7 @@ The following example represents `{ComponentName}` pagination and exposes the op
 
 <!-- React -->
 ```tsx
-<{ComponentSelector} height="500px" width="100%" displayDensity="cosy">
+<{ComponentSelector} className="gridSize" height="500px" width="100%">
     <IgrPaginator key="paginator" perPage="10">
     </IgrPaginator>
 </{ComponentSelector}>
@@ -93,23 +99,24 @@ The `Paginator` component is used along with the `{ComponentName}` component in 
 
 <!-- Angular -->
 ```html
-<{ComponentSelector} #grid [data]="data">
+<{ComponentSelector} #grid [data]="data" className="gridSize">
     <igx-paginator #paginator [(page)]="grid.page" [totalRecords]="grid.totalRecords" [(perPage)]="10"
-            [selectOptions]="selectOptions" [displayDensity]="grid.displayDensity">
+            [selectOptions]="selectOptions">
     </igx-paginator>
 </{ComponentSelector}>
 ```
 <!-- end: Angular -->
 
 ```razor
-<{ComponentSelector} @ref=grid Data=marketData DisplayDensity="DisplayDensity.Compact">
-    <IgbPaginator Page="grid.Page" TotalRecords="grid.TotalRecords" PerPage="10" DisplayDensity="grid.DisplayDensity">
+<{ComponentSelector} @ref=grid Data=Data className="gridSize">
+    <IgbPaginator Page="grid.Page" TotalRecords="grid.TotalRecords" PerPage="10">
     </IgbPaginator>
 </{ComponentSelector}>
 ```
 
+<!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid">
+<{ComponentSelector} id="grid" className="gridSize">
     <igc-paginator id="paginator" per-page="10">
     </igc-paginator>
 </{ComponentSelector}>
@@ -117,22 +124,22 @@ The `Paginator` component is used along with the `{ComponentName}` component in 
 
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var grid = this.grid = document.getElementById('grid') as {ComponentName};
     var paginator = this.paginator = document.getElementById('paginator') as IgcPaginatorComponent;
     const selectOptions = [5, 15, 20, 50];
     grid.data = this.data;
     paginator.page = grid.page;
     paginator.totalRecords = grid.totalRecords;
     paginator.selectOptions = selectOptions;
-    paginator.displayDensity = grid.displayDensity;
 }
 ```
+<!-- end: WebComponents -->
 
 ```tsx
 const selectOptions = [5, 15, 20, 50];
 
-<{ComponentSelector}>
-    <IgrPaginator key="paginator" perPage={10} page={1} selectOptions={selectOptions} displayDensity="cosy">
+<{ComponentSelector} className="gridSize">
+    <IgrPaginator key="paginator" perPage={10} page={1} selectOptions={selectOptions}>
     </IgrPaginator>
 </{ComponentSelector}>
 ```
@@ -395,7 +402,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ## Additional Resources
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid, TreeGrid -->
 
 <!-- * [Paginator](../paginator.md) -->
 * [Virtualization and Performance](virtualization.md)
@@ -406,7 +413,8 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-<!-- ComponentEnd:  Grid -->
+
+<!-- ComponentEnd: Grid, TreeGrid -->
 
 Our community is active and always welcoming to new ideas.
 

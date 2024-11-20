@@ -3,7 +3,7 @@ title: {Platform} Chart Performance | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Chart Performance
 _keywords: {Platform} Charts, Performance, Infragistics
 _language: kr
-mentionedTypes: ["CategoryChart", "FinancialChart", "XamDataChart"]
+mentionedTypes: ["CategoryChart", "FinancialChart", "XamDataChart", "FinancialChartVolumeType", "FinancialChartZoomSliderType"]
 ---
 
 # {Platform} Chart Performance
@@ -144,7 +144,7 @@ this.Chart.excludedProperties = [ "CHN",  "FRN", "GER" ];
 
 ### Chart Types
 
-Simpler chart types such as [Line Chart](../types/line-chart.md) have faster performance than using [Spline Chart](../types/spline-chart.md) because of the complex interpolation of spline lines between data points. Therefore, you should use `ChartType` property of {Platform} `CategoryChart` or the `FinancialChart` control to select type of chart that renders faster. Alternatively, you can change a type of series to a faster series in {Platform} `XamDataChart` control.
+Simpler chart types such as [Line Chart](../types/line-chart.md) have faster performance than using [Spline Chart](../types/spline-chart.md) because of the complex interpolation of spline lines between data points. Therefore, you should use `CategoryChart.ChartType` property of {Platform} `CategoryChart` or the `FinancialChart` control to select type of chart that renders faster. Alternatively, you can change a type of series to a faster series in {Platform} `XamDataChart` control.
 
 The following table lists chart types in order from the fastest performance to slower performance in each group of charts:
 

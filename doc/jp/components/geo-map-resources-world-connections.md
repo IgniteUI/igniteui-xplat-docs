@@ -2,7 +2,7 @@
 title: {Platform} マップ | ワールド コネクション | データ ソース | インフラジスティックス
 _description: インフラジスティックスの {Platform} JavaScript マップ データ ユーティリティを使用して、空港の位置、飛行経路、および地理的なグリッド線を生成します。{ProductName} マップのサンプルを是非お試しください!
 _keywords: {Platform} map, map data, {ProductName}, Infragistics, {Platform} マップ, マップ データ, インフラジスティックス
-mentionedTypes: ['XamGeographicMap']
+mentionedTypes: ["XamGeographicMap"]
 _language: ja
 ---
 # {Platform} ワールド コネクション

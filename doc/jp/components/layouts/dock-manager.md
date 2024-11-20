@@ -286,7 +286,7 @@ const layout: IgcDockManagerLayout = {
 
 ### アクティブ ペイン
 
-ドック マネージャー コンポーネントは、フォーカスを含むコンテンツ ペインを強調表示し、`ActivePane` プロパティで公開します。プロパティを設定することによってアクティブ ペインをプログラムで変更できます。`ActivePaneChanged` イベントにサブスクライブして、`ActivePane` プロパティの変更をリッスンすることもできます。
+ドック マネージャー コンポーネントは、フォーカスを含むコンテンツ ペインをハイライト表示し、`ActivePane` プロパティで公開します。プロパティを設定することによってアクティブ ペインをプログラムで変更できます。`ActivePaneChanged` イベントにサブスクライブして、`ActivePane` プロパティの変更をリッスンすることもできます。
 
 ```ts
 this.dockManager.addEventListener('activePaneChanged', ev => {
@@ -443,11 +443,7 @@ igc-dockmanager::part(pane-header-maximize-button) {
 
 すべて適切に設定できると、カスタマイズされたアイコンとタブ領域を持つ DockManager が表示されます。以下は結果です。
 
-<!-- WebComponents -->
 `sample="/layouts/dock-manager/customize-buttons", height="700", alt="{Platform} Dock Manager カスタマイズ ボタンの例"`
-
-
-<!-- end: WebComponents -->
 
 以下は、すべてのボタンとスプリッター ハンドルのスロット名のリストです。
 
@@ -546,8 +542,6 @@ igc-dockmanager::part(pane-header-maximize-button) {
 
 サンプル [demo](dock-manager.md#{PlatformLower}-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
 
-<!-- WebComponents -->
-
 ## スタイル設定
 
 ドック マネージャーは、シャドウ DOM を使用してスタイルと動作をカプセル化します。その結果、通常の CSS セレクターでその内部要素を単純にターゲットにすることはできません。そのため **:: part** CSS セレクターでターゲットにできるコンポーネント **parts** を公開しています。
@@ -616,6 +610,7 @@ igc-dockmanager::part(content-pane) {
 | `splitter-handle` | スプリッターのハンドル。 |
 | `horizontal` | 水平位置を示します。`splitter-handle` に適用されます。 |
 | `vertical` | 垂直位置を示します。`splitter-handle` に適用されます。 |
+<!-- WebComponents -->
 
 ## テーマ
 
@@ -631,7 +626,7 @@ igc-dockmanager::part(content-pane) {
 
 ## ローカライズ
 
-ドック マネージャー コンポーネントは、コンテキスト メニュー、ツールチップ、および aria 属性で使用される文字列のローカライズをサポートします。デフォルトでは、ドック マネージャー はその親の [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) 属性を検索してページの言語を検出します。[lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) 属性が設定されていないか、ドック マネージャーがサポートしない値に設定されている場合、デフォルトの言語は [英語 (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN) です。ドック マネージャーは、[英語 (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN)、[日本語 (jp)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsJP)、[韓国語 (ko)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsKO)、[スペイン語 (es)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsES) の組み込みローカライズ文字列を提供します。その他の言語のリソース文字列を提供するには、[addResourceStrings]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#addResourceStrings) メソッドを使用します。
+ドック マネージャー コンポーネントは、コンテキスト メニュー、ツールチップ、および aria 属性で使用される文字列のローカライズをサポートします。デフォルトでは、ドック マネージャー はその親の [lang](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang) 属性を検索してページの言語を検出します。[lang](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang) 属性が設定されていないか、ドック マネージャーがサポートしない値に設定されている場合、デフォルトの言語は [英語 (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN) です。ドック マネージャーは、[英語 (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN)、[日本語 (jp)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsJP)、[韓国語 (ko)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsKO)、[スペイン語 (es)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsES) の組み込みローカライズ文字列を提供します。その他の言語のリソース文字列を提供するには、[addResourceStrings]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#addResourceStrings) メソッドを使用します。
 
 ```ts
 import { addResourceStrings } from 'igniteui-dockmanager';
@@ -644,7 +639,7 @@ const dockManagerStringsFr: IgcDockManagerResourceStrings = {
 addResourceStrings('fr', dockManagerStringsFr);
 ```
 
-ドック マネージャーは、文字列を変更できる `ResourceStrings` プロパティを公開します。`ResourceStrings` プロパティを設定すると、ドック マネージャーはどの [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) 属性が設定されていても文字列を使用します。
+ドック マネージャーは、文字列を変更できる `ResourceStrings` プロパティを公開します。`ResourceStrings` プロパティを設定すると、ドック マネージャーはどの [lang](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang) 属性が設定されていても文字列を使用します。
 
 <!-- end: WebComponents -->
 

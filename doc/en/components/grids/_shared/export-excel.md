@@ -123,6 +123,7 @@ public exportButtonHandler() {
 <!-- end: Angular -->
 
 <!-- WebComponents -->
+<!-- ComponentStart: Grid, TreeGrid -->
 ```ts
 constructor() {
   var gridToolbarExporter1 = document.getElementById('gridToolbarExporter1') as IgcGridToolbarExporterComponent;
@@ -133,8 +134,26 @@ public webGridExportEventFreezeHeaders(args: any): void {
   args.detail.options.freezeHeaders = true;
 }
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
 <!-- end: WebComponents -->
 
+<!-- WebComponents -->
+<!-- ComponentStart: HierarchicalGrid -->
+```ts
+constructor() {
+  var hGridToolbarExporter = document.getElementById('hGridToolbarExporter') as IgcGridToolbarExporterComponent;
+  hGridToolbarExporter.addEventListener("exportStarted", this.webGridExportEventFreezeHeaders);
+}
+
+public webGridExportEventFreezeHeaders(args: CustomEvent<IgcExporterEvent>): void {
+  args.detail.options.freezeHeaders = true;
+}
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: WebComponents -->
+
+<!-- React -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 function exportEventFreezeHeaders(grid: IgrGridBaseDirective, args: IgrExporterEvent) {
     args.detail.options.freezeHeaders = true;
@@ -146,27 +165,46 @@ function exportEventFreezeHeaders(grid: IgrGridBaseDirective, args: IgrExporterE
   </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: React -->
 
+<!-- ComponentStart: Grid, TreeGrid -->
 ```razor
- <IgbGrid>
+ <{ComponentSelector}>
     <IgbGridToolbar>
       <IgbGridToolbarActions>
         <IgbGridToolbarExporter
-          ExportExcel="true" ExportStarted="WebGridExportEventMultiColumnHeaders">
+          ExportExcel="true" ExportStartedScript="WebGridExportEventFreezeHeaders">
         </IgbGridToolbarExporter>
       </IgbGridToolbarActions>
     </IgbGridToolbar>
- </IgbGrid>
+ </{ComponentSelector}>
 
-@code {
-
-  public void WebGridExportEventMultiColumnHeaders(IgbExporterEventEventArgs args)
-  {
-      bool exportMultiHeaders = (bool)exportHeaders.GetCurrentPrimitiveValue();
-      args.Detail.Options.FreezeHeaders = true;
-  }
-}
+igRegisterScript("WebGridExportEventFreezeHeaders", (ev) => {
+    ev.detail.options.freezeHeaders = false;
+}, false);
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
+
+<!-- Blazor -->
+<!-- ComponentStart: HierarchicalGrid -->
+```razor
+ <{ComponentSelector}>
+    <IgbGridToolbar>
+      <IgbGridToolbarActions>
+        <IgbGridToolbarExporter
+          ExportExcel="true" ExportStartedScript="WebHierarchicalGridExportEventFreezeHeaders">
+        </IgbGridToolbarExporter>
+      </IgbGridToolbarActions>
+    </IgbGridToolbar>
+ </{ComponentSelector}>
+
+igRegisterScript("WebHierarchicalGridExportEventFreezeHeaders", (ev) => {
+    ev.detail.options.freezeHeaders = false;
+}, false);
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: Blazor -->
 
 <!-- Angular -->
 ## Customizing the Exported Content
@@ -203,6 +241,7 @@ When you are exporting data from the `{ComponentName}` component, the export pro
 |--- |--- |
 |Hierarchy levels|The excel exporter service can create up to 8 levels of hierarchy.|
 |Max worksheet size|The maximum worksheet size supported by Excel is 1,048,576 rows by 16,384 columns.|
+|Cell Styling|The excel exporter service does not support exporting a custom style applied to a cell component. In such scenarios we recommend using the [Excel Library](../../excel-library.md).|
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -215,15 +254,9 @@ When you are exporting data from the `{ComponentName}` component, the export pro
 
 ## API References
 
-The Excel Exporter service has a few more APIs to explore, which are listed below.
-
 * `ExcelExporterService`
-* `ExcelExporterOptions`
-
-Additional components that were used:
-
-* [{ComponentTitle} API]({environment:dvDemosBaseUrl}/classes/{ComponentTitle}.md)
-* [{ComponentTitle} Styles]({environment:sassApiUrl}/index.html#function-grid-theme)
+* `ExcelExporterOptions` 
+* `{ComponentName}`
 
 ## Additional Resources
 

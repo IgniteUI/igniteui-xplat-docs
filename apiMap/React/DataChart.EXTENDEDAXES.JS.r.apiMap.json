@@ -1,5 +1,38 @@
 {  "types":[
   {
+    "originalName": "ProportionalCategoryAngleAxis",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "CategoryAngleAxis",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "React","fileName": "igr-proportional-category-angle-axis.ts","dynamicModuleName": "igr-proportional-category-angle-axis-dynamic-module.ts","moduleName": "igr-proportional-category-angle-axis-module.ts","mappedName": "IgrProportionalCategoryAngleAxis"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getNormalizingValueAtIndex"}], "originalName": "GetNormalizingValueAtIndex"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getPercentageValue"}], "originalName": "GetPercentageValue"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getScaledAngle"}], "originalName": "GetScaledAngle"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getUnscaledAngle"}], "originalName": "GetUnscaledAngle"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getValueLabel"}], "originalName": "GetValueLabel"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "hasOthersCategory"}], "originalName": "HasOthersCategory"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "isOthersValue"}], "originalName": "IsOthersValue"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isPiecewise"}], "originalName": "IsPiecewise"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "normalizationMayContainUnknowns"}], "originalName": "NormalizationMayContainUnknowns"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "othersCategoryText"}], "originalName": "OthersCategoryText"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "othersCategoryThreshold"}], "originalName": "OthersCategoryThreshold"},
+      {"names":[{"platform": "React", "mappedType": "OthersCategoryType","mappedName": "othersCategoryType"}], "originalName": "OthersCategoryType"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "othersIndex"}], "originalName": "OthersIndex"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "othersValue"}], "originalName": "OthersValue"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "valueMemberPath"}], "originalName": "ValueMemberPath"} ]
+  },
+  {
+    "originalName": "OthersCategoryContext",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "React","fileName": "OthersCategoryContext.ts","mappedName": "OthersCategoryContext"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+  },
+  {
     "originalName": "CategoryAngleAxis",
     "originalNamespace": "Infragistics.Controls.Charts",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -9,10 +42,12 @@
     "members":[
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "actualInterval"}], "originalName": "ActualInterval"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "actualMinorInterval"}], "originalName": "ActualMinorInterval"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "areGroupSizesUneven"}], "originalName": "AreGroupSizesUneven"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getScaledAngle"}], "originalName": "GetScaledAngle"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getUnscaledAngle"}], "originalName": "GetUnscaledAngle"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "interval"}], "originalName": "Interval"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isAngular"}], "originalName": "IsAngular"},
+      {"names":[{"platform": "React", "mappedType": "AxisAngleLabelMode","mappedName": "labelMode"}], "originalName": "LabelMode"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "minorInterval"}], "originalName": "MinorInterval"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "startAngleOffset"}], "originalName": "StartAngleOffset"} ]
   },
@@ -31,7 +66,8 @@
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isCategoryDateTime"}], "originalName": "IsCategoryDateTime"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isContinuous"}], "originalName": "IsContinuous"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "minorInterval"}], "originalName": "MinorInterval"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "scrollIntoView"}], "originalName": "ScrollIntoView"} ]
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "scrollIntoView"}], "originalName": "ScrollIntoView"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "unevenlySpacedLabels"}], "originalName": "UnevenlySpacedLabels"} ]
   },
   {
     "originalName": "NumericAngleAxis",
@@ -44,6 +80,7 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getScaledAngle"}], "originalName": "GetScaledAngle"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getUnscaledAngle"}], "originalName": "GetUnscaledAngle"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isAngular"}], "originalName": "IsAngular"},
+      {"names":[{"platform": "React", "mappedType": "AxisAngleLabelMode","mappedName": "labelMode"}], "originalName": "LabelMode"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "startAngleOffset"}], "originalName": "StartAngleOffset"} ]
   },
   {
@@ -95,6 +132,7 @@
       {"names":[{"platform": "React", "mappedType": "Date","mappedName": "actualMaximumValue"}], "originalName": "ActualMaximumValue"},
       {"names":[{"platform": "React", "mappedType": "Date","mappedName": "actualMinimumValue"}], "originalName": "ActualMinimumValue"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "dateTimeMemberPath"}], "originalName": "DateTimeMemberPath"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getFullRange"}], "originalName": "GetFullRange"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getIndexClosestToUnscaledValue"}], "originalName": "GetIndexClosestToUnscaledValue"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isDataPreSorted"}], "originalName": "IsDataPreSorted"},

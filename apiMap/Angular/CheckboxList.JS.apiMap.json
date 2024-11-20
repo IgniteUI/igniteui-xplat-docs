@@ -21,6 +21,7 @@
       {"names":[{"platform": "Angular", "mappedType": "ControlDisplayDensity","mappedName": "density"}], "originalName": "Density"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "deselectAll"}], "originalName": "DeselectAll"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "filterPlaceholderText"}], "originalName": "FilterPlaceholderText"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getDesiredSize"}], "originalName": "GetDesiredSize"},
       {"names":[{"platform": "Angular", "mappedType": "CheckboxListIndexType","mappedName": "indexType"}], "originalName": "IndexType"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "isEverythingSelected"}], "originalName": "IsEverythingSelected"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "isNothingSelected"}], "originalName": "IsNothingSelected"},
@@ -33,6 +34,7 @@
       {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "primaryKey"}], "originalName": "PrimaryKey"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "removeKeyValue"}], "originalName": "RemoveKeyValue"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "rowHeight"}], "originalName": "RowHeight"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "rowHoverBackgroundColor"}], "originalName": "RowHoverBackgroundColor"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "scrollbarBackground"}], "originalName": "ScrollbarBackground"},
       {"names":[{"platform": "Angular", "mappedType": "ScrollbarStyle","mappedName": "scrollbarStyle"}], "originalName": "ScrollbarStyle"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "searchBackgroundColor"}], "originalName": "SearchBackgroundColor"},
@@ -55,7 +57,8 @@
     "names":[{"platform": "Angular","fileName": "igx-checked-changed-event-args.ts","mappedName": "IgxCheckedChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"},
-      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isChecked"}], "originalName": "IsChecked"} ]
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isChecked"}], "originalName": "IsChecked"},
+      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "primaryKey"}], "originalName": "PrimaryKey"} ]
   },
   {
     "originalName": "SelectAllCheckboxChangedEventArgs",

@@ -15,8 +15,6 @@ The {ProductName} Row Pinning feature in {Platform} {ComponentTitle} allows you 
 
 `sample="/{ComponentSample}/row-pinning-options", height="600", alt="{Platform} {ComponentTitle} Row Pinning Example"`
 
-
-
 ## Row Pinning UI
 
 The built-in row pinning UI is enabled by adding an `ActionStrip` component with the `GridPinningActions` component. The action strip is automatically shown when hovering a row and will display a pin or unpin button icon based on the state of the row it is shown for. An additional action allowing to scroll the copy of the pinned row into view is shown for each pinned row as well.
@@ -33,7 +31,7 @@ The built-in row pinning UI is enabled by adding an `ActionStrip` component with
 </{ComponentSelector}>
 ```
 <!-- end: Angular -->
-
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 ```razor
     <{ComponentSelector} Width="100%"  
              Height="100%"
@@ -57,19 +55,23 @@ The built-in row pinning UI is enabled by adding an `ActionStrip` component with
         </IgbActionStrip>
     </{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
+
 <!-- WebComponents -->
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 ```html
 <{ComponentSelector} auto-generate="false">
-    <igc-column field="field" header="field">
-    </igc-column>
+    <igc-column field="Name" header="Full Name"></igc-column>
     <igc-action-strip>
         <igc-grid-pinning-actions></igc-grid-pinning-actions>
         <igc-grid-editing-actions></igc-grid-editing-actions>
     </igc-action-strip>
 </{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 <!-- end: WebComponents -->
 
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 ```tsx
 <{ComponentSelector}>
     <IgrColumn field="Country" header="Country"> </IgrColumn>
@@ -79,6 +81,7 @@ The built-in row pinning UI is enabled by adding an `ActionStrip` component with
     </IgrActionStrip>
 </{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
 ## Row Pinning API
 
@@ -134,11 +137,12 @@ A row is pinned below the last pinned row. Changing the order of the pinned rows
 <{ComponentSelector} id="grid" auto-generate="true">
 </{ComponentSelector}>
 ```
-```ts
+
+```typescript
 constructor() {
-    var grid = document.getElementById('grid') as IgcGridComponent;
-    grid.data = this.data;
-    grid.addEventListener("rowPinning", this.rowPinning);
+    var grid1 = document.getElementById('grid1') as {ComponentName}Component;
+    grid1.data = this.data;
+    grid1.addEventListener("rowPinning", this.rowPinning);
 }
 
 public rowPinning(event) {
@@ -147,6 +151,7 @@ public rowPinning(event) {
 ```
 <!-- end: WebComponents -->
 
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 ```tsx
 function rowPinning(grid: IgrGridBaseDirective, event: IgrPinRowEventArgs ) {
     event.detail.insertAtIndex = 0;
@@ -155,26 +160,28 @@ function rowPinning(grid: IgrGridBaseDirective, event: IgrPinRowEventArgs ) {
 <{ComponentSelector} autoGenerate="true" rowPinning={rowPinning}>
 </{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
 ```razor
 <{ComponentSelector} Width="100%"
              Id="grid"
-             RowPinningScript='rowPinningHandler'
+             RowPinningScript="rowPinningHandler"
              Height="100%"
              PrimaryKey="Key"
-             AutoGenerate=true
-             Data=northwindEmployees>
+             AutoGenerate="true"
+             Data="northwindEmployees">
 </{ComponentSelector}>
 ```
 
 ```razor
+*** In JavaScript ***
+
 function rowPinningHandler(event) {
     event.detail.insertAtIndex = 0;
 }
 
 igRegisterScript("rowPinningHandler", rowPinningHandler, false);
 ```
-<!-- Angular, WebComponents  -->
 
 ## Pinning Position
 
@@ -197,12 +204,10 @@ public pinningConfig: IPinningConfig = { rows: RowPinningPosition.Bottom };
 ```
 
 ```typescript
-var grid = document.getElementById('dataGrid') as IgcGridComponent;
+var grid = document.getElementById('dataGrid') as {ComponentName}Component;
 grid.pinning = { rows: RowPinningPosition.Bottom };
 ```
 <!-- end: WebComponents -->
-
-
 
 ```razor
     <{ComponentSelector} Id="grid"
@@ -226,7 +231,16 @@ grid.pinning = { rows: RowPinningPosition.Bottom };
         }
     }
 ```
-<!-- end: Angular, WebComponents -->
+
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
+```tsx
+<{ComponentSelector} id="dataGrid" autoGenerate="true">
+</{ComponentSelector}>
+
+var grid = document.getElementById("dataGrid") as {ComponentSelector};
+grid.pinning = { rows: RowPinningPosition.Bottom };
+```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
 ## Custom Row Pinning UI
 
@@ -237,6 +251,7 @@ You can define your custom UI and change the pin state of the rows via the relat
 Let's say that instead of an action strip you would like to show a pin icon in every row allowing the end-user to click and change a particular row's pin state.
 This can be done by adding an extra column with a cell template containing the custom icon.
 
+<!-- ComponentStart: Grid, TreeGrid -->
 ```razor
 <IgbColumn Width="70px" BodyTemplateScript="WebGridRowPinCellTemplate"/>
 
@@ -271,31 +286,46 @@ igRegisterScript("WebGridRowPinCellTemplate", (ctx) => {
 ```
 <!-- end: Angular -->
 
+
+```typescript
+public togglePinning(row: IgxGridRow, event) {
+    event.preventDefault();
+    if (row.pinned) {
+        row.unpin();
+    } else {
+        row.pin();
+    }
+}
+```
+<!-- end: Angular -->
+
 <!-- WebComponents -->
 ```html
 <{ComponentSelector} id="grid" primary-key="ID" auto-generate="false">
-    <igc-column id="column" width="70px">
-    </igc-column>
+    <igc-column id="column1" name="column1"></igc-column>
 </{ComponentSelector}>
 ```
-```ts
+
+```typescript
 constructor() {
-    var grid = document.getElementById('grid') as IgcGridComponent;
-    var column = document.getElementById('column') as IgcColumnComponent;
+    var grid = document.getElementById('grid') as {ComponentName}Component;
+    var column = document.getElementById('column1') as IgcColumnComponent;
+
     grid.data = this.data;
-    column.bodyTemplate = this.cellPinCellTemplate;
+    column.bodyTemplate = this.pinCellTemplate;
 }
 
-public cellPinCellTemplate = (ctx: IgcCellTemplateContext) => {
-    const index = ctx.cell.id.rowIndex;
-    return html`<span @pointerdown=${(e: any) => this.toggleRowPin(index)}>📌</span>`
+public pinCellTemplate = (ctx: IgcCellTemplateContext) => {
+   const index = ctx.cell.id.rowIndex;
+    return html`<span @pointerdown=${(e: any) => this.togglePinning(index)}>📌</span>`;
 }
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
 ```tsx
 function cellPinCellTemplate(ctx: IgrCellTemplateContext) {
-    const index = ctx.dataContext.cell.id.rowIndex;
+    const index = ctx.dataContext.cell.row.index;
     return (
         <>
             <span onPointerDown={(e: any) => toggleRowPin(index)}>📌</span>
@@ -308,13 +338,110 @@ function cellPinCellTemplate(ctx: IgrCellTemplateContext) {
     </IgrColumn>
 </{ComponentSelector}>
 ```
+<!-- end: React -->
 
+<!-- ComponentEnd: Grid, TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```razor
+<IgbColumn Width="70px" BodyTemplateScript="WebHierarchicalGridRowPinCellTemplate"/>
+
+// In Javascript
+
+igRegisterScript("WebHierarchicalGridRowPinCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    window.toggleRowPin = function toggleRowPin(row) {
+        row.pinned = !row.pinned;
+    }
+	const row = ctx.cell.row;
+    return html`<div>
+    <span onpointerdown='toggleRowPin("${row}")'>📌</span>
+</div>`;
+}, false);
+```
+
+<!-- Angular -->
+```html
+<{ComponentSelector} [data]="data" [primaryKey]="'ID'" [autoGenerate]="false">
+    <igx-column width="70px">
+        <ng-template igxCell let-cell="cell" let-val>
+            <igx-icon class="pin-icon" (mousedown)="togglePinning(cell.row, $event)">
+                {{cell.row.pinned ? 'lock' : 'lock_open'}}
+            </igx-icon>
+        </ng-template>
+    </igx-column>
+    <igx-column *ngFor="let c of columns" [field]="c.field" [header]="c.field">
+    </igx-column>
+    <igx-row-island [key]="'Orders'" [autoGenerate]="true">
+    </igx-row-island>
+</{ComponentSelector}>
+```
+<!-- end: Angular -->
+
+```typescript
+public togglePinning(row: IgxGridRow, event) {
+    event.preventDefault();
+    if (row.pinned) {
+        row.unpin();
+    } else {
+        row.pin();
+    }
+}
+```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" primary-key="ID" auto-generate="false">
+    <igc-column id="column1" name="column1"></igc-column>
+     <igc-row-island child-data-key="Orders" auto-generate="true">
+    </igc-row-island>
+</{ComponentSelector}>
+```
+
+```typescript
+constructor() {
+    var grid = document.getElementById('grid') as {ComponentName}Component;
+    var column = document.getElementById('column1') as IgcColumnComponent;
+
+    grid.data = this.data;
+    column.bodyTemplate = this.pinCellTemplate;
+}
+
+public pinCellTemplate = (ctx: IgcCellTemplateContext) => {
+   const row = ctx.cell.row;
+    return html`<span @pointerdown=${(e: any) => this.togglePinning(row)}>📌</span>`;
+}
+```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+function cellPinCellTemplate(ctx: IgrCellTemplateContext) {
+    const row = ctx.dataContext.cell.row;
+    return (
+        <>
+            <span onPointerDown={(e: any) => toggleRowPin(row)}>📌</span>
+        </>
+    );
+}
+
+<{ComponentSelector} primaryKey="ID" autoGenerate="false">
+    <IgrColumn width="70px" bodyTemplate={cellPinCellTemplate}>
+    </IgrColumn>
+    <IgrRowIsland childDataKey="Orders" autoGenerate="true"></IgrRowIsland>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+<!-- ComponentEnd: HierarchicalGrid -->
+
+
+<!-- ComponentStart: Grid, TreeGrid -->
 On click of the custom icon the pin state of the related row can be changed using the row's API methods.
-
 <!-- Angular, WebComponents -->
 ```typescript
-public toggleRowPin(index: number) {
-    const grid = document.getElementsByTagName("igc-grid")[0] as IgcGridComponent;
+public togglePinning(index: number) {
+    var grid = document.getElementsByTagName("{ComponentSelector}")[0] as {ComponentName}Component;
     grid.getRowByIndex(index).pinned = !grid.getRowByIndex(index).pinned;
 }
 ```
@@ -326,6 +453,24 @@ function toggleRowPin(index: number) {
   grid.getRowByIndex(index).pinned = !grid.getRowByIndex(index).pinned;
 }
 ```
+<!-- ComponentEnd: Grid, TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+On click of the custom icon the pin state of the related row can be changed using the row's API methods.
+<!-- WebComponents -->
+```typescript
+public togglePinning(row: IgcRowType) {
+    row.pinned = !row.pinned;
+}
+```
+<!-- end: WebComponents -->
+
+```tsx
+function toggleRowPin(row: IgrRowType) {
+  row.pinned = !row.pinned;
+}
+```
+<!-- ComponentEnd: HierarchicalGrid -->
 
 #### Demo
 
@@ -385,8 +530,6 @@ This would allow reordering the rows and moving them between the pinned and unpi
 
 `sample="/{ComponentSample}/row-pinning-drag", height="510", alt="{Platform} {ComponentTitle} Row Pinning Drag Example"`
 
-
-
 <!-- end: Angular -->
 
 <!-- ComponentEnd: Grid -->
@@ -412,7 +555,7 @@ This would allow reordering the rows and moving them between the pinned and unpi
 
 ## Styling
 
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming-grid.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
 ```html
@@ -522,7 +665,7 @@ If the component is using an [Emulated](../themes/styles.md#view-encapsulation) 
 
 ## Additional Resources
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -531,7 +674,7 @@ If the component is using an [Emulated](../themes/styles.md#view-encapsulation) 
 * [Column Moving](column-moving.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 

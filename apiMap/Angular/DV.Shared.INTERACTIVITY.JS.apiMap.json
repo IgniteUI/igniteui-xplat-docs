@@ -9,7 +9,7 @@
     "originalNamespace": "Infragistics.Controls.Inputs",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "igx-key-event-args.ts","mappedName": "IgxKeyEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "alt"}], "originalName": "Alt"},
@@ -25,7 +25,7 @@
     "originalName": "MouseButton",
     "originalNamespace": "Infragistics.Controls.Inputs",
     "isEnum":true,
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "MouseButton.ts","mappedName": "MouseButton"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},

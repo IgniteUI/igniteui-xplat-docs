@@ -1,5 +1,5 @@
 {
-  "extraFiles": ["igc-date-picker-module.ts"],
+  "extraFiles": ["igc-x-date-picker-module.ts"],
   "types":[
   {
     "originalName": "DateTimeValueFormatter",
@@ -25,7 +25,7 @@
     "originalName": "DatePicker",
     "originalNamespace": "Infragistics.Controls.Inputs.Implementation",
     "packageName": "igniteui-inputs",
-    "names":[{"platform": "WebComponents","fileName": "igc-date-picker-component.ts","mappedName": "IgcDatePickerComponent"}],
+    "names":[{"platform": "WebComponents","fileName": "igc-x-date-picker-component.ts","mappedName": "IgcXDatePickerComponent"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "allowTextInput"}], "originalName": "AllowTextInput"},
       {"names":[{"platform": "WebComponents", "mappedType": "BaseControlTheme","mappedName": "baseTheme"}], "originalName": "BaseTheme"},
@@ -38,10 +38,12 @@
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "formatString"}], "originalName": "FormatString"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "iconColor"}], "originalName": "IconColor"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isDisabled"}], "originalName": "IsDisabled"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isFixed"}], "originalName": "IsFixed"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "label"}], "originalName": "Label"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "labelTextColor"}], "originalName": "LabelTextColor"},
       {"names":[{"platform": "WebComponents", "mappedType": "Date","mappedName": "maxDate"}], "originalName": "MaxDate"},
       {"names":[{"platform": "WebComponents", "mappedType": "Date","mappedName": "minDate"}], "originalName": "MinDate"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "openAsChild"}], "originalName": "OpenAsChild"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "openOnFocus"}], "originalName": "OpenOnFocus"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "placeholder"}], "originalName": "Placeholder"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "select"}], "originalName": "Select"},
@@ -50,6 +52,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "showWeekNumbers"}], "originalName": "ShowWeekNumbers"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "textColor"}], "originalName": "TextColor"},
       {"names":[{"platform": "WebComponents", "mappedType": "Date","mappedName": "today"}], "originalName": "Today"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "useTopLayer"}], "originalName": "UseTopLayer"},
       {"names":[{"platform": "WebComponents", "mappedType": "Date","mappedName": "value"}], "originalName": "Value"} ]
   },
   {

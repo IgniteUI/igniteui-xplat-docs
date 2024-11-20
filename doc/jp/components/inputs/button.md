@@ -2,19 +2,17 @@
 title: {Platform} Button コンポーネント | {ProductName}
 _description: {Platform} Button コンポーネントの使用を開始します。{Platform} Button OnClick イベントを通じて、ボタンのバリアントを選択し、サイズを構成し、スタイルを定義し、柔軟性を獲得します。
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Button Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, {Platform} Button コンポーネント, インフラジスティックス
-mentionedTypes: ['Button', 'ButtonBase']
+mentionedTypes: ["Button", "ButtonBase"]
 _language: ja
 ---
 
 # {Platform} Button (ボタン) の概要
 
-{Platform} Button コンポーネントを使用すると、{Platform} アプリでアクションをトリガーするクリック可能な要素を有効にできます。ボタンのバリアントの設定方法、ラップされた要素のスタイルの構成方法、およびサイズの定義方法を完全に制御できます。Button コンポーネントは、{Platform} Button OnClick イベント、{Platform} ボタンの切り替え、{Platform} ボタンの無効化などを通じて柔軟性を提供します。
+{Platform} Button コンポーネントを使用すると、{Platform} アプリでアクションをトリガーするクリック可能な要素を有効にできます。ボタンのバリアントの設定方法、ラップされた要素のスタイルの構成方法、およびサイズの定義方法を完全に制御できます。Button コンポーネントは、{Platform} Button <!-- WebComponents, Blazor -->OnClick イベント<!-- end: WebComponents, Blazor --><!-- React -->クリックされたコールバック<!-- end: React -->、{Platform} ボタンの切り替え、{Platform} ボタンの無効化などを通じて柔軟性を提供します。
 
 ## {Platform} Button の例
 
 `sample="/inputs/button/overview", height="100", alt="{Platform} Button の例"`
-
-
 
 ## 使用方法
 
@@ -33,6 +31,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcButtonComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -71,12 +72,12 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 
 `Button` の使用を開始する最も簡単な方法は次のとおりです:
 
-```tsx
-<IgrButton />
-```
-
 ```html
 <igc-button>Click me</igc-button>
+```
+
+```tsx
+<IgrButton />
 ```
 
 ```razor
@@ -118,7 +119,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 
 ### Contained ボタン
 
-`variant` を使用して、コンポーネント テンプレートにシンプルなフラット ボタンを追加します。バリアントを設定しない場合、デフォルトではフラットに設定されることに注意してください。
+`variant` を使用して、コンポーネント テンプレートにシンプルな contained ボタンを追加します。バリアントを設定しない場合、デフォルトでは contained に設定されることに注意してください。
 
 ```tsx
 <IgrButton variant="contained"><span>Contained</span></IgrButton>

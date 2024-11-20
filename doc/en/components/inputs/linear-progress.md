@@ -2,7 +2,7 @@
 title: {Platform} Linear Progress | Linear Progress | Infragistics
 _description: Display a progress bar and customize its appearance with endless color and striping options with Linear Progress Indicator component.
 _keywords: {Platform} Linear Progress, {ProductName}, Infragistics
-mentionedTypes: ['LinearProgress']
+mentionedTypes: ["LinearProgress"]
 ---
 
 # {Platform} Linear Progress Overview
@@ -11,8 +11,6 @@ The {ProductName} Linear Progress Indicator component provides a visual indicato
 ## {Platform} Linear Progress Example
 
 `sample="/inputs/linear-progress-indicator/simple", height="80", alt="{Platform} Linear Progress Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -33,6 +31,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcLinearProgressComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -71,12 +72,12 @@ You will also need to link an additional CSS file to apply the styling to the `C
 
 The simplest way to start using the `LinearProgress` is as follows:
 
-```tsx
-<IgrLinearProgress value="100"></IgrLinearProgress>
-```
-
 ```html
 <igc-linear-progress value="100"></igc-linear-progress>
+```
+
+```tsx
+<IgrLinearProgress value="100"></IgrLinearProgress>
 ```
 
 ```razor

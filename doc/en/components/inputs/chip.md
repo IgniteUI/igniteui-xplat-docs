@@ -2,7 +2,7 @@
 title: {Platform} Chip | Infragistics
 _description: Infragistics' {Platform} Chip component allows you to display content in a predefined style to decorate other components anywhere in an application.
 _keywords: {Platform}, UI controls, web widgets, UI widgets, Web Components, {Platform} Chip Components, Infragistics
-mentionedTypes: ['Chip']
+mentionedTypes: ["Chip"]
 ---
 
 # {Platform} Chip Overview
@@ -12,8 +12,6 @@ mentionedTypes: ['Chip']
 ## {Platform} Chip Example
 
 `sample="/inputs/chip/overview", height="80", alt="{Platform} Chip Example"`
-
-
 
 <div class="divider"></div>
 
@@ -34,6 +32,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcChipComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -72,6 +73,10 @@ You will also need to link an additional CSS file to apply the styling to the `C
 
 The simplest way to start using the `Chip` is as follows:
 
+```html
+<igc-chip></igc-chip>
+```
+
 ```razor
 <div class="container sample vertical">
     <IgbChip>Chip</IgbChip>
@@ -89,10 +94,6 @@ The simplest way to start using the `Chip` is as follows:
 
 ```tsx
 <IgrChip></IgrChip>
-```
-
-```html
-<igc-chip></igc-chip>
 ```
 
 To display a selectable chip, you can use the `Selectable` property of the chip.

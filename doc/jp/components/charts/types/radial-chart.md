@@ -2,7 +2,7 @@
 title: {Platform} ラジアル チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの {Platform} ラジアル チャート
 _keywords: {Platform} Charts, Radial Chart, Infragistics, {Platform} チャート, ラジアル チャート, インフラジスティックス
-mentionedTypes: ["XamDataChart", "RadialLineSeries", 'Series']
+mentionedTypes: ["XamDataChart", "RadialLineSeries", "Series"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -58,7 +58,11 @@ _language: ja
 
 `sample="/charts/data-chart/radial-area-chart-styling", height="600", alt="{Platform} ラジアル エリア チャートのスタイル設定"`
 
+<div class="divider--half"></div>
 
+## {Platform} ラジアル チャートの設定
+
+さらに、ラベルはチャートの近くまたは広い位置に表示されるように設定できます。これは、`CategoryAngleAxis` の `LabelMode` プロパティで設定できます。
 
 <div class="divider--half"></div>
 

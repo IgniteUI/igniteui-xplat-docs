@@ -21,6 +21,7 @@
       {"names":[{"platform": "React", "mappedType": "ControlDisplayDensity","mappedName": "density"}], "originalName": "Density"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "deselectAll"}], "originalName": "DeselectAll"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "filterPlaceholderText"}], "originalName": "FilterPlaceholderText"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getDesiredSize"}], "originalName": "GetDesiredSize"},
       {"names":[{"platform": "React", "mappedType": "CheckboxListIndexType","mappedName": "indexType"}], "originalName": "IndexType"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "isEverythingSelected"}], "originalName": "IsEverythingSelected"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "isNothingSelected"}], "originalName": "IsNothingSelected"},
@@ -33,6 +34,7 @@
       {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "primaryKey"}], "originalName": "PrimaryKey"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "removeKeyValue"}], "originalName": "RemoveKeyValue"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "rowHeight"}], "originalName": "RowHeight"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "rowHoverBackgroundColor"}], "originalName": "RowHoverBackgroundColor"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "scrollbarBackground"}], "originalName": "ScrollbarBackground"},
       {"names":[{"platform": "React", "mappedType": "ScrollbarStyle","mappedName": "scrollbarStyle"}], "originalName": "ScrollbarStyle"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "searchBackgroundColor"}], "originalName": "SearchBackgroundColor"},
@@ -55,7 +57,8 @@
     "names":[{"platform": "React","fileName": "igr-checked-changed-event-args.ts","mappedName": "IgrCheckedChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"},
-      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isChecked"}], "originalName": "IsChecked"} ]
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isChecked"}], "originalName": "IsChecked"},
+      {"names":[{"platform": "React", "mappedType": "any[]",   "mappedName": "primaryKey"}], "originalName": "PrimaryKey"} ]
   },
   {
     "originalName": "SelectAllCheckboxChangedEventArgs",

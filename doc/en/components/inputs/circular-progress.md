@@ -2,7 +2,7 @@
 title: {Platform} Circular Progress | Circular Progress | Infragistics
 _description: Circular Progress Indicator component allows developers to display progress in a circle with endless customization options.
 _keywords: {Platform} Circular Progress, {ProductName}, Infragistics
-mentionedTypes: ['CircularProgress', 'CircularGradient']
+mentionedTypes: ["CircularProgress", "CircularGradient"]
 ---
 
 # {Platform} Circular Progress Overview
@@ -11,8 +11,6 @@ The {ProductName} Circular Progress Indicator component provides a visual indica
 ## {Platform} Circular Progress Example
 
 `sample="/inputs/circular-progress-indicator/simple", height="150", alt="{Platform} Circular Progress Example"`
-
-
 
 <div class="divider--half"></div>
 
@@ -33,6 +31,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcCircularProgressComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -70,12 +71,12 @@ You will also need to link an additional CSS file to apply the styling to the `C
 
 The simplest way to start using the `CircularProgress` is as follows:
 
-```tsx
-<IgrCircularProgress value="100"></IgrCircularProgress>
-```
-
 ```html
 <igc-circular-progress value="100"></igc-circular-progress>
+```
+
+```tsx
+<IgrCircularProgress value="100"></IgrCircularProgress>
 ```
 
 ```razor

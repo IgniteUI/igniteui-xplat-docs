@@ -53,31 +53,29 @@ Property `Filterable` enables you to specify the following options:
 <!-- end: Angular -->
 
 ```razor
-<IgbGrid Data=data AutoGenerate=false AllowFiltering=true>
+<{ComponentSelector} Data=data AutoGenerate=false AllowFiltering=true>
     <IgbColumn Field="ProductName" DataType="GridColumnDataType.String"></IgbColumn>
     <IgbColumn Field="Price" DataType="GridColumnDataType.Number" Filterable=false></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 ```
 
-<!-- WebComponents -->
 ```html
 <{ComponentSelector} id="grid1" auto-generate="false" allow-filtering="true">
     <igc-column field="ProductName" data-type="string"></igc-column>
     <igc-column field="Price" data-type="number" filterable="false"></igc-column>
-<{ComponentSelector}>
+</{ComponentSelector}>
 ```
-<!-- end: WebComponents -->
 
-<!-- React -->
 ```tsx
 <{ComponentSelector} data={this.nwindData} autoGenerate="false" ref={this.gridRef} allowFiltering="true">
     <IgrColumn field="ProductName" dataType="String"></IgrColumn>
     <IgrColumn field="UnitPrice" data-type="Number" filterable="false"></IgrColumn>
 </{ComponentSelector}>
 ```
-<!-- end: React -->
 
-To enable the [Advanced filtering](advanced-filtering.md) however, you need to set the `AllowAdvancedFiltering` input property to **true**.
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
+To enable the [Advanced filtering](advanced-filtering.md) however, you need to set the `AllowAdvancedFiltering` input property to **true**.7
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
 <!-- Angular -->
 ```html
@@ -87,7 +85,7 @@ To enable the [Advanced filtering](advanced-filtering.md) however, you need to s
 <!-- end: Angular -->
 
 ```razor
-<IgbGrid Data=data AutoGenerate=true AllowAdvancedFiltering=true />
+<{ComponentSelector} Data=data AutoGenerate=true AllowAdvancedFiltering=true />
 ```
 
 <!-- WebComponents -->
@@ -129,6 +127,7 @@ The filtering feature is enabled for the `{ComponentName}` component by setting 
 </{ComponentSelector}>
 ```
 <!-- end: Angular -->
+
 <!-- WebComponents -->
 ```html
 <{ComponentSelector} auto-generate="false" allow-filtering="true">
@@ -148,7 +147,6 @@ The filtering feature is enabled for the `{ComponentName}` component by setting 
 </{ComponentSelector}>
 ```
 <!-- end: React -->
-
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -167,10 +165,10 @@ The filtering feature is enabled for the `{ComponentName}` component by setting 
 <!-- ComponentEnd: HierarchicalGrid -->
 
 ```razor
-<IgbGrid Data=data AutoGenerate=false AllowFiltering=true>
+<{ComponentSelector} Data=data AutoGenerate=false AllowFiltering=true>
     <IgbColumn Field="ProductName" DataType="GridColumnDataType.String"></IgbColumn>
     <IgbColumn Field="Price" DataType="GridColumnDataType.Number" Filterable=false></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 ```
 
 > [!Note]
@@ -350,7 +348,7 @@ constructor() {
 The `FilteringLogic` property of the `{ComponentName}` controls how filtering multiple columns will resolve in the `{ComponentName}`. You can change it at any time through the `{ComponentName}` API, or through the `{ComponentName}` input property.
 
 ```razor
- <IgbGrid FilteringLogic="FilteringLogic.Or"></IgbGrid>
+ <{ComponentSelector} FilteringLogic="FilteringLogic.Or"></{ComponentSelector}>
 ```
 
 <!-- Angular -->
@@ -371,6 +369,8 @@ this.grid.filteringLogic = FilteringLogic.OR;
 
 <!-- React -->
 ```tsx
+import { FilteringLogic } from "igniteui-react-grids";
+
 <{ComponentName} filteringLogic={FilteringLogic.Or}></{ComponentName}>
 ```
 <!-- end: React -->
@@ -551,14 +551,10 @@ export class BooleanFilteringOperand extends IgcBooleanFilteringOperand {
 ```
 ```ts
 constructor() {
-    var productName = this.productName = document.getElementById('ProductName') as IgcColumnComponent;
-    var discontinued = this.discontinued = document.getElementById('Discontinued') as IgcColumnComponent;
-
-    this._bind = () => {
-        productName.filters = this.caseSensitiveFilteringOperand;
-        discontinued.filters = this.booleanFilteringOperand;
-    }
-    this._bind();
+    var productName = document.getElementById('ProductName') as IgcColumnComponent;
+    var discontinued = document.getElementById('Discontinued') as IgcColumnComponent;
+    productName.filters = this.caseSensitiveFilteringOperand;
+    discontinued.filters = this.booleanFilteringOperand;
 }
 ```
 <!-- end: WebComponents -->
@@ -584,20 +580,16 @@ constructor() {
 <!-- grid-custom-filtering.component.html -->
 
 <igc-hierarchical-grid auto-generate="false" allow-filtering="true">
-    <igc-column id="Artist" field="Artist" filterable='true' data-type="string" [filters]="caseSensitiveFilteringOperand"></igc-column>
-    <igc-column id="HasGrammyAward" field="HasGrammyAward" filterable='true' data-type="boolean" [filters]="booleanFilteringOperand"></igc-column>
+    <igc-column id="Artist" field="Artist" filterable='true' data-type="string"></igc-column>
+    <igc-column id="HasGrammyAward" field="HasGrammyAward" filterable='true' data-type="boolean"></igc-column>
 </igc-hierarchical-grid>
 ```
 ```ts
 constructor() {
-    var artist = this.artist = document.getElementById('Artist') as IgcColumnComponent;
-    var hasGrammyAward = this.hasGrammyAward = document.getElementById('HasGrammyAward') as IgcColumnComponent;
-
-    this._bind = () => {
-        artist.bodyTemplate = this.caseSensitiveFilteringOperand;
-        hasGrammyAward.bodyTemplate = this.booleanFilteringOperand;
-    }
-    this._bind();
+    var artist = document.getElementById('Artist') as IgcColumnComponent;
+    var hasGrammyAward = document.getElementById('HasGrammyAward') as IgcColumnComponent;
+    artist.filters = this.caseSensitiveFilteringOperand;
+    hasGrammyAward.filters = this.booleanFilteringOperand;
 }
 ```
 
@@ -623,6 +615,9 @@ You can add a template marked with `FilterCellTemplate` in order to retemplate t
 
 <!-- end: Angular -->
 
+
+<!-- Angular -->
+
 <!-- ComponentStart: TreeGrid -->
 
 ## Matching Records Only Filtering Strategy
@@ -642,27 +637,28 @@ public matchingRecordsOnlyStrategy = new TreeGridMatchingRecordsOnlyFilteringStr
 
 <!-- ComponentEnd: TreeGrid -->
 
+<!-- end: Angular -->
 
 <!-- WebComponents, Blazor, React -->
 
 ## Styling
 
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming-grid.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
 <!-- WebComponents -->
-```ts
-<igc-grid class="grid">
+```html
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
 
 ```razor
-<IgbGrid Class="grid"></IgbGrid>
+<{ComponentSelector} Class="grid"></{ComponentSelector}>
 ```
 
 <!-- React -->
 ```tsx
-<IgrGrid className="grid"></IgrGrid>
+<{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
 <!-- end: React -->
 
@@ -940,7 +936,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ## Additional Resources
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Sorting](sorting.md)
@@ -949,7 +945,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 

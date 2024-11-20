@@ -1,5 +1,38 @@
 {  "types":[
   {
+    "originalName": "ProportionalCategoryAngleAxis",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "CategoryAngleAxis",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Angular","fileName": "igx-proportional-category-angle-axis-component.ts","dynamicModuleName": "igx-proportional-category-angle-axis-dynamic-module.ts","moduleName": "igx-proportional-category-angle-axis-module.ts","mappedName": "IgxProportionalCategoryAngleAxisComponent"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getNormalizingValueAtIndex"}], "originalName": "GetNormalizingValueAtIndex"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getPercentageValue"}], "originalName": "GetPercentageValue"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getScaledAngle"}], "originalName": "GetScaledAngle"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getUnscaledAngle"}], "originalName": "GetUnscaledAngle"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getValueLabel"}], "originalName": "GetValueLabel"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "hasOthersCategory"}], "originalName": "HasOthersCategory"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "isOthersValue"}], "originalName": "IsOthersValue"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isPiecewise"}], "originalName": "IsPiecewise"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "normalizationMayContainUnknowns"}], "originalName": "NormalizationMayContainUnknowns"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "othersCategoryText"}], "originalName": "OthersCategoryText"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "othersCategoryThreshold"}], "originalName": "OthersCategoryThreshold"},
+      {"names":[{"platform": "Angular", "mappedType": "OthersCategoryType","mappedName": "othersCategoryType"}], "originalName": "OthersCategoryType"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "othersIndex"}], "originalName": "OthersIndex"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "othersValue"}], "originalName": "OthersValue"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "valueMemberPath"}], "originalName": "ValueMemberPath"} ]
+  },
+  {
+    "originalName": "OthersCategoryContext",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Angular","fileName": "OthersCategoryContext.ts","mappedName": "OthersCategoryContext"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+  },
+  {
     "originalName": "CategoryAngleAxis",
     "originalNamespace": "Infragistics.Controls.Charts",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -9,10 +42,12 @@
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "actualInterval"}], "originalName": "ActualInterval"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "actualMinorInterval"}], "originalName": "ActualMinorInterval"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "areGroupSizesUneven"}], "originalName": "AreGroupSizesUneven"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getScaledAngle"}], "originalName": "GetScaledAngle"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getUnscaledAngle"}], "originalName": "GetUnscaledAngle"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "interval"}], "originalName": "Interval"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isAngular"}], "originalName": "IsAngular"},
+      {"names":[{"platform": "Angular", "mappedType": "AxisAngleLabelMode","mappedName": "labelMode"}], "originalName": "LabelMode"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "minorInterval"}], "originalName": "MinorInterval"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "startAngleOffset"}], "originalName": "StartAngleOffset"} ]
   },
@@ -31,7 +66,8 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCategoryDateTime"}], "originalName": "IsCategoryDateTime"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isContinuous"}], "originalName": "IsContinuous"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "minorInterval"}], "originalName": "MinorInterval"},
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "scrollIntoView"}], "originalName": "ScrollIntoView"} ]
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "scrollIntoView"}], "originalName": "ScrollIntoView"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "unevenlySpacedLabels"}], "originalName": "UnevenlySpacedLabels"} ]
   },
   {
     "originalName": "NumericAngleAxis",
@@ -44,6 +80,7 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getScaledAngle"}], "originalName": "GetScaledAngle"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getUnscaledAngle"}], "originalName": "GetUnscaledAngle"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isAngular"}], "originalName": "IsAngular"},
+      {"names":[{"platform": "Angular", "mappedType": "AxisAngleLabelMode","mappedName": "labelMode"}], "originalName": "LabelMode"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "startAngleOffset"}], "originalName": "StartAngleOffset"} ]
   },
   {
@@ -95,6 +132,7 @@
       {"names":[{"platform": "Angular", "mappedType": "Date","mappedName": "actualMaximumValue"}], "originalName": "ActualMaximumValue"},
       {"names":[{"platform": "Angular", "mappedType": "Date","mappedName": "actualMinimumValue"}], "originalName": "ActualMinimumValue"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "dateTimeMemberPath"}], "originalName": "DateTimeMemberPath"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getFullRange"}], "originalName": "GetFullRange"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getIndexClosestToUnscaledValue"}], "originalName": "GetIndexClosestToUnscaledValue"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isDataPreSorted"}], "originalName": "IsDataPreSorted"},

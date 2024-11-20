@@ -2,7 +2,7 @@
 title: {Platform} List コンポーネント | インフラジスティックス
 _description: インフラジスティックスの {Platform} List コンポーネントは、項目のグループを表示するのに役立ちます。{ProductName} を使用したデータの表示方法について説明します。
 _keywords: {Platform} List, Item List, overview, {ProductName}, data binding, Infragistics, {Platform} リスト, 項目リスト, 概要, データ バインディング, インフラジスティックス
-mentionedTypes: ['List', 'ListHeader', 'ListItem', 'Avatar', 'Button', 'RadioGroup', 'Radio']
+mentionedTypes: ["List", "ListHeader", "ListItem", "Avatar", "Button", "RadioGroup", "Radio"]
 _language: ja
 ---
 
@@ -75,6 +75,7 @@ import { defineComponents, IgcListComponent } from 'igniteui-webcomponents';
 defineComponents(IgcListComponent);
 ```
 
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 ### リスト項目の追加
 

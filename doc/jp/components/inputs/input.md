@@ -2,10 +2,10 @@
 title: {Platform} Input | データ可視化ツール | インフラジスティックス
 _description: インフラジスティックスの {Platform} Input は、ユーザーがデータを入力できるコンポーネントです。{ProductName} を使用してアプリケーションを改善します。
 _keywords: {Platform} input, {ProductName}, Infragistics, {Platform} 入力, インフラジスティックス
-mentionedTypes: ['Input', 'Icon', 'Radio']
+mentionedTypes: ["Input", "Icon", "Radio"]
 _language: ja
 ---
-# {Platform} Input の概要
+# {Platform} Input (入力) の概要
 
 {ProductName} Input は、ユーザーがデータを入力できるコンポーネントです。
 
@@ -50,7 +50,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbInputModule));
 
 <!-- WebComponents -->
 
-開始するには、typescript ファイルに `Input` をインポートし、次のように [defineComponents()](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
+開始するには、typescript ファイルに `Input` をインポートし、次のように [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
 
 ```ts
 import { defineComponents, IgcInputComponent } from 'igniteui-webcomponents';
@@ -58,6 +58,8 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcInputComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 <!-- end: WebComponents -->
 
@@ -79,12 +81,12 @@ IgrInputModule.register();
 
 `Input` コンポーネントをインポートしたら、使用を開始する準備ができているので、最初の Input を追加しましょう。
 
-```tsx
-<IgrInput type="email" label="Subscribe"></IgrInput>
-```
-
 ```html
 <igc-input type="email" label="Subscribe" placeholder="john.doe@mail.com"></igc-input>
+```
+
+```tsx
+<IgrInput type="email" label="Subscribe"></IgrInput>
 ```
 
 ```razor

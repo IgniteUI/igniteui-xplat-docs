@@ -21,7 +21,7 @@ _language: ja
 
 
 > [!Note]
-> 行が編集モードにある場合、他の行のセルをクリックすると [完了] ボタンが押されたように動作し、前の行の変更をすべての変更をサブミットします。フォーカスのある新しいセルが編集可能かどうか、新しい行が編集モードに入るかどうか、セルが編集できない場合は前の行のみ編集モードを終了します。
+> 行が編集モードにある場合、他の行のセルをクリックすると [完了] ボタンが押されたように動作し、前の行の変更をすべての変更をサブミットします。新しくフォーカスされたセルが編集可能な場合、新しい行も編集モードになります。ただし、セルが編集可能でない場合は、前の行のみが編集モードを終了します。
 
 ## 行編集の使用
 
@@ -43,19 +43,21 @@ export class AppModule {}
 <!-- end: Angular -->
 
 次に `{ComponentName}` をバインドしたデータソースで定義し、`RowEditable` を true に設定してバインドします。
+
+<!-- ComponentStart: Grid -->
 <!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [primaryKey]="'ProductID'" width="100%" height="500px" [rowEditable]="true">
     <igx-column field="ProductID" header="Product ID" editable="false"></igx-column>
-    <igx-column field="ReorderLevel" header="ReorderLever" [dataType]="'number'"></igx-column>
-    <igx-column field="ProductName" header="ProductName" [dataType]="'string'"></igx-column>
-    <igx-column field="UnitsInStock" header="UnitsInStock" [dataType]="'number'">
+    <igx-column field="ReorderLevel" header="Reorder Level" [dataType]="'number'"></igx-column>
+    <igx-column field="ProductName" header="Product Name" [dataType]="'string'"></igx-column>
+    <igx-column field="UnitsInStock" header="Units In Stock" [dataType]="'number'">
         <ng-template igxCellEditor let-cell="cell">
             <input name="units" [(ngModel)]="cell.value" style="color: black" />
         </ng-template>
     </igx-column>
-    <igx-column field="OrderDate" [dataType]="'date'"></igx-column>
-    <igx-column field="Discontinued" header="Discontinued" [dataType]="'boolean'"></igx-column>
+    <igx-column field="OrderDate" header="Order Date" [dataType]="'date'"></igx-column>
+    <igx-column field="Discontinued" [dataType]="'boolean'"></igx-column>
 </{ComponentSelector}>
 ```
 <!-- end: Angular -->
@@ -64,17 +66,17 @@ export class AppModule {}
 ```html
 <{ComponentSelector} id="grid" primary-key="ProductID" width="100%" height="500px" row-editable="true">
     <igc-column field="ProductID" header="Product ID" editable="false"></igc-column>
-    <igc-column field="ReorderLevel" header="ReorderLever" data-type="Number"></igc-column>
-    <igc-column field="ProductName" header="ProductName" data-type="String"></igc-column>
-    <igc-column id="unitsInStock" field="UnitsInStock" header="UnitsInStock" data-type="Number">
-    </igc-column>
-    <igc-column field="OrderDate" data-type="Date"></igc-column>
-    <igc-column field="Discontinued" header="Discontinued" data-type="Boolean"></igc-column>
+    <igc-column field="ReorderLevel" header="Reorder Level" data-type="number"></igc-column>
+    <igc-column field="ProductName" header="Product Name" data-type="string"></igc-column>
+    <igc-column id="unitsInStock" field="UnitsInStock" header="Units In Stock" data-type="number"></igc-column>
+    <igc-column field="OrderDate" field="Order Date" data-type="date"></igc-column>
+    <igc-column field="Discontinued" data-type="boolean"></igc-column>
 </{ComponentSelector}>
 ```
+
 ```ts
 constructor() {
-    var grid  = document.getElementById('grid') as IgcGridComponent;
+    var grid  = document.getElementById('grid') as {ComponentName}Component;
     var unitsInStock = document.getElementById('unitsInStock') as IgcColumnComponent;
     grid.data = this.data;
     unitsInStock.bodyTemplate = this.unitsInStockCellTemplate;
@@ -106,16 +108,14 @@ function unitsInStockCellTemplate(ctx: IgrCellTemplateContext) {
 </{ComponentSelector}>
 ```
 
-<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
-
 ```razor
  <{ComponentSelector} Width="100%"  
              Height="100%"
              PrimaryKey="Key"
-             AutoGenerate=false
-             Data=northwindEmployees
-             RowEditable=true>
-        <IgbColumn Field="ID" Editable=false></IgbColumn>
+             AutoGenerate="false"
+             Data="northwindEmployees"
+             RowEditable="true">
+        <IgbColumn Field="ID" Editable="false"></IgbColumn>
         <IgbColumn Field="ContactName"></IgbColumn>
         <IgbColumn Field="ContactTitle"></IgbColumn>
         <IgbColumn Field="City"></IgbColumn>
@@ -137,14 +137,361 @@ function unitsInStockCellTemplate(ctx: IgrCellTemplateContext) {
         }
     }
 ```
+<!-- ComponentEnd: Grid -->
 
-<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
+<!-- ComponentStart: TreeGrid -->
+<!-- Angular -->
+```html
+<{ComponentSelector} [data]="data" [primaryKey]="'ID'" width="100%" height="500px" [rowEditable]="true">
+    <igx-column field="Name" header="Name" [dataType]="'string'"></igx-column>
+    <igx-column field="Age" header="Reorder Level" [dataType]="'number'"></igx-column>
+    <igx-column field="Title" header="Title" [dataType]="'string'">
+    <igx-column field="HireDate" header="Hire Date" [dataType]="'date'"></igx-column>
+</{ComponentSelector}>
+```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" primary-key="ID" width="100%" height="500px" row-editable="true">
+    <igc-column field="Name" header="Name" data-type="string"></igc-column>
+    <igc-column field="Age" header="Age" data-type="number"></igc-column>
+    <igc-column field="Title" header="Title" data-type="string"></igc-column>
+    <igc-column field="HireDate" field="Hire Date" data-type="date"></igc-column>
+</{ComponentSelector}>
+```
+
+```ts
+constructor() {
+    var grid  = document.getElementById('grid') as {ComponentName}Component;
+    grid.data = this.data;
+}
+```
+<!-- end: WebComponents -->
+
+```tsx
+<{ComponentSelector} primaryKey="ID" width="100%" height="500px" rowEditable="true">
+    <IgrColumn field="Name" header="Name" dataType="string"></IgrColumn>
+    <IgrColumn field="Age" header="Age" dataType="number"></IgrColumn>
+    <IgrColumn field="Title" header="Title" dataType="string"></IgrColumn>
+    <IgrColumn field="HireDate" header="Hire Date" dataType="date"></IgrColumn>
+</{ComponentSelector}>
+```
+
+```razor
+ <{ComponentSelector} Width="100%" Height="100%" PrimaryKey="ID" AutoGenerate="false" Data="data" RowEditable="true">
+        <IgbColumn Field="Name" Header="Name" DataType="GridColumnDataType.String"></IgbColumn>
+        <IgbColumn Field="Age" Header="Age" DataType="GridColumnDataType.Number"></IgbColumn>
+        <IgbColumn Field="Title" Header="Title" DataType="GridColumnDataType.String"></IgbColumn>
+        <IgbColumn Field="HireDate" Header="Hire Date" DataType="GridColumnDataType.Date"></IgbColumn>
+</{ComponentSelector}>
+```
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+<!-- Angular -->
+```html
+<{ComponentSelector} [data]="data" [primaryKey]="'ProductID'" width="100%" height="500px" [rowEditable]="true">
+    <igx-column field="ProductID" header="Product ID" editable="false"></igx-column>
+    <igx-column field="ReorderLevel" header="Reorder Level" [dataType]="'number'"></igx-column>
+    <igx-column field="ProductName" header="Product Name" [dataType]="'string'"></igx-column>
+    <igx-column field="UnitsInStock" header="Units In Stock" [dataType]="'number'">
+        <ng-template igxCellEditor let-cell="cell">
+            <input name="units" [(ngModel)]="cell.value" style="color: black" />
+        </ng-template>
+    </igx-column>
+    <igx-column field="OrderDate" header="Order Date" [dataType]="'date'"></igx-column>
+    <igx-column field="Discontinued" [dataType]="'boolean'"></igx-column>
+</{ComponentSelector}>
+```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<igc-hierarchical-grid auto-generate="false" name="hierarchicalGrid" id="hierarchicalGrid" id="hierarchicalGrid" primary-key="ID" row-editable="true">
+    <igc-column field="Artist" header="Artist" data-type="string"> </igc-column>
+    <igc-column field="Photo" header="Photo" data-type="image" editable="false"> </igc-column>
+    <igc-column field="Debut" header="Debut" data-type="number"> </igc-column>
+    <igc-column field="GrammyNominations" header="Grammy Nominations" data-type="number"> </igc-column>
+    <igc-column field="GrammyAwards" header="Grammy Awards" data-type="number"> </igc-column>
+        
+    <igc-row-island child-data-key="Albums" auto-generate="false" primary-key="Album" row-editable="true">
+        <igc-column field="Album" header="Album" data-type="string"> </igc-column>
+        <igc-column field="LaunchDate" header="Launch Date" data-type="date"> </igc-column>
+        <igc-column field="BillboardReview" header="Billboard Review" data-type="string"> </igc-column>
+        <igc-column field="USBillboard200" header="US Billboard 200" data-type="string"> </igc-column>
+        <igc-row-island child-data-key="Songs" auto-generate="false" primary-key="Number" row-editable="true">
+            <igc-column field="Number" header="No." data-type="string"> </igc-column>
+            <igc-column field="Title" header="Title" data-type="string"> </igc-column>
+            <igc-column field="Released" header="Released" data-type="date"> </igc-column>
+            <igc-column field="Genre" header="Genre" data-type="string"> </igc-column>
+        </igc-row-island>
+    </igc-row-island>
+
+    <igc-row-island child-data-key="Tours" auto-generate="false" primary-key="Tour" row-editable="true">
+        <igc-column field="Tour" header="Tour" data-type="string"> </igc-column>
+        <igc-column field="StartedOn" header="Started on" data-type="string"> </igc-column>
+        <igc-column field="Location" header="Location" data-type="string"> </igc-column>
+        <igc-column field="Headliner" header="Headliner" data-type="string"> </igc-column>
+    </igc-row-island>
+</igc-hierarchical-grid>
+```
+
+```ts
+constructor() {
+    var grid  = document.getElementById('hierarchicalGrid') as {ComponentName}Component;
+    grid.data = this.data;
+}
+```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<IgrHierarchicalGrid
+    autoGenerate="false"
+    data={this.singersData}
+    ref={this.hierarchicalGridRef}
+    id="hierarchicalGrid"
+    primaryKey="ID"
+    rowEditable="true">
+    <IgrColumn
+        field="Artist"
+        header="Artist"
+        dataType="String"
+    ></IgrColumn>
+    <IgrColumn
+        field="Photo"
+        header="Photo"
+        dataType="Image"
+        editable="false"
+    ></IgrColumn>
+    <IgrColumn
+        field="Debut"
+        header="Debut"
+        dataType="Number"
+    ></IgrColumn>
+    <IgrColumn
+        field="GrammyNominations"
+        header="Grammy Nominations"
+        dataType="Number"
+    ></IgrColumn>
+    <IgrColumn
+        field="GrammyAwards"
+        header="Grammy Awards"
+        dataType="Number"
+    ></IgrColumn>
+
+    <IgrRowIsland
+        childDataKey="Albums"
+        autoGenerate="false"
+        primaryKey="Album"
+        rowEditable="true">
+        <IgrColumn
+            field="Album"
+            header="Album"
+            dataType="String"
+        ></IgrColumn>
+        <IgrColumn
+            field="LaunchDate"
+            header="Launch Date"
+            dataType="Date"
+        ></IgrColumn>
+        <IgrColumn
+            field="BillboardReview"
+            header="Billboard Review"
+            dataType="String"
+        ></IgrColumn>
+        <IgrColumn
+            field="USBillboard200"
+            header="US Billboard 200"
+            dataType="String"
+        ></IgrColumn>
+
+        <IgrRowIsland
+            childDataKey="Songs"
+            autoGenerate="false"
+            primaryKey="Number"
+            rowEditable="true">
+            <IgrColumn
+                field="Number"
+                header="No."
+                dataType="String"
+            ></IgrColumn>
+            <IgrColumn
+                field="Title"
+                header="Title"
+                dataType="String"
+            ></IgrColumn>
+            <IgrColumn
+                field="Released"
+                header="Released"
+                dataType="Date"
+            ></IgrColumn>
+            <IgrColumn
+                field="Genre"
+                header="Genre"
+                dataType="String"
+            ></IgrColumn>
+        </IgrRowIsland>
+    </IgrRowIsland>
+
+    <IgrRowIsland
+        childDataKey="Tours"
+        autoGenerate="false"
+        primaryKey="Tour"
+        rowEditable="true">
+        <IgrColumn
+            field="Tour"
+            header="Tour"
+            dataType="String"
+        ></IgrColumn>
+        <IgrColumn
+            field="StartedOn"
+            header="Started on"
+            dataType="String"
+        ></IgrColumn>
+        <IgrColumn
+            field="Location"
+            header="Location"
+            dataType="String"
+        ></IgrColumn>
+        <IgrColumn
+            field="Headliner"
+            header="Headliner"
+            dataType="String"
+        ></IgrColumn>
+    </IgrRowIsland>
+</IgrHierarchicalGrid>
+```
+<!-- end: React -->
+
+<!-- Blazor -->
+```razor
+<IgbHierarchicalGrid
+AutoGenerate="false"
+Data="SingersData"
+Name="hierarchicalGrid"
+@ref="hierarchicalGrid"
+Id="hierarchicalGrid"
+PrimaryKey="ID"
+RowEditable="true">
+    <IgbColumn
+    Field="Artist"
+    Header="Artist"
+    DataType="GridColumnDataType.String">
+    </IgbColumn>
+    <IgbColumn
+    Field="Photo"
+    Header="Photo"
+    DataType="GridColumnDataType.Image"
+    Editable="false">
+    </IgbColumn>
+    <IgbColumn
+    Field="Debut"
+    Header="Debut"
+    DataType="GridColumnDataType.Number">
+    </IgbColumn>
+    <IgbColumn
+    Field="GrammyNominations"
+    Header="Grammy Nominations"
+    DataType="GridColumnDataType.Number">
+    </IgbColumn>
+    <IgbColumn
+    Field="GrammyAwards"
+    Header="Grammy Awards"
+    DataType="GridColumnDataType.Number">
+    </IgbColumn>
+    
+    <IgbRowIsland
+    ChildDataKey="Albums"
+    AutoGenerate="false"
+    PrimaryKey="Album"
+    RowEditable="true">
+        <IgbColumn
+        Field="Album"
+        Header="Album"
+        DataType="GridColumnDataType.String">
+        </IgbColumn>
+        <IgbColumn
+        Field="LaunchDate"
+        Header="Launch Date"
+        DataType="GridColumnDataType.Date">
+        </IgbColumn>
+        <IgbColumn
+        Field="BillboardReview"
+        Header="Billboard Review"
+        DataType="GridColumnDataType.String">
+        </IgbColumn>
+        <IgbColumn
+        Field="USBillboard200"
+        Header="US Billboard 200"
+        DataType="GridColumnDataType.String">
+        </IgbColumn>
+        
+        <IgbRowIsland
+        ChildDataKey="Songs"
+        AutoGenerate="false"
+        PrimaryKey="Number"
+        RowEditable="true">
+            <IgbColumn
+            Field="Number"
+            Header="No."
+            DataType="GridColumnDataType.String">
+            </IgbColumn>
+            <IgbColumn
+            Field="Title"
+            Header="Title"
+            DataType="GridColumnDataType.String">
+            </IgbColumn>
+            <IgbColumn
+            Field="Released"
+            Header="Released"
+            DataType="GridColumnDataType.Date">
+            </IgbColumn>
+            <IgbColumn
+            Field="Genre"
+            Header="Genre"
+            DataType="GridColumnDataType.String">
+            </IgbColumn>
+        </IgbRowIsland>
+    </IgbRowIsland>
+    
+    <IgbRowIsland
+    ChildDataKey="Tours"
+    AutoGenerate="false"
+    PrimaryKey="Tour"
+    RowEditable="true">
+        <IgbColumn
+        Field="Tour"
+        Header="Tour"
+        DataType="GridColumnDataType.String">
+        </IgbColumn>
+        <IgbColumn
+        Field="StartedOn"
+        Header="Started on"
+        DataType="GridColumnDataType.String">
+        </IgbColumn>
+        <IgbColumn
+        Field="Location"
+        Header="Location"
+        DataType="GridColumnDataType.String">
+        </IgbColumn>
+        <IgbColumn
+        Field="Headliner"
+        Header="Headliner"
+        DataType="GridColumnDataType.String">
+        </IgbColumn>
+    </IgbRowIsland>
+</IgbHierarchicalGrid>
+```
+<!-- end: Blazor -->
+<!-- ComponentEnd: HierarchicalGrid -->
 
 > [!Note]
 > プライマリキーは行編集操作で必須です。
 
 > [!Note]
-> 各列の編集を有効にする必要はありません。`{ComponentName}` で `RowEditable` プロパティを使用するとプライマリ行以外 `Field` プロパティを定義したすべての行が編集可能になります。特定の列の編集を無効にする場合、`Editable` 列の入力を **false** に設定します。
+> 個々の列の編集を有効にする必要はありません。`{ComponentName}` の `RowEditable` プロパティを使用すると、定義された `Field` プロパティを持つすべての行 (主行を除く) が編集可能になります。特定の列の編集を無効にしたい場合は、その列の `Editable` 入力を **false** に設定するだけです。
 
 <!-- Angular -->
 ```typescript
@@ -171,7 +518,7 @@ export class {ComponentName}RowEditSampleComponent {
 
 
 > [!Note]
-> `{ComponentName}` は、保留中のセル変更を保持するプロバイダー `BaseTransactionService` を行ステートをサブミットまたはキャンセルするまで内部使用します。
+> `{ComponentName}` は、行の状態が送信されるかキャンセルされるまで保留中のセルの変更を保持する内部プロバイダーである `BaseTransactionService` を利用します。
 
 ## 位置
 
@@ -235,14 +582,14 @@ export class {ComponentName}RowEditSampleComponent {
 </ng-template>
  ```
 
- ```razor
+```razor
 igRegisterScript("RowEditTextTemplate", (ctx) => {
     var html = window.igTemplating.html;
     return html`<div>
    Changes: ${ctx.implicit}
 </div>`;
 }, false);
- ```
+```
 
 ```ts
 public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
@@ -250,6 +597,8 @@ public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
 }
 ```
 
+<!-- React -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 function rowEditTextTemplate(ctx: IgrGridRowEditTextTemplateContext) {
     return (
@@ -259,6 +608,8 @@ function rowEditTextTemplate(ctx: IgrGridRowEditTextTemplateContext) {
     );
 }
 ```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: React -->
 
 ### ボタンのカスタマイズ
 
@@ -268,14 +619,14 @@ function rowEditTextTemplate(ctx: IgrGridRowEditTextTemplateContext) {
 キーボード ナビゲーションにボタンを含める場合、各ボタンに `RowEditTabStopDirective` が必要です。
 <!-- end:Angular -->
 
- ```html
+```html
  <ng-template igxRowEditActions let-endRowEdit>
 	<button igxButton igxRowEditTabStop (click)="endRowEdit(false)">Cancel</button>
 	<button igxButton igxRowEditTabStop (click)="endRowEdit(true)">Apply</button>
 </ng-template>
- ```
+```
 
- ```razor
+```razor
  igRegisterScript("RowEditActionsTemplate", (ctx) => {
     var html = window.igTemplating.html;
     window.endRowEdit = ctx.implicit;
@@ -284,7 +635,7 @@ function rowEditTextTemplate(ctx: IgrGridRowEditTextTemplateContext) {
 	<button @click="(event) => endRowEdit(true, event)">Apply</button>
 </div>`;
 }, false);
- ```
+```
 
 ```ts
 public rowEditActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
@@ -296,6 +647,8 @@ public rowEditActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
 }
 ```
 
+<!-- React -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 function rowEditActionsTemplate(ctx: IgrGridRowEditActionsTemplateContext) {
     const endRowEdit = ctx.dataContext.implicit;
@@ -307,6 +660,8 @@ function rowEditActionsTemplate(ctx: IgrGridRowEditActionsTemplateContext) {
     );
 }
 ```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: React -->
 
 <!-- Angular -->
 
@@ -439,7 +794,7 @@ $button-theme: button-theme(
 
 ## スタイル設定
 
-定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming-grid.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
 一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
 ```html
@@ -462,13 +817,14 @@ $button-theme: button-theme(
     --ig-banner-banner-message-color: #423589;
 }
 ```
+<!-- ComponentEnd: TreeGrid -->
 
 ### デモ
 
 `sample="/{ComponentSample}/row-editing-style", height="560", alt="{Platform} {ComponentTitle} 行編集のスタイルの例"`
 
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents, Blazor, React -->
 
 ## 既知の問題と制限
 
@@ -504,9 +860,9 @@ $button-theme: button-theme(
 
 <!-- Blazor -->
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [{ComponentTitle} 編集](editing.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 <!-- * [{ComponentTitle} Transactions](batch-editing.md) -->
 

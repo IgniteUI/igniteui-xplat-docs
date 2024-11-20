@@ -2,7 +2,7 @@
 title: {Platform} Radial Gauge Chart | Data Visualization Tools | Infragistics
 _description: Use Infragistics' {Platform} radial gauge control to create engaging data visualizations and dashboards and show off KPIs with rich style and interactivity. Learn about the {ProductName} radial gauge configurable elements!
 _keywords: Radial Gauge, {ProductName}, Infragistics, animation, labels, needle, scales, ranges, tick marks
-mentionedTypes: ['XamRadialGauge', 'XamRadialGaugeRange']
+mentionedTypes: ["XamRadialGauge", "XamRadialGaugeRange"]
 namespace: Infragistics.Controls.Gauges
 ---
 # {Platform} Radial Gauge Overview
@@ -335,8 +335,10 @@ The scale is visual element that highlights full range of values in the gauge wh
 `sample="/gauges/radial-gauge/scale", height="320", alt="{Platform} radial gauge scale"`
 
 
-## Labels
+## Labels and Titles
 The radial gauge labels are visual elements displaying numeric values at a specified interval between values of the `MinimumValue` and `MaximumValue` properties. You can position labels by setting the `LabelExtent` property to a fraction, where 0 represents center of gauge and 1 represents outer extent of the gauge backing. Also, you can customize labels setting various styling properties such as `FontBrush` and `Font`.
+
+Each of these labels for the needle have various styling attributes you can apply to change the font, angle, brush and distance from the center of the gauge such as `TitleExtent`, `TitleAngle`, `SubtitleFontSize`, `HighlightLabelBrush`. 
 
 ```html
 <igx-radial-gauge
@@ -390,6 +392,45 @@ The radial gauge labels are visual elements displaying numeric values at a speci
 
 `sample="/gauges/radial-gauge/labels", height="320", alt="{Platform} radial gauge labels"`
 
+## Title & Subtitle
+
+`TitleText` and `SubtitleText` properties are available and can both be used to display custom text for the needle. Alternatively, `TitleDisplaysValue` and `SubtitleDisplaysValue`, when set to true, will let display the needle's value and override `TitleText` and `SubtitleText`. So you can occupy custom text for the title but show the value via the subtitle and vice versa.
+
+If the highlight needle is shown, as explained below, then custom text can be shown via  `HighlightLabelText`, otherwise `HighlightLabelDisplaysValue` can be enabled and display it's value.
+
+```html
+<igx-radial-gauge
+    titleText="Global Sales"
+    subtitleText="2024">
+</igx-radial-gauge>
+```
+
+```tsx
+<IgrRadialGauge
+    titleText="Global Sales"
+    subtitleText="2024"
+/>
+```
+
+```html
+<igc-radial-gauge
+  title-text="Global Sales"
+  subtitle-text="2024">
+</igc-radial-gauge>
+```
+
+```razor
+<IgbRadialGauge
+  TitleText="Global Sales"
+  SubTitleText="2024">
+</IgbRadialGauge>
+```
+
+## Optical Scaling
+
+The radial gauge's labels and titles can change it's scaling. To enable this, first set `OpticalScalingEnabled` to true. Then you can set `OpticalScalingSize` which manages the size at which labels have 100% optical scaling. Labels will have larger fonts when gauge's size is larger. For example, labels will have a 200% larger font size when this property is set to 500 and the gauge px size is doubled to eg. 1000.
+
+`sample="/gauges/radial-gauge/optical-scaling", height="500", alt="{Platform} radial gauge optical scaling"`
 
 ## Tick Marks
 Tick marks are thin lines radiating from the center of the radial gauge. There are two types of tick marks: major and minor. Major tick marks are displayed at the `Interval` between the `MinimumValue` and `MaximumValue` properties. Use the `MinorTickCount` property to specify the number of minor tick marks displayed between each major tick mark. You can control the length of tick marks by setting a fraction (between 0 and 1) to `TickStartExtent`, `TickEndExtent`, `MinorTickStartExtent`, and `MinorTickEndExtent` properties.
@@ -644,6 +685,74 @@ You can enable an interactive mode of the gauge (using `IsNeedleDraggingEnabled`
 
 `sample="/gauges/radial-gauge/needle", height="320", alt="{Platform} radial gauge needle"`
 
+## Highlight Needle
+
+The radial gauge can be modified to show a second needle. This will make the main needle's `Value` appear with a lower opacity. To enable this first set `HighlightValueDisplayMode` to Overlay and then apply a `HighlightValue`. 
+
+```html
+<igx-radial-gauge #radialGauge
+    labelExtent=0.65
+    labelInterval=10
+    highlightValueDisplayMode="Overlay"
+    highlightValue=50
+    highlightLabelDisplaysValue=true
+    highlightLabelSnapsToNeedlePivot=true
+    isHighlightNeedleDraggingEnabled=true
+    height="100%" width="100%"
+    minimumValue=0 value=30
+    maximumValue=100 interval=10  >
+</igx-radial-gauge>
+```
+
+```tsx
+<IgrRadialGauge                    
+    highlightValueDisplayMode="Overlay"
+    highlightValue="25"
+    isHighlightNeedleDraggingEnabled="true"
+    isNeedleDraggingEnabled="true"
+    titleDisplaysValue="true"
+    label-interval="10"
+    label-extent="0.65"        
+    height="100%"
+    width="100%"
+    minimumValue={0} value={75}
+    maximumValue={80} interval={10}  />
+```
+
+```html
+<igc-radial-gauge
+    id="gauge"
+    highlight-value="50"
+    highlight-value-display-mode="Overlay"
+    highlight-label-displays-value="true"
+    highlight-label-snaps-to-needle-pivot="true"
+    is-highlight-needle-dragging-enabled="true"
+    label-interval="10"
+    label-extent="0.65"        
+    height="100%"
+    width="100%"
+    minimum-value="0" value="30"
+    maximum-value="100" interval="10">
+</igc-radial-gauge>
+```
+
+```razor
+<IgbLinearGauge Height="80px" Width="100%"
+    MinimumValue="0"
+    MaximumValue="100"
+    Value="30"
+    Interval="10"
+    LabelInterval="10"
+    LabelExtent="0.65"
+    HighlightValue="50"
+    HighlightValueDisplayMode=HighlightedValueDisplayMode.Overlay
+    HighlightLabelDisplaysValue=true
+    HighlightLabelSnapsToNeedlePivot=true
+    IsHighlightNeedleDraggingEnabled=true
+</IgbLinearGauge>
+```
+
+`sample="/gauges/radial-gauge/highlight-needle", height="320", alt="{Platform} radial gauge highlight needle"`
 
 ## Summary
 For your convenience, all above code snippets are combined into one code block below that you can easily copy to your project and see the radial gauge with all features and visuals enabled.

@@ -2,7 +2,7 @@
 title: {Platform} ComboBox Component – {ProductName}
 _description: {Platform} Combo component provides a powerful input, combining features of the basic HTML input, select, filtering and custom drop-down lists. Try it for FREE
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} ComboBox component
-mentionedTypes: ['Combo', 'ComboItem', 'ComboHeader', 'ComboList']
+mentionedTypes: ["Combo", "ComboItem", "ComboHeader", "ComboList"]
 ---
 
 # {Platform} ComboBox Overview
@@ -15,7 +15,6 @@ The {ProductName} ComboBox component provides a list of options from which users
 
 `sample="/inputs/combo/overview", height="400", alt="{Platform} Combo Example"`
 
-
 <div class="divider--half"></div>
 
 ## Getting Started with {Platform} ComboBox
@@ -27,7 +26,7 @@ First, you need to install the {ProductName} by running the following command:
 npm install {PackageWebComponents}
 ```
 
-Before using the `ComboBox` component, you need to register it together with its additional components:
+Before using the `ComboBox` component, you need to register it together with its additional components and necessary CSS:
 
 ```ts
 import { defineComponents, IgcComboComponent }
@@ -36,6 +35,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcComboComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
@@ -55,6 +57,25 @@ You will also need to link an additional CSS file to apply the styling to the `C
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 ```
 <!-- end: Blazor -->
+
+<!-- React -->
+
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the {Platform} `ComboBox`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrComboModule, IgrCombo } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrComboModule.register();
+```
+
+<!-- end: React -->
 
 >[!WARNING]
 > The `Combo` component doesn't work with the standard `<form>` element. Use `Form` instead.
@@ -117,6 +138,26 @@ export class Sample {
 }
 ```
 
+```tsx
+interface City {
+  id: string;
+  name: string;
+}
+
+const cities: City[] = [
+  { name: "London", id: "UK01" },
+  { name: "Sofia", id: "BG01" },
+  { name: "New York", id: "NY01" },
+];
+
+<IgrCombo
+    valueKey="id"
+    displayKey="name"
+    data={cities}
+    value={["BG01"]}
+></IgrCombo>
+```
+
 ### Data value and display properties
 
 When the combo is bound to a list of complex data (i.e. objects), we need to specify a property that the control will use to handle item selection. The component exposes the following properties:
@@ -146,6 +187,16 @@ console.log(combo.value);
 combo.value = ['NY01', 'UK01'];
 ```
 
+```tsx
+const comboRef = useRef<IgrCombo>(null);
+
+// Given the overview example from above this will return ['BG01']
+console.log(comboRef.current.value);
+
+// Change the selected items to New York and London
+comboRef.current.value = ['NY01', 'UK01'];
+```
+
 ### Selection API
 
 The combo component exposes APIs that allow you to change the currently selected items.
@@ -153,11 +204,13 @@ The combo component exposes APIs that allow you to change the currently selected
 Besides selecting items from the list of options by user interaction, you can select items programmatically. This is done via the `select` and `deselect` methods. You can pass an array of items to both methods. If the methods are called with no arguments all items will be selected/deselected depending on which method is called. If you have specified a `ValueKey` for your combo component, then you should pass the value keys of the items you would like to select/deselect:
 
 #### Select/deselect some items:
+<!-- WebComponents -->
 ```ts
 // Select/deselect items by their IDs as valueKey is set to 'id'
 combo.select(['BG01', 'BG02', 'BG03', 'BG04']);
 combo.deselect(['BG01', 'BG02', 'BG03', 'BG04']);
 ```
+<!-- end: WebComponents -->
 
 ```razor
 <IgbCombo
@@ -189,12 +242,22 @@ combo.deselect(['BG01', 'BG02', 'BG03', 'BG04']);
 }
 ```
 
+<!-- React -->
+```tsx
+// Select/deselect items by their IDs as valueKey is set to 'id'
+comboRef.current.select(["UK01", "UK02", "UK03", "UK04", "UK05"]);
+comboRef.current.deselect(["UK01", "UK02", "UK03", "UK04", "UK05"]);
+```
+<!-- end: React -->
+
 #### Select/deselect all items:
+<!-- WebComponents -->
 ```ts
 // Select/deselect all items
 combo.select();
 combo.deselect();
 ```
+<!-- end: WebComponents -->
 
 ```razor
 @code {
@@ -208,13 +271,31 @@ combo.deselect();
 }
 ```
 
+<!-- React -->
+```tsx
+// Select/deselect all items
+comboRef.current.select([]);
+comboRef.current.deselect([]);
+```
+<!-- end: React -->
+
 If the `ValueKey` property is omitted, you will have to list the items you wish to select/deselect as objects references:
 
+<!-- WebComponents -->
 ```ts
 // Select/deselect values by object references when no valueKey is provided
 combo.select([cities[1], cities[5]]);
 combo.deselect([cities[1], cities[5]]);
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+// Select/deselect values by object references when no valueKey is provided
+comboRef.current.select([cities[1], cities[5]]);
+comboRef.current.deselect([cities[1], cities[5]]);
+```
+<!-- end: React -->
 
 `sample="/inputs/combo/selection", height="380", alt="{Platform} Combo Selection Example"`
 

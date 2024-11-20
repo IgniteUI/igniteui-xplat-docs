@@ -3,7 +3,7 @@
     "originalName": "ActionStrip",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "DisplayDensityBaseElement",
+    "originalBaseTypeName": "BaseElement",
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Blazor","fileName": "ActionStrip.cs","mappedName": "IgbActionStrip"}],
     "members":[
@@ -11,6 +11,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Hidden"}], "originalName": "Hidden"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Hide"}], "originalName": "Hide"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbActionStripResourceStrings","mappedName": "ResourceStrings"}], "originalName": "ResourceStrings"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Show"}], "originalName": "Show"} ]
   },
   {
@@ -68,9 +69,21 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Blazor","fileName": "BaseExporter.cs","mappedName": "IgbBaseExporter"}],
     "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "AddPivotGridColumns"}], "originalName": "AddPivotGridColumns"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportData"}], "originalName": "ExportData"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportGrid"}], "originalName": "ExportGrid"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "BaseSearchInfo",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Blazor","fileName": "BaseSearchInfo.cs","mappedName": "IgbBaseSearchInfo"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "CaseSensitive"}], "originalName": "CaseSensitive"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Content"}], "originalName": "Content"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ExactMatch"}], "originalName": "ExactMatch"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "MatchCount"}], "originalName": "MatchCount"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SearchText"}], "originalName": "SearchText"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
@@ -121,17 +134,14 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
-    "originalName": "Cell",
+    "originalName": "CellPosition",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Blazor","fileName": "Cell.cs","mappedName": "IgbCell"}],
+    "names":[{"platform": "Blazor","fileName": "CellPosition.cs","mappedName": "IgbCellPosition"}],
     "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "CastToNumber"}], "originalName": "CastToNumber"},
-      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "EditValue"}], "originalName": "EditValue"},
-      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "PendingValue"}], "originalName": "PendingValue"},
-      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "PrimaryKey"}], "originalName": "PrimaryKey"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "RowIndex"}], "originalName": "RowIndex"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
-      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "State"}], "originalName": "State"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "VisibleColumnIndex"}], "originalName": "VisibleColumnIndex"} ]
   },
   {
     "originalName": "CellTemplateContext",
@@ -171,6 +181,31 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Width"}], "originalName": "Width"} ]
   },
   {
+    "originalName": "ChildGridRow",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Blazor","fileName": "ChildGridRow.cs","mappedName": "IgbChildGridRow"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "Data"}], "originalName": "Data"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Expanded"}], "originalName": "Expanded"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Index"}], "originalName": "Index"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbRowIsland","mappedName": "Layout"}], "originalName": "Layout"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Level"}], "originalName": "Level"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "ClipboardOptions",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Blazor","fileName": "ClipboardOptions.cs","mappedName": "IgbClipboardOptions"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "CopyFormatters"}], "originalName": "CopyFormatters"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "CopyHeaders"}], "originalName": "CopyHeaders"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Enabled"}], "originalName": "Enabled"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Separator"}], "originalName": "Separator"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
     "originalName": "Column",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
@@ -184,8 +219,10 @@
       {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<IgbCellTemplateContext>","mappedName": "BodyTemplate"}], "originalName": "BodyTemplate"},
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "CellClasses"}], "originalName": "CellClasses"},
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "CellStyles"}], "originalName": "CellStyles"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbColumn[]","mappedName": "ChildColumns"}], "originalName": "ChildColumns"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ColEnd"}], "originalName": "ColEnd"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ColStart"}], "originalName": "ColStart"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ColumnLayoutChild"}], "originalName": "ColumnLayoutChild"},
       {"names":[{"platform": "Blazor", "mappedType": "GridColumnDataType","mappedName": "DataType"}], "originalName": "DataType"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "DisableHiding"}], "originalName": "DisableHiding"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "DisablePinning"}], "originalName": "DisablePinning"},
@@ -194,6 +231,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Field"}], "originalName": "Field"},
       {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<IgbColumnTemplateContext>","mappedName": "FilterCellTemplate"}], "originalName": "FilterCellTemplate"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Filterable"}], "originalName": "Filterable"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilteringExpressionsTree","mappedName": "FilteringExpressionsTree"}], "originalName": "FilteringExpressionsTree"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "FilteringIgnoreCase"}], "originalName": "FilteringIgnoreCase"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbFilteringOperand","mappedName": "Filters"}], "originalName": "Filters"},
       {"names":[{"platform": "Blazor", "mappedType": "String","mappedName": "Formatter"}], "originalName": "Formatter"},
@@ -206,10 +244,11 @@
       {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "HeaderStyles"}], "originalName": "HeaderStyles"},
       {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<IgbColumnTemplateContext>","mappedName": "HeaderTemplate"}], "originalName": "HeaderTemplate"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Hidden"}], "originalName": "Hidden"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Index"}], "originalName": "Index"},
       {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<IgbCellTemplateContext>","mappedName": "InlineEditorTemplate"}], "originalName": "InlineEditorTemplate"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Level"}], "originalName": "Level"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "MaxWidth"}], "originalName": "MaxWidth"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "MinWidth"}], "originalName": "MinWidth"},
-      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Movable"}], "originalName": "Movable"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Move"}], "originalName": "Move"},
       {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "ParentColumn"}], "originalName": "ParentColumn"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Pin"}], "originalName": "Pin"},
@@ -225,11 +264,13 @@
       {"names":[{"platform": "Blazor", "mappedType": "IgbSortingStrategy","mappedName": "SortStrategy"}], "originalName": "SortStrategy"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Sortable"}], "originalName": "Sortable"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "SortingIgnoreCase"}], "originalName": "SortingIgnoreCase"},
-      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "Summaries"}], "originalName": "Summaries"},
+      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "Summaries"}], "originalName": "Summaries"},
       {"names":[{"platform": "Blazor", "mappedType": "String","mappedName": "SummaryFormatter"}], "originalName": "SummaryFormatter"},
       {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<IgbSummaryTemplateContext>","mappedName": "SummaryTemplate"}], "originalName": "SummaryTemplate"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Title"}], "originalName": "Title"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbColumn","mappedName": "TopLevelParent"}], "originalName": "TopLevelParent"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Unpin"}], "originalName": "Unpin"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "VisibleIndex"}], "originalName": "VisibleIndex"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "VisibleWhenCollapsed"}], "originalName": "VisibleWhenCollapsed"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Width"}], "originalName": "Width"} ]
   },
@@ -273,7 +314,9 @@
     "names":[{"platform": "Blazor","fileName": "ColumnGroup.cs","mappedName": "IgbColumnGroup"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbColumnCollection","mappedName": "Children"}], "originalName": "Children"},
-      {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<IgbColumnTemplateContext>","mappedName": "CollapsibleIndicatorTemplate"}], "originalName": "CollapsibleIndicatorTemplate"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Collapsible"}], "originalName": "Collapsible"},
+      {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<IgbColumnTemplateContext>","mappedName": "CollapsibleIndicatorTemplate"}], "originalName": "CollapsibleIndicatorTemplate"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Expanded"}], "originalName": "Expanded"} ]
   },
   {
     "originalName": "ColumnLayout",
@@ -321,14 +364,6 @@
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Cancel"}], "originalName": "Cancel"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbColumn","mappedName": "Source"}], "originalName": "Source"} ]
-  },
-  {
-    "originalName": "ColumnMovingService",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Blazor","fileName": "ColumnMovingService.cs","mappedName": "IgbColumnMovingService"}],
-    "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
     "originalName": "ColumnMovingStartEventArgs",
@@ -417,6 +452,39 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
+    "originalName": "ColumnState",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Blazor","fileName": "ColumnState.cs","mappedName": "IgbColumnState"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Collapsible"}], "originalName": "Collapsible"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ColumnGroup"}], "originalName": "ColumnGroup"},
+      {"names":[{"platform": "Blazor", "mappedType": "GridColumnDataType","mappedName": "DataType"}], "originalName": "DataType"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "DisableHiding"}], "originalName": "DisableHiding"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "DisablePinning"}], "originalName": "DisablePinning"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Editable"}], "originalName": "Editable"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Expanded"}], "originalName": "Expanded"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Field"}], "originalName": "Field"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Filterable"}], "originalName": "Filterable"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "FilteringIgnoreCase"}], "originalName": "FilteringIgnoreCase"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Groupable"}], "originalName": "Groupable"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "HasSummary"}], "originalName": "HasSummary"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Header"}], "originalName": "Header"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HeaderClasses"}], "originalName": "HeaderClasses"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HeaderGroupClasses"}], "originalName": "HeaderGroupClasses"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Hidden"}], "originalName": "Hidden"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "MaxWidth"}], "originalName": "MaxWidth"},
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "Parent"}], "originalName": "Parent"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Pinned"}], "originalName": "Pinned"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Resizable"}], "originalName": "Resizable"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Searchable"}], "originalName": "Searchable"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Sortable"}], "originalName": "Sortable"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "SortingIgnoreCase"}], "originalName": "SortingIgnoreCase"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "VisibleWhenCollapsed"}], "originalName": "VisibleWhenCollapsed"},
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "Width"}], "originalName": "Width"} ]
+  },
+  {
     "originalName": "ColumnTemplateContext",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -493,25 +561,6 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
-    "originalName": "DensityChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Blazor","fileName": "DensityChangedEventArgs.cs","mappedName": "IgbDensityChangedEventArgs"}],
-    "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "IgbDensityChangedEventArgsDetail","mappedName": "Detail"}], "originalName": "Detail"} ]
-  },
-  {
-    "originalName": "DensityChangedEventArgsDetail",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseEventArgsDetail",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Blazor","fileName": "DensityChangedEventArgsDetail.cs","mappedName": "IgbDensityChangedEventArgsDetail"}],
-    "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "DisplayDensity","mappedName": "NewDensity"}], "originalName": "NewDensity"},
-      {"names":[{"platform": "Blazor", "mappedType": "DisplayDensity","mappedName": "OldDensity"}], "originalName": "OldDensity"} ]
-  },
-  {
     "originalName": "DimensionsChange",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -540,47 +589,24 @@
       {"names":[{"platform": "Blazor", "mappedType": "IgbDimensionsChangeDetail","mappedName": "Detail"}], "originalName": "Detail"} ]
   },
   {
-    "originalName": "DisplayDensityBase",
+    "originalName": "ExporterEventArgs",
     "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
     "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Blazor","fileName": "DisplayDensityBase.cs","mappedName": "IgbDisplayDensityBase"}],
+    "names":[{"platform": "Blazor","fileName": "ExporterEventArgs.cs","mappedName": "IgbExporterEventArgs"}],
     "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "DisplayDensity","mappedName": "DisplayDensity"}], "originalName": "DisplayDensity"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "IgbExporterEventArgsDetail","mappedName": "Detail"}], "originalName": "Detail"} ]
   },
   {
-    "originalName": "ExporterEvent",
+    "originalName": "ExporterEventArgsDetail",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Blazor","fileName": "ExporterEvent.cs","mappedName": "IgbExporterEvent"}],
+    "names":[{"platform": "Blazor","fileName": "ExporterEventArgsDetail.cs","mappedName": "IgbExporterEventArgsDetail"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Cancel"}], "originalName": "Cancel"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbBaseExporter","mappedName": "Exporter"}], "originalName": "Exporter"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbGridBaseDirective","mappedName": "Grid"}], "originalName": "Grid"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbExporterOptionsBase","mappedName": "Options"}], "originalName": "Options"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
-    "originalName": "ExporterEventDetail",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Blazor","fileName": "ExporterEventDetail.cs","mappedName": "IgbExporterEventDetail"}],
-    "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Cancel"}], "originalName": "Cancel"},
-      {"names":[{"platform": "Blazor", "mappedType": "IgbBaseExporter","mappedName": "Exporter"}], "originalName": "Exporter"},
-      {"names":[{"platform": "Blazor", "mappedType": "IgbGridBaseDirective","mappedName": "Grid"}], "originalName": "Grid"},
-      {"names":[{"platform": "Blazor", "mappedType": "IgbExporterOptionsBase","mappedName": "Options"}], "originalName": "Options"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
-    "originalName": "ExporterEventEventArgs",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Blazor","fileName": "ExporterEventEventArgs.cs","mappedName": "IgbExporterEventEventArgs"}],
-    "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "IgbExporterEventDetail","mappedName": "Detail"}], "originalName": "Detail"} ]
   },
   {
     "originalName": "ExporterOptionsBase",
@@ -613,16 +639,6 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Timezone"}], "originalName": "Timezone"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "WeekStart"}], "originalName": "WeekStart"} ]
-  },
-  {
-    "originalName": "FieldValidationState",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "GridValidationState",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Blazor","fileName": "FieldValidationState.cs","mappedName": "IgbFieldValidationState"}],
-    "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Field"}], "originalName": "Field"} ]
   },
   {
     "originalName": "FilteringEventArgs",
@@ -661,12 +677,12 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Blazor","fileName": "FilteringExpressionsTree.cs","mappedName": "IgbFilteringExpressionsTree"}],
     "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Empty"}], "originalName": "Empty"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "FieldName"}], "originalName": "FieldName"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbFilteringExpressionsTreeOrFilteringExpression[]","mappedName": "FilteringOperands"}], "originalName": "FilteringOperands"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Find"}], "originalName": "Find"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "FindIndex"}], "originalName": "FindIndex"},
       {"names":[{"platform": "Blazor", "mappedType": "FilteringLogic","mappedName": "Operator"}], "originalName": "Operator"},
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "Owner"}], "originalName": "Owner"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Blazor", "mappedType": "FilteringExpressionsTreeType","mappedName": "TreeType"}], "originalName": "TreeType"} ]
   },
@@ -676,12 +692,12 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Blazor","fileName": "FilteringExpressionsTreeDetail.cs","mappedName": "IgbFilteringExpressionsTreeDetail"}],
     "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Empty"}], "originalName": "Empty"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "FieldName"}], "originalName": "FieldName"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbFilteringExpressionsTreeOrFilteringExpression[]","mappedName": "FilteringOperands"}], "originalName": "FilteringOperands"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Find"}], "originalName": "Find"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "FindIndex"}], "originalName": "FindIndex"},
       {"names":[{"platform": "Blazor", "mappedType": "FilteringLogic","mappedName": "Operator"}], "originalName": "Operator"},
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "Owner"}], "originalName": "Owner"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Blazor", "mappedType": "FilteringExpressionsTreeType","mappedName": "TreeType"}], "originalName": "TreeType"} ]
   },
@@ -742,7 +758,8 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Blazor","fileName": "ForOfDataChangingEventArgsDetail.cs","mappedName": "IgbForOfDataChangingEventArgsDetail"}],
     "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ContainerSize"}], "originalName": "ContainerSize"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ContainerSize"}], "originalName": "ContainerSize"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbForOfState","mappedName": "State"}], "originalName": "State"} ]
   },
   {
     "originalName": "ForOfState",
@@ -846,12 +863,12 @@
     "originalName": "GridBaseDirective",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "DisplayDensityBase",
+    "originalBaseTypeName": "BaseElement",
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Blazor","fileName": "GridBaseDirective.cs","mappedName": "IgbGridBaseDirective"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbActionStripCollection","mappedName": "ActionStripComponents"}], "originalName": "ActionStripComponents"},
-      {"names":[{"platform": "Blazor", "mappedType": "IgbColumnCollection","mappedName": "ActualColumns"}], "originalName": "ActualColumns"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbColumnCollection","mappedName": "ActualColumnList"}], "originalName": "ActualColumnList"},
       {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<object>","mappedName": "AddRowEmptyTemplate"}], "originalName": "AddRowEmptyTemplate"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbFilteringExpressionsTree","mappedName": "AdvancedFilteringExpressionsTree"}], "originalName": "AdvancedFilteringExpressionsTree"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "AllowAdvancedFiltering"}], "originalName": "AllowAdvancedFiltering"},
@@ -865,13 +882,14 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ClearFilter"}], "originalName": "ClearFilter"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ClearSearch"}], "originalName": "ClearSearch"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ClearSort"}], "originalName": "ClearSort"},
-      {"names":[{"platform": "Blazor", "mappedType": "IgbGridClipboardOptions","mappedName": "ClipboardOptions"}], "originalName": "ClipboardOptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbClipboardOptions","mappedName": "ClipboardOptions"}], "originalName": "ClipboardOptions"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "CloseAdvancedFilteringDialog"}], "originalName": "CloseAdvancedFilteringDialog"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "CollapseAll"}], "originalName": "CollapseAll"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "CollapseRow"}], "originalName": "CollapseRow"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbColumnCollection","mappedName": "ColumnList"}], "originalName": "ColumnList"},
       {"names":[{"platform": "Blazor", "mappedType": "GridSelectionMode","mappedName": "ColumnSelection"}], "originalName": "ColumnSelection"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ColumnWidth"}], "originalName": "ColumnWidth"},
-      {"names":[{"platform": "Blazor", "mappedType": "IgbColumnCollection","mappedName": "Columns"}], "originalName": "Columns"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbColumn[]","mappedName": "Columns"}], "originalName": "Columns"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbDataCloneStrategy","mappedName": "DataCloneStrategy"}], "originalName": "DataCloneStrategy"},
       {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "DataView"}], "originalName": "DataView"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "DefaultHeaderGroupMinWidth"}], "originalName": "DefaultHeaderGroupMinWidth"},
@@ -903,7 +921,9 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetColumnByName"}], "originalName": "GetColumnByName"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetColumnByVisibleIndex"}], "originalName": "GetColumnByVisibleIndex"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetHeaderGroupWidth"}], "originalName": "GetHeaderGroupWidth"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetNextCell"}], "originalName": "GetNextCell"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetPinnedWidth"}], "originalName": "GetPinnedWidth"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetPreviousCell"}], "originalName": "GetPreviousCell"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetRowData"}], "originalName": "GetRowData"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSelectedColumnsData"}], "originalName": "GetSelectedColumnsData"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSelectedData"}], "originalName": "GetSelectedData"},
@@ -915,11 +935,13 @@
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "HideRowSelectors"}], "originalName": "HideRowSelectors"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsLoading"}], "originalName": "IsLoading"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "IsRecordPinnedByIndex"}], "originalName": "IsRecordPinnedByIndex"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbSearchInfo","mappedName": "LastSearchInfo"}], "originalName": "LastSearchInfo"},
       {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<object>","mappedName": "LoadingGridTemplate"}], "originalName": "LoadingGridTemplate"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Locale"}], "originalName": "Locale"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "MarkForCheck"}], "originalName": "MarkForCheck"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "MoveColumn"}], "originalName": "MoveColumn"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Moving"}], "originalName": "Moving"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "NavigateTo"}], "originalName": "NavigateTo"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "OpenAdvancedFilteringDialog"}], "originalName": "OpenAdvancedFilteringDialog"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbOverlayOutletDirective","mappedName": "Outlet"}], "originalName": "Outlet"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbPaginatorCollection","mappedName": "PaginationComponents"}], "originalName": "PaginationComponents"},
@@ -953,6 +975,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SelectRows"}], "originalName": "SelectRows"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SelectedColumns"}], "originalName": "SelectedColumns"},
       {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "SelectedRows"}], "originalName": "SelectedRows"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ShouldGenerate"}], "originalName": "ShouldGenerate"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ShowSummaryOnCollapse"}], "originalName": "ShowSummaryOnCollapse"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "SnackbarDisplayTime"}], "originalName": "SnackbarDisplayTime"},
@@ -963,6 +986,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "IgbGridSortingStrategy","mappedName": "SortStrategy"}], "originalName": "SortStrategy"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbSortingExpression[]","mappedName": "SortingExpressions"}], "originalName": "SortingExpressions"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbSortingOptions","mappedName": "SortingOptions"}], "originalName": "SortingOptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbStateCollection","mappedName": "StateComponents"}], "originalName": "StateComponents"},
       {"names":[{"platform": "Blazor", "mappedType": "GridSummaryCalculationMode","mappedName": "SummaryCalculationMode"}], "originalName": "SummaryCalculationMode"},
       {"names":[{"platform": "Blazor", "mappedType": "GridSummaryPosition","mappedName": "SummaryPosition"}], "originalName": "SummaryPosition"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "SummaryRowHeight"}], "originalName": "SummaryRowHeight"},
@@ -1023,14 +1047,42 @@
       {"names":[{"platform": "Blazor", "mappedType": "IgbGridClipboardEventDetail","mappedName": "Detail"}], "originalName": "Detail"} ]
   },
   {
-    "originalName": "GridDataBindable",
+    "originalName": "GridContextMenuEventArgs",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Blazor","fileName": "GridDataBindable.cs","mappedName": "IgbGridDataBindable"}],
+    "names":[{"platform": "Blazor","fileName": "GridContextMenuEventArgs.cs","mappedName": "IgbGridContextMenuEventArgs"}],
     "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "Data"}], "originalName": "Data"},
-      {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "FilteredData"}], "originalName": "FilteredData"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbGridContextMenuEventArgsDetail","mappedName": "Detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "GridContextMenuEventArgsDetail",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Blazor","fileName": "GridContextMenuEventArgsDetail.cs","mappedName": "IgbGridContextMenuEventArgsDetail"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "IgbCellType","mappedName": "Cell"}], "originalName": "Cell"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbRowType","mappedName": "Row"}], "originalName": "Row"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "GridCreatedEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Blazor","fileName": "GridCreatedEventArgs.cs","mappedName": "IgbGridCreatedEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "IgbGridCreatedEventArgsDetail","mappedName": "Detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "GridCreatedEventArgsDetail",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseEventArgsDetail",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Blazor","fileName": "GridCreatedEventArgsDetail.cs","mappedName": "IgbGridCreatedEventArgsDetail"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "IgbHierarchicalGrid","mappedName": "Grid"}], "originalName": "Grid"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbRowIsland","mappedName": "Owner"}], "originalName": "Owner"},
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "ParentID"}], "originalName": "ParentID"} ]
   },
   {
     "originalName": "GridEditDoneEventArgs",
@@ -1057,6 +1109,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "PrimaryKey"}], "originalName": "PrimaryKey"},
       {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "RowData"}], "originalName": "RowData"},
       {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "RowID"}], "originalName": "RowID"},
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "RowKey"}], "originalName": "RowKey"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Valid"}], "originalName": "Valid"} ]
   },
   {
@@ -1083,6 +1136,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "PrimaryKey"}], "originalName": "PrimaryKey"},
       {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "RowData"}], "originalName": "RowData"},
       {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "RowID"}], "originalName": "RowID"},
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "RowKey"}], "originalName": "RowKey"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Valid"}], "originalName": "Valid"} ]
   },
@@ -1173,6 +1227,15 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
+    "originalName": "GridPaginatorTemplateContext",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Blazor","fileName": "GridPaginatorTemplateContext.cs","mappedName": "IgbGridPaginatorTemplateContext"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "IgbGridBaseDirective","mappedName": "Implicit"}], "originalName": "Implicit"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
     "originalName": "GridPinningActions",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
@@ -1242,6 +1305,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Igx_grid_excel_filter_sorting_desc_short"}], "originalName": "Igx_grid_excel_filter_sorting_desc_short"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Igx_grid_excel_filter_sorting_header"}], "originalName": "Igx_grid_excel_filter_sorting_header"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Igx_grid_excel_hide"}], "originalName": "Igx_grid_excel_hide"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Igx_grid_excel_matches_count"}], "originalName": "Igx_grid_excel_matches_count"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Igx_grid_excel_no_matches"}], "originalName": "Igx_grid_excel_no_matches"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Igx_grid_excel_number_filter"}], "originalName": "Igx_grid_excel_number_filter"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Igx_grid_excel_pin"}], "originalName": "Igx_grid_excel_pin"},
@@ -1323,7 +1387,6 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Igx_grid_pivot_empty_row_drop_area"}], "originalName": "Igx_grid_pivot_empty_row_drop_area"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Igx_grid_pivot_empty_value_drop_area"}], "originalName": "Igx_grid_pivot_empty_value_drop_area"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Igx_grid_pivot_filter_drop_chip"}], "originalName": "Igx_grid_pivot_filter_drop_chip"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Igx_grid_pivot_no_aggregator"}], "originalName": "Igx_grid_pivot_no_aggregator"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Igx_grid_pivot_row_drop_chip"}], "originalName": "Igx_grid_pivot_row_drop_chip"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Igx_grid_pivot_selector_columns"}], "originalName": "Igx_grid_pivot_selector_columns"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Igx_grid_pivot_selector_filters"}], "originalName": "Igx_grid_pivot_selector_filters"},
@@ -1396,6 +1459,25 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
+    "originalName": "GridRowEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Blazor","fileName": "GridRowEventArgs.cs","mappedName": "IgbGridRowEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "IgbGridRowEventArgsDetail","mappedName": "Detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "GridRowEventArgsDetail",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseEventArgsDetail",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Blazor","fileName": "GridRowEventArgsDetail.cs","mappedName": "IgbGridRowEventArgsDetail"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "Event"}], "originalName": "Event"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbRowType","mappedName": "Row"}], "originalName": "Row"} ]
+  },
+  {
     "originalName": "GridRowTemplateContext",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -1429,8 +1511,8 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Blazor","fileName": "GridSelectionRange.cs","mappedName": "IgbGridSelectionRange"}],
     "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ColumnEnd"}], "originalName": "ColumnEnd"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ColumnStart"}], "originalName": "ColumnStart"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ColumnEnd"}], "originalName": "ColumnEnd"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ColumnStart"}], "originalName": "ColumnStart"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "RowEnd"}], "originalName": "RowEnd"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "RowStart"}], "originalName": "RowStart"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
@@ -1441,8 +1523,8 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Blazor","fileName": "GridSelectionRangeDetail.cs","mappedName": "IgbGridSelectionRangeDetail"}],
     "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ColumnEnd"}], "originalName": "ColumnEnd"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ColumnStart"}], "originalName": "ColumnStart"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ColumnEnd"}], "originalName": "ColumnEnd"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ColumnStart"}], "originalName": "ColumnStart"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "RowEnd"}], "originalName": "RowEnd"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "RowStart"}], "originalName": "RowStart"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
@@ -1464,6 +1546,97 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
+    "originalName": "GridState",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "GridStateBaseDirective",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Blazor","fileName": "GridState.cs","mappedName": "IgbGridState"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ApplyState"}], "originalName": "ApplyState"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ApplyStateFromString"}], "originalName": "ApplyStateFromString"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetState"}], "originalName": "GetState"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetStateAsString"}], "originalName": "GetStateAsString"} ]
+  },
+  {
+    "originalName": "GridStateBaseDirective",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Blazor","fileName": "GridStateBaseDirective.cs","mappedName": "IgbGridStateBaseDirective"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "IgbGridStateOptions","mappedName": "Options"}], "originalName": "Options"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "GridStateCollection",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Blazor","fileName": "GridStateCollection.cs","mappedName": "IgbGridStateCollection"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Id"}], "originalName": "Id"},
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "ParentRowID"}], "originalName": "ParentRowID"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbGridState","mappedName": "State"}], "originalName": "State"} ]
+  },
+  {
+    "originalName": "GridStateInfo",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Blazor","fileName": "GridStateInfo.cs","mappedName": "IgbGridStateInfo"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilteringExpressionsTree","mappedName": "AdvancedFiltering"}], "originalName": "AdvancedFiltering"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbGridSelectionRange[]","mappedName": "CellSelection"}], "originalName": "CellSelection"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "ColumnSelection"}], "originalName": "ColumnSelection"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbColumnState[]","mappedName": "Columns"}], "originalName": "Columns"},
+      {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "Expansion"}], "originalName": "Expansion"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilteringExpressionsTree","mappedName": "Filtering"}], "originalName": "Filtering"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbGroupingState","mappedName": "GroupBy"}], "originalName": "GroupBy"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Id"}], "originalName": "Id"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Moving"}], "originalName": "Moving"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbPagingState","mappedName": "Paging"}], "originalName": "Paging"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbPinningConfig","mappedName": "PinningConfig"}], "originalName": "PinningConfig"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbPivotConfiguration","mappedName": "PivotConfiguration"}], "originalName": "PivotConfiguration"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbGridStateCollection[]","mappedName": "RowIslands"}], "originalName": "RowIslands"},
+      {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "RowPinning"}], "originalName": "RowPinning"},
+      {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "RowSelection"}], "originalName": "RowSelection"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbSortingExpression[]","mappedName": "Sorting"}], "originalName": "Sorting"} ]
+  },
+  {
+    "originalName": "GridStateInfoDetail",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Blazor","fileName": "GridStateInfoDetail.cs","mappedName": "IgbGridStateInfoDetail"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilteringExpressionsTree","mappedName": "AdvancedFiltering"}], "originalName": "AdvancedFiltering"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbGridSelectionRange[]","mappedName": "CellSelection"}], "originalName": "CellSelection"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "ColumnSelection"}], "originalName": "ColumnSelection"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbColumnState[]","mappedName": "Columns"}], "originalName": "Columns"},
+      {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "Expansion"}], "originalName": "Expansion"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilteringExpressionsTree","mappedName": "Filtering"}], "originalName": "Filtering"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbGroupingState","mappedName": "GroupBy"}], "originalName": "GroupBy"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Id"}], "originalName": "Id"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Moving"}], "originalName": "Moving"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbPagingState","mappedName": "Paging"}], "originalName": "Paging"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbPinningConfig","mappedName": "PinningConfig"}], "originalName": "PinningConfig"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbPivotConfiguration","mappedName": "PivotConfiguration"}], "originalName": "PivotConfiguration"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbGridStateCollection[]","mappedName": "RowIslands"}], "originalName": "RowIslands"},
+      {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "RowPinning"}], "originalName": "RowPinning"},
+      {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "RowSelection"}], "originalName": "RowSelection"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbSortingExpression[]","mappedName": "Sorting"}], "originalName": "Sorting"} ]
+  },
+  {
+    "originalName": "GridStateInfoEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Blazor","fileName": "GridStateInfoEventArgs.cs","mappedName": "IgbGridStateInfoEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "IgbGridStateInfoDetail","mappedName": "Detail"}], "originalName": "Detail"} ]
+  },
+  {
     "originalName": "GridTemplateContext",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -1476,11 +1649,12 @@
     "originalName": "GridToolbar",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "DisplayDensityBaseElement",
+    "originalBaseTypeName": "BaseElement",
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Blazor","fileName": "GridToolbar.cs","mappedName": "IgbGridToolbar"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbGridBaseDirective","mappedName": "Grid"}], "originalName": "Grid"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ShowProgress"}], "originalName": "ShowProgress"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbGridToolbarContentCollection","mappedName": "Tools"}], "originalName": "Tools"} ]
   },
@@ -1517,8 +1691,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ExportCSV"}], "originalName": "ExportCSV"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ExportExcel"}], "originalName": "ExportExcel"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportGrid"}], "originalName": "ExportGrid"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Filename"}], "originalName": "Filename"},
-      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsExporting"}], "originalName": "IsExporting"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Filename"}], "originalName": "Filename"} ]
   },
   {
     "originalName": "GridToolbarExportEventArgs",
@@ -1558,6 +1731,15 @@
     "names":[{"platform": "Blazor","fileName": "GridToolbarPinning.cs","mappedName": "IgbGridToolbarPinning"}]
   },
   {
+    "originalName": "GridToolbarTemplateContext",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Blazor","fileName": "GridToolbarTemplateContext.cs","mappedName": "IgbGridToolbarTemplateContext"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "IgbGridBaseDirective","mappedName": "Implicit"}], "originalName": "Implicit"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
     "originalName": "GridToolbarTitle",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
@@ -1565,17 +1747,6 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Blazor","fileName": "GridToolbarTitle.cs","mappedName": "IgbGridToolbarTitle"}],
     "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
-    "originalName": "GridValidationService",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Blazor","fileName": "GridValidationService.cs","mappedName": "IgbGridValidationService"}],
-    "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Clear"}], "originalName": "Clear"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetInvalid"}], "originalName": "GetInvalid"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "MarkAsTouched"}], "originalName": "MarkAsTouched"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
@@ -1682,14 +1853,6 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
-    "originalName": "GroupByRowTemplateContextEventArgs",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Blazor","fileName": "GroupByRowTemplateContextEventArgs.cs","mappedName": "IgbGroupByRowTemplateContextEventArgs"}],
-    "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "IgbGroupByRowTemplateContext","mappedName": "Detail"}], "originalName": "Detail"} ]
-  },
-  {
     "originalName": "GroupingDoneEventArgs",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -1718,14 +1881,6 @@
     "names":[{"platform": "Blazor","fileName": "GroupingExpression.cs","mappedName": "IgbGroupingExpression"}]
   },
   {
-    "originalName": "GroupingExpressionEventArgs",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Blazor","fileName": "GroupingExpressionEventArgs.cs","mappedName": "IgbGroupingExpressionEventArgs"}],
-    "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "IgbGroupingExpression[]","mappedName": "Detail"}], "originalName": "Detail"} ]
-  },
-  {
     "originalName": "GroupingState",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -1743,7 +1898,6 @@
     "names":[{"platform": "Blazor","fileName": "HeaderType.cs","mappedName": "IgbHeaderType"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbColumn","mappedName": "Column"}], "originalName": "Column"},
-      {"names":[{"platform": "Blazor", "mappedType": "DisplayDensity","mappedName": "Density"}], "originalName": "Density"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Selectable"}], "originalName": "Selectable"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Selected"}], "originalName": "Selected"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
@@ -1771,6 +1925,41 @@
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "SelectedCount"}], "originalName": "SelectedCount"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "TotalCount"}], "originalName": "TotalCount"} ]
+  },
+  {
+    "originalName": "HierarchicalGrid",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "HierarchicalGridBaseDirective",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Blazor","fileName": "HierarchicalGrid.cs","mappedName": "IgbHierarchicalGrid"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "IgbRowIslandCollection","mappedName": "ChildLayoutList"}], "originalName": "ChildLayoutList"},
+      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "Data"}], "originalName": "Data"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ExpandChildren"}], "originalName": "ExpandChildren"},
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "ForeignKey"}], "originalName": "ForeignKey"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetCellByColumn"}], "originalName": "GetCellByColumn"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetCellByKey"}], "originalName": "GetCellByKey"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetDefaultExpandState"}], "originalName": "GetDefaultExpandState"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetRowByIndex"}], "originalName": "GetRowByIndex"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetRowByKey"}], "originalName": "GetRowByKey"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Id"}], "originalName": "Id"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "PinRow"}], "originalName": "PinRow"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbCellType[]","mappedName": "SelectedCells"}], "originalName": "SelectedCells"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "TotalItemCount"}], "originalName": "TotalItemCount"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "UnpinRow"}], "originalName": "UnpinRow"} ]
+  },
+  {
+    "originalName": "HierarchicalGridBaseDirective",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "GridBaseDirective",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Blazor","fileName": "HierarchicalGridBaseDirective.cs","mappedName": "IgbHierarchicalGridBaseDirective"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HasChildrenKey"}], "originalName": "HasChildrenKey"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbGridBaseDirective","mappedName": "RootGrid"}], "originalName": "RootGrid"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ShowExpandAll"}], "originalName": "ShowExpandAll"} ]
   },
   {
     "originalName": "OverlayOutletDirective",
@@ -1836,10 +2025,12 @@
     "originalName": "Paginator",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "DisplayDensityBaseElement",
+    "originalBaseTypeName": "BaseElement",
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Blazor","fileName": "Paginator.cs","mappedName": "IgbPaginator"}],
     "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsFirstPage"}], "originalName": "IsFirstPage"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsLastPage"}], "originalName": "IsLastPage"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "NextPage"}], "originalName": "NextPage"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbOverlaySettings","mappedName": "OverlaySettings"}], "originalName": "OverlaySettings"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Page"}], "originalName": "Page"},
@@ -1848,6 +2039,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "PreviousPage"}], "originalName": "PreviousPage"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbPaginatorResourceStrings","mappedName": "ResourceStrings"}], "originalName": "ResourceStrings"},
       {"names":[{"platform": "Blazor", "mappedType": "double[]","mappedName": "SelectOptions"}], "originalName": "SelectOptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "TotalPages"}], "originalName": "TotalPages"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "TotalRecords"}], "originalName": "TotalRecords"} ]
   },
@@ -1866,13 +2058,13 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
-    "originalName": "PathSegment",
+    "originalName": "PagingState",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Blazor","fileName": "PathSegment.cs","mappedName": "IgbPathSegment"}],
+    "names":[{"platform": "Blazor","fileName": "PagingState.cs","mappedName": "IgbPagingState"}],
     "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "RowID"}], "originalName": "RowID"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "RowIslandKey"}], "originalName": "RowIslandKey"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Index"}], "originalName": "Index"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "RecordsPerPage"}], "originalName": "RecordsPerPage"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
@@ -1945,6 +2137,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "Owner"}], "originalName": "Owner"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbRowType","mappedName": "Row"}], "originalName": "Row"},
       {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "RowID"}], "originalName": "RowID"},
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "RowKey"}], "originalName": "RowKey"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
@@ -1953,6 +2146,7 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Blazor","fileName": "PivotAggregator.cs","mappedName": "IgbPivotAggregator"}],
     "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "String","mappedName": "Aggregator"}], "originalName": "Aggregator"},
       {"names":[{"platform": "Blazor", "mappedType": "PivotAggregationType","mappedName": "AggregatorName"}], "originalName": "AggregatorName"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Key"}], "originalName": "Key"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Label"}], "originalName": "Label"},
@@ -1965,13 +2159,13 @@
     "names":[{"platform": "Blazor","fileName": "PivotConfiguration.cs","mappedName": "IgbPivotConfiguration"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbPivotDimensionStrategy","mappedName": "ColumnStrategy"}], "originalName": "ColumnStrategy"},
-      {"names":[{"platform": "Blazor", "mappedType": "IgbPivotDimensionCollection","mappedName": "Columns"}], "originalName": "Columns"},
-      {"names":[{"platform": "Blazor", "mappedType": "IgbPivotDimensionCollection","mappedName": "Filters"}], "originalName": "Filters"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbPivotDimension[]","mappedName": "Columns"}], "originalName": "Columns"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbPivotDimension[]","mappedName": "Filters"}], "originalName": "Filters"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbPivotKeys","mappedName": "PivotKeys"}], "originalName": "PivotKeys"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbPivotDimensionStrategy","mappedName": "RowStrategy"}], "originalName": "RowStrategy"},
-      {"names":[{"platform": "Blazor", "mappedType": "IgbPivotDimensionCollection","mappedName": "Rows"}], "originalName": "Rows"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbPivotDimension[]","mappedName": "Rows"}], "originalName": "Rows"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
-      {"names":[{"platform": "Blazor", "mappedType": "IgbPivotValueCollection","mappedName": "Values"}], "originalName": "Values"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "IgbPivotValue[]","mappedName": "Values"}], "originalName": "Values"} ]
   },
   {
     "originalName": "PivotConfigurationChangedEventArgs",
@@ -2013,6 +2207,7 @@
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbPivotDimension","mappedName": "BaseDimension"}], "originalName": "BaseDimension"},
       {"names":[{"platform": "Blazor", "mappedType": "GridColumnDataType","mappedName": "DataType"}], "originalName": "DataType"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "DisplayName"}], "originalName": "DisplayName"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Enabled"}], "originalName": "Enabled"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbPivotDateDimensionOptions","mappedName": "Options"}], "originalName": "Options"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbGridResourceStrings","mappedName": "ResourceStrings"}], "originalName": "ResourceStrings"} ]
@@ -2038,12 +2233,15 @@
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbPivotDimension","mappedName": "ChildLevel"}], "originalName": "ChildLevel"},
       {"names":[{"platform": "Blazor", "mappedType": "GridColumnDataType","mappedName": "DataType"}], "originalName": "DataType"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "DisplayName"}], "originalName": "DisplayName"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Enabled"}], "originalName": "Enabled"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbFilteringExpressionsTree","mappedName": "Filter"}], "originalName": "Filter"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "HorizontalSummary"}], "originalName": "HorizontalSummary"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Level"}], "originalName": "Level"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "MemberName"}], "originalName": "MemberName"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Blazor", "mappedType": "SortingDirection","mappedName": "SortDirection"}], "originalName": "SortDirection"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Sortable"}], "originalName": "Sortable"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Width"}], "originalName": "Width"} ]
   },
   {
@@ -2054,12 +2252,15 @@
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbPivotDimension","mappedName": "ChildLevel"}], "originalName": "ChildLevel"},
       {"names":[{"platform": "Blazor", "mappedType": "GridColumnDataType","mappedName": "DataType"}], "originalName": "DataType"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "DisplayName"}], "originalName": "DisplayName"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Enabled"}], "originalName": "Enabled"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbFilteringExpressionsTree","mappedName": "Filter"}], "originalName": "Filter"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "HorizontalSummary"}], "originalName": "HorizontalSummary"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Level"}], "originalName": "Level"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "MemberName"}], "originalName": "MemberName"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Blazor", "mappedType": "SortingDirection","mappedName": "SortDirection"}], "originalName": "SortDirection"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Sortable"}], "originalName": "Sortable"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Width"}], "originalName": "Width"} ]
   },
   {
@@ -2087,6 +2288,7 @@
     "names":[{"platform": "Blazor","fileName": "PivotGrid.cs","mappedName": "IgbPivotGrid"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbPivotDimension[]","mappedName": "AllDimensions"}], "originalName": "AllDimensions"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "AutoGenerateConfig"}], "originalName": "AutoGenerateConfig"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "AutoSizeRowDimension"}], "originalName": "AutoSizeRowDimension"},
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "Data"}], "originalName": "Data"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "DefaultExpandState"}], "originalName": "DefaultExpandState"},
@@ -2100,9 +2302,10 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "MoveValue"}], "originalName": "MoveValue"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "NotifyDimensionChange"}], "originalName": "NotifyDimensionChange"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbPivotConfiguration","mappedName": "PivotConfiguration"}], "originalName": "PivotConfiguration"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbPivotUISettings","mappedName": "PivotUI"}], "originalName": "PivotUI"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "RemoveDimension"}], "originalName": "RemoveDimension"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "RemoveValue"}], "originalName": "RemoveValue"},
-      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ShowPivotConfigurationUI"}], "originalName": "ShowPivotConfigurationUI"},
+      {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<IgbColumnTemplateContext>","mappedName": "RowDimensionHeaderTemplate"}], "originalName": "RowDimensionHeaderTemplate"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SortDimension"}], "originalName": "SortDimension"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "SuperCompactMode"}], "originalName": "SuperCompactMode"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ToggleColumn"}], "originalName": "ToggleColumn"},
@@ -2128,10 +2331,12 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Blazor","fileName": "PivotGridRecord.cs","mappedName": "IgbPivotGridRecord"}],
     "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "DataIndex"}], "originalName": "DataIndex"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbPivotDimension[]","mappedName": "Dimensions"}], "originalName": "Dimensions"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Level"}], "originalName": "Level"},
       {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "Records"}], "originalName": "Records"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "TotalRecordDimensionName"}], "originalName": "TotalRecordDimensionName"} ]
   },
   {
     "originalName": "PivotGridValueTemplateContext",
@@ -2157,13 +2362,25 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
+    "originalName": "PivotUISettings",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Blazor","fileName": "PivotUISettings.cs","mappedName": "IgbPivotUISettings"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "PivotSummaryPosition","mappedName": "HorizontalSummariesPosition"}], "originalName": "HorizontalSummariesPosition"},
+      {"names":[{"platform": "Blazor", "mappedType": "PivotRowLayoutType","mappedName": "RowLayout"}], "originalName": "RowLayout"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ShowConfiguration"}], "originalName": "ShowConfiguration"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ShowRowHeaders"}], "originalName": "ShowRowHeaders"} ]
+  },
+  {
     "originalName": "PivotValue",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Blazor","fileName": "PivotValue.cs","mappedName": "IgbPivotValue"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbPivotAggregator","mappedName": "Aggregate"}], "originalName": "Aggregate"},
-      {"names":[{"platform": "Blazor", "mappedType": "IgbPivotAggregatorCollection","mappedName": "AggregateList"}], "originalName": "AggregateList"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbPivotAggregator[]","mappedName": "AggregateList"}], "originalName": "AggregateList"},
       {"names":[{"platform": "Blazor", "mappedType": "GridColumnDataType","mappedName": "DataType"}], "originalName": "DataType"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "DisplayName"}], "originalName": "DisplayName"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Enabled"}], "originalName": "Enabled"},
@@ -2178,7 +2395,7 @@
     "names":[{"platform": "Blazor","fileName": "PivotValueDetail.cs","mappedName": "IgbPivotValueDetail"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbPivotAggregator","mappedName": "Aggregate"}], "originalName": "Aggregate"},
-      {"names":[{"platform": "Blazor", "mappedType": "IgbPivotAggregatorCollection","mappedName": "AggregateList"}], "originalName": "AggregateList"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbPivotAggregator[]","mappedName": "AggregateList"}], "originalName": "AggregateList"},
       {"names":[{"platform": "Blazor", "mappedType": "GridColumnDataType","mappedName": "DataType"}], "originalName": "DataType"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "DisplayName"}], "originalName": "DisplayName"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Enabled"}], "originalName": "Enabled"},
@@ -2204,7 +2421,6 @@
       {"names":[{"platform": "Blazor", "mappedType": "GridHorizontalAlignment","mappedName": "HorizontalStartPoint"}], "originalName": "HorizontalStartPoint"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbSize","mappedName": "MinSize"}], "originalName": "MinSize"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
-      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "Target"}], "originalName": "Target"},
       {"names":[{"platform": "Blazor", "mappedType": "GridVerticalAlignment","mappedName": "VerticalDirection"}], "originalName": "VerticalDirection"},
       {"names":[{"platform": "Blazor", "mappedType": "GridVerticalAlignment","mappedName": "VerticalStartPoint"}], "originalName": "VerticalStartPoint"} ]
   },
@@ -2219,15 +2435,29 @@
       {"names":[{"platform": "Blazor", "mappedType": "IgbPositionSettings","mappedName": "Settings"}], "originalName": "Settings"} ]
   },
   {
-    "originalName": "RecordValidationState",
+    "originalName": "RowDataCancelableEventArgs",
     "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "GridValidationState",
     "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Blazor","fileName": "RecordValidationState.cs","mappedName": "IgbRecordValidationState"}],
+    "names":[{"platform": "Blazor","fileName": "RowDataCancelableEventArgs.cs","mappedName": "IgbRowDataCancelableEventArgs"}],
     "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "IgbFieldValidationState[]","mappedName": "Fields"}], "originalName": "Fields"},
-      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "Key"}], "originalName": "Key"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "IgbRowDataCancelableEventArgsDetail","mappedName": "Detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "RowDataCancelableEventArgsDetail",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Blazor","fileName": "RowDataCancelableEventArgsDetail.cs","mappedName": "IgbRowDataCancelableEventArgsDetail"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "IgbGridCellIdentifier","mappedName": "CellID"}], "originalName": "CellID"},
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "Data"}], "originalName": "Data"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsAddRow"}], "originalName": "IsAddRow"},
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "NewValue"}], "originalName": "NewValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "OldValue"}], "originalName": "OldValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbGridBaseDirective","mappedName": "Owner"}], "originalName": "Owner"},
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "PrimaryKey"}], "originalName": "PrimaryKey"},
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "RowData"}], "originalName": "RowData"},
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "RowKey"}], "originalName": "RowKey"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
     "originalName": "RowDataEventArgs",
@@ -2246,7 +2476,9 @@
     "names":[{"platform": "Blazor","fileName": "RowDataEventArgsDetail.cs","mappedName": "IgbRowDataEventArgsDetail"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "Data"}], "originalName": "Data"},
-      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "PrimaryKey"}], "originalName": "PrimaryKey"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "PrimaryKey"}], "originalName": "PrimaryKey"},
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "RowData"}], "originalName": "RowData"},
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "RowKey"}], "originalName": "RowKey"} ]
   },
   {
     "originalName": "RowDirective",
@@ -2328,6 +2560,140 @@
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "RowIndex"}], "originalName": "RowIndex"} ]
   },
   {
+    "originalName": "RowIsland",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Blazor","fileName": "RowIsland.cs","mappedName": "IgbRowIsland"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "IgbActionStripCollection","mappedName": "ActionStripComponents"}], "originalName": "ActionStripComponents"},
+      {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<object>","mappedName": "AddRowEmptyTemplate"}], "originalName": "AddRowEmptyTemplate"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilteringExpressionsTree","mappedName": "AdvancedFilteringExpressionsTree"}], "originalName": "AdvancedFilteringExpressionsTree"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "AllowAdvancedFiltering"}], "originalName": "AllowAdvancedFiltering"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "AllowFiltering"}], "originalName": "AllowFiltering"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "AutoGenerate"}], "originalName": "AutoGenerate"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "AutoGenerateExclude"}], "originalName": "AutoGenerateExclude"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "BatchEditing"}], "originalName": "BatchEditing"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "BeginAddRowById"}], "originalName": "BeginAddRowById"},
+      {"names":[{"platform": "Blazor", "mappedType": "GridSelectionMode","mappedName": "CellSelection"}], "originalName": "CellSelection"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ChildDataKey"}], "originalName": "ChildDataKey"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbRowIslandCollection","mappedName": "ChildLayoutList"}], "originalName": "ChildLayoutList"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ClearCellSelection"}], "originalName": "ClearCellSelection"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ClearFilter"}], "originalName": "ClearFilter"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ClearSearch"}], "originalName": "ClearSearch"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ClearSort"}], "originalName": "ClearSort"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbClipboardOptions","mappedName": "ClipboardOptions"}], "originalName": "ClipboardOptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "CloseAdvancedFilteringDialog"}], "originalName": "CloseAdvancedFilteringDialog"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "CollapseAll"}], "originalName": "CollapseAll"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "CollapseRow"}], "originalName": "CollapseRow"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbColumnCollection","mappedName": "ColumnList"}], "originalName": "ColumnList"},
+      {"names":[{"platform": "Blazor", "mappedType": "GridSelectionMode","mappedName": "ColumnSelection"}], "originalName": "ColumnSelection"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ColumnWidth"}], "originalName": "ColumnWidth"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbColumn[]","mappedName": "Columns"}], "originalName": "Columns"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbDataCloneStrategy","mappedName": "DataCloneStrategy"}], "originalName": "DataCloneStrategy"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "DefaultHeaderGroupMinWidth"}], "originalName": "DefaultHeaderGroupMinWidth"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "DefaultRowHeight"}], "originalName": "DefaultRowHeight"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "DeselectAllColumns"}], "originalName": "DeselectAllColumns"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "DeselectAllRows"}], "originalName": "DeselectAllRows"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "DeselectColumns"}], "originalName": "DeselectColumns"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "DeselectRows"}], "originalName": "DeselectRows"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "DisableSummaries"}], "originalName": "DisableSummaries"},
+      {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<IgbGridRowDragGhostContext>","mappedName": "DragGhostCustomTemplate"}], "originalName": "DragGhostCustomTemplate"},
+      {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<IgbGridEmptyTemplateContext>","mappedName": "DragIndicatorIconTemplate"}], "originalName": "DragIndicatorIconTemplate"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "EmptyFilteredGridMessage"}], "originalName": "EmptyFilteredGridMessage"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "EmptyGridMessage"}], "originalName": "EmptyGridMessage"},
+      {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<object>","mappedName": "EmptyGridTemplate"}], "originalName": "EmptyGridTemplate"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "EnableSummaries"}], "originalName": "EnableSummaries"},
+      {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<IgbGridHeaderTemplateContext>","mappedName": "ExcelStyleHeaderIconTemplate"}], "originalName": "ExcelStyleHeaderIconTemplate"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExpandAll"}], "originalName": "ExpandAll"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ExpandChildren"}], "originalName": "ExpandChildren"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExpandRow"}], "originalName": "ExpandRow"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Filter"}], "originalName": "Filter"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "FilterGlobal"}], "originalName": "FilterGlobal"},
+      {"names":[{"platform": "Blazor", "mappedType": "FilterMode","mappedName": "FilterMode"}], "originalName": "FilterMode"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilteringStrategy","mappedName": "FilterStrategy"}], "originalName": "FilterStrategy"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilteringExpressionsTree","mappedName": "FilteringExpressionsTree"}], "originalName": "FilteringExpressionsTree"},
+      {"names":[{"platform": "Blazor", "mappedType": "FilteringLogic","mappedName": "FilteringLogic"}], "originalName": "FilteringLogic"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "FindNext"}], "originalName": "FindNext"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "FindPrev"}], "originalName": "FindPrev"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetColumnByName"}], "originalName": "GetColumnByName"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetColumnByVisibleIndex"}], "originalName": "GetColumnByVisibleIndex"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetHeaderGroupWidth"}], "originalName": "GetHeaderGroupWidth"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetNextCell"}], "originalName": "GetNextCell"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetPinnedWidth"}], "originalName": "GetPinnedWidth"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetPreviousCell"}], "originalName": "GetPreviousCell"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetRowData"}], "originalName": "GetRowData"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSelectedColumnsData"}], "originalName": "GetSelectedColumnsData"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSelectedData"}], "originalName": "GetSelectedData"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSelectedRanges"}], "originalName": "GetSelectedRanges"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HasChildrenKey"}], "originalName": "HasChildrenKey"},
+      {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<IgbHeadSelectorTemplateContext>","mappedName": "HeadSelectorTemplate"}], "originalName": "HeadSelectorTemplate"},
+      {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<IgbGridTemplateContext>","mappedName": "HeaderCollapsedIndicatorTemplate"}], "originalName": "HeaderCollapsedIndicatorTemplate"},
+      {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<IgbGridTemplateContext>","mappedName": "HeaderExpandedIndicatorTemplate"}], "originalName": "HeaderExpandedIndicatorTemplate"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Height"}], "originalName": "Height"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "HideRowSelectors"}], "originalName": "HideRowSelectors"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsLoading"}], "originalName": "IsLoading"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "IsRecordPinnedByIndex"}], "originalName": "IsRecordPinnedByIndex"},
+      {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<object>","mappedName": "LoadingGridTemplate"}], "originalName": "LoadingGridTemplate"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Locale"}], "originalName": "Locale"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "MarkForCheck"}], "originalName": "MarkForCheck"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "MoveColumn"}], "originalName": "MoveColumn"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Moving"}], "originalName": "Moving"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "NavigateTo"}], "originalName": "NavigateTo"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "OpenAdvancedFilteringDialog"}], "originalName": "OpenAdvancedFilteringDialog"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbPaginatorCollection","mappedName": "PaginationComponents"}], "originalName": "PaginationComponents"},
+      {"names":[{"platform": "Blazor", "mappedType": "GridPagingMode","mappedName": "PagingMode"}], "originalName": "PagingMode"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "PinColumn"}], "originalName": "PinColumn"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbPinningConfig","mappedName": "Pinning"}], "originalName": "Pinning"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "PrimaryKey"}], "originalName": "PrimaryKey"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "RecalculateAutoSizes"}], "originalName": "RecalculateAutoSizes"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "RefreshSearch"}], "originalName": "RefreshSearch"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbGridResourceStrings","mappedName": "ResourceStrings"}], "originalName": "ResourceStrings"},
+      {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<IgbGridEmptyTemplateContext>","mappedName": "RowAddTextTemplate"}], "originalName": "RowAddTextTemplate"},
+      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "RowClasses"}], "originalName": "RowClasses"},
+      {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<IgbGridRowTemplateContext>","mappedName": "RowCollapsedIndicatorTemplate"}], "originalName": "RowCollapsedIndicatorTemplate"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "RowDraggable"}], "originalName": "RowDraggable"},
+      {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<IgbGridRowEditActionsTemplateContext>","mappedName": "RowEditActionsTemplate"}], "originalName": "RowEditActionsTemplate"},
+      {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<IgbGridRowEditTextTemplateContext>","mappedName": "RowEditTextTemplate"}], "originalName": "RowEditTextTemplate"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "RowEditable"}], "originalName": "RowEditable"},
+      {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<IgbGridRowTemplateContext>","mappedName": "RowExpandedIndicatorTemplate"}], "originalName": "RowExpandedIndicatorTemplate"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "RowHeight"}], "originalName": "RowHeight"},
+      {"names":[{"platform": "Blazor", "mappedType": "GridSelectionMode","mappedName": "RowSelection"}], "originalName": "RowSelection"},
+      {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<IgbRowSelectorTemplateContext>","mappedName": "RowSelectorTemplate"}], "originalName": "RowSelectorTemplate"},
+      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "RowStyles"}], "originalName": "RowStyles"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SelectAllColumns"}], "originalName": "SelectAllColumns"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SelectAllRows"}], "originalName": "SelectAllRows"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SelectColumns"}], "originalName": "SelectColumns"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SelectRange"}], "originalName": "SelectRange"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "SelectRowOnClick"}], "originalName": "SelectRowOnClick"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SelectRows"}], "originalName": "SelectRows"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SelectedColumns"}], "originalName": "SelectedColumns"},
+      {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "SelectedRows"}], "originalName": "SelectedRows"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ShouldGenerate"}], "originalName": "ShouldGenerate"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ShowExpandAll"}], "originalName": "ShowExpandAll"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ShowSummaryOnCollapse"}], "originalName": "ShowSummaryOnCollapse"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "SnackbarDisplayTime"}], "originalName": "SnackbarDisplayTime"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Sort"}], "originalName": "Sort"},
+      {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<IgbGridHeaderTemplateContext>","mappedName": "SortAscendingHeaderIconTemplate"}], "originalName": "SortAscendingHeaderIconTemplate"},
+      {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<IgbGridHeaderTemplateContext>","mappedName": "SortDescendingHeaderIconTemplate"}], "originalName": "SortDescendingHeaderIconTemplate"},
+      {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<IgbGridHeaderTemplateContext>","mappedName": "SortHeaderIconTemplate"}], "originalName": "SortHeaderIconTemplate"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbGridSortingStrategy","mappedName": "SortStrategy"}], "originalName": "SortStrategy"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbSortingExpression[]","mappedName": "SortingExpressions"}], "originalName": "SortingExpressions"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbSortingOptions","mappedName": "SortingOptions"}], "originalName": "SortingOptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "GridSummaryCalculationMode","mappedName": "SummaryCalculationMode"}], "originalName": "SummaryCalculationMode"},
+      {"names":[{"platform": "Blazor", "mappedType": "GridSummaryPosition","mappedName": "SummaryPosition"}], "originalName": "SummaryPosition"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "SummaryRowHeight"}], "originalName": "SummaryRowHeight"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ToggleColumnVisibility"}], "originalName": "ToggleColumnVisibility"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ToggleRow"}], "originalName": "ToggleRow"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbGridToolbarCollection","mappedName": "Toolbar"}], "originalName": "Toolbar"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "TotalRecords"}], "originalName": "TotalRecords"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "UnpinColumn"}], "originalName": "UnpinColumn"},
+      {"names":[{"platform": "Blazor", "mappedType": "GridValidationTrigger","mappedName": "ValidationTrigger"}], "originalName": "ValidationTrigger"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Width"}], "originalName": "Width"} ]
+  },
+  {
     "originalName": "RowSelectionEventArgs",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -2391,7 +2757,8 @@
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Cancel"}], "originalName": "Cancel"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Expanded"}], "originalName": "Expanded"},
-      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "RowID"}], "originalName": "RowID"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "RowID"}], "originalName": "RowID"},
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "RowKey"}], "originalName": "RowKey"} ]
   },
   {
     "originalName": "RowType",
@@ -2441,15 +2808,13 @@
   {
     "originalName": "SearchInfo",
     "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseSearchInfo",
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "Blazor","fileName": "SearchInfo.cs","mappedName": "IgbSearchInfo"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ActiveMatchIndex"}], "originalName": "ActiveMatchIndex"},
-      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "CaseSensitive"}], "originalName": "CaseSensitive"},
-      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ExactMatch"}], "originalName": "ExactMatch"},
-      {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "MatchInfoCache"}], "originalName": "MatchInfoCache"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SearchText"}], "originalName": "SearchText"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "MatchInfoCache"}], "originalName": "MatchInfoCache"} ]
   },
   {
     "originalName": "Size",
@@ -2540,21 +2905,6 @@
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbSummaryResult[]","mappedName": "Implicit"}], "originalName": "Implicit"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
-    "originalName": "ToggleDirective",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Blazor","fileName": "ToggleDirective.cs","mappedName": "IgbToggleDirective"}],
-    "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Id"}], "originalName": "Id"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Open"}], "originalName": "Open"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Reposition"}], "originalName": "Reposition"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetOffset"}], "originalName": "SetOffset"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Toggle"}], "originalName": "Toggle"} ]
   },
   {
     "originalName": "ToggleViewCancelableEventArgs",
@@ -2672,17 +3022,6 @@
       {"names":[{"platform": "Blazor", "mappedType": "IgbValuesChangeDetail","mappedName": "Detail"}], "originalName": "Detail"} ]
   },
   {
-    "originalName": "DisplayDensityBaseElement",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Blazor","fileName": "DisplayDensityBaseElement.cs","mappedName": "IgbDisplayDensityBaseElement"}],
-    "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "DisplayDensity","mappedName": "DisplayDensity"}], "originalName": "DisplayDensity"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
     "originalName": "FilteringExpressionsTreeOrFilteringExpression",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -2703,14 +3042,6 @@
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "ColumnID"}], "originalName": "ColumnID"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "RowID"}], "originalName": "RowID"},
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "RowIndex"}], "originalName": "RowIndex"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
-    "originalName": "GridClipboardOptions",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "Blazor","fileName": "GridClipboardOptions.cs","mappedName": "IgbGridClipboardOptions"}],
-    "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
@@ -2745,5 +3076,28 @@
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "FieldName"}], "originalName": "FieldName"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "GridStateOptions",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "Blazor","fileName": "GridStateOptions.cs","mappedName": "IgbGridStateOptions"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "AdvancedFiltering"}], "originalName": "AdvancedFiltering"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "CellSelection"}], "originalName": "CellSelection"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ColumnSelection"}], "originalName": "ColumnSelection"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Columns"}], "originalName": "Columns"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Expansion"}], "originalName": "Expansion"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Filtering"}], "originalName": "Filtering"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "GroupBy"}], "originalName": "GroupBy"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Moving"}], "originalName": "Moving"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Paging"}], "originalName": "Paging"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "PinningConfig"}], "originalName": "PinningConfig"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "PivotConfiguration"}], "originalName": "PivotConfiguration"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "RowIslands"}], "originalName": "RowIslands"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "RowPinning"}], "originalName": "RowPinning"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "RowSelection"}], "originalName": "RowSelection"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Sorting"}], "originalName": "Sorting"} ]
   }]
 }

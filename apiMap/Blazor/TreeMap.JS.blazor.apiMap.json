@@ -5,6 +5,7 @@
     "packageName": "igniteui-charts",
     "names":[{"platform": "Blazor","fileName": "Treemap.cs","mappedName": "IgbTreemap"}],
     "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "TreemapHighlightingMode","mappedName": "ActualHighlightingMode"}], "originalName": "ActualHighlightingMode"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ActualInteractionPixelScalingRatio"}], "originalName": "ActualInteractionPixelScalingRatio"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ActualPixelScalingRatio"}], "originalName": "ActualPixelScalingRatio"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "BreadcrumbSequence"}], "originalName": "BreadcrumbSequence"},
@@ -30,6 +31,13 @@
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "HeaderLabelRightMargin"}], "originalName": "HeaderLabelRightMargin"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "HeaderLabelTopMargin"}], "originalName": "HeaderLabelTopMargin"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HeaderTextColor"}], "originalName": "HeaderTextColor"},
+      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "HighlightedDataSource"}], "originalName": "HighlightedItemsSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HighlightedValueMemberPath"}], "originalName": "HighlightedValueMemberPath"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "HighlightedValueOpacity"}], "originalName": "HighlightedValueOpacity"},
+      {"names":[{"platform": "Blazor", "mappedType": "TreemapHighlightedValueDisplayMode","mappedName": "HighlightedValuesDisplayMode"}], "originalName": "HighlightedValuesDisplayMode"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "HighlightingFadeOpacity"}], "originalName": "HighlightingFadeOpacity"},
+      {"names":[{"platform": "Blazor", "mappedType": "TreemapHighlightingMode","mappedName": "HighlightingMode"}], "originalName": "HighlightingMode"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "HighlightingTransitionDuration"}], "originalName": "HighlightingTransitionDuration"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "IdMemberPath"}], "originalName": "IdMemberPath"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "InteractionPixelScalingRatio"}], "originalName": "InteractionPixelScalingRatio"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsFillScaleLogarithmic"}], "originalName": "IsFillScaleLogarithmic"},
@@ -47,6 +55,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "TreemapLayoutType","mappedName": "LayoutType"}], "originalName": "LayoutType"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "MarkDirty"}], "originalName": "MarkDirty"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "MinimumDisplaySize"}], "originalName": "MinimumDisplaySize"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "NodeOpacity"}], "originalName": "NodeOpacity"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "NotifyClearItems"}], "originalName": "NotifyClearItems"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "NotifyInsertItem"}], "originalName": "NotifyInsertItem"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "NotifyRemoveItem"}], "originalName": "NotifyRemoveItem"},
@@ -99,6 +108,7 @@
     "packageName": "igniteui-charts",
     "names":[{"platform": "Blazor","fileName": "TreemapNodeStyle.cs","mappedName": "IgbTreemapNodeStyle"}],
     "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "FadeOpacity"}], "originalName": "FadeOpacity"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Fill"}], "originalName": "Fill"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HeaderBackground"}], "originalName": "HeaderBackground"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "HeaderHeight"}], "originalName": "HeaderHeight"},
@@ -109,6 +119,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "HeaderLabelRightMargin"}], "originalName": "HeaderLabelRightMargin"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "HeaderLabelTopMargin"}], "originalName": "HeaderLabelTopMargin"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HeaderTextColor"}], "originalName": "HeaderTextColor"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "HighlightingHandled"}], "originalName": "HighlightingHandled"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Label"}], "originalName": "Label"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "LabelBottomMargin"}], "originalName": "LabelBottomMargin"},
       {"names":[{"platform": "Blazor", "mappedType": "HorizontalAlignment","mappedName": "LabelHorizontalAlignment"}], "originalName": "LabelHorizontalAlignment"},
@@ -116,6 +127,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "LabelRightMargin"}], "originalName": "LabelRightMargin"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "LabelTopMargin"}], "originalName": "LabelTopMargin"},
       {"names":[{"platform": "Blazor", "mappedType": "VerticalAlignment","mappedName": "LabelVerticalAlignment"}], "originalName": "LabelVerticalAlignment"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Opacity"}], "originalName": "Opacity"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Outline"}], "originalName": "Outline"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "StrokeThickness"}], "originalName": "StrokeThickness"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "TextColor"}], "originalName": "TextColor"} ]
@@ -129,6 +141,9 @@
     "names":[{"platform": "Blazor","fileName": "TreemapNodeStylingEventArgs.cs","mappedName": "IgbTreemapNodeStylingEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "CustomValue"}], "originalName": "CustomValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "HighlightingHandled"}], "originalName": "HighlightingHandled"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbHighlightingInfo","mappedName": "HighlightingInfo"}], "originalName": "HighlightingInfo"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsHighlightInProgress"}], "originalName": "IsHighlightInProgress"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsParent"}], "originalName": "IsParent"},
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "Item"}], "originalName": "Item"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Label"}], "originalName": "Label"},
@@ -138,6 +153,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ParentValue"}], "originalName": "ParentValue"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbTreemapNodeStyle","mappedName": "Style"}], "originalName": "Style"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Sum"}], "originalName": "Sum"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "TotalHighlightProgress"}], "originalName": "TotalHighlightProgress"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Value"}], "originalName": "Value"} ]
   },
   {

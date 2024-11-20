@@ -40,7 +40,8 @@
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "Rect","mappedName": "Bounds"}], "originalName": "Bounds"},
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Index"}], "originalName": "Index"},
-      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "Item"}], "originalName": "Item"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "Item"}], "originalName": "Item"},
+      {"names":[{"platform": "Blazor", "mappedType": "Point","mappedName": "Position"}], "originalName": "Position"} ]
   },
   {
     "originalName": "XamFunnelChart",
@@ -50,16 +51,23 @@
     "packageName": "igniteui-charts",
     "names":[{"platform": "Blazor","fileName": "FunnelChart.cs","mappedName": "IgbFunnelChart"}],
     "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "HighlightedValueDisplayMode","mappedName": "ActualHighlightValueDisplayMode"}], "originalName": "ActualHighlightValueDisplayMode"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ActualHighlightValueOpacity"}], "originalName": "ActualHighlightValueOpacity"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "AllowSliceSelection"}], "originalName": "AllowSliceSelection"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BottomEdgeWidth"}], "originalName": "BottomEdgeWidth"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Brushes"}], "originalName": "Brushes"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportSerializedVisualData"}], "originalName": "ExportSerializedVisualData"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Flush"}], "originalName": "Flush"},
       {"names":[{"platform": "Blazor", "mappedType": "String","mappedName": "FormatInnerLabel"}], "originalName": "FormatInnerLabel"},
       {"names":[{"platform": "Blazor", "mappedType": "String","mappedName": "FormatOuterLabel"}], "originalName": "FormatOuterLabel"},
       {"names":[{"platform": "Blazor", "mappedType": "FunnelSliceDisplay","mappedName": "FunnelSliceDisplay"}], "originalName": "FunnelSliceDisplay"},
+      {"names":[{"platform": "Blazor", "mappedType": "HighlightedValueDisplayMode","mappedName": "HighlightValueDisplayMode"}], "originalName": "HighlightValueDisplayMode"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "HighlightValueOpacity"}], "originalName": "HighlightValueOpacity"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HighlightedValueMemberPath"}], "originalName": "HighlightedValueMemberPath"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "InnerLabelMemberPath"}], "originalName": "InnerLabelMemberPath"},
       {"names":[{"platform": "Blazor", "mappedType": "Visibility","mappedName": "InnerLabelVisibility"}], "originalName": "InnerLabelVisibility"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsInverted"}], "originalName": "IsInverted"},
+      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "DataSource"}], "originalName": "ItemsSource"},
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "LegendItemBadgeTemplate"}], "originalName": "LegendItemBadgeTemplate"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "NotifyClearItems"}], "originalName": "NotifyClearItems"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "NotifyInsertItem"}], "originalName": "NotifyInsertItem"},
@@ -83,13 +91,13 @@
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "UseOuterLabelsForLegend"}], "originalName": "UseOuterLabelsForLegend"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "UseUnselectedStyle"}], "originalName": "UseUnselectedStyle"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueMemberPath"}], "originalName": "ValueMemberPath"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectedSliceFill"}], "originalName": "selectedSliceStyle.fill"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "SelectedSliceOpacity"}], "originalName": "selectedSliceStyle.opacity"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectedSliceStroke"}], "originalName": "selectedSliceStyle.stroke"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "SelectedSliceStrokeThickness"}], "originalName": "selectedSliceStyle.strokeThickness"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "UnselectedSliceFill"}], "originalName": "unselectedSliceStyle.fill"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "UnselectedSliceOpacity"}], "originalName": "unselectedSliceStyle.opacity"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "UnselectedSliceStroke"}], "originalName": "unselectedSliceStyle.stroke"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "UnselectedSliceStrokeThickness"}], "originalName": "unselectedSliceStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectedSliceFill"}], "originalName": "selectedSliceStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "SelectedSliceOpacity"}], "originalName": "selectedSliceStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectedSliceStroke"}], "originalName": "selectedSliceStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "SelectedSliceStrokeThickness"}], "originalName": "selectedSliceStyle.strokeThickness"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "UnselectedSliceFill"}], "originalName": "unselectedSliceStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "UnselectedSliceOpacity"}], "originalName": "unselectedSliceStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "UnselectedSliceStroke"}], "originalName": "unselectedSliceStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "UnselectedSliceStrokeThickness"}], "originalName": "unselectedSliceStyle.strokeThickness"} ]
   }]
 }

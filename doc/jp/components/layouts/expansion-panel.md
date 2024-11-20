@@ -2,19 +2,17 @@
 title: {Platform} 展開パネル | 展開パネル | インフラジスティックス
 _description: 展開パネル コンポーネントは、縮小と展開の 2 つの状態を持つ簡単に構成可能な展開可能なコンポーネントを提供します。
 _keywords: {Platform} Expansion Panel, Infragistics, {Platform} 展開パネル, {ProductName}, インフラジスティックス
-mentionedTypes: ['Infragistics.Controls.Layouts.Implementation.ExpansionPanel']
+mentionedTypes: ["Infragistics.Controls.Layouts.Implementation.ExpansionPanel"]
 namespace: Infragistics.Controls
 _language: ja
 ---
 
-# {Platform} 展開パネルの概要
+# {Platform} Expansion Panel (展開パネル) の概要
 {ProductName} 展開パネルは、縮小または展開の 2 つの状態で描画できる軽量のアコーディオン コンポーネントです。展開パネルは、マウス クリックまたはキーボード操作によって切り替えることができます。
 
 ## {Platform} 展開パネルの例
 
 `sample="/layouts/expansion-panel/usage", height="320", alt="{Platform} 展開パネルの例"`
-
-
 
 <div class="divider--half"></div>
 
@@ -34,6 +32,8 @@ import {defineComponents, IgcExpansionPanelComponent} from 'igniteui-webcomponen
 
 defineComponents(IgcExpansionPanelComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 <!-- end: WebComponents -->
 
@@ -131,7 +131,7 @@ IgrExpansionPanelModule.register();
 
 `ExpansionPanel` を使用すると、公開された *title*、*subTitle*、および *indicator* スロット全体でヘッダーを簡単にカスタマイズできます。
 
-展開インジケーターの位置の構成は、展開パネルの `indicatorAlignment` プロパティを使用して行うことができます。可能なオプションは、**start**、**end**、または **none** です。
+展開インジケーターの位置の構成は、展開パネルの `IndicatorPosition` プロパティを使用して行うことができます。可能なオプションは、**start**、**end**、または **none** です。
 
 次のコードサンプルは、コンポーネントのボタンが右側に移動するように構成する方法を示しています。
 

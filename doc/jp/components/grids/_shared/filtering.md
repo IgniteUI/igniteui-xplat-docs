@@ -54,31 +54,29 @@ _language: ja
 <!-- end: Angular -->
 
 ```razor
-<IgbGrid Data=data AutoGenerate=false AllowFiltering=true>
+<{ComponentSelector} Data=data AutoGenerate=false AllowFiltering=true>
     <IgbColumn Field="ProductName" DataType="GridColumnDataType.String"></IgbColumn>
     <IgbColumn Field="Price" DataType="GridColumnDataType.Number" Filterable=false></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 ```
 
-<!-- WebComponents -->
 ```html
 <{ComponentSelector} id="grid1" auto-generate="false" allow-filtering="true">
     <igc-column field="ProductName" data-type="string"></igc-column>
     <igc-column field="Price" data-type="number" filterable="false"></igc-column>
-<{ComponentSelector}>
+</{ComponentSelector}>
 ```
-<!-- end: WebComponents -->
 
-<!-- React -->
 ```tsx
 <{ComponentSelector} data={this.nwindData} autoGenerate="false" ref={this.gridRef} allowFiltering="true">
     <IgrColumn field="ProductName" dataType="String"></IgrColumn>
     <IgrColumn field="UnitPrice" data-type="Number" filterable="false"></IgrColumn>
 </{ComponentSelector}>
 ```
-<!-- end: React -->
 
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 [高度なフィルタリング](advanced-filtering.md) を有効にするには、`AllowAdvancedFiltering` 入力プロパティを **true** に設定します。
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
 <!-- Angular -->
 ```html
@@ -88,7 +86,7 @@ _language: ja
 <!-- end: Angular -->
 
 ```razor
-<IgbGrid Data=data AutoGenerate=true AllowAdvancedFiltering=true />
+<{ComponentSelector} Data=data AutoGenerate=true AllowAdvancedFiltering=true />
 ```
 
 <!-- WebComponents -->
@@ -130,6 +128,7 @@ _language: ja
 </{ComponentSelector}>
 ```
 <!-- end: Angular -->
+
 <!-- WebComponents -->
 ```html
 <{ComponentSelector} auto-generate="false" allow-filtering="true">
@@ -149,7 +148,6 @@ _language: ja
 </{ComponentSelector}>
 ```
 <!-- end: React -->
-
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -168,10 +166,10 @@ _language: ja
 <!-- ComponentEnd: HierarchicalGrid -->
 
 ```razor
-<IgbGrid Data=data AutoGenerate=false AllowFiltering=true>
+<{ComponentSelector} Data=data AutoGenerate=false AllowFiltering=true>
     <IgbColumn Field="ProductName" DataType="GridColumnDataType.String"></IgbColumn>
     <IgbColumn Field="Price" DataType="GridColumnDataType.Number" Filterable=false></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 ```
 
 > [!Note]
@@ -351,7 +349,7 @@ constructor() {
 `{ComponentName}` コントロールの `FilteringLogic` プロパティは `{ComponentName}` で複数の列のフィルターが解決する方法を制御します。`{ComponentName}` API または `{ComponentName}` の入力プロパティによって変更できます。
 
 ```razor
- <IgbGrid FilteringLogic="FilteringLogic.Or"></IgbGrid>
+ <{ComponentSelector} FilteringLogic="FilteringLogic.Or"></{ComponentSelector}>
 ```
 
 <!-- Angular -->
@@ -372,6 +370,8 @@ this.grid.filteringLogic = FilteringLogic.OR;
 
 <!-- React -->
 ```tsx
+import { FilteringLogic } from "igniteui-react-grids";
+
 <{ComponentName} filteringLogic={FilteringLogic.Or}></{ComponentName}>
 ```
 <!-- end: React -->
@@ -397,6 +397,7 @@ this.grid.filteringLogic = FilteringLogic.OR;
 以下のサンプルの 「Product Name」 と 「Discontinued」 列フィルタリング メニューを確認してください。「Discontinued」 列フィルターでは、オペランドの数が All に制限されています。「Product Name」 列フィルター - Contains および Does Not Contain オペランド ロジックを変更して大文字と小文字を区別した検索を実行し、Empty と Not Empty を追加します。
 
 これにより、`StringFilteringOperand` と `BooleanFilteringOperand` を拡張し、オペランドとロジックを変更して列 `filters` 入力を新しいオペランドに設定します。
+<!-- Angular -->
 
 ```typescript
 // grid-custom-filtering.component.ts
@@ -550,14 +551,10 @@ export class BooleanFilteringOperand extends IgcBooleanFilteringOperand {
 ```
 ```ts
 constructor() {
-    var productName = this.productName = document.getElementById('ProductName') as IgcColumnComponent;
-    var discontinued = this.discontinued = document.getElementById('Discontinued') as IgcColumnComponent;
-
-    this._bind = () => {
-        productName.filters = this.caseSensitiveFilteringOperand;
-        discontinued.filters = this.booleanFilteringOperand;
-    }
-    this._bind();
+    var productName = document.getElementById('ProductName') as IgcColumnComponent;
+    var discontinued = document.getElementById('Discontinued') as IgcColumnComponent;
+    productName.filters = this.caseSensitiveFilteringOperand;
+    discontinued.filters = this.booleanFilteringOperand;
 }
 ```
 <!-- end: WebComponents -->
@@ -583,20 +580,16 @@ constructor() {
 <!-- grid-custom-filtering.component.html -->
 
 <igc-hierarchical-grid auto-generate="false" allow-filtering="true">
-    <igc-column id="Artist" field="Artist" filterable='true' data-type="string" [filters]="caseSensitiveFilteringOperand"></igc-column>
-    <igc-column id="HasGrammyAward" field="HasGrammyAward" filterable='true' data-type="boolean" [filters]="booleanFilteringOperand"></igc-column>
+    <igc-column id="Artist" field="Artist" filterable='true' data-type="string"></igc-column>
+    <igc-column id="HasGrammyAward" field="HasGrammyAward" filterable='true' data-type="boolean"></igc-column>
 </igc-hierarchical-grid>
 ```
 ```ts
 constructor() {
-    var artist = this.artist = document.getElementById('Artist') as IgcColumnComponent;
-    var hasGrammyAward = this.hasGrammyAward = document.getElementById('HasGrammyAward') as IgcColumnComponent;
-
-    this._bind = () => {
-        artist.bodyTemplate = this.caseSensitiveFilteringOperand;
-        hasGrammyAward.bodyTemplate = this.booleanFilteringOperand;
-    }
-    this._bind();
+    var artist = document.getElementById('Artist') as IgcColumnComponent;
+    var hasGrammyAward = document.getElementById('HasGrammyAward') as IgcColumnComponent;
+    artist.filters = this.caseSensitiveFilteringOperand;
+    hasGrammyAward.filters = this.booleanFilteringOperand;
 }
 ```
 
@@ -622,6 +615,9 @@ constructor() {
 
 <!-- end: Angular -->
 
+
+<!-- Angular -->
+
 <!-- ComponentStart: TreeGrid -->
 
 ## マッチング レコードのみのフィルタリング方式
@@ -641,27 +637,28 @@ public matchingRecordsOnlyStrategy = new TreeGridMatchingRecordsOnlyFilteringStr
 
 <!-- ComponentEnd: TreeGrid -->
 
+<!-- end: Angular -->
 
 <!-- WebComponents, Blazor, React -->
 
 ## スタイル設定
 
-定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming-grid.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
 一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
 <!-- WebComponents -->
-```ts
-<igc-grid class="grid">
+```html
+<{ComponentSelector} class="grid"></{ComponentSelector}>
 ```
 <!-- end: WebComponents -->
 
 ```razor
-<IgbGrid Class="grid"></IgbGrid>
+<{ComponentSelector} Class="grid"></{ComponentSelector}>
 ```
 
 <!-- React -->
 ```tsx
-<IgrGrid className="grid"></IgrGrid>
+<{ComponentSelector} className="grid"></{ComponentSelector}>
 ```
 <!-- end: React -->
 
@@ -808,7 +805,7 @@ $dark-button: button-theme(
 
 テーマ エンジンを使用して[スキーマ](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
 
-すべてのコンポーネントに提供されている定義済みスキーマ (この場合は (`light-grid`、`light-input-group` および `light-button` スキーマ) の 1 つを拡張します。
+すべてのコンポーネントに提供されている定義済みスキーマ (この場合は `light-grid`、`light-input-group` および `light-button` スキーマ) の 1 つを拡張します。
 
 ```scss
 // Extending the light grid schema
@@ -939,7 +936,7 @@ $custom-input-group: input-group-theme(
 
 ## その他のリソース
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [ソート](sorting.md)
@@ -948,7 +945,7 @@ $custom-input-group: input-group-theme(
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

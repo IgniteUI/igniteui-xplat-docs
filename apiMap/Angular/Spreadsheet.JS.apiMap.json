@@ -651,6 +651,7 @@
       {"names":[{"platform": "Angular", "mappedType": "CellFill","mappedName": "fill"}], "originalName": "Fill"},
       {"names":[{"platform": "Angular", "mappedType": "IWorkbookFont","mappedName": "font"}], "originalName": "Font"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "formatString"}], "originalName": "FormatString"},
+      {"names":[{"platform": "Angular", "mappedType": "Nullable","mappedName": "hidden"}], "originalName": "Hidden"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "indent"}], "originalName": "Indent"},
       {"names":[{"platform": "Angular", "mappedType": "Nullable","mappedName": "locked"}], "originalName": "Locked"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "rotation"}], "originalName": "Rotation"},

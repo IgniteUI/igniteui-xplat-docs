@@ -21,6 +21,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "ControlDisplayDensity","mappedName": "density"}], "originalName": "Density"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "deselectAll"}], "originalName": "DeselectAll"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "filterPlaceholderText"}], "originalName": "FilterPlaceholderText"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getDesiredSize"}], "originalName": "GetDesiredSize"},
       {"names":[{"platform": "WebComponents", "mappedType": "CheckboxListIndexType","mappedName": "indexType"}], "originalName": "IndexType"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "isEverythingSelected"}], "originalName": "IsEverythingSelected"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "isNothingSelected"}], "originalName": "IsNothingSelected"},
@@ -33,6 +34,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "primaryKey"}], "originalName": "PrimaryKey"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "removeKeyValue"}], "originalName": "RemoveKeyValue"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "rowHeight"}], "originalName": "RowHeight"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "rowHoverBackgroundColor"}], "originalName": "RowHoverBackgroundColor"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "scrollbarBackground"}], "originalName": "ScrollbarBackground"},
       {"names":[{"platform": "WebComponents", "mappedType": "ScrollbarStyle","mappedName": "scrollbarStyle"}], "originalName": "ScrollbarStyle"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "searchBackgroundColor"}], "originalName": "SearchBackgroundColor"},
@@ -55,7 +57,8 @@
     "names":[{"platform": "WebComponents","fileName": "igc-checked-changed-event-args.ts","mappedName": "IgcCheckedChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"},
-      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isChecked"}], "originalName": "IsChecked"} ]
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isChecked"}], "originalName": "IsChecked"},
+      {"names":[{"platform": "WebComponents", "mappedType": "any[]",   "mappedName": "primaryKey"}], "originalName": "PrimaryKey"} ]
   },
   {
     "originalName": "SelectAllCheckboxChangedEventArgs",

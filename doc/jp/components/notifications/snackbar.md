@@ -2,7 +2,7 @@
 title: {Platform} Snackbar | インフラジスティックス
 _description: {ProductName} Snackbar コンポーネントを使用すると、開発者はモバイルおよびデスクトップ アプリケーション内に簡潔な 1 行のメッセージを簡単に統合できます。
 _keywords: {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, {Platform}, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Snackbar コンポーネント
-mentionedTypes: ['Snackbar']
+mentionedTypes: ["Snackbar"]
 _language: ja
 ---
 
@@ -72,6 +72,8 @@ import { defineComponents, IgcSnackbarComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcSnackbarComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 Snackbar コンポーネントを表示する最も簡単な方法は、`Show` メソッドを使用して、ボタン クリックで呼び出すことです。
 

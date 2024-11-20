@@ -2,18 +2,17 @@
 title: {Platform} Button Component | {ProductName}
 _description: Get started with the {Platform} Button Component. Select button variants, configure sizes, define styling, and gain flexibility through the {Platform} Button OnClick event.
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Button Components, Infragistics
-mentionedTypes: ['Button', 'ButtonBase']
+mentionedTypes: ["Button", "ButtonBase"]
 ---
 
 # {Platform} Button Overview
 
-The {Platform} Button Component lets you enable clickable elements that trigger actions in your {Platform} app. You get full control over how you set button variants, configure styles for the wrapped element, and define sizes. The Button Component also gives flexibility through the {Platform} Button OnClick event, toggle the {Platform} button, disable the {Platform} button, and more.
+The {Platform} Button Component lets you enable clickable elements that trigger actions in your {Platform} app. You get full control over how you set button variants, configure styles for the wrapped element, and define sizes. The Button Component also gives flexibility through the {Platform} Button <!-- WebComponents, Blazor -->OnClick event<!-- end: WebComponents, Blazor --><!-- React -->clicked callback<!-- end: React -->, toggle the {Platform} button, disable the {Platform} button, and more.
+
 
 ## {Platform} Button Example
 
 `sample="/inputs/button/overview", height="100", alt="{Platform} Button Example"`
-
-
 
 ## Usage
 
@@ -32,6 +31,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcButtonComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -70,12 +72,12 @@ You will also need to link an additional CSS file to apply the styling to the `B
 
 The simplest way to start using the `Button` is as follows:
 
-```tsx
-<IgrButton />
-```
-
 ```html
 <igc-button>Click me</igc-button>
+```
+
+```tsx
+<IgrButton />
 ```
 
 ```razor
