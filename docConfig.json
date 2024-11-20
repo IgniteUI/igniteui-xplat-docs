@@ -555,6 +555,7 @@
             { "name": "{PackageVerChanges-23-2-APR2}", "value": "23.2.204 (March 2024)"  },
             { "name": "{PackageVerChanges-24-1-JUN}", "value": "23.2.257 (June 2024)"  },
             { "name": "{PackageVerChanges-24-1-SEP}", "value": "24.1.46 (September 2024)"  },
+            { "name": "{PackageVerChanges-24-2-DEC}", "value": "24.2.XXXX (December 2024)" }, 
             { "name": "{PackageVerLatest}",          "value": "24.1.46"},
 
             { "name": "{RepoSamples}",   "value": "https://github.com/IgniteUI/igniteui-blazor-examples/tree/master/samples"},
