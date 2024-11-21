@@ -22,8 +22,8 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 <!-- WebComponents -->
 ```typescript
 public pivotConfigHierarchy: IgcPivotConfiguration = {
-    columnStrategy: NoopPivotDimensionsStrategy.instance(),
-    rowStrategy: NoopPivotDimensionsStrategy.instance(),
+    columnStrategy: IgcNoopPivotDimensionsStrategy.instance(),
+    rowStrategy: IgcNoopPivotDimensionsStrategy.instance(),
 }
 ```
 <!-- end: WebComponents -->

@@ -19,7 +19,7 @@ _language: ja
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-{Platform} {ComponentTitle} の {ProductName} 状態保持を使用すると、開発者はグリッドの状態を簡単に保存および復元できます。`GridState` が {Platform} `{ComponentName}` に適用されると、`GetStateAsString` および `ApplyStateFromString` メソッドが公開され、開発者はこれを使用して、あらゆるシナリオで状態の永続化を実現できます。
+{Platform} {ComponentTitle} の {ProductName} 状態保持を使用すると、開発者はグリッドの状態を簡単に保存および復元できます。`GridState` が {Platform} `{ComponentName}` に適用されると、`GetStateAsStringAsync` および `ApplyStateFromStringAsync` メソッドが公開され、開発者はこれを使用して、あらゆるシナリオで状態の永続化を実現できます。
 <!-- end: Blazor -->
 
 ## サポートされる機能
@@ -115,11 +115,17 @@ _language: ja
 `GetState` メソッドは、すべての状態情報を含むグリッドの状態を `GridStateInfo` オブジェクトで返します。保存するには追加の手順が必要になる場合があります。
 <!-- end: React, WebComponents -->
 
-<!-- Blazor, React, WebComponents -->
+<!-- React, WebComponents -->
 `GetStateAsString` は、シリアル化された JSON 文字列を返します。これは、開発者がそれを取得して任意のデータストレージ (データベース、クラウド、ブラウザーの localStorage など) に保存できます。
 
 開発者は、引数として機能名を含む配列を渡すことにより、特定の機能の状態のみを取得することを選択できます。空の配列では、デフォルトの状態オプションが使用されます。
-<!-- end: Blazor, React, WebComponents -->
+<!-- end: React, WebComponents -->
+
+<!-- Blazor -->
+`GetStateAsStringAsync` は、シリアル化された JSON 文字列を返します。これは、開発者がそれを取得して任意のデータストレージ (データベース、クラウド、ブラウザーの localStorage など) に保存できます。
+
+開発者は、引数として機能名を含む配列を渡すことにより、特定の機能の状態のみを取得することを選択できます。空の配列では、デフォルトの状態オプションが使用されます。
+<!-- end: Blazor -->
 
 <!-- Angular -->
 ```typescript
@@ -185,10 +191,10 @@ const sortingFilteringStates: IgrGridStateInfo = gridState.getState(['sorting', 
 
 @code {
     // get all features` state in a serialized JSON string
-    string stateString = gridState.GetStateAsString(new string[0]);
+    string stateString = gridState.GetStateAsStringAsync(new string[0]);
 
     // get the sorting and filtering expressions
-    string sortingFilteringStates = gridState.GetStateAsString(new string[] { "sorting", "filtering" });
+    string sortingFilteringStates = gridState.GetStateAsStringAsync(new string[] { "sorting", "filtering" });
 }
 ```
 
@@ -200,9 +206,13 @@ const sortingFilteringStates: IgrGridStateInfo = gridState.getState(['sorting', 
 `ApplyState` - このメソッドは引数として `GridStateInfo` オブジェクトを受け取り、オブジェクト内で見つかった各フィーチャまたは 2 番目の引数として指定されたフィーチャの状態を復元します。
 <!-- end: React, WebComponents -->
 
-<!-- Blazor, React, WebComponents -->
+<!-- React, WebComponents -->
 `ApplyStateFromString` - このメソッドはシリアル化された JSON 文字列を引数として受け取り、JSON 文字列内で見つかった各機能の状態、または 2 番目の引数として指定された機能を復元します。
-<!-- end: Blazor, React, WebComponents -->
+<!-- end: React, WebComponents -->
+
+<!-- Blazor -->
+`ApplyStateFromStringAsync` - このメソッドはシリアル化された JSON 文字列を引数として受け取り、JSON 文字列内で見つかった各機能の状態、または 2 番目の引数として指定された機能を復元します。
+<!-- end: Blazor -->
 
 <!-- Angular -->
 ```typescript
@@ -226,8 +236,8 @@ gridState.applyState(sortingFilteringStates, [])
 ```
 
 ```razor
-gridState.ApplyStateFromString(gridStateString, new string[0]);
-gridState.ApplyStateFromString(sortingFilteringStates, new string[0])
+gridState.ApplyStateFromStringAsync(gridStateString, new string[0]);
+gridState.ApplyStateFromStringAsync(sortingFilteringStates, new string[0])
 ```
 
 <!-- Angular -->
@@ -239,7 +249,7 @@ gridState.ApplyStateFromString(sortingFilteringStates, new string[0])
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-`Options` オブジェクトは、`GridStateOptions` インターフェースを実装します。特定の機能の名前であるキーには、この機能の状態を追跡するかどうかを示すブール値があります。`GetStateAsString` メソッドはこれらの機能の状態を戻り値に入れず、`ApplyStateFromString` メソッドはその状態を復元しません。
+`Options` オブジェクトは、`GridStateOptions` インターフェースを実装します。特定の機能の名前であるキーには、この機能の状態を追跡するかどうかを示すブール値があります。`GetStateAsStringAsync` メソッドはこれらの機能の状態を戻り値に入れず、`ApplyStateFromStringAsync` メソッドはその状態を復元しません。
 <!-- end: Blazor -->
 
 <!-- Angular -->
@@ -422,14 +432,14 @@ function restoreGridState() {
     }
 
     async void SaveGridState() {
-        string state = gridState.getStateAsString(new string[0]);
+        string state = gridState.GetStateAsStringAsync(new string[0]);
         await JS.InvokeVoidAsync("window.localStorage.setItem", "grid-state", state);
     }
 
     async void RestoreGridState() {
         string state = await JS.InvokeAsync<string>("window.localStorage.getItem", "grid-state");
         if (state) {
-            gridState.ApplyStateFromString(state, new string[0]);
+            gridState.ApplyStateFromStringAsync(state, new string[0]);
         }
     }
 }
@@ -954,7 +964,7 @@ this.state.applyState(state, ['filtering', 'rowIslands']);
 <!-- Blazor -->
 `GetState` API は、`Selection` と `Sorting` を除くすべてのグリッド (ルート グリッドと子グリッド) 機能の状態を返します。開発者が後ですべてのグリッドの `Filtering` 状態のみを復元するには、以下を使用します。
 ```razor
-gridState.ApplyStateFromString(gridStateString, new string[] { "filtering", "rowIslands" });
+gridState.ApplyStateFromStringAsync(gridStateString, new string[] { "filtering", "rowIslands" });
 ```
 <!-- end: Blazor -->
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -1102,9 +1112,13 @@ state.applyState(gridState.columnSelection);
 * `GetState` メソッドは、JSON.stringify() メソッドを使用して、元のオブジェクトを JSON 文字列に変換します。JSON.stringify() が関数をサポートしないため、`GridState` ディレクティブは、columns `Formatter`、`Filters`、`Summaries`、`SortStrategy`、`CellClasses`、`CellStyles`、`HeaderTemplate` および `BodyTemplate` プロパティを無視します。
 <!-- end: Angular -->
 
-<!-- Blazor, React, WebComponents -->
+<!-- React, WebComponents -->
 * `GetStateAsString` メソッドは、JSON.stringify() メソッドを使用して、元のオブジェクトを JSON 文字列に変換します。JSON.stringify() が関数をサポートしないため、`GridState` コンポーネントは、列の `Formatter`、`Filters`、`Summaries`、`SortStrategy`、`CellClasses`、`CellStyles`、`HeaderTemplate` および `BodyTemplate` プロパティを無視します。
-<!-- end: Blazor, React, WebComponents -->
+<!-- end: React, WebComponents -->
+
+<!-- Blazor -->
+* `GetStateAsString` メソッドは、JSON.stringify() メソッドを使用して、元のオブジェクトを JSON 文字列に変換します。JSON.stringify() が関数をサポートしないため、`GridState` コンポーネントは、列の `Formatter`、`Filters`、`Summaries`、`SortStrategy`、`CellClasses`、`CellStyles`、`HeaderTemplate` および `BodyTemplate` プロパティを無視します。
+<!-- end: Blazor -->
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
