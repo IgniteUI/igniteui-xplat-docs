@@ -637,7 +637,13 @@ return dataView.findIndex((rec, index) => index > currentRowIndex && this.isEdit
 
 ##### {Platform} Grid Excel スタイル編集のサンプル
 
+<!-- React -->
 `sample="/{ComponentSample}/editing-excel-style", height="550", alt="{Platform} {ComponentTitle} Excel Style スタイル編集の例"`
+<!-- end: React -->
+
+<!-- WebComponents, Blazor -->
+`sample="/{ComponentSample}/editing-excel-style-custom", height="550", alt="{Platform} {ComponentTitle} Excel スタイル編集の例"`
+<!-- end: WebComponents, Blazor -->
 
 上記のアプローチの主な利点は次のとおりです:
 
