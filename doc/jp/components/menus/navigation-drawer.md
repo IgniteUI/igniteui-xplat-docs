@@ -2,7 +2,7 @@
 title: {Platform} NavDrawer | インフラジスティックス
 _description: インフラジスティックスの {Platform} NavDrawer は、コンテンツ内で展開または縮小ことができるサイド ナビゲーションを提供します。
 _keywords: {Platform} navbar, {ProductName}, Infragistics, {Platform} ナビゲーション バー, インフラジスティックス
-mentionedTypes: ['NavDrawer']
+mentionedTypes: ["NavDrawer"]
 _language: ja
 ---
 
@@ -16,8 +16,6 @@ _language: ja
 このサンプルは、`NavDrawer` コンポーネントを作成する方法を示しています。
 
 `sample="/menus/nav-drawer/add-drawer-items", height="300", alt="{Platform} Navigation Drawer 項目の例"`
-
-
 
 ## 使用方法
 
@@ -77,6 +75,8 @@ import { defineComponents, IgcNavDrawerComponent } from 'igniteui-webcomponents'
 
 defineComponents(IgcNavDrawerComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 ## Navigation Drawer 項目の追加
 
@@ -428,6 +428,10 @@ public onMenuIconClick() {
         </IgrNavDrawerItem>
     </div>
 </IgrNavDrawer>
+
+<IgrButton clicked={this.onButtonClick}>
+    <span>Toggle</span>
+</IgrButton>
 ```
 
 以下は結果です:

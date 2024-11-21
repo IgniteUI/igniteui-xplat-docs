@@ -52,7 +52,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 * [Calendar](scheduling/calendar.md)
 * [Card](layouts/card.md)
 * [Checkbox](inputs/checkbox.md)
-* [Form](inputs/form.md)
+* Form
 * [Icon](layouts/icon.md)
 * [List](grids/list.md)
 * [Navbar](menus/navbar.md)
@@ -73,7 +73,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 * [Button & Icon Button](inputs/button.md)
 * [Card](layouts/card.md)
 * [Checkbox](inputs/checkbox.md)
-* [Form](inputs/form.md)
+* Form
 * [Icon](layouts/icon.md)
 * [List](grids/list.md)
 * [Navbar](menus/navbar.md)
@@ -143,7 +143,7 @@ This release introduces a few improvements and simplifications to visual design 
 
 ### Charts & Maps
 
-This release introduces several new and improved visual design and configuration options for all of the chart components, e.g. `DataChart`, `CategoryChart`, and `FinancialChart`.
+This release introduces several new and improved visual design and configuration options for all of the chart components, e.g. `XamDataChart`, `CategoryChart`, and `FinancialChart`.
 
 * Changed Bar/Column/Waterfall series to have square corners instead of rounded corners
 * Changed Scatter High Density series’ colors for heat min property from <span style="color:#8a5bb1">#8a5bb1</span> to <span style="color:#000000">#000000</span>

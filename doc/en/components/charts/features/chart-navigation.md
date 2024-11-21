@@ -23,7 +23,7 @@ Like this sample? Get access to our complete {Platform} toolkit and start buildi
 
 ## Chart Navigation with User Interactions
 
-Zooming is on by default on the chart. In order to disable navigation in the UI, you need to set either the `IsHorizontalZoomEnabled` and/or the `IsVerticalZoomEnabled` properties of the chart to false, depending on the direction that you wish to disable zooming.
+Whether or not zooming is on by default depends on the chart you are using. If you are using `CategoryChart`, it is on by default, but it is not in the `XamDataChart`. In order to enable or disable navigation in the UI, you need to set either the `IsHorizontalZoomEnabled` and/or the `IsVerticalZoomEnabled` properties of the chart, depending on the direction that you wish to enable or disable zooming.
 
 It is also possible to zoom or pan simply by clicking the mouse or using touch. The `DefaultInteraction` property of the data chart determines what happens on mouse click or touch events. This property defaults to `DragZoom` and when set to this with zooming enabled, clicking and dragging will place a preview rectangle over the plot area that will become the zoomed area of the chart. This `DefaultInteraction` property can also be set to either `DragPan` to allow panning or `None` to prevent these operations.
 

@@ -17,6 +17,7 @@
       {"names":[{"platform": "React", "mappedType": "CategoryTransitionInMode","mappedName": "AccordionFromValueAxisMinimum"}], "originalName": "AccordionFromValueAxisMinimum"},
       {"names":[{"platform": "React", "mappedType": "CategoryTransitionInMode","mappedName": "Auto"}], "originalName": "Auto"},
       {"names":[{"platform": "React", "mappedType": "CategoryTransitionInMode","mappedName": "Expand"}], "originalName": "Expand"},
+      {"names":[{"platform": "React", "mappedType": "CategoryTransitionInMode","mappedName": "FromParent"}], "originalName": "FromParent"},
       {"names":[{"platform": "React", "mappedType": "CategoryTransitionInMode","mappedName": "FromZero"}], "originalName": "FromZero"},
       {"names":[{"platform": "React", "mappedType": "CategoryTransitionInMode","mappedName": "SweepFromBottom"}], "originalName": "SweepFromBottom"},
       {"names":[{"platform": "React", "mappedType": "CategoryTransitionInMode","mappedName": "SweepFromCategoryAxisMaximum"}], "originalName": "SweepFromCategoryAxisMaximum"},

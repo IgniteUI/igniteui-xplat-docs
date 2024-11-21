@@ -12,14 +12,14 @@ _language: ja
 
 {Platform} {ComponentTitle} は、デフォルトおよび編集テンプレートの外観に基づいて、number (数値)、string (文字列)、date (日付)、boolean (ブール値)、currency (通貨) および percent (パーセント) 列のデータ型のデフォルト処理を提供します。
 
-<!-- ComponentStart: Grid -->
+<!-- ComponentStart: Grid, TreeGrid -->
 
 ## {Platform} {ComponentTitle} 列タイプの例
 
-`sample="/{ComponentSample}/column-data-types", height="550", alt="{Platform} {ComponentTitle} column data types"`
+`sample="/{ComponentSample}/column-data-types", height="550", alt="{Platform} {ComponentTitle} 列のデータ タイプ"`
 
 
-<!-- ComponentEnd: Grid -->
+<!-- ComponentEnd: Grid, TreeGrid -->
 
 ## {Platform} {ComponentTitle} デフォルト テンプレート
 
@@ -27,7 +27,7 @@ _language: ja
 
 次に、各 `DataType` のデフォルト テンプレートについて説明します。
 
-### 文字列
+### String (文字列)
 
 この列 `DataType` はセル値の外観または書式を変更しません。
 
@@ -68,19 +68,14 @@ public formatOptions = this.options;
 ```
 
 ```ts
-private _formatOptions: any | null = null;
-    public get formatOptions(): any {
-        if (this._formatOptions == null)
-        {
-            var columnPipeArgs: any = {};
-            columnPipeArgs.digitsInfo = "1.4-4";
-            this._formatOptions = columnPipeArgs;
-        }
-        return this._formatOptions;
-    }
+public get formatOptions(): any {
+  return {
+    digitsInfo: "1.4-4"
+  };
+}
 
 constructor() {
-    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+    var column = document.getElementById('column') as IgcColumnComponent;
     column.pipeArgs = this.formatOptions;
 }
 ```
@@ -139,20 +134,15 @@ public formatOptions = this.options;
 ```
 
 ```ts
-private _formatDateOptions: any | null = null;
-    public get formatDateOptions(): any {
-        if (this._formatDateOptions == null)
-        {
-            var columnPipeArgs: any = {};
-            columnPipeArgs2.format = "long";
-            columnPipeArgs2.timezone = "UTC+0";
-            this._formatDateOptions = columnPipeArgs;
-        }
-        return this._formatDateOptions;
-    }
+public get formatDateOptions(): any {
+    return {
+        format: "long",
+        timezone: "UTC+0"
+    };
+}
 
 constructor() {
-    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+    var column = document.getElementById('column') as IgcColumnComponent;
     column.pipeArgs = this.formatDateOptions;
 }
 ```
@@ -242,7 +232,7 @@ const timeFormats = [
 - `Date`: タイプの列は、日付部分に基づいてソートされ、時間部分は無視されます。
 - `DateTime`: タイプの列は、日付に基づいてソートされます。
 
-### Boolean
+### Boolean (ブール値)
 
 デフォルトのテンプレートは、ブール値の可視化にマテリアル アイコンを使用します。*false* 値には 'clear' アイコン、*true* 値には 'check' アイコンを使用します。編集テンプレートは `Checkbox` コンポーネントを使用しています。
 
@@ -264,37 +254,35 @@ const timeFormats = [
 <IgrColumn dataType="boolean"></IgrColumn>
 ```
 
-### 画像
+### Image (画像)
 
 デフォルトのテンプレートは、デフォルの画像テンプレートへの画像ソースとしてデータからの値を使用しています。デフォルトの画像テンプレートは、画像ファイルの名前を抽出し、アクセシビリティ要件を満たすために画像の `alt` 属性として設定します。表示されるセル サイズは描画される画像のサイズに合わせて調整されるため、大きな画像も描画され、グリッド行は画像列の画像と同じ大きさになることに注意してください。画像タイプの列では、フィルタリング、ソート、およびグループ化はデフォルトでオフになっています。それらを有効にしたい場合は、データ操作を実行するカスタム ストラテジを提供する必要があります。
 
+<!-- Angular -->
 ```html
 <igx-grid>
     <igx-column [dataType]="'image'">
     </igx-column>
 <igx-grid>
 ```
-
-```html
-<igc-grid id="grid1" auto-generate="false">
-    <igc-column field="Image" data-type="image">
-    </igc-column>
-</igc-grid>
-```
+<!-- end: Angular -->
 
 ```razor
 <IgbColumn DataType="GridColumnDataType.Image"></IgbColumn>
 ```
 
-```tsx
-<IgrGrid>
-    <IgrColumn field="Image" dataType="Image"></IgrColumn>
-</IgrGrid>
+```html
+<igc-column field="Image" data-type="image">
+</igc-column>
 ```
 
-列に `AutoGenerate` を使用すると、グリッドは最初のデータ レコードの値を分析します。値が文字列型で、画像拡張子 (gif、jpg、jpeg、tiff、png、webp、bmp) で終わる URL のパターンと一致する場合、列は自動的に `dataType === GridColumnDataType.Image` としてマークされ、 デフォルトの画像テンプレートが描画されます。
+```tsx
+<IgrColumn field="Image" dataType="image"></IgrColumn>
+```
 
-### 通貨
+列に `AutoGenerate` を使用すると、グリッドは最初のデータ レコードの値を分析します。値が文字列型で、画像拡張子 (gif、jpg、jpeg、tiff、png、webp、bmp) で終わる URL のパターンと一致する場合、列は自動的に `dataType === GridColumnDataType.Image` としてマークされ、デフォルトの画像テンプレートが描画されます。
+
+### Currency (通貨)
 
 #### デフォルトのテンプレート
 
@@ -363,26 +351,20 @@ public formatOptions = this.options;
 ```
 
 ```html
-<igc-column id="column" field="UnitsInStock"
-    data-type="currency">
+<igc-column id="column" field="UnitsInStock" data-type="currency">
 </igc-column>
 ```
 
 ```ts
-private _formatOptions: any | null = null;
-    public get formatOptions(): any {
-        if (this._formatOptions == null)
-        {
-            var columnPipeArgs: any = {};
-            columnPipeArgs.digitsInfo = "1.4-4";
-            columnPipeArgs.display = "symbol-narrow";
-            this._formatOptions = columnPipeArgs;
-        }
-        return this._formatOptions;
-    }
+public get formatOptions(): any {
+    return {
+        digitsInfo: '3.4-4',
+        display: 'symbol-narrow'
+    };
+}
 
 constructor() {
-    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+    var column = document.getElementById('column') as IgcColumnComponent;
     column.pipeArgs = this.formatOptions;
 }
 ```
@@ -405,8 +387,9 @@ formatOptions.display = "symbol-narrow";
 
 *display - デフォルトの en-US ロケールの場合、USD コードは省略記号 $ または記号 US$ で表すことができます。
 
-<!-- ComponentStart:  Grid -->
-セルの値を編集すると、**通貨記号**がサフィックスまたはプレフィックスとして表示されます。詳細については、公式の[セル編集トピック](cell-editing.md#セル編集と編集テンプレートの例)を参照してください。<!-- ComponentEnd:  Grid -->
+<!-- ComponentStart: Grid -->
+セルの値を編集すると、**通貨記号**がサフィックスまたはプレフィックスとして表示されます。詳細については、公式の[セル編集トピック](cell-editing.md#セル編集と編集テンプレートの例)を参照してください。
+<!-- ComponentEnd: Grid -->
 
 > 注: 上/下矢印キーを使用する場合、値は digitsInfo - minFractionDigits (小数点以下の最小桁数。デフォルトは 0 です。) に基づいてステップで増減します。
 
@@ -461,30 +444,38 @@ public formatPercentOptions = this.options;
 ```
 
 ```html
-<igc-column id="column" field="UnitsInStock"
-    data-type="percent">
+<igc-column id="column" field="UnitsInStock" data-type="percent">
 </igc-column>
 ```
 
 ```ts
-private _formatPercentOptions: any | null = null;
-    public get formatPercentOptions(): any {
-        if (this._formatPercentOptions == null)
-        {
-            var columnPipeArgs: any = {};
-            columnPipeArgs.digitsInfo = "2.2-3";
-            this._formatPercentOptions = columnPipeArgs;
-        }
-        return this._formatPercentOptions;
-    }
+public get formatPercentOptions(): any {
+    return {
+        /**
+        * Decimal representation options, specified by a string in the following format:
+        * `{minIntegerDigits}`.`{minFractionDigits}`-`{maxFractionDigits}`.
+        * `minIntegerDigits`: The minimum number of integer digits before the decimal point. Default is 1.
+        * `minFractionDigits`: The minimum number of digits after the decimal point. Default is 0.
+        * `maxFractionDigits`: The maximum number of digits after the decimal point. Default is 3.
+        */
+        digitsInfo: '2.2-3'
+    };
+}
 
 constructor() {
-    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+    var column = document.getElementById('column') as IgcColumnComponent;
     column.pipeArgs = this.formatPercentOptions;
 }
 ```
 
 ```tsx
+/**
+* Decimal representation options, specified by a string in the following format:
+* `{minIntegerDigits}`.`{minFractionDigits}`-`{maxFractionDigits}`.
+* `minIntegerDigits`: The minimum number of integer digits before the decimal point. Default is 1.
+* `minFractionDigits`: The minimum number of digits after the decimal point. Default is 0.
+* `maxFractionDigits`: The maximum number of digits after the decimal point. Default is 3.
+*/
 const formatOptions = new IgrColumnPipeArgs();
 formatOptions.digitsInfo = "2.2-3";
 
@@ -496,36 +487,35 @@ formatOptions.digitsInfo = "2.2-3";
 
 ## デフォルトの編集テンプレート
 
-<!-- ComponentStart:  Grid -->
 [{ComponentTitle} 編集トピック](editing.md#テンプレートの編集)の編集テンプレート部分を参照してください。
-<!-- ComponentEnd:  Grid -->
 
 ## カスタム編集テンプレートとフォーマッタ
 
 カスタム テンプレートと列フォーマッタの定義は、列データ型セットより常に優先されます。
 
 ### カスタム テンプレート
-
+<!-- Angular -->
 ```html
-<igx-grid #grid1 [data]="data | async" [autoGenerate]="false">
+<{ComponentSelector} #grid1 [data]="data | async" [autoGenerate]="false">
     <igx-column [field]="'UnitsInStock'" [dataType]="'currency'" [pipeArgs]="formatOptions" [editable]="true">
         <ng-template igxCellEditor let-value>
             {{ value | currency:'USD':'symbol':'1.0-0'}}
         </ng-template>
     </igx-column>
-</igx-grid>
+</{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```html
-<igc-grid id="grid1" auto-generate="false">
+<{ComponentSelector} id="grid1" auto-generate="false">
     <igc-column id="UnitsInStock" field="UnitsInStock" data-type="currency" editable="true">
     </igc-column>
-</igc-grid>
+</{ComponentSelector}>
 ```
 
 ```ts
 constructor() {
-    var unitsInStock = this.unitsInStock = document.getElementById('UnitsInStock') as IgcColumnComponent;
+    var unitsInStock = document.getElementById('UnitsInStock') as IgcColumnComponent;
     unitsInStock.inlineEditorTemplate = this.editCellTemplate;
 }
 
@@ -535,7 +525,7 @@ public editCellTemplate = (ctx: IgcCellTemplateContext) => {
 ```
 
 ```tsx
-function editCellTemplate(ctx: IgrCellTemplateContext) {
+function editCellTemplate(ctx: { dataContext: IgrCellTemplateContext }) {
     return (
         <>
             <input></input>
@@ -543,15 +533,15 @@ function editCellTemplate(ctx: IgrCellTemplateContext) {
     );
 }
 
-<IgrGrid autoGenerate="false">
+<{ComponentSelector} autoGenerate="false">
     <IgrColumn inlineEditorTemplate={editCellTemplate}></IgrColumn>
-</IgrGrid>
+</{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid>
+<{ComponentSelector}>
  <IgbColumn InlineEditorTemplate="EditTemplate"></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 @code {
     public RenderFragment<IgbCellTemplateContext> EditTemplate = (ctx) =>
     {
@@ -564,10 +554,10 @@ function editCellTemplate(ctx: IgrCellTemplateContext) {
 ### 列の書式設定
 
 ```html
-<igc-grid id="grid1" auto-generate="false">
+<{ComponentSelector} id="grid1" auto-generate="false">
     <igc-column id="UnitsInStock" field="UnitsInStock" data-type="currency">
     </igc-column>
-</igc-grid>
+</{ComponentSelector}>
 ```
 
 ```ts
@@ -586,15 +576,15 @@ function formatCurrency(value: number) {
     return `$ ${value.toFixed(0)}`;
 }
 
-<IgrGrid autoGenerate="false">
+<{ComponentSelector} autoGenerate="false">
     <IgrColumn formatter={formatCurrency} field="UnitsInStock"></IgrColumn>
-</IgrGrid>
+</{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid>
+<{ComponentSelector}>
  <IgbColumn FormatterScript="CurrencyFormatter"></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 
 //In Javascript
 igRegisterScript("CurrencyFormatter", (value) => {
@@ -631,10 +621,7 @@ public init(column: IgxColumnComponent) {
 * `DataType`
 
 ## その他のリソース
-<!-- ComponentStart:  Grid -->
+
 カスタム テンプレートについては、[セル編集トピック](cell-editing.md#セル編集テンプレート)を参照してください。
-
-
 * [編集](editing.md)
 * [集計](summaries.md)
-<!-- ComponentEnd:  Grid -->

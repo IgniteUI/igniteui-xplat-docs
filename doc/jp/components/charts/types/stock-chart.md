@@ -2,7 +2,7 @@
 title: {Platform} 株価/ファイナンシャル チャート | {ProductName}
 _description: {ProductName} 株価チャートは、インタラクティブな時系列表示で株価ティッカー データまたは価格データを描画する複合視覚化です。無料でお試しください。
 _keywords: {Platform} Charts, Stock Chart, Financial Chart, Candlestick Chart, OHLC Chart, Infragistics, {Platform} チャート, 株価チャート, ファイナンシャル チャート, ローソク足チャート, OHLC チャート, インフラジスティックス
-mentionedTypes: ["DomainChart", "FinancialChart", "FinancialChartType", "IndicatorTypes", "ZoomSliderType", 'Series']
+mentionedTypes: ["DomainChart", "FinancialChart", "FinancialChartType", "IndicatorTypes", "ZoomSliderType", "Series", "FinancialChartType"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -12,7 +12,7 @@ _language: ja
 
 ## {Platform} 株価チャートの例
 
-`FinancialChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` 値に設定します。
+`FinancialChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`FinancialChart.ChartType` プロパティを `Line` 値に設定します。
 
 `sample="/charts/financial-chart/multiple-data", height="600", alt="{Platform} 株価チャートの例"`
 
@@ -128,7 +128,7 @@ _language: ja
 ### ズーム ペイン
 このペインはすべての表示されるペインのズームを制御します。このペインはデフォルトで表示されます。以下のコードのように `ZoomSliderType` を `none` に設定すると機能を無効にできます:
 
-注: `ZoomSliderType` オプションを `ChartType` オプションと同じ値に設定してください。このように、ズーム スライダーは価格ペインの正しいプレビューを表示します。以下のコードはその方法を示しています。
+注: `ZoomSliderType` オプションを `FinancialChart.ChartType` オプションと同じ値に設定してください。このように、ズーム スライダーは価格ペインの正しいプレビューを表示します。以下のコードはその方法を示しています。
 
 この例では、株価チャートは米国の収益をプロットしています。
 
@@ -152,7 +152,7 @@ _language: ja
 
 以下は、上記のセクションで説明した API メンバーのリストです。
 
-- `ChartType`
+- `FinancialChart.ChartType`
 - `CrosshairsSnapToData`
 - `ItemsSource`
 - `FinancialChart`

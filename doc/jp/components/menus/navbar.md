@@ -2,7 +2,7 @@
 title: {Platform} Navbar | インフラジスティックス
 _description: インフラジスティックスの {Platform} ナビゲーション バーは、シームレスな統合により最適な UI エクスペリエンスを提供し、ユーザーがアプリケーション内をスムーズに移動できるようにします。{ProductName} を使用してアプリケーションを改善します。
 _keywords: {Platform} navbar, {ProductName}, Infragistics, {Platform} ナビゲーション バー, インフラジスティックス
-mentionedTypes: ['Navbar']
+mentionedTypes: ["Navbar"]
 _language: ja
 ---
 
@@ -16,8 +16,6 @@ _language: ja
 次の例は、アイコンとテキスト ヘッダーのある `Navbar` を表しています:
 
 `sample="/menus/nav-bar/overview", height="100", alt="{Platform} Navbar 概要の例"`
-
-
 
 ## 使用方法
 
@@ -43,6 +41,8 @@ import { defineComponents, IgcNavbarComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcNavbarComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 <!-- Blazor -->
 

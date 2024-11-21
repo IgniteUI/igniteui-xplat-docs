@@ -2,7 +2,7 @@
 title: {Platform} Snackbar | Infragistics
 _description: With {ProductName} Snackbar component, developers can easily integrate a brief, single-line message within mobile and desktop applications.
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Snackbar components
-mentionedTypes: ['Snackbar']
+mentionedTypes: ["Snackbar"]
 ---
 
 # {Platform} Snackbar
@@ -71,6 +71,8 @@ import { defineComponents, IgcSnackbarComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcSnackbarComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 The simplest way to display the snackbar component is to use its `Show` method and call it on a button click.
 

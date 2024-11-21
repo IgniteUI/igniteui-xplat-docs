@@ -2,7 +2,7 @@
 title: {Platform} Icon Button Component
 _description: Developers can utilize and use various icons interchangeably as buttons with custom colors and more with {ProductName} Icon Button component.
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Icon Button components, {Platform} Icon Button controls
-mentionedTypes: ['IconButton', 'ButtonBase', 'Button', 'Icon']
+mentionedTypes: ["IconButton", "ButtonBase", "Button", "Icon"]
 ---
 
 # {Platform} Icon Button Overview
@@ -33,6 +33,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcIconButtonComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -70,12 +73,12 @@ You will also need to link an additional CSS file to apply the styling to the `I
 <!-- end: Blazor -->
 The simplest way to start using the `IconButton` is as follows:
 
-```tsx
-<IgrIconButton name="thumb-up" collection="material"></IgrIconButton>
-```
-
 ```html
 <igc-icon-button name="thumb-up" collection="material"></igc-icon-button>
+```
+
+```tsx
+<IgrIconButton name="thumb-up" collection="material"></IgrIconButton>
 ```
 
 ```razor

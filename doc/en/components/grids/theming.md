@@ -2,12 +2,12 @@
 title: {Platform} Grid theming | Real-Time {Platform} Tables | The Lightweight {Platform} Web Components table | Infragistics
 _description: .
 _keywords: {Platform} data grid, infragistics, data grids theming, theming, {ProductName}, table
-mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid']
+mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid"]
 namespace: Infragistics.Controls
 ---
 
 # Theme {Platform} Data Grid
-Our {Platform} grid can be easily customized to match your brand identity
+With the {Platform} Theming engine, the {ProductName} Grid can be easily customized to match your brand identity.
 In addition to predefined themes and palettes, you can further customize the look and feel of your data grid by using a set of CSS custom properties.
 
 ### Available theming properties

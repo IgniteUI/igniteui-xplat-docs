@@ -2,7 +2,7 @@
 title: {Platform} MaskInput | Infragistics
 _description: Infragistics' {Platform} MaskInput allows the user to control input and format the visible value based on configurable mask rules
 _keywords: {Platform} input, {ProductName}, Infragistics
-mentionedTypes: ['MaskInput']
+mentionedTypes: ["MaskInput"]
 ---
 
 ## {Platform} Mask Input Overview
@@ -12,8 +12,6 @@ The {ProductName} Mask Input is an input field that allows the developer to cont
 ### {Platform} Mask Input Example
 
 `sample="/inputs/mask-input/overview", height="150", alt="{Platform} Mask Input Overview Example"`
-
-
 
 ## Usage
 
@@ -33,6 +31,32 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcMaskInputComponent);
 ```
+
+<!-- React -->
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `MaskInput`, its necessary CSS, and register its module, like so:
+```tsx
+import { IgrMaskInput, IgrMaskInputModule } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrMaskInputModule.register();
+```
+<!-- end: React -->
+
+```tsx
+<IgrMaskInput mask="00000">
+    <span slot="prefix">
+        <IgrIcon ref={this.iconLocationRef} name="location" collection="material"></IgrIcon>
+    </span>
+    <span slot="helper-text">ZIP Code</span>
+</IgrMaskInput>
+```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 ### Mask Rules
 The table bellow shows the supported built-in mask rules:
@@ -65,6 +89,15 @@ In the example below, we will apply a mask for a phone number with an extension 
 </igc-mask-input>
 ```
 
+```tsx
+<IgrMaskInput mask="(####) 00-00-00 Ext. 9999">
+    <span slot="prefix">
+        <IgrIcon ref={this.iconPhoneRef} name="phone" collection="material"></IgrIcon>
+    </span>
+    <span slot="helper-text">Phone number</span>
+</IgrMaskInput>
+```
+
 After that you should see the following in your browser:
 
 `sample="/inputs/mask-input/applying-mask", height="150", alt="{Platform} Mask Input Applying Mask Example"`
@@ -79,6 +112,10 @@ Developers can customize the prompt symbol used for unfilled parts of the mask. 
 <igc-mask-input id="mask-input" mask="(####) 00-00-00 Ext. 9999" prompt="-"></igc-mask-input>
 ```
 
+```tsx
+<IgrMaskInput mask="(####) 00-00-00 Ext. 9999" prompt="-"></IgrMaskInput>
+```
+
 By default, the `prompt` character is *underscore*.
 
 ### Placeholder
@@ -87,6 +124,10 @@ Developers can also take advantage of the `placeholder` property, which serves t
 
 ```html
 <igc-mask-input id="mask-input" mask="00/00/0000" placeholder="dd/MM/yyyy"></igc-mask-input>
+```
+
+```tsx
+<IgrMaskInput mask="00/00/0000" placeholder="dd/MM/yyyy"></IgrMaskInput>
 ```
 
 ### Value Modes

@@ -2,7 +2,7 @@
 title: {Platform} Badge | Infragistics
 _description: Infragistics' {Platform} Badge component allows you to display content in a predefined style to decorate other components anywhere in an application.
 _keywords: {Platform}, UI controls, web widgets, UI widgets, Web Components, {Platform} Badge Components, Infragistics
-mentionedTypes: ['Badge']
+mentionedTypes: ["Badge"]
 ---
 
 # {Platform} Badge Overview
@@ -13,8 +13,6 @@ The {ProductName} Badge is a component used in conjunction with avatars, navigat
 
 `sample="/inputs/badge/outlined", height="60", alt="{Platform} Badge Example"`
 
-
-
 <div class="divider"></div>
 
 ## Usage
@@ -22,11 +20,11 @@ The {ProductName} Badge is a component used in conjunction with avatars, navigat
 <!-- WebComponents -->
 First, you need to install the {ProductName} by running the following command:
 
-You will then need to import the `Badge`, its necessary CSS, and register its module, like so:
-
 ```cmd
 npm install {PackageWebComponents}
 ```
+
+You will then need to import the `Badge`, its necessary CSS, and register its module, like so:
 
 ```ts
 import { defineComponents, IgcBadgeComponent } from "igniteui-webcomponents";
@@ -34,6 +32,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcBadgeComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -72,12 +73,12 @@ You will also need to link an additional CSS file to apply the styling to the `B
 
 The simplest way to start using the `Badge` is as follows:
 
-```tsx
-<IgrBadge />
-```
-
 ```html
 <igc-badge></igc-badge>
+```
+
+```tsx
+<IgrBadge />
 ```
 
 ```razor

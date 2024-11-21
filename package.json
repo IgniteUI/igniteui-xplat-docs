@@ -47,7 +47,7 @@
   },
   "keywords": [],
   "author": "infragistics",
-  "repository": "http://tfs.infragistics.local:8080/tfs/Engineering/IgInternalApplicationsGit/_git/xplat-docfx",
+  "repository": "https://github.com/IgniteUI/igniteui-xplat-docs",
   "license": "ISC",
   "dependencies": {
     "es6-shim": "^0.35.3",
@@ -73,7 +73,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-shell": "^0.7.1",
     "gulp-yaml": "^2.0.4",
-    "igniteui-docfx-template": "3.6.0",
+    "igniteui-docfx-template": "3.7.6",
     "js-yaml": "^4.1.0",
     "mocha": "^10.2.0",
     "remark": "^13.0.0",

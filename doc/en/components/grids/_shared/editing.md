@@ -57,18 +57,18 @@ In the `{ComponentName}`, if you set `RowEditable` property to true, and the `Ed
  - For `boolean` data type, default template is using `Checkbox`.
  - For `currency` data type, default template is using `InputGroup` with prefix/suffix configuration based on application or grid locale settings.
  - For `percent` data type, default template is using `InputGroup` with suffix element that shows a preview of the edited value in percents.
- <!-- ComponentStart:  Grid -->
+ <!-- ComponentStart: Grid -->
  - For custom templates you can see [Cell Editing topic](cell-editing.md#{PlatformLower}-grid-cell-editing-and-edit-templates-example)
- <!-- ComponentEnd:  Grid -->
+ <!-- ComponentEnd: Grid -->
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 All available column data types could be found in the official [Column types topic](column-types.md#default-template).
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
 ### Event Arguments and Sequence
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 The grid exposes a wide array of events that provide greater control over the editing experience. These events are fired during the [**Row Editing**](row-editing.md) and [**Cell Editing**](cell-editing.md) lifecycle - when starting, committing or canceling the editing action.
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
  | Event           | Description                                                                                                                                               | Arguments                  | Cancellable |
  | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ----------- |
@@ -107,18 +107,12 @@ As seen from the table, all interactions, except resizing a column, will end the
 
 Example how to commit new values, if user tries to sort the column while a cell/row is in edit mode:
 
-```html
-<igx-grid #grid [data]="localData" [primaryKey]="'ProductID'" (sorting)="onSorting($event)">
-</igx-grid>
-```
-
-```html
-<igc-grid id="grid" primary-key="ProductID" >
-</igc-grid>
-```
-
-
 <!-- Angular -->
+
+```html
+<{ComponentSelector} #grid [data]="localData" [primaryKey]="'ProductID'" (sorting)="onSorting($event)">
+</{ComponentSelector}>
+```
 
 ```typescript
 public onSorting(event: ISortingEventArgs) {
@@ -129,26 +123,31 @@ public onSorting(event: ISortingEventArgs) {
 <!-- end: Angular -->
 
 <!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" primary-key="ProductID" >
+</{ComponentSelector}>
+```
 
 ```typescript
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var grid = this.grid = document.getElementById('grid') as {ComponentName}Component;
     grid.data = this.data;
     grid.addEventListener("sorting", this.onSorting);
 }
 
 public onSorting(event: IgcSortingEventArgs) {
-    this.grid.endEdit(true);
+    var grid = document.getElementById('grid') as {ComponentName}Component;
+    grid.endEdit(true);
 }
 ```
 <!-- end: WebComponents -->
 
 ```razor
-<IgbGrid
+<{ComponentSelector}
     Id="grid"
     SortingScript="SortingHandler"
     RowEditable="true">
-</IgbGrid>
+</{ComponentSelector}>
 
 //In JavaScript
 function SortingHandler() {
@@ -157,39 +156,30 @@ function SortingHandler() {
 igRegisterScript("SortingHandler", SortingHandler, false);
 ```
 
+<!-- React -->
 ```tsx
-function onSorting(grid: IgrGridBaseDirective, event: IgrSortingEventArgs) {
+function onSorting(grid: {ComponentName}, event: IgrSortingEventArgs) {
     grid.endEdit(true);
 }
 
-<IgrGrid data={localData} primaryKey="ProductID" sorting={onSorting}>
-</IgrGrid>
+<{ComponentSelector} data={localData} primaryKey="ProductID" sorting={onSorting}>
+</{ComponentSelector}>
 ```
+<!-- end: React -->
 
 ## API References
 
-* `Cell`
+* `{ComponentName}`
 
-<!-- ComponentStart: Grid, HierarchicalGrid -->
-
-* `GridRow`
-
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
-
-<!-- ComponentStart: TreeGrid -->
-
-* `TreeGridRow`
-
-<!-- ComponentEnd: TreeGrid -->
 <!-- Angular -->
-* `DatePickerComponent`
-* `CheckboxComponent`
+* `DatePicker`
+* `Checkbox`
 * `Overlay`
 <!-- end: Angular -->
+
 ## Additional Resources
 
 <!-- Angular, WebComponents, React -->
-
 
 * [Column Data Types](column-types.md#default-template)
 * [Virtualization and Performance](virtualization.md)
@@ -209,7 +199,7 @@ function onSorting(grid: IgrGridBaseDirective, event: IgrSortingEventArgs) {
 
 <!-- Blazor -->
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [Column Data Types](column-types.md#default-template)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
@@ -221,7 +211,7 @@ function onSorting(grid: IgrGridBaseDirective, event: IgrSortingEventArgs) {
 * [Selection](selection.md)
 * [Searching](search.md)
 
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 <!-- * [Searching](search.md) -->

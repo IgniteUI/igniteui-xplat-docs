@@ -2,7 +2,7 @@
   {
     "originalName": "StockChangedEventArgs",
     "originalNamespace": "Infragistics.DataAdapters",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "React","fileName": "igr-stock-changed-event-args.ts","mappedName": "IgrStockChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "addedSymbols"}], "originalName": "AddedSymbols"},

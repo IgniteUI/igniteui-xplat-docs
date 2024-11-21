@@ -13,8 +13,8 @@ _language: ja
 
 ## デカルト軸
 
-デカルト軸を持つ `XamDataChart` では3 種類の X 軸を使用して水平 (X 軸) および垂直 (X 軸) 方向にデータをプロットすることが可能です。
-(`CategoryXAxis`、`NumericXAxis`、および `TimeXAxis`) と 2 種類の Y 軸 (`CategoryYAxis` および `NumericYAxis`)。
+デカルト軸を持つ `XamDataChart` では 3 つのタイプの X 軸を使用して水平 (X 軸) および垂直 (X 軸) 方向にデータをプロットすることが可能です。
+(`CategoryXAxis`、`NumericXAxis`、および `TimeXAxis`) と 2 つのタイプの Y 軸 (`CategoryYAxis` および `NumericYAxis`)。
 
 ### カテゴリ X 軸
 
@@ -109,13 +109,23 @@ _language: ja
 
 ### カテゴリ角度軸
 
-`CategoryAngleAxis` は、そのデータを一連のカテゴリ データ項目として扱います。この軸のラベルは、その順序での位置に従って円の端に沿って配置されます。この軸の種類では、数字、文字列などのほぼすべてのデータのタイプを表示できます。
+`CategoryAngleAxis` は、そのデータを一連のカテゴリ データ項目として扱います。この軸のラベルは、その順序での位置に従って円の端に沿って配置されます。この軸のタイプでは、数字、文字列などのほぼすべてのデータのタイプを表示できます。
 
 `CategoryAngleAxis` は通常、[ラジアル シリーズ](../types/radial-chart.md)をプロットするために `NumericRadiusAxis` と共に使用されます。
 
 次の例は、`CategoryAngleAxis` タイプの使用法を示しています:
 
  `sample="/charts/data-chart/radial-area-chart", height="500", alt="{Platform} カテゴリ角度軸の例"`
+
+### 比例カテゴリ角度軸
+
+`ProportionalCategoryAngleAxis` は、そのデータを一連のカテゴリ データ項目として扱います。この軸のラベルは、シーケンス内の位置に応じて円の端に沿って配置されます。この軸の種類では、数字、文字列などのほぼすべてのデータのタイプを表示できます。
+
+`ProportionalCategoryAngleAxis` は通常、`NumericRadiusAxis` と一緒に使用され、円チャートをプロットします (例: [ラジアル シリーズ](../types/radial-chart.md))。
+
+次の例は、`ProportionalCategoryAngleAxis` タイプの使用方法を示しています。
+
+ `sample="/charts/data-chart/radial-proportional-category-angle-axis", height="500", alt="{Platform} 比例カテゴリ角度軸の例"`
 
 ### 数字角度軸
 

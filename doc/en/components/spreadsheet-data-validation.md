@@ -2,7 +2,7 @@
 title: {Platform} Spreadsheet | Data Validation | Infragistics
 _description: Use Infragistics' {Platform} spreadsheet control to setup built-in data validation rules. View {ProductName} spreadsheet demos!
 _keywords: Excel Spreadsheet, data validation, {ProductName}, Infragistics
-mentionedTypes: ['Spreadsheet']
+mentionedTypes: ["Spreadsheet"]
 ---
 # {Platform} Data Validation
 

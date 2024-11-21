@@ -49,7 +49,10 @@
     "names":[{"platform": "React","fileName": "igr-range-category-series.ts","mappedName": "IgrRangeCategorySeries"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getMemberPathValue"}], "originalName": "GetMemberPathValue"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "highMemberPath"}], "originalName": "HighMemberPath"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "highlightedHighMemberPath"}], "originalName": "HighlightedHighMemberPath"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "highlightedLowMemberPath"}], "originalName": "HighlightedLowMemberPath"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "lowMemberPath"}], "originalName": "LowMemberPath"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "scrollIntoView"}], "originalName": "ScrollIntoView"} ]
   },

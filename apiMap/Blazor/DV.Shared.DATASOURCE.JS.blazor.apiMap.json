@@ -1,8 +1,305 @@
 {  "types":[
   {
+    "originalName": "DataSourceLocalDataProvider",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "DataSourceLocalDataProvider.cs","mappedName": "DataSourceLocalDataProvider"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "actualCount"}], "originalName": "ActualCount"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceSchema","mappedName": "actualSchema"}], "originalName": "ActualSchema"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "addItem"}], "originalName": "AddItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceSchema","mappedName": "buildSchemaFromItem"}], "originalName": "BuildSchemaFromItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceDataProvider","mappedName": "clone"}], "originalName": "Clone"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "deferAutoRefresh"}], "originalName": "DeferAutoRefresh"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "doRefreshInternal"}], "originalName": "DoRefreshInternal"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "ensureSchema"}], "originalName": "EnsureSchema"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceExecutionContext","mappedName": "executionContext"}], "originalName": "ExecutionContext"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpressionCollection","mappedName": "filterExpressions"}], "originalName": "FilterExpressions"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "findSchemaItem"}], "originalName": "FindSchemaItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "flushAutoRefresh"}], "originalName": "FlushAutoRefresh"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "getDataIntentsForKey"}], "originalName": "GetDataIntentsForKey"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "getDataIntentsFromTarget"}], "originalName": "GetDataIntentsFromTarget"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "getItemAtIndex"}], "originalName": "GetItemAtIndex"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "List","mappedName": "getPropertyKeys"}], "originalName": "GetPropertyKeys"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbSortDescriptionCollection","mappedName": "groupDescriptions"}], "originalName": "GroupDescriptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "indexOfItem"}], "originalName": "IndexOfItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "indexOfKey"}], "originalName": "IndexOfKey"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "isFilteringSupported"}], "originalName": "IsFilteringSupported"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "isGroupingSupported"}], "originalName": "IsGroupingSupported"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "isItemIndexLookupSupported"}], "originalName": "IsItemIndexLookupSupported"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "isKeyIndexLookupSupported"}], "originalName": "IsKeyIndexLookupSupported"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "isSortingSupported"}], "originalName": "IsSortingSupported"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "dataSource"}], "originalName": "ItemsSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "any[]",   "mappedName": "list"}], "originalName": "List"},
+      {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "maxDepth"}], "originalName": "MaxDepth"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "mustSyncListWithChanges"}], "originalName": "MustSyncListWithChanges"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "notifyClearItems"}], "originalName": "NotifyClearItems"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "notifyInsertItem"}], "originalName": "NotifyInsertItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "notifyRemoveItem"}], "originalName": "NotifyRemoveItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "notifySetItem"}], "originalName": "NotifySetItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "notifyUsingSourceIndexes"}], "originalName": "NotifyUsingSourceIndexes"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "onCollectionChanged"}], "originalName": "OnCollectionChanged"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "onPropertyChanged"}], "originalName": "OnPropertyChanged"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "parseSchemaHints"}], "originalName": "ParseSchemaHints"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "propertiesRequested"}], "originalName": "PropertiesRequested"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "propertyUpdatedOverride"}], "originalName": "PropertyUpdatedOverride"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "queueAutoRefresh"}], "originalName": "QueueAutoRefresh"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "refresh"}], "originalName": "Refresh"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "refreshInternal"}], "originalName": "RefreshInternal"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "refreshInternalOverride"}], "originalName": "RefreshInternalOverride"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "removeItem"}], "originalName": "RemoveItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "List","mappedName": "resolveDataIntents"}], "originalName": "ResolveDataIntents"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceSchema","mappedName": "resolveSchema"}], "originalName": "ResolveSchema"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceSchemaPropertyType","mappedName": "resolveSchemaPropertyType"}], "originalName": "ResolveSchemaPropertyType"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceSchemaPropertyType","mappedName": "resolveSchemaType"}], "originalName": "ResolveSchemaType"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceSchemaPropertyType","mappedName": "resolveSchemaTypeFromString"}], "originalName": "ResolveSchemaTypeFromString"},
+      {"names":[{"platform": "Blazor", "mappedType": "(sender: any, args: IgbDataSourceDataProviderSchemaChangedEventArgs) => void","mappedName": "schemaChanged"}], "originalName": "SchemaChanged"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "schemaHints"}], "originalName": "SchemaHints"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "schemaIncludedProperties"}], "originalName": "SchemaIncludedProperties"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "setItemValue"}], "originalName": "SetItemValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "setSchema"}], "originalName": "SetSchema"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbSortDescriptionCollection","mappedName": "sortDescriptions"}], "originalName": "SortDescriptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "sortDescriptions_CollectionChanged"}], "originalName": "SortDescriptions_CollectionChanged"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbSummaryDescriptionCollection","mappedName": "summaryDescriptions"}], "originalName": "SummaryDescriptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceSummaryScope","mappedName": "summaryScope"}], "originalName": "SummaryScope"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceDataProviderUpdateNotifier","mappedName": "updateNotifier"}], "originalName": "UpdateNotifier"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "_autoRefreshQueued"}], "originalName": "_autoRefreshQueued"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "_dataSource"}], "originalName": "_dataSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "_deferAutoRefresh"}], "originalName": "_deferAutoRefresh"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceExecutionContext","mappedName": "_executionContext"}], "originalName": "_executionContext"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpressionCollection","mappedName": "_filterExpressions"}], "originalName": "_filterExpressions"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbSortDescriptionCollection","mappedName": "_groupDescriptions"}], "originalName": "_groupDescriptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "HashSet","mappedName": "_invalidPropertyPaths"}], "originalName": "_invalidPropertyPaths"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "_isArray"}], "originalName": "_isArray"},
+      {"names":[{"platform": "Blazor", "mappedType": "any[]",   "mappedName": "_list"}], "originalName": "_list"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "_propertiesRequested"}], "originalName": "_propertiesRequested"},
+      {"names":[{"platform": "Blazor", "mappedType": "Dictionary","mappedName": "_reflectionHelpers"}], "originalName": "_reflectionHelpers"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceSchema","mappedName": "_schema"}], "originalName": "_schema"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "_schemaHints"}], "originalName": "_schemaHints"},
+      {"names":[{"platform": "Blazor", "mappedType": "Dictionary","mappedName": "_schemaHintsDictionary"}], "originalName": "_schemaHintsDictionary"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "_schemaIncludedProperties"}], "originalName": "_schemaIncludedProperties"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbSortDescriptionCollection","mappedName": "_sortDescriptions"}], "originalName": "_sortDescriptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbSummaryDescriptionCollection","mappedName": "_summaryDescriptions"}], "originalName": "_summaryDescriptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceSummaryScope","mappedName": "_summaryScope"}], "originalName": "_summaryScope"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceDataProviderUpdateNotifier","mappedName": "_updateNotifier"}], "originalName": "_updateNotifier"} ]
+  },
+  {
+    "originalName": "FilterExpressionParsingHelper",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "FilterExpressionParsingHelper.cs","mappedName": "FilterExpressionParsingHelper"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+  },
+  {
+    "originalName": "FilterExpressionParsingResult",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "FilterExpressionParsingResult.cs","mappedName": "FilterExpressionParsingResult"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "errors"}], "originalName": "Errors"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpression","mappedName": "result"}], "originalName": "Result"} ]
+  },
+  {
+    "originalName": "FlatDataProvider",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "FlatDataProvider.cs","mappedName": "FlatDataProvider"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "actualCount"}], "originalName": "ActualCount"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceSchema","mappedName": "actualSchema"}], "originalName": "ActualSchema"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "addItem"}], "originalName": "AddItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "broadcastChangesToRightDataSource"}], "originalName": "BroadcastChangesToRightDataSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceDataProvider","mappedName": "clone"}], "originalName": "Clone"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "createDynamicItem"}], "originalName": "CreateDynamicItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "deferAutoRefresh"}], "originalName": "DeferAutoRefresh"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "doJoin"}], "originalName": "DoJoin"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "doRefreshInternal"}], "originalName": "DoRefreshInternal"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceExecutionContext","mappedName": "executionContext"}], "originalName": "ExecutionContext"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpressionCollection","mappedName": "filterExpressions"}], "originalName": "FilterExpressions"},
+      {"names":[{"platform": "Blazor", "mappedType": "any[]",   "mappedName": "flattenData"}], "originalName": "FlattenData"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "flattenRange"}], "originalName": "FlattenRange"},
+      {"names":[{"platform": "Blazor", "mappedType": "FlatDataProviderJoinCollisionType","mappedName": "flipRetention"}], "originalName": "FlipRetention"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "flushAutoRefresh"}], "originalName": "FlushAutoRefresh"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "getItemAtIndex"}], "originalName": "GetItemAtIndex"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "Dictionary","mappedName": "getJoinMap"}], "originalName": "GetJoinMap"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "getNullValue"}], "originalName": "GetNullValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbSortDescriptionCollection","mappedName": "groupDescriptions"}], "originalName": "GroupDescriptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "groupMaxDepth"}], "originalName": "GroupMaxDepth"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "handleProperties"}], "originalName": "HandleProperties"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "hasDynamicItemProperty"}], "originalName": "HasDynamicItemProperty"},
+      {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "indexOfItem"}], "originalName": "IndexOfItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "indexOfKey"}], "originalName": "IndexOfKey"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "isFilteringSupported"}], "originalName": "IsFilteringSupported"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "isGroupingSupported"}], "originalName": "IsGroupingSupported"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "isItemIndexLookupSupported"}], "originalName": "IsItemIndexLookupSupported"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "isKeyIndexLookupSupported"}], "originalName": "IsKeyIndexLookupSupported"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "isSortingSupported"}], "originalName": "IsSortingSupported"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "dataSource"}], "originalName": "ItemsSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "FlatDataProviderJoinCollisionType","mappedName": "joinCollisionType"}], "originalName": "JoinCollisionType"},
+      {"names":[{"platform": "Blazor", "mappedType": "FlatDataProviderJoinType","mappedName": "joinType"}], "originalName": "JoinType"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "leftJoinProperty"}], "originalName": "LeftJoinProperty"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "newDS_SchemaChanged"}], "originalName": "NewDS_SchemaChanged"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "notifyClearItems"}], "originalName": "NotifyClearItems"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "notifyInsertItem"}], "originalName": "NotifyInsertItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "notifyRemoveItem"}], "originalName": "NotifyRemoveItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "notifySetItem"}], "originalName": "NotifySetItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "notifyUsingSourceIndexes"}], "originalName": "NotifyUsingSourceIndexes"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "onFilterExpressionsCollectionChanged"}], "originalName": "OnFilterExpressionsCollectionChanged"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "onGroupDescriptionsCollectionChanged"}], "originalName": "OnGroupDescriptionsCollectionChanged"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "onPropertyChanged"}], "originalName": "OnPropertyChanged"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "onSortDescriptionsCollectionChanged"}], "originalName": "OnSortDescriptionsCollectionChanged"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "onSummaryDescriptionsCollectionChanged"}], "originalName": "OnSummaryDescriptionsCollectionChanged"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "onTargetNotifyClearItems"}], "originalName": "OnTargetNotifyClearItems"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "onTargetNotifyInsertItem"}], "originalName": "OnTargetNotifyInsertItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "onTargetNotifyRemoveItem"}], "originalName": "OnTargetNotifyRemoveItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "onTargetNotifySetItem"}], "originalName": "OnTargetNotifySetItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "onTargetRangeActualized"}], "originalName": "OnTargetRangeActualized"},
+      {"names":[{"platform": "Blazor", "mappedType": "any[]",   "mappedName": "performJoin"}], "originalName": "PerformJoin"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "propertiesRequested"}], "originalName": "PropertiesRequested"},
+      {"names":[{"platform": "Blazor", "mappedType": "(sender: any, e: PropertyChangedEventArgs) => void","mappedName": "propertyChanged"}], "originalName": "PropertyChanged"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "propertyUpdatedOverride"}], "originalName": "PropertyUpdatedOverride"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "queueAutoRefresh"}], "originalName": "QueueAutoRefresh"},
+      {"names":[{"platform": "Blazor", "mappedType": "any[]",   "mappedName": "rawFlatten"}], "originalName": "RawFlatten"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "refresh"}], "originalName": "Refresh"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "refreshInternal"}], "originalName": "RefreshInternal"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "refreshInternalOverride"}], "originalName": "RefreshInternalOverride"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "removeItem"}], "originalName": "RemoveItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceSchemaPropertyType","mappedName": "resolveSchemaPropertyType"}], "originalName": "ResolveSchemaPropertyType"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSource","mappedName": "rightDataSource"}], "originalName": "RightDataSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "rightJoinProperty"}], "originalName": "RightJoinProperty"},
+      {"names":[{"platform": "Blazor", "mappedType": "(sender: any, args: IgbDataSourceDataProviderSchemaChangedEventArgs) => void","mappedName": "schemaChanged"}], "originalName": "SchemaChanged"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "schemaHints"}], "originalName": "SchemaHints"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "schemaIncludedProperties"}], "originalName": "SchemaIncludedProperties"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "setDynamicItemProperty"}], "originalName": "SetDynamicItemProperty"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "setItemValue"}], "originalName": "SetItemValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbSortDescriptionCollection","mappedName": "sortDescriptions"}], "originalName": "SortDescriptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbSummaryDescriptionCollection","mappedName": "summaryDescriptions"}], "originalName": "SummaryDescriptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceSummaryScope","mappedName": "summaryScope"}], "originalName": "SummaryScope"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSource","mappedName": "targetDataSource"}], "originalName": "TargetDataSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceDataProviderUpdateNotifier","mappedName": "updateNotifier"}], "originalName": "UpdateNotifier"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "_autoRefreshQueued"}], "originalName": "_autoRefreshQueued"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "_broadcastChangesToRightDataSource"}], "originalName": "_broadcastChangesToRightDataSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "_deferAutoRefresh"}], "originalName": "_deferAutoRefresh"},
+      {"names":[{"platform": "Blazor", "mappedType": "any[]",   "mappedName": "_flattenedArray"}], "originalName": "_flattenedArray"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceLocalDataProvider","mappedName": "_internalProvider"}], "originalName": "_internalProvider"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "_internalProvider_SchemaChanged"}], "originalName": "_internalProvider_SchemaChanged"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "_itemsSource"}], "originalName": "_itemsSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "FlatDataProviderJoinCollisionType","mappedName": "_joinCollisionType"}], "originalName": "_joinCollisionType"},
+      {"names":[{"platform": "Blazor", "mappedType": "FlatDataProviderJoinType","mappedName": "_joinType"}], "originalName": "_joinType"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "_leftJoinProperty"}], "originalName": "_leftJoinProperty"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "_requiresDataRefresh"}], "originalName": "_requiresDataRefresh"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSource","mappedName": "_rightDataSource"}], "originalName": "_rightDataSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "_rightJoinProperty"}], "originalName": "_rightJoinProperty"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "_schemaHints"}], "originalName": "_schemaHints"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSource","mappedName": "_targetDataSource"}], "originalName": "_targetDataSource"} ]
+  },
+  {
+    "originalName": "AggregatedDataProvider",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "AggregatedDataProvider.cs","mappedName": "AggregatedDataProvider"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "actualCount"}], "originalName": "ActualCount"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceSchema","mappedName": "actualSchema"}], "originalName": "ActualSchema"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "addItem"}], "originalName": "AddItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceDataProvider","mappedName": "clone"}], "originalName": "Clone"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "collectSummaryInfo"}], "originalName": "CollectSummaryInfo"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "collectSummaryInfoTopLevel"}], "originalName": "CollectSummaryInfoTopLevel"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "deferAutoRefresh"}], "originalName": "DeferAutoRefresh"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "doRefreshInternal"}], "originalName": "DoRefreshInternal"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "endsLayer"}], "originalName": "EndsLayer"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceExecutionContext","mappedName": "executionContext"}], "originalName": "ExecutionContext"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "fillProperties"}], "originalName": "FillProperties"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpressionCollection","mappedName": "filterExpressions"}], "originalName": "FilterExpressions"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "finishLayer"}], "originalName": "FinishLayer"},
+      {"names":[{"platform": "Blazor", "mappedType": "any[]",   "mappedName": "flattenData"}], "originalName": "FlattenData"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "flushAutoRefresh"}], "originalName": "FlushAutoRefresh"},
+      {"names":[{"platform": "Blazor", "mappedType": "AggregatedDataProviderLayerInfo","mappedName": "gatherLayerInfo"}], "originalName": "GatherLayerInfo"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "gatherSummaryInfo"}], "originalName": "GatherSummaryInfo"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "getItemAtIndex"}], "originalName": "GetItemAtIndex"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbSortDescriptionCollection","mappedName": "groupDescriptions"}], "originalName": "GroupDescriptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "groupMaxDepth"}], "originalName": "GroupMaxDepth"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "includeParentSummary"}], "originalName": "IncludeParentSummary"},
+      {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "indexOfItem"}], "originalName": "IndexOfItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "indexOfKey"}], "originalName": "IndexOfKey"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "isFilteringSupported"}], "originalName": "IsFilteringSupported"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "isGroupingSupported"}], "originalName": "IsGroupingSupported"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "isItemIndexLookupSupported"}], "originalName": "IsItemIndexLookupSupported"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "isKeyIndexLookupSupported"}], "originalName": "IsKeyIndexLookupSupported"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "isSortingSupported"}], "originalName": "IsSortingSupported"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "dataSource"}], "originalName": "ItemsSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "matchLayer"}], "originalName": "MatchLayer"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "newDS_SchemaChanged"}], "originalName": "NewDS_SchemaChanged"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "notifyClearItems"}], "originalName": "NotifyClearItems"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "notifyInsertItem"}], "originalName": "NotifyInsertItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "notifyRemoveItem"}], "originalName": "NotifyRemoveItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "notifySetItem"}], "originalName": "NotifySetItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "notifyUsingSourceIndexes"}], "originalName": "NotifyUsingSourceIndexes"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "onPropertyChanged"}], "originalName": "OnPropertyChanged"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "onTargetNotifyClearItems"}], "originalName": "OnTargetNotifyClearItems"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "onTargetNotifyInsertItem"}], "originalName": "OnTargetNotifyInsertItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "onTargetNotifyRemoveItem"}], "originalName": "OnTargetNotifyRemoveItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "onTargetNotifySetItem"}], "originalName": "OnTargetNotifySetItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "onTargetRangeActualized"}], "originalName": "OnTargetRangeActualized"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSource","mappedName": "prepClone"}], "originalName": "PrepClone"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSource","mappedName": "prepTopClone"}], "originalName": "PrepTopClone"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "propertiesRequested"}], "originalName": "PropertiesRequested"},
+      {"names":[{"platform": "Blazor", "mappedType": "(sender: any, e: PropertyChangedEventArgs) => void","mappedName": "propertyChanged"}], "originalName": "PropertyChanged"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "propertyUpdatedOverride"}], "originalName": "PropertyUpdatedOverride"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "queueAutoRefresh"}], "originalName": "QueueAutoRefresh"},
+      {"names":[{"platform": "Blazor", "mappedType": "Tuple","mappedName": "rawFlatten"}], "originalName": "RawFlatten"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "refresh"}], "originalName": "Refresh"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "refreshInternal"}], "originalName": "RefreshInternal"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "refreshInternalOverride"}], "originalName": "RefreshInternalOverride"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "removeItem"}], "originalName": "RemoveItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceSchemaPropertyType","mappedName": "resolveSchemaPropertyType"}], "originalName": "ResolveSchemaPropertyType"},
+      {"names":[{"platform": "Blazor", "mappedType": "(sender: any, args: IgbDataSourceDataProviderSchemaChangedEventArgs) => void","mappedName": "schemaChanged"}], "originalName": "SchemaChanged"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "schemaHints"}], "originalName": "SchemaHints"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "schemaIncludedProperties"}], "originalName": "SchemaIncludedProperties"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "setItemValue"}], "originalName": "SetItemValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbSortDescriptionCollection","mappedName": "sortDescriptions"}], "originalName": "SortDescriptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbSummaryDescriptionCollection","mappedName": "summaryDescriptions"}], "originalName": "SummaryDescriptions"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceSummaryScope","mappedName": "summaryScope"}], "originalName": "SummaryScope"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSource","mappedName": "targetDataSource"}], "originalName": "TargetDataSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "Tuple","mappedName": "topFlatten"}], "originalName": "TopFlatten"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceDataProviderUpdateNotifier","mappedName": "updateNotifier"}], "originalName": "UpdateNotifier"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "_autoRefreshQueued"}], "originalName": "_autoRefreshQueued"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "_deferAutoRefresh"}], "originalName": "_deferAutoRefresh"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "_includeParentSummary"}], "originalName": "_includeParentSummary"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceLocalDataProvider","mappedName": "_internalProvider"}], "originalName": "_internalProvider"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "_internalProvider_SchemaChanged"}], "originalName": "_internalProvider_SchemaChanged"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "_itemsSource"}], "originalName": "_itemsSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "_requiresDataRefresh"}], "originalName": "_requiresDataRefresh"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "_schemaHints"}], "originalName": "_schemaHints"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSource","mappedName": "_targetDataSource"}], "originalName": "_targetDataSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "List","mappedName": "_uniqueProperties"}], "originalName": "_uniqueProperties"} ]
+  },
+  {
+    "originalName": "Task",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "AsyncVirtualDataTask.cs","mappedName": "AsyncVirtualDataTask"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "hasErrors"}], "originalName": "HasErrors"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "isCancelled"}], "originalName": "IsCancelled"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "isCompleted"}], "originalName": "IsCompleted"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "isRunning"}], "originalName": "IsRunning"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "result"}], "originalName": "Result"},
+      {"names":[{"platform": "Blazor", "mappedType": "() => void","mappedName": "run"}], "originalName": "Run"} ]
+  },
+  {
     "originalName": "AsyncVirtualDataSourceDataProviderWorkerSettings",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "AsyncVirtualDataSourceDataProviderWorkerSettings.cs","mappedName": "AsyncVirtualDataSourceDataProviderWorkerSettings"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -15,7 +312,7 @@
   {
     "originalName": "AsyncVirtualDataSourceProviderTaskDataHolder",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "AsyncVirtualDataSourceProviderTaskDataHolder.cs","mappedName": "AsyncVirtualDataSourceProviderTaskDataHolder"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
@@ -23,7 +320,7 @@
   {
     "originalName": "AsyncDataSourcePageTaskHolder",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "AsyncDataSourcePageTaskHolder.cs","mappedName": "AsyncDataSourcePageTaskHolder"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -32,7 +329,7 @@
   {
     "originalName": "AsyncDataSourcePageRequest",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "AsyncDataSourcePageRequest.cs","mappedName": "AsyncDataSourcePageRequest"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -48,7 +345,7 @@
   {
     "originalName": "AsyncVirtualDataSourceProviderWorker",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "AsyncVirtualDataSourceProviderWorker.cs","mappedName": "AsyncVirtualDataSourceProviderWorker"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -98,7 +395,7 @@
   {
     "originalName": "FilterFactory",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "FilterFactory.cs","mappedName": "FilterFactory"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -151,13 +448,13 @@
   {
     "originalName": "IFilterExpression",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "FilterExpression.cs","mappedName": "IgbFilterExpression"}]
   },
   {
     "originalName": "FilterExpression",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "FilterExpression.cs","mappedName": "IgbFilterExpression"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsAutoGenerated"}], "originalName": "IsAutoGenerated"},
@@ -180,11 +477,48 @@
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Precedence"}], "originalName": "Precedence"} ]
   },
   {
+    "originalName": "IOperationFilterExpression",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "IOperationFilterExpression.cs","mappedName": "IOperationFilterExpression"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpression","mappedName": "left"}], "originalName": "Left"},
+      {"names":[{"platform": "Blazor", "mappedType": "FilterExpressionOperatorType","mappedName": "operator"}], "originalName": "Operator"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpression","mappedName": "right"}], "originalName": "Right"} ]
+  },
+  {
+    "originalName": "IFunctionFilterExpression",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "IFunctionFilterExpression.cs","mappedName": "IFunctionFilterExpression"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpressionCollection","mappedName": "functionArguments"}], "originalName": "FunctionArguments"},
+      {"names":[{"platform": "Blazor", "mappedType": "FilterExpressionFunctionType","mappedName": "functionType"}], "originalName": "FunctionType"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "hasFunctionArguments"}], "originalName": "HasFunctionArguments"} ]
+  },
+  {
+    "originalName": "ILiteralFilterExpression",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "ILiteralFilterExpression.cs","mappedName": "ILiteralFilterExpression"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "leaveUnquoted"}], "originalName": "LeaveUnquoted"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "literalValue"}], "originalName": "LiteralValue"} ]
+  },
+  {
+    "originalName": "IPropertyReferenceFilterExpression",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "IPropertyReferenceFilterExpression.cs","mappedName": "IPropertyReferenceFilterExpression"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "propertyReference"}], "originalName": "PropertyReference"} ]
+  },
+  {
     "originalName": "OperationFilterExpression",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "FilterExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "OperationFilterExpression.cs","mappedName": "IgbOperationFilterExpression"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "HasLeft"}], "originalName": "HasLeft"},
@@ -206,7 +540,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "FilterExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "FunctionFilterExpression.cs","mappedName": "IgbFunctionFilterExpression"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpressionCollection","mappedName": "FunctionArguments"}], "originalName": "FunctionArguments"},
@@ -220,7 +554,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "FilterExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "PropertyReferenceFilterExpression.cs","mappedName": "IgbPropertyReferenceFilterExpression"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsPropertyReference"}], "originalName": "IsPropertyReference"},
@@ -232,7 +566,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "FilterExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "LiteralFilterExpression.cs","mappedName": "IgbLiteralFilterExpression"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsLiteral"}], "originalName": "IsLiteral"},
@@ -246,7 +580,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "FilterExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "WrapperExpression.cs","mappedName": "IgbWrapperExpression"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpression","mappedName": "Expression"}], "originalName": "Expression"},
@@ -260,7 +594,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "TodayExpression.cs","mappedName": "IgbTodayExpression"}]
   },
   {
@@ -268,7 +602,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "TomorrowExpression.cs","mappedName": "IgbTomorrowExpression"}]
   },
   {
@@ -276,7 +610,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "YesterdayExpression.cs","mappedName": "IgbYesterdayExpression"}]
   },
   {
@@ -284,7 +618,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "OffsettableWeekExpression.cs","mappedName": "IgbOffsettableWeekExpression"}]
   },
   {
@@ -292,7 +626,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "OffsettableWeekExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "ThisWeekExpression.cs","mappedName": "IgbThisWeekExpression"}]
   },
   {
@@ -300,7 +634,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "OffsettableWeekExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "NextWeekExpression.cs","mappedName": "IgbNextWeekExpression"}]
   },
   {
@@ -308,7 +642,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "OffsettableWeekExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "LastWeekExpression.cs","mappedName": "IgbLastWeekExpression"}]
   },
   {
@@ -316,7 +650,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "ThisMonthExpression.cs","mappedName": "IgbThisMonthExpression"}]
   },
   {
@@ -324,7 +658,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "NextMonthExpression.cs","mappedName": "IgbNextMonthExpression"}]
   },
   {
@@ -332,7 +666,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "LastMonthExpression.cs","mappedName": "IgbLastMonthExpression"}]
   },
   {
@@ -340,7 +674,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "ThisYearExpression.cs","mappedName": "IgbThisYearExpression"}]
   },
   {
@@ -348,7 +682,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "NextYearExpression.cs","mappedName": "IgbNextYearExpression"}]
   },
   {
@@ -356,7 +690,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "LastYearExpression.cs","mappedName": "IgbLastYearExpression"}]
   },
   {
@@ -364,7 +698,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "YearToDateExpression.cs","mappedName": "IgbYearToDateExpression"}]
   },
   {
@@ -372,7 +706,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "ThisQuarterExpression.cs","mappedName": "IgbThisQuarterExpression"}]
   },
   {
@@ -380,7 +714,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "NextQuarterExpression.cs","mappedName": "IgbNextQuarterExpression"}]
   },
   {
@@ -388,7 +722,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "LastQuarterExpression.cs","mappedName": "IgbLastQuarterExpression"}]
   },
   {
@@ -396,7 +730,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "Q1Expression.cs","mappedName": "IgbQ1Expression"}]
   },
   {
@@ -404,7 +738,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "Q2Expression.cs","mappedName": "IgbQ2Expression"}]
   },
   {
@@ -412,7 +746,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "Q3Expression.cs","mappedName": "IgbQ3Expression"}]
   },
   {
@@ -420,13 +754,13 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "WrapperExpression",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "Q4Expression.cs","mappedName": "IgbQ4Expression"}]
   },
   {
     "originalName": "FilterExpressionVisitor",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "FilterExpressionVisitor.cs","mappedName": "FilterExpressionVisitor"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -439,7 +773,7 @@
   {
     "originalName": "IEditableDataSource",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "IEditableDataSource.cs","mappedName": "EditableDataSource"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "AcceptPendingCommit"}], "originalName": "AcceptPendingCommit"},
@@ -470,7 +804,7 @@
   {
     "originalName": "DataSourceAggregatedResult",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "DataSourceAggregatedResult.cs","mappedName": "IgbDataSourceAggregatedResult"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "Item"}], "originalName": "Item"},
@@ -479,9 +813,35 @@
       {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "Values"}], "originalName": "Values"} ]
   },
   {
+    "originalName": "DataSourceDataCommittedEventArgs",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "System",
+    "originalBaseTypeName": "EventArgs",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "DataSourceDataCommittedEventArgs.cs","mappedName": "DataSourceDataCommittedEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbDataSourceAggregatedResult[]","mappedName": "changes"}], "originalName": "Changes"},
+      {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "commitID"}], "originalName": "CommitID"} ]
+  },
+  {
+    "originalName": "ContainsPropertyDataSourceFilterExpressionVisitor",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeName": "FilterExpressionVisitor",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "ContainsPropertyDataSourceFilterExpressionVisitor.cs","mappedName": "ContainsPropertyDataSourceFilterExpressionVisitor"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "contains"}], "originalName": "Contains"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "visitPropertyReferenceExpression"}], "originalName": "VisitPropertyReferenceExpression"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "_contains"}], "originalName": "_contains"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "_targetProperty"}], "originalName": "_targetProperty"} ]
+  },
+  {
     "originalName": "IDataSource",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "IDataSource.cs","mappedName": "DataSource"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ClearPinnedRows"}], "originalName": "ClearPinnedRows"},
@@ -519,6 +879,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "QueueAutoRefresh"}], "originalName": "QueueAutoRefresh"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Refresh"}], "originalName": "Refresh"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ResolveSchemaPropertyType"}], "originalName": "ResolveSchemaPropertyType"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "SchemaIncludedProperties"}], "originalName": "SchemaIncludedProperties"},
       {"names":[{"platform": "Blazor", "mappedType": "DataSourceSectionHeaderDisplayMode","mappedName": "SectionHeaderDisplayMode"}], "originalName": "SectionHeaderDisplayMode"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetIsRowExpandedAtIndex"}], "originalName": "SetIsRowExpandedAtIndex"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ShouldEmitSectionFooters"}], "originalName": "ShouldEmitSectionFooters"},
@@ -532,13 +893,13 @@
   {
     "originalName": "IDataSourceSupportsCount",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "IDataSourceSupportsCount.cs","mappedName": "DataSourceSupportsCount"}]
   },
   {
     "originalName": "IDataSourceSupportsIndexedAccess",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "IDataSourceSupportsIndexedAccess.cs","mappedName": "DataSourceSupportsIndexedAccess"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemAtIndex"}], "originalName": "GetItemAtIndex"} ]
@@ -546,7 +907,7 @@
   {
     "originalName": "ISupportsDataChangeNotifications",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "ISupportsDataChangeNotifications.cs","mappedName": "SupportsDataChangeNotifications"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "NotifyClearItems"}], "originalName": "NotifyClearItems"},
@@ -557,7 +918,7 @@
   {
     "originalName": "ISupportsExpansionChangeNotifications",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "ISupportsExpansionChangeNotifications.cs","mappedName": "SupportsExpansionChangeNotifications"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "NotifyRowExpansionChanged"}], "originalName": "NotifyRowExpansionChanged"} ]
@@ -567,7 +928,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "DataSourceSchemaChangedEventArgs.cs","mappedName": "IgbDataSourceSchemaChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Count"}], "originalName": "Count"},
@@ -578,7 +939,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "DataSourceRowExpansionChangedEventArgs.cs","mappedName": "IgbDataSourceRowExpansionChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "NewState"}], "originalName": "NewState"},
@@ -588,7 +949,7 @@
   {
     "originalName": "IDataSourceDataProvider",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "IDataSourceDataProvider.cs","mappedName": "DataSourceDataProvider"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "AddItem"}], "originalName": "AddItem"},
@@ -604,14 +965,23 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Refresh"}], "originalName": "Refresh"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "RemoveItem"}], "originalName": "RemoveItem"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ResolveSchemaPropertyType"}], "originalName": "ResolveSchemaPropertyType"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "SchemaIncludedProperties"}], "originalName": "SchemaIncludedProperties"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetItemValue"}], "originalName": "SetItemValue"},
       {"names":[{"platform": "Blazor", "mappedType": "DataSourceSummaryScope","mappedName": "SummaryScope"}], "originalName": "SummaryScope"},
       {"names":[{"platform": "Blazor", "mappedType": "DataSourceDataProviderUpdateNotifier","mappedName": "UpdateNotifier"}], "originalName": "UpdateNotifier"} ]
   },
   {
+    "originalName": "IDataSourceClonableDataProvider",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "IDataSourceClonableDataProvider.cs","mappedName": "DataSourceClonableDataProvider"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Clone"}], "originalName": "Clone"} ]
+  },
+  {
     "originalName": "IDataSourceDataProviderUpdateNotifier",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "IDataSourceDataProviderUpdateNotifier.cs","mappedName": "DataSourceDataProviderUpdateNotifier"}]
   },
   {
@@ -619,7 +989,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "DataSourceDataProviderSchemaChangedEventArgs.cs","mappedName": "IgbDataSourceDataProviderSchemaChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Count"}], "originalName": "Count"},
@@ -628,13 +998,13 @@
   {
     "originalName": "IDataSourceExecutionContext",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "IDataSourceExecutionContext.cs","mappedName": "DataSourceExecutionContext"}]
   },
   {
     "originalName": "IDataSourceLocalDataProvider",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "IDataSourceLocalDataProvider.cs","mappedName": "DataSourceLocalDataProvider"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "DataSource"}], "originalName": "ItemsSource"} ]
@@ -642,13 +1012,13 @@
   {
     "originalName": "IDataSourceSchema",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "IDataSourceSchema.cs","mappedName": "DataSourceSchema"}]
   },
   {
     "originalName": "DefaultDataSourceSchema",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "DefaultDataSourceSchema.cs","mappedName": "DefaultDataSourceSchema"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -666,7 +1036,7 @@
   {
     "originalName": "IDataSourceUpdateNotifier",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "IDataSourceUpdateNotifier.cs","mappedName": "DataSourceUpdateNotifier"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "NotifyClearItems"}], "originalName": "NotifyClearItems"},
@@ -678,7 +1048,7 @@
   {
     "originalName": "IDataSourceVirtualDataProvider",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "IDataSourceVirtualDataProvider.cs","mappedName": "DataSourceVirtualDataProvider"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "AddPageRequest"}], "originalName": "AddPageRequest"},
@@ -693,7 +1063,7 @@
   {
     "originalName": "DefaultSectionInformation",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "SectionInformation.cs","mappedName": "IgbSectionInformation"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "EndIndex"}], "originalName": "EndIndex"},
@@ -705,7 +1075,7 @@
   {
     "originalName": "IODataLiteralEmitter",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "ODataLiteralEmitter.cs","mappedName": "ODataLiteralEmitter"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "emitLiteral"}], "originalName": "EmitLiteral"} ]
@@ -713,7 +1083,7 @@
   {
     "originalName": "DefaultODataLiteralEmitter",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "DefaultODataLiteralEmitter.cs","mappedName": "DefaultODataLiteralEmitter"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -726,7 +1096,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "FilterExpressionVisitor",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "ODataDataSourceFilterExpressionVisitor.cs","mappedName": "ODataDataSourceFilterExpressionVisitor"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -745,7 +1115,7 @@
   {
     "originalName": "ODataDataSourceSchema",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "ODataDataSourceSchema.cs","mappedName": "ODataDataSourceSchema"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -763,7 +1133,7 @@
   {
     "originalName": "DefaultSummaryResult",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "DataGridSummaryResult.cs","mappedName": "IgbDataGridSummaryResult"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "GroupKey"}], "originalName": "GroupKey"},
@@ -777,7 +1147,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "SummaryCalculator",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "SumSummaryCalculator.cs","mappedName": "SumSummaryCalculator"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -795,7 +1165,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "SummaryCalculator",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "CountSummaryCalculator.cs","mappedName": "CountSummaryCalculator"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -813,7 +1183,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "SummaryCalculator",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "AverageSummaryCalculator.cs","mappedName": "AverageSummaryCalculator"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -832,7 +1202,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "SummaryCalculator",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "MaxSummaryCalculator.cs","mappedName": "MaxSummaryCalculator"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -851,7 +1221,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "SummaryCalculator",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "MinSummaryCalculator.cs","mappedName": "MinSummaryCalculator"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -868,7 +1238,7 @@
   {
     "originalName": "SummaryCalculator",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "SummaryCalculator.cs","mappedName": "SummaryCalculator"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -891,7 +1261,7 @@
   {
     "originalName": "SummaryDescription",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "SummaryDescription.cs","mappedName": "SummaryDescription"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -915,13 +1285,13 @@
   {
     "originalName": "ProvideCalculatorEventArgs",
     "originalNamespace": "Infragistics.Controls.DataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "ProvideCalculatorEventArgs.cs","mappedName": "IgbProvideCalculatorEventArgs"}]
   },
   {
     "originalName": "BaseDataSource",
     "originalNamespace": "Infragistics.Controls.DataSource.Implementation",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "BaseDataSource.cs","mappedName": "IgbBaseDataSource"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "AcceptPendingCommit"}], "originalName": "AcceptPendingCommit"},
@@ -987,6 +1357,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "RemoveItem"}], "originalName": "RemoveItem"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "RemoveItemByKey"}], "originalName": "RemoveItemByKey"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ResolveSchemaPropertyType"}], "originalName": "ResolveSchemaPropertyType"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "SchemaIncludedProperties"}], "originalName": "SchemaIncludedProperties"},
       {"names":[{"platform": "Blazor", "mappedType": "DataSourceSectionHeaderDisplayMode","mappedName": "SectionHeaderDisplayMode"}], "originalName": "SectionHeaderDisplayMode"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetIsRowExpandedAtIndex"}], "originalName": "SetIsRowExpandedAtIndex"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetTransactionError"}], "originalName": "SetTransactionError"},
@@ -1001,7 +1372,7 @@
   {
     "originalName": "DataSourceSpecialRow",
     "originalNamespace": "Infragistics.Controls.DataSource.Implementation",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "DataSourceSpecialRow.cs","mappedName": "IgbDataSourceSpecialRow"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "Keys"}], "originalName": "Keys"},
@@ -1018,7 +1389,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource.Implementation",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource.Implementation",
     "originalBaseTypeName": "LocalDataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "PagedDataSource.cs","mappedName": "IgbPagedDataSource"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemProperty"}], "originalName": "GetItemProperty"},
@@ -1031,7 +1402,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource.Implementation",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource.Implementation",
     "originalBaseTypeName": "BaseDataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "LocalDataSource.cs","mappedName": "IgbLocalDataSource"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ClearPinnedRows"}], "originalName": "ClearPinnedRows"},
@@ -1060,7 +1431,7 @@
     "originalNamespace": "Infragistics.Controls.DataSource.Implementation",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource.Implementation",
     "originalBaseTypeName": "BaseDataSource",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "VirtualDataSource.cs","mappedName": "IgbVirtualDataSource"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "ActualPageSize"}], "originalName": "ActualPageSize"},
@@ -1098,7 +1469,7 @@
   {
     "originalName": "TransactionState",
     "originalNamespace": "Infragistics.Controls.DataSource.Transactions",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "TransactionState.cs","mappedName": "IgbTransactionState"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "Id"}], "originalName": "ID"},

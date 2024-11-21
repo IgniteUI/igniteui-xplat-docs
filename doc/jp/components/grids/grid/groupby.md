@@ -2,7 +2,7 @@
 title: {Platform} Grid グループ化 | 複数のフィールドでグループ化 | インフラジスティックス
 _description: グループを設定して {Platform} Material テーブルにデータ レコードを視覚化し、グループ化されたデータを個別の列グループに視覚化できます。
 _keywords: {Platform}, Grid, {ProductName}, group by, Infragistics, グリッド, グループ化, インフラジスティックス
-mentionedTypes: ['Infragistics.Controls.Grid']
+mentionedTypes: ["Infragistics.Controls.Grid"]
 namespace: Infragistics.Controls
 _language: ja
 ---
@@ -547,7 +547,7 @@ grid.groupingExpressions = [
 ## スタイル設定
 
 
-定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming-grid.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
 一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
 <!-- WebComponents -->

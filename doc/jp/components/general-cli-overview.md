@@ -29,11 +29,15 @@ Ignite UI CLI を使用して、{ProductName} コントロールを使用する�
 ig new "[name_of_project]" --framework=[target_framework] --type=[project_type]
 ```
 
-上記のテンプレートを使用して、ES6 をターゲットとする「My Project」という名前の **React** アプリケーションを作成する場合は、次のコマンドを実行します。
+上記のテンプレートを使用して、TypeScript をターゲットとする「My Project」という名前の **React** アプリケーションを作成する場合は、次のコマンドを実行します。
 
 ```cmd
-ig new "My Project" --framework=react --type=igr-es6
+ig new "My Project" --framework=react --type=igr-ts
 ```
+
+> [!Note]
+TypeScript のサポートは、Ignite UI CLI バージョン 13 以降で利用可能になります。
+
 <!-- end: React -->
 
 <!-- WebComponents -->
@@ -70,7 +74,7 @@ ig add [component_template] [component_name]
 
 上記の「component_template」は通常、{ProductName} コンポーネント (grid、category-chart、linear-gauge など) と一致します。
 
-たとえば、「MyGrid Component」という名前のデータ グリッド テンプレート コンポーネントをアプリに追加する場合は、次のコマンドを実行します。
+たとえば、「MyGridComponent」という名前のデータ グリッド テンプレート コンポーネントをアプリに追加する場合は、次のコマンドを実行します。
 
 ```cmd
 ig add grid MyGridComponent
@@ -109,6 +113,13 @@ ig build
 ig run
 ```
 
+<!-- React -->
+### Vite の使用
+
+Ignite UI CLI によって生成された React アプリケーションは、ビルド ツールとして Vite を利用します。Vite は高速な開発および本番ビルドを提供し、開発中のホット モジュール交換 (HMR) などの機能を備えた効率的な開発エクスペリエンスを提供します。
+
+<!-- end: React -->
+
 ## Ignite UI CLI コマンド
 
 使用可能な Ignite UI CLI コマンドとその使用方法 (フラグを渡すなど) の完全なリストは、[Ignite UI CLI wiki ページ](https://github.com/IgniteUI/igniteui-cli/wiki)にあります。
@@ -123,4 +134,4 @@ ig run
 | [ig doc](https://github.com/IgniteUI/igniteui-cli/wiki/doc) | | 検索した用語についてインフラジスティックスのサポート情報を検索します。
 | [ig list](https://github.com/IgniteUI/igniteui-cli/wiki/list) | l |  指定したフレームワークとタイプのすべてのテンプレートをリストします。プロジェクト フォルダー内でコマンド実行時にプロジェクトのフレームワークとタイプのテンプレートをすべてリストします。
 | [ig test](https://github.com/IgniteUI/igniteui-cli/wiki/test) |  | 現在のプロジェクトのテストを実行します。
-| ig version | -v | ローカル (ローカルがない場合はグローバル) にインストールされた Ignite UI CLI バージョンを示します。 |
+| [ig version](https://github.com/IgniteUI/igniteui-cli/wiki) | -v | ローカル (ローカルがない場合はグローバル) にインストールされた Ignite UI CLI バージョンを示します。 |

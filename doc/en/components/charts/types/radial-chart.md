@@ -2,7 +2,7 @@
 title: {Platform} Radial Chart | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Radial Chart
 _keywords: {Platform} Charts, Radial Chart, Infragistics
-mentionedTypes: ["XamDataChart", "RadialLineSeries", 'Series']
+mentionedTypes: ["XamDataChart", "RadialLineSeries", "Series"]
 namespace: Infragistics.Controls.Charts
 ---
 # {Platform} Radial Chart
@@ -55,7 +55,11 @@ Once our radial chart is created, we may want to make some further styling custo
 
 `sample="/charts/data-chart/radial-area-chart-styling", height="600", alt="{Platform} Radial Area Chart Styling"`
 
+<div class="divider--half"></div>
 
+## {Platform} Radial Chart Settings
+
+In addition, the labels can be configured to appear near or wide from the chart. This can be configured with the `LabelMode` property for the `CategoryAngleAxis`.
 
 <div class="divider--half"></div>
 

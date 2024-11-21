@@ -2,7 +2,7 @@
 title: {Platform} {PivotGridTitle} 機能 | ピボット テーブル | インフラジスティックス
 _description: {ProductName} を使用して、高速で応答性の高い {Platform} {PivotGridTitle} ピボット グリッドとテーブルを作成します。ピボット データを介して複雑なデータ分析を実行します。
 _keywords: {Platform}, {PivotGridTitle}, material pivot table, {ProductName}, grid features, pivot features, material ピボット テーブル, グリッド機能, ピボット機能
-mentionedTypes: ['Infragistics.Controls.Grid']
+mentionedTypes: ["Infragistics.Controls.Grid"]
 namespace: Infragistics.Controls
 _language: ja
 ---
@@ -101,6 +101,17 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 ```
 
 <!-- end:Blazor -->
+
+<!-- React -->
+
+```tsx
+const dimension: IgrPivotDimension = new IgrPivotDimension();
+dimension.memberName = "SellerName";
+dimension.enabled = true;
+dimension.sortDirection = SortingDirection.Asc;
+```
+<!-- end: React -->
+
 ## ディメンションのサイズ変更
 
 行のサイズは、列のサイズ変更と同様に、セルの右端にあるサイズ変更インジケーターを介してサイズ変更できます。
@@ -135,6 +146,18 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 ```
 
 <!-- end:Blazor -->
+
+
+<!-- React -->
+
+```tsx
+const dimension: IgrPivotDimension = new IgrPivotDimension();
+dimension.memberName = "SellerName";
+dimension.enabled = true;
+dimension.width = "400px";
+```
+<!-- end: React -->
+
 ## ディメンションの選択
 
 {PivotGridTitle} は、ベース グリッドと同じように有効になる単一選択をサポートします。例:
@@ -162,10 +185,17 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 </{PivotGridSelector}>
 ```
 
+<!--React -->
+```tsx
+<IgrPivotGrid data={pivotData} pivotConfiguration={pivotConfiguration} rowSelection={GridSelectionMode.Single}>
+</IgrPivotGrid>
+```
+<!-- end: React -->
+
 複数の行 / 列にまたがるグループを作成する複数の行または列のディメンションがある場合、選択は、選択されたグループに属するすべてのセルに適用されます。
 
 ## スーパー コンパクト モード
-`PivotGrid` コンポーネントは、`SuperCompactMode` 入力を提供します。一度にたくさんのセルが画面に表示させる必要がある場合に適しています。有効にすると、このオプションは {PivotGridTitle} の `DisplayDensity` オプションを無視します。`SuperCompactMode` を有効にすると、`SuperCompactMode` オプションがない子コンポーネント (`Chip` など) ごとに `DisplayDensity` 入力が `Compact` (コンパクト) に設定されます。
+`PivotGrid` コンポーネントは、`SuperCompactMode` 入力を提供します。一度にたくさんのセルが画面に表示させる必要がある場合に適しています。有効にすると、このオプションは {PivotGridTitle} の `--ig-size` CSS 変数を無視します。`SuperCompactMode` を有効にすると、`SuperCompactMode` オプションがない子コンポーネント (`Chip` など) ごとに `--ig-size` が `small` に設定されます。
 <!-- Angular -->
 ```html
 <{PivotGridSelector} [superCompactMode]="true"></{PivotGridSelector}>
@@ -181,6 +211,13 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 ```razor
 <{PivotGridSelector} SuperCompactMode=true></{PivotGridSelector}>
 ```
+
+<!--React -->
+```tsx
+<IgrPivotGrid data={pivotData} pivotConfiguration={pivotConfiguration} superCompactMode={true}>
+</IgrPivotGrid>
+```
+<!-- end: React -->
 
 ## 追加の集計列
 

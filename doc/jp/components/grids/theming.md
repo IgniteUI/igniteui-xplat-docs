@@ -2,13 +2,13 @@
 title: {Platform} グリッドのテーマ | リアル タイム {Platform} テーブル | 軽量 {Platform} Web Components のテーブル | インフラジスティックス
 _description: .
 _keywords: {Platform} data grid, infragistics, data grids theming, theming, {ProductName}, table, {Platform} データ グリッド, インフラジスティックス, データ グリッド テーマ, テーマ, テーブル
-mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid']
+mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid"]
 namespace: Infragistics.Controls
 _language: ja
 ---
 
 # {Platform} データ グリッドのテーマ
-{Platform} グリッドは、ブランドの独自性に合わせて簡単にカスタマイズできます。
+{Platform} テーマ エンジンを使用すると、{ProductName} Grid をブランド アイデンティティに合わせて簡単にカスタマイズできます。
 定義済みのテーマとパレットに加えて、一連の CSS カスタム プロパティを使用して、データ グリッドのルック アンド フィールをさらにカスタマイズできます。
 
 ### 利用可能なテーマ プロパティ
@@ -92,7 +92,7 @@ _language: ja
 | --body-summaries-text-color              | 色                    | 本体に配置される集計グループのテキストの色。                                       |
 | --root-summaries-background              | 色                    | フッターに配置される集計グループの背景色。                               |
 | --root-summaries-text-color              | 色                    | フッターに配置される集計グループのテキストの色。                                     |
-| --row-highlight                          | 色                    | グリッド行の強調表示の色。                                                                |
+| --row-highlight                          | 色                    | グリッド行のハイライト表示の色。                                                                |
 | --row-ghost-background                   | 色                    | ドラッグされている行の背景色。                                                     |
 | --row-drag-color                         | 色                    | ドラッグ ハンドルの色。                                                                |
 | --drop-area-border-radius                | 0 ～ 1 の数   | ドロップ領域に使用される境界半径。0 ～ 1 の任意の小数、ピクセル、またはパーセントを指定できます。 |

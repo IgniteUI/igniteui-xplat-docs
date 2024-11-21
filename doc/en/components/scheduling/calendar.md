@@ -2,7 +2,7 @@
 title: {Platform} Calendar Component - {ProductName}
 _description: With {Platform} Calendar Component, users can create intuitive calendars for applications to display date information using three different selection modes. Try it Now
 _keywords: {Platform} Calendar, {ProductName}, Infragistics
-mentionedTypes: ['Calendar', 'DateRangeType', 'DateRangeDescriptor']
+mentionedTypes: ["Calendar", "DateRangeType", "DateRangeDescriptor"]
 ---
 
 # {Platform} Calendar Overview
@@ -18,8 +18,6 @@ The following {Platform} `Calendar` component example shows a basic calendar wit
 <div class="divider--half"></div>
 
 `sample="/scheduling/calendar/overview", height="480", alt="{Platform} Calendar Example"`
-
-
 
 ## How To Create a Calendar in {Platform} with {ProductNameShort}
 
@@ -76,6 +74,8 @@ import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcCalendarComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 The simplest way to start using the {ProductName} `Calendar` is as follows:
 

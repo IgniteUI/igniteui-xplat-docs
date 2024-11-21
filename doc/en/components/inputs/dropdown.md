@@ -2,7 +2,7 @@
 title: {Platform} Dropdown List Component | {ProductName}
 _description: With {Platform} Dropdown List component you can add interactivity and see styling options to a scrollable list of items in your app. Try it now.  {Platform} now.
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Dropdown Component, Infragistics
-mentionedTypes: ['Dropdown', 'DropdownItem', 'DropdownHeader', 'DropdownGroup']
+mentionedTypes: ["Dropdown", "DropdownItem", "DropdownHeader", "DropdownGroup"]
 ---
 
 # {Platform} Dropdown List Component - Overview
@@ -18,8 +18,6 @@ With our component, you get all the functions and customization options you need
 The following {Platform} Dropdown List example demonstrates the use of simple interactive {Platform} Dropdown menu in action with three basic options to choose from. See how it works.
 
 `sample="/inputs/dropdown/overview", height="220", alt="{Platform} Dropdown Example"`
-
-
 
 ## How to use the Dropdown List with {ProductName}
 
@@ -39,6 +37,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcDropdownComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -55,6 +56,8 @@ import { IgrDropdownModule, IgrDropdown } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
 IgrDropdownModule.register();
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 <!-- end: React -->
 
 <!-- Blazor -->
@@ -81,6 +84,17 @@ The simplest way to start using the `Dropdown` is as follows:
 </igc-dropdown>
 ```
 
+```tsx
+<IgrDropdown>
+    <div slot="target">
+        <IgrButton><span>Options</span></IgrButton>
+    </div>
+    <IgrDropdownItem><span>Option 1</span></IgrDropdownItem>
+    <IgrDropdownItem><span>Option 2</span></IgrDropdownItem>
+    <IgrDropdownItem><span>Option 3</span></IgrDropdownItem>
+</IgrDropdown>
+```
+
 ### Target
 
 The {Platform} Dropdown list is positioned relatively to its target. The `target` slot allows you to provide a built-in component which toggles the `open` property on click. In some cases you would want to use an external target or use another event to toggle the opening of the Dropdown. You can achieve this using the `Show`, `Hide` and `Toggle` methods which allow you to provide the target as a parameter. By default, the Dropdown list uses `absolute` CSS position. You will need to set the `PositionStrategy` of the {Platform} Dropdown to `fixed` when the target element is inside a fixed container, but the Dropdown is not. The Dropdown list is automatically sized based on its content, if you want the list to have the same width as the target, you should set the `SameWidth` property to `true`.
@@ -99,7 +113,7 @@ The preferred placement of the {Platform} Dropdown can be set using the `Placeme
 
 ### Selection
 
-The `Dropdown` emits the `igcChange` event when the user selects an item. The `Select` method of the Dropdown allows you to select an item by its index or value.
+The `Dropdown` emits the `Change` event when the user selects an item. The `Select` method of the Dropdown allows you to select an item by its index or value.
 
 ### Item
 

@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 列選択の概要
 
-{Platform} {ComponentTitle} の {ProductName} 列選択機能は、シングルクリックで列全体を選択して強調表示する、簡略化された Excel のような方法を提供します。これは `columnSelection` 入力を通じて有効にできます。豊富な API のおかげで、この機能により、選択状態の操作、選択された部分からのデータ抽出、データ分析操作、視覚化が簡単に行えます。
+{Platform} {ComponentTitle} の {ProductName} 列選択機能は、シングルクリックで列全体を選択してハイライト表示する、簡略化された Excel のような方法を提供します。これは `columnSelection` 入力を通じて有効にできます。豊富な API のおかげで、この機能により、選択状態の操作、選択された部分からのデータ抽出、データ分析操作、視覚化が簡単に行えます。
 
 ## {Platform} {ComponentTitle} 列選択の例
 
@@ -91,7 +91,7 @@ API 操作の詳細については、[API リファレンス](#api-リファレ�
 
 ## スタイル設定
 
-定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。一部の色を変更したい場合は、最初にグリッドの `class` を設定する必要があります。
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming-grid.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。一部の色を変更したい場合は、最初にグリッドの `class` を設定する必要があります。
 
 ```html
 <{ComponentSelector} class="grid"></{ComponentSelector}>
@@ -141,9 +141,9 @@ API 操作の詳細については、[API リファレンス](#api-リファレ�
 ```
 
 > [!Note]
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 >[行選択](row-selection.md)と[列選択](column-selection.md)は個別に操作できないことに注意してください。同じ`変数`に依存します。
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 **選択**と**ホバー**のスタイル設定を変更します。 <br/>
 
@@ -249,7 +249,7 @@ Internet Explorer 11 のコンポーネントをスタイル設定するには�
 
 ## その他のリソース
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [選択](selection.md)
 * [セル選択](cell-selection.md)
 * [ページング](paging.md)
@@ -260,7 +260,7 @@ Internet Explorer 11 のコンポーネントをスタイル設定するには�
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [仮想化とパフォーマンス](virtualization.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

@@ -2,7 +2,6 @@
 title: {Platform} {ComponentTitle} の仮想化とパフォーマンス - {ProductName}
 _description: {ProductName} の仮想化は、大規模なデータセットを処理する際のグリッドのスピードとパフォーマンスの背後にあるコア メカニズムです。無料でお試しください。
 _keywords: {Platform} {ComponentTitle}, {ComponentTitle} performance, data table virtualization, {ProductName}, {ComponentTitle} パフォーマンス, データ  テーブルの仮想, インフラジスティックス
-_canonicalLink: grid/virtualization
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
@@ -13,11 +12,13 @@ _language: ja
 
 {ProductName} の `{ComponentName}` コントロールは水平および垂直方向にコンテンツを仮想化します。
 
+<!-- ComponentStart: Grid, HierarchicalGrid -->
+
 ## {Platform} {ComponentTitle} 仮想化とパフォーマンスの例
 
 `sample="/{ComponentSample}/data-performance-virtualization", height="550", alt="{Platform} {ComponentTitle} 仮想化とパフォーマンスの例"`
 
-
+<!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 ## 仮想化の有効化
 
@@ -59,7 +60,6 @@ _language: ja
 
 ## その他のリソース
 
-<!-- ComponentStart:  Grid -->
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
 * [ソート](sorting.md)
@@ -68,7 +68,6 @@ _language: ja
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
-<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

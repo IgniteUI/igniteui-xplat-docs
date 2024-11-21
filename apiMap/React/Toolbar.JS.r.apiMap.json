@@ -22,9 +22,9 @@
       {"names":[{"platform": "React", "mappedType": "IgrDataGrid","mappedName": "targetGrid"}], "originalName": "TargetGrid"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "toolbarTitle"}], "originalName": "ToolbarTitle"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "toolbarTitleColor"}], "originalName": "ToolbarTitleColor"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "bottom"}], "originalName": "borderWidth.bottom"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "left"}], "originalName": "borderWidth.left"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "right"}], "originalName": "borderWidth.right"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "top"}], "originalName": "borderWidth.top"} ]
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "bottom"}], "originalName": "borderWidth.bottom"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "left"}], "originalName": "borderWidth.left"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "right"}], "originalName": "borderWidth.right"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "top"}], "originalName": "borderWidth.top"} ]
   }]
 }

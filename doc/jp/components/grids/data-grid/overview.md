@@ -2,7 +2,7 @@
 title: {Platform} データ グリッド コンポーネント | リアルタイム {Platform} テーブル | インフラジスティックス
 _description: インフラジスティックスの {Platform} グリッド コンポーネントは、高速でリアルタイムの React データ グリッドを作成します。{ProductName} を使用したデータの表示方法について説明します。
 _keywords: {Platform} Table, Data Grid, overview, {ProductName}, data binding, Infragistics, {Platform} テーブル, データ グリッド, 概要, データ バインディング, インフラジスティックス
-mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
+mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.Column"]
 namespace: Infragistics.Controls
 _canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
@@ -464,7 +464,7 @@ Blazor データ グリッドの作成について詳しくは、このチュー
 - [パフォーマンス](performance.md)
 - [行のピン固定](row-pinning.md)
 - [行グループ](row-grouping.md)
-- [行の強調表示](row-highlighting.md)
+- [行のハイライト表示](row-highlighting.md)
 
 <!-- TODO fix build flagging list items -->
 <!-- React -->

@@ -2,7 +2,7 @@
 title: {Platform} Calendar コンポーネント - {ProductName}
 _description: {Platform} Calendar (カレンダー) コンポーネントを使用すると、ユーザーはアプリケーション用の直感的なカレンダーを作成し、3 つの異なる選択モードを使用して日付情報を表示できます。今すぐお試しください。
 _keywords: {Platform} Calendar, {Platform} カレンダー, {ProductName}, インフラジスティックス
-mentionedTypes: ['Calendar', 'DateRangeType', 'DateRangeDescriptor']
+mentionedTypes: ["Calendar", "DateRangeType", "DateRangeDescriptor"]
 _language: ja
 ---
 
@@ -19,8 +19,6 @@ Ignite UI for {ProductName} Calendar は、日付情報を表示するための�
 <div class="divider--half"></div>
 
 `sample="/scheduling/calendar/overview", height="480", alt="{Platform} Calendar の例"`
-
-
 
 ## {ProductNameShort} を使用して {Platform} で Calendar を作成する方法
 
@@ -77,6 +75,8 @@ import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcCalendarComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 {ProductName} `Calendar` の使用を開始する最も簡単な方法は次のとおりです。
 
@@ -252,7 +252,7 @@ this.calendar.disabledDates = [{ type: DateRangeType.Between, dateRange: range }
 
 ### 特定の日付
 
-`SpecialDates` プロパティは、`DisabledDates` とほぼ同じ構成原則を使用しています。特別な日付は強調表示されたルック アンド フィールを持ち、無効な日付とは異なり、選択することができます。
+`SpecialDates` プロパティは、`DisabledDates` とほぼ同じ構成原則を使用しています。特別な日付はハイライト表示されたルック アンド フィールを持ち、無効な日付とは異なり、選択することができます。
 
 Calendar に特別な日付を追加しましょう。これを行うために、`DateRangeDescriptor` を作成し、現在の月の 3 日から 8 日までの日付を渡します。
 

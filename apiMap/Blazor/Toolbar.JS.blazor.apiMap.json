@@ -20,9 +20,9 @@
       {"names":[{"platform": "Blazor", "mappedType": "IgbDataGrid","mappedName": "TargetGrid"}], "originalName": "TargetGrid"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ToolbarTitle"}], "originalName": "ToolbarTitle"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ToolbarTitleColor"}], "originalName": "ToolbarTitleColor"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BorderWidthBottom"}], "originalName": "borderWidth.bottom"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BorderWidthLeft"}], "originalName": "borderWidth.left"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BorderWidthRight"}], "originalName": "borderWidth.right"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BorderWidthTop"}], "originalName": "borderWidth.top"} ]
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BorderWidthBottom"}], "originalName": "borderWidth.bottom"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BorderWidthLeft"}], "originalName": "borderWidth.left"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BorderWidthRight"}], "originalName": "borderWidth.right"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BorderWidthTop"}], "originalName": "borderWidth.top"} ]
   }]
 }

@@ -2,7 +2,7 @@
 title: {Platform} Icon コンポーネント | {ProductName}
 _description: {Platform} Icon コンポーネントを簡単に使い始める方法をご覧ください。アイコンを選択し、さまざまなスタイル設定オプションから選択して、さらにカスタマイズします。
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Icon components, {Platform} Icon controls, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Switch コンポーネント, {Platform} Icon コントロール
-mentionedTypes: ['Icon']
+mentionedTypes: ["Icon"]
 _language: ja
 ---
 
@@ -31,6 +31,8 @@ import { defineComponents, IgcIconComponent } from "igniteui-webcomponents";
 
 defineComponents(IgcIconComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 <!-- end: WebComponents -->
 

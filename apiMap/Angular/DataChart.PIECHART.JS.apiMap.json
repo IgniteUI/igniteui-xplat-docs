@@ -5,18 +5,6 @@
   ],
   "types":[
   {
-    "originalName": "LegendEmptyValuesMode",
-    "originalNamespace": "Infragistics.Controls.Charts",
-    "isEnum":true,
-    "packageName": "igniteui-charts",
-    "names":[{"platform": "Angular","fileName": "LegendEmptyValuesMode.ts","mappedName": "LegendEmptyValuesMode"}],
-    "members":[
-      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
-      {"names":[{"platform": "Angular", "mappedType": "LegendEmptyValuesMode","mappedName": "AlwaysHidden"}], "originalName": "AlwaysHidden"},
-      {"names":[{"platform": "Angular", "mappedType": "LegendEmptyValuesMode","mappedName": "AlwaysVisible"}], "originalName": "AlwaysVisible"},
-      {"names":[{"platform": "Angular", "mappedType": "LegendEmptyValuesMode","mappedName": "ShowWhenNoOthersCategory"}], "originalName": "ShowWhenNoOthersCategory"} ]
-  },
-  {
     "originalName": "LabelsPosition",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
@@ -41,17 +29,6 @@
       {"names":[{"platform": "Angular", "mappedType": "LeaderLineType","mappedName": "Arc"}], "originalName": "Arc"},
       {"names":[{"platform": "Angular", "mappedType": "LeaderLineType","mappedName": "Spline"}], "originalName": "Spline"},
       {"names":[{"platform": "Angular", "mappedType": "LeaderLineType","mappedName": "Straight"}], "originalName": "Straight"} ]
-  },
-  {
-    "originalName": "OthersCategoryType",
-    "originalNamespace": "Infragistics.Controls.Charts",
-    "isEnum":true,
-    "packageName": "igniteui-charts",
-    "names":[{"platform": "Angular","fileName": "OthersCategoryType.ts","mappedName": "OthersCategoryType"}],
-    "members":[
-      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
-      {"names":[{"platform": "Angular", "mappedType": "OthersCategoryType","mappedName": "Number"}], "originalName": "Number"},
-      {"names":[{"platform": "Angular", "mappedType": "OthersCategoryType","mappedName": "Percent"}], "originalName": "Percent"} ]
   },
   {
     "originalName": "SliceSelectionMode",
@@ -160,6 +137,7 @@
       {"names":[{"platform": "Angular", "mappedType": "IgPoint", "mappedName": "origin"}], "originalName": "Origin"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "originalEvent"}], "originalName": "OriginalEvent"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "outline"}], "originalName": "Outline"},
+      {"names":[{"platform": "Angular", "mappedType": "IgPoint", "mappedName": "position"}], "originalName": "Position"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "radius"}], "originalName": "Radius"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "startAngle"}], "originalName": "StartAngle"} ]
   },
@@ -235,14 +213,14 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "textStyle"}], "originalName": "TextStyle"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "toolTip"}], "originalName": "ToolTip"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "valueMemberPath"}], "originalName": "ValueMemberPath"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fill"}], "originalName": "othersCategoryStyle.fill"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "othersCategoryStyle.opacity"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "othersCategoryStyle.stroke"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "othersCategoryStyle.strokeThickness"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fill"}], "originalName": "selectedStyle.fill"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "selectedStyle.opacity"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "selectedStyle.stroke"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "selectedStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fill"}], "originalName": "othersCategoryStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "othersCategoryStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "othersCategoryStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "othersCategoryStyle.strokeThickness"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fill"}], "originalName": "selectedStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "selectedStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "selectedStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "selectedStyle.strokeThickness"} ]
   },
   {
     "originalName": "PieSliceOthersContext",

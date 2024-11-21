@@ -89,18 +89,18 @@
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "radiusFactor"}], "originalName": "RadiusFactor"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "startAngle"}], "originalName": "StartAngle"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "valueMemberPath"}], "originalName": "ValueMemberPath"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fill"}], "originalName": "leaderLineStyle.fill"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "leaderLineStyle.opacity"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "leaderLineStyle.stroke"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "leaderLineStyle.strokeThickness"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fill"}], "originalName": "othersCategoryStyle.fill"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "othersCategoryStyle.opacity"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "othersCategoryStyle.stroke"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "othersCategoryStyle.strokeThickness"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fill"}], "originalName": "selectedStyle.fill"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "selectedStyle.opacity"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "selectedStyle.stroke"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "selectedStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fill"}], "originalName": "leaderLineStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "leaderLineStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "leaderLineStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "leaderLineStyle.strokeThickness"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fill"}], "originalName": "othersCategoryStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "othersCategoryStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "othersCategoryStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "othersCategoryStyle.strokeThickness"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fill"}], "originalName": "selectedStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "selectedStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "selectedStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "selectedStyle.strokeThickness"} ]
   },
   {
     "originalName": "XamDoughnutChart",
@@ -127,9 +127,9 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "notifySetItem"}], "originalName": "NotifySetItem"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "pixelScalingRatio"}], "originalName": "PixelScalingRatio"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "provideContainer"}], "originalName": "ProvideContainer"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fill"}], "originalName": "selectedStyle.fill"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "selectedStyle.opacity"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "selectedStyle.stroke"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "selectedStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fill"}], "originalName": "selectedStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "selectedStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "selectedStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "selectedStyle.strokeThickness"} ]
   }]
 }

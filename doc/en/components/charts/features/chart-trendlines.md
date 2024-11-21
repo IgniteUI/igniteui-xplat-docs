@@ -16,7 +16,7 @@ The trendlines also have the ability to have a dash array applied to them once e
 
 # {Platform} Chart Trendlines Example
 
-The following sample depicts a `FinancialChart` showing the stock trend of Microsoft between 2013 and 2017 with a `QuinticFit` trendline initially applied. There is a drop-down that will allow you to change the type of trendline that is applied, and all possible trendline types are listed within that drop-down.
+The following sample depicts a `FinancialChart` showing the stock trend of Microsoft between 2013 and 2017 with a **QuinticFit** trendline initially applied. There is a drop-down that will allow you to change the type of trendline that is applied, and all possible trendline types are listed within that drop-down.
 
 `sample="/charts/financial-chart/trendlines", height="500", alt="{Platform} Trendlines Example"`
 
@@ -25,7 +25,7 @@ The following sample depicts a `FinancialChart` showing the stock trend of Micro
 
 # {Platform} Chart Trendlines Dash Array Example
 
-The following sample depicts a `XamDataChart` showing a `FinancialPriceSeries` with a `QuarticFit` dashed trendline applied via the `TrendLineDashArray` property:
+The following sample depicts a `XamDataChart` showing a `FinancialPriceSeries` with a **QuarticFit** dashed trendline applied via the `TrendLineDashArray` property:
 
 `sample="/charts/data-chart/dash-array-trendline", height="500", alt="{Platform} Trendlines Example"`
 
@@ -43,15 +43,15 @@ You can find more information about related chart features in these topics:
 
 The `CategoryChart` and `FinancialChart` components share the following API properties:
 
-- `TrendLineBrushes`
-- `TrendLinePeriod`
-- `TrendLineThickness`
-- `TrendLineType`
+- `DomainChart.TrendLineBrushes`
+- `DomainChart.TrendLinePeriod`
+- `DomainChart.TrendLineThickness`
+- `DomainChart.TrendLineType`
 
 In the `XamDataChart` component, most types of series have the following API properties:
 
-- `TrendLineBrush`
-- `TrendLineDashArray`
-- `TrendLinePeriod`
-- `TrendLineThickness`
-- `TrendLineType`
+- `ScatterBase.TrendLineBrush`
+- `ScatterBase.TrendLineDashArray`
+- `ScatterBase.TrendLinePeriod`
+- `ScatterBase.TrendLineThickness`
+- `ScatterBase.TrendLineType`

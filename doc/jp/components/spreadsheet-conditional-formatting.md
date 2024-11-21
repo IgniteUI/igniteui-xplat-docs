@@ -2,12 +2,12 @@
 title: {Platform} スプレッドシート | 条件付き書式 | インフラジスティックス
 _description: インフラジスティックスの {Platform} スプレッドシート コントロールを使用して、ワークシートのセルに条件付き書式を設定します。{ProductName} スプレッドシートのサンプルを是非お試しください!
 _keywords: Spreadsheet, conditional formatting, {ProductName}, Infragistics, Worksheet, スプレッドシート, 条件付き書式, インフラジスティックス, ワークシート
-mentionedTypes: ['Spreadsheet', 'ConditionalFormatCollection', 'WorksheetCell', 'Worksheet', 'IWorksheetCellFormat']
+mentionedTypes: ["Spreadsheet", "ConditionalFormatCollection", "WorksheetCell", "Worksheet", "IWorksheetCellFormat"]
 _language: ja
 ---
 # {Platform} Spreadsheet の条件付き書式設定
 
-{Platform} Spreadsheet コンポーネントは、ワークシートのセルに条件付き書式を設定できます。これにより、条件に基づいてデータのさまざまな部分を強調表示できます。
+{Platform} Spreadsheet コンポーネントは、ワークシートのセルに条件付き書式を設定できます。これにより、条件に基づいてデータのさまざまな部分をハイライト表示できます。
 
 ## {Platform} Spreadsheet の条件付き書式設定の例
 

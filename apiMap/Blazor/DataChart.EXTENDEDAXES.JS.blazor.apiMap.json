@@ -1,5 +1,33 @@
 {  "types":[
   {
+    "originalName": "ProportionalCategoryAngleAxis",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeName": "CategoryAngleAxis",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "ProportionalCategoryAngleAxis.cs","mappedName": "IgbProportionalCategoryAngleAxis"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemValue"}], "originalName": "GetItemValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetNormalizingValueAtIndex"}], "originalName": "GetNormalizingValueAtIndex"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetPercentageValue"}], "originalName": "GetPercentageValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetScaledAngle"}], "originalName": "GetScaledAngle"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetUnscaledAngle"}], "originalName": "GetUnscaledAngle"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetValueLabel"}], "originalName": "GetValueLabel"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "IsOthersValue"}], "originalName": "IsOthersValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "OthersCategoryText"}], "originalName": "OthersCategoryText"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "OthersCategoryThreshold"}], "originalName": "OthersCategoryThreshold"},
+      {"names":[{"platform": "Blazor", "mappedType": "OthersCategoryType","mappedName": "OthersCategoryType"}], "originalName": "OthersCategoryType"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueMemberPath"}], "originalName": "ValueMemberPath"} ]
+  },
+  {
+    "originalName": "OthersCategoryContext",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "OthersCategoryContext.cs","mappedName": "OthersCategoryContext"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+  },
+  {
     "originalName": "CategoryAngleAxis",
     "originalNamespace": "Infragistics.Controls.Charts",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -12,6 +40,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetScaledAngle"}], "originalName": "GetScaledAngle"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetUnscaledAngle"}], "originalName": "GetUnscaledAngle"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Interval"}], "originalName": "Interval"},
+      {"names":[{"platform": "Blazor", "mappedType": "AxisAngleLabelMode","mappedName": "LabelMode"}], "originalName": "LabelMode"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "MinorInterval"}], "originalName": "MinorInterval"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "StartAngleOffset"}], "originalName": "StartAngleOffset"} ]
   },
@@ -28,7 +57,8 @@
       {"names":[{"platform": "Blazor", "mappedType": "TimeAxisDisplayType","mappedName": "DisplayType"}], "originalName": "DisplayType"},
       {"names":[{"platform": "Blazor", "mappedType": "long","mappedName": "Interval"}], "originalName": "Interval"},
       {"names":[{"platform": "Blazor", "mappedType": "long","mappedName": "MinorInterval"}], "originalName": "MinorInterval"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ScrollIntoView"}], "originalName": "ScrollIntoView"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ScrollIntoView"}], "originalName": "ScrollIntoView"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "UnevenlySpacedLabels"}], "originalName": "UnevenlySpacedLabels"} ]
   },
   {
     "originalName": "NumericAngleAxis",
@@ -40,6 +70,7 @@
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetScaledAngle"}], "originalName": "GetScaledAngle"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetUnscaledAngle"}], "originalName": "GetUnscaledAngle"},
+      {"names":[{"platform": "Blazor", "mappedType": "AxisAngleLabelMode","mappedName": "LabelMode"}], "originalName": "LabelMode"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "StartAngleOffset"}], "originalName": "StartAngleOffset"} ]
   },
   {
@@ -89,6 +120,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "ActualMaximumValue"}], "originalName": "ActualMaximumValue"},
       {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "ActualMinimumValue"}], "originalName": "ActualMinimumValue"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "DateTimeMemberPath"}], "originalName": "DateTimeMemberPath"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetFullRange"}], "originalName": "GetFullRange"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetIndexClosestToUnscaledValue"}], "originalName": "GetIndexClosestToUnscaledValue"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetItemValue"}], "originalName": "GetItemValue"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsDataPreSorted"}], "originalName": "IsDataPreSorted"},

@@ -2,7 +2,7 @@
 title: {Platform} Icon Button コンポーネント
 _description: 開発者は、{ProductName} Icon Button コンポーネントを使用して、さまざまなアイコンをカスタム色のボタンなどと交換して使用できます。
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Icon Button components, {Platform} Icon Button controls, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Icon Button コンポーネント, {Platform} Icon Button コントロール
-mentionedTypes: ['IconButton', 'ButtonBase', 'Button', 'Icon']
+mentionedTypes: ["IconButton", "ButtonBase", "Button", "Icon"]
 _language: ja
 ---
 
@@ -34,6 +34,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcIconButtonComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -71,12 +74,12 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbIconButtonModule));
 <!-- end: Blazor -->
 `IconButton` の使用を開始する最も簡単な方法は次のとおりです:
 
-```tsx
-<IgrIconButton name="thumb-up" collection="material"></IgrIconButton>
-```
-
 ```html
 <igc-icon-button name="thumb-up" collection="material"></igc-icon-button>
+```
+
+```tsx
+<IgrIconButton name="thumb-up" collection="material"></IgrIconButton>
 ```
 
 ```razor

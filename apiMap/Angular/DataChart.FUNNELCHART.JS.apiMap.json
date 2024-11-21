@@ -67,7 +67,8 @@
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgRect",  "mappedName": "bounds"}], "originalName": "Bounds"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"},
-      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "item"}], "originalName": "Item"} ]
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "item"}], "originalName": "Item"},
+      {"names":[{"platform": "Angular", "mappedType": "IgPoint", "mappedName": "position"}], "originalName": "Position"} ]
   },
   {
     "originalName": "XamFunnelChart",
@@ -77,13 +78,19 @@
     "packageName": "igniteui-charts",
     "names":[{"platform": "Angular","fileName": "igx-funnel-chart-component.ts","mappedName": "IgxFunnelChartComponent"}],
     "members":[
+      {"names":[{"platform": "Angular", "mappedType": "HighlightedValueDisplayMode","mappedName": "actualHighlightValueDisplayMode"}], "originalName": "ActualHighlightValueDisplayMode"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "actualHighlightValueOpacity"}], "originalName": "ActualHighlightValueOpacity"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "allowSliceSelection"}], "originalName": "AllowSliceSelection"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "bottomEdgeWidth"}], "originalName": "BottomEdgeWidth"},
       {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "brushes"}], "originalName": "Brushes"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "exportSerializedVisualData"}], "originalName": "ExportSerializedVisualData"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "flush"}], "originalName": "Flush"},
       {"names":[{"platform": "Angular", "mappedType": "(arg1: any, arg2: number, arg3: any) => string","mappedName": "formatInnerLabel"}], "originalName": "FormatInnerLabel"},
       {"names":[{"platform": "Angular", "mappedType": "(arg1: any, arg2: number, arg3: any) => string","mappedName": "formatOuterLabel"}], "originalName": "FormatOuterLabel"},
       {"names":[{"platform": "Angular", "mappedType": "FunnelSliceDisplay","mappedName": "funnelSliceDisplay"}], "originalName": "FunnelSliceDisplay"},
+      {"names":[{"platform": "Angular", "mappedType": "HighlightedValueDisplayMode","mappedName": "highlightValueDisplayMode"}], "originalName": "HighlightValueDisplayMode"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "highlightValueOpacity"}], "originalName": "HighlightValueOpacity"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "highlightedValueMemberPath"}], "originalName": "HighlightedValueMemberPath"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "innerLabelMemberPath"}], "originalName": "InnerLabelMemberPath"},
       {"names":[{"platform": "Angular", "mappedType": "Visibility","mappedName": "innerLabelVisibility"}], "originalName": "InnerLabelVisibility"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isInverted"}], "originalName": "IsInverted"},
@@ -110,13 +117,13 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "useOuterLabelsForLegend"}], "originalName": "UseOuterLabelsForLegend"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "useUnselectedStyle"}], "originalName": "UseUnselectedStyle"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "valueMemberPath"}], "originalName": "ValueMemberPath"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fill"}], "originalName": "selectedSliceStyle.fill"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "selectedSliceStyle.opacity"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "selectedSliceStyle.stroke"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "selectedSliceStyle.strokeThickness"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fill"}], "originalName": "unselectedSliceStyle.fill"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "unselectedSliceStyle.opacity"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "unselectedSliceStyle.stroke"},
-      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "unselectedSliceStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fill"}], "originalName": "selectedSliceStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "selectedSliceStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "selectedSliceStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "selectedSliceStyle.strokeThickness"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fill"}], "originalName": "unselectedSliceStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "unselectedSliceStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "unselectedSliceStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "unselectedSliceStyle.strokeThickness"} ]
   }]
 }

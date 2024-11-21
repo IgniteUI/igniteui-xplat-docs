@@ -5,8 +5,7 @@
     "packageName": "igniteui-grids",
     "names":[{"platform": "Blazor","fileName": "ColumnFilterCondition.cs","mappedName": "IgbColumnFilterCondition"}],
     "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "IsGroup"}], "originalName": "IsGroup"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ResolveFilter"}], "originalName": "ResolveFilter"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "IsGroup"}], "originalName": "IsGroup"} ]
   },
   {
     "originalName": "ColumnComparisonFilterCondition",
@@ -18,7 +17,6 @@
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsCaseSensitive"}], "originalName": "IsCaseSensitive"},
       {"names":[{"platform": "Blazor", "mappedType": "ColumnComparisonConditionOperatorType","mappedName": "Operator"}], "originalName": "Operator"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ResolveFilter"}], "originalName": "ResolveFilter"},
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "Value"}], "originalName": "Value"} ]
   },
   {
@@ -31,7 +29,6 @@
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Id"}], "originalName": "ID"},
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Index"}], "originalName": "Index"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ResolveFilter"}], "originalName": "ResolveFilter"},
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "Value"}], "originalName": "Value"} ]
   },
   {
@@ -47,7 +44,6 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "IsGroup"}], "originalName": "IsGroup"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Remove"}], "originalName": "Remove"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "RemoveAt"}], "originalName": "RemoveAt"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ResolveFilter"}], "originalName": "ResolveFilter"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ToArray"}], "originalName": "ToArray"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "UsesOrOperator"}], "originalName": "UsesOrOperator"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbColumnFilterCondition","mappedName": "Item"}], "originalName": "this[]"} ]
@@ -651,6 +647,18 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ProvideContainer"}], "originalName": "ProvideContainer"} ]
   },
   {
+    "originalName": "PagedDataProvider",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeName": "DataSourceLocalDataProvider",
+    "packageName": "igniteui-grids",
+    "names":[{"platform": "Blazor","fileName": "PagedDataProvider.cs","mappedName": "PagedDataProvider"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbDataGridPager","mappedName": "_pager"}], "originalName": "_pager"} ]
+  },
+  {
     "originalName": "PageChangedEventArgs",
     "originalNamespace": "Infragistics.Controls.Grid.Implementation",
     "originalBaseTypeNamespace": "System",
@@ -860,18 +868,18 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ToolbarTitle"}], "originalName": "ToolbarTitle"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Undo"}], "originalName": "Undo"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "UpdatePropertyAtKey"}], "originalName": "UpdatePropertyAtKey"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BorderWidthBottom"}], "originalName": "borderWidth.bottom"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BorderWidthLeft"}], "originalName": "borderWidth.left"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BorderWidthRight"}], "originalName": "borderWidth.right"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BorderWidthTop"}], "originalName": "borderWidth.top"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "CornerRadiusBottomLeft"}], "originalName": "cornerRadius.bottomLeft"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "CornerRadiusBottomRight"}], "originalName": "cornerRadius.bottomRight"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "CornerRadiusTopLeft"}], "originalName": "cornerRadius.topLeft"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "CornerRadiusTopRight"}], "originalName": "cornerRadius.topRight"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "EditRowBorderWidthBottom"}], "originalName": "editRowBorderWidth.bottom"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "EditRowBorderWidthLeft"}], "originalName": "editRowBorderWidth.left"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "EditRowBorderWidthRight"}], "originalName": "editRowBorderWidth.right"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "EditRowBorderWidthTop"}], "originalName": "editRowBorderWidth.top"} ]
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BorderWidthBottom"}], "originalName": "borderWidth.bottom"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BorderWidthLeft"}], "originalName": "borderWidth.left"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BorderWidthRight"}], "originalName": "borderWidth.right"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BorderWidthTop"}], "originalName": "borderWidth.top"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "CornerRadiusBottomLeft"}], "originalName": "cornerRadius.bottomLeft"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "CornerRadiusBottomRight"}], "originalName": "cornerRadius.bottomRight"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "CornerRadiusTopLeft"}], "originalName": "cornerRadius.topLeft"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "CornerRadiusTopRight"}], "originalName": "cornerRadius.topRight"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "EditRowBorderWidthBottom"}], "originalName": "editRowBorderWidth.bottom"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "EditRowBorderWidthLeft"}], "originalName": "editRowBorderWidth.left"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "EditRowBorderWidthRight"}], "originalName": "editRowBorderWidth.right"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "EditRowBorderWidthTop"}], "originalName": "editRowBorderWidth.top"} ]
   },
   {
     "originalName": "GridCellPosition",

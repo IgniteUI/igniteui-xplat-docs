@@ -84,18 +84,18 @@
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "RadiusFactor"}], "originalName": "RadiusFactor"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "StartAngle"}], "originalName": "StartAngle"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueMemberPath"}], "originalName": "ValueMemberPath"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LeaderLineFill"}], "originalName": "leaderLineStyle.fill"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "LeaderLineOpacity"}], "originalName": "leaderLineStyle.opacity"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LeaderLineStroke"}], "originalName": "leaderLineStyle.stroke"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "LeaderLineStrokeThickness"}], "originalName": "leaderLineStyle.strokeThickness"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "OthersCategoryFill"}], "originalName": "othersCategoryStyle.fill"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "OthersCategoryOpacity"}], "originalName": "othersCategoryStyle.opacity"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "OthersCategoryStroke"}], "originalName": "othersCategoryStyle.stroke"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "OthersCategoryStrokeThickness"}], "originalName": "othersCategoryStyle.strokeThickness"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectedSliceFill"}], "originalName": "selectedStyle.fill"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "SelectedSliceOpacity"}], "originalName": "selectedStyle.opacity"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectedSliceStroke"}], "originalName": "selectedStyle.stroke"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "SelectedSliceStrokeThickness"}], "originalName": "selectedStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LeaderLineFill"}], "originalName": "leaderLineStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "LeaderLineOpacity"}], "originalName": "leaderLineStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LeaderLineStroke"}], "originalName": "leaderLineStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "LeaderLineStrokeThickness"}], "originalName": "leaderLineStyle.strokeThickness"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "OthersCategoryFill"}], "originalName": "othersCategoryStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "OthersCategoryOpacity"}], "originalName": "othersCategoryStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "OthersCategoryStroke"}], "originalName": "othersCategoryStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "OthersCategoryStrokeThickness"}], "originalName": "othersCategoryStyle.strokeThickness"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectedSliceFill"}], "originalName": "selectedStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "SelectedSliceOpacity"}], "originalName": "selectedStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectedSliceStroke"}], "originalName": "selectedStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "SelectedSliceStrokeThickness"}], "originalName": "selectedStyle.strokeThickness"} ]
   },
   {
     "originalName": "XamDoughnutChart",
@@ -123,9 +123,9 @@
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "PixelScalingRatio"}], "originalName": "PixelScalingRatio"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ProvideContainer"}], "originalName": "ProvideContainer"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbRingSeriesCollection","mappedName": "Series"}], "originalName": "Series"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectedSliceFill"}], "originalName": "selectedStyle.fill"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "SelectedSliceOpacity"}], "originalName": "selectedStyle.opacity"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectedSliceStroke"}], "originalName": "selectedStyle.stroke"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "SelectedSliceStrokeThickness"}], "originalName": "selectedStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectedSliceFill"}], "originalName": "selectedStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "SelectedSliceOpacity"}], "originalName": "selectedStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectedSliceStroke"}], "originalName": "selectedStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "SelectedSliceStrokeThickness"}], "originalName": "selectedStyle.strokeThickness"} ]
   }]
 }

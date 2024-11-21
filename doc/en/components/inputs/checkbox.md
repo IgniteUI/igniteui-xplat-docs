@@ -2,7 +2,7 @@
 title: {Platform} Checkbox Component | {ProductName}
 _description: Learn how to use the {Platform} Checkbox Component to add checkboxes and enable checked, unchecked or indeterminate state for end-users.
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Checkbox components, {Platform} Checkbox controls
-mentionedTypes: ['Checkbox', 'Form']
+mentionedTypes: ["Checkbox", "Form"]
 ---
 
 # {Platform} Checkbox Overview
@@ -12,7 +12,6 @@ The {Platform} Checkbox is a component that lets you add checkboxes to your {Pla
 ## Checkbox Example
 
 `sample="/inputs/checkbox/overview", height="100", alt="{Platform} Checkbox Example"`
-
 
 <div class="divider--half"></div>
 
@@ -35,6 +34,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcCheckboxComponent);
 ```
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+
 <!-- end: WebComponents -->
 
 <!-- React -->

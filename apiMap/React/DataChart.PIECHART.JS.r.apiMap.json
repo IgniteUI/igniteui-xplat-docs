@@ -5,18 +5,6 @@
   ],
   "types":[
   {
-    "originalName": "LegendEmptyValuesMode",
-    "originalNamespace": "Infragistics.Controls.Charts",
-    "isEnum":true,
-    "packageName": "igniteui-charts",
-    "names":[{"platform": "React","fileName": "LegendEmptyValuesMode.ts","mappedName": "LegendEmptyValuesMode"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
-      {"names":[{"platform": "React", "mappedType": "LegendEmptyValuesMode","mappedName": "AlwaysHidden"}], "originalName": "AlwaysHidden"},
-      {"names":[{"platform": "React", "mappedType": "LegendEmptyValuesMode","mappedName": "AlwaysVisible"}], "originalName": "AlwaysVisible"},
-      {"names":[{"platform": "React", "mappedType": "LegendEmptyValuesMode","mappedName": "ShowWhenNoOthersCategory"}], "originalName": "ShowWhenNoOthersCategory"} ]
-  },
-  {
     "originalName": "LabelsPosition",
     "originalNamespace": "Infragistics.Controls.Charts",
     "isEnum":true,
@@ -41,17 +29,6 @@
       {"names":[{"platform": "React", "mappedType": "LeaderLineType","mappedName": "Arc"}], "originalName": "Arc"},
       {"names":[{"platform": "React", "mappedType": "LeaderLineType","mappedName": "Spline"}], "originalName": "Spline"},
       {"names":[{"platform": "React", "mappedType": "LeaderLineType","mappedName": "Straight"}], "originalName": "Straight"} ]
-  },
-  {
-    "originalName": "OthersCategoryType",
-    "originalNamespace": "Infragistics.Controls.Charts",
-    "isEnum":true,
-    "packageName": "igniteui-charts",
-    "names":[{"platform": "React","fileName": "OthersCategoryType.ts","mappedName": "OthersCategoryType"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
-      {"names":[{"platform": "React", "mappedType": "OthersCategoryType","mappedName": "Number"}], "originalName": "Number"},
-      {"names":[{"platform": "React", "mappedType": "OthersCategoryType","mappedName": "Percent"}], "originalName": "Percent"} ]
   },
   {
     "originalName": "SliceSelectionMode",
@@ -160,6 +137,7 @@
       {"names":[{"platform": "React", "mappedType": "IgPoint", "mappedName": "origin"}], "originalName": "Origin"},
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "originalEvent"}], "originalName": "OriginalEvent"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "outline"}], "originalName": "Outline"},
+      {"names":[{"platform": "React", "mappedType": "IgPoint", "mappedName": "position"}], "originalName": "Position"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "radius"}], "originalName": "Radius"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "startAngle"}], "originalName": "StartAngle"} ]
   },
@@ -235,14 +213,14 @@
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "textStyle"}], "originalName": "TextStyle"},
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "toolTip"}], "originalName": "ToolTip"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "valueMemberPath"}], "originalName": "ValueMemberPath"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "fill"}], "originalName": "othersCategoryStyle.fill"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "othersCategoryStyle.opacity"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "othersCategoryStyle.stroke"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "othersCategoryStyle.strokeThickness"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "fill"}], "originalName": "selectedStyle.fill"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "selectedStyle.opacity"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "selectedStyle.stroke"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "selectedStyle.strokeThickness"} ]
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "string",  "mappedName": "fill"}], "originalName": "othersCategoryStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "othersCategoryStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "othersCategoryStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "othersCategoryStyle.strokeThickness"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "string",  "mappedName": "fill"}], "originalName": "selectedStyle.fill"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "opacity"}], "originalName": "selectedStyle.opacity"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "string",  "mappedName": "stroke"}], "originalName": "selectedStyle.stroke"},
+      {"isVirtual":true,"names":[{"platform": "React", "mappedType": "number",  "mappedName": "strokeThickness"}], "originalName": "selectedStyle.strokeThickness"} ]
   },
   {
     "originalName": "PieSliceOthersContext",

@@ -2,7 +2,7 @@
 title: {Platform} Dock Manager | Customization | Infragistics
 _description: Use Infragistics' {Platform} dock manager component to manage the layout through panes, with the ability to customize it. Check out {ProductName} dock manager tutorials!
 _keywords: dock manager, layout, customization, {ProductName}
-mentionedTypes: ['DockManager', 'ContentPane']
+mentionedTypes: ["DockManager", "ContentPane"]
 ---
 
 ## Customizing {Platform} Dock Manager

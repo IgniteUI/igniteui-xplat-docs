@@ -311,9 +311,9 @@ public stateMessage(cell: IgxGridCell) {
 
 `sample="/{ComponentSample}/data-validator-service-cross-field", height="560", alt="{Platform} {ComponentTitle} クロス フィールド検証の例"`
 
-<!-- ComponentEnd:Grid -->
+<!-- ComponentEnd: Grid -->
 
-<!-- ComponentStart:HierarchicalGrid -->
+<!-- ComponentStart: HierarchicalGrid -->
 
 クロス フィールド検証は、`FormGroupCreated` イベントで formGroup に追加できます。その中で複数のフィールドの有効状態を比較できます。
 
@@ -415,9 +415,9 @@ public stateMessage(cell: IgxGridCell) {
 
 
 
-<!-- ComponentEnd:HierarchicalGrid -->
+<!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- ComponentStart:TreeGrid -->
+<!-- ComponentStart: TreeGrid -->
 
 以下のサンプルは、同じレコードの異なるフィールド間のクロスフィールド検証を示しています。ある人に指定された City が現在設定されている Country にあるかどうか、およびその逆を確認します。また、ある人が雇用されたときにその人が 18 歳かどうかも確認します。
 
@@ -518,7 +518,7 @@ public stateMessage(cell: IgxGridCell) {
 
 
 
-<!-- ComponentEnd:TreeGrid -->
+<!-- ComponentEnd: TreeGrid -->
 
 ## スタイル設定
 
@@ -559,7 +559,7 @@ public stateMessage(cell: IgxGridCell) {
 ### 無効な行とセルのスタイル
 
 行とセルは、開発者が行またはセルが無効かどうか、およびアクティブなエラーの種類を知るための API を提供します。
-<!-- ComponentStart:Grid -->
+<!-- ComponentStart: Grid -->
 ```ts
 public rowStyles = {
     background: (row: RowType) => row.validation.status === 'INVALID' ? '#FF000033' : '#00000000'
@@ -576,9 +576,9 @@ public cellStyles = {
 <{ComponentInstance} [rowStyles]="rowStyles">
     <igx-column field="ReorderLevel" header="ReorderLever" required [cellClasses]="cellStyles">
 ```
-<!-- ComponentEnd:Grid -->
+<!-- ComponentEnd: Grid -->
 
-<!-- ComponentStart:HierarchicalGrid -->
+<!-- ComponentStart: HierarchicalGrid -->
 ```ts
 public rowStyles = {
     background: (row: RowType) => row.validation.status === 'INVALID' ? '#FF000033' : '#00000000'
@@ -608,10 +608,10 @@ public cellStyles = {
 </igx-hierarchical-grid>
 ```
 
-<!-- ComponentEnd:HierarchicalGrid -->
+<!-- ComponentEnd: HierarchicalGrid -->
 
 
-<!-- ComponentStart:TreeGrid -->
+<!-- ComponentStart: TreeGrid -->
 ```razor
 public rowStyles = {
     background: (row: RowType) => row.cells.find(c => c.validation.errors !== null && c.validation.errors !== undefined) ? '#FF000033' : '#00000000'
@@ -628,7 +628,7 @@ public cellStyles = {
 <igx-tree-grid [rowStyles]="rowStyles">
         <igx-column *ngFor="let c of columns" [field]="c.field" [dataType]="c.dataType" [header]="c.label" [required]="c.required" [cellClasses]="cellStyles">
 ```
-<!-- ComponentEnd:TreeGrid -->
+<!-- ComponentEnd: TreeGrid -->
 
 
 ### デモ
@@ -660,12 +660,12 @@ public cellStyles = {
 
 <!-- Blazor -->
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [{ComponentTitle} 編集](editing.md)
 * [{ComponentTitle} 行の編集](row-editing.md)
 * [{ComponentTitle} 行の追加](row-adding.md)
 * [{ComponentTitle} トランザクション](batch-editing.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 <!-- end: Blazor -->
 

@@ -2,7 +2,7 @@
 title: {Platform} スライダーと範囲スライダー コンポーネント | {ProductName}
 _description: {ProductName} の {Platform} スライダーと範囲スライダーでつまみトラックを使用して、特定の範囲で選択を構成する方法を学びます。単一スライダーと範囲スライダーのどちらかを選択できます。
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Slider Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, {Platform} スライダー コンポーネント, インフラジスティックス
-mentionedTypes: ['Slider', 'SliderLabel', 'RangeSlider']
+mentionedTypes: ["Slider", "SliderLabel", "RangeSlider"]
 _language: ja
 ---
 
@@ -33,6 +33,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -69,15 +72,15 @@ builder.Services.AddIgniteUIBlazor(
 
 `Slider` と `RangeSlider` の使用を開始する最も簡単な方法は次のとおりです:
 
+```html
+<igc-slider value="40"></igc-slider>
+<igc-range-slider lower="20" upper="70"></igc-range-slider>
+```
+
 ```tsx
  <IgrSlider value="40" />
     <span className="slider-label"></span>
 <IgrRangeSlider lower="20" upper="70"></IgrRangeSlider>
-```
-
-```html
-<igc-slider value="40"></igc-slider>
-<igc-range-slider lower="20" upper="70"></igc-range-slider>
 ```
 
 ```razor
@@ -178,7 +181,7 @@ builder.Services.AddIgniteUIBlazor(
 
 次のサンプルは、トラックの塗りつぶしとつまみのパーツのスタイルを設定する方法を示しています。
 
-`sample="/inputs/slider/styling", height="120", alt="{Platform} Slider スタイル設定の例"`
+`sample="/inputs/slider/styling", height="250", alt="{Platform} Slider スタイル設定の例"`
 
 
 

@@ -2,16 +2,18 @@
   {
     "originalName": "IDataSeriesAdapterRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "IDataSeriesAdapterRule.cs","mappedName": "IDataSeriesAdapterRule"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
       {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"} ]
   },
   {
     "originalName": "DataSeriesAdapterRunContext",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "DataSeriesAdapterRunContext.cs","mappedName": "DataSeriesAdapterRunContext"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -20,6 +22,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "clearDataSeries"}], "originalName": "ClearDataSeries"},
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "excludedProperties"}], "originalName": "ExcludedProperties"},
       {"names":[{"platform": "Blazor", "mappedType": "DataSourceLocalDataProvider","mappedName": "getCurrentDataSource"}], "originalName": "GetCurrentDataSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "DataSourceLocalDataProvider","mappedName": "getCurrentHighlightingDataSource"}], "originalName": "GetCurrentHighlightingDataSource"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getCurrentPath"}], "originalName": "GetCurrentPath"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getCurrentPathSegment"}], "originalName": "GetCurrentPathSegment"},
       {"names":[{"platform": "Blazor", "mappedType": "DataSeries","mappedName": "getDataSeriesAt"}], "originalName": "GetDataSeriesAt"},
@@ -32,11 +35,13 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "localize"}], "originalName": "Localize"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbDataSeriesAdapterImplementation","mappedName": "owner"}], "originalName": "Owner"},
       {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "popDataSource"}], "originalName": "PopDataSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "popHighlightingDataSource"}], "originalName": "PopHighlightingDataSource"},
       {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "popParentTitle"}], "originalName": "PopParentTitle"},
       {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "popPath"}], "originalName": "PopPath"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "popSubProvider"}], "originalName": "PopSubProvider"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "populateDataSeries"}], "originalName": "PopulateDataSeries"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "pushDataSource"}], "originalName": "PushDataSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "pushHighlightingDataSource"}], "originalName": "PushHighlightingDataSource"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "pushParentTitle"}], "originalName": "PushParentTitle"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "pushPath"}], "originalName": "PushPath"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "recurseRules"}], "originalName": "RecurseRules"},
@@ -44,6 +49,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "IgbDataSeriesCollection","mappedName": "_dataSeries"}], "originalName": "_dataSeries"},
       {"names":[{"platform": "Blazor", "mappedType": "Stack","mappedName": "_dataSources"}], "originalName": "_dataSources"},
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "_excludedProeprties"}], "originalName": "_excludedProeprties"},
+      {"names":[{"platform": "Blazor", "mappedType": "Stack","mappedName": "_highlightingDataSources"}], "originalName": "_highlightingDataSources"},
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "_includedProperties"}], "originalName": "_includedProperties"},
       {"names":[{"platform": "Blazor", "mappedType": "Stack","mappedName": "_parentTitles"}], "originalName": "_parentTitles"},
       {"names":[{"platform": "Blazor", "mappedType": "Stack","mappedName": "_paths"}], "originalName": "_paths"},
@@ -52,7 +58,7 @@
   {
     "originalName": "DataSeriesDataProviderAnalyzer",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "DataSeriesDataProviderAnalyzer.cs","mappedName": "DataSeriesDataProviderAnalyzer"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -64,6 +70,10 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "extractTitle"}], "originalName": "ExtractTitle"},
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "getAllCollectionProperties"}], "originalName": "GetAllCollectionProperties"},
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "getAllDateTimeProperties"}], "originalName": "GetAllDateTimeProperties"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "getAllDistinctMonotonicNumericProperties"}], "originalName": "GetAllDistinctMonotonicNumericProperties"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "getAllExcludedDateTimeProperties"}], "originalName": "GetAllExcludedDateTimeProperties"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "getAllExcludedDistinctMonotonicNumericProperties"}], "originalName": "GetAllExcludedDistinctMonotonicNumericProperties"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "getAllExcludedStringProperties"}], "originalName": "GetAllExcludedStringProperties"},
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "getAllNumericProperties"}], "originalName": "GetAllNumericProperties"},
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "getAllObjectProperties"}], "originalName": "GetAllObjectProperties"},
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "getAllPropertiesWithIntent"}], "originalName": "GetAllPropertiesWithIntent"},
@@ -81,6 +91,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getFirstNumericProperty"}], "originalName": "GetFirstNumericProperty"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getFirstStringProperty"}], "originalName": "GetFirstStringProperty"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getFirstStringPropertyPreferringDistinct"}], "originalName": "GetFirstStringPropertyPreferringDistinct"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "getMatchingExcludedProperties"}], "originalName": "GetMatchingExcludedProperties"},
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "getMatchingProperties"}], "originalName": "GetMatchingProperties"},
       {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "getNonNullPropertyValue"}], "originalName": "GetNonNullPropertyValue"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getParentTitle"}], "originalName": "GetParentTitle"},
@@ -116,7 +127,7 @@
   {
     "originalName": "DataSeries",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "DataSeries.cs","mappedName": "DataSeries"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -133,7 +144,9 @@
       {"names":[{"platform": "Blazor", "mappedType": "DataSeriesMemberPathHint","mappedName": "getMemberPathHintAt"}], "originalName": "GetMemberPathHintAt"},
       {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "getMemberPathHintCount"}], "originalName": "GetMemberPathHintCount"},
       {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "hasMatchingHint"}], "originalName": "HasMatchingHint"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "highlightedData"}], "originalName": "HighlightedData"},
       {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "isMatch"}], "originalName": "IsMatch"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "removeMemberPathHint"}], "originalName": "RemoveMemberPathHint"},
@@ -148,7 +161,7 @@
   {
     "originalName": "DataSeriesMemberPathHint",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "DataSeriesMemberPathHint.cs","mappedName": "DataSeriesMemberPathHint"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -164,16 +177,31 @@
   {
     "originalName": "IExternalDataSeriesAdapter",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "IExternalDataSeriesAdapter.cs","mappedName": "IExternalDataSeriesAdapter"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "DataSourceLocalDataProvider","mappedName": "getDataProvider"}], "originalName": "GetDataProvider"},
       {"names":[{"platform": "Blazor", "mappedType": "DataSource","mappedName": "getLocalDataSource"}], "originalName": "GetLocalDataSource"} ]
   },
   {
+    "originalName": "SimplePieSeriesRule",
+    "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "SimplePieSeriesRule.cs","mappedName": "SimplePieSeriesRule"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "distinctCheckThreshold"}], "originalName": "DistinctCheckThreshold"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "fallbackTypeIfUnsupported"}], "originalName": "FallbackTypeIfUnsupported"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
+      {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"},
+      {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "useColumnThreshold"}], "originalName": "UseColumnThreshold"} ]
+  },
+  {
     "originalName": "SimpleFinancialPriceSeriesRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "SimpleFinancialPriceSeriesRule.cs","mappedName": "SimpleFinancialPriceSeriesRule"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -181,17 +209,21 @@
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "except"}], "originalName": "Except"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getDataSourceTitle"}], "originalName": "GetDataSourceTitle"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
       {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"} ]
   },
   {
     "originalName": "SimpleScatterSeriesRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "SimpleScatterSeriesRule.cs","mappedName": "SimpleScatterSeriesRule"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "createScatterSeries"}], "originalName": "CreateScatterSeries"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
       {"names":[{"platform": "Blazor", "mappedType": "List","mappedName": "getXProps"}], "originalName": "GetXProps"},
       {"names":[{"platform": "Blazor", "mappedType": "List","mappedName": "getYProps"}], "originalName": "GetYProps"},
       {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "isXProp"}], "originalName": "IsXProp"},
@@ -202,24 +234,28 @@
   {
     "originalName": "SubCollectionsRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "SubCollectionsRule.cs","mappedName": "SubCollectionsRule"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "collectionTransformationThreshold"}], "originalName": "CollectionTransformationThreshold"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
       {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"} ]
   },
   {
     "originalName": "SimpleCategorySeriesRule",
     "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "SimpleCategorySeriesRule.cs","mappedName": "SimpleCategorySeriesRule"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "distinctCheckThreshold"}], "originalName": "DistinctCheckThreshold"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "evaluate"}], "originalName": "Evaluate"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "fallbackTypeIfUnsupported"}], "originalName": "FallbackTypeIfUnsupported"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getPrimaryAxisLabelsString"}], "originalName": "GetPrimaryAxisLabelsString"},
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "getPrimaryAxisLabelsStrings"}], "originalName": "GetPrimaryAxisLabelsStrings"},
       {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "priority"}], "originalName": "Priority"},
       {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "useColumnThreshold"}], "originalName": "UseColumnThreshold"} ]
   }]

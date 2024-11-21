@@ -2,7 +2,7 @@
 title: {Platform} Switch コンポーネント – {ProductName}
 _description: {ProductName} Switch コンポーネントを使用すると、開発者はアプリケーション内でバイナリのオン/オフまたは true/false のデータ入力関数を使用できます。
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Switch components, {Platform} Switch controls, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Switch コンポーネント, {Platform} Switch コントロール
-mentionedTypes: ['Switch']
+mentionedTypes: ["Switch"]
 _language: ja
 ---
 
@@ -36,6 +36,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcSwitchComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
 <!-- end: WebComponents -->
 
 <!-- React -->
@@ -75,12 +78,12 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 
 `Switch` の使用を開始する最も簡単な方法は次のとおりです:
 
-```tsx
-<IgrSwitch></IgrSwitch>
-```
-
 ```html
 <igc-switch></igc-switch>
+```
+
+```tsx
+<IgrSwitch></IgrSwitch>
 ```
 
 ```razor

@@ -2,7 +2,7 @@
 title: {Platform} ポイント チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの {Platform} ポイント チャート
 _keywords: {Platform} Charts, Point Chart, Infragistics, {Platform} チャート, ポイント チャート, インフラジスティックス
-mentionedTypes: ["DomainChart", "CategoryChart", "CategoryChartType", "Legend", 'Series']
+mentionedTypes: ["DomainChart", "CategoryChart", "CategoryChartType", "Legend", "Series"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -12,7 +12,7 @@ _language: ja
 
 ## {Platform} ポイント チャートの例
 
-`CategoryChart` コントロールで {Platform}  ポイント チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを **Point** 列挙型に設定します。
+`CategoryChart` コントロールで {Platform}  ポイント チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`CategoryChart.ChartType` プロパティを **Point** 列挙型に設定します。
 
 `sample="/charts/category-chart/point-chart-multiple-sources", height="600", alt="{Platform} ポイント チャートの例"`
 
@@ -72,7 +72,7 @@ _language: ja
 
 - `CategoryChart`
 - `XamDataChart`
-- `ChartType`
+- `CategoryChart.ChartType`
 - `MarkerTypes`
 - `MarkerOutlines`
 - `MarkerBrushes`

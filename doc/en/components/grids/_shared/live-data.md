@@ -212,7 +212,7 @@ Take leverage of the [Dock Manager](../../layouts/dock-manager.md) WebComponent 
 * `Cell`
 
 ## Additional Resources
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -222,7 +222,7 @@ Take leverage of the [Dock Manager](../../layouts/dock-manager.md) WebComponent 
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 

@@ -2,7 +2,7 @@
 title: {Platform} Avatar | レイアウト コントロール | インフラジスティックス
 _description: インフラジスティックスの {Platform} Avatar コンポーネントを使用して、画像、アイコン、またはイニシャルを表示します。
 _keywords: avatar, layout, {ProductName}, Infragistics, アバター, レイアウト, インフラジスティックス
-mentionedTypes: ['Avatar']
+mentionedTypes: ["Avatar"]
 _language: ja
 ---
 
@@ -13,8 +13,6 @@ _language: ja
 ## {Platform} Icon Avatar の例
 
 `sample="/layouts/avatar/icon", height="80", alt="{Platform} Avatar の例"`
-
-
 
 <div class="divider--half"></div>
 
@@ -70,6 +68,8 @@ import { defineComponents, IgcAvatarComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcAvatarComponent);
 ```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 `Avatar` は、画像、イニシャル、またはアイコンを含むその他のコンテンツを表示できます。`Avatar` の宣言は次のように簡単です。
 

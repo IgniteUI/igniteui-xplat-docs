@@ -2,7 +2,7 @@
 title: {Platform} Point Chart | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Point Chart
 _keywords: {Platform} Charts, Point Chart, Infragistics
-mentionedTypes: ["DomainChart", "CategoryChart", "CategoryChartType", "Legend", 'Series']
+mentionedTypes: ["DomainChart", "CategoryChart", "CategoryChartType", "Legend", "Series"]
 namespace: Infragistics.Controls.Charts
 ---
 # {Platform} Point Chart
@@ -11,7 +11,7 @@ The {ProductName} Point Chart renders a collection of points. Values are represe
 
 ## {Platform} Point Chart Example
 
-You can create the {Platform} Point Chart in the `CategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to **Point** enum, as shown in the example below.
+You can create the {Platform} Point Chart in the `CategoryChart` control by binding your data to `ItemsSource` property and setting `CategoryChart.ChartType` property to **Point** enum, as shown in the example below.
 
 `sample="/charts/category-chart/point-chart-multiple-sources", height="600", alt="{Platform} Point Chart Example"`
 
@@ -71,7 +71,7 @@ The following table lists API members mentioned in the above sections:
 
 - `CategoryChart`
 - `XamDataChart`
-- `ChartType`
+- `CategoryChart.ChartType`
 - `MarkerTypes`
 - `MarkerOutlines`
 - `MarkerBrushes`

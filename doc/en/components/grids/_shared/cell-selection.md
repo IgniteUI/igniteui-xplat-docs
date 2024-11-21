@@ -7,7 +7,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
 ---
 
-# {Platform} Cell Selection
+# {Platform} {ComponentTitle} Cell Selection
 
 The {ProductName} Cell Selection in {Platform} {ComponentTitle} enables rich data select capabilities and offers powerful API in the `{ComponentName}` component. The {Platform} {ComponentTitle} supports three selection modes:
 
@@ -21,7 +21,7 @@ In the `{ComponentName}` you can specify the cell selection mode on grid level. 
 
 Let's dive deeper into each of these options.
 
-## {Platform} Cell Selection Example
+## {Platform} {ComponentTitle} Cell Selection Example
 
 The sample below demonstrates the three types of `{ComponentName}`'s **cell selection** behavior. Use the buttons below to enable each of the available selection modes. A brief description will be provided on each button interaction through a snackbar message box.
 
@@ -93,7 +93,7 @@ If you want to disable cell selection you can just set `CellSelection` to **none
 Below are the methods that you can use in order to select ranges, clear selection or get selected cells data.
 
 
-<!-- Angular, WebComponents, React -->
+<!-- Angular, WebComponents, React, Blazor -->
 
 ### Select range
 
@@ -111,7 +111,29 @@ const range = { rowStart: 2, rowEnd: 2, columnStart: 1, columnEnd: 1 };
 gridRef.current.selectRange(range);
 ```
 
-<!-- end: Angular, WebComponents, React -->
+<!-- Blazor -->
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
+```razor
+<{ComponentSelector} @ref=grid  CellSelection="GridSelectionMode.Multiple" AutoGenerate=true></<{ComponentSelector}>
+
+@code {
+    private {ComponentSelector} grid;
+
+    private async void SetSelection()
+    {        
+        IgbGridSelectionRange selectionRange = new IgbGridSelectionRange();
+        selectionRange.ColumnStart = 1;
+        selectionRange.ColumnEnd = 1;
+        selectionRange.RowStart = 2;
+        selectionRange.RowEnd = 2;
+
+        this.grid.SelectRange(new IgbGridSelectionRange[] {});
+    }
+}
+```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+<!-- end: Blazor -->
+<!-- end: Angular, WebComponents, React, Blazor -->
 
 ### Clear cell selection
 
@@ -144,10 +166,10 @@ gridRef.current.clearCellSelection();
 `GetSelectedData` will return array of the selected data in Dictionary format. Examples below:
 
 ```razor
-<IgbGrid @ref=grid  CellSelection="GridSelectionMode.Multiple" AutoGenerate=true></IgbGrid>
+<{ComponentSelector} @ref=grid  CellSelection="GridSelectionMode.Multiple" AutoGenerate=true></<{ComponentSelector}>
 
 @code {
-    private IgbGrid grid;
+    private {ComponentSelector} grid;
 
     private async void GetSelectedData()
     {
@@ -246,7 +268,7 @@ The multi-cell selection is index based (DOM elements selection).
 
 ## Styling
 
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming-grid.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
 <!-- ComponentStart: Grid -->
@@ -278,27 +300,61 @@ Then set the related CSS properties for that class:
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
-
+<!-- WebComponents -->
 ```ts
-<igc-tree-grid id="treeGrid"></igc-tree-grid>
+<igc-tree-grid class="treeGrid"></igc-tree-grid>
 ```
+<!-- end: WebComponents -->
 
 ```razor
-<IgbTreeGrid Id="treeGrid"></IgbTreeGrid>
+<IgbTreeGrid Class="treeGrid"></IgbTreeGrid>
+```
+
+```tsx
+<IgrTreeGrid className="treeGrid"></IgrTreeGrid>
 ```
 
 Then set the related CSS properties for that class:
 
 ```css
-#treeGrid {
-    --cell-selected-text-color: #fff;
-    --cell-active-border-color: #f2c43c;
-    --cell-selected-background: #0062a3;
-    --cell-editing-background: #0062a3;
+.treeGrid {
+    --ig-grid-cell-selected-text-color: #fff;
+    --ig-grid-cell-active-border-color: #f2c43c;
+    --ig-grid-cell-selected-background: #0062a3;
+    --ig-grid-cell-editing-background: #0062a3;
 }
 ```
 
 <!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+
+<!-- WebComponents -->
+```ts
+<igc-hierarchical-grid class="hGrid"></igc-hierarchical-grid>
+```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrHierarchicalGrid className="hGrid"></IgrHierarchicalGrid>
+```
+
+```razor
+<IgbHierarchicalGrid Class="hGrid"></IgbHierarchicalGrid>
+```
+
+Then set the related CSS properties for that class:
+
+```css
+.hGrid {
+    --ig-grid-cell-selected-text-color: #fff;
+    --ig-grid-cell-active-border-color: #f2c43c;
+    --ig-grid-cell-selected-background: #0062a3;
+    --ig-grid-cell-editing-background: #0062a3;
+}
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
 
 ### Demo
 
@@ -380,17 +436,11 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 ## API References
 
 * `{ComponentName}`
-* `Cell`
-<!-- ComponentStart: Grid, HierarchicalGrid -->
-* `GridRow`
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
-<!-- ComponentStart: TreeGrid -->
-* `TreeGridRow`
-<!-- ComponentEnd: TreeGrid -->
+
 
 ## Additional Resources
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid, HierarchicalGrid -->
 * [Selection](selection.md)
 * [Row Selection](row-selection.md)
 * [Filtering](filtering.md)
@@ -400,7 +450,7 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Virtualization and Performance](virtualization.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 

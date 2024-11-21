@@ -10,7 +10,7 @@ _language: ja
 
 # {ComponentTitle} の列の並べ替えと移動
 
-{Platform} {ComponentTitle} の {ProductName} 列移動機能を使用すると、列をすばやく簡単に並べ替えることができます。 これは、列移動 API を使用するか、マウスまたはタッチ ジェスチャを使用してヘッダーを別の位置にドラッグ アンド ドロップすることによって実行できます。{Platform} {ComponentTitle} では、ピン固定された列とピン固定されていない列、および[複数列ヘッダー](multi-column-headers.md)に対しても列の移動を有効にすることができます。
+{Platform} {ComponentTitle} の {ProductName} 列移動機能を使用すると、列をすばやく簡単に並べ替えることができます。これは、列移動 API を使用するか、マウスまたはタッチ ジェスチャを使用してヘッダーを別の位置にドラッグ アンド ドロップすることによって実行できます。{Platform} {ComponentTitle} では、ピン固定された列とピン固定されていない列、および[複数列ヘッダー](multi-column-headers.md)に対しても列の移動を有効にすることができます。
 
 > [!Note]
 > 列と列グループ間の順序変更は、それらが階層の同じレベルにあり、両方が同じグループにある場合にのみ許可されます。列/列グループが最上位の列である場合、列/列グループ間を移動できます。
@@ -65,6 +65,7 @@ function headerTemplate(ctx: IgrCellTemplateContext) {
 ## 概要
 
 **列移動**機能は各列レベルで有効にできます。つまり、`{ComponentName}` に移動可能な列または移動不可の列の両方を含むことができます。`{ComponentName}` の `Moving` 入力によって制御されます。
+<!-- ComponentStart: Grid -->
 
 <!-- Angular -->
 ```html
@@ -88,6 +89,45 @@ function headerTemplate(ctx: IgrCellTemplateContext) {
 ```
 <!-- end: React -->
 
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+
+<!-- Angular -->
+```html
+<{ComponentSelector} [moving]="true">
+    ...
+    <{RowIslandSelector} [moving]="true"></{RowIslandSelector}>
+</{ComponentSelector}>
+```
+<!-- end: Angular -->
+
+```razor
+<{ComponentSelector} Moving=true>
+    ...
+    <{RowIslandSelector} Moving=true></{RowIslandSelector}>
+</{ComponentSelector}>
+```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} moving="true">
+    ...
+    <{RowIslandSelector} moving="true"></{RowIslandSelector}>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<{ComponentSelector} moving="true">
+    ...
+    <{RowIslandSelector} moving="true"></{RowIslandSelector}>
+</{ComponentSelector}>
+```
+<!-- end: React -->
+
+<!-- ComponentEnd: HierarchicalGrid -->
 ## API
 
 ドラッグアンドドロップ機能に加えて、列の移動機能には、プログラムで列を移動/並べ替えできる API メソッドも用意されています。
@@ -153,12 +193,12 @@ idColumn.move(3);
     <igc-column field="Change On Year(%)" data-type="Number" ></igc-column>
 </{ComponentSelector}>
 ```
+
 ```typescript
 constructor() {
-    var dataGrid = this.dataGrid = document.getElementById('dataGrid') as IgcGridComponent;
+    var dataGrid = this.dataGrid = document.getElementById('dataGrid') as {ComponentName}Component;
     dataGrid.data = this.data;
     dataGrid.addEventListener("columnMovingEnd", this.onColumnMovingEnd);
-
 }
 ```
 ```typescript
@@ -170,6 +210,7 @@ public onColumnMovingEnd(event) {
 ```
 <!-- end: WebComponents -->
 
+<!-- ComponentStart: Grid, HierarchicalGrid -->
 ```tsx
 function onColumnMovingEnd(grid: IgrGridBaseDirective, event: IgrColumnMovingEventArgs) {
    if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {
@@ -182,13 +223,14 @@ function onColumnMovingEnd(grid: IgrGridBaseDirective, event: IgrColumnMovingEve
     <IgrColumn field="Change On Year(%)" dataType="Number" ></IgrColumn>
 </{ComponentSelector}>
 ```
+<!-- ComponentEnd: Grid, HierarchicalGrid -->
+
 ```razor
     <{ComponentSelector} ShowGroupArea="true" @ref='Grid' Width="100%" Height="100%"
              AllowFiltering=true
              FilterMode="FilterMode.ExcelStyleFilter"
              AutoGenerate=true
              Data=northwindEmployees
-             DisplayDensity="DisplayDensity.Compact"
              Moving="true"
              ColumnMovingEndScript='onColumnMovingEnd'>
     </{ComponentSelector}>
@@ -327,7 +369,7 @@ $dark-grid-column-moving-theme: grid-theme(
 <!-- WebComponents, Blazor, React -->
 ## スタイル設定
 
-定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming-grid.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
 
 色を変更したい場合は、最初にグリッドのクラスを設定する必要があります:
 
@@ -365,7 +407,7 @@ $dark-grid-column-moving-theme: grid-theme(
 
 ## その他のリソース
 
-<!-- ComponentStart:  Grid -->
+<!-- ComponentStart: Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
@@ -375,7 +417,7 @@ $dark-grid-column-moving-theme: grid-theme(
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
 * [検索](search.md)
-<!-- ComponentEnd:  Grid -->
+<!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

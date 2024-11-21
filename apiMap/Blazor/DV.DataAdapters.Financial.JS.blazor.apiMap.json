@@ -2,7 +2,7 @@
   {
     "originalName": "StockChangedEventArgs",
     "originalNamespace": "Infragistics.DataAdapters",
-    "packageName": "undefined",
+    "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "StockChangedEventArgs.cs","mappedName": "IgbStockChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "AddedSymbols"}], "originalName": "AddedSymbols"},

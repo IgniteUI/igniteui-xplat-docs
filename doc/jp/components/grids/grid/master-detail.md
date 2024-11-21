@@ -1,8 +1,8 @@
 ---
-title: {Platform} {ComponentTitle} マスターと詳細 Grid - インフラジスティックス
+title: {Platform} マスターと詳細 Grid - インフラジスティックス
 _description: Ignite UI {Platform} Grid を使用して行データの展開可能な詳細ビュー テンプレートを定義します。マスターと詳細スタイル データを階層構造で表示する場合に便利です。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, master detail, Infragistics, マスターと詳細, インフラジスティックス
-mentionedTypes: ['Infragistics.Controls.Grid']
+mentionedTypes: ["Infragistics.Controls.Grid"]
 _language: ja
 ---
 
@@ -140,13 +140,10 @@ const masterDetailTemplate = ({dataContext}:{dataContext: IgrGridMasterDetailCon
 | カスタム詳細テンプレート内のタブ ナビゲーションは、次のフォーカスされた要素が表示ビュー ポート以外にある場合、マスター グリッドのスクロール位置を更新しない場合があります。| カスタム詳細テンプレート内のタブ ナビゲーションは、ブラウザーに残されています。 |
 | `<igc-column>` 定義を含む詳細ビュー内のグリッドをテンプレート化する際に親グリッドもそれらの列をレンダリングします。 | これは、ネストされたグリッドで autoGenerate=true を使用して回避できます。これらの列の要素を変更する必要がある場合、`ColumnInit` イベントを使用できます。|
 | 詳細テンプレートは Excel にエクスポートされません。| 詳細テンプレートにはあらゆる種類のコンテンツが含まれているため、Excel にエクスポートすることはできません。|
-| 検索機能は、詳細テンプレートの要素を強調表示しません。 | |
+| 検索機能は、詳細テンプレートの要素をハイライト表示しません。 | |
 
 ## API リファレンス
 
 * `Grid`
 * `Column`
-* `GridRow`
-* `Cell`
-* `TreeGridRow`
 * `HierarchicalGridRow`
