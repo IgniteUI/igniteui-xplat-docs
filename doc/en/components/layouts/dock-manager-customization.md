@@ -100,14 +100,10 @@ Try it in the example below:
 
 ## Split Panes Fixed Size Mode
 
-By default, the size of a pane is relative to the sizes of its sibling panes and defaults to 100. If you have two sibling panes, where the first one has size set to 400 and the second one - size set to 200, the first will be twice the size of the second one.
+By default, the size of a pane is relative to the sizes of its sibling panes and defaults to 100. If you have two sibling panes, where the first one has its size set to 400 and the second one - to 200, the first will be twice the size of the second one and these two panes would fill up all the available space.
 
-If you want to show panes in pixels instead of relative size, you should set the `useFixedSize` of the parent split pane. When this property is set to **true** all children are sized in pixels, based on their `size` property. With that modification, the first pane will span across 400 pixels and the second one - 200 pixels.
+If, for certain panes, you want to specify their sizes in pixels, instead of relying on the relative distribution of all the available space, you should set the `useFixedSize` of the parent split pane. When this property is set to **true** all children are sized in pixels, based on their `size` property. With that modification, the first pane will span across 400 pixels and the second one - 200 pixels. Further resizing via the splitter would change only the size of the current content pane without affecting the sizes of its siblings. Once the sum of the child panes' sizes exceeds their parent's size, a scrollbar will appear making the parent split pane scrollable.
 
-```md
-> [!Note]
-> If the sum of the width/heights (depending on the split pane orientation) of the sibling panes is more than their parent, a scrollbar will appear and the split pane will become scrollable.
-```
 
 ```ts
 const splitPaneRelativeSize: IgcSplitPane = {

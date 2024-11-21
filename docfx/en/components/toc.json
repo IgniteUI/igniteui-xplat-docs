@@ -1497,7 +1497,7 @@
         "exclude": ["Angular", "React"],
         "name": "Customization",
         "href": "layouts/dock-manager-customization.md",
-        "status": "NEW"
+        "status": "UPDATED"
       }
     ]
   },
