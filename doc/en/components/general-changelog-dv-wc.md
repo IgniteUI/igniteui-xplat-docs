@@ -217,6 +217,11 @@ The data grid component requires the "inputs" package.
 
 ## {PackageCommon}
 
+### **{PackageCommonVerChanges-5.1.0}**
+
+#### Added
+- New [Carousel](layouts/carousel.md) component.
+
 ### **{PackageCommonVerChanges-5.0.0}**
 
 - `Icon`
