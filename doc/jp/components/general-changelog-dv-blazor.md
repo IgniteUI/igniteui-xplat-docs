@@ -13,7 +13,7 @@ _language: ja
 
 ## **{PackageVerChanges-24-2-NOV}**
 
-### General
+### 一般
 - 新しい [Carousel](layouts/carousel.md) コンポーネント。
 - `Input`
   - `change` イベント引数タイプを `ComponentDataValueChangedEventArgs` から `ComponentValueChangedEventArgs` に変更しました。
