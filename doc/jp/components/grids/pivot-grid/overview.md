@@ -571,6 +571,100 @@ public PivotDataFlat()
 
 `sample="/{PivotGridSample}/features", height="700", alt="{Platform} ピボット グリッドの例"`
 
+### 設定の自動生成
+`autoGenerateConfig` プロパティは、データ ソース フィールドに基づいてディメンションと値を自動的に生成します。
+
+- 数値フィールド:
+  - `PivotNumericAggregate.sum` アグリゲーターを使用して `PivotValue` として作成されます。
+  - 値のコレクションに追加され、デフォルトで有効になります。
+
+- 数値以外のフィールド:
+  - `PivotDimension` として作成されます。
+  - デフォルトで無効です。
+  - 列コレクションに追加されます。
+
+- 日付フィールド (最初の `date` フィールドのみが有効になり、他の `date` フィールドには非数値フィールドのルールが適用されます):
+  - `PivotDateDimension` として作成されます。
+  - デフォルトで有効です。
+  - 行コレクションに追加されます。
+
+この機能により、開発者はディメンションと値を手動で指定することなく、ピボット ビューをすばやく作成できます。ピボット グリッドの横にあるピボット セレクターを使用すると、ユーザーは必要に応じてディメンションと値を有効にしたり並べ替えたりできます。
+
+### ピボット値計算キー
+
+ピボット グリッドは、ピボット計算を行うために使用するオブジェクトキーのフィールドをカスタマイズできます。
+既に集計された値を確認できる以下のサンプル データで、それらがどのように使用されているかを詳しく見ることができます:
+
+```json
+[
+    {
+        ProductCategory: 'All', AllProducts: 'All Products', All: 1000, 'All-Bulgaria': 774, 'All-USA': 829, 'All-Uruguay': 524,
+        AllProducts_records: [
+            { ProductCategory: 'Clothing', 'All-Bulgaria': 774, 'All-USA': 296, 'All-Uruguay': 456 },
+            { ProductCategory: 'Bikes', 'All-Uruguay': 68 },
+            { ProductCategory: 'Accessories', 'All-USA': 293 },
+            { ProductCategory: 'Components', 'All-USA': 240 }
+        ]
+    }
+];
+```
+
+これらはすべて、`Pivo​​tConfiguration` の一部である **pivotKeys** プロパティに格納され、デフォルトのピボット キーを変更するために使用できます。
+- **children** - 階層構築のために子を格納するフィールド。これは、グループ化された値と、その値に基づくすべての pivotGridRecords からのマップを表します。これは、階層の作成中に何かを行う必要がある非常に特殊なシナリオで利用できます。一般的な使用法のためにこれを変更する必要はありません。
+- **records** - 元のデータ レコードへの参照を格納するフィールド。上記の例で見ることができます - **AllProducts_records**。このプロパティと同じ名前でデータにフィールドを設定することは避けてください。データ レコードに **records** プロパティがある場合は、**pivotKeys** を使用して異なる一意の値を指定できます。
+- **aggregations** - 集計値を格納するフィールド。階層の作成中に適用され 、一般的なシナリオでは変更する必要はありません。
+- **level** - 階層に基づいてディメンション レベルを格納するフィールド。このプロパティと同じ名前でデータにフィールドを設定することは避けてください。データ レコードに **level** プロパティがある場合は、**pivotKeys** を使用して異なる一意の値を指定できます。
+- **columnDimensionSeparator** - 一意の列フィールド値を生成するときに使用されるセパレーター。上からの例のダッシュ (**-**) - **All-Bulgaria** です。
+- **rowDimensionSeparator** - 一意の行フィールド値を生成するときに使用されるセパレーター。**records** と **level** フィールド を作成するときに使用されます。
+
+デフォルト値:
+
+```typescript
+{
+    aggregations: 'aggregations',
+    records: 'records',
+    children: 'children',
+    level: 'level',
+    rowDimensionSeparator: '_',
+    columnDimensionSeparator: '-'
+};
+```
+
+```razor
+@code {
+    {
+        aggregations: 'aggregations',
+        records: 'records',
+        children: 'children',
+        level: 'level',
+        rowDimensionSeparator: '_',
+        columnDimensionSeparator: '-'
+    };
+}
+```
+
+> [!Note]
+> デフォルトのキーを含むデータ フィールド値がある場合は、現在使用していない他の記号に一致する区切り文字を必ず変更してください。そうしないと、集計値の計算と表示で予期しない動作が発生する可能性があります。
+
+<!-- Blazor -->
+Blazor で `PivotKeys` をオーバーライドする場合、新しい PivotKeys オブジェクトを割り当てるとデフォルトのキーが完全に置き換えられるため、現在は他のすべてのキーを定義する必要があります。
+
+```razor
+@code {
+    var pivotConfiguration = new IgbPivotConfiguration();
+    pivotConfiguration.PivotKeys = new IgbPivotKeys()
+    {
+        Aggregations = "aggregations",
+        Records = "records",
+        Children = "children",
+        Level = "level",
+        RowDimensionSeparator = "_",
+        ColumnDimensionSeparator = "^"
+    };
+}
+```
+<!-- end: Blazor -->
+
 ## 既知の問題と制限
 
 |制限|説明|

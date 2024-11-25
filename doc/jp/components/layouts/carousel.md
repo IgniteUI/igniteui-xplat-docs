@@ -35,6 +35,39 @@ defineComponents(IgcCarouselComponent);
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`Carousel` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrCarouselModule, IgrCarousel, IgrCarouselSlide } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrCarouselModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
+`Carousel` を使用する前に、次のように登録する必要があります:
+
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbCarouselModule));
+```
+
+スタイルを `Carousel` コンポーネントに適用するには、追加の CSS ファイルをリンクする必要もあります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+<!-- end: Blazor -->
+
 {ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 {ProductName} カルーセルがインポートされたので、`Carousel` とそのボタンの基本構成を開始できます。
@@ -55,6 +88,34 @@ defineComponents(IgcCarouselComponent);
 </igc-carousel>
 ```
 
+```tsx
+<IgrCarousel>
+    <IgrCarouselSlide key="first">
+        <img src="assets/images/carousel/ignite-ui-angular-indigo-design.png" key="img"/>
+    </IgrCarouselSlide>
+    <IgrCarouselSlide key="second">
+        <img src="assets/images/carousel/slider-image-chart.png" key="img"/>
+    </IgrCarouselSlide>
+    <IgrCarouselSlide key="third">
+        <img src="assets/images/carousel/ignite-ui-angular-charts.png" key="img"/>
+    </IgrCarouselSlide>
+</IgrCarousel>
+```
+
+```razor
+<IgbCarousel>
+    <IgbCarouselSlide>
+        <img src="assets/images/carousel/ignite-ui-angular-indigo-design.png" />
+    </IgbCarouselSlide>
+    <IgbCarouselSlide>
+        <img src="assets/images/carousel/slider-image-chart.png" />
+    </IgbCarouselSlide>
+    <IgbCarouselSlide>
+        <img src="assets/images/carousel/ignite-ui-angular-charts.png" />
+    </IgbCarouselSlide>
+</IgbCarousel>
+```
+
 スライドをデフォルトでアクティブにしたい場合は、`Active` 属性を使用します。
 
 ```html
@@ -67,6 +128,30 @@ defineComponents(IgcCarouselComponent);
         ...
     </igc-carousel-slide>
 </igc-carousel>
+```
+
+```tsx
+<IgrCarousel>
+    ...
+    <IgrCarouselSlide key="first">
+        ...
+    </IgrCarouselSlide>
+    <IgrCarouselSlide active={true} key="second">
+        ...
+    </IgrCarouselSlide>
+</IgrCarousel>
+```
+
+```razor
+<IgbCarousel>
+    ...
+    <IgbCarouselSlide>
+        ...
+    </IgbCarouselSlide>
+    <IgbCarouselSlide Active="true">
+        ...
+    </IgbCarouselSlide>
+</IgbCarousel>
 ```
 
 >[!NOTE]
@@ -84,12 +169,36 @@ defineComponents(IgcCarouselComponent);
 </igc-carousel>
 ```
 
+```tsx
+<IgrCarousel disableLoop={true}>
+    ...
+</IgrCarousel>
+```
+
+```razor
+<IgbCarousel DisableLoop="true">
+    ...
+</IgbCarousel>
+```
+
 各スライド インデックスを追跡するために、カルーセルには、デフォルトでカルーセルの `end` に配置されるインジケーターがあります。この動作を変更するには、`IndicatorsOrientation` プロパティを使用して、`start` に割り当てる必要があります。
 
 ```html
 <igc-carousel indicators-orientation="start">
     ...
 </igc-carousel>
+```
+
+```tsx
+<IgrCarousel indicatorsOrientation={CarouselIndicatorsOrientation.Start}>
+    ...
+</IgrCarousel>
+```
+
+```razor
+<IgbCarousel IndicatorsOrientation="@CarouselIndicatorsOrientation.Start">
+    ...
+</IgbCarousel>
 ```
 
 デフォルトでは、`Carousel` にはナビゲーション ボタンとインジケーターが表示されます。インジケーターを非表示にするには `HideIndicators` プロパティを使用し、ナビゲーション ボタンを非表示にするには `HideNavigation` プロパティを使用します。
@@ -100,12 +209,36 @@ defineComponents(IgcCarouselComponent);
 </igc-carousel>
 ```
 
+```tsx
+<IgrCarousel hideNavigation={true} hideIndicators={true}>
+    ...
+</IgrCarousel>
+```
+
+```razor
+<IgbCarousel HideNavigation="true" HideIndicators="true">
+    ...
+</IgbCarousel>
+```
+
 `Carousel` は垂直モードをサポートしています。これを有効にするには、`Vertical` プロパティを使用します。
 
 ```html
 <igc-carousel vertical="true">
     ...
 </igc-carousel>
+```
+
+```tsx
+<IgrCarousel vertical={true}>
+    ...
+</IgrCarousel>
+```
+
+```razor
+<IgbCarousel Vertical="true">
+    ...
+</IgbCarousel>
 ```
 
 ### カスタム インジケーター
@@ -132,6 +265,46 @@ defineComponents(IgcCarouselComponent);
 </igc-carousel>
 ```
 
+```tsx
+<IgrCarousel>
+    <IgrCarouselIndicator key="first-indicator">
+        <span key="empty">🤍</span>
+        <span slot="active" key="active">❤️</span>
+    </IgrCarouselIndicator>
+    <IgrCarouselIndicator key="second-indicator">
+        <span key="empty">🤍</span>
+        <span slot="active" key="active">❤️</span>
+    </IgrCarouselIndicator>
+
+    <IgrCarouselSlide key="first">
+        <img src="assets/images/card/media/the_red_ice_forest.jpg" key="img"/>
+    </IgrCarouselSlide>
+    <IgrCarouselSlide key="second">
+        <img src="assets/images/card/media/yosemite.jpg" key="img"/>
+    </IgrCarouselSlide>
+</IgrCarousel>
+```
+
+```razor
+<IgbCarousel>
+    <IgbCarouselIndicator>
+        <span>🤍</span>
+        <span slot="active">❤️</span>
+    </IgbCarouselIndicator>
+    <IgbCarouselIndicator>
+        <span>🤍</span>
+        <span slot="active">❤️</span>
+    </IgbCarouselIndicator>
+
+    <IgbCarouselSlide>
+        <img src="assets/images/card/media/the_red_ice_forest.jpg"/>
+    </IgbCarouselSlide>
+    <IgbCarouselSlide>
+        <img src="assets/images/card/media/yosemite.jpg"/>
+    </IgbCarouselSlide>
+</IgbCarousel>
+```
+
 {ProductName} カルーセル コンポーネントを使用すると、ユーザーは単一のインジケーターのアクティブ状態と非アクティブ状態に異なる要素を使用できます。インジケーターを宣言するときは、たとえ同じであっても、スロットごとに 2 つの要素 (空とアクティブ) を提供することが必須です。
 
 
@@ -145,6 +318,22 @@ defineComponents(IgcCarouselComponent);
     <igc-icon slot="next-button" name="next" collection="material"></igc-icon>
     ...
 </igc-carousel>
+```
+
+```tsx
+<IgrCarousel>
+    <IgrIcon slot="previous-button" name="previous" collection="material" key="previous"></IgrIcon>
+    <IgrIcon slot="next-button" name="next" collection="material" key="next"></IgrIcon>
+    ...
+</IgrCarousel>
+```
+
+```razor
+<IgbCarousel>
+    <IgbIcon slot="previous-button" IconName="previous" Collection="material"></IgbIcon>
+    <IgbIcon slot="next-button" IconName="next" Collection="material"></IgbIcon>
+    ...
+</IgbCarousel>
 ```
 
 ### 他のコンポーネントを含むスライド
@@ -181,6 +370,70 @@ defineComponents(IgcCarouselComponent);
 </igc-carousel>
 ```
 
+```tsx
+<IgrCarousel>
+    <IgrCarouselSlide key="slide-1">
+        <div key="slide-content">
+            <img src="assets/images/svg/carousel/SignUp.svg"/>
+            <form>
+                <IgrInput type="text" placeholder="Username">
+                    <IgrIcon slot="prefix" name="person" key="icon"></IgrIcon>
+                </IgrInput>
+                <IgrInput type="password" placeholder="Password">
+                    <IgrIcon slot="prefix" name="password" key="icon"></IgrIcon>
+                </IgrInput>
+                <IgrButton type="reset">
+                    <span key="button-span">Sign In</span>
+                </IgrButton>
+            </form>
+        </div>
+    </IgrCarouselSlide>
+    <IgrCarouselSlide key="slide-2">
+        <div key="slide-content">
+            <img src="assets/images/svg/carousel/Route.svg"/>
+            <form>
+                <IgrInput type="text" placeholder="Search">
+                    <IgrIcon slot="prefix" name="search" key="icon"></IgrIcon>
+                </IgrInput>
+                <IgrButton type="reset">
+                    <span key="button-span">Search</span>
+                </IgrButton>
+            </form>
+        </div>
+    </IgrCarouselSlide>
+</IgrCarousel>
+```
+
+```razor
+<IgbCarousel>
+    <IgbCarouselSlide>
+        <div>
+            <img src="assets/images/svg/carousel/SignUp.svg">
+            <form>
+                <IgbInput DisplayType="@InputType.Text" Placeholder="Username">
+                    <IgbIcon slot="prefix" IconName="person" Collection="material" @ref="iconRef"></IgbIcon>
+                </IgbInput>
+                <IgbInput DisplayType="@InputType.Password" Placeholder="Password">
+                    <IgbIcon slot="prefix" IconName="password" Collection="material"></IgbIcon>
+                </IgbInput>
+                <IgbButton DisplayType="@ButtonBaseType.Reset">Sign In</IgbButton>
+            </form>
+        </div>
+    </IgbCarouselSlide>
+    <IgbCarouselSlide>
+        <div>
+            <img src="assets/images/svg/carousel/Route.svg">
+            <form>
+                <IgbInput DisplayType="@InputType.Text" Placeholder="Search">
+                    <IgbIcon slot="prefix" IconName="search" Collection="material"></IgbIcon>
+                </IgbInput>
+                <IgbButton DisplayType="@ButtonBaseType.Reset">Search</IgbButton>
+            </form>
+        </div>
+    </IgbCarouselSlide>
+</IgbCarousel>
+```
+
 #### サンプル
 
 `sample="/layouts/carousel/components", height="600", alt="コンポーネント付き {Platform} Carousel の例"`
@@ -198,6 +451,18 @@ defineComponents(IgcCarouselComponent);
 <igc-carousel animation-type="fade">
     ...
 </igc-carousel>
+```
+
+```tsx
+<IgrCarousel animationType={CarouselAnimationType.Fade}>
+    ...
+</IgrCarousel>
+```
+
+```razor
+<IgbCarousel AnimationType="@CarouselAnimationType.Fade">
+    ...
+</IgbCarousel>
 ```
 
 `AnimationType` プロパティに `none` を設定すると、アニメーションが無効になります。
@@ -243,6 +508,18 @@ defineComponents(IgcCarouselComponent);
 <igc-carousel interval="2000" disable-pause-on-interaction="true">
     ...
 </igc-carousel>
+```
+
+```tsx
+<IgrCarousel interval={2000} disablePauseOnInteraction={true}>
+    ...
+</IgrCarousel>
+```
+
+```razor
+<IgbCarousel Interval="2000" DisablePauseOnInteraction="true">
+    ...
+</IgbCarousel>
 ```
 
 ## 高度な例
@@ -304,6 +581,112 @@ defineComponents(IgcCarouselComponent);
         <img src="assets/images/carousel/AmazingBridge.png"/>
     </igc-carousel-slide>
 </igc-carousel>
+```
+
+```tsx
+const images = [
+    {
+        src: "assets/images/carousel/WonderfulCoast.png",
+        alt: "Wonderful Coast",
+    },
+    {
+        src: "assets/images/carousel/CulturalDip.png",
+        alt: "Cultural Dip",
+    },
+    {
+        src: "assets/images/carousel/GoldenBeaches.png",
+        alt: "Golden Beaches",
+    },
+    {
+        src: "assets/images/carousel/IslandOfHistory.png",
+        alt: "Island Of History",
+    },
+    {
+        src: "assets/images/carousel/AmazingBridge.png",
+        alt: "Amazing Bridge",
+    },
+];
+
+<IgrCarousel
+    disablePauseOnInteraction={true}
+    hideNavigation={true}
+    interval={2000}
+    vertical={true}
+    animationType={CarouselAnimationType.Fade}
+>
+    {images.map((image, index) => {
+        return (
+            <React.Fragment key={index}>
+                <IgrCarouselSlide key={`slide-${index}`}>
+                    <img src={image.src} alt={image.alt} key="slide-img" />
+                </IgrCarouselSlide>
+                <IgrCarouselIndicator key={`indicator-${index}`}>
+                    <img
+                        key="img-blur"
+                        className="blurred"
+                        src={image.src.replace(".png", "Thumb.png")}
+                        alt={`${image.alt} Thumb`}
+                        width="50"
+                        height="60"
+                    />
+                    <img
+                        key="img-active"
+                        slot="active"
+                        src={image.src.replace(".png", "Thumb.png")}
+                        alt={`${image.alt} Thumb Active`}
+                        width="50"
+                        height="60"
+                    />
+                </IgrCarouselIndicator>
+            </React.Fragment>
+        );
+    })}
+</IgrCarousel>
+```
+
+```razor
+<IgbCarousel DisablePauseOnInteraction="true"
+             HideNavigation="true"
+             Interval="2000"
+             Vertical="true"
+             AnimationType="@CarouselAnimationType.Fade">
+    <IgbCarouselIndicator>
+        <img class="blurred" src="assets/images/carousel/WonderfulCoastThumb.png" width="50" height="60" />
+        <img slot="active" src="assets/images/carousel/WonderfulCoastThumb.png" width="50" height="60" />
+    </IgbCarouselIndicator>
+    <IgbCarouselIndicator>
+        <img class="blurred" src="assets/images/carousel/CulturalDipThumb.png" width="50" height="60" />
+        <img slot="active" src="assets/images/carousel/CulturalDipThumb.png" width="50" height="60" />
+    </IgbCarouselIndicator>
+    <IgbCarouselIndicator>
+        <img class="blurred" src="assets/images/carousel/GoldenBeachesThumb.png" width="50" height="60" />
+        <img slot="active" src="assets/images/carousel/GoldenBeachesThumb.png" width="50" height="60" />
+    </IgbCarouselIndicator>
+    <IgbCarouselIndicator>
+        <img class="blurred" src="assets/images/carousel/IslandOfHistoryThumb.png" width="50" height="60" />
+        <img slot="active" src="assets/images/carousel/IslandOfHistoryThumb.png" width="50" height="60" />
+    </IgbCarouselIndicator>
+    <IgbCarouselIndicator>
+        <img class="blurred" src="assets/images/carousel/AmazingBridgeThumb.png" width="50" height="60" />
+        <img slot="active" src="assets/images/carousel/AmazingBridgeThumb.png" width="50" height="60" />
+    </IgbCarouselIndicator>
+
+    <IgbCarouselSlide>
+        <img src="assets/images/carousel/WonderfulCoast.png" />
+    </IgbCarouselSlide>
+    <IgbCarouselSlide>
+        <img src="assets/images/carousel/CulturalDip.png" />
+    </IgbCarouselSlide>
+    <IgbCarouselSlide>
+        <img src="assets/images/carousel/GoldenBeaches.png" />
+    </IgbCarouselSlide>
+    <IgbCarouselSlide>
+        <img src="assets/images/carousel/IslandOfHistory.png" />
+    </IgbCarouselSlide>
+    <IgbCarouselSlide>
+        <img src="assets/images/carousel/AmazingBridge.png" />
+    </IgbCarouselSlide>
+</IgbCarousel>
 ```
 
 これらの構成の結果は以下のようになります。
