@@ -1049,7 +1049,7 @@ constructor() {
 Add snippet for blazor
 ```
 
-* `SessionStorage` から状態を復元し、カスタム ストラテジを適用します。
+* `LocalStorage` から状態を復元し、カスタム ストラテジを適用します。
 
 <!-- Angular -->
 ```typescript

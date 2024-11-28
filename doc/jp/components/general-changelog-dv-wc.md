@@ -219,6 +219,11 @@ Data Grid コンポーネントには 「inputs」 パッケージが必要で�
 
 ## {PackageCommon}
 
+### **{PackageCommonVerChanges-5.1.0}**
+
+#### 追加
+- 新しい [Carousel](layouts/carousel.md) コンポーネント。
+
 ### **{PackageCommonVerChanges-5.0.0}**
 
 - `Icon`
