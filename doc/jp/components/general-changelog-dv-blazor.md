@@ -18,6 +18,12 @@ _language: ja
 **Breaking Changes**
 
 - With the release of version 2024.2 and per the [Microsoft .NET lifecycle](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core), we no longer support .NET 3.1, .NET 5, or .NET 7.
+## **{PackageVerChanges-24-2-NOV}**
+
+### 一般
+- 新しい [Carousel](layouts/carousel.md) コンポーネント。
+- `Input`
+  - `change` イベント引数タイプを `ComponentDataValueChangedEventArgs` から `ComponentValueChangedEventArgs` に変更しました。
 
 ## **{PackageVerChanges-24-1-SEP}**
 

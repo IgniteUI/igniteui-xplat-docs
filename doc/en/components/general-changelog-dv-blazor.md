@@ -17,6 +17,12 @@ All notable changes for each version of {ProductName} are documented on this pag
 **Breaking Changes**
 
 - With the release of version 2024.2 and per the [Microsoft .NET lifecycle](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core), we no longer support .NET 3.1, .NET 5, or .NET 7.
+## **{PackageVerChanges-24-2-NOV}**
+
+### General
+- New [Carousel](layouts/carousel.md) component.
+- `Input`
+  - Changed `change` event argument type from `ComponentDataValueChangedEventArgs` to `ComponentValueChangedEventArgs`
 
 ## **{PackageVerChanges-24-1-SEP}**
 
