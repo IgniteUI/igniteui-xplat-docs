@@ -13,11 +13,12 @@ _language: ja
 
 ## **{PackageVerChanges-24-2-DEC}**
 
-* As of version 2024.2, the Ignite UI for Blazor toolset supports .NET 9. For more information on .NET 9 please refer to [this article on Microsoft's site](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/overview).
+* バージョン 2024.2 以降、Ignite UI for Blazor ツールセットは .NET 9 をサポートします。.NET 9 の詳細については、[Microsoft サイト](https://learn.microsoft.com/ja-jp/dotnet/core/whats-new/dotnet-9/overview)をご確認ください。
 
-**Breaking Changes**
+**重大な変更**
 
-- With the release of version 2024.2 and per the [Microsoft .NET lifecycle](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core), we no longer support .NET 3.1, .NET 5, or .NET 7.
+- バージョン 2024.2 のリリースでは、[Microsoft .NET ライフサイクル](https://dotnet.microsoft.com/ja-jp/platform/support/policy/dotnet-core)に従い、.NET 3.1、.NET 5、.NET 7 はサポートされなくなりました。
+
 ## **{PackageVerChanges-24-2-NOV}**
 
 ### 一般
