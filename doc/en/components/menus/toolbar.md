@@ -360,7 +360,7 @@ The following example demonstrates the vertical orientation of the {Platform} To
 
 ### Color Editor 
 
-You can add a custom color editor tool can be added which will also work with the Command event to perform custom styling to your application.
+You can add a custom color editor tool to the the {Platform} Toolbar, which will also work with the Command event to perform custom styling to your application.
 
 ```html
 <igx-toolbar
