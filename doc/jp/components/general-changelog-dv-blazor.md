@@ -11,6 +11,21 @@ _language: ja
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
+## **{PackageVerChanges-24-2-DEC}**
+
+* バージョン 2024.2 以降、Ignite UI for Blazor ツールセットは .NET 9 をサポートします。.NET 9 の詳細については、[Microsoft サイト](https://learn.microsoft.com/ja-jp/dotnet/core/whats-new/dotnet-9/overview)をご確認ください。
+
+**重大な変更**
+
+- バージョン 2024.2 のリリースでは、[Microsoft .NET ライフサイクル](https://dotnet.microsoft.com/ja-jp/platform/support/policy/dotnet-core)に従い、.NET 3.1、.NET 5、.NET 7 はサポートされなくなりました。
+
+## **{PackageVerChanges-24-2-NOV}**
+
+### 一般
+- 新しい [Carousel](layouts/carousel.md) コンポーネント。
+- `Input`
+  - `change` イベント引数タイプを `ComponentDataValueChangedEventArgs` から `ComponentValueChangedEventArgs` に変更しました。
+
 ## **{PackageVerChanges-24-1-SEP}**
 
 ### {PackageCharts} (チャート)

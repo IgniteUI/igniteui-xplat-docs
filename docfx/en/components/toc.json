@@ -1466,7 +1466,7 @@
     "href": "layouts/card.md"
   },
   {
-    "exclude": ["Angular", "Blazor", "React"],
+    "exclude": ["Angular"],
     "name": "Carousel",
     "href": "layouts/carousel.md",
     "status": "NEW"
