@@ -22,7 +22,10 @@ This topic contains the following sections:
 
 2 - In the **Package Sources** section, add a new package source by clicking the **plus icon** in the top right corner of the dialog.
    - Set the Name to **Infragistics**
-   - Set the Source to **https://packages.infragistics.com/nuget/licensed**
+   - Set the Source to **https://packages.infragistics.com/nuget/licensed/v3/index.json** if you prefer using the NuGet protocol version 3. Otherwise this must be set to **https://packages.infragistics.com/nuget/licensed/**
+
+> [!Note]
+> For more details on whether to use v3 or older please visit: **https://devblogs.microsoft.com/nuget/nuget-3-what-and-why/**. Protocol v3 is applicable only when using newer versions of NuGet clients (after 2015). Older NuGet clients may or may not be compatible with v3.
 
     Click the **Update** button, and then click **OK** to close the dialog.
 
@@ -38,6 +41,10 @@ This topic contains the following sections:
 3 - Execute the following command
 
 ```cmd
+//nuget protocol v3
+nuget sources add -name "Infragistics" -source "https://packages.infragistics.com/nuget/licensed/v3/index.json" -username "your login email" -password "your password"
+
+//nuget protocol v2
 nuget sources add -name "Infragistics" -source "https://packages.infragistics.com/nuget/licensed" -username "your login email" -password "your password"
 ```
 
