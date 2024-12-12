@@ -11,7 +11,7 @@ The {ProductName} Color Editor is a lightweight color picker component. The Colo
 
 ## {Platform} Color Editor Example
 
-`sample="/layouts/color-editor/overview", height="320", alt="{Platform} Color Editor Example"`
+`sample="/inputs/color-editor/overview", height="320", alt="{Platform} Color Editor Example"`
 
 <div class="divider--half"></div>
 

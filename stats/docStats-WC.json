@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in WebComponents documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "WebComponents",
-  "samplesCount": 726,
+  "samplesCount": 732,
   "samplesHost": "https://staging.infragistics.com/webcomponents-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -171,6 +171,9 @@
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/category-chart/value-lines": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/charts/features/chart-overlays"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/dashboard-tile/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/dashboard-tile"
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/data-chart/axis-crossing": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/charts/chart-features",
@@ -511,6 +514,9 @@
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/charts/types/sparkline-chart"
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/toolbar/actions-built-in-category-chart": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/menus/toolbar"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/toolbar/color-editor-support": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/menus/toolbar"
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/toolbar/layout-actions-for-data-chart": [
@@ -923,7 +929,7 @@
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/editing-events": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/grid/cell-editing"
     ],
-    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/editing-excel-style": [
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/editing-excel-style-custom": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/grid/cell-editing"
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/editing-lifecycle": [
@@ -1983,6 +1989,18 @@
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/card/styling": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/layouts/card"
     ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/carousel/animations": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/layouts/carousel"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/carousel/components": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/layouts/carousel"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/carousel/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/layouts/carousel"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/carousel/thumbnail": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/layouts/carousel"
+    ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/divider/dashed": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/layouts/divider"
     ],
@@ -2247,7 +2265,7 @@
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/scheduling/date-picker"
     ]
   },
-  "topicsCount": 313,
+  "topicsCount": 315,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -2554,6 +2572,9 @@
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/tree-map/overview",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/tree-map/styling"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/dashboard-tile": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/dashboard-tile/overview"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/editors/multi-column-combobox": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/editors/multi-column-combobox/overview"
     ],
@@ -2764,7 +2785,7 @@
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/cell-editing-styling",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/editing-columns",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/editing-events",
-      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/editing-excel-style"
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/editing-excel-style-custom"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/grid/cell-selection": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/cell-selection-mode",
@@ -3449,6 +3470,12 @@
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/card/semi-horizontal",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/card/styling"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/layouts/carousel": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/carousel/animations",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/carousel/components",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/carousel/overview",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/carousel/thumbnail"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/layouts/divider": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/divider/dashed",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/divider/middle",
@@ -3520,6 +3547,7 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/menus/toolbar": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/toolbar/actions-built-in-category-chart",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/toolbar/color-editor-support",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/toolbar/layout-actions-for-data-chart",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/toolbar/layout-in-vertical-orientation"
     ],

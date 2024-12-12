@@ -1221,6 +1221,11 @@
           "href": "charts/features/chart-annotations.md"
         },
         {
+          "name": "Charting in Dashboards",
+          "href": "dashboard-tile.md",
+          "status": "NEW"
+        },
+        {
           "name": "Chart Data Aggregations",
           "href": "charts/features/chart-data-aggregations.md"
         },
@@ -1296,6 +1301,12 @@
     "href": "data-chart-data-sources.md",
     "exclude": ["React", "WebComponents", "Blazor", "Angular"],
     "status": ""
+  },
+  {
+    "name": "Dashboards",
+    "header": true,
+    "href": "dashboard-tile.md",
+    "status": "NEW"
   },
   {
     "name": "Maps",
@@ -1530,7 +1541,8 @@
   },
   {
     "name": "Toolbar",
-    "href": "menus/toolbar.md"
+    "href": "menus/toolbar.md",
+    "status": "UPDATED"
   },
   {
     "exclude": ["Angular"],
@@ -1647,6 +1659,10 @@
     "exclude": ["Angular"],
     "name": "Chip",
     "href": "inputs/chip.md"
+  },
+  {
+    "name": "Color Editor",
+    "href": "inputs/color-editor.md"
   },
   {
     "exclude": ["Angular"],
