@@ -7,7 +7,11 @@ mentionedTypes: ["Toolbar", "CategoryChart", "XamDataChart", "XamRadialGauge", "
 
 # {Platform} Dashboard Tile Overview
 
-The {Platform} Dashboard Tile component is a container control that visualizes an DataSource collection or single data point by generating a data visualization control from the {ProductName} toolset based on the schema of that data. It also uses the `Toolbar` to further interact with and customize these data visualization controls.
+The {Platform} Dashboard Tile is a automatic data visualization component which determines via analysis of a DataSource collection/array or single data point what would be the most appropriate visualization to display. It then also provides a further suite of tools in its embedded `Toolbar` that let you alter the visualization that is presented in a variety of ways. 
+
+A wide variety of visualizations may be selected for display depending on the shape of the provided data including, but not limited to: Category Charts, Radial and Polar Charts, Scatter Charts, Geographic Maps, Radial and Linear Gauges, Financial Charts and Stacked Charts.
+
+Interacting with the chart type menu in the toolbar will allow for selecting a different visualization among the list of likely candidates.
 
 ## {Platform} Dashboard Tile Example
 
@@ -30,7 +34,7 @@ npm install {PackageLayouts}
 npm install {PackageMaps}
 ```
 
-The following modules are required when using the Dashboard Tile component:
+The following modules are suggested when using the Dashboard Tile component:
 
 ```ts
 import { IgxDashboardTileModule, IgxDataChartDashboardTileModule, IgxRadialGaugeDashboardTileModule,
@@ -88,7 +92,7 @@ Add the **IgniteUI.Blazor.Controls** namespace in the **_Imports.razor** file:
 @using IgniteUI.Blazor.Controls
 ```
 
-The following modules are required when using the Dashboard Tile component:
+The following modules are suggested when using the Dashboard Tile component:
 
 ```razor
 // in Program.cs file
@@ -116,7 +120,7 @@ Depending on what you bind the Dashboard Tile's `DataSource` property to will de
 * [{IgPrefix}LinearGauge](linear-gauge.html)
 * [{IgPrefix}RadialGauge](radial-gauge.html)
 
-The data visualization that is chosen by default is mainly dependent on the schema and the count of the `DataSource` that you have bound. For example, if you bind a single numeric value, you will get a `XamRadialGauge`, but if you bind a collection of value-label pairs that are not too close to each other, you will get a `XamDataPieChart`. If you bind an `DataSource` that has more value paths, you will receive a `CategoryChart` or `XamDataChart` with multiple column series or line series, depending mainly on the count of the collection bound. You can also bind to a `ShapeDataSource` to receive a `XamGeographicMap`.
+The data visualization that is chosen by default is mainly dependent on the schema and the count of the `DataSource` that you have bound. For example, if you bind a single numeric value, you will get a `XamRadialGauge`, but if you bind a collection of value-label pairs that are easy to distinguish from each other, you will likely get a `XamDataPieChart`. If you bind an `DataSource` that has more value paths, you will receive a `XamDataChart` with multiple column series or line series, depending mainly on the count of the collection bound. You can also bind to a `ShapeDataSource` or data the appears to contain geographic points to receive a `XamGeographicMap`.
 
 You are not locked into a single visualization when you bind the `DataSource`, and you can tell the control that you want to see a particular visualization by setting its `VisualizationType` property. For example, if you specifically wanted to see a line chart, you could define the Dashboard Tile like so:
 
@@ -129,7 +133,7 @@ The visualization or properties of the visualization are also configurable using
 From left to right:
 
 - The first tool will show a data grid with the `DataSource` provided to the control. This is a toggle tool, so if you click it again after showing the grid, it will revert to the visualization.
-- The second tool allows you to configure the properties of the current data visualization.
+- The second tool allows you to configure the settings of the current data visualization.
 - The third tool allows you to change the current visualization, allowing you to plot a different series type or show a different type of visualization altogether. This can be set on the control by setting the `VisualizationType` property, mentioned above.
 - The last tool allows you to configure which properties on your underlying data item are included for the control. You can configure this by setting the `IncludedProperties` or `ExcludedProperties` collection on the control.
 
