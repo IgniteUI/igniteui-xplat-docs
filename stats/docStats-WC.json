@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in WebComponents documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "WebComponents",
-  "samplesCount": 732,
+  "samplesCount": 733,
   "samplesHost": "https://staging.infragistics.com/webcomponents-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -1743,6 +1743,9 @@
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/circular-progress-indicator/styling": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/circular-progress"
     ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/color-editor/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/color-editor"
+    ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/combo/features": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/combo/features"
     ],
@@ -2265,7 +2268,7 @@
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/scheduling/date-picker"
     ]
   },
-  "topicsCount": 315,
+  "topicsCount": 316,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -3347,6 +3350,9 @@
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/circular-progress-indicator/indeterminate",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/circular-progress-indicator/simple",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/circular-progress-indicator/styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/color-editor": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/color-editor/overview"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/combo/features": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/combo/features"
