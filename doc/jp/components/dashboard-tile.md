@@ -8,7 +8,11 @@ _language: ja
 
 # {Platform} Dashboard Tile (ダッシュボード タイル) の概要
 
-{Platform} Dashboard Tile コンポーネントは、データのスキーマに基づいて {ProductName} ツールセットからデータ視覚化コントロールを生成することにより、DataSource コレクションまたは単一のデータ ポイントを視覚化するコンテナー コントロールです。また、`Toolbar` を使用して、これらのデータ視覚化コントロールをさらに操作およびカスタマイズできます。
+{Platform} Dashboard Tile は、データ ソース コレクション/配列または単一のデータ ポイントを分析して、表示する最も適切な視覚化を決定する自動データ視覚化コンポーネントです。また、埋め込みの `Toolbar` で提供される一連のツールを使用して、さまざまな方法で表示される視覚化を変更できます。
+
+提供されたデータの形状に応じて、以下を含む多種多様な視覚化が選択可能です。これには以下が含まれますが、これらに限定されません: カテゴリ チャート、`ラジアル チャートと極座標チャート、散布図、地理マップ、ラジアル ゲージとリニア ゲージ、ファイナンシャル チャート、積層型チャート。
+
+ツールバー内のチャート タイプ メニューを操作すると、候補リストの中から異なる視覚化を選択できます。
 
 ## {Platform} Dashboard Tile の例
 
@@ -31,7 +35,7 @@ npm install {PackageLayouts}
 npm install {PackageMaps}
 ```
 
-Dashboard Tile コンポーネントを使用する場合、以下のモジュールが必要です:
+Dashboard Tile コンポーネントを使用する場合、以下のモジュールを使用することをお勧めします:
 
 ```ts
 import { IgxDashboardTileModule, IgxDataChartDashboardTileModule, IgxRadialGaugeDashboardTileModule,
@@ -89,7 +93,7 @@ ModuleManager.register(
 @using IgniteUI.Blazor.Controls
 ```
 
-Dashboard Tile コンポーネントを使用する場合、以下のモジュールが必要です:
+Dashboard Tile コンポーネントを使用する場合、以下のモジュールを使用することをお勧めします:
 
 ```razor
 // in Program.cs file
@@ -117,7 +121,7 @@ builder.Services.AddIgniteUIBlazor(
 * [{IgPrefix}LinearGauge](linear-gauge.html)
 * [{IgPrefix}RadialGauge](radial-gauge.html)
 
-デフォルトで選択されるデータ視覚化は、主にスキーマとバインドした `DataSource` の数によって決まります。たとえば、単一の数値をバインドすると `XamRadialGauge` が取得されますが、互いにあまり近くない値とラベルのペアのコレクションをバインドすると `XamDataPieChart` が取得されます。より多くの値パスを持つ `DataSource` をバインドすると、バインドされたコレクションの数に応じて、複数の列シリーズまたは線シリーズを持つ `CategoryChart` または `DataChart` を受け取ります。`ShapeDataSource` にバインドして `XamGeographicMap` を受け取ることもできます。
+デフォルトで選択されるデータ視覚化は、主にスキーマとバインドした `DataSource` の数によって決まります。たとえば、単一の数値をバインドすると `XamRadialGauge` が取得されますが、互いに区別しやすい値とラベルのペアのコレクションをバインドすると `XamDataPieChart` が取得されます。より多くの値パスを持つ `DataSource` をバインドすると、バインドされたコレクションの数に応じて、複数の列シリーズまたは線シリーズを持つ `DataChart` を受け取ります。また、`XamGeographicMap` を取得するために、`ShapeDataSource` または地理的ポイントを含むデータにバインドすることもできます。
 
 `DataSource` をバインドするときに単一の視覚化にロックされることはなく、`VisualizationType` プロパティを設定することで、特定の視覚化を表示することをコントロールに指示できます。たとえば、特に折れ線チャートを表示したい場合は、次のように Dashboard Tile を定義できます。
 
@@ -130,7 +134,7 @@ builder.Services.AddIgniteUIBlazor(
 左から右へ:
 
 - 最初のツールは、コントロールに提供された `DataSource` を含むデータ グリッドを表示します。これは切り替えツールなので、グリッドを表示した後にもう一度クリックすると、視覚化に戻ります。
-- 2 番目のツールを使用すると、現在のデータ視覚化のプロパティを構成できます。
+- 2 番目のツールを使用すると、現在のデータ視覚化の設定を構成できます。
 - 3 番目のツールを使用すると、現在の視覚化を変更して、異なるシリーズ タイプをプロットしたり、まったく異なるタイプの視覚化を表示したりすることができます。これは、前述の `VisualizationType` プロパティを設定することによってコントロール上で設定できます。
 - 最後のツールを使用すると、基になるデータ項目のどのプロパティをコントロールに含めるかを構成できます。これを構成するには、コントロールに `IncludedProperties` または `ExcludedProperties` コレクションを設定します。
 
