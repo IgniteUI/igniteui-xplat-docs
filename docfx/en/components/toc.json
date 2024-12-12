@@ -1043,8 +1043,14 @@
   {
     "name": "Dashboards",
     "header": true,
-    "href": "dashboard-tile.md",
-    "status": "NEW"
+    "status": "PREVIEW",
+    "items": [
+      {
+        "name": "Dashboard Tile",
+        "href": "dashboard-tile.md",
+        "status": "PREVIEW"
+      }
+    ]
   },
   {
     "note": "THIS NODE IS FOR THE NEW STRUCTURE OF CHARTS",
@@ -1662,7 +1668,8 @@
   },
   {
     "name": "Color Editor",
-    "href": "inputs/color-editor.md"
+    "href": "inputs/color-editor.md",
+    "status": "PREVIEW"
   },
   {
     "exclude": ["Angular"],
