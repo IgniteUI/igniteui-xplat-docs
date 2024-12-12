@@ -15,6 +15,18 @@ _language: ja
 
 * バージョン 2024.2 以降、Ignite UI for Blazor ツールセットは .NET 9 をサポートします。.NET 9 の詳細については、[Microsoft サイト](https://learn.microsoft.com/ja-jp/dotnet/core/whats-new/dotnet-9/overview)をご確認ください。
 
+### {PackageCharts} (チャート)
+
+DashboardTile (ベータ版)
+
+- 新しい [Dashboard Tile](charts/dashboard-tile.md) コンポーネントは、バインドされた ItemsSource コレクションまたは単一のポイントを分析および視覚化し、データのスキーマとカウントに基づいて適切なデータ視覚化を返すコンテナー コントロールです。このコントロールは、組み込みの [Toolbar](menus/toolbar.md) コンポーネントを利用して、実行時に視覚化を変更できるようにし、最小限のコードでデータのさまざまな視覚化を表示できるようにします。
+
+### {PackageCharts} (入力)
+
+- 新しい ColorEditor と Toolbar の ToolAction (ベータ版)
+
+この新しいエディターはスタンドアロンのカラー ピッカーとして使用でき、実行時に視覚化を更新するために [Toolbar](menus/toolbar.md) コンポーネントに統合されました。
+
 **重大な変更**
 
 - バージョン 2024.2 のリリースでは、[Microsoft .NET ライフサイクル](https://dotnet.microsoft.com/ja-jp/platform/support/policy/dotnet-core)に従い、.NET 3.1、.NET 5、.NET 7 はサポートされなくなりました。

@@ -10,6 +10,20 @@ _language: ja
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
+## **{PackageVerChanges-24-2-DEC}**
+
+### {PackageCharts} (チャート)
+
+DashboardTile (ベータ版)
+
+- 新しい [Dashboard Tile](charts/dashboard-tile.md) コンポーネントは、バインドされた ItemsSource コレクションまたは単一のポイントを分析および視覚化し、データのスキーマとカウントに基づいて適切なデータ視覚化を返すコンテナー コントロールです。このコントロールは、組み込みの [Toolbar](menus/toolbar.md) コンポーネントを利用して、実行時に視覚化を変更できるようにし、最小限のコードでデータのさまざまな視覚化を表示できるようにします。
+
+### {PackageCharts} (入力)
+
+- 新しい ColorEditor と Toolbar の ToolAction (ベータ版)
+
+この新しいエディターはスタンドアロンのカラー ピッカーとして使用でき、実行時に視覚化を更新するために [Toolbar](menus/toolbar.md) コンポーネントに統合されました。
+
 ## **{PackageVerChanges-24-2-NOV}**
 
 ### 一般

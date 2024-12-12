@@ -1039,6 +1039,12 @@
     ]
   },
   {
+    "name": "ダッシュボード",
+    "header": true,
+    "href": "dashboard-tile.md",
+    "status": "NEW"
+  },
+  {
     "note": "THIS NODE IS FOR THE NEW STRUCTURE OF CHARTS",
     "name": "チャート",
     "href": "charts/chart-overview.md",
@@ -1217,6 +1223,11 @@
         {
           "name": "チャート注釈",
           "href": "charts/features/chart-annotations.md"
+        },
+        {
+          "name": "ダッシュボードでのチャート作成",
+          "href": "dashboard-tile.md",
+          "status": "NEW"
         },
         {
           "name": "チャートのデータ集計",
@@ -1528,7 +1539,8 @@
   },
   {
     "name": "ツールバー",
-    "href": "menus/toolbar.md"
+    "href": "menus/toolbar.md",
+    "status": "UPDATED"
   },
   {
     "exclude": ["Angular"],
@@ -1645,6 +1657,10 @@
     "exclude": ["Angular"],
     "name": "チップ",
     "href": "inputs/chip.md"
+  },
+  {
+    "name": "カラー エディター",
+    "href": "inputs/color-editor.md"
   },
   {
     "exclude": ["Angular"],
