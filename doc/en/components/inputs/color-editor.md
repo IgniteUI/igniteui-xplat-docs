@@ -74,8 +74,6 @@ builder.Services.AddIgniteUIBlazor(
 
 <!-- end: Blazor -->
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
-
 ## Usage
 
 The simplest way to start using the `ColorEditor` is as follows:

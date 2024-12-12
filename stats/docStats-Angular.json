@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in Angular documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "Angular",
-  "samplesCount": 220,
+  "samplesCount": 221,
   "samplesHost": "https://staging.infragistics.com/angular-demos-dv/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -663,6 +663,9 @@
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/radial-gauge/tickmarks": [
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/radial-gauge"
     ],
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/inputs/color-editor/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/inputs/color-editor"
+    ],
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/binding-data-csv": [
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-binding-data-csv"
     ],
@@ -722,7 +725,7 @@
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-type-shape-polyline-series"
     ]
   },
-  "topicsCount": 95,
+  "topicsCount": 96,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-angular/angular/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -1109,6 +1112,9 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-type-shape-polyline-series": [
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/type-shape-polyline-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/inputs/color-editor": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/inputs/color-editor/overview"
     ],
     "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/linear-gauge": [
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/linear-gauge/animation",
