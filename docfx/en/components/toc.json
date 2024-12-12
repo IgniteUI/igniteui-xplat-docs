@@ -1041,6 +1041,12 @@
     ]
   },
   {
+    "name": "Dashboards",
+    "header": true,
+    "href": "dashboard-tile.md",
+    "status": "NEW"
+  },
+  {
     "note": "THIS NODE IS FOR THE NEW STRUCTURE OF CHARTS",
     "name": "Charts",
     "href": "charts/chart-overview.md",
@@ -1301,12 +1307,6 @@
     "href": "data-chart-data-sources.md",
     "exclude": ["React", "WebComponents", "Blazor", "Angular"],
     "status": ""
-  },
-  {
-    "name": "Dashboards",
-    "header": true,
-    "href": "dashboard-tile.md",
-    "status": "NEW"
   },
   {
     "name": "Maps",
