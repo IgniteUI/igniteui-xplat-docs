@@ -14,6 +14,18 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 * As of version 2024.2, the Ignite UI for Blazor toolset supports .NET 9. For more information on .NET 9 please refer to [this article on Microsoft's site](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/overview).
 
+### {PackageCharts} (Charts)
+
+DashboardTile (Beta)
+
+- New [Dashboard Tile](charts/dashboard-tile.md) component is a container control that analyzes and visualizes a bound ItemsSource collection or single point and returns an appropriate data visualization based on the schema and count of the data. This control utilizes a built-in [Toolbar](menus/toolbar.md) component to allow you to make changes to the visualization at runtime, allowing you to see many different visualizations of your data with minimal code.
+
+### {PackageCharts} (Inputs)
+
+- New ColorEditor & Toolbar ToolAction (Beta)
+
+This new editor can be used as a standalone color picker and is now integrated into the [Toolbar](menus/toolbar.md) component to update visualizations at runtime.
+
 **Breaking Changes**
 
 - With the release of version 2024.2 and per the [Microsoft .NET lifecycle](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core), we no longer support .NET 3.1, .NET 5, or .NET 7.
