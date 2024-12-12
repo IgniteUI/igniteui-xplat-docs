@@ -13,7 +13,7 @@ _language: ja
 
 ## {Platform} Color Editor の例
 
-`sample="/layouts/color-editor/overview", height="320", alt="{Platform} Color Editor の例"`
+`sample="/inputs/color-editor/overview", height="320", alt="{Platform} Color Editor の例"`
 
 <div class="divider--half"></div>
 
@@ -75,8 +75,6 @@ builder.Services.AddIgniteUIBlazor(
 ```
 
 <!-- end: Blazor -->
-
-{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 ## 使用方法
 

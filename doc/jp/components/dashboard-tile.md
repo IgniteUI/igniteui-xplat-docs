@@ -114,12 +114,12 @@ builder.Services.AddIgniteUIBlazor(
 
 コントロールはバインドしたデータを評価し、{ProductName} ツールセットから表示する視覚エフェクトを選択するため、Dashboard Tile の `DataSource` プロパティを何にバインドするかによって、デフォルトで表示される視覚エフェクトが決まります。Dashboard Tile に表示されるデータ視覚化コントロールは次のとおりです。
 
-* [{IgPrefix}CategoryChart](chart-overview.html)
-* [{IgPrefix}DataChart](chart-overview.html)
-* [{IgPrefix}DataPieChart](data-pie-chart.html)
-* [{IgPrefix}GeographicMap](geo-map.html)
-* [{IgPrefix}LinearGauge](linear-gauge.html)
-* [{IgPrefix}RadialGauge](radial-gauge.html)
+* [{IgPrefix}CategoryChart](charts/chart-overview.md)
+* [{IgPrefix}DataChart](charts/chart-overview.md)
+* [{IgPrefix}DataPieChart](charts/types/data-pie-chart.md)
+* [{IgPrefix}GeographicMap](geo-map.md)
+* [{IgPrefix}LinearGauge](linear-gauge.md)
+* [{IgPrefix}RadialGauge](radial-gauge.md)
 
 デフォルトで選択されるデータ視覚化は、主にスキーマとバインドした `DataSource` の数によって決まります。たとえば、単一の数値をバインドすると `XamRadialGauge` が取得されますが、互いに区別しやすい値とラベルのペアのコレクションをバインドすると `XamDataPieChart` が取得されます。より多くの値パスを持つ `DataSource` をバインドすると、バインドされたコレクションの数に応じて、複数の列シリーズまたは線シリーズを持つ `DataChart` を受け取ります。また、`XamGeographicMap` を取得するために、`ShapeDataSource` または地理的ポイントを含むデータにバインドすることもできます。
 
