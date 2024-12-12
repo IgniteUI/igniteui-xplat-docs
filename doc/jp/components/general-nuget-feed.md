@@ -23,9 +23,12 @@ Infragistics は製品版を使用するユーザーにプライベート NuGet 
 
 2 - [**パッケージ ソース**] セクションで、ダイアログの右上にある **[+]** アイコンをクリックして新しいパッケージ ソースを追加します。
    - 名前を **Infragistics** に設定します。
-   - ソースを **https://packages.infragistics.com/nuget/licensed** に設定します。
+   - NuGet プロトコル バージョン 3 を使用する場合は、ソースを **https://packages.infragistics.com/nuget/licensed/v3/index.json** に設定します。それ以外の場合は、**https://packages.infragistics.com/nuget/licensed/** に設定する必要があります。
 
-    [**更新**] ボタンをクリックし、[OK] をクリックしてダイアログを閉じます。
+> [!Note]
+> v3 またはそれ以前のバージョンを使用するかどうかの詳細については、次の Web サイト (英語) をご覧ください: **https://devblogs.microsoft.com/nuget/nuget-3-what-and-why/** 。プロトコル v3 は、新しいバージョンの NuGet クライアント (2015 以降) を使用する場合にのみ適用されます。古い NuGet クライアントは、v3 と互換性がない場合があります。
+
+    **[更新]** ボタンをクリックし、[OK] をクリックしてダイアログを閉じます。
 
 <img src="../images/general/nuget-package-manager-package-sources-ig-server.jpg" />
 
@@ -39,6 +42,10 @@ Infragistics は製品版を使用するユーザーにプライベート NuGet 
 3 - 以下のコマンドを実行します。
 
 ```cmd
+//nuget protocol v3
+nuget sources add -name "Infragistics" -source "https://packages.infragistics.com/nuget/licensed/v3/index.json" -username "your login email" -password "your password"
+
+//nuget protocol v2
 nuget sources add -name "Infragistics" -source "https://packages.infragistics.com/nuget/licensed" -username "your login email" -password "your password"
 ```
 
