@@ -1040,15 +1040,12 @@
   },
   {
     "name": "ダッシュボード",
-    "header": true,
-    "status": "PREVIEW",
-    "items": [
-      {
-        "name": "ダッシュボード タイル",
-        "href": "dashboard-tile.md",
-        "status": "PREVIEW"
-      }
-    ]
+    "header": true
+  },
+  {
+    "name": "ダッシュボード タイル",
+    "href": "dashboard-tile.md",
+    "status": "PREVIEW"
   },
   {
     "note": "THIS NODE IS FOR THE NEW STRUCTURE OF CHARTS",

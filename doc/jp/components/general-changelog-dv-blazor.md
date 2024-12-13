@@ -11,9 +11,9 @@ _language: ja
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
-## **{PackageVerChanges-24-2-DEC}**
-
 * バージョン 2024.2 以降、Ignite UI for Blazor ツールセットは .NET 9 をサポートします。.NET 9 の詳細については、[Microsoft サイト](https://learn.microsoft.com/ja-jp/dotnet/core/whats-new/dotnet-9/overview)をご確認ください。
+
+## **{PackageVerChanges-24-2-DEC}**
 
 ### {PackageCharts} (チャート)
 
