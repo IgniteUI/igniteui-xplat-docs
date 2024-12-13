@@ -1042,15 +1042,12 @@
   },
   {
     "name": "Dashboards",
-    "header": true,
-    "status": "PREVIEW",
-    "items": [
-      {
-        "name": "Dashboard Tile",
-        "href": "dashboard-tile.md",
-        "status": "PREVIEW"
-      }
-    ]
+    "header": true
+  },
+  {
+    "name": "Dashboard Tile",
+    "href": "dashboard-tile.md",
+    "status": "PREVIEW"
   },
   {
     "note": "THIS NODE IS FOR THE NEW STRUCTURE OF CHARTS",
