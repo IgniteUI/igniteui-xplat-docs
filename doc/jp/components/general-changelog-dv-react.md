@@ -16,7 +16,7 @@ _language: ja
 
 DashboardTile (ベータ版)
 
-- 新しい [Dashboard Tile](charts/dashboard-tile.md) コンポーネントは、バインドされた ItemsSource コレクションまたは単一のポイントを分析および視覚化し、データのスキーマとカウントに基づいて適切なデータ視覚化を返すコンテナー コントロールです。このコントロールは、組み込みの [Toolbar](menus/toolbar.md) コンポーネントを利用して、実行時に視覚化を変更できるようにし、最小限のコードでデータのさまざまな視覚化を表示できるようにします。
+- 新しい [Dashboard Tile](dashboard-tile.md) コンポーネントは、バインドされた ItemsSource コレクションまたは単一のポイントを分析および視覚化し、データのスキーマとカウントに基づいて適切なデータ視覚化を返すコンテナー コントロールです。このコントロールは、組み込みの [Toolbar](menus/toolbar.md) コンポーネントを利用して、実行時に視覚化を変更できるようにし、最小限のコードでデータのさまざまな視覚化を表示できるようにします。
 
 ### {PackageCharts} (入力)
 
@@ -42,7 +42,7 @@ DashboardTile (ベータ版)
 - `Toolbar`
 
     - 新しい ToolActionCheckboxList。
-        選択用のチェックボックスを備えた項目のコレクションを表示する新しい CheckboxList ToolAction。 ToolAction CheckboxList 内のグリッドの高さは 5 項目まで大きくなり、その後スクロールバーが表示されます。
+        選択用のチェックボックスを備えた項目のコレクションを表示する新しい CheckboxList ToolAction。ToolAction CheckboxList 内のグリッドの高さは 5 項目まで大きくなり、その後スクロールバーが表示されます。
         IgrCheckboxListModule を登録する必要があります。
 
     - 新しいフィルタリングのサポート。
@@ -61,7 +61,7 @@ DashboardTile (ベータ版)
 - `Icon`
   - `setIconRef` メソッドが追加されました。これにより、アイコンを SVG ファイルで登録および置き換えることができます。
   - すべてのコンポーネントが内部的な参照によるアイコンを使用するようになり、カスタム テンプレートを明示的に提供しなくても簡単に置き換えられるようになりました。
-- `Combo`、`DatePicker`、`Dialog`、`Dropdown`、 `ExpansionPanel`、`NavDrawer`、`Toast`、`Snackbar`、**IgrSelectComponent**
+- `Combo`、`DatePicker`、`Dialog`、`Dropdown`、`ExpansionPanel`、`NavDrawer`、`Toast`、`Snackbar`、**IgrSelectComponent**
   - トグル メソッドの `show`、`hide`、`toggle` メソッドは、成功した場合に **true** を返すようになりました。そうでない場合は **false**。
 - **IgrButtonComponent**、`IconButton`、`Checkbox`、`Switch`、`Combo`、`DateTimeInput`、`Input`、`MaskInput`、`Radio`、**IgrSelectComponent**、`Textarea`
   - カスタムの `focus` および `blur` イベントは非推奨になりました。代わりにネイティブの `onFocus` および `onBlur` イベントを使用してください。
@@ -73,7 +73,7 @@ DashboardTile (ベータ版)
 - 古い **IgrDatePicker** の名前を **IgrXDatePicker** に変更しました。
 - `Form` コンポーネントを削除しました。代わりにネイティブのフォームを使用してください。
 - 以下のコンポーネントの `size` プロパティが削除され、代わりに `--ig-size` CSS カスタム プロパティが使用されるようになりました。
-  - `Avatar`、 **IgrButtonComponent**、`IconButton`、`Calendar`、`Chip`、`Dropdown`、`Icon`、`Input`、`List`、`Rating`、`Snackbar`、`Tabs`、`Tree`
+  - `Avatar`、**IgrButtonComponent**、`IconButton`、`Calendar`、`Chip`、`Dropdown`、`Icon`、`Input`、`List`、`Rating`、`Snackbar`、`Tabs`、`Tree`
 - `Badge`、`Chip`、`LinearProgress`、`CircularProgress`
   - `Variant` プロパティ タイプの名前を `StyleVariant` に変更しました。
 - `Calendar`
