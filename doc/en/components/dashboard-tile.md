@@ -128,7 +128,6 @@ You are not locked into a single visualization when you bind the `DataSource`, a
 
 `sample="/charts/dashboard-tile/gauge-dashboard", height="600", alt="{Platform} Dashboard Tile Gauge Example"`
 
-
 The visualization or properties of the visualization are also configurable using the `Toolbar` at the top of the control. This `Toolbar` has the default tools for the current visualization with the addition of four Dashboard Tile specific ones, highlighted below:
 
 <img src="../images/dashboard-tile-toolbar.png" />
@@ -140,10 +139,11 @@ From left to right:
 - The third tool allows you to change the current visualization, allowing you to plot a different series type or show a different type of visualization altogether. This can be set on the control by setting the `VisualizationType` property, mentioned above.
 - The last tool allows you to configure which properties on your underlying data item are included for the control. You can configure this by setting the `IncludedProperties` or `ExcludedProperties` collection on the control.
 
-More Demos!
+This demo demonstrates dashboard tile integration with the {Platform} Pie Chart. The toolbar options at the top right provides access to styling and changing the data visualization.
 
 `sample="/charts/dashboard-tile/pie-dashboard", height="600", alt="{Platform} Dashboard Tile Pie Example"`
 
+This demo demonstrates dashboard tile integration with the {Platform} Geographic Map. The toolbar options at the top right provides access to styling and changing the data visualization.
 
 `sample="/charts/dashboard-tile/map-dashboard", height="600", alt="{Platform} Dashboard Tile Map Example"`
 
