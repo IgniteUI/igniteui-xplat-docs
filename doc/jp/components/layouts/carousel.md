@@ -480,7 +480,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCarouselModule));
 
 カルーセル内のナビゲーションは、モバイル デバイスでのナビゲーション ボタン、キーボード ナビゲーション、パン操作を通じてユーザーが処理できます。
 
-### Touch gestures
+### タッチ ジェスチャー
 
 デフォルトでカルーセルはあらゆるタッチ対応デバイスに使用できます。
 
