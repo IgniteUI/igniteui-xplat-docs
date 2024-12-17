@@ -1,5 +1,5 @@
 ---
-title: {Platform} Dashboard Tile コンポーネント – {ProductName}
+title: {Platform} Dashboard Tile コンポーネント | {ProductName}
 _description: {Platform} Dashboard Tile コンポーネントを簡単に使い始める方法をご覧ください。
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Dashboard components, {Platform} Dashboard Tile controls, UI コントロール, {Platform} ウィジェット, Web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Dashboard コンポーネント, {Platform} Dashboard Tile コントロール
 mentionedTypes: ["Toolbar", "CategoryChart", "XamDataChart", "XamRadialGauge", "XamLinearGauge", "XamGeographicMap"]
@@ -17,7 +17,7 @@ _language: ja
 ## {Platform} Dashboard Tile の例
 
 <!-- TODO -->
-`sample="/charts/dashboard-tile/overview", height="600", alt="{Platform} Dashboard Tile の例"`
+`sample="/charts/dashboard-tile/chart-dashboard", height="600", alt="{Platform} Dashboard Tile の例"`
 
 ## 依存関係
 
@@ -127,6 +127,8 @@ builder.Services.AddIgniteUIBlazor(
 
 <!-- TODO SAMPLE -->
 
+`sample="/charts/dashboard-tile/gauge-dashboard", height="600", alt="{Platform} Dashboard Tile Gauge の例"`
+
 視覚化または視覚化のプロパティも、コントロールの上部にある `Toolbar` を使用して構成できます。この `Toolbar` には、現在の視覚化の既定のツールに加えて、以下で強調表示されている 4 つの Dashboard Tile 固有のツールが含まれています。
 
 <img src="../images/dashboard-tile-toolbar.png" />
@@ -137,6 +139,14 @@ builder.Services.AddIgniteUIBlazor(
 - 2 番目のツールを使用すると、現在のデータ視覚化の設定を構成できます。
 - 3 番目のツールを使用すると、現在の視覚化を変更して、異なるシリーズ タイプをプロットしたり、まったく異なるタイプの視覚化を表示したりすることができます。これは、前述の `VisualizationType` プロパティを設定することによってコントロール上で設定できます。
 - 最後のツールを使用すると、基になるデータ項目のどのプロパティをコントロールに含めるかを構成できます。これを構成するには、コントロールに `IncludedProperties` または `ExcludedProperties` コレクションを設定します。
+
+このデモでは、ダッシュボード タイルと {Platform} 円チャートの統合を示します。右上のツールバー オプションを使用すると、スタイル設定やデータ視覚化の変更にアクセスできます。
+
+`sample="/charts/dashboard-tile/pie-dashboard", height="600", alt="{Platform} Dashboard Tile Pie の例"`
+
+このデモでは、ダッシュボード タイルと {Platform} 地理マップの統合を示します。右上のツールバー オプションを使用すると、スタイル設定やデータ視覚化の変更にアクセスできます。
+
+`sample="/charts/dashboard-tile/map-dashboard", height="600", alt="{Platform} Dashboard Tile Map の例"`
 
 ## API リファレンス
 
