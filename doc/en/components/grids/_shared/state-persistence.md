@@ -18,7 +18,7 @@ The {ProductName} State Persistence in {Platform} {ComponentTitle} allows develo
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-The {ProductName} State Persistence in {Platform} {ComponentTitle} allows developers to easily save and restore the grid state. When the `GridState` is applied on the {Platform} `{ComponentName}`, it exposes the `GetStateAsString` and `ApplyStateFromString` methods that developers can use to achieve state persistence in any scenario.
+The {ProductName} State Persistence in {Platform} {ComponentTitle} allows developers to easily save and restore the grid state. When the `GridState` is applied on the {Platform} `{ComponentName}`, it exposes the `GetStateAsStringAsync` and `ApplyStateFromStringAsync` methods that developers can use to achieve state persistence in any scenario.
 <!-- end: Blazor -->
 
 ## Supported Features
@@ -114,11 +114,17 @@ The developer may choose to get only the state for a certain feature/features, b
 The `GetState` method returns the grid state in a `GridStateInfo` object, containing all the state info. Additional steps may be required in order to save it.
 <!-- end: React, WebComponents -->
 
-<!-- Blazor, React, WebComponents -->
+<!-- React, WebComponents -->
 The `GetStateAsString` returns a serialized JSON string, so developers can just take it and save it on any data storage (database, cloud, browser localStorage, etc).
 
 The developer may choose to get only the state for a certain feature/features, by passing in an array with feature names as an argument. Empty array will result to using the default state options.
-<!-- end: Blazor, React, WebComponents -->
+<!-- end: React, WebComponents -->
+
+<!-- Blazor -->
+The `GetStateAsStringAsync` returns a serialized JSON string, so developers can just take it and save it on any data storage (database, cloud, browser localStorage, etc).
+
+The developer may choose to get only the state for a certain feature/features, by passing in an array with feature names as an argument. Empty array will result to using the default state options.
+<!-- end: Blazor -->
 
 <!-- Angular -->
 ```typescript
@@ -184,10 +190,10 @@ const sortingFilteringStates: IgrGridStateInfo = gridState.getState(['sorting', 
 
 @code {
     // get all features` state in a serialized JSON string
-    string stateString = gridState.GetStateAsString(new string[0]);
+    string stateString = gridState.GetStateAsStringAsync(new string[0]);
 
     // get the sorting and filtering expressions
-    string sortingFilteringStates = gridState.GetStateAsString(new string[] { "sorting", "filtering" });
+    string sortingFilteringStates = gridState.GetStateAsStringAsync(new string[] { "sorting", "filtering" });
 }
 ```
 
@@ -199,9 +205,13 @@ const sortingFilteringStates: IgrGridStateInfo = gridState.getState(['sorting', 
 `ApplyState` - The method accepts a `GridStateInfo` object as argument and will restore the state of each feature found in the object or specified features as second argument.
 <!-- end: React, WebComponents -->
 
-<!-- Blazor, React, WebComponents -->
+<!-- React, WebComponents -->
 `ApplyStateFromString` - The method accepts a serialized JSON string as argument and will restore the state of each feature found in the JSON string or specified features as second argument.
-<!-- end: Blazor, React, WebComponents -->
+<!-- end: React, WebComponents -->
+
+<!-- Blazor -->
+`ApplyStateFromStringAsync` - The method accepts a serialized JSON string as argument and will restore the state of each feature found in the JSON string or specified features as second argument.
+<!-- end: Blazor -->
 
 <!-- Angular -->
 ```typescript
@@ -225,8 +235,8 @@ gridState.applyState(sortingFilteringStates, [])
 ```
 
 ```razor
-gridState.ApplyStateFromString(gridStateString, new string[0]);
-gridState.ApplyStateFromString(sortingFilteringStates, new string[0])
+gridState.ApplyStateFromStringAsync(gridStateString, new string[0]);
+gridState.ApplyStateFromStringAsync(sortingFilteringStates, new string[0])
 ```
 
 <!-- Angular -->
@@ -238,7 +248,7 @@ The `Options` object implements the `GridStateOptions` interface, i.e. for every
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-The `Options` object implements the `GridStateOptions` interface, i.e. for every key, which is the name of a certain feature, there is the boolean value indicating if this feature state will be tracked. `GetStateAsString` methods will not put the state of these features in the returned value and `ApplyStateFromString` methods will not restore state for them.
+The `Options` object implements the `GridStateOptions` interface, i.e. for every key, which is the name of a certain feature, there is the boolean value indicating if this feature state will be tracked. `GetStateAsStringAsync` methods will not put the state of these features in the returned value and `ApplyStateFromStringAsync` methods will not restore state for them.
 <!-- end: Blazor -->
 
 <!-- Angular -->
@@ -421,14 +431,14 @@ function restoreGridState() {
     }
 
     async void SaveGridState() {
-        string state = gridState.getStateAsString(new string[0]);
+        string state = gridState.GetStateAsStringAsync(new string[0]);
         await JS.InvokeVoidAsync("window.localStorage.setItem", "grid-state", state);
     }
 
     async void RestoreGridState() {
         string state = await JS.InvokeAsync<string>("window.localStorage.getItem", "grid-state");
         if (state) {
-            gridState.ApplyStateFromString(state, new string[0]);
+            gridState.ApplyStateFromStringAsync(state, new string[0]);
         }
     }
 }
@@ -953,7 +963,7 @@ this.state.applyState(state, ['filtering', 'rowIslands']);
 <!-- Blazor -->
 Then the `GetState` API will return the state for all grids (root grid and child grids) features excluding `Selection` and `Sorting`. If later on the developer wants to restore only the `Filtering` state for all grids, use:
 ```razor
-gridState.ApplyStateFromString(gridStateString, new string[] { "filtering", "rowIslands" });
+gridState.ApplyStateFromStringAsync(gridStateString, new string[] { "filtering", "rowIslands" });
 ```
 <!-- end: Blazor -->
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -1101,9 +1111,13 @@ state.applyState(gridState.columnSelection);
 * `GetState` method uses JSON.stringify() method to convert the original objects to a JSON string. JSON.stringify() does not support Functions, thats why the `GridState` directive will ignore the columns `Formatter`, `Filters`, `Summaries`, `SortStrategy`, `CellClasses`, `CellStyles`, `HeaderTemplate` and `BodyTemplate` properties.
 <!-- end: Angular -->
 
-<!-- Blazor, React, WebComponents -->
+<!-- React, WebComponents -->
 * `GetStateAsString` method uses JSON.stringify() method to convert the original objects to a JSON string. JSON.stringify() does not support Functions, thats why the `GridState` component will ignore the columns `Formatter`, `Filters`, `Summaries`, `SortStrategy`, `CellClasses`, `CellStyles`, `HeaderTemplate` and `BodyTemplate` properties.
-<!-- end: Blazor, React, WebComponents -->
+<!-- end: React, WebComponents -->
+
+<!-- Blazor -->
+* `GetStateAsString` method uses JSON.stringify() method to convert the original objects to a JSON string. JSON.stringify() does not support Functions, thats why the `GridState` component will ignore the columns `Formatter`, `Filters`, `Summaries`, `SortStrategy`, `CellClasses`, `CellStyles`, `HeaderTemplate` and `BodyTemplate` properties.
+<!-- end: Blazor -->
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 

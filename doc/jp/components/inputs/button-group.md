@@ -156,11 +156,8 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonGroupModule));
 `sample="/inputs/button-group/selection", height="170", alt="{Platform} Button Group の選択例"`
 
 
-<!-- WebComponents, React -->
 `ToggleButton` は、`Selected` 属性または `ButtonGroup` の `SelectedItems` 属性を通じて選択済みとしてマークできます。
-<!-- end: WebComponents, React -->
 
-<!-- WebComponents, React -->
 ```html
 <igc-button-group selected-items='["bold"]'>
     <igc-toggle-button value="bold">
@@ -216,8 +213,6 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonGroupModule));
 
 > [!Note]
 > `ButtonGroup` の `SelectedItems` プロパティを使用するには、`ToggleButton` `Value` 属性の設定が必須です。
-
-<!-- end: WebComponents, React -->
 
 ### サイズ
 `--ig-size` CSS カスタム プロパティを使用して、ボタン グループのサイズを制御できます。

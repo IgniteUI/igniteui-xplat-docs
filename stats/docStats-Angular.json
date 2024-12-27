@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in Angular documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "Angular",
-  "samplesCount": 218,
+  "samplesCount": 221,
   "samplesHost": "https://staging.infragistics.com/angular-demos-dv/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -171,6 +171,9 @@
     ],
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/value-lines": [
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-overlays"
+    ],
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/dashboard-tile/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/dashboard-tile"
     ],
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/axis-crossing": [
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/chart-features",
@@ -512,6 +515,9 @@
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/toolbar/actions-built-in-category-chart": [
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/menus/toolbar"
     ],
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/toolbar/color-editor-support": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/menus/toolbar"
+    ],
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/toolbar/layout-actions-for-data-chart": [
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/menus/toolbar"
     ],
@@ -657,6 +663,9 @@
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/radial-gauge/tickmarks": [
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/radial-gauge"
     ],
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/inputs/color-editor/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/inputs/color-editor"
+    ],
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/binding-data-csv": [
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-binding-data-csv"
     ],
@@ -716,7 +725,7 @@
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-type-shape-polyline-series"
     ]
   },
-  "topicsCount": 94,
+  "topicsCount": 96,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-angular/angular/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -1023,6 +1032,9 @@
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/tree-map/overview",
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/tree-map/styling"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/dashboard-tile": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/dashboard-tile/overview"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/excel-library": [
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/excel/excel-library/overview"
     ],
@@ -1101,6 +1113,9 @@
     "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-type-shape-polyline-series": [
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/type-shape-polyline-series"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/inputs/color-editor": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/inputs/color-editor/overview"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/linear-gauge": [
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/linear-gauge/animation",
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/gauges/linear-gauge/backing",
@@ -1113,6 +1128,7 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/menus/toolbar": [
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/toolbar/actions-built-in-category-chart",
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/toolbar/color-editor-support",
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/toolbar/layout-actions-for-data-chart",
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/toolbar/layout-in-vertical-orientation"
     ],

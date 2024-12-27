@@ -1704,6 +1704,44 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
+    "originalName": "Carousel",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Blazor","fileName": "Carousel.cs","mappedName": "IgbCarousel"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "boolean","mappedName": "DisableLoop"}], "originalName": "DisableLoop"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean","mappedName": "HideIndicators"}], "originalName": "HideIndicators"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean","mappedName": "HideNavigation"}], "originalName": "HideNavigation"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean","mappedName": "DisablePauseOnInteraction"}], "originalName": "DisablePauseOnInteraction"},
+      {"names":[{"platform": "Blazor", "mappedType": "boolean","mappedName": "Vertical"}], "originalName": "Vertical"},
+      {"names":[{"platform": "Blazor", "mappedType": "number","mappedName": "Interval"}], "originalName": "Interval"},
+      {"names":[{"platform": "Blazor", "mappedType": "number","mappedName": "MaximumIndicatorsCount"}], "originalName": "MaximumIndicatorsCount"},
+      {"names":[{"platform": "Blazor", "mappedType": "CarouselIndicatorsOrientation","mappedName": "IndicatorsOrientation"}], "originalName": "IndicatorsOrientation"},
+      {"names":[{"platform": "Blazor", "mappedType": "CarouselAnimationType","mappedName": "AnimationType"}], "originalName": "AnimationType"} ]
+  },
+  {
+    "originalName": "Slide",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Blazor","fileName": "CarouselSlide.cs","mappedName": "IgbCarouselSlide"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "boolean", "mappedName": "Active"}], "originalName": "Active"} ]
+  },
+  {
+    "originalName": "Indicator",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Blazor","fileName": "CarouselIndicator.cs","mappedName": "IgbCarouselIndicator"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
     "originalName": "Checkbox",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",

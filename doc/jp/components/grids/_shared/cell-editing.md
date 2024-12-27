@@ -637,7 +637,13 @@ return dataView.findIndex((rec, index) => index > currentRowIndex && this.isEdit
 
 ##### {Platform} Grid Excel スタイル編集のサンプル
 
+<!-- React -->
 `sample="/{ComponentSample}/editing-excel-style", height="550", alt="{Platform} {ComponentTitle} Excel Style スタイル編集の例"`
+<!-- end: React -->
+
+<!-- WebComponents, Blazor -->
+`sample="/{ComponentSample}/editing-excel-style-custom", height="550", alt="{Platform} {ComponentTitle} Excel スタイル編集の例"`
+<!-- end: WebComponents, Blazor -->
 
 上記のアプローチの主な利点は次のとおりです:
 
@@ -1402,9 +1408,9 @@ $custom-grid-theme: grid-theme(
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
-<!-- ComponentStart:  HierarchicalGrid -->
+<!-- ComponentStart: HierarchicalGrid -->
 <!-- * [検索](search.md) -->
-<!-- ComponentEnd:  HierarchicalGrid -->
+<!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- end: Angular -->
 

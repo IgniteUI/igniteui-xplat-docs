@@ -1041,6 +1041,15 @@
     ]
   },
   {
+    "name": "Dashboards",
+    "header": true
+  },
+  {
+    "name": "Dashboard Tile",
+    "href": "dashboard-tile.md",
+    "status": "PREVIEW"
+  },
+  {
     "note": "THIS NODE IS FOR THE NEW STRUCTURE OF CHARTS",
     "name": "Charts",
     "href": "charts/chart-overview.md",
@@ -1219,6 +1228,11 @@
         {
           "name": "Chart Annotations",
           "href": "charts/features/chart-annotations.md"
+        },
+        {
+          "name": "Charting in Dashboards",
+          "href": "dashboard-tile.md",
+          "status": "NEW"
         },
         {
           "name": "Chart Data Aggregations",
@@ -1467,6 +1481,12 @@
   },
   {
     "exclude": ["Angular"],
+    "name": "Carousel",
+    "href": "layouts/carousel.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular"],
     "name": "Dock Manager",
     "href": "layouts/dock-manager.md",
     "status": "",
@@ -1524,7 +1544,8 @@
   },
   {
     "name": "Toolbar",
-    "href": "menus/toolbar.md"
+    "href": "menus/toolbar.md",
+    "status": "UPDATED"
   },
   {
     "exclude": ["Angular"],
@@ -1641,6 +1662,11 @@
     "exclude": ["Angular"],
     "name": "Chip",
     "href": "inputs/chip.md"
+  },
+  {
+    "name": "Color Editor",
+    "href": "inputs/color-editor.md",
+    "status": "PREVIEW"
   },
   {
     "exclude": ["Angular"],

@@ -358,6 +358,59 @@ By default the {Platform} Toolbar is shown horizontally, but it also has the abi
 The following example demonstrates the vertical orientation of the {Platform} Toolbar.
 `sample="/charts/toolbar/layout-in-vertical-orientation", height="600", alt="{Platform} Verical Orientation"`
 
+### Color Editor 
+
+You can add a custom color editor tool to the the {Platform} Toolbar, which will also work with the Command event to perform custom styling to your application.
+
+```html
+<igx-toolbar
+  name="toolbar"
+  #toolbar>
+      <igx-tool-action-color-editor
+      title="Series Brush"
+      name="colorEditorTool"
+      #colorEditorTool>
+      </igx-tool-action-color-editor>
+</igx-toolbar>
+```
+
+```ts
+<igc-toolbar
+  name="toolbar"
+  id="toolbar">
+      <igc-tool-action-color-editor
+      title="Series Brush Color"
+      name="colorEditorTool"
+      id="colorEditorTool">
+      </igc-tool-action-color-editor>
+</igc-toolbar>
+```
+
+```tsx
+<IgrToolbar
+    ref={this.toolbarRef}
+    target={this.chart}>
+    <IgrToolActionColorEditor
+        title="Series Brush Color"
+        name="colorEditorTool">
+    </IgrToolActionColorEditor>
+</IgrToolbar>
+```
+
+```razor
+<IgbToolbar
+Name="toolbar"
+@ref="toolbar">
+    <IgbToolActionColorEditor
+    Title="Series Brush">
+    </IgbToolActionColorEditor>
+</IgbToolbar>
+```
+
+The following example demonstrates styling the {Platform} Data Chart series brush with the Color Editor tool.
+`sample="/charts/toolbar/color-editor-support", height="600", alt="{Platform} Color Editor Support"`
+
+
 <!-- ## Styling/Theming
 
 The icon component can be styled by using it's `BaseTheme` property directly to the `Toolbar`.
