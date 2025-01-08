@@ -188,9 +188,9 @@ Data Filtering via the `InitialFilter` property. Apply filter expressions to fil
 
 ### New Components
 
-- [`HierarchicalGrid`](grids/hierarchical-grid/overview.md) component
-- `Textarea` component
-- `ButtonGroup` component
+- [Hierarchical Grid](grids/hierarchical-grid/overview.md) component
+- [Text Area](inputs/text-area.md) component
+- [Button Group](inputs/button-group.md) component
 
 ### New Features
 

@@ -192,9 +192,9 @@ DashboardTile (ベータ版)
 
 ### 新しいコンポーネント
 
-- [`HierarchicalGrid`](grids/hierarchical-grid/overview.md) コンポーネント
-- `Textarea` コンポーネント
-- `ButtonGroup` コンポーネント
+- [Hierarchical Grid](grids/hierarchical-grid/overview.md) コンポーネント
+- [Text Area](inputs/text-area.md) コンポーネント
+- [Button Group](inputs/button-group.md) コンポーネント
 
 ### 新機能
 
