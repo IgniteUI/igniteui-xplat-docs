@@ -294,6 +294,34 @@ this.dockManager.addEventListener('activePaneChanged', ev => {
 });
 ```
 
+### Docking
+
+When you start dragging a floating pane, a different docking indicators will appear depending on the position of the dragged pane. There are four main types of docking - root docking, pane docking, document host docking and splitter docking.
+
+#### Root Docking
+
+In this type of docking, the dragged pane will become a child of the Dock Manager `RootPane`. Depending on the root docking indicator position, the orientation and other properties of the root pane, the existing root pane will be modified or will be replaced with a newly created one.
+
+<img class="responsive-img" src="../../images/dockmanager-root-docking.jpg"/>
+
+#### Pane Docking
+
+Docking indicators will appear in the center of a content pane or tab group pane when dragging the floating pane over it. Depending on the docking indicator position, the orientation and other properties of the target pane, the dragged pane will either become a child of the target pane's parent split pane, the target pane will be replaced with a newly created split pane or a tab group pane will be created.
+
+<img class="responsive-img" src="../../images/dockmanager-pane-docking.jpg"/>
+
+#### Document Host Docking
+
+If the dragged pane is over a document host, then additional docking indicators will appear that will allow for docking relative to the target pane or the whole document host.
+
+<img class="responsive-img" src="../../images/dockmanager-document-host-docking.jpg"/>
+
+#### Splitter Docking
+
+While dragging a floating pane, if the cursor of the mouse is close to any splitter, a docking indicator will appear over it. If the dragged pane is docked it will become a child of the split pane that has the targeted splitter.
+
+<img class="responsive-img" src="../../images/dockmanager-splitter-docking.jpg"/>
+
 ### Update Layout
 
 In some scenarios you may need to customize the layout of the Dock Manager by adding or removing a pane, changing orientation, etc., for example:
@@ -590,6 +618,7 @@ In the following example, we demonstrate the ability of customizing the Dock Man
 | `docking-preview` | The docking preview area. |
 | `docking-indicator` | The non-root docking indicator. |
 | `root-docking-indicator` | The root docking indicator. |
+| `splitter-docking-indicator` | The splitter docking indicator. |
 | `pane-navigator` | The pane navigator component. |
 | `pane-navigator-header` | The header area of the pane navigator. |
 | `pane-navigator-body` | The body area of the pane navigator. |
