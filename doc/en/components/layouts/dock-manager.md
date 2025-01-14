@@ -318,7 +318,7 @@ If the dragged pane is over a document host, then additional docking indicators 
 
 #### Splitter Docking
 
-While dragging a floating pane, if the cursor of the mouse is close to any splitter, a docking indicator will appear over it. If the dragged pane is docked it will become a child of the split pane that has the targeted splitter.
+While dragging a floating pane, if the cursor of the mouse is close to any splitter, a docking indicator will appear over it. If the dragged pane is docked it will become a child of the split pane that has the targeted splitter. Splitter docking can be disabled by setting the Dock Manager `allowSplitterDock` property to **false**.
 
 <img class="responsive-img" src="../../images/dockmanager-splitter-docking.jpg"/>
 
