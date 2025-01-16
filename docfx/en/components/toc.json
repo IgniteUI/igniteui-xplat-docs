@@ -477,7 +477,7 @@
         "href": "grids/hierarchical-grid/paging.md"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Remote Data Operations",
         "href": "grids/hierarchical-grid/remote-data-operations.md"
       },
