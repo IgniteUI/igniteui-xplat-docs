@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in React documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "React",
-  "samplesCount": 687,
+  "samplesCount": 691,
   "samplesHost": "https://staging.infragistics.com/react-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -172,7 +172,16 @@
     "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/value-lines": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-overlays"
     ],
-    "https://staging.infragistics.com/react-demos/samples/samples/charts/dashboard-tile/overview": [
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/dashboard-tile/chart-dashboard": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/dashboard-tile"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/dashboard-tile/gauge-dashboard": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/dashboard-tile"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/dashboard-tile/map-dashboard": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/dashboard-tile"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/dashboard-tile/pie-dashboard": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/dashboard-tile"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/axis-crossing": [
@@ -781,9 +790,6 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/type-comparison-table": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/type-comparison-table"
     ],
-    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-cascading-combo": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cascading-combos"
-    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/action-strip": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/row-actions"
     ],
@@ -798,6 +804,9 @@
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/binding-nested-data-1": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cascading-combo": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cascading-combos"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-editing-sample": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-editing"
@@ -1672,6 +1681,9 @@
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/chip/variants": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/chip"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/color-editor/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/color-editor"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/combo/features": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/combo/features"
     ],
@@ -2131,7 +2143,7 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/scheduling/date-picker"
     ]
   },
-  "topicsCount": 301,
+  "topicsCount": 302,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-react/react/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -2439,7 +2451,10 @@
       "https://staging.infragistics.com/react-demos/samples/samples/charts/tree-map/styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/dashboard-tile": [
-      "https://staging.infragistics.com/react-demos/samples/samples/charts/dashboard-tile/overview"
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/dashboard-tile/chart-dashboard",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/dashboard-tile/gauge-dashboard",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/dashboard-tile/map-dashboard",
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/dashboard-tile/pie-dashboard"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/editors/multi-column-combobox": [
       "https://staging.infragistics.com/react-demos/samples/samples/editors/multi-column-combobox/overview"
@@ -2632,7 +2647,7 @@
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/advanced-filtering-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cascading-combos": [
-      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-cascading-combo"
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cascading-combo"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-editing": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-editing-sample",
@@ -3178,6 +3193,9 @@
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/chip/size",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/chip/styling",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/chip/variants"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/color-editor": [
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/color-editor/overview"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/combo/features": [
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/combo/features"
