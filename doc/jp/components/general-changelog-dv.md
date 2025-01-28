@@ -16,6 +16,10 @@ _language: ja
 
 * [Ignite UI for Angular 変更ログ (GitHub)](https://github.com/IgniteUI/igniteui-angular/blob/master)
 
+## **{PackageVerChanges-24-2-JAN}**
+
+* Angular 19 のサポート。
+
 ## **{PackageVerChanges-24-2-DEC}**
 
 ### {PackageCharts} (チャート)
