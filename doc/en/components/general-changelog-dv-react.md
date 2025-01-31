@@ -9,6 +9,15 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## **{PackageVerChanges-24-2-JAN}**
+
+- Bug Fixes
+
+### {PackageGrids}
+
+- **All Grids** 
+  - Fixed a critical memory leak when components are opened in several duplicate browser tabs.
+
 ## **{PackageVerChanges-24-2-DEC}**
 
 ### {PackageCharts} (Charts)
