@@ -16,6 +16,10 @@ _language: ja
 
 * [Ignite UI for Angular 変更ログ (GitHub)](https://github.com/IgniteUI/igniteui-angular/blob/master)
 
+## **{PackageVerChanges-24-2-JAN}**
+
+* Angular 19 のサポート。
+
 ## **{PackageVerChanges-24-2-DEC}**
 
 ### {PackageCharts} (チャート)
@@ -26,9 +30,9 @@ DashboardTile (ベータ版)
 
 ### {PackageCharts} (入力)
 
-- 新しい ColorEditor と Toolbar の ToolAction (ベータ版)
+- 新しい ColorEditor (ベータ版) と Toolbar の ToolAction (ベータ版)
 
-この新しいエディターはスタンドアロンのカラー ピッカーとして使用でき、実行時に視覚化を更新するために [Toolbar](menus/toolbar.md) コンポーネントに統合されました。
+この新しい[カラー エディター](inputs/color-editor.md)はスタンドアロンのカラー ピッカーとして使用でき、実行時に視覚化を更新するために [Toolbar](menus/toolbar.md) コンポーネントに統合されました。
 
 ## **{PackageVerChanges-24-1-SEP}**
 
