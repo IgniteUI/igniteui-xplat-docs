@@ -11,6 +11,15 @@ _language: ja
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
+## **{PackageVerChanges-24-2-JAN}**
+
+- バグ修正
+
+### {PackageGrids}
+
+- **すべてのグリッド** 
+  - 複数の重複したブラウザー タブでコンポーネントが開かれた場合に発生する重大なメモリ リークを修正しました。
+
 ### **{PackageVerChanges-24-2-DEC}**
 
 #### {PackageCharts} (チャート)
