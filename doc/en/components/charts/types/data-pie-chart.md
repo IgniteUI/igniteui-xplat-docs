@@ -153,7 +153,7 @@ If you would like to animate data changes, this can also be done by setting the 
 
 The following sample demonstrates the usage of animation in the `DataPieChart`:
 
-`sample="/charts/data-pie-chart/animation", height="600", alt="{Platform} Data Pie Chart Animation"`
+`sample="/charts/data-pie-chart/animation-replay", height="600", alt="{Platform} Data Pie Chart Animation"`
 
 <div class="divider--half"></div>
 
