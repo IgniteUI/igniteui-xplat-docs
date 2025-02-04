@@ -5,6 +5,7 @@ _keywords: Advanced Filtering, {Platform}, {ProductName}, Infragistics, 高度�
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridAdvancedFiltering}
 _language: ja
 ---
 
