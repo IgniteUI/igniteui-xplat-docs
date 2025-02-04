@@ -359,6 +359,59 @@ public toolbarCustomIconOnViewInit(): void {
 次の例は、{Platform} ツールバーの垂直方向を示しています。
 `sample="/charts/toolbar/layout-in-vertical-orientation", height="600", alt="{Platform} 垂直方向"`
 
+### Color Editor (カラー エディター)
+
+{Platform} Toolbar にカスタム カラー エディター ツールを追加できます。このツールは、コマンド イベントと連携して、アプリケーションにカスタム スタイルを適用することもできます。
+
+```html
+<igx-toolbar
+  name="toolbar"
+  #toolbar>
+      <igx-tool-action-color-editor
+      title="Series Brush"
+      name="colorEditorTool"
+      #colorEditorTool>
+      </igx-tool-action-color-editor>
+</igx-toolbar>
+```
+
+```ts
+<igc-toolbar
+  name="toolbar"
+  id="toolbar">
+      <igc-tool-action-color-editor
+      title="Series Brush Color"
+      name="colorEditorTool"
+      id="colorEditorTool">
+      </igc-tool-action-color-editor>
+</igc-toolbar>
+```
+
+```tsx
+<IgrToolbar
+    ref={this.toolbarRef}
+    target={this.chart}>
+    <IgrToolActionColorEditor
+        title="Series Brush Color"
+        name="colorEditorTool">
+    </IgrToolActionColorEditor>
+</IgrToolbar>
+```
+
+```razor
+<IgbToolbar
+Name="toolbar"
+@ref="toolbar">
+    <IgbToolActionColorEditor
+    Title="Series Brush">
+    </IgbToolActionColorEditor>
+</IgbToolbar>
+```
+
+次の例は、カラー エディター ツールを使用して {Platform} Data Chart シリーズ ブラシのスタイルを設定する方法を示しています。
+
+`sample="/charts/toolbar/color-editor-support", height="600", alt="{Platform} Color Editor のサポート"`
+
 <!-- ## スタイル設定 / テーマ設定
 
 アイコン コンポーネントは、`BaseTheme` プロパティを `Toolbar` に直接使用してスタイルを設定できます。

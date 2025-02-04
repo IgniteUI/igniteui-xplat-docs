@@ -10,9 +10,30 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+* As of version 2024.2, the Ignite UI for Blazor toolset supports .NET 9. For more information on .NET 9 please refer to [this article on Microsoft's site](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/overview).
+
+## **{PackageVerChanges-24-2-JAN}**
+
+- Bug Fixes
+
+### {PackageGrids}
+
+- **All Grids** 
+  - Fixed a critical memory leak when components are opened in several duplicate browser tabs.
+
 ## **{PackageVerChanges-24-2-DEC}**
 
-* As of version 2024.2, the Ignite UI for Blazor toolset supports .NET 9. For more information on .NET 9 please refer to [this article on Microsoft's site](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/overview).
+### {PackageCharts} (Charts)
+
+DashboardTile (Beta)
+
+- New [Dashboard Tile](dashboard-tile.md) component is a container control that analyzes and visualizes a bound ItemsSource collection or single point and returns an appropriate data visualization based on the schema and count of the data. This control utilizes a built-in [Toolbar](menus/toolbar.md) component to allow you to make changes to the visualization at runtime, allowing you to see many different visualizations of your data with minimal code.
+
+### {PackageCharts} (Inputs)
+
+- New ColorEditor (Beta) & Toolbar ToolAction (Beta)
+
+This new [Color Editor](inputs/color-editor.md) can be used as a standalone color picker and is now integrated into the [Toolbar](menus/toolbar.md) component to update visualizations at runtime.
 
 **Breaking Changes**
 
@@ -176,9 +197,9 @@ Data Filtering via the `InitialFilter` property. Apply filter expressions to fil
 
 ### New Components
 
-- [`HierarchicalGrid`](grids/hierarchical-grid/overview.md) component
-- `Textarea` component
-- `ButtonGroup` component
+- [Hierarchical Grid](grids/hierarchical-grid/overview.md) component
+- [Text Area](inputs/text-area.md) component
+- [Button Group](inputs/button-group.md) component
 
 ### New Features
 

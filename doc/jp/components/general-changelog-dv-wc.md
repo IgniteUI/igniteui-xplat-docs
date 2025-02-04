@@ -11,6 +11,29 @@ _language: ja
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
+## **{PackageVerChanges-24-2-JAN}**
+
+- バグ修正
+
+### {PackageGrids}
+
+- **すべてのグリッド** 
+  - 複数の重複したブラウザー タブでコンポーネントが開かれた場合に発生する重大なメモリ リークを修正しました。
+
+### **{PackageVerChanges-24-2-DEC}**
+
+#### {PackageCharts} (チャート)
+
+DashboardTile (ベータ版)
+
+- 新しい [Dashboard Tile](dashboard-tile.md) コンポーネントは、バインドされた ItemsSource コレクションまたは単一のポイントを分析および視覚化し、データのスキーマとカウントに基づいて適切なデータ視覚化を返すコンテナー コントロールです。このコントロールは、組み込みの [Toolbar](menus/toolbar.md) コンポーネントを利用して、実行時に視覚化を変更できるようにし、最小限のコードでデータのさまざまな視覚化を表示できるようにします。
+
+#### {PackageCharts} (入力)
+
+- 新しい ColorEditor (ベータ版) と Toolbar の ToolAction (ベータ版)
+
+この新しい[カラー エディター](inputs/color-editor.md)はスタンドアロンのカラー ピッカーとして使用でき、実行時に視覚化を更新するために [Toolbar](menus/toolbar.md) コンポーネントに統合されました。
+
 ### **{PackageVerChanges-24-1-SEP}**
 
 #### {PackageCharts} (チャート)
@@ -22,7 +45,7 @@ _language: ja
 - `Toolbar`
 
     - 新しい ToolActionCheckboxList。
-        選択用のチェックボックスを備えた項目のコレクションを表示する新しい CheckboxList ToolAction。 ToolAction CheckboxList 内のグリッドの高さは 5 項目まで大きくなり、その後スクロールバーが表示されます。
+        選択用のチェックボックスを備えた項目のコレクションを表示する新しい CheckboxList ToolAction。ToolAction CheckboxList 内のグリッドの高さは 5 項目まで大きくなり、その後スクロールバーが表示されます。
         IgcCheckboxListModule を登録する必要があります。
 
     - 新しいフィルタリングのサポート。

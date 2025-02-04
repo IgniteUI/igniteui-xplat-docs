@@ -10,6 +10,29 @@ namespace: Infragistics.Controls
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## **{PackageVerChanges-24-2-JAN}**
+
+- Bug Fixes
+
+### {PackageGrids}
+
+- **All Grids** 
+  - Fixed a critical memory leak when components are opened in several duplicate browser tabs.
+
+### **{PackageVerChanges-24-2-DEC}**
+
+#### {PackageCharts} (Charts)
+
+DashboardTile (Beta)
+
+- New [Dashboard Tile](dashboard-tile.md) component is a container control that analyzes and visualizes a bound ItemsSource collection or single point and returns an appropriate data visualization based on the schema and count of the data. This control utilizes a built-in [Toolbar](menus/toolbar.md) component to allow you to make changes to the visualization at runtime, allowing you to see many different visualizations of your data with minimal code.
+
+#### {PackageCharts} (Inputs)
+
+- New ColorEditor (Beta) & Toolbar ToolAction (Beta)
+
+This new [Color Editor](inputs/color-editor.md) can be used as a standalone color picker and is now integrated into the [Toolbar](menus/toolbar.md) component to update visualizations at runtime.
+
 ### **{PackageVerChanges-24-1-SEP}**
 
 #### {PackageCharts} (Charts)

@@ -138,6 +138,10 @@ ItemLegend バッジを変更することもできます。デフォルトでは
 
 これらの条件が満たされると、サブセットの値がハイライト表示され、データの全セットの残りの部分はフェードアウトされます。これにより、サブセットが効果的にハイライトされ、同じコントロール内でデータのサブセットをより簡単に視覚化できるようになります。
 
+以下の例は、ハイライト表示を示しています。
+
+`sample="/charts/data-pie-chart/highlight-filter", height="600", alt="{Platform} データ円チャートのハイライト表示"`
+
 <div class="divider--half"></div>
 
 ## {Platform} データ円チャートのアニメーション
@@ -150,7 +154,7 @@ ItemLegend バッジを変更することもできます。デフォルトでは
 
 以下のは、`DataPieChart` コントロールでのアニメーションを使用する方法を示しています。
 
-`sample="/charts/data-pie-chart/animation", height="600", alt="{Platform} データ円チャートのアニメーション"`
+`sample="/charts/data-pie-chart/animation-replay", height="600", alt="{Platform} データ円チャートのアニメーション"`
 
 <div class="divider--half"></div>
 
