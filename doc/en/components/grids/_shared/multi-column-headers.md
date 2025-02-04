@@ -4,6 +4,7 @@ _description: Start grouping column headers by placing them under a common hiera
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Multi-Column Headers, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMultiColumnHeaders}
 ---
 
 # {Platform} {ComponentTitle} Multi-Column Headers Overview
