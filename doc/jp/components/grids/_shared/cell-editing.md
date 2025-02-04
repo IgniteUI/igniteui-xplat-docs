@@ -5,6 +5,7 @@ _keywords: data manipulation, excel editing, {Platform}, {ComponentKeywords}, {P
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridCellEditing}
 _language: ja
 ---
 

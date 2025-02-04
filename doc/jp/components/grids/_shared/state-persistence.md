@@ -5,6 +5,7 @@ _keywords: state persistence, {Platform}, {ProductName}, Infragistics, 状態の
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridStatePersistence}
 _language: ja
 ---
 

@@ -5,6 +5,7 @@ _keywords: data manipulation, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridEditing}
 ---
 
 # {Platform} {ComponentTitle} Editing
