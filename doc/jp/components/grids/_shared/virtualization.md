@@ -5,6 +5,7 @@ _keywords: {Platform} {ComponentTitle}, {ComponentTitle} performance, data table
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridVirtualization}
 _language: ja
 ---
 

@@ -5,6 +5,7 @@ _keywords: {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infrag
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridExportExcel}
 ---
 
 # {Platform} {ComponentTitle} Export to Excel Service

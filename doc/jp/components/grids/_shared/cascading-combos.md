@@ -6,12 +6,13 @@ _language: ja
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid"]
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridCascadingCombos}
 ---
 
 # Cascading Combos (カスケード コンボ) を含む {Platform} {ComponentTitle}
 {ComponentTitle} の編集機能では、カスケード コンボボックス コンポーネントを使用する機会が提供されます。前の `Combo` で値を選択すると、ユーザーは次の {Platform} Combobox コンポーネントでの選択に関連するデータのみを受け取ります。
 
-## カスケード コンボを使用した Angular {ComponentTitle} サンプルの概要
+## カスケード コンボを使用した {Platform} {ComponentTitle} サンプルの概要
 以下のサンプルは、`{ComponentName}` がネストされた Cascading `Combo` コンポーネントとどのように動作するかを示しています。
 
 <!-- ComponentStart: Grid -->

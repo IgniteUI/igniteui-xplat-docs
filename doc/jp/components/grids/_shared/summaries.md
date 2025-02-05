@@ -5,6 +5,7 @@ _keywords: {Platform} {ComponentTitle} summaries, {Platform}, {ProductName}, Inf
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridSummaries}
 _language: ja
 ---
 

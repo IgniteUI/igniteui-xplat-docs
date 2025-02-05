@@ -15,6 +15,10 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 * [Ignite UI for Angular CHANGELOG.md at Github](https://github.com/IgniteUI/igniteui-angular/blob/master)
 
+## **{PackageVerChanges-24-2-JAN}**
+
+* Angular 19 support.
+
 ## **{PackageVerChanges-24-2-DEC}**
 
 ### {PackageCharts} (Charts)

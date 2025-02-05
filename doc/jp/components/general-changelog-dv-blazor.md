@@ -13,6 +13,15 @@ _language: ja
 
 * バージョン 2024.2 以降、Ignite UI for Blazor ツールセットは .NET 9 をサポートします。.NET 9 の詳細については、[Microsoft サイト](https://learn.microsoft.com/ja-jp/dotnet/core/whats-new/dotnet-9/overview)をご確認ください。
 
+## **{PackageVerChanges-24-2-JAN}**
+
+- バグ修正
+
+### {PackageGrids}
+
+- **すべてのグリッド** 
+  - 複数の重複したブラウザー タブでコンポーネントが開かれた場合に発生する重大なメモリ リークを修正しました。
+
 ## **{PackageVerChanges-24-2-DEC}**
 
 ### {PackageCharts} (チャート)
