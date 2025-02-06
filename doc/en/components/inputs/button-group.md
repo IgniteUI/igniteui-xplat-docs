@@ -7,7 +7,7 @@ mentionedTypes: ["ToggleButton", "ButtonGroup"]
 
 # {Platform} Button Group Overview
 
-The {Platform} Button Group component is used to organize `ToggleButton`s into styled button groups with horizontal/vertical alignment, single/multiple selection and toggling.
+The {Platform} Button Group component is used to organize `ToggleButton`'s into styled button groups with horizontal/vertical alignment, single/multiple selection and toggling.
 
 ## {Platform} Button Example
 
@@ -223,6 +223,17 @@ The `--ig-size` CSS custom property can be used to control the size of the butto
 The `ButtonGroup` component exposes `group` CSS part that allows us to style the button group container. 
 Also, the `ToggleButton`s provide `toggle` CSS part that could be used to style the button element.
 
+```css
+igc-button-group::part(group) {
+  background-color: var(--ig-primary-500);
+  padding: 8px;
+}
+
+igc-toggle-button::part(toggle) {
+  color: var(--ig-secondary-300);
+}
+```
+
 `sample="/inputs/button-group/styling", height="200", alt="{Platform} Button Group Styling Example"`
 
 ## API Reference
@@ -231,6 +242,7 @@ Also, the `ToggleButton`s provide `toggle` CSS part that could be used to style 
 - `ToggleButton`
 - `Ripple`
 - `Icon`
+- [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources

@@ -368,7 +368,7 @@ The {Platform} `Stepper` navigation is compliant with [W3 accessability standard
 
 ## Styling {Platform} Stepper
 
-You can change the appearance of the `Step`s, by using some of the exposed CSS parts listed below:
+You can change the appearance of the `Step`, by using some of the exposed CSS parts listed below:
 
 | Part name | Description |
 | ---------|------------ |
@@ -395,22 +395,27 @@ Using these CSS parts we can customize thе appearance of the `Stepper` componen
 
 ```css
 igc-step::part(title) {
-    background: #351e65;
+  color: var(--ig-primary-500);
 }
-
-igc-step::part(subtitle) {
-    background: #5f4691;
+igc-step[active]::part(indicator) {
+  background-color: var(--ig-primary-500);
+}
+igc-step::part(indicator) {
+  background-color: var(--ig-surface-500);
 }
 ```
+
+`sample="/layouts/stepper/styling", height="300", alt="{Platform} Stepper Styling Example"`
 
 <div class="divider--half"></div>
 
 ## API References
 
-* `Stepper`
-* `Step`
-* `Avatar`
-* `Icon`
+- `Stepper`
+- `Step`
+- `Avatar`
+- `Icon`
+- [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources
