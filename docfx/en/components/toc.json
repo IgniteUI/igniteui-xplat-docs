@@ -1810,7 +1810,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "Overview",
     "href": "themes/overview.md",
     "status": ""
