@@ -597,8 +597,8 @@ const hierarchicalGrid = useRef<IgrHierarchicalGrid>(null);
 useEffect(() => {
     getData({ parentID: null, rootLevel: true, key: "Customers" }).then(
       (data: any) => {
-        hierarchicalGrid.current.data = data;
-        hierarchicalGrid.current.markForCheck();
+        hierarchicalGrid.data = data;
+        hierarchicalGrid.markForCheck();
       }
     );
 }, []);
@@ -816,13 +816,13 @@ public gridCreated(event: CustomEvent<IgcGridCreatedEventArgs>, _parentKey: stri
 const hierarchicalGrid = useRef<IgrHierarchicalGrid>(null);
 
 useEffect(() => {
-    hierarchicalGrid.current.isLoading = true;
+    hierarchicalGrid.isLoading = true;
     
     getData({ parentID: null, rootLevel: true, key: "Customers" }).then(
       (data: any) => {
-        hierarchicalGrid.current.isLoading = false;
-        hierarchicalGrid.current.data = data;
-        hierarchicalGrid.current.markForCheck();
+        hierarchicalGrid.isLoading = false;
+        hierarchicalGrid.data = data;
+        hierarchicalGrid.markForCheck();
     }
   );
 }, []);

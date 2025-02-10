@@ -496,8 +496,8 @@ this.grid.beginAddRowById(null);     // Spawns the add row UI as the first recor
 
 <!-- React -->
 ```typescript
-gridRef.current.beginAddRowById('ALFKI');  // Spawns the add row UI under the row with PK 'ALFKI'
-gridRef.current.beginAddRowById(null);     // Spawns the add row UI as the first record
+gridRef.beginAddRowById('ALFKI');  // Spawns the add row UI under the row with PK 'ALFKI'
+gridRef.beginAddRowById(null);     // Spawns the add row UI as the first record
 ```
 <!-- end: React -->
 
@@ -519,8 +519,8 @@ this.grid.beginAddRowByIndex(0);    // Spawns the add row UI as the first record
 
 <!-- React -->
 ```typescript
-gridRef.current.beginAddRowByIndex(10);   // Spawns the add row UI at index 10
-gridRef.current.beginAddRowByIndex(0);    // Spawns the add row UI as the first record
+gridRef.beginAddRowByIndex(10);   // Spawns the add row UI at index 10
+gridRef.beginAddRowByIndex(0);    // Spawns the add row UI as the first record
 ```
 <!-- end: React -->
 
@@ -635,7 +635,7 @@ this.grid.rowAddTextTemplate = (ctx: IgcGridEmptyTemplateContext) => {
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-gridRef.current.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
+gridRef.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
     return ('Adding Row');
 }
 ```            

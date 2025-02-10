@@ -415,12 +415,12 @@ export default function Sample() {
   }
 
   useEffect(() => {
-    hierarchicalGrid.current.isLoading = true;
+    hierarchicalGrid.isLoading = true;
     getData({ parentID: null, rootLevel: true, key: "Customers" }).then(
       (data: any) => {
-        hierarchicalGrid.current.isLoading = false;
-        hierarchicalGrid.current.data = data;
-        hierarchicalGrid.current.markForCheck();
+        hierarchicalGrid.isLoading = false;
+        hierarchicalGrid.data = data;
+        hierarchicalGrid.markForCheck();
       }
     );
   }, []);

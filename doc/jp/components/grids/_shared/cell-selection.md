@@ -110,7 +110,7 @@ this.grid.selectRange(range);
 
 ```tsx
 const range = { rowStart: 2, rowEnd: 2, columnStart: 1, columnEnd: 1 };
-gridRef.current.selectRange(range);
+gridRef.selectRange(range);
 ```
 
 <!-- Blazor -->
@@ -148,7 +148,7 @@ this.grid.clearCellSelection();
 <!-- end: WebComponents -->
 
 ```tsx
-gridRef.current.clearCellSelection();
+gridRef.clearCellSelection();
 ```
 
 

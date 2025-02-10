@@ -273,7 +273,7 @@ public copySelectedCells(event) {
 
 ```tsx
 function copySelectedRowData() {
-    const selectedData = gridRef.current.getRowData(clickedCell.id.rowID);
+    const selectedData = gridRef.getRowData(clickedCell.id.rowID);
     copyData(selectedData);
     closeContextMenu();
 }
@@ -285,7 +285,7 @@ function copySelectedCellData() {
 }
 
 function copySelectedData() {
-    const selectedData = gridRef.current.getSelectedData(null,null);
+    const selectedData = gridRef.getSelectedData(null,null);
     copyData(selectedData);
     closeContextMenu();
 }
