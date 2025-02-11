@@ -475,7 +475,7 @@
         "href": "grids/hierarchical-grid/paging.md"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "リモート データ操作",
         "href": "grids/hierarchical-grid/remote-data-operations.md"
       },
@@ -1509,7 +1509,8 @@
       {
         "exclude": ["Angular", "React", "Blazor"],
         "name": "カスタマイズ",
-        "href": "layouts/dock-manager-customization.md"
+        "href": "layouts/dock-manager-customization.md",
+        "status": "UPDATED"
       }
     ]
   },
