@@ -5,6 +5,7 @@ _keywords:  material size, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridSize}
 ---
 
 # {Platform} {ComponentTitle} Size

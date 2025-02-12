@@ -5,6 +5,7 @@ _keywords: conditional styling, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridConditionalCellStyling}
 ---
 
 # {Platform} {ComponentTitle} Conditional Styling

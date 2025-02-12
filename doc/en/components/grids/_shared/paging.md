@@ -4,6 +4,7 @@ _description: Configure {Platform} pagination and create custom pages in the {Pl
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Paging, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridPaging}
 ---
 
 # {Platform} {ComponentTitle} Pagination Overview
