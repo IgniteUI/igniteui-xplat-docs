@@ -119,8 +119,8 @@ this.grid.unpinColumn('Name');
 
 <!-- React -->
 ```typescript
-gridRef.current.pinColumn('AthleteNumber');
-gridRef.current.unpinColumn('Name');
+gridRef.pinColumn('AthleteNumber');
+gridRef.unpinColumn('Name');
 ```
 <!-- end: React -->
 
