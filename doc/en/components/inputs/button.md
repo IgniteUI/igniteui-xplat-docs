@@ -323,13 +323,21 @@ Setting the `download` property will prompt the user to save the linked URL inst
 
 ## Styling
 
-The button component exposes `base` CSS part that allows us to style the wrapped element (`<button>` or `<a>`).
+The `Button` component exposes three CSS parts which we can use for styling:
+
+|Name|Description|
+|--|--|
+| `base` | The native button element of the igc-button component. |
+| `prefix` | The prefix container of the igc-button component. |
+| `suffix` | The suffix container of the igc-button component. |
+
+The `base` CSS part allows us to style the wrapped element (`<button>` or `<a>`).
 
 ```css
 igc-button::part(base) {
-    background-color: #e99221;
-    color: #011627;
-    padding: 18px;
+  background-color: var(--ig-primary-500);
+  color: var(--ig-primary-500-contrast);
+  padding: 18px;
 }
 ```
 
@@ -346,7 +354,7 @@ igc-button::part(base) {
  - `Href`
  - `RadioGroup`
  - `Radio`
-
+ - [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

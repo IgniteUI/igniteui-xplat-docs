@@ -250,8 +250,8 @@ The icon component can be styled by applying styles directly to the `Icon` eleme
 
 ```css
 igc-icon {
-  --size: 48px;
-  color: olive;
+  --size: 28px;
+  color: var(--ig-primary-500);
 }
 ```
 
@@ -261,6 +261,7 @@ igc-icon {
 
  - `Icon`
  - `RegisterIcon`
+ - [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

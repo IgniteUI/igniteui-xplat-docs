@@ -1,12 +1,12 @@
 ---
 title: {Platform} Text Area | Data Visualization Tools | Infragistics
-_description: Infragistics' {Platform} Text Area is a component where the user can enter a sizeable amount of free-form text.
+_description: Infragistics' {Platform} Text Area is a component where the user can enter a sizable amount of free-form text.
 _keywords: {ProductName}, UI controls, {Platform} widgets, Web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Input, {Platform} Textarea components, {Platform} Textarea controls
 mentionedTypes: ["Input", "Icon", "Textarea", "Toast"]
 ---
 # {Platform} Text Area Overview
 
-The {ProductName} Text Area represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form.
+The {ProductName} Text Area represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizable amount of free-form text, for example a comment on a review or feedback form.
 
 ## {Platform} Text Area Example
 
@@ -90,7 +90,7 @@ With `prefix` and `suffix` slots we can add different content before and after t
 
 ## Text Area Resizing
 
-There are three different resize options of the `Textarea`. When set to `none`, the text area does not resize and uses a scroll bar to show overflow text. When set to `vertical` (the default option), the text area lets the user resize it vertically. When set to `auto`, the textarea shows all the user input at once. Overflow text wraps onto a new line and expands the text area automatically.
+There are three different resize options of the `Textarea`. When set to `none`, the text area does not resize and uses a scroll bar to show overflow text. When set to `vertical` (the default option), the text area lets the user resize it vertically. When set to `auto`, the text area shows all the user input at once. Overflow text wraps onto a new line and expands the text area automatically.
 
 `sample="/inputs/textarea/resize", height="320", alt="{Platform} Textarea Resizing Example"`
 
@@ -108,32 +108,32 @@ The sample below shows how a `Textarea` could be integrated into a form.
 
 ## Styling
 
-The Text Area component exposes CSS parts for almost all of its inner elements. The following table lists all CSS parts exposed by the Input:
+The `Textarea` component exposes CSS parts for almost all of its inner elements. The following table lists all of the exposed CSS parts:
 
 |Name|Description|
 |--|--|
-| container | The main wrapper that holds all main input elements. |
-| input | The native input element. |
-| label | The native label element. |
-| prefix | The prefix wrapper. |
-| suffix | The suffix wrapper. |
-| helper-text | The helper text wrapper. |
+| `container` | The main wrapper that holds all main input elements. |
+| `input` | The native input element. |
+| `label` | The native label element. |
+| `prefix` | The prefix wrapper. |
+| `suffix` | The suffix wrapper. |
+| `helper-text` | The helper text wrapper. |
 
-```scss
+```css
 igc-textarea::part(input) {
-    background-color: rgb(169, 214, 229);
-    border-color: rgb(42, 111, 151);
+  background-color: var(--ig-info-100);
+  border-color: var(--ig-primary-400);
 }
 
 igc-textarea::part(label) {
-    color: rgb(1, 42, 74);
+  color: var(--ig-gray-800);
 }
 
 igc-textarea::part(prefix),
 igc-textarea::part(suffix) {
-    color: white;
-    border-color: rgb(42, 111, 151);
-    background-color: rgb(70, 143, 175);
+  color: var(--ig-primary-500-contrast);
+  border-color: var(--ig-primary-500);
+  background-color: var(--ig-primary-500);
 }
 ```
 
@@ -146,6 +146,7 @@ igc-textarea::part(suffix) {
  - `Icon`
  - `Textarea`
  - `Toast`
+ - [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

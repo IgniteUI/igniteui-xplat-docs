@@ -161,7 +161,7 @@ You can use the `checked` attribute to toggle on the switch.
 <IgbSwitch Checked="true" />
 ```
 
-`sample="/inputs/switches/checking", height="100", alt="{Platform} Avatar Example"`
+`sample="/inputs/switches/checking", height="100", alt="{Platform} Switch Example"`
 
 
 
@@ -209,7 +209,7 @@ You can use the `disabled` attribute to disable the switch.
 <IgbSwitch Disabled="true" />
 ```
 
-`sample="/inputs/switches/disabled", height="100", alt="{Platform} Avatar Example"`
+`sample="/inputs/switches/disabled", height="100", alt="{Platform} Switch Example"`
 
 
 
@@ -231,29 +231,40 @@ You can use the `name` and `value` attributes when using the switch with `Form`.
 
 ## Styling
 
-The switch component exposes several CSS parts (`base`, `control`, `thumb`, and `label`) to give you full control over its styling.
+The `Switch` component exposes several CSS parts to give you full control over its styling:
+
+|Name|Description|
+|--|--|
+| `base` | The base wrapper of the switch. |
+| `control` | The switch input element. |
+| `thumb` | The position indicator of the switch. |
+| `label` | The switch label. |
 
 ```css
-igc-switch::part(control) {
-  background: beige;
-  border-radius: 0;
-}
-
 igc-switch::part(thumb) {
-  background: olive;
-  border-radius: 2px;
+  background-color: var(--ig-success-500);
   box-shadow: none;
 }
+
+igc-switch::part(thumb checked) {
+  background-color: var(--ig-gray-50);
+}
+
+igc-switch::part(control checked) {
+  background-color: var(--ig-success-500);
+}
 ```
+
+`sample="/inputs/switches/styling", height="100", alt="{Platform} Switch Styling"`
 
 <div class="divider--half"></div>
 
 
 ## API References
 
- - `Form`
  - `LabelPosition`
  - `Switch`
+ - [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

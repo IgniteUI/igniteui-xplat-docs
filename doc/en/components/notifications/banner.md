@@ -501,24 +501,32 @@ Finally, we will add a `Toast`, displaying a message about the WiFi state. The r
 
 ## Styling
 
-The banner component exposes several CSS parts (`base`, `spacer`, `message`, `illustration`, `content` and `actions`) to give you full control over its style.
+The `Banner` component exposes several CSS parts which give you full control over its style:
+
+|Name|Description|
+|--|--|
+| `base` | The base wrapper of the banner component. |
+| `spacer` | The inner wrapper that sets the space around the banner. |
+| `message` | The part that holds the text and the illustration. |
+| `illustration` | The part that holds the banner icon/illustration. |
+| `content` | The part that holds the banner text content. |
+| `actions` | The part that holds the banner action buttons. |
 
 ```css
 igc-banner::part(spacer) {
-    background: #dedede;
+  background: var(--ig-surface-600);
 }
 
 igc-banner::part(illustration) {
-    color: #666666;
+  color: var(--ig-surface-600-contrast);
 }
 
 igc-banner::part(content) {
-    color: #151515;
+  color: var(--ig-gray-900);
 }
 ```
 
 `sample="/notifications/banner/banner-styling", height="530", alt="{Platform} Banner Example"`
-
 
 ## API References
 
@@ -528,6 +536,7 @@ igc-banner::part(content) {
 - `Navbar`
 - `Toast`
 - `Ripple`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

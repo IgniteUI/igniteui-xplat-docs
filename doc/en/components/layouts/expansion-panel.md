@@ -153,7 +153,43 @@ The {ProductName} Expansion Panel keyboard navigation is compliant with W3C acce
 
 ## Styling
 
-The {ProductName} Expansion Panel component exposes several CSS parts (`header`, `indicator`, `title`, `subtitle` and `content`) to give you full control over its styling.
+The `ExpansionPanel` component exposes several CSS parts, giving you full control over its style:
+
+|Name|Description|
+|--|--|
+| `header` | The container of the expansion indicator, title and subtitle. |
+| `title` | The title container. |
+| `subtitle` | The subtitle container. |
+| `indicator` | The indicator container. |
+| `content` | The expansion panel's content wrapper. |
+
+```css
+igc-expansion-panel {
+  background-color: var(--ig-secondary-900);
+  color: var(--ig-secondary-900-contrast);
+}
+
+igc-button::part(base) {
+  color: var(--ig-secondary-900-contrast);
+}
+
+igc-button::part(base)::before {
+  background-color: var(--ig-warn-500);
+}
+
+igc-expansion-panel::part(indicator) {
+  color: var(--ig-warn-500);
+}
+
+igc-expansion-panel::part(header) {
+  background-color: var(--ig-secondary-900);
+}
+
+igc-expansion-panel::part(title),
+igc-expansion-panel::part(subtitle) {
+  color: var(--ig-warn-500);
+}
+```
 
 `sample="/layouts/expansion-panel/styling", height="480", alt="{Platform} Expansion Panel Styling"`
 
@@ -163,6 +199,7 @@ The {ProductName} Expansion Panel component exposes several CSS parts (`header`,
 ## API References
 
  - `ExpansionPanel`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

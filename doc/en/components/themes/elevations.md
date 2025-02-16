@@ -50,8 +50,8 @@ Example:
 
 ```css
 :root {
-    --ig-elevation-1: 0 2px 6px 0 rgba(0, 0, 0, .18);
-    --ig-elevation-2: 0 3px 9px 0 rgba(0, 0, 0, .24);
+  --ig-elevation-1: 0 2px 6px 0 rgba(0, 0, 0, .18);
+  --ig-elevation-2: 0 3px 9px 0 rgba(0, 0, 0, .24);
 }
 ```
 
@@ -63,7 +63,7 @@ You can shadow the globally set elevations for a specific scope only. We already
 ```css
 igc-snackbar,
 igc-toast {
-    --ig-elevation-10: 0 3px 9px 0 rgba(0, 0, 0, .24);
+  --ig-elevation-10: 0 3px 9px 0 rgba(0, 0, 0, .24);
 }
 ```
 
@@ -75,7 +75,7 @@ In addition to elevation levels, {ProductName} exposes a CSS variable that makes
 
 ```css
 :root {
-    --ig-elevation-factor: 0;
+  --ig-elevation-factor: 0;
 }
 ```
 

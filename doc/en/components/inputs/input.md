@@ -128,38 +128,37 @@ The full list of attributes can be found in `Input` API.
 
 ## Styling
 
-The Input component exposes CSS parts for almost all of its inner elements. The following table lists all CSS parts exposed by the Input:
+The `Input` component exposes CSS parts for almost all of its inner elements. The following table lists all of the exposed CSS parts:
 
 |Name|Description|
 |--|--|
-| container | The main wrapper that holds all main input elements. |
-| input | The native input element. |
-| label | The native label element. |
-| prefix | The prefix wrapper. |
-| suffix | The suffix wrapper. |
-| helper-text | The helper text wrapper. |
+| `container` | The main wrapper that holds all main input elements. |
+| `input` | The native input element. |
+| `label` | The native label element. |
+| `prefix` | The prefix wrapper. |
+| `suffix` | The suffix wrapper. |
+| `helper-text` | The helper text wrapper. |
 
 ```scss
 igc-input::part(input) {
-    background-color: rgb(169, 214, 229);
-    border-color: rgb(42, 111, 151);
+  background-color: var(--ig-primary-100);
+  border-color: var(--ig-secondary-500);
+  box-shadow: none;
 }
 
 igc-input::part(label) {
-    color: rgb(1, 42, 74);
+  color: var(--ig-gray-700);
 }
 
 igc-input::part(prefix),
 igc-input::part(suffix) {
-    color: white;
-    border-color: rgb(42, 111, 151);
-    background-color: rgb(70, 143, 175);
+  color: var(--ig-primary-600-contrast);
+  background-color: var(--ig-primary-600);
+  border-color: var(--ig-secondary-600);
 }
 ```
 
 `sample="/inputs/input/styling", height="150", alt="{Platform} Input Styling"`
-
-
 
 <div class="divider"></div>
 
@@ -169,7 +168,7 @@ igc-input::part(suffix) {
  - `Icon`
  - `Input`
  - `Radio`
-
+ - [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

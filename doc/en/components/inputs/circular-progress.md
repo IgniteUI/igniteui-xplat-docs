@@ -181,32 +181,46 @@ Customizing the progress bar in order to use a color gradient instead of a solid
 
 ## Styling
 
-The {ProductName} Circular Procress Indicator component exposes CSS parts for almost all of its inner elements.
-
-`sample="/inputs/circular-progress-indicator/styling", height="150", alt="{Platform} Circular Progress Styling"`
-
-
-
-The following table lists all CSS parts exposed by the Circular Progress:
+The `CircularProgress` component exposes CSS parts for almost all of its inner elements:
 
 |Name|Description|
 |--|--|
-| svg                | The progress SVG element.                 |
-| gradient_start     | The progress linear-gradient start color. |
-| gradient_end       | The progress linear-gradient end color.   |
-| track              | The progress ring's track area.           |
-| fill               | The progress indicator area.              |
-| label              | The progress label.                       |
-| value              | The progress label value.                 |
-| indeterminate      | The progress indeterminate state.         |
-| primary            | The progress indicator primary state.     |
-| danger             | The progress indicator error state.       |
-| warning            | The progress indicator warning state.     |
-| info               | The progress indicator info state.        |
-| success            | The progress indicator success state.     |
+| `svg`               | The progress SVG element.                 |
+| `gradient_start`     | The progress linear-gradient start color. |
+| `gradient_end`       | The progress linear-gradient end color.   |
+| `track`              | The progress ring's track area.           |
+| `fill`               | The progress indicator area.              |
+| `label`              | The progress label.                       |
+| `value`              | The progress label value.                 |
+| `indeterminate`      | The progress indeterminate state.         |
+| `primary`            | The progress indicator primary state.     |
+| `danger`             | The progress indicator error state.       |
+| `warning`            | The progress indicator warning state.     |
+| `info`               | The progress indicator info state.        |
+| `success`            | The progress indicator success state.     |
 
+Using this CSS parts we have almost full control over the Circular Progress styling.
 
-<div class="divider"></div>
+```css
+
+igc-circular-progress {
+  margin: 20px;
+  --diameter: 50px;
+}
+
+igc-circular-progress::part(gradient_end),
+igc-circular-progress::part(gradient_start) {
+  stop-color: var(--ig-success-200);
+}
+
+igc-circular-progress::part(track) {
+  stroke: var(--ig-gray-400);
+}
+
+```
+
+`sample="/inputs/circular-progress-indicator/styling", height="150", alt="{Platform} Circular Progress Styling"`
+
 
 ## API References
 
@@ -214,6 +228,7 @@ The following table lists all CSS parts exposed by the Circular Progress:
  - `Calendar`
  - `CircularGradient`
  - `CircularProgress`
+ - [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources

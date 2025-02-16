@@ -396,77 +396,78 @@ When the **year** button (in the subheader) is focused, use:
 
 ## Styling
 
-The Calendar component exposes CSS parts for almost all of its inner elements. The following table lists all CSS parts exposed by the Calendar:
+The `Calendar` component exposes CSS parts for almost all of its inner elements. The following table lists all of the exposed CSS parts:
 
 |Name|Description|
 |--|--|
-| header | The header element. |
-| header-title | The header title element. |
-| header-date | The header date element. |
-| content | The content element which contains the views and navigation elements. |
-| navigation | The navigation container element. |
-| months-navigation | The months navigation button element. |
-| years-navigation | The years navigation button element. |
-| years-range | The years range element. |
-| navigation-buttons | The navigation buttons container. |
-| navigation-button | Previous/next navigation button. |
-| days-view-container | The days view container element. |
-| days-view | Days view element. |
-| months-view | The months view element. |
-| years-view | The years view element. |
-| days-row | Days row element. |
-| label | Week header label element. |
-| week-number | Week number element. |
-| week-number-inner | Week number inner element. |
-| date | Date element. |
-| date-inner | Date inner element. |
-| first | The first selected date element. |
-| last | The last selected date element. |
-| inactive | Inactive date element. |
-| hidden | Hidden date element. |
-| weekend | Weekend date element. |
-| range | Range selected element. |
-| special | Special date element. |
-| disabled | Disabled date element. |
-| single | Single selected date element. |
-| preview | Range selection preview date element. |
-| month | Month element. |
-| month-inner | Month inner element. |
-| year | Year element. |
-| year-inner | Year inner element. |
-| selected | Indicates selected state. Applies to date, month and year elements. |
-| current | Indicates current state. Applies to date, month and year elements. |
+| `header` | The header element. |
+| `header-title` | The header title element. |
+| `header-date` | The header date element. |
+| `content` | The content element which contains the views and navigation elements. |
+| `navigation` | The navigation container element. |
+| `months-navigation` | The months navigation button element. |
+| `years-navigation` | The years navigation button element. |
+| `years-range` | The years range element. |
+| `navigation-buttons` | The navigation buttons container. |
+| `navigation-button` | Previous/next navigation button. |
+| `days-view-container` | The days view container element. |
+| `days-view` | Days view element. |
+| `months-view` | The months view element. |
+| `years-view` | The years view element. |
+| `days-row` | Days row element. |
+| `label` | Week header label element. |
+| `week-number` | Week number element. |
+| `week-number-inner` | Week number inner element. |
+| `date` | Date element. |
+| `date-inner` | Date inner element. |
+| `first` | The first selected date element. |
+| `last` | The last selected date element. |
+| `inactive` | Inactive date element. |
+| `hidden` | Hidden date element. |
+| `weekend` | Weekend date element. |
+| `range` | Range selected element. |
+| `special` | Special date element. |
+| `disabled` | Disabled date element. |
+| `single` | Single selected date element. |
+| `preview` | Range selection preview date element. |
+| `month` | Month element. |
+| `month-inner` | Month inner element. |
+| `year` | Year element. |
+| `year-inner` | Year inner element. |
+| `selected` | Indicates selected state. Applies to date, month and year elements. |
+| `current` | Indicates current state. Applies to date, month and year elements. |
 
-Using these CSS parts we can customize thе appearance of the Calendar component like this:
-
+Using these CSS parts we can customize thе appearance of the `Calendar` component like this:
 
 ```css
-igc-calendar::part(header) {
-    background: #345779;
-}
-
 igc-calendar::part(date-inner selected),
 igc-calendar::part(month-inner selected),
-igc-calendar::part(year-inner selected) {
-    background: #345779;
-    border-color: #345779;
+igc-calendar::part(year-inner selected),
+igc-calendar::part(month-inner selected):focus,
+igc-calendar::part(year-inner selected):focus {
+  background: var(--ig-primary-500);
+  border-color: var(--ig-primary-800);
 }
 
-igc-calendar::part(date-inner current),
-igc-calendar::part(navigation-button):hover,
-igc-calendar::part(navigation-button):focus,
+igc-calendar::part(date-inner selected):hover,
+igc-calendar::part(month-inner selected):hover,
+igc-calendar::part(year-inner selected):hover {
+  background: var(--ig-primary-500);
+  border-color: var(--ig-primary-800);
+}
+
+igc-calendar::part(label),
+igc-calendar::part(navigation-button),
 igc-calendar::part(months-navigation):hover,
 igc-calendar::part(months-navigation):focus,
 igc-calendar::part(years-navigation):hover,
 igc-calendar::part(years-navigation):focus {
-    color: #2dabe8;
+  color: var(--ig-primary-300);
 }
 
-igc-calendar::part(date-inner current selected),
-igc-calendar::part(month-inner current selected),
-igc-calendar::part(year-inner current selected) {
-    box-shadow: inset 0 0 0 0.0625rem white, 0 0 0 0.0625rem #345779;
-    color: white;
+igc-calendar::part(navigation-button):hover,
+igc-calendar::part(navigation-button):focus {
+  color: var(--ig-primary-800);
 }
 ```
 
@@ -476,18 +477,14 @@ The following sample demonstrates the above CSS configuration:
 
 ## API References
 
-* `Calendar`
-* `Radio`
-* `RadioGroup`
-* `ActiveDate`
-* `ActiveView`
-* `After`
-* `Before`
-* `Between`
-* `Change`
-* `DateRangeDescriptor`
-* `DateRangeType`
-* `DateRange`
+- `Calendar`
+- `Radio`
+- `RadioGroup`
+- `ActiveDate`
+- `ActiveView`
+- `DateRangeDescriptor`
+- `DateRange`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

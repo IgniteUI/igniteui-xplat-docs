@@ -158,43 +158,46 @@ You can dynamically change the value of the progress indicator by using external
 
 ## Styling
 
-The Linear Progress Indicator component exposes CSS parts for almost all of its inner elements.
-
-`sample="/inputs/linear-progress-indicator/styling", height="80", alt="{Platform} Linear Progress Styling"`
-
-
-
-The following table lists all CSS parts exposed by the Linear Progress:
+The `LinearProgress` component exposes CSS parts for almost all of its inner elements:
 
 |Name|Description|
 |--|--|
-| track         | The progress ring's track area. |
-| fill          | The progress indicator area. |
-| striped       | The progress striped indicator. |
-| label         | The progress indicator label. |
-| value         | The progress label value. |
-| indeterminate | The progress indeterminate state. |
-| primary       | The progress indicator primary state. |
-| danger        | The progress indicator error state. |
-| warning       | The progress indicator warning state. |
-| info          | The progress indicator info state. |
-| success       | The progress indicator success state. |
-| top           | The progress label position. |
-| top-start     | The progress label position. |
-| top-end       | The progress label position. |
-| bottom        | The progress label position. |
-| bottom-start  | The progress label position. |
-| bottom-end    | The progress label position. |
+| `track`         | The progress ring's track area. |
+| `fill`          | The progress indicator area. |
+| `striped`       | The progress striped indicator. |
+| `label`         | The progress indicator label. |
+| `value`         | The progress label value. |
+| `indeterminate` | The progress indeterminate state. |
+| `primary`       | The progress indicator primary state. |
+| `danger`        | The progress indicator error state. |
+| `warning`       | The progress indicator warning state. |
+| `info`          | The progress indicator info state. |
+| `success`       | The progress indicator success state. |
 
+Using this CSS parts we have almost full control of the Linear Progress styling.
 
-<div class="divider"></div>
+`sample="/inputs/linear-progress-indicator/styling", height="80", alt="{Platform} Linear Progress Styling"`
 
+```css
+igc-linear-progress::part(track){
+  background-color: var(--ig-gray-300)
+}
+
+igc-linear-progress::part(fill){
+  background-color: var(--ig-primary-300)
+}
+
+igc-linear-progress::part(label){
+  color: var(--ig-primary-300)
+}
+```
 
 ## API References
 
  - `Button`
  - `Calendar`
  - `LinearProgress`
+ - [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources

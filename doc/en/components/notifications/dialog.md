@@ -151,18 +151,25 @@ Form elements can close a Dialog if they have the attribute `method="dialog"`. S
 
 ## Styling
 
-The dialog component exposes several CSS parts (`base`, `title`, `content` and `footer`) to give you full control over its style.
+The `Dialog` component exposes several CSS parts to give you full control over its style:
+
+|Name|Description|
+|--|--|
+| `base` | The base wrapper of the dialog. |
+| `title` | The title container. |
+| `footer` | The footer container. |
+| `content` | The content container. |
 
 ```css
 igc-dialog::part(content) {
-    background: #011627;
-    color: white;
+  background: var(--ig-secondary-800);
+  color: var(--ig-secondary-800-contrast);
 }
 
 igc-dialog::part(title),
 igc-dialog::part(footer) {
-    background: #011627;
-    color: #ECAA53;
+  background: var(--ig-secondary-800);
+  color: var(--ig-warn-500);
 }
 ```
 
@@ -180,6 +187,7 @@ igc-dialog::part(footer) {
 - `Open`
 - `Title`
 - `Dialog`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

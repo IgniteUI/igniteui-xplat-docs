@@ -194,7 +194,7 @@ We allow the user to choose the size of the `Chip` by utilizing the `--ig-size` 
 
 ```css
 igc-chip {
-    --ig-size: var(--ig-size-large);
+  --ig-size: var(--ig-size-large);
 }
 ```
 
@@ -203,27 +203,25 @@ igc-chip {
 
 ## Styling
 
-The chip component exposes a `Base`, `Prefix`, `Sufix` parts and several slots that can be used to change all of its style properties.
+The `Chip` component exposes a `base`, `prefix`, `suffix` CSS parts that can be used to change all of its style properties.
 
 ```css
 igc-chip::part(base) {
-    background: #011627;
-    color: #ECAA53;
+  background: var(--ig-primary-500);
+  color: var(--ig-primary-500-contrast);
 }
 
 igc-chip::part(suffix) {
-    color: #B7B6C2;
+  color: var(--ig-gray-400);
 }
 ```
 
 `sample="/inputs/chip/styling", height="80", alt="{Platform} Chip Styling Example"`
 
-<div class="divider--half"></div>
-
 ## API References
 
  - `Chip`
-
+ - [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

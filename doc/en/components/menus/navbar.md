@@ -100,28 +100,27 @@ You can added some `Icon` elements using the `Start` and `End` slots to the`Navb
 
 ## Styling
 
-The Navigation Bar component exposes several CSS parts (`base`, `start`, `middle` and `end`) to give you full control over its styling.
+The `NavBar` component exposes several CSS parts, giving you full control over its style:
+
+|Name|Description|
+|--|--|
+| `base` | The base wrapper of the navigation bar. |
+| `start` | The left aligned icon container. |
+| `middle` | The navigation bar title container. |
+| `end` | The right aligned action icons container. |
 
 ```css
 igc-icon {
-    color: currentColor;
+  color: var(--ig-primary-500);
 }
 
 igc-navbar {
-    background-color: #232121
-}
-
-igc-navbar::part(start) {
-    color: #f23269;
+  background-color: var(--ig-secondary-200);
 }
 
 igc-navbar::part(middle) {
-    font-family: Titillium Web,sans-serif;
-    color: #e9e8ea
-}
-
-igc-navbar::part(end) {
-    color: #e9e8ea
+  font-family: Titillium Web, sans-serif;
+  color: var(--ig-primary-500);;
 }
 ```
 
@@ -134,9 +133,9 @@ If all went well, you should see the following in your browser:
 
 ## API References
 
- - `End`
  - `Icon`
  - `Navbar`
+ - [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
