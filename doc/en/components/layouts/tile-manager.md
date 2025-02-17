@@ -1,6 +1,6 @@
 ---
 title: {Platform} Tile Manager Component - {ProductName}
-_description: {Platform} Tile Manager component is used to visualize content as a process and to show its progress by dividing the content into logical steps. Try it for FREE.
+_description: {Platform} Tile Manager component enables the display of content in individual tiles.
 _keywords: {Platform} Tile Manager, {ProductName}, Infragistics
 mentionedTypes: ["TileManager"]
 ---
@@ -21,9 +21,8 @@ The following {ProductName} Tile Manager Example shows the component in action.
 
 The Tile Manager provides a base tile layout behavior, managing the placement of tiles in maximized or normal state. The tiles can be sized independently of each other and used to form complex layouts. End users can reorder tiles by dragging and dropping them, providing a flexible and intuitive experience. 
 
-There are three different Tile components which we can use:
+The Tile Manager offers two components that we can use:
 - `IgcTileComponent` - This component represents an individual tile displayed within the Tile Manager.
-- `IgcTileHeaderComponent` - This component can only be used within a tile component to represent the header section of the tile.
 - `IgcTileManagerComponent` - This is the main component that contains all of the tile components, serving as the container for the entire tile layout.
 
 ### Getting Started
@@ -39,9 +38,9 @@ npm install {PackageWebComponents}
 Before using the Tile Manager, you need to import it as follows:
 
 ```ts
-import { defineComponents, IgcTileManagerComponent, IgcTileComponent, IgcTileHeaderComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcTileManagerComponent, IgcTileComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcTileManagerComponent, IgcTileComponent, IgcTileHeaderComponent);
+defineComponents(IgcTileManagerComponent, IgcTileComponent);
 ```
 
 Now you can start with a basic configuration of the {Platform} Tile Manager.
@@ -52,7 +51,6 @@ Now you can start with a basic configuration of the {Platform} Tile Manager.
     <p>Tile 1</p>
   </igc-tile>
   <igc-tile>
-    <igc-tile-header>Tile 2 header</igc-tile-header>
     <p>Tile 2</p>
   </igc-tile>
   <igc-tile>
@@ -115,15 +113,11 @@ There are two types of transitions you can use while reordering tiles with drag-
 ```html
 <igc-tile-manager drag-mode="tile-header" drag-action="slide">
   <igc-tile>
-    <igc-tile-header slot="header">
-      <span slot="title">Tile 1 header</span>
-    </igc-tile-header>
+    <span slot="title">Tile 1 header</span>
     <p>Content for Tile 1</p>
   </igc-tile>
   <igc-tile>
-    <igc-tile-header slot="header">
-      <span slot="title">Tile 2 header</span>
-    </igc-tile-header>
+    <span slot="title">Tile 2 header</span>
     <p>Content for Tile 2</p>
   </igc-tile>
 </igc-tile-manager>
@@ -140,15 +134,11 @@ We can also specify the number of grid columns for our Tile Manager. To do this,
 ```html
 <igc-tile-manager column-count="2">
   <igc-tile>
-    <igc-tile-header slot="header">
-      <span slot="title">Tile 1 header</span>
-    </igc-tile-header>
+    <span slot="title">Tile 1 header</span>
     <p>Content for Tile 1</p>
   </igc-tile>
   <igc-tile>
-    <igc-tile-header slot="header">
-      <span slot="title">Tile 2 header</span>
-    </igc-tile-header>
+    <span slot="title">Tile 2 header</span>
     <p>Content for Tile 2</p>
   </igc-tile>
   ...
@@ -164,15 +154,11 @@ Another property that can be used in the Tile Manager is the `gap` property, whi
 ```html
 <igc-tile-manager gap="20px">
   <igc-tile>
-    <igc-tile-header slot="header">
-      <span slot="title">Tile 1 header</span>
-    </igc-tile-header>
+    <span slot="title">Tile 1 header</span>
     <p>Content for Tile 1</p>
   </igc-tile>
   <igc-tile>
-    <igc-tile-header slot="header">
-      <span slot="title">Tile 2 header</span>
-    </igc-tile-header>
+    <span slot="title">Tile 2 header</span>
     <p>Content for Tile 2</p>
   </igc-tile>
   ...
@@ -186,15 +172,11 @@ We also have properties for setting the minimum width of the columns (`min-colum
 ```html
 <igc-tile-manager min-column-widt="200px" min-row-height="150px">
   <igc-tile>
-    <igc-tile-header slot="header">
-      <span slot="title">Tile 1 header</span>
-    </igc-tile-header>
+    <span slot="title">Tile 1 header</span>
     <p>Content for Tile 1</p>
   </igc-tile>
   <igc-tile>
-    <igc-tile-header slot="header">
-      <span slot="title">Tile 2 header</span>
-    </igc-tile-header>
+    <span slot="title">Tile 2 header</span>
     <p>Content for Tile 2</p>
   </igc-tile>
   ...
@@ -226,24 +208,20 @@ The Tile component also has properties that can be set individually for each til
 ```html
 <igc-tile-manager>
   <igc-tile col-span="2" disable-resize>
-    <igc-tile-header slot="header">
-      <span slot="title">Tile 1 header</span>
-    </igc-tile-header>
+    <span slot="title">Tile 1 header</span>
     <p>Content for Tile 1</p>
   </igc-tile>
   <igc-tile>
-    <igc-tile-header slot="header">
-      <span slot="title">Tile 2 header</span>
-    </igc-tile-header>
+    <span slot="title">Tile 2 header</span>
     <p>Content for Tile 2</p>
   </igc-tile>
   ...
 </igc-tile-manager>
 ```
 
-## Header component actions
+## Header section actions
 
-The header component also includes two action buttons:
+The header section also includes two action buttons:
 
 - The `expand` button enlarges the tile's content to fill the entire width of the Tile Manager, offering a wider view of the content.
 - The `fullscreen` button enables the tile to open in fullscreen mode in the user's browser.
@@ -252,8 +230,8 @@ The header component also includes two action buttons:
 
 ## Styling
 
-You can customize the appearance of all three components: `Tile Manager`, `Tile`, and `Tile Header`. 
-Each of these components exposes CSS properties that can be used for styling.
+You can also customize the appearance of the two components - `Tile Manager` and `Tile`. 
+Each component exposes CSS properties that can be used for styling.
 
 `Tile Manager` CSS parts:
 
@@ -278,30 +256,22 @@ Each of these components exposes CSS properties that can be used for styling.
 | `actions` | 	A section where action buttons are added. |
 | `content-container` | The content wrapper of a tile. |
 
-`Tile Header` CSS parts:
-
-| Part name | Description |
-| ---------|------------ |
-| `header` | The tile header container. |
-| `title` | The header title container. |
-| `actions` | The header actions container. |
-
 Using these CSS parts you can customize the appearance of the three components as follows:
 
 ```css
 igc-tile-manager::part(base) {
-  background-color: var(--ig-surface-600);
+  background-color: var(--ig-surface-900);
 }
 
 igc-tile::part(content-container) {
   color: var(--ig-secondary-200);
 }
 
-igc-tile-header::part(header) {
-  background-color: var(--ig-gray-400);
+igc-tile::part(header) {
+  background-color: var(--ig-gray-300);
 }
 
-igc-tile-header::part(title) {
+igc-tile::part(title) {
   color: var(--ig-primary-400);
 }
 ```
