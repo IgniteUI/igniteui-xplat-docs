@@ -252,9 +252,6 @@ public handlePreLoad() {
 
 `sample="/{ComponentSample}/infinite-scroll", height="550", alt="{Platform} {ComponentTitle} リモート データ操作の無限スクロールの例"`
 
-
-
-
 <!-- Angular -->
 ## リモート ソート/フィルタリング
 
@@ -493,12 +490,16 @@ BLAZOR CODE SNIPPET HERE
 
 <div class="divider--half"></div>
 
+<!-- end: Angular -->
+
 ## リモート ページング
 
 <!-- ComponentStart: Grid -->
 
 ページング機能はリモート データで処理することもできます。はじめにデータ フェッチングを行うサービスを宣言します。ページ カウントを計算するためすべてのデータ項目のカウントをが必要なため、ロジックをサービスに追加する必要があります。
 
+<!-- Angular -->
+
 ```typescript
 @Injectable()
 export class RemotePagingService {
@@ -530,15 +531,102 @@ export class RemotePagingService {
     }
 }
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
+```ts
+export class RemotePagingService {
+    public static CUSTOMERS_URL = `https://data-northwind.indigo.design/Customers/GetCustomersWithPage`;
+    constructor() {}
+
+    public static getDataWithPaging(pageIndex?: number, pageSize?: number) {
+        return fetch(RemotePagingService.buildUrl(RemotePagingService.CUSTOMERS_URL, pageIndex, pageSize))
+        .then((result) => result.json())
+        .catch((error) => console.error(error.message));
+    }
+    
+    private static buildUrl(baseUrl: string, pageIndex?: number, pageSize?: number) {
+        let qS = "";
+        if (baseUrl) {
+                qS += `${baseUrl}`;
+        }
+
+        // Add pageIndex and size to the query string if they are defined
+        if (pageIndex !== undefined) {
+            qS += `?pageIndex=${pageIndex}`;
+            if (pageSize !== undefined) {
+                qS += `&size=${pageSize}`;
+            }
+        } else if (pageSize !== undefined) {
+            qS += `?perPage=${pageSize}`;
+        }
+
+        return `${qS}`;
+    }
+}
+```
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+
+Blazor Server はすでにリモート インスタンスであるため、他のプラットフォームのデモとは異なり、データがすでにリモートであるため、データ用に別のリモート インスタンスを設定する必要はありません。リモート ページングを行うには、データ クラスにいくつかのメソッドを設定する必要があります。
 
 ```razor
-BLAZOR CODE SNIPPET HERE
+        public Task<List<NwindDataItem>> GetData(int index, int perPage)
+        {
+            var itemsToReturn = items.Skip(index).Take(perPage).ToList();
+            return Task.FromResult(itemsToReturn);
+        }
+
+        public Task<int> GetDataLength()
+        {
+            return Task.FromResult(items.Count);
+        }
 ```
+<!-- end: Blazor -->
+
+<!-- React -->
+```tsx
+const CUSTOMERS_URL = `https://data-northwind.indigo.design/Customers/GetCustomersWithPage`;
+
+export class RemoteService {
+
+    public static getDataWithPaging(pageIndex?: number, pageSize?: number) {
+        return fetch(this.buildUrl(CUSTOMERS_URL, pageIndex, pageSize))
+        .then((result) => result.json());
+    }
+
+    private static buildUrl(baseUrl: string, pageIndex?: number, pageSize?: number) {
+        let qS = "";
+        if (baseUrl) {
+                qS += `${baseUrl}`;
+        }
+
+        // Add pageIndex and size to the query string if they are defined
+        if (pageIndex !== undefined) {
+            qS += `?pageIndex=${pageIndex}`;
+            if (pageSize !== undefined) {
+                qS += `&size=${pageSize}`;
+            }
+        } else if (pageSize !== undefined) {
+            qS += `?perPage=${pageSize}`;
+        }
+
+        return `${qS}`;
+    }
+}
+```
+<!-- end: React -->
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 
+<!-- Angular -->
+
 ページング機能はリモート データで処理することもできます。はじめにデータ フェッチングを行うサービスを宣言します。ページ カウントを計算するためすべてのデータ項目のカウントをが必要なため、ロジックをサービスに追加する必要があります。
+
 
 ```typescript
 @Injectable()
@@ -572,15 +660,113 @@ export class RemotePagingService {
 }
 ```
 
-```razor
-BLAZOR CODE SNIPPET HERE
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```ts
+export class RemotePagingService {
+    public static BASE_URL = 'https://data-northwind.indigo.design/';
+    public static CUSTOMERS_URL = `${RemotePagingService.BASE_URL}Customers/GetCustomersWithPage`;
+  
+    constructor() {}
+
+    public static getDataWithPaging(pageIndex?: number, pageSize?: number) {
+        return fetch(RemotePagingService.buildUrl(RemotePagingService.CUSTOMERS_URL, pageIndex, pageSize))
+        .then((result) => result.json())
+        .catch((error) => console.error(error.message));
+    }
+    
+    public static getHierarchyDataById(parentEntityName: string, parentId: string, childEntityName: string) {
+        return fetch(`${RemotePagingService.BASE_URL}${parentEntityName}/${parentId}/${childEntityName}`)
+        .then((result) => result.json());
+    }
+
+    private static buildUrl(baseUrl: string, pageIndex?: number, pageSize?: number) {
+        let qS = "";
+        if (baseUrl) {
+                qS += `${baseUrl}`;
+        }
+
+        // Add pageIndex and size to the query string if they are defined
+        if (pageIndex !== undefined) {
+            qS += `?pageIndex=${pageIndex}`;
+            if (pageSize !== undefined) {
+                qS += `&size=${pageSize}`;
+            }
+        } else if (pageSize !== undefined) {
+            qS += `?perPage=${pageSize}`;
+        }
+
+        return `${qS}`;
+    }
+}
 ```
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+Blazor Server はすでにリモート インスタンスであるため、他のプラットフォームのデモとは異なり、データがすでにリモートであるため、データ用に別のリモート インスタンスを設定する必要はありません。リモート ページングを行うには、データ クラスにいくつかのメソッドを設定する必要があります。
+
+```razor
+        public Task<List<NwindDataItem>> GetData(int index, int perPage)
+        {
+            var itemsToReturn = items.Skip(index).Take(perPage).ToList();
+            return Task.FromResult(itemsToReturn);
+        }
+
+        public Task<int> GetDataLength()
+        {
+            return Task.FromResult(items.Count);
+        }
+```
+
+<!-- end: Blazor -->
+
+<!-- React -->
+```tsx
+const BASE_URL = `https://data-northwind.indigo.design/`;
+const CUSTOMERS_URL = `${BASE_URL}Customers/GetCustomersWithPage`;
+
+export class RemoteService {
+
+    public static getCustomersDataWithPaging(pageIndex?: number, pageSize?: number) {
+        return fetch(this.buildUrl(CUSTOMERS_URL, pageIndex, pageSize))
+        .then((result) => result.json());
+    }
+
+    public static getHierarchyDataById(parentEntityName: string, parentId: string, childEntityName: string) {
+        return fetch(`${BASE_URL}${parentEntityName}/${parentId}/${childEntityName}`)
+        .then((result) => result.json());
+    }
+
+    private static buildUrl(baseUrl: string, pageIndex?: number, pageSize?: number) {
+        let qS = "";
+        if (baseUrl) {
+                qS += `${baseUrl}`;
+        }
+
+        // Add pageIndex and size to the query string if they are defined
+        if (pageIndex !== undefined) {
+            qS += `?pageIndex=${pageIndex}`;
+            if (pageSize !== undefined) {
+                qS += `&size=${pageSize}`;
+            }
+        } else if (pageSize !== undefined) {
+            qS += `?perPage=${pageSize}`;
+        }
+
+        return `${qS}`;
+    }
+}
+```
+
+<!-- end: React -->
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
 サービスを宣言した後にコンポーネントを作成する必要があり、`{ComponentName}` コンストラクションとデータ サブスクリプションを処理します。
 
 <!-- ComponentStart: Grid -->
+<!-- Angular -->
 ```typescript
 export class RemotePagingGridSample implements OnInit, AfterViewInit, OnDestroy {
     public data: Observable<any[]>;
@@ -604,13 +790,208 @@ export class RemotePagingGridSample implements OnInit, AfterViewInit, OnDestroy 
     }
 }
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+まず、関連するイベントにバインドして、ページを変更したり、ページごとに表示されるレコードの量を変更したりするときに、リモート サービスが正しい量のデータを取得するようにする必要があります。
+```ts
+  constructor() {
+      this.grid = document.getElementById('grid') as IgcGridComponent;
+      this.pager = document.getElementById('paginator') as IgcPaginatorComponent;
+      
+      this._bind = () => {
+        window.addEventListener("load", () => {
+          this.loadData(this.page,this.perPage);
+        });
+
+        this.pager.addEventListener("perPageChange", ((args: CustomEvent<any>) => {
+          this.perPage = args.detail;
+          this.loadData(this.page, this.perPage);
+        }) as EventListener);
+
+        this.pager.addEventListener("pageChange", ((args: CustomEvent<any>) => {
+          this.page = args.detail;
+          this.loadData(this.page, this.perPage);
+        }) as EventListener);
+      }
+
+      this._bind();
+  }
+``` 
+また、データを読み込む方法を設定し、それに応じて UI を更新する必要があります。
+```ts 
+  private loadData(pageIndex?: number, pageSize?: number): void {
+    this.grid.isLoading = true;
+    
+    RemotePagingService.getDataWithPaging(pageIndex,pageSize)
+    .then((response: CustomersWithPageResponseModel) => {
+      this.totalRecordsCount = response.totalRecordsCount;
+      this.pager.perPage = pageSize;
+      this.pager.totalRecords = this.totalRecordsCount;
+      this.page = response.pageNumber;
+      this.data = response.items;
+      this.grid.isLoading = false;
+      this.updateUI(); // Update the UI after receiving data
+    })
+    .catch((error) => {
+      console.error(error.message);
+      // Stop loading even if error occurs. Prevents endless loading
+      this.grid.isLoading = false;
+      this.updateUI();
+    })
+  }
+
+    private updateUI(): void {
+    if (this.grid && this.data) { // Check if grid and data are available
+        this.grid.data = this.data;
+    }
+  }
+```
+
+
+詳細については、以下のデモをご覧ください。
+
+### グリッド リモート ページングのデモ  
+
+`sample="/{ComponentSample}/remote-paging-grid", height="550", alt="{Platform} {ComponentTitle} グリッド リモート ページングの例"`
+
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+まず、グリッドにデータを読み込む必要があります。タイミングの問題を回避するには、グリッドが描画された後に実行することをお勧めします。
 
 ```razor
-BLAZOR CODE SNIPPET HERE
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await Paginate(0, PerPage);
+            totalRecordsCount = await NwindDataService.GetDataLength();
+            StateHasChanged();
+        }
+    }
 ```
+その後は、ページング イベントをカスタム メソッドにバインドするだけで、リモート ページングが設定されます。
+
+```razor
+<IgbPaginator @ref="pager" PageChange="OnPageChange" PerPageChange="OnPerPageChange" TotalRecords="totalRecordsCount"></IgbPaginator>
+
+....
+
+@code {
+        private async void OnPerPageChange(IgbNumberEventArgs e)
+    {
+        PerPage = e.Detail;
+        await Paginate(0, e.Detail);
+    }
+
+    private async void OnPageChange(IgbNumberEventArgs e)
+    {
+        await Paginate(e.Detail, PerPage);
+    }
+    ...
+        private async Task Paginate(double page, double perPage)
+    {
+        this.page = page;
+        double skip = this.page * PerPage;
+        double top = PerPage;
+
+        try
+        {
+            data = await NwindDataService.GetData(Convert.ToInt32(skip), Convert.ToInt32(perPage));
+            isLoading = false;
+            UpdateUI();
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"Error fetching data: {ex.Message}");
+        }
+    }
+}
+```
+詳細については、以下の完全なデモをご覧ください。
+
+### グリッド リモート ページングのデモ  
+
+`sample="/{ComponentSample}/remote-paging-grid", height="550", alt="{Platform} {ComponentTitle} グリッド リモート ページングの例"`
+
+<!-- end: Blazor -->
+
+<!-- React -->
+```tsx
+     <IgrGrid
+          ref={grid}
+          data={data}
+          pagingMode={GridPagingMode.Remote}
+          primaryKey="customerId"
+          height="600px"
+          isLoading={isLoading}
+        >
+        <IgrPaginator 
+          perPage={perPage}
+          ref={paginator}
+          pageChange={onPageNumberChange}
+          perPageChange={onPageSizeChange}>
+        </IgrPaginator>
+          <IgrColumn field="customerId" hidden={true}></IgrColumn>
+          <IgrColumn field="companyName" header="Company Name"></IgrColumn>
+          <IgrColumn field="contactName" header="Contact Name"></IgrColumn>
+          <IgrColumn field="contactTitle" header="Contact Title"></IgrColumn>
+          <IgrColumn field="address.country" header="Country"></IgrColumn>
+          <IgrColumn field="address.phone" header="Phone"></IgrColumn>
+        </IgrGrid>
+```
+
+次に状態を設定します。
+```tsx
+  const grid = useRef<IgrGrid>(null);
+  const paginator = useRef<IgrPaginator>(null);
+  const [data, setData] = useState([]);
+  const [page, setPage] = useState(0);
+  const [perPage, setPerPage] = useState(15);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    loadGridData(page, perPage);
+  }, [page, perPage]);
+```
+
+最後に、データを読み込むためのメソッドを設定します。
+```tsx
+  function loadGridData(pageIndex?: number, pageSize?: number) {
+    // Set loading state
+    setIsLoading(true);
+
+    // Fetch data
+    RemoteService.getDataWithPaging(pageIndex, pageSize)
+      .then((response: CustomersWithPageResponseModel) => {
+        setData(response.items);
+        // Stop loading when data is retrieved
+        setIsLoading(false);
+        paginator.current.totalRecords = response.totalRecordsCount;
+      })
+      .catch((error) => {
+        console.error(error.message);
+        setData([]);
+        // Stop loading even if error occurs. Prevents endless loading
+        setIsLoading(false);
+      })
+  }
+```
+
+詳細については、以下の完全なサンプルをご覧ください。
+
+### グリッド リモート ページングのデモ  
+
+`sample="/{ComponentSample}/remote-paging-grid", height="550", alt="{Platform} {ComponentTitle} グリッド リモート ページングの例"`
+
+<!-- end: React -->
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
+
+<!-- Angular -->
 ```typescript
 export class HGridRemotePagingSampleComponent implements OnInit, AfterViewInit, OnDestroy {
     public data: BehaviorSubject<any> = new BehaviorSubject([]);
@@ -634,13 +1015,309 @@ export class HGridRemotePagingSampleComponent implements OnInit, AfterViewInit, 
     }
 }
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+まず、関連するイベントにバインドして、ページを変更したり、ページごとに表示されるレコードの量を変更したりするときに、リモート サービスが正しい量のデータを取得するようにする必要があります。
+```ts
+    constructor() {
+        this.hierarchicalGrid = document.getElementById("hGrid") as IgcHierarchicalGridComponent;
+        this.pager = document.getElementById('paginator') as IgcPaginatorComponent;
+        const ordersRowIsland = document.getElementById("ordersRowIsland") as IgcRowIslandComponent;
+        const orderDetailsRowIsland = document.getElementById("orderDetailsRowIsland") as IgcRowIslandComponent;
+
+        ordersRowIsland.paginatorTemplate = this.webHierarchicalGridPaginatorTemplate;
+        orderDetailsRowIsland.paginatorTemplate = this.webHierarchicalGridPaginatorTemplate;
+
+        this._bind = () => {
+            window.addEventListener("load", () => {
+                this.pager.perPage = this._perPage;
+                this.loadCustomersData(this.page,this.perPage);
+            });
+
+            this.pager.addEventListener("perPageChange", ((args: CustomEvent<any>) => {
+              this.perPage = args.detail;
+              this.loadCustomersData(this.page, this.perPage);
+            }) as EventListener);
+
+            this.pager.addEventListener("pageChange", ((args: CustomEvent<any>) => {
+              this.page = args.detail;
+              this.loadCustomersData(this.page, this.perPage);
+            }) as EventListener);
+
+            ordersRowIsland.addEventListener("gridCreated", (event: any) => {
+                this.gridCreated(event, "Customers");
+            });
+    
+            orderDetailsRowIsland.addEventListener("gridCreated", (event: any) => {
+                this.gridCreated(event, "Orders");
+            });
+        }
+    
+        this._bind();
+    }
+``` 
+また、データを読み込む方法を設定し、それに応じて UI を更新する必要があります。
+```ts 
+  private updateUI(): void {
+        if (this.hierarchicalGrid && this.data) { // Check if grid and data are available
+            this.hierarchicalGrid.data = this.data;
+        }
+    }
+
+    private loadCustomersData(pageIndex?: number, pageSize?: number): void {
+        this.hierarchicalGrid.isLoading = true;
+        
+        RemotePagingService.getDataWithPaging(pageIndex,pageSize)
+        .then((response: CustomersWithPageResponseModel) => {
+          this.totalRecordsCount = response.totalRecordsCount;
+          this.pager.perPage = pageSize;
+          this.pager.totalRecords = this.totalRecordsCount;
+          this.page = response.pageNumber;
+          this.data = response.items;
+          this.hierarchicalGrid.isLoading = false;
+          this.updateUI(); // Update the UI after receiving data
+        })
+        .catch((error) => {
+          console.error(error.message);
+          this.hierarchicalGrid.data = [];
+          this.hierarchicalGrid.isLoading = false;
+          this.updateUI();
+        })
+      }
+```
+
+最後に、階層グリッドの実際の階層レベルの背後にある動作を処理する必要があります。
+```ts
+    public gridCreated(event: CustomEvent<IgcGridCreatedEventArgs>, parentKey: string) {
+        const context = event.detail;
+        const parentId: string = context.parentID;
+        const childDataKey: string = context.owner.childDataKey;
+
+        context.grid.isLoading = true;
+        RemotePagingService.getHierarchyDataById(parentKey, parentId, childDataKey)
+        .then((data: any) => {
+          context.grid.data = data;
+          context.grid.isLoading = false;
+          context.grid.markForCheck();
+        })
+        .catch((error) => {
+          console.error(error.message);
+          context.grid.data = [];
+          context.grid.isLoading = false;
+          context.grid.markForCheck();
+        });
+    }
+
+    public webHierarchicalGridPaginatorTemplate = () => {
+       return html `
+        <igc-paginator 
+            id="islandPaginator">
+        </igc-paginator>`
+    }
+```
+
+詳細については、以下のデモをご覧ください。
+
+### グリッド リモート ページングのデモ  
+
+`sample="/{ComponentSample}/remote-paging-hgrid", height="550", alt="{Platform} {ComponentTitle} 階層グリッド リモート ページングの例"`
+
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+まず、グリッドにデータを読み込む必要があります。タイミングの問題を回避するには、グリッドが描画された後に実行することをお勧めします。
 
 ```razor
-BLAZOR CODE SNIPPET HERE
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await Paginate(0, PerPage);
+            totalRecordsCount = await NwindDataService.GetDataLength();
+            StateHasChanged();
+        }
+    }
 ```
+その後は、ページング イベントをカスタム メソッドにバインドするだけで、リモート ページングが設定されます。
+
+```razor
+<IgbPaginator @ref="pager" PageChange="OnPageChange" PerPageChange="OnPerPageChange" TotalRecords="totalRecordsCount"></IgbPaginator>
+
+....
+
+@code {
+        private async void OnPerPageChange(IgbNumberEventArgs e)
+    {
+        PerPage = e.Detail;
+        await Paginate(0, e.Detail);
+    }
+
+    private async void OnPageChange(IgbNumberEventArgs e)
+    {
+        await Paginate(e.Detail, PerPage);
+    }
+    ...
+        private async Task Paginate(double page, double perPage)
+    {
+        this.page = page;
+        double skip = this.page * PerPage;
+        double top = PerPage;
+
+        try
+        {
+            data = await NwindDataService.GetData(Convert.ToInt32(skip), Convert.ToInt32(perPage));
+            isLoading = false;
+            UpdateUI();
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"Error fetching data: {ex.Message}");
+        }
+    }
+}
+```
+詳細については、以下の完全なデモをご覧ください。
+
+### グリッド リモート ページングのデモ  
+
+`sample="/{ComponentSample}/remote-paging-grid", height="550", alt="{Platform} {ComponentTitle} 層グリッド リモート ページングの例"`
+
+<!-- end: Blazor -->
+
+<!-- React -->
+```tsx
+  <IgrHierarchicalGrid
+          ref={hierarchicalGrid}
+          data={data}
+          pagingMode={GridPagingMode.Remote}
+          primaryKey="customerId"
+          height="600px"
+          isLoading={isLoading}
+        >
+          <IgrPaginator 
+            perPage={perPage}
+            ref={paginator}
+            pageChange={onPageNumberChange}
+            perPageChange={onPageSizeChange}>
+          </IgrPaginator>
+          <IgrColumn field="customerId" hidden={true}></IgrColumn>
+          <IgrColumn field="companyName" header="Company Name"></IgrColumn>
+          <IgrColumn field="contactName" header="Contact Name"></IgrColumn>
+          <IgrColumn field="contactTitle" header="Contact Title"></IgrColumn>
+          <IgrColumn field="address.country" header="Country"></IgrColumn>
+          <IgrColumn field="address.phone" header="Phone"></IgrColumn>
+
+          <IgrRowIsland
+            childDataKey="Orders"
+            primaryKey="orderId"
+            gridCreated={(
+              rowIsland: IgrRowIsland,
+              e: IgrGridCreatedEventArgs
+            ) => gridCreated(rowIsland, e, "Customers")}
+          >
+            <IgrColumn field="orderId" hidden={true}></IgrColumn>
+            <IgrColumn field="shipAddress.country" header="Ship Country"></IgrColumn>
+            <IgrColumn field="shipAddress.city" header="Ship City"></IgrColumn>
+            <IgrColumn field="shipAddress.street" header="Ship Address"></IgrColumn>
+            <IgrColumn field="orderDate" header="Order Date" dataType="date"></IgrColumn>
+
+            <IgrRowIsland
+              childDataKey="Details"
+              primaryKey="productId"
+              gridCreated={(
+                rowIsland: IgrRowIsland,
+                e: IgrGridCreatedEventArgs
+              ) => gridCreated(rowIsland, e, "Orders")}
+            >
+              <IgrColumn field="productId" hidden={true}></IgrColumn>
+              <IgrColumn field="quantity" header="Quantity"></IgrColumn>
+              <IgrColumn field="unitPrice" header="Unit Price"></IgrColumn>
+              <IgrColumn field="discount" header="Discount"></IgrColumn>
+            </IgrRowIsland>
+          </IgrRowIsland>
+    </IgrHierarchicalGrid>
+```
+次に状態を設定します。
+```tsx
+  const hierarchicalGrid = useRef<IgrHierarchicalGrid>(null);
+  const paginator = useRef<IgrPaginator>(null);
+
+  const [data, setData] = useState([]);
+  const [page, setPage] = useState(0);
+  const [perPage, setPerPage] = useState(15);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    loadGridData(page, perPage);
+  }, [page, perPage]);
+```
+
+次に、データを読み込むためのメソッドを設定します。
+```tsx
+  function loadGridData(pageIndex?: number, pageSize?: number) {
+    // Set loading state
+    setIsLoading(true);
+
+    // Fetch data
+    RemoteService.getCustomersDataWithPaging(pageIndex, pageSize)
+      .then((response: CustomersWithPageResponseModel) => {
+        setData(response.items);
+        // Stop loading when data is retrieved
+        setIsLoading(false);
+        paginator.current.totalRecords = response.totalRecordsCount;
+      })
+      .catch((error) => {
+        console.error(error.message);
+        setData([]);
+        // Stop loading even if error occurs. Prevents endless loading
+        setIsLoading(false);
+      })
+  }
+```
+<!-- end: React -->
+
+<!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- React -->
+
+最後に、RowIslands の動作を設定します。
+<!-- ComponentStart: HierarchicalGrid -->
+```tsx
+  function gridCreated(rowIsland: IgrRowIsland, event: IgrGridCreatedEventArgs, parentKey: string) {
+    const context = event.detail;
+    const parentId: string = context.parentID;
+    const childDataKey: string = rowIsland.childDataKey;
+
+    RemoteService.getHierarchyDataById(parentKey, parentId, childDataKey)
+      .then((data: any) => {
+        context.grid.data = data;
+        context.grid.isLoading = false;
+        context.grid.markForCheck();
+      })
+      .catch((error) => {
+        console.error(error.message);
+        context.grid.data = [];
+        context.grid.isLoading = false;
+        context.grid.markForCheck();
+      })
+  }
+```
+
+
+詳細については、以下の完全なサンプルをご覧ください。
+
+### グリッド リモート ページングのデモ  
+
+`sample="/{ComponentSample}/remote-paging-hgrid", height="550", alt="{Platform} {ComponentTitle} 層グリッド リモート ページングの例"`
+<!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- end: React -->
+
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- ComponentStart: TreeGrid -->
+<!-- Angular -->
 
 このサンプルでは、​​子レコードがいくつあっても、ページごとに一定数のルート レコードを表示する方法を示します。レベル (ルートまたは子) に関係なく一定数のレコードを表示するビルトインの Tree Grid ページング アルゴリズムをキャンセルするには、`PerPage` プロパティを `Number.MAX_SAFE_INTEGER` に設定してください。
 
@@ -753,9 +1430,9 @@ BLAZOR CODE SNIPPET HERE
     (pageChange)="paginate($event)"
     (perPageChange)="perPageChange($event)">
     <igx-paginator-content>
-	    <igx-page-size></igx-page-size>
+        <igx-page-size></igx-page-size>
         [This is my custom content]
-	    <igx-page-nav></igx-page-nav>
+        <igx-page-nav></igx-page-nav>
     </igx-paginator-content>
 </igx-paginator>
 ```
@@ -897,7 +1574,7 @@ BLAZOR CODE SNIPPET HERE
 
 独自のページング動作を定義するために、ページング テンプレートを使用してカスタム ロジックを追加できます。上記を実証するために、リモート ページングの例を拡張します。
 
-`sample="/{ComponentSample}/remote-paging-custom", height="620", alt="{Platform} {ComponentTitle} リモート ページングのカスタム ページングの例"`
+`sample="/{ComponentSample}/remote-paging-custom", height="620", alt="{Platform} {ComponentTitle} Remote Paging Custom Paging Example"`
 
 
 
