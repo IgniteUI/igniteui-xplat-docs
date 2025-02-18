@@ -223,10 +223,21 @@ The Tile component also has properties that can be set individually for each til
 
 The header section also includes two action buttons:
 
-- The `expand` button enlarges the tile's content to fill the entire width of the Tile Manager, offering a wider view of the content.
+- The `maximize` button enlarges the tile's content to fill the entire width of the Tile Manager, offering a wider view of the content.
 - The `fullscreen` button enables the tile to open in fullscreen mode in the user's browser.
 
 <img src="../../images/tile-manager-actions.png" />
+
+If you want to display just one of the two buttons, you can set it as a slot attribute within the Tile component. Use the `maximize-action` value to show only the maximize button, or the `fullscreen-action` value to show only the fullscreen button.
+
+```html
+<igc-tile-manager>
+  <igc-tile>
+    <div slot="maximize-action"></div>
+    <p>Content for Tile 1</p>
+  </igc-tile>
+</igc-tile-manager>
+```
 
 ## Styling
 
