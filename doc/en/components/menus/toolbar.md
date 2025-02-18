@@ -265,7 +265,7 @@ When adding tools manually, icons can be assigned using the `RenderIconFromText`
 
 ### Data URL Icons
 
-Similiarly to adding svg, you can also add an Icon image from a URL via the `RegisterIconFromDataURL`. The method's third parameter would be used to enter a string URL.
+Similarly to adding svg, you can also add an Icon image from a URL via the `RegisterIconFromDataURL`. The method's third parameter would be used to enter a string URL.
 
 The following snippet shows both methods of adding an Icon.
 
