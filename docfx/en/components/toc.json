@@ -1543,7 +1543,7 @@
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Tile Manager",
     "href": "layouts/tile-manager.md",
-    "status": ""
+    "status": "new"
   },
   {
     "name": "Menus",
