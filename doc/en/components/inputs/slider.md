@@ -159,30 +159,28 @@ In some cases you would want to format the values of the slider as string values
 
 ## Styling
 
-The slider components expose CSS parts for their inner elements. The following table lists all CSS parts:
+The `Slider` component exposes CSS parts for almost all of its inner elements. The following table lists all of the exposed CSS parts:
 
 |Name|Description|
 |--|--|
-| base | The base wrapper of the slider. |
-| ticks | The ticks container. |
-| tick-group | The tick group container. |
-| tick | The tick element. |
-| tick-label | The tick label element. |
-| tick-label-inner | The inner element of the tick label. |
-| thumbs | The thumbs container. |
-| thumb | The thumb element. |
-| thumb-label | The label container of the thumb tooltip. |
-| thumb-label-inner | The label element of the thumb tooltip. |
-| track | The track container. |
-| steps | The track steps element. |
-| inactive | The inactive element of the track. |
-| fill | The filled part of the track. |
+| `base` | The base wrapper of the slider. |
+| `ticks` | The ticks container. |
+| `tick-group` | The tick group container. |
+| `tick` | The tick element. |
+| `tick-label` | The tick label element. |
+| `tick-label-inner` | The inner element of the tick label. |
+| `thumbs` | The thumbs container. |
+| `thumb` | The thumb element. |
+| `thumb-label` | The label container of the thumb tooltip. |
+| `thumb-label-inner` | The label element of the thumb tooltip. |
+| `track` | The track container. |
+| `steps` | The track steps element. |
+| `inactive` | The inactive element of the track. |
+| `fill` | The filled part of the track. |
 
 The following sample demonstrates how to style the track fill and thumb parts:
 
 `sample="/inputs/slider/styling", height="250", alt="{Platform} Slider Styling Example"`
-
-
 
 ## API References
 
@@ -199,6 +197,7 @@ The following sample demonstrates how to style the track fill and thumb parts:
  - `UpperBound`
  - `ValueFormatOptions`
  - `ValueFormat`
+ - [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
