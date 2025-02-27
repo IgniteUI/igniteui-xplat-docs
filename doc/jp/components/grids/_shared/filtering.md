@@ -5,6 +5,7 @@ _keywords: filter, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics,
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridFiltering}
 _language: ja
 ---
 

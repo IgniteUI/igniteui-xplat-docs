@@ -6,6 +6,7 @@ _language: ja
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid"]
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridCascadingCombos}
 ---
 
 # Cascading Combos (カスケード コンボ) を含む {Platform} {ComponentTitle}

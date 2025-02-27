@@ -5,6 +5,7 @@ _keywords: data select, igniteui for {Platform}, infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridCellSelection}
 ---
 
 # {Platform} {ComponentTitle} Cell Selection

@@ -5,6 +5,7 @@ _keywords: {Platform} sort, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridSorting}
 ---
 
 # {Platform} {ComponentTitle} Sorting
