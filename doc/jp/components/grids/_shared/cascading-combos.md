@@ -18,7 +18,7 @@ _canonicalLink: {CanonicalLinkToGridCascadingCombos}
 <!-- ComponentStart: Grid -->
 <code-view style="height:500px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-cascading-combo"
+           iframe-src="{environment:demosBaseUrl}/{ComponentSample}/cascading-combo"
            github-src="{ComponentSample}/cascading-combo"
            alt="{Platform} {ComponentName} カスケード コンボ">
 </code-view>
