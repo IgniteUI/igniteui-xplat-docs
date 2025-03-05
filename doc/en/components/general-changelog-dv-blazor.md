@@ -14,7 +14,17 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerChanges-24-2-FEB}**
 
-- Bug Fixes: The following table lists the bug fixes made for the {ProductName} toolset:
+### Enhancements
+
+#### Toolbar
+
+- Added new `GroupHeaderTextStyle` property to `Toolbar` and `ToolPanel`. If set, it will apply to all `ToolActionGroupHeader` actions.
+- Added new property on `ToolAction` called `TitleHorizontalAlignment` which controls the horizontal alignment of the title text.
+- Added new property on `ToolActionSubPanel` called `ItemSpacing` which controls the spacing between items inside the panel.
+
+### Bug Fixes
+
+The following table lists the bug fixes made for the {ProductName} toolset for this release:
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
