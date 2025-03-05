@@ -296,7 +296,7 @@ this.dockManager.addEventListener('activePaneChanged', ev => {
 
 ### Docking
 
-When you start dragging a floating pane, a different docking indicators will appear depending on the position of the dragged pane. There are four main types of docking - root docking, pane docking, document host docking and splitter docking.
+When you start dragging a floating pane, different docking indicators will appear depending on the position of the dragged pane. There are four main types of docking - root docking, pane docking, document host docking and splitter docking.
 
 #### Root Docking
 
