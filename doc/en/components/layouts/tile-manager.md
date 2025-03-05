@@ -13,9 +13,9 @@ The `igc-tile-manager` component enables the display of content in individual ti
 
 The following {ProductName} Tile Manager Example shows the component in action. 
 
-`sample="/layouts/tile-manager/overview", height="750", alt="{Platform} Tile Manager Example"`
+`sample="/layouts/tile-manager/overview", height="743", alt="{Platform} Tile Manager Example"`
 
-<div class="divider--half"></div>
+> [!Warning] Due to the iframe permissions policy, the fullscreen button in this example will only work when the example is opened in standalone mode by clicking the 'Expand to fullscreen' button in the top-right corner.
 
 ## Usage
 
@@ -123,7 +123,7 @@ We also have properties for setting the minimum width of the columns (`min-colum
 
 ### Example
 
-`sample="/layouts/tile-manager/columngap", height="580", alt="{Platform} Tile Manager Column Example"`
+`sample="/layouts/tile-manager/columngap", height="583", alt="{Platform} Tile Manager Column Example"`
 
 ## Tile component
 
@@ -184,7 +184,7 @@ If you want to display just one of the two buttons, you can set it as a slot att
 
 You also have the option to disable both action buttons and create custom ones according to your preferences.
 
-`sample="/layouts/tile-manager/actions", height="680", alt="{Platform} Tile Manager Actions Example"`
+`sample="/layouts/tile-manager/actions", height="700", alt="{Platform} Tile Manager Actions Example"`
 
 In this example, we created custom action buttons using the Ignite UI Icon Button component.
 
@@ -215,7 +215,7 @@ We can use the `resize-mode` property to control how resizing is applied in the 
 
 You can see the difference between the two states in the example below:
 
-`sample="/layouts/tile-manager/resize", height="525", alt="{Platform} Tile Manager Resize Example"`
+`sample="/layouts/tile-manager/resize", height="522", alt="{Platform} Tile Manager Resize Example"`
 
 ### Limitations
 
@@ -248,7 +248,7 @@ Similar to resizing, when you initiate the drag-and-drop process, a ghost elemen
 </igc-tile-manager>
 ```
 
-`sample="/layouts/tile-manager/dragndrop", height="525", alt="{Platform} Tile Manager Drag and drop Example"`
+`sample="/layouts/tile-manager/dragndrop", height="522", alt="{Platform} Tile Manager Drag and drop Example"`
 
 ## Serialization
 
@@ -257,7 +257,7 @@ The Tile Manager provides methods that help manage the layout of tiles:
 - The `saveLayout` method allows you to save the current arrangement of tiles in the Tile Manager, it captures the current order and positions of all tiles, so you can later restore it to this exact configuration.
 - The `loadLayout` method enables you to load a previously saved layout. When called, it restores the Tile Manager to the exact state it was in when the layout was saved, including the order and positions of the tiles.
 
-`sample="/layouts/tile-manager/layout", height="527", alt="{Platform} Tile Manager Layout Example"`
+`sample="/layouts/tile-manager/layout", height="525", alt="{Platform} Tile Manager Layout Example"`
 
 ## Styling
 
@@ -294,9 +294,17 @@ igc-tile::part(header) {
 igc-tile::part(title) {
   color: var(--ig-primary-400);
 }
+
+igc-tile::part(trigger-side), igc-tile::part(trigger-bottom) {
+  background-color: var(--ig-success-500);
+}
+
+igc-tile::part(trigger) {
+  background-color: var(--ig-error-500);
+}
 ```
 
-`sample="/layouts/tile-manager/styling", height="480", alt="{Platform} Tile Manager Styling Example"`
+`sample="/layouts/tile-manager/styling", height="479", alt="{Platform} Tile Manager Styling Example"`
 
 ## API References
 
