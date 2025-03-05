@@ -10,6 +10,25 @@ namespace: Infragistics.Controls
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## **{PackageVerChanges-24-2-FEB}**
+
+- Bug Fixes: The following table lists the bug fixes made for the {ProductName} toolset:
+
+| Bug Number | Control | Description      |
+|------------|---------|------------------|
+|26218|Excel Library|Chart's plot area right margin becomes narrower and fill pattern and fill foreground are gone just by loading an Excel file|
+|30286|IgcDataChart|Bubble Series tooltip content is switched to that of nearby bubble data in clicking a bubble|
+|32906|IgcDataChart|IgcDataChart is showing two xAxis on the top|
+|33605|IgcDataChart|ScatterLineSeries is not showing the color of the line correctly in the legend|
+|34053|IgcRadialGauge|The position of the scale label is shifted|
+|34083|Excel Library|TextOperatorConditionalFormat's is not loaded/saved properly if the text contains = in a template Excel file|
+|34776|IgcDataChart|Repeatedly showing and hiding the IgcDataChart causes memory leakage in JS Heap|
+|35495|Excel Library|Pictures in cells are lost when a template file is loaded|
+|35496|IgcSpreadsheet|Error when setting styles in Excel with images|
+|35498|IgcDataChart|Tooltips for the series specified in IncludedSeries are not displayed|
+|36176|Excel Library|Exception occurs when loading an Excel workbook that has a LET function|
+|36379|Excel Library|Colors with any alpha channel in an excel workbook fail to load|
+
 ## **{PackageVerChanges-24-2-JAN}**
 
 - Bug Fixes
