@@ -306,7 +306,7 @@ In this type of docking, the dragged pane will become a child of the Dock Manage
 
 #### Pane Docking
 
-Docking indicators will appear in the center of a content pane or tab group pane when dragging the floating pane over it. Depending on the docking indicator position, the orientation and other properties of the target pane, the dragged pane will either become a child of the target pane's parent split pane, the target pane will be replaced with a newly created split pane or a tab group pane will be created.
+Docking indicators will appear in the center of a content pane or a tab group pane when dragging the floating pane over it. Once released, the dragged pane will snap into place on any side of the target pane or get grouped together with the target pane to create a tabbed layout. Based on the combination of the initial layout and the dock position, the docking operation may cause the dynamic creation of a new split or tab group pane that would become the new parent of both the dragged and the target panes.
 
 <img class="responsive-img" src="../../images/dockmanager-pane-docking.jpg"/>
 
