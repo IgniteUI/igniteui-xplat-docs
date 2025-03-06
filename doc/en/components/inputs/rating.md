@@ -337,15 +337,34 @@ The `change` event is fired when the selected value changes.
 
 ## Styling
 
-The `Rating` component provides base, label, value-label, symbols, and symbol that allow you to style the component symbols and its encompassing label.
+The `Rating` component exposes CSS parts for almost all of its inner elements. The following table lists all of the exposed CSS parts:
+
+|Name|Description|
+|--|--|
+| `base` | The main wrapper which holds all of the rating elements. |
+| `label` | The label part. |
+| `value-label` | The value label part. |
+| `symbols` | A wrapper for all rating symbols. |
+| `symbol` | The part of the encapsulated default symbol. |
+| `full` | The part of the encapsulated full symbols. |
+| `empty` | The part of the encapsulated empty symbols. |
+
+```css
+igc-rating::part(full) {
+  color: var(--ig-primary-500)
+}
+
+igc-rating::part(empty) {
+  color: var(--ig-secondary-200);
+}
+```
 
 `sample="/inputs/rating/styling", height="150", alt="{Platform} Rating Styling Example"`
-
 
 ## API Reference
 
 - `Rating`
-
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

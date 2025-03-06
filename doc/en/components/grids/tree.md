@@ -332,7 +332,7 @@ Loading a greater number of children on demand in the {ProductName} Tree might n
 
 ## Styling
 
-You can change the appearance of the `TreeItem`s, by using some of the exposed CSS parts listed below:
+You can change the appearance of the `TreeItem`, by using some of the exposed CSS parts listed below:
 
 | Part name | Description |
 | ---------|------------ |
@@ -349,27 +349,22 @@ Using these CSS parts we can customize thе appearance of the `Tree` component l
 
 ```css
 igc-tree-item::part(active) {
-    background: #ecaa53;
-}
-
-igc-tree-item::part(selected) {
-    background: #ffe6cc;
-}
-
-igc-tree-item::part(active selected) {
-    background: #ff8c1a;
-    color: white;
+  background: var(--ig-secondary-500);
+  color: var(--ig-secondary-500-contrast);
 }
 ```
+
+`sample="/grids/tree/styling", height="400", alt="Tree Styling Example"`
 
 <div class="divider--half"></div>
 
 ## API References
 
-* `Tree`
-* `TreeItem`
-* `CircularProgress`
-* `Icon`
+- `Tree`
+- `TreeItem`
+- `Icon`
+- `CircularProgress`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

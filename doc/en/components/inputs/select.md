@@ -301,8 +301,6 @@ When the select is focused and the list of options is **visible**:
 
 You can change the appearance of the {ProductName} `Select` component and its items, by using the exposed CSS parts listed below:
 
-### CSS Parts
-
 **Select Component**
 
 | Part name | Description |
@@ -327,21 +325,40 @@ You can change the appearance of the {ProductName} `Select` component and its it
 
 | Part name | Description |
 | ---------|------------ |
-| `Label` | A label wrapper that renders content above the select group items. |
+| `label` | A label wrapper that renders content above the select group items. |
+
+```css
+igc-select::part(base) {
+  background: var(--ig-primary-50);
+}
+
+igc-select-item[active] {
+  background: var(--ig-secondary-300);
+}
+
+igc-select::part(input) {
+  background-color: var(--ig-primary-50);
+}
+
+igc-select::part(prefix),
+igc-select::part(suffix) {
+  color: var(--ig-secondary-500-contrast);
+  background: var(--ig-secondary-500);
+}
+```
 
 `sample="/inputs/select/styling", height="380", alt="{Platform} Select Styling Example"`
-
-
 
 <!-- end: WebComponents, React -->
 
 
 ## API Reference
 
-* `Select`
-* `SelectItem`
-* `SelectHeader`
-* `SelectGroup`
+- `Select`
+- `SelectItem`
+- `SelectHeader`
+- `SelectGroup`
+- [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources

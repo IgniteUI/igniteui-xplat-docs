@@ -24,7 +24,7 @@ So if you wanted to change the color of the initials to the primary color in you
 
 ```css
 igc-avatar::part(base) {
-    color: hsl(var(--ig-primary-500));
+  color: var(--ig-primary-500);
 }
 ```
 
@@ -36,12 +36,11 @@ An alternative approach would be to modify the CSS variables responsible for var
 
 ```css
 igc-avatar {
-    --ig-gray-800: 212deg, 72%, 48%;
+  --ig-gray-800: hsl(0, 0%, 62%);
 }
 ```
 
-Rewriting the value of the `--ig-gray-800` variable does the same as the previous example without explicitly overwriting the color property. This approach works, but could get a bit confusing to track where the color is coming from if you inspect the color property in isolation. Therefore, overwriting the color property in the base part is recomended.
-
+Rewriting the value of the `--ig-gray-800` variable does the same as the previous example without explicitly overwriting the color property. This approach works, but could get a bit confusing to track where the color is coming from if you inspect the color property in isolation. Therefore, overwriting the color property in the base part is recommended.
 
 ## Conclusion
 

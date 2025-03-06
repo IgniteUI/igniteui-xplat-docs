@@ -323,11 +323,9 @@ When the combo component is focused and the list of options is **visible**:
 - Using the <kbd>Enter</kbd> key will select the active item and close the list of options.
 - Using the <kbd>Esc</kbd> or <kbd>Tab/Shift</kbd> + <kbd>Tab</kbd> keys will close the list of options.
 
-## Styling {Platform} ComboBox
+## Styling
 
-You can change the appearance of the {ProductName} `Combo` component and its items, by using the exposed CSS parts listed below:
-
-### CSS Parts
+You can change the appearance of the `Combo` component and its items, by using the exposed CSS parts listed below:
 
 | Part name            | Description                                                                     |
 | -------------------- | ------------------------------------------------------------------------------- |
@@ -354,13 +352,35 @@ You can change the appearance of the {ProductName} `Combo` component and its ite
 | `footer`             | The container holding the footer content.                                       |
 | `empty`              | The container holding the empty content.                                        |
 
+
+Using the CSS parts we have full control over the Combo styling.
+
+```css
+igc-combo::part(search-input) {
+  background-color: var(--ig-gray-100);
+  border-radius: 2px;
+}
+
+igc-combo::part(input) {
+  background-color: var(--ig-gray-100);
+}
+
+igc-combo::part(prefix) {
+  background-color: var(--ig-secondary-50);
+  color: var(--ig-primary-500);
+}
+
+igc-combo::part(toggle-icon) {
+  color: var(--ig-primary-500);
+}
+```
+
 `sample="/inputs/combo/styling", height="400", alt="{Platform} Combo Styling Example"`
-
-
 
 ## API Reference
 
-* `Combo`
+- `Combo`
+- [`Styling & Themes`](../../themes/overview.md)
 
 ## Additional Resources
 

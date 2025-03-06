@@ -136,11 +136,32 @@ The `MaskInput` exposes a `valueMode` property that lets you choose between `raw
 
 `sample="/inputs/mask-input/value-modes", height="150", alt="{Platform} Mask Input Value Modes Example"`
 
-
-
 ## Styling
 
-The `MaskInput` component derives from the `Input` component, so it exposes all available CSS parts. See [Input Styling](input.md#styling) for reference.
+The `MaskInput` component exposes CSS parts for almost all of its inner elements. The following table lists all of the exposed CSS parts:
+
+|Name|Description|
+|--|--|
+| `container` | The main wrapper that holds all main input elements. |
+| `input` | The native input element. |
+| `label` | The native label element. |
+| `prefix` | The prefix wrapper. |
+| `suffix` | The suffix wrapper. |
+| `helper-text` | The helper text wrapper. |
+
+```css
+igc-mask-input::part(input) {
+  background-color: var(--ig-primary-100);
+  border-color: var(--ig-secondary-500);
+  box-shadow: none;
+}
+
+igc-mask-input::part(input)::placeholder {
+  color: var(--ig-primary-100-contrast);
+}
+```
+
+`sample="/inputs/mask-input/styling", height="150", alt="{Platform} Mask Input Styling Example"`
 
 ## Assumptions and limitations
 
@@ -150,11 +171,12 @@ The `MaskInput` component derives from the `Input` component, so it exposes all 
 
 ## API References
 
-* `Input`
-* `MaskInput`
-* `Icon`
-* `Radio`
-* `RadioGroup`
+- `Input`
+- `MaskInput`
+- `Icon`
+- `Radio`
+- `RadioGroup`
+- [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources
