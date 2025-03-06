@@ -491,25 +491,25 @@ You can also add more content in-between by simply omitting the slot property an
 
 ## Styling
 
-Since the card is a container that wraps different elements, styling it is done by styling its building blocks - the header, content, media and actions sub-components. In addition, the `header` component (`CardHeader`) exposes three CSS parts - `header`, `title` and `subtitle` that allow you to style the wrapping element as well as the two title elements.
+Since the card is a container that wraps different elements, styling is done by styling its building blocks - the `CardHeader`, `CardContent`, `CardMedia` and `CardActions` sub-components. 
 
 ```css
 igc-card {
-    background-color: #011627;
+  background-color: var(--ig-secondary-900);
 }
 
 igc-card-content,
-igc-card-header::part(title) {
-    color: #FEFEFE;
+igc-card-header::part(title) { 
+  color: var(--ig-primary-500-contrast);
 }
 
-igc-card-header::part(subtitle) {
-    color: #ECAA53;
-    opacity: 0.9;
+igc-card-header > *[slot="subtitle"] {
+  color: var(--ig-warn-500);
+  opacity: 0.9;
 }
 
-igc-icon-button+igc-icon-button {
-    margin-left: 10px;
+igc-icon-button::part(base) {
+  background-color: var(--ig-primary-300);
 }
 ```
 
@@ -533,6 +533,7 @@ In this article we covered a lot of ground with the card component. We created a
  - `Card`
  - `IconButton`
  - `Icon`
+ - [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
