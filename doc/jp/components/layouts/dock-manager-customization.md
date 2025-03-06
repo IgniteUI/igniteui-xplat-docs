@@ -99,6 +99,60 @@ this.dockManager.allowInnerDock = false;
 
 `sample="/layouts/dock-manager/contained-in-boundaries", height="600", alt="{Platform} 境界に含まれる Dock Manager の例"`
 
+## 分割ペインの固定サイズ モード
+
+ペインのサイズはその兄弟ペインのサイズに相対し、デフォルトは 100 です。2 つの兄弟ペインがあり、最初のペインのサイズが 400 に設定され、2 番目のペインのサイズが 200 に設定されている場合、最初のペインは 2 番目のペインの 2 倍のサイズになり、これら 2 つのペインが使用可能なスペースをすべて埋めてしまいます。
+
+特定のペインのサイズをピクセル単位で指定する場合は、使用可能なすべてのスペースの相対的な配分に依存するのではなく、親の分割ペインの `useFixedSize` を設定する必要があります。このプロパティが **true** に設定されている場合、すべての子のサイズは、`size` プロパティに基づいてピクセル単位で設定されます。この変更により、最初のペインは 400 ピクセルに広がり、2 番目のペインは 200 ピクセルに広がります。スプリッターを使用してさらにサイズを変更すると、現在のコンテンツ ペインのサイズのみが変更され、兄弟ペインのサイズには影響しません。子ペインのサイズの合計が親ペインのサイズを超えると、スクロールバーが表示され、親の分割ペインをスクロールできるようになります。
+
+
+```ts
+const splitPaneRelativeSize: IgcSplitPane = {
+    type: IgcDockManagerPaneType.splitPane,
+    orientation: IgcSplitPaneOrientation.horizontal,
+    panes: [
+        {
+            type: IgcDockManagerPaneType.contentPane,
+            contentId: 'content1',
+            header: 'Pane 1',
+            size: 400 // Size will be relative to siblings
+        },
+        {
+            type: IgcDockManagerPaneType.contentPane,
+            contentId: 'content2',
+            header: 'Pane 2',
+            size: 200 // Size will be relative to siblings
+        }
+    ]
+}
+
+const splitPaneFixedSize: IgcSplitPane = {
+    type: IgcDockManagerPaneType.splitPane,
+    orientation: IgcSplitPaneOrientation.horizontal,
+    useFixedSize: true,
+    panes: [
+        {
+            type: IgcDockManagerPaneType.contentPane,
+            contentId: 'content3',
+            header: 'Pane 3',
+            size: 400 // Size will be applied in pixels
+        },
+        {
+            type: IgcDockManagerPaneType.contentPane,
+            contentId: 'content4',
+            header: 'Pane 4',
+            size: 200 // Size will be applied in pixels
+        }
+    ]
+}
+```
+
+`useFixedSize` が **true** に設定されている分割ペイン内にペインをドッキングすると、ドッキングされたペインの幅/高さは (分割ペインの方向に応じて) フローティング ペインと同じになることに注意してください。
+
+以下のサンプルをご覧ください:
+
+`sample="/layouts/dock-manager/split-pane-fixed-size", height="600", alt="{Platform} Dock Manager 分割ペインの固定サイズの例"`
+
 ## API リファレンス
 
  - `DockManager`
