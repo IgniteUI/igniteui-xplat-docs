@@ -168,7 +168,7 @@
             { "name": "{PackageVerChanges-24-2-NOV}",  "value": "18.7.4 (November 2024)"  },
             { "name": "{PackageVerChanges-24-2-DEC}", "value": "18.7.6 (December 2024)" },
             { "name": "{PackageVerChanges-24-2-JAN}", "value": "18.7.7 (January 2025)" },
-            { "name": "{PackageVerChanges-24-2-FEB}", "value": "18.8.0 (February 2025)"},
+            { "name": "{PackageVerChanges-24-2-MAR}", "value": "18.8.0 (March 2025)"},
             { "name": "{PackageVerLatest}",            "value": "18.8.0"},
             { "name": "{RepoSamples}",   "value": "https://github.com/IgniteUI/igniteui-react-examples/tree/master/samples"},
             { "name": "{RepoBrowser}",   "value": "https://github.com/IgniteUI/igniteui-react-examples/tree/master/browser"},

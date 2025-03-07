@@ -18,28 +18,28 @@ Here's the complete list of all bundled themes and their path:
 <!-- React -->
 | Name        | Variant | Location                                          |
 | ----------- | ------- | ------------------------------------------------- |
-| Bootstrap   | Light   | igniteui-react-grids/grids/themes/light/bootstrap.css |
-| Material    | Light   | igniteui-react-grids/grids/themes/light/material.css  |
-| Fluent      | Light   | igniteui-react-grids/grids/themes/light/fluent.css    |
-| Indigo      | Light   | igniteui-react-grids/grids/themes/light/indigo.css    |
-| Bootstrap   | Dark    | igniteui-react-grids/grids/themes/dark/bootstrap.css  |
-| Material    | Dark    | igniteui-react-grids/grids/themes/dark/material.css   |
-| Fluent      | Dark    | igniteui-react-grids/grids/themes/dark/fluent.css     |
-| Indigo      | Dark    | igniteui-react-grids/grids/themes/dark/indigo.css     |
+| **Bootstrap**   | Light   | igniteui-react-grids/grids/themes/light/bootstrap.css |
+| **Material**    | Light   | igniteui-react-grids/grids/themes/light/material.css  |
+| **Fluent**      | Light   | igniteui-react-grids/grids/themes/light/fluent.css    |
+| **Indigo**      | Light   | igniteui-react-grids/grids/themes/light/indigo.css    |
+| **Bootstrap**   | Dark    | igniteui-react-grids/grids/themes/dark/bootstrap.css  |
+| **Material**    | Dark    | igniteui-react-grids/grids/themes/dark/material.css   |
+| **Fluent**      | Dark    | igniteui-react-grids/grids/themes/dark/fluent.css     |
+| **Indigo**      | Dark    | igniteui-react-grids/grids/themes/dark/indigo.css     |
 <!-- end: React -->
 
 
 <!-- WebComponents -->
 | Name        | Variant | Location                                          |
 | ----------- | ------- | ------------------------------------------------- |
-| Bootstrap   | Light   | igniteui-webcomponents/themes/light/bootstrap.css |
-| Material    | Light   | igniteui-webcomponents/themes/light/material.css  |
-| Fluent      | Light   | igniteui-webcomponents/themes/light/fluent.css    |
-| Indigo      | Light   | igniteui-webcomponents/themes/light/indigo.css    |
-| Bootstrap   | Dark    | igniteui-webcomponents/themes/dark/bootstrap.css  |
-| Material    | Dark    | igniteui-webcomponents/themes/dark/material.css   |
-| Fluent      | Dark    | igniteui-webcomponents/themes/dark/fluent.css     |
-| Indigo      | Dark    | igniteui-webcomponents/themes/dark/indigo.css     |
+| **Bootstrap**   | Light   | igniteui-webcomponents/themes/light/bootstrap.css |
+| **Material**    | Light   | igniteui-webcomponents/themes/light/material.css  |
+| **Fluent**      | Light   | igniteui-webcomponents/themes/light/fluent.css    |
+| **Indigo**      | Light   | igniteui-webcomponents/themes/light/indigo.css    |
+| **Bootstrap**   | Dark    | igniteui-webcomponents/themes/dark/bootstrap.css  |
+| **Material**    | Dark    | igniteui-webcomponents/themes/dark/material.css   |
+| **Fluent**      | Dark    | igniteui-webcomponents/themes/dark/fluent.css     |
+| **Indigo**      | Dark    | igniteui-webcomponents/themes/dark/indigo.css     |
 
 ## Runtime Theme Switching
 
@@ -48,7 +48,7 @@ Changing the theme at runtime also requires you to replace the global stylesheet
 
 {ProductName} allows you to switch the component themes at runtime by using the `ConfigureTheme` function exported by the library.
 
-Calling it and passing one of the four valid themes - bootstrap, material, fluent, or indigo as a string will change the loaded component styles;
+Calling it and passing one of the four valid themes - `bootstrap`, `material`, `fluent`, or `indigo` as a string will change the loaded component styles;
 
 ```ts
 import { configureTheme } from "igniteui-webcomponents";

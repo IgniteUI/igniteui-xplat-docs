@@ -234,9 +234,8 @@ You can style the {Platform} `Toast` notifications directly using its tag select
 
 ```css
 igc-toast {
-    background: #011627;
-    color: #ECAA53;
-    outline-color: #ECAA53;
+  background-color: var(--ig-primary-500);
+  color: var(--ig-primary-500-contrast);
 }
 ```
 
@@ -252,6 +251,7 @@ igc-toast {
  - `KeepOpen`
  - `Show`
  - `Toast`
+ - [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

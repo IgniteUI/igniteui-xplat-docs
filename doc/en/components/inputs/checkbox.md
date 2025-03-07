@@ -256,32 +256,36 @@ You can use the `name` and `value` attributes when using the checkbox with `Form
 
 ## Styling
 
-The checkbox component exposes several CSS parts (`base`, `control`, `indicator`, and `label`) to give you full control over its styling.
+The `Checkbox` component exposes four CSS parts which we can use for styling:
+
+|Name|Description|
+|--|--|
+| `base` | The base wrapper of the checkbox. |
+| `control` | The checkbox input element. |
+| `indicator` | The checkbox indicator icon. |
+| `label` | The checkbox label. |
+
+With this four CSS parts we have full control over the Checkbox styling.
 
 ```css
 igc-checkbox::part(indicator) {
-  &::after {
-    padding: 12px;
-    border-radius: 14px;
-  }
+  stroke: var(--ig-secondary-500-contrast);
 }
 
-igc-checkbox::part(indicator checked) {
-  border-radius: 0;
-
-  &::after {
-    background: olive;
-    border-color: olive;
-    stroke: beige;
-  }
+igc-checkbox::part(control checked)::after {
+  border-radius: 4px;
+  background: var(--ig-secondary-500);
 }
 ```
+
+`sample="/inputs/checkbox/styling", height="100", alt="{Platform} Checkbox Styling Example"`
+
 ## API References
 
  - `Checkbox`
  - `Checked`
  - `Disabled`
- - `Form`
+ - [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources
