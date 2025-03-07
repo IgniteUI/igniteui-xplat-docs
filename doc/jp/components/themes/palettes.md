@@ -19,7 +19,7 @@ _language: ja
 <table>
     <tr>
         <th colspan="10" style="text-align: center !important">すべて</th>
-        <th colspan="4" style="text-align: center !important"><b>Primary & Secondary Only</b></th>
+        <th colspan="4" style="text-align: center !important"><b>プライマリとセカンダリのみ</b></th>
     </tr>
     <tr>
         <td>50</td>
