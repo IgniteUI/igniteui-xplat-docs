@@ -159,34 +159,39 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbLinearProgressModule));
 
 ## スタイル設定
 
-Linear Progress Indicator コンポーネントは、その内部要素のほとんどすべての CSS パーツを公開します。
-
-`sample="/inputs/linear-progress-indicator/styling", height="80", alt="{Platform} Linear Progress のスタイル設定"`
-
-
-
-次の表に、Linear Progress によって公開されるすべての CSS パーツを示します:
+`LinearProgress` コンポーネントは、その内部要素のほとんどすべての CSS パーツを公開します。
 
 |名前|説明|
 |--|--|
-| track         | プログレス リングのトラック領域。 |
-| fill          | 進行状況インジケーター領域。|
-| striped       | 進行状況のストライプ インジケーター。 |
-| label         | 進行状況インジケーター ラベル。 |
-| value         | 進行状況ラベルの値。 |
-| indeterminate | 進行状況の indeterminate 状態。 |
-| primary       | 進行状況インジケーターの primary 状態。 |
-| danger        | 進行状況インジケーターの error 状態。 |
-| warning       | 進行状況インジケーターの warning 状態。 |
-| info          | 進行状況インジケーターの info の状態。|
-| success       | 進行状況インジケーターの success 状態。 |
-| top           | 進行状況ラベルの配置。 |
-| top-start     | 進行状況ラベルの配置。 |
-| top-end       | 進行状況ラベルの配置。 |
-| bottom        | 進行状況ラベルの配置。 |
-| bottom-start  | 進行状況ラベルの配置。 |
-| bottom-end    | 進行状況ラベルの配置。 |
+| `track`         | プログレス リングのトラック領域。 |
+| `fill`          | 進行状況インジケーター領域。|
+| `striped`       | 進行状況のストライプ インジケーター。 |
+| `label`         | 進行状況インジケーター ラベル。 |
+| `value`         | 進行状況ラベルの値。 |
+| `indeterminate` | 進行状況の indeterminate 状態。 |
+| `primary`       | 進行状況インジケーターの primary 状態。 |
+| `danger`        | 進行状況インジケーターの error 状態。 |
+| `warning`       | 進行状況インジケーターの warning 状態。 |
+| `info`          | 進行状況インジケーターの info の状態。|
+| `success`       | 進行状況インジケーターの success 状態。 |
 
+この CSS パーツを使用すると、Linear Progress のスタイルをほぼ完全に制御できます。
+
+`sample="/inputs/linear-progress-indicator/styling", height="80", alt="{Platform} Linear Progress のスタイル設定"`
+
+```css
+igc-linear-progress::part(track){
+  background-color: var(--ig-gray-300)
+}
+
+igc-linear-progress::part(fill){
+  background-color: var(--ig-primary-300)
+}
+
+igc-linear-progress::part(label){
+  color: var(--ig-primary-300)
+}
+```
 
 <div class="divider"></div>
 
@@ -196,6 +201,7 @@ Linear Progress Indicator コンポーネントは、その内部要素のほと
  - `Button`
  - `Calendar`
  - `LinearProgress`
+ - [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース

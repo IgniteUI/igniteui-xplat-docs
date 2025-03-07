@@ -335,7 +335,7 @@ builder.Services.AddIgniteUIBlazor(
 
 以下にリストされている公開された CSS パーツのいくつかを使用して、`TreeItem` の外観を変更できます:
 
-| 部分名 | 説明 |
+| パーツ名 | 説明 |
 | ---------|------------ |
 | `wrapper` | ツリー項目のラッパー。 |
 | `selected`  | 選択された状態を示します。`wrapper` に適用されます。 |
@@ -350,27 +350,22 @@ builder.Services.AddIgniteUIBlazor(
 
 ```css
 igc-tree-item::part(active) {
-    background: #ecaa53;
-}
-
-igc-tree-item::part(selected) {
-    background: #ffe6cc;
-}
-
-igc-tree-item::part(active selected) {
-    background: #ff8c1a;
-    color: white;
+  background: var(--ig-secondary-500);
+  color: var(--ig-secondary-500-contrast);
 }
 ```
+
+`sample="/grids/tree/styling", height="400", alt="Tree スタイル設定の例"`
 
 <div class="divider--half"></div>
 
 ## API リファレンス
 
-* `Tree`
-* `TreeItem`
-* `CircularProgress`
-* `Icon`
+- `Tree`
+- `TreeItem`
+- `Icon`
+- `CircularProgress`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 

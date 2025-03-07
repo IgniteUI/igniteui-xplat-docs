@@ -165,7 +165,7 @@ defineComponents(IgcTabsComponent);
 
 ## スタイル設定
 
-`Tabs` コンポーネントは、そのすべての要素の CSS パーツを公開します。
+`Tabs` コンポーネントはいくつかの CSS パーツを公開し、スタイルを完全に制御できるようにします。
 
 | 名前 | 説明 |
 |--|--|
@@ -182,28 +182,31 @@ defineComponents(IgcTabsComponent);
 
 |名前|説明|
 |--|--|
-| `base` | タブ ヘッダーの基本ラッパー。|
+| `content` | コンテンツのラッパー。 |
 | `prefix` | プレフィックス ラッパー。 |
 | `suffix` | サフィックス ラッパー。 |
 
 ```css
-igc-tabs::part(selected-indicator) {
-    background: #ecaa53;
+igc-tabs::part(headers-content) {
+  background-color: var(--ig-gray-200);
 }
 
-igc-tab::part(base) {
-    background: #ffe6cc;
+igc-tab::part(content) {
+  color: var(--ig-success-500);
 }
 ```
 
+`sample="/layouts/tabs/styling", height="150", alt="Tabs スタイル設定の例"`
+
 ## API リファレンス
 
-* `Tabs`
-* `Tab`
-* `TabPanel`
-* `Icon`
-* `IconButton`
-* `RadioGroup`
+- `Tabs`
+- `Tab`
+- `TabPanel`
+- `Icon`
+- `IconButton`
+- `RadioGroup`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース

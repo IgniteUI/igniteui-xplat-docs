@@ -16,6 +16,35 @@ _language: ja
 
 * [Ignite UI for Angular 変更ログ (GitHub)](https://github.com/IgniteUI/igniteui-angular/blob/master)
 
+## **{PackageVerChanges-24-2-FEB}**
+
+### 機能拡張
+
+#### Toolbar
+
+- `Toolbar` と `ToolPanel` に新しい `GroupHeaderTextStyle` プロパティを追加しました。設定されている場合、すべての `ToolActionGroupHeader` アクションに適用されます。
+- タイトル テキストの水平方向の配置を制御する `TitleHorizontalAlignment` という新しいプロパティを `ToolAction` に追加しました。
+- `ToolActionSubPanel` に、パネル内の項目間の間隔を制御する `ItemSpacing` という新しいプロパティを追加しました。
+
+### バグ修正
+
+次の表は、このリリースの {ProductName} ツールセットに対して行われたバグ修正を示しています。
+
+| バグ番号 | コントロール | 説明      |
+|------------|---------|------------------|
+|26218|Excel Library|Excel ファイルを読み込むだけで、チャートのプロット領域の右マージンが狭くなり、塗りつぶしパターンと前景の塗りつぶしが消える。|
+|30286|IgxDataChart|バブルをクリックすると、Bubble Series のツールチップが近くのバブル データの内容に切り替わる。|
+|32906|IgxDataChart|IgxDataChart は上部に 2 つの xAxis を表示している。|
+|33605|IgxDataChart|凡例に ScatterLineSeries の線の色が正しく表示されない。|
+|34053|IgxRadialGauge|スケール ラベルの位置がずれる。|
+|34083|Excel Library|テンプレート Excel ファイルのテキストに 「=」 が含まれている場合、TextOperatorConditionalFormat が正しく読み込まれない/保存されない。|
+|34776|IgxDataChart|IgxDataChart を繰り返し表示したり非表示にしたりすると、JS ヒープでメモリ リークが発生する。|
+|35495|Excel Library|テンプレート ファイルを読み込むと、セル内の画像が失われる。|
+|35496|IgxSpreadsheet|Excel に画像付きでスタイルを設定すると エラーが発生する。|
+|35498|IgxDataChart|IncludedSeries で指定されたシリーズのツールチップは表示されない。|
+|36176|Excel Library|LET 関数を含む Excel ブックを読み込むと、例外が発生する。|
+|36379|Excel Library|Excel ワークブック内のアルファ チャネルを含む色は読み込まれない。|
+
 ## **{PackageVerChanges-24-2-JAN}**
 
 * Angular 19 のサポート。

@@ -19,28 +19,28 @@ _language: ja
 <!-- React -->
 | 名前        | バリアント | 場所                                          |
 | ----------- | ------- | ------------------------------------------------- |
-| Bootstrap   | ライト   | igniteui-react-grids/grids/themes/light/bootstrap.css |
-| Material    | ライト   | igniteui-react-grids/grids/themes/light/material.css  |
-| Fluent      | ライト   | igniteui-react-grids/grids/themes/light/fluent.css    |
-| Indigo      | ライト   | igniteui-react-grids/grids/themes/light/indigo.css    |
-| Bootstrap   | ダーク    | igniteui-react-grids/grids/themes/dark/bootstrap.css  |
-| Material    | ダーク    | igniteui-react-grids/grids/themes/dark/material.css   |
-| Fluent      | ダーク    | igniteui-react-grids/grids/themes/dark/fluent.css     |
-| Indigo      | ダーク    | igniteui-react-grids/grids/themes/dark/indigo.css     |
+| **Bootstrap**   | ライト   | igniteui-react-grids/grids/themes/light/bootstrap.css |
+| **Material**    | ライト   | igniteui-react-grids/grids/themes/light/material.css  |
+| **Fluent**      | ライト   | igniteui-react-grids/grids/themes/light/fluent.css    |
+| **Indigo**      | ライト   | igniteui-react-grids/grids/themes/light/indigo.css    |
+| **Bootstrap**   | ダーク    | igniteui-react-grids/grids/themes/dark/bootstrap.css  |
+| **Material**    | ダーク    | igniteui-react-grids/grids/themes/dark/material.css   |
+| **Fluent**      | ダーク    | igniteui-react-grids/grids/themes/dark/fluent.css     |
+| **Indigo**      | ダーク    | igniteui-react-grids/grids/themes/dark/indigo.css     |
 <!-- end: React -->
 
 
 <!-- WebComponents -->
 | 名前        | バリアント | 場所                                        |
 | ----------- | ------- | ------------------------------------------------- |
-| Bootstrap   | ライト   | igniteui-webcomponents/themes/light/bootstrap.css |
-| Material    | ライト   | igniteui-webcomponents/themes/light/material.css  |
-| Fluent      | ライト   | igniteui-webcomponents/themes/light/fluent.css    |
-| Indigo      | ライト   | igniteui-webcomponents/themes/light/indigo.css    |
-| Bootstrap   | ダーク    | igniteui-webcomponents/themes/dark/bootstrap.css  |
-| Material    | ダーク    | igniteui-webcomponents/themes/dark/material.css   |
-| Fluent      | ダーク    | igniteui-webcomponents/themes/dark/fluent.css     |
-| Indigo      | ダーク    | igniteui-webcomponents/themes/dark/indigo.css     |
+| **Bootstrap**   | ライト   | igniteui-webcomponents/themes/light/bootstrap.css |
+| **Material**    | ライト   | igniteui-webcomponents/themes/light/material.css  |
+| **Fluent**      | ライト   | igniteui-webcomponents/themes/light/fluent.css    |
+| **Indigo**      | ライト   | igniteui-webcomponents/themes/light/indigo.css    |
+| **Bootstrap**   | ダーク    | igniteui-webcomponents/themes/dark/bootstrap.css  |
+| **Material**    | ダーク    | igniteui-webcomponents/themes/dark/material.css   |
+| **Fluent**      | ダーク    | igniteui-webcomponents/themes/dark/fluent.css     |
+| **Indigo**      | ダーク    | igniteui-webcomponents/themes/dark/indigo.css     |
 
 ## ランタイム テーマの切り替え
 
@@ -49,7 +49,7 @@ _language: ja
 
 {ProductName} を使用すると、ライブラリによってエクスポートされた `ConfigureTheme` 関数を使用して、実行時にコンポーネントのテーマを切り替えることができます。
 
-それを呼び出して、4 つの有効なテーマ (bootstrap、material、fluent、または indigo) のいずれかを文字列として渡すと、読み込まれたコンポーネントのスタイルが変更されます。
+それを呼び出して、4 つの有効なテーマ (`bootstrap`、`material`、`fluent`、または `indigo`) のいずれかを文字列として渡すと、読み込まれたコンポーネントのスタイルが変更されます。
 
 ```ts
 import { configureTheme } from "igniteui-webcomponents";

@@ -502,24 +502,32 @@ function refreshBanner() {
 
 ## スタイル設定
 
-Banner コンポーネントは、いくつかの CSS パーツ (`base`、`spacer`、`message`、`illustration`、`content` および `actions`) を公開して、そのスタイルを完全に制御できるようにします。
+`Banner` コンポーネントはいくつかの CSS パーツを公開し、スタイルを完全に制御できるようにします。
+
+|名前|説明|
+|--|--|
+| `base` | バナー コンポーネントの基本ラッパー。 |
+| `spacer` | バナーの周囲にスペースを設定する内側のラッパー。 |
+| `message` | テキストとイラストを保持するパーツ。 |
+| `illustration` | バナーのアイコン/イラストを保持するパーツ。 |
+| `content` | バナーのテキスト コンテンツを保持するパーツ。 |
+| `actions` | バナーのアクション ボタンを保持するパーツ。 |
 
 ```css
 igc-banner::part(spacer) {
-    background: #dedede;
+  background: var(--ig-surface-600);
 }
 
 igc-banner::part(illustration) {
-    color: #666666;
+  color: var(--ig-surface-600-contrast);
 }
 
 igc-banner::part(content) {
-    color: #151515;
+  color: var(--ig-gray-900);
 }
 ```
 
 `sample="/notifications/banner/banner-styling", height="530", alt="{Platform} Banner の例"`
-
 
 ## API リファレンス
 
@@ -529,6 +537,7 @@ igc-banner::part(content) {
 - `Navbar`
 - `Toast`
 - `Ripple`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 

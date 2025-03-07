@@ -224,6 +224,17 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonGroupModule));
 `ButtonGroup` コンポーネントは、ボタン グループ コンテナーのスタイルを設定できる `group` CSS パーツを公開します。 
 また、`ToggleButton` は、ボタン要素のスタイルを設定するために使用できる `toggle` CSS パーツを提供します。
 
+```css
+igc-button-group::part(group) {
+  background-color: var(--ig-primary-500);
+  padding: 8px;
+}
+
+igc-toggle-button::part(toggle) {
+  color: var(--ig-secondary-300);
+}
+```
+
 `sample="/inputs/button-group/styling", height="200", alt="{Platform} Button Group スタイル設定の例"`
 
 ## API リファレンス
@@ -232,6 +243,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonGroupModule));
 - `ToggleButton`
 - `Ripple`
 - `Icon`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース

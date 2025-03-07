@@ -302,11 +302,9 @@ IgrSelectItemModule.register();
 
 以下に示す公開された CSS パーツを使用して、{ProductName} `Select` コンポーネントとその項目の外観を変更できます。
 
-### CSS パーツ
-
 **Select コンポーネント**
 
-| 部分名 | 説明 |
+| パーツ名 | 説明 |
 | ---------|------------ |
 | `input` | カプセル化された igc-input。 |
 | `label` | カプセル化されたテキスト ラベル。 |
@@ -318,7 +316,7 @@ IgrSelectItemModule.register();
 
 **Select Item コンポーネント**
 
-| 部分名 | 説明 |
+| パーツ名 | 説明 |
 | ---------|------------ |
 | `content` | 項目のテキスト コンテンツを保持するメイン ラッパー。 |
 | `prefix`  | メイン ラッパーの前にコンテンツを描画するプレフィックス ラッパー。 |
@@ -326,23 +324,42 @@ IgrSelectItemModule.register();
 
 **Select Group コンポーネント**
 
-| 部分名 | 説明 |
+| パーツ名 | 説明 |
 | ---------|------------ |
-| `Label` | 選択したグループ項目の上にコンテンツを描画するラベル ラッパー。 |
+| `label` | 選択したグループ項目の上にコンテンツを描画するラベル ラッパー。 |
+
+```css
+igc-select::part(base) {
+  background: var(--ig-primary-50);
+}
+
+igc-select-item[active] {
+  background: var(--ig-secondary-300);
+}
+
+igc-select::part(input) {
+  background-color: var(--ig-primary-50);
+}
+
+igc-select::part(prefix),
+igc-select::part(suffix) {
+  color: var(--ig-secondary-500-contrast);
+  background: var(--ig-secondary-500);
+}
+```
 
 `sample="/inputs/select/styling", height="380", alt="{Platform} Select スタイル設定の例"`
-
-
 
 <!-- end: WebComponents, React -->
 
 
 ## API リファレンス
 
-* `Select`
-* `SelectItem`
-* `SelectHeader`
-* `SelectGroup`
+- `Select`
+- `SelectItem`
+- `SelectHeader`
+- `SelectGroup`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース

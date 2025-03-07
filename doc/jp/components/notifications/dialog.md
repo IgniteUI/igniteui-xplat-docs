@@ -152,18 +152,25 @@ Dialog のタイトルを設定するには、`Title` プロパティを使用�
 
 ## スタイル設定
 
-Dialog コンポーネントは、いくつかの CSS パーツ (`base`、`title`、`content` および `footer`) を公開して、そのスタイルを完全に制御できるようにします。
+`Dialog` コンポーネントはいくつかの CSS パーツを公開し、スタイルを完全に制御できるようにします。
+
+|名前|説明|
+|--|--|
+| `base` | ダイアログの基本ラッパー。 |
+| `title` | タイトルのコンテナー。 |
+| `footer` | フッターのコンテナー。 |
+| `content` | コンテンツのコンテナー。 |
 
 ```css
 igc-dialog::part(content) {
-    background: #011627;
-    color: white;
+  background: var(--ig-secondary-800);
+  color: var(--ig-secondary-800-contrast);
 }
 
 igc-dialog::part(title),
 igc-dialog::part(footer) {
-    background: #011627;
-    color: #ECAA53;
+  background: var(--ig-secondary-800);
+  color: var(--ig-warn-500);
 }
 ```
 
@@ -181,6 +188,7 @@ igc-dialog::part(footer) {
 - `Open`
 - `Title`
 - `Dialog`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 

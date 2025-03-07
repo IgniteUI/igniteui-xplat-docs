@@ -128,13 +128,20 @@ public onShowButtonClicked() {
 
 ## スタイル設定
 
-Snackbar コンポーネントは、いくつかの CSS パーツ (`base`、`message`、および `action`) を公開して、そのスタイルを完全に制御できるようにします。
+`Snackbar` コンポーネントはいくつかの CSS パーツを公開し、スタイルを完全に制御できるようにします。
+
+|名前|説明|
+|--|--|
+| `base` | スナックバー コンポーネントの基本ラッパー。 |
+| `message` | スナックバーのメッセージ。 |
+| `action` | デフォルトのスナックバー アクション ボタン。 |
+| `action-container` | アクションを保持する領域。 |
 
 ```css
 igc-snackbar::part(base) {
-    background: #0d6efd;
-    border-color: #0d6efd;
-    color: white;
+  background: var(--ig-primary-500);
+  border-color: var(--ig-primary-800);
+  color: white;
 }
 ```
 
@@ -150,6 +157,7 @@ igc-snackbar::part(base) {
  - `KeepOpen`
  - `Show`
  - `Snackbar`
+ - [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 

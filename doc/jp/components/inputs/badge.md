@@ -102,9 +102,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbBadgeModule));
 
 ## 例
 
-### バリアント
+### バリエーション
 
-{ProductName} バッジは、いくつかの事前定義されたスタイルのバリアントをサポートします。サポートされている値 `primary` (デフォルト)、`info`、`success`、`warning`、または `danger` のいずれかを `variant` 属性に割り当てることにより、バリアントを変更できます。
+{ProductName} バッジは、いくつかの事前定義されたスタイルのバリエーションをサポートします。サポートされている値 `primary` (デフォルト)、`info`、`success`、`warning`、または `danger` のいずれかを `variant` 属性に割り当てることにより、バリエーションを変更できます。
 
 ```tsx
 <IgrBadge variant="success" ></IgrBadge>
@@ -144,15 +144,17 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbBadgeModule));
 
 ## スタイル設定
 
-バッジ コンポーネントは、すべてのスタイル プロパティを変更するために使用できる `base` パーツを公開します。
+`Badge` コンポーネントは、すべてのスタイル プロパティを変更するために使用できる `base` CSS パーツを公開します。
 
 ```css
 igc-badge::part(base) {
-  color: olive;
-  background: beige;
+  background: var(--ig-primary-500);
+  color: var(--ig-primary-500-contrast);
   border-radius: 2px;
 }
 ```
+
+`sample="/inputs/badge/styling", height="60", alt="{Platform} Badge の例"`
 
 
 <div class="divider--half"></div>
@@ -160,6 +162,7 @@ igc-badge::part(base) {
 ## API リファレンス
 
  - `Badge`
+ - [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 

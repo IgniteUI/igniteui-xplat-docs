@@ -129,7 +129,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbChipModule));
 
 ### バリアント
 
-{ProductName} Chip は、いくつかの事前定義されたスタイルのバリエーションをサポートします。サポートされている値の 1 つ (`Primary`、`Info`、`Success`、`Warning`、または `Danger`) を `Variant` プロパティに割り当てることにより、バリアントを変更できます。
+{ProductName} Chip は、いくつかの事前定義されたスタイルのバリアントをサポートします。サポートされている値の 1 つ (`Primary`、`Info`、`Success`、`Warning`、または `Danger`) を `Variant` プロパティに割り当てることにより、バリアントを変更できます。
 
 ```tsx
 <IgrChip variant="success"></IgrChip>
@@ -204,26 +204,25 @@ igc-chip {
 
 ## スタイル設定
 
-Chip コンポーネントは、`Base`、`Prefix`、`Sufix` 部分、およびすべてのスタイル プロパティを変更するために使用できるいくつかのスロットを公開します。
+`Chip` コンポーネントは、すべてのスタイル プロパティを変更するために使用できる `base`、`prefix`、`suffix` CSS パーツを公開します。
 
 ```css
 igc-chip::part(base) {
-    background: #011627;
-    color: #ECAA53;
+  background: var(--ig-primary-500);
+  color: var(--ig-primary-500-contrast);
 }
 
 igc-chip::part(suffix) {
-    color: #B7B6C2;
+  color: var(--ig-gray-400);
 }
 ```
 
 `sample="/inputs/chip/styling", height="80", alt="{Platform} Chip スタイル設定の例"`
 
-<div class="divider--half"></div>
-
 ## API リファレンス
 
  - `Chip`
+ - [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース

@@ -182,32 +182,45 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCircularProgressModule));
 
 ## スタイル設定
 
-{ProductName} Circular Procress Indicator コンポーネントは、その内部要素のほとんどすべての CSS パーツを公開します。
-
-`sample="/inputs/circular-progress-indicator/styling", height="150", alt="{Platform} Circular Progress のスタイル設定"`
-
-
-
-次の表に、Circular Progress によって公開されるすべての CSS パーツを示します:
+`CircularProgress` コンポーネントは、その内部要素のほとんどすべての CSS パーツを公開します。
 
 |名前|説明|
 |--|--|
-| svg                | 進行状況 SVG 要素。                |
-| gradient_start     | 進行線形グラデーションの開始色。 |
-| gradient_end       | 進行線形グラデーションの終了色。   |
-| track              | プログレス リングのトラック領域。          |
-| fill               | 進行状況インジケーター領域。              |
-| label              | 進行状況ラベル。                       |
-| value              | 進行状況ラベルの値。                |
-| indeterminate      | 進行状況の indeterminate 状態。         |
-| primary            | 進行状況インジケーターの primary 状態。     |
-| danger             | 進行状況インジケーターの error 状態。       |
-| warning            | 進行状況インジケーターの warning 状態。     |
-| info               | 進行状況インジケーターの info の状態。       |
-| success            | 進行状況インジケーターの success 状態。  |
+| `svg`                | 進行状況 SVG 要素。                |
+| `gradient_start`     | 進行線形グラデーションの開始色。 |
+| `gradient_end`       | 進行線形グラデーションの終了色。   |
+| `track`              | プログレス リングのトラック領域。          |
+| `fill`               | 進行状況インジケーター領域。              |
+| `label`              | 進行状況ラベル。                       |
+| `value`              | 進行状況ラベルの値。                |
+| `indeterminate`      | 進行状況の indeterminate 状態。         |
+| `primary`            | 進行状況インジケーターの primary 状態。     |
+| `danger`             | 進行状況インジケーターの error 状態。       |
+| `warning`            | 進行状況インジケーターの warning 状態。     |
+| `info`               | 進行状況インジケーターの info の状態。       |
+| `success`            | 進行状況インジケーターの success 状態。  |
 
+この CSS パーツを使用すると、Circular Progress のスタイルをほぼ完全に制御できます。
 
-<div class="divider"></div>
+```css
+
+igc-circular-progress {
+  margin: 20px;
+  --diameter: 50px;
+}
+
+igc-circular-progress::part(gradient_end),
+igc-circular-progress::part(gradient_start) {
+  stop-color: var(--ig-success-200);
+}
+
+igc-circular-progress::part(track) {
+  stroke: var(--ig-gray-400);
+}
+
+```
+
+`sample="/inputs/circular-progress-indicator/styling", height="150", alt="{Platform} Circular Progress のスタイル設定"`
 
 ## API リファレンス
 
@@ -215,6 +228,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCircularProgressModule));
  - `Calendar`
  - `CircularGradient`
  - `CircularProgress`
+ - [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース

@@ -257,32 +257,37 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCheckboxModule));
 
 ## スタイル設定
 
-チェックボックス コンポーネントは、いくつかの CSS パーツ (`base`、`control`、`indicator`、および `label`) を公開して、スタイルを完全に制御できるようにします。
+`Checkbox` コンポーネントは、スタイル設定に使用できる 4 つの CSS パーツを公開します。
+
+|名前|説明|
+|--|--|
+| `base` | チェックボックスの基本ラッパー。 |
+| `control` | チェックボックスの入力要素。 |
+| `indicator` | チェックボックスのインジケーター アイコン。 |
+| `label` | チェックボックスのラベル。 |
+
+この 4 つの CSS パーツを使用すると、Checkbox のスタイルを完全に制御できます。
 
 ```css
 igc-checkbox::part(indicator) {
-  &::after {
-    padding: 12px;
-    border-radius: 14px;
-  }
+  stroke: var(--ig-secondary-500-contrast);
 }
 
-igc-checkbox::part(indicator checked) {
-  border-radius: 0;
-
-  &::after {
-    background: olive;
-    border-color: olive;
-    stroke: beige;
-  }
+igc-checkbox::part(control checked)::after {
+  border-radius: 4px;
+  background: var(--ig-secondary-500);
 }
 ```
+
+`sample="/inputs/checkbox/styling", height="100", alt="{Platform} Checkbox スタイル設定の例"`
+
 ## API リファレンス
 
  - `Checkbox`
  - `Checked`
  - `Disabled`
  - `Form`
+ - [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース

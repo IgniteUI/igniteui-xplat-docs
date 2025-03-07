@@ -327,6 +327,37 @@ DatePicker は `dialog` モードもサポートしています。
 ## スタイル設定
 `DatePicker` コンポーネントは `Input` コンポーネントおよび `Calendar` コンポーネントから派生するため、使用可能なすべての CSS パーツを公開します。詳細については、[Input のスタイル設定](../inputs/input.md#スタイル設定)と [Calendar のスタイル設定](calendar.md#スタイル設定)を参照してください。
 
+```css
+igc-date-picker::part(header) {
+  background-color: var(--ig-primary-500);
+  color: var(--ig-primary-500-contrast);
+}
+igc-date-picker::part(calendar-content) {
+  background-color: var(--ig-surface-300);
+}
+igc-date-picker::part(date-inner current) {
+  color: var(--ig-info-300);
+  background-color: var(--ig-surface-300);
+}
+igc-date-picker::part(navigation-button):hover,
+igc-date-picker::part(months-navigation):hover,
+igc-date-picker::part(years-navigation):hover {
+  color: var(--ig-secondary-500);
+}
+igc-date-picker::part(month-inner current),
+igc-date-picker::part(year-inner current),
+igc-date-picker::part(navigation-button),
+igc-date-picker::part(months-navigation),
+igc-date-picker::part(years-navigation) {
+  color: var(--ig-info-300);
+}
+igc-date-picker::part(date-inner selected),
+igc-date-picker::part(month-inner selected),
+igc-date-picker::part(year-inner selected) {
+  color: var(--ig-secondary-500-contrast);
+  background-color: var(--ig-secondary-500);
+}
+```
 
 `sample="/scheduling/date-picker/styling", height="500", alt="{Platform} Date Picker 入力のスタイル設定に例"`
 
@@ -335,6 +366,7 @@ DatePicker は `dialog` モードもサポートしています。
  - `Input`
  - `Calendar`
  - `DatePicker`
+ - [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース

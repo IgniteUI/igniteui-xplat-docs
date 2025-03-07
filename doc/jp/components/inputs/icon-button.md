@@ -10,7 +10,7 @@ _language: ja
 
 {ProductName} Icon Button コンポーネントを使用すると、開発者は登録済みのアイコンをアプリケーションのボタンとして使用できます。[アイコン](../layouts/icon.md) コンポーネントのすべての機能を備えていますが、[ボタン](button.md) コンポーネントの機能も追加しています。
 
-# {Platform} Icon Button の例
+## {Platform} Icon Button の例
 
 `sample="/inputs/icon-button/size", height="100", alt="{Platform} Icon Button の例"`
 
@@ -168,16 +168,17 @@ igc-icon-button {
 
 ## スタイル設定
 
-アイコン ボタン コンポーネントは、2 つの CSS パーツを公開します。ラッピング要素 (`<button>` または `<a>`) とラップされた `<igc-icon>` 要素のスタイルを設定できる `base` と `icon` です。
+`IconButton` コンポーネントは、2 つの CSS パーツを公開します。ラッピング要素 (`<button>` または `<a>`) とラップされた `<igc-icon>` 要素のスタイルを設定できる `base` と `icon` です。
 
 ```css
-igc-icon-button::part(base) {
+igc-icon-button[variant="contained"]:not([disabled])::part(base) {
   padding: 12px;
-  color: olive;
+  background-color: var(--ig-success-500);
 }
 
 igc-icon-button::part(icon) {
-  --size: 32px;
+  --size: 22px;
+  color: var(--ig-success-500-contrast);
 }
 ```
 
@@ -190,6 +191,7 @@ igc-icon-button::part(icon) {
  - `Button`
  - `IconButton`
  - `Icon`
+ - [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース

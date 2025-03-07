@@ -150,18 +150,32 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbDropdownModule));
 
 ## スタイル設定
 
-公開された CSS 部分を使用して、ドロップダウンとその項目の外観を変更できます。`Dropdown` は `base` 部分と `list` 部分を公開し、`DropdownItem` は `prefix`、`content`、`suffix` 部分を公開し、`DropdownGroup` は `label` 部分を公開します。
+公開された CSS パーツを使用して、ドロップダウンとその項目の外観を変更できます。`Dropdown` は `base` パーツと `list` パーツを公開し、`DropdownItem` は `prefix`、`content`、`suffix` パーツを公開し、`DropdownGroup` は `label` パーツを公開します。
+
+```css
+igc-dropdown::part(list) {
+  height: 220px;
+}
+
+igc-dropdown-item[selected] {
+  background: var(--ig-success-300);
+}
+
+igc-dropdown-group::part(label) {
+  display: flex;
+  justify-content: center;
+}
+```
 
 `sample="/inputs/dropdown/styling", height="320", alt="{Platform} Dropdown Styling の例"`
 
-
-
 ## API リファレンス
 
-* `Dropdown`
-* `DropdownItem`
-* `DropdownHeader`
-* `DropdownGroup`
+- `Dropdown`
+- `DropdownItem`
+- `DropdownHeader`
+- `DropdownGroup`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース

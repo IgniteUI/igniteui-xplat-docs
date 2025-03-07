@@ -160,30 +160,28 @@ builder.Services.AddIgniteUIBlazor(
 
 ## スタイル設定
 
-スライダー コンポーネントは、内部要素の CSS パーツを公開します。次の表に、すべての CSS パーツを示します:
+`Slider` コンポーネントは、その内部要素のほとんどすべての CSS パーツを公開します。次の表に、公開されているすべての CSS パーツを示します。
 
 |名|説明|
 |--|--|
-| base | スライダーの基本ラッパー。|
-| ticks | 目盛りのコンテナー。|
-| tick-group | 目盛りグループ コンテナー。|
-| tick | 目盛りの要素。|
-| tick-label | 目盛りラベルの要素。|
-| tick-label-inner | 目盛りラベルの内側の要素。|
-| thumbs | つまみのコンテナー。|
-| thumb | つまみの要素。|
-| thumb-label | つまみツールチップのラベル コンテナー。|
-| thumb-label-inner | つまみツールチップのラベル要素。|
-| track | トラックのコンテナー。|
-| steps | トラック ステップの要素。|
-| inactive | トラックの非アクティブな要素。|
-| fill | トラックの塗りつぶし部分。|
+| `base` | スライダーの基本ラッパー。|
+| `ticks` | 目盛りのコンテナー。|
+| `tick-group` | 目盛りグループ コンテナー。|
+| `tick` | 目盛りの要素。|
+| `tick-label` | 目盛りラベルの要素。|
+| `tick-label-inner` | 目盛りラベルの内側の要素。|
+| `thumbs` | つまみのコンテナー。|
+| `thumb` | つまみの要素。|
+| `thumb-label` | つまみツールチップのラベル コンテナー。|
+| `thumb-label-inner` | つまみツールチップのラベル要素。|
+| `track` | トラックのコンテナー。|
+| `steps` | トラック ステップの要素。|
+| `inactive` | トラックの非アクティブな要素。|
+| `fill` | トラックの塗りつぶしパーツ。|
 
 次のサンプルは、トラックの塗りつぶしとつまみのパーツのスタイルを設定する方法を示しています。
 
 `sample="/inputs/slider/styling", height="250", alt="{Platform} Slider スタイル設定の例"`
-
-
 
 ## API リファレンス
 
@@ -200,6 +198,7 @@ builder.Services.AddIgniteUIBlazor(
  - `UpperBound`
  - `ValueFormatOptions`
  - `ValueFormat`
+ - [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 

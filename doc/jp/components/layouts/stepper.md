@@ -373,7 +373,7 @@ linear プロパティが *true* に設定されている場合、ステッパ�
 
 以下にリストされている公開された CSS パーツのいくつかを使用して、`Step` の外観を変更できます:
 
-| 部分名 | 説明 |
+| パーツ名 | 説明 |
 | ---------|------------ |
 | `header-container` | ステップのヘッダーとそのセパレーターのラッパー。|
 | `disabled` | 使用不可な状態を示します。ヘッダー コンテナーに適用されます。|
@@ -398,22 +398,27 @@ linear プロパティが *true* に設定されている場合、ステッパ�
 
 ```css
 igc-step::part(title) {
-    background: #351e65;
+  color: var(--ig-primary-500);
 }
-
-igc-step::part(subtitle) {
-    background: #5f4691;
+igc-step[active]::part(indicator) {
+  background-color: var(--ig-primary-500);
+}
+igc-step::part(indicator) {
+  background-color: var(--ig-surface-500);
 }
 ```
+
+`sample="/layouts/stepper/styling", height="300", alt="{Platform} Stepper スタイル設定の例"`
 
 <div class="divider--half"></div>
 
 ## API リファレンス
 
-* `Stepper`
-* `Step`
-* `Avatar`
-* `Icon`
+- `Stepper`
+- `Step`
+- `Avatar`
+- `Icon`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース

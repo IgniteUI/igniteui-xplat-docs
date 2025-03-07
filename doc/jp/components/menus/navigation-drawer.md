@@ -440,30 +440,30 @@ public onMenuIconClick() {
 
 
 
-## Navigation Drawer のスタイル設定
+## スタイル設定
 
-Navigation Drawer コンポーネントは、`base`、`main`、`mini` など、いくつかの CSS パーツを公開します。Navigation Drawer Item コンポーネントは、`base`、`icon`、`content` の 3 つの CSS パーツも公開し、スタイルを完全に制御できるようにします。
+Navigation Drawer コンポーネントは、`base`、`main`、`mini` など、いくつかの CSS パーツも公開し、スタイルを完全に制御できるようにします。
 
 ```scss
 igc-nav-drawer::part(base) {
-    background: #2d313a;
+  background: var(--ig-secondary-500);
 }
 
 igc-nav-drawer-item::part(base) {
-    color: #fff;
+  color: var(--ig-secondary-500-contrast);
 }
 
 igc-nav-drawer-item::part(base):hover {
-    background-color: #3D4149;
+  background-color: var(--ig-gray-800);
 }
 
 igc-nav-drawer-item[active]::part(base) {
-    background: #f3c03e;
-    color: #2c2c2c
+  background: var(--ig-warn-500);
+  color: var(--ig-warn-500-contrast);
 }
 
 igc-nav-drawer-header-item {
-    color: #f3c03e
+  color: var(--ig-warn-500);
 }
 ```
 
@@ -479,6 +479,7 @@ igc-nav-drawer-header-item {
  - `Navbar`
  - `RadioGroup`
  - `Radio`
+ - [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 

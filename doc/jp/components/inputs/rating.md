@@ -338,15 +338,34 @@ IgrRatingModule.register();
 
 ## スタイル設定
 
-`Rating` コンポーネントは、base、label、value-label、symbol、およびコンポーネント シンボルとそれに含まれるラベルのスタイルを設定できるシンボルを提供します。
+`Rating` コンポーネントは、その内部要素のほとんどすべての CSS パーツを公開します。次の表に、公開されているすべての CSS パーツを示します。
+
+|名前|説明|
+|--|--|
+| `base` | すべての評価要素を保持するメイン ラッパー。 |
+| `label` | ラベルのパーツ。 |
+| `value-label` | 値ラベルのパーツ。 |
+| `symbols` | すべての評価記号のラッパー。 |
+| `symbol` | カプセル化されたデフォルト シンボルのパーツ。 |
+| `full` | カプセル化された完全なシンボルのパーツ。 |
+| `empty` | カプセル化された空のシンボルのパーツ。 |
+
+```css
+igc-rating::part(full) {
+  color: var(--ig-primary-500)
+}
+
+igc-rating::part(empty) {
+  color: var(--ig-secondary-200);
+}
+```
 
 `sample="/inputs/rating/styling", height="150", alt="{Platform} Rating スタイル設定の例"`
-
 
 ## API リファレンス
 
 - `Rating`
-
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 

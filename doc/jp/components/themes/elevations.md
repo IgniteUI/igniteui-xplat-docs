@@ -51,8 +51,8 @@ igc-navbar {
 
 ```css
 :root {
-    --ig-elevation-1: 0 2px 6px 0 rgba(0, 0, 0, .18);
-    --ig-elevation-2: 0 3px 9px 0 rgba(0, 0, 0, .24);
+  --ig-elevation-1: 0 2px 6px 0 rgba(0, 0, 0, .18);
+  --ig-elevation-2: 0 3px 9px 0 rgba(0, 0, 0, .24);
 }
 ```
 
@@ -64,7 +64,7 @@ igc-navbar {
 ```css
 igc-snackbar,
 igc-toast {
-    --ig-elevation-10: 0 3px 9px 0 rgba(0, 0, 0, .24);
+  --ig-elevation-10: 0 3px 9px 0 rgba(0, 0, 0, .24);
 }
 ```
 
@@ -76,7 +76,7 @@ igc-toast {
 
 ```css
 :root {
-    --ig-elevation-factor: 0;
+  --ig-elevation-factor: 0;
 }
 ```
 
