@@ -24,14 +24,14 @@ _language: ja
 ```css
 /* Set the border-radius for all components to 50% of their default value. */
 :root {
-    --ig-radius-factor: .5;
+  --ig-radius-factor: .5;
 }
 ```
 
 ```css
 /* Set the border-radius of the button component to 0. */
 igc-button {
-    --ig-radius-factor: 0;
+  --ig-radius-factor: 0;
 }
 ```
 
@@ -42,7 +42,7 @@ igc-button {
 ```css
 /* Set the elevation for all components to 50% of their original box-shadow values. */
 :root {
-    --ig-elevation-factor: .5;
+  --ig-elevation-factor: .5;
 }
 ```
 
@@ -56,7 +56,7 @@ igc-button {
 
 ```css
 :root {
-    --ig-size: var(--ig-size-small);
+  --ig-size: var(--ig-size-small);
 }
 ```
 
@@ -64,7 +64,7 @@ igc-button {
 
 ```css
 igc-avatar {
-    --ig-size: var(--ig-size-medium);
+  --ig-size: var(--ig-size-medium);
 }
 ```
 
@@ -81,7 +81,7 @@ igc-avatar {
 ```css
 /* Increase the spacing for all components to 150%. */
 :root {
-    --ig-spacing: 1.5;
+  --ig-spacing: 1.5;
 }
 ```
 
@@ -90,7 +90,7 @@ igc-avatar {
 ```css
 /* Reduce the spacing for the drop-down elements to 50% of their original value. */
 igc-dropdown {
-    --ig-spacing: 0.5;
+  --ig-spacing: 0.5;
 }
 ```
 
