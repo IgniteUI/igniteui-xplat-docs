@@ -215,7 +215,7 @@ componentDidMount() {
         ignoreCase: true
     });
     tree.filteringOperands.push(subTree);
-    gridRef.current.advancedFilteringExpressionsTree = tree;
+    gridRef.advancedFilteringExpressionsTree = tree;
 }
 ```-->
 <!-- end: React -->

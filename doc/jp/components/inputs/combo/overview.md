@@ -192,10 +192,10 @@ combo.value = ['NY01', 'UK01'];
 const comboRef = useRef<IgrCombo>(null);
 
 // Given the overview example from above this will return ['BG01']
-console.log(comboRef.current.value);
+console.log(comboRef.value);
 
 // Change the selected items to New York and London
-comboRef.current.value = ['NY01', 'UK01'];
+comboRef.value = ['NY01', 'UK01'];
 ```
 
 ### 選択 API
@@ -246,8 +246,8 @@ combo.deselect(['BG01', 'BG02', 'BG03', 'BG04']);
 <!-- React -->
 ```tsx
 // Select/deselect items by their IDs as valueKey is set to 'id'
-comboRef.current.select(["UK01", "UK02", "UK03", "UK04", "UK05"]);
-comboRef.current.deselect(["UK01", "UK02", "UK03", "UK04", "UK05"]);
+comboRef.select(["UK01", "UK02", "UK03", "UK04", "UK05"]);
+comboRef.deselect(["UK01", "UK02", "UK03", "UK04", "UK05"]);
 ```
 <!-- end: React -->
 
@@ -275,8 +275,8 @@ combo.deselect();
 <!-- React -->
 ```tsx
 // Select/deselect all items
-comboRef.current.select([]);
-comboRef.current.deselect([]);
+comboRef.select([]);
+comboRef.deselect([]);
 ```
 <!-- end: React -->
 
@@ -293,8 +293,8 @@ combo.deselect([cities[1], cities[5]]);
 <!-- React -->
 ```tsx
 // Select/deselect values by object references when no valueKey is provided
-comboRef.current.select([cities[1], cities[5]]);
-comboRef.current.deselect([cities[1], cities[5]]);
+comboRef.select([cities[1], cities[5]]);
+comboRef.deselect([cities[1], cities[5]]);
 ```
 <!-- end: React -->
 

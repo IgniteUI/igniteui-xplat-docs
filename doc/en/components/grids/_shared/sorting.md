@@ -127,10 +127,10 @@ this.grid.sort([
 
 ```tsx
 // Perform a case insensitive ascending sort on the ProductName column.
-gridRef.current.sort([{ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true }]);
+gridRef.sort([{ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true }]);
 
 // Perform sorting on both the ProductName and Price columns.
-gridRef.current.sort([
+gridRef.sort([
     { fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true },
     { fieldName: 'Price', dir: SortingDirection.Desc }
 ]);
@@ -186,10 +186,10 @@ this.treeGrid.sort([
 
 ```tsx
 // Perform a case insensitive ascending sort on the Category column.
-treeGridRef.current.sort([{ fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true }]);
+treeGridRef.sort([{ fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true }]);
 
 // Perform sorting on both the Category and Price columns.
-treeGridRef.current.sort([
+treeGridRef.sort([
     { fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true },
     { fieldName: 'Price', dir: SortingDirection.Desc }
 ]);
@@ -246,10 +246,10 @@ this.hierarchicalGrid.sort([
 
 ```tsx
 // Perform a case insensitive ascending sort on the ProductName column.
-hierarchicalGridRef.current.sort([{ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true }]);
+hierarchicalGridRef.sort([{ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true }]);
 
 // Perform sorting on both the ProductName and Price columns.
-hierarchicalGridRef.current.sort([
+hierarchicalGridRef.sort([
     { fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true },
     { fieldName: 'Price', dir: SortingDirection.Desc }
 ]);
@@ -274,10 +274,10 @@ this.grid.clearSort();
 
 ```tsx
 // Removes the sorting state from the ProductName column
-gridRef.current.clearSort('ProductName');
+gridRef.clearSort('ProductName');
 
 // Removes the sorting state from every column in the {ComponentTitle}
-gridRef.current.clearSort();
+gridRef.clearSort();
 ```
 
 ```razor
@@ -304,10 +304,10 @@ this.treeGrid.clearSort();
 
 ```tsx
 // Removes the sorting state from the Category column
-treeGridRef.current.clearSort('Category');
+treeGridRef.clearSort('Category');
 
 // Removes the sorting state from every column in the {ComponentTitle}
-treeGridRef.current.clearSort();
+treeGridRef.clearSort();
 ```
 
 ```razor
@@ -334,10 +334,10 @@ this.hierarchicalGrid.clearSort();
 
 ```tsx
 // Removes the sorting state from the ProductName column
-hierarchicalGridRef.current.clearSort('ProductName');
+hierarchicalGridRef.clearSort('ProductName');
 
 // Removes the sorting state from every column in the {ComponentTitle}
-hierarchicalGridRef.current.clearSort();
+hierarchicalGridRef.clearSort();
 ```
 
 ```razor
@@ -403,7 +403,7 @@ public connectedCallback() {
 
 ```tsx
 useEffect(() => {
-    gridRef.current.sortingExpressions = [
+    gridRef.sortingExpressions = [
         { fieldName: 'UnitsInStock', dir: SortingDirection.Asc, ignoreCase: true },
         { fieldName: 'ProductName', dir: SortingDirection.Desc }
     ];
@@ -453,7 +453,7 @@ public connectedCallback() {
 
 ```tsx
 useEffect(() => {
-    treeGridRef.current.sortingExpressions = [
+    treeGridRef.sortingExpressions = [
         { fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true },
         { fieldName: 'Price', dir: SortingDirection.Desc }
     ];
@@ -503,7 +503,7 @@ public connectedCallback() {
 
 ```tsx
 useEffect(() => {
-    hierarchicalGridRef.current.sortingExpressions = [
+    hierarchicalGridRef.sortingExpressions = [
         { fieldName: 'UnitsInStock', dir: SortingDirection.Asc, ignoreCase: true },
         { fieldName: 'ProductName', dir: SortingDirection.Desc }
     ];

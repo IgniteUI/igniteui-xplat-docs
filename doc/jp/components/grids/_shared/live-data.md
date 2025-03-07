@@ -142,7 +142,7 @@ private updateData(data: any[]) {
         rowData.price = { usd: getUSD(), eur: getEUR() };
         newData.push({...rowData});
     }
-    gridRef.current.data = newData;
+    gridRef.data = newData;
 }
 ```
 <!-- end: React -->

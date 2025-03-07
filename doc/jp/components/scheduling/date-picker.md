@@ -105,7 +105,7 @@ const date = new Date();
 DatePicker.value = date;
 ```
 ```tsx
-datePickerRef.current.value = new Date();
+datePickerRef.value = new Date();
 ```
 ```Razor
 <IgbDatePicker @ref="DatePicker" Value="@SelectedDate">
@@ -144,7 +144,7 @@ prefix スロットと suffix スロットを使用すると、入力のメイ�
         name="arrow_upward" 
         collection="material" 
         class="small" 
-        onClick={() => datePickerRef.current.stepUp(DatePart.Month)}>
+        onClick={() => datePickerRef.stepUp(DatePart.Month)}>
     </IgrIcon>
 </IgrDatePicker>
 ```
@@ -194,7 +194,7 @@ prefix スロットと suffix スロットを使用すると、入力のメイ�
 <IgrDatePicker>
     <IgrButton 
         slot='actions' 
-        onClick={() => datePickerRef.current.showWeekNumbers = true}>
+        onClick={() => datePickerRef.showWeekNumbers = true}>
         <span>Show Week Numbers</span>
     </IgrButton>
 </IgrDatePicker>
@@ -264,13 +264,13 @@ DatePicker は `dialog` モードもサポートしています。
         slot="prefix" 
         name="arrow_upward" 
         collection="material" 
-        onClick={() => datePickerRef.current.stepUp(DatePart.Month)}>
+        onClick={() => datePickerRef.stepUp(DatePart.Month)}>
     </IgrIcon>
     <IgrIcon 
         slot="suffix" 
         name="arrow_downward" 
         collection="material" 
-        onClick={() => datePickerRef.current.stepDown(DatePart.Month)}>
+        onClick={() => datePickerRef.stepDown(DatePart.Month)}>
     </IgrIcon>
 </IgrDatePicker>
 ```
