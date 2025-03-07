@@ -14,6 +14,12 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerChanges-24-2-FEB}**
 
+### {PackageGrids}
+
+- **All Grids** 
+  - Added new `DisabledSummaries` for the columns of the grid, allowing the developers to skip some of the summaries
+  - Encapsulate internal grid action button
+
 ### Enhancements
 
 #### Toolbar
@@ -42,10 +48,12 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 |34776|IgbDataChart|Repeatedly showing and hiding the IgbDataChart causes memory leakage in JS Heap|
 |35439|IgbGrid|CPU usage and Memory consumption are abnormally high when the app is opened in multiple tabs|
 |35495|Excel Library|Pictures in cells are lost when a template file is loaded|
+|35497|IgbDialog|When ShowAsync and HideAsync Are Called, the Subsequent Code Is Not Executed|
 |35498|IgbDataChart|Tooltips for the series specified in IncludedSeries are not displayed|
 |36024|IgbGrid|The JS heap size never reduced when moving back and forth between two pages with IgbGrid component|
 |36176|Excel Library|Exception occurs when loading an Excel workbook that has a LET function|
 |36379|Excel Library|Colors with any alpha channel in an excel workbook fail to load|
+
 
 ## **{PackageVerChanges-24-2-JAN}**
 
