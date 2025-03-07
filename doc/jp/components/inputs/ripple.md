@@ -114,6 +114,7 @@ igc-ripple {
 
  - `Button`
  - `Ripple`
+ - [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース

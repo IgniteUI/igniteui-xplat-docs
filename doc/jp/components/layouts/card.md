@@ -492,25 +492,25 @@ defineComponents(IgcCardComponent);
 
 ## スタイル設定
 
-カードはさまざまな要素をラップするコンテナであるため、スタイル設定は、その基本要素 (ヘッダー、コンテンツ、メディア、およびアクションのサブコンポーネント) をスタイル設定することによって行われます。さらに、`header` コンポーネント (`CardHeader`) は、3 つの CSS パーツ (`header`、`title`、`subtitle`) を公開します。これにより、ラッピング要素と 2 つのタイトル要素のスタイルを設定できます。
+カードはさまざまな要素をラップするコンテナであるため、スタイル設定は、その基本要素 (`CardHeader`、`CardContent`、`CardMedia`、および `CardActions` のサブコンポーネント) をスタイル設定することによって行われます。 
 
 ```css
 igc-card {
-    background-color: #011627;
+  background-color: var(--ig-secondary-900);
 }
 
 igc-card-content,
-igc-card-header::part(title) {
-    color: #FEFEFE;
+igc-card-header::part(title) { 
+  color: var(--ig-primary-500-contrast);
 }
 
-igc-card-header::part(subtitle) {
-    color: #ECAA53;
-    opacity: 0.9;
+igc-card-header > *[slot="subtitle"] {
+  color: var(--ig-warn-500);
+  opacity: 0.9;
 }
 
-igc-icon-button+igc-icon-button {
-    margin-left: 10px;
+igc-icon-button::part(base) {
+  background-color: var(--ig-primary-300);
 }
 ```
 
@@ -534,6 +534,7 @@ igc-icon-button+igc-icon-button {
  - `Card`
  - `IconButton`
  - `Icon`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 
