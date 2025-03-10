@@ -62,16 +62,16 @@ const comboRef = useRef<IgrCombo>(null);
 const switchCaseSensitiveRef = useRef<IgrSwitch>(null);
 
 const disableFiltering = (switchComponent: IgrSwitch) => {
-    comboRef.current.disableFiltering =
-    switchCaseSensitiveRef.current.disabled = switchComponent.checked;
+    comboRef.disableFiltering =
+    switchCaseSensitiveRef.disabled = switchComponent.checked;
 };
 
 const showCaseSensitiveIcon = (switchComponent: IgrSwitch) => {
-    comboRef.current.caseSensitiveIcon = switchComponent.checked;
+    comboRef.caseSensitiveIcon = switchComponent.checked;
 };
 
 const disableCombo = (switchComponent: IgrSwitch) => {
-    comboRef.current.disabled = switchComponent.checked;
+    comboRef.disabled = switchComponent.checked;
 };
 ```
 
@@ -158,7 +158,7 @@ switchGroup.addEventListener("igcChange", () => {
 
 ```tsx
 const enableGrouping = (switchComponent: IgrSwitch) => {
-    comboRef.current.groupKey = switchComponent.checked ? "country" : undefined;
+    comboRef.groupKey = switchComponent.checked ? "country" : undefined;
 };
 ```
 
@@ -206,7 +206,7 @@ const options = {
     caseSensitive: true
 };
 
-comboRef.current.filteringOptions = options;
+comboRef.filteringOptions = options;
 ```
 <!-- end: React -->
 
