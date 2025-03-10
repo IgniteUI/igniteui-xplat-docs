@@ -109,32 +109,32 @@ IgrTextareaModule.register();
 
 ## スタイル設定
 
-Text Area コンポーネントは、その内部要素のほとんどすべての CSS パーツを公開します。次の表に、Input によって公開されるすべての CSS パーツを示します:
+`Textarea` コンポーネントは、その内部要素のほとんどすべての CSS パーツを公開します。次の表に、公開されているすべての CSS パーツを示します:
 
 |名前|説明|
 |--|--|
-| container | すべての主要な入力要素を保持するメイン ラッパー。 |
-| input | ネイティブ input 要素。 |
-| label | ネイティブ label 要素。 |
-| prefix | プレフィックス ラッパー。 |
-| suffix | サフィックス ラッパー。 |
-| helper-text | ヘルパー テキスト ラッパー。 |
+| `container` | すべての主要な入力要素を保持するメイン ラッパー。 |
+| `input` | ネイティブ input 要素。 |
+| `label` | ネイティブ label 要素。 |
+| `prefix` | プレフィックス ラッパー。 |
+| `suffix` | サフィックス ラッパー。 |
+| `helper-text` | ヘルパー テキスト ラッパー。 |
 
-```scss
+```css
 igc-textarea::part(input) {
-    background-color: rgb(169, 214, 229);
-    border-color: rgb(42, 111, 151);
+  background-color: var(--ig-info-100);
+  border-color: var(--ig-primary-400);
 }
 
 igc-textarea::part(label) {
-    color: rgb(1, 42, 74);
+  color: var(--ig-gray-800);
 }
 
 igc-textarea::part(prefix),
 igc-textarea::part(suffix) {
-    color: white;
-    border-color: rgb(42, 111, 151);
-    background-color: rgb(70, 143, 175);
+  color: var(--ig-primary-500-contrast);
+  border-color: var(--ig-primary-500);
+  background-color: var(--ig-primary-500);
 }
 ```
 
@@ -147,6 +147,7 @@ igc-textarea::part(suffix) {
  - `Icon`
  - `Textarea`
  - `Toast`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 

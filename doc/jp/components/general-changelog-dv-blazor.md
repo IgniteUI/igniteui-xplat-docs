@@ -13,6 +13,41 @@ _language: ja
 
 * バージョン 2024.2 以降、Ignite UI for Blazor ツールセットは .NET 9 をサポートします。.NET 9 の詳細については、[Microsoft サイト](https://learn.microsoft.com/ja-jp/dotnet/core/whats-new/dotnet-9/overview)をご確認ください。
 
+## **{PackageVerChanges-24-2-FEB}**
+
+### 機能拡張
+
+#### Toolbar
+
+- `Toolbar` と `ToolPanel` に新しい `GroupHeaderTextStyle` プロパティを追加しました。設定されている場合、すべての `ToolActionGroupHeader` アクションに適用されます。
+- タイトル テキストの水平方向の配置を制御する `TitleHorizontalAlignment` という新しいプロパティを `ToolAction` に追加しました。
+- `ToolActionSubPanel` に、パネル内の項目間の間隔を制御する `ItemSpacing` という新しいプロパティを追加しました。
+
+### バグ修正
+
+次の表は、このリリースの {ProductName} ツールセットに対して行われたバグ修正を示しています。
+
+| バグ番号 | コントロール | 説明      |
+|------------|---------|------------------|
+|26218|Excel Library|Excel ファイルを読み込むだけで、チャートのプロット領域の右マージンが狭くなり、塗りつぶしパターンと前景の塗りつぶしが消える。|
+|29998|IgbCombo|.NET 8 では Change イベントコールバックが複数回発生する。|
+|30286|IgbDataChart|バブルをクリックすると、Bubble Series のツールチップが近くのバブル データの内容に切り替わる。|
+|31344|IgbGrid|SelectedRows の双方向バインディングが機能しない。|
+|32906|IgbDataChart|IgbDataChart は上部に 2 つの xAxis を表示している。|
+|33605|IgbDataChart|凡例に ScatterLineSeries の線の色が正しく表示されない。|
+|34053|IgbRadialGauge|スケール ラベルの位置がずれる。|
+|34083|Excel Library|テンプレート Excel ファイルのテキストに 「=」 が含まれている場合、TextOperatorConditionalFormat が正しく読み込まれない/保存されない。|
+|34149|IgbGrid|IgbGrid を繰り返し表示したり非表示にしたりすると、JS ヒープでメモリ リークが発生する。|
+|34224|IgbGrid|rendermode に 'InteractiveAuto' が使用されている場合、アプリがサーバー モードから WebAssembly モードに変更されると、「There are multiple .NET runtimes present」 というエラーが発生する。|
+|34654|IgbGrid|データに空のリストが含まれている場合、NullReferenceException が発生する。|
+|34776|IgbDataChart|IgbDataChart を繰り返し表示したり非表示にしたりすると、JS ヒープでメモリ リークが発生する。|
+|35439|IgbGrid|アプリを複数のタブで開いた際に、CPU 使用率とメモリ消費が異常に高くなる。|
+|35495|Excel Library|テンプレート ファイルを読み込むと、セル内の画像が失われる。|
+|35498|IgbDataChart|IncludedSeries で指定されたシリーズのツールチップは表示されない。|
+|36024|IgbGrid|IgbGrid コンポーネントを含む 2 つのページ間を行き来しても、JS ヒープ サイズが削減されない。|
+|36176|Excel Library|LET 関数を含む Excel ブックを読み込むと、例外が発生する。|
+|36379|Excel Library|Excel ワークブック内のアルファ チャネルを含む色は読み込まれない。|
+
 ## **{PackageVerChanges-24-2-JAN}**
 
 - バグ修正
