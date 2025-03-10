@@ -154,7 +154,43 @@ IgrExpansionPanelModule.register();
 
 ## スタイル設定
 
-{ProductName} 展開パネル コンポーネントは、いくつかの CSS パーツ (`header`、`indicator`、`title`、`subtitle` および `content`) を公開して、スタイルを完全に制御できるようにします。
+`ExpansionPanel` コンポーネントはいくつかの CSS パーツを公開し、スタイルを完全に制御できるようにします。
+
+|名前|説明|
+|--|--|
+| `header` | 展開インジケーター、タイトル、サブタイトルのコンテナー。 |
+| `title` | タイトルのコンテナー。 |
+| `subtitle` | サブタイトルのコンテナー。 |
+| `indicator` | インジケーター コンテナー。 |
+| `content` | 展開パネルのコンテンツ ラッパー。 |
+
+```css
+igc-expansion-panel {
+  background-color: var(--ig-secondary-900);
+  color: var(--ig-secondary-900-contrast);
+}
+
+igc-button::part(base) {
+  color: var(--ig-secondary-900-contrast);
+}
+
+igc-button::part(base)::before {
+  background-color: var(--ig-warn-500);
+}
+
+igc-expansion-panel::part(indicator) {
+  color: var(--ig-warn-500);
+}
+
+igc-expansion-panel::part(header) {
+  background-color: var(--ig-secondary-900);
+}
+
+igc-expansion-panel::part(title),
+igc-expansion-panel::part(subtitle) {
+  color: var(--ig-warn-500);
+}
+```
 
 `sample="/layouts/expansion-panel/styling", height="480", alt="{Platform} 展開パネルのスタイル設定"`
 
@@ -164,6 +200,7 @@ IgrExpansionPanelModule.register();
 ## API リファレンス
 
  - `ExpansionPanel`
+ - [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 

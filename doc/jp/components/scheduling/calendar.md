@@ -397,77 +397,78 @@ public onCalendarChange(calendar: IgrCalendar, e: IgrComponentDataValueChangedEv
 
 ## スタイル設定
 
-Calendar コンポーネントは、その内部要素のほぼすべての CSS パーツを公開します。次の表に、Calendar によって公開されるすべての CSS パーツを示します:
+`Calendar` コンポーネントは、その内部要素のほぼすべての CSS パーツを公開します。次の表に、公開されているすべての CSS パーツを示します:
 
 |名前|説明|
 |--|--|
-| header | ヘッダー要素。 |
-| header-title | ヘッダーのタイトル要素。 |
-| header-date | ヘッダーの日付要素。 |
-| content | ビューとナビゲーション要素を含むコンテンツ要素。 |
-| navigation | ナビゲーション コンテナー要素。 |
-| months-navigation | 月のナビゲーション ボタン要素。 |
-| years-navigation | 年のナビゲーション ボタン要素。 |
-| years-range | 年の範囲の要素。|
-| navigation-buttons | ナビゲーション ボタン コンテナー。 |
-| navigation-button | 前/次のナビゲーション ボタン。 |
-| days-view-container | 日ビュー コンテナー要素。 |
-| days-view | 日ビュー要素。 |
-| months-view | 月ビュー要素。 |
-| years-view | 年ビュー要素。 |
-| days-row | 日行要素。 |
-| label | 週ヘッダー ラベル要素。 |
-| week-number | 週番号要素。 |
-| week-number-inner | 週番号の内部要素。 |
-| date | 日付要素。 |
-| date-inner | 日付の内部要素。|
-| first | 最初に選択された日付要素。|
-| last | 最後に選択された日付要素。 |
-| inactive | 非アクティブな日付要素。 |
-| hidden | 非表示の日付要素。|
-| weekend | 週末の日付要素。 |
-| range | 範囲選択の要素。 |
-| special | 特別な日付要素。|
-| disabled | 無効な日付要素。|
-| single | 単一選択の日付要素。 |
-| preview | 範囲選択プレビュー日付要素。|
-| month | 月の要素。 |
-| month-inner | 月の内部要素。 |
-| year | 年の要素。 |
-| year-inner | 年の内部要素。 |
-| selected | 選択された状態を示します。日付、月、年の要素に適用されます。 |
-| current | 現在の状態を示します。日付、月、年の要素に適用されます。 |
+| `header` | ヘッダー要素。 |
+| `header-title` | ヘッダーのタイトル要素。 |
+| `header-date` | ヘッダーの日付要素。 |
+| `content` | ビューとナビゲーション要素を含むコンテンツ要素。 |
+| `navigation` | ナビゲーション コンテナー要素。 |
+| `months-navigation` | 月のナビゲーション ボタン要素。 |
+| `years-navigation` | 年のナビゲーション ボタン要素。 |
+| `years-range` | 年の範囲の要素。|
+| `navigation-buttons` | ナビゲーション ボタン コンテナー。 |
+| `navigation-button` | 前/次のナビゲーション ボタン。 |
+| `days-view-container` | 日ビュー コンテナー要素。 |
+| `days-view` | 日ビュー要素。 |
+| `months-view` | 月ビュー要素。 |
+| `years-view` | 年ビュー要素。 |
+| `days-row` | 日行要素。 |
+| `label` | 週ヘッダー ラベル要素。 |
+| `week-number` | 週番号要素。 |
+| `week-number-inner` | 週番号の内部要素。 |
+| `date` | 日付要素。 |
+| `date-inner` | 日付の内部要素。|
+| `first` | 最初に選択された日付要素。|
+| `last` | 最後に選択された日付要素。 |
+| `inactive` | 非アクティブな日付要素。 |
+| `hidden` | 非表示の日付要素。|
+| `weekend` | 週末の日付要素。 |
+| `range` | 範囲選択の要素。 |
+| `special` | 特別な日付要素。|
+| `disabled` | 無効な日付要素。|
+| `single` | 単一選択の日付要素。 |
+| `preview` | 範囲選択プレビュー日付要素。|
+| `month` | 月の要素。 |
+| `month-inner` | 月の内部要素。 |
+| `year` | 年の要素。 |
+| `year-inner` | 年の内部要素。 |
+| `selected` | 選択された状態を示します。日付、月、年の要素に適用されます。 |
+| `current` | 現在の状態を示します。日付、月、年の要素に適用されます。 |
 
-これらの CSS パーツを使用して、次のように Calendar コンポーネントの外観をカスタマイズできます:
-
+これらの CSS パーツを使用して、次のように `Calendar` コンポーネントの外観をカスタマイズできます:
 
 ```css
-igc-calendar::part(header) {
-    background: #345779;
-}
-
 igc-calendar::part(date-inner selected),
 igc-calendar::part(month-inner selected),
-igc-calendar::part(year-inner selected) {
-    background: #345779;
-    border-color: #345779;
+igc-calendar::part(year-inner selected),
+igc-calendar::part(month-inner selected):focus,
+igc-calendar::part(year-inner selected):focus {
+  background: var(--ig-primary-500);
+  border-color: var(--ig-primary-800);
 }
 
-igc-calendar::part(date-inner current),
-igc-calendar::part(navigation-button):hover,
-igc-calendar::part(navigation-button):focus,
+igc-calendar::part(date-inner selected):hover,
+igc-calendar::part(month-inner selected):hover,
+igc-calendar::part(year-inner selected):hover {
+  background: var(--ig-primary-500);
+  border-color: var(--ig-primary-800);
+}
+
+igc-calendar::part(label),
+igc-calendar::part(navigation-button),
 igc-calendar::part(months-navigation):hover,
 igc-calendar::part(months-navigation):focus,
 igc-calendar::part(years-navigation):hover,
 igc-calendar::part(years-navigation):focus {
-    color: #2dabe8;
+  color: var(--ig-primary-300);
 }
 
-igc-calendar::part(date-inner current selected),
-igc-calendar::part(month-inner current selected),
-igc-calendar::part(year-inner current selected) {
-    box-shadow: inset 0 0 0 0.0625rem white, 0 0 0 0.0625rem #345779;
-    color: white;
+igc-calendar::part(navigation-button):hover,
+igc-calendar::part(navigation-button):focus {
+  color: var(--ig-primary-800);
 }
 ```
 
@@ -477,18 +478,14 @@ igc-calendar::part(year-inner current selected) {
 
 ## API リファレンス
 
-* `Calendar`
-* `Radio`
-* `RadioGroup`
-* `ActiveDate`
-* `ActiveView`
-* `After`
-* `Before`
-* `Between`
-* `Change`
-* `DateRangeDescriptor`
-* `DateRangeType`
-* `DateRange`
+- `Calendar`
+- `Radio`
+- `RadioGroup`
+- `ActiveDate`
+- `ActiveView`
+- `DateRangeDescriptor`
+- `DateRange`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 

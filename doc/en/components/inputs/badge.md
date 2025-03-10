@@ -143,15 +143,17 @@ The badge component supports `rounded`(default) and `square` shapes. These value
 
 ## Styling
 
-The badge component exposes a `base` part that can be used to change all of its style properties.
+The `Badge` component exposes a `base` CSS part that can be used to change all of its style properties.
 
 ```css
 igc-badge::part(base) {
-  color: olive;
-  background: beige;
+  background: var(--ig-primary-500);
+  color: var(--ig-primary-500-contrast);
   border-radius: 2px;
 }
 ```
+
+`sample="/inputs/badge/styling", height="60", alt="{Platform} Badge Example"`
 
 
 <div class="divider--half"></div>
@@ -159,6 +161,7 @@ igc-badge::part(base) {
 ## API References
 
  - `Badge`
+ - [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

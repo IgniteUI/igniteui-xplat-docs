@@ -8,7 +8,7 @@ _language: ja
 
 # {Platform} Date Time Input (日時入力) の概要
 
-{ProductName} Date Time Input を使用すると、ユーザーは選択した入力要素で日付と時刻を設定および編集できます。ユーザーは、編集可能なマスクされた入力を使用して、日付と時刻の両方の部分を編集できます。さらに、検証に最小値と最大値だけでなく、希望の表示形式および入力形式の設定を指定できます。
+{ProductName} Date Time Input を使用すると、ユーザーは選択した入力要素で日付と時刻を設定および編集できます。ユーザーは、編集可能なマスクされた入力を使用して、日付と時刻の両方のパーツを編集できます。さらに、検証に最小値と最大値だけでなく、希望の表示形式および入力形式の設定を指定できます。
 
 `sample="/inputs/date-time-input/overview", height="150", alt="{Platform} 日時入力の概要の例"`
 
@@ -97,7 +97,7 @@ public dateTimeInputRef(input: IgrDateTimeInput) {
 
 `DateTimeInput` は、[ISO 8601](https://tc39.es/ecma262/#sec-date-time-string-format) 文字列も受け入れます。
 
-文字列は、`YYYY-MM-DDTHH:mm:ss.sssZ` の形式の完全な `ISO` 文字列にすることも、日付のみと時間のみの部分に分割することもできます。
+文字列は、`YYYY-MM-DDTHH:mm:ss.sssZ` の形式の完全な `ISO` 文字列にすることも、日付のみと時間のみのパーツに分割することもできます。
 
 ##### 日付のみ
 日付のみの文字列がコンポーネントの `Value` プロパティにバインドされている場合は、`YYYY-MM-DD` の形式である必要があります。`InputFormat` は、入力に値を入力するときに引き続き使用され、同じ形式である必要はありません。さらに、日付のみの文字列をバインドする場合、ディレクティブは時刻を `T00:00:00` に強制することにより、時刻のずれを防ぎます。
@@ -124,8 +124,8 @@ public dateTimeInputRef(input: IgrDateTimeInput) {
 | <kbd>End</kbd> | 最後に移動 |
 | <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>&larr;</kbd> | 日付 / 時刻セクションの先頭に移動 - 現在のセクションまたは左側のセクション |
 | <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>&rarr;</kbd> | 日付 / 時刻セクションの最後に移動 - 現在または右側のセクション |
-| 日付 / 時刻の部分にフォーカス + <kbd>&darr;</kbd> | 日付 / 時刻部分を減分 |
-| 日付 / 時刻の部分にフォーカス + <kbd>&uarr;</kbd> | 日付 / 時刻の部分を増分 |
+| 日付 / 時刻のパーツにフォーカス + <kbd>&darr;</kbd> | 日付 / 時刻のパーツを減分 |
+| 日付 / 時刻のパーツにフォーカス + <kbd>&uarr;</kbd> | 日付 / 時刻のパーツを増分 |
 | <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>;</kbd> | 現在の日付 / 時刻をエディターの値として設定 |
 
 ## 書式の設定
@@ -289,19 +289,43 @@ input.spinDelta = spinDelta;
 
 `sample="/inputs/date-time-input/step-up-down", height="150", alt="{Platform} 日時入力ステップアップ / ステップダウンの例"`
 
-
-
 ## スタイル設定
 
-`DateTimeInput` コンポーネントは `Input` コンポーネントから派生しているため、使用可能なすべての CSS パーツを公開します。参考のために[入力スタイル設定](input.md#スタイル設定)を参照してください。
+`DateTimeInput` コンポーネントは、その内部要素のほとんどすべての CSS パーツを公開します。次の表に、公開されているすべての CSS パーツを示します。
+
+|名前|説明|
+|--|--|
+| `container` | すべての主要な入力要素を保持するメイン ラッパー。 |
+| `input` | ネイティブ入力要素。 |
+| `label` | ネイティブ ラベル要素。 |
+| `prefix` | プレフィックス ラッパー。 |
+| `suffix` | サフィックス ラッパー。 |
+| `helper-text` | ヘルパー テキスト ラッパー。 |
+
+```css
+igc-date-time-input::part(input) {
+  background-color: var(--ig-primary-100);
+  border-color: var(--ig-secondary-500);
+  box-shadow: none;
+}
+
+igc-date-time-input::part(prefix),
+igc-date-time-input::part(suffix) {
+  color: var(--ig-primary-600-contrast);
+  background-color: var(--ig-primary-500);
+  border-color: var(--ig-secondary-500);
+}
+```
+
+`sample="/inputs/date-time-input/styling", height="150", alt="{Platform} Date Time Input のスタイル設定"`
 
 ## API リファレンス
 
  - `Input`
  - `MaskInput`
  - `Icon`
- - `DateParts`
  - `DateTimeInput`
+ - [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース

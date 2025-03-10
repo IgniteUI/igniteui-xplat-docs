@@ -323,32 +323,36 @@ builder.Services.AddIgniteUIBlazor(
 
 ## スタイル設定
 
-`Radio` コンポーネントは、いくつかの CSS パーツ (`base`、`control`、および `label`) を公開して、スタイルを完全に制御できるようにします。グローバル パレットの色を変更して、ラジオ コンポーネントの色を変更することもできます。
+`Radio` コンポーネントは、いくつかの CSS パーツ (`base`、`control`、および `label`) を公開して、スタイルを完全に制御できるようにします。
 
-```scss
-:root {
-    --ig-primary-h: 60deg;
-    --ig-primary-s: 100%;
-    --ig-primary-l: 25%;
+```css
+igc-radio::part(control) {
+  --size: 18px;
 }
 
-igc-radio::part(control) {
-    --size: 18px;
+igc-radio-group {
+  padding: 12px;
+}
+
+igc-radio::part(checked)::after {
+  background-color: var(--ig-success-500);
+}
+
+igc-radio::part(label) {
+  color: var(--ig-secondary-800);
 }
 ```
 
 `sample="/inputs/radio/styling", height="205", alt="{Platform} Radio スタイル設定"`
-
-
 
 <div class="divider--half"></div>
 
 
 ## API リファレンス
 
- - `Form`
  - `RadioGroup`
  - `Radio`
+ - [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース

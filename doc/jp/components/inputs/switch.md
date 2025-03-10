@@ -162,7 +162,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 <IgbSwitch Checked="true" />
 ```
 
-`sample="/inputs/switches/checking", height="100", alt="{Platform} Avatar の例"`
+`sample="/inputs/switches/checking", height="100", alt="{Platform} Switch の例"`
 
 
 
@@ -210,7 +210,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 <IgbSwitch Disabled="true" />
 ```
 
-`sample="/inputs/switches/disabled", height="100", alt="{Platform} Avatar の例"`
+`sample="/inputs/switches/disabled", height="100", alt="{Platform} Switch の例"`
 
 
 
@@ -232,29 +232,41 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 
 ## スタイル設定
 
-スイッチ コンポーネントは、いくつかの CSS パーツ (`base`、`control`、`indicator`、および `label`) を公開して、スタイルを完全に制御できるようにします。
+`Switch` コンポーネントは、いくつかの CSS パーツを公開して、スタイルを完全に制御できるようにします。
+
+
+|名前|説明|
+|--|--|
+| `base` | スイッチの基本ラッパー。 |
+| `control` | スイッチの入力要素。 |
+| `thumb` | スイッチの位置インジケーター。 |
+| `label` | スイッチのラベル。 |
 
 ```css
-igc-switch::part(control) {
-  background: beige;
-  border-radius: 0;
-}
-
 igc-switch::part(thumb) {
-  background: olive;
-  border-radius: 2px;
+  background-color: var(--ig-success-500);
   box-shadow: none;
 }
+
+igc-switch::part(thumb checked) {
+  background-color: var(--ig-gray-50);
+}
+
+igc-switch::part(control checked) {
+  background-color: var(--ig-success-500);
+}
 ```
+
+`sample="/inputs/switches/styling", height="100", alt="{Platform} Switch のスタイル設定"`
 
 <div class="divider--half"></div>
 
 
 ## API リファレンス
 
- - `Form`
  - `LabelPosition`
  - `Switch`
+ - [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 
