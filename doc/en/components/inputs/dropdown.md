@@ -151,16 +151,30 @@ By default, the Dropdown is closed automatically when the user clicks outside of
 
 You can change the appearance of the Dropdown and its items, by using the exposed CSS parts. The `Dropdown` exposes `base` and `list` parts, the `DropdownItem` exposes `prefix`, `content` and `suffix` parts and the `DropdownGroup` exposes `label` part.
 
+```css
+igc-dropdown::part(list) {
+  height: 220px;
+}
+
+igc-dropdown-item[selected] {
+  background: var(--ig-success-300);
+}
+
+igc-dropdown-group::part(label) {
+  display: flex;
+  justify-content: center;
+}
+```
+
 `sample="/inputs/dropdown/styling", height="320", alt="{Platform} Dropdown Styling Example"`
-
-
 
 ## API Reference
 
-* `Dropdown`
-* `DropdownItem`
-* `DropdownHeader`
-* `DropdownGroup`
+- `Dropdown`
+- `DropdownItem`
+- `DropdownHeader`
+- `DropdownGroup`
+- [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources

@@ -127,13 +127,20 @@ By default, the snackbar component is hidden automatically after a period specif
 
 ## Styling
 
-The snackbar component exposes several CSS parts (`base`, `message`, and `action`) to give you full control over its styling.
+The `Snackbar` component exposes several CSS parts to give you full control over its styling:
+
+|Name|Description|
+|--|--|
+| `base` | The base wrapper of the snackbar component. |
+| `message` | The snackbar message. |
+| `action` | The default snackbar action button. |
+| `action-container` | The area holding the actions. |
 
 ```css
 igc-snackbar::part(base) {
-    background: #0d6efd;
-    border-color: #0d6efd;
-    color: white;
+  background: var(--ig-primary-500);
+  border-color: var(--ig-primary-800);
+  color: white;
 }
 ```
 
@@ -149,6 +156,7 @@ igc-snackbar::part(base) {
  - `KeepOpen`
  - `Show`
  - `Snackbar`
+ - [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

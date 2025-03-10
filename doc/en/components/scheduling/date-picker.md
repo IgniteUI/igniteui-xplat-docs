@@ -326,6 +326,37 @@ Here is how a `DatePicker` with Japanese locale definition would look like:
 ## Styling
 The `DatePicker` component derives from the `Input` and `Calendar` component, so it exposes all available CSS parts. See [Input Styling](../inputs/input.md#styling) and [Calendar Styling](calendar.md#styling) for reference.
 
+```css
+igc-date-picker::part(header) {
+  background-color: var(--ig-primary-500);
+  color: var(--ig-primary-500-contrast);
+}
+igc-date-picker::part(calendar-content) {
+  background-color: var(--ig-surface-300);
+}
+igc-date-picker::part(date-inner current) {
+  color: var(--ig-info-300);
+  background-color: var(--ig-surface-300);
+}
+igc-date-picker::part(navigation-button):hover,
+igc-date-picker::part(months-navigation):hover,
+igc-date-picker::part(years-navigation):hover {
+  color: var(--ig-secondary-500);
+}
+igc-date-picker::part(month-inner current),
+igc-date-picker::part(year-inner current),
+igc-date-picker::part(navigation-button),
+igc-date-picker::part(months-navigation),
+igc-date-picker::part(years-navigation) {
+  color: var(--ig-info-300);
+}
+igc-date-picker::part(date-inner selected),
+igc-date-picker::part(month-inner selected),
+igc-date-picker::part(year-inner selected) {
+  color: var(--ig-secondary-500-contrast);
+  background-color: var(--ig-secondary-500);
+}
+```
 
 `sample="/scheduling/date-picker/styling", height="500", alt="{Platform} Date Picker Input Styling Example"`
 
@@ -334,6 +365,7 @@ The `DatePicker` component derives from the `Input` and `Calendar` component, so
  - `Input`
  - `Calendar`
  - `DatePicker`
+ - [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources
