@@ -427,30 +427,33 @@ public onRadioChange(e: any) {
 
 `sample="/grids/list/overview", height="300", alt="{Platform} List の例"`
 
-
-
 ## スタイル設定
 
-公開されている CSS パーツ (`title`、`subtitle`、`end`) を使用して、リストの外観を変更できます。
+`List` はいくつかの CSS パーツを公開し、スタイルを完全に制御できるようにします。
+
+|名前|説明|
+|--|--|
+| `start` | 開始のコンテナー。 |
+| `end` | 終了のコンテナー。 |
+| `content` | ヘッダーとカスタム コンテンツのコンテナー。 |
+| `header` | タイトルとサブタイトルのコンテナー。 |
+| `title` | タイトルのコンテナー。 |
+| `subtitle` | サブタイトルのコンテナー。 |
 
 ```css
 igc-list-header {
-    font-size: 20px;
-    font-weight: 700;
-    color: #3f51b5;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ig-primary-700);
 }
 
 igc-list-item::part(title) {
-    font-size: 18px;
-    color: #3f51b5;
+  font-size: 18px;
+  color: var(--ig-primary-600);
 }
 
 igc-list-item::part(subtitle) {
-    color: #0099ff;
-}
-
-igc-list-item::part(end) {
-    --ig-secondary-500: 230,48%,47%;
+  color: var(--ig-primary-300);
 }
 ```
 
@@ -469,6 +472,7 @@ igc-list-item::part(end) {
  - `ListHeader`
  - `ListItem`
  - `List`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 
