@@ -65,12 +65,14 @@ For a complete introduction to the {ProductName}, read the [*Getting Started*](.
 
 ## Layout
 
-### Columns
+### Columns and Rows
 
-We can specify the number of grid columns for our Tile Manager. To do this, simply set the `column-count` property to the desired number of columns. If the number is less than one, the Tile Manager will create as many columns as can fit, with each column being at least 20px wide and expanding to equally share the available space.
+We can specify the number of grid columns for our Tile Manager. To do this, simply set the `column-count` property to the desired number of columns. If the number is less than one or the property is not set, the Tile Manager will create as many columns as can fit, with each column being at least 200px wide and expanding to equally share the available space. When the viewport dimensions change, the tiles will also rearrange themselves to maximize the use of space.
+
+We can also specify the number of grid rows for our Tile Manager using the `row-count` property. Again, if the number is less than one or the property is not set, the Tile Manager will create as many rows as needed.
 
 ```html
-<igc-tile-manager column-count="2">
+<igc-tile-manager column-count="2" row-count="2">
   <igc-tile>
     <span slot="title">Tile 1 header</span>
     <p>Content for Tile 1</p>
@@ -83,7 +85,7 @@ We can specify the number of grid columns for our Tile Manager. To do this, simp
 </igc-tile-manager>
 ```
 
-In this code snippet, setting the `column-count` property to 2 will arrange all the tiles in the Tile Manager into 2 columns.
+In this code snippet, the tiles in the Tile Manager will be arranged into 2 rows and 2 columns.
 
 ### Gap
 
@@ -108,7 +110,7 @@ Another property that can be used in the Tile Manager is the `gap` property, whi
 We also have properties for setting the minimum width of the columns (`min-column-width`) and the minimum height of the rows (`min-row-height`) in the Tile Manager. Similar to the gap property, the values for these properties must be a number followed by a length unit. These values will define the minimum width for all columns and the minimum height for all rows in the Tile Manager.
 
 ```html
-<igc-tile-manager min-column-widt="200px" min-row-height="150px">
+<igc-tile-manager min-column-width="200px" min-row-height="150px">
   <igc-tile>
     <span slot="title">Tile 1 header</span>
     <p>Content for Tile 1</p>
@@ -123,7 +125,7 @@ We also have properties for setting the minimum width of the columns (`min-colum
 
 ### Example
 
-`sample="/layouts/tile-manager/columngap", height="583", alt="{Platform} Tile Manager Column Example"`
+`sample="/layouts/tile-manager/columngap", height="631", alt="{Platform} Tile Manager Column Example"`
 
 ## Tile component
 
@@ -190,7 +192,7 @@ In this example, we created custom action buttons using the Ignite UI Icon Butto
 
 ## Resizing
 
-Resizing in the tile manager is a functionality that allows tiles to be resized using three different resize adorners.
+Resizing in the Tile Manager is a functionality that allows tiles to be resized using three different resize adorners.
 
 - **Side Adorner**: Adjusts the width by modifying the column span.
 - **Bottom Adorner**: Adjusts the height by modifying the row span.
@@ -199,6 +201,8 @@ Resizing in the tile manager is a functionality that allows tiles to be resized 
 To ensure smooth resizing, a ghost element is used instead of directly modifying the tile’s dimensions. This element appears on top of the original tile, displaying its current dimensions when resizing begins, and it updates in real time as the user drags any of the resize handles.
 
 > [!Note] If the ghost element exceeds the available grid space, it will automatically adjust to the largest possible span within the grid's limits.
+
+The Tile Manager automatically rearranges itself when a tile changes size, ensuring that there is minimal empty space. That's why expanding a tile may push adjacent tiles into new positions, while shrinking creates gaps that other tiles may fill dynamically. This ensures that the Tile Manager stays as compact as possible, without any overlapping tiles, and that all movements remain within the defined grid structure.
 
 We can use the `resize-mode` property to control how resizing is applied in the Tile Manager. It can be set to either `hover` or `always`, which determines when the resize adorners are visible.
 
@@ -222,7 +226,7 @@ You can see the difference between the two states in the example below:
 There are several constraints and limitations in the resizing process:
 
 - A tile cannot be resized smaller than its defined minimum width or height (minColWidth, minRowHeight).
-- A tile cannot exceed the maximum available space in the grid. If a tile starts at a specific column or row, and the user tries to resize it beyond the visible grid area, it will only expand up to the maximum available columns or rows from its starting position.
+- A tile cannot exceed the maximum available horizontal space in the grid.
 
 ## Reorder
 
@@ -254,8 +258,8 @@ Similar to resizing, when you initiate the drag-and-drop process, a ghost elemen
 
 The Tile Manager provides methods that help manage the layout of tiles:
 
-- The `saveLayout` method allows you to save the current arrangement of tiles in the Tile Manager, it captures the current order and positions of all tiles, so you can later restore it to this exact configuration.
-- The `loadLayout` method enables you to load a previously saved layout. When called, it restores the Tile Manager to the exact state it was in when the layout was saved, including the order and positions of the tiles.
+- The `saveLayout` method allows you to save the current arrangement of tiles in the Tile Manager, it captures the current order, size and position of all tiles, so you can later restore it to this exact configuration.
+- The `loadLayout` method enables you to load a previously saved layout. When called, it restores the Tile Manager to the exact state it was in when the layout was saved, including the order, size and position of the tiles.
 
 `sample="/layouts/tile-manager/layout", height="525", alt="{Platform} Tile Manager Layout Example"`
 
@@ -276,7 +280,7 @@ The `Tile` component exposes several CSS properties we can use:
 | `trigger` | The diagonal adorner |
 | `trigger-bottom` | The vertical adorner. |
 
-Using these CSS parts you can customize the appearance of the three components as follows:
+Using these CSS parts you can customize the appearance of the two components as follows:
 
 ```css
 igc-tile-manager::part(base) {
