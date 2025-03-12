@@ -12,6 +12,41 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 * As of version 2024.2, the Ignite UI for Blazor toolset supports .NET 9. For more information on .NET 9 please refer to [this article on Microsoft's site](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/overview).
 
+## **{PackageVerChanges-24-2-FEB}**
+
+### Enhancements
+
+#### Toolbar
+
+- Added new `GroupHeaderTextStyle` property to `Toolbar` and `ToolPanel`. If set, it will apply to all `ToolActionGroupHeader` actions.
+- Added new property on `ToolAction` called `TitleHorizontalAlignment` which controls the horizontal alignment of the title text.
+- Added new property on `ToolActionSubPanel` called `ItemSpacing` which controls the spacing between items inside the panel.
+
+### Bug Fixes
+
+The following table lists the bug fixes made for the {ProductName} toolset for this release:
+
+| Bug Number | Control | Description      |
+|------------|---------|------------------|
+|26218|Excel Library|Chart's plot area right margin becomes narrower and fill pattern and fill foreground are gone just by loading an Excel file|
+|29998|IgbCombo|The Change event callback was fired multiple times in .NET 8|
+|30286|IgbDataChart|Bubble Series tooltip content is switched to that of nearby bubble data in clicking a bubble|
+|31344|IgbGrid|Two way binding for the SelectedRows doesn't work|
+|32906|IgbDataChart|IgbDataChart is showing two xAxis on the top|
+|33605|IgbDataChart|ScatterLineSeries is not showing the color of the line correctly in the legend|
+|34053|IgbRadialGauge|The position of the scale label is shifted|
+|34083|Excel Library|TextOperatorConditionalFormat's is not loaded/saved properly if the text contains = in a template Excel file|
+|34149|IgbGrid|Repeatedly showing and hiding the IgbGrid causes memory leakage in JS Heap|
+|34224|IgbGrid|'There are multiple .NET runtimes present' error is thrown when the app changes from Server mode to WebAssembly mode if 'InteractiveAuto' is used for the rendermode|
+|34654|IgbGrid|NullReferenceException is thrown if a data contains an empty list|
+|34776|IgbDataChart|Repeatedly showing and hiding the IgbDataChart causes memory leakage in JS Heap|
+|35439|IgbGrid|CPU usage and Memory consumption are abnormally high when the app is opened in multiple tabs|
+|35495|Excel Library|Pictures in cells are lost when a template file is loaded|
+|35498|IgbDataChart|Tooltips for the series specified in IncludedSeries are not displayed|
+|36024|IgbGrid|The JS heap size never reduced when moving back and forth between two pages with IgbGrid component|
+|36176|Excel Library|Exception occurs when loading an Excel workbook that has a LET function|
+|36379|Excel Library|Colors with any alpha channel in an excel workbook fail to load|
+
 ## **{PackageVerChanges-24-2-JAN}**
 
 - Bug Fixes

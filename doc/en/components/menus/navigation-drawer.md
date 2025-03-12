@@ -439,30 +439,30 @@ And here's the result:
 
 
 
-## Styling the Navigation Drawer
+## Styling
 
-The navigation drawer component exposes several CSS parts - `base`, `main`, and `mini`. The navigation drawer item component exposes three CSS parts as well - `base`, `icon` and `content`, giving you full control over their styling.
+The `NavDrawer` exposes several CSS parts - `base`, `main`, and `mini`, giving you full control over their styling.
 
 ```scss
 igc-nav-drawer::part(base) {
-    background: #2d313a;
+  background: var(--ig-secondary-500);
 }
 
 igc-nav-drawer-item::part(base) {
-    color: #fff;
+  color: var(--ig-secondary-500-contrast);
 }
 
 igc-nav-drawer-item::part(base):hover {
-    background-color: #3D4149;
+  background-color: var(--ig-gray-800);
 }
 
 igc-nav-drawer-item[active]::part(base) {
-    background: #f3c03e;
-    color: #2c2c2c
+  background: var(--ig-warn-500);
+  color: var(--ig-warn-500-contrast);
 }
 
 igc-nav-drawer-header-item {
-    color: #f3c03e
+  color: var(--ig-warn-500);
 }
 ```
 
@@ -478,6 +478,7 @@ igc-nav-drawer-header-item {
  - `Navbar`
  - `RadioGroup`
  - `Radio`
+ - [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
