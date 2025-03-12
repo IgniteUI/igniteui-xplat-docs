@@ -23,14 +23,14 @@ Examples:
 ```css
 /* Set the border-radius for all components to 50% of their default value. */
 :root {
-    --ig-radius-factor: .5;
+  --ig-radius-factor: .5;
 }
 ```
 
 ```css
 /* Set the border-radius of the button component to 0. */
 igc-button {
-    --ig-radius-factor: 0;
+  --ig-radius-factor: 0;
 }
 ```
 
@@ -41,7 +41,7 @@ Similar to the global radius, some components define internal elevation(box-shad
 ```css
 /* Set the elevation for all components to 50% of their original box-shadow values. */
 :root {
-    --ig-elevation-factor: .5;
+  --ig-elevation-factor: .5;
 }
 ```
 
@@ -55,7 +55,7 @@ Example:
 
 ```css
 :root {
-    --ig-size: var(--ig-size-small);
+  --ig-size: var(--ig-size-small);
 }
 ```
 
@@ -63,7 +63,7 @@ Alternatively, if you want to target only a specific component, scope the variab
 
 ```css
 igc-avatar {
-    --ig-size: var(--ig-size-medium);
+  --ig-size: var(--ig-size-medium);
 }
 ```
 
@@ -80,7 +80,7 @@ Example:
 ```css
 /* Increase the spacing for all components to 150%. */
 :root {
-    --ig-spacing: 1.5;
+  --ig-spacing: 1.5;
 }
 ```
 
@@ -89,7 +89,7 @@ To change the spacing for a single component only, scope the variable to the com
 ```css
 /* Reduce the spacing for the drop-down elements to 50% of their original value. */
 igc-dropdown {
-    --ig-spacing: 0.5;
+  --ig-spacing: 0.5;
 }
 ```
 

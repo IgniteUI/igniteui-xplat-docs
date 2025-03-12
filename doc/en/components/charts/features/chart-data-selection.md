@@ -74,11 +74,7 @@ The matcher is ideal for using in charts, such as the `CategoryChart` when you d
    
 For example, if you datasource has numeric properties Nuclear, Coal, Oil, Solar then you know there are series created for each of these properties. If you want to select the series bound to Solar values, you can add a ChartSelection object to the SelectedSeriesItems collection using a matcher with the following properties set.
 
-<!-- Blazor -->
-
  `sample="/charts/category-chart/selection-matcher", height="500", alt="{Platform} Selection Matcher"`
-
-<!-- end: Blazor -->
 
 ## API References
 

@@ -251,8 +251,8 @@ IgbIcon IconName="search" Collection="material" Mirrored="true" />
 
 ```css
 igc-icon {
-  --size: 48px;
-  color: olive;
+  --size: 28px;
+  color: var(--ig-primary-500);
 }
 ```
 
@@ -262,6 +262,7 @@ igc-icon {
 
  - `Icon`
  - `RegisterIcon`
+ - [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 

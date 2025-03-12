@@ -101,28 +101,27 @@ IgrNavbarModule.register();
 
 ## スタイル設定
 
-Navigation Bar コンポーネントは、いくつかの CSS パーツ (`base`、`start`、`middle` および `end`) を公開して、スタイルを完全に制御できるようにします。
+`NavBar` コンポーネントはいくつかの CSS パーツを公開し、スタイルを完全に制御できるようにします。
+
+|名前|説明|
+|--|--|
+| `base` | タナビゲーション バーの基本ラッパー。 |
+| `start` | 左揃えのアイコン コンテナー。 |
+| `middle` | ナビゲーション バーのタイトル コンテナー。 |
+| `end` | 右揃えのアクション アイコン コンテナー。 |
 
 ```css
 igc-icon {
-    color: currentColor;
+  color: var(--ig-primary-500);
 }
 
 igc-navbar {
-    background-color: #232121
-}
-
-igc-navbar::part(start) {
-    color: #f23269;
+  background-color: var(--ig-secondary-200);
 }
 
 igc-navbar::part(middle) {
-    font-family: Titillium Web,sans-serif;
-    color: #e9e8ea
-}
-
-igc-navbar::part(end) {
-    color: #e9e8ea
+  font-family: Titillium Web, sans-serif;
+  color: var(--ig-primary-500);;
 }
 ```
 
@@ -135,9 +134,9 @@ igc-navbar::part(end) {
 
 ## API リファレンス
 
- - `End`
  - `Icon`
  - `Navbar`
+ - [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 

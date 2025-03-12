@@ -192,17 +192,25 @@ igc-avatar {
 
 ### スタイル設定
 
-アバター コンポーネントは、すべてのスタイル プロパティを変更するために使用できる `base` パーツを公開します。
+`Avatar` コンポーネントはいくつかの CSS パーツを公開し、スタイルを完全に制御できるようにします。
+
+|名前|説明|
+|--|--|
+| `base` | アバターの基本ラッパー。 |
+| `initials` | アバターのイニシャル ラッパー。 |
+| `image` | アバターの画像ラッパー。 |
+| `icon` | アバターのアイコン ラッパー。 |
 
 ```css
 igc-avatar::part(base) {
-  --size: 72px;
-  color: olive;
-  background: beige;
+  --size: 60px;
+  color: var(--ig-success-500-contrast);
+  background: var(--ig-success-500);;
   border-radius: 20px;
 }
 ```
 
+`sample="/layouts/avatar/styling", height="80", alt="{Platform} Avatar の例"`
 
 <div class="divider--half"></div>
 
@@ -210,6 +218,7 @@ igc-avatar::part(base) {
 ## API リファレンス
 
  - `Avatar`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 

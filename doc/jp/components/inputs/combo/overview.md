@@ -324,11 +324,9 @@ comboRef.current.deselect([cities[1], cities[5]]);
 - <kbd>Enter</kbd> キーを使用すると、アクティブな項目が選択され、オプションのリストが閉じます。
 - <kbd>Esc</kbd> または <kbd>Tab/Shift</kbd> + <kbd>Tab</kbd> キーを使用すると、オプションのリストが閉じます。
 
-## コンボのスタイル設定
+## スタイル設定
 
-{ProductName} `Combo` コンポーネントとその項目の外観は、以下に示す公開 CSS パーツを使用して変更できます。
-
-### CSS パーツ
+`Combo` コンポーネントとその項目の外観は、以下に示す公開 CSS パーツを使用して変更できます。
 
 | パーツ名            | 説明                                                                     |
 | -------------------- | ------------------------------------------------------------------------------- |
@@ -353,15 +351,36 @@ comboRef.current.deselect([cities[1], cities[5]]);
 | `checked`            | チェックボックスがチェックされている場合に、チェックボックス パーツ リストに追加されます。                      |
 | `header`             | ヘッダー コンテンツを保持するコンテナー。                                       |
 | `footer`             | フッター コンテンツを保持するコンテナー。                                      |
-| `empty`              | 空のコンテンツを保持するコンテナ。                                       |
+| `empty`              | 空のコンテンツを保持するコンテナー。                                       |
+
+CSS パーツを使用すると、コンボのスタイルを完全に制御できます。
+
+```css
+igc-combo::part(search-input) {
+  background-color: var(--ig-gray-100);
+  border-radius: 2px;
+}
+
+igc-combo::part(input) {
+  background-color: var(--ig-gray-100);
+}
+
+igc-combo::part(prefix) {
+  background-color: var(--ig-secondary-50);
+  color: var(--ig-primary-500);
+}
+
+igc-combo::part(toggle-icon) {
+  color: var(--ig-primary-500);
+}
+```
 
 `sample="/inputs/combo/styling", height="400", alt="{Platform} Combo スタイル設定の例"`
 
-
-
 ## API リファレンス
 
-* `Combo`
+- `Combo`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 

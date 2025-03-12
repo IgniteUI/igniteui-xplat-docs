@@ -1809,7 +1809,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "概要",
     "href": "themes/overview.md",
     "status": ""
