@@ -13,7 +13,7 @@ The {Platform} Tile Manager component enables the display of content in individu
 
 The following {ProductName} Tile Manager Example shows the component in action. 
 
-`sample="/layouts/tile-manager/overview", height="743", alt="{Platform} Tile Manager Example"`
+`sample="/layouts/tile-manager/overview", height="752", scrollable, alt="{Platform} Tile Manager Example"`
 
 > [!Warning] Due to the iframe permissions policy, the fullscreen button in this example will only work when the example is opened in standalone mode by clicking the 'Expand to fullscreen' button in the top-right corner.
 
