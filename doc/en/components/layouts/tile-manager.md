@@ -264,7 +264,7 @@ The Tile Manager provides methods that help manage the layout of tiles:
 - The `saveLayout` method allows you to save the current arrangement of tiles in the Tile Manager, it captures the current order, size and position of all tiles, so you can later restore it to this exact configuration.
 - The `loadLayout` method enables you to load a previously saved layout. When called, it restores the tiles to the exact state they were in when the layout was saved, including their order, size and position.
 
-`sample="/layouts/tile-manager/layout", height="525", alt="{Platform} Tile Manager Layout Example"`
+`sample="/layouts/tile-manager/layout", height="527", alt="{Platform} Tile Manager Layout Example"`
 
 ## Styling
 
@@ -302,16 +302,28 @@ igc-tile::part(title) {
   color: var(--ig-primary-400);
 }
 
-igc-tile::part(trigger-side), igc-tile::part(trigger-bottom) {
+igc-tile:nth-child(n+2)::part(trigger-side), 
+igc-tile:nth-child(n+2)::part(trigger-bottom) {
   background-color: var(--ig-success-500);
 }
 
-igc-tile::part(trigger) {
+igc-tile:nth-child(n+2)::part(trigger) {
   background-color: var(--ig-error-500);
 }
 ```
 
-`sample="/layouts/tile-manager/styling", height="479", alt="{Platform} Tile Manager Styling Example"`
+You can also change the icon of the adorners to a custom one using the `side-adorner`, `corner-adorner`, and `bottom-adorner` slots. To do this, create an `igc-icon` element inside the tile element. Then, set its slot to one of the three adorners and specify the name of the icon you want to use.
+
+```html
+<igc-tile>
+  <igc-icon slot="side-adorner" class="side" name="indicator"></igc-icon>
+  <igc-icon slot="corner-adorner" class="corner" name="indicator"></igc-icon>
+  <igc-icon slot="bottom-adorner" class="bottom" name="indicator"></igc-icon>
+  <span slot="title">Tile header</span>
+</igc-tile>
+```
+
+`sample="/layouts/tile-manager/styling", height="481", alt="{Platform} Tile Manager Styling Example"`
 
 ## API References
 
