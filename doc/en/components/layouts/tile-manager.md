@@ -7,7 +7,7 @@ mentionedTypes: ["TileManager"]
 
 # {Platform} Tile Manager Overview
 
-The `igc-tile-manager` component enables the display of content in individual tiles. It allows users to interact with these tiles by rearranging and resizing them, giving them the freedom to customize the layout and appearance of the content according to their preferences. This flexibility enhances the user experience by enabling a more personalized and efficient way to view and manage content.
+The {Platform} Tile Manager component enables the display of content in individual tiles. It allows users to interact with these tiles by rearranging and resizing them, giving them the freedom to customize the layout and appearance of the content according to their preferences. This flexibility enhances the user experience by enabling a more personalized and efficient way to view and manage content.
 
 ## {Platform} Tile Manager Example
 
@@ -135,6 +135,8 @@ The Tile component has properties that can be set individually for each tile. So
 - The `row-span` property determines how many rows the tile will span vertically, adjusting the tile's height within the layout.
 - The `col-start` property specifies the starting column where the tile is placed.
 - The `row-start` property specifies the starting row where the tile is placed.
+- The `disable-fullscreen` property hides the default fullscreen action button.
+- The `disable-maximize` property hides the default maximize toggle action button.
 - The `disable-resize` property prevents the tile from being resized by the user.
 
 ```html
@@ -173,12 +175,13 @@ By default, the header section includes two action buttons:
 
 <img src="../../images/tile-manager-actions.png" />
 
-If you want to display just one of the two buttons, you can set it as a slot attribute within the Tile component. Use the `maximize-action` value to show only the maximize button, or the `fullscreen-action` value to show only the fullscreen button.
+If you want to display just one of the two buttons, you can set either `disable-maximize` or `disable-fullscreen` property. To customize the appearance you can use the `maximize-action` slot for the maximize button, or the `fullscreen-action` slot for the fullscreen button.
 
 ```html
 <igc-tile-manager>
-  <igc-tile>
-    <div slot="maximize-action"></div>
+  <igc-tile disable-fullscreen>
+    <igc-icon-button slot="maximize-actions" name="north_east" collection="material">
+    </igc-icon-button>
     <p>Content for Tile 1</p>
   </igc-tile>
 </igc-tile-manager>
@@ -204,7 +207,7 @@ To ensure smooth resizing, a ghost element is used instead of directly modifying
 
 The Tile Manager automatically rearranges itself when a tile changes size, ensuring that there is minimal empty space. That's why expanding a tile may push adjacent tiles into new positions, while shrinking creates gaps that other tiles may fill dynamically. This ensures that the Tile Manager stays as compact as possible, without any overlapping tiles, and that all movements remain within the defined grid structure.
 
-We can use the `resize-mode` property to control how resizing is applied in the Tile Manager. It can be set to either `hover` or `always`, which determines when the resize adorners are visible.
+We can use the `resize-mode` property to control how resizing is applied in the Tile Manager. It can be set to `none`, `hover` or `always`, which determines when the resize adorners are visible. The default value is `none` and the tile could not be resized.
 
 ```html
 <igc-tile-manager resize-mode='hover'>
@@ -217,7 +220,7 @@ We can use the `resize-mode` property to control how resizing is applied in the 
 </igc-tile-manager>
 ```
 
-You can see the difference between the two states in the example below:
+You can see the difference between the three states in the example below:
 
 `sample="/layouts/tile-manager/resize", height="522", alt="{Platform} Tile Manager Resize Example"`
 
@@ -259,7 +262,7 @@ Similar to resizing, when you initiate the drag-and-drop process, a ghost elemen
 The Tile Manager provides methods that help manage the layout of tiles:
 
 - The `saveLayout` method allows you to save the current arrangement of tiles in the Tile Manager, it captures the current order, size and position of all tiles, so you can later restore it to this exact configuration.
-- The `loadLayout` method enables you to load a previously saved layout. When called, it restores the Tile Manager to the exact state it was in when the layout was saved, including the order, size and position of the tiles.
+- The `loadLayout` method enables you to load a previously saved layout. When called, it restores the tiles to the exact state they were in when the layout was saved, including their order, size and position.
 
 `sample="/layouts/tile-manager/layout", height="525", alt="{Platform} Tile Manager Layout Example"`
 
