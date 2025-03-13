@@ -69,10 +69,8 @@ For a complete introduction to the {ProductName}, read the [*Getting Started*](.
 
 We can specify the number of grid columns for our Tile Manager. To do this, simply set the `column-count` property to the desired number of columns. If the number is less than one or the property is not set, the Tile Manager will create as many columns as can fit, with each column being at least 200px wide and expanding to equally share the available space. When the viewport dimensions change, the tiles will also rearrange themselves to maximize the use of space.
 
-We can also specify the number of grid rows for our Tile Manager using the `row-count` property. Again, if the number is less than one or the property is not set, the Tile Manager will create as many rows as needed.
-
 ```html
-<igc-tile-manager column-count="2" row-count="2">
+<igc-tile-manager column-count="2">
   <igc-tile>
     <span slot="title">Tile 1 header</span>
     <p>Content for Tile 1</p>
@@ -81,11 +79,15 @@ We can also specify the number of grid rows for our Tile Manager using the `row-
     <span slot="title">Tile 2 header</span>
     <p>Content for Tile 2</p>
   </igc-tile>
+  <igc-tile>
+    <span slot="title">Tile 3 header</span>
+    <p>Content for Tile 3</p>
+  </igc-tile>
   ...
 </igc-tile-manager>
 ```
 
-In this code snippet, the tiles in the Tile Manager will be arranged into 2 rows and 2 columns.
+In this code snippet, the three tiles in the Tile Manager will be arranged into 2 rows and 2 columns.
 
 ### Gap
 
