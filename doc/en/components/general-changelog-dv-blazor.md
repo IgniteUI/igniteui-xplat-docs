@@ -12,6 +12,19 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 * As of version 2024.2, the Ignite UI for Blazor toolset supports .NET 9. For more information on .NET 9 please refer to [this article on Microsoft's site](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/overview).
 
+## **{PackageVerChanges-24-2-MAR}**
+
+### {PackageGrids}
+
+- **All Grids** 
+  - Added new `DisabledSummaries` for the columns of the grid, allowing the developers to skip some of the summaries
+  - Encapsulate internal grid action button
+
+### Bug Fixes
+| Bug Number | Control | Description      |
+|------------|---------|------------------|
+|35497|IgbDialog|When ShowAsync and HideAsync Are Called, the Subsequent Code Is Not Executed|
+
 ## **{PackageVerChanges-24-2-FEB}**
 
 ### Enhancements
@@ -46,6 +59,7 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 |36024|IgbGrid|The JS heap size never reduced when moving back and forth between two pages with IgbGrid component|
 |36176|Excel Library|Exception occurs when loading an Excel workbook that has a LET function|
 |36379|Excel Library|Colors with any alpha channel in an excel workbook fail to load|
+
 
 ## **{PackageVerChanges-24-2-JAN}**
 
