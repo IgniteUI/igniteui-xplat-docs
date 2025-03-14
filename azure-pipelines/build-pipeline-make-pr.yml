@@ -8,7 +8,7 @@ schedules:
   displayName: 'Weekly build with automated PR creation'
   branches:
     include:
-    - master
+#   - master    # MT: prevent generating auto PRs targeting master branch in angular docs 
     - vnext
   always: true
 
