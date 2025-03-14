@@ -1489,7 +1489,7 @@
     "exclude": ["Angular"],
     "name": "Dock Manager",
     "href": "layouts/dock-manager.md",
-    "status": "",
+    "status": "UPDATED",
     "items": [
       {
         "exclude": ["Angular"],
