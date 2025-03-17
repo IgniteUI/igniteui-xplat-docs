@@ -226,6 +226,12 @@ You can see the difference between the three states in the example below:
 
 `sample="/layouts/tile-manager/resize", height="522", alt="{Platform} Tile Manager Resize Example"`
 
+### Snapping
+
+Tiles resize in full grid units, meaning they can only grow or shrink by whole columns or rows. The ghost element snaps to the next column or row when expanding past the halfway point and to the previous one when shrinking past the halfway mark. This applies to all adorners (bottom, side and corner), ensuring tiles always stay aligned to the grid.
+
+Grid gaps are also considered, keeping the layout consistent during resizing.
+
 ### Limitations
 
 There are several constraints and limitations in the resizing process:
