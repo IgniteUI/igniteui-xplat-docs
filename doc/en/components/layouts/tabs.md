@@ -164,7 +164,7 @@ Each tab has default slot to display information - icon, text or both and `prefi
 
 ## Styling
 
-The `Tabs` component exposes CSS parts for all of its elements:
+The `Tabs` component exposes several CSS parts, giving you full control over its style:
 
 | Name | Description |
 |--|--|
@@ -181,28 +181,31 @@ The `Tab` component exposes the following CSS parts:
 
 |Name|Description|
 |--|--|
-| `base` | The base wrapper of the tab header. |
+| `content` | The content wrapper. |
 | `prefix` | The prefix wrapper. |
 | `suffix` | The suffix wrapper. |
 
 ```css
-igc-tabs::part(selected-indicator) {
-    background: #ecaa53;
+igc-tabs::part(headers-content) {
+  background-color: var(--ig-gray-200);
 }
 
-igc-tab::part(base) {
-    background: #ffe6cc;
+igc-tab::part(content) {
+  color: var(--ig-success-500);
 }
 ```
 
+`sample="/layouts/tabs/styling", height="150", alt="Tabs Styling Example"`
+
 ## API Reference
 
-* `Tabs`
-* `Tab`
-* `TabPanel`
-* `Icon`
-* `IconButton`
-* `RadioGroup`
+- `Tabs`
+- `Tab`
+- `TabPanel`
+- `Icon`
+- `IconButton`
+- `RadioGroup`
+- [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources

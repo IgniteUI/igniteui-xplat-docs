@@ -322,32 +322,36 @@ You can use the `name` and `value` attributes when using the radio with `Form`.
 
 ## Styling
 
-The `Radio` component exposes several CSS parts (`base`, `control`, and `label`) to give you full control over its styling. You can also modify the global palette colors to change the colors of the radio component:
+The `Radio` component exposes several CSS parts (`base`, `control`, and `label`) to give you full control over its styling.
 
-```scss
-:root {
-    --ig-primary-h: 60deg;
-    --ig-primary-s: 100%;
-    --ig-primary-l: 25%;
+```css
+igc-radio::part(control) {
+  --size: 18px;
 }
 
-igc-radio::part(control) {
-    --size: 18px;
+igc-radio-group {
+  padding: 12px;
+}
+
+igc-radio::part(checked)::after {
+  background-color: var(--ig-success-500);
+}
+
+igc-radio::part(label) {
+  color: var(--ig-secondary-800);
 }
 ```
 
 `sample="/inputs/radio/styling", height="205", alt="{Platform} Radio Styling"`
-
-
 
 <div class="divider--half"></div>
 
 
 ## API References
 
- - `Form`
  - `RadioGroup`
  - `Radio`
+ - [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources

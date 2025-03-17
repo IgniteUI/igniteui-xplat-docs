@@ -426,30 +426,33 @@ The result of implementing the above code should look like the following:
 
 `sample="/grids/list/overview", height="300", alt="{Platform} List Example"`
 
-
-
 ## Styling
 
-You can change the appearance of our list, by using some of the exposed CSS parts - `title`, `subtitle` and `end`.
+The `List` exposes several CSS parts, giving you full control over its style:
+
+|Name|Description|
+|--|--|
+| `start` | The start container. |
+| `end` | The end container. |
+| `content` | The header and custom content container. |
+| `header` | The title and subtitle container. |
+| `title` | The title container. |
+| `subtitle` | The subtitle container. |
 
 ```css
 igc-list-header {
-    font-size: 20px;
-    font-weight: 700;
-    color: #3f51b5;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ig-primary-700);
 }
 
 igc-list-item::part(title) {
-    font-size: 18px;
-    color: #3f51b5;
+  font-size: 18px;
+  color: var(--ig-primary-600);
 }
 
 igc-list-item::part(subtitle) {
-    color: #0099ff;
-}
-
-igc-list-item::part(end) {
-    --ig-secondary-500: 230,48%,47%;
+  color: var(--ig-primary-300);
 }
 ```
 
@@ -468,6 +471,7 @@ In this article we covered a lot of ground with the `List` component. First, we 
  - `ListHeader`
  - `ListItem`
  - `List`
+ - [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

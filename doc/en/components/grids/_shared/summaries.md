@@ -1009,6 +1009,128 @@ When a default summary is defined, the height of the summary area is calculated 
 
 `sample="/{ComponentSample}/data-summary-template", height="650", alt="{Platform} {ComponentTitle} data summary template"`
 
+## Disabled Summaries
+
+<!-- WebComponents -->
+The `disabled-summaries` property provides precise per-column control over the {Platform} {ComponentTitle} summary feature. This property enables users to customize the summaries displayed for each column in the {ComponentName}, ensuring that only the most relevant and meaningful data is shown. For example, you can exclude specific summary types, such as `['count', 'min', 'max']` by specifying their summary keys in an array.
+<!-- end: WebComponents -->
+
+<!-- React -->
+The `disabledSummaries` property provides precise per-column control over the {Platform} {ComponentTitle} summary feature. This property enables users to customize the summaries displayed for each column in the {ComponentName}, ensuring that only the most relevant and meaningful data is shown. For example, you can exclude specific summary types, such as `['count', 'min', 'max']` by specifying their summary keys in an array.
+<!-- end: React -->
+
+<!-- Blazor -->
+The `DisabledSummaries` property provides precise per-column control over the {Platform} {ComponentTitle} summary feature. This property enables users to customize the summaries displayed for each column in the {ComponentName}, ensuring that only the most relevant and meaningful data is shown. For example, you can exclude specific summary types, such as `['count', 'min', 'max']` by specifying their summary keys in an array.
+<!-- end: Blazor -->
+
+<!-- WebComponents, React, Blazor -->
+This property can also be modified **dynamically at runtime** through code, providing flexibility to adapt the {ComponentName}'s summaries to changing application states or user actions.
+<!-- end: WebComponents, React, Blazor -->
+
+<!-- WebComponents -->
+The following examples illustrate how to use the `disabled-summaries` property to manage summaries for different columns and exclude specific default and custom summary types in the {Platform} {ComponentTitle}:
+<!-- end: WebComponents -->
+
+<!-- React -->
+The following examples illustrate how to use the `disabledSummaries` property to manage summaries for different columns and exclude specific default and custom summary types in the {Platform} {ComponentTitle}:
+<!-- end: React -->
+
+<!-- Blazor -->
+The following examples illustrate how to use the `DisabledSummaries` property to manage summaries for different columns and exclude specific default and custom summary types in the {Platform} {ComponentTitle}:
+<!-- end: Blazor -->
+
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
+<!-- WebComponents -->
+```html
+<!-- Disable default summaries -->
+<igc-column
+    field="UnitPrice"
+    header="Unit Price"
+    data-type="number"
+    has-summary="true"
+    disabled-summaries="['count', 'sum', 'average']"
+>
+</igc-column>
+
+<!-- Disable custom summaries -->
+<igc-column
+    field="UnitsInStock"
+    header="Units In Stock"
+    data-type="number"
+    has-summary="true"
+    summaries="discontinuedSummary"
+    disabled-summaries="['discontinued', 'totalDiscontinued']"
+>
+</igc-column>
+```
+<!-- end: WebComponents -->
+<!-- React -->
+```tsx
+<!-- Disable default summaries -->
+<IgrColumn
+    field="UnitPrice"
+    header="Unit Price"
+    dataType="number"
+    hasSummary={true}
+    disabledSummaries="['count', 'sum', 'average']"
+/>
+
+<!-- Disable custom summaries -->
+<IgrColumn
+    field="UnitsInStock"
+    header="Units In Stock"
+    dataType="number"
+    hasSummary={true}
+    summaries={discontinuedSummary}
+    disabledSummaries="['discontinued', 'totalDiscontinued']"
+/>
+```
+<!-- end: React -->
+
+<!-- Blazor -->
+```razor
+<!-- Disable default summaries -->
+<IgbColumn 
+    Field="UnitPrice" 
+    Header="Unit Price" 
+    DataType="GridColumnDataType.Number"
+    HasSummary="true" 
+    DisabledSummaries="['count', 'sum', 'average']" />
+
+<!-- Disable custom summaries -->
+<IgbColumn 
+    Field="UnitsInStock" 
+    Header="Units In Stock" 
+    DataType="GridColumnDataType.Number"
+    HasSummary="true" 
+    Summaries="discontinuedSummary" 
+    DisabledSummaries="['discontinued', 'totalDiscontinued']" />
+```
+<!-- end: Blazor -->
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
+
+For `UnitPrice`, default summaries like `count`, `sum`, and `average` are disabled, leaving others like `min` and `max` active.
+
+<!-- WebComponents -->
+For `UnitsInStock`, custom summaries such as `discontinued` and `totalDiscontinued` are excluded using the `disabled-summaries` property.
+
+At runtime, summaries can also be dynamically disabled using the `disabled-summaries` property. For example, you can set or update the property on specific columns programmatically to adapt the displayed summaries based on user actions or application state changes.
+<!-- end: WebComponents -->
+
+<!-- React -->
+For `UnitsInStock`, custom summaries such as `discontinued` and `totalDiscontinued` are excluded using the `disabledSummaries` property.
+
+At runtime, summaries can also be dynamically disabled using the `disabledSummaries` property. For example, you can set or update the property on specific columns programmatically to adapt the displayed summaries based on user actions or application state changes.
+<!-- end: React -->
+
+<!-- Blazor -->
+For `UnitsInStock`, custom summaries such as `discontinued` and `totalDiscontinued` are excluded using the `DisabledSummaries` property.
+
+At runtime, summaries can also be dynamically disabled using the `DisabledSummaries` property. For example, you can set or update the property on specific columns programmatically to adapt the displayed summaries based on user actions or application state changes.
+<!-- end: Blazor -->
+
+`sample="/{ComponentSample}/disabled-summaries", height="750", alt="{Platform} {ComponentTitle} disabled summaries"`
+
 <!-- Angular, WebComponents, React -->
 ## Formatting summaries
 By default, summary results, produced by the built-in summary operands, are localized and formatted according to the grid `Locale` and column `PipeArgs`. When using custom operands, the `Locale` and `PipeArgs` are not applied. If you want to change the default appearance of the summary results, you may format them using the `SummaryFormatter` property.

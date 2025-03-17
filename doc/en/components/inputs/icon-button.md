@@ -9,7 +9,7 @@ mentionedTypes: ["IconButton", "ButtonBase", "Button", "Icon"]
 
 The {ProductName} Icon Button component allows developers to use registered icons as buttons in their application. It carries all features of the [icon](../layouts/icon.md) component but adds features from the [button](button.md) component as well.
 
-# {Platform} Icon Button Example
+## {Platform} Icon Button Example
 
 `sample="/inputs/icon-button/size", height="100", alt="{Platform} Icon Button Example"`
 
@@ -167,16 +167,17 @@ Some icons need to look a little different when used in Right-to-Left(RTL) mode.
 
 ## Styling
 
-The icon button component exposes two CSS parts - `base` and `icon` that allow you to style the wrapping element (`<button>` or `<a>`) and the wrapped `<igc-icon>` element;
+The `IconButton` component exposes two CSS parts - `base` and `icon` that allow you to style the wrapping element (`<button>` or `<a>`) and the wrapped `<igc-icon>` element.
 
 ```css
-igc-icon-button::part(base) {
+igc-icon-button[variant="contained"]:not([disabled])::part(base) {
   padding: 12px;
-  color: olive;
+  background-color: var(--ig-success-500);
 }
 
 igc-icon-button::part(icon) {
-  --size: 32px;
+  --size: 22px;
+  color: var(--ig-success-500-contrast);
 }
 ```
 
@@ -189,6 +190,7 @@ igc-icon-button::part(icon) {
  - `Button`
  - `IconButton`
  - `Icon`
+ - [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources

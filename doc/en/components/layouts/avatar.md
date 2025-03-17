@@ -181,7 +181,7 @@ Apart from the shape, the size of the avatar can also be changed by utilizing th
 
 ```css
 igc-avatar {
-    --ig-size: var(--ig-size-large);
+  --ig-size: var(--ig-size-large);
 }
 ```
 
@@ -191,17 +191,25 @@ igc-avatar {
 
 ### Styling
 
-The avatar component exposes a `base` part that can be used to change all of its style properties.
+The `Avatar` component exposes several CSS parts, giving you full control over its style:
+
+|Name|Description|
+|--|--|
+| `base` | The base wrapper of the avatar. |
+| `initials` | The initials wrapper of the avatar. |
+| `image` | The image wrapper of the avatar. |
+| `icon` | The icon wrapper of the avatar. |
 
 ```css
 igc-avatar::part(base) {
-  --size: 72px;
-  color: olive;
-  background: beige;
+  --size: 60px;
+  color: var(--ig-success-500-contrast);
+  background: var(--ig-success-500);;
   border-radius: 20px;
 }
 ```
 
+`sample="/layouts/avatar/styling", height="80", alt="{Platform} Avatar Example"`
 
 <div class="divider--half"></div>
 
@@ -209,6 +217,7 @@ igc-avatar::part(base) {
 ## API References
 
  - `Avatar`
+ - [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 

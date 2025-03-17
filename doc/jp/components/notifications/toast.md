@@ -235,9 +235,8 @@ public onDisplayTimeButtonClicked() {
 
 ```css
 igc-toast {
-    background: #011627;
-    color: #ECAA53;
-    outline-color: #ECAA53;
+  background-color: var(--ig-primary-500);
+  color: var(--ig-primary-500-contrast);
 }
 ```
 
@@ -253,6 +252,7 @@ igc-toast {
  - `KeepOpen`
  - `Show`
  - `Toast`
+ - [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 

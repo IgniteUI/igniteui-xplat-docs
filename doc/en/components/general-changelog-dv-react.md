@@ -9,6 +9,48 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## **{PackageVerChanges-24-2-MAR}**
+
+### {PackageGrids}
+
+- **All Grids** 
+  - Added new `disabledSummaries` for the columns of the grid, allowing the developers to skip some of the summaries
+  - Encapsulate internal grid action button
+
+### {PackageCommon}
+- Added new `allowSplitterDock` property for `Dockmanager` that allows docking directly in a split.
+- Added new `useFixedSize` property for the `SplitPane` of `Dockmanager` that allows new resize behavior.
+
+### Enhancements
+
+#### Toolbar
+
+- Added new `groupHeaderTextStyle` property to `Toolbar` and `ToolPanel`. If set, it will apply to all `ToolActionGroupHeader` actions.
+- Added new property on `ToolAction` called `TitleHorizontalAlignment` which controls the horizontal alignment of the title text.
+- Added new property on `ToolActionSubPanel` called `itemSpacing` which controls the spacing between items inside the panel.
+
+### Bug Fixes
+
+The following table lists the bug fixes made for the {ProductName} toolset for this release:
+
+| Bug Number | Control | Description      |
+|------------|---------|------------------|
+|32093|IgrPivotGrid|PivotDateDimensionOptions are not applied to the PivotDateDimension|
+|26218|Excel Library|Chart's plot area right margin becomes narrower and fill pattern and fill foreground are gone just by loading an Excel file|
+|30286|IgrDataChart|Bubble Series tooltip content is switched to that of nearby bubble data in clicking a bubble|
+|32906|IgrDataChart|IgrDataChart is showing two xAxis on the top|
+|33605|IgrDataChart|ScatterLineSeries is not showing the color of the line correctly in the legend|
+|34053|IgrRadialGauge|The position of the scale label is shifted|
+|34083|Excel Library|TextOperatorConditionalFormat's is not loaded/saved properly if the text contains = in a template Excel file|
+|34324|IgrGrid|Column hiding through condition in the grid template is not working|
+|34678|IgrGrid|Enum values coerced to strings, breaking expected numeric behavior in some grid properties|
+|34776|IgrDataChart|Repeatedly showing and hiding the IgrDataChart causes memory leakage in JS Heap|
+|35495|Excel Library|Pictures in cells are lost when a template file is loaded|
+|35496|IgrSpreadsheet|Error when setting styles in Excel with images|
+|35498|IgrDataChart|Tooltips for the series specified in IncludedSeries are not displayed|
+|36176|Excel Library|Exception occurs when loading an Excel workbook that has a LET function|
+|36379|Excel Library|Colors with any alpha channel in an excel workbook fail to load|
+
 ## **{PackageVerChanges-24-2-JAN}**
 
 - Bug Fixes

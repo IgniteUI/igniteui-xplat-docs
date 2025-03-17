@@ -1540,6 +1540,12 @@
     "href": "layouts/divider.md"
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Tile Manager",
+    "href": "layouts/tile-manager.md",
+    "status": "new"
+  },
+  {
     "name": "Menus",
     "header": true
   },
@@ -1811,7 +1817,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "Overview",
     "href": "themes/overview.md",
     "status": ""

@@ -323,13 +323,21 @@ public onRadioChange(e: any) {
 
 ## スタイル設定
 
-ボタン コンポーネントは、ラッピング要素 (`<button>` または `<a>`) のスタイルを設定できる `base` CSS パーツを公開します。
+`Button` コンポーネントは、スタイル設定に使用できる 3 つの CSS パーツを公開します。
+
+|名前|説明|
+|--|--|
+| `base` | igc-button コンポーネントのネイティブ ボタン要素。 |
+| `prefix` | igc-button コンポーネントのプレフィックス コンテナー。 |
+| `suffix` | igc-button コンポーネントのサフィックス コンテナー。 |
+
+`base` CSS パーツを使用すると、ラップされた要素 (`<button>` または `<a>`) のスタイルを設定できます。
 
 ```css
 igc-button::part(base) {
-    background-color: #e99221;
-    color: #011627;
-    padding: 18px;
+  background-color: var(--ig-primary-500);
+  color: var(--ig-primary-500-contrast);
+  padding: 18px;
 }
 ```
 
@@ -346,6 +354,7 @@ igc-button::part(base) {
  - `Href`
  - `RadioGroup`
  - `Radio`
+ - [スタイル設定 & テーマ](../themes/overview.md)
 
 
 ## その他のリソース
