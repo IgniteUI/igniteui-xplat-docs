@@ -300,7 +300,7 @@ When you start dragging a floating pane, different docking indicators will appea
 
 #### Root Docking
 
-In this type of docking, the dragged pane will become a child of the Dock Manager `RootPane`. Depending on the root docking indicator position, the orientation and other properties of the root pane, the existing root pane will be modified or will be replaced with a newly created one.
+In this type of docking while dragging a pane, four arrow docking indicators will appear close to the four edges of the dock manager. Once released, the dragged pane will become a direct child of the Dock Manager's `RootPane`. Visually, the newly docked pane will snap into place at the respective edge and occupy up to half of the dock manager's width or height, shifting all the other content to the other half.
 
 <img class="responsive-img" src="../../images/dockmanager-root-docking.jpg"/>
 
