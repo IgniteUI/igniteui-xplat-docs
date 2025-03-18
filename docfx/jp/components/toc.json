@@ -1538,6 +1538,12 @@
     "href": "layouts/divider.md"
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "タイル マネージャー",
+    "href": "layouts/tile-manager.md",
+    "status": "new"
+  },
+  {
     "name": "メニュー",
     "header": true
   },
