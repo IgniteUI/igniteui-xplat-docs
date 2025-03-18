@@ -12,13 +12,23 @@ _language: ja
 
 ## **{PackageVerChanges-24-2-MAR}**
 
+### {PackageGrids}
+
+- **すべてのグリッド** 
+  - グリッドの列に新しい `disabledSummaries` が追加され、開発者が一部の集計をスキップできるようにしました。
+  - 内部グリッド アクション ボタンをカプセル化しました。
+
+### {PackageCommon}
+- `Dockmanager` に、分割内で直接ドッキングできる新しい `allowSplitterDock` プロパティが追加されました。
+- `Dockmanager` の `SplitPane` に新しい `useFixedSize` プロパティが追加され、新しいサイズ変更動作が可能になりました。
+
 ### 機能拡張
 
 #### Toolbar
 
-- `Toolbar` と `ToolPanel` に新しい `GroupHeaderTextStyle` プロパティを追加しました。設定されている場合、すべての `ToolActionGroupHeader` アクションに適用されます。
+- `Toolbar` と `ToolPanel` に新しい `groupHeaderTextStyle` プロパティを追加しました。設定されている場合、すべての `ToolActionGroupHeader` アクションに適用されます。
 - タイトル テキストの水平方向の配置を制御する `TitleHorizontalAlignment` という新しいプロパティを `ToolAction` に追加しました。
-- `ToolActionSubPanel` に、パネル内の項目間の間隔を制御する `ItemSpacing` という新しいプロパティを追加しました。
+- `ToolActionSubPanel` に、パネル内の項目間の間隔を制御する `itemSpacing` という新しいプロパティを追加しました。
 
 ### バグ修正
 
@@ -26,12 +36,15 @@ _language: ja
 
 | バグ番号 | コントロール | 説明      |
 |------------|---------|------------------|
+|32093|IgrPivotGrid|PivotDateDimensionOptions は PivotDateDimension には適用されない。|
 |26218|Excel Library|Excel ファイルを読み込むだけで、チャートのプロット領域の右マージンが狭くなり、塗りつぶしパターンと前景の塗りつぶしが消える。|
 |30286|IgrDataChart|バブルをクリックすると、Bubble Series のツールチップが近くのバブル データの内容に切り替わる。|
 |32906|IgrDataChart|IgrDataChart は上部に 2 つの xAxis を表示している。|
 |33605|IgrDataChart|凡例に ScatterLineSeries の線の色が正しく表示されない。|
 |34053|IgrRadialGauge|スケール ラベルの位置がずれる。|
 |34083|Excel Library|テンプレート Excel ファイルのテキストに 「=」 が含まれている場合、TextOperatorConditionalFormat が正しく読み込まれない/保存されない。|
+|34324|IgrGrid|グリッド テンプレートの条件による列の非表示が機能しない。|
+|34678|IgrGrid|列挙型の値が文字列に変換され、一部のグリッドプロパティで想定される数値の動作が壊れる|
 |34776|IgrDataChart|IgrDataChart を繰り返し表示したり非表示にしたりすると、JS ヒープでメモリ リークが発生する。|
 |35495|Excel Library|テンプレート ファイルを読み込むと、セル内の画像が失われる。|
 |35496|IgrSpreadsheet|Excel に画像付きでスタイルを設定すると エラーが発生する。|

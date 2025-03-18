@@ -13,6 +13,19 @@ _language: ja
 
 * バージョン 2024.2 以降、Ignite UI for Blazor ツールセットは .NET 9 をサポートします。.NET 9 の詳細については、[Microsoft サイト](https://learn.microsoft.com/ja-jp/dotnet/core/whats-new/dotnet-9/overview)をご確認ください。
 
+## **{PackageVerChanges-24-2-MAR}**
+
+### {PackageGrids}
+
+- **すべてのグリッド** 
+  - グリッドの列に新しい `DisabledSummaries` が追加され、開発者が一部の集計をスキップできるようにしました。
+  - 内部グリッド アクション ボタンをカプセル化しました。
+
+### バグ修正
+| バグ番号 | コントロール | 説明      |
+|------------|---------|------------------|
+|35497|IgbDialog|ShowAsync と HideAsync が呼び出されると、後続のコードは実行されない。|
+
 ## **{PackageVerChanges-24-2-FEB}**
 
 ### 機能拡張
@@ -47,6 +60,7 @@ _language: ja
 |36024|IgbGrid|IgbGrid コンポーネントを含む 2 つのページ間を行き来しても、JS ヒープ サイズが削減されない。|
 |36176|Excel Library|LET 関数を含む Excel ブックを読み込むと、例外が発生する。|
 |36379|Excel Library|Excel ワークブック内のアルファ チャネルを含む色は読み込まれない。|
+
 
 ## **{PackageVerChanges-24-2-JAN}**
 
