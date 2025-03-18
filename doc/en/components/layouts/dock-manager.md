@@ -294,6 +294,34 @@ this.dockManager.addEventListener('activePaneChanged', ev => {
 });
 ```
 
+### Docking
+
+When you start dragging a floating pane, different docking indicators will appear depending on the position of the dragged pane. There are four main types of docking - root docking, pane docking, document host docking and splitter docking.
+
+#### Root Docking
+
+In this type of docking while dragging a pane, four arrow docking indicators will appear close to the four edges of the dock manager. Once released, the dragged pane will become a direct child of the Dock Manager's `RootPane`. Visually, the newly docked pane will snap into place at the respective edge and occupy up to half of the dock manager's width or height, shifting all the other content to the other half.
+
+<img class="responsive-img" src="../../images/dockmanager-root-docking.jpg"/>
+
+#### Pane Docking
+
+Docking indicators will appear in the center of a content pane or a tab group pane when dragging the floating pane over it. Once released, the dragged pane will snap into place on any side of the target pane or get grouped together with the target pane to create a tabbed layout. Based on the combination of the initial layout and the dock position, the docking operation may cause the dynamic creation of a new split or tab group pane that would become the new parent of both the dragged and the target panes.
+
+<img class="responsive-img" src="../../images/dockmanager-pane-docking.jpg"/>
+
+#### Document Host Docking
+
+If the dragged pane is over a document host, then additional docking indicators will appear that will allow for docking relative to the target pane or the whole document host.
+
+<img class="responsive-img" src="../../images/dockmanager-document-host-docking.jpg"/>
+
+#### Splitter Docking
+
+While dragging a floating pane, if the cursor of the mouse is close to any splitter, a docking indicator will appear over it. If the dragged pane is docked it will become a child of the split pane that has the targeted splitter. Splitter docking can be disabled by setting the Dock Manager `allowSplitterDock` property to **false**.
+
+<img class="responsive-img" src="../../images/dockmanager-splitter-docking.jpg"/>
+
 ### Update Layout
 
 In some scenarios you may need to customize the layout of the Dock Manager by adding or removing a pane, changing orientation, etc., for example:
@@ -590,6 +618,7 @@ In the following example, we demonstrate the ability of customizing the Dock Man
 | `docking-preview` | The docking preview area. |
 | `docking-indicator` | The non-root docking indicator. |
 | `root-docking-indicator` | The root docking indicator. |
+| `splitter-docking-indicator` | The splitter docking indicator. |
 | `pane-navigator` | The pane navigator component. |
 | `pane-navigator-header` | The header area of the pane navigator. |
 | `pane-navigator-body` | The body area of the pane navigator. |
