@@ -76,11 +76,7 @@ _language: ja
    
 たとえば、データ ソースに Nuclear、Coal、Oil、Solar という数値プロパティがある場合、これらのプロパティごとにシリーズが作成されていることがわかります。Solar 値にバインドされたシリーズを選択する場合は、次のプロパティが設定されたマッチャーを使用して、ChartSelection オブジェクトを SelectedSeriesItems コレクションに追加できます。
 
-<!-- Blazor -->
-
  `sample="/charts/category-chart/selection-matcher", height="500", alt="{Platform} 選択マッチャー"`
-
-<!-- end: Blazor -->
 
 ## API リファレンス
 
