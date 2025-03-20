@@ -1,0 +1,338 @@
+---
+title: {Platform} Tile Manager コンポーネント – {ProductName}
+_description: {Platform} Tile Manager コンポーネントを使用すると、コンテンツを個々のタイルに表示できます。
+_keywords: {Platform} Tile Manager, {ProductName}, {Platform} タイル マネージャー, Infragistics,インフラジスティックス
+mentionedTypes: ["TileManager"]
+_language: ja
+---
+
+# {Platform} Tile Manager (タイル マネージャー) の概要
+
+{Platform} Tile Manager コンポーネントを使用すると、コンテンツを個々のタイルに表示できます。ユーザーはタイルを並べ替えたりサイズを変更したりして操作できるため、好みに応じてコンテンツのレイアウトや外観を自由にカスタマイズできます。この柔軟性により、パーソナライズされた効率的なコンテンツの表示と管理が可能になり、ユーザー エクスペリエンスが向上します。
+
+## {Platform} Tile Manager の例
+
+次の {ProductName} タイル マネージャーの例では、コンポーネントの動作を示しています。 
+
+`sample="/layouts/tile-manager/overview", height="752", scrollable, alt="{Platform} Tile Manager の例"`
+
+> [!Warning] iframe の権限ポリシーにより、この例のフルスクリーン ボタンは、右上隅の Expand to fullscreen (フルスクリーンに展開) ボタンをクリックしてスタンドアロン モードで例を開いた場合にのみ機能します。
+
+## 使用方法
+
+タイル マネージャーは、最大化状態または通常状態でのタイルの配置を管理する基本的なタイル レイアウト動作を提供します。タイルはそれぞれ独立してサイズを設定でき、複雑なレイアウトを構築できます。エンドユーザーはドラッグ アンド ドロップによる直感的な操作で柔軟にタイルを並べ替えることが可能です。 
+
+タイル マネージャーでは、使用できる 2 つのコンポーネントが提供されます。
+- `IgcTileComponent` - このコンポーネントは、タイル マネージャー内に表示される個々のタイルを表します。
+- `IgcTileManagerComponent` - これはすべてのタイル コンポーネントを含むメイン コンポーネントであり、タイル レイアウト全体のコンテナーとして機能します。
+
+### 作業の開始
+
+<!-- WebComponents -->
+
+Tile Manager コンポーネントの使用を開始するには、最初に次のコマンドを実行して Ignite UI for Web Components をインストールする必要があります。
+
+```cmd
+npm install {PackageWebComponents}
+```
+
+Tile Manager を使用する前に、次のようにインポートする必要があります:
+
+```ts
+import { defineComponents, IgcTileManagerComponent } from 'igniteui-webcomponents';
+
+defineComponents(IgcTileManagerComponent);
+```
+
+これで、{Platform} Tile Manager の基本構成から始めることができます。
+
+```html
+<igc-tile-manager>
+  <igc-tile>
+    <p>Tile 1</p>
+  </igc-tile>
+  <igc-tile>
+    <p>Tile 2</p>
+  </igc-tile>
+  <igc-tile>
+    <p>Tile 3</p>
+  </igc-tile>
+</igc-tile-manager>
+```
+
+{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+
+<!-- end: WebComponents -->
+
+## レイアウト
+
+### 列および行
+
+タイル マネージャーのグリッド列の数を指定できます。これを行うには、`column-count` プロパティを必要な列数に設定するだけです。数値が 1 未満の場合、またはプロパティが設定されていない場合、タイル マネージャーは収まる限り多くの列を作成します。各列の幅は少なくとも 200 ピクセルで、使用可能なスペースを均等に共有するように拡張されます。ビューポートのサイズが変更されると、タイルもスペースを最大限に活用するために再配置されます。
+
+```html
+<igc-tile-manager column-count="2">
+  <igc-tile>
+    <span slot="title">Tile 1 header</span>
+    <p>Content for Tile 1</p>
+  </igc-tile>
+  <igc-tile>
+    <span slot="title">Tile 2 header</span>
+    <p>Content for Tile 2</p>
+  </igc-tile>
+  <igc-tile>
+    <span slot="title">Tile 3 header</span>
+    <p>Content for Tile 3</p>
+  </igc-tile>
+  ...
+</igc-tile-manager>
+```
+
+このコード スニペットでは、タイル マネージャー内の 3 つのタイルが 2 行 2 列に配置されます。
+
+### ギャップ
+
+タイル マネージャーで使用できるもう 1 つのプロパティは、タイル間のスペースを定義する `gap` プロパティです。`gap` プロパティの値は、数値と長さの単位 (例: px、rem、em など) を組み合わせた形式で指定する必要があります。この値は、タイル間の水平ギャップ (幅) と垂直ギャップ (高さ) の両方に適用されます。
+
+```html
+<igc-tile-manager gap="20px">
+  <igc-tile>
+    <span slot="title">Tile 1 header</span>
+    <p>Content for Tile 1</p>
+  </igc-tile>
+  <igc-tile>
+    <span slot="title">Tile 2 header</span>
+    <p>Content for Tile 2</p>
+  </igc-tile>
+  ...
+</igc-tile-manager>
+```
+
+### 最小幅および最小高さ
+
+タイル マネージャーには、列の最小幅 (`min-column-width`) と行の最小高さ (`min-row-height`) を設定するためのプロパティもあります。ギャップ (gap) プロパティと同様に、これらのプロパティの値も数値に長さの単位を付けた形式で指定する必要があります。これらの値は、タイル マネージャー内のすべての列の最小幅とすべての行の最小高さを定義します。
+
+```html
+<igc-tile-manager min-column-width="200px" min-row-height="150px">
+  <igc-tile>
+    <span slot="title">Tile 1 header</span>
+    <p>Content for Tile 1</p>
+  </igc-tile>
+  <igc-tile>
+    <span slot="title">Tile 2 header</span>
+    <p>Content for Tile 2</p>
+  </igc-tile>
+  ...
+</igc-tile-manager>
+```
+
+### 例
+
+`sample="/layouts/tile-manager/columngap", height="631", alt="{Platform} Tile Manager の列の例"`
+
+## Tile コンポーネント
+
+Tile コンポーネントには、タイルごとに個別に設定できるプロパティがあります。これらのプロパティには以下のようなものがあります。
+
+- `col-span` プロパティは、レイアウト内でタイルが何列にまたがるかを指定し、タイルの水平サイズを制御できるようにします。
+- `row-span` プロパティは、タイルが垂直方向にまたがる行数を指定し、レイアウト内でタイルの高さを調整します。
+- `col-start` プロパティは、タイルが配置される開始列を指定します。
+- `row-start` プロパティは、タイルが配置される開始行を指定します。
+- `enable-fullscreen` プロパティは、デフォルトの全画面表示アクション ボタンを非表示にします。
+- `disable-maximize` プロパティは、デフォルトの最大化トグルアクション ボタンを非表示にします。
+- `disable-resize` プロパティは、ユーザーによるタイルのサイズ変更を禁止します。
+
+```html
+<igc-tile-manager>
+  <igc-tile col-span="2" disable-resize>
+    <span slot="title">Tile 1 header</span>
+    <p>Content for Tile 1</p>
+  </igc-tile>
+  <igc-tile>
+    <span slot="title">Tile 2 header</span>
+    <p>Content for Tile 2</p>
+  </igc-tile>
+  ...
+</igc-tile-manager>
+```
+
+Tile コンポーネントは、使用できるいくつかのスロットも公開します。
+
+| スロット名 | 説明 |
+| ---------|------------ |
+| `title` | タイル ヘッダーのコンテンツ。 |
+| `fullscreen-action` | デフォルトの全画面表示アクション コンテンツを上書きします。 |
+| `maximize-action` | デフォルトの最大化アクションのコンテンツを上書きします。 |
+| `actions` | 	デフォルトのアクションの後にレンダリングされるカスタム コンテンツ。 |
+| `side-adorner` | デフォルトの水平リサイズ ハンドルを上書きします。 |
+| `corner-adorner` | 	デフォルトの対角リサイズ ハンドルを上書きします。 |
+| `bottom-adorner` | デフォルトの垂直リサイズ ハンドルを上書きします。 |
+
+
+### ヘッダー セクションのアクション
+
+デフォルトでは、ヘッダー セクションには 2 つのアクション ボタンが含まれます。
+
+- `maximize` ボタンを使用すると、タイルのコンテンツがタイル マネージャーの幅全体に拡大され、コンテンツの表示範囲が広がります。
+- `fullscreen` ボタンを使用すると、タイルがユーザーのブラウザでフルスクリーン モードで開きます。
+
+<img src="../../images/tile-manager-actions.png" />
+
+2 つのボタンのうち 1 つだけを表示する場合は、`disable-maximize` または `disable-fullscreen` プロパティのいずれかを設定できます。外観をカスタマイズするには、最大化ボタンの場合は `maximize-action` スロットを使用し、全画面ボタンの場合は `fullscreen-action` スロットを使用します。
+
+```html
+<igc-tile-manager>
+  <igc-tile disable-fullscreen>
+    <igc-icon-button slot="maximize-actions" name="north_east" collection="material">
+    </igc-icon-button>
+    <p>Content for Tile 1</p>
+  </igc-tile>
+</igc-tile-manager>
+```
+
+両方のアクション ボタンを無効にしたり、好みに応じてカスタム ボタンを作成したりすることもできます。
+
+`sample="/layouts/tile-manager/actions", height="700", alt="{Platform} Tile Manager アクションの例"`
+
+この例では、Ignite UI Icon Button コンポーネントを使用してカスタム アクション ボタンを作成しました。
+
+## サイズ変更
+
+タイル マネージャーでのサイズ変更は、3 つの異なるリサイズ ハンドルを使用してタイルのサイズを変更できる機能です。
+
+- **サイド リサイズ ハンドル**: 列の範囲を変更して幅を調整します。
+- **ボトム リサイズ ハンドル**: 行の範囲を変更して高さを調整します。
+- **コーナー リサイズ ハンドル**: 幅と高さを同時に調整します。
+
+スムーズなサイズ変更を実現するために、タイルの大きさを直接変更するのではなく、ゴースト要素が使用されます。この要素は元のタイルの上に表示され、サイズ変更の開始時に現在のサイズで表示され、ユーザーがリサイズ ハンドルのいずれかをドラッグするとリアルタイムで更新されます。
+
+> [!Note] ゴースト要素が利用可能なグリッド スペースを超える場合、グリッドの制限内で可能な最大範囲に自動的に調整されます。
+
+タイルのサイズが変更されると、タイル マネージャーは自動的に再配置し、空きスペースが最小限になるようにします。そのため、タイルを拡大すると隣接するタイルが新しい位置に押し出され、縮小すると隙間ができ、他のタイルが動的に埋められる可能性があります。これにより、タイル マネージャーはタイルが重なることなく可能な限りコンパクトに保たれ、すべての動きが定義されたグリッド構造内にとどまります。
+
+`resize-mode` プロパティを使用して、タイル マネージャーでサイズ変更を適用する方法を制御できます。`none`、`hover`、または `always` に設定でき、リサイズ ハンドルがいつ表示されるかを決定します。デフォルト値は `none` であり、タイルのサイズを変更できません。
+
+```html
+<igc-tile-manager resize-mode='hover'>
+  <igc-tile>
+    <p>Tile 1</p>
+  </igc-tile>
+  <igc-tile>
+    <p>Tile 2</p>
+  </igc-tile>
+</igc-tile-manager>
+```
+
+以下の例で 3 つの状態の違いを確認できます。
+
+`sample="/layouts/tile-manager/resize", height="522", alt="{Platform} Tile Manager サイズ変更の例"`
+
+### 制限
+
+サイズ変更プロセスにはいくつかの制約と制限があります。
+
+- タイルは、定義された最小幅または高さ (minColWidth、minRowHeight) より小さくサイズ変更することはできません。
+- タイルはグリッド内で利用可能な最大の水平スペースを超えることはできません。
+
+## 並べ替え
+
+ドラッグ アンド ドロップ機能を使用して、タイル マネージャーでタイルの順序を変更できます。デフォルトでは、タイルはドラッグできません。この機能を有効にするには、タイル マネージャーの `drag-mode` プロパティを `tile` または `tile-header` に設定します。
+
+- `tile` オプションを使用すると、個々のタイルの任意の場所をクリックして押したままにすると、ドラッグを開始できます。
+- `tile-header` オプションを使用すると、タイルのヘッダー セクションをクリックして押したままにするだけで、ドラッグ プロセスを開始できます。
+
+> [!Note] タイルが最大化または全画面表示の状態では、タイルをドラッグすることはできません。
+
+サイズ変更と同様に、ドラッグ アンド ドロップ プロセスを開始すると、取得したタイルの下にゴースト要素が表示されます。タイルをドラッグすると、ゴースト要素も一緒に移動し、他のタイルの順序がリアルタイムで動的に変更されます。これにより、タイルをドロップしたときにタイルのグリッドがどのように表示されるかをプレビューできます。
+
+```html
+<igc-tile-manager drag-mode="tile-header">
+  <igc-tile>
+    <span slot="title">Tile 1 header</span>
+    <p>Content for Tile 1</p>
+  </igc-tile>
+  <igc-tile>
+    <span slot="title">Tile 2 header</span>
+    <p>Content for Tile 2</p>
+  </igc-tile>
+</igc-tile-manager>
+```
+
+`sample="/layouts/tile-manager/dragndrop", height="522", alt="{Platform} Tile Manager ドラッグ アンド ドロップの例"`
+
+## シリアル化
+
+タイル マネージャーは、タイルのレイアウトの管理に役立つメソッドを提供します。
+
+- `saveLayout` メソッドを使用すると、タイル マネージャー内のタイルの現在の配置を保存できます。このメソッドは、すべてのタイルの現在の順序、サイズ、位置を保存するため、後で同じ構成を正確に復元できます。
+- `loadLayout` メソッドを使用すると、以前に保存したレイアウトを読み込むことができます。呼び出されると、タイルの順序、サイズ、位置など、レイアウトが保存されたときの状態にタイルが正確に復元されます。
+
+`sample="/layouts/tile-manager/layout", height="527", alt="{Platform} Tile Manager レイアウトの例"`
+
+## スタイル設定
+
+`Tile Manager` と `Tile` の 2 つのコンポーネントの外観をカスタマイズすることもできます。 
+`Tile Manager` は、Tile Manager のベース ラッパーのスタイル設定に使用できる CSS プロパティ `base` のみを公開します。
+`Tile` コンポーネントは、使用できるいくつかの CSS プロパティを公開します。
+
+| パーツ名 | 説明 |
+| ---------|------------ |
+| `base` | デフォルトの垂直のリサイズ ハンドルを上書きします。 |
+| `header` | タイトルとアクション パーツを含むタイルのヘッダー コンテナー。 |
+| `title` | タイトルのコンテナー。 |
+| `actions` | アクションのコンテナー。 |
+| `content-container` | タイルのデフォルト スロットをラップするコンテナー。 |
+| `trigger-side` | 水平リサイズ ハンドル。 |
+| `trigger` | 対角リサイズ ハンドル。 |
+| `trigger-bottom` | 垂直リサイズ ハンドル。 |
+
+これらの CSS パーツを使用すると、次のように 2 つのコンポーネントの外観をカスタマイズできます。
+
+```css
+igc-tile-manager::part(base) {
+  background-color: var(--ig-surface-900);
+}
+
+igc-tile::part(content-container) {
+  color: var(--ig-secondary-200);
+}
+
+igc-tile::part(header) {
+  background-color: var(--ig-gray-300);
+}
+
+igc-tile::part(title) {
+  color: var(--ig-primary-400);
+}
+
+igc-tile:nth-child(n+2)::part(trigger-side), 
+igc-tile:nth-child(n+2)::part(trigger-bottom) {
+  background-color: var(--ig-success-500);
+}
+
+igc-tile:nth-child(n+2)::part(trigger) {
+  background-color: var(--ig-error-500);
+}
+```
+
+また、`side-adorner`、`corner-adorner`、`bottom-adorner` スロットを使用して、リサイズ ハンドルのアイコンをカスタムのアイコンに変更することもできます。これを行うには、tile 要素内に `igc-icon` 要素を作成します。次に、その要素の slot 属性を、3 つのリサイズ ハンドルのスロット名のいずれかに設定した上で、使用するアイコンの名前を指定します。
+
+```html
+<igc-tile>
+  <igc-icon slot="side-adorner" class="side" name="indicator"></igc-icon>
+  <igc-icon slot="corner-adorner" class="corner" name="indicator"></igc-icon>
+  <igc-icon slot="bottom-adorner" class="bottom" name="indicator"></igc-icon>
+  <span slot="title">Tile header</span>
+</igc-tile>
+```
+
+`sample="/layouts/tile-manager/styling", height="481", alt="{Platform} Tile Manager スタイル設定の例"`
+
+## API リファレンス
+
+
+## その他のリソース
+
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})
+
