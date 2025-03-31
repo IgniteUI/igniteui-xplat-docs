@@ -1489,7 +1489,7 @@
     "exclude": ["Angular"],
     "name": "Dock Manager",
     "href": "layouts/dock-manager.md",
-    "status": "",
+    "status": "UPDATED",
     "items": [
       {
         "exclude": ["Angular"],
@@ -1538,6 +1538,12 @@
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Divider",
     "href": "layouts/divider.md"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Tile Manager",
+    "href": "layouts/tile-manager.md",
+    "status": "new"
   },
   {
     "name": "Menus",

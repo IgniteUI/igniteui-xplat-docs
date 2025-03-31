@@ -1010,6 +1010,128 @@ igRegisterScript("SummaryTemplate", (ctx) => {
 
 `sample="/{ComponentSample}/data-summary-template", height="650", alt="{Platform} {ComponentTitle} データ集計のテンプレート"`
 
+## 無効な集計
+
+<!-- WebComponents -->
+`disabled-summaries` プロパティは、{Platform} {ComponentTitle} の集計機能に対して列ごとに正確な制御を提供します。このプロパティを使用すると、{ComponentName} 内の各列に表示される集計をカスタマイズして、最も関連性の高い意味のあるデータのみが表示されるようにすることができます。たとえば、配列で集計キーを指定することにより、`['count', 'min', 'max']` などの特定の集計タイプを除外できます。
+<!-- end: WebComponents -->
+
+<!-- React -->
+`disabledSummaries` プロパティは、{Platform} {ComponentTitle} の集計機能に対して列ごとに正確な制御を提供します。このプロパティを使用すると、{ComponentName} 内の各列に表示される集計をカスタマイズして、最も関連性の高い意味のあるデータのみが表示されるようにすることができます。たとえば、配列で集計キーを指定することにより、`['count', 'min', 'max']` などの特定の集計タイプを除外できます。
+<!-- end: React -->
+
+<!-- Blazor -->
+`DisabledSummaries` プロパティは、{Platform} {ComponentTitle} の要約機能に対して列ごとに正確な制御を提供します。このプロパティを使用すると、{ComponentName} 内の各列に表示される集計をカスタマイズして、最も関連性の高い意味のあるデータのみが表示されるようにすることができます。たとえば、配列で集計キーを指定することにより、`['count', 'min', 'max']` などの特定の集計タイプを除外できます。
+<!-- end: Blazor -->
+
+<!-- WebComponents, React, Blazor -->
+このプロパティは、コードを通じて**実行時に動的に**変更することもできるため、変化するアプリケーションの状態やユーザー操作に合わせて {ComponentName} の集計を柔軟に調整できます。
+<!-- end: WebComponents, React, Blazor -->
+
+<!-- WebComponents -->
+次の例は、`disabled-summaries` プロパティを使用してさまざまな列の集計を管理し、{Platform} {ComponentTitle} で特定のデフォルトおよびカスタムの集計タイプを除外する方法を示しています。
+<!-- end: WebComponents -->
+
+<!-- React -->
+次の例は、`disabledSummaries` プロパティを使用してさまざまな列の集計を管理し、{Platform} {ComponentTitle} で特定のデフォルトおよびカスタムの集計タイプを除外する方法を示しています。
+<!-- end: React -->
+
+<!-- Blazor -->
+次の例は、`DisabledSummaries` プロパティを使用してさまざまな列の集計を管理し、{Platform} {ComponentTitle} で特定のデフォルトおよびカスタムの集計タイプを除外する方法を示しています。
+<!-- end: Blazor -->
+
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
+<!-- WebComponents -->
+```html
+<!-- Disable default summaries -->
+<igc-column
+    field="UnitPrice"
+    header="Unit Price"
+    data-type="number"
+    has-summary="true"
+    disabled-summaries="['count', 'sum', 'average']"
+>
+</igc-column>
+
+<!-- Disable custom summaries -->
+<igc-column
+    field="UnitsInStock"
+    header="Units In Stock"
+    data-type="number"
+    has-summary="true"
+    summaries="discontinuedSummary"
+    disabled-summaries="['discontinued', 'totalDiscontinued']"
+>
+</igc-column>
+```
+<!-- end: WebComponents -->
+<!-- React -->
+```tsx
+<!-- Disable default summaries -->
+<IgrColumn
+    field="UnitPrice"
+    header="Unit Price"
+    dataType="number"
+    hasSummary={true}
+    disabledSummaries="['count', 'sum', 'average']"
+/>
+
+<!-- Disable custom summaries -->
+<IgrColumn
+    field="UnitsInStock"
+    header="Units In Stock"
+    dataType="number"
+    hasSummary={true}
+    summaries={discontinuedSummary}
+    disabledSummaries="['discontinued', 'totalDiscontinued']"
+/>
+```
+<!-- end: React -->
+
+<!-- Blazor -->
+```razor
+<!-- Disable default summaries -->
+<IgbColumn 
+    Field="UnitPrice" 
+    Header="Unit Price" 
+    DataType="GridColumnDataType.Number"
+    HasSummary="true" 
+    DisabledSummaries="['count', 'sum', 'average']" />
+
+<!-- Disable custom summaries -->
+<IgbColumn 
+    Field="UnitsInStock" 
+    Header="Units In Stock" 
+    DataType="GridColumnDataType.Number"
+    HasSummary="true" 
+    Summaries="discontinuedSummary" 
+    DisabledSummaries="['discontinued', 'totalDiscontinued']" />
+```
+<!-- end: Blazor -->
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
+
+`UnitPrice` の場合、`count`、`sum`、`average` などのデフォルトの集計は無効になっており、`min` や `max` などの他の集計は有効のままになっています。
+
+<!-- WebComponents -->
+`UnitsInStock` の場合、`discontinued` や `totalDiscontinued` などのカスタム集計は `disabled-summaries` プロパティを使用して除外されます。
+
+実行時に、`disabled-summaries` プロパティを使用して集計を動的に無効にすることもできます。たとえば、特定の列のプロパティをプログラムで設定または更新して、ユーザー操作やアプリケーションの状態の変化に基づいて表示される集計を調整できます。
+<!-- end: WebComponents -->
+
+<!-- React -->
+`UnitsInStock` の場合、`discontinued` や `totalDiscontinued` などのカスタム集計は `disabledSummaries` プロパティを使用して除外されます。
+
+実行時に、`disabledSummaries` プロパティを使用して集計を動的に無効にすることもできます。たとえば、特定の列のプロパティをプログラムで設定または更新して、ユーザー操作やアプリケーションの状態の変化に基づいて表示される集計を調整できます。
+<!-- end: React -->
+
+<!-- Blazor -->
+`UnitsInStock` の場合、`discontinued` や `totalDiscontinued` などのカスタム集計は `DisabledSummaries` プロパティを使用して除外されます。
+
+実行時に、`DisabledSummaries` プロパティを使用して集計を動的に無効にすることもできます。たとえば、特定の列のプロパティをプログラムで設定または更新して、ユーザー操作やアプリケーションの状態の変化に基づいて表示される集計を調整できます。
+<!-- end: Blazor -->
+
+`sample="/{ComponentSample}/disabled-summaries", height="750", alt="{Platform} {ComponentTitle} 無効な集計"`
+
 <!-- Angular, WebComponents, React -->
 ## 集計のフォーマット
 デフォルトでは、組み込みの集計オペランドによって生成される集計結果は、グリッド `Locale` および列 `PipeArgs` に従ってローカライズおよびフォーマットされます。カスタム オペランドを使用する場合、`Locale` と `PipeArgs` は適用されません。集計結果のデフォルトの外観を変更する場合は、`SummaryFormatter` プロパティを使用してフォーマットできます。
