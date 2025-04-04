@@ -1042,7 +1042,7 @@ function fetchData(url: string): void {
       .then(data => onDataLoaded(data));
 }
 function onDataLoaded(jsonData: any[]) {
-    gridRef.current.data = jsonData;
+    gridRef.data = jsonData;
   }
 ```
 

@@ -71,7 +71,7 @@ this.grid.UpdateCell(newValue, rowID, 'ReorderLevel')
 <!-- React -->
 ```typescript
 function updateCell() {
-    grid1Ref.current.updateCell(newValue, rowID, 'ReorderLevel');
+    grid1Ref.updateCell(newValue, rowID, 'ReorderLevel');
 }
 ```
 <!-- end: React -->
@@ -132,9 +132,9 @@ public updateCell() {
 <!-- React -->
 ```typescript
 function updateCell() {
-    const cell = grid1Ref.current.getCellByColumn(rowIndex, 'ReorderLevel');
+    const cell = grid1Ref.getCellByColumn(rowIndex, 'ReorderLevel');
     // You can also get cell by rowID if primary key is defined
-    // cell = grid1Ref.current.getCellByKey(rowID, 'ReorderLevel');
+    // cell = grid1Ref.getCellByKey(rowID, 'ReorderLevel');
     cell.update(70);
 }
 ```
@@ -611,9 +611,9 @@ if (key == 13) {
     let nextRow = getNextEditableRowIndex(thisRow, rowInfo, event.shiftKey);
 
     // and then we will navigate to it using the grid's built in method navigateTo
-    grid1Ref.current.navigateTo(nextRow, column, (obj) => {
+    grid1Ref.navigateTo(nextRow, column, (obj) => {
         obj.target.activate();
-        grid1Ref.current.clearCellSelection();
+        grid1Ref.clearCellSelection();
     });
 }
 ```
@@ -688,7 +688,7 @@ this.grid.addRow(record);
 // Adding a new record
 // Assuming we have a `getNewRecord` method returning the new row data.
 const record = getNewRecord();
-grid1Ref.current.addRow(record);
+grid1Ref.addRow(record);
 ```
 <!-- end: React -->
 
@@ -756,16 +756,16 @@ row.update(newData);
 <!-- React -->
 ```typescript
 // Updating the whole row
-grid1Ref.current.updateRow(newData, this.selectedCell.cellID.rowID);
+grid1Ref.updateRow(newData, this.selectedCell.cellID.rowID);
 
 // Just a particular cell through the Grid API
-grid1Ref.current.updateCell(newData, this.selectedCell.cellID.rowID, this.selectedCell.column.field);
+grid1Ref.updateCell(newData, this.selectedCell.cellID.rowID, this.selectedCell.column.field);
 
 // Directly using the cell `update` method
 selectedCell.update(newData);
 
 // Directly using the row `update` method
-const row = grid1Ref.current.getRowByKey(rowID);
+const row = grid1Ref.getRowByKey(rowID);
 row.update(newData);
 ```
 <!-- end: React -->
@@ -877,9 +877,9 @@ row.delete();
 <!-- React -->
 ```typescript
 // Delete row through Grid API
-grid1Ref.current.deleteRow(selectedCell.cellID.rowID);
+grid1Ref.deleteRow(selectedCell.cellID.rowID);
 // Delete row through row object
-const row = grid1Ref.current.getRowByIndex(rowIndex);
+const row = grid1Ref.getRowByIndex(rowIndex);
 row.del();
 ```
 <!-- end: React -->

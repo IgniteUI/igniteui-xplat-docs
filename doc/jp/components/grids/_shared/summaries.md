@@ -282,13 +282,13 @@ public disableSummary() {
 
 ```tsx
 function enableSummary() {
-    gridRef.current.enableSummaries([
+    gridRef.enableSummaries([
         {fieldName: 'ReorderLevel'},
         {fieldName: 'ProductID'}
     ]);
 }
 function disableSummary() {
-    gridRef.current.disableSummaries(['ProductID']);
+    gridRef.disableSummaries(['ProductID']);
 }
 
 <{ComponentSelector} ref={gridRef} auto-generate="false" height="800px" width="800px">
@@ -377,13 +377,13 @@ public disableSummary() {
 
 ```tsx
 function enableSummary() {
-    hierarchicalGridRef.current.enableSummaries([
+    hierarchicalGridRef.enableSummaries([
         {fieldName: 'GrammyNominations'},
         {fieldName: 'GrammyAwards'}
     ]);
 }
 function disableSummary() {
-    hierarchicalGridRef.current.disableSummaries(['GrammyNominations']);
+    hierarchicalGridRef.disableSummaries(['GrammyNominations']);
 }
 
 <IgrHierarchicalGrid autoGenerate="false" data={this.singersData} ref={this.hierarchicalGridRef} id="hierarchicalGrid" primaryKey="ID">
@@ -471,13 +471,13 @@ public disableSummary() {
 
 ```tsx
 function enableSummary() {
-    treeGridRef.current.enableSummaries([
+    treeGridRef.enableSummaries([
         {fieldName: 'Name'},
         {fieldName: 'Units'}
     ]);
 }
 function disableSummary() {
-    treeGridRef.current.disableSummaries(['Units']);
+    treeGridRef.disableSummaries(['Units']);
 }
 
 <IgrTreeGrid autoGenerate="false" data={this.ordersTreeData} ref={this.treeGridRef} id="treeGrid" primaryKey="ID">
