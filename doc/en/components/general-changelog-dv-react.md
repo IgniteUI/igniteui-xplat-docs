@@ -9,6 +9,29 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## **{PackageVerChanges-24-2-APR}**
+
+### New Components
+
+* TileManager
+
+### Enhancements
+
+#### List
+- Added new property on `ListItem` called `Selected`
+
+#### Accordion
+- Added new events `Open` and `Close`
+
+### {PackageGrids}
+
+- **All Grids** 
+  - Allow applying initial filtering through `FilteringExpressions` property
+
+### Deprecations
+
+- The `Clicked` event of the `Button` is deprecated. Use the native `onClick` handler.
+
 ## **{PackageVerChanges-24-2-MAR}**
 
 ### {PackageGrids}

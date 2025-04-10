@@ -301,6 +301,8 @@ this.grid.clearFilter();
 ```
 <!-- end: WebComponents -->
 
+<!-- end: Angular, WebComponents -->
+
 ## Initial filtered state
 
 To set the initial filtering state of the `{ComponentName}`, set the `{ComponentName}` `FilteringExpressionsTree` property to an array of `FilteringExpressionsTree` for each column to be filtered.
@@ -342,7 +344,33 @@ constructor() {
 }
 ```
 
-<!-- end: Angular, WebComponents -->
+```razor
+<{ComponentSelector}
+    FilteringExpressionsTree="filteringExpressions"
+    AllowFiltering="true"
+    FilterMode="FilterMode.QuickFilter"
+    ...
+
+@code {
+
+    protected override async Task OnInitializedAsync()
+    {
+        IgbFilteringExpressionsTree gridFilteringExpressionsTree = new IgbFilteringExpressionsTree() { Operator = FilteringLogic.And };
+        IgbFilteringExpression productFilteringExpressionsTree = new IgbFilteringExpression()
+            {
+            FieldName = "Category",
+            ConditionName = "contains",
+            IgnoreCase = true,
+            SearchVal = "Metals"
+        };
+    
+        gridFilteringExpressionsTree.FilteringOperands = new IgbFilteringExpression[1] { productFilteringExpressionsTree };
+        this.filteringExpressions = gridFilteringExpressionsTree;
+    }
+
+    public IgbFilteringExpressionsTree filteringExpressions;
+}
+```
 
 ### Filtering logic
 
