@@ -183,7 +183,7 @@ grid.groupBy({ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase:
 
 <!-- React -->
 ```typescript
-gridRef.current.groupBy([{ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase: true }]);
+gridRef.groupBy([{ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase: true }]);
 ```
 <!-- end: React -->
 
@@ -236,12 +236,12 @@ gridRef.current.groupBy([{ fieldName: 'ProductName', dir: SortingDirection.Desc,
 
 <!-- React -->
 ```typescript
-    const groupRow = gridRef.current.getRowByIndex(0).groupRow;
-    gridRef.current.toggleGroup(groupRow);
+    const groupRow = gridRef.getRowByIndex(0).groupRow;
+    gridRef.toggleGroup(groupRow);
 ```
 
 ```typescript
-    const groupRow = gridRef.current.getRowByIndex(0);
+    const groupRow = gridRef.getRowByIndex(0);
     groupRow.expanded = false;
 ```
 <!-- end: React -->
@@ -280,8 +280,8 @@ gridRef.current.groupBy([{ fieldName: 'ProductName', dir: SortingDirection.Desc,
 
 <!-- React -->
 ```typescript
-    const groupRow = gridRef.current.getRowByIndex(0).groupRow;
-    gridRef.current.selectRowsInGroup(groupRow);
+    const groupRow = gridRef.getRowByIndex(0).groupRow;
+    gridRef.selectRowsInGroup(groupRow);
 ```
 <!-- end: React -->
 
@@ -301,8 +301,8 @@ this.grid.SelectRowsInGroup(row.GroupRow, true);
 
 <!-- React -->
 ```typescript
-    const groupRow = gridRef.current.getRowByIndex(0).groupRow;
-    gridRef.current.deselectRowsInGroup(groupRow);
+    const groupRow = gridRef.getRowByIndex(0).groupRow;
+    gridRef.deselectRowsInGroup(groupRow);
 ```
 <!-- end: React -->
 
