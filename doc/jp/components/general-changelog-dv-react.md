@@ -10,6 +10,15 @@ _language: ja
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
+## **{PackageVerChanges-24-2-MAR1}**
+
+### {PackageGrids}
+次の表は、このリリースの {ProductName} ツールセットに対して行われたバグ修正を示しています。
+
+| バグ番号 | コントロール | 説明      |
+|------------|---------|------------------|
+|36864|グリッド|React ライセンス パッケージのインポート パス "grids/combined" が正しくない。|
+
 ## **{PackageVerChanges-24-2-MAR}**
 
 ### {PackageGrids}

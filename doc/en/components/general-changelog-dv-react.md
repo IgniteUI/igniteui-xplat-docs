@@ -31,6 +31,14 @@ All notable changes for each version of {ProductName} are documented on this pag
 ### Deprecations
 
 - The `Clicked` event of the `Button` is deprecated. Use the native `onClick` handler.
+## **{PackageVerChanges-24-2-MAR1}**
+
+### {PackageGrids}
+The following table lists the bug fixes made for the {ProductName} toolset for this release:
+
+| Bug Number | Control | Description      |
+|------------|---------|------------------|
+|36864|Grids|There is wrong import path "grids/combined" for the react licensed package|
 
 ## **{PackageVerChanges-24-2-MAR}**
 
