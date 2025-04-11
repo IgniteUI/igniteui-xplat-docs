@@ -10,6 +10,13 @@ namespace: Infragistics.Controls
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## **{PackageVerChanges-24-2-APR}**
+
+### {PackageGrids}
+
+- **All Grids** 
+  - Allow applying initial filtering through `FilteringExpressionsTree` property
+
 ## **{PackageVerChanges-24-2-FEB}**
 
 ### Enhancements
