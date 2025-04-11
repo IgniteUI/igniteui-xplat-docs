@@ -29,7 +29,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 ### {PackageGrids}
 
 - **All Grids** 
-  - Allow applying initial filtering through `FilteringExpressions` property
+  - Allow applying initial filtering through `FilteringExpressionsTree` property
 
 ## **{PackageVerChanges-24-2-MAR}**
 

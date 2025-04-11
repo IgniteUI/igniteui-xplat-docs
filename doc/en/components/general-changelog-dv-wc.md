@@ -12,22 +12,10 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerChanges-24-2-APR}**
 
-### New Components
-
-* TileManager
-
-### Enhancements
-
-#### List
-- Added new property on `ListItem` called `Selected`
-
-#### Accordion
-- Added new events `Open` and `Close`
-
 ### {PackageGrids}
 
 - **All Grids** 
-  - Allow applying initial filtering through `FilteringExpressions` property
+  - Allow applying initial filtering through `FilteringExpressionsTree` property
 
 ## **{PackageVerChanges-24-2-FEB}**
 

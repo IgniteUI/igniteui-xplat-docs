@@ -372,6 +372,31 @@ constructor() {
 }
 ```
 
+```tsx
+private filteringExpressions: IgrFilteringExpressionsTree;
+
+constructor(props: any) {
+    super(props);
+
+    const gridFilteringExpressionsTree = { operator: FilteringLogic.And } as IgrFilteringExpressionsTree;
+    const productFilteringExpressionsTree = { 
+        fieldName: "ProductName",
+        conditionName: "contains",
+        ignoreCase: true,
+        searchVal: "Chai"
+    } as IgrFilteringExpression;
+
+    gridFilteringExpressionsTree.filteringOperands = [ productFilteringExpressionsTree ];
+    this.filteringExpressions = gridFilteringExpressionsTree;
+}
+
+public render(): JSX.Element {
+    return ({ComponentSelector}
+        filteringExpressionsTree={this.filteringExpressions}
+        аllowFiltering={true}
+        filterMode="quickFilter"
+```
+
 ### Filtering logic
 
 The `FilteringLogic` property of the `{ComponentName}` controls how filtering multiple columns will resolve in the `{ComponentName}`. You can change it at any time through the `{ComponentName}` API, or through the `{ComponentName}` input property.
