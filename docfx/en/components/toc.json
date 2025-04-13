@@ -1715,6 +1715,12 @@
     "href": "inputs/input.md"
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "File Input",
+    "href": "inputs/file-input.md",
+    "status": "new"
+  },
+  {
     "exclude": ["Angular", "Blazor"],
     "name": "Mask Input",
     "href": "inputs/mask-input.md"
