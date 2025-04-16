@@ -348,24 +348,34 @@ constructor() {
 <{ComponentSelector}
     FilteringExpressionsTree="filteringExpressions"
     AllowFiltering="true"
-    FilterMode="FilterMode.QuickFilter"
-    ...
+    FilterMode="FilterMode.QuickFilter">
+</{ComponentSelector}>
 
 @code {
 
     protected override async Task OnInitializedAsync()
     {
         IgbFilteringExpressionsTree gridFilteringExpressionsTree = new IgbFilteringExpressionsTree() { Operator = FilteringLogic.And };
-        IgbFilteringExpression productFilteringExpressionsTree = new IgbFilteringExpression()
+
+        IgbFilteringExpression categoryFilteringExpressionsTree = new IgbFilteringExpression()
             {
             FieldName = "Category",
             ConditionName = "contains",
             IgnoreCase = true,
             SearchVal = "Metals"
         };
-    
-        gridFilteringExpressionsTree.FilteringOperands = new IgbFilteringExpression[1] { productFilteringExpressionsTree };
-        this.filteringExpressions = gridFilteringExpressionsTree;
+
+        IgbFilteringExpression typeFilteringExpressionsTree = new IgbFilteringExpression()
+        {
+            FieldName = "Type",
+            ConditionName = "contains",
+            IgnoreCase = true,
+            SearchVal = "e"
+        };
+
+        gridFilteringExpressionsTree.FilteringOperands = new IgbFilteringExpression[2] { categoryFilteringExpressionsTree, typeFilteringExpressionsTree };
+
+        filteringExpressions = gridFilteringExpressionsTree;
     }
 
     public IgbFilteringExpressionsTree filteringExpressions;
@@ -391,10 +401,12 @@ constructor(props: any) {
 }
 
 public render(): JSX.Element {
-    return ({ComponentSelector}
+    return (<{ComponentSelector}
         filteringExpressionsTree={this.filteringExpressions}
         аllowFiltering={true}
-        filterMode="quickFilter"
+        filterMode="quickFilter">
+    </{ComponentSelector}>);
+}
 ```
 
 ### Filtering logic
