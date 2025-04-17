@@ -329,16 +329,22 @@ public ngAfterViewInit() {
 
 ```typescript
 constructor() {
-    const gridFilteringExpressionsTree = new IgcFilteringExpressionsTree(FilteringLogic.And);
-    const productFilteringExpressionsTree = new IgcFilteringExpressionsTree(FilteringLogic.And, 'ProductName');
-    const productExpression = {
-        condition: IgcStringFilteringOperand.instance().condition('contains'),
-        fieldName: 'ProductName',
+    const gridFilteringExpressionsTree: IgcFilteringExpressionsTree = { operator: FilteringLogic.And };
+    const productFilteringExpressionsTree: IgcFilteringExpression = { 
+        fieldName: "ProductName",
+        conditionName: "contains",
         ignoreCase: true,
-        searchVal: 'c'
+        searchVal: "Chai"
     };
-    productFilteringExpressionsTree.filteringOperands.push(productExpression);
-    gridFilteringExpressionsTree.filteringOperands.push(productFilteringExpressionsTree);
+
+    const quantityFilteringExpressionsTree: IgcFilteringExpression = { 
+        fieldName: "QuantityPerUnit",
+        conditionName: "contains",
+        ignoreCase: true,
+        searchVal: "1"
+    };
+
+    gridFilteringExpressionsTree.filteringOperands = [ productFilteringExpressionsTree, quantityFilteringExpressionsTree ];
 
     this.grid.filteringExpressionsTree = gridFilteringExpressionsTree;
 }
@@ -396,7 +402,14 @@ constructor(props: any) {
         searchVal: "Chai"
     } as IgrFilteringExpression;
 
-    gridFilteringExpressionsTree.filteringOperands = [ productFilteringExpressionsTree ];
+    const quantityFilteringExpressionsTree = { 
+        fieldName: "QuantityPerUnit",
+        conditionName: "contains",
+        ignoreCase: true,
+        searchVal: "1"
+    } as IgrFilteringExpression;
+
+    gridFilteringExpressionsTree.filteringOperands = [ productFilteringExpressionsTree, quantityFilteringExpressionsTree ];
     this.filteringExpressions = gridFilteringExpressionsTree;
 }
 
