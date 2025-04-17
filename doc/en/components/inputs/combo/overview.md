@@ -163,7 +163,7 @@ const cities: City[] = [
 When the combo is bound to a list of complex data (i.e. objects), we need to specify a property that the control will use to handle item selection. The component exposes the following properties:
 
 <!-- end: Blazor -->
- - `T` - *Required, if `ValueKey` is omitted, this should be set to "object", otherwise this needs to match `ValueKey`.
+ - `T` - *Required, if `ValueKey` is omitted, this should be set to "object", otherwise this needs to match the property type of `ValueKey`.
 <!-- end: Blazor -->
  - `ValueKey` - *Optional,* ***required*** *for complex data object* - Determines which field of the data source will be used to make selections. If `ValueKey` is omitted, the selection API will use object references to select items.
  - `DisplayKey` - *Optional,* ***recommended*** *for complex data objects* - Determines which field in the data source is used as the display value. If no value is specified for `DisplayKey`, the combo will use the specified `ValueKey` (if any).
