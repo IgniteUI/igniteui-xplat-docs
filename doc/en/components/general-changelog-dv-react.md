@@ -31,6 +31,17 @@ All notable changes for each version of {ProductName} are documented on this pag
 ### Deprecations
 
 - The `clicked` event of the `Button` is deprecated. Use the native `onClick` handler.
+
+### Bug Fixes
+
+| Bug Number | Control | Description      |
+|------------|---------|------------------|
+|25602|IgrDataGrid|Loading a layout with one of the date-specific filter operators results in a TypeError console error|
+|28480|IgrCombo|Undefined reference error is thrown when a datasource is replaced|
+|30319|IgrDataGrid|Records are sorted despite no value changed|
+|36374|IgrInput|A previous value was bound when a form was submitted on any touch device|
+|36379|Excel|Colors with any alpha channel in an excel workbook fail to load|
+
 ## **{PackageVerChanges-24-2-MAR1}**
 
 ### {PackageGrids}
