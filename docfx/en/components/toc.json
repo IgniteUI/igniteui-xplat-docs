@@ -1759,6 +1759,12 @@
     "href": "inputs/ripple.md"
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Tooltip",
+    "href": "inputs/tooltip.md",
+    "status": "new"
+  },
+  {
     "exclude": ["Angular"],
     "name": "Slider & Range Slider",
     "href": "inputs/slider.md"
