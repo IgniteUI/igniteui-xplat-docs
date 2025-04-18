@@ -40,7 +40,6 @@ All notable changes for each version of {ProductName} are documented on this pag
 |30319|IgbDataGrid|Records are sorted despite no value changed|
 |36190|IgbCombo|When using enum to create a list, items cannot be correctly selected|
 |36374|IgbInput|A previous value was bound when a form was submitted on any touch device|
-|36379|Excel|Colors with any alpha channel in an excel workbook fail to load|
 
 ## **{PackageVerChanges-24-2-MAR}**
 
