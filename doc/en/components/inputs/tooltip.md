@@ -47,7 +47,7 @@ For a complete introduction to the {ProductName}, read the [*Getting Started*](.
 
 ### Tooltip target
 
-There are several ways to attach a tooltip to a desired element. The most common approach is using the `anchor` property on the `<igc-tooltip>` element. This property accepts either an element ID or a direct reference to an element. When using an ID reference, simply set the `anchor` property to the ID of the target element.
+To attach a tooltip to the desired element, use the `anchor` property on the `<igc-tooltip>` element. This property accepts either an element ID or a direct reference to an element. When using an ID reference, simply set the `anchor` property to the ID of the target element.
 
 ```html
 <igc-button id="target-button">Hover me</igc-button>
@@ -72,28 +72,6 @@ constructor() {
   tooltip.anchor = anchor;
 }
 ```
-
-If you don't use the `anchor` property, the Tooltip will default to using the first preceding sibling element as its target.
-
-```html
-<igc-button>Hover me</igc-button>
-<igc-tooltip>
-  Congrats you've hovered the button!
-</igc-tooltip>
-```
-
-In this case, the Tooltip targets the `<igc-button>`.
-
-```html
-<p>
-  Here is some text with a
-  <strong>element</strong>
-  <igc-tooltip>😎</igc-tooltip>
-  that has a tooltip.
-</p>
-```
-
-Here, the Tooltip targets the `<strong>` element.
 
 ### Tooltip content
 
