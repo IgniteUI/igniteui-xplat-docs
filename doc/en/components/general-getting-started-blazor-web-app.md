@@ -46,10 +46,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();
-builder.Services.AddIgniteUIBlazor(
-                typeof(IgbGridModule),
-                typeof(IgbInputModule)
-            );
+
+builder.Services.AddIgniteUIBlazor();
+
 var app = builder.Build();
 ```
 
@@ -57,10 +56,9 @@ Open the Client's **Program.cs** and add the same service.
 
 ```razor
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
-builder.Services.AddIgniteUIBlazor(
-                typeof(IgbGridModule),
-                typeof(IgbInputModule)
-            );
+
+builder.Services.AddIgniteUIBlazor();
+
 await builder.Build().RunAsync();
 ```
 
