@@ -41,7 +41,7 @@ defineComponents(IgcFileInputComponent);
 Now you can start with a basic configuration of the {Platform} File Input.
 
 ```html
-  <igc-file-input label="File Input" required=true></igc-file-input>
+<igc-file-input label="File Input" required=true></igc-file-input>
 ```
 
 For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
@@ -63,13 +63,13 @@ The File Input component offers a variety of properties that allow you to config
 * `placeholder` - Provides placeholder text displayed when no file is selected.
 
 ```html
-  <igc-file-input 
-    label="Files Input" 
-    accept=".jpg, .png, .gif"
-    placeholder="Files missing"
-    required
-    multiple>
-  </igc-file-input>
+<igc-file-input 
+  label="Files Input" 
+  accept=".jpg, .png, .gif"
+  placeholder="Files missing"
+  required
+  multiple>
+</igc-file-input>
 ```
 
 ### Methods 
@@ -93,13 +93,13 @@ The File Input component also exposes several slots that can be used to customiz
 * `invalid` – Allows you to render custom content when the input is in an invalid state.
 * `custom-error` - Displays content when a custom validation message is set using the `setCustomValidity()` method.
 
-`sample="/inputs/file-input/preffix-suffix", height="120", alt="{Platform} File Input Slots Example"`
+`sample="/inputs/file-input/prefix-suffix", height="120", alt="{Platform} File Input Slots Example"`
 
 ## Integration
 
 The File Input component integrates seamlessly with the HTML Form element. Using the methods and properties described above, you can effectively manage its behavior and validation within the standard HTML Forms.
 
-`sample="/inputs/file-input/form", height="120", alt="{Platform} File Input Form Example"`
+`sample="/inputs/file-input/form", height="190", alt="{Platform} File Input Form Example"`
 
 ## Limitations
 
@@ -148,7 +148,7 @@ igc-file-input::part(label) {
 }
 ```
 
-`sample="/inputs/input/styling", height="150", alt="{Platform} Input Styling"`
+`sample="/inputs/file-input/styling", height="120", alt="{Platform} File Input Styling"`
 
 <div class="divider"></div>
 
