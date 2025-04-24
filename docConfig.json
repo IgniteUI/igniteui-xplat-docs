@@ -556,6 +556,7 @@
             "TabPanel",
             "Tabs",
             "ToastComponent",
+            "TooltipComponent",
             "TreeComponent",
             "TreeItem",
             "VoidEventArgs"
