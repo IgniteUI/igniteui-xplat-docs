@@ -36,6 +36,8 @@ import { defineComponents, IgcFileInputComponent } from 'igniteui-webcomponents'
 defineComponents(IgcFileInputComponent);
 ```
 
+<!-- end: WebComponents -->
+
 Now you can start with a basic configuration of the {Platform} File Input.
 
 ```html
@@ -51,14 +53,14 @@ For a complete introduction to the {ProductName}, read the [*Getting Started*](.
 The File Input component offers a variety of properties that allow you to configure its behavior based on specific requirements. These properties give you control over the input’s functionality, appearance, and validation.
 
 * `value` - Sets the current value of the file input field.
-* `disabled` -	Disables the file input, preventing user interaction.
-* `required` -	Marks the input as mandatory. Form submission will be blocked unless a file is selected.
-* `invalid` -	Indicates that the input value is invalid, used to trigger visual error states.
-* `multiple` -	Allows the selection of multiple files.
-* `accept` -	Defines the types of files that can be selected. The value for this property needs to be a comma-separated list of file formats (e.g., .jpg, .png, .gif).
-* `autofocus` -	Automatically focuses the file input field when the page loads.
-* `label` -	Sets the label text associated with the file input element.
-* `placeholder` -	Provides placeholder text displayed when no file is selected.
+* `disabled` - Disables the file input, preventing user interaction.
+* `required` - Marks the input as mandatory. Form submission will be blocked unless a file is selected.
+* `invalid` - Indicates that the input value is invalid, used to trigger visual error states.
+* `multiple` - Allows the selection of multiple files.
+* `accept` - Defines the types of files that can be selected. The value for this property needs to be a comma-separated list of file formats (e.g., .jpg, .png, .gif).
+* `autofocus` - Automatically focuses the file input field when the page loads.
+* `label` - Sets the label text associated with the file input element.
+* `placeholder` - Provides placeholder text displayed when no file is selected.
 
 ```html
   <igc-file-input 
@@ -102,9 +104,8 @@ The File Input component integrates seamlessly with the HTML Form element. Using
 ## Limitations
 
 The File Input component currently has the following limitations:
-- The default text for the "Browse" button and the "No file chosen" message is not automatically localized. These texts remain the same across all locales but can be manually customized using the appropriate slots or placeholder binding.
-- Files cannot be set manually through the `value` property. File selection can be done only via the file picker.
-- When the `multiple` property is set, only the first selected file will be shown in the element value.
+- The default strings for the "Browse" button and the "No file chosen" message is not automatically localized. These strings remain the same across all locales but can be manually customized using the appropriate slots or placeholder binding.
+- Files cannot be set manually through the `value` property. File selection can be done only via the file picker. You can however pass an empty string `''` to reset the field.
 
 ## Accessibility & ARIA Support
 
