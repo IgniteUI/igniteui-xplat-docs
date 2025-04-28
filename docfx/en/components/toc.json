@@ -124,6 +124,12 @@
     "href": "nextjs-usage.md"
   },
   {
+    "exclude": ["Angular", "Blazor", "WebComponents"],
+    "name": "Update guide",
+    "href": "update-guide.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular"],
     "name": "Interactivity",
     "header": true,
