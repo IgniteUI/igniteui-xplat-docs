@@ -1,7 +1,7 @@
 ---
 title: 作業の開始 | {ProductName} | インフラジスティックス
 _description: インフラジスティックスの {Platform} コンポーネントを使用してアプリを作成し、世界最速の仮想化されたリアルタイムの {Platform} データ グリッドによるストリーミング ファイナンシャルおよびビジネス チャートで、データの視覚化を向上させます。
-_keywords: $ProductName$, Infragistics, Getting Started, インフラジスティックス, 作業の開始
+_keywords: {ProductName}, Infragistics, Getting Started, インフラジスティックス, 作業の開始
 _language: ja
 mentionedTypes: []
 ---
@@ -10,7 +10,7 @@ mentionedTypes: []
 このトピックでは、Visual Studio および Ignite UI for Blazor を使用して Blazor Web App アプリケーションを作成するための手順を説明します。
 
 ## 新しい Blazor Web App プロジェクトを作成する
-以下の手順では、新しい Blazor Web App プロジェクトを作成する方法を説明します。Ignite UI for Blazor を既存のアプリケーションに追加する場合は、[**Ignite UI for Blazor パッケージをインストール**](#install-ignite-ui-for-blazor) セクションに移動します。
+以下の手順では、新しい Blazor Web App プロジェクトを作成する方法を説明します。Ignite UI for Blazor を既存のアプリケーションに追加する場合は、[**Ignite UI for Blazor パッケージをインストール**](#ignite-ui-for-blazor-のインストール) セクションに移動します。
 
 Visual Studio 2022 を起動し、開始ページで **[新しいプロジェクトの作成]** をクリックし、**Blazor Web App** テンプレートを選択して、**[次へ]** をクリックします。
 
