@@ -9,6 +9,37 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## **{PackageVerChanges-24-2-APR}**
+
+### New Components
+
+* TileManager
+
+### Enhancements
+
+#### List
+- Added new property on `ListItem` called `Selected`
+
+#### Accordion
+- Added new events `Open` and `Close`
+
+### {PackageGrids}
+
+- **All Grids** 
+  - Allow applying initial filtering through `FilteringExpressionsTree` property
+
+### Deprecations
+
+- The `clicked` event of the `Button` is deprecated. Use the native `onClick` handler.
+## **{PackageVerChanges-24-2-MAR1}**
+
+### {PackageGrids}
+The following table lists the bug fixes made for the {ProductName} toolset for this release:
+
+| Bug Number | Control | Description      |
+|------------|---------|------------------|
+|36864|Grids|There is wrong import path "grids/combined" for the react licensed package|
+
 ## **{PackageVerChanges-24-2-MAR}**
 
 ### {PackageGrids}

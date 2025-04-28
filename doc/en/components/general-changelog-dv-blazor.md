@@ -12,6 +12,25 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 * As of version 2024.2, the Ignite UI for Blazor toolset supports .NET 9. For more information on .NET 9 please refer to [this article on Microsoft's site](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/overview).
 
+## **{PackageVerChanges-24-2-APR}**
+
+### New Components
+
+* IgbTileManager
+
+### Enhancements
+
+#### List
+- Added new property on `ListItem` called `Selected`
+
+#### Accordion
+- Added new events `Open` and `Close`
+
+### {PackageGrids}
+
+- **All Grids** 
+  - Allow applying initial filtering through `FilteringExpressionsTree` property
+
 ## **{PackageVerChanges-24-2-MAR}**
 
 ### {PackageGrids}

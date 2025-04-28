@@ -13,6 +13,25 @@ _language: ja
 
 * バージョン 2024.2 以降、Ignite UI for Blazor ツールセットは .NET 9 をサポートします。.NET 9 の詳細については、[Microsoft サイト](https://learn.microsoft.com/ja-jp/dotnet/core/whats-new/dotnet-9/overview)をご確認ください。
 
+## **{PackageVerChanges-24-2-APR}**
+
+### 新しいコンポーネント
+
+* IgbTileManager
+
+### 機能拡張
+
+#### List
+- `ListItem` に新しいプロパティ `Selected` を追加しました。
+
+#### Accordion
+- 新しいイベント `Open` および `Close` を追加しました。
+
+### {PackageGrids}
+
+- **すべてのグリッド**  
+  - `FilteringExpressionsTree` プロパティを使用して初期フィルタリングの適用が可能になりました。
+
 ## **{PackageVerChanges-24-2-MAR}**
 
 ### {PackageGrids}

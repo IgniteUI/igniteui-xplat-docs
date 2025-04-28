@@ -49,7 +49,8 @@ NuGet を使用した Ignite UI for Blazor のインストールの詳細につ�
 
 ## Ignite UI for Blazor の登録
 
-1 - **Program.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** 関数を呼び出して Ignite UI for Blazor サービスを登録します。
+1 - **MauiProgram.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** 関数を呼び出して Ignite UI for Blazor サービスを登録します。
+
 
 ```cs
 public static class MauiProgram

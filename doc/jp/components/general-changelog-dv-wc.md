@@ -11,6 +11,13 @@ _language: ja
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
+## **{PackageVerChanges-24-2-APR}**
+
+### {PackageGrids}
+
+- **すべてのグリッド**  
+  - `FilteringExpressionsTree` プロパティを使用して初期フィルタリングの適用が可能になりました。
+
 ## **{PackageVerChanges-24-2-FEB}**
 
 ### 機能拡張
