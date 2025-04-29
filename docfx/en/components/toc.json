@@ -45,6 +45,12 @@
       },
       {
 
+        "name": "Blazor Web App",
+        "href": "general-getting-started-blazor-web-app.md",
+        "status": ""
+      },
+      {
+
         "name": ".NET MAUI Blazor App",
         "href": "general-getting-started-blazor-maui.md",
         "status": ""
@@ -1715,6 +1721,12 @@
     "href": "inputs/input.md"
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "File Input",
+    "href": "inputs/file-input.md",
+    "status": "new"
+  },
+  {
     "exclude": ["Angular", "Blazor"],
     "name": "Mask Input",
     "href": "inputs/mask-input.md"
@@ -1757,6 +1769,12 @@
     "exclude": ["Angular"],
     "name": "Ripple",
     "href": "inputs/ripple.md"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Tooltip",
+    "href": "inputs/tooltip.md",
+    "status": "new"
   },
   {
     "exclude": ["Angular"],
