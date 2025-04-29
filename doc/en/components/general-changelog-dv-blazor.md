@@ -40,6 +40,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 |30319|IgbDataGrid|Records are sorted despite no value changed|
 |36190|IgbCombo|When using enum to create a list, items cannot be correctly selected|
 |36374|IgbInput|A previous value was bound when a form was submitted on any touch device|
+|37214|General|Intermittent error in Blazor's WebCallback.Register()
 
 ## **{PackageVerChanges-24-2-MAR}**
 
