@@ -17,6 +17,16 @@ All notable changes for each version of {ProductName} are documented on this pag
 - **All Grids** 
   - Allow applying initial filtering through `FilteringExpressionsTree` property
 
+### Bug Fixes
+
+| Bug Number | Control | Description      |
+|------------|---------|------------------|
+|25602|IgcDataGrid|Loading a layout with one of the date-specific filter operators results in a TypeError console error|
+|28480|IgcCombo|Undefined reference error is thrown when a datasource is replaced|
+|30319|IgcDataGrid|Records are sorted despite no value changed|
+|32598|IgcDataGrid|Multiselection is not working correctly
+|36374|IgcInput|A previous value was bound when a form was submitted on any touch device|
+
 ## **{PackageVerChanges-24-2-FEB}**
 
 ### Enhancements
