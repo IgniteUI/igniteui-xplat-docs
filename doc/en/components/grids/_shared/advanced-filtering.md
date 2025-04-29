@@ -55,7 +55,7 @@ constructor() {
 ```
 
 ```tsx
-<IgrGrid data={nwindData} autoGenerate="false" ref={gridRef} allowAdvancedFiltering="true">
+<IgrGrid data={nwindData} autoGenerate={false} ref={gridRef} allowAdvancedFiltering={true}>
     <IgrGridToolbar></IgrGridToolbar>
 </IgrGrid>
 ```
