@@ -37,8 +37,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 |------------|---------|------------------|
 |25602|IgbDataGrid|Loading a layout with one of the date-specific filter operators results in a TypeError console error|
 |28480|IgbCombo|Undefined reference error is thrown when a datasource is replaced|
-|30319|IgbDataGrid|Records are sorted despite no value changed|
-|36190|IgbCombo|When using enum to create a list, items cannot be correctly selected|
+|32598|IgbDataGrid|Multiselection is not working correctly
 |36374|IgbInput|A previous value was bound when a form was submitted on any touch device|
 |37214|General|Intermittent error in Blazor's WebCallback.Register()
 
