@@ -45,6 +45,12 @@
       },
       {
 
+        "name": "Blazor Web App",
+        "href": "general-getting-started-blazor-web-app.md",
+        "status": ""
+      },
+      {
+
         "name": ".NET MAUI Blazor のアプリケーション",
         "href": "general-getting-started-blazor-maui.md",
         "status": ""
@@ -1713,6 +1719,12 @@
     "href": "inputs/input.md"
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "ファイル入力",
+    "href": "inputs/file-input.md",
+    "status": "new"
+  },
+  {
     "exclude": ["Angular", "Blazor"],
     "name": "マスク入力",
     "href": "inputs/mask-input.md"
@@ -1755,6 +1767,12 @@
     "exclude": ["Angular"],
     "name": "リップル",
     "href": "inputs/ripple.md"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "ツールチップ",
+    "href": "inputs/tooltip.md",
+    "status": "new"
   },
   {
     "exclude": ["Angular"],
