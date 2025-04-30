@@ -301,6 +301,8 @@ this.grid.clearFilter();
 ```
 <!-- end: WebComponents -->
 
+<!-- end: Angular, WebComponents -->
+
 ## Initial filtered state
 
 To set the initial filtering state of the `{ComponentName}`, set the `{ComponentName}` `FilteringExpressionsTree` property to an array of `FilteringExpressionsTree` for each column to be filtered.
@@ -327,22 +329,98 @@ public ngAfterViewInit() {
 
 ```typescript
 constructor() {
-    const gridFilteringExpressionsTree = new IgcFilteringExpressionsTree(FilteringLogic.And);
-    const productFilteringExpressionsTree = new IgcFilteringExpressionsTree(FilteringLogic.And, 'ProductName');
-    const productExpression = {
-        condition: IgcStringFilteringOperand.instance().condition('contains'),
-        fieldName: 'ProductName',
+    const gridFilteringExpressionsTree: IgcFilteringExpressionsTree = { operator: FilteringLogic.And };
+    const productFilteringExpressionsTree: IgcFilteringExpression = { 
+        fieldName: "ProductName",
+        conditionName: "contains",
         ignoreCase: true,
-        searchVal: 'c'
+        searchVal: "Chai"
     };
-    productFilteringExpressionsTree.filteringOperands.push(productExpression);
-    gridFilteringExpressionsTree.filteringOperands.push(productFilteringExpressionsTree);
+
+    const quantityFilteringExpressionsTree: IgcFilteringExpression = { 
+        fieldName: "QuantityPerUnit",
+        conditionName: "contains",
+        ignoreCase: true,
+        searchVal: "1"
+    };
+
+    gridFilteringExpressionsTree.filteringOperands = [ productFilteringExpressionsTree, quantityFilteringExpressionsTree ];
 
     this.grid.filteringExpressionsTree = gridFilteringExpressionsTree;
 }
 ```
 
-<!-- end: Angular, WebComponents -->
+```razor
+<{ComponentSelector}
+    FilteringExpressionsTree="filteringExpressions"
+    AllowFiltering="true"
+    FilterMode="FilterMode.QuickFilter">
+</{ComponentSelector}>
+
+@code {
+
+    protected override async Task OnInitializedAsync()
+    {
+        IgbFilteringExpressionsTree gridFilteringExpressionsTree = new IgbFilteringExpressionsTree() { Operator = FilteringLogic.And };
+
+        IgbFilteringExpression categoryFilteringExpressionsTree = new IgbFilteringExpression()
+            {
+            FieldName = "Category",
+            ConditionName = "contains",
+            IgnoreCase = true,
+            SearchVal = "Metals"
+        };
+
+        IgbFilteringExpression typeFilteringExpressionsTree = new IgbFilteringExpression()
+        {
+            FieldName = "Type",
+            ConditionName = "contains",
+            IgnoreCase = true,
+            SearchVal = "e"
+        };
+
+        gridFilteringExpressionsTree.FilteringOperands = new IgbFilteringExpression[2] { categoryFilteringExpressionsTree, typeFilteringExpressionsTree };
+
+        filteringExpressions = gridFilteringExpressionsTree;
+    }
+
+    public IgbFilteringExpressionsTree filteringExpressions;
+}
+```
+
+```tsx
+private filteringExpressions: IgrFilteringExpressionsTree;
+
+constructor(props: any) {
+    super(props);
+
+    const gridFilteringExpressionsTree = { operator: FilteringLogic.And } as IgrFilteringExpressionsTree;
+    const productFilteringExpressionsTree = { 
+        fieldName: "ProductName",
+        conditionName: "contains",
+        ignoreCase: true,
+        searchVal: "Chai"
+    } as IgrFilteringExpression;
+
+    const quantityFilteringExpressionsTree = { 
+        fieldName: "QuantityPerUnit",
+        conditionName: "contains",
+        ignoreCase: true,
+        searchVal: "1"
+    } as IgrFilteringExpression;
+
+    gridFilteringExpressionsTree.filteringOperands = [ productFilteringExpressionsTree, quantityFilteringExpressionsTree ];
+    this.filteringExpressions = gridFilteringExpressionsTree;
+}
+
+public render(): JSX.Element {
+    return (<{ComponentSelector}
+        filteringExpressionsTree={this.filteringExpressions}
+        аllowFiltering={true}
+        filterMode="quickFilter">
+    </{ComponentSelector}>);
+}
+```
 
 ### Filtering logic
 

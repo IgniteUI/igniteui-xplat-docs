@@ -12,6 +12,35 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 * As of version 2024.2, the Ignite UI for Blazor toolset supports .NET 9. For more information on .NET 9 please refer to [this article on Microsoft's site](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/overview).
 
+## **{PackageVerChanges-24-2-APR}**
+
+### New Components
+
+* IgbTileManager
+
+### Enhancements
+
+#### List
+- Added new property on `ListItem` called `Selected`
+
+#### Accordion
+- Added new events `Open` and `Close`
+
+### {PackageGrids}
+
+- **All Grids** 
+  - Allow applying initial filtering through `FilteringExpressionsTree` property
+
+### Bug Fixes
+
+| Bug Number | Control | Description      |
+|------------|---------|------------------|
+|25602|IgbDataGrid|Loading a layout with one of the date-specific filter operators results in a TypeError console error|
+|28480|IgbCombo|Undefined reference error is thrown when a datasource is replaced|
+|32598|IgbDataGrid|Multiselection is not working correctly
+|36374|IgbInput|A previous value was bound when a form was submitted on any touch device|
+|37214|General|Intermittent error in Blazor's WebCallback.Register()
+
 ## **{PackageVerChanges-24-2-MAR}**
 
 ### {PackageGrids}

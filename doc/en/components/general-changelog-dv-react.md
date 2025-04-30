@@ -9,6 +9,69 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## **{PackageVerChanges-24-2-APR2}**
+> [!Note]With 19.0.0 the React product introduces many breaking changes done to improve and streamline the API. Please refer to the full [Update Guide](update-guide.md).
+
+### Removed
+- `CheckboxChangeEventArgs` removed, use `IgrCheckboxChangeEventArgs` instead.
+- `RadioChangeEventArgs` removed, use `IgrRadioChangeEventArgs` instead.
+- `IgrRangeSliderValue` removed, use `IgrRangeSliderValueEventArgs` instead.
+- `IgrActiveStepChangingArgs` removed, use `IgrActiveStepChangingEventArgs` instead.
+- `IgrActiveStepChangedArgs` removed, use `IgrActiveStepChangedEventArgs` instead.
+
+
+### Enhancements
+
+#### Stepper
+Stepper Step's `titlePosition` now defaults to `auto`, instead of being undefined, which has the same behavior.
+
+#### Tabs
+igr-tab `panel` property is removed.
+
+igr-tab-panel component is removed. The igr-tab now encompasses both the tab header and the tab content in a single component.
+
+## **{PackageVerChanges-24-2-APR}**
+
+### New Components
+
+* TileManager
+
+### Enhancements
+
+#### List
+- Added new property on `ListItem` called `Selected`
+
+#### Accordion
+- Added new events `Open` and `Close`
+
+### {PackageGrids}
+
+- **All Grids** 
+  - Allow applying initial filtering through `FilteringExpressionsTree` property
+
+### Deprecations
+
+- The `clicked` event of the `Button` is deprecated. Use the native `onClick` handler.
+
+### Bug Fixes
+
+| Bug Number | Control | Description      |
+|------------|---------|------------------|
+|25602|IgrDataGrid|Loading a layout with one of the date-specific filter operators results in a TypeError console error|
+|28480|IgrCombo|Undefined reference error is thrown when a datasource is replaced|
+|30319|IgrDataGrid|Records are sorted despite no value changed|
+|32598|IgrDataGrid|Multiselection is not working correctly
+|36374|IgrInput|A previous value was bound when a form was submitted on any touch device|
+
+## **{PackageVerChanges-24-2-MAR1}**
+
+### {PackageGrids}
+The following table lists the bug fixes made for the {ProductName} toolset for this release:
+
+| Bug Number | Control | Description      |
+|------------|---------|------------------|
+|36864|Grids|There is wrong import path "grids/combined" for the react licensed package|
+
 ## **{PackageVerChanges-24-2-MAR}**
 
 ### {PackageGrids}

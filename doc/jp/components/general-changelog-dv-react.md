@@ -10,6 +10,38 @@ _language: ja
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
+## **{PackageVerChanges-24-2-APR}**
+
+### 新しいコンポーネント
+
+* TileManager
+
+### 機能拡張
+
+#### List
+- `ListItem` に新しいプロパティ `Selected` を追加しました。
+
+#### Accordion
+- 新しいイベント `Open` および `Close` を追加しました。
+
+### {PackageGrids}
+
+- **すべてのグリッド**  
+  - `FilteringExpressionsTree` プロパティを使用して初期フィルタリングの適用が可能になりました。
+
+### 非推奨
+
+- `Button` の `clicked` イベントは非推奨となりました。代わりにネイティブの `onClick` ハンドラーを使用してください。
+
+## **{PackageVerChanges-24-2-MAR1}**
+
+### {PackageGrids}
+次の表は、このリリースの {ProductName} ツールセットに対して行われたバグ修正を示しています。
+
+| バグ番号 | コントロール | 説明      |
+|------------|---------|------------------|
+|36864|グリッド|React ライセンス パッケージのインポート パス "grids/combined" が正しくない。|
+
 ## **{PackageVerChanges-24-2-MAR}**
 
 ### {PackageGrids}
