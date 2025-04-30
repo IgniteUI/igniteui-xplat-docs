@@ -9,6 +9,28 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## **{PackageVerChanges-24-2-APR2}**
+
+Check out the [Update Guide](update-guide.md) to migrate to 19.0.0
+
+### Removed
+- `CheckboxChangeEventArgs` removed, use `IgrCheckboxChangeEventArgs` instead.
+- `RadioChangeEventArgs` removed, use `IgrRadioChangeEventArgs` instead.
+- `IgrRangeSliderValue` removed, use `IgrRangeSliderValueEventArgs` instead.
+- `IgrActiveStepChangingArgs` removed, use `IgrActiveStepChangingEventArgs` instead.
+- `IgrActiveStepChangedArgs` removed, use `IgrActiveStepChangedEventArgs` instead.
+
+
+### Enhancements
+
+#### Stepper
+Stepper Step's `titlePosition` now defaults to `auto`, instead of being undefined, which has the same behavior.
+
+#### Tabs
+igr-tab `panel` property is removed.
+
+igr-tab-panel component is removed. The igr-tab now encompasses both the tab header and the tab content in a single component.
+
 ## **{PackageVerChanges-24-2-APR}**
 
 ### New Components
