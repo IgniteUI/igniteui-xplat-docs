@@ -50,8 +50,7 @@ builder.Services.AddIgniteUIBlazor(
 ```
 
 ```tsx
-import { IgrComboModule, IgrCombo } from 'igniteui-react';
-IgrComboModule.register();
+import { IgrCombo } from 'igniteui-react';
 ```
 
 Then you should define the column template with the combo:
@@ -61,14 +60,13 @@ Then you should define the column template with the combo:
    <IgrColumn
     field="Country"
     header="Country"
-    bodyTemplate={webGridCountryDropDownTemplate}
-    name="column1">
+    bodyTemplate={webGridCountryDropDownTemplate}>
     </IgrColumn>
 ```
 
 ```tsx
-    function webGridCountryDropDownTemplate(props: {dataContext: IgrCellTemplateContext}) => {
-        var cell = props.dataContext.cell as any;
+    const webGridCountryDropDownTemplate = (ctx: IgrCellTemplateContext) => {
+        var cell = ctx.cell as any;
         if (cell === undefined) {
             return <></>;
         }
@@ -76,7 +74,7 @@ Then you should define the column template with the combo:
         const comboId = "country" + id;
         return (
         <>
-            <IgrCombo data={countries} ref={comboRefs} change={(x: any, args: any) => {onCountryChange(id, x, args) }} placeholder="Choose Country..." valueKey="Country" displayKey="Country" singleSelect="true" name={comboId}></IgrCombo>
+            <IgrCombo data={countries} ref={comboRefs} onChange={(event: CustomEvent) => { onCountryChange(id, event) }} placeholder="Choose Country..." valueKey="Country" displayKey="Country" singleSelect="true" name={comboId}></IgrCombo>
         </>
         );
     }
@@ -105,7 +103,7 @@ public webGridCountryDropDownTemplate: IgcRenderFunction<IgcCellTemplateContext>
 
 - `displayKey` - Required for object arrays - Specifies which property will be used for the items' text. If no value is specified for `displayKey`, the  combo will use the specified `valueKey` (if any).
 
-In order to handle the selection change, we need the `change` event. The emitted event arguments contain information about the selection prior to the change, the current selection and the items that were added or removed. Therefore, it will filter the values based on the selection of the previous combo.
+In order to handle the selection change, we need the `onChange` event. The emitted event arguments contain information about the selection prior to the change, the current selection and the items that were added or removed. Therefore, it will filter the values based on the selection of the previous combo.
 
 ```razor
 //In Javascript
@@ -163,10 +161,10 @@ public bindEventsCountryCombo(rowId: any, cell: any) {
 ```
 
 ```tsx
-    function onCountryChange(rowId: string, cmp: any, args:any) {
+    const onCountryChange = (rowId: string, event: CustomEvent) => {
         const regionCombo = comboRefCollection.get("region_" + rowId);
        setTimeout(() => {
-            const newValue = cmp.value[0];
+            const newValue = event.detail.newValue[0];
             if (newValue === undefined) {
                 regionCombo.deselect(regionCombo.value);
                 regionCombo.disabled = true;
