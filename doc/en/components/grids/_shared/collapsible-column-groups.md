@@ -215,7 +215,7 @@ public indTemplate = (ctx: IgcColumnTemplateContext) => {
 ```
 
 ```tsx
-<IgrColumnGroup id="info" header="Customer Information" collapsible="true" collapsibleIndicatorTemplate={this.collapsibleIndicatorTemplate}>
+<IgrColumnGroup id="info" header="Customer Information" collapsible="true" collapsibleIndicatorTemplate={collapsibleIndicatorTemplate}>
     <IgrColumn field="CustomerName" header="Fullname" dataType="String" visibleWhenCollapsed="true"></IgrColumn>
     <IgrColumn field="CustomerID" header="Customer ID" dataType="String" visibleWhenCollapsed="false"></IgrColumn>
     <IgrColumnGroup id="address" header="Customer Address" collapsible="true">
@@ -224,10 +224,10 @@ public indTemplate = (ctx: IgcColumnTemplateContext) => {
     </IgrColumnGroup>
 </IgrColumnGroup>
 
-function collapsibleIndicatorTemplate(e: { dataContext: IgrColumnTemplateContext }) {
+const collapsibleIndicatorTemplate = (ctx: IgrColumnTemplateContext) => {
     return (
     <div>
-        <IgrIcon iconName={e.dataContext.column.expanded ? 'remove' : 'add'}></IgrIcon>
+        <IgrIcon iconName={ctx.column.expanded ? 'remove' : 'add'}></IgrIcon>
     </div>)
 }
 ```
