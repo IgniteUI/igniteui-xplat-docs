@@ -73,17 +73,17 @@ Let's start by creating our `{ComponentName}` and binding it to our data. We wil
 ```
 
 ```tsx
-<IgrGrid autoGenerate="false" width="100%" height="560px" allowFiltering="true">
-    <IgrColumn field="ID" dataType="string" sortable="true" hidden="true"></IgrColumn>
-    <IgrColumn field="ContactName" dataType="String" sortable="true" hidden="true"></IgrColumn>
-    <IgrColumn field="ContactTitle" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="City" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="CompanyName" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="Fax" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="Address" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="PostalCode" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="Country" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="Phone" dataType="string" sortable="true"></IgrColumn>
+<IgrGrid autoGenerate={false} width="100%" height="560px" allowFiltering={true}>
+    <IgrColumn field="ID" dataType="string" sortable={true} hidden={true}></IgrColumn>
+    <IgrColumn field="ContactName" dataType="String" sortable={true} hidden={true}></IgrColumn>
+    <IgrColumn field="ContactTitle" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="City" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="CompanyName" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="Fax" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="Address" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="PostalCode" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="Country" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="Phone" dataType="string" sortable={true}></IgrColumn>
 </IgrGrid>
 ```
 <!-- ComponentEnd: Grid -->
@@ -138,18 +138,18 @@ Let's start by creating our `{ComponentName}` and binding it to our data. We wil
 ```
 
 ```tsx
-<IgrTreeGrid autoGenerate="false" width="100%" height="560px" allowFiltering="true">
-    <IgrColumn field="Name" dataType="string" sortable="true" hidden="true"></IgrColumn>
-    <IgrColumn field="ID" dataType="number" sortable="true" hidden="true"></IgrColumn>
-    <IgrColumn field="Title" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="HireDate" dataType="date" sortable="true"></IgrColumn>
-    <IgrColumn field="Age" dataType="number" sortable="true"></IgrColumn>
-    <IgrColumn field="Address" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="City" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="Country" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="Fax" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="PostalCode" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="Phone" dataType="string" sortable="true"></IgrColumn>
+<IgrTreeGrid autoGenerate={false} width="100%" height="560px" allowFiltering={true}>
+    <IgrColumn field="Name" dataType="string" sortable={true} hidden={true}></IgrColumn>
+    <IgrColumn field="ID" dataType="number" sortable={true} hidden={true}></IgrColumn>
+    <IgrColumn field="Title" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="HireDate" dataType="date" sortable={true}></IgrColumn>
+    <IgrColumn field="Age" dataType="number" sortable={true}></IgrColumn>
+    <IgrColumn field="Address" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="City" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="Country" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="Fax" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="PostalCode" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="Phone" dataType="string" sortable={true}></IgrColumn>
 </IgrTreeGrid>
 ```
 <!-- ComponentEnd: TreeGrid -->
@@ -176,12 +176,12 @@ Let's start by creating our `{ComponentName}` and binding it to our data. We wil
 ```
 
 ```tsx
-<IgrHierarchicalGrid autoGenerate="false" data={this.singersData} primaryKey="ID" allowFiltering="true"ref={this.hierarchicalGrid1Ref}>
-    <IgrColumn field="Artist" header="Artist" dataType="String" sortable="true"></IgrColumn>
+<IgrHierarchicalGrid autoGenerate={false} data={this.singersData} primaryKey="ID" allowFiltering={true} ref={this.hierarchicalGrid1Ref}>
+    <IgrColumn field="Artist" header="Artist" dataType="String" sortable={true}></IgrColumn>
     <IgrColumn field="Photo" header="Photo" dataType="Image"></IgrColumn>
-    <IgrColumn field="Debut" header="Debut" dataType="Number" hidden="true"></IgrColumn>
-    <IgrColumn field="GrammyNominations" header="Grammy Nominations" dataType="Number" sortable="true" hidden="true"></IgrColumn>
-    <IgrColumn field="GrammyAwards" header="Grammy Awards" dataType="Number" sortable="true"></IgrColumn>
+    <IgrColumn field="Debut" header="Debut" dataType="Number" hidden={true}></IgrColumn>
+    <IgrColumn field="GrammyNominations" header="Grammy Nominations" dataType="Number" sortable={true} hidden={true}></IgrColumn>
+    <IgrColumn field="GrammyAwards" header="Grammy Awards" dataType="Number" sortable={true}></IgrColumn>
 </IgrHierarchicalGrid>
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -239,9 +239,9 @@ For this purpose all we have to do is set both the `GridToolbarActions` and the 
 
 ```tsx
 <IgrGrid>
-    <IgrGridToolbar key="toolbar">
-        <IgrGridToolbarActions key="toolbarActions">
-            <IgrGridToolbarHiding key="toolbarHiding"></IgrGridToolbarHiding>
+    <IgrGridToolbar>
+        <IgrGridToolbarActions>
+            <IgrGridToolbarHiding></IgrGridToolbarHiding>
         </IgrGridToolbarActions>
     </IgrGridToolbar>
 </IgrGrid>
@@ -294,9 +294,9 @@ For this purpose all we have to do is set both the `GridToolbarActions` and the 
 <!-- ComponentStart: TreeGrid -->
 ```tsx
 <IgrTreeGrid>
-    <IgrGridToolbar key="toolbar">
-        <IgrGridToolbarActions key="toolbarActions">
-            <IgrGridToolbarHiding key="toolbarHiding"></IgrGridToolbarHiding>
+    <IgrGridToolbar>
+        <IgrGridToolbarActions>
+            <IgrGridToolbarHiding></IgrGridToolbarHiding>
         </IgrGridToolbarActions>
     </IgrGridToolbar>
 </IgrTreeGrid>
@@ -398,9 +398,9 @@ By using the `Title` property, we will set the title that is displayed inside th
 
 ```tsx
 <IgrGrid>
-    <IgrGridToolbar key="toolbar">
-        <IgrGridToolbarActions key="toolbarActions">
-            <IgrGridToolbarHiding key="toolbarHiding" title="Column Hiding"></IgrGridToolbarHiding>
+    <IgrGridToolbar>
+        <IgrGridToolbarActions>
+            <IgrGridToolbarHiding title="Column Hiding"></IgrGridToolbarHiding>
         </IgrGridToolbarActions>
     </IgrGridToolbar>
 </IgrGrid>
@@ -453,9 +453,9 @@ By using the `Title` property, we will set the title that is displayed inside th
 <!-- ComponentStart: TreeGrid -->
 ```tsx
 <IgrTreeGrid>
-    <IgrGridToolbar key="toolbar">
-        <IgrGridToolbarActions key="toolbarActions">
-            <IgrGridToolbarHiding key="toolbarHiding" title="Column Hiding"></IgrGridToolbarHiding>
+    <IgrGridToolbar>
+        <IgrGridToolbarActions>
+            <IgrGridToolbarHiding title="Column Hiding"></IgrGridToolbarHiding>
         </IgrGridToolbarActions>
     </IgrGridToolbar>
 </IgrTreeGrid>
@@ -509,9 +509,9 @@ By using the `Title` property, we will set the title that is displayed inside th
 <!-- ComponentStart: HierarchicalGrid -->
 ```tsx
 <IgrHierarchicalGrid>
-    <IgrGridToolbar key="toolbar">
-        <IgrGridToolbarActions key="toolbarActions">
-            <IgrGridToolbarHiding key="toolbarHiding" title="Column Hiding"></IgrGridToolbarHiding>
+    <IgrGridToolbar>
+        <IgrGridToolbarActions>
+            <IgrGridToolbarHiding title="Column Hiding"></IgrGridToolbarHiding>
         </IgrGridToolbarActions>
     </IgrGridToolbar>
 </IgrHierarchicalGrid>
@@ -696,8 +696,8 @@ We can easily prevent the user from being able to hide columns through the colum
 
 ```tsx
 <IgrGrid>
-    <IgrColumn field="ContactName" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
-    <IgrColumn field="ContactTitle" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
+    <IgrColumn field="ContactName" dataType="string" sortable={true} disableHiding={true}></IgrColumn>
+    <IgrColumn field="ContactTitle" dataType="string" sortable={true} disableHiding={true}></IgrColumn>
 </IgrGrid>
 ```
 
@@ -726,8 +726,8 @@ We can easily prevent the user from being able to hide columns through the colum
 
 ```tsx
 <IgrTreeGrid>
-    <IgrColumn field="Name" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
-    <IgrColumn field="Title" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
+    <IgrColumn field="Name" dataType="string" sortable={true} disableHiding={true}></IgrColumn>
+    <IgrColumn field="Title" dataType="string" sortable={true} disableHiding={true}></IgrColumn>
 </IgrTreeGrid>
 ```
 
@@ -764,11 +764,11 @@ We can easily prevent the user from being able to hide columns through the colum
 
 ```tsx
 <IgrHierarchicalGrid>
-    <IgrColumn field="Artist" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
-    <IgrColumn field="GrammyAwards" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
+    <IgrColumn field="Artist" dataType="string" sortable={true} disableHiding={true}></IgrColumn>
+    <IgrColumn field="GrammyAwards" dataType="string" sortable={true} disableHiding={true}></IgrColumn>
 
     <IgrRowIsland>
-        <IgrColumn field="Album" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
+        <IgrColumn field="Album" dataType="string" sortable={true} disableHiding={true}></IgrColumn>
     </IgrRowIsland>
 </IgrHierarchicalGrid>
 ```
@@ -965,7 +965,7 @@ In order to achieve that, we will use a class that we will first assign to the g
 ```
 
 ```tsx
-<{ComponentSelector} id="treeGrid"></{ComponentSelector}>
+<{ComponentSelector} className="tree-grid"></{ComponentSelector}>
 ```
 <!-- ComponentEnd: TreeGrid -->
 
@@ -1021,7 +1021,7 @@ Then set the related CSS variables for the related components. We will apply the
 
 <!-- ComponentStart: TreeGrid -->
 ```css
-#treeGrid {
+.tree-grid {
     /* Main Column Actions styles */
     --ig-column-actions-background-color: #292826;
     --ig-column-actions-title-color: #ffcd0f;
@@ -1055,7 +1055,7 @@ Then set the related CSS variables for the related components. We will apply the
 
 <!-- ComponentStart: HierarchicalGrid -->
 ```css
-#hierarchicalGrid {
+.hierarchical-grid {
     /* Main Column Actions styles */
     --ig-column-actions-background-color: #292826;
     --ig-column-actions-title-color: #ffcd0f;
