@@ -10,7 +10,9 @@ namespace: Infragistics.Controls.Charts
 All notable changes for each version of {ProductName} are documented on this page.
 
 ## **{PackageVerChanges-24-2-APR2}**
-> [!Note]With 19.0.0 the React product introduces many breaking changes done to improve and streamline the API. Please refer to the full [Update Guide](update-guide.md).
+> [!Note]With 19.0.0 the React product introduces many breaking changes done to improve and streamline the API. Please refer to the full Update Guide.
+
+[Update Guide](update-guide.md)
 
 ### Removed
 - `CheckboxChangeEventArgs` removed, use `IgrCheckboxChangeEventArgs` instead.
