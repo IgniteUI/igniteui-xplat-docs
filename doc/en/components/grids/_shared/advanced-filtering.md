@@ -55,7 +55,7 @@ constructor() {
 ```
 
 ```tsx
-<IgrGrid data={nwindData} autoGenerate="false" ref={gridRef} allowAdvancedFiltering="true">
+<IgrGrid data={nwindData} autoGenerate={false} ref={gridRef} allowAdvancedFiltering={true}>
     <IgrGridToolbar></IgrGridToolbar>
 </IgrGrid>
 ```
@@ -78,12 +78,6 @@ constructor() {
     let treeGrid = document.getElementById("treeGrid") as IgcTreeGridComponent;
     treeGrid.data = this.data
 }
-```
-
-```tsx
-<IgrTreeGrid data={nwindData} autoGenerate="false" allowAdvancedFiltering="true">
-    <IgrGridToolbar></IgrGridToolbar>
-</IgrTreeGrid>
 ```
 
 ```razor
@@ -115,16 +109,35 @@ constructor() {
 </IgbHierarchicalGrid>
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- ComponentStart: TreeGrid -->
+```razor
+<IgbTreeGrid Data=data AutoGenerate="true" AllowAdvancedFiltering="true">
+    <IgbGridToolbar></IgbGridToolbar>
+</IgbTreeGrid>
+```
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- end: Blazor -->
 
 <!-- React -->
 <!-- ComponentStart: HierarchicalGrid -->
 ```tsx
-<IgrHierarchicalGrid data={nwindData} autoGenerate="false" allowAdvancedFiltering="true">
+<IgrHierarchicalGrid data={nwindData} autoGenerate={false} allowAdvancedFiltering={true}>
     <IgrGridToolbar></IgrGridToolbar>
 </IgrHierarchicalGrid>
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- ComponentStart: TreeGrid -->
+```tsx
+<IgrTreeGrid data={nwindData} autoGenerate={false} allowAdvancedFiltering={true}>
+    <IgrGridToolbar></IgrGridToolbar>
+</IgrTreeGrid>
+```
+<!-- ComponentEnd: TreeGrid -->
+
+
 <!-- end: React -->
 
 The advanced filtering generates a `FilteringExpressionsTree` which is stored in the `AdvancedFilteringExpressionsTree` input property. You could use the `AdvancedFilteringExpressionsTree` property to set an initial state of the advanced filtering.
