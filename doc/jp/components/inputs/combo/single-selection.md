@@ -60,7 +60,7 @@ combo.select('BG01');
 <!-- React -->
 ```tsx
 // select the item matching the 'BG01' value of the value key field.
-comboRef.current.select('BG01');
+comboRef.select('BG01');
 ```
 <!-- end: React -->
 
@@ -88,7 +88,7 @@ combo.deselect('BG01');
 <!-- React -->
 ```tsx
 // deselect the item matching the 'BG01' value of the value key field.
-comboRef.current.deselect('BG01');
+comboRef.deselect('BG01');
 ```
 <!-- end: React -->
 

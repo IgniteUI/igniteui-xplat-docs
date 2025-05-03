@@ -80,7 +80,7 @@ In order to display the banner component, use its `Show` method and call it on a
 ```
 
 ```tsx
-<IgrButton clicked={() => bannerRef.current.show()}>
+<IgrButton clicked={() => bannerRef.show()}>
     <span>Show Banner</span>
 </IgrButton>
 
@@ -211,7 +211,7 @@ The `Banner` exposes the `actions` slot for templating the banner buttons. This 
     <IgrIcon key="icon" slot="prefix" name="signal_wifi_off"></IgrIcon>
     <span key="message">You have lost connection to the internet. This app is offline.</span>
     <div key="actions" slot="actions">
-        <IgrButton key="button" variant="flat" clicked={() => bannerRef.current.toggle()}>
+        <IgrButton key="button" variant="flat" clicked={() => bannerRef.toggle()}>
             <IgrRipple key="ripple" />
             <span key="action-text">Toggle Banner</span>
         </IgrButton>
@@ -270,7 +270,7 @@ banner.addEventListener('igcClosing', (event) => {
 const bannerRef = useRef<IgrBanner>(null);
 
 useEffect(() => {
-    bannerRef.current.nativeElement.addEventListener('igcClosing', (event) => {
+    bannerRef.nativeElement.addEventListener('igcClosing', (event) => {
         event.preventDefault();
     });
 }, [])
@@ -331,7 +331,7 @@ Let's create a banner with two custom buttons - one for dismissing the notificat
     <IgrIcon key="icon" slot="prefix" name="signal_wifi_off"></IgrIcon>
     <span key="message">You have lost connection to the internet. This app is offline.</span>
     <div key="actions" slot="actions">
-        <IgrButton key="button-offline" variant="flat" clicked={() => bannerRef.current.hide()}>
+        <IgrButton key="button-offline" variant="flat" clicked={() => bannerRef.hide()}>
             <IgrRipple key="ripple-offline" />
             <span key="action-offline">Continue Offline</span>
         </IgrButton>
@@ -446,11 +446,11 @@ const [wifiState, setWifiState] = useState(false);
 
 function refreshBanner() {
     if (!wifiState) {
-        iconRef.current.name = 'signal_wifi_4_bar';
-        bannerRef.current.hide();
+        iconRef.name = 'signal_wifi_4_bar';
+        bannerRef.hide();
     } else {
-        iconRef.current.name = 'signal_wifi_off';
-        bannerRef.current.show();
+        iconRef.name = 'signal_wifi_off';
+        bannerRef.show();
     }
     setWifiState(current => !current);
 }

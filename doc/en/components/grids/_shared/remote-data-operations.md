@@ -967,7 +967,7 @@ and finally set up the method for loading the data:
         setData(response.items);
         // Stop loading when data is retrieved
         setIsLoading(false);
-        paginator.current.totalRecords = response.totalRecordsCount;
+        paginator.totalRecords = response.totalRecordsCount;
       })
       .catch((error) => {
         console.error(error.message);
@@ -1264,7 +1264,7 @@ next set up the method for loading the data:
         setData(response.items);
         // Stop loading when data is retrieved
         setIsLoading(false);
-        paginator.current.totalRecords = response.totalRecordsCount;
+        paginator.totalRecords = response.totalRecordsCount;
       })
       .catch((error) => {
         console.error(error.message);

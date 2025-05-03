@@ -104,7 +104,7 @@ const date = new Date();
 DatePicker.value = date;
 ```
 ```tsx
-datePickerRef.current.value = new Date();
+datePickerRef.value = new Date();
 ```
 ```Razor
 <IgbDatePicker @ref="DatePicker" Value="@SelectedDate">
@@ -143,7 +143,7 @@ With prefix and suffix slots we can add different content before and after the m
         name="arrow_upward" 
         collection="material" 
         class="small" 
-        onClick={() => datePickerRef.current.stepUp(DatePart.Month)}>
+        onClick={() => datePickerRef.stepUp(DatePart.Month)}>
     </IgrIcon>
 </IgrDatePicker>
 ```
@@ -193,7 +193,7 @@ The picker's action buttons can be templated using the `actions` slot:
 <IgrDatePicker>
     <IgrButton 
         slot='actions' 
-        onClick={() => datePickerRef.current.showWeekNumbers = true}>
+        onClick={() => datePickerRef.showWeekNumbers = true}>
         <span>Show Week Numbers</span>
     </IgrButton>
 </IgrDatePicker>
@@ -263,13 +263,13 @@ The `DatePicker` exposes `StepUp` and `StepDown` methods. Both of which come fro
         slot="prefix" 
         name="arrow_upward" 
         collection="material" 
-        onClick={() => datePickerRef.current.stepUp(DatePart.Month)}>
+        onClick={() => datePickerRef.stepUp(DatePart.Month)}>
     </IgrIcon>
     <IgrIcon 
         slot="suffix" 
         name="arrow_downward" 
         collection="material" 
-        onClick={() => datePickerRef.current.stepDown(DatePart.Month)}>
+        onClick={() => datePickerRef.stepDown(DatePart.Month)}>
     </IgrIcon>
 </IgrDatePicker>
 ```

@@ -96,7 +96,7 @@ this.grid.getRowByIndex(0).pinned = true;
 <!-- end: Angular, WebComponents -->
 
 ```tsx
-gridRef.current.getRowByIndex(0).pinned = true;
+gridRef.getRowByIndex(0).pinned = true;
 ```
 
 ```razor
@@ -113,8 +113,8 @@ this.grid.unpinRow('ALFKI');
 <!-- end: Angular, WebComponents -->
 
 ```tsx
-gridRef.current.pinRow('ALFKI');
-gridRef.current.unpinRow('ALFKI');
+gridRef.pinRow('ALFKI');
+gridRef.unpinRow('ALFKI');
 ```
 
 

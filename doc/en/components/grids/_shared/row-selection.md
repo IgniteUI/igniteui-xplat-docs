@@ -276,7 +276,7 @@ public onClickSelect() {
 
 ```tsx
 function onClickSelect() {
-    gridRef.current.selectRows([1,2,5], true);
+    gridRef.selectRows([1,2,5], true);
 }
 
 <{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate="true" ref={gridRef}>
@@ -346,7 +346,7 @@ public onClickDeselect() {
 
 ```tsx
 function onClickDeselect() {
-    gridRef.current.deselectRows([1,2,5]);
+    gridRef.deselectRows([1,2,5]);
 }
 
 <{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate="true" ref={gridRef}>
@@ -467,7 +467,7 @@ public getSelectedRows() {
 
 ```tsx
 function getSelectedRows() {
-    return gridRef.current.selectedRows;
+    return gridRef.selectedRows;
 }
 ```
 

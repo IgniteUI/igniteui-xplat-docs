@@ -287,11 +287,11 @@ public nextSearch(){
 ```tsx
 function handleOnSearchChange(input: IgrInput, event: IgrComponentValueChangedEventArgs) {
     setSearchText(event.detail);
-    gridRef.current.findNext(event.detail, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    gridRef.findNext(event.detail, caseSensitiveChipRef.selected, exactMatchChipRef.selected);
 }
 
 function nextSearch() {
-    gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    gridRef.findNext(searchText, caseSensitiveChipRef.selected, exactMatchChipRef.selected);
 }
 
 
@@ -331,11 +331,11 @@ public void NextSearch()
 ```tsx
 function handleOnSearchChange(input: IgrInput, event: IgrComponentValueChangedEventArgs) {
     setSearchText(event.detail);
-    gridRef.current.findNext(event.detail, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    gridRef.findNext(event.detail, caseSensitiveChipRef.selected, exactMatchChipRef.selected);
 }
 
 function nextSearch() {
-    gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    gridRef.findNext(searchText, caseSensitiveChipRef.selected, exactMatchChipRef.selected);
 }
 
 
@@ -476,11 +476,11 @@ public nextSearch() {
 
 ```tsx
 function prevSearch() {
-    gridRef.current.findPrev(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    gridRef.findPrev(searchText, caseSensitiveChipRef.selected, exactMatchChipRef.selected);
 }
 
 function nextSearch() {
-    gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    gridRef.findNext(searchText, caseSensitiveChipRef.selected, exactMatchChipRef.selected);
 }
 
 <IgrIconButton key="prevIconButton" ref={iconButtonPrevRef} variant="flat" name="prev" collection="material" clicked={prevSearch}>
@@ -545,10 +545,10 @@ public onSearchKeydown(evt: KeyboardEvent) {
 function searchKeyDown(e: KeyboardEvent<HTMLElement>) {
     if (e.key === 'Enter') {
         e.preventDefault();
-        gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+        gridRef.findNext(searchText, caseSensitiveChipRef.selected, exactMatchChipRef.selected);
     } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
         e.preventDefault();
-        gridRef.current.findPrev(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+        gridRef.findPrev(searchText, caseSensitiveChipRef.selected, exactMatchChipRef.selected);
     }
 }
 
@@ -611,16 +611,16 @@ public onSearchKeydown(evt: KeyboardEvent) {
 function searchKeyDown(e: KeyboardEvent<HTMLElement>) {
     if (e.key === 'Enter' || e.key === 'ArrowDown') {
         e.preventDefault();
-        gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+        gridRef.findNext(searchText, caseSensitiveChipRef.selected, exactMatchChipRef.selected);
     } else if (e.key === 'ArrowUp') {
         e.preventDefault();
-        gridRef.current.findPrev(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+        gridRef.findPrev(searchText, caseSensitiveChipRef.selected, exactMatchChipRef.selected);
     }
 }
 
 function handleOnSearchChange(input: IgrInput, event: IgrComponentValueChangedEventArgs) {
     setSearchText(event.detail);
-    gridRef.current.findNext(event.detail, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    gridRef.findNext(event.detail, caseSensitiveChipRef.selected, exactMatchChipRef.selected);
 }
 
 <div onKeyDown={searchKeyDown}>
@@ -770,7 +770,7 @@ const caseSensitiveChipRef = useRef<IgrChip>(null);
 const exactMatchChipRef = useRef<IgrChip>(null);
 
 function updateSearch() {
-    gridRef.current.findNext("searchValue", caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    gridRef.findNext("searchValue", caseSensitiveChipRef.selected, exactMatchChipRef.selected);
 }
 
 <IgrChip ref={caseSensitiveChipRef} key="caseSensitiveChip" selectable="true">
@@ -965,14 +965,14 @@ const clearIconText =
 
 useEffect(() => {
      if (searchIconRef?.current) {
-      searchIconRef.current.registerIconFromText("search", searchIconText, "material");
-      searchIconRef.current.registerIconFromText("clear", clearIconText, "material");
+      searchIconRef.registerIconFromText("search", searchIconText, "material");
+      searchIconRef.registerIconFromText("clear", clearIconText, "material");
     }
     if (iconButtonPrevRef?.current) {
-        iconButtonPrevRef.current.registerIconFromText("prev", prevIconText, "material");
+        iconButtonPrevRef.registerIconFromText("prev", prevIconText, "material");
     }
     if (iconButtonNextRef?.current) {
-        iconButtonNextRef.current.registerIconFromText("next", nextIconText, "material");
+        iconButtonNextRef.registerIconFromText("next", nextIconText, "material");
     }
 }, []);
 
@@ -1081,20 +1081,20 @@ const clearIconText =
 
 useEffect(() => {
     if (searchIconRef?.current) {
-        searchIconRef.current.registerIconFromText("search", searchIconText, "material");
-        searchIconRef.current.registerIconFromText("clear", clearIconText, "material");
+        searchIconRef.registerIconFromText("search", searchIconText, "material");
+        searchIconRef.registerIconFromText("clear", clearIconText, "material");
     }
     if (iconButtonPrevRef?.current) {
-        iconButtonPrevRef.current.registerIconFromText("prev", prevIconText,"material");
+        iconButtonPrevRef.registerIconFromText("prev", prevIconText,"material");
     }
     if (iconButtonNextRef?.current) {
-        iconButtonNextRef.current.registerIconFromText("next", nextIconText, "material");
+        iconButtonNextRef.registerIconFromText("next", nextIconText, "material");
     }
 }, []);
 
 function clearSearch() {
   setSearchText('');
-  gridRef.current.clearSearch();
+  gridRef.clearSearch();
 }
 
 <IgrInput name="searchBox" value={searchText} inputOcurred={handleOnSearchChange}>
@@ -1277,10 +1277,10 @@ constructor() {
 </div>
 
 function handleCaseSensitiveChange(chip: IgrChip, event: IgrComponentBoolValueChangedEventArgs) {
-  gridRef.current.findNext(searchText, event.detail, exactMatchChipRef.current.selected);
+  gridRef.findNext(searchText, event.detail, exactMatchChipRef.selected);
 }
 function handleExactMatchChange(chip: IgrChip, event: IgrComponentBoolValueChangedEventArgs) {
-  gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, event.detail);
+  gridRef.findNext(searchText, caseSensitiveChipRef.selected, event.detail);
 }
 ```
 
@@ -1372,11 +1372,11 @@ public nextSearch() {
 
 ```tsx
 function prevSearch() {
-    gridRef.current.findPrev(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    gridRef.findPrev(searchText, caseSensitiveChipRef.selected, exactMatchChipRef.selected);
 }
 
 function nextSearch() {
-    gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    gridRef.findNext(searchText, caseSensitiveChipRef.selected, exactMatchChipRef.selected);
 }
 
 <div slot="suffix" key="buttonsSuffix">
