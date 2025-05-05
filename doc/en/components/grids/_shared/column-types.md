@@ -576,7 +576,7 @@ function formatCurrency(value: number) {
     return `$ ${value.toFixed(0)}`;
 }
 
-<{ComponentSelector} autoGenerate="false">
+<{ComponentSelector} autoGenerate={false}>
     <IgrColumn formatter={formatCurrency} field="UnitsInStock"></IgrColumn>
 </{ComponentSelector}>
 ```
