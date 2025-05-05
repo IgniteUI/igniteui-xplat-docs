@@ -366,7 +366,7 @@ igRegisterScript("WebGridPinHeaderTemplate", (ctx) => {
 
 <!-- React -->
 ```tsx
-<IgrGrid autoGenerate={false} data={CustomersData} name="grid" ref={grid}>
+<IgrGrid autoGenerate={false} data={CustomersData} ref={grid}>
     <IgrColumn field="ID" hidden={true}></IgrColumn>
 
     <IgrColumn field="CompanyName" header="Company" width="300px" 
@@ -748,6 +748,10 @@ In case you would like to change some of the colors, you need to set an `ID` for
 
 ```razor
 <{ComponentSelector} Id="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} id="grid"></{ComponentSelector}>
 ```
 
 Then set the related CSS properties to this class:
