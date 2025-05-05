@@ -61,8 +61,8 @@ constructor() {
 ```
 <!-- React -->
 ```tsx
-<{ComponentName} data={nwindData} autoGenerate="false">
-    <IgrColumn field="Name" pinned="true"></IgrColumn>
+<{ComponentName} data={nwindData} autoGenerate={false}>
+    <IgrColumn field="Name" pinned={true}></IgrColumn>
     <IgrColumn field="AthleteNumber"></IgrColumn>
     <IgrColumn field="TrackProgress"></IgrColumn>
 </{ComponentName}>
@@ -239,7 +239,7 @@ pinningConfig.columns = ColumnPinningPosition.End;
 ```
 
 ```tsx
-<IgrGrid data={nwindData} autoGenerate="true" pinning={pinningConfig}></IgrGrid>
+<IgrGrid data={nwindData} autoGenerate={true} pinning={pinningConfig}></IgrGrid>
 ```
 <!-- end: React -->
 
@@ -366,22 +366,22 @@ igRegisterScript("WebGridPinHeaderTemplate", (ctx) => {
 
 <!-- React -->
 ```tsx
-<IgrGrid autoGenerate="false" data={CustomersData} name="grid" ref={grid}>
-    <IgrColumn field="ID" hidden="true"></IgrColumn>
+<IgrGrid autoGenerate={false} data={CustomersData} name="grid" ref={grid}>
+    <IgrColumn field="ID" hidden={true}></IgrColumn>
 
     <IgrColumn field="CompanyName" header="Company" width="300px" 
-    name="column1" headerTemplate={toggleColumnPin}></IgrColumn>
+    headerTemplate={toggleColumnPin}></IgrColumn>
 
-    <IgrColumn field="ContactName" header="Name" width="200px" pinned="true"
-    name="column2" headerTemplate={toggleColumnPin}> </IgrColumn>
+    <IgrColumn field="ContactName" header="Name" width="200px" pinned={true}
+    headerTemplate={toggleColumnPin}> </IgrColumn>
 
-    <IgrColumn field="ContactTitle" header="Title" width="200px" pinned="true"
-    name="column3" headerTemplate={toggleColumnPin}> </IgrColumn>
+    <IgrColumn field="ContactTitle" header="Title" width="200px" pinned={true}
+    headerTemplate={toggleColumnPin}></IgrColumn>
 </IgrGrid>
 ```
 
 ```typescript
-function toggleColumnPin({ dataContext: ctx }: { dataContext: IgrColumnTemplateContext }) {
+function toggleColumnPin(ctx: IgrColumnTemplateContext) {
   const togglePin = () => {
     const col = ctx.column;
     col.pinned = !col.pinned;
