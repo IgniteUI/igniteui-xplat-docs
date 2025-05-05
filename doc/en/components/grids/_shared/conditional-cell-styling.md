@@ -298,7 +298,7 @@ constructor() {
 ```
 
 ```tsx
-<IgrTreeGrid autoGenerate="true" primaryKey="ID" foreignKey="ParentID" data={data} rowStyles={rowStyles}>
+<IgrTreeGrid autoGenerate={true} primaryKey="ID" foreignKey="ParentID" data={data} rowStyles={rowStyles}>
 </IgrTreeGrid>
 ```
 
@@ -365,9 +365,9 @@ constructor() {
 ```
 
 ```tsx
-<IgrHierarchicalGrid autoGenerate="true" rowStyles={rowStyles}
+<IgrHierarchicalGrid autoGenerate={true} rowStyles={rowStyles}
         height="580px" width="100%">
-        <IgrRowIsland childDataKey="Albums" autoGenerate="true" rowStyles={childRowStyles}>
+        <IgrRowIsland childDataKey="Albums" autoGenerate={true} rowStyles={childRowStyles}>
         </IgrRowIsland>
 </IgrHierarchicalGrid>
 ```
@@ -1105,13 +1105,13 @@ let backgroundClasses = {
     }
 };
 
-function editDone(grid, evt) {
+const editDone = (evt) => {
     backgroundClasses = {...backgroundClasses};
 }
 
 <{ComponentSelector} id="grid1" height="500px" width="100%" onCellEdit={editDone}>
   <IgrColumn id="Col1" field="Col1" dataType="number" cellClasses={backgroundClasses}></IgrColumn>
-  <IgrColumn id="Col2" field="Col2" dataType="number" editable="true" cellClasses={backgroundClasses}></IgrColumn>
+  <IgrColumn id="Col2" field="Col2" dataType="number" editable={true} cellClasses={backgroundClasses}></IgrColumn>
   <IgrColumn id="Col3" field="Col3" header="Col3" dataType="string" cellClasses={backgroundClasses}></IgrColumn>
 </{ComponentSelector}>
 ```
