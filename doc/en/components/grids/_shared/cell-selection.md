@@ -107,10 +107,13 @@ this.grid.selectRange(range);
 ```
 <!-- end: WebComponents -->
 
+<!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-const range = { rowStart: 2, rowEnd: 2, columnStart: 1, columnEnd: 1 };
-gridRef.current.selectRange(range);
+const range: IgrGridSelectionRange[] = [{ rowStart: 2, rowEnd: 2, columnStart: "ProductName", columnEnd: "UnitsInStock" }];
+gridRef.current.selectRange(range)
 ```
+<!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
+
 
 <!-- Blazor -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
