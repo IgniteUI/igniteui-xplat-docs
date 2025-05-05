@@ -197,32 +197,31 @@ igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
 ```
 
 ```tsx
-<{ComponentSelector} id="grid1" primaryKey="ProductID" gridKeydown={customKeydown}>
+<{ComponentSelector} id="grid1" primaryKey="ProductID" onGridKeydown={customKeydown}>
 </{ComponentSelector}>
 ```
 
 ```ts
 constructor() {
-        var grid = this.grid = document.getElementById('grid') as {ComponentName}Component;
+        const grid = this.grid = document.getElementById('grid1') as {ComponentName}Component;
 		grid.data = this.data
-		grid.addEventListener("gridKeydown", this.customKeydown);
+		grid.addEventListener("onGridKeydown", this.customKeydown);
 	}
 ```
 
 ```typescript
-function customKeydown(s: IgrGridBaseDirective, e: IgrGridKeydownEventArgs) {
-  const detail = e.detail
-  const target= detail.target;
-  const evt = detail.event;
-  const type = detail.targetType;
+const customKeydown = (eventArgs: IgrGridKeydownEventArgs) => {
+  const args = eventArgs.detail;
+  const target= args.target;
+  const evt = args.event;
+  const type = args.targetType;
 
-  if (type === GridKeydownTargetType.DataCell && target.editMode && evt.key.toLowerCase() === 'tab') {
+  if (type === 'dataCell' && target.editMode && evt.key.toLowerCase() === 'tab') {
       // 1. USER INPUT VALIDATION ON TAB
       
   }
-  if (type === GridKeydownTargetType.DataCell && evt.key.toLowerCase() === 'enter') {
+  if (type === 'dataCell' && evt.key.toLowerCase() === 'enter') {
       // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
-
   }
 }
 ```
