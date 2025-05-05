@@ -68,9 +68,9 @@ Property `Filterable` enables you to specify the following options:
 ```
 
 ```tsx
-<{ComponentSelector} data={this.nwindData} autoGenerate="false" ref={this.gridRef} allowFiltering="true">
-    <IgrColumn field="ProductName" dataType="String"></IgrColumn>
-    <IgrColumn field="UnitPrice" data-type="Number" filterable="false"></IgrColumn>
+<{ComponentSelector} data={this.nwindData} autoGenerate={false} ref={this.gridRef} allowFiltering={true}>
+    <IgrColumn field="ProductName" dataType="string"></IgrColumn>
+    <IgrColumn field="UnitPrice" dataType="number" filterable={false}></IgrColumn>
 </{ComponentSelector}>
 ```
 
@@ -98,7 +98,7 @@ To enable the [Advanced filtering](advanced-filtering.md) however, you need to s
 
 <!-- React -->
 ```tsx
-<{ComponentSelector} data={nwindData} autoGenerate="false" ref={gridRef} allowAdvancedFiltering="true">
+<{ComponentSelector} data={this.nwindData} autoGenerate={false} ref={this.gridRef} allowAdvancedFiltering={true}>
 </{ComponentSelector}>
 ```
 <!-- end: React -->
@@ -141,10 +141,10 @@ The filtering feature is enabled for the `{ComponentName}` component by setting 
 
 <!-- React -->
 ```tsx
-<{ComponentSelector} autoGenerate="false" allowFiltering="true">
-    <IgrColumn field="ProductName" dataType="String"></IgrColumn>
-    <IgrColumn field="Price" dataType="Number"></IgrColumn>
-    <IgrColumn field="Discontinued" dataType="Boolean" filterable="false"></IgrColumn>
+<{ComponentSelector} autoGenerate={false} allowFiltering={true}>
+    <IgrColumn field="ProductName" dataType="string"></IgrColumn>
+    <IgrColumn field="Price" dataType="number"></IgrColumn>
+    <IgrColumn field="Discontinued" dataType="boolean" filterable={false}></IgrColumn>
 </{ComponentSelector}>
 ```
 <!-- end: React -->
