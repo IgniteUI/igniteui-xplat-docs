@@ -525,7 +525,7 @@ public editCellTemplate = (ctx: IgcCellTemplateContext) => {
 ```
 
 ```tsx
-function editCellTemplate(ctx: { dataContext: IgrCellTemplateContext }) {
+const editCellTemplate = (ctx: IgrCellTemplateContext) => {
     return (
         <>
             <input></input>
@@ -533,7 +533,7 @@ function editCellTemplate(ctx: { dataContext: IgrCellTemplateContext }) {
     );
 }
 
-<{ComponentSelector} autoGenerate="false">
+<{ComponentSelector} autoGenerate={false}>
     <IgrColumn inlineEditorTemplate={editCellTemplate}></IgrColumn>
 </{ComponentSelector}>
 ```
