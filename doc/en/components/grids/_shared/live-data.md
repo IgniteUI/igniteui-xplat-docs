@@ -77,10 +77,10 @@ public startUpdate() {
 <!-- React -->
 ```typescript
 const startUpdate = () => {
-  const timer = setInterval(() => {
-    gridRef.current.data = FinancialData.updateAllPrices(data);
+  timer.current = setInterval(() => {
+    setData((oldData) => FinancialData.updateAllPrices(oldData));
   }, frequency);
-  setTimer(timer);
+
   setIsStartButtonDisabled(true);
   setIsStopButtonDisabled(false);
   setIsChartButtonDisabled(true);
