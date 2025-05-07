@@ -56,11 +56,11 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
 <!-- end: WebComponents -->
 
 ```tsx
-<{ComponentSelector} allowFiltering="true">
+<{ComponentSelector} allowFiltering={true}>
     <IgrColumnGroup header="Contact Information">
-        <IgrColumn sortable="true" resizable="true" field="Phone"></IgrColumn>
-        <IgrColumn sortable="true" resizable="true" field="Fax"></IgrColumn>
-        <IgrColumn sortable="true" resizable="true" field="PostalCode"></IgrColumn>
+        <IgrColumn sortable={true} resizable={true} field="Phone"></IgrColumn>
+        <IgrColumn sortable={true} resizable={true} field="Fax"></IgrColumn>
+        <IgrColumn sortable={true} resizable={true} field="PostalCode"></IgrColumn>
     </IgrColumnGroup>
 </{ComponentSelector}>
 ```
@@ -235,12 +235,12 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
 <!-- end: WebComponents -->
 
 ```tsx
-<{ComponentSelector} height="600px" allowFiltering="true">
+<{ComponentSelector} height="600px" allowFiltering={true}>
     <IgrColumnGroup header="General Information">
-        <IgrColumn movable="true" sortable="true" resizable="true" field="CompanyName"></IgrColumn>
-        <IgrColumnGroup movable="true" header="Person Details">
-            <IgrColumn movable="true" pinned="false" sortable="true" resizable="true" field="ContactName"></IgrColumn>
-            <IgrColumn movable="true" sortable="true" resizable="true" field="ContactTitle"></IgrColumn>
+        <IgrColumn movable={true} sortable={true} resizable={true} field="CompanyName"></IgrColumn>
+        <IgrColumnGroup movable={true} header="Person Details">
+            <IgrColumn movable={true} pinned={false} sortable={true} resizable={true} field="ContactName"></IgrColumn>
+            <IgrColumn movable={true} sortable={true} resizable={true} field="ContactTitle"></IgrColumn>
         </IgrColumnGroup>
     </IgrColumnGroup>
 </{ComponentSelector}>
@@ -408,13 +408,13 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
 <!-- end: WebComponents -->
 
 ```tsx
-<{ComponentSelector} height="600px" allowFiltering="true">
-    <IgrColumnGroup movable="true" pinned="true" header="General Information">
-        <IgrColumn movable="true" sortable="true" resizable="true" field="CompanyName"></IgrColumn>
+<{ComponentSelector} height="600px" allowFiltering={true}>
+    <IgrColumnGroup movable={true} pinned={true} header="General Information">
+        <IgrColumn movable={true} sortable={true} resizable={true} field="CompanyName"></IgrColumn>
     </IgrColumnGroup>
-    <IgrColumn sortable="true" resizable="true" field="Phone"></IgrColumn>
-    <IgrColumn sortable="true" resizable="true" field="Fax"></IgrColumn>
-    <IgrColumn sortable="true" resizable="true" field="PostalCode"></IgrColumn>
+    <IgrColumn sortable={true} resizable={true} field="Phone"></IgrColumn>
+    <IgrColumn sortable={true} resizable={true} field="Fax"></IgrColumn>
+    <IgrColumn sortable={true} resizable={true} field="PostalCode"></IgrColumn>
 </{ComponentSelector}>
 ```
 <!-- ComponentEnd: Grid -->
