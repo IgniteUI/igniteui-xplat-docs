@@ -76,14 +76,14 @@ public startUpdate() {
 
 <!-- React -->
 ```typescript
-function startUpdate(frequency) {
-  const timer = setInterval(() => {
-    setData(prevData => FinancialDataClass.updateRandomPrices(prevData));
+const startUpdate = () => {
+  timer.current = setInterval(() => {
+    setData((oldData) => FinancialData.updateAllPrices(oldData));
   }, frequency);
 
-  setStartButtonDisabled(true);
-  setShowChartButtonDisabled(true);
-  setStopButtonDisabled(false);
+  setIsStartButtonDisabled(true);
+  setIsStopButtonDisabled(false);
+  setIsChartButtonDisabled(true);
 }
 ```
 
@@ -135,7 +135,7 @@ private updateData(data: any[]) {
 
 <!-- React -->
 ```typescript
-private updateData(data: any[]) {
+const updateData = (data: any[]) => {
     const newData = []
     for (const rowData of data) {
         rowData.price = { usd: getUSD(), eur: getEUR() };
