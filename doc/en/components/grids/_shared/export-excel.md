@@ -156,13 +156,13 @@ public webGridExportEventFreezeHeaders(args: CustomEvent<IgcExporterEvent>): voi
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-function exportEventFreezeHeaders(s: IgrGridToolbarExporter, args: IgrExporterEventArgs) {
-        args.detail.options.freezeHeaders = true;
-    }
+function exportEventFreezeHeaders(args: IgrExporterEventArgs) {
+  args.detail.options.freezeHeaders = true;
+}
 
 <IgrGridToolbar key="toolbar">
   <IgrGridToolbarActions key="toolbarActions">
-    <IgrGridToolbarExporter key="exporting" exportStarted={exportEventFreezeHeaders}></IgrGridToolbarExporter>
+    <IgrGridToolbarExporter key="exporting" onExportStarted={e => exportEventFreezeHeaders}></IgrGridToolbarExporter>
   </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
