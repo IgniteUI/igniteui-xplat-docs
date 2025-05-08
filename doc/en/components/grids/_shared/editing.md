@@ -163,7 +163,7 @@ function onSorting(grid: IgrGrid) {
     grid.endEdit(true);
 }
 
-<{ComponentSelector} data={localData} primaryKey="ProductID" onSorting={onSorting}>
+<{ComponentSelector} data={localData} primaryKey="ProductID" onSorting={(e) => onSorting(e)}>
 </{ComponentSelector}>
 ```
 <!-- end: React -->
