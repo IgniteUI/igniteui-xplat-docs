@@ -114,25 +114,25 @@ Let's see the markup below:
 ```
 
 ```tsx
-<IgrColumnGroup collapsible="true" header="Customer Information">
-    <IgrColumn field="CustomerName" header="Customer Name" visibleWhenCollapsed="true">
+<IgrColumnGroup collapsible={true} header="Customer Information">
+    <IgrColumn field="CustomerName" header="Customer Name" visibleWhenCollapsed={true}>
     </IgrColumn>
-    <IgrColumn field="CustomerID" header="Customer ID" visibleWhenCollapsed="false">
+    <IgrColumn field="CustomerID" header="Customer ID" visibleWhenCollapsed={false}>
     </IgrColumn>
-    <IgrColumn field="CustomerFirstName" header="First Name" visibleWhenCollapsed="false">
+    <IgrColumn field="CustomerFirstName" header="First Name" visibleWhenCollapsed={false}>
     </IgrColumn>
-    <IgrColumn field="CustomerLastName" header="Last Name" visibleWhenCollapsed="false">
+    <IgrColumn field="CustomerLastName" header="Last Name" visibleWhenCollapsed={false}>
     </IgrColumn>
     <IgrColumnGroup header="Customer Address">
-        <IgrColumn field="CustomerAddress"  header="Full Address" width="250px" visibleWhenCollapsed="true">
+        <IgrColumn field="CustomerAddress"  header="Full Address" width="250px" visibleWhenCollapsed={true}>
         </IgrColumn>
-        <IgrColumn field="Address" visibleWhenCollapsed="false">
+        <IgrColumn field="Address" visibleWhenCollapsed={false}>
         </IgrColumn>
-        <IgrColumn  field="City" visibleWhenCollapsed="false">
+        <IgrColumn  field="City" visibleWhenCollapsed={false}>
         </IgrColumn>
-        <IgrColumn field="Country" visibleWhenCollapsed="false">
+        <IgrColumn field="Country" visibleWhenCollapsed={false}>
         </IgrColumn>
-        <IgrColumn field="PostalCode" header="Postal Code" visibleWhenCollapsed="false">
+        <IgrColumn field="PostalCode" header="Postal Code" visibleWhenCollapsed={false}>
         </IgrColumn>
     </IgrColumnGroup>
 </IgrColumnGroup>
@@ -215,19 +215,19 @@ public indTemplate = (ctx: IgcColumnTemplateContext) => {
 ```
 
 ```tsx
-<IgrColumnGroup id="info" header="Customer Information" collapsible="true" collapsibleIndicatorTemplate={this.collapsibleIndicatorTemplate}>
-    <IgrColumn field="CustomerName" header="Fullname" dataType="String" visibleWhenCollapsed="true"></IgrColumn>
-    <IgrColumn field="CustomerID" header="Customer ID" dataType="String" visibleWhenCollapsed="false"></IgrColumn>
-    <IgrColumnGroup id="address" header="Customer Address" collapsible="true">
-        <IgrColumn field="Country" header="Country" dataType="String" sortable="true" visibleWhenCollapsed="true"></IgrColumn>
-        <IgrColumn field="City" header="City" dataType="String" sortable="true" visibleWhenCollapsed="false"></IgrColumn>
+<IgrColumnGroup id="info" header="Customer Information" collapsible={true} collapsibleIndicatorTemplate={collapsibleIndicatorTemplate}>
+    <IgrColumn field="CustomerName" header="Fullname" dataType="string" visibleWhenCollapsed={true}></IgrColumn>
+    <IgrColumn field="CustomerID" header="Customer ID" dataType="string" visibleWhenCollapsed={false}></IgrColumn>
+    <IgrColumnGroup id="address" header="Customer Address" collapsible={true}>
+        <IgrColumn field="Country" header="Country" dataType="string" sortable={true} visibleWhenCollapsed={true}></IgrColumn>
+        <IgrColumn field="City" header="City" dataType="string" sortable={true} visibleWhenCollapsed={false}></IgrColumn>
     </IgrColumnGroup>
 </IgrColumnGroup>
 
-function collapsibleIndicatorTemplate(e: { dataContext: IgrColumnTemplateContext }) {
+const collapsibleIndicatorTemplate = (ctx: IgrColumnTemplateContext) => {
     return (
     <div>
-        <IgrIcon iconName={e.dataContext.column.expanded ? 'remove' : 'add'}></IgrIcon>
+        <IgrIcon iconName={ctx.column.expanded ? 'remove' : 'add'}></IgrIcon>
     </div>)
 }
 ```
