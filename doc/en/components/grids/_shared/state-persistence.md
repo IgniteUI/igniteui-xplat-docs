@@ -166,7 +166,7 @@ const sortingFilteringStates: IgcGridStateInfo = gridState.getState(['sorting', 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 ```tsx
 <{ComponentSelector}>
-    <IgrGridState ref={(ref) => { gridState = ref; }}></IgrGridState>
+    <IgrGridState ref={gridStateRef}></IgrGridState>
 </{ComponentSelector}>
 ```
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
@@ -174,13 +174,13 @@ const sortingFilteringStates: IgcGridStateInfo = gridState.getState(['sorting', 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 ```tsx
 // get an `IgrGridStateInfo` object, containing all features original state objects, as returned by the grid public API
-const state: IgrGridStateInfo = gridState.getState([]);
+const state: IgrGridStateInfo = gridStateRef.current.getState([]);
 
 // get all features` state in a serialized JSON string
-const stateString: string = gridState.getStateAsString([]);
+const stateString: string = gridStateRef.current.getStateAsString([]);
 
 // get the sorting and filtering expressions
-const sortingFilteringStates: IgrGridStateInfo = gridState.getState(['sorting', 'filtering']);
+const sortingFilteringStates: IgrGridStateInfo = gridStateRef.current.getState(['sorting', 'filtering']);
 ```
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 
@@ -230,9 +230,9 @@ gridState.applyState(sortingFilteringStates)
 <!-- end: WebComponents -->
 
 ```tsx
-gridState.applyState(gridState, []);
-gridState.applyStateFromString(gridStateString, []);
-gridState.applyState(sortingFilteringStates, [])
+gridStateRef.current.applyState(gridState, []);
+gridStateRef.current.applyStateFromString(gridStateString, []);
+gridStateRef.current.applyState(sortingFilteringStates, [])
 ```
 
 ```razor
@@ -350,7 +350,7 @@ public restoreGridStateString() {
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 ```tsx
 <{ComponentSelector} rendered={restoreGridState}>
-    <IgrGridState ref={(ref) => { gridState = ref; }}></IgrGridState>
+    <IgrGridState ref={gridStateRef}></IgrGridState>
 </{ComponentSelector}>
 ```
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
@@ -366,28 +366,28 @@ useEffect(() => {
 }, []);
 
 // Using methods that work with IgrGridStateInfo object.
-function saveGridState() {
-    const state = gridState.getState([]);
+const saveGridState = () => {
+    const state = gridStateRef.current.getState([]);
     window.localStorage.setItem('grid-state', JSON.stringify(state));
 }
 
-function restoreGridState() {
+const restoreGridState = () => {
     const state = window.localStorage.getItem('grid-state');
     if (state) {
-        gridState.applyState(JSON.parse(state), []);
+        gridStateRef.current.applyState(JSON.parse(state), []);
     }
 }
 
 //Or using string alternative methods.
-function saveGridState() {
-    const state = gridState.getStateAsString([]);
+const saveGridState = () => {
+    const state = gridStateRef.current.getStateAsString([]);
     window.localStorage.setItem('grid-state', state);
 }
 
-function restoreGridState() {
+const restoreGridState = () => {
     const state = window.localStorage.getItem('grid-state');
     if (state) {
-        gridState.applyStateFromString(state, []);
+        gridStateRef.current.applyStateFromString(state, []);
     }
 }
 ```
@@ -784,7 +784,7 @@ public onValueInit(event: any) {
 <!-- end: WebComponents -->
 
 ```tsx
-  function onValueInit(s: IgrPivotGrid, event: IgrPivotValueEventArgs) {
+  const onValueInit = (s: IgrPivotGrid, event: IgrPivotValueEventArgs) => {
     const value: IgrPivotValueDetail = event.detail;
     if (value.member === "AmountofSale") {
       value.aggregate.aggregator = totalSale;
@@ -957,9 +957,18 @@ gridState.options = { cellSelection: false, sorting: false, rowIslands: true };
 <!-- ComponentStart: HierarchicalGrid -->
 Then the `GetState` API will return the state for all grids (root grid and child grids) features excluding `Selection` and `Sorting`. If later on the developer wants to restore only the `Filtering` state for all grids, use:
 
+<!-- Angular, WebComponents -->
 ```typescript
 this.state.applyState(state, ['filtering', 'rowIslands']);
 ```
+<!-- end: Angular, WebComponents -->
+
+<!-- React -->
+```tsx
+state.applyState(state, ['filtering', 'rowIslands']);
+```
+<!-- end: React -->
+
 
 <!-- Blazor -->
 Then the `GetState` API will return the state for all grids (root grid and child grids) features excluding `Selection` and `Sorting`. If later on the developer wants to restore only the `Filtering` state for all grids, use:
