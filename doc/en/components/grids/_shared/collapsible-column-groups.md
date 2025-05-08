@@ -216,11 +216,11 @@ public indTemplate = (ctx: IgcColumnTemplateContext) => {
 
 ```tsx
 <IgrColumnGroup id="info" header="Customer Information" collapsible={true} collapsibleIndicatorTemplate={collapsibleIndicatorTemplate}>
-    <IgrColumn field="CustomerName" header="Fullname" dataType="String" visibleWhenCollapsed={true}></IgrColumn>
-    <IgrColumn field="CustomerID" header="Customer ID" dataType="String" visibleWhenCollapsed={false}></IgrColumn>
+    <IgrColumn field="CustomerName" header="Fullname" dataType="string" visibleWhenCollapsed={true}></IgrColumn>
+    <IgrColumn field="CustomerID" header="Customer ID" dataType="string" visibleWhenCollapsed={false}></IgrColumn>
     <IgrColumnGroup id="address" header="Customer Address" collapsible={true}>
-        <IgrColumn field="Country" header="Country" dataType="String" sortable={true} visibleWhenCollapsed={true}></IgrColumn>
-        <IgrColumn field="City" header="City" dataType="String" sortable={true} visibleWhenCollapsed={false}></IgrColumn>
+        <IgrColumn field="Country" header="Country" dataType="string" sortable={true} visibleWhenCollapsed={true}></IgrColumn>
+        <IgrColumn field="City" header="City" dataType="string" sortable={true} visibleWhenCollapsed={false}></IgrColumn>
     </IgrColumnGroup>
 </IgrColumnGroup>
 
