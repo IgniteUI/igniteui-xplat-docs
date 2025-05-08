@@ -57,7 +57,7 @@ The following example represents `{ComponentName}` pagination and exposes the op
 <!-- React -->
 ```tsx
 <{ComponentSelector} className="gridSize" height="500px" width="100%">
-    <IgrPaginator key="paginator" perPage="10">
+    <IgrPaginator key="paginator" perPage={10}>
     </IgrPaginator>
 </{ComponentSelector}>
 ```
