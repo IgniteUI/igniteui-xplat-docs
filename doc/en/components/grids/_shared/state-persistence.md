@@ -784,7 +784,7 @@ public onValueInit(event: any) {
 <!-- end: WebComponents -->
 
 ```tsx
-  const onValueInit = (s: IgrPivotGrid, event: IgrPivotValueEventArgs) => {
+  const onValueInit = (event: IgrPivotValueEventArgs) => {
     const value: IgrPivotValueDetail = event.detail;
     if (value.member === "AmountofSale") {
       value.aggregate.aggregator = totalSale;
