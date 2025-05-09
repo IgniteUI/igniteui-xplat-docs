@@ -349,7 +349,7 @@ public restoreGridStateString() {
 <!-- end: WebComponents -->
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid, PivotGrid -->
 ```tsx
-<{ComponentSelector} rendered={restoreGridState}>
+<{ComponentSelector} onRendered={restoreGridState}>
     <IgrGridState ref={gridStateRef}></IgrGridState>
 </{ComponentSelector}>
 ```
