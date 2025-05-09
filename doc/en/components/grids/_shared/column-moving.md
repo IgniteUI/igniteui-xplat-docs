@@ -212,7 +212,7 @@ public onColumnMovingEnd(event) {
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 ```tsx
-const onColumnMovingEnd = (grid: IgrGridBaseDirective, event: IgrColumnMovingEventArgs) => {
+const onColumnMovingEnd = (event: IgrColumnMovingEndEventArgs) => {
    if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {
         event.detail.cancel = true;
     }
@@ -220,7 +220,7 @@ const onColumnMovingEnd = (grid: IgrGridBaseDirective, event: IgrColumnMovingEve
 
 <{ComponentSelector} autoGenerate={false} moving={true} data={data} onColumnMovingEnd={onColumnMovingEnd}>
     <IgrColumn field="Category"></IgrColumn>
-    <IgrColumn field="Change On Year(%)" dataType="Number"></IgrColumn>
+    <IgrColumn field="Change On Year(%)" dataType="number"></IgrColumn>
 </{ComponentSelector}>
 ```
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
