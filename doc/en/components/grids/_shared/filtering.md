@@ -68,14 +68,14 @@ Property `Filterable` enables you to specify the following options:
 ```
 
 ```tsx
-<{ComponentSelector} data={this.nwindData} autoGenerate={false} ref={this.gridRef} allowFiltering={true}>
+<{ComponentSelector} data={nwindData} autoGenerate={false} ref={gridRef} allowFiltering={true}>
     <IgrColumn field="ProductName" dataType="string"></IgrColumn>
     <IgrColumn field="UnitPrice" dataType="number" filterable={false}></IgrColumn>
 </{ComponentSelector}>
 ```
 
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
-To enable the [Advanced filtering](advanced-filtering.md) however, you need to set the `AllowAdvancedFiltering` input property to **true**.7
+To enable the [Advanced filtering](advanced-filtering.md) however, you need to set the `AllowAdvancedFiltering` input property to **true**
 <!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
 <!-- Angular -->
@@ -98,7 +98,7 @@ To enable the [Advanced filtering](advanced-filtering.md) however, you need to s
 
 <!-- React -->
 ```tsx
-<{ComponentSelector} data={this.nwindData} autoGenerate={false} ref={this.gridRef} allowAdvancedFiltering={true}>
+<{ComponentSelector} data={nwindData} autoGenerate={false} ref={gridRef} allowAdvancedFiltering={true}>
 </{ComponentSelector}>
 ```
 <!-- end: React -->
@@ -389,37 +389,32 @@ constructor() {
 ```
 
 ```tsx
-private filteringExpressions: IgrFilteringExpressionsTree;
+const filteringExpressions: IgrFilteringExpressionsTree = {
+  operator: FilteringLogic.And,
+  filteringOperands: [
+    {
+      fieldName: "ProductName",
+      conditionName: "contains",
+      ignoreCase: true,
+      searchVal: "Chai"
+    },
+    {
+      fieldName: "QuantityPerUnit",
+      conditionName: "contains",
+      ignoreCase: true,
+      searchVal: "1"
+    },
+  ],
+};
 
-constructor(props: any) {
-    super(props);
-
-    const gridFilteringExpressionsTree = { operator: FilteringLogic.And } as IgrFilteringExpressionsTree;
-    const productFilteringExpressionsTree = { 
-        fieldName: "ProductName",
-        conditionName: "contains",
-        ignoreCase: true,
-        searchVal: "Chai"
-    } as IgrFilteringExpression;
-
-    const quantityFilteringExpressionsTree = { 
-        fieldName: "QuantityPerUnit",
-        conditionName: "contains",
-        ignoreCase: true,
-        searchVal: "1"
-    } as IgrFilteringExpression;
-
-    gridFilteringExpressionsTree.filteringOperands = [ productFilteringExpressionsTree, quantityFilteringExpressionsTree ];
-    this.filteringExpressions = gridFilteringExpressionsTree;
-}
-
-public render(): JSX.Element {
-    return (<{ComponentSelector}
-        filteringExpressionsTree={this.filteringExpressions}
+return (
+    <{ComponentSelector}
+        filteringExpressionsTree={filteringExpressions}
         аllowFiltering={true}
         filterMode="quickFilter">
-    </{ComponentSelector}>);
-}
+    </{ComponentSelector}>
+);
+
 ```
 
 ### Filtering logic
