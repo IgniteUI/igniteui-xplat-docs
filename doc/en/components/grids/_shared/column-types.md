@@ -81,7 +81,7 @@ constructor() {
 ```
 
 ```tsx
-const formatOptions = new IgrColumnPipeArgs();
+const formatOptions : IgrColumnPipeArgs = {} as IgrColumnPipeArgs;
 formatOptions.digitsInfo = "1.4-4";
 
 <IgrColumn pipeArgs={formatOptions} dataType="number"></IgrColumn>
@@ -148,7 +148,7 @@ constructor() {
 ```
 
 ```tsx
-const formatOptions = new IgrColumnPipeArgs();
+const formatOptions : IgrColumnPipeArgs = {} as IgrColumnPipeArgs;;
 formatOptions.format = "long";
 formatOptions.timezone = "UTC+0";
 
@@ -370,7 +370,7 @@ constructor() {
 ```
 
 ```tsx
-const formatOptions = new IgrColumnPipeArgs();
+const formatOptions : IgrColumnPipeArgs = {} as IgrColumnPipeArgs;
 formatOptions.digitsInfo = "1.4-4";
 formatOptions.display = "symbol-narrow";
 
@@ -476,7 +476,7 @@ constructor() {
 * `minFractionDigits`: The minimum number of digits after the decimal point. Default is 0.
 * `maxFractionDigits`: The maximum number of digits after the decimal point. Default is 3.
 */
-const formatOptions = new IgrColumnPipeArgs();
+const formatOptions : IgrColumnPipeArgs = {} as IgrColumnPipeArgs;
 formatOptions.digitsInfo = "2.2-3";
 
 <IgrColumn pipeArgs={formatOptions} dataType="percent"></IgrColumn>
@@ -572,7 +572,7 @@ public formatCurrency(value: number) {
 ```
 
 ```tsx
-function formatCurrency(value: number) {
+const formatCurrency = (value: number) => {
     return `$ ${value.toFixed(0)}`;
 }
 
