@@ -400,11 +400,8 @@ By using the `Title` property, we will set the title that is displayed inside th
 <IgrGrid>
     <IgrGridToolbar>
         <IgrGridToolbarActions>
-            <IgrGridToolbarHiding></IgrGridToolbarHiding>
+            <IgrGridToolbarHiding title="Column Hiding"></IgrGridToolbarHiding>
         </IgrGridToolbarActions>
-        <IgrGridToolbarTitle>
-            <span>Column Hiding</span>
-        </IgrGridToolbarTitle>
     </IgrGridToolbar>    
 </IgrGrid>
 ```
@@ -458,11 +455,8 @@ By using the `Title` property, we will set the title that is displayed inside th
 <IgrTreeGrid>
     <IgrGridToolbar>
         <IgrGridToolbarActions>
-            <IgrGridToolbarHiding></IgrGridToolbarHiding>
+            <IgrGridToolbarHiding title="Column Hiding"></IgrGridToolbarHiding>
         </IgrGridToolbarActions>
-        <IgrGridToolbarTitle>
-            <span>Column Hiding</span>
-        </IgrGridToolbarTitle>
     </IgrGridToolbar>
 </IgrTreeGrid>
 ```
@@ -517,11 +511,8 @@ By using the `Title` property, we will set the title that is displayed inside th
 <IgrHierarchicalGrid>
     <IgrGridToolbar>
         <IgrGridToolbarActions>
-            <IgrGridToolbarHiding></IgrGridToolbarHiding>
+            <IgrGridToolbarHiding title="Column Hiding"></IgrGridToolbarHiding>
         </IgrGridToolbarActions>
-        <IgrGridToolbarTitle>
-            <span>Column Hiding</span>
-        </IgrGridToolbarTitle>
     </IgrGridToolbar>
 </IgrHierarchicalGrid>
 ```
