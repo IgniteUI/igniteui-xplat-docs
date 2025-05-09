@@ -200,7 +200,7 @@ igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
 <{ComponentSelector} id="grid1" primaryKey="ProductID" onGridKeydown={customKeydown}>
 </{ComponentSelector}>
 ```
-
+<!-- WebComponents -->
 ```ts
 constructor() {
         const grid = this.grid = document.getElementById('grid1') as {ComponentName}Component;
@@ -208,6 +208,7 @@ constructor() {
 		grid.addEventListener("onGridKeydown", this.customKeydown);
 	}
 ```
+<!-- end: WebComponents -->
 
 ```typescript
 const customKeydown = (eventArgs: IgrGridKeydownEventArgs) => {
