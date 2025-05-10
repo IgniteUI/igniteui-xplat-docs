@@ -1836,6 +1836,12 @@
     "status": "NEW"
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Date Range Picker",
+    "href": "scheduling/date-range-picker.md",
+    "status": "NEW"
+  }, 
+  {
     "exclude": ["Angular"],
     "name": "Styling & Themes",
     "header": true
