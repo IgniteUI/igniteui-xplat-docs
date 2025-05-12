@@ -171,7 +171,8 @@
       {
         "exclude": ["Angular"],
         "name": "Column Hiding",
-        "href": "grids/grid/column-hiding.md"
+        "href": "grids/grid/column-hiding.md",
+        "status": ["UPDATED_REACT"]	
       },
       {
         "exclude": ["Angular"],
