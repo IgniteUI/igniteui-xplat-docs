@@ -411,7 +411,7 @@ constructor() {
 ```
 
 ```tsx
-<IgrColumn field="BeatsPerMinute" dataType="Number" cellClasses={beatsPerMinuteClasses}></IgrColumn>
+<IgrColumn field="BeatsPerMinute" dataType="number" cellClasses={beatsPerMinuteClasses}></IgrColumn>
 ```
 
 <!-- ComponentEnd: Grid -->
@@ -432,7 +432,7 @@ constructor() {
 ```
 
 ```tsx
-<IgrColumn field="BeatsPerMinute" dataType="Number" cellClasses={this.grammyNominationsCellClassesHandler}></IgrColumn>
+<IgrColumn field="BeatsPerMinute" dataType="number" cellClasses={grammyNominationsCellClassesHandler}></IgrColumn>
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -497,11 +497,11 @@ public beatsPerMinuteClasses = {
 <!-- end: Angular, WebComponents -->
 
 ```tsx
-function upFontCondition(rowData: any, columnKey: any): boolean {
+const upFontCondition = (rowData: any, columnKey: any): boolean => {
     return rowData[columnKey] > 95;
 }
 
-function downFontCondition(rowData: any, columnKey: any): boolean {
+const downFontCondition = (rowData: any, columnKey: any): boolean => {
     return rowData[columnKey] <= 95;
 }
 
@@ -559,7 +559,7 @@ public grammyNominationsCellClassesHandler = {
 <!-- end: Angular, WebComponents -->
 
 ```tsx
-public grammyNominationsCellClassesHandler = {
+const grammyNominationsCellClassesHandler = {
     downFont: (rowData: any, columnKey: any): boolean => rowData[columnKey] < 5,
     upFont: (rowData: any, columnKey: any): boolean => rowData[columnKey] >= 6
 };
@@ -613,11 +613,11 @@ igRegisterScript("UnitPriceCellClassesHandler", () => {
 ```
 
 ```tsx
-function upPriceCondition(rowData: any, columnKey: any): boolean {
+const upPriceCondition = (rowData: any, columnKey: any): boolean => {
     return rowData[columnKey] > 5;
 }
 
-function downPriceCondition(rowData: any, columnKey: any): boolean {
+const downPriceCondition = (rowData: any, columnKey: any): boolean => {
     return rowData[columnKey] <= 5;
 }
 
@@ -1099,13 +1099,13 @@ constructor() {
 
 
 ```tsx
-let backgroundClasses = {
+const backgroundClasses = {
     myBackground: (rowData: any, columnKey: string) => {
         return rowData.Col2 < 10;
     }
 };
 
-const editDone = (evt) => {
+const editDone = (event: IgrGridEditEventArgs) => {
     backgroundClasses = {...backgroundClasses};
 }
 
