@@ -163,12 +163,12 @@ public onResize(event) {
 
 ```tsx
 const onResize = (event: IgrColumnResizeEventArgs) => {
-  IgrColumn col = event.detail.column;
-  string pWidth = event.detail.prevWidth;
-  string nWidth = event.detail.newWidth;
+  const col = event.detail.column;
+  const pWidth = event.detail.prevWidth;
+  const nWidth = event.detail.newWidth;
 }
 
-<{ComponentSelector} data={data} autoGenerate={false} primaryKey="ID" foreignKey="ParentID" columnResized={onResize}>
+<{ComponentSelector} data={data} autoGenerate={false} primaryKey="ID" foreignKey="ParentID" onColumnResized={onResize}>
     <IgrColumn field="Title" width="100px" resizable={true}></IgrColumn>
     <IgrColumn field="HireDate" width="100px" resizable={true}></IgrColumn>
 </{ComponentSelector}>
