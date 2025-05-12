@@ -45,7 +45,7 @@ This is done via the `Sortable` input. With the `{ComponentName}` sorting, you c
 ```
 
 ```tsx
-<IgrColumn field="ProductName" header="Product Name" dataType="string" sortable="true"></IgrColumn>
+<IgrColumn field="ProductName" header="Product Name" dataType="string" sortable={true}></IgrColumn>
 ```
 
 ## Sorting Indicators
@@ -571,7 +571,7 @@ public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-function sortHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
+const sortHeaderIconTemplate = (ctx: IgrGridHeaderTemplateContext) => {
     return (
         <>
             <IgrIcon name='unfold_more'></IgrIcon>
@@ -630,7 +630,7 @@ public sortAscendingHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => 
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-function sortAscendingHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
+const sortAscendingHeaderIconTemplate = (ctx: IgrGridHeaderTemplateContext) => {
     return (
         <>
             <IgrIcon name='expand_less'></IgrIcon>
@@ -689,7 +689,7 @@ public sortDescendingHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) =>
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-function sortDescendingHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
+const sortDescendingHeaderIconTemplate = (ctx: IgrGridHeaderTemplateContext) => {
     return (
         <>
             <IgrIcon name='expand_more'></IgrIcon>
