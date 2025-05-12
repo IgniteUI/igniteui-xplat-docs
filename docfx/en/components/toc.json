@@ -166,7 +166,8 @@
       {
         "exclude": ["Angular"],
         "name": "Collapsible Column Groups",
-        "href": "grids/grid/collapsible-column-groups.md"
+        "href": "grids/grid/collapsible-column-groups.md",
+        "status": ["UPDATED_REACT"]
       },
       {
         "exclude": ["Angular"],
