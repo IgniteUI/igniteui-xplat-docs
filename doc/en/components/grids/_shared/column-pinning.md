@@ -182,8 +182,6 @@ constructor() {
 }
 ```
 
-<!-- end: WebComponents -->
-
 ```typescript
 public columnPinning(event) {
     if (event.detail.column.field === 'Name') {
@@ -191,6 +189,20 @@ public columnPinning(event) {
     }
 }
 ```
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+```typescript
+const columnPinning = (event: IgrPinColumnCancellableEventArgs) = {
+    if (event.detail.column.field === 'Name') {
+        event.detail.insertAtIndex = 0;
+    }
+}
+```
+
+<!-- end: React -->
 
 ```razor
 <{ComponentSelector} Data=data AutoGenerate=true ColumnPinScript="onColumnPin"/>
@@ -234,8 +246,7 @@ grid.pinning = { columns: ColumnPinningPosition.End };
 
 <!-- React -->
 ```typescript
-const pinningConfig = new IgrPinningConfig();
-pinningConfig.columns = ColumnPinningPosition.End;
+const pinningConfig: IgrPinningConfig = { columns: ColumnPinningPosition.End };
 ```
 
 ```tsx
@@ -380,8 +391,8 @@ igRegisterScript("WebGridPinHeaderTemplate", (ctx) => {
 </IgrGrid>
 ```
 
-```typescript
-function toggleColumnPin(ctx: IgrColumnTemplateContext) {
+```tsx
+const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
   const togglePin = () => {
     const col = ctx.column;
     col.pinned = !col.pinned;
