@@ -10,6 +10,30 @@ _language: ja
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
+## **{PackageVerChanges-24-2-APR2}**
+
+> [!Note] バージョン 19.0.0 では、React 製品に多くの重大な変更が導入され、API の改善と整理が行われました。詳細は完全なアップデートガイドをご参照ください。
+
+[アップデート ガイド](update-guide.md)
+
+### 削除済
+- `CheckboxChangeEventArgs` は削除されました。代わりに `IgrCheckboxChangeEventArgs` を使用してください。
+- `RadioChangeEventArgs` は削除されました。代わりに `IgrRadioChangeEventArgs` を使用してください。
+- `IgrRangeSliderValue` は削除されました。代わりに `IgrRangeSliderValueEventArgs` を使用してください。
+- `IgrActiveStepChangingArgs` は削除されました。代わりに `IgrActiveStepChangingEventArgs` を使用してください。
+- `IgrActiveStepChangedArgs` は削除されました。代わりに `IgrActiveStepChangedEventArgs` を使用してください。
+
+
+### 機能拡張
+
+#### Stepper
+Stepper Step の `titlePosition` は、同じ動作を持つ undefined ではなく、デフォルトで `auto` に設定されるようになりました。
+
+#### Tabs
+`igr-tab` パネル プロパティは削除されました。
+
+igr-tab-panel コンポーネントは削除されました。igr-tab では、タブ ヘッダーとタブ コンテンツの両方が 1 つのコンポーネントに含まれるようになりました。
+
 ## **{PackageVerChanges-24-2-APR}**
 
 ### 新しいコンポーネント
@@ -32,6 +56,16 @@ _language: ja
 ### 非推奨
 
 - `Button` の `clicked` イベントは非推奨となりました。代わりにネイティブの `onClick` ハンドラーを使用してください。
+
+### バグ修正
+
+| バグ番号 | コントロール | 説明      |
+|------------|---------|------------------|
+|25602|IgrDataGrid|日付特有のフィルター演算子を含むレイアウトを読み込むと、TypeError がコンソールに出力される。|
+|28480|IgrCombo|データ ソースを置き換えた際に未定義の参照エラーが発生する。|
+|30319|IgrDataGrid|値が変更されていないにもかかわらず、レコードがソートされる。|
+|32598|IgrDataGrid|複数選択が正しく動作しない。
+|36374|IgrInput|タッチ デバイスでフォームを送信すると、以前の値がバインドされる。|
 
 ## **{PackageVerChanges-24-2-MAR1}**
 
