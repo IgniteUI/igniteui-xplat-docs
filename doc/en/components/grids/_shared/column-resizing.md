@@ -115,9 +115,9 @@ public onResize(event) {
 
 ```tsx
 const onResize = (event: IgrColumnResizeEventArgs) => {
-  IgrColumn col = event.detail.column;
-  string pWidth = event.detail.prevWidth;
-  string nWidth = event.detail.newWidth;
+  const col = event.detail.column;
+  const pWidth = event.detail.prevWidth;
+  const nWidth = event.detail.newWidth;
 }
 
 <{ComponentSelector} id="grid" autoGenerate={false} onColumnResized={onResize}>
@@ -227,9 +227,9 @@ public onResize(event) {
 
 ```tsx
 const onResize = (event: IgrColumnResizeEventArgs) => {
-  IgrColumn col = event.detail.column;
-  string pWidth = event.detail.prevWidth;
-  string nWidth = event.detail.newWidth;
+  const col = event.detail.column;
+  const pWidth = event.detail.prevWidth;
+  const nWidth = event.detail.newWidth;
 }
 
 <{ComponentSelector} id="hierarchicalGrid" autoGenerate={false} columnResized={onResize}>
