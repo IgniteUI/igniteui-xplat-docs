@@ -84,16 +84,16 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
 
 <!-- React -->
 ```tsx
-<{ComponentSelector} autoGenerate="false" data={NwindData} primaryKey="ProductID" rowEditable="true">
-    <IgrColumn field="ProductID" header="Product ID" dataType="Number"></IgrColumn>
-    <IgrColumn field="ReorderLevel" header="Reorder Level" dataType="Number"></IgrColumn>
-    <IgrColumn field="ProductName" header="Product Name" dataType="String"></IgrColumn>
-    <IgrColumn field="UnitsInStock" header="Units In Stock" dataType="Number"></IgrColumn>
-    <IgrColumn field="OrderDate" header="Order Date" dataType="Date"></IgrColumn>
-    <IgrColumn field="Discontinued" header="Discontinued" dataType="Boolean"></IgrColumn>
+<{ComponentSelector} autoGenerate={false} data={NwindData} primaryKey="ProductID" rowEditable={true}>
+    <IgrColumn field="ProductID" header="Product ID" dataType="number"></IgrColumn>
+    <IgrColumn field="ReorderLevel" header="Reorder Level" dataType="number"></IgrColumn>
+    <IgrColumn field="ProductName" header="Product Name" dataType="string"></IgrColumn>
+    <IgrColumn field="UnitsInStock" header="Units In Stock" dataType="number"></IgrColumn>
+    <IgrColumn field="OrderDate" header="Order Date" dataType="date"></IgrColumn>
+    <IgrColumn field="Discontinued" header="Discontinued" dataType="boolean"></IgrColumn>
 
     <IgrActionStrip>
-        <IgrGridEditingActions addRow="true"></IgrGridEditingActions>
+        <IgrGridEditingActions addRow={true}></IgrGridEditingActions>
     </IgrActionStrip>
 </{ComponentSelector}>
 ```
@@ -161,14 +161,14 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
 <!-- React -->
 <!-- ComponentStart: TreeGrid -->
 ```tsx
-<{ComponentSelector} autoGenerate="false" primaryKey="ID" foreignKey="ParentID" rowEditable="true">
-    <IgrColumn field="Name" header="Name" dataType="String"></IgrColumn>
-    <IgrColumn field="Title" header="Title" dataType="String"></IgrColumn>
-    <IgrColumn field="HireDate" header="Hire Date" dataType="Date"></IgrColumn>
-    <IgrColumn field="OnPTO" header="On PTO" dataType="Boolean"></IgrColumn>
+<{ComponentSelector} autoGenerate={false} primaryKey="ID" foreignKey="ParentID" rowEditable={true}>
+    <IgrColumn field="Name" header="Name" dataType="string"></IgrColumn>
+    <IgrColumn field="Title" header="Title" dataType="string"></IgrColumn>
+    <IgrColumn field="HireDate" header="Hire Date" dataType="date"></IgrColumn>
+    <IgrColumn field="OnPTO" header="On PTO" dataType="boolean"></IgrColumn>
 
     <IgrActionStrip>
-        <IgrGridEditingActions addRow="true"></IgrGridEditingActions>
+        <IgrGridEditingActions addRow={true}></IgrGridEditingActions>
     </IgrActionStrip>
 </{ComponentSelector}>
 ```
@@ -320,135 +320,135 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
 <!-- ComponentStart: HierarchicalGrid -->
 ```tsx
 <{ComponentSelector}
-   autoGenerate="false"
-   data={this.singersData}
+   autoGenerate={false}
+   data={singersData}
    id="hGrid"
    primaryKey="ID"
-   rowEditable="true"
-   ref={this.hierarchicalGrid1Ref}>
+   rowEditable={true}
+   ref={hierarchicalGrid1Ref}>
    <IgrActionStrip>
      <IgrGridEditingActions
-        addRow="true">
+        addRow={true}>
        </IgrGridEditingActions>
    </IgrActionStrip>
    <IgrColumn
        field="Artist"
        header="Artist"
-       dataType="String"
-       resizable="true">
+       dataType="string"
+       resizable={true}>
    </IgrColumn>
    <IgrColumn
        field="Debut"
        header="Debut"
-       dataType="Number"
+       dataType="number"
        minWidth="88px"
        maxWidth="230px"
-       resizable="true">
+       resizable={true}>
    </IgrColumn>
    <IgrColumn
        field="GrammyNominations"
        header="Grammy Nominations"
-       dataType="String"
-       resizable="true">
+       dataType="string"
+       resizable={true}>
    </IgrColumn>
    <IgrColumn
        field="GrammyAwards"
        header="Grammy Awards"
-       dataType="String"
-       resizable="true">
+       dataType="string"
+       resizable={true}>
    </IgrColumn>
    <IgrRowIsland
        childDataKey="Albums"
-       autoGenerate="false">
+       autoGenerate={false}>
        <IgrColumn
            field="Album"
            header="Album"
-           dataType="String"
-           resizable="true">
+           dataType="string"
+           resizable={true}>
        </IgrColumn>
        <IgrColumn
            field="LaunchDate"
            header="Launch Date"
-           dataType="Date"
-           resizable="true">
+           dataType="date"
+           resizable={true}>
        </IgrColumn>
        <IgrColumn
            field="BillboardReview"
            header="Billboard Review"
-           dataType="String"
-           resizable="true">
+           dataType="string"
+           resizable={true}>
        </IgrColumn>
        <IgrColumn
            field="USBillboard200"
            header="US Billboard 200"
-           dataType="String"
-           resizable="true">
+           dataType="string"
+           resizable={true}>
        </IgrColumn>
        <IgrRowIsland
            childDataKey="Songs"
-           autoGenerate="false">
+           autoGenerate={false}>
            <IgrActionStrip>
                 <IgrGridEditingActions
-                    addRow="true">
+                    addRow={true}>
                 </IgrGridEditingActions>
             </IgrActionStrip>
            <IgrColumn
                field="Number"
                header="No."
-               dataType="String"
-               resizable="true">
+               dataType="string"
+               resizable={true}>
            </IgrColumn>
            <IgrColumn
                field="Title"
                header="Title"
-               dataType="String"
-               resizable="true">
+               dataType="string"
+               resizable={true}>
            </IgrColumn>
            <IgrColumn
                field="Released"
                header="Released"
-               dataType="String"
-               resizable="true">
+               dataType="string"
+               resizable={true}>
            </IgrColumn>
            <IgrColumn
                field="Genre"
                header="Genre"
-               dataType="String"
-               resizable="true">
+               dataType="string"
+               resizable={true}>
            </IgrColumn>
        </IgrRowIsland>
    </IgrRowIsland>
    <IgrRowIsland
        childDataKey="Tours"
-       autoGenerate="false">
+       autoGenerate={false}>
            <IgrActionStrip>
                 <IgrGridEditingActions
-                    addRow="true">
+                    addRow={true}>
                 </IgrGridEditingActions>
             </IgrActionStrip>                  
        <IgrColumn
            field="Tour"
            header="Tour"
-           dataType="String"
-           resizable="true">
+           dataType="string"
+           resizable={true}>
        </IgrColumn>
        <IgrColumn
            field="StartedOn"
            header="Started on"
-           dataType="String"
-           resizable="true">
+           dataType="string"
+           resizable={true}>
        </IgrColumn>
        <IgrColumn
            field="Location"
            header="Location"
-           dataType="String"
-           resizable="true">
+           dataType="string"
+           resizable={true}>
        </IgrColumn>
        <IgrColumn
            field="Headliner"
            header="Headliner"
-           dataType="String"
-           resizable="true">
+           dataType="string"
+           resizable={true}>
        </IgrColumn>
    </IgrRowIsland>
 </{ComponentSelector}>
