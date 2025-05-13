@@ -929,8 +929,8 @@ For further reference please check the full demo bellow:
         <IgrPaginator 
           perPage={perPage}
           ref={paginator}
-          pageChange={onPageNumberChange}
-          perPageChange={onPageSizeChange}>
+          onPageChange={onPageNumberChange}
+          onPerPageChange={onPageSizeChange}>
         </IgrPaginator>
           <IgrColumn field="customerId" hidden={true}></IgrColumn>
           <IgrColumn field="companyName" header="Company Name"></IgrColumn>
