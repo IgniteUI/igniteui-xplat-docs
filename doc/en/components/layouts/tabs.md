@@ -2,15 +2,14 @@
 title: {Platform} Tabs Control | Layout Controls | {ProductName}
 _description: {Platform} Tabs component allows users to place tabs at the top and switch between similar data sets. Try it Now
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Tabs Component, Infragistics
-mentionedTypes: ["Tabs", "Tab", "TabPanel", "Icon", "IconButton", "RadioGroup"]
+mentionedTypes: ["Tabs", "Tab", "Icon", "IconButton", "RadioGroup"]
 ---
 
 # {Platform} Tabs Overview
 
 The {Platform} Tabs is a lightweight and user-friendly component that organizes corresponding content in a tab format or a collection of tabs typically placed horizontally. The {Platform} Tab enables end-users to easily click through and display different views. There are several features and customization options like tab orientation, templating, built-in header styles, animation, scroll buttons, and more. 
 
-The {ProductName} Tabs organizes and switches between similar data sets. The tabs are placed at the top of the data content. When a tab is selected the panel with the corresponding id is displayed. The component could be used with only tabs defined (without any panels).
-
+The {ProductName} Tabs organizes and switches between similar data sets. The tabs are placed at the top of the data content. When a tab is selected its corresponding content is displayed.
 ## {Platform} Tabs Example
 
 The {Platform} Tabs example below displays three different tabs aligned in a single line so you can navigate across each in a fast and easy way.
@@ -39,12 +38,10 @@ npm install igniteui-react
 
 <!-- end: React -->
 
-Before using the `Tabs`, you need to register it as follows:
+Before using the `Tabs`, you need to import it as follows:
 
 ```tsx
-import { IgrTabsModule, IgrTabs, IgrTab,  IgrTabPanel} from "igniteui-react";
-
-IgrTabsModule.register();
+import { IgrTabs, IgrTab } from "igniteui-react";
 ```
 
 
@@ -66,12 +63,18 @@ Simple `Tabs` declaration is done as follows:
 
 ```html
 <igc-tabs>
-    <igc-tab panel="first">Tab 1</igc-tab>
-    <igc-tab panel="second">Tab 2</igc-tab>
-    <igc-tab panel="third">Tab 3</igc-tab>
-    <igc-tab-panel id="first">Panel 1</igc-tab-panel>
-    <igc-tab-panel id="second">Panel 2</igc-tab-panel>
-    <igc-tab-panel id="third">Panel 3</igc-tab-panel>
+    <igc-tab>
+      <div slot="label">Tab 1</div>
+      <span>Content for tab 1</span>
+    </igc-tab>
+    <igc-tab>
+      <div slot="label">Tab 2</div>
+      <span>Content for tab 2</span>
+    </igc-tab>
+    <igc-tab>
+      <div slot="label">Tab 3</div>
+      <span>Content for tab 3</span>
+    </igc-tab>
 </igc-tabs>
 ```
 
@@ -88,18 +91,21 @@ Simple `Tabs` declaration is done as follows:
 
 ```tsx
 <IgrTabs>
-    <IgrTab panel="first">Tab 1</IgrTab>
-    <IgrTab panel="second">Tab 2</IgrTab>
-    <IgrTab panel="third">Tab 3</IgrTab>
-    <IgrTabPanel id="first">Panel 1</IgrTabPanel>
-    <IgrTabPanel id="second">Panel 2</IgrTabPanel>
-    <IgrTabPanel id="third">Panel 3</IgrTabPanel>
+    <IgrTab label="Tab 1">
+      <span>Panel 1</span>
+    </IgrTab>
+    <IgrTab label="Tab 2">
+      <span>Panel 2</span>
+    </IgrTab>
+    <IgrTab label="Tab 3">
+      <span>Panel 3</span>
+    </IgrTab>
 </IgrTabs>
 ```
 
 ### Selection
 
-The `Tabs` emits `Change` event when the user selects an item either by key press or click. The `Select` method allows you to select a tab by specifying its panel as string value.
+The `Tabs` emits `Change` event when the user selects an item either by key press or click. The `Select` method allows you to select a tab by specifying the `Tab` or its id.
 
 If the selected tab is not specified on initial load, the first tab that is not disabled will be selected.
 
@@ -110,7 +116,7 @@ The default behavior, which selects a tab when the user is navigating with the a
 A tab is disabled by setting the `Disabled` attribute:
 
 ```html
-<igc-tab panel="first" disabled>Tab 1</igc-tab>
+<igc-tab disabled>Tab 1</igc-tab>
 ```
 
 ```razor
@@ -118,7 +124,7 @@ A tab is disabled by setting the `Disabled` attribute:
 ```
 
 ```tsx
-<IgrTab panel="first" disabled={true}>Tab 1</IgrTab>
+<IgrTab disabled={true}>Tab 1</IgrTab>
 ```
 
 ### Alignment
@@ -166,6 +172,15 @@ Each tab has default slot to display information - icon, text or both and `prefi
 
 The `Tabs` component exposes several CSS parts, giving you full control over its style:
 
+<!-- WebComponents, React -->
+| Name | Description |
+|--|--|
+| `selected-indicator` | The selected indicator. |
+| `start-scroll-button` | The start scroll button displayed when the tabs overflow. |
+| `end-scroll-button` | The end scroll button displayed when the tabs overflow. |
+<!-- end: WebComponents, React -->
+
+<!-- Blazor -->
 | Name | Description |
 |--|--|
 | `headers` | The wrapper which includes the tabs and the scroll buttons. |
@@ -176,9 +191,31 @@ The `Tabs` component exposes several CSS parts, giving you full control over its
 | `start-scroll-button` | The start scroll button displayed when the tabs overflow. |
 | `end-scroll-button` | The end scroll button displayed when the tabs overflow. |
 | `content` | The container for the content where the data is displayed. |
+<!-- end: Blazor -->
 
 The `Tab` component exposes the following CSS parts:
 
+<!-- WebComponents, React -->
+|Name|Description|
+|--|--|
+| `content` | Tab header's label slot container. |
+| `prefix` | Tab header's label prefix. |
+| `suffix` | Tab header's label suffix. |
+| `tab-header` | The header of a single tab. |
+| `tab-body` | Holds the body content of a single tab, only the body of the selected tab is visible. |
+
+```css
+igc-tab::part(tab-header) {
+  background-color: var(--ig-gray-200);
+}
+
+igc-tab::part(content) {
+  color: var(--ig-success-500);
+}
+```
+<!-- end: WebComponents, React -->
+
+<!-- Blazor -->
 |Name|Description|
 |--|--|
 | `content` | The content wrapper. |
@@ -194,7 +231,7 @@ igc-tab::part(content) {
   color: var(--ig-success-500);
 }
 ```
-
+<!-- end: Blazor -->
 `sample="/layouts/tabs/styling", height="150", alt="Tabs Styling Example"`
 
 ## API Reference
