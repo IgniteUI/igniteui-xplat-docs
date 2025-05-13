@@ -1283,10 +1283,12 @@ next set up the method for loading the data:
 and finally set up the behaviour for the RowIslands:
 <!-- ComponentStart: HierarchicalGrid -->
 ```tsx
-  function gridCreated(rowIsland: IgrRowIsland, event: IgrGridCreatedEventArgs, parentKey: string) {
+  function gridCreated(event: IgrGridCreatedEventArgs, parentKey: string) {
     const context = event.detail;
+    context.grid.isLoading = true;
+
     const parentId: string = context.parentID;
-    const childDataKey: string = rowIsland.childDataKey;
+    const childDataKey: string = context.owner.childDataKey;
 
     RemoteService.getHierarchyDataById(parentKey, parentId, childDataKey)
       .then((data: any) => {
@@ -1299,7 +1301,7 @@ and finally set up the behaviour for the RowIslands:
         context.grid.data = [];
         context.grid.isLoading = false;
         context.grid.markForCheck();
-      })
+      });
   }
 ```
 
