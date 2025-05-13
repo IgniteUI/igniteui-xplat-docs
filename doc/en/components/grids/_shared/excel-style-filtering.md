@@ -41,7 +41,7 @@ To turn on the `{ComponentName}` component's Excel-style filtering, two inputs s
 
 <!-- React -->
 ```tsx
-<{ComponentSelector} data={nwindData} autoGenerate="true" allowFiltering="true" filterMode={FilterMode.ExcelStyleFilter}>
+<{ComponentSelector} data={nwindData} autoGenerate={true} allowFiltering={true} filterMode={FilterMode.ExcelStyleFilter}>
 </{ComponentSelector}>
 ```
 <!-- end: React -->
@@ -106,16 +106,16 @@ Sorting, pinning and hiding features can be removed from the filter menu using t
 ```
 
 ```tsx
-<IgrGrid data={nwindData} autoGenerate="false" allowFiltering="true" filterMode={FilterMode.ExcelStyleFilter}>
-    <IgrColumn field="ProductName" header="Product Name" sortable="true" dataType="String">
+<IgrGrid data={nwindData} autoGenerate={false} allowFiltering={true} filterMode={FilterMode.ExcelStyleFilter}>
+    <IgrColumn field="ProductName" header="Product Name" sortable={true} dataType="string">
     </IgrColumn>
-    <IgrColumn field="QuantityPerUnit" header="Quantity Per Unit" sortable="false" disable-pinning="true" disable-hiding="true" data-type="String">
+    <IgrColumn field="QuantityPerUnit" header="Quantity Per Unit" sortable={false} disablePinning={true} disableHiding={true} dataType="string">
     </IgrColumn>
-    <IgrColumn field="UnitPrice" header="Unit Price" disable-pinning="true" disable-hiding="true" sortable="true" data-type="Number">
+    <IgrColumn field="UnitPrice" header="Unit Price" disablePinning={true} disableHiding={true} sortable={true} dataType="number">
     </IgrColumn>
-    <IgrColumn field="OrderDate" header="Order Date" sortable="false"  data-type="Date">
+    <IgrColumn field="OrderDate" header="Order Date" sortable={false}  dataType="date">
     </IgrColumn>
-    <IgrColumn field="Discontinued" header="Discontinued" sortable="true" data-type="Boolean">
+    <IgrColumn field="Discontinued" header="Discontinued" sortable={true} dataType="boolean">
     </IgrColumn>      
 </IgrGrid>  
 ```
@@ -219,13 +219,13 @@ In the sample below 'Product Name' and 'Discontinued' columns have all three fea
 ```
 
 ```tsx
-<IgrHierarchicalGrid autoGenerate="false" allowFiltering="true" filterMode={FilterMode.ExcelStyleFilter}
+<IgrHierarchicalGrid autoGenerate={false} allowFiltering={true} filterMode={FilterMode.ExcelStyleFilter}
     height="650px" width="100%" id="hierarchicalGrid">
-    <IgrColumn field="Artist" filterable="true" sortable="true" ></IgrColumn>
-    <IgrColumn field="Photo" filterable="false"></IgrColumn>
-    <IgrColumn field="Debut" filterable="true" disablePinning="true" disableHiding="true"></IgrColumn>
-    <IgrColumn field="GrammyNominations" header="Grammy Nominations" filterable="true" sortable="false" data-type="Number"></IgrColumn>
-    <IgrColumn field="GrammyAwards" header="Grammy Awards" filterable="true" data-type="Number"></IgrColumn>
+    <IgrColumn field="Artist" filterable={true} sortable={true} ></IgrColumn>
+    <IgrColumn field="Photo" filterable={false}></IgrColumn>
+    <IgrColumn field="Debut" filterable={true} disablePinning={true} disableHiding={true}></IgrColumn>
+    <IgrColumn field="GrammyNominations" header="Grammy Nominations" filterable={true} sortable={false} dataType="number"></IgrColumn>
+    <IgrColumn field="GrammyAwards" header="Grammy Awards" filterable={true} dataType="number"></IgrColumn>
     {/* ... */}
 </IgrHierarchicalGrid>  
 ```
@@ -297,8 +297,10 @@ public webGridFilterAltIconTemplate = (ctx: IgcCellTemplateContext) => {
 ```
 <!-- end: WebComponents -->
 
+<!-- ComponentStart: Grid, HierarchicalGrid -->
+
 ```tsx
-const webGridFilterAltIconTemplate = ({dataContext: IgrCellTemplateContext}) => {
+const webGridFilterAltIconTemplate = (ctx: IgrGridHeaderTemplateContext) => {
   return (
     <img 
       height="15px" 
@@ -310,10 +312,12 @@ const webGridFilterAltIconTemplate = ({dataContext: IgrCellTemplateContext}) => 
   );
 }
 
-<{ComponentSelector} autoGenerate="true" allowFiltering="true" filterMode="excelStyleFilter" 
+<{ComponentSelector} autoGenerate={true} allowFiltering={true} filterMode="excelStyleFilter" 
     excelStyleHeaderIconTemplate={webGridFilterAltIconTemplate}>
 </{ComponentSelector}>
 ```
+
+<!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 <!-- end: WebComponents, Blazor, React -->
 
