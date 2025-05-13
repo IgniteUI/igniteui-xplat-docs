@@ -457,20 +457,19 @@ If you want to provide a custom template which will be applied to a cell, you ca
 <IgrColumn
     field="race"
     header="Race"
-    dataType="String"
-    editable="true"
-    name="column1"
-    id="column1">
+    dataType="string"
+    editable={true}
+    inlineEditorTemplate={this.webGridCellEditCellTemplate}>
 </IgrColumn>
 ```
 
 and pass the templates to this column in the index.ts file:
 
 ```typescript
-public webGridCellEditCellTemplate = (e: { dataContext: IgrCellTemplateContext; }) => {
+public webGridCellEditCellTemplate = (e: IgrCellTemplateContext) => {
     let cellValues: any = [];
     let uniqueValues: any = [];
-    const cell = e.dataContext.cell;
+    const cell = e.cell;
     const colIndex = cell.id.columnID;
     const field: string = this.grid1.getColumnByVisibleIndex(colIndex).field;
     const key = field + "_" + cell.id.rowID;
@@ -480,7 +479,7 @@ public webGridCellEditCellTemplate = (e: { dataContext: IgrCellTemplateContext; 
         cellValues.push(
           <>
             <IgrSelectItem
-              selected={e.dataContext.cell.value == i[field]}
+              selected={e.cell.value == i[field]}
               value={i[field]}
               key={key + "_" + index}
             >
@@ -496,9 +495,9 @@ public webGridCellEditCellTemplate = (e: { dataContext: IgrCellTemplateContext; 
       <>
         <IgrSelect
           key={key}
-          change={(x: any) => {
+          onChange={(x: any) => {
             setTimeout(() => {
-              cell.editValue = x.value;
+              cell.editValue = x.target.value;
             });
           }}
         >
@@ -557,8 +556,8 @@ public keydownHandler(event) {
 <!-- React -->
 
 ```typescript
-function keydownHandler(event) {
-  const key = event.keyCode;
+function keydownHandler(args: IgrGridKeydownEventArgs) {
+  const key = args.detail.event.keyCode;
   const grid = grid1Ref.current;
   const activeElem = grid.navigation.activeNode;
 
@@ -570,7 +569,7 @@ function keydownHandler(event) {
         const cell = grid.getCellByColumn(activeElem.row, columnName);
         if (cell && !grid.crudService.cellInEditMode) {
             grid.crudService.enterEditMode(cell);
-            cell.editValue = event.key;
+            cell.editValue = key;
         }
     }
 }
@@ -607,7 +606,7 @@ if (key == 13) {
     const rowInfo = grid.dataView;
 
     // to find the next eligible cell, we will use a custom method that will check the next suitable index
-    let nextRow = getNextEditableRowIndex(thisRow, rowInfo, event.shiftKey);
+    let nextRow = getNextEditableRowIndex(thisRow, rowInfo, args.detail.event.shiftKey);
 
     // and then we will navigate to it using the grid's built in method navigateTo
     grid1Ref.current.navigateTo(nextRow, column, (obj) => {
@@ -623,11 +622,11 @@ Key parts of finding the next eligible index would be:
 ```typescript
 //first we check if the currently selected cell is the first or the last
 if (currentRowIndex < 0 || (currentRowIndex === 0 && previous) || (currentRowIndex >= dataView.length - 1 && !previous)) {
-return currentRowIndex;
+    return currentRowIndex;
 }
 // in case using shift + enter combination, we look for the first suitable cell going up the field
 if (previous) {
-return  dataView.findLastIndex((rec, index) => index < currentRowIndex && this.isEditableDataRecordAtIndex(index, dataView));
+    return  dataView.findLastIndex((rec, index) => index < currentRowIndex && this.isEditableDataRecordAtIndex(index, dataView));
 }
 // or for the next one down the field
 return dataView.findIndex((rec, index) => index > currentRowIndex && this.isEditableDataRecordAtIndex(index, dataView));
@@ -879,7 +878,7 @@ row.delete();
 grid1Ref.current.deleteRow(selectedCell.cellID.rowID);
 // Delete row through row object
 const row = grid1Ref.current.getRowByIndex(rowIndex);
-row.del();
+row.delete();
 ```
 <!-- end: React -->
 
@@ -932,7 +931,7 @@ row.delete();
 this.hierarchicalGrid.deleteRow(this.selectedCell.cellID.rowID);
 // Delete row through row object
 const row = this.hierarchicalGrid.getRowByIndex(rowIndex);
-row.del();
+row.delete();
 ```
 <!-- end: React -->
 
@@ -977,7 +976,7 @@ The first thing we need to do is bind to the grid's event:
 
 <!-- React -->
 ```tsx
-<{ComponentSelector} cellEdit={handleCellEdit}>
+<{ComponentSelector} onCellEdit={handleCellEdit}>
 </{ComponentSelector}>
 ```
 <!-- end: React -->
@@ -1065,7 +1064,7 @@ public webGridCellEdit(event: CustomEvent<IgcGridEditEventArgs>): void {
 
 <!-- React -->
 ```typescript
-function handleCellEdit(s: IgrGridBaseDirective, args: IgrGridEditEventArgs): void {
+function handleCellEdit(args: IgrGridEditEventArgs): void {
     const column = args.detail.column;
 
     if (column.field === 'UnitsOnOrder') {
@@ -1138,6 +1137,29 @@ igRegisterScript("HandleCellEdit", (ev) => {
 }, false);
 ```
 
+<!-- React -->
+<!-- ComponentStart: TreeGrid -->
+
+```tsx
+public webTreeGridCellEdit(args: IgrGridEditEventArgs): void {
+    const column = args.detail.column;
+
+    if (column.field === 'Age') {
+        if (args.detail.newValue < 18) {
+            args.detail.cancel = true;
+            alert('Employees must be at least 18 years old!');
+        }
+    } else if (column.field === 'HireDate') {
+        if (args.detail.newValue > new Date().getTime()) {
+            args.detail.cancel = true;
+            alert('The employee hire date must be in the past!');
+        }
+    }
+}
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: React -->
+
 If the value entered in a cell under the **Age** column is below 18 or the value in the **HireDate** column is in the future, the editing will be cancelled and the user will be alerted to the cancellation.
 
 <!-- Angular -->
@@ -1193,7 +1215,7 @@ Here, we are validating two columns. If the user tries to change an artist's **D
 <!-- React -->
 <!-- ComponentStart: HierarchicalGrid -->
 ```tsx
-public handleCellEdit(sender: IgrHierarchicalGrid, event: IgrGridEditEventArgs): void {
+public handleCellEdit(event: IgrGridEditEventArgs): void {
     const today = new Date();
     const column = event.detail.column;
     if (column.field === 'Debut') {
