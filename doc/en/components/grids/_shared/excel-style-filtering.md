@@ -41,7 +41,7 @@ To turn on the `{ComponentName}` component's Excel-style filtering, two inputs s
 
 <!-- React -->
 ```tsx
-<{ComponentSelector} data={nwindData} autoGenerate={true} allowFiltering={true} filterMode={FilterMode.ExcelStyleFilter}>
+<{ComponentSelector} data={nwindData} autoGenerate={true} allowFiltering={true} filterMode="excelStyleFilter">
 </{ComponentSelector}>
 ```
 <!-- end: React -->
@@ -106,7 +106,7 @@ Sorting, pinning and hiding features can be removed from the filter menu using t
 ```
 
 ```tsx
-<IgrGrid data={nwindData} autoGenerate={false} allowFiltering={true} filterMode={FilterMode.ExcelStyleFilter}>
+<IgrGrid data={nwindData} autoGenerate={false} allowFiltering={true} filterMode="excelStyleFilter">
     <IgrColumn field="ProductName" header="Product Name" sortable={true} dataType="string">
     </IgrColumn>
     <IgrColumn field="QuantityPerUnit" header="Quantity Per Unit" sortable={false} disablePinning={true} disableHiding={true} dataType="string">
@@ -219,7 +219,7 @@ In the sample below 'Product Name' and 'Discontinued' columns have all three fea
 ```
 
 ```tsx
-<IgrHierarchicalGrid autoGenerate={false} allowFiltering={true} filterMode={FilterMode.ExcelStyleFilter}
+<IgrHierarchicalGrid autoGenerate={false} allowFiltering={true} filterMode="excelStyleFilter"
     height="650px" width="100%" id="hierarchicalGrid">
     <IgrColumn field="Artist" filterable={true} sortable={true} ></IgrColumn>
     <IgrColumn field="Photo" filterable={false}></IgrColumn>
