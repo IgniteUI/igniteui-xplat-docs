@@ -232,7 +232,7 @@ const onResize = (event: IgrColumnResizeEventArgs) => {
   const nWidth = event.detail.newWidth;
 }
 
-<{ComponentSelector} id="hierarchicalGrid" autoGenerate={false} columnResized={onResize}>
+<{ComponentSelector} id="hierarchicalGrid" autoGenerate={false} onColumnResized={onResize}>
     <IgrColumn field="Artist" resizable={true}></IgrColumn>
 </{ComponentSelector}>
 ```
@@ -322,7 +322,7 @@ This means that the following configuration is possible:
 ```
 
 ```tsx
-<{ComponentSelector} data={data} autoGenerate={false} primaryKey="ID" foreignKey="ParentID" columnResized={onResize}>
+<{ComponentSelector} data={data} autoGenerate={false} primaryKey="ID" foreignKey="ParentID" onColumnResized={onResize}>
     <IgrColumn field="Title" resizable={true} width="10%"></IgrColumn>
     <IgrColumn field="HireDate" resizable={true} width="100px"></IgrColumn>
     <IgrColumn field="Age" dataType="number" resizable={true}></IgrColumn>
@@ -359,7 +359,7 @@ This means that the following configuration is possible:
 ```
 
 ```tsx
-<{ComponentSelector} id="hierarchicalGrid" columnResized={onResize} autoGenerate={false}
+<{ComponentSelector} id="hierarchicalGrid" onColumnResized={onResize} autoGenerate={false}
     height="600px" width="100%">
     <IgrColumn field="Artist" resizable={true} width="10%"></IgrColumn>
     <IgrColumn field="GrammyNominations" resizable={true} width="100px"></IgrColumn>
