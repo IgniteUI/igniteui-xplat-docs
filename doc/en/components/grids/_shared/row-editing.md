@@ -92,17 +92,17 @@ public unitsInStockCellTemplate = (ctx: IgcCellTemplateContext) => {
 function unitsInStockCellTemplate(ctx: IgrCellTemplateContext) {
     return (
         <>
-            <input name="units" value={ctx.dataContext.cell.value} style={{color: "black"}} />;
+            <input name="units" value={ctx.cell.value} style={{color: "black"}} />;
         </>
     );
 }
 
 <{ComponentSelector} primaryKey="ProductID" width="100%" height="500px" rowEditable="true"
-    bodyTemplate={unitsInStockCellTemplate}>
+    >
     <IgrColumn field="ProductID" header="Product ID" editable="false"></IgrColumn>
     <IgrColumn field="ReorderLevel" header="ReorderLever" dataType="number"></IgrColumn>
     <IgrColumn field="ProductName" header="ProductName" dataType="string"></IgrColumn>
-    <IgrColumn field="UnitsInStock" header="UnitsInStock" dataType="number"></IgrColumn>
+    <IgrColumn field="UnitsInStock" header="UnitsInStock" dataType="number" bodyTemplate={unitsInStockCellTemplate}></IgrColumn>
     <IgrColumn field="OrderDate" dataType="date"></IgrColumn>
     <IgrColumn field="Discontinued" header="Discontinued" dataType="boolean"></IgrColumn>
 </{ComponentSelector}>
@@ -603,7 +603,7 @@ public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
 function rowEditTextTemplate(ctx: IgrGridRowEditTextTemplateContext) {
     return (
         <>
-            Changes: {ctx.dataContext.implicit}
+            Changes: {ctx.implicit}
         </>
     );
 }
@@ -651,7 +651,7 @@ public rowEditActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 function rowEditActionsTemplate(ctx: IgrGridRowEditActionsTemplateContext) {
-    const endRowEdit = ctx.dataContext.implicit;
+    const endRowEdit = ctx.implicit;
     return (
         <>
             <button onClick={(event) => endRowEdit(false, event)}>Cancel</button>
