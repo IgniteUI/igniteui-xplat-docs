@@ -205,12 +205,14 @@ igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
 constructor() {
         const grid = this.grid = document.getElementById('grid1') as {ComponentName}Component;
 		grid.data = this.data
-		grid.addEventListener("onGridKeydown", this.customKeydown);
+		grid.addEventListener("gridKeydown", this.customKeydown);
 	}
 ```
 <!-- end: WebComponents -->
 
-```typescript
+<!-- React -->
+
+```tsx
 const customKeydown = (eventArgs: IgrGridKeydownEventArgs) => {
   const args = eventArgs.detail;
   const target= args.target;
@@ -227,6 +229,9 @@ const customKeydown = (eventArgs: IgrGridKeydownEventArgs) => {
 }
 ```
 
+<!-- end: React -->
+
+<!-- WebComponents -->
 
 ```typescript
 public customKeydown(args: any) {
@@ -243,6 +248,9 @@ public customKeydown(args: any) {
     }
 }
 ```
+
+<!-- WebComponents -->
+
 <!-- Angular, WebComponents, Blazor -->
 
 Based on the event arg values we identified two cases, where to provide our own logic (see above). Now, using the methods from the API, let's perform the desired - if the user is pressing <kbd>Tab</kbd> key over a cell in edit mode, we will perform validation on the input. If the user is pressing <kbd>Enter</kbd> key over a cell, we will move focus to cell in the next row:
