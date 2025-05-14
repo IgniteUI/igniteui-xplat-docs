@@ -160,9 +160,9 @@ function exportEventFreezeHeaders(args: IgrExporterEventArgs) {
     args.detail.options.freezeHeaders = true;
   }
 
-<IgrGridToolbar key="toolbar">
-  <IgrGridToolbarActions key="toolbarActions">
-    <IgrGridToolbarExporter key="exporting" onExportStarted={exportEventFreezeHeaders}></IgrGridToolbarExporter>
+<IgrGridToolbar>
+  <IgrGridToolbarActions>
+    <IgrGridToolbarExporter onExportStarted={exportEventFreezeHeaders}></IgrGridToolbarExporter>
   </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
