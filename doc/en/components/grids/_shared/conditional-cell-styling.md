@@ -306,6 +306,7 @@ constructor() {
 
 <!-- ComponentStart: HierarchicalGrid -->
 
+<!-- WebComponents -->
 ```typescript
 public rowStyles = {
     background:(row: RowType) => row.data['HasGrammyAward'] ? '#eeddd3' : '#f0efeb',
@@ -316,6 +317,20 @@ public childRowStyles = {
     'border-left': (row: RowType) => row.data['BillboardReview'] > 70 ? '3.5px solid #dda15e' : null
 };
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```typescript
+const rowStyles = {
+    background:(row: RowType) => row.data['HasGrammyAward'] ? '#eeddd3' : '#f0efeb',
+    'border-left': (row: RowType) => row.data['HasGrammyAward'] ? '2px solid #dda15e' : null
+};
+
+const childRowStyles = {
+    'border-left': (row: RowType) => row.data['BillboardReview'] > 70 ? '3.5px solid #dda15e' : null
+};
+```
+<!-- end: React -->
 
 ```razor
 igRegisterScript("WebGridRowStylesHandler", () => {
