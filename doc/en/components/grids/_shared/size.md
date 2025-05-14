@@ -52,7 +52,7 @@ As you can see in the demo above, the `{ComponentName}` provides three size opti
 
 
 ```tsx
-<{ComponentSelector} id="grid" className="gridSize"></{ComponentSelector}>
+<{ComponentSelector} className="gridSize"></{ComponentSelector}>
 ```
 
 And now let's see in details how each option reflects on the `{ComponentName}` component. When you switch between different size options the height of each `{ComponentName}` element and the corresponding paddings will be changed. Also if you want to apply custom column `Width`, please consider the fact that it must be bigger than the sum of left and right padding.
@@ -424,7 +424,7 @@ Now we can add the markup.
 ```
 
 ```tsx
-<IgrGrid id="grid" autoGenerate={false} ref={gridRef} data={invoicesData} allowFiltering={true}>
+<IgrGrid autoGenerate={false} ref={gridRef} data={invoicesData} allowFiltering={true}>
     <IgrColumn field="CustomerName" header="Customer Name" dataType="string" sortable={true} hasSummary={true}></IgrColumn>
     <IgrColumn field="Country" header="Country" dataType="string" sortable={true} hasSummary={true}></IgrColumn>
     <IgrColumn field="City" header="City" dataType="string" sortable={true} hasSummary={true}></IgrColumn>
@@ -573,7 +573,7 @@ Now we can add the markup.
 ```
 
 ```tsx
-<IgrTreeGrid autoGenerate={false} ref={treeGridRef} id="grid" data={employeesFlatDetails} primaryKey="ID" foreignKey="ParentID" allowFiltering={true}>
+<IgrTreeGrid autoGenerate={false} ref={treeGridRef} data={employeesFlatDetails} primaryKey="ID" foreignKey="ParentID" allowFiltering={true}>
     <IgrColumn field="Name" dataType="string" sortable={true} hasSummary={true} width="200"></IgrColumn>
     <IgrColumnGroup header="General Information">
         <IgrColumn field="HireDate" dataType="date" sortable={true} hasSummary={true}></IgrColumn>
@@ -719,7 +719,6 @@ Now we can add the markup.
 <IgrHierarchicalGrid
     autoGenerate={false}
     ref={grid}
-    id="grid"
     allowFiltering={true}>
     <IgrColumn field="CustomerID" dataType="string"></IgrColumn>
     <IgrColumn field="CompanyName" dataType="string"></IgrColumn>
@@ -903,7 +902,7 @@ We can now extend our sample and add `RowHeight` property to the `{ComponentName
  <!-- end: WebComponents -->
 
  ```tsx
- <{ComponentSelector} id="grid" className="gridSize" rowHeight="80px" width="100%" height="550px" allowFiltering={true}></{ComponentSelector}>
+ <{ComponentSelector} className="gridSize" rowHeight="80px" width="100%" height="550px" allowFiltering={true}></{ComponentSelector}>
  ```
 
 ## API References
