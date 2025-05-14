@@ -160,7 +160,7 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 <!-- React -->
 ```tsx
 function onSorting(args: IgrSortingEventArgs) {
-    const grid = args.target as IgrGrid;
+    const grid = args.target as {ComponentSelector};
     grid.endEdit(true);
 }
 
