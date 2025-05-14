@@ -52,8 +52,7 @@ As you can see in the demo above, the `{ComponentName}` provides three size opti
 
 
 ```tsx
-<{ComponentSelector} id="grid" className="gridSize">
-</{ComponentSelector}>
+<{ComponentSelector} className="gridSize"></{ComponentSelector}>
 ```
 
 And now let's see in details how each option reflects on the `{ComponentName}` component. When you switch between different size options the height of each `{ComponentName}` element and the corresponding paddings will be changed. Also if you want to apply custom column `Width`, please consider the fact that it must be bigger than the sum of left and right padding.
@@ -120,15 +119,15 @@ Let's now continue with our sample and see in action how the `--ig-size` is appl
     componentRenderer={renderer}
     target={grid}
     descriptionType="WebGrid"
-    isHorizontal="true"
-    isWrappingEnabled="true">
+    isHorizontal={true}
+    isWrappingEnabled={true}>
     <IgrPropertyEditorPropertyDescription
         name="SizeEditor"
         label="Grid Size:"
         valueType="EnumValue"
         dropDownNames={["Small", "Medium", "Large"]}
         dropDownValues={["Small", "Medium", "Large"]}
-        changed={this.webGridSetGridSize}>
+        changed={webGridSetGridSize}>
     </IgrPropertyEditorPropertyDescription>
 </IgrPropertyEditorPanel>
 ```
@@ -208,15 +207,15 @@ public ngOnInit() {
     componentRenderer={renderer}
     target={grid}
     descriptionType="WebTreeGrid"
-    isHorizontal="true"
-    isWrappingEnabled="true">
+    isHorizontal={true}
+    isWrappingEnabled={true}>
     <IgrPropertyEditorPropertyDescription
         name="SizeEditor"
         label="Grid Size:"
         valueType="EnumValue"
         dropDownNames={["Small", "Medium", "Large"]}
         dropDownValues={["Small", "Medium", "Large"]}
-        changed={this.webGridSetGridSize}>
+        changed={webGridSetGridSize}>
     </IgrPropertyEditorPropertyDescription>
 </IgrPropertyEditorPanel>
 ```
@@ -270,15 +269,15 @@ public ngOnInit() {
     componentRenderer={renderer}
     target={grid}
     descriptionType="WebHierarchicalGrid"
-    isHorizontal="true"
-    isWrappingEnabled="true">
+    isHorizontal={true}
+    isWrappingEnabled={true}>
     <IgrPropertyEditorPropertyDescription
         name="SizeEditor"
         label="Grid Size:"
         valueType="EnumValue"
         dropDownNames={["Small", "Medium", "Large"]}
         dropDownValues={["Small", "Medium", "Large"]}
-        changed={this.webGridSetGridSize}>
+        changed={webGridSetGridSize}>
     </IgrPropertyEditorPropertyDescription>
 </IgrPropertyEditorPanel>
 ```
@@ -425,43 +424,24 @@ Now we can add the markup.
 ```
 
 ```tsx
-<IgrGrid id="grid" autoGenerate="false" ref={gridRef} data={invoicesData} allowFiltering="true">
-    <IgrColumn field="CustomerName" header="Customer Name" dataType="String" sortable="true" hasSummary="true">
-    </IgrColumn>
-    <IgrColumn field="Country" header="Country" dataType="String" sortable="true" hasSummary="true">
-    </IgrColumn>
-    <IgrColumn field="City" header="City" dataType="String" sortable="true" hasSummary="true">
-    </IgrColumn>
-    <IgrColumn field="Address" header="Address" dataType="String" sortable="true" hasSummary="true">
-    </IgrColumn>
-    <IgrColumn field="PostalCode" header="Postal Code" dataType="String" sortable="true" hasSummary="true">
-    </IgrColumn>
-    <IgrColumn field="Salesperson" header="Sales Person" dataType="String" sortable="true" hasSummary="true">
-    </IgrColumn>
-    <IgrColumn field="ShipperName" header="Shipper Name" dataType="String" sortable="true" hasSummary="true">
-    </IgrColumn>
-    <IgrColumn field="OrderDate" header="Order Date" dataType="Date" sortable="true" hasSummary="true">
-    </IgrColumn>
-    <IgrColumn field="ProductID" header="ID" dataType="String" sortable="true" hasSummary="true">
-    </IgrColumn>
-    <IgrColumn field="ProductName" header="Name" dataType="String" sortable="true" hasSummary="true">
-    </IgrColumn>
-    <IgrColumn field="UnitPrice" header="Unit Price" dataType="Number" sortable="true" hasSummary="true" filterable="false">
-    </IgrColumn>
-    <IgrColumn field="Quantity" header="Quantity" dataType="Number" sortable="true" hasSummary="true" filterable="false">
-    </IgrColumn>
-    <IgrColumn field="Discontinued" header="Discontinued" dataType="Boolean" sortable="true" hasSummary="true">
-    </IgrColumn>
-    <IgrColumn field="Discontinued" header="Discontinued" dataType="Boolean" sortable="true" hasSummary="true">
-    </IgrColumn>
-    <IgrColumn field="ShipName" header="Name" dataType="String" sortable="true" hasSummary="true">
-    </IgrColumn>
-    <IgrColumn field="ShipCountry" header="Country" dataType="String" sortable="true" hasSummary="true">
-    </IgrColumn>
-    <IgrColumn field="ShipCity" header="City" dataType="String" sortable="true" hasSummary="true">
-    </IgrColumn>
-    <IgrColumn field="ShipPostalCode" header="Postal Code" dataType="String" sortable="true" hasSummary="true">
-    </IgrColumn>
+<IgrGrid autoGenerate={false} ref={gridRef} data={invoicesData} allowFiltering={true}>
+    <IgrColumn field="CustomerName" header="Customer Name" dataType="string" sortable={true} hasSummary={true}></IgrColumn>
+    <IgrColumn field="Country" header="Country" dataType="string" sortable={true} hasSummary={true}></IgrColumn>
+    <IgrColumn field="City" header="City" dataType="string" sortable={true} hasSummary={true}></IgrColumn>
+    <IgrColumn field="Address" header="Address" dataType="string" sortable={true} hasSummary={true}></IgrColumn>
+    <IgrColumn field="PostalCode" header="Postal Code" dataType="string" sortable={true} hasSummary={true}></IgrColumn>
+    <IgrColumn field="Salesperson" header="Sales Person" dataType="string" sortable={true} hasSummary={true}></IgrColumn>
+    <IgrColumn field="ShipperName" header="Shipper Name" dataType="string" sortable={true} hasSummary={true}></IgrColumn>
+    <IgrColumn field="OrderDate" header="Order Date" dataType="date" sortable={true} hasSummary={true}></IgrColumn>
+    <IgrColumn field="ProductID" header="ID" dataType="string" sortable={true} hasSummary={true}></IgrColumn>
+    <IgrColumn field="ProductName" header="Name" dataType="string" sortable={true} hasSummary={true}></IgrColumn>
+    <IgrColumn field="UnitPrice" header="Unit Price" dataType="number" sortable={true} hasSummary={true} filterable={false}></IgrColumn>
+    <IgrColumn field="Quantity" header="Quantity" dataType="number" sortable={true} hasSummary={true} filterable={false}></IgrColumn>
+    <IgrColumn field="Discontinued" header="Discontinued" dataType="boolean" sortable={true} hasSummary={true}></IgrColumn>
+    <IgrColumn field="ShipName" header="Name" dataType="string" sortable={true} hasSummary={true}></IgrColumn>
+    <IgrColumn field="ShipCountry" header="Country" dataType="string" sortable={true} hasSummary={true}></IgrColumn>
+    <IgrColumn field="ShipCity" header="City" dataType="string" sortable={true} hasSummary={true}></IgrColumn>
+    <IgrColumn field="ShipPostalCode" header="Postal Code" dataType="string" sortable={true} hasSummary={true}></IgrColumn>
 </IgrGrid>
 ```
 <!-- ComponentEnd: Grid -->
@@ -593,26 +573,26 @@ Now we can add the markup.
 ```
 
 ```tsx
-<IgrTreeGrid autoGenerate="false" ref={this.treeGridRef} id="grid" data={this.employeesFlatDetails} primaryKey="ID" foreignKey="ParentID" allowFiltering="true">
-    <IgrColumn field="Name" dataType="String" sortable="true" hasSummary="true" width="200"></IgrColumn>
+<IgrTreeGrid autoGenerate={false} ref={treeGridRef} data={employeesFlatDetails} primaryKey="ID" foreignKey="ParentID" allowFiltering={true}>
+    <IgrColumn field="Name" dataType="string" sortable={true} hasSummary={true} width="200"></IgrColumn>
     <IgrColumnGroup header="General Information">
-        <IgrColumn field="HireDate" dataType="Date" sortable="true" hasSummary="true"></IgrColumn>
+        <IgrColumn field="HireDate" dataType="date" sortable={true} hasSummary={true}></IgrColumn>
         <IgrColumnGroup header="Personal Details">
-            <IgrColumn field="ID" dataType="Number" filterable="false"></IgrColumn>
-            <IgrColumn field="Title" dataType="String" sortable="true" hasSummary="true"></IgrColumn>
-            <IgrColumn field="Age" dataType="Number" sortable="true" hasSummary="true" filterable="false"></IgrColumn>
+            <IgrColumn field="ID" dataType="number" filterable={false}></IgrColumn>
+            <IgrColumn field="Title" dataType="string" sortable={true} hasSummary={true}></IgrColumn>
+            <IgrColumn field="Age" dataType="number" sortable={true} hasSummary={true} filterable={false}></IgrColumn>
         </IgrColumnGroup>
     </IgrColumnGroup>
     <IgrColumnGroup header="Address Information">
         <IgrColumnGroup header="Location">
-            <IgrColumn field="Country" dataType="String" sortable="true" hasSummary="true"></IgrColumn>
-            <IgrColumn field="City" dataType="String" sortable="true" hasSummary="true"></IgrColumn>
-            <IgrColumn field="Address" dataType="String" sortable="true" hasSummary="true"></IgrColumn>
+            <IgrColumn field="Country" dataType="string" sortable={true} hasSummary={true}></IgrColumn>
+            <IgrColumn field="City" dataType="string" sortable={true} hasSummary={true}></IgrColumn>
+            <IgrColumn field="Address" dataType="string" sortable={true} hasSummary={true}></IgrColumn>
         </IgrColumnGroup>
         <IgrColumnGroup header="Contact Information">
-            <IgrColumn field="Phone" dataType="String" sortable="true" hasSummary="true"></IgrColumn>
-            <IgrColumn field="Fax" dataType="String" sortable="true" hasSummary="true"></IgrColumn>
-            <IgrColumn field="PostalCode" dataType="String" sortable="true" hasSummary="true"></IgrColumn>
+            <IgrColumn field="Phone" dataType="string" sortable={true} hasSummary={true}></IgrColumn>
+            <IgrColumn field="Fax" dataType="string" sortable={true} hasSummary={true}></IgrColumn>
+            <IgrColumn field="PostalCode" dataType="string" sortable={true} hasSummary={true}></IgrColumn>
         </IgrColumnGroup>
     </IgrColumnGroup>
 </IgrTreeGrid>
@@ -737,39 +717,38 @@ Now we can add the markup.
 
 ```tsx
 <IgrHierarchicalGrid
-    autoGenerate="false"
-    ref={this.grid}
-    id="grid"
-    allowFiltering="true">
-    <IgrColumn field="CustomerID" dataType="String"></IgrColumn>
-    <IgrColumn field="CompanyName" dataType="String"></IgrColumn>
-    <IgrColumn field="ContactName" dataType="String"></IgrColumn>
-    <IgrColumn field="Address" dataType="String"></IgrColumn>
-    <IgrColumn field="City" dataType="String"></IgrColumn>
-    <IgrColumn field="PostalCode" dataType="String"></IgrColumn>
-    <IgrColumn field="Country" dataType="String"></IgrColumn>
-    <IgrColumn field="Phone" dataType="String"></IgrColumn>
-    <IgrColumn field="Fax" dataType="String"></IgrColumn>
+    autoGenerate={false}
+    ref={grid}
+    allowFiltering={true}>
+    <IgrColumn field="CustomerID" dataType="string"></IgrColumn>
+    <IgrColumn field="CompanyName" dataType="string"></IgrColumn>
+    <IgrColumn field="ContactName" dataType="string"></IgrColumn>
+    <IgrColumn field="Address" dataType="string"></IgrColumn>
+    <IgrColumn field="City" dataType="string"></IgrColumn>
+    <IgrColumn field="PostalCode" dataType="string"></IgrColumn>
+    <IgrColumn field="Country" dataType="string"></IgrColumn>
+    <IgrColumn field="Phone" dataType="string"></IgrColumn>
+    <IgrColumn field="Fax" dataType="string"></IgrColumn>
 
-    <IgrRowIsland childDataKey="Orders" autoGenerate="false">
-        <IgrColumn field="OrderID" dataType="Number"></IgrColumn>
-        <IgrColumn field="EmployeeID" dataType="Number"></IgrColumn>
-        <IgrColumn field="OrderDate" dataType="Date"></IgrColumn>
-        <IgrColumn field="RequiredDate" dataType="Date"></IgrColumn>
-        <IgrColumn field="ShippedDate" dataType="Date"></IgrColumn>
-        <IgrColumn field="ShipVia" dataType="Number"></IgrColumn>
-        <IgrColumn field="Freight" dataType="Number"></IgrColumn>
-        <IgrColumn field="ShipName" dataType="String"></IgrColumn>
-        <IgrColumn field="ShipAddress" dataType="String"></IgrColumn>
-        <IgrColumn field="ShipCity" dataType="String"></IgrColumn>
-        <IgrColumn field="ShipPostalCode" dataType="String"></IgrColumn>
-        <IgrColumn field="ShipCountry" dataType="String"></IgrColumn>
+    <IgrRowIsland childDataKey="Orders" autoGenerate={false}>
+        <IgrColumn field="OrderID" dataType="number"></IgrColumn>
+        <IgrColumn field="EmployeeID" dataType="number"></IgrColumn>
+        <IgrColumn field="OrderDate" dataType="date"></IgrColumn>
+        <IgrColumn field="RequiredDate" dataType="date"></IgrColumn>
+        <IgrColumn field="ShippedDate" dataType="date"></IgrColumn>
+        <IgrColumn field="ShipVia" dataType="number"></IgrColumn>
+        <IgrColumn field="Freight" dataType="number"></IgrColumn>
+        <IgrColumn field="ShipName" dataType="string"></IgrColumn>
+        <IgrColumn field="ShipAddress" dataType="string"></IgrColumn>
+        <IgrColumn field="ShipCity" dataType="string"></IgrColumn>
+        <IgrColumn field="ShipPostalCode" dataType="string"></IgrColumn>
+        <IgrColumn field="ShipCountry" dataType="string"></IgrColumn>
         
-        <IgrRowIsland childDataKey="OrderDetails" autoGenerate="false">
-            <IgrColumn field="ProductID" dataType="Number"></IgrColumn>
-            <IgrColumn field="UnitPrice" dataType="Number"></IgrColumn>
-            <IgrColumn field="Quantity" dataType="Number"></IgrColumn>
-            <IgrColumn field="Discount" dataType="Number"></IgrColumn>
+        <IgrRowIsland childDataKey="OrderDetails" autoGenerate={false}>
+            <IgrColumn field="ProductID" dataType="number"></IgrColumn>
+            <IgrColumn field="UnitPrice" dataType="number"></IgrColumn>
+            <IgrColumn field="Quantity" dataType="number"></IgrColumn>
+            <IgrColumn field="Discount" dataType="number"></IgrColumn>
         </IgrRowIsland>
     </IgrRowIsland>
 </IgrHierarchicalGrid>
@@ -923,8 +902,7 @@ We can now extend our sample and add `RowHeight` property to the `{ComponentName
  <!-- end: WebComponents -->
 
  ```tsx
- <{ComponentSelector} id="grid" className="gridSize" rowHeight="80px" width="100%" height="550px" allowFiltering="true">
- </{ComponentSelector}>
+ <{ComponentSelector} className="gridSize" rowHeight="80px" width="100%" height="550px" allowFiltering={true}></{ComponentSelector}>
  ```
 
 ## API References
