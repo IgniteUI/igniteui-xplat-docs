@@ -154,11 +154,11 @@ public rowPinning(event) {
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 ```tsx
-function rowPinning(grid: IgrGridBaseDirective, event: IgrPinRowEventArgs ) {
+function rowPinning(event: IgrPinRowEventArgs ) {
     event.detail.insertAtIndex = 0;
 }
 
-<{ComponentSelector} autoGenerate="true" rowPinning={rowPinning}>
+<{ComponentSelector} autoGenerate={true} onRowPinning={rowPinning}>
 </{ComponentSelector}>
 ```
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
@@ -235,11 +235,10 @@ grid.pinning = { rows: RowPinningPosition.Bottom };
 
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-<{ComponentSelector} id="dataGrid" autoGenerate="true">
+<{ComponentSelector} id="dataGrid" ref={gridRef} autoGenerate={true}>
 </{ComponentSelector}>
 
-var grid = document.getElementById("dataGrid") as {ComponentSelector};
-grid.pinning = { rows: RowPinningPosition.Bottom };
+gridRef.current.pinning = { rows: RowPinningPosition.Bottom }
 ```
 <!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
@@ -326,7 +325,7 @@ public pinCellTemplate = (ctx: IgcCellTemplateContext) => {
 <!-- React -->
 ```tsx
 function cellPinCellTemplate(ctx: IgrCellTemplateContext) {
-    const index = ctx.dataContext.cell.row.index;
+    const index = ctx.cell.row.index;
     return (
         <>
             <span onPointerDown={(e: any) => toggleRowPin(index)}>📌</span>
@@ -334,7 +333,7 @@ function cellPinCellTemplate(ctx: IgrCellTemplateContext) {
     );
 }
 
-<{ComponentSelector} primaryKey="ID" autoGenerate="false">
+<{ComponentSelector} primaryKey="ID" autoGenerate={false}>
     <IgrColumn width="70px" bodyTemplate={cellPinCellTemplate}>
     </IgrColumn>
 </{ComponentSelector}>
