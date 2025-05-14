@@ -265,7 +265,7 @@ These components expose templates giving flexibility for customization. For inst
 <{ComponentSelector}>
     <IgrActionStrip name="actionStrip">
         <IgrGridPinningActions></IgrGridPinningActions>
-        <IgrGridEditingActions editRow="true" deleteRow="true"></IgrGridEditingActions>
+        <IgrGridEditingActions editRow={true} deleteRow={true}></IgrGridEditingActions>
     </IgrActionStrip>
 </{ComponentSelector}>
 ```
@@ -276,7 +276,7 @@ These components expose templates giving flexibility for customization. For inst
 <IgrHierarchicalGrid>
     <IgrActionStrip name="actionStrip">
         <IgrGridPinningActions></IgrGridPinningActions>
-        <IgrGridEditingActions editRow="true" deleteRow="true"></IgrGridEditingActions>
+        <IgrGridEditingActions editRow={true} deleteRow={true}></IgrGridEditingActions>
     </IgrActionStrip>
 </IgrHierarchicalGrid>
 ```
