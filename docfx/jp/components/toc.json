@@ -1237,7 +1237,13 @@
         },
         {
           "name": "チャート注釈",
-          "href": "charts/features/chart-annotations.md"
+          "href": "charts/features/chart-annotations.md",
+          "status": ""
+        },
+        {
+          "name": "チャート注釈",
+          "href": "charts/features/chart-annotations.md",
+          "status": "NEW"
         },
         {
           "name": "ダッシュボードでのチャート作成",
@@ -1290,7 +1296,7 @@
         {
           "name": "チャート オーバーレイ",
           "href": "charts/features/chart-overlays.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "チャート パフォーマンス",
