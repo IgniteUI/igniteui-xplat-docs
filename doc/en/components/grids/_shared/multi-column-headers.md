@@ -639,13 +639,13 @@ public columnGroupHeaderTemplate = (ctx: IgcColumnTemplateContext) => {
 ```
 
 ```tsx
-function groupHeaderTemplate(e: { dataContext: IgrColumnTemplateContext }) {
-    const column = e.dataContext.column as IgrColumnGroup;
-    return (
-      <div>
-        <span style={{ float: "left" }}>{column.header.toUpperCase()}</span>
-      </div>
-    );
+const groupHeaderTemplate = (e: IgrColumnTemplateContext) => {
+  const column = e.column as IgrColumnGroup;
+  return (
+    <div>
+      <span style={{ float: "left" }}>{column.header.toUpperCase()}</span>
+    </div>
+  );
 }
 ```
 
@@ -681,13 +681,13 @@ public columnHeaderTemplate = (ctx: IgcColumnTemplateContext) => {
 ```
 
 ```tsx
-function columnHeaderTemplate(e: { dataContext: IgrColumnTemplateContext }) {
-    const column = e.dataContext.column as IgrColumnGroup;
-    return (
-      <span onClick={onClick}>
-        <IgrIcon data-draggable="false"></IgrIcon>
-      </span>
-    );
+const columnHeaderTemplate = (e: IgrColumnTemplateContext ) => {
+  const column = e.column as IgrColumnGroup;
+  return (
+    <span onClick={onClick}>
+      <IgrIcon data-draggable="false"></IgrIcon>
+    </span>
+  );
 }
 ```
 
