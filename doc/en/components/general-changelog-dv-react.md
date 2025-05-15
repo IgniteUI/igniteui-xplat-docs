@@ -26,7 +26,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 - The [ValueOverlay and ValueLayer](charts/features/chart-overlays.md), in addition to the new [Chart Data Annotations](charts/features/chart-data-annotations.md) listed above now expose an `OverlayText` property that can be used to overlay additional annotation text in the plot area. These appearance of these annotations can be configured by using the many OverlayText-prefixed properties. For example, the `OverlayTextBrush` property will configure the color of the overlay text. (Beta)
 
-- New [Trendline Layer](chart-trendlines.md) series type that allows you to apply a single trend line per trend line layer to a particular series. This allows the usage of multiple trend lines on a single series since you can have multiple [TrendlineLayer](chart-overlays.md) series types in the chart.
+- New [Trendline Layer](charts/features/chart-trendlines.md) series type that allows you to apply a single trend line per trend line layer to a particular series. This allows the usage of multiple trend lines on a single series since you can have multiple [TrendlineLayer](charts/features/chart-overlays.md) series types in the chart.
 
 ### Enhancements
 
