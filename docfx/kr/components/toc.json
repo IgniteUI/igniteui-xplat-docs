@@ -465,6 +465,11 @@
           "status": ""
         },
         {
+          "name": "Chart Data Annotations",
+          "href": "charts/features/chart-data-annotations.md",
+          "status": "NEW"
+        },        
+        {
           "name": "Chart Highlighting",
           "href": "charts/features/chart-highlighting.md",
           "status": ""
@@ -482,7 +487,7 @@
         {
           "name": "Chart Overlays",
           "href": "charts/features/chart-overlays.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "Chart Performance",
