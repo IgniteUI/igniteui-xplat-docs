@@ -238,7 +238,6 @@ igc-tab::part(content) {
 
 - `Tabs`
 - `Tab`
-- `TabPanel`
 - `Icon`
 - `IconButton`
 - `RadioGroup`
