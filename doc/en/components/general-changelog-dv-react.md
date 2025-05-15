@@ -9,6 +9,34 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## **25.1**
+
+### {PackageCharts} (Charts)
+
+- New [Chart Data Annotations](charts/features/chart-data-annotations.md)
+  - Data Annotation Band Layer (Beta)
+  - Data Annotation Line Layer (Beta)
+  - Data Annotation Rect Layer (Beta)
+  - Data Annotation Slice Layer (Beta)
+  - Data Annotation Strip Layer (Beta)
+
+- The [Data Tooltip](charts/features/chart-data-tooltip.md) and [Data Legend](charts/features/chart-data-legend.md) expose a new `LayoutMode` property that you can use to layout the contents of the tooltip or legend in a table or vertical layout structure. 
+
+- The `DefaultInteraction` property of the charts has been updated to include a new enumeration - `DragSelect` in which the dragged preview Rect will select the points contained within. (Beta)
+
+- The [ValueOverlay and ValueLayer](charts/features/chart-overlays.md), in addition to the new [Chart Data Annotations](charts/features/chart-data-annotations.md) listed above now expose an `OverlayText` property that can be used to overlay additional annotation text in the plot area. These appearance of these annotations can be configured by using the many OverlayText-prefixed properties. For example, the `OverlayTextBrush` property will configure the color of the overlay text. (Beta)
+
+- New [Trendline Layer](charts/features/chart-trendlines.md) series type that allows you to apply a single trend line per trend line layer to a particular series. This allows the usage of multiple trend lines on a single series since you can have multiple [TrendlineLayer](charts/features/chart-overlays.md) series types in the chart.
+
+### Enhancements
+
+#### Toolbar
+- Value layers added from the toolbar now appear on the legend.
+- The zoom reset tool has been moved to the zoom drop-down.
+
+#### Data Pie Chart
+- The chart now exposes a `GetOthersContext()` method. This will return the contents of the "others" slice.
+
 ## **{PackageVerChanges-24-2-APR2}**
 > [!Note]With 19.0.0 the React product introduces many breaking changes done to improve and streamline the API. Please refer to the full Update Guide.
 
