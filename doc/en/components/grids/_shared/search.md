@@ -1235,10 +1235,10 @@ constructor() {
 
 ```tsx
 <div slot="suffix" key="chipSuffix">
-    <IgrChip ref={caseSensitiveChipRef} key="caseSensitiveChip" selectable={true} select={handleCaseSensitiveChange}>
+    <IgrChip ref={caseSensitiveChipRef} key="caseSensitiveChip" selectable={true} onSelect={handleCaseSensitiveChange}>
         <span key="caseSensitive">Case Sensitive</span>
     </IgrChip>
-    <IgrChip ref={exactMatchChipRef} key="exactMatchChip" selectable={true} select={handleExactMatchChange}>
+    <IgrChip ref={exactMatchChipRef} key="exactMatchChip" selectable={true} onSelect={handleExactMatchChange}>
         <span key="exactMatch">Exact Match</span>
     </IgrChip>
 </div>
