@@ -1112,7 +1112,7 @@ constructor() {
 
 <!-- end:Angular, WebComponents -->
 
-
+<!--ComponentStart: Grid, HierarchicalGrid, TreeGrid-->
 ```tsx
 const backgroundClasses = {
     myBackground: (rowData: any, columnKey: string) => {
@@ -1130,6 +1130,7 @@ const editDone = (event: IgrGridEditEventArgs) => {
   <IgrColumn id="Col3" field="Col3" header="Col3" dataType="string" cellClasses={backgroundClasses}></IgrColumn>
 </{ComponentSelector}>
 ```
+<!--ComponentEnd: Grid, HierarchicalGrid, TreeGrid-->
 
 ## API References
 
