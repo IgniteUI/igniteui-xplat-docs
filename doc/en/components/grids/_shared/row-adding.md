@@ -635,7 +635,11 @@ this.grid.rowAddTextTemplate = (ctx: IgcGridEmptyTemplateContext) => {
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
 gridRef.current.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
-    return ('Adding Row');
+    return (
+        <>
+            <span>Adding Row</span>
+        </>
+    );
 }
 ```            
 <!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid-->
