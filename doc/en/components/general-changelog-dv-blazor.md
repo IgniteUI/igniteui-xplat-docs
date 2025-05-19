@@ -31,6 +31,10 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 - New [Trendline Layer](charts/features/chart-trendlines.md) series type that allows you to apply a single trend line per trend line layer to a particular series. This allows the usage of multiple trend lines on a single series since you can have multiple [TrendlineLayer](charts/features/chart-overlays.md) series types in the chart.
 
+### {PackageDashboards} (Dashboards)
+
+- The `IgbDashboardTile` now supports propagating the aggregations from its DataGrid view to the chart visualization such as sorting, grouping, filtering and selection. This is currently supported by binding the `DataSource` of the `IgbDashboardTile` to an instance of `IgbLocalDataSource`.
+
 ### Enhancements
 
 #### Toolbar
@@ -39,6 +43,13 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 #### Data Pie Chart
 - The chart now exposes a `GetOthersContext()` method. This will return the contents of the "others" slice.
+
+### Bug Fixes
+
+| Bug Number | Control | Description      |
+|------------|---------|------------------|
+|37023|IgbDataChart|Tooltips are cut-off/offscreen if overflow hidden is set.
+|37244|Excel|Custom Data Validation is not working
 
 ## **{PackageVerChanges-24-2-APR}**
 
