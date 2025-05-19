@@ -588,6 +588,7 @@
             { "name": "{PackageCore}",              "value": "IgniteUI.Blazor"},
             { "name": "{PackageCharts}",            "value": "IgniteUI.Blazor"},
             { "name": "{PackageDataSources}",       "value": "IgniteUI.Blazor"},
+            { "name": "{PackageDashboards}",        "value": "IgniteUI.Blazor"},
             { "name": "{PackageExcel}",             "value": "IgniteUI.Blazor.Documents.Excel"},
             { "name": "{PackageGauges}",            "value": "IgniteUI.Blazor"},
             { "name": "{PackageGrids}",             "value": "IgniteUI.Blazor"},
