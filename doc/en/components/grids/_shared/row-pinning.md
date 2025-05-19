@@ -76,9 +76,9 @@ The built-in row pinning UI is enabled by adding an `ActionStrip` component with
 ```tsx
 <{ComponentSelector}>
     <IgrColumn field="Country" header="Country"> </IgrColumn>
-    <IgrActionStrip key="actionStrip">
-        <IgrGridPinningActions key="pinningActions"></IgrGridPinningActions>
-        <IgrGridEditingActions key="editingActions"></IgrGridEditingActions>
+    <IgrActionStrip>
+        <IgrGridPinningActions></IgrGridPinningActions>
+        <IgrGridEditingActions></IgrGridEditingActions>
     </IgrActionStrip>
 </{ComponentSelector}>
 ```
@@ -154,7 +154,7 @@ public rowPinning(event) {
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 ```tsx
-function rowPinning(event: IgrPinRowEventArgs ) {
+const rowPinning = (event: IgrPinRowEventArgs) => {
     event.detail.insertAtIndex = 0;
 }
 
@@ -235,7 +235,7 @@ grid.pinning = { rows: RowPinningPosition.Bottom };
 
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-<{ComponentSelector} id="dataGrid" ref={gridRef} autoGenerate={true}>
+<{ComponentSelector} ref={gridRef} autoGenerate={true}>
 </{ComponentSelector}>
 
 gridRef.current.pinning = { rows: RowPinningPosition.Bottom }
@@ -324,7 +324,7 @@ public pinCellTemplate = (ctx: IgcCellTemplateContext) => {
 
 <!-- React -->
 ```tsx
-function cellPinCellTemplate(ctx: IgrCellTemplateContext) {
+const cellPinCellTemplate = (ctx: IgrCellTemplateContext) => {
     const index = ctx.cell.row.index;
     return (
         <>
@@ -417,8 +417,8 @@ public pinCellTemplate = (ctx: IgcCellTemplateContext) => {
 
 <!-- React -->
 ```tsx
-function cellPinCellTemplate(ctx: IgrCellTemplateContext) {
-    const row = ctx.dataContext.cell.row;
+const cellPinCellTemplate = (ctx: IgrCellTemplateContext) => {
+    const row = ctx.cell.row;
     return (
         <>
             <span onPointerDown={(e: any) => toggleRowPin(row)}>📌</span>
@@ -426,10 +426,10 @@ function cellPinCellTemplate(ctx: IgrCellTemplateContext) {
     );
 }
 
-<{ComponentSelector} primaryKey="ID" autoGenerate="false">
+<{ComponentSelector} primaryKey="ID" autoGenerate={false}>
     <IgrColumn width="70px" bodyTemplate={cellPinCellTemplate}>
     </IgrColumn>
-    <IgrRowIsland childDataKey="Orders" autoGenerate="true"></IgrRowIsland>
+    <IgrRowIsland childDataKey="Orders" autoGenerate={true}></IgrRowIsland>
 </{ComponentSelector}>
 ```
 <!-- end: React -->
@@ -448,7 +448,7 @@ public togglePinning(index: number) {
 <!-- end: Angular, WebComponents -->
 
 ```tsx
-function toggleRowPin(index: number) {
+const toggleRowPin = (index: number) => {
   const grid = grid1Ref.current;
   grid.getRowByIndex(index).pinned = !grid.getRowByIndex(index).pinned;
 }
@@ -466,7 +466,7 @@ public togglePinning(row: IgcRowType) {
 <!-- end: WebComponents -->
 
 ```tsx
-function toggleRowPin(row: IgrRowType) {
+const toggleRowPin = (row: IgrRowType) => {
   row.pinned = !row.pinned;
 }
 ```
