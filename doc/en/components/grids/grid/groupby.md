@@ -51,11 +51,11 @@ const expressions = [
 ];
 
 function App() {
-    const grid1Ref = useRef();
+    const grid1Ref = useRef<IgrGrid>(null);
     return (
     <>
         <IgrGrid
-            autoGenerate="true"
+            autoGenerate={true}
             groupingExpressions={expressions}
             ref={grid1Ref}>
         </IgrGrid>
@@ -138,24 +138,24 @@ public ngOnInit() {
 
 ```tsx
 function App() {
-    const gridRef = useRef();
+    const gridRef = useRef<IgrGrid>(null);
     return (
     <>
         <IgrGrid
-            autoGenerate="false"
+            autoGenerate={false}
             ref={gridRef}
             >
-            <IgrColumn field="OrderID" hidden="true"></IgrColumn>
-            <IgrColumn field="ShipCountry" header="Ship Country" width="200px" groupable="true"></IgrColumn>
-            <IgrColumn field="OrderDate" header="Order Date" dataType="date" width="200px" groupable="true"></IgrColumn>
-            <IgrColumn field="PostalCode" header="Postal Code" width="200px" groupable="true"></IgrColumn>
-            <IgrColumn field="Discontinued" width="200px" dataType="boolean" groupable="true"></IgrColumn>
-            <IgrColumn field="ShipName" header="Ship Name" width="200px" groupable="false"></IgrColumn>
-            <IgrColumn field="ShipCity" header="Ship City" width="200px" groupable="false"></IgrColumn>
-            <IgrColumn field="ShipperName" header="Shipper Name" width="200px" groupable="true"></IgrColumn>
-            <IgrColumn field="Salesperson" header="Sales Person" width="200px" groupable="true"></IgrColumn>
-            <IgrColumn field="UnitPrice" header="Unit Price" width="200px" groupable="true"></IgrColumn>
-            <IgrColumn field="Quantity" width="200px" groupable="true"></IgrColumn>
+            <IgrColumn field="OrderID" hidden={true}></IgrColumn>
+            <IgrColumn field="ShipCountry" header="Ship Country" width="200px" groupable={true}></IgrColumn>
+            <IgrColumn field="OrderDate" header="Order Date" dataType="date" width="200px" groupable={true}></IgrColumn>
+            <IgrColumn field="PostalCode" header="Postal Code" width="200px" groupable={true}></IgrColumn>
+            <IgrColumn field="Discontinued" width="200px" dataType="boolean" groupable={true}></IgrColumn>
+            <IgrColumn field="ShipName" header="Ship Name" width="200px" groupable={false}></IgrColumn>
+            <IgrColumn field="ShipCity" header="Ship City" width="200px" groupable={false}></IgrColumn>
+            <IgrColumn field="ShipperName" header="Shipper Name" width="200px" groupable={true}></IgrColumn>
+            <IgrColumn field="Salesperson" header="Sales Person" width="200px" groupable={true}></IgrColumn>
+            <IgrColumn field="UnitPrice" header="Unit Price" width="200px" groupable={true}></IgrColumn>
+            <IgrColumn field="Quantity" width="200px" groupable={true}></IgrColumn>
         </IgrGrid>
     </>
   )
@@ -326,8 +326,8 @@ As an example, the following template would make the group rows summary more ver
 ```
 
 ```tsx
-function template(ctx: { dataContext: IgrGroupByRowTemplateContext }) {
-    const groupRow = ctx.dataContext.implicit;
+const template = (ctx: IgrGroupByRowTemplateContext) => {
+    const groupRow = ctx.implicit;
     return (<>
        <span>Total items with value: { groupRow.value } are { groupRow.records.length }</span>
     </>)
@@ -367,9 +367,9 @@ The `SelectedCount` property shows how many of the group records are currently s
 ```
 
 ```tsx
-function template(ctx: { dataContext: IgrGroupByRowSelectorTemplateContext }) {
+const template = (ctx: IgrGroupByRowSelectorTemplateContext) => {
     return (<>
-        { ctx.dataContext.implicit.selectedCount } / { ctx.dataContext.implicit.totalCount }
+        { ctx.implicit.selectedCount } / { ctx.implicit.totalCount }
     </>)
 }
 ```
@@ -400,8 +400,8 @@ The `GroupRow` property returns a reference to the group row.
 ```
 
 ```tsx
-function template(ctx: { dataContext: IgrGroupByRowSelectorTemplateContext }) {
-    const groupRow = ctx.dataContext.implicit.groupRow;
+const template = (ctx: IgrGroupByRowSelectorTemplateContext) => {
+    const groupRow = ctx.implicit.groupRow;
     return (<>
         <div onClick={(e: any) => handleGroupByRowSelectorClick(e, groupRow)}>Handle groupRow</div> `;
     </>)
