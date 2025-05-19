@@ -59,6 +59,69 @@ The following sample demonstrates usage of the different `ValueLines` in the `Ca
 
 You can also plot built-in financial overlays and indicators in {Platform} [Stock Chart](../types/stock-chart.md).
 
+## Chart Overlay Text (Beta)
+
+The {Platform} `ValueOverlay`, `ValueLayer`, and all Data Annotation Layers can render custom overlay text inside plot area of the XamDataChart component. You can use this overlay text to annotate important events (e.g. company quarter reports) on x-axis or important values on y-axis in relationship to the layers.
+
+For example, you can use `DataAnnotationSliceLayer`, `ValueOverlay`, and `ValueLayer` to show overlay text.
+
+`sample="/charts/data-chart/data-annotation-multiple-with-overlay-text", height="600", alt="{Platform} Multiple Overlay Text"`
+
+### Rendering Overlay Text
+
+The following code snippet demonstrates how to render a comparison of three annotation layers as shown in the picture above.
+
+<div class="divider--half"></div>
+
+```html
+<igx-data-chart
+    [dataSource]="data">
+</igx-data-chart>
+```
+
+```tsx
+
+```
+
+```html
+
+```
+
+```ts
+
+```
+
+```razor
+
+```
+
+### Styling Overlay Text
+
+This code example shows how to style and customize Overlay Text on
+the `DataAnnotationSliceLayer`, `ValueOverlay`, and `ValueLayer`.
+
+<div class="divider--half"></div>
+
+```razor
+public Series StylingOverlayText()
+{
+    var annoLayer = new IgbDataAnnotationSliceLayer();
+
+    // styling optional overlay text 
+    annoLayer.OverlayTextColor = Brushes.White;
+    annoLayer.OverlayTextBackground = Brushes.Green;
+    annoLayer.OverlayTextBorderColor = Brushes.Black;
+    annoLayer.OverlayTextBorderThickness = 1;
+    annoLayer.OverlayTextBorderRadius = 4;
+    annoLayer.OverlayTextHorizontalMargin = 5;
+    annoLayer.OverlayTextHorizontalPadding = 2;
+    annoLayer.OverlayTextVerticalMargin = 5;
+    annoLayer.OverlayTextVerticalPadding = 2;
+
+    return annoLayer;
+}
+```
+
 ## Additional Resources
 
 You can find more information about related chart types in these topics:
@@ -83,3 +146,10 @@ The following is a list of API members mentioned in the above sections:
 - `ValueLayer`
 - `ValueLayerValueMode`
 - `ValueLines`
+- `OverlayText`
+- `TargetAxis`
+- `OverlayTextMemberPath`
+- `OverlayTextColor`
+- `OverlayTextBackground`
+- `OverlayTextBorderColor`
+- `OverlayTextLocation`

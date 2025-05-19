@@ -1243,7 +1243,13 @@
         },
         {
           "name": "Chart Annotations",
-          "href": "charts/features/chart-annotations.md"
+          "href": "charts/features/chart-annotations.md",
+          "status": ""
+        },
+        {
+          "name": "Chart Data Annotations",
+          "href": "charts/features/chart-data-annotations.md",
+          "status": ""
         },
         {
           "name": "Charting in Dashboards",
@@ -1296,7 +1302,7 @@
         {
           "name": "Chart Overlays",
           "href": "charts/features/chart-overlays.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "Chart Performance",
