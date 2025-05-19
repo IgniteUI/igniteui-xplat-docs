@@ -83,6 +83,14 @@ You can customize text displayed in the **Label** and **Unit** columns using  pr
 
 Also, you can use the `UnitText` property on the `XamDataLegend` to change text displayed in all Unit columns.
 
+## Layout Mode
+
+Legend items can be positioned in a vertical or table structure via the `LayoutMode` property. The default value is `Table`, which retains the same look and feel as seen in previous releases.
+
+eg.
+
+<img src="../images/general/Layout_Mode.png" />
+
 ## {Platform} Data Legend Styling
 
 The `XamDataLegend` provides properties for styling each type of column. Each of these properties begins with **Title**, **Label**, **Value**, or **Units**. You can style the text's color, font, and margin. For example, if you wanted to set the text color of all columns, you would set the `TitleTextColor`, `LabelTextColor`, `ValueTextColor`, and `UnitsTextColor` properties. The following example demonstrates a utilization of the styling properties mentioned above:
