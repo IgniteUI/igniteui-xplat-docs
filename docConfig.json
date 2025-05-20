@@ -526,6 +526,7 @@
             "IconButton",
             "IconComponent",
             "InputComponent",
+            "FileInputComponent",
             "LinearProgress",
             "ListComponent",
             "ListHeader",
