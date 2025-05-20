@@ -89,7 +89,7 @@ Legend items can be positioned in a vertical or table structure via the `LayoutM
 
 eg.
 
-<img src="../images/general/layout_Mode.png" />
+<img src="../images/general/layout_mode.png" />
 
 ## {Platform} Data Legend Styling
 
