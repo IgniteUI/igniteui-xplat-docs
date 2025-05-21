@@ -1107,7 +1107,7 @@ const webHierarchicalGridReorderRowHandler = (args: IgrRowDragEndEventArgs): voi
     hierarchicalGridRef.current.data.splice(currRowIndex, 0, args.detail.dragData.data);
 }
 
-public getCurrentRowIndex(rowList: any[], cursorPosition: any) {
+const getCurrentRowIndex = (rowList: any[], cursorPosition: any) => {
     for (const row of rowList) {
         const rowRect = row.getBoundingClientRect();
         if (cursorPosition.y > rowRect.top + window.scrollY && cursorPosition.y < rowRect.bottom + window.scrollY &&
