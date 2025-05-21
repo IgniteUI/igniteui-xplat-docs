@@ -1431,7 +1431,7 @@ The last step is to **include** the newly created themes.
 ## Known Limitations
 
 > [!Note]
-> Currently, defining a toolbar component inside the {RowIslandSelector} is not supported.
+> Currently, defining a toolbar component directly inside the {RowIslandSelector} is not supported. Use the `ToolbarTemplate` property instead.
 <!-- end: React, Blazor -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
