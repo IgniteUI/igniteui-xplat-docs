@@ -44,13 +44,11 @@ First, you need to the install the corresponding {ProductName} npm package by ru
 npm install igniteui-react
 ```
 
-You will then need to import the `Slider` and `RangeSlider`, its necessary CSS, and register its module, like so:
+You will then need to import the `Slider` and `RangeSlider`and its necessary CSS, like so:
 
 ```tsx
-import { IgrSliderModule, IgrSlider, IgrRangeSlider, IgrRangeSliderModule } from 'igniteui-react';
+import { IgrSlider, IgrRangeSlider } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrSliderModule.register();
-IgrRangeSliderModule.register();
 ```
 <!-- end: React -->
 
@@ -77,8 +75,8 @@ The simplest way to start using the `Slider` and `RangeSlider` is as follows:
 ```
 
 ```tsx
- <IgrSlider value="40" />
-    <span className="slider-label"></span>
+<IgrSlider value="40" />
+  <span className="slider-label"></span>
 <IgrRangeSlider lower="20" upper="70"></IgrRangeSlider>
 ```
 
