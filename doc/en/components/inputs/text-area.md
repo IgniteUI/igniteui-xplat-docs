@@ -20,7 +20,11 @@ The {ProductName} Text Area represents a multi-line plain-text editing control, 
 
 ## Dependencies
 
+<!-- Angular, WebComponents, Blazor -->
+
 To get started with the Text Area component, you first need to register its module.
+
+<!-- end:Angular, WebComponents, Blazor -->
 
 <!-- Blazor -->
 
@@ -59,10 +63,10 @@ First, you need to the install the corresponding {ProductName} npm package by ru
 npm install igniteui-react
 ```
 
-You will then need to import the `Textarea`, its necessary CSS, and register its module, like so:
+You will then need to import the `Textarea` and its necessary CSS like so:
 
 ```tsx
-import { IgrTextareaModule, IgrTextarea } from 'igniteui-react';
+import { IgrTextarea } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
 IgrTextareaModule.register();
 ```
