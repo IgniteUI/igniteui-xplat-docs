@@ -20,12 +20,6 @@ The {ProductName} Text Area represents a multi-line plain-text editing control, 
 
 ## Dependencies
 
-<!-- Angular, WebComponents, Blazor -->
-
-To get started with the Text Area component, you first need to register its module.
-
-<!-- end:Angular, WebComponents, Blazor -->
-
 <!-- Blazor -->
 
 ```razor
