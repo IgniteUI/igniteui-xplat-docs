@@ -72,6 +72,7 @@
     "igr-tab-panel-module.ts",
     "igr-tabs-module.ts",
     "igr-textarea-module.ts",
+    "igr-tooltip-module.ts",
     "igr-toast-module.ts",
     "igr-toggle-button-module.ts",
     "igr-tree-item-module.ts",
@@ -833,6 +834,29 @@
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "validateOnly"}], "originalName": "ValidateOnly"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"},
       {"names":[{"platform": "React", "mappedType": "TextareaWrap","mappedName": "wrap"}], "originalName": "Wrap"} ]
+  },
+  {
+    "originalName": "Tooltip",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igc-tooltip-component.ts","mappedName": "IgrTooltipComponent"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "string","mappedName": "anchor"}], "originalName": "Anchor"},
+      {"names":[{"platform": "React", "mappedType": "boolean","mappedName": "disableArrow"}], "originalName": "DisableArrow"},
+      {"names":[{"platform": "React", "mappedType": "string","mappedName": "message"}], "originalName": "Message"},
+      {"names":[{"platform": "React", "mappedType": "number","mappedName": "offset"}], "originalName": "Offset"},
+      {"names":[{"platform": "React", "mappedType": "PopoverPlacement","mappedName": "placement"}], "originalName": "Placement"},
+      {"names":[{"platform": "React", "mappedType": "boolean","mappedName": "sticky"}], "originalName": "Sticky"},
+      {"names":[{"platform": "React", "mappedType": "number","mappedName": "hideDelay"}], "originalName": "HideDelay"},
+      {"names":[{"platform": "React", "mappedType": "string","mappedName": "hideTriggers"}], "originalName": "HideTriggers"},
+      {"names":[{"platform": "React", "mappedType": "boolean","mappedName": "open"}], "originalName": "Open"},
+      {"names":[{"platform": "React", "mappedType": "number","mappedName": "showDelay"}], "originalName": "ShowDelay"},
+      {"names":[{"platform": "React", "mappedType": "string","mappedName": "showTriggers"}], "originalName": "ShowTriggers"},
+      {"names":[{"platform": "React", "mappedType": "method","mappedName": "hide"}], "originalName": "Hide"},
+      {"names":[{"platform": "React", "mappedType": "method","mappedName": "show"}], "originalName": "Show"},
+      {"names":[{"platform": "React", "mappedType": "method","mappedName": "toggle"}], "originalName": "Toggle"} ]
   },
   {
     "originalName": "ToggleButton",
