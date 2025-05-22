@@ -402,12 +402,15 @@ public connectedCallback() {
 <!-- end: WebComponents -->
 
 ```tsx
-useEffect(() => {
-    gridRef.current.sortingExpressions = [
-        { fieldName: 'UnitsInStock', dir: SortingDirection.Asc, ignoreCase: true },
-        { fieldName: 'ProductName', dir: SortingDirection.Desc }
-    ];
-}, [])
+const sortingExpressions = [
+    { fieldName: 'UnitsInStock', dir: SortingDirection.Asc, ignoreCase: true },
+    { fieldName: 'ProductName', dir: SortingDirection.Desc }
+];
+
+<IgrGrid
+    data={productSales}
+    sortingExpressions={sortingExpressions}>
+</IgrGrid>
 ```
 <!-- ComponentEnd: Grid -->
 
