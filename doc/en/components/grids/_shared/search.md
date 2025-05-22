@@ -176,13 +176,9 @@ public bool exactMatch = false;
 
 ```tsx
 const gridRef = useRef<IgrGrid>(null);
-const searchIconRef = useRef<IgrIconButton>(null)
-const clearIconRef = useRef<IgrIconButton>(null);
-const iconButtonPrevRef = useRef<IgrIconButton>(null);
-const caseSensitiveChipRef = useRef<IgrChip>(null);
-const exactMatchChipRef = useRef<IgrChip>(null);
-const iconButtonNextRef = useRef<IgrIconButton>(null);
-const [searchText, setSearchText] = useState('')
+const [caseSensitiveSelected, setCaseSensitiveSelected] = useState<boolean>(false);
+const [exactMatchSelected, setExactMatchSelected] = useState<boolean>(false);
+const [searchText, setSearchText] = useState('');
 ```
 <!-- ComponentEnd: Grid -->
 
@@ -212,12 +208,8 @@ public bool exactMatch = false;
 
 ```tsx
 const gridRef = useRef<IgrTreeGrid>(null);
-const searchIconRef = useRef<IgrIconButton>(null);
-const clearIconRef = useRef<IgrIconButton>(null);
-const iconButtonNextRef = useRef<IgrIconButton>(null);
-const iconButtonPrevRef = useRef<IgrIconButton>(null);
-const caseSensitiveChipRef = useRef<IgrChip>(null);
-const exactMatchChipRef = useRef<IgrChip>(null);
+const [caseSensitiveSelected, setCaseSensitiveSelected] = useState<boolean>(false);
+const [exactMatchSelected, setExactMatchSelected] = useState<boolean>(false);
 const [searchText, setSearchText] = useState('');
 ```
 <!-- ComponentEnd: TreeGrid -->
@@ -286,11 +278,7 @@ public nextSearch(){
 ```tsx
 const handleOnSearchChange = (event: IgrComponentValueChangedEventArgs) => {
     setSearchText(event.detail);
-    gridRef.current.findNext(event.detail, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
-}
-
-const nextSearch = () => {
-    gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    gridRef.current.findNext(event.detail, caseSensitiveSelected, exactMatchSelected);
 }
 
 <IgrInput name="searchBox" value={searchText} onInput={handleOnSearchChange}>
@@ -329,11 +317,7 @@ public void NextSearch()
 ```tsx
 const handleOnSearchChange = (event: IgrComponentValueChangedEventArgs) => {
     setSearchText(event.detail);
-    gridRef.current.findNext(event.detail, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
-}
-
-const nextSearch = () => {
-    gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    gridRef.current.findNext(event.detail, caseSensitiveSelected, exactMatchSelected);
 }
 
 <IgrInput name="searchBox" value={searchText} onInput={handleOnSearchChange}>
@@ -473,16 +457,16 @@ public nextSearch() {
 
 ```tsx
 const prevSearch = () => {
-    gridRef.current.findPrev(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    gridRef.current.findPrev(searchText, caseSensitiveSelected, exactMatchSelected);
 }
 
 const nextSearch = () => {
-    gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    gridRef.current.findNext(searchText, caseSensitiveSelected, exactMatchSelected);
 }
 
-<IgrIconButton key="prevIconButton" ref={iconButtonPrevRef} variant="flat" name="prev" collection="material" onClick={prevSearch}>
+<IgrIconButton key="prevIconButton" variant="flat" name="prev" collection="material" onClick={prevSearch}>
 </IgrIconButton>
-<IgrIconButton key="nextIconButton" ref={iconButtonNextRef} variant="flat" name="next" collection="material" onClick={nextSearch}>
+<IgrIconButton key="nextIconButton" variant="flat" name="next" collection="material" onClick={nextSearch}>
 </IgrIconButton>
 ```
 
@@ -542,10 +526,10 @@ public onSearchKeydown(evt: KeyboardEvent) {
 const searchKeyDown = (e: KeyboardEvent<HTMLElement>) => {
     if (e.key === 'Enter') {
         e.preventDefault();
-        gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+        gridRef.current.findNext(searchText, caseSensitiveSelected, exactMatchSelected);
     } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
         e.preventDefault();
-        gridRef.current.findPrev(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+        gridRef.current.findPrev(searchText, caseSensitiveSelected, exactMatchSelected);
     }
 }
 
@@ -608,16 +592,16 @@ public onSearchKeydown(evt: KeyboardEvent) {
 const searchKeyDown = (e: KeyboardEvent<HTMLElement>) => {
     if (e.key === 'Enter' || e.key === 'ArrowDown') {
         e.preventDefault();
-        gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+        gridRef.current.findNext(searchText, caseSensitiveSelected, exactMatchSelected);
     } else if (e.key === 'ArrowUp') {
         e.preventDefault();
-        gridRef.current.findPrev(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+        gridRef.current.findPrev(searchText, caseSensitiveSelected, exactMatchSelected);
     }
 }
 
 const handleOnSearchChange = (event: IgrComponentValueChangedEventArgs) => {
     setSearchText(event.detail);
-    gridRef.current.findNext(event.detail, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    gridRef.current.findNext(event.detail, caseSensitiveSelected, exactMatchSelected);
 }
 
 <div onKeyDown={searchKeyDown}>
@@ -760,20 +744,26 @@ Now let's allow the user to choose whether the search should be case sensitive a
 }
 ```
 <!-- React -->
-Now let's allow the user to choose whether the search should be case sensitive and/or by an exact match. For this purpose we can use the `IgrChip` and get its reference and use the `selected` property.
+Now let's allow the user to choose whether the search should be case sensitive and/or by an exact match. For this purpose we can use the `IgrChip` component along with a boolean state variable to indicate whether the IgrChip is selected.
 <!-- end: React -->
 ```tsx
-const caseSensitiveChipRef = useRef<IgrChip>(null);
-const exactMatchChipRef = useRef<IgrChip>(null);
+const [caseSensitiveSelected, setCaseSensitiveSelected] = useState<boolean>(false);
+const [exactMatchSelected, setExactMatchSelected] = useState<boolean>(false);
 
-const updateSearch = () => {
-    gridRef.current.findNext("searchValue", caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+const handleCaseSensitiveChange = (event: IgrComponentBoolValueChangedEventArgs) => {
+    setCaseSensitiveSelected(!caseSensitiveSelected);
+    gridRef.current.findNext(searchText, event.detail, exactMatchSelected);
 }
 
-<IgrChip ref={caseSensitiveChipRef} key="caseSensitiveChip" selectable={true}>
+const handleExactMatchChange = (event: IgrComponentBoolValueChangedEventArgs) => {
+    setExactMatchSelected(!exactMatchSelected);
+    gridRef.current.findNext(searchText, caseSensitiveSelected, event.detail);
+}
+
+<IgrChip key="caseSensitiveChip" selectable={true} onSelect={handleCaseSensitiveChange}>
     <span key="caseSensitive">Case Sensitive</span>
 </IgrChip>
-<IgrChip ref={exactMatchChipRef} key="exactMatchChip" selectable={true}>
+<IgrChip key="exactMatchChip" selectable={true} onSelect={handleExactMatchChange}>
     <span key="exactMatch">Exact Match</span>
 </IgrChip>
 ```
@@ -952,36 +942,25 @@ useEffect(() => {
 <IgrInput name="searchBox" value={searchText} onInput={handleOnSearchChange}>
     <div slot="prefix" key="prefix">
         {searchText.length === 0 ? (
-            <IgrIconButton
-              key="searchIcon"
-              ref={searchIconRef} 
-              variant="flat"
-              name="search" 
-              collection="material"
-            ></IgrIconButton>
+            <IgrIconButton key="searchIcon" variant="flat" name="search"  collection="material">
+            </IgrIconButton>
             ) : (
-            <IgrIconButton
-              key="clearIcon"
-              ref={clearIconRef}
-              variant="flat"
-              name="clear"
-              collection="material"
-              onClick={clearSearch}
-            ></IgrIconButton>
+            <IgrIconButton key="clearIcon" variant="flat" name="clear" collection="material" onClick={clearSearch}>
+            </IgrIconButton>
         )}
     </div>
     <div slot="suffix" key="chipSuffix">
-        <IgrChip ref={caseSensitiveChipRef} key="caseSensitiveChip" selectable={true}>
-        <span key="caseSensitive">Case Sensitive</span>
+        <IgrChip key="caseSensitiveChip" selectable={true} onSelect={handleCaseSensitiveChange}>
+            <span key="caseSensitive">Case Sensitive</span>
         </IgrChip>
-        <IgrChip ref={exactMatchChipRef} key="exactMatchChip" selectable={true}>
-        <span key="exactMatch">Exact Match</span>
+        <IgrChip key="exactMatchChip" selectable={true} onSelect={handleExactMatchChange}>
+            <span key="exactMatch">Exact Match</span>
         </IgrChip>
     </div>
     <div slot="suffix" key="buttonsSuffix">
-        <IgrIconButton key="prevIconButton" ref={iconButtonPrevRef} variant="flat" name="prev" collection="material" onClick={prevSearch}>
+        <IgrIconButton key="prevIconButton" variant="flat" name="prev" collection="material" onClick={prevSearch}>
         </IgrIconButton>
-        <IgrIconButton key="nextIconButton" ref={iconButtonNextRef} variant="flat" name="next" collection="material" onClick={nextSearch}>
+        <IgrIconButton key="nextIconButton" variant="flat" name="next" collection="material" onClick={nextSearch}>
         </IgrIconButton>
     </div>
 </IgrInput>
@@ -1067,25 +1046,25 @@ const clearSearch = () => {
 <IgrInput name="searchBox" value={searchText} onInput={handleOnSearchChange}>
     <div slot="prefix" key="prefix">
         {searchText.length === 0 ? (
-          <IgrIconButton key="searchIcon" ref={searchIconRef} variant="flat" name="search" collection="material">
+          <IgrIconButton key="searchIcon" variant="flat" name="search" collection="material">
           </IgrIconButton>
         ) : (
-          <IgrIconButton key="clearIcon" ref={clearIconRef} variant="flat" name="clear" collection="material" onClick={clearSearch}>
+          <IgrIconButton key="clearIcon" variant="flat" name="clear" collection="material" onClick={clearSearch}>
           </IgrIconButton>
         )}        
     </div>
     <div slot="suffix" key="chipSuffix">
-        <IgrChip ref={caseSensitiveChipRef} key="caseSensitiveChip" selectable={true}>
-        <span key="caseSensitive">Case Sensitive</span>
+        <IgrChip key="caseSensitiveChip" selectable={true} onSelect={handleCaseSensitiveChange}>
+            <span key="caseSensitive">Case Sensitive</span>
         </IgrChip>
-        <IgrChip ref={exactMatchChipRef} key="exactMatchChip" selectable={true}>
-        <span key="exactMatch">Exact Match</span>
+        <IgrChip key="exactMatchChip" selectable={true} onSelect={handleExactMatchChange}>
+            <span key="exactMatch">Exact Match</span>
         </IgrChip>
     </div>
     <div slot="suffix" key="buttonsSuffix">
-        <IgrIconButton key="prevIconButton" ref={iconButtonPrevRef} variant="flat" name="prev" collection="material" onClick={prevSearch}>
+        <IgrIconButton key="prevIconButton" variant="flat" name="prev" collection="material" onClick={prevSearch}>
         </IgrIconButton>
-        <IgrIconButton key="nextIconButton" ref={iconButtonNextRef} variant="flat" name="next" collection="material" onClick={nextSearch}>
+        <IgrIconButton key="nextIconButton" variant="flat" name="next" collection="material" onClick={nextSearch}>
         </IgrIconButton>
     </div>
 </IgrInput>
@@ -1235,19 +1214,21 @@ constructor() {
 
 ```tsx
 <div slot="suffix" key="chipSuffix">
-    <IgrChip ref={caseSensitiveChipRef} key="caseSensitiveChip" selectable={true} onSelect={handleCaseSensitiveChange}>
+    <IgrChip key="caseSensitiveChip" selectable={true} onSelect={handleCaseSensitiveChange}>
         <span key="caseSensitive">Case Sensitive</span>
     </IgrChip>
-    <IgrChip ref={exactMatchChipRef} key="exactMatchChip" selectable={true} onSelect={handleExactMatchChange}>
+    <IgrChip key="exactMatchChip" selectable={true} onSelect={handleExactMatchChange}>
         <span key="exactMatch">Exact Match</span>
     </IgrChip>
 </div>
 
 const handleCaseSensitiveChange = (event: IgrComponentBoolValueChangedEventArgs) => {
-  gridRef.current.findNext(searchText, event.detail, exactMatchChipRef.current.selected);
+    setCaseSensitiveSelected(!caseSensitiveSelected);
+    gridRef.current.findNext(searchText, event.detail, exactMatchSelected);
 }
 const handleExactMatchChange = (event: IgrComponentBoolValueChangedEventArgs) => {
-  gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, event.detail);
+    setExactMatchSelected(!exactMatchSelected);
+    gridRef.current.findNext(searchText, caseSensitiveSelected, event.detail);
 }
 ```
 
@@ -1339,17 +1320,17 @@ public nextSearch() {
 
 ```tsx
 const prevSearch = () => {
-    gridRef.current.findPrev(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    gridRef.current.findPrev(searchText, caseSensitiveSelected, exactMatchSelected);
 }
 
 const nextSearch = () => {
-    gridRef.current.findNext(searchText, caseSensitiveChipRef.current.selected, exactMatchChipRef.current.selected);
+    gridRef.current.findNext(searchText, caseSensitiveSelected, exactMatchSelected);
 }
 
 <div slot="suffix" key="buttonsSuffix">
-    <IgrIconButton key="prevIconButton" ref={iconButtonPrevRef} variant="flat" name="prev" collection="material" onClick={prevSearch}>
+    <IgrIconButton key="prevIconButton" variant="flat" name="prev" collection="material" onClick={prevSearch}>
     </IgrIconButton>
-    <IgrIconButton key="nextIconButton" ref={iconButtonNextRef} variant="flat" name="next" collection="material" onClick={nextSearch}>
+    <IgrIconButton key="nextIconButton" variant="flat" name="next" collection="material" onClick={nextSearch}>
     </IgrIconButton>
 </div>
 ```
