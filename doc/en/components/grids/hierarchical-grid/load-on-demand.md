@@ -40,9 +40,10 @@ As you can see `this.http` will be a reference to our `HttpCLient` module, and `
 We will be communicating with our backend service over HTTP protocol using the [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/fetch) global function the browsers provide. That way in order to get our data we will need this simple method in our service:
 
 ```ts
-export function getData(dataState: any): any {
-    return fetch(buildUrl(dataState))
-        .then((result) => result.json());
+export async function getData(dataState: any): Promise<any> {
+    const response = await fetch(buildUrl(dataState));
+    const data = await response.json();
+    return data;
 }
 ```
 
@@ -202,9 +203,10 @@ Finally, this is how our remote service would look like:
 ```ts
 const URL = `https://data-northwind.indigo.design/`;
 
-export function getData(dataState: any): any {
-    return fetch(buildUrl(dataState))
-        .then((result) => result.json());
+export async function getData(dataState: any): Promise<any> {
+    const response = await fetch(buildUrl(dataState));
+    const data = await response.json();
+    return data;
 }
 
 function buildUrl(dataState: any) {
@@ -477,27 +479,13 @@ constructor() {
     <IgrColumn field="contactTitle" header="Contact Title"></IgrColumn>
     <IgrColumn field="address.country" header="Country"></IgrColumn>
     <IgrColumn field="address.phone" header="Phone"></IgrColumn>
-    <IgrRowIsland
-      childDataKey="Orders"
-      primaryKey="orderId"
-      gridCreated={(
-        rowIsland: IgrRowIsland,
-        e: IgrGridCreatedEventArgs
-      ) => gridCreated(rowIsland, e, "Customers")}
-    >
+    <IgrRowIsland childDataKey="Orders" primaryKey="orderId" onGridCreated={(e: IgrGridCreatedEventArgs) => gridCreated(e, "Customers")}>
         <IgrColumn field="orderId" hidden={true}></IgrColumn>
         <IgrColumn field="shipAddress.country" header="Ship Country"></IgrColumn>
         <IgrColumn field="shipAddress.city" header="Ship City"></IgrColumn>
         <IgrColumn field="shipAddress.street" header="Ship Address"></IgrColumn>
         <IgrColumn field="orderDate" header="Order Date" dataType="date"></IgrColumn>
-        <IgrRowIsland
-          childDataKey="Details"
-          primaryKey="productId"
-          gridCreated={(
-            rowIsland: IgrRowIsland,
-            e: IgrGridCreatedEventArgs
-          ) => gridCreated(rowIsland, e, "Orders")}
-        >
+        <IgrRowIsland childDataKey="Details" primaryKey="productId" onGridCreated={(e: IgrGridCreatedEventArgs) => gridCreated(e, "Orders")}>
             <IgrColumn field="productId" hidden={true}></IgrColumn>
             <IgrColumn field="quantity" header="Quantity"></IgrColumn>
             <IgrColumn field="unitPrice" header="Unit Price"></IgrColumn>
@@ -670,8 +658,9 @@ public gridCreated(event: CustomEvent<IgcGridCreatedEventArgs>, _parentKey: stri
 
 <!-- React -->
 ```tsx
-function gridCreated(rowIsland: IgrRowIsland, event: IgrGridCreatedEventArgs, _parentKey: string) {
+function gridCreated(event: IgrGridCreatedEventArgs, _parentKey: string) {
     const context = event.detail;
+    const rowIsland = context.owner;
     const dataState = {
         key: rowIsland.childDataKey,
         parentID: context.parentID,
@@ -826,8 +815,9 @@ useEffect(() => {
   );
 }, []);
 
-function gridCreated(rowIsland: IgrRowIsland, event: IgrGridCreatedEventArgs, _parentKey: string) {
+function gridCreated(event: IgrGridCreatedEventArgs, _parentKey: string) {
     const context = event.detail;
+    const rowIsland = context.owner;
     const dataState = {
         key: rowIsland.childDataKey,
         parentID: context.parentID,
