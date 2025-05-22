@@ -43,12 +43,11 @@ First, you need to the install the corresponding {ProductName} npm package by ru
 npm install igniteui-react
 ```
 
-You will then need to import the `Button`, its necessary CSS, and register its module, like so:
+You will then need to import the `Button` and its necessary CSS, like so:
 
 ```tsx
-import { IgrButtonModule, IgrButton } from 'igniteui-react';
+import { IgrButton } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrButtonModule.register();
 ```
 <!-- end: React -->
 
@@ -222,34 +221,40 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 ```
 
 ```tsx
-import { IgrButton, IgrRadio, IgrRadioGroup, IgrButtonModule, IgrRadioModule, IgrRadioGroupModule } from 'igniteui-react';
+import { IgrButton, IgrRadio, IgrRadioGroup } from 'igniteui-react';
 
-<IgrRadioGroup alignment="horizontal" style={{display: 'flex', margin: '0 auto', width: '15%'}}>
-    <IgrRadio name="size" value="small" labelPosition="after" checked={true} change={this.onRadioChange}>
+const [size, setSize] = useState("small");
+
+const onRadioChange = (e: IgrRadioChangeEventArgs) => {
+    setSize(e.detail.value);
+};
+
+<IgrRadioGroup alignment="horizontal" style={{ display: "flex", margin: "0 auto", width: "15%" }}>
+    <IgrRadio name="size" value="small" labelPosition="after" checked={size === "small"} onChange={onRadioChange}>
         <span>Small</span>
     </IgrRadio>
-    <IgrRadio name="size" value="medium" labelPosition="after" change={this.onRadioChange}>
+    <IgrRadio name="size" value="medium" labelPosition="after" onChange={onRadioChange}>
         <span>Medium</span>
     </IgrRadio>
-    <IgrRadio name="size" value="large" labelPosition="after" change={this.onRadioChange}>
+    <IgrRadio name="size" value="large" labelPosition="after" onChange={onRadioChange}>
         <span>Large</span>
     </IgrRadio>
 </IgrRadioGroup>
 
-<div>
-    <IgrButton ref={this.flatButtonRef}  className="flat-btn" variant="flat"><span>Flat</span></IgrButton>
-    <IgrButton ref={this.containedButtonRef}  className="contained-btn" variant="contained"><span>Contained</span></IgrButton>
-    <IgrButton ref={this.outlinedButtonRef}  className="outlined-btn" variant="outlined"><span>Outlined</span></IgrButton>
-    <IgrButton ref={this.fabButtonRef}  className="fab-btn" variant="fab"><span>Like</span></IgrButton>
+<div className="button-container">
+    <IgrButton className={"size-" + size} variant="flat">
+        <span>Flat</span>
+    </IgrButton>
+    <IgrButton className={"size-" + size} variant="contained">
+        <span>Contained</span>
+    </IgrButton>
+    <IgrButton className={"size-" + size} variant="outlined">
+        <span>Outlined</span>
+    </IgrButton>
+    <IgrButton className={"size-" + size} variant="fab">
+        <span>Like</span>
+    </IgrButton>
 </div>
-
-
-public onRadioChange(e: any) {
-    this.flatButton.size = e.value;
-    this.containedButton.size = e.value;
-    this.outlinedButton.size = e.value;
-    this.fabButton.size = e.value;
-}
 ```
 
 ```razor
