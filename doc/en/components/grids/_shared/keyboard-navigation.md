@@ -234,9 +234,9 @@ const customKeydown = (eventArgs: IgrGridKeydownEventArgs) => {
 <!-- WebComponents -->
 
 ```typescript
-public customKeydown(args: any) {
+public customKeydown(args: : CustomEvent<IgcGridKeydownEventArgs>) {
     const evt = args.detail;
-    const target: IgxGridCell = evt.target as IgxGridCell;
+    const target = evt.target as IgcCellType;
     const evt: KeyboardEvent = evt.event as KeyboardEvent;
     const type = evt.targetType;
 
