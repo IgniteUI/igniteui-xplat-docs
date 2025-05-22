@@ -41,13 +41,13 @@ _language: ja
 
 `TrendLineLayer` が正しく動作するには、`TargetSeries` と `TrendLineType` を指定する必要があります。利用可能なさまざまなトレンドラインのタイプは、シリーズで利用可能なトレンドラインと同じです。
 
-凡例に `TrendLineLayer` を表示する場合は、`UseLegend` プロパティを `true` に設定します。
+凡例に `TrendLineLayer` を表示する場合は、`UseLegend` プロパティを **true** に設定します。
 
 ### トレンドライン レイヤーのスタイル設定
 
 デフォルトでは、`TrendLineLayer` は `TargetSeries` と同じ色の破線で描画されます。これは、`TrendLineLayer` のさまざまなスタイル設定プロパティを使用して構成できます。
 
-描画されるトレンドラインの色を変更するには、`Brush` プロパティを設定します。あるいは、`UseIndex` プロパティを `true` に設定することもできます。これにより、`TrendLineLayer` がチャートの `Series` コレクションに配置されているインデックスに基づいて、チャートの `Brushes` パレットからブラシが取得されます。
+描画されるトレンドラインの色を変更するには、`Brush` プロパティを設定します。あるいは、`UseIndex` プロパティを **true** に設定することもできます。これにより、`TrendLineLayer` がチャートの `Series` コレクションに配置されているインデックスに基づいて、チャートの `Brushes` パレットからブラシが取得されます。
 
 `TrendLineLayer` の表示方法は、`AppearanceMode` プロパティと `ShiftAmount` プロパティを使用して変更することもできます。`ShiftAmount` は、-1.0 から 1.0 の範囲の値を受け取り、「Shift」 で終わるオプションに適用する 「シフト」 の量を決定します。
 
