@@ -60,6 +60,68 @@ _language: ja
 
 {Platform} [株価チャート](../types/stock-chart.md)に組み込みのファイナンシャル オーバーレイとインジケーターをプロットすることもできます。
 
+## チャート オーバーレイ テキスト (ベータ版)
+
+{Platform} `ValueOverlay`、`ValueLayer`、およびすべてのデータ注釈レイヤーは、XamDataChart コンポーネントのプロット領域内にカスタム オーバーレイ テキストを描画できます。このオーバーレイ テキストを使用すると、レイヤーとの関係において、x 軸上の重要なイベント (例: 企業の四半期決算) または y 軸上の重要な値に注釈を付けることができます。
+
+たとえば、`DataAnnotationSliceLayer`、`ValueOverlay`、`ValueLayer` を使用してオーバーレイ テキストを表示できます。
+
+`sample="/charts/data-chart/data-annotation-multiple-with-overlay-text", height="600", alt="{Platform} 複数のオーバーレイ テキスト"`
+
+### オーバーレイ テキストの描画
+
+次のコード スニペットは、上の図に示すように、3 つの注釈レイヤーの比較を描画する方法を示しています。
+
+<div class="divider--half"></div>
+
+```html
+<igx-data-chart
+    [dataSource]="data">
+</igx-data-chart>
+```
+
+```tsx
+
+```
+
+```html
+
+```
+
+```ts
+
+```
+
+```razor
+
+```
+
+### オーバーレイ テキストのスタイル設定
+
+このコード例は、`DataAnnotationSliceLayer`、`ValueOverlay`、および `ValueLayer` 上のオーバーレイ テキストのスタイルを設定およびカスタマイズする方法を示しています。
+
+<div class="divider--half"></div>
+
+```razor
+public Series StylingOverlayText()
+{
+    var annoLayer = new IgbDataAnnotationSliceLayer();
+
+    // styling optional overlay text 
+    annoLayer.OverlayTextColor = Brushes.White;
+    annoLayer.OverlayTextBackground = Brushes.Green;
+    annoLayer.OverlayTextBorderColor = Brushes.Black;
+    annoLayer.OverlayTextBorderThickness = 1;
+    annoLayer.OverlayTextBorderRadius = 4;
+    annoLayer.OverlayTextHorizontalMargin = 5;
+    annoLayer.OverlayTextHorizontalPadding = 2;
+    annoLayer.OverlayTextVerticalMargin = 5;
+    annoLayer.OverlayTextVerticalPadding = 2;
+
+    return annoLayer;
+}
+```
+
 ## その他のリソース
 
 関連するチャート タイプの詳細については、以下のトピックを参照してください。
@@ -84,3 +146,10 @@ _language: ja
 - `ValueLayer`
 - `ValueLayerValueMode`
 - `ValueLines`
+- `OverlayText`
+- `TargetAxis`
+- `OverlayTextMemberPath`
+- `OverlayTextColor`
+- `OverlayTextBackground`
+- `OverlayTextBorderColor`
+- `OverlayTextLocation`

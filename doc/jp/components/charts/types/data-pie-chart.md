@@ -73,6 +73,8 @@ ItemLegend バッジを変更することもできます。デフォルトでは
 
 `OthersCategoryType` プロパティは、`DataPieChart` の `OthersCategoryThreshold` プロパティと連動して機能します。`OthersCategoryType` では、`OthersCategoryThreshold` を数値として評価するか、パーセンテージとして評価するかを定義できます。たとえば、数値を選択し、`OthersCategoryThreshold` を 5 に設定すると、5 未満の値を持つスライスはすべて「その他」カテゴリの一部になります。パーセント タイプで同じ値 5 を使用すると、`DataPieChart` の合計値の 5 パーセント未満の値はすべて「その他」カテゴリの一部になります。
 
+チャートの Others スライスに含まれる基礎データ項目を取得するには、チャートの `GetOthersContext` メソッドを利用できます。このメソッドの戻り値のタイプは、`Items` プロパティを公開する `OthersCategoryContext` です。`Items` プロパティは、Others スライス内の項目を含む配列を返します。さらに、Others スライスをクリックすると、`SeriesClick` イベントのイベント引数の `Item` プロパティもこの `OthersCategoryContext` を返します。
+
 デフォルトでは、「その他」スライスは「その他」というラベルで表されます。チャートの `OthersCategoryText` プロパティを変更することでこれを変更できます。
 
 `DataPieChart` に「その他」カテゴリが表示されないようにするには、`OthersCategoryThreshold` を 0 に設定します。
