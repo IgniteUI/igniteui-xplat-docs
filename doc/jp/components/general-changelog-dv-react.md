@@ -678,7 +678,7 @@ DashboardTile (ベータ版)
 ```
 
 ```ts
-import { IgrColumnSummaryDescription, IgrColumnSortDescription, IgrColumnGroupDescription } from 'igniteui-react-grids'
+import { IgrColumnSummaryDescription, IgrColumnSortDescription, IgrColumnGroupDescription } from 'igniteui-react-data-grids'
 const productCount = new IgrColumnSummaryDescription();
 productCount.field = "ProductName";
 const colSortDesc = new IgrColumnSortDescription();
@@ -701,8 +701,8 @@ Data Grid コンポーネントおよび対応するモジュールの名前が 
 グリッドとそれに対応するモジュールをインポートする新しいコードは以下のとおりです。
 
 ```ts
-import { IgrDataGrid } from "igniteui-react-grids";
-import { IgrDataGridModule } from 'igniteui-react-grids';
+import { IgrDataGrid } from "igniteui-react-data-grids";
+import { IgrDataGridModule } from 'igniteui-react-data-grids';
 ```
 
 - Data Grid の必須ピア依存関係
@@ -758,8 +758,8 @@ import { IgrDataChartCoreModule } from 'igniteui-react-charts';
 import { IgrGeographicMap } from "igniteui-react-maps";
 import { IgrGeographicMapModule } from "igniteui-react-maps";
 // grids:
-import { IgrLiveGrid } from "igniteui-react-grids";
-import { IgrLiveGridModule } from 'igniteui-react-grids';
+import { IgrLiveGrid } from "igniteui-react-data-grids";
+import { IgrLiveGridModule } from 'igniteui-react-data-grids';
 ```
 
 - 変更前のコード
@@ -788,6 +788,6 @@ import { IgrGeographicMap } from "igniteui-react-maps/ES5/igr-geographic-map";
 import { IgrGeographicMapModule } from "igniteui-react-maps/ES5/igr-geographic-map-module";
 
 // grids:
-import { IgrLiveGrid } from "igniteui-react-grids/ES5/igr-live-grid";
-import { IgrLiveGridModule } from 'igniteui-react-grids/ES5/igr-live-grid-module';
+import { IgrLiveGrid } from "igniteui-react-data-grids/ES5/igr-live-grid";
+import { IgrLiveGridModule } from 'igniteui-react-data-grids/ES5/igr-live-grid-module';
 ```

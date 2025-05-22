@@ -39,6 +39,12 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 - The `IgxDashboardTile` now supports propagating the aggregations from its DataGrid view to the chart visualization such as sorting, grouping, filtering and selection. This is currently supported by binding the `DataSource` of the `IgxDashboardTile` to an instance of `IgxLocalDataSource`.
 
+### {PackageGrids}
+
+**Breaking Changes**
+
+- The 'igniteui-angular-grids' package has been renamed to 'igniteui-angular-data-grids'.
+
 ### Enhancements
 
 #### Toolbar

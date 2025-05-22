@@ -67,34 +67,6 @@ For example, you can use `DataAnnotationSliceLayer`, `ValueOverlay`, and `ValueL
 
 `sample="/charts/data-chart/data-annotation-multiple-with-overlay-text", height="600", alt="{Platform} Multiple Overlay Text"`
 
-### Rendering Overlay Text
-
-The following code snippet demonstrates how to render a comparison of three annotation layers as shown in the picture above.
-
-<div class="divider--half"></div>
-
-```html
-<igx-data-chart
-    [dataSource]="data">
-</igx-data-chart>
-```
-
-```tsx
-
-```
-
-```html
-
-```
-
-```ts
-
-```
-
-```razor
-
-```
-
 ### Styling Overlay Text
 
 This code example shows how to style and customize Overlay Text on
@@ -120,6 +92,26 @@ public Series StylingOverlayText()
 
     return annoLayer;
 }
+```
+
+```html
+<igc-data-annotation-slice-layer
+    name="AnnoLayer"
+    id="AnnoLayer"
+    brush="green"
+    annotation-text-color="white"
+    annotation-label-member-path="label"
+    annotation-value-member-path="value"
+    overlay-text-color="red"
+    overlay-text-background="green"
+    overlay-text-border-color="black"
+    overlay-text-member-path="label"
+    overlay-text-vertical-margin="20"
+    overlay-text-horizontal-margin="0"
+    overlay-text-location="OutsideBottomCenter"
+    overlay-text="OverlayText on DataAnnotationSliceLayer"
+    thickness="2">
+    </igc-data-annotation-slice-layer>
 ```
 
 ## Additional Resources
