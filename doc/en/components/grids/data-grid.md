@@ -521,7 +521,7 @@ function formatTitleCase(value: string) {
     return value.toUpperCase();
 }
 
-<IgrGrid id="grid" ref={grid} autoGenerate={false} data={data} primaryKey='Name'>
+<IgrGrid id="grid" ref={grid} autoGenerate={false} data={data} primaryKey="Name">
     <IgrColumn field="Name" dataType="string" bodyTemplate={nameCellTemplate}></IgrColumn>
     <IgrColumn field="Subscription" dataType="boolean" bodyTemplate={subscriptionCellTemplate}></IgrColumn>
 </IgrGrid>
@@ -1490,25 +1490,32 @@ public addressCellTemplate = (ctx: IgcCellTemplateContext) => {
 
 ```tsx
 function addressCellTemplate(ctx: IgrCellTemplateContext) {
-    return (
-        <>
-            <IgrExpansionPanel>
-                <div slot="title" style={{fontSize: '1.1em', fontWeight: 'bold', marginTop: '1rem', marginBottom: '0.25rem'}}>
-                {ctx.cell.value[0].Name}
-                </div>
-                <div className="description">
-                    <div style={{display: 'flex',  alignItems: 'center'}}>
-                        <div style={{width: '2rem', margin: '0rem'}}>Title</div>
-                        <input id='Title' type="text" name="title" value="${ctx.cell.value[0].Title}" style={{textOverflow: 'ellipsis'}} />
-                    </div>
-                    <div style={{display: 'flex',  alignItems: 'center'}}>
-                        <div style={{width: '2rem', margin: '0rem'}}>Age</div>
-                        <input id='Age' type="text" name="title" value="${ctx.cell.value[0].Age}" style={{textOverflow: 'ellipsis'}} />
-                    </div>
-                </div>
-            </IgrExpansionPanel>
-        </>
-    )
+    if (ctx.cell.value != null) {
+        if (ctx.cell.value.length === 0) return <></>;
+        const value = ctx.cell.value[0];
+        return (
+          <>
+              <IgrExpansionPanel>
+                  <div slot="title" style={{fontSize: "1.1em", fontWeight: "bold", marginTop: "1rem", marginBottom: "0.25rem"}}>
+                      {value.Name}
+                  </div>
+                  <div className="description">
+                      <IgrInput type="text" label="Title" name="title" value={value.Title} style={{textOverflow: "ellipsis"}}
+                          onInput={(e: CustomEvent<string>) => {
+                              ctx.cell.value[0][e.target.label] = e.detail;
+                              grid.current.markForCheck();
+                          }} />
+                      <IgrInput type="number" label="Age" name="title" value={value.Age} style={{textOverflow: "ellipsis"}}
+                          onInput={(e: CustomEvent<string>) => {
+                              ctx.cell.value[0][e.target.label] = e.detail;
+                              grid.current.markForCheck();
+                          }} />
+                  </div>
+              </IgrExpansionPanel>
+          </>
+        );
+    }
+    return <></>;
 }
 
 <IgrColumn field="Employees" header="Employees" width="40%" bodyTemplate={addressCellTemplate}></IgrColumn>
@@ -1803,22 +1810,22 @@ function addressEditCellTemplate(ctx: IgrCellTemplateContext) {
         <>
             <div className="contact-container--edit" style={{padding: "1rem"}}>
                 <IgrInput
-                    label='Country'
+                    label="Country"
                     onInput={(e: CustomEvent<string>) => cell.row.data.Country = e.detail}
                     value={cell.row.data.Country}
                 ></IgrInput>
                 <IgrInput
-                    label='City'
+                    label="City"
                     onInput={(e: CustomEvent<string>) => cell.row.data.City = e.detail}
                     value={cell.row.data.City}
                 ></IgrInput>
                 <IgrInput
-                    label='Postal Code'
+                    label="Postal Code"
                     onInput={(e: CustomEvent<string>) => cell.row.data.PostalCode = e.detail}
                     value={cell.row.data.PostalCode}
                 ></IgrInput>
                 <IgrInput
-                    label='Phone'
+                    label="Phone"
                     onInput={(e: CustomEvent<string>) => cell.row.data.Phone = e.detail}
                     value={cell.row.data.Phone}
                 ></IgrInput>
