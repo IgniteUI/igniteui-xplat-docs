@@ -449,7 +449,7 @@ this.grid.filteringLogic = FilteringLogic.OR;
 
 <!-- React -->
 ```tsx
-import { FilteringLogic } from "igniteui-react-data-grids";
+import { FilteringLogic } from "igniteui-react-grids";
 
 <{ComponentName} filteringLogic={FilteringLogic.Or}></{ComponentName}>
 ```

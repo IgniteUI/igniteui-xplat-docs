@@ -43,7 +43,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 **Breaking Changes**
 
-- The 'igniteui-grids-package' package has been renamed to 'igniteui-angular-data-grids'.
+- The 'igniteui-angular-grids' package has been renamed to 'igniteui-angular-data-grids'.
 
 ### Enhancements
 
