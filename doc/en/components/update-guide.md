@@ -9,7 +9,7 @@ In the Ignite UI for React versioning the first number always matches the major 
 
 
 ## From 18.9.0 to 19.0.0
-This release include a major rework of some of our React components internals leading to the following changes in **igniteui-react** and **igniteui-react-data-grids** packages:
+This release include a major rework of some of our React components internals leading to the following changes in **igniteui-react** and **igniteui-react-grids** packages:
 
 ### General
 #### Breaking changes

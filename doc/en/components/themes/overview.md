@@ -18,14 +18,14 @@ Here's the complete list of all bundled themes and their path:
 <!-- React -->
 | Name        | Variant | Location                                          |
 | ----------- | ------- | ------------------------------------------------- |
-| **Bootstrap**   | Light   | igniteui-react-data-grids/grids/themes/light/bootstrap.css |
-| **Material**    | Light   | igniteui-react-data-grids/grids/themes/light/material.css  |
-| **Fluent**      | Light   | igniteui-react-data-grids/grids/themes/light/fluent.css    |
-| **Indigo**      | Light   | igniteui-react-data-grids/grids/themes/light/indigo.css    |
-| **Bootstrap**   | Dark    | igniteui-react-data-grids/grids/themes/dark/bootstrap.css  |
-| **Material**    | Dark    | igniteui-react-data-grids/grids/themes/dark/material.css   |
-| **Fluent**      | Dark    | igniteui-react-data-grids/grids/themes/dark/fluent.css     |
-| **Indigo**      | Dark    | igniteui-react-data-grids/grids/themes/dark/indigo.css     |
+| **Bootstrap**   | Light   | igniteui-react-grids/grids/themes/light/bootstrap.css |
+| **Material**    | Light   | igniteui-react-grids/grids/themes/light/material.css  |
+| **Fluent**      | Light   | igniteui-react-grids/grids/themes/light/fluent.css    |
+| **Indigo**      | Light   | igniteui-react-grids/grids/themes/light/indigo.css    |
+| **Bootstrap**   | Dark    | igniteui-react-grids/grids/themes/dark/bootstrap.css  |
+| **Material**    | Dark    | igniteui-react-grids/grids/themes/dark/material.css   |
+| **Fluent**      | Dark    | igniteui-react-grids/grids/themes/dark/fluent.css     |
+| **Indigo**      | Dark    | igniteui-react-grids/grids/themes/dark/indigo.css     |
 <!-- end: React -->
 
 

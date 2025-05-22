@@ -70,7 +70,7 @@ import 'igniteui-webcomponents-grids/grids/combined.js';
 <!-- end: WebComponents -->
 
 ```tsx
-import "igniteui-react-data-grids/grids/combined.js";
+import "igniteui-react-grids/grids/combined.js";
 ```
 
 対応するスタイルも参照する必要があります。[テーマ](../../themes/overview.md)の 1 つにライトモードのオプションまたはダークモードのオプションを選択し、プロジェクト構成に基づいてインポートできます:
@@ -82,7 +82,7 @@ import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 <!-- end: WebComponents -->
 
 ```tsx
-import 'igniteui-react-data-grids/grids/themes/light/bootstrap.css'
+import 'igniteui-react-grids/grids/themes/light/bootstrap.css'
 ```
 
 <!-- WebComponents -->

@@ -182,8 +182,8 @@ However, if a more complex component is used like the [**IgrGrid**](grids/data-g
 "use client";
 import dynamic from "next/dynamic";
 import CustomersDataLocal from "./CustomersDataLocal.json";
-import "igniteui-react-data-grids/grids/combined";
-import "igniteui-react-data-grids/grids/themes/light/bootstrap.css";
+import "igniteui-react-grids/grids/combined";
+import "igniteui-react-grids/grids/themes/light/bootstrap.css";
 
 export default function GridDynamicComponent() {
   const IgnGrid = dynamic(

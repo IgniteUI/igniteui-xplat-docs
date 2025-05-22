@@ -67,7 +67,7 @@ import 'igniteui-webcomponents-grids/grids/combined.js';
 <!-- end: WebComponents -->
 
 ```tsx
-import "igniteui-react-data-grids/grids/combined.js";
+import "igniteui-react-grids/grids/combined.js";
 ```
 
 The corresponding styles should also be referenced. You can choose light or dark option for one of the [themes](../../themes/overview.md) and based on your project configuration to import it:
@@ -79,7 +79,7 @@ import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 <!-- end: WebComponents -->
 
 ```tsx
-import 'igniteui-react-data-grids/grids/themes/light/bootstrap.css'
+import 'igniteui-react-grids/grids/themes/light/bootstrap.css'
 ```
 
 <!-- WebComponents -->
