@@ -88,13 +88,13 @@ public handleRowSelection(args: IgcRowSelectionEventArgs) {
 <!-- end: WebComponents -->
 
 ```tsx
-function handleRowSelection(args: IgrRowSelectionEventArgs) {
+const handleRowSelection = (args: IgrRowSelectionEventArgs) => {
     if (args.detail.added.length && args.detail.added[0] === 3) {
         args.detail.cancel = true;
     }
 }
 
-<{ComponentSelector} rowSelection="single" autoGenerate="true" allowFiltering="true" rowSelectionChanging={handleRowSelection}>
+<{ComponentSelector} rowSelection="single" autoGenerate={true} allowFiltering={true} onRowSelectionChanging={handleRowSelection}>
 </{ComponentSelector}>
 ```
 
@@ -151,7 +151,7 @@ To enable multiple row selection in the `{ComponentName}` just set the `RowSelec
 
 ```tsx
 <{ComponentSelector} primaryKey="ProductID" rowSelection="multiple"
-        allowFiltering="true" autoGenerate="true">
+        allowFiltering={true} autoGenerate={true}>
 </{ComponentSelector}>
 ```
 
@@ -186,8 +186,8 @@ To enable cascade row selection in the `{ComponentName}` just set the `RowSelect
 ```
 
 ```tsx
-<IgrTreeGrid id="grid" primaryKey="ID" foreignKey="ParentID" autoGenerate="true"
-        rowSelection="MultipleCascade" allowFiltering="true">
+<IgrTreeGrid id="grid" primaryKey="ID" foreignKey="ParentID" autoGenerate={true}
+        rowSelection="multipleCascade" allowFiltering={true}>
 </IgrTreeGrid>
 ```
 
@@ -279,7 +279,7 @@ function onClickSelect() {
     gridRef.current.selectRows([1,2,5], true);
 }
 
-<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate="true" ref={gridRef}>
+<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate={true} ref={gridRef}>
 </{ComponentSelector}>
 <button onClick={onClickSelect}>Select 1,2 and 5</button>
 ```
@@ -349,7 +349,7 @@ function onClickDeselect() {
     gridRef.current.deselectRows([1,2,5]);
 }
 
-<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate="true" ref={gridRef}>
+<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate={true} ref={gridRef}>
 </{ComponentSelector}>
 <button onClick={onClickDeselect}>Deselect 1,2 and 5</button>
 ```
@@ -397,11 +397,11 @@ public handleRowSelectionChange(args) {
 <!-- end: WebComponents -->
 
 ```tsx
-function handleRowSelectionChange(args: IgrRowSelectionEventArgs) {
+const handleRowSelectionChange = (args: IgrRowSelectionEventArgs) => {
     args.detail.cancel = true; // this will cancel the row selection
 }
 
-<{ComponentSelector} rowSelectionChanging={handleRowSelectionChange}>
+<{ComponentSelector} onRowSelectionChanging={handleRowSelectionChange}>
 </{ComponentSelector}>
 ```
 
@@ -496,7 +496,7 @@ constructor() {
 ```tsx
 const mySelectedRows = [1,2,3];
 
-<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate="false" selectedRows={mySelectedRows}>
+<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate={false} selectedRows={mySelectedRows}>
 </{ComponentSelector}>
 ```
 
@@ -574,12 +574,12 @@ public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
 ```
 
 ```tsx
-function rowSelectorTemplate(ctx: IgrRowSelectorTemplateContext) {
-    if (ctx.dataContext.implicit.selected) {
+const rowSelectorTemplate = (ctx: IgrRowSelectorTemplateContext) => {
+    if (ctx.implicit.selected) {
         return (
             <>
                 <div style={{justifyContent: 'space-evenly', display: 'flex', width: '70px'}}>
-                    <span> ${ctx.dataContext.implicit.index}</span>
+                    <span> ${ctx.implicit.index}</span>
                     <IgrCheckbox checked></IgrCheckbox>
                 </div>
             </>
@@ -588,7 +588,7 @@ function rowSelectorTemplate(ctx: IgrRowSelectorTemplateContext) {
         return (
             <>
                 <div style={{justifyContent: 'space-evenly', display: 'flex', width: '70px'}}>
-                    <span> ${ctx.dataContext.implicit.index}</span>
+                    <span> ${ctx.implicit.index}</span>
                     <IgrCheckbox checked></IgrCheckbox>
                 </div>
             </>
@@ -620,10 +620,10 @@ public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
 ```
 
 ```tsx
-public rowSelectorTemplate(ctx: IgrRowSelectorTemplateContext) {
+const rowSelectorTemplate = (ctx: IgrRowSelectorTemplateContext) => {
     return (
         <>
-            <IgrCheckbox onClick={(event) => onSelectorClick(event, ctx.dataContext.implicit.key)}>
+            <IgrCheckbox onClick={(event) => onSelectorClick(event, ctx.implicit.key)}>
             </IgrCheckbox>
         </>
     );
@@ -657,10 +657,10 @@ public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
 ```
 
 ```tsx
-function headSelectorTemplate(ctx: IgrHeadSelectorTemplateContext) {
+const headSelectorTemplate =(ctx: IgrHeadSelectorTemplateContext) => {
     return (
         <>
-            {ctx.dataContext.implicit.selectedCount} / {ctx.dataContext.implicit.totalCount}
+            {ctx.implicit.selectedCount} / {ctx.implicit.totalCount}
         </>
     );
 };
@@ -716,8 +716,8 @@ public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
 ```
 
 ```tsx
-function headSelectorTemplate(ctx: IgcHeadSelectorTemplateContext) {
-    const implicit: any = ctx.dataContext.implicit;
+const headSelectorTemplate = (ctx: IgrHeadSelectorTemplateContext) => {
+    const implicit: any = ctx.implicit;
     if (implicit.selectedCount > 0 && implicit.selectedCount === implicit.totalCount) {
             return (
                 <>
@@ -738,7 +738,7 @@ function headSelectorTemplate(ctx: IgcHeadSelectorTemplateContext) {
         );
 }
 
-<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate="true" headSelectorTemplate={headSelectorTemplate}>
+<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate={true} headSelectorTemplate={headSelectorTemplate}>
 </{ComponentSelector}>
 ```
 
