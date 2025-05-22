@@ -67,18 +67,18 @@ npm install --save {PackageGrids}
 ツリー グリッドを使用するには、次のインポートも含める必要があります:
 
 ```typescript
-import 'igniteui-webcomponents-grids/grids/combined';
+import 'igniteui-webcomponents-data-grids/grids/combined';
 ```
 
 対応するスタイルも参照する必要があります。[テーマ](../../themes/overview.md)の 1 つにライトモードのオプションまたはダークモードのオプションを選択し、プロジェクト構成に基づいてインポートできます:
 
 ```typescript
-import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
+import 'igniteui-webcomponents-data-grids/grids/themes/light/bootstrap.css';
 ```
 
 またはそれをリンクするには:
 ```typescript
-<link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
+<link rel='stylesheet' href='node_modules/igniteui-webcomponents-data-grids/grids/themes/light/bootstrap.css'>
 ```
 
 ツリー グリッドの外観をカスタマイズする方法の詳細については、[スタイリング](overview.md#web-components-ツリー-グリッド-スタイルの構成)セクションを参照してください。

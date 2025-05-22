@@ -62,30 +62,30 @@ You also need to include the following import to use the grid:
 
 <!-- WebComponents -->
 ```typescript
-import 'igniteui-webcomponents-grids/grids/combined.js';
+import 'igniteui-webcomponents-data-grids/grids/combined.js';
 ```
 <!-- end: WebComponents -->
 
 ```tsx
-import "igniteui-react-grids/grids/combined.js";
+import "igniteui-react-data-grids/grids/combined.js";
 ```
 
 The corresponding styles should also be referenced. You can choose light or dark option for one of the [themes](../../themes/overview.md) and based on your project configuration to import it:
 
 <!-- WebComponents -->
 ```typescript
-import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
+import 'igniteui-webcomponents-data-grids/grids/themes/light/bootstrap.css';
 ```
 <!-- end: WebComponents -->
 
 ```tsx
-import 'igniteui-react-grids/grids/themes/light/bootstrap.css'
+import 'igniteui-react-data-grids/grids/themes/light/bootstrap.css'
 ```
 
 <!-- WebComponents -->
 Or to link it:
 ```typescript
-<link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
+<link rel='stylesheet' href='node_modules/igniteui-webcomponents-data-grids/grids/themes/light/bootstrap.css'>
 ```
 <!-- end: WebComponents -->
 For more details on how to customize the appearance of the hierarchical grid, you may have a look at the [styling](overview.md#Styling) section.

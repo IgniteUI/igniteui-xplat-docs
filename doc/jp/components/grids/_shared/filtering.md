@@ -441,7 +441,7 @@ this.@@igObjectRef.filteringLogic = FilteringLogic.OR;
 
 <!-- WebComponents -->
 ```typescript
-import { FilteringLogic } from "igniteui-webcomponents-grids/grids";
+import { FilteringLogic } from "igniteui-webcomponents-data-grids/grids";
 
 this.grid.filteringLogic = FilteringLogic.OR;
 ```
@@ -449,7 +449,7 @@ this.grid.filteringLogic = FilteringLogic.OR;
 
 <!-- React -->
 ```tsx
-import { FilteringLogic } from "igniteui-react-grids";
+import { FilteringLogic } from "igniteui-react-data-grids";
 
 <{ComponentName} filteringLogic={FilteringLogic.Or}></{ComponentName}>
 ```

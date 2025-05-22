@@ -112,30 +112,30 @@ npm install --save {PackageGrids}
 
 <!-- WebComponents -->
 ```typescript
-import 'igniteui-webcomponents-grids/grids/combined.js';
+import 'igniteui-webcomponents-data-grids/grids/combined.js';
 ```
 <!-- end: WebComponents -->
 
 ```tsx
-import "igniteui-react-grids/grids/combined.js";
+import "igniteui-react-data-grids/grids/combined.js";
 ```
 
 対応するスタイルも参照する必要があります。[テーマ](../themes/overview.md)の 1 つにライトモードのオプションまたはダークモードのオプションを選択し、プロジェクト構成に基づいてインポートできます:
 
 <!-- WebComponents -->
 ```typescript
-import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
+import 'igniteui-webcomponents-data-grids/grids/themes/light/bootstrap.css';
 ```
 <!-- end: WebComponents -->
 
 ```tsx
-import 'igniteui-react-grids/grids/themes/light/bootstrap.css'
+import 'igniteui-react-data-grids/grids/themes/light/bootstrap.css'
 ```
 
 <!-- WebComponents -->
 またはそれをリンクするには:
 ```typescript
-<link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
+<link rel='stylesheet' href='node_modules/igniteui-webcomponents-data-grids/grids/themes/light/bootstrap.css'>
 ```
 <!-- end: WebComponents -->
 
@@ -171,7 +171,7 @@ export class AppModule {}
 ```
 
 ```tsx
-import { IgrGridModule } from "igniteui-react-grids";
+import { IgrGridModule } from "igniteui-react-data-grids";
 IgrGridModule.register();
 ```
 

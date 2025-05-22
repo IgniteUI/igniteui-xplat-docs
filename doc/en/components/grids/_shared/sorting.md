@@ -70,12 +70,12 @@ import { SortingDirection } from 'igniteui-angular';
 
 <!-- WebComponents -->
 ```typescript
-import { SortingDirection } from 'igniteui-webcomponents-grids';
+import { SortingDirection } from 'igniteui-webcomponents-data-grids';
 ```
 <!-- end: WebComponents -->
 
 ```tsx
-import { SortingDirection } from "igniteui-react-grids";
+import { SortingDirection } from "igniteui-react-data-grids";
 ```
 
 <!-- ComponentStart: Grid -->
