@@ -818,7 +818,7 @@ defineComponents(IgcInputComponent, IgcChipComponent, IgcIconComponent, IgcIconB
 
 <!-- ComponentStart: Grid -->
 ```tsx
-import { IgrGridModule } from "igniteui-react-data-grids";
+import { IgrGridModule } from "igniteui-react-grids";
 import { IgrChipModule } from "igniteui-react";
 
 const mods: any[] = [IgrGridModule, IgrChipModule];
@@ -828,7 +828,7 @@ mods.forEach((m) => m.register());
 
 <!-- ComponentStart: TreeGrid -->
 ```tsx
-import { IgrTreeGridModule } from "igniteui-react-data-grids";
+import { IgrTreeGridModule } from "igniteui-react-grids";
 import { IgrChipModule, IgrIconButtonModule, IgrInputModule } from "igniteui-react";
 
 const mods: any[] = [IgrTreeGridModule, IgrChipModule, IgrIconButtonModule, IgrInputModule];

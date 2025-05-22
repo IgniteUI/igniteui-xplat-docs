@@ -524,7 +524,7 @@ class MySummary extends IgxNumberSummaryOperand {
 
 
 ```typescript
-import { IgcSummaryResult, IgcSummaryOperand, IgcNumberSummaryOperand, IgcDateSummaryOperand } from 'igniteui-webcomponents-data-grids';
+import { IgcSummaryResult, IgcSummaryOperand, IgcNumberSummaryOperand, IgcDateSummaryOperand } from 'igniteui-webcomponents-grids';
 
 class MySummary extends IgcNumberSummaryOperand {
     constructor() {

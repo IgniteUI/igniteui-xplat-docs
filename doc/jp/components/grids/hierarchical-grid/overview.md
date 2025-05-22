@@ -65,7 +65,7 @@ npm install --save {PackageGrids}
 
 <!-- WebComponents -->
 ```typescript
-import 'igniteui-webcomponents-data-grids/grids/combined.js';
+import 'igniteui-webcomponents-grids/grids/combined.js';
 ```
 <!-- end: WebComponents -->
 
@@ -77,7 +77,7 @@ import "igniteui-react-data-grids/grids/combined.js";
 
 <!-- WebComponents -->
 ```typescript
-import 'igniteui-webcomponents-data-grids/grids/themes/light/bootstrap.css';
+import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 ```
 <!-- end: WebComponents -->
 
@@ -88,7 +88,7 @@ import 'igniteui-react-data-grids/grids/themes/light/bootstrap.css'
 <!-- WebComponents -->
 またはそれをリンクするには:
 ```typescript
-<link rel='stylesheet' href='node_modules/igniteui-webcomponents-data-grids/grids/themes/light/bootstrap.css'>
+<link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
 ```
 <!-- end: WebComponents -->
 階層グリッドの外観をカスタマイズする方法の詳細については、[スタイル設定](overview.md#スタイル設定)セクションを参照してください。

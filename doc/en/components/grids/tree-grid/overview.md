@@ -66,18 +66,18 @@ npm install --save {PackageGrids}
 You also need to include the following import to use the tree grid:
 
 ```typescript
-import 'igniteui-webcomponents-data-grids/grids/combined';
+import 'igniteui-webcomponents-grids/grids/combined';
 ```
 
 The corresponding styles should also be referenced. You can choose light or dark option for one of the [themes](../../themes/overview.md) and based on your project configuration to import it:
 
 ```typescript
-import 'igniteui-webcomponents-data-grids/grids/themes/light/bootstrap.css';
+import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 ```
 
 Or to link it:
 ```typescript
-<link rel='stylesheet' href='node_modules/igniteui-webcomponents-data-grids/grids/themes/light/bootstrap.css'>
+<link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
 ```
 
 For more details on how to customize the appearance of the tree grid, you may have a look at the [styling](overview.md#web-components-tree-grid-styling-configuration) section.

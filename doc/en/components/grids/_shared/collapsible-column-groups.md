@@ -36,13 +36,13 @@ ng add igniteui-angular
 <!-- WebComponents -->
 ```cmd
 npm install --save igniteui-webcomponents-core
-npm install --save igniteui-webcomponents-data-grids
+npm install --save igniteui-webcomponents-grids
 ```
 <!-- end: WebComponents -->
 
 <!-- React -->
 ```cmd
-npm install igniteui-react-data-grids
+npm install igniteui-react-grids
 ```
 <!-- end: React -->
 
