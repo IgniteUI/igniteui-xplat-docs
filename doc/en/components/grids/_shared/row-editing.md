@@ -89,20 +89,19 @@ public unitsInStockCellTemplate = (ctx: IgcCellTemplateContext) => {
 <!-- end: WebComponents -->
 
 ```tsx
-function unitsInStockCellTemplate(ctx: IgrCellTemplateContext) {
+const unitsInStockCellTemplate = (ctx: IgrCellTemplateContext) => {
     return (
         <>
-            <input name="units" value={ctx.dataContext.cell.value} style={{color: "black"}} />;
+            <input name="units" value={ctx.cell.value} style={{color: "black"}} />;
         </>
     );
 }
 
-<{ComponentSelector} primaryKey="ProductID" width="100%" height="500px" rowEditable="true"
-    bodyTemplate={unitsInStockCellTemplate}>
-    <IgrColumn field="ProductID" header="Product ID" editable="false"></IgrColumn>
+<{ComponentSelector} primaryKey="ProductID" width="100%" height="500px" rowEditable={true}>
+    <IgrColumn field="ProductID" header="Product ID" editable={false}></IgrColumn>
     <IgrColumn field="ReorderLevel" header="ReorderLever" dataType="number"></IgrColumn>
     <IgrColumn field="ProductName" header="ProductName" dataType="string"></IgrColumn>
-    <IgrColumn field="UnitsInStock" header="UnitsInStock" dataType="number"></IgrColumn>
+    <IgrColumn field="UnitsInStock" header="UnitsInStock" dataType="number" bodyTemplate={unitsInStockCellTemplate}></IgrColumn>
     <IgrColumn field="OrderDate" dataType="date"></IgrColumn>
     <IgrColumn field="Discontinued" header="Discontinued" dataType="boolean"></IgrColumn>
 </{ComponentSelector}>
@@ -170,7 +169,7 @@ constructor() {
 <!-- end: WebComponents -->
 
 ```tsx
-<{ComponentSelector} primaryKey="ID" width="100%" height="500px" rowEditable="true">
+<{ComponentSelector} primaryKey="ID" width="100%" height="500px" rowEditable={true}>
     <IgrColumn field="Name" header="Name" dataType="string"></IgrColumn>
     <IgrColumn field="Age" header="Age" dataType="number"></IgrColumn>
     <IgrColumn field="Title" header="Title" dataType="string"></IgrColumn>
@@ -248,117 +247,117 @@ constructor() {
 <!-- React -->
 ```tsx
 <IgrHierarchicalGrid
-    autoGenerate="false"
-    data={this.singersData}
-    ref={this.hierarchicalGridRef}
+    autoGenerate={false}
+    data={singersData}
+    ref={hierarchicalGridRef}
     id="hierarchicalGrid"
     primaryKey="ID"
-    rowEditable="true">
+    rowEditable={true}>
     <IgrColumn
         field="Artist"
         header="Artist"
-        dataType="String"
+        dataType="string"
     ></IgrColumn>
     <IgrColumn
         field="Photo"
         header="Photo"
-        dataType="Image"
-        editable="false"
+        dataType="image"
+        editable={false}
     ></IgrColumn>
     <IgrColumn
         field="Debut"
         header="Debut"
-        dataType="Number"
+        dataType="number"
     ></IgrColumn>
     <IgrColumn
         field="GrammyNominations"
         header="Grammy Nominations"
-        dataType="Number"
+        dataType="number"
     ></IgrColumn>
     <IgrColumn
         field="GrammyAwards"
         header="Grammy Awards"
-        dataType="Number"
+        dataType="number"
     ></IgrColumn>
 
     <IgrRowIsland
         childDataKey="Albums"
-        autoGenerate="false"
+        autoGenerate={false}
         primaryKey="Album"
-        rowEditable="true">
+        rowEditable={true}>
         <IgrColumn
             field="Album"
             header="Album"
-            dataType="String"
+            dataType="string"
         ></IgrColumn>
         <IgrColumn
             field="LaunchDate"
             header="Launch Date"
-            dataType="Date"
+            dataType="date"
         ></IgrColumn>
         <IgrColumn
             field="BillboardReview"
             header="Billboard Review"
-            dataType="String"
+            dataType="string"
         ></IgrColumn>
         <IgrColumn
             field="USBillboard200"
             header="US Billboard 200"
-            dataType="String"
+            dataType="string"
         ></IgrColumn>
 
         <IgrRowIsland
             childDataKey="Songs"
-            autoGenerate="false"
+            autoGenerate={false}
             primaryKey="Number"
-            rowEditable="true">
+            rowEditable={true}>
             <IgrColumn
                 field="Number"
                 header="No."
-                dataType="String"
+                dataType="string"
             ></IgrColumn>
             <IgrColumn
                 field="Title"
                 header="Title"
-                dataType="String"
+                dataType="string"
             ></IgrColumn>
             <IgrColumn
                 field="Released"
                 header="Released"
-                dataType="Date"
+                dataType="date"
             ></IgrColumn>
             <IgrColumn
                 field="Genre"
                 header="Genre"
-                dataType="String"
+                dataType="string"
             ></IgrColumn>
         </IgrRowIsland>
     </IgrRowIsland>
 
     <IgrRowIsland
         childDataKey="Tours"
-        autoGenerate="false"
+        autoGenerate={false}
         primaryKey="Tour"
-        rowEditable="true">
+        rowEditable={true}>
         <IgrColumn
             field="Tour"
             header="Tour"
-            dataType="String"
+            dataType="string"
         ></IgrColumn>
         <IgrColumn
             field="StartedOn"
             header="Started on"
-            dataType="String"
+            dataType="string"
         ></IgrColumn>
         <IgrColumn
             field="Location"
             header="Location"
-            dataType="String"
+            dataType="string"
         ></IgrColumn>
         <IgrColumn
             field="Headliner"
             header="Headliner"
-            dataType="String"
+            dataType="string"
         ></IgrColumn>
     </IgrRowIsland>
 </IgrHierarchicalGrid>
@@ -600,10 +599,10 @@ public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-function rowEditTextTemplate(ctx: IgrGridRowEditTextTemplateContext) {
+const rowEditTextTemplate = (ctx: IgrGridRowEditTextTemplateContext) =>{
     return (
         <>
-            Changes: {ctx.dataContext.implicit}
+            Changes: {ctx.implicit}
         </>
     );
 }
@@ -650,8 +649,8 @@ public rowEditActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-function rowEditActionsTemplate(ctx: IgrGridRowEditActionsTemplateContext) {
-    const endRowEdit = ctx.dataContext.implicit;
+const rowEditActionsTemplate =(ctx: IgrGridRowEditActionsTemplateContext) => {
+    const endRowEdit = ctx.implicit;
     return (
         <>
             <button onClick={(event) => endRowEdit(false, event)}>Cancel</button>
