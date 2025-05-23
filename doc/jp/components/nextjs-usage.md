@@ -197,7 +197,7 @@ export default function GridDynamicComponent() {
         IgrGridToolbarTitle,
         IgrGridToolbarActions,
         IgrGridToolbarPinning,
-      } = await import("igniteui-react-data-grids");
+      } = await import("igniteui-react-grids");
       IgrGridModule.register();
 
       const IgGrid = ({ ...props }) => {
