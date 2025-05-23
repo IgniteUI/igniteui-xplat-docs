@@ -109,9 +109,9 @@ The following demonstrates the implementation of each of the columns described i
 ```
 
 ```ts
-import { IgcTemplateColumnComponent } from 'igniteui-webcomponents-grids';
-import { IgcTemplateCellInfo } from 'igniteui-webcomponents-grids';
-import { IgcTemplateCellUpdatingEventArgs } from 'igniteui-webcomponents-grids';
+import { IgcTemplateColumnComponent } from 'igniteui-webcomponents-data-grids';
+import { IgcTemplateCellInfo } from 'igniteui-webcomponents-data-grids';
+import { IgcTemplateCellUpdatingEventArgs } from 'igniteui-webcomponents-data-grids';
 
 let grid1 = (document.getElementById("grid") as IgcDataGridComponent);
 grid1.dataSource = data;
@@ -162,10 +162,10 @@ onCellUpdating(s: IgcTemplateColumnComponent, e: IgcTemplateCellUpdatingEventArg
 ```
 
 ```ts
-import { IgrTemplateCellUpdatingEventArgs } from 'igniteui-react-grids';
-import { IgrTemplateCellInfo } from 'igniteui-react-grids';
-import { IgrTemplateColumn } from 'igniteui-react-grids';
-import { IgrComboBoxColumn } from 'igniteui-react-grids';
+import { IgrTemplateCellUpdatingEventArgs } from 'igniteui-react-data-grids';
+import { IgrTemplateCellInfo } from 'igniteui-react-data-grids';
+import { IgrTemplateColumn } from 'igniteui-react-data-grids';
+import { IgrComboBoxColumn } from 'igniteui-react-data-grids';
 
 public onAddressCellUpdating(s: IgrTemplateColumn, e: IgrTemplateCellUpdatingEventArgs) {
     const content = e.content as HTMLDivElement;

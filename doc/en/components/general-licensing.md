@@ -115,6 +115,7 @@ Here's a full example with all path mappings for the react packages you may need
         "igniteui-react-core": ["node_modules/igniteui-react-core", "node_modules/@infragistics/igniteui-react-core"],
         "igniteui-react-charts": ["node_modules/igniteui-react-charts", "node_modules/@infragistics/igniteui-react-charts"],
         "igniteui-react-grids": ["node_modules/igniteui-react-grids", "node_modules/@infragistics/igniteui-react-grids"],
+        "igniteui-react-data-grids": ["node_modules/igniteui-react-data-grids", "node_modules/@infragistics/igniteui-react-data-grids"],
         "igniteui-react-grids/grids": ["node_modules/igniteui-react-grids/grids", "node_modules/@infragistics/igniteui-react-grids/grids"],
         "igniteui-react-gauges": ["node_modules/igniteui-react-gauges", "node_modules/@infragistics/igniteui-react-gauges"],
         "igniteui-react-inputs": ["node_modules/igniteui-react-inputs", "node_modules/@infragistics/igniteui-react-inputs"],

@@ -52,7 +52,7 @@ isColumnOptionsEnabled="true">
 
 <!--React-->
 ```ts
-import { HeaderClickAction } from 'igniteui-react-grids';
+import { HeaderClickAction } from 'igniteui-react-data-grids';
 
 //enable column options
 this.grid.isColumnOptionsEnabled="true";
@@ -67,7 +67,7 @@ this.grid.headerClickAction = HeaderClickAction.SortByOneColumnOnly;
 
 <!--WebComponents-->
 ```ts
-import { HeaderClickAction } from 'igniteui-webcomponents-grids';
+import { HeaderClickAction } from 'igniteui-webcomponents-data-grids';
 
 //enable column options
 this.grid.isColumnOptionsEnabled="true";

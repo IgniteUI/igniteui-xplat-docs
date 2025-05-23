@@ -10,6 +10,52 @@ _language: ja
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
+## **25.1**
+
+### {PackageCharts} (チャート)
+
+- 新しい[チャート データ注釈](charts/features/chart-data-annotations.md)
+  - データ注釈バンド レイヤー (ベータ版)
+  - データ注釈ライン レイヤー (ベータ版)
+  - データ注釈矩形レイヤー (ベータ版)
+  - データ注釈スライス レイヤー (ベータ版)
+  - データ注釈ストリップ レイヤー (ベータ版)
+
+- [データ ツールチップ](charts/features/chart-data-tooltip.md)と[データ 凡例](charts/features/chart-data-legend.md)では、ツールチップまたは凡例のコンテンツをテーブルまたは垂直レイアウト構造でレイアウトするために使用できる新しい `LayoutMode` プロパティが公開されています。 
+
+- チャートの `DefaultInteraction` プロパティが更新され、新しい列挙体 `DragSelect` が含まれるようになりました。これにより、ドラッグされたプレビュー Rect は、その中に含まれるポイントを選択します。 (ベータ版)
+
+- [ValueOverlay と ValueLayer](charts/features/chart-overlays.md) は、上記にリストした新しい [チャート データ注釈](charts/features/chart-data-annotations.md)に加えて、プロット領域に追加の注釈テキストをオーバーレイするために使用できる `OverlayText` プロパティを公開するようになりました。これらの注釈の外観は、OverlayText プレフィックスが付いた多くのプロパティを使用して構成できます。たとえば、`OverlayTextBrush` プロパティはオーバーレイ テキストの色を構成します。 (ベータ版)
+
+- 新しい[トレンドライン レイヤー](charts/features/chart-trendlines.md) シリーズ タイプを使用すると、トレンド ライン レイヤーごとに 1 つのトレンド ラインを特定のシリーズに適用できます。これにより、チャートに複数の [TrendlineLayer](charts/features/chart-overlays.md) シリーズ タイプを使用できるため、単一のシリーズで複数のトレンド ラインを使用できるようになります。
+
+### {PackageDashboards} (ダッシュボード)
+
+- `IgrDashboardTile` では、ソート、グループ化、フィルタリング、選択などの集計を DataGrid ビューからチャート視覚化に伝播できるようになりました。これは現在、`IgrDashboardTile` の `DataSource` を `IgrLocalDataSource` のインスタンスにバインドすることによってサポートされています。
+
+### {PackageGrids}
+
+**重大な変更**
+
+- `IgrDataGrid` は、igniteui-react-data-grids パッケージの一部として存在するようになりました。
+
+### 機能拡張
+
+#### Toolbar
+- ツールバーから追加された値レイヤーが凡例に表示されるようになりました。
+- ズーム リセット ツールはズーム ドロップダウンに移動されました。
+
+#### Data Pie Chart
+- チャートは `GetOthersContext()` メソッドを公開するようになりました。これにより、Others (その他) スライスのコンテンツが返されます。
+
+### バグ修正
+
+| バグ番号 | コントロール | 説明      |
+|------------|---------|------------------|
+|37023|IgrDataChart|overflow: hidden が設定されている場合にツールチップが切り取られたり画面外に表示されたりする。
+|37244|Excel|カスタム データ検証が機能しない。.
+|37685|IgrSpreadsheet|Arial フォントで書式設定された数値が正しく描画されない。
+
 ## **{PackageVerChanges-24-2-APR2}**
 
 > [!Note] バージョン 19.0.0 では、React 製品に多くの重大な変更が導入され、API の改善と整理が行われました。詳細は完全なアップデートガイドをご参照ください。
@@ -632,7 +678,7 @@ DashboardTile (ベータ版)
 ```
 
 ```ts
-import { IgrColumnSummaryDescription, IgrColumnSortDescription, IgrColumnGroupDescription } from 'igniteui-react-grids'
+import { IgrColumnSummaryDescription, IgrColumnSortDescription, IgrColumnGroupDescription } from 'igniteui-react-data-grids'
 const productCount = new IgrColumnSummaryDescription();
 productCount.field = "ProductName";
 const colSortDesc = new IgrColumnSortDescription();
@@ -655,8 +701,8 @@ Data Grid コンポーネントおよび対応するモジュールの名前が 
 グリッドとそれに対応するモジュールをインポートする新しいコードは以下のとおりです。
 
 ```ts
-import { IgrDataGrid } from "igniteui-react-grids";
-import { IgrDataGridModule } from 'igniteui-react-grids';
+import { IgrDataGrid } from "igniteui-react-data-grids";
+import { IgrDataGridModule } from 'igniteui-react-data-grids';
 ```
 
 - Data Grid の必須ピア依存関係
@@ -712,8 +758,8 @@ import { IgrDataChartCoreModule } from 'igniteui-react-charts';
 import { IgrGeographicMap } from "igniteui-react-maps";
 import { IgrGeographicMapModule } from "igniteui-react-maps";
 // grids:
-import { IgrLiveGrid } from "igniteui-react-grids";
-import { IgrLiveGridModule } from 'igniteui-react-grids';
+import { IgrLiveGrid } from "igniteui-react-data-grids";
+import { IgrLiveGridModule } from 'igniteui-react-data-grids';
 ```
 
 - 変更前のコード
@@ -742,6 +788,6 @@ import { IgrGeographicMap } from "igniteui-react-maps/ES5/igr-geographic-map";
 import { IgrGeographicMapModule } from "igniteui-react-maps/ES5/igr-geographic-map-module";
 
 // grids:
-import { IgrLiveGrid } from "igniteui-react-grids/ES5/igr-live-grid";
-import { IgrLiveGridModule } from 'igniteui-react-grids/ES5/igr-live-grid-module';
+import { IgrLiveGrid } from "igniteui-react-data-grids/ES5/igr-live-grid";
+import { IgrLiveGridModule } from 'igniteui-react-data-grids/ES5/igr-live-grid-module';
 ```

@@ -67,15 +67,15 @@ _language: ja
 
 ```tsx
 <IgrGrid>
-    <IgrGridToolbar key="toolbar">
-        <IgrGridToolbarTitle key="toolbarTitle">
-            <span key="toolbarTitleText">Grid Toolbar<span>
+    <IgrGridToolbar>
+        <IgrGridToolbarTitle>
+            <span>Grid Toolbar<span>
         </IgrGridToolbarTitle>
-        <IgrGridToolbarActions key="toolbarActions">
-            <IgrGridToolbarAdvancedFiltering key="advancedFiltering"></IgrGridToolbarAdvancedFiltering>
-            <IgrGridToolbarPinning key="pinning"></IgrGridToolbarPinning>
-            <IgrGridToolbarHiding key="hiding"></IgrGridToolbarHiding>
-            <IgrGridToolbarExporter key="export"></IgrGridToolbarExporter>
+        <IgrGridToolbarActions>
+            <IgrGridToolbarAdvancedFiltering></IgrGridToolbarAdvancedFiltering>
+            <IgrGridToolbarPinning></IgrGridToolbarPinning>
+            <IgrGridToolbarHiding></IgrGridToolbarHiding>
+            <IgrGridToolbarExporter></IgrGridToolbarExporter>
         </IgrGridToolbarActions>
     </IgrGridToolbar>
 </IgrGrid>
@@ -138,16 +138,16 @@ _language: ja
 <!-- React -->
 <!-- ComponentStart: TreeGrid -->
 ```tsx
-<IgrTreeGrid data={data} primaryKey="ID" foreignKey="ParentID" autoGenerate="true">
-    <IgrGridToolbar key="toolbar">
-        <IgrGridToolbarTitle key="toolbarTitle">
-            <span key="toolbarTitleText">Tree Grid Toolbar<span>
+<IgrTreeGrid data={data} primaryKey="ID" foreignKey="ParentID" autoGenerate={true}>
+    <IgrGridToolbar>
+        <IgrGridToolbarTitle>
+            <span>Tree Grid Toolbar<span>
         </IgrGridToolbarTitle>
-        <IgrGridToolbarActions key="toolbarActions">
-            <IgrGridToolbarAdvancedFiltering key="advancedFiltering"></IgrGridToolbarAdvancedFiltering>
-            <IgrGridToolbarPinning key="pinning"></IgrGridToolbarPinning>
-            <IgrGridToolbarHiding key="hiding"></IgrGridToolbarHiding>
-            <IgrGridToolbarExporter key="export"></IgrGridToolbarExporter>
+        <IgrGridToolbarActions>
+            <IgrGridToolbarAdvancedFiltering></IgrGridToolbarAdvancedFiltering>
+            <IgrGridToolbarPinning></IgrGridToolbarPinning>
+            <IgrGridToolbarHiding></IgrGridToolbarHiding>
+            <IgrGridToolbarExporter></IgrGridToolbarExporter>
         </IgrGridToolbarActions>
     </IgrGridToolbar>
 </IgrTreeGrid>
@@ -216,15 +216,15 @@ _language: ja
 <!-- ComponentStart: HierarchicalGrid -->
 ```tsx
 <IgrHierarchicalGrid>
-    <IgrGridToolbar key="toolbar">
-        <IgrGridToolbarTitle key="toolbarTitle">
-            <span key="toolbarTitleText">Hierarchical Grid Toolbar<span>
+    <IgrGridToolbar>
+        <IgrGridToolbarTitle>
+            <span>Hierarchical Grid Toolbar<span>
         </IgrGridToolbarTitle>
-        <IgrGridToolbarActions key="toolbarActions">
-            <IgrGridToolbarAdvancedFiltering key="advancedFiltering"></IgrGridToolbarAdvancedFiltering>
-            <IgrGridToolbarPinning key="pinning"></IgrGridToolbarPinning>
-            <IgrGridToolbarHiding key="hiding"></IgrGridToolbarHiding>
-            <IgrGridToolbarExporter key="export"></IgrGridToolbarExporter>
+        <IgrGridToolbarActions>
+            <IgrGridToolbarAdvancedFiltering></IgrGridToolbarAdvancedFiltering>
+            <IgrGridToolbarPinning></IgrGridToolbarPinning>
+            <IgrGridToolbarHiding></IgrGridToolbarHiding>
+            <IgrGridToolbarExporter></IgrGridToolbarExporter>
         </IgrGridToolbarActions>
     </IgrGridToolbar>
 </IgrHierarchicalGrid>
@@ -278,7 +278,7 @@ _language: ja
 
 ```tsx
 <IgrGrid>
-    <IgrGridToolbar key="toolbar">
+    <IgrGridToolbar>
     </IgrGridToolbar>
 </IgrGrid>
 ```
@@ -309,8 +309,8 @@ _language: ja
 <!-- React -->
 <!-- ComponentStart: TreeGrid -->
 ```tsx
-<IgrTreeGrid data={data} primaryKey="ID" foreignKey="ParentID" autoGenerate="true">
-    <IgrGridToolbar key="toolbar">
+<IgrTreeGrid data={data} primaryKey="ID" foreignKey="ParentID" autoGenerate={true}>
+    <IgrGridToolbar>
     </IgrGridToolbar>
 </IgrTreeGrid>
 ```
@@ -365,7 +365,7 @@ _language: ja
 <!-- ComponentStart: HierarchicalGrid -->
 ```tsx
 <IgrHierarchicalGrid>
-    <IgrGridToolbar key="toolbar">
+    <IgrGridToolbar>
     </IgrGridToolbar>
 </IgrHierarchicalGrid>
 ```
@@ -374,7 +374,7 @@ _language: ja
 
 デフォルトの各 UI コンポーネントの詳細については、以下の**機能**セクションを読み続けてください。
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 <!-- ComponentStart: HierarchicalGrid -->
 ## 子グリッド付きのツールバー
 
@@ -400,9 +400,9 @@ IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動�
 ```
 <!-- end: Angular -->
 
-<!-- WebComponents -->
+<!-- WebComponents, React -->
 `{ComponentSelector}` の子グリッドの実装方法および DI スコープの動作には制限があるため、`{RowIslandSelector}` 内でツールバー コンポーネントを定義するには、`ToolbarTemplate` 入力プロパティを使用します。これにより、子グリッドが独立したツールバー インスタンスを作成することができます。
-<!-- end: WebComponents -->
+<!-- end: WebComponents, React -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- WebComponents -->
@@ -456,8 +456,10 @@ igRegisterScript("RowIslandToolbarTemplate", () => {
 }, false);
 ```
 
+<!-- React -->
+<!-- ComponentStart: HierarchicalGrid -->
 ```tsx
-function rowIslandToolbarTemplate = () => {
+const rowIslandToolbarTemplate = (ctx: IgrGridToolbarTemplateContext) => {
     return (
         <IgrGridToolbar>
             <IgrGridToolbarActions>
@@ -476,7 +478,9 @@ function rowIslandToolbarTemplate = () => {
     </IgrRowIsland>
 </IgrHierarchicalGrid>
 ```
-<!-- end: Angular, WebComponents -->
+<!-- end: React -->
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: Angular, WebComponents, React -->
 
 ## 機能
 
@@ -528,9 +532,9 @@ function rowIslandToolbarTemplate = () => {
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-<IgrGridToolbar key="toolbar">
-    <IgrGridToolbarTitle key="toolbarTitle">
-        <span key="toolbarTitleText">Grid toolbar title<span>
+<IgrGridToolbar>
+    <IgrGridToolbarTitle>
+        <span>Grid toolbar title<span>
     </IgrGridToolbarTitle>
 </IgrGridToolbar>
 ```
@@ -594,8 +598,8 @@ function rowIslandToolbarTemplate = () => {
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-<IgrGridToolbar key="toolbar">
-    <IgrGridToolbarActions key="toolbarActions">
+<IgrGridToolbar>
+    <IgrGridToolbarActions>
 
     </IgrGridToolbarActions>
 </IgrGridToolbar>
@@ -713,9 +717,9 @@ constructor() {
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-<IgrGridToolbar key="toolbar">
-    <IgrGridToolbarActions key="toolbarActions">
-        <IgrGridToolbarPinning key="pinning" title="Grid pinned columns" prompt="Filter column collection" columnListHeight="400px"></IgrGridToolbarPinning>
+<IgrGridToolbar>
+    <IgrGridToolbarActions>
+        <IgrGridToolbarPinning title="Grid pinned columns" prompt="Filter column collection" columnListHeight="400px"></IgrGridToolbarPinning>
     </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
@@ -774,9 +778,9 @@ constructor() {
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-<IgrGridToolbar key="toolbar">
-    <IgrGridToolbarActions key="toolbarActions">
-        <IgrGridToolbarHiding key="hiding" title="Grid column hiding" prompt="Filter column collection" columnListHeight="400px"></IgrGridToolbarHiding>
+<IgrGridToolbar>
+    <IgrGridToolbarActions>
+        <IgrGridToolbarHiding title="Grid column hiding" prompt="Filter column collection" columnListHeight="400px"></IgrGridToolbarHiding>
     </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
@@ -826,9 +830,9 @@ constructor() {
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-<IgrGridToolbar key="toolbar">
-    <IgrGridToolbarActions key="toolbarActions">
-        <IgrGridToolbarAdvancedFiltering key="advancedFiltering"></IgrGridToolbarAdvancedFiltering>
+<IgrGridToolbar>
+    <IgrGridToolbarActions>
+        <IgrGridToolbarAdvancedFiltering></IgrGridToolbarAdvancedFiltering>
     </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
@@ -924,9 +928,9 @@ export class AppModule { ... }
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-<IgrGridToolbar key="toolbar">
-    <IgrGridToolbarActions key="toolbarActions">
-        <IgrGridToolbarExporter key="export" exportCSV="true" exportExcel="true" filename="exported_data"></IgrGridToolbarExporter>
+<IgrGridToolbar>
+    <IgrGridToolbarActions>
+        <IgrGridToolbarExporter exportCSV={true} exportExcel={true} filename="exported_data"></IgrGridToolbarExporter>
     </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
@@ -963,7 +967,7 @@ constructor() {
 <!-- end: WebComponents -->
 
 ```tsx
-function configureExport(evt: IgrGridToolbarExportEventArgs) {
+const configureExport = (evt: IgrGridToolbarExportEventArgs) => {
     const args = evt.detail;
     const options: IgrExporterOptionsBase = args.options;
 
@@ -973,7 +977,7 @@ function configureExport(evt: IgrGridToolbarExportEventArgs) {
     });
 }
 
-<{ComponentSelector} toolbarExporting={configureExport}>
+<{ComponentSelector} onToolbarExporting={configureExport}>
 </{ComponentSelector}>
 ```
 
@@ -1062,7 +1066,7 @@ public configureExport(evt: CustomEvent<IgcGridToolbarExportEventArgs>) {
 <!-- end: WebComponents -->
 
 ```tsx
-function configureExport(evt: IgrGridToolbarExportEventArgs) {
+const configureExport = (evt: IgrGridToolbarExportEventArgs) => {
     const args = evt.detail;
     const options: IgrExporterOptionsBase = args.options;
 
@@ -1072,7 +1076,7 @@ function configureExport(evt: IgrGridToolbarExportEventArgs) {
     });
 }
 
-<{ComponentSelector} toolbarExporting={configureExport}>
+<{ComponentSelector} onToolbarExporting={configureExport}>
 </{ComponentSelector}>
 ```
 
@@ -1117,7 +1121,7 @@ public configureExport(evt: CustomEvent<IgcGridToolbarExportEventArgs>) {
 <!-- end: WebComponents -->
 
 ```tsx
-function configureExport(evt: IgrGridToolbarExportEventArgs) {
+const configureExport = (evt: IgrGridToolbarExportEventArgs) => {
     const args = evt.detail;
     const options: IgrExporterOptionsBase = args.options;
 
@@ -1127,7 +1131,7 @@ function configureExport(evt: IgrGridToolbarExportEventArgs) {
     });
 }
 
-<{ComponentSelector} toolbarExporting={configureExport}>
+<{ComponentSelector} onToolbarExporting={configureExport}>
 </{ComponentSelector}>
 ```
 
@@ -1227,14 +1231,14 @@ igRegisterScript("ConfigureExport", (evt) => {
 ```tsx
 <{ComponentSelector}>
     <IgrGridToolbar>
-        <IgrGridToolbarTitle key="toolbarTitle">
-            <span key="toolbarTitleText">title<span>
+        <IgrGridToolbarTitle>
+            <span>Custom Title<span>
         </IgrGridToolbarTitle>
         {/*
             Everything between the toolbar tags except the default toolbar components
             will be projected as custom content.
         */}
-        <IgrGridToolbarActions key="toolbarActions">
+        <IgrGridToolbarActions>
         </IgrGridToolbarActions>
     </IgrGridToolbar>
 </{ComponentSelector}>

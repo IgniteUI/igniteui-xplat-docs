@@ -48,7 +48,7 @@ The following demonstrates how to configure editing on the data grid and committ
 ```
 
 ```ts
-import { IgrDataGrid } from 'igniteui-react-grids';
+import { IgrDataGrid } from 'igniteui-react-data-grids';
 
 onCommitClick = () => {
     this._grid.commitEdits();
@@ -66,7 +66,7 @@ onCommitClick = () => {
 ```
 
 ```ts
-import { IgcDataGridComponent } from 'igniteui-webcomponents-grids';
+import { IgcDataGridComponent } from 'igniteui-webcomponents-data-grids';
 
 this.onCommitClick = this.onCommitClick.bind(this);
 
@@ -107,7 +107,7 @@ The following demonstrates how to revert changes while batch updating is enabled
 ```
 
 ```ts
-import { IgrDataGrid } from 'igniteui-react-grids';
+import { IgrDataGrid } from 'igniteui-react-data-grids';
 
 onUndoClick = () => {
     this._grid.undo();
@@ -136,7 +136,7 @@ onRedoClick = () => {
 ```
 
 ```ts
-import { IgcDataGridComponent } from 'igniteui-webcomponents-grids';
+import { IgcDataGridComponent } from 'igniteui-webcomponents-data-grids';
 
 public onUndoClick() {
     this.grid.undo();
@@ -202,7 +202,7 @@ The following demonstrates how incorporate error by checking if cells are empty 
 ```
 
 ```ts
-import { IgrGridDataCommittingEventArgs } from 'igniteui-react-grids';
+import { IgrGridDataCommittingEventArgs } from 'igniteui-react-data-grids';
 import { TransactionType } from 'igniteui-react-core'
 
 onCellValueChanging = (s: IgrDataGrid, e: IgrGridCellValueChangingEventArgs) => {
@@ -228,7 +228,7 @@ onDataCommitting = (s: IgrDataGrid, e: IgrGridDataCommittingEventArgs) => {
 ```
 
 ```ts
-import { IgcGridDataCommittingEventArgs } from 'igniteui-webcomponents-grids';
+import { IgcGridDataCommittingEventArgs } from 'igniteui-webcomponents-data-grids';
 import { TransactionType } from 'igniteui-webcomponents-core'
 
 this.onCellValueChanging = this.onCellValueChanging.bind(this);

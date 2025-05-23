@@ -78,7 +78,7 @@ dataSource={this.data}>
 
 <!--React-->
 ```ts
-import { PinnedPositions } from 'igniteui-react-grids';
+import { PinnedPositions } from 'igniteui-react-data-grids';
 
 public onButtonPinLeft = (e: any) => {
 
@@ -172,7 +172,7 @@ scrollbar-style="thin"
 
 <!--WebComponents-->
 ```ts
-import { PinnedPositions } from 'igniteui-webcomponents-grids';
+import { PinnedPositions } from 'igniteui-webcomponents-data-grids';
 
 onButtonPinLeft() {
 
@@ -296,8 +296,8 @@ onButtonUnPin() {
 
 <!--React-->
 ```ts
-import { IgrDataGrid } from 'igniteui-react-grids';
-import { IgrDataGridToolbar } from 'igniteui-react-grids';
+import { IgrDataGrid } from 'igniteui-react-data-grids';
+import { IgrDataGridToolbar } from 'igniteui-react-data-grids';
 
 public grid : IgrDataGrid;
 public toolbar: IgrDataGridToolbar;
@@ -348,8 +348,8 @@ public onToolbarRef(toolbar: IgrDataGridToolbar) {
 
 <!--WebComponents-->
 ```ts
-import { IgcDataGrid } from 'igniteui-webcomponents-grids';
-import { IgcDataGridToolbar } from 'igniteui-webcomponents-grids';
+import { IgcDataGrid } from 'igniteui-webcomponents-data-grids';
+import { IgcDataGridToolbar } from 'igniteui-webcomponents-data-grids';
 
 private grid: IgcDataGridComponent;
 private toolbar: IgcToolbarComponent;

@@ -171,7 +171,7 @@ export class AppModule {}
 ```
 
 ```tsx
-import { IgrGridModule } from "igniteui-react-grids";
+import { IgrGridModule } from "igniteui-react-data-grids";
 IgrGridModule.register();
 ```
 

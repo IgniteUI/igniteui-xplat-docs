@@ -33,6 +33,32 @@ _language: ja
 
 <div class="divider--half"></div>
 
+# {Platform} チャートト レンドライン レイヤー
+
+`TrendLineLayer` は、ターゲット シリーズに対して単一のトレンドライン タイプを表示するように設計されたシリーズ タイプです。これと既存のシリーズ タイプの既存のトレンド ライン機能との違いは、`TrendLineLayer` はシリーズ タイプであるため、チャートの `Series` コレクションに複数のトレンド ラインを追加して、同じシリーズに複数のトレンド ラインを添付できることです。また、これまでできなかったトレンドラインを凡例に表示する ことも可能です。
+
+### トレンドライン レイヤーの使用
+
+`TrendLineLayer` が正しく動作するには、`TargetSeries` と `TrendLineType` を指定する必要があります。利用可能なさまざまなトレンドラインのタイプは、シリーズで利用可能なトレンドラインと同じです。
+
+凡例に `TrendLineLayer` を表示する場合は、`UseLegend` プロパティを **true** に設定します。
+
+### トレンドライン レイヤーのスタイル設定
+
+デフォルトでは、`TrendLineLayer` は `TargetSeries` と同じ色の破線で描画されます。これは、`TrendLineLayer` のさまざまなスタイル設定プロパティを使用して構成できます。
+
+描画されるトレンドラインの色を変更するには、`Brush` プロパティを設定します。あるいは、`UseIndex` プロパティを **true** に設定することもできます。これにより、`TrendLineLayer` がチャートの `Series` コレクションに配置されているインデックスに基づいて、チャートの `Brushes` パレットからブラシが取得されます。
+
+`TrendLineLayer` の表示方法は、`AppearanceMode` プロパティと `ShiftAmount` プロパティを使用して変更することもできます。`ShiftAmount` は、-1.0 から 1.0 の範囲の値を受け取り、「Shift」 で終わるオプションに適用する 「シフト」 の量を決定します。
+
+`AppearanceMode` プロパティのオプションは次のとおりです。
+
+- `Auto`: デフォルトでは DashPattern 列挙体になります。
+- `BrightnessShift`: トレンドラインは `TargetSeries` ブラシを取得し、指定された `ShiftAmount` に基づいて明るさを変更します。
+- `DashPattern`: トレンドラインは破線として表示されます。ダッシュの頻度は、`TrendLineLayer` の `DashArray` プロパティを使用して変更できます。
+- `OpacityShift`: トレンドラインは `TargetSeries` ブラシを取得し、指定された `ShiftAmount` に基づいて不透明度を変更します。
+- `SaturationShift`: トレンドラインは `TargetSeries` ブラシを取得し、指定された `ShiftAmount` に基づいてその彩度を変更します。
+
 ## その他のリソース
 
 関連するチャート機能の詳細については、以下のトピックを参照してください。

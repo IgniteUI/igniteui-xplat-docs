@@ -37,12 +37,12 @@ You can sort by a single or multiple column ascending or descending in the {Plat
 
 <!--React-->
 ```ts
-import { HeaderClickAction } from 'igniteui-react-grids';
+import { HeaderClickAction } from 'igniteui-react-data-grids';
 ```
 
 <!--WebComponents-->
 ```ts
-import { HeaderClickAction } from 'igniteui-webcomponents-grids';
+import { HeaderClickAction } from 'igniteui-webcomponents-data-grids';
 ```
 
 ```tsx
@@ -71,7 +71,7 @@ import { HeaderClickAction } from 'igniteui-webcomponents-grids';
 
 ## Sorting through API
 ```ts
-import { IgrColumnSortDescription } from 'igniteui-react-grids';
+import { IgrColumnSortDescription } from 'igniteui-react-data-grids';
 import { ListSortDirection } from 'igniteui-react-core';
 ```
 
@@ -87,7 +87,7 @@ this.grid.sortDescriptions.add(colSortDesc);
 ```
 
 ```ts
-import { IgcColumnSortDescription } from 'igniteui-webcomponents-grids';
+import { IgcColumnSortDescription } from 'igniteui-webcomponents-data-grids';
 import { ListSortDirection } from 'igniteui-webcomponents-core';
 
 let grid1 = (document.getElementById("grid") as IgcDataGridComponent);

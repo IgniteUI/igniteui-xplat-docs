@@ -159,11 +159,12 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 
 <!-- React -->
 ```tsx
-function onSorting(grid: {ComponentName}, event: IgrSortingEventArgs) {
+function onSorting(args: IgrSortingEventArgs) {
+    const grid = args.target as {ComponentSelector};
     grid.endEdit(true);
 }
 
-<{ComponentSelector} data={localData} primaryKey="ProductID" sorting={onSorting}>
+<{ComponentSelector} data={localData} primaryKey="ProductID" onSorting={onSorting}>
 </{ComponentSelector}>
 ```
 <!-- end: React -->

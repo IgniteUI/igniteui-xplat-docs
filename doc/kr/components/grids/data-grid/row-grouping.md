@@ -20,7 +20,7 @@ _language: kr
 ## API를 사용한 열 그룹화
 
 ```ts
-import { IgrColumnGroupDescription } from 'igniteui-react-grids';
+import { IgrColumnGroupDescription } from 'igniteui-react-data-grids';
 import { ListSortDirection } from 'igniteui-react-core';
 ```
 
@@ -43,7 +43,7 @@ public componentDidMount() {
 ```
 
 ```ts
-import { IgcColumnGroupDescription } from 'igniteui-webcomponents-grids';
+import { IgcColumnGroupDescription } from 'igniteui-webcomponents-data-grids';
 import { ListSortDirection } from 'igniteui-webcomponents-core';
 
 const desc = new IgcColumnGroupDescription();

@@ -69,9 +69,9 @@ _language: ja
 ```
 
 ```tsx
-<{ComponentSelector} data={this.nwindData} autoGenerate="false" ref={this.gridRef} allowFiltering="true">
-    <IgrColumn field="ProductName" dataType="String"></IgrColumn>
-    <IgrColumn field="UnitPrice" data-type="Number" filterable="false"></IgrColumn>
+<{ComponentSelector} data={nwindData} autoGenerate={false} ref={gridRef} allowFiltering={true}>
+    <IgrColumn field="ProductName" dataType="string"></IgrColumn>
+    <IgrColumn field="UnitPrice" dataType="number" filterable={false}></IgrColumn>
 </{ComponentSelector}>
 ```
 
@@ -99,7 +99,7 @@ _language: ja
 
 <!-- React -->
 ```tsx
-<{ComponentSelector} data={nwindData} autoGenerate="false" ref={gridRef} allowAdvancedFiltering="true">
+<{ComponentSelector} data={nwindData} autoGenerate={false} ref={gridRef} allowAdvancedFiltering={true}>
 </{ComponentSelector}>
 ```
 <!-- end: React -->
@@ -142,10 +142,10 @@ _language: ja
 
 <!-- React -->
 ```tsx
-<{ComponentSelector} autoGenerate="false" allowFiltering="true">
-    <IgrColumn field="ProductName" dataType="String"></IgrColumn>
-    <IgrColumn field="Price" dataType="Number"></IgrColumn>
-    <IgrColumn field="Discontinued" dataType="Boolean" filterable="false"></IgrColumn>
+<{ComponentSelector} autoGenerate={false} allowFiltering={true}>
+    <IgrColumn field="ProductName" dataType="string"></IgrColumn>
+    <IgrColumn field="Price" dataType="number"></IgrColumn>
+    <IgrColumn field="Discontinued" dataType="boolean" filterable={false}></IgrColumn>
 </{ComponentSelector}>
 ```
 <!-- end: React -->
@@ -390,37 +390,32 @@ constructor() {
 ```
 
 ```tsx
-private filteringExpressions: IgrFilteringExpressionsTree;
-
-constructor(props: any) {
-    super(props);
-
-    const gridFilteringExpressionsTree = { operator: FilteringLogic.And } as IgrFilteringExpressionsTree;
-    const productFilteringExpressionsTree = { 
+const filteringExpressions: IgrFilteringExpressionsTree = {
+  operator: FilteringLogic.And,
+  filteringOperands: [
+    {
         fieldName: "ProductName",
         conditionName: "contains",
         ignoreCase: true,
         searchVal: "Chai"
-    } as IgrFilteringExpression;
-
-    const quantityFilteringExpressionsTree = { 
+    },
+    {
         fieldName: "QuantityPerUnit",
         conditionName: "contains",
         ignoreCase: true,
         searchVal: "1"
-    } as IgrFilteringExpression;
+    },
+  ],
+};
 
-    gridFilteringExpressionsTree.filteringOperands = [ productFilteringExpressionsTree, quantityFilteringExpressionsTree ];
-    this.filteringExpressions = gridFilteringExpressionsTree;
-}
-
-public render(): JSX.Element {
-    return (<{ComponentSelector}
-        filteringExpressionsTree={this.filteringExpressions}
+return (
+    <{ComponentSelector}
+        filteringExpressionsTree={filteringExpressions}
         аllowFiltering={true}
         filterMode="quickFilter">
-    </{ComponentSelector}>);
-}
+    </{ComponentSelector}>
+);
+
 ```
 
 ### フィルター ロジック

@@ -133,10 +133,10 @@ They are added inside the `{ComponentName}` and this is all needed to have an `A
 <!-- React -->
 <!-- ComponentStart: Grid -->
 ```tsx
-<{ComponentSelector} id="grid" rowEditable="true" primaryKey="ID">
+<{ComponentSelector} rowEditable={true} primaryKey="ID">
     <IgrColumn field="field">
     </IgrColumn>
-    <IgrActionStrip name="actionStrip">
+    <IgrActionStrip>
         <IgrGridPinningActions></IgrGridPinningActions>
         <IgrGridEditingActions></IgrGridEditingActions>
     </IgrActionStrip>
@@ -146,10 +146,10 @@ They are added inside the `{ComponentName}` and this is all needed to have an `A
 
 <!-- ComponentStart: TreeGrid -->
 ```tsx
-<{ComponentSelector} id="treeGrid" rowEditable="true" primaryKey="ID">
+<{ComponentSelector} rowEditable={true} primaryKey="ID">
     <IgrColumn field="field">
     </IgrColumn>
-    <IgrActionStrip name="actionStrip">
+    <IgrActionStrip>
         <IgrGridPinningActions></IgrGridPinningActions>
         <IgrGridEditingActions></IgrGridEditingActions>
     </IgrActionStrip>
@@ -159,10 +159,10 @@ They are added inside the `{ComponentName}` and this is all needed to have an `A
 
 <!-- ComponentStart: HierarchicalGrid -->
 ```tsx
-<IgrHierarchicalGrid id="hierarchicalGrid" rowEditable="true" primaryKey="ID">
+<IgrHierarchicalGrid rowEditable={true} primaryKey="ID">
     <IgrColumn field="field">
     </IgrColumn>
-    <IgrActionStrip name="actionStrip">
+    <IgrActionStrip>
         <IgrGridPinningActions></IgrGridPinningActions>
         <IgrGridEditingActions></IgrGridEditingActions>
     </IgrActionStrip>
@@ -263,9 +263,9 @@ These components expose templates giving flexibility for customization. For inst
 <!-- ComponentStart: Grid, TreeGrid -->
 ```tsx
 <{ComponentSelector}>
-    <IgrActionStrip name="actionStrip">
+    <IgrActionStrip>
         <IgrGridPinningActions></IgrGridPinningActions>
-        <IgrGridEditingActions editRow="true" deleteRow="true"></IgrGridEditingActions>
+        <IgrGridEditingActions editRow={true} deleteRow={true}></IgrGridEditingActions>
     </IgrActionStrip>
 </{ComponentSelector}>
 ```
@@ -274,9 +274,9 @@ These components expose templates giving flexibility for customization. For inst
 <!-- ComponentStart: HierarchicalGrid -->
 ```tsx
 <IgrHierarchicalGrid>
-    <IgrActionStrip name="actionStrip">
+    <IgrActionStrip>
         <IgrGridPinningActions></IgrGridPinningActions>
-        <IgrGridEditingActions editRow="true" deleteRow="true"></IgrGridEditingActions>
+        <IgrGridEditingActions editRow={true} deleteRow={true}></IgrGridEditingActions>
     </IgrActionStrip>
 </IgrHierarchicalGrid>
 ```

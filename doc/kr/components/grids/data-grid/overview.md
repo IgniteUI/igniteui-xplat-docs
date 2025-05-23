@@ -29,15 +29,15 @@ _language: kr
 
 
 ```ts
-import { IgrDataGridModule } from 'igniteui-react-grids';
-import { IgrDataGrid } from 'igniteui-react-grids';
+import { IgrDataGridModule } from 'igniteui-react-data-grids';
+import { IgrDataGrid } from 'igniteui-react-data-grids';
 
 IgrDataGridModule.register();
 ```
 ```ts
 import { ModuleManager } from 'igniteui-webcomponents-core';
-import { IgcDataGridModule } from 'igniteui-webcomponents-grids';
-import { IgcDataGridComponent } from 'igniteui-webcomponents-grids';
+import { IgcDataGridModule } from 'igniteui-webcomponents-data-grids';
+import { IgcDataGridComponent } from 'igniteui-webcomponents-data-grids';
 
 ModuleManager.register(
     IgcDataGridModule
@@ -150,9 +150,9 @@ grid1.dataSource = data;
 ```
 
 ```ts
-import { IgcTextColumnComponent } from 'igniteui-webcomponents-grids';
-import { IgcNumericColumnComponent } from 'igniteui-webcomponents-grids';
-import { IgcDateTimeColumnComponent } from 'igniteui-webcomponents-grids';
+import { IgcTextColumnComponent } from 'igniteui-webcomponents-data-grids';
+import { IgcNumericColumnComponent } from 'igniteui-webcomponents-data-grids';
+import { IgcDateTimeColumnComponent } from 'igniteui-webcomponents-data-grids';
 
 let grid1 = (document.getElementById("grid") as IgcDataGridComponent);
 grid1.dataSource = data;

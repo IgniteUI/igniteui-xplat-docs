@@ -1,5 +1,5 @@
 ---
-title: 	{Platform} {ComponentTitle} ライブ データ更新 - {ProductName}
+title: {Platform} {ComponentTitle} ライブ データ更新 - {ProductName}
 _description: {ProductName} {ComponentTitle} が、ユーザーの操作に応答し続けている間、1 秒あたり数千の更新を処理する方法を確認します。
 _keywords: {Platform} {ComponentKeywords} updates, {Platform} live data, infragistics, 更新, ライブ データ, インフラジスティックス
 sharedComponents: ["Grid", "TreeGrid"]
@@ -43,7 +43,7 @@ _language: ja
 
 <!-- React -->
 ```tsx
-<{ComponentSelector} id="grid1"></{ComponentSelector}>
+<{ComponentSelector}></{ComponentSelector}>
 ```
 <!-- end: React -->
 
@@ -77,21 +77,21 @@ public startUpdate() {
 
 <!-- React -->
 ```typescript
-function startUpdate(frequency) {
-  const timer = setInterval(() => {
-    setData(prevData => FinancialDataClass.updateRandomPrices(prevData));
+const startUpdate = () => {
+  timer.current = setInterval(() => {
+    setData((oldData) => FinancialData.updateAllPrices(oldData));
   }, frequency);
 
-  setStartButtonDisabled(true);
-  setShowChartButtonDisabled(true);
-  setStopButtonDisabled(false);
+  setIsStartButtonDisabled(true);
+  setIsStopButtonDisabled(false);
+  setIsChartButtonDisabled(true);
 }
 ```
 
 データ フィールド値の変更またはデータ オブジェクト / データ コレクション参照の変更により、対応するパイプがトリガーされます。ただし、これは、[複雑なデータ オブジェクト](../data-grid.md#complex-data-binding)にバインドされている列には当てはまりません。この状況を解決するには、プロパティを含むデータ オブジェクトの新しいオブジェクト参照を提供します。例:
 
 ```tsx
-<{ComponentSelector} id="grid1">
+<{ComponentSelector}>
     <IgrColumn field="price.usd"></IgrColumn>
 </{ComponentSelector}>
 ```
@@ -136,7 +136,7 @@ private updateData(data: any[]) {
 
 <!-- React -->
 ```typescript
-private updateData(data: any[]) {
+const updateData = (data: any[]) => {
     const newData = []
     for (const rowData of data) {
         rowData.price = { usd: getUSD(), eur: getEUR() };

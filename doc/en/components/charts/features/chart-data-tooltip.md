@@ -106,6 +106,15 @@ You can change the default decimal display of values within the **DataToolTip** 
 
 `sample="/charts/financial-chart/data-tooltip-formatting-currency", height="450", alt="{Platform} Financial Chart Data Tooltip Formatting Currency Example"`
 
+## Layout Mode
+
+Legend items can be positioned in a vertical or table structure via the `LayoutMode` property. The default value is `Table`, which retains the same look and feel as seen in previous releases.
+
+eg.
+
+<img src="../../../images/general/layout_mode.png" />
+
+
 ## {Platform} Data Tooltip Styling
 
 The **DataToolTip** provides properties for styling each type of column. Each of these properties begins with Title, Label, Value, or Units, and you can style the text's color, font, and margin. For example, if you wanted to set the text color of each of these, you would set the `DataToolTipTitleTextColor`, `DataToolTipLabelTextColor`, `DataToolTipValueTextColor`, and `DataToolTipUnitsTextColor` properties.

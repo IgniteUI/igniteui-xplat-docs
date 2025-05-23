@@ -29,8 +29,8 @@ You can also animate the column movements, if you wish. This can be done by sett
 The following demonstrates how to implement column moving in the {ProductName} Data Grid with deferred column moving, animations enabled, and a 5px wide separator:
 
 ```ts
-import { ColumnMovingAnimationMode } from 'igniteui-react-grids';
-import { ColumnMovingMode } from 'igniteui-react-grids';
+import { ColumnMovingAnimationMode } from 'igniteui-react-data-grids';
+import { ColumnMovingMode } from 'igniteui-react-data-grids';
 ```
 
 ```tsx
@@ -52,8 +52,8 @@ import { ColumnMovingMode } from 'igniteui-react-grids';
 ```
 
 ```ts
-import { ColumnMovingAnimationMode } from 'igniteui-webcomponents-grids';
-import { ColumnMovingMode } from 'igniteui-webcomponents-grids';
+import { ColumnMovingAnimationMode } from 'igniteui-webcomponents-data-grids';
+import { ColumnMovingMode } from 'igniteui-webcomponents-data-grids';
 
 let grid1 = (document.getElementById("grid") as IgcDataGridComponent);
 

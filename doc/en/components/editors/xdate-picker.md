@@ -15,7 +15,7 @@ The XDate Picker component allows users to use a drop-down calendar UI allowing 
 
 This sample demonstrates how to create `XDatePicker` with option to select a single date.
 
-`sample="/editors/date-picker/overview", height="350", alt="{Platform} XDate Picker Example"`
+`sample="/editors/x-date-picker/overview", height="350", alt="{Platform} XDate Picker Example"`
 
 
 
@@ -90,7 +90,7 @@ Users can also customize the XDate Picker's font by using the various text prope
 
 The following example demonstrates how to enable editing in the `XDatePicker`.
 
-`sample="/editors/date-picker/editing", height="300", alt="{Platform} XDate Picker Editing Example"`
+`sample="/editors/x-date-picker/editing", height="300", alt="{Platform} XDate Picker Editing Example"`
 
 
 
@@ -100,7 +100,7 @@ The following example demonstrates how to enable editing in the `XDatePicker`.
 
 The following example demonstrates how to restrict selected dates in the `XDatePicker`.
 
-`sample="/editors/date-picker/date-limits", height="360", alt="{Platform} XDate Picker Date Limits Example"`
+`sample="/editors/x-date-picker/date-limits", height="360", alt="{Platform} XDate Picker Date Limits Example"`
 
 
 
@@ -110,7 +110,7 @@ The following example demonstrates how to restrict selected dates in the `XDateP
 
 The following example demonstrates how apply a long date in the `XDatePicker`.
 
-`sample="/editors/date-picker/format", height="350", alt="{Platform} XDate Picker Format Example"`
+`sample="/editors/x-date-picker/format", height="350", alt="{Platform} XDate Picker Format Example"`
 
 
 
@@ -120,7 +120,7 @@ The following example demonstrates how apply a long date in the `XDatePicker`.
 
 The following example demonstrates how combine multiple `XDatePicker` controls.
 
-`sample="/editors/date-picker/range", height="300", alt="{Platform} XDate Picker Date Range Example"`
+`sample="/editors/x-date-picker/range", height="300", alt="{Platform} XDate Picker Date Range Example"`
 
 
 

@@ -57,8 +57,8 @@ The following demonstrates how to implement the Column Chooser Toolbar UI for th
 ```
 
 ```ts
-import { IgrDataGrid } from 'igniteui-react-grids';
-import { IgrDataGridToolbar } from 'igniteui-react-grids';
+import { IgrDataGrid } from 'igniteui-react-data-grids';
+import { IgrDataGridToolbar } from 'igniteui-react-data-grids';
 
 public grid : IgrDataGrid;
 public toolbar: IgrDataGridToolbar;
@@ -109,9 +109,9 @@ public onToolbarRef(toolbar: IgrDataGridToolbar) {
 ```
 
 ```ts
-import { IgcDataGrid } from 'igniteui-webcomponents-grids';
-import { IgcDataGridToolbar } from 'igniteui-webcomponents-grids';
-import { ColumnMovingAnimationMode } from 'igniteui-webcomponents-grids';
+import { IgcDataGrid } from 'igniteui-webcomponents-data-grids';
+import { IgcDataGridToolbar } from 'igniteui-webcomponents-data-grids';
+import { ColumnMovingAnimationMode } from 'igniteui-webcomponents-data-grids';
 
 private grid: IgcDataGridComponent;
 private toolbar: IgcDataGridToolbarComponent;
@@ -195,9 +195,9 @@ The following demonstrates how to implement the Column Chooser UI for the Data G
 ```
 
 ```ts
-import { IgrDataGrid } from 'igniteui-react-grids';
-import { IgrColumnChooser } from 'igniteui-react-grids';
-import { ColumnMovingAnimationMode } from 'igniteui-react-grids';
+import { IgrDataGrid } from 'igniteui-react-data-grids';
+import { IgrColumnChooser } from 'igniteui-react-data-grids';
+import { ColumnMovingAnimationMode } from 'igniteui-react-data-grids';
 
 public grid : IgrDataGrid;
 public columnChooser: IgrColumnChooser;
@@ -241,9 +241,9 @@ public onColumnChooserRef(columnChooser: IgrColumnChooser) {
 ```
 
 ```ts
-import { IgcDataGrid } from 'igniteui-webcomponents-grids';
-import { IgcColumnChooser } from 'igniteui-webcomponents-grids';
-import { ColumnMovingAnimationMode } from 'igniteui-webcomponents-grids';
+import { IgcDataGrid } from 'igniteui-webcomponents-data-grids';
+import { IgcColumnChooser } from 'igniteui-webcomponents-data-grids';
+import { ColumnMovingAnimationMode } from 'igniteui-webcomponents-data-grids';
 
 private grid: IgcDataGridComponent;
 private columnChooser: IgcColumnChooserComponent;

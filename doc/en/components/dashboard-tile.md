@@ -28,7 +28,7 @@ npm install {PackageCharts}
 npm install {PackageCore}
 npm install {PackageDashboards}
 npm install {PackageGauges}
-npm install {PackageGrids}
+npm install {PackageDataGrids}
 npm install {PackageInputs}
 npm install {PackageLayouts}
 npm install {PackageMaps}

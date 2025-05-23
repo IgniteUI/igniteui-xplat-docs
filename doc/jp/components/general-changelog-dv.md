@@ -16,6 +16,52 @@ _language: ja
 
 * [Ignite UI for Angular 変更ログ (GitHub)](https://github.com/IgniteUI/igniteui-angular/blob/master)
 
+## **25.1**
+
+### {PackageCharts} (チャート)
+
+- 新しい[チャート データ注釈](charts/features/chart-data-annotations.md)
+  - データ注釈バンド レイヤー (ベータ版)
+  - データ注釈ライン レイヤー (ベータ版)
+  - データ注釈矩形レイヤー (ベータ版)
+  - データ注釈スライス レイヤー (ベータ版)
+  - データ注釈ストリップ レイヤー (ベータ版)
+
+- [データ ツールチップ](charts/features/chart-data-tooltip.md)と[データ 凡例](charts/features/chart-data-legend.md)では、ツールチップまたは凡例のコンテンツをテーブルまたは垂直レイアウト構造でレイアウトするために使用できる新しい `LayoutMode` プロパティが公開されています。 
+
+- チャートの `DefaultInteraction` プロパティが更新され、新しい列挙体 `DragSelect` が含まれるようになりました。これにより、ドラッグされたプレビュー Rect は、その中に含まれるポイントを選択します。 (ベータ版)
+
+- [ValueOverlay と ValueLayer](charts/features/chart-overlays.md) は、上記にリストした新しい [チャート データ注釈](charts/features/chart-data-annotations.md)に加えて、プロット領域に追加の注釈テキストをオーバーレイするために使用できる `OverlayText` プロパティを公開するようになりました。これらの注釈の外観は、OverlayText プレフィックスが付いた多くのプロパティを使用して構成できます。たとえば、`OverlayTextBrush` プロパティはオーバーレイ テキストの色を構成します。 (ベータ版)
+
+- 新しい[トレンドライン レイヤー](charts/features/chart-trendlines.md) シリーズ タイプを使用すると、トレンド ライン レイヤーごとに 1 つのトレンド ラインを特定のシリーズに適用できます。これにより、チャートに複数の [TrendlineLayer](charts/features/chart-overlays.md) シリーズ タイプを使用できるため、単一のシリーズで複数のトレンド ラインを使用できるようになります。
+
+### {PackageDashboards} (ダッシュボード)
+
+- `IgxDashboardTile` では、ソート、グループ化、フィルタリング、選択などの集計を DataGrid ビューからチャート視覚化に伝播できるようになりました。これは現在、`IgxDashboardTile` の `DataSource` を `IgxLocalDataSource` のインスタンスにバインドすることによってサポートされています。
+
+### {PackageGrids}
+
+**重大な変更**
+
+- 'igniteui-angular-grids' パッケージの名前が 'igniteui-angular-data-grids' に変更されました。
+
+### 機能拡張
+
+#### Toolbar
+- ツールバーから追加された値レイヤーが凡例に表示されるようになりました。
+- ズーム リセット ツールはズーム ドロップダウンに移動されました。
+
+#### Data Pie Chart
+- チャートは `GetOthersContext()` メソッドを公開するようになりました。これにより、Others (その他) スライスのコンテンツが返されます。
+
+### バグ修正
+
+| バグ番号 | コントロール | 説明      |
+|------------|---------|------------------|
+|37023|IgxDataChart|overflow: hidden が設定されている場合にツールチップが切り取られたり画面外に表示されたりする。
+|37244|Excel|カスタム データ検証が機能しない。.
+|37685|IgxSpreadsheet|Arial フォントで書式設定された数値が正しく描画されない。
+
 ## **{PackageVerChanges-24-2-FEB}**
 
 ### 機能拡張

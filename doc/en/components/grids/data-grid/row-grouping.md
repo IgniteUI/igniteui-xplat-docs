@@ -102,7 +102,7 @@ For your convenience, all above code snippets are combined into one code block b
 
 
 ```ts
-import { IgrColumnGroupDescription } from 'igniteui-react-grids';
+import { IgrColumnGroupDescription } from 'igniteui-react-data-grids';
 import { ListSortDirection } from 'igniteui-react-core';
 import { GroupHeaderDisplayMode } from 'igniteui-react-core';
 
@@ -132,7 +132,7 @@ public onLoad() {
 ```
 
 ```ts
-import { IgcIgcColumnGroupDescription } from 'igniteui-webcomponents-grids';
+import { IgcIgcColumnGroupDescription } from 'igniteui-webcomponents-data-grids';
 import { ListSortDirection } from 'igniteui-webcomponents-core';
 import { GroupHeaderDisplayMode } from 'igniteui-webcomponents-core';
 

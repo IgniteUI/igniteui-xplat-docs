@@ -48,14 +48,14 @@ _language: ja
 
 <!--React-->
 ```ts
-import { ColumnResizingMode } from 'igniteui-react-grids';
-import { ColumnResizingAnimationMode } from 'igniteui-react-grids';
+import { ColumnResizingMode } from 'igniteui-react-data-grids';
+import { ColumnResizingAnimationMode } from 'igniteui-react-data-grids';
 ```
 
 <!--WebComponents-->
 ```ts
-import { ColumnResizingMode } from 'igniteui-webcomponents-grids';
-import { ColumnResizingAnimationMode } from 'igniteui-webcomponents-grids';
+import { ColumnResizingMode } from 'igniteui-webcomponents-data-grids';
+import { ColumnResizingAnimationMode } from 'igniteui-webcomponents-data-grids';
 ```
 
 ```tsx

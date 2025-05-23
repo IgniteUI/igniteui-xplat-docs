@@ -13,6 +13,45 @@ _language: ja
 
 * バージョン 2024.2 以降、Ignite UI for Blazor ツールセットは .NET 9 をサポートします。.NET 9 の詳細については、[Microsoft サイト](https://learn.microsoft.com/ja-jp/dotnet/core/whats-new/dotnet-9/overview)をご確認ください。
 
+## **25.1**
+
+### {PackageCharts} (チャート)
+
+- 新しい[チャート データ注釈](charts/features/chart-data-annotations.md)
+  - データ注釈バンド レイヤー (ベータ版)
+  - データ注釈ライン レイヤー (ベータ版)
+  - データ注釈矩形レイヤー (ベータ版)
+  - データ注釈スライス レイヤー (ベータ版)
+  - データ注釈ストリップ レイヤー (ベータ版)
+
+- [データ ツールチップ](charts/features/chart-data-tooltip.md)と[データ 凡例](charts/features/chart-data-legend.md)では、ツールチップまたは凡例のコンテンツをテーブルまたは垂直レイアウト構造でレイアウトするために使用できる新しい `LayoutMode` プロパティが公開されています。 
+
+- チャートの `DefaultInteraction` プロパティが更新され、新しい列挙体 `DragSelect` が含まれるようになりました。これにより、ドラッグされたプレビュー Rect は、その中に含まれるポイントを選択します。 (ベータ版)
+
+- [ValueOverlay と ValueLayer](charts/features/chart-overlays.md) は、上記にリストした新しい [チャート データ注釈](charts/features/chart-data-annotations.md)に加えて、プロット領域に追加の注釈テキストをオーバーレイするために使用できる `OverlayText` プロパティを公開するようになりました。これらの注釈の外観は、OverlayText プレフィックスが付いた多くのプロパティを使用して構成できます。たとえば、`OverlayTextBrush` プロパティはオーバーレイ テキストの色を構成します。 (ベータ版)
+
+- 新しい[トレンドライン レイヤー](charts/features/chart-trendlines.md) シリーズ タイプを使用すると、トレンド ライン レイヤーごとに 1 つのトレンド ラインを特定のシリーズに適用できます。これにより、チャートに複数の [TrendlineLayer](charts/features/chart-overlays.md) シリーズ タイプを使用できるため、単一のシリーズで複数のトレンド ラインを使用できるようになります。
+
+### {PackageDashboards} (ダッシュボード)
+
+- `IgbDashboardTile` では、ソート、グループ化、フィルタリング、選択などの集計を DataGrid ビューからチャート視覚化に伝播できるようになりました。これは現在、`IgbDashboardTile` の `DataSource` を `IgbLocalDataSource` のインスタンスにバインドすることによってサポートされています。
+
+### 機能拡張
+
+#### Toolbar
+- ツールバーから追加された値レイヤーが凡例に表示されるようになりました。
+- ズーム リセット ツールはズーム ドロップダウンに移動されました。
+
+#### Data Pie Chart
+- チャートは `GetOthersContext()` メソッドを公開するようになりました。これにより、Others (その他) スライスのコンテンツが返されます。
+
+### バグ修正
+
+| バグ番号 | コントロール | 説明      |
+|------------|---------|------------------|
+|37023|IgbDataChart|overflow: hidden が設定されている場合にツールチップが切り取られたり画面外に表示されたりする。
+|37244|Excel|カスタム データ検証が機能しない。
+
 ## **{PackageVerChanges-24-2-APR}**
 
 ### 新しいコンポーネント

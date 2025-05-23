@@ -32,8 +32,8 @@ mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid","Infragistics.
 
 ```ts
 import './odatajs-4.0.0';
-import { IgrDataGridModule } from 'igniteui-react-grids';
-import { IgrDataGrid } from 'igniteui-react-grids';
+import { IgrDataGridModule } from 'igniteui-react-data-grids';
+import { IgrDataGrid } from 'igniteui-react-data-grids';
 import { ODataVirtualDataSource } from 'igniteui-react-datasources';
 
 IgrDataGridModule.register();
@@ -41,8 +41,8 @@ IgrDataGridModule.register();
 ```ts
 import './odatajs-4.0.0';
 import { ModuleManager } from 'igniteui-webcomponents-core';
-import { IgcDataGridModule } from 'igniteui-webcomponents-grids';
-import { IgcDataGridComponent } from 'igniteui-webcomponents-grids';
+import { IgcDataGridModule } from 'igniteui-webcomponents-data-grids';
+import { IgcDataGridComponent } from 'igniteui-webcomponents-data-grids';
 import { ODataVirtualDataSource } from 'igniteui-webcomponents-dataSource';
 
 ModuleManager.register(
