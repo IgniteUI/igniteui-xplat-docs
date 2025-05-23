@@ -227,12 +227,12 @@ Each *{RowIslandSelector}* should specify the key of the property that holds the
 ```
 
 ```tsx
-<IgrHierarchicalGrid data={singers} autoGenerate="true">
-    <IgrRowIsland childDataKey="Albums" autoGenerate="true">
-        <IgrRowIsland childDataKey="Songs" autoGenerate="true">
+<IgrHierarchicalGrid data={singers} autoGenerate={true}>
+    <IgrRowIsland childDataKey="Albums" autoGenerate={true}>
+        <IgrRowIsland childDataKey="Songs" autoGenerate={true}>
         </IgrRowIsland>
     </IgrRowIsland>
-    <IgrRowIsland childDataKey="Tours" autoGenerate="true">
+    <IgrRowIsland childDataKey="Tours" autoGenerate={true}>
     </IgrRowIsland>
 </IgrHierarchicalGrid>
 ```
@@ -391,19 +391,18 @@ import { getData } from "./remoteService";
 export default function Sample() {
   const hierarchicalGrid = useRef<IgrHierarchicalGrid>(null);
 
-  function gridCreated(
-    rowIsland: IgrRowIsland,
-    event: IgrGridCreatedEventArgs,
-    _parentKey: string
-  ) {
+  const gridCreated = (event: IgrGridCreatedEventArgs, _parentKey: string) => {
     const context = event.detail;
+    const rowIsland = context.owner;
     const dataState = {
       key: rowIsland.childDataKey,
       parentID: context.parentID,
       parentKey: _parentKey,
       rootLevel: false,
     };
+
     context.grid.isLoading = true;
+
     getData(dataState).then((data: any[]) => {
       context.grid.isLoading = false;
       context.grid.data = data;
@@ -413,6 +412,7 @@ export default function Sample() {
 
   useEffect(() => {
     hierarchicalGrid.current.isLoading = true;
+
     getData({ parentID: null, rootLevel: true, key: "Customers" }).then(
       (data: any) => {
         hierarchicalGrid.current.isLoading = false;
@@ -426,29 +426,21 @@ export default function Sample() {
     <IgrHierarchicalGrid
         ref={hierarchicalGrid}
         primaryKey="customerId"
-        autoGenerate="true"
+        autoGenerate={true}
         height="600px"
-        width="100%"
-    >
-        <IgrRowIsland
-        childDataKey="Orders"
-        primaryKey="orderId"
-        autoGenerate="true"
-        gridCreated={(
-            rowIsland: IgrRowIsland,
-            e: IgrGridCreatedEventArgs
-        ) => gridCreated(rowIsland, e, "Customers")}
-        >
-        <IgrRowIsland
-            childDataKey="Details"
-            primaryKey="productId"
-            autoGenerate="true"
-            gridCreated={(
-            rowIsland: IgrRowIsland,
-            e: IgrGridCreatedEventArgs
-            ) => gridCreated(rowIsland, e, "Orders")}
-        ></IgrRowIsland>
-        </IgrRowIsland>
+        width="100%">
+            <IgrRowIsland
+                childDataKey="Orders"
+                primaryKey="orderId"
+                autoGenerate={true}
+                onGridCreated={(e: IgrGridCreatedEventArgs) => gridCreated(e, "Customers")}>
+                    <IgrRowIsland
+                        childDataKey="Details"
+                        primaryKey="productId"
+                        autoGenerate={true}
+                        onGridCreated={(e: IgrGridCreatedEventArgs) => gridCreated(e, "Orders")}>
+                    </IgrRowIsland>
+            </IgrRowIsland>
     </IgrHierarchicalGrid>
   );
 }
@@ -458,9 +450,10 @@ export default function Sample() {
 ```ts
 const URL = `https://data-northwind.indigo.design/`;
 
-export function getData(dataState: any): any {
-    return fetch(buildUrl(dataState))
-        .then((result) => result.json());
+export async function getData(dataState: any): Promise<any> {
+    const response = await fetch(buildUrl(dataState));
+    const data = await response.json();
+    return data;
 }
 
 function buildUrl(dataState: any) {
@@ -610,15 +603,15 @@ The grid features could be enabled and configured through the {RowIslandSelector
 ```
 
 ```tsx
-<IgrHierarchicalGrid data={localData} autoGenerate="false"
-    allowFiltering='true' height="600px" width="800px">
-    <IgrColumn field="ID" pinned="true" filterable="true"></IgrColumn>
+<IgrHierarchicalGrid data={localData} autoGenerate={false}
+    allowFiltering={true} height="600px" width="800px">
+    <IgrColumn field="ID" pinned={true} filterable={true}></IgrColumn>
     <IgrColumnGroup header="Information">
         <IgrColumn field="ChildLevels"></IgrColumn>
-        <IgrColumn field="ProductName" hasSummary="true"></IgrColumn>
+        <IgrColumn field="ProductName" hasSummary={true}></IgrColumn>
     </IgrColumnGroup>
-    <IgrRowIsland childDataKey="childData" autoGenerate="false" rowSelection="multiple">
-        <IgrColumn field="ID" hasSummary="true" dataType="number"></IgrColumn>
+    <IgrRowIsland childDataKey="childData" autoGenerate={false} rowSelection="multiple">
+        <IgrColumn field="ID" hasSummary={true} dataType="number"></IgrColumn>
         <IgrColumnGroup header="Information2">
             <IgrColumn field="ChildLevels"></IgrColumn>
             <IgrColumn field="ProductName"></IgrColumn>
