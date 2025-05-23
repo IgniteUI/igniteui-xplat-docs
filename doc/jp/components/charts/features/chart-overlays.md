@@ -68,34 +68,6 @@ _language: ja
 
 `sample="/charts/data-chart/data-annotation-multiple-with-overlay-text", height="600", alt="{Platform} 複数のオーバーレイ テキスト"`
 
-### オーバーレイ テキストの描画
-
-次のコード スニペットは、上の図に示すように、3 つの注釈レイヤーの比較を描画する方法を示しています。
-
-<div class="divider--half"></div>
-
-```html
-<igx-data-chart
-    [dataSource]="data">
-</igx-data-chart>
-```
-
-```tsx
-
-```
-
-```html
-
-```
-
-```ts
-
-```
-
-```razor
-
-```
-
 ### オーバーレイ テキストのスタイル設定
 
 このコード例は、`DataAnnotationSliceLayer`、`ValueOverlay`、および `ValueLayer` 上のオーバーレイ テキストのスタイルを設定およびカスタマイズする方法を示しています。
@@ -120,6 +92,26 @@ public Series StylingOverlayText()
 
     return annoLayer;
 }
+```
+
+```html
+<igc-data-annotation-slice-layer
+    name="AnnoLayer"
+    id="AnnoLayer"
+    brush="green"
+    annotation-text-color="white"
+    annotation-label-member-path="label"
+    annotation-value-member-path="value"
+    overlay-text-color="red"
+    overlay-text-background="green"
+    overlay-text-border-color="black"
+    overlay-text-member-path="label"
+    overlay-text-vertical-margin="20"
+    overlay-text-horizontal-margin="0"
+    overlay-text-location="OutsideBottomCenter"
+    overlay-text="OverlayText on DataAnnotationSliceLayer"
+    thickness="2">
+    </igc-data-annotation-slice-layer>
 ```
 
 ## その他のリソース

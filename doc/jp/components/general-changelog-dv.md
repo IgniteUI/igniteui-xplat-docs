@@ -39,6 +39,12 @@ _language: ja
 
 - `IgxDashboardTile` では、ソート、グループ化、フィルタリング、選択などの集計を DataGrid ビューからチャート視覚化に伝播できるようになりました。これは現在、`IgxDashboardTile` の `DataSource` を `IgxLocalDataSource` のインスタンスにバインドすることによってサポートされています。
 
+### {PackageGrids}
+
+**重大な変更**
+
+- 'igniteui-angular-grids' パッケージの名前が 'igniteui-angular-data-grids' に変更されました。
+
 ### 機能拡張
 
 #### Toolbar
