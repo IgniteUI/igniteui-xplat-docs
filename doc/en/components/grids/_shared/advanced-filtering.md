@@ -204,33 +204,37 @@ connectedCallback(): void {
 <!-- end: WebComponents -->
 
 <!-- React -->
-<!--```typescript
-This code snippet cannot currently be achieved in React
-componentDidMount() {
-    const tree = new IgrFilteringExpressionsTree(FilteringLogic.And);
-    tree.filteringOperands.push({
-        fieldName: 'ProductName',
-        condition: new IgrStringFilteringOperand.condition('contains'),
-        searchVal: 'cha',
-        ignoreCase: true
-    });
-    const subTree = new IgrFilteringExpressionsTree(FilteringLogic.Or);
-    subTree.filteringOperands.push({
-        fieldName: 'ProductName',
-        condition: new IgrStringFilteringOperand.condition('doesNotContain'),
-        searchVal: 'b',
-        ignoreCase: true
-    });
-    subTree.filteringOperands.push({
-        fieldName: 'ProductName',
-        condition: new IgrStringFilteringOperand.condition('startsWith'),
-        searchVal: 'Chan',
-        ignoreCase: true
-    });
-    tree.filteringOperands.push(subTree);
-    gridRef.current.advancedFilteringExpressionsTree = tree;
-}
-```-->
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
+```tsx
+const filteringTree: IgrFilteringExpressionsTree = {
+    operator: FilteringLogic.And,
+    filteringOperands: [
+        {
+            fieldName: "ProductID",
+            condition: new IgrNumberFilteringOperand().condition("doesNotEqual"),
+            searchVal: 1,
+            ignoreCase: true,
+        },
+        {
+            fieldName: "ProductName",
+            conditionName: "startsWith",
+            searchVal: "Ch",
+            ignoreCase: true,
+        }
+    ]
+};
+
+<{ComponentSelector} data={data} allowFiltering={true} advancedFilteringExpressionsTree={filteringTree}>
+    <IgrGridToolbar>
+        <IgrGridToolbarActions>
+            <IgrGridToolbarAdvancedFiltering></IgrGridToolbarAdvancedFiltering>
+        </IgrGridToolbarActions>
+    </IgrGridToolbar>
+    <IgrColumn field="ProductID" filterable={true} dataType="number"></IgrColumn>
+    <IgrColumn field="ProductName" dataType="string" filterable={true}></IgrColumn>
+</{ComponentSelector}>
+```
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 <!-- end: React -->
 
 
