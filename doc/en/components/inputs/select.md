@@ -69,14 +69,11 @@ First, you need to the install the corresponding {ProductName} npm package by ru
 npm install igniteui-react
 ```
 
-You will then need to import the `Select` and the `SelectItem`, its necessary CSS, and register its module, like so:
+You will then need to import the `Select` and the `SelectItem` and its necessary CSS, like so:
 
 ```tsx
-import { IgrSelectModule, IgrSelect, IgrSelectItemModule, IgrSelectItem } from 'igniteui-react';
+import { IgrSelect, IgrSelectItem } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrSelectModule.register();
-IgrSelectItemModule.register();
 ```
 
 <!-- end: React -->
@@ -238,26 +235,23 @@ Multiple `SelectItem`s can be placed between the opening and closing brackets of
 <IgrSelect>
   <IgrSelectGroup>
     <span slot="label">Europe</span>
-
     <IgrSelectItem>
       <span slot="prefix">
-        <IgrIcon name="place" ref={iconPlace} collection="material"></IgrIcon>
+        <IgrIcon name="place" collection="material"></IgrIcon>
       </span>
       <span> Germany </span>
       <span slot="suffix">DE</span>
     </IgrSelectItem>
-
     <IgrSelectItem>
       <span slot="prefix">
-        <IgrIcon name="place" ref={iconPlace} collection="material"></IgrIcon>
+        <IgrIcon name="place" collection="material"></IgrIcon>
       </span>
       <span> France </span>
       <span slot="suffix">FR</span>
     </IgrSelectItem>
-
     <IgrSelectItem>
       <span slot="prefix">
-        <IgrIcon name="place" ref={iconPlace} collection="material"></IgrIcon>
+        <IgrIcon name="place" collection="material"></IgrIcon>
       </span>
       <span> Spain </span>
       <span slot="suffix">ES</span>
