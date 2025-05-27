@@ -41,12 +41,11 @@ First, you need to the install the corresponding {ProductName} npm package by ru
 npm install igniteui-react
 ```
 
-You will then need to import the `DateTimeInput`, its necessary CSS, and register its module, like so:
+You will then need to import the `DateTimeInput`, its necessary CSS, like so:
 
 ```tsx
-import { IgrDateTimeInput, IgrDateTimeInputModule } from 'igniteui-react';
+import { IgrDateTimeInput } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrDateTimeInputModule.register();
 ```
 
 <!-- end: React -->
@@ -80,10 +79,9 @@ input.value = date;
 ```
 
 ```tsx
-public dateTimeInputRef(input: IgrDateTimeInput) {
-    if (!input) { return; }
-    input.value = new Date();
-}
+const dateTimeInputRef = useRef<IgrDateTimeInput>(null);
+
+dateTimeInputRef.current.value = new Date();
 ```
 
 ```razor
@@ -159,7 +157,7 @@ To set a specific input format, pass it as a string to the `DateTimeInput`. This
 ```
 
 ```tsx
-<IgrDateTimeInput ref={this.dateTimeInputRef} inputFormat="dd-MM-yy" displayFormat="medium"></IgrDateTimeInput>
+<IgrDateTimeInput ref={dateTimeInputRef} inputFormat="dd-MM-yy" displayFormat="medium"></IgrDateTimeInput>
 ```
 
 ```razor
@@ -240,14 +238,13 @@ input.min = new Date(2021, 0, 1);
 ```
 
 ```tsx
-public dateTimeInputRef(input: IgrDateTimeInput) {
-    if (!input) { return; }
-    input.min = new Date(2021, 0, 1);
-}
+const dateTimeInputRef = useRef<IgrDateTimeInput>(null);
+
+dateTimeInputRef.current.min = new Date(2021, 0, 1);
 ```
 
 ```tsx
- <IgrDateTimeInput ref={this.dateTimeInputRef} max={new Date(2024, 6, 25)}></IgrDateTimeInput>
+ <IgrDateTimeInput ref={dateTimeInputRef} max={new Date(2024, 6, 25)}></IgrDateTimeInput>
 ```
 
 ```razor
