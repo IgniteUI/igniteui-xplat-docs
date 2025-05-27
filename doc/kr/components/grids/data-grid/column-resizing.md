@@ -37,8 +37,8 @@ When resizing a star-width column, it will change that column to a fixed column.
 The following code snippet demonstrates how to implement column resizing in the grid, where the `Street` column in this case will not be resizable. In this case, the column resizing separator will be 5 pixels wide and the columns that are resizable would animate when resized as well:
 
 ```ts
-import { ColumnResizingMode } from 'igniteui-react-grids';
-import { ColumnResizingAnimationMode } from 'igniteui-react-grids';
+import { ColumnResizingMode } from 'igniteui-react-data-grids';
+import { ColumnResizingAnimationMode } from 'igniteui-react-data-grids';
 ```
 
 ```tsx
@@ -67,8 +67,8 @@ import { ColumnResizingAnimationMode } from 'igniteui-react-grids';
 ```
 
 ```ts
-import { ColumnResizingMode } from 'igniteui-webcomponents-grids';
-import { ColumnResizingAnimationMode } from 'igniteui-webcomponents-grids';
+import { ColumnResizingMode } from 'igniteui-webcomponents-data-grids';
+import { ColumnResizingAnimationMode } from 'igniteui-webcomponents-data-grids';
 
 let grid1 = (document.getElementById("grid") as IgcDataGridComponent);
 grid1.dataSource = data;

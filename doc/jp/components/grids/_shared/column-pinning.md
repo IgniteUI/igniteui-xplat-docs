@@ -63,8 +63,8 @@ constructor() {
 ```
 <!-- React -->
 ```tsx
-<{ComponentName} data={nwindData} autoGenerate="false">
-    <IgrColumn field="Name" pinned="true"></IgrColumn>
+<{ComponentName} data={nwindData} autoGenerate={false}>
+    <IgrColumn field="Name" pinned={true}></IgrColumn>
     <IgrColumn field="AthleteNumber"></IgrColumn>
     <IgrColumn field="TrackProgress"></IgrColumn>
 </{ComponentName}>
@@ -184,8 +184,6 @@ constructor() {
 }
 ```
 
-<!-- end: WebComponents -->
-
 ```typescript
 public columnPinning(event) {
     if (event.detail.column.field === 'Name') {
@@ -193,6 +191,20 @@ public columnPinning(event) {
     }
 }
 ```
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+```typescript
+const columnPinning = (event: IgrPinColumnCancellableEventArgs) = {
+    if (event.detail.column.field === 'Name') {
+        event.detail.insertAtIndex = 0;
+    }
+}
+```
+
+<!-- end: React -->
 
 ```razor
 <{ComponentSelector} Data=data AutoGenerate=true ColumnPinScript="onColumnPin"/>
@@ -236,12 +248,11 @@ grid.pinning = { columns: ColumnPinningPosition.End };
 
 <!-- React -->
 ```typescript
-const pinningConfig = new IgrPinningConfig();
-pinningConfig.columns = ColumnPinningPosition.End;
+const pinningConfig: IgrPinningConfig = { columns: ColumnPinningPosition.End };
 ```
 
 ```tsx
-<IgrGrid data={nwindData} autoGenerate="true" pinning={pinningConfig}></IgrGrid>
+<IgrGrid data={nwindData} autoGenerate={true} pinning={pinningConfig}></IgrGrid>
 ```
 <!-- end: React -->
 
@@ -368,22 +379,22 @@ igRegisterScript("WebGridPinHeaderTemplate", (ctx) => {
 
 <!-- React -->
 ```tsx
-<IgrGrid autoGenerate="false" data={CustomersData} name="grid" ref={grid}>
-    <IgrColumn field="ID" hidden="true"></IgrColumn>
+<IgrGrid autoGenerate={false} data={CustomersData} ref={grid}>
+    <IgrColumn field="ID" hidden={true}></IgrColumn>
 
     <IgrColumn field="CompanyName" header="Company" width="300px" 
-    name="column1" headerTemplate={toggleColumnPin}></IgrColumn>
+    headerTemplate={toggleColumnPin}></IgrColumn>
 
-    <IgrColumn field="ContactName" header="Name" width="200px" pinned="true"
-    name="column2" headerTemplate={toggleColumnPin}> </IgrColumn>
+    <IgrColumn field="ContactName" header="Name" width="200px" pinned={true}
+    headerTemplate={toggleColumnPin}> </IgrColumn>
 
-    <IgrColumn field="ContactTitle" header="Title" width="200px" pinned="true"
-    name="column3" headerTemplate={toggleColumnPin}> </IgrColumn>
+    <IgrColumn field="ContactTitle" header="Title" width="200px" pinned={true}
+    headerTemplate={toggleColumnPin}></IgrColumn>
 </IgrGrid>
 ```
 
-```typescript
-function toggleColumnPin({ dataContext: ctx }: { dataContext: IgrColumnTemplateContext }) {
+```tsx
+const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
   const togglePin = () => {
     const col = ctx.column;
     col.pinned = !col.pinned;
@@ -750,6 +761,10 @@ $custom-theme: grid-theme(
 
 ```razor
 <{ComponentSelector} Id="grid"></{ComponentSelector}>
+```
+
+```tsx
+<{ComponentSelector} id="grid"></{ComponentSelector}>
 ```
 
 Then set the related CSS properties to this class:

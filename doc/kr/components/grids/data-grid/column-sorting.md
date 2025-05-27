@@ -25,7 +25,7 @@ _language: kr
 - `SortByOneColumnOnlyTriState`
 
 ```ts
-import { HeaderClickAction } from 'igniteui-react-grids';
+import { HeaderClickAction } from 'igniteui-react-data-grids';
 ```
 ```tsx
 <IgrDataGrid
@@ -46,7 +46,7 @@ import { HeaderClickAction } from 'igniteui-react-grids';
 
 ## API를 사용한 정렬
 ```ts
-import { IgrColumnSortDescription } from 'igniteui-react-grids';
+import { IgrColumnSortDescription } from 'igniteui-react-data-grids';
 import { ListSortDirection } from 'igniteui-react-core';
 ```
 
@@ -61,7 +61,7 @@ colSortDesc.sortDirection = ListSortDirection.Descending;
 this.grid.sortDescriptions.add(colSortDesc);
 ```
 ```ts
-import { IgcColumnSortDescription } from 'igniteui-webcomponents-grids';
+import { IgcColumnSortDescription } from 'igniteui-webcomponents-data-grids';
 import { ListSortDirection } from 'igniteui-webcomponents-core';
 
 let grid1 = (document.getElementById("grid") as IgcDataGridComponent);
