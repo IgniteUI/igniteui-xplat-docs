@@ -16,7 +16,7 @@ The following demo shows some `ComboBox` features that are enabled/disabled at r
 
 
 
-In our sample we are going to use the `Switch` component, so we have to register it together with the combo:
+In our sample we are going to use the `Switch` component, so we have to import them together with the combo:
 
 <!-- WebComponents -->
 ```ts
@@ -48,9 +48,6 @@ You will also need to link an additional CSS file to apply the styling to the `S
 ```tsx
 import { IgrComboModule, IgrCombo, IgrSwitchModule, IgrSwitch  } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrComboModule.register();
-IgrSwitchModule.register();
 ```
 
 <!-- end: React -->
@@ -179,7 +176,7 @@ Filtering options can be further enhanced by enabling the search case sensitivit
 ```
 
 ```tsx
-<IgrCombo disableFiltering="true" caseSensitiveIcon="true"></IgrCombo>
+<IgrCombo disableFiltering={true} caseSensitiveIcon={true}></IgrCombo>
 ```
 
 #### Filtering Options
@@ -290,7 +287,7 @@ If you want your ComboBox to be automatically focused on page load you can use t
 ```
 
 ```tsx
-<IgrCombo autofocus="true" />
+<IgrCombo autofocus={true} />
 ```
 
 ### Search Input Focus
@@ -306,7 +303,7 @@ The ComboBox search input is focused by default. To disable this feature and mov
 ```
 
 ```tsx
-<IgrCombo autofocusList="true" />
+<IgrCombo autofocusList={true} />
 ```
 
 ### Required
@@ -322,7 +319,7 @@ The ComboBox can be marked as required by setting the required property.
 ```
 
 ```tsx
-<IgrCombo required="true" />
+<IgrCombo required={true} />
 ```
 
 ### Disable ComboBox
@@ -338,7 +335,7 @@ You can disable the ComboBox using the `Disabled` property:
 ```
 
 ```tsx
-<IgrCombo disabled="true" />
+<IgrCombo disabled={true} />
 ```
 
 <!-- WebComponents -->
