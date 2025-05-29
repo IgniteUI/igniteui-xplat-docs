@@ -134,10 +134,10 @@ import { IgxActionStripModule } from 'igniteui-angular';
 <!-- React -->
 <!-- ComponentStart: Grid -->
 ```tsx
-<{ComponentSelector} id="grid" rowEditable="true" primaryKey="ID">
+<{ComponentSelector} rowEditable={true} primaryKey="ID">
     <IgrColumn field="field">
     </IgrColumn>
-    <IgrActionStrip name="actionStrip">
+    <IgrActionStrip>
         <IgrGridPinningActions></IgrGridPinningActions>
         <IgrGridEditingActions></IgrGridEditingActions>
     </IgrActionStrip>
@@ -147,10 +147,10 @@ import { IgxActionStripModule } from 'igniteui-angular';
 
 <!-- ComponentStart: TreeGrid -->
 ```tsx
-<{ComponentSelector} id="treeGrid" rowEditable="true" primaryKey="ID">
+<{ComponentSelector} rowEditable={true} primaryKey="ID">
     <IgrColumn field="field">
     </IgrColumn>
-    <IgrActionStrip name="actionStrip">
+    <IgrActionStrip>
         <IgrGridPinningActions></IgrGridPinningActions>
         <IgrGridEditingActions></IgrGridEditingActions>
     </IgrActionStrip>
@@ -160,10 +160,10 @@ import { IgxActionStripModule } from 'igniteui-angular';
 
 <!-- ComponentStart: HierarchicalGrid -->
 ```tsx
-<IgrHierarchicalGrid id="hierarchicalGrid" rowEditable="true" primaryKey="ID">
+<IgrHierarchicalGrid rowEditable={true} primaryKey="ID">
     <IgrColumn field="field">
     </IgrColumn>
-    <IgrActionStrip name="actionStrip">
+    <IgrActionStrip>
         <IgrGridPinningActions></IgrGridPinningActions>
         <IgrGridEditingActions></IgrGridEditingActions>
     </IgrActionStrip>
@@ -264,9 +264,9 @@ import { IgxActionStripModule } from 'igniteui-angular';
 <!-- ComponentStart: Grid, TreeGrid -->
 ```tsx
 <{ComponentSelector}>
-    <IgrActionStrip name="actionStrip">
+    <IgrActionStrip>
         <IgrGridPinningActions></IgrGridPinningActions>
-        <IgrGridEditingActions editRow="true" deleteRow="true"></IgrGridEditingActions>
+        <IgrGridEditingActions editRow={true} deleteRow={true}></IgrGridEditingActions>
     </IgrActionStrip>
 </{ComponentSelector}>
 ```
@@ -275,9 +275,9 @@ import { IgxActionStripModule } from 'igniteui-angular';
 <!-- ComponentStart: HierarchicalGrid -->
 ```tsx
 <IgrHierarchicalGrid>
-    <IgrActionStrip name="actionStrip">
+    <IgrActionStrip>
         <IgrGridPinningActions></IgrGridPinningActions>
-        <IgrGridEditingActions editRow="true" deleteRow="true"></IgrGridEditingActions>
+        <IgrGridEditingActions editRow={true} deleteRow={true}></IgrGridEditingActions>
     </IgrActionStrip>
 </IgrHierarchicalGrid>
 ```

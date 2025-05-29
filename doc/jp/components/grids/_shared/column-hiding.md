@@ -74,17 +74,17 @@ _language: ja
 ```
 
 ```tsx
-<IgrGrid autoGenerate="false" width="100%" height="560px" allowFiltering="true">
-    <IgrColumn field="ID" dataType="string" sortable="true" hidden="true"></IgrColumn>
-    <IgrColumn field="ContactName" dataType="String" sortable="true" hidden="true"></IgrColumn>
-    <IgrColumn field="ContactTitle" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="City" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="CompanyName" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="Fax" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="Address" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="PostalCode" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="Country" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="Phone" dataType="string" sortable="true"></IgrColumn>
+<IgrGrid autoGenerate={false} data={customersData} width="100%" height="560px" allowFiltering={true}>
+    <IgrColumn field="ID" dataType="string" sortable={true} hidden={true}></IgrColumn>
+    <IgrColumn field="ContactName" dataType="string" sortable={true} hidden={true}></IgrColumn>
+    <IgrColumn field="ContactTitle" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="City" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="CompanyName" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="Fax" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="Address" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="PostalCode" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="Country" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="Phone" dataType="string" sortable={true}></IgrColumn>
 </IgrGrid>
 ```
 <!-- ComponentEnd: Grid -->
@@ -139,18 +139,18 @@ _language: ja
 ```
 
 ```tsx
-<IgrTreeGrid autoGenerate="false" width="100%" height="560px" allowFiltering="true">
-    <IgrColumn field="Name" dataType="string" sortable="true" hidden="true"></IgrColumn>
-    <IgrColumn field="ID" dataType="number" sortable="true" hidden="true"></IgrColumn>
-    <IgrColumn field="Title" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="HireDate" dataType="date" sortable="true"></IgrColumn>
-    <IgrColumn field="Age" dataType="number" sortable="true"></IgrColumn>
-    <IgrColumn field="Address" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="City" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="Country" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="Fax" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="PostalCode" dataType="string" sortable="true"></IgrColumn>
-    <IgrColumn field="Phone" dataType="string" sortable="true"></IgrColumn>
+<IgrTreeGrid autoGenerate={false} data={employeesFlatDetails} width="100%" height="560px" allowFiltering={true}>
+    <IgrColumn field="Name" dataType="string" sortable={true} hidden={true}></IgrColumn>
+    <IgrColumn field="ID" dataType="number" sortable={true} hidden={true}></IgrColumn>
+    <IgrColumn field="Title" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="HireDate" dataType="date" sortable={true}></IgrColumn>
+    <IgrColumn field="Age" dataType="number" sortable={true}></IgrColumn>
+    <IgrColumn field="Address" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="City" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="Country" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="Fax" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="PostalCode" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="Phone" dataType="string" sortable={true}></IgrColumn>
 </IgrTreeGrid>
 ```
 <!-- ComponentEnd: TreeGrid -->
@@ -177,12 +177,12 @@ _language: ja
 ```
 
 ```tsx
-<IgrHierarchicalGrid autoGenerate="false" data={this.singersData} primaryKey="ID" allowFiltering="true"ref={this.hierarchicalGrid1Ref}>
-    <IgrColumn field="Artist" header="Artist" dataType="String" sortable="true"></IgrColumn>
-    <IgrColumn field="Photo" header="Photo" dataType="Image"></IgrColumn>
-    <IgrColumn field="Debut" header="Debut" dataType="Number" hidden="true"></IgrColumn>
-    <IgrColumn field="GrammyNominations" header="Grammy Nominations" dataType="Number" sortable="true" hidden="true"></IgrColumn>
-    <IgrColumn field="GrammyAwards" header="Grammy Awards" dataType="Number" sortable="true"></IgrColumn>
+<IgrHierarchicalGrid autoGenerate={false} data={singersData} primaryKey="ID" allowFiltering={true} ref={hierarchicalGrid1Ref}>
+    <IgrColumn field="Artist" header="Artist" dataType="string" sortable={true}></IgrColumn>
+    <IgrColumn field="Photo" header="Photo" dataType="image"></IgrColumn>
+    <IgrColumn field="Debut" header="Debut" dataType="number" hidden={true}></IgrColumn>
+    <IgrColumn field="GrammyNominations" header="Grammy Nominations" dataType="number" sortable={true} hidden={true}></IgrColumn>
+    <IgrColumn field="GrammyAwards" header="Grammy Awards" dataType="number" sortable={true}></IgrColumn>
 </IgrHierarchicalGrid>
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -205,7 +205,7 @@ _language: ja
 
 定義済みの列非表示 UI は、`{ComponentName}` のツールバーの `DropDown` 内に配置されます。列非表示の UI をこのドロップダウンを使用して表示/非表示にできます。
 
-これには、`{ComponentName}` 内に `GridToolbarActions` と `GridToolbarHiding` の両方を設定することだけです。ツールバーにタイトルを追加するには、`GridToolbarTitle` を設定し、{ComponentTitle} のラッパーにカスタム スタイルを設定します。
+これには、`{ComponentName}` 内に `GridToolbarActions` と `GridToolbarHiding` の両方を設定することだけです。
 
 <!-- ComponentStart: Grid -->
 ```html
@@ -240,9 +240,9 @@ _language: ja
 
 ```tsx
 <IgrGrid>
-    <IgrGridToolbar key="toolbar">
-        <IgrGridToolbarActions key="toolbarActions">
-            <IgrGridToolbarHiding key="toolbarHiding"></IgrGridToolbarHiding>
+    <IgrGridToolbar>
+        <IgrGridToolbarActions>
+            <IgrGridToolbarHiding></IgrGridToolbarHiding>
         </IgrGridToolbarActions>
     </IgrGridToolbar>
 </IgrGrid>
@@ -295,9 +295,9 @@ _language: ja
 <!-- ComponentStart: TreeGrid -->
 ```tsx
 <IgrTreeGrid>
-    <IgrGridToolbar key="toolbar">
-        <IgrGridToolbarActions key="toolbarActions">
-            <IgrGridToolbarHiding key="toolbarHiding"></IgrGridToolbarHiding>
+    <IgrGridToolbar>
+        <IgrGridToolbarActions>
+            <IgrGridToolbarHiding></IgrGridToolbarHiding>
         </IgrGridToolbarActions>
     </IgrGridToolbar>
 </IgrTreeGrid>
@@ -351,7 +351,7 @@ _language: ja
 <!-- React -->
 <!-- ComponentStart: HierarchicalGrid -->
 ```tsx
-<IgrHierarchicalGrid data={this.singersData}>
+<IgrHierarchicalGrid>
     <IgrGridToolbar>
         <IgrGridToolbarActions>
             <IgrGridToolbarHiding></IgrGridToolbarHiding>
@@ -399,9 +399,9 @@ _language: ja
 
 ```tsx
 <IgrGrid>
-    <IgrGridToolbar key="toolbar">
-        <IgrGridToolbarActions key="toolbarActions">
-            <IgrGridToolbarHiding key="toolbarHiding" title="Column Hiding"></IgrGridToolbarHiding>
+    <IgrGridToolbar>
+        <IgrGridToolbarActions>
+            <IgrGridToolbarHiding title="Column Hiding"></IgrGridToolbarHiding>
         </IgrGridToolbarActions>
     </IgrGridToolbar>
 </IgrGrid>
@@ -454,9 +454,9 @@ _language: ja
 <!-- ComponentStart: TreeGrid -->
 ```tsx
 <IgrTreeGrid>
-    <IgrGridToolbar key="toolbar">
-        <IgrGridToolbarActions key="toolbarActions">
-            <IgrGridToolbarHiding key="toolbarHiding" title="Column Hiding"></IgrGridToolbarHiding>
+    <IgrGridToolbar>
+        <IgrGridToolbarActions>
+            <IgrGridToolbarHiding title="Column Hiding"></IgrGridToolbarHiding>
         </IgrGridToolbarActions>
     </IgrGridToolbar>
 </IgrTreeGrid>
@@ -510,9 +510,9 @@ _language: ja
 <!-- ComponentStart: HierarchicalGrid -->
 ```tsx
 <IgrHierarchicalGrid>
-    <IgrGridToolbar key="toolbar">
-        <IgrGridToolbarActions key="toolbarActions">
-            <IgrGridToolbarHiding key="toolbarHiding" title="Column Hiding"></IgrGridToolbarHiding>
+    <IgrGridToolbar>
+        <IgrGridToolbarActions>
+            <IgrGridToolbarHiding title="Column Hiding"></IgrGridToolbarHiding>
         </IgrGridToolbarActions>
     </IgrGridToolbar>
 </IgrHierarchicalGrid>
@@ -697,8 +697,8 @@ export class AppModule {}
 
 ```tsx
 <IgrGrid>
-    <IgrColumn field="ContactName" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
-    <IgrColumn field="ContactTitle" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
+    <IgrColumn field="ContactName" dataType="string" sortable={true} disableHiding={true}></IgrColumn>
+    <IgrColumn field="ContactTitle" dataType="string" sortable={true} disableHiding={true}></IgrColumn>
 </IgrGrid>
 ```
 
@@ -727,8 +727,8 @@ export class AppModule {}
 
 ```tsx
 <IgrTreeGrid>
-    <IgrColumn field="Name" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
-    <IgrColumn field="Title" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
+    <IgrColumn field="Name" dataType="string" sortable={true} disableHiding={true}></IgrColumn>
+    <IgrColumn field="Title" dataType="string" sortable={true} disableHiding={true}></IgrColumn>
 </IgrTreeGrid>
 ```
 
@@ -765,11 +765,11 @@ export class AppModule {}
 
 ```tsx
 <IgrHierarchicalGrid>
-    <IgrColumn field="Artist" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
-    <IgrColumn field="GrammyAwards" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
+    <IgrColumn field="Artist" dataType="string" sortable={true} disableHiding={true}></IgrColumn>
+    <IgrColumn field="GrammyAwards" dataType="string" sortable={true} disableHiding={true}></IgrColumn>
 
     <IgrRowIsland>
-        <IgrColumn field="Album" dataType="string" sortable="true" disableHiding="true"></IgrColumn>
+        <IgrColumn field="Album" dataType="string" sortable={true} disableHiding={true}></IgrColumn>
     </IgrRowIsland>
 </IgrHierarchicalGrid>
 ```
@@ -966,7 +966,7 @@ $custom-button: button-theme(
 ```
 
 ```tsx
-<{ComponentSelector} id="treeGrid"></{ComponentSelector}>
+<{ComponentSelector} className="tree-grid"></{ComponentSelector}>
 ```
 <!-- ComponentEnd: TreeGrid -->
 
@@ -1022,7 +1022,7 @@ $custom-button: button-theme(
 
 <!-- ComponentStart: TreeGrid -->
 ```css
-#treeGrid {
+.tree-grid {
     /* Main Column Actions styles */
     --ig-column-actions-background-color: #292826;
     --ig-column-actions-title-color: #ffcd0f;
@@ -1056,7 +1056,7 @@ $custom-button: button-theme(
 
 <!-- ComponentStart: HierarchicalGrid -->
 ```css
-#hierarchicalGrid {
+.hierarchical-grid {
     /* Main Column Actions styles */
     --ig-column-actions-background-color: #292826;
     --ig-column-actions-title-color: #ffcd0f;

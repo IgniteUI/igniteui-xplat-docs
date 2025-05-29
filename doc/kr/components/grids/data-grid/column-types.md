@@ -84,13 +84,13 @@ mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid","Infragistics.
 ```
 
 ```ts
-import { IgcTextColumnComponent } from 'igniteui-webcomponents-grids';
-import { IgcNumericColumnComponent } from 'igniteui-webcomponents-grids';
-import { IgcDateTimeColumnComponent } from 'igniteui-webcomponents-grids';
-import { IgcTemplateColumnComponent } from 'igniteui-webcomponents-grids';
-import { IgcImageColumnComponent } from 'igniteui-webcomponents-grids';
-import { IgcTemplateCellInfo } from 'igniteui-webcomponents-grids';
-import { IgcTemplateCellUpdatingEventArgs } from 'igniteui-webcomponents-grids';
+import { IgcTextColumnComponent } from 'igniteui-webcomponents-data-grids';
+import { IgcNumericColumnComponent } from 'igniteui-webcomponents-data-grids';
+import { IgcDateTimeColumnComponent } from 'igniteui-webcomponents-data-grids';
+import { IgcTemplateColumnComponent } from 'igniteui-webcomponents-data-grids';
+import { IgcImageColumnComponent } from 'igniteui-webcomponents-data-grids';
+import { IgcTemplateCellInfo } from 'igniteui-webcomponents-data-grids';
+import { IgcTemplateCellUpdatingEventArgs } from 'igniteui-webcomponents-data-grids';
 
 let grid1 = (document.getElementById("grid") as IgcDataGridComponent);
 grid1.dataSource = data;
@@ -157,9 +157,9 @@ function onCellUpdating(s: IgcTemplateColumnComponent, e: IgcTemplateCellUpdatin
 ```
 
 ```ts
-import { IgrTemplateCellUpdatingEventArgs } from 'igniteui-react-grids';
-import { IgrTemplateCellInfo } from 'igniteui-react-grids';
-import { IgrTemplateColumn } from 'igniteui-react-grids';
+import { IgrTemplateCellUpdatingEventArgs } from 'igniteui-react-data-grids';
+import { IgrTemplateCellInfo } from 'igniteui-react-data-grids';
+import { IgrTemplateColumn } from 'igniteui-react-data-grids';
 
 public onAddressCellUpdating(s: IgrTemplateColumn, e: IgrTemplateCellUpdatingEventArgs) {
     const content = e.content as HTMLDivElement;

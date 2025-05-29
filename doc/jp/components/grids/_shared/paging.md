@@ -58,7 +58,7 @@ _language: ja
 <!-- React -->
 ```tsx
 <{ComponentSelector} className="gridSize" height="500px" width="100%">
-    <IgrPaginator key="paginator" perPage="10">
+    <IgrPaginator perPage={10}>
     </IgrPaginator>
 </{ComponentSelector}>
 ```
@@ -141,7 +141,7 @@ constructor() {
 const selectOptions = [5, 15, 20, 50];
 
 <{ComponentSelector} className="gridSize">
-    <IgrPaginator key="paginator" perPage={10} page={1} selectOptions={selectOptions}>
+    <IgrPaginator perPage={10} page={1} selectOptions={selectOptions}>
     </IgrPaginator>
 </{ComponentSelector}>
 ```

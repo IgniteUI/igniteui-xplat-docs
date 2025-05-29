@@ -38,15 +38,15 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbMultiColumnComboBoxModule));
 ```
 
 ```ts
-import { IgrMultiColumnComboBoxModule } from 'igniteui-react-grids';
-import { IgrMultiColumnComboBox } from 'igniteui-react-grids';
+import { IgrMultiColumnComboBoxModule } from 'igniteui-react-data-grids';
+import { IgrMultiColumnComboBox } from 'igniteui-react-data-grids';
 
 IgrMultiColumnComboBoxModule.register();
 ```
 
 ```ts
-import { IgcMultiColumnComboBoxModule } from 'igniteui-webcomponents-grids';
-import { IgcMultiColumnComboBoxComponent } from 'igniteui-webcomponents-grids';
+import { IgcMultiColumnComboBoxModule } from 'igniteui-webcomponents-data-grids';
+import { IgcMultiColumnComboBoxComponent } from 'igniteui-webcomponents-data-grids';
 
 ModuleManager.register(
     IgcMultiColumnComboBoxModule
