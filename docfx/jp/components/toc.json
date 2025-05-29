@@ -1785,7 +1785,7 @@
     "href": "inputs/ripple.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "Blazor"],
     "name": "ツールチップ",
     "href": "inputs/tooltip.md",
     "status": "new"
