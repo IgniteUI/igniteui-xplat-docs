@@ -41,13 +41,11 @@ First, you need to the install the corresponding {ProductName} npm package by ru
 npm install igniteui-react
 ```
 
-You will then need to import the `Card`, its necessary CSS, and register its module, like so:
+You will then need to import the `Card` and its necessary CSS, like so:
 
 ```tsx
-import { IgrCardModule, IgrCard, IgrCardHeader, IgrCardContent, IgrCardMedia, IgrCardActions } from 'igniteui-react';
+import { IgrCard, IgrCardHeader, IgrCardContent, IgrCardMedia, IgrCardActions } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrCardModule.register();
 ```
 
 <!-- end: React -->
@@ -457,7 +455,7 @@ You can reverse the order of the text button and the icon buttons by switching t
         <IgbRipple />
         Read more
     </IgbButton>
-    <div slot="end">
+    <div slot="start">
         <IgbIconButton name="twitter">
             <IgbRipple />
         </IgbIconButton>
@@ -474,8 +472,8 @@ You can reverse the order of the text button and the icon buttons by switching t
         <span>Read more</span>
         <IgrRipple />
     </IgrButton>
-    <div slot="end">
-        <IgrIconButton ref={this.iconRef} className="marginIcon" name="twitter" collection="material">
+    <div slot="start">
+        <IgrIconButton className="marginIcon" name="twitter" collection="material">
             <IgrRipple />
         </IgrIconButton>
         <IgrIconButton name="facebook" collection="material">
