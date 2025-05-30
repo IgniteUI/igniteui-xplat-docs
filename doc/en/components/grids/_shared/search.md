@@ -278,7 +278,7 @@ public nextSearch(){
 ```tsx
 const handleOnSearchChange = (event: IgrComponentValueChangedEventArgs) => {
     setSearchText(event.detail);
-    gridRef.current.findNext(event.detail, caseSensitiveSelected, exactMatchSelected);
+    nextSearch(event.detail, caseSensitiveSelected, exactMatchSelected);
 }
 
 <IgrInput name="searchBox" value={searchText} onInput={handleOnSearchChange}>
@@ -317,7 +317,7 @@ public void NextSearch()
 ```tsx
 const handleOnSearchChange = (event: IgrComponentValueChangedEventArgs) => {
     setSearchText(event.detail);
-    gridRef.current.findNext(event.detail, caseSensitiveSelected, exactMatchSelected);
+    nextSearch(event.detail, caseSensitiveSelected, exactMatchSelected);
 }
 
 <IgrInput name="searchBox" value={searchText} onInput={handleOnSearchChange}>
@@ -456,12 +456,12 @@ public nextSearch() {
 <!-- ComponentEnd: TreeGrid -->
 
 ```tsx
-const prevSearch = () => {
-    gridRef.current.findPrev(searchText, caseSensitiveSelected, exactMatchSelected);
+const prevSearch = (text: string, caseSensitive: boolean, exactMatch: boolean) => {
+    gridRef.current.findPrev(text, caseSensitive, exactMatch);
 }
 
-const nextSearch = () => {
-    gridRef.current.findNext(searchText, caseSensitiveSelected, exactMatchSelected);
+const nextSearch = (text: string, caseSensitive: boolean, exactMatch: boolean) => {
+    gridRef.current.findNext(text, caseSensitive, exactMatch);
 }
 
 <IgrIconButton key="prevIconButton" variant="flat" name="prev" collection="material" onClick={prevSearch}>
@@ -526,10 +526,10 @@ public onSearchKeydown(evt: KeyboardEvent) {
 const searchKeyDown = (e: KeyboardEvent<HTMLElement>) => {
     if (e.key === 'Enter') {
         e.preventDefault();
-        gridRef.current.findNext(searchText, caseSensitiveSelected, exactMatchSelected);
+        nextSearch(searchText, caseSensitiveSelected, exactMatchSelected);
     } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
         e.preventDefault();
-        gridRef.current.findPrev(searchText, caseSensitiveSelected, exactMatchSelected);
+        prevSearch(searchText, caseSensitiveSelected, exactMatchSelected);
     }
 }
 
@@ -592,10 +592,10 @@ public onSearchKeydown(evt: KeyboardEvent) {
 const searchKeyDown = (e: KeyboardEvent<HTMLElement>) => {
     if (e.key === 'Enter' || e.key === 'ArrowDown') {
         e.preventDefault();
-        gridRef.current.findNext(searchText, caseSensitiveSelected, exactMatchSelected);
+        nextSearch(searchText, caseSensitiveSelected, exactMatchSelected);
     } else if (e.key === 'ArrowUp') {
         e.preventDefault();
-        gridRef.current.findPrev(searchText, caseSensitiveSelected, exactMatchSelected);
+        prevSearch(searchText, caseSensitiveSelected, exactMatchSelected);
     }
 }
 
@@ -752,19 +752,19 @@ const [exactMatchSelected, setExactMatchSelected] = useState<boolean>(false);
 
 const handleCaseSensitiveChange = (event: IgrComponentBoolValueChangedEventArgs) => {
     setCaseSensitiveSelected(!caseSensitiveSelected);
-    gridRef.current.findNext(searchText, event.detail, exactMatchSelected);
+    nextSearch(searchText, event.detail, exactMatchSelected);
 }
 
 const handleExactMatchChange = (event: IgrComponentBoolValueChangedEventArgs) => {
     setExactMatchSelected(!exactMatchSelected);
-    gridRef.current.findNext(searchText, caseSensitiveSelected, event.detail);
+    nextSearch(searchText, caseSensitiveSelected, event.detail);
 }
 
-<IgrChip key="caseSensitiveChip" selectable={true} onSelect={handleCaseSensitiveChange}>
-    <span key="caseSensitive">Case Sensitive</span>
+<IgrChip selectable={true} onSelect={handleCaseSensitiveChange}>
+    <span>Case Sensitive</span>
 </IgrChip>
-<IgrChip key="exactMatchChip" selectable={true} onSelect={handleExactMatchChange}>
-    <span key="exactMatch">Exact Match</span>
+<IgrChip selectable={true} onSelect={handleExactMatchChange}>
+    <span>Exact Match</span>
 </IgrChip>
 ```
 
@@ -774,7 +774,7 @@ What if we would like to filter and sort our `{ComponentName}` or even to add an
 
 ### Adding icons
 
-By using some of our other components, we can create an enriched user interface and improve the overall design of our entire search bar! We can have a nice search or delete icon on the left of the search input, a couple of chips for our search options and some material design icons combined with nice ripple styled buttons for our navigation on the right. We can wrap these components inside an input group for a more refined design.
+By using some of our other components, we can create an enriched user interface and improve the overall design of our entire search bar! We can have a nice search or delete icon on the left of the search input, a couple of chips for our search options and some material design icons combined with nice ripple styled buttons for our navigation on the right.
 
 <!-- Angular -->
 
@@ -922,50 +922,6 @@ constructor() {
 ```
 <!-- end: WebComponents -->
 
-```tsx
-const prevIconText =
-  "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z'></path></svg>";
-const nextIconText =
-  "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'></path></svg>";
-const clearIconText =
-  "<svg width='24' height='24' viewBox='0 0 24 24' title='Clear'><path d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></svg>";
-  const searchIconText =
-  "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' /></svg>";
-
-useEffect(() => {
-    registerIconFromText("search", searchIconText, "material");
-    registerIconFromText("clear", clearIconText, "material");
-    registerIconFromText("prev", prevIconText, "material");
-    registerIconFromText("next", nextIconText, "material");
-}, []);
-
-<IgrInput name="searchBox" value={searchText} onInput={handleOnSearchChange}>
-    <div slot="prefix" key="prefix">
-        {searchText.length === 0 ? (
-            <IgrIconButton key="searchIcon" variant="flat" name="search"  collection="material">
-            </IgrIconButton>
-            ) : (
-            <IgrIconButton key="clearIcon" variant="flat" name="clear" collection="material" onClick={clearSearch}>
-            </IgrIconButton>
-        )}
-    </div>
-    <div slot="suffix" key="chipSuffix">
-        <IgrChip key="caseSensitiveChip" selectable={true} onSelect={handleCaseSensitiveChange}>
-            <span key="caseSensitive">Case Sensitive</span>
-        </IgrChip>
-        <IgrChip key="exactMatchChip" selectable={true} onSelect={handleExactMatchChange}>
-            <span key="exactMatch">Exact Match</span>
-        </IgrChip>
-    </div>
-    <div slot="suffix" key="buttonsSuffix">
-        <IgrIconButton key="prevIconButton" variant="flat" name="prev" collection="material" onClick={prevSearch}>
-        </IgrIconButton>
-        <IgrIconButton key="nextIconButton" variant="flat" name="next" collection="material" onClick={nextSearch}>
-        </IgrIconButton>
-    </div>
-</IgrInput>
-```
-
 <!-- Blazor -->
 
 We will wrap all of our components inside an `Input`. On the left we will toggle between a search and a delete/clear icon (depending on whether the search input is empty or not). In the center, we will position the input itself. In addition, whenever the delete icon is clicked, we will update our `SearchText` and invoke the `{ComponentName}`'s `ClearSearch` method to clear the highlights.
@@ -1021,54 +977,6 @@ public clearSearch() {
 ```
 <!-- end: WebComponents -->
 
-```tsx
-const prevIconText =
-  "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z'></path></svg>";
-const nextIconText =
-  "<svg width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'></path></svg>";
-const searchIconText =
-"<svg width='24' height='24' viewBox='0 0 24 24'><path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' /></svg>";
-const clearIconText =
-  "<svg width='24' height='24' viewBox='0 0 24 24' title='Clear'><path d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></svg>";
-
-useEffect(() => {
-    registerIconFromText("search", searchIconText, "material");
-    registerIconFromText("clear", clearIconText, "material");
-    registerIconFromText("prev", prevIconText,"material");
-    registerIconFromText("next", nextIconText, "material");
-}, []);
-
-const clearSearch = () => {
-  setSearchText('');
-  gridRef.current.clearSearch();
-}
-
-<IgrInput name="searchBox" value={searchText} onInput={handleOnSearchChange}>
-    <div slot="prefix" key="prefix">
-        {searchText.length === 0 ? (
-          <IgrIconButton key="searchIcon" variant="flat" name="search" collection="material">
-          </IgrIconButton>
-        ) : (
-          <IgrIconButton key="clearIcon" variant="flat" name="clear" collection="material" onClick={clearSearch}>
-          </IgrIconButton>
-        )}        
-    </div>
-    <div slot="suffix" key="chipSuffix">
-        <IgrChip key="caseSensitiveChip" selectable={true} onSelect={handleCaseSensitiveChange}>
-            <span key="caseSensitive">Case Sensitive</span>
-        </IgrChip>
-        <IgrChip key="exactMatchChip" selectable={true} onSelect={handleExactMatchChange}>
-            <span key="exactMatch">Exact Match</span>
-        </IgrChip>
-    </div>
-    <div slot="suffix" key="buttonsSuffix">
-        <IgrIconButton key="prevIconButton" variant="flat" name="prev" collection="material" onClick={prevSearch}>
-        </IgrIconButton>
-        <IgrIconButton key="nextIconButton" variant="flat" name="next" collection="material" onClick={nextSearch}>
-        </IgrIconButton>
-    </div>
-</IgrInput>
-```
 <!-- ComponentEnd: TreeGrid -->
 
 ```razor
@@ -1110,7 +1018,13 @@ const clearSearch = () => {
 }
 ```
 
+<!-- Angular, Blazor, WebComponents -->
 On the right in our input group, let's create three separate containers with the following purposes:
+<!-- end: Angular, Blazor, WebComponents -->
+
+<!-- React -->
+Let's begin by creating the search navigation buttons on the right of the input by adding two ripple styled buttons with material icons. The handlers for the click events remain the same - invoking the `FindNext`/`FindPrev` methods.
+<!-- end: React -->
 
 <!-- Angular -->
 
@@ -1152,7 +1066,7 @@ public showResults() {
 
 <!-- end: Angular -->
 
-- For displaying a couple of chips that toggle the `CaseSensitive` and the `ExactMatch` properties. We have replaced the checkboxes with two stylish chips that change color based on these properties. Whenever a chip is clicked, we invoke its respective handler.
+- For displaying a couple of chips that toggle the `CaseSensitive` and the `ExactMatch` properties. We have replaced the checkboxes with two stylish chips. Whenever a chip is clicked, we invoke its respective handler.
 
 <!-- Angular -->
 
@@ -1212,26 +1126,6 @@ constructor() {
 
 <!-- end: WebComponents -->
 
-```tsx
-<div slot="suffix" key="chipSuffix">
-    <IgrChip key="caseSensitiveChip" selectable={true} onSelect={handleCaseSensitiveChange}>
-        <span key="caseSensitive">Case Sensitive</span>
-    </IgrChip>
-    <IgrChip key="exactMatchChip" selectable={true} onSelect={handleExactMatchChange}>
-        <span key="exactMatch">Exact Match</span>
-    </IgrChip>
-</div>
-
-const handleCaseSensitiveChange = (event: IgrComponentBoolValueChangedEventArgs) => {
-    setCaseSensitiveSelected(!caseSensitiveSelected);
-    gridRef.current.findNext(searchText, event.detail, exactMatchSelected);
-}
-const handleExactMatchChange = (event: IgrComponentBoolValueChangedEventArgs) => {
-    setExactMatchSelected(!exactMatchSelected);
-    gridRef.current.findNext(searchText, caseSensitiveSelected, event.detail);
-}
-```
-
 ```razor
     <div class="chips" slot="suffix">
         <IgbChip Selectable=true SelectedChanged="UpdateCase">
@@ -1254,9 +1148,9 @@ const handleExactMatchChange = (event: IgrComponentBoolValueChangedEventArgs) =>
     }
 }
 ```
-
-- For the search navigation buttons, we have transformed our inputs into ripple styled buttons with material icons. The handlers for the click events remain the same - invoking the `FindNext`/`FindPrev` methods.
-
+<!-- Angular, WebComponents, Blazor -->
+- For the search navigation buttons, we have added two ripple styled buttons with material icons. The handlers for the click events remain the same - invoking the `FindNext`/`FindPrev` methods.
+<!-- end: Angular, WebComponents, Blazor -->
 <!-- Angular -->
 
 ```html
@@ -1319,22 +1213,74 @@ public nextSearch() {
 <!-- end: WebComponents -->
 
 ```tsx
-const prevSearch = () => {
-    gridRef.current.findPrev(searchText, caseSensitiveSelected, exactMatchSelected);
+const prevSearch = (text: string, caseSensitive: boolean, exactMatch: boolean) => {
+    gridRef.current.findPrev(text, caseSensitive, exactMatch);
 }
 
-const nextSearch = () => {
-    gridRef.current.findNext(searchText, caseSensitiveSelected, exactMatchSelected);
+const nextSearch = (text: string, caseSensitive: boolean, exactMatch: boolean) => {
+    gridRef.current.findNext(text, caseSensitive, exactMatch);
 }
 
 <div slot="suffix" key="buttonsSuffix">
-    <IgrIconButton key="prevIconButton" variant="flat" name="prev" collection="material" onClick={prevSearch}>
+    <IgrIconButton key="prevIconButton" variant="flat" name="prev" collection="material" onClick={() => prevSearch(searchText, caseSensitiveSelected, exactMatchSelected)}>
+        <IgrRipple></IgrRipple>
     </IgrIconButton>
-    <IgrIconButton key="nextIconButton" variant="flat" name="next" collection="material" onClick={nextSearch}>
+    <IgrIconButton key="nextIconButton" variant="flat" name="next" collection="material" onClick={() => nextSearch(searchText, caseSensitiveSelected, exactMatchSelected)}>
+        <IgrRipple></IgrRipple>
     </IgrIconButton>
 </div>
 ```
+<!-- React -->
+Now let's add the search and clear icons to the left of the input:
 
+```tsx
+const clearSearch = () => {
+    setSearchText('');
+    gridRef.current.clearSearch();
+}
+
+<div slot="prefix">
+    {searchText.length === 0 ? (
+        <IgrIconButton variant="flat" name="search"  collection="material">
+        </IgrIconButton>
+        ) : (
+        <IgrIconButton variant="flat" name="clear" collection="material" onClick={clearSearch}>
+        </IgrIconButton>
+    )}
+</div>
+```
+
+Finally, this is the end result when we combine everything:
+
+```tsx
+useEffect(() => {
+    registerIconFromText("search", searchIconText, "material");
+    registerIconFromText("clear", clearIconText, "material");
+    registerIconFromText("prev", prevIconText, "material");
+    registerIconFromText("next", nextIconText, "material");
+}, []);
+
+<IgrInput name="searchBox" value={searchText} onInput={handleOnSearchChange}>
+    <div slot="prefix">
+        {searchText.length === 0 ? (
+            <IgrIconButton variant="flat" name="search"  collection="material">
+            </IgrIconButton>
+            ) : (
+            <IgrIconButton variant="flat" name="clear" collection="material" onClick={clearSearch}>
+            </IgrIconButton>
+        )}
+    </div>
+    <div slot="suffix">
+        <IgrIconButton variant="flat" name="prev" collection="material" onClick={() => prevSearch(searchText, caseSensitiveSelected, exactMatchSelected)}>
+            <IgrRipple></IgrRipple>
+        </IgrIconButton>
+        <IgrIconButton variant="flat" name="next" collection="material" onClick={() => nextSearch(searchText, caseSensitiveSelected, exactMatchSelected)}>
+            <IgrRipple></IgrRipple>
+        </IgrIconButton>
+    </div>
+</IgrInput>
+```
+<!-- end: React -->
 
 ```razor
 <div class="searchButtons" slot="suffix">
