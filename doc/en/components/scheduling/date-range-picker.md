@@ -37,23 +37,15 @@ defineComponents(IgcDateRangePickerComponent);
 
 Now you can start with a basic configuration of the {Platform} `DateRangePicker`.
 
-```html
-<igc-date-range-picker anchor="hover-button">
-  Congrats you've hovered the button!
-</igc-date-range-picker>
-
-<igc-button id="hover-button">Hover me</igc-button>
-```
-
 For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 ## Usage
 
 The `DateRangePicker` allows users to select a start and end date either by choosing a date range from a dropdown/calendar pop-up or by typing directly into the input fields - one for the start date and one for the end date.
 
-The picker offers two modes for displaying date values: single input and two inputs. In single input mode, the field is read-only, and the date range cannot be edited by typing. In two inputs mode, however, users can edit the start and end dates by typing in separate input fields.
+The picker offers two modes for displaying date values: single input and two inputs. In single input mode, the field is non-editable, and the date range cannot be edited by typing. In two inputs mode, however, users can edit the start and end dates by typing in separate input fields.
 
-When the calendar is visible, a date range can be selected by choosing both a start and end date. Selecting a date will set the start date, and once a second date is chosen, it will set the end date. If a range is already selected, clicking any other date on the calendar will start a new range selection.
+When the calendar is visible, a date range can be selected by choosing both a start and end date. Selecting a date will set both the start and end date, and once a second date is chosen, it will set the end date. If a range is already selected, clicking any other date on the calendar will start a new range selection.
 
 ### Display Date Range Picker
 
@@ -82,12 +74,26 @@ let endDate: Date = new Date(2025, 4, 8);
 dateRange.value = { start: startDate, end: endDate }
 ```
 
-### Read-only
+In addition, the value can be set as attribute. In this case it should represent an object that can be parsed correctly as JSON, where the `start` and `end` fields should have date values in the ISO 8601 format:
 
-You can also make the `DateRangePicker` read-only, which disables changing the range value through both typing and calendar selection. This is useful when the range is assigned via the value attribute and is intended to be display-only. To enable this behavior, simply set the `ReadOnly` property.
+```html
+<igc-date-range-picker value='{"start":"2025-01-01","end":"2025-01-02"}'>
+<igc-date-range-picker/>
+```
+
+### Read-only & Non-editable
+
+You can also make the `DateRangePicker` read-only, which disables changing the range value through both typing and calendar selection, disables keyboard navigation, and makes the calendar and clear icons appear visually disabled. This is useful when the range is assigned via the value attribute and is intended to be display-only. To enable this behavior, simply set the `ReadOnly` property.
 
 ```html
 <igc-date-range-picker use-two-inputs="true" readonly>
+</igc-date-range-picker>
+```
+
+Alternatively, you can use the `NonEditable` property, which, unlike `ReadOnly`, only prevents editing the input(s) via typing, while still allowing selection through the calendar and clearing via the clear icon.
+
+```html
+<igc-date-range-picker use-two-inputs="true" non-editable="true">
 </igc-date-range-picker>
 ```
 
@@ -178,7 +184,7 @@ If you want to manually define the date format, you can use the `InputFormat` pr
 The `DisplayFormat` property also accepts a custom format string, but it only applies when the input field is idle (i.e., not focused). When the field is focused, the format reverts to the default or to the one defined by `InputFormat`, if both properties are used together:
 
 ```html
-<igc-date-range-picker input-format="dd/MM/yy" date-format="yy/MM/dd">
+<igc-date-range-picker input-format="dd/MM/yy" display-format="yy/MM/dd">
 </igc-date-range-picker>
 ```
 
@@ -186,11 +192,19 @@ The `DisplayFormat` property also accepts a custom format string, but it only ap
 
 You can further customize the pop-up calendar using various properties:
 
-* The `Orientation` property allows you to set whether the calendar should be displayed vertically or horizontally.
-
-* The `VisibleMonths` property controls how many months are visible at a time, with a value of either 1 or 2.
-
-* The `ShowWeekNumbers` property enables or disables the week number column in the calendar.
+|Name|Type|Description|
+|--|--|--|
+| `Orientation` | 'vertical' or 'horizontal' | Allows you to set whether the calendar should be displayed vertically or horizontally. |
+| `VisibleMonths` | string | Controls how many months are visible at a time, with a value of either 1 or 2. |
+| `ShowWeekNumbers` | string | Enables or disables the week number column in the calendar. |
+| `Open` | boolean | Determines whether the calendar picker is open. |
+| `KeepOpenOnSelect` | boolean | Keeps the calendar picker open after a date selection. |
+| `KeepOpenOnOutsideClick` | boolean | Keeps the calendar picker open when clicking outside of it. |
+| `WeekStart` | string | Sets the start day of the week. |
+| `HideOutsideDays` | boolean | Hides days that fall outside the current month view. |
+| `HideHeader` | boolean | Hides the calendar header (applicable only in dialog mode). |
+| `HeaderOrientation` | 'vertical' or 'horizontal' | Aligns the calendar header vertically or horizontally (dialog mode only). |
+| `ActiveDate` | Date | Sets the date that is initially highlighted in the calendar. If not set, the current date becomes the active date. |
 
 ```html
 <igc-date-range-picker orientation="vertical" visible-months="1" show-week-numbers="true">
@@ -206,9 +220,9 @@ You can also set the `Min` and `Max` properties to restrict user input by disabl
 </igc-date-range-picker>
 ```
 
-### Custom Date range
+### Custom & Predefined Date Ranges 
 
-You can also add custom date range chips to the calendar pop-up for faster range selection using the `CustomRanges` property. For example, you can create a custom date range chip to quickly select the range for the previous 7 days, ending with the current date.
+You can also add custom date range chips to the calendar pop-up for faster range selection using the `CustomRanges` property. For example, you can create a custom date range chip to quickly select the range for the previous 7 days, ending with the current date. In addition, by setting the `UsePredefinedRanges` property, a set of predefined ranges chips will be displayed along with the custom ones.
 
 ```ts
 const today: Date = new Date();
@@ -229,12 +243,35 @@ const lastWeek: CustomDateRange[] = [
 ]
 
 const dateRange = document.querySelector('igc-date-range-picker') as IgcDateRangePickerComponent;
-dateRange.customRanges = lastWeek
+dateRange.customRanges = lastWeek;
+dateRange.usePredefinedRanges = true;
 ```
 
 Now, when you click the newly created `"Previous 7 days"` chip in the calendar pop-up, the range will automatically be selected, starting from 7 days ago and ending today.
 
 `sample="/scheduling/date-range-picker/custom-ranges", height="500", alt="{Platform} Date Range Picker Custom Ranges Example"`
+
+### Disabled & Special dates
+
+You also have the ability to set disabled dates in the calendar to narrow the range of dates the user can choose from. To set the disabled dates, you can use the `DisabledDates` property.
+
+```ts
+let dateRange = document.querySelector('igc-date-range-picker') as IgcDateRangePickerComponent;
+
+const minDate = new Date(2025, 4, 1);
+const maxDate = new Date(2025, 4, 31);
+
+dateRange.disabledDates = [
+  {
+    type: DateRangeType.Between,
+    dateRange: [minDate, maxDate]
+  }
+] as DateRangeDescriptor[];
+```
+
+You can see more information about all the possibilities that the `DisabledDates` property offers here: [Disabled dates](./calendar.md#disabled-dates)
+
+You can also do the same if you want to set one or more special dates in the calendar; the only difference is that you need to use the `SpecialDates` property instead. [Special dates](./calendar.md#special-dates)
 
 ### Forms
 
@@ -252,9 +289,6 @@ In addition to the properties we've already covered, the `DateRangePicker` compo
 
 |Name|Type|Description|
 |--|--|--|
-| `Open` | boolean | Determines whether the calendar picker is open. |
-| `KeepOpenOnSelect` | boolean | Keeps the calendar picker open after a date selection. |
-| `KeepOpenOnOutsideClick` | boolean | Keeps the calendar picker open when clicking outside of it. |
 | `Disabled` | boolean | Disables the component. |
 | `NonEditable` | boolean |	Disables typing in the input field(s). |
 | `Placeholder` | string | Placeholder text for the single input mode. |
@@ -262,15 +296,7 @@ In addition to the properties we've already covered, the `DateRangePicker` compo
 | `PlaceholderEnd` | string | Placeholder text for the end date input (two inputs mode). |
 | `Outlined` | boolean | Determines whether the input part will have outline appearance in the [Material theme](../themes/overview.md). |
 | `Prompt` | string | The prompt character used for unfilled parts of the input(s) mask. |
-| `WeekStart` | string | Sets the start day of the week. |
-| `HideOutsideDays` | boolean | Hides days that fall outside the current month view. |
-| `HideHeader` | boolean | Hides the calendar header (applicable only in dialog mode). |
-| `HeaderOrientation` | 'vertical' or 'horizontal' | Aligns the calendar header vertically or horizontally (dialog mode only). |
-| `ActiveDate` | Date | Sets the date that is initially highlighted in the calendar. If not set, the current date becomes the active date. |
-| `UsePredefinedRanges` | boolean | Indicates whether an area with chips of predefined date ranges to select from will be rendered. |
 | `ResourceStrings` | IgcCalendarResourceStrings & IgcDateRangePickerResourceStrings | Resource strings for localization of the date-range picker and the calendar. |
-| `DisabledDates` | DateRangeDescriptor[] | Dates that should be disabled in the calendar. |
-| `SpecialDates` | DateRangeDescriptor[] | Dates that should be marked as special in the calendar. |
 
 <!-- end: WebComponents -->
 
