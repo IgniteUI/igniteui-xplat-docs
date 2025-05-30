@@ -229,8 +229,7 @@ Several pre-existing `ToolAction` items and menus become available when the `Xam
 
 Zooming Actions
 
-- `ZoomMenu`: A `ToolActionIconMenu` that exposes two `ToolActionLabel` items to invoke the `ZoomIn` and `ZoomOut` methods on the chart for increasing/decreasing the chart's zoom level.
-- `ZoomReset`: A `ToolActionLabel`, contained within the `ZoomMenu`, that invokes the `ResetZoom` method on the chart to reset the zoom level to it's default position.
+- `ZoomMenu`: A `ToolActionIconMenu` that exposes three `ToolActionLabel` items to invoke the `ZoomIn` and `ZoomOut` methods on the chart for increasing/decreasing the chart's zoom level including `ZoomReset`, a `ToolActionLabel` that invokes the `ResetZoom` method on the chart to reset the zoom level to it's default position.
 
 Trend Actions
 
