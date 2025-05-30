@@ -1249,12 +1249,12 @@
         {
           "name": "Chart Data Annotations",
           "href": "charts/features/chart-data-annotations.md",
-          "status": ""
+          "status": "NEW"
         },
         {
           "name": "Charting in Dashboards",
           "href": "dashboard-tile.md",
-          "status": "NEW"
+          "status": "PREVIEW"
         },
         {
           "name": "Chart Data Aggregations",
@@ -1263,7 +1263,7 @@
         {
           "name": "Chart Data Filtering",
           "href": "charts/features/chart-data-filtering.md",
-          "status": "NEW"
+          "status": ""
         },
         {
           "name": "Chart Data Legend",
@@ -1278,12 +1278,12 @@
         {
           "name": "Chart Data Selection",
           "href": "charts/features/chart-data-selection.md",
-          "status": "NEW"
+          "status": ""
         },
         {
           "name": "Chart Highlight Filter",
           "href": "charts/features/chart-highlight-filter.md",
-          "status": "UPDATED"          
+          "status": ""          
         },
         {
           "name": "Chart Highlighting",
@@ -1323,7 +1323,7 @@
         {
           "name": "Chart Trendlines",
           "href": "charts/features/chart-trendlines.md",
-          "status": ""
+          "status": "UPDATED"
         }
       ]
   },
@@ -1511,7 +1511,7 @@
     "exclude": ["Angular"],
     "name": "Dock Manager",
     "href": "layouts/dock-manager.md",
-    "status": "UPDATED",
+    "status": "",
     "items": [
       {
         "exclude": ["Angular"],
@@ -1640,17 +1640,17 @@
   {
     "name": "Bullet Graph",
     "href": "bullet-graph.md",
-    "status": "UPDATED"
+    "status": ""
   },
   {
     "name": "Linear Gauge",
     "href": "linear-gauge.md",
-    "status": "UPDATED"
+    "status": ""
   },
   {
     "name": "Radial Gauge",
     "href": "radial-gauge.md",
-    "status": "UPDATED"
+    "status": ""
   },
   {
     "exclude": ["Angular"],
