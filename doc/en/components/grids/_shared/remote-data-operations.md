@@ -921,7 +921,7 @@ For further reference please check the full demo bellow:
      <IgrGrid
           ref={grid}
           data={data}
-          pagingMode={GridPagingMode.Remote}
+          pagingMode="remote"
           primaryKey="customerId"
           height="600px"
           isLoading={isLoading}
@@ -1189,53 +1189,31 @@ For further reference please check the full demo bellow:
   <IgrHierarchicalGrid
           ref={hierarchicalGrid}
           data={data}
-          pagingMode={GridPagingMode.Remote}
+          pagingMode="remote"
           primaryKey="customerId"
           height="600px"
-          isLoading={isLoading}
         >
-          <IgrPaginator 
+          <IgrPaginator
             perPage={perPage}
             ref={paginator}
-            pageChange={onPageNumberChange}
-            perPageChange={onPageSizeChange}>
-          </IgrPaginator>
-          <IgrColumn field="customerId" hidden={true}></IgrColumn>
-          <IgrColumn field="companyName" header="Company Name"></IgrColumn>
-          <IgrColumn field="contactName" header="Contact Name"></IgrColumn>
-          <IgrColumn field="contactTitle" header="Contact Title"></IgrColumn>
-          <IgrColumn field="address.country" header="Country"></IgrColumn>
-          <IgrColumn field="address.phone" header="Phone"></IgrColumn>
-
+            onPageChange={onPageNumberChange}
+            onPerPageChange={onPageSizeChange}
+          ></IgrPaginator>
+          ...
           <IgrRowIsland
             childDataKey="Orders"
             primaryKey="orderId"
-            gridCreated={(
-              rowIsland: IgrRowIsland,
-              e: IgrGridCreatedEventArgs
-            ) => gridCreated(rowIsland, e, "Customers")}
-          >
-            <IgrColumn field="orderId" hidden={true}></IgrColumn>
-            <IgrColumn field="shipAddress.country" header="Ship Country"></IgrColumn>
-            <IgrColumn field="shipAddress.city" header="Ship City"></IgrColumn>
-            <IgrColumn field="shipAddress.street" header="Ship Address"></IgrColumn>
-            <IgrColumn field="orderDate" header="Order Date" dataType="date"></IgrColumn>
+            onGridCreated={onCustomersGridCreatedHandler}>
+            ...
 
             <IgrRowIsland
               childDataKey="Details"
               primaryKey="productId"
-              gridCreated={(
-                rowIsland: IgrRowIsland,
-                e: IgrGridCreatedEventArgs
-              ) => gridCreated(rowIsland, e, "Orders")}
-            >
-              <IgrColumn field="productId" hidden={true}></IgrColumn>
-              <IgrColumn field="quantity" header="Quantity"></IgrColumn>
-              <IgrColumn field="unitPrice" header="Unit Price"></IgrColumn>
-              <IgrColumn field="discount" header="Discount"></IgrColumn>
+              onGridCreated={onOrdersGridCreatedHandler}>
+              ...
             </IgrRowIsland>
           </IgrRowIsland>
-    </IgrHierarchicalGrid>
+        </IgrHierarchicalGrid>
 ```
 then set up the state:
 ```tsx
