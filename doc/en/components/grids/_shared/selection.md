@@ -10,34 +10,36 @@ _canonicalLink: {CanonicalLinkToGridSelection}
 
 # {Platform} {ComponentTitle} Selection Overview
 
-With the {ProductName} Select feature in {Platform} {ComponentTitle} you can easily interact with and manipulate data using simple mouse interactions. There are three selection modes available: 
+With the {ProductName} Select feature in {Platform} {ComponentTitle} you can easily interact with and manipulate data using simple mouse interactions. There are three selection modes available:
 
 - Row selection
-- Cell selection 
-- Column selection 
+- Cell selection
+- Column selection
 
 With the `RowSelection` property, you can specify:
 
-- None 
-- Single  
-- Multiple Select 
+- None
+- Single
+- Multiple Select
 
 ## {Platform} {ComponentTitle} Selection Example
 
 The sample below demonstrates three types of **cell selection** behaviors in the `{ComponentName}`. Use the buttons below to enable each of the available selection modes.
 
 <!-- Angular -->
+
 A brief description will be provided on each button interaction through a snackbar message box.
+
 <!-- end: Angular -->
 
 `sample="/{ComponentSample}/cell-selection-mode", height="650", alt="{Platform} {ComponentTitle} Selection Example"`
 
-
-
 ## {Platform} {ComponentTitle} Selection Options
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
+
 The {ProductName} `{ComponentName}` component provides three different selection modes - [Row selection](row-selection.md), [Cell selection](cell-selection.md) and [Column selection](column-selection.md). By default only **Multi-cell selection** mode is enabled in the `{ComponentName}`. In order to change/enable selection mode you can use `RowSelection`, `CellSelection` or `Selectable` properties.
+
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 ### {Platform} {ComponentTitle} Row Selection
@@ -50,7 +52,7 @@ Property `RowSelection` enables you to specify the following options:
 
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
 
-- `MultipleCascade` -  This is a mode for cascading selection, resulting in the selection of all children in the tree below the record that the user selects with user interaction. In this mode a parent's selection state entirely depends on the selection state of its children.
+- `MultipleCascade` - This is a mode for cascading selection, resulting in the selection of all children in the tree below the record that the user selects with user interaction. In this mode a parent's selection state entirely depends on the selection state of its children.
 
 <!-- ComponentEnd: TreeGrid, HierarchicalGrid -->
 
@@ -65,7 +67,9 @@ Property `CellSelection` enables you to specify the following options:
 - `Multiple` - Currently, this is the default state of the selection in the `{ComponentName}`. Multi-cell selection is available by mouse dragging over the cells, after a left button mouse clicked continuously.
 
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
+
 > Go to [Cell selection topic](cell-selection.md) for more information.
+
 <!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
 ### {Platform} {ComponentTitle} Column Selection
@@ -79,7 +83,9 @@ This leads to the following three variations:
 - Range column selection - holding <kbd>shift</kbd> + <kbd>mouse click</kbd> selects everything in between.
 
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
+
 > Go to [Column selection topic](column-selection.md) for more information.
+
 <!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
 <!-- ComponentStart: Grid -->
@@ -157,27 +163,31 @@ public rightClick(eventArgs: any) {
         this.toggleContextMenu();
       }
 ```
+
 <!-- end: WebComponents -->
 
 ```tsx
-function rightClick(grid: IgrGridBaseDirective, event: IgrGridCellEventArgs) {
-    const eventArgs = event.detail;
-    eventArgs.event.preventDefault();
-    const node = eventArgs.cell.id;
-    const isCellWithinRange = grid.getSelectedRanges().some((range: any) => {
-        if (node.columnID >= range.columnStart &&
-            node.columnID <= range.columnEnd &&
-            node.rowIndex >= range.rowStart &&
-            node.rowIndex <= range.rowEnd
-            ) {
-                return true;
-            }
-        return false;
+const rightClick = (event: IgrGridContextMenuEventArgs) => {
+  const eventArgs = event.detail;
+  eventArgs.event.preventDefault();
+  const node = eventArgs.cell.cellID;
+  const isCellWithinRange = gridRef.current
+    .getSelectedRanges()
+    .some((range: any) => {
+      if (
+        node.columnID >= range.columnStart &&
+        node.columnID <= range.columnEnd &&
+        node.rowIndex >= range.rowStart &&
+        node.rowIndex <= range.rowEnd
+      ) {
+        return true;
+      }
+      return false;
     });
-    setIsCellWithinRange(isCellWithinRange);
-    setClickedCell(eventArgs.cell);
-    openContextMenu(eventArgs.event.clientX, eventArgs.event.clientY)
-}
+  setIsCellWithinRange(isCellWithinRange);
+  setClickedCell(eventArgs.cell);
+  openContextMenu(eventArgs.event.clientX, eventArgs.event.clientY);
+};
 ```
 
 ```razor
@@ -198,9 +208,9 @@ function rightClick(grid: IgrGridBaseDirective, event: IgrGridCellEventArgs) {
 
 The context menu will have the following functions:
 
-- Copy the selected cell's *value*.
-- Copy the selected cell's *dataRow*.
-- If the selected cell is within a **multi-cell selection range**, copy all the *selected data*.
+- Copy the selected cell's _value_.
+- Copy the selected cell's _dataRow_.
+- If the selected cell is within a **multi-cell selection range**, copy all the _selected data_.
 
 <!-- Angular -->
 
@@ -253,7 +263,7 @@ public copySelectedCells(event) {
         this.copyData(selectedData);
         const selectedDataArea = document.getElementById('selectedArea');
         selectedDataArea.innerText = JSON.stringify(selectedData);
-        
+
         this.toggleContextMenu();
     }
 
@@ -271,34 +281,38 @@ public copySelectedCells(event) {
 <!-- end: WebComponents -->
 
 ```tsx
-function copySelectedRowData() {
-    const selectedData = gridRef.current.getRowData(clickedCell.id.rowID);
-    copyData(selectedData);
-    closeContextMenu();
-}
+const copySelectedRowData = () => {
+  const selectedData = gridRef.current.getRowData(clickedCell.cellID.rowID);
+  copyData(selectedData);
+  closeContextMenu();
+};
 
-function copySelectedCellData() {
-    const selectedData = clickedCell.value;
-    copyData(selectedData);
-    closeContextMenu();
-}
+const copySelectedCellData = () => {
+  const selectedData = clickedCell.value;
+  copyData(selectedData);
+  closeContextMenu();
+};
 
-function copySelectedData() {
-    const selectedData = gridRef.current.getSelectedData(null,null);
-    copyData(selectedData);
-    closeContextMenu();
-}
+const copySelectedData = () => {
+  const selectedData = gridRef.current.getSelectedData(null, null);
+  copyData(selectedData);
+  closeContextMenu();
+};
 
-function copyData(data: any[]) {
-    const tempElement = document.createElement('input');
-    document.body.appendChild(tempElement);
-    tempElement.setAttribute('id', 'temp_id');
-    (document.getElementById('temp_id') as HTMLInputElement).value = JSON.stringify(data);
-    tempElement.select();
-    document.execCommand('copy');
-    document.body.removeChild(tempElement);
-    setSelectedData(JSON.stringify(data));
-}
+const copyData = (data: any[]) => {
+  const tempElement = document.createElement("input");
+  document.body.appendChild(tempElement);
+  tempElement.setAttribute("id", "temp_id");
+  (document.getElementById("temp_id") as HTMLInputElement).value =
+    JSON.stringify(data);
+  tempElement.select();
+  const dataStringified = JSON.stringify(data);
+  navigator.clipboard.writeText(dataStringified).catch((err) => {
+     console.error("Failed to copy: ", err);
+  });
+  document.body.removeChild(tempElement);
+  setSelectedData(dataStringified);
+};
 ```
 
 ```razor
@@ -332,29 +346,45 @@ The `{ComponentName}` will fetch the copied data and will paste it in a containe
 The template we are going to use to combine the grid with the context menu:
 
 <!-- Angular -->
+
 ```html
 <div class="wrapper">
-    <div class="grid__wrapper" (window:click)="disableContextMenu()">
-        <igx-grid #grid1 [data]="data" [autoGenerate]="false" height="500px" width="100%"
-            (contextMenu)="rightClick($event)" (rangeSelected)="getCells($event)"
-            (selected)="cellSelection($event)">
-        <!-- Columns area -->
-        </igx-grid>
-        <div *ngIf="contextmenu==true">
-            <contextmenu [x]="contextmenuX" [y]="contextmenuY" [cell]="clickedCell" [selectedCells]="multiCellArgs" (onCellValueCopy)="copy($event)">
-            </contextmenu>
-        </div>
+  <div class="grid__wrapper" (window:click)="disableContextMenu()">
+    <igx-grid
+      #grid1
+      [data]="data"
+      [autoGenerate]="false"
+      height="500px"
+      width="100%"
+      (contextMenu)="rightClick($event)"
+      (rangeSelected)="getCells($event)"
+      (selected)="cellSelection($event)"
+    >
+      <!-- Columns area -->
+    </igx-grid>
+    <div *ngIf="contextmenu==true">
+      <contextmenu
+        [x]="contextmenuX"
+        [y]="contextmenuY"
+        [cell]="clickedCell"
+        [selectedCells]="multiCellArgs"
+        (onCellValueCopy)="copy($event)"
+      >
+      </contextmenu>
     </div>
-    <div class="selected-data-area">
-        <div>
-           <pre>{{copiedData}}</pre>
-        </div>
+  </div>
+  <div class="selected-data-area">
+    <div>
+      <pre>{{copiedData}}</pre>
     </div>
+  </div>
 </div>
 ```
+
 <!-- end: Angular -->
 
 <!-- WebComponents -->
+
 ```html
     <div class="container sample">
       <div class="wrapper">
@@ -389,48 +419,56 @@ The template we are going to use to combine the grid with the context menu:
     </div>
   </div>
 ```
+
 <!-- end: WebComponents -->
 
 ```tsx
- <>
-    <div className="container sample">
-        <div className="wrapper" onClick={closeContextMenu}>
-            <IgrGrid
-                autoGenerate="false"
-                data={northWindData}
-                primaryKey="ProductID"
-                ref={gridRef}
-                contextMenu={rightClick}>
-            <IgrColumn field="ProductID" header="Product ID">
-            </IgrColumn>
-            <IgrColumn field="ProductName" header="Product Name">
-            </IgrColumn>
-            <IgrColumn field="UnitsInStock" header="Units In Stock" dataType="number">
-            </IgrColumn>
-            <IgrColumn field="UnitPrice" header="Units Price" dataType="number">
-            </IgrColumn>
-            <IgrColumn field="Discontinued" dataType="boolean">
-            </IgrColumn>
-            <IgrColumn field="OrderDate" header="Order Date" dataType="date">
-            </IgrColumn>
-            </IgrGrid>
-            <div className="selected-data-area">
-                {selectedData}
-            </div>
-        </div>
+<>
+  <div className="container sample">
+    <div className="wrapper" onClick={closeContextMenu}>
+      <IgrGrid
+        autoGenerate={false}
+        data={northWindData}
+        primaryKey="ProductID"
+        ref={gridRef}
+        onContextMenu={rightClick}
+      >
+        <IgrColumn field="ProductID" header="Product ID"></IgrColumn>
+        <IgrColumn field="ProductName" header="Product Name"></IgrColumn>
+        <IgrColumn
+          field="UnitsInStock"
+          header="Units In Stock"
+          dataType="number"
+        ></IgrColumn>
+        <IgrColumn
+          field="UnitPrice"
+          header="Units Price"
+          dataType="number"
+        ></IgrColumn>
+        <IgrColumn field="Discontinued" dataType="boolean"></IgrColumn>
+        <IgrColumn
+          field="OrderDate"
+          header="Order Date"
+          dataType="date"
+        ></IgrColumn>
+      </IgrGrid>
+      <div className="selected-data-area">{selectedData}</div>
     </div>
-    <div style={{display: "none"}} className="contextmenu" ref={contextMenuRef}>
-        <span className="item" onClick={copySelectedCellData}>
-            <IgrIcon ref={iconRef} collection='material' name="content_copy"></IgrIcon>Copy Cell Data
-        </span>
-        <span className="item" onClick={copySelectedRowData}>
-            <IgrIcon collection='material' name="content_copy"></IgrIcon>Copy Row Data
-        </span>
-        {isCellWithinRange && (
-        <span className="item" onClick={copySelectedData}>
-            <IgrIcon collection='material' name="content_copy"></IgrIcon>Copy Cells Data
-        </span>)}
-    </div>
+  </div>
+  <div style={{ display: "none" }} className="contextmenu" ref={contextMenuRef}>
+    <span className="item" onClick={copySelectedCellData}>
+      <IgrIcon ref={iconRef} collection="material" name="content_copy"></IgrIcon>
+      Copy Cell Data
+    </span>
+    <span className="item" onClick={copySelectedRowData}>
+      <IgrIcon collection="material" name="content_copy"></IgrIcon>Copy Row Data
+    </span>
+    {isCellWithinRange && (
+      <span className="item" onClick={copySelectedData}>
+        <IgrIcon collection="material" name="content_copy"></IgrIcon>Copy Cells Data
+      </span>
+    )}
+  </div>
 </>
 ```
 
@@ -493,12 +531,11 @@ The template we are going to use to combine the grid with the context menu:
 </div>
 ```
 
- Select multiple cells and press the right mouse button. The context menu will appear and after selecting **Copy cells data** the selected data will appear in the right empty box.
+Select multiple cells and press the right mouse button. The context menu will appear and after selecting **Copy cells data** the selected data will appear in the right empty box.
 
- The result is:
+The result is:
 
 `sample="/{ComponentSample}/custom-context-menu", height="600", alt="{Platform} {ComponentTitle} custom context menu"`
-
 
 <!-- ComponentEnd: Grid -->
 
@@ -509,8 +546,9 @@ The template we are going to use to combine the grid with the context menu:
 - Using the `{ComponentName}` with Selection enabled on IE11 requires the explicit import of the array polyfill in polyfill.ts of the {Platform} application. IE11 is no longer supported as of version 13.0.0.
 
 ```typescript
-import 'core-js/es7/array';
+import "core-js/es7/array";
 ```
+
 <!-- end: Angular -->
 
 When the grid has no `PrimaryKey` set and remote data scenarios are enabled (when paging, sorting, filtering, scrolling trigger requests to a remote server to retrieve the data to be displayed in the grid), a row will lose the following state after a data request completes:
@@ -520,27 +558,25 @@ When the grid has no `PrimaryKey` set and remote data scenarios are enabled (whe
 - Row Editing
 - Row Pinning
 
-
-
 ## API References
 
-* `{ComponentName}`
-
+- `{ComponentName}`
 
 ## Additional Resources
 
 <!-- ComponentStart: Grid -->
-* [Row Selection](row-selection.md)
-* [Cell Selection](cell-selection.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Virtualization and Performance](virtualization.md)
+
+- [Row Selection](row-selection.md)
+- [Cell Selection](cell-selection.md)
+- [Paging](paging.md)
+- [Filtering](filtering.md)
+- [Sorting](sorting.md)
+- [Summaries](summaries.md)
+- [Column Moving](column-moving.md)
+- [Virtualization and Performance](virtualization.md)
 <!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})
