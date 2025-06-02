@@ -10,6 +10,52 @@ namespace: Infragistics.Controls
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## **25.1**
+
+### {PackageCharts} (Charts)
+
+- New [Chart Data Annotations](charts/features/chart-data-annotations.md)
+  - Data Annotation Band Layer (Beta)
+  - Data Annotation Line Layer (Beta)
+  - Data Annotation Rect Layer (Beta)
+  - Data Annotation Slice Layer (Beta)
+  - Data Annotation Strip Layer (Beta)
+
+- The [Data Tooltip](charts/features/chart-data-tooltip.md) and [Data Legend](charts/features/chart-data-legend.md) expose a new `LayoutMode` property that you can use to layout the contents of the tooltip or legend in a table or vertical layout structure. 
+
+- The `DefaultInteraction` property of the charts has been updated to include a new enumeration - `DragSelect` in which the dragged preview Rect will select the points contained within. (Beta)
+
+- The [ValueOverlay and ValueLayer](charts/features/chart-overlays.md), in addition to the new [Chart Data Annotations](charts/features/chart-data-annotations.md) listed above now expose an `OverlayText` property that can be used to overlay additional annotation text in the plot area. These appearance of these annotations can be configured by using the many OverlayText-prefixed properties. For example, the `OverlayTextBrush` property will configure the color of the overlay text. (Beta)
+
+- New [Trendline Layer](charts/features/chart-trendlines.md) series type that allows you to apply a single trend line per trend line layer to a particular series. This allows the usage of multiple trend lines on a single series since you can have multiple [TrendlineLayer](charts/features/chart-overlays.md) series types in the chart.
+
+### {PackageDashboards} (Dashboards)
+
+- The `IgcDashboardTile` now supports propagating the aggregations from its DataGrid view to the chart visualization such as sorting, grouping, filtering and selection. This is currently supported by binding the `DataSource` of the `IgcDashboardTile` to an instance of `IgcLocalDataSource`.
+
+### {PackageGrids}
+
+**Breaking Changes**
+
+- The `IgcDataGrid` now exists as part of the igniteui-webcomponents-data-grids package.
+
+### Enhancements
+
+#### Toolbar
+- Value layers added from the toolbar now appear on the legend.
+- The zoom reset tool has been moved to the zoom drop-down.
+
+#### Data Pie Chart
+- The chart now exposes a `GetOthersContext()` method. This will return the contents of the "others" slice.
+
+### Bug Fixes
+
+| Bug Number | Control | Description      |
+|------------|---------|------------------|
+|37023|IgcDataChart|Tooltips are cut-off/offscreen if overflow hidden is set.
+|37244|Excel|Custom Data Validation is not working.
+|37685|IgcSpreadsheet|Poor rendering of numbers formatted with Arial font.
+
 ## **{PackageVerChanges-24-2-APR}**
 
 ### {PackageGrids}
@@ -250,7 +296,7 @@ The data grid component property `propertyPath` has been renamed to `field`. Thi
 ```
 
 ```ts
-import { IgcColumnSummaryDescription, IgcColumnSortDescription, IgcColumnGroupDescription} from 'igniteui-webcomponents-grids'
+import { IgcColumnSummaryDescription, IgcColumnSortDescription, IgcColumnGroupDescription} from 'igniteui-webcomponents-data-grids'
 const productCount = new IgcColumnSummaryDescription();
 productCount.field = "ProductName";
 const colSortDesc = new IgcColumnSortDescription();
@@ -271,8 +317,8 @@ income.field = "Income";
 The new code for importing the grid and it's corresponding module is:
 
 ```ts
-import { IgcDataGrid } from "igniteui-webcomponents-grids";
-import { IgcDataGridModule } from 'igniteui-webcomponents-grids';
+import { IgcDataGrid } from "igniteui-webcomponents-data-grids";
+import { IgcDataGridModule } from 'igniteui-webcomponents-data-grids';
 ```
 
 - Required Peer Dependency for `DataGrid`
@@ -1124,8 +1170,8 @@ import { IgcDataChartCoreModule } from "igniteui-webcomponents-charts";
 import { IgcGeographicMapComponent } from "igniteui-webcomponents-maps";
 import { IgcGeographicMapModule } from "igniteui-webcomponents-maps";
 // grids:
-import { IgcDataGridComponent } from "igniteui-webcomponents-grids";
-import { IgcDataGridModule } from "igniteui-webcomponents-grids";
+import { IgcDataGridComponent } from "igniteui-webcomponents-data-grids";
+import { IgcDataGridModule } from "igniteui-webcomponents-data-grids";
 ```
 
 - Code Before Changes
@@ -1154,8 +1200,8 @@ import { IgcGeographicMapComponent } from "igniteui-webcomponents-maps/ES5/igc-g
 import { IgcGeographicMapModule } from "igniteui-webcomponents-maps/ES5/igc-geographic-map-module";
 
 // grids:
-import { IgcLiveGridModule } from 'igniteui-webcomponents-grids/ES5/igc-live-grid-module';
-import { IgcLiveGridComponent } from 'igniteui-webcomponents-grids/ES5/igc-live-grid-component';
+import { IgcLiveGridModule } from 'igniteui-webcomponents-data-grids/ES5/igc-live-grid-module';
+import { IgcLiveGridComponent } from 'igniteui-webcomponents-data-grids/ES5/igc-live-grid-component';
 ```
 
 ## {PackageDockManager}

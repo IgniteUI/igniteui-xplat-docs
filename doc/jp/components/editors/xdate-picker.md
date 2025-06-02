@@ -16,7 +16,7 @@ XDate Picker コンポーネントは、ドロップダウン カレンダー UI
 
 このサンプルは、単一の日付を選択するオプションを使用して `XDatePicker` を作成する方法を示しています。
 
-`sample="/editors/date-picker/overview", height="350", alt="{Platform} XDate Picker の例"`
+`sample="/editors/x-date-picker/overview", height="350", alt="{Platform} XDate Picker の例"`
 
 
 
@@ -91,7 +91,7 @@ ModuleManager.register(IgcXDatePickerModule);
 
 次の例は、`XDatePicker` で編集を有効にする方法を示しています。
 
-`sample="/editors/date-picker/editing", height="300", alt="{Platform} XDate Picker 編集の例"`
+`sample="/editors/x-date-picker/editing", height="300", alt="{Platform} XDate Picker 編集の例"`
 
 
 
@@ -101,7 +101,7 @@ ModuleManager.register(IgcXDatePickerModule);
 
 次の例は、`XDatePicker` で選択した日付を制限する方法を示しています。
 
-`sample="/editors/date-picker/date-limits", height="360", alt="{Platform} XDate Picker Date 制限の例"`
+`sample="/editors/x-date-picker/date-limits", height="360", alt="{Platform} XDate Picker Date 制限の例"`
 
 
 
@@ -111,7 +111,7 @@ ModuleManager.register(IgcXDatePickerModule);
 
 次の例は、`XDatePicker` で長い日付を適用する方法を示しています。
 
-`sample="/editors/date-picker/format", height="350", alt="{Platform} XDate Picker 書式の例"`
+`sample="/editors/x-date-picker/format", height="350", alt="{Platform} XDate Picker 書式の例"`
 
 
 
@@ -121,7 +121,7 @@ ModuleManager.register(IgcXDatePickerModule);
 
 次の例は、複数の `XDatePicker` コントロールを組み合わせる方法を示しています。
 
-`sample="/editors/date-picker/range", height="300", alt="{Platform} XDate Picker 日付範囲の例"`
+`sample="/editors/x-date-picker/range", height="300", alt="{Platform} XDate Picker 日付範囲の例"`
 
 
 
