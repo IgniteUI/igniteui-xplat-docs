@@ -59,9 +59,9 @@ _language: ja
 ```tsx
 <{ComponentSelector} allowFiltering="true">
     <IgrColumnGroup header="Contact Information">
-        <IgrColumn sortable="true" resizable="true" field="Phone"></IgrColumn>
-        <IgrColumn sortable="true" resizable="true" field="Fax"></IgrColumn>
-        <IgrColumn sortable="true" resizable="true" field="PostalCode"></IgrColumn>
+        <IgrColumn sortable={true} resizable={true} field="Phone"></IgrColumn>
+        <IgrColumn sortable={true} resizable={true} field="Fax"></IgrColumn>
+        <IgrColumn sortable={true} resizable={true} field="PostalCode"></IgrColumn>
     </IgrColumnGroup>
 </{ComponentSelector}>
 ```
@@ -106,9 +106,9 @@ _language: ja
 ```tsx
 <{ComponentSelector} primaryKey="ID" foreignKey="ParentID">
     <IgrColumnGroup header="Contact Information">
-        <IgrColumn sortable="true" resizable="true" field="Phone" dataType={GridColumnDataType.String}></IgrColumn>
-        <IgrColumn sortable="true" resizable="true" field="Fax" dataType={GridColumnDataType.String}></IgrColumn>
-        <IgrColumn sortable="true" resizable="true" field="PostalCode" dataType={GridColumnDataType.String}></IgrColumn>
+        <IgrColumn sortable={true} resizable={true} field="Phone" dataType="string"></IgrColumn>
+        <IgrColumn sortable={true} resizable={true} field="Fax" dataType="string"></IgrColumn>
+        <IgrColumn sortable={true} resizable={true} field="PostalCode" dataType="string"></IgrColumn>
     </IgrColumnGroup>
 </{ComponentSelector}>
 ```
@@ -173,18 +173,18 @@ _language: ja
 <!-- end: WebComponents -->
 
 ```tsx
-<IgrHierarchicalGrid autoGenerate="false" data={this.hierarchicalCustomers} ref={this.hierarchicalGridRef} id="hierarchicalGrid" primaryKey="ID" moving="true" allowFiltering="true">
-    <IgrColumn sortable="true" resizable="true" field="CustomerID" dataType={GridColumnDataType.String}></IgrColumn>
+<IgrHierarchicalGrid autoGenerate={false} data={hierarchicalCustomers} ref={hierarchicalGridRef} id="hierarchicalGrid" primaryKey="ID" moving={true} allowFiltering={true}>
+    <IgrColumn sortable={true} resizable={true} field="CustomerID" dataType="string"></IgrColumn>
     <IgrColumnGroup header="Address Information">
         <IgrColumnGroup header="Location">
-            <IgrColumn sortable="true" resizable="true" field="Address" dataType={GridColumnDataType.String}></IgrColumn>
-            <IgrColumn sortable="true" resizable="true" field="City" dataType={GridColumnDataType.String}></IgrColumn>
-            <IgrColumn sortable="true" resizable="true" field="PostalCode" dataType={GridColumnDataType.String}></IgrColumn>
-            <IgrColumn sortable="true" resizable="true" field="Country" dataType={GridColumnDataType.String}></IgrColumn>
+            <IgrColumn sortable={true} resizable={true} field="Address" dataType="string"></IgrColumn>
+            <IgrColumn sortable={true} resizable={true} field="City" dataType="string"></IgrColumn>
+            <IgrColumn sortable={true} resizable={true} field="PostalCode" dataType="string"></IgrColumn>
+            <IgrColumn sortable={true} resizable={true} field="Country" dataType="string"></IgrColumn>
         </IgrColumnGroup>
         <IgrColumnGroup header="Contact Information">
-            <IgrColumn sortable="true" resizable="true" field="Phone" dataType={GridColumnDataType.String}></IgrColumn>
-            <IgrColumn sortable="true" resizable="true" field="Fax" dataType={GridColumnDataType.String}></IgrColumn>
+            <IgrColumn sortable={true} resizable={true} field="Phone" dataType="string"></IgrColumn>
+            <IgrColumn sortable={true} resizable={true} field="Fax" dataType="string"></IgrColumn>
         </IgrColumnGroup>
     </IgrColumnGroup>
 </IgrHierarchicalGrid>
@@ -236,12 +236,12 @@ _language: ja
 <!-- end: WebComponents -->
 
 ```tsx
-<{ComponentSelector} height="600px" allowFiltering="true">
+<{ComponentSelector} height="600px" allowFiltering={true}>
     <IgrColumnGroup header="General Information">
-        <IgrColumn movable="true" sortable="true" resizable="true" field="CompanyName"></IgrColumn>
-        <IgrColumnGroup movable="true" header="Person Details">
-            <IgrColumn movable="true" pinned="false" sortable="true" resizable="true" field="ContactName"></IgrColumn>
-            <IgrColumn movable="true" sortable="true" resizable="true" field="ContactTitle"></IgrColumn>
+        <IgrColumn movable={true} sortable={true} resizable={true} field="CompanyName"></IgrColumn>
+        <IgrColumnGroup movable={true} header="Person Details">
+            <IgrColumn movable={true} pinned={false} sortable={true} resizable={true} field="ContactName"></IgrColumn>
+            <IgrColumn movable={true} sortable={true} resizable={true} field="ContactTitle"></IgrColumn>
         </IgrColumnGroup>
     </IgrColumnGroup>
 </{ComponentSelector}>
@@ -293,13 +293,13 @@ _language: ja
 <!-- end: WebComponents -->
 
 ```tsx
-<{ComponentSelector} primaryKey="ID" foreignKey="ParentID" moving="true">
-    <IgrColumnGroup pinned="false" header="General Information">
-        <IgrColumn field="HireDate" sortable="true" resizable="true" dataType={GridColumnDataType.Date}></IgrColumn>
+<{ComponentSelector} primaryKey="ID" foreignKey="ParentID" moving={true}>
+    <IgrColumnGroup pinned={false} header="General Information">
+        <IgrColumn field="HireDate" sortable={true} resizable={true} dataType="date"></IgrColumn>
         <IgrColumnGroup header="Person Details">
-            <IgrColumn field="ID" resizable="true" filterable="true" dataType={GridColumnDataType.Number}></IgrColumn>
-            <IgrColumn field="Title" sortable="true" resizable="true" dataType={GridColumnDataType.String}></IgrColumn>
-            <IgrColumn field="Age" sortable="true" resizable="true" dataType={GridColumnDataType.Number}></IgrColumn>
+            <IgrColumn field="ID" resizable={true} filterable={true} dataType="number"></IgrColumn>
+            <IgrColumn field="Title" sortable={true} resizable={true} dataType="string"></IgrColumn>
+            <IgrColumn field="Age" sortable={true} resizable={true} dataType="number"></IgrColumn>
         </IgrColumnGroup>
     </IgrColumnGroup>
 </{ComponentSelector}>
@@ -350,13 +350,13 @@ _language: ja
 <!-- end: WebComponents -->
 
 ```tsx
-<IgrHierarchicalGrid autoGenerate="false" data={this.hierarchicalCustomers} ref={this.hierarchicalGridRef} id="hierarchicalGrid" primaryKey="ID" moving="true" allowFiltering="true">
-    <IgrColumn sortable="true" resizable="true" field="CustomerID" dataType={GridColumnDataType.String}></IgrColumn>
+<IgrHierarchicalGrid autoGenerate={false} data={hierarchicalCustomers} ref={hierarchicalGridRef} id="hierarchicalGrid" primaryKey="ID" moving={true} allowFiltering={true}>
+    <IgrColumn sortable={true} resizable={true} field="CustomerID" dataType="string"></IgrColumn>
     <IgrColumnGroup header="General Information">
-        <IgrColumn sortable="true" resizable="true" field="CompanyName" dataType={GridColumnDataType.String}></IgrColumn>
+        <IgrColumn sortable={true} resizable={true} field="CompanyName" dataType="string"></IgrColumn>
         <IgrColumnGroup header="Person Details">
-            <IgrColumn sortable="true" resizable="true" field="ContactName" dataType={GridColumnDataType.String}></IgrColumn>
-            <IgrColumn sortable="true" resizable="true" field="ContactTitle" dataType={GridColumnDataType.String}></IgrColumn>
+            <IgrColumn sortable={true} resizable={true} field="ContactName" dataType="string"></IgrColumn>
+            <IgrColumn sortable={true} resizable={true} field="ContactTitle" dataType="string"></IgrColumn>
         </IgrColumnGroup>
     </IgrColumnGroup>
 </IgrHierarchicalGrid>
@@ -409,13 +409,13 @@ _language: ja
 <!-- end: WebComponents -->
 
 ```tsx
-<{ComponentSelector} height="600px" allowFiltering="true">
-    <IgrColumnGroup movable="true" pinned="true" header="General Information">
-        <IgrColumn movable="true" sortable="true" resizable="true" field="CompanyName"></IgrColumn>
+<{ComponentSelector} height="600px" allowFiltering={true}>
+    <IgrColumnGroup movable={true} pinned={true} header="General Information">
+        <IgrColumn movable={true} sortable={true} resizable={true} field="CompanyName"></IgrColumn>
     </IgrColumnGroup>
-    <IgrColumn sortable="true" resizable="true" field="Phone"></IgrColumn>
-    <IgrColumn sortable="true" resizable="true" field="Fax"></IgrColumn>
-    <IgrColumn sortable="true" resizable="true" field="PostalCode"></IgrColumn>
+    <IgrColumn sortable={true} resizable={true} field="Phone"></IgrColumn>
+    <IgrColumn sortable={true} resizable={true} field="Fax"></IgrColumn>
+    <IgrColumn sortable={true} resizable={true} field="PostalCode"></IgrColumn>
 </{ComponentSelector}>
 ```
 <!-- ComponentEnd: Grid -->
@@ -459,13 +459,13 @@ _language: ja
 <!-- end: WebComponents -->
 
 ```tsx
-<{ComponentSelector} primaryKey="ID" foreignKey="ParentID" moving="true">
+<{ComponentSelector} primaryKey="ID" foreignKey="ParentID" moving={true}>
     <IgrColumnGroup header="Contact Information">
-        <IgrColumn field="Phone" movable="true" sortable="true" resizable="true" dataType={GridColumnDataType.String}></IgrColumn>
+        <IgrColumn field="Phone" movable={true} sortable={true} resizable={true} dataType="string"></IgrColumn>
     </IgrColumnGroup>
-    <IgrColumn field="Name" sortable="true" resizable="true" dataType={GridColumnDataType.String}></IgrColumn>
-    <IgrColumn field="Title" sortable="true" resizable="true" dataType={GridColumnDataType.String}></IgrColumn>
-    <IgrColumn field="Age" sortable="true" resizable="true" dataType={GridColumnDataType.Number}></IgrColumn>
+    <IgrColumn field="Name" sortable={true} resizable={true} dataType="string"></IgrColumn>
+    <IgrColumn field="Title" sortable={true} resizable={true} dataType="string"></IgrColumn>
+    <IgrColumn field="Age" sortable={true} resizable={true} dataType="number"></IgrColumn>
 </{ComponentSelector}>
 ```
 <!-- ComponentEnd: TreeGrid -->
@@ -514,13 +514,13 @@ _language: ja
 <!-- end: WebComponents -->
 
 ```tsx
-<IgrHierarchicalGrid autoGenerate="false" data={this.hierarchicalCustomers} ref={this.hierarchicalGridRef} id="hierarchicalGrid" primaryKey="ID" moving="true" allowFiltering="true">
-    <IgrColumn sortable="true" resizable="true" movable="true" pinned="true" field="CustomerID" dataType={GridColumnDataType.String}></IgrColumn>
-    <IgrColumnGroup movable="true" pinned="true" header="General Information">
-        <IgrColumn sortable="true" resizable="true" field="CompanyName" dataType={GridColumnDataType.String}></IgrColumn>
+<IgrHierarchicalGrid autoGenerate={false} data={hierarchicalCustomers} ref={hierarchicalGridRef} id="hierarchicalGrid" primaryKey="ID" moving={true} allowFiltering={true}>
+    <IgrColumn sortable={true} resizable={true} movable={true} pinned={true} field="CustomerID" dataType="string"></IgrColumn>
+    <IgrColumnGroup movable={true} pinned={true} header="General Information">
+        <IgrColumn sortable={true} resizable={true} field="CompanyName" dataType="string"></IgrColumn>
         <IgrColumnGroup header="Person Details">
-            <IgrColumn sortable="true" resizable="true" field="ContactName" dataType={GridColumnDataType.String}></IgrColumn>
-            <IgrColumn sortable="true" resizable="true" field="ContactTitle" dataType={GridColumnDataType.String}></IgrColumn>
+            <IgrColumn sortable={true} resizable={true} field="ContactName" dataType="string"></IgrColumn>
+            <IgrColumn sortable={true} resizable={true} field="ContactTitle" dataType="string"></IgrColumn>
         </IgrColumnGroup>
     </IgrColumnGroup>
 </IgrHierarchicalGrid>
@@ -640,8 +640,8 @@ public columnGroupHeaderTemplate = (ctx: IgcColumnTemplateContext) => {
 ```
 
 ```tsx
-function groupHeaderTemplate(e: { dataContext: IgrColumnTemplateContext }) {
-    const column = e.dataContext.column as IgrColumnGroup;
+const groupHeaderTemplate = (e: IgrColumnTemplateContext) => {
+  const column = e.column as IgrColumnGroup;
     return (
       <div>
         <span style={{ float: "left" }}>{column.header.toUpperCase()}</span>
@@ -682,8 +682,8 @@ public columnHeaderTemplate = (ctx: IgcColumnTemplateContext) => {
 ```
 
 ```tsx
-function columnHeaderTemplate(e: { dataContext: IgrColumnTemplateContext }) {
-    const column = e.dataContext.column as IgrColumnGroup;
+const columnHeaderTemplate = (e: IgrColumnTemplateContext ) => {
+  const column = e.column as IgrColumnGroup;
     return (
       <span onClick={onClick}>
         <IgrIcon data-draggable="false"></IgrIcon>

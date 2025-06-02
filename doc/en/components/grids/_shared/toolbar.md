@@ -66,15 +66,15 @@ The predefined `Actions` and `Title` UI components are added inside the `GridToo
 
 ```tsx
 <IgrGrid>
-    <IgrGridToolbar key="toolbar">
-        <IgrGridToolbarTitle key="toolbarTitle">
-            <span key="toolbarTitleText">Grid Toolbar<span>
+    <IgrGridToolbar>
+        <IgrGridToolbarTitle>
+            <span>Grid Toolbar<span>
         </IgrGridToolbarTitle>
-        <IgrGridToolbarActions key="toolbarActions">
-            <IgrGridToolbarAdvancedFiltering key="advancedFiltering"></IgrGridToolbarAdvancedFiltering>
-            <IgrGridToolbarPinning key="pinning"></IgrGridToolbarPinning>
-            <IgrGridToolbarHiding key="hiding"></IgrGridToolbarHiding>
-            <IgrGridToolbarExporter key="export"></IgrGridToolbarExporter>
+        <IgrGridToolbarActions>
+            <IgrGridToolbarAdvancedFiltering></IgrGridToolbarAdvancedFiltering>
+            <IgrGridToolbarPinning></IgrGridToolbarPinning>
+            <IgrGridToolbarHiding></IgrGridToolbarHiding>
+            <IgrGridToolbarExporter></IgrGridToolbarExporter>
         </IgrGridToolbarActions>
     </IgrGridToolbar>
 </IgrGrid>
@@ -137,16 +137,16 @@ The predefined `Actions` and `Title` UI components are added inside the `GridToo
 <!-- React -->
 <!-- ComponentStart: TreeGrid -->
 ```tsx
-<IgrTreeGrid data={data} primaryKey="ID" foreignKey="ParentID" autoGenerate="true">
-    <IgrGridToolbar key="toolbar">
-        <IgrGridToolbarTitle key="toolbarTitle">
-            <span key="toolbarTitleText">Tree Grid Toolbar<span>
+<IgrTreeGrid data={data} primaryKey="ID" foreignKey="ParentID" autoGenerate={true}>
+    <IgrGridToolbar>
+        <IgrGridToolbarTitle>
+            <span>Tree Grid Toolbar<span>
         </IgrGridToolbarTitle>
-        <IgrGridToolbarActions key="toolbarActions">
-            <IgrGridToolbarAdvancedFiltering key="advancedFiltering"></IgrGridToolbarAdvancedFiltering>
-            <IgrGridToolbarPinning key="pinning"></IgrGridToolbarPinning>
-            <IgrGridToolbarHiding key="hiding"></IgrGridToolbarHiding>
-            <IgrGridToolbarExporter key="export"></IgrGridToolbarExporter>
+        <IgrGridToolbarActions>
+            <IgrGridToolbarAdvancedFiltering></IgrGridToolbarAdvancedFiltering>
+            <IgrGridToolbarPinning></IgrGridToolbarPinning>
+            <IgrGridToolbarHiding></IgrGridToolbarHiding>
+            <IgrGridToolbarExporter></IgrGridToolbarExporter>
         </IgrGridToolbarActions>
     </IgrGridToolbar>
 </IgrTreeGrid>
@@ -215,15 +215,15 @@ The predefined `Actions` and `Title` UI components are added inside the `GridToo
 <!-- ComponentStart: HierarchicalGrid -->
 ```tsx
 <IgrHierarchicalGrid>
-    <IgrGridToolbar key="toolbar">
-        <IgrGridToolbarTitle key="toolbarTitle">
-            <span key="toolbarTitleText">Hierarchical Grid Toolbar<span>
+    <IgrGridToolbar>
+        <IgrGridToolbarTitle>
+            <span>Hierarchical Grid Toolbar<span>
         </IgrGridToolbarTitle>
-        <IgrGridToolbarActions key="toolbarActions">
-            <IgrGridToolbarAdvancedFiltering key="advancedFiltering"></IgrGridToolbarAdvancedFiltering>
-            <IgrGridToolbarPinning key="pinning"></IgrGridToolbarPinning>
-            <IgrGridToolbarHiding key="hiding"></IgrGridToolbarHiding>
-            <IgrGridToolbarExporter key="export"></IgrGridToolbarExporter>
+        <IgrGridToolbarActions>
+            <IgrGridToolbarAdvancedFiltering></IgrGridToolbarAdvancedFiltering>
+            <IgrGridToolbarPinning></IgrGridToolbarPinning>
+            <IgrGridToolbarHiding></IgrGridToolbarHiding>
+            <IgrGridToolbarExporter></IgrGridToolbarExporter>
         </IgrGridToolbarActions>
     </IgrGridToolbar>
 </IgrHierarchicalGrid>
@@ -277,7 +277,7 @@ Of course, each of these UIs can be added independently of each other, or may no
 
 ```tsx
 <IgrGrid>
-    <IgrGridToolbar key="toolbar">
+    <IgrGridToolbar>
     </IgrGridToolbar>
 </IgrGrid>
 ```
@@ -308,8 +308,8 @@ Of course, each of these UIs can be added independently of each other, or may no
 <!-- React -->
 <!-- ComponentStart: TreeGrid -->
 ```tsx
-<IgrTreeGrid data={data} primaryKey="ID" foreignKey="ParentID" autoGenerate="true">
-    <IgrGridToolbar key="toolbar">
+<IgrTreeGrid data={data} primaryKey="ID" foreignKey="ParentID" autoGenerate={true}>
+    <IgrGridToolbar>
     </IgrGridToolbar>
 </IgrTreeGrid>
 ```
@@ -364,7 +364,7 @@ Of course, each of these UIs can be added independently of each other, or may no
 <!-- ComponentStart: HierarchicalGrid -->
 ```tsx
 <IgrHierarchicalGrid>
-    <IgrGridToolbar key="toolbar">
+    <IgrGridToolbar>
     </IgrGridToolbar>
 </IgrHierarchicalGrid>
 ```
@@ -373,7 +373,7 @@ Of course, each of these UIs can be added independently of each other, or may no
 
 For a comprehensive look over each of the default UI components, continue reading the **Features** section below.
 
-<!-- Angular, WebComponents -->
+<!-- Angular, WebComponents, React -->
 <!-- ComponentStart: HierarchicalGrid -->
 ## Toolbar with Child Grids
 
@@ -399,9 +399,9 @@ This will make sure you always have the correct grid instance in the scope of yo
 ```
 <!-- end: Angular -->
 
-<!-- WebComponents -->
+<!-- WebComponents, React -->
 Due to certain limitations in how the child grids of an `{ComponentSelector}` are implemented and how DI scope works, to define a toolbar component inside the `{RowIslandSelector}`, use the `ToolbarTemplate` input property. This allows child grids to create their own separate toolbar instances:
-<!-- end: WebComponents -->
+<!-- end: WebComponents, React -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- WebComponents -->
@@ -455,8 +455,10 @@ igRegisterScript("RowIslandToolbarTemplate", () => {
 }, false);
 ```
 
+<!-- React -->
+<!-- ComponentStart: HierarchicalGrid -->
 ```tsx
-function rowIslandToolbarTemplate = () => {
+const rowIslandToolbarTemplate = (ctx: IgrGridToolbarTemplateContext) => {
     return (
         <IgrGridToolbar>
             <IgrGridToolbarActions>
@@ -475,7 +477,9 @@ function rowIslandToolbarTemplate = () => {
     </IgrRowIsland>
 </IgrHierarchicalGrid>
 ```
-<!-- end: Angular, WebComponents -->
+<!-- end: React -->
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- end: Angular, WebComponents, React -->
 
 ## Features
 
@@ -527,9 +531,9 @@ Users can provide anything from simple text to more involved templates.
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-<IgrGridToolbar key="toolbar">
-    <IgrGridToolbarTitle key="toolbarTitle">
-        <span key="toolbarTitleText">Grid toolbar title<span>
+<IgrGridToolbar>
+    <IgrGridToolbarTitle>
+        <span>Grid toolbar title<span>
     </IgrGridToolbarTitle>
 </IgrGridToolbar>
 ```
@@ -594,8 +598,8 @@ toolbar interaction components.
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-<IgrGridToolbar key="toolbar">
-    <IgrGridToolbarActions key="toolbarActions">
+<IgrGridToolbar>
+    <IgrGridToolbarActions>
 
     </IgrGridToolbarActions>
 </IgrGridToolbar>
@@ -713,9 +717,9 @@ The component is setup to work out of the box with the parent grid containing th
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-<IgrGridToolbar key="toolbar">
-    <IgrGridToolbarActions key="toolbarActions">
-        <IgrGridToolbarPinning key="pinning" title="Grid pinned columns" prompt="Filter column collection" columnListHeight="400px"></IgrGridToolbarPinning>
+<IgrGridToolbar>
+    <IgrGridToolbarActions>
+        <IgrGridToolbarPinning title="Grid pinned columns" prompt="Filter column collection" columnListHeight="400px"></IgrGridToolbarPinning>
     </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
@@ -775,9 +779,9 @@ title, the placeholder for the component input and the height of the dropdown it
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-<IgrGridToolbar key="toolbar">
-    <IgrGridToolbarActions key="toolbarActions">
-        <IgrGridToolbarHiding key="hiding" title="Grid column hiding" prompt="Filter column collection" columnListHeight="400px"></IgrGridToolbarHiding>
+<IgrGridToolbar>
+    <IgrGridToolbarActions>
+        <IgrGridToolbarHiding title="Grid column hiding" prompt="Filter column collection" columnListHeight="400px"></IgrGridToolbarHiding>
     </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
@@ -827,9 +831,9 @@ Toolbar Advanced Filtering component provides the default UI for the Advanced Fi
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-<IgrGridToolbar key="toolbar">
-    <IgrGridToolbarActions key="toolbarActions">
-        <IgrGridToolbarAdvancedFiltering key="advancedFiltering"></IgrGridToolbarAdvancedFiltering>
+<IgrGridToolbar>
+    <IgrGridToolbarActions>
+        <IgrGridToolbarAdvancedFiltering></IgrGridToolbarAdvancedFiltering>
     </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
@@ -926,9 +930,9 @@ Here is a snippet showing some of the options which can be customized through th
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-<IgrGridToolbar key="toolbar">
-    <IgrGridToolbarActions key="toolbarActions">
-        <IgrGridToolbarExporter key="export" exportCSV="true" exportExcel="true" filename="exported_data"></IgrGridToolbarExporter>
+<IgrGridToolbar>
+    <IgrGridToolbarActions>
+        <IgrGridToolbarExporter exportCSV={true} exportExcel={true} filename="exported_data"></IgrGridToolbarExporter>
     </IgrGridToolbarActions>
 </IgrGridToolbar>
 ```
@@ -965,7 +969,7 @@ constructor() {
 <!-- end: WebComponents -->
 
 ```tsx
-function configureExport(evt: IgrGridToolbarExportEventArgs) {
+const configureExport = (evt: IgrGridToolbarExportEventArgs) => {
     const args = evt.detail;
     const options: IgrExporterOptionsBase = args.options;
 
@@ -975,7 +979,7 @@ function configureExport(evt: IgrGridToolbarExportEventArgs) {
     });
 }
 
-<{ComponentSelector} toolbarExporting={configureExport}>
+<{ComponentSelector} onToolbarExporting={configureExport}>
 </{ComponentSelector}>
 ```
 
@@ -1064,7 +1068,7 @@ public configureExport(evt: CustomEvent<IgcGridToolbarExportEventArgs>) {
 <!-- end: WebComponents -->
 
 ```tsx
-function configureExport(evt: IgrGridToolbarExportEventArgs) {
+const configureExport = (evt: IgrGridToolbarExportEventArgs) => {
     const args = evt.detail;
     const options: IgrExporterOptionsBase = args.options;
 
@@ -1074,7 +1078,7 @@ function configureExport(evt: IgrGridToolbarExportEventArgs) {
     });
 }
 
-<{ComponentSelector} toolbarExporting={configureExport}>
+<{ComponentSelector} onToolbarExporting={configureExport}>
 </{ComponentSelector}>
 ```
 
@@ -1119,7 +1123,7 @@ public configureExport(evt: CustomEvent<IgcGridToolbarExportEventArgs>) {
 <!-- end: WebComponents -->
 
 ```tsx
-function configureExport(evt: IgrGridToolbarExportEventArgs) {
+const configureExport = (evt: IgrGridToolbarExportEventArgs) => {
     const args = evt.detail;
     const options: IgrExporterOptionsBase = args.options;
 
@@ -1129,7 +1133,7 @@ function configureExport(evt: IgrGridToolbarExportEventArgs) {
     });
 }
 
-<{ComponentSelector} toolbarExporting={configureExport}>
+<{ComponentSelector} onToolbarExporting={configureExport}>
 </{ComponentSelector}>
 ```
 
@@ -1229,14 +1233,14 @@ Here is a sample snippet:
 ```tsx
 <{ComponentSelector}>
     <IgrGridToolbar>
-        <IgrGridToolbarTitle key="toolbarTitle">
-            <span key="toolbarTitleText">title<span>
+        <IgrGridToolbarTitle>
+            <span>Custom Title<span>
         </IgrGridToolbarTitle>
         {/*
             Everything between the toolbar tags except the default toolbar components
             will be projected as custom content.
         */}
-        <IgrGridToolbarActions key="toolbarActions">
+        <IgrGridToolbarActions>
         </IgrGridToolbarActions>
     </IgrGridToolbar>
 </{ComponentSelector}>
@@ -1427,7 +1431,7 @@ The last step is to **include** the newly created themes.
 ## Known Limitations
 
 > [!Note]
-> Currently, defining a toolbar component inside the {RowIslandSelector} is not supported.
+> Currently, defining a toolbar component directly inside the {RowIslandSelector} is not supported. Use the `ToolbarTemplate` property instead.
 <!-- end: React, Blazor -->
 <!-- ComponentEnd: HierarchicalGrid -->
 

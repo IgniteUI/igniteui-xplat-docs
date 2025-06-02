@@ -72,8 +72,8 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbDataGridModule));
 <!-- React -->
 
 ```ts
-import { IgrDataGridModule } from 'igniteui-react-grids';
-import { IgrDataGrid } from 'igniteui-react-grids';
+import { IgrDataGridModule } from 'igniteui-react-data-grids';
+import { IgrDataGrid } from 'igniteui-react-data-grids';
 
 IgrDataGridModule.register();
 ```
@@ -84,8 +84,8 @@ IgrDataGridModule.register();
 
 ```ts
 import { ModuleManager } from 'igniteui-webcomponents-core';
-import { IgcDataGridModule } from 'igniteui-webcomponents-grids';
-import { IgcDataGridComponent } from 'igniteui-webcomponents-grids';
+import { IgcDataGridModule } from 'igniteui-webcomponents-data-grids';
+import { IgcDataGridComponent } from 'igniteui-webcomponents-data-grids';
 
 ModuleManager.register(
     IgcDataGridModule
@@ -111,8 +111,8 @@ builder.Services.AddIgniteUIBlazor(
 ```
 
 ```ts
-import { IgrGridColumnOptionsModule } from 'igniteui-react-grids';
-import { IgrDataGridToolbarModule } from "igniteui-react-grids";
+import { IgrGridColumnOptionsModule } from 'igniteui-react-data-grids';
+import { IgrDataGridToolbarModule } from "igniteui-react-data-grids";
 import { IgrSparklineModule } from 'igniteui-react-charts';
 
 IgrGridColumnOptionsModule.register();
@@ -121,10 +121,10 @@ IgrSparklineModule.register();
 ```
 
 ```ts
-import { IgcGridColumnOptionsModule } from 'igniteui-webcomponents-grids';
-import { IgcGridColumnOptionsComponent } from 'igniteui-webcomponents-grids';
-import { IgcDataGridToolbarModule } from 'igniteui-webcomponents-grids';
-import { IgcDataGridToolbarComponent } from 'igniteui-webcomponents-grids';
+import { IgcGridColumnOptionsModule } from 'igniteui-webcomponents-data-grids';
+import { IgcGridColumnOptionsComponent } from 'igniteui-webcomponents-data-grids';
+import { IgcDataGridToolbarModule } from 'igniteui-webcomponents-data-grids';
+import { IgcDataGridToolbarComponent } from 'igniteui-webcomponents-data-grids';
 import { IgcSparklineModule } from 'igniteui-webcomponents-charts';
 import { IgcSparklineComponent } from 'igniteui-webcomponents-charts';
 

@@ -197,41 +197,46 @@ igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
 ```
 
 ```tsx
-<{ComponentSelector} id="grid1" primaryKey="ProductID" gridKeydown={customKeydown}>
+<{ComponentSelector} id="grid1" primaryKey="ProductID" onGridKeydown={customKeydown}>
 </{ComponentSelector}>
 ```
-
+<!-- WebComponents -->
 ```ts
 constructor() {
-        var grid = this.grid = document.getElementById('grid') as {ComponentName}Component;
+        const grid = this.grid = document.getElementById('grid1') as {ComponentName}Component;
 		grid.data = this.data
 		grid.addEventListener("gridKeydown", this.customKeydown);
 	}
 ```
+<!-- end: WebComponents -->
 
-```typescript
-function customKeydown(s: IgrGridBaseDirective, e: IgrGridKeydownEventArgs) {
-  const detail = e.detail
-  const target= detail.target;
-  const evt = detail.event;
-  const type = detail.targetType;
+<!-- React -->
 
-  if (type === GridKeydownTargetType.DataCell && target.editMode && evt.key.toLowerCase() === 'tab') {
+```tsx
+const customKeydown = (eventArgs: IgrGridKeydownEventArgs) => {
+  const args = eventArgs.detail;
+  const target= args.target;
+  const evt = args.event;
+  const type = args.targetType;
+
+  if (type === 'dataCell' && target.editMode && evt.key.toLowerCase() === 'tab') {
       // 1. USER INPUT VALIDATION ON TAB
       
   }
-  if (type === GridKeydownTargetType.DataCell && evt.key.toLowerCase() === 'enter') {
+  if (type === 'dataCell' && evt.key.toLowerCase() === 'enter') {
       // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
-
   }
 }
 ```
 
+<!-- end: React -->
+
+<!-- WebComponents -->
 
 ```typescript
-public customKeydown(args: any) {
+public customKeydown(args: : CustomEvent<IgcGridKeydownEventArgs>) {
     const evt = args.detail;
-    const target: IgxGridCell = evt.target as IgxGridCell;
+    const target = evt.target as IgcCellType;
     const evt: KeyboardEvent = evt.event as KeyboardEvent;
     const type = evt.targetType;
 
@@ -243,6 +248,9 @@ public customKeydown(args: any) {
     }
 }
 ```
+
+<!-- WebComponents -->
+
 <!-- Angular, WebComponents, Blazor -->
 
 Based on the event arg values we identified two cases, where to provide our own logic (see above). Now, using the methods from the API, let's perform the desired - if the user is pressing <kbd>Tab</kbd> key over a cell in edit mode, we will perform validation on the input. If the user is pressing <kbd>Enter</kbd> key over a cell, we will move focus to cell in the next row:

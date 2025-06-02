@@ -49,8 +49,8 @@ _language: ja
 ```
 
 ```ts
-import { IgrDataGrid } from 'igniteui-react-grids';
-import { IgrTemplateColumn, IIgrCellTemplateProps } from 'igniteui-react-grids';
+import { IgrDataGrid } from 'igniteui-react-data-grids';
+import { IgrTemplateColumn, IIgrCellTemplateProps } from 'igniteui-react-data-grids';
 
 public getOrderHistoryTemplate(props: IIgrCellTemplateProps) {
     const info = props.dataContext as IgrTemplateCellInfo;
@@ -84,11 +84,11 @@ public getOrderHistoryTemplate(props: IIgrCellTemplateProps) {
 ```
 
 ```ts
-import { IgcDataGridModule } from 'igniteui-webcomponents-grids';
-import { IgcDataGridComponent } from 'igniteui-webcomponents-grids';
-import { IgcTemplateColumnComponent } from 'igniteui-webcomponents-grids';
-import { IgcTemplateCellInfo } from 'igniteui-webcomponents-grids';
-import { IgcTemplateCellUpdatingEventArgs } from 'igniteui-webcomponents-grids';
+import { IgcDataGridModule } from 'igniteui-webcomponents-data-grids';
+import { IgcDataGridComponent } from 'igniteui-webcomponents-data-grids';
+import { IgcTemplateColumnComponent } from 'igniteui-webcomponents-data-grids';
+import { IgcTemplateCellInfo } from 'igniteui-webcomponents-data-grids';
+import { IgcTemplateCellUpdatingEventArgs } from 'igniteui-webcomponents-data-grids';
 import { IgcSparklineModule } from 'igniteui-webcomponents-charts';
 import { IgcSparklineComponent } from 'igniteui-webcomponents-charts';
 

@@ -83,8 +83,8 @@ _language: ja
 ```
 
 ```ts
-import { IgrColumnGroupDescription } from 'igniteui-react-grids';
-import { IgrColumnSummaryDescription } from 'igniteui-react-grids'
+import { IgrColumnGroupDescription } from 'igniteui-react-data-grids';
+import { IgrColumnSummaryDescription } from 'igniteui-react-data-grids'
 import { SummaryOperand, SummaryCalculator, DefaultSummaryResult, IDataSource, ISummaryResult } from 'igniteui-react-core';
 
 public componentDidMount() {
@@ -124,8 +124,8 @@ public onLoad() {
 ```
 
 ```ts
-import { IgcColumnGroupDescription } from 'igniteui-webcomponents-grids';
-import { IgcColumnSummaryDescription } from 'igniteui-webcomponents-grids'
+import { IgcColumnGroupDescription } from 'igniteui-webcomponents-data-grids';
+import { IgcColumnSummaryDescription } from 'igniteui-webcomponents-data-grids'
 import { SummaryOperand, SummaryCalculator, DefaultSummaryResult, IDataSource, ISummaryResult } from 'igniteui-webcomponents-core';
 
 connectedCallback() {

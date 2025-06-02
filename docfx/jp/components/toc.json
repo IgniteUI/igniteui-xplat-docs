@@ -164,12 +164,14 @@
       {
         "exclude": ["Angular"],
         "name": "縮小可能な列グループ",
-        "href": "grids/grid/collapsible-column-groups.md"
+        "href": "grids/grid/collapsible-column-groups.md",
+        "status": ["UPDATED_REACT"]
       },
       {
         "exclude": ["Angular"],
         "name": "列の非表示",
-        "href": "grids/grid/column-hiding.md"
+        "href": "grids/grid/column-hiding.md",
+        "status": ["UPDATED_REACT"]
       },
       {
         "exclude": ["Angular"],
@@ -400,7 +402,8 @@
       {
         "exclude": ["Angular"],
         "name": "列の非表示",
-        "href": "grids/hierarchical-grid/column-hiding.md"
+        "href": "grids/hierarchical-grid/column-hiding.md",
+        "status": ["UPDATED_REACT"]
       },
       {
         "exclude": ["Angular"],
@@ -636,7 +639,8 @@
       {
         "exclude": ["Angular"],
         "name": "列の非表示",
-        "href": "grids/tree-grid/column-hiding.md"
+        "href": "grids/tree-grid/column-hiding.md",
+        "status": ["UPDATED_REACT"]
       },
       {
         "exclude": ["Angular", "React"],
@@ -1241,8 +1245,8 @@
           "status": ""
         },
         {
-          "name": "チャート注釈",
-          "href": "charts/features/chart-annotations.md",
+          "name": "チャート テータ注釈",
+          "href": "charts/features/chart-data-annotations.md",
           "status": "NEW"
         },
         {

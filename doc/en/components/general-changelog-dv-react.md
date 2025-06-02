@@ -28,6 +28,16 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 - New [Trendline Layer](charts/features/chart-trendlines.md) series type that allows you to apply a single trend line per trend line layer to a particular series. This allows the usage of multiple trend lines on a single series since you can have multiple [TrendlineLayer](charts/features/chart-overlays.md) series types in the chart.
 
+### {PackageDashboards} (Dashboards)
+
+- The `IgrDashboardTile` now supports propagating the aggregations from its DataGrid view to the chart visualization such as sorting, grouping, filtering and selection. This is currently supported by binding the `DataSource` of the `IgrDashboardTile` to an instance of `IgrLocalDataSource`.
+
+### {PackageGrids}
+
+**Breaking Changes**
+
+- The `IgrDataGrid` now exists as part of the igniteui-react-data-grids package.
+
 ### Enhancements
 
 #### Toolbar
@@ -36,6 +46,14 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 #### Data Pie Chart
 - The chart now exposes a `GetOthersContext()` method. This will return the contents of the "others" slice.
+
+### Bug Fixes
+
+| Bug Number | Control | Description      |
+|------------|---------|------------------|
+|37023|IgrDataChart|Tooltips are cut-off/offscreen if overflow hidden is set.
+|37244|Excel|Custom Data Validation is not working.
+|37685|IgrSpreadsheet|Poor rendering of numbers formatted with Arial font.
 
 ## **{PackageVerChanges-24-2-APR2}**
 > [!Note]With 19.0.0 the React product introduces many breaking changes done to improve and streamline the API. Please refer to the full Update Guide.
@@ -659,7 +677,7 @@ The data grid component property `propertyPath` has been renamed to `field`. Thi
 ```
 
 ```ts
-import { IgrColumnSummaryDescription, IgrColumnSortDescription, IgrColumnGroupDescription } from 'igniteui-react-grids'
+import { IgrColumnSummaryDescription, IgrColumnSortDescription, IgrColumnGroupDescription } from 'igniteui-react-data-grids'
 const productCount = new IgrColumnSummaryDescription();
 productCount.field = "ProductName";
 const colSortDesc = new IgrColumnSortDescription();
@@ -682,8 +700,8 @@ The data grid component and it's corresponding module's names have changed from 
 The new code for importing the grid and it's corresponding module is:
 
 ```ts
-import { IgrDataGrid } from "igniteui-react-grids";
-import { IgrDataGridModule } from 'igniteui-react-grids';
+import { IgrDataGrid } from "igniteui-react-data-grids";
+import { IgrDataGridModule } from 'igniteui-react-data-grids';
 ```
 
 - Required Peer Dependency for Data Grid
@@ -739,8 +757,8 @@ import { IgrDataChartCoreModule } from 'igniteui-react-charts';
 import { IgrGeographicMap } from "igniteui-react-maps";
 import { IgrGeographicMapModule } from "igniteui-react-maps";
 // grids:
-import { IgrLiveGrid } from "igniteui-react-grids";
-import { IgrLiveGridModule } from 'igniteui-react-grids';
+import { IgrLiveGrid } from "igniteui-react-data-grids";
+import { IgrLiveGridModule } from 'igniteui-react-data-grids';
 ```
 
 - Code Before Changes
@@ -769,6 +787,6 @@ import { IgrGeographicMap } from "igniteui-react-maps/ES5/igr-geographic-map";
 import { IgrGeographicMapModule } from "igniteui-react-maps/ES5/igr-geographic-map-module";
 
 // grids:
-import { IgrLiveGrid } from "igniteui-react-grids/ES5/igr-live-grid";
-import { IgrLiveGridModule } from 'igniteui-react-grids/ES5/igr-live-grid-module';
+import { IgrLiveGrid } from "igniteui-react-data-grids/ES5/igr-live-grid";
+import { IgrLiveGridModule } from 'igniteui-react-data-grids/ES5/igr-live-grid-module';
 ```

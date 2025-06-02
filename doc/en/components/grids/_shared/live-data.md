@@ -42,7 +42,7 @@ A service provides data to the component when the page loads, and when the slide
 
 <!-- React -->
 ```tsx
-<{ComponentSelector} id="grid1"></{ComponentSelector}>
+<{ComponentSelector}></{ComponentSelector}>
 ```
 <!-- end: React -->
 
@@ -76,21 +76,21 @@ public startUpdate() {
 
 <!-- React -->
 ```typescript
-function startUpdate(frequency) {
-  const timer = setInterval(() => {
-    setData(prevData => FinancialDataClass.updateRandomPrices(prevData));
+const startUpdate = () => {
+  timer.current = setInterval(() => {
+    setData((oldData) => FinancialData.updateAllPrices(oldData));
   }, frequency);
 
-  setStartButtonDisabled(true);
-  setShowChartButtonDisabled(true);
-  setStopButtonDisabled(false);
+  setIsStartButtonDisabled(true);
+  setIsStopButtonDisabled(false);
+  setIsChartButtonDisabled(true);
 }
 ```
 
 A change in the data field value or a change in the data object/data collection reference will trigger the corresponding pipes. However, this is not the case for columns, which are bound to [complex data objects](../data-grid.md#complex-data-binding). To resolve the situation, provide a new object reference for the data object containing the property. Example:
 
 ```tsx
-<{ComponentSelector} id="grid1">
+<{ComponentSelector}>
     <IgrColumn field="price.usd"></IgrColumn>
 </{ComponentSelector}>
 ```
@@ -135,7 +135,7 @@ private updateData(data: any[]) {
 
 <!-- React -->
 ```typescript
-private updateData(data: any[]) {
+const updateData = (data: any[]) => {
     const newData = []
     for (const rowData of data) {
         rowData.price = { usd: getUSD(), eur: getEUR() };
