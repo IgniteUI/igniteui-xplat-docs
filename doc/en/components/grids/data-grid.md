@@ -728,7 +728,7 @@ public smallViewTemplate = (ctx: IgcCellTemplateContext) => {
 function normalViewTemplate(ctx: IgrCellTemplateContext) {
     return (
         <>
-            <div class="user-details">{ ctx.dataContext.cell.value }</div>
+            <div className="user-details">{ ctx.cell.value }</div>
             <UserDetailsComponent></UserDetailsComponent>
         </>
     );
@@ -737,7 +737,7 @@ function normalViewTemplate(ctx: IgrCellTemplateContext) {
 function smallViewTemplate(ctx: IgrCellTemplateContext) {
     return (
         <>
-            <div class="user-details-small">{ ctx.dataContext.cell.value }</div>
+            <div className="user-details-small">{ ctx.cell.value }</div>
         </>
     );
 }
@@ -966,18 +966,17 @@ public onDataLoaded(jsonData: any[]) {
 You can do this by fetching the data from a given url receiving a JSON response and assigning it to the grid's `data` property that is used as the grid's data source:
 
 ```tsx
-<IgrGrid ref={grid}></IgrGrid>
+<IgrGrid ref={grid} data={data}></IgrGrid>
 ```
 
 ```tsx
+const [data, setData] = useState<any[]>([]);
+
 function fetchData(url: string): void {
     fetch(url)
       .then(response => response.json())
-      .then(data => onDataLoaded(data));
+      .then(data => setData(data));
 }
-function onDataLoaded(jsonData: any[]) {
-    grid.current.data = jsonData;
-  }
 ```
 
 <!-- end:React -->
