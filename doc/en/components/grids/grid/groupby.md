@@ -49,19 +49,14 @@ const expressions = [
     { fieldName: 'ProductName', dir: SortingDirection.Desc },
     { fieldName: 'Released', dir: SortingDirection.Desc }
 ];
+const grid1Ref = useRef<IgrGrid>(null);
 
-function App() {
-    const grid1Ref = useRef<IgrGrid>(null);
-    return (
-    <>
-        <IgrGrid
-            autoGenerate={true}
-            groupingExpressions={expressions}
-            ref={grid1Ref}>
-        </IgrGrid>
-    </>
-    )
-}
+<IgrGrid
+    autoGenerate={true}
+    groupingExpressions={expressions}
+    ref={grid1Ref}>
+</IgrGrid>
+
 ```
 <!-- end: React -->
 
@@ -137,29 +132,15 @@ public ngOnInit() {
 <!-- end: Angular -->
 
 ```tsx
-function App() {
-    const gridRef = useRef<IgrGrid>(null);
-    return (
-    <>
-        <IgrGrid
-            autoGenerate={false}
-            ref={gridRef}
-            >
-            <IgrColumn field="OrderID" hidden={true}></IgrColumn>
-            <IgrColumn field="ShipCountry" header="Ship Country" width="200px" groupable={true}></IgrColumn>
-            <IgrColumn field="OrderDate" header="Order Date" dataType="date" width="200px" groupable={true}></IgrColumn>
-            <IgrColumn field="PostalCode" header="Postal Code" width="200px" groupable={true}></IgrColumn>
-            <IgrColumn field="Discontinued" width="200px" dataType="boolean" groupable={true}></IgrColumn>
-            <IgrColumn field="ShipName" header="Ship Name" width="200px" groupable={false}></IgrColumn>
-            <IgrColumn field="ShipCity" header="Ship City" width="200px" groupable={false}></IgrColumn>
-            <IgrColumn field="ShipperName" header="Shipper Name" width="200px" groupable={true}></IgrColumn>
-            <IgrColumn field="Salesperson" header="Sales Person" width="200px" groupable={true}></IgrColumn>
-            <IgrColumn field="UnitPrice" header="Unit Price" width="200px" groupable={true}></IgrColumn>
-            <IgrColumn field="Quantity" width="200px" groupable={true}></IgrColumn>
-        </IgrGrid>
-    </>
-  )
-}
+<IgrGrid
+    autoGenerate={false}
+    ref={gridRef}>
+    <IgrColumn field="OrderID" hidden={true}></IgrColumn>
+    <IgrColumn field="ShipCountry" header="Ship Country" width="200px" groupable={true}></IgrColumn>
+    <IgrColumn field="OrderDate" header="Order Date" dataType="date" width="200px" groupable={true}></IgrColumn>
+    <IgrColumn field="PostalCode" header="Postal Code" width="200px" groupable={true}></IgrColumn>
+    <IgrColumn field="Discontinued" width="200px" dataType="boolean" groupable={true}></IgrColumn>
+</IgrGrid>
 ```
 
 <!-- WebComponents -->
@@ -223,25 +204,25 @@ As with `GroupingExpressions`, setting a list of `GroupByExpandState` directly t
 
 <!-- WebComponents -->
 ```typescript
-    const groupRow = this.grid.getRowByIndex(0).groupRow;
-    grid.toggleGroup(groupRow);
+const groupRow = this.grid.getRowByIndex(0).groupRow;
+grid.toggleGroup(groupRow);
 ```
 
 ```typescript
-    const groupRow = this.grid.getRowByIndex(0);
-    groupRow.expanded = false;
+const groupRow = this.grid.getRowByIndex(0);
+groupRow.expanded = false;
 ```
 <!-- end: WebComponents -->
 
 <!-- React -->
 ```typescript
-    const groupRow = gridRef.current.getRowByIndex(0).groupRow;
-    gridRef.current.toggleGroup(groupRow);
+const groupRow = gridRef.current.getRowByIndex(0).groupRow;
+gridRef.current.toggleGroup(groupRow);
 ```
 
 ```typescript
-    const groupRow = gridRef.current.getRowByIndex(0);
-    groupRow.expanded = false;
+const groupRow = gridRef.current.getRowByIndex(0);
+groupRow.expanded = false;
 ```
 <!-- end: React -->
 
@@ -272,15 +253,15 @@ The code snippet below can be used to select all rows within a group using the g
 
 <!-- WebComponents -->
 ```typescript
-    const groupRow = this.grid.getRowByIndex(0).groupRow;
-    grid.selectRowsInGroup(groupRow);
+const groupRow = this.grid.getRowByIndex(0).groupRow;
+grid.selectRowsInGroup(groupRow);
 ```
 <!-- end: WebComponents -->
 
 <!-- React -->
 ```typescript
-    const groupRow = gridRef.current.getRowByIndex(0).groupRow;
-    gridRef.current.selectRowsInGroup(groupRow);
+const groupRow = gridRef.current.getRowByIndex(0).groupRow;
+gridRef.current.selectRowsInGroup(groupRow);
 ```
 <!-- end: React -->
 
@@ -293,15 +274,15 @@ If you need to deselect all rows within a group programmatically, you can use th
 
 <!-- WebComponents -->
 ```typescript
-    const groupRow = this.grid.getRowByIndex(0).groupRow;
-    grid.deselectRowsInGroup(groupRow);
+const groupRow = this.grid.getRowByIndex(0).groupRow;
+grid.deselectRowsInGroup(groupRow);
 ```
 <!-- end: WebComponents -->
 
 <!-- React -->
 ```typescript
-    const groupRow = gridRef.current.getRowByIndex(0).groupRow;
-    gridRef.current.deselectRowsInGroup(groupRow);
+const groupRow = gridRef.current.getRowByIndex(0).groupRow;
+gridRef.current.deselectRowsInGroup(groupRow);
 ```
 <!-- end: React -->
 
@@ -375,11 +356,11 @@ const template = (ctx: IgrGroupByRowSelectorTemplateContext) => {
 ```
 
 ```ts
-    public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateContext) => {
-        return html`
-            ${ ctx.implicit.selectedCount } / ${ ctx.implicit.totalCount  }
-        `;
-    }
+public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateContext) => {
+    return html`
+        ${ ctx.implicit.selectedCount } / ${ ctx.implicit.totalCount  }
+    `;
+}
 ```
 
 ```razor
@@ -409,10 +390,10 @@ const template = (ctx: IgrGroupByRowSelectorTemplateContext) => {
 ```
 
 ```ts
-    public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateContext) => {
-        const groupRow = ctx.implicit.groupRow;
-        return html` <div @click=${(e: any) => this.handleGroupByRowSelectorClick(e, groupRow)} ">Handle groupRow</div> `;
-    };
+public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateContext) => {
+    const groupRow = ctx.implicit.groupRow;
+    return html` <div @click=${(e: any) => this.handleGroupByRowSelectorClick(e, groupRow)} ">Handle groupRow</div> `;
+};
 ```
 
 ```razor
@@ -557,12 +538,8 @@ In case you would like to change some of the colors, you need to set a class for
 
 <!-- React -->
 ```tsx
-function App() {
-     return (
-        <IgrGrid className="grid">
-        </IgrGrid>
-    )
-}
+<IgrGrid className="grid">
+</IgrGrid>
 ```
 <!-- end: React -->
 
