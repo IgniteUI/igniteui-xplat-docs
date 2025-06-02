@@ -61,13 +61,11 @@ First, you need to the install the corresponding {ProductName} npm package by ru
 npm install igniteui-react
 ```
 
-You will then need to import the `Navbar`, its necessary CSS, and register its module, like so:
+You will then need to import the `Navbar` and its necessary CSS like so:
 
 ```tsx
-import { IgrNavbarModule, IgrNavbar } from 'igniteui-react';
+import { IgrNavbar } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrNavbarModule.register();
 ```
 
 <!-- end: React -->
