@@ -2,7 +2,7 @@
 title: {Platform} Tabs コントロール | レイアウト コントロール | {ProductName}
 _description: {Platform} タブ コンポーネントを使用すると、ユーザーはタブを上部に配置して、同様のデータ セットを切り替えることができます。今すぐお試しください。
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Tabs Component, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, {Platform} タブ コンポーネント, インフラジスティックス
-mentionedTypes: ["Tabs", "Tab", "TabPanel", "Icon", "IconButton", "RadioGroup"]
+mentionedTypes: ["Tabs", "Tab", "Icon", "IconButton", "RadioGroup"]
 _language: ja
 ---
 
@@ -10,7 +10,7 @@ _language: ja
 
 {Platform} タブは軽量で使いやすいコンポーネントで、対応するコンテンツをタブ形式または通常は水平に配置されたタブのコレクションで整理します。{Platform} タブを使用すると、エンドユーザーは簡単にクリックしてさまざまなビューを表示できます。タブの向き、テンプレート、組み込みのヘッダー スタイル、アニメーション、スクロール ボタンなど、いくつかの機能とカスタマイズ オプションがあります。
 
-{ProductName} タブは、同様のデータ セットを整理して切り替えます。タブは、データ コンテンツの上部に配置されます。タブが選択されると、対応する ID を持つパネルが表示されます。このコンポーネントは、定義されたタブのみ (パネルなし) で使用できます。
+{ProductName} タブは、同様のデータ セットを整理して切り替えます。タブは、データ コンテンツの上部に配置されます。タブが選択されると、対応するコンテンツパネルが表示されます。
 
 ## {Platform} タブの例
 
@@ -40,12 +40,10 @@ npm install igniteui-react
 
 <!-- end: React -->
 
-`Tabs` を使用する前に、次のように登録する必要があります:
+`Tabs` を使用する前に、次のようにインポートする必要があります:
 
 ```tsx
-import { IgrTabsModule, IgrTabs, IgrTab,  IgrTabPanel} from "igniteui-react";
-
-IgrTabsModule.register();
+import { IgrTabs, IgrTab } from "igniteui-react";
 ```
 
 
@@ -67,12 +65,18 @@ defineComponents(IgcTabsComponent);
 
 ```html
 <igc-tabs>
-    <igc-tab panel="first">Tab 1</igc-tab>
-    <igc-tab panel="second">Tab 2</igc-tab>
-    <igc-tab panel="third">Tab 3</igc-tab>
-    <igc-tab-panel id="first">Panel 1</igc-tab-panel>
-    <igc-tab-panel id="second">Panel 2</igc-tab-panel>
-    <igc-tab-panel id="third">Panel 3</igc-tab-panel>
+    <igc-tab>
+      <div slot="label">Tab 1</div>
+      <span>Content for tab 1</span>
+    </igc-tab>
+    <igc-tab>
+      <div slot="label">Tab 2</div>
+      <span>Content for tab 2</span>
+    </igc-tab>
+    <igc-tab>
+      <div slot="label">Tab 3</div>
+      <span>Content for tab 3</span>
+    </igc-tab>
 </igc-tabs>
 ```
 
@@ -89,18 +93,21 @@ defineComponents(IgcTabsComponent);
 
 ```tsx
 <IgrTabs>
-    <IgrTab panel="first">Tab 1</IgrTab>
-    <IgrTab panel="second">Tab 2</IgrTab>
-    <IgrTab panel="third">Tab 3</IgrTab>
-    <IgrTabPanel id="first">Panel 1</IgrTabPanel>
-    <IgrTabPanel id="second">Panel 2</IgrTabPanel>
-    <IgrTabPanel id="third">Panel 3</IgrTabPanel>
+    <IgrTab label="Tab 1">
+      <span>Panel 1</span>
+    </IgrTab>
+    <IgrTab label="Tab 2">
+      <span>Panel 2</span>
+    </IgrTab>
+    <IgrTab label="Tab 3">
+      <span>Panel 3</span>
+    </IgrTab>
 </IgrTabs>
 ```
 
 ### 選択
 
-ユーザーがキーを押すかクリックして項目を選択すると、`Tabs` は `Change` イベントを発行します。`Select` メソッドを使用すると、パネルを文字列値として指定してタブを選択できます。
+ユーザーがキーを押すかクリックして項目を選択すると、`Tabs` は `Change` イベントを発行します。`Select` メソッドを使用すると、`Tab` またはその ID を指定してタブを選択できます。
 
 選択したタブが初期の読み込み時に指定されていない場合、無効になっていない最初のタブが選択されます。
 
@@ -111,7 +118,7 @@ defineComponents(IgcTabsComponent);
 `Disabled` 属性を設定すると、タブが無効になります:
 
 ```html
-<igc-tab panel="first" disabled>Tab 1</igc-tab>
+<igc-tab disabled>Tab 1</igc-tab>
 ```
 
 ```razor
@@ -119,7 +126,7 @@ defineComponents(IgcTabsComponent);
 ```
 
 ```tsx
-<IgrTab panel="first" disabled={true}>Tab 1</IgrTab>
+<IgrTab disabled={true}>Tab 1</IgrTab>
 ```
 
 ### 配置
@@ -167,6 +174,15 @@ defineComponents(IgcTabsComponent);
 
 `Tabs` コンポーネントはいくつかの CSS パーツを公開し、スタイルを完全に制御できるようにします。
 
+<!-- WebComponents, React -->
+| 名前 | 説明 |
+|--|--|
+| `selected-indicator` | 選択されたインジケーター。 |
+| `start-scroll-button` | タブがオーバーフローしたときに表示されるスクロール開始ボタン。 |
+| `end-scroll-button` | タブがオーバーフローしたときに表示されるスクロール終了ボタン。 |
+<!-- end: WebComponents, React -->
+
+<!-- Blazor -->
 | 名前 | 説明 |
 |--|--|
 | `headers` | タブとスクロール ボタンを含むラッパー。 |
@@ -177,9 +193,31 @@ defineComponents(IgcTabsComponent);
 | `start-scroll-button` | タブがオーバーフローしたときに表示されるスクロール開始ボタン。 |
 | `end-scroll-button` | タブがオーバーフローしたときに表示されるスクロール終了ボタン。|
 | `content` | データが表示されるコンテンツのコンテナー。 |
+<!-- end: Blazor -->
 
 `Tab` コンポーネントは、次の CSS パーツを公開します:
 
+<!-- WebComponents, React -->
+|名前|説明|
+|--|--|
+| `content` | タブ ヘッダーのラベル スロット コンテナー。 |
+| `prefix` | タブ ヘッダーのラベル プレフィックス。 |
+| `suffix` | タブ ヘッダーのラベル サフィックス。 |
+| `tab-header` | 単一のタブのヘッダー。 |
+| `tab-body` | 単一のタブの本体コンテンツを保持します。選択したタブの本体のみが表示されます。 |
+
+```css
+igc-tab::part(tab-header) {
+  background-color: var(--ig-gray-200);
+}
+
+igc-tab::part(content) {
+  color: var(--ig-success-500);
+}
+```
+<!-- end: WebComponents, React -->
+
+<!-- Blazor -->
 |名前|説明|
 |--|--|
 | `content` | コンテンツのラッパー。 |
@@ -195,14 +233,13 @@ igc-tab::part(content) {
   color: var(--ig-success-500);
 }
 ```
-
+<!-- end: Blazor -->
 `sample="/layouts/tabs/styling", height="150", alt="Tabs スタイル設定の例"`
 
 ## API リファレンス
 
 - `Tabs`
 - `Tab`
-- `TabPanel`
 - `Icon`
 - `IconButton`
 - `RadioGroup`
