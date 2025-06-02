@@ -186,7 +186,7 @@ To enable cascade row selection in the `{ComponentName}` just set the `RowSelect
 ```
 
 ```tsx
-<IgrTreeGrid id="grid" primaryKey="ID" foreignKey="ParentID" autoGenerate={true}
+<IgrTreeGrid primaryKey="ID" foreignKey="ParentID" autoGenerate={true}
         rowSelection="multipleCascade" allowFiltering={true}>
 </IgrTreeGrid>
 ```
@@ -438,12 +438,16 @@ Another useful API method that `{ComponentName}` provides is `SelectAllRows`. By
 
 If you need to see which rows are currently selected, you can get their row IDs with the `SelectedRows` getter.
 
-```typescript
+<!-- WebComponents -->
+
+```ts
 public getSelectedRows() {
     const grid = document.getElementById('grid') as {ComponentName}Component;
     const currentSelection = grid.selectedRows; // return array of row IDs
 }
 ```
+
+<!-- end: WebComponents -->
 
 ```razor
     <{ComponentSelector} Width="100%"
@@ -484,6 +488,8 @@ Additionally, assigning row IDs to `SelectedRows` will allow you to change the g
 ```
 <!-- end: Angular -->
 
+<!-- WebComponents -->
+
 ```ts
 public mySelectedRows = [1, 2, 3]; // an array of row IDs
 constructor() {
@@ -492,6 +498,9 @@ constructor() {
     grid.selectedRows = this.mySelectedRows;
 }
 ```
+
+<!-- end: WebComponents -->
+
 
 ```tsx
 const mySelectedRows = [1,2,3];
@@ -589,7 +598,7 @@ const rowSelectorTemplate = (ctx: IgrRowSelectorTemplateContext) => {
             <>
                 <div style={{justifyContent: 'space-evenly', display: 'flex', width: '70px'}}>
                     <span> ${ctx.implicit.index}</span>
-                    <IgrCheckbox checked></IgrCheckbox>
+                    <IgrCheckbox></IgrCheckbox>
                 </div>
             </>
         );
@@ -657,7 +666,7 @@ public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
 ```
 
 ```tsx
-const headSelectorTemplate =(ctx: IgrHeadSelectorTemplateContext) => {
+const headSelectorTemplate = (ctx: IgrHeadSelectorTemplateContext) => {
     return (
         <>
             {ctx.implicit.selectedCount} / {ctx.implicit.totalCount}
