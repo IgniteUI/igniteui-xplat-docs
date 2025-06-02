@@ -87,8 +87,8 @@ igRegisterScript("DetailTemplate", (ctx) => {
 ```
 
 ```ts
-const masterDetailTemplate = ({dataContext}:{dataContext: IgrGridMasterDetailContext}) => {
-    const data = dataContext.implicit;
+const masterDetailTemplate = (args: IgrGridMasterDetailContext) => {
+    const data = args.implicit;
     return (
         <div className="contact-container">
             <span><strong>Name:</strong> {data.ContactName}</span> <br/>
