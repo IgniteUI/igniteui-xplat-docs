@@ -90,11 +90,41 @@ Then in the template of `Navbar`, you can add the following code to show a basic
 </IgrNavbar>
 ```
 
-## Content
+### Content
 
-You can added some `Icon` elements using the `Start` and `End` slots to the`Navbar` as it is shown in the following sample:
+You can enhance the `Navbar` component by adding `Icon` or other components at the start or end position as content, allowing users to navigate to key positions directly from the bar:
 
-`sample="/menus/nav-bar/overview", height="100", alt="{Platform} Navbar Styling Example"`
+```html
+<igc-navbar>
+    <igc-icon name="home" slot="start"></igc-icon>
+    <h2>Sample App</h2>
+    <igc-icon name="search" slot="end"></igc-icon>
+    ...
+</igc-navbar>
+```
+
+```Razor
+<IgbNavbar>
+    <IgbIcon @ref="@HomeIcon" slot="start" IconName="home" Collection="material" />
+    <h3>Sample App</h3>
+    <IgbIcon @ref="@SearchIcon" slot="end" IconName="search" Collection="material" />
+    ...
+</IgbNavbar>
+```
+
+```tsx
+ <IgrNavbar>
+    <div slot="start">
+        <IgrIcon name="home" collection="material" />
+    </div>
+    <h2>Sample App</h2>
+    <div slot="end">
+        <IgrIcon name="search" collection="material" />
+    </div>
+    ...
+</IgrNavbar>
+
+```
 
 ## Styling
 
