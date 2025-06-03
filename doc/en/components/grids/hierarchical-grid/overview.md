@@ -58,17 +58,13 @@ npm install --save {PackageGrids}
 
 <!-- Angular, React, WebComponents -->
 
+<!-- WebComponents -->
 You also need to include the following import to use the grid:
 
-<!-- WebComponents -->
 ```typescript
 import 'igniteui-webcomponents-grids/grids/combined.js';
 ```
 <!-- end: WebComponents -->
-
-```tsx
-import "igniteui-react-grids/grids/combined.js";
-```
 
 The corresponding styles should also be referenced. You can choose light or dark option for one of the [themes](../../themes/overview.md) and based on your project configuration to import it:
 
