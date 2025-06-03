@@ -16,8 +16,7 @@ _language: ja
 
 ## {Platform} Dashboard Tile の例
 
-<!-- TODO -->
-`sample="/charts/dashboard-tile/chart-dashboard", height="600", alt="{Platform} Dashboard Tile の例"`
+`sample="/charts/dashboard-tile/local-data-source-dashboard", height="600", alt="{Platform} Dashboard Tile の例"`
 
 ## 依存関係
 
@@ -147,6 +146,7 @@ builder.Services.AddIgniteUIBlazor(
 このデモでは、ダッシュボード タイルと {Platform} 地理マップの統合を示します。右上のツールバー オプションを使用すると、スタイル設定やデータ視覚化の変更にアクセスできます。
 
 `sample="/charts/dashboard-tile/map-dashboard", height="600", alt="{Platform} Dashboard Tile Map の例"`
+
 
 ## API リファレンス
 
