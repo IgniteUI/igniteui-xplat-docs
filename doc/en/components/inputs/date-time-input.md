@@ -79,9 +79,7 @@ input.value = date;
 ```
 
 ```tsx
-const dateTimeInputRef = useRef<IgrDateTimeInput>(null);
-
-dateTimeInputRef.current.value = new Date();
+<IgrDateTimeInput value={someValue}></IgrDateTimeInput>
 ```
 
 ```razor
@@ -157,7 +155,7 @@ To set a specific input format, pass it as a string to the `DateTimeInput`. This
 ```
 
 ```tsx
-<IgrDateTimeInput ref={dateTimeInputRef} inputFormat="dd-MM-yy" displayFormat="medium"></IgrDateTimeInput>
+<IgrDateTimeInput inputFormat="dd-MM-yy" displayFormat="medium"></IgrDateTimeInput>
 ```
 
 ```razor
@@ -238,13 +236,7 @@ input.min = new Date(2021, 0, 1);
 ```
 
 ```tsx
-const dateTimeInputRef = useRef<IgrDateTimeInput>(null);
-
-dateTimeInputRef.current.min = new Date(2021, 0, 1);
-```
-
-```tsx
- <IgrDateTimeInput ref={dateTimeInputRef} max={new Date(2024, 6, 25)}></IgrDateTimeInput>
+ <IgrDateTimeInput min={minDate} max={maxDate}></IgrDateTimeInput>
 ```
 
 ```razor
