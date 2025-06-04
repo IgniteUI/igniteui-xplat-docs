@@ -36,7 +36,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 **Breaking Changes**
 
-- The `IgrDataGrid` now exists as part of the igniteui-react-data-grids package.
+- The `IgrDataGrid` & `IgrMultiColumnComboBox` is now part of the igniteui-react-data-grids package.
 
 ### Enhancements
 
