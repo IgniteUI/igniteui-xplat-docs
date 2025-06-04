@@ -9,7 +9,7 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
-## **25.1**
+## **{PackageVerLatest}**
 
 ### {PackageCharts} (Charts)
 
@@ -36,7 +36,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 **Breaking Changes**
 
-- The `IgrDataGrid` now exists as part of the igniteui-react-data-grids package.
+- The `IgrDataGrid` & `IgrMultiColumnComboBox` are now part of the igniteui-react-data-grids package.
 
 ### Enhancements
 
