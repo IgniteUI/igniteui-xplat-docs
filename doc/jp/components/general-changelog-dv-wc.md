@@ -11,7 +11,7 @@ _language: ja
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
-## **25.1**
+## **{PackageVerLatest}**
 
 ### {PackageCharts} (チャート)
 
@@ -38,7 +38,7 @@ _language: ja
 
 **重大な変更**
 
-- `IgcDataGrid` は、igniteui-webcomponents-data-grids パッケージの一部として存在するようになりました。
+- `IgcDataGrid` と `IgcMultiColumnComboBox` は、igniteui-webcomponents-data-grids パッケージの一部になりました。
 
 ### 機能拡張
 
