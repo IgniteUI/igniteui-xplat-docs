@@ -69,8 +69,8 @@ In addition to being selected or typed by the user, the range value of the `Date
 
 ```ts
 let dateRange = document.querySelector('igc-date-range-picker') as IgcDateRangePickerComponent;
-let startDate: Date = new Date(2025, 4, 6);
-let endDate: Date = new Date(2025, 4, 8);
+let startDate = new Date(2025, 4, 6);
+let endDate = new Date(2025, 4, 8);
 dateRange.value = { start: startDate, end: endDate }
 ```
 
@@ -225,7 +225,7 @@ You can also set the `Min` and `Max` properties to restrict user input by disabl
 You can also add custom date range chips to the calendar pop-up for faster range selection using the `CustomRanges` property. For example, you can create a custom date range chip to quickly select the range for the previous 7 days, ending with the current date. In addition, by setting the `UsePredefinedRanges` property, a set of predefined ranges chips will be displayed along with the custom ones.
 
 ```ts
-const today: Date = new Date();
+const today = new Date();
 
 const previousSeven = new Date(
   today.getFullYear(),
@@ -296,7 +296,7 @@ In addition to the properties we've already covered, the `DateRangePicker` compo
 | `PlaceholderEnd` | string | Placeholder text for the end date input (two inputs mode). |
 | `Outlined` | boolean | Determines whether the input part will have outline appearance in the [Material theme](../themes/overview.md). |
 | `Prompt` | string | The prompt character used for unfilled parts of the input(s) mask. |
-| `ResourceStrings` | IgcCalendarResourceStrings & IgcDateRangePickerResourceStrings | Resource strings for localization of the date-range picker and the calendar. |
+| `ResourceStrings` | IgcDateRangePickerResourceStrings | Resource strings for localization of the date-range picker and the calendar. |
 
 <!-- end: WebComponents -->
 
@@ -385,6 +385,7 @@ Since the `DateRangePicker` component uses the `Calendar` component, it also inh
 |Name|Description|
 |--|--|
 | `separator` | The separator element between the two inputs. |
+| `ranges` | The wrapper that renders the custom and predefined ranges. |
 | `label` | The label wrapper that renders content above the target input. |
 | `container` | The main wrapper that holds all main input elements. |
 | `input` | The native input element. |
