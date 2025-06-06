@@ -31,6 +31,77 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 - New [Trendline Layer](charts/features/chart-trendlines.md) series type that allows you to apply a single trend line per trend line layer to a particular series. This allows the usage of multiple trend lines on a single series since you can have multiple [TrendlineLayer](charts/features/chart-overlays.md) series types in the chart.
 
+### General
+- New `Tooltip` new component provides a way to display a tooltip for a specific element. To use, set content as desired and link via the `Anchor` property to the target element's id:
+    ```razor
+    <IgbButton id="target-button">Hover me</IgbButton>
+    <IgbTooltip Anchor="target-button">
+        You've hovered the button! 🎉
+    </IgbTooltip>
+    ```
+    The tooltip can be further customized with `Show/HideDelay`, `Placement` around the target and customizable `Show/HideTriggers` events.
+
+### Changes
+
+- A number of enumerations have been renamed and/or merged with others. Renames (with affected components):
+    - `BaseAlertLikePosition` (`Snackbar` and `Toast`) has been renamed to `AbsolutePosition`
+    - `ButtonGroupAlignment` (`ButtonGroup`), `CalendarOrientation` (`Calendar`), `CardActionsOrientation` (`CardActions`), `DatePickerOrientation` (`DatePicker`), `RadioGroupAlignment` (`RadioGroup`) have been merged and renamed to `ContentOrientation`
+    - `CalendarBaseSelection` (`Calendar`) has been renamed to `CalendarSelection`
+    - `CarouselAnimationType` (`Carousel`) and `StepperHorizontalAnimation` (`Stepper`) have been merged and renamed to `HorizontalTransitionAnimation`
+    - `CheckboxBaseLabelPosition` (`Checkbox` and `Switch`) and `RadioLabelPosition` (`Radio`) have been merged and renamed to `ToggleLabelPosition`
+    - `DatePickerMode` (`DatePicker`) has been renamed to `PickerMode`
+    - `DatePickerHeaderOrientation` (`DatePicker`) has been renamed to/merged with `CalendarHeaderOrientation`
+    - `DropdownPlacement` (`Dropdown` and `Select`) has been renamed to `PopoverPlacement`
+    - `DropdownScrollStrategy` (`Dropdown`) and `SelectScrollStrategy` (`Select`) have been merged and renamed to `PopoverScrollStrategy`
+    - `SliderBaseTickOrientation` (`Slider` and `RangeSlider`) has been renamed to `SliderTickOrientation`
+    - `TickLabelRotation` (`Slider` and `RangeSlider`) has been renamed to `SliderTickLabelRotation`
+- `Tabs`
+
+  Simplified configuration by removing the need to define separate panel and linking the panel and tab header. The `Panel` property and the `IgbTabPanel` itself have been removed. Content can be now assigned directly to the `Tab` and header text can be set conveniently via the new `Label` property or by projecting an element to `slot="label"` for more involved customization.
+    Before:
+    ```razor
+    <IgbTabs Alignment=@TabAlignment>
+        <IgbTab Panel="basics">Basics</IgbTab>
+        <IgbTab Panel="details">Details</IgbTab>
+        <IgbTab Panel="favorite">
+            <IgbIcon IconName="favorite" Collection="material"/>
+        </IgbTab>
+        <IgbTab Panel="disabled" Disabled=true>Disabled</IgbTab>
+        <IgbTabPanel id="basics">Basics tab content</IgbTabPanel>
+        <IgbTabPanel id="details">Details tab content</IgbTabPanel>
+        <IgbTabPanel id="favorite">Favorite tab content</IgbTabPanel>
+        <IgbTabPanel id="disabled">Disabled tab content will not be displayed</IgbTabPanel>
+    </IgbTabs>
+    ```
+    After:
+    ```razor
+    <IgbTabs Alignment=@TabAlignment>
+        <IgbTab Label="Basics">
+            Basics tab content
+        </IgbTab>
+        <IgbTab Label="Details">
+            Details tab content
+        </IgbTab>
+        <IgbTab>
+            <IgbIcon slot="label" IconName="favorite" Collection="material"/>
+            Favorite tab content
+        </IgbTab>
+        <IgbTab Disabled="true" Label="Disabled">
+            Disabled tab content will not be displayed
+        </IgbTab>
+    </IgbTabs>
+    ```
+- `Input`
+    - `Min` & `Max` are now `double` instead of `string`
+- `Stepper`
+    - `ActiveStepChangingArgsEventArgs` has been renamed to `ActiveStepChangingEventArgs`
+    - `ActiveStepChangedArgsEventArgs` has been renamed to `ActiveStepChangedEventArgs`
+    - `StepperTitlePosition` now defaults to `Auto` to correctly reflect the default behavior
+- `Tree`
+    - `TreeSelectionChangeEventArgs` has been renamed to `TreeSelectionEventArgs`
+- `Textarea`
+    - `Autocapitalize` & `InputMode` are now `string` properties instead of explicit enums
+
 ### {PackageDashboards} (Dashboards)
 
 - The `IgbDashboardTile` now supports propagating the aggregations from its DataGrid view to the chart visualization such as sorting, grouping, filtering and selection. This is currently supported by binding the `DataSource` of the `IgbDashboardTile` to an instance of `IgbLocalDataSource`.
