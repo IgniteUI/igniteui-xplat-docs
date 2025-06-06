@@ -16,6 +16,52 @@ All notable changes for each version of {ProductName} are documented on this pag
 * [Ignite UI for Angular CHANGELOG.md at Github](https://github.com/IgniteUI/igniteui-angular/blob/master)
 
 
+## **{PackageVerLatest}**
+
+### {PackageCharts} (Charts)
+
+- New [Chart Data Annotations](charts/features/chart-data-annotations.md)
+  - Data Annotation Band Layer (Beta)
+  - Data Annotation Line Layer (Beta)
+  - Data Annotation Rect Layer (Beta)
+  - Data Annotation Slice Layer (Beta)
+  - Data Annotation Strip Layer (Beta)
+
+- The [Data Tooltip](charts/features/chart-data-tooltip.md) and [Data Legend](charts/features/chart-data-legend.md) expose a new `LayoutMode` property that you can use to layout the contents of the tooltip or legend in a table or vertical layout structure. 
+
+- The `DefaultInteraction` property of the charts has been updated to include a new enumeration - `DragSelect` in which the dragged preview Rect will select the points contained within. (Beta)
+
+- The [ValueOverlay and ValueLayer](charts/features/chart-overlays.md), in addition to the new [Chart Data Annotations](charts/features/chart-data-annotations.md) listed above now expose an `OverlayText` property that can be used to overlay additional annotation text in the plot area. These appearance of these annotations can be configured by using the many OverlayText-prefixed properties. For example, the `OverlayTextBrush` property will configure the color of the overlay text. (Beta)
+
+- New [Trendline Layer](charts/features/chart-trendlines.md) series type that allows you to apply a single trend line per trend line layer to a particular series. This allows the usage of multiple trend lines on a single series since you can have multiple [TrendlineLayer](charts/features/chart-overlays.md) series types in the chart.
+
+### {PackageDashboards} (Dashboards)
+
+- The `IgxDashboardTile` now supports propagating the aggregations from its DataGrid view to the chart visualization such as sorting, grouping, filtering and selection. This is currently supported by binding the `DataSource` of the `IgxDashboardTile` to an instance of `IgxLocalDataSource`.
+
+### {PackageGrids}
+
+**Breaking Changes**
+
+- The 'igniteui-angular-grids' package has been renamed to 'igniteui-angular-data-grids'.
+
+### Enhancements
+
+#### Toolbar
+- Value layers added from the toolbar now appear on the legend.
+- The zoom reset tool has been moved to the zoom drop-down.
+
+#### Data Pie Chart
+- The chart now exposes a `GetOthersContext()` method. This will return the contents of the "others" slice.
+
+### Bug Fixes
+
+| Bug Number | Control | Description      |
+|------------|---------|------------------|
+|37023|IgxDataChart|Tooltips are cut-off/offscreen if overflow hidden is set.
+|37244|Excel|Custom Data Validation is not working.
+|37685|IgxSpreadsheet|Poor rendering of numbers formatted with Arial font.
+
 ## **{PackageVerChanges-24-2-FEB}**
 
 ### Enhancements

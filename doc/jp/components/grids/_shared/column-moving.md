@@ -48,10 +48,10 @@ public headerTemplate = (ctx: IgcCellTemplateContext) => {
 ```
 
 ```tsx
-function headerTemplate(ctx: IgrCellTemplateContext) {
+const headerTemplate = (ctx: IgrCellTemplateContext) => {
     return (
     <>
-       <IgrIcon draggable="false" onClick={onClick}></IgrIcon>
+       <IgrIcon draggable={false} onClick={onClick}></IgrIcon>
     </>
     );
 }
@@ -86,7 +86,7 @@ function headerTemplate(ctx: IgrCellTemplateContext) {
 
 <!-- React -->
 ```tsx
-<{ComponentSelector} moving="true"></{ComponentSelector}>
+<{ComponentSelector} moving={true}></{ComponentSelector}>
 ```
 <!-- end: React -->
 
@@ -121,9 +121,9 @@ function headerTemplate(ctx: IgrCellTemplateContext) {
 
 <!-- React -->
 ```tsx
-<{ComponentSelector} moving="true">
+<{ComponentSelector} moving={true}>
     ...
-    <{RowIslandSelector} moving="true"></{RowIslandSelector}>
+    <{RowIslandSelector} moving={true}></{RowIslandSelector}>
 </{ComponentSelector}>
 ```
 <!-- end: React -->
@@ -213,15 +213,15 @@ public onColumnMovingEnd(event) {
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 ```tsx
-function onColumnMovingEnd(grid: IgrGridBaseDirective, event: IgrColumnMovingEventArgs) {
+const onColumnMovingEnd = (event: IgrColumnMovingEndEventArgs) => {
    if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {
         event.detail.cancel = true;
     }
 }
 
-<{ComponentSelector} autoGenerate="false" moving="true" data={data} columnMovingEnd={onColumnMovingEnd}>
+<{ComponentSelector} autoGenerate={false} moving={true} data={data} onColumnMovingEnd={onColumnMovingEnd}>
     <IgrColumn field="Category"></IgrColumn>
-    <IgrColumn field="Change On Year(%)" dataType="Number" ></IgrColumn>
+    <IgrColumn field="Change On Year(%)" dataType="number"></IgrColumn>
 </{ComponentSelector}>
 ```
 <!-- ComponentEnd: Grid, HierarchicalGrid -->

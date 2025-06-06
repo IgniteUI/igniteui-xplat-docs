@@ -62,7 +62,7 @@ _language: ja
 ```
 
 ```ts
-import { IgrDataGrid } from 'igniteui-react-grids';
+import { IgrDataGrid } from 'igniteui-react-data-grids';
 
 onCommitClick = () => {
     this._grid.commitEdits();
@@ -80,7 +80,7 @@ onCommitClick = () => {
 ```
 
 ```ts
-import { IgcDataGridComponent } from 'igniteui-webcomponents-grids';
+import { IgcDataGridComponent } from 'igniteui-webcomponents-data-grids';
 
 this.onCommitClick = this.onCommitClick.bind(this);
 
@@ -121,7 +121,7 @@ public onCommitClick() {
 ```
 
 ```ts
-import { IgrDataGrid } from 'igniteui-react-grids';
+import { IgrDataGrid } from 'igniteui-react-data-grids';
 
 onUndoClick = () => {
     this._grid.undo();
@@ -150,7 +150,7 @@ onRedoClick = () => {
 ```
 
 ```ts
-import { IgcDataGridComponent } from 'igniteui-webcomponents-grids';
+import { IgcDataGridComponent } from 'igniteui-webcomponents-data-grids';
 
 public onUndoClick() {
     this.grid.undo();
@@ -216,7 +216,7 @@ public onRedoClick() {
 ```
 
 ```ts
-import { IgrGridDataCommittingEventArgs } from 'igniteui-react-grids';
+import { IgrGridDataCommittingEventArgs } from 'igniteui-react-data-grids';
 import { TransactionType } from 'igniteui-react-core'
 
 onCellValueChanging = (s: IgrDataGrid, e: IgrGridCellValueChangingEventArgs) => {
@@ -245,7 +245,7 @@ onDataCommitting = (s: IgrDataGrid, e: IgrGridDataCommittingEventArgs) => {
 ```
 
 ```ts
-import { IgcGridDataCommittingEventArgs } from 'igniteui-webcomponents-grids';
+import { IgcGridDataCommittingEventArgs } from 'igniteui-webcomponents-data-grids';
 import { TransactionType } from 'igniteui-webcomponents-core'
 
 this.onCellValueChanging = this.onCellValueChanging.bind(this);

@@ -81,8 +81,9 @@ constructor() {
 ```
 
 ```tsx
-const formatOptions = new IgrColumnPipeArgs();
-formatOptions.digitsInfo = "1.4-4";
+const formatOptions : IgrColumnPipeArgs = {
+    digitsInfo: "1.4-4"
+};
 
 <IgrColumn pipeArgs={formatOptions} dataType="number"></IgrColumn>
 ```
@@ -148,9 +149,10 @@ constructor() {
 ```
 
 ```tsx
-const formatOptions = new IgrColumnPipeArgs();
-formatOptions.format = "long";
-formatOptions.timezone = "UTC+0";
+const formatOptions : IgrColumnPipeArgs = {
+    format: "long",
+    timezone: "UTC+0"
+};
 
 <IgrColumn pipeArgs={formatOptions} dataType="date"></IgrColumn>
 ```
@@ -370,9 +372,10 @@ constructor() {
 ```
 
 ```tsx
-const formatOptions = new IgrColumnPipeArgs();
-formatOptions.digitsInfo = "1.4-4";
-formatOptions.display = "symbol-narrow";
+const formatOptions : IgrColumnPipeArgs = {
+    digitsInfo: "1.4-4",
+    display: "symbol-narrow"
+};
 
 <IgrColumn pipeArgs={formatOptions} dataType="currency" field="UnitsInStock"></IgrColumn>
 ```
@@ -476,8 +479,9 @@ constructor() {
 * `minFractionDigits`: The minimum number of digits after the decimal point. Default is 0.
 * `maxFractionDigits`: The maximum number of digits after the decimal point. Default is 3.
 */
-const formatOptions = new IgrColumnPipeArgs();
-formatOptions.digitsInfo = "2.2-3";
+const formatOptions : IgrColumnPipeArgs = {
+    digitsInfo: "2.2-3"
+};
 
 <IgrColumn pipeArgs={formatOptions} dataType="percent"></IgrColumn>
 ```
@@ -525,7 +529,7 @@ public editCellTemplate = (ctx: IgcCellTemplateContext) => {
 ```
 
 ```tsx
-function editCellTemplate(ctx: { dataContext: IgrCellTemplateContext }) {
+const editCellTemplate = (ctx: IgrCellTemplateContext) => {
     return (
         <>
             <input></input>
@@ -533,7 +537,7 @@ function editCellTemplate(ctx: { dataContext: IgrCellTemplateContext }) {
     );
 }
 
-<{ComponentSelector} autoGenerate="false">
+<{ComponentSelector} autoGenerate={false}>
     <IgrColumn inlineEditorTemplate={editCellTemplate}></IgrColumn>
 </{ComponentSelector}>
 ```
@@ -572,11 +576,11 @@ public formatCurrency(value: number) {
 ```
 
 ```tsx
-function formatCurrency(value: number) {
+const formatCurrency = (value: number) => {
     return `$ ${value.toFixed(0)}`;
 }
 
-<{ComponentSelector} autoGenerate="false">
+<{ComponentSelector} autoGenerate={false}>
     <IgrColumn formatter={formatCurrency} field="UnitsInStock"></IgrColumn>
 </{ComponentSelector}>
 ```

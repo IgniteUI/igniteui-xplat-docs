@@ -130,7 +130,7 @@ Each of these tools exposes an `OnCommand` event that is triggered by mouse clic
 
 New and existing tools can be repositioned and marked hidden using the `OverlayId`, `BeforeId` and `AfterId` properties on the `ToolAction` object. ToolActions also expose a `Visibility` property.
 
-The following example demonstrates a couple of features. First you can group tools together in the `ToolActionSubPanel` including hiding built in tools such as the **ZoomReset** and **AnalyzeMenu** menu tool actions. In this example a new instance of the **ZoomReset** tool action is added and placed within the **ZoomMenu** by using the the `AfterId` property and assigning that to **ZoomOut**. It is also highlighted via the `IsHighlighted` property on the tool. This will ensure the new Reset tool is promptly displayed at the bottom of the **ZoomMenu**.
+The following example demonstrates a couple of features. First you can group tools together in the `ToolActionSubPanel` including hiding built in tools such as the **ZoomReset** and **AnalyzeMenu** menu tool actions. In this example a new instance of the **ZoomReset** tool action within the **ZoomMenu** by using the the `AfterId` property and assigning that to **ZoomOut** to be precise with it's placement. It is also highlighted via the `IsHighlighted` property on the tool.
 
 `sample="/charts/toolbar/layout-actions-for-data-chart", height="600", alt="{Platform} Toolbar Example"`
 
@@ -229,8 +229,7 @@ Several pre-existing `ToolAction` items and menus become available when the `Xam
 
 Zooming Actions
 
-- `ZoomReset`: A `ToolActionLabel` that invokes the `ResetZoom` method on the chart to reset the zoom level to it's default position.
-- `ZoomMenu`: A `ToolActionIconMenu` that exposes two `ToolActionLabel` items to invoke the `ZoomIn` and `ZoomOut` methods on the chart for increasing/decreasing the chart's zoom level.
+- `ZoomMenu`: A `ToolActionIconMenu` that exposes three `ToolActionLabel` items to invoke the `ZoomIn` and `ZoomOut` methods on the chart for increasing/decreasing the chart's zoom level including `ZoomReset`, a `ToolActionLabel` that invokes the `ResetZoom` method on the chart to reset the zoom level to it's default position.
 
 Trend Actions
 

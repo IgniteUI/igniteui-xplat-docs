@@ -131,7 +131,7 @@ builder.Services.AddIgniteUIBlazor(
 
 `ToolAction` オブジェクトの `OverlayId`、`BeforeId`、および `AfterId` プロパティを使用して、新規および既存のツールの位置を変更したり、非表示にマークしたりすることができます。ToolActions は `Visibility` プロパティも公開します。
 
-次の例は、いくつかの機能を示しています。まず、**ZoomReset** や **AnalyzeMenu** メニュー ツール操作などの組み込みツールを非表示にするなど、`ToolActionSubPanel` でツールをグループ化できます。この例では、`AfterId` プロパティを使用して **ZoomOut** に割り当てることで、**ZoomReset** ツール操作の新しいインスタンスが追加され、**ZoomMenu** 内に配置されます。また、ツールの `IsHighlighted` プロパティによってもハイライト表示されます。これにより、新しいリセット ツールが **ZoomMenu** の下部にすぐに表示されます。
+次の例は、いくつかの機能を示しています。まず、**ZoomReset** や **AnalyzeMenu** メニュー ツール操作などの組み込みツールを非表示にするなど、`ToolActionSubPanel` でツールをグループ化できます。この例では、`AfterId` プロパティを使用して **ZoomMenu** 内に **ZoomReset** ツール操作の新しいインスタンスを作成し、それを **ZoomOut** に割り当てて配置を正確にします。また、ツールの `IsHighlighted` プロパティによってもハイライト表示されます。
 
 `sample="/charts/toolbar/layout-actions-for-data-chart", height="600", alt="{Platform} Toolbar の例"`
 
@@ -230,8 +230,7 @@ builder.Services.AddIgniteUIBlazor(
 
 ズーム操作
 
-- `ZoomReset`: チャート上で `ResetZoom` メソッドを呼び出し、ズーム レベルをデフォルトの位置にリセットする `ToolActionLabel`。
-- `ZoomMenu`: チャートのズーム レベルを増減するためにチャート上で `ZoomIn` および `ZoomOut` メソッドを呼び出す 2 つの `ToolActionLabel` 項目を公開する `ToolActionIconMenu`。
+- `ZoomMenu`: チャートのズーム レベルを増減するための `ZoomIn` および `ZoomOut` メソッドを呼び出す 3 つの `ToolActionLabel` 項目を公開する `ToolActionIconMenu` には、チャートの `ResetZoom` メソッドを呼び出してズーム レベルをデフォルトの位置にリセットする `ZoomReset` が含まれます。
 
 トレンド操作
 

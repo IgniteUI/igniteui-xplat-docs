@@ -33,12 +33,12 @@ _language: ja
 
 `sample="/{ComponentSample}/cell-selection-mode", height="650", alt="{Platform} {ComponentTitle} 選択の例"`
 
-
-
 ## {Platform} {ComponentTitle} 選択のオプション
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
+
 {ProductName} `{ComponentName}` コンポーネントは、[行選択](row-selection.md)、[セル選択](cell-selection.md)、[列選択](column-selection.md)の 3 つの選択モードを提供します。デフォルトでは、`{ComponentName}` で**複数セル選択**モードのみが有効になっています。選択モードの変更または有効化は、`RowSelection`、`CellSelection` または `Selectable` プロパティを使用します。
+
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 ### {Platform} {ComponentTitle} 行選択
@@ -66,7 +66,9 @@ _language: ja
 - `Multiple` - `{ComponentName}` の選択のデフォルト状態です。複数セルの選択は、マウスの左ボタンを連続してクリックした後、マウスをセル上にドラッグすることで利用できます。
 
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
+
 > 詳細については、[セル選択トピック](cell-selection.md)を参照してください。
+
 <!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
 ### {Platform} {ComponentTitle} 列選択
@@ -80,7 +82,9 @@ _language: ja
 - Range column selection (列の範囲選択) - <kbd>Shift</kbd> キーを押しながら + <kbd>マウス クリック</kbd>、その間のすべての列が選択されます。
 
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
+
 > 詳細については、[列選択トピック](column-selection.md)を参照してください。
+
 <!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
 <!-- ComponentStart: Grid -->
@@ -158,15 +162,19 @@ public rightClick(eventArgs: any) {
         this.toggleContextMenu();
       }
 ```
+
 <!-- end: WebComponents -->
 
 ```tsx
-function rightClick(grid: IgrGridBaseDirective, event: IgrGridCellEventArgs) {
+const rightClick = (event: IgrGridContextMenuEventArgs) => {
     const eventArgs = event.detail;
     eventArgs.event.preventDefault();
-    const node = eventArgs.cell.id;
-    const isCellWithinRange = grid.getSelectedRanges().some((range: any) => {
-        if (node.columnID >= range.columnStart &&
+  const node = eventArgs.cell.cellID;
+  const isCellWithinRange = gridRef.current
+    .getSelectedRanges()
+    .some((range: any) => {
+      if (
+        node.columnID >= range.columnStart &&
             node.columnID <= range.columnEnd &&
             node.rowIndex >= range.rowStart &&
             node.rowIndex <= range.rowEnd
@@ -177,8 +185,8 @@ function rightClick(grid: IgrGridBaseDirective, event: IgrGridCellEventArgs) {
     });
     setIsCellWithinRange(isCellWithinRange);
     setClickedCell(eventArgs.cell);
-    openContextMenu(eventArgs.event.clientX, eventArgs.event.clientY)
-}
+  openContextMenu(eventArgs.event.clientX, eventArgs.event.clientY);
+};
 ```
 
 ```razor
@@ -272,34 +280,38 @@ public copySelectedCells(event) {
 <!-- end: WebComponents -->
 
 ```tsx
-function copySelectedRowData() {
-    const selectedData = gridRef.current.getRowData(clickedCell.id.rowID);
+const copySelectedRowData = () => {
+  const selectedData = gridRef.current.getRowData(clickedCell.cellID.rowID);
     copyData(selectedData);
     closeContextMenu();
-}
+};
 
-function copySelectedCellData() {
+const copySelectedCellData = () => {
     const selectedData = clickedCell.value;
     copyData(selectedData);
     closeContextMenu();
-}
+};
 
-function copySelectedData() {
-    const selectedData = gridRef.current.getSelectedData(null,null);
+const copySelectedData = () => {
+  const selectedData = gridRef.current.getSelectedData(null, null);
     copyData(selectedData);
     closeContextMenu();
-}
+};
 
-function copyData(data: any[]) {
-    const tempElement = document.createElement('input');
+const copyData = (data: any[]) => {
+  const tempElement = document.createElement("input");
     document.body.appendChild(tempElement);
-    tempElement.setAttribute('id', 'temp_id');
-    (document.getElementById('temp_id') as HTMLInputElement).value = JSON.stringify(data);
+  tempElement.setAttribute("id", "temp_id");
+  (document.getElementById("temp_id") as HTMLInputElement).value =
+    JSON.stringify(data);
     tempElement.select();
-    document.execCommand('copy');
+  const dataStringified = JSON.stringify(data);
+  navigator.clipboard.writeText(dataStringified).catch((err) => {
+     console.error("Failed to copy: ", err);
+  });
     document.body.removeChild(tempElement);
-    setSelectedData(JSON.stringify(data));
-}
+  setSelectedData(dataStringified);
+};
 ```
 
 ```razor
@@ -333,16 +345,30 @@ function copyData(data: any[]) {
 グリッドとコンテキスト メニューを組み合わせるために使用するテンプレート:
 
 <!-- Angular -->
+
 ```html
 <div class="wrapper">
     <div class="grid__wrapper" (window:click)="disableContextMenu()">
-        <igx-grid #grid1 [data]="data" [autoGenerate]="false" height="500px" width="100%"
-            (contextMenu)="rightClick($event)" (rangeSelected)="getCells($event)"
-            (selected)="cellSelection($event)">
+    <igx-grid
+      #grid1
+      [data]="data"
+      [autoGenerate]="false"
+      height="500px"
+      width="100%"
+      (contextMenu)="rightClick($event)"
+      (rangeSelected)="getCells($event)"
+      (selected)="cellSelection($event)"
+    >
         <!-- Columns area -->
         </igx-grid>
         <div *ngIf="contextmenu==true">
-            <contextmenu [x]="contextmenuX" [y]="contextmenuY" [cell]="clickedCell" [selectedCells]="multiCellArgs" (onCellValueCopy)="copy($event)">
+      <contextmenu
+        [x]="contextmenuX"
+        [y]="contextmenuY"
+        [cell]="clickedCell"
+        [selectedCells]="multiCellArgs"
+        (onCellValueCopy)="copy($event)"
+      >
             </contextmenu>
         </div>
     </div>
@@ -353,9 +379,11 @@ function copyData(data: any[]) {
     </div>
 </div>
 ```
+
 <!-- end: Angular -->
 
 <!-- WebComponents -->
+
 ```html
     <div class="container sample">
       <div class="wrapper">
@@ -390,6 +418,7 @@ function copyData(data: any[]) {
     </div>
   </div>
 ```
+
 <!-- end: WebComponents -->
 
 ```tsx
@@ -397,40 +426,47 @@ function copyData(data: any[]) {
     <div className="container sample">
         <div className="wrapper" onClick={closeContextMenu}>
             <IgrGrid
-                autoGenerate="false"
+        autoGenerate={false}
                 data={northWindData}
                 primaryKey="ProductID"
                 ref={gridRef}
-                contextMenu={rightClick}>
-            <IgrColumn field="ProductID" header="Product ID">
-            </IgrColumn>
-            <IgrColumn field="ProductName" header="Product Name">
-            </IgrColumn>
-            <IgrColumn field="UnitsInStock" header="Units In Stock" dataType="number">
-            </IgrColumn>
-            <IgrColumn field="UnitPrice" header="Units Price" dataType="number">
-            </IgrColumn>
-            <IgrColumn field="Discontinued" dataType="boolean">
-            </IgrColumn>
-            <IgrColumn field="OrderDate" header="Order Date" dataType="date">
-            </IgrColumn>
+        onContextMenu={rightClick}
+      >
+        <IgrColumn field="ProductID" header="Product ID"></IgrColumn>
+        <IgrColumn field="ProductName" header="Product Name"></IgrColumn>
+        <IgrColumn
+          field="UnitsInStock"
+          header="Units In Stock"
+          dataType="number"
+        ></IgrColumn>
+        <IgrColumn
+          field="UnitPrice"
+          header="Units Price"
+          dataType="number"
+        ></IgrColumn>
+        <IgrColumn field="Discontinued" dataType="boolean"></IgrColumn>
+        <IgrColumn
+          field="OrderDate"
+          header="Order Date"
+          dataType="date"
+        ></IgrColumn>
             </IgrGrid>
-            <div className="selected-data-area">
-                {selectedData}
-            </div>
-        </div>
+      <div className="selected-data-area">{selectedData}</div>
     </div>
-    <div style={{display: "none"}} className="contextmenu" ref={contextMenuRef}>
+  </div>
+  <div style={{ display: "none" }} className="contextmenu" ref={contextMenuRef}>
         <span className="item" onClick={copySelectedCellData}>
-            <IgrIcon ref={iconRef} collection='material' name="content_copy"></IgrIcon>Copy Cell Data
+      <IgrIcon ref={iconRef} collection="material" name="content_copy"></IgrIcon>
+      Copy Cell Data
         </span>
         <span className="item" onClick={copySelectedRowData}>
-            <IgrIcon collection='material' name="content_copy"></IgrIcon>Copy Row Data
+      <IgrIcon collection="material" name="content_copy"></IgrIcon>Copy Row Data
         </span>
         {isCellWithinRange && (
         <span className="item" onClick={copySelectedData}>
-            <IgrIcon collection='material' name="content_copy"></IgrIcon>Copy Cells Data
-        </span>)}
+        <IgrIcon collection="material" name="content_copy"></IgrIcon>Copy Cells Data
+      </span>
+    )}
     </div>
 </>
 ```
@@ -494,12 +530,11 @@ function copyData(data: any[]) {
 </div>
 ```
 
- 複数のセルを選択し、マウスの右ボタンを押します。コンテキストメニューが表示され、**セル データのコピー** を選択すると、選択したデータが右側の空のボックスに表示されます。
+複数のセルを選択し、マウスの右ボタンを押します。コンテキストメニューが表示され、**セル データのコピー** を選択すると、選択したデータが右側の空のボックスに表示されます。
 
- 結果:
+結果:
 
 `sample="/{ComponentSample}/custom-context-menu", height="600", alt="{Platform} {ComponentTitle} カスタム コンテキスト メニュー"`
-
 
 <!-- ComponentEnd: Grid -->
 
@@ -510,8 +545,9 @@ function copyData(data: any[]) {
 - IE11 で選択を有効にした `{ComponentName}` コンポーネントを使用するには、{Platform} の polyfill.ts に配列ポリフィルを明示的にインポートする必要があります。IE11 は、バージョン 13.0.0 でサポートされなくなりました。
 
 ```typescript
-import 'core-js/es7/array';
+import "core-js/es7/array";
 ```
+
 <!-- end: Angular -->
 
 グリッドに `PrimaryKey` が設定されておらず、リモート データ シナリオが有効になっている場合 (ページング、ソート、フィルタリング、スクロール時に、グリッドに表示されるデータを取得するためのリモート サーバーへのリクエストがトリガーされる場合）、データ要求が完了すると、行は次の状態を失います:
@@ -521,27 +557,25 @@ import 'core-js/es7/array';
 - 行の編集
 - 行のピン固定
 
-
-
 ## API リファレンス
 
-* `{ComponentName}`
-
+- `{ComponentName}`
 
 ## その他のリソース
 
 <!-- ComponentStart: Grid -->
-* [行の選択](row-selection.md)
-* [セルの選択](cell-selection.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [仮想化とパフォーマンス](virtualization.md)
+
+- [行の選択](row-selection.md)
+- [セルの選択](cell-selection.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [仮想化とパフォーマンス](virtualization.md)
 <!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})
