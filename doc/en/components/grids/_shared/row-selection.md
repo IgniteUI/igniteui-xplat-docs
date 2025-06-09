@@ -706,6 +706,7 @@ auto-generate="true">
 </{ComponentSelector}>
 ```
 
+<!-- WebComponents -->
 ```ts
 constructor() {
     const grid = document.getElementById('grid') as {ComponentName}Component;
@@ -723,6 +724,8 @@ public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
         return html`<igc-checkbox></igc-checkbox>`;
 }
 ```
+
+<!-- end: WebComponents -->
 
 ```tsx
 const headSelectorTemplate = (ctx: IgrHeadSelectorTemplateContext) => {
