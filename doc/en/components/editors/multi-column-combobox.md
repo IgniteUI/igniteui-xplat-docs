@@ -21,7 +21,7 @@ When installing the charts component, the core package must also be installed.
 
 ```cmd
 npm install --save {PackageCore}
-npm install --save {PackageGrids}
+npm install --save {PackageDataGrids}
 npm install --save {PackageInputs}
 npm install --save {PackageLayouts}
 ```
@@ -39,15 +39,15 @@ builder.Services.AddIgniteUIBlazor(
 ```
 
 ```ts
-import { IgrMultiColumnComboBoxModule } from 'igniteui-react-grids';
-import { IgrMultiColumnComboBox } from 'igniteui-react-grids';
+import { IgrMultiColumnComboBoxModule } from 'igniteui-react-data-grids';
+import { IgrMultiColumnComboBox } from 'igniteui-react-data-grids';
 
 IgrMultiColumnComboBoxModule.register();
 ```
 
 ```ts
-import { IgcMultiColumnComboBoxModule } from 'igniteui-webcomponents-grids';
-import { IgcMultiColumnComboBoxComponent } from 'igniteui-webcomponents-grids';
+import { IgcMultiColumnComboBoxModule } from 'igniteui-webcomponents-data-grids';
+import { IgcMultiColumnComboBoxComponent } from 'igniteui-webcomponents-data-grids';
 
 ModuleManager.register(
     IgcMultiColumnComboBoxModule

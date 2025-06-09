@@ -106,6 +106,13 @@ _language: ja
 
 `sample="/charts/financial-chart/data-tooltip-formatting-currency", height="450", alt="{Platform} ファイナンシャル チャート データ ツールチップの通貨の書式設定"`
 
+## レイアウト モード
+
+凡例項目は、`LayoutMode` プロパティを使って垂直または表形式の構造に配置できます。デフォルト値は `Table` で、以前のリリースと同じ外観と操作性を維持します。
+
+例:
+<img src="../../../images/general/layout_mode.png" />
+
 ## {Platform} データ ツールチップのスタイル設定
 
 **DataToolTip** は、各タイプの列をスタイル設定するためのプロパティを提供します。これらの各プロパティ名は、Title、Label、Value、Units で始まり、テキストの色、フォント、およびマージンのスタイルを設定できます。たとえば、これらのそれぞれのテキストの色を設定する場合は、`DataToolTipTitleTextColor`、`DataToolTipLabelTextColor`、`DataToolTipValueTextColor`、および `DataToolTipUnitsTextColor` プロパティを設定します。

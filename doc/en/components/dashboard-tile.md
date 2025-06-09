@@ -15,8 +15,7 @@ Interacting with the chart type menu in the toolbar will allow for selecting a d
 
 ## {Platform} Dashboard Tile Example
 
-<!-- TODO -->
-`sample="/charts/dashboard-tile/chart-dashboard", height="600", alt="{Platform} Dashboard Tile Example"`
+`sample="/charts/dashboard-tile/local-data-source-dashboard", height="600", alt="{Platform} Dashboard Tile Example"`
 
 ## Dependencies
 
@@ -28,7 +27,7 @@ npm install {PackageCharts}
 npm install {PackageCore}
 npm install {PackageDashboards}
 npm install {PackageGauges}
-npm install {PackageGrids}
+npm install {PackageDataGrids}
 npm install {PackageInputs}
 npm install {PackageLayouts}
 npm install {PackageMaps}
