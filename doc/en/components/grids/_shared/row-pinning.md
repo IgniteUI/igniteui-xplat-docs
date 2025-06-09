@@ -235,12 +235,10 @@ grid.pinning = { rows: RowPinningPosition.Bottom };
 
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-<{ComponentSelector} ref={gridRef} autoGenerate={true}>
-</{ComponentSelector}>
-
 const pinning: IgrPinningConfig = { rows : RowPinningPosition.Bottom }; 
 
-gridRef.current.pinning = { pinning }
+<{ComponentSelector} ref={gridRef} autoGenerate={true} pinning={pinning}>
+</{ComponentSelector}>
 ```
 <!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 
