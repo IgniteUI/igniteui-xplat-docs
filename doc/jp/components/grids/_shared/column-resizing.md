@@ -36,7 +36,7 @@ _language: ja
 ```
 
 ```tsx
-<IgrColumn field="ID" resizable="true" width="100px"></IgrColumn>
+<IgrColumn field="ID" resizable={true} width="100px"></IgrColumn>
 ```
 
 <!-- ComponentEnd: Grid, TreeGrid -->
@@ -56,7 +56,7 @@ _language: ja
 ```
 
 ```tsx
-<IgrColumn field="Artist" resizable="true"></IgrColumn>
+<IgrColumn field="Artist" resizable={true}></IgrColumn>
 ```
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -115,15 +115,15 @@ public onResize(event) {
 ```
 
 ```tsx
-function onResize(grid: IgrGridBaseDirective, event: IgrColumnResizeEventArgs) {
-  IgrColumn col = event.detail.column;
-  string pWidth = event.detail.prevWidth;
-  string nWidth = event.detail.newWidth;
+const onResize = (event: IgrColumnResizeEventArgs) => {
+  const col = event.detail.column;
+  const pWidth = event.detail.prevWidth;
+  const nWidth = event.detail.newWidth;
 }
 
-<{ComponentSelector} id="grid" autoGenerate="false" columnResized={onResize}>
-    <IgrColumn field="ID" width="100px" resizable="true"></IgrColumn>
-    <IgrColumn field="CompanyName" width="100px" resizable="true"></IgrColumn>
+<{ComponentSelector} id="grid" autoGenerate={false} onColumnResized={onResize}>
+    <IgrColumn field="ID" width="100px" resizable={true}></IgrColumn>
+    <IgrColumn field="CompanyName" width="100px" resizable={true}></IgrColumn>
 </{ComponentSelector}>
 ```
 
@@ -163,15 +163,15 @@ public onResize(event) {
 <!-- end: WebComponents -->
 
 ```tsx
-function onResize(grid: IgrGridBaseDirective, event: IgrColumnResizeEventArgs) {
-  IgrColumn col = event.detail.column;
-  string pWidth = event.detail.prevWidth;
-  string nWidth = event.detail.newWidth;
+const onResize = (event: IgrColumnResizeEventArgs) => {
+  const col = event.detail.column;
+  const pWidth = event.detail.prevWidth;
+  const nWidth = event.detail.newWidth;
 }
 
-<{ComponentSelector} data={data} autoGenerate="false" primaryKey="ID" foreignKey="ParentID" columnResized={onResize}>
-    <IgrColumn field="Title" width="100px" resizable="true"></IgrColumn>
-    <IgrColumn field="HireDate" width="100px" resizable="true"></IgrColumn>
+<{ComponentSelector} data={data} autoGenerate={false} primaryKey="ID" foreignKey="ParentID" onColumnResized={onResize}>
+    <IgrColumn field="Title" width="100px" resizable={true}></IgrColumn>
+    <IgrColumn field="HireDate" width="100px" resizable={true}></IgrColumn>
 </{ComponentSelector}>
 ```
 
@@ -227,14 +227,14 @@ public onResize(event) {
 <!-- end: WebComponents -->
 
 ```tsx
-function onResize(grid: IgrGridBaseDirective, event: IgrColumnResizeEventArgs) {
-  IgrColumn col = event.detail.column;
-  string pWidth = event.detail.prevWidth;
-  string nWidth = event.detail.newWidth;
+const onResize = (event: IgrColumnResizeEventArgs) => {
+  const col = event.detail.column;
+  const pWidth = event.detail.prevWidth;
+  const nWidth = event.detail.newWidth;
 }
 
-<{ComponentSelector} id="hierarchicalGrid" autoGenerate="false" columnResized={onResize}>
-    <IgrColumn field="Artist" resizable="true"></IgrColumn>
+<{ComponentSelector} id="hierarchicalGrid" autoGenerate={false} onColumnResized={onResize}>
+    <IgrColumn field="Artist" resizable={true}></IgrColumn>
 </{ComponentSelector}>
 ```
 
@@ -288,11 +288,11 @@ function onResize(grid: IgrGridBaseDirective, event: IgrColumnResizeEventArgs) {
 ```
 
 ```tsx
-<IgrGrid id="grid" autoGenerate="false">
-    <IgrColumn field="ID" width="10%" resizable="true"></IgrColumn>
-    <IgrColumn field="CompanyName" width="100px" resizable="true"></IgrColumn>
-    <IgrColumn field="ContactTitle" resizable="true"></IgrColumn>
-</IgrGrid>
+<{ComponentSelector} id="grid" autoGenerate={false}>
+    <IgrColumn field="ID" width="10%" resizable={true}></IgrColumn>
+    <IgrColumn field="CompanyName" width="100px" resizable={true}></IgrColumn>
+    <IgrColumn field="ContactTitle" resizable={true}></IgrColumn>
+</{ComponentSelector}>
 ```
 
 <!-- ComponentEnd: Grid -->
@@ -323,10 +323,10 @@ function onResize(grid: IgrGridBaseDirective, event: IgrColumnResizeEventArgs) {
 ```
 
 ```tsx
-<{ComponentSelector} data={data} autoGenerate="false" primaryKey="ID" foreignKey="ParentID" columnResized={onResize}>
-    <IgrColumn field="Title" resizable="true" width="10%"></IgrColumn>
-    <IgrColumn field="HireDate" resizable="true" width="100px"></IgrColumn>
-    <IgrColumn field="Age" dataType="number" resizable="true"></IgrColumn>
+<{ComponentSelector} data={data} autoGenerate={false} primaryKey="ID" foreignKey="ParentID" onColumnResized={onResize}>
+    <IgrColumn field="Title" resizable={true} width="10%"></IgrColumn>
+    <IgrColumn field="HireDate" resizable={true} width="100px"></IgrColumn>
+    <IgrColumn field="Age" dataType="number" resizable={true}></IgrColumn>
 </{ComponentSelector}>
 ```
 
@@ -360,11 +360,11 @@ function onResize(grid: IgrGridBaseDirective, event: IgrColumnResizeEventArgs) {
 ```
 
 ```tsx
-<{ComponentSelector} id="hierarchicalGrid" columnResized={onResize} autoGenerate="false"
+<{ComponentSelector} id="hierarchicalGrid" onColumnResized={onResize} autoGenerate={false}
     height="600px" width="100%">
-    <IgrColumn field="Artist" resizable="true" width="10%"></IgrColumn>
-    <IgrColumn field="GrammyNominations" resizable="true" width="100px"></IgrColumn>
-    <IgrColumn field="GrammyAwards" resizable="true"></IgrColumn>
+    <IgrColumn field="Artist" resizable={true} width="10%"></IgrColumn>
+    <IgrColumn field="GrammyNominations" resizable={true} width="100px"></IgrColumn>
+    <IgrColumn field="GrammyAwards" resizable={true}></IgrColumn>
 </{ComponentSelector}>
 ```
 
@@ -397,7 +397,7 @@ function onResize(grid: IgrGridBaseDirective, event: IgrColumnResizeEventArgs) {
 ```
 
 ```tsx
-<IgrColumn field="ID" width="100px" resizable="true"
+<IgrColumn field="ID" width="100px" resizable={true}
             minWidth="60px" maxWidth="230px"></IgrColumn>
 ```
 
@@ -419,7 +419,7 @@ function onResize(grid: IgrGridBaseDirective, event: IgrColumnResizeEventArgs) {
 ```
 
 ```tsx
-<IgrColumn field="Artist" width="100px" resizable="true"
+<IgrColumn field="Artist" width="100px" resizable={true}
             minWidth="60px" maxWidth="230px"></IgrColumn>
 ```
 
@@ -445,7 +445,7 @@ function onResize(grid: IgrGridBaseDirective, event: IgrColumnResizeEventArgs) {
 ```
 
 ```tsx
-<IgrColumn field="ID" width="10%" resizable="true"
+<IgrColumn field="ID" width="10%" resizable={true}
             minWidth="60px" maxWidth="230px"></IgrColumn>
 ```
 
@@ -467,7 +467,7 @@ function onResize(grid: IgrGridBaseDirective, event: IgrColumnResizeEventArgs) {
 ```
 
 ```tsx
-<IgrColumn field="Artist" width="100px" resizable="true"
+<IgrColumn field="Artist" width="100px" resizable={true}
             minWidth="60px" maxWidth="230px"></IgrColumn>
 ```
 
@@ -491,7 +491,7 @@ function onResize(grid: IgrGridBaseDirective, event: IgrColumnResizeEventArgs) {
 ```
 
 ```tsx
-<IgrColumn field="ID" width="100px" resizable="true"
+<IgrColumn field="ID" width="100px" resizable={true}
             minWidth="5%" maxWidth="15%"></IgrColumn>
 ```
 
@@ -513,7 +513,7 @@ function onResize(grid: IgrGridBaseDirective, event: IgrColumnResizeEventArgs) {
 ```
 
 ```tsx
-<IgrColumn field="Artist" width="100px" resizable="true"
+<IgrColumn field="Artist" width="100px" resizable={true}
             minWidth="60px" maxWidth="15%"></IgrColumn>
 ```
 

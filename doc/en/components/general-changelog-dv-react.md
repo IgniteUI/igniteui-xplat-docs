@@ -9,7 +9,7 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
-## **25.1**
+## **{PackageVerLatest}**
 
 ### {PackageCharts} (Charts)
 
@@ -36,7 +36,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 **Breaking Changes**
 
-- The `IgrDataGrid` now exists as part of the igniteui-react-data-grids package.
+- The `IgrDataGrid` & `IgrMultiColumnComboBox` are now part of the igniteui-react-data-grids package.
 
 ### Enhancements
 
@@ -51,6 +51,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
+|25997|IgrDataGrid|Summaries are only showing for first grouped child row|
 |37023|IgrDataChart|Tooltips are cut-off/offscreen if overflow hidden is set.
 |37244|Excel|Custom Data Validation is not working.
 |37685|IgrSpreadsheet|Poor rendering of numbers formatted with Arial font.
@@ -677,7 +678,7 @@ The data grid component property `propertyPath` has been renamed to `field`. Thi
 ```
 
 ```ts
-import { IgrColumnSummaryDescription, IgrColumnSortDescription, IgrColumnGroupDescription } from 'igniteui-react-grids'
+import { IgrColumnSummaryDescription, IgrColumnSortDescription, IgrColumnGroupDescription } from 'igniteui-react-data-grids'
 const productCount = new IgrColumnSummaryDescription();
 productCount.field = "ProductName";
 const colSortDesc = new IgrColumnSortDescription();
@@ -700,8 +701,8 @@ The data grid component and it's corresponding module's names have changed from 
 The new code for importing the grid and it's corresponding module is:
 
 ```ts
-import { IgrDataGrid } from "igniteui-react-grids";
-import { IgrDataGridModule } from 'igniteui-react-grids';
+import { IgrDataGrid } from "igniteui-react-data-grids";
+import { IgrDataGridModule } from 'igniteui-react-data-grids';
 ```
 
 - Required Peer Dependency for Data Grid
@@ -757,8 +758,8 @@ import { IgrDataChartCoreModule } from 'igniteui-react-charts';
 import { IgrGeographicMap } from "igniteui-react-maps";
 import { IgrGeographicMapModule } from "igniteui-react-maps";
 // grids:
-import { IgrLiveGrid } from "igniteui-react-grids";
-import { IgrLiveGridModule } from 'igniteui-react-grids';
+import { IgrLiveGrid } from "igniteui-react-data-grids";
+import { IgrLiveGridModule } from 'igniteui-react-data-grids';
 ```
 
 - Code Before Changes
@@ -787,6 +788,6 @@ import { IgrGeographicMap } from "igniteui-react-maps/ES5/igr-geographic-map";
 import { IgrGeographicMapModule } from "igniteui-react-maps/ES5/igr-geographic-map-module";
 
 // grids:
-import { IgrLiveGrid } from "igniteui-react-grids/ES5/igr-live-grid";
-import { IgrLiveGridModule } from 'igniteui-react-grids/ES5/igr-live-grid-module';
+import { IgrLiveGrid } from "igniteui-react-data-grids/ES5/igr-live-grid";
+import { IgrLiveGridModule } from 'igniteui-react-data-grids/ES5/igr-live-grid-module';
 ```

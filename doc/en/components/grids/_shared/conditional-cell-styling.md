@@ -298,7 +298,7 @@ constructor() {
 ```
 
 ```tsx
-<IgrTreeGrid autoGenerate="true" primaryKey="ID" foreignKey="ParentID" data={data} rowStyles={rowStyles}>
+<IgrTreeGrid autoGenerate={true} primaryKey="ID" foreignKey="ParentID" data={data} rowStyles={rowStyles}>
 </IgrTreeGrid>
 ```
 
@@ -306,6 +306,7 @@ constructor() {
 
 <!-- ComponentStart: HierarchicalGrid -->
 
+<!-- WebComponents -->
 ```typescript
 public rowStyles = {
     background:(row: RowType) => row.data['HasGrammyAward'] ? '#eeddd3' : '#f0efeb',
@@ -316,6 +317,20 @@ public childRowStyles = {
     'border-left': (row: RowType) => row.data['BillboardReview'] > 70 ? '3.5px solid #dda15e' : null
 };
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```typescript
+const rowStyles = {
+    background:(row: RowType) => row.data['HasGrammyAward'] ? '#eeddd3' : '#f0efeb',
+    'border-left': (row: RowType) => row.data['HasGrammyAward'] ? '2px solid #dda15e' : null
+};
+
+const childRowStyles = {
+    'border-left': (row: RowType) => row.data['BillboardReview'] > 70 ? '3.5px solid #dda15e' : null
+};
+```
+<!-- end: React -->
 
 ```razor
 igRegisterScript("WebGridRowStylesHandler", () => {
@@ -365,9 +380,9 @@ constructor() {
 ```
 
 ```tsx
-<IgrHierarchicalGrid autoGenerate="true" rowStyles={rowStyles}
+<IgrHierarchicalGrid autoGenerate={true} rowStyles={rowStyles}
         height="580px" width="100%">
-        <IgrRowIsland childDataKey="Albums" autoGenerate="true" rowStyles={childRowStyles}>
+        <IgrRowIsland childDataKey="Albums" autoGenerate={true} rowStyles={childRowStyles}>
         </IgrRowIsland>
 </IgrHierarchicalGrid>
 ```
@@ -411,7 +426,7 @@ constructor() {
 ```
 
 ```tsx
-<IgrColumn field="BeatsPerMinute" dataType="Number" cellClasses={beatsPerMinuteClasses}></IgrColumn>
+<IgrColumn field="BeatsPerMinute" dataType="number" cellClasses={beatsPerMinuteClasses}></IgrColumn>
 ```
 
 <!-- ComponentEnd: Grid -->
@@ -432,7 +447,7 @@ constructor() {
 ```
 
 ```tsx
-<IgrColumn field="BeatsPerMinute" dataType="Number" cellClasses={this.grammyNominationsCellClassesHandler}></IgrColumn>
+<IgrColumn field="BeatsPerMinute" dataType="number" cellClasses={grammyNominationsCellClassesHandler}></IgrColumn>
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -497,11 +512,11 @@ public beatsPerMinuteClasses = {
 <!-- end: Angular, WebComponents -->
 
 ```tsx
-function upFontCondition(rowData: any, columnKey: any): boolean {
+const upFontCondition = (rowData: any, columnKey: any): boolean => {
     return rowData[columnKey] > 95;
 }
 
-function downFontCondition(rowData: any, columnKey: any): boolean {
+const downFontCondition = (rowData: any, columnKey: any): boolean => {
     return rowData[columnKey] <= 95;
 }
 
@@ -559,7 +574,7 @@ public grammyNominationsCellClassesHandler = {
 <!-- end: Angular, WebComponents -->
 
 ```tsx
-public grammyNominationsCellClassesHandler = {
+const grammyNominationsCellClassesHandler = {
     downFont: (rowData: any, columnKey: any): boolean => rowData[columnKey] < 5,
     upFont: (rowData: any, columnKey: any): boolean => rowData[columnKey] >= 6
 };
@@ -613,11 +628,11 @@ igRegisterScript("UnitPriceCellClassesHandler", () => {
 ```
 
 ```tsx
-function upPriceCondition(rowData: any, columnKey: any): boolean {
+const upPriceCondition = (rowData: any, columnKey: any): boolean => {
     return rowData[columnKey] > 5;
 }
 
-function downPriceCondition(rowData: any, columnKey: any): boolean {
+const downPriceCondition = (rowData: any, columnKey: any): boolean => {
     return rowData[columnKey] <= 5;
 }
 
@@ -1097,24 +1112,25 @@ constructor() {
 
 <!-- end:Angular, WebComponents -->
 
-
+<!--ComponentStart: Grid, HierarchicalGrid, TreeGrid-->
 ```tsx
-let backgroundClasses = {
+const backgroundClasses = {
     myBackground: (rowData: any, columnKey: string) => {
         return rowData.Col2 < 10;
     }
 };
 
-function editDone(grid, evt) {
+const editDone = (event: IgrGridEditEventArgs) => {
     backgroundClasses = {...backgroundClasses};
 }
 
 <{ComponentSelector} id="grid1" height="500px" width="100%" onCellEdit={editDone}>
   <IgrColumn id="Col1" field="Col1" dataType="number" cellClasses={backgroundClasses}></IgrColumn>
-  <IgrColumn id="Col2" field="Col2" dataType="number" editable="true" cellClasses={backgroundClasses}></IgrColumn>
+  <IgrColumn id="Col2" field="Col2" dataType="number" editable={true} cellClasses={backgroundClasses}></IgrColumn>
   <IgrColumn id="Col3" field="Col3" header="Col3" dataType="string" cellClasses={backgroundClasses}></IgrColumn>
 </{ComponentSelector}>
 ```
+<!--ComponentEnd: Grid, HierarchicalGrid, TreeGrid-->
 
 ## API References
 

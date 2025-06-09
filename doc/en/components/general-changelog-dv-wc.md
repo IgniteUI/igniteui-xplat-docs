@@ -10,7 +10,7 @@ namespace: Infragistics.Controls
 
 All notable changes for each version of {ProductName} are documented on this page.
 
-## **25.1**
+## **{PackageVerLatest}**
 
 ### {PackageCharts} (Charts)
 
@@ -37,7 +37,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 **Breaking Changes**
 
-- The `IgcDataGrid` now exists as part of the igniteui-webcomponents-data-grids package.
+- The `IgcDataGrid` & `IgcMultiColumnComboBox` are now part of the igniteui-webcomponents-data-grids package.
 
 ### Enhancements
 
@@ -52,6 +52,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
+|25997|IgcDataGrid|Summaries are only showing for first grouped child row|
 |37023|IgcDataChart|Tooltips are cut-off/offscreen if overflow hidden is set.
 |37244|Excel|Custom Data Validation is not working.
 |37685|IgcSpreadsheet|Poor rendering of numbers formatted with Arial font.
@@ -296,7 +297,7 @@ The data grid component property `propertyPath` has been renamed to `field`. Thi
 ```
 
 ```ts
-import { IgcColumnSummaryDescription, IgcColumnSortDescription, IgcColumnGroupDescription} from 'igniteui-webcomponents-grids'
+import { IgcColumnSummaryDescription, IgcColumnSortDescription, IgcColumnGroupDescription} from 'igniteui-webcomponents-data-grids'
 const productCount = new IgcColumnSummaryDescription();
 productCount.field = "ProductName";
 const colSortDesc = new IgcColumnSortDescription();
@@ -317,8 +318,8 @@ income.field = "Income";
 The new code for importing the grid and it's corresponding module is:
 
 ```ts
-import { IgcDataGrid } from "igniteui-webcomponents-grids";
-import { IgcDataGridModule } from 'igniteui-webcomponents-grids';
+import { IgcDataGrid } from "igniteui-webcomponents-data-grids";
+import { IgcDataGridModule } from 'igniteui-webcomponents-data-grids';
 ```
 
 - Required Peer Dependency for `DataGrid`
@@ -1170,8 +1171,8 @@ import { IgcDataChartCoreModule } from "igniteui-webcomponents-charts";
 import { IgcGeographicMapComponent } from "igniteui-webcomponents-maps";
 import { IgcGeographicMapModule } from "igniteui-webcomponents-maps";
 // grids:
-import { IgcDataGridComponent } from "igniteui-webcomponents-grids";
-import { IgcDataGridModule } from "igniteui-webcomponents-grids";
+import { IgcDataGridComponent } from "igniteui-webcomponents-data-grids";
+import { IgcDataGridModule } from "igniteui-webcomponents-data-grids";
 ```
 
 - Code Before Changes
@@ -1200,8 +1201,8 @@ import { IgcGeographicMapComponent } from "igniteui-webcomponents-maps/ES5/igc-g
 import { IgcGeographicMapModule } from "igniteui-webcomponents-maps/ES5/igc-geographic-map-module";
 
 // grids:
-import { IgcLiveGridModule } from 'igniteui-webcomponents-grids/ES5/igc-live-grid-module';
-import { IgcLiveGridComponent } from 'igniteui-webcomponents-grids/ES5/igc-live-grid-component';
+import { IgcLiveGridModule } from 'igniteui-webcomponents-data-grids/ES5/igc-live-grid-module';
+import { IgcLiveGridComponent } from 'igniteui-webcomponents-data-grids/ES5/igc-live-grid-component';
 ```
 
 ## {PackageDockManager}

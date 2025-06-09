@@ -84,6 +84,14 @@ OHLC 価格の **TypicalPrice** (標準価格) とパーセンテージの **Cha
 
 また、`XamDataLegend` の `UnitText` プロパティを使用して、すべての Unit 列に表示されるテキストを変更できます。
 
+## レイアウト モード
+
+凡例項目は、`LayoutMode` プロパティを使って垂直または表形式の構造に配置できます。デフォルト値は `Table` で、以前のリリースと同じ外観と操作性を維持します。
+
+例:
+
+<img src="../../../images/general/layout_mode.png" />
+
 ## {Platform} データ凡例のスタイル設定
 
 `XamDataLegend` は、各タイプの列をスタイル設定するためのプロパティを提供します。これらの各プロパティの名前は、**Title**、**Label**、**Value**、または **Units** で始まります。テキストの色、フォント、余白のスタイルを設定できます。たとえば、すべての列のテキストの色を設定する場合は、`TitleTextColor`、`LabelTextColor`、`ValueTextColor`、および `UnitsTextColor` プロパティを設定します。次の例は、上記のスタイル設定プロパティの使用法を示しています:

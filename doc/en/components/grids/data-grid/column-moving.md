@@ -39,14 +39,14 @@ The following demonstrates how to implement column moving in the {ProductName} D
 
 <!--React-->
 ```ts
-import { ColumnMovingAnimationMode } from 'igniteui-react-grids';
-import { ColumnMovingMode } from 'igniteui-react-grids';
+import { ColumnMovingAnimationMode } from 'igniteui-react-data-grids';
+import { ColumnMovingMode } from 'igniteui-react-data-grids';
 ```
 
 <!--WebComponents-->
 ```ts
-import { ColumnMovingAnimationMode } from 'igniteui-webcomponents-grids';
-import { ColumnMovingMode } from 'igniteui-webcomponents-grids';
+import { ColumnMovingAnimationMode } from 'igniteui-webcomponents-data-grids';
+import { ColumnMovingMode } from 'igniteui-webcomponents-data-grids';
 ```
 
 ```tsx

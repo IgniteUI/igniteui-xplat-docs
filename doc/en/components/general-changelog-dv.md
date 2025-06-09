@@ -16,7 +16,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 * [Ignite UI for Angular CHANGELOG.md at Github](https://github.com/IgniteUI/igniteui-angular/blob/master)
 
 
-## **25.1**
+## **{PackageVerLatest}**
 
 ### {PackageCharts} (Charts)
 
@@ -38,6 +38,12 @@ All notable changes for each version of {ProductName} are documented on this pag
 ### {PackageDashboards} (Dashboards)
 
 - The `IgxDashboardTile` now supports propagating the aggregations from its DataGrid view to the chart visualization such as sorting, grouping, filtering and selection. This is currently supported by binding the `DataSource` of the `IgxDashboardTile` to an instance of `IgxLocalDataSource`.
+
+### {PackageGrids}
+
+**Breaking Changes**
+
+- The 'igniteui-angular-grids' package has been renamed to 'igniteui-angular-data-grids'.
 
 ### Enhancements
 
