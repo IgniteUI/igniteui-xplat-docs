@@ -35,14 +35,14 @@ The new data after the paste is decorated in Italic.
 You should first bind to the grid's `rendered` event to create and manage a text area element:
 
 ```tsx
-<IgrGrid autoGenerate="false" data={this.invoicesData} rendered={this.webGridPasteFromExcel} ref={this.gridRef} id="grid" primaryKey="OrderID">
+<IgrGrid autoGenerate={false} data={this.invoicesData} onRendered={this.webGridPasteFromExcel} ref={this.gridRef} id="grid" primaryKey="OrderID">
     <IgrGridToolbar>
         <IgrGridToolbarActions>
-            <IgrGridToolbarExporter exportExcel="true" exportCSV="false">
+            <IgrGridToolbarExporter exportExcel={true} exportCSV={false}>
             </IgrGridToolbarExporter>
         </IgrGridToolbarActions>
     </IgrGridToolbar>
-    <IgrColumn field="OrderID" hidden="true"></IgrColumn>
+    <IgrColumn field="OrderID" hidden={true}></IgrColumn>
     <IgrColumn field="Salesperson" header="Name" width="200px"></IgrColumn>
     <IgrColumn field="ShipName" header="Ship Name" width="200px"></IgrColumn>
     <IgrColumn field="Country" header="Country" width="200px"></IgrColumn>
