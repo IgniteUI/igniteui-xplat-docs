@@ -43,7 +43,7 @@ defineComponents(IgcButtonComponent);
 npm install igniteui-react
 ```
 
-次に、以下のように、`Button` と必要な CSS をインポート必要があります:
+次に、以下のように、`Button` と必要な CSS をインポートする必要があります:
 
 ```tsx
 import { IgrButton } from 'igniteui-react';

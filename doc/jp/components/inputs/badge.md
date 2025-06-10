@@ -45,7 +45,7 @@ defineComponents(IgcBadgeComponent);
 npm install igniteui-react
 ```
 
-次に、以下のように、`Badge` とそれに必要な CSS をインポートする必要があります:
+次に、以下のように、`Badge` と必要な CSS をインポートする必要があります:
 
 ```tsx
 import { IgrBadge } from 'igniteui-react';
