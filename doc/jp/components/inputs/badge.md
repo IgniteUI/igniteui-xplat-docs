@@ -25,7 +25,7 @@ _language: ja
 npm install {PackageWebComponents}
 ```
 
-次に、以下のように、`Badge` と必要な CSS をインポートする必要があります:
+次に、以下のように、`Badge` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
 ```ts
 import { defineComponents, IgcBadgeComponent } from "igniteui-webcomponents";
@@ -45,7 +45,7 @@ defineComponents(IgcBadgeComponent);
 npm install igniteui-react
 ```
 
-次に、以下のように、`Badge` とそれに必要な CSS をインポートします:
+次に、以下のように、`Badge` とそれに必要な CSS をインポートする必要があります:
 
 ```tsx
 import { IgrBadge } from 'igniteui-react';
