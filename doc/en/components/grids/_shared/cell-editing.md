@@ -457,34 +457,31 @@ If you want to provide a custom template which will be applied to a cell, you ca
 <IgrColumn
     field="race"
     header="Race"
-    dataType="String"
-    editable="true"
-    name="column1"
-    id="column1">
+    dataType="string"
+    editable={true}
+    inlineEditorTemplate={this.webGridCellEditCellTemplate}>
 </IgrColumn>
 ```
 
 and pass the templates to this column in the index.ts file:
 
 ```typescript
-public webGridCellEditCellTemplate = (e: { dataContext: IgrCellTemplateContext; }) => {
+public webGridCellEditCellTemplate = (e: IgrCellTemplateContext) => {
     let cellValues: any = [];
     let uniqueValues: any = [];
-    const cell = e.dataContext.cell;
+    const cell = e.cell;
     const colIndex = cell.id.columnID;
     const field: string = this.grid1.getColumnByVisibleIndex(colIndex).field;
-    const key = field + "_" + cell.id.rowID;
     let index = 0;
     for (const i of this.roleplayDataStats as any) {
       if (uniqueValues.indexOf(i[field]) === -1) {
         cellValues.push(
           <>
             <IgrSelectItem
-              selected={e.dataContext.cell.value == i[field]}
+              selected={e.cell.value == i[field]}
               value={i[field]}
-              key={key + "_" + index}
             >
-              <div key={key + "_" + index}>{i[field]}</div>
+              <div>{i[field]}</div>
             </IgrSelectItem>
           </>
         );
@@ -495,10 +492,9 @@ public webGridCellEditCellTemplate = (e: { dataContext: IgrCellTemplateContext; 
     return (
       <>
         <IgrSelect
-          key={key}
-          change={(x: any) => {
+          onChange={(x: any) => {
             setTimeout(() => {
-              cell.editValue = x.value;
+              cell.editValue = x.target.value;
             });
           }}
         >
@@ -529,6 +525,24 @@ Using Excel Style Editing allows the user to navigate trough the cells just as h
 
 Implementing this custom functionality can be done by utilizing the events of the `{ComponentName}`. First we hook up to the grid's keydown events, and from there we can implement two functionalities:
 
+<!-- React -->
+```tsx
+const gridRef = useRef<IgrGrid>();
+useEffect(() => {
+    gridRef.current.addEventListener("keydown", handleKeyDown);
+    return () => {
+        gridRef.current.removeEventListener("keydown", handleKeyDown);
+    };
+}, []);
+<IgrGrid ref={gridRef} autoGenerate={false} data={NwindData} primaryKey="ProductID">
+</IgrGrid>
+```
+
+> [!Note]
+> We are using the native browser keydown event instead of React’s synthetic onKeyDown event. When a cell enters edit mode and the ENTER key is pressed to move to the next row, the grid’s editing feature updates the cell value and closes the edit mode. As a result, the input element used for editing is removed from the DOM. Due to React’s event system optimizations, the onKeyDown synthetic event does not bubble up to the grid because the element no longer exists in the React tree at that moment. Therefore, using the native event listener is necessary to ensure the expected behavior.
+
+<!-- end: React -->
+
 * Constant edit mode
 
 <!-- Angular, WebComponents -->
@@ -557,20 +571,19 @@ public keydownHandler(event) {
 <!-- React -->
 
 ```typescript
-function keydownHandler(event) {
-  const key = event.keyCode;
-  const grid = grid1Ref.current;
-  const activeElem = grid.navigation.activeNode;
+function handleKeyDown(event: KeyBoardEvent) {
+    const code = event.code;
+    const grid = event.currentTarget as IgrGrid;
+    const activeElem = grid.selectedCells[0];
 
-  if ((key >= 48 && key <= 57) ||
-      (key >= 65 && key <= 90) ||
-      (key >= 97 && key <= 122)) {
-        // Number or Alphabet upper case or Alphabet lower case
-        const columnName = grid.getColumnByVisibleIndex(activeElem.column).field;
-        const cell = grid.getCellByColumn(activeElem.row, columnName);
-        if (cell && !grid.crudService.cellInEditMode) {
-            grid.crudService.enterEditMode(cell);
-            cell.editValue = event.key;
+    if ((event.code >= "Digit0" && event.code <= "Digit9") || (event.code >= "KeyA" && event.code <= "KeyZ") 
+        || (event.code >= "Numpad0" && event.code <= "Numpad9" && event.code !== "Enter" && event.code !== "NumpadEnter")) {
+        if (activeElem && !activeElem.editMode) {
+            activeElem.editMode = true;
+            activeElem.editValue = event.key;
+        } else if (activeElem && activeElem.editMode) {
+            event.preventDefault();
+            activeElem.editValue = activeElem.editValue + event.key;
         }
     }
 }
@@ -601,18 +614,15 @@ if (key == 13) {
 
 <!-- React -->
 ```typescript
-if (key == 13) {
-    let thisRow = activeElem.row;
-    const column = activeElem.column;
-    const rowInfo = grid.dataView;
+if (code === "Enter" || code === "NumpadEnter") {
+    const thisRow = activeElem.row.index;
+    const dataView = grid.dataView;
+    const nextRowIndex = getNextEditableRowIndex(thisRow, dataView, event.shiftKey);
 
-    // to find the next eligible cell, we will use a custom method that will check the next suitable index
-    let nextRow = getNextEditableRowIndex(thisRow, rowInfo, event.shiftKey);
-
-    // and then we will navigate to it using the grid's built in method navigateTo
-    grid1Ref.current.navigateTo(nextRow, column, (obj) => {
+    grid.navigateTo(nextRowIndex, activeElem.column.visibleIndex, (obj: any) => {
         obj.target.activate();
-        grid1Ref.current.clearCellSelection();
+        grid.endEdit(true);
+        grid.markForCheck();
     });
 }
 ```
@@ -623,11 +633,11 @@ Key parts of finding the next eligible index would be:
 ```typescript
 //first we check if the currently selected cell is the first or the last
 if (currentRowIndex < 0 || (currentRowIndex === 0 && previous) || (currentRowIndex >= dataView.length - 1 && !previous)) {
-return currentRowIndex;
+    return currentRowIndex;
 }
 // in case using shift + enter combination, we look for the first suitable cell going up the field
 if (previous) {
-return  dataView.findLastIndex((rec, index) => index < currentRowIndex && this.isEditableDataRecordAtIndex(index, dataView));
+    return  dataView.findLastIndex((rec, index) => index < currentRowIndex && this.isEditableDataRecordAtIndex(index, dataView));
 }
 // or for the next one down the field
 return dataView.findIndex((rec, index) => index > currentRowIndex && this.isEditableDataRecordAtIndex(index, dataView));
@@ -879,7 +889,7 @@ row.delete();
 grid1Ref.current.deleteRow(selectedCell.cellID.rowID);
 // Delete row through row object
 const row = grid1Ref.current.getRowByIndex(rowIndex);
-row.del();
+row.delete();
 ```
 <!-- end: React -->
 
@@ -932,7 +942,7 @@ row.delete();
 this.hierarchicalGrid.deleteRow(this.selectedCell.cellID.rowID);
 // Delete row through row object
 const row = this.hierarchicalGrid.getRowByIndex(rowIndex);
-row.del();
+row.delete();
 ```
 <!-- end: React -->
 
@@ -977,7 +987,7 @@ The first thing we need to do is bind to the grid's event:
 
 <!-- React -->
 ```tsx
-<{ComponentSelector} cellEdit={handleCellEdit}>
+<{ComponentSelector} onCellEdit={handleCellEdit}>
 </{ComponentSelector}>
 ```
 <!-- end: React -->
@@ -1065,7 +1075,7 @@ public webGridCellEdit(event: CustomEvent<IgcGridEditEventArgs>): void {
 
 <!-- React -->
 ```typescript
-function handleCellEdit(s: IgrGridBaseDirective, args: IgrGridEditEventArgs): void {
+function handleCellEdit(args: IgrGridEditEventArgs): void {
     const column = args.detail.column;
 
     if (column.field === 'UnitsOnOrder') {
@@ -1138,7 +1148,37 @@ igRegisterScript("HandleCellEdit", (ev) => {
 }, false);
 ```
 
+<!-- React -->
+<!-- ComponentStart: TreeGrid -->
+
+```tsx
+public webTreeGridCellEdit(args: IgrGridEditEventArgs): void {
+    const column = args.detail.column;
+
+    if (column.field === 'Age') {
+        if (args.detail.newValue < 18) {
+            args.detail.cancel = true;
+            alert('Employees must be at least 18 years old!');
+        }
+    } else if (column.field === 'HireDate') {
+        if (args.detail.newValue > new Date().getTime()) {
+            args.detail.cancel = true;
+            alert('The employee hire date must be in the past!');
+        }
+    }
+}
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: React -->
+<!-- Blazor -->
 If the value entered in a cell under the **Age** column is below 18 or the value in the **HireDate** column is in the future, the editing will be cancelled and the user will be alerted to the cancellation.
+<!-- end: Blazor -->
+<!-- WebComponents, React -->
+<!-- ComponentStart: HierarchicalGrid -->
+If the value entered in a cell under the **Units On Order** column is larger than the available amount (the value under **Units in Stock**), the editing will be cancelled and the user will be alerted to the cancellation.
+<!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- end: WebComponents, React -->
 
 <!-- Angular -->
 
@@ -1185,26 +1225,22 @@ igRegisterScript("HandleCellEdit", (ev) => {
 	}
 }, false);
 ```
-
+<!-- Blazor -->
 Here, we are validating two columns. If the user tries to change an artist's **Debut** year or an album's **Launch Date**, the grid will not allow any dates that are greater than today.
+<!-- end: Blazor -->
+
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- React -->
 <!-- ComponentStart: HierarchicalGrid -->
 ```tsx
-public handleCellEdit(sender: IgrHierarchicalGrid, event: IgrGridEditEventArgs): void {
-    const today = new Date();
-    const column = event.detail.column;
-    if (column.field === 'Debut') {
-        if (event.detail.newValue > today.getFullYear()) {
-            event.detail.cancel = true;
-            alert('The debut date must be in the past!');
-        }
-    } else if (column.field === 'LaunchDate') {
-        if (event.detail.newValue > today) {
-            event.detail.cancel = true;
-            alert('The launch date must be in the past!');
+public handleCellEdit(event: IgrGridEditEventArgs): void {
+    const detail = args.detail;
+    if (detail.column != null && d.column.field == "UnitsOnOrder") {
+        if (detail.newValue > detail.rowData.UnitsInStock) {
+            detail.cancel = true;
+            alert("You cannot order more than the units in stock!");
         }
     }
 }
