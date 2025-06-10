@@ -39,13 +39,11 @@ First, you need to the install the corresponding {ProductName} npm package by ru
 npm install igniteui-react
 ```
 
-You will then need to import the {ProductName} `Calendar`, its necessary CSS, and register its module, like so:
+You will then need to import the {ProductName} `Calendar` and its necessary CSS, like so:
 
 ```tsx
-import { IgrCalendarModule, IgrCalendar } from 'igniteui-react';
+import { IgrCalendar } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrCalendarModule.register();
 ```
 
 <!-- end: React -->
@@ -351,7 +349,7 @@ this.calendar.addEventListener('igcChange', ev => console.log(ev.detail));
 ```
 
 ```tsx
-<IgrCalendar change={this.onCalendarChange} />
+<IgrCalendar onChange={this.onCalendarChange} />
 
 public onCalendarChange(calendar: IgrCalendar, e: IgrComponentDataValueChangedEventArgs) {
 
