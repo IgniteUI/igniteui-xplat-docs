@@ -42,13 +42,11 @@ npm install {PackageWebComponents}
 npm install igniteui-react
 ```
 
-次に、以下のように、`Card` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、`Card` と必要な CSS をインポートする必要があります:
 
 ```tsx
-import { IgrCardModule, IgrCard, IgrCardHeader, IgrCardContent, IgrCardMedia, IgrCardActions } from 'igniteui-react';
+import { IgrCard, IgrCardHeader, IgrCardContent, IgrCardMedia, IgrCardActions } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrCardModule.register();
 ```
 
 <!-- end: React -->
@@ -75,7 +73,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCardModule));
 ```ts
 import { defineComponents, IgcCardComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcCardComponent);
+defineComponents(IgcCardComponent );
 ```
 
 {ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
@@ -458,7 +456,7 @@ defineComponents(IgcCardComponent);
         <IgbRipple />
         Read more
     </IgbButton>
-    <div slot="end">
+    <div slot="start">
         <IgbIconButton name="twitter">
             <IgbRipple />
         </IgbIconButton>
@@ -475,8 +473,8 @@ defineComponents(IgcCardComponent);
         <span>Read more</span>
         <IgrRipple />
     </IgrButton>
-    <div slot="end">
-        <IgrIconButton ref={this.iconRef} className="marginIcon" name="twitter" collection="material">
+    <div slot="start">
+        <IgrIconButton className="marginIcon" name="twitter" collection="material">
             <IgrRipple />
         </IgrIconButton>
         <IgrIconButton name="facebook" collection="material">

@@ -34,13 +34,11 @@ npm install {PackageWebComponents}
 npm install igniteui-react
 ```
 
-次に、以下のように、`Avatar` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、`Avatar` と必要な CSS をインポートする必要があります:
 
 ```tsx
-import { IgrAvatarModule, IgrAvatar } from 'igniteui-react';
+import { IgrAvatar } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrAvatarModule.register();
 ```
 
 <!-- end: React -->
@@ -210,7 +208,7 @@ igc-avatar::part(base) {
 }
 ```
 
-`sample="/layouts/avatar/styling", height="80", alt="{Platform} Avatar の例"`
+`sample="/layouts/avatar/styling", height="150", alt="{Platform} Avatar の例"`
 
 <div class="divider--half"></div>
 
