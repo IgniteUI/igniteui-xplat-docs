@@ -46,7 +46,7 @@ You will also need to link an additional CSS file to apply the styling to the `S
 <!-- React -->
 
 ```tsx
-import { IgrComboModule, IgrCombo, IgrSwitchModule, IgrSwitch  } from 'igniteui-react';
+import { IgrCombo, IgrSwitch  } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
 ```
 
@@ -203,7 +203,7 @@ const options = {
     caseSensitive: true
 };
 
-comboRef.current.filteringOptions = options;
+<IgrCombo filteringOptions={options} />
 ```
 <!-- end: React -->
 
