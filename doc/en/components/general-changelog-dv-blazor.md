@@ -136,8 +136,18 @@ All notable changes for each version of {ProductName} are documented on this pag
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
 |25997|IgbDataGrid|Summaries are only showing for first grouped child row|
-|37023|IgbDataChart|Tooltips are cut-off/offscreen if overflow hidden is set.
-|37244|Excel|Custom Data Validation is not working
+|37023|IgbDataChart|Tooltips are cut-off/offscreen if overflow hidden is set.|
+|37244|Excel|Custom Data Validation is not working|
+
+## **{PackageVerChanges-24-2-MAY}**
+
+### Bug Fixes
+
+| Bug Number | Control | Description      |
+|------------|---------|------------------|
+|37271|IgbHierarchicalGrid|ParentRowData included to IGridCreatedEventArgs|
+|37681|IgbDataChart|Category Chart - values labels are should appear above columns when there is adequate space|
+|37244|Excel|Custom Data Validation is not working|
 
 ## **{PackageVerChanges-24-2-APR}**
 
