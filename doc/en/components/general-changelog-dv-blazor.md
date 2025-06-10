@@ -102,6 +102,22 @@ All notable changes for each version of {ProductName} are documented on this pag
 - `Textarea`
     - `Autocapitalize` & `InputMode` are now `string` properties instead of explicit enums
 
+### {PackageGrids} (Grids)
+- `Column`
+  - Added events: `HiddenChange`, `ExpandedChange`, `WidthChange`, `PinnedChange`
+- `Grid`
+  - Added events: `GroupingExpressionsChange`, `GroupingExpansionStateChange`
+- `RowIsland`
+  - Added new parameter `ParentRowData` in `GridCreatedEventArgsDetail` args for `GridCreated` event
+- `Grid`, `HierarchicalGrid`, `TreeGrid`
+  - Added property - `ExpansionStates` - represents a list of key-value pairs [row ID, expansion state].
+  - Added event: `ExpansionStatesChange`
+  - Type of `Rendered` event is changed from `VoidHandler` to `ComponentBoolValueChangedEventHandler`
+  - Type of DataChanging event is changed from `ForOfDataChangingEventHandler` to `ForOfDataChangeEventHandler`
+  - Type of DataChanged event is changed from `VoidHandler` to `ForOfDataChangeEventHandler`
+- `PivotDataSelector`
+  - Added events: `ColumnsExpandedChange`, `RowsExpandedChange`, `FiltersExpandedChange`, `ValuesExpandedChange`
+
 ### {PackageDashboards} (Dashboards)
 
 - The `IgbDashboardTile` now supports propagating the aggregations from its DataGrid view to the chart visualization such as sorting, grouping, filtering and selection. This is currently supported by binding the `DataSource` of the `IgbDashboardTile` to an instance of `IgbLocalDataSource`.
