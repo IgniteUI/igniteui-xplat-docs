@@ -528,6 +528,24 @@ Using Excel Style Editing allows the user to navigate trough the cells just as h
 
 Implementing this custom functionality can be done by utilizing the events of the `{ComponentName}`. First we hook up to the grid's keydown events, and from there we can implement two functionalities:
 
+<!-- React -->
+```tsx
+const gridRef = useRef<IgrGrid>();
+useEffect(() => {
+    gridRef.current.addEventListener("keydown", handleKeyDown);
+    return () => {
+        gridRef.current.removeEventListener("keydown", handleKeyDown);
+    };
+}, []);
+<IgrGrid ref={gridRef} autoGenerate={false} data={NwindData} primaryKey="ProductID">
+</IgrGrid>
+```
+
+> [!Note]
+> We are using the native browser keydown event instead of React’s synthetic onKeyDown event. When a cell enters edit mode and the ENTER key is pressed to move to the next row, the grid’s editing feature updates the cell value and closes the edit mode. As a result, the input element used for editing is removed from the DOM. Due to React’s event system optimizations, the onKeyDown synthetic event does not bubble up to the grid because the element no longer exists in the React tree at that moment. Therefore, using the native event listener is necessary to ensure the expected behavior.
+
+<!-- end: React -->
+
 * Constant edit mode
 
 <!-- Angular, WebComponents -->
@@ -556,20 +574,19 @@ public keydownHandler(event) {
 <!-- React -->
 
 ```typescript
-function keydownHandler(args: IgrGridKeydownEventArgs) {
-  const key = args.detail.event.keyCode;
-  const grid = grid1Ref.current;
-  const activeElem = grid.navigation.activeNode;
+function handleKeyDown(event: KeyBoardEvent) {
+    const code = event.code;
+    const grid = event.currentTarget as IgrGrid;
+    const activeElem = grid.selectedCells[0];
 
-  if ((key >= 48 && key <= 57) ||
-      (key >= 65 && key <= 90) ||
-      (key >= 97 && key <= 122)) {
-        // Number or Alphabet upper case or Alphabet lower case
-        const columnName = grid.getColumnByVisibleIndex(activeElem.column).field;
-        const cell = grid.getCellByColumn(activeElem.row, columnName);
-        if (cell && !grid.crudService.cellInEditMode) {
-            grid.crudService.enterEditMode(cell);
-            cell.editValue = key;
+    if ((event.code >= "Digit0" && event.code <= "Digit9") || (event.code >= "KeyA" && event.code <= "KeyZ") 
+        || (event.code >= "Numpad0" && event.code <= "Numpad9" && event.code !== "Enter" && event.code !== "NumpadEnter")) {
+        if (activeElem && !activeElem.editMode) {
+            activeElem.editMode = true;
+            activeElem.editValue = event.key;
+        } else if (activeElem && activeElem.editMode) {
+            event.preventDefault();
+            activeElem.editValue = activeElem.editValue + event.key;
         }
     }
 }
@@ -600,18 +617,15 @@ if (key == 13) {
 
 <!-- React -->
 ```typescript
-if (key == 13) {
-    let thisRow = activeElem.row;
-    const column = activeElem.column;
-    const rowInfo = grid.dataView;
+if (code === "Enter" || code === "NumpadEnter") {
+    const thisRow = activeElem.row.index;
+    const dataView = grid.dataView;
+    const nextRowIndex = getNextEditableRowIndex(thisRow, dataView, event.shiftKey);
 
-    // to find the next eligible cell, we will use a custom method that will check the next suitable index
-    let nextRow = getNextEditableRowIndex(thisRow, rowInfo, args.detail.event.shiftKey);
-
-    // and then we will navigate to it using the grid's built in method navigateTo
-    grid1Ref.current.navigateTo(nextRow, column, (obj) => {
+    grid.navigateTo(nextRowIndex, activeElem.column.visibleIndex, (obj: any) => {
         obj.target.activate();
-        grid1Ref.current.clearCellSelection();
+        grid.endEdit(true);
+        grid.markForCheck();
     });
 }
 ```
