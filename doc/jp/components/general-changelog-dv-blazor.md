@@ -32,6 +32,101 @@ _language: ja
 
 - 新しい[トレンドライン レイヤー](charts/features/chart-trendlines.md) シリーズ タイプを使用すると、トレンド ライン レイヤーごとに 1 つのトレンド ラインを特定のシリーズに適用できます。これにより、チャートに複数の [TrendlineLayer](charts/features/chart-overlays.md) シリーズ タイプを使用できるため、単一のシリーズで複数のトレンド ラインを使用できるようになります。
 
+### 一般
+
+- 新しい `Tooltip` コンポーネントは、特定の要素のツールチップを表示する方法を提供します。使用するには、必要に応じてコンテンツを設定し、`Anchor` プロパティを介してターゲット要素の ID にリンクします。
+
+    ```razor
+    <IgbButton id="target-button">Hover me</IgbButton>
+    <IgbTooltip Anchor="target-button">
+        You've hovered the button! 🎉
+    </IgbTooltip>
+    ```
+
+    ツールチップは、`Show/HideDelay`、ターゲットの周囲への `Placement`、カスタマイズ可能な `Show/HideTriggers` イベントを使用してさらにカスタマイズできます。
+
+### 変更内容
+
+- いくつかの列挙は名前が変更され、他の列挙と統合されました。名前の変更 (影響を受けるコンポーネントを含む):
+    - `BaseAlertLikePosition` (`Snackbar` と `Toast`) は `AbsolutePosition` に名前が変更されました。
+    - `ButtonGroupAlignment` (`ButtonGroup`)、`CalendarOrientation` (`Calendar`)、`CardActionsOrientation` (`CardActions`)、`DatePickerOrientation` (`DatePicker`)、`RadioGroupAlignment` (`RadioGroup`) が統合され、`ContentOrientation` に名前が変更されました。
+    - `CalendarBaseSelection` (`Calendar`) は `CalendarSelection` に名前が変更されました。
+    - `CarouselAnimationType` (`Carousel`) と `StepperHorizontalAnimation` (`Stepper`) が統合され、`HorizontalTransitionAnimation` に名前が変更されました。
+    - `CheckboxBaseLabelPosition` (`Checkbox` と `Switch`) と `RadioLabelPosition` (`Radio`) が統合され、`ToggleLabelPosition` に名前が変更されました。
+    - `DatePickerMode` (`DatePicker`) は `PickerMode` に名前が変更されました。
+    - `DatePickerHeaderOrientation` (`DatePicker`) は `CalendarHeaderOrientation` に名前変更/統合されました。
+    - `DropdownPlacement` (`Dropdown` と `Select`) は `PopoverPlacement` に名前が変更されました。
+    - `DropdownScrollStrategy` (`Dropdown`) と `SelectScrollStrategy` (`Select`) が統合され、`PopoverScrollStrategy` に名前が変更されました。
+    - `SliderBaseTickOrientation` (`Slider` および `RangeSlider`) の名前が `SliderTickOrientation` に変更されました。
+    - `TickLabelRotation` (`Slider` と `RangeSlider`) の名前が `SliderTickLabelRotation` に変更されました。
+- `Tabs`
+  設定を簡素化し、タブヘッダーとパネルを個別に定義してリンクする必要がなくなりました。`Panel` プロパティと `IgbTabPanel` 自体は削除されました。コンテンツを `Tab` に直接割り当てることができるようになり、ヘッダー テキストは新しい `Label` プロパティを介して、または要素を `slot="label"` に投影してより複雑なカスタマイズを行うことで簡単に設定できるようになりました。
+
+    前:
+
+    ```razor
+    <IgbTabs Alignment=@TabAlignment>
+        <IgbTab Panel="basics">Basics</IgbTab>
+        <IgbTab Panel="details">Details</IgbTab>
+        <IgbTab Panel="favorite">
+            <IgbIcon IconName="favorite" Collection="material"/>
+        </IgbTab>
+        <IgbTab Panel="disabled" Disabled=true>Disabled</IgbTab>
+        <IgbTabPanel id="basics">Basics tab content</IgbTabPanel>
+        <IgbTabPanel id="details">Details tab content</IgbTabPanel>
+        <IgbTabPanel id="favorite">Favorite tab content</IgbTabPanel>
+        <IgbTabPanel id="disabled">Disabled tab content will not be displayed</IgbTabPanel>
+    </IgbTabs>
+    ```
+
+    後:
+
+    ```razor
+    <IgbTabs Alignment=@TabAlignment>
+        <IgbTab Label="Basics">
+            Basics tab content
+        </IgbTab>
+        <IgbTab Label="Details">
+            Details tab content
+        </IgbTab>
+        <IgbTab>
+            <IgbIcon slot="label" IconName="favorite" Collection="material"/>
+            Favorite tab content
+        </IgbTab>
+        <IgbTab Disabled="true" Label="Disabled">
+            Disabled tab content will not be displayed
+        </IgbTab>
+    </IgbTabs>
+    ```
+
+- `Input`
+    - `Min` と `Max` は `string` ではなく `double` になりました。
+- `Stepper`
+    - `ActiveStepChangingArgsEventArgs` は `ActiveStepChangingEventArgs` に名前が変更されました。
+    - `ActiveStepChangedArgsEventArgs` は `ActiveStepChangedEventArgs` に名前が変更されました。
+    - `StepperTitlePosition` はデフォルトの動作を正しく反映するためにデフォルトで `Auto` になりました。
+- `Tree`
+    - `TreeSelectionChangeEventArgs` は `TreeSelectionEventArgs` に名前が変更されました。
+- `Textarea`
+    - `Autocapitalize` と `InputMode` は明示的な列挙型ではなく `string` プロパティになりました。
+
+### {PackageGrids} (グリッド)
+
+- `Column`
+  - 追加されたイベント: `HiddenChange`、`ExpandedChange`、`WidthChange`、`PinnedChange`。
+- `Grid`
+  - 追加されたイベント: `GroupingExpressionsChange`、`GroupingExpansionStateChange`。
+- `RowIsland`
+  - `GridCreated` イベントの `GridCreatedEventArgsDetail` 引数に新しいパラメーター `ParentRowData` を追加しました。
+- `Grid`、`HierarchicalGrid`、`TreeGrid`
+  - 追加されたプロパティ - `ExpansionStates` - キーと値のペア [行 Id、展開状態] のリストを表します。
+  - 追加されたイベント: `ExpansionStatesChange`。
+  - `Rendered` イベントのタイプが `VoidHandler` から `ComponentBoolValueChangedEventHandler` に変更されました。
+  - DataChanging イベントのタイプが `ForOfDataChangingEventHandler` から `ForOfDataChangeEventHandler` に変更されました。
+  - DataChanged イベントのタイプが `VoidHandler` から `ForOfDataChangeEventHandler` に変更されました。
+- `PivotDataSelector`
+  - 追加されたイベント: `ColumnsExpandedChange`、`RowsExpandedChange`、`FiltersExpandedChange`、`ValuesExpandedChange`。
+
 ### {PackageDashboards} (ダッシュボード)
 
 - `IgbDashboardTile` では、ソート、グループ化、フィルタリング、選択などの集計を DataGrid ビューからチャート視覚化に伝播できるようになりました。これは現在、`IgbDashboardTile` の `DataSource` を `IgbLocalDataSource` のインスタンスにバインドすることによってサポートされています。
