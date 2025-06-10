@@ -458,34 +458,31 @@ public webGridCellEditCellTemplate = (ctx: IgcCellTemplateContext) => {
 <IgrColumn
     field="race"
     header="Race"
-    dataType="String"
-    editable="true"
-    name="column1"
-    id="column1">
+    dataType="string"
+    editable={true}
+    inlineEditorTemplate={this.webGridCellEditCellTemplate}>
 </IgrColumn>
 ```
 
 そして、テンプレートを index.ts ファイルのこの列に渡します。
 
 ```typescript
-public webGridCellEditCellTemplate = (e: { dataContext: IgrCellTemplateContext; }) => {
+public webGridCellEditCellTemplate = (e: IgrCellTemplateContext) => {
     let cellValues: any = [];
     let uniqueValues: any = [];
-    const cell = e.dataContext.cell;
+    const cell = e.cell;
     const colIndex = cell.id.columnID;
     const field: string = this.grid1.getColumnByVisibleIndex(colIndex).field;
-    const key = field + "_" + cell.id.rowID;
     let index = 0;
     for (const i of this.roleplayDataStats as any) {
       if (uniqueValues.indexOf(i[field]) === -1) {
         cellValues.push(
           <>
             <IgrSelectItem
-              selected={e.dataContext.cell.value == i[field]}
+              selected={e.cell.value == i[field]}
               value={i[field]}
-              key={key + "_" + index}
             >
-              <div key={key + "_" + index}>{i[field]}</div>
+              <div>{i[field]}</div>
             </IgrSelectItem>
           </>
         );
@@ -496,10 +493,9 @@ public webGridCellEditCellTemplate = (e: { dataContext: IgrCellTemplateContext; 
     return (
       <>
         <IgrSelect
-          key={key}
-          change={(x: any) => {
+          onChange={(x: any) => {
             setTimeout(() => {
-              cell.editValue = x.value;
+              cell.editValue = x.target.value;
             });
           }}
         >
@@ -530,6 +526,24 @@ Excel スタイル編集を使用すると、Excel を使用する場合と同�
 
 このカスタム機能を実装するには、`{ComponentName}` のイベントを使用します。最初にグリッドの keydown イベントにフックし、そこから 2 つの機能を実装できます。
 
+<!-- React -->
+```tsx
+const gridRef = useRef<IgrGrid>();
+useEffect(() => {
+    gridRef.current.addEventListener("keydown", handleKeyDown);
+    return () => {
+        gridRef.current.removeEventListener("keydown", handleKeyDown);
+    };
+}, []);
+<IgrGrid ref={gridRef} autoGenerate={false} data={NwindData} primaryKey="ProductID">
+</IgrGrid>
+```
+
+> [!Note]
+> React の合成 onKeyDown イベントの代わりに、ネイティブ ブラウザーの keydown イベントを使用しています。セルが編集モードに入り、ENTER キーを押して次の行に移動すると、グリッドの編集機能によってセルの値が更新され、編集モードが閉じられます。その結果、編集に使用された入力要素は DOM から削除されます。React のイベント システムの最適化により、その時点で要素が React ツリー内に存在しなくなるため、onKeyDown 合成イベントはグリッドにバブルアップされません。したがって、期待される動作を確実にするには、ネイティブ イベント リスナーを使用する必要があります。
+
+<!-- end: React -->
+
 * 常時編集モード
 
 <!-- Angular, WebComponents -->
@@ -558,20 +572,19 @@ public keydownHandler(event) {
 <!-- React -->
 
 ```typescript
-function keydownHandler(event) {
-  const key = event.keyCode;
-  const grid = grid1Ref.current;
-  const activeElem = grid.navigation.activeNode;
+function handleKeyDown(event: KeyBoardEvent) {
+    const code = event.code;
+    const grid = event.currentTarget as IgrGrid;
+    const activeElem = grid.selectedCells[0];
 
-  if ((key >= 48 && key <= 57) ||
-      (key >= 65 && key <= 90) ||
-      (key >= 97 && key <= 122)) {
-        // Number or Alphabet upper case or Alphabet lower case
-        const columnName = grid.getColumnByVisibleIndex(activeElem.column).field;
-        const cell = grid.getCellByColumn(activeElem.row, columnName);
-        if (cell && !grid.crudService.cellInEditMode) {
-            grid.crudService.enterEditMode(cell);
-            cell.editValue = event.key;
+    if ((event.code >= "Digit0" && event.code <= "Digit9") || (event.code >= "KeyA" && event.code <= "KeyZ") 
+        || (event.code >= "Numpad0" && event.code <= "Numpad9" && event.code !== "Enter" && event.code !== "NumpadEnter")) {
+        if (activeElem && !activeElem.editMode) {
+            activeElem.editMode = true;
+            activeElem.editValue = event.key;
+        } else if (activeElem && activeElem.editMode) {
+            event.preventDefault();
+            activeElem.editValue = activeElem.editValue + event.key;
         }
     }
 }
@@ -602,18 +615,15 @@ if (key == 13) {
 
 <!-- React -->
 ```typescript
-if (key == 13) {
-    let thisRow = activeElem.row;
-    const column = activeElem.column;
-    const rowInfo = grid.dataView;
+if (code === "Enter" || code === "NumpadEnter") {
+    const thisRow = activeElem.row.index;
+    const dataView = grid.dataView;
+    const nextRowIndex = getNextEditableRowIndex(thisRow, dataView, event.shiftKey);
 
-    // to find the next eligible cell, we will use a custom method that will check the next suitable index
-    let nextRow = getNextEditableRowIndex(thisRow, rowInfo, event.shiftKey);
-
-    // and then we will navigate to it using the grid's built in method navigateTo
-    grid1Ref.current.navigateTo(nextRow, column, (obj) => {
+    grid.navigateTo(nextRowIndex, activeElem.column.visibleIndex, (obj: any) => {
         obj.target.activate();
-        grid1Ref.current.clearCellSelection();
+        grid.endEdit(true);
+        grid.markForCheck();
     });
 }
 ```
@@ -880,7 +890,7 @@ row.delete();
 grid1Ref.current.deleteRow(selectedCell.cellID.rowID);
 // Delete row through row object
 const row = grid1Ref.current.getRowByIndex(rowIndex);
-row.del();
+row.delete();
 ```
 <!-- end: React -->
 
@@ -933,7 +943,7 @@ row.delete();
 this.hierarchicalGrid.deleteRow(this.selectedCell.cellID.rowID);
 // Delete row through row object
 const row = this.hierarchicalGrid.getRowByIndex(rowIndex);
-row.del();
+row.delete();
 ```
 <!-- end: React -->
 
@@ -978,7 +988,7 @@ row.del();
 
 <!-- React -->
 ```tsx
-<{ComponentSelector} cellEdit={handleCellEdit}>
+<{ComponentSelector} onCellEdit={handleCellEdit}>
 </{ComponentSelector}>
 ```
 <!-- end: React -->
@@ -1066,7 +1076,7 @@ public webGridCellEdit(event: CustomEvent<IgcGridEditEventArgs>): void {
 
 <!-- React -->
 ```typescript
-function handleCellEdit(s: IgrGridBaseDirective, args: IgrGridEditEventArgs): void {
+function handleCellEdit(args: IgrGridEditEventArgs): void {
     const column = args.detail.column;
 
     if (column.field === 'UnitsOnOrder') {
@@ -1139,7 +1149,37 @@ igRegisterScript("HandleCellEdit", (ev) => {
 }, false);
 ```
 
+<!-- React -->
+<!-- ComponentStart: TreeGrid -->
+
+```tsx
+public webTreeGridCellEdit(args: IgrGridEditEventArgs): void {
+    const column = args.detail.column;
+
+    if (column.field === 'Age') {
+        if (args.detail.newValue < 18) {
+            args.detail.cancel = true;
+            alert('Employees must be at least 18 years old!');
+        }
+    } else if (column.field === 'HireDate') {
+        if (args.detail.newValue > new Date().getTime()) {
+            args.detail.cancel = true;
+            alert('The employee hire date must be in the past!');
+        }
+    }
+}
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- end: React -->
+<!-- Blazor -->
 **Age (年齢)** 列の下のセルに入力された値が 18 未満である場合、または **HireDate (雇用日)** 列の値が将来の場合、編集はキャンセルされ、ユーザーにキャンセルについての警告が表示されます。
+<!-- end: Blazor -->
+<!-- WebComponents, React -->
+<!-- ComponentStart: HierarchicalGrid -->
+**Units On Order (注文数量)** 列のセルに入力された値が、入手可能な数量 (**Units in Stock、 在庫数量** の値) より大きい場合、編集はキャンセルされ、ユーザーにキャンセルの警告が表示されます。
+<!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- end: WebComponents, React -->
 
 <!-- Angular -->
 
@@ -1186,26 +1226,22 @@ igRegisterScript("HandleCellEdit", (ev) => {
 	}
 }, false);
 ```
-
+<!-- Blazor -->
 ここでは、2 つの列を検証しています。ユーザーがアーティストの **Debut (デビュー)** 年またはアルバムの **Launch Date (発売日)** を変更しようとした際に、グリッドは今日よりも後の日付を許可しません。
+<!-- end: Blazor -->
+
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- React -->
 <!-- ComponentStart: HierarchicalGrid -->
 ```tsx
-public handleCellEdit(sender: IgrHierarchicalGrid, event: IgrGridEditEventArgs): void {
-    const today = new Date();
-    const column = event.detail.column;
-    if (column.field === 'Debut') {
-        if (event.detail.newValue > today.getFullYear()) {
-            event.detail.cancel = true;
-            alert('The debut date must be in the past!');
-        }
-    } else if (column.field === 'LaunchDate') {
-        if (event.detail.newValue > today) {
-            event.detail.cancel = true;
-            alert('The launch date must be in the past!');
+public handleCellEdit(event: IgrGridEditEventArgs): void {
+    const detail = args.detail;
+    if (detail.column != null && d.column.field == "UnitsOnOrder") {
+        if (detail.newValue > detail.rowData.UnitsInStock) {
+            detail.cancel = true;
+            alert("You cannot order more than the units in stock!");
         }
     }
 }

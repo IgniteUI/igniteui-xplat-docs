@@ -40,13 +40,11 @@ defineComponents(IgcButtonGroupComponent);
 npm install igniteui-react
 ```
 
-次に、以下のように、`ButtonGroup` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、`ButtonGroup` と必要な CSS をインポートする必要があります:
 
 ```tsx
-import { IgrButtonGroupModule, IgrButtonGroup } from 'igniteui-react';
+import { IgrButtonGroup } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrButtonModule.register();
 ```
 <!-- end: React -->
 
@@ -98,21 +96,21 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonGroupModule));
 
 ```tsx
 <IgrButtonGroup>
-    <IgrToggleButton value="left" key="button-left">
-        <IgrIcon name="format_align_left" collection="material" key="icon-left" />
-        <IgrRipple key="ripple-left" />
+    <IgrToggleButton value="left">
+        <IgrIcon name="format_align_left" collection="material"/>
+        <IgrRipple/>
     </IgrToggleButton>
-    <IgrToggleButton value="center" key="button-center">
-        <IgrIcon name="format_align_center" collection="material" key="icon-center" />
-        <IgrRipple key="ripple-center" />
+    <IgrToggleButton value="center">
+        <IgrIcon name="format_align_center" collection="material"/>
+        <IgrRipple/>
     </IgrToggleButton>
-    <IgrToggleButton value="right" key="button-right">
-        <IgrIcon name="format_align_right" collection="material" key="icon-right" />
-        <IgrRipple key="ripple-right" />
+    <IgrToggleButton value="right">
+        <IgrIcon name="format_align_right" collection="material"/>
+        <IgrRipple/>
     </IgrToggleButton>
-    <IgrToggleButton value="justify" selected={true} key="button-justify">
-        <IgrIcon name="format_align_justify" collection="material" key="icon-justify" />
-        <IgrRipple key="ripple-justify" />
+    <IgrToggleButton value="justify" selected={true}>
+        <IgrIcon name="format_align_justify" collection="material"/>
+        <IgrRipple/>
     </IgrToggleButton>
 </IgrButtonGroup>
 ```
@@ -179,17 +177,17 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonGroupModule));
 
 ```tsx
 <IgrButtonGroup selectedItems={['bold']}>
-    <IgrToggleButton value="bold" key="button-bold">
-        <IgrIcon name="bold" collection="material" key="icon-bold" />
-        <IgrRipple key="ripple-bold" />
+    <IgrToggleButton value="bold">
+        <IgrIcon name="bold" collection="material" />
+        <IgrRipple />
     </IgrToggleButton>
-    <IgrToggleButton value="italic" key="button-italic">
-        <IgrIcon name="italic" collection="material" key="icon-italic" />
-        <IgrRipple key="ripple-italic" />
+    <IgrToggleButton value="italic">
+        <IgrIcon name="italic" collection="material" />
+        <IgrRipple />
     </IgrToggleButton>
-    <IgrToggleButton value="underlined" key="button-underlined">
-        <IgrIcon name="underlined" collection="material" key="icon-underlined" />
-        <IgrRipple key="ripple-underlined" />
+    <IgrToggleButton value="underlined">
+        <IgrIcon name="underlined" collection="material" />
+        <IgrRipple />
     </IgrToggleButton>
 </IgrButtonGroup>
 ```
