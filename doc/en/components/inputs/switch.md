@@ -112,7 +112,7 @@ To provide a meaningful label for the switch, simply place some text between the
 You can specify if the label should be positioned before or after the switch toggle by setting the `LabelPosition` attribute of the switch. Allowed values are `before` and `after`(default):
 
 ```tsx
-<IgrSwitch ariaLabelledby="switchLabel" labelPosition="Before" ><span id="switch-label">Label</span></IgrSwitch>
+<IgrSwitch aria-labelledby="switchLabel" labelPosition="before" ><span id="switch-label">Label</span></IgrSwitch>
 ```
 
 ```html
@@ -127,7 +127,7 @@ The switch can also be labelled by elements external to the switch. In this case
 
 ```tsx
 <span id="switch-label">Label</span>
-<IgrSwitch ariaLabelledby="switchLabel"></IgrSwitch>
+<IgrSwitch aria-labelledby="switchLabel"></IgrSwitch>
 ```
 
 ```html
