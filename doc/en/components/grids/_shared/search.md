@@ -464,9 +464,9 @@ const nextSearch = (text: string, caseSensitive: boolean, exactMatch: boolean) =
     gridRef.current.findNext(text, caseSensitive, exactMatch);
 }
 
-<IgrIconButton key="prevIconButton" variant="flat" name="prev" collection="material" onClick={prevSearch}>
+<IgrIconButton variant="flat" name="prev" collection="material" onClick={() => prevSearch(searchText, caseSensitiveSelected, exactMatchSelected)}>
 </IgrIconButton>
-<IgrIconButton key="nextIconButton" variant="flat" name="next" collection="material" onClick={nextSearch}>
+<IgrIconButton variant="flat" name="next" collection="material" onClick={() => nextSearch(searchText, caseSensitiveSelected, exactMatchSelected)}>
 </IgrIconButton>
 ```
 
@@ -751,12 +751,12 @@ const [caseSensitiveSelected, setCaseSensitiveSelected] = useState<boolean>(fals
 const [exactMatchSelected, setExactMatchSelected] = useState<boolean>(false);
 
 const handleCaseSensitiveChange = (event: IgrComponentBoolValueChangedEventArgs) => {
-    setCaseSensitiveSelected(!caseSensitiveSelected);
+    setCaseSensitiveSelected(event.detail);
     nextSearch(searchText, event.detail, exactMatchSelected);
 }
 
 const handleExactMatchChange = (event: IgrComponentBoolValueChangedEventArgs) => {
-    setExactMatchSelected(!exactMatchSelected);
+    setExactMatchSelected(event.detail);
     nextSearch(searchText, caseSensitiveSelected, event.detail);
 }
 
@@ -1221,11 +1221,11 @@ const nextSearch = (text: string, caseSensitive: boolean, exactMatch: boolean) =
     gridRef.current.findNext(text, caseSensitive, exactMatch);
 }
 
-<div slot="suffix" key="buttonsSuffix">
-    <IgrIconButton key="prevIconButton" variant="flat" name="prev" collection="material" onClick={() => prevSearch(searchText, caseSensitiveSelected, exactMatchSelected)}>
+<div slot="suffix">
+    <IgrIconButton variant="flat" name="prev" collection="material" onClick={() => prevSearch(searchText, caseSensitiveSelected, exactMatchSelected)}>
         <IgrRipple></IgrRipple>
     </IgrIconButton>
-    <IgrIconButton key="nextIconButton" variant="flat" name="next" collection="material" onClick={() => nextSearch(searchText, caseSensitiveSelected, exactMatchSelected)}>
+    <IgrIconButton variant="flat" name="next" collection="material" onClick={() => nextSearch(searchText, caseSensitiveSelected, exactMatchSelected)}>
         <IgrRipple></IgrRipple>
     </IgrIconButton>
 </div>
