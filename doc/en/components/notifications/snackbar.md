@@ -36,13 +36,11 @@ First, you need to the install the corresponding {ProductName} npm package by ru
 npm install igniteui-react
 ```
 
-You will then need to import the `Snackbar`, its necessary CSS, and register its module, like so:
+You will then need to import the `Snackbar` and its necessary CSS, like so:
 
 ```tsx
-import { IgrSnackbarModule, IgrSnackbar } from 'igniteui-react';
+import { IgrSnackbar } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrSnackbarModule.register();
 ```
 
 <!-- end: React -->
@@ -89,22 +87,20 @@ The simplest way to display the snackbar component is to use its `Show` method a
 ```
 
 ```tsx
-<IgrButton variant="contained" clicked={this.onShowButtonClicked}>
+<IgrButton variant="contained" onClick={onShowButtonClicked}>
     <span>Show Snackbar</span>
 </IgrButton>
-<IgrSnackbar ref={this.onSnackbarRef}>
+<IgrSnackbar ref={snackbarRef}>
     <span>Snackbar Message</span>
 </IgrSnackbar>
 
-public onSnackbarRef(snackbar: IgrSnackbar) {
-    if (!snackbar) { return; }
-    this.snackbarRef = snackbar;
-}
-public onShowButtonClicked() {
-    if (this.snackbarRef) {
-        this.snackbarRef.show();
-    }
-}
+const snackbarRef = useRef<IgrSnackbar>(null);
+
+const onShowButtonClicked = () => {
+      if (snackbarRef) {
+          snackbarRef.current.show();
+      }
+  }
 ```
 
 ## Examples
