@@ -39,10 +39,8 @@ npm install igniteui-react
 You will then need to import the `NavDrawer`, its necessary CSS, and register its module, like so:
 
 ```tsx
-import { IgrNavDrawerModule, IgrNavDrawer, IgrNavDrawerHeaderItem, IgrNavDrawerItem } from 'igniteui-react';
+import { IgrNavDrawer, IgrNavDrawerHeaderItem, IgrNavDrawerItem } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrNavDrawerModule.register();
 ```
 
 <!-- end: React -->
@@ -285,25 +283,25 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 
 ```tsx
 <IgrRadioGroup alignment="horizontal">
-    <IgrRadio value="start" labelPosition="after" checked={true} change={this.onRadioChange}>
+    <IgrRadio value="start" labelPosition="after" checked={this.state.drawerPosition === "start"} onChange={this.onRadioChange}>
         <span>Start</span>
     </IgrRadio>
-    <IgrRadio value="end" labelPosition="after" change={this.onRadioChange}>
+    <IgrRadio value="end" labelPosition="after" checked={this.state.drawerPosition === "end"} onChange={this.onRadioChange}>
         <span>End</span>
     </IgrRadio>
-    <IgrRadio value="top" labelPosition="after" change={this.onRadioChange}>
+    <IgrRadio value="top" labelPosition="after" checked={this.state.drawerPosition === "top"} onChange={this.onRadioChange}>
         <span>Top</span>
     </IgrRadio>
-    <IgrRadio value="bottom" labelPosition="after" change={this.onRadioChange}>
+    <IgrRadio value="bottom" labelPosition="after" checked={this.state.drawerPosition === "bottom"} onChange={this.onRadioChange}>
         <span>Bottom</span>
     </IgrRadio>
 </IgrRadioGroup>
 
 <IgrNavDrawer position={this.state.drawerPosition} />
 
-public onRadioChange(e: any) {
+public onRadioChange(e: IgrRadioChangeEventArgs) {
     if (e.checked == true) {
-        this.setState({ drawerPosition: e.value });
+        this.setState({ drawerPosition: e.detail.value });
     }
 }
 ```
