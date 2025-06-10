@@ -16,7 +16,7 @@ _language: ja
 
 * [Ignite UI for Angular 変更ログ (GitHub)](https://github.com/IgniteUI/igniteui-angular/blob/master)
 
-## **25.1**
+## **{PackageVerLatest}**
 
 ### {PackageCharts} (チャート)
 
