@@ -978,7 +978,7 @@ const summaryTemplate = (ctx: IgrSummaryTemplateContext) => {
   return (
     <>
       <span>My custom summary template</span>
-      <span>{ctx.dataContext.implicit[0].label} - {ctx.dataContext.implicit[0].summaryResult}</span>
+      <span>{ctx.implicit[0].label} - {ctx.implicit[0].summaryResult}</span>
     </>
   );
 }
