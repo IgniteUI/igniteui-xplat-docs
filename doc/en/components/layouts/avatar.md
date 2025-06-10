@@ -33,13 +33,11 @@ First, you need to the install the corresponding {ProductName} npm package by ru
 npm install igniteui-react
 ```
 
-You will then need to import the `Avatar`, its necessary CSS, and register its module, like so:
+You will then need to import the `Avatar` and its necessary CSS, like so:
 
 ```tsx
-import { IgrAvatarModule, IgrAvatar } from 'igniteui-react';
+import { IgrAvatar } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrAvatarModule.register();
 ```
 
 <!-- end: React -->
@@ -209,7 +207,7 @@ igc-avatar::part(base) {
 }
 ```
 
-`sample="/layouts/avatar/styling", height="80", alt="{Platform} Avatar Example"`
+`sample="/layouts/avatar/styling", height="150", alt="{Platform} Avatar Example"`
 
 <div class="divider--half"></div>
 
