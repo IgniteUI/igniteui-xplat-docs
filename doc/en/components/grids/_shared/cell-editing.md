@@ -472,7 +472,6 @@ public webGridCellEditCellTemplate = (e: IgrCellTemplateContext) => {
     const cell = e.cell;
     const colIndex = cell.id.columnID;
     const field: string = this.grid1.getColumnByVisibleIndex(colIndex).field;
-    const key = field + "_" + cell.id.rowID;
     let index = 0;
     for (const i of this.roleplayDataStats as any) {
       if (uniqueValues.indexOf(i[field]) === -1) {
@@ -481,9 +480,8 @@ public webGridCellEditCellTemplate = (e: IgrCellTemplateContext) => {
             <IgrSelectItem
               selected={e.cell.value == i[field]}
               value={i[field]}
-              key={key + "_" + index}
             >
-              <div key={key + "_" + index}>{i[field]}</div>
+              <div>{i[field]}</div>
             </IgrSelectItem>
           </>
         );
@@ -494,7 +492,6 @@ public webGridCellEditCellTemplate = (e: IgrCellTemplateContext) => {
     return (
       <>
         <IgrSelect
-          key={key}
           onChange={(x: any) => {
             setTimeout(() => {
               cell.editValue = x.target.value;
@@ -1173,8 +1170,15 @@ public webTreeGridCellEdit(args: IgrGridEditEventArgs): void {
 ```
 <!-- ComponentEnd: TreeGrid -->
 <!-- end: React -->
-
+<!-- Blazor -->
 If the value entered in a cell under the **Age** column is below 18 or the value in the **HireDate** column is in the future, the editing will be cancelled and the user will be alerted to the cancellation.
+<!-- end: Blazor -->
+<!-- WebComponents, React -->
+<!-- ComponentStart: HierarchicalGrid -->
+If the value entered in a cell under the **Units On Order** column is larger than the available amount (the value under **Units in Stock**), the editing will be cancelled and the user will be alerted to the cancellation.
+<!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- end: WebComponents, React -->
 
 <!-- Angular -->
 
@@ -1221,8 +1225,10 @@ igRegisterScript("HandleCellEdit", (ev) => {
 	}
 }, false);
 ```
-
+<!-- Blazor -->
 Here, we are validating two columns. If the user tries to change an artist's **Debut** year or an album's **Launch Date**, the grid will not allow any dates that are greater than today.
+<!-- end: Blazor -->
+
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -1230,17 +1236,11 @@ Here, we are validating two columns. If the user tries to change an artist's **D
 <!-- ComponentStart: HierarchicalGrid -->
 ```tsx
 public handleCellEdit(event: IgrGridEditEventArgs): void {
-    const today = new Date();
-    const column = event.detail.column;
-    if (column.field === 'Debut') {
-        if (event.detail.newValue > today.getFullYear()) {
-            event.detail.cancel = true;
-            alert('The debut date must be in the past!');
-        }
-    } else if (column.field === 'LaunchDate') {
-        if (event.detail.newValue > today) {
-            event.detail.cancel = true;
-            alert('The launch date must be in the past!');
+    const detail = args.detail;
+    if (detail.column != null && d.column.field == "UnitsOnOrder") {
+        if (detail.newValue > detail.rowData.UnitsInStock) {
+            detail.cancel = true;
+            alert("You cannot order more than the units in stock!");
         }
     }
 }
