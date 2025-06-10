@@ -402,7 +402,7 @@ public connectedCallback() {
 <!-- end: WebComponents -->
 
 ```tsx
-const sortingExpressions = [
+const sortingExpressions: IgrSortingExpression[] = [
     { fieldName: 'UnitsInStock', dir: SortingDirection.Asc, ignoreCase: true },
     { fieldName: 'ProductName', dir: SortingDirection.Desc }
 ];
@@ -455,12 +455,15 @@ public connectedCallback() {
 <!-- end: WebComponents -->
 
 ```tsx
-useEffect(() => {
-    treeGridRef.current.sortingExpressions = [
-        { fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true },
-        { fieldName: 'Price', dir: SortingDirection.Desc }
-    ];
-}, [])
+const sortingExpressions: IgrSortingExpression[] = [
+    { fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true },
+    { fieldName: 'Price', dir: SortingDirection.Desc }
+];
+
+<IgrTreeGrid
+    data={productSales}
+    sortingExpressions={sortingExpressions}>
+</IgrTreeGrid>
 ```
 <!-- ComponentEnd: TreeGrid -->
 
@@ -505,12 +508,16 @@ public connectedCallback() {
 <!-- end: WebComponents -->
 
 ```tsx
-useEffect(() => {
-    hierarchicalGridRef.current.sortingExpressions = [
-        { fieldName: 'UnitsInStock', dir: SortingDirection.Asc, ignoreCase: true },
-        { fieldName: 'ProductName', dir: SortingDirection.Desc }
-    ];
-}, [])
+const sortingExpressions: IgrSortingExpression[] = [
+    { fieldName: 'UnitsInStock', dir: SortingDirection.Asc, ignoreCase: true },
+    { fieldName: 'ProductName', dir: SortingDirection.Desc }
+];
+
+<IgrHierarchicalGrid
+    data={productSales}
+    sortingExpressions={sortingExpressions}>
+</IgrHierarchicalGrid>
+
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
