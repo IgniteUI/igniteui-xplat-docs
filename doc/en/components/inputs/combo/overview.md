@@ -69,7 +69,7 @@ npm install igniteui-react
 You will then need to import the {Platform} `ComboBox` and its necessary CSS:
 
 ```tsx
-import { IgrComboModule, IgrCombo } from 'igniteui-react';
+import { IgrCombo } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
 ```
 
