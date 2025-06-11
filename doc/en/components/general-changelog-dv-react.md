@@ -38,6 +38,17 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 - The `IgrDataGrid` & `IgrMultiColumnComboBox` are now part of the igniteui-react-data-grids package.
 
+#### Removed
+- `CheckboxChangeEventArgs` removed, use `IgrCheckboxChangeEventArgs` instead.
+- `RadioChangeEventArgs` removed, use `IgrRadioChangeEventArgs` instead.
+- `IgrRangeSliderValue` removed, use `IgrRangeSliderValueEventArgs` instead.
+- `IgrActiveStepChangingArgs` removed, use `IgrActiveStepChangingEventArgs` instead.
+- `IgrActiveStepChangedArgs` removed, use `IgrActiveStepChangedEventArgs` instead.
+
+> [!Note]With 19.0.0 the React product introduces many breaking changes done to improve and streamline the API. Please refer to the full Update Guide.
+
+[Update Guide](update-guide.md)
+
 ### Enhancements
 
 #### Toolbar
@@ -47,6 +58,14 @@ All notable changes for each version of {ProductName} are documented on this pag
 #### Data Pie Chart
 - The chart now exposes a `GetOthersContext()` method. This will return the contents of the "others" slice.
 
+#### Stepper
+Stepper Step's `titlePosition` now defaults to `auto`, instead of being undefined, which has the same behavior.
+
+#### Tabs
+igr-tab `panel` property is removed.
+
+igr-tab-panel component is removed. The igr-tab now encompasses both the tab header and the tab content in a single component.
+
 ### Bug Fixes
 
 | Bug Number | Control | Description      |
@@ -55,29 +74,6 @@ All notable changes for each version of {ProductName} are documented on this pag
 |37023|IgrDataChart|Tooltips are cut-off/offscreen if overflow hidden is set.
 |37244|Excel|Custom Data Validation is not working.
 |37685|IgrSpreadsheet|Poor rendering of numbers formatted with Arial font.
-
-## **{PackageVerChanges-24-2-APR2}**
-> [!Note]With 19.0.0 the React product introduces many breaking changes done to improve and streamline the API. Please refer to the full Update Guide.
-
-[Update Guide](update-guide.md)
-
-### Removed
-- `CheckboxChangeEventArgs` removed, use `IgrCheckboxChangeEventArgs` instead.
-- `RadioChangeEventArgs` removed, use `IgrRadioChangeEventArgs` instead.
-- `IgrRangeSliderValue` removed, use `IgrRangeSliderValueEventArgs` instead.
-- `IgrActiveStepChangingArgs` removed, use `IgrActiveStepChangingEventArgs` instead.
-- `IgrActiveStepChangedArgs` removed, use `IgrActiveStepChangedEventArgs` instead.
-
-
-### Enhancements
-
-#### Stepper
-Stepper Step's `titlePosition` now defaults to `auto`, instead of being undefined, which has the same behavior.
-
-#### Tabs
-igr-tab `panel` property is removed.
-
-igr-tab-panel component is removed. The igr-tab now encompasses both the tab header and the tab content in a single component.
 
 ## **{PackageVerChanges-24-2-APR}**
 
