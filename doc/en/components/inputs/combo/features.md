@@ -52,24 +52,40 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 <!-- end: React -->
 
-Then, we will add event handlers to all switch components so that we can control the combo features by toggling the switches:
+Then, using React's useState hook, we will declare our variables which will update when the state of the switches change. This will keep track for updates and reflect the changes to the combo inputs accordingly:
 
 ```tsx
-const comboRef = useRef<IgrCombo>(null);
-const switchCaseSensitiveRef = useRef<IgrSwitch>(null);
+const [disableFiltering, setDisableFiltering] = useState(false);
+const [caseSensitiveIcon, setCaseSensitiveIcon] = useState(false);
+const [groupingEnabled, setGroupingEnabled] = useState(false);
+const [comboDisabled, setComboDisabled] = useState(false);
 
-const disableFiltering = (switchComponent: IgrSwitch) => {
-    comboRef.current.disableFiltering =
-    switchCaseSensitiveRef.current.disabled = switchComponent.checked;
-};
+<IgrCombo
+    valueKey="id"
+    displayKey="name"
+    label="Cities"
+    placeholder="Pick a city"
+    placeholderSearch="Search for a city"
+    data={Cities}
+    disableFiltering={disableFiltering}
+    caseSensitiveIcon={caseSensitiveIcon}
+    groupKey={groupingEnabled ? "country" : undefined}
+    disabled={comboDisabled}>
+</IgrCombo>
 
-const showCaseSensitiveIcon = (switchComponent: IgrSwitch) => {
-    comboRef.current.caseSensitiveIcon = switchComponent.checked;
-};
 
-const disableCombo = (switchComponent: IgrSwitch) => {
-    comboRef.current.disabled = switchComponent.checked;
-};
+<IgrSwitch checked={disableFiltering} onChange={e => setDisableFiltering(e.detail.checked)}>
+    <span>Disable Filtering</span>
+</IgrSwitch>
+<IgrSwitch checked={caseSensitiveIcon} onChange={e => setCaseSensitiveIcon(e.detail.checked)}>
+    <span>Show Case-sensitive Icon</span>
+</IgrSwitch>
+<IgrSwitch checked={groupingEnabled} onChange={e => setGroupingEnabled(e.detail.checked)}>
+    <span>Enable Grouping</span>
+</IgrSwitch>
+<IgrSwitch checked={comboDisabled} onChange={e => setComboDisabled(e.detail.checked)}>
+    <span>Disable Combo</span>
+</IgrSwitch>
 ```
 
 ```ts
@@ -154,9 +170,7 @@ switchGroup.addEventListener("igcChange", () => {
 ```
 
 ```tsx
-const enableGrouping = (switchComponent: IgrSwitch) => {
-    comboRef.current.groupKey = switchComponent.checked ? "country" : undefined;
-};
+groupKey={groupingEnabled ? "country" : undefined}
 ```
 
 ## Features
