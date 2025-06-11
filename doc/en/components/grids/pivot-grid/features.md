@@ -188,7 +188,7 @@ The {PivotGridTitle} supports single selection which is enabled just like in the
 
 <!--React -->
 ```tsx
-<IgrPivotGrid data={pivotData} pivotConfiguration={pivotConfiguration} rowSelection={GridSelectionMode.Single}>
+<IgrPivotGrid data={pivotData} pivotConfiguration={pivotConfiguration} rowSelection="single">
 </IgrPivotGrid>
 ```
 <!-- end: React -->
