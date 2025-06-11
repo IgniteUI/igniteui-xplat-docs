@@ -637,9 +637,12 @@ Interactive [Outlook-style Grouping](grid/groupby.md)
     <div class="faqs-accordion-content">
         <div class="faqs-accordion h4">How do I Install {Platform} and the Infragistics {ProductName} Data Grid control?</div>
         <div class="divider--half"></div>
-        <div class="faqs-accordion-panel">
-        To get started with the {Platform} Data Grid, follow the steps in the [getting started guide](../general-getting-started.md). We also maintain a library of <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">sample applications</a>, which are designed to not only inspire but are best practices guides for {Platform} development.
-        <div class="divider--half"></div>
+<div class="faqs-accordion-panel">
+
+To get started with the {Platform} Data Grid, follow the steps in the [getting started guide](../general-getting-started.md). We also maintain a library of <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">sample applications</a>, which are designed to not only inspire but are best practices guides for {Platform} development.
+
+<div class="divider--half">
+        </div>
         </div>
     </div>
 </div>
