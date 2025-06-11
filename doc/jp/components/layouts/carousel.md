@@ -45,10 +45,8 @@ npm install igniteui-react
 次に、以下のように、`Carousel` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
 ```tsx
-import { IgrCarouselModule, IgrCarousel, IgrCarouselSlide } from 'igniteui-react';
+import { IgrCarousel, IgrCarouselSlide } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrCarouselModule.register();
 ```
 <!-- end: React -->
 
@@ -90,14 +88,14 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCarouselModule));
 
 ```tsx
 <IgrCarousel>
-    <IgrCarouselSlide key="first">
-        <img src="assets/images/carousel/ignite-ui-angular-indigo-design.png" key="img"/>
+    <IgrCarouselSlide>
+        <img src="assets/images/carousel/ignite-ui-angular-indigo-design.png"/>
     </IgrCarouselSlide>
-    <IgrCarouselSlide key="second">
-        <img src="assets/images/carousel/slider-image-chart.png" key="img"/>
+    <IgrCarouselSlide>
+        <img src="assets/images/carousel/slider-image-chart.png"/>
     </IgrCarouselSlide>
-    <IgrCarouselSlide key="third">
-        <img src="assets/images/carousel/ignite-ui-angular-charts.png" key="img"/>
+    <IgrCarouselSlide>
+        <img src="assets/images/carousel/ignite-ui-angular-charts.png"/>
     </IgrCarouselSlide>
 </IgrCarousel>
 ```
@@ -133,10 +131,10 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCarouselModule));
 ```tsx
 <IgrCarousel>
     ...
-    <IgrCarouselSlide key="first">
+    <IgrCarouselSlide>
         ...
     </IgrCarouselSlide>
-    <IgrCarouselSlide active={true} key="second">
+    <IgrCarouselSlide active={true}>
         ...
     </IgrCarouselSlide>
 </IgrCarousel>
@@ -267,20 +265,25 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCarouselModule));
 
 ```tsx
 <IgrCarousel>
-    <IgrCarouselIndicator key="first-indicator">
+  <IgrCarouselIndicator>
         <span key="empty">🤍</span>
-        <span slot="active" key="active">❤️</span>
+    <span slot="active">
+      ❤️
+    </span>
     </IgrCarouselIndicator>
-    <IgrCarouselIndicator key="second-indicator">
+  <IgrCarouselIndicator>
         <span key="empty">🤍</span>
-        <span slot="active" key="active">❤️</span>
-    </IgrCarouselIndicator>
-
-    <IgrCarouselSlide key="first">
-        <img src="assets/images/card/media/the_red_ice_forest.jpg" key="img"/>
+    <span slot="active">
+      ❤️
+    </span>
+  </IgrCarouselIndicator
+  <IgrCarouselSlide>
+    <img
+      src="https://www.infragistics.com/angular-demos-lob/assets/images/carousel/ignite-ui-angular-indigo-design.png"
+    />
     </IgrCarouselSlide>
     <IgrCarouselSlide key="second">
-        <img src="assets/images/card/media/yosemite.jpg" key="img"/>
+    <img src="https://www.infragistics.com/angular-demos-lob/assets/images/carousel/slider-image-chart.png"/>
     </IgrCarouselSlide>
 </IgrCarousel>
 ```
@@ -322,8 +325,8 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCarouselModule));
 
 ```tsx
 <IgrCarousel>
-    <IgrIcon slot="previous-button" name="previous" collection="material" key="previous"></IgrIcon>
-    <IgrIcon slot="next-button" name="next" collection="material" key="next"></IgrIcon>
+    <IgrIcon slot="previous-button" name="previous" collection="material"></IgrIcon>
+    <IgrIcon slot="next-button" name="next" collection="material"></IgrIcon>
     ...
 </IgrCarousel>
 ```
@@ -372,34 +375,34 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCarouselModule));
 
 ```tsx
 <IgrCarousel>
-    <IgrCarouselSlide key="slide-1">
-        <div key="slide-content">
-            <img src="assets/images/svg/carousel/SignUp.svg"/>
-            <form>
-                <IgrInput type="text" placeholder="Username">
-                    <IgrIcon slot="prefix" name="person" key="icon"></IgrIcon>
-                </IgrInput>
-                <IgrInput type="password" placeholder="Password">
-                    <IgrIcon slot="prefix" name="password" key="icon"></IgrIcon>
-                </IgrInput>
-                <IgrButton type="reset">
-                    <span key="button-span">Sign In</span>
-                </IgrButton>
-            </form>
-        </div>
+    <IgrCarouselSlide>
+      <div>
+        <img src="assets/images/svg/carousel/SignUp.svg" />
+        <form>
+          <IgrInput type="text" placeholder="Username">
+            <IgrIcon slot="prefix" name="person"></IgrIcon>
+          </IgrInput>
+          <IgrInput type="password" placeholder="Password">
+            <IgrIcon slot="prefix" name="password"></IgrIcon>
+          </IgrInput>
+          <IgrButton type="reset">
+            <span>Sign In</span>
+          </IgrButton>
+        </form>
+      </div>
     </IgrCarouselSlide>
-    <IgrCarouselSlide key="slide-2">
-        <div key="slide-content">
-            <img src="assets/images/svg/carousel/Route.svg"/>
-            <form>
-                <IgrInput type="text" placeholder="Search">
-                    <IgrIcon slot="prefix" name="search" key="icon"></IgrIcon>
-                </IgrInput>
-                <IgrButton type="reset">
-                    <span key="button-span">Search</span>
-                </IgrButton>
-            </form>
-        </div>
+    <IgrCarouselSlide>
+      <div>
+        <img src="assets/images/svg/carousel/Route.svg" />
+        <form>
+          <IgrInput type="text" placeholder="Search">
+            <IgrIcon slot="prefix" name="search"></IgrIcon>
+          </IgrInput>
+          <IgrButton type="reset">
+            <span>Search</span>
+          </IgrButton>
+        </form>
+      </div>
     </IgrCarouselSlide>
 </IgrCarousel>
 ```
@@ -454,7 +457,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCarouselModule));
 ```
 
 ```tsx
-<IgrCarousel animationType={CarouselAnimationType.Fade}>
+<IgrCarousel animationType="fade">
     ...
 </IgrCarousel>
 ```
@@ -612,17 +615,16 @@ const images = [
     hideNavigation={true}
     interval={2000}
     vertical={true}
-    animationType={CarouselAnimationType.Fade}
+  animationType="fade"
 >
     {images.map((image, index) => {
         return (
             <React.Fragment key={index}>
-                <IgrCarouselSlide key={`slide-${index}`}>
-                    <img src={image.src} alt={image.alt} key="slide-img" />
+        <IgrCarouselSlide>
+          <img src={image.src} alt={image.alt} />
                 </IgrCarouselSlide>
-                <IgrCarouselIndicator key={`indicator-${index}`}>
+        <IgrCarouselIndicator>
                     <img
-                        key="img-blur"
                         className="blurred"
                         src={image.src.replace(".png", "Thumb.png")}
                         alt={`${image.alt} Thumb`}
@@ -630,7 +632,6 @@ const images = [
                         height="60"
                     />
                     <img
-                        key="img-active"
                         slot="active"
                         src={image.src.replace(".png", "Thumb.png")}
                         alt={`${image.alt} Thumb Active`}
