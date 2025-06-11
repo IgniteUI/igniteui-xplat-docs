@@ -235,22 +235,56 @@ Here are a few of the data grid’s key features:
 <div class="divider--half"></div>
 
 <ul id="features-list">
-<li>[**Virtualized Rows and Columns**](grid/virtualization.md) so you can load millions of records</li>
+<li>
 
-<li>[**Inline Editing**](grid/editing.md) with [**Cell**](grid/cell-editing.md), and [**Row**](grid/row-editing.md) Update options</li>
+[**Virtualized Rows and Columns**](grid/virtualization.md) so you can load millions of records
+
+</li>
+
+<li>
+
+[**Inline Editing**](grid/editing.md) with [**Cell**](grid/cell-editing.md), and [**Row**](grid/row-editing.md) Update options
+
+</li>
+
+<li>
+
+[**Inline Editing**](grid/editing.md) with [**Cell**](grid/cell-editing.md)
+
+</li>
+
 
 <!--Add back when batch editing is available>
 <!-- <li>[**Inline Editing**](grid/editing.md) with [**Cell**](grid/cell-editing.md), [**Row**](grid/row-editing.md), and [**Batch**](grid/batch-editing.md) Update options</li> -->
 
-<li>[**Excel-style Filtering**](grid/excel-style-filtering.md) and full [**Excel Keyboard Navigation**](grid/keyboard-navigation.md) capability</li>
+<li>
 
-<li>Interactive [**Outlook-style Grouping**](grid/groupby.md)</li>
+[**Excel-style Filtering**](grid/excel-style-filtering.md) and full [**Excel Keyboard Navigation**](grid/keyboard-navigation.md) capability
 
-<li>[**Column Summaries**](grid/summaries.md) based on any data in a grid cell or column</li>
+</li>
 
-<!-- <li>[**Export to Excel**](grid/export-excel.md), including [**Data Visualization**](excel-library-working-with-charts.md)</li> -->
+<li>
 
-<li>[**Size**](grid/size.md) to adjust the height and sizing of the rows</li>
+Interactive [**Outlook-style Grouping**](grid/groupby.md)
+
+</li>
+
+<li>
+
+[**Column Summaries**](grid/summaries.md) based on any data in a grid cell or column
+</li>
+
+<li>
+
+[**Export to Excel**](grid/export-excel.md)
+
+</li>
+
+<li>
+
+[**Size**](grid/size.md) to adjust the height and sizing of the rows
+
+</li>
 
 <!-- <li>Column templates like [**Sparkline Column**](charts/types/sparkline-chart.md) and Image Column</li> -->
 </ul>
@@ -369,31 +403,105 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
 <div class="divider"></div>
 <div id="list-features-included">
 <ul>
-    <li>[Inline Editing](grid/editing.md)</li>
-    <li>[Row and Column Filtering](grid/filtering.md)</li>
-    <li>[Grid Sorting](grid/sorting.md)</li>
-    <li>[Column Grouping](grid/groupby.md)</li>
-    <li>[Column Summaries](grid/summaries.md)</li>
-    <li>[Fixed/Pinned Columns](grid/column-pinning.md)</li>
+<li>
+
+[Inline Editing](grid/editing.md)
+    
+</li>
+
+<li>
+    
+[Row and Column Filtering](grid/filtering.md)
+    
+</li>
+<li>
+    
+[Grid Sorting](grid/sorting.md)
+</li>
+
+<li>
+
+[Column Grouping](grid/groupby.md)
+
+</li>
+<li>
+
+[Column Summaries](grid/summaries.md)
+
+</li>
+<li>
+
+[Fixed/Pinned Columns](grid/column-pinning.md)
+
+</li>
 </ul>
 <ul>
-    <li>[Column Moving](grid/column-moving.md)</li>
-    <!-- <li>[Cell Copy and Paste](grid/clipboard-interactions.md)</li> -->
-    <li>[Cell Styling](grid/conditional-cell-styling.md)</li>
-    <!-- <li>[Real-time/Live Data Theming](grid/live-data.md)</li> -->
+<li>
+
+[Column Moving](grid/column-moving.md)
+
+</li>
+<li>
+
+[Cell Copy and Paste](grid/clipboard-interactions.md)
+
+</li>
+<li>
+
+[Cell Styling](grid/conditional-cell-styling.md)
+
+</li>
+<li>
+
+[Real-time/Live Data Theming](grid/live-data.md)
+
+</li>
     <!-- <li>[Custom Grid Toolbar](grid/toolbar.md)</li> -->
-    <li>[Grid Paging](grid/paging.md)</li>
-    <li>[Row Selection](grid/selection.md)</li>
-    <li>[Cell Selection](grid/cell-selection.md)</li>
+<li>
+
+[Grid Paging](grid/paging.md)
+
+</li>
+<li>
+
+[Row Selection](grid/selection.md)
+
+</li>
+<li>
+
+[Cell Selection](grid/cell-selection.md)
+
+</li>
 </ul>
 <ul>
-    <li>[Grid-level Searching](grid/search.md)</li>
+<li>
+
+[Grid-level Searching](grid/search.md)
+
+</li>
     <!-- <li>[Export to Excel, CSV, TSV](exporter-excel.md)</li> -->
-    <li>[Multi-Column Headers](grid/multi-column-headers.md)</li>
+<li>
+
+[Multi-Column Headers](grid/multi-column-headers.md)
+
+</li>
     <!-- <li>[Combo Box/Dropdown](combo.md)</li> -->
-    <li>[Virtualization and Performance](grid/virtualization.md)</li>
-    <li>[Resizable Columns](grid/column-resizing.md)</li>
-    <li>[Column Hiding](grid/column-hiding.md)</li>
+<li>
+
+[Virtualization and Performance](grid/virtualization.md)
+
+</li>
+<li>
+
+[Resizable Columns](grid/column-resizing.md)
+
+</li>
+
+<li>
+
+[Column Hiding](grid/column-hiding.md)
+
+</li>
     <!-- <li>[Remote Data Load on Demand](grid/virtualization.md#remote-virtualization)</li> -->
     <!-- <li>[Cell Templates](data-grid.md#cell-template)</li>
     <li>[ARIA/a11y Support](interactivity/accessibility-compliance.md)</li> -->
@@ -440,13 +548,15 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
 <div class="divider--half"></div>
 There are multiple options to get access to our award-winning support at Infragistics for the {Platform} product.
 <div class="divider--half"></div>
-        <ul>
-            <li>Start at the {Platform} <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/support/ignite-ui-angular-help">Support</a> home page</li>
-            <li>Read the {Platform} [Documentation](../general-getting-started.md) and experiment with {Platform} Samples</li>
-            <li>Read the<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/community/blogs/tags/Ignite%2bUI%2bfor%2b{Platform}"> {Platform} Blogs</a> to stay up to date</li>
-            <li>Submit a <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/ignite-ui-angular/grid-table"> Support Case</a></li>
-            <li>Learn from the {Platform} <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">Reference Applications</a></li>
-        </ul>
+<ul>
+
+- Start at the {Platform} <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/support/ignite-ui-angular-help">Support</a> home page
+- Read the {Platform} [Documentation](../general-getting-started.md) and experiment with {Platform} Samples
+- Read the<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/community/blogs/tags/Ignite%2bUI%2bfor%2b{Platform}"> {Platform} Blogs</a> to stay up to date
+- Submit a <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/ignite-ui-angular/grid-table"> Support Case</a>
+- Learn from the {Platform} <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">Reference Applications</a>
+
+</ul>
     </div>
 </div>
 
