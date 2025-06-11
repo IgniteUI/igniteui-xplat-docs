@@ -1281,6 +1281,14 @@ and finally set up the behaviour for the RowIslands:
         context.grid.markForCheck();
       });
   }
+
+  const onCustomersGridCreatedHandler = (e: IgrGridCreatedEventArgs) => {
+    gridCreated(e, "Customers")
+  };
+
+  const onOrdersGridCreatedHandler = (e: IgrGridCreatedEventArgs) => {
+    gridCreated(e, "Orders")
+  };
 ```
 
 
