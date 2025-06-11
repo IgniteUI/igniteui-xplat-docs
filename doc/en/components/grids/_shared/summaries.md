@@ -1072,7 +1072,7 @@ The following examples illustrate how to use the `DisabledSummaries` property to
     header="Unit Price"
     dataType="number"
     hasSummary={true}
-    disabledSummaries="['count', 'sum', 'average']"
+    disabledSummaries={['count', 'sum', 'average']}
 />
 
 <!-- Disable custom summaries -->
@@ -1082,7 +1082,7 @@ The following examples illustrate how to use the `DisabledSummaries` property to
     dataType="number"
     hasSummary={true}
     summaries={discontinuedSummary}
-    disabledSummaries="['discontinued', 'totalDiscontinued']"
+    disabledSummaries={['discontinued', 'totalDiscontinued']}
 />
 ```
 <!-- end: React -->
