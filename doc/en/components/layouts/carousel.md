@@ -44,10 +44,8 @@ npm install igniteui-react
 You will then need to import the `Carousel`, its necessary CSS, and register its module, like so:
 
 ```tsx
-import { IgrCarouselModule, IgrCarousel, IgrCarouselSlide } from 'igniteui-react';
+import { IgrCarousel, IgrCarouselSlide } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrCarouselModule.register();
 ```
 <!-- end: React -->
 
@@ -89,14 +87,14 @@ Use the `Carousel` selector to wrap your slides. The slides may feature any vali
 
 ```tsx
 <IgrCarousel>
-    <IgrCarouselSlide key="first">
-        <img src="assets/images/carousel/ignite-ui-angular-indigo-design.png" key="img"/>
+    <IgrCarouselSlide>
+        <img src="assets/images/carousel/ignite-ui-angular-indigo-design.png"/>
     </IgrCarouselSlide>
-    <IgrCarouselSlide key="second">
-        <img src="assets/images/carousel/slider-image-chart.png" key="img"/>
+    <IgrCarouselSlide>
+        <img src="assets/images/carousel/slider-image-chart.png"/>
     </IgrCarouselSlide>
-    <IgrCarouselSlide key="third">
-        <img src="assets/images/carousel/ignite-ui-angular-charts.png" key="img"/>
+    <IgrCarouselSlide>
+        <img src="assets/images/carousel/ignite-ui-angular-charts.png"/>
     </IgrCarouselSlide>
 </IgrCarousel>
 ```
@@ -132,10 +130,10 @@ If you want a slide to be active by default, use the `Active` attribute:
 ```tsx
 <IgrCarousel>
     ...
-    <IgrCarouselSlide key="first">
+    <IgrCarouselSlide>
         ...
     </IgrCarouselSlide>
-    <IgrCarouselSlide active={true} key="second">
+    <IgrCarouselSlide active={true}>
         ...
     </IgrCarouselSlide>
 </IgrCarousel>
@@ -266,21 +264,26 @@ To add {Platform} custom carousel indicators, use the `Indicator`:
 
 ```tsx
 <IgrCarousel>
-    <IgrCarouselIndicator key="first-indicator">
-        <span key="empty">🤍</span>
-        <span slot="active" key="active">❤️</span>
-    </IgrCarouselIndicator>
-    <IgrCarouselIndicator key="second-indicator">
-        <span key="empty">🤍</span>
-        <span slot="active" key="active">❤️</span>
-    </IgrCarouselIndicator>
-
-    <IgrCarouselSlide key="first">
-        <img src="assets/images/card/media/the_red_ice_forest.jpg" key="img"/>
-    </IgrCarouselSlide>
-    <IgrCarouselSlide key="second">
-        <img src="assets/images/card/media/yosemite.jpg" key="img"/>
-    </IgrCarouselSlide>
+  <IgrCarouselIndicator>
+    <span key="empty">🤍</span>
+    <span slot="active">
+      ❤️
+    </span>
+  </IgrCarouselIndicator>
+  <IgrCarouselIndicator>
+    <span key="empty">🤍</span>
+    <span slot="active">
+      ❤️
+    </span>
+  </IgrCarouselIndicator
+  <IgrCarouselSlide>
+    <img
+      src="https://www.infragistics.com/angular-demos-lob/assets/images/carousel/ignite-ui-angular-indigo-design.png"
+    />
+  </IgrCarouselSlide>
+  <IgrCarouselSlide key="second">
+    <img src="https://www.infragistics.com/angular-demos-lob/assets/images/carousel/slider-image-chart.png"/>
+  </IgrCarouselSlide>
 </IgrCarousel>
 ```
 
@@ -321,8 +324,8 @@ To achieve this, use the `previous-button` and `next-button` slots:
 
 ```tsx
 <IgrCarousel>
-    <IgrIcon slot="previous-button" name="previous" collection="material" key="previous"></IgrIcon>
-    <IgrIcon slot="next-button" name="next" collection="material" key="next"></IgrIcon>
+    <IgrIcon slot="previous-button" name="previous" collection="material"></IgrIcon>
+    <IgrIcon slot="next-button" name="next" collection="material"></IgrIcon>
     ...
 </IgrCarousel>
 ```
@@ -371,34 +374,34 @@ This carousel is going to contain slides with forms and images:
 
 ```tsx
 <IgrCarousel>
-    <IgrCarouselSlide key="slide-1">
-        <div key="slide-content">
-            <img src="assets/images/svg/carousel/SignUp.svg"/>
-            <form>
-                <IgrInput type="text" placeholder="Username">
-                    <IgrIcon slot="prefix" name="person" key="icon"></IgrIcon>
-                </IgrInput>
-                <IgrInput type="password" placeholder="Password">
-                    <IgrIcon slot="prefix" name="password" key="icon"></IgrIcon>
-                </IgrInput>
-                <IgrButton type="reset">
-                    <span key="button-span">Sign In</span>
-                </IgrButton>
-            </form>
-        </div>
+    <IgrCarouselSlide>
+      <div>
+        <img src="assets/images/svg/carousel/SignUp.svg" />
+        <form>
+          <IgrInput type="text" placeholder="Username">
+            <IgrIcon slot="prefix" name="person"></IgrIcon>
+          </IgrInput>
+          <IgrInput type="password" placeholder="Password">
+            <IgrIcon slot="prefix" name="password"></IgrIcon>
+          </IgrInput>
+          <IgrButton type="reset">
+            <span>Sign In</span>
+          </IgrButton>
+        </form>
+      </div>
     </IgrCarouselSlide>
-    <IgrCarouselSlide key="slide-2">
-        <div key="slide-content">
-            <img src="assets/images/svg/carousel/Route.svg"/>
-            <form>
-                <IgrInput type="text" placeholder="Search">
-                    <IgrIcon slot="prefix" name="search" key="icon"></IgrIcon>
-                </IgrInput>
-                <IgrButton type="reset">
-                    <span key="button-span">Search</span>
-                </IgrButton>
-            </form>
-        </div>
+    <IgrCarouselSlide>
+      <div>
+        <img src="assets/images/svg/carousel/Route.svg" />
+        <form>
+          <IgrInput type="text" placeholder="Search">
+            <IgrIcon slot="prefix" name="search"></IgrIcon>
+          </IgrInput>
+          <IgrButton type="reset">
+            <span>Search</span>
+          </IgrButton>
+        </form>
+      </div>
     </IgrCarouselSlide>
 </IgrCarousel>
 ```
@@ -453,7 +456,7 @@ Use the `AnimationType` property to change the animation.
 ```
 
 ```tsx
-<IgrCarousel animationType={CarouselAnimationType.Fade}>
+<IgrCarousel animationType="fade">
     ...
 </IgrCarousel>
 ```
@@ -607,39 +610,37 @@ const images = [
 ];
 
 <IgrCarousel
-    disablePauseOnInteraction={true}
-    hideNavigation={true}
-    interval={2000}
-    vertical={true}
-    animationType={CarouselAnimationType.Fade}
+  disablePauseOnInteraction={true}
+  hideNavigation={true}
+  interval={2000}
+  vertical={true}
+  animationType="fade"
 >
-    {images.map((image, index) => {
-        return (
-            <React.Fragment key={index}>
-                <IgrCarouselSlide key={`slide-${index}`}>
-                    <img src={image.src} alt={image.alt} key="slide-img" />
-                </IgrCarouselSlide>
-                <IgrCarouselIndicator key={`indicator-${index}`}>
-                    <img
-                        key="img-blur"
-                        className="blurred"
-                        src={image.src.replace(".png", "Thumb.png")}
-                        alt={`${image.alt} Thumb`}
-                        width="50"
-                        height="60"
-                    />
-                    <img
-                        key="img-active"
-                        slot="active"
-                        src={image.src.replace(".png", "Thumb.png")}
-                        alt={`${image.alt} Thumb Active`}
-                        width="50"
-                        height="60"
-                    />
-                </IgrCarouselIndicator>
-            </React.Fragment>
-        );
-    })}
+  {images.map((image, index) => {
+    return (
+      <React.Fragment key={index}>
+        <IgrCarouselSlide>
+          <img src={image.src} alt={image.alt} />
+        </IgrCarouselSlide>
+        <IgrCarouselIndicator>
+          <img
+            className="blurred"
+            src={image.src.replace(".png", "Thumb.png")}
+            alt={`${image.alt} Thumb`}
+            width="50"
+            height="60"
+          />
+          <img
+            slot="active"
+            src={image.src.replace(".png", "Thumb.png")}
+            alt={`${image.alt} Thumb Active`}
+            width="50"
+            height="60"
+          />
+        </IgrCarouselIndicator>
+      </React.Fragment>
+    );
+  })}
 </IgrCarousel>
 ```
 

@@ -47,12 +47,11 @@ defineComponents(IgcCheckboxComponent);
 npm install igniteui-react
 ```
 
-次に、以下のように、`Checkbox` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、`Checkbox` と必要な CSS をインポートする必要があります:
 
 ```tsx
-import { IgrCheckboxModule, IgrCheckbox } from 'igniteui-react';
+import { IgrCheckbox } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrCheckboxModule.register();
 ```
 <!-- end: React -->
 
@@ -130,7 +129,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCheckboxModule));
 
 ```tsx
 <span id="checkbox-label">Label</span>
-<IgrCheckbox ariaLabelledby="checkbox-label" labelPosition="before"></IgrCheckbox>
+<IgrCheckbox aria-labelledby="checkbox-label" labelPosition="before"></IgrCheckbox>
 ```
 
 ```html
@@ -152,7 +151,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCheckboxModule));
 コンポーネントの `Checked` 属性を使用して、チェックボックスをデフォルトでオンにするかオフにするかを決定できます。
 
 ```tsx
-<IgrCheckbox checked="true"></IgrCheckbox>
+<IgrCheckbox checked={true}></IgrCheckbox>
 ```
 
 ```html
@@ -172,7 +171,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCheckboxModule));
 コンポーネントの `Indeterminate` プロパティを使用して、チェックボックスの値を **true** にも **false** にも設定しません。
 
 ```tsx
-<IgrCheckbox indeterminate="true"></IgrCheckbox>
+<IgrCheckbox indeterminate={true}></IgrCheckbox>
 ```
 
 ```html
@@ -192,7 +191,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCheckboxModule));
 `Required` プロパティを使用して、チェックボックスを必須としてマークできます。
 
 ```tsx
-<IgrCheckbox required="true"></IgrCheckbox>
+<IgrCheckbox required={true}></IgrCheckbox>
 ```
 
 ```html
@@ -208,7 +207,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCheckboxModule));
 `Invalid` 属性を使用して、チェックボックスを無効としてマークすることができます。
 
 ```tsx
-<IgrCheckbox invalid="true"></IgrCheckbox>
+<IgrCheckbox invalid={true}></IgrCheckbox>
 ```
 
 ```html
@@ -224,7 +223,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCheckboxModule));
 チェックボックスをオフにするには、`Disabled` 属性を使用します。
 
 ```tsx
-<IgrCheckbox disabled="true"></IgrCheckbox>
+<IgrCheckbox disabled={true}></IgrCheckbox>
 ```
 
 ```html
@@ -286,7 +285,6 @@ igc-checkbox::part(control checked)::after {
  - `Checkbox`
  - `Checked`
  - `Disabled`
- - `Form`
  - [スタイル設定 & テーマ](../themes/overview.md)
 
 
