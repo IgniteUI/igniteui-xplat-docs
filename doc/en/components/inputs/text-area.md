@@ -62,7 +62,6 @@ You will then need to import the `Textarea` and its necessary CSS like so:
 ```tsx
 import { IgrTextarea } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrTextareaModule.register();
 ```
 <!-- end: React -->
 
