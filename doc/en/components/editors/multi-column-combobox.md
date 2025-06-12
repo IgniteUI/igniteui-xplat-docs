@@ -21,7 +21,7 @@ When installing the charts component, the core package must also be installed.
 
 ```cmd
 npm install --save {PackageCore}
-npm install --save {PackageGrids}
+npm install --save {PackageDataGrids}
 npm install --save {PackageInputs}
 npm install --save {PackageLayouts}
 ```

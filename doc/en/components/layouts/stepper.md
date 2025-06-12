@@ -46,12 +46,11 @@ First, you need to the install the corresponding {ProductName} npm package by ru
 npm install igniteui-react
 ```
 
-You will then need to import the `Stepper`, its necessary CSS, and register its module, like so:
+You will then need to import the `Stepper` and its necessary CSS, like so:
 
 ```tsx
-import { IgrStepperModule, IgrStepper, IgrStep } from 'igniteui-react';
+import { IgrStepper, IgrStep } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrStepperModule.register();
 ```
 
 <!-- end: React -->
@@ -256,7 +255,7 @@ The {Platform} `Stepper` gives you the opportunity to set its steps flow using t
 ```
 
 ```tsx
-<IgrStepper linear="true">
+<IgrStepper linear={true}>
     <IgrStep>
        <p slot="title">Step 1</p>
     </IgrStep>

@@ -104,10 +104,11 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 <!-- React -->
 
 ```tsx
-const dimension: IgrPivotDimension = new IgrPivotDimension();
-dimension.memberName = "SellerName";
-dimension.enabled = true;
-dimension.sortDirection = SortingDirection.Asc;
+const dimension: IgrPivotDimension = {
+    memberName: "SellerName",
+    enabled: true,
+    sortDirection: SortingDirection.Asc
+};
 ```
 <!-- end: React -->
 
@@ -150,10 +151,11 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 <!-- React -->
 
 ```tsx
-const dimension: IgrPivotDimension = new IgrPivotDimension();
-dimension.memberName = "SellerName";
-dimension.enabled = true;
-dimension.width = "400px";
+const igrPivotDimension2: IgrPivotDimension = {
+    memberName: "SellerName",
+    enabled: true,
+    width = "400px"
+};
 ```
 <!-- end: React -->
 
@@ -186,7 +188,7 @@ The {PivotGridTitle} supports single selection which is enabled just like in the
 
 <!--React -->
 ```tsx
-<IgrPivotGrid data={pivotData} pivotConfiguration={pivotConfiguration} rowSelection={GridSelectionMode.Single}>
+<IgrPivotGrid data={pivotData} pivotConfiguration={pivotConfiguration} rowSelection="single">
 </IgrPivotGrid>
 ```
 <!-- end: React -->

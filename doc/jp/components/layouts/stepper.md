@@ -47,12 +47,11 @@ defineComponents(IgcStepperComponent);
 npm install igniteui-react
 ```
 
-次に、以下のように、`Stepper` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、`Stepper` と必要な CSS をインポートする必要があります:
 
 ```tsx
-import { IgrStepperModule, IgrStepper, IgrStep } from 'igniteui-react';
+import { IgrStepper, IgrStep } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrStepperModule.register();
 ```
 
 <!-- end: React -->
@@ -259,7 +258,7 @@ builder.Services.AddIgniteUIBlazor(
 ```
 
 ```tsx
-<IgrStepper linear="true">
+<IgrStepper linear={true}>
     <IgrStep>
        <p slot="title">Step 1</p>
     </IgrStep>
