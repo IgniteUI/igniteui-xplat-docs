@@ -52,9 +52,8 @@ npm install igniteui-react
 You will then need to import the `Dropdown`, its necessary CSS, and register its module, like so:
 
 ```tsx
-import { IgrDropdownModule, IgrDropdown } from 'igniteui-react';
+import { IgrDropdown } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrDropdownModule.register();
 ```
 
 For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
