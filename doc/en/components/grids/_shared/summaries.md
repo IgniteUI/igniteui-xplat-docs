@@ -80,12 +80,12 @@ All available column data types could be found in the official [Column types top
 <!-- end: WebComponents -->
 
 ```tsx
-<{ComponentSelector} autoGenerate="false" height="800px" width="800px">
-    <IgrColumn field="ProductID" header="Product ID" width="200px"  sortable="true">
+<{ComponentSelector} autoGenerate={false} height="800px" width="800px">
+    <IgrColumn field="ProductID" header="Product ID" width="200px"  sortable={true}>
     </IgrColumn>
-    <IgrColumn field="ProductName" header="Product Name" width="200px" sortable="true" hasSummary="true">
+    <IgrColumn field="ProductName" header="Product Name" width="200px" sortable={true} hasSummary={true}>
     </IgrColumn>
-    <IgrColumn field="ReorderLevel" width="200px" editable="true" dataType="number" hasSummary="true">
+    <IgrColumn field="ReorderLevel" width="200px" editable={true} dataType="number" hasSummary={true}>
     </IgrColumn>
 </{ComponentSelector}>
 ```
@@ -140,17 +140,17 @@ All available column data types could be found in the official [Column types top
 <!-- end: WebComponents -->
 
 ```tsx
-<IgrHierarchicalGrid autoGenerate="false" data={this.singersData} ref={this.hierarchicalGridRef} id="hierarchicalGrid" primaryKey="ID">
-    <IgrColumn field="Artist" header="Artist" hasSummary="true"></IgrColumn>
-    <IgrColumn field="Photo" header="Photo" dataType="Image"></IgrColumn>
-    <IgrColumn field="Debut" header="Debut" hasSummary="true"></IgrColumn>
-    <IgrColumn field="GrammyNominations" header="Grammy Nominations" dataType="Number" hasSummary="true"></IgrColumn>
-    <IgrColumn field="GrammyAwards" header="Grammy Awards" dataType="Number" hasSummary="true"></IgrColumn>
-    <IgrRowIsland childDataKey="Albums" autoGenerate="false">
-        <IgrColumn field="Album" header="Album" dataType="String"></IgrColumn>
-        <IgrColumn field="LaunchDate" header="Launch Date" dataType="Date"></IgrColumn>
-        <IgrColumn field="BillboardReview" header="Billboard Review" dataType="Number" hasSummary="true"></IgrColumn>
-        <IgrColumn field="USBillboard200" header="US Billboard 200" dataType="Number" hasSummary="true" ></IgrColumn>
+<IgrHierarchicalGrid autoGenerate={false} data={singersData} ref={hierarchicalGridRef} primaryKey="ID">
+    <IgrColumn field="Artist" header="Artist" hasSummary={true}></IgrColumn>
+    <IgrColumn field="Photo" header="Photo" dataType="image"></IgrColumn>
+    <IgrColumn field="Debut" header="Debut" hasSummary={true}></IgrColumn>
+    <IgrColumn field="GrammyNominations" header="Grammy Nominations" dataType="number" hasSummary={true}></IgrColumn>
+    <IgrColumn field="GrammyAwards" header="Grammy Awards" dataType="number" hasSummary={true}></IgrColumn>
+    <IgrRowIsland childDataKey="Albums" autoGenerate={false}>
+        <IgrColumn field="Album" header="Album" dataType="string"></IgrColumn>
+        <IgrColumn field="LaunchDate" header="Launch Date" dataType="date"></IgrColumn>
+        <IgrColumn field="BillboardReview" header="Billboard Review" dataType="number" hasSummary={true}></IgrColumn>
+        <IgrColumn field="USBillboard200" header="US Billboard 200" dataType="number" hasSummary={true} ></IgrColumn>
      </IgrRowIsland>
 </IgrHierarchicalGrid>
 ```
@@ -192,12 +192,12 @@ All available column data types could be found in the official [Column types top
 <!-- end: WebComponents -->
 
 ```tsx
-<{ComponentSelector} autoGenerate="false" height="800px" width="800px">
+<{ComponentSelector} autoGenerate={false} height="800px" width="800px">
     <IgrColumn field="ID" header="Order ID">
     </IgrColumn>
-    <IgrColumn field="Name" header="Order Product" hasSummary="true">
+    <IgrColumn field="Name" header="Order Product" hasSummary={true}>
     </IgrColumn>
-    <IgrColumn field="Units" header="Units" editable="true" dataType="number" hasSummary="true">
+    <IgrColumn field="Units" header="Units" editable={true} dataType="number" hasSummary={true}>
     </IgrColumn>
 </{ComponentSelector}>
 ```
@@ -280,22 +280,22 @@ public disableSummary() {
 ```
 
 ```tsx
-function enableSummary() {
+const enableSummary = () => {
     gridRef.current.enableSummaries([
         {fieldName: 'ReorderLevel'},
         {fieldName: 'ProductID'}
     ]);
 }
-function disableSummary() {
+const disableSummary = () => {
     gridRef.current.disableSummaries(['ProductID']);
 }
 
-<{ComponentSelector} ref={gridRef} auto-generate="false" height="800px" width="800px">
-    <IgrColumn field="ProductID" header="Product ID" width="200px" sortable="true">
+<{ComponentSelector} ref={gridRef} autoGenerate={false} height="800px" width="800px">
+    <IgrColumn field="ProductID" header="Product ID" width="200px" sortable={true}>
     </IgrColumn>
-    <IgrColumn field="ProductName" header="Product Name" width="200px" sortable="true" hasSummary="true">
+    <IgrColumn field="ProductName" header="Product Name" width="200px" sortable={true} hasSummary={true}>
     </IgrColumn>
-    <IgrColumn field="ReorderLevel" width="200px" editable="true" dataType="number" hasSummary="false">
+    <IgrColumn field="ReorderLevel" width="200px" editable={true} dataType="number" hasSummary={true}>
     </IgrColumn>
 </{ComponentSelector}>
 <button onClick={enableSummary}>Enable Summary</button>
@@ -375,22 +375,22 @@ public disableSummary() {
 ```
 
 ```tsx
-function enableSummary() {
+const enableSummary = () => {
     hierarchicalGridRef.current.enableSummaries([
         {fieldName: 'GrammyNominations'},
         {fieldName: 'GrammyAwards'}
     ]);
 }
-function disableSummary() {
+const disableSummary = () => {
     hierarchicalGridRef.current.disableSummaries(['GrammyNominations']);
 }
 
-<IgrHierarchicalGrid autoGenerate="false" data={this.singersData} ref={this.hierarchicalGridRef} id="hierarchicalGrid" primaryKey="ID">
-    <IgrColumn field="Artist" header="Artist" hasSummary="true"></IgrColumn>
-    <IgrColumn field="Photo" header="Photo" dataType="Image"></IgrColumn>
-    <IgrColumn field="Debut" header="Debut" hasSummary="true"></IgrColumn>
-    <IgrColumn field="GrammyNominations" header="Grammy Nominations" dataType="Number" hasSummary="true"></IgrColumn>
-    <IgrColumn field="GrammyAwards" header="Grammy Awards" dataType="Number" hasSummary="true"></IgrColumn>
+<IgrHierarchicalGrid autoGenerate={false} data={singersData} ref={hierarchicalGridRef} primaryKey="ID">
+    <IgrColumn field="Artist" header="Artist" hasSummary={true}></IgrColumn>
+    <IgrColumn field="Photo" header="Photo" dataType="image"></IgrColumn>
+    <IgrColumn field="Debut" header="Debut" hasSummary={true}></IgrColumn>
+    <IgrColumn field="GrammyNominations" header="Grammy Nominations" dataType="number" hasSummary={true}></IgrColumn>
+    <IgrColumn field="GrammyAwards" header="Grammy Awards" dataType="number" hasSummary={true}></IgrColumn>
 </IgrHierarchicalGrid>
 <button onClick={enableSummary}>Enable Summary</button>
 <button onClick={disableSummary}>Disable Summary </button>
@@ -469,20 +469,20 @@ public disableSummary() {
 ```
 
 ```tsx
-function enableSummary() {
+const enableSummary = () => {
     treeGridRef.current.enableSummaries([
         {fieldName: 'Name'},
         {fieldName: 'Units'}
     ]);
 }
-function disableSummary() {
+const disableSummary = () => {
     treeGridRef.current.disableSummaries(['Units']);
 }
 
-<IgrTreeGrid autoGenerate="false" data={this.ordersTreeData} ref={this.treeGridRef} id="treeGrid" primaryKey="ID">
+<IgrTreeGrid autoGenerate={false} data={ordersTreeData} ref={treeGridRef} primaryKey="ID">
     <IgrColumn field="ID" header="Order ID"></IgrColumn>
-    <IgrColumn field="Name" header="Order Product" hasSummary="true"></IgrColumn>
-    <IgrColumn field="Units" header="Units" editable="true" dataType="Number" hasSummary="true"></IgrColumn>
+    <IgrColumn field="Name" header="Order Product" hasSummary={true}></IgrColumn>
+    <IgrColumn field="Units" header="Units" editable={true} dataType="number" hasSummary={true}></IgrColumn>
 </IgrTreeGrid>
 <button onClick={enableSummary}>Enable Summary</button>
 <button onClick={disableSummary}>Disable Summary </button>
@@ -974,16 +974,16 @@ public summaryTemplate = (ctx: IgcSummaryTemplateContext) => {
 ```
 
 ```tsx
-function summaryTemplate(ctx: IgrSummaryTemplateContext) {
+const summaryTemplate = (ctx: IgrSummaryTemplateContext) => {
   return (
     <>
       <span>My custom summary template</span>
-      <span>{ctx.dataContext.implicit[0].label} - {ctx.dataContext.implicit[0].summaryResult}</span>
+      <span>{ctx.implicit[0].label} - {ctx.implicit[0].summaryResult}</span>
     </>
   );
 }
 
-<IgrColumn hasSummary="true" summaryTemplate={summaryTemplate}></IgrColumn>
+<IgrColumn hasSummary={true} summaryTemplate={summaryTemplate}></IgrColumn>
 ```
 
 ```razor
@@ -1072,7 +1072,7 @@ The following examples illustrate how to use the `DisabledSummaries` property to
     header="Unit Price"
     dataType="number"
     hasSummary={true}
-    disabledSummaries="['count', 'sum', 'average']"
+    disabledSummaries={['count', 'sum', 'average']}
 />
 
 <!-- Disable custom summaries -->
@@ -1082,7 +1082,7 @@ The following examples illustrate how to use the `DisabledSummaries` property to
     dataType="number"
     hasSummary={true}
     summaries={discontinuedSummary}
-    disabledSummaries="['discontinued', 'totalDiscontinued']"
+    disabledSummaries={['discontinued', 'totalDiscontinued']}
 />
 ```
 <!-- end: React -->
@@ -1186,10 +1186,7 @@ igRegisterScript("SummaryFormatter", (summary) => {
 ```
 
 ```tsx
-public summaryFormatter(
-    summary: IgrSummaryResult,
-    summaryOperand: IgrSummaryOperand
-  ): string {
+const summaryFormatter = (summary: IgrSummaryResult, summaryOperand: IgrSummaryOperand): string => {
     const result = summary.summaryResult;
     if (summary.key !== "count" && result !== null && result !== undefined) {
       const format = new Intl.DateTimeFormat("en", { year: "numeric" });
@@ -1198,7 +1195,7 @@ public summaryFormatter(
     return result;
   }
   
-<IgrColumn hasSummary="true" summaryFormatter={this.summaryFormatter}></IgrColumn>
+<IgrColumn hasSummary={true} summaryFormatter={summaryFormatter}></IgrColumn>
 ```
 
 `sample="/{ComponentSample}/data-summary-formatter", height="650", alt="{Platform} {ComponentTitle} data summary formatter"`
@@ -1322,22 +1319,22 @@ Then set the related CSS properties for that class:
 
 <!-- ComponentStart: HierarchicalGrid -->
 ```html
-<{ComponentSelector} id="hierarchicalGrid"></{ComponentSelector}>
+<{ComponentSelector} class="hierarchicalGrid"></{ComponentSelector}>
 ```
 
 ```razor
-<{ComponentSelector} id="hierarchicalGrid"></{ComponentSelector}>
+<{ComponentSelector} class="hierarchicalGrid"></{ComponentSelector}>
 ```
 
 ```tsx
-<{ComponentSelector} id="hierarchicalGrid">
+<{ComponentSelector} className="hierarchicalGrid">
 </{ComponentSelector}>
 ```
 
 Then set the related CSS properties for that class:
 
 ```css
-#hierarchicalGrid {
+.hierarchicalGrid {
     --ig-grid-summary-background-color:#e0f3ff;
     --ig-grid-summary-focus-background-color: rgba( #94d1f7, .3 );
     --ig-grid-summary-label-color: rgb(228, 27, 117);
