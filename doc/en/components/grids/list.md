@@ -39,13 +39,11 @@ First, you need to the install the corresponding {ProductName} npm package by ru
 npm install igniteui-react
 ```
 
-You will then need to import the `List`, its necessary CSS, and register its module, like so:
+You will then need to import the `List` and its necessary CSS, like so:
 
 ```tsx
-import { IgrListModule, IgrList, IgrListHeader, IgrListItem } from 'igniteui-react';
+import { IgrList, IgrListHeader, IgrListItem } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrListModule.register();
 ```
 
 <!-- end: React -->
@@ -401,14 +399,14 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 ```
 
 ```tsx
-<IgrRadioGroup alignment="horizontal">
-    <IgrRadio value="small" labelPosition="after" change={this.onRadioChange}>
+<IgrRadioGroup alignment="horizontal" style={{marginBottom: '10px'}}>
+    <IgrRadio name="size" value="small" labelPosition="after" checked={this.state.listSize === "small" } onChange={this.onRadioChange}>
         <span>Small</span>
     </IgrRadio>
-    <IgrRadio value="medium" labelPosition="after" change={this.onRadioChange}>
+    <IgrRadio name="size" value="medium" labelPosition="after" checked={this.state.listSize === "medium" } onChange={this.onRadioChange}>
         <span>Medium</span>
     </IgrRadio>
-    <IgrRadio value="large" labelPosition="after" checked={true} change={this.onRadioChange}>
+    <IgrRadio name="size" value="large" labelPosition="after" checked={ this.state.listSize === "large" } onChange={this.onRadioChange}>
         <span>Large</span>
     </IgrRadio>
 </IgrRadioGroup>
@@ -416,8 +414,8 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 <IgrList size={this.state.listSize} />
 
 public onRadioChange(e: any) {
-    if (e.checked == true) {
-        this.setState({ listSize: e.value });
+    if (e.detail.checked == true) {
+        this.setState({ listSize: e.detail.value });
     }
 }
 ```
