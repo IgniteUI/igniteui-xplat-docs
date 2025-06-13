@@ -43,12 +43,11 @@ defineComponents(IgcRippleComponent);
 npm install igniteui-react
 ```
 
-次に、以下のように、`Ripple` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、`Ripple` と必要な CSS をインポートする必要があります:
 
 ```tsx
-import { IgrRippleModule, IgrRipple } from 'igniteui-react';
+import { IgrRipple } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrRippleModule.register();
 ```
 <!-- end: React -->
 
