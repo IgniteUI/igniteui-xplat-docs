@@ -94,7 +94,7 @@ Both sliders emit two events when any of the values is changed. The `onInput` ev
 <!-- end: React -->
 
 <!-- WebComponents, Blazor -->
-Both sliders emit two events when any of the values is changed. The `igcInput` event is emitted whenever a value is changed using keyboard or drag interaction while the `igcChange` event is emitted when the value change is committed on drag end or keyboard interaction.
+Both sliders emit two events when any of the values is changed. The `Input` event is emitted whenever a value is changed using keyboard or drag interaction while the `Change` event is emitted when the value change is committed on drag end or keyboard interaction.
 <!-- end: WebComponents, Blazor -->
 
 `sample="/inputs/slider/value", height="250", alt="{Platform} Slider Value Example"`
