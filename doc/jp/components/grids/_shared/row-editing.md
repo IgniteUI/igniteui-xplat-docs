@@ -90,20 +90,19 @@ public unitsInStockCellTemplate = (ctx: IgcCellTemplateContext) => {
 <!-- end: WebComponents -->
 
 ```tsx
-function unitsInStockCellTemplate(ctx: IgrCellTemplateContext) {
+const unitsInStockCellTemplate = (ctx: IgrCellTemplateContext) => {
     return (
         <>
-            <input name="units" value={ctx.dataContext.cell.value} style={{color: "black"}} />;
+            <input name="units" value={ctx.cell.value} style={{color: "black"}} />;
         </>
     );
 }
 
-<{ComponentSelector} primaryKey="ProductID" width="100%" height="500px" rowEditable="true"
-    bodyTemplate={unitsInStockCellTemplate}>
-    <IgrColumn field="ProductID" header="Product ID" editable="false"></IgrColumn>
+<{ComponentSelector} primaryKey="ProductID" width="100%" height="500px" rowEditable={true}>
+    <IgrColumn field="ProductID" header="Product ID" editable={false}></IgrColumn>
     <IgrColumn field="ReorderLevel" header="ReorderLever" dataType="number"></IgrColumn>
     <IgrColumn field="ProductName" header="ProductName" dataType="string"></IgrColumn>
-    <IgrColumn field="UnitsInStock" header="UnitsInStock" dataType="number"></IgrColumn>
+    <IgrColumn field="UnitsInStock" header="UnitsInStock" dataType="number" bodyTemplate={unitsInStockCellTemplate}></IgrColumn>
     <IgrColumn field="OrderDate" dataType="date"></IgrColumn>
     <IgrColumn field="Discontinued" header="Discontinued" dataType="boolean"></IgrColumn>
 </{ComponentSelector}>
@@ -171,7 +170,7 @@ constructor() {
 <!-- end: WebComponents -->
 
 ```tsx
-<{ComponentSelector} primaryKey="ID" width="100%" height="500px" rowEditable="true">
+<{ComponentSelector} primaryKey="ID" width="100%" height="500px" rowEditable={true}>
     <IgrColumn field="Name" header="Name" dataType="string"></IgrColumn>
     <IgrColumn field="Age" header="Age" dataType="number"></IgrColumn>
     <IgrColumn field="Title" header="Title" dataType="string"></IgrColumn>
@@ -248,121 +247,35 @@ constructor() {
 
 <!-- React -->
 ```tsx
-<IgrHierarchicalGrid
-    autoGenerate="false"
-    data={this.singersData}
-    ref={this.hierarchicalGridRef}
-    id="hierarchicalGrid"
-    primaryKey="ID"
-    rowEditable="true">
-    <IgrColumn
-        field="Artist"
-        header="Artist"
-        dataType="String"
-    ></IgrColumn>
-    <IgrColumn
-        field="Photo"
-        header="Photo"
-        dataType="Image"
-        editable="false"
-    ></IgrColumn>
-    <IgrColumn
-        field="Debut"
-        header="Debut"
-        dataType="Number"
-    ></IgrColumn>
-    <IgrColumn
-        field="GrammyNominations"
-        header="Grammy Nominations"
-        dataType="Number"
-    ></IgrColumn>
-    <IgrColumn
-        field="GrammyAwards"
-        header="Grammy Awards"
-        dataType="Number"
-    ></IgrColumn>
+<IgrHierarchicalGrid autoGenerate={false} data={singersData} ref={hierarchicalGridRef} id="hierarchicalGrid" primaryKey="ID" rowEditable={true}>
+    <IgrColumn field="Artist" header="Artist" dataType="string" />
+    <IgrColumn field="Photo" header="Photo" dataType="image" editable={false} />
+    <IgrColumn field="Debut" header="Debut" dataType="number" />
+    <IgrColumn field="GrammyNominations" header="Grammy Nominations" dataType="number" />
+    <IgrColumn field="GrammyAwards" header="Grammy Awards" dataType="number" />
 
-    <IgrRowIsland
-        childDataKey="Albums"
-        autoGenerate="false"
-        primaryKey="Album"
-        rowEditable="true">
-        <IgrColumn
-            field="Album"
-            header="Album"
-            dataType="String"
-        ></IgrColumn>
-        <IgrColumn
-            field="LaunchDate"
-            header="Launch Date"
-            dataType="Date"
-        ></IgrColumn>
-        <IgrColumn
-            field="BillboardReview"
-            header="Billboard Review"
-            dataType="String"
-        ></IgrColumn>
-        <IgrColumn
-            field="USBillboard200"
-            header="US Billboard 200"
-            dataType="String"
-        ></IgrColumn>
+    <IgrRowIsland childDataKey="Albums" autoGenerate={false} primaryKey="Album" rowEditable={true}>
+        <IgrColumn field="Album" header="Album" dataType="string" />
+        <IgrColumn field="LaunchDate" header="Launch Date" dataType="date" />
+        <IgrColumn field="BillboardReview" header="Billboard Review" dataType="string" />
+        <IgrColumn field="USBillboard200" header="US Billboard 200" dataType="string" />
 
-        <IgrRowIsland
-            childDataKey="Songs"
-            autoGenerate="false"
-            primaryKey="Number"
-            rowEditable="true">
-            <IgrColumn
-                field="Number"
-                header="No."
-                dataType="String"
-            ></IgrColumn>
-            <IgrColumn
-                field="Title"
-                header="Title"
-                dataType="String"
-            ></IgrColumn>
-            <IgrColumn
-                field="Released"
-                header="Released"
-                dataType="Date"
-            ></IgrColumn>
-            <IgrColumn
-                field="Genre"
-                header="Genre"
-                dataType="String"
-            ></IgrColumn>
+        <IgrRowIsland childDataKey="Songs" autoGenerate={false} primaryKey="Number" rowEditable={true}>
+            <IgrColumn field="Number" header="No." dataType="string" />
+            <IgrColumn field="Title" header="Title" dataType="string" />
+            <IgrColumn field="Released" header="Released" dataType="date" />
+            <IgrColumn field="Genre" header="Genre" dataType="string" />
         </IgrRowIsland>
     </IgrRowIsland>
 
-    <IgrRowIsland
-        childDataKey="Tours"
-        autoGenerate="false"
-        primaryKey="Tour"
-        rowEditable="true">
-        <IgrColumn
-            field="Tour"
-            header="Tour"
-            dataType="String"
-        ></IgrColumn>
-        <IgrColumn
-            field="StartedOn"
-            header="Started on"
-            dataType="String"
-        ></IgrColumn>
-        <IgrColumn
-            field="Location"
-            header="Location"
-            dataType="String"
-        ></IgrColumn>
-        <IgrColumn
-            field="Headliner"
-            header="Headliner"
-            dataType="String"
-        ></IgrColumn>
+    <IgrRowIsland childDataKey="Tours" autoGenerate={false} primaryKey="Tour" rowEditable={true}>
+        <IgrColumn field="Tour" header="Tour" dataType="string" />
+        <IgrColumn field="StartedOn" header="Started on" dataType="string" />
+        <IgrColumn field="Location" header="Location" dataType="string" />
+        <IgrColumn field="Headliner" header="Headliner" dataType="string" />
     </IgrRowIsland>
 </IgrHierarchicalGrid>
+
 ```
 <!-- end: React -->
 
@@ -601,10 +514,10 @@ public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-function rowEditTextTemplate(ctx: IgrGridRowEditTextTemplateContext) {
+const rowEditTextTemplate = (ctx: IgrGridRowEditTextTemplateContext) =>{
     return (
         <>
-            Changes: {ctx.dataContext.implicit}
+            Changes: {ctx.implicit}
         </>
     );
 }
@@ -651,8 +564,8 @@ public rowEditActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-function rowEditActionsTemplate(ctx: IgrGridRowEditActionsTemplateContext) {
-    const endRowEdit = ctx.dataContext.implicit;
+const rowEditActionsTemplate =(ctx: IgrGridRowEditActionsTemplateContext) => {
+    const endRowEdit = ctx.implicit;
     return (
         <>
             <button onClick={(event) => endRowEdit(false, event)}>Cancel</button>
@@ -673,7 +586,7 @@ function rowEditActionsTemplate(ctx: IgrGridRowEditActionsTemplateContext) {
 行編集オーバーレイは複合要素です。UI は、他の 2 つのコンポーネントで構成されています。
 
     - コンテンツをレンダリングするための [igx-banner](banner.md)
-    - [igx-button](button.md) はデフォルトのテンプレートでレンダリングされます (`[完了]` ボタンと `[キャンセル]` ボタンの場合)。
+    - [igx-button](button.md) はデフォルトのテンプレートでレンダリングされます (`Done` ボタンと `Cancel` ボタンの場合)。
 
 以下の例では、これら 2 つのコンポーネントのスタイル設定オプション ([ボタン スタイル](button.md#スタイル設定) & [バナー スタイル](../banner.md#スタイル設定)) を使用して、`{ComponentName}` の行編集のエクスペリエンスをカスタマイズします。
 
@@ -741,7 +654,7 @@ function rowEditActionsTemplate(ctx: IgrGridRowEditActionsTemplateContext) {
 
 ### カスタム テンプレート
 
-行編集オーバーレイをさらにカスタマイズするには、`[完了]` ボタンと `[キャンセル]` ボタンを別々にスタイル設定できるようにカスタム テンプレートを渡します。
+行編集オーバーレイをさらにカスタマイズするには、`Done` ボタンと `Cancel` ボタンを別々にスタイル設定できるようにカスタム テンプレートを渡します。
 
 ```html
 <!-- in component.html -->
@@ -759,7 +672,7 @@ function rowEditActionsTemplate(ctx: IgrGridRowEditActionsTemplateContext) {
 </{ComponentSelector}>
 ```
 
-カスタム ボタンを定義した後は、[button-theme]({environment:sassApiUrl}/index.html#function-button-theme) を使用してスタイルを設定できます。[こちら](../button.md#スタイル設定)で `igx-button` のスタイリングについてさらに学ぶことができます。`完了`と`キャンセル`のカスタム テーマを作成できます。
+カスタム ボタンを定義した後は、[button-theme]({environment:sassApiUrl}/index.html#function-button-theme) を使用してスタイルを設定できます。[こちら](../button.md#スタイル設定)で `igx-button` のスタイリングについてさらに学ぶことができます。`Done` と `Cancel` のカスタム テーマを作成できます。
 
 ```scss
 // custom.component.scss
@@ -774,7 +687,7 @@ $button-theme: button-theme(
 }
 ```
 
-`@include` ステートメントを `.custom-buttons` でスコープ設定して、`[完了]` ボタンと`[キャンセル]` ボタンにのみ適用されるようにします。
+`@include` ステートメントを `.custom-buttons` でスコープ設定して、`Done` ボタンと `Cancel` ボタンにのみ適用されるようにします。
 
 ### デモ
 

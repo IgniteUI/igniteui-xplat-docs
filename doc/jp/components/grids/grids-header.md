@@ -236,22 +236,56 @@ h3#excel-library-for-the-angular-grid ~ h3{
 <div class="divider--half"></div>
 
 <ul id="features-list">
-<li>数百万のレコードをロードできる[**仮想化された行と列**](grid/virtualization.md)</li>
+<li>
 
-<li>[**セル**](grid/cell-editing.md)および[**行**](grid/row-editing.md)オプションを使用した[**インライン編集**](grid/editing.md)</li>
+数百万のレコードをロードできる[**仮想化された行と列**](grid/virtualization.md)
+
+</li>
+
+<li>
+
+[**セル**](grid/cell-editing.md)および[**行**](grid/row-editing.md)オプションを使用した[**インライン編集**](grid/editing.md)
+</li>
+
+<li>
+
+[**セル**](grid/cell-editing.md)を使用した[**インライン編集**](grid/editing.md)
+
+</li>
+
 
 <!--Add back when batch editing is available>
 <!-- <li>[**セル**](grid/cell-editing.md)、[**行**](grid/row-editing.md)、および[**一括編集**](grid/batch-editing.md)オプションを使用した[**インライン編集**](grid/editing.md)</li> -->
 
-<li>[**Excel スタイル フィルタリング**](grid/excel-style-filtering.md)と [**Excel キーボード ナビゲーション**](grid/keyboard-navigation.md)機能</li>
+<li>
 
-<li>インタラクティブな [**Outlook スタイルのようなグループ化**](grid/groupby.md)</li>
+[**Excel スタイル フィルタリング**](grid/excel-style-filtering.md)と [**Excel キーボード ナビゲーション**](grid/keyboard-navigation.md)機能
 
-<li>グリッド セルまたは列のデータに基づいた[**列集計**](grid/summaries.md)</li>
+</li>
 
-<!-- <li>[**Excel へのエクスポート**](grid/export-excel.md) ([**データ可視化**](excel-library-working-with-charts.md)を含む)</li> -->
+<li>
 
-<li>行の高さとサイズ変更を調整する[**サイズ**](grid/size.md)</li>
+インタラクティブな [**Outlook スタイルのようなグループ化**](grid/groupby.md)
+
+</li>
+
+<li>
+
+グリッド セルまたは列のデータに基づいた[**列集計**](grid/summaries.md)
+
+</li>
+
+<li>
+
+[**Excel へのエクスポート**](grid/export-excel.md)
+
+</li>
+
+<li>
+
+行の高さとサイズ変更を調整する[**サイズ**](grid/size.md)
+
+</li>
 
 <!-- <li>[**スパークライン列**](sparkline.md#デモ)や画像列などの列テンプレート</li> -->
 </ul>
@@ -370,31 +404,105 @@ h3#excel-library-for-the-angular-grid ~ h3{
 <div class="divider"></div>
 <div id="list-features-included">
 <ul>
-    <li>[インライン編集](grid/editing.md)</li>
-    <li>[行と列のフィルタリング](grid/filtering.md)</li>
-    <li>[グリッドのソート](grid/sorting.md)</li>
-    <li>[列のグループ化](grid/groupby.md)</li>
-    <li>[列の集計](grid/summaries.md)</li>
-    <li>[ピン固定列](grid/column-pinning.md)</li>
+<li>
+    
+[インライン編集](grid/editing.md)
+    
+</li>
+
+<li>
+
+[行と列のフィルタリング](grid/filtering.md)
+
+</li>
+<li>
+
+[グリッドのソート](grid/sorting.md)
+</li>
+
+<li>
+
+[列のグループ化](grid/groupby.md)
+
+</li>
+<li>
+
+[列の集計](grid/summaries.md)
+
+</li>
+<li>
+
+[ピン固定列](grid/column-pinning.md)
+
+</li>
 </ul>
 <ul>
-    <li>[列の移動](grid/column-moving.md)</li>
-    <!-- [セルのコピーおよび貼り付け](grid/clipboard-interactions.md)</li> -->
-    <li>[セルのスタイル設定](grid/conditional-cell-styling.md)</li>
-    <!-- <li>[リアルタイム/ライブ データのテーマ](grid/live-data.md)</li> -->
+<li>
+
+[列の移動](grid/column-moving.md)
+
+</li>
+<li>
+
+[セルのコピーおよび貼り付け](grid/clipboard-interactions.md)
+
+</li>
+<li>
+
+[セルのスタイル設定](grid/conditional-cell-styling.md)
+
+</li>
+<li>
+
+[リアルタイム/ライブ データのテーマ](grid/live-data.md)
+
+</li>
     <!-- <li>[カスタム ツールバー](grid/toolbar.md)</li> -->
-    <li>[グリッド ページング](grid/paging.md)</li>
-    <li>[行選択](grid/selection.md)</li>
-    <li>[セル選択](grid/cell-selection.md)</li>
+<li>
+
+[グリッド ページング](grid/paging.md)
+
+</li>
+<li>
+
+[行選択](grid/selection.md)
+
+</li>
+<li>
+
+[セル選択](grid/cell-selection.md)
+
+</li>
 </ul>
 <ul>
-    <li>[グリッド レベルの検索](grid/search.md)</li>
+<li>
+
+[グリッド レベルの検索](grid/search.md)
+
+</li>
     <!-- <li>[Excel、CSV、TSV エクスポート](exporter-excel.md)</li> -->
-    <li>[複数列ヘッダー](grid/multi-column-headers.md)</li>
+<li>
+
+[複数列ヘッダー](grid/multi-column-headers.md)
+
+</li>
     <!-- <li>[コンボ ボックス/ドロップダウン](combo.md)</li> -->
-    <li>[仮想化とパフォーマンス](grid/virtualization.md)</li>
-    <li>[列のサイズ変更](grid/column-resizing.md)</li>
-    <li>[列の非表示](grid/column-hiding.md)</li>
+<li>
+
+[仮想化とパフォーマンス](grid/virtualization.md)
+
+</li>
+<li>
+
+[列のサイズ変更](grid/column-resizing.md)
+
+</li>
+
+<li>
+
+[列の非表示](grid/column-hiding.md)
+
+</li>
     <!-- <li>[リモート データのロードオンデマンド](grid/virtualization.md#リモート仮想化)</li> -->
     <!-- <li>[セル テンプレート](data-grid.md#セル-テンプレート)</li>
     <li>[ARIA/a11y サポート](interactivity/accessibility-compliance.md)</li> -->
@@ -442,12 +550,14 @@ h3#excel-library-for-the-angular-grid ~ h3{
 Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセスするための複数のオプションがあります。
 <div class="divider--half"></div>
         <ul>
-            <li><a class="no-external-icon" href="{environment:infragisticsBaseUrl}/support/ignite-ui-angular-help">{Platform} サポート ホーム ページをご覧ください。</a> </li>
-            <li>{Platform} [ドキュメント](../general-getting-started.md)を読み、{Platform} サンプルを試してください。</li>
-            <li>最新の情報は、<a class="no-external-icon" href="https://www.infragistics.com/community/blogs/tags/Ignite%2bUI%2bfor%2b{Platform}">{Platform} ブログをご覧ください。</a> </li>
-            <li><a class="no-external-icon" href="https://www.infragistics.com/ignite-ui-angular/grid-table">サポート ケースの送信</a></li>
-            <li>{Platform} <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">参照アプリケーションを試してください。</a></li>
-        </ul>
+
+- <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/support/ignite-ui-angular-help">{Platform} サポート ホーム ページをご覧ください。</a>
+- {Platform} [ドキュメント](../general-getting-started.md)を読み、{Platform} サンプルを試してください。
+- 最新の情報は、<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/community/blogs/tags/Ignite%2bUI%2bfor%2b{Platform}">{Platform} ブログをご覧ください。</a>
+- <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/ignite-ui-angular/grid-table">サポート ケースの送信</a>
+- {Platform} <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">参照アプリケーションを試してください。</a>
+
+</ul>
     </div>
 </div>
 
@@ -468,14 +578,42 @@ Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセ�
         <div class="divider--half"></div>
         <div class="faqs-accordion-panel">
             <ul>
-                <li>数百万のレコードをロードできる[仮想化された行と列](grid/virtualization.md)</li>
-                <!-- <li>セル、行、および[一括更新](grid/batch-editing.md)オプションを使用した[インライン編集](grid/row-editing.md)</li> -->
-                <li>[Excel スタイル フィルタリング](grid/excel-style-filtering.md)と [Excel キーボード ナビゲーション](grid/keyboard-navigation.md)機能</li>
-                <li>インタラクティブな [Outlook スタイルのようなグループ化](grid/groupby.md)</li>
-                <li>グリッド セルまたは列のデータに基づいた[列集計](grid/summaries.md)</li>
-                <!-- <li>[Excel へのエクスポート](grid/export-excel.md) ([データ可視化](excel-library-working-with-charts.md)を含む)</li> -->
-                <li>行の高さとサイズ変更を調整する[サイズ](grid/size.md)</li>
-                <!-- <li>[スパークライン列](sparkline.md)や画像列などの列テンプレート</li> -->
+<li>
+
+数百万のレコードをロードできる[仮想化された行と列](grid/virtualization.md)
+
+</li>
+<li>
+
+セル、行、および[一括更新](grid/batch-editing.md)オプションを使用した[インライン編集](grid/row-editing.md)
+
+</li>
+<li>
+
+[Excel スタイル フィルタリング](grid/excel-style-filtering.md)と [Excel キーボード ナビゲーション](grid/keyboard-navigation.md)機能
+
+</li>
+<li>
+
+インタラクティブな [Outlook スタイルのようなグループ化](grid/groupby.md)
+
+</li>
+<li>
+                
+グリッド セルまたは列のデータに基づいた[列集計](grid/summaries.md)
+
+</li>
+<li>
+
+[Excel へのエクスポート](grid/export-excel.md)
+
+</li>
+<li>
+
+行の高さとサイズ変更を調整する[サイズ](grid/size.md)
+
+</li>
+                <!-- <li>[スパークライン列](charts/types/sparkline-chart.md)や画像列などの列テンプレート</li> -->
             </ul>
         </div>
     </div>
@@ -501,8 +639,11 @@ Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセ�
         <div class="faqs-accordion h4">{Platform} と Infragistics {ProductName} Data Grid コントロールのインストール方法を教えてください。</div>
         <div class="divider--half"></div>
         <div class="faqs-accordion-panel">
-        {Platform} Data Grid の使用を開始するには、[作業の開始ガイド](../general-getting-started.md)の手順を実行してください。<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">サンプル アプリケーション</a>のライブラリも用意しています。サンプル ライブラリは、{Platform} 開発のベスト プラクティス ガイドです。
-        <div class="divider--half"></div>
+
+{Platform} Data Grid の使用を開始するには、[作業の開始ガイド](../general-getting-started.md)の手順を実行してください。<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">サンプル アプリケーション</a>のライブラリも用意しています。サンプル ライブラリは、{Platform} 開発のベスト プラクティス ガイドです。
+
+<div class="divider--half">
+        </div>
         </div>
     </div>
 </div>

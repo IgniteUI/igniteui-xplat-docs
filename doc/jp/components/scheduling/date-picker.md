@@ -48,10 +48,8 @@ npm install igniteui-react
 次に、以下のように、`DatePicker` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
 ```tsx
-import { IgrDatePicker, IgrDatePickerModule } from 'igniteui-react';
+import { IgrDatePicker } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrDatePickerModule.register();
 ```
 <!-- end: React -->
 <!-- Blazor -->
@@ -98,14 +96,21 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbDatePickerModule));
 <!-- React, Blazor -->
 `DatePicker` は `date` にバインドできます。
 <!-- end: React, Blazor -->
+
+<!-- WebComponents -->
 ```typescript
 const DatePicker = document.querySelector('igc-date-picker') as IgcDatePickerComponent;
 const date = new Date();
 
 DatePicker.value = date;
 ```
+
+<!-- end:WebComponents -->
+
 ```tsx
-datePickerRef.current.value = new Date();
+const date = new Date();
+
+<IgrDatePicker value={date}/>
 ```
 ```Razor
 <IgbDatePicker @ref="DatePicker" Value="@SelectedDate">

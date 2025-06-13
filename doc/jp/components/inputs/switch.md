@@ -28,7 +28,7 @@ _language: ja
 npm install {PackageWebComponents}
 ```
 
-次に、以下のように、`Switch` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、`Switch` と必要な CSS をインポートする必要があります:
 
 ```ts
 import { defineComponents, IgcSwitchComponent } from "igniteui-webcomponents";
@@ -48,12 +48,11 @@ defineComponents(IgcSwitchComponent);
 npm install igniteui-react
 ```
 
-次に、以下のように、`Switch` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、`Switch` と必要な CSS をインポートする必要があります:
 
 ```tsx
-import { IgrSwitchModule, IgrSwitch } from 'igniteui-react';
+import { IgrSwitch } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrSwitchModule.register();
 ```
 <!-- end: React -->
 
@@ -114,7 +113,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 スイッチの `LabelPosition` 属性を設定することにより、スイッチの切り替えの前または後にラベルを配置するかどうかを指定できます。許可される値は、`before` と `after` (デフォルト) です。
 
 ```tsx
-<IgrSwitch ariaLabelledby="switchLabel" labelPosition="Before" ><span id="switch-label">Label</span></IgrSwitch>
+<IgrSwitch aria-labelledby="switchLabel" labelPosition="before" ><span id="switch-label">Label</span></IgrSwitch>
 ```
 
 ```html
@@ -129,7 +128,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 
 ```tsx
 <span id="switch-label">Label</span>
-<IgrSwitch ariaLabelledby="switchLabel"></IgrSwitch>
+<IgrSwitch aria-labelledby="switchLabel"></IgrSwitch>
 ```
 
 ```html
@@ -151,7 +150,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 スイッチをオンに切り替えるには、`checked` 属性を使用できます。
 
 ```tsx
-<IgrSwitch checked="true"></IgrSwitch>
+<IgrSwitch checked={true}></IgrSwitch>
 ```
 
 ```html
@@ -171,7 +170,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 `required` 属性を使用して、スイッチを必須としてマークできます。
 
 ```tsx
-<IgrSwitch required="true"></IgrSwitch>
+<IgrSwitch required={true}></IgrSwitch>
 ```
 
 ```html
@@ -233,7 +232,6 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 ## スタイル設定
 
 `Switch` コンポーネントは、いくつかの CSS パーツを公開して、スタイルを完全に制御できるようにします。
-
 
 |名前|説明|
 |--|--|

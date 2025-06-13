@@ -50,10 +50,8 @@ npm install igniteui-react
 次に、以下のように、`Radio` および `RadioGroup` とそれぞれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
 ```tsx
-import { IgrRadioModule, IgrRadio, IgrRadioGroupComponent, IgrRadioGroupModule } from 'igniteui-react';
+import { IgrRadio, IgrRadioGroupComponent } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrRadioModule.register();
-IgrRadioGroupModule.register();
 ```
 <!-- end: React -->
 
@@ -148,7 +146,7 @@ builder.Services.AddIgniteUIBlazor(
 
 ```tsx
 <span id="radio-label">Label</span>
-<IgrRadio ariaLabelledby="radio-label"></IgrRadio>
+<IgrRadio aria-labelledby="radio-label"></IgrRadio>
 ```
 
 ```html
@@ -172,7 +170,7 @@ builder.Services.AddIgniteUIBlazor(
 ```tsx
 <IgrRadioGroup>
   <IgrRadio value="apple"><span>Apple</span></IgrRadio>
-  <IgrRadio value="banana" checked="true"><span>Banana</span></IgrRadio>
+  <IgrRadio value="banana" checked={true}><span>Banana</span></IgrRadio>
   <IgrRadio value="Mango"><span>Mango</span></IgrRadio>
   <IgrRadio value="orange"><span>Orange</span></IgrRadio>
 </IgrRadioGroup>
@@ -205,7 +203,7 @@ builder.Services.AddIgniteUIBlazor(
 `invalid` 属性を使用して、ラジオを無効としてマークできます。
 
 ```tsx
-<IgrRadio invalid="true"></IgrRadio>
+<IgrRadio invalid={true}></IgrRadio>
 ```
 
 ```html
@@ -227,7 +225,7 @@ builder.Services.AddIgniteUIBlazor(
 ```tsx
 <IgrRadioGroup>
   <IgrRadio value="apple"><span>Apple</span></IgrRadio>
-  <IgrRadio value="banana" disabled="true"><span>Banana</span></IgrRadio>
+  <IgrRadio value="banana" disabled={true}><span>Banana</span></IgrRadio>
   <IgrRadio value="Mango"><span>Mango</span></IgrRadio>
   <IgrRadio value="orange"><span>Orange</span></IgrRadio>
 </IgrRadioGroup>
@@ -262,7 +260,7 @@ builder.Services.AddIgniteUIBlazor(
 ```tsx
 <IgrRadioGroup alignment="horizontal">
   <IgrRadio value="apple"><span>Apple</span></IgrRadio>
-  <IgrRadio value="banana" disabled="true"><span>Banana</span></IgrRadio>
+  <IgrRadio value="banana" disabled={true}><span>Banana</span></IgrRadio>
   <IgrRadio value="Mango"><span>Mango</span></IgrRadio>
   <IgrRadio value="orange"><span>Orange</span></IgrRadio>
 </IgrRadioGroup>

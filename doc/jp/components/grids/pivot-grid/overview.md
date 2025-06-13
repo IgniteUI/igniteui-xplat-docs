@@ -76,12 +76,15 @@ _language: ja
 <!-- React -->
 
 ```tsx
-const childDimension = new IgrPivotDimension();
-childDimension.memberName = "ProductCategory";
-const dimension: IgrPivotDimension = new IgrPivotDimension();
-dimension.memberName = "AllProducts";
-dimension.enabled = true;
-dimension.childLevel = childDimension;
+const dimension: IgrPivotDimension = {
+    memberName: "AllProducts",
+    enabled: true,
+    childLevel: {
+        memberName: "ProductCategory",
+        enabled: true
+    }
+};
+
 ```
 <!-- end: React -->
 
@@ -132,17 +135,15 @@ dimension.childLevel = childDimension;
 
 <!-- React -->
 ```ts
-const pivotConfiguration = new IgrPivotConfiguration();
 
-const dateDimension = new IgrPivotDateDimension();
-dateDimension.memberName = "Date";
-dateDimension.enabled = true;
-const baseDimension = new IgrPivotDimension();
-baseDimension.memberName = "Date";
-baseDimension.enabled = true;
-
-dateDimension.baseDimension = baseDimension;
-pivotConfiguration1.columns = [dateDimension];
+const pivotConfiguration: IgrPivotConfiguration = {
+    columns: [
+        new IgrPivotDateDimension({
+            enabled: true,
+            memberName: "Date",
+        })
+    ]
+};
 ```
 <!-- end: React -->
 
@@ -195,12 +196,16 @@ public pivotConfigHierarchy: IgcPivotConfiguration = {
 
 <!-- React -->
 ```tsx
-const options: IgrPivotDateDimensionOptions = {} as IgrPivotDateDimensionOptions;
-options.years = true;
-options.months = false;
-options.quarters = true;
-options.fullDate = false;
-dateDimension.options = options;
+ new IgrPivotDateDimension({
+    enabled: true,
+    memberName: "Date",
+}, {
+    total: true,
+    years: true,
+    months: true,
+    fullDate: true,
+    quarters: false
+});
 ```
 <!-- end: React -->
 
@@ -253,18 +258,43 @@ dateDimension.options = options;
 
 <!-- React -->
 ```typescript
-const pivotConfiguration = new IgrPivotConfiguration();
-const value = new IgrPivotValue();
-value.member = "AmountofSale";
-value.displayName = "Amount of Sale";
-value.enabled = true;
-const aggregator = new IgrPivotAggregator();
-aggregator.key = "SUM";
-aggregator.label = "Sum of Sale";
-aggregator.aggregatorName = PivotAggregationType.SUM;
-value.aggregate = aggregator;
-pivotConfiguration.values = [value];
-value.aggregateList = [aggregator];
+const totalSale = (members: any, data: any) => data.reduce((accumulator:any, value: any) => accumulator + value.UnitPrice * value.UnitsSold, 0);
+    
+const totalMin = (members: any, data: any) => {
+    return data.map((x:any) => x.UnitPrice * x.UnitsSold).reduce((a:number, b:number) => Math.min(a, b));
+};
+    
+const totalMax = (members: any, data: any) => {
+    return data.map((x:any) => x.UnitPrice * x.UnitsSold).reduce((a:number, b:number) => Math.max(a,b));
+};
+
+const pivotConfiguration: IgrPivotConfiguration = {
+      values: [
+            {
+                enabled: true,
+                member: "AmountofSale",
+                displayName: "Amount of Sale",
+                aggregate: {
+                    aggregatorName: "SUM",
+                    key: "SUM",
+                    label: "Sum of Sale",
+                },
+                aggregateList: [{
+                    key: 'SUM',
+                    aggregator: totalSale,
+                    label: 'Sum of Sale'
+                }, {
+                    key: 'MIN',
+                    aggregator: totalMin,
+                    label: 'Minimum of Sale'
+                }, {
+                    key: 'MAX',
+                    aggregator: totalMax,
+                    label: 'Maximum of Sale'
+                }]
+            }
+      ]
+};
 ```
 <!-- end: React -->
 
@@ -383,43 +413,43 @@ public static totalMax: PivotAggregation = (members, data: any) => {
 <!-- React -->
 
 ```tsx
-const pivotConfiguration1: IgrPivotConfiguration = new IgrPivotConfiguration();
-
-const igrPivotDateDimension1 = new IgrPivotDimension();
-igrPivotDateDimension1.memberName = "Date";
-igrPivotDateDimension1.enabled = true;
-
-pivotConfiguration1.columns = [igrPivotDateDimension1];
-const igrPivotDimension2: IgrPivotDimension = new IgrPivotDimension();
-igrPivotDimension2.memberName = "ProductName";
-igrPivotDimension2.enabled = true;
-
-const igrPivotDimension3: IgrPivotDimension = new IgrPivotDimension();
-igrPivotDimension3.memberName = "SellerCity";
-igrPivotDimension3.enabled = true;
-
-pivotConfiguration1.rows = [igrPivotDimension2,igrPivotDimension3];
-const igrPivotDimension4: IgrPivotDimension = new IgrPivotDimension();
-igrPivotDimension4.memberName = "SellerName";
-igrPivotDimension4.enabled = true;
-
-pivotConfiguration1.filters = [igrPivotDimension4];
-const igrPivotValue1: IgrPivotValue = new IgrPivotValue();
-igrPivotValue1.member = "ProductUnitPrice";
-igrPivotValue1.displayName = "Amount of Sale";
-igrPivotValue1.dataType = GridColumnDataType.Currency;
-igrPivotValue1.enabled = true;
-const igrPivotAggregator1: IgrPivotAggregator = new IgrPivotAggregator();
-igrPivotAggregator1.key = "SUM";
-igrPivotAggregator1.label = "Sum of Sale";
-igrPivotAggregator1.aggregatorName = PivotAggregationType.SUM;
-
-igrPivotValue1.aggregate = igrPivotAggregator1;
-const igrPivotAggregator2: IgrPivotAggregator = new IgrPivotAggregator();
-igrPivotAggregator2.key = "SUM";
-igrPivotAggregator2.label = "Sum of Sale";
-igrPivotAggregator2.aggregatorName = PivotAggregationType.SUM;
-pivotConfiguration1.values = [igrPivotValue1];
+const pivotConfiguration1: IgrPivotConfiguration = {
+    columns: [
+        new IgrPivotDateDimension({
+            enabled: true,
+            memberName: "Date",
+        })
+    ],
+    rows: [
+        {
+            enabled: true,
+            memberName: "SellerCity"
+        },
+        {
+            enabled: true,
+            memberName: "ProductName"
+        }
+    ],
+    filters: [
+        {
+            enabled: true,
+            memberName: "SellerName"
+        }
+    ],
+    values: [
+        {
+            member: "ProductUnitPrice",
+            displayName: "Amount of Sale",
+            dataType: "currency",
+            enabled: true,
+            aggregate: {
+                    aggregatorName: "SUM",
+                    key: "SUM",
+                    label: "Sum of Sale",
+                }
+        }
+    ]
+};
 ```
 
 <!-- end: React -->

@@ -41,13 +41,11 @@ npm install {PackageWebComponents}
 npm install igniteui-react
 ```
 
-次に、以下のように、{Platform} `Toast` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、{Platform} `Toast` と必要な CSS をインポートする必要があります:
 
 ```tsx
-import { IgrToastModule, IgrToast } from 'igniteui-react';
+import { IgrToast } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrToastModule.register();
 ```
 
 <!-- end: React -->
@@ -108,24 +106,19 @@ Toast コンポーネントを表示する最も簡単な方法は、`Show` メ�
 ```
 
 ```tsx
-<IgrButton variant="contained" clicked={this.onShowButtonClicked}>
+<IgrButton variant="contained" onClick={onShowButtonClicked}>
     <span>Show Toast</span>
 </IgrButton>
 
-<IgrToast ref={this.onToastRef}>
+<IgrToast ref={toastRef}>
     <span>Toast Message</span>
 </IgrToast>
 
-public onToastRef(toast: IgrToast) {
-    if (!toast) { return; }
-    this.toastRef = toast;
-}
+const toastRef = useRef<IgrToast>(null);
 
-public onShowButtonClicked() {
-    if (this.toastRef) {
-        this.toastRef.show();
-    }
-}
+const onShowButtonClicked = () => {
+        toastRef.current?.show();
+    };
 ```
 
 ## コード例
@@ -186,43 +179,38 @@ public onShowButtonClicked() {
 
 ```tsx
 <div>
-    <IgrButton variant="contained" clicked={this.onToggleButtonClicked}>
+    <IgrButton variant="contained" onClick={onToggleButtonClicked}>
         <span>Toggle Toast</span>
     </IgrButton>
-    <IgrButton variant="contained" clicked={this.onKeepOpenButtonClicked}>
+    <IgrButton variant="contained" onClick={onKeepOpenButtonClicked}>
         <span>Toggle keepOpen Property</span>
     </IgrButton>
-    <IgrButton variant="contained" clicked={this.onDisplayTimeButtonClicked}>
+    <IgrButton variant="contained" onClick={onDisplayTimeButtonClicked}>
         <span>Set DisplayTime to 8000</span>
     </IgrButton>
 </div>
 
-<IgrToast ref={this.onToastRef}>
+<IgrToast ref={toastRef}>
     <span>Toast Message</span>
 </IgrToast>
 
-public onToastRef(toast: IgrToast) {
-    if (!toast) { return; }
-    this.toastRef = toast;
-}
+const toastRef = useRef<IgrToast>(null);
 
-public onToggleButtonClicked() {
-    if (this.toastRef) {
-        this.toastRef.toggle();
-    }
-}
+const onToggleButtonClicked = () => {
+    toastRef.current?.toggle();
+};
 
-public onKeepOpenButtonClicked() {
-    if (this.toastRef) {
-        this.toastRef.keepOpen = !this.toastRef.keepOpen;
+const onKeepOpenButtonClicked = () => {
+    if (toastRef.current) {
+        toastRef.current.keepOpen = !toastRef.current.keepOpen;
     }
-}
+};
 
-public onDisplayTimeButtonClicked() {
-    if (this.toastRef) {
-        this.toastRef.displayTime = 8000;
+const onDisplayTimeButtonClicked = () => {
+    if (toastRef.current) {
+        toastRef.current.displayTime = 8000;
     }
-}
+};
 ```
 
 `sample="/notifications/toast/properties", height="230", alt="{Platform} Toast プロパティの例"`

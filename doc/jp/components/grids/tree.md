@@ -54,12 +54,11 @@ defineComponents(IgcTreeComponent);
 npm install igniteui-react
 ```
 
-次に、以下のように、`Tree` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、`Tree` と必要な CSS をインポートする必要があります:
 
 ```tsx
-import { IgrTreeModule, IgrTree, IgrTreeItem } from 'igniteui-react';
+import { IgrTree, IgrTreeItem } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrTreeModule.register();
 ```
 
 <!-- end: React -->

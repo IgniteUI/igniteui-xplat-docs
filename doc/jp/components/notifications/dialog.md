@@ -43,13 +43,11 @@ defineComponents(IgcDialogComponent);
 npm install igniteui-react
 ```
 
-次に、以下のように、{Platform} `Dialog` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、{Platform} `Dialog` と必要な CSS をインポートする必要があります:
 
 ```tsx
-import { IgrDialogModule, IgrDialog } from 'igniteui-react';
+import { IgrDialog } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrDialogModule.register();
 ```
 
 <!-- end: React -->
@@ -129,7 +127,7 @@ Dialog コンポーネントは `Open` プロパティを提供します。こ�
 
 Dialog のタイトルを設定するには、`Title` プロパティを使用します。ただし、`title` スロットにコンテンツが指定されている場合は、プロパティよりも優先されます。
 
-アクション ボタンまたは追加情報は、`footer` スロットを介してダイアログの下部に配置できます。そこにコンテンツが追加されていない場合、デフォルトの `[OK]` ボタンが表示され、クリックするとダイアログが閉じます。このボタンを表示したくない場合は、`HideDefaultAction` プロパティを **true** に設定できます。デフォルト値は **false** です。
+アクション ボタンまたは追加情報は、`footer` スロットを介してダイアログの下部に配置できます。そこにコンテンツが追加されていない場合、デフォルトの `OK` ボタンが表示され、クリックするとダイアログが閉じます。このボタンを表示したくない場合は、`HideDefaultAction` プロパティを **true** に設定できます。デフォルト値は **false** です。
 
 ### 閉じる (Closing)
 

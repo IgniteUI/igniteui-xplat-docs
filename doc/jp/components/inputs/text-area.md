@@ -21,8 +21,6 @@ _language: ja
 
 ## 依存関係
 
-テキスト エリア コンポーネントの使用を開始するには、最初にそのモジュールを登録する必要があります。
-
 <!-- Blazor -->
 
 ```razor
@@ -60,12 +58,11 @@ defineComponents(IgcTextareaComponent);
 npm install igniteui-react
 ```
 
-次に、以下のように、`Textarea` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、`Textarea` と必要な CSS をインポートする必要があります:
 
 ```tsx
-import { IgrTextareaModule, IgrTextarea } from 'igniteui-react';
+import { IgrTextarea } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrTextareaModule.register();
 ```
 <!-- end: React -->
 

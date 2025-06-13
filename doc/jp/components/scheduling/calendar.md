@@ -40,13 +40,11 @@ npm install {PackageWebComponents}
 npm install igniteui-react
 ```
 
-次に、以下のように、{ProductName} `Calendar` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、{ProductName} `Calendar` と必要な CSS をインポートする必要があります:
 
 ```tsx
-import { IgrCalendarModule, IgrCalendar } from 'igniteui-react';
+import { IgrCalendar } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrCalendarModule.register();
 ```
 
 <!-- end: React -->
@@ -352,9 +350,9 @@ this.calendar.addEventListener('igcChange', ev => console.log(ev.detail));
 ```
 
 ```tsx
-<IgrCalendar change={this.onCalendarChange} />
+<IgrCalendar onChange={this.onCalendarChange} />
 
-public onCalendarChange(calendar: IgrCalendar, e: IgrComponentDataValueChangedEventArgs) {
+public onCalendarChange(e: IgrComponentDataValueChangedEventArgs) {
 
 }
 ```

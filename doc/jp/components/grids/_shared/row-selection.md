@@ -1,5 +1,5 @@
 ---
-title: 	{Platform} {ComponentTitle} 行の選択 - {ProductName}
+title: {Platform} {ComponentTitle} 行の選択 - {ProductName}
 _description: {Platform} {ComponentTitle} は、{ComponentTitle} 一括編集を使用して、基になるデータに影響を与えずにデータ操作を実行します。デモと例をお試しください。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -89,13 +89,13 @@ public handleRowSelection(args: IgcRowSelectionEventArgs) {
 <!-- end: WebComponents -->
 
 ```tsx
-function handleRowSelection(args: IgrRowSelectionEventArgs) {
+const handleRowSelection = (args: IgrRowSelectionEventArgs) => {
     if (args.detail.added.length && args.detail.added[0] === 3) {
         args.detail.cancel = true;
     }
 }
 
-<{ComponentSelector} rowSelection="single" autoGenerate="true" allowFiltering="true" rowSelectionChanging={handleRowSelection}>
+<{ComponentSelector} rowSelection="single" autoGenerate={true} allowFiltering={true} onRowSelectionChanging={handleRowSelection}>
 </{ComponentSelector}>
 ```
 
@@ -152,7 +152,7 @@ function handleRowSelection(args: IgrRowSelectionEventArgs) {
 
 ```tsx
 <{ComponentSelector} primaryKey="ProductID" rowSelection="multiple"
-        allowFiltering="true" autoGenerate="true">
+        allowFiltering={true} autoGenerate={true}>
 </{ComponentSelector}>
 ```
 
@@ -187,8 +187,8 @@ function handleRowSelection(args: IgrRowSelectionEventArgs) {
 ```
 
 ```tsx
-<IgrTreeGrid id="grid" primaryKey="ID" foreignKey="ParentID" autoGenerate="true"
-        rowSelection="MultipleCascade" allowFiltering="true">
+<IgrTreeGrid primaryKey="ID" foreignKey="ParentID" autoGenerate={true}
+        rowSelection="multipleCascade" allowFiltering={true}>
 </IgrTreeGrid>
 ```
 
@@ -280,7 +280,7 @@ function onClickSelect() {
     gridRef.current.selectRows([1,2,5], true);
 }
 
-<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate="true" ref={gridRef}>
+<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate={true} ref={gridRef}>
 </{ComponentSelector}>
 <button onClick={onClickSelect}>Select 1,2 and 5</button>
 ```
@@ -350,7 +350,7 @@ function onClickDeselect() {
     gridRef.current.deselectRows([1,2,5]);
 }
 
-<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate="true" ref={gridRef}>
+<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate={true} ref={gridRef}>
 </{ComponentSelector}>
 <button onClick={onClickDeselect}>Deselect 1,2 and 5</button>
 ```
@@ -398,11 +398,11 @@ public handleRowSelectionChange(args) {
 <!-- end: WebComponents -->
 
 ```tsx
-function handleRowSelectionChange(args: IgrRowSelectionEventArgs) {
+const handleRowSelectionChange = (args: IgrRowSelectionEventArgs) => {
     args.detail.cancel = true; // this will cancel the row selection
 }
 
-<{ComponentSelector} rowSelectionChanging={handleRowSelectionChange}>
+<{ComponentSelector} onRowSelectionChanging={handleRowSelectionChange}>
 </{ComponentSelector}>
 ```
 
@@ -439,12 +439,16 @@ function handleRowSelectionChange(args: IgrRowSelectionEventArgs) {
 
 現在選択されている行を確認する必要がある場合は、`SelectedRows` ゲッターを使用して行 ID を取得できます。
 
-```typescript
+<!-- WebComponents -->
+
+```ts
 public getSelectedRows() {
     const grid = document.getElementById('grid') as {ComponentName}Component;
     const currentSelection = grid.selectedRows; // return array of row IDs
 }
 ```
+
+<!-- end: WebComponents -->
 
 ```razor
     <{ComponentSelector} Width="100%"
@@ -485,6 +489,8 @@ function getSelectedRows() {
 ```
 <!-- end: Angular -->
 
+<!-- WebComponents -->
+
 ```ts
 public mySelectedRows = [1, 2, 3]; // an array of row IDs
 constructor() {
@@ -494,10 +500,13 @@ constructor() {
 }
 ```
 
+<!-- end: WebComponents -->
+
+
 ```tsx
 const mySelectedRows = [1,2,3];
 
-<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate="false" selectedRows={mySelectedRows}>
+<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate={false} selectedRows={mySelectedRows}>
 </{ComponentSelector}>
 ```
 
@@ -575,12 +584,12 @@ public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
 ```
 
 ```tsx
-function rowSelectorTemplate(ctx: IgrRowSelectorTemplateContext) {
-    if (ctx.dataContext.implicit.selected) {
+const rowSelectorTemplate = (ctx: IgrRowSelectorTemplateContext) => {
+    if (ctx.implicit.selected) {
         return (
             <>
                 <div style={{justifyContent: 'space-evenly', display: 'flex', width: '70px'}}>
-                    <span> ${ctx.dataContext.implicit.index}</span>
+                    <span> ${ctx.implicit.index}</span>
                     <IgrCheckbox checked></IgrCheckbox>
                 </div>
             </>
@@ -589,8 +598,8 @@ function rowSelectorTemplate(ctx: IgrRowSelectorTemplateContext) {
         return (
             <>
                 <div style={{justifyContent: 'space-evenly', display: 'flex', width: '70px'}}>
-                    <span> ${ctx.dataContext.implicit.index}</span>
-                    <IgrCheckbox checked></IgrCheckbox>
+                    <span> ${ctx.implicit.index}</span>
+                    <IgrCheckbox></IgrCheckbox>
                 </div>
             </>
         );
@@ -621,10 +630,10 @@ public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
 ```
 
 ```tsx
-public rowSelectorTemplate(ctx: IgrRowSelectorTemplateContext) {
+const rowSelectorTemplate = (ctx: IgrRowSelectorTemplateContext) => {
     return (
         <>
-            <IgrCheckbox onClick={(event) => onSelectorClick(event, ctx.dataContext.implicit.key)}>
+            <IgrCheckbox onClick={(event) => onSelectorClick(event, ctx.implicit.key)}>
             </IgrCheckbox>
         </>
     );
@@ -658,10 +667,10 @@ public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
 ```
 
 ```tsx
-function headSelectorTemplate(ctx: IgrHeadSelectorTemplateContext) {
+const headSelectorTemplate = (ctx: IgrHeadSelectorTemplateContext) => {
     return (
         <>
-            {ctx.dataContext.implicit.selectedCount} / {ctx.dataContext.implicit.totalCount}
+            {ctx.implicit.selectedCount} / {ctx.implicit.totalCount}
         </>
     );
 };
@@ -698,6 +707,7 @@ auto-generate="true">
 </{ComponentSelector}>
 ```
 
+<!-- WebComponents -->
 ```ts
 constructor() {
     const grid = document.getElementById('grid') as {ComponentName}Component;
@@ -716,9 +726,11 @@ public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
 }
 ```
 
+<!-- end: WebComponents -->
+
 ```tsx
-function headSelectorTemplate(ctx: IgcHeadSelectorTemplateContext) {
-    const implicit: any = ctx.dataContext.implicit;
+const headSelectorTemplate = (ctx: IgrHeadSelectorTemplateContext) => {
+    const implicit: any = ctx.implicit;
     if (implicit.selectedCount > 0 && implicit.selectedCount === implicit.totalCount) {
             return (
                 <>
@@ -739,7 +751,7 @@ function headSelectorTemplate(ctx: IgcHeadSelectorTemplateContext) {
         );
 }
 
-<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate="true" headSelectorTemplate={headSelectorTemplate}>
+<{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" autoGenerate={true} headSelectorTemplate={headSelectorTemplate}>
 </{ComponentSelector}>
 ```
 

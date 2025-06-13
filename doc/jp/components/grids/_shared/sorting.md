@@ -46,7 +46,7 @@ _language: ja
 ```
 
 ```tsx
-<IgrColumn field="ProductName" header="Product Name" dataType="string" sortable="true"></IgrColumn>
+<IgrColumn field="ProductName" header="Product Name" dataType="string" sortable={true}></IgrColumn>
 ```
 
 ## ソート インジケーター
@@ -403,12 +403,15 @@ public connectedCallback() {
 <!-- end: WebComponents -->
 
 ```tsx
-useEffect(() => {
-    gridRef.current.sortingExpressions = [
+const sortingExpressions: IgrSortingExpression[] = [
         { fieldName: 'UnitsInStock', dir: SortingDirection.Asc, ignoreCase: true },
         { fieldName: 'ProductName', dir: SortingDirection.Desc }
     ];
-}, [])
+
+<IgrGrid
+    data={productSales}
+    sortingExpressions={sortingExpressions}>
+</IgrGrid>
 ```
 <!-- ComponentEnd: Grid -->
 
@@ -453,12 +456,15 @@ public connectedCallback() {
 <!-- end: WebComponents -->
 
 ```tsx
-useEffect(() => {
-    treeGridRef.current.sortingExpressions = [
+const sortingExpressions: IgrSortingExpression[] = [
         { fieldName: 'Category', dir: SortingDirection.Asc, ignoreCase: true },
         { fieldName: 'Price', dir: SortingDirection.Desc }
     ];
-}, [])
+
+<IgrTreeGrid
+    data={productSales}
+    sortingExpressions={sortingExpressions}>
+</IgrTreeGrid>
 ```
 <!-- ComponentEnd: TreeGrid -->
 
@@ -503,12 +509,16 @@ public connectedCallback() {
 <!-- end: WebComponents -->
 
 ```tsx
-useEffect(() => {
-    hierarchicalGridRef.current.sortingExpressions = [
+const sortingExpressions: IgrSortingExpression[] = [
         { fieldName: 'UnitsInStock', dir: SortingDirection.Asc, ignoreCase: true },
         { fieldName: 'ProductName', dir: SortingDirection.Desc }
     ];
-}, [])
+
+<IgrHierarchicalGrid
+    data={productSales}
+    sortingExpressions={sortingExpressions}>
+</IgrHierarchicalGrid>
+
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -572,7 +582,7 @@ public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-function sortHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
+const sortHeaderIconTemplate = (ctx: IgrGridHeaderTemplateContext) => {
     return (
         <>
             <IgrIcon name='unfold_more'></IgrIcon>
@@ -631,7 +641,7 @@ public sortAscendingHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => 
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-function sortAscendingHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
+const sortAscendingHeaderIconTemplate = (ctx: IgrGridHeaderTemplateContext) => {
     return (
         <>
             <IgrIcon name='expand_less'></IgrIcon>
@@ -690,7 +700,7 @@ public sortDescendingHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) =>
 <!-- React -->
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```tsx
-function sortDescendingHeaderIconTemplate(ctx: IgrGridHeaderTemplateContext) {
+const sortDescendingHeaderIconTemplate = (ctx: IgrGridHeaderTemplateContext) => {
     return (
         <>
             <IgrIcon name='expand_more'></IgrIcon>
@@ -803,7 +813,7 @@ $custom-theme: grid-theme(
 
 ### デモ
 
-`sample="/{ComponentSample}/column-sorting-style", height="550", alt="{Platform} {ComponentTitle} column sorting style"`
+`sample="/{ComponentSample}/column-sorting-style", height="550", alt="{Platform} {ComponentTitle} 列のソート スタイル"`
 
 
 > [!Note]
@@ -842,7 +852,7 @@ $custom-theme: grid-theme(
 ```
 ### デモ
 
-`sample="/{ComponentSample}/column-sorting-style", height="550", alt="{Platform} {ComponentTitle} column sorting style"`
+`sample="/{ComponentSample}/column-sorting-style", height="550", alt="{Platform} {ComponentTitle} 列のソート スタイル"`
 
 <!-- end: WebComponents, Blazor, React -->
 

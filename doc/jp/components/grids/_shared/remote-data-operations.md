@@ -922,7 +922,7 @@ export class RemotePagingGridSample implements OnInit, AfterViewInit, OnDestroy 
      <IgrGrid
           ref={grid}
           data={data}
-          pagingMode={GridPagingMode.Remote}
+          pagingMode="remote"
           primaryKey="customerId"
           height="600px"
           isLoading={isLoading}
@@ -930,8 +930,8 @@ export class RemotePagingGridSample implements OnInit, AfterViewInit, OnDestroy 
         <IgrPaginator 
           perPage={perPage}
           ref={paginator}
-          pageChange={onPageNumberChange}
-          perPageChange={onPageSizeChange}>
+          onPageChange={onPageNumberChange}
+          onPerPageChange={onPageSizeChange}>
         </IgrPaginator>
           <IgrColumn field="customerId" hidden={true}></IgrColumn>
           <IgrColumn field="companyName" header="Company Name"></IgrColumn>
@@ -1190,50 +1190,28 @@ export class HGridRemotePagingSampleComponent implements OnInit, AfterViewInit, 
   <IgrHierarchicalGrid
           ref={hierarchicalGrid}
           data={data}
-          pagingMode={GridPagingMode.Remote}
+          pagingMode="remote"
           primaryKey="customerId"
           height="600px"
-          isLoading={isLoading}
         >
           <IgrPaginator 
             perPage={perPage}
             ref={paginator}
-            pageChange={onPageNumberChange}
-            perPageChange={onPageSizeChange}>
-          </IgrPaginator>
-          <IgrColumn field="customerId" hidden={true}></IgrColumn>
-          <IgrColumn field="companyName" header="Company Name"></IgrColumn>
-          <IgrColumn field="contactName" header="Contact Name"></IgrColumn>
-          <IgrColumn field="contactTitle" header="Contact Title"></IgrColumn>
-          <IgrColumn field="address.country" header="Country"></IgrColumn>
-          <IgrColumn field="address.phone" header="Phone"></IgrColumn>
-
+            onPageChange={onPageNumberChange}
+            onPerPageChange={onPageSizeChange}
+          ></IgrPaginator>
+          ...
           <IgrRowIsland
             childDataKey="Orders"
             primaryKey="orderId"
-            gridCreated={(
-              rowIsland: IgrRowIsland,
-              e: IgrGridCreatedEventArgs
-            ) => gridCreated(rowIsland, e, "Customers")}
-          >
-            <IgrColumn field="orderId" hidden={true}></IgrColumn>
-            <IgrColumn field="shipAddress.country" header="Ship Country"></IgrColumn>
-            <IgrColumn field="shipAddress.city" header="Ship City"></IgrColumn>
-            <IgrColumn field="shipAddress.street" header="Ship Address"></IgrColumn>
-            <IgrColumn field="orderDate" header="Order Date" dataType="date"></IgrColumn>
+            onGridCreated={onCustomersGridCreatedHandler}>
+            ...
 
             <IgrRowIsland
               childDataKey="Details"
               primaryKey="productId"
-              gridCreated={(
-                rowIsland: IgrRowIsland,
-                e: IgrGridCreatedEventArgs
-              ) => gridCreated(rowIsland, e, "Orders")}
-            >
-              <IgrColumn field="productId" hidden={true}></IgrColumn>
-              <IgrColumn field="quantity" header="Quantity"></IgrColumn>
-              <IgrColumn field="unitPrice" header="Unit Price"></IgrColumn>
-              <IgrColumn field="discount" header="Discount"></IgrColumn>
+              onGridCreated={onOrdersGridCreatedHandler}>
+              ...
             </IgrRowIsland>
           </IgrRowIsland>
     </IgrHierarchicalGrid>
@@ -1284,10 +1262,12 @@ export class HGridRemotePagingSampleComponent implements OnInit, AfterViewInit, 
 最後に、RowIslands の動作を設定します。
 <!-- ComponentStart: HierarchicalGrid -->
 ```tsx
-  function gridCreated(rowIsland: IgrRowIsland, event: IgrGridCreatedEventArgs, parentKey: string) {
+  function gridCreated(event: IgrGridCreatedEventArgs, parentKey: string) {
     const context = event.detail;
+    context.grid.isLoading = true;
+
     const parentId: string = context.parentID;
-    const childDataKey: string = rowIsland.childDataKey;
+    const childDataKey: string = context.owner.childDataKey;
 
     RemoteService.getHierarchyDataById(parentKey, parentId, childDataKey)
       .then((data: any) => {
@@ -1300,8 +1280,16 @@ export class HGridRemotePagingSampleComponent implements OnInit, AfterViewInit, 
         context.grid.data = [];
         context.grid.isLoading = false;
         context.grid.markForCheck();
-      })
+      });
   }
+
+  const onCustomersGridCreatedHandler = (e: IgrGridCreatedEventArgs) => {
+    gridCreated(e, "Customers")
+  };
+
+  const onOrdersGridCreatedHandler = (e: IgrGridCreatedEventArgs) => {
+    gridCreated(e, "Orders")
+  };
 ```
 
 
