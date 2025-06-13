@@ -44,13 +44,11 @@ First, you need to the install the corresponding {ProductName} npm package by ru
 npm install igniteui-react
 ```
 
-You will then need to import the `Slider` and `RangeSlider`, its necessary CSS, and register its module, like so:
+You will then need to import the `Slider` and `RangeSlider`and its necessary CSS, like so:
 
 ```tsx
-import { IgrSliderModule, IgrSlider, IgrRangeSlider, IgrRangeSliderModule } from 'igniteui-react';
+import { IgrSlider, IgrRangeSlider } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrSliderModule.register();
-IgrRangeSliderModule.register();
 ```
 <!-- end: React -->
 
@@ -77,8 +75,8 @@ The simplest way to start using the `Slider` and `RangeSlider` is as follows:
 ```
 
 ```tsx
- <IgrSlider value="40" />
-    <span className="slider-label"></span>
+<IgrSlider value="40" />
+  <span className="slider-label"></span>
 <IgrRangeSlider lower="20" upper="70"></IgrRangeSlider>
 ```
 
@@ -91,7 +89,8 @@ The simplest way to start using the `Slider` and `RangeSlider` is as follows:
 
 The main difference between the Slider and Range Slider components is that the Slider component has a single thumb, while the Range Slider component has two thumbs. The single thumb of the Slider component displays its `Value` property. The two thumbs of the Range Slider component display its `Lower` and `Upper` value properties.
 
-Both sliders emit two events when any of the values is changed. The `Input` event is emitted whenever a value is changed using keyboard or drag interaction while the `igcChange` event is emitted when the value change is committed on drag end or keyboard interaction.
+Both sliders emit two events when any of the values is changed. The `Input` event is emitted whenever a value is changed using keyboard or drag interaction while the `Change` event is emitted when the value change is committed on drag end or keyboard interaction.
+
 
 `sample="/inputs/slider/value", height="250", alt="{Platform} Slider Value Example"`
 
