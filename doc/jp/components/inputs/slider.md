@@ -76,8 +76,8 @@ builder.Services.AddIgniteUIBlazor(
 ```
 
 ```tsx
- <IgrSlider value="40" />
-    <span className="slider-label"></span>
+<IgrSlider value="40" />
+  <span className="slider-label"></span>
 <IgrRangeSlider lower="20" upper="70"></IgrRangeSlider>
 ```
 
