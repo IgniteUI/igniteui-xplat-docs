@@ -67,13 +67,11 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbComboModule));
 npm install igniteui-react
 ```
 
-次に、以下のように、{Platform} `ComboBox` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、{Platform} `ComboBox` と必要な CSS をインポートする必要があります:
 
 ```tsx
-import { IgrComboModule, IgrCombo } from 'igniteui-react';
+import { IgrCombo } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrComboModule.register();
 ```
 
 <!-- end: React -->
@@ -110,7 +108,7 @@ export class Sample {
 ```
 
 ```razor
-<IgbCombo Id="basic-combo" DisplayKey="name" ValueKey="id" Data="Data" />
+<IgbCombo T="object" Id="basic-combo" DisplayKey="name" ValueKey="id" Data="Data" />
 
 @code {
     private class City {
@@ -163,6 +161,9 @@ const cities: City[] = [
 
 コンボは複雑なデータ (オブジェクト) の配列にバインドされている場合、コントロールが項目の選択を処理するために使用するプロパティを指定する必要があります。コンポーネントは以下のプロパティを公開します:
 
+<!-- end: Blazor -->
+ - `T` - *必須。`ValueKey` が省略されている場合は、これを 「object」 に設定する必要があります。それ以外の場合は、`ValueKey` のプロパティ タイプと一致する必要があります。
+<!-- end: Blazor -->
  - `ValueKey` - オプション、複雑なデータ オブジェクトに**必須** - データ ソースのどのフィールドを選択に使用するかを決定します。`ValueKey` が省略された場合、選択 API はオブジェクト参照を使用して項目を選択します。
  - `DisplayKey` - オプション、複雑なデータ オブジェクトに**推奨** - データ ソース内のどのフィールドが表示値として使用されるかを決定します。 `DisplayKey` に値が指定されていない場合、コンボは指定された `ValueKey` (存在する場合) を使用します。
 この例では、コンボで各都市の `name` を表示し、項目の選択と各項目の基礎となる値として `id` フィールドを使用するようにします。したがって、これらのプロパティをコンボの `ValueKey` と `DisplayKey` にそれぞれ提供します。

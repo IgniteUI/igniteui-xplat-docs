@@ -48,9 +48,8 @@ npm install igniteui-react
 You will then need to import the `IconButton`, its necessary CSS, and register its module, like so:
 
 ```tsx
-import { IgrIconButtonModule, IgrIconButton } from 'igniteui-react';
+import { IgrIconButton } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrIconButtonModule.register();
 ```
 <!-- end: React -->
 
@@ -95,7 +94,7 @@ Similar to the regular button components, the icon button supports several varia
 
 
 ```tsx
-<IgrIconButton name="search" collection="contained"></IgrIconButton>
+<IgrIconButton name="search" variant="contained"></IgrIconButton>
 ```
 
 ```html
@@ -114,14 +113,23 @@ The size of the button can be changed by utilizing the `--ig-size` CSS variable 
 
 
 ```tsx
-<IgrIconButton name="thumb-up" size="medium"></IgrIconButton>
+<IgrIconButton className="size-medium" name="thumb-up"></IgrIconButton>
 ```
+<!-- React-->
+```css
+.size-medium {
+    --ig-size: var(--ig-size-medium);
+}
+```
+<!-- end: React-->
 
+<!-- WebComponents, Blazor-->
 ```css
 igc-icon-button {
     --ig-size: var(--ig-size-medium);
 }
 ```
+<!-- end: WebComponents, Blazor-->
 
 ```razor
 <IgbIconButton IconName="thumb-up" Collection="material" Size="@SizableComponentSize.Medium" />
@@ -154,7 +162,7 @@ The icon button component will change its internal structure from `<button>` to 
 Some icons need to look a little different when used in Right-to-Left(RTL) mode. For that reason we provide a `mirrored` attribute that, when set, flips the icon button horizontally.
 
 ```tsx
-<IgrIconButton name="thumb-up" mirrored="true"></IgrIconButton>
+<IgrIconButton name="thumb-up" mirrored={true}></IgrIconButton>
 ```
 
 ```html

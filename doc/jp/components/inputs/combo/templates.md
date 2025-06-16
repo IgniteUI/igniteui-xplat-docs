@@ -65,24 +65,33 @@ igRegisterScript("ComboItemTemplate", itemTemplate, false);
 ```razor
 <IgbCombo ItemTemplateScript="ComboItemTemplate"></IgbCombo>
 ```
-
 <!-- end: Blazor -->
 
 <!-- React -->
 ```tsx
+type City = {
+  name: string;
+  id: string;
+  country: string;
+};
+
+const renderItemTemplate = (args: ComboTemplateProps<City>) => {
+  const item = args.item;
+
+  return (
+    <span>
+      <b>{item.name}</b> [{item.id}] - {item.country}
+    </span>
+  );
+};
+
 <IgrCombo
     valueKey="id"
     displayKey="name"
     groupKey="country"
-    data={cities}
+    data={Cities}
     itemTemplate={renderItemTemplate}
 ></IgrCombo>
-
-function renderItemTemplate(props: { dataContext: any}): any {
-    return (
-      <span><b>{props.dataContext.name}</b> [{props.dataContext.id}]</span>
-    );
-}
 ```
 <!-- end: React -->
 
@@ -120,7 +129,6 @@ igRegisterScript('ComboGroupHeaderTemplate', groupHeaderTemplate, false)
 ```razor
 <IgbCombo GroupHeaderTemplateScript="ComboGroupHeaderTemplate"></IgbCombo>
 ```
-
 <!-- end: Blazor -->
 
 <!-- React -->
@@ -133,9 +141,9 @@ igRegisterScript('ComboGroupHeaderTemplate', groupHeaderTemplate, false)
     groupHeaderTemplate={renderGroupHeaderTemplate}
 ></IgrCombo>
 
-function renderGroupHeaderTemplate(props: { dataContext: any}): any {
+const renderGroupHeaderTemplate = (args: ComboTemplateProps<City>) => {
     return (
-    <span>Country of {props.dataContext.country}</span>
+  <span>Country of {args.item.country}</span>
     );
 }
 ```
@@ -233,7 +241,7 @@ function renderGroupHeaderTemplate(props: { dataContext: any}): any {
 ```tsx
 <IgrCombo>
   <span slot="toggle-icon">
-    <IgbIcon name="down"></IgbIcon>
+    <IgrIcon name="down" collection="material"></IgrIcon>
   </span>
 </IgrCombo>
 ```
@@ -256,7 +264,7 @@ function renderGroupHeaderTemplate(props: { dataContext: any}): any {
 ```tsx
 <IgrCombo>
   <span slot="clear-icon">
-    <IgbIcon name="clear"></IgbIcon>
+    <IgrIcon name="clear" collection="material"></IgrIcon>
   </span>
 </IgrCombo>
 ```

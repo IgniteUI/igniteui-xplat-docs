@@ -73,9 +73,8 @@ npm install igniteui-react
 次に、以下のように、`Input` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
 ```tsx
-import { IgrInputModule, IgrInput } from 'igniteui-react';
+import { IgrInput } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrInputModule.register();
 ```
 <!-- end: React -->
 

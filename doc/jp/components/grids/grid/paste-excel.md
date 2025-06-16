@@ -36,14 +36,14 @@ _language: ja
 最初にグリッドの `rendered` イベントにバインドして、テキスト エリア要素を作成して管理します。
 
 ```tsx
-<IgrGrid autoGenerate="false" data={this.invoicesData} rendered={this.webGridPasteFromExcel} ref={this.gridRef} id="grid" primaryKey="OrderID">
+<IgrGrid autoGenerate={false} data={this.invoicesData} onRendered={this.webGridPasteFromExcel} ref={this.gridRef} id="grid" primaryKey="OrderID">
     <IgrGridToolbar>
         <IgrGridToolbarActions>
-            <IgrGridToolbarExporter exportExcel="true" exportCSV="false">
+            <IgrGridToolbarExporter exportExcel={true} exportCSV={false}>
             </IgrGridToolbarExporter>
         </IgrGridToolbarActions>
     </IgrGridToolbar>
-    <IgrColumn field="OrderID" hidden="true"></IgrColumn>
+    <IgrColumn field="OrderID" hidden={true}></IgrColumn>
     <IgrColumn field="Salesperson" header="Name" width="200px"></IgrColumn>
     <IgrColumn field="ShipName" header="Ship Name" width="200px"></IgrColumn>
     <IgrColumn field="Country" header="Country" width="200px"></IgrColumn>
@@ -68,9 +68,11 @@ _language: ja
 </igc-grid>
 ```
 
+<!-- WebComponents -->
+
 ```ts
-public webGridPasteFromExcel() {
-    const grid = document.getElementById("grid") as any;
+public webGridPasteFromExcel(e: CustomEvent<any>) {
+    const grid = e.target as IgcGridComponent;
     this.onKeyDown = this.onKeyDown.bind(this);
     grid.addEventListener("keydown", this.onKeyDown);
 }
@@ -104,7 +106,46 @@ public get textArea() {
         return this.txtArea;
     }
 ```
+<!-- end: WebComponents -->
 
+<!-- React -->
+```ts
+public webGridPasteFromExcel(e: CustomEvent<any>) {
+    const grid = e.target as IgrGrid;
+    this.onKeyDown = this.onKeyDown.bind(this);
+    grid.addEventListener("keydown", this.onKeyDown);
+}
+public onKeyDown(eventArgs: any): void {
+    const ctrl = eventArgs.ctrlKey;
+    const key = eventArgs.keyCode;
+    // Ctrl-V || Shift-Ins || Cmd-V
+    if ((ctrl || eventArgs.metaKey) && key === 86 || eventArgs.shiftKey && key === 45) {
+        this.textArea.focus();
+    }
+}
+
+private txtArea: any;
+
+public get textArea() {
+    if(!this.txtArea) {
+            const div = document.createElement("div");
+            const divStyle = div.style;
+            divStyle.position = "fixed";
+            document.body.appendChild(div);
+            this.txtArea = document.createElement("textarea");
+            const style = this.txtArea.style;
+            style.opacity = "0";
+            style.height = "0px";
+            style.width = "0px";
+            style.overflow = "hidden";
+            div.appendChild(this.txtArea);
+
+            this.txtArea.addEventListener("paste", (eventArgs: any) => { this.onPaste(eventArgs); });
+        }
+        return this.txtArea;
+    }
+```
+<!-- end:React -->
 ```razor
 <IgbGrid  AutoGenerate="false" Data="InvoicesData" RenderedScript="WebGridPasteFromExcel" @ref="grid" Id="grid" PrimaryKey="OrderID">
     <IgbGridToolbar>
@@ -242,7 +283,8 @@ function processData(data) {
 }
 ```
 
-貼り付けたデータは、新しいレコードとして追加したり、ユーザーの選択に基づいて既存のレコードを更新するために使用したりすることができます。addRecords と updateRecords メソッドを参照してください。
+貼り付けたデータは、新しいレコードとして追加したり、ユーザーの選択に基づいて既存のレコードを更新するために使用したりすることができます。
+addRecords と updateRecords メソッドを参照してください。
 
 ```ts
 public addRecords(processedData: any[]) {

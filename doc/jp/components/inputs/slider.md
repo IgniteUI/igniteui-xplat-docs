@@ -45,13 +45,11 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 npm install igniteui-react
 ```
 
-次に、以下のように、`Slider` および `RangeSlider` とそれぞれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、`Slider` および `RangeSlider` と必要な CSS をインポートする必要があります:
 
 ```tsx
-import { IgrSliderModule, IgrSlider, IgrRangeSlider, IgrRangeSliderModule } from 'igniteui-react';
+import { IgrSlider, IgrRangeSlider } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrSliderModule.register();
-IgrRangeSliderModule.register();
 ```
 <!-- end: React -->
 
@@ -78,8 +76,8 @@ builder.Services.AddIgniteUIBlazor(
 ```
 
 ```tsx
- <IgrSlider value="40" />
-    <span className="slider-label"></span>
+<IgrSlider value="40" />
+  <span className="slider-label"></span>
 <IgrRangeSlider lower="20" upper="70"></IgrRangeSlider>
 ```
 
@@ -92,7 +90,7 @@ builder.Services.AddIgniteUIBlazor(
 
 スライダーと範囲スライダー コンポーネントの主な違いは、スライダー コンポーネントには単一のつまみがあり、範囲スライダー コンポーネントには 2 つのつまみがあることです。スライダー コンポーネントの単一のつまみで、その `Value` プロパティが表示されます。範囲スライダー コンポーネントの 2 つのつまみは、`Lower` 値と `Upper` 値のプロパティを表示します。
 
-いずれかの値が変更されると、両方のスライダーが 2 つのイベントを発行します。`Input` イベントは、キーボードまたはドラッグ操作を使用して値が変更されるたびに発行され、`igcChange` イベントは、値の変更がドラッグエンドまたはキーボード操作でコミットされたときに発行されます。
+いずれかの値が変更されると、両方のスライダーが 2 つのイベントを発行します。`Input` イベントは、キーボードまたはドラッグ操作を使用して値が変更されるたびに発行され、`Change` イベントは、値の変更がドラッグエンドまたはキーボード操作でコミットされたときに発行されます。
 
 `sample="/inputs/slider/value", height="250", alt="{Platform} Slider Value の例"`
 
