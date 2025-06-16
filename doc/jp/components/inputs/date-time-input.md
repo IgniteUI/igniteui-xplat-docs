@@ -42,12 +42,11 @@ defineComponents(IgcDateTimeInput);
 npm install igniteui-react
 ```
 
-次に、以下のように、`DateTimeInput` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、`DateTimeInput` と必要な CSS をインポートする必要があります:
 
 ```tsx
-import { IgrDateTimeInput, IgrDateTimeInputModule } from 'igniteui-react';
+import { IgrDateTimeInput } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrDateTimeInputModule.register();
 ```
 
 <!-- end: React -->
@@ -81,10 +80,7 @@ input.value = date;
 ```
 
 ```tsx
-public dateTimeInputRef(input: IgrDateTimeInput) {
-    if (!input) { return; }
-    input.value = new Date();
-}
+<IgrDateTimeInput value={someValue}></IgrDateTimeInput>
 ```
 
 ```razor
@@ -106,7 +102,7 @@ public dateTimeInputRef(input: IgrDateTimeInput) {
 時刻のみの文字列は通常、`ECMA` 仕様では定義されていませんが、時刻のみのソリューションを必要とするシナリオにディレクティブを統合できるようにするために、24 時間形式 (`HH:mm:ss`) をサポートしています。12 時間形式はサポートされていません。
 
 ##### 完全な ISO 文字列
-完全な ISO 文字列がバインドされている場合、ディレクティブは、[Date.parse](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#date_time_string_format) に必要なすべての要素が提供されている場合にのみそれを解析します。
+完全な `ISO` 文字列がバインドされている場合、ディレクティブは、[Date.parse](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#date_time_string_format) に必要なすべての要素が提供されている場合にのみそれを解析します。
 
 `InvalidDate` を含むすべての falsy の値は、`null` として解析されます。不完全な日付のみ、時間のみ、または完全な `ISO` 文字列は、`InvalidDate` として解析されます。
 
@@ -160,7 +156,7 @@ public dateTimeInputRef(input: IgrDateTimeInput) {
 ```
 
 ```tsx
-<IgrDateTimeInput ref={this.dateTimeInputRef} inputFormat="dd-MM-yy" displayFormat="medium"></IgrDateTimeInput>
+<IgrDateTimeInput inputFormat="dd-MM-yy" displayFormat="medium"></IgrDateTimeInput>
 ```
 
 ```razor
@@ -241,14 +237,7 @@ input.min = new Date(2021, 0, 1);
 ```
 
 ```tsx
-public dateTimeInputRef(input: IgrDateTimeInput) {
-    if (!input) { return; }
-    input.min = new Date(2021, 0, 1);
-}
-```
-
-```tsx
- <IgrDateTimeInput ref={this.dateTimeInputRef} max={new Date(2024, 6, 25)}></IgrDateTimeInput>
+ <IgrDateTimeInput min={minDate} max={maxDate}></IgrDateTimeInput>
 ```
 
 ```razor
