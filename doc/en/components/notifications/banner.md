@@ -243,7 +243,12 @@ The `Banner` exposes the `actions` slot for templating the banner buttons. This 
 
 ### Binding to events
 
+<!-- WebComponents, Blazor, Angular -->
 The banner component emits the `igcClosing` and `igcClosed` events when being closed. The `igcClosing` event is cancelable - it uses the [`CustomEvent`](https://developer.mozilla.org/docs/Web/API/CustomEvent) interface and the emitted object has its `cancelable` property set to **true**. If we cancel the `igcClosing` event, the corresponding end action and event will not be triggered - the banner will not be closed and the `igcClosed` event will not be emitted.
+<!-- end: WebComponents, Blazor, Angular -->
+<!-- React -->
+The banner component emits the `onClosing` and `onClosed` events when being closed. The `onClosing` event is cancelable - it uses the [`CustomEvent`](https://developer.mozilla.org/docs/Web/API/CustomEvent) interface and the emitted object has its `cancelable` property set to **true**. If we cancel the `onClosing` event, the corresponding end action and event will not be triggered - the banner will not be closed and the `onCLosed` event will not be emitted.
+<!-- end: React -->
 
 To cancel the closing event, call the [`preventDefault`](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) method.
 
@@ -261,17 +266,9 @@ banner.addEventListener('igcClosing', (event) => {
 ```
 
 ```tsx
-<IgrBanner ref={bannerRef}>
+<IgrBanner onClosing={(event) => event.preventDefault()}>
     ...
 </IgrBanner>
-
-const bannerRef = useRef<IgrBanner>(null);
-
-useEffect(() => {
-    bannerRef.current.addEventListener('igcClosing', (event) => {
-        event.preventDefault();
-    });
-}, [])
 ```
 
 ```razor
@@ -421,22 +418,6 @@ public refreshBanner() {
 ```
 
 ```tsx
-<IgrNavbar>
-    <h1>Gallery</h1>
-    <IgrIcon ref={iconRef} name={iconName} slot="end" onClick={refreshBanner}></IgrIcon>
-</IgrNavbar>
-
-<IgrBanner ref={bannerRef}>
-    ...
-    <div slot="actions">
-        ...
-        <IgrButton variant="flat" onClick={refreshBanner}>
-            <IgrRipple />
-            <span>Turn On Wifi</span>
-        </IgrButton>
-    </div>
-</IgrBanner>
-
 const bannerRef = useRef<IgrBanner>(null);
 const iconRef = useRef<IgrIcon>(null);
 
@@ -454,6 +435,26 @@ const refreshBanner = () => {
         bannerRef.current.show();
     }
 }
+
+return(
+    <>
+        <IgrNavbar>
+            <h1>Gallery</h1>
+            <IgrIcon ref={iconRef} name={iconName} slot="end" onClick={refreshBanner}></IgrIcon>
+        </IgrNavbar>
+
+        <IgrBanner ref={bannerRef}>
+            ...
+            <div slot="actions">
+                ...
+                <IgrButton variant="flat" onClick={refreshBanner}>
+                    <IgrRipple />
+                    <span>Turn On Wifi</span>
+                </IgrButton>
+            </div>
+        </IgrBanner>
+    </>
+);
 ```
 
 ```razor
