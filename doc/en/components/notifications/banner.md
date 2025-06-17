@@ -243,12 +243,7 @@ The `Banner` exposes the `actions` slot for templating the banner buttons. This 
 
 ### Binding to events
 
-<!-- WebComponents, Blazor, Angular -->
-The banner component emits the `igcClosing` and `igcClosed` events when being closed. The `igcClosing` event is cancelable - it uses the [`CustomEvent`](https://developer.mozilla.org/docs/Web/API/CustomEvent) interface and the emitted object has its `cancelable` property set to **true**. If we cancel the `igcClosing` event, the corresponding end action and event will not be triggered - the banner will not be closed and the `igcClosed` event will not be emitted.
-<!-- end: WebComponents, Blazor, Angular -->
-<!-- React -->
-The banner component emits the `onClosing` and `onClosed` events when being closed. The `onClosing` event is cancelable - it uses the [`CustomEvent`](https://developer.mozilla.org/docs/Web/API/CustomEvent) interface and the emitted object has its `cancelable` property set to **true**. If we cancel the `onClosing` event, the corresponding end action and event will not be triggered - the banner will not be closed and the `onCLosed` event will not be emitted.
-<!-- end: React -->
+The banner component emits the `Closing` and `Closed` events when being closed. The `Closing` event is cancelable - it uses the [`CustomEvent`](https://developer.mozilla.org/docs/Web/API/CustomEvent) interface and the emitted object has its `cancelable` property set to **true**. If we cancel the `Closing` event, the corresponding end action and event will not be triggered - the banner will not be closed and the `Closed` event will not be emitted.
 
 To cancel the closing event, call the [`preventDefault`](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) method.
 
