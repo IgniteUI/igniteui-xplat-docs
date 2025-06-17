@@ -87,8 +87,8 @@ igRegisterScript("DetailTemplate", (ctx) => {
 ```
 
 ```ts
-const masterDetailTemplate = ({dataContext}:{dataContext: IgrGridMasterDetailContext}) => {
-    const data = dataContext.implicit;
+const masterDetailTemplate = (args: IgrGridMasterDetailContext) => {
+    const data = args.implicit;
     return (
         <div className="contact-container">
             <span><strong>Name:</strong> {data.ContactName}</span> <br/>
@@ -138,7 +138,6 @@ const masterDetailTemplate = ({dataContext}:{dataContext: IgrGridMasterDetailCon
 |既知の制限| 説明|
 | --- | --- |
 | カスタム詳細テンプレート内のタブ ナビゲーションは、次のフォーカスされた要素が表示ビュー ポート以外にある場合、マスター グリッドのスクロール位置を更新しない場合があります。| カスタム詳細テンプレート内のタブ ナビゲーションは、ブラウザーに残されています。 |
-| `<igc-column>` 定義を含む詳細ビュー内のグリッドをテンプレート化する際に親グリッドもそれらの列をレンダリングします。 | これは、ネストされたグリッドで autoGenerate=true を使用して回避できます。これらの列の要素を変更する必要がある場合、`ColumnInit` イベントを使用できます。|
 | 詳細テンプレートは Excel にエクスポートされません。| 詳細テンプレートにはあらゆる種類のコンテンツが含まれているため、Excel にエクスポートすることはできません。|
 | 検索機能は、詳細テンプレートの要素をハイライト表示しません。 | |
 

@@ -87,8 +87,8 @@ igRegisterScript("DetailTemplate", (ctx) => {
 ```
 
 ```ts
-const masterDetailTemplate = ({dataContext}:{dataContext: IgrGridMasterDetailContext}) => {
-    const data = dataContext.implicit;
+const masterDetailTemplate = (args: IgrGridMasterDetailContext) => {
+    const data = args.implicit;
     return (
         <div className="contact-container">
             <span><strong>Name:</strong> {data.ContactName}</span> <br/>
@@ -138,7 +138,6 @@ Additional API methods for controlling the expansion states are also exposed:
 |Known Limitations| Description|
 | --- | --- |
 | Tab navigation inside the custom detail template may not update the master grid scroll position in case the next focused element is outside the visible view port.| Tab navigation inside the custom detail template is left up to the browser. |
-| When templating a grid inside the details view that has a `<igc-column>` definitions, the parent grid will also render those columns.| This can be avoided using autoGenerate=true for the nested grid. In case some aspect of those columns need to be modified the `ColumnInit` event can be used. |
 | Details template will not be exported to Excel.| As the details template can contain any type of content we cannot export it to excel out of the box.|
 | The search feature will not highlight elements from the details template. | |
 

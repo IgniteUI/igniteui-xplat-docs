@@ -17,7 +17,7 @@ _language: ja
 
 
 
-このサンプルでは、`Switch` コンポーネントを使用するため、コンボと一緒に登録する必要があります。
+このサンプルでは、`Switch` コンポーネントを使用するため、コンボと一緒にインポートする必要があります。
 
 <!-- WebComponents -->
 ```ts
@@ -47,33 +47,46 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 <!-- React -->
 
 ```tsx
-import { IgrComboModule, IgrCombo, IgrSwitchModule, IgrSwitch  } from 'igniteui-react';
+import { IgrCombo, IgrSwitch  } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrComboModule.register();
-IgrSwitchModule.register();
 ```
 
 <!-- end: React -->
 
-次に、スイッチを切り替えてコンボ機能を制御できるように、すべてのスイッチ コンポーネントにイベント ハンドラーを追加します。
+次に、React の useState フックを使用して、スイッチの状態変化に応じて更新される変数を定義します。これにより、状態が追跡され、コンボボックスの入力に反映されます。
 
 ```tsx
-const comboRef = useRef<IgrCombo>(null);
-const switchCaseSensitiveRef = useRef<IgrSwitch>(null);
+const [disableFiltering, setDisableFiltering] = useState(false);
+const [caseSensitiveIcon, setCaseSensitiveIcon] = useState(false);
+const [groupingEnabled, setGroupingEnabled] = useState(false);
+const [comboDisabled, setComboDisabled] = useState(false);
 
-const disableFiltering = (switchComponent: IgrSwitch) => {
-    comboRef.current.disableFiltering =
-    switchCaseSensitiveRef.current.disabled = switchComponent.checked;
-};
+<IgrCombo
+    valueKey="id"
+    displayKey="name"
+    label="Cities"
+    placeholder="Pick a city"
+    placeholderSearch="Search for a city"
+    data={Cities}
+    disableFiltering={disableFiltering}
+    caseSensitiveIcon={caseSensitiveIcon}
+    groupKey={groupingEnabled ? "country" : undefined}
+    disabled={comboDisabled}>
+</IgrCombo>
 
-const showCaseSensitiveIcon = (switchComponent: IgrSwitch) => {
-    comboRef.current.caseSensitiveIcon = switchComponent.checked;
-};
 
-const disableCombo = (switchComponent: IgrSwitch) => {
-    comboRef.current.disabled = switchComponent.checked;
-};
+<IgrSwitch checked={disableFiltering} onChange={e => setDisableFiltering(e.detail.checked)}>
+    <span>Disable Filtering</span>
+</IgrSwitch>
+<IgrSwitch checked={caseSensitiveIcon} onChange={e => setCaseSensitiveIcon(e.detail.checked)}>
+    <span>Show Case-sensitive Icon</span>
+</IgrSwitch>
+<IgrSwitch checked={groupingEnabled} onChange={e => setGroupingEnabled(e.detail.checked)}>
+    <span>Enable Grouping</span>
+</IgrSwitch>
+<IgrSwitch checked={comboDisabled} onChange={e => setComboDisabled(e.detail.checked)}>
+    <span>Disable Combo</span>
+</IgrSwitch>
 ```
 
 ```ts
@@ -158,9 +171,7 @@ switchGroup.addEventListener("igcChange", () => {
 ```
 
 ```tsx
-const enableGrouping = (switchComponent: IgrSwitch) => {
-    comboRef.current.groupKey = switchComponent.checked ? "country" : undefined;
-};
+groupKey={groupingEnabled ? "country" : undefined}
 ```
 
 ## 機能
@@ -180,7 +191,7 @@ const enableGrouping = (switchComponent: IgrSwitch) => {
 ```
 
 ```tsx
-<IgrCombo disableFiltering="true" caseSensitiveIcon="true"></IgrCombo>
+<IgrCombo disableFiltering={true} caseSensitiveIcon={true}></IgrCombo>
 ```
 
 #### フィルタリング オプション
@@ -207,7 +218,7 @@ const options = {
     caseSensitive: true
 };
 
-comboRef.current.filteringOptions = options;
+<IgrCombo filteringOptions={options} />
 ```
 <!-- end: React -->
 
@@ -291,7 +302,7 @@ comboRef.current.filteringOptions = options;
 ```
 
 ```tsx
-<IgrCombo autofocus="true" />
+<IgrCombo autofocus={true} />
 ```
 
 ### 検索入力のフォーカス
@@ -307,7 +318,7 @@ comboRef.current.filteringOptions = options;
 ```
 
 ```tsx
-<IgrCombo autofocusList="true" />
+<IgrCombo autofocusList={true} />
 ```
 
 ### 必須
@@ -323,7 +334,7 @@ required プロパティを設定することで、コンボボックスを必�
 ```
 
 ```tsx
-<IgrCombo required="true" />
+<IgrCombo required={true} />
 ```
 
 ### コンボボックスを無効にする
@@ -339,7 +350,7 @@ required プロパティを設定することで、コンボボックスを必�
 ```
 
 ```tsx
-<IgrCombo disabled="true" />
+<IgrCombo disabled={true} />
 ```
 
 <!-- WebComponents -->

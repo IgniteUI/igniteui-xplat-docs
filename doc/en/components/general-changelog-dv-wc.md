@@ -10,7 +10,7 @@ namespace: Infragistics.Controls
 
 All notable changes for each version of {ProductName} are documented on this page.
 
-## **25.1**
+## **{PackageVerLatest}**
 
 ### {PackageCharts} (Charts)
 
@@ -37,7 +37,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 **Breaking Changes**
 
-- The `IgcDataGrid` now exists as part of the igniteui-webcomponents-data-grids package.
+- The `IgcDataGrid` & `IgcMultiColumnComboBox` are now part of the igniteui-webcomponents-data-grids package.
 
 ### Enhancements
 
@@ -52,6 +52,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
+|25997|IgcDataGrid|Summaries are only showing for first grouped child row|
 |37023|IgcDataChart|Tooltips are cut-off/offscreen if overflow hidden is set.
 |37244|Excel|Custom Data Validation is not working.
 |37685|IgcSpreadsheet|Poor rendering of numbers formatted with Arial font.

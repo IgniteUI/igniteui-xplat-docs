@@ -41,16 +41,15 @@ npm install igniteui-react
 
 You will then need to import the `MaskInput`, its necessary CSS, and register its module, like so:
 ```tsx
-import { IgrMaskInput, IgrMaskInputModule } from 'igniteui-react';
+import { IgrMaskInput } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrMaskInputModule.register();
 ```
 <!-- end: React -->
 
 ```tsx
 <IgrMaskInput mask="00000">
     <span slot="prefix">
-        <IgrIcon ref={this.iconLocationRef} name="location" collection="material"></IgrIcon>
+        <IgrIcon ref={iconLocationRef} name="location" collection="material"></IgrIcon>
     </span>
     <span slot="helper-text">ZIP Code</span>
 </IgrMaskInput>
@@ -92,7 +91,7 @@ In the example below, we will apply a mask for a phone number with an extension 
 ```tsx
 <IgrMaskInput mask="(####) 00-00-00 Ext. 9999">
     <span slot="prefix">
-        <IgrIcon ref={this.iconPhoneRef} name="phone" collection="material"></IgrIcon>
+        <IgrIcon ref={iconPhoneRef} name="phone" collection="material"></IgrIcon>
     </span>
     <span slot="helper-text">Phone number</span>
 </IgrMaskInput>

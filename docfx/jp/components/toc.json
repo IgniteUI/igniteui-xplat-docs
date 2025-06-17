@@ -1252,7 +1252,7 @@
         {
           "name": "ダッシュボードでのチャート作成",
           "href": "dashboard-tile.md",
-          "status": "NEW"
+          "status": "PREVIEW"
         },
         {
           "name": "チャートのデータ集計",
@@ -1261,7 +1261,7 @@
         {
           "name": "チャートのデータ フィルタリング",
           "href": "charts/features/chart-data-filtering.md",
-          "status": "NEW"
+          "status": ""
         },
         {
           "name": "チャートのデータ凡例",
@@ -1276,12 +1276,12 @@
         {
           "name": "チャートのデータの選択",
           "href": "charts/features/chart-data-selection.md",
-          "status": "NEW"
+          "status": ""
         },
         {
           "name": "チャートの強調表示フィルター",
           "href": "charts/features/chart-highlight-filter.md",
-          "status": "UPDATED"
+          "status": ""
         },
         {
           "name": "チャートのハイライト表示",
@@ -1321,7 +1321,7 @@
         {
           "name": "チャート トレンドライン",
           "href": "charts/features/chart-trendlines.md",
-          "status": ""
+          "status": "UPDATED"
         }
       ]
   },
@@ -1509,7 +1509,7 @@
     "exclude": ["Angular"],
     "name": "ドック マネージャー",
     "href": "layouts/dock-manager.md",
-    "status": "UPDATED",
+    "status": "",
     "items": [
       {
         "exclude": ["Angular"],
@@ -1638,17 +1638,17 @@
   {
     "name": "ブレッドグラフ",
     "href": "bullet-graph.md",
-    "status": "UPDATED"
+    "status": ""
   },
   {
     "name": "リニア ゲージ",
     "href": "linear-gauge.md",
-    "status": "UPDATED"
+    "status": ""
   },
   {
     "name": "ラジアル ゲージ",
     "href": "radial-gauge.md",
-    "status": "UPDATED"
+    "status": ""
   },
   {
     "exclude": ["Angular"],
@@ -1785,7 +1785,7 @@
     "href": "inputs/ripple.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "Blazor"],
     "name": "ツールチップ",
     "href": "inputs/tooltip.md",
     "status": "new"

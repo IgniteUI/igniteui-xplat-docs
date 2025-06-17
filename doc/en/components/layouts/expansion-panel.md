@@ -47,10 +47,8 @@ npm install igniteui-react
 You will then need to import the `ExpansionPanel`, its necessary CSS, and register its module, like so:
 
 ```tsx
-import { IgrExpansionPanel, IgrExpansionPanelModule } from 'igniteui-react';
+import { IgrExpansionPanel } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrExpansionPanelModule.register();
 ```
 
 <!-- end: React -->
@@ -76,10 +74,12 @@ The simplest way to start using the `ExpansionPanel` is as follows:
 <IgrExpansionPanel>
     <h1 slot="title">Golden Retriever</h1>
     <h3 slot="subtitle">Medium-large gun dog</h3>
-    <span>The Golden Retriever is a medium-large gun dog that retrieves shot waterfowl, such as ducks
+    <span>
+        The Golden Retriever is a medium-large gun dog that retrieves shot waterfowl, such as ducks
         and upland game birds, during hunting and shooting parties.[3] The name retriever refers to the breeds ability
         to retrieve shot game undamaged due to their soft mouth. Golden retrievers have an instinctive love of water, and
-        are easy to train to basic or advanced obedience standards.</span>
+        are easy to train to basic or advanced obedience standards.
+    </span>
 </IgrExpansionPanel>
 ```
 

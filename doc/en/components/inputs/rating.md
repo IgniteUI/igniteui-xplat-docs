@@ -62,9 +62,8 @@ For a complete introduction to the {ProductName}, read the [*Getting Started*](.
 
 <!-- React -->
 ```tsx
-import { IgrRatingModule, IgrRating } from 'igniteui-react';
+import { IgrRating } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrRatingModule.register();
 ```
 <!-- end: React -->
 
@@ -119,21 +118,21 @@ The `Rating` component allows you to use custom symbols in place of the default 
 
 <!-- React -->
 ```tsx
-  <IgrRating label="Rate Experience" step=".5" size="large" hoverPreview="true">
-    <IgrRatingSymbol key="0">
-        <IgrIcon ref={this.iconRef} name='heart' collection="material" key="heart0"></IgrIcon>
+  <IgrRating className="size-large" label="Rate Experience" step={.5} hoverPreview={true}>
+    <IgrRatingSymbol>
+        <IgrIcon name='heart' collection="material"></IgrIcon>
     </IgrRatingSymbol>
-    <IgrRatingSymbol key="1">
-        <IgrIcon  name='heart' collection="material" key="heart1"></IgrIcon>                           
+    <IgrRatingSymbol>
+        <IgrIcon  name='heart' collection="material"></IgrIcon>                           
     </IgrRatingSymbol>
-    <IgrRatingSymbol key="2">
-      	<IgrIcon  name='heart' collection="material" key="heart2"></IgrIcon>                           
+    <IgrRatingSymbol>
+      	<IgrIcon  name='heart' collection="material"></IgrIcon>                           
     </IgrRatingSymbol>
-    <IgrRatingSymbol key="3">
-       	<IgrIcon  name='heart' collection="material" key="heart3"></IgrIcon>                           
+    <IgrRatingSymbol>
+       	<IgrIcon  name='heart' collection="material"></IgrIcon>                           
     </IgrRatingSymbol>
-    <IgrRatingSymbol key="4">
-       	<IgrIcon  name='heart' collection="material" key="heart4"></IgrIcon>                           
+    <IgrRatingSymbol>
+       	<IgrIcon  name='heart' collection="material"></IgrIcon>                           
     </IgrRatingSymbol>                        
 </IgrRating> 
 ```
@@ -173,27 +172,27 @@ The {ProductName} Rating component has a single selection mode that allows users
 
 <!-- React -->
 ```tsx
-  <IgrRating single="true">
-    <IgrRatingSymbol key="0">                           
-	<div key="div0">😣</div>	
-	<div key="empty-div0" slot="empty">😣</div>
-    </IgrRatingSymbol>
-    <IgrRatingSymbol key="1">                           
- 	<div key="div1">😣</div>
-        <div key="empty-div1" slot="empty">😣</div>
-    </IgrRatingSymbol>
-    <IgrRatingSymbol key="2">                           
-        <div key="div2">😣</div>
-        <div key="empty-div2" slot="empty">😣</div>
-    </IgrRatingSymbol>
-    <IgrRatingSymbol key="3">                           
-        <div key="div3">😣</div>
-        <div key="empty-div3" slot="empty">😣</div>
-    </IgrRatingSymbol>
-    <IgrRatingSymbol key="4">                           
-        <div key="div4">😣</div>
-        <div key="empty-div4" slot="empty">😣</div>
-    </IgrRatingSymbol>                         
+<IgrRating single={true}>
+  <IgrRatingSymbol>                           
+      <div>😣</div>	
+      <div slot="empty">😣</div>
+  </IgrRatingSymbol>
+  <IgrRatingSymbol>                           
+      <div>😣</div>
+      <div slot="empty">😣</div>
+  </IgrRatingSymbol>
+  <IgrRatingSymbol>                           
+      <div>😣</div>
+      <div slot="empty">😣</div>
+  </IgrRatingSymbol>
+  <IgrRatingSymbol>                           
+      <div>😣</div>
+      <div slot="empty">😣</div>
+  </IgrRatingSymbol>
+  <IgrRatingSymbol>                           
+      <div>😣</div>
+      <div slot="empty">😣</div>
+  </IgrRatingSymbol>                         
 </IgrRating>
 ```
 <!-- end: React -->
@@ -226,9 +225,9 @@ The {ProductName} Rating component allows users to use different icons/elements 
 
 <!-- React -->
 ```tsx
-<IgrRatingSymbol key="0">
-    <div key="div0"><IgrIcon name='bandage' collection="material" key="default0"></IgrIcon></div>
-    <div key="empty-div0" slot='empty'><IgrIcon name='bacteria' collection="material" key="empty0"></IgrIcon></div> 
+<IgrRatingSymbol>
+    <div><IgrIcon name='bandage' collection="material"></IgrIcon></div>
+    <div slot='empty'><IgrIcon name='bacteria' collection="material"></IgrIcon></div> 
 </IgrRatingSymbol> 
 ```
 <!-- end: React -->

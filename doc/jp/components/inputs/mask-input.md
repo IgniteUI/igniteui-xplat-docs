@@ -42,16 +42,15 @@ npm install igniteui-react
 
 次に、以下のように、`MaskInput` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 ```tsx
-import { IgrMaskInput, IgrMaskInputModule } from 'igniteui-react';
+import { IgrMaskInput } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrMaskInputModule.register();
 ```
 <!-- end: React -->
 
 ```tsx
 <IgrMaskInput mask="00000">
     <span slot="prefix">
-        <IgrIcon ref={this.iconLocationRef} name="location" collection="material"></IgrIcon>
+        <IgrIcon ref={iconLocationRef} name="location" collection="material"></IgrIcon>
     </span>
     <span slot="helper-text">ZIP Code</span>
 </IgrMaskInput>
@@ -93,7 +92,7 @@ IgrMaskInputModule.register();
 ```tsx
 <IgrMaskInput mask="(####) 00-00-00 Ext. 9999">
     <span slot="prefix">
-        <IgrIcon ref={this.iconPhoneRef} name="phone" collection="material"></IgrIcon>
+        <IgrIcon ref={iconPhoneRef} name="phone" collection="material"></IgrIcon>
     </span>
     <span slot="helper-text">Phone number</span>
 </IgrMaskInput>

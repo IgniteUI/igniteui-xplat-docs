@@ -55,10 +55,8 @@ npm install igniteui-react
 You will then need to import the `Icon`, its necessary CSS, and register its module, like so:
 
 ```tsx
-import { IgrIcon, IgrIconModule } from 'igniteui-react';
+import { IgrIcon } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrIconModule.register();
 ```
 
 <!-- end: React -->
@@ -132,16 +130,11 @@ To register an image as an icon, all you need to do is call one of the 2 "regist
 The `RegisterIcon` method allows you to register an SVG image as an icon from an external file:
 
 ```tsx
-
-<IgrIcon ref={this.iconRef} name="search" collection="material" />
-
-public iconRef(icon: IgrIcon) {
-    if (!icon) {
-        return;
-    }
-
-    icon.registerIcon("search", "https://unpkg.com/material-design-icons@3.0.1/action/svg/production/ic_build_24px.svg", "material");
+constructor() {
+    registerIconFromText("search", "https://unpkg.com/material-design-icons@3.0.1/action/svg/production/ic_build_24px.svg", "material");
 }
+
+<IgrIcon name="search" collection="material" />
 ```
 
 <!-- end: React -->
@@ -164,6 +157,7 @@ IgbIcon IconName="search" Collection="material" />
 
 The second method for registering icons is by passing an SVG string to the `RegisterIconFromText` method:
 
+<!-- Blazor, WebComponents -->
 ```ts
 const searchIcon =
   '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>';
@@ -188,29 +182,24 @@ registerIconFromText("search", searchIcon, "material");
   }
 }
 ```
-
+<!--end: Blazor, WebComponents -->
 ```tsx
+const searchIcon =
+  '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>';
 
-<IgrIcon ref={this.iconRef} name="search" collection="material" />
-
-public iconRef(icon: IgrIcon) {
-    if (!icon) {
-        return;
-    }
-
-    const searchIcon =
-      '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>';
-
-    icon.registerIconFromText("search", searchIcon, "material");
+constructor() {
+    registerIconFromText("search", searchIcon, "material");
 }
+
+<IgrIcon name="search" collection="material" />
 ```
 
 Then you'd use it in the same way as described in the component sample above.
 
 ### Size
-
 The icon component supports three icon sizes - `small`, `medium`(default), and `large`. In order to change the size of the icon, you can utilize the `--ig-size` CSS variable as follows:
 
+<!-- Blazor, WebComponents -->
 ```css
 igc-icon {
   --ig-size: var(--ig-size-large);
@@ -220,10 +209,28 @@ igc-icon {
 ```razor
 <IgbIcon Size="@SizableComponentSize.Large">
 ```
-
+<!-- end: Blazor, WebComponents -->
+<!-- React -->
 ```tsx
-<IgrIcon size="large" />
+<IgrIcon className="size-small" />
+<IgrIcon className="size-medium" />
+<IgrIcon className="size-large" />
 ```
+
+```css
+.size-small {
+    --ig-size: var(--ig-size-small);
+}
+
+.size-medium {
+    --ig-size: var(--ig-size-medium);
+}
+
+.size-large {
+    --ig-size: var(--ig-size-large);
+}
+```
+<!-- end: React -->
 
 `sample="/layouts/icon/sizing", height="60", alt="{Platform} Icon Sizing"`
 

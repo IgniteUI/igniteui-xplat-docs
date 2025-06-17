@@ -49,10 +49,8 @@ npm install igniteui-react
 You will then need to import the `Radio` and the `RadioGroup`, its necessary CSS, and register its module, like so:
 
 ```tsx
-import { IgrRadioModule, IgrRadio, IgrRadioGroupComponent, IgrRadioGroupModule } from 'igniteui-react';
+import { IgrRadio, IgrRadioGroupComponent } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrRadioModule.register();
-IgrRadioGroupModule.register();
 ```
 <!-- end: React -->
 
@@ -147,7 +145,7 @@ The `Radio` can also be labelled by elements external to it. In this case the us
 
 ```tsx
 <span id="radio-label">Label</span>
-<IgrRadio ariaLabelledby="radio-label"></IgrRadio>
+<IgrRadio aria-labelledby="radio-label"></IgrRadio>
 ```
 
 ```html
@@ -171,7 +169,7 @@ You can use the `checked` attribute to toggle on the radio.
 ```tsx
 <IgrRadioGroup>
   <IgrRadio value="apple"><span>Apple</span></IgrRadio>
-  <IgrRadio value="banana" checked="true"><span>Banana</span></IgrRadio>
+  <IgrRadio value="banana" checked={true}><span>Banana</span></IgrRadio>
   <IgrRadio value="Mango"><span>Mango</span></IgrRadio>
   <IgrRadio value="orange"><span>Orange</span></IgrRadio>
 </IgrRadioGroup>
@@ -204,7 +202,7 @@ You can use the `checked` attribute to toggle on the radio.
 You can use the `invalid` attribute to mark the radio as invalid.
 
 ```tsx
-<IgrRadio invalid="true"></IgrRadio>
+<IgrRadio invalid={true}></IgrRadio>
 ```
 
 ```html
@@ -226,7 +224,7 @@ You can use the `disabled` attribute to disable the radio.
 ```tsx
 <IgrRadioGroup>
   <IgrRadio value="apple"><span>Apple</span></IgrRadio>
-  <IgrRadio value="banana" disabled="true"><span>Banana</span></IgrRadio>
+  <IgrRadio value="banana" disabled={true}><span>Banana</span></IgrRadio>
   <IgrRadio value="Mango"><span>Mango</span></IgrRadio>
   <IgrRadio value="orange"><span>Orange</span></IgrRadio>
 </IgrRadioGroup>
@@ -261,7 +259,7 @@ The `RadioGroup` allows you to easily change the placement directionality of the
 ```tsx
 <IgrRadioGroup alignment="horizontal">
   <IgrRadio value="apple"><span>Apple</span></IgrRadio>
-  <IgrRadio value="banana" disabled="true"><span>Banana</span></IgrRadio>
+  <IgrRadio value="banana" disabled={true}><span>Banana</span></IgrRadio>
   <IgrRadio value="Mango"><span>Mango</span></IgrRadio>
   <IgrRadio value="orange"><span>Orange</span></IgrRadio>
 </IgrRadioGroup>
