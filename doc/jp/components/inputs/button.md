@@ -43,12 +43,11 @@ defineComponents(IgcButtonComponent);
 npm install igniteui-react
 ```
 
-次に、以下のように、`Button` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、`Button` と必要な CSS をインポートする必要があります:
 
 ```tsx
-import { IgrButtonModule, IgrButton } from 'igniteui-react';
+import { IgrButton } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrButtonModule.register();
 ```
 <!-- end: React -->
 
@@ -222,34 +221,40 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 ```
 
 ```tsx
-import { IgrButton, IgrRadio, IgrRadioGroup, IgrButtonModule, IgrRadioModule, IgrRadioGroupModule } from 'igniteui-react';
+import { IgrButton, IgrRadio, IgrRadioGroup } from 'igniteui-react';
 
-<IgrRadioGroup alignment="horizontal" style={{display: 'flex', margin: '0 auto', width: '15%'}}>
-    <IgrRadio name="size" value="small" labelPosition="after" checked={true} change={this.onRadioChange}>
+const [size, setSize] = useState("small");
+
+const onRadioChange = (e: IgrRadioChangeEventArgs) => {
+    setSize(e.detail.value);
+};
+
+<IgrRadioGroup alignment="horizontal" style={{ display: "flex", margin: "0 auto", width: "15%" }}>
+    <IgrRadio name="size" value="small" labelPosition="after" checked={size === "small"} onChange={onRadioChange}>
         <span>Small</span>
     </IgrRadio>
-    <IgrRadio name="size" value="medium" labelPosition="after" change={this.onRadioChange}>
+    <IgrRadio name="size" value="medium" labelPosition="after" onChange={onRadioChange}>
         <span>Medium</span>
     </IgrRadio>
-    <IgrRadio name="size" value="large" labelPosition="after" change={this.onRadioChange}>
+    <IgrRadio name="size" value="large" labelPosition="after" onChange={onRadioChange}>
         <span>Large</span>
     </IgrRadio>
 </IgrRadioGroup>
 
-<div>
-    <IgrButton ref={this.flatButtonRef}  className="flat-btn" variant="flat"><span>Flat</span></IgrButton>
-    <IgrButton ref={this.containedButtonRef}  className="contained-btn" variant="contained"><span>Contained</span></IgrButton>
-    <IgrButton ref={this.outlinedButtonRef}  className="outlined-btn" variant="outlined"><span>Outlined</span></IgrButton>
-    <IgrButton ref={this.fabButtonRef}  className="fab-btn" variant="fab"><span>Like</span></IgrButton>
+<div className="button-container">
+    <IgrButton className={"size-" + size} variant="flat">
+        <span>Flat</span>
+    </IgrButton>
+    <IgrButton className={"size-" + size} variant="contained">
+        <span>Contained</span>
+    </IgrButton>
+    <IgrButton className={"size-" + size} variant="outlined">
+        <span>Outlined</span>
+    </IgrButton>
+    <IgrButton className={"size-" + size} variant="fab">
+        <span>Like</span>
+    </IgrButton>
 </div>
-
-
-public onRadioChange(e: any) {
-    this.flatButton.size = e.value;
-    this.containedButton.size = e.value;
-    this.outlinedButton.size = e.value;
-    this.fabButton.size = e.value;
-}
 ```
 
 ```razor
@@ -355,7 +360,6 @@ igc-button::part(base) {
  - `RadioGroup`
  - `Radio`
  - [スタイル設定 & テーマ](../themes/overview.md)
-
 
 ## その他のリソース
 

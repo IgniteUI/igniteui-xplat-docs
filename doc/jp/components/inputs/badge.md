@@ -45,12 +45,11 @@ defineComponents(IgcBadgeComponent);
 npm install igniteui-react
 ```
 
-次に、以下のように、`Badge` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、`Badge` と必要な CSS をインポートする必要があります:
 
 ```tsx
-import { IgrBadgeModule, IgrBadge } from 'igniteui-react';
+import { IgrBadge } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrBadgeModule.register();
 ```
 <!-- end: React -->
 
@@ -89,7 +88,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbBadgeModule));
 バッジの周囲に微妙な境界線を表示するには、バッジの `outlined` 属性を設定できます。
 
 ```tsx
-<IgrBadge outlined="true" ></IgrBadge>
+<IgrBadge outlined={true} ></IgrBadge>
 ```
 
 ```html

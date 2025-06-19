@@ -40,13 +40,11 @@ First, you need to the install the corresponding {ProductName} npm package by ru
 npm install igniteui-react
 ```
 
-You will then need to import the {Platform} `Toast`, its necessary CSS, and register its module, like so:
+You will then need to import the {Platform} `Toast` and its necessary CSS, like so:
 
 ```tsx
-import { IgrToastModule, IgrToast } from 'igniteui-react';
+import { IgrToast } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrToastModule.register();
 ```
 
 <!-- end: React -->
@@ -107,24 +105,19 @@ The simplest way to display the toast component is to use its `Show` method and 
 ```
 
 ```tsx
-<IgrButton variant="contained" clicked={this.onShowButtonClicked}>
+<IgrButton variant="contained" onClick={onShowButtonClicked}>
     <span>Show Toast</span>
 </IgrButton>
 
-<IgrToast ref={this.onToastRef}>
+<IgrToast ref={toastRef}>
     <span>Toast Message</span>
 </IgrToast>
 
-public onToastRef(toast: IgrToast) {
-    if (!toast) { return; }
-    this.toastRef = toast;
-}
+const toastRef = useRef<IgrToast>(null);
 
-public onShowButtonClicked() {
-    if (this.toastRef) {
-        this.toastRef.show();
-    }
-}
+const onShowButtonClicked = () => {
+        toastRef.current?.show();
+    };
 ```
 
 ## Examples
@@ -185,43 +178,38 @@ By default, the toast component is hidden automatically after a period specified
 
 ```tsx
 <div>
-    <IgrButton variant="contained" clicked={this.onToggleButtonClicked}>
+    <IgrButton variant="contained" onClick={onToggleButtonClicked}>
         <span>Toggle Toast</span>
     </IgrButton>
-    <IgrButton variant="contained" clicked={this.onKeepOpenButtonClicked}>
+    <IgrButton variant="contained" onClick={onKeepOpenButtonClicked}>
         <span>Toggle keepOpen Property</span>
     </IgrButton>
-    <IgrButton variant="contained" clicked={this.onDisplayTimeButtonClicked}>
+    <IgrButton variant="contained" onClick={onDisplayTimeButtonClicked}>
         <span>Set DisplayTime to 8000</span>
     </IgrButton>
 </div>
 
-<IgrToast ref={this.onToastRef}>
+<IgrToast ref={toastRef}>
     <span>Toast Message</span>
 </IgrToast>
 
-public onToastRef(toast: IgrToast) {
-    if (!toast) { return; }
-    this.toastRef = toast;
-}
+const toastRef = useRef<IgrToast>(null);
 
-public onToggleButtonClicked() {
-    if (this.toastRef) {
-        this.toastRef.toggle();
-    }
-}
+const onToggleButtonClicked = () => {
+    toastRef.current?.toggle();
+};
 
-public onKeepOpenButtonClicked() {
-    if (this.toastRef) {
-        this.toastRef.keepOpen = !this.toastRef.keepOpen;
+const onKeepOpenButtonClicked = () => {
+    if (toastRef.current) {
+        toastRef.current.keepOpen = !toastRef.current.keepOpen;
     }
-}
+};
 
-public onDisplayTimeButtonClicked() {
-    if (this.toastRef) {
-        this.toastRef.displayTime = 8000;
+const onDisplayTimeButtonClicked = () => {
+    if (toastRef.current) {
+        toastRef.current.displayTime = 8000;
     }
-}
+};
 ```
 
 `sample="/notifications/toast/properties", height="230", alt="{Platform} Toast Properties Example"`

@@ -46,12 +46,11 @@ First, you need to the install the corresponding {ProductName} npm package by ru
 npm install igniteui-react
 ```
 
-You will then need to import the `Checkbox`, its necessary CSS, and register its module, like so:
+You will then need to import the `Checkbox` and its necessary CSS, like so:
 
 ```tsx
-import { IgrCheckboxModule, IgrCheckbox } from 'igniteui-react';
+import { IgrCheckbox } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrCheckboxModule.register();
 ```
 <!-- end: React -->
 
@@ -129,7 +128,7 @@ The checkbox can also be labelled by elements external to the checkbox. In this 
 
 ```tsx
 <span id="checkbox-label">Label</span>
-<IgrCheckbox ariaLabelledby="checkbox-label" labelPosition="before"></IgrCheckbox>
+<IgrCheckbox aria-labelledby="checkbox-label" labelPosition="before"></IgrCheckbox>
 ```
 
 ```html
@@ -151,7 +150,7 @@ The checkbox can also be labelled by elements external to the checkbox. In this 
 You can use the `Checked` attribute of the component to determine whether the checkbox should be toggled on or off by default.
 
 ```tsx
-<IgrCheckbox checked="true"></IgrCheckbox>
+<IgrCheckbox checked={true}></IgrCheckbox>
 ```
 
 ```html
@@ -171,7 +170,7 @@ You can use the `Checked` attribute of the component to determine whether the ch
 You can use the `Indeterminate` property of the component to set the checkbox's value to neither **true** nor **false**.
 
 ```tsx
-<IgrCheckbox indeterminate="true"></IgrCheckbox>
+<IgrCheckbox indeterminate={true}></IgrCheckbox>
 ```
 
 ```html
@@ -191,7 +190,7 @@ You can use the `Indeterminate` property of the component to set the checkbox's 
 You can use the `Required` property to mark the checkbox as required.
 
 ```tsx
-<IgrCheckbox required="true"></IgrCheckbox>
+<IgrCheckbox required={true}></IgrCheckbox>
 ```
 
 ```html
@@ -207,7 +206,7 @@ You can use the `Required` property to mark the checkbox as required.
 You can use the `Invalid` attribute to mark the checkbox as invalid.
 
 ```tsx
-<IgrCheckbox invalid="true"></IgrCheckbox>
+<IgrCheckbox invalid={true}></IgrCheckbox>
 ```
 
 ```html
@@ -223,7 +222,7 @@ You can use the `Invalid` attribute to mark the checkbox as invalid.
 You can use the `Disabled` attribute to disable the checkbox.
 
 ```tsx
-<IgrCheckbox disabled="true"></IgrCheckbox>
+<IgrCheckbox disabled={true}></IgrCheckbox>
 ```
 
 ```html

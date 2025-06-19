@@ -42,13 +42,11 @@ First, you need to the install the corresponding {ProductName} npm package by ru
 npm install igniteui-react
 ```
 
-You will then need to import the {Platform} `Dialog`, its necessary CSS, and register its module, like so:
+You will then need to import the {Platform} `Dialog` and its necessary CSS, like so:
 
 ```tsx
-import { IgrDialogModule, IgrDialog } from 'igniteui-react';
+import { IgrDialog } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrDialogModule.register();
 ```
 
 <!-- end: React -->

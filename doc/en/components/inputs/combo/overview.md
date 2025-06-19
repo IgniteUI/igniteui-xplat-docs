@@ -66,13 +66,11 @@ First, you need to the install the corresponding {ProductName} npm package by ru
 npm install igniteui-react
 ```
 
-You will then need to import the {Platform} `ComboBox`, its necessary CSS, and register its module, like so:
+You will then need to import the {Platform} `ComboBox` and its necessary CSS:
 
 ```tsx
-import { IgrComboModule, IgrCombo } from 'igniteui-react';
+import { IgrCombo } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrComboModule.register();
 ```
 
 <!-- end: React -->
@@ -109,7 +107,7 @@ export class Sample {
 ```
 
 ```razor
-<IgbCombo Id="basic-combo" DisplayKey="name" ValueKey="id" Data="Data" />
+<IgbCombo T="object" Id="basic-combo" DisplayKey="name" ValueKey="id" Data="Data" />
 
 @code {
     private class City {
@@ -162,6 +160,9 @@ const cities: City[] = [
 
 When the combo is bound to a list of complex data (i.e. objects), we need to specify a property that the control will use to handle item selection. The component exposes the following properties:
 
+<!-- end: Blazor -->
+ - `T` - *Required, if `ValueKey` is omitted, this should be set to "object", otherwise this needs to match the property type of `ValueKey`.
+<!-- end: Blazor -->
  - `ValueKey` - *Optional,* ***required*** *for complex data object* - Determines which field of the data source will be used to make selections. If `ValueKey` is omitted, the selection API will use object references to select items.
  - `DisplayKey` - *Optional,* ***recommended*** *for complex data objects* - Determines which field in the data source is used as the display value. If no value is specified for `DisplayKey`, the combo will use the specified `ValueKey` (if any).
 In our case, we want the combo to display the `name` of each city and use the `id` field for item selection and as the underlying value for each item. Therefore, we provide these properties to the combo's `ValueKey` and `DisplayKey` respectively.

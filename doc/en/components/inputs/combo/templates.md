@@ -68,19 +68,29 @@ Then in our application we can refer to the template we declared via the `ItemTe
 
 <!-- React -->
 ```tsx
+type City = {
+  name: string;
+  id: string;
+  country: string;
+};
+
+const renderItemTemplate = (args: ComboTemplateProps<City>) => {
+  const item = args.item;
+
+  return (
+    <span>
+      <b>{item.name}</b> [{item.id}] - {item.country}
+    </span>
+  );
+};
+
 <IgrCombo
     valueKey="id"
     displayKey="name"
     groupKey="country"
-    data={cities}
+    data={Cities}
     itemTemplate={renderItemTemplate}
 ></IgrCombo>
-
-function renderItemTemplate(props: { dataContext: any}): any {
-    return (
-      <span><b>{props.dataContext.name}</b> [{props.dataContext.id}]</span>
-    );
-}
 ```
 <!-- end: React -->
 
@@ -130,10 +140,10 @@ Then in our application we can refer to the template we declared via the `GroupH
     groupHeaderTemplate={renderGroupHeaderTemplate}
 ></IgrCombo>
 
-function renderGroupHeaderTemplate(props: { dataContext: any}): any {
-    return (
-    <span>Country of {props.dataContext.country}</span>
-    );
+const renderGroupHeaderTemplate = (args: ComboTemplateProps<City>) => {
+  return (
+  <span>Country of {args.item.country}</span>
+  );
 }
 ```
 <!-- end: React -->
@@ -230,7 +240,7 @@ The toggle icon in the combo input can also be modified via the `toggle-icon` sl
 ```tsx
 <IgrCombo>
   <span slot="toggle-icon">
-    <IgbIcon name="down"></IgbIcon>
+    <IgrIcon name="down" collection="material"></IgrIcon>
   </span>
 </IgrCombo>
 ```
@@ -253,7 +263,7 @@ The clear icon can be changed via the `clear-icon` slot:
 ```tsx
 <IgrCombo>
   <span slot="clear-icon">
-    <IgbIcon name="clear"></IgbIcon>
+    <IgrIcon name="clear" collection="material"></IgrIcon>
   </span>
 </IgrCombo>
 ```

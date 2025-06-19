@@ -44,12 +44,11 @@ First, you need to the install the corresponding {ProductName} npm package by ru
 npm install igniteui-react
 ```
 
-You will then need to import the `Chip`, its necessary CSS, and register its module, like so:
+You will then need to import the `Chip` and its necessary CSS, like so:
 
 ```tsx
-import { IgrChipModule, IgrChip } from 'igniteui-react';
+import { IgrChip } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrChipModule.register();
 ```
 <!-- end: React -->
 
@@ -99,7 +98,7 @@ The simplest way to start using the `Chip` is as follows:
 To display a selectable chip, you can use the `Selectable` property of the chip.
 
 ```tsx
-<IgrChip selectable="true"></IgrChip>
+<IgrChip selectable={true}></IgrChip>
 ```
 
 ```html
@@ -113,7 +112,7 @@ To display a selectable chip, you can use the `Selectable` property of the chip.
 To display a removable chip, you can use the `Removable` property of the chip.
 
 ```tsx
-<IgrChip removable="true"></IgrChip>
+<IgrChip removable={true}></IgrChip>
 ```
 
 ```html
@@ -151,7 +150,7 @@ The {ProductName} chip supports several pre-defined stylistic variants. You can 
 The {ProductName} chip can be disabled by using the `Disabled` property.
 
 ```tsx
-<IgrChip disabled="true"></IgrChip>
+<IgrChip disabled={true}></IgrChip>
 ```
 
 ```html
@@ -181,19 +180,27 @@ With the `Prefix` and `Suffix` parts of the `Chip` component and their slots, we
 We allow the user to choose the size of the `Chip` by utilizing the `--ig-size` CSS variable:
 
 ```tsx
-<IgrChip size="small" selectable="true" removable="true">
+<IgrChip className="size-small" selectable={true} removable={true}>
     <span>Chip</span>
 </IgrChip>
-<IgrChip size="medium" selectable="true" removable="true">
+<IgrChip className="size-medium" selectable={true} removable={true}>
     <span>Chip</span>
 </IgrChip>
-<IgrChip size="large" selectable="true" removable="true">
+<IgrChip className="size-large" selectable={true} removable={true}>
     <span>Chip</span>
 </IgrChip>
 ```
 
 ```css
-igc-chip {
+.size-small {
+  --ig-size: var(--ig-size-small);
+}
+
+.size-medium {
+  --ig-size: var(--ig-size-medium);
+}
+
+.size-large {
   --ig-size: var(--ig-size-large);
 }
 ```
