@@ -1841,6 +1841,12 @@
     "exclude": ["Angular"],
     "name": "日付ピッカー",
     "href": "scheduling/date-picker.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "日付範囲ピッカー",
+    "href": "scheduling/date-range-picker.md",
     "status": "NEW"
   },
   {
