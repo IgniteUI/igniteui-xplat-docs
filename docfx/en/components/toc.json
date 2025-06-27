@@ -1562,7 +1562,7 @@
     "href": "layouts/divider.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "Blazor"],
     "name": "Tile Manager",
     "href": "layouts/tile-manager.md",
     "status": "new"
