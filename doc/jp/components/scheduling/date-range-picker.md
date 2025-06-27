@@ -58,7 +58,7 @@ defineComponents(IgcDateRangePickerComponent);
 </igc-date-range-picker>
 ```
 
-`DateRangePicker` を 2 つの入力欄を使用するように切り替えるには、`UseTwoInputs` プロパティを `true` に設定します。
+`DateRangePicker` を 2 つの入力欄を使用するように切り替えるには、`UseTwoInputs` プロパティを **true** に設定します。
 
 ```html
 <igc-date-range-picker use-two-inputs="true">
