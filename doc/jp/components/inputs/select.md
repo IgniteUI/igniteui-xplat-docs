@@ -70,14 +70,11 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 npm install igniteui-react
 ```
 
-次に、以下のように、`Select` および `SelectItem` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、`Select` および `SelectItem` と必要な CSS をインポートする必要があります:
 
 ```tsx
-import { IgrSelectModule, IgrSelect, IgrSelectItemModule, IgrSelectItem } from 'igniteui-react';
+import { IgrSelect, IgrSelectItem } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrSelectModule.register();
-IgrSelectItemModule.register();
 ```
 
 <!-- end: React -->
@@ -239,26 +236,23 @@ IgrSelectItemModule.register();
 <IgrSelect>
   <IgrSelectGroup>
     <span slot="label">Europe</span>
-
     <IgrSelectItem>
       <span slot="prefix">
-        <IgrIcon name="place" ref={iconPlace} collection="material"></IgrIcon>
+        <IgrIcon name="place" collection="material"></IgrIcon>
       </span>
       <span> Germany </span>
       <span slot="suffix">DE</span>
     </IgrSelectItem>
-
     <IgrSelectItem>
       <span slot="prefix">
-        <IgrIcon name="place" ref={iconPlace} collection="material"></IgrIcon>
+        <IgrIcon name="place" collection="material"></IgrIcon>
       </span>
       <span> France </span>
       <span slot="suffix">FR</span>
     </IgrSelectItem>
-
     <IgrSelectItem>
       <span slot="prefix">
-        <IgrIcon name="place" ref={iconPlace} collection="material"></IgrIcon>
+        <IgrIcon name="place" collection="material"></IgrIcon>
       </span>
       <span> Spain </span>
       <span slot="suffix">ES</span>

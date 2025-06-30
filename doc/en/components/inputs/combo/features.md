@@ -16,7 +16,7 @@ The following demo shows some `ComboBox` features that are enabled/disabled at r
 
 
 
-In our sample we are going to use the `Switch` component, so we have to register it together with the combo:
+In our sample we are going to use the `Switch` component, so we have to import them together with the combo:
 
 <!-- WebComponents -->
 ```ts
@@ -46,33 +46,46 @@ You will also need to link an additional CSS file to apply the styling to the `S
 <!-- React -->
 
 ```tsx
-import { IgrComboModule, IgrCombo, IgrSwitchModule, IgrSwitch  } from 'igniteui-react';
+import { IgrCombo, IgrSwitch  } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrComboModule.register();
-IgrSwitchModule.register();
 ```
 
 <!-- end: React -->
 
-Then, we will add event handlers to all switch components so that we can control the combo features by toggling the switches:
+Then, using React's useState hook, we will declare our variables which will update when the state of the switches change. This will keep track for updates and reflect the changes to the combo inputs accordingly:
 
 ```tsx
-const comboRef = useRef<IgrCombo>(null);
-const switchCaseSensitiveRef = useRef<IgrSwitch>(null);
+const [disableFiltering, setDisableFiltering] = useState(false);
+const [caseSensitiveIcon, setCaseSensitiveIcon] = useState(false);
+const [groupingEnabled, setGroupingEnabled] = useState(false);
+const [comboDisabled, setComboDisabled] = useState(false);
 
-const disableFiltering = (switchComponent: IgrSwitch) => {
-    comboRef.current.disableFiltering =
-    switchCaseSensitiveRef.current.disabled = switchComponent.checked;
-};
+<IgrCombo
+    valueKey="id"
+    displayKey="name"
+    label="Cities"
+    placeholder="Pick a city"
+    placeholderSearch="Search for a city"
+    data={Cities}
+    disableFiltering={disableFiltering}
+    caseSensitiveIcon={caseSensitiveIcon}
+    groupKey={groupingEnabled ? "country" : undefined}
+    disabled={comboDisabled}>
+</IgrCombo>
 
-const showCaseSensitiveIcon = (switchComponent: IgrSwitch) => {
-    comboRef.current.caseSensitiveIcon = switchComponent.checked;
-};
 
-const disableCombo = (switchComponent: IgrSwitch) => {
-    comboRef.current.disabled = switchComponent.checked;
-};
+<IgrSwitch checked={disableFiltering} onChange={e => setDisableFiltering(e.detail.checked)}>
+    <span>Disable Filtering</span>
+</IgrSwitch>
+<IgrSwitch checked={caseSensitiveIcon} onChange={e => setCaseSensitiveIcon(e.detail.checked)}>
+    <span>Show Case-sensitive Icon</span>
+</IgrSwitch>
+<IgrSwitch checked={groupingEnabled} onChange={e => setGroupingEnabled(e.detail.checked)}>
+    <span>Enable Grouping</span>
+</IgrSwitch>
+<IgrSwitch checked={comboDisabled} onChange={e => setComboDisabled(e.detail.checked)}>
+    <span>Disable Combo</span>
+</IgrSwitch>
 ```
 
 ```ts
@@ -157,9 +170,7 @@ switchGroup.addEventListener("igcChange", () => {
 ```
 
 ```tsx
-const enableGrouping = (switchComponent: IgrSwitch) => {
-    comboRef.current.groupKey = switchComponent.checked ? "country" : undefined;
-};
+groupKey={groupingEnabled ? "country" : undefined}
 ```
 
 ## Features
@@ -179,7 +190,7 @@ Filtering options can be further enhanced by enabling the search case sensitivit
 ```
 
 ```tsx
-<IgrCombo disableFiltering="true" caseSensitiveIcon="true"></IgrCombo>
+<IgrCombo disableFiltering={true} caseSensitiveIcon={true}></IgrCombo>
 ```
 
 #### Filtering Options
@@ -206,7 +217,7 @@ const options = {
     caseSensitive: true
 };
 
-comboRef.current.filteringOptions = options;
+<IgrCombo filteringOptions={options} />
 ```
 <!-- end: React -->
 
@@ -290,7 +301,7 @@ If you want your ComboBox to be automatically focused on page load you can use t
 ```
 
 ```tsx
-<IgrCombo autofocus="true" />
+<IgrCombo autofocus={true} />
 ```
 
 ### Search Input Focus
@@ -306,7 +317,7 @@ The ComboBox search input is focused by default. To disable this feature and mov
 ```
 
 ```tsx
-<IgrCombo autofocusList="true" />
+<IgrCombo autofocusList={true} />
 ```
 
 ### Required
@@ -322,7 +333,7 @@ The ComboBox can be marked as required by setting the required property.
 ```
 
 ```tsx
-<IgrCombo required="true" />
+<IgrCombo required={true} />
 ```
 
 ### Disable ComboBox
@@ -338,7 +349,7 @@ You can disable the ComboBox using the `Disabled` property:
 ```
 
 ```tsx
-<IgrCombo disabled="true" />
+<IgrCombo disabled={true} />
 ```
 
 <!-- WebComponents -->

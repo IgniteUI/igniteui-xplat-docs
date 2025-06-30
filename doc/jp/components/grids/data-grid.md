@@ -117,7 +117,7 @@ import 'igniteui-webcomponents-grids/grids/combined.js';
 <!-- end: WebComponents -->
 
 ```tsx
-import "igniteui-react-grids/grids/combined.js";
+import { IgrGrid } from "igniteui-react-grids";
 ```
 
 対応するスタイルも参照する必要があります。[テーマ](../themes/overview.md)の 1 つにライトモードのオプションまたはダークモードのオプションを選択し、プロジェクト構成に基づいてインポートできます:
@@ -140,9 +140,10 @@ import 'igniteui-react-grids/grids/themes/light/bootstrap.css'
 <!-- end: WebComponents -->
 
 グリッドの外観をカスタマイズする方法の詳細については、[スタイル設定](data-grid.md#{PlatformLower}-grid-スタイル設定の構成) セクションを参照してください。
+
 <!-- end: Angular, React, WebComponents -->
 
-<!-- Angular, React, Blazor -->
+<!-- Angular, Blazor -->
 
 ### コンポーネント モジュール
 
@@ -170,13 +171,8 @@ import { IgxGridModule } from 'igniteui-angular';
 export class AppModule {}
 ```
 
-```tsx
-import { IgrGridModule } from "igniteui-react-data-grids";
-IgrGridModule.register();
-```
 
-<!-- end: Angular, React, Blazor -->
-
+<!-- end: Angular, Blazor -->
 
 ## 使用方法
 
@@ -202,7 +198,7 @@ constructor() {
 ```
 
 ```tsx
-<IgrGrid id="grid1" data={localData} autoGenerate="true"></IgrGrid>
+<IgrGrid id="grid1" data={localData} autoGenerate={true}></IgrGrid>
 ```
 
 `Id` プロパティは文字列値で、設定されない場合に自動生成生成されるグリッドの一意識別子です。`data` はグリッドをローカル データにバインドします。
@@ -270,10 +266,10 @@ constructor() {
 ```
 
 ```tsx
-<IgrGrid id="grid1" autoGenerate="false" allowFiltering="true" data={localData}>
-    <IgrColumn field="Name" sortable="true"></igc-column>
-    <IgrColumn field="AthleteNumber" sortable="true" header="Athlete number" filterable="false"></IgrColumn>
-    <IgrColumn id="trackProgress" field="TrackProgress" header="Track progress" filterable="false"></IgrColumn>
+<IgrGrid id="grid1" autoGenerate={false} allowFiltering={true} data={localData}>
+    <IgrColumn field="Name" sortable={true}></igc-column>
+    <IgrColumn field="AthleteNumber" header="Athlete number" filterable={false} sortable={true}></IgrColumn>
+    <IgrColumn field="TrackProgress" header="Track progress" filterable={false}></IgrColumn>
 </IgrGrid>
 ```
 
@@ -356,7 +352,7 @@ function formatUppercase(value) {
 function nameHeaderTemplate(ctx: IgrColumnTemplateContext) {
     return (
     <>
-     {formatUppercase(ctx.dataContext.column.field)}
+            {formatUppercase(ctx.column.field)}
     </>
     );
 }
@@ -365,73 +361,8 @@ function formatUppercase(value: string) {
     return value.toUpperCase();
 }
 
-<IgrGrid id="name" field="Name" headerTemplate={nameHeaderTemplate}></IgrGrid>
+<IgrColumn field="Name" headerTemplate={nameHeaderTemplate}></IgrColumn>
 ```
-
-> **注**:
->グループ化 / 移動機能と一緒にヘッダー テンプレートを使用すると、列ヘッダー領域はドラッグ可能になりヘッダー テンプレートのカスタム要素部分にドラッグ不可としてマークするまでアクセスできません。以下の例をご覧ください。
-
-```html
-<igx-column #col field="ProductName" header="Product Name"
-    [groupable]="true" [hasSummary]="true">
-    <ng-template igxHeader let-col>
-        <div class="text">{{col.field}}</div>
-        <igx-icon (click)="toggleSummary(col)" [attr.draggable]="false">functions
-        </igx-icon>
-    </ng-template>
-</igx-column>
-```
-
-```html
-<igc-column id="productName" field="ProductName" header="Product Name" groupable="true" has-summary="true"></igc-column>
-```
-
-```typescript
-constructor() {
-    var productName = this.productName = document.getElementById('productName') as IgcColumnComponent;
-    productName.headerTemplate = this.productNameHeaderTemplate;
-}
-
-public productNameHeaderTemplate = (ctx: IgcColumnTemplateContext) => {
-    return html`
-        <div class="text">${ctx.column.field}</div>
-        <igc-icon @click="${() => this.toggleSummary(ctx.column)}" name="functions" draggable="false"></igc-icon>
-    `;
-}
-
-public toggleSummary(column: IgcColumnComponent) {
-}
-```
-
-```tsx
-function productNameHeaderTemplate(ctx: IgrColumnTemplateContext) {
-    return (
-        <>
-            <div class="text">${ctx.dataContext.column.field}</div>
-            <IgrIcon onClick={() => toggleSummary(ctx.dataContext.column)} name="functions" draggable="false"></IgrIcon>
-        </>
-    );
-}
-
-<IgrColumn id="productName" field="ProductName" header="Product Name" groupable="true" hasSummary="true" headerTemplate={productNameHeaderTemplate}></IgrColumn>
-```
-
-```razor
-<IgbColumn Field="ProductName" Header="Product Name" Groupable=true HasSummary=true HeaderTemplateScript="ProductNameHeaderTemplate" />
-
-//In JavaScript:
-igRegisterScript("ProductNameHeaderTemplate", (ctx) => {
-
-    var html = window.igTemplating.html;
-
-    return html`
-        <div class="text">${ctx.column.field}</div>
-        <igc-icon name="functions" draggable="false"></igc-icon>
-    `;
-}, false)
-```
-
-`Draggable` 属性を false に設定して追加しています。
 
 ### セル テンプレート
 
@@ -489,12 +420,12 @@ function formatTitleCase(value: string) {
 function nameCellTemplate(ctx: IgrCellTemplateContext) {
   return (
   <>
-   {formatTitleCase(ctx.dataContext.implicit)}
+            {formatTitleCase(ctx.implicit)}
   </>
   );
 }
 
-<IgrColumn id="name" field="Name" bodyTemplate={nameCellTemplate}></IgrColumn>
+<IgrColumn field="Name" bodyTemplate={nameCellTemplate}></IgrColumn>
 ```
 
 上記のスニペットで暗示的に提供されたセル値への参照を取得します。データを表示し、セルの値にカスタム スタイル設定およびパイプ変換を適用する場合に使用します。ただし、`Cell` インスタンスを以下のように使用するとより効果的です。
@@ -560,15 +491,15 @@ public formatTitleCase(value: string) {
 function nameCellTemplate(ctx: IgrCellTemplateContext) {
     return (
         <>
-            <span tabindex="0" keydown={() => deleteRow(ctx.dataContext.cell.id.rowIndex)}>
-            {formatTitleCase(ctx.dataContext.cell.value)}
+            <span tabIndex={0} onClick={() => deleteRow(ctx.cell.id.rowID)}>
+                {formatTitleCase(ctx.cell.value)}
             </span>
         </>
     );
 }
 
 function subscriptionCellTemplate(ctx: IgrCellTemplateContext) {
-    if (ctx.dataContext.cell.value) {
+    if (ctx.cell.value) {
             return (
                 <>
                  <input type="checkbox" checked />
@@ -583,17 +514,17 @@ function subscriptionCellTemplate(ctx: IgrCellTemplateContext) {
     }
 }
 
-function deleteRow(rowIndex: number) {
-    grid.deleteRow(rowIndex);
+function deleteRow(rowID: any) {
+    grid.current.deleteRow(rowID);
 }
 
 function formatTitleCase(value: string) {
     return value.toUpperCase();
 }
 
-<IgrGrid id="grid" autoGenerate="false" data={data}>
-    <IgrColumn id="name" field="Name" dataType="string" bodyTemplate={nameCellTemplate}></IgrColumn>
-    <IgrColumn id="subscription" field="Subscription" dataType="boolean" bodyTemplate={subscriptionCellTemplate}></IgrColumn>
+<IgrGrid id="grid" ref={grid} autoGenerate={false} data={data} primaryKey="Name">
+    <IgrColumn field="Name" dataType="string" bodyTemplate={nameCellTemplate}></IgrColumn>
+    <IgrColumn field="Subscription" dataType="boolean" bodyTemplate={subscriptionCellTemplate}></IgrColumn>
 </IgrGrid>
 ```
 
@@ -693,16 +624,17 @@ function priceCellTemplate(ctx: IgrCellTemplateContext) {
             <label>
                 Enter the new price tag
             </label>
-            <input name="price" type="number" value={ctx.dataContext.cell.value} 
-                change={() => this.updateValue(ctx.dataContext.cell.value)}/>
+            <input name="price" type="number" value={ctx.cell.value} 
+                onChange={() => updateValue(ctx.cell.value)}/>
         </>
     );
 }
 
 function updateValue(value: number) {
+  // Custom update code
 }
 
-<IgrColumn id="price" field="Price" dataType="number" editable="true" inlineEditorTemplate={priceCellTemplate}></IgrColumn>
+<IgrColumn field="Price" dataType="number" editable={true} inlineEditorTemplate={priceCellTemplate}></IgrColumn>
 ```
 
 ```razor
@@ -787,7 +719,7 @@ public smallViewTemplate = (ctx: IgcCellTemplateContext) => {
 ```
 
 ```tsx
-<IgrGrid>
+<IgrGrid ref={grid}>
     {/* Column declarations */}
 </IgrGrid>
 ```
@@ -796,7 +728,7 @@ public smallViewTemplate = (ctx: IgcCellTemplateContext) => {
 function normalViewTemplate(ctx: IgrCellTemplateContext) {
     return (
         <>
-            <div class="user-details">{ ctx.dataContext.cell.value }</div>
+            <div className="user-details">{ ctx.cell.value }</div>
             <UserDetailsComponent></UserDetailsComponent>
         </>
     );
@@ -805,12 +737,12 @@ function normalViewTemplate(ctx: IgrCellTemplateContext) {
 function smallViewTemplate(ctx: IgrCellTemplateContext) {
     return (
         <>
-            <div class="user-details-small">{ ctx.dataContext.cell.value }</div>
+            <div className="user-details-small">{ ctx.cell.value }</div>
         </>
     );
 }
 
-const column = grid.getColumnByName("User");
+const column = grid.current.getColumnByName("User");
 // Return the appropriate template based on some condition.
 // For example saved user settings, viewport size, etc.
 column.bodyTemplate = smallViewTemplate;
@@ -866,13 +798,15 @@ public initColumns(column: IgcGridColumn) {
 ```
 
 ```tsx
-function initColumns(grid: IgrGridBaseDirective, args: IgrColumnComponentEventArgs) {
-    const column: IgrColumn = args.detail;
+function initColumns(event: CustomEvent<IgrColumn>) {
+    const column: IgrColumn = event.detail;
     if (column.field === 'ProductName') {
         column.sortable = true;
         column.editable = true;
     }
 }
+
+<IgrGrid onColumnInit={initColumns} />
 ```
 
 ```razor
@@ -941,7 +875,7 @@ constructor() {
 ```
 
 ```tsx
-const columnPipeArgs = {
+const columnPipeArgs: IgrColumnPipeArgs = {
     format: "longDate",
     timezone: "UTC",
     digitsInfo: "1.2-2"
@@ -1032,17 +966,16 @@ public onDataLoaded(jsonData: any[]) {
 これを行うには、JSON 応答を受信して指定された URL からデータを取得し、それをグリッドのデータ ソースとして使用されるグリッドの `data` プロパティに割り当てます。
 
 ```tsx
-<IgrGrid ref={gridRef}></IgrGrid>
+<IgrGrid ref={grid} data={data}></IgrGrid>
 ```
 
 ```tsx
+const [data, setData] = useState<any[]>([]);
+
 function fetchData(url: string): void {
     fetch(url)
       .then(response => response.json())
-      .then(data => onDataLoaded(data));
-}
-function onDataLoaded(jsonData: any[]) {
-    gridRef.current.data = jsonData;
+      .then(data => setData(data));
   }
 ```
 
@@ -1273,7 +1206,7 @@ public class AminoWeight
 
 <!-- React -->
 
-- テンプレート内の `cell` オブジェクトを使用し、そこから `ctx.dataContext.cell.id.rowIndex` または `ctx.dataContext.cell.id.rowID` にアクセスして、グリッドの API 経由で行を取得します。そこから任意の値を取得し、テンプレート内で補間します。
+- テンプレート内の `cell` オブジェクトを使用し、そこから `ctx.cell.id.rowIndex` または `ctx.cell.id.rowID` にアクセスして、グリッドの API 経由で行を取得します。そこから任意の値を取得し、テンプレート内で補間します。
 
 <!-- end: React -->
 
@@ -1330,10 +1263,10 @@ public getWeight(rowIndex: number) {
 
 ```tsx
 function getName(rowIndex: number) {
-    return grid.getRowByIndex(rowIndex).data["Name"];
+    return grid.current.getRowByIndex(rowIndex).data["Name"];
 }
 function getWeight(rowIndex: number) {
-    return grid.getRowByIndex(rowIndex).data["weight"]["molecular"];
+    return grid.current.getRowByIndex(rowIndex).data["weight"]["molecular"];
 }
 
 function abbreviationLongCellTemplate(ctx: IgrCellTemplateContext) {
@@ -1341,16 +1274,16 @@ function abbreviationLongCellTemplate(ctx: IgrCellTemplateContext) {
         <>
             <div>
             <div>
-                { ctx.dataContext.cell.value }
-                    {getName(ctx.dataContext.cell.id.rowIndex)} 
-                    {getWeight(ctx.dataContext.cell.id.rowIndex)}
+                { ctx.cell.value }
+                    {getName(ctx.cell.id.rowIndex)} 
+                    {getWeight(ctx.cell.id.rowIndex)}
             </div>
         </div>
         </>
     )
 }
 
-<IgrColumn id="abbreviationLong" field="abbreviation.long" bodyTemplate={abbreviationLongCellTemplate}></IgrColumn>
+<IgrColumn field="abbreviation.long" bodyTemplate={abbreviationLongCellTemplate}></IgrColumn>
 ```
 
 ```razor
@@ -1554,25 +1487,32 @@ public addressCellTemplate = (ctx: IgcCellTemplateContext) => {
 
 ```tsx
 function addressCellTemplate(ctx: IgrCellTemplateContext) {
+    if (ctx.cell.value != null) {
+        if (ctx.cell.value.length === 0) return <></>;
+        const value = ctx.cell.value[0];
     return (
         <>
             <IgrExpansionPanel>
-                <div slot="title" style={{font-size: '1.1em'; font-weight: 'bold'; margin-top: '1rem'; margin-bottom: '0.25rem'}}>
-                {ctx.dataContext.cell.value[0].Name}
+                  <div slot="title" style={{fontSize: "1.1em", fontWeight: "bold", marginTop: "1rem", marginBottom: "0.25rem"}}>
+                      {value.Name}
                 </div>
                 <div className="description">
-                    <div style={{display: 'flex'; align-items: 'center'}}>
-                        <div for="title" style={{width: '2rem'; margin: '0rem'}}>Title</div>
-                        <input id='Title' type="text" name="title" value="${ctx.dataContext.cell.value[0].Title}" style={{text-overflow: 'ellipsis'}} />
-                    </div>
-                    <div style={{display: 'flex'; align-items: 'center'}}>
-                        <div for="age" style={{width: '2rem'; margin: '0rem'}}>Age</div>
-                        <input id='Age' type="text" name="title" value="${ctx.dataContext.cell.value[0].Age}" style={{text-overflow: 'ellipsis'}} />
-                    </div>
+                      <IgrInput type="text" label="Title" name="title" value={value.Title} style={{textOverflow: "ellipsis"}}
+                          onInput={(e: CustomEvent<string>) => {
+                              ctx.cell.value[0][e.target.label] = e.detail;
+                              grid.current.markForCheck();
+                          }} />
+                      <IgrInput type="number" label="Age" name="title" value={value.Age} style={{textOverflow: "ellipsis"}}
+                          onInput={(e: CustomEvent<string>) => {
+                              ctx.cell.value[0][e.target.label] = e.detail;
+                              grid.current.markForCheck();
+                          }} />
                 </div>
             </IgrExpansionPanel>
         </>
-    )
+        );
+    }
+    return <></>;
 }
 
 <IgrColumn field="Employees" header="Employees" width="40%" bodyTemplate={addressCellTemplate}></IgrColumn>
@@ -1722,33 +1662,43 @@ public getPostalCode(rowIndex: number) {
 
 ```tsx
 function getCountry(rowIndex: number) {
-    return grid.getRowByIndex(rowIndex).data["Country"];
+    return grid.current.getRowByIndex(rowIndex).data["Country"];
 }
 
 function getCity(rowIndex: number) {
-     return grid.getRowByIndex(rowIndex).data["City"];
+     return grid.current.getRowByIndex(rowIndex).data["City"];
 }
 
 function getPostalCode(rowIndex: number) {
-     return grid.getRowByIndex(rowIndex).data["PostalCode"];
+     return grid.current.getRowByIndex(rowIndex).data["PostalCode"];
 }
 
 function addressCellTemplate(ctx: IgrCellTemplateContext) {
+    var cell: IgrCellType = ctx.cell;
+    if (cell === undefined || cell.row === undefined || cell.row.data === undefined) {
+        return <></>;
+    }
+
     return (
         <>
             <div className="address-container">
-            // In the Address column combine the Country, City and PostCode values of the corresponding data record
-                <span><strong>Country:</strong> {getCountry(ctx.dataContext.cell.id.rowIndex)}</span>
+                <div className="country-city">
+                    <span><strong>Country:</strong> {cell.row.data.Country}</span>
                 <br/>
-                <span><strong>City:</strong> {getCity(ctx.dataContext.cell.id.rowIndex)}</span>
+                    <span><strong>City:</strong> {cell.row.data.City}</span>
+                </div>
+                <div className="phone-pscode">
+                    <span><strong>Postal Code:</strong> {cell.row.data.PostalCode}</span>
                 <br/>
-                <span><strong>Postal Code:</strong> {getPostalCode(ctx.dataContext.cell.id.rowIndex)}</span>
+                    <span><strong>Phone:</strong> {cell.row.data.Phone}</span>
+                </div>
+                <br />
             </div>
         </>
     );
 }
 
-<IgrColumn field="Address" header="Address" width="25%" editable="true" bodyTemplate={addressCellTemplate}></IgrColumn>
+<IgrColumn field="Address" header="Address" width="25%" editable={true} bodyTemplate={addressCellTemplate}></IgrColumn>
 ```
 
 ```razor
@@ -1847,43 +1797,41 @@ public webGridCompositeAddressEditCellTemplate = (ctx: IgcCellTemplateContext) =
 ```
 
 ```tsx
-function webGridCompositeAddressEditCellTemplate(ctx: IgrCellTemplateContext) {
-    var cell = ctx.dataContext.cell as any;
+function addressEditCellTemplate(ctx: IgrCellTemplateContext) {
+    var cell: IgrCellType = ctx.cell;
     if (cell === undefined || cell.row === undefined || cell.row.data === undefined) {
-        return (<></>)
-    }
-
-    function keyUpHandler(event: any, ctx: IgrCellTemplateContext) {
-        var cell = ctx.dataContext.cell as any;
-        if (cell !== undefined && cell.row !== undefined && cell.row.data !== undefined) {
-            cell.row.data[event.target.id] = event.target.value;
-        }
+        return <></>;
     }
 
     return (
         <>
-            <div className="address-container--edit" style={{display: 'inline-grid'}}>
-            <div>
-                <span><strong>Country:</strong></span>
-                <input id='Country' keyup={(e: any) => keyUpHandler(e, ctx)} value={cell.dataContext.row.data.Country}></input>
-                <br>
-                <span><strong>City:</strong></span>
-                <input id='City' keyup={(e: any) => keyUpHandler(e, ctx)} value={cell.dataContext.row.data.City}></input>
-            </div>
-            <div>
-                <span><strong>Postal Code:</strong></span>
-                <input id='PostalCode' keyup={(e: any) => keyUpHandler(e, ctx)} value={cell.dataContext.row.data.PostalCode}></input>
-                <br>
-                <span><strong>Selected:</strong></span>
-                <input id='Phone' keyup={(e: any) => keyUpHandler(e, ctx)} value={cell.dataContext.row.data.Phone}></input>
-            </div>
-            <br>
+            <div className="contact-container--edit" style={{padding: "1rem"}}>
+                <IgrInput
+                    label="Country"
+                    onInput={(e: CustomEvent<string>) => cell.row.data.Country = e.detail}
+                    value={cell.row.data.Country}
+                ></IgrInput>
+                <IgrInput
+                    label="City"
+                    onInput={(e: CustomEvent<string>) => cell.row.data.City = e.detail}
+                    value={cell.row.data.City}
+                ></IgrInput>
+                <IgrInput
+                    label="Postal Code"
+                    onInput={(e: CustomEvent<string>) => cell.row.data.PostalCode = e.detail}
+                    value={cell.row.data.PostalCode}
+                ></IgrInput>
+                <IgrInput
+                    label="Phone"
+                    onInput={(e: CustomEvent<string>) => cell.row.data.Phone = e.detail}
+                    value={cell.row.data.Phone}
+                ></IgrInput>
         </div>
         </>
     );
 }
 
-<IgrColumn field="Address" dataType="number" width="25%" editable="true" inlineEditorTemplate={webGridCompositeAddressEditCellTemplate}></IgrColumn>
+<IgrColumn field="Address" dataType="number" width="25%" editable={true} inlineEditorTemplate={addressEditCellTemplate}></IgrColumn>
 ```
 
 ```razor
@@ -2033,7 +1981,6 @@ platformBrowserDynamic()
 |`number` 型の列をフィルターする場合|フィルター入力に入力された値が `number` と異なる場合、キャストが正しくないため `NaN` が返されます。|
 |グリッドの `width` が列幅に依存しない | すべての列の `width` でグリッド自体のスパンは決定しません。親コンテナーのディメンションまたは定義したグリッドの `width` で決定されます。|
 |親コンテナーでネストされた Grid | グリッドの `width` を設定せずに定義済みのディメンションで親コンテナーに配置した場合、グリッドがコンテナーに合わせてスパンします。|
-|グリッドの `OnPush` ChangeDetectionStrategy | `ChangeDetectionStrategy.OnPush` を処理し、カスタム表示されたときにグリッドに発生した変更について通知します。|
 | 列には設定可能な最小幅があります。`--ig-size` CSS 変数に基づき、<br/>"small": 56px <br/> "medium": 64px <br/> "large": 80px があります。 | 許容される最小幅未満に設定した場合、描画される要素に影響はありません。`--ig-size` に対応する許容される最小幅で描画します。水平方向の仮想化は予期しない動作を招く場合があるためサポートしていません。
 | ビューに描画されていないセル高さは行の高さに影響しません。 | 仮想化のため、セルの高さを変更するビューにないカスタム テンプレートの列は行の高さに影響しません。関連する列がビューにスクロールされるときのみ行の高さに影響します。
 

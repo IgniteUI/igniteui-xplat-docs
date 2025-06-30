@@ -44,8 +44,6 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 
 <!-- end: Blazor -->
 
-<!-- end: Blazor -->
-
 <!-- Angular, WebComponents -->
 ```cmd
 npm install --save {PackageGrids}
@@ -61,17 +59,13 @@ npm install --save {PackageGrids}
 
 <!-- Angular, React, WebComponents -->
 
+<!-- WebComponents -->
 グリッドを使用するには、次のインポートも含める必要があります。
 
-<!-- WebComponents -->
 ```typescript
 import 'igniteui-webcomponents-grids/grids/combined.js';
 ```
 <!-- end: WebComponents -->
-
-```tsx
-import "igniteui-react-grids/grids/combined.js";
-```
 
 対応するスタイルも参照する必要があります。[テーマ](../../themes/overview.md)の 1 つにライトモードのオプションまたはダークモードのオプションを選択し、プロジェクト構成に基づいてインポートできます:
 
@@ -230,12 +224,12 @@ public class SingersData : List<SingersDataItem>
 ```
 
 ```tsx
-<IgrHierarchicalGrid data={singers} autoGenerate="true">
-    <IgrRowIsland childDataKey="Albums" autoGenerate="true">
-        <IgrRowIsland childDataKey="Songs" autoGenerate="true">
+<IgrHierarchicalGrid data={singers} autoGenerate={true}>
+    <IgrRowIsland childDataKey="Albums" autoGenerate={true}>
+        <IgrRowIsland childDataKey="Songs" autoGenerate={true}>
         </IgrRowIsland>
     </IgrRowIsland>
-    <IgrRowIsland childDataKey="Tours" autoGenerate="true">
+    <IgrRowIsland childDataKey="Tours" autoGenerate={true}>
     </IgrRowIsland>
 </IgrHierarchicalGrid>
 ```
@@ -394,19 +388,18 @@ import { getData } from "./remoteService";
 export default function Sample() {
   const hierarchicalGrid = useRef<IgrHierarchicalGrid>(null);
 
-  function gridCreated(
-    rowIsland: IgrRowIsland,
-    event: IgrGridCreatedEventArgs,
-    _parentKey: string
-  ) {
+  const gridCreated = (event: IgrGridCreatedEventArgs, _parentKey: string) => {
     const context = event.detail;
+    const rowIsland = context.owner;
     const dataState = {
       key: rowIsland.childDataKey,
       parentID: context.parentID,
       parentKey: _parentKey,
       rootLevel: false,
     };
+
     context.grid.isLoading = true;
+
     getData(dataState).then((data: any[]) => {
       context.grid.isLoading = false;
       context.grid.data = data;
@@ -416,6 +409,7 @@ export default function Sample() {
 
   useEffect(() => {
     hierarchicalGrid.current.isLoading = true;
+
     getData({ parentID: null, rootLevel: true, key: "Customers" }).then(
       (data: any) => {
         hierarchicalGrid.current.isLoading = false;
@@ -429,28 +423,20 @@ export default function Sample() {
     <IgrHierarchicalGrid
         ref={hierarchicalGrid}
         primaryKey="customerId"
-        autoGenerate="true"
+        autoGenerate={true}
         height="600px"
-        width="100%"
-    >
+        width="100%">
         <IgrRowIsland
         childDataKey="Orders"
         primaryKey="orderId"
-        autoGenerate="true"
-        gridCreated={(
-            rowIsland: IgrRowIsland,
-            e: IgrGridCreatedEventArgs
-        ) => gridCreated(rowIsland, e, "Customers")}
-        >
+                autoGenerate={true}
+                onGridCreated={(e: IgrGridCreatedEventArgs) => gridCreated(e, "Customers")}>
         <IgrRowIsland
             childDataKey="Details"
             primaryKey="productId"
-            autoGenerate="true"
-            gridCreated={(
-            rowIsland: IgrRowIsland,
-            e: IgrGridCreatedEventArgs
-            ) => gridCreated(rowIsland, e, "Orders")}
-        ></IgrRowIsland>
+                        autoGenerate={true}
+                        onGridCreated={(e: IgrGridCreatedEventArgs) => gridCreated(e, "Orders")}>
+                    </IgrRowIsland>
         </IgrRowIsland>
     </IgrHierarchicalGrid>
   );
@@ -461,9 +447,10 @@ export default function Sample() {
 ```ts
 const URL = `https://data-northwind.indigo.design/`;
 
-export function getData(dataState: any): any {
-    return fetch(buildUrl(dataState))
-        .then((result) => result.json());
+export async function getData(dataState: any): Promise<any> {
+    const response = await fetch(buildUrl(dataState));
+    const data = await response.json();
+    return data;
 }
 
 function buildUrl(dataState: any) {
@@ -613,15 +600,15 @@ function buildUrl(dataState) {
 ```
 
 ```tsx
-<IgrHierarchicalGrid data={localData} autoGenerate="false"
-    allowFiltering='true' height="600px" width="800px">
-    <IgrColumn field="ID" pinned="true" filterable="true"></IgrColumn>
+<IgrHierarchicalGrid data={localData} autoGenerate={false}
+    allowFiltering={true} height="600px" width="800px">
+    <IgrColumn field="ID" pinned={true} filterable={true}></IgrColumn>
     <IgrColumnGroup header="Information">
         <IgrColumn field="ChildLevels"></IgrColumn>
-        <IgrColumn field="ProductName" hasSummary="true"></IgrColumn>
+        <IgrColumn field="ProductName" hasSummary={true}></IgrColumn>
     </IgrColumnGroup>
-    <IgrRowIsland childDataKey="childData" autoGenerate="false" rowSelection="multiple">
-        <IgrColumn field="ID" hasSummary="true" dataType="number"></IgrColumn>
+    <IgrRowIsland childDataKey="childData" autoGenerate={false} rowSelection="multiple">
+        <IgrColumn field="ID" hasSummary={true} dataType="number"></IgrColumn>
         <IgrColumnGroup header="Information2">
             <IgrColumn field="ChildLevels"></IgrColumn>
             <IgrColumn field="ProductName"></IgrColumn>

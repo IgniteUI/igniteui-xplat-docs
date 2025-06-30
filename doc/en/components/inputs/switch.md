@@ -27,7 +27,7 @@ First, you need to install the {ProductName} by running the following command:
 npm install {PackageWebComponents}
 ```
 
-You will then need to import the `Switch`, its necessary CSS, and register its module, like so:
+You will then need to import the `Switch`and its necessary CSS, like so:
 
 ```ts
 import { defineComponents, IgcSwitchComponent } from "igniteui-webcomponents";
@@ -47,12 +47,11 @@ First, you need to the install the corresponding {ProductName} npm package by ru
 npm install igniteui-react
 ```
 
-You will then need to import the `Switch`, its necessary CSS, and register its module, like so:
+You will then need to import the `Switch` and its necessary CSS, like so:
 
 ```tsx
-import { IgrSwitchModule, IgrSwitch } from 'igniteui-react';
+import { IgrSwitch } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrSwitchModule.register();
 ```
 <!-- end: React -->
 
@@ -113,7 +112,7 @@ To provide a meaningful label for the switch, simply place some text between the
 You can specify if the label should be positioned before or after the switch toggle by setting the `LabelPosition` attribute of the switch. Allowed values are `before` and `after`(default):
 
 ```tsx
-<IgrSwitch ariaLabelledby="switchLabel" labelPosition="Before" ><span id="switch-label">Label</span></IgrSwitch>
+<IgrSwitch aria-labelledby="switchLabel" labelPosition="before" ><span id="switch-label">Label</span></IgrSwitch>
 ```
 
 ```html
@@ -128,7 +127,7 @@ The switch can also be labelled by elements external to the switch. In this case
 
 ```tsx
 <span id="switch-label">Label</span>
-<IgrSwitch ariaLabelledby="switchLabel"></IgrSwitch>
+<IgrSwitch aria-labelledby="switchLabel"></IgrSwitch>
 ```
 
 ```html
@@ -150,7 +149,7 @@ The switch can also be labelled by elements external to the switch. In this case
 You can use the `checked` attribute to toggle on the switch.
 
 ```tsx
-<IgrSwitch checked="true"></IgrSwitch>
+<IgrSwitch checked={true}></IgrSwitch>
 ```
 
 ```html
@@ -170,7 +169,7 @@ You can use the `checked` attribute to toggle on the switch.
 You can use the `required` attribute to mark the switch as required.
 
 ```tsx
-<IgrSwitch required="true"></IgrSwitch>
+<IgrSwitch required={true}></IgrSwitch>
 ```
 
 ```html
