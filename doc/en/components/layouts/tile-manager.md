@@ -1,8 +1,8 @@
 ---
 title: {Platform} Tile Manager Component - {ProductName}
 _description: {Platform} Tile Manager component enables the display of content in individual tiles.
-_keywords: {Platform} Tile Manager, {ProductName}, Infragistics
-mentionedTypes: ["TileManager"]
+_keywords: {Platform} Tile Manager, {ProductName}, Infragistics, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, Layout components
+mentionedTypes: ["TileManager", "Tile"]
 ---
 
 # {Platform} Tile Manager Overview
@@ -19,11 +19,11 @@ The following {ProductName} Tile Manager Example shows the component in action.
 
 ## Usage
 
-The Tile Manager provides a base tile layout behavior, managing the placement of tiles in maximized or normal state. The tiles can be sized independently of each other and used to form complex layouts. End users can reorder tiles by dragging and dropping them, providing a flexible and intuitive experience. 
+The `TileManager` provides a base tile layout behavior, managing the placement of tiles in maximized or normal state. The tiles can be sized independently of each other and used to form complex layouts. End users can reorder tiles by dragging and dropping them, providing a flexible and intuitive experience. 
 
 The Tile Manager offers two components that we can use:
-- `IgcTileComponent` - This component represents an individual tile displayed within the Tile Manager.
-- `IgcTileManagerComponent` - This is the main component that contains all of the tile components, serving as the container for the entire tile layout.
+- `Tile` - This component represents an individual tile displayed within the Tile Manager.
+- `TileManager` - This is the main component that contains all of the tile components, serving as the container for the entire tile layout.
 
 ### Getting Started
 
@@ -68,7 +68,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 builder.Services.AddIgniteUIBlazor(typeof(IgbTileManagerModule));
 ```
 
-You will also need to link an additional CSS file to apply the styling to the `Tile Manager` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+You will also need to link an additional CSS file to apply the styling to the `TileManager` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -91,6 +91,7 @@ Now you can start with a basic configuration of the {Platform} Tile Manager.
   </igc-tile>
 </igc-tile-manager>
 ```
+<!-- end: WebComponents -->
 <!-- Blazor -->
 ```razor
 <IgbTileManager>
@@ -129,7 +130,7 @@ For a complete introduction to the {ProductName}, read the [*Getting Started*](.
 
 ### Columns and Rows
 
-We can specify the number of grid columns for our Tile Manager. To do this, simply set the `column-count` property to the desired number of columns. If the number is less than one or the property is not set, the Tile Manager will create as many columns as can fit, with each column being at least 200px wide and expanding to equally share the available space. When the viewport dimensions change, the tiles will also rearrange themselves to maximize the use of space.
+We can specify the number of grid columns for our Tile Manager. To do this, simply set the `columnCount` property to the desired number of columns. If the number is less than one or the property is not set, the Tile Manager will create as many columns as can fit, with each column being at least 200px wide and expanding to equally share the available space. When the viewport dimensions change, the tiles will also rearrange themselves to maximize the use of space.
 
 <!-- WebComponents -->
 ```html
@@ -153,7 +154,7 @@ We can specify the number of grid columns for our Tile Manager. To do this, simp
 
 <!-- React -->
 ```tsx
-<IgrTileManager column-count="2">
+<IgrTileManager columnCount="2">
   <IgrTile>
     <span slot="title">Tile 1 header</span>
     <p>Content for Tile 1</p>
@@ -263,7 +264,7 @@ We also have properties for setting the minimum width of the columns (`min-colum
 
 <!-- React -->
 ```tsx
-<IgrTileManager min-column-width="200px" min-row-height="150px">
+<IgrTileManager minColumnWidth="200px" minRowHeight="150px">
   <IgrTile>
     <span slot="title">Tile 1 header</span>
     <p>Content for Tile 1</p>
@@ -279,7 +280,7 @@ We also have properties for setting the minimum width of the columns (`min-colum
 
 <!-- Blazor -->
 ```razor
-<IgbTileManager min-column-width="200px" min-row-height="150px">
+<IgbTileManager minColumnWidth="200px" minRowHeight="150px">
   <IgbTile>
     <span slot="title">Tile 1 header</span>
     <p>Content for Tile 1</p>
@@ -449,7 +450,7 @@ We can use the `resize-mode` property to control how resizing is applied in the 
 <!-- end: WebComponents -->
 <!-- React -->
 ```tsx
-<IgrTileManager resize-mode='hover'>
+<IgrTileManager resizeMode='hover'>
   <IgrTile>
     <p>Tile 1</p>
   </IgrTile>
@@ -600,7 +601,7 @@ igc-tile:nth-child(n+2)::part(trigger) {
 }
 ```
 
-You can also change the icon of the adorners to a custom one using the `side-adorner`, `corner-adorner`, and `bottom-adorner` slots. To do this, create an `igc-icon` element inside the tile element. Then, set its slot to one of the three adorners and specify the name of the icon you want to use.
+You can also change the icon of the adorners to a custom one using the `side-adorner`, `corner-adorner`, and `bottom-adorner` slots. For instance:
 
 <!-- WebComponents -->
 ```html
@@ -615,9 +616,9 @@ You can also change the icon of the adorners to a custom one using the `side-ado
 <!-- React -->
 ```tsx
 <IgrTile>
-  <IgrIcon slot="side-adorner" class="side" name="indicator"></IgrIcon>
-  <IgrIcon slot="corner-adorner" class="corner" name="indicator"></IgrIcon>
-  <IgrIcon slot="bottom-adorner" class="bottom" name="indicator"></IgrIcon>
+  <div slot="side-adorner"><IgrIcon class="side" name="indicator"></IgrIcon></div>
+  <div slot="corner-adorner"><IgrIcon class="corner" name="indicator"></IgrIcon></div>
+  <div slot="bottom-adorner"><IgrIcon class="bottom" name="indicator"></IgrIcon></div>
   <span slot="title">Tile header</span>
 </IgrTile>
 ```
@@ -635,8 +636,11 @@ You can also change the icon of the adorners to a custom one using the `side-ado
 
 `sample="/layouts/tile-manager/styling", height="481", alt="{Platform} Tile Manager Styling Example"`
 
-## API References
+## API Reference
 
+- `TileManager`
+- `Tile`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
