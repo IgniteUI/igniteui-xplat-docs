@@ -62,13 +62,11 @@ defineComponents(IgcNavbarComponent);
 npm install igniteui-react
 ```
 
-次に、以下のように、`Navbar` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、`Navbar` と必要な CSS をインポートする必要があります:
 
 ```tsx
-import { IgrNavbarModule, IgrNavbar } from 'igniteui-react';
+import { IgrNavbar } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrNavbarModule.register();
 ```
 
 <!-- end: React -->
@@ -93,11 +91,41 @@ IgrNavbarModule.register();
 </IgrNavbar>
 ```
 
-## コンテンツ
+### コンテンツ
 
-次のサンプルに示すように、`Start` スロットと `End` スロットを使用して `Navbar` にいくつかの `Icon` 要素を追加できます。
+`Navbar` コンポーネントを強化するには、`Icon` またはその他のコンポーネントを start 位置または end 位置のコンテンツとして追加し、ユーザーがバーから直接主要な位置に移動できるようにします。
 
-`sample="/menus/nav-bar/content", height="100", alt="{Platform} Navbar スタイル設定の例"`
+```html
+<igc-navbar>
+    <igc-icon name="home" slot="start"></igc-icon>
+    <h2>Sample App</h2>
+    <igc-icon name="search" slot="end"></igc-icon>
+    ...
+</igc-navbar>
+```
+
+```Razor
+<IgbNavbar>
+    <IgbIcon @ref="@HomeIcon" slot="start" IconName="home" Collection="material" />
+    <h3>Sample App</h3>
+    <IgbIcon @ref="@SearchIcon" slot="end" IconName="search" Collection="material" />
+    ...
+</IgbNavbar>
+```
+
+```tsx
+ <IgrNavbar>
+    <div slot="start">
+        <IgrIcon name="home" collection="material" />
+    </div>
+    <h2>Sample App</h2>
+    <div slot="end">
+        <IgrIcon name="search" collection="material" />
+    </div>
+    ...
+</IgrNavbar>
+
+```
 
 ## スタイル設定
 

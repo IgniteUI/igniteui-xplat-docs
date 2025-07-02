@@ -53,19 +53,15 @@ defineComponents(IgcAccordionComponent);
 npm install igniteui-react
 ```
 
-次に、以下のように、`Accordion` および `ExpansionPanel` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、`Accordion` および `ExpansionPanel` と必要な CSS をインポートする必要があります:
 
 ```tsx
 import {
   IgrAccordion,
-  IgrAccordionModule,
   IgrExpansionPanel,
-  IgrExpansionPanelModule,
 } from "igniteui-react";
 import "igniteui-webcomponents/themes/light/bootstrap.css";
 
-IgrAccordionModule.register();
-IgrExpansionPanelModule.register();
 ```
 
 <!-- end: React -->

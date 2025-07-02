@@ -41,9 +41,10 @@ public getData(dataState): Observable<any[]> {
 ブラウザーが提供する [`fetch()`](https://developer.mozilla.org/ja/docs/Web/API/fetch) グローバル関数を使用した HTTP プロトコルでバックエンドサービスと通信します。データを取得にはサービスのシンプルなメソッドが必要となります。
 
 ```ts
-export function getData(dataState: any): any {
-    return fetch(buildUrl(dataState))
-        .then((result) => result.json());
+export async function getData(dataState: any): Promise<any> {
+    const response = await fetch(buildUrl(dataState));
+    const data = await response.json();
+    return data;
 }
 ```
 
@@ -203,9 +204,10 @@ export class RemoteLoDService {
 ```ts
 const URL = `https://data-northwind.indigo.design/`;
 
-export function getData(dataState: any): any {
-    return fetch(buildUrl(dataState))
-        .then((result) => result.json());
+export async function getData(dataState: any): Promise<any> {
+    const response = await fetch(buildUrl(dataState));
+    const data = await response.json();
+    return data;
 }
 
 function buildUrl(dataState: any) {
@@ -478,27 +480,13 @@ constructor() {
     <IgrColumn field="contactTitle" header="Contact Title"></IgrColumn>
     <IgrColumn field="address.country" header="Country"></IgrColumn>
     <IgrColumn field="address.phone" header="Phone"></IgrColumn>
-    <IgrRowIsland
-      childDataKey="Orders"
-      primaryKey="orderId"
-      gridCreated={(
-        rowIsland: IgrRowIsland,
-        e: IgrGridCreatedEventArgs
-      ) => gridCreated(rowIsland, e, "Customers")}
-    >
+    <IgrRowIsland childDataKey="Orders" primaryKey="orderId" onGridCreated={(e: IgrGridCreatedEventArgs) => gridCreated(e, "Customers")}>
         <IgrColumn field="orderId" hidden={true}></IgrColumn>
         <IgrColumn field="shipAddress.country" header="Ship Country"></IgrColumn>
         <IgrColumn field="shipAddress.city" header="Ship City"></IgrColumn>
         <IgrColumn field="shipAddress.street" header="Ship Address"></IgrColumn>
         <IgrColumn field="orderDate" header="Order Date" dataType="date"></IgrColumn>
-        <IgrRowIsland
-          childDataKey="Details"
-          primaryKey="productId"
-          gridCreated={(
-            rowIsland: IgrRowIsland,
-            e: IgrGridCreatedEventArgs
-          ) => gridCreated(rowIsland, e, "Orders")}
-        >
+        <IgrRowIsland childDataKey="Details" primaryKey="productId" onGridCreated={(e: IgrGridCreatedEventArgs) => gridCreated(e, "Orders")}>
             <IgrColumn field="productId" hidden={true}></IgrColumn>
             <IgrColumn field="quantity" header="Quantity"></IgrColumn>
             <IgrColumn field="unitPrice" header="Unit Price"></IgrColumn>
@@ -671,8 +659,9 @@ public gridCreated(event: CustomEvent<IgcGridCreatedEventArgs>, _parentKey: stri
 
 <!-- React -->
 ```tsx
-function gridCreated(rowIsland: IgrRowIsland, event: IgrGridCreatedEventArgs, _parentKey: string) {
+function gridCreated(event: IgrGridCreatedEventArgs, _parentKey: string) {
     const context = event.detail;
+    const rowIsland = context.owner;
     const dataState = {
         key: rowIsland.childDataKey,
         parentID: context.parentID,
@@ -827,8 +816,9 @@ useEffect(() => {
   );
 }, []);
 
-function gridCreated(rowIsland: IgrRowIsland, event: IgrGridCreatedEventArgs, _parentKey: string) {
+function gridCreated(event: IgrGridCreatedEventArgs, _parentKey: string) {
     const context = event.detail;
+    const rowIsland = context.owner;
     const dataState = {
         key: rowIsland.childDataKey,
         parentID: context.parentID,

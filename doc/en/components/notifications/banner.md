@@ -39,13 +39,11 @@ First, you need to the install the corresponding {ProductName} npm package by ru
 npm install igniteui-react
 ```
 
-You will then need to import the `Banner`, its necessary CSS, and register its module, like so:
+You will then need to import the `Banner` and its necessary CSS, like so:
 
 ```tsx
-import { IgrBannerModule, IgrBanner } from 'igniteui-react';
+import { IgrBanner } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
-IgrBannerModule.register();
 ```
 <!-- end: React -->
 
@@ -80,12 +78,12 @@ In order to display the banner component, use its `Show` method and call it on a
 ```
 
 ```tsx
-<IgrButton clicked={() => bannerRef.current.show()}>
+<IgrButton onClick={() => bannerRef.current.show()}>
     <span>Show Banner</span>
 </IgrButton>
 
 <IgrBanner ref={bannerRef}>
-    <span key="message">You are currently offline.</span>
+    <span>You are currently offline.</span>
 </IgrBanner>
 ```
 
@@ -126,7 +124,7 @@ Configuring the message displayed in the banner is easy - just change the conten
 
 ```tsx
 <IgrBanner ref={bannerRef}>
-    <span key="message">You have lost connection to the internet. This app is offline.</span>
+    <span>You have lost connection to the internet. This app is offline.</span>
 </IgrBanner>
 ```
 
@@ -154,8 +152,8 @@ To pass an `Icon` to your banner, use the `prefix` slot:
 
 ```tsx
 <IgrBanner ref={bannerRef}>
-    <IgrIcon key="icon" slot="prefix" name="signal_wifi_off"></IgrIcon>
-    <span key="message">You have lost connection to the internet. This app is offline.</span>
+    <IgrIcon slot="prefix" name="signal_wifi_off"></IgrIcon>
+    <span>You have lost connection to the internet. This app is offline.</span>
 </IgrBanner>
 ```
 
@@ -177,8 +175,8 @@ If you want to use an `Icon` in your banner message, simply insert it in the ban
 
 ```tsx
 <IgrBanner ref={bannerRef}>
-    <span key="message">You have lost connection to the internet. This app is offline.</span>
-    <IgrIcon key="icon" name="signal_wifi_off"></IgrIcon>
+    <span>You have lost connection to the internet. This app is offline.</span>
+    <IgrIcon name="signal_wifi_off"></IgrIcon>
 </IgrBanner>
 ```
 
@@ -208,12 +206,12 @@ The `Banner` exposes the `actions` slot for templating the banner buttons. This 
 
 ```tsx
 <IgrBanner ref={bannerRef}>
-    <IgrIcon key="icon" slot="prefix" name="signal_wifi_off"></IgrIcon>
-    <span key="message">You have lost connection to the internet. This app is offline.</span>
-    <div key="actions" slot="actions">
-        <IgrButton key="button" variant="flat" clicked={() => bannerRef.current.toggle()}>
-            <IgrRipple key="ripple" />
-            <span key="action-text">Toggle Banner</span>
+    <IgrIcon slot="prefix" name="signal_wifi_off"></IgrIcon>
+    <span>You have lost connection to the internet. This app is offline.</span>
+    <div slot="actions">
+        <IgrButton variant="flat" onClick={() => bannerRef.current.toggle()}>
+            <IgrRipple />
+            <span>Toggle Banner</span>
         </IgrButton>
     </div>
 </IgrBanner>
@@ -245,7 +243,7 @@ The `Banner` exposes the `actions` slot for templating the banner buttons. This 
 
 ### Binding to events
 
-The banner component emits the `igcClosing` and `igcClosed` events when being closed. The `igcClosing` event is cancelable - it uses the [`CustomEvent`](https://developer.mozilla.org/docs/Web/API/CustomEvent) interface and the emitted object has its `cancelable` property set to **true**. If we cancel the `igcClosing` event, the corresponding end action and event will not be triggered - the banner will not be closed and the `igcClosed` event will not be emitted.
+The banner component emits the `Closing` and `Closed` events when being closed. The `Closing` event is cancelable - it uses the [`CustomEvent`](https://developer.mozilla.org/docs/Web/API/CustomEvent) interface and the emitted object has its `cancelable` property set to **true**. If we cancel the `Closing` event, the corresponding end action and event will not be triggered - the banner will not be closed and the `Closed` event will not be emitted.
 
 To cancel the closing event, call the [`preventDefault`](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) method.
 
@@ -263,17 +261,9 @@ banner.addEventListener('igcClosing', (event) => {
 ```
 
 ```tsx
-<IgrBanner ref={bannerRef}>
+<IgrBanner onClosing={(event) => event.preventDefault()}>
     ...
 </IgrBanner>
-
-const bannerRef = useRef<IgrBanner>(null);
-
-useEffect(() => {
-    bannerRef.current.nativeElement.addEventListener('igcClosing', (event) => {
-        event.preventDefault();
-    });
-}, [])
 ```
 
 ```razor
@@ -328,16 +318,16 @@ Let's create a banner with two custom buttons - one for dismissing the notificat
 
 ```tsx
 <IgrBanner ref={bannerRef}>
-    <IgrIcon key="icon" slot="prefix" name="signal_wifi_off"></IgrIcon>
-    <span key="message">You have lost connection to the internet. This app is offline.</span>
-    <div key="actions" slot="actions">
-        <IgrButton key="button-offline" variant="flat" clicked={() => bannerRef.current.hide()}>
-            <IgrRipple key="ripple-offline" />
-            <span key="action-offline">Continue Offline</span>
+    <IgrIcon slot="prefix" name="signal_wifi_off"></IgrIcon>
+    <span>You have lost connection to the internet. This app is offline.</span>
+    <div slot="actions">
+        <IgrButton variant="flat" onClick={() => bannerRef.current.hide()}>
+            <IgrRipple />
+            <span>Continue Offline</span>
         </IgrButton>
-        <IgrButton key="button-wifi" variant="flat" clicked={() => refreshBanner()}>
-            <IgrRipple key="ripple-wifi" />
-            <span key="action-wifi">Turn On Wifi</span>
+        <IgrButton variant="flat" onClick={refreshBanner}>
+            <IgrRipple />
+            <span>Turn On Wifi</span>
         </IgrButton>
     </div>
 </IgrBanner>
@@ -423,37 +413,43 @@ public refreshBanner() {
 ```
 
 ```tsx
-<IgrNavbar>
-    <h1 key="header">Gallery</h1>
-    <IgrIcon ref={iconRef} key="icon" name="signal_wifi_off" slot="end" onClick={() => refreshBanner()}></IgrIcon>
-</IgrNavbar>
-
-<IgrBanner ref={bannerRef}>
-    ...
-    <div key="actions" slot="actions">
-        ...
-        <IgrButton key="button-wifi" variant="flat" clicked={() => refreshBanner()}>
-            <IgrRipple key="ripple-wifi" />
-            <span key="action-wifi">Turn On Wifi</span>
-        </IgrButton>
-    </div>
-</IgrBanner>
-
 const bannerRef = useRef<IgrBanner>(null);
 const iconRef = useRef<IgrIcon>(null);
 
 const [wifiState, setWifiState] = useState(false);
+const [iconName, setIconName] = useState("signal_wifi_off");
 
-function refreshBanner() {
-    if (!wifiState) {
-        iconRef.current.name = 'signal_wifi_4_bar';
+const refreshBanner = () => {
+    const nextWifiState = !wifiState;
+    setWifiState(nextWifiState);
+    setIconName(nextWifiState ? "signal_wifi_4_bar" : "signal_wifi_off");
+
+    if (nextWifiState) {
         bannerRef.current.hide();
     } else {
-        iconRef.current.name = 'signal_wifi_off';
         bannerRef.current.show();
     }
-    setWifiState(current => !current);
 }
+
+return(
+    <>
+        <IgrNavbar>
+            <h1>Gallery</h1>
+            <IgrIcon ref={iconRef} name={iconName} slot="end" onClick={refreshBanner}></IgrIcon>
+        </IgrNavbar>
+
+        <IgrBanner ref={bannerRef}>
+            ...
+            <div slot="actions">
+                ...
+                <IgrButton variant="flat" onClick={refreshBanner}>
+                    <IgrRipple />
+                    <span>Turn On Wifi</span>
+                </IgrButton>
+            </div>
+        </IgrBanner>
+    </>
+);
 ```
 
 ```razor

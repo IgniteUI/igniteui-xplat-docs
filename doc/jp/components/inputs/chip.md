@@ -45,12 +45,11 @@ defineComponents(IgcChipComponent);
 npm install igniteui-react
 ```
 
-次に、以下のように、`Chip` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、`Chip` と必要な CSS をインポートする必要があります:
 
 ```tsx
-import { IgrChipModule, IgrChip } from 'igniteui-react';
+import { IgrChip } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrChipModule.register();
 ```
 <!-- end: React -->
 
@@ -100,7 +99,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbChipModule));
 選択可能な Chip を表示するには、Chip の `Selectable` プロパティを使用できます。
 
 ```tsx
-<IgrChip selectable="true"></IgrChip>
+<IgrChip selectable={true}></IgrChip>
 ```
 
 ```html
@@ -114,7 +113,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbChipModule));
 削除可能可能な Chip を表示するには、Chip の `Removable` プロパティを使用できます。
 
 ```tsx
-<IgrChip removable="true"></IgrChip>
+<IgrChip removable={true}></IgrChip>
 ```
 
 ```html
@@ -152,7 +151,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbChipModule));
 {ProductName} Chip は、`Disabled` プロパティを使用して無効にできます。
 
 ```tsx
-<IgrChip disabled="true"></IgrChip>
+<IgrChip disabled={true}></IgrChip>
 ```
 
 ```html
@@ -182,19 +181,27 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbChipModule));
 ユーザーが `--ig-size` CSS 変数を利用して `Chip` のサイズを選択できるようにします。
 
 ```tsx
-<IgrChip size="small" selectable="true" removable="true">
+<IgrChip className="size-small" selectable={true} removable={true}>
     <span>Chip</span>
 </IgrChip>
-<IgrChip size="medium" selectable="true" removable="true">
+<IgrChip className="size-medium" selectable={true} removable={true}>
     <span>Chip</span>
 </IgrChip>
-<IgrChip size="large" selectable="true" removable="true">
+<IgrChip className="size-large" selectable={true} removable={true}>
     <span>Chip</span>
 </IgrChip>
 ```
 
 ```css
-igc-chip {
+.size-small {
+  --ig-size: var(--ig-size-small);
+}
+
+.size-medium {
+  --ig-size: var(--ig-size-medium);
+}
+
+.size-large {
     --ig-size: var(--ig-size-large);
 }
 ```
@@ -223,7 +230,6 @@ igc-chip::part(suffix) {
 
  - `Chip`
  - [スタイル設定 & テーマ](../themes/overview.md)
-
 
 ## その他のリソース
 

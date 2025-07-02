@@ -49,9 +49,8 @@ npm install igniteui-react
 次に、以下のように、`IconButton` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
 ```tsx
-import { IgrIconButtonModule, IgrIconButton } from 'igniteui-react';
+import { IgrIconButton } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-IgrIconButtonModule.register();
 ```
 <!-- end: React -->
 
@@ -96,7 +95,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbIconButtonModule));
 
 
 ```tsx
-<IgrIconButton name="search" collection="contained"></IgrIconButton>
+<IgrIconButton name="search" variant="contained"></IgrIconButton>
 ```
 
 ```html
@@ -115,14 +114,23 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbIconButtonModule));
 
 
 ```tsx
-<IgrIconButton name="thumb-up" size="medium"></IgrIconButton>
+<IgrIconButton className="size-medium" name="thumb-up"></IgrIconButton>
 ```
+<!-- React-->
+```css
+.size-medium {
+    --ig-size: var(--ig-size-medium);
+}
+```
+<!-- end: React-->
 
+<!-- WebComponents, Blazor-->
 ```css
 igc-icon-button {
     --ig-size: var(--ig-size-medium);
 }
 ```
+<!-- end: WebComponents, Blazor-->
 
 ```razor
 <IgbIconButton IconName="thumb-up" Collection="material" Size="@SizableComponentSize.Medium" />
@@ -155,7 +163,7 @@ igc-icon-button {
 一部のアイコンは、右から左 (RTL) モードで使用する場合、少し異なって見える必要があります。そのため、設定するとアイコン ボタンを水平方向に反転させる `mirrored` 属性を提供します。
 
 ```tsx
-<IgrIconButton name="thumb-up" mirrored="true"></IgrIconButton>
+<IgrIconButton name="thumb-up" mirrored={true}></IgrIconButton>
 ```
 
 ```html
