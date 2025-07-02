@@ -43,6 +43,46 @@ The `{ComponentName}` supports remote virtualization, which is demonstrated in t
 
 <!-- end: Angular -->
 
+<!-- Blazor -->
+
+## Templating
+
+When needing to customize one of the existing templates in the grid, Blazor provides two possible ways to define a template:
+
+- via a server-side template, using the related component property (i.e. `BodyTemplate` property) or declaratively with the template name. For example:
+
+```
+    <IgbColumn>
+        <BodyTemplate>
+           Template content here
+        </BodyTemplate>
+    </IgbColumn>
+```
+
+This will render the template after first requesting and resolving it from the server.
+
+- via a client-template using the `Script` equivalent of the property (i.e. `BodyTemplateScript`) to set it to the name of the client-side function handler, for example:
+
+```
+    <IgbColumn BodyTemplateScript="CellTemplate">
+    </IgbColumn>
+```
+
+```
+igRegisterScript("CellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`Template content here`;
+}, false);
+
+```
+
+The handler then renders the provided lit template directly in the DOM as needed.
+
+> [!Note]
+> While both approaches are valid, the server-side templates do require a round-trip request to the server to retrieve and resolve the custom template before rendering it on the client. As such the client-template approach is more optimized and recommended, especially in scenarios with many templates that need frequent updates as there may be a noticeable delay between the related user-interaction and the template updates.
+
+<!-- end: Blazor -->
+
 ## Virtualization Limitations
 
 *   On Mac OS horizontal scrollbar is not visible when "Show scrollbars only when scrolling" system option is set to true (which is the default value). This is because the `{ComponentName}`’s row container has an overflow set to hidden. Change the option to "Always" and the scrollbar will appear.
