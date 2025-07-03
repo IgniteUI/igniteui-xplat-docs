@@ -44,7 +44,7 @@ npm install igniteui-react
 
 <!-- end: React -->
 
-Before using the Tile Manager, you need to register it as follows:
+Before using the Tile Manager, you need to import it as follows:
 
 <!-- WebComponents -->
 ```ts
@@ -137,15 +137,15 @@ We can specify the number of grid columns for our Tile Manager. To do this, simp
 <igc-tile-manager column-count="2">
   <igc-tile>
     <span slot="title">Tile 1 header</span>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </igc-tile>
   <igc-tile>
     <span slot="title">Tile 2 header</span>
-    <p>Content for Tile 2</p>
+    <p>Tile 2 Content</p>
   </igc-tile>
   <igc-tile>
     <span slot="title">Tile 3 header</span>
-    <p>Content for Tile 3</p>
+    <p>Tile 3 Content</p>
   </igc-tile>
   ...
 </igc-tile-manager>
@@ -154,18 +154,18 @@ We can specify the number of grid columns for our Tile Manager. To do this, simp
 
 <!-- React -->
 ```tsx
-<IgrTileManager columnCount="2">
+<IgrTileManager columnCount={2}>
   <IgrTile>
     <span slot="title">Tile 1 header</span>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </IgrTile>
   <IgrTile>
     <span slot="title">Tile 2 header</span>
-    <p>Content for Tile 2</p>
+    <p>Tile 2 Content</p>
   </IgrTile>
   <IgrTile>
     <span slot="title">Tile 3 header</span>
-    <p>Content for Tile 3</p>
+    <p>Tile 3 Content</p>
   </IgrTile>
   ...
 </IgrTileManager>
@@ -174,18 +174,18 @@ We can specify the number of grid columns for our Tile Manager. To do this, simp
 
 <!-- Blazor -->
 ```razor
-<IgbTileManager column-count="2">
+<IgbTileManager ColumnCount={2}>
   <IgbTile>
     <span slot="title">Tile 1 header</span>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </IgbTile>
   <IgbTile>
     <span slot="title">Tile 2 header</span>
-    <p>Content for Tile 2</p>
+    <p>Tile 2 Content</p>
   </IgbTile>
   <IgbTile>
     <span slot="title">Tile 3 header</span>
-    <p>Content for Tile 3</p>
+    <p>Tile 3 Content</p>
   </IgbTile>
   ...
 </IgbTileManager>
@@ -202,11 +202,11 @@ Another property that can be used in the Tile Manager is the `gap` property, whi
 <igc-tile-manager gap="20px">
   <igc-tile>
     <span slot="title">Tile 1 header</span>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </igc-tile>
   <igc-tile>
     <span slot="title">Tile 2 header</span>
-    <p>Content for Tile 2</p>
+    <p>Tile 2 Content</p>
   </igc-tile>
   ...
 </igc-tile-manager>
@@ -217,11 +217,11 @@ Another property that can be used in the Tile Manager is the `gap` property, whi
 <IgrTileManager gap="20px">
   <IgrTile>
     <span slot="title">Tile 1 header</span>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </IgrTile>
   <IgrTile>
     <span slot="title">Tile 2 header</span>
-    <p>Content for Tile 2</p>
+    <p>Tile 2 Content</p>
   </IgrTile>
   ...
 </IgrTileManager>
@@ -232,11 +232,11 @@ Another property that can be used in the Tile Manager is the `gap` property, whi
 <IgbTileManager gap="20px">
   <IgbTile>
     <span slot="title">Tile 1 header</span>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </IgbTile>
   <IgbTile>
     <span slot="title">Tile 2 header</span>
-    <p>Content for Tile 2</p>
+    <p>Tile 2 Content</p>
   </IgbTile>
   ...
 </IgbTileManager>
@@ -251,11 +251,11 @@ We also have properties for setting the minimum width of the columns (`min-colum
 <igc-tile-manager min-column-width="200px" min-row-height="150px">
   <igc-tile>
     <span slot="title">Tile 1 header</span>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </igc-tile>
   <igc-tile>
     <span slot="title">Tile 2 header</span>
-    <p>Content for Tile 2</p>
+    <p>Tile 2 Content</p>
   </igc-tile>
   ...
 </igc-tile-manager>
@@ -267,11 +267,11 @@ We also have properties for setting the minimum width of the columns (`min-colum
 <IgrTileManager minColumnWidth="200px" minRowHeight="150px">
   <IgrTile>
     <span slot="title">Tile 1 header</span>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </IgrTile>
   <IgrTile>
     <span slot="title">Tile 2 header</span>
-    <p>Content for Tile 2</p>
+    <p>Tile 2 Content</p>
   </IgrTile>
   ...
 </IgrTileManager>
@@ -283,11 +283,11 @@ We also have properties for setting the minimum width of the columns (`min-colum
 <IgbTileManager minColumnWidth="200px" minRowHeight="150px">
   <IgbTile>
     <span slot="title">Tile 1 header</span>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </IgbTile>
   <IgbTile>
     <span slot="title">Tile 2 header</span>
-    <p>Content for Tile 2</p>
+    <p>Tile 2 Content</p>
   </IgbTile>
   ...
 </IgbTileManager>
@@ -315,11 +315,11 @@ The Tile component has properties that can be set individually for each tile. So
 <igc-tile-manager>
   <igc-tile col-span="2" disable-resize>
     <span slot="title">Tile 1 header</span>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </igc-tile>
   <igc-tile>
     <span slot="title">Tile 2 header</span>
-    <p>Content for Tile 2</p>
+    <p>Tile 2 Content</p>
   </igc-tile>
   ...
 </igc-tile-manager>
@@ -328,13 +328,13 @@ The Tile component has properties that can be set individually for each tile. So
 <!-- React -->
 ```tsx
 <IgrTileManager>
-  <IgrTile col-span="2" disable-resize>
+  <IgrTile colSpan={2} disableResize={true}>
     <span slot="title">Tile 1 header</span>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </IgrTile>
   <IgrTile>
     <span slot="title">Tile 2 header</span>
-    <p>Content for Tile 2</p>
+    <p>Tile 2 Content</p>
   </IgrTile>
   ...
 </IgrTileManager>
@@ -345,11 +345,11 @@ The Tile component has properties that can be set individually for each tile. So
 <IgbTileManager>
   <IgbTile col-span="2" disable-resize>
     <span slot="title">Tile 1 header</span>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </IgbTile>
   <IgbTile>
     <span slot="title">Tile 2 header</span>
-    <p>Content for Tile 2</p>
+    <p>Tile 2 Content</p>
   </IgbTile>
   ...
 </IgbTileManager>
@@ -386,7 +386,7 @@ If you want to display just one of the two buttons, you can set either `disable-
   <igc-tile disable-fullscreen>
     <igc-icon-button slot="maximize-actions" name="north_east" collection="material">
     </igc-icon-button>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </igc-tile>
 </igc-tile-manager>
 ```
@@ -394,10 +394,10 @@ If you want to display just one of the two buttons, you can set either `disable-
 <!-- React -->
 ```tsx
 <IgrTileManager>
-  <IgrTile disable-fullscreen>
+  <IgrTile disableFullscreen={true}>
     <IgrIconButton slot="maximize-actions" name="north_east" collection="material">
     </IgrIconButton>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </IgrTile>
 </IgrTileManager>
 ```
@@ -408,7 +408,7 @@ If you want to display just one of the two buttons, you can set either `disable-
   <IgbTile disable-fullscreen>
     <IgbIconButton slot="maximize-actions" name="north_east" collection="material">
     </IgbIconButton>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </IgbTile>
 </IgbTileManager>
 ```
@@ -450,7 +450,7 @@ We can use the `resize-mode` property to control how resizing is applied in the 
 <!-- end: WebComponents -->
 <!-- React -->
 ```tsx
-<IgrTileManager resizeMode='hover'>
+<IgrTileManager resizeMode="hover">
   <IgrTile>
     <p>Tile 1</p>
   </IgrTile>
@@ -462,7 +462,7 @@ We can use the `resize-mode` property to control how resizing is applied in the 
 <!-- end: React -->
 <!-- Blazor -->
 ```razor
-<IgbTileManager resize-mode='hover'>
+<IgbTileManager ResizeMode='hover'>
   <IgbTile>
     <p>Tile 1</p>
   </IgbTile>
@@ -506,39 +506,39 @@ Similar to resizing, when you initiate the drag-and-drop process, a ghost elemen
 <igc-tile-manager drag-mode="tile-header">
   <igc-tile>
     <span slot="title">Tile 1 header</span>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </igc-tile>
   <igc-tile>
     <span slot="title">Tile 2 header</span>
-    <p>Content for Tile 2</p>
+    <p>Tile 2 Content</p>
   </igc-tile>
 </igc-tile-manager>
 ```
 <!-- end: WebComponents -->
 <!-- React -->
 ```tsx
-<IgrTileManager drag-mode="tile-header">
+<IgrTileManager dragMode="tile-header">
   <IgrTile>
     <span slot="title">Tile 1 header</span>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </IgrTile>
   <IgrTile>
     <span slot="title">Tile 2 header</span>
-    <p>Content for Tile 2</p>
+    <p>Tile 2 Content</p>
   </IgrTile>
 </IgrTileManager>
 ```
 <!-- end: React -->
 <!-- Blazor -->
 ```razor
-<IgbTileManager drag-mode="tile-header">
+<IgbTileManager DragMode="tile-header">
   <IgbTile>
     <span slot="title">Tile 1 header</span>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </IgbTile>
   <IgbTile>
     <span slot="title">Tile 2 header</span>
-    <p>Content for Tile 2</p>
+    <p>Tile 2 Content</p>
   </IgbTile>
 </IgbTileManager>
 ```
@@ -616,9 +616,9 @@ You can also change the icon of the adorners to a custom one using the `side-ado
 <!-- React -->
 ```tsx
 <IgrTile>
-  <div slot="side-adorner"><IgrIcon class="side" name="indicator"></IgrIcon></div>
-  <div slot="corner-adorner"><IgrIcon class="corner" name="indicator"></IgrIcon></div>
-  <div slot="bottom-adorner"><IgrIcon class="bottom" name="indicator"></IgrIcon></div>
+  <IgrIcon slot="side-adorner" className="side" name="indicator"></IgrIcon>
+  <IgrIcon slot="corner-adorner" className="corner" name="indicator"></IgrIcon>
+  <IgrIcon slot="bottom-adorner" className="bottom" name="indicator"></IgrIcon>
   <span slot="title">Tile header</span>
 </IgrTile>
 ```
