@@ -1893,6 +1893,12 @@
     "status": ""
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Custom Tailwind Classes",
+    "href": "themes/tailwind.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular"],
     "name": "Deprecated Components",
     "header": true
