@@ -121,7 +121,7 @@ You can specify if the label should be positioned before or after the checkbox t
 ```
 
 ```razor
-<IgbCheckbox LabelPosition="@CheckboxBaseLabelPosition.Before">Label</IgbCheckbox>
+<IgbCheckbox LabelPosition="@ToggleLabelPosition.Before">Label</IgbCheckbox>
 ```
 
 The checkbox can also be labelled by elements external to the checkbox. In this case, the user is given full control to position and style the label in accordance with their needs.

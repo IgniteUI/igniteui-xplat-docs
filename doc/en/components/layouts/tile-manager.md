@@ -130,7 +130,7 @@ For a complete introduction to the {ProductName}, read the [*Getting Started*](.
 
 ### Columns and Rows
 
-We can specify the number of grid columns for our Tile Manager. To do this, simply set the `columnCount` property to the desired number of columns. If the number is less than one or the property is not set, the Tile Manager will create as many columns as can fit, with each column being at least 200px wide and expanding to equally share the available space. When the viewport dimensions change, the tiles will also rearrange themselves to maximize the use of space.
+We can specify the number of grid columns for our Tile Manager. To do this, simply set the `ColumnCount` property to the desired number of columns. If the number is less than one or the property is not set, the Tile Manager will create as many columns as can fit, with each column being at least 200px wide and expanding to equally share the available space. When the viewport dimensions change, the tiles will also rearrange themselves to maximize the use of space.
 
 <!-- WebComponents -->
 ```html
@@ -195,7 +195,7 @@ In this code snippet, the three tiles in the Tile Manager will be arranged into 
 
 ### Gap
 
-Another property that can be used in the Tile Manager is the `gap` property, which defines the space between tiles. The value of the `gap` property must be a number followed by a length unit (e.g., px, rem, em, ...). This value will apply to both the horizontal gap (width) and the vertical gap (height) between tiles.
+Another property that can be used in the Tile Manager is the `Gap` property, which defines the space between tiles. The value of the `Gap` property must be a number followed by a length unit (e.g., px, rem, em, ...). This value will apply to both the horizontal gap (width) and the vertical gap (height) between tiles.
 
 <!-- WebComponents -->
 ```html
@@ -244,7 +244,7 @@ Another property that can be used in the Tile Manager is the `gap` property, whi
 <!-- end: Blazor -->
 ### Minimum width and height
 
-We also have properties for setting the minimum width of the columns (`min-column-width`) and the minimum height of the rows (`min-row-height`) in the Tile Manager. Similar to the gap property, the values for these properties must be a number followed by a length unit. These values will define the minimum width for all columns and the minimum height for all rows in the Tile Manager.
+We also have properties for setting the minimum width of the columns (`MinColumnWidth`) and the minimum height of the rows (`MinRowHeight`) in the Tile Manager. Similar to the gap property, the values for these properties must be a number followed by a length unit. These values will define the minimum width for all columns and the minimum height for all rows in the Tile Manager.
 
 <!-- WebComponents -->
 ```html
@@ -378,7 +378,7 @@ By default, the header section includes two action buttons:
 
 <img src="../../images/tile-manager-actions.png" />
 
-If you want to display just one of the two buttons, you can set either `disable-maximize` or `disable-fullscreen` property. To customize the appearance you can use the `maximize-action` slot for the maximize button, or the `fullscreen-action` slot for the fullscreen button.
+If you want to display just one of the two buttons, you can set either `DisableMaximize` or `DisableFullscreen` property. To customize the appearance you can use the `maximize-action` slot for the maximize button, or the `fullscreen-action` slot for the fullscreen button.
 
 <!-- WebComponents -->
 ```html
@@ -434,7 +434,7 @@ To ensure smooth resizing, a ghost element is used instead of directly modifying
 
 The Tile Manager automatically rearranges itself when a tile changes size, ensuring that there is minimal empty space. That's why expanding a tile may push adjacent tiles into new positions, while shrinking creates gaps that other tiles may fill dynamically. This ensures that the Tile Manager stays as compact as possible, without any overlapping tiles, and that all movements remain within the defined grid structure.
 
-We can use the `resize-mode` property to control how resizing is applied in the Tile Manager. It can be set to `none`, `hover` or `always`, which determines when the resize adorners are visible. The default value is `none` and the tile could not be resized.
+We can use the `ResizeMode` property to control how resizing is applied in the Tile Manager. It can be set to `none`, `hover` or `always`, which determines when the resize adorners are visible. The default value is `none` and the tile could not be resized.
 
 <!-- WebComponents -->
 ```html
@@ -487,12 +487,12 @@ Grid gaps are also considered, keeping the layout consistent during resizing.
 
 There are several constraints and limitations in the resizing process:
 
-- A tile cannot be resized smaller than its defined minimum width or height (minColWidth, minRowHeight).
+- A tile cannot be resized smaller than its defined minimum width or height (`MinColWidth`, `MinRowHeight`).
 - A tile cannot exceed the maximum available horizontal space in the grid.
 
 ## Reorder
 
-You can reorder tiles in the Tile Manager using the drag-and-drop feature. By default, tiles are not draggable. To enable this functionality, set the `drag-mode` property on the Tile Manager to either `tile` or `tile-header`.
+You can reorder tiles in the Tile Manager using the drag-and-drop feature. By default, tiles are not draggable. To enable this functionality, set the `DragMode` property on the Tile Manager to either `tile` or `tile-header`.
 
 - With the `tile` option, you can click and hold anywhere on an individual tile to start dragging it.
 - With the `tile-header` option, you can only click and hold in the tile's header section to start the dragging process.
@@ -550,15 +550,15 @@ Similar to resizing, when you initiate the drag-and-drop process, a ghost elemen
 
 The Tile Manager provides methods that help manage the layout of tiles:
 
-- The `saveLayout` method allows you to save the current arrangement of tiles in the Tile Manager, it captures the current order, size and position of all tiles, so you can later restore it to this exact configuration.
-- The `loadLayout` method enables you to load a previously saved layout. When called, it restores the tiles to the exact state they were in when the layout was saved, including their order, size and position.
+- The `SaveLayout` method allows you to save the current arrangement of tiles in the Tile Manager, it captures the current order, size and position of all tiles, so you can later restore it to this exact configuration.
+- The `LoadLayout` method enables you to load a previously saved layout. When called, it restores the tiles to the exact state they were in when the layout was saved, including their order, size and position.
 
 `sample="/layouts/tile-manager/layout", height="527", alt="{Platform} Tile Manager Layout Example"`
 
 ## Styling
 
-You can also customize the appearance of the two components - `Tile Manager` and `Tile`. 
-The `Tile Manager` exposes only one CSS property - `base` which can be used for styling the base wrapper of the Tile Manager.
+You can also customize the appearance of the two components - `TileManager` and `Tile`. 
+The `TileManager` exposes only one CSS property - `base` which can be used for styling the base wrapper of the Tile Manager.
 The `Tile` component exposes several CSS properties we can use:
 
 | Part name | Description |
@@ -644,6 +644,8 @@ You can also change the icon of the adorners to a custom one using the `side-ado
 
 ## Additional Resources
 
+* `Tile`
+* `TileManager`
 * [{ProductName} **Forums**]({ForumsLink})
 * [{ProductName} **GitHub**]({GithubLink})
 

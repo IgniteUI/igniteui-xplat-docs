@@ -134,7 +134,7 @@ The slider components could display tick marks and labels. The slider components
 
 Additionally, you could configure the orientation of the tick marks using the `TickOrientation` property. By default, the `TickOrientation` value is `end` which displays the ticks below the slider track. You could set it to `start` which displays them above the track and `mirror` which mirrors the ticks above and below the track.
 
-By default, the tick marks display labels with their values. You could modify the rotation of the tick labels using the `TickLabelRotation` property. Additionally, you could hide the labels of the primary and secondary ticks using the `HidePrimaryLabels` and `HideSecondaryLabels` properties.
+By default, the tick marks display labels with their values. You could modify the rotation of the tick labels using the `SliderTickLabelRotation` property. Additionally, you could hide the labels of the primary and secondary ticks using the `HidePrimaryLabels` and `HideSecondaryLabels` properties.
 
 `sample="/inputs/slider/tick-labels", height="150", alt="{Platform} Slider Tick Mark Labels Example"`
 
@@ -191,7 +191,7 @@ The following sample demonstrates how to style the track fill and thumb parts:
  - `SecondaryTicks`
  - `SliderLabel`
  - `Slider`
- - `TickLabelRotation`
+ - `SliderTickLabelRotation`
  - `TickOrientation`
  - `UpperBound`
  - `ValueFormatOptions`
