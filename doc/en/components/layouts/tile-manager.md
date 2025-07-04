@@ -487,7 +487,7 @@ Grid gaps are also considered, keeping the layout consistent during resizing.
 
 There are several constraints and limitations in the resizing process:
 
-- A tile cannot be resized smaller than its defined minimum width or height (`MinColWidth`, `MinRowHeight`).
+- A tile cannot be resized smaller than its defined minimum width or height (`MinColumnWidth`, `MinRowHeight`).
 - A tile cannot exceed the maximum available horizontal space in the grid.
 
 ## Reorder
@@ -559,7 +559,7 @@ The Tile Manager provides methods that help manage the layout of tiles:
 
 You can also customize the appearance of the two components - `TileManager` and `Tile`. 
 The `TileManager` exposes only one CSS property - `base` which can be used for styling the base wrapper of the Tile Manager.
-The `Tile` component exposes several CSS properties we can use:
+The `Tile` exposes several CSS properties we can use:
 
 | Part name | Description |
 | ---------|------------ |
