@@ -134,7 +134,7 @@ builder.Services.AddIgniteUIBlazor(
 
 さらに、`TickOrientation` プロパティを使用して、目盛りの方向を構成できます。デフォルトでは、`TickOrientation` 値は `end` で、スライダー トラックの下に目盛りが表示されます。トラックの上に表示する `start` と、トラックの上下の目盛りをミラーする `mirror` に設定できます。
 
-デフォルトでは、目盛りはラベルとその値を表示します。`TickLabelRotation` プロパティを使用して、目盛りラベルの回転を変更できます。さらに、`HidePrimaryLabels` プロパティと `HideSecondaryLabels` プロパティを使用して、プライマリ目盛りとセカンダリ目盛りのラベルを非表示にすることができます。
+デフォルトでは、目盛りはラベルとその値を表示します。`SliderTickLabelRotation` プロパティを使用して、目盛りラベルの回転を変更できます。さらに、`HidePrimaryLabels` プロパティと `HideSecondaryLabels` プロパティを使用して、プライマリ目盛りとセカンダリ目盛りのラベルを非表示にすることができます。
 
 `sample="/inputs/slider/tick-labels", height="150", alt="{Platform} Slider Tick Mark Labels の例"`
 
@@ -191,7 +191,7 @@ builder.Services.AddIgniteUIBlazor(
  - `SecondaryTicks`
  - `SliderLabel`
  - `Slider`
- - `TickLabelRotation`
+ - `SliderTickLabelRotation`
  - `TickOrientation`
  - `UpperBound`
  - `ValueFormatOptions`

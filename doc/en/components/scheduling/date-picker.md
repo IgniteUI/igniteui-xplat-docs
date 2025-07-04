@@ -238,7 +238,7 @@ The `DatePicker` also supports a `dialog` mode:
 <IgrDatePicker mode="dialog"></IgrDatePicker>
 ```
 ```razor
-<IgbDatePicker Mode="DatePickerMode.Dialog"></IgbDatePicker>
+<IgbDatePicker Mode="PickerMode.Dialog"></IgbDatePicker>
 ```
 `sample="/scheduling/date-picker/dialog-mode", height="500", alt="{Platform} Date Picker Dialog Mode Example"`
 
