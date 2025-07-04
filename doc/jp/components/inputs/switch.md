@@ -121,7 +121,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 ```
 
 ```razor
-<IgbSwitch LabelPosition="@CheckboxBaseLabelPosition.Before">Label</IgbSwitch>
+<IgbSwitch LabelPosition="@ToggleLabelPosition.Before">Label</IgbSwitch>
 ```
 
 スイッチには、スイッチの外部の要素でラベルを付けることもできます。この場合、ユーザーはニーズに応じてラベルの位置とスタイルを完全に制御できます。

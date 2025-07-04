@@ -122,7 +122,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCheckboxModule));
 ```
 
 ```razor
-<IgbCheckbox LabelPosition="@CheckboxBaseLabelPosition.Before">Label</IgbCheckbox>
+<IgbCheckbox LabelPosition="@ToggleLabelPosition.Before">Label</IgbCheckbox>
 ```
 
 チェックボックスは、チェックボックスの外部の要素でラベル付けすることもできます。この場合、ユーザーはニーズに応じてラベルの位置とスタイルを完全に制御できます。

@@ -98,7 +98,7 @@ Users can choose from three different selection modes - single selection, multip
 ```
 
 ```razor
-<IgbCalendar Selection="@CalendarBaseSelection.Multiple" />
+<IgbCalendar Selection="@CalendarSelection.Multiple" />
 ```
 
 ```tsx
@@ -119,7 +119,7 @@ Following the same approach, we can switch `Selection` to range mode:
 ```
 
 ```razor
-<IgbCalendar Selection="@CalendarBaseSelection.Range" />
+<IgbCalendar Selection="@CalendarSelection.Range" />
 ```
 
 ```tsx

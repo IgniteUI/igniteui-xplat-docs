@@ -99,7 +99,7 @@ defineComponents(IgcCalendarComponent);
 ```
 
 ```razor
-<IgbCalendar Selection="@CalendarBaseSelection.Multiple" />
+<IgbCalendar Selection="@CalendarSelection.Multiple" />
 ```
 
 ```tsx
@@ -120,7 +120,7 @@ defineComponents(IgcCalendarComponent);
 ```
 
 ```razor
-<IgbCalendar Selection="@CalendarBaseSelection.Range" />
+<IgbCalendar Selection="@CalendarSelection.Range" />
 ```
 
 ```tsx
