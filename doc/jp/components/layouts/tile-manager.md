@@ -1,14 +1,14 @@
 ---
 title: {Platform} Tile Manager コンポーネント – {ProductName}
 _description: {Platform} Tile Manager コンポーネントを使用すると、コンテンツを個々のタイルに表示できます。
-_keywords: {Platform} Tile Manager, {ProductName}, {Platform} タイル マネージャー, Infragistics,インフラジスティックス
-mentionedTypes: ["TileManager"]
+_keywords: {Platform} Tile Manager, {ProductName}, Infragistics, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, Layout components, {Platform} タイル マネジャー, インフラジスティックス, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, レイアウト コンポーネント
+mentionedTypes: ["TileManager", "Tile"]
 _language: ja
 ---
 
 # {Platform} Tile Manager (タイル マネージャー) の概要
 
-{Platform} Tile Manager コンポーネントを使用すると、コンテンツを個々のタイルに表示できます。ユーザーはタイルを並べ替えたりサイズを変更したりして操作できるため、好みに応じてコンテンツのレイアウトや外観を自由にカスタマイズできます。この柔軟性により、パーソナライズされた効率的なコンテンツの表示と管理が可能になり、ユーザー エクスペリエンスが向上します。
+{ProductName} Tile Manager コンポーネントを使用すると、コンテンツを個々のタイルに表示できます。ユーザーはタイルを並べ替えたりサイズを変更したりして操作できるため、好みに応じてコンテンツのレイアウトや外観を自由にカスタマイズできます。この柔軟性により、パーソナライズされた効率的なコンテンツの表示と管理が可能になり、ユーザー エクスペリエンスが向上します。
 
 ## {Platform} Tile Manager の例
 
@@ -20,32 +20,65 @@ _language: ja
 
 ## 使用方法
 
-タイル マネージャーは、最大化状態または通常状態でのタイルの配置を管理する基本的なタイル レイアウト動作を提供します。タイルはそれぞれ独立してサイズを設定でき、複雑なレイアウトを構築できます。エンドユーザーはドラッグ アンド ドロップによる直感的な操作で柔軟にタイルを並べ替えることが可能です。 
+`TileManager` は、最大化状態または通常状態でのタイルの配置を管理する基本的なタイル レイアウト動作を提供します。タイルはそれぞれ独立してサイズを設定でき、複雑なレイアウトを構築できます。エンドユーザーはドラッグ アンド ドロップによる直感的な操作で柔軟にタイルを並べ替えることが可能です。 
 
 タイル マネージャーでは、使用できる 2 つのコンポーネントが提供されます。
-- `IgcTileComponent` - このコンポーネントは、タイル マネージャー内に表示される個々のタイルを表します。
-- `IgcTileManagerComponent` - これはすべてのタイル コンポーネントを含むメイン コンポーネントであり、タイル レイアウト全体のコンテナーとして機能します。
+- `Tile` - このコンポーネントは、タイル マネージャー内に表示される個々のタイルを表します。
+- `TileManager` - これはすべてのタイル コンポーネントを含むメイン コンポーネントであり、タイル レイアウト全体のコンテナーとして機能します。
 
 ### 作業の開始
 
-<!-- WebComponents -->
+Tile Manager の使用を開始するには、最初に次のコマンドを実行して Ignite UI for Web Components をインストールする必要があります。
 
-Tile Manager コンポーネントの使用を開始するには、最初に次のコマンドを実行して Ignite UI for Web Components をインストールする必要があります。
+<!-- WebComponents -->
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+```cmd
+npm install igniteui-react
+```
+
+<!-- end: React -->
 
 Tile Manager を使用する前に、次のようにインポートする必要があります:
 
+<!-- WebComponents -->
 ```ts
 import { defineComponents, IgcTileManagerComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcTileManagerComponent);
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+import { IgrTile, IgrTileManager } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+```
+<!-- end: React -->
+
+<!-- Blazor -->
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbTileManagerModule));
+```
+
+また、`TileManager` コンポーネントにスタイルを適用するために、追加の CSS ファイルをリンクする必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+<!-- end: Blazor -->
 
 これで、{Platform} Tile Manager の基本構成から始めることができます。
 
+<!-- WebComponents -->
 ```html
 <igc-tile-manager>
   <igc-tile>
@@ -59,72 +92,208 @@ defineComponents(IgcTileManagerComponent);
   </igc-tile>
 </igc-tile-manager>
 ```
+<!-- end: WebComponents -->
+<!-- Blazor -->
+```razor
+<IgbTileManager>
+  <IgbTile>
+    <p>Tile 1</p>
+  </IgbTile>
+  <IgbTile>
+    <p>Tile 2</p>
+  </IgbTile>
+  <IgbTile>
+    <p>Tile 3</p>
+  </IgbTile>
+</IgbTileManager>
+```
+<!-- end: Blazor -->
+
+<!-- React -->
+```tsx
+  <IgrTileManager>
+    <IgrTile>
+      <p>Tile 1</p>
+    </IgrTile>
+    <IgrTile>
+      <p>Tile 2</p>
+    </IgrTile>
+    <IgrTile>
+      <p>Tile 3</p>
+    </IgrTile>
+  </IgrTileManager>
+```
+<!-- end: React -->
 
 {ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
-
-<!-- end: WebComponents -->
 
 ## レイアウト
 
 ### 列および行
 
-タイル マネージャーのグリッド列の数を指定できます。これを行うには、`column-count` プロパティを必要な列数に設定するだけです。数値が 1 未満の場合、またはプロパティが設定されていない場合、タイル マネージャーは収まる限り多くの列を作成します。各列の幅は少なくとも 200 ピクセルで、使用可能なスペースを均等に共有するように拡張されます。ビューポートのサイズが変更されると、タイルもスペースを最大限に活用するために再配置されます。
+タイル マネージャーのグリッド列の数を指定できます。これを行うには、`ColumnCount` プロパティを必要な列数に設定するだけです。数値が 1 未満の場合、またはプロパティが設定されていない場合、タイル マネージャーは収まる限り多くの列を作成します。各列の幅は少なくとも 200 ピクセルで、使用可能なスペースを均等に共有するように拡張されます。ビューポートのサイズが変更されると、タイルもスペースを最大限に活用するために再配置されます。
 
+<!-- WebComponents -->
 ```html
 <igc-tile-manager column-count="2">
   <igc-tile>
     <span slot="title">Tile 1 header</span>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </igc-tile>
   <igc-tile>
     <span slot="title">Tile 2 header</span>
-    <p>Content for Tile 2</p>
+    <p>Tile 2 Content</p>
   </igc-tile>
   <igc-tile>
     <span slot="title">Tile 3 header</span>
-    <p>Content for Tile 3</p>
+    <p>Tile 3 Content</p>
   </igc-tile>
   ...
 </igc-tile-manager>
 ```
+<!-- end: WebComponents -->
 
+<!-- React -->
+```tsx
+<IgrTileManager columnCount={2}>
+  <IgrTile>
+    <span slot="title">Tile 1 header</span>
+    <p>Tile 1 Content</p>
+  </IgrTile>
+  <IgrTile>
+    <span slot="title">Tile 2 header</span>
+    <p>Tile 2 Content</p>
+  </IgrTile>
+  <IgrTile>
+    <span slot="title">Tile 3 header</span>
+    <p>Tile 3 Content</p>
+  </IgrTile>
+  ...
+</IgrTileManager>
+```
+<!-- end: React -->
+
+<!-- Blazor -->
+```razor
+<IgbTileManager ColumnCount={2}>
+  <IgbTile>
+    <span slot="title">Tile 1 header</span>
+    <p>Tile 1 Content</p>
+  </IgbTile>
+  <IgbTile>
+    <span slot="title">Tile 2 header</span>
+    <p>Tile 2 Content</p>
+  </IgbTile>
+  <IgbTile>
+    <span slot="title">Tile 3 header</span>
+    <p>Tile 3 Content</p>
+  </IgbTile>
+  ...
+</IgbTileManager>
+```
+<!-- end: Blazor -->
 このコード スニペットでは、タイル マネージャー内の 3 つのタイルが 2 行 2 列に配置されます。
 
 ### ギャップ
 
-タイル マネージャーで使用できるもう 1 つのプロパティは、タイル間のスペースを定義する `gap` プロパティです。`gap` プロパティの値は、数値と長さの単位 (例: px、rem、em など) を組み合わせた形式で指定する必要があります。この値は、タイル間の水平ギャップ (幅) と垂直ギャップ (高さ) の両方に適用されます。
+タイル マネージャーで使用できるもう 1 つのプロパティは、タイル間のスペースを定義する `Gap` プロパティです。`Gap` プロパティの値は、数値と長さの単位 (例: px、rem、em など) を組み合わせた形式で指定する必要があります。この値は、タイル間の水平ギャップ (幅) と垂直ギャップ (高さ) の両方に適用されます。
 
+<!-- WebComponents -->
 ```html
 <igc-tile-manager gap="20px">
   <igc-tile>
     <span slot="title">Tile 1 header</span>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </igc-tile>
   <igc-tile>
     <span slot="title">Tile 2 header</span>
-    <p>Content for Tile 2</p>
+    <p>Tile 2 Content</p>
   </igc-tile>
   ...
 </igc-tile-manager>
 ```
-
+<!-- end: WebComponents -->
+<!-- React -->
+```tsx
+<IgrTileManager gap="20px">
+  <IgrTile>
+    <span slot="title">Tile 1 header</span>
+    <p>Tile 1 Content</p>
+  </IgrTile>
+  <IgrTile>
+    <span slot="title">Tile 2 header</span>
+    <p>Tile 2 Content</p>
+  </IgrTile>
+  ...
+</IgrTileManager>
+```
+<!-- end: React -->
+<!-- Blazor -->
+```razor
+<IgbTileManager gap="20px">
+  <IgbTile>
+    <span slot="title">Tile 1 header</span>
+    <p>Tile 1 Content</p>
+  </IgbTile>
+  <IgbTile>
+    <span slot="title">Tile 2 header</span>
+    <p>Tile 2 Content</p>
+  </IgbTile>
+  ...
+</IgbTileManager>
+```
+<!-- end: Blazor -->
 ### 最小幅および最小高さ
 
-タイル マネージャーには、列の最小幅 (`min-column-width`) と行の最小高さ (`min-row-height`) を設定するためのプロパティもあります。ギャップ (gap) プロパティと同様に、これらのプロパティの値も数値に長さの単位を付けた形式で指定する必要があります。これらの値は、タイル マネージャー内のすべての列の最小幅とすべての行の最小高さを定義します。
+タイル マネージャーには、列の最小幅 (`MinColumnWidth`) と行の最小高さ (`MinRowHeight`) を設定するためのプロパティもあります。ギャップ (gap) プロパティと同様に、これらのプロパティの値も数値に長さの単位を付けた形式で指定する必要があります。これらの値は、タイル マネージャー内のすべての列の最小幅とすべての行の最小高さを定義します。
 
+<!-- WebComponents -->
 ```html
 <igc-tile-manager min-column-width="200px" min-row-height="150px">
   <igc-tile>
     <span slot="title">Tile 1 header</span>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </igc-tile>
   <igc-tile>
     <span slot="title">Tile 2 header</span>
-    <p>Content for Tile 2</p>
+    <p>Tile 2 Content</p>
   </igc-tile>
   ...
 </igc-tile-manager>
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```tsx
+<IgrTileManager minColumnWidth="200px" minRowHeight="150px">
+  <IgrTile>
+    <span slot="title">Tile 1 header</span>
+    <p>Tile 1 Content</p>
+  </IgrTile>
+  <IgrTile>
+    <span slot="title">Tile 2 header</span>
+    <p>Tile 2 Content</p>
+  </IgrTile>
+  ...
+</IgrTileManager>
+```
+<!-- end: React -->
+
+<!-- Blazor -->
+```razor
+<IgbTileManager minColumnWidth="200px" minRowHeight="150px">
+  <IgbTile>
+    <span slot="title">Tile 1 header</span>
+    <p>Tile 1 Content</p>
+  </IgbTile>
+  <IgbTile>
+    <span slot="title">Tile 2 header</span>
+    <p>Tile 2 Content</p>
+  </IgbTile>
+  ...
+</IgbTileManager>
+```
+<!-- end: Blazor -->
 
 ### 例
 
@@ -142,19 +311,51 @@ Tile コンポーネントには、タイルごとに個別に設定できるプ
 - `disable-maximize` プロパティは、デフォルトの最大化トグルアクション ボタンを非表示にします。
 - `disable-resize` プロパティは、ユーザーによるタイルのサイズ変更を禁止します。
 
+<!-- WebComponents -->
 ```html
 <igc-tile-manager>
   <igc-tile col-span="2" disable-resize>
     <span slot="title">Tile 1 header</span>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </igc-tile>
   <igc-tile>
     <span slot="title">Tile 2 header</span>
-    <p>Content for Tile 2</p>
+    <p>Tile 2 Content</p>
   </igc-tile>
   ...
 </igc-tile-manager>
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```tsx
+<IgrTileManager>
+  <IgrTile colSpan={2} disableResize={true}>
+    <span slot="title">Tile 1 header</span>
+    <p>Tile 1 Content</p>
+  </IgrTile>
+  <IgrTile>
+    <span slot="title">Tile 2 header</span>
+    <p>Tile 2 Content</p>
+  </IgrTile>
+  ...
+</IgrTileManager>
+```
+<!-- end: React -->
+<!-- Blazor -->
+```razor
+<IgbTileManager>
+  <IgbTile col-span="2" disable-resize>
+    <span slot="title">Tile 1 header</span>
+    <p>Tile 1 Content</p>
+  </IgbTile>
+  <IgbTile>
+    <span slot="title">Tile 2 header</span>
+    <p>Tile 2 Content</p>
+  </IgbTile>
+  ...
+</IgbTileManager>
+```
+<!-- end: Blazor -->
 
 Tile コンポーネントは、使用できるいくつかのスロットも公開します。
 
@@ -178,17 +379,41 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 
 <img src="../../images/tile-manager-actions.png" />
 
-2 つのボタンのうち 1 つだけを表示する場合は、`disable-maximize` または `disable-fullscreen` プロパティのいずれかを設定できます。外観をカスタマイズするには、最大化ボタンの場合は `maximize-action` スロットを使用し、全画面ボタンの場合は `fullscreen-action` スロットを使用します。
+2 つのボタンのうち 1 つだけを表示する場合は、`DisableMaximize` または `DisableFullscreen` プロパティのいずれかを設定できます。外観をカスタマイズするには、最大化ボタンの場合は `maximize-action` スロットを使用し、全画面ボタンの場合は `fullscreen-action` スロットを使用します。
 
+<!-- WebComponents -->
 ```html
 <igc-tile-manager>
   <igc-tile disable-fullscreen>
     <igc-icon-button slot="maximize-actions" name="north_east" collection="material">
     </igc-icon-button>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </igc-tile>
 </igc-tile-manager>
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```tsx
+<IgrTileManager>
+  <IgrTile disableFullscreen={true}>
+    <IgrIconButton slot="maximize-actions" name="north_east" collection="material">
+    </IgrIconButton>
+    <p>Tile 1 Content</p>
+  </IgrTile>
+</IgrTileManager>
+```
+<!-- end: React -->
+<!-- Blazor -->
+```razor
+<IgbTileManager>
+  <IgbTile disable-fullscreen>
+    <IgbIconButton slot="maximize-actions" name="north_east" collection="material">
+    </IgbIconButton>
+    <p>Tile 1 Content</p>
+  </IgbTile>
+</IgbTileManager>
+```
+<!-- end: Blazor -->
 
 両方のアクション ボタンを無効にしたり、好みに応じてカスタム ボタンを作成したりすることもできます。
 
@@ -210,8 +435,9 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 
 タイルのサイズが変更されると、タイル マネージャーは自動的に再配置し、空きスペースが最小限になるようにします。そのため、タイルを拡大すると隣接するタイルが新しい位置に押し出され、縮小すると隙間ができ、他のタイルが動的に埋められる可能性があります。これにより、タイル マネージャーはタイルが重なることなく可能な限りコンパクトに保たれ、すべての動きが定義されたグリッド構造内にとどまります。
 
-`resize-mode` プロパティを使用して、タイル マネージャーでサイズ変更を適用する方法を制御できます。`none`、`hover`、または `always` に設定でき、リサイズ ハンドルがいつ表示されるかを決定します。デフォルト値は `none` であり、タイルのサイズを変更できません。
+`ResizeMode` プロパティを使用して、タイル マネージャーでサイズ変更を適用する方法を制御できます。`none`、`hover`、または `always` に設定でき、リサイズ ハンドルがいつ表示されるかを決定します。デフォルト値は `none` であり、タイルのサイズを変更できません。
 
+<!-- WebComponents -->
 ```html
 <igc-tile-manager resize-mode='hover'>
   <igc-tile>
@@ -222,6 +448,31 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
   </igc-tile>
 </igc-tile-manager>
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```tsx
+<IgrTileManager resizeMode="hover">
+  <IgrTile>
+    <p>Tile 1</p>
+  </IgrTile>
+  <IgrTile>
+    <p>Tile 2</p>
+  </IgrTile>
+</IgrTileManager>
+```
+<!-- end: React -->
+<!-- Blazor -->
+```razor
+<IgbTileManager ResizeMode='hover'>
+  <IgbTile>
+    <p>Tile 1</p>
+  </IgbTile>
+  <IgbTile>
+    <p>Tile 2</p>
+  </IgbTile>
+</IgbTileManager>
+```
+<!-- end: Blazor -->
 
 以下の例で 3 つの状態の違いを確認できます。
 
@@ -237,12 +488,12 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 
 サイズ変更プロセスにはいくつかの制約と制限があります。
 
-- タイルは、定義された最小幅または高さ (minColWidth、minRowHeight) より小さくサイズ変更することはできません。
+- タイルは、定義された最小幅または高さ (`MinColumnWidth`、`MinRowHeight`) より小さくサイズ変更することはできません。
 - タイルはグリッド内で利用可能な最大の水平スペースを超えることはできません。
 
 ## 並べ替え
 
-ドラッグ アンド ドロップ機能を使用して、タイル マネージャーでタイルの順序を変更できます。デフォルトでは、タイルはドラッグできません。この機能を有効にするには、タイル マネージャーの `drag-mode` プロパティを `tile` または `tile-header` に設定します。
+ドラッグ アンド ドロップ機能を使用して、タイル マネージャーでタイルの順序を変更できます。デフォルトでは、タイルはドラッグできません。この機能を有効にするには、タイル マネージャーの `DragMode` プロパティを `tile` または `tile-header` に設定します。
 
 - `tile` オプションを使用すると、個々のタイルの任意の場所をクリックして押したままにすると、ドラッグを開始できます。
 - `tile-header` オプションを使用すると、タイルのヘッダー セクションをクリックして押したままにするだけで、ドラッグ プロセスを開始できます。
@@ -251,18 +502,48 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 
 サイズ変更と同様に、ドラッグ アンド ドロップ プロセスを開始すると、取得したタイルの下にゴースト要素が表示されます。タイルをドラッグすると、ゴースト要素も一緒に移動し、他のタイルの順序がリアルタイムで動的に変更されます。これにより、タイルをドロップしたときにタイルのグリッドがどのように表示されるかをプレビューできます。
 
+<!-- WebComponents -->
 ```html
 <igc-tile-manager drag-mode="tile-header">
   <igc-tile>
     <span slot="title">Tile 1 header</span>
-    <p>Content for Tile 1</p>
+    <p>Tile 1 Content</p>
   </igc-tile>
   <igc-tile>
     <span slot="title">Tile 2 header</span>
-    <p>Content for Tile 2</p>
+    <p>Tile 2 Content</p>
   </igc-tile>
 </igc-tile-manager>
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```tsx
+<IgrTileManager dragMode="tile-header">
+  <IgrTile>
+    <span slot="title">Tile 1 header</span>
+    <p>Tile 1 Content</p>
+  </IgrTile>
+  <IgrTile>
+    <span slot="title">Tile 2 header</span>
+    <p>Tile 2 Content</p>
+  </IgrTile>
+</IgrTileManager>
+```
+<!-- end: React -->
+<!-- Blazor -->
+```razor
+<IgbTileManager DragMode="tile-header">
+  <IgbTile>
+    <span slot="title">Tile 1 header</span>
+    <p>Tile 1 Content</p>
+  </IgbTile>
+  <IgbTile>
+    <span slot="title">Tile 2 header</span>
+    <p>Tile 2 Content</p>
+  </IgbTile>
+</IgbTileManager>
+```
+<!-- end: Blazor -->
 
 `sample="/layouts/tile-manager/dragndrop", height="522", alt="{Platform} Tile Manager ドラッグ アンド ドロップの例"`
 
@@ -270,16 +551,16 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 
 タイル マネージャーは、タイルのレイアウトの管理に役立つメソッドを提供します。
 
-- `saveLayout` メソッドを使用すると、タイル マネージャー内のタイルの現在の配置を保存できます。このメソッドは、すべてのタイルの現在の順序、サイズ、位置を保存するため、後で同じ構成を正確に復元できます。
-- `loadLayout` メソッドを使用すると、以前に保存したレイアウトを読み込むことができます。呼び出されると、タイルの順序、サイズ、位置など、レイアウトが保存されたときの状態にタイルが正確に復元されます。
+- `SaveLayout` メソッドを使用すると、タイル マネージャー内のタイルの現在の配置を保存できます。このメソッドは、すべてのタイルの現在の順序、サイズ、位置を保存するため、後で同じ構成を正確に復元できます。
+- `LoadLayout` メソッドを使用すると、以前に保存したレイアウトを読み込むことができます。呼び出されると、タイルの順序、サイズ、位置など、レイアウトが保存されたときの状態にタイルが正確に復元されます。
 
 `sample="/layouts/tile-manager/layout", height="527", alt="{Platform} Tile Manager レイアウトの例"`
 
 ## スタイル設定
 
-`Tile Manager` と `Tile` の 2 つのコンポーネントの外観をカスタマイズすることもできます。 
-`Tile Manager` は、Tile Manager のベース ラッパーのスタイル設定に使用できる CSS プロパティ `base` のみを公開します。
-`Tile` コンポーネントは、使用できるいくつかの CSS プロパティを公開します。
+`TileManager` と `Tile` の 2 つのコンポーネントの外観をカスタマイズすることもできます。 
+`TileManager` は、Tile Manager のベース ラッパーのスタイル設定に使用できる CSS プロパティ `base` のみを公開します。
+`Tile` は、使用できるいくつかの CSS プロパティを公開します。
 
 | パーツ名 | 説明 |
 | ---------|------------ |
@@ -321,8 +602,9 @@ igc-tile:nth-child(n+2)::part(trigger) {
 }
 ```
 
-また、`side-adorner`、`corner-adorner`、`bottom-adorner` スロットを使用して、リサイズ ハンドルのアイコンをカスタムのアイコンに変更することもできます。これを行うには、tile 要素内に `igc-icon` 要素を作成します。次に、その要素の slot 属性を、3 つのリサイズ ハンドルのスロット名のいずれかに設定した上で、使用するアイコンの名前を指定します。
+また、`side-adorner`、`corner-adorner`、`bottom-adorner` スロットを使用して、リサイズ ハンドルのアイコンをカスタムのアイコンに変更することもできます。例:
 
+<!-- WebComponents -->
 ```html
 <igc-tile>
   <igc-icon slot="side-adorner" class="side" name="indicator"></igc-icon>
@@ -331,11 +613,35 @@ igc-tile:nth-child(n+2)::part(trigger) {
   <span slot="title">Tile header</span>
 </igc-tile>
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```tsx
+<IgrTile>
+  <IgrIcon slot="side-adorner" className="side" name="indicator"></IgrIcon>
+  <IgrIcon slot="corner-adorner" className="corner" name="indicator"></IgrIcon>
+  <IgrIcon slot="bottom-adorner" className="bottom" name="indicator"></IgrIcon>
+  <span slot="title">Tile header</span>
+</IgrTile>
+```
+<!-- end: React -->
+<!-- Blazor -->
+```razor
+<IgbTile>
+  <IgbIcon slot="side-adorner" class="side" name="indicator"></IgbIcon>
+  <IgbIcon slot="corner-adorner" class="corner" name="indicator"></IgbIcon>
+  <IgbIcon slot="bottom-adorner" class="bottom" name="indicator"></IgbIcon>
+  <span slot="title">Tile header</span>
+</IgbTile>
+```
+<!-- end: Blazor -->
 
 `sample="/layouts/tile-manager/styling", height="481", alt="{Platform} Tile Manager スタイル設定の例"`
 
 ## API リファレンス
 
+- `TileManager`
+- `Tile`
+- [スタイル設定 & テーマ](../themes/overview.md)
 
 ## その他のリソース
 
