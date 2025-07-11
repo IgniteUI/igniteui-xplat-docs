@@ -634,9 +634,10 @@ function buildPlatform(cb) {
     // }
 
     let apiSourcePath = './apiMap/' + platformName + '/**/*apiMap.json';
+    let apiSourcePathOverrides = './apiMap/' + platformName + '/**/*apiMap.overrides.json';
     LOG.action("building with API mapping: " + apiSourcePath);
     gulp.src([
-        apiSourcePath
+        apiSourcePathOverrides, apiSourcePath
     ],)
     .pipe(flatten())
     .pipe(readMappings())

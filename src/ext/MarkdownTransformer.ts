@@ -105,9 +105,8 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
             if (typeInfo) {
                 if (typeInfo.isEnum) {
                     isEnum = true;
-                //TODO: uncomment when API mapping annotates interfaces
-                // } else if (typeInfo.isInterface) { 
-                //     isInterface = true;
+                } else if (typeInfo.isInterface) { 
+                    isInterface = true;
                 } else { // if (!isEnum) {
                     isClass = true;
                 }
