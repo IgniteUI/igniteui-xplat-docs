@@ -151,8 +151,8 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
             let packageText = "";
             if (packageName) {
                 if (packageName == "igniteui-webgrids") {
-                    const packageSuffix = (platformType == APIPlatform.React ? "" : "grids") + "grids.";
-                    packageText = "igniteui" + urlNameJoinSymbol + platformName + urlNameJoinSymbol + packageSuffix;
+                    const packageSuffix = (platformType == APIPlatform.React ? "" : urlNameJoinSymbol + "grids") + urlNameJoinSymbol + "grids.";
+                    packageText = "igniteui" + urlNameJoinSymbol + platformName + packageSuffix;
                 } else if (packageName == "igniteui-webinputs") {
                     packageText = "";
                     if (platformType == APIPlatform.React) {
