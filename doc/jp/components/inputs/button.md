@@ -258,7 +258,7 @@ const onRadioChange = (e: IgrRadioChangeEventArgs) => {
 ```
 
 ```razor
-<IgbRadioGroup id="radioGroup" Alignment="RadioGroupAlignment.Horizontal" >
+<IgbRadioGroup id="radioGroup" Alignment="ContentOrientation.Horizontal" >
     <IgbRadio Value="small" LabelPosition="RadioLabelPosition.After" @onclick="OnSmallClick">Small</IgbRadio>
     <IgbRadio Value="medium" LabelPosition="RadioLabelPosition.After" @onclick="OnMediumClick">Medium</IgbRadio>
     <IgbRadio Value="large" LabelPosition="RadioLabelPosition.After" Checked="true" @onclick="OnLargeClick">Large</IgbRadio>

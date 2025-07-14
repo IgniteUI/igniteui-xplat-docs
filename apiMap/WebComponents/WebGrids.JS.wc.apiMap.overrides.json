@@ -1,0 +1,52 @@
+{
+  "types":[
+  {
+    "originalName": "GridRow",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "RowDirective",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-grid-row.ts","mappedName": "IgcGridRowComponent"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getContext"}], "originalName": "GetContext"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getContextMRL"}], "originalName": "GetContextMRL"} ]
+  },
+  {
+    "originalName": "Paginator",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-paginator.ts","dynamicModuleName": "igc-paginator-dynamic-module.ts","moduleName": "igc-paginator-module.ts","mappedName": "IgcPaginatorComponent"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isFirstPage"}], "originalName": "IsFirstPage"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isLastPage"}], "originalName": "IsLastPage"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "nextPage"}], "originalName": "NextPage"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcOverlaySettings","mappedName": "overlaySettings"}], "originalName": "OverlaySettings"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "page"}], "originalName": "Page"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "paginate"}], "originalName": "Paginate"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "perPage"}], "originalName": "PerPage"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "previousPage"}], "originalName": "PreviousPage"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcPaginatorResourceStrings","mappedName": "resourceStrings"}], "originalName": "ResourceStrings"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number[]","mappedName": "selectOptions"}], "originalName": "SelectOptions"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "totalPages"}], "originalName": "TotalPages"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "totalRecords"}], "originalName": "TotalRecords"} ]
+  },
+  {
+    "originalName": "GridToolbar",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "WebComponents","fileName": "igc-grid-toolbar.ts","dynamicModuleName": "igc-grid-toolbar-dynamic-module.ts","moduleName": "igc-grid-toolbar-module.ts","mappedName": "IgcGridToolbarComponent"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridBaseDirective","mappedName": "grid"}], "originalName": "Grid"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "showProgress"}], "originalName": "ShowProgress"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcGridToolbarContentCollection","mappedName": "tools"}], "originalName": "Tools"} ]
+  }
+  ]
+}

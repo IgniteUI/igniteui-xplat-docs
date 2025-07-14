@@ -69,7 +69,7 @@ _language: ja
 <IgrGrid>
     <IgrGridToolbar>
         <IgrGridToolbarTitle>
-            <span>Grid Toolbar<span>
+            Grid Toolbar
         </IgrGridToolbarTitle>
         <IgrGridToolbarActions>
             <IgrGridToolbarAdvancedFiltering></IgrGridToolbarAdvancedFiltering>
@@ -141,7 +141,7 @@ _language: ja
 <IgrTreeGrid data={data} primaryKey="ID" foreignKey="ParentID" autoGenerate={true}>
     <IgrGridToolbar>
         <IgrGridToolbarTitle>
-            <span>Tree Grid Toolbar<span>
+            Tree Grid Toolbar
         </IgrGridToolbarTitle>
         <IgrGridToolbarActions>
             <IgrGridToolbarAdvancedFiltering></IgrGridToolbarAdvancedFiltering>
@@ -218,7 +218,7 @@ _language: ja
 <IgrHierarchicalGrid>
     <IgrGridToolbar>
         <IgrGridToolbarTitle>
-            <span>Hierarchical Grid Toolbar<span>
+            Hierarchical Grid Toolbar
         </IgrGridToolbarTitle>
         <IgrGridToolbarActions>
             <IgrGridToolbarAdvancedFiltering></IgrGridToolbarAdvancedFiltering>
@@ -534,7 +534,7 @@ const rowIslandToolbarTemplate = (ctx: IgrGridToolbarTemplateContext) => {
 ```tsx
 <IgrGridToolbar>
     <IgrGridToolbarTitle>
-        <span>Grid toolbar title<span>
+        Grid toolbar title
     </IgrGridToolbarTitle>
 </IgrGridToolbar>
 ```
@@ -1232,7 +1232,7 @@ igRegisterScript("ConfigureExport", (evt) => {
 <{ComponentSelector}>
     <IgrGridToolbar>
         <IgrGridToolbarTitle>
-            <span>Custom Title<span>
+            Custom Title
         </IgrGridToolbarTitle>
         {/*
             Everything between the toolbar tags except the default toolbar components

@@ -236,7 +236,7 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 ```
 
 ```razor
-<IgbRadioGroup id="radio-group" Alignment="RadioGroupAlignment.Horizontal">
+<IgbRadioGroup id="radio-group" Alignment="ContentOrientation.Horizontal">
     <IgbRadio Value="Start" LabelPosition="RadioLabelPosition.After" Checked="true" Change="OnRadioOptionClick">Start</IgbRadio>
     <IgbRadio Value="End" LabelPosition="RadioLabelPosition.After" Change="OnRadioOptionClick">End</IgbRadio>
     <IgbRadio Value="Top" LabelPosition="RadioLabelPosition.After" Change="OnRadioOptionClick">Top</IgbRadio>

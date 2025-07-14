@@ -83,6 +83,7 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
     let platformType = <APIPlatform>options.platform;
     let platformName = getPlatformName(platformType).toLowerCase();
     let packageName: string | null = null;
+    let urlNameJoinSymbol = options.docs["apiDocOverrideBuildURLDashed"] ? "-" : "_";
 
     // console.log("getApiLink ");
     // console.log("getApiLink typeName=" + typeName + " memberName=" + memberName); 
@@ -104,9 +105,8 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
             if (typeInfo) {
                 if (typeInfo.isEnum) {
                     isEnum = true;
-                //TODO: uncomment when API mapping annotates interfaces
-                // } else if (typeInfo.isInterface) { 
-                //     isInterface = true;
+                } else if (typeInfo.isInterface) { 
+                    isInterface = true;
                 } else { // if (!isEnum) {
                     isClass = true;
                 }
@@ -151,12 +151,12 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
             let packageText = "";
             if (packageName) {
                 if (packageName == "igniteui-webgrids") {
-                    const packageSuffix = (platformType == APIPlatform.React ? "" : "_grids") + "_grids.";
-                    packageText = "igniteui_" + platformName + packageSuffix;
+                    const packageSuffix = (platformType == APIPlatform.React ? "" : urlNameJoinSymbol + "grids") + urlNameJoinSymbol + "grids.";
+                    packageText = "igniteui" + urlNameJoinSymbol + platformName + packageSuffix;
                 } else if (packageName == "igniteui-webinputs") {
                     packageText = "";
                     if (platformType == APIPlatform.React) {
-                        packageText = "igniteui_react.";
+                        packageText = `igniteui${urlNameJoinSymbol}react.`;
                     }
                 } else {
                     packageText = packageName;
@@ -239,6 +239,7 @@ function transformCodeRefs(options: any) {
         let docs = options.docs;
         let apiDocRoot: string = docs.apiDocRoot;
         let apiDocOverrideRoot: string = docs.apiDocOverrideRoot;
+        let apiDocOverridePackages: string[] = docs.apiDocOverridePackages;
         let apiDocOverrideComponents: string[] = docs.apiDocOverrideComponents;
         let apiTypeName: string | null = null;
         let createLink: boolean = <boolean><any>apiDocRoot;
@@ -360,6 +361,7 @@ function transformCodeRefs(options: any) {
                 // WORKS - https://staging.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html
                 // FAILS - https://staging.infragistics.com/products/ignite-ui-web-components/api/docs/typescript/latest/classes/igcdockmanagercomponent.html
                 let platform = getPlatformName(options.platform);
+                let dockManagerUpdated = false;
                 if (platform === "Angular" || platform === "WebComponents") {
 
                     var dockEnums = [
@@ -422,6 +424,7 @@ function transformCodeRefs(options: any) {
                         // WORKS - https://staging.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html
                         // FAILS - https://staging.infragistics.com/products/ignite-ui-web-components/api/docs/typescript/latest/classes/igcdockmanagercomponent.html
 
+                        dockManagerUpdated = true;
                         link.url = link.url.replace("ignite-ui-angular/api/docs",        "ignite-ui/dock-manager/docs");
                         link.url = link.url.replace("ignite-ui-react/api/docs",          "ignite-ui/dock-manager/docs");
                         link.url = link.url.replace("ignite-ui-web-components/api/docs", "ignite-ui/dock-manager/docs");
@@ -459,6 +462,12 @@ function transformCodeRefs(options: any) {
                 // if (link.url.indexOf("components/api/docs/") > 0){
                 //     console.log("getApiLink " + link.url);
                 // }
+
+                // overriding api root based on package that the member comes from.
+                const packageName = options.mappings.getType(apiTypeName, options.filePath).packageName;
+                if (!dockManagerUpdated && apiDocOverridePackages && apiDocOverridePackages.indexOf(packageName) !== -1) {
+                  link.url = link.url.replace(apiDocRoot, apiDocOverrideRoot);
+                }
 
                 // overriding api root for components specified in docsConfig.json
                 if (apiDocOverrideComponents !== undefined) {

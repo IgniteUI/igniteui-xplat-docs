@@ -49,8 +49,7 @@ builder.Services.AddIgniteUIBlazor(
 ```
 
 ```tsx
-import { IgrComboModule, IgrCombo } from 'igniteui-react';
-IgrComboModule.register();
+import { IgrCombo } from 'igniteui-react';
 ```
 
 次に、コンボを使用して列テンプレートを定義する必要があります。
@@ -59,22 +58,28 @@ IgrComboModule.register();
    <IgrColumn
     field="Country"
     header="Country"
-    bodyTemplate={webGridCountryDropDownTemplate}
-    name="column1">
+    bodyTemplate={webGridCountryDropDownTemplate}>
     </IgrColumn>
 ```
 
 ```tsx
-    function webGridCountryDropDownTemplate(props: {dataContext: IgrCellTemplateContext}) => {
-        var cell = props.dataContext.cell as any;
-        if (cell === undefined) {
-            return <></>;
-        }
-        const id = cell.id.rowID;
-        const comboId = "country" + id;
+    const webGridCountryDropDownTemplate = (ctx: IgrCellTemplateContext) => {
+        const rowId = ctx.cell?.id.rowID;
+        if (!rowId) return <></>;
+        const comboId = `country_${rowId}`;
+
         return (
         <>
-            <IgrCombo data={countries} ref={comboRefs} change={(x: any, args: any) => {onCountryChange(id, x, args) }} placeholder="Choose Country..." valueKey="Country" displayKey="Country" singleSelect="true" name={comboId}></IgrCombo>
+            <IgrCombo 
+                data={countries} 
+                ref={getComboRef(comboId)} 
+                onChange={(event: CustomEvent) => { onCountryChange(rowId, event) }} 
+                placeholder="Choose Country..." 
+                valueKey="Country" 
+                displayKey="Country" 
+                singleSelect={true} 
+                name={comboId}>
+            </IgrCombo>
         </>
         );
     }
@@ -161,19 +166,28 @@ public bindEventsCountryCombo(rowId: any, cell: any) {
 ```
 
 ```tsx
-    function onCountryChange(rowId: string, cmp: any, args:any) {
-        const regionCombo = comboRefCollection.get("region_" + rowId);
-       setTimeout(() => {
-            const newValue = cmp.value[0];
+    const onCountryChange = (rowId: string, event: CustomEvent) => {
+        const regionCombo = getComboRef(`region_${rowId}`).current;
+        const cityCombo = getComboRef(`city_${rowId}`).current;
+        const regions = regions;
+        const newValue = event.detail.newValue[0];
+        
             if (newValue === undefined) {
                 regionCombo.deselect(regionCombo.value);
                 regionCombo.disabled = true;
                 regionCombo.data = [];
+
+            cityCombo.deselect(regionCombo.value);
+            cityCombo.disabled = true;
+            cityCombo.data = [];
             } else {
                 regionCombo.disabled = false;
                 regionCombo.data = regions.filter(x => x.Country === newValue);
+
+            cityCombo.deselect(cityCombo.value);
+            cityCombo.disabled = true;
+            cityCombo.data = [];
             }
-       });
     }
 ```
 

@@ -120,7 +120,7 @@ You can specify if the label should be positioned before or after the switch tog
 ```
 
 ```razor
-<IgbSwitch LabelPosition="@CheckboxBaseLabelPosition.Before">Label</IgbSwitch>
+<IgbSwitch LabelPosition="@ToggleLabelPosition.Before">Label</IgbSwitch>
 ```
 
 The switch can also be labelled by elements external to the switch. In this case, the user is given full control to position and style the label in accordance with their needs.
