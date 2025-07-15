@@ -9,6 +9,14 @@
   ],
   "types":[
   {
+    "originalName": "ComponentArrayDataValueChangedEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-component-array-data-value-changed-event-args.ts","mappedName": "IgrComponentArrayDataValueChangedEventArgs"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "any[]",   "mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
     "originalName": "ActionStrip",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
@@ -197,19 +205,6 @@
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "width"}], "originalName": "Width"} ]
   },
   {
-    "originalName": "ChildGridRow",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "React","fileName": "igr-child-grid-row.ts","dynamicModuleName": "igr-child-grid-row-dynamic-module.ts","moduleName": "igr-child-grid-row-module.ts","mappedName": "IgrChildGridRow"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "data"}], "originalName": "Data"},
-      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "expanded"}], "originalName": "Expanded"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"},
-      {"names":[{"platform": "React", "mappedType": "IgrRowIsland","mappedName": "layout"}], "originalName": "Layout"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "level"}], "originalName": "Level"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
     "originalName": "ClipboardOptions",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -238,7 +233,9 @@
       {"names":[{"platform": "React", "mappedType": "GridColumnDataType","mappedName": "dataType"}], "originalName": "DataType"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disableHiding"}], "originalName": "DisableHiding"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disablePinning"}], "originalName": "DisablePinning"},
+      {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "disabledSummaries"}], "originalName": "DisabledSummaries"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "editable"}], "originalName": "Editable"},
+      {"names":[{"platform": "React", "mappedType": "IgrColumnEditorOptions","mappedName": "editorOptions"}], "originalName": "EditorOptions"},
       {"names":[{"platform": "React", "mappedType": "(arg: IgrCellTemplateContext) => any","mappedName": "errorTemplate"}], "originalName": "ErrorTemplate"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "field"}], "originalName": "Field"},
       {"names":[{"platform": "React", "mappedType": "(arg: IgrColumnTemplateContext) => any","mappedName": "filterCellTemplate"}], "originalName": "FilterCellTemplate"},
@@ -294,6 +291,14 @@
     "names":[{"platform": "React","fileName": "igr-column-component-event-args.ts","mappedName": "IgrColumnComponentEventArgs"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "IgrColumn","mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "ColumnEditorOptions",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "FieldEditorOptions",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-column-editor-options.ts","mappedName": "IgrColumnEditorOptions"}]
   },
   {
     "originalName": "ColumnExportingEventArgs",
@@ -636,6 +641,27 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
+    "originalName": "ExpressionTree",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "FilteringExpressionsTreeOrFilteringExpression",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-expression-tree.ts","mappedName": "IgrExpressionTree"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "entity"}], "originalName": "Entity"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "fieldName"}], "originalName": "FieldName"},
+      {"names":[{"platform": "React", "mappedType": "IgrExpressionTreeOrFilteringExpression[]","mappedName": "filteringOperands"}], "originalName": "FilteringOperands"},
+      {"names":[{"platform": "React", "mappedType": "FilteringLogic","mappedName": "operator"}], "originalName": "Operator"},
+      {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "returnFields"}], "originalName": "ReturnFields"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "FieldEditorOptions",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-field-editor-options.ts","mappedName": "IgrFieldEditorOptions"}]
+  },
+  {
     "originalName": "FieldPipeArgs",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -663,22 +689,33 @@
   {
     "originalName": "FilteringExpression",
     "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "FilteringExpressionsTreeOrFilteringExpression",
     "packageName": "igniteui-webgrids",
-    "names":[{"platform": "React","fileName": "igr-filtering-expression.ts","mappedName": "IgrFilteringExpression"}]
+    "names":[{"platform": "React","fileName": "igr-filtering-expression.ts","mappedName": "IgrFilteringExpression"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "IgrFilteringOperation","mappedName": "condition"}], "originalName": "Condition"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "conditionName"}], "originalName": "ConditionName"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "fieldName"}], "originalName": "FieldName"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "ignoreCase"}], "originalName": "IgnoreCase"},
+      {"names":[{"platform": "React", "mappedType": "IgrExpressionTree","mappedName": "searchTree"}], "originalName": "SearchTree"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "searchVal"}], "originalName": "SearchVal"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
     "originalName": "FilteringExpressionsTree",
     "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "ExpressionTree",
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "React","fileName": "igr-filtering-expressions-tree.ts","mappedName": "IgrFilteringExpressionsTree"}],
     "members":[
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "entity"}], "originalName": "Entity"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "fieldName"}], "originalName": "FieldName"},
       {"names":[{"platform": "React", "mappedType": "IgrFilteringExpressionsTreeOrFilteringExpression[]","mappedName": "filteringOperands"}], "originalName": "FilteringOperands"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "find"}], "originalName": "Find"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "findIndex"}], "originalName": "FindIndex"},
       {"names":[{"platform": "React", "mappedType": "FilteringLogic","mappedName": "operator"}], "originalName": "Operator"},
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "owner"}], "originalName": "Owner"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "returnFields"}], "originalName": "ReturnFields"},
       {"names":[{"platform": "React", "mappedType": "FilteringExpressionsTreeType","mappedName": "treeType"}], "originalName": "TreeType"} ]
   },
   {
@@ -687,12 +724,12 @@
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "React","fileName": "igr-filtering-expressions-tree-detail.ts","mappedName": "IgrFilteringExpressionsTreeDetail"}],
     "members":[
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "entity"}], "originalName": "Entity"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "fieldName"}], "originalName": "FieldName"},
       {"names":[{"platform": "React", "mappedType": "IgrFilteringExpressionsTreeOrFilteringExpression[]","mappedName": "filteringOperands"}], "originalName": "FilteringOperands"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "find"}], "originalName": "Find"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "findIndex"}], "originalName": "FindIndex"},
       {"names":[{"platform": "React", "mappedType": "FilteringLogic","mappedName": "operator"}], "originalName": "Operator"},
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "owner"}], "originalName": "Owner"},
+      {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "returnFields"}], "originalName": "ReturnFields"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "React", "mappedType": "FilteringExpressionsTreeType","mappedName": "treeType"}], "originalName": "TreeType"} ]
   },
@@ -732,6 +769,22 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "filter"}], "originalName": "Filter"} ]
   },
   {
+    "originalName": "ForOfDataChangeEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-for-of-data-change-event-args.ts","mappedName": "IgrForOfDataChangeEventArgs"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "IgrForOfDataChangeEventArgsDetail","mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "ForOfDataChangeEventArgsDetail",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "ForOfDataChangingEventArgsDetail",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-for-of-data-change-event-args-detail.ts","mappedName": "IgrForOfDataChangeEventArgsDetail"}]
+  },
+  {
     "originalName": "ForOfDataChangingEventArgs",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -765,12 +818,11 @@
   {
     "originalName": "ForOfStateDetail",
     "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseEventArgsDetail",
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "React","fileName": "igr-for-of-state-detail.ts","mappedName": "IgrForOfStateDetail"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "chunkSize"}], "originalName": "ChunkSize"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "startIndex"}], "originalName": "StartIndex"} ]
   },
   {
@@ -824,21 +876,6 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "toggleGroup"}], "originalName": "ToggleGroup"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "totalItemCount"}], "originalName": "TotalItemCount"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "unpinRow"}], "originalName": "UnpinRow"} ]
-  },
-  {
-    "originalName": "GridActionButton",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
-    "packageName": "igniteui-webgrids",
-    "names":[{"platform": "React","fileName": "igr-grid-action-button.ts","mappedName": "IgrGridActionButton"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "asMenuItem"}], "originalName": "AsMenuItem"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "classNames"}], "originalName": "ClassNames"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "iconName"}], "originalName": "IconName"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "iconSet"}], "originalName": "IconSet"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "labelText"}], "originalName": "LabelText"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
     "originalName": "GridActionsBaseDirective",
@@ -897,12 +934,13 @@
       {"names":[{"platform": "React", "mappedType": "(arg: IgrGridEmptyTemplateContext) => any","mappedName": "dragIndicatorIconTemplate"}], "originalName": "DragIndicatorIconTemplate"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "emptyFilteredGridMessage"}], "originalName": "EmptyFilteredGridMessage"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "emptyGridMessage"}], "originalName": "EmptyGridMessage"},
-      {"names":[{"platform": "React", "mappedType": "(arg: any) => any","mappedName": "emptyGridTemplate"}], "originalName": "EmptyGridTemplate"},
+      {"names":[{"platform": "React", "mappedType": "(arg: IgrGridTemplateContext) => any","mappedName": "emptyGridTemplate"}], "originalName": "EmptyGridTemplate"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "enableSummaries"}], "originalName": "EnableSummaries"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "endEdit"}], "originalName": "EndEdit"},
       {"names":[{"platform": "React", "mappedType": "(arg: IgrGridHeaderTemplateContext) => any","mappedName": "excelStyleHeaderIconTemplate"}], "originalName": "ExcelStyleHeaderIconTemplate"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "expandAll"}], "originalName": "ExpandAll"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "expandRow"}], "originalName": "ExpandRow"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "expansionStates"}], "originalName": "ExpansionStates"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "filter"}], "originalName": "Filter"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "filterGlobal"}], "originalName": "FilterGlobal"},
       {"names":[{"platform": "React", "mappedType": "FilterMode","mappedName": "filterMode"}], "originalName": "FilterMode"},
@@ -932,7 +970,7 @@
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isLoading"}], "originalName": "IsLoading"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "isRecordPinnedByIndex"}], "originalName": "IsRecordPinnedByIndex"},
       {"names":[{"platform": "React", "mappedType": "IgrSearchInfo","mappedName": "lastSearchInfo"}], "originalName": "LastSearchInfo"},
-      {"names":[{"platform": "React", "mappedType": "(arg: any) => any","mappedName": "loadingGridTemplate"}], "originalName": "LoadingGridTemplate"},
+      {"names":[{"platform": "React", "mappedType": "(arg: IgrGridTemplateContext) => any","mappedName": "loadingGridTemplate"}], "originalName": "LoadingGridTemplate"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "locale"}], "originalName": "Locale"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "markForCheck"}], "originalName": "MarkForCheck"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "moveColumn"}], "originalName": "MoveColumn"},
@@ -1079,7 +1117,8 @@
     "members":[
       {"names":[{"platform": "React", "mappedType": "IgrHierarchicalGrid","mappedName": "grid"}], "originalName": "Grid"},
       {"names":[{"platform": "React", "mappedType": "IgrRowIsland","mappedName": "owner"}], "originalName": "Owner"},
-      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "parentID"}], "originalName": "ParentID"} ]
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "parentID"}], "originalName": "ParentID"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "parentRowData"}], "originalName": "ParentRowData"} ]
   },
   {
     "originalName": "GridEditDoneEventArgs",
@@ -1597,6 +1636,14 @@
     "names":[{"platform": "React","fileName": "igr-group-by-expand-state.ts","mappedName": "IgrGroupByExpandState"}]
   },
   {
+    "originalName": "GroupByExpandStateEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-group-by-expand-state-event-args.ts","mappedName": "IgrGroupByExpandStateEventArgs"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "IgrGroupByExpandState[]","mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
     "originalName": "GroupByKey",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
@@ -1682,6 +1729,14 @@
     "names":[{"platform": "React","fileName": "igr-grouping-expression.ts","mappedName": "IgrGroupingExpression"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "groupingComparer"}], "originalName": "GroupingComparer"} ]
+  },
+  {
+    "originalName": "GroupingExpressionEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-grouping-expression-event-args.ts","mappedName": "IgrGroupingExpressionEventArgs"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "IgrGroupingExpression[]","mappedName": "detail"}], "originalName": "Detail"} ]
   },
   {
     "originalName": "GroupingState",
@@ -1976,6 +2031,8 @@
   {
     "originalName": "PivotDataSelector",
     "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "React","fileName": "igr-pivot-data-selector.ts","mappedName": "IgrPivotDataSelector"}],
     "members":[
@@ -2359,13 +2416,14 @@
       {"names":[{"platform": "React", "mappedType": "(arg: IgrGridEmptyTemplateContext) => any","mappedName": "dragIndicatorIconTemplate"}], "originalName": "DragIndicatorIconTemplate"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "emptyFilteredGridMessage"}], "originalName": "EmptyFilteredGridMessage"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "emptyGridMessage"}], "originalName": "EmptyGridMessage"},
-      {"names":[{"platform": "React", "mappedType": "(arg: any) => any","mappedName": "emptyGridTemplate"}], "originalName": "EmptyGridTemplate"},
+      {"names":[{"platform": "React", "mappedType": "(arg: IgrGridTemplateContext) => any","mappedName": "emptyGridTemplate"}], "originalName": "EmptyGridTemplate"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "enableSummaries"}], "originalName": "EnableSummaries"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "endEdit"}], "originalName": "EndEdit"},
       {"names":[{"platform": "React", "mappedType": "(arg: IgrGridHeaderTemplateContext) => any","mappedName": "excelStyleHeaderIconTemplate"}], "originalName": "ExcelStyleHeaderIconTemplate"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "expandAll"}], "originalName": "ExpandAll"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "expandChildren"}], "originalName": "ExpandChildren"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "expandRow"}], "originalName": "ExpandRow"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "expansionStates"}], "originalName": "ExpansionStates"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "filter"}], "originalName": "Filter"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "filterGlobal"}], "originalName": "FilterGlobal"},
       {"names":[{"platform": "React", "mappedType": "FilterMode","mappedName": "filterMode"}], "originalName": "FilterMode"},
@@ -2392,7 +2450,7 @@
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "hideRowSelectors"}], "originalName": "HideRowSelectors"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isLoading"}], "originalName": "IsLoading"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "isRecordPinnedByIndex"}], "originalName": "IsRecordPinnedByIndex"},
-      {"names":[{"platform": "React", "mappedType": "(arg: any) => any","mappedName": "loadingGridTemplate"}], "originalName": "LoadingGridTemplate"},
+      {"names":[{"platform": "React", "mappedType": "(arg: IgrGridTemplateContext) => any","mappedName": "loadingGridTemplate"}], "originalName": "LoadingGridTemplate"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "locale"}], "originalName": "Locale"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "markForCheck"}], "originalName": "MarkForCheck"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "moveColumn"}], "originalName": "MoveColumn"},
@@ -2797,6 +2855,8 @@
   {
     "originalName": "FilteringExpressionsTreeOrFilteringExpression",
     "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "ExpressionTreeOrFilteringExpression",
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "React","fileName": "igr-filtering-expressions-tree-or-filtering-expression.ts","mappedName": "IgrFilteringExpressionsTreeOrFilteringExpression"}]
   },
@@ -2805,6 +2865,12 @@
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webgrids",
     "names":[{"platform": "React","fileName": "igr-filtering-expressions-tree-or-filtering-operation.ts","mappedName": "IgrFilteringExpressionsTreeOrFilteringOperation"}]
+  },
+  {
+    "originalName": "ExpressionTreeOrFilteringExpression",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webgrids",
+    "names":[{"platform": "React","fileName": "igr-expression-tree-or-filtering-expression.ts","mappedName": "IgrExpressionTreeOrFilteringExpression"}]
   },
   {
     "originalName": "GridCellIdentifier",

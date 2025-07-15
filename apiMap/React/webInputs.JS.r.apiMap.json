@@ -17,8 +17,8 @@
     "igr-card-header-module.ts",
     "igr-card-media-module.ts",
     "igr-card-module.ts",
-    "igr-carousel-module.ts",
     "igr-carousel-indicator-module.ts",
+    "igr-carousel-module.ts",
     "igr-carousel-slide-module.ts",
     "igr-checkbox-base-module.ts",
     "igr-checkbox-module.ts",
@@ -69,16 +69,208 @@
     "igr-stepper-module.ts",
     "igr-switch-module.ts",
     "igr-tab-module.ts",
-    "igr-tab-panel-module.ts",
     "igr-tabs-module.ts",
     "igr-textarea-module.ts",
-    "igr-tooltip-module.ts",
+    "igr-tile-manager-module.ts",
+    "igr-tile-module.ts",
     "igr-toast-module.ts",
     "igr-toggle-button-module.ts",
+    "igr-tooltip-module.ts",
     "igr-tree-item-module.ts",
     "igr-tree-module.ts"
   ],
   "types":[
+  {
+    "originalName": "ActiveStepChangedEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-active-step-changed-event-args.ts","mappedName": "IgrActiveStepChangedEventArgs"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "IgrActiveStepChangedEventArgsDetail","mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "ActiveStepChangedEventArgsDetail",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-active-step-changed-event-args-detail.ts","mappedName": "IgrActiveStepChangedEventArgsDetail"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"} ]
+  },
+  {
+    "originalName": "ActiveStepChangingEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-active-step-changing-event-args.ts","mappedName": "IgrActiveStepChangingEventArgs"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "IgrActiveStepChangingEventArgsDetail","mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "ActiveStepChangingEventArgsDetail",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-active-step-changing-event-args-detail.ts","mappedName": "IgrActiveStepChangingEventArgsDetail"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "newIndex"}], "originalName": "NewIndex"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "oldIndex"}], "originalName": "OldIndex"} ]
+  },
+  {
+    "originalName": "Carousel",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-carousel.ts","mappedName": "IgrCarousel"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "HorizontalTransitionAnimation","mappedName": "animationType"}], "originalName": "AnimationType"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "current"}], "originalName": "Current"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disableLoop"}], "originalName": "DisableLoop"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disablePauseOnInteraction"}], "originalName": "DisablePauseOnInteraction"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "hideIndicators"}], "originalName": "HideIndicators"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "hideNavigation"}], "originalName": "HideNavigation"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "indicatorsLabelFormat"}], "originalName": "IndicatorsLabelFormat"},
+      {"names":[{"platform": "React", "mappedType": "CarouselIndicatorsOrientation","mappedName": "indicatorsOrientation"}], "originalName": "IndicatorsOrientation"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "interval"}], "originalName": "Interval"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isPaused"}], "originalName": "IsPaused"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isPlaying"}], "originalName": "IsPlaying"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "maximumIndicatorsCount"}], "originalName": "MaximumIndicatorsCount"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "next"}], "originalName": "Next"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "pause"}], "originalName": "Pause"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "play"}], "originalName": "Play"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "prev"}], "originalName": "Prev"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "select"}], "originalName": "Select"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "slidesLabelFormat"}], "originalName": "SlidesLabelFormat"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "total"}], "originalName": "Total"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "vertical"}], "originalName": "Vertical"} ]
+  },
+  {
+    "originalName": "CarouselIndicator",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-carousel-indicator.ts","mappedName": "IgrCarouselIndicator"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "CarouselSlide",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-carousel-slide.ts","mappedName": "IgrCarouselSlide"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "active"}], "originalName": "Active"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "Tile",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-tile.ts","mappedName": "IgrTile"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "colSpan"}], "originalName": "ColSpan"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "colStart"}], "originalName": "ColStart"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disableFullscreen"}], "originalName": "DisableFullscreen"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disableMaximize"}], "originalName": "DisableMaximize"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disableResize"}], "originalName": "DisableResize"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "fullscreen"}], "originalName": "Fullscreen"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "maximized"}], "originalName": "Maximized"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "position"}], "originalName": "Position"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "rowSpan"}], "originalName": "RowSpan"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "rowStart"}], "originalName": "RowStart"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "TileChangeStateEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-tile-change-state-event-args.ts","mappedName": "IgrTileChangeStateEventArgs"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "IgrTileChangeStateEventArgsDetail","mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "TileChangeStateEventArgsDetail",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-tile-change-state-event-args-detail.ts","mappedName": "IgrTileChangeStateEventArgsDetail"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "state"}], "originalName": "State"},
+      {"names":[{"platform": "React", "mappedType": "IgrTile","mappedName": "tile"}], "originalName": "Tile"} ]
+  },
+  {
+    "originalName": "TileComponentEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-tile-component-event-args.ts","mappedName": "IgrTileComponentEventArgs"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "IgrTile","mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "TileManager",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-tile-manager.ts","mappedName": "IgrTileManager"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "columnCount"}], "originalName": "ColumnCount"},
+      {"names":[{"platform": "React", "mappedType": "TileManagerDragMode","mappedName": "dragMode"}], "originalName": "DragMode"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "gap"}], "originalName": "Gap"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "loadLayout"}], "originalName": "LoadLayout"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "minColumnWidth"}], "originalName": "MinColumnWidth"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "minRowHeight"}], "originalName": "MinRowHeight"},
+      {"names":[{"platform": "React", "mappedType": "TileManagerResizeMode","mappedName": "resizeMode"}], "originalName": "ResizeMode"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "saveLayout"}], "originalName": "SaveLayout"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "React", "mappedType": "IgrTile[]","mappedName": "tiles"}], "originalName": "Tiles"} ]
+  },
+  {
+    "originalName": "Tooltip",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-tooltip.ts","mappedName": "IgrTooltip"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "anchor"}], "originalName": "Anchor"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disableArrow"}], "originalName": "DisableArrow"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "hide"}], "originalName": "Hide"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "hideDelay"}], "originalName": "HideDelay"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "hideTriggers"}], "originalName": "HideTriggers"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "message"}], "originalName": "Message"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "offset"}], "originalName": "Offset"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "open"}], "originalName": "Open"},
+      {"names":[{"platform": "React", "mappedType": "PopoverPlacement","mappedName": "placement"}], "originalName": "Placement"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "show"}], "originalName": "Show"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "showDelay"}], "originalName": "ShowDelay"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "showTriggers"}], "originalName": "ShowTriggers"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "sticky"}], "originalName": "Sticky"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "toggle"}], "originalName": "Toggle"} ]
+  },
+  {
+    "originalName": "TreeSelectionEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-tree-selection-event-args.ts","mappedName": "IgrTreeSelectionEventArgs"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "IgrTreeSelectionEventArgsDetail","mappedName": "detail"}], "originalName": "Detail"} ]
+  },
+  {
+    "originalName": "TreeSelectionEventArgsDetail",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-tree-selection-event-args-detail.ts","mappedName": "IgrTreeSelectionEventArgsDetail"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "IgrTreeItem[]","mappedName": "newSelection"}], "originalName": "NewSelection"} ]
+  },
   {
     "originalName": "RadioChangeEventArgsDetail",
     "originalNamespace": "Infragistics.Controls",
@@ -97,7 +289,8 @@
     "packageName": "igniteui-webinputs",
     "names":[{"platform": "React","fileName": "igr-radio-group.ts","mappedName": "IgrRadioGroup"}],
     "members":[
-      {"names":[{"platform": "React", "mappedType": "RadioGroupAlignment","mappedName": "alignment"}], "originalName": "Alignment"},
+      {"names":[{"platform": "React", "mappedType": "ContentOrientation","mappedName": "alignment"}], "originalName": "Alignment"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "defaultValue"}], "originalName": "DefaultValue"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"} ]
@@ -177,11 +370,11 @@
       {"names":[{"platform": "React", "mappedType": "Date","mappedName": "activeDate"}], "originalName": "ActiveDate"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "checkValidity"}], "originalName": "CheckValidity"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "clear"}], "originalName": "Clear"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "defaultValue"}], "originalName": "DefaultValue"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
       {"names":[{"platform": "React", "mappedType": "IDateRangeDescriptor[]","mappedName": "disabledDates"}], "originalName": "DisabledDates"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "displayFormat"}], "originalName": "DisplayFormat"},
-      {"names":[{"platform": "React", "mappedType": "DatePickerHeaderOrientation","mappedName": "headerOrientation"}], "originalName": "HeaderOrientation"},
+      {"names":[{"platform": "React", "mappedType": "CalendarHeaderOrientation","mappedName": "headerOrientation"}], "originalName": "HeaderOrientation"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "hideHeader"}], "originalName": "HideHeader"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "hideOutsideDays"}], "originalName": "HideOutsideDays"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "inputFormat"}], "originalName": "InputFormat"},
@@ -190,10 +383,10 @@
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "locale"}], "originalName": "Locale"},
       {"names":[{"platform": "React", "mappedType": "Date","mappedName": "max"}], "originalName": "Max"},
       {"names":[{"platform": "React", "mappedType": "Date","mappedName": "min"}], "originalName": "Min"},
-      {"names":[{"platform": "React", "mappedType": "DatePickerMode","mappedName": "mode"}], "originalName": "Mode"},
+      {"names":[{"platform": "React", "mappedType": "PickerMode","mappedName": "mode"}], "originalName": "Mode"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "nonEditable"}], "originalName": "NonEditable"},
-      {"names":[{"platform": "React", "mappedType": "DatePickerOrientation","mappedName": "orientation"}], "originalName": "Orientation"},
+      {"names":[{"platform": "React", "mappedType": "ContentOrientation","mappedName": "orientation"}], "originalName": "Orientation"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "outlined"}], "originalName": "Outlined"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "placeholder"}], "originalName": "Placeholder"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "prompt"}], "originalName": "Prompt"},
@@ -269,12 +462,17 @@
     "names":[{"platform": "React","fileName": "igr-icon-meta.ts","mappedName": "IgrIconMeta"}]
   },
   {
-    "originalName": "TreeSelectionChangeDetail",
+    "originalName": "Accordion",
     "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
     "packageName": "igniteui-webinputs",
-    "names":[{"platform": "React","fileName": "igr-tree-selection-change-detail.ts","mappedName": "IgrTreeSelectionChangeDetail"}],
+    "names":[{"platform": "React","fileName": "igr-accordion.ts","mappedName": "IgrAccordion"}],
     "members":[
-      {"names":[{"platform": "React", "mappedType": "IgrTreeItem[]","mappedName": "newSelection"}], "originalName": "NewSelection"} ]
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "hideAll"}], "originalName": "HideAll"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "showAll"}], "originalName": "ShowAll"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "singleExpand"}], "originalName": "SingleExpand"} ]
   },
   {
     "originalName": "ActivePaneEventArgsDetail",
@@ -285,39 +483,6 @@
       {"names":[{"platform": "React", "mappedType": "IgrContentPane","mappedName": "newPane"}], "originalName": "NewPane"},
       {"names":[{"platform": "React", "mappedType": "IgrContentPane","mappedName": "oldPane"}], "originalName": "OldPane"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
-    "originalName": "ActiveStepChangedArgsDetail",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "React","fileName": "igr-active-step-changed-args-detail.ts","mappedName": "IgrActiveStepChangedArgsDetail"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"} ]
-  },
-  {
-    "originalName": "ActiveStepChangedArgsEventArgs",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "React","fileName": "igr-active-step-changed-args-event-args.ts","mappedName": "IgrActiveStepChangedArgsEventArgs"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "IgrActiveStepChangedArgsDetail","mappedName": "detail"}], "originalName": "Detail"} ]
-  },
-  {
-    "originalName": "ActiveStepChangingArgsDetail",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "React","fileName": "igr-active-step-changing-args-detail.ts","mappedName": "IgrActiveStepChangingArgsDetail"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "newIndex"}], "originalName": "NewIndex"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "oldIndex"}], "originalName": "OldIndex"} ]
-  },
-  {
-    "originalName": "ActiveStepChangingArgsEventArgs",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "React","fileName": "igr-active-step-changing-args-event-args.ts","mappedName": "IgrActiveStepChangingArgsEventArgs"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "IgrActiveStepChangingArgsDetail","mappedName": "detail"}], "originalName": "Detail"} ]
   },
   {
     "originalName": "BaseAlertLike",
@@ -331,7 +496,7 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "hide"}], "originalName": "Hide"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "keepOpen"}], "originalName": "KeepOpen"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "open"}], "originalName": "Open"},
-      {"names":[{"platform": "React", "mappedType": "BaseAlertLikePosition","mappedName": "position"}], "originalName": "Position"},
+      {"names":[{"platform": "React", "mappedType": "AbsolutePosition","mappedName": "position"}], "originalName": "Position"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "show"}], "originalName": "Show"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "toggle"}], "originalName": "Toggle"} ]
@@ -376,7 +541,7 @@
     "packageName": "igniteui-webinputs",
     "names":[{"platform": "React","fileName": "igr-button-group.ts","mappedName": "IgrButtonGroup"}],
     "members":[
-      {"names":[{"platform": "React", "mappedType": "ButtonGroupAlignment","mappedName": "alignment"}], "originalName": "Alignment"},
+      {"names":[{"platform": "React", "mappedType": "ContentOrientation","mappedName": "alignment"}], "originalName": "Alignment"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
       {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "selectedItems"}], "originalName": "SelectedItems"},
       {"names":[{"platform": "React", "mappedType": "ButtonGroupSelection","mappedName": "selection"}], "originalName": "Selection"},
@@ -395,8 +560,8 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "blurComponent"}], "originalName": "BlurComponent"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "caseSensitiveIcon"}], "originalName": "CaseSensitiveIcon"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "checkValidity"}], "originalName": "CheckValidity"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"},
       {"names":[{"platform": "React", "mappedType": "any[]",   "mappedName": "data"}], "originalName": "Data"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "defaultValue"}], "originalName": "DefaultValue"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "deselect"}], "originalName": "Deselect"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disableFiltering"}], "originalName": "DisableFiltering"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
@@ -642,6 +807,7 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "blurComponent"}], "originalName": "BlurComponent"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "checkValidity"}], "originalName": "CheckValidity"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "clearSelection"}], "originalName": "ClearSelection"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "defaultValue"}], "originalName": "DefaultValue"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "distance"}], "originalName": "Distance"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "focusComponent"}], "originalName": "FocusComponent"},
@@ -652,10 +818,10 @@
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "outlined"}], "originalName": "Outlined"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "placeholder"}], "originalName": "Placeholder"},
-      {"names":[{"platform": "React", "mappedType": "DropdownPlacement","mappedName": "placement"}], "originalName": "Placement"},
+      {"names":[{"platform": "React", "mappedType": "PopoverPlacement","mappedName": "placement"}], "originalName": "Placement"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "reportValidity"}], "originalName": "ReportValidity"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "required"}], "originalName": "Required"},
-      {"names":[{"platform": "React", "mappedType": "SelectScrollStrategy","mappedName": "scrollStrategy"}], "originalName": "ScrollStrategy"},
+      {"names":[{"platform": "React", "mappedType": "PopoverScrollStrategy","mappedName": "scrollStrategy"}], "originalName": "ScrollStrategy"},
       {"names":[{"platform": "React", "mappedType": "IgrSelectItem","mappedName": "selectedItem"}], "originalName": "SelectedItem"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setCustomValidity"}], "originalName": "SetCustomValidity"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"} ]
@@ -711,8 +877,7 @@
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "optional"}], "originalName": "Optional"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "toggleAnimation"}], "originalName": "ToggleAnimation"} ]
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
     "originalName": "Stepper",
@@ -725,7 +890,7 @@
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "animationDuration"}], "originalName": "AnimationDuration"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "contentTop"}], "originalName": "ContentTop"},
-      {"names":[{"platform": "React", "mappedType": "StepperHorizontalAnimation","mappedName": "horizontalAnimation"}], "originalName": "HorizontalAnimation"},
+      {"names":[{"platform": "React", "mappedType": "HorizontalTransitionAnimation","mappedName": "horizontalAnimation"}], "originalName": "HorizontalAnimation"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "linear"}], "originalName": "Linear"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "navigateTo"}], "originalName": "NavigateTo"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "next"}], "originalName": "Next"},
@@ -746,11 +911,8 @@
     "packageName": "igniteui-webinputs",
     "names":[{"platform": "React","fileName": "igr-tab.ts","mappedName": "IgrTab"}],
     "members":[
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "blur"}], "originalName": "Blur"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "focus"}], "originalName": "Focus"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "panel"}], "originalName": "Panel"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "label"}], "originalName": "Label"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "selected"}], "originalName": "Selected"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
@@ -773,17 +935,6 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
-    "originalName": "TabPanel",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "React","fileName": "igr-tab-panel.ts","mappedName": "IgrTabPanel"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
     "originalName": "Tabs",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
@@ -793,7 +944,6 @@
     "members":[
       {"names":[{"platform": "React", "mappedType": "TabsActivation","mappedName": "activation"}], "originalName": "Activation"},
       {"names":[{"platform": "React", "mappedType": "TabsAlignment","mappedName": "alignment"}], "originalName": "Alignment"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "disconnectedCallback"}], "originalName": "DisconnectedCallback"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "select"}], "originalName": "Select"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "selected"}], "originalName": "Selected"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
@@ -806,13 +956,14 @@
     "packageName": "igniteui-webinputs",
     "names":[{"platform": "React","fileName": "igr-textarea.ts","mappedName": "IgrTextarea"}],
     "members":[
-      {"names":[{"platform": "React", "mappedType": "TextareaAutocapitalize","mappedName": "autocapitalize"}], "originalName": "Autocapitalize"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "autocapitalize"}], "originalName": "Autocapitalize"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "autocomplete"}], "originalName": "Autocomplete"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "checkValidity"}], "originalName": "CheckValidity"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "defaultValue"}], "originalName": "DefaultValue"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "disconnectedCallback"}], "originalName": "DisconnectedCallback"},
-      {"names":[{"platform": "React", "mappedType": "TextareaInputMode","mappedName": "inputMode"}], "originalName": "InputMode"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "inputMode"}], "originalName": "InputMode"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "label"}], "originalName": "Label"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "maxLength"}], "originalName": "MaxLength"},
@@ -836,29 +987,6 @@
       {"names":[{"platform": "React", "mappedType": "TextareaWrap","mappedName": "wrap"}], "originalName": "Wrap"} ]
   },
   {
-    "originalName": "Tooltip",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "React","fileName": "igc-tooltip-component.ts","mappedName": "IgrTooltipComponent"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "string","mappedName": "anchor"}], "originalName": "Anchor"},
-      {"names":[{"platform": "React", "mappedType": "boolean","mappedName": "disableArrow"}], "originalName": "DisableArrow"},
-      {"names":[{"platform": "React", "mappedType": "string","mappedName": "message"}], "originalName": "Message"},
-      {"names":[{"platform": "React", "mappedType": "number","mappedName": "offset"}], "originalName": "Offset"},
-      {"names":[{"platform": "React", "mappedType": "PopoverPlacement","mappedName": "placement"}], "originalName": "Placement"},
-      {"names":[{"platform": "React", "mappedType": "boolean","mappedName": "sticky"}], "originalName": "Sticky"},
-      {"names":[{"platform": "React", "mappedType": "number","mappedName": "hideDelay"}], "originalName": "HideDelay"},
-      {"names":[{"platform": "React", "mappedType": "string","mappedName": "hideTriggers"}], "originalName": "HideTriggers"},
-      {"names":[{"platform": "React", "mappedType": "boolean","mappedName": "open"}], "originalName": "Open"},
-      {"names":[{"platform": "React", "mappedType": "number","mappedName": "showDelay"}], "originalName": "ShowDelay"},
-      {"names":[{"platform": "React", "mappedType": "string","mappedName": "showTriggers"}], "originalName": "ShowTriggers"},
-      {"names":[{"platform": "React", "mappedType": "method","mappedName": "hide"}], "originalName": "Hide"},
-      {"names":[{"platform": "React", "mappedType": "method","mappedName": "show"}], "originalName": "Show"},
-      {"names":[{"platform": "React", "mappedType": "method","mappedName": "toggle"}], "originalName": "Toggle"} ]
-  },
-  {
     "originalName": "ToggleButton",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
@@ -875,20 +1003,6 @@
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"} ]
   },
   {
-    "originalName": "TreeSelectionChange",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "React","fileName": "igr-tree-selection-change.ts","mappedName": "IgrTreeSelectionChange"}]
-  },
-  {
-    "originalName": "TreeSelectionChangeEventArgs",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "React","fileName": "igr-tree-selection-change-event-args.ts","mappedName": "IgrTreeSelectionChangeEventArgs"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "IgrTreeSelectionChangeDetail","mappedName": "detail"}], "originalName": "Detail"} ]
-  },
-  {
     "originalName": "DockManager",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
@@ -900,6 +1014,8 @@
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "allowFloatingPanesResize"}], "originalName": "AllowFloatingPanesResize"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "allowInnerDock"}], "originalName": "AllowInnerDock"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "allowMaximize"}], "originalName": "AllowMaximize"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "allowSplitterDock"}], "originalName": "AllowSplitterDock"},
+      {"names":[{"platform": "React", "mappedType": "PaneActionBehavior","mappedName": "closeBehavior"}], "originalName": "CloseBehavior"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "containedInBoundaries"}], "originalName": "ContainedInBoundaries"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disableKeyboardNavigation"}], "originalName": "DisableKeyboardNavigation"},
       {"names":[{"platform": "React", "mappedType": "IgrDockManagerPane","mappedName": "draggedPane"}], "originalName": "DraggedPane"},
@@ -911,7 +1027,8 @@
       {"names":[{"platform": "React", "mappedType": "IgrDockManagerResourceStrings","mappedName": "resourceStrings"}], "originalName": "ResourceStrings"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "React", "mappedType": "DockManagerShowHeaderIconOnHover","mappedName": "showHeaderIconOnHover"}], "originalName": "ShowHeaderIconOnHover"},
-      {"names":[{"platform": "React", "mappedType": "DockManagerShowPaneHeaders","mappedName": "showPaneHeaders"}], "originalName": "ShowPaneHeaders"} ]
+      {"names":[{"platform": "React", "mappedType": "DockManagerShowPaneHeaders","mappedName": "showPaneHeaders"}], "originalName": "ShowPaneHeaders"},
+      {"names":[{"platform": "React", "mappedType": "PaneActionBehavior","mappedName": "unpinBehavior"}], "originalName": "UnpinBehavior"} ]
   },
   {
     "originalName": "LayoutChangeEventArgs",
@@ -922,28 +1039,6 @@
       {"names":[{"platform": "React", "mappedType": "IgrDockManagerLayout","mappedName": "detail"}], "originalName": "Detail"} ]
   },
   {
-    "originalName": "ValidatorHandler",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "React","fileName": "igr-validator-handler.ts","mappedName": "IgrValidatorHandler"}]
-  },
-  {
-    "originalName": "TreeSelectionOptionsEventArgs",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "React","fileName": "igr-tree-selection-options-event-args.ts","mappedName": "IgrTreeSelectionOptionsEventArgs"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "IgrTreeSelectionOptionsEventDetail","mappedName": "detail"}], "originalName": "Detail"} ]
-  },
-  {
-    "originalName": "TreeSelectionOptionsEventDetail",
-    "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "React","fileName": "igr-tree-selection-options-event-detail.ts","mappedName": "IgrTreeSelectionOptionsEventDetail"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "IgrTreeItemCollection","mappedName": "newSelection"}], "originalName": "NewSelection"} ]
-  },
-  {
     "originalName": "MaskInput",
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
@@ -951,7 +1046,6 @@
     "packageName": "igniteui-webinputs",
     "names":[{"platform": "React","fileName": "igr-mask-input.ts","mappedName": "IgrMaskInput"}],
     "members":[
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "mask"}], "originalName": "Mask"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"},
       {"names":[{"platform": "React", "mappedType": "MaskInputValueMode","mappedName": "valueMode"}], "originalName": "ValueMode"} ]
@@ -1158,7 +1252,8 @@
       {"names":[{"platform": "React", "mappedType": "DockManagerPaneType","mappedName": "paneType"}], "originalName": "PaneType"},
       {"names":[{"platform": "React", "mappedType": "IgrDockManagerPaneCollection","mappedName": "panes"}], "originalName": "Panes"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
-      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "size"}], "originalName": "Size"} ]
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "size"}], "originalName": "Size"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "useFixedSize"}], "originalName": "UseFixedSize"} ]
   },
   {
     "originalName": "PaneDragAction",
@@ -1329,9 +1424,9 @@
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "autofocus"}], "originalName": "Autofocus"},
       {"names":[{"platform": "React", "mappedType": "InputType","mappedName": "displayType"}], "originalName": "DisplayType"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "inputMode"}], "originalName": "InputMode"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "max"}], "originalName": "Max"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "max"}], "originalName": "Max"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "maxLength"}], "originalName": "MaxLength"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "min"}], "originalName": "Min"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "min"}], "originalName": "Min"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "minLength"}], "originalName": "MinLength"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "pattern"}], "originalName": "Pattern"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "select"}], "originalName": "Select"},
@@ -1356,9 +1451,9 @@
       {"names":[{"platform": "React", "mappedType": "IgrDropdownGroup[]","mappedName": "groups"}], "originalName": "Groups"},
       {"names":[{"platform": "React", "mappedType": "IgrDropdownItem[]","mappedName": "items"}], "originalName": "Items"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "navigateTo"}], "originalName": "NavigateTo"},
-      {"names":[{"platform": "React", "mappedType": "DropdownPlacement","mappedName": "placement"}], "originalName": "Placement"},
+      {"names":[{"platform": "React", "mappedType": "PopoverPlacement","mappedName": "placement"}], "originalName": "Placement"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "sameWidth"}], "originalName": "SameWidth"},
-      {"names":[{"platform": "React", "mappedType": "DropdownScrollStrategy","mappedName": "scrollStrategy"}], "originalName": "ScrollStrategy"},
+      {"names":[{"platform": "React", "mappedType": "PopoverScrollStrategy","mappedName": "scrollStrategy"}], "originalName": "ScrollStrategy"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "select"}], "originalName": "Select"},
       {"names":[{"platform": "React", "mappedType": "IgrDropdownItem","mappedName": "selectedItem"}], "originalName": "SelectedItem"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "showTarget"}], "originalName": "Show"},
@@ -1446,6 +1541,7 @@
     "members":[
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "blurComponent"}], "originalName": "BlurComponent"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "checkValidity"}], "originalName": "CheckValidity"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "defaultValue"}], "originalName": "DefaultValue"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "focusComponent"}], "originalName": "FocusComponent"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"},
@@ -1481,7 +1577,6 @@
     "names":[{"platform": "React","fileName": "igr-progress-base.ts","mappedName": "IgrProgressBase"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "animationDuration"}], "originalName": "AnimationDuration"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "hideLabel"}], "originalName": "HideLabel"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "indeterminate"}], "originalName": "Indeterminate"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "labelFormat"}], "originalName": "LabelFormat"},
@@ -1500,6 +1595,7 @@
     "members":[
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "allowReset"}], "originalName": "AllowReset"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "checkValidity"}], "originalName": "CheckValidity"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "defaultValue"}], "originalName": "DefaultValue"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "hoverPreview"}], "originalName": "HoverPreview"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"},
@@ -1586,6 +1682,7 @@
     "names":[{"platform": "React","fileName": "igr-slider.ts","mappedName": "IgrSlider"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "checkValidity"}], "originalName": "CheckValidity"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "defaultValue"}], "originalName": "DefaultValue"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "reportValidity"}], "originalName": "ReportValidity"},
@@ -1602,7 +1699,6 @@
     "packageName": "igniteui-webinputs",
     "names":[{"platform": "React","fileName": "igr-slider-base.ts","mappedName": "IgrSliderBase"}],
     "members":[
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "discreteTrack"}], "originalName": "DiscreteTrack"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "hidePrimaryLabels"}], "originalName": "HidePrimaryLabels"},
@@ -1616,8 +1712,8 @@
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "secondaryTicks"}], "originalName": "SecondaryTicks"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "step"}], "originalName": "Step"},
-      {"names":[{"platform": "React", "mappedType": "TickLabelRotation","mappedName": "tickLabelRotation"}], "originalName": "TickLabelRotation"},
-      {"names":[{"platform": "React", "mappedType": "SliderBaseTickOrientation","mappedName": "tickOrientation"}], "originalName": "TickOrientation"},
+      {"names":[{"platform": "React", "mappedType": "SliderTickLabelRotation","mappedName": "tickLabelRotation"}], "originalName": "TickLabelRotation"},
+      {"names":[{"platform": "React", "mappedType": "SliderTickOrientation","mappedName": "tickOrientation"}], "originalName": "TickOrientation"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "upperBound"}], "originalName": "UpperBound"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "valueFormat"}], "originalName": "ValueFormat"},
       {"names":[{"platform": "React", "mappedType": "NumberFormatOptions","mappedName": "valueFormatOptions"}], "originalName": "ValueFormatOptions"} ]
@@ -1653,7 +1749,7 @@
       {"names":[{"platform": "React", "mappedType": "CalendarHeaderOrientation","mappedName": "headerOrientation"}], "originalName": "HeaderOrientation"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "hideHeader"}], "originalName": "HideHeader"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "hideOutsideDays"}], "originalName": "HideOutsideDays"},
-      {"names":[{"platform": "React", "mappedType": "CalendarOrientation","mappedName": "orientation"}], "originalName": "Orientation"},
+      {"names":[{"platform": "React", "mappedType": "ContentOrientation","mappedName": "orientation"}], "originalName": "Orientation"},
       {"names":[{"platform": "React", "mappedType": "IgrCalendarResourceStrings","mappedName": "resourceStrings"}], "originalName": "ResourceStrings"},
       {"names":[{"platform": "React", "mappedType": "Date","mappedName": "value"}], "originalName": "Value"},
       {"names":[{"platform": "React", "mappedType": "Date[]","mappedName": "values"}], "originalName": "Values"},
@@ -1701,22 +1797,7 @@
     "originalName": "CalendarResourceStrings",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webinputs",
-    "names":[{"platform": "React","fileName": "igr-calendar-resource-strings.ts","mappedName": "IgrCalendarResourceStrings"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "endDate"}], "originalName": "EndDate"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "nextMonth"}], "originalName": "NextMonth"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "nextYear"}], "originalName": "NextYear"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "nextYears"}], "originalName": "NextYears"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "previousMonth"}], "originalName": "PreviousMonth"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "previousYear"}], "originalName": "PreviousYear"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "previousYears"}], "originalName": "PreviousYears"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "selectDate"}], "originalName": "SelectDate"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "selectMonth"}], "originalName": "SelectMonth"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "selectRange"}], "originalName": "SelectRange"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "selectYear"}], "originalName": "SelectYear"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "selectedDate"}], "originalName": "SelectedDate"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "startDate"}], "originalName": "StartDate"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "weekLabel"}], "originalName": "WeekLabel"} ]
+    "names":[{"platform": "React","fileName": "igr-calendar-resource-strings.ts","mappedName": "IgrCalendarResourceStrings"}]
   },
   {
     "originalName": "CalendarBase",
@@ -1728,7 +1809,7 @@
     "members":[
       {"names":[{"platform": "React", "mappedType": "IDateRangeDescriptor[]","mappedName": "disabledDates"}], "originalName": "DisabledDates"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "locale"}], "originalName": "Locale"},
-      {"names":[{"platform": "React", "mappedType": "CalendarBaseSelection","mappedName": "selection"}], "originalName": "Selection"},
+      {"names":[{"platform": "React", "mappedType": "CalendarSelection","mappedName": "selection"}], "originalName": "Selection"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "showWeekNumbers"}], "originalName": "ShowWeekNumbers"},
       {"names":[{"platform": "React", "mappedType": "IDateRangeDescriptor[]","mappedName": "specialDates"}], "originalName": "SpecialDates"},
@@ -1758,7 +1839,7 @@
     "packageName": "igniteui-webinputs",
     "names":[{"platform": "React","fileName": "igr-card-actions.ts","mappedName": "IgrCardActions"}],
     "members":[
-      {"names":[{"platform": "React", "mappedType": "CardActionsOrientation","mappedName": "orientation"}], "originalName": "Orientation"},
+      {"names":[{"platform": "React", "mappedType": "ContentOrientation","mappedName": "orientation"}], "originalName": "Orientation"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
@@ -1792,18 +1873,6 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
-    "originalName": "SizableComponentSize",
-    "originalNamespace": "Infragistics.Controls",
-    "isEnum":true,
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "React","fileName": "SizableComponentSize.ts","mappedName": "SizableComponentSize"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
-      {"names":[{"platform": "React", "mappedType": "SizableComponentSize","mappedName": "Large"}], "originalName": "Large"},
-      {"names":[{"platform": "React", "mappedType": "SizableComponentSize","mappedName": "Medium"}], "originalName": "Medium"},
-      {"names":[{"platform": "React", "mappedType": "SizableComponentSize","mappedName": "Small"}], "originalName": "Small"} ]
-  },
-  {
     "originalName": "FocusOptions",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webinputs",
@@ -1820,44 +1889,6 @@
     "names":[{"platform": "React","fileName": "igr-card.ts","mappedName": "IgrCard"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "elevated"}], "originalName": "Elevated"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
-    "originalName": "Carousel",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "React","fileName": "igr-carousel.ts","mappedName": "IgrCarousel"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "boolean","mappedName": "disableLoop"}], "originalName": "DisableLoop"},
-      {"names":[{"platform": "React", "mappedType": "boolean","mappedName": "hideIndicators"}], "originalName": "HideIndicators"},
-      {"names":[{"platform": "React", "mappedType": "boolean","mappedName": "hideNavigation"}], "originalName": "HideNavigation"},
-      {"names":[{"platform": "React", "mappedType": "boolean","mappedName": "disablePauseOnInteraction"}], "originalName": "DisablePauseOnInteraction"},
-      {"names":[{"platform": "React", "mappedType": "boolean","mappedName": "vertical"}], "originalName": "Vertical"},
-      {"names":[{"platform": "React", "mappedType": "number","mappedName": "interval"}], "originalName": "Interval"},
-      {"names":[{"platform": "React", "mappedType": "number","mappedName": "maximumIndicatorsCount"}], "originalName": "MaximumIndicatorsCount"},
-      {"names":[{"platform": "React", "mappedType": "CarouselIndicatorsOrientation","mappedName": "indicatorsOrientation"}], "originalName": "IndicatorsOrientation"},
-      {"names":[{"platform": "React", "mappedType": "CarouselAnimationType","mappedName": "animationType"}], "originalName": "AnimationType"} ]
-  },
-  {
-    "originalName": "Slide",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "React","fileName": "igr-carousel-slide.ts","mappedName": "IgrCarouselSlide"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "active"}], "originalName": "Active"} ]
-  },
-  {
-    "originalName": "Indicator",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "React","fileName": "igr-carousel-indicator.ts","mappedName": "IgrCarouselIndicator"}],
-    "members":[
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
@@ -1882,10 +1913,11 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "checkValidity"}], "originalName": "CheckValidity"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "checked"}], "originalName": "Checked"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "click"}], "originalName": "Click"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "defaultChecked"}], "originalName": "DefaultChecked"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "focusComponent"}], "originalName": "FocusComponent"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"},
-      {"names":[{"platform": "React", "mappedType": "CheckboxBaseLabelPosition","mappedName": "labelPosition"}], "originalName": "LabelPosition"},
+      {"names":[{"platform": "React", "mappedType": "ToggleLabelPosition","mappedName": "labelPosition"}], "originalName": "LabelPosition"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "reportValidity"}], "originalName": "ReportValidity"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "required"}], "originalName": "Required"},
@@ -1944,6 +1976,7 @@
     "packageName": "igniteui-webinputs",
     "names":[{"platform": "React","fileName": "igr-list-item.ts","mappedName": "IgrListItem"}],
     "members":[
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "selected"}], "originalName": "Selected"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
@@ -2094,28 +2127,16 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "checkValidity"}], "originalName": "CheckValidity"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "checked"}], "originalName": "Checked"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "click"}], "originalName": "Click"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "defaultChecked"}], "originalName": "DefaultChecked"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "focusComponent"}], "originalName": "FocusComponent"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"},
-      {"names":[{"platform": "React", "mappedType": "RadioLabelPosition","mappedName": "labelPosition"}], "originalName": "LabelPosition"},
+      {"names":[{"platform": "React", "mappedType": "ToggleLabelPosition","mappedName": "labelPosition"}], "originalName": "LabelPosition"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "reportValidity"}], "originalName": "ReportValidity"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "required"}], "originalName": "Required"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setCustomValidity"}], "originalName": "SetCustomValidity"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"} ]
-  },
-  {
-    "originalName": "Accordion",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "React","fileName": "igr-accordion.ts","mappedName": "IgrAccordion"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "hideAll"}], "originalName": "HideAll"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "showAll"}], "originalName": "ShowAll"},
-      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "singleExpand"}], "originalName": "SingleExpand"} ]
   }]
 }

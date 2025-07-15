@@ -276,7 +276,7 @@ builder.Services.AddIgniteUIBlazor(
 ```
 
 ```razor
-<IgbRadioGroup Alignment="@RadioGroupAlignment.Horizontal">
+<IgbRadioGroup Alignment="@ContentOrientation.Horizontal">
     <IgbRadio>Apple</IgbRadio>
     <IgbRadio>Banana</IgbRadio>
     <IgbRadio>Mango</IgbRadio>

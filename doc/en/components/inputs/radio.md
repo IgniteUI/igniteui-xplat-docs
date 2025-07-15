@@ -275,7 +275,7 @@ The `RadioGroup` allows you to easily change the placement directionality of the
 ```
 
 ```razor
-<IgbRadioGroup Alignment="@RadioGroupAlignment.Horizontal">
+<IgbRadioGroup Alignment="@ContentOrientation.Horizontal">
     <IgbRadio>Apple</IgbRadio>
     <IgbRadio>Banana</IgbRadio>
     <IgbRadio>Mango</IgbRadio>
