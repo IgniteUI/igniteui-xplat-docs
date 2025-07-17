@@ -7,14 +7,20 @@ _language: ja
 ---
 # {Platform} Bing Maps 画像の表示
 
+NOTE: As of June 30, 2025 all Microsoft Bing Maps for Enterprise Basic (Free) accounts will be retired. If you're still using an unpaid Basic Account and key, now is the time to act to avoid service disruptions. Bing Maps for Enterprise license holders can continue to use Bing Maps in their applications until June 30,2028.
+
+For more details:
+
+[Microsoft Bing Blogs](https://blogs.bing.com/maps/2025-06/Bing-Maps-for-Enterprise-Basic-Account-shutdown-June-30,2025)
+
 `BingMapsMapImagery` は、Microsoft® 社が提供する地理的画像マッピング サービスです。世界の地理的画像タイルを 3 以上提供します。この地理的画像サービスは、<a href="http://www.bing.com/maps" target="_blank">www.bing.com/maps</a> に直接アクセスして利用できます。{ProductName} マップ コンポーネントは、`BingMapsMapImagery` クラスを使用して、地図の背景コンテンツに Bing Maps の地理的画像を表示します。
 
 ## {Platform} Bing Maps 画像の表示の例
 
 
-`sample="/maps/geo-map/display-bing-imagery", height="500", alt="{Platform} Bing Maps 画像の表示の例"`
+<!-- `sample="/maps/geo-map/display-bing-imagery", height="500", alt="{Platform} Bing Maps 画像の表示の例"` -->
 
-
+<img src="../images/general/BingMapsImagery.png" />
 
 <div class="divider--half"></div>
 
