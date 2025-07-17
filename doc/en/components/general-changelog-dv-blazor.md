@@ -14,6 +14,14 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
+### {PackageMaps} (GeoMap)
+
+> [!Note]
+> As of June 30, 2025 all Microsoft Bing Maps for Enterprise Basic (Free) accounts will be retired. If you're still using an unpaid Basic Account and key, now is the time to act to avoid service disruptions. Bing Maps for Enterprise license holders can continue to use Bing Maps in their applications until June 30,2028.
+> For more details please visit:
+
+[Microsoft Bing Blogs](https://blogs.bing.com/maps/2025-06/Bing-Maps-for-Enterprise-Basic-Account-shutdown-June-30,2025)
+
 ### {PackageCharts} (Charts)
 
 - New [Chart Data Annotations](charts/features/chart-data-annotations.md)
