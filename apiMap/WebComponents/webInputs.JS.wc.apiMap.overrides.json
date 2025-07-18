@@ -1,0 +1,27 @@
+{
+  "types":[
+  {
+    "originalName": "FileInput",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "WebComponents","fileName": "igc-file-input-component.ts","mappedName": "IgcFileInputComponent"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "accept"}], "originalName": "Accept"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean",  "mappedName": "autofocus"}], "originalName": "Autofocus"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean",  "mappedName": "invalid"}], "originalName": "Invalid"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string", "mappedName": "label"}], "originalName": "Label"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean",  "mappedName": "multiple"}], "originalName": "Multiple"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean",  "mappedName": "required"}], "originalName": "Required"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "placeholder"}], "originalName": "Placeholder"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "focus"}], "originalName": "Focus"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "blur"}], "originalName": "Blur"}, 
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setCustomValidity"}], "originalName": "SetCustomValidity"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "reportValidity"}], "originalName": "ReportValidity"}  
+    ]
+  }
+  ]
+}
