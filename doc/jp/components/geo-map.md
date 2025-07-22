@@ -24,11 +24,11 @@ _language: ja
 
 Map は、マウス、キーボード、またはコードビハインドを使用して、マップ コンテンツをナビゲーションするためのカスタマイズ可能なナビゲーション動作を提供します。
 
-NOTE: As of June 30, 2025 all Microsoft Bing Maps for Enterprise Basic (Free) accounts will be retired. If you're still using an unpaid Basic Account and key, now is the time to act to avoid service disruptions. Bing Maps for Enterprise license holders can continue to use Bing Maps in their applications until June 30,2028.
+注: 2025 年 6 月 30 日をもって、すべての Microsoft Bing Maps for Enterprise Basic (無料) アカウントはすべて廃止されます。無料の Basic アカウントおよびキーをご利用中の場合は、サービスの中断を回避するために今すぐ対応する必要があります。Bing Maps for Enterprise の有償ライセンスをお持ちの方は、2028 年 6 月 30 日までアプリケーション内で Bing Maps を引き続きご利用いただけます。
 
-For more details please visit:
+詳細は以下をご覧ください:
 
-[Microsoft Bing Blogs](https://blogs.bing.com/maps/2025-06/Bing-Maps-for-Enterprise-Basic-Account-shutdown-June-30,2025)
+[Microsoft Bing ブログ](https://blogs.bing.com/maps/2025-06/Bing-Maps-for-Enterprise-Basic-Account-shutdown-June-30,2025)
 
 <!-- Angular, React, WebComponents -->
 ## 依存関係
