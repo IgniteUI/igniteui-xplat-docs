@@ -11,6 +11,18 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
+### Bug Fixes
+
+| Bug Number | Control | Description      |
+|------------|---------|------------------|
+|36448|IgrRadialGauge|Radial label format properties do not work. (eg. Title, SubTitles)|
+
+### {Package Charts}
+
+- Add `MaximumExtent` and `MaximumExtentPercentage` properties for use with axis labels.
+
+## **{PackageVerChanges-24-2-APR2}**
+
 ### {PackageMaps} (Geographic Map)
 
 > [!Note]
