@@ -13,6 +13,14 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+### {PackageMaps} 地理マップ
+
+> [!Note]
+> 2025 年 6 月 30 日をもって、すべての Microsoft Bing Maps for Enterprise Basic (無料) アカウントはすべて廃止されます。無料の Basic アカウントおよびキーをご利用中の場合は、サービスの中断を回避するために今すぐ対応する必要があります。Bing Maps for Enterprise の有償ライセンスをお持ちの方は、2028 年 6 月 30 日までアプリケーション内で Bing Maps を引き続きご利用いただけます。
+> 詳細は以下をご覧ください:
+
+[Microsoft Bing ブログ](https://blogs.bing.com/maps/2025-06/Bing-Maps-for-Enterprise-Basic-Account-shutdown-June-30,2025)
+
 ### {PackageCharts} (チャート)
 
 - 新しい[チャート データ注釈](charts/features/chart-data-annotations.md)
