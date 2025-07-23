@@ -84,7 +84,7 @@ The simplest way to start using the `Badge` is as follows:
 <IgbBadge />
 ```
 
-To display a subtle border around the badge, you can set the `outlined` attribute of the badge.
+To display a subtle border around the badge, you can set the `Outlined` attribute of the badge.
 
 ```tsx
 <IgrBadge outlined={true} ></IgrBadge>
@@ -102,7 +102,7 @@ To display a subtle border around the badge, you can set the `outlined` attribut
 
 ### Variants
 
-The {ProductName} badge supports several pre-defined stylistic variants. You can change the variant by assigning one of the supported values - `primary`(default), `info`, `success`, `warning`, or `danger` to the `variant` attribute.
+The {ProductName} badge supports several pre-defined stylistic variants. You can change the variant by assigning one of the supported values - `primary`(default), `info`, `success`, `warning`, or `danger` to the `Variant` attribute.
 
 ```tsx
 <IgrBadge variant="success" ></IgrBadge>
@@ -122,7 +122,7 @@ The {ProductName} badge supports several pre-defined stylistic variants. You can
 
 ### Shape
 
-The badge component supports `rounded`(default) and `square` shapes. These values can be assigned to the `shape` attribute.
+The badge component supports `rounded`(default) and `square` shapes. These values can be assigned to the `Shape` attribute.
 
 ```tsx
 <IgrBadge shape="square" ></IgrBadge>

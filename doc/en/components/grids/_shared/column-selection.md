@@ -10,7 +10,7 @@ _canonicalLink: {CanonicalLinkToGridColumnSelection}
 
 # {Platform} {ComponentTitle} Column Selection Overview
 
-The {Platform} {ComponentTitle} Column Selection feature in {ProductName} offers a simplified and Excel-like way to select and highlight an entire column with a single click. It can be enabled through the `columnSelection` input. Thanks to the rich API, the feature allows for easy manipulation of the selection state, data extraction from the selected fractions, data analysis operations, and visualizations.
+The {Platform} {ComponentTitle} Column Selection feature in {ProductName} offers a simplified and Excel-like way to select and highlight an entire column with a single click. It can be enabled through the `ColumnSelection` input. Thanks to the rich API, the feature allows for easy manipulation of the selection state, data extraction from the selected fractions, data analysis operations, and visualizations.
 
 ## {Platform} {ComponentTitle} Column Selection Example
 

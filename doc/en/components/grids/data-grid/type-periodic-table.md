@@ -2,8 +2,8 @@
 title: {Platform} Data Grid | Periodic Table | Data Binding | Infragistics
 _description: Use Infragistics' {Platform} grid component's template columns to create a periodic table. View our {ProductName} table demos!
 _keywords: {Platform} Table, Data Grid, column template, periodic table, {ProductName}, data binding, Infragistics
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.Column"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "DataGridColumn"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridMain}
 ---
 

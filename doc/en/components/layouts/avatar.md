@@ -104,7 +104,7 @@ The avatar has several attributes that allow rendering different content based o
 
 ### Initials
 
-If the `initials` attribute is set all children elements of the avatar will be ignored and the string passed to this attribute will be displayed.
+If the `Initials` attribute is set all children elements of the avatar will be ignored and the string passed to this attribute will be displayed.
 
 ```html
 <!-- Initials("AZ") will be displayed instead of the icon. -->
@@ -134,7 +134,7 @@ If the `initials` attribute is set all children elements of the avatar will be i
 
 ### Image
 
-The avatar can also display an image when the `src` attribute is assigned a valid URL to a static asset. In that case the `initials` value will be ignored and children elements will not be rendered.
+The avatar can also display an image when the `Src` attribute is assigned a valid URL to a static asset. In that case the `Initials` value will be ignored and children elements will not be rendered.
 
 ```html
 <igc-avatar

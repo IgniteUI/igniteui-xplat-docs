@@ -2,7 +2,7 @@
 title: {Platform} Hierarchical Grid | Fastest {Platform} Hierarchical Table | Infragistics
 _description: The {ProductName} Hierarchical Grid provides the necessary tools to load data on demand for each child grid that is expanded. That way the volume of data would be greatly reduced and can be retrieved only when the user needs it.
 _keywords: {Platform} hierarchical grid, igniteui for {Platform}, infragistics
-mentionedTypes: [{ComponentApiMembers}]
+mentionedTypes: ["HierarchicalGrid", "RowIsland"]
 namespace: Infragistics.Controls
 ---
 
@@ -16,11 +16,11 @@ This topic demonstrates how to configure Load on Demand by creating a Remote Ser
 
 `sample="/{HierarchicalGridSample}/data-performance-virtualization", height="700", alt="{Platform} Hierarchical Grid Load On Demand Example"`
 
-### Remote Service Provider
+## Remote Service Provider
 
 First we will prepare our service provider so we will be ready to get the data we would need for the hierarchical grid.
 
-#### Getting basic data
+### Getting basic data
 
 <!-- Angular -->
 We will be communicating with our backend service over HTTP protocol using the XMLHttpRequest interface the browsers provide. In order to achieve this more easily we will use Angular's [`HttpClient`](https://angular.io/api/common/http/HttpClient) module that offers a simplified client HTTP API. That way in order to get our data we will need this simple method in our service:
@@ -63,7 +63,7 @@ function getData(dataState) {
 As you can see `buildUrl()` will be the method that will generate our url based on the data that we have received. We return a Promise, since this is executed asynchronously. That way we can later subscribe to it, process it further in our application and pass it to our grid.
 <!-- end: Blazor -->
 
-#### Building our request url
+### Building our request url
 
 Next we will define how we should build our URL for the GET request. This is where we will be able to get the data for our main grid but also for any child grid inside it. We will use the `Customers` data from [here](https://data-northwind.indigo.design/swagger/index.html) for our root level and use `Orders` and `Details` for the lower levels. The model will differ per application but we will use the following one:
 
@@ -152,7 +152,7 @@ function buildUrl(dataState) {
 ```
 <!-- end: Blazor -->
 
-#### Result
+### Result
 
 <!-- Angular -->
 Finally, this is how our `remote-lod.service.ts` would look like:
@@ -248,11 +248,11 @@ function buildUrl(dataState) {
 ```
 <!-- end: Blazor -->
 
-### Hierarchical Grid Setup
+## Hierarchical Grid Setup
 
 Next we will setup our hierarchical grid and connect it to our remote service provider.
 
-#### Template defining
+### Template defining
 
 First we will define our hierarchical grid template with the levels of hierarchy that we expect to have. We know that our root grid `PrimaryKey` for the customers is their `customerId`, for their orders on the first level -  `orderId` and respectively for order details - `productId`. Knowing each database table and their keys allows us to define our initial template:
 
@@ -522,7 +522,7 @@ constructor() {
 ```
 <!-- end: Blazor -->
 
-#### Connecting our service
+### Connecting our service
 
 One of our final steps now will be to connect our previously created service to our hierarchical grid.
 
@@ -698,7 +698,7 @@ igRegisterScript("OnGridCreated", (args) => {
 
 With this, the setup of our application is almost done. This last step aims to improve the user experience by informing the user that the data is still loading so he doesn't have to look at an empty grid in the meantime. That's why the `HierarchicalGrid` supports a loading indicator that can be displayed while the grid is empty. If new data is received, the loading indicator will hide and the data will be rendered. 
 
-#### Setup of loading indication
+### Setup of loading indication
 
 The `HierarchicalGrid` can display a loading indicator by setting the `IsLoading` property to **true** while there is no data. We need to set it initially for the root grid and also when creating new child grids, until their data is loaded. We could always set it to **true** in our template, but we want to hide it and display that the grid has no data if the service returns an empty array by setting it to **false**.
 
@@ -872,12 +872,12 @@ igRegisterScript("OnGridCreated", (args) => {
 ```
 <!-- end: Blazor -->
 
-### API References
+## API References
 
 * `HierarchicalGrid`
 * `RowIsland`
 
-### Additional Resources
+## Additional Resources
 
 * [Hierarchical Grid Component](overview.md)
 

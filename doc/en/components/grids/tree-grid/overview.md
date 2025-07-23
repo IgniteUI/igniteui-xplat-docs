@@ -2,7 +2,7 @@
 title: {Platform} Tree Grid | Fastest {Platform} Tree Table | Infragistics
 _description: The {ProductName} Tree Grid is used to display and manipulate hierarchical or flat data with ease. Quickly bind your data with very little coding. Try it for FREE
 _keywords: {Platform} tree grid, igniteui for {Platform}, infragistics
-mentionedTypes: [{ComponentApiMembers}]
+mentionedTypes: ["GridBaseDirective", "TreeGrid", "Column"]
 namespace: Infragistics.Controls
 ---
 
@@ -231,7 +231,7 @@ Now let's start by importing our `Data` collection and binding it to our tree gr
 In order for the tree grid to build the hierarchy, we will have to set its `ChildDataKey` property to the name of the child collection that is used in each of our data objects. In our case that will be the **Employees** collection.
 In addition, we can disable the automatic column generation and define them manually by matching them to the actual properties of our data objects. (The **Employees** collection will be automatically used for the hierarchy, so there is no need to include it in the columns' definitions.)
 
-We can now enable the row selection and paging features of the tree grid by using the `rowSelection` and the `paging` properties.
+We can now enable the row selection and paging features of the tree grid by using the `RowSelection` and add the `Paginator` element.
 We can also enable the summaries, the filtering, sorting, editing, moving and resizing features for each of our columns.
 
 ```html

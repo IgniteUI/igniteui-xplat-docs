@@ -2,7 +2,7 @@
 title: {Platform} {ComponentTitle} Row Selection - {ProductName}
 _description: Perform data manipulation without affecting the underlying data with {ComponentTitle} Batch Editing, using {Platform} {ComponentTitle}. See demos & examples!
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
-mentionedTypes: [{ComponentApiMembers}]
+mentionedTypes: ["GridBaseDirective", "RowSelectorTemplateDetails", "HeadSelectorTemplateDetails", "Checkbox"]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
 _canonicalLink: {CanonicalLinkToGridRowSelection}
@@ -537,7 +537,7 @@ By default, the `{ComponentName}` **handles all row selection interactions** on 
 
 To create a custom row selector template,  within the `{ComponentSelector}` you can use the `RowSelectorTemplate` property. From the template you can access the implicitly provided context variable, with properties that give you information about the row's state.
 
-The `selected` property shows whether the current row is selected or not while the `index` property can be used to access the row index.
+The `Selected` property shows whether the current row is selected or not while the `Index` property can be used to access the row index.
 
 ```html
 <ng-template igxRowSelector let-rowContext>
@@ -609,7 +609,7 @@ const rowSelectorTemplate = (ctx: IgrRowSelectorTemplateContext) => {
 </{ComponentSelector}>
 ```
 
-The `rowID` property can be used to get a reference of an `{ComponentSelector}` row. This is useful when you implement a `click` handler on the row selector element.
+The `RowID` property can be used to get a reference of an `{ComponentSelector}` row. This is useful when you implement a `click` handler on the row selector element.
 ```html
 <ng-template igxRowSelector let-rowContext>
     <igx-checkbox (click)="onSelectorClick($event, rowContext.key)"></igx-checkbox>
@@ -638,7 +638,7 @@ const rowSelectorTemplate = (ctx: IgrRowSelectorTemplateContext) => {
     );
 }
 ```
-In the above example we are using an `Checkbox` and we bind `rowContext.selected` to its `checked` property. See this in action in our [Row Numbering Demo](#row-numbering-demo).
+In the above example we are using an `Checkbox` and we bind `rowContext.selected` to its `Checked` property. See this in action in our [Row Numbering Demo](#row-numbering-demo).
 
 <!-- ComponentStart: HierarchicalGrid -->
 
@@ -651,7 +651,7 @@ The `rowContext.select()` and `rowContext.deselect()` methods are exposed in the
 
 To create a custom header selector template, within the `{ComponentName}`, you can use the `HeadSelectorTemplate` property. From the template you can access the implicitly provided context variable, with properties that give you information about the header's state.
 
-The `SelectedCount` property shows you how many rows are currently selected while `totalCount` shows you how many rows there are in the `{ComponentName}` in total.
+The `SelectedCount` property shows you how many rows are currently selected while `TotalCount` shows you how many rows there are in the `{ComponentName}` in total.
 
 ```html
 <ng-template igxHeadSelector let-headContext>
@@ -795,7 +795,6 @@ This demo prevents some rows from being selected using the `RowSelectionChanging
 
 * `{ComponentName}`
 * `{ComponentName}Row`
-* `Cell`
 
 ## Additional Resources
 
