@@ -3,8 +3,8 @@ title: {Platform} {ComponentTitle} Cascading combos - {ProductName}
 _description: Perform updating via cascading combos in {ComponentTitle}, using {Platform} {ComponentTitle}. See demos & examples!
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 _language: en
-mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid"]
+mentionedTypes: ["Column", "Combo"]
 namespace: Infragistics.Controls
 ---
 
@@ -26,9 +26,9 @@ The sample below demonstrates how `{ComponentName}` works with nested Cascading 
 
 ## Setup
 
-In order enable column editing, make sure `editable` property is set to `true`.
+In order enable column editing, make sure `Editable` property is set to `true`.
 
-Once the column editing is enabled, you can start by adding your `Combo`. Please note that here in order to have only one single selection available, you will need to use set the `singleSelect` property.
+Once the column editing is enabled, you can start by adding your `Combo`. Please note that here in order to have only one single selection available, you will need to use set the `SingleSelect` property.
 
 
 <!-- WebComponents, Blazor, React -->
@@ -108,7 +108,7 @@ public webGridCountryDropDownTemplate: IgcRenderFunction<IgcCellTemplateContext>
 }
 ```
 
-- `displayKey` - Required for object arrays - Specifies which property will be used for the items' text. If no value is specified for `displayKey`, the  combo will use the specified `valueKey` (if any).
+- `DisplayKey` - Required for object arrays - Specifies which property will be used for the items' text. If no value is specified for `DisplayKey`, the  combo will use the specified `ValueKey` (if any).
 
 In order to handle the selection change, we need the `onChange` event. The emitted event arguments contain information about the selection prior to the change, the current selection and the items that were added or removed. Therefore, it will filter the values based on the selection of the previous combo.
 

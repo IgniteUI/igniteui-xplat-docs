@@ -2,8 +2,8 @@
 title: {Platform} Data Grid | Real-Time Data Grid and Tables | Accessibility Compliance | Infragistics
 _description: Use Infragistics' {ProductName} Data Table & Grid to support accessibility feature that will enable screen readers to read "speak" keyboard navigation interactions through the cells and columns of the grid. View {ProductName} table tutorials!
 _keywords: {Platform} Table, Data Grid, cell accessibility, {ProductName}, Infragistics
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.Column"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "DataGridColumn"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridMain}
 ---
 
@@ -19,7 +19,7 @@ Please note that this control has been deprecated and replaced with the [Grid](.
 The {ProductName} Data Table / Data Grid supports accessibility and screen readers that interpret keyboard navigation interactions through the cells and columns of the grid.
 
 <!-- React, WebComponents -->
-This is activated by setting the `useAccessibility` property of the grid to **true**.
+This is activated by setting the `UseAccessibility` property of the grid to **true**.
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
@@ -67,7 +67,7 @@ When inspecting the grid's DOM elements the following roles and properties are s
 
 ## Keyboard Navigation
 
-After setting the `useAccessibility` property to **true**, this will enable a range of keyboard navigation options in the data grid that screen readers can recognize. Below is a description of each of the key presses / combinations and the effect they will have relative to the currently activated cell:
+After setting the `UseAccessibility` property to **true**, this will enable a range of keyboard navigation options in the data grid that screen readers can recognize. Below is a description of each of the key presses / combinations and the effect they will have relative to the currently activated cell:
 
 Navigating within the Grid
 

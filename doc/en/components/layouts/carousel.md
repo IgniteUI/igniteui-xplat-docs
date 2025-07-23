@@ -240,7 +240,7 @@ The `Carousel` supports vertical mode. Use the `Vertical` property to enable it.
 
 ### Custom indicators
 
-To add {Platform} custom carousel indicators, use the `Indicator`:
+To add {Platform} custom carousel indicators, use the `CarouselIndicator`:
 
 ```html
 <igc-carousel>
@@ -534,7 +534,7 @@ To achieve this goal, we have to do the following configurations to the carousel
  - enable the `HideNavigation` property
  - enable the `Vertical` property
  - add transition `Interval`
- - add custom `Indicator` for each slide
+ - add custom `CarouselIndicator` for each slide
 
 Our carousel will look like this in the template:
 
@@ -724,8 +724,8 @@ These configurations will have the following result:
 ## API References
 
 - `Carousel`
-- `Slide`
-- `Indicator`
+- `CarouselSlide`
+- `CarouselIndicator`
 - `Icon`
 - `Input`
 - `Button`

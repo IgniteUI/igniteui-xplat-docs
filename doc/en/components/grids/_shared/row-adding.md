@@ -427,7 +427,7 @@ gridRef.current.beginAddRowById(null);     // Spawns the add row UI as the first
 }
 ```
 
-The `beginAddRowByIndex` method works similarly but requires you to specify the index at which the UI should spawn. Allowed values range between 0 and the size of the data view - 1.
+The `BeginAddRowByIndex` method works similarly but requires you to specify the index at which the UI should spawn. Allowed values range between 0 and the size of the data view - 1.
 
 <!-- WebComponents -->
 ```typescript
@@ -527,9 +527,14 @@ After a new row is added through the row adding UI, its position and/or visibili
 
 ### Customizing Text
 
-Customizing the text of the row adding overlay is possible using the `RowAddTextDirective`.
+<!-- WebComponents, React, Blazor -->
+Customizing the text of the row adding overlay is possible using the `RowAddTextTemplate`.
+<!-- end: WebComponents, React, Blazor -->
 
 <!-- Angular -->
+
+Customizing the text of the row adding overlay is possible using the `RowAddTextDirective`.
+
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <{ComponentSelector} [data]="data" [primaryKey]="'ProductID'" [autoGenerate]="false" [rowEditable]="true">

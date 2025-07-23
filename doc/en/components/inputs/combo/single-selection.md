@@ -11,7 +11,7 @@ The {Platform} `ComboBox` supports single-selection mode and quick filtering of 
 
 ## {Platform} Single Selection Example
 
-To enable single-selection and quick filtering, set the `SingleSelect` property on the `ComboBox` component. The user experience and keyboard navigation will mostly stay the same, but instead of having to type in your search query into a special filtering box above the list of options, the main input box will be used.
+To enable single-selection and quick filtering, set the `SingleSelect` property on the `Combo`. The user experience and keyboard navigation will mostly stay the same, but instead of having to type in your search query into a special filtering box above the list of options, the main input box will be used.
 
 ```html
 <igc-combo single-select></igc-combo>
@@ -63,7 +63,7 @@ comboRef.current.select('BG01');
 ```
 <!-- end: React -->
 
-To deselect an item without making a new selection, call the `deselect` method.
+To deselect an item without making a new selection, call the `Deselect` method.
 
 #### Deselecting items:
 

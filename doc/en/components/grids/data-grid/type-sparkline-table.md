@@ -2,8 +2,8 @@
 title: {Platform} Data Grid | Column Sparkline | Infragistics
 _description: See how {ProductName} Data Table & Grid supports a template column which provides you a way to embed other components such as the column sparkline.
 _keywords: {Platform} Table, Data Grid, column sparkline, {ProductName}, data binding, Infragistics
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.CellInfo", "Infragistics.Controls.Grid.Implementation.TemplateCellInfo", "Sparkline"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "CellInfo", "TemplateCellInfo", "Sparkline"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridMain}
 ---
 

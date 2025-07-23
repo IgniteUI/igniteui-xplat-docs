@@ -22,6 +22,157 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setCustomValidity"}], "originalName": "SetCustomValidity"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "reportValidity"}], "originalName": "ReportValidity"}  
     ]
+  },
+  {
+    "originalName": "CheckboxBase",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "WebComponents","fileName": "igc-checkbox-base-component.ts","mappedName": "IgcCheckboxComponent"}]
+  },
+  {
+    "originalName": "Divider",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "WebComponents","fileName": "igc-divider-component.ts","mappedName": "IgcDividerComponent"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "DividerType","mappedName": "type"}], "originalName": "Type"}
+    ]
+  },
+  {
+    "originalName": "ButtonBase",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "WebComponents","fileName": "igc-button-base-component.ts","mappedName": "IgcButtonComponent"}]
+  },
+  {
+    "originalName": "CircularProgress",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "WebComponents","fileName": "igc-circular-progress-component.ts","mappedName": "IgcCircularProgressComponent"}],
+    "members": [
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "animationDuration"}], "originalName": "AnimationDuration"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "hideLabel"}], "originalName": "HideLabel"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "indeterminate"}], "originalName": "Indeterminate"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "labelFormat"}], "originalName": "LabelFormat"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "max"}], "originalName": "Max"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "value"}], "originalName": "Value"},
+      {"names":[{"platform": "WebComponents", "mappedType": "StyleVariant","mappedName": "variant"}], "originalName": "Variant"}
+    ]
+  },
+  {
+    "originalName": "LinearProgress",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "WebComponents","fileName": "igc-linear-progress-component.ts","mappedName": "IgcLinearProgressComponent"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "animationDuration"}], "originalName": "AnimationDuration"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "hideLabel"}], "originalName": "HideLabel"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "indeterminate"}], "originalName": "Indeterminate"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "labelFormat"}], "originalName": "LabelFormat"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "max"}], "originalName": "Max"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "value"}], "originalName": "Value"},
+      {"names":[{"platform": "WebComponents", "mappedType": "StyleVariant","mappedName": "variant"}], "originalName": "Variant"},
+      {"names":[{"platform": "WebComponents", "mappedType": "LinearProgressLabelAlign","mappedName": "labelAlign"}], "originalName": "LabelAlign"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "striped"}], "originalName": "Striped"}
+    ]
+  },
+  {
+    "originalName": "Snackbar",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "WebComponents","fileName": "igc-snackbar-component.ts","mappedName": "IgcSnackbarComponent"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "displayTime"}], "originalName": "DisplayTime"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "hide"}], "originalName": "Hide"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "keepOpen"}], "originalName": "KeepOpen"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "open"}], "originalName": "Open"},
+      {"names":[{"platform": "WebComponents", "mappedType": "AbsolutePosition","mappedName": "position"}], "originalName": "Position"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "show"}], "originalName": "Show"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "toggle"}], "originalName": "Toggle"}
+    ]
+  },
+  {
+    "originalName": "Toast",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "WebComponents","fileName": "igc-toast-component.ts","mappedName": "IgcToastComponent"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "displayTime"}], "originalName": "DisplayTime"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "hide"}], "originalName": "Hide"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "keepOpen"}], "originalName": "KeepOpen"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "open"}], "originalName": "Open"},
+      {"names":[{"platform": "WebComponents", "mappedType": "AbsolutePosition","mappedName": "position"}], "originalName": "Position"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "show"}], "originalName": "Show"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "toggle"}], "originalName": "Toggle"} 
+    ]
+  },
+  {
+    "originalName": "CalendarBase",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "WebComponents","fileName": "igc-calendar-base-component.ts","mappedName": "IgcCalendarComponent"}]
+  },
+  {
+    "originalName": "DateRangePicker",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "WebComponents","fileName": "igc-calendar-base-component.ts","mappedName": "IgcDateRangePickerComponent"}],
+    "members": [
+        {"names":[{"platform": "WebComponents", "mappedType": "any[]",  "mappedName": "customRanges"}], "originalName": "CustomRanges"},
+        {"names":[{"platform": "WebComponents", "mappedType": "boolean",  "mappedName": "disabled"}], "originalName": "Disabled"},
+        {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "headerOrientation"}], "originalName": "HeaderOrientation"},
+        {"names":[{"platform": "WebComponents", "mappedType": "boolean",  "mappedName": "hideHeader"}], "originalName": "HideHeader"},
+        {"names":[{"platform": "WebComponents", "mappedType": "boolean",  "mappedName": "hideOutsideDays"}], "originalName": "HideOutsideDays"},
+        {"names":[{"platform": "WebComponents", "mappedType": "boolean",  "mappedName": "invalid"}], "originalName": "Invalid"},
+        {"names":[{"platform": "WebComponents", "mappedType": "boolean",  "mappedName": "keepOpenOnOutsideClick"}], "originalName": "KeepOpenOnOutsideClick"},
+        {"names":[{"platform": "WebComponents", "mappedType": "boolean",  "mappedName": "keepOpenOnSelect"}], "originalName": "KeepOpenOnSelect"},
+        {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "label"}], "originalName": "Label"},
+        {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "labelEnd"}], "originalName": "LabelEnd"},
+        {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "labelStart"}], "originalName": "LabelStart"},
+        {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "locale"}], "originalName": "Locale"},
+        {"names":[{"platform": "WebComponents", "mappedType": "PickerMode",  "mappedName": "mode"}], "originalName": "Mode"},
+        {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
+        {"names":[{"platform": "WebComponents", "mappedType": "boolean",  "mappedName": "nonEditable"}], "originalName": "NonEditable"},
+        {"names":[{"platform": "WebComponents", "mappedType": "boolean",  "mappedName": "open"}], "originalName": "Open"},
+        {"names":[{"platform": "WebComponents", "mappedType": "ContentOrientation",  "mappedName": "orientation"}], "originalName": "Orientation"},
+        {"names":[{"platform": "WebComponents", "mappedType": "boolean",  "mappedName": "outlined"}], "originalName": "Outlined"},
+        {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "placeholderEnd"}], "originalName": "PlaceholderEnd"},
+        {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "placeholderStart"}], "originalName": "PlaceholderStart"},
+        {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "prompt"}], "originalName": "Prompt"},
+        {"names":[{"platform": "WebComponents", "mappedType": "boolean",  "mappedName": "readOnly"}], "originalName": "ReadOnly"},
+        {"names":[{"platform": "WebComponents", "mappedType": "boolean",  "mappedName": "required"}], "originalName": "Required"},
+        {"names":[{"platform": "WebComponents", "mappedType": "IgcDateRangePickerResourceStrings",  "mappedName": "resourceStrings"}], "originalName": "ResourceStrings"},
+        {"names":[{"platform": "WebComponents", "mappedType": "boolean",  "mappedName": "showWeekNumbers"}], "originalName": "ShowWeekNumbers"},
+        {"names":[{"platform": "WebComponents", "mappedType": "DateRangeDescriptor[]",  "mappedName": "specialDates"}], "originalName": "SpecialDates"},
+        {"names":[{"platform": "WebComponents", "mappedType": "boolean",  "mappedName": "usePredefinedRanges"}], "originalName": "UsePredefinedRanges"},
+        {"names":[{"platform": "WebComponents", "mappedType": "boolean",  "mappedName": "useTwoInputs"}], "originalName": "UseTwoInputs"},
+        {"names":[{"platform": "WebComponents", "mappedType": "WeekDays",  "mappedName": "weekStart"}], "originalName": "WeekStart"},
+        {"names":[{"platform": "WebComponents", "mappedType": "any",  "mappedName": "activeDate"}], "originalName": "ActiveDate"},
+        {"names":[{"platform": "WebComponents", "mappedType": "any",  "mappedName": "defaultValue"}], "originalName": "DefaultValue"},
+        {"names":[{"platform": "WebComponents", "mappedType": "DateRangeDescriptor[]",  "mappedName": "disabledDates"}], "originalName": "DisabledDates"},
+        {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "displayFormat"}], "originalName": "DisplayFormat"},
+        {"names":[{"platform": "WebComponents", "mappedType": "any",  "mappedName": "form"}], "originalName": "Form"},
+        {"names":[{"platform": "WebComponents", "mappedType": "any",  "mappedName": "inputFormat"}], "originalName": "InputFormat"},
+        {"names":[{"platform": "WebComponents", "mappedType": "any",  "mappedName": "max"}], "originalName": "Max"},
+        {"names":[{"platform": "WebComponents", "mappedType": "any",  "mappedName": "min"}], "originalName": "Min"},
+        {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "placeholder"}], "originalName": "Placeholder"},
+        {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "validationMessage"}], "originalName": "ValidationMessage"},
+        {"names":[{"platform": "WebComponents", "mappedType": "ValidityState",  "mappedName": "validity"}], "originalName": "Validity"},
+        {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "visibleMonths"}], "originalName": "VisibleMonths"},
+        {"names":[{"platform": "WebComponents", "mappedType": "boolean",  "mappedName": "willValidate"}], "originalName": "WillValidate"},
+        {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "checkValidity"}], "originalName": "CheckValidity"},
+        {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "clear"}], "originalName": "Clear"},
+        {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "hide"}], "originalName": "Hide"},
+        {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "reportValidity"}], "originalName": "ReportValidity"},
+        {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "select"}], "originalName": "Select"},
+        {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "setCustomValidity"}], "originalName": "SetCustomValidity"},
+        {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "show"}], "originalName": "Show"},
+        {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "toggle"}], "originalName": "Toggle"}
+    ]
   }
   ]
 }
