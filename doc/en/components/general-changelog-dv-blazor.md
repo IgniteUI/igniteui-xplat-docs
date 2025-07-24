@@ -22,7 +22,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 |37718|IgbTab|Unexpected scrolling occurred when a new row was added to a grid that is in a tab panel|
 |37855|IgbGrid|Crypto.randomUID not found error is thrown if a grid contains HeaderTemplate and the page is accessed using unsecured(http) protocol|
 
-### {Package Charts}
+### {PackageCharts} (Charts)
 
 - Add `MaximumExtent` and `MaximumExtentPercentage` properties for use with axis labels.
 
