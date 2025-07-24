@@ -2,8 +2,8 @@
 title: {Platform} データ グリッド | データ アニメーション | データ バインディング | インフラジスティックス
 _description: Infragistics のテーブルを使用して、1 秒あたり数千の更新を処理します。{ProductName} テーブルのサンプルを是非お試しください!
 _keywords: {Platform} Table, Data Grid, live data updates, {ProductName}, Infragistics, data binding, {Platform} テーブル, データ グリッド, ライブ データの更新, データ バインディング, インフラジスティックス
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.Column"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Implementation.Grid", "DataGridColumn"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---

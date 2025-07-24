@@ -2,7 +2,7 @@
 title: {Platform} 階層グリッド | 最速の {Platform} 階層テーブル | インフラジスティックス
 _description: {ProductName} 階層グリッドは、階層データを簡単に表示および操作するために使用されます。最小限のコードでデータをすばやくバインドできます。無料でお試しください。
 _keywords: {Platform} hierarchical grid, igniteui for {Platform}, infragistics, {Platform} 階層グリッド, インフラジスティックス
-mentionedTypes: [{ComponentApiMembers}]
+mentionedTypes: ["HierarchicalGridBaseDirective"]
 namespace: Infragistics.Controls
 _language: ja
 ---

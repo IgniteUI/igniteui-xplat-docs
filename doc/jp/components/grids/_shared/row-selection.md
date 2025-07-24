@@ -2,7 +2,7 @@
 title: {Platform} {ComponentTitle} 行の選択 - {ProductName}
 _description: {Platform} {ComponentTitle} は、{ComponentTitle} 一括編集を使用して、基になるデータに影響を与えずにデータ操作を実行します。デモと例をお試しください。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
-mentionedTypes: [{ComponentApiMembers}]
+mentionedTypes: ["GridBaseDirective", "RowSelectorTemplateDetails", "HeadSelectorTemplateDetails", "Checkbox"]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
 _canonicalLink: {CanonicalLinkToGridRowSelection}
@@ -538,7 +538,7 @@ const mySelectedRows = [1,2,3];
 
 カスタム行セレクター テンプレートを作成するには、`{ComponentSelector}` 内で `RowSelectorTemplate` プロパティを使用できます。テンプレートから、行の状態に関する情報を提供するプロパティを使用して、暗黙的に提供されたコンテキスト変数にアクセスできます。
 
-`selected` プロパティは現在の行が選択されているかどうかを示し、`index` プロパティは行インデックスにアクセスするために使用できます。
+`Selected` プロパティは現在の行が選択されているかどうかを示し、`Index` プロパティは行インデックスにアクセスするために使用できます。
 
 ```html
 <ng-template igxRowSelector let-rowContext>
@@ -610,7 +610,8 @@ const rowSelectorTemplate = (ctx: IgrRowSelectorTemplateContext) => {
 </{ComponentSelector}>
 ```
 
-`rowID` プロパティを使用して、`{ComponentSelector}` 行の参照を取得できます。行セレクター要素に `click` ハンドラーを実装する場合に便利です。
+`RowID` プロパティを使用して、`{ComponentSelector}` 行の参照を取得できます。行セレクター要素に `click` ハンドラーを実装する場合に便利です。
+
 ```html
 <ng-template igxRowSelector let-rowContext>
     <igx-checkbox (click)="onSelectorClick($event, rowContext.key)"></igx-checkbox>
@@ -639,7 +640,7 @@ const rowSelectorTemplate = (ctx: IgrRowSelectorTemplateContext) => {
     );
 }
 ```
-上の例では、`Checkbox` を使用しており、`rowContext.selected` をその `checked` プロパティにバインドしています。[行番号のデモ](#行の番号付けデモ)で実際にこれをご覧ください。
+上の例では、`Checkbox` を使用しており、`rowContext.selected` をその `Checked` プロパティにバインドしています。[行番号のデモ](#行の番号付けデモ)で実際にこれをご覧ください。
 
 <!-- ComponentStart: HierarchicalGrid -->
 
@@ -652,7 +653,7 @@ const rowSelectorTemplate = (ctx: IgrRowSelectorTemplateContext) => {
 
 カスタム行ヘッダー セレクター テンプレートを作成するには、`{ComponentName}` 内で `HeadSelectorTemplate` プロパティを使用します。テンプレートから、ヘッダーの状態に関する情報を提供するプロパティを使用して、暗黙的に提供されたコンテキスト変数にアクセスできます。
 
-`SelectedCount` プロパティは現在選択されている行数を示し、`totalCount` は `{ComponentName}` に合計の行数を示します。
+`SelectedCount` プロパティは現在選択されている行数を示し、`TotalCount` は `{ComponentName}` に合計の行数を示します。
 
 ```html
 <ng-template igxHeadSelector let-headContext>
@@ -796,7 +797,6 @@ const headSelectorTemplate = (ctx: IgrHeadSelectorTemplateContext) => {
 
 * `{ComponentName}`
 * `{ComponentName}Row`
-* `Cell`
 
 ## その他のリソース
 

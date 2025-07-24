@@ -240,7 +240,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCheckboxModule));
 
 ### フォーム
 
-`Form` でチェックボックスを使用する場合は、`name` と `value` の属性を使用できます。
+`Form` でチェックボックスを使用する場合は、`Name` と `Value` の属性を使用できます。
 
 ```tsx
 <IgrCheckbox name="wifi" value="enabled"></IgrCheckbox>

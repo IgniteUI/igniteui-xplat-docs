@@ -2,7 +2,7 @@
 title: {Platform} Grid グループ化 | 複数のフィールドでグループ化 | インフラジスティックス
 _description: グループを設定して {Platform} Material テーブルにデータ レコードを視覚化し、グループ化されたデータを個別の列グループに視覚化できます。
 _keywords: {Platform}, Grid, {ProductName}, group by, Infragistics, グリッド, グループ化, インフラジスティックス
-mentionedTypes: ["Infragistics.Controls.Grid"]
+mentionedTypes: ["Grid", "RowDirective", "GroupByRowSelectorTemplateDetails"]
 namespace: Infragistics.Controls
 _language: ja
 ---
@@ -201,7 +201,7 @@ gridRef.current.groupBy([{ fieldName: 'ProductName', dir: SortingDirection.Desc,
 
 グループ式の他にグループ行の展開も制御できます。これらは、`GroupByExpandState` のコレクションである、`Grid` コンポーネントの別のプロパティ `GroupingExpansionState` に保存されます。各展開状態は、作成されたフィールド名とグループ化の各レベルで表す値によって一意に定義されます。つまり、識別子は `GroupByKey` の階層配列です。
 
-`GroupingExpressions` で `IGroupByExpandState` のリストを直接 `GroupingExpansionState` に設定すると展開が変更されます。また、`Grid` は、グループ レコード インスタンスまたは行の `expanded` プロパティによってグループを切り替えるメソッド `toggleGroup` を公開します。
+`GroupingExpressions` で `IGroupByExpandState` のリストを直接 `GroupingExpansionState` に設定すると展開が変更されます。また、`Grid` は、グループ レコード インスタンスまたは行の `Expanded` プロパティによってグループを切り替えるメソッド `ToggleGroup` を公開します。
 
 <!-- WebComponents -->
 ```typescript
@@ -732,7 +732,7 @@ $custom-theme: grid-theme(
 ## API リファレン
 
 * `Grid`
-* `GroupByRow`
+* `GroupByRecord`
 * `ISortingExpression`
 * `Column`
 * `IGroupByExpandState`

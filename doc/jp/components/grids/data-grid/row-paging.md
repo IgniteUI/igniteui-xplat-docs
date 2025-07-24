@@ -2,8 +2,8 @@
 title: {Platform} グリッド/テーブルのページネーション – {ProductName}
 _description: データの配列を取り込み、そのデータの一部を １ ページとして出力するように設計されたインフラジスティックスの {Platform} グリッド コンポーネントの Pager を是非お試しください。
 _keywords: {Platform} Table, Data Grid, row, paging, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 行のページング, インフラジスティックス
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.Column"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "DataGridColumn"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridPaging}
 _language: ja
 ---

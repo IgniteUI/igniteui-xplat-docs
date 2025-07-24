@@ -1,8 +1,9 @@
 ---
 title: {Platform} {ComponentTitle} リモート データ操作 - {ProductName}
 _description: リモート フィルタリング、リモートソート、リモート スクロールなどの Angular リモート データ操作を使用して、{ProductName} のサーバーからデータをロードします。
-sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Remote Data, Paging, {Platform}, {ComponentKeywords}, {ProductName}, ページング, リモート データ, インフラジスティックス
+sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+mentionedTypes: ["GridBaseDirective"]
 namespace: Infragistics.Controls
 _language: ja
 ---

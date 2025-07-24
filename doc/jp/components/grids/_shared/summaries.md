@@ -2,7 +2,7 @@
 title: {Platform} {ComponentTitle} 集計 - {ProductName}
 _description: 列のグループ フッターで {Platform} {ComponentTitle} 集計を構成し、オプションを使用して {ProductName} Material テーブルにカスタム {Platform} テンプレートを設定します。
 _keywords: {Platform} {ComponentTitle} summaries, {Platform}, {ProductName}, Infragistics, {Platform} {ComponentTitle} 集計, インフラジスティックス
-mentionedTypes: [{ComponentApiMembers}]
+mentionedTypes: ["GridBaseDirective", "Column", "SummaryOperand"]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
 _canonicalLink: {CanonicalLinkToGridSummaries}
@@ -945,7 +945,8 @@ class PtoSummary {
 
 
 ### 集計テンプレート
-`Summary` は、列の集計の結果をコンテキストとして提供する列の集計を対象としています。
+
+`SummaryTemplate` は、列の集計の結果をコンテキストとして提供する列の集計を対象としています。
 
 ```html
 <igx-column [hasSummary]="true">
@@ -1017,7 +1018,7 @@ igRegisterScript("SummaryTemplate", (ctx) => {
 <!-- end: WebComponents -->
 
 <!-- React -->
-`disabledSummaries` プロパティは、{Platform} {ComponentTitle} の集計機能に対して列ごとに正確な制御を提供します。このプロパティを使用すると、{ComponentName} 内の各列に表示される集計をカスタマイズして、最も関連性の高い意味のあるデータのみが表示されるようにすることができます。たとえば、配列で集計キーを指定することにより、`['count', 'min', 'max']` などの特定の集計タイプを除外できます。
+`DisabledSummaries` プロパティは、{Platform} {ComponentTitle} の集計機能に対して列ごとに正確な制御を提供します。このプロパティを使用すると、{ComponentName} 内の各列に表示される集計をカスタマイズして、最も関連性の高い意味のあるデータのみが表示されるようにすることができます。たとえば、配列で集計キーを指定することにより、`['count', 'min', 'max']` などの特定の集計タイプを除外できます。
 <!-- end: React -->
 
 <!-- Blazor -->
@@ -1115,13 +1116,13 @@ igRegisterScript("SummaryTemplate", (ctx) => {
 <!-- WebComponents -->
 `UnitsInStock` の場合、`discontinued` や `totalDiscontinued` などのカスタム集計は `disabled-summaries` プロパティを使用して除外されます。
 
-実行時に、`disabled-summaries` プロパティを使用して集計を動的に無効にすることもできます。たとえば、特定の列のプロパティをプログラムで設定または更新して、ユーザー操作やアプリケーションの状態の変化に基づいて表示される集計を調整できます。
+実行時に、`DisabledSummaries` プロパティを使用して集計を動的に無効にすることもできます。たとえば、特定の列のプロパティをプログラムで設定または更新して、ユーザー操作やアプリケーションの状態の変化に基づいて表示される集計を調整できます。
 <!-- end: WebComponents -->
 
 <!-- React -->
-`UnitsInStock` の場合、`discontinued` や `totalDiscontinued` などのカスタム集計は `disabledSummaries` プロパティを使用して除外されます。
+`UnitsInStock` の場合、`discontinued` や `totalDiscontinued` などのカスタム集計は `DisabledSummaries` プロパティを使用して除外されます。
 
-実行時に、`disabledSummaries` プロパティを使用して集計を動的に無効にすることもできます。たとえば、特定の列のプロパティをプログラムで設定または更新して、ユーザー操作やアプリケーションの状態の変化に基づいて表示される集計を調整できます。
+実行時に、`DisabledSummaries` プロパティを使用して集計を動的に無効にすることもできます。たとえば、特定の列のプロパティをプログラムで設定または更新して、ユーザー操作やアプリケーションの状態の変化に基づいて表示される集計を調整できます。
 <!-- end: React -->
 
 <!-- Blazor -->
