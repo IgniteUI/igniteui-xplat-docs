@@ -3,8 +3,8 @@ title: {Platform} {ComponentTitle} カスケード コンボ - {ProductName}
 _description: {Platform} {ComponentTitle} を使用して、{ComponentTitle} のカスケード コンボを介して更新を実行します。デモと例をお試しください。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 _language: ja
-mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid"]
+mentionedTypes: ["Column", "Combo"]
 namespace: Infragistics.Controls
 _canonicalLink: {CanonicalLinkToGridCascadingCombos}
 ---
@@ -26,9 +26,9 @@ _canonicalLink: {CanonicalLinkToGridCascadingCombos}
 
 ## 設定
 
-列の編集を有効にするには、`editable` プロパティが **true** に設定されていることを確認してください。
+列の編集を有効にするには、`Editable` プロパティが **true** に設定されていることを確認してください。
 
-列の編集が有効になったら、`Combo` を追加することから始めることができます。ここで、単一選択を 1 つだけ使用できるようにするには、`singleSelect` プロパティを設定する必要があることに注意してください。
+列の編集が有効になったら、`Combo` を追加することから始めることができます。ここで、単一選択を 1 つだけ使用できるようにするには、`SingleSelect` プロパティを設定する必要があることに注意してください。
 
 
 <!-- WebComponents, Blazor, React -->
@@ -106,9 +106,9 @@ public webGridCountryDropDownTemplate: IgcRenderFunction<IgcCellTemplateContext>
 }
 ```
 
-- `displayKey` - オブジェクト配列に必要 - 項目のテキストに使用されるプロパティを指定します。`displayKey` に値が指定されていない場合、コンボは指定された `valueKey` (存在する場合) を使用します。
+- `displayKey` - オブジェクト配列に必要 - 項目のテキストに使用されるプロパティを指定します。`displayKey` に値が指定されていない場合、コンボは指定された `ValueKey` (存在する場合) を使用します。
 
-選択の変更を処理するには、`change` イベントが必要です。発行されたイベント引数には、変更前の選択、現在の選択、追加または削除された項目に関する情報が含まれています。したがって、前のコンボの選択に基づいて値をフィルタリングします。
+選択の変更を処理するには、`onChange` イベントが必要です。発行されたイベント引数には、変更前の選択、現在の選択、追加または削除された項目に関する情報が含まれています。したがって、前のコンボの選択に基づいて値をフィルタリングします。
 
 ```razor
 //In Javascript

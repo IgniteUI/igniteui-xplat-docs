@@ -428,7 +428,7 @@ gridRef.current.beginAddRowById(null);     // Spawns the add row UI as the first
 }
 ```
 
-`beginAddRowByIndex` メソッドも同様に機能しますが、UI が生成されるインデックスを指定する必要があります。許可される値の範囲は、0 からデータ ビューのサイズ -1 までです。
+`BeginAddRowByIndex` メソッドも同様に機能しますが、UI が生成されるインデックスを指定する必要があります。許可される値の範囲は、0 からデータ ビューのサイズ -1 までです。
 
 <!-- WebComponents -->
 ```typescript
@@ -528,9 +528,14 @@ this.treeGrid.beginAddRowByIndex(null);       // Spawns the add row UI as the fi
 
 ### テキストのカスタマイズ
 
-行追加オーバーレイのテキストのカスタマイズは、`RowAddTextDirective` を使用して可能です。
+<!-- WebComponents, React, Blazor -->
+行追加オーバーレイのテキストのカスタマイズは、 `RowAddTextTemplate` を使用して可能です。
+<!-- end: WebComponents, React, Blazor -->
 
 <!-- Angular -->
+
+行追加オーバーレイのテキストのカスタマイズは、`RowAddTextDirective` を使用して可能です。
+
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 ```html
 <{ComponentSelector} [data]="data" [primaryKey]="'ProductID'" [autoGenerate]="false" [rowEditable]="true">

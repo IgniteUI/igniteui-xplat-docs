@@ -3,6 +3,7 @@ title: {Platform} {ComponentTitle} キーボード ナビゲーション - {Prod
 _description: {ProductName} で {ComponentTitle} キーボード ナビゲーションを使用する方法について説明します。キーボード インタラクションでは、セル、行、列を簡単に移動できます。
 _keywords: keyboard navigation, {ProductName}, infragistics, キーボード インタラクション, インフラジスティックス
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+mentionedTypes: ["GridBaseDirective"]
 namespace: Infragistics.Controls
 _language: ja
 ---
