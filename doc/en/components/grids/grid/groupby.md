@@ -2,7 +2,7 @@
 title: {Platform} Grid Group By | Group by multiple fields | Infragistics
 _description: Configure group by that allows visualizing of data records in {Platform} Material table, visualize the grouped data in separate and convenient column group.
 _keywords: {Platform}, Grid, {ProductName}, group by, Infragistics
-mentionedTypes: ["Infragistics.Controls.Grid"]
+mentionedTypes: ["Grid", "RowDirective", "GroupByRowSelectorTemplateDetails"]
 namespace: Infragistics.Controls
 ---
 
@@ -200,7 +200,7 @@ gridRef.current.groupBy([{ fieldName: 'ProductName', dir: SortingDirection.Desc,
 
 In addition to grouping expressions you can also control the expansion states for group rows. They are stored in a separate property of the `Grid` component `GroupingExpansionState` which is a collection of `GroupByExpandState`. Each expansion state is uniquely defined by the field name it is created for and the value it represents for each level of grouping, i.e. the identifier is a hierarchy array of `GroupByKey`.
 
-As with `GroupingExpressions`, setting a list of `GroupByExpandState` directly to the `GroupingExpansionState` will change the expansion accordingly. Additionally `Grid` exposes a method `toggleGroup` that toggles a group by the group record instance or via the `expanded` property of the row.
+As with `GroupingExpressions`, setting a list of `GroupByExpandState` directly to the `GroupingExpansionState` will change the expansion accordingly. Additionally `Grid` exposes a method `ToggleGroup` that toggles a group by the group record instance or via the `Expanded` property of the row.
 
 <!-- WebComponents -->
 ```typescript
@@ -731,7 +731,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 ## API References
 
 * `Grid`
-* `GroupByRow`
+* `GroupByRecord`
 * `ISortingExpression`
 * `Column`
 * `IGroupByExpandState`

@@ -2,7 +2,7 @@
 title: {Platform} 階層グリッド | 最速の {Platform} 階層テーブル | インフラジスティックス
 _description: {ProductName} Hierarchical Grid は、展開された各子グリッドでロードオンデマンドに必要なツールを提供します。データ量が大幅に軽減されてユーザがデータを必要な場合のみ取得されます。
 _keywords: {Platform} hierarchical grid, igniteui for {Platform}, infragistics, {Platform} 階層グリッド, インフラジスティックス
-mentionedTypes: [{ComponentApiMembers}]
+mentionedTypes: ["HierarchicalGrid", "RowIsland"]
 namespace: Infragistics.Controls
 _language: ja
 ---
@@ -21,7 +21,7 @@ Ignite UI for {Platform} `HierarchicalGrid` は、要求するサーバーから
 
 はじめにサービス プロバイダーを準備して階層グリッドに必要なデータを取得します。
 
-#### 基本データの取得
+### 基本データの取得
 
 <!-- Angular -->
 ブラウザーが提供する XMLHttpRequest インターフェイス を使用した HTTP プロトコルでバックエンドサービスと通信します。簡易的なクライアント HTTP API を提供する Angular の [`HttpClient`](https://angular.io/api/common/http/HttpClient) モジュールを使用してより簡単に行うことができます。データを取得にはサービスのシンプルなメソッドが必要となります。
@@ -64,7 +64,7 @@ function getData(dataState) {
 `buildUrl()` は取得したデータに基づいて url を生成するメソッドになります。実行された非同期のため、Promise を返します。それにより後でサブスクライブし、アプリケーションで処理を進めてグリッドへ渡すことができます。
 <!-- end: Blazor -->
 
-#### 要求 URL のビルド
+### 要求 URL のビルド
 
 次に GET 要求の URL をビルドする方法を定義します。メイン グリッドのデータを取得できますが含まれる子グリッドのデータも取得できます。ルート レベルに[こちら](https://data-northwind.indigo.design/swagger/index.html)の `Customers` データを使用し、それ以外のレベルには `Orders` と `Details` を使用します。このモデルはアプリケーションごとに異なりますが、ここでは以下を使用します。
 
@@ -153,7 +153,7 @@ function buildUrl(dataState) {
 ```
 <!-- end: Blazor -->
 
-#### 結果
+### 結果
 
 <!-- Angular -->
 最後に `remote-lod.service.ts` は以下のようになります。
@@ -253,7 +253,7 @@ function buildUrl(dataState) {
 
 次に階層グリッドを設定してリモート サービス プロバイダーに接続します。
 
-#### テンプレートの地祇
+### テンプレートの地祇
 
 最初に階層グリッド テンプレートを必要な階層レベルで定義します。customers のルート グリッド `PrimaryKey` は最初のレベルの orders の `customerId` です。`orderId` と各 order 詳細の `productId` です。各データベース テーブルとキーで初期テンプレートを定義します。
 
@@ -523,7 +523,7 @@ constructor() {
 ```
 <!-- end: Blazor -->
 
-#### サービスへ接続
+### サービスへ接続
 
 最後の手順の 1 つとして、以前作成したサービスに階層グリッドを接続することです。
 
@@ -699,7 +699,7 @@ igRegisterScript("OnGridCreated", (args) => {
 
 これにより、アプリケーションの設定はほぼ完了です。最後の手順は、空グリッドを表示する代わりにユーザーにデータがまだ読み込み中であることを通知してユーザー エクスペリエンスを向上します。`HierarchicalGrid` は、グリッドが空のときに表示できるインジケーターの読み込みサポートします。新しいデータが取得されると読み込みインジケーターが非表示となりデータが描画されます。 
 
-#### 読み込み通知の設定
+### 読み込み通知の設定
 
 `HierarchicalGrid` は、`IsLoading` プロパティを **true** に設定して読み込みインジケーターを表示できます。データが読み込まれるまでルートグリッドにあらかじめ設定しますが、新しい子グリッドを作成する際にも必要です。テンプレートで常に **true** に設定できますが、**false** に設定してサービスが空配列を返した場合は非表示にしてデータのないグリッドを表示できます。
 
@@ -873,12 +873,12 @@ igRegisterScript("OnGridCreated", (args) => {
 ```
 <!-- end: Blazor -->
 
-### API リファレンス
+## API リファレンス
 
 * `HierarchicalGrid`
 * `RowIsland`
 
-### その他のリソース
+## その他のリソース
 
 * [Hierarchical Grid コンポーネント](overview.md)
 

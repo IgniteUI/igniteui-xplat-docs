@@ -210,7 +210,6 @@ this.hubConnection.invoke('updateparameters', frequency, volume, live, updateAll
 
 ## API リファレンス
 * `{ComponentName}`
-* `Cell`
 
 ## その他のリソース
 <!-- ComponentStart: Grid -->

@@ -27,7 +27,7 @@ _language: ja
 npm install {PackageWebComponents}
 ```
 
-`ComboBox` コンポーネントを使用する前に、追加のコンポーネントおよび必要な CSS とともに登録する必要があります:
+`Combo` コンポーネントを使用する前に、追加のコンポーネントおよび必要な CSS とともに登録する必要があります:
 
 ```ts
 import { defineComponents, IgcComboComponent }
@@ -43,7 +43,7 @@ defineComponents(IgcComboComponent);
 
 <!-- Blazor -->
 
-`IgbCombo` コンポーネントの使用を開始するには、最初にそのモジュールを登録する必要があります。
+`Combo` コンポーネントの使用を開始するには、最初にそのモジュールを登録する必要があります。
 
 
 ```razor
@@ -67,7 +67,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbComboModule));
 npm install igniteui-react
 ```
 
-次に、以下のように、{Platform} `ComboBox` と必要な CSS をインポートする必要があります:
+次に、以下のように、{Platform} `Combo` と必要な CSS をインポートする必要があります:
 
 ```tsx
 import { IgrCombo } from 'igniteui-react';
@@ -203,7 +203,7 @@ comboRef.current.value = ['NY01', 'UK01'];
 
 コンボ コンポーネントは、現在選択されている項目を変更できる API を公開します。
 
-ユーザーの操作によってオプションのリストから項目を選択する以外に、プログラムで項目を選択することもできます。これは、`select` および `deselect` メソッドを介して行われます。項目の配列をこれらのメソッドに渡すことができます。メソッドが引数なしで呼び出された場合、呼び出されたメソッドに応じて、すべての項目が選択 / 選択解除されます。コンボ コンポーネントに `ValueKey` を指定した場合は、選択 / 選択解除する項目の値キーを渡す必要があります。
+ユーザーの操作によってオプションのリストから項目を選択する以外に、プログラムで項目を選択することもできます。これは、`Select` および `Deselect` メソッドを介して行われます。項目の配列をこれらのメソッドに渡すことができます。メソッドが引数なしで呼び出された場合、呼び出されたメソッドに応じて、すべての項目が選択 / 選択解除されます。コンボ コンポーネントに `ValueKey` を指定した場合は、選択 / 選択解除する項目の値キーを渡す必要があります。
 
 #### 一部の項目を選択 / 選択解除:
 <!-- WebComponents -->
@@ -307,8 +307,8 @@ comboRef.current.deselect([cities[1], cities[5]]);
 
 {ProductName} Combo コンポーネントは、`Required`、`Disabled`、`Autofocus`、`Invalid` など、ほとんどの `Input` プロパティをサポートしています。このコンポーネントは、その検証にバインドされた 2 つのメソッドも公開しています。
 
-- `reportValidity` - 有効性をチェックし、コンポーネントが検証の制約を満たしている場合は true を返します。
-- `checkValidity` - ネイティブ入力 API に準拠するための reportValidity のラッパー。
+- `ReportValidity` - 有効性をチェックし、コンポーネントが検証の制約を満たしている場合は true を返します。
+- `CheckValidity` - ネイティブ入力 API に準拠するための reportValidity のラッパー。
 
 ## キーボード ナビゲーション
 

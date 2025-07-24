@@ -2,8 +2,8 @@
 title: {Platform} データ グリッド | 列ピン固定 | インフラジスティックス
 _description: インフラジスティックスの {ProductName} グリッド コンポーネントは列のピン固定をサポートし、列の位置を柔軟に選択できます。詳細については、{ProductName} テーブル サンプルを参照してください。
 _keywords: {Platform} Table, Data Grid, column pinning, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列ピン固定, インフラジスティックス
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.PinnedPositions", "Infragistics.Controls.Grid.Implementation.PinColumn", "Infragistics.Controls.Grid.Implementation.ColumnPinning", "Infragistics.Controls.Grid.Implementation.DataGridToolbar", "Infragistics.Controls.Grid.Implementation.Column"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "PinnedPositions", "PinColumn", "ColumnPinning", "DataGridToolbar", "DataGridColumn"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridColumnPinning}
 _language: ja
 ---
@@ -11,7 +11,7 @@ _language: ja
 <!-- Blazor, WebComponents -->
 
 > [!Note]
-このコントロールは非推奨であり、[Grid](../data-grid.md) に置き換えられていることに注意してください。そのため、そのコントロールに移行することをお勧めします。これは新しい機能を受け取ることはなく、バグ修正は優先されません。コードベースをデータ グリッドに移行する際のヘルプや質問については、サポートにお問い合わせください。
+> このコントロールは非推奨であり、[Grid](../data-grid.md) に置き換えられていることに注意してください。そのため、そのコントロールに移行することをお勧めします。これは新しい機能を受け取ることはなく、バグ修正は優先されません。コードベースをデータ グリッドに移行する際のヘルプや質問については、サポートにお問い合わせください。
 
 <!-- end: Blazor, WebComponents -->
 

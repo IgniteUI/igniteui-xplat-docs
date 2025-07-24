@@ -19,7 +19,7 @@ The {ProductName} ComboBox component allows defining custom templates for differ
 
 ### Item Template
 
-The `itemTemplate` is a custom template that if defined should be used when rendering items in the list of options.
+The `ItemTemplate` is a custom template that if defined should be used when rendering items in the list of options.
 
 <!-- WebComponents -->
 ```ts
@@ -96,7 +96,7 @@ const renderItemTemplate = (args: ComboTemplateProps<City>) => {
 
 ### Group Header Template
 
-The `groupHeaderTemplate` is a custom template that if defined should be used when rendering group headers in the list of options.
+The `GroupHeaderTemplate` is a custom template that if defined should be used when rendering group headers in the list of options.
 
 <!-- WebComponents -->
 ```ts

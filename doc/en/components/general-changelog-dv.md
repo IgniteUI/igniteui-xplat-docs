@@ -18,6 +18,22 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
+### Bug Fixes
+
+| Bug Number | Control | Description      |
+|------------|---------|------------------|
+|36448|IgxRadialGauge|Radial label format properties do not work. (eg. Title, SubTitles)|
+
+### {PackageCharts} (Charts)
+
+- Add `MaximumExtent` and `MaximumExtentPercentage` properties for use with axis labels.
+
+## **{PackageVerChanges-25-1}**
+
+* Angular 20 support.
+
+## **{PackageVerChanges-24-2-FEB}**
+
 ### {PackageMaps} (Geographic Map)
 
 > [!Note]

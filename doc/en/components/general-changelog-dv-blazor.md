@@ -14,6 +14,20 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
+### Bug Fixes
+
+| Bug Number | Control | Description      |
+|------------|---------|------------------|
+|36448|IgbRadialGauge|Radial label format properties do not work. (eg. Title, SubTitles)|
+|37718|IgbTab|Unexpected scrolling occurred when a new row was added to a grid that is in a tab panel|
+|37855|IgbGrid|Crypto.randomUID not found error is thrown if a grid contains HeaderTemplate and the page is accessed using unsecured(http) protocol|
+
+### {PackageCharts} (Charts)
+
+- Add `MaximumExtent` and `MaximumExtentPercentage` properties for use with axis labels.
+
+## **{PackageVerChanges-25-1-JUNE}**
+
 ### {PackageMaps} (Geographic Map)
 
 > [!Note]

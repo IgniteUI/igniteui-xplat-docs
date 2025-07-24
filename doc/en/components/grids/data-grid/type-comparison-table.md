@@ -2,8 +2,8 @@
 title: {Platform} Data Grid | Comparison Table | Data Binding | Infragistics
 _description: Use Infragistics' {Platform} grid component to bind to comparison data. View our {ProductName} table demos!
 _keywords: {Platform} Table, Data Grid, column template, comparison data, {ProductName}, data binding, Infragistics
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.Column"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "DataGridColumn"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridMain}
 ---
 

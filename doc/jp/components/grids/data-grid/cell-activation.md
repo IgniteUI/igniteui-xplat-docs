@@ -2,8 +2,8 @@
 title: {Platform} データ グリッド | リアルタイム データ グリッドとテーブル | アクティブ化 | インフラジスティックス
 _description: インフラジスティックスの {ProductName} Data Table / Data Grid を使用して、グリッドのセルを介したキーボードナビゲーションを可能にするセルのアクティブ化機能をサポートします。{ProductName} テーブル チュートリアルを是非お試しください!
 _keywords: {Platform} Table, Data Grid, cell activation, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, セルのアクティブ化, インフラジスティックス
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.GridActivationMode"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "GridActivationMode"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---

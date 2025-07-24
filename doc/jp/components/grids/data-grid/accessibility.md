@@ -2,8 +2,8 @@
 title: {Platform} データ グリッド | リアルタイム データ グリッドとテーブル | アクセシビリティの遵守 | インフラジスティックス
 _description: インフラジスティックスの {ProductName} データ テーブルとグリッドを使用して、スクリーン リーダーがグリッドのセルと列を介して「話す」キーボード ナビゲーションのインタラクションを読み取ることができるアクセシビリティ機能をサポートします。{ProductName} テーブルのチュートリアルをご覧ください!
 _keywords: {Platform} Table, Data Grid, cell accessibility, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, セルのアクセシビリティ, インフラジスティックス
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.Column"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "DataGridColumn"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
@@ -20,7 +20,7 @@ _language: ja
 {ProductName} データ テーブル / データ グリッドは、グリッドのセルと列を介したキーボード ナビゲーションのインタラクションを解釈するアクセシビリティとスクリーン リーダーをサポートしています。
 
 <!-- React, WebComponents -->
-これは、グリッドの `useAccessibility` プロパティを **true** に設定することによってアクティブになります。
+これは、グリッドの `UseAccessibility` プロパティを **true** に設定することによってアクティブになります。
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
@@ -68,7 +68,7 @@ ARIA 属性
 
 ## キーボード ナビゲーション
 
-`useAccessibility` プロパティを **true** に設定すると、スクリーン リーダーが認識できるデータ グリッド内のさまざまなキーボード ナビゲーション オプションが有効になります。以下は、現在押下されているセルに対する各キーの押下 / 組み合わせとそれらが持つ効果についての説明です。
+`UseAccessibility` プロパティを **true** に設定すると、スクリーン リーダーが認識できるデータ グリッド内のさまざまなキーボード ナビゲーション オプションが有効になります。以下は、現在押下されているセルに対する各キーの押下 / 組み合わせとそれらが持つ効果についての説明です。
 
 グリッド内の移動
 
