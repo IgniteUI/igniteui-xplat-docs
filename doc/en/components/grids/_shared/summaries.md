@@ -2,7 +2,7 @@
 title: {Platform} {ComponentTitle} Summaries - {ProductName}
 _description: Configure {Platform} {ComponentTitle} summaries in the group footer of the column and use the option to set custom {Platform} template in the {ProductName} Material table
 _keywords: {Platform} {ComponentTitle} summaries, {Platform}, {ProductName}, Infragistics
-mentionedTypes: [{ComponentApiMembers}]
+mentionedTypes: ["GridBaseDirective", "Column", "SummaryOperand"]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
 _canonicalLink: {CanonicalLinkToGridSummaries}
@@ -944,7 +944,7 @@ class PtoSummary {
 
 
 ### Summary Template
-`Summary` targets the column summary providing as a context the column summary results.
+`SummaryTemplate` targets the column summary providing as a context the column summary results.
 
 ```html
 <igx-column [hasSummary]="true">
@@ -1016,7 +1016,7 @@ The `disabled-summaries` property provides precise per-column control over the {
 <!-- end: WebComponents -->
 
 <!-- React -->
-The `disabledSummaries` property provides precise per-column control over the {Platform} {ComponentTitle} summary feature. This property enables users to customize the summaries displayed for each column in the {ComponentName}, ensuring that only the most relevant and meaningful data is shown. For example, you can exclude specific summary types, such as `['count', 'min', 'max']` by specifying their summary keys in an array.
+The `DisabledSummaries` property provides precise per-column control over the {Platform} {ComponentTitle} summary feature. This property enables users to customize the summaries displayed for each column in the {ComponentName}, ensuring that only the most relevant and meaningful data is shown. For example, you can exclude specific summary types, such as `['count', 'min', 'max']` by specifying their summary keys in an array.
 <!-- end: React -->
 
 <!-- Blazor -->
@@ -1114,13 +1114,13 @@ For `UnitPrice`, default summaries like `count`, `sum`, and `average` are disabl
 <!-- WebComponents -->
 For `UnitsInStock`, custom summaries such as `discontinued` and `totalDiscontinued` are excluded using the `disabled-summaries` property.
 
-At runtime, summaries can also be dynamically disabled using the `disabled-summaries` property. For example, you can set or update the property on specific columns programmatically to adapt the displayed summaries based on user actions or application state changes.
+At runtime, summaries can also be dynamically disabled using the `DisabledSummaries` property. For example, you can set or update the property on specific columns programmatically to adapt the displayed summaries based on user actions or application state changes.
 <!-- end: WebComponents -->
 
 <!-- React -->
-For `UnitsInStock`, custom summaries such as `discontinued` and `totalDiscontinued` are excluded using the `disabledSummaries` property.
+For `UnitsInStock`, custom summaries such as `discontinued` and `totalDiscontinued` are excluded using the `DisabledSummaries` property.
 
-At runtime, summaries can also be dynamically disabled using the `disabledSummaries` property. For example, you can set or update the property on specific columns programmatically to adapt the displayed summaries based on user actions or application state changes.
+At runtime, summaries can also be dynamically disabled using the `DisabledSummaries` property. For example, you can set or update the property on specific columns programmatically to adapt the displayed summaries based on user actions or application state changes.
 <!-- end: React -->
 
 <!-- Blazor -->

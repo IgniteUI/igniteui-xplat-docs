@@ -2,8 +2,8 @@
 title: {Platform} Data Grid | Real-Time Data Grid and Tables | Activation | Infragistics
 _description: Use Infragistics' {ProductName} Data Table & Grid to support the cell activation feature that will enable keyboard navigation through the cells of the grid. View {ProductName} table tutorials!
 _keywords: {Platform} Table, Data Grid, cell activation, {ProductName}, Infragistics
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.GridActivationMode"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "GridActivationMode"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridMain}
 ---
 

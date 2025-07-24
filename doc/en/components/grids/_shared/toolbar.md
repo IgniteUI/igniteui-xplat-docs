@@ -2,8 +2,8 @@
 title: {Platform} {ComponentTitle} for {ProductName} for
 _description: Use {Platform} {ComponentTitle} for essential UI operations. Hosts different UI controls for the Grid’s features - column hiding, pinning, excel exporting, etc.
 _keywords: {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infragistics
-mentionedTypes: [{ComponentApiMembers}]
-sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+mentionedTypes: ["GridToolbar"]
+sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid", "GridToolbarActions"]
 namespace: Infragistics.Controls
 _canonicalLink: {CanonicalLinkToGridToolbar}
 ---
@@ -33,7 +33,7 @@ The toolbar and the predefined UI components support {Platform} events and expos
 <!-- end: Angular, WebComponents -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
-The predefined `Actions` and `Title` UI components are added inside the `GridToolbar` and this is all needed to have a toolbar providing default interactions with the corresponding Grid features:
+The predefined `GridToolbarActions` and `GridToolbarTitle` UI components are added inside the `GridToolbar` and this is all needed to have a toolbar providing default interactions with the corresponding Grid features:
 
 <!-- ComponentStart: Grid -->
 ```html
@@ -1446,7 +1446,7 @@ The Grid Toolbar service has a few more APIs to explore, which are listed below.
 * `GridToolbarPinning`
 * `GridToolbarTitle`
 
-* `{ComponentName}` Events:
+`{ComponentName}` Events:
 * `ToolbarExporting`
 
 <!-- Angular -->

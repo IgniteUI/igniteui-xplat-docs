@@ -2,7 +2,7 @@
   {
     "originalName": "ColumnFilterCondition",
     "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ColumnFilterCondition.cs","mappedName": "IgbColumnFilterCondition"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "IsGroup"}], "originalName": "IsGroup"} ]
@@ -12,7 +12,7 @@
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
     "originalBaseTypeName": "ColumnFilterCondition",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ColumnComparisonFilterCondition.cs","mappedName": "IgbColumnComparisonFilterCondition"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsCaseSensitive"}], "originalName": "IsCaseSensitive"},
@@ -24,7 +24,7 @@
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
     "originalBaseTypeName": "ColumnFilterCondition",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ColumnCustomFilterCondition.cs","mappedName": "IgbColumnCustomFilterCondition"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Id"}], "originalName": "ID"},
@@ -36,7 +36,7 @@
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
     "originalBaseTypeName": "ColumnFilterCondition",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ColumnFilterConditionGroup.cs","mappedName": "IgbColumnFilterConditionGroup"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Add"}], "originalName": "Add"},
@@ -49,18 +49,9 @@
       {"names":[{"platform": "Blazor", "mappedType": "IgbColumnFilterCondition","mappedName": "Item"}], "originalName": "this[]"} ]
   },
   {
-    "originalName": "PrimaryKeyValue",
-    "originalNamespace": "Infragistics.Controls.Grid",
-    "packageName": "igniteui-grids",
-    "names":[{"platform": "Blazor","fileName": "PrimaryKeyValue.cs","mappedName": "IgbPrimaryKeyValue"}],
-    "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "Key"}], "originalName": "Key"},
-      {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "Value"}], "originalName": "Value"} ]
-  },
-  {
     "originalName": "ICellActionManager",
-    "originalNamespace": "Infragistics.Controls.Grid",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ICellActionManager.cs","mappedName": "CellActionManager"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ApplyCustomFilter"}], "originalName": "ApplyCustomFilter"},
@@ -93,13 +84,14 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "PreviewMouseUpCell"}], "originalName": "PreviewMouseUpCell"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "PreviewPointerDownCell"}], "originalName": "PreviewPointerDownCell"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "PreviewPointerUpCell"}], "originalName": "PreviewPointerUpCell"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ShouldSkipFocusRetain"}], "originalName": "ShouldSkipFocusRetain"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "StartEditMode"}], "originalName": "StartEditMode"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "UpdateCellEditValue"}], "originalName": "UpdateCellEditValue"} ]
   },
   {
     "originalName": "DateTimeColumnValueFormatter",
-    "originalNamespace": "Infragistics.Controls.Grid",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "DateTimeColumnValueFormatter.cs","mappedName": "DateTimeColumnValueFormatter"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -117,8 +109,8 @@
   },
   {
     "originalName": "GridAnimationPhaseSettings",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridAnimationPhaseSettings.cs","mappedName": "IgbGridAnimationPhaseSettings"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "DesiredSubItemDurationMilliseconds"}], "originalName": "DesiredSubItemDurationMilliseconds"},
@@ -131,20 +123,20 @@
   },
   {
     "originalName": "GridAnimationSettings",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridAnimationSettings.cs","mappedName": "IgbGridAnimationSettings"}]
   },
   {
     "originalName": "GridColumnAnimationSettings",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridColumnAnimationSettings.cs","mappedName": "IgbGridColumnAnimationSettings"}]
   },
   {
     "originalName": "CellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "CellInfo.cs","mappedName": "IgbCellInfo"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "CellActionManager","mappedName": "ActionManager"}], "originalName": "ActionManager"},
@@ -240,6 +232,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "StickyRowBackground"}], "originalName": "StickyRowBackground"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "StyleKey"}], "originalName": "StyleKey"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "TextColor"}], "originalName": "TextColor"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "UserFormattedValue"}], "originalName": "UserFormattedValue"},
       {"names":[{"platform": "Blazor", "mappedType": "CellContentVerticalAlignment","mappedName": "VerticalAlignment"}], "originalName": "VerticalAlignment"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "VirtualizationPercentage"}], "originalName": "VirtualizationPercentage"},
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Width"}], "originalName": "Width"},
@@ -248,10 +241,10 @@
   },
   {
     "originalName": "DateTimeCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "DateTimeCellInfo.cs","mappedName": "IgbDateTimeCellInfo"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "DateTimeFormats","mappedName": "DateTimeFormat"}], "originalName": "DateTimeFormat"},
@@ -263,10 +256,10 @@
   },
   {
     "originalName": "EditorCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "EditorCellInfo.cs","mappedName": "IgbEditorCellInfo"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "DataSourceSchemaPropertyType","mappedName": "DataType"}], "originalName": "DataType"},
@@ -285,10 +278,10 @@
   },
   {
     "originalName": "FilterCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "FilterCellInfo.cs","mappedName": "IgbFilterCellInfo"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ClearIconLeft"}], "originalName": "ClearIconLeft"},
@@ -306,18 +299,18 @@
   },
   {
     "originalName": "EditorRowCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "EditorRowCellInfo.cs","mappedName": "IgbEditorRowCellInfo"}]
   },
   {
     "originalName": "SummaryCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "SummaryCellInfo.cs","mappedName": "IgbSummaryCellInfo"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ResolvedSummaryLabel"}], "originalName": "ResolvedSummaryLabel"},
@@ -326,18 +319,18 @@
   },
   {
     "originalName": "VerticalSeparatorCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "VerticalSeparatorCellInfo.cs","mappedName": "IgbVerticalSeparatorCellInfo"}]
   },
   {
     "originalName": "ImageCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ImageCellInfo.cs","mappedName": "IgbImageCellInfo"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ImagePath"}], "originalName": "ImagePath"},
@@ -346,10 +339,10 @@
   },
   {
     "originalName": "NumericCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "NumericCellInfo.cs","mappedName": "IgbNumericCellInfo"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "FormatOverride"}], "originalName": "FormatOverride"},
@@ -368,18 +361,18 @@
   },
   {
     "originalName": "RowSeparatorModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "RowSeparatorInfo.cs","mappedName": "IgbRowSeparatorInfo"}]
   },
   {
     "originalName": "SectionHeaderCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "SectionHeaderCellInfo.cs","mappedName": "IgbSectionHeaderCellInfo"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ResolvedSummaryText"}], "originalName": "ResolvedSummaryText"},
@@ -388,8 +381,8 @@
   },
   {
     "originalName": "GroupData",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GroupData.cs","mappedName": "IgbGroupData"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "FormattedText"}], "originalName": "FormattedText"},
@@ -398,8 +391,8 @@
   },
   {
     "originalName": "SummaryData",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "SummaryData.cs","mappedName": "IgbSummaryData"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "FormattedText"}], "originalName": "FormattedText"},
@@ -410,48 +403,48 @@
   },
   {
     "originalName": "TemplateHeaderCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "TemplateCellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "TemplateHeaderCellInfo.cs","mappedName": "IgbTemplateHeaderCellInfo"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsFilterUIVisible"}], "originalName": "IsFilterUIVisible"} ]
   },
   {
     "originalName": "TemplateCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "TemplateCellInfo.cs","mappedName": "IgbTemplateCellInfo"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "Value"}], "originalName": "Value"} ]
   },
   {
     "originalName": "TemplateSectionHeaderCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "SectionHeaderCellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "TemplateSectionHeaderCellInfo.cs","mappedName": "IgbTemplateSectionHeaderCellInfo"}]
   },
   {
     "originalName": "TextCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "TextCellInfo.cs","mappedName": "IgbTextCellInfo"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "TextValue"}], "originalName": "TextValue"} ]
   },
   {
     "originalName": "TextHeaderCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "TextCellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "TextHeaderCellInfo.cs","mappedName": "IgbTextHeaderCellInfo"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "ColumnOptionsIconAlignment","mappedName": "ColumnOptionsIconAlignment"}], "originalName": "ColumnOptionsIconAlignment"},
@@ -462,8 +455,8 @@
   },
   {
     "originalName": "ComparisonOperatorSelector",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "DataGridComparisonOperatorSelector.cs","mappedName": "IgbDataGridComparisonOperatorSelector"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "AddCustomOperator"}], "originalName": "AddCustomOperator"},
@@ -484,10 +477,10 @@
   },
   {
     "originalName": "OperatorSelectorValueChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "OperatorSelectorValueChangedEventArgs.cs","mappedName": "IgbOperatorSelectorValueChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "ColumnComparisonConditionOperatorType","mappedName": "NewValue"}], "originalName": "NewValue"},
@@ -495,29 +488,32 @@
   },
   {
     "originalName": "OperatorSelectorOpeningEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "OperatorSelectorOpeningEventArgs.cs","mappedName": "IgbOperatorSelectorOpeningEventArgs"}]
   },
   {
     "originalName": "OperatorSelectorClosingEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "OperatorSelectorClosingEventArgs.cs","mappedName": "IgbOperatorSelectorClosingEventArgs"}]
   },
   {
     "originalName": "GridFilterDialog",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "DataGridFilterDialog.cs","mappedName": "IgbDataGridFilterDialog"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ActualPixelScalingRatio"}], "originalName": "ActualPixelScalingRatio"},
+      {"names":[{"platform": "Blazor", "mappedType": "String","mappedName": "CommandCompleted"}], "originalName": "CommandCompleted"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetDesiredToolbarActions"}], "originalName": "GetDesiredToolbarActions"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "HideIcon"}], "originalName": "HideIcon"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "IconColor"}], "originalName": "IconColor"},
+      {"names":[{"platform": "Blazor", "mappedType": "String","mappedName": "InvalidateActions"}], "originalName": "InvalidateActions"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsAnimationEnabled"}], "originalName": "IsAnimationEnabled"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "NotifyCellSizeChanged"}], "originalName": "NotifyCellSizeChanged"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "NotifySizeChanged"}], "originalName": "NotifySizeChanged"},
@@ -527,16 +523,16 @@
   },
   {
     "originalName": "FilterDialogRenderCompletedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "FilterDialogRenderCompletedEventArgs.cs","mappedName": "IgbFilterDialogRenderCompletedEventArgs"}]
   },
   {
     "originalName": "GridFilterDialogViewModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridFilterDialogViewModel.cs","mappedName": "IgbGridFilterDialogViewModel"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "AddNewRow"}], "originalName": "AddNewRow"},
@@ -552,8 +548,8 @@
   },
   {
     "originalName": "GridFilterDialogViewModelGrouping",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridFilterDialogViewModelGrouping.cs","mappedName": "IgbGridFilterDialogViewModelGrouping"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "EndIndex"}], "originalName": "EndIndex"},
@@ -562,8 +558,8 @@
   },
   {
     "originalName": "GridFilterDialogViewModelRow",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridFilterDialogViewModelRow.cs","mappedName": "IgbGridFilterDialogViewModelRow"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "CurrentOperator"}], "originalName": "CurrentOperator"},
@@ -574,24 +570,24 @@
   },
   {
     "originalName": "GridFilterDialogOpeningEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridFilterDialogOpeningEventArgs.cs","mappedName": "IgbGridFilterDialogOpeningEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbDataGridColumn","mappedName": "Column"}], "originalName": "Column"} ]
   },
   {
     "originalName": "GridFilterDialogFilterChangeEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridFilterDialogFilterChangeEventArgs.cs","mappedName": "IgbGridFilterDialogFilterChangeEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbColumnFilterCondition","mappedName": "Filter"}], "originalName": "Filter"} ]
   },
   {
     "originalName": "GridExpansionIndicator",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "DataGridExpansionIndicator.cs","mappedName": "IgbDataGridExpansionIndicator"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ActualPixelScalingRatio"}], "originalName": "ActualPixelScalingRatio"},
@@ -603,14 +599,15 @@
   },
   {
     "originalName": "GridSortIndicator",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "DataGridSortIndicator.cs","mappedName": "IgbDataGridSortIndicator"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ActualPixelScalingRatio"}], "originalName": "ActualPixelScalingRatio"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetDesiredScale"}], "originalName": "GetDesiredScale"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "IconColor"}], "originalName": "IconColor"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsAnimationEnabled"}], "originalName": "IsAnimationEnabled"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsHitTestVisible"}], "originalName": "IsHitTestVisible"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "NotifyCellSizeChanged"}], "originalName": "NotifyCellSizeChanged"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "NotifySizeChanged"}], "originalName": "NotifySizeChanged"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "PixelScalingRatio"}], "originalName": "PixelScalingRatio"},
@@ -619,16 +616,16 @@
   },
   {
     "originalName": "SortIndicatorRenderCompletedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "SortIndicatorRenderCompletedEventArgs.cs","mappedName": "IgbSortIndicatorRenderCompletedEventArgs"}]
   },
   {
     "originalName": "Pager",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "DataGridPager.cs","mappedName": "IgbDataGridPager"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Background"}], "originalName": "Background"},
@@ -648,10 +645,10 @@
   },
   {
     "originalName": "PagedDataProvider",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "DataSourceLocalDataProvider",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "PagedDataProvider.cs","mappedName": "PagedDataProvider"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -660,10 +657,10 @@
   },
   {
     "originalName": "PageChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "PageChangedEventArgs.cs","mappedName": "IgbPageChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "Data"}], "originalName": "Data"},
@@ -671,8 +668,8 @@
   },
   {
     "originalName": "Grid",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "DataGrid.cs","mappedName": "IgbDataGrid"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "AcceptCommit"}], "originalName": "AcceptCommit"},
@@ -883,8 +880,8 @@
   },
   {
     "originalName": "GridCellPosition",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridCellPosition.cs","mappedName": "IgbGridCellPosition"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ColumnUniqueKey"}], "originalName": "ColumnUniqueKey"},
@@ -892,38 +889,38 @@
   },
   {
     "originalName": "GridFilterExpressionsEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridFilterExpressionsEventArgs.cs","mappedName": "IgbGridFilterExpressionsEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpressionCollection","mappedName": "FilterExpressions"}], "originalName": "FilterExpressions"} ]
   },
   {
     "originalName": "GridColumnsAutoGeneratedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridColumnsAutoGeneratedEventArgs.cs","mappedName": "IgbGridColumnsAutoGeneratedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbGridColumnCollection","mappedName": "Columns"}], "originalName": "Columns"} ]
   },
   {
     "originalName": "GridColumnsChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridColumnsChangedEventArgs.cs","mappedName": "IgbGridColumnsChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbGridColumnCollection","mappedName": "Columns"}], "originalName": "Columns"} ]
   },
   {
     "originalName": "GridSelectedItemsChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridSelectedItemsChangedEventArgs.cs","mappedName": "IgbGridSelectedItemsChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbGridSelectedItemsCollection","mappedName": "AddedItems"}], "originalName": "AddedItems"},
@@ -932,10 +929,10 @@
   },
   {
     "originalName": "GridSelectedKeysChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridSelectedKeysChangedEventArgs.cs","mappedName": "IgbGridSelectedKeysChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbGridSelectedKeysCollection","mappedName": "AddedKeys"}], "originalName": "AddedKeys"},
@@ -944,10 +941,10 @@
   },
   {
     "originalName": "GridSelectedCellsChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridSelectedCellsChangedEventArgs.cs","mappedName": "IgbGridSelectedCellsChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbGridSelectedCellsCollection","mappedName": "AddedCells"}], "originalName": "AddedCells"},
@@ -956,10 +953,10 @@
   },
   {
     "originalName": "GridActiveCellChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridActiveCellChangedEventArgs.cs","mappedName": "IgbGridActiveCellChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbGridCellPosition","mappedName": "NewActiveCell"}], "originalName": "NewActiveCell"},
@@ -967,10 +964,10 @@
   },
   {
     "originalName": "GridSelectedCellRangesChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridSelectedCellRangesChangedEventArgs.cs","mappedName": "IgbGridSelectedCellRangesChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbGridSelectedCellRangesCollection","mappedName": "AddedRanges"}], "originalName": "AddedRanges"},
@@ -980,10 +977,10 @@
   },
   {
     "originalName": "DataGridCellEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "DataGridCellEventArgs.cs","mappedName": "IgbDataGridCellEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "MouseButton","mappedName": "Button"}], "originalName": "Button"},
@@ -993,38 +990,38 @@
   },
   {
     "originalName": "GridSortDescriptionsChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridSortDescriptionsChangedEventArgs.cs","mappedName": "IgbGridSortDescriptionsChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbColumnSortDescriptionCollection","mappedName": "SortDescriptions"}], "originalName": "SortDescriptions"} ]
   },
   {
     "originalName": "GridGroupDescriptionsChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridGroupDescriptionsChangedEventArgs.cs","mappedName": "IgbGridGroupDescriptionsChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbColumnGroupDescriptionCollection","mappedName": "GroupDescriptions"}], "originalName": "GroupDescriptions"} ]
   },
   {
     "originalName": "GridSummaryDescriptionsChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridSummaryDescriptionsChangedEventArgs.cs","mappedName": "IgbGridSummaryDescriptionsChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbColumnSummaryDescriptionCollection","mappedName": "SummaryDescriptions"}], "originalName": "SummaryDescriptions"} ]
   },
   {
     "originalName": "ColumnHiddenChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ColumnHiddenChangedEventArgs.cs","mappedName": "IgbColumnHiddenChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbDataGridColumn","mappedName": "Column"}], "originalName": "Column"},
@@ -1032,8 +1029,8 @@
   },
   {
     "originalName": "ColumnPinnedChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ColumnPinnedChangedEventArgs.cs","mappedName": "IgbColumnPinnedChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbDataGridColumn","mappedName": "Column"}], "originalName": "Column"},
@@ -1041,8 +1038,8 @@
   },
   {
     "originalName": "GridCellValueChangingEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridCellValueChangingEventArgs.cs","mappedName": "IgbGridCellValueChangingEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbCellInfo","mappedName": "CellInfo"}], "originalName": "CellInfo"},
@@ -1054,8 +1051,8 @@
   },
   {
     "originalName": "GridDataCommittingEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridDataCommittingEventArgs.cs","mappedName": "IgbGridDataCommittingEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbDataSourceAggregatedResult[]","mappedName": "Changes"}], "originalName": "Changes"},
@@ -1063,8 +1060,8 @@
   },
   {
     "originalName": "GridDataCommittedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridDataCommittedEventArgs.cs","mappedName": "IgbGridDataCommittedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbDataSourceAggregatedResult[]","mappedName": "Changes"}], "originalName": "Changes"},
@@ -1072,8 +1069,8 @@
   },
   {
     "originalName": "GridSizeChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridSizeChangedEventArgs.cs","mappedName": "IgbGridSizeChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Height"}], "originalName": "Height"},
@@ -1081,16 +1078,16 @@
   },
   {
     "originalName": "GridSelectionChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridSelectionChangedEventArgs.cs","mappedName": "IgbGridSelectionChangedEventArgs"}]
   },
   {
     "originalName": "GridCustomFilterRequestedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridCustomFilterRequestedEventArgs.cs","mappedName": "IgbGridCustomFilterRequestedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbDataGridColumn","mappedName": "Column"}], "originalName": "Column"},
@@ -1100,8 +1097,8 @@
   },
   {
     "originalName": "GridColumnWidthChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridColumnWidthChangedEventArgs.cs","mappedName": "IgbGridColumnWidthChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbDataGridColumn","mappedName": "Column"}], "originalName": "Column"},
@@ -1110,8 +1107,8 @@
   },
   {
     "originalName": "GridCellEditStartedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridCellEditStartedEventArgs.cs","mappedName": "IgbGridCellEditStartedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbDataGridColumn","mappedName": "Column"}], "originalName": "Column"},
@@ -1120,8 +1117,8 @@
   },
   {
     "originalName": "GridCellEditEndedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridCellEditEndedEventArgs.cs","mappedName": "IgbGridCellEditEndedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbDataGridColumn","mappedName": "Column"}], "originalName": "Column"},
@@ -1130,8 +1127,8 @@
   },
   {
     "originalName": "GridRowEditStartedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridRowEditStartedEventArgs.cs","mappedName": "IgbGridRowEditStartedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "Item"}], "originalName": "Item"},
@@ -1139,8 +1136,8 @@
   },
   {
     "originalName": "GridRowEditEndedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridRowEditEndedEventArgs.cs","mappedName": "IgbGridRowEditEndedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "Item"}], "originalName": "Item"},
@@ -1148,8 +1145,8 @@
   },
   {
     "originalName": "FilterOperand",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "FilterOperand.cs","mappedName": "IgbFilterOperand"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "DisplayName"}], "originalName": "DisplayName"},
@@ -1160,8 +1157,8 @@
   },
   {
     "originalName": "CellRange",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "CellRange.cs","mappedName": "IgbCellRange"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "EndColumn"}], "originalName": "EndColumn"},
@@ -1171,8 +1168,8 @@
   },
   {
     "originalName": "CellKey",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "CellKey.cs","mappedName": "IgbCellKey"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ColumnUniqueKey"}], "originalName": "ColumnUniqueKey"},
@@ -1180,11 +1177,20 @@
       {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "RowItem"}], "originalName": "RowItem"} ]
   },
   {
+    "originalName": "PrimaryKeyValue",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
+    "names":[{"platform": "Blazor","fileName": "PrimaryKeyValue.cs","mappedName": "IgbPrimaryKeyValue"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "Key"}], "originalName": "Key"},
+      {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "Value"}], "originalName": "Value"} ]
+  },
+  {
     "originalName": "ColumnGroupDescription",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "ColumnSortDescription",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ColumnGroupDescription.cs","mappedName": "IgbColumnGroupDescription"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "DisplayFormat"}], "originalName": "DisplayFormat"},
@@ -1195,8 +1201,8 @@
   },
   {
     "originalName": "FormatGroupTextEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "FormatGroupTextEventArgs.cs","mappedName": "IgbFormatGroupTextEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "FormattedText"}], "originalName": "FormattedText"},
@@ -1206,8 +1212,8 @@
   },
   {
     "originalName": "ColumnSortDescription",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ColumnSortDescription.cs","mappedName": "IgbColumnSortDescription"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Field"}], "originalName": "Field"},
@@ -1215,8 +1221,8 @@
   },
   {
     "originalName": "ColumnSummaryDescription",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ColumnSummaryDescription.cs","mappedName": "IgbColumnSummaryDescription"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "CalculatorDisplayName"}], "originalName": "CalculatorDisplayName"},
@@ -1226,13 +1232,14 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Field"}], "originalName": "Field"},
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "MaxFractionDigits"}], "originalName": "MaxFractionDigits"},
       {"names":[{"platform": "Blazor", "mappedType": "DataSourceSummaryOperand","mappedName": "Operand"}], "originalName": "Operand"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ShouldDisplay"}], "originalName": "ShouldDisplay"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueFormat"}], "originalName": "ValueFormat"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbFormatSpecifierCollection","mappedName": "ValueFormatSpecifiers"}], "originalName": "ValueFormatSpecifiers"} ]
   },
   {
     "originalName": "FormatSummaryTextEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "FormatSummaryTextEventArgs.cs","mappedName": "IgbFormatSummaryTextEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "DisplayName"}], "originalName": "DisplayName"},
@@ -1243,10 +1250,10 @@
   },
   {
     "originalName": "ColumnMovingSeparator",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ColumnMovingSeparator.cs","mappedName": "IgbColumnMovingSeparator"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ActualOpacity"}], "originalName": "ActualOpacity"},
@@ -1255,10 +1262,10 @@
   },
   {
     "originalName": "ComboBoxColumn",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DataGridColumn",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ComboBoxColumn.cs","mappedName": "IgbComboBoxColumn"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "DataSource"}], "originalName": "ItemsSource"},
@@ -1267,10 +1274,10 @@
   },
   {
     "originalName": "DateTimeColumn",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DataGridColumn",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "DateTimeColumn.cs","mappedName": "IgbDateTimeColumn"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "DateTimeFormats","mappedName": "DateTimeFormat"}], "originalName": "DateTimeFormat"},
@@ -1286,8 +1293,8 @@
   },
   {
     "originalName": "DefinitionBase",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "DefinitionBase.cs","mappedName": "IgbDefinitionBase"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActivationBorder"}], "originalName": "ActivationBorder"},
@@ -1297,6 +1304,10 @@
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "ActivationBorderTopWidth"}], "originalName": "ActivationBorderTopWidth"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualActivationBorder"}], "originalName": "ActualActivationBorder"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualBackground"}], "originalName": "ActualBackground"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualBarBackground"}], "originalName": "ActualBarBackground"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "ActualBarCornerRadius"}], "originalName": "ActualBarCornerRadius"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualBarOutline"}], "originalName": "ActualBarOutline"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "ActualBarStrokeThickness"}], "originalName": "ActualBarStrokeThickness"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualBorder"}], "originalName": "ActualBorder"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualErrorBorder"}], "originalName": "ActualErrorBorder"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualLastStickyRowBackground"}], "originalName": "ActualLastStickyRowBackground"},
@@ -1306,11 +1317,16 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualStickyRowBackground"}], "originalName": "ActualStickyRowBackground"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualTextColor"}], "originalName": "ActualTextColor"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Background"}], "originalName": "Background"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "BarBackground"}], "originalName": "BarBackground"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "BarCornerRadius"}], "originalName": "BarCornerRadius"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "BarOutline"}], "originalName": "BarOutline"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "BarStrokeThickness"}], "originalName": "BarStrokeThickness"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Border"}], "originalName": "Border"},
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "BorderBottomWidth"}], "originalName": "BorderBottomWidth"},
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "BorderLeftWidth"}], "originalName": "BorderLeftWidth"},
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "BorderRightWidth"}], "originalName": "BorderRightWidth"},
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "BorderTopWidth"}], "originalName": "BorderTopWidth"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbGridConditionalStyleCollection","mappedName": "ConditionalStyles"}], "originalName": "ConditionalStyles"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ContentOpacity"}], "originalName": "ContentOpacity"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ErrorBorder"}], "originalName": "ErrorBorder"},
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "ErrorBorderBottomWidth"}], "originalName": "ErrorBorderBottomWidth"},
@@ -1321,6 +1337,8 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "HasNamedValue"}], "originalName": "HasNamedValue"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "HasNamedValues"}], "originalName": "HasNamedValues"},
       {"names":[{"platform": "Blazor", "mappedType": "CellContentHorizontalAlignment","mappedName": "HorizontalAlignment"}], "originalName": "HorizontalAlignment"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsBarSupported"}], "originalName": "IsBarSupported"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "IsStyleTransitioningOut"}], "originalName": "IsStyleTransitioningOut"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LastStickyRowBackground"}], "originalName": "LastStickyRowBackground"},
       {"names":[{"platform": "Blazor", "mappedType": "TextCellLineBreakMode","mappedName": "LineBreakMode"}], "originalName": "LineBreakMode"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "PinnedRowBackground"}], "originalName": "PinnedRowBackground"},
@@ -1329,25 +1347,111 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNamedValue"}], "originalName": "SetNamedValue"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "StickyRowBackground"}], "originalName": "StickyRowBackground"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "TextColor"}], "originalName": "TextColor"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "TransitionStyleIn"}], "originalName": "TransitionStyleIn"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "TransitionStyleOut"}], "originalName": "TransitionStyleOut"},
       {"names":[{"platform": "Blazor", "mappedType": "CellContentVerticalAlignment","mappedName": "VerticalAlignment"}], "originalName": "VerticalAlignment"} ]
   },
   {
     "originalName": "DataBindingEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "DataBindingEventArgs.cs","mappedName": "IgbDataBindingEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "ResolvedValue"}], "originalName": "ResolvedValue"},
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "RowObject"}], "originalName": "RowObject"} ]
   },
   {
+    "originalName": "GridCompoundConditionalStyle",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeName": "GridConditionalStyle",
+    "packageName": "igniteui-data-grids",
+    "names":[{"platform": "Blazor","fileName": "GridCompoundConditionalStyle.cs","mappedName": "IgbGridCompoundConditionalStyle"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ActualNeedsFieldMaximum"}], "originalName": "ActualNeedsFieldMaximum"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ActualNeedsFieldMinimum"}], "originalName": "ActualNeedsFieldMinimum"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ActualNeedsFieldSum"}], "originalName": "ActualNeedsFieldSum"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSubStyles"}], "originalName": "GetSubStyles"} ]
+  },
+  {
+    "originalName": "TextIconSetConditionalStyle",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeName": "GridCompoundConditionalStyle",
+    "packageName": "igniteui-data-grids",
+    "names":[{"platform": "Blazor","fileName": "TextIconSetConditionalStyle.cs","mappedName": "IgbTextIconSetConditionalStyle"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetSubStyles"}], "originalName": "GetSubStyles"},
+      {"names":[{"platform": "Blazor", "mappedType": "TextIconSetBuiltInTypes","mappedName": "IconType"}], "originalName": "IconType"} ]
+  },
+  {
+    "originalName": "GridConditionalStyle",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
+    "names":[{"platform": "Blazor","fileName": "GridConditionalStyle.cs","mappedName": "IgbGridConditionalStyle"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ActualNeedsFieldMaximum"}], "originalName": "ActualNeedsFieldMaximum"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ActualNeedsFieldMinimum"}], "originalName": "ActualNeedsFieldMinimum"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ActualNeedsFieldSum"}], "originalName": "ActualNeedsFieldSum"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpression","mappedName": "Condition"}], "originalName": "Condition"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ConditionString"}], "originalName": "ConditionString"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsFieldMaximumNeeded"}], "originalName": "IsFieldMaximumNeeded"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsFieldMinimumNeeded"}], "originalName": "IsFieldMinimumNeeded"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsFieldSumNeeded"}], "originalName": "IsFieldSumNeeded"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsTransitionInEnabled"}], "originalName": "IsTransitionInEnabled"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbGridConditionalStylePropertyCollection","mappedName": "Properties"}], "originalName": "Properties"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "RequiresGlobalValues"}], "originalName": "RequiresGlobalValues"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "StyleKey"}], "originalName": "StyleKey"} ]
+  },
+  {
+    "originalName": "GridConditionFilterStringErrorsParsingEventArgs",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
+    "names":[{"platform": "Blazor","fileName": "GridConditionFilterStringErrorsParsingEventArgs.cs","mappedName": "IgbGridConditionFilterStringErrorsParsingEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Errors"}], "originalName": "Errors"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "PropertyName"}], "originalName": "PropertyName"} ]
+  },
+  {
+    "originalName": "GridConditionalStyleProperty",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
+    "names":[{"platform": "Blazor","fileName": "GridConditionalStyleProperty.cs","mappedName": "IgbGridConditionalStyleProperty"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpression","mappedName": "ActualInputValueExpression"}], "originalName": "ActualInputValueExpression"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpression","mappedName": "ActualMaximumInputValueExpression"}], "originalName": "ActualMaximumInputValueExpression"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpression","mappedName": "ActualMinimumInputValueExpression"}], "originalName": "ActualMinimumInputValueExpression"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpression","mappedName": "ActualSumInputValueExpression"}], "originalName": "ActualSumInputValueExpression"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ColorCollection"}], "originalName": "ColorCollection"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpression","mappedName": "InputValueExpression"}], "originalName": "InputValueExpression"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "InputValueExpressionString"}], "originalName": "InputValueExpressionString"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "MaximumColor"}], "originalName": "MaximumColor"},
+      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "MaximumInputValue"}], "originalName": "MaximumInputValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpression","mappedName": "MaximumInputValueExpression"}], "originalName": "MaximumInputValueExpression"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "MaximumInputValueExpressionString"}], "originalName": "MaximumInputValueExpressionString"},
+      {"names":[{"platform": "Blazor", "mappedType": "GridConditionalStyleBoundType","mappedName": "MaximumType"}], "originalName": "MaximumType"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "MinimumColor"}], "originalName": "MinimumColor"},
+      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "MinimumInputValue"}], "originalName": "MinimumInputValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpression","mappedName": "MinimumInputValueExpression"}], "originalName": "MinimumInputValueExpression"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "MinimumInputValueExpressionString"}], "originalName": "MinimumInputValueExpressionString"},
+      {"names":[{"platform": "Blazor", "mappedType": "GridConditionalStyleBoundType","mappedName": "MinimumType"}], "originalName": "MinimumType"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "PropertyName"}], "originalName": "PropertyName"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ShouldSetValue"}], "originalName": "ShouldSetValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "GridConditionalStylePropertyStylingType","mappedName": "StylingType"}], "originalName": "StylingType"},
+      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "SumInputValue"}], "originalName": "SumInputValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpression","mappedName": "SumInputValueExpression"}], "originalName": "SumInputValueExpression"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SumInputValueExpressionString"}], "originalName": "SumInputValueExpressionString"},
+      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "Value"}], "originalName": "Value"},
+      {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "ValueCollection"}], "originalName": "ValueCollection"} ]
+  },
+  {
     "originalName": "CellStyleRequestedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "CellStyleRequestedEventArgs.cs","mappedName": "IgbCellStyleRequestedEventArgs"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "ResolvedValue"}], "originalName": "ResolvedValue"},
@@ -1356,10 +1460,10 @@
   },
   {
     "originalName": "DataGridColumn",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "DataGridColumn.cs","mappedName": "IgbDataGridColumn"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "ColumnOptionsIconAlignment","mappedName": "ActualColumnOptionsIconAlignment"}], "originalName": "ActualColumnOptionsIconAlignment"},
@@ -1424,9 +1528,22 @@
       {"names":[{"platform": "Blazor", "mappedType": "IgbColumnWidth","mappedName": "Width"}], "originalName": "Width"} ]
   },
   {
+    "originalName": "FormatCellEventArgs",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
+    "names":[{"platform": "Blazor","fileName": "FormatCellEventArgs.cs","mappedName": "IgbFormatCellEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsGroup"}], "originalName": "IsGroup"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsSummary"}], "originalName": "IsSummary"},
+      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "Item"}], "originalName": "Item"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "Row"}], "originalName": "Row"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Text"}], "originalName": "Text"},
+      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "Value"}], "originalName": "Value"} ]
+  },
+  {
     "originalName": "ColumnWidth",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ColumnWidth.cs","mappedName": "IgbColumnWidth"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsStarSized"}], "originalName": "IsStarSized"},
@@ -1435,26 +1552,26 @@
   },
   {
     "originalName": "EditorDefinition",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "EditorDefinition.cs","mappedName": "IgbEditorDefinition"}]
   },
   {
     "originalName": "EditRowDefinition",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "EditRowDefinition.cs","mappedName": "IgbEditRowDefinition"}]
   },
   {
     "originalName": "FilterRowDefinition",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "FilterRowDefinition.cs","mappedName": "IgbFilterRowDefinition"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "PaddingBottom"}], "originalName": "PaddingBottom"},
@@ -1464,10 +1581,10 @@
   },
   {
     "originalName": "Header",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "Header.cs","mappedName": "IgbHeader"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualSortIndicatorColor"}], "originalName": "ActualSortIndicatorColor"},
@@ -1481,10 +1598,10 @@
   },
   {
     "originalName": "ColumnResizingSeparator",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ColumnResizingSeparator.cs","mappedName": "IgbColumnResizingSeparator"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ActualOpacity"}], "originalName": "ActualOpacity"},
@@ -1492,18 +1609,18 @@
   },
   {
     "originalName": "HeaderSeparator",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "HeaderSeparator.cs","mappedName": "IgbHeaderSeparator"}]
   },
   {
     "originalName": "ImageColumn",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DataGridColumn",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ImageColumn.cs","mappedName": "IgbImageColumn"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "EditorDataSource"}], "originalName": "EditorItemsSource"},
@@ -1514,10 +1631,10 @@
   },
   {
     "originalName": "NumericColumn",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DataGridColumn",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "NumericColumn.cs","mappedName": "IgbNumericColumn"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "EditorDataSource"}], "originalName": "EditorItemsSource"},
@@ -1538,26 +1655,26 @@
   },
   {
     "originalName": "PinnedAreaSeparator",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "PinnedAreaSeparator.cs","mappedName": "IgbPinnedAreaSeparator"}]
   },
   {
     "originalName": "SectionFooter",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "SectionFooter.cs","mappedName": "IgbSectionFooter"}]
   },
   {
     "originalName": "SectionHeader",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "SectionHeader.cs","mappedName": "IgbSectionHeader"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualSelectedBackground"}], "originalName": "ActualSelectedBackground"},
@@ -1571,26 +1688,26 @@
   },
   {
     "originalName": "RowSeparator",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "RowSeparator.cs","mappedName": "IgbRowSeparator"}]
   },
   {
     "originalName": "HeaderRowSeparator",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "HeaderRowSeparator.cs","mappedName": "IgbHeaderRowSeparator"}]
   },
   {
     "originalName": "SummaryRow",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "SummaryRow.cs","mappedName": "IgbSummaryRow"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualSelectedBackground"}], "originalName": "ActualSelectedBackground"},
@@ -1604,74 +1721,74 @@
   },
   {
     "originalName": "SummaryRowRoot",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "SummaryRow",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "SummaryRowRoot.cs","mappedName": "IgbSummaryRowRoot"}]
   },
   {
     "originalName": "SummaryRowSection",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "SummaryRow",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "SummaryRowSection.cs","mappedName": "IgbSummaryRowSection"}]
   },
   {
     "originalName": "TemplateHeader",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "Header",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "TemplateHeader.cs","mappedName": "IgbTemplateHeader"}]
   },
   {
     "originalName": "TemplateColumn",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DataGridColumn",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "TemplateColumn.cs","mappedName": "IgbTemplateColumn"}]
   },
   {
     "originalName": "TemplateCellUpdatingEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "TemplateCellUpdatingEventArgs.cs","mappedName": "IgbTemplateCellUpdatingEventArgs"}]
   },
   {
     "originalName": "TemplateHeaderCellUpdatingEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "TemplateHeaderCellUpdatingEventArgs.cs","mappedName": "IgbTemplateHeaderCellUpdatingEventArgs"}]
   },
   {
     "originalName": "TemplateSectionHeader",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "SectionHeader",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "TemplateSectionHeader.cs","mappedName": "IgbTemplateSectionHeader"}]
   },
   {
     "originalName": "TemplateSectionHeaderCellUpdatingEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "TemplateSectionHeaderCellUpdatingEventArgs.cs","mappedName": "IgbTemplateSectionHeaderCellUpdatingEventArgs"}]
   },
   {
     "originalName": "TextColumn",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DataGridColumn",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "TextColumn.cs","mappedName": "IgbTextColumn"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "EditorDataSource"}], "originalName": "EditorItemsSource"},
@@ -1681,24 +1798,24 @@
   },
   {
     "originalName": "TextHeader",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "Header",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "TextHeader.cs","mappedName": "IgbTextHeader"}]
   },
   {
     "originalName": "ColumnExchanger",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ColumnExchanger.cs","mappedName": "IgbColumnExchanger"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "TargetIndex"}], "originalName": "TargetIndex"} ]
   },
   {
     "originalName": "ColumnPropertySetter",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ColumnPropertySetter.cs","mappedName": "IgbColumnPropertySetter"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ColumnName"}], "originalName": "ColumnName"},
@@ -1707,8 +1824,8 @@
   },
   {
     "originalName": "ResponsivePhase",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ResponsivePhase.cs","mappedName": "IgbResponsivePhase"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "AddColumnExchanger"}], "originalName": "AddColumnExchanger"},
@@ -1719,8 +1836,8 @@
   },
   {
     "originalName": "ResponsiveState",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ResponsiveState.cs","mappedName": "IgbResponsiveState"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "AddResponsivePhase"}], "originalName": "AddResponsivePhase"},
@@ -1731,26 +1848,26 @@
   },
   {
     "originalName": "ResponsiveStateEnteringEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ResponsiveStateEnteringEventArgs.cs","mappedName": "IgbResponsiveStateEnteringEventArgs"}]
   },
   {
     "originalName": "ResponsiveStateEnteredEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ResponsiveStateEnteredEventArgs.cs","mappedName": "IgbResponsiveStateEnteredEventArgs"}]
   },
   {
     "originalName": "ResponsiveStateExitedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ResponsiveStateExitedEventArgs.cs","mappedName": "IgbResponsiveStateExitedEventArgs"}]
   }]
 }

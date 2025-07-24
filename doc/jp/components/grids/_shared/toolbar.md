@@ -2,8 +2,8 @@
 title: {Platform} {ComponentTitle} for {ProductName}
 _description: 重要な UI 操作には {Platform} {ComponentTitle} を使用します。列の非表示、ピン固定、Excel エクスポートなど、グリッドの機能にさまざまな UI コントロールをホストします。
 _keywords: {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infragistics, インフラジスティックス
-mentionedTypes: [{ComponentApiMembers}]
-sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+mentionedTypes: ["GridToolbar"]
+sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid", "GridToolbarActions"]
 namespace: Infragistics.Controls
 _canonicalLink: {CanonicalLinkToGridToolbar}
 _language: ja
@@ -34,7 +34,7 @@ _language: ja
 <!-- end: Angular, WebComponents -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
-事前定義された `Actions` および `Title` UI コンポーネントが `GridToolbar` 内に追加されます。これはすべて、対応するグリッド機能とのデフォルトのインタラクションを提供するツールバーを持つために必要です。
+事前定義された `GridToolbarActions` および `GridToolbarTitle` UI コンポーネントが `GridToolbar` 内に追加されます。これはすべて、対応するグリッド機能とのデフォルトのインタラクションを提供するツールバーを持つために必要です。
 
 <!-- ComponentStart: Grid -->
 ```html
@@ -1444,7 +1444,8 @@ $dark-input-group-theme: input-group-theme(
 * `GridToolbarPinning`
 * `GridToolbarTitle`
 
-* `{ComponentName}` イベント:
+`{ComponentName}` イベント:
+
 * `ToolbarExporting`
 
 <!-- Angular -->

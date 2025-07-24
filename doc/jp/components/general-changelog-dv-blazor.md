@@ -15,6 +15,20 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+### バグ修正
+
+| バグ番号 | コントロール | 説明      |
+|------------|---------|------------------|
+|36448|IgbRadialGauge|ラジアル ラベルの書式設定プロパティ (例: Title、SubTitles) が機能しない。|
+|37718|IgbTab|タブ パネル内のグリッドに新しい行を追加した際に、予期しないスクロールが発生する。|
+|37855|IgbGrid|グリッドに HeaderTemplate が含まれており、ページが安全でない (http) プロトコルを使用してアクセスされた場合、Crypto.randomUID が見つからないというエラーがスローされる。|
+
+### {Package Charts}
+
+- 軸ラベルに使用できる MaximumExtent および MaximumExtentPercentage プロパティを追加しました。
+
+## **{PackageVerChanges-25-1-JUNE}**
+
 ### {PackageMaps} 地理マップ
 
 > [!Note]

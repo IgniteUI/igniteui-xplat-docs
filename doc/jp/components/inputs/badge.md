@@ -85,7 +85,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbBadgeModule));
 <IgbBadge />
 ```
 
-バッジの周囲に微妙な境界線を表示するには、バッジの `outlined` 属性を設定できます。
+バッジの周囲に微妙な境界線を表示するには、バッジの `Outlined` 属性を設定できます。
 
 ```tsx
 <IgrBadge outlined={true} ></IgrBadge>
@@ -103,7 +103,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbBadgeModule));
 
 ### バリエーション
 
-{ProductName} バッジは、いくつかの事前定義されたスタイルのバリエーションをサポートします。サポートされている値 `primary` (デフォルト)、`info`、`success`、`warning`、または `danger` のいずれかを `variant` 属性に割り当てることにより、バリエーションを変更できます。
+{ProductName} バッジは、いくつかの事前定義されたスタイルのバリエーションをサポートします。サポートされている値 `primary` (デフォルト)、`info`、`success`、`warning`、または `danger` のいずれかを `Variant` 属性に割り当てることにより、バリエーションを変更できます。
 
 ```tsx
 <IgrBadge variant="success" ></IgrBadge>
@@ -123,7 +123,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbBadgeModule));
 
 ### 形状
 
-バッジ コンポーネントは、`rounded` (デフォルト) 形状と `square` をサポートします。これらの値は、`shape` 属性に割り当てることができます。
+バッジ コンポーネントは、`rounded` (デフォルト) 形状と `square` をサポートします。これらの値は、`Shape` 属性に割り当てることができます。
 
 ```tsx
 <IgrBadge shape="square" ></IgrBadge>

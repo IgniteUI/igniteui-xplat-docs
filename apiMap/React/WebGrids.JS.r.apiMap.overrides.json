@@ -3,13 +3,8 @@
     {
       "originalName": "GridRow",
       "originalNamespace": "Infragistics.Controls",
-      "originalBaseTypeNamespace": "Infragistics.Controls",
-      "originalBaseTypeName": "RowDirective",
       "packageName": "igniteui-webgrids",
-      "names":[{"platform": "React","fileName": "igr-grid-row.ts","mappedName": "IgrGridRowComponent"}],
-      "members":[
-        {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getContext"}], "originalName": "GetContext"},
-        {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getContextMRL"}], "originalName": "GetContextMRL"} ]
+      "names":[{"platform": "React","fileName": "igr-grid-row.ts","mappedName": "IgrGridRowComponent"}]
     }
   ]
 }

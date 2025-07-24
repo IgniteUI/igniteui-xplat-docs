@@ -241,7 +241,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCarouselModule));
 
 ### カスタム インジケーター
 
-{Platform} カスタム カルーセル インジケーターを追加するには、`Indicator` を使用します:
+{Platform} カスタム カルーセル インジケーターを追加するには、`CarouselIndicator` を使用します:
 
 ```html
 <igc-carousel>
@@ -535,7 +535,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCarouselModule));
  - `HideNavigation` プロパティを有効にします。
  - `Vertical` プロパティを有効にします。
  - トランジション `Interval` を追加します。
- - 各スライドにカスタム `Indicator` を追加します。
+ - 各スライドにカスタム `CarouselIndicator` を追加します。
 
 カルーセル テンプレートは以下のようになります。
 
@@ -725,8 +725,8 @@ const images = [
 ## API リファレンス
 
 - `Carousel`
-- `Slide`
-- `Indicator`
+- `CarouselSlide`
+- `CarouselIndicator`
 - `Icon`
 - `Input`
 - `Button`

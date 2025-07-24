@@ -83,7 +83,6 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
     let platformType = <APIPlatform>options.platform;
     let platformName = getPlatformName(platformType).toLowerCase();
     let packageName: string | null = null;
-    let urlNameJoinSymbol = options.docs["apiDocOverrideBuildURLDashed"] ? "-" : "_";
 
     // console.log("getApiLink ");
     // console.log("getApiLink typeName=" + typeName + " memberName=" + memberName); 
@@ -150,9 +149,15 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
 
             let packageText = "";
             if (packageName) {
+                let apiDocOverridePackages: string[] = options.docs.apiDocOverridePackages;
+                let shouldOverrideJoinSymbol = apiDocOverridePackages && apiDocOverridePackages.indexOf(packageName) !== -1;
+                let urlNameJoinSymbol = options.docs["apiDocOverrideBuildURLDashed"] && shouldOverrideJoinSymbol ? "-" : "_";
+
                 if (packageName == "igniteui-webgrids") {
                     const packageSuffix = (platformType == APIPlatform.React ? "" : urlNameJoinSymbol + "grids") + urlNameJoinSymbol + "grids.";
                     packageText = "igniteui" + urlNameJoinSymbol + platformName + packageSuffix;
+                } else if (packageName == "igniteui-data-grids") {
+                    packageText = "igniteui" + urlNameJoinSymbol + platformName + urlNameJoinSymbol +"grids.";
                 } else if (packageName == "igniteui-webinputs") {
                     packageText = "";
                     if (platformType == APIPlatform.React) {

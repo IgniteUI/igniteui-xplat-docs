@@ -2,7 +2,7 @@
 title: {Platform} ツリー グリッド | 最速の {Platform} ツリー テーブル | インフラジスティックス
 _description: {ProductName} ツリー グリッドは、階層データまたはフラット データを簡単に表示および操作するために使用されます。わずかなコーディングでデータをすばやくバインドできます。無料でお試しください。
 _keywords: {Platform} tree grid, igniteui for {Platform}, infragistics, {Platform} ツリー グリッド, インフラジスティックス
-mentionedTypes: [{ComponentApiMembers}]
+mentionedTypes: ["GridBaseDirective", "TreeGrid", "Column"]
 namespace: Infragistics.Controls
 _language: ja
 ---
@@ -232,7 +232,7 @@ public class EmployeesItem
 ツリー グリッドで階層を構築するには、その `childDataKey` プロパティに、各データ オブジェクトで使用される子コレクションの名前を設定する必要があります。このサンプルでは **Employees** コレクションです。
 更に自動列生成を無効にしてデータ オブジェクトの実際のプロパティとの一致を手動で定義できます。**Employees** コレクションが階層で自動的に使用されるため、列定義に含める必要はありません。
 
-`rowSelection` および `paging` プロパティを使用して、ツリー グリッドの行選択およびページング機能を有効にできるようになりました。
+ツリーグリッドにおいて、`RowSelection` を使用し、`Paginator` 要素を追加することで、行選択機能とページング機能を有効にできるようになりました。
 最初の列に集計機能、各列にはフィルタリング、ソート、編集、サイズ変更機能を有効にします。
 
 ```html
