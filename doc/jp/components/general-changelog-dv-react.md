@@ -18,9 +18,9 @@ _language: ja
 |------------|---------|------------------|
 |36448|IgrRadialGauge|ラジアル ラベルの書式設定プロパティ (例: Title、SubTitles) が機能しない。|
 
-### {Package Charts}
+### {PackageCharts} (チャート)
 
-- 軸ラベルに使用できる MaximumExtent および MaximumExtentPercentage プロパティを追加しました。
+- 軸ラベルに使用できる `MaximumExtent` および `MaximumExtentPercentage` プロパティを追加しました。
 
 ## **{PackageVerChanges-24-2-APR2}**
 

@@ -23,9 +23,9 @@ _language: ja
 |37718|IgbTab|タブ パネル内のグリッドに新しい行を追加した際に、予期しないスクロールが発生する。|
 |37855|IgbGrid|グリッドに HeaderTemplate が含まれており、ページが安全でない (http) プロトコルを使用してアクセスされた場合、Crypto.randomUID が見つからないというエラーがスローされる。|
 
-### {Package Charts}
+### {PackageCharts} (チャート)
 
-- 軸ラベルに使用できる MaximumExtent および MaximumExtentPercentage プロパティを追加しました。
+- 軸ラベルに使用できる `MaximumExtent` および `MaximumExtentPercentage` プロパティを追加しました。
 
 ## **{PackageVerChanges-25-1-JUNE}**
 
