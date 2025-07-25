@@ -24,9 +24,13 @@ _language: ja
 |------------|---------|------------------|
 |36448|IgxRadialGauge|ラジアル ラベルの書式設定プロパティ (例: Title、SubTitles) が機能しない。|
 
-### {Package Charts}
+### {PackageCharts} (チャート)
 
-- 軸ラベルに使用できる MaximumExtent および MaximumExtentPercentage プロパティを追加しました。
+- 軸ラベルに使用できる `MaximumExtent` および `MaximumExtentPercentage` プロパティを追加しました。
+
+## **{PackageVerChanges-25-1}**
+
+* Angular 20 のサポート。
 
 ## **{PackageVerChanges-24-2-FEB}**
 
