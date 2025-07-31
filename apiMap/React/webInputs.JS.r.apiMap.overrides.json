@@ -44,6 +44,58 @@
     "members":[
       {"names":[{"platform": "React", "mappedType": "DividerType","mappedName": "type"}], "originalName": "Type"}
     ]
+  },
+  {
+    "originalName": "DateRangePicker",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseComboBoxLike",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-date-range-picker.ts","mappedName": "IgrDateRangePicker"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "boolean","mappedName": "open"}], "originalName": "Open"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "mode"}], "originalName": "Mode"},
+      {"names":[{"platform": "React", "mappedType": "boolean",  "mappedName": "keepOpenOnSelect"}], "originalName": "KeepOpenOnSelect"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "keepOpenOnOutsideClick"}], "originalName": "KeepOpenOnOutsideClick"},
+      {"names":[{"platform": "React", "mappedType": "DateRangeValue","mappedName": "value"}], "originalName": "Value"},
+      {"names":[{"platform": "React", "mappedType": "Date",  "mappedName": "min"}], "originalName": "Min"},
+      {"names":[{"platform": "React", "mappedType": "Date","mappedName": "max"}], "originalName": "Max"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "required"}], "originalName": "Required"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
+      {"names":[{"platform": "React", "mappedType": "boolean",  "mappedName": "readOnly"}], "originalName": "ReadOnly"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "nonEditable"}], "originalName": "NonEditable"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "placeholder"}], "originalName": "Placeholder"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "placeholderStart"}], "originalName": "PlaceholderStart"},
+      {"names":[{"platform": "React", "mappedType": "string","mappedName": "placeholderEnd"}], "originalName": "PlaceholderEnd"},
+      {"names":[{"platform": "React", "mappedType": "string","mappedName": "label"}], "originalName": "Label"},
+      {"names":[{"platform": "React", "mappedType": "string","mappedName": "labelStart"}], "originalName": "LabelStart"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "labelEnd"}], "originalName": "LabelEnd"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "outlined"}], "originalName": "Outlined"},
+      {"names":[{"platform": "React", "mappedType": "string","mappedName": "locale"}], "originalName": "Locale"},
+      {"names":[{"platform": "React", "mappedType": "string", "mappedName": "inputFormat"}], "originalName": "InputFormat"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "displayFormat"}], "originalName": "DisplayFormat"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "prompt"}], "originalName": "Prompt"},
+      {"names":[{"platform": "React", "mappedType": "string", "mappedName": "weekStart"}], "originalName": "WeekStart"},
+      {"names":[{"platform": "React", "mappedType": "boolean",  "mappedName": "showWeekNumbers"}], "originalName": "ShowWeekNumbers"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "hideOutsideDays"}], "originalName": "HideOutsideDays"},
+      {"names":[{"platform": "React", "mappedType": "boolean","mappedName": "hideHeader"}], "originalName": "HideHeader"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "headerOrientation"}], "originalName": "HeaderOrientation"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "orientation"}], "originalName": "Orientation"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "visibleMonths"}], "originalName": "VisibleMonths"},
+      {"names":[{"platform": "React", "mappedType": "DateRangeDescriptor[]",  "mappedName": "disabledDates"}], "originalName": "DisabledDates"},
+      {"names":[{"platform": "React", "mappedType": "DateRangeDescriptor[]", "mappedName": "specialDates"}], "originalName": "SpecialDates"},
+      {"names":[{"platform": "React", "mappedType": "Date","mappedName": "activeDate"}], "originalName": "ActiveDate"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "resourceStrings"}], "originalName": "ResourceStrings"},
+      {"names":[{"platform": "React", "mappedType": "boolean",  "mappedName": "useTwoInputs"}], "originalName": "UseTwoInputs"},
+      {"names":[{"platform": "React", "mappedType": "boolean","mappedName": "usePredefinedRanges"}], "originalName": "UsePredefinedRanges"},
+      {"names":[{"platform": "React", "mappedType": "CustomDateRange[]",  "mappedName": "customRanges"}], "originalName": "CustomRanges"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "show"}], "originalName": "Show"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "hide"}], "originalName": "Hide"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "toggle"}], "originalName": "Toggle"},
+      {"names":[{"platform": "React", "mappedType": "method", "mappedName": "clear"}], "originalName": "Clear"},
+      {"names":[{"platform": "React", "mappedType": "method","mappedName": "select"}], "originalName": "Select"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setCustomValidity"}], "originalName": "SetCustomValidity"}
+    ]
   }
   ]
 }
