@@ -99,10 +99,16 @@ dateRange.value = { start: startDate, end: endDate }
 ```
 
 ```tsx
-let dateRange = document.querySelector('igc-date-range-picker') as IgrDateRangePicker;
+const dateRangeRef = useRef<IgrDateRangePicker>();
 let startDate = new Date(2025, 4, 6);
 let endDate = new Date(2025, 4, 8);
-dateRange.value = { start: startDate, end: endDate }
+useEffect (() => {
+  dateRangeRef.current.value = { start: startDate, end: endDate }	
+}, [])
+
+return (
+  <IgrDateRangePicker ref={dateRangeRef} />
+);
 ```
 
 In addition, the value can be set as attribute. In this case it should represent an object that can be parsed correctly as JSON, where the `start` and `end` fields should have date values in the ISO 8601 format:
@@ -313,8 +319,8 @@ const nextWeek: CustomDateRange[] = [
     label: 'Next 7 days',
     dateRange: {
       start: today,
-      end: nextSeven,
-    },
+      end: nextSeven
+    }
   }
 ]
 
@@ -325,25 +331,24 @@ dateRange.usePredefinedRanges = true;
 
 ```tsx
 const today = new Date();
-
 const nextSeven = new Date(
   today.getFullYear(),
   today.getMonth(),
-  today.getDate() + 7 
+  today.getDate() + 7
 );
 const nextWeek: CustomDateRange[] = [
   {
-    label: 'Next 7 days',
+    label: "Next 7 days",
     dateRange: {
       start: today,
-      end: nextSeven,
-    },
+      end: nextSeven
+    }
   }
-]
+];
 
-const dateRange = document.querySelector('igc-date-range-picker') as IgrDateRangePicker;
-dateRange.customRanges = nextWeek;
-dateRange.usePredefinedRanges = true;
+return (
+  <IgrDateRangePicker usePredefinedRanges customRanges={nextWeek} />
+);
 ```
 
 Now, when you click the newly created `"Next 7 days"` chip in the calendar pop-up, the range will automatically be selected, from today through the next 7 days.
@@ -369,17 +374,21 @@ dateRange.disabledDates = [
 ```
 
 ```tsx
-let dateRange = document.querySelector('igc-date-range-picker') as IgrDateRangePicker;
-
+const dateRangeRef = useRef<IgrDateRangePicker>();
 const minDate = new Date(2025, 4, 5);
 const maxDate = new Date(2025, 4, 15);
-        
-dateRange.disabledDates = [
-  {
-    type: DateRangeType.Between,
-    dateRange: [minDate, maxDate]
-  }
-] as DateRangeDescriptor[];
+useEffect (() => {
+  dateRangeRef.current.disabledDates = [
+    {
+      type: DateRangeType.Between,
+      dateRange: [minDate, maxDate]
+    }
+  ] as DateRangeDescriptor[];
+}, [])
+
+return (
+  <IgrDateRangePicker ref={dateRangeRef} />
+);
 ```
 
 <!-- WebComponents -->
@@ -483,7 +492,7 @@ return (
   <IgrDateRangePicker ref={dateRangeRef}>
     <IgrButton slot="actions" onClick={toggleWeekNumbers}>Toggle Week Numbers</IgrButton>
   </IgrDateRangePicker>
-)
+);
 ```
 
 In addition to the slots we've already covered, the following slots are also available in the `DateRangePicker` component:
