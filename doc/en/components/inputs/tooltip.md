@@ -229,7 +229,7 @@ By default, the `Tooltip` is triggered only while hovering over the target eleme
 The `Tooltip` integrates seamlessly with other components, allowing you to create advanced tooltips that contain components within them.
 In the following example, you can see how we create descriptive tooltips by using the `List`, `Avatar`, `Icon`, `Badge`, `Button`, `Card` and `CategoryChart` components.
 
-`sample="/inputs/tooltip/advanced", height="380", alt="{Platform} Tooltip Advanced Example"`
+`sample="/inputs/tooltip/advanced", height="640", alt="{Platform} Tooltip Advanced Example"`
 
 ### Additional Properties
 
