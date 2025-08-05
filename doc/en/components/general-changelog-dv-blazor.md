@@ -14,6 +14,28 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
+### Bug Fixes
+
+| Bug Number | Control | Description      |
+|------------|---------|------------------|
+|36448|IgbRadialGauge|Radial label format properties do not work. (eg. Title, SubTitles)|
+|37718|IgbTab|Unexpected scrolling occurred when a new row was added to a grid that is in a tab panel|
+|37855|IgbGrid|Crypto.randomUID not found error is thrown if a grid contains HeaderTemplate and the page is accessed using unsecured(http) protocol|
+
+### {PackageCharts} (Charts)
+
+- Add `MaximumExtent` and `MaximumExtentPercentage` properties for use with axis labels.
+
+## **{PackageVerChanges-25-1-JUNE}**
+
+### {PackageMaps} (Geographic Map)
+
+> [!Note]
+> As of June 30, 2025 all Microsoft Bing Maps for Enterprise Basic (Free) accounts will be retired. If you're still using an unpaid Basic Account and key, now is the time to act to avoid service disruptions. Bing Maps for Enterprise license holders can continue to use Bing Maps in their applications until June 30,2028.
+> For more details please visit:
+
+[Microsoft Bing Blogs](https://blogs.bing.com/maps/2025-06/Bing-Maps-for-Enterprise-Basic-Account-shutdown-June-30,2025)
+
 ### {PackageCharts} (Charts)
 
 - New [Chart Data Annotations](charts/features/chart-data-annotations.md)

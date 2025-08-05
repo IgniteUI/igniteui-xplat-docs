@@ -316,8 +316,6 @@ public rowDragGhostTemplate = (ctx: IgcGridRowDragGhostContext) => {
 
 ドラッグ ハンドル アイコンは、グリッドの `DragIndicatorIconTemplate` を使用してテンプレート化できます。作成している例で、アイコンをデフォルトのもの (**drag_indicator**) から **drag_handle** に変更します。
 
-そのためには、`DragIndicatorIcon` を使用して `{ComponentSelector}` の本体内にテンプレートを渡すことができます。
-
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```tsx

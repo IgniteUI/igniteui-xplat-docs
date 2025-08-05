@@ -105,7 +105,7 @@ defineComponents(IgcAvatarComponent);
 
 ### イニシャル
 
-`initials` 属性が設定されている場合、アバターのすべての子要素は無視され、この属性に渡された文字列が表示されます。
+`Initials` 属性が設定されている場合、アバターのすべての子要素は無視され、この属性に渡された文字列が表示されます。
 
 ```html
 <!-- Initials("AZ") will be displayed instead of the icon. -->
@@ -135,7 +135,7 @@ defineComponents(IgcAvatarComponent);
 
 ### 画像
 
-`src` 属性に静的アセットに有効な URL が割り当てられている場合、アバターは画像を表示することもできます。その場合、`initials` 値は無視され、子要素は描画されません。
+`Src` 属性に静的アセットに有効な URL が割り当てられている場合、アバターは画像を表示することもできます。その場合、`Initials` 値は無視され、子要素は描画されません。
 
 ```html
 <igc-avatar

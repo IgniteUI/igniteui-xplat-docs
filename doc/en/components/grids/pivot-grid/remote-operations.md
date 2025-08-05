@@ -2,7 +2,8 @@
 title: {Platform} Pivot Grid Custom Remote | Pivot Tables | Infragistics
 _description: Create fast, responsive {Platform} pivot grids and tables with Ignite UI for {Platform}. Perform complex data analysis via pivot data.
 _keywords: {Platform} pivot grid, {Platform} material pivot table, ignite ui for {Platform}, pivot grid customization, pivot grid remote, pivot remote
-mentionedTypes: ["Infragistics.Controls.PivotGrid"]
+mentionedTypes: ["PivotGrid", "PivotConfiguration", "PivotKeys"]
+namespace: Infragistics.Controls
 ---
 
 
@@ -66,14 +67,14 @@ public aggregatedData = [
 ```
 
 The Pivot grid provides the object keys fields it uses to do its pivot calculations.
-- **children** - Field that stores children for hierarchy building. It represents a map from grouped values and all the pivotGridRecords that are based on that value. It can be utilized in very specific scenarios, where there is a need to do something while creating the hierarchies. No need to change this for common usage.
-- **records** - Field that stores reference to the original data records. Can be seen in the example from above - **AllProducts_records**. Avoid setting fields in the data with the same name as this property. If your data records has **records** property, you can specify different and unique value for it using the **pivotKeys**.
-- **aggregations** - Field that stores aggregation values. It's applied while creating the hierarchies and also it should not be changed for common scenarios.
-- **level** - Field that stores dimension level based on its hierarchy. Avoid setting fields in the data with the same name as this property. If your data records has **level** property, you can specify different and unique value for it using the **pivotKeys**.
-- **columnDimensionSeparator** - Separator used when generating the unique column field values. It is the dash(**-**) from the example from above - **All-Bulgaria**.
-- **rowDimensionSeparator** - Separator used when generating the unique row field values. It is the underscore(**_**) from the example from above - **AllProducts_records**. It's used when creating the **records** and **level** field.
+- `Children` - Field that stores children for hierarchy building. It represents a map from grouped values and all the pivotGridRecords that are based on that value. It can be utilized in very specific scenarios, where there is a need to do something while creating the hierarchies. No need to change this for common usage.
+- `Records` - Field that stores reference to the original data records. Can be seen in the example from above - **AllProducts_records**. Avoid setting fields in the data with the same name as this property. If your data records has **records** property, you can specify different and unique value for it using the `PivotKeys`.
+- `Aggregations` - Field that stores aggregation values. It's applied while creating the hierarchies and also it should not be changed for common scenarios.
+- `Level` - Field that stores dimension level based on its hierarchy. Avoid setting fields in the data with the same name as this property. If your data records has **level** property, you can specify different and unique value for it using the `PivotKeys`.
+- `ColumnDimensionSeparator` - Separator used when generating the unique column field values. It is the dash(**-**) from the example from above - **All-Bulgaria**.
+- `RowDimensionSeparator` - Separator used when generating the unique row field values. It is the underscore(**_**) from the example from above - **AllProducts_records**. It's used when creating the `Records` and `Level` field.
 
-All of these are stored in the **pivotKeys** property which is part of the `PivotConfiguration` and can be used to change the default pivot keys.
+All of these are stored in the `PivotKeys` property which is part of the `PivotConfiguration` and can be used to change the default pivot keys.
 These defaults are:
 
 ```typescript
@@ -187,8 +188,8 @@ public noopSortStrategy = NoopSortingStrategy.instance();
 ```
 
 ## API References
-* `PivotGridComponent`
-* `PivotDataSelectorComponent`
+* `PivotGrid`
+* `PivotDataSelector`
 
 
 ## Additional Resources

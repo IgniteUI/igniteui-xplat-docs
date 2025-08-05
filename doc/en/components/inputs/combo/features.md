@@ -10,7 +10,7 @@ mentionedTypes: ["Combo", "ComboList", "ComboItem"]
 The {ProductName} ComboBox component exposes several features such as filtering and grouping.
 
 ## Combobox Features Example
-The following demo shows some `ComboBox` features that are enabled/disabled at runtime:
+The following demo shows some `Combo` features that are enabled/disabled at runtime:
 
 `sample="/inputs/combo/features", height="400", alt="{Platform} Combo Features"`
 
@@ -195,7 +195,7 @@ Filtering options can be further enhanced by enabling the search case sensitivit
 
 #### Filtering Options
 
-The {ProductName} `ComboBox` component exposes one more filtering property that allows passing configuration of both `FilterKey` and `CaseSensitive` options. The `FilterKey` indicates which data source field should be used for filtering the list of options. The `CaseSensitive` option indicates if the filtering should be case-sensitive or not.
+The {ProductName} `Combo` exposes one more filtering property that allows passing configuration of both `FilterKey` and `CaseSensitive` options. The `FilterKey` indicates which data source field should be used for filtering the list of options. The `CaseSensitive` option indicates if the filtering should be case-sensitive or not.
 
 The following code snippet shows how to filter the cities from our data source by country instead of name. We are also making the filtering case-sensitive by default:
 

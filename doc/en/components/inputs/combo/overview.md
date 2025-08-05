@@ -26,7 +26,7 @@ First, you need to install the {ProductName} by running the following command:
 npm install {PackageWebComponents}
 ```
 
-Before using the `ComboBox` component, you need to register it together with its additional components and necessary CSS:
+Before using the `Combo` component, you need to register it together with its additional components and necessary CSS:
 
 ```ts
 import { defineComponents, IgcComboComponent }
@@ -42,7 +42,7 @@ For a complete introduction to the {ProductName}, read the [*Getting Started*](.
 
 <!-- Blazor -->
 
-To get started with the `IgbCombo` component, first we need to register its module as follows:
+To get started with the `Combo` component, first we need to register its module as follows:
 
 
 ```razor
@@ -66,7 +66,7 @@ First, you need to the install the corresponding {ProductName} npm package by ru
 npm install igniteui-react
 ```
 
-You will then need to import the {Platform} `ComboBox` and its necessary CSS:
+You will then need to import the {Platform} `Combo` and its necessary CSS:
 
 ```tsx
 import { IgrCombo } from 'igniteui-react';
@@ -202,7 +202,7 @@ comboRef.current.value = ['NY01', 'UK01'];
 
 The combo component exposes APIs that allow you to change the currently selected items.
 
-Besides selecting items from the list of options by user interaction, you can select items programmatically. This is done via the `select` and `deselect` methods. You can pass an array of items to both methods. If the methods are called with no arguments all items will be selected/deselected depending on which method is called. If you have specified a `ValueKey` for your combo component, then you should pass the value keys of the items you would like to select/deselect:
+Besides selecting items from the list of options by user interaction, you can select items programmatically. This is done via the `Select` and `Deselect` methods. You can pass an array of items to both methods. If the methods are called with no arguments all items will be selected/deselected depending on which method is called. If you have specified a `ValueKey` for your combo component, then you should pass the value keys of the items you would like to select/deselect:
 
 #### Select/deselect some items:
 <!-- WebComponents -->
@@ -306,8 +306,8 @@ comboRef.current.deselect([cities[1], cities[5]]);
 
 The {ProductName} Combo component supports most of the `Input` properties, such as `Required`, `Disabled`, `Autofocus`, `Invalid`, etc. The component also exposes two methods bound to its validation:
 
-- `reportValidity` - checks for validity and returns true if the component satisfies the validation constraints.
-- `checkValidity` - a wrapper around reportValidity to comply with the native input API.
+- `ReportValidity` - checks for validity and returns true if the component satisfies the validation constraints.
+- `CheckValidity` - a wrapper around reportValidity to comply with the native input API.
 
 ## Keyboard Navigation
 

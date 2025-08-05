@@ -2,8 +2,8 @@
 title: {Platform} データ グリッド | 列スパークライン | インフラジスティックス
 _description: {ProductName} Data Table / Data Grid は、列スパークラインなどの他のコンポーネントを埋め込む方法を提供するテンプレート列をサポートします。
 _keywords: {Platform} Table, Data Grid, column sparkline, {ProductName}, data binding, Infragistics, {Platform} テーブル, データ グリッド, 列スパークライン, データ バインディング, インフラジスティックス
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.CellInfo", "Infragistics.Controls.Grid.Implementation.TemplateCellInfo", "Sparkline"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "CellInfo", "TemplateCellInfo", "Sparkline"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---

@@ -2,8 +2,8 @@
 title: {Platform} データ グリッド | ヒートマップ テーブル | データ バインディング | インフラジスティックス
 _description: インフラジスティックスのグリッド コンポーネントのテンプレート列を使用してヒートマップ テーブルを作成します。{ProductName} テーブルのサンプルを是非お試しください!
 _keywords: {Platform} Table, Data Grid, column template, heatmap table, {ProductName}, data binding, Infragistics, {Platform} テーブル, データ グリッド, 列テンプレート, ヒートマップ テーブル, データ バインディング, インフラジスティックス
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.Column"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "DataGridColumn"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---

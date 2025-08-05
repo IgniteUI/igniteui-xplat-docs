@@ -20,7 +20,7 @@ _language: ja
 
 ### Item Template (項目テンプレート)
 
-`itemTemplate` はカスタム テンプレートであり、定義されている場合は、オプションのリスト内の項目を描画するときに使用する必要があります。
+`ItemTemplate` はカスタム テンプレートであり、定義されている場合は、オプションのリスト内の項目を描画するときに使用する必要があります。
 
 <!-- WebComponents -->
 ```ts
@@ -97,7 +97,7 @@ const renderItemTemplate = (args: ComboTemplateProps<City>) => {
 
 ### Group Header Template (グループ ヘッダー テンプレート)
 
-`groupHeaderTemplate` はカスタム テンプレートであり、定義されている場合は、オプションのリストでグループ ヘッダーを描画するときに使用する必要があります。
+`GroupHeaderTemplate` はカスタム テンプレートであり、定義されている場合は、オプションのリストでグループ ヘッダーを描画するときに使用する必要があります。
 
 <!-- WebComponents -->
 ```ts

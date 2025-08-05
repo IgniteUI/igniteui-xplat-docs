@@ -315,8 +315,6 @@ The drag ghost can be templated on every grid level, making it possible to have 
 
 The drag handle icon can be templated using the grid's `DragIndicatorIconTemplate`. In the example we're building, let's change the icon from the default one (**drag_indicator**) to **drag_handle**.
 
-To do so, we can use the `DragIndicatorIcon` to pass a template inside of the `{ComponentSelector}`'s body:
-
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```tsx

@@ -239,7 +239,7 @@ You can use the `Disabled` attribute to disable the checkbox.
 
 ### Forms
 
-You can use the `name` and `value` attributes when using the checkbox with `Form`.
+You can use the `Name` and `Value` attributes when using the checkbox with `Form`.
 
 ```tsx
 <IgrCheckbox name="wifi" value="enabled"></IgrCheckbox>

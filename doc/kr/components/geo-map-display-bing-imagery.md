@@ -6,14 +6,21 @@ _language: kr
 mentionedTypes: ["XamGeographicMap", "ShapefileConverter"]
 ---
 
+NOTE: As of June 30, 2025 all Microsoft Bing Maps for Enterprise Basic (Free) accounts will be retired. If you're still using an unpaid Basic Account and key, now is the time to act to avoid service disruptions. Bing Maps for Enterprise license holders can continue to use Bing Maps in their applications until June 30,2028.
+
+For more details:
+
+[Microsoft Bing Blogs](https://blogs.bing.com/maps/2025-06/Bing-Maps-for-Enterprise-Basic-Account-shutdown-June-30,2025)
+
 # {Platform} Binding Imagery from Bing Maps
 
 Bing Maps is Microsoft’s® licensed geographic imagery mapping service. This geographic imagery service is accessible directly on the <a href="http://www.bing.com/maps" target="_blank">www.bing.com/maps</a>  web site. The {ProductName} map component displays geographic imagery from Bing Maps in the map’s background content using the `BingMapsMapImagery` class. However, by default the map component displays geographic imagery from the Open Street Maps in the map background content requiring you to configure the control to display Bing Maps’ geographic imagery. Prior to using Bing Maps’ geographic imagery, you must register and obtain a Bing Map API key from <a href="http://www.bingmapsportal.coms" target="_blank">www.bingmapsportal.com</a> You must use the Bing Maps’ API key to set the BingMapsMapImagery object’s ApiKey property.
 
 ## Demo
 
+<!-- `sample="/maps/geo-map/display-bing-imagery", height="500", alt="{Platform} geo map display bing imagery"` -->
 
-`sample="/maps/geo-map/display-bing-imagery", height="500", alt="{Platform} geo map display bing imagery"`
+<img src="../images/general/BingMapsImagery.png" />
 
 <div class="divider--half"></div>
 

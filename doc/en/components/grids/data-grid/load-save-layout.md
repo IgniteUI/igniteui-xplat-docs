@@ -2,8 +2,8 @@
 title: {Platform} Data Grid | Real-Time Data Grid and Tables | Load & Save | Infragistics
 _description: Use Infragistics' {ProductName} Data Table & Grid which supports loading and saving the layout the user makes.
 _keywords: {Platform} Table, Data Grid, cell activation, {ProductName}, Infragistics
-mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid", "Infragistics.Controls.Grid.Implementation.Column"]
-namespace: Infragistics.Controls
+mentionedTypes: ["Grid", "DataGridColumn"]
+namespace: Infragistics.Controls.Grids.Implementation
 _canonicalLink: {CanonicalLinkToGridMain}
 ---
 

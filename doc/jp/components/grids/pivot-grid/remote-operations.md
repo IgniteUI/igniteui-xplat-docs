@@ -2,7 +2,8 @@
 title: {Platform} グリッド カスタム リモート | ピボット テーブル | インフラジスティックス
 _description: Ignite UI for {Platform} を使用して、高速で応答性の高い {Platform} ピボット グリッドとテーブルを作成します。ピボット データを介して複雑なデータ分析を実行します。
 _keywords: {Platform} pivot grid, {Platform} material pivot table, ignite ui for {Platform}, pivot grid customization, pivot grid remote, pivot remote, {Platform} ピボット グリッド, {Platform} material ピボット テーブル, ピボット グリッドのカスタマイズ, ピボット グリッド リモート, ピボット リモート
-mentionedTypes: ["Infragistics.Controls.PivotGrid"]
+mentionedTypes: ["PivotGrid", "PivotConfiguration", "PivotKeys"]
+namespace: Infragistics.Controls
 _language: ja
 ---
 
@@ -67,14 +68,14 @@ public aggregatedData = [
 ```
 
 ピボット グリッドは、ピボット計算を行うために使用するオブジェクト キー フィールドを提供します。
-- **children** - 階層構築のために子を格納するフィールド。これは、グループ化された値と、その値に基づくすべての pivotGridRecords からのマップを表します。これは、階層の作成中に何かを行う必要がある非常に特殊なシナリオで利用できます。一般的な使用法のためにこれを変更する必要はありません。
-- **records** - 元のデータ レコードへの参照を格納するフィールド。上記の例で見ることができます - **AllProducts_records**。このプロパティと同じ名前でデータにフィールドを設定することは避けてください。データ レコードに **records** プロパティがある場合は、**pivotKeys** を使用して異なる一意の値を指定できます。
-- **aggregations** - 集計値を格納するフィールド。階層の作成中に適用され 、一般的なシナリオでは変更する必要はありません。
-- **level** - 階層に基づいてディメンション レベルを格納するフィールド。このプロパティと同じ名前でデータにフィールドを設定することは避けてください。データ レコードに **level** プロパティがある場合は、**pivotKeys** を使用して異なる一意の値を指定できます。
-- **columnDimensionSeparator** - 一意の列フィールド値を生成するときに使用されるセパレーター。上からの例のダッシュ (**-**) - **All-Bulgaria** です。
-- **rowDimensionSeparator** - 一意の行フィールド値を生成するときに使用されるセパレーター。上記の例のアンダースコア (**_**) - **AllProducts_records** です。**records** (レコード) と **level** (レベル フィールド) を作成するときに使用されます。
+- `Children` - 階層構築のために子を格納するフィールド。これは、グループ化された値と、その値に基づくすべての pivotGridRecords からのマップを表します。これは、階層の作成中に何かを行う必要がある非常に特殊なシナリオで利用できます。一般的な使用法のためにこれを変更する必要はありません。
+- `Records` - 元のデータ レコードへの参照を格納するフィールド。上記の例で見ることができます - **AllProducts_records**。このプロパティと同じ名前でデータにフィールドを設定することは避けてください。データ レコードに **records** プロパティがある場合は、`PivotKeys` を使用して異なる一意の値を指定できます。
+- `Aggregations` - 集計値を格納するフィールド。階層の作成中に適用され 、一般的なシナリオでは変更する必要はありません。
+- `Level` - 階層に基づいてディメンション レベルを格納するフィールド。このプロパティと同じ名前でデータにフィールドを設定することは避けてください。データ レコードに **level** プロパティがある場合は、`PivotKeys` を使用して異なる一意の値を指定できます。
+- `ColumnDimensionSeparator` - 一意の列フィールド値を生成するときに使用されるセパレーター。上からの例のダッシュ (**-**) - **All-Bulgaria** です。
+- `RowDimensionSeparator` - 一意の行フィールド値を生成するときに使用されるセパレーター。上記の例のアンダースコア (**_**) - **AllProducts_records** です。`Records` (レコード) と `Level` (レベル) フィールド を作成するときに使用されます。
 
-これらはすべて、`Pivo​​tConfiguration` の一部である **pivotKeys** プロパティに格納され、デフォルトのピボット キーを変更するために使用できます。これらのデフォルトは次のとおりです:
+これらはすべて、`Pivo​​tConfiguration` の一部である `PivotKeys` プロパティに格納され、デフォルトのピボット キーを変更するために使用できます。これらのデフォルトは次のとおりです:
 
 ```typescript
 export const   = {
@@ -187,8 +188,8 @@ public noopSortStrategy = NoopSortingStrategy.instance();
 ```
 
 ## API リファレンス
-* `PivotGridComponent`
-* `PivotDataSelectorComponent`
+* `PivotGrid`
+* `PivotDataSelector`
 
 
 ## その他のリソース

@@ -209,7 +209,6 @@ Take leverage of the [Dock Manager](../../layouts/dock-manager.md) WebComponent 
 
 ## API References
 * `{ComponentName}`
-* `Cell`
 
 ## Additional Resources
 <!-- ComponentStart: Grid -->

@@ -302,13 +302,13 @@ We also have properties for setting the minimum width of the columns (`MinColumn
 
 The Tile component has properties that can be set individually for each tile. Some of these properties include:
 
-- The `col-span` property specifies how many columns the tile will span across in the layout, allowing you to control its horizontal size.
-- The `row-span` property determines how many rows the tile will span vertically, adjusting the tile's height within the layout.
-- The `col-start` property specifies the starting column where the tile is placed.
-- The `row-start` property specifies the starting row where the tile is placed.
-- The `disable-fullscreen` property hides the default fullscreen action button.
-- The `disable-maximize` property hides the default maximize toggle action button.
-- The `disable-resize` property prevents the tile from being resized by the user.
+- The `ColSpan` property specifies how many columns the tile will span across in the layout, allowing you to control its horizontal size.
+- The `RowSpan` property determines how many rows the tile will span vertically, adjusting the tile's height within the layout.
+- The `ColStart` property specifies the starting column where the tile is placed.
+- The `RowStart` property specifies the starting row where the tile is placed.
+- The `DisableFullscreen` property hides the default fullscreen action button.
+- The `DisableMaximize` property hides the default maximize toggle action button.
+- The `DisableResize` property prevents the tile from being resized by the user.
 
 <!-- WebComponents -->
 ```html

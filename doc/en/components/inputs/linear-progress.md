@@ -86,7 +86,7 @@ The simplest way to start using the `LinearProgress` is as follows:
 
 ### Progress Types
 
-You can set the type of your indicator, using  the `variant` attribute. There are five types of linear progress indicators - **primary** (default), **error**, **success**, **info**, and **warning**.
+You can set the type of your indicator, using  the `Variant` attribute. There are five types of linear progress indicators - **primary** (default), **error**, **success**, **info**, and **warning**.
 
 ```tsx
 <IgrLinearProgress value="100" variant="success"></IgrLinearProgress>
@@ -102,7 +102,7 @@ You can set the type of your indicator, using  the `variant` attribute. There ar
 
 ### Striped Progress
 
-You can make the indicator striped, using the `striped` property:
+You can make the indicator striped, using the `Striped` property:
 
 `sample="/inputs/linear-progress-indicator/types", height="200", alt="{Platform} Linear Progress Striped Example"`
 
@@ -112,11 +112,11 @@ You can make the indicator striped, using the `striped` property:
 
 ### Indeterminate Progress
 
-If you want to track a process that is not determined precisely, you can set the `indeterminate` property.
+If you want to track a process that is not determined precisely, you can set the `Indeterminate` property.
 
 ### Animation Duration
 
-The `animationDuration` property is used to specify how long the animation cycle should take. It takes as value a number which represents the animation duration in milliseconds.
+The `AnimationDuration` property is used to specify how long the animation cycle should take. It takes as value a number which represents the animation duration in milliseconds.
 
 ```tsx
 <IgrLinearProgress animationDuration="5000" indeterminate="true"></IgrLinearProgress>
@@ -132,11 +132,11 @@ The `animationDuration` property is used to specify how long the animation cycle
 
 ### Text Properties
 
-You can align the default value, using the `labelAlign` property. Permitted values are **top**, **bottom**, **top-start**, **top-end**, **bottom-start** and **bottom-end**.
+You can align the default value, using the `LabelAlign` property. Permitted values are **top**, **bottom**, **top-start**, **top-end**, **bottom-start** and **bottom-end**.
 
-To hide the default label of the progress indicator, use the `hideLabel` attribute.
+To hide the default label of the progress indicator, use the `HideLabel` attribute.
 
-The `labelFormat` property can be used to customize the `LinearProgress` default label.
+The `LabelFormat` property can be used to customize the `LinearProgress` default label.
 
 The following sample demonstrates the above configuration:
 
