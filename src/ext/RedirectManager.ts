@@ -54,6 +54,7 @@ var configurations: any[] = [
         { from: "map_binding_geographic_shape_files.html$", to: "geo-map-binding-shp-file" },
         { from: "map_binding_multiple_shapes_files.html$", to: "geo-map-binding-multiple-shapes" },
         { from: "map_binding_multiple_data_sources.html$", to: "geo-map-binding-multiple-sources" },
+        { from: "map_displaying_azure_imagery.html$", to: "geo-map-display-azure-imagery" },
         { from: "map_displaying_bing_imagery.html$", to: "geo-map-display-bing-imagery" },
         { from: "map_displaying_esri_imagery.html$", to: "geo-map-display-esri-imagery" },
         { from: "map_displaying_heat_imagery.html$", to: "geo-map-display-heat-imagery" },

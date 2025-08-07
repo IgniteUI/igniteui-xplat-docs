@@ -1416,6 +1416,12 @@
       },
       {
         "exclude": ["Blazor"],
+        "name": "Displaying Azure Imagery",
+        "href": "geo-map-display-azure-imagery.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Blazor"],
         "name": "Displaying Bing Imagery",
         "href": "geo-map-display-bing-imagery.md",
         "status": ""
