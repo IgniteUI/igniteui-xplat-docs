@@ -18,6 +18,16 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
+**Breaking Changes**
+
+### {PackageCharts} (Charts)
+
+| Bug Number | Control |
+|------------|---------|
+|33800|IgxDataChart|
+
+The `isSquare` property is no longer optional, specifically within the context of aspect ratio configuration for the data-chart component across all supported series types. It was originally intended for polar and radial gauges; where most other series may result in an unsatisfactory manner. It is recommend to use to measure the chart's `ViewPortRect` and modify the width and height on the datachart accordingly to apply a suitable aspect ratio.
+
 ### Bug Fixes
 
 | Bug Number | Control | Description      |
