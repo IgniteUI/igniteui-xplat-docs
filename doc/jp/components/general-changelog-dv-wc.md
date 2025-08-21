@@ -13,6 +13,70 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+- フォームに関連付けられたカスタム要素は、`:state()` CSS セレクターを使用してスタイル設定するための **ig-invalid** カスタム状態を公開するようになりました。
+  [詳細はこちらをご参照ください](https://developer.mozilla.org/ja/docs/Web/CSS/:state)
+- フォーム関連カスタム要素の有効性の動作: 要素は `:user-invalid` を模倣しようとし、UI またはフォームの `requestSubmit()/reset()` 呼び出しを介して操作されない限り、無効スタイルは適用されません。
+
+### バグ修正
+
+| バグ番号 | コントロール | 説明 |
+|------------|---------|-------------|
+|[1786](https://github.com/IgniteUI/igniteui-webcomponents/pull/1786)|Input|**読み取り専用**モードでの無効状態を修正。|
+|[1786](https://github.com/IgniteUI/igniteui-webcomponents/pull/1786)|Input|**helper-text** のスタイルが適用できない。|
+|[1795](https://github.com/IgniteUI/igniteui-webcomponents/pull/1795)|Card|Indigo テーマでのスロット化された igc-avatar を修正。|
+|[1786](https://github.com/IgniteUI/igniteui-webcomponents/pull/1786)|Combo|無効状態でラベル テキストと境界線が重なる。|
+|[1799](https://github.com/IgniteUI/igniteui-webcomponents/pull/1799)|Date Picker|Indigo のエレベーション スタイルを修正。|
+|[1783](https://github.com/IgniteUI/igniteui-webcomponents/pull/1783)|Date Range Picker|キーボード操作時にメイン入力へフォーカスを戻す。|
+|[1792](https://github.com/IgniteUI/igniteui-webcomponents/pull/1792)|Input|Material テーマでのプレースホルダーとラベルの整列を修正。|
+|[1806](https://github.com/IgniteUI/igniteui-webcomponents/pull/1806)|Navigation Drawer|*relative* 位置スタイルとアニメーションを更新。|
+|[1786](https://github.com/IgniteUI/igniteui-webcomponents/pull/1786)|Select|無効状態のテーマ適用問題。|
+|[1797](https://github.com/IgniteUI/igniteui-webcomponents/pull/1797)|Textarea|Material テーマでのインタラクション問題。|
+|[1797](https://github.com/IgniteUI/igniteui-webcomponents/pull/1797)|Textarea|サフィックス部分でのリサイズの動作を修正。|
+|[1775](https://github.com/IgniteUI/igniteui-webcomponents/pull/1775)|Calendar|垂直モード コンテナーのパディングを修正。|
+|[1731](https://github.com/IgniteUI/igniteui-webcomponents/issues/1731)|Carousel|ポインター操作によるフォーカス時に自動回転を一時停止。|
+|[1772](https://github.com/IgniteUI/igniteui-webcomponents/issues/1772)|Carousel|スライド変更時に `igcSlideChanged` イベントが発生することを保証。|
+|[1765](https://github.com/IgniteUI/igniteui-webcomponents/pull/1765)|Date Picker|スタイル設定の問題。|
+|[1764](https://github.com/IgniteUI/igniteui-webcomponents/pull/1764)|Date Range Picker|CSS の境界線とエレベーションを修正。|
+|[1747](https://github.com/IgniteUI/igniteui-webcomponents/pull/1747)|File Input|Bootstrap の無効な box-shadow スタイルを修正。|
+|[1672](https://github.com/IgniteUI/igniteui-webcomponents/pull/1672)|Stepper|遅延レンダリング シナリオでの linear プロパティ設定エラー。|
+|[1768](https://github.com/IgniteUI/igniteui-webcomponents/pull/1768)|Textarea|Readonly 状態のスタイルを修正。|
+|[1755](https://github.com/IgniteUI/igniteui-webcomponents/pull/1755)|Dropdown|Bootstrap テーマのアイコン サイズを修正。|
+|[1739](https://github.com/IgniteUI/igniteui-webcomponents/pull/1739)|Inputs|Material テーマでのラベル配置とトランジション ロジックを修正。|
+
+
+## **{PackageVerChanges-25-1-JUL-2}**
+
+- 新しいコンポーネント - Date Range Picker (日付範囲ピッカー)
+
+### 重大な変更
+
+#### File Input
+  - `igcChange` および `igcCancel` イベントの詳細では、基になるコンポーネントの `files` プロパティが返されるようになりました。
+
+#### Tooltip
+  - Tooltip イベントは、`detail` プロパティに `anchor` ターゲットを返さなくなりました。
+
+### 動作変更
+
+#### Tooltip
+  - **動作変更**: Tooltip のデフォルトの `placement` は 'bottom' になりました。
+  - **動作変更**: `with-arrow` が設定されていない限り、ツールチップはデフォルトでは矢印インジケーターをレンダリングしません。
+
+### 機能拡張
+- すべてのテーマにわたってフォームに関連付けられたほとんどのコンポーネントの読み取り専用スタイルを更新し、コンポーネントが読み取り専用状態にあることをより適切に示せるようになりました。
+
+### バグ修正
+
+| バグ番号 | コントロール | 説明 |
+|------------|---------|-------------|
+|[1710](https://github.com/IgniteUI/igniteui-webcomponents/issues/1710)|Calendar および Date Picker|特定のシナリオにおける日付ロールオーバーが正しくない。
+|[1728](https://github.com/IgniteUI/igniteui-webcomponents/pull/1728)|Combo|テーマにおける大文字小文字を区別しないアイコン スタイルを修正。
+|[1726](https://github.com/IgniteUI/igniteui-webcomponents/pull/1726)|Input|Fluent テーマの境界線を box-shadow に置き換える。
+|[1732](https://github.com/IgniteUI/igniteui-webcomponents/pull/1732)|Input|Indigo テーマでのフォーカス状態背景色を修正。
+|[1715](https://github.com/IgniteUI/igniteui-webcomponents/pull/1715)|Text Area|ラベルの高さとコンポーネントの高さのオーバーライドを修正。
+
+## **{PackageVerChanges-25-1-JUL}**
+
 ### バグ修正
 
 | バグ番号 | コントロール | 説明      |
