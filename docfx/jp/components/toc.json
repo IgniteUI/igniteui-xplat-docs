@@ -1844,7 +1844,7 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "Blazor"],
     "name": "日付範囲ピッカー",
     "href": "scheduling/date-range-picker.md",
     "status": "NEW"
