@@ -51,21 +51,21 @@ When needing to customize one of the existing templates in the grid, Blazor prov
 
 - via a server-side template, using the related component property (i.e. `BodyTemplate` property) or declaratively with the template name. For example:
 
-```
-    <IgbColumn>
-        <BodyTemplate>
-           Template content here
-        </BodyTemplate>
-    </IgbColumn>
+```razor
+<IgbColumn>
+    <BodyTemplate>
+        Template content here
+    </BodyTemplate>
+</IgbColumn>
 ```
 
 This will render the template after first requesting and resolving it from the server.
 
 - via a client-template using the `Script` equivalent of the property (i.e. `BodyTemplateScript`) to set it to the name of the client-side function handler, for example:
 
-```
-    <IgbColumn BodyTemplateScript="CellTemplate">
-    </IgbColumn>
+```razor
+<IgbColumn BodyTemplateScript="CellTemplate">
+</IgbColumn>
 ```
 
 ```
