@@ -1879,29 +1879,23 @@ Using code snippets from previous section will result in the following example o
 
 Keyboard navigation of the `Grid` provides a rich variety of keyboard interactions for the user. It enhances accessibility and allows intuitive navigation through any type of elements inside (cell, row, column header, toolbar, footer, etc.).
 
-<!-- Angular -->
+
 
 Check out these resources for more information:
 
  - [Grid Keyboard Navigation](grid/keyboard-navigation.md)
  - [TreeGrid Keyboard Navigation](tree-grid/keyboard-navigation.md)
  - [Hierarchical Grid Keyboard Navigation](hierarchical-grid/keyboard-navigation.md)
- - [Blog post](https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility) - Improving Usability, Accessibility and ARIA Compliance with Grid keyboard navigation
 
- <!-- end: Angular -->
-
-<!-- Angular -->
 
 ## State Persistence
 
-Achieving a state persistence framework is easier than ever by using the new built-in [GridState](state-persistence.md) directive.
+Achieving a state persistence framework is easier than ever by using the new built-in [GridState](grid/state-persistence.md) directive.
 
-<!-- end: Angular -->
 
-<!-- The sizing topic is still not available thus the Sizing section is commented out. -->
-<!-- ## Sizing
+## Sizing
 
-See the [Grid Sizing](sizing.md) topic. -->
+See the [Grid Sizing](grid/sizing.md) topic.
 
 
 <!-- Angular -->
