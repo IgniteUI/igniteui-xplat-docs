@@ -224,6 +224,13 @@ By default, the `Tooltip` is triggered only while hovering over the target eleme
 
 `sample="/inputs/tooltip/triggers", height="600", alt="{Platform} Tooltip Triggers Example"`
 
+### Advanced Example
+
+The `Tooltip` integrates seamlessly with other components, allowing you to create advanced tooltips that contain components within them.
+In the following example, you can see how we create descriptive tooltips by using the `List`, `Avatar`, `Icon`, `Badge`, `Button`, `Card` and `CategoryChart` components.
+
+`sample="/inputs/tooltip/advanced", height="640", alt="{Platform} Tooltip Advanced Example"`
+
 ### Additional Properties
 
 Apart from the properties we've already covered, the `Tooltip` component offers a variety of additional properties that allow you to further configure its behavior, position, and appearance.
@@ -242,7 +249,7 @@ In addition to its configurable properties, the `Tooltip` also exposes three met
 |--|--|
 | `Show` | Displays the tooltip if it’s not already shown. If a target is provided, it sets the target as a transient `Anchor`. |
 | `Hide` | Hides the tooltip if it’s not already hidden. |
-| `Toggle` | 	Toggles the tooltip between the shown and hidden states. |
+| `Toggle` |  Toggles the tooltip between the shown and hidden states. |
 
 ## Accessibility & ARIA Support
 
@@ -260,7 +267,7 @@ The `Tooltip` component exposes two CSS parts that you can use for styling:
 |Name|Description|
 |--|--|
 | `base` | The base wrapper of the tooltip component. |
-| `bottom` | The area containing the tooltip arrow. |
+| `top, right, bottom, left ...` | The area containing the tooltip arrow. The part name matches the value of the tooltip placement property. |
 
 ```css
 igc-tooltip::part(base) {
@@ -286,6 +293,9 @@ igc-tooltip::part(bottom) {
 - `Icon`
 - `Card`
 - `Input`
+- `Badge`
+- `List`
+- `CategoryChart`
  - [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
