@@ -44,6 +44,46 @@ _language: ja
 
 <!-- end: Angular -->
 
+<!-- Blazor -->
+
+## テンプレート化
+
+グリッド内の既存テンプレートをカスタマイズする場合、Blazor では次の 2 つの方法でテンプレートを定義できます。
+
+- サーバー側テンプレート: 関連するコンポーネント プロパティ (例: `BodyTemplate` プロパティ) を使用、またはテンプレート名を宣言的に指定。例:
+
+```razor
+<IgbColumn>
+    <BodyTemplate>
+        Template content here
+    </BodyTemplate>
+</IgbColumn>
+```
+
+最初にサーバーからテンプレートを取得・解決した後にレンダリングされます。
+
+- クライアント テンプレート: プロパティの `Script` 版 (例: `BodyTemplateScript`) を使用して、クライアント側関数ハンドラ名ーを設定。
+
+```razor
+<IgbColumn BodyTemplateScript="CellTemplate">
+</IgbColumn>
+```
+
+```
+igRegisterScript("CellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`Template content here`;
+}, false);
+
+```
+
+クライアント テンプレート: プロパティの `Script` 版 (例: `BodyTemplateScript`) を使用して、クライアント側関数ハンドラ名ーを設定。
+
+> [!Note]
+> 両方の方法が有効ですが、サーバー側テンプレートはカスタム テンプレートの取得・解決のためにサーバーとの往復通信が必要となり、クライアント レンダリングまでに遅延が発生する場合があります。そのため、多数のテンプレートを頻繁に更新するシナリオでは、より最適化された クライアント テンプレートの使用が推奨されます。
+
+<!-- end: Blazor -->
+
 ## 仮想化の制限
 
 *   Mac OS で 「Show scrollbars only when scrolling」システム オプションを true (デフォルト値) に設定した場合、水平スクロールバーが表示されません。これは、`{ComponentName}` の行コンテナーで、overflow が hidden に設定されているためです。オプションを「Always」に変更するとスクロールが表示されます。
