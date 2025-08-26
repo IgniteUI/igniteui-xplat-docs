@@ -225,6 +225,13 @@ tooltip.anchor = anchor;
 
 `sample="/inputs/tooltip/triggers", height="600", alt="{Platform} Tooltip トリガーの例"`
 
+### 高度な例
+
+`Tooltip` は他のコンポーネントとシームレスに統合され、内部にコンポーネントを含む高度なツールチップを作成できます。
+次の例では、`List`、`Avatar`、`Icon`、`Badge`、`Button`、`Card`、および `CategoryChart` コンポーネントを使用して説明的なツールチップを作成する方法を示しています。
+
+`sample="/inputs/tooltip/advanced", height="640", alt="{Platform} Tooltip 高度な例"`
+
 ### 追加のプロパティ
 
 これまでに説明したプロパティの他に、`Tooltip` コンポーネントには、動作、位置、外観をさらに構成できるさまざまな追加プロパティが用意されています。
@@ -261,7 +268,7 @@ tooltip.anchor = anchor;
 |名前|説明|
 |--|--|
 | `base` | ツールチップ コンポーネントの基本ラッパー。 |
-| `bottom` | ツールチップ矢印を含む領域。 |
+| `top, right, bottom, left ...` | ツールチップ矢印を含む領域。パーツ名はツールチップ配置プロパティの値と一致します。 |
 
 ```css
 igc-tooltip::part(base) {
@@ -287,6 +294,9 @@ igc-tooltip::part(bottom) {
 - `Icon`
 - `Card`
 - `Input`
+- `Badge`
+- `List`
+- `CategoryChart`
  - [スタイル設定およびテーマ](../themes/overview.md)
 
 ## その他のリソース
