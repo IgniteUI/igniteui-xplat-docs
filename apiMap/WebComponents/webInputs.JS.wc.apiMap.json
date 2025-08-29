@@ -238,7 +238,7 @@
     "names":[{"platform": "WebComponents","fileName": "igc-tooltip-component.ts","mappedName": "IgcTooltipComponent"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "anchor"}], "originalName": "Anchor"},
-      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "disableArrow"}], "originalName": "DisableArrow"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "withArrow"}], "originalName": "WithArrow"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "hide"}], "originalName": "Hide"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "hideDelay"}], "originalName": "HideDelay"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "hideTriggers"}], "originalName": "HideTriggers"},

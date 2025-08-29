@@ -196,7 +196,7 @@ If you want to control the delay before showing and hiding the `Tooltip`, you ca
 
 The `Tooltip` can also be positioned relative to its target element with ease. All you need to do is use the `Placement` property along with one of the following position options: `top`, `top-start`, `top-end`, `bottom`, `bottom-start`, `bottom-end `, `right`, `right-start`, `right-end`, `left`, `left-start`, `left-end`.
 
-If the `Placement` property is not set, the default value is `"top"`, which places the `Tooltip` above the target element.
+If the `Placement` property is not set, the default value is `bottom`, which places the `Tooltip` below the target element.
 
 Additionally, you can make the `Tooltip` "sticky" using the `Sticky` property, which adds a close button and keeps the `Tooltip` visible until the user closes it manually - either by clicking the close button or pressing the `Esc` key. This behavior overrides the default hover behavior, preventing the `Tooltip` from disappearing when the user stops hovering over the target element.
 
@@ -238,7 +238,7 @@ Apart from the properties we've already covered, the `Tooltip` component offers 
 |Name|Type|Description|
 |--|--|--|
 | `Open` | boolean | Determines whether the tooltip is visible. |
-| `DisableArrow` | boolean | If set to `true`, disables the arrow indicator on the tooltip. |
+| `WithArrow` | boolean | If set to `true`, enables the arrow indicator on the tooltip. |
 | `Offset` | number | Sets the pixel distance between the tooltip and its `Anchor`. |
 
 ### Methods

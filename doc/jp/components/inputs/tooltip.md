@@ -239,7 +239,7 @@ tooltip.anchor = anchor;
 |名前|タイプ|説明|
 |--|--|--|
 | `Open` | boolean | ツールチップの表示/非表示を決定します。 |
-| `DisableArrow` | boolean | **true** に設定すると、ツールチップの矢印インジケーターが無効になります。 |
+| `WithArrow` | boolean | **true** に設定すると、ツールチップの矢印インジケーターが無効になります。 |
 | `Offset` | number | ツールチップとその `Anchor` 間のピクセル距離を設定します。 |
 
 ### メソッド
