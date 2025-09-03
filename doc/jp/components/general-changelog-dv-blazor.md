@@ -30,7 +30,8 @@ _language: ja
 ### 一般
 以下のコンポーネントのプロパティが null 許容になりました。
 - `Button`: `Form`
-- `Calendar`: `SpecialDates`、`DisabledDates` - `Combo`: `ValueKey`、`DisplayKey`、`GroupKey`
+- `Calendar`: `SpecialDates`、`DisabledDates`
+- `Combo`: `ValueKey`、`DisplayKey`、`GroupKey`
 - `DatePicker`: `Value`、`Min`、`Max`
 - `DateTimePicker`: `Value`、`Min`、`Max`
 - `Dropdown`: `SelectedItem`

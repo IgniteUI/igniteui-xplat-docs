@@ -197,7 +197,7 @@ tooltip.anchor = anchor;
 
 `Tooltip` は、ターゲット要素を基準にして簡単に配置することもできます。必要なのは、`Placement` プロパティを、`top`、`top-start`、`top-end`、`bottom`、`bottom-start`、`bottom-end `、`right`、`right-start`、`right-end`、`left`、`left-start`、`left-end` のいずれかの位置オプションとともに使用するだけです。
 
-`Placement` プロパティが設定されていない場合、デフォルト値は `"top"` となり、`Tooltip` はターゲット要素の上に配置されます。
+`Placement` プロパティが設定されていない場合、デフォルト値は `bottom` となり、`Tooltip` はターゲット要素の下に配置されます。
 
 さらに、`Sticky` プロパティを使用して `Tooltip` を固定することができます。これにより、閉じるボタンが追加され、ユーザーが閉じるボタンをクリックするか、`Esc` キーを押して手動で閉じるまで、`Tooltip` が表示されたままになります。この動作はデフォルトのホバー動作をオーバーライドし、ユーザーがターゲット要素上でホバーを停止したときに `Tooltip` が消えないようにします。
 
@@ -239,7 +239,7 @@ tooltip.anchor = anchor;
 |名前|タイプ|説明|
 |--|--|--|
 | `Open` | boolean | ツールチップの表示/非表示を決定します。 |
-| `WithArrow` | boolean | **true** に設定すると、ツールチップの矢印インジケーターが無効になります。 |
+| `WithArrow` | boolean | **true** に設定すると、ツールチップの矢印インジケーターが有効になります。 |
 | `Offset` | number | ツールチップとその `Anchor` 間のピクセル距離を設定します。 |
 
 ### メソッド
