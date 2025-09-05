@@ -1,5 +1,5 @@
 ---
-title: {Platform} Data Grid Component (Data Table) - Infragistics
+title: {Platform} Data Grid Component - Infragistics
 _description: Create super-fast, responsive {Platform} Data Grids and tables with {ProductName}. Supports editing, filtering, data binding and many more. Try it now!
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid
 mentionedTypes: ["Infragistics.Controls.Grid", "Infragistics.Controls.ColumnPipeArgs"]
@@ -38,9 +38,9 @@ namespace: Infragistics.Controls
 <div class="sample-content">
     <article class="sample-column">
         <div class="tabbar-wrapper">
-            <p>The {Platform} {ProductName} component is used for displaying large volumes of data. Modern and more complex grids ensure smooth UX and bring an array of features for manipu   lating tabular data. There is an intuitive API, theming, branding, filtering, sorting, data selection, Excel-style filtering, and many more.</p>
+            <p>The {Platform} {ComponentTitle} component is used for displaying large volumes of data. Modern and more complex grids ensure smooth UX and bring an array of features for manipu   lating tabular data. There is an intuitive API, theming, branding, filtering, sorting, data selection, Excel-style filtering, and many more.</p>
             <p>The {ProductName} Data Table / Data Grid is a tabular {Platform} grid component that allows you to quickly bind and display your data with little coding or configuration. Features of the {Platform} data grid in our toolbox include filtering, sorting, templates, row selection, row grouping, row pinning, movable columns, virtualization, Master-Detail, and much more.</p>
-            <p>The {Platform} tables are optimized for speed and performance, with the ability to handle millions of rows and columns, and real-time updates in an instant, making Ignite UI for React Data Grid the best {Platform} {ProductName} on the market.  </p>
+            <p>The {Platform} tables are optimized for speed and performance, with the ability to handle millions of rows and columns, and real-time updates in an instant, making {ProductName} {ComponentTitle} the best {Platform} {ComponentTitle} on the market.  </p>
         </div>
     </article>
     <article class="sample-column">
@@ -940,9 +940,9 @@ const POJO = [{
 <!-- Angular, WebComponents, React -->
 ## Grid Data Binding
 
-Our {Platform} {ProductName} provides unmatched data binding options and is optimized for real-time updates and smooth scrolling. With low-latency rendering, the grid ensures any UI change is displayed in an instant, including live streaming data, large datasets, and more.  
+Our {Platform} {ComponentTitle} provides unmatched data binding options and is optimized for real-time updates and smooth scrolling. With low-latency rendering, the grid ensures any UI change is displayed in an instant, including live streaming data, large datasets, and more.  
 
-Before going any further with the {Platform} grid we want to change the grid to bind to remote data service, which is the common scenario in large-scale applications.
+Before going any further with the {Platform} {ComponentTitle} we want to change the grid to bind to remote data service, which is the common scenario in large-scale applications.
 
 <!-- WebComponents -->
 You can do this by fetching the data from a given url receiving a JSON response and assigning it to the grid's `data` property that is used as the grid's data source:
@@ -1113,7 +1113,7 @@ and in the template of the component:
 <!-- end: Angular, WebComponents, React -->
 ## Complex Data Binding
 
-Complex Data Binding allows for seamless interaction with multi-level data, complex, real-world datasets, object-oriented data modules, etc. Using our {Platform} {Product Name} library and the {Platform} `Grid`, you can easily bind to complex objects (including data structures that nest deeper than one level). This happens through a path of properties in the data record. 
+Complex Data Binding allows for seamless interaction with multi-level data, complex, real-world datasets, object-oriented data modules, etc. Using our {Platform} {ComponentTitle}, you can easily bind to complex objects (including data structures that nest deeper than one level). This happens through a path of properties in the data record. 
 
 Take a look at the following data model: 
 
