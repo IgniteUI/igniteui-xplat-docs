@@ -11,11 +11,12 @@ The {Platform} `AzureMapsMapImagery` is geographic imagery mapping service provi
 ## {Platform} Displaying Imagery from Azure Maps Example
 
 
-<!-- `sample="/maps/geo-map/display-azure-imagery", height="500", alt="{Platform} Displaying Imagery from Azure Maps Example"` -->
 <img src="../images/general/AzureMapsImagery.png" />
 
 
 <div class="divider--half"></div>
+
+`sample="/maps/geo-map/display-azure-imagery", height="500", alt="{Platform} Displaying Imagery from Azure Maps Example"`
 
 ## Code Snippet
 The following code snippet shows how to display geographic imagery tiles from Azure Maps in {Platform} `XamGeographicMap` using `AzureMapsMapImagery` class.
@@ -38,16 +39,6 @@ tileSource.imageryStyle = AzureMapsImageryStyle.LabelsRoad; // or
 tileSource.imageryStyle = AzureMapsImageryStyle.Aerial; // or
 tileSource.imageryStyle = AzureMapsImageryStyle.Road;
 
-// resolving AzureMaps uri based on HTTP protocol of hosting website
-let tileUri = tileSource.actualAzureImageryRestUri;
-const isHttpSecured = window.location.toString().startsWith("https:");
-if (isHttpSecured) {
-    tileUri = tileUri.replace("http:", "https:");
-} else {
-    tileUri = tileUri.replace("https:", "http:");
-}
-tileSource.azureImageryRestUri = tileUri;
-
 this.map.backgroundContent = tileSource;
 ```
 
@@ -62,18 +53,18 @@ tileSource.imageryStyle = AzureMapsImageryStyle.Imagery; // or
 tileSource.imageryStyle = AzureMapsImageryStyle.Terra; // or
 tileSource.imageryStyle = AzureMapsImageryStyle.Road;
 
-// resolving AzureMaps uri based on HTTP protocol of hosting website
-let tileUri = tileSource.actualAzureImageryRestUri;
-const isHttpSecured = window.location.toString().startsWith("https:");
-if (isHttpSecured) {
-    tileUri = tileUri.replace("http:", "https:");
-} else {
-    tileUri = tileUri.replace("https:", "http:");
-}
-tileSource.azureImageryRestUri = tileUri;
-
 const geoMap = new IgrGeographicMap({ name: "geoMap" });
 geoMap.backgroundContent = tileSource;
+```
+
+```ts
+const tileSource = new IgcAzureMapsMapImagery();
+tileSource.apiKey = "YOUR_Azure_MAPS_API_KEY";
+tileSource.imageryStyle = AzureMapsImageryStyle.Imagery; // or
+tileSource.imageryStyle = AzureMapsImageryStyle.Terra; // or
+tileSource.imageryStyle = AzureMapsImageryStyle.Road;
+
+map.backgroundContent = tileSource;
 ```
 
 ## Properties
