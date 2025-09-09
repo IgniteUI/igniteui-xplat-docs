@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in WebComponents documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "WebComponents",
-  "samplesCount": 781,
+  "samplesCount": 784,
   "samplesHost": "https://staging.infragistics.com/webcomponents-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -2244,9 +2244,6 @@
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/maps/geo-map/binding-shp-polylines": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/geo-map-binding-shp-file"
     ],
-    "https://staging.infragistics.com/webcomponents-demos/samples/samples/maps/geo-map/display-bing-imagery": [
-      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/geo-map-display-bing-imagery"
-    ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/maps/geo-map/display-esri-imagery": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/geo-map-display-esri-imagery"
     ],
@@ -2410,9 +2407,21 @@
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/scheduling/date-range-picker/styling": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/scheduling/date-range-picker"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/data-exporting-indicator": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/_shared/toolbar"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/toolbar-sample-3": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/_shared/toolbar"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/toolbar-sample-4": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/_shared/toolbar"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/toolbar-style": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/_shared/toolbar"
     ]
   },
-  "topicsCount": 321,
+  "topicsCount": 322,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -2788,9 +2797,6 @@
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/geo-map-binding-shp-file": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/maps/geo-map/binding-shp-polylines"
     ],
-    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/geo-map-display-bing-imagery": [
-      "https://staging.infragistics.com/webcomponents-demos/samples/samples/maps/geo-map/display-bing-imagery"
-    ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/geo-map-display-esri-imagery": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/maps/geo-map/display-esri-imagery"
     ],
@@ -2826,6 +2832,12 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/geo-map-type-shape-polyline-series": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/maps/geo-map/type-shape-polyline-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/_shared/toolbar": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/data-exporting-indicator",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/toolbar-sample-3",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/toolbar-sample-4",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/toolbar-style"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/data-grid": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/binding-composite-data",

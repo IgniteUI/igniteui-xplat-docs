@@ -197,7 +197,7 @@ tooltip.anchor = anchor;
 
 `Tooltip` は、ターゲット要素を基準にして簡単に配置することもできます。必要なのは、`Placement` プロパティを、`top`、`top-start`、`top-end`、`bottom`、`bottom-start`、`bottom-end `、`right`、`right-start`、`right-end`、`left`、`left-start`、`left-end` のいずれかの位置オプションとともに使用するだけです。
 
-`Placement` プロパティが設定されていない場合、デフォルト値は `"top"` となり、`Tooltip` はターゲット要素の上に配置されます。
+`Placement` プロパティが設定されていない場合、デフォルト値は `bottom` となり、`Tooltip` はターゲット要素の下に配置されます。
 
 さらに、`Sticky` プロパティを使用して `Tooltip` を固定することができます。これにより、閉じるボタンが追加され、ユーザーが閉じるボタンをクリックするか、`Esc` キーを押して手動で閉じるまで、`Tooltip` が表示されたままになります。この動作はデフォルトのホバー動作をオーバーライドし、ユーザーがターゲット要素上でホバーを停止したときに `Tooltip` が消えないようにします。
 
@@ -225,6 +225,13 @@ tooltip.anchor = anchor;
 
 `sample="/inputs/tooltip/triggers", height="600", alt="{Platform} Tooltip トリガーの例"`
 
+### 高度な例
+
+`Tooltip` は他のコンポーネントとシームレスに統合され、内部にコンポーネントを含む高度なツールチップを作成できます。
+次の例では、`List`、`Avatar`、`Icon`、`Badge`、`Button`、`Card`、および `CategoryChart` コンポーネントを使用して説明的なツールチップを作成する方法を示しています。
+
+`sample="/inputs/tooltip/advanced", height="640", alt="{Platform} Tooltip 高度な例"`
+
 ### 追加のプロパティ
 
 これまでに説明したプロパティの他に、`Tooltip` コンポーネントには、動作、位置、外観をさらに構成できるさまざまな追加プロパティが用意されています。
@@ -232,7 +239,7 @@ tooltip.anchor = anchor;
 |名前|タイプ|説明|
 |--|--|--|
 | `Open` | boolean | ツールチップの表示/非表示を決定します。 |
-| `DisableArrow` | boolean | **true** に設定すると、ツールチップの矢印インジケーターが無効になります。 |
+| `WithArrow` | boolean | **true** に設定すると、ツールチップの矢印インジケーターが有効になります。 |
 | `Offset` | number | ツールチップとその `Anchor` 間のピクセル距離を設定します。 |
 
 ### メソッド
@@ -261,7 +268,7 @@ tooltip.anchor = anchor;
 |名前|説明|
 |--|--|
 | `base` | ツールチップ コンポーネントの基本ラッパー。 |
-| `bottom` | ツールチップ矢印を含む領域。 |
+| `top, right, bottom, left ...` | ツールチップ矢印を含む領域。パーツ名はツールチップ配置プロパティの値と一致します。 |
 
 ```css
 igc-tooltip::part(base) {
@@ -287,6 +294,9 @@ igc-tooltip::part(bottom) {
 - `Icon`
 - `Card`
 - `Input`
+- `Badge`
+- `List`
+- `CategoryChart`
  - [スタイル設定およびテーマ](../themes/overview.md)
 
 ## その他のリソース

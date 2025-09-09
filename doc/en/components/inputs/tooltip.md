@@ -196,7 +196,7 @@ If you want to control the delay before showing and hiding the `Tooltip`, you ca
 
 The `Tooltip` can also be positioned relative to its target element with ease. All you need to do is use the `Placement` property along with one of the following position options: `top`, `top-start`, `top-end`, `bottom`, `bottom-start`, `bottom-end `, `right`, `right-start`, `right-end`, `left`, `left-start`, `left-end`.
 
-If the `Placement` property is not set, the default value is `"top"`, which places the `Tooltip` above the target element.
+If the `Placement` property is not set, the default value is `bottom`, which places the `Tooltip` below the target element.
 
 Additionally, you can make the `Tooltip` "sticky" using the `Sticky` property, which adds a close button and keeps the `Tooltip` visible until the user closes it manually - either by clicking the close button or pressing the `Esc` key. This behavior overrides the default hover behavior, preventing the `Tooltip` from disappearing when the user stops hovering over the target element.
 
@@ -224,6 +224,13 @@ By default, the `Tooltip` is triggered only while hovering over the target eleme
 
 `sample="/inputs/tooltip/triggers", height="600", alt="{Platform} Tooltip Triggers Example"`
 
+### Advanced Example
+
+The `Tooltip` integrates seamlessly with other components, allowing you to create advanced tooltips that contain components within them.
+In the following example, you can see how we create descriptive tooltips by using the `List`, `Avatar`, `Icon`, `Badge`, `Button`, `Card` and `CategoryChart` components.
+
+`sample="/inputs/tooltip/advanced", height="640", alt="{Platform} Tooltip Advanced Example"`
+
 ### Additional Properties
 
 Apart from the properties we've already covered, the `Tooltip` component offers a variety of additional properties that allow you to further configure its behavior, position, and appearance.
@@ -231,7 +238,7 @@ Apart from the properties we've already covered, the `Tooltip` component offers 
 |Name|Type|Description|
 |--|--|--|
 | `Open` | boolean | Determines whether the tooltip is visible. |
-| `DisableArrow` | boolean | If set to `true`, disables the arrow indicator on the tooltip. |
+| `WithArrow` | boolean | If set to `true`, enables the arrow indicator on the tooltip. |
 | `Offset` | number | Sets the pixel distance between the tooltip and its `Anchor`. |
 
 ### Methods
@@ -242,7 +249,7 @@ In addition to its configurable properties, the `Tooltip` also exposes three met
 |--|--|
 | `Show` | Displays the tooltip if it’s not already shown. If a target is provided, it sets the target as a transient `Anchor`. |
 | `Hide` | Hides the tooltip if it’s not already hidden. |
-| `Toggle` | 	Toggles the tooltip between the shown and hidden states. |
+| `Toggle` |  Toggles the tooltip between the shown and hidden states. |
 
 ## Accessibility & ARIA Support
 
@@ -260,7 +267,7 @@ The `Tooltip` component exposes two CSS parts that you can use for styling:
 |Name|Description|
 |--|--|
 | `base` | The base wrapper of the tooltip component. |
-| `bottom` | The area containing the tooltip arrow. |
+| `top, right, bottom, left ...` | The area containing the tooltip arrow. The part name matches the value of the tooltip placement property. |
 
 ```css
 igc-tooltip::part(base) {
@@ -286,6 +293,9 @@ igc-tooltip::part(bottom) {
 - `Icon`
 - `Card`
 - `Input`
+- `Badge`
+- `List`
+- `CategoryChart`
  - [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources

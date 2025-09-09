@@ -22,6 +22,33 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
+|26952|IgbTabs|e.Detail is null in Change event in Razor/JS|
+|26953|IgbTabs|Marking a tab selected won't apply on subsequent attempts|
+|37832|IgbDataLegend|After grouping and summing data in dashboard tooltip appears to show badge in total section|
+|31910|IgbXDatePicker|An error will happen when I bind a value using the "@bind-Value" syntax and click the clear button|
+|31323|IgbDataChart, IgbGrid, IgbCombo|A NullReferenceException happens when the data type has a collection-type property, and the 1st element of that collection is null|
+|38903|IgbTabs|Dropdown list is not displaying in the correct location for components inside the tab|
+|[139](https://github.com/IgniteUI/igniteui-blazor/issues/139)|IgbDatePicker, IgbDateTimeInput|Date picker and data time input do not support nullable values|
+
+### General
+The following properties of these components are now nullable:
+- `Button`: `Form`
+- `Calendar`: `SpecialDates`, `DisabledDates`
+- `Combo`: `ValueKey`, `DisplayKey`, `GroupKey`
+- `DatePicker`: `Value`, `Min`, `Max`
+- `DateTimePicker`: `Value`, `Min`, `Max`
+- `Dropdown`: `SelectedItem`
+- `Input`: `Pattern`, `MinLength`, `MaxLength`, `Min`, `Max`, `Step`
+- `Select`: `Value`, `SelectedItem`
+- `Tile`: `ColStart`, `RowStart`
+- `TileManager`: `MinColumnWidth`, `MinRowHeight`, `Gap`
+
+## **{PackageVerChanges-25-1-JULY}**
+
+### Bug Fixes
+
+| Bug Number | Control | Description      |
+|------------|---------|------------------|
 |36448|IgbRadialGauge|Radial label format properties do not work. (eg. Title, SubTitles)|
 |37718|IgbTab|Unexpected scrolling occurred when a new row was added to a grid that is in a tab panel|
 |37855|IgbGrid|Crypto.randomUID not found error is thrown if a grid contains HeaderTemplate and the page is accessed using unsecured(http) protocol|
