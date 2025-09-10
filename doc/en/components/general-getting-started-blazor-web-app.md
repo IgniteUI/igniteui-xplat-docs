@@ -76,7 +76,7 @@ await builder.Build().RunAsync();
 </head>
 ```
 
-4 - Add Script Reference to the **wwwroot/index.html** file:
+4 - Add Script Reference to the **Components/App.razor** file:
 
 ```razor
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
