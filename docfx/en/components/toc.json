@@ -1782,6 +1782,12 @@
     "header": true
   },
   {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "Chat",
+    "href": "interactivity/chat.md",
+    "status": "new"
+  },
+  {
     "exclude": ["Angular"],
     "name": "Ripple",
     "href": "inputs/ripple.md"
