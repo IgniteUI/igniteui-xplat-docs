@@ -112,9 +112,9 @@ export type ChatTemplateRenderer<T> = (ctx: T) => unknown;
 
 The ctx parameter provides different contextual data depending on what is being rendered.
 #### Renderer Contexts
-| Context Type                | Provided Data                                                                                                             |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| `ChatRendererContext`       | `defaults` (default renderer functions, which can be called to preserve built-in behavior), `instance` (the chat component instance). |
+| Context Type                | Provided Data                                                                                                          |
+| --------------------------- | -----------------------------------------------------------------------------------------------------------------------|
+| `ChatRendererContext`       | `instance` (the chat component instance).                                                                              |
 | `InputRendererContext`      | Inherits `ChatRendererContext` and adds `attachments` (array of `MessageAttachment`) and `value` (current input text). |
 | `MessageRendererContext`    | Inherits `ChatRendererContext` and adds `message` (the `Message` being rendered).                                      |
 | `AttachmentRendererContext` | Inherits `MessageRendererContext` and adds `attachment` (the `MessageAttachment` being rendered).                      |
@@ -142,20 +142,6 @@ chat.renderers = {
 };
 ```
 
-#### Example: Wrapping Defaults
-Instead of replacing a renderer entirely, you can also wrap the default one. This is useful if you want to add small enhancements:
-```ts
-chat.renderers = {
-  message: (ctx) => html`
-    <div class="message-wrapper">
-      ${ctx.defaults.message?.(ctx)}
-      <span class="read-status">✓✓</span>
-    </div>
-  `
-};
-```
-Here, we reuse the built-in message renderer and simply append a read receipt indicator.
-
 #### Example: Custom Input Area
 By default, the chat input is a text area. You can override it to provide a more tailored experience, such as adding a voice input button:
 ```ts
@@ -176,14 +162,13 @@ chat.renderers = {
     if (attachment.type?.startsWith('image/')) {
       return html`<img src=${attachment.url} alt="preview" />`;
     }
-    return ctx.defaults.attachmentContent?.(ctx);
   }
 };
 ```
 `sample="/interactions/chat/templating", height="200", alt="Web Components Chat Templating"`
 
 ### Markdown Rendering
-The Chat component includes built-in support for Markdown content through the createMarkdownRenderer helper, available in the igniteui-webcomponents/extras package. This allows you to display messages with formatted text, links, lists, and even syntax-highlighted code blocks, while ensuring that all rendered HTML is sanitized for security.
+The Chat component includes built-in support for Markdown content through the `createMarkdownRenderer` helper, which is exported from the `igniteui-webcomponents/extras` entry point of the main package. This allows you to display messages with formatted text, links, lists, and even syntax-highlighted code blocks, while ensuring that all rendered HTML is sanitized for security.
 
 > [!Note]
 > To use the Markdown renderer, you need to install the following peer dependencies in your project:
@@ -194,7 +179,7 @@ By default, messages are rendered as plain text. If you want to enable Markdown 
 ```ts
 import { createMarkdownRenderer } from 'igniteui-webcomponents/extras';
 
-const chat = document.getElementById('myChat');
+const chat = document.getElementById('myChat') as IgcChatComponent;
 
 // Create a reusable Markdown renderer instance
 const markdownRenderer = await createMarkdownRenderer();
@@ -213,8 +198,8 @@ In this example:
 The Markdown renderer also supports syntax highlighting for code blocks using [Shiki](https://shiki.matsu.io/). By default, it includes highlighting for JavaScript, TypeScript, HTML, and CSS with the github-light theme. You can customize this behavior through MarkdownRendererOptions:
 ```ts
 const markdownRenderer = await createMarkdownRenderer({
-  theme: 'github-dark',
-  languages: ['javascript', 'python', 'go']
+  theme: { light: 'min-light' },
+  languages: ['javascript', 'python']
 });
 ```
 This will enable highlighted code blocks for JavaScript, Python, and Go, styled with the GitHub dark theme.
@@ -223,7 +208,7 @@ This will enable highlighted code blocks for JavaScript, Python, and Go, styled 
 | --------------- | ------------------------------------------------------------------------------- |
 | `noHighlighter` | If `true`, disables syntax highlighting entirely.                               |
 | `languages`     | List of programming languages to support in highlighted code blocks.            |
-| `theme`         | Name of the Shiki theme to apply (e.g., `'github-light'`, `'github-dark'`).     |
+| `theme`         | An object specifying Shiki themes to apply. Supports separate values for `light` and `dark` mode (e.g., `{ light: 'github-light', dark: 'github-dark' }`). |
 | `sanitizer`     | A custom function to sanitize the final HTML. Defaults to `DOMPurify.sanitize`. |
 
 ### Events
