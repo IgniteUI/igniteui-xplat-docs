@@ -168,21 +168,6 @@ const options = {
   }
 };
 ```
-
-#### Example: Attachment Preview
-This example shows how to render image attachments differently while falling back to the default renderer for other file types:
-```ts
-const options = {
-  renderers: {
-    attachmentContent: (ctx) => {
-      const { attachment } = ctx;
-      if (attachment.type?.startsWith('image/')) {
-        return html`<img src=${attachment.url} alt="preview" />`;
-      }
-    }
-  }
-};
-```
 `sample="/interactions/chat/templating", height="200", alt="Web Components Chat Templating"`
 
 ### Markdown Rendering
@@ -231,8 +216,8 @@ This will enable highlighted code blocks for JavaScript, Python, and Go, styled 
 
 ### Events
 To integrate with your application logic, the Chat component emits a set of events:
-- IgcChatMessageCreated – when a new message is created.
-- IgcChatMessageReact – when a message is reacted to.
+- igcMessageCreated – when a new message is created.
+- igcMessageReact – when a message is reacted to.
 - igcAttachmentClick – when an attachment is clicked.
 - igcAttachmentChange – when an attachment changes.
 - igcAttachmentDrag – while dragging an attachment.
@@ -243,7 +228,7 @@ To integrate with your application logic, the Chat component emits a set of even
 
 You can listen for these events and sync them with your backend:
 ```ts
-chat.addEventListener('IgcChatMessageCreated', (e) => {
+chat.addEventListener('IgcMessageCreated', (e) => {
   console.log('Message:', e.detail);
 });
 ```
@@ -306,11 +291,6 @@ igc-chat::part(header) {
 igc-chat::part(message-item) {
   border-radius: 12px;
   padding: 0.5rem;
-}
-
-igc-chat::part(suggestion) {
-  cursor: pointer;
-  color: var(--ig-secondary-700);
 }
 
 igc-chat::part(empty-state) {
