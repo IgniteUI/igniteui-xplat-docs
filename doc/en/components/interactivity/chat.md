@@ -34,8 +34,14 @@ The CSS file includes one of our default themes. You can replace it with a diffe
 
 ## Usage
 The simplest way to use the `Chat` is to declare it in your HTML:
+```ts
+const options: IgcChatOptions = {
+  currentUserId: 'me',
+  headerText: 'Support Chat',
+};
+```
 ```html
-<igc-chat id="myChat" current-user-id="me" header-text="Support Chat">
+<igc-chat id="myChat" .options=${options}>
 </igc-chat>
 ```
 
@@ -58,7 +64,7 @@ The `Chat` component exposes several key properties that let you control its sta
 
 | Name              | Description                                                                                                                                                          |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `messages`        | Array of messages (`IgcMessage[]`) displayed in the chat. You can bind to this to control which messages are shown.                                                  |
+| `messages`        | Array of messages (`IgcChatMessage[]`) displayed in the chat. You can bind to this to control which messages are shown.                                                  |
 | `draftMessage`    | The current unsent message, represented as an object containing `text` and optional `attachments`. This is useful for saving or restoring message drafts.            |
 | `options`         | Chat configuration (`IgcChatOptions`) such as current user ID, input placeholders, accepted file types, quick reply suggestions, typing delay, and custom renderers. |
 | `resourceStrings` | Localized resource strings for labels, headers, and system text. Use this property to adapt the component for different languages.                                   |
@@ -67,36 +73,44 @@ These properties make it straightforward to synchronize the Chat’s UI with you
 
 ### Attachments
 Modern conversations are rarely limited to text alone. The Chat component includes built-in support for file attachments, allowing users to share images, documents, and other files.
-By default, the input area includes an attachment button. You can control which file types are allowed by setting the `accepted-files` attribute:
+By default, the input area includes an attachment button. You can control which file types are allowed by setting the `acceptedFiles` property:
 
-```html
-<igc-chat
-  current-user-id="me"
-  accepted-files="image/*,.pdf">
-</igc-chat>
+```ts
+const options: IgcChatOptions = {
+  acceptedFiles="image/*,.pdf",
+};
 ```
 In this example, users will only be able to upload images and PDF files.
 If your use case does not require attachments, you can easily turn them off:
-```html
-<igc-chat current-user-id="me" disable-input-attachments></igc-chat>
+```ts
+const options: IgcChatOptions = {
+  disableInputAttachments: true,
+};
 ```
 ### Suggestions
 Quick reply suggestions provide users with pre-defined responses they can tap to reply instantly. This feature is particularly useful in chatbots, customer service flows, or when guiding users through a structured process.
 You can provide suggestions by binding an array of strings to the suggestions property. The `suggestions-position` attribute lets you control where they are displayed: either below the input area or below the messages list.
+```ts
+const options: IgcChatOptions = {
+  currentUserId: "me",
+  suggestions: ['Yes', 'No', 'Maybe later'],
+  suggestionsPosition: 'below-input'
+};
+```
 ```html
 <igc-chat
-  current-user-id="me"
-  .suggestions=${['Yes', 'No', 'Maybe later']}
-  suggestions-position="below-input">
+  .options=${options}>
 </igc-chat>
 ```
 This approach helps streamline user interactions by reducing the need to type repetitive answers and improves the overall experience in guided conversations.
 
 ### Typing Indicator
-Conversations feel more natural when participants can see that the other person is typing. The Chat component provides this behavior through the `is-typing` property.
+Conversations feel more natural when participants can see that the other person is typing. The Chat component provides this behavior through the `isTyping` property of the options object.
 When set to true, the chat shows a subtle typing indicator below the messages:
-```html
-<igc-chat current-user-id="me" is-typing></igc-chat>
+```ts
+const options: IgcChatOptions = {
+  isTyping: true
+};
 ```
 This feature is typically toggled programmatically, for example when receiving a typing event from your backend service.
 
@@ -114,10 +128,10 @@ The ctx parameter provides different contextual data depending on what is being 
 #### Renderer Contexts
 | Context Type                | Provided Data                                                                                                          |
 | --------------------------- | -----------------------------------------------------------------------------------------------------------------------|
-| `ChatRendererContext`       | `instance` (the chat component instance).                                                                              |
-| `InputRendererContext`      | Inherits `ChatRendererContext` and adds `attachments` (array of `MessageAttachment`) and `value` (current input text). |
-| `MessageRendererContext`    | Inherits `ChatRendererContext` and adds `message` (the `Message` being rendered).                                      |
-| `AttachmentRendererContext` | Inherits `MessageRendererContext` and adds `attachment` (the `MessageAttachment` being rendered).                      |
+| `ChatRenderContext`       | `instance` (the chat component instance).                                                                              |
+| `ChatInputRenderContext`      | Inherits `ChatRenderContext` and adds `attachments` (array of `ChatMessageAttachment`) and `value` (current input text). |
+| `ChatMessageRenderContext`    | Inherits `ChatRenderContext` and adds `ChatMessage` (the `ChatMessage` being rendered).                                      |
+| `ChatAttachmentRenderContext` | Inherits `ChatMessageRenderContext` and adds `attachment` (the `ChatMessageAttachment` being rendered).                      |
 
 #### Available Renderers
 The following parts of the Chat can be customized:
@@ -132,12 +146,12 @@ This level of granularity means you can tweak just one part (for example, how at
 #### Example: Custom Message Content
 This example shows how to replace the message bubble with your own template:
 ```ts
-const chat = document.getElementById('myChat');
-
-chat.renderers = {
-  messageContent: (ctx) => {
-    const { message } = ctx;
-    return html`<div class="bubble custom">${message.content}</div>`;
+const options = {
+  renderers = {
+    messageContent: (ctx) => {
+      const { message } = ctx;
+      return html`<div class="bubble custom">${message.content}</div>`;
+    }
   }
 };
 ```
@@ -145,22 +159,26 @@ chat.renderers = {
 #### Example: Custom Input Area
 By default, the chat input is a text area. You can override it to provide a more tailored experience, such as adding a voice input button:
 ```ts
-chat.renderers = {
-  input: (ctx) => html`
-    <textarea placeholder=${ctx.instance?.options?.inputPlaceholder || 'Type here...'}>${ctx.value}</textarea>
-    <button @click=${() => alert('Voice input!')}>🎤</button>
-  `
+const options = {
+  renderers = {
+    input: (ctx) => html`
+      <textarea placeholder=${ctx.instance?.options?.inputPlaceholder || 'Type here...'}>${ctx.value}</textarea>
+      <button @click=${() => alert('Voice input!')}>🎤</button>
+    `
+  }
 };
 ```
 
 #### Example: Attachment Preview
 This example shows how to render image attachments differently while falling back to the default renderer for other file types:
 ```ts
-chat.renderers = {
-  attachmentContent: (ctx) => {
-    const { attachment } = ctx;
-    if (attachment.type?.startsWith('image/')) {
-      return html`<img src=${attachment.url} alt="preview" />`;
+const options = {
+  renderers: {
+    attachmentContent: (ctx) => {
+      const { attachment } = ctx;
+      if (attachment.type?.startsWith('image/')) {
+        return html`<img src=${attachment.url} alt="preview" />`;
+      }
     }
   }
 };
@@ -179,13 +197,13 @@ By default, messages are rendered as plain text. If you want to enable Markdown 
 ```ts
 import { createMarkdownRenderer } from 'igniteui-webcomponents/extras';
 
-const chat = document.getElementById('myChat') as IgcChatComponent;
-
 // Create a reusable Markdown renderer instance
 const markdownRenderer = await createMarkdownRenderer();
 
-chat.renderers = {
-  messageContent: async ({ message }) => markdownRenderer(message),
+const options = {
+  renderers: {
+    messageContent: async ({ message }) => markdownRenderer(message),
+  }
 };
 ```
 In this example:
@@ -213,8 +231,8 @@ This will enable highlighted code blocks for JavaScript, Python, and Go, styled 
 
 ### Events
 To integrate with your application logic, the Chat component emits a set of events:
-- igcMessageCreated – when a new message is created.
-- igcMessageReact – when a message is reacted to.
+- IgcChatMessageCreated – when a new message is created.
+- IgcChatMessageReact – when a message is reacted to.
 - igcAttachmentClick – when an attachment is clicked.
 - igcAttachmentChange – when an attachment changes.
 - igcAttachmentDrag – while dragging an attachment.
@@ -225,7 +243,7 @@ To integrate with your application logic, the Chat component emits a set of even
 
 You can listen for these events and sync them with your backend:
 ```ts
-chat.addEventListener('igcMessageCreated', (e) => {
+chat.addEventListener('IgcChatMessageCreated', (e) => {
   console.log('Message:', e.detail);
 });
 ```
@@ -309,8 +327,8 @@ This allows you to style the Chat to match your brand without replacing its func
 
 - `Chat`
 - `ChatOptions`
-- `Message`
-- `MessageAttachment`
+- `ChatMessage`
+- `ChatMessageAttachment`
 - `ChatRenderers`
 - `ChatTemplateRenderer`
 - [`Styling & Themes`](../themes/overview.md)
