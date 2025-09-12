@@ -288,7 +288,7 @@ igc-chat::part(header) {
   background: var(--ig-primary-100);
 }
 
-igc-chat::part(message-item) {
+igc-chat::part(message-container) {
   border-radius: 12px;
   padding: 0.5rem;
 }
