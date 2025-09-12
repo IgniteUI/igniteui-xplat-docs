@@ -137,7 +137,7 @@ The ctx parameter provides different contextual data depending on what is being 
 The following parts of the Chat can be customized:
 - Message-level: message, messageHeader, messageContent, messageAttachments, messageActions
 - Attachment-level: attachment, attachmentHeader, attachmentContent
-- Input-level: input, inputActions, inputAttachments, fileUploadButton, sendButton
+- Input-level: input, inputActions, inputActionsStart, inputActionsEnd, inputAttachments, fileUploadButton, sendButton
 - Suggestions: suggestionPrefix
 - Miscellaneous: typingIndicator
 
@@ -168,6 +168,41 @@ const options = {
   }
 };
 ```
+
+#### Example: Extending Input Actions
+The `Chat` component provides two renderers which are useful when you want to keep the default actions (upload and send) but extend them with additional controls:
+- `inputActionsStart` – allows you to inject custom content after the built-in upload button.
+- `inputActionsEnd` – allows you to inject custom content after the built-in send button.
+
+For example, you might want to add a voice recording button after the upload button, or a menu of extra options after the send button.
+In the following example, the default upload button is preserved, but we add a microphone button next to it. On the other end, we remove the default send button and replace it with a custom Ask button and a “more” menu:
+```ts
+const _actionsStartTemplate = () => html`
+  <igc-icon-button variant="flat">🎤</igc-icon-button>
+`;
+
+const _actionsEndTemplate = (ctx: ChatRenderContext) => html`
+  <div>
+    <igc-button @click=${() => handleCustomSendClick(ctx.instance)}>Ask</igc-button>
+    <igc-icon-button variant="flat" name="more_horiz"></igc-icon-button>
+  </div>
+`;
+
+const options = {
+  renderers: {
+    inputActionsStart: _actionsStartTemplate,
+    inputActionsEnd: _actionsEndTemplate,
+    sendButton: () => nothing,
+  },
+};
+```
+In this setup:
+- The upload button remains in place.
+- A microphone button is added after it (inputActionsStart).
+- The default send button is removed and replaced with a custom Ask button and a “more” icon (inputActionsEnd).
+
+This approach gives you full flexibility over the chat input bar, letting you add, remove, or reorder actions without rebuilding the input area from scratch.
+
 `sample="/interactions/chat/templating", height="200", alt="Web Components Chat Templating"`
 
 ### Markdown Rendering
