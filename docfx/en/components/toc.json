@@ -1678,12 +1678,12 @@
     "href": "inputs/checkbox.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Circular Progress",
     "href": "inputs/circular-progress.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Linear Progress",
     "href": "inputs/linear-progress.md"
   },
