@@ -1414,8 +1414,7 @@
         "href": "geo-map-binding-multiple-sources.md",
         "status": ""
       },
-      {
-        "exclude": ["Blazor"],
+      {        
         "name": "Displaying Azure Imagery",
         "href": "geo-map-display-azure-imagery.md",
         "status": "NEW"

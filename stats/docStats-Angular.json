@@ -687,6 +687,9 @@
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/display-bing-imagery": [
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-display-bing-imagery"
     ],
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/display-azure-imagery": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-display-azure-imagery"
+    ],
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/display-esri-imagery": [
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-display-esri-imagery"
     ],
@@ -1076,6 +1079,9 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-display-bing-imagery": [
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/display-bing-imagery"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-display-azure-imagery": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/display-azure-imagery"
     ],
     "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-display-esri-imagery": [
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/display-esri-imagery"
