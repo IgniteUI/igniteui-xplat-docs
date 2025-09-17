@@ -11,7 +11,7 @@ The {ProductName} Chat component provides a complete solution for building conve
 
 Unlike a static message list, the `Chat` component is interactive and designed for **real-time communication**. It manages input, rendering, and user interaction while giving you full control over how messages and attachments are displayed. It also exposes an extensive rendering API that lets you override any part of its layout or visuals.
 
-`sample="/interactions/chat/overview", height="400", alt="{Platform} Chat Overview Example"`
+`sample="/interactions/chat/overview", height="900", alt="{Platform} Chat Overview Example"`
 
 ## Installation
 <!-- WebComponents -->
@@ -45,16 +45,16 @@ const options: IgcChatOptions = {
 </igc-chat>
 ```
 
-Here, the `current-user-id` attribute tells the component which messages are “outgoing” (sent by the current user) versus “incoming” (sent by others). The `header-text` provides a title for the chat window.
+Here, the `currentUserId` property tells the component which messages are “outgoing” (sent by the current user) versus “incoming” (sent by others). The `headerText` provides a title for the chat window.
 
 Once rendered, you can programmatically add messages:
 ```ts
 const chat = document.getElementById('myChat');
 chat.addMessage({
   id: '1',
-  userId: 'me',
-  content: 'Hello! How can I help you?',
-  timestamp: new Date()
+  sender: 'me',
+  text: 'Hello! How can I help you?',
+  timestamp: Date.now().toString()
 });
 ```
 This approach makes it easy to plug the Chat into your own data source, such as a server endpoint, a chatbot engine, or a collaborative app backend.
@@ -94,7 +94,7 @@ You can provide suggestions by binding an array of strings to the suggestions pr
 const options: IgcChatOptions = {
   currentUserId: "me",
   suggestions: ['Yes', 'No', 'Maybe later'],
-  suggestionsPosition: 'below-input'
+  suggestionsPosition: "below-input"
 };
 ```
 ```html
@@ -128,7 +128,7 @@ The ctx parameter provides different contextual data depending on what is being 
 #### Renderer Contexts
 | Context Type                | Provided Data                                                                                                          |
 | --------------------------- | -----------------------------------------------------------------------------------------------------------------------|
-| `ChatRenderContext`       | `instance` (the chat component instance).                                                                              |
+| `ChatRenderContext`       | `instance` (the chat component instance).                                                |
 | `ChatInputRenderContext`      | Inherits `ChatRenderContext` and adds `attachments` (array of `ChatMessageAttachment`) and `value` (current input text). |
 | `ChatMessageRenderContext`    | Inherits `ChatRenderContext` and adds `ChatMessage` (the `ChatMessage` being rendered).                                      |
 | `ChatAttachmentRenderContext` | Inherits `ChatMessageRenderContext` and adds `attachment` (the `ChatMessageAttachment` being rendered).                      |
@@ -203,8 +203,6 @@ In this setup:
 
 This approach gives you full flexibility over the chat input bar, letting you add, remove, or reorder actions without rebuilding the input area from scratch.
 
-`sample="/interactions/chat/templating", height="200", alt="Web Components Chat Templating"`
-
 ### Markdown Rendering
 The Chat component includes built-in support for Markdown content through the `createMarkdownRenderer` helper, which is exported from the `igniteui-webcomponents/extras` entry point of the main package. This allows you to display messages with formatted text, links, lists, and even syntax-highlighted code blocks, while ensuring that all rendered HTML is sanitized for security.
 
@@ -263,10 +261,13 @@ To integrate with your application logic, the Chat component emits a set of even
 
 You can listen for these events and sync them with your backend:
 ```ts
-chat.addEventListener('IgcMessageCreated', (e) => {
+chat.addEventListener('igcMessageCreated', (e) => {
   console.log('Message:', e.detail);
 });
 ```
+
+`sample="/interactions/chat/features", height="900", alt="Web Components Chat Features"`
+
 <!-- end: WebComponents -->
 
 ## Styling
@@ -316,6 +317,25 @@ The `Chat` component exposes both **CSS parts** and **slots** for fine-grained c
 | `suggestion` | Override the rendering of a single suggestion item. |
 | `empty-state` | Displayed when there are no messages in the chat. |
 
+#### Root Style Adoption (adoptRootStyles)
+
+The Chat component's options include a special flag for advanced styling scenarios:
+
+| Option            | Type      | Default | Description        |
+| ----------------- | --------- | ------- | ------------------ |
+| `adoptRootStyles` | `boolean` | false   | When `true`, the component allows content rendered inside its Shadow DOM (e.g., from custom renderers) to inherit styles from the document's root. This provides a quick workaround for styling but is **not recommended** for production use. |
+
+This property can be useful if you prefer not to deal with Shadow DOM encapsulation when applying global CSS to custom-rendered templates.
+However, it comes with trade-offs:
+- ✅ Convenience: Lets global styles (from the document) affect custom message renderers.
+- ⚠️ Risky: Breaks encapsulation and can lead to style leakage, where global CSS unintentionally alters internal visuals.
+- 🔒 One-time setting: This option can only be set at initialization. Changing it at runtime has no effect.
+
+We highly recommend using the standard Web Component styling approaches before resorting to this property:
+- CSS Variables and ::part API – Prefer customizing via exposed parts and variables.
+- `<link>` elements – For larger stylesheets, inject them inside the Shadow DOM.
+- Inline `<style>` tags – For small, scoped style overrides.
+
 #### Example
 
 ```css
@@ -334,9 +354,9 @@ igc-chat::part(empty-state) {
 }
 ```
 
-This allows you to style the Chat to match your brand without replacing its functionality.
+This allows you to style the `Chat` to match your brand without replacing its functionality.
 
-`sample="/interactions/chat/styling", height="400", alt="Web Components Chat Styling Example"`
+`sample="/interactions/chat/styling", height="900", alt="Web Components Chat Styling Example"`
 
 ## API Reference
 
