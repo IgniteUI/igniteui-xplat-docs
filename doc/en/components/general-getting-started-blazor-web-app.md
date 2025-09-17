@@ -85,7 +85,7 @@ await builder.Build().RunAsync();
 
 ## Add Ignite UI for Blazor Component
 
-Add an Ignite UI for Blazor component to your razor page:
+Add an Ignite UI for Blazor component to your razor page (Please note that Ignite UI for Blazor components require interactive render modes like **InteractiveServer**, **InteractiveWebAssembly**, or **InteractiveAuto**. For "Per page/component" interactivity, ensure interactive render mode is specified on pages using Ignite UI components.):
 
 ```razor
 <IgbCard style="width:350px">
