@@ -14,6 +14,10 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
+### {PackageMaps} (Geographic Map)
+
+- New [Azure Maps](geo-map-display-azure-imagery.md). This is a new geographic imagery mapping service provided by Microsoft® for the Infragistics Geographic Map.
+
 ### Bug Fixes
 
 | Bug Number | Control | Description      |

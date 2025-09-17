@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in Blazor documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "Blazor",
-  "samplesCount": 705,
+  "samplesCount": 706,
   "samplesHost": "https://staging.infragistics.com/blazor-client/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -2045,6 +2045,9 @@
     "https://staging.infragistics.com/blazor-client/samples/samples/maps/geo-map/binding-shp-polylines": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/geo-map-binding-shp-file"
     ],
+    "https://staging.infragistics.com/blazor-client/samples/samples/maps/geo-map/display-azure-imagery": [
+      "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/geo-map-display-azure-imagery"
+    ],
     "https://staging.infragistics.com/blazor-client/samples/samples/maps/geo-map/display-esri-imagery": [
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/geo-map-display-esri-imagery"
     ],
@@ -2185,7 +2188,7 @@
       "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/_shared/toolbar"
     ]
   },
-  "topicsCount": 291,
+  "topicsCount": 292,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -2556,6 +2559,9 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/geo-map-binding-shp-file": [
       "https://staging.infragistics.com/blazor-client/samples/samples/maps/geo-map/binding-shp-polylines"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/geo-map-display-azure-imagery": [
+      "https://staging.infragistics.com/blazor-client/samples/samples/maps/geo-map/display-azure-imagery"
     ],
     "https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/geo-map-display-esri-imagery": [
       "https://staging.infragistics.com/blazor-client/samples/samples/maps/geo-map/display-esri-imagery"

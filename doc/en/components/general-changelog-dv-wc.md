@@ -12,6 +12,11 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
+### {PackageMaps} (Geographic Map)
+
+- New [Azure Maps](geo-map-display-azure-imagery.md). This is a new geographic imagery mapping service provided by Microsoft® for the Infragistics Geographic Map.
+
+### Enhancements
 - Form associated custom elements now expose the **ig-invalid** custom state for styling with the `:state()` CSS selector.
   [See here for additional information](https://developer.mozilla.org/en-US/docs/Web/CSS/:state)
 - Form associated custom elements validity behavior. Now elements will try to mimic `:user-invalid`, and won't apply invalid

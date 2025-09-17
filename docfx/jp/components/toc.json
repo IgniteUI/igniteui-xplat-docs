@@ -1412,6 +1412,11 @@
         "href": "geo-map-binding-multiple-sources.md",
         "status": ""
       },
+      {        
+        "name": "Displaying Azure Imagery",
+        "href": "geo-map-display-azure-imagery.md",
+        "status": "NEW"
+      },
       {
         "exclude": ["Blazor"],
         "name": "Bing 画像の表示",
