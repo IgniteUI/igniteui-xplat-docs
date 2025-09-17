@@ -50,12 +50,14 @@ Here, the `currentUserId` property tells the component which messages are “out
 Once rendered, you can programmatically add messages:
 ```ts
 const chat = document.getElementById('myChat');
-chat.addMessage({
+const newMessage = {
   id: '1',
   sender: 'me',
   text: 'Hello! How can I help you?',
   timestamp: Date.now().toString()
-});
+};
+chat.messages = [...chat.messages, newMessage ];
+
 ```
 This approach makes it easy to plug the Chat into your own data source, such as a server endpoint, a chatbot engine, or a collaborative app backend.
 
