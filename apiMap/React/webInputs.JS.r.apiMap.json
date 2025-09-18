@@ -240,7 +240,7 @@
     "names":[{"platform": "React","fileName": "igr-tooltip.ts","mappedName": "IgrTooltip"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "anchor"}], "originalName": "Anchor"},
-      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disableArrow"}], "originalName": "DisableArrow"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "withArrow"}], "originalName": "WithArrow"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "hide"}], "originalName": "Hide"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "hideDelay"}], "originalName": "HideDelay"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "hideTriggers"}], "originalName": "HideTriggers"},

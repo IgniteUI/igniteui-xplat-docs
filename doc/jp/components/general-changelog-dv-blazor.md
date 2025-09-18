@@ -15,6 +15,37 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+### {PackageMaps} (地理マップ)
+
+- 新しい [Azure Maps](geo-map-display-azure-imagery.md)。これは、Infragistics Geographic Map 向けに Microsoft® が提供する新しい地理画像マッピング サービスです。
+
+### バグ修正
+
+| バグ番号 | コントロール | 説明      |
+|------------|---------|------------------|
+|26952|IgbTabs|Razor/JS の Change イベントで e.Detail が null になる問題を修正。|
+|26953|IgbTabs|タブを選択状態にしても、その後の操作で選択が反映されない問題を修正。|
+|37832|IgbDataLegend|ダッシュボードでデータをグループ化して合計を表示した際、ツールチップに合計セクションでバッジが表示される問題を修正。|
+|31910|IgbXDatePicker|「@bind-Value」 構文で値をバインドし、クリア ボタンをクリックするとエラーが発生する問題を修正。|
+|31323|IgbDataChart、IgbGrid、IgbCombo|データ タイプにコレクション タイプ プロパティがあり、そのコレクションの最初の要素が null の場合に NullReferenceException が発生する問題を修正。|
+|38903|IgbTabs|タブ内に配置されたコンポーネントでドロップダウン リストが正しい位置に表示されない問題を修正。|
+|[139](https://github.com/IgniteUI/igniteui-blazor/issues/139)|IgbDatePicker、IgbDateTimeInput|Date Picker および Date Time Input が null 許容値をサポートしていない問題を修正。|
+
+### 一般
+以下のコンポーネントのプロパティが null 許容になりました。
+- `Button`: `Form`
+- `Calendar`: `SpecialDates`、`DisabledDates`
+- `Combo`: `ValueKey`、`DisplayKey`、`GroupKey`
+- `DatePicker`: `Value`、`Min`、`Max`
+- `DateTimePicker`: `Value`、`Min`、`Max`
+- `Dropdown`: `SelectedItem`
+- `Input`: `Pattern`、`MinLength`、`MaxLength`、`Min`、`Max`、`Step`
+- `Select`: `Value`、`SelectedItem`
+- `Tile`: `ColStart`、`RowStart`
+- `TileManager`: `MinColumnWidth`、`MinRowHeight`、`Gap`
+
+## **{PackageVerChanges-25-1-JULY}**
+
 ### バグ修正
 
 | バグ番号 | コントロール | 説明      |

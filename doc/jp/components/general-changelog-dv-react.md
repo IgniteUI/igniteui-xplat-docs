@@ -12,6 +12,31 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+- 新しい [Azure Maps](geo-map-display-azure-imagery.md)。これは、Infragistics Geographic Map 向けに Microsoft® が提供する新しい地理画像マッピング サービスです。
+
+### 機能拡張
+
+- DatePicker が入力時にカレンダー表示を更新するように改善しました (Date Range Picker と同様) [1818](https://github.com/IgniteUI/igniteui-webcomponents/issues/1818)。
+
+### バグ修正
+
+| バグ番号 | コントロール | 説明 |
+|------------|---------|-------------|
+|[1831](https://github.com/IgniteUI/igniteui-webcomponents/pull/1831)| Calendar |ナビゲーションのスタイルを修正。|
+|[1833](https://github.com/IgniteUI/igniteui-webcomponents/pull/1833)|Card| サポートされているテーマにおいて、スロット化された igc-avatar のサイズ スタイルを修正。|
+|[1826](https://github.com/IgniteUI/igniteui-webcomponents/pull/1826)|Combo|Dropdown の初期高さを修正。|
+|[1827](https://github.com/IgniteUI/igniteui-webcomponents/pull/1827)|Combo|Indigo テーマのアイコン サイズ スタイルを修正。|
+|[1834](https://github.com/IgniteUI/igniteui-webcomponents/pull/1834)|DatePicker、DateRangePicker|無効状態のスタイルを修正。|
+|[1820](https://github.com/IgniteUI/igniteui-webcomponents/pull/1820)|Input|Bootstrap テーマの prefix/suffix スロットのスタイルを修正。|
+|[1824](https://github.com/IgniteUI/igniteui-webcomponents/pull/1824)|Input|Material テーマのラベルおよび境界線スタイルを修正。|
+|[1836](https://github.com/IgniteUI/igniteui-webcomponents/pull/1836)|Input|オーバーライドされた tabindex プロパティを削除。|
+|[1827](https://github.com/IgniteUI/igniteui-webcomponents/pull/1827)|Select|Indigo テーマのアイコン サイズ スタイルを修正。|
+|[1809](https://github.com/IgniteUI/igniteui-webcomponents/pull/1809)|Switch|新しい thumb hover プロパティを使用するよう修正。|
+|[1837](https://github.com/IgniteUI/igniteui-webcomponents/pull/1837)|TileManager|内部正規表現のエスケープ不備を修正。|
+
+
+## **{PackageVerChanges-25-1-AUG}**
+
 - フォームに関連付けられたカスタム要素は、`:state()` CSS セレクターを使用してスタイル設定するための **ig-invalid** カスタム状態を公開するようになりました。
   [詳細はこちらをご参照ください](https://developer.mozilla.org/ja/docs/Web/CSS/:state)
 - フォーム関連カスタム要素の有効性の動作: 要素は `:user-invalid` を模倣しようとし、UI またはフォームの `requestSubmit()/reset()` 呼び出しを介して操作されない限り、無効スタイルは適用されません。

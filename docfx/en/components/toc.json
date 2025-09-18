@@ -1414,6 +1414,11 @@
         "href": "geo-map-binding-multiple-sources.md",
         "status": ""
       },
+      {        
+        "name": "Displaying Azure Imagery",
+        "href": "geo-map-display-azure-imagery.md",
+        "status": "NEW"
+      },
       {
         "exclude": ["Blazor"],
         "name": "Displaying Bing Imagery",
@@ -1780,6 +1785,12 @@
   {
     "name": "Interactions",
     "header": true
+  },
+  {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "Chat",
+    "href": "interactivity/chat.md",
+    "status": "new"
   },
   {
     "exclude": ["Angular"],
