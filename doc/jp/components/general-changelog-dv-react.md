@@ -12,6 +12,10 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+- 新しい [Azure Maps](geo-map-display-azure-imagery.md)。これは、Infragistics Geographic Map 向けに Microsoft® が提供する新しい地理画像マッピング サービスです。
+
+### 機能拡張
+
 - DatePicker が入力時にカレンダー表示を更新するように改善しました (Date Range Picker と同様) [1818](https://github.com/IgniteUI/igniteui-webcomponents/issues/1818)。
 
 ### バグ修正

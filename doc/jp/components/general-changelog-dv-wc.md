@@ -13,6 +13,12 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+### {PackageMaps} (地理マップ)
+
+- 新しい [Azure Maps](geo-map-display-azure-imagery.md)。これは、Infragistics Geographic Map 向けに Microsoft® が提供する新しい地理画像マッピング サービスです。
+
+### 機能拡張
+
 - フォームに関連付けられたカスタム要素は、`:state()` CSS セレクターを使用してスタイル設定するための **ig-invalid** カスタム状態を公開するようになりました。
   [詳細はこちらをご参照ください](https://developer.mozilla.org/ja/docs/Web/CSS/:state)
 - フォーム関連カスタム要素の有効性の動作: 要素は `:user-invalid` を模倣しようとし、UI またはフォームの `requestSubmit()/reset()` 呼び出しを介して操作されない限り、無効スタイルは適用されません。
