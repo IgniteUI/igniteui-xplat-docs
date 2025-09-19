@@ -5,10 +5,61 @@ _keywords: {ProductName}, Infragistics, Getting Started
 mentionedTypes: ["XamBulletGraph"]
 ---
 
+<!-- WebComponents -->
+# {ProductName} Packages Overview
+
+{ProductName} is a complete set of UI widgets, components, UI kits for design tools and supporting services for Web Components. Designed to enable developers to build the most modern, high-performance HTML5 & JavaScript apps for modern desktop browsers, mobile experiences and progressive web apps (PWA’s) targeting the browsers web components APIs.
+
+<!-- end: WebComponents -->
+
 <!-- React -->
+# {ProductName} Packages Overview
+
+{ProductName} is a comprehensive suite of UI components, design toolkits, and supporting services for React. Built to empower developers to create modern, high-performance React applications for desktop browsers, mobile experiences, and progressive web apps (PWAs), {ProductName} leverages the latest React best practices and APIs.
+
+<!-- end: React -->
+
+<!-- WebComponents, React -->
+
+## Charts & Graphs
+{ProductName} contains a library of [Charts & Graphs](charts/chart-overview.md) that lets you visualize any type of data through its 65+ types of chart series and combinations into stunning and interactive charts and dashboards. Built for speed and beauty, designed to work on every modern browser and with complete touch and interactivity, you can quickly build responsive visuals on any device.
+
+## Gauges
+{ProductName} provides [Radial Gauge](radial-gauge.md), [Linear Gauge](linear-gauge.md), and [Bullet Graph](bullet-graph.md) components used to illustrate data in an easy and intuitive way. The [Radial Gauge](radial-gauge.md) has a variety of customization options in order to create a predefined shape and scale. The [Linear Gauge](linear-gauge.md) provides a simple view of a value compared against a scale and one or more ranges. It supports one scale, one set of tick marks and one set of labels. The [Bullet Graph](bullet-graph.md) component that lets you create data visualizations, replacing meters and gauges that are used on dashboards with simple bar charts.
+
+## Maps
+{ProductName} [Geographic Maps](geo-map.md) brings the ability to visualize geographic data in your application. It can render data sets consisting of many geographic locations in shapes of markers, lines, polygons, or even interactive bitmaps. It allows you to overlay multiple map layers with geographic data, mark specific geographic locations and display information using custom markers and colors.
+
+## Grids & Inputs
+{ProductName} provides several [Grids](grids/grids-header.md) components that allows you to bind and display data with little configuration in form of [Data Grid](grids/data-grid.md), [List](grids/list.md), [Tree](grids/tree.md), and even [Spreadsheet](spreadsheet-overview.md). It also provides features such as filtering, sorting, grouping, pinning and more.
+
+## Buttons, Inputs, Layouts & Menus
+{ProductName} provides various types of [Buttons](inputs/button.md), [Inputs](inputs/input.md), [Menus](menus/navbar.md), and [Layouts](layouts/tabs.md) that give you the ability to build modern web applications using encapsulation and the concept of reusable components in a dependency-free approach. See the [Storybook Here](https://igniteui.github.io/igniteui-webcomponents). These components are based on the [Indigo Design System](https://www.infragistics.com/products/appbuilder/ui-toolkit), are fully supported by [App Builder](https://appbuilder.indigo.design/) and are backed by ready-to-use UI kits for Sketch, Adobe XD and Figma.
+
+<!-- end: WebComponents, React -->
+
+<!-- React -->
+
 # Getting Started With {ProductName}
 
-This topic provides step-by-step instructions for creating React applications with Ignite UI for React
+## Install IgniteUI CLI
+
+To create an application from scratch and configure it to use the Ignite UI React you can use the Ignite UI CLI. The first step is to install the respective package globally as follows:
+
+```cmd
+npm install -g igniteui-cli
+```
+
+If you want to get a guided experience through the available options, you can initialize the step by step mode that will help you create and setup your new application. To start the guide, simply run the `ig` command:
+
+```cmd
+ig
+```
+
+Then choose React as framework, React TS as type, select `Default Top Navigation` project template, add a specific component/view or select `Complete & Run`.
+Additionally, you can read more about the Ignite UI CLI [here](general-cli-overview.md).
+
+Alternatively, you can use create-react-app. Following is a step-by-step instructions for creating React applications with Ignite UI React using this method.
 
 ## Prerequisites
 
@@ -58,25 +109,6 @@ cd MyAppName
 <!-- end: React -->
 
 <!-- WebComponents -->
-# {ProductName} Packages Overview
-
-{ProductName} is a complete set of UI widgets, components, UI kits for design tools and supporting services for Web Components. Designed to enable developers to build the most modern, high-performance HTML5 & JavaScript apps for modern desktop browsers, mobile experiences and progressive web apps (PWA’s) targeting the browsers web components APIs.
-
-## Charts & Graphs
-{ProductName} contains a library of [Charts & Graphs](charts/chart-overview.md) that lets you visualize any type of data through its 65+ types of chart series and combinations into stunning and interactive charts and dashboards. Built for speed and beauty, designed to work on every modern browser and with complete touch and interactivity, you can quickly build responsive visuals on any device.
-
-## Gauges
-{ProductName} provides [Radial Gauge](radial-gauge.md), [Linear Gauge](linear-gauge.md), and [Bullet Graph](bullet-graph.md) components used to illustrate data in an easy and intuitive way. The [Radial Gauge](radial-gauge.md) has a variety of customization options in order to create a predefined shape and scale. The [Linear Gauge](linear-gauge.md) provides a simple view of a value compared against a scale and one or more ranges. It supports one scale, one set of tick marks and one set of labels. The [Bullet Graph](bullet-graph.md) component that lets you create data visualizations, replacing meters and gauges that are used on dashboards with simple bar charts.
-
-## Maps
-{ProductName} [Geographic Maps](geo-map.md) brings the ability to visualize geographic data in your application. It can render data sets consisting of many geographic locations in shapes of markers, lines, polygons, or even interactive bitmaps. It allows you to overlay multiple map layers with geographic data, mark specific geographic locations and display information using custom markers and colors.
-
-## Grids & Inputs
-{ProductName} provides several [Grids](grids/grids-header.md) components that allows you to bind and display data with little configuration in form of [Data Grid](grids/data-grid.md), [List](grids/list.md), [Tree](grids/tree.md), and even [Spreadsheet](spreadsheet-overview.md). It also provides features such as filtering, sorting, grouping, pinning and more.
-                                                                                                          
-## Buttons, Inputs, Layouts & Menus  
-{ProductName} provides various types of [Buttons](inputs/button.md), [Inputs](inputs/input.md), [Menus](menus/navbar.md), and [Layouts](layouts/tabs.md) that give you the ability to build modern web applications using encapsulation and the concept of reusable components in a dependency-free approach. See the [Storybook Here](https://igniteui.github.io/igniteui-webcomponents). These components are based on the [Indigo Design System](https://www.infragistics.com/products/appbuilder/ui-toolkit), are fully supported by [App Builder](https://appbuilder.indigo.design/) and are backed by ready-to-use UI kits for Sketch, Adobe XD and Figma.
-
 # Getting Started With {ProductName}
 
 This section provides step-by-step instructions for creating Web Components application with Ignite UI for Web Components.
