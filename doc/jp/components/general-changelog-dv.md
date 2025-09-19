@@ -18,6 +18,10 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+### {PackageMaps} (地理マップ)
+
+- 新しい [Azure Maps](geo-map-display-azure-imagery.md)。これは、Infragistics Geographic Map 向けに Microsoft® が提供する新しい地理画像マッピング サービスです。
+
 ### バグ修正
 
 | バグ番号 | コントロール | 説明      |
