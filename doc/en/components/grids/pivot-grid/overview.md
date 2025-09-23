@@ -10,7 +10,7 @@ namespace: Infragistics.Controls
 
 The {Platform} Pivot Grid is used for summing up and representing voluminous multidimensional data in a cross-tabular format. The data summery can be easily and quickly sorted, grouped, or filtered. Such data can include sums, averages, and other statistics. End-users are enabled to modify the pivot table layout through drag-and-drop operations, according to their needs.
 
-The {Platform} {ComponentTitle} presents data in a pivot table and helps users performing complex analysis on the supplied data set. This sophisticated Pivot Grid control is used for organizing, summarizing, and filtering large volumes of data which is later displayed in a cross-table format. Key features of an {Platform} Pivot Grid are row dimensions, column dimensions, aggregations, and filters.
+The {Platform} Pivot Grid presents data in a pivot table and helps users performing complex analysis on the supplied data set. This sophisticated Pivot Grid control is used for organizing, summarizing, and filtering large volumes of data which is later displayed in a cross-table format. Key features of an {Platform} Pivot Grid are row dimensions, column dimensions, aggregations, and filters.
 
 The `PivotGrid` gives the ability to users to configure and display their data in a multi-dimensional pivot table structure.
 The rows and columns represent distinct data groups, and the data cell values represent aggregations. This allows complex data analysis based on a simple flat data set. The `PivotGrid` is a feature-rich pivot table that provides easy configuration of the different dimensions and values as well as additional data operations on them like filtering and sorting.
