@@ -38,7 +38,7 @@ namespace: Infragistics.Controls
 <div class="sample-content">
     <article class="sample-column">
         <div class="tabbar-wrapper">
-            <p>The {Platform} {ComponentTitle} component is used for displaying large volumes of data. Modern and more complex grids ensure smooth UX and bring an array of features for manipu   lating tabular data. There is an intuitive API, theming, branding, filtering, sorting, data selection, Excel-style filtering, and many more.</p>
+            <p>The {Platform} {ComponentTitle} component is used for displaying large volumes of data. Modern and more complex grids ensure smooth UX and bring an array of features for manipulating tabular data. There is an intuitive API, theming, branding, filtering, sorting, data selection, Excel-style filtering, and many more.</p>
             <p>The {ProductName} Data Table / Data Grid is a tabular {Platform} grid component that allows you to quickly bind and display your data with little coding or configuration. Features of the {Platform} data grid in our toolbox include filtering, sorting, templates, row selection, row grouping, row pinning, movable columns, virtualization, Master-Detail, and much more.</p>
             <p>The {Platform} tables are optimized for speed and performance, with the ability to handle millions of rows and columns, and real-time updates in an instant, making {ProductName} {ComponentTitle} the best {Platform} {ComponentTitle} on the market.  </p>
         </div>
