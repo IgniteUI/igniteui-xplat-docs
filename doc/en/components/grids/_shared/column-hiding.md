@@ -360,11 +360,16 @@ For this purpose all we have to do is set both the `GridToolbarActions` and the 
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 <!-- end: React -->
-
+<!-- Angular -->
 The `{ComponentName}` provides us with some useful properties when it comes to using the toolbar's column hiding UI.
 
 By using the `Title` property, we will set the title that is displayed inside the dropdown button in the toolbar.
+<!-- end: Angular -->
+<!-- React, Blazor, WebComponents -->
+The `{ComponentName}` provides us with some useful properties when it comes to using the toolbar's column hiding UI.
 
+By using the `Title` and `Prompt` properties, we will set the title and filter prompt that are displayed inside the dropdown in the toolbar.
+<!-- end: React, Blazor, WebComponents -->
 <!-- ComponentStart: Grid -->
 ```html
 <igx-grid [data]="localdata">
@@ -380,7 +385,7 @@ By using the `Title` property, we will set the title that is displayed inside th
 <{ComponentSelector} Data=northwindEmployees>
     <IgbGridToolbar>
         <IgbGridToolbarActions>
-            <IgbGridToolbarHiding @ref=HidingAction Title="Column Hiding"></IgbGridToolbarHiding>
+            <IgbGridToolbarHiding @ref=HidingAction Title="Column Hiding" Prompt="Type here to search"></IgbGridToolbarHiding>
         </IgbGridToolbarActions>
     </IgbGridToolbar>
 </{ComponentSelector}>
@@ -390,7 +395,7 @@ By using the `Title` property, we will set the title that is displayed inside th
 <igc-grid id="grid">
     <igc-grid-toolbar>
         <igc-grid-toolbar-actions>
-            <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding"></igc-grid-toolbar-hiding>
+            <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding" prompt="Type here to search"></igc-grid-toolbar-hiding>
         </igc-grid-toolbar-actions>
     </igc-grid-toolbar>
 </igc-grid>
@@ -400,7 +405,7 @@ By using the `Title` property, we will set the title that is displayed inside th
 <IgrGrid>
     <IgrGridToolbar>
         <IgrGridToolbarActions>
-            <IgrGridToolbarHiding title="Column Hiding"></IgrGridToolbarHiding>
+            <IgrGridToolbarHiding title="Column Hiding" prompt="Type here to search"></IgrGridToolbarHiding>
         </IgrGridToolbarActions>
     </IgrGridToolbar>    
 </IgrGrid>
@@ -427,7 +432,7 @@ By using the `Title` property, we will set the title that is displayed inside th
 <{ComponentSelector} Data=northwindEmployees>
     <IgbGridToolbar>
         <IgbGridToolbarActions>
-            <IgbGridToolbarHiding @ref=HidingAction Title="Column Hiding"></IgbGridToolbarHiding>
+            <IgbGridToolbarHiding @ref=HidingAction Title="Column Hiding" Prompt="Type here to search"></IgbGridToolbarHiding>
         </IgbGridToolbarActions>
     </IgbGridToolbar>
 </{ComponentSelector}>
@@ -441,7 +446,7 @@ By using the `Title` property, we will set the title that is displayed inside th
 <igc-tree-grid id="treeGrid">
     <igc-grid-toolbar>
         <igc-grid-toolbar-actions>
-            <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding"></igc-grid-toolbar-hiding>
+            <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding" prompt="Type here to search"></igc-grid-toolbar-hiding>
         </igc-grid-toolbar-actions>
     </igc-grid-toolbar>
 </igc-tree-grid>
@@ -455,7 +460,7 @@ By using the `Title` property, we will set the title that is displayed inside th
 <IgrTreeGrid>
     <IgrGridToolbar>
         <IgrGridToolbarActions>
-            <IgrGridToolbarHiding title="Column Hiding"></IgrGridToolbarHiding>
+            <IgrGridToolbarHiding title="Column Hiding" prompt="Type here to search"></IgrGridToolbarHiding>
         </IgrGridToolbarActions>
     </IgrGridToolbar>
 </IgrTreeGrid>
@@ -483,7 +488,7 @@ By using the `Title` property, we will set the title that is displayed inside th
 <{ComponentSelector} Data=SingersData>
     <IgbGridToolbar>
         <IgbGridToolbarActions>
-            <IgbGridToolbarHiding Title="Column Hiding"></IgbGridToolbarHiding>
+            <IgbGridToolbarHiding Title="Column Hiding" Prompt="Type here to search"></IgbGridToolbarHiding>
         </IgbGridToolbarActions>
     </IgbGridToolbar>
 </{ComponentSelector}>
@@ -497,7 +502,7 @@ By using the `Title` property, we will set the title that is displayed inside th
 <igc-hierarchical-grid id="hierarchicalGrid1">
     <igc-grid-toolbar>
         <igc-grid-toolbar-actions>
-            <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding"></igc-grid-toolbar-hiding>
+            <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding" prompt="Type here to search"></igc-grid-toolbar-hiding>
         </igc-grid-toolbar-actions>
     </igc-grid-toolbar>
 </igc-hierarchical-grid>
@@ -511,7 +516,7 @@ By using the `Title` property, we will set the title that is displayed inside th
 <IgrHierarchicalGrid>
     <IgrGridToolbar>
         <IgrGridToolbarActions>
-            <IgrGridToolbarHiding title="Column Hiding"></IgrGridToolbarHiding>
+            <IgrGridToolbarHiding title="Column Hiding" prompt="Type here to search"></IgrGridToolbarHiding>
         </IgrGridToolbarActions>
     </IgrGridToolbar>
 </IgrHierarchicalGrid>
