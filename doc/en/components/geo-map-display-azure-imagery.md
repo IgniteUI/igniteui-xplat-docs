@@ -16,7 +16,7 @@ The {Platform} `AzureMapsMapImagery` is geographic imagery mapping service provi
 
 <div class="divider--half"></div>
 
-`sample="/maps/geo-map/display-azure-imagery", height="500", alt="{Platform} Displaying Imagery from Azure Maps Example"`
+`sample="/maps/geo-map/display-azure-imagery", height="600", alt="{Platform} Displaying Imagery from Azure Maps Example"`
 
 ## Code Snippet
 The following code snippet shows how to display geographic imagery tiles from Azure Maps in {Platform} `XamGeographicMap` using `AzureMapsMapImagery` class.

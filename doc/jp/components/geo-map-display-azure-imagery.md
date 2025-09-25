@@ -18,7 +18,7 @@ _language: ja
 
 <div class="divider--half"></div>
 
-`sample="/maps/geo-map/display-azure-imagery", height="500", alt="{Platform} Azure Maps からの画像の表示例"`
+`sample="/maps/geo-map/display-azure-imagery", height="600", alt="{Platform} Azure Maps からの画像の表示例"`
 
 ## コード スニペット
 以下のコード スニペットは、`AzureMapsMapImagery` クラスを使用して {Platform} `XamGeographicMap` で Azure Maps からの地理的画像タイルを表示する方法を示します。
