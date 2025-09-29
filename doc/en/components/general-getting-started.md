@@ -59,7 +59,7 @@ ig
 Then choose React as framework, React TS as type, select `Default Top Navigation` project template, add a specific component/view or select `Complete & Run`.
 Additionally, you can read more about the Ignite UI CLI [here](general-cli-overview.md).
 
-Alternatively, you can use create-react-app. Following is a step-by-step instructions for creating React applications with Ignite UI React using this method.
+Alternatively, you can use popular frameworks such as Next.js, Vite or Expo as recommended by the React team. Following is a step-by-step instructions for creating React applications with Ignite UI React using one of these methods.
 
 ## Prerequisites
 
@@ -94,17 +94,10 @@ With above prerequisites installed, we can create a new React application.
 2 - Type one of these commands in terminal window:
 
 ```cmd
-npx create-react-app MyAppName --typescript
-```
-```cmd
-yarn create react-app MyAppName --typescript
+npx create-next-app@latest
 ```
 
-Depending on the approach `npx` or `yarn` will be required. Refer to this <a href="https://facebook.github.io/create-react-app/docs/adding-typescript" target="_blank">website</a> for more information on above commands.
-
-```cmd
-cd MyAppName
-```
+Then follow the prompts to choose a name for the project, whether to use Typescript or not and for various other options React provides. For this example `npx` and `create-next-app` are required. Refer to this <a href="https://react.dev/learn/creating-a-react-app" target="_blank">topic</a> for more information on the different ways to boilerplate a React application.
 
 <!-- end: React -->
 
