@@ -35,9 +35,9 @@ import { IgxAzureMapsMapImagery } from 'igniteui-angular-maps';
 // ...
 const tileSource = new IgxAzureMapsMapImagery();
 tileSource.apiKey = "YOUR_Azure_MAPS_API_KEY";
-tileSource.imageryStyle = AzureMapsImageryStyle.LabelsRoad; // or
-tileSource.imageryStyle = AzureMapsImageryStyle.Aerial; // or
-tileSource.imageryStyle = AzureMapsImageryStyle.Road;
+tileSource.imageryStyle = AzureMapsImageryStyle.Satellite; // or
+tileSource.imageryStyle = AzureMapsImageryStyle.Road; // or
+tileSource.imageryStyle = AzureMapsImageryStyle.DarkGrey; // Traffic, Weather etc.
 
 this.map.backgroundContent = tileSource;
 ```
@@ -49,9 +49,9 @@ import { AzureMapsImageryStyle } from 'igniteui-react-maps';
 // ...
 const tileSource = new IgrAzureMapsMapImagery();
 tileSource.apiKey = "YOUR_Azure_MAPS_API_KEY";
-tileSource.imageryStyle = AzureMapsImageryStyle.Imagery; // or
-tileSource.imageryStyle = AzureMapsImageryStyle.Terra; // or
-tileSource.imageryStyle = AzureMapsImageryStyle.Road;
+tileSource.imageryStyle = AzureMapsImageryStyle.Satellite; // or
+tileSource.imageryStyle = AzureMapsImageryStyle.Road; // or
+tileSource.imageryStyle = AzureMapsImageryStyle.DarkGrey; // Traffic, Weather etc.
 
 const geoMap = new IgrGeographicMap({ name: "geoMap" });
 geoMap.backgroundContent = tileSource;
@@ -60,9 +60,9 @@ geoMap.backgroundContent = tileSource;
 ```ts
 const tileSource = new IgcAzureMapsMapImagery();
 tileSource.apiKey = "YOUR_Azure_MAPS_API_KEY";
-tileSource.imageryStyle = AzureMapsImageryStyle.Imagery; // or
-tileSource.imageryStyle = AzureMapsImageryStyle.Terra; // or
-tileSource.imageryStyle = AzureMapsImageryStyle.Road;
+tileSource.imageryStyle = AzureMapsImageryStyle.Satellite; // or
+tileSource.imageryStyle = AzureMapsImageryStyle.Road; // or
+tileSource.imageryStyle = AzureMapsImageryStyle.DarkGrey; // Traffic, Weather etc.
 
 map.backgroundContent = tileSource;
 ```
