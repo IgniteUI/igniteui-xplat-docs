@@ -69,7 +69,6 @@ map.backgroundContent = tileSource;
 
 ## {Platform} Displaying Tile Series Overlays over Imagery from Azure Maps Example
 
-
 <img src="../images/general/Azure_Traffic_Tile_Series_With_Background.png" />
 
 <div class="divider--half"></div>
