@@ -71,9 +71,9 @@ map.backgroundContent = tileSource;
 @using IgniteUI.Blazor.Controls
 
 <IgbGeographicMap @ref="AzureMap"
-                          Height="100%" Width="100%"
-                          Zoomable="true"
-                          BackgroundContent="@AzureImagery">
+    Height="100%" Width="100%"
+    Zoomable="true"
+    BackgroundContent="@AzureImagery">
 </IgbGeographicMap>
 
 @code {
