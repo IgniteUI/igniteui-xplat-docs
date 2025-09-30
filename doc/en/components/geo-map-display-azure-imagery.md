@@ -2,11 +2,11 @@
 title: {Platform} Map | Data Visualization Tools | Displaying Azure Imagery | Infragistics
 _description: Use Infragistics' {Platform} to display imagery from Microsoft Azure Maps. View {ProductName} map tutorials!
 _keywords: {Platform} map, azure maps, {ProductName}, Infragistics, imagery tile source, map background
-mentionedTypes: ["XamGeographicMap", "AzureMapImagery"]
+mentionedTypes: ["XamGeographicMap", "AzureMapsImagery"]
 ---
 # {Platform} Displaying Imagery from Azure Maps <label>PREVIEW</label>
 
-The {Platform} `AzureMapImagery` is geographic imagery mapping service provided by Microsoft®. It provides several styles of geographic imagery tiles of the world. This geographic imagery service is accessible directly on the <a href="https://azure.microsoft.com/en-us/products/azure-maps" target="_blank">www.azure.microsoft.com</a> web site. The {ProductName} map component can display geographic imagery from Azure Maps in the map’s background content using the `AzureMapImagery` class.
+The {Platform} `AzureMapsImagery` is geographic imagery mapping service provided by Microsoft®. It provides several styles of geographic imagery tiles of the world. This geographic imagery service is accessible directly on the <a href="https://azure.microsoft.com/en-us/products/azure-maps" target="_blank">www.azure.microsoft.com</a> web site. The {ProductName} map component can display geographic imagery from Azure Maps in the map’s background content using the `AzureMapsImagery` class.
 
 ## {Platform} Displaying Imagery from Azure Maps Example
 
@@ -19,7 +19,7 @@ The {Platform} `AzureMapImagery` is geographic imagery mapping service provided 
 `sample="/maps/geo-map/display-azure-imagery", height="600", alt="{Platform} Displaying Imagery from Azure Maps Example"`
 
 ## Code Snippet
-The following code snippet shows how to display geographic imagery tiles from Azure Maps in {Platform} `XamGeographicMap` using `AzureMapImagery` class.
+The following code snippet shows how to display geographic imagery tiles from Azure Maps in {Platform} `XamGeographicMap` using `AzureMapsImagery` class.
 
 ```html
 <igx-geographic-map #map
@@ -31,9 +31,9 @@ The following code snippet shows how to display geographic imagery tiles from Az
 
 ```ts
 import { IgxGeographicMapComponent } from 'igniteui-angular-maps';
-import { IgxAzureMapImagery } from 'igniteui-angular-maps';
+import { IgxAzureMapsImagery } from 'igniteui-angular-maps';
 // ...
-const tileSource = new IgxAzureMapImagery();
+const tileSource = new IgxAzureMapsImagery();
 tileSource.apiKey = "YOUR_Azure_MAPS_API_KEY";
 tileSource.imageryStyle = AzureMapsImageryStyle.Satellite; // or
 tileSource.imageryStyle = AzureMapsImageryStyle.TerraOverlay; // or
@@ -44,10 +44,10 @@ this.map.backgroundContent = tileSource;
 
 ```ts
 import { IgrGeographicMap } from 'igniteui-react-maps';
-import { IgrAzureMapImagery } from 'igniteui-react-maps';
+import { IgrAzureMapsImagery } from 'igniteui-react-maps';
 import { AzureMapsImageryStyle } from 'igniteui-react-maps';
 // ...
-const tileSource = new IgrAzureMapImagery();
+const tileSource = new IgrAzureMapsImagery();
 tileSource.apiKey = "YOUR_Azure_MAPS_API_KEY";
 tileSource.imageryStyle = AzureMapsImageryStyle.Satellite; // or
 tileSource.imageryStyle = AzureMapsImageryStyle.Road; // or
@@ -58,7 +58,7 @@ geoMap.backgroundContent = tileSource;
 ```
 
 ```ts
-const tileSource = new IgcAzureMapImagery();
+const tileSource = new IgcAzureMapsImagery();
 tileSource.apiKey = "YOUR_Azure_MAPS_API_KEY";
 tileSource.imageryStyle = AzureMapsImageryStyle.Satellite; // or
 tileSource.imageryStyle = AzureMapsImageryStyle.Road; // or
@@ -104,7 +104,7 @@ map.backgroundContent = tileSource;
 `sample="/maps/geo-map/display-azure-imagery", height="600", alt="{Platform} Displaying Imagery from Azure Maps Example"`
 
 ## Code Snippet
-The following code snippet shows how to display geographic imagery tiles ontop of a background imagery joining eg. traffic with a dark grey map for the {Platform} `XamGeographicMap` using `AzureMapImagery` and `GeographicTileSeries` classes.
+The following code snippet shows how to display geographic imagery tiles ontop of a background imagery joining eg. traffic with a dark grey map for the {Platform} `XamGeographicMap` using `AzureMapsImagery` and `GeographicTileSeries` classes.
 
 ```html
 <igx-geographic-map #map height="100%" width="100%" zoomable="true">
@@ -269,12 +269,12 @@ window.addEventListener("load", () => {
 ```
 
 ## Properties
-The following table summarized properties of the `AzureMapImagery` class:
+The following table summarized properties of the `AzureMapsImagery` class:
 
 | Property Name  | Property Type   | Description   |
 |----------------|-----------------|---------------|
 |`ApiKey`|string|Represents the property for setting an API key required for the Azure Maps imagery service. You must obtain this key from the <a href="https://azure.microsoft.com/en-us/products/azure-maps" target="_blank">azure.microsoft.com</a> website.|
-|`ImageryStyle`|`AzureMapsImageryStyle`|Represents the property for setting the Azure Maps imagery tiles map style. This property can be set to the following `AzureMapsImageryStyle` enumeration values: <ul><li> Aerial - Specifies the Aerial map style without road or labels overlay</li> <li> LabelsRoad - Specifies the Aerial map style with road and labels overlay</li><li> Road - Specifies the Roads map style without Aerial overlay</li></ul>|
+|`ImageryStyle`|`AzureMapsImageryStyle`|Represents the property for setting the Azure Maps imagery tiles map style. This property can be set to the following `AzureMapsImageryStyle` enumeration values: <ul><li> Satellite - Specifies the Satellite map style without road or labels overlay</li> <li> Road - Specifies the Aerial map style with road and labels overlay</li><li> Road - Specifies the Roads map style without aerial overlay</li></ul>|
 
 ## API References
 
