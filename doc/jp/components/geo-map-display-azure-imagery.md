@@ -5,7 +5,7 @@ _keywords: {Platform} map, azure maps, {ProductName}, Infragistics, imagery tile
 mentionedTypes: ["XamGeographicMap", "AzureMapImagery"]
 _language: ja
 ---
-# {Platform} Azure Maps からの画像の表示
+# {Platform} Azure Maps からの画像の表示 <label>PREVIEW</label>
 
 {Platform} `AzureMapImagery` は、Microsoft® が提供する地理的画像マッピング サービスです。
 世界の地理的画像タイルを複数のスタイルで供します。この地理的画像サービスは、<a href="https://azure.microsoft.com/ja-jp/products/azure-maps" target="_blank">www.azure.microsoft.com</a> ウェブサイトから直接アクセスできます。{ProductName} Map コンポーネントは、`AzureMapImagery` クラスを使用して、地図の背景コンテンツに Azure Maps の地理的画像を表示します。

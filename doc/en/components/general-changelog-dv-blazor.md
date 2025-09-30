@@ -16,7 +16,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### {PackageMaps} (Geographic Map)
 
-- New [Azure Maps](geo-map-display-azure-imagery.md). This is a new geographic imagery mapping service provided by Microsoft® for the Infragistics Geographic Map.
+- <label>PREVIEW</label> [Azure Maps](geo-map-display-azure-imagery.md). This is a new geographic imagery mapping service provided by Microsoft® for the Infragistics Geographic Map.
 
 ### Bug Fixes
 
@@ -55,7 +55,7 @@ The following properties of these components are now nullable:
 
 ### {PackageCharts} (Charts)
 
-- Add `MaximumExtent` and `MaximumExtentPercentage` properties for use with axis labels.
+- Added <label>NEW</label> `MaximumExtent` and `MaximumExtentPercentage` properties for use with axis labels.
 
 ## **{PackageVerChanges-25-1-JUNE}**
 
@@ -69,23 +69,23 @@ The following properties of these components are now nullable:
 
 ### {PackageCharts} (Charts)
 
-- New [Chart Data Annotations](charts/features/chart-data-annotations.md)
-  - Data Annotation Band Layer (Beta)
-  - Data Annotation Line Layer (Beta)
-  - Data Annotation Rect Layer (Beta)
-  - Data Annotation Slice Layer (Beta)
-  - Data Annotation Strip Layer (Beta)
+- Added <label>PREVIEW</label> [Chart Data Annotations](charts/features/chart-data-annotations.md) layers:
+  - Data Annotation Band Layer   
+  - Data Annotation Line Layer   
+  - Data Annotation Rect Layer   
+  - Data Annotation Slice Layer  
+  - Data Annotation Strip Layer   
 
-- The [Data Tooltip](charts/features/chart-data-tooltip.md) and [Data Legend](charts/features/chart-data-legend.md) expose a new `LayoutMode` property that you can use to layout the contents of the tooltip or legend in a table or vertical layout structure. 
+- The [Data Tooltip](charts/features/chart-data-tooltip.md) and [Data Legend](charts/features/chart-data-legend.md) expose <label>PREVIEW</label> `LayoutMode` property that you can use to layout the contents of the tooltip or legend in a table or vertical layout structure. 
 
-- The `DefaultInteraction` property of the charts has been updated to include a new enumeration - `DragSelect` in which the dragged preview Rect will select the points contained within. (Beta)
+- <label>PREVIEW</label> The `DefaultInteraction` property of the charts has been updated to include a new enumeration - `DragSelect` in which the dragged preview Rect will select the points contained within. 
 
-- The [ValueOverlay and ValueLayer](charts/features/chart-overlays.md), in addition to the new [Chart Data Annotations](charts/features/chart-data-annotations.md) listed above now expose an `OverlayText` property that can be used to overlay additional annotation text in the plot area. These appearance of these annotations can be configured by using the many OverlayText-prefixed properties. For example, the `OverlayTextBrush` property will configure the color of the overlay text. (Beta)
+- <label>PREVIEW</label> The [ValueOverlay and ValueLayer](charts/features/chart-overlays.md), in addition to the <label>PREVIEW</label> [Chart Data Annotations](charts/features/chart-data-annotations.md) listed above now expose an `OverlayText` property that can be used to overlay additional annotation text in the plot area. These appearance of these annotations can be configured by using the many OverlayText-prefixed properties. For example, the `OverlayTextBrush` property will configure the color of the overlay text. 
 
-- New [Trendline Layer](charts/features/chart-trendlines.md) series type that allows you to apply a single trend line per trend line layer to a particular series. This allows the usage of multiple trend lines on a single series since you can have multiple [TrendlineLayer](charts/features/chart-overlays.md) series types in the chart.
+- <label>NEW</label> [Trendline Layer](charts/features/chart-trendlines.md) series type that allows you to apply a single trend line per trend line layer to a particular series. This allows the usage of multiple trend lines on a single series since you can have multiple [TrendlineLayer](charts/features/chart-overlays.md) series types in the chart.
 
 ### General
-- New `Tooltip` new component provides a way to display a tooltip for a specific element. To use, set content as desired and link via the `Anchor` property to the target element's id:
+- <label>NEW</label> `Tooltip` component provides a way to display a tooltip for a specific element. To use, set content as desired and link via the `Anchor` property to the target element's id:
     ```razor
     <IgbButton id="target-button">Hover me</IgbButton>
     <IgbTooltip Anchor="target-button">
@@ -156,6 +156,7 @@ The following properties of these components are now nullable:
     - `Autocapitalize` & `InputMode` are now `string` properties instead of explicit enums
 
 ### {PackageGrids} (Grids)
+
 - `Column`
   - Added events: `HiddenChange`, `ExpandedChange`, `WidthChange`, `PinnedChange`
 - `Grid`
@@ -293,15 +294,11 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 
 ### {PackageCharts} (Charts)
 
-DashboardTile (Beta)
-
-- New [Dashboard Tile](dashboard-tile.md) component is a container control that analyzes and visualizes a bound ItemsSource collection or single point and returns an appropriate data visualization based on the schema and count of the data. This control utilizes a built-in [Toolbar](menus/toolbar.md) component to allow you to make changes to the visualization at runtime, allowing you to see many different visualizations of your data with minimal code.
+- <label>PREVIEW</label> [Dashboard Tile](dashboard-tile.md) component is a container control that analyzes and visualizes a bound ItemsSource collection or single point and returns an appropriate data visualization based on the schema and count of the data. This control utilizes a built-in [Toolbar](menus/toolbar.md) component to allow you to make changes to the visualization at runtime, allowing you to see many different visualizations of your data with minimal code.
 
 ### {PackageCharts} (Inputs)
 
-- New ColorEditor (Beta) & Toolbar ToolAction (Beta)
-
-This new [Color Editor](inputs/color-editor.md) can be used as a standalone color picker and is now integrated into the [Toolbar](menus/toolbar.md) component to update visualizations at runtime.
+- <label>PREVIEW</label> [Color Editor](inputs/color-editor.md) can be used as a standalone color picker and is now integrated into <label>PREVIEW</label> ToolAction of [Toolbar](menus/toolbar.md) component to update visualizations at runtime.
 
 **Breaking Changes**
 
@@ -428,7 +425,7 @@ The type of Values from `PivotConfiguration` option is now array of IgbPivotValu
 
 * [Data Legend Grouping](charts/features/chart-data-legend.md#{PlatformLower}-data-legend-grouping) & [Data Tooltip Grouping](charts/features/chart-data-tooltip.md#{PlatformLower}-data-tooltip-grouping-for-data-chart) - New grouping feature added. The property `GroupRowVisible` toggles grouping with each series opting in can assign group text via the `DataLegendGroup` property. If the same value is applied to more than one series then they will appear grouped. Useful for large datasets that need to be categorized and organized for all users.
 
-- [Chart Selection](charts/features/chart-data-selection.md) - New series selection styling. This is adopted broadly across all category, financial and radial series for `CategoryChart` and `XamDataChart`. Series can be clicked and shown a different color, brightened or faded, and focus outlines. Manage which items are effected through individual series or entire data item. Multiple series and markers are supported. Useful for illustrating various differences or similarities between values of a particular dataitem. Also  `SelectedSeriesItemsChanged` event and `SelectedSeriesItems` are available for additional help to build out robust business requirements surrounding other actions that can take place within an application such as a popup or other screen with data analysis based on the selection.  
+- [Chart Selection](charts/features/chart-data-selection.md) - New series selection styling. This is adopted broadly across all category, financial and radial series for `CategoryChart` and `XamDataChart`. Series can be clicked and shown a different color, brightened or faded, and focus outlines. Manage which items are effected through individual series or entire data item. Multiple series and markers are supported. Useful for illustrating various differences or similarities between values of a particular data item. Also  `SelectedSeriesItemsChanged` event and `SelectedSeriesItems` are available for additional help to build out robust business requirements surrounding other actions that can take place within an application such as a popup or other screen with data analysis based on the selection.  
 
 - [Proportional Category Angle Axis](charts/types/radial-chart.md) - New axes for the Radial Pie Series in the `XamDataChart`, to enable creating pie charts in the allowing robust visualizations using all the added power of the data chart.
 
@@ -530,7 +527,7 @@ Data Filtering via the `InitialFilter` property. Apply filter expressions to fil
 
 ## **{PackageVerChanges-23-2}**
 
-### {PackageGrids} (Toolbar - Beta)
+### {PackageGrids} - Toolbar - <label>PREVIEW</label> 
 
 * Save tool action has been added to save the chart to an image via the clipboard.
 * Vertical orientation has been added via the toolbar's `Orientation` property. By default the toolbar is horizontal, now the toolbar can be shown in vertical orientation where the tools will popup to the left/right respectfully. 
@@ -544,7 +541,7 @@ Data Filtering via the `InitialFilter` property. Apply filter expressions to fil
 
 ### New Components
 
-* [Toolbar](menus/toolbar.md) - Beta. This component is a companion container for UI operations to be used primarily with our charting components. The toolbar will dynamically update with a preset of properties and tools when linked to our `XamDataChart` or `CategoryChart` components, but it also gives you the ability to create custom tools for your project.
+* <label>PREVIEW</label> [Toolbar](menus/toolbar.md) - component is a companion container for UI operations to be used primarily with our charting components. The toolbar will dynamically update with a preset of properties and tools when linked to our `XamDataChart` or `CategoryChart` components, but it also gives you the ability to create custom tools for your project.
 
 ### {PackageCharts} (Charts)
 
@@ -664,7 +661,7 @@ Added New Feature - [Row Paging](grids/data-grid/row-paging.md) which is used to
 
 ### {PackageDockManager} (Dock Manager)
 
-* The {Platform} Dock Manager is now in "Preview" state, that provides a way to manage a complex layout using different type of panes with various sizes, positions, and behaviors, and that can be docked to various locations within an app. The [Dock Manager](layouts/dock-manager.md) allows your end-users to customize it further by pinning, resizing, moving, floating, and hiding panes.
+* The {Platform} Dock Manager is now in <label>PREVIEW</label> state, that provides a way to manage a complex layout using different type of panes with various sizes, positions, and behaviors, and that can be docked to various locations within an app. The [Dock Manager](layouts/dock-manager.md) allows your end-users to customize it further by pinning, resizing, moving, floating, and hiding panes.
 
 ### New Components
 
@@ -687,7 +684,7 @@ Added New Feature - [Row Paging](grids/data-grid/row-paging.md) which is used to
 
 ### {PackageInputs} (Inputs)
 
-- A new `ValueChanged` event supports 2-way binding and should only be handled if you have not bound the `Value` property. In order to read the Value field from the control without databinding the `ValueChanged` event should be handled, otherwise if your data is not bound you should use GetCurrentValueAsync to read the controls Value.
+- A new `ValueChanged` event supports 2-way binding and should only be handled if you have not bound the `Value` property. In order to read the Value field from the control without data binding the `ValueChanged` event should be handled, otherwise if your data is not bound you should use GetCurrentValueAsync to read the controls Value.
 
 #### Date Picker
 - Changed `ValueChanged` event to `SelectedValueChanged`.

@@ -6,7 +6,7 @@ mentionedTypes: ["ColorEditor"]
 namespace: Infragistics.Controls
 ---
 
-# {Platform} Color Editor Overview (preview)
+# {Platform} Color Editor Overview <label>PREVIEW</label>
 The {ProductName} Color Editor is a lightweight color picker component. The Color Editor can pop open by clicking the brush icon. Both the rgba and hex values can be obtained from the desired color along the bottom. These values will update when the three sliders are modified. The center box is designed for adjusting the saturation and brightness along with two adjacent sliders for adjusting the rgb and luminance values. Rgb registers between (1-255). The lightness registers between(0-1).
 
 ## {Platform} Color Editor Example

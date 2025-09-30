@@ -4,7 +4,7 @@ _description: Use Infragistics' {Platform} to display imagery from Microsoft Azu
 _keywords: {Platform} map, azure maps, {ProductName}, Infragistics, imagery tile source, map background
 mentionedTypes: ["XamGeographicMap", "AzureMapImagery"]
 ---
-# {Platform} Displaying Imagery from Azure Maps
+# {Platform} Displaying Imagery from Azure Maps <label>PREVIEW</label>
 
 The {Platform} `AzureMapImagery` is geographic imagery mapping service provided by Microsoft®. It provides several styles of geographic imagery tiles of the world. This geographic imagery service is accessible directly on the <a href="https://azure.microsoft.com/en-us/products/azure-maps" target="_blank">www.azure.microsoft.com</a> web site. The {ProductName} map component can display geographic imagery from Azure Maps in the map’s background content using the `AzureMapImagery` class.
 
