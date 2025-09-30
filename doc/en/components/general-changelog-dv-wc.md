@@ -14,7 +14,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### {PackageMaps} (Geographic Map)
 
-- <label>NEW</label> [Azure Maps](geo-map-display-azure-imagery.md). This is a new geographic imagery mapping service provided by Microsoft® for the Infragistics Geographic Map.
+- <label>PREVIEW</label> [Azure Maps](geo-map-display-azure-imagery.md). This is a new geographic imagery mapping service provided by Microsoft® for the Infragistics Geographic Map.
 
 ### Enhancements
 - Form associated custom elements now expose the **ig-invalid** custom state for styling with the `:state()` CSS selector.

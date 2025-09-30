@@ -11,7 +11,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
-- <label>NEW</label> [Azure Maps](geo-map-display-azure-imagery.md). This is a new geographic imagery mapping service provided by Microsoft® for the Infragistics Geographic Map.
+- <label>PREVIEW</label> [Azure Maps](geo-map-display-azure-imagery.md). This is a new geographic imagery mapping service provided by Microsoft® for the Infragistics Geographic Map.
 
 ### Enhancements
 - Added enhancement DatePicker should update calendar view on typing, as Date Range Picker [1818](https://github.com/IgniteUI/igniteui-webcomponents/issues/1818)
