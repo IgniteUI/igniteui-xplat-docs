@@ -67,6 +67,34 @@ tileSource.imageryStyle = AzureMapsImageryStyle.DarkGrey; // Traffic, Weather et
 map.backgroundContent = tileSource;
 ```
 
+```razor
+@using IgniteUI.Blazor.Controls
+
+<IgbGeographicMap @ref="AzureMap"
+    Height="100%" Width="100%"
+    Zoomable="true"
+    BackgroundContent="@AzureImagery">
+</IgbGeographicMap>
+
+@code {
+    
+    private IgbGeographicMap AzureMap;
+    private IgbAzureMapsImagery AzureImagery { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await base.OnAfterRenderAsync(firstRender);
+
+        //Update Map Background
+        AzureImagery = new IgbAzureMapsImagery
+        {
+            ApiKey = AzureKey,
+            ImageryStyle = AzureMapsImageryStyle.Satellite
+        };
+    }
+}
+```
+
 ## {Platform} Displaying Tile Series Overlays over Imagery from Azure Maps Example
 
 <img src="../images/general/Azure_Traffic_Tile_Series_With_Background.png" />
