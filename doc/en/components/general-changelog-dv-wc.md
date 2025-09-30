@@ -14,9 +14,62 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### {PackageMaps} (Geographic Map)
 
-- <label>PREVIEW</label> [Azure Maps](geo-map-display-azure-imagery.md). This is a new geographic imagery mapping service provided by Microsoft® for the Infragistics Geographic Map.
+#### Azure Map Imagery Support (Preview)
+
+The `IgcGeographicMap` now supports Azure-based map imagery, allowing developers to display detailed, dynamic maps across multiple application types. You can combine multiple map layers, visualize geographic data, and create interactive mapping experiences with ease.
+
+Note: Support for Bing Maps imagery is being phased out. Existing enterprise keys can still be used to access Bing Maps, ensuring your current applications continue to function while you transition to Azure maps.
+
+Explore some of the publicly available [Azure maps here](https://azure.microsoft.com/en-us/products/azure-maps).
+
+### {PackageCharts} (Charts)
+
+#### New Axis Label Events (Preview)
+
+The following events have been added to the `IgcDataChart` to allow you to detect different operations on the axis labels:
+
+- `LabelMouseDown`
+- `LabelMouseUp`
+- `LabelMouseEnter`
+- `LabelMouseLeave`
+- `LabelMouseMove`
+- `LabelMouseClick`
+
+#### Companion Axis (Preview)
+
+Added `CompanionAxis` properties to the X and Y axis that allow you to quickly create a clone of an existing axis. When enabled using the `CompanionAxisEnabled` property, this will default the cloned axis to the opposite position of the chart and you can then configure that axes' properties.
+
+#### RadialPieSeries Inset Outlines (Preview)
+
+There is a new property called `UseInsetOutlines` to control how outlines on the `RadialPieSeries` are rendered. Setting this value to `true` will inset the outlines within the slice shape, whereas a `false` (default) value will place the outlines half-in half-out along the edge of the slice shape.
 
 ### Enhancements
+
+#### IgrBulletGraph
+
+- Added new `LabelsVisible` property (Preview)
+
+#### Charts
+
+- New properties added to the DataToolTipLayer, ItemToolTipLayer, and CategoryToolTipLayer to aid in styling: `ToolTipBackground`, `ToolTipBorderBrush`, and `ToolTipBorderThickness`
+
+- New properties added to the DataLegend to aid in styling: `ContentBackground`, `ContentBorderBrush`, and `ContentBorderThickness`. The `ContentBorderBrush` and `ContentBorderThickness` default to transparent and 0 respectively, so in order to see these borders, you will need to set these properties.
+
+- Added a new property to `ChartMouseEventArgs` called `WorldPosition` that provides the world relative position of the mouse. This position will be a value between 0 and 1 for both the X and Y axis within the axis space.
+
+- Added `HighlightingFadeOpacity` to `SeriesViewer` and `DomainChart`. This allows you to configure the opacity applied to highlighted series.
+
+- Expose `CalloutLabelUpdating` event for domain charts.
+
+#### IgcDataGrid
+
+-  Added new property called `stopPropagation` to DataGrid which prevents mouse events from bubbling to parent elements
+
+#### IgcLinearGauge
+
+- Added new `LabelsVisible` property (Preview)
+
+#### Other Enhancements
 - Form associated custom elements now expose the **ig-invalid** custom state for styling with the `:state()` CSS selector.
   [See here for additional information](https://developer.mozilla.org/en-US/docs/Web/CSS/:state)
 - Form associated custom elements validity behavior. Now elements will try to mimic `:user-invalid`, and won't apply invalid
@@ -47,6 +100,12 @@ All notable changes for each version of {ProductName} are documented on this pag
 |[1768](https://github.com/IgniteUI/igniteui-webcomponents/pull/1768)|Textarea|Readonly state styles|
 |[1755](https://github.com/IgniteUI/igniteui-webcomponents/pull/1755)|Dropdown|Icon size in Bootstrap theme|
 |[1739](https://github.com/IgniteUI/igniteui-webcomponents/pull/1739)|Inputs|Label positioning and transition logic in Material theme|
+|27304|IgcDataChart|Zoom rectangle is not positioned the same as the background rectangle|
+|30600|IgcDoughnutChart|No textStyle property for either the chart or series (pie chart has this)|
+|31624|IgcCategoryChart|Resizing the containing window of the IgcCategoryChart causes the chart to fail to render the series|
+|33861|Excel Library|Adding line chart corrupts excel File for German culture|
+|37930|IgcDataChart|Data Annotation Overlay Text Color not working|
+|38231|IgcGrid|Unpinned column does not return to the original position if hidden columns exist|
 
 
 ## **{PackageVerChanges-25-1-JUL-2}**

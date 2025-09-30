@@ -16,7 +16,96 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### {PackageMaps} (Geographic Map)
 
-- <label>PREVIEW</label> [Azure Maps](geo-map-display-azure-imagery.md). This is a new geographic imagery mapping service provided by Microsoft® for the Infragistics Geographic Map.
+**Breaking Changes**
+
+- `AzureMapsMapImagery` was renamed to `AzureMapsImagery`
+- `AzureMapsImageryStyle.Imagery` was renamed to `AzureMapsImageryStyle.Satellite`
+- The following `AzureMapsImageryStyle` enum values were renamed to include the Overlay suffix:
+  - `TerraOverlay`,
+  - `LabelsRoadOverlay`
+  - `LabelsDarkGreyOverlay`
+  - `HybridRoadOverlay`
+  - `HybridDarkGreyOverlay`
+  - `WeatherRadarOverlay`
+  - `WeatherInfraredOverlay`
+  - `TrafficAbsoluteOverlay`
+  - `TrafficRelativeOverlay`
+  - `TrafficRelativeDarkOverlay`
+  - `TrafficDelayOverlay`
+  - `TrafficReducedOverlay`
+
+### {PackageCharts} (Charts)
+
+#### New Axis Label Events (Preview)
+
+The following events have been added to the `IgbDataChart` to allow you to detect different operations on the axis labels:
+
+- `LabelMouseDown`
+- `LabelMouseUp`
+- `LabelMouseEnter`
+- `LabelMouseLeave`
+- `LabelMouseMove`
+- `LabelMouseClick`
+
+#### Companion Axis (Preview)
+
+Added `CompanionAxis` properties to the X and Y axis that allow you to quickly create a clone of an existing axis. When enabled using the `CompanionAxisEnabled` property, this will default the cloned axis to the opposite position of the chart and you can then configure that axes' properties.
+
+#### RadialPieSeries Inset Outlines (Preview)
+
+There is a new property called `UseInsetOutlines` to control how outlines on the `RadialPieSeries` are rendered. Setting this value to `true` will inset the outlines within the slice shape, whereas a `false` (default) value will place the outlines half-in half-out along the edge of the slice shape.
+
+### Bug Fixes
+
+| Bug Number | Control | Description      |
+|------------|---------|------------------|
+|27304|IgbDataChart|Zoom rectangle is not positioned the same as the background rectangle|
+|30600|IgbDoughnutChart|No textStyle property for either the chart or series (pie chart has this)|
+|31624|IgbCategoryChart|Resizing the containing window of the IgxCategoryChart causes the chart to fail to render the series|
+|33861|Excel Library|Adding line chart corrupts excel File for German culture|
+|37307|IgbCheckBox|JS Heap, Nodes, and Listeners leakage on IgbCheckBox|
+|37930|IgbDataChart|Data Annotation Overlay Text Color not working|
+|38231|IgbGrid|Unpinned column does not return to the original position if hidden columns exist|
+
+### Enhancements
+
+#### IgbBulletGraph
+
+- Added new `LabelsVisible` property (Preview)
+
+#### Charts
+
+- New properties added to the DataToolTipLayer, ItemToolTipLayer, and CategoryToolTipLayer to aid in styling: `ToolTipBackground`, `ToolTipBorderBrush`, and `ToolTipBorderThickness`
+
+- New properties added to the DataLegend to aid in styling: `ContentBackground`, `ContentBorderBrush`, and `ContentBorderThickness`. The `ContentBorderBrush` and `ContentBorderThickness` default to transparent and 0 respectively, so in order to see these borders, you will need to set these properties.
+
+- Added a new property to `ChartMouseEventArgs` called `WorldPosition` that provides the world relative position of the mouse. This position will be a value between 0 and 1 for both the X and Y axis within the axis space.
+
+- Added `HighlightingFadeOpacity` to `SeriesViewer` and `DomainChart`. This allows you to configure the opacity applied to highlighted series.
+
+- Expose `CalloutLabelUpdating` event for domain charts.
+
+#### IgbDataGrid
+
+-  Added new property called `stopPropagation` to DataGrid which prevents mouse events from bubbling to parent elements
+
+#### IgbLinearGauge
+
+- Added new `LabelsVisible` property (Preview)
+
+
+### {PackageVerChanges-25-1-AUG}
+
+### {PackageMaps} (Geographic Map)
+
+#### Azure Map Imagery Support (Preview)
+
+The `IgbGeographicMap` now supports Azure-based map imagery, allowing developers to display detailed, dynamic maps across multiple application types. You can combine multiple map layers, visualize geographic data, and create interactive mapping experiences with ease.
+
+Note: Support for Bing Maps imagery is being phased out. Existing enterprise keys can still be used to access Bing Maps, ensuring your current applications continue to function while you transition to Azure maps.
+
+Explore some of the publicly available [Azure maps here](https://azure.microsoft.com/en-us/products/azure-maps).
+
 
 ### Bug Fixes
 
@@ -24,7 +113,6 @@ All notable changes for each version of {ProductName} are documented on this pag
 |------------|---------|------------------|
 |26952|IgbTabs|e.Detail is null in Change event in Razor/JS|
 |26953|IgbTabs|Marking a tab selected won't apply on subsequent attempts|
-|37832|IgbDataLegend|After grouping and summing data in dashboard tooltip appears to show badge in total section|
 |31910|IgbXDatePicker|An error will happen when I bind a value using the "@bind-Value" syntax and click the clear button|
 |31323|IgbDataChart, IgbGrid, IgbCombo|A NullReferenceException happens when the data type has a collection-type property, and the 1st element of that collection is null|
 |38903|IgbTabs|Dropdown list is not displaying in the correct location for components inside the tab|
