@@ -5,7 +5,7 @@ _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widge
 mentionedTypes: ["Toolbar", "CategoryChart", "XamDataChart", "XamRadialGauge", "XamLinearGauge", "XamGeographicMap"]
 ---
 
-# {Platform} Dashboard Tile Overview
+# {Platform} Dashboard Tile <label>PREVIEW</label>
 
 The {Platform} Dashboard Tile is a automatic data visualization component which determines via analysis of a DataSource collection/array or single data point what would be the most appropriate visualization to display. It then also provides a further suite of tools in its embedded `Toolbar` that let you alter the visualization that is presented in a variety of ways. 
 

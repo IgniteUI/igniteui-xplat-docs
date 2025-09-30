@@ -59,7 +59,7 @@ The following sample demonstrates usage of the different `ValueLines` in the `Ca
 
 You can also plot built-in financial overlays and indicators in {Platform} [Stock Chart](../types/stock-chart.md).
 
-## Chart Overlay Text (Beta)
+## Chart Overlay Text <label>PREVIEW</label>
 
 The {Platform} `ValueOverlay`, `ValueLayer`, and all Data Annotation Layers can render custom overlay text inside plot area of the XamDataChart component. You can use this overlay text to annotate important events (e.g. company quarter reports) on x-axis or important values on y-axis in relationship to the layers.
 

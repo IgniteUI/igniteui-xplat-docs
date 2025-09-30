@@ -1247,7 +1247,7 @@
         {
           "name": "チャート テータ注釈",
           "href": "charts/features/chart-data-annotations.md",
-          "status": "NEW"
+          "status": "PREVIEW"
         },
         {
           "name": "ダッシュボードでのチャート作成",
