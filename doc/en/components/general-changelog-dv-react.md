@@ -42,6 +42,17 @@ Added `CompanionAxis` properties to the X and Y axis that allow you to quickly c
 
 There is a new property called `UseInsetOutlines` to control how outlines on the `RadialPieSeries` are rendered. Setting this value to **true** will inset the outlines within the slice shape, whereas a **false** (default) value will place the outlines half-in half-out along the edge of the slice shape.
 
+### Bug Fixes
+
+| Bug Number | Control | Description |
+|------------|---------|-------------|
+|27304|IgrDataChart|Zoom rectangle is not positioned the same as the background rectangle|
+|30600|IgrDoughnutChart|No textStyle property for either the chart or series (pie chart has this)|
+|31624|IgrCategoryChart|Resizing the containing window of the IgrCategoryChart causes the chart to fail to render the series|
+|33861|Excel Library|Adding line chart corrupts excel File for German culture|
+|37930|IgrDataChart|Data Annotation Overlay Text Color not working|
+|38231|IgrGrid|Unpinned column does not return to the original position if hidden columns exist|
+
 ### Enhancements
 
 #### IgrBulletGraph
@@ -68,7 +79,9 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 
 - Added new `LabelsVisible` property (Preview)
 
-#### Other Enhancements
+## **{PackageVerChanges-25-1-SEP}**
+
+#### Enhancements
 - Added enhancement DatePicker should update calendar view on typing, as Date Range Picker [1818](https://github.com/IgniteUI/igniteui-webcomponents/issues/1818)
 
 ### Bug Fixes
@@ -86,13 +99,6 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 |[1827](https://github.com/IgniteUI/igniteui-webcomponents/pull/1827)|Select|Icon sizes styles for Indigo theme|
 |[1809](https://github.com/IgniteUI/igniteui-webcomponents/pull/1809)|Switch|Use the new thumb hover property|
 |[1837](https://github.com/IgniteUI/igniteui-webcomponents/pull/1837)|TileManager|Incorrect escape of internal regex|
-|27304|IgrDataChart|Zoom rectangle is not positioned the same as the background rectangle|
-|30600|IgrDoughnutChart|No textStyle property for either the chart or series (pie chart has this)|
-|31624|IgrCategoryChart|Resizing the containing window of the IgrCategoryChart causes the chart to fail to render the series|
-|33861|Excel Library|Adding line chart corrupts excel File for German culture|
-|37930|IgrDataChart|Data Annotation Overlay Text Color not working|
-|38231|IgrGrid|Unpinned column does not return to the original position if hidden columns exist|
-
 
 ## **{PackageVerChanges-25-1-AUG}**
 
