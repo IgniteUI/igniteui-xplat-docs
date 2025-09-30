@@ -566,7 +566,7 @@
       {        
         "name": "Displaying Azure Imagery",
         "href": "geo-map-display-azure-imagery.md",
-        "status": "NEW"
+        "status": "PREVIEW"
       },
       {
         "exclude": ["Blazor"],
