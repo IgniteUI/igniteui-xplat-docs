@@ -97,7 +97,7 @@ map.backgroundContent = tileSource;
 
 ## {Platform} Displaying Tile Series Overlays over Imagery from Azure Maps Example
 
-When working with the `GeographicTileSeries`, you can combine **overlays** (traffic, weather, labels) on top of a **base map style** such as eg. **Satellite**, **Road**, **Terra**, or **DarkGrey**.  
+When working with the `GeographicTileSeries`, you can combine **overlays** (traffic, weather, labels) on top of a **base map style** such as eg. **Satellite**, **Road**, or **DarkGrey**. Using **TerraOverlay** with eg. **Satellite** to visualize terrain.
 
 - **Base Styles**: Satellite, Road, Terra, and DarkGrey provide the core background tiles.  
 - **Overlay Styles**: Traffic and Weather imagery (e.g., `TrafficRelativeOverlay`, `WeatherRadarOverlay`) are designed to be layered on top of a base style by assigning them to a tile series.  
