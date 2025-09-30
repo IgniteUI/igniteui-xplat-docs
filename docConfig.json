@@ -339,6 +339,7 @@
             { "name": "{PackageVerChanges-25-1-JUN}", "value": "6.0.0 (June 2025)"},
             { "name": "{PackageVerChanges-25-1-JUL}", "value": "6.0.1 (July 2025)"},
             { "name": "{PackageVerChanges-25-1-JUL-2}", "value": "6.1.0 (July 2025)"},
+            { "name": "{PackageVerChanges-25-1-AUG}", "value": "6.2.0 (August 2025)"},
             { "name": "{PackageCommonVerChanges-1.0.0}", "value": "1.0.0 (November 2021)"},
             { "name": "{PackageCommonVerChanges-2.0.0}", "value": "2.0.0 (February 2022)"},
             { "name": "{PackageCommonVerChanges-2.1.0}", "value": "2.1.0 (March 2022)"},

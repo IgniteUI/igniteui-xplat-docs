@@ -43,6 +43,17 @@ Added `CompanionAxis` properties to the X and Y axis that allow you to quickly c
 
 There is a new property called `UseInsetOutlines` to control how outlines on the `RadialPieSeries` are rendered. Setting this value to **true** will inset the outlines within the slice shape, whereas a **false** (default) value will place the outlines half-in half-out along the edge of the slice shape.
 
+### Bug Fixes
+
+| Bug Number | Control | Description |
+|------------|---------|-------------|
+|27304|IgcDataChart|Zoom rectangle is not positioned the same as the background rectangle|
+|30600|IgcDoughnutChart|No textStyle property for either the chart or series (pie chart has this)|
+|31624|IgcCategoryChart|Resizing the containing window of the IgcCategoryChart causes the chart to fail to render the series|
+|33861|Excel Library|Adding line chart corrupts excel File for German culture|
+|37930|IgcDataChart|Data Annotation Overlay Text Color not working|
+|38231|IgcGrid|Unpinned column does not return to the original position if hidden columns exist|
+
 ### Enhancements
 
 #### IgrBulletGraph
@@ -69,7 +80,9 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 
 - Added new `LabelsVisible` property (Preview)
 
-#### Other Enhancements
+## **{PackageVerChanges-25-1-AUG}**
+
+#### Enhancements
 - Form associated custom elements now expose the **ig-invalid** custom state for styling with the `:state()` CSS selector.
   [See here for additional information](https://developer.mozilla.org/en-US/docs/Web/CSS/:state)
 - Form associated custom elements validity behavior. Now elements will try to mimic `:user-invalid`, and won't apply invalid
@@ -100,13 +113,6 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 |[1768](https://github.com/IgniteUI/igniteui-webcomponents/pull/1768)|Textarea|Readonly state styles|
 |[1755](https://github.com/IgniteUI/igniteui-webcomponents/pull/1755)|Dropdown|Icon size in Bootstrap theme|
 |[1739](https://github.com/IgniteUI/igniteui-webcomponents/pull/1739)|Inputs|Label positioning and transition logic in Material theme|
-|27304|IgcDataChart|Zoom rectangle is not positioned the same as the background rectangle|
-|30600|IgcDoughnutChart|No textStyle property for either the chart or series (pie chart has this)|
-|31624|IgcCategoryChart|Resizing the containing window of the IgcCategoryChart causes the chart to fail to render the series|
-|33861|Excel Library|Adding line chart corrupts excel File for German culture|
-|37930|IgcDataChart|Data Annotation Overlay Text Color not working|
-|38231|IgcGrid|Unpinned column does not return to the original position if hidden columns exist|
-
 
 ## **{PackageVerChanges-25-1-JUL-2}**
 
