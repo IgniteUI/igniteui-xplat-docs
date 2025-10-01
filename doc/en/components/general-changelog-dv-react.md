@@ -42,6 +42,10 @@ Added `CompanionAxis` properties to the X and Y axis that allow you to quickly c
 
 There is a new property called `UseInsetOutlines` to control how outlines on the `RadialPieSeries` are rendered. Setting this value to **true** will inset the outlines within the slice shape, whereas a **false** (default) value will place the outlines half-in half-out along the edge of the slice shape.
 
+**Breaking Changes**
+
+- A fix was made due to an issue where the `PlotAreaPosition` and `ChartPosition` properties on `ChartMouseEventArgs` class were reversed. This will change the values that `PlotAreaPosition` and `ChartPosition` return.
+
 ### {PackageGrids} (Grids)
 
 #### <label>PREVIEW</label> Cell Suffix Content
@@ -72,7 +76,6 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 |31624|IgrCategoryChart|Resizing the containing window of the IgrCategoryChart causes the chart to fail to render the series|
 |33861|Excel Library|Adding line chart corrupts excel File for German culture|
 |37930|IgrDataChart|Data Annotation Overlay Text Color not working|
-|38101|IgbDataChart|Fix for issue where PlotAreaPosition and ChartPosition properties on ChartMouseEventArgs class were reversed
 |38231|IgrGrid|Unpinned column does not return to the original position if hidden columns exist|
 
 ### Enhancements
