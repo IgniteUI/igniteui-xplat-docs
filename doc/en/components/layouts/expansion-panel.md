@@ -146,9 +146,9 @@ The {ProductName} Expansion Panel keyboard navigation is compliant with W3C acce
 
 **Key Combinations**
 
- - <kbd>Alt + ↓</kbd> - expands the focused panel
- - <kbd>Alt + ↑</kbd> - collapses the focused panel
- - <kbd>Space</kbd>/<kbd>Enter</kbd> - toggle the expansion state of the focused panel
+ - <kbd>ALT</kbd> + <kbd>↓</kbd> - expands the focused panel
+ - <kbd>ALT</kbd> + <kbd>↑</kbd> - collapses the focused panel
+ - <kbd>SPACE</kbd>/<kbd>ENTER</kbd> - toggle the expansion state of the focused panel
 
 
 ## Styling

@@ -491,12 +491,12 @@ The carousel [animations](carousel.md#animations) are fully supported on touch d
 ### Keyboard navigation
 
 * Navigation buttons
-    * `Space`/`Enter` key - navigates to the next/previous slide.
+    * <kbd>SPACE</kbd> or <kbd>ENTER</kbd> key - navigates to the next/previous slide.
 * Indicators
-    * `Arrow Left` key - navigates to the previous (next in Right-to-Left mode) slide.
-    * `Arrow Right` key - navigates to the next (previous in Right-to-Left mode) slide.
-    * `Home` key - navigates to the first (last in Right-to-Left mode) slide.
-    * `End` key - navigates to the last (first in Right-to-Left mode) slide.
+    * <kbd>🡐</kbd> key - navigates to the previous (next in Right-to-Left mode) slide.
+    * <kbd>🡒</kbd> key - navigates to the next (previous in Right-to-Left mode) slide.
+    * <kbd>HOME</kbd> key - navigates to the first (last in Right-to-Left mode) slide.
+    * <kbd>END</kbd> key - navigates to the last (first in Right-to-Left mode) slide.
 
 ### Automatic transitioning
 

@@ -160,9 +160,9 @@ export class {ComponentName}RowDragComponent {
 
 ### ドロップ エリア イベント ハンドラー
 
-テンプレートでドロップ領域を定義したら、コンポーネントの **.ts** ファイルで `IgxDrop` の `Enter`、`Leave` および `Dropped` イベントを宣言する必要があります。
+テンプレートでドロップ領域を定義したら、コンポーネントの **.ts** ファイルで `IgxDrop` の <kbd>ENTER</kbd>、`Leave` および `Dropped` イベントを宣言する必要があります。
 
-はじめに、`Enter` と `Leave` ハンドラーを見てみましょう。これらのメソッドでは、ドラッグの *ghost* のアイコンを変更して、行をドロップできる領域の上にあることをユーザーに示すことができます。
+はじめに、<kbd>ENTER</kbd> と `Leave` ハンドラーを見てみましょう。これらのメソッドでは、ドラッグの *ghost* のアイコンを変更して、行をドロップできる領域の上にあることをユーザーに示すことができます。
 
 ```typescript
 export class {ComponentName}RowDragComponent {

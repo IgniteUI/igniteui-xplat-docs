@@ -215,8 +215,8 @@ for example:
 * Added `SelectAllRows` - method.
 * Added Row Range Selection - With `GridSelectionMode` property set to MultipleRow the following new functionality is now included:
     - Click and drag to select rows
-    - Shift and click to select multiple rows.
-    - Shift and press the up/down arrow keys to select multiple rows.
+    - <kbd>SHIFT</kbd> and click to select multiple rows.
+    - <kbd>SHIFT</kbd> and press the <kbd>↑</kbd> + <kbd>↓</kbd> arrow keys to select multiple rows.
 * Pressing space bar toggles selection of active row via `GridSelectionMode` property set to MultipleRow or SingleRow
 * Added Column Summaries to Column Options Dialog.
 
