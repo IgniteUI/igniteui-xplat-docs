@@ -131,6 +131,7 @@
     "packageName": "igniteui-core",
     "names":[{"platform": "React","fileName": "igr-focus-event-args.ts","mappedName": "IgrFocusEventArgs"}],
     "members":[
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "fromTarget"}], "originalName": "FromTarget"},
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "target"}], "originalName": "Target"} ]
   },
   {
@@ -145,6 +146,44 @@
       {"names":[{"platform": "React", "mappedType": "IgRect",  "mappedName": "oldRect"}], "originalName": "OldRect"} ]
   },
   {
+    "originalName": "IRandomnessGenerator",
+    "originalNamespace": "Infragistics",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "IRandomnessGenerator.ts","mappedName": "IRandomnessGenerator"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "next"}], "originalName": "Next"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "nextDouble"}], "originalName": "NextDouble"} ]
+  },
+  {
+    "originalName": "IRandomnessSource",
+    "originalNamespace": "Infragistics",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "IRandomnessSource.ts","mappedName": "IRandomnessSource"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "IRandomnessGenerator","mappedName": "getGenerator"}], "originalName": "GetGenerator"} ]
+  },
+  {
+    "originalName": "TestRandomness",
+    "originalNamespace": "Infragistics",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "TestRandomness.ts","mappedName": "TestRandomness"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "IRandomnessSource","mappedName": "testRandomnessSource"}], "originalName": "TestRandomnessSource"} ]
+  },
+  {
+    "originalName": "FontRegistry",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "FontRegistry.ts","mappedName": "FontRegistry"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "getFont"}], "originalName": "GetFont"},
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "registerFont"}], "originalName": "RegisterFont"},
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "removeFont"}], "originalName": "RemoveFont"},
+      {"names":[{"platform": "React", "mappedType": "Dictionary","mappedName": "_fonts"}], "originalName": "_fonts"} ]
+  },
+  {
     "originalName": "InteractionState",
     "originalNamespace": "Infragistics.Controls",
     "isEnum":true,
@@ -154,6 +193,7 @@
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "React", "mappedType": "InteractionState","mappedName": "Auto"}], "originalName": "Auto"},
       {"names":[{"platform": "React", "mappedType": "InteractionState","mappedName": "DragPan"}], "originalName": "DragPan"},
+      {"names":[{"platform": "React", "mappedType": "InteractionState","mappedName": "DragSelect"}], "originalName": "DragSelect"},
       {"names":[{"platform": "React", "mappedType": "InteractionState","mappedName": "DragZoom"}], "originalName": "DragZoom"},
       {"names":[{"platform": "React", "mappedType": "InteractionState","mappedName": "None"}], "originalName": "None"} ]
   },
@@ -165,13 +205,16 @@
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "addDataURLString"}], "originalName": "AddDataURLString"},
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "addIconSource"}], "originalName": "AddIconSource"},
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "addSvgPathString"}], "originalName": "AddSvgPathString"},
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "addSvgPathsString"}], "originalName": "AddSvgPathsString"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "getDataURLString"}], "originalName": "GetDataURLString"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "getIconSource"}], "originalName": "GetIconSource"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "getSvgPathString"}], "originalName": "GetSvgPathString"},
       {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "getSvgPathsString"}], "originalName": "GetSvgPathsString"},
       {"names":[{"platform": "React", "mappedType": "Dictionary","mappedName": "_collections"}], "originalName": "_collections"},
-      {"names":[{"platform": "React", "mappedType": "Dictionary","mappedName": "_dataURLs"}], "originalName": "_dataURLs"} ]
+      {"names":[{"platform": "React", "mappedType": "Dictionary","mappedName": "_dataURLs"}], "originalName": "_dataURLs"},
+      {"names":[{"platform": "React", "mappedType": "Dictionary","mappedName": "_sources"}], "originalName": "_sources"} ]
   },
   {
     "originalName": "FormatSpecifier",
@@ -273,6 +316,18 @@
       {"names":[{"platform": "React", "mappedType": "HighlightedValueLabelMode","mappedName": "LabelBoth"}], "originalName": "LabelBoth"},
       {"names":[{"platform": "React", "mappedType": "HighlightedValueLabelMode","mappedName": "PreferHighlighted"}], "originalName": "PreferHighlighted"},
       {"names":[{"platform": "React", "mappedType": "HighlightedValueLabelMode","mappedName": "PreferOriginal"}], "originalName": "PreferOriginal"} ]
+  },
+  {
+    "originalName": "SeriesHighlightedValuesDisplayMode",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "SeriesHighlightedValuesDisplayMode.ts","mappedName": "SeriesHighlightedValuesDisplayMode"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "SeriesHighlightedValuesDisplayMode","mappedName": "Auto"}], "originalName": "Auto"},
+      {"names":[{"platform": "React", "mappedType": "SeriesHighlightedValuesDisplayMode","mappedName": "Hidden"}], "originalName": "Hidden"},
+      {"names":[{"platform": "React", "mappedType": "SeriesHighlightedValuesDisplayMode","mappedName": "Overlay"}], "originalName": "Overlay"} ]
   },
   {
     "originalName": "LegendItemBadgeMode",
@@ -724,7 +779,8 @@
       {"names":[{"platform": "React", "mappedType": "ControlDisplayDensity","mappedName": "Auto"}], "originalName": "Auto"},
       {"names":[{"platform": "React", "mappedType": "ControlDisplayDensity","mappedName": "Comfortable"}], "originalName": "Comfortable"},
       {"names":[{"platform": "React", "mappedType": "ControlDisplayDensity","mappedName": "Compact"}], "originalName": "Compact"},
-      {"names":[{"platform": "React", "mappedType": "ControlDisplayDensity","mappedName": "Cosy"}], "originalName": "Cosy"} ]
+      {"names":[{"platform": "React", "mappedType": "ControlDisplayDensity","mappedName": "Cosy"}], "originalName": "Cosy"},
+      {"names":[{"platform": "React", "mappedType": "ControlDisplayDensity","mappedName": "Minimal"}], "originalName": "Minimal"} ]
   },
   {
     "originalName": "IToolbarTarget",
@@ -735,11 +791,40 @@
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "addCommandAvailabilityListener"}], "originalName": "AddCommandAvailabilityListener"},
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "addCommandStateChangedListener"}], "originalName": "AddCommandStateChangedListener"},
       {"names":[{"platform": "React", "mappedType": "(arg1: ToolCommand) => void","mappedName": "commandCompleted"}], "originalName": "CommandCompleted"},
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "dismissContextAccessor"}], "originalName": "DismissContextAccessor"},
       {"names":[{"platform": "React", "mappedType": "ToolActionInfo[]","mappedName": "getDesiredToolbarActions"}], "originalName": "GetDesiredToolbarActions"},
       {"names":[{"platform": "React", "mappedType": "() => void","mappedName": "invalidateActions"}], "originalName": "InvalidateActions"},
       {"names":[{"platform": "React", "mappedType": "ToolCommandExecutionState","mappedName": "onToolCommandExecuting"}], "originalName": "OnToolCommandExecuting"},
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "provideContextAccessor"}], "originalName": "ProvideContextAccessor"},
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "removeCommandAvailabilityListener"}], "originalName": "RemoveCommandAvailabilityListener"},
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "removeCommandStateChangedListener"}], "originalName": "RemoveCommandStateChangedListener"} ]
+  },
+  {
+    "originalName": "IToolbarContextAccessor",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "IToolbarContextAccessor.ts","mappedName": "IToolbarContextAccessor"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "getContextValue"}], "originalName": "GetContextValue"},
+      {"names":[{"platform": "React", "mappedType": "IToolbarContextAccessor","mappedName": "getInternalAccessor"}], "originalName": "GetInternalAccessor"},
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "setContextValue"}], "originalName": "SetContextValue"} ]
+  },
+  {
+    "originalName": "ToolContextValueType",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "ToolContextValueType.ts","mappedName": "ToolContextValueType"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "ToolContextValueType","mappedName": "BoolValue"}], "originalName": "BoolValue"},
+      {"names":[{"platform": "React", "mappedType": "ToolContextValueType","mappedName": "Brush"}], "originalName": "Brush"},
+      {"names":[{"platform": "React", "mappedType": "ToolContextValueType","mappedName": "BrushCollection"}], "originalName": "BrushCollection"},
+      {"names":[{"platform": "React", "mappedType": "ToolContextValueType","mappedName": "Color"}], "originalName": "Color"},
+      {"names":[{"platform": "React", "mappedType": "ToolContextValueType","mappedName": "Data"}], "originalName": "Data"},
+      {"names":[{"platform": "React", "mappedType": "ToolContextValueType","mappedName": "DoubleValue"}], "originalName": "DoubleValue"},
+      {"names":[{"platform": "React", "mappedType": "ToolContextValueType","mappedName": "IntValue"}], "originalName": "IntValue"},
+      {"names":[{"platform": "React", "mappedType": "ToolContextValueType","mappedName": "StringValue"}], "originalName": "StringValue"} ]
   },
   {
     "originalName": "ICommandAvailabilityListener",
@@ -764,8 +849,12 @@
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "Button"}], "originalName": "Button"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "ButtonPair"}], "originalName": "ButtonPair"},
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "Checkbox"}], "originalName": "Checkbox"},
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "CheckboxList"}], "originalName": "CheckboxList"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "ColorEditor"}], "originalName": "ColorEditor"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "Combo"}], "originalName": "Combo"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "FieldSelector"}], "originalName": "FieldSelector"},
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "GroupHeader"}], "originalName": "GroupHeader"},
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "IconButton"}], "originalName": "IconButton"},
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "IconMenu"}], "originalName": "IconMenu"},
@@ -774,7 +863,34 @@
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "Radio"}], "originalName": "Radio"},
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "Separator"}], "originalName": "Separator"},
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "SubPanel"}], "originalName": "SubPanel"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "TextInput"}], "originalName": "TextInput"},
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "Unknown"}], "originalName": "Unknown"} ]
+  },
+  {
+    "originalName": "ToolActionInfoDensity",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "ToolActionInfoDensity.ts","mappedName": "ToolActionInfoDensity"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionInfoDensity","mappedName": "Auto"}], "originalName": "Auto"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionInfoDensity","mappedName": "Comfortable"}], "originalName": "Comfortable"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionInfoDensity","mappedName": "Compact"}], "originalName": "Compact"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionInfoDensity","mappedName": "Cosy"}], "originalName": "Cosy"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionInfoDensity","mappedName": "Minimal"}], "originalName": "Minimal"} ]
+  },
+  {
+    "originalName": "ToolActionButtonInfoDisplayType",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "ToolActionButtonInfoDisplayType.ts","mappedName": "ToolActionButtonInfoDisplayType"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionButtonInfoDisplayType","mappedName": "Flat"}], "originalName": "Flat"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionButtonInfoDisplayType","mappedName": "Outlined"}], "originalName": "Outlined"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionButtonInfoDisplayType","mappedName": "Raised"}], "originalName": "Raised"} ]
   },
   {
     "originalName": "ToolCommandStateType",
@@ -812,10 +928,16 @@
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "commandArgument"}], "originalName": "CommandArgument"},
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "commandArgumentValue"}], "originalName": "CommandArgumentValue"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "commandId"}], "originalName": "CommandId"},
+      {"names":[{"platform": "React", "mappedType": "ToolContextBindingInfo[]","mappedName": "contextBindings"}], "originalName": "ContextBindings"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionInfoDensity","mappedName": "density"}], "originalName": "Density"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "disabledTextColor"}], "originalName": "DisabledTextColor"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "height"}], "originalName": "Height"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "iconCollectionName"}], "originalName": "IconCollectionName"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "iconFill"}], "originalName": "IconFill"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "iconHeight"}], "originalName": "IconHeight"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "iconName"}], "originalName": "IconName"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "iconStroke"}], "originalName": "IconStroke"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "iconStrokeWidth"}], "originalName": "IconStrokeWidth"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "iconViewBoxHeight"}], "originalName": "IconViewBoxHeight"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "iconViewBoxLeft"}], "originalName": "IconViewBoxLeft"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "iconViewBoxTop"}], "originalName": "IconViewBoxTop"},
@@ -829,10 +951,33 @@
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "paddingRight"}], "originalName": "PaddingRight"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "paddingTop"}], "originalName": "PaddingTop"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "parentId"}], "originalName": "ParentId"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "subPanelRowHeight"}], "originalName": "SubPanelRowHeight"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "subtitle"}], "originalName": "Subtitle"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "textColor"}], "originalName": "TextColor"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "title"}], "originalName": "Title"},
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"} ]
+  },
+  {
+    "originalName": "ToolContextBindingMode",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "ToolContextBindingMode.ts","mappedName": "ToolContextBindingMode"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "ToolContextBindingMode","mappedName": "OneWay"}], "originalName": "OneWay"},
+      {"names":[{"platform": "React", "mappedType": "ToolContextBindingMode","mappedName": "TwoWay"}], "originalName": "TwoWay"} ]
+  },
+  {
+    "originalName": "ToolContextBindingInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "ToolContextBindingInfo.ts","mappedName": "ToolContextBindingInfo"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "ToolContextBindingMode","mappedName": "bindingMode"}], "originalName": "BindingMode"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "contextKey"}], "originalName": "ContextKey"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "propertyName"}], "originalName": "PropertyName"} ]
   },
   {
     "originalName": "ToolActionCheckboxInfo",
@@ -859,7 +1004,53 @@
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "dataSource"}], "originalName": "ItemsSource"},
       {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "primaryKey"}], "originalName": "PrimaryKey"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "selectedMemberPath"}], "originalName": "SelectedMemberPath"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "showSelectAll"}], "originalName": "ShowSelectAll"},
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"} ]
+  },
+  {
+    "originalName": "ToolActionComboInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "ToolActionComboInfo.ts","mappedName": "ToolActionComboInfo"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "displayMemberPath"}], "originalName": "DisplayMemberPath"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "dataSource"}], "originalName": "ItemsSource"},
+      {"names":[{"platform": "React", "mappedType": "any[]",   "mappedName": "selectedValues"}], "originalName": "SelectedValues"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "valueMemberPath"}], "originalName": "ValueMemberPath"} ]
+  },
+  {
+    "originalName": "ToolActionFieldSelectorInfoType",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "ToolActionFieldSelectorInfoType.ts","mappedName": "ToolActionFieldSelectorInfoType"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionFieldSelectorInfoType","mappedName": "Label"}], "originalName": "Label"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionFieldSelectorInfoType","mappedName": "Value"}], "originalName": "Value"} ]
+  },
+  {
+    "originalName": "ToolActionFieldSelectorInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "ToolActionFieldSelectorInfo.ts","mappedName": "ToolActionFieldSelectorInfo"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "any[]",   "mappedName": "aggregations"}], "originalName": "Aggregations"},
+      {"names":[{"platform": "React", "mappedType": "IDataLegendTarget","mappedName": "dataLegendTarget"}], "originalName": "DataLegendTarget"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "dataSource"}], "originalName": "DataSource"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionFieldSelectorInfoType","mappedName": "fieldType"}], "originalName": "FieldType"},
+      {"names":[{"platform": "React", "mappedType": "any[]",   "mappedName": "rules"}], "originalName": "Rules"},
+      {"names":[{"platform": "React", "mappedType": "any[]",   "mappedName": "selectedAggregations"}], "originalName": "SelectedAggregations"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "singleSelection"}], "originalName": "SingleSelection"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "updateDataSource"}], "originalName": "UpdateDataSource"} ]
   },
   {
     "originalName": "ToolActionRadioInfo",
@@ -888,6 +1079,52 @@
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "tooltipDelay"}], "originalName": "TooltipDelay"} ]
   },
   {
+    "originalName": "ToolActionButtonInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "ToolActionButtonInfo.ts","mappedName": "ToolActionButtonInfo"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionButtonInfoDisplayType","mappedName": "displayType"}], "originalName": "DisplayType"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"} ]
+  },
+  {
+    "originalName": "ToolActionButtonPairInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "ToolActionButtonPairInfo.ts","mappedName": "ToolActionButtonPairInfo"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isToggleDisabled"}], "originalName": "IsToggleDisabled"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "leftCommandArgument"}], "originalName": "LeftCommandArgument"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "leftIconCollectionName"}], "originalName": "LeftIconCollectionName"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "leftIconFill"}], "originalName": "LeftIconFill"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "leftIconName"}], "originalName": "LeftIconName"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "leftIconStroke"}], "originalName": "LeftIconStroke"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "leftIconStrokeWidth"}], "originalName": "LeftIconStrokeWidth"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "leftIconViewBoxHeight"}], "originalName": "LeftIconViewBoxHeight"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "leftIconViewBoxLeft"}], "originalName": "LeftIconViewBoxLeft"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "leftIconViewBoxTop"}], "originalName": "LeftIconViewBoxTop"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "leftIconViewBoxWidth"}], "originalName": "LeftIconViewBoxWidth"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "leftTitle"}], "originalName": "LeftTitle"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "rightCommandArgument"}], "originalName": "RightCommandArgument"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "rightIconCollectionName"}], "originalName": "RightIconCollectionName"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "rightIconFill"}], "originalName": "RightIconFill"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "rightIconName"}], "originalName": "RightIconName"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "rightIconStroke"}], "originalName": "RightIconStroke"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "rightIconStrokeWidth"}], "originalName": "RightIconStrokeWidth"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "rightIconViewBoxHeight"}], "originalName": "RightIconViewBoxHeight"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "rightIconViewBoxLeft"}], "originalName": "RightIconViewBoxLeft"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "rightIconViewBoxTop"}], "originalName": "RightIconViewBoxTop"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "rightIconViewBoxWidth"}], "originalName": "RightIconViewBoxWidth"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "rightTitle"}], "originalName": "RightTitle"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"} ]
+  },
+  {
     "originalName": "ToolActionLabelInfo",
     "originalNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
@@ -907,6 +1144,18 @@
     "names":[{"platform": "React","fileName": "ToolActionIconMenuInfo.ts","mappedName": "ToolActionIconMenuInfo"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "showArrowIcon"}], "originalName": "ShowArrowIcon"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"} ]
+  },
+  {
+    "originalName": "ToolActionSubPanelInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "ToolActionSubPanelInfo.ts","mappedName": "ToolActionSubPanelInfo"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"} ]
   },
   {
@@ -920,6 +1169,30 @@
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "value"}], "originalName": "Value"} ]
+  },
+  {
+    "originalName": "ToolActionColorEditorInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "ToolActionColorEditorInfo.ts","mappedName": "ToolActionColorEditorInfo"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"} ]
+  },
+  {
+    "originalName": "ToolActionTextInputInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "ToolActionTextInputInfo.ts","mappedName": "ToolActionTextInputInfo"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"} ]
   },
   {
     "originalName": "ToolActionSeparatorInfo",

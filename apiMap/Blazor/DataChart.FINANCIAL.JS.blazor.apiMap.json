@@ -21,6 +21,7 @@
     "names":[{"platform": "Blazor","fileName": "FinancialPriceSeries.cs","mappedName": "IgbFinancialPriceSeries"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualTrendLineBrush"}], "originalName": "ActualTrendLineBrush"},
+      {"names":[{"platform": "Blazor", "mappedType": "CategoryCollisionMode","mappedName": "CategoryCollisionMode"}], "originalName": "CategoryCollisionMode"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "CloseMemberAsLegendLabel"}], "originalName": "CloseMemberAsLegendLabel"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "CloseMemberAsLegendUnit"}], "originalName": "CloseMemberAsLegendUnit"},
       {"names":[{"platform": "Blazor", "mappedType": "PriceDisplayType","mappedName": "DisplayType"}], "originalName": "DisplayType"},
