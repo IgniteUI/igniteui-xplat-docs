@@ -20,7 +20,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### {PackageMaps} (Geographic Map)
 
-#### Azure Map Imagery Support (Preview)
+#### <label>PREVIEW</label> Azure Map Imagery Support
 
 The `IgxGeographicMap` now supports Azure-based map imagery, allowing developers to display detailed, dynamic maps across multiple application types. You can combine multiple map layers, visualize geographic data, and create interactive mapping experiences with ease.
 
@@ -30,7 +30,7 @@ Explore some of the publicly available [Azure maps here](https://azure.microsoft
 
 ### {PackageCharts} (Charts)
 
-#### New Axis Label Events (Preview)
+#### <label>PREVIEW</label> New Axis Label Events
 
 The following events have been added to the `IgxDataChart` to allow you to detect different operations on the axis labels:
 
@@ -41,19 +41,41 @@ The following events have been added to the `IgxDataChart` to allow you to detec
 - `LabelMouseMove`
 - `LabelMouseClick`
 
-#### Companion Axis (Preview)
+#### <label>PREVIEW</label> Companion Axis
 
 Added `CompanionAxis` properties to the X and Y axis that allow you to quickly create a clone of an existing axis. When enabled using the `CompanionAxisEnabled` property, this will default the cloned axis to the opposite position of the chart and you can then configure that axes' properties.
 
-#### RadialPieSeries Inset Outlines (Preview)
+#### <label>PREVIEW</label> RadialPieSeries Inset Outlines
 
 There is a new property called `UseInsetOutlines` to control how outlines on the `RadialPieSeries` are rendered. Setting this value to **true** will inset the outlines within the slice shape, whereas a **false** (default) value will place the outlines half-in half-out along the edge of the slice shape.
+
+### {PackageGrids} (Grids)
+
+#### <label>PREVIEW</label> Cell Suffix Content
+
+Added support for suffix content within the cells that allows you to add additional text or icons to the end of the cell value and style it. The full list of added properties for the cell suffix content is listed below and is available on the `DataGridColumn` and `CellInfo` class:
+
+- `SuffixText`
+- `SuffixTextColor`
+- `SuffixTextFont`
+- `SuffixIconName`
+- `SuffixIconCollectionName`
+- `SuffixIconStroke`
+- `SuffixIconFill`
+- `SuffixIconViewBoxLeft`
+- `SuffixIconViewBoxTop`
+- `SuffixIconViewBoxWidth`
+- `SuffixIconViewBoxHeight`
+- `TextDecoration`
+
+Please note that the maximum size available for the icons is 24x24. You can provide an icon that is larger or smaller than this, but you will need to configure the viewbox settings in order to properly scale it to fit in the 24x24 space so it is fully visible.
+
 
 ### Enhancements
 
 #### IgxBulletGraph
 
-- Added new `LabelsVisible` property (Preview)
+- <label>PREVIEW</label> Added new `LabelsVisible` property
 
 #### Charts
 
@@ -67,13 +89,9 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 
 - Expose `CalloutLabelUpdating` event for domain charts.
 
-#### IgxDataGrid
-
--  Added new property called `stopPropagation` to DataGrid which prevents mouse events from bubbling to parent elements
-
 #### IgxLinearGauge
 
-- Added new `LabelsVisible` property (Preview)
+- <label>PREVIEW</label> Added new `LabelsVisible` property
 
 ### Bug Fixes
 
@@ -84,6 +102,7 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 |31624|IgxCategoryChart|Resizing the containing window of the IgxCategoryChart causes the chart to fail to render the series|
 |33861|Excel Library|Adding line chart corrupts excel File for German culture|
 |37930|IgxDataChart|Data Annotation Overlay Text Color not working|
+|38101|IgbDataChart|Fix for issue where PlotAreaPosition and ChartPosition properties on ChartMouseEventArgs class were reversed
 |38231|IgxGrid|Unpinned column does not return to the original position if hidden columns exist|
 
 
