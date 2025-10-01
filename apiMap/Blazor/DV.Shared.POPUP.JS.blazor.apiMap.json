@@ -32,6 +32,14 @@
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "UseTopLayer"}], "originalName": "UseTopLayer"} ]
   },
   {
+    "originalName": "PopupMeasuringContentSizeEventArgs",
+    "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
+    "originalBaseTypeNamespace": "System",
+    "originalBaseTypeName": "EventArgs",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "PopupMeasuringContentSizeEventArgs.cs","mappedName": "IgbPopupMeasuringContentSizeEventArgs"}]
+  },
+  {
     "originalName": "OnPopupEventArgs",
     "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
     "originalBaseTypeNamespace": "System",

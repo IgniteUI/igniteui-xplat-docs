@@ -83,6 +83,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Outlines"}], "originalName": "Outlines"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "PixelScalingRatio"}], "originalName": "PixelScalingRatio"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ProvideContainer"}], "originalName": "ProvideContainer"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFunnelChartSelectedItemsCollection","mappedName": "SelectedItems"}], "originalName": "SelectedItems"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "TextColor"}], "originalName": "TextColor"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "TextStyle"}], "originalName": "TextStyle"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ToggleSelection"}], "originalName": "ToggleSelection"},
@@ -99,5 +100,17 @@
       {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "UnselectedSliceOpacity"}], "originalName": "unselectedSliceStyle.opacity"},
       {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "UnselectedSliceStroke"}], "originalName": "unselectedSliceStyle.stroke"},
       {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "UnselectedSliceStrokeThickness"}], "originalName": "unselectedSliceStyle.strokeThickness"} ]
+  },
+  {
+    "originalName": "FunnelChartSelectedItemsChangedEventArgs",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "System",
+    "originalBaseTypeName": "EventArgs",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "FunnelChartSelectedItemsChangedEventArgs.cs","mappedName": "IgbFunnelChartSelectedItemsChangedEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFunnelChartSelectedItemsCollection","mappedName": "CurrentItems"}], "originalName": "CurrentItems"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFunnelChartSelectedItemsCollection","mappedName": "NewItems"}], "originalName": "NewItems"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbFunnelChartSelectedItemsCollection","mappedName": "OldItems"}], "originalName": "OldItems"} ]
   }]
 }
