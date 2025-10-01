@@ -49,28 +49,6 @@ Added `CompanionAxis` properties to the X and Y axis that allow you to quickly c
 
 There is a new property called `UseInsetOutlines` to control how outlines on the `RadialPieSeries` are rendered. Setting this value to **true** will inset the outlines within the slice shape, whereas a **false** (default) value will place the outlines half-in half-out along the edge of the slice shape.
 
-### {PackageGrids} (Grids)
-
-#### <label>PREVIEW</label> Cell Suffix Content
-
-Added support for suffix content within the cells that allows you to add additional text or icons to the end of the cell value and style it. The full list of added properties for the cell suffix content is listed below and is available on the `DataGridColumn` and `CellInfo` class:
-
-- `SuffixText`
-- `SuffixTextColor`
-- `SuffixTextFont`
-- `SuffixIconName`
-- `SuffixIconCollectionName`
-- `SuffixIconStroke`
-- `SuffixIconFill`
-- `SuffixIconViewBoxLeft`
-- `SuffixIconViewBoxTop`
-- `SuffixIconViewBoxWidth`
-- `SuffixIconViewBoxHeight`
-- `TextDecoration`
-
-Please note that the maximum size available for the icons is 24x24. You can provide an icon that is larger or smaller than this, but you will need to configure the viewbox settings in order to properly scale it to fit in the 24x24 space so it is fully visible.
-
-
 ### Enhancements
 
 #### IgxBulletGraph
