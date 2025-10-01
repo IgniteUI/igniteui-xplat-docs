@@ -249,28 +249,30 @@ If the `Placement` property is not set, the default value is `bottom`, which pla
 
 Additionally, you can make the `Tooltip` "sticky" using the `Sticky` property, which adds a close button and keeps the `Tooltip` visible until the user closes it manually - either by clicking the close button or pressing the `Esc` key. This behavior overrides the default hover behavior, preventing the `Tooltip` from disappearing when the user stops hovering over the target element.
 
+The `Tooltip` also includes an optional arrow indicator that can be configured via the `WithArrow` property. The arrow visually connects the tooltip to its anchor element and its position automatically adjusts based on the tooltip's `Placement`.
+
 ```html
 <igc-button id="target-button">Hover me</igc-button>
-<igc-tooltip anchor="target-button" placement="top-start" sticky>
+<igc-tooltip anchor="target-button" placement="top-start" sticky with-arrow>
   Congrats you've hovered the button!
 </igc-tooltip>
 ```
 
 ```tsx
 <IgrButton id="target-button">Hover me</IgrButton>
-<IgrTooltip anchor="target-button" placement="top-start" sticky>
+<IgrTooltip anchor="target-button" placement="top-start" sticky withArrow={true}>
   Congrats you have hovered the button!
 </IgrTooltip>
 ```
 
 ```razor
 <IgbButton id="target-button">Hover me</IgbButton>
-<IgbTooltip Anchor="target-button" Placement="PopoverPlacement.TopStart" Sticky="true">
+<IgbTooltip Anchor="target-button" Placement="PopoverPlacement.TopStart" Sticky="true" DisableArrow="true">
   Congrats you have hovered the button!
 </IgbTooltip>
 ```
 
-In the following example, you can see a demonstration of all position options and the `Sticky` property in action:
+In the following example, you can see a demonstration of all tooltip placement options, arrow positioning behavior, and the `Sticky` property in action:
 
 `sample="/inputs/tooltip/placement", height="220", alt="{Platform} Tooltip Placement Example"`
 
