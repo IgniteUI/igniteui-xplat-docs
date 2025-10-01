@@ -114,15 +114,15 @@ input.value = date;
 
 |キー|説明|
 |----|-----------|
-| <kbd>&larr;</kbd> | 1 文字を先頭に移動 |
-| <kbd>&rarr;</kbd> | 1 文字を最後に移動 |
-| <kbd>Home</kbd> | 最初に移動 |
-| <kbd>End</kbd> | 最後に移動 |
-| <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>&larr;</kbd> | 日付 / 時刻セクションの先頭に移動 - 現在のセクションまたは左側のセクション |
-| <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>&rarr;</kbd> | 日付 / 時刻セクションの最後に移動 - 現在または右側のセクション |
-| 日付 / 時刻のパーツにフォーカス + <kbd>&darr;</kbd> | 日付 / 時刻のパーツを減分 |
-| 日付 / 時刻のパーツにフォーカス + <kbd>&uarr;</kbd> | 日付 / 時刻のパーツを増分 |
-| <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>;</kbd> | 現在の日付 / 時刻をエディターの値として設定 |
+| <kbd>←</kbd> | 1 文字を先頭に移動 |
+| <kbd>→</kbd> | 1 文字を最後に移動 |
+| <kbd>HOME</kbd> | 最初に移動 |
+| <kbd>END</kbd> | 最後に移動 |
+| <kbd>CTRL</kbd> / <kbd>CMD</kbd> + <kbd>←</kbd> | 日付 / 時刻セクションの先頭に移動 - 現在のセクションまたは左側のセクション |
+| <kbd>CTRL</kbd> / <kbd>CMD</kbd> + <kbd>→</kbd> | 日付 / 時刻セクションの最後に移動 - 現在または右側のセクション |
+| 日付 / 時刻のパーツにフォーカス + <kbd>↓</kbd> | 日付 / 時刻のパーツを減分 |
+| 日付 / 時刻のパーツにフォーカス + <kbd>↑</kbd> | 日付 / 時刻のパーツを増分 |
+| <kbd>CTRL</kbd> / <kbd>CMD</kbd> + <kbd>;</kbd> | 現在の日付 / 時刻をエディターの値として設定 |
 
 ## 書式の設定
 
