@@ -35,6 +35,14 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "useTopLayer"}], "originalName": "UseTopLayer"} ]
   },
   {
+    "originalName": "PopupMeasuringContentSizeEventArgs",
+    "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
+    "originalBaseTypeNamespace": "System",
+    "originalBaseTypeName": "EventArgs",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "igx-popup-measuring-content-size-event-args.ts","mappedName": "IgxPopupMeasuringContentSizeEventArgs"}]
+  },
+  {
     "originalName": "PopupAlignment",
     "originalNamespace": "Infragistics.Controls.Layouts.Implementation",
     "isEnum":true,

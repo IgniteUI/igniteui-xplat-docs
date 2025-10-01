@@ -37,6 +37,7 @@
     "packageName": "igniteui-charts",
     "names":[{"platform": "React","fileName": "igr-category-series.ts","mappedName": "IgrCategorySeries"}],
     "members":[
+      {"names":[{"platform": "React", "mappedType": "CategoryCollisionMode","mappedName": "categoryCollisionMode"}], "originalName": "CategoryCollisionMode"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getCategoryWidth"}], "originalName": "GetCategoryWidth"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getExactItemIndex"}], "originalName": "GetExactItemIndex"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getItem"}], "originalName": "GetItem"},

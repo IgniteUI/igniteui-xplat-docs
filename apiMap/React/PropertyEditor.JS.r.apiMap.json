@@ -4,7 +4,7 @@
   {
     "originalName": "PropertyEditor",
     "originalNamespace": "Infragistics.Controls.Grids.Implementation",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "React","fileName": "igr-property-editor.ts","mappedName": "IgrPropertyEditor"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "TypeDescriptionContext","mappedName": "actualDescriptionContext"}], "originalName": "ActualDescriptionContext"},

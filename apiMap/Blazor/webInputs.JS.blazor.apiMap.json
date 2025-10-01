@@ -94,7 +94,7 @@
     "names":[{"platform": "Blazor","fileName": "Tile.cs","mappedName": "IgbTile"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ColSpan"}], "originalName": "ColSpan"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ColStart"}], "originalName": "ColStart"},
+      {"names":[{"platform": "Blazor", "mappedType": "double?","mappedName": "ColStart"}], "originalName": "ColStart"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "DisableFullscreen"}], "originalName": "DisableFullscreen"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "DisableMaximize"}], "originalName": "DisableMaximize"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "DisableResize"}], "originalName": "DisableResize"},
@@ -102,7 +102,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Maximized"}], "originalName": "Maximized"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Position"}], "originalName": "Position"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "RowSpan"}], "originalName": "RowSpan"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "RowStart"}], "originalName": "RowStart"},
+      {"names":[{"platform": "Blazor", "mappedType": "double?","mappedName": "RowStart"}], "originalName": "RowStart"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
@@ -141,10 +141,10 @@
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ColumnCount"}], "originalName": "ColumnCount"},
       {"names":[{"platform": "Blazor", "mappedType": "TileManagerDragMode","mappedName": "DragMode"}], "originalName": "DragMode"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Gap"}], "originalName": "Gap"},
+      {"names":[{"platform": "Blazor", "mappedType": "string?","mappedName": "Gap"}], "originalName": "Gap"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "LoadLayout"}], "originalName": "LoadLayout"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "MinColumnWidth"}], "originalName": "MinColumnWidth"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "MinRowHeight"}], "originalName": "MinRowHeight"},
+      {"names":[{"platform": "Blazor", "mappedType": "string?","mappedName": "MinColumnWidth"}], "originalName": "MinColumnWidth"},
+      {"names":[{"platform": "Blazor", "mappedType": "string?","mappedName": "MinRowHeight"}], "originalName": "MinRowHeight"},
       {"names":[{"platform": "Blazor", "mappedType": "TileManagerResizeMode","mappedName": "ResizeMode"}], "originalName": "ResizeMode"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SaveLayout"}], "originalName": "SaveLayout"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
@@ -159,7 +159,7 @@
     "names":[{"platform": "Blazor","fileName": "Tooltip.cs","mappedName": "IgbTooltip"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Anchor"}], "originalName": "Anchor"},
-      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "WithArrow"}], "originalName": "WithArrow"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "DisableArrow"}], "originalName": "DisableArrow"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Hide"}], "originalName": "Hide"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "HideDelay"}], "originalName": "HideDelay"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HideTriggers"}], "originalName": "HideTriggers"},
@@ -294,8 +294,8 @@
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Invalid"}], "originalName": "Invalid"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Label"}], "originalName": "Label"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Locale"}], "originalName": "Locale"},
-      {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "Max"}], "originalName": "Max"},
-      {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "Min"}], "originalName": "Min"},
+      {"names":[{"platform": "Blazor", "mappedType": "DateTime?","mappedName": "Max"}], "originalName": "Max"},
+      {"names":[{"platform": "Blazor", "mappedType": "DateTime?","mappedName": "Min"}], "originalName": "Min"},
       {"names":[{"platform": "Blazor", "mappedType": "PickerMode","mappedName": "Mode"}], "originalName": "Mode"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "NonEditable"}], "originalName": "NonEditable"},
       {"names":[{"platform": "Blazor", "mappedType": "ContentOrientation","mappedName": "Orientation"}], "originalName": "Orientation"},
@@ -314,7 +314,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "IgbDateRangeDescriptor[]","mappedName": "SpecialDates"}], "originalName": "SpecialDates"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "StepDown"}], "originalName": "StepDown"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "StepUp"}], "originalName": "StepUp"},
-      {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "Value"}], "originalName": "Value"},
+      {"names":[{"platform": "Blazor", "mappedType": "DateTime?","mappedName": "Value"}], "originalName": "Value"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "VisibleMonths"}], "originalName": "VisibleMonths"},
       {"names":[{"platform": "Blazor", "mappedType": "WeekDays","mappedName": "WeekStart"}], "originalName": "WeekStart"} ]
   },
@@ -387,6 +387,34 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ShowAll"}], "originalName": "ShowAll"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "SingleExpand"}], "originalName": "SingleExpand"} ]
+  },
+  {
+    "originalName": "Tab",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Blazor","fileName": "Tab.cs","mappedName": "IgbTab"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Disabled"}], "originalName": "Disabled"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Label"}], "originalName": "Label"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Selected"}], "originalName": "Selected"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "Tabs",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "Blazor","fileName": "Tabs.cs","mappedName": "IgbTabs"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "TabsActivation","mappedName": "Activation"}], "originalName": "Activation"},
+      {"names":[{"platform": "Blazor", "mappedType": "TabsAlignment","mappedName": "Alignment"}], "originalName": "Alignment"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Select"}], "originalName": "Select"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Selected"}], "originalName": "Selected"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbTabs_TabCollection","mappedName": "TabsCollection"}], "originalName": "TabsCollection"} ]
   },
   {
     "originalName": "ActivePaneEventArgsDetail",
@@ -478,11 +506,11 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Deselect"}], "originalName": "Deselect"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "DisableFiltering"}], "originalName": "DisableFiltering"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Disabled"}], "originalName": "Disabled"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "DisplayKey"}], "originalName": "DisplayKey"},
+      {"names":[{"platform": "Blazor", "mappedType": "string?","mappedName": "DisplayKey"}], "originalName": "DisplayKey"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbFilteringOptions","mappedName": "FilteringOptions"}], "originalName": "FilteringOptions"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "FocusComponent"}], "originalName": "FocusComponent"},
       {"names":[{"platform": "Blazor", "mappedType": "RenderFragment<object>","mappedName": "GroupHeaderTemplate"}], "originalName": "GroupHeaderTemplate"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "GroupKey"}], "originalName": "GroupKey"},
+      {"names":[{"platform": "Blazor", "mappedType": "string?","mappedName": "GroupKey"}], "originalName": "GroupKey"},
       {"names":[{"platform": "Blazor", "mappedType": "GroupingDirection","mappedName": "GroupSorting"}], "originalName": "GroupSorting"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Hide"}], "originalName": "Hide"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Invalid"}], "originalName": "Invalid"},
@@ -502,7 +530,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "SingleSelect"}], "originalName": "SingleSelect"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Toggle"}], "originalName": "Toggle"},
       {"names":[{"platform": "Blazor", "mappedType": "T[]","mappedName": "Value"}], "originalName": "Value"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueKey"}], "originalName": "ValueKey"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "string?","mappedName": "ValueKey"}], "originalName": "ValueKey"} ]
   },
   {
     "originalName": "ComboChangeEventArgs",
@@ -536,13 +564,13 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "DisplayFormat"}], "originalName": "DisplayFormat"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "InputFormat"}], "originalName": "InputFormat"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Locale"}], "originalName": "Locale"},
-      {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "Max"}], "originalName": "Max"},
-      {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "Min"}], "originalName": "Min"},
+      {"names":[{"platform": "Blazor", "mappedType": "DateTime?","mappedName": "Max"}], "originalName": "Max"},
+      {"names":[{"platform": "Blazor", "mappedType": "DateTime?","mappedName": "Min"}], "originalName": "Min"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbDatePartDeltas","mappedName": "SpinDelta"}], "originalName": "SpinDelta"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "SpinLoop"}], "originalName": "SpinLoop"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "StepDown"}], "originalName": "StepDown"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "StepUp"}], "originalName": "StepUp"},
-      {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "Value"}], "originalName": "Value"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "DateTime?","mappedName": "Value"}], "originalName": "Value"} ]
   },
   {
     "originalName": "Dialog",
@@ -732,9 +760,9 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ReportValidity"}], "originalName": "ReportValidity"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Required"}], "originalName": "Required"},
       {"names":[{"platform": "Blazor", "mappedType": "PopoverScrollStrategy","mappedName": "ScrollStrategy"}], "originalName": "ScrollStrategy"},
-      {"names":[{"platform": "Blazor", "mappedType": "IgbSelectItem","mappedName": "SelectedItem"}], "originalName": "SelectedItem"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbSelectItem?","mappedName": "SelectedItem"}], "originalName": "SelectedItem"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetCustomValidity"}], "originalName": "SetCustomValidity"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Value"}], "originalName": "Value"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "string?","mappedName": "Value"}], "originalName": "Value"} ]
   },
   {
     "originalName": "SelectGroup",
@@ -814,19 +842,6 @@
       {"names":[{"platform": "Blazor", "mappedType": "StepperVerticalAnimation","mappedName": "VerticalAnimation"}], "originalName": "VerticalAnimation"} ]
   },
   {
-    "originalName": "Tab",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "Blazor","fileName": "Tab.cs","mappedName": "IgbTab"}],
-    "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Disabled"}], "originalName": "Disabled"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Label"}], "originalName": "Label"},
-      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Selected"}], "originalName": "Selected"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
     "originalName": "TabComponentEventArgs",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webinputs",
@@ -842,20 +857,6 @@
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "IgbTabHeaderElement","mappedName": "Element"}], "originalName": "Element"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbContentPane","mappedName": "Pane"}], "originalName": "Pane"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
-    "originalName": "Tabs",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "Blazor","fileName": "Tabs.cs","mappedName": "IgbTabs"}],
-    "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "TabsActivation","mappedName": "Activation"}], "originalName": "Activation"},
-      {"names":[{"platform": "Blazor", "mappedType": "TabsAlignment","mappedName": "Alignment"}], "originalName": "Alignment"},
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Select"}], "originalName": "Select"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Selected"}], "originalName": "Selected"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
@@ -1331,13 +1332,13 @@
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Autofocus"}], "originalName": "Autofocus"},
       {"names":[{"platform": "Blazor", "mappedType": "InputType","mappedName": "DisplayType"}], "originalName": "DisplayType"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "InputMode"}], "originalName": "InputMode"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Max"}], "originalName": "Max"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "MaxLength"}], "originalName": "MaxLength"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Min"}], "originalName": "Min"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "MinLength"}], "originalName": "MinLength"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Pattern"}], "originalName": "Pattern"},
+      {"names":[{"platform": "Blazor", "mappedType": "double?","mappedName": "Max"}], "originalName": "Max"},
+      {"names":[{"platform": "Blazor", "mappedType": "double?","mappedName": "MaxLength"}], "originalName": "MaxLength"},
+      {"names":[{"platform": "Blazor", "mappedType": "double?","mappedName": "Min"}], "originalName": "Min"},
+      {"names":[{"platform": "Blazor", "mappedType": "double?","mappedName": "MinLength"}], "originalName": "MinLength"},
+      {"names":[{"platform": "Blazor", "mappedType": "string?","mappedName": "Pattern"}], "originalName": "Pattern"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Select"}], "originalName": "Select"},
-      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Step"}], "originalName": "Step"},
+      {"names":[{"platform": "Blazor", "mappedType": "double?","mappedName": "Step"}], "originalName": "Step"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "StepDown"}], "originalName": "StepDown"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "StepUp"}], "originalName": "StepUp"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ValidateOnly"}], "originalName": "ValidateOnly"},
@@ -1362,7 +1363,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "SameWidth"}], "originalName": "SameWidth"},
       {"names":[{"platform": "Blazor", "mappedType": "PopoverScrollStrategy","mappedName": "ScrollStrategy"}], "originalName": "ScrollStrategy"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Select"}], "originalName": "Select"},
-      {"names":[{"platform": "Blazor", "mappedType": "IgbDropdownItem","mappedName": "SelectedItem"}], "originalName": "SelectedItem"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "IgbDropdownItem?","mappedName": "SelectedItem"}], "originalName": "SelectedItem"} ]
   },
   {
     "originalName": "Chip",
@@ -1728,12 +1729,12 @@
     "packageName": "igniteui-webinputs",
     "names":[{"platform": "Blazor","fileName": "CalendarBase.cs","mappedName": "IgbCalendarBase"}],
     "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "IgbDateRangeDescriptor[]","mappedName": "DisabledDates"}], "originalName": "DisabledDates"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbDateRangeDescriptor[]?","mappedName": "DisabledDates"}], "originalName": "DisabledDates"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Locale"}], "originalName": "Locale"},
       {"names":[{"platform": "Blazor", "mappedType": "CalendarSelection","mappedName": "Selection"}], "originalName": "Selection"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "SetNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ShowWeekNumbers"}], "originalName": "ShowWeekNumbers"},
-      {"names":[{"platform": "Blazor", "mappedType": "IgbDateRangeDescriptor[]","mappedName": "SpecialDates"}], "originalName": "SpecialDates"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbDateRangeDescriptor[]?","mappedName": "SpecialDates"}], "originalName": "SpecialDates"},
       {"names":[{"platform": "Blazor", "mappedType": "WeekDays","mappedName": "WeekStart"}], "originalName": "WeekStart"} ]
   },
   {
