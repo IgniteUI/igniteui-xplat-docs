@@ -12,6 +12,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "DefaultPrevented"}], "originalName": "DefaultPrevented"},
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "KeyCode"}], "originalName": "KeyCode"},
       {"names":[{"platform": "Blazor", "mappedType": "ModifierKeys","mappedName": "Modifiers"}], "originalName": "Modifiers"},
+      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "OriginalEvent"}], "originalName": "OriginalEvent"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "PreventDefault"}], "originalName": "PreventDefault"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "Shift"}], "originalName": "Shift"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "StopPropagation"}], "originalName": "StopPropagation"} ]

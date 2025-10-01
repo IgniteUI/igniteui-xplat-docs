@@ -334,7 +334,7 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
   - Added `horizontalSummariesPosition` property to the `pivotUI`, configuring horizontal summaries position.
   - Added row headers for the row dimensions. Can be enabled inside the new `pivotUI` property as `showHeaders` **true**.
   - Keyboard navigation now can move in to row headers back and forth from any row dimension headers or column headers.
-  - Added keyboard interactions for row dimension collapse using <kbd>Alt</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> arrows and row headers sorting using <kbd>Ctrl</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> arrows.
+  - Added keyboard interactions for row dimension collapse using <kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> arrows and row headers sorting using <kbd>CTRL</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> arrows.
 
 **BREAKING CHANGES**:
 - **All Grids** 
@@ -629,8 +629,8 @@ This release introduces a few improvements and simplifications to visual design 
   - Added `SelectAllRows` - method.
   - Added Row Range Selection - With `GridSelectionMode` property set to MultipleRow the following new functionality is now included:
     - Click and drag to select rows
-    - Shift and click to select multiple rows.
-    - Shift and press the up/down arrow keys to select multiple rows.
+    - <kbd>SHIFT</kbd> and click to select multiple rows.
+    - <kbd>SHIFT</kbd> and press the <kbd>↑</kbd> + <kbd>↓</kbd> arrow keys to select multiple rows.
   - Pressing space bar toggles selection of active row via `GridSelectionMode` property set to MultipleRow or SingleRow
   - Added Column Summaries to Column Options Dialog.
 
@@ -909,7 +909,7 @@ import { IgcLiveGridComponent } from 'igniteui-webcomponents-data-grids/ES5/igc-
 - `DateTimeInput` - double emit of `igcChange` in certain scenarios.
 - `NavDrawer` - mini variant is not initially rendered when not in an open state.
 - `Combo`:
-  - Selecting an entry using the `Enter` key now correctly works in single selection mode.
+  - Selecting an entry using the <kbd>ENTER</kbd> key now correctly works in single selection mode.
   - Turning on the `DisableFiltering` option now clears any previously entered search term.
   - Entering a search term in single selection mode that already matches the selected item now works correctly.
 

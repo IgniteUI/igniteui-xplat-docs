@@ -3,9 +3,9 @@
   "types":[
   {
     "originalName": "CloneDataSourceFilterOperation",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "CloneDataSourceFilterOperation.ts","mappedName": "CloneDataSourceFilterOperation"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -15,26 +15,26 @@
   },
   {
     "originalName": "GotFocusEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-got-focus-event-args.ts","mappedName": "IgxGotFocusEventArgs"}]
   },
   {
     "originalName": "LostFocusEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-lost-focus-event-args.ts","mappedName": "IgxLostFocusEventArgs"}]
   },
   {
     "originalName": "MultiColumnComboBoxTextChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-multi-column-combo-box-text-changed-event-args.ts","mappedName": "IgxMultiColumnComboBoxTextChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "newText"}], "originalName": "NewText"},
@@ -42,10 +42,10 @@
   },
   {
     "originalName": "MultiColumnComboBoxValueChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-multi-column-combo-box-value-changed-event-args.ts","mappedName": "IgxMultiColumnComboBoxValueChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "newValue"}], "originalName": "NewValue"},
@@ -53,8 +53,8 @@
   },
   {
     "originalName": "MultiColumnComboBox",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-multi-column-combo-box-component.ts","mappedName": "IgxMultiColumnComboBoxComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "actualBackgroundColor"}], "originalName": "ActualBackgroundColor"},
@@ -150,9 +150,9 @@
   },
   {
     "originalName": "MultiColumnComboBoxSelectedItemChangeType",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "MultiColumnComboBoxSelectedItemChangeType.ts","mappedName": "MultiColumnComboBoxSelectedItemChangeType"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -162,9 +162,9 @@
   },
   {
     "originalName": "SortMode",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "SortMode.ts","mappedName": "SortMode"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},

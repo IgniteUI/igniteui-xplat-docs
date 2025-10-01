@@ -445,7 +445,7 @@ DashboardTile <label>PREVIEW</label>
   - 水平集計の位置を設定するための `horizontalSummariesPosition` プロパティを `pivotUI` に追加しました。
   - 行ディメンションの行ヘッダーが追加されました。新しい `pivotUI` プロパティ内で `showHeaders` **true** として有効にできます。
   - キーボード ナビゲーションで行ディメンションヘッダーや列ヘッダーから行ヘッダーへ移動できるようになりました。
-  - キーボード操作で行ディメンションの縮小 (<kbd>Alt</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd>) および行ヘッダーのソート (<kbd>Ctrl</kbd> + <kbd>↑</kbd> <kbd>↓</kbd>) ができるようになりました。
+  - キーボード操作で行ディメンションの縮小 (<kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd>) および行ヘッダーのソート (<kbd>CTRL</kbd> + <kbd>↑</kbd> <kbd>↓</kbd>) ができるようになりました。
 
 **重大な変更**:
 
@@ -814,8 +814,8 @@ DashboardTile <label>PREVIEW</label>
 * `SelectAllRows` メソッドを追加しました。
 * 行範囲の選択を追加しました - `GridSelectionMode` プロパティを MultipleRow に設定すると、次の新しい機能が含まれるようになりました:
     - クリックしてドラッグし、行を選択します。
-    - Shift キーを押しながらクリックして、複数の行を選択します。
-    - Shift キーを押しながら上下の矢印キーを押して、複数の行を選択します。
+    - <kbd>SHIFT</kbd> キーを押しながらクリックして、複数の行を選択します。
+    - <kbd>SHIFT</kbd> キーを押しながら上下の矢印キーを押して、複数の行を選択します。
 * スペース バーを押すと、MultipleRow または SingleRow に設定された `GridSelectionMode` プロパティを介してアクティブな行の選択が切り替わります。
 * 列オプション ダイアログに列集計を追加しました。
 

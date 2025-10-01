@@ -1,5 +1,8 @@
 {
-  "extraFiles": ["igr-local-data-source-module.ts"],
+  "extraFiles": [
+    "igr-generic-virtual-data-source-module.ts",
+    "igr-local-data-source-module.ts"
+  ],
   "types":[
   {
     "originalName": "DataSourceLocalDataProvider",
@@ -86,6 +89,183 @@
       {"names":[{"platform": "React", "mappedType": "IgrSummaryDescriptionCollection","mappedName": "_summaryDescriptions"}], "originalName": "_summaryDescriptions"},
       {"names":[{"platform": "React", "mappedType": "DataSourceSummaryScope","mappedName": "_summaryScope"}], "originalName": "_summaryScope"},
       {"names":[{"platform": "React", "mappedType": "IDataSourceDataProviderUpdateNotifier","mappedName": "_updateNotifier"}], "originalName": "_updateNotifier"} ]
+  },
+  {
+    "originalName": "DataSourceGroupDescription",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeName": "DataSourceSortDescription",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "igr-data-source-group-description.ts","dynamicModuleName": "igr-data-source-group-description-dynamic-module.ts","moduleName": "igr-data-source-group-description-module.ts","mappedName": "IgrDataSourceGroupDescription"}]
+  },
+  {
+    "originalName": "DataSourceGroupDescriptionCollection",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "igr-data-source-group-description-collection.ts","mappedName": "IgrDataSourceGroupDescriptionCollection"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "add"}], "originalName": "Add"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "clear"}], "originalName": "Clear"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "indexOf"}], "originalName": "IndexOf"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "insert"}], "originalName": "Insert"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "remove"}], "originalName": "Remove"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "removeAt"}], "originalName": "RemoveAt"} ]
+  },
+  {
+    "originalName": "DataSourceSortDescription",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "igr-data-source-sort-description.ts","dynamicModuleName": "igr-data-source-sort-description-dynamic-module.ts","moduleName": "igr-data-source-sort-description-module.ts","mappedName": "IgrDataSourceSortDescription"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "equals"}], "originalName": "Equals"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "field"}], "originalName": "Field"},
+      {"names":[{"platform": "React", "mappedType": "ListSortDirection","mappedName": "sortDirection"}], "originalName": "SortDirection"} ]
+  },
+  {
+    "originalName": "DataSourceSortDescriptionCollection",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "igr-data-source-sort-description-collection.ts","mappedName": "IgrDataSourceSortDescriptionCollection"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "add"}], "originalName": "Add"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "clear"}], "originalName": "Clear"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "indexOf"}], "originalName": "IndexOf"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "insert"}], "originalName": "Insert"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "remove"}], "originalName": "Remove"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "removeAt"}], "originalName": "RemoveAt"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "shouldDetachOnTargetChange"}], "originalName": "ShouldDetachOnTargetChange"} ]
+  },
+  {
+    "originalName": "DataSourceSummaryDescription",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "igr-data-source-summary-description.ts","dynamicModuleName": "igr-data-source-summary-description-dynamic-module.ts","moduleName": "igr-data-source-summary-description-module.ts","mappedName": "IgrDataSourceSummaryDescription"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "alias"}], "originalName": "Alias"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "calculatorDisplayName"}], "originalName": "CalculatorDisplayName"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "equals"}], "originalName": "Equals"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "field"}], "originalName": "Field"},
+      {"names":[{"platform": "React", "mappedType": "DataSourceSummaryOperand","mappedName": "operand"}], "originalName": "Operand"} ]
+  },
+  {
+    "originalName": "DataSourceSummaryDescriptionCollection",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "igr-data-source-summary-description-collection.ts","mappedName": "IgrDataSourceSummaryDescriptionCollection"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "add"}], "originalName": "Add"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "clear"}], "originalName": "Clear"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "indexOf"}], "originalName": "IndexOf"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "insert"}], "originalName": "Insert"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "remove"}], "originalName": "Remove"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "removeAt"}], "originalName": "RemoveAt"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "shouldDetachOnTargetChange"}], "originalName": "ShouldDetachOnTargetChange"} ]
+  },
+  {
+    "originalName": "GenericDataSourceSchemaPropertyType",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "GenericDataSourceSchemaPropertyType.ts","mappedName": "GenericDataSourceSchemaPropertyType"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "GenericDataSourceSchemaPropertyType","mappedName": "BooleanValue"}], "originalName": "BooleanValue"},
+      {"names":[{"platform": "React", "mappedType": "GenericDataSourceSchemaPropertyType","mappedName": "DateTimeValue"}], "originalName": "DateTimeValue"},
+      {"names":[{"platform": "React", "mappedType": "GenericDataSourceSchemaPropertyType","mappedName": "DoubleValue"}], "originalName": "DoubleValue"},
+      {"names":[{"platform": "React", "mappedType": "GenericDataSourceSchemaPropertyType","mappedName": "IntValue"}], "originalName": "IntValue"},
+      {"names":[{"platform": "React", "mappedType": "GenericDataSourceSchemaPropertyType","mappedName": "StringValue"}], "originalName": "StringValue"} ]
+  },
+  {
+    "originalName": "GenericVirtualDataProviderWorkerSettings",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeName": "AsyncVirtualDataSourceDataProviderWorkerSettings",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "GenericVirtualDataProviderWorkerSettings.ts","mappedName": "GenericVirtualDataProviderWorkerSettings"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "IgrFilterExpressionCollection","mappedName": "filterExpressions"}], "originalName": "FilterExpressions"},
+      {"names":[{"platform": "React", "mappedType": "IgrSortDescriptionCollection","mappedName": "groupDescriptions"}], "originalName": "GroupDescriptions"},
+      {"names":[{"platform": "React", "mappedType": "(requestId: number, pageIndex: number, pageSize: number, completionSource: TaskCompletionSource) => void","mappedName": "pageRequested"}], "originalName": "PageRequested"},
+      {"names":[{"platform": "React", "mappedType": "IgrSortDescriptionCollection","mappedName": "sortDescriptions"}], "originalName": "SortDescriptions"},
+      {"names":[{"platform": "React", "mappedType": "IgrSummaryDescriptionCollection","mappedName": "summaryDescriptions"}], "originalName": "SummaryDescriptions"},
+      {"names":[{"platform": "React", "mappedType": "DataSourceSummaryScope","mappedName": "summaryScope"}], "originalName": "SummaryScope"} ]
+  },
+  {
+    "originalName": "GenericVirtualDataProviderWorker",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeName": "AsyncVirtualDataSourceProviderWorker",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "GenericVirtualDataProviderWorker.ts","mappedName": "GenericVirtualDataProviderWorker"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "IgrFilterExpressionCollection","mappedName": "filterExpressions"}], "originalName": "FilterExpressions"},
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "finishProcessingCompletedTask"}], "originalName": "FinishProcessingCompletedTask"},
+      {"names":[{"platform": "React", "mappedType": "IgrSortDescriptionCollection","mappedName": "groupDescriptions"}], "originalName": "GroupDescriptions"},
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "makeTaskForRequest"}], "originalName": "MakeTaskForRequest"},
+      {"names":[{"platform": "React", "mappedType": "(requestId: number, pageIndex: number, pageSize: number, completionSource: TaskCompletionSource) => void","mappedName": "pageRequested"}], "originalName": "PageRequested"},
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "processCompletedTask"}], "originalName": "ProcessCompletedTask"},
+      {"names":[{"platform": "React", "mappedType": "IgrSortDescriptionCollection","mappedName": "sortDescriptions"}], "originalName": "SortDescriptions"},
+      {"names":[{"platform": "React", "mappedType": "IgrSummaryDescriptionCollection","mappedName": "summaryDescriptions"}], "originalName": "SummaryDescriptions"},
+      {"names":[{"platform": "React", "mappedType": "DataSourceSummaryScope","mappedName": "summaryScope"}], "originalName": "SummaryScope"},
+      {"names":[{"platform": "React", "mappedType": "ISectionInformation[]","mappedName": "_groupInformation"}], "originalName": "_groupInformation"},
+      {"names":[{"platform": "React", "mappedType": "ISummaryResult[]","mappedName": "_summaryInformation"}], "originalName": "_summaryInformation"} ]
+  },
+  {
+    "originalName": "BaseGenericDataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "System.Windows",
+    "originalBaseTypeName": "DependencyObject",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "igr-base-generic-data-source.ts","mappedName": "IgrBaseGenericDataSource"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "IDataSourceExecutionContext","mappedName": "executionContext"}], "originalName": "ExecutionContext"},
+      {"names":[{"platform": "React", "mappedType": "IgrFilterExpressionCollection","mappedName": "filterExpressions"}], "originalName": "FilterExpressions"},
+      {"names":[{"platform": "React", "mappedType": "IgrDataSourceGroupDescriptionCollection","mappedName": "groupDescriptions"}], "originalName": "GroupDescriptions"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "queueAutoRefresh"}], "originalName": "QueueAutoRefresh"},
+      {"names":[{"platform": "React", "mappedType": "IgrDataSourceSortDescriptionCollection","mappedName": "sortDescriptions"}], "originalName": "SortDescriptions"},
+      {"names":[{"platform": "React", "mappedType": "IgrDataSourceSummaryDescriptionCollection","mappedName": "summaryDescriptions"}], "originalName": "SummaryDescriptions"} ]
+  },
+  {
+    "originalName": "GenericVirtualDataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeName": "BaseGenericDataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "igr-generic-virtual-data-source.ts","mappedName": "IgrGenericVirtualDataSource"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "addSchemaProperty"}], "originalName": "AddSchemaProperty"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "addSummaryDate"}], "originalName": "AddSummaryDate"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "addSummaryDouble"}], "originalName": "AddSummaryDouble"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "addSummaryInt"}], "originalName": "AddSummaryInt"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "addSummaryString"}], "originalName": "AddSummaryString"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "fillColumnBool"}], "originalName": "FillColumnBool"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "fillColumnDate"}], "originalName": "FillColumnDate"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "fillColumnDouble"}], "originalName": "FillColumnDouble"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "fillColumnInt"}], "originalName": "FillColumnInt"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "fillColumnString"}], "originalName": "FillColumnString"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "fillCount"}], "originalName": "FillCount"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "fillGroupEnd"}], "originalName": "FillGroupEnd"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "fillGroupStart"}], "originalName": "FillGroupStart"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "fillGroupValueDate"}], "originalName": "FillGroupValueDate"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "fillGroupValueDouble"}], "originalName": "FillGroupValueDouble"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "fillGroupValueInt"}], "originalName": "FillGroupValueInt"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "fillGroupValueString"}], "originalName": "FillGroupValueString"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "fillPageEnd"}], "originalName": "FillPageEnd"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "fillPageStart"}], "originalName": "FillPageStart"} ]
+  },
+  {
+    "originalName": "PageRequestedEventArgs",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "igr-page-requested-event-args.ts","mappedName": "IgrPageRequestedEventArgs"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "dataSourceId"}], "originalName": "DataSourceId"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isSchemaRequest"}], "originalName": "IsSchemaRequest"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "pageIndex"}], "originalName": "PageIndex"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "pageSize"}], "originalName": "PageSize"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "requestId"}], "originalName": "RequestId"} ]
   },
   {
     "originalName": "FilterExpressionParsingHelper",
@@ -325,6 +505,16 @@
       {"names":[{"platform": "React", "mappedType": "() => void","mappedName": "run"}], "originalName": "Run"} ]
   },
   {
+    "originalName": "TaskCompletionSource",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "AsyncVirtualDataTaskCompletionSource.ts","mappedName": "AsyncVirtualDataTaskCompletionSource"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "setResult"}], "originalName": "SetResult"},
+      {"names":[{"platform": "React", "mappedType": "Task","mappedName": "task"}], "originalName": "Task"} ]
+  },
+  {
     "originalName": "AsyncVirtualDataSourceDataProviderWorkerSettings",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "packageName": "igniteui-core",
@@ -361,10 +551,12 @@
     "names":[{"platform": "React","fileName": "AsyncDataSourcePageRequest.ts","mappedName": "AsyncDataSourcePageRequest"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "id"}], "originalName": "Id"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isDone"}], "originalName": "IsDone"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "retryDelay"}], "originalName": "RetryDelay"},
       {"names":[{"platform": "React", "mappedType": "AsyncDataSourcePageTaskHolder","mappedName": "taskHolder"}], "originalName": "TaskHolder"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "_id"}], "originalName": "_id"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "_index"}], "originalName": "_index"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "_isDone"}], "originalName": "_isDone"},
       {"names":[{"platform": "React", "mappedType": "AsyncDataSourcePageTaskHolder","mappedName": "_pageTask"}], "originalName": "_pageTask"},
@@ -438,6 +630,7 @@
       {"names":[{"platform": "React", "mappedType": "FilterExpression","mappedName": "day"}], "originalName": "Day"},
       {"names":[{"platform": "React", "mappedType": "FilterExpression","mappedName": "divide"}], "originalName": "Divide"},
       {"names":[{"platform": "React", "mappedType": "FilterExpression","mappedName": "endsWith"}], "originalName": "EndsWith"},
+      {"names":[{"platform": "React", "mappedType": "FilterExpression","mappedName": "env"}], "originalName": "Env"},
       {"names":[{"platform": "React", "mappedType": "FilterExpression","mappedName": "equal"}], "originalName": "Equal"},
       {"names":[{"platform": "React", "mappedType": "FilterExpression","mappedName": "floor"}], "originalName": "Floor"},
       {"names":[{"platform": "React", "mappedType": "FilterExpression","mappedName": "greaterThan"}], "originalName": "GreaterThan"},
@@ -474,12 +667,23 @@
       {"names":[{"platform": "React", "mappedType": "Date","mappedName": "_todayOverride"}], "originalName": "_todayOverride"} ]
   },
   {
+    "originalName": "IFilterExpressionEnvironment",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "IFilterExpressionEnvironment.ts","mappedName": "IFilterExpressionEnvironment"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "getVariableValue"}], "originalName": "GetVariableValue"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "hasVariable"}], "originalName": "HasVariable"},
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "setVariableValue"}], "originalName": "SetVariableValue"} ]
+  },
+  {
     "originalName": "IFilterExpression",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "packageName": "igniteui-core",
     "names":[{"platform": "React","fileName": "IFilterExpression.ts","mappedName": "IFilterExpression"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "evaluateWithEnvironment"}], "originalName": "EvaluateWithEnvironment"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isAutoGenerated"}], "originalName": "IsAutoGenerated"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isFunction"}], "originalName": "IsFunction"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isLiteral"}], "originalName": "IsLiteral"},
@@ -489,6 +693,7 @@
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isWrapper"}], "originalName": "IsWrapper"},
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "markAutoGenerated"}], "originalName": "MarkAutoGenerated"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "match"}], "originalName": "Match"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "matchWithEnvironment"}], "originalName": "MatchWithEnvironment"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "precedence"}], "originalName": "Precedence"} ]
   },
   {
@@ -529,6 +734,18 @@
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "propertyReference"}], "originalName": "PropertyReference"} ]
   },
   {
+    "originalName": "FilterExpressionEnvironment",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "FilterExpressionEnvironment.ts","mappedName": "FilterExpressionEnvironment"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "getVariableValue"}], "originalName": "GetVariableValue"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "hasVariable"}], "originalName": "HasVariable"},
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "setVariableValue"}], "originalName": "SetVariableValue"},
+      {"names":[{"platform": "React", "mappedType": "Dictionary","mappedName": "_environemntValues"}], "originalName": "_environemntValues"} ]
+  },
+  {
     "originalName": "FilterExpression",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "packageName": "igniteui-core",
@@ -547,7 +764,9 @@
       {"names":[{"platform": "React", "mappedType": "FilterExpression","mappedName": "divide"}], "originalName": "Divide"},
       {"names":[{"platform": "React", "mappedType": "FilterExpression","mappedName": "divideBy"}], "originalName": "DivideBy"},
       {"names":[{"platform": "React", "mappedType": "FilterExpression","mappedName": "endsWith"}], "originalName": "EndsWith"},
+      {"names":[{"platform": "React", "mappedType": "FilterExpression","mappedName": "env"}], "originalName": "Env"},
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "evaluateWithEnvironment"}], "originalName": "EvaluateWithEnvironment"},
       {"names":[{"platform": "React", "mappedType": "FilterExpression","mappedName": "floor"}], "originalName": "Floor"},
       {"names":[{"platform": "React", "mappedType": "FilterExpression","mappedName": "group"}], "originalName": "Group"},
       {"names":[{"platform": "React", "mappedType": "FilterExpression","mappedName": "hour"}], "originalName": "Hour"},
@@ -589,6 +808,7 @@
       {"names":[{"platform": "React", "mappedType": "FilterExpression","mappedName": "length"}], "originalName": "Length"},
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "markAutoGenerated"}], "originalName": "MarkAutoGenerated"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "match"}], "originalName": "Match"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "matchWithEnvironment"}], "originalName": "MatchWithEnvironment"},
       {"names":[{"platform": "React", "mappedType": "FilterExpression","mappedName": "minus"}], "originalName": "Minus"},
       {"names":[{"platform": "React", "mappedType": "FilterExpression","mappedName": "minute"}], "originalName": "Minute"},
       {"names":[{"platform": "React", "mappedType": "FilterExpression","mappedName": "modulo"}], "originalName": "Modulo"},
@@ -626,10 +846,10 @@
     "names":[{"platform": "React","fileName": "OperationFilterExpression.ts","mappedName": "OperationFilterExpression"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
-      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "evaluate"}], "originalName": "Evaluate"},
-      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "evaluateArithmetic"}], "originalName": "EvaluateArithmetic"},
-      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "evaluateComparison"}], "originalName": "EvaluateComparison"},
-      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "evaluateLogical"}], "originalName": "EvaluateLogical"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "evaluateArithmeticWithEnvironment"}], "originalName": "EvaluateArithmeticWithEnvironment"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "evaluateComparisonWithEnvironment"}], "originalName": "EvaluateComparisonWithEnvironment"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "evaluateLogicalWithEnvironment"}], "originalName": "EvaluateLogicalWithEnvironment"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "evaluateWithEnvironment"}], "originalName": "EvaluateWithEnvironment"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "hasLeft"}], "originalName": "HasLeft"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "hasOperator"}], "originalName": "HasOperator"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "hasPropertyName"}], "originalName": "HasPropertyName"},
@@ -661,7 +881,7 @@
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "coerceType"}], "originalName": "CoerceType"},
-      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "evaluateWithEnvironment"}], "originalName": "EvaluateWithEnvironment"},
       {"names":[{"platform": "React", "mappedType": "IgrFilterExpressionCollection","mappedName": "functionArguments"}], "originalName": "FunctionArguments"},
       {"names":[{"platform": "React", "mappedType": "FilterExpressionFunctionType","mappedName": "functionType"}], "originalName": "FunctionType"},
       {"names":[{"platform": "React", "mappedType": "Type","mappedName": "getLiteralTargetType"}], "originalName": "GetLiteralTargetType"},
@@ -683,7 +903,7 @@
     "names":[{"platform": "React","fileName": "PropertyReferenceFilterExpression.ts","mappedName": "PropertyReferenceFilterExpression"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
-      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "evaluateWithEnvironment"}], "originalName": "EvaluateWithEnvironment"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isPropertyReference"}], "originalName": "IsPropertyReference"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "precedence"}], "originalName": "Precedence"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "propertyReference"}], "originalName": "PropertyReference"},
@@ -699,7 +919,7 @@
     "names":[{"platform": "React","fileName": "LiteralFilterExpression.ts","mappedName": "LiteralFilterExpression"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
-      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "evaluateWithEnvironment"}], "originalName": "EvaluateWithEnvironment"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isLiteral"}], "originalName": "IsLiteral"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isNull"}], "originalName": "IsNull"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "leaveUnquoted"}], "originalName": "LeaveUnquoted"},
@@ -720,7 +940,7 @@
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "init1"}], "originalName": ".ctor"},
       {"names":[{"platform": "React", "mappedType": "IFilterExpression","mappedName": "build"}], "originalName": "Build"},
-      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "evaluateWithEnvironment"}], "originalName": "EvaluateWithEnvironment"},
       {"names":[{"platform": "React", "mappedType": "FilterExpression","mappedName": "expression"}], "originalName": "Expression"},
       {"names":[{"platform": "React", "mappedType": "FilterFactory","mappedName": "factory"}], "originalName": "Factory"},
       {"names":[{"platform": "React", "mappedType": "FilterExpressionWrapperType","mappedName": "getWrapperType"}], "originalName": "GetWrapperType"},
@@ -1017,6 +1237,7 @@
       {"names":[{"platform": "React", "mappedType": "FilterExpressionFunctionType","mappedName": "Date"}], "originalName": "Date"},
       {"names":[{"platform": "React", "mappedType": "FilterExpressionFunctionType","mappedName": "Day"}], "originalName": "Day"},
       {"names":[{"platform": "React", "mappedType": "FilterExpressionFunctionType","mappedName": "EndsWith"}], "originalName": "EndsWith"},
+      {"names":[{"platform": "React", "mappedType": "FilterExpressionFunctionType","mappedName": "Env"}], "originalName": "Env"},
       {"names":[{"platform": "React", "mappedType": "FilterExpressionFunctionType","mappedName": "Floor"}], "originalName": "Floor"},
       {"names":[{"platform": "React", "mappedType": "FilterExpressionFunctionType","mappedName": "Hour"}], "originalName": "Hour"},
       {"names":[{"platform": "React", "mappedType": "FilterExpressionFunctionType","mappedName": "IndexOf"}], "originalName": "IndexOf"},
@@ -1223,6 +1444,22 @@
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "rowIndex"}], "originalName": "RowIndex"} ]
   },
   {
+    "originalName": "DataSourceRootSummariesChangedEventArgs",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "System",
+    "originalBaseTypeName": "EventArgs",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "igr-data-source-root-summaries-changed-event-args.ts","mappedName": "IgrDataSourceRootSummariesChangedEventArgs"}]
+  },
+  {
+    "originalName": "DataSourcePropertiesRequestedChangedEventArgs",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "System",
+    "originalBaseTypeName": "EventArgs",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "igr-data-source-properties-requested-changed-event-args.ts","mappedName": "IgrDataSourcePropertiesRequestedChangedEventArgs"}]
+  },
+  {
     "originalName": "DataSourceDataProviderSchemaChangedEventArgs",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "System",
@@ -1297,6 +1534,24 @@
       {"names":[{"platform": "React", "mappedType": "ISummaryResult[]","mappedName": "summaryResults"}], "originalName": "SummaryResults"} ]
   },
   {
+    "originalName": "DefaultSectionInformation",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "React","fileName": "DefaultSectionInformation.ts","mappedName": "DefaultSectionInformation"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "endIndex"}], "originalName": "EndIndex"},
+      {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "groupKeyProperties"}], "originalName": "GroupKeyProperties"},
+      {"names":[{"platform": "React", "mappedType": "any[]",   "mappedName": "groupKeyValues"}], "originalName": "GroupKeyValues"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "startIndex"}], "originalName": "StartIndex"},
+      {"names":[{"platform": "React", "mappedType": "ISummaryResult[]","mappedName": "summaryResults"}], "originalName": "SummaryResults"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "_endIndex"}], "originalName": "_endIndex"},
+      {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "_groupKeyProperties"}], "originalName": "_groupKeyProperties"},
+      {"names":[{"platform": "React", "mappedType": "any[]",   "mappedName": "_groupKeyValues"}], "originalName": "_groupKeyValues"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "_startIndex"}], "originalName": "_startIndex"},
+      {"names":[{"platform": "React", "mappedType": "ISummaryResult[]","mappedName": "_summaryResults"}], "originalName": "_summaryResults"} ]
+  },
+  {
     "originalName": "IODataLiteralEmitter",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "packageName": "igniteui-core",
@@ -1363,6 +1618,7 @@
       {"names":[{"platform": "React", "mappedType": "any[]",   "mappedName": "groupKey"}], "originalName": "GroupKey"},
       {"names":[{"platform": "React", "mappedType": "DataSourceSummaryOperand","mappedName": "operand"}], "originalName": "Operand"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "propertyName"}], "originalName": "PropertyName"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "shouldDisplay"}], "originalName": "ShouldDisplay"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "summaryIndex"}], "originalName": "SummaryIndex"},
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "value"}], "originalName": "Value"} ]
   },
@@ -1376,11 +1632,13 @@
       {"names":[{"platform": "React", "mappedType": "any[]",   "mappedName": "groupKey"}], "originalName": "GroupKey"},
       {"names":[{"platform": "React", "mappedType": "DataSourceSummaryOperand","mappedName": "operand"}], "originalName": "Operand"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "propertyName"}], "originalName": "PropertyName"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "shouldDisplay"}], "originalName": "ShouldDisplay"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "summaryIndex"}], "originalName": "SummaryIndex"},
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "value"}], "originalName": "Value"},
       {"names":[{"platform": "React", "mappedType": "any[]",   "mappedName": "_groupKey"}], "originalName": "_groupKey"},
       {"names":[{"platform": "React", "mappedType": "DataSourceSummaryOperand","mappedName": "_operand"}], "originalName": "_operand"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "_propertyName"}], "originalName": "_propertyName"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "_shouldDisplay"}], "originalName": "_shouldDisplay"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "_summaryIndex"}], "originalName": "_summaryIndex"},
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "_value"}], "originalName": "_value"} ]
   },
@@ -1491,6 +1749,7 @@
       {"names":[{"platform": "React", "mappedType": "ISummaryResult","mappedName": "endCalculation"}], "originalName": "EndCalculation"},
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "getExpectedTypeFromDouble"}], "originalName": "GetExpectedTypeFromDouble"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "getItemAsDouble"}], "originalName": "GetItemAsDouble"},
+      {"names":[{"platform": "React", "mappedType": "ISummaryResult","mappedName": "getResults"}], "originalName": "GetResults"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "getValueAsDouble"}], "originalName": "GetValueAsDouble"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isSummaryDirty"}], "originalName": "IsSummaryDirty"},
       {"names":[{"platform": "React", "mappedType": "ISummaryResult","mappedName": "itemAdded"}], "originalName": "ItemAdded"},
@@ -1498,6 +1757,7 @@
       {"names":[{"platform": "React", "mappedType": "DataSourceSummaryOperand","mappedName": "operand"}], "originalName": "Operand"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "propertyName"}], "originalName": "PropertyName"},
       {"names":[{"platform": "React", "mappedType": "DataSourceSchemaPropertyType","mappedName": "propertyType"}], "originalName": "PropertyType"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "shouldDisplay"}], "originalName": "ShouldDisplay"},
       {"names":[{"platform": "React", "mappedType": "DataSourceSummaryOperand","mappedName": "_operand"}], "originalName": "_operand"} ]
   },
   {
@@ -1534,10 +1794,12 @@
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "propertyName"}], "originalName": "PropertyName"},
       {"names":[{"platform": "React", "mappedType": "(sender: any, args: IgrProvideCalculatorEventArgs) => void","mappedName": "provideCalculator"}], "originalName": "ProvideCalculator"},
       {"names":[{"platform": "React", "mappedType": "void","mappedName": "seal"}], "originalName": "Seal"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "shouldDisplay"}], "originalName": "ShouldDisplay"},
       {"names":[{"platform": "React", "mappedType": "SummaryCalculator","mappedName": "_calculator"}], "originalName": "_calculator"},
       {"names":[{"platform": "React", "mappedType": "DataSourceSummaryOperand","mappedName": "_operand"}], "originalName": "_operand"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "_propertyName"}], "originalName": "_propertyName"},
-      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "_sealed"}], "originalName": "_sealed"} ]
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "_sealed"}], "originalName": "_sealed"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "_shouldDisplay"}], "originalName": "_shouldDisplay"} ]
   },
   {
     "originalName": "ProvideCalculatorEventArgs",

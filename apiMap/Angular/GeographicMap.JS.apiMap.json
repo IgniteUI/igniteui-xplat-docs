@@ -35,6 +35,45 @@
       {"names":[{"platform": "Angular", "mappedType": "IgxGeographicMapImagery","mappedName": "tileImagery"}], "originalName": "TileImagery"} ]
   },
   {
+    "originalName": "AzureMapsImageryStyle",
+    "originalNamespace": "Infragistics.Controls.Maps",
+    "isEnum":true,
+    "packageName": "igniteui-maps",
+    "names":[{"platform": "Angular","fileName": "AzureMapsImageryStyle.ts","mappedName": "AzureMapsImageryStyle"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "AzureMapsImageryStyle","mappedName": "DarkGrey"}], "originalName": "DarkGrey"},
+      {"names":[{"platform": "Angular", "mappedType": "AzureMapsImageryStyle","mappedName": "HybridDarkGreyOverlay"}], "originalName": "HybridDarkGreyOverlay"},
+      {"names":[{"platform": "Angular", "mappedType": "AzureMapsImageryStyle","mappedName": "HybridRoadOverlay"}], "originalName": "HybridRoadOverlay"},
+      {"names":[{"platform": "Angular", "mappedType": "AzureMapsImageryStyle","mappedName": "LabelsDarkGreyOverlay"}], "originalName": "LabelsDarkGreyOverlay"},
+      {"names":[{"platform": "Angular", "mappedType": "AzureMapsImageryStyle","mappedName": "LabelsRoadOverlay"}], "originalName": "LabelsRoadOverlay"},
+      {"names":[{"platform": "Angular", "mappedType": "AzureMapsImageryStyle","mappedName": "Road"}], "originalName": "Road"},
+      {"names":[{"platform": "Angular", "mappedType": "AzureMapsImageryStyle","mappedName": "Satellite"}], "originalName": "Satellite"},
+      {"names":[{"platform": "Angular", "mappedType": "AzureMapsImageryStyle","mappedName": "TerraOverlay"}], "originalName": "TerraOverlay"},
+      {"names":[{"platform": "Angular", "mappedType": "AzureMapsImageryStyle","mappedName": "TrafficAbsoluteOverlay"}], "originalName": "TrafficAbsoluteOverlay"},
+      {"names":[{"platform": "Angular", "mappedType": "AzureMapsImageryStyle","mappedName": "TrafficDelayOverlay"}], "originalName": "TrafficDelayOverlay"},
+      {"names":[{"platform": "Angular", "mappedType": "AzureMapsImageryStyle","mappedName": "TrafficReducedOverlay"}], "originalName": "TrafficReducedOverlay"},
+      {"names":[{"platform": "Angular", "mappedType": "AzureMapsImageryStyle","mappedName": "TrafficRelativeDarkOverlay"}], "originalName": "TrafficRelativeDarkOverlay"},
+      {"names":[{"platform": "Angular", "mappedType": "AzureMapsImageryStyle","mappedName": "TrafficRelativeOverlay"}], "originalName": "TrafficRelativeOverlay"},
+      {"names":[{"platform": "Angular", "mappedType": "AzureMapsImageryStyle","mappedName": "WeatherInfraredOverlay"}], "originalName": "WeatherInfraredOverlay"},
+      {"names":[{"platform": "Angular", "mappedType": "AzureMapsImageryStyle","mappedName": "WeatherRadarOverlay"}], "originalName": "WeatherRadarOverlay"} ]
+  },
+  {
+    "originalName": "AzureMapsImagery",
+    "originalNamespace": "Infragistics.Controls.Maps",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
+    "originalBaseTypeName": "GeographicMapImagery",
+    "packageName": "igniteui-maps",
+    "names":[{"platform": "Angular","fileName": "igx-azure-maps-imagery.ts","dynamicModuleName": "igx-azure-maps-imagery-dynamic-module.ts","moduleName": "igx-azure-maps-imagery-module.ts","mappedName": "IgxAzureMapsImagery"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "apiKey"}], "originalName": "ApiKey"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "apiVersion"}], "originalName": "ApiVersion"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "cultureName"}], "originalName": "CultureName"},
+      {"names":[{"platform": "Angular", "mappedType": "AzureMapsImageryStyle","mappedName": "imageryStyle"}], "originalName": "ImageryStyle"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "localizedView"}], "originalName": "LocalizedView"},
+      {"names":[{"platform": "Angular", "mappedType": "Date","mappedName": "timestamp"}], "originalName": "Timestamp"} ]
+  },
+  {
     "originalName": "BingMapsImageryStyle",
     "originalNamespace": "Infragistics.Controls.Maps",
     "isEnum":true,
@@ -234,6 +273,9 @@
     "packageName": "igniteui-maps",
     "names":[{"platform": "Angular","fileName": "igx-geographic-shape-series-base-component.ts","mappedName": "IgxGeographicShapeSeriesBaseComponent"}],
     "members":[
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "fillMemberPath"}], "originalName": "FillMemberPath"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxBrushScaleComponent","mappedName": "fillScale"}], "originalName": "FillScale"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "fillScaleUseGlobalValues"}], "originalName": "FillScaleUseGlobalValues"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCustomShapeMarkerStyleAllowed"}], "originalName": "IsCustomShapeMarkerStyleAllowed"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCustomShapeStyleAllowed"}], "originalName": "IsCustomShapeStyleAllowed"},
       {"names":[{"platform": "Angular", "mappedType": "ShapeItemSearchMode","mappedName": "itemSearchMode"}], "originalName": "ItemSearchMode"},
