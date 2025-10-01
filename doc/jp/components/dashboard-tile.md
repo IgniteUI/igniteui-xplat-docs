@@ -6,7 +6,7 @@ mentionedTypes: ["Toolbar", "CategoryChart", "XamDataChart", "XamRadialGauge", "
 _language: ja
 ---
 
-# {Platform} Dashboard Tile (ダッシュボード タイル) の概要
+# {Platform} Dashboard Tile (ダッシュボード タイル) <label>PREVIEW</label>
 
 {Platform} Dashboard Tile は、データ ソース コレクション/配列または単一のデータ ポイントを分析して、表示する最も適切な視覚化を決定する自動データ視覚化コンポーネントです。また、埋め込みの `Toolbar` で提供される一連のツールを使用して、さまざまな方法で表示される視覚化を変更できます。
 
