@@ -51,11 +51,27 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 <!-- end: React -->
 
-<!-- React, WebComponents -->
+<!-- Blazor -->
+
+Before using the `Tooltip`, you need to register it as follows:
+
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbTooltipModule));
+```
+
+You will also need to link an additional CSS file to apply the styling to the `Tooltip` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
+
+For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
 
 Now you can start with a basic configuration of the {Platform} `Tooltip`.
-
-<!-- end: React, WebComponents -->
 
 ```html
 <igc-tooltip anchor="hover-button">
@@ -73,13 +89,19 @@ Now you can start with a basic configuration of the {Platform} `Tooltip`.
 <IgrButton id="hover-button">Hover me</IgrButton>
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+```razor
+<IgbTooltip Anchor="hover-button">
+  Congrats you have hovered the button!
+</IgbTooltip>
+
+<IgbButton id="hover-button">Hover me</IgbButton>
+```
 
 ## Usage
 
 ### Tooltip target
 
-To attach a tooltip to the desired element, use the `Anchor` property on the <!-- WebComponents -->**&lt;igc-tooltip&gt;**<!-- end: WebComponents --><!-- React -->**&lt;IgrTooltip&gt;**<!-- end: React --> element. This property accepts either an element ID or a direct reference to an element. When using an ID reference, simply set the `Anchor` property to the ID of the target element.
+To attach a tooltip to the desired element, use the `Anchor` property of the `Tooltip` and set it to the ID of the target element.
 
 ```html
 <igc-button id="target-button">Hover me</igc-button>
@@ -95,7 +117,16 @@ To attach a tooltip to the desired element, use the `Anchor` property on the <!-
 </IgrTooltip>
 ```
 
+```razor
+<IgbButton id="target-button">Hover me</IgbButton>
+<IgbTooltip Anchor="target-button">
+  Congrats you have hovered the button!
+</IgbTooltip>
+```
+
+<!-- WebComponents, React -->
 You can also specify the target by passing the element instance directly: 
+<!-- end: WebComponents, React -->
 
 ```html
 <igc-tooltip id="tooltip">
@@ -127,7 +158,7 @@ tooltip.anchor = anchor;
 
 ### Tooltip content
 
-The Tooltip content is defined by placing custom content between the opening and closing tags of the <!-- WebComponents -->**&lt;igc-tooltip&gt;**<!-- end: WebComponents --><!-- React -->**&lt;IgrTooltip&gt;**<!-- end: React --> element.
+The tooltip content is defined by placing custom content between the opening and closing tags of the `Tooltip`.
 
 ```html
 <igc-tooltip>
@@ -141,7 +172,15 @@ The Tooltip content is defined by placing custom content between the opening and
 </IgrTooltip>
 ```
 
+```razor
+<IgbTooltip>
+  Congrats you have hovered the button!
+</IgbTooltip>
+```
+
+<!-- WebComponents, React -->
 Alternatively, to set simple text, you can use the `Message` property.
+<!-- end: WebComponents, React -->
 
 ```html
 <igc-tooltip message="This is my custom content here."></igc-tooltip>
@@ -151,7 +190,9 @@ Alternatively, to set simple text, you can use the `Message` property.
 <IgrTooltip message="This is my custom content here."></IgrTooltip>
 ```
 
+<!-- WebComponents, React -->
 If you use both approaches (slotted content and the `Message` property), the slotted content will take priority and the `Message` value will be ignored.
+<!-- end: WebComponents, React -->
 
 ```html
 <igc-button id="target-button">Hover me</igc-button>
@@ -167,7 +208,9 @@ If you use both approaches (slotted content and the `Message` property), the slo
 </IgrTooltip>
 ```
 
+<!-- WebComponents, React -->
 In this example, the slotted content (“I will be shown!”) will be displayed instead of the `Message` property value.
+<!-- end: WebComponents, React -->
 
 The `Tooltip` content can be more than just simple text. Since the `Tooltip` is a regular element in the markup, you can enhance its content by adding any elements you need and styling them accordingly.
 
@@ -184,9 +227,15 @@ If you want to control the delay before showing and hiding the `Tooltip`, you ca
 ```
 
 ```tsx
-<IgrTooltip show-delay="600" hide-delay="800">
+<IgrTooltip showDelay="600" hideDelay="800">
   Her name is Madelyn James.
 </IgrTooltip>
+```
+
+```razor
+<IgbTooltip ShowDelay="600" HideDelay="800">
+  Her name is Madelyn James.
+</IgbTooltip>
 ```
 
 > [!NOTE]
@@ -214,6 +263,13 @@ Additionally, you can make the `Tooltip` "sticky" using the `Sticky` property, w
 </IgrTooltip>
 ```
 
+```razor
+<IgbButton id="target-button">Hover me</IgbButton>
+<IgbTooltip Anchor="target-button" Placement="PopoverPlacement.TopStart" Sticky="true">
+  Congrats you have hovered the button!
+</IgbTooltip>
+```
+
 In the following example, you can see a demonstration of all position options and the `Sticky` property in action:
 
 `sample="/inputs/tooltip/placement", height="220", alt="{Platform} Tooltip Placement Example"`
@@ -238,7 +294,7 @@ Apart from the properties we've already covered, the `Tooltip` component offers 
 |Name|Type|Description|
 |--|--|--|
 | `Open` | boolean | Determines whether the tooltip is visible. |
-| `WithArrow` | boolean | If set to `true`, enables the arrow indicator on the tooltip. |
+| `WithArrow` | boolean | Determines whether to render an arrow indicator for the tooltip. |
 | `Offset` | number | Sets the pixel distance between the tooltip and its `Anchor`. |
 
 ### Methods
