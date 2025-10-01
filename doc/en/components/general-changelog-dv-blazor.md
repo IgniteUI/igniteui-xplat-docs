@@ -114,7 +114,7 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 - <label>PREVIEW</label> Added new `LabelsVisible` property
 
 
-### {PackageVerChanges-25-1-AUG}
+## **{PackageVerChanges-25-1-AUG}**
 
 ### {PackageMaps} (Geographic Map)
 
