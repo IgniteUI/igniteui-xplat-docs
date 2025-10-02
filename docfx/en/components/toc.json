@@ -1787,7 +1787,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "Blazor", "React"],
+    "exclude": ["Angular", "Blazor"],
     "name": "Chat",
     "href": "interactivity/chat.md",
     "status": "new"
