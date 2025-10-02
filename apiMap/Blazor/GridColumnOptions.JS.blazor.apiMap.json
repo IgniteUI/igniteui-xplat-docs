@@ -1,26 +1,26 @@
 {  "types":[
   {
     "originalName": "ApplyButtonClickEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ApplyButtonClickEventArgs.cs","mappedName": "IgbApplyButtonClickEventArgs"}]
   },
   {
     "originalName": "CancelButtonClickEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "CancelButtonClickEventArgs.cs","mappedName": "IgbCancelButtonClickEventArgs"}]
   },
   {
     "originalName": "GridColumnOptions",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "GridColumnOptionsBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridColumnOptions.cs","mappedName": "IgbGridColumnOptions"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "ControlDisplayDensity","mappedName": "ActualFilterListDensity"}], "originalName": "ActualFilterListDensity"},
@@ -57,10 +57,10 @@
   },
   {
     "originalName": "GridColumnOptionsSimpleSectionBase",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "GridColumnOptionsSectionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridColumnOptionsSimpleSectionBase.cs","mappedName": "IgbGridColumnOptionsSimpleSectionBase"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Caption"}], "originalName": "Caption"},
@@ -68,10 +68,10 @@
   },
   {
     "originalName": "GridColumnOptionsSectionBase",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "GridColumnOptionsBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridColumnOptionsSectionBase.cs","mappedName": "IgbGridColumnOptionsSectionBase"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "OnApply"}], "originalName": "OnApply"},
@@ -79,8 +79,8 @@
   },
   {
     "originalName": "GridColumnOptionsBase",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridColumnOptionsBase.cs","mappedName": "IgbGridColumnOptionsBase"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "BaseControlTheme","mappedName": "ActualBaseTheme"}], "originalName": "ActualBaseTheme"},
@@ -96,10 +96,10 @@
   },
   {
     "originalName": "GridColumnButtonOptions",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "GridColumnOptionsSectionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridColumnButtonOptions.cs","mappedName": "IgbGridColumnButtonOptions"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ApplyButtonCaption"}], "originalName": "ApplyButtonCaption"},
@@ -107,10 +107,10 @@
   },
   {
     "originalName": "GridColumnFilterOptions",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "GridColumnOptionsSectionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridColumnFilterOptions.cs","mappedName": "IgbGridColumnFilterOptions"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "ControlDisplayDensity","mappedName": "ActualFilterListDensity"}], "originalName": "ActualFilterListDensity"},
@@ -122,26 +122,26 @@
   },
   {
     "originalName": "GridColumnGroupOptions",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridColumnGroupOptions.cs","mappedName": "IgbGridColumnGroupOptions"}]
   },
   {
     "originalName": "GridColumnHideOptions",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridColumnHideOptions.cs","mappedName": "IgbGridColumnHideOptions"}]
   },
   {
     "originalName": "GridColumnMoveOptions",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridColumnMoveOptions.cs","mappedName": "IgbGridColumnMoveOptions"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "MoveLeftCaption"}], "originalName": "MoveLeftCaption"},
@@ -149,10 +149,10 @@
   },
   {
     "originalName": "GridColumnPinOptions",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridColumnPinOptions.cs","mappedName": "IgbGridColumnPinOptions"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "PinLeftCaption"}], "originalName": "PinLeftCaption"},
@@ -160,10 +160,10 @@
   },
   {
     "originalName": "GridColumnSortOptions",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridColumnSortOptions.cs","mappedName": "IgbGridColumnSortOptions"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "AscendingCaption"}], "originalName": "AscendingCaption"},
@@ -172,10 +172,10 @@
   },
   {
     "originalName": "GridColumnSummaryOptions",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "GridColumnOptionsSectionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "GridColumnSummaryOptions.cs","mappedName": "IgbGridColumnSummaryOptions"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "ActiveCount"}], "originalName": "ActiveCount"},

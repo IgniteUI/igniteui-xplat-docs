@@ -144,14 +144,14 @@ _language: ja
 ### 水平ナビゲーション
 
 * <kbd>←</kbd> または <kbd>→</kbd> は、現在行内の左右に隣接するセルに移動します。定義されている列レイアウトの影響を受けません。現在のセルが複数の行にまたがる場合は、他の隣接するセルへ移動した場合を除き、<kbd>←</kbd> と <kbd>→</kbd> は、同じ `rowStart` で左右の最初のセルに移動します。ナビゲーションはナビゲーション開始セルを格納し、可能であれば同じ `rowStart` を持つセルに移動します。
-* <kbd>Ctrl</kbd> + <kbd>←</kbd> (<kbd>HOME</kbd>) または <kbd>Ctrl</kbd> + <kbd>→</kbd> (<kbd>END</kbd>) - 行の先頭または末尾に移動し、ナビゲーション開始セルに従ってセルを選択します。
+* <kbd>CTRL</kbd> + <kbd>←</kbd> (<kbd>HOME</kbd>) または <kbd>CTRL</kbd> + <kbd>→</kbd> (<kbd>END</kbd>) - 行の先頭または末尾に移動し、ナビゲーション開始セルに従ってセルを選択します。
 
 
 ### 垂直ナビゲーション
 
 * <kbd>↑</kbd> または <kbd>↓</kbd> - 開始位置に対して上下のセルに移動し、行の影響は受けません。現在のセルが複数の列にまたがる場合は、次のアクティブ セルがナビゲーション開始セルに従って選択されます。
-* <kbd>Ctrl</kbd> + <kbd>↑</kbd> または <kbd>Ctrl</kbd> + <kbd>↓</kbd> - 最初の行または最後の行の同じ列に移動してフォーカスを適用します。
-* <kbd>Ctrl</kbd> + <kbd>Home</kbd> または <kbd>Ctrl</kbd> + <kbd>End</kbd> - 最初の行に移動して最初のセルに移動するか、最後のセルに移動します。最後のセルに移動してフォーカスを合わせます。
+* <kbd>CTRL</kbd> + <kbd>↑</kbd> または <kbd>CTRL</kbd> + <kbd>↓</kbd> - 最初の行または最後の行の同じ列に移動してフォーカスを適用します。
+* <kbd>CTRL</kbd> + <kbd>HOME</kbd> または <kbd>CTRL</kbd> + <kbd>END</kbd> - 最初の行に移動して最初のセルに移動するか、最後のセルに移動します。最後のセルに移動してフォーカスを合わせます。
 
 
 > [!Note]
@@ -167,7 +167,7 @@ _language: ja
 - `GridKeydown` が公開されています。イベントは `IGridKeydownEventArgs` を発生します。このイベントは、キーボードで上記のキー組み合わせを介してのみ使用できます。他のすべてのキー操作では、`KeyDown` イベントを使用できます。
 - `NavigateTo` - このメソッドを使用すると、提供された `RowIndex` と `VisibleColumnIndex` に基づいて位置に移動できます。
 
-以下のデモでは、Excel と同じように、<kbd>Enter</kbd> と <kbd>Shift</kbd> + <kbd>Enter</kbd> キーを使って追加のナビゲーションを使用します。
+以下のデモでは、Excel と同じように、<kbd>ENTER</kbd> と <kbd>SHIFT</kbd> + <kbd>ENTER</kbd> キーを使って追加のナビゲーションを使用します。
 
 ### デモ
 

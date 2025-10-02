@@ -1249,7 +1249,7 @@
         {
           "name": "Chart Data Annotations",
           "href": "charts/features/chart-data-annotations.md",
-          "status": "NEW"
+          "status": "PREVIEW"
         },
         {
           "name": "Charting in Dashboards",
@@ -1417,7 +1417,7 @@
       {        
         "name": "Displaying Azure Imagery",
         "href": "geo-map-display-azure-imagery.md",
-        "status": "NEW"
+        "status": "PREVIEW"
       },
       {
         "exclude": ["Blazor"],

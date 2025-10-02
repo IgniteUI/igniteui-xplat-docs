@@ -4,7 +4,7 @@
   {
     "originalName": "ColumnPinning",
     "originalNamespace": "Infragistics.Controls.Grids.Implementation",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "React","fileName": "igr-column-pinning.ts","mappedName": "IgrColumnPinning"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "backgroundColor"}], "originalName": "BackgroundColor"},

@@ -34,7 +34,7 @@ _language: ja
 編集可能なセルがフォーカスされたときに以下のいずれかの方法で特定のセルを編集モードにすることができます。
  - ダブル クリック
  - シングル クリック - 以前選択したセルが編集モードで現在選択したセルが編集可能な場合のみ、シングル クリックで編集モードに入ります。以前選択したセルが編集モードではない場合、編集モードに入らずにシングル クリックでセルを選択します。
- - <kbd>Enter</kbd> キーの押下
+ - <kbd>ENTER</kbd> キーの押下
  - <kbd>F2</kbd> キーの押下
 
 **変更をコミットしない場合**も以下の方法で編集モードを終了できます。
@@ -42,9 +42,9 @@ _language: ja
  - **ソート、フィルターリング、検索、非表示**操作の実行時。
 
 変更を**コミット**しない場合も以下の方法で編集モードを終了できます。
- - <kbd>Enter</kbd> キーの押下
+ - <kbd>ENTER</kbd> キーの押下
  - <kbd>F2</kbd> キーの押下
- - <kbd>Tab</kbd> キーの押下
+ - <kbd>TAB</kbd> キーの押下
  - 他のセルをシングル クリック - `{ComponentName}` で他のセルをクリックしたときに変更がサブミットされます。
  - その他の操作 (ページング、サイズ変更、ピン固定、移動など) は、編集モードを終了して変更を送信します。
 
@@ -591,7 +591,7 @@ function handleKeyDown(event: KeyBoardEvent) {
 ```
 <!-- end: React -->
 
-* <kbd>Enter</kbd>/<kbd>Shift+Enter</kbd> ナビゲーション
+* <kbd>ENTER</kbd>/<kbd>Shift+Enter</kbd> ナビゲーション
 
 <!-- Angular, WebComponents -->
 ```typescript
@@ -659,7 +659,7 @@ return dataView.findIndex((rec, index) => index > currentRowIndex && this.isEdit
 上記のアプローチの主な利点は次のとおりです:
 
 - 常時編集モード: セルが選択されているときに入力すると、編集モードに入り、入力された値が既存の値を置き換えます。
-- <kbd>Enter</kbd>/<kbd>Shift+Enter</kbd> で移動する場合、データ以外の行はスキップされます。これにより、ユーザーは値をすばやく切り替えることができます。
+- <kbd>ENTER</kbd>/<kbd>Shift+Enter</kbd> で移動する場合、データ以外の行はスキップされます。これにより、ユーザーは値をすばやく切り替えることができます。
 
 <!-- ComponentEnd: Grid -->
 

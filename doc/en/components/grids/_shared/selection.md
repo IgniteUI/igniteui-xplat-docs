@@ -48,7 +48,7 @@ Property `RowSelection` enables you to specify the following options:
 
 - `None` - Row selection would be disabled for the `{ComponentName}`.
 - `Single` - Selection of only one row within the `{ComponentName}` would be available.
-- `Multiple` - Multi-row selection would be available by using the row selectors, with a key combination like <kbd>ctrl</kbd> + <kbd>click</kbd>, or by pressing the <kbd>space key</kbd> once a cell is focused.
+- `Multiple` - Multi-row selection would be available by using the row selectors, with a key combination like <kbd>CTRL</kbd> + <kbd>click</kbd>, or by pressing the <kbd>space key</kbd> once a cell is focused.
 
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
 
@@ -79,8 +79,8 @@ The `Selectable` property enables you to specify the following options for each 
 This leads to the following three variations:
 
 - Single selection - <kbd>mouse click</kbd> over the column cell.
-- Multi column selection - holding <kbd>ctrl</kbd> + <kbd>mouse click</kbd> over the column cells.
-- Range column selection - holding <kbd>shift</kbd> + <kbd>mouse click</kbd> selects everything in between.
+- Multi column selection - holding <kbd>CTRL</kbd> + <kbd>mouse click</kbd> over the column cells.
+- Range column selection - holding <kbd>SHIFT</kbd> + <kbd>mouse click</kbd> selects everything in between.
 
 <!-- ComponentStart: Grid, TreeGrid, HierarchicalGrid -->
 

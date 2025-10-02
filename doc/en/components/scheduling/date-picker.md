@@ -215,16 +215,16 @@ The `DatePicker` has intuitive keyboard navigation that makes it easy to increme
 
 |Keys|Description|
 |----|-----------|
-| <kbd>&larr;</kbd> | Move one character to the beginning |
-| <kbd>&rarr;</kbd> | Move one character to the end |
-| <kbd>Home</kbd> | Move to the beginning |
-| <kbd>End</kbd> | Move to the end |
-| <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>&larr;</kbd> | Move to the beginning of the date/time section - current one or left one |
-| <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>&rarr;</kbd> | Move to the end of the date/time section - current on or right one |
-| Focus on a date/time part + <kbd>&darr;</kbd> | Decrements a date/time part |
-| Focus on a date/time part + <kbd>&uarr;</kbd> | Increments a date/time part |
-| <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>;</kbd> | Sets the current date/time as the value of the editor |
-| <kbd>Esc</kbd> | Closes the calendar pop-up and focuses the input field |
+| <kbd>←</kbd> | Move one character to the beginning |
+| <kbd>→</kbd> | Move one character to the end |
+| <kbd>HOME</kbd> | Move to the beginning |
+| <kbd>END</kbd> | Move to the end |
+| <kbd>CTRL</kbd> / <kbd>CMD</kbd> + <kbd>←</kbd> | Move to the beginning of the date/time section - current one or left one |
+| <kbd>CTRL</kbd> / <kbd>CMD</kbd> + <kbd>→</kbd> | Move to the end of the date/time section - current on or right one |
+| Focus on a date/time part + <kbd>↓</kbd> | Decrements a date/time part |
+| Focus on a date/time part + <kbd>↑</kbd> | Increments a date/time part |
+| <kbd>CTRL</kbd> / <kbd>CMD</kbd> + <kbd>;</kbd> | Sets the current date/time as the value of the editor |
+| <kbd>ESC</kbd> | Closes the calendar pop-up and focuses the input field |
 
 ## Examples
 

@@ -29,6 +29,21 @@
       {"names":[{"platform": "Blazor", "mappedType": "IgbGeographicMapImagery","mappedName": "TileImagery"}], "originalName": "TileImagery"} ]
   },
   {
+    "originalName": "AzureMapsImagery",
+    "originalNamespace": "Infragistics.Controls.Maps",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
+    "originalBaseTypeName": "GeographicMapImagery",
+    "packageName": "igniteui-maps",
+    "names":[{"platform": "Blazor","fileName": "AzureMapsImagery.cs","mappedName": "IgbAzureMapsImagery"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ApiKey"}], "originalName": "ApiKey"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ApiVersion"}], "originalName": "ApiVersion"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "CultureName"}], "originalName": "CultureName"},
+      {"names":[{"platform": "Blazor", "mappedType": "AzureMapsImageryStyle","mappedName": "ImageryStyle"}], "originalName": "ImageryStyle"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LocalizedView"}], "originalName": "LocalizedView"},
+      {"names":[{"platform": "Blazor", "mappedType": "DateTime","mappedName": "Timestamp"}], "originalName": "Timestamp"} ]
+  },
+  {
     "originalName": "BingMapsMapImagery",
     "originalNamespace": "Infragistics.Controls.Maps",
     "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
@@ -208,6 +223,9 @@
     "packageName": "igniteui-maps",
     "names":[{"platform": "Blazor","fileName": "GeographicShapeSeriesBase.cs","mappedName": "IgbGeographicShapeSeriesBase"}],
     "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "FillMemberPath"}], "originalName": "FillMemberPath"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbBrushScale","mappedName": "FillScale"}], "originalName": "FillScale"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "FillScaleUseGlobalValues"}], "originalName": "FillScaleUseGlobalValues"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsCustomShapeMarkerStyleAllowed"}], "originalName": "IsCustomShapeMarkerStyleAllowed"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsCustomShapeStyleAllowed"}], "originalName": "IsCustomShapeStyleAllowed"},
       {"names":[{"platform": "Blazor", "mappedType": "ShapeItemSearchMode","mappedName": "ItemSearchMode"}], "originalName": "ItemSearchMode"},

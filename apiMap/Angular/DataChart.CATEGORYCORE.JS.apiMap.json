@@ -37,6 +37,7 @@
     "packageName": "igniteui-charts",
     "names":[{"platform": "Angular","fileName": "igx-category-series-component.ts","mappedName": "IgxCategorySeriesComponent"}],
     "members":[
+      {"names":[{"platform": "Angular", "mappedType": "CategoryCollisionMode","mappedName": "categoryCollisionMode"}], "originalName": "CategoryCollisionMode"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getCategoryWidth"}], "originalName": "GetCategoryWidth"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getExactItemIndex"}], "originalName": "GetExactItemIndex"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getItem"}], "originalName": "GetItem"},
