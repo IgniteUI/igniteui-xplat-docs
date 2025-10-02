@@ -1,5 +1,13 @@
 {  "types":[
   {
+    "originalName": "LegendTextContentChangedEventArgs",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "originalBaseTypeNamespace": "System",
+    "originalBaseTypeName": "EventArgs",
+    "packageName": "igniteui-charts",
+    "names":[{"platform": "Blazor","fileName": "LegendTextContentChangedEventArgs.cs","mappedName": "IgbLegendTextContentChangedEventArgs"}]
+  },
+  {
     "originalName": "XamDataLegend",
     "originalNamespace": "Infragistics.Controls.Charts",
     "originalBaseTypeNamespace": "System.Windows",
@@ -7,9 +15,14 @@
     "packageName": "igniteui-charts",
     "names":[{"platform": "Blazor","fileName": "DataLegend.cs","mappedName": "IgbDataLegend"}],
     "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualBackground"}], "originalName": "ActualBackground"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ActualBadgesVisible"}], "originalName": "ActualBadgesVisible"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualBorderBrush"}], "originalName": "ActualBorderBrush"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ActualPixelScalingRatio"}], "originalName": "ActualPixelScalingRatio"},
       {"names":[{"platform": "Blazor", "mappedType": "LegendItemBadgeShape","mappedName": "BadgeShape"}], "originalName": "BadgeShape"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ContentBackground"}], "originalName": "ContentBackground"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ContentBorderBrush"}], "originalName": "ContentBorderBrush"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ContentBorderThickness"}], "originalName": "ContentBorderThickness"},
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "ExcludedColumns"}], "originalName": "ExcludedColumns"},
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "ExcludedSeries"}], "originalName": "ExcludedSeries"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportSerializedVisualData"}], "originalName": "ExportSerializedVisualData"},
@@ -29,6 +42,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HeaderTextColor"}], "originalName": "HeaderTextColor"},
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "IncludedColumns"}], "originalName": "IncludedColumns"},
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "IncludedSeries"}], "originalName": "IncludedSeries"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsEmbeddedInDataTooltip"}], "originalName": "IsEmbeddedInDataTooltip"},
       {"names":[{"platform": "Blazor", "mappedType": "DataLegendLabelMode","mappedName": "LabelDisplayMode"}], "originalName": "LabelDisplayMode"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LabelTextColor"}], "originalName": "LabelTextColor"},
       {"names":[{"platform": "Blazor", "mappedType": "DataLegendLayoutMode","mappedName": "LayoutMode"}], "originalName": "LayoutMode"},
@@ -63,6 +77,10 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueTextColor"}], "originalName": "ValueTextColor"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ValueTextUseSeriesColors"}], "originalName": "ValueTextUseSeriesColors"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueTextWhenMissingData"}], "originalName": "ValueTextWhenMissingData"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ActualBorderThicknessBottom"}], "originalName": "actualBorderThickness.bottom"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ActualBorderThicknessLeft"}], "originalName": "actualBorderThickness.left"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ActualBorderThicknessRight"}], "originalName": "actualBorderThickness.right"},
+      {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ActualBorderThicknessTop"}], "originalName": "actualBorderThickness.top"},
       {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BadgeMarginBottom"}], "originalName": "badgeMargin.bottom"},
       {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BadgeMarginLeft"}], "originalName": "badgeMargin.left"},
       {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "BadgeMarginRight"}], "originalName": "badgeMargin.right"},
@@ -225,7 +243,8 @@
     "packageName": "igniteui-charts",
     "names":[{"platform": "Blazor","fileName": "LegendBase.cs","mappedName": "IgbLegendBase"}],
     "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportSerializedVisualData"}], "originalName": "ExportSerializedVisualData"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportSerializedVisualData"}], "originalName": "ExportSerializedVisualData"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "FlushTextContentChangedCheck"}], "originalName": "FlushTextContentChangedCheck"} ]
   },
   {
     "originalName": "FinancialLegend",

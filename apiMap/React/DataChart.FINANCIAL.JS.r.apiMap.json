@@ -23,6 +23,7 @@
     "names":[{"platform": "React","fileName": "igr-financial-price-series.ts","dynamicModuleName": "igr-financial-price-series-dynamic-module.ts","moduleName": "igr-financial-price-series-module.ts","mappedName": "IgrFinancialPriceSeries"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "actualTrendLineBrush"}], "originalName": "ActualTrendLineBrush"},
+      {"names":[{"platform": "React", "mappedType": "CategoryCollisionMode","mappedName": "categoryCollisionMode"}], "originalName": "CategoryCollisionMode"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "closeMemberAsLegendLabel"}], "originalName": "CloseMemberAsLegendLabel"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "closeMemberAsLegendUnit"}], "originalName": "CloseMemberAsLegendUnit"},
       {"names":[{"platform": "React", "mappedType": "PriceDisplayType","mappedName": "displayType"}], "originalName": "DisplayType"},
