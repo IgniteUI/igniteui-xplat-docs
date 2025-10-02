@@ -37,7 +37,7 @@ _language: ja
 
 ### {PackageCharts} (チャート)
 
-#### 新しい軸ラベル イベント (プレビュー)
+#### <label>PREVIEW</label> 新しい軸ラベル イベント
 
 軸ラベルに対するさまざまな操作を検出できるように、次のイベントが `IgbDataChart` に追加されました。
 
@@ -48,13 +48,38 @@ _language: ja
 - `LabelMouseMove`
 - `LabelMouseClick`
 
-#### 対応軸 (プレビュー)
+#### <label>PREVIEW</label> 対応軸
 
 X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸を簡単に複製できるようになりました。`CompanionAxisEnabled` プロパティを有効にすると、複製された軸はチャートの反対側に配置され、そこから各軸プロパティを設定できます。
 
-#### RadialPieSeries インセット アウトライン (プレビュー)
+#### <label>PREVIEW</label> RadialPieSeries インセット アウトライン
 
 `RadialPieSeries` のアウトライン レンダリング方法を制御するために `UseInsetOutlines` プロパティが追加されました。**true** に設定すると、アウトラインがスライス形状の内側に描画され、**false** (既定値) に設定すると、アウトラインはスライス形状の端に半分内側・半分外側で描画されます。
+
+**重大な変更**
+
+- `ChartMouseEventArgs` クラスの `PlotAreaPosition` プロパティと `ChartPosition` プロパティが逆になっている問題が修正されました。これにより、`PlotAreaPosition` と `ChartPosition` が返す値が変更されます。
+
+### {PackageGrids} (グリッド)
+
+#### <label>PREVIEW</label> セル サフィックス コンテンツ
+
+セル内のサフィックス コンテンツのサポートが追加されました。これにより、セル値の末尾にテキストやアイコンを追加してスタイルを設定できるようになりました。セル サフィックス コンテンツに追加されたプロパティの完全なリストは以下に示されており、`DataGridColumn` および `CellInfo` クラスで使用できます。
+
+- `SuffixText`
+- `SuffixTextColor`
+- `SuffixTextFont`
+- `SuffixIconName`
+- `SuffixIconCollectionName`
+- `SuffixIconStroke`
+- `SuffixIconFill`
+- `SuffixIconViewBoxLeft`
+- `SuffixIconViewBoxTop`
+- `SuffixIconViewBoxWidth`
+- `SuffixIconViewBoxHeight`
+- `TextDecoration`
+
+アイコンに使用できる最大サイズは 24 x 24 であることに注意してください。これより大きいまたは小さいアイコンを提供することもできますが、アイコンが完全に表示されるように 24x24 のスペースに収まるように適切に拡大縮小するには、ビューボックス設定を構成する必要があります。
 
 ### バグ修正
 
@@ -72,7 +97,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 #### IgbBulletGraph
 
-- 新しい `LabelsVisible` プロパティが追加されました。(プレビュー)
+- <label>PREVIEW</label> 新しい `LabelsVisible` プロパティが追加されました。
 
 #### チャート
 
@@ -84,22 +109,20 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 - `SeriesViewer` と `DomainChart` に `HighlightingFadeOpacity` が追加されました。ハイライト表示されたシリーズに適用される不透明度を設定できます。
 
-- ドメイン チャートの `CalloutLabelUpdating` イベントを公開しました。
-
 #### IgbDataGrid
 
 -  DataGrid に新しいプロパティ `stopPropagation` が追加されました。これにより、マウス イベントが親要素へバブリングするのを防止できます。
 
 #### IgbLinearGauge
 
-- 新しい `LabelsVisible` プロパティが追加されました。(プレビュー)
+- <label>PREVIEW</label> 新しい `LabelsVisible` プロパティが追加されました。
 
 
-### {PackageVerChanges-25-1-AUG}
+### **{PackageVerChanges-25-1-AUG}**
 
 ### {PackageMaps} 地理マップ
 
-#### Azure マップ画像のサポート (プレビュー)
+#### <label>PREVIEW</label> Azure マップ画像のサポート
 
 `IgbGeographicMap` は、 Azure ベースのマップ画像をサポートし、開発者は複数のアプリケーション タイプにわたって詳細かつ動的なマップを表示できるようになりました。複数のマップ レイヤーを組み合わせて地理データを視覚化し、インタラクティブなマッピング エクスペリエンスを簡単に作成できます。
 
@@ -937,7 +960,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 * 行範囲の選択を追加しました - `GridSelectionMode` プロパティを MultipleRow に設定すると、次の新しい機能が含まれるようになりました:
     - クリックしてドラッグし、行を選択します。
     - <kbd>SHIFT</kbd> キーを押しながらクリックして、複数の行を選択します。
-    - <kbd>SHIFT</kbd> キーを押しながら上下の矢印キーを押して、複数の行を選択します。
+    - <kbd>SHIFT</kbd> キーを押しながら <kbd>↑</kbd> + <kbd>↓</kbd> 矢印キーを押して、複数の行を選択します。
 * スペース バーを押すと、MultipleRow または SingleRow に設定された `GridSelectionMode` プロパティを介してアクティブな行の選択が切り替わります。
 * 列オプション ダイアログに列集計を追加しました。
 

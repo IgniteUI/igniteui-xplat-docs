@@ -47,7 +47,7 @@ _language: ja
 
 - `None` - `{ComponentName}` の行選択が無効になります。
 - `Single` - `{ComponentName}` 内の 1 行のみの選択が利用可能になります。
-- `Multiple` - 複数行の選択は、<kbd>CTRL</kbd> + <kbd>クリック</kbd>、<kbd>Space キー</kbd> を押して行セレクターを使用することにより、複数行の選択が可能になります。
+- `Multiple` - 複数行の選択は、<kbd>CTRL</kbd> + <kbd>クリック</kbd>、<kbd>Space</kbd>  キーを押して行セレクターを使用することにより、複数行の選択が可能になります。
 
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
 
