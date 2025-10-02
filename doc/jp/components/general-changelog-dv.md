@@ -20,7 +20,7 @@ _language: ja
 
 ### {PackageMaps} (地理マップ)
 
-#### Azure マップ画像のサポート (プレビュー)
+#### <label>PREVIEW</label> Azure マップ画像のサポート
 
 `IgxGeographicMap` は、 Azure ベースのマップ画像をサポートし、開発者は複数のアプリケーション タイプにわたって詳細かつ動的なマップを表示できるようになりました。複数のマップ レイヤーを組み合わせて地理データを視覚化し、インタラクティブなマッピング エクスペリエンスを簡単に作成できます。
 
@@ -30,7 +30,7 @@ _language: ja
 
 ### {PackageCharts} (チャート)
 
-#### 新しい軸ラベル イベント (プレビュー)
+#### <label>PREVIEW</label> 新しい軸ラベル イベント
 
 軸ラベルに対するさまざまな操作を検出できるように、次のイベントが `IgxDataChart` に追加されました。
 
@@ -41,19 +41,23 @@ _language: ja
 - `LabelMouseMove`
 - `LabelMouseClick`
 
-#### 対応軸 (プレビュー)
+#### <label>PREVIEW</label> 対応軸
 
 X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸を簡単に複製できるようになりました。`CompanionAxisEnabled` プロパティを有効にすると、複製された軸はチャートの反対側に配置され、そこから各軸プロパティを設定できます。
 
-#### RadialPieSeries インセット アウトライン (プレビュー)
+#### <label>PREVIEW</label> RadialPieSeries インセット アウトライン
 
 `RadialPieSeries` のアウトライン レンダリング方法を制御するために `UseInsetOutlines` プロパティが追加されました。**true** に設定すると、アウトラインがスライス形状の内側に描画され、**false** (既定値) に設定すると、アウトラインはスライス形状の端に半分内側・半分外側で描画されます。
+
+**重大な変更**
+
+- `ChartMouseEventArgs` クラスの `PlotAreaPosition` プロパティと `ChartPosition` プロパティが逆になっている問題が修正されました。これにより、`PlotAreaPosition` と `ChartPosition` が返す値が変更されます。
 
 ### 機能拡張
 
 #### IgxBulletGraph
 
-- 新しい `LabelsVisible` プロパティが追加されました。(プレビュー)
+- <label>PREVIEW</label> 新しい `LabelsVisible` プロパティが追加されました。
 
 #### チャート
 
@@ -67,13 +71,9 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 - ドメイン チャートの `CalloutLabelUpdating` イベントを公開しました。
 
-#### IgxDataGrid
-
--  DataGrid に新しいプロパティ `stopPropagation` が追加されました。これにより、マウス イベントが親要素へバブリングするのを防止できます。
-
 #### IgxLinearGauge
 
-- 新しい `LabelsVisible` プロパティが追加されました。(プレビュー)
+- <label>PREVIEW</label> 新しい `LabelsVisible` プロパティが追加されました。
 
 ### バグ修正
 

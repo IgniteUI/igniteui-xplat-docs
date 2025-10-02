@@ -591,7 +591,7 @@ function handleKeyDown(event: KeyBoardEvent) {
 ```
 <!-- end: React -->
 
-* <kbd>ENTER</kbd>/<kbd>Shift+Enter</kbd> ナビゲーション
+* <kbd>ENTER</kbd>/<kbd>SHIFT</kbd> + <kbd>ENTER</kbd> ナビゲーション
 
 <!-- Angular, WebComponents -->
 ```typescript
@@ -659,7 +659,7 @@ return dataView.findIndex((rec, index) => index > currentRowIndex && this.isEdit
 上記のアプローチの主な利点は次のとおりです:
 
 - 常時編集モード: セルが選択されているときに入力すると、編集モードに入り、入力された値が既存の値を置き換えます。
-- <kbd>ENTER</kbd>/<kbd>Shift+Enter</kbd> で移動する場合、データ以外の行はスキップされます。これにより、ユーザーは値をすばやく切り替えることができます。
+- <kbd>ENTER</kbd>/<kbd>SHIFT</kbd> + <kbd>ENTER</kbd> で移動する場合、データ以外の行はスキップされます。これにより、ユーザーは値をすばやく切り替えることができます。
 
 <!-- ComponentEnd: Grid -->
 

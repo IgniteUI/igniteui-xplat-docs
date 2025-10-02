@@ -23,7 +23,7 @@ _language: ja
 * **{ComponentTitle} ページネーター** (有効な場合)
 
 > [!Note]
-> この変更のため、<kbd>TAB</kbd> と  <kbd>SHIFT</kbd> + <kbd>TAB</kbd> キーでセル間を移動することは `{ComponentName}` でサポートされなくなりました。
+> この変更のため、<kbd>TAB</kbd> と <kbd>SHIFT</kbd> + <kbd>TAB</kbd> キーでセル間を移動することは `{ComponentName}` でサポートされなくなりました。
 > <kbd>TAB</kbd> キーを押すと、**グループ化 / ツール バー** -> **ヘッダー** -> **本体** -> **集計** -> **フッター/ページネーター**の順序にタブ位置を移動します。
 
 > [!Note]
