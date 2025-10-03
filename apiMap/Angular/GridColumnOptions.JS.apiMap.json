@@ -13,26 +13,26 @@
   "types":[
   {
     "originalName": "ApplyButtonClickEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-apply-button-click-event-args.ts","mappedName": "IgxApplyButtonClickEventArgs"}]
   },
   {
     "originalName": "CancelButtonClickEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-cancel-button-click-event-args.ts","mappedName": "IgxCancelButtonClickEventArgs"}]
   },
   {
     "originalName": "GridColumnOptions",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "GridColumnOptionsBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-column-options-component.ts","mappedName": "IgxGridColumnOptionsComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "ControlDisplayDensity","mappedName": "actualFilterListDensity"}], "originalName": "ActualFilterListDensity"},
@@ -77,10 +77,10 @@
   },
   {
     "originalName": "GridColumnOptionsSimpleSectionBase",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "GridColumnOptionsSectionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-column-options-simple-section-base-component.ts","mappedName": "IgxGridColumnOptionsSimpleSectionBaseComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "caption"}], "originalName": "Caption"},
@@ -88,10 +88,10 @@
   },
   {
     "originalName": "GridColumnOptionsSectionBase",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "GridColumnOptionsBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-column-options-section-base-component.ts","mappedName": "IgxGridColumnOptionsSectionBaseComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "onApply"}], "originalName": "OnApply"},
@@ -99,8 +99,8 @@
   },
   {
     "originalName": "GridColumnOptionsBase",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-column-options-base-component.ts","mappedName": "IgxGridColumnOptionsBaseComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "BaseControlTheme","mappedName": "actualBaseTheme"}], "originalName": "ActualBaseTheme"},
@@ -116,10 +116,10 @@
   },
   {
     "originalName": "GridColumnButtonOptions",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "GridColumnOptionsSectionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-column-button-options-component.ts","mappedName": "IgxGridColumnButtonOptionsComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "applyButtonCaption"}], "originalName": "ApplyButtonCaption"},
@@ -127,10 +127,10 @@
   },
   {
     "originalName": "GridColumnFilterOptions",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "GridColumnOptionsSectionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-column-filter-options-component.ts","mappedName": "IgxGridColumnFilterOptionsComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "ControlDisplayDensity","mappedName": "actualFilterListDensity"}], "originalName": "ActualFilterListDensity"},
@@ -142,26 +142,26 @@
   },
   {
     "originalName": "GridColumnGroupOptions",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-column-group-options-component.ts","mappedName": "IgxGridColumnGroupOptionsComponent"}]
   },
   {
     "originalName": "GridColumnHideOptions",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-column-hide-options-component.ts","mappedName": "IgxGridColumnHideOptionsComponent"}]
   },
   {
     "originalName": "GridColumnMoveOptions",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-column-move-options-component.ts","mappedName": "IgxGridColumnMoveOptionsComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "moveLeftCaption"}], "originalName": "MoveLeftCaption"},
@@ -169,10 +169,10 @@
   },
   {
     "originalName": "GridColumnPinOptions",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-column-pin-options-component.ts","mappedName": "IgxGridColumnPinOptionsComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "pinLeftCaption"}], "originalName": "PinLeftCaption"},
@@ -180,10 +180,10 @@
   },
   {
     "originalName": "GridColumnSortOptions",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-column-sort-options-component.ts","mappedName": "IgxGridColumnSortOptionsComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "ascendingCaption"}], "originalName": "AscendingCaption"},
@@ -192,10 +192,10 @@
   },
   {
     "originalName": "GridColumnSummaryOptions",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "GridColumnOptionsSectionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-column-summary-options-component.ts","mappedName": "IgxGridColumnSummaryOptionsComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "activeCount"}], "originalName": "ActiveCount"},

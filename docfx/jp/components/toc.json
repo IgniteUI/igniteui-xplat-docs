@@ -1247,7 +1247,7 @@
         {
           "name": "チャート テータ注釈",
           "href": "charts/features/chart-data-annotations.md",
-          "status": "NEW"
+          "status": "PREVIEW"
         },
         {
           "name": "ダッシュボードでのチャート作成",
@@ -1415,7 +1415,7 @@
       {        
         "name": "Azure 画像の表示",
         "href": "geo-map-display-azure-imagery.md",
-        "status": "NEW"
+        "status": "PREVIEW"
       },
       {
         "exclude": ["Blazor"],
@@ -1783,6 +1783,12 @@
   {
     "name": "インタラクション",
     "header": true
+  },
+  {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "チャット",
+    "href": "interactivity/chat.md",
+    "status": "new"
   },
   {
     "exclude": ["Angular"],

@@ -359,7 +359,7 @@ public onCalendarChange(e: IgrComponentDataValueChangedEventArgs) {
 
 ## キーボード ナビゲーション
 
-<kbd>Tab</kbd> キーを使用してページを移動する場合、`Calendar` が [W3 アクセシビリティ推奨事項 (英語)](https://www.w3.org/TR/wai-aria-practices/#layoutGrid)に基づいて以下のタブ ストップを導入することに注意してください。
+<kbd>TAB</kbd> キーを使用してページを移動する場合、`Calendar` が [W3 アクセシビリティ推奨事項 (英語)](https://www.w3.org/TR/wai-aria-practices/#layoutGrid)に基づいて以下のタブ ストップを導入することに注意してください。
 - [月の選択] ボタン
 - [年の選択] ボタン
 - [前へ] ボタン
@@ -367,31 +367,31 @@ public onCalendarChange(e: IgrComponentDataValueChangedEventArgs) {
 - アクティブな日付要素
 
 `Calendar` コンポーネントの**日/月/年**がフォーカスされている場合は、次を使用します:
-- <kbd>PageUp</kbd> キーを押すと、前の月/年のページに移動します。
-- <kbd>PageDown</kbd> キーを押すと、次の月/年のページに移動します。
-- <kbd>Home</kbd> キーを使用して、現在の月の最初の日/最初の月を表示/最初の年を表示します。
-- <kbd>End</kbd> キーを押すと、当月/先月/昨年の最終日にフォーカスされます。
+- <kbd>PAGE UP</kbd> キーを押すと、前の月/年のページに移動します。
+- <kbd>PAGE DOWN</kbd> キーを押すと、次の月/年のページに移動します。
+- <kbd>HOME</kbd> キーを使用して、現在の月の最初の日/最初の月を表示/最初の年を表示します。
+- <kbd>END</kbd> キーを押すと、当月/先月/昨年の最終日にフォーカスされます。
 - <kbd>矢印</kbd> キーを使用して、日/月/年をナビゲートします。最初の項目の前と最後の項目の後に移動すると、ビューが次/前の月/年のページに切り替わります。
 
 `days` ビュー内の**日**がフォーカスされている場合は、次を使用します:
-- <kbd>Shift</kbd> + <kbd>PageUp</kbd> キーで前年に移動します。
-- <kbd>Shift</kbd> + <kbd>PageDown</kbd> キーを押して翌年に移動します。
-- <kbd>Space</kbd> または <kbd>Enter</kbd> キーを押して、現在フォーカスされている日を選択します。
+- <kbd>SHIFT</kbd> + <kbd>PAGE UP</kbd> キーで前年に移動します。
+- <kbd>SHIFT</kbd> + <kbd>PAGE DOWN</kbd> キーを押して翌年に移動します。
+- <kbd>SPACE</kbd> または <kbd>ENTER</kbd> キーを押して、現在フォーカスされている日を選択します。
 
 `months` ビュー内の**月**がフォーカスされている場合は、次を使用します:
-- <kbd>Space</kbd> または <kbd>Enter</kbd> キーを押すと、`ActiveDate` が現在フォーカスされている月に変更され、`days` ビューに切り替わります。
+- <kbd>SPACE</kbd> または <kbd>ENTER</kbd> キーを押すと、`ActiveDate` が現在フォーカスされている月に変更され、`days` ビューに切り替わります。
 
 `years` ビュー内の**年**がフォーカスされている場合は、次を使用します:
-- <kbd>Space</kbd> または <kbd>Enter</kbd> キーを使用して、`ActiveDate` を現在フォーカスされている年に変更し、`months` ビューに切り替えます。
+- <kbd>SPACE</kbd> または <kbd>ENTER</kbd> キーを使用して、`ActiveDate` を現在フォーカスされている年に変更し、`months` ビューに切り替えます。
 
 サブヘッダー内の**前**または**次**のボタンにフォーカスがある場合は、次を使用します:
-- <kbd>Space</kbd> または <kbd>Enter</kbd> キーを押すと、前/翌月/年のページに切り替わります。
+- <kbd>SPACE</kbd> または <kbd>ENTER</kbd> キーを押すと、前/翌月/年のページに切り替わります。
 
 サブヘッダー内の**月**ボタンにフォーカスがある場合は、次を使用します:
-- <kbd>Space</kbd> または <kbd>Enter</kbd> キーを押して、`months` ビューに切り替えます。
+- <kbd>SPACE</kbd> または <kbd>ENTER</kbd> キーを押して、`months` ビューに切り替えます。
 
 サブヘッダー内の**年**ボタンにフォーカスがある場合は、次を使用します:
-- <kbd>Space</kbd> または <kbd>Enter</kbd> キーを押して、`years` ビューに切り替えます。
+- <kbd>SPACE</kbd> または <kbd>ENTER</kbd> キーを押して、`years` ビューに切り替えます。
 
 ## スタイル設定
 

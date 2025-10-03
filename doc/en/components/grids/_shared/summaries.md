@@ -1012,15 +1012,15 @@ When a default summary is defined, the height of the summary area is calculated 
 ## Disabled Summaries
 
 <!-- WebComponents -->
-The `disabled-summaries` property provides precise per-column control over the {Platform} {ComponentTitle} summary feature. This property enables users to customize the summaries displayed for each column in the {ComponentName}, ensuring that only the most relevant and meaningful data is shown. For example, you can exclude specific summary types, such as `['count', 'min', 'max']` by specifying their summary keys in an array.
+The `disabled-summaries` property provides precise per-column control over the {Platform} {ComponentTitle} summary feature. This property enables users to customize the summaries displayed for each column in the {ComponentName}, ensuring that only the most relevant and meaningful data is shown. For example, you can exclude specific summary types, such as **['count', 'min', 'max']** by specifying their summary keys in an array.
 <!-- end: WebComponents -->
 
 <!-- React -->
-The `DisabledSummaries` property provides precise per-column control over the {Platform} {ComponentTitle} summary feature. This property enables users to customize the summaries displayed for each column in the {ComponentName}, ensuring that only the most relevant and meaningful data is shown. For example, you can exclude specific summary types, such as `['count', 'min', 'max']` by specifying their summary keys in an array.
+The `DisabledSummaries` property provides precise per-column control over the {Platform} {ComponentTitle} summary feature. This property enables users to customize the summaries displayed for each column in the {ComponentName}, ensuring that only the most relevant and meaningful data is shown. For example, you can exclude specific summary types, such as **['count', 'min', 'max']** by specifying their summary keys in an array.
 <!-- end: React -->
 
 <!-- Blazor -->
-The `DisabledSummaries` property provides precise per-column control over the {Platform} {ComponentTitle} summary feature. This property enables users to customize the summaries displayed for each column in the {ComponentName}, ensuring that only the most relevant and meaningful data is shown. For example, you can exclude specific summary types, such as `['count', 'min', 'max']` by specifying their summary keys in an array.
+The `DisabledSummaries` property provides precise per-column control over the {Platform} {ComponentTitle} summary feature. This property enables users to customize the summaries displayed for each column in the {ComponentName}, ensuring that only the most relevant and meaningful data is shown. For example, you can exclude specific summary types, such as **['count', 'min', 'max']** by specifying their summary keys in an array.
 <!-- end: Blazor -->
 
 <!-- WebComponents, React, Blazor -->
