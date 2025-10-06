@@ -570,7 +570,7 @@
         "href": "grids/hierarchical-grid/virtualization.md"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular", "Blazor", "WebComponents"],
         "name": "Keyboard navigation",
         "href": "grids/hierarchical-grid/keyboard-navigation.md"
       },
@@ -705,7 +705,7 @@
         ]
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Keyboard navigation",
         "href": "grids/tree-grid/keyboard-navigation.md",
         "status": ""
