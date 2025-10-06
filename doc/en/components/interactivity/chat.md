@@ -426,7 +426,8 @@ To integrate with your application logic, the Chat component emits a set of even
 - igcMessageCreated – when a new message is created.
 - igcMessageReact – when a message is reacted to.
 - igcAttachmentClick – when an attachment is clicked.
-- igcAttachmentChange – when an attachment changes.
+- igcAttachmentAdded – when an attachment is added.
+- igcAttachmentRemoved – when an attachment is removed.
 - igcAttachmentDrag – while dragging an attachment.
 - igcAttachmentDrop – when an attachment is dropped.
 - igcTypingChange – when typing status changes.
@@ -434,15 +435,16 @@ To integrate with your application logic, the Chat component emits a set of even
 - igcInputChange – when the input value changes.
 <!-- end: WebComponents -->
 <!-- React -->
-- igrMessageCreated – when a new message is created.
-- igrMessageReact – when a message is reacted to.
-- igrAttachmentClick – when an attachment is clicked.
-- igrAttachmentChange – when an attachment changes.
-- igrAttachmentDrag – while dragging an attachment.
-- igrAttachmentDrop – when an attachment is dropped.
-- igrTypingChange – when typing status changes.
-- igrInputFocus / igrInputBlur – input focus events.
-- igrInputChange – when the input value changes.
+- onMessageCreated – when a new message is created.
+- onMessageReact – when a message is reacted to.
+- onAttachmentClick – when an attachment is clicked.
+- onAttachmentAdded – when an attachment is added.
+- onAttachmentRemoved – when an attachment is removed.
+- onAttachmentDrag – while dragging an attachment.
+- onAttachmentDrop – when an attachment is dropped.
+- onTypingChange – when typing status changes.
+- onInputFocus / onInputBlur – input focus events.
+- onInputChange – when the input value changes.
 <!-- end: React -->
 You can listen for these events and sync them with your backend:
 <!-- WebComponents -->
@@ -455,7 +457,7 @@ chat.addEventListener('igcMessageCreated', (e) => {
 <!-- React -->
 ```tsx
 const chatRef = useRef<IgrChat>(null);
-chatRef.current.addEventListener('igrMessageCreated', (e) => {
+chatRef.current.addEventListener('onMessageCreated', (e) => {
   console.log('Message:', e.detail);
 });
 ```
