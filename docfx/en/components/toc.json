@@ -1564,7 +1564,8 @@
    {
     "exclude": ["Angular", "React"],
     "name": "Divider",
-    "href": "layouts/divider.md"
+    "href": "layouts/divider.md",
+    "status": "new"
   },
   {
     "exclude": ["Angular", "Blazor"],
