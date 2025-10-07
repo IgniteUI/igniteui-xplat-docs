@@ -1750,7 +1750,8 @@
   {
     "exclude": ["Angular"],
     "name": "Mask Input",
-    "href": "inputs/mask-input.md"
+    "href": "inputs/mask-input.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
