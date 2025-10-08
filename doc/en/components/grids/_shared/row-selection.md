@@ -55,7 +55,7 @@ In the `{ComponentName}` by default row selection is disabled (`RowSelection` is
 
 ### Single Selection
 
-Single row selection can now be easily set up, the only thing you need to do, is to set `RowSelection` to `Single` property. This gives you the opportunity to **select only one row within a grid**. You can select a row by clicking on a cell or pressing the *space* key when you focus on a cell of the row, and of course you can select a row by clicking on the row selector field. When row is selected or deselected `RowSelectionChanging` event is emitted.
+Single row selection can now be easily set up, the only thing you need to do, is to set `RowSelection` to `Single` property. This gives you the opportunity to **select only one row within a grid**. You can select a row by clicking on a cell or pressing the <kbd>SPACE</kbd> key when you focus on a cell of the row, and of course you can select a row by clicking on the row selector field. When row is selected or deselected `RowSelectionChanging` event is emitted.
 
 <!-- Angular -->
 ```html
@@ -119,7 +119,7 @@ const handleRowSelection = (args: IgrRowSelectionEventArgs) => {
 
 ### Multiple Selection
 
-To enable multiple row selection in the `{ComponentName}` just set the `RowSelection` property to `Multiple`. This will enable a row selector field on each row and in the `{ComponentName}` header. The row selector allows users to select multiple rows, with the selection persisting through scrolling, paging, and data operations, such as sorting and filtering. The row also can be selected by clicking on a cell or by pressing the *space* key when a cell is focused. If you have selected one row and click on another while holding the *shift* key, this will select the whole range of rows. In this selection mode, when you click on a single row, the previous selected rows will be deselected. If you *click* while holding the *ctrl* key, the row will be toggled and the previous selection will be preserved.
+To enable multiple row selection in the `{ComponentName}` just set the `RowSelection` property to `Multiple`. This will enable a row selector field on each row and in the `{ComponentName}` header. The row selector allows users to select multiple rows, with the selection persisting through scrolling, paging, and data operations, such as sorting and filtering. The row also can be selected by clicking on a cell or by pressing the <kbd>SPACE</kbd> key when a cell is focused. If you have selected one row and click on another while holding the <kbd>SHIFT</kbd> key, this will select the whole range of rows. In this selection mode, when you click on a single row, the previous selected rows will be deselected. If you *click* while holding the <kbd>CTRL</kbd> key, the row will be toggled and the previous selection will be preserved.
 
 <!-- Angular -->
 ```html
@@ -159,7 +159,7 @@ To enable multiple row selection in the `{ComponentName}` just set the `RowSelec
 
 ### Cascade Selection
 
-To enable cascade row selection in the `{ComponentName}` just set the `RowSelection` property to `MultipleCascade`. This will enable a row selector field on each row and in the `{ComponentName}` header. The row selector allows users to select multiple rows which would select all children in the tree below. The selection persists through scrolling, paging, and data operations, such as sorting and filtering. The row can also be selected by clicking on a cell or by pressing the *space* key when a cell is focused. If you have selected one row and *click* on another while holding the *shift* key, the selection of a parent record will select all of its children even if they are not in the selected range. In this selection mode, when you *click* on a single row, the previously selected rows will be deselected. If you *click* while holding the *ctrl* key, the row and its children will be toggled and the previous selection will be preserved.
+To enable cascade row selection in the `{ComponentName}` just set the `RowSelection` property to `MultipleCascade`. This will enable a row selector field on each row and in the `{ComponentName}` header. The row selector allows users to select multiple rows which would select all children in the tree below. The selection persists through scrolling, paging, and data operations, such as sorting and filtering. The row can also be selected by clicking on a cell or by pressing the <kbd>SPACE</kbd> key when a cell is focused. If you have selected one row and *click* on another while holding the <kbd>SHIFT</kbd> key, the selection of a parent record will select all of its children even if they are not in the selected range. In this selection mode, when you *click* on a single row, the previously selected rows will be deselected. If you *click* while holding the <kbd>CTRL</kbd> key, the row and its children will be toggled and the previous selection will be preserved.
 
 ```html
 <igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" [autoGenerate]="true"
