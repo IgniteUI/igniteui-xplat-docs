@@ -76,7 +76,7 @@ _language: ja
  | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ----------- |
  | `RowEditEnter`  |  `RowEditing` が有効な場合、行が編集モードに入るときに発生します。                                                                                             | `GridEditEventArgs`     | **true**    |
  | `CellEditEnter` |セルが**編集モードに入る**ときに発生します。 (`RowEditEnter` の後)                                                                                             | `GridEditEventArgs`     | **true**    |
- | `CellEdit`      | 値が変更された場合、セルの値が**コミットされた前に**発生します。 (`Enter` の押下など)                                                     | `GridEditEventArgs`     | **true**    |
+ | `CellEdit`      | 値が変更された場合、セルの値が**コミットされた前に**発生します。 (<kbd>ENTER</kbd> の押下など)                                                     | `GridEditEventArgs`     | **true**    |
  | `CellEditDone`  | 値が変更された場合、セルが編集され、セルの値が**コミットされた後に**発生します。                                                             | `GridEditDoneEventArgs` | **false**   |
  | `CellEditExit`  | セルが**編集モードを終了した**ときに発生します。|                                                                            `GridEditDoneEventArgs` | **false**   |
  | `RowEdit`       | が有効な場合、編集モードの値の行が**コミットされた前に**発生します (行編集オーバーレイの [完了] ボタンをクリックなど)。 | `GridEditEventArgs`     | **true**    |

@@ -395,7 +395,7 @@ const formatOptions : IgrColumnPipeArgs = {
 セルの値を編集すると、**通貨記号**がサフィックスまたはプレフィックスとして表示されます。詳細については、公式の[セル編集トピック](cell-editing.md#セル編集と編集テンプレートの例)を参照してください。
 <!-- ComponentEnd: Grid -->
 
-> 注: 上/下矢印キーを使用する場合、値は digitsInfo - minFractionDigits (小数点以下の最小桁数。デフォルトは 0 です。) に基づいてステップで増減します。
+> 注: <kbd>↑</kbd> + <kbd>↓</kbd> 矢印キーを使用する場合、値は digitsInfo - minFractionDigits (小数点以下の最小桁数。デフォルトは 0 です。) に基づいてステップで増減します。
 
 
 ### Percent (パーセント)
@@ -488,7 +488,7 @@ const formatOptions : IgrColumnPipeArgs = {
 ```
 
 > [!Note]
-> 上/下矢印キーを使用する場合、値は digitsInfo - minFractionDigits (小数点以下の最小桁数。デフォルトは 0 です。) に基づいてステップで増減します。
+> <kbd>↑</kbd> + <kbd>↓</kbd> 矢印キーを使用する場合、値は digitsInfo - minFractionDigits (小数点以下の最小桁数。デフォルトは 0 です。) に基づいてステップで増減します。
 
 ## デフォルトの編集テンプレート
 

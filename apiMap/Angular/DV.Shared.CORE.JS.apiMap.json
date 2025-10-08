@@ -131,6 +131,7 @@
     "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "igx-focus-event-args.ts","mappedName": "IgxFocusEventArgs"}],
     "members":[
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "fromTarget"}], "originalName": "FromTarget"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "target"}], "originalName": "Target"} ]
   },
   {
@@ -145,6 +146,44 @@
       {"names":[{"platform": "Angular", "mappedType": "IgRect",  "mappedName": "oldRect"}], "originalName": "OldRect"} ]
   },
   {
+    "originalName": "IRandomnessGenerator",
+    "originalNamespace": "Infragistics",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "IRandomnessGenerator.ts","mappedName": "IRandomnessGenerator"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "next"}], "originalName": "Next"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "nextDouble"}], "originalName": "NextDouble"} ]
+  },
+  {
+    "originalName": "IRandomnessSource",
+    "originalNamespace": "Infragistics",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "IRandomnessSource.ts","mappedName": "IRandomnessSource"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "IRandomnessGenerator","mappedName": "getGenerator"}], "originalName": "GetGenerator"} ]
+  },
+  {
+    "originalName": "TestRandomness",
+    "originalNamespace": "Infragistics",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "TestRandomness.ts","mappedName": "TestRandomness"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "IRandomnessSource","mappedName": "testRandomnessSource"}], "originalName": "TestRandomnessSource"} ]
+  },
+  {
+    "originalName": "FontRegistry",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "FontRegistry.ts","mappedName": "FontRegistry"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "getFont"}], "originalName": "GetFont"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "registerFont"}], "originalName": "RegisterFont"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "removeFont"}], "originalName": "RemoveFont"},
+      {"names":[{"platform": "Angular", "mappedType": "Dictionary","mappedName": "_fonts"}], "originalName": "_fonts"} ]
+  },
+  {
     "originalName": "InteractionState",
     "originalNamespace": "Infragistics.Controls",
     "isEnum":true,
@@ -154,6 +193,7 @@
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "Angular", "mappedType": "InteractionState","mappedName": "Auto"}], "originalName": "Auto"},
       {"names":[{"platform": "Angular", "mappedType": "InteractionState","mappedName": "DragPan"}], "originalName": "DragPan"},
+      {"names":[{"platform": "Angular", "mappedType": "InteractionState","mappedName": "DragSelect"}], "originalName": "DragSelect"},
       {"names":[{"platform": "Angular", "mappedType": "InteractionState","mappedName": "DragZoom"}], "originalName": "DragZoom"},
       {"names":[{"platform": "Angular", "mappedType": "InteractionState","mappedName": "None"}], "originalName": "None"} ]
   },
@@ -165,13 +205,16 @@
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "addDataURLString"}], "originalName": "AddDataURLString"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "addIconSource"}], "originalName": "AddIconSource"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "addSvgPathString"}], "originalName": "AddSvgPathString"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "addSvgPathsString"}], "originalName": "AddSvgPathsString"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "getDataURLString"}], "originalName": "GetDataURLString"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "getIconSource"}], "originalName": "GetIconSource"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "getSvgPathString"}], "originalName": "GetSvgPathString"},
       {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "getSvgPathsString"}], "originalName": "GetSvgPathsString"},
       {"names":[{"platform": "Angular", "mappedType": "Dictionary","mappedName": "_collections"}], "originalName": "_collections"},
-      {"names":[{"platform": "Angular", "mappedType": "Dictionary","mappedName": "_dataURLs"}], "originalName": "_dataURLs"} ]
+      {"names":[{"platform": "Angular", "mappedType": "Dictionary","mappedName": "_dataURLs"}], "originalName": "_dataURLs"},
+      {"names":[{"platform": "Angular", "mappedType": "Dictionary","mappedName": "_sources"}], "originalName": "_sources"} ]
   },
   {
     "originalName": "FormatSpecifier",
@@ -273,6 +316,18 @@
       {"names":[{"platform": "Angular", "mappedType": "HighlightedValueLabelMode","mappedName": "LabelBoth"}], "originalName": "LabelBoth"},
       {"names":[{"platform": "Angular", "mappedType": "HighlightedValueLabelMode","mappedName": "PreferHighlighted"}], "originalName": "PreferHighlighted"},
       {"names":[{"platform": "Angular", "mappedType": "HighlightedValueLabelMode","mappedName": "PreferOriginal"}], "originalName": "PreferOriginal"} ]
+  },
+  {
+    "originalName": "SeriesHighlightedValuesDisplayMode",
+    "originalNamespace": "Infragistics.Controls.Charts",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "SeriesHighlightedValuesDisplayMode.ts","mappedName": "SeriesHighlightedValuesDisplayMode"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "SeriesHighlightedValuesDisplayMode","mappedName": "Auto"}], "originalName": "Auto"},
+      {"names":[{"platform": "Angular", "mappedType": "SeriesHighlightedValuesDisplayMode","mappedName": "Hidden"}], "originalName": "Hidden"},
+      {"names":[{"platform": "Angular", "mappedType": "SeriesHighlightedValuesDisplayMode","mappedName": "Overlay"}], "originalName": "Overlay"} ]
   },
   {
     "originalName": "LegendItemBadgeMode",
@@ -724,7 +779,8 @@
       {"names":[{"platform": "Angular", "mappedType": "ControlDisplayDensity","mappedName": "Auto"}], "originalName": "Auto"},
       {"names":[{"platform": "Angular", "mappedType": "ControlDisplayDensity","mappedName": "Comfortable"}], "originalName": "Comfortable"},
       {"names":[{"platform": "Angular", "mappedType": "ControlDisplayDensity","mappedName": "Compact"}], "originalName": "Compact"},
-      {"names":[{"platform": "Angular", "mappedType": "ControlDisplayDensity","mappedName": "Cosy"}], "originalName": "Cosy"} ]
+      {"names":[{"platform": "Angular", "mappedType": "ControlDisplayDensity","mappedName": "Cosy"}], "originalName": "Cosy"},
+      {"names":[{"platform": "Angular", "mappedType": "ControlDisplayDensity","mappedName": "Minimal"}], "originalName": "Minimal"} ]
   },
   {
     "originalName": "IToolbarTarget",
@@ -735,11 +791,40 @@
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "addCommandAvailabilityListener"}], "originalName": "AddCommandAvailabilityListener"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "addCommandStateChangedListener"}], "originalName": "AddCommandStateChangedListener"},
       {"names":[{"platform": "Angular", "mappedType": "(arg1: ToolCommand) => void","mappedName": "commandCompleted"}], "originalName": "CommandCompleted"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "dismissContextAccessor"}], "originalName": "DismissContextAccessor"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionInfo[]","mappedName": "getDesiredToolbarActions"}], "originalName": "GetDesiredToolbarActions"},
       {"names":[{"platform": "Angular", "mappedType": "() => void","mappedName": "invalidateActions"}], "originalName": "InvalidateActions"},
       {"names":[{"platform": "Angular", "mappedType": "ToolCommandExecutionState","mappedName": "onToolCommandExecuting"}], "originalName": "OnToolCommandExecuting"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "provideContextAccessor"}], "originalName": "ProvideContextAccessor"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "removeCommandAvailabilityListener"}], "originalName": "RemoveCommandAvailabilityListener"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "removeCommandStateChangedListener"}], "originalName": "RemoveCommandStateChangedListener"} ]
+  },
+  {
+    "originalName": "IToolbarContextAccessor",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "IToolbarContextAccessor.ts","mappedName": "IToolbarContextAccessor"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "getContextValue"}], "originalName": "GetContextValue"},
+      {"names":[{"platform": "Angular", "mappedType": "IToolbarContextAccessor","mappedName": "getInternalAccessor"}], "originalName": "GetInternalAccessor"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "setContextValue"}], "originalName": "SetContextValue"} ]
+  },
+  {
+    "originalName": "ToolContextValueType",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "ToolContextValueType.ts","mappedName": "ToolContextValueType"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolContextValueType","mappedName": "BoolValue"}], "originalName": "BoolValue"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolContextValueType","mappedName": "Brush"}], "originalName": "Brush"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolContextValueType","mappedName": "BrushCollection"}], "originalName": "BrushCollection"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolContextValueType","mappedName": "Color"}], "originalName": "Color"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolContextValueType","mappedName": "Data"}], "originalName": "Data"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolContextValueType","mappedName": "DoubleValue"}], "originalName": "DoubleValue"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolContextValueType","mappedName": "IntValue"}], "originalName": "IntValue"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolContextValueType","mappedName": "StringValue"}], "originalName": "StringValue"} ]
   },
   {
     "originalName": "ICommandAvailabilityListener",
@@ -764,8 +849,12 @@
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "Button"}], "originalName": "Button"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "ButtonPair"}], "originalName": "ButtonPair"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "Checkbox"}], "originalName": "Checkbox"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "CheckboxList"}], "originalName": "CheckboxList"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "ColorEditor"}], "originalName": "ColorEditor"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "Combo"}], "originalName": "Combo"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "FieldSelector"}], "originalName": "FieldSelector"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "GroupHeader"}], "originalName": "GroupHeader"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "IconButton"}], "originalName": "IconButton"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "IconMenu"}], "originalName": "IconMenu"},
@@ -774,7 +863,34 @@
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "Radio"}], "originalName": "Radio"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "Separator"}], "originalName": "Separator"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "SubPanel"}], "originalName": "SubPanel"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "TextInput"}], "originalName": "TextInput"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "Unknown"}], "originalName": "Unknown"} ]
+  },
+  {
+    "originalName": "ToolActionInfoDensity",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "ToolActionInfoDensity.ts","mappedName": "ToolActionInfoDensity"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionInfoDensity","mappedName": "Auto"}], "originalName": "Auto"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionInfoDensity","mappedName": "Comfortable"}], "originalName": "Comfortable"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionInfoDensity","mappedName": "Compact"}], "originalName": "Compact"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionInfoDensity","mappedName": "Cosy"}], "originalName": "Cosy"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionInfoDensity","mappedName": "Minimal"}], "originalName": "Minimal"} ]
+  },
+  {
+    "originalName": "ToolActionButtonInfoDisplayType",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "ToolActionButtonInfoDisplayType.ts","mappedName": "ToolActionButtonInfoDisplayType"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionButtonInfoDisplayType","mappedName": "Flat"}], "originalName": "Flat"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionButtonInfoDisplayType","mappedName": "Outlined"}], "originalName": "Outlined"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionButtonInfoDisplayType","mappedName": "Raised"}], "originalName": "Raised"} ]
   },
   {
     "originalName": "ToolCommandStateType",
@@ -812,10 +928,16 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "commandArgument"}], "originalName": "CommandArgument"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "commandArgumentValue"}], "originalName": "CommandArgumentValue"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "commandId"}], "originalName": "CommandId"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolContextBindingInfo[]","mappedName": "contextBindings"}], "originalName": "ContextBindings"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionInfoDensity","mappedName": "density"}], "originalName": "Density"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "disabledTextColor"}], "originalName": "DisabledTextColor"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "height"}], "originalName": "Height"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "iconCollectionName"}], "originalName": "IconCollectionName"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "iconFill"}], "originalName": "IconFill"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "iconHeight"}], "originalName": "IconHeight"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "iconName"}], "originalName": "IconName"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "iconStroke"}], "originalName": "IconStroke"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "iconStrokeWidth"}], "originalName": "IconStrokeWidth"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "iconViewBoxHeight"}], "originalName": "IconViewBoxHeight"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "iconViewBoxLeft"}], "originalName": "IconViewBoxLeft"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "iconViewBoxTop"}], "originalName": "IconViewBoxTop"},
@@ -829,10 +951,33 @@
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "paddingRight"}], "originalName": "PaddingRight"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "paddingTop"}], "originalName": "PaddingTop"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "parentId"}], "originalName": "ParentId"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "subPanelRowHeight"}], "originalName": "SubPanelRowHeight"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "subtitle"}], "originalName": "Subtitle"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "textColor"}], "originalName": "TextColor"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "title"}], "originalName": "Title"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"} ]
+  },
+  {
+    "originalName": "ToolContextBindingMode",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "ToolContextBindingMode.ts","mappedName": "ToolContextBindingMode"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolContextBindingMode","mappedName": "OneWay"}], "originalName": "OneWay"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolContextBindingMode","mappedName": "TwoWay"}], "originalName": "TwoWay"} ]
+  },
+  {
+    "originalName": "ToolContextBindingInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "ToolContextBindingInfo.ts","mappedName": "ToolContextBindingInfo"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolContextBindingMode","mappedName": "bindingMode"}], "originalName": "BindingMode"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "contextKey"}], "originalName": "ContextKey"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "propertyName"}], "originalName": "PropertyName"} ]
   },
   {
     "originalName": "ToolActionCheckboxInfo",
@@ -859,7 +1004,53 @@
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "dataSource"}], "originalName": "ItemsSource"},
       {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "primaryKey"}], "originalName": "PrimaryKey"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "selectedMemberPath"}], "originalName": "SelectedMemberPath"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "showSelectAll"}], "originalName": "ShowSelectAll"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"} ]
+  },
+  {
+    "originalName": "ToolActionComboInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "ToolActionComboInfo.ts","mappedName": "ToolActionComboInfo"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "displayMemberPath"}], "originalName": "DisplayMemberPath"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "dataSource"}], "originalName": "ItemsSource"},
+      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "selectedValues"}], "originalName": "SelectedValues"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "valueMemberPath"}], "originalName": "ValueMemberPath"} ]
+  },
+  {
+    "originalName": "ToolActionFieldSelectorInfoType",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "ToolActionFieldSelectorInfoType.ts","mappedName": "ToolActionFieldSelectorInfoType"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionFieldSelectorInfoType","mappedName": "Label"}], "originalName": "Label"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionFieldSelectorInfoType","mappedName": "Value"}], "originalName": "Value"} ]
+  },
+  {
+    "originalName": "ToolActionFieldSelectorInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "ToolActionFieldSelectorInfo.ts","mappedName": "ToolActionFieldSelectorInfo"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "aggregations"}], "originalName": "Aggregations"},
+      {"names":[{"platform": "Angular", "mappedType": "IDataLegendTarget","mappedName": "dataLegendTarget"}], "originalName": "DataLegendTarget"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "dataSource"}], "originalName": "DataSource"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionFieldSelectorInfoType","mappedName": "fieldType"}], "originalName": "FieldType"},
+      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "rules"}], "originalName": "Rules"},
+      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "selectedAggregations"}], "originalName": "SelectedAggregations"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "singleSelection"}], "originalName": "SingleSelection"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "updateDataSource"}], "originalName": "UpdateDataSource"} ]
   },
   {
     "originalName": "ToolActionRadioInfo",
@@ -888,6 +1079,52 @@
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "tooltipDelay"}], "originalName": "TooltipDelay"} ]
   },
   {
+    "originalName": "ToolActionButtonInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "ToolActionButtonInfo.ts","mappedName": "ToolActionButtonInfo"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionButtonInfoDisplayType","mappedName": "displayType"}], "originalName": "DisplayType"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"} ]
+  },
+  {
+    "originalName": "ToolActionButtonPairInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "ToolActionButtonPairInfo.ts","mappedName": "ToolActionButtonPairInfo"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isToggleDisabled"}], "originalName": "IsToggleDisabled"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "leftCommandArgument"}], "originalName": "LeftCommandArgument"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "leftIconCollectionName"}], "originalName": "LeftIconCollectionName"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "leftIconFill"}], "originalName": "LeftIconFill"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "leftIconName"}], "originalName": "LeftIconName"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "leftIconStroke"}], "originalName": "LeftIconStroke"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "leftIconStrokeWidth"}], "originalName": "LeftIconStrokeWidth"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "leftIconViewBoxHeight"}], "originalName": "LeftIconViewBoxHeight"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "leftIconViewBoxLeft"}], "originalName": "LeftIconViewBoxLeft"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "leftIconViewBoxTop"}], "originalName": "LeftIconViewBoxTop"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "leftIconViewBoxWidth"}], "originalName": "LeftIconViewBoxWidth"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "leftTitle"}], "originalName": "LeftTitle"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "rightCommandArgument"}], "originalName": "RightCommandArgument"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "rightIconCollectionName"}], "originalName": "RightIconCollectionName"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "rightIconFill"}], "originalName": "RightIconFill"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "rightIconName"}], "originalName": "RightIconName"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "rightIconStroke"}], "originalName": "RightIconStroke"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "rightIconStrokeWidth"}], "originalName": "RightIconStrokeWidth"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "rightIconViewBoxHeight"}], "originalName": "RightIconViewBoxHeight"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "rightIconViewBoxLeft"}], "originalName": "RightIconViewBoxLeft"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "rightIconViewBoxTop"}], "originalName": "RightIconViewBoxTop"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "rightIconViewBoxWidth"}], "originalName": "RightIconViewBoxWidth"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "rightTitle"}], "originalName": "RightTitle"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"} ]
+  },
+  {
     "originalName": "ToolActionLabelInfo",
     "originalNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
@@ -907,6 +1144,18 @@
     "names":[{"platform": "Angular","fileName": "ToolActionIconMenuInfo.ts","mappedName": "ToolActionIconMenuInfo"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "showArrowIcon"}], "originalName": "ShowArrowIcon"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"} ]
+  },
+  {
+    "originalName": "ToolActionSubPanelInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "ToolActionSubPanelInfo.ts","mappedName": "ToolActionSubPanelInfo"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"} ]
   },
   {
@@ -920,6 +1169,30 @@
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "value"}], "originalName": "Value"} ]
+  },
+  {
+    "originalName": "ToolActionColorEditorInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "ToolActionColorEditorInfo.ts","mappedName": "ToolActionColorEditorInfo"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"} ]
+  },
+  {
+    "originalName": "ToolActionTextInputInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "ToolActionTextInputInfo.ts","mappedName": "ToolActionTextInputInfo"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionType","mappedName": "toolActionType"}], "originalName": "ToolActionType"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"} ]
   },
   {
     "originalName": "ToolActionSeparatorInfo",

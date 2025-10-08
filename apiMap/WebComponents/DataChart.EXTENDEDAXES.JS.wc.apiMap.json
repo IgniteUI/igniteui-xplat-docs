@@ -28,9 +28,9 @@
     "originalName": "OthersCategoryContext",
     "originalNamespace": "Infragistics.Controls.Charts",
     "packageName": "igniteui-charts",
-    "names":[{"platform": "WebComponents","fileName": "OthersCategoryContext.ts","mappedName": "OthersCategoryContext"}],
+    "names":[{"platform": "WebComponents","fileName": "igc-others-category-context-component.ts","dynamicModuleName": "igc-others-category-context-dynamic-module.ts","moduleName": "igc-others-category-context-module.ts","mappedName": "IgcOthersCategoryContextComponent"}],
     "members":[
-      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+      {"names":[{"platform": "WebComponents", "mappedType": "any[]",   "mappedName": "items"}], "originalName": "Items"} ]
   },
   {
     "originalName": "CategoryAngleAxis",
@@ -43,6 +43,10 @@
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "actualInterval"}], "originalName": "ActualInterval"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "actualMinorInterval"}], "originalName": "ActualMinorInterval"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "areGroupSizesUneven"}], "originalName": "AreGroupSizesUneven"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "companionAxisInterval"}], "originalName": "CompanionAxisInterval"},
+      {"names":[{"platform": "WebComponents", "mappedType": "AxisAngleLabelMode","mappedName": "companionAxisLabelMode"}], "originalName": "CompanionAxisLabelMode"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "companionAxisMinorInterval"}], "originalName": "CompanionAxisMinorInterval"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "companionAxisStartAngleOffset"}], "originalName": "CompanionAxisStartAngleOffset"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getScaledAngle"}], "originalName": "GetScaledAngle"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getUnscaledAngle"}], "originalName": "GetUnscaledAngle"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "interval"}], "originalName": "Interval"},
@@ -77,6 +81,8 @@
     "packageName": "igniteui-charts",
     "names":[{"platform": "WebComponents","fileName": "igc-numeric-angle-axis-component.ts","dynamicModuleName": "igc-numeric-angle-axis-dynamic-module.ts","moduleName": "igc-numeric-angle-axis-module.ts","mappedName": "IgcNumericAngleAxisComponent"}],
     "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "AxisAngleLabelMode","mappedName": "companionAxisLabelMode"}], "originalName": "CompanionAxisLabelMode"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "companionAxisStartAngleOffset"}], "originalName": "CompanionAxisStartAngleOffset"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getScaledAngle"}], "originalName": "GetScaledAngle"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getUnscaledAngle"}], "originalName": "GetUnscaledAngle"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isAngular"}], "originalName": "IsAngular"},
