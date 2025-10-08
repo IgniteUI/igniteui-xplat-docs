@@ -467,7 +467,7 @@
         {
           "name": "Chart Data Annotations",
           "href": "charts/features/chart-data-annotations.md",
-          "status": "NEW"
+          "status": "PREVIEW"
         },        
         {
           "name": "Chart Highlighting",
@@ -562,6 +562,11 @@
         "name": "Binding Multiple Sources",
         "href": "geo-map-binding-multiple-sources.md",
         "status": ""
+      },
+      {        
+        "name": "Displaying Azure Imagery",
+        "href": "geo-map-display-azure-imagery.md",
+        "status": "PREVIEW"
       },
       {
         "exclude": ["Blazor"],

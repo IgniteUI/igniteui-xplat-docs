@@ -26,6 +26,7 @@
     "names":[{"platform": "Angular","fileName": "igx-financial-price-series-component.ts","dynamicModuleName": "igx-financial-price-series-dynamic-module.ts","moduleName": "igx-financial-price-series-module.ts","mappedName": "IgxFinancialPriceSeriesComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "actualTrendLineBrush"}], "originalName": "ActualTrendLineBrush"},
+      {"names":[{"platform": "Angular", "mappedType": "CategoryCollisionMode","mappedName": "categoryCollisionMode"}], "originalName": "CategoryCollisionMode"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "closeMemberAsLegendLabel"}], "originalName": "CloseMemberAsLegendLabel"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "closeMemberAsLegendUnit"}], "originalName": "CloseMemberAsLegendUnit"},
       {"names":[{"platform": "Angular", "mappedType": "PriceDisplayType","mappedName": "displayType"}], "originalName": "DisplayType"},

@@ -196,12 +196,12 @@ constructor() {
 **キーの組み合わせ**
  - <kbd>↓</kbd> - フォーカスを下のパネルに移動します。
  - <kbd>↑</kbd> - フォーカスを上のパネルに移動します。
- - <kbd>Alt</kbd> + <kbd>↓</kbd> - アコーディオンでフォーカスされたパネルを開きます。
- - <kbd>Alt</kbd> + <kbd>↑</kbd> - Accordion でフォーカスされたパネルを閉じます。
- - <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>↓</kbd> - 有効なすべてのパネルを開きます。(singleExpand が true に設定されている場合、フォーカスされたパネルが開きます)。
- - <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>↑</kbd> - 有効なすべてのパネルを閉じます。
- - <kbd>Home</kbd> - Accordion の最初の有効なパネルに移動します。
- - <kbd>End</kbd> - Accordion の最後の有効なパネルに移動します。
+ - <kbd>ALT</kbd> + <kbd>↓</kbd> - アコーディオンでフォーカスされたパネルを開きます。
+ - <kbd>ALT</kbd> + <kbd>↑</kbd> - Accordion でフォーカスされたパネルを閉じます。
+ - <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>↓</kbd> - 有効なすべてのパネルを開きます。(singleExpand が true に設定されている場合、フォーカスされたパネルが開きます)。
+ - <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>↑</kbd> - 有効なすべてのパネルを閉じます。
+ - <kbd>HOME</kbd> - Accordion の最初の有効なパネルに移動します。
+ - <kbd>END</kbd> - Accordion の最後の有効なパネルに移動します。
 
 <div class="divider"></div>
 
