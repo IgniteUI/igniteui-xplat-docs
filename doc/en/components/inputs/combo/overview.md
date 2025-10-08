@@ -319,10 +319,10 @@ When the combo component is focused and the list of options is **visible**:
 
 - Using the <kbd>Down</kbd> key will activate the next item in the list.
 - Using the <kbd>Up</kbd> key will activate the previous item in the list. If the first item is already active it will focus the input.
-- Using the <kbd>Home</kbd> or <kbd>End</kbd> keys will activate the first or the last item in the list.
-- Using the <kbd>Space</kbd> key will select the active item.
-- Using the <kbd>Enter</kbd> key will select the active item and close the list of options.
-- Using the <kbd>Esc</kbd> or <kbd>Tab/Shift</kbd> + <kbd>Tab</kbd> keys will close the list of options.
+- Using the <kbd>HOME</kbd> or <kbd>END</kbd> keys will activate the first or the last item in the list.
+- Using the <kbd>SPACE</kbd> key will select the active item.
+- Using the <kbd>ENTER</kbd> key will select the active item and close the list of options.
+- Using the <kbd>ESC</kbd> or <kbd>TAB/SHIFT</kbd> + <kbd>TAB</kbd> keys will close the list of options.
 
 ## Styling
 

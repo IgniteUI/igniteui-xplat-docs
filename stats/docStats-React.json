@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in React documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "React",
-  "samplesCount": 733,
+  "samplesCount": 734,
   "samplesHost": "https://staging.infragistics.com/react-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -1939,6 +1939,9 @@
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/textarea/styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/text-area"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/tooltip/advanced": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/tooltip"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/tooltip/overview": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/tooltip"
     ],
@@ -3447,6 +3450,7 @@
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/textarea/styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/tooltip": [
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/tooltip/advanced",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/tooltip/overview",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/tooltip/placement",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/tooltip/rich",

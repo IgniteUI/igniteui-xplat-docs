@@ -273,19 +273,19 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 選択がフォーカスされ、オプションのリストが**表示されていない**場合:
 
-- <kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> の組み合わせを使用するか、<kbd>Space</kbd> または <kbd>Enter</kbd> キーをクリックして、`Select` を開きます。
-- <kbd>ALT</kbd> + <kbd>↑</kbd> または <kbd>↓</kbd> の組み合わせ、または <kbd>Enter</kbd>、<kbd>Space</kbd>、<kbd>Esc</kbd>、`Tab` キーのいずれかを使用して、`Select` を閉じます。
+- <kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> の組み合わせを使用するか、<kbd>SPACE</kbd> または <kbd>ENTER</kbd> キーをクリックして、`Select` を開きます。
+- <kbd>ALT</kbd> + <kbd>↑</kbd> または <kbd>↓</kbd> の組み合わせ、または <kbd>ENTER</kbd>、<kbd>SPACE</kbd>、<kbd>ESC</kbd>、`Tab` キーのいずれかを使用して、`Select` を閉じます。
 - <kbd>←</kbd> <kbd>→</kbd> キーを使用すると、リスト内の前の項目が選択されます。
 - <kbd>↑</kbd> <kbd>↓</kbd> キーを使用すると、リスト内の次の項目が選択されます。
-- <kbd>Home</kbd> キーまたは <kbd>End</kbd> キーを使用すると、リストの最初または最後の項目が選択されます。
+- <kbd>HOME</kbd> キーまたは <kbd>END</kbd> キーを使用すると、リストの最初または最後の項目が選択されます。
 - 文字を入力すると、項目のリストが照会され、現在のユーザー入力に最も近いものが選択されます。
 
 選択がフォーカスされ、オプションのリストが**表示されている**場合:
 
-- <kbd>Enter</kbd> キーまたは <kbd>Space</kbd> キーを使用すると、項目が選択され、リストが閉じます。
+- <kbd>ENTER</kbd> キーまたは <kbd>SPACE</kbd> キーを使用すると、項目が選択され、リストが閉じます。
 - <kbd>←</kbd> <kbd>→</kbd> キーを使用すると、リスト内の前の項目がアクティブになります。
 - <kbd>↑</kbd> <kbd>↓</kbd> キーを使用すると、リスト内の次の項目がアクティブになります。
-- <kbd>Home</kbd> キーまたは <kbd>End</kbd> キーを使用すると、リストの最初または最後の項目がアクティブになります。
+- <kbd>HOME</kbd> キーまたは <kbd>END</kbd> キーを使用すると、リストの最初または最後の項目がアクティブになります。
 
 > [!Note]
 > `Select` コンポーネントは、項目の**単一**選択のみをサポートします。

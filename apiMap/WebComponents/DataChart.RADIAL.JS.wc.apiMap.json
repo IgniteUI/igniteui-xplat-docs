@@ -59,6 +59,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "RadialLabelMode","mappedName": "autoCalloutRadialLabelMode"}], "originalName": "AutoCalloutRadialLabelMode"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "canUseAsAngleAxis"}], "originalName": "CanUseAsAngleAxis"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "canUseAsValueAxis"}], "originalName": "CanUseAsValueAxis"},
+      {"names":[{"platform": "WebComponents", "mappedType": "CategoryCollisionMode","mappedName": "categoryCollisionMode"}], "originalName": "CategoryCollisionMode"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "clipSeriesToBounds"}], "originalName": "ClipSeriesToBounds"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getAngleFromWorld"}], "originalName": "GetAngleFromWorld"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getCategoryWidth"}], "originalName": "GetCategoryWidth"},
@@ -137,6 +138,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "LegendEmptyValuesMode","mappedName": "legendEmptyValuesMode"}], "originalName": "LegendEmptyValuesMode"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "legendLabelMemberPath"}], "originalName": "LegendLabelMemberPath"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "radiusX"}], "originalName": "RadiusX"},
-      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "radiusY"}], "originalName": "RadiusY"} ]
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "radiusY"}], "originalName": "RadiusY"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "useInsetOutlines"}], "originalName": "UseInsetOutlines"} ]
   }]
 }

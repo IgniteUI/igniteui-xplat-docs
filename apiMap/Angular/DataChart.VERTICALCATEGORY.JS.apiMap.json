@@ -9,6 +9,8 @@
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "actualInterval"}], "originalName": "ActualInterval"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "actualMinorInterval"}], "originalName": "ActualMinorInterval"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "companionAxisInterval"}], "originalName": "CompanionAxisInterval"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "companionAxisMinorInterval"}], "originalName": "CompanionAxisMinorInterval"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getCategoryBoundingBox"}], "originalName": "GetCategoryBoundingBox"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getWindowZoomFromCategories"}], "originalName": "GetWindowZoomFromCategories"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getWindowZoomFromItemSpan"}], "originalName": "GetWindowZoomFromItemSpan"},

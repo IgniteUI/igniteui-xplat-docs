@@ -124,7 +124,6 @@
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "titleSnapsToNeedlePivot"}], "originalName": "TitleSnapsToNeedlePivot"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "titleText"}], "originalName": "TitleText"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "transitionDuration"}], "originalName": "TransitionDuration"},
-      {"names":[{"platform": "React", "mappedType": "(time: number) => number","mappedName": "transitionEasingFunction"}], "originalName": "TransitionEasingFunction"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "transitionProgress"}], "originalName": "TransitionProgress"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "unscaleValue"}], "originalName": "UnscaleValue"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "value"}], "originalName": "Value"} ]
