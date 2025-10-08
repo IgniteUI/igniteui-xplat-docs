@@ -655,7 +655,7 @@ The Selection and Navigation features work globally for the whole {HierarchicalG
 - Selection
     Selection does not allow selected cells to be present for two different child grids at once.
 - Navigation
-    When navigating up/down, if next/prev element is a child grid, navigation will continue in the related child grid, marking the related cell as selected and focused. If the child cell is outside the current visible view port it is scrolled into view so that selected cell is always visible.
+    When navigating <kbd>↑</kbd> + <kbd>↓</kbd>, if next/prev element is a child grid, navigation will continue in the related child grid, marking the related cell as selected and focused. If the child cell is outside the current visible view port it is scrolled into view so that selected cell is always visible.
 
 ## Collapse All Button
 

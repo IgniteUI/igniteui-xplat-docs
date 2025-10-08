@@ -10,7 +10,7 @@
   {
     "originalName": "ColumnFilterCondition",
     "originalNamespace": "Infragistics.Controls",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "ColumnFilterCondition.ts","mappedName": "ColumnFilterCondition"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -23,7 +23,7 @@
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
     "originalBaseTypeName": "ColumnFilterCondition",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "ColumnComparisonFilterCondition.ts","mappedName": "ColumnComparisonFilterCondition"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -40,7 +40,7 @@
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
     "originalBaseTypeName": "ColumnFilterCondition",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "ColumnCustomFilterCondition.ts","mappedName": "ColumnCustomFilterCondition"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -54,7 +54,7 @@
     "originalNamespace": "Infragistics.Controls",
     "originalBaseTypeNamespace": "Infragistics.Controls",
     "originalBaseTypeName": "ColumnFilterCondition",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "ColumnFilterConditionGroup.ts","mappedName": "ColumnFilterConditionGroup"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -75,7 +75,7 @@
     "originalName": "ColumnComparisonConditionOperatorType",
     "originalNamespace": "Infragistics.Controls",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "ColumnComparisonConditionOperatorType.ts","mappedName": "ColumnComparisonConditionOperatorType"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -126,19 +126,9 @@
       {"names":[{"platform": "Angular", "mappedType": "ColumnComparisonConditionOperatorType","mappedName": "Yesterday"}], "originalName": "Yesterday"} ]
   },
   {
-    "originalName": "PrimaryKeyValue",
-    "originalNamespace": "Infragistics.Controls.Grid",
-    "packageName": "igniteui-grids",
-    "names":[{"platform": "Angular","fileName": "igx-primary-key-value.ts","dynamicModuleName": "igx-primary-key-value-dynamic-module.ts","moduleName": "igx-primary-key-value-module.ts","mappedName": "IgxPrimaryKeyValue"}],
-    "members":[
-      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "equals"}], "originalName": "Equals"},
-      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "key"}], "originalName": "Key"},
-      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "value"}], "originalName": "Value"} ]
-  },
-  {
     "originalName": "ICellActionManager",
-    "originalNamespace": "Infragistics.Controls.Grid",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "ICellActionManager.ts","mappedName": "ICellActionManager"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "applyCustomFilter"}], "originalName": "ApplyCustomFilter"},
@@ -184,13 +174,14 @@
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "previewMouseUpCell"}], "originalName": "PreviewMouseUpCell"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "previewPointerDownCell"}], "originalName": "PreviewPointerDownCell"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "previewPointerUpCell"}], "originalName": "PreviewPointerUpCell"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "shouldSkipFocusRetain"}], "originalName": "ShouldSkipFocusRetain"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "startEditMode"}], "originalName": "StartEditMode"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "updateCellEditValue"}], "originalName": "UpdateCellEditValue"} ]
   },
   {
     "originalName": "DateTimeColumnValueFormatter",
-    "originalNamespace": "Infragistics.Controls.Grid",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "DateTimeColumnValueFormatter.ts","mappedName": "DateTimeColumnValueFormatter"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -208,8 +199,8 @@
   },
   {
     "originalName": "GridAnimationPhaseSettings",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-animation-phase-settings.ts","mappedName": "IgxGridAnimationPhaseSettings"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "desiredSubItemDurationMilliseconds"}], "originalName": "DesiredSubItemDurationMilliseconds"},
@@ -222,9 +213,9 @@
   },
   {
     "originalName": "GridEasingFunctionType",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "GridEasingFunctionType.ts","mappedName": "GridEasingFunctionType"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -235,21 +226,21 @@
   },
   {
     "originalName": "GridAnimationSettings",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-animation-settings.ts","mappedName": "IgxGridAnimationSettings"}]
   },
   {
     "originalName": "GridColumnAnimationSettings",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-column-animation-settings.ts","mappedName": "IgxGridColumnAnimationSettings"}]
   },
   {
     "originalName": "ColumnShowingAnimationMode",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "ColumnShowingAnimationMode.ts","mappedName": "ColumnShowingAnimationMode"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -267,9 +258,9 @@
   },
   {
     "originalName": "ColumnResizingAnimationMode",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "ColumnResizingAnimationMode.ts","mappedName": "ColumnResizingAnimationMode"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -279,9 +270,9 @@
   },
   {
     "originalName": "ColumnMovingAnimationMode",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "ColumnMovingAnimationMode.ts","mappedName": "ColumnMovingAnimationMode"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -291,9 +282,9 @@
   },
   {
     "originalName": "ColumnPropertyUpdatingAnimationMode",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "ColumnPropertyUpdatingAnimationMode.ts","mappedName": "ColumnPropertyUpdatingAnimationMode"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -304,9 +295,9 @@
   },
   {
     "originalName": "CellDataLoadedAnimationMode",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "CellDataLoadedAnimationMode.ts","mappedName": "CellDataLoadedAnimationMode"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -316,9 +307,9 @@
   },
   {
     "originalName": "RowSelectionAnimationMode",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "RowSelectionAnimationMode.ts","mappedName": "RowSelectionAnimationMode"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -328,9 +319,9 @@
   },
   {
     "originalName": "CellSelectionAnimationMode",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "CellSelectionAnimationMode.ts","mappedName": "CellSelectionAnimationMode"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -340,9 +331,9 @@
   },
   {
     "originalName": "ColumnHidingAnimationMode",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "ColumnHidingAnimationMode.ts","mappedName": "ColumnHidingAnimationMode"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -360,9 +351,9 @@
   },
   {
     "originalName": "ColumnExchangingAnimationMode",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "ColumnExchangingAnimationMode.ts","mappedName": "ColumnExchangingAnimationMode"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -380,9 +371,9 @@
   },
   {
     "originalName": "CellPropertyAnimationType",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "CellPropertyAnimationType.ts","mappedName": "CellPropertyAnimationType"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -401,9 +392,9 @@
   },
   {
     "originalName": "RowHoverAnimationMode",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "RowHoverAnimationMode.ts","mappedName": "RowHoverAnimationMode"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -413,8 +404,8 @@
   },
   {
     "originalName": "CellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-cell-info.ts","mappedName": "IgxCellInfo"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "ICellActionManager","mappedName": "actionManager"}], "originalName": "ActionManager"},
@@ -509,7 +500,19 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "sortIndicatorColor"}], "originalName": "SortIndicatorColor"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stickyRowBackground"}], "originalName": "StickyRowBackground"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "styleKey"}], "originalName": "StyleKey"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "suffixIconCollectionName"}], "originalName": "SuffixIconCollectionName"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "suffixIconFill"}], "originalName": "SuffixIconFill"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "suffixIconName"}], "originalName": "SuffixIconName"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "suffixIconStroke"}], "originalName": "SuffixIconStroke"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "suffixIconViewBoxHeight"}], "originalName": "SuffixIconViewBoxHeight"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "suffixIconViewBoxLeft"}], "originalName": "SuffixIconViewBoxLeft"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "suffixIconViewBoxTop"}], "originalName": "SuffixIconViewBoxTop"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "suffixIconViewBoxWidth"}], "originalName": "SuffixIconViewBoxWidth"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "suffixText"}], "originalName": "SuffixText"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "suffixTextColor"}], "originalName": "SuffixTextColor"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "textColor"}], "originalName": "TextColor"},
+      {"names":[{"platform": "Angular", "mappedType": "TextCellDecoration","mappedName": "textDecoration"}], "originalName": "TextDecoration"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "userFormattedValue"}], "originalName": "UserFormattedValue"},
       {"names":[{"platform": "Angular", "mappedType": "CellContentVerticalAlignment","mappedName": "verticalAlignment"}], "originalName": "VerticalAlignment"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "virtualizationPercentage"}], "originalName": "VirtualizationPercentage"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "width"}], "originalName": "Width"},
@@ -518,10 +521,10 @@
   },
   {
     "originalName": "DateTimeCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-date-time-cell-info.ts","mappedName": "IgxDateTimeCellInfo"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "DateTimeFormats","mappedName": "dateTimeFormat"}], "originalName": "DateTimeFormat"},
@@ -533,10 +536,10 @@
   },
   {
     "originalName": "EditorCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-editor-cell-info.ts","mappedName": "IgxEditorCellInfo"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "DataSourceSchemaPropertyType","mappedName": "dataType"}], "originalName": "DataType"},
@@ -555,10 +558,10 @@
   },
   {
     "originalName": "FilterCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-filter-cell-info.ts","mappedName": "IgxFilterCellInfo"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "clearIconLeft"}], "originalName": "ClearIconLeft"},
@@ -576,18 +579,18 @@
   },
   {
     "originalName": "EditorRowCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-editor-row-cell-info.ts","mappedName": "IgxEditorRowCellInfo"}]
   },
   {
     "originalName": "SummaryCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-summary-cell-info.ts","mappedName": "IgxSummaryCellInfo"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "resolvedSummaryLabel"}], "originalName": "ResolvedSummaryLabel"},
@@ -596,18 +599,18 @@
   },
   {
     "originalName": "VerticalSeparatorCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-vertical-separator-cell-info.ts","mappedName": "IgxVerticalSeparatorCellInfo"}]
   },
   {
     "originalName": "ImageCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-image-cell-info.ts","mappedName": "IgxImageCellInfo"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "imagePath"}], "originalName": "ImagePath"},
@@ -616,10 +619,10 @@
   },
   {
     "originalName": "NumericCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-numeric-cell-info.ts","mappedName": "IgxNumericCellInfo"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "formatOverride"}], "originalName": "FormatOverride"},
@@ -638,18 +641,18 @@
   },
   {
     "originalName": "RowSeparatorModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-row-separator-info.ts","mappedName": "IgxRowSeparatorInfo"}]
   },
   {
     "originalName": "SectionHeaderCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-section-header-cell-info.ts","mappedName": "IgxSectionHeaderCellInfo"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "resolvedSummaryText"}], "originalName": "ResolvedSummaryText"},
@@ -658,8 +661,8 @@
   },
   {
     "originalName": "GroupData",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-group-data.ts","mappedName": "IgxGroupData"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "formattedText"}], "originalName": "FormattedText"},
@@ -668,8 +671,8 @@
   },
   {
     "originalName": "SummaryData",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-summary-data.ts","mappedName": "IgxSummaryData"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "formattedText"}], "originalName": "FormattedText"},
@@ -680,48 +683,48 @@
   },
   {
     "originalName": "TemplateHeaderCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "TemplateCellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-template-header-cell-info.ts","mappedName": "IgxTemplateHeaderCellInfo"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isFilterUIVisible"}], "originalName": "IsFilterUIVisible"} ]
   },
   {
     "originalName": "TemplateCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-template-cell-info.ts","mappedName": "IgxTemplateCellInfo"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "value"}], "originalName": "Value"} ]
   },
   {
     "originalName": "TemplateSectionHeaderCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "SectionHeaderCellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-template-section-header-cell-info.ts","mappedName": "IgxTemplateSectionHeaderCellInfo"}]
   },
   {
     "originalName": "TextCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "CellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-text-cell-info.ts","mappedName": "IgxTextCellInfo"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "textValue"}], "originalName": "TextValue"} ]
   },
   {
     "originalName": "TextHeaderCellModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "TextCellModel",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-text-header-cell-info.ts","mappedName": "IgxTextHeaderCellInfo"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "ColumnOptionsIconAlignment","mappedName": "columnOptionsIconAlignment"}], "originalName": "ColumnOptionsIconAlignment"},
@@ -732,8 +735,8 @@
   },
   {
     "originalName": "ComparisonOperatorSelector",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-data-grid-comparison-operator-selector-component.ts","mappedName": "IgxDataGridComparisonOperatorSelectorComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "addCustomOperator"}], "originalName": "AddCustomOperator"},
@@ -796,10 +799,10 @@
   },
   {
     "originalName": "OperatorSelectorValueChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-operator-selector-value-changed-event-args.ts","mappedName": "IgxOperatorSelectorValueChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "ColumnComparisonConditionOperatorType","mappedName": "newValue"}], "originalName": "NewValue"},
@@ -807,49 +810,58 @@
   },
   {
     "originalName": "OperatorSelectorOpeningEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-operator-selector-opening-event-args.ts","mappedName": "IgxOperatorSelectorOpeningEventArgs"}]
   },
   {
     "originalName": "OperatorSelectorClosingEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-operator-selector-closing-event-args.ts","mappedName": "IgxOperatorSelectorClosingEventArgs"}]
   },
   {
     "originalName": "GridFilterDialog",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-data-grid-filter-dialog-component.ts","mappedName": "IgxDataGridFilterDialogComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "actualPixelScalingRatio"}], "originalName": "ActualPixelScalingRatio"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "addCommandAvailabilityListener"}], "originalName": "AddCommandAvailabilityListener"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "addCommandStateChangedListener"}], "originalName": "AddCommandStateChangedListener"},
+      {"names":[{"platform": "Angular", "mappedType": "(arg1: ToolCommand) => void","mappedName": "commandCompleted"}], "originalName": "CommandCompleted"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "dismissContextAccessor"}], "originalName": "DismissContextAccessor"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getDesiredToolbarActions"}], "originalName": "GetDesiredToolbarActions"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "hideIcon"}], "originalName": "HideIcon"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "iconColor"}], "originalName": "IconColor"},
+      {"names":[{"platform": "Angular", "mappedType": "() => void","mappedName": "invalidateActions"}], "originalName": "InvalidateActions"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isAnimationEnabled"}], "originalName": "IsAnimationEnabled"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isOpen"}], "originalName": "IsOpen"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "notifyCellSizeChanged"}], "originalName": "NotifyCellSizeChanged"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "notifySizeChanged"}], "originalName": "NotifySizeChanged"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "pixelScalingRatio"}], "originalName": "PixelScalingRatio"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "provideContextAccessor"}], "originalName": "ProvideContextAccessor"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "removeCommandAvailabilityListener"}], "originalName": "RemoveCommandAvailabilityListener"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "removeCommandStateChangedListener"}], "originalName": "RemoveCommandStateChangedListener"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "showIcon"}], "originalName": "ShowIcon"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "viewSize"}], "originalName": "ViewSize"} ]
   },
   {
     "originalName": "FilterDialogRenderCompletedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-filter-dialog-render-completed-event-args.ts","mappedName": "IgxFilterDialogRenderCompletedEventArgs"}]
   },
   {
     "originalName": "GridFilterDialogViewModel",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-filter-dialog-view-model.ts","mappedName": "IgxGridFilterDialogViewModel"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "addNewRow"}], "originalName": "AddNewRow"},
@@ -866,8 +878,8 @@
   },
   {
     "originalName": "GridFilterDialogViewModelGrouping",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-filter-dialog-view-model-grouping.ts","mappedName": "IgxGridFilterDialogViewModelGrouping"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "endIndex"}], "originalName": "EndIndex"},
@@ -876,8 +888,8 @@
   },
   {
     "originalName": "GridFilterDialogViewModelRow",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-filter-dialog-view-model-row.ts","mappedName": "IgxGridFilterDialogViewModelRow"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "currentOperator"}], "originalName": "CurrentOperator"},
@@ -889,24 +901,24 @@
   },
   {
     "originalName": "GridFilterDialogOpeningEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-filter-dialog-opening-event-args.ts","mappedName": "IgxGridFilterDialogOpeningEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxDataGridColumnComponent","mappedName": "column"}], "originalName": "Column"} ]
   },
   {
     "originalName": "GridFilterDialogFilterChangeEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-filter-dialog-filter-change-event-args.ts","mappedName": "IgxGridFilterDialogFilterChangeEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "ColumnFilterCondition","mappedName": "filter"}], "originalName": "Filter"} ]
   },
   {
     "originalName": "GridExpansionIndicator",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-data-grid-expansion-indicator-component.ts","mappedName": "IgxDataGridExpansionIndicatorComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "actualPixelScalingRatio"}], "originalName": "ActualPixelScalingRatio"},
@@ -918,14 +930,15 @@
   },
   {
     "originalName": "GridSortIndicator",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-data-grid-sort-indicator-component.ts","mappedName": "IgxDataGridSortIndicatorComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "actualPixelScalingRatio"}], "originalName": "ActualPixelScalingRatio"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getDesiredScale"}], "originalName": "GetDesiredScale"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "iconColor"}], "originalName": "IconColor"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isAnimationEnabled"}], "originalName": "IsAnimationEnabled"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isHitTestVisible"}], "originalName": "IsHitTestVisible"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "notifyCellSizeChanged"}], "originalName": "NotifyCellSizeChanged"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "notifySizeChanged"}], "originalName": "NotifySizeChanged"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "pixelScalingRatio"}], "originalName": "PixelScalingRatio"},
@@ -934,16 +947,16 @@
   },
   {
     "originalName": "SortIndicatorRenderCompletedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-sort-indicator-render-completed-event-args.ts","mappedName": "IgxSortIndicatorRenderCompletedEventArgs"}]
   },
   {
     "originalName": "Pager",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-data-grid-pager-component.ts","mappedName": "IgxDataGridPagerComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "background"}], "originalName": "Background"},
@@ -962,10 +975,10 @@
   },
   {
     "originalName": "PagedDataProvider",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeName": "DataSourceLocalDataProvider",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "PagedDataProvider.ts","mappedName": "PagedDataProvider"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -974,10 +987,10 @@
   },
   {
     "originalName": "PageChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-page-changed-event-args.ts","mappedName": "IgxPageChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "data"}], "originalName": "Data"},
@@ -985,8 +998,8 @@
   },
   {
     "originalName": "Grid",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-data-grid-component.ts","mappedName": "IgxDataGridComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "acceptCommit"}], "originalName": "AcceptCommit"},
@@ -1063,8 +1076,12 @@
       {"names":[{"platform": "Angular", "mappedType": "FilterUIType","mappedName": "filterUIType"}], "originalName": "FilterUIType"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "flush"}], "originalName": "Flush"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getColumnAtRenderedIndex"}], "originalName": "GetColumnAtRenderedIndex"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getDataURLFromCache"}], "originalName": "GetDataURLFromCache"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getFirstVisibleIndex"}], "originalName": "GetFirstVisibleIndex"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getIconFromCache"}], "originalName": "GetIconFromCache"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getIconSource"}], "originalName": "GetIconSource"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getLastVisibleIndex"}], "originalName": "GetLastVisibleIndex"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getMultiPathSVGFromCache"}], "originalName": "GetMultiPathSVGFromCache"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getRootSummaryResults"}], "originalName": "GetRootSummaryResults"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getSectionSummaryResults"}], "originalName": "GetSectionSummaryResults"},
       {"names":[{"platform": "Angular", "mappedType": "IgxColumnGroupDescriptionCollection","mappedName": "groupDescriptions"}], "originalName": "GroupDescriptions"},
@@ -1130,6 +1147,10 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "reactsToSortChanges"}], "originalName": "ReactsToSortChanges"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "redo"}], "originalName": "Redo"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "refresh"}], "originalName": "Refresh"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "registerIconFromDataURL"}], "originalName": "RegisterIconFromDataURL"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "registerIconFromText"}], "originalName": "RegisterIconFromText"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "registerIconSource"}], "originalName": "RegisterIconSource"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "registerMultiPathSVG"}], "originalName": "RegisterMultiPathSVG"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "rejectCommit"}], "originalName": "RejectCommit"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "rejectEdit"}], "originalName": "RejectEdit"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "removeItem"}], "originalName": "RemoveItem"},
@@ -1173,6 +1194,7 @@
       {"names":[{"platform": "Angular", "mappedType": "IgxColumnSortDescriptionCollection","mappedName": "sortDescriptions"}], "originalName": "SortDescriptions"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "startEditMode"}], "originalName": "StartEditMode"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stickyRowBackground"}], "originalName": "StickyRowBackground"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "stopPropagation"}], "originalName": "StopPropagation"},
       {"names":[{"platform": "Angular", "mappedType": "IgxColumnSummaryDescriptionCollection","mappedName": "summaryDescriptions"}], "originalName": "SummaryDescriptions"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "summaryRootBackground"}], "originalName": "SummaryRootBackground"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "summaryRootLabelTextColor"}], "originalName": "SummaryRootLabelTextColor"},
@@ -1212,9 +1234,9 @@
   },
   {
     "originalName": "ColumnResizingMode",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "ColumnResizingMode.ts","mappedName": "ColumnResizingMode"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -1224,9 +1246,9 @@
   },
   {
     "originalName": "ColumnMovingMode",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "ColumnMovingMode.ts","mappedName": "ColumnMovingMode"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -1235,8 +1257,8 @@
   },
   {
     "originalName": "GridCellPosition",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-cell-position.ts","dynamicModuleName": "igx-grid-cell-position-dynamic-module.ts","moduleName": "igx-grid-cell-position-module.ts","mappedName": "IgxGridCellPosition"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "columnUniqueKey"}], "originalName": "ColumnUniqueKey"},
@@ -1244,38 +1266,38 @@
   },
   {
     "originalName": "GridFilterExpressionsEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-filter-expressions-event-args.ts","mappedName": "IgxGridFilterExpressionsEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxFilterExpressionCollection","mappedName": "filterExpressions"}], "originalName": "FilterExpressions"} ]
   },
   {
     "originalName": "GridColumnsAutoGeneratedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-columns-auto-generated-event-args.ts","mappedName": "IgxGridColumnsAutoGeneratedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxGridColumnCollection","mappedName": "columns"}], "originalName": "Columns"} ]
   },
   {
     "originalName": "GridColumnsChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-columns-changed-event-args.ts","mappedName": "IgxGridColumnsChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxGridColumnCollection","mappedName": "columns"}], "originalName": "Columns"} ]
   },
   {
     "originalName": "GridSelectedItemsChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-selected-items-changed-event-args.ts","mappedName": "IgxGridSelectedItemsChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxGridSelectedItemsCollection","mappedName": "addedItems"}], "originalName": "AddedItems"},
@@ -1284,10 +1306,10 @@
   },
   {
     "originalName": "GridSelectedKeysChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-selected-keys-changed-event-args.ts","mappedName": "IgxGridSelectedKeysChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxGridSelectedKeysCollection","mappedName": "addedKeys"}], "originalName": "AddedKeys"},
@@ -1296,10 +1318,10 @@
   },
   {
     "originalName": "GridSelectedCellsChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-selected-cells-changed-event-args.ts","mappedName": "IgxGridSelectedCellsChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxGridSelectedCellsCollection","mappedName": "addedCells"}], "originalName": "AddedCells"},
@@ -1308,10 +1330,10 @@
   },
   {
     "originalName": "GridActiveCellChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-active-cell-changed-event-args.ts","mappedName": "IgxGridActiveCellChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxGridCellPosition","mappedName": "newActiveCell"}], "originalName": "NewActiveCell"},
@@ -1319,10 +1341,10 @@
   },
   {
     "originalName": "GridSelectedCellRangesChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-selected-cell-ranges-changed-event-args.ts","mappedName": "IgxGridSelectedCellRangesChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxGridSelectedCellRangesCollection","mappedName": "addedRanges"}], "originalName": "AddedRanges"},
@@ -1332,10 +1354,10 @@
   },
   {
     "originalName": "DataGridCellEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-data-grid-cell-event-args.ts","mappedName": "IgxDataGridCellEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "MouseButton","mappedName": "button"}], "originalName": "Button"},
@@ -1344,38 +1366,38 @@
   },
   {
     "originalName": "GridSortDescriptionsChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-sort-descriptions-changed-event-args.ts","mappedName": "IgxGridSortDescriptionsChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxColumnSortDescriptionCollection","mappedName": "sortDescriptions"}], "originalName": "SortDescriptions"} ]
   },
   {
     "originalName": "GridGroupDescriptionsChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-group-descriptions-changed-event-args.ts","mappedName": "IgxGridGroupDescriptionsChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxColumnGroupDescriptionCollection","mappedName": "groupDescriptions"}], "originalName": "GroupDescriptions"} ]
   },
   {
     "originalName": "GridSummaryDescriptionsChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-summary-descriptions-changed-event-args.ts","mappedName": "IgxGridSummaryDescriptionsChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxColumnSummaryDescriptionCollection","mappedName": "summaryDescriptions"}], "originalName": "SummaryDescriptions"} ]
   },
   {
     "originalName": "ColumnHiddenChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-column-hidden-changed-event-args.ts","mappedName": "IgxColumnHiddenChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxDataGridColumnComponent","mappedName": "column"}], "originalName": "Column"},
@@ -1383,8 +1405,8 @@
   },
   {
     "originalName": "ColumnPinnedChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-column-pinned-changed-event-args.ts","mappedName": "IgxColumnPinnedChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxDataGridColumnComponent","mappedName": "column"}], "originalName": "Column"},
@@ -1392,8 +1414,8 @@
   },
   {
     "originalName": "GridCellValueChangingEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-cell-value-changing-event-args.ts","mappedName": "IgxGridCellValueChangingEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxDataGridColumnComponent","mappedName": "column"}], "originalName": "Column"},
@@ -1404,8 +1426,8 @@
   },
   {
     "originalName": "GridDataCommittingEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-data-committing-event-args.ts","mappedName": "IgxGridDataCommittingEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "DataSourceAggregatedResult[]","mappedName": "changes"}], "originalName": "Changes"},
@@ -1413,8 +1435,8 @@
   },
   {
     "originalName": "GridDataCommittedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-data-committed-event-args.ts","mappedName": "IgxGridDataCommittedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "DataSourceAggregatedResult[]","mappedName": "changes"}], "originalName": "Changes"},
@@ -1422,8 +1444,8 @@
   },
   {
     "originalName": "GridSizeChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-size-changed-event-args.ts","mappedName": "IgxGridSizeChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "height"}], "originalName": "Height"},
@@ -1431,16 +1453,16 @@
   },
   {
     "originalName": "GridSelectionChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-selection-changed-event-args.ts","mappedName": "IgxGridSelectionChangedEventArgs"}]
   },
   {
     "originalName": "GridCustomFilterRequestedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-custom-filter-requested-event-args.ts","mappedName": "IgxGridCustomFilterRequestedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxDataGridColumnComponent","mappedName": "column"}], "originalName": "Column"},
@@ -1451,8 +1473,8 @@
   },
   {
     "originalName": "GridColumnWidthChangedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-column-width-changed-event-args.ts","mappedName": "IgxGridColumnWidthChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxDataGridColumnComponent","mappedName": "column"}], "originalName": "Column"},
@@ -1461,8 +1483,8 @@
   },
   {
     "originalName": "GridCellEditStartedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-cell-edit-started-event-args.ts","mappedName": "IgxGridCellEditStartedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxDataGridColumnComponent","mappedName": "column"}], "originalName": "Column"},
@@ -1471,8 +1493,8 @@
   },
   {
     "originalName": "GridCellEditEndedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-cell-edit-ended-event-args.ts","mappedName": "IgxGridCellEditEndedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IgxDataGridColumnComponent","mappedName": "column"}], "originalName": "Column"},
@@ -1481,8 +1503,8 @@
   },
   {
     "originalName": "GridRowEditStartedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-row-edit-started-event-args.ts","mappedName": "IgxGridRowEditStartedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "item"}], "originalName": "Item"},
@@ -1490,8 +1512,8 @@
   },
   {
     "originalName": "GridRowEditEndedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-grid-row-edit-ended-event-args.ts","mappedName": "IgxGridRowEditEndedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "item"}], "originalName": "Item"},
@@ -1499,8 +1521,8 @@
   },
   {
     "originalName": "FilterOperand",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-filter-operand.ts","dynamicModuleName": "igx-filter-operand-dynamic-module.ts","moduleName": "igx-filter-operand-module.ts","mappedName": "IgxFilterOperand"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "displayName"}], "originalName": "DisplayName"},
@@ -1512,8 +1534,8 @@
   },
   {
     "originalName": "CellRange",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-cell-range.ts","dynamicModuleName": "igx-cell-range-dynamic-module.ts","moduleName": "igx-cell-range-module.ts","mappedName": "IgxCellRange"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "endColumn"}], "originalName": "EndColumn"},
@@ -1523,8 +1545,8 @@
   },
   {
     "originalName": "CellKey",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-cell-key.ts","dynamicModuleName": "igx-cell-key-dynamic-module.ts","moduleName": "igx-cell-key-module.ts","mappedName": "IgxCellKey"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "columnUniqueKey"}], "originalName": "ColumnUniqueKey"},
@@ -1532,11 +1554,21 @@
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "rowItem"}], "originalName": "RowItem"} ]
   },
   {
+    "originalName": "PrimaryKeyValue",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
+    "names":[{"platform": "Angular","fileName": "igx-primary-key-value.ts","dynamicModuleName": "igx-primary-key-value-dynamic-module.ts","moduleName": "igx-primary-key-value-module.ts","mappedName": "IgxPrimaryKeyValue"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "equals"}], "originalName": "Equals"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "key"}], "originalName": "Key"},
+      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "value"}], "originalName": "Value"} ]
+  },
+  {
     "originalName": "ColumnGroupDescription",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "ColumnSortDescription",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-column-group-description.ts","dynamicModuleName": "igx-column-group-description-dynamic-module.ts","moduleName": "igx-column-group-description-module.ts","mappedName": "IgxColumnGroupDescription"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "displayFormat"}], "originalName": "DisplayFormat"},
@@ -1548,8 +1580,8 @@
   },
   {
     "originalName": "FormatGroupTextEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-format-group-text-event-args.ts","mappedName": "IgxFormatGroupTextEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "formattedText"}], "originalName": "FormattedText"},
@@ -1559,8 +1591,8 @@
   },
   {
     "originalName": "ColumnGroupDescriptionCollection",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-column-group-description-collection.ts","mappedName": "IgxColumnGroupDescriptionCollection"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "add"}], "originalName": "Add"},
@@ -1573,8 +1605,8 @@
   },
   {
     "originalName": "ColumnSortDescription",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-column-sort-description.ts","dynamicModuleName": "igx-column-sort-description-dynamic-module.ts","moduleName": "igx-column-sort-description-module.ts","mappedName": "IgxColumnSortDescription"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "equals"}], "originalName": "Equals"},
@@ -1583,8 +1615,8 @@
   },
   {
     "originalName": "ColumnSortDescriptionCollection",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-column-sort-description-collection.ts","mappedName": "IgxColumnSortDescriptionCollection"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "add"}], "originalName": "Add"},
@@ -1597,8 +1629,8 @@
   },
   {
     "originalName": "ColumnSummaryDescription",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-column-summary-description.ts","dynamicModuleName": "igx-column-summary-description-dynamic-module.ts","moduleName": "igx-column-summary-description-module.ts","mappedName": "IgxColumnSummaryDescription"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "calculatorDisplayName"}], "originalName": "CalculatorDisplayName"},
@@ -1610,13 +1642,14 @@
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "formatOverride"}], "originalName": "FormatOverride"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "maxFractionDigits"}], "originalName": "MaxFractionDigits"},
       {"names":[{"platform": "Angular", "mappedType": "DataSourceSummaryOperand","mappedName": "operand"}], "originalName": "Operand"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "shouldDisplay"}], "originalName": "ShouldDisplay"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "valueFormat"}], "originalName": "ValueFormat"},
       {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "valueFormatSpecifiers"}], "originalName": "ValueFormatSpecifiers"} ]
   },
   {
     "originalName": "FormatSummaryTextEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-format-summary-text-event-args.ts","mappedName": "IgxFormatSummaryTextEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "displayName"}], "originalName": "DisplayName"},
@@ -1627,8 +1660,8 @@
   },
   {
     "originalName": "ColumnSummaryDescriptionCollection",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-column-summary-description-collection.ts","mappedName": "IgxColumnSummaryDescriptionCollection"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "add"}], "originalName": "Add"},
@@ -1641,10 +1674,10 @@
   },
   {
     "originalName": "ColumnMovingSeparator",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-column-moving-separator-component.ts","dynamicModuleName": "igx-column-moving-separator-dynamic-module.ts","moduleName": "igx-column-moving-separator-module.ts","mappedName": "IgxColumnMovingSeparatorComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "actualOpacity"}], "originalName": "ActualOpacity"},
@@ -1653,10 +1686,10 @@
   },
   {
     "originalName": "ComboBoxColumn",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DataGridColumn",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-combo-box-column-component.ts","dynamicModuleName": "igx-combo-box-column-dynamic-module.ts","moduleName": "igx-combo-box-column-module.ts","mappedName": "IgxComboBoxColumnComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "IDataSource","mappedName": "actualDataSource"}], "originalName": "ActualDataSource"},
@@ -1667,10 +1700,10 @@
   },
   {
     "originalName": "DateTimeColumn",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DataGridColumn",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-date-time-column-component.ts","dynamicModuleName": "igx-date-time-column-dynamic-module.ts","moduleName": "igx-date-time-column-module.ts","mappedName": "IgxDateTimeColumnComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "DateTimeFormats","mappedName": "dateTimeFormat"}], "originalName": "DateTimeFormat"},
@@ -1686,8 +1719,8 @@
   },
   {
     "originalName": "DefinitionBase",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-definition-base-component.ts","mappedName": "IgxDefinitionBaseComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "activationBorder"}], "originalName": "ActivationBorder"},
@@ -1697,6 +1730,10 @@
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "activationBorderTopWidth"}], "originalName": "ActivationBorderTopWidth"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "actualActivationBorder"}], "originalName": "ActualActivationBorder"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "actualBackground"}], "originalName": "ActualBackground"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "actualBarBackground"}], "originalName": "ActualBarBackground"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "actualBarCornerRadius"}], "originalName": "ActualBarCornerRadius"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "actualBarOutline"}], "originalName": "ActualBarOutline"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "actualBarStrokeThickness"}], "originalName": "ActualBarStrokeThickness"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "actualBorder"}], "originalName": "ActualBorder"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "actualErrorBorder"}], "originalName": "ActualErrorBorder"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "actualLastStickyRowBackground"}], "originalName": "ActualLastStickyRowBackground"},
@@ -1706,11 +1743,16 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "actualStickyRowBackground"}], "originalName": "ActualStickyRowBackground"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "actualTextColor"}], "originalName": "ActualTextColor"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "background"}], "originalName": "Background"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "barBackground"}], "originalName": "BarBackground"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "barCornerRadius"}], "originalName": "BarCornerRadius"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "barOutline"}], "originalName": "BarOutline"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "barStrokeThickness"}], "originalName": "BarStrokeThickness"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "border"}], "originalName": "Border"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "borderBottomWidth"}], "originalName": "BorderBottomWidth"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "borderLeftWidth"}], "originalName": "BorderLeftWidth"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "borderRightWidth"}], "originalName": "BorderRightWidth"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "borderTopWidth"}], "originalName": "BorderTopWidth"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridConditionalStyleCollection","mappedName": "conditionalStyles"}], "originalName": "ConditionalStyles"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "contentOpacity"}], "originalName": "ContentOpacity"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "errorBorder"}], "originalName": "ErrorBorder"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "errorBorderBottomWidth"}], "originalName": "ErrorBorderBottomWidth"},
@@ -1721,6 +1763,9 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "hasNamedValue"}], "originalName": "HasNamedValue"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "hasNamedValues"}], "originalName": "HasNamedValues"},
       {"names":[{"platform": "Angular", "mappedType": "CellContentHorizontalAlignment","mappedName": "horizontalAlignment"}], "originalName": "HorizontalAlignment"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isBarRequired"}], "originalName": "IsBarRequired"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isBarSupported"}], "originalName": "IsBarSupported"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "isStyleTransitioningOut"}], "originalName": "IsStyleTransitioningOut"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "lastStickyRowBackground"}], "originalName": "LastStickyRowBackground"},
       {"names":[{"platform": "Angular", "mappedType": "TextCellLineBreakMode","mappedName": "lineBreakMode"}], "originalName": "LineBreakMode"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "pinnedRowBackground"}], "originalName": "PinnedRowBackground"},
@@ -1729,25 +1774,130 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNamedValue"}], "originalName": "SetNamedValue"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stickyRowBackground"}], "originalName": "StickyRowBackground"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "textColor"}], "originalName": "TextColor"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "transitionStyleIn"}], "originalName": "TransitionStyleIn"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "transitionStyleOut"}], "originalName": "TransitionStyleOut"},
       {"names":[{"platform": "Angular", "mappedType": "CellContentVerticalAlignment","mappedName": "verticalAlignment"}], "originalName": "VerticalAlignment"} ]
   },
   {
     "originalName": "DataBindingEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-data-binding-event-args.ts","mappedName": "IgxDataBindingEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "resolvedValue"}], "originalName": "ResolvedValue"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "rowObject"}], "originalName": "RowObject"} ]
   },
   {
+    "originalName": "GridCompoundConditionalStyle",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeName": "GridConditionalStyle",
+    "packageName": "igniteui-data-grids",
+    "names":[{"platform": "Angular","fileName": "igx-grid-compound-conditional-style-component.ts","mappedName": "IgxGridCompoundConditionalStyleComponent"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "actualNeedsFieldMaximum"}], "originalName": "ActualNeedsFieldMaximum"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "actualNeedsFieldMinimum"}], "originalName": "ActualNeedsFieldMinimum"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "actualNeedsFieldSum"}], "originalName": "ActualNeedsFieldSum"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getSubStyles"}], "originalName": "GetSubStyles"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCompound"}], "originalName": "IsCompound"} ]
+  },
+  {
+    "originalName": "TextIconSetConditionalStyle",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeName": "GridCompoundConditionalStyle",
+    "packageName": "igniteui-data-grids",
+    "names":[{"platform": "Angular","fileName": "igx-text-icon-set-conditional-style-component.ts","dynamicModuleName": "igx-text-icon-set-conditional-style-dynamic-module.ts","moduleName": "igx-text-icon-set-conditional-style-module.ts","mappedName": "IgxTextIconSetConditionalStyleComponent"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getSubStyles"}], "originalName": "GetSubStyles"},
+      {"names":[{"platform": "Angular", "mappedType": "TextIconSetBuiltInTypes","mappedName": "iconType"}], "originalName": "IconType"} ]
+  },
+  {
+    "originalName": "GridConditionalStyle",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
+    "names":[{"platform": "Angular","fileName": "igx-grid-conditional-style-component.ts","dynamicModuleName": "igx-grid-conditional-style-dynamic-module.ts","moduleName": "igx-grid-conditional-style-module.ts","mappedName": "IgxGridConditionalStyleComponent"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "actualNeedsFieldMaximum"}], "originalName": "ActualNeedsFieldMaximum"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "actualNeedsFieldMinimum"}], "originalName": "ActualNeedsFieldMinimum"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "actualNeedsFieldSum"}], "originalName": "ActualNeedsFieldSum"},
+      {"names":[{"platform": "Angular", "mappedType": "IFilterExpression","mappedName": "condition"}], "originalName": "Condition"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "conditionString"}], "originalName": "ConditionString"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCompound"}], "originalName": "IsCompound"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isFieldMaximumNeeded"}], "originalName": "IsFieldMaximumNeeded"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isFieldMinimumNeeded"}], "originalName": "IsFieldMinimumNeeded"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isFieldSumNeeded"}], "originalName": "IsFieldSumNeeded"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isTransitionInEnabled"}], "originalName": "IsTransitionInEnabled"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridConditionalStylePropertyCollection","mappedName": "properties"}], "originalName": "Properties"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "requiresGlobalValues"}], "originalName": "RequiresGlobalValues"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "styleKey"}], "originalName": "StyleKey"} ]
+  },
+  {
+    "originalName": "GridConditionFilterStringErrorsParsingEventArgs",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
+    "names":[{"platform": "Angular","fileName": "igx-grid-condition-filter-string-errors-parsing-event-args.ts","mappedName": "IgxGridConditionFilterStringErrorsParsingEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "errors"}], "originalName": "Errors"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "propertyName"}], "originalName": "PropertyName"} ]
+  },
+  {
+    "originalName": "GridConditionalStyleFontInfo",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
+    "names":[{"platform": "Angular","fileName": "igx-grid-conditional-style-font-info-component.ts","dynamicModuleName": "igx-grid-conditional-style-font-info-dynamic-module.ts","moduleName": "igx-grid-conditional-style-font-info-module.ts","mappedName": "IgxGridConditionalStyleFontInfoComponent"}]
+  },
+  {
+    "originalName": "GridConditionalStyleProperty",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
+    "names":[{"platform": "Angular","fileName": "igx-grid-conditional-style-property-component.ts","dynamicModuleName": "igx-grid-conditional-style-property-dynamic-module.ts","moduleName": "igx-grid-conditional-style-property-module.ts","mappedName": "IgxGridConditionalStylePropertyComponent"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "IFilterExpression","mappedName": "actualInputValueExpression"}], "originalName": "ActualInputValueExpression"},
+      {"names":[{"platform": "Angular", "mappedType": "IFilterExpression","mappedName": "actualMaximumInputValueExpression"}], "originalName": "ActualMaximumInputValueExpression"},
+      {"names":[{"platform": "Angular", "mappedType": "IFilterExpression","mappedName": "actualMinimumInputValueExpression"}], "originalName": "ActualMinimumInputValueExpression"},
+      {"names":[{"platform": "Angular", "mappedType": "IFilterExpression","mappedName": "actualSumInputValueExpression"}], "originalName": "ActualSumInputValueExpression"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "boolValue"}], "originalName": "BoolValue"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "brushValue"}], "originalName": "BrushValue"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "colorCollection"}], "originalName": "ColorCollection"},
+      {"names":[{"platform": "Angular", "mappedType": "Date","mappedName": "dateValue"}], "originalName": "DateValue"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "doubleValue"}], "originalName": "DoubleValue"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxGridConditionalStyleFontInfoComponent","mappedName": "fontValue"}], "originalName": "FontValue"},
+      {"names":[{"platform": "Angular", "mappedType": "IFilterExpression","mappedName": "inputValueExpression"}], "originalName": "InputValueExpression"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "inputValueExpressionString"}], "originalName": "InputValueExpressionString"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "intValue"}], "originalName": "IntValue"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "maximumColor"}], "originalName": "MaximumColor"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "maximumInputValue"}], "originalName": "MaximumInputValue"},
+      {"names":[{"platform": "Angular", "mappedType": "IFilterExpression","mappedName": "maximumInputValueExpression"}], "originalName": "MaximumInputValueExpression"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "maximumInputValueExpressionString"}], "originalName": "MaximumInputValueExpressionString"},
+      {"names":[{"platform": "Angular", "mappedType": "GridConditionalStyleBoundType","mappedName": "maximumType"}], "originalName": "MaximumType"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "minimumColor"}], "originalName": "MinimumColor"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "minimumInputValue"}], "originalName": "MinimumInputValue"},
+      {"names":[{"platform": "Angular", "mappedType": "IFilterExpression","mappedName": "minimumInputValueExpression"}], "originalName": "MinimumInputValueExpression"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "minimumInputValueExpressionString"}], "originalName": "MinimumInputValueExpressionString"},
+      {"names":[{"platform": "Angular", "mappedType": "GridConditionalStyleBoundType","mappedName": "minimumType"}], "originalName": "MinimumType"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "needsGlobalMaximum"}], "originalName": "NeedsGlobalMaximum"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "needsGlobalMinimum"}], "originalName": "NeedsGlobalMinimum"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "needsGlobalSum"}], "originalName": "NeedsGlobalSum"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "objectValue"}], "originalName": "ObjectValue"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "propertyName"}], "originalName": "PropertyName"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "requiresGlobalValues"}], "originalName": "RequiresGlobalValues"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "shouldSetValue"}], "originalName": "ShouldSetValue"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "stringValue"}], "originalName": "StringValue"},
+      {"names":[{"platform": "Angular", "mappedType": "GridConditionalStylePropertyStylingType","mappedName": "stylingType"}], "originalName": "StylingType"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "sumInputValue"}], "originalName": "SumInputValue"},
+      {"names":[{"platform": "Angular", "mappedType": "IFilterExpression","mappedName": "sumInputValueExpression"}], "originalName": "SumInputValueExpression"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "sumInputValueExpressionString"}], "originalName": "SumInputValueExpressionString"},
+      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "valueCollection"}], "originalName": "ValueCollection"} ]
+  },
+  {
     "originalName": "CellStyleRequestedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-cell-style-requested-event-args.ts","mappedName": "IgxCellStyleRequestedEventArgs"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "resolvedValue"}], "originalName": "ResolvedValue"},
@@ -1756,10 +1906,10 @@
   },
   {
     "originalName": "DataGridColumn",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-data-grid-column-component.ts","mappedName": "IgxDataGridColumnComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "ColumnOptionsIconAlignment","mappedName": "actualColumnOptionsIconAlignment"}], "originalName": "ActualColumnOptionsIconAlignment"},
@@ -1774,6 +1924,8 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "actualIsColumnOptionsSummariesEnabled"}], "originalName": "ActualIsColumnOptionsSummariesEnabled"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "actualRowHoverTextColor"}], "originalName": "ActualRowHoverTextColor"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "actualSelectedBackground"}], "originalName": "ActualSelectedBackground"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "addCommandAvailabilityListener"}], "originalName": "AddCommandAvailabilityListener"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "addCommandStateChangedListener"}], "originalName": "AddCommandStateChangedListener"},
       {"names":[{"platform": "Angular", "mappedType": "IgxGridColumnAnimationSettings","mappedName": "animationSettings"}], "originalName": "AnimationSettings"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "applyCustomFilter"}], "originalName": "ApplyCustomFilter"},
       {"names":[{"platform": "Angular", "mappedType": "ColumnOptionsIconAlignment","mappedName": "columnOptionsIconAlignment"}], "originalName": "ColumnOptionsIconAlignment"},
@@ -1786,6 +1938,7 @@
       {"names":[{"platform": "Angular", "mappedType": "FilterComparisonType","mappedName": "filterComparisonType"}], "originalName": "FilterComparisonType"},
       {"names":[{"platform": "Angular", "mappedType": "IFilterExpression","mappedName": "filterExpression"}], "originalName": "FilterExpression"},
       {"names":[{"platform": "Angular", "mappedType": "IgxGridFilterOperandsCollection","mappedName": "filterOperands"}], "originalName": "FilterOperands"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getDesiredToolbarActions"}], "originalName": "GetDesiredToolbarActions"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getNamedHeaderValue"}], "originalName": "GetNamedHeaderValue"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getUniqueKey"}], "originalName": "GetUniqueKey"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "hasNamedHeaderValue"}], "originalName": "HasNamedHeaderValue"},
@@ -1815,6 +1968,8 @@
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "paddingRight"}], "originalName": "PaddingRight"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "paddingTop"}], "originalName": "PaddingTop"},
       {"names":[{"platform": "Angular", "mappedType": "PinnedPositions","mappedName": "pinned"}], "originalName": "Pinned"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "removeCommandAvailabilityListener"}], "originalName": "RemoveCommandAvailabilityListener"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "removeCommandStateChangedListener"}], "originalName": "RemoveCommandStateChangedListener"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "removeNamedHeaderValue"}], "originalName": "RemoveNamedHeaderValue"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "rowHoverBackground"}], "originalName": "RowHoverBackground"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "rowHoverTextColor"}], "originalName": "RowHoverTextColor"},
@@ -1822,12 +1977,36 @@
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "setNamedHeaderValue"}], "originalName": "SetNamedHeaderValue"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "shouldRemoveWhenHidden"}], "originalName": "ShouldRemoveWhenHidden"},
       {"names":[{"platform": "Angular", "mappedType": "ColumnSortDirection","mappedName": "sortDirection"}], "originalName": "SortDirection"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "suffixIconCollectionName"}], "originalName": "SuffixIconCollectionName"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "suffixIconFill"}], "originalName": "SuffixIconFill"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "suffixIconName"}], "originalName": "SuffixIconName"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "suffixIconStroke"}], "originalName": "SuffixIconStroke"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "suffixIconViewBoxHeight"}], "originalName": "SuffixIconViewBoxHeight"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "suffixIconViewBoxLeft"}], "originalName": "SuffixIconViewBoxLeft"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "suffixIconViewBoxTop"}], "originalName": "SuffixIconViewBoxTop"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "suffixIconViewBoxWidth"}], "originalName": "SuffixIconViewBoxWidth"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "suffixText"}], "originalName": "SuffixText"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "suffixTextColor"}], "originalName": "SuffixTextColor"},
+      {"names":[{"platform": "Angular", "mappedType": "TextCellDecoration","mappedName": "textDecoration"}], "originalName": "TextDecoration"},
       {"names":[{"platform": "Angular", "mappedType": "IgxColumnWidth","mappedName": "width"}], "originalName": "Width"} ]
   },
   {
+    "originalName": "FormatCellEventArgs",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
+    "names":[{"platform": "Angular","fileName": "igx-format-cell-event-args.ts","mappedName": "IgxFormatCellEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isGroup"}], "originalName": "IsGroup"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isSummary"}], "originalName": "IsSummary"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "item"}], "originalName": "Item"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "row"}], "originalName": "Row"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "text"}], "originalName": "Text"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "value"}], "originalName": "Value"} ]
+  },
+  {
     "originalName": "ColumnWidth",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-column-width.ts","dynamicModuleName": "igx-column-width-dynamic-module.ts","moduleName": "igx-column-width-module.ts","mappedName": "IgxColumnWidth"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isStarSized"}], "originalName": "IsStarSized"},
@@ -1836,26 +2015,26 @@
   },
   {
     "originalName": "EditorDefinition",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-editor-definition-component.ts","dynamicModuleName": "igx-editor-definition-dynamic-module.ts","moduleName": "igx-editor-definition-module.ts","mappedName": "IgxEditorDefinitionComponent"}]
   },
   {
     "originalName": "EditRowDefinition",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-edit-row-definition-component.ts","dynamicModuleName": "igx-edit-row-definition-dynamic-module.ts","moduleName": "igx-edit-row-definition-module.ts","mappedName": "IgxEditRowDefinitionComponent"}]
   },
   {
     "originalName": "FilterRowDefinition",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-filter-row-definition-component.ts","dynamicModuleName": "igx-filter-row-definition-dynamic-module.ts","moduleName": "igx-filter-row-definition-module.ts","mappedName": "IgxFilterRowDefinitionComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "paddingBottom"}], "originalName": "PaddingBottom"},
@@ -1865,10 +2044,10 @@
   },
   {
     "originalName": "Header",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-header-component.ts","mappedName": "IgxHeaderComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "actualSortIndicatorColor"}], "originalName": "ActualSortIndicatorColor"},
@@ -1882,10 +2061,10 @@
   },
   {
     "originalName": "ColumnResizingSeparator",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-column-resizing-separator-component.ts","dynamicModuleName": "igx-column-resizing-separator-dynamic-module.ts","moduleName": "igx-column-resizing-separator-module.ts","mappedName": "IgxColumnResizingSeparatorComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "actualOpacity"}], "originalName": "ActualOpacity"},
@@ -1893,18 +2072,18 @@
   },
   {
     "originalName": "HeaderSeparator",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-header-separator-component.ts","dynamicModuleName": "igx-header-separator-dynamic-module.ts","moduleName": "igx-header-separator-module.ts","mappedName": "IgxHeaderSeparatorComponent"}]
   },
   {
     "originalName": "ImageColumn",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DataGridColumn",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-image-column-component.ts","dynamicModuleName": "igx-image-column-dynamic-module.ts","moduleName": "igx-image-column-module.ts","mappedName": "IgxImageColumnComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "editorDataSource"}], "originalName": "EditorItemsSource"},
@@ -1915,10 +2094,10 @@
   },
   {
     "originalName": "NumericColumn",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DataGridColumn",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-numeric-column-component.ts","dynamicModuleName": "igx-numeric-column-dynamic-module.ts","moduleName": "igx-numeric-column-module.ts","mappedName": "IgxNumericColumnComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "editorDataSource"}], "originalName": "EditorItemsSource"},
@@ -1939,17 +2118,17 @@
   },
   {
     "originalName": "PinnedAreaSeparator",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-pinned-area-separator-component.ts","dynamicModuleName": "igx-pinned-area-separator-dynamic-module.ts","moduleName": "igx-pinned-area-separator-module.ts","mappedName": "IgxPinnedAreaSeparatorComponent"}]
   },
   {
     "originalName": "LayoutAction",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "LayoutAction.ts","mappedName": "LayoutAction"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -1964,18 +2143,18 @@
   },
   {
     "originalName": "SectionFooter",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-section-footer-component.ts","dynamicModuleName": "igx-section-footer-dynamic-module.ts","moduleName": "igx-section-footer-module.ts","mappedName": "IgxSectionFooterComponent"}]
   },
   {
     "originalName": "SectionHeader",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-section-header-component.ts","dynamicModuleName": "igx-section-header-dynamic-module.ts","moduleName": "igx-section-header-module.ts","mappedName": "IgxSectionHeaderComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "actualSelectedBackground"}], "originalName": "ActualSelectedBackground"},
@@ -1989,26 +2168,26 @@
   },
   {
     "originalName": "RowSeparator",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-row-separator-component.ts","dynamicModuleName": "igx-row-separator-dynamic-module.ts","moduleName": "igx-row-separator-module.ts","mappedName": "IgxRowSeparatorComponent"}]
   },
   {
     "originalName": "HeaderRowSeparator",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-header-row-separator-component.ts","dynamicModuleName": "igx-header-row-separator-dynamic-module.ts","moduleName": "igx-header-row-separator-module.ts","mappedName": "IgxHeaderRowSeparatorComponent"}]
   },
   {
     "originalName": "SummaryRow",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DefinitionBase",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-summary-row-component.ts","mappedName": "IgxSummaryRowComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "actualSelectedBackground"}], "originalName": "ActualSelectedBackground"},
@@ -2022,74 +2201,74 @@
   },
   {
     "originalName": "SummaryRowRoot",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "SummaryRow",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-summary-row-root-component.ts","dynamicModuleName": "igx-summary-row-root-dynamic-module.ts","moduleName": "igx-summary-row-root-module.ts","mappedName": "IgxSummaryRowRootComponent"}]
   },
   {
     "originalName": "SummaryRowSection",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "SummaryRow",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-summary-row-section-component.ts","dynamicModuleName": "igx-summary-row-section-dynamic-module.ts","moduleName": "igx-summary-row-section-module.ts","mappedName": "IgxSummaryRowSectionComponent"}]
   },
   {
     "originalName": "TemplateHeader",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "Header",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-template-header-component.ts","dynamicModuleName": "igx-template-header-dynamic-module.ts","moduleName": "igx-template-header-module.ts","mappedName": "IgxTemplateHeaderComponent"}]
   },
   {
     "originalName": "TemplateColumn",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DataGridColumn",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-template-column-component.ts","dynamicModuleName": "igx-template-column-dynamic-module.ts","moduleName": "igx-template-column-module.ts","mappedName": "IgxTemplateColumnComponent"}]
   },
   {
     "originalName": "TemplateCellUpdatingEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-template-cell-updating-event-args.ts","mappedName": "IgxTemplateCellUpdatingEventArgs"}]
   },
   {
     "originalName": "TemplateHeaderCellUpdatingEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-template-header-cell-updating-event-args.ts","mappedName": "IgxTemplateHeaderCellUpdatingEventArgs"}]
   },
   {
     "originalName": "TemplateSectionHeader",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "SectionHeader",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-template-section-header-component.ts","dynamicModuleName": "igx-template-section-header-dynamic-module.ts","moduleName": "igx-template-section-header-module.ts","mappedName": "IgxTemplateSectionHeaderComponent"}]
   },
   {
     "originalName": "TemplateSectionHeaderCellUpdatingEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-template-section-header-cell-updating-event-args.ts","mappedName": "IgxTemplateSectionHeaderCellUpdatingEventArgs"}]
   },
   {
     "originalName": "TextColumn",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "DataGridColumn",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-text-column-component.ts","dynamicModuleName": "igx-text-column-dynamic-module.ts","moduleName": "igx-text-column-module.ts","mappedName": "IgxTextColumnComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "editorDataSource"}], "originalName": "EditorItemsSource"},
@@ -2099,17 +2278,17 @@
   },
   {
     "originalName": "TextHeader",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeName": "Header",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-text-header-component.ts","dynamicModuleName": "igx-text-header-dynamic-module.ts","moduleName": "igx-text-header-module.ts","mappedName": "IgxTextHeaderComponent"}]
   },
   {
     "originalName": "FilterUIType",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "FilterUIType.ts","mappedName": "FilterUIType"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2119,9 +2298,9 @@
   },
   {
     "originalName": "FilterLogicalOperator",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "FilterLogicalOperator.ts","mappedName": "FilterLogicalOperator"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2130,9 +2309,9 @@
   },
   {
     "originalName": "FilterComparisonType",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "FilterComparisonType.ts","mappedName": "FilterComparisonType"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2142,9 +2321,9 @@
   },
   {
     "originalName": "MergedCellMode",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "MergedCellMode.ts","mappedName": "MergedCellMode"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2155,9 +2334,9 @@
   },
   {
     "originalName": "MergedCellEvaluationCriteria",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "MergedCellEvaluationCriteria.ts","mappedName": "MergedCellEvaluationCriteria"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2167,9 +2346,9 @@
   },
   {
     "originalName": "EnterKeyBehaviors",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "EnterKeyBehaviors.ts","mappedName": "EnterKeyBehaviors"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2182,9 +2361,9 @@
   },
   {
     "originalName": "EnterKeyBehaviorAfterEdit",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "EnterKeyBehaviorAfterEdit.ts","mappedName": "EnterKeyBehaviorAfterEdit"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2196,9 +2375,9 @@
   },
   {
     "originalName": "EditModeType",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "EditModeType.ts","mappedName": "EditModeType"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2209,9 +2388,9 @@
   },
   {
     "originalName": "EditModeClickAction",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "EditModeClickAction.ts","mappedName": "EditModeClickAction"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2221,9 +2400,9 @@
   },
   {
     "originalName": "EditorType",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "EditorType.ts","mappedName": "EditorType"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2235,9 +2414,9 @@
   },
   {
     "originalName": "CellContentHorizontalAlignment",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "CellContentHorizontalAlignment.ts","mappedName": "CellContentHorizontalAlignment"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2249,9 +2428,9 @@
   },
   {
     "originalName": "CellContentVerticalAlignment",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "CellContentVerticalAlignment.ts","mappedName": "CellContentVerticalAlignment"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2263,9 +2442,9 @@
   },
   {
     "originalName": "ColumnOptionsIconAlignment",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "ColumnOptionsIconAlignment.ts","mappedName": "ColumnOptionsIconAlignment"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2275,9 +2454,9 @@
   },
   {
     "originalName": "ColumnOptionsIconBehavior",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "ColumnOptionsIconBehavior.ts","mappedName": "ColumnOptionsIconBehavior"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2288,9 +2467,9 @@
   },
   {
     "originalName": "ColumnSortDirection",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "ColumnSortDirection.ts","mappedName": "ColumnSortDirection"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2300,9 +2479,9 @@
   },
   {
     "originalName": "DateTimeFormats",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "DateTimeFormats.ts","mappedName": "DateTimeFormats"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2315,9 +2494,9 @@
   },
   {
     "originalName": "GridSelectionBehavior",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "GridSelectionBehavior.ts","mappedName": "GridSelectionBehavior"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2326,9 +2505,9 @@
   },
   {
     "originalName": "GridActivationMode",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "GridActivationMode.ts","mappedName": "GridActivationMode"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2337,9 +2516,9 @@
   },
   {
     "originalName": "DataGridSelectionMode",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "DataGridSelectionMode.ts","mappedName": "DataGridSelectionMode"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2352,9 +2531,9 @@
   },
   {
     "originalName": "HeaderClickAction",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "HeaderClickAction.ts","mappedName": "HeaderClickAction"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2366,9 +2545,9 @@
   },
   {
     "originalName": "ImageResourceType",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "ImageResourceType.ts","mappedName": "ImageResourceType"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2380,9 +2559,9 @@
   },
   {
     "originalName": "ImageStretchOptions",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "ImageStretchOptions.ts","mappedName": "ImageStretchOptions"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2392,9 +2571,9 @@
   },
   {
     "originalName": "GroupSummaryDisplayMode",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "GroupSummaryDisplayMode.ts","mappedName": "GroupSummaryDisplayMode"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2406,9 +2585,9 @@
   },
   {
     "originalName": "GroupHeaderDisplayMode",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "GroupHeaderDisplayMode.ts","mappedName": "GroupHeaderDisplayMode"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2417,9 +2596,9 @@
   },
   {
     "originalName": "SummaryScope",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "SummaryScope.ts","mappedName": "SummaryScope"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2430,9 +2609,9 @@
   },
   {
     "originalName": "PinnedPositions",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "PinnedPositions.ts","mappedName": "PinnedPositions"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2442,9 +2621,9 @@
   },
   {
     "originalName": "SortIndicatorStyle",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "SortIndicatorStyle.ts","mappedName": "SortIndicatorStyle"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
@@ -2455,16 +2634,16 @@
   },
   {
     "originalName": "ColumnExchanger",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-column-exchanger.ts","mappedName": "IgxColumnExchanger"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "targetIndex"}], "originalName": "TargetIndex"} ]
   },
   {
     "originalName": "ColumnPropertySetter",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-column-property-setter.ts","mappedName": "IgxColumnPropertySetter"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "columnName"}], "originalName": "ColumnName"},
@@ -2473,8 +2652,8 @@
   },
   {
     "originalName": "ResponsivePhase",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-responsive-phase.ts","mappedName": "IgxResponsivePhase"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "addColumnExchanger"}], "originalName": "AddColumnExchanger"},
@@ -2486,8 +2665,8 @@
   },
   {
     "originalName": "ResponsiveState",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
-    "packageName": "igniteui-grids",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-responsive-state.ts","mappedName": "IgxResponsiveState"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "addResponsivePhase"}], "originalName": "AddResponsivePhase"},
@@ -2499,26 +2678,26 @@
   },
   {
     "originalName": "ResponsiveStateEnteringEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-responsive-state-entering-event-args.ts","mappedName": "IgxResponsiveStateEnteringEventArgs"}]
   },
   {
     "originalName": "ResponsiveStateEnteredEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-responsive-state-entered-event-args.ts","mappedName": "IgxResponsiveStateEnteredEventArgs"}]
   },
   {
     "originalName": "ResponsiveStateExitedEventArgs",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation",
     "originalBaseTypeNamespace": "System",
     "originalBaseTypeName": "EventArgs",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Angular","fileName": "igx-responsive-state-exited-event-args.ts","mappedName": "IgxResponsiveStateExitedEventArgs"}]
   }]
 }

@@ -31,11 +31,11 @@ The goal here is to provide cross platform long form doc for Angular, Blazor, Re
 - [Building Docs](#Building-Docs)
 
 - [Maintenance](#Maintenance)
-  * [API Mapping Files](#API-Mapping-Files)
-  * [API Resource Links](#API-Resource-Links)
-  * [Merging Branches](#Merging-Branches)
-  * [Updating Angular Docs](#updating-angular-docs)
-
+  * [API Mapping Files](./readme/api-mapping.md)
+  * [API Resource Links](./readme/api-links.md)
+  * [Releasing Samples to Production](./readme/releasing-samples.md)
+  * [Releasing Docs to Production](./readme/releasing-docs.md)
+  * [Updating Angular Docs](./readme/updating-angular-docs.md)
 
 ## Getting Started
 
@@ -304,105 +304,23 @@ yarn build-production --lang=en --plat=Blazor
 
 #### API Mapping Files
 
-Follow this section to update API mapping files in the `apiMap` folder:
-
-- clone [dev-tools](https://infragistics.visualstudio.com/NetAdvantage/_git/dev-tools?path=%2F&version=GBmain&_a=contents) repo to **C:\WORK** folder
-
-- checkout `main` branch in the dev-tools repo
-
-- open and build Translator solution: <br>
-**C:\WORK\dev-tools\XPlatform\Main\Source\Translator\Translator_NoRoslyn.sln**
-
-- open and build jQuery solution in `Debug` mode: <br>
-**C:\WORK\dev-tools\XPlatform\Main\Source\jQuery\Infragistics.jQuery.sln**
-
-- checkout [igniteui-xplat-docs](https://github.com/IgniteUI/igniteui-xplat-docs) repo
-
-- create a new branch from `vnext` branch
-
-- open this repository in VS Code
-
-- in VS terminal, run this command to copy API Mapping files to the **apiMap** folder
-
-```
-gulp updateApiMapping
-```
-
-- commit changes made in the `apiMap` folder
-
-- create a pull request and target `vnext` branch on [github](https://github.com/IgniteUI/igniteui-xplat-docs)
-
+Refer to this topic for updating [API Mapping Files](./readme/api-mapping.md) that are used to generate API links in xplat-docs topics.
 
 #### API Resource Links
+ 
+Refer to this topic for [useful links](./readme/api-links.md) for working with API docs.
 
-This table provides links to API source repositories and build definitions for all platforms:
+#### Releasing Samples to Production
 
-Platform |API Source | API Build | API DV Web | API LOB Web | Help Docs Web | Help Docs Build
-----|------|---|---|---|---|---
-Blazor| [igniteui-blazor-api](https://github.com/IgniteUI/igniteui-blazor-api) | [BlazorDocFX_API_EN](http://tfs.infragistics.local:8080/tfs/Engineering/IgInternalApplicationsGit/IgInternalApplicationsGit%20Team/_build/index?context=allDefinitions&path=%5C&definitionId=2376&_a=completed) | [STAG](https://staging.infragistics.com/blazor/docs/api/api/IgniteUI.Blazor.Controls.html) - [PROD](https://infragistics.com/blazor/docs/api/api/IgniteUI.Blazor.Controls.html) | N/A | [STAG](https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/general-getting-started) - [PROD](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/general-getting-started) | [BlazorDocFX_EN](http://tfs.infragistics.local:8080/tfs/Engineering/IgInternalApplicationsGit/IgInternalApplicationsGit%20Team/_build/index?context=allDefinitions&path=%5C&definitionId=2130&_a=completed)
-React | [/Source/RBuild](http://tfs.infragistics.local:8080/tfs/Engineering/NetAdvantage/XSharp%20Team/_versionControl?path=%24%2FNetAdvantage%2FDEV%2FXPlatform%2F2022.1%2FSource%2FRBuild&_a=contents) | [React.DEV](http://tfs.infragistics.local:8080/tfs/Engineering/NetAdvantage/XSharp%20Team/_build/index?context=allDefinitions&path=%5CProducts%5CXPlatform%5C22.1&definitionId=2387&_a=completed) | [STAG](https://staging.infragistics.com/products/ignite-ui-react/api/docs/typescript/latest/index.html) - [PROD](https://www.infragistics.com/products/ignite-ui-react/api/docs/typescript/latest/index.html) | N/A | [STAG](https://staging.infragistics.com/products/ignite-ui-react/react/components/general-getting-started) - [PROD](https://www.infragistics.com/products/ignite-ui-react/react/components/general-getting-started) | [ReactDocFX_EN](http://tfs.infragistics.local:8080/tfs/Engineering/IgInternalApplicationsGit/IgInternalApplicationsGit%20Team/_build/index?context=allDefinitions&path=%5C&definitionId=1780&_a=completed)
-Angular| [/Source/NGBuild](http://tfs.infragistics.local:8080/tfs/Engineering/NetAdvantage/XSharp%20Team/_versionControl?path=%24%2FNetAdvantage%2FDEV%2FXPlatform%2F2022.1%2FSource%2FNGBuild&_a=contents) | [Angular.DEV](http://tfs.infragistics.local:8080/tfs/Engineering/NetAdvantage/XSharp%20Team/_build/index?context=allDefinitions&path=%5CProducts%5CXPlatform%5C22.1&definitionId=2385&_a=completed) | [STAG](https://staging.infragistics.com/products/ignite-ui-angular/api/docs/typescript/latest/index.html) - [PROD](https://www.infragistics.com/products/ignite-ui-angular/api/docs/typescript/latest/index.html) | [STAG](https://staging.infragistics.com/products/ignite-ui-angular/docs/typescript/latest/index.html) - [PROD](https://www.infragistics.com/products/ignite-ui-angular/docs/typescript/latest/index.html) | [STAG](https://staging.infragistics.com/products/ignite-ui-angular/angular/components/general/getting-started) - [PROD](https://www.infragistics.com/products/ignite-ui-angular/angular/components/general/getting-started) | [AngularDocFX_EN](http://tfs.infragistics.local:8080/tfs/Engineering/IgInternalApplicationsGit/IgInternalApplicationsGit%20Team/_build/index?context=allDefinitions&path=%5C&definitionId=1812&_a=completed)
-WC| [/Source/WCBuild](http://tfs.infragistics.local:8080/tfs/Engineering/NetAdvantage/XSharp%20Team/_versionControl?path=%24%2FNetAdvantage%2FDEV%2FXPlatform%2F2022.1%2FSource%2FWCBuild&_a=contents) | [XPlat.WC.DEV](http://tfs.infragistics.local:8080/tfs/Engineering/NetAdvantage/XSharp%20Team/_build/index?context=allDefinitions&path=%5CProducts%5CXPlatform%5C22.1&definitionId=2384&_a=completed) | [STAG](https://staging.infragistics.com/products/ignite-ui-web-components/api/docs/typescript/latest/index.html) - [PROD](https://infragistics.com/products/ignite-ui-web-components/api/docs/typescript/latest/index.html) | [STAG](https://staging.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html) - [PROD](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html) | [STAG](https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/general-getting-started) - [PROD](https://www.infragistics.com/products/ignite-ui-web-components/web-components/components/general-getting-started) | [WC_DocFX_EN](http://tfs.infragistics.local:8080/tfs/Engineering/IgInternalApplicationsGit/IgInternalApplicationsGit%20Team/_build/index?context=allDefinitions&path=%5C&definitionId=1784&_a=completed)
+Refer to this topic for instruction on [Releasing Samples to Production](./readme/releasing-samples.md)
 
+#### Releasing Docs to Production
 
-
-#### Merging Branches
-
-Follow these instruction to merge `vnext` branch into `master` branch. This is require before deploying docs to production.
-
-- open **Windows Powershell** as Administrator
-
-- type `cd repo-path` command where *repo-path* is local directory of this directory, e.g.
-```
-cd C:\REPOS\GitInternalDocs\xplat-docfx
-```
-
-- type this command to check out `vnext` branch:
-```
-git checkout master
-```
-
-- type this command to merge all changes from `vnext` to the `master` branch
-```
-git merge vnext
-```
-
-- type this command to push changes from local `master` branch to remote
-```
-git push
-```
-
-- enter your IG user/password (if asked)
-
-- queue a new DocFX build and target `master` branch
-
-- ask RE team to deploy DocFX build to production
-
+Refer to this topic for instruction on [Releasing Docs to Production](./readme/releasing-docs.md)
 
 
 #### Updating Angular Docs
 
-The [Angular docs](https://github.com/IgniteUI/igniteui-docfx) repo is automatically updated with changes made in markdown (.md) files in the xplat-docs repo. However, changes make to table of content, are not and they must to be manually propagated by following these instructions:
+Refer to this topic for instruction on [Updating Angular Docs](./readme/updating-angular-docs.md)
 
-- clone or get latest on the [Angular igniteui-docfx](https://github.com/IgniteUI/igniteui-docfx) repo
-
-- open [xplat-docs](https://github.com/IgniteUI/igniteui-xplat-docs) repo in VS Code
-
-- open terminal window
-
-- run this command to generate output files for angular docs:
-```
-yarn run build-docfx-angular
-```
-
-- compare and propagate changes from the xplat-docs TOC file: 
-```
-C:\WORK\igniteui-xplat-docs\dist\Angular\en\components\toc.yml 
-``` 
-
-- to the angular TOC file:
-``` 
-C:\WORK\igniteui-docfx\en\components\toc.yml
-``` 
-
-- create a pull request for the [Angular igniteui-docfx](https://github.com/IgniteUI/igniteui-docfx) repo
+ 

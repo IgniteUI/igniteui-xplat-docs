@@ -1,5 +1,5 @@
 ---
-title: {Platform} Data Grid コンポーネント (Data Table) - インフラジスティックス
+title: {Platform} Data Grid コンポーネント - インフラジスティックス
 _description: {ProductName} を使用して、超高速でレスポンシブな {Platform} データ グリッドとテーブルを作成します。編集、フィルタリング、データ バインディングなどをサポートします。今すぐお試しください。
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid, 作業の開始, グリッド, インフラジスティックス
 mentionedTypes: ["Infragistics.Controls.Grid", "Infragistics.Controls.ColumnPipeArgs"]
@@ -39,8 +39,9 @@ _language: ja
 <div class="sample-content">
     <article class="sample-column">
         <div class="tabbar-wrapper">
-            <p>{ProductName} Data Table / Data Grid は、コーディングや構成をほとんど行わずにデータをすばやくバインドして表示できる表形式の {Platform} グリッド コンポーネントです。ツールボックスの {Platform} データ グリッドの機能には、フィルタリング、ソート、テンプレート、行の選択、行のグループ化、行の固定、および移動可能な列が含まれます。</p>
-            <p>{Platform} テーブルは、ライブのストリーミング データ用に最適化されており、多数の行または列で無制限のデータ セット サイズを処理できます。</p>
+            <p>{Platform} Data Grid コンポーネントは、大量のデータを表示するために使用されます。モダンで複雑なグリッドは、滑らかな UX を提供し、表形式データ操作のための多彩な機能を備えています。直感的な API、テーマ設定、ブランディング、フィルタリング、ソート、データ選択、Excel スタイルのフィルタリングなどが利用可能です。</p>
+            <p>{ProductName} Data Table / Data Grid は、コーディングや構成をほとんど行わずにデータをすばやくバインドして表示できる表形式の {Platform} グリッド コンポーネントです。当ツールボックスの {Platform} データ グリッドの機能には、フィルタリング、ソート、テンプレート、行の選択、行のグループ化、行のピン固定、列の移動、仮想化、マスター詳細表示などが含まれます。</p>
+            <p>{Platform} テーブルは、数百万行・列の処理やリアルタイム更新を瞬時に行えるように最適化されており、{ProductName} Data Grid は市場で最も優れた {Platform} Data Grid です。</p>
         </div>
     </article>
     <article class="sample-column">
@@ -51,7 +52,7 @@ _language: ja
                     data-src="../../images/general/landing-grid-page.png"
                     data-srcset="../../images/general/landing-grid-page.png 480w, ../../images/general/landing-grid-page.png 768w, ../../images/general/landing-grid-page.png 1100w"
                     alt="{Platform} Data Grid"
-                    title="{Platform} Data Grid">
+                    title="{Platform} Data Grid コンポーネント - インフラジスティックス">
             </div>
         </div>
     </article>
@@ -939,7 +940,9 @@ const POJO = [{
 <!-- Angular, WebComponents, React -->
 ## グリッドのデータ バインディング
 
-はじめにリモート データ サービスにバインドするためにグリッドを変更します。大規模なアプリケーション レベルでは一般的なシナリオです。
+当社の {Platform} Data Grid は、比類のないデータ バインディング オプションを提供し、リアルタイム更新とスムーズなスクロールに最適化されています。低遅延レンダリングにより、ライブ データや大規模データセットを含む UI 変更を瞬時に表示できます。
+
+{Platform} Data Grid の詳細に進む前に、グリッドをリモート データ サービスにバインドする設定に変更したいと思います。これは、大規模アプリケーションで一般的なシナリオです。
 
 <!-- WebComponents -->
 これを行うには、JSON 応答を受信して指定された URL からデータを取得し、それをグリッドのデータ ソースとして使用されるグリッドの `data` プロパティに割り当てます。
@@ -1110,9 +1113,10 @@ export class MyComponent implements OnInit {
 <!-- end: Angular, WebComponents, React -->
 ## 複雑なデータ バインディング
 
-`Grid` は、データ レコード内のプロパティのパスを介した複合オブジェクト (1 レベルより深いネストを含む) へのバインドをサポートします。
+複雑なデータ バインディングにより、多階層データや複雑な実務データセット、オブジェクト指向のデータ モジュールなどとシームレスに連携できます。{Platform} Data Grid を使用することで、複雑なオブジェクト (1 階層以上にネストされたデータ構造を含む) に簡単にバインド可能です。これは、データ レコード内のプロパティ パスを介して実現されます。
 
 次のデータ モデルを見てください。
+
 ```typescript
 interface AminoAcid {
     name: string;
