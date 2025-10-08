@@ -147,9 +147,9 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 **キーの組み合わせ**
 
- - <kbd>Alt + ↓</kbd> - フォーカスされたパネルを展開します。
- - <kbd>Alt + ↑</kbd> - フォーカスされたパネルを縮小します。
- - <kbd>Space</kbd> / <kbd>Enter</kbd> - フォーカスされたパネルの展開状態を切り替えます。
+ - <kbd>ALT</kbd> + <kbd>↓</kbd> - フォーカスされたパネルを展開します。
+ - <kbd>ALT</kbd> + <kbd>↑</kbd> - フォーカスされたパネルを縮小します。
+ - <kbd>SPACE</kbd> / <kbd>ENTER</kbd> - フォーカスされたパネルの展開状態を切り替えます。
 
 
 ## スタイル設定

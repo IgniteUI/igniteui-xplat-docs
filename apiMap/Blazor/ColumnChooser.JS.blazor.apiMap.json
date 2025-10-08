@@ -2,7 +2,7 @@
   {
     "originalName": "ColumnChooser",
     "originalNamespace": "Infragistics.Controls.Grids.Implementation",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "Blazor","fileName": "ColumnChooser.cs","mappedName": "IgbColumnChooser"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "BackgroundColor"}], "originalName": "BackgroundColor"},

@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in WebComponents documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "WebComponents",
-  "samplesCount": 784,
+  "samplesCount": 788,
   "samplesHost": "https://staging.infragistics.com/webcomponents-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -2037,6 +2037,9 @@
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/textarea/styling": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/text-area"
     ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/tooltip/advanced": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/tooltip"
+    ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/tooltip/overview": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/tooltip"
     ],
@@ -2051,6 +2054,15 @@
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/tooltip/triggers": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/tooltip"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/interactions/chat/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/interactivity/chat"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/interactions/chat/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/interactivity/chat"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/interactions/chat/templating": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/interactivity/chat"
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/accordion/customization": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/layouts/accordion"
@@ -2421,7 +2433,7 @@
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/_shared/toolbar"
     ]
   },
-  "topicsCount": 322,
+  "topicsCount": 323,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -3648,11 +3660,17 @@
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/textarea/styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/inputs/tooltip": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/tooltip/advanced",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/tooltip/overview",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/tooltip/placement",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/tooltip/rich",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/tooltip/styling",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/inputs/tooltip/triggers"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/interactivity/chat": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/interactions/chat/overview",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/interactions/chat/styling",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/interactions/chat/templating"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/layouts/accordion": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/accordion/customization",

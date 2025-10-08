@@ -42,8 +42,8 @@ Selection in the {Platform} data grid is enabled on a row and cell level and can
 
 `MultipleRow` includes the following functionality:
 - Click and drag to select rows
-- Shift and click to select multiple rows.
-- Shift and press the up/down arrow keys to select multiple rows.
+- <kbd>SHIFT</kbd> and click to select multiple rows.
+- <kbd>SHIFT</kbd> and press the <kbd>↑</kbd> + <kbd>↓</kbd> arrow keys to select multiple rows.
 
 Pressing the space bar toggles selection of active row via `MultipleRow` or `SingleRow`.
 
