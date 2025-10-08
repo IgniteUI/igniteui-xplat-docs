@@ -19,11 +19,11 @@ The {Platform} Spreadsheet component allows the user to configure many different
 
 ## Configuring Cell Editing
 
-When a user edits a cell value and confirms the new input, the `Spreadsheet` control has the ability to navigate to cells adjacent to the currently active cell on press of the <kbd>Enter</kbd> key, depending on the configuration of the spreadsheet.
+When a user edits a cell value and confirms the new input, the `Spreadsheet` control has the ability to navigate to cells adjacent to the currently active cell on press of the <kbd>ENTER</kbd> key, depending on the configuration of the spreadsheet.
 
-In order to enable this <kbd>Enter</kbd> key navigation, you can set the `IsEnterKeyNavigationEnabled` property to **true**. If set to false, the active cell will stay the same when pressing the <kbd>Enter</kbd> key.
+In order to enable this <kbd>ENTER</kbd> key navigation, you can set the `IsEnterKeyNavigationEnabled` property to **true**. If set to false, the active cell will stay the same when pressing the <kbd>ENTER</kbd> key.
 
-You can also configure the direction of the adjacent cell navigated to on press of the <kbd>Enter</kbd> key by setting the `EnterKeyNavigationDirection` property to `Down`, `Up`, `Left` or `Right`.
+You can also configure the direction of the adjacent cell navigated to on press of the <kbd>ENTER</kbd> key by setting the `EnterKeyNavigationDirection` property to `Down`, `Up`, `Left` or `Right`.
 
 The following code snippets demonstrate the above:
 
@@ -128,9 +128,9 @@ this.spreadsheet.areHeadersVisible = false;
 
 The `Spreadsheet` control allows you to configure navigation between a worksheet's cells by configuring whether or not the control is in "end mode." End mode is the functionality where, on press of an arrow key, the active cell will be moved from the current cell to the end of the row or column where data exists in the adjacent cells, depending on the direction of the arrow key pressed. This functionality is good for navigating to the end of large blocks of data very quickly.
 
-For example, if you are in end mode, and you click in a large 100x100 block of data, and press the `Right` arrow key, this will navigate to the right end of the row that you are in to the furthest right column with data. After this operation, the `Spreadsheet` will pop out of end mode.
+For example, if you are in end mode, and you click in a large 100x100 block of data, and press the <kbd>→</kbd> arrow key, this will navigate to the right end of the row that you are in to the furthest right column with data. After this operation, the `Spreadsheet` will pop out of end mode.
 
-End mode goes into effect at runtime when the user presses the <kbd>End</kbd> key, but it can be configured programmatically by setting the `IsInEndMode` property of the spreadsheet control.
+End mode goes into effect at runtime when the user presses the <kbd>END</kbd> key, but it can be configured programmatically by setting the `IsInEndMode` property of the spreadsheet control.
 
 The following code snippets demonstrate the above, in that the `Spreadsheet` will begin in end mode:
 
@@ -163,11 +163,11 @@ this.spreadsheet.activeWorksheet.unprotect();
 
 ## Configuring Selection
 
-The `Spreadsheet` control allows you to configure the type of selection allowed in the control then modifier keys (**Shift** or **Ctrl**) are pressed by the user. This is done by setting the `SelectionMode` property of the spreadsheet to one of the following values:
+The `Spreadsheet` control allows you to configure the type of selection allowed in the control then modifier keys (<kbd>SHIFT</kbd> or <kbd>CTRL</kbd>) are pressed by the user. This is done by setting the `SelectionMode` property of the spreadsheet to one of the following values:
 
-- `AddToSelection`: New cell ranges are added to the `SpreadsheetSelection` object's `CellRanges` collection without needing to hold down the ctrl key when dragging via the mouse and a range is added with the first arrow key navigation after entering the mode. One can enter the mode by pressing Shift+F8.
+- `AddToSelection`: New cell ranges are added to the `SpreadsheetSelection` object's `CellRanges` collection without needing to hold down the <kbd>CTRL</kbd> key when dragging via the mouse and a range is added with the first arrow key navigation after entering the mode. One can enter the mode by pressing <kbd>SHIFT</kbd> + <kbd>F8</kbd>.
 - `ExtendSelection`: The selection range in the `SpreadsheetSelection` object's `CellRanges` collection representing the active cell is updated as one uses the mouse to select a cell or navigating via the keyboard.
-- `Normal`: The selection is replaced when dragging the mouse to select a cell or range of cells. Similarly when navigating via the keyboard a new selection is created. One may add a new range by holding the Ctrl key and using the mouse and one may alter the selection range containing the active cell by holding the Shift key down while clicking with the mouse or navigating with the keyboard such as with the arrow keys.
+- `Normal`: The selection is replaced when dragging the mouse to select a cell or range of cells. Similarly when navigating via the keyboard a new selection is created. One may add a new range by holding the <kbd>CTRL</kbd> key and using the mouse and one may alter the selection range containing the active cell by holding the <kbd>SHIFT</kbd> key down while clicking with the mouse or navigating with the keyboard such as with the arrow keys.
 
 The `SpreadsheetSelection` object mentioned in the descriptions above can be obtained by using the `ActiveSelection` property of the `Spreadsheet` control.
 

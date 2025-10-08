@@ -109,7 +109,7 @@ The `Tabs` emits `Change` event when the user selects an item either by key pres
 
 If the selected tab is not specified on initial load, the first tab that is not disabled will be selected.
 
-The default behavior, which selects a tab when the user is navigating with the arrow keys, could be modified by the `Activation` property. Setting it to `Manual` will focus the next/previous tab on arrow key press, but the tab will be selected only after pressing <kbd>Space</kbd> or <kbd>Enter</kbd>
+The default behavior, which selects a tab when the user is navigating with the arrow keys, could be modified by the `Activation` property. Setting it to `Manual` will focus the next/previous tab on arrow key press, but the tab will be selected only after pressing <kbd>SPACE</kbd> or <kbd>ENTER</kbd>
 
 ### Disabled Tab
 
@@ -154,11 +154,11 @@ Scroll buttons are shown when the available space is not enough to render all {P
 
 |Keys|Description|
 |----|-----------|
-| <kbd>&larr;</kbd> | Selects previous (next in Right-to-Left mode) tab. If `Activation` is set to `Manual` only focuses the tab. Scrolls to end if on first tab.  |
-| <kbd>&rarr;</kbd> | Selects next (previous in Right-to-Left mode) tab. If `Activation` is set to `Manual` only focuses the tab. Scrolls to start if on last tab. |
-| <kbd>Home</kbd> | Selects the first tab. |
-| <kbd>End</kbd> | Selects the last tab. |
-| <kbd>Enter</kbd> / <kbd>Space</kbd> | Selects the focused tab when `Activation` is `Manual` |
+| <kbd>←</kbd> | Selects previous (next in Right-to-Left mode) tab. If `Activation` is set to `Manual` only focuses the tab. Scrolls to end if on first tab.  |
+| <kbd>→</kbd> | Selects next (previous in Right-to-Left mode) tab. If `Activation` is set to `Manual` only focuses the tab. Scrolls to start if on last tab. |
+| <kbd>HOME</kbd> | Selects the first tab. |
+| <kbd>END</kbd> | Selects the last tab. |
+| <kbd>ENTER</kbd> / <kbd>SPACE</kbd> | Selects the focused tab when `Activation` is `Manual` |
 
 ### Prefix / Suffix
 

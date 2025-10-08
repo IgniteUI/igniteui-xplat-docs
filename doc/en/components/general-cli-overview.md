@@ -79,6 +79,8 @@ For example, if you wanted to add a data grid templated component named "MyGridC
 ig add grid MyGridComponent
 ```
 
+> NOTE: Your routing file will be updated with the path to the page with the new component - in that case `/my-grid-component`. You can use it to manually navigate to the newly generated page.
+
 <!-- WebComponents -->
 Currently the CLI can be used with the following Web Components:
 

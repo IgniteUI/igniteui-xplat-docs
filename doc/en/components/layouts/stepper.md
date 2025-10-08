@@ -355,15 +355,15 @@ The {Platform} `Stepper` navigation is compliant with [W3 accessability standard
 
 **Key Combinations**
 
- - <kbd>Tab</kbd> - moves the focus to the next tabbable element
- - <kbd>Shift</kbd> + <kbd>Tab</kbd> - moves the focus to the previous tabbable element
+ - <kbd>TAB</kbd> - moves the focus to the next tabbable element
+ - <kbd>SHIFT</kbd> + <kbd>TAB</kbd> - moves the focus to the previous tabbable element
  - <kbd>↓</kbd> - moves the focus to the header of the next accessible step when the stepper is **vertically orientated**
  - <kbd>↑</kbd> - moves the focus to the header of the previous accessible step when the stepper is **vertically orientated**
  - <kbd>←</kbd> - moves the focus to the header of the previous accessible step in both orientations
  - <kbd>→</kbd> - moves the focus to the header of the next accessible step in both orientations
- - <kbd>Home</kbd> - moves the focus to the header of the FIRST enabled step in the stepper
- - <kbd>End</kbd> - moves the focus to the header of the LAST enabled step in the stepper
- - <kbd>Enter</kbd> or <kbd>Space</kbd> - activates the currently focused step
+ - <kbd>HOME</kbd> - moves the focus to the header of the FIRST enabled step in the stepper
+ - <kbd>END</kbd> - moves the focus to the header of the LAST enabled step in the stepper
+ - <kbd>ENTER</kbd> or <kbd>SPACE</kbd> - activates the currently focused step
 
 ## Styling {Platform} Stepper
 

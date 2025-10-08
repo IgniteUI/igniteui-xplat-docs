@@ -159,9 +159,9 @@ export class {ComponentName}RowDragComponent {
 
 ### Drop Area Event Handlers
 
-Once we've defined our drop-area in the template, we have to declare our handlers for the `IgxDrop`'s `Enter`, `Leave` and `Dropped` events in our component's **.ts** file.
+Once we've defined our drop-area in the template, we have to declare our handlers for the `IgxDrop`'s <kbd>ENTER</kbd>, `Leave` and `Dropped` events in our component's **.ts** file.
 
-First, let's take a look at our `Enter` and `Leave` handlers. In those methods, we just want to change the icon of the drag's *ghost* so we can indicate to the user that they are above an area that allows them to drop the row:
+First, let's take a look at our <kbd>ENTER</kbd> and `Leave` handlers. In those methods, we just want to change the icon of the drag's *ghost* so we can indicate to the user that they are above an area that allows them to drop the row:
 
 ```typescript
 export class {ComponentName}RowDragComponent {

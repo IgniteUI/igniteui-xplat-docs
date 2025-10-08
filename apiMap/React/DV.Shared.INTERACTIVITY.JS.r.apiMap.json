@@ -17,6 +17,7 @@
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "defaultPrevented"}], "originalName": "DefaultPrevented"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "keyCode"}], "originalName": "KeyCode"},
       {"names":[{"platform": "React", "mappedType": "ModifierKeys","mappedName": "modifiers"}], "originalName": "Modifiers"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "originalEvent"}], "originalName": "OriginalEvent"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "preventDefault"}], "originalName": "PreventDefault"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "shift"}], "originalName": "Shift"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "stopPropagation"}], "originalName": "StopPropagation"} ]

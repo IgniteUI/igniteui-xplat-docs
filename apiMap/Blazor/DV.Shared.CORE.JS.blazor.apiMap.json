@@ -91,6 +91,44 @@
       {"names":[{"platform": "Blazor", "mappedType": "Rect","mappedName": "OldRect"}], "originalName": "OldRect"} ]
   },
   {
+    "originalName": "IRandomnessGenerator",
+    "originalNamespace": "Infragistics",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "IRandomnessGenerator.cs","mappedName": "IRandomnessGenerator"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "next"}], "originalName": "Next"},
+      {"names":[{"platform": "Blazor", "mappedType": "number",  "mappedName": "nextDouble"}], "originalName": "NextDouble"} ]
+  },
+  {
+    "originalName": "IRandomnessSource",
+    "originalNamespace": "Infragistics",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "IRandomnessSource.cs","mappedName": "IRandomnessSource"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "RandomnessGenerator","mappedName": "getGenerator"}], "originalName": "GetGenerator"} ]
+  },
+  {
+    "originalName": "TestRandomness",
+    "originalNamespace": "Infragistics",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "TestRandomness.cs","mappedName": "TestRandomness"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Blazor", "mappedType": "RandomnessSource","mappedName": "testRandomnessSource"}], "originalName": "TestRandomnessSource"} ]
+  },
+  {
+    "originalName": "FontRegistry",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "FontRegistry.cs","mappedName": "FontRegistry"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "getFont"}], "originalName": "GetFont"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "registerFont"}], "originalName": "RegisterFont"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "removeFont"}], "originalName": "RemoveFont"},
+      {"names":[{"platform": "Blazor", "mappedType": "Dictionary","mappedName": "_fonts"}], "originalName": "_fonts"} ]
+  },
+  {
     "originalName": "SvgIconRegistry",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-core",
@@ -98,13 +136,16 @@
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "addDataURLString"}], "originalName": "AddDataURLString"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "addIconSource"}], "originalName": "AddIconSource"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "addSvgPathString"}], "originalName": "AddSvgPathString"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "addSvgPathsString"}], "originalName": "AddSvgPathsString"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getDataURLString"}], "originalName": "GetDataURLString"},
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "getIconSource"}], "originalName": "GetIconSource"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "getSvgPathString"}], "originalName": "GetSvgPathString"},
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "getSvgPathsString"}], "originalName": "GetSvgPathsString"},
       {"names":[{"platform": "Blazor", "mappedType": "Dictionary","mappedName": "_collections"}], "originalName": "_collections"},
-      {"names":[{"platform": "Blazor", "mappedType": "Dictionary","mappedName": "_dataURLs"}], "originalName": "_dataURLs"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "Dictionary","mappedName": "_dataURLs"}], "originalName": "_dataURLs"},
+      {"names":[{"platform": "Blazor", "mappedType": "Dictionary","mappedName": "_sources"}], "originalName": "_sources"} ]
   },
   {
     "originalName": "FormatSpecifier",
@@ -292,11 +333,23 @@
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "addCommandAvailabilityListener"}], "originalName": "AddCommandAvailabilityListener"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "addCommandStateChangedListener"}], "originalName": "AddCommandStateChangedListener"},
       {"names":[{"platform": "Blazor", "mappedType": "(arg1: IgbToolCommand) => void","mappedName": "commandCompleted"}], "originalName": "CommandCompleted"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "dismissContextAccessor"}], "originalName": "DismissContextAccessor"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbToolActionInfo[]","mappedName": "getDesiredToolbarActions"}], "originalName": "GetDesiredToolbarActions"},
       {"names":[{"platform": "Blazor", "mappedType": "() => void","mappedName": "invalidateActions"}], "originalName": "InvalidateActions"},
       {"names":[{"platform": "Blazor", "mappedType": "ToolCommandExecutionState","mappedName": "onToolCommandExecuting"}], "originalName": "OnToolCommandExecuting"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "provideContextAccessor"}], "originalName": "ProvideContextAccessor"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "removeCommandAvailabilityListener"}], "originalName": "RemoveCommandAvailabilityListener"},
       {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "removeCommandStateChangedListener"}], "originalName": "RemoveCommandStateChangedListener"} ]
+  },
+  {
+    "originalName": "IToolbarContextAccessor",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "IToolbarContextAccessor.cs","mappedName": "IToolbarContextAccessor"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "any",     "mappedName": "getContextValue"}], "originalName": "GetContextValue"},
+      {"names":[{"platform": "Blazor", "mappedType": "ToolbarContextAccessor","mappedName": "getInternalAccessor"}], "originalName": "GetInternalAccessor"},
+      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "setContextValue"}], "originalName": "SetContextValue"} ]
   },
   {
     "originalName": "ICommandAvailabilityListener",
@@ -323,10 +376,16 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "CommandArgument"}], "originalName": "CommandArgument"},
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "CommandArgumentValue"}], "originalName": "CommandArgumentValue"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "CommandId"}], "originalName": "CommandId"},
+      {"names":[{"platform": "Blazor", "mappedType": "IgbToolContextBindingInfo[]","mappedName": "ContextBindings"}], "originalName": "ContextBindings"},
+      {"names":[{"platform": "Blazor", "mappedType": "ToolActionInfoDensity","mappedName": "Density"}], "originalName": "Density"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "DisabledTextColor"}], "originalName": "DisabledTextColor"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Height"}], "originalName": "Height"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "IconCollectionName"}], "originalName": "IconCollectionName"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "IconFill"}], "originalName": "IconFill"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "IconHeight"}], "originalName": "IconHeight"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "IconName"}], "originalName": "IconName"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "IconStroke"}], "originalName": "IconStroke"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "IconStrokeWidth"}], "originalName": "IconStrokeWidth"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "IconViewBoxHeight"}], "originalName": "IconViewBoxHeight"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "IconViewBoxLeft"}], "originalName": "IconViewBoxLeft"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "IconViewBoxTop"}], "originalName": "IconViewBoxTop"},
@@ -339,9 +398,20 @@
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "PaddingRight"}], "originalName": "PaddingRight"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "PaddingTop"}], "originalName": "PaddingTop"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ParentId"}], "originalName": "ParentId"},
+      {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "SubPanelRowHeight"}], "originalName": "SubPanelRowHeight"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Subtitle"}], "originalName": "Subtitle"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "TextColor"}], "originalName": "TextColor"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Title"}], "originalName": "Title"} ]
+  },
+  {
+    "originalName": "ToolContextBindingInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "ToolContextBindingInfo.cs","mappedName": "IgbToolContextBindingInfo"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "ToolContextBindingMode","mappedName": "BindingMode"}], "originalName": "BindingMode"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ContextKey"}], "originalName": "ContextKey"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "PropertyName"}], "originalName": "PropertyName"} ]
   },
   {
     "originalName": "ToolActionCheckboxInfo",
@@ -364,7 +434,37 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "DataMemberPath"}], "originalName": "DataMemberPath"},
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "DataSource"}], "originalName": "ItemsSource"},
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "PrimaryKey"}], "originalName": "PrimaryKey"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectedMemberPath"}], "originalName": "SelectedMemberPath"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "SelectedMemberPath"}], "originalName": "SelectedMemberPath"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ShowSelectAll"}], "originalName": "ShowSelectAll"} ]
+  },
+  {
+    "originalName": "ToolActionComboInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "ToolActionComboInfo.cs","mappedName": "IgbToolActionComboInfo"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "DisplayMemberPath"}], "originalName": "DisplayMemberPath"},
+      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "DataSource"}], "originalName": "ItemsSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "SelectedValues"}], "originalName": "SelectedValues"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueMemberPath"}], "originalName": "ValueMemberPath"} ]
+  },
+  {
+    "originalName": "ToolActionFieldSelectorInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "ToolActionFieldSelectorInfo.cs","mappedName": "IgbToolActionFieldSelectorInfo"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "Aggregations"}], "originalName": "Aggregations"},
+      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "DataSource"}], "originalName": "DataSource"},
+      {"names":[{"platform": "Blazor", "mappedType": "ToolActionFieldSelectorInfoType","mappedName": "FieldType"}], "originalName": "FieldType"},
+      {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "Rules"}], "originalName": "Rules"},
+      {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "SelectedAggregations"}], "originalName": "SelectedAggregations"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "SingleSelection"}], "originalName": "SingleSelection"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "UpdateDataSource"}], "originalName": "UpdateDataSource"} ]
   },
   {
     "originalName": "ToolActionRadioInfo",
@@ -389,6 +489,48 @@
       {"names":[{"platform": "Blazor", "mappedType": "int",     "mappedName": "TooltipDelay"}], "originalName": "TooltipDelay"} ]
   },
   {
+    "originalName": "ToolActionButtonInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "ToolActionButtonInfo.cs","mappedName": "IgbToolActionButtonInfo"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "ToolActionButtonInfoDisplayType","mappedName": "DisplayType"}], "originalName": "DisplayType"} ]
+  },
+  {
+    "originalName": "ToolActionButtonPairInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "ToolActionButtonPairInfo.cs","mappedName": "IgbToolActionButtonPairInfo"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsToggleDisabled"}], "originalName": "IsToggleDisabled"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LeftCommandArgument"}], "originalName": "LeftCommandArgument"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LeftIconCollectionName"}], "originalName": "LeftIconCollectionName"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LeftIconFill"}], "originalName": "LeftIconFill"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LeftIconName"}], "originalName": "LeftIconName"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LeftIconStroke"}], "originalName": "LeftIconStroke"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "LeftIconStrokeWidth"}], "originalName": "LeftIconStrokeWidth"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "LeftIconViewBoxHeight"}], "originalName": "LeftIconViewBoxHeight"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "LeftIconViewBoxLeft"}], "originalName": "LeftIconViewBoxLeft"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "LeftIconViewBoxTop"}], "originalName": "LeftIconViewBoxTop"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "LeftIconViewBoxWidth"}], "originalName": "LeftIconViewBoxWidth"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LeftTitle"}], "originalName": "LeftTitle"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "RightCommandArgument"}], "originalName": "RightCommandArgument"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "RightIconCollectionName"}], "originalName": "RightIconCollectionName"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "RightIconFill"}], "originalName": "RightIconFill"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "RightIconName"}], "originalName": "RightIconName"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "RightIconStroke"}], "originalName": "RightIconStroke"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "RightIconStrokeWidth"}], "originalName": "RightIconStrokeWidth"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "RightIconViewBoxHeight"}], "originalName": "RightIconViewBoxHeight"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "RightIconViewBoxLeft"}], "originalName": "RightIconViewBoxLeft"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "RightIconViewBoxTop"}], "originalName": "RightIconViewBoxTop"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "RightIconViewBoxWidth"}], "originalName": "RightIconViewBoxWidth"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "RightTitle"}], "originalName": "RightTitle"} ]
+  },
+  {
     "originalName": "ToolActionLabelInfo",
     "originalNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
@@ -402,7 +544,17 @@
     "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
     "originalBaseTypeName": "ToolActionIconButtonInfo",
     "packageName": "igniteui-core",
-    "names":[{"platform": "Blazor","fileName": "ToolActionIconMenuInfo.cs","mappedName": "IgbToolActionIconMenuInfo"}]
+    "names":[{"platform": "Blazor","fileName": "ToolActionIconMenuInfo.cs","mappedName": "IgbToolActionIconMenuInfo"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "ShowArrowIcon"}], "originalName": "ShowArrowIcon"} ]
+  },
+  {
+    "originalName": "ToolActionSubPanelInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "ToolActionSubPanelInfo.cs","mappedName": "IgbToolActionSubPanelInfo"}]
   },
   {
     "originalName": "ToolActionNumberInputInfo",
@@ -413,6 +565,26 @@
     "names":[{"platform": "Blazor","fileName": "ToolActionNumberInputInfo.cs","mappedName": "IgbToolActionNumberInputInfo"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Value"}], "originalName": "Value"} ]
+  },
+  {
+    "originalName": "ToolActionColorEditorInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "ToolActionColorEditorInfo.cs","mappedName": "IgbToolActionColorEditorInfo"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Value"}], "originalName": "Value"} ]
+  },
+  {
+    "originalName": "ToolActionTextInputInfo",
+    "originalNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Toolbar",
+    "originalBaseTypeName": "ToolActionInfo",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "ToolActionTextInputInfo.cs","mappedName": "IgbToolActionTextInputInfo"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Value"}], "originalName": "Value"} ]
   },
   {
     "originalName": "ToolActionSeparatorInfo",

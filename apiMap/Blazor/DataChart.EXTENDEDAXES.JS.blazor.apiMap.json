@@ -23,9 +23,9 @@
     "originalName": "OthersCategoryContext",
     "originalNamespace": "Infragistics.Controls.Charts",
     "packageName": "igniteui-charts",
-    "names":[{"platform": "Blazor","fileName": "OthersCategoryContext.cs","mappedName": "OthersCategoryContext"}],
+    "names":[{"platform": "Blazor","fileName": "OthersCategoryContext.cs","mappedName": "IgbOthersCategoryContext"}],
     "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "Items"}], "originalName": "Items"} ]
   },
   {
     "originalName": "CategoryAngleAxis",
@@ -37,6 +37,10 @@
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ActualInterval"}], "originalName": "ActualInterval"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ActualMinorInterval"}], "originalName": "ActualMinorInterval"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "CompanionAxisInterval"}], "originalName": "CompanionAxisInterval"},
+      {"names":[{"platform": "Blazor", "mappedType": "AxisAngleLabelMode","mappedName": "CompanionAxisLabelMode"}], "originalName": "CompanionAxisLabelMode"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "CompanionAxisMinorInterval"}], "originalName": "CompanionAxisMinorInterval"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "CompanionAxisStartAngleOffset"}], "originalName": "CompanionAxisStartAngleOffset"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetScaledAngle"}], "originalName": "GetScaledAngle"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetUnscaledAngle"}], "originalName": "GetUnscaledAngle"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Interval"}], "originalName": "Interval"},
@@ -68,6 +72,8 @@
     "packageName": "igniteui-charts",
     "names":[{"platform": "Blazor","fileName": "NumericAngleAxis.cs","mappedName": "IgbNumericAngleAxis"}],
     "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "AxisAngleLabelMode","mappedName": "CompanionAxisLabelMode"}], "originalName": "CompanionAxisLabelMode"},
+      {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "CompanionAxisStartAngleOffset"}], "originalName": "CompanionAxisStartAngleOffset"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetScaledAngle"}], "originalName": "GetScaledAngle"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "GetUnscaledAngle"}], "originalName": "GetUnscaledAngle"},
       {"names":[{"platform": "Blazor", "mappedType": "AxisAngleLabelMode","mappedName": "LabelMode"}], "originalName": "LabelMode"},

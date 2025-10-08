@@ -1,5 +1,8 @@
 {
-  "extraFiles": ["igx-local-data-source-module.ts"],
+  "extraFiles": [
+    "igx-generic-virtual-data-source-module.ts",
+    "igx-local-data-source-module.ts"
+  ],
   "types":[
   {
     "originalName": "DataSourceLocalDataProvider",
@@ -86,6 +89,183 @@
       {"names":[{"platform": "Angular", "mappedType": "IgxSummaryDescriptionCollection","mappedName": "_summaryDescriptions"}], "originalName": "_summaryDescriptions"},
       {"names":[{"platform": "Angular", "mappedType": "DataSourceSummaryScope","mappedName": "_summaryScope"}], "originalName": "_summaryScope"},
       {"names":[{"platform": "Angular", "mappedType": "IDataSourceDataProviderUpdateNotifier","mappedName": "_updateNotifier"}], "originalName": "_updateNotifier"} ]
+  },
+  {
+    "originalName": "DataSourceGroupDescription",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeName": "DataSourceSortDescription",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "igx-data-source-group-description.ts","dynamicModuleName": "igx-data-source-group-description-dynamic-module.ts","moduleName": "igx-data-source-group-description-module.ts","mappedName": "IgxDataSourceGroupDescription"}]
+  },
+  {
+    "originalName": "DataSourceGroupDescriptionCollection",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "igx-data-source-group-description-collection.ts","mappedName": "IgxDataSourceGroupDescriptionCollection"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "add"}], "originalName": "Add"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "clear"}], "originalName": "Clear"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "indexOf"}], "originalName": "IndexOf"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "insert"}], "originalName": "Insert"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "remove"}], "originalName": "Remove"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "removeAt"}], "originalName": "RemoveAt"} ]
+  },
+  {
+    "originalName": "DataSourceSortDescription",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "igx-data-source-sort-description.ts","dynamicModuleName": "igx-data-source-sort-description-dynamic-module.ts","moduleName": "igx-data-source-sort-description-module.ts","mappedName": "IgxDataSourceSortDescription"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "equals"}], "originalName": "Equals"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "field"}], "originalName": "Field"},
+      {"names":[{"platform": "Angular", "mappedType": "ListSortDirection","mappedName": "sortDirection"}], "originalName": "SortDirection"} ]
+  },
+  {
+    "originalName": "DataSourceSortDescriptionCollection",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "igx-data-source-sort-description-collection.ts","mappedName": "IgxDataSourceSortDescriptionCollection"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "add"}], "originalName": "Add"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "clear"}], "originalName": "Clear"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "indexOf"}], "originalName": "IndexOf"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "insert"}], "originalName": "Insert"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "remove"}], "originalName": "Remove"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "removeAt"}], "originalName": "RemoveAt"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "shouldDetachOnTargetChange"}], "originalName": "ShouldDetachOnTargetChange"} ]
+  },
+  {
+    "originalName": "DataSourceSummaryDescription",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "igx-data-source-summary-description.ts","dynamicModuleName": "igx-data-source-summary-description-dynamic-module.ts","moduleName": "igx-data-source-summary-description-module.ts","mappedName": "IgxDataSourceSummaryDescription"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "alias"}], "originalName": "Alias"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "calculatorDisplayName"}], "originalName": "CalculatorDisplayName"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "equals"}], "originalName": "Equals"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "field"}], "originalName": "Field"},
+      {"names":[{"platform": "Angular", "mappedType": "DataSourceSummaryOperand","mappedName": "operand"}], "originalName": "Operand"} ]
+  },
+  {
+    "originalName": "DataSourceSummaryDescriptionCollection",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "igx-data-source-summary-description-collection.ts","mappedName": "IgxDataSourceSummaryDescriptionCollection"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "add"}], "originalName": "Add"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "clear"}], "originalName": "Clear"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "indexOf"}], "originalName": "IndexOf"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "insert"}], "originalName": "Insert"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "remove"}], "originalName": "Remove"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "removeAt"}], "originalName": "RemoveAt"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "shouldDetachOnTargetChange"}], "originalName": "ShouldDetachOnTargetChange"} ]
+  },
+  {
+    "originalName": "GenericDataSourceSchemaPropertyType",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "isEnum":true,
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "GenericDataSourceSchemaPropertyType.ts","mappedName": "GenericDataSourceSchemaPropertyType"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "GenericDataSourceSchemaPropertyType","mappedName": "BooleanValue"}], "originalName": "BooleanValue"},
+      {"names":[{"platform": "Angular", "mappedType": "GenericDataSourceSchemaPropertyType","mappedName": "DateTimeValue"}], "originalName": "DateTimeValue"},
+      {"names":[{"platform": "Angular", "mappedType": "GenericDataSourceSchemaPropertyType","mappedName": "DoubleValue"}], "originalName": "DoubleValue"},
+      {"names":[{"platform": "Angular", "mappedType": "GenericDataSourceSchemaPropertyType","mappedName": "IntValue"}], "originalName": "IntValue"},
+      {"names":[{"platform": "Angular", "mappedType": "GenericDataSourceSchemaPropertyType","mappedName": "StringValue"}], "originalName": "StringValue"} ]
+  },
+  {
+    "originalName": "GenericVirtualDataProviderWorkerSettings",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeName": "AsyncVirtualDataSourceDataProviderWorkerSettings",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "GenericVirtualDataProviderWorkerSettings.ts","mappedName": "GenericVirtualDataProviderWorkerSettings"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxFilterExpressionCollection","mappedName": "filterExpressions"}], "originalName": "FilterExpressions"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxSortDescriptionCollection","mappedName": "groupDescriptions"}], "originalName": "GroupDescriptions"},
+      {"names":[{"platform": "Angular", "mappedType": "(requestId: number, pageIndex: number, pageSize: number, completionSource: TaskCompletionSource) => void","mappedName": "pageRequested"}], "originalName": "PageRequested"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxSortDescriptionCollection","mappedName": "sortDescriptions"}], "originalName": "SortDescriptions"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxSummaryDescriptionCollection","mappedName": "summaryDescriptions"}], "originalName": "SummaryDescriptions"},
+      {"names":[{"platform": "Angular", "mappedType": "DataSourceSummaryScope","mappedName": "summaryScope"}], "originalName": "SummaryScope"} ]
+  },
+  {
+    "originalName": "GenericVirtualDataProviderWorker",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeName": "AsyncVirtualDataSourceProviderWorker",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "GenericVirtualDataProviderWorker.ts","mappedName": "GenericVirtualDataProviderWorker"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxFilterExpressionCollection","mappedName": "filterExpressions"}], "originalName": "FilterExpressions"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "finishProcessingCompletedTask"}], "originalName": "FinishProcessingCompletedTask"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxSortDescriptionCollection","mappedName": "groupDescriptions"}], "originalName": "GroupDescriptions"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "makeTaskForRequest"}], "originalName": "MakeTaskForRequest"},
+      {"names":[{"platform": "Angular", "mappedType": "(requestId: number, pageIndex: number, pageSize: number, completionSource: TaskCompletionSource) => void","mappedName": "pageRequested"}], "originalName": "PageRequested"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "processCompletedTask"}], "originalName": "ProcessCompletedTask"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxSortDescriptionCollection","mappedName": "sortDescriptions"}], "originalName": "SortDescriptions"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxSummaryDescriptionCollection","mappedName": "summaryDescriptions"}], "originalName": "SummaryDescriptions"},
+      {"names":[{"platform": "Angular", "mappedType": "DataSourceSummaryScope","mappedName": "summaryScope"}], "originalName": "SummaryScope"},
+      {"names":[{"platform": "Angular", "mappedType": "ISectionInformation[]","mappedName": "_groupInformation"}], "originalName": "_groupInformation"},
+      {"names":[{"platform": "Angular", "mappedType": "ISummaryResult[]","mappedName": "_summaryInformation"}], "originalName": "_summaryInformation"} ]
+  },
+  {
+    "originalName": "BaseGenericDataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "System.Windows",
+    "originalBaseTypeName": "DependencyObject",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "igx-base-generic-data-source.ts","mappedName": "IgxBaseGenericDataSource"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "IDataSourceExecutionContext","mappedName": "executionContext"}], "originalName": "ExecutionContext"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxFilterExpressionCollection","mappedName": "filterExpressions"}], "originalName": "FilterExpressions"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxDataSourceGroupDescriptionCollection","mappedName": "groupDescriptions"}], "originalName": "GroupDescriptions"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "queueAutoRefresh"}], "originalName": "QueueAutoRefresh"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxDataSourceSortDescriptionCollection","mappedName": "sortDescriptions"}], "originalName": "SortDescriptions"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxDataSourceSummaryDescriptionCollection","mappedName": "summaryDescriptions"}], "originalName": "SummaryDescriptions"} ]
+  },
+  {
+    "originalName": "GenericVirtualDataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeName": "BaseGenericDataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "igx-generic-virtual-data-source.ts","mappedName": "IgxGenericVirtualDataSource"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "addSchemaProperty"}], "originalName": "AddSchemaProperty"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "addSummaryDate"}], "originalName": "AddSummaryDate"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "addSummaryDouble"}], "originalName": "AddSummaryDouble"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "addSummaryInt"}], "originalName": "AddSummaryInt"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "addSummaryString"}], "originalName": "AddSummaryString"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "fillColumnBool"}], "originalName": "FillColumnBool"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "fillColumnDate"}], "originalName": "FillColumnDate"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "fillColumnDouble"}], "originalName": "FillColumnDouble"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "fillColumnInt"}], "originalName": "FillColumnInt"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "fillColumnString"}], "originalName": "FillColumnString"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "fillCount"}], "originalName": "FillCount"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "fillGroupEnd"}], "originalName": "FillGroupEnd"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "fillGroupStart"}], "originalName": "FillGroupStart"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "fillGroupValueDate"}], "originalName": "FillGroupValueDate"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "fillGroupValueDouble"}], "originalName": "FillGroupValueDouble"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "fillGroupValueInt"}], "originalName": "FillGroupValueInt"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "fillGroupValueString"}], "originalName": "FillGroupValueString"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "fillPageEnd"}], "originalName": "FillPageEnd"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "fillPageStart"}], "originalName": "FillPageStart"} ]
+  },
+  {
+    "originalName": "PageRequestedEventArgs",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "igx-page-requested-event-args.ts","mappedName": "IgxPageRequestedEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "dataSourceId"}], "originalName": "DataSourceId"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isSchemaRequest"}], "originalName": "IsSchemaRequest"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "pageIndex"}], "originalName": "PageIndex"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "pageSize"}], "originalName": "PageSize"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "requestId"}], "originalName": "RequestId"} ]
   },
   {
     "originalName": "FilterExpressionParsingHelper",
@@ -325,6 +505,16 @@
       {"names":[{"platform": "Angular", "mappedType": "() => void","mappedName": "run"}], "originalName": "Run"} ]
   },
   {
+    "originalName": "TaskCompletionSource",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "AsyncVirtualDataTaskCompletionSource.ts","mappedName": "AsyncVirtualDataTaskCompletionSource"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "setResult"}], "originalName": "SetResult"},
+      {"names":[{"platform": "Angular", "mappedType": "Task","mappedName": "task"}], "originalName": "Task"} ]
+  },
+  {
     "originalName": "AsyncVirtualDataSourceDataProviderWorkerSettings",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "packageName": "igniteui-core",
@@ -361,10 +551,12 @@
     "names":[{"platform": "Angular","fileName": "AsyncDataSourcePageRequest.ts","mappedName": "AsyncDataSourcePageRequest"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "id"}], "originalName": "Id"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isDone"}], "originalName": "IsDone"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "retryDelay"}], "originalName": "RetryDelay"},
       {"names":[{"platform": "Angular", "mappedType": "AsyncDataSourcePageTaskHolder","mappedName": "taskHolder"}], "originalName": "TaskHolder"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "_id"}], "originalName": "_id"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "_index"}], "originalName": "_index"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "_isDone"}], "originalName": "_isDone"},
       {"names":[{"platform": "Angular", "mappedType": "AsyncDataSourcePageTaskHolder","mappedName": "_pageTask"}], "originalName": "_pageTask"},
@@ -438,6 +630,7 @@
       {"names":[{"platform": "Angular", "mappedType": "FilterExpression","mappedName": "day"}], "originalName": "Day"},
       {"names":[{"platform": "Angular", "mappedType": "FilterExpression","mappedName": "divide"}], "originalName": "Divide"},
       {"names":[{"platform": "Angular", "mappedType": "FilterExpression","mappedName": "endsWith"}], "originalName": "EndsWith"},
+      {"names":[{"platform": "Angular", "mappedType": "FilterExpression","mappedName": "env"}], "originalName": "Env"},
       {"names":[{"platform": "Angular", "mappedType": "FilterExpression","mappedName": "equal"}], "originalName": "Equal"},
       {"names":[{"platform": "Angular", "mappedType": "FilterExpression","mappedName": "floor"}], "originalName": "Floor"},
       {"names":[{"platform": "Angular", "mappedType": "FilterExpression","mappedName": "greaterThan"}], "originalName": "GreaterThan"},
@@ -474,12 +667,23 @@
       {"names":[{"platform": "Angular", "mappedType": "Date","mappedName": "_todayOverride"}], "originalName": "_todayOverride"} ]
   },
   {
+    "originalName": "IFilterExpressionEnvironment",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "IFilterExpressionEnvironment.ts","mappedName": "IFilterExpressionEnvironment"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "getVariableValue"}], "originalName": "GetVariableValue"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "hasVariable"}], "originalName": "HasVariable"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "setVariableValue"}], "originalName": "SetVariableValue"} ]
+  },
+  {
     "originalName": "IFilterExpression",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "packageName": "igniteui-core",
     "names":[{"platform": "Angular","fileName": "IFilterExpression.ts","mappedName": "IFilterExpression"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "evaluateWithEnvironment"}], "originalName": "EvaluateWithEnvironment"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isAutoGenerated"}], "originalName": "IsAutoGenerated"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isFunction"}], "originalName": "IsFunction"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isLiteral"}], "originalName": "IsLiteral"},
@@ -489,6 +693,7 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isWrapper"}], "originalName": "IsWrapper"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "markAutoGenerated"}], "originalName": "MarkAutoGenerated"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "match"}], "originalName": "Match"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "matchWithEnvironment"}], "originalName": "MatchWithEnvironment"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "precedence"}], "originalName": "Precedence"} ]
   },
   {
@@ -529,6 +734,18 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "propertyReference"}], "originalName": "PropertyReference"} ]
   },
   {
+    "originalName": "FilterExpressionEnvironment",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "FilterExpressionEnvironment.ts","mappedName": "FilterExpressionEnvironment"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "getVariableValue"}], "originalName": "GetVariableValue"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "hasVariable"}], "originalName": "HasVariable"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "setVariableValue"}], "originalName": "SetVariableValue"},
+      {"names":[{"platform": "Angular", "mappedType": "Dictionary","mappedName": "_environemntValues"}], "originalName": "_environemntValues"} ]
+  },
+  {
     "originalName": "FilterExpression",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "packageName": "igniteui-core",
@@ -547,7 +764,9 @@
       {"names":[{"platform": "Angular", "mappedType": "FilterExpression","mappedName": "divide"}], "originalName": "Divide"},
       {"names":[{"platform": "Angular", "mappedType": "FilterExpression","mappedName": "divideBy"}], "originalName": "DivideBy"},
       {"names":[{"platform": "Angular", "mappedType": "FilterExpression","mappedName": "endsWith"}], "originalName": "EndsWith"},
+      {"names":[{"platform": "Angular", "mappedType": "FilterExpression","mappedName": "env"}], "originalName": "Env"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "evaluateWithEnvironment"}], "originalName": "EvaluateWithEnvironment"},
       {"names":[{"platform": "Angular", "mappedType": "FilterExpression","mappedName": "floor"}], "originalName": "Floor"},
       {"names":[{"platform": "Angular", "mappedType": "FilterExpression","mappedName": "group"}], "originalName": "Group"},
       {"names":[{"platform": "Angular", "mappedType": "FilterExpression","mappedName": "hour"}], "originalName": "Hour"},
@@ -589,6 +808,7 @@
       {"names":[{"platform": "Angular", "mappedType": "FilterExpression","mappedName": "length"}], "originalName": "Length"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "markAutoGenerated"}], "originalName": "MarkAutoGenerated"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "match"}], "originalName": "Match"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "matchWithEnvironment"}], "originalName": "MatchWithEnvironment"},
       {"names":[{"platform": "Angular", "mappedType": "FilterExpression","mappedName": "minus"}], "originalName": "Minus"},
       {"names":[{"platform": "Angular", "mappedType": "FilterExpression","mappedName": "minute"}], "originalName": "Minute"},
       {"names":[{"platform": "Angular", "mappedType": "FilterExpression","mappedName": "modulo"}], "originalName": "Modulo"},
@@ -626,10 +846,10 @@
     "names":[{"platform": "Angular","fileName": "OperationFilterExpression.ts","mappedName": "OperationFilterExpression"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
-      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "evaluate"}], "originalName": "Evaluate"},
-      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "evaluateArithmetic"}], "originalName": "EvaluateArithmetic"},
-      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "evaluateComparison"}], "originalName": "EvaluateComparison"},
-      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "evaluateLogical"}], "originalName": "EvaluateLogical"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "evaluateArithmeticWithEnvironment"}], "originalName": "EvaluateArithmeticWithEnvironment"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "evaluateComparisonWithEnvironment"}], "originalName": "EvaluateComparisonWithEnvironment"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "evaluateLogicalWithEnvironment"}], "originalName": "EvaluateLogicalWithEnvironment"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "evaluateWithEnvironment"}], "originalName": "EvaluateWithEnvironment"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "hasLeft"}], "originalName": "HasLeft"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "hasOperator"}], "originalName": "HasOperator"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "hasPropertyName"}], "originalName": "HasPropertyName"},
@@ -661,7 +881,7 @@
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "coerceType"}], "originalName": "CoerceType"},
-      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "evaluateWithEnvironment"}], "originalName": "EvaluateWithEnvironment"},
       {"names":[{"platform": "Angular", "mappedType": "IgxFilterExpressionCollection","mappedName": "functionArguments"}], "originalName": "FunctionArguments"},
       {"names":[{"platform": "Angular", "mappedType": "FilterExpressionFunctionType","mappedName": "functionType"}], "originalName": "FunctionType"},
       {"names":[{"platform": "Angular", "mappedType": "Type","mappedName": "getLiteralTargetType"}], "originalName": "GetLiteralTargetType"},
@@ -683,7 +903,7 @@
     "names":[{"platform": "Angular","fileName": "PropertyReferenceFilterExpression.ts","mappedName": "PropertyReferenceFilterExpression"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
-      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "evaluateWithEnvironment"}], "originalName": "EvaluateWithEnvironment"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isPropertyReference"}], "originalName": "IsPropertyReference"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "precedence"}], "originalName": "Precedence"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "propertyReference"}], "originalName": "PropertyReference"},
@@ -699,7 +919,7 @@
     "names":[{"platform": "Angular","fileName": "LiteralFilterExpression.ts","mappedName": "LiteralFilterExpression"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
-      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "evaluateWithEnvironment"}], "originalName": "EvaluateWithEnvironment"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isLiteral"}], "originalName": "IsLiteral"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isNull"}], "originalName": "IsNull"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "leaveUnquoted"}], "originalName": "LeaveUnquoted"},
@@ -720,7 +940,7 @@
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init1"}], "originalName": ".ctor"},
       {"names":[{"platform": "Angular", "mappedType": "IFilterExpression","mappedName": "build"}], "originalName": "Build"},
-      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "evaluate"}], "originalName": "Evaluate"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "evaluateWithEnvironment"}], "originalName": "EvaluateWithEnvironment"},
       {"names":[{"platform": "Angular", "mappedType": "FilterExpression","mappedName": "expression"}], "originalName": "Expression"},
       {"names":[{"platform": "Angular", "mappedType": "FilterFactory","mappedName": "factory"}], "originalName": "Factory"},
       {"names":[{"platform": "Angular", "mappedType": "FilterExpressionWrapperType","mappedName": "getWrapperType"}], "originalName": "GetWrapperType"},
@@ -1017,6 +1237,7 @@
       {"names":[{"platform": "Angular", "mappedType": "FilterExpressionFunctionType","mappedName": "Date"}], "originalName": "Date"},
       {"names":[{"platform": "Angular", "mappedType": "FilterExpressionFunctionType","mappedName": "Day"}], "originalName": "Day"},
       {"names":[{"platform": "Angular", "mappedType": "FilterExpressionFunctionType","mappedName": "EndsWith"}], "originalName": "EndsWith"},
+      {"names":[{"platform": "Angular", "mappedType": "FilterExpressionFunctionType","mappedName": "Env"}], "originalName": "Env"},
       {"names":[{"platform": "Angular", "mappedType": "FilterExpressionFunctionType","mappedName": "Floor"}], "originalName": "Floor"},
       {"names":[{"platform": "Angular", "mappedType": "FilterExpressionFunctionType","mappedName": "Hour"}], "originalName": "Hour"},
       {"names":[{"platform": "Angular", "mappedType": "FilterExpressionFunctionType","mappedName": "IndexOf"}], "originalName": "IndexOf"},
@@ -1223,6 +1444,22 @@
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "rowIndex"}], "originalName": "RowIndex"} ]
   },
   {
+    "originalName": "DataSourceRootSummariesChangedEventArgs",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "System",
+    "originalBaseTypeName": "EventArgs",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "igx-data-source-root-summaries-changed-event-args.ts","mappedName": "IgxDataSourceRootSummariesChangedEventArgs"}]
+  },
+  {
+    "originalName": "DataSourcePropertiesRequestedChangedEventArgs",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "System",
+    "originalBaseTypeName": "EventArgs",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "igx-data-source-properties-requested-changed-event-args.ts","mappedName": "IgxDataSourcePropertiesRequestedChangedEventArgs"}]
+  },
+  {
     "originalName": "DataSourceDataProviderSchemaChangedEventArgs",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "System",
@@ -1297,6 +1534,24 @@
       {"names":[{"platform": "Angular", "mappedType": "ISummaryResult[]","mappedName": "summaryResults"}], "originalName": "SummaryResults"} ]
   },
   {
+    "originalName": "DefaultSectionInformation",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Angular","fileName": "DefaultSectionInformation.ts","mappedName": "DefaultSectionInformation"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "endIndex"}], "originalName": "EndIndex"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "groupKeyProperties"}], "originalName": "GroupKeyProperties"},
+      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "groupKeyValues"}], "originalName": "GroupKeyValues"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "startIndex"}], "originalName": "StartIndex"},
+      {"names":[{"platform": "Angular", "mappedType": "ISummaryResult[]","mappedName": "summaryResults"}], "originalName": "SummaryResults"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "_endIndex"}], "originalName": "_endIndex"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "_groupKeyProperties"}], "originalName": "_groupKeyProperties"},
+      {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "_groupKeyValues"}], "originalName": "_groupKeyValues"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "_startIndex"}], "originalName": "_startIndex"},
+      {"names":[{"platform": "Angular", "mappedType": "ISummaryResult[]","mappedName": "_summaryResults"}], "originalName": "_summaryResults"} ]
+  },
+  {
     "originalName": "IODataLiteralEmitter",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "packageName": "igniteui-core",
@@ -1363,6 +1618,7 @@
       {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "groupKey"}], "originalName": "GroupKey"},
       {"names":[{"platform": "Angular", "mappedType": "DataSourceSummaryOperand","mappedName": "operand"}], "originalName": "Operand"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "propertyName"}], "originalName": "PropertyName"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "shouldDisplay"}], "originalName": "ShouldDisplay"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "summaryIndex"}], "originalName": "SummaryIndex"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "value"}], "originalName": "Value"} ]
   },
@@ -1376,11 +1632,13 @@
       {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "groupKey"}], "originalName": "GroupKey"},
       {"names":[{"platform": "Angular", "mappedType": "DataSourceSummaryOperand","mappedName": "operand"}], "originalName": "Operand"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "propertyName"}], "originalName": "PropertyName"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "shouldDisplay"}], "originalName": "ShouldDisplay"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "summaryIndex"}], "originalName": "SummaryIndex"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "value"}], "originalName": "Value"},
       {"names":[{"platform": "Angular", "mappedType": "any[]",   "mappedName": "_groupKey"}], "originalName": "_groupKey"},
       {"names":[{"platform": "Angular", "mappedType": "DataSourceSummaryOperand","mappedName": "_operand"}], "originalName": "_operand"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "_propertyName"}], "originalName": "_propertyName"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "_shouldDisplay"}], "originalName": "_shouldDisplay"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "_summaryIndex"}], "originalName": "_summaryIndex"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "_value"}], "originalName": "_value"} ]
   },
@@ -1491,6 +1749,7 @@
       {"names":[{"platform": "Angular", "mappedType": "ISummaryResult","mappedName": "endCalculation"}], "originalName": "EndCalculation"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "getExpectedTypeFromDouble"}], "originalName": "GetExpectedTypeFromDouble"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "getItemAsDouble"}], "originalName": "GetItemAsDouble"},
+      {"names":[{"platform": "Angular", "mappedType": "ISummaryResult","mappedName": "getResults"}], "originalName": "GetResults"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "getValueAsDouble"}], "originalName": "GetValueAsDouble"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isSummaryDirty"}], "originalName": "IsSummaryDirty"},
       {"names":[{"platform": "Angular", "mappedType": "ISummaryResult","mappedName": "itemAdded"}], "originalName": "ItemAdded"},
@@ -1498,6 +1757,7 @@
       {"names":[{"platform": "Angular", "mappedType": "DataSourceSummaryOperand","mappedName": "operand"}], "originalName": "Operand"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "propertyName"}], "originalName": "PropertyName"},
       {"names":[{"platform": "Angular", "mappedType": "DataSourceSchemaPropertyType","mappedName": "propertyType"}], "originalName": "PropertyType"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "shouldDisplay"}], "originalName": "ShouldDisplay"},
       {"names":[{"platform": "Angular", "mappedType": "DataSourceSummaryOperand","mappedName": "_operand"}], "originalName": "_operand"} ]
   },
   {
@@ -1534,10 +1794,12 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "propertyName"}], "originalName": "PropertyName"},
       {"names":[{"platform": "Angular", "mappedType": "(sender: any, args: IgxProvideCalculatorEventArgs) => void","mappedName": "provideCalculator"}], "originalName": "ProvideCalculator"},
       {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "seal"}], "originalName": "Seal"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "shouldDisplay"}], "originalName": "ShouldDisplay"},
       {"names":[{"platform": "Angular", "mappedType": "SummaryCalculator","mappedName": "_calculator"}], "originalName": "_calculator"},
       {"names":[{"platform": "Angular", "mappedType": "DataSourceSummaryOperand","mappedName": "_operand"}], "originalName": "_operand"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "_propertyName"}], "originalName": "_propertyName"},
-      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "_sealed"}], "originalName": "_sealed"} ]
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "_sealed"}], "originalName": "_sealed"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "_shouldDisplay"}], "originalName": "_shouldDisplay"} ]
   },
   {
     "originalName": "ProvideCalculatorEventArgs",
