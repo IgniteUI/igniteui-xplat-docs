@@ -1799,7 +1799,7 @@
     "href": "inputs/ripple.md"
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "Tooltip",
     "href": "inputs/tooltip.md",
     "status": "new"
