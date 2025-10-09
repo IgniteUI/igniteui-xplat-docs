@@ -1043,7 +1043,9 @@
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "mask"}], "originalName": "Mask"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"},
-      {"names":[{"platform": "WebComponents", "mappedType": "MaskInputValueMode","mappedName": "valueMode"}], "originalName": "ValueMode"} ]
+      {"names":[{"platform": "WebComponents", "mappedType": "MaskInputValueMode","mappedName": "valueMode"}], "originalName": "ValueMode"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "prompt"}], "originalName": "Prompt"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "placeholder"}], "originalName": "Placeholder"} ]
   },
   {
     "originalName": "Tree",
