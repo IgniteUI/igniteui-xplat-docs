@@ -1560,7 +1560,7 @@
     "status": ""
   },
    {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "デバイダー",
     "href": "layouts/divider.md"
   },

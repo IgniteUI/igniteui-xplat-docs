@@ -159,7 +159,7 @@
     "names":[{"platform": "Blazor","fileName": "Tooltip.cs","mappedName": "IgbTooltip"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Anchor"}], "originalName": "Anchor"},
-      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "DisableArrow"}], "originalName": "DisableArrow"},
+      {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "DisableArrow"}], "originalName": "WithArrow"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "Hide"}], "originalName": "Hide"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "HideDelay"}], "originalName": "HideDelay"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "HideTriggers"}], "originalName": "HideTriggers"},
