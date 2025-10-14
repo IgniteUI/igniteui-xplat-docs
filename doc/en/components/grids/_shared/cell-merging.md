@@ -166,5 +166,13 @@ Due to the specific behavior of merged cells it has to be noted how exactly it t
 * `{ComponentName}`
 
 ## Additional Resources
-<!-- * [{ComponentName} Overview](data-grid.md)
- -->
+<!-- ComponentStart: Grid -->
+* [Ignite UI for React](../components/general-getting-started.md)
+* [{ComponentName} Overview](../components/grids/data-grid.md)
+<!-- ComponentEnd: Grid -->
+<!-- ComponentStart: TreeGrid -->
+* [{ComponentName} Overview](overview.md)
+<!-- ComponentEnd: TreeGrid -->
+<!-- ComponentStart: HierarchicalGrid -->
+* [{ComponentName} Overview](overview.md)
+<!-- ComponentEnd: HierarchicalGrid -->
