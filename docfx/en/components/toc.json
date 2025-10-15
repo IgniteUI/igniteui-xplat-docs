@@ -413,7 +413,7 @@
         "href": "grids/hierarchical-grid/column-moving.md"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Column Pinning",
         "href": "grids/hierarchical-grid/column-pinning.md"
       },
@@ -650,7 +650,7 @@
         "href": "grids/tree-grid/column-moving.md"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Column Pinning",
         "href": "grids/tree-grid/column-pinning.md",
         "status": ["NEW_REACT"]
