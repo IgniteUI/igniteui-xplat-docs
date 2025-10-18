@@ -68,12 +68,26 @@ await builder.Build().RunAsync();
 @using IgniteUI.Blazor.Controls
 ```
 
-3 - Add the Style Sheet in the **<head\>** element of the **wwwroot/index.html** file:
+3 - Add the Style Sheet in the **<head\>** element of the **Components/App.razor** file in the server project:
 
 ```razor
 <head>
-    <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
-</head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+
+    <link rel="stylesheet" href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" />
+```
+
+For .NET 9 or later applications, it is recommended to use the **Assets** collection property.
+
+```razor
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+
+    <link rel="stylesheet" href="@Assets["_content/IgniteUI.Blazor/themes/light/bootstrap.css"]" />
 ```
 
 4 - Add Script Reference to the **Components/App.razor** file:
