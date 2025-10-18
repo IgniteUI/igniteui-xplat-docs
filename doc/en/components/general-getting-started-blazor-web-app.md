@@ -29,7 +29,7 @@ Specify additional project options, and click **Create**
 
 Ignite UI for Blazor is delivered via NuGet packages. To use the Ignite UI for Blazor components in your Blazor applications, you must first install the appropriate NuGet packages.
 
-In Visual Studio, open the NuGet package manager by selecting **Tools** → **NuGet Package Manager** → **Manage NuGet Packages for Solution**. Search for and install the **IgniteUI.Blazor** NuGet package.
+In Visual Studio, open the NuGet package manager by selecting **Tools** → **NuGet Package Manager** → **Manage NuGet Packages for Solution**. Select all target projects for package installation, then search for and install the **IgniteUI.Blazor** NuGet package.
 
 For more information on installing Ignite UI for Blazor using NuGet, read the [Installing Ignite UI for Blazor](general-installing-blazor.md) topic.
 
@@ -74,7 +74,7 @@ await builder.Build().RunAsync();
 </head>
 ```
 
-4 - Add Script Reference to the **wwwroot/index.html** file:
+4 - Add Script Reference to the **Components/App.razor** file:
 
 ```razor
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
