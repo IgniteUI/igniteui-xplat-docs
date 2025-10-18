@@ -37,7 +37,7 @@ For more information on installing Ignite UI for Blazor using NuGet, read the [I
 
 ### .NET 8 and Later Applications
 
-1 - Open the shared **Program.cs** file and register the Ignite UI for Blazor Service by calling **builder.Services.AddIgniteUIBlazor** function:
+1 - Open the server's **Program.cs** file and register the Ignite UI for Blazor Service by calling **builder.Services.AddIgniteUIBlazor** function:
 
 ```razor
 var builder = WebApplication.CreateBuilder(args);
@@ -62,7 +62,7 @@ builder.Services.AddIgniteUIBlazor();
 await builder.Build().RunAsync();
 ```
 
-2 - Add the **IgniteUI.Blazor.Controls** namespace in the **_Imports.razor** file:
+2 - Add the **IgniteUI.Blazor.Controls** namespace in the **_Imports.razor** files in both the client and server projects:
 
 ```razor
 @using IgniteUI.Blazor.Controls
