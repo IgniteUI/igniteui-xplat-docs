@@ -60,7 +60,7 @@ builder.Services.AddIgniteUIBlazor();
 await builder.Build().RunAsync();
 ```
 
-2 - Add the **IgniteUI.Blazor.Controls** namespace in the **_Imports.razor** file:
+2 - Add the **IgniteUI.Blazor.Controls** namespace in the **_Imports.razor** files in both the client and server projects:
 
 ```razor
 @using IgniteUI.Blazor.Controls
