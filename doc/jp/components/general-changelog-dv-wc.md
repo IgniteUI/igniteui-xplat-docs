@@ -13,11 +13,103 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
-### {PackageMaps} (地理マップ)
+### {PackageMaps}
 
-- 新しい [Azure Maps](geo-map-display-azure-imagery.md)。これは、Infragistics Geographic Map 向けに Microsoft® が提供する新しい地理画像マッピング サービスです。
+#### <label>PREVIEW</label> Azure マップ画像のサポート
+
+`IgcGeographicMap` は、 Azure ベースのマップ画像をサポートし、開発者は複数のアプリケーション タイプにわたって詳細かつ動的なマップを表示できるようになりました。複数のマップ レイヤーを組み合わせて地理データを視覚化し、インタラクティブなマッピング エクスペリエンスを簡単に作成できます。
+
+注: Bing マップ画像のサポートは段階的に廃止されます。既存のエンタープライズ キーは引き続き Bing Maps にアクセスするために利用できるため、Azure Maps へ移行する間も現在のアプリケーションをそのまま利用可能です。
+
+公開されている Azure Maps の一部は[こちら](https://azure.microsoft.com/ja-jp/products/azure-maps)をご覧ください。
+
+### {PackageCharts}
+
+#### <label>PREVIEW</label> 新しい軸ラベル イベント
+
+軸ラベルに対するさまざまな操作を検出できるように、次のイベントが `IgcDataChart` に追加されました。
+
+- `LabelMouseDown`
+- `LabelMouseUp`
+- `LabelMouseEnter`
+- `LabelMouseLeave`
+- `LabelMouseMove`
+- `LabelMouseClick`
+
+#### <label>PREVIEW</label> 対応軸
+
+X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸を簡単に複製できるようになりました。`CompanionAxisEnabled` プロパティを有効にすると、複製された軸はチャートの反対側に配置され、そこから各軸プロパティを設定できます。
+
+#### <label>PREVIEW</label> RadialPieSeries インセット アウトライン
+
+`RadialPieSeries` のアウトライン レンダリング方法を制御するために `UseInsetOutlines` プロパティが追加されました。**true** に設定すると、アウトラインがスライス形状の内側に描画され、**false** (既定値) に設定すると、アウトラインはスライス形状の端に半分内側・半分外側で描画されます。
+
+**重大な変更**
+
+- `ChartMouseEventArgs` クラスの `PlotAreaPosition` プロパティと `ChartPosition` プロパティが逆になっている問題が修正されました。これにより、`PlotAreaPosition` と `ChartPosition` が返す値が変更されます。
+
+### {PackageGrids}
+
+#### <label>PREVIEW</label> セル サフィックス コンテンツ
+
+セル内のサフィックス コンテンツのサポートが追加されました。これにより、セル値の末尾にテキストやアイコンを追加してスタイルを設定できるようになりました。セル サフィックス コンテンツに追加されたプロパティの完全なリストは以下に示されており、`DataGridColumn` および `CellInfo` クラスで使用できます。
+
+- `SuffixText`
+- `SuffixTextColor`
+- `SuffixTextFont`
+- `SuffixIconName`
+- `SuffixIconCollectionName`
+- `SuffixIconStroke`
+- `SuffixIconFill`
+- `SuffixIconViewBoxLeft`
+- `SuffixIconViewBoxTop`
+- `SuffixIconViewBoxWidth`
+- `SuffixIconViewBoxHeight`
+- `TextDecoration`
+
+アイコンに使用できる最大サイズは 24 x 24 であることに注意してください。これより大きいまたは小さいアイコンを提供することもできますが、アイコンが完全に表示されるように 24x24 のスペースに収まるように適切に拡大縮小するには、ビューボックス設定を構成する必要があります。
+
+
+### バグ修正
+
+| バグ番号 | コントロール | 説明 |
+|------------|---------|-------------|
+|27304|IgcDataChart|ズーム長方形が背景長方形と同じ位置に配置されない。|
+|30600|IgcDoughnutChart|チャートやシリーズに textStyle プロパティが存在しない (円チャートにはある)。|
+|31624|IgcCategoryChart|IgcCategoryChart を含むウィンドウをリサイズすると、チャートがシリーズをレンダリングできなくなる。|
+|33861|Excel Library|折れ線チャートを追加すると、ドイツ語カルチャで Excel ファイルが破損する。|
+|37930|IgcDataChart|Data Annotation Overlay のテキスト色が機能しない。|
+|38231|IgcGrid|非ピン固定列は、非表示が存在する場合に元の位置に戻らない。|
 
 ### 機能拡張
+
+#### IgcBulletGraph
+
+- <label>PREVIEW</label> 新しい `LabelsVisible` プロパティが追加されました。
+
+#### チャート
+
+- DataToolTipLayer、ItemToolTipLayer、CategoryToolTipLayer にスタイル設定用の新しいプロパティが追加されました: `ToolTipBackground`、`ToolTipBorderBrush`、および `ToolTipBorderThickness`。
+
+- DataLegend にスタイル設定用の新しいプロパティが追加されました: `ContentBackground`、`ContentBorderBrush`、および `ContentBorderThickness`。`ContentBorderBrush` と `ContentBorderThickness` はそれぞれ既定で transparent と 0 に設定されているため、境界線を表示するにはこれらのプロパティを設定する必要があります。
+
+- マウスのワールド相対位置を提供する `WorldPosition` という新しいプロパティが `ChartMouseEventArgs` に追加されました。この位置は、軸空間内の X 軸と Y 軸の両方に対して 0 から 1 の間の値になります。
+
+- `SeriesViewer` と `DomainChart` に `HighlightingFadeOpacity` が追加されました。ハイライト表示されたシリーズに適用される不透明度を設定できます。
+
+- ドメイン チャートの `CalloutLabelUpdating` イベントを公開しました。
+
+#### IgcDataGrid
+
+-  DataGrid に新しいプロパティ `stopPropagation` が追加されました。これにより、マウス イベントが親要素へバブリングするのを防止できます。
+
+#### IgcLinearGauge
+
+- <label>PREVIEW</label> 新しい `LabelsVisible` プロパティが追加されました。
+
+## **{PackageVerChanges-25-1-AUG}**
+
+#### 機能拡張
 
 - フォームに関連付けられたカスタム要素は、`:state()` CSS セレクターを使用してスタイル設定するための **ig-invalid** カスタム状態を公開するようになりました。
   [詳細はこちらをご参照ください](https://developer.mozilla.org/ja/docs/Web/CSS/:state)
@@ -52,7 +144,7 @@ _language: ja
 
 ## **{PackageVerChanges-25-1-JUL-2}**
 
-- 新しいコンポーネント - Date Range Picker (日付範囲ピッカー)
+- <label>NEW</label> コンポーネント - Date Range Picker (日付範囲ピッカー)
 
 ### 重大な変更
 
@@ -90,9 +182,9 @@ _language: ja
 |36448|IgcRadialGauge|ラジアル ラベルの書式設定プロパティ (例: Title、SubTitles) が機能しない。|
 
 
-### {PackageCharts} (チャート)
+### {PackageCharts}
 
-- 軸ラベルに使用できる `MaximumExtent` および `MaximumExtentPercentage` プロパティを追加しました。
+- 軸ラベルに使用できる <label>NEW</label> `MaximumExtent` および `MaximumExtentPercentage` プロパティを追加しました。
 
 ## **{PackageVerChanges-25-1-JUN}**
 
@@ -104,22 +196,22 @@ _language: ja
 
 [Microsoft Bing ブログ](https://blogs.bing.com/maps/2025-06/Bing-Maps-for-Enterprise-Basic-Account-shutdown-June-30,2025)
 
-### {PackageCharts} (チャート)
+### {PackageCharts}
 
-- 新しい[チャート データ注釈](charts/features/chart-data-annotations.md)
-  - データ注釈バンド レイヤー (ベータ版)
-  - データ注釈ライン レイヤー (ベータ版)
-  - データ注釈矩形レイヤー (ベータ版)
-  - データ注釈スライス レイヤー (ベータ版)
-  - データ注釈ストリップ レイヤー (ベータ版)
+- <label>PREVIEW</label> [チャート データ注釈](charts/features/chart-data-annotations.md)レイヤーを追加しました:
+  - データ注釈バンド レイヤー
+  - データ注釈ライン レイヤー
+  - データ注釈矩形レイヤー
+  - データ注釈スライス レイヤー
+  - データ注釈ストリップ レイヤー
 
-- [データ ツールチップ](charts/features/chart-data-tooltip.md)と[データ 凡例](charts/features/chart-data-legend.md)では、ツールチップまたは凡例のコンテンツをテーブルまたは垂直レイアウト構造でレイアウトするために使用できる新しい `LayoutMode` プロパティが公開されています。 
+- [データ ツールチップ](charts/features/chart-data-tooltip.md)と[データ 凡例](charts/features/chart-data-legend.md)では、ツールチップまたは凡例のコンテンツをテーブルまたは垂直レイアウト構造でレイアウトするために使用できる <label>PREVIEW</label> `LayoutMode` プロパティが公開されています。 
 
-- チャートの `DefaultInteraction` プロパティが更新され、新しい列挙体 `DragSelect` が含まれるようになりました。これにより、ドラッグされたプレビュー Rect は、その中に含まれるポイントを選択します。 (ベータ版)
+- <label>PREVIEW</label> チャートの `DefaultInteraction` プロパティが更新され、新しい列挙体 `DragSelect` が含まれるようになりました。これにより、ドラッグされたプレビュー Rect は、その中に含まれるポイントを選択します。 (ベータ版)
 
-- [ValueOverlay と ValueLayer](charts/features/chart-overlays.md) は、上記にリストした新しい [チャート データ注釈](charts/features/chart-data-annotations.md)に加えて、プロット領域に追加の注釈テキストをオーバーレイするために使用できる `OverlayText` プロパティを公開するようになりました。これらの注釈の外観は、OverlayText プレフィックスが付いた多くのプロパティを使用して構成できます。たとえば、`OverlayTextBrush` プロパティはオーバーレイ テキストの色を構成します。 (ベータ版)
+- <label>PREVIEW</label> [ValueOverlay と ValueLayer](charts/features/chart-overlays.md) は、上記にリストした <label>PREVIEW</label> [チャート データ注釈](charts/features/chart-data-annotations.md)に加えて、プロット領域に追加の注釈テキストをオーバーレイするために使用できる `OverlayText` プロパティを公開するようになりました。これらの注釈の外観は、OverlayText プレフィックスが付いた多くのプロパティを使用して構成できます。たとえば、`OverlayTextBrush` プロパティはオーバーレイ テキストの色を構成します。 (ベータ版)
 
-- 新しい[トレンドライン レイヤー](charts/features/chart-trendlines.md) シリーズ タイプを使用すると、トレンド ライン レイヤーごとに 1 つのトレンド ラインを特定のシリーズに適用できます。これにより、チャートに複数の [TrendlineLayer](charts/features/chart-overlays.md) シリーズ タイプを使用できるため、単一のシリーズで複数のトレンド ラインを使用できるようになります。
+- <label>NEW</label> [トレンドライン レイヤー](charts/features/chart-trendlines.md) シリーズ タイプを使用すると、トレンド ライン レイヤーごとに 1 つのトレンド ラインを特定のシリーズに適用できます。これにより、チャートに複数の [TrendlineLayer](charts/features/chart-overlays.md) シリーズ タイプを使用できるため、単一のシリーズで複数のトレンド ラインを使用できるようになります。
 
 ### {PackageDashboards} (ダッシュボード)
 
@@ -204,23 +296,19 @@ _language: ja
 - **すべてのグリッド** 
   - 複数の重複したブラウザー タブでコンポーネントが開かれた場合に発生する重大なメモリ リークを修正しました。
 
-### **{PackageVerChanges-24-2-DEC}**
+## **{PackageVerChanges-24-2-DEC}**
 
-#### {PackageCharts} (チャート)
+### {PackageCharts}
 
-DashboardTile (ベータ版)
+- <label>PREVIEW</label> [Dashboard Tile](dashboard-tile.md) コンポーネントは、バインドされた ItemsSource コレクションまたは単一のポイントを分析および視覚化し、データのスキーマとカウントに基づいて適切なデータ視覚化を返すコンテナー コントロールです。このコントロールは、組み込みの [Toolbar](menus/toolbar.md) コンポーネントを利用して、実行時に視覚化を変更できるようにし、最小限のコードでデータのさまざまな視覚化を表示できるようにします。
 
-- 新しい [Dashboard Tile](dashboard-tile.md) コンポーネントは、バインドされた ItemsSource コレクションまたは単一のポイントを分析および視覚化し、データのスキーマとカウントに基づいて適切なデータ視覚化を返すコンテナー コントロールです。このコントロールは、組み込みの [Toolbar](menus/toolbar.md) コンポーネントを利用して、実行時に視覚化を変更できるようにし、最小限のコードでデータのさまざまな視覚化を表示できるようにします。
+### {PackageCharts} (入力)
 
-#### {PackageCharts} (入力)
+- <label>PREVIEW</label>[カラー エディター](inputs/color-editor.md)はスタンドアロンのカラー ピッカーとして使用できるようになり、さらに [Toolbar](menus/toolbar.md) コンポーネントの <label>PREVIEW</label> ToolAction に統合され、実行時に視覚化を更新できるようになりました。
 
-- 新しい ColorEditor (ベータ版) と Toolbar の ToolAction (ベータ版)
+## **{PackageVerChanges-24-1-SEP}**
 
-この新しい[カラー エディター](inputs/color-editor.md)はスタンドアロンのカラー ピッカーとして使用でき、実行時に視覚化を更新するために [Toolbar](menus/toolbar.md) コンポーネントに統合されました。
-
-### **{PackageVerChanges-24-1-SEP}**
-
-#### {PackageCharts} (チャート)
+### {PackageCharts}
  
 - 新しい[データ円チャート](charts/types/data-pie-chart.md) - `DataPieChart` は円ャートを表示する新しいコンポーネントです。このコンポーネントは、`CategoryChart` と同様に動作し、基になるデータ モデルのプロパティを自動的に検出しながら、ItemLegend コンポーネントを介して選択、強調表示、アニメーション、凡例のサポートを可能にします。
 
@@ -239,7 +327,7 @@ DashboardTile (ベータ版)
         ラベル フィールドは X 軸にマップされ、値フィールドは Y 軸にマップされます。
         ターゲット チャートは、行われた変更にリアルタイムで反応します。チャートに ItemsSource が設定されていない場合、IconMenu は非表示になります。
 
-#### {PackageGrids}
+### {PackageGrids}
 
 - **すべてのグリッド**
   - 新しい `RowClick` イベントが追加されました。
@@ -250,7 +338,7 @@ DashboardTile (ベータ版)
   - 水平集計の位置を設定するための `horizontalSummariesPosition` プロパティを `pivotUI` に追加しました。
   - 行ディメンションの行ヘッダーが追加されました。新しい `pivotUI` プロパティ内で `showHeaders` **true** として有効にできます。
   - キーボード ナビゲーションで行ディメンションヘッダーや列ヘッダーから行ヘッダーへ移動できるようになりました。
-  - キーボード操作で行ディメンションの縮小 (<kbd>Alt</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd>) および行ヘッダーのソート (<kbd>Ctrl</kbd> + <kbd>↑</kbd> <kbd>↓</kbd>) ができるようになりました。
+  - キーボード操作で行ディメンションの縮小 (<kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd>) および行ヘッダーのソート (<kbd>CTRL</kbd> + <kbd>↑</kbd> <kbd>↓</kbd>) ができるようになりました。
 
 **重大な変更**:
 - **すべてのグリッド**
@@ -271,17 +359,17 @@ DashboardTile (ベータ版)
   - `isFirstPageDisabled` および `isLastPageDisabled` プロパティが削除されました。代わりに、`isFirstPage` および `isLastPage` を使用してください。
 
 
-### **{PackageVerChanges-24-1-JUN}**
+## **{PackageVerChanges-24-1-JUN}**
 
-#### {PackageCommon}
+### {PackageCommon}
 - `Input`、`Textarea` - ユーザー入力を制限することなく検証ルールを適用できるように `ValidateOnly` を公開しました。
 - `Dropdown` - `PositionStrategy` プロパティは非推奨です。ドロップダウンは、ブラウザー ビューポートの最上位レイヤーにコンテナーをレンダリングするために `Popover` API を使用するようになったため、このプロパティは廃止されました。
 - `DockManager` - `SplitPane` の `IsMaximized` は非推奨です。分割ペイン レベルで isMaximized を true に設定しても、分割ペインはコンテナーとしてのみ機能し、最大化されて表示される実際のコンテンツがないため、実際の効果はありません。代わりに、`TabGroupPane` および/または `ContentPane` の `IsMaximized` プロパティを使用してください。
 
-#### {PackageGrids}
+### {PackageGrids}
 - `DisplayDensity` 非推奨となり、代わりに `--ig-size` CSS カスタム プロパティが使用されるようになりました。詳細については、[グリッド サイズ](grids/grid/size.md) トピックを参照してください。
 
-#### {PackageCharts} (チャート)
+### {PackageCharts}
 
 * [データ凡例のグループ化](charts/features/chart-data-legend.md#{PlatformLower}-データ凡例のグループ化) と [データ ツールチップのグループ化](charts/features/chart-data-tooltip.md#{PlatformLower}-データ-チャートのデータ-ツールチップのグループ化) - 新しいグループ化機能が追加されました。`GroupRowVisible` プロパティは、各シリーズのグループ化を切り替え、オプトインすると `DataLegendGroup` プロパティを介してグループ テキストを割り当てることができます 同じ値が複数のシリーズに適用されている場合、それらはグループ化されて表示されます。すべてのユーザー向けに分類および整理する必要がある大規模なデータセットに役立ちます。
 
@@ -294,20 +382,79 @@ DashboardTile (ベータ版)
 
 - `Toolbar` - 選択した特定のツールの周囲に境界線を描くための ToolAction の新しい `IsHighlighted` オプション。
 
-#### {PackageGauges} (ゲージ)
+### {PackageGauges}
 
 - `XamRadialGauge`
     - ハイライト針の新しいラベル。`HighlightLabelText` と `HighlightLabelSnapsToNeedlePivot` および、その他の HighlightLabel の多くのスタイル関連プロパティが追加されました。
 
-### **{PackageVerChanges-23-2-MAR}**
+## **{PackageVerChanges-23-2-MAR}**
+
+
+### {PackageGrids}
 
 - 新しい [`HierarchicalGrid`](grids/hierarchical-grid/overview.md) ンポーネント
 
-### **{PackageVerChanges-23-2-DEC}**
+
+### {PackageCharts}
+
+- `InitialFilter` プロパティによる新しいデータ フィルタリング。フィルター式を適用して、チャート データをレコードのサブセットにフィルターします。大規模なデータのドリルダウンに使用できます。
+
+- `XamRadialChart` 
+  - 新しいラベル モード
+        `CategoryAngleAxis` は、ラベルの位置をさらに構成できる `LabelMode` プロパティを公開するようになりました。これにより、`Center` 列挙型を選択してデフォルト モードを切り替えることも、ラベルを円形のプロット領域に近づける新しいモード `ClosestPoint` を使用することもできます。
+
+### {PackageGauges}
+
+- `XamRadialGauge`
+  - 新しいタイトル/サブタイトルのプロパティ。`TitleText`、`SubtitleText` はゲージの下部近くに表示されます。さらに、`TitleFontSize`、`TitleFontFamily`、`TitleFontStyle`、`TitleFontWeight`、`TitleExtent` など、さまざまなタイトルとサブタイトルのフォント プロパティが追加されました。最後に、新しい `TitleDisplaysValue` により、値を針の位置に対応させることができます。
+  - `XamRadialGauge` の新しい `OpticalScalingEnabled` と `OpticalScalingSize` プロパティを追加しました。この新機能は、ゲージのラベル、タイトル、サブタイトルが 100% のオプティカル スケーリングを持つサイズを管理します。この新機能の詳細については、[こちら](radial-gauge.md#オプティカル-スケーリング)を参照してください。
+    - 新しいハイライト針が追加されました。`HighlightValue` と `HighlightValueDisplayMode` の両方に値と 'Overlay' 設定が指定されたとき、メインの針が薄く表示され、新しい針が表示されます。
+- `XamLinearGauge`
+  - 新しいハイライト針が追加されました。`HighlightValue` と `HighlightValueDisplayMode` の両方に値と 'Overlay' 設定が指定されたとき、メインの針が薄く表示され、新しい針が表示されます。
+- `XamBulletGraph`
+    - `HighlightValueDisplayMode` が 'Overlay' 設定に適用されたとき、パフォーマンス バーには値と新しい `HighlightValue` の差が反映されるようになりました。ハイライト値には、フィルタリング/サブセットが完了した測定パーセンテージが塗りつぶされた色で表示され、残りのバーの外観は割り当てられた値に対して薄く表示され、リアルタイムでパフォーマンスを示します。
+
+
+## **{PackageVerChanges-23-2-JAN}**
+
+### {PackageCharts}
+
+* [チャートのハイライト表示フィルター](charts/features/chart-highlight-filter.md) - `CategoryChart` と `XamDataChart` は、データのサブセットの内外でハイライト表示およびアニメーション化する方法を公開するようになりました。このハイライトの表示はシリーズのタイプによって異なります。列およびエリア シリーズの場合、サブセットはデータの合計セットの上に表示され、サブセットはシリーズの実際のブラシによって色付けされ、合計セットは不透明度を下げます。折れ線シリーズの場合、サブセットは点線で表示されます。
+
+## **{PackageVerChanges-23-2-DEC}**
+
+### {PackageGrids}
 
 - 新機能 (Grid) - [状態保持](grids/grid/state-persistence.md)。
 
-### **{PackageVerChanges-22-2.2}**
+
+## **{PackageVerChanges-23-2}**
+
+### {PackageLayouts}
+
+- <label>PREVIEW</label> [Toolbar](menus/toolbar.md)
+  - クリップボードを介してチャートを画像に保存するための保存ツール アクションが追加されました。
+  - ツールバーの `Orientation` プロパティを介して垂直方向が追加されました。デフォルトでは、ツールバーは水平方向ですが、ツールバーを垂直方向に表示できるようになり、ツールが左右にポップアップ表示されます。
+  - ツールバーの `renderImageFromText` メソッドを介してカスタム SVG アイコンのサポートが追加され、カスタム ツールの作成がさらに強化されました。
+
+
+## **{PackageVerChanges-23-1}**
+
+### {PackageLayouts}
+
+- <label>PREVIEW</label> [Toolbar](menus/toolbar.md) - このコンポーネントは、主にチャート コンポーネントで使用される UI 操作のコンパニオン コンテナーです。ツールバーは、`XamDataChart` または `CategoryChart` コンポーネントにリンクされると、プロパティとツール項目のプリセットで動的に更新されます。プロジェクト用のカスタム ツールを作成して、エンド ユーザーが変更を提供できるようになり、無限のカスタマイズが可能になります。
+
+### {PackageCharts}
+
+- [ValueLayer](charts/features/chart-overlays.md#{PlatformLower}-value-layer) - `ValueLayer` という名前の新しいシリーズ タイプが公開され、最大値、最小値、平均値など、プロットされたデータのさまざまな焦点のオーバーレイを描画できるようになりました。これは、新しい `ValueLines` コレクションに追加することで、`CategoryChart` と `FinancialChart` に適用されます。
+
+- **破線の配列**を `XamDataChart` のシリーズのさまざまな部分に適用できるようになりました。これは、チャートにプロットされた[シリーズ](charts/types/line-chart.md#{PlatformLower}-折れ線チャートのスタイル設定)、チャートの[グリッド線](charts/features/chart-axis-gridlines.md#{PlatformLower}-軸グリッド線のプロパティ)、チャートにプロットされたシリーズの[トレンドライン](charts/features/chart-trendlines.md#{PlatformLower}-チャート-トレンドラインのダッシュ配列の例)に適用できます。
+
+
+## **{PackageVerChanges-22-2.2}**
+
+
+### {PackageGrids}
 
 - 新しい引数 `PrimaryKey` が `IgcRowDataEventArgs` と、`RowAdded` および `RowDeleted` イベントによって発行されるイベント引数の一部に導入されました。グリッドに主キー属性が追加されている場合、発行された primaryKey イベント引数は行 ID を表し、それ以外の場合はデフォルトで未定義になります。
 - `RowSelectionChanging` イベント引数が変更されました。グリッドが primaryKey を設定した場合、`OldSelection`、`NewSelection`、`Added` および `Removed` コレクションは、選択された要素の行キーで構成されなくなりましたが、いずれにしても行データが出力されるようになりました。
@@ -318,11 +465,24 @@ DashboardTile (ベータ版)
 
 - `PivotGrid`: `IgcPivotDateDimension` プロパティの `InBaseDimension` および `InOption` は非推奨になり、それぞれ `BaseDimension` および `Options` に名前が変更されました。
 
-### **{PackageVerChanges-22-2.1}**
+### {PackageInputs}
+
+* `IgcDateTimeInput` で StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date)、DateTimeInputDatePart ではなく DatePart に切り詰められるようになりました。
+* `IgcRadio` および `IgcRadioGroup` で、無効な状態のスタイルとともにコンポーネントの検証が追加されました。
+* `IgcMask` - マスク パターン リテラルをエスケープする機能が追加されました。
+* `IgcBadge` - バッジの形状を制御する `Shape`  プロパティが追加され、`Square` または `Rounded` のいずれかになります。デフォルトでは、バッジの形状は Rounded です。
+* `IgcAvatar` - `RoundShape` プロパティは非推奨になり、将来のバージョンで削除される予定です。ユーザーは、新しく追加された `Shape` 属性によってアバターの形状を制御できます。形状属性は、`Square`、`Rounded`、または `Circle` です。アバターの図形はデフォルトで `Square` です。
+
+
+## **{PackageVerChanges-22-2.1}**
+
+### {PackageGrids}
 
 - 新しい [Pivot Grid](grids/pivot-grid/overview.md) コンポーネント。
 
-### **{PackageVerChanges-22-2}**
+## **{PackageVerChanges-22-2}**
+
+### {PackageGrids}
 
 - 新しい [Grid](grids/data-grid.md) コンポーネント。
 - 新しい [Tree Grid](grids/tree-grid/overview.md) コンポーネント。
@@ -332,19 +492,81 @@ DashboardTile (ベータ版)
   - **GridSelectionMode** を `DataGridSelectionMode` に変更しました。
   - **SummaryOperand** を `DataSourceSummaryOperand` に変更しました。
 
-### **{PackageVerChanges-22-1}**
+  ### {PackageCharts}
+
+- デフォルトの動作を大幅に改善し、カテゴリ チャート API を改良して使いやすくしました。これらの新しいチャートの改善点は次のとおりです:
+
+* ブラウザー / 画面サイズに基づいた水平ラベル回転のレスポンシブ レイアウト。
+* すべてのプラットフォームでの丸型ラベルの描画が強化されました。
+* StackedFragmentSeries にマーカー プロパティを追加しました。
+* `ShouldPanOnMaximumZoom` プロパティを追加しました。
+* 新しいカテゴリ軸プロパティ:
+    - ZoomMaximumCategoryRange
+    - ZoomMaximumItemSpan
+    - ZoomToCategoryRange
+    - ZoomToItemSpan
+* カテゴリの文字列と数値をグループ化、ソート、集計するための新しい[チャート集計](charts/features/chart-data-aggregations.md) API により、チャート データを事前に集計または計算する必要がなくなります。
+  - InitialSortDescriptions
+  - InitialSorts
+  - SortDescriptions
+  - InitialGroups
+  - InitialGroupDescriptions
+  - GroupDescriptions
+  - InitialSummaries
+  - InitialSummaryDescriptions
+  - SummaryDescriptions
+  - InitialGroupSortDescriptions
+  - GroupSorts
+  - GroupSortDescriptions
+
+> [!Note]
+`IncludedProperties` | `ExcludedProperties` を使用する場合、[チャート集計](charts/features/chart-data-aggregations.md) は機能しません。チャートのこれらのプロパティは非集計データ用です。データを集計しようとすると、これらのプロパティは使用できなくなります。うまくいかない理由は、描画のためにチャートに渡されたコレクションを集計により置き換えるためです。include/exclude プロパティは、そのデータの in/out プロパティをフィルターするように設計されており、それらのプロパティは新しい集計されたコレクションには存在しません。
+
+
+## **{PackageVerChanges-22-1}**
+
+### {PackageGrids}
 
 - `DataGrid`:
   - 新機能 - [行ページング](grids/data-grid/row-paging.md)を追加しました。これは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。ページネーションを使用すると、データを設定された行数で表示することができ、ユーザーはスクロール バーを使用せずにデータを順次閲覧することができます。テーブル ページネーションの UI には通常、現在のページ、合計ページ、ユーザーがページをめくるためのクリック可能な [前へ] と [次へ] の矢印 / ボタンなどが含まれます。
+### {PackageCharts}
 
-### **{PackageVerChanges-21-2.1}**
+* 高度に構成可能な [DataLegend](charts/features/chart-data-legend.md) コンポーネントを追加しました。これは、`Legend` とよく似ていますが、シリーズの値を表示し、シリーズの行と値の列をフィルタリングし、値のスタイルとフォーマットを行うための多くの構成プロパティを提供します。
+* 高度に構成可能な [DataToolTip](charts/features/chart-data-tooltip.md) が追加されました。これは、シリーズの値とタイトル、およびシリーズの凡例バッジをツールチップに表示します。これは、すべてのチャート タイプのデフォルトのツールチップになりました。
+* 積層シリーズのアニメーションとトランジションインのサポートが追加されました。`IsTransitionInEnabled` プロパティを true に設定すると、アニメーションを有効にできます。そこから、`TransitionInDuration` プロパティを設定してアニメーションが完了するまでの時間を決定し、`TransitionInMode` でアニメーションのタイプを決定できます。
+* 追加された `AssigningCategoryStyle` イベントは、`XamDataChart` のすべてのシリーズで利用できるようになりました。このイベントは、背景色の `Fill` やハイライト表示など、シリーズ項目の外観を条件付きで構成する場合に処理されます。
+* CalloutLayer の新しい `AllowedPositions` 列挙体。チャート内のどこにコールアウトを配置するかを制限するために使用されます。デフォルトでは、コールアウトは最適な場所に配置されますが、これは `TopLeft`、`TopRight`、`BottomLeft`、または `BottomRight` を強制するために使用されます。
+* 注釈レイヤーに追加された新しいコーナー半径プロパティ。各コールアウトのコーナーを丸めるために使用されます。コーナー半径がデフォルトで追加されていることに注意してください。
+    - CalloutLayer の `CalloutCornerRadius`
+    - FinalValueLayer の `AxisAnnotationBackgroundCornerRadius`
+    - CrosshairLayer の `XAxisAnnotationBackgroundCornerRadius` と `YAxisAnnotationBackgroundCornerRadius`
+* さまざまな方法でスクロールバーを有効にするための新しい `HorizontalViewScrollbarMode` および `VerticalViewScrollbarMode` 列挙体。`IsVerticalZoomEnabled` または `IsHorizontalZoomEnabled` と組み合わせると、チャートをナビゲートするための軸に沿ったスクロールバーを、常設またはフェードインおよびフェードアウトすることができます。
+* 新しい `FavorLabellingScaleEnd` は、軸がスケールの最後にラベルを表示することを優先するかどうかを決定します。数値軸 (`NumericXAxis`、`NumericYAxis`、`PercentChangeAxis` など) とのみ互換性があります。
+* 新しい `IsSplineShapePartOfRange` は、軸に要求された軸範囲にスプライン形状を含めるかどうかを決定します。
+* 新しい `XAxisMaximumGap` は、`XAxisGap` を使用するときにプロットされたシリーズの最大許容値を決定します。ギャップは、プロットされたシリーズの列またはバー間のスペースの量を決定します。
+* 新しい `XAxisMinimumGapSize` は、`XAxisGap` を使用するときに、プロットされたシリーズの最小許容ピクセルベース値を決定し、各カテゴリ間に常にある程度の間隔があることを保証します。
+
+## **{PackageVerChanges-21-2.1}**
+
+### {PackageGrids}
+
 - `DataGrid`:
   - ドロップダウンの項目に複数のフィールドで構成されるキーが含まれている場合に使用される `ComboBoxColumn` に string[] 型の `ValueMultiField` が追加されました。
 
 > [!Note]
 > 以下の重大な変更が導入されました: `ValueField` プロパティを string[] 型から string に変更しました。
 
-### **{PackageVerChanges-21-2}**
+### {PackageInputs}
+
+- Date Picker:
+  * ValueChanged イベントを `SelectedValueChanged` に変更しました。
+- Multi-Column ComboBox:
+  * `TextChanged` イベントを `TextValueChanged` に変更しました。
+  * `ValueChanged` イベントを `SelectedValueChanged` に変更しました。
+
+## **{PackageVerChanges-21-2}**
+
+### {PackageGrids}
 
 - `DataGrid`:
   - 新規機能:
@@ -358,8 +580,46 @@ DashboardTile (ベータ版)
       - グリッドの SummaryScope プロパティのタイプを `DataSourceSummaryScope` から SummaryScope に変更しました。
       - GroupHeaderDisplayMode プロパティのタイプを `DataSourceSectionHeaderDisplayMode` から GroupHeaderDisplayMode に変更しました。
 
+> [!Note]
+> パッケージ 「lit-html」 を確認してください。最適な互換性のために、「^2.0.0」 以降がプロジェクトに追加されます。
 
-### **{PackageVerChanges-21-1}**
+### {PackageCharts}
+
+このリリースでは、地理マップとすべてのチャート コンポーネントのビジュアル デザインと構成オプションにいくつかの改善と簡素化が導入されています。
+
+* `FinancialChart` と `CategoryChart` の `YAxisLabelLocation` プロパティのタイプを **AxisLabelLocation** から **YAxisLabelLocation** に変更しました。
+* `FinancialChart` の `XAxisLabelLocation`  プロパティのタイプを **AxisLabelLocation** から **XAxisLabelLocation** に変更しました。
+* `CategoryChart` に `XAxisLabelLocation` プロパティを追加しました。
+* 凡例で `XamGeographicMap` の地理的なシリーズを表すためのサポートが追加されました。
+* `FinancialChart` と `CategoryChart` にデフォルトの十字線を追加しました。
+* `FinancialChart` と `CategoryChart` にデフォルトの十字線の注釈を追加しました。
+* `FinancialChart` にデフォルトで最終値の注釈を追加しました
+* カテゴリ チャートとファイナンシャル チャートに新しいプロパティを追加しました：
+   - 十字線をカスタマイズするための `CrosshairsLineThickness` およびその他のプロパティ。
+   - 十字線の注釈をカスタマイズするための `CrosshairsAnnotationXAxisBackground` およびその他のプロパティ。
+   - 最終値の注釈をカスタマイズするための `FinalValueAnnotationsBackground` およびその他のプロパティ。
+   - シリーズ塗りつぶしの不透明度を変更できる `AreaFillOpacity` (エリア チャートなど)
+   - マーカーの厚さを変更できる `MarkerThickness`
+* カテゴリ チャート、ファイナンシャル チャート、データ チャート、および地理マップに新しいプロパティを追加しました。
+   - 同じチャート内の複数のシリーズにどのマーカー タイプを割り当てることができる `MarkerAutomaticBehavior` 
+   - 凡例で表されるすべてのシリーズのバッジの形状を設定するための `LegendItemBadgeShape`
+   - 凡例のすべてのシリーズにバッジの複雑さを設定するための `LegendItemBadgeMode` 
+* データ チャートと地理マップのシリーズに新しいプロパティを追加しました。
+   - 凡例で表される特定のシリーズにバッジの形状を設定するための `LegendItemBadgeShape` 
+   - 凡例の特定のシリーズにバッジの複雑さを設定するための `LegendItemBadgeMode`
+* カテゴリ チャートとシリーズで、デフォルトの垂直十字線ストロークを <span style="color:#000000">#000000</span> から <span style="color:#BBBBBB">#BBBBBB</span> に変更しました。
+* 同じチャートにプロットされたすべてのシリーズのマーカーの図形を円に変更しました。これは、チャートの `MarkerAutomaticBehavior` プロパティを `SmartIndexed` 列挙値に設定することで元に戻すことができます。
+* チャートの凡例のシリーズの簡略化された図形で、円、線、または四角のみを表示します。これは、チャートの `LegendItemBadgeMode` プロパティを `MatchSeries` 列挙値に設定することで元に戻すことができます。
+* アクセシビリティを向上させるために、すべてのチャートに表示されるシリーズとマーカーのカラー パレットを変更しました
+
+| 古いのブラシ/アウトライン | 新のアウトライン/ブラシ |
+| -------------------- | ------------------- |
+| <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br> |
+
+
+## **{PackageVerChanges-21-1}**
+
+### {PackageGrids}
 
 - `DataGrid`:
   - `EditOnKeyPress` を追加しました - 別名 Excel スタイルの編集。入力するとすぐに編集を開始します。
@@ -369,12 +629,91 @@ DashboardTile (ベータ版)
   - `SelectAllRows` メソッドを追加しました。
   - 行範囲の選択を追加しました - `GridSelectionMode` プロパティを MultipleRow に設定すると、次の新しい機能が含まれるようになりました:
     - クリックしてドラッグし、行を選択します。
-    - Shift キーを押しながらクリックして、複数の行を選択します。
-    - Shift キーを押しながら上下の矢印キーを押して、複数の行を選択します。
+    - <kbd>SHIFT</kbd> キーを押しながらクリックして、複数の行を選択します。
+    - <kbd>SHIFT</kbd> キーを押しながら <kbd>↑</kbd> + <kbd>↓</kbd> 矢印キーを押して、複数の行を選択します。
   - スペース バーを押すと、MultipleRow または SingleRow に設定された `GridSelectionMode` プロパティを介してアクティブな行の選択が切り替わります。
   - 列オプション ダイアログに列集計を追加しました。
 
-### **{PackageVerChangedFields}**
+### {PackageCharts}
+
+- Date Picker:
+  - `ShowTodayButton` - 現在の日付のボタンの表示を切り替えます。
+  - `Label` - 日付値の上にラベルを追加します。
+  - `Placeholder` プロパティ - 値が選択されていない場合にカスタム テキストを追加します。
+  - `FormatString` - 入力日付文字列をカスタマイズします。(例: `yyyy-MM-dd`)
+  - `DateFormat` - 選択した日付を LongDate または ShortDate のどちらとして表示するかを指定します。
+  - `FirstDayOfWeek` - 週の最初の曜日を指定します。
+  - `FirstWeekOfYear` - 年の最初の週をいつ表示するかを指定します。例えば、最初の 1 週間、最初の 4 日間の週です。
+  - `ShowWeekNumbers` - 週番号の表示を切り替えます。
+  - `MinDate` & `MaxDate` - 使用可能の選択できる日付の範囲を指定する日付制限。
+  - アクセシビリティの追加
+
+
+### {PackageMaps}
+
+> [!Note]
+> これらの機能は CTP です。
+
+* マップの表示を折り返すためのサポートが追加されました (水平方向に無限にスクロールできます)。
+* 座標原点を折り返しながら、一部のマップ シリーズの表示をシフトするためのサポートが追加されました。
+* シェイプ シリーズのハイライト表示のサポートが追加されました。
+* シェイプ シリーズの一部の注釈レイヤーのサポートが追加されました。
+
+
+### {PackageCharts}
+
+このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。例えば、`XamDataChart`、`CategoryChart`、および `FinancialChart`。
+
+* 棒/縦棒/ウォーターフォール シリーズを、角丸ではなく角が四角になるように変更しました。
+* heat min プロパティの 散布高密度シリーズの色を <span style="color:#8a5bb1">#8a5bb1</span> から <span style="color:#000000">#000000</span> に変更しました。
+* heat max プロパティの 散布高密度シリーズの色を <span style="color:#ee5879">#ee5879</span> から <span style="color:#ee5879">#ee5879</span> に変更しました。
+* ファイナンシャル/ウォーターフォール シリーズの `NegativeBrush` および `NegativeOutline` プロパティを <span style="color:#C62828">#C62828</span> から <span style="color:#ee5879">#ee5879</span> に変更しました。
+* マーカーの厚さを 1 pxから 2 pxに変更しました。
+* `PointSeries`、`BubbleSeries`、`ScatterSeries`、`PolarScatterSeries` のマーカーのアウトラインに一致するようにマーカーの塗りつぶしを変更しました。`MarkerFillMode` プロパティを Normal に設定すると、この変更を元に戻すことができます。
+* `TimeXAxis` および `OrdinalTimeXAxis` のラベリングを圧縮しました。
+* 新しいマーカー プロパティ:
+    - series.`MarkerFillMode` - マーカーがアウトラインに依存するように、`MatchMarkerOutline` に設定できます。
+    - series.`MarkerFillOpacity` - 0〜1 の値に設定できます。
+    - series.`MarkerOutlineMode` - マーカーのアウトラインが塗りブラシの色に依存するように、`MatchMarkerBrush` に設定できます。
+* 新シリーズ  プロパティ:
+    - series.`OutlineMode` - シリーズ アウトラインの表示を切り替えるように設定できます。データ チャートの場合、プロパティはシリーズ上にあることに注意してください。
+* チャートがデフォルトのズーム レベルにあるときにビューポートに導入されるブリード オーバー領域を定義する新しいチャート プロパティを追加しました。一般的な使用例では、軸と最初/最後のデータ ポイントの間にスペースを提供します。以下にリストされている `ComputedPlotAreaMarginMode` は、マーカーが有効になっているときに自動的にマージンを設定することに注意してください。その他は、厚さを表す `Double` を指定するように設計されており、PlotAreaMarginLeft などがチャートの 4 辺すべてにスペースを調整します。
+    - chart.`PlotAreaMarginLeft`
+    - chart.`PlotAreaMarginTop`
+    - chart.`PlotAreaMarginRight`
+    - chart.`PlotAreaMarginBottom`
+    - chart.`ComputedPlotAreaMarginMode`
+* 新しいハイライト表示プロパティ:
+    - chart.`HighlightingMode` - ホバーされたシリーズとホバーされていないシリーズをフェードまたは明るくするかを設定します。
+    - chart.`HighlightingBehavior` - 真上または最も近い項目など、マウスの位置に応じてシリーズをハイライト表示するかどうかを設定します。
+    - 以前のリリースでは、ハイライト表示はホバー時にフェードするように制限されていたことに注意してください。
+* 積層型、散布、極座標、ラジアル、およびシェイプ シリーズにハイライト表示を追加しました。
+* 積層型、散布、極座標、ラジアル、およびシェイプ シリーズに注釈レイヤーを追加しました。
+* 積層型シリーズ内の個々の積層フラグメントのデータ ソースをオーバーライドするためのサポートが追加されました。
+* 積層型、散布、範囲、極座標、ラジアル、シェイプ シリーズにカスタム スタイルのイベントを追加しました。
+* 垂直ズームをシリーズ コンテンツに自動的に同期するサポートが追加されました。
+* 表示された最初のラベルに基づいてチャートの水平マージンを自動的に拡張するサポートが追加されました。
+* シリーズとマーカーの再設計されたカラー パレット:
+
+| 古いのブラシ/アウトライン | 新のアウトライン/ブラシ |
+| -------------------- | ------------------- |
+| <span style="color:#7446B9">#7446B9</span> <br><span style="color:#9FB328">#9FB328</span> <br><span style="color:#F96232">#F96232</span> <br><span style="color:#2E9CA6">#2E9CA6</span> <br><span style="color:#DC3F76">#DC3F76</span> <br><span style="color:#FF9800">#FF9800</span> <br><span style="color:#3F51B5">#3F51B5</span> <br><span style="color:#439C47">#439C47</span> <br><span style="color:#795548">#795548</span> <br><span style="color:#9A9A9A">#9A9A9A</span> | <span style="color:#8bdc5c">#8bdc5c</span> <br><span style="color:#8b5bb1">#8b5bb1</span> <br><span style="color:#6db1ff">#6db1ff</span> <br><span style="color:#f8a15f">#f8a15f</span> <br><span style="color:#ee5879">#ee5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#f7d262">#f7d262</span> <br><span style="color:#8ce7d9">#8ce7d9</span> <br><span style="color:#e051a9">#e051a9</span> <br><span style="color:#a8a8b7">#a8a8b7</span> <br> |
+
+例:
+
+|   |   |
+|---|---|
+| <img class="responsive-img" src="../images/chartDefaults1.png" /> | <img class="responsive-img" src="../images/chartDefaults2.png" /> |
+| <img class="responsive-img" src="../images/chartDefaults3.png" /> | <img class="responsive-img" src="../images/chartDefaults4.png" /> |
+
+#### チャート凡例
+
+* バブル、ドーナツ、および円チャートで使用できる水平方向の `Orientation` プロパティを ItemLegend に追加しました
+* `LegendHighlightingMode` プロパティの追加 - 凡例項目にホバーした時にシリーズのハイライト表示を有効にします
+
+## **{PackageVerChangedFields}**
+
+### {PackageGrids}
 
 - `DataGrid`:
 
@@ -399,7 +738,9 @@ const income = new IgcColumnGroupDescription();
 income.field = "Income";
 ```
 
-### **{PackageVerRenamedGrid}**
+## **{PackageVerRenamedGrid}**
+
+### {PackageGrids}
 
 - `DataGrid`:
 
@@ -423,6 +764,84 @@ Data Grid コンポーネントには 「inputs」 パッケージが必要で�
 **npm install --save {PackageInputs}**
 ```
 
+## **{PackageVerChangedImports}**
+
+### All Packages
+
+- Import ステートメントの変更
+
+Import ステートメントは、API クラスと列挙型へのフル パスではなくパッケージ名のみを使用するように簡素化されました。
+
+> [!Note]
+> これらの重大な変更は、これらのパッケージとコンポーネントでのみ導入されました:
+
+| 影響されるパッケージ | 影響されるコンポーネント |
+| ------------------|---------------------|
+| <a href="{PackageWebsite}{PackageExcel}/v/{PackageVerChangedImports}" target="_blank">{PackageExcel}</a> | [Excel Library](excel-library.md)  |
+| <a href="{PackageWebsite}{PackageSpreadsheet}/v/{PackageVerChangedImports}" target="_blank">{PackageSpreadsheet}</a> | [Spreadsheet](spreadsheet-overview.md) |
+| <a href="{PackageWebsite}{PackageMaps}/v/{PackageVerChangedImports}" target="_blank">{PackageMaps}</a> | [Geo Map](geo-map.md)、[Treemap](charts/types/treemap-chart.md)  |
+| <a href="{PackageWebsite}{PackageGauges}/v/{PackageVerChangedImports}" target="_blank">{PackageGauges}</a> |  [Bullet Graph](bullet-graph.md)、[Linear Gauge](linear-gauge.md)、[Radial Gauge](radial-gauge.md)   |
+| <a href="{PackageWebsite}{PackageCharts}/v/{PackageVerChangedImports}" target="_blank">{PackageCharts}</a>| Category Chart、Data Chart、Donut Chart、Financial Chart、Pie Chart、[Zoom Slider](zoomslider-overview.md)  |
+| <a href="{PackageWebsite}{PackageCore}/v/{PackageVerChangedImports}" target="_blank">{PackageCore}</a> | すべてのクラスと列挙型  |
+| <a href="{PackageWebsite}{PackageGrids}/v/{PackageVerChangedImports}" target="_blank">{PackageGrids}</a> | [Data Grid](grids/data-grid/overview.md) |
+
+- 変更後のコード
+
+API クラスと列挙型へのフル パスの代わりにパッケージ名のみを使用できます。
+
+注: Data Grid コンポーネントとそれに対応するモジュールの名前も変更されました。
+
+```ts
+// gauges:
+import { IgcLinearGaugeComponent } from "igniteui-webcomponents-gauges";
+import { IgcLinearGaugeModule } from "igniteui-webcomponents-gauges";
+import { IgcLinearGraphRange } from "igniteui-webcomponents-gauges";
+import { IgcRadialGaugeComponent } from 'igniteui-webcomponents-gauges';
+import { IgcRadialGaugeModule } from 'igniteui-webcomponents-gauges';
+import { IgcRadialGaugeRange } from 'igniteui-webcomponents-gauges';
+import { SweepDirection } from 'igniteui-webcomponents-core';
+// charts:
+import { IgcFinancialChartComponent } from "igniteui-webcomponents-charts";
+import { IgcFinancialChartModule } from "igniteui-webcomponents-charts";
+import { IgcDataChartComponent } from "igniteui-webcomponents-charts";
+import { IgcDataChartCoreModule } from "igniteui-webcomponents-charts";
+// maps:
+import { IgcGeographicMapComponent } from "igniteui-webcomponents-maps";
+import { IgcGeographicMapModule } from "igniteui-webcomponents-maps";
+// grids:
+import { IgcDataGridComponent } from "igniteui-webcomponents-data-grids";
+import { IgcDataGridModule } from "igniteui-webcomponents-data-grids";
+```
+
+- 変更前のコード
+
+以前は、API クラスと列挙型への完全なパスを使用してインポートする必要がありました。
+
+```ts
+// gauges:
+import { IgcLinearGaugeComponent } from 'igniteui-webcomponents-gauges/ES5/igc-linear-gauge-component';
+import { IgcLinearGaugeModule } from 'igniteui-webcomponents-gauges/ES5/igc-linear-gauge-module';
+import { IgcLinearGraphRange } from 'igniteui-webcomponents-gauges/ES5/igc-linear-graph-range';
+
+import { IgcRadialGaugeComponent } from "igniteui-webcomponents-gauges/ES5/igc-radial-gauge-component";
+import { IgcRadialGaugeModule } from "igniteui-webcomponents-gauges/ES5/igc-radial-gauge-module";
+import { IgcRadialGaugeRange } from "igniteui-webcomponents-gauges/ES5/igc-radial-gauge-range";
+import { SweepDirection } from "igniteui-webcomponents-core/ES5/SweepDirection";
+
+// charts:
+import { IgcFinancialChartComponent } from "igniteui-webcomponents-charts/ES5/igc-financial-chart-component";
+import { IgcFinancialChartModule } from "igniteui-webcomponents-charts/ES5/igc-financial-chart-module";
+import { IgcDataChartComponent } from "igniteui-webcomponents-charts/ES5/igc-data-chart-component";
+import { IgcDataChartCoreModule } from "igniteui-webcomponents-charts/ES5/igc-data-chart-core-module";
+
+// maps:
+import { IgcGeographicMapComponent } from "igniteui-webcomponents-maps/ES5/igc-geographic-map-component";
+import { IgcGeographicMapModule } from "igniteui-webcomponents-maps/ES5/igc-geographic-map-module";
+
+// grids:
+import { IgcLiveGridModule } from 'igniteui-webcomponents-data-grids/ES5/igc-live-grid-module';
+import { IgcLiveGridComponent } from 'igniteui-webcomponents-data-grids/ES5/igc-live-grid-component';
+```
 
 ## {PackageCommon}
 
@@ -490,7 +909,7 @@ Data Grid コンポーネントには 「inputs」 パッケージが必要で�
 - `DateTimeInput` - 特定のシナリオで `igcChange` が二重に発行されます。
 - `NavDrawer` - ミニ バリアントは、開いた状態でない場合、最初は描画されません。
 - `Combo`:
-  - `Enter` キーを使用してエントリを選択すると、単一選択モードで正しく機能するようになりました。
+  - <kbd>ENTER</kbd> キーを使用してエントリを選択すると、単一選択モードで正しく機能するようになりました。
   - `DisableFiltering` オプションをオンにすると、以前に入力した検索語句がクリアされるようになりました。
   - 単一選択モードで、選択した項目に既に一致する検索語を入力すると、正しく機能するようになりました。
 
@@ -980,326 +1399,7 @@ Ignite UI Web Components の初期リリース
 - [Switch](inputs/switch.md) コンポーネント
 
 
-## {PackageCharts}
 
-### **{PackageVerChanges-24-1-JUN}**
-
-* [データ凡例のグループ化](charts/features/chart-data-legend.md#{PlatformLower}-データ凡例のグループ化) & [データ ツールチップのグループ化](charts/features/chart-data-tooltip.md#{PlatformLower}-データ-チャートのデータ-ツールチップのグループ化) - 新しいグループ化機能が追加されました。`GroupRowVisible` プロパティは、各シリーズのグループ化を切り替え、オプトインすると `DataLegendGroup` プロパティを介してグループ テキストを割り当てることができます。同じ値が複数のシリーズに適用されている場合、それらはグループ化されて表示されます。すべてのユーザー向けに分類および整理する必要がある大規模なデータセットに役立ちます。
-
-- [チャートの選択](charts/features/chart-data-selection.md) - 新しいシリーズ選択のスタイル設定。これは、`CategoryChart` および `XamDataChart` のすべてのカテゴリ、財務、およびラジアル シリーズに広く採用されています。シリーズはクリックして異なる色で表示したり、明るくしたり、薄くしたり、フォーカスのアウトラインを表示したりできます。個々のシリーズまたはデータ項目全体を通じて影響を受ける項目を管理します。複数のシリーズとマーカーがサポートされています。特定のデータ項目の値間のさまざまな相違点や類似点を示すのに役立ちます。また、`SelectedSeriesItemsChanged` イベントと `SelectedSeriesItems` は、選択内容に基づいたデータ分析を行うポップアップやその他の画面など、アプリケーション内で実行できるその他のアクションを取り巻く堅牢なビジネス要件を構築するための追加の支援として利用できます.
-
-- [比例カテゴリ角度軸](charts/types/radial-chart.md) - `XamDataChart` のラジアル円シリーズの新しい軸により、データ チャートのすべての追加機能を使用してロバスト可能な視覚化をする円チャートの作成が可能になります。
-
-- [ツリーマップのハイライト表示](charts/types/treemap-chart.md#{PlatformLower}-ツリーマップのハイライト表示) - ツリー マップの項目のマウスオーバーによるハイライト表示を構成できる `HighlightingMode` プロパティが公開されました。このプロパティには 2 つのオプションがあります: `Brighten` では、マウスを置いた項目にのみハイライト表示が適用され、`FadeOthers` では、マウスホバーした項目のハイライト表示はそのままで、それ以外はすべてフェードアウトします。このハイライト表示はアニメーション化されており、`HighlightingTransitionDuration`  プロパティを使用して制御できます。
-    
-- [ツリーマップのパーセントベースのハイライト表示](charts/types/treemap-chart.md#{PlatformLower}-ツリーマップのパーセントベースのハイライト表示) - 新しいパーセントベースのハイライト表示により、ノードはコレクションの進行状況またはサブセットを表すことができます。外観は、データ項目のメンバーによって、または新しい `HighlightedItemsSource` を指定することによって、特定の値までの背景色の塗りつぶしとして表示されます。`HighlightedValuesDisplayMode` で切り替えることができ、`FillBrushes` でスタイルを設定できます。
-
-- `Toolbar` - 選択した特定のツールの周囲に境界線を描くための ToolAction の新しい `IsHighlighted` オプション。
-
-### **{PackageVerChanges-23-2-MAR}**
-
- - `InitialFilter` プロパティによる新しいデータ フィルタリング。フィルター式を適用して、チャート データをレコードのサブセットにフィルターします。大規模なデータのドリルダウンに使用できます。
-
-- `XamRadialChart` 
-    - 新しいラベル モード
-        `CategoryAngleAxis` は、ラベルの位置をさらに構成できる `LabelMode` プロパティを公開するようになりました。これにより、`Center` 列挙型を選択してデフォルト モードを切り替えることも、ラベルを円形のプロット領域に近づける新しいモード `ClosestPoint` を使用することもできます。
-
-### **{PackageVerChanges-23-2-JAN}**
-
-* [チャートのハイライト表示フィルター](charts/features/chart-highlight-filter.md) - `CategoryChart` と `XamDataChart` は、データのサブセットの内外でハイライト表示およびアニメーション化する方法を公開するようになりました。このハイライトの表示はシリーズのタイプによって異なります。列およびエリア シリーズの場合、サブセットはデータの合計セットの上に表示され、サブセットはシリーズの実際のブラシによって色付けされ、合計セットは不透明度を下げます。折れ線シリーズの場合、サブセットは点線で表示されます。
-
-### **{PackageVerChanges-23-2}**
-
-- [Toolbar](menus/toolbar.md) - ベータ版:
-  - クリップボードを介してチャートを画像に保存するための保存ツール アクションが追加されました。
-  - ツールバーの `Orientation` プロパティを介して垂直方向が追加されました。デフォルトでは、ツールバーは水平方向ですが、ツールバーを垂直方向に表示できるようになり、ツールが左右にポップアップ表示されます。
-  - ツールバーの `renderImageFromText` メソッドを介してカスタム SVG アイコンのサポートが追加され、カスタム ツールの作成がさらに強化されました。
-
-### **{PackageVerChanges-23-1}**
-
-- 新しい [Toolbar](menus/toolbar.md) - ベータ版のコンポーネント。このコンポーネントは、主にチャート コンポーネントで使用される UI 操作のコンパニオン コンテナーです。ツールバーは、`XamDataChart` または `CategoryChart` コンポーネントにリンクされると、プロパティとツール項目のプリセットで動的に更新されます。プロジェクト用のカスタム ツールを作成して、エンド ユーザーが変更を提供できるようになり、無限のカスタマイズが可能になります。
-
-- [ValueLayer](charts/features/chart-overlays.md#{PlatformLower}-value-layer) - `ValueLayer` という名前の新しいシリーズ タイプが公開され、最大値、最小値、平均値など、プロットされたデータのさまざまな焦点のオーバーレイを描画できるようになりました。これは、新しい `ValueLines` コレクションに追加することで、`CategoryChart` と `FinancialChart` に適用されます。
-
-- **破線の配列**を `XamDataChart` のシリーズのさまざまな部分に適用できるようになりました。これは、チャートにプロットされた[シリーズ](charts/types/line-chart.md#{PlatformLower}-折れ線チャートのスタイル設定)、チャートの[グリッド線](charts/features/chart-axis-gridlines.md#{PlatformLower}-軸グリッド線のプロパティ)、チャートにプロットされたシリーズの[トレンドライン](charts/features/chart-trendlines.md#{PlatformLower}-チャート-トレンドラインのダッシュ配列の例)に適用できます。
-
-### **{PackageVerChanges-22-2}**
-
-デフォルトの動作を大幅に改善し、カテゴリ チャート API を改良して使いやすくしました。これらの新しいチャートの改善点は次のとおりです:
-
-* ブラウザー / 画面サイズに基づいた水平ラベル回転のレスポンシブ レイアウト。
-* すべてのプラットフォームでの丸型ラベルの描画が強化されました。
-* StackedFragmentSeries にマーカー プロパティを追加しました。
-* `ShouldPanOnMaximumZoom` プロパティを追加しました。
-* 新しいカテゴリ軸プロパティ:
-    - ZoomMaximumCategoryRange
-    - ZoomMaximumItemSpan
-    - ZoomToCategoryRange
-    - ZoomToItemSpan
-* カテゴリの文字列と数値をグループ化、ソート、集計するための新しい[チャート集計](charts/features/chart-data-aggregations.md) API により、チャート データを事前に集計または計算する必要がなくなります。
-  - InitialSortDescriptions
-  - InitialSorts
-  - SortDescriptions
-  - InitialGroups
-  - InitialGroupDescriptions
-  - GroupDescriptions
-  - InitialSummaries
-  - InitialSummaryDescriptions
-  - SummaryDescriptions
-  - InitialGroupSortDescriptions
-  - GroupSorts
-  - GroupSortDescriptions
-
-> [!Note]
-`IncludedProperties` | `ExcludedProperties` を使用する場合、[チャート集計](charts/features/chart-data-aggregations.md) は機能しません。チャートのこれらのプロパティは非集計データ用です。データを集計しようとすると、これらのプロパティは使用できなくなります。うまくいかない理由は、描画のためにチャートに渡されたコレクションを集計により置き換えるためです。include/exclude プロパティは、そのデータの in/out プロパティをフィルターするように設計されており、それらのプロパティは新しい集計されたコレクションには存在しません。
-
-
-### **{PackageVerChanges-22-1}**
-
-* 高度に構成可能な [DataLegend](charts/features/chart-data-legend.md) コンポーネントを追加しました。これは、`Legend` とよく似ていますが、シリーズの値を表示し、シリーズの行と値の列をフィルタリングし、値のスタイルとフォーマットを行うための多くの構成プロパティを提供します。
-* 高度に構成可能な [DataToolTip](charts/features/chart-data-tooltip.md) が追加されました。これは、シリーズの値とタイトル、およびシリーズの凡例バッジをツールチップに表示します。これは、すべてのチャート タイプのデフォルトのツールチップになりました。
-* 積層シリーズのアニメーションとトランジションインのサポートが追加されました。`IsTransitionInEnabled` プロパティを true に設定すると、アニメーションを有効にできます。そこから、`TransitionInDuration` プロパティを設定してアニメーションが完了するまでの時間を決定し、`TransitionInMode` でアニメーションのタイプを決定できます。
-* 追加された `AssigningCategoryStyle` イベントは、`XamDataChart` のすべてのシリーズで利用できるようになりました。このイベントは、背景色の `Fill` やハイライト表示など、シリーズ項目の外観を条件付きで構成する場合に処理されます。
-* CalloutLayer の新しい `AllowedPositions` 列挙体。チャート内のどこにコールアウトを配置するかを制限するために使用されます。デフォルトでは、コールアウトは最適な場所に配置されますが、これは `TopLeft`、`TopRight`、`BottomLeft`、または `BottomRight` を強制するために使用されます。
-* 注釈レイヤーに追加された新しいコーナー半径プロパティ。各コールアウトのコーナーを丸めるために使用されます。コーナー半径がデフォルトで追加されていることに注意してください。
-    - CalloutLayer の `CalloutCornerRadius`
-    - FinalValueLayer の `AxisAnnotationBackgroundCornerRadius`
-    - CrosshairLayer の `XAxisAnnotationBackgroundCornerRadius` と `YAxisAnnotationBackgroundCornerRadius`
-* さまざまな方法でスクロールバーを有効にするための新しい `HorizontalViewScrollbarMode` および `VerticalViewScrollbarMode` 列挙体。`IsVerticalZoomEnabled` または `IsHorizontalZoomEnabled` と組み合わせると、チャートをナビゲートするための軸に沿ったスクロールバーを、常設またはフェードインおよびフェードアウトすることができます。
-* 新しい `FavorLabellingScaleEnd` は、軸がスケールの最後にラベルを表示することを優先するかどうかを決定します。数値軸 (`NumericXAxis`、`NumericYAxis`、`PercentChangeAxis` など) とのみ互換性があります。
-* 新しい `IsSplineShapePartOfRange` は、軸に要求された軸範囲にスプライン形状を含めるかどうかを決定します。
-* 新しい `XAxisMaximumGap` は、`XAxisGap` を使用するときにプロットされたシリーズの最大許容値を決定します。ギャップは、プロットされたシリーズの列またはバー間のスペースの量を決定します。
-* 新しい `XAxisMinimumGapSize` は、`XAxisGap` を使用するときに、プロットされたシリーズの最小許容ピクセルベース値を決定し、各カテゴリ間に常にある程度の間隔があることを保証します。
-
-### **{PackageVerChanges-21-2}**
-
-> [!Note]
-> パッケージ 「lit-html」 を確認してください。最適な互換性のために、「^2.0.0」 以降がプロジェクトに追加されます。
-
-このリリースでは、地理マップとすべてのチャート コンポーネントのビジュアル デザインと構成オプションにいくつかの改善と簡素化が導入されています。
-
-* `FinancialChart` と `CategoryChart` の `YAxisLabelLocation` プロパティのタイプを **AxisLabelLocation** から **YAxisLabelLocation** に変更しました。
-* `FinancialChart` の `XAxisLabelLocation`  プロパティのタイプを **AxisLabelLocation** から **XAxisLabelLocation** に変更しました。
-* `CategoryChart` に `XAxisLabelLocation` プロパティを追加しました。
-* 凡例で `XamGeographicMap` の地理的なシリーズを表すためのサポートが追加されました。
-* `FinancialChart` と `CategoryChart` にデフォルトの十字線を追加しました。
-* `FinancialChart` と `CategoryChart` にデフォルトの十字線の注釈を追加しました。
-* `FinancialChart` にデフォルトで最終値の注釈を追加しました
-* カテゴリ チャートとファイナンシャル チャートに新しいプロパティを追加しました：
-   - 十字線をカスタマイズするための `CrosshairsLineThickness` およびその他のプロパティ。
-   - 十字線の注釈をカスタマイズするための `CrosshairsAnnotationXAxisBackground` およびその他のプロパティ。
-   - 最終値の注釈をカスタマイズするための `FinalValueAnnotationsBackground` およびその他のプロパティ。
-   - シリーズ塗りつぶしの不透明度を変更できる `AreaFillOpacity` (エリア チャートなど)
-   - マーカーの厚さを変更できる `MarkerThickness`
-* カテゴリ チャート、ファイナンシャル チャート、データ チャート、および地理マップに新しいプロパティを追加しました。
-   - 同じチャート内の複数のシリーズにどのマーカー タイプを割り当てることができる `MarkerAutomaticBehavior` 
-   - 凡例で表されるすべてのシリーズのバッジの形状を設定するための `LegendItemBadgeShape`
-   - 凡例のすべてのシリーズにバッジの複雑さを設定するための `LegendItemBadgeMode` 
-* データ チャートと地理マップのシリーズに新しいプロパティを追加しました。
-   - 凡例で表される特定のシリーズにバッジの形状を設定するための `LegendItemBadgeShape` 
-   - 凡例の特定のシリーズにバッジの複雑さを設定するための `LegendItemBadgeMode`
-* カテゴリ チャートとシリーズで、デフォルトの垂直十字線ストロークを <span style="color:#000000">#000000</span> から <span style="color:#BBBBBB">#BBBBBB</span> に変更しました。
-* 同じチャートにプロットされたすべてのシリーズのマーカーの図形を円に変更しました。これは、チャートの `MarkerAutomaticBehavior` プロパティを `SmartIndexed` 列挙値に設定することで元に戻すことができます。
-* チャートの凡例のシリーズの簡略化された図形で、円、線、または四角のみを表示します。これは、チャートの `LegendItemBadgeMode` プロパティを `MatchSeries` 列挙値に設定することで元に戻すことができます。
-* アクセシビリティを向上させるために、すべてのチャートに表示されるシリーズとマーカーのカラー パレットを変更しました
-
-| 古いのブラシ/アウトライン | 新のアウトライン/ブラシ |
-| -------------------- | ------------------- |
-| <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br> |
-
-### **{PackageVerChanges-21-1}**
-
-このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。例えば、`XamDataChart`、`CategoryChart`、および `FinancialChart`。
-
-* 棒/縦棒/ウォーターフォール シリーズを、角丸ではなく角が四角になるように変更しました。
-* heat min プロパティの 散布高密度シリーズの色を <span style="color:#8a5bb1">#8a5bb1</span> から <span style="color:#000000">#000000</span> に変更しました。
-* heat max プロパティの 散布高密度シリーズの色を <span style="color:#ee5879">#ee5879</span> から <span style="color:#ee5879">#ee5879</span> に変更しました。
-* ファイナンシャル/ウォーターフォール シリーズの `NegativeBrush` および `NegativeOutline` プロパティを <span style="color:#C62828">#C62828</span> から <span style="color:#ee5879">#ee5879</span> に変更しました。
-* マーカーの厚さを 1 pxから 2 pxに変更しました。
-* `PointSeries`、`BubbleSeries`、`ScatterSeries`、`PolarScatterSeries` のマーカーのアウトラインに一致するようにマーカーの塗りつぶしを変更しました。`MarkerFillMode` プロパティを Normal に設定すると、この変更を元に戻すことができます。
-* `TimeXAxis` および `OrdinalTimeXAxis` のラベリングを圧縮しました。
-* 新しいマーカー プロパティ:
-    - series.`MarkerFillMode` - マーカーがアウトラインに依存するように、`MatchMarkerOutline` に設定できます。
-    - series.`MarkerFillOpacity` - 0〜1 の値に設定できます。
-    - series.`MarkerOutlineMode` - マーカーのアウトラインが塗りブラシの色に依存するように、`MatchMarkerBrush` に設定できます。
-* 新シリーズ  プロパティ:
-    - series.`OutlineMode` - シリーズ アウトラインの表示を切り替えるように設定できます。データ チャートの場合、プロパティはシリーズ上にあることに注意してください。
-* チャートがデフォルトのズーム レベルにあるときにビューポートに導入されるブリード オーバー領域を定義する新しいチャート プロパティを追加しました。一般的な使用例では、軸と最初/最後のデータ ポイントの間にスペースを提供します。以下にリストされている `ComputedPlotAreaMarginMode` は、マーカーが有効になっているときに自動的にマージンを設定することに注意してください。その他は、厚さを表す `Double` を指定するように設計されており、PlotAreaMarginLeft などがチャートの 4 辺すべてにスペースを調整します。
-    - chart.`PlotAreaMarginLeft`
-    - chart.`PlotAreaMarginTop`
-    - chart.`PlotAreaMarginRight`
-    - chart.`PlotAreaMarginBottom`
-    - chart.`ComputedPlotAreaMarginMode`
-* 新しいハイライト表示プロパティ:
-    - chart.`HighlightingMode` - ホバーされたシリーズとホバーされていないシリーズをフェードまたは明るくするかを設定します。
-    - chart.`HighlightingBehavior` - 真上または最も近い項目など、マウスの位置に応じてシリーズをハイライト表示するかどうかを設定します。
-    - 以前のリリースでは、ハイライト表示はホバー時にフェードするように制限されていたことに注意してください。
-* 積層型、散布、極座標、ラジアル、およびシェイプ シリーズにハイライト表示を追加しました。
-* 積層型、散布、極座標、ラジアル、およびシェイプ シリーズに注釈レイヤーを追加しました。
-* 積層型シリーズ内の個々の積層フラグメントのデータ ソースをオーバーライドするためのサポートが追加されました。
-* 積層型、散布、範囲、極座標、ラジアル、シェイプ シリーズにカスタム スタイルのイベントを追加しました。
-* 垂直ズームをシリーズ コンテンツに自動的に同期するサポートが追加されました。
-* 表示された最初のラベルに基づいてチャートの水平マージンを自動的に拡張するサポートが追加されました。
-* シリーズとマーカーの再設計されたカラー パレット:
-
-| 古いのブラシ/アウトライン | 新のアウトライン/ブラシ |
-| -------------------- | ------------------- |
-| <span style="color:#7446B9">#7446B9</span> <br><span style="color:#9FB328">#9FB328</span> <br><span style="color:#F96232">#F96232</span> <br><span style="color:#2E9CA6">#2E9CA6</span> <br><span style="color:#DC3F76">#DC3F76</span> <br><span style="color:#FF9800">#FF9800</span> <br><span style="color:#3F51B5">#3F51B5</span> <br><span style="color:#439C47">#439C47</span> <br><span style="color:#795548">#795548</span> <br><span style="color:#9A9A9A">#9A9A9A</span> | <span style="color:#8bdc5c">#8bdc5c</span> <br><span style="color:#8b5bb1">#8b5bb1</span> <br><span style="color:#6db1ff">#6db1ff</span> <br><span style="color:#f8a15f">#f8a15f</span> <br><span style="color:#ee5879">#ee5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#f7d262">#f7d262</span> <br><span style="color:#8ce7d9">#8ce7d9</span> <br><span style="color:#e051a9">#e051a9</span> <br><span style="color:#a8a8b7">#a8a8b7</span> <br> |
-
-例:
-
-|   |   |
-|---|---|
-| <img class="responsive-img" src="../images/chartDefaults1.png" /> | <img class="responsive-img" src="../images/chartDefaults2.png" /> |
-| <img class="responsive-img" src="../images/chartDefaults3.png" /> | <img class="responsive-img" src="../images/chartDefaults4.png" /> |
-
-#### チャート凡例
-
-* バブル、ドーナツ、および円チャートで使用できる水平方向の `Orientation` プロパティを ItemLegend に追加しました
-* `LegendHighlightingMode` プロパティの追加 - 凡例項目にホバーした時にシリーズのハイライト表示を有効にします
-
-
-## {PackageInputs}
-
-### **{PackageVerChanges-22-2.2}**
-
-* `IgcDateTimeInput` で StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date)、DateTimeInputDatePart ではなく DatePart に切り詰められるようになりました。
-* `IgcRadio` および `IgcRadioGroup` で、無効な状態のスタイルとともにコンポーネントの検証が追加されました。
-* `IgcMask` - マスク パターン リテラルをエスケープする機能が追加されました。
-* `IgcBadge` - バッジの形状を制御する `Shape`  プロパティが追加され、`Square` または `Rounded` のいずれかになります。デフォルトでは、バッジの形状は Rounded です。
-* `IgcAvatar` - `RoundShape` プロパティは非推奨になり、将来のバージョンで削除される予定です。ユーザーは、新しく追加された `Shape` 属性によってアバターの形状を制御できます。形状属性は、`Square`、`Rounded`、または `Circle` です。アバターの図形はデフォルトで `Square` です。
-
-### **{PackageVerChanges-21-2.1}**
-
-- Date Picker:
-  * ValueChanged イベントを `SelectedValueChanged` に変更しました。
-- Multi-Column ComboBox:
-  * `TextChanged` イベントを `TextValueChanged` に変更しました。
-  * `ValueChanged` イベントを `SelectedValueChanged` に変更しました。
-
-### **{PackageVerChanges-21-1}**
-
-- Date Picker:
-  - `ShowTodayButton` - 現在の日付のボタンの表示を切り替えます。
-  - `Label` - 日付値の上にラベルを追加します。
-  - `Placeholder` プロパティ - 値が選択されていない場合にカスタム テキストを追加します。
-  - `FormatString` - 入力日付文字列をカスタマイズします。(例: `yyyy-MM-dd`)
-  - `DateFormat` - 選択した日付を LongDate または ShortDate のどちらとして表示するかを指定します。
-  - `FirstDayOfWeek` - 週の最初の曜日を指定します。
-  - `FirstWeekOfYear` - 年の最初の週をいつ表示するかを指定します。例えば、最初の 1 週間、最初の 4 日間の週です。
-  - `ShowWeekNumbers` - 週番号の表示を切り替えます。
-  - `MinDate` & `MaxDate` - 使用可能の選択できる日付の範囲を指定する日付制限。
-  - アクセシビリティの追加
-
-
-## {PackageMaps}
-
-### **{PackageVerChanges-21-1}**
-
-> [!Note]
-> これらの機能は CTP です。
-
-* マップの表示を折り返すためのサポートが追加されました (水平方向に無限にスクロールできます)。
-* 座標原点を折り返しながら、一部のマップ シリーズの表示をシフトするためのサポートが追加されました。
-* シェイプ シリーズのハイライト表示のサポートが追加されました。
-* シェイプ シリーズの一部の注釈レイヤーのサポートが追加されました。
-
-
-## {PackageGauges}
-
-### **{PackageVerChanges-24-1-JUN}**
-
-- `XamRadialGauge`
-    - ハイライト針の新しいラベル。`HighlightLabelText` と `HighlightLabelSnapsToNeedlePivot` および、その他の HighlightLabel の多くのスタイル関連プロパティが追加されました。
-
-### **{PackageVerChanges-23-2-MAR}**
-
-- `XamRadialGauge`
-    - 新しいタイトル/サブタイトルのプロパティ。`TitleText`、`SubtitleText` はゲージの下部近くに表示されます。さらに、`TitleFontSize`、`TitleFontFamily`、`TitleFontStyle`、`TitleFontWeight`、`TitleExtent` など、さまざまなタイトルとサブタイトルのフォント プロパティが追加されました。最後に、新しい `TitleDisplaysValue` により、値を針の位置に対応させることができます。
-    - `XamRadialGauge` の新しい `OpticalScalingEnabled` と `OpticalScalingSize` プロパティを追加しました。この新機能は、ゲージのラベル、タイトル、サブタイトルが 100% のオプティカル スケーリングを持つサイズを管理します。この新機能の詳細については、[こちら](radial-gauge.md#オプティカル-スケーリング)を参照してください。
-    - 新しいハイライト針が追加されました。`HighlightValue` と `HighlightValueDisplayMode` の両方に値と 'Overlay' 設定が指定されたとき、メインの針が薄く表示され、新しい針が表示されます。
-- `XamLinearGauge`
-    - 新しいハイライト針が追加されました。`HighlightValue` と `HighlightValueDisplayMode` の両方に値と 'Overlay' 設定が指定されたとき、メインの針が薄く表示され、新しい針が表示されます。
-- `XamBulletGraph`
-    - `HighlightValueDisplayMode` が 'Overlay' 設定に適用されたとき、パフォーマンス バーには値と新しい `HighlightValue` の差が反映されるようになりました。ハイライト値には、フィルタリング/サブセットが完了した測定パーセンテージが塗りつぶされた色で表示され、残りのバーの外観は割り当てられた値に対して薄く表示され、リアルタイムでパフォーマンスを示します。
-
-## **gauges/charts/maps/grids**
-### **{PackageVerChangedImports}**
-
-- Import ステートメントの変更
-
-Import ステートメントは、API クラスと列挙型へのフル パスではなくパッケージ名のみを使用するように簡素化されました。
-
-> [!Note]
-> これらの重大な変更は、これらのパッケージとコンポーネントでのみ導入されました:
-
-| 影響されるパッケージ | 影響されるコンポーネント |
-| ------------------|---------------------|
-| <a href="{PackageWebsite}{PackageExcel}/v/{PackageVerChangedImports}" target="_blank">{PackageExcel}</a> | [Excel Library](excel-library.md)  |
-| <a href="{PackageWebsite}{PackageSpreadsheet}/v/{PackageVerChangedImports}" target="_blank">{PackageSpreadsheet}</a> | [Spreadsheet](spreadsheet-overview.md) |
-| <a href="{PackageWebsite}{PackageMaps}/v/{PackageVerChangedImports}" target="_blank">{PackageMaps}</a> | [Geo Map](geo-map.md)、[Treemap](charts/types/treemap-chart.md)  |
-| <a href="{PackageWebsite}{PackageGauges}/v/{PackageVerChangedImports}" target="_blank">{PackageGauges}</a> |  [Bullet Graph](bullet-graph.md)、[Linear Gauge](linear-gauge.md)、[Radial Gauge](radial-gauge.md)   |
-| <a href="{PackageWebsite}{PackageCharts}/v/{PackageVerChangedImports}" target="_blank">{PackageCharts}</a>| Category Chart、Data Chart、Donut Chart、Financial Chart、Pie Chart、[Zoom Slider](zoomslider-overview.md)  |
-| <a href="{PackageWebsite}{PackageCore}/v/{PackageVerChangedImports}" target="_blank">{PackageCore}</a> | すべてのクラスと列挙型  |
-| <a href="{PackageWebsite}{PackageGrids}/v/{PackageVerChangedImports}" target="_blank">{PackageGrids}</a> | [Data Grid](grids/data-grid/overview.md) |
-
-- 変更後のコード
-
-API クラスと列挙型へのフル パスの代わりにパッケージ名のみを使用できます。
-
-注: Data Grid コンポーネントとそれに対応するモジュールの名前も変更されました。
-
-```ts
-// gauges:
-import { IgcLinearGaugeComponent } from "igniteui-webcomponents-gauges";
-import { IgcLinearGaugeModule } from "igniteui-webcomponents-gauges";
-import { IgcLinearGraphRange } from "igniteui-webcomponents-gauges";
-import { IgcRadialGaugeComponent } from 'igniteui-webcomponents-gauges';
-import { IgcRadialGaugeModule } from 'igniteui-webcomponents-gauges';
-import { IgcRadialGaugeRange } from 'igniteui-webcomponents-gauges';
-import { SweepDirection } from 'igniteui-webcomponents-core';
-// charts:
-import { IgcFinancialChartComponent } from "igniteui-webcomponents-charts";
-import { IgcFinancialChartModule } from "igniteui-webcomponents-charts";
-import { IgcDataChartComponent } from "igniteui-webcomponents-charts";
-import { IgcDataChartCoreModule } from "igniteui-webcomponents-charts";
-// maps:
-import { IgcGeographicMapComponent } from "igniteui-webcomponents-maps";
-import { IgcGeographicMapModule } from "igniteui-webcomponents-maps";
-// grids:
-import { IgcDataGridComponent } from "igniteui-webcomponents-data-grids";
-import { IgcDataGridModule } from "igniteui-webcomponents-data-grids";
-```
-
-- 変更前のコード
-
-以前は、API クラスと列挙型への完全なパスを使用してインポートする必要がありました。
-
-```ts
-// gauges:
-import { IgcLinearGaugeComponent } from 'igniteui-webcomponents-gauges/ES5/igc-linear-gauge-component';
-import { IgcLinearGaugeModule } from 'igniteui-webcomponents-gauges/ES5/igc-linear-gauge-module';
-import { IgcLinearGraphRange } from 'igniteui-webcomponents-gauges/ES5/igc-linear-graph-range';
-
-import { IgcRadialGaugeComponent } from "igniteui-webcomponents-gauges/ES5/igc-radial-gauge-component";
-import { IgcRadialGaugeModule } from "igniteui-webcomponents-gauges/ES5/igc-radial-gauge-module";
-import { IgcRadialGaugeRange } from "igniteui-webcomponents-gauges/ES5/igc-radial-gauge-range";
-import { SweepDirection } from "igniteui-webcomponents-core/ES5/SweepDirection";
-
-// charts:
-import { IgcFinancialChartComponent } from "igniteui-webcomponents-charts/ES5/igc-financial-chart-component";
-import { IgcFinancialChartModule } from "igniteui-webcomponents-charts/ES5/igc-financial-chart-module";
-import { IgcDataChartComponent } from "igniteui-webcomponents-charts/ES5/igc-data-chart-component";
-import { IgcDataChartCoreModule } from "igniteui-webcomponents-charts/ES5/igc-data-chart-core-module";
-
-// maps:
-import { IgcGeographicMapComponent } from "igniteui-webcomponents-maps/ES5/igc-geographic-map-component";
-import { IgcGeographicMapModule } from "igniteui-webcomponents-maps/ES5/igc-geographic-map-module";
-
-// grids:
-import { IgcLiveGridModule } from 'igniteui-webcomponents-data-grids/ES5/igc-live-grid-module';
-import { IgcLiveGridComponent } from 'igniteui-webcomponents-data-grids/ES5/igc-live-grid-component';
-```
 
 ## {PackageDockManager}
 

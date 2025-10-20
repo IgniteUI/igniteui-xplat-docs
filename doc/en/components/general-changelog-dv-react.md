@@ -11,9 +11,102 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
-- New [Azure Maps](geo-map-display-azure-imagery.md). This is a new geographic imagery mapping service provided by Microsoft® for the Infragistics Geographic Map.
+### {PackageMaps} (Geographic Map)
+
+#### <label>PREVIEW</label> Azure Map Imagery Support
+
+The `IgbGeographicMap` now supports Azure-based map imagery, allowing developers to display detailed, dynamic maps across multiple application types. You can combine multiple map layers, visualize geographic data, and create interactive mapping experiences with ease.
+
+Note: Support for Bing Maps imagery is being phased out. Existing enterprise keys can still be used to access Bing Maps, ensuring your current applications continue to function while you transition to Azure maps.
+
+Explore some of the publicly available [Azure maps here](https://azure.microsoft.com/en-us/products/azure-maps).
+
+### {PackageCharts} (Charts)
+
+#### <label>PREVIEW</label> New Axis Label Events
+
+The following events have been added to the `IgbDataChart` to allow you to detect different operations on the axis labels:
+
+- `LabelMouseDown`
+- `LabelMouseUp`
+- `LabelMouseEnter`
+- `LabelMouseLeave`
+- `LabelMouseMove`
+- `LabelMouseClick`
+
+#### <label>PREVIEW</label> Companion Axis
+
+Added `CompanionAxis` properties to the X and Y axis that allow you to quickly create a clone of an existing axis. When enabled using the `CompanionAxisEnabled` property, this will default the cloned axis to the opposite position of the chart and you can then configure that axes' properties.
+
+#### <label>PREVIEW</label> RadialPieSeries Inset Outlines
+
+There is a new property called `UseInsetOutlines` to control how outlines on the `RadialPieSeries` are rendered. Setting this value to **true** will inset the outlines within the slice shape, whereas a **false** (default) value will place the outlines half-in half-out along the edge of the slice shape.
+
+**Breaking Changes**
+
+- A fix was made due to an issue where the `PlotAreaPosition` and `ChartPosition` properties on `ChartMouseEventArgs` class were reversed. This will change the values that `PlotAreaPosition` and `ChartPosition` return.
+
+### {PackageGrids} (Grids)
+
+#### <label>PREVIEW</label> Cell Suffix Content
+
+Added support for suffix content within the cells that allows you to add additional text or icons to the end of the cell value and style it. The full list of added properties for the cell suffix content is listed below and is available on the `DataGridColumn` and `CellInfo` class:
+
+- `SuffixText`
+- `SuffixTextColor`
+- `SuffixTextFont`
+- `SuffixIconName`
+- `SuffixIconCollectionName`
+- `SuffixIconStroke`
+- `SuffixIconFill`
+- `SuffixIconViewBoxLeft`
+- `SuffixIconViewBoxTop`
+- `SuffixIconViewBoxWidth`
+- `SuffixIconViewBoxHeight`
+- `TextDecoration`
+
+Please note that the maximum size available for the icons is 24x24. You can provide an icon that is larger or smaller than this, but you will need to configure the viewbox settings in order to properly scale it to fit in the 24x24 space so it is fully visible.
+
+### Bug Fixes
+
+| Bug Number | Control | Description |
+|------------|---------|-------------|
+|27304|IgrDataChart|Zoom rectangle is not positioned the same as the background rectangle|
+|30600|IgrDoughnutChart|No textStyle property for either the chart or series (pie chart has this)|
+|31624|IgrCategoryChart|Resizing the containing window of the IgrCategoryChart causes the chart to fail to render the series|
+|33861|Excel Library|Adding line chart corrupts excel File for German culture|
+|37930|IgrDataChart|Data Annotation Overlay Text Color not working|
+|38231|IgrGrid|Unpinned column does not return to the original position if hidden columns exist|
 
 ### Enhancements
+
+#### IgrBulletGraph
+
+- <label>PREVIEW</label> Added new `LabelsVisible` property
+
+#### Charts
+
+- New properties added to the DataToolTipLayer, ItemToolTipLayer, and CategoryToolTipLayer to aid in styling: `ToolTipBackground`, `ToolTipBorderBrush`, and `ToolTipBorderThickness`
+
+- New properties added to the DataLegend to aid in styling: `ContentBackground`, `ContentBorderBrush`, and `ContentBorderThickness`. The `ContentBorderBrush` and `ContentBorderThickness` default to transparent and 0 respectively, so in order to see these borders, you will need to set these properties.
+
+- Added a new property to `ChartMouseEventArgs` called `WorldPosition` that provides the world relative position of the mouse. This position will be a value between 0 and 1 for both the X and Y axis within the axis space.
+
+- Added `HighlightingFadeOpacity` to `SeriesViewer` and `DomainChart`. This allows you to configure the opacity applied to highlighted series.
+
+- Expose `CalloutLabelUpdating` event for domain charts.
+
+#### IgrDataGrid
+
+-  Added new property called `stopPropagation` to DataGrid which prevents mouse events from bubbling to parent elements
+
+#### IgrLinearGauge
+
+- <label>PREVIEW</label> Added new `LabelsVisible` property
+
+## **{PackageVerChanges-25-1-SEP}**
+
+#### Enhancements
 - Added enhancement DatePicker should update calendar view on typing, as Date Range Picker [1818](https://github.com/IgniteUI/igniteui-webcomponents/issues/1818)
 
 ### Bug Fixes
@@ -31,7 +124,6 @@ All notable changes for each version of {ProductName} are documented on this pag
 |[1827](https://github.com/IgniteUI/igniteui-webcomponents/pull/1827)|Select|Icon sizes styles for Indigo theme|
 |[1809](https://github.com/IgniteUI/igniteui-webcomponents/pull/1809)|Switch|Use the new thumb hover property|
 |[1837](https://github.com/IgniteUI/igniteui-webcomponents/pull/1837)|TileManager|Incorrect escape of internal regex|
-
 
 ## **{PackageVerChanges-25-1-AUG}**
 
@@ -68,7 +160,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerChanges-25-1-JUL2}**
 
-- New Component - Date Range Picker
+- <label>NEW</label> Component - Date Range Picker
 
 ### Breaking Changes
 
@@ -107,7 +199,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### {PackageCharts} (Charts)
 
-- Add `MaximumExtent` and `MaximumExtentPercentage` properties for use with axis labels.
+- Add <label>NEW</label> `MaximumExtent` and `MaximumExtentPercentage` properties for use with axis labels.
 
 ## **{PackageVerChanges-24-2-APR2}**
 
@@ -121,20 +213,20 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### {PackageCharts} (Charts)
 
-- New [Chart Data Annotations](charts/features/chart-data-annotations.md)
-  - Data Annotation Band Layer (Beta)
-  - Data Annotation Line Layer (Beta)
-  - Data Annotation Rect Layer (Beta)
-  - Data Annotation Slice Layer (Beta)
-  - Data Annotation Strip Layer (Beta)
+- Added <label>PREVIEW</label> [Chart Data Annotations](charts/features/chart-data-annotations.md) layers:
+  - Data Annotation Band Layer   
+  - Data Annotation Line Layer   
+  - Data Annotation Rect Layer   
+  - Data Annotation Slice Layer  
+  - Data Annotation Strip Layer 
 
-- The [Data Tooltip](charts/features/chart-data-tooltip.md) and [Data Legend](charts/features/chart-data-legend.md) expose a new `LayoutMode` property that you can use to layout the contents of the tooltip or legend in a table or vertical layout structure. 
+- The [Data Tooltip](charts/features/chart-data-tooltip.md) and [Data Legend](charts/features/chart-data-legend.md) expose <label>PREVIEW</label> `LayoutMode` property that you can use to layout the contents of the tooltip or legend in a table or vertical layout structure. 
 
-- The `DefaultInteraction` property of the charts has been updated to include a new enumeration - `DragSelect` in which the dragged preview Rect will select the points contained within. (Beta)
+- <label>PREVIEW</label> The `DefaultInteraction` property of the charts has been updated to include a new enumeration - `DragSelect` in which the dragged preview Rect will select the points contained within. 
 
-- The [ValueOverlay and ValueLayer](charts/features/chart-overlays.md), in addition to the new [Chart Data Annotations](charts/features/chart-data-annotations.md) listed above now expose an `OverlayText` property that can be used to overlay additional annotation text in the plot area. These appearance of these annotations can be configured by using the many OverlayText-prefixed properties. For example, the `OverlayTextBrush` property will configure the color of the overlay text. (Beta)
+- <label>PREVIEW</label> The [ValueOverlay and ValueLayer](charts/features/chart-overlays.md), in addition to the <label>PREVIEW</label> [Chart Data Annotations](charts/features/chart-data-annotations.md) listed above now expose an `OverlayText` property that can be used to overlay additional annotation text in the plot area. These appearance of these annotations can be configured by using the many OverlayText-prefixed properties. For example, the `OverlayTextBrush` property will configure the color of the overlay text. 
 
-- New [Trendline Layer](charts/features/chart-trendlines.md) series type that allows you to apply a single trend line per trend line layer to a particular series. This allows the usage of multiple trend lines on a single series since you can have multiple [TrendlineLayer](charts/features/chart-overlays.md) series types in the chart.
+- <label>NEW</label> [Trendline Layer](charts/features/chart-trendlines.md) series type that allows you to apply a single trend line per trend line layer to a particular series. This allows the usage of multiple trend lines on a single series since you can have multiple [TrendlineLayer](charts/features/chart-overlays.md) series types in the chart.
 
 ### {PackageDashboards} (Dashboards)
 
@@ -284,15 +376,13 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 
 ### {PackageCharts} (Charts)
 
-DashboardTile (Beta)
+DashboardTile <label>PREVIEW</label>
 
 - New [Dashboard Tile](dashboard-tile.md) component is a container control that analyzes and visualizes a bound ItemsSource collection or single point and returns an appropriate data visualization based on the schema and count of the data. This control utilizes a built-in [Toolbar](menus/toolbar.md) component to allow you to make changes to the visualization at runtime, allowing you to see many different visualizations of your data with minimal code.
 
 ### {PackageCharts} (Inputs)
 
-- New ColorEditor (Beta) & Toolbar ToolAction (Beta)
-
-This new [Color Editor](inputs/color-editor.md) can be used as a standalone color picker and is now integrated into the [Toolbar](menus/toolbar.md) component to update visualizations at runtime.
+- <label>PREVIEW</label> [Color Editor](inputs/color-editor.md) can be used as a standalone color picker and is now integrated into <label>PREVIEW</label> ToolAction of [Toolbar](menus/toolbar.md) component to update visualizations at runtime.
 
 ## **{PackageVerChanges-24-2-NOV}**
 
@@ -378,7 +468,7 @@ This new [Color Editor](inputs/color-editor.md) can be used as a standalone colo
   - Added `horizontalSummariesPosition` property to the `pivotUI`, configuring horizontal summaries position.
   - Added row headers for the row dimensions. Can be enabled inside the new `pivotUI` property as `showHeaders` **true**.
   - Keyboard navigation now can move in to row headers back and forth from any row dimension headers or column headers.
-  - Added keyboard interactions for row dimension collapse using <kbd>Alt</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> arrows and row headers sorting using <kbd>Ctrl</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> arrows.
+  - Added keyboard interactions for row dimension collapse using <kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> arrows and row headers sorting using <kbd>CTRL</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> arrows.
 
 **BREAKING CHANGES**:
 
@@ -416,7 +506,7 @@ This new [Color Editor](inputs/color-editor.md) can be used as a standalone colo
 
 * [Data Legend Grouping](charts/features/chart-data-legend.md#{PlatformLower}-data-legend-grouping) & [Data Tooltip Grouping](charts/features/chart-data-tooltip.md#{PlatformLower}-data-tooltip-grouping-for-data-chart) - New grouping feature added. The property `GroupRowVisible` toggles grouping with each series opting in can assign group text via the `DataLegendGroup` property. If the same value is applied to more than one series then they will appear grouped. Useful for large datasets that need to be categorized and organized for all users.
 
-- [Chart Selection](charts/features/chart-data-selection.md) - New series selection styling. This is adopted broadly across all category, financial and radial series for `CategoryChart` and `XamDataChart`. Series can be clicked and shown a different color, brightened or faded, and focus outlines. Manage which items are effected through individual series or entire data item. Multiple series and markers are supported. Useful for illustrating various differences or similarities between values of a particular dataitem. Also  `SelectedSeriesItemsChanged` event and `SelectedSeriesItems` are available for additional help to build out robust business requirements surrounding other actions that can take place within an application such as a popup or other screen with data analysis based on the selection. 
+- [Chart Selection](charts/features/chart-data-selection.md) - New series selection styling. This is adopted broadly across all category, financial and radial series for `CategoryChart` and `XamDataChart`. Series can be clicked and shown a different color, brightened or faded, and focus outlines. Manage which items are effected through individual series or entire data item. Multiple series and markers are supported. Useful for illustrating various differences or similarities between values of a particular data item. Also  `SelectedSeriesItemsChanged` event and `SelectedSeriesItems` are available for additional help to build out robust business requirements surrounding other actions that can take place within an application such as a popup or other screen with data analysis based on the selection. 
 
 - [Proportional Category Angle Axis](charts/types/radial-chart.md) - New axes for the Radial Pie Series in the `XamDataChart`, to enable creating pie charts in the allowing robust visualizations using all the added power of the data chart.
 
@@ -513,7 +603,7 @@ This new [Color Editor](inputs/color-editor.md) can be used as a standalone colo
 
 ## **{PackageVerChanges-23-2}**
 
-### {PackageGrids} (Toolbar - Beta)
+### {PackageGrids} - Toolbar - <label>PREVIEW</label>
 
 * Save tool action has been added to save the chart to an image via the clipboard.
 * Vertical orientation has been added via the toolbar's `Orientation` property. By default the toolbar is horizontal, now the toolbar can be shown in vertical orientation where the tools will popup to the left/right respectfully. 
@@ -529,7 +619,7 @@ This new [Color Editor](inputs/color-editor.md) can be used as a standalone colo
 
 ### New Components
 
-* [Toolbar](menus/toolbar.md) - Beta. This component is a companion container for UI operations to be used primarily with our charting components. The toolbar will dynamically update with a preset of properties and tool items when linked to our `XamDataChart` or `CategoryChart` components. You'll be able to create custom tools for your project allowing end users to provide changes, offering an endless amount of customization.
+* <label>PREVIEW</label> [Toolbar](menus/toolbar.md) - This component is a companion container for UI operations to be used primarily with our charting components. The toolbar will dynamically update with a preset of properties and tool items when linked to our `XamDataChart` or `CategoryChart` components. You'll be able to create custom tools for your project allowing end users to provide changes, offering an endless amount of customization.
 
 ### {PackageCharts} (Charts)
 
@@ -748,8 +838,8 @@ for example:
 * Added `SelectAllRows` - method.
 * Added Row Range Selection - With `GridSelectionMode` property set to MultipleRow the following new functionality is now included:
     - Click and drag to select rows
-    - Shift and click to select multiple rows.
-    - Shift and press the up/down arrow keys to select multiple rows.
+    - <kbd>SHIFT</kbd> and click to select multiple rows.
+    - <kbd>SHIFT</kbd> and press the <kbd>↑</kbd> + <kbd>↓</kbd> arrow keys to select multiple rows.
 * Pressing space bar toggles selection of active row via `GridSelectionMode` property set to MultipleRow or SingleRow
 * Added Column Summaries to Column Options Dialog.
 

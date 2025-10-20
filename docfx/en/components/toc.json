@@ -1249,7 +1249,7 @@
         {
           "name": "Chart Data Annotations",
           "href": "charts/features/chart-data-annotations.md",
-          "status": "NEW"
+          "status": "PREVIEW"
         },
         {
           "name": "Charting in Dashboards",
@@ -1417,7 +1417,7 @@
       {        
         "name": "Displaying Azure Imagery",
         "href": "geo-map-display-azure-imagery.md",
-        "status": "NEW"
+        "status": "PREVIEW"
       },
       {
         "exclude": ["Blazor"],
@@ -1562,9 +1562,10 @@
     "status": ""
   },
    {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Divider",
-    "href": "layouts/divider.md"
+    "href": "layouts/divider.md",
+    "status": "new"
   },
   {
     "exclude": ["Angular", "Blazor"],
@@ -1748,9 +1749,10 @@
     "status": "new"
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "Mask Input",
-    "href": "inputs/mask-input.md"
+    "href": "inputs/mask-input.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
@@ -1798,7 +1800,7 @@
     "href": "inputs/ripple.md"
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "Tooltip",
     "href": "inputs/tooltip.md",
     "status": "new"

@@ -240,7 +240,7 @@
     "names":[{"platform": "React","fileName": "igr-tooltip.ts","mappedName": "IgrTooltip"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "anchor"}], "originalName": "Anchor"},
-      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "withArrow"}], "originalName": "WithArrow"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disableArrow"}], "originalName": "DisableArrow"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "hide"}], "originalName": "Hide"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "hideDelay"}], "originalName": "HideDelay"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "hideTriggers"}], "originalName": "HideTriggers"},
@@ -473,6 +473,34 @@
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "showAll"}], "originalName": "ShowAll"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "singleExpand"}], "originalName": "SingleExpand"} ]
+  },
+  {
+    "originalName": "Tab",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-tab.ts","mappedName": "IgrTab"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "label"}], "originalName": "Label"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "selected"}], "originalName": "Selected"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "Tabs",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseElement",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-tabs.ts","mappedName": "IgrTabs"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "TabsActivation","mappedName": "activation"}], "originalName": "Activation"},
+      {"names":[{"platform": "React", "mappedType": "TabsAlignment","mappedName": "alignment"}], "originalName": "Alignment"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "select"}], "originalName": "Select"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "selected"}], "originalName": "Selected"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
+      {"names":[{"platform": "React", "mappedType": "IgrTabs_TabCollection","mappedName": "tabsCollection"}], "originalName": "TabsCollection"} ]
   },
   {
     "originalName": "ActivePaneEventArgsDetail",
@@ -904,19 +932,6 @@
       {"names":[{"platform": "React", "mappedType": "StepperVerticalAnimation","mappedName": "verticalAnimation"}], "originalName": "VerticalAnimation"} ]
   },
   {
-    "originalName": "Tab",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "React","fileName": "igr-tab.ts","mappedName": "IgrTab"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "label"}], "originalName": "Label"},
-      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "selected"}], "originalName": "Selected"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
     "originalName": "TabComponentEventArgs",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webinputs",
@@ -932,20 +947,6 @@
     "members":[
       {"names":[{"platform": "React", "mappedType": "IgrTabHeaderElement","mappedName": "element"}], "originalName": "Element"},
       {"names":[{"platform": "React", "mappedType": "IgrContentPane","mappedName": "pane"}], "originalName": "Pane"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
-  },
-  {
-    "originalName": "Tabs",
-    "originalNamespace": "Infragistics.Controls",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalBaseTypeName": "BaseElement",
-    "packageName": "igniteui-webinputs",
-    "names":[{"platform": "React","fileName": "igr-tabs.ts","mappedName": "IgrTabs"}],
-    "members":[
-      {"names":[{"platform": "React", "mappedType": "TabsActivation","mappedName": "activation"}], "originalName": "Activation"},
-      {"names":[{"platform": "React", "mappedType": "TabsAlignment","mappedName": "alignment"}], "originalName": "Alignment"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "select"}], "originalName": "Select"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "selected"}], "originalName": "Selected"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
@@ -1048,7 +1049,9 @@
     "members":[
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "mask"}], "originalName": "Mask"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"},
-      {"names":[{"platform": "React", "mappedType": "MaskInputValueMode","mappedName": "valueMode"}], "originalName": "ValueMode"} ]
+      {"names":[{"platform": "React", "mappedType": "MaskInputValueMode","mappedName": "valueMode"}], "originalName": "ValueMode"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "prompt"}], "originalName": "Prompt"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "placeholder"}], "originalName": "Placeholder"} ]
   },
   {
     "originalName": "Tree",

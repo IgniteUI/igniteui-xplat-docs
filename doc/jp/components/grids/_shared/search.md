@@ -474,7 +474,7 @@ const nextSearch = (text: string, caseSensitive: boolean, exactMatch: boolean) =
 
 ### キーボード検索の追加
 
-ユーザーは矢印キーと <kbd>Enter</kbd> キーで結果を移動できます。`PreventDefault` メソッドのデフォルト キャレットの移動を防止する検索入力の **keydown** イベントを処理し、ユーザーが押したキーに基づいて `FindNext`/`FindPrev` メソッドを呼び出します。
+ユーザーは矢印キーと <kbd>ENTER</kbd> キーで結果を移動できます。`PreventDefault` メソッドのデフォルト キャレットの移動を防止する検索入力の **keydown** イベントを処理し、ユーザーが押したキーに基づいて `FindNext`/`FindPrev` メソッドを呼び出します。
 
 <!-- Angular -->
 ```html
@@ -541,7 +541,7 @@ const searchKeyDown = (e: KeyboardEvent<HTMLElement>) => {
 
 <!-- Blazor -->
 
-ユーザーは <kbd>Enter</kbd> キーで結果を移動できます。これを実現するために、検索の **keydown** イベントを処理し、ユーザーが <kbd>Shift</kbd> キーを押したかどうかに応じて `FindNext`/`FindPrev` メソッドを呼び出すことができます。
+ユーザーは <kbd>ENTER</kbd> キーで結果を移動できます。これを実現するために、検索の **keydown** イベントを処理し、ユーザーが <kbd>SHIFT</kbd> キーを押したかどうかに応じて `FindNext`/`FindPrev` メソッドを呼び出すことができます。
 
 <!-- end: Blazor -->
 

@@ -83,6 +83,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ProvideContainer"}], "originalName": "ProvideContainer"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "RadiusFactor"}], "originalName": "RadiusFactor"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "StartAngle"}], "originalName": "StartAngle"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "TextStyle"}], "originalName": "TextStyle"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueMemberPath"}], "originalName": "ValueMemberPath"},
       {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LeaderLineFill"}], "originalName": "leaderLineStyle.fill"},
       {"isVirtual":true,"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "LeaderLineOpacity"}], "originalName": "leaderLineStyle.opacity"},
