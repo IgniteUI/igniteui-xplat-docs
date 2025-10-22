@@ -369,7 +369,7 @@ This will automatically install packages for {ProductName}, along with all of th
 
 ## Importing Component Modules
 
-First we have to import the required modules of the components we want to use. We will go ahead and do this for the [**GeographicMap**](geo-map.md) component.
+First we have to import the required modules of the components we want to use. We will go ahead and do this for the [**Grid**](grids/data-grid.md) component.
 
 
 ```razor
@@ -380,11 +380,7 @@ builder.Services.AddIgniteUIBlazor(
 ```
 
 ```ts
-import { IgrGeographicMapModule, IgrGeographicMap } from 'igniteui-react-maps';
-import { IgrDataChartInteractivityModule } from 'igniteui-react-charts';
-
-IgrGeographicMapModule.register();
-IgrDataChartInteractivityModule.register();
+import { IgrGrid } from 'igniteui-react-grids';
 ```
 
 ```ts
@@ -401,17 +397,23 @@ ModuleManager.register(
 
 ## Using Components
 
-We are now ready to use the {ProductName} map component in our markup! Let's go ahead and define it:
+We are now ready to use the {ProductName} grid component in our markup! Let's go ahead and define it:
 
 ```tsx
 // App.txs
 function App() {
+  const data = [
+    { name: "John", age: 30 },
+    { name: "Jane", age: 25 },
+    { name: "Bob", age: 35 }
+  ];
+
   return (
     <div style={{ height: "100%", width: "100%" }}>
-      <IgrGeographicMap
-        width="800px"
-        height="500px"
-        zoomable="true" />
+      <IgrGrid
+        data={data}
+        autoGenerate="true">
+      </IgrGrid>
     </div>
   );
 }
@@ -435,11 +437,11 @@ Finally, we can run our new application by using one of the following commands:
 npm run-script start
 ```
 
-After executing this command, your project will be built and served locally on your computer. It will automatically open in your default browser and you will be able to use {ProductName} components in your project. The final result should show interactive map of the world:
+After executing this command, your project will be built and served locally on your computer. It will automatically open in your default browser and you will be able to use {ProductName} components in your project. The final result should show a data grid with sample data:
 
-<!-- <img src="../images/general/geo-map.png" /> -->
+<!-- <img src="../images/general/data-grid.png" /> -->
 
-`sample="/maps/geo-map/display-osm-imagery", height="750", alt="{Platform} Overview Example"`
+`sample="/{GridSample}/overview", height="700", alt="{Platform} Overview Example"`
 
 <!-- end: Angular, React -->
 
