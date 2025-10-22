@@ -1,5 +1,95 @@
 {
   "types":[
+    {
+      "originalName": "Chat",
+      "originalNamespace": "Infragistics.Controls",
+      "originalBaseTypeNamespace": "Infragistics.Controls",
+      "originalBaseTypeName": "BaseElement",
+      "packageName": "igniteui-webinputs",
+      "names":[{"platform": "React","fileName": "igr-chat.ts","mappedName": "IgrChatComponent"}],
+      "members":[
+        {"names":[{"platform": "React", "mappedType": "IgrChatMessage[]",  "mappedName": "messages"}], "originalName": "Messages"},
+        {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "draftMessage"}], "originalName": "DraftMessage"},
+        {"names":[{"platform": "React", "mappedType": "IgrChatOptions", "mappedName": "options"}], "originalName": "Options"},
+        {"names":[{"platform": "React", "mappedType": "IgrChatResourceStrings ", "mappedName": "resourceStrings"}], "originalName": "ResourceStrings"},
+        {"names":[{"platform": "React", "mappedType": "method ", "mappedName": "scrollToMessage"}], "originalName": "ScrollToMessage"}
+      ]
+    },
+    {
+      "originalName": "ChatOptions",
+      "isType":true,
+      "originalNamespace": "Infragistics.Controls",
+      "originalBaseTypeNamespace": "Infragistics.Controls",
+      "packageName": "igniteui-webinputs",
+      "names":[{"platform": "React", "mappedName": "IgrChatOptions"}]
+    },
+    {
+      "originalName": "ChatMessage",
+      "isInterface":true,
+      "originalNamespace": "Infragistics.Controls",
+      "originalBaseTypeNamespace": "Infragistics.Controls",
+      "packageName": "igniteui-webinputs",
+      "names":[{"platform": "React", "mappedName": "IgrChatMessage"}],
+      "members":[
+        {"names":[{"platform": "React", "mappedType": "IgrChatMessageAttachment[]",  "mappedName": "attachments"}], "originalName": "Attachments"},
+        {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "id"}], "originalName": "Id"},
+        {"names":[{"platform": "React", "mappedType": "string[]",  "mappedName": "reactions"}], "originalName": "Reactions"},
+        {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "sender"}], "originalName": "Sender"},
+        {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "text"}], "originalName": "Text"},
+        {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "timestamp"}], "originalName": "Timestamp"}
+      ]
+    },
+    {
+      "originalName": "ChatMessageAttachment",
+      "isInterface":true,
+      "originalNamespace": "Infragistics.Controls",
+      "originalBaseTypeNamespace": "Infragistics.Controls",
+      "packageName": "igniteui-webinputs",
+      "names":[{"platform": "React", "mappedName": "IgrChatMessageAttachment"}],
+      "members":[
+        {"names":[{"platform": "React", "mappedType": "File", "mappedName": "file"}], "originalName": "File"},
+        {"names":[{"platform": "React", "mappedType": "string", "mappedName": "id"}], "originalName": "Id"},
+        {"names":[{"platform": "React", "mappedType": "string", "mappedName": "name"}], "originalName": "Name"},
+        {"names":[{"platform": "React", "mappedType": "string", "mappedName": "thumbnail"}], "originalName": "Thumbnail"},
+        {"names":[{"platform": "React", "mappedType": "string", "mappedName": "type"}], "originalName": "Type"},
+        {"names":[{"platform": "React", "mappedType": "string", "mappedName": "url"}], "originalName": "Url"}
+      ]
+    },
+    {
+      "originalName": "ChatRenderers",
+      "isInterface":true,
+      "originalNamespace": "Infragistics.Controls",
+      "originalBaseTypeNamespace": "Infragistics.Controls",
+      "packageName": "igniteui-webinputs",
+      "names":[{"platform": "React", "mappedName": "ChatRenderers"}],
+      "members":[
+        {"names":[{"platform": "React", "mappedType": "ChatTemplateRenderer<ChatAttachmentRenderContext>", "mappedName": "attachment"}], "originalName": "Attachment"},
+        {"names":[{"platform": "React", "mappedType": "ChatTemplateRenderer<ChatAttachmentRenderContext>", "mappedName": "attachmentContent"}], "originalName": "AttachmentContent"},
+        {"names":[{"platform": "React", "mappedType": "ChatTemplateRenderer<ChatAttachmentRenderContext>", "mappedName": "attachmentHeader"}], "originalName": "AttachmentHeader"},
+        {"names":[{"platform": "React", "mappedType": "ChatTemplateRenderer<ChatRenderContext>", "mappedName": "fileUploadButton"}], "originalName": "FileUploadButton"},
+        {"names":[{"platform": "React", "mappedType": "ChatTemplateRenderer<ChatInputRenderContext>", "mappedName": "input"}], "originalName": "Input"},
+        {"names":[{"platform": "React", "mappedType": "ChatTemplateRenderer<ChatRenderContext>", "mappedName": "inputActions"}], "originalName": "InputActions"},
+        {"names":[{"platform": "React", "mappedType": "ChatTemplateRenderer<ChatRenderContext>", "mappedName": "inputActionsEnd"}], "originalName": "InputActionsEnd"},
+        {"names":[{"platform": "React", "mappedType": "ChatTemplateRenderer<ChatRenderContext>", "mappedName": "inputActionsStart"}], "originalName": "InputActionsStart"},
+        {"names":[{"platform": "React", "mappedType": "ChatTemplateRenderer<ChatInputRenderContext>", "mappedName": "inputAttachments"}], "originalName": "InputAttachments"},
+        {"names":[{"platform": "React", "mappedType": "ChatTemplateRenderer<ChatMessageRenderContext>", "mappedName": "message"}], "originalName": "Message"},
+        {"names":[{"platform": "React", "mappedType": "ChatTemplateRenderer<ChatMessageRenderContext>", "mappedName": "messageActions"}], "originalName": "MessageActions"},
+        {"names":[{"platform": "React", "mappedType": "ChatTemplateRenderer<ChatMessageRenderContext>", "mappedName": "messageAttachments"}], "originalName": "MessageAttachments"},
+        {"names":[{"platform": "React", "mappedType": "ChatTemplateRenderer<ChatMessageRenderContext>", "mappedName": "messageContent"}], "originalName": "MessageContent"},
+        {"names":[{"platform": "React", "mappedType": "ChatTemplateRenderer<ChatMessageRenderContext>", "mappedName": "messageHeader"}], "originalName": "MessageHeader"},
+        {"names":[{"platform": "React", "mappedType": "ChatTemplateRenderer<ChatRenderContext>", "mappedName": "sendButton"}], "originalName": "SendButton"},
+        {"names":[{"platform": "React", "mappedType": "ChatTemplateRenderer<ChatRenderContext>", "mappedName": "suggestionPrefix"}], "originalName": "SuggestionPrefix"},
+        {"names":[{"platform": "React", "mappedType": "ChatTemplateRenderer<ChatRenderContext>", "mappedName": "typingIndicator"}], "originalName": "TypingIndicator"}
+      ]
+    },
+    {
+      "originalName": "ChatTemplateRenderer",
+      "isType":true,
+      "originalNamespace": "Infragistics.Controls",
+      "originalBaseTypeNamespace": "Infragistics.Controls",
+      "packageName": "igniteui-webinputs",
+      "names":[{"platform": "React", "mappedName": "ChatTemplateRenderer"}]
+    },
   {
     "originalName": "DockManagerLayout",
     "originalNamespace": "Infragistics.Controls",
@@ -32,7 +122,7 @@
     "originalName": "Tooltip",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webinputs",
-    "names":[{"platform": "React","fileName": "igc-tooltip-component.ts","mappedName": "IgrTooltip"}]
+    "names":[{"platform": "React","fileName": "igr-tooltip-component.ts","mappedName": "IgrTooltip"}]
   },
   {
     "originalName": "Divider",
