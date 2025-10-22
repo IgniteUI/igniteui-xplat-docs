@@ -6,7 +6,7 @@
       "originalBaseTypeNamespace": "Infragistics.Controls",
       "originalBaseTypeName": "BaseElement",
       "packageName": "igniteui-webinputs",
-      "names":[{"platform": "React","fileName": "igc-chat.ts","mappedName": "IgrChatComponent"}],
+      "names":[{"platform": "React","fileName": "igr-chat.ts","mappedName": "IgrChatComponent"}],
       "members":[
         {"names":[{"platform": "React", "mappedType": "IgrChatMessage[]",  "mappedName": "messages"}], "originalName": "Messages"},
         {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "draftMessage"}], "originalName": "DraftMessage"},
@@ -122,7 +122,7 @@
     "originalName": "Tooltip",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-webinputs",
-    "names":[{"platform": "React","fileName": "igc-tooltip-component.ts","mappedName": "IgrTooltip"}]
+    "names":[{"platform": "React","fileName": "igr-tooltip-component.ts","mappedName": "IgrTooltip"}]
   },
   {
     "originalName": "Divider",
