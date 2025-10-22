@@ -381,6 +381,7 @@ builder.Services.AddIgniteUIBlazor(
 
 ```ts
 import { IgrGrid } from 'igniteui-react-grids';
+import 'igniteui-react-grids/grids/themes/light/bootstrap.css';
 ```
 
 ```ts
