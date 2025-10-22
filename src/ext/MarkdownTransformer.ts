@@ -80,6 +80,7 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
     let isClass = false;
     let isInterface = false;
     let isEnum = false;
+    let isType = false;
     let platformType = <APIPlatform>options.platform;
     let platformName = getPlatformName(platformType).toLowerCase();
     let packageName: string | null = null;
@@ -106,7 +107,10 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
                     isEnum = true;
                 } else if (typeInfo.isInterface) { 
                     isInterface = true;
-                } else { // if (!isEnum) {
+                } else if(typeInfo.isType) {
+                    isType = true;
+                }
+                else { // if (!isEnum) {
                     isClass = true;
                 }
 
@@ -179,6 +183,8 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
                 linkText = apiRoot + "enums/" + packageText + resolvedType.toLowerCase() + ".html";
             } else if (isInterface) {
                 linkText = apiRoot + "interfaces/" + packageText + resolvedType.toLowerCase() + ".html";
+            } else if (isType) {
+                linkText = apiRoot + "types/" + packageText + resolvedType.toLowerCase() + ".html";
             }
         }
     }
