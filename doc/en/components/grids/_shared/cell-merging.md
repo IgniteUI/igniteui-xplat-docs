@@ -26,21 +26,20 @@ The grid exposes a `cellMergeMode` property that accepts values from the `GridCe
  - `always` - Merges any adjacent cells that meet the merging condition, regardless of sort state.
  - `onSort` - Merges adjacent cells only when the column is sorted **(default value)**.
 
-```html
-<@@igSelector [data]="data" [cellMergeMode]="cellMergeMode">
+```tsx
+<{ComponentSelector} data={data} cellMergeMode={cellMergeMode} >
     ...
-</@@igSelector>
+</{ComponentSelector}>
 ```
-```ts
-protected cellMergeMode: GridCellMergeMode = 'always';
+```tsx
+const cellMergeMode: GridCellMergeMode = 'always';
 ```
-
 ### Column Merge Toggle
 At the column level, merging can be enabled or disabled with the `merge` property.
 
-```html
-<igx-column field="OrderID" [merge]="true"></igx-column>
-<igx-column field="ShipperName" [merge]="false"></igx-column>
+```tsx
+<IgrColumn field="OrderID" merge={true}></IgrColumn>
+<IgrColumn field="ShipperName" merge={false}></IgrColumn>
 ```
 
 In the above example:
@@ -49,26 +48,26 @@ In the above example:
 
 ### Combined Example
 
-```html
-<@@igSelector [data]="data" [cellMergeMode]="cellMergeMode" [autoGenerate]="false">
-    <igx-column field="OrderID" header="Order ID" [merge]="true"></igx-column>
-    <igx-column field="ShipperName" header="Shipper Name" [merge]="true"></igx-column>
-    <igx-column field="Salesperson" header="Salesperson"></igx-column>
-</@@igSelector>
+```tsx
+<{ComponentSelector} data={data} cellMergeMode]={cellMergeMode} autoGenerate={false}>
+    <IgrColumn field="OrderID" header="Order ID" merge={true}></IgrColumn>
+    <IgrColumn field="ShipperName" header="Shipper Name" merge={true}></IgrColumn>
+    <IgrColumn field="Salesperson" header="Salesperson"></IgrColumn>
+</{ComponentSelector}>
 ```
-```ts
-protected cellMergeMode: GridCellMergeMode = 'onSort';
+```tsx
+const cellMergeMode: GridCellMergeMode = 'onSort';
 ```
 Here, the grid is set to merge only when columns are sorted, and both Category and Product columns are configured for merging.
 
 ## Custom Merge Conditions
 In addition to the built-in `always` and `onSort` modes, the grid allows you to define a custom condition for merging cells through the `mergeStrategy` property. This strategy controls both how cells are compared and how merged ranges are calculated.
 
-### Merge Strategy Interface
-A custom merge strategy must implement the `IGridMergeStrategy` interface:
+### Merge Strategy Class
+A custom merge strategy must implement the `IgrGridMergeStrategy` class:
 
 ```ts
-export interface IGridMergeStrategy {
+export declare class IgrGridMergeStrategy {
     merge: (
         data: any[],
         field: string,
@@ -87,10 +86,10 @@ export interface IGridMergeStrategy {
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 ### Extending the Default Strategy
 
-If you only want to customize part of the behavior (for example, the comparer logic), you can extend the built-in `DefaultMergeStrategy` and override the relevant methods.
+If you only want to customize part of the behavior (for example, the comparer logic), you can extend the built-in `IgrDefaultMergeStrategy` and override the relevant methods.
 
 ```ts
-export class MyCustomStrategy extends DefaultMergeStrategy {
+export class MyCustomStrategy extends IgrDefaultMergeStrategy {
     /* Merge only cells within their respective projects */
     public override comparer(prevRecord: any, record: any, field: string): boolean {
         const a = prevRecord[field];
@@ -110,7 +109,7 @@ The `IgxTreeGrid` provides two built-in strategies that implement the `IGridMerg
 If you only want to customize part of the behavior (for example, the comparer logic), you can extend one of the built-in strategies, either `DefaultTreeGridMergeStrategy` or `ByLevelTreeGridMergeStrategy`, and override the relevant methods.
 
 ```ts
-export class MyCustomStrategy extends DefaultTreeGridMergeStrategy {
+export class MyCustomStrategy extends IgrDefaultTreeGridMergeStrategy {
     /* Merge only cells within their respective projects */
     public override comparer(prevRecord: any, record: any, field: string): boolean {
         const a = prevRecord[field];
@@ -125,18 +124,18 @@ export class MyCustomStrategy extends DefaultTreeGridMergeStrategy {
 
 ### Applying a Custom Strategy
 Once defined, assign the strategy to the grid through the `mergeStrategy` property:
-```html
-<@@igSelector [data]="data" [mergeStrategy]="customStrategy">
-  <igx-column field="ActionID" [merge]="true"></igx-column>
-  <igx-column field="ProjectName" [merge]="true"></igx-column>
-</@@igSelector>
+```tsx
+<{ComponentSelector} data={data} mergeStrategy={customStrategy}>
+  <IgrColumn field="ActionID" merge={true}></IgrColumn>
+  <IgrColumn field="ProjectName" merge={true}></IgrColumn>
+</{ComponentSelector}>
 ```
 ```ts
-protected customStrategy = new MyCustomStrategy();
+const customStrategy = new MyCustomStrategy() as IgrGridMergeStrategy;
 ```
 <!-- ComponentStart: Grid -->
 ### Demo
-`sample="/{ComponentSample}/cell-merging-custom", height="700", alt="{Platform} {ComponentTitle} Cell Merging Example"`
+`sample="/{ComponentSample}/cell-merge-custom-sample", height="700", alt="{Platform} {ComponentTitle} Cell Merging Example"`
 <!-- ComponentEnd: Grid -->
 
 ## Feature Integration 
@@ -166,13 +165,18 @@ Due to the specific behavior of merged cells it has to be noted how exactly it t
 * `{ComponentName}`
 
 ## Additional Resources
-<!-- ComponentStart: Grid -->
-* [Ignite UI for React](../components/general-getting-started.md)
-* [{ComponentName} Overview](../components/grids/data-grid.md)
-<!-- ComponentEnd: Grid -->
-<!-- ComponentStart: TreeGrid -->
-* [{ComponentName} Overview](overview.md)
-<!-- ComponentEnd: TreeGrid -->
-<!-- ComponentStart: HierarchicalGrid -->
-* [{ComponentName} Overview](overview.md)
-<!-- ComponentEnd: HierarchicalGrid -->
+* [Filtering](filtering.md)
+* [Excel Style Filtering](excel-style-filtering.md)
+* [Virtualization and Performance](virtualization.md)
+* [Paging](paging.md)
+* [Sorting](sorting.md)
+* [Summaries](summaries.md)
+* [Column Moving](column-moving.md)
+* [Column Pinning](column-pinning.md)
+* [Column Resizing](column-resizing.md)
+* [Selection](selection.md)
+
+Our community is active and always welcoming to new ideas.
+
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})
