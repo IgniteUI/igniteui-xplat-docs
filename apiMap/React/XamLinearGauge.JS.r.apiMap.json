@@ -45,6 +45,7 @@
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "labelInterval"}], "originalName": "LabelInterval"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "labelsPostInitial"}], "originalName": "LabelsPostInitial"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "labelsPreTerminal"}], "originalName": "LabelsPreTerminal"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "labelsVisible"}], "originalName": "LabelsVisible"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "maximumValue"}], "originalName": "MaximumValue"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "mergeViewports"}], "originalName": "MergeViewports"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "minimumValue"}], "originalName": "MinimumValue"},

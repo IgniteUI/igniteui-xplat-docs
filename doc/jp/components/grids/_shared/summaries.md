@@ -1014,15 +1014,15 @@ igRegisterScript("SummaryTemplate", (ctx) => {
 ## 無効な集計
 
 <!-- WebComponents -->
-`disabled-summaries` プロパティは、{Platform} {ComponentTitle} の集計機能に対して列ごとに正確な制御を提供します。このプロパティを使用すると、{ComponentName} 内の各列に表示される集計をカスタマイズして、最も関連性の高い意味のあるデータのみが表示されるようにすることができます。たとえば、配列で集計キーを指定することにより、`['count', 'min', 'max']` などの特定の集計タイプを除外できます。
+`disabled-summaries` プロパティは、{Platform} {ComponentTitle} の集計機能に対して列ごとに正確な制御を提供します。このプロパティを使用すると、{ComponentName} 内の各列に表示される集計をカスタマイズして、最も関連性の高い意味のあるデータのみが表示されるようにすることができます。たとえば、配列で集計キーを指定することにより、**['count', 'min', 'max']** などの特定の集計タイプを除外できます。
 <!-- end: WebComponents -->
 
 <!-- React -->
-`DisabledSummaries` プロパティは、{Platform} {ComponentTitle} の集計機能に対して列ごとに正確な制御を提供します。このプロパティを使用すると、{ComponentName} 内の各列に表示される集計をカスタマイズして、最も関連性の高い意味のあるデータのみが表示されるようにすることができます。たとえば、配列で集計キーを指定することにより、`['count', 'min', 'max']` などの特定の集計タイプを除外できます。
+`DisabledSummaries` プロパティは、{Platform} {ComponentTitle} の集計機能に対して列ごとに正確な制御を提供します。このプロパティを使用すると、{ComponentName} 内の各列に表示される集計をカスタマイズして、最も関連性の高い意味のあるデータのみが表示されるようにすることができます。たとえば、配列で集計キーを指定することにより、**['count', 'min', 'max']** などの特定の集計タイプを除外できます。
 <!-- end: React -->
 
 <!-- Blazor -->
-`DisabledSummaries` プロパティは、{Platform} {ComponentTitle} の要約機能に対して列ごとに正確な制御を提供します。このプロパティを使用すると、{ComponentName} 内の各列に表示される集計をカスタマイズして、最も関連性の高い意味のあるデータのみが表示されるようにすることができます。たとえば、配列で集計キーを指定することにより、`['count', 'min', 'max']` などの特定の集計タイプを除外できます。
+`DisabledSummaries` プロパティは、{Platform} {ComponentTitle} の要約機能に対して列ごとに正確な制御を提供します。このプロパティを使用すると、{ComponentName} 内の各列に表示される集計をカスタマイズして、最も関連性の高い意味のあるデータのみが表示されるようにすることができます。たとえば、配列で集計キーを指定することにより、**['count', 'min', 'max']** などの特定の集計タイプを除外できます。
 <!-- end: Blazor -->
 
 <!-- WebComponents, React, Blazor -->

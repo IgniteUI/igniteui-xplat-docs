@@ -80,6 +80,7 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
     let isClass = false;
     let isInterface = false;
     let isEnum = false;
+    let isType = false;
     let platformType = <APIPlatform>options.platform;
     let platformName = getPlatformName(platformType).toLowerCase();
     let packageName: string | null = null;
@@ -106,7 +107,10 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
                     isEnum = true;
                 } else if (typeInfo.isInterface) { 
                     isInterface = true;
-                } else { // if (!isEnum) {
+                } else if(typeInfo.isType) {
+                    isType = true;
+                }
+                else { // if (!isEnum) {
                     isClass = true;
                 }
 
@@ -179,6 +183,8 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
                 linkText = apiRoot + "enums/" + packageText + resolvedType.toLowerCase() + ".html";
             } else if (isInterface) {
                 linkText = apiRoot + "interfaces/" + packageText + resolvedType.toLowerCase() + ".html";
+            } else if (isType) {
+                linkText = apiRoot + "types/" + packageText + resolvedType.toLowerCase() + ".html";
             }
         }
     }
@@ -1589,6 +1595,11 @@ export class MarkdownTransformer {
         filePath: string,
         callback: (err: any, results: { content: string, componentOutput: string | null }[] | null) => void): void {
 
+        // injecting styles for NEW, PREVIEW, and UPDATED labels that match labels in navigation menu
+        fileContent = this.replaceAll(fileContent, "<label>UPDATED</label>", "<label class=\"badge badge--updated\">UPDATED</label>");
+        fileContent = this.replaceAll(fileContent, "<label>PREVIEW</label>", "<label class=\"badge badge--preview\">PREVIEW</label>");
+        fileContent = this.replaceAll(fileContent, "<label>NEW</label>", "<label class=\"badge badge--new\">NEW</label>");
+
         // check for strings that should be API links:
         let fileLines = fileContent.toLowerCase().split("\n");
         for (let i = 0; i < fileLines.length; i++) {
@@ -2130,7 +2141,7 @@ export class MarkdownTransformer {
             }else if (node.preview) {
                 node.status = "PREVIEW";
             } else if (node.beta) {
-                node.status = "BETA";
+                node.status = "PREVIEW";
             }
              else {
                 node.status = "";
@@ -2237,9 +2248,6 @@ export class MarkdownTransformer {
                         status = "";
                     }
 
-                    // if (node.name && node.name.indexOf("BETA") > 0) {
-                    //     yml += tab + "  beta: true" + "\n";
-                    // } else
                     if (status.toUpperCase() === "NEW") {
                         yml += tab + "  new: true" + "\n";
                     }
@@ -2250,7 +2258,7 @@ export class MarkdownTransformer {
                         yml += tab + "  preview: true" + "\n";
                     }
                     else if (status.toUpperCase() === "BETA") {
-                        yml += tab + "  beta: true" + "\n";
+                        yml += tab + "  preview: true" + "\n";
                     }
                     else { // status === ""
                         yml += tab + "  new: false" + "\n";

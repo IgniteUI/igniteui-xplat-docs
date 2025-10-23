@@ -52,11 +52,27 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 <!-- end: React -->
 
-<!-- React, WebComponents -->
+<!-- Blazor -->
+
+`Tooltip` を使用する前に、次のように登録する必要があります:
+
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbTooltipModule));
+```
+
+また、`Tooltip` コンポーネントにスタイルを適用するために、追加の CSS ファイルをリンクする必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
+
+{ProductName} の完全な概要については、[「作業の開始」](../general-getting-started.md)トピックを参照してください。
 
 これで、{Platform} `Tooltip` の基本構成から始めることができます。
-
-<!-- end: React, WebComponents -->
 
 ```html
 <igc-tooltip anchor="hover-button">
@@ -74,13 +90,19 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 <IgrButton id="hover-button">Hover me</IgrButton>
 ```
 
-{ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
+```razor
+<IgbTooltip Anchor="hover-button">
+  Congrats you have hovered the button!
+</IgbTooltip>
+
+<IgbButton id="hover-button">Hover me</IgbButton>
+```
 
 ## 使用方法
 
 ### ツールチップ ターゲット
 
-目的の要素にツールチップを添付するには、<!-- WebComponents -->**&lt;igc-tooltip&gt;**<!-- end: WebComponents --><!-- React -->**&lt;IgrTooltip&gt;**<!-- end: React --> 要素の `Anchor` プロパティを使用します。このプロパティは、要素 ID または要素への直接参照のいずれかを受け入れます。ID 参照を使用する場合は、`Anchor` プロパティをターゲット要素の ID に設定するだけです。
+目的の要素にツールチップを添付するには、`Tooltip` の `Anchor` プロパティを使用し、それをターゲット要素の ID に設定します。
 
 ```html
 <igc-button id="target-button">Hover me</igc-button>
@@ -96,7 +118,16 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 </IgrTooltip>
 ```
 
-要素インスタンスを直接渡すことでターゲットを指定することもできます。 
+```razor
+<IgbButton id="target-button">Hover me</IgbButton>
+<IgbTooltip Anchor="target-button">
+  Congrats you have hovered the button!
+</IgbTooltip>
+```
+
+<!-- WebComponents, React -->
+要素インスタンスを直接渡すことでターゲットを指定することもできます。
+<!-- end: WebComponents, React -->
 
 ```html
 <igc-tooltip id="tooltip">
@@ -128,7 +159,7 @@ tooltip.anchor = anchor;
 
 ### ツールチップのコンテンツ
 
-ツールチップのコンテンツは、<!-- WebComponents -->**&lt;igc-tooltip&gt;**<!-- end: WebComponents --><!-- React -->**&lt;IgrTooltip&gt;**<!-- end: React --> 要素の開始タグと終了タグの間にカスタム コンテンツを配置することによって定義されます。
+ツールチップのコンテンツは、`Tooltip` の開始タグと終了タグの間にカスタム コンテンツを配置することによって定義されます。
 
 ```html
 <igc-tooltip>
@@ -142,7 +173,15 @@ tooltip.anchor = anchor;
 </IgrTooltip>
 ```
 
+```razor
+<IgbTooltip>
+  Congrats you have hovered the button!
+</IgbTooltip>
+```
+
+<!-- WebComponents, React -->
 あるいは、単純なテキストを設定するには、`Message` プロパティを使用できます。
+<!-- end: WebComponents, React -->
 
 ```html
 <igc-tooltip message="This is my custom content here."></igc-tooltip>
@@ -152,7 +191,9 @@ tooltip.anchor = anchor;
 <IgrTooltip message="This is my custom content here."></IgrTooltip>
 ```
 
+<!-- WebComponents, React -->
 両方の方法 (スロット化されたコンテンツと `Message` プロパティ) を使用する場合、スロット化されたコンテンツが優先され、`Message` 値は無視されます。
+<!-- end: WebComponents, React -->
 
 ```html
 <igc-button id="target-button">Hover me</igc-button>
@@ -168,7 +209,9 @@ tooltip.anchor = anchor;
 </IgrTooltip>
 ```
 
-この例では、スロット化されたコンテンツ 「I will be shown!」 が `Message` プロパティ値の代わりに表示されます。
+<!-- WebComponents, React -->
+この例では、スロット化されたコンテンツ「I will be shown!」が `Message` プロパティ値の代わりに表示されます。
+<!-- end: WebComponents, React -->
 
 `Tooltip` のコンテンツは単なるテキスト以上のものになります。ツールチップはマークアップ内の通常の要素であるため、必要な要素を追加し、それに応じてスタイルを設定することで、そのコンテンツを強化できます。
 
@@ -185,9 +228,15 @@ tooltip.anchor = anchor;
 ```
 
 ```tsx
-<IgrTooltip show-delay="600" hide-delay="800">
+<IgrTooltip showDelay="600" hideDelay="800">
   Her name is Madelyn James.
 </IgrTooltip>
+```
+
+```razor
+<IgbTooltip ShowDelay="600" HideDelay="800">
+  Her name is Madelyn James.
+</IgbTooltip>
 ```
 
 > [!NOTE]
@@ -195,27 +244,36 @@ tooltip.anchor = anchor;
 
 ### 配置
 
-`Tooltip` は、ターゲット要素を基準にして簡単に配置することもできます。必要なのは、`Placement` プロパティを、`top`、`top-start`、`top-end`、`bottom`、`bottom-start`、`bottom-end `、`right`、`right-start`、`right-end`、`left`、`left-start`、`left-end` のいずれかの位置オプションとともに使用するだけです。
+`Tooltip` は、ターゲット要素を基準にして簡単に配置することもできます。必要なのは、`Placement` プロパティを、`top`、`top-start`、`top-end`、`bottom`、`bottom-start`、`bottom-end `、`right`、`right-start`、`right-end`、`left`、`left-start`、`left-end` のいずれかの配置オプションとともに使用するだけです。
 
-`Placement` プロパティが設定されていない場合、デフォルト値は `"top"` となり、`Tooltip` はターゲット要素の上に配置されます。
+`Placement` プロパティが設定されていない場合、デフォルト値は `bottom` となり、`Tooltip` はターゲット要素の下に配置されます。
 
 さらに、`Sticky` プロパティを使用して `Tooltip` を固定することができます。これにより、閉じるボタンが追加され、ユーザーが閉じるボタンをクリックするか、`Esc` キーを押して手動で閉じるまで、`Tooltip` が表示されたままになります。この動作はデフォルトのホバー動作をオーバーライドし、ユーザーがターゲット要素上でホバーを停止したときに `Tooltip` が消えないようにします。
 
+`Tooltip` には、`WithArrow` プロパティを介して構成できるオプションの矢印インジケータも含まれています。矢印はツールチップをその anchor 要素に視覚的に接続し、その配置はツールチップの `Placement` に基づいて自動的に調整されます。
+
 ```html
 <igc-button id="target-button">Hover me</igc-button>
-<igc-tooltip anchor="target-button" placement="top-start" sticky>
+<igc-tooltip anchor="target-button" placement="top-start" sticky with-arrow>
   Congrats you've hovered the button!
 </igc-tooltip>
 ```
 
 ```tsx
 <IgrButton id="target-button">Hover me</IgrButton>
-<IgrTooltip anchor="target-button" placement="top-start" sticky>
+<IgrTooltip anchor="target-button" placement="top-start" sticky withArrow={true}>
   Congrats you have hovered the button!
 </IgrTooltip>
 ```
 
-次の例では、すべての位置オプションと `Sticky` プロパティの動作のデモを見ることができます。
+```razor
+<IgbButton id="target-button">Hover me</IgbButton>
+<IgbTooltip Anchor="target-button" Placement="PopoverPlacement.TopStart" Sticky="true" DisableArrow="true">
+  Congrats you have hovered the button!
+</IgbTooltip>
+```
+
+次の例では、すべてのツールチップの配置オプション、矢印の配置動作、および `Sticky` プロパティの動作のデモを見ることができます。
 
 `sample="/inputs/tooltip/placement", height="220", alt="{Platform} Tooltip 配置の例"`
 
@@ -234,12 +292,12 @@ tooltip.anchor = anchor;
 
 ### 追加のプロパティ
 
-これまでに説明したプロパティの他に、`Tooltip` コンポーネントには、動作、位置、外観をさらに構成できるさまざまな追加プロパティが用意されています。
+これまでに説明したプロパティの他に、`Tooltip` コンポーネントには、動作、配置、外観をさらに構成できるさまざまな追加プロパティが用意されています。
 
 |名前|タイプ|説明|
 |--|--|--|
 | `Open` | boolean | ツールチップの表示/非表示を決定します。 |
-| `WithArrow` | boolean | **true** に設定すると、ツールチップの矢印インジケーターが無効になります。 |
+| `WithArrow` | boolean | ツールチップの矢印インジケーターをレンダリングするかどうかを決定します。 |
 | `Offset` | number | ツールチップとその `Anchor` 間のピクセル距離を設定します。 |
 
 ### メソッド
