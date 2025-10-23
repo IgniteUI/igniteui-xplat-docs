@@ -29,7 +29,7 @@ mentionedTypes: ["Infragistics.Controls.Grid.Implementation.Grid","Infragistics.
 - `MultipleRow`: 다중 행의 선택이 활성화됨.
 - `RangeCell`: 클릭하고 드래그하여 다중 셀 범위를 선택할 수 있음.
 
-`MultipleRow` 또는 `MultipleCell`로 설정하면 다중 행이나 셀을 선택하기 위해 CTRL 키를 누를 필요가 없습니다. 각 행이나 셀은 특정 행이나 셀을 클릭할 때 선택되거나 선택 취소됩니다.
+`MultipleRow` 또는 `MultipleCell`로 설정하면 다중 행이나 셀을 선택하기 위해 <kbd>CTRL</kbd> 키를 누를 필요가 없습니다. 각 행이나 셀은 특정 행이나 셀을 클릭할 때 선택되거나 선택 취소됩니다.
 
 ## 코드 조각
 

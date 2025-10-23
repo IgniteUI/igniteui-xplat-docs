@@ -4,7 +4,7 @@
   {
     "originalName": "CheckboxList",
     "originalNamespace": "Infragistics.Controls.Inputs.Implementation",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "WebComponents","fileName": "igc-checkbox-list-component.ts","mappedName": "IgcCheckboxListComponent"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "actualRowHeight"}], "originalName": "ActualRowHeight"},
@@ -12,26 +12,33 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "addKeyValue"}], "originalName": "AddKeyValue"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "backgroundColor"}], "originalName": "BackgroundColor"},
       {"names":[{"platform": "WebComponents", "mappedType": "BaseControlTheme","mappedName": "baseTheme"}], "originalName": "BaseTheme"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "checkboxAlignedRight"}], "originalName": "CheckboxAlignedRight"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "checkboxCheckedBackgroundColor"}], "originalName": "CheckboxCheckedBackgroundColor"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "checkboxCheckedBorderColor"}], "originalName": "CheckboxCheckedBorderColor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "checkboxCornerRadius"}], "originalName": "CheckboxCornerRadius"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "checkboxTickColor"}], "originalName": "CheckboxTickColor"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "checkboxUncheckedBackgroundColor"}], "originalName": "CheckboxUncheckedBackgroundColor"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "checkboxUncheckedBorderColor"}], "originalName": "CheckboxUncheckedBorderColor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "dataLegendTarget"}], "originalName": "DataLegendTarget"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "dataMemberPath"}], "originalName": "DataMemberPath"},
       {"names":[{"platform": "WebComponents", "mappedType": "ControlDisplayDensity","mappedName": "density"}], "originalName": "Density"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "deselectAll"}], "originalName": "DeselectAll"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "filterPlaceholderText"}], "originalName": "FilterPlaceholderText"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getDesiredSize"}], "originalName": "GetDesiredSize"},
       {"names":[{"platform": "WebComponents", "mappedType": "CheckboxListIndexType","mappedName": "indexType"}], "originalName": "IndexType"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isDetached"}], "originalName": "IsDetached"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "isEverythingSelected"}], "originalName": "IsEverythingSelected"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "isNothingSelected"}], "originalName": "IsNothingSelected"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isRowHoverEnabled"}], "originalName": "IsRowHoverEnabled"},
       {"names":[{"platform": "WebComponents", "mappedType": "IgcGridSelectedKeysCollection","mappedName": "keys"}], "originalName": "Keys"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "labelClickTriggersChange"}], "originalName": "LabelClickTriggersChange"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "notifyClearItems"}], "originalName": "NotifyClearItems"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "notifyInsertItem"}], "originalName": "NotifyInsertItem"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "notifyRemoveItem"}], "originalName": "NotifyRemoveItem"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "notifySetItem"}], "originalName": "NotifySetItem"},
       {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "primaryKey"}], "originalName": "PrimaryKey"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "propertyTypeMemberPath"}], "originalName": "PropertyTypeMemberPath"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "refresh"}], "originalName": "Refresh"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "removeKeyValue"}], "originalName": "RemoveKeyValue"},
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "rowHeight"}], "originalName": "RowHeight"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "rowHoverBackgroundColor"}], "originalName": "RowHoverBackgroundColor"},
@@ -48,12 +55,19 @@
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "selectedMemberPath"}], "originalName": "SelectedMemberPath"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "showFilter"}], "originalName": "ShowFilter"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "showSelectAll"}], "originalName": "ShowSelectAll"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "subtitleMemberPath"}], "originalName": "SubtitleMemberPath"},
       {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "textColor"}], "originalName": "TextColor"} ]
+  },
+  {
+    "originalName": "CheckboxListKeysClearedEventArgs",
+    "originalNamespace": "Infragistics.Controls.Inputs.Implementation",
+    "packageName": "igniteui-data-grids",
+    "names":[{"platform": "WebComponents","fileName": "igc-checkbox-list-keys-cleared-event-args.ts","mappedName": "IgcCheckboxListKeysClearedEventArgs"}]
   },
   {
     "originalName": "CheckedChangedEventArgs",
     "originalNamespace": "Infragistics.Controls.Inputs.Implementation",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "WebComponents","fileName": "igc-checked-changed-event-args.ts","mappedName": "IgcCheckedChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "index"}], "originalName": "Index"},
@@ -61,9 +75,18 @@
       {"names":[{"platform": "WebComponents", "mappedType": "any[]",   "mappedName": "primaryKey"}], "originalName": "PrimaryKey"} ]
   },
   {
+    "originalName": "CheckboxListIndexTypeChangedEventArgs",
+    "originalNamespace": "Infragistics.Controls.Inputs.Implementation",
+    "packageName": "igniteui-data-grids",
+    "names":[{"platform": "WebComponents","fileName": "igc-checkbox-list-index-type-changed-event-args.ts","mappedName": "IgcCheckboxListIndexTypeChangedEventArgs"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "CheckboxListIndexType","mappedName": "newValue"}], "originalName": "NewValue"},
+      {"names":[{"platform": "WebComponents", "mappedType": "CheckboxListIndexType","mappedName": "oldValue"}], "originalName": "OldValue"} ]
+  },
+  {
     "originalName": "SelectAllCheckboxChangedEventArgs",
     "originalNamespace": "Infragistics.Controls.Inputs.Implementation",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "WebComponents","fileName": "igc-select-all-checkbox-changed-event-args.ts","mappedName": "IgcSelectAllCheckboxChangedEventArgs"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isChecked"}], "originalName": "IsChecked"} ]
@@ -72,7 +95,7 @@
     "originalName": "CheckboxListIndexType",
     "originalNamespace": "Infragistics.Controls.Inputs.Implementation",
     "isEnum":true,
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "WebComponents","fileName": "CheckboxListIndexType.ts","mappedName": "CheckboxListIndexType"}],
     "members":[
       {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},

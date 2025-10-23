@@ -35,6 +35,45 @@
       {"names":[{"platform": "WebComponents", "mappedType": "IgcGeographicMapImagery","mappedName": "tileImagery"}], "originalName": "TileImagery"} ]
   },
   {
+    "originalName": "AzureMapsImageryStyle",
+    "originalNamespace": "Infragistics.Controls.Maps",
+    "isEnum":true,
+    "packageName": "igniteui-maps",
+    "names":[{"platform": "WebComponents","fileName": "AzureMapsImageryStyle.ts","mappedName": "AzureMapsImageryStyle"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "AzureMapsImageryStyle","mappedName": "DarkGrey"}], "originalName": "DarkGrey"},
+      {"names":[{"platform": "WebComponents", "mappedType": "AzureMapsImageryStyle","mappedName": "HybridDarkGreyOverlay"}], "originalName": "HybridDarkGreyOverlay"},
+      {"names":[{"platform": "WebComponents", "mappedType": "AzureMapsImageryStyle","mappedName": "HybridRoadOverlay"}], "originalName": "HybridRoadOverlay"},
+      {"names":[{"platform": "WebComponents", "mappedType": "AzureMapsImageryStyle","mappedName": "LabelsDarkGreyOverlay"}], "originalName": "LabelsDarkGreyOverlay"},
+      {"names":[{"platform": "WebComponents", "mappedType": "AzureMapsImageryStyle","mappedName": "LabelsRoadOverlay"}], "originalName": "LabelsRoadOverlay"},
+      {"names":[{"platform": "WebComponents", "mappedType": "AzureMapsImageryStyle","mappedName": "Road"}], "originalName": "Road"},
+      {"names":[{"platform": "WebComponents", "mappedType": "AzureMapsImageryStyle","mappedName": "Satellite"}], "originalName": "Satellite"},
+      {"names":[{"platform": "WebComponents", "mappedType": "AzureMapsImageryStyle","mappedName": "TerraOverlay"}], "originalName": "TerraOverlay"},
+      {"names":[{"platform": "WebComponents", "mappedType": "AzureMapsImageryStyle","mappedName": "TrafficAbsoluteOverlay"}], "originalName": "TrafficAbsoluteOverlay"},
+      {"names":[{"platform": "WebComponents", "mappedType": "AzureMapsImageryStyle","mappedName": "TrafficDelayOverlay"}], "originalName": "TrafficDelayOverlay"},
+      {"names":[{"platform": "WebComponents", "mappedType": "AzureMapsImageryStyle","mappedName": "TrafficReducedOverlay"}], "originalName": "TrafficReducedOverlay"},
+      {"names":[{"platform": "WebComponents", "mappedType": "AzureMapsImageryStyle","mappedName": "TrafficRelativeDarkOverlay"}], "originalName": "TrafficRelativeDarkOverlay"},
+      {"names":[{"platform": "WebComponents", "mappedType": "AzureMapsImageryStyle","mappedName": "TrafficRelativeOverlay"}], "originalName": "TrafficRelativeOverlay"},
+      {"names":[{"platform": "WebComponents", "mappedType": "AzureMapsImageryStyle","mappedName": "WeatherInfraredOverlay"}], "originalName": "WeatherInfraredOverlay"},
+      {"names":[{"platform": "WebComponents", "mappedType": "AzureMapsImageryStyle","mappedName": "WeatherRadarOverlay"}], "originalName": "WeatherRadarOverlay"} ]
+  },
+  {
+    "originalName": "AzureMapsImagery",
+    "originalNamespace": "Infragistics.Controls.Maps",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
+    "originalBaseTypeName": "GeographicMapImagery",
+    "packageName": "igniteui-maps",
+    "names":[{"platform": "WebComponents","fileName": "igc-azure-maps-imagery.ts","dynamicModuleName": "igc-azure-maps-imagery-dynamic-module.ts","moduleName": "igc-azure-maps-imagery-module.ts","mappedName": "IgcAzureMapsImagery"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "apiKey"}], "originalName": "ApiKey"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "apiVersion"}], "originalName": "ApiVersion"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "cultureName"}], "originalName": "CultureName"},
+      {"names":[{"platform": "WebComponents", "mappedType": "AzureMapsImageryStyle","mappedName": "imageryStyle"}], "originalName": "ImageryStyle"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "localizedView"}], "originalName": "LocalizedView"},
+      {"names":[{"platform": "WebComponents", "mappedType": "Date","mappedName": "timestamp"}], "originalName": "Timestamp"} ]
+  },
+  {
     "originalName": "BingMapsImageryStyle",
     "originalNamespace": "Infragistics.Controls.Maps",
     "isEnum":true,
@@ -234,6 +273,9 @@
     "packageName": "igniteui-maps",
     "names":[{"platform": "WebComponents","fileName": "igc-geographic-shape-series-base-component.ts","mappedName": "IgcGeographicShapeSeriesBaseComponent"}],
     "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "fillMemberPath"}], "originalName": "FillMemberPath"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcBrushScaleComponent","mappedName": "fillScale"}], "originalName": "FillScale"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "fillScaleUseGlobalValues"}], "originalName": "FillScaleUseGlobalValues"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isCustomShapeMarkerStyleAllowed"}], "originalName": "IsCustomShapeMarkerStyleAllowed"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isCustomShapeStyleAllowed"}], "originalName": "IsCustomShapeStyleAllowed"},
       {"names":[{"platform": "WebComponents", "mappedType": "ShapeItemSearchMode","mappedName": "itemSearchMode"}], "originalName": "ItemSearchMode"},

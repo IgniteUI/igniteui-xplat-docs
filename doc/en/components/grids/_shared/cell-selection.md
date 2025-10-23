@@ -40,11 +40,11 @@ This is the default cell selection mode in both parent and child grids. Please k
 
 How to select cells:
 - By **Mouse drag** - Rectangular data selection of cells would be performed.
-- By <kbd>Ctrl</kbd> key press + **Mouse drag** - Multiple range selections would be performed. Any other existing cell selection will be persisted.
-- Instant multi-cell selection by using <kbd>Shift</kbd> key. Select single cell and select another single cell by holding the <kbd>Shift</kbd> key. Cell range between the two cells will be selected. Keep in mind that if another second cell is selected while holding <kbd>Shift</kbd> key the cell selection range will be updated based on the first selected cell position (starting point).
-- Keyboard multi-cell selection by using the <kbd>Arrow</kbd> keys while holding <kbd>Shift</kbd> key. Multi-cell selection range will be created based on the focused cell.
-- Keyboard multi-cell selection by using the <kbd>Ctrl</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd>  keys and <kbd>Ctrl</kbd> + <kbd>Home</kbd>/<kbd>End</kbd> while holding <kbd>Shift</kbd> key. Multi-cell selection range will be created based on the focused cell.
-- Clicking with the **Left Mouse** key while holding <kbd>Ctrl</kbd> key will add single cell ranges into the selected cells collection.
+- By <kbd>CTRL</kbd> key press + **Mouse drag** - Multiple range selections would be performed. Any other existing cell selection will be persisted.
+- Instant multi-cell selection by using <kbd>SHIFT</kbd> key. Select single cell and select another single cell by holding the <kbd>SHIFT</kbd> key. Cell range between the two cells will be selected. Keep in mind that if another second cell is selected while holding <kbd>SHIFT</kbd> key the cell selection range will be updated based on the first selected cell position (starting point).
+- Keyboard multi-cell selection by using the <kbd>Arrow</kbd> keys while holding <kbd>SHIFT</kbd> key. Multi-cell selection range will be created based on the focused cell.
+- Keyboard multi-cell selection by using the <kbd>CTRL</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd>  keys and <kbd>CTRL</kbd> + <kbd>HOME</kbd>/<kbd>END</kbd> while holding <kbd>SHIFT</kbd> key. Multi-cell selection range will be created based on the focused cell.
+- Clicking with the **Left Mouse** key while holding <kbd>CTRL</kbd> key will add single cell ranges into the selected cells collection.
 - Continuous multiple cell selection is available, by clicking with the mouse and dragging.
 
 <!-- ComponentStart: Grid, TreeGrid -->
@@ -72,19 +72,19 @@ If you want to disable cell selection you can just set `CellSelection` to **none
 
 ### While Shift Key is Pressed
 
-- <kbd>Shift</kbd> + <kbd>↑</kbd> to add above cell to the current selection.
-- <kbd>Shift</kbd> + <kbd>↓</kbd> to add below cell to the current selection.
-- <kbd>Shift</kbd> + <kbd>←</kbd> to add left cell to the current selection.
-- <kbd>Shift</kbd> + <kbd>→</kbd> to add right cell to the current selection.
+- <kbd>SHIFT</kbd> + <kbd>↑</kbd> to add above cell to the current selection.
+- <kbd>SHIFT</kbd> + <kbd>↓</kbd> to add below cell to the current selection.
+- <kbd>SHIFT</kbd> + <kbd>←</kbd> to add left cell to the current selection.
+- <kbd>SHIFT</kbd> + <kbd>→</kbd> to add right cell to the current selection.
 
 ### While Ctrl + Shift Keys are Pressed
 
-- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd> to select all cells above the focused cell in the column.
-- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↓</kbd> to select all cells below the focused cell in the column.
-- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd> to select all cells till the start of the row.
-- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>→</kbd> to select all cells till the end of the row.
-- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Home</kbd> to select all cells from the focused cell till the first-most cell in the grid
-- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>End</kbd> to select all cells from the focused cell till the last-most cell in the grid
+- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>↑</kbd> to select all cells above the focused cell in the column.
+- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>↓</kbd> to select all cells below the focused cell in the column.
+- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>←</kbd> to select all cells till the start of the row.
+- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>→</kbd> to select all cells till the end of the row.
+- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>HOME</kbd> to select all cells from the focused cell till the first-most cell in the grid
+- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>END</kbd> to select all cells from the focused cell till the last-most cell in the grid
 
 > [!Note]
 > Continuous scroll is possible only within Grid's body.

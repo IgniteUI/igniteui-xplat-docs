@@ -1249,7 +1249,7 @@
         {
           "name": "Chart Data Annotations",
           "href": "charts/features/chart-data-annotations.md",
-          "status": "NEW"
+          "status": "PREVIEW"
         },
         {
           "name": "Charting in Dashboards",
@@ -1414,6 +1414,11 @@
         "href": "geo-map-binding-multiple-sources.md",
         "status": ""
       },
+      {        
+        "name": "Displaying Azure Imagery",
+        "href": "geo-map-display-azure-imagery.md",
+        "status": "PREVIEW"
+      },
       {
         "exclude": ["Blazor"],
         "name": "Displaying Bing Imagery",
@@ -1557,9 +1562,10 @@
     "status": ""
   },
    {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Divider",
-    "href": "layouts/divider.md"
+    "href": "layouts/divider.md",
+    "status": "new"
   },
   {
     "exclude": ["Angular", "Blazor"],
@@ -1743,9 +1749,10 @@
     "status": "new"
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "Mask Input",
-    "href": "inputs/mask-input.md"
+    "href": "inputs/mask-input.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
@@ -1782,12 +1789,18 @@
     "header": true
   },
   {
+    "exclude": ["Angular", "Blazor"],
+    "name": "Chat",
+    "href": "interactivity/chat.md",
+    "status": "new"
+  },
+  {
     "exclude": ["Angular"],
     "name": "Ripple",
     "href": "inputs/ripple.md"
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "Tooltip",
     "href": "inputs/tooltip.md",
     "status": "new"

@@ -124,7 +124,6 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "titleSnapsToNeedlePivot"}], "originalName": "TitleSnapsToNeedlePivot"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "titleText"}], "originalName": "TitleText"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "transitionDuration"}], "originalName": "TransitionDuration"},
-      {"names":[{"platform": "Angular", "mappedType": "(time: number) => number","mappedName": "transitionEasingFunction"}], "originalName": "TransitionEasingFunction"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "transitionProgress"}], "originalName": "TransitionProgress"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "unscaleValue"}], "originalName": "UnscaleValue"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "value"}], "originalName": "Value"} ]

@@ -1247,7 +1247,7 @@
         {
           "name": "チャート テータ注釈",
           "href": "charts/features/chart-data-annotations.md",
-          "status": "NEW"
+          "status": "PREVIEW"
         },
         {
           "name": "ダッシュボードでのチャート作成",
@@ -1412,6 +1412,11 @@
         "href": "geo-map-binding-multiple-sources.md",
         "status": ""
       },
+      {        
+        "name": "Azure 画像の表示",
+        "href": "geo-map-display-azure-imagery.md",
+        "status": "PREVIEW"
+      },
       {
         "exclude": ["Blazor"],
         "name": "Bing 画像の表示",
@@ -1555,9 +1560,10 @@
     "status": ""
   },
    {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "デバイダー",
-    "href": "layouts/divider.md"
+    "href": "layouts/divider.md",
+    "status": "new"
   },
   {
     "exclude": ["Angular", "Blazor"],
@@ -1741,9 +1747,10 @@
     "status": "new"
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "マスク入力",
-    "href": "inputs/mask-input.md"
+    "href": "inputs/mask-input.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
@@ -1780,12 +1787,18 @@
     "header": true
   },
   {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "チャット",
+    "href": "interactivity/chat.md",
+    "status": "new"
+  },
+  {
     "exclude": ["Angular"],
     "name": "リップル",
     "href": "inputs/ripple.md"
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "ツールチップ",
     "href": "inputs/tooltip.md",
     "status": "new"
