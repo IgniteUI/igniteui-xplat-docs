@@ -1568,7 +1568,7 @@
     "status": "new"
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "Tile Manager",
     "href": "layouts/tile-manager.md",
     "status": "new"
