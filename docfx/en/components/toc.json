@@ -159,6 +159,12 @@
     "href": "grids/data-grid.md",
     "items": [
       {
+        "exclude": ["Angular", "WebComponents", "Blazor"],
+        "name": "Cell Merging",
+        "href": "grids/grid/cell-merging.md",
+        "status": "NEW"
+      },
+      {
         "exclude": ["Angular"],
         "name": "Clipboard Interactions",
         "href": "grids/grid/clipboard-interactions.md"
@@ -397,6 +403,12 @@
     "href": "grids/hierarchical-grid/overview.md",
     "items": [
       {
+        "exclude": ["Angular", "WebComponents", "Blazor"],
+        "name": "Cell Merging",
+        "href": "grids/hierarchical-grid/cell-merging.md",
+        "status": "NEW"
+      },
+      {
         "exclude": ["Angular"],
         "name": "Collapsible Column Groups",
         "href": "grids/hierarchical-grid/collapsible-column-groups.md"
@@ -618,6 +630,12 @@
     "name": "Tree Grid",
     "href": "grids/tree-grid/overview.md",
     "items": [
+      {
+        "exclude": ["Angular", "WebComponents", "Blazor"],
+        "name": "Cell Merging",
+        "href": "grids/tree-grid/cell-merging.md",
+        "status": "NEW"
+      },
       {
         "exclude": ["Angular"],
         "name": "Clipboard Interactions",
@@ -899,10 +917,6 @@
         "name": "Grid Editing",
         "href": "grids/data-grid/cell-editing.md",
         "status": ""
-      },
-      {
-        "name": "Cell Merging",
-        "href": "grids/data-grid/cell-merging.md"
       },
       {
         "name": "Cell Selection",
