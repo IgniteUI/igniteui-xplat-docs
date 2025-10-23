@@ -28,3 +28,11 @@ gulp updateApiMapping
 - commit changes made in the `apiMap` folder
 
 - create a pull request and target `vnext` branch on [github](https://github.com/IgniteUI/igniteui-xplat-docs)
+
+### API Mapping Overrides
+
+There are custom override files, that allow adding manual mappings. These can be added per platform and end with `*.overrides.json`. 
+
+For example: `apiMap/WebComponents/webInputs.JS.wc.apiMap.overrides.json`
+
+They follow the same format as the rest of the mapping files, but allow adding mappings for components that are not yet added to the jQuery solution and cannot generate a mapping automatically.
