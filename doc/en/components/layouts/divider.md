@@ -1,6 +1,6 @@
 ---
 title: {Platform} Divider | Layout Controls | Infragistics
-_description: Use Infragistics' {Platform} avatar component to display an image, icon, or initials.
+_description: Use Infragistics' {Platform} divider component to easily create a horizontal/vertical rule as a break between content to better organize information on a page.
 _keywords: {ProductName}, UI controls, {Platform} widgets, Web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} DIvider components, {Platform} Divider controls
 mentionedTypes: ["Divider"]
 ---
@@ -54,7 +54,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbDividerModule));
 ```
 <!-- Blazor -->
 
-You will also need to link an additional CSS file to apply the styling to the `Avatar` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+You will also need to link an additional CSS file to apply the styling to the `Divider` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -181,12 +181,12 @@ The following sample illustrates how the `Divider` can be integrated within the 
 ```
 
 ```razor
-<IgrSelect>
- <IgrSelectItem>Item 1</IgrSelectItem>
- <IgrSelectItem>Item 2</IgrSelectItem>
- <IgrDivider></IgrDivider>
- <IgrSelectItem>Item 2</IgrSelectItem>
-</IgrSelect>
+<IgbSelect>
+ <IgbSelectItem>Item 1</IgbSelectItem>
+ <IgbSelectItem>Item 2</IgbSelectItem>
+ <IgbDivider></IgbDivider>
+ <IgbSelectItem>Item 2</IgbSelectItem>
+</IgbSelect>
 ```
 
 `sample="/layouts/divider/select", height="330", alt="{Platform} Divider Select Example"`

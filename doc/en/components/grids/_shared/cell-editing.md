@@ -33,7 +33,7 @@ In addition, you can define your own custom templates for update-data actions an
 You can enter edit mode for specific cell, when an editable cell is focused in one of the following ways:
  - on double click;
  - on single click - Single click will enter edit mode only if the previously selected cell was in edit mode and currently selected cell is editable. If the previously selected cell was not in edit mode, single click will select the cell without entering edit mode;
- - on key press <kbd>Enter</kbd>;
+ - on key press <kbd>ENTER</kbd>;
  - on key press <kbd>F2</kbd>;
 
 You can exit edit mode **without committing** the changes in one of the following ways:
@@ -41,9 +41,9 @@ You can exit edit mode **without committing** the changes in one of the followin
  - when you perform *sorting*, *filtering*, *searching* and *hiding* operations;
 
 You can exit edit mode and **commit** the changes in one of the following ways:
- - on key press <kbd>Enter</kbd>;
+ - on key press <kbd>ENTER</kbd>;
  - on key press <kbd>F2</kbd>;
- - on key press <kbd>Tab</kbd>;
+ - on key press <kbd>TAB</kbd>;
  - on single click to another cell - when you click on another cell in the `{ComponentName}`, your changes will be submitted.
  - operations like paging, resize, pin or move will exit edit mode and changes will be submitted.
 
@@ -590,7 +590,7 @@ function handleKeyDown(event: KeyBoardEvent) {
 ```
 <!-- end: React -->
 
-* <kbd>Enter</kbd>/<kbd>Shift+Enter</kbd> navigation
+* <kbd>ENTER</kbd>/<kbd>SHIFT</kbd> + <kbd>ENTER</kbd> navigation
 
 <!-- Angular, WebComponents -->
 ```typescript
@@ -658,7 +658,7 @@ Please check the full sample for further reference:
 Main benefits of the above approach include:
 
 - Constant edit mode: typing while a cell is selected will immediately enter edit mode with the value typed, replacing the existing one
-- Any non-data rows are skipped when navigating with <kbd>Enter</kbd>/<kbd>Shift+Enter</kbd>. This allows users to quickly cycle through their values.
+- Any non-data rows are skipped when navigating with <kbd>ENTER</kbd>/<kbd>SHIFT</kbd> + <kbd>ENTER</kbd>. This allows users to quickly cycle through their values.
 
 <!-- ComponentEnd: Grid -->
 

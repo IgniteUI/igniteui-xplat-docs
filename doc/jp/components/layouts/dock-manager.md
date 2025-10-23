@@ -541,32 +541,32 @@ igc-dockmanager::part(pane-header-maximize-button) {
 
 ### ドッキング
 
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd> グローバルの上へのドック。
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↓</kbd> グローバルの下へのドック。
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>→</kbd> グローバルの右へのドック。
-- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd> グローバルのの左へのドック。
-- <kbd>Shift</kbd> + <kbd>↑</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが上にドッキングされます。
-- <kbd>Shift</kbd> + <kbd>↓</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが下にドッキングされます。
-- <kbd>Shift</kbd> + <kbd>→</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが右にドッキングされます。
-- <kbd>Shift</kbd> + <kbd>←</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが左にドッキングされます。
+- <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>↑</kbd> グローバルの上へのドック。
+- <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>↓</kbd> グローバルの下へのドック。
+- <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>→</kbd> グローバルの右へのドック。
+- <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>←</kbd> グローバルのの左へのドック。
+- <kbd>SHIFT</kbd> + <kbd>↑</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが上にドッキングされます。
+- <kbd>SHIFT</kbd> + <kbd>↓</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが下にドッキングされます。
+- <kbd>SHIFT</kbd> + <kbd>→</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが右にドッキングされます。
+- <kbd>SHIFT</kbd> + <kbd>←</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが左にドッキングされます。
 
 ### ナビゲーション
- - <kbd>Cmd/Ctrl</kbd> + <kbd>F6</kbd> または <kbd>Cmd/Ctrl</kbd> + <kbd>→</kbd> ドキュメント ホストの次のタブにフォーカスします。
- - <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> または <kbd>Cmd/Ctrl</kbd> + <kbd>←</kbd> ドキュメント ホストの前のタブにフォーカスします。
- - <kbd>Alt</kbd> + <kbd>F6</kbd> 次のコンテンツ ペインにフォーカスします。
- - <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> 前のコンテンツ ペインにフォーカスします。
+ - <kbd>CMD/CTRL</kbd> + <kbd>F6</kbd> または <kbd>CMD/CTRL</kbd> + <kbd>→</kbd> ドキュメント ホストの次のタブにフォーカスします。
+ - <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F6</kbd> または <kbd>CMD/CTRL</kbd> + <kbd>←</kbd> ドキュメント ホストの前のタブにフォーカスします。
+ - <kbd>ALT</kbd> + <kbd>F6</kbd> 次のコンテンツ ペインにフォーカスします。
+ - <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F6</kbd> 前のコンテンツ ペインにフォーカスします。
 
 ### ペイン ナビゲーター
 
 次のキーボード ショートカットは、ペインやドキュメントをを反復できるナビゲーターを示しています。
 
- - <kbd>Cmd/Ctrl</kbd> + <kbd>F7</kbd> または <kbd>Cmd/Ctrl</kbd> + <kbd>F8</kbd>  最初のドキュメントから開始します。
- - <kbd>Alt</kbd> + <kbd>F7</kbd> または <kbd>Alt</kbd> + <kbd>F8</kbd> 最初のペインから開始します。
- - <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F7</kbd> または <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F8</kbd> 最後のドキュメントから逆方向に開始します。
- - <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F7</kbd> または <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F8</kbd> 最後のペインから逆方向に開始します。
+ - <kbd>CMD/CTRL</kbd> + <kbd>F7</kbd> または <kbd>CMD/CTRL</kbd> + <kbd>F8</kbd>  最初のドキュメントから開始します。
+ - <kbd>ALT</kbd> + <kbd>F7</kbd> または <kbd>ALT</kbd> + <kbd>F8</kbd> 最初のペインから開始します。
+ - <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F7</kbd> または <kbd>CMD/CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F8</kbd> 最後のドキュメントから逆方向に開始します。
+ - <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F7</kbd> または <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F8</kbd> 最後のペインから逆方向に開始します。
 
 ### その他
- - <kbd>Alt</kbd> + <kbd>F3</kbd> アクティブなペインを閉じます。
+ - <kbd>ALT</kbd> + <kbd>F3</kbd> アクティブなペインを閉じます。
 
 サンプル [demo](dock-manager.md#{PlatformLower}-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
 
