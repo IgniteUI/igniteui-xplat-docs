@@ -14,7 +14,7 @@ The Ignite UI for {Platform} {ComponentTitle} provides a Cell Merging feature th
 
 ## {Platform} {ComponentTitle} Cell Merging Example
 
-`sample="/{ComponentSample}/cell-merging", height="700", alt="{Platform} {ComponentTitle} Cell Merging Example"`
+`sample="/{ComponentSample}/cell-merge", height="700", alt="{Platform} {ComponentTitle} Cell Merging Example"`
 
 ## Enabling and Using Cell Merging
 Cell merging in the grid is controlled at two levels:
