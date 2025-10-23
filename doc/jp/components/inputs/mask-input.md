@@ -22,9 +22,9 @@ _language: ja
 ```cmd
 npm install {PackageWebComponents}
 ```
-<!-- end: WebComponents -->
 
 `MaskInput` を使用する前に、次のように登録する必要があります:
+<!-- end: WebComponents -->
 
 ```ts
 import { defineComponents, IgcMaskInputComponent } from 'igniteui-webcomponents';
@@ -56,6 +56,23 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 </IgrMaskInput>
 ```
 
+<!-- Blazor -->
+`MaskInput` を使用する前に、次のように登録する必要があります:
+
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbMaskInputModule));
+```
+
+また、`MaskInput` コンポーネントにスタイルを適用するために、追加の CSS ファイルをリンクする必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
+
 {ProductName} の完全な概要については、[作業の開始](../general-getting-started.md)トピックを参照してください。
 
 ### マスクのルール
@@ -78,7 +95,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 ### マスクの適用
 
-マスクの適用は非常に簡単です。必要なことは、入力の `mask` プロパティに事前に決定されたパターンを提供することだけです。
+マスクの適用は非常に簡単です。必要なことは、入力の `Mask` プロパティに事前に決定されたパターンを提供することだけです。
 
 以下の例では、内線番号付きの電話番号にマスクを適用します。
 
@@ -98,6 +115,13 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 </IgrMaskInput>
 ```
 
+```razor
+<IgbMaskInput @ref="MaskInputRef" Mask="(####) 00-00-00 Ext. 9999">
+    <IgbIcon IconName="phone" Collection="material" slot="prefix"></IgbIcon>
+    <span slot="helper-text">Phone number</span>
+</IgbMaskInput>
+```
+
 その後、ブラウザーに次のように表示されます:
 
 `sample="/inputs/mask-input/applying-mask", height="150", alt="{Platform} マスク入力マスクの適用の例"`
@@ -106,7 +130,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 ### プロンプト文字
 
-開発者は、マスクの塗りつぶされていない部分に使用されるプロンプト シンボルをカスタマイズできます。これを行うには、`prompt` プロパティに任意の文字を指定するだけです:
+開発者は、マスクの塗りつぶされていない部分に使用されるプロンプト シンボルをカスタマイズできます。これを行うには、`Prompt` プロパティに任意の文字を指定するだけです:
 
 ```html
 <igc-mask-input id="mask-input" mask="(####) 00-00-00 Ext. 9999" prompt="-"></igc-mask-input>
@@ -116,11 +140,15 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 <IgrMaskInput mask="(####) 00-00-00 Ext. 9999" prompt="-"></IgrMaskInput>
 ```
 
+```razor
+<IgbMaskInput @ref="MaskInputRef" Mask="(####) 00-00-00 Ext. 9999" Prompt="-"></IgbMaskInput>
+```
+
 デフォルトでは、`prompt` 文字はアンダースコアです。
 
 ### プレースホルダー
 
-開発者は、ネイティブ入力プレースホルダー属性の目的を果たす `placeholder` プロパティを利用することもできます。プレースホルダーに値が指定されていない場合は、マスクの値がそのまま使用されます。
+開発者は、ネイティブ入力プレースホルダー属性の目的を果たす `Placeholder` プロパティを利用することもできます。プレースホルダーに値が指定されていない場合は、マスクの値がそのまま使用されます。
 
 ```html
 <igc-mask-input id="mask-input" mask="00/00/0000" placeholder="dd/MM/yyyy"></igc-mask-input>
@@ -130,9 +158,13 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 <IgrMaskInput mask="00/00/0000" placeholder="dd/MM/yyyy"></IgrMaskInput>
 ```
 
+```razor
+<IgbMaskInput @ref="MaskInputRef" Mask="00/00/0000" Placeholder="dd/MM/yyyy"></IgbMaskInput>
+```
+
 ### 値モード
 
-IgcMaskInput は、特定のマスクが適用されたときにフォームにバインドする入力値 (書式設定付きまたは生) を構成するために `raw` および `withFormatting` オプションを選択できる `valueMode` プロパティを公開します。デフォルトでは、`valueMode` は *raw* に設定されています。以下の例をご覧ください:
+IgcMaskInput は、特定のマスクが適用されたときにフォームにバインドする入力値 (書式設定付きまたは生) を構成するために `raw` および `withFormatting` オプションを選択できる `ValueMode` プロパティを公開します。デフォルトでは、`ValueMode` は *raw* に設定されています。以下の例をご覧ください:
 
 `sample="/inputs/mask-input/value-modes", height="150", alt="{Platform} マスク入力値モードの例"`
 
