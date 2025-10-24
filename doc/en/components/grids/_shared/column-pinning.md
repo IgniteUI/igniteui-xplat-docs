@@ -10,7 +10,7 @@ _canonicalLink: {CanonicalLinkToGridColumnPinning}
 
 # {Platform} {ComponentTitle} Column Pinning
 
-The {ProductName} Column Pinning feature in {Platform} {ComponentTitle} enables developers to lock specific columns in a desired order, ensuring visibility all the time even when users scroll horizontally through the `Grid`. There’s an integrated UI for Column Pinning, accessible via the {Platform} {ComponentTitle} toolbar. Additionally, developers have the flexibility to build a custom user interface which changes the pin state of the columns.
+The {ProductName} Column Pinning feature in {Platform} {ComponentTitle} enables developers to lock specific columns in a desired order, ensuring visibility all the time even when users scroll horizontally through the `{ComponentName}`. There’s an integrated UI for Column Pinning, accessible via the {Platform} {ComponentTitle} toolbar. Additionally, developers have the flexibility to build a custom user interface which changes the pin state of the columns.
 
 ## {Platform} {ComponentTitle} Column Pinning Example
 
@@ -86,6 +86,15 @@ constructor() {
     <igc-column field="ID"></igc-column>
 </igc-tree-grid>
 ```
+<!-- React -->
+```tsx
+<{ComponentName} data={nwindData} autoGenerate={false}>
+    <IgrColumn field="Name" pinned={true}></IgrColumn>
+    <IgrColumn field="Phone" pinned={true}></IgrColumn>
+    <IgrColumn field="Title"></IgrColumn>
+</{ComponentName}>
+```
+<!-- end: React -->
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -103,6 +112,15 @@ constructor() {
     <igc-column field="Debut" width="200px"></igc-column>
 </igc-hierarchical-grid>
 ```
+<!-- React -->
+```tsx
+<{ComponentName} data={nwindData} autoGenerate={false}>
+    <IgrColumn field="CompanyName" pinned={true}></IgrColumn>
+    <IgrColumn field="ContactName"></IgrColumn>
+    <IgrColumn field="ContactTitle"></IgrColumn>
+</{ComponentName}>
+```
+<!-- end: React -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
 You may also use the `{ComponentName}`'s `PinColumn` or `UnpinColumn` methods of the `{ComponentName}` to pin or unpin columns by their field name:
@@ -133,16 +151,29 @@ gridRef.current.unpinColumn('Name');
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
+<!-- Angular, WebComponents -->
 ```typescript
 this.treeGrid.pinColumn('Title');
 this.treeGrid.unpinColumn('Name');
 ```
+<!-- end: Angular, WebComponents -->
+
+```tsx
+gridRef.current.pinColumn('Title');
+gridRef.current.unpinColumn('Name');
+```
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
+<!-- Angular, WebComponents -->
 ```typescript
 this.hierarchicalGrid.pinColumn('Artist');
 this.hierarchicalGrid.unpinColumn('Debut');
+```
+<!-- end: Angular, WebComponents -->
+```tsx
+gridRef.current.pinColumn('Artist');
+gridRef.current.unpinColumn('Debut');
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -250,7 +281,7 @@ const pinningConfig: IgrPinningConfig = { columns: ColumnPinningPosition.End };
 ```
 
 ```tsx
-<IgrGrid data={nwindData} autoGenerate={true} pinning={pinningConfig}></IgrGrid>
+<{ComponentSelector} data={nwindData} autoGenerate={true} pinning={pinningConfig}></{ComponentSelector}>
 ```
 <!-- end: React -->
 
@@ -267,6 +298,14 @@ const pinningConfig: IgrPinningConfig = { columns: ColumnPinningPosition.End };
 ### Demo
 
 `sample="/{ComponentSample}/column-pinning-right-side", height="510", alt="{Platform} {ComponentTitle} column pinning right side"`
+
+<!-- React -->
+Additionally, you can specify each column pinning location separately, allowing you to pin columns to both sides of the grid for greater convenience and easier optimization of data sets. Please refer to the demo bellow for further reference. In order to pin a column, please either select a column by clicking on a header and use the pin buttons added ot the toolbar, or simply drag a column to another pinned one.
+
+### Demo
+
+`sample="/{ComponentSample}/column-pinning-both-sides", height="510", alt="{Platform} {ComponentTitle} column pinning both sides"`
+<!-- end: React -->
 
 
 ## Custom Column Pinning UI
@@ -530,6 +569,40 @@ igRegisterScript("WebTreeGridPinHeaderTemplate", (ctx) => {
 </div>`;
 }, false);
 ```
+<!-- React -->
+```tsx
+<{ComponentSelector} autoGenerate={false} data={CustomersData} ref={grid}>
+    <IgrColumn field="Name" pinned={true}></IgrColumn>
+
+    <IgrColumn field="Title" header="Title" width="300px" pinned={true}
+    headerTemplate={toggleColumnPin}></IgrColumn>
+
+    <IgrColumn field="Phone" header="Phone" width="200px"
+    headerTemplate={toggleColumnPin}> </IgrColumn>
+
+    <IgrColumn field="Age" header="Age" width="200px"
+    headerTemplate={toggleColumnPin}></IgrColumn>
+</{ComponentSelector}>
+```
+
+```tsx
+const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
+  const togglePin = () => {
+    const col = ctx.column;
+    col.pinned = !col.pinned;
+  }
+  
+  const col = ctx.column;
+
+  return(
+    <div>
+      <span style={{ float: 'left' }}>{col.header}</span>
+      <span style={{ float: 'right' }} onClick={() => togglePin()}>📌</span>
+    </div>
+  );
+}
+```
+<!-- end: React -->
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -609,6 +682,40 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     `;
 }
 ```
+<!-- React -->
+```tsx
+<{ComponentSelector} autoGenerate={false} data={HierarchicalCustomersData} ref={grid}>
+    <IgrColumn field="CustomerID" hidden={true}></IgrColumn>
+
+    <IgrColumn field="Company" header="Company Name" width="300px" 
+    headerTemplate={toggleColumnPin} pinned={true}></IgrColumn>
+
+    <IgrColumn field="ContactName" header="Contact Name" width="200px"
+    headerTemplate={toggleColumnPin}> </IgrColumn>
+
+    <IgrColumn field="ContactTitle" header="Contact Title" width="200px"
+    headerTemplate={toggleColumnPin}></IgrColumn>
+</{ComponentSelector}>
+```
+
+```tsx
+const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
+  const togglePin = () => {
+    const col = ctx.column;
+    col.pinned = !col.pinned;
+  }
+  
+  const col = ctx.column;
+
+  return(
+    <div>
+      <span style={{ float: 'left' }}>{col.header}</span>
+      <span style={{ float: 'right' }} onClick={() => togglePin()}>📌</span>
+    </div>
+  );
+}
+```
+<!-- end: React -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
 On click of the custom icon the pin state of the related column can be changed using the column's API methods.
@@ -787,7 +894,7 @@ Then set the related CSS properties to this class:
 * `Column`
 
 ## Additional Resources
-<!-- ComponentStart: Grid -->
+<!-- ComponentStart: Grid, HierarchicalGrid -->
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -796,7 +903,7 @@ Then set the related CSS properties to this class:
 * [Column Moving](column-moving.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-<!-- ComponentEnd: Grid -->
+<!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 Our community is active and always welcoming to new ideas.
 
