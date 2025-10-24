@@ -157,6 +157,12 @@
     "href": "grids/data-grid.md",
     "items": [
       {
+        "exclude": ["Angular", "WebComponents", "Blazor"],
+        "name": "セルの結合",
+        "href": "grids/grid/cell-merging.md",
+        "status": "NEW"
+      },
+      {
         "exclude": ["Angular"],
         "name": "クリップボードの操作",
         "href": "grids/grid/clipboard-interactions.md"
@@ -395,6 +401,12 @@
     "href": "grids/hierarchical-grid/overview.md",
     "items": [
       {
+        "exclude": ["Angular", "WebComponents", "Blazor"],
+        "name": "セルの結合",
+        "href": "grids/hierarchical-grid/cell-merging.md",
+        "status": "NEW"
+      },
+      {
         "exclude": ["Angular"],
         "name": "縮小可能な列グループ",
         "href": "grids/hierarchical-grid/collapsible-column-groups.md"
@@ -411,7 +423,7 @@
         "href": "grids/hierarchical-grid/column-moving.md"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "列のピン固定",
         "href": "grids/hierarchical-grid/column-pinning.md"
       },
@@ -617,6 +629,12 @@
     "href": "grids/tree-grid/overview.md",
     "items": [
       {
+        "exclude": ["Angular", "WebComponents", "Blazor"],
+        "name": "セルの結合",
+        "href": "grids/tree-grid/cell-merging.md",
+        "status": "NEW"
+      },
+      {
         "exclude": ["Angular"],
         "name": "クリップボードの操作",
         "href": "grids/tree-grid/clipboard-interactions.md"
@@ -648,7 +666,7 @@
         "href": "grids/tree-grid/column-moving.md"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "列のピン固定",
         "href": "grids/tree-grid/column-pinning.md",
         "status": ["NEW_REACT"]
@@ -897,10 +915,6 @@
         "name": "グリッド編集",
         "href": "grids/data-grid/cell-editing.md",
         "status": ""
-      },
-      {
-        "name": "セルの結合",
-        "href": "grids/data-grid/cell-merging.md"
       },
       {
         "name": "セル選択",
@@ -1566,7 +1580,7 @@
     "status": "new"
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "タイル マネージャー",
     "href": "layouts/tile-manager.md",
     "status": "new"
@@ -1787,7 +1801,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "Blazor", "React"],
+    "exclude": ["Angular", "Blazor"],
     "name": "チャット",
     "href": "interactivity/chat.md",
     "status": "new"

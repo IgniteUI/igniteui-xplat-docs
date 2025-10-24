@@ -28,6 +28,7 @@ _language: ja
 
 ### 作業の開始
 
+<!-- WebComponents -->
 Tile Manager の使用を開始するには、最初に次のコマンドを実行して Ignite UI for Web Components をインストールする必要があります。
 
 <!-- WebComponents -->
@@ -38,6 +39,7 @@ npm install {PackageWebComponents}
 <!-- end: WebComponents -->
 
 <!-- React -->
+Tile Manager の使用を開始するには、最初に次のコマンドを実行して {ProductName} をインストールする必要があります。
 
 ```cmd
 npm install igniteui-react
@@ -175,7 +177,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbTileManagerModule));
 
 <!-- Blazor -->
 ```razor
-<IgbTileManager ColumnCount={2}>
+<IgbTileManager ColumnCount="2">
   <IgbTile>
     <span slot="title">Tile 1 header</span>
     <p>Tile 1 Content</p>
@@ -230,7 +232,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbTileManagerModule));
 <!-- end: React -->
 <!-- Blazor -->
 ```razor
-<IgbTileManager gap="20px">
+<IgbTileManager Gap="20px">
   <IgbTile>
     <span slot="title">Tile 1 header</span>
     <p>Tile 1 Content</p>
@@ -281,7 +283,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbTileManagerModule));
 
 <!-- Blazor -->
 ```razor
-<IgbTileManager minColumnWidth="200px" minRowHeight="150px">
+<IgbTileManager MinColumnWidth="200px" MinRowHeight="150px">
   <IgbTile>
     <span slot="title">Tile 1 header</span>
     <p>Tile 1 Content</p>
@@ -344,7 +346,7 @@ Tile コンポーネントには、タイルごとに個別に設定できるプ
 <!-- Blazor -->
 ```razor
 <IgbTileManager>
-  <IgbTile col-span="2" disable-resize>
+  <IgbTile ColSpan="2" DisableResize="true">
     <span slot="title">Tile 1 header</span>
     <p>Tile 1 Content</p>
   </IgbTile>
@@ -406,8 +408,8 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 <!-- Blazor -->
 ```razor
 <IgbTileManager>
-  <IgbTile disable-fullscreen>
-    <IgbIconButton slot="maximize-actions" name="north_east" collection="material">
+  <IgbTile DisableFullscreen="true">
+    <IgbIconButton slot="maximize-actions" IconName="north_east" Collection="material">
     </IgbIconButton>
     <p>Tile 1 Content</p>
   </IgbTile>
@@ -463,7 +465,7 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 <!-- end: React -->
 <!-- Blazor -->
 ```razor
-<IgbTileManager ResizeMode='hover'>
+<IgbTileManager ResizeMode="TileManagerResizeMode.Hover">
   <IgbTile>
     <p>Tile 1</p>
   </IgbTile>
@@ -532,7 +534,7 @@ Tile コンポーネントは、使用できるいくつかのスロットも公
 <!-- end: React -->
 <!-- Blazor -->
 ```razor
-<IgbTileManager DragMode="tile-header">
+<IgbTileManager DragMode="TileManagerDragMode.TileHeader">
   <IgbTile>
     <span slot="title">Tile 1 header</span>
     <p>Tile 1 Content</p>
@@ -627,9 +629,9 @@ igc-tile:nth-child(n+2)::part(trigger) {
 <!-- Blazor -->
 ```razor
 <IgbTile>
-  <IgbIcon slot="side-adorner" class="side" name="indicator"></IgbIcon>
-  <IgbIcon slot="corner-adorner" class="corner" name="indicator"></IgbIcon>
-  <IgbIcon slot="bottom-adorner" class="bottom" name="indicator"></IgbIcon>
+  <IgbIcon slot="side-adorner" Class="side" IconName="indicator"></IgbIcon>
+  <IgbIcon slot="corner-adorner" Class="corner" IconName="indicator"></IgbIcon>
+  <IgbIcon slot="bottom-adorner" Class="bottom" IconName="indicator"></IgbIcon>
   <span slot="title">Tile header</span>
 </IgbTile>
 ```
