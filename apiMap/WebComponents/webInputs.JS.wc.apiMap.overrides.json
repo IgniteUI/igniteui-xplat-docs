@@ -1,5 +1,95 @@
 {
   "types":[
+    {
+      "originalName": "Chat",
+      "originalNamespace": "Infragistics.Controls",
+      "originalBaseTypeNamespace": "Infragistics.Controls",
+      "originalBaseTypeName": "BaseElement",
+      "packageName": "igniteui-webinputs",
+      "names":[{"platform": "WebComponents","fileName": "igc-chat.ts","mappedName": "IgcChatComponent"}],
+      "members":[
+        {"names":[{"platform": "WebComponents", "mappedType": "IgcChatMessage[]",  "mappedName": "messages"}], "originalName": "Messages"},
+        {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "draftMessage"}], "originalName": "DraftMessage"},
+        {"names":[{"platform": "WebComponents", "mappedType": "IgcChatOptions", "mappedName": "options"}], "originalName": "Options"},
+        {"names":[{"platform": "WebComponents", "mappedType": "IgcChatResourceStrings ", "mappedName": "resourceStrings"}], "originalName": "ResourceStrings"},
+        {"names":[{"platform": "WebComponents", "mappedType": "method ", "mappedName": "scrollToMessage"}], "originalName": "ScrollToMessage"}
+      ]
+    },
+    {
+      "originalName": "ChatOptions",
+      "isType":true,
+      "originalNamespace": "Infragistics.Controls",
+      "originalBaseTypeNamespace": "Infragistics.Controls",
+      "packageName": "igniteui-webinputs",
+      "names":[{"platform": "WebComponents", "mappedName": "IgcChatOptions"}]
+    },
+    {
+      "originalName": "ChatMessage",
+      "isInterface":true,
+      "originalNamespace": "Infragistics.Controls",
+      "originalBaseTypeNamespace": "Infragistics.Controls",
+      "packageName": "igniteui-webinputs",
+      "names":[{"platform": "WebComponents", "mappedName": "IgcChatMessage"}],
+      "members":[
+        {"names":[{"platform": "WebComponents", "mappedType": "IgcChatMessageAttachment[]",  "mappedName": "attachments"}], "originalName": "Attachments"},
+        {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "id"}], "originalName": "Id"},
+        {"names":[{"platform": "WebComponents", "mappedType": "string[]",  "mappedName": "reactions"}], "originalName": "Reactions"},
+        {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "sender"}], "originalName": "Sender"},
+        {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "text"}], "originalName": "Text"},
+        {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "timestamp"}], "originalName": "Timestamp"}
+      ]
+    },
+    {
+      "originalName": "ChatMessageAttachment",
+      "isInterface":true,
+      "originalNamespace": "Infragistics.Controls",
+      "originalBaseTypeNamespace": "Infragistics.Controls",
+      "packageName": "igniteui-webinputs",
+      "names":[{"platform": "WebComponents", "mappedName": "IgcChatMessageAttachment"}],
+      "members":[
+        {"names":[{"platform": "WebComponents", "mappedType": "File", "mappedName": "file"}], "originalName": "File"},
+        {"names":[{"platform": "WebComponents", "mappedType": "string", "mappedName": "id"}], "originalName": "Id"},
+        {"names":[{"platform": "WebComponents", "mappedType": "string", "mappedName": "name"}], "originalName": "Name"},
+        {"names":[{"platform": "WebComponents", "mappedType": "string", "mappedName": "thumbnail"}], "originalName": "Thumbnail"},
+        {"names":[{"platform": "WebComponents", "mappedType": "string", "mappedName": "type"}], "originalName": "Type"},
+        {"names":[{"platform": "WebComponents", "mappedType": "string", "mappedName": "url"}], "originalName": "Url"}
+      ]
+    },
+    {
+      "originalName": "ChatRenderers",
+      "isInterface":true,
+      "originalNamespace": "Infragistics.Controls",
+      "originalBaseTypeNamespace": "Infragistics.Controls",
+      "packageName": "igniteui-webinputs",
+      "names":[{"platform": "WebComponents", "mappedName": "ChatRenderers"}],
+      "members":[
+        {"names":[{"platform": "WebComponents", "mappedType": "ChatTemplateRenderer<ChatAttachmentRenderContext>", "mappedName": "attachment"}], "originalName": "Attachment"},
+        {"names":[{"platform": "WebComponents", "mappedType": "ChatTemplateRenderer<ChatAttachmentRenderContext>", "mappedName": "attachmentContent"}], "originalName": "AttachmentContent"},
+        {"names":[{"platform": "WebComponents", "mappedType": "ChatTemplateRenderer<ChatAttachmentRenderContext>", "mappedName": "attachmentHeader"}], "originalName": "AttachmentHeader"},
+        {"names":[{"platform": "WebComponents", "mappedType": "ChatTemplateRenderer<ChatRenderContext>", "mappedName": "fileUploadButton"}], "originalName": "FileUploadButton"},
+        {"names":[{"platform": "WebComponents", "mappedType": "ChatTemplateRenderer<ChatInputRenderContext>", "mappedName": "input"}], "originalName": "Input"},
+        {"names":[{"platform": "WebComponents", "mappedType": "ChatTemplateRenderer<ChatRenderContext>", "mappedName": "inputActions"}], "originalName": "InputActions"},
+        {"names":[{"platform": "WebComponents", "mappedType": "ChatTemplateRenderer<ChatRenderContext>", "mappedName": "inputActionsEnd"}], "originalName": "InputActionsEnd"},
+        {"names":[{"platform": "WebComponents", "mappedType": "ChatTemplateRenderer<ChatRenderContext>", "mappedName": "inputActionsStart"}], "originalName": "InputActionsStart"},
+        {"names":[{"platform": "WebComponents", "mappedType": "ChatTemplateRenderer<ChatInputRenderContext>", "mappedName": "inputAttachments"}], "originalName": "InputAttachments"},
+        {"names":[{"platform": "WebComponents", "mappedType": "ChatTemplateRenderer<ChatMessageRenderContext>", "mappedName": "message"}], "originalName": "Message"},
+        {"names":[{"platform": "WebComponents", "mappedType": "ChatTemplateRenderer<ChatMessageRenderContext>", "mappedName": "messageActions"}], "originalName": "MessageActions"},
+        {"names":[{"platform": "WebComponents", "mappedType": "ChatTemplateRenderer<ChatMessageRenderContext>", "mappedName": "messageAttachments"}], "originalName": "MessageAttachments"},
+        {"names":[{"platform": "WebComponents", "mappedType": "ChatTemplateRenderer<ChatMessageRenderContext>", "mappedName": "messageContent"}], "originalName": "MessageContent"},
+        {"names":[{"platform": "WebComponents", "mappedType": "ChatTemplateRenderer<ChatMessageRenderContext>", "mappedName": "messageHeader"}], "originalName": "MessageHeader"},
+        {"names":[{"platform": "WebComponents", "mappedType": "ChatTemplateRenderer<ChatRenderContext>", "mappedName": "sendButton"}], "originalName": "SendButton"},
+        {"names":[{"platform": "WebComponents", "mappedType": "ChatTemplateRenderer<ChatRenderContext>", "mappedName": "suggestionPrefix"}], "originalName": "SuggestionPrefix"},
+        {"names":[{"platform": "WebComponents", "mappedType": "ChatTemplateRenderer<ChatRenderContext>", "mappedName": "typingIndicator"}], "originalName": "TypingIndicator"}
+      ]
+    },
+    {
+      "originalName": "ChatTemplateRenderer",
+      "isType":true,
+      "originalNamespace": "Infragistics.Controls",
+      "originalBaseTypeNamespace": "Infragistics.Controls",
+      "packageName": "igniteui-webinputs",
+      "names":[{"platform": "WebComponents", "mappedName": "ChatTemplateRenderer"}]
+    },
   {
     "originalName": "FileInput",
     "originalNamespace": "Infragistics.Controls",

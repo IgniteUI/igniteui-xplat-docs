@@ -27,9 +27,8 @@ The Tile Manager offers two components that we can use:
 
 ### Getting Started
 
-To start using the Tile Manager, first, you need to install the {ProductName} by running the following command:
-
 <!-- WebComponents -->
+To start using the Tile Manager, first, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -37,6 +36,7 @@ npm install {PackageWebComponents}
 <!-- end: WebComponents -->
 
 <!-- React -->
+To start using the Tile Manager, first, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -174,7 +174,7 @@ We can specify the number of grid columns for our Tile Manager. To do this, simp
 
 <!-- Blazor -->
 ```razor
-<IgbTileManager ColumnCount={2}>
+<IgbTileManager ColumnCount="2">
   <IgbTile>
     <span slot="title">Tile 1 header</span>
     <p>Tile 1 Content</p>
@@ -229,7 +229,7 @@ Another property that can be used in the Tile Manager is the `Gap` property, whi
 <!-- end: React -->
 <!-- Blazor -->
 ```razor
-<IgbTileManager gap="20px">
+<IgbTileManager Gap="20px">
   <IgbTile>
     <span slot="title">Tile 1 header</span>
     <p>Tile 1 Content</p>
@@ -280,7 +280,7 @@ We also have properties for setting the minimum width of the columns (`MinColumn
 
 <!-- Blazor -->
 ```razor
-<IgbTileManager minColumnWidth="200px" minRowHeight="150px">
+<IgbTileManager MinColumnWidth="200px" MinRowHeight="150px">
   <IgbTile>
     <span slot="title">Tile 1 header</span>
     <p>Tile 1 Content</p>
@@ -343,7 +343,7 @@ The Tile component has properties that can be set individually for each tile. So
 <!-- Blazor -->
 ```razor
 <IgbTileManager>
-  <IgbTile col-span="2" disable-resize>
+  <IgbTile ColSpan="2" DisableResize="true">
     <span slot="title">Tile 1 header</span>
     <p>Tile 1 Content</p>
   </IgbTile>
@@ -405,8 +405,8 @@ If you want to display just one of the two buttons, you can set either `DisableM
 <!-- Blazor -->
 ```razor
 <IgbTileManager>
-  <IgbTile disable-fullscreen>
-    <IgbIconButton slot="maximize-actions" name="north_east" collection="material">
+  <IgbTile DisableFullscreen="true">
+    <IgbIconButton slot="maximize-actions" IconName="north_east" Collection="material">
     </IgbIconButton>
     <p>Tile 1 Content</p>
   </IgbTile>
@@ -462,7 +462,7 @@ We can use the `ResizeMode` property to control how resizing is applied in the T
 <!-- end: React -->
 <!-- Blazor -->
 ```razor
-<IgbTileManager ResizeMode='hover'>
+<IgbTileManager ResizeMode="TileManagerResizeMode.Hover">
   <IgbTile>
     <p>Tile 1</p>
   </IgbTile>
@@ -531,7 +531,7 @@ Similar to resizing, when you initiate the drag-and-drop process, a ghost elemen
 <!-- end: React -->
 <!-- Blazor -->
 ```razor
-<IgbTileManager DragMode="tile-header">
+<IgbTileManager DragMode="TileManagerDragMode.TileHeader">
   <IgbTile>
     <span slot="title">Tile 1 header</span>
     <p>Tile 1 Content</p>
@@ -626,9 +626,9 @@ You can also change the icon of the adorners to a custom one using the `side-ado
 <!-- Blazor -->
 ```razor
 <IgbTile>
-  <IgbIcon slot="side-adorner" class="side" name="indicator"></IgbIcon>
-  <IgbIcon slot="corner-adorner" class="corner" name="indicator"></IgbIcon>
-  <IgbIcon slot="bottom-adorner" class="bottom" name="indicator"></IgbIcon>
+  <IgbIcon slot="side-adorner" Class="side" IconName="indicator"></IgbIcon>
+  <IgbIcon slot="corner-adorner" Class="corner" IconName="indicator"></IgbIcon>
+  <IgbIcon slot="bottom-adorner" Class="bottom" IconName="indicator"></IgbIcon>
   <span slot="title">Tile header</span>
 </IgbTile>
 ```
