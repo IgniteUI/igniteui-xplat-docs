@@ -13,7 +13,8 @@ The Infragistics {Platform} Excel Engine's `WorksheetChart` functionality allows
 
 `sample="/excel/excel-library/working-with-charts", height="500", alt="{Platform} Working with Charts Example"`
 
-
+> [!Note]
+> The XLSX format is required. Other formats are not supported at this time.
 
 <div class="divider--half"></div>
 
