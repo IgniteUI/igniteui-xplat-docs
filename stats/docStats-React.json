@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in React documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "React",
-  "samplesCount": 734,
+  "samplesCount": 742,
   "samplesHost": "https://staging.infragistics.com/react-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -841,6 +841,12 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-editing-styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-editing"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-merge": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-merging"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-merge-custom-sample": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-merging"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-selection-mode": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-selection",
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/selection"
@@ -1124,6 +1130,9 @@
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-editing-styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/cell-editing"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-merge": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/cell-merging"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-selection-mode": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/cell-selection",
@@ -1409,6 +1418,9 @@
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-editing-styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/cell-editing"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-merge": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/cell-merging"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-selection-mode": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/cell-selection",
@@ -1957,6 +1969,15 @@
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/tooltip/triggers": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/tooltip"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/interactions/chat/features": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/interactivity/chat"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/interactions/chat/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/interactivity/chat"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/interactions/chat/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/interactivity/chat"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/layouts/accordion/customization": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/accordion"
     ],
@@ -2110,6 +2131,9 @@
     "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/binding-shp-polylines": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-binding-shp-file"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-azure-imagery": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-azure-imagery"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-esri-imagery": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-esri-imagery"
     ],
@@ -2117,7 +2141,6 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-heat-imagery"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-osm-imagery": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/general-getting-started",
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-osm-imagery"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/navigation": [
@@ -2272,7 +2295,7 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/_shared/toolbar"
     ]
   },
-  "topicsCount": 308,
+  "topicsCount": 313,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-react/react/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -2624,9 +2647,6 @@
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/excel-library-working-with-sparklines": [
       "https://staging.infragistics.com/react-demos/samples/samples/excel/excel-library/working-with-sparklines"
     ],
-    "https://staging.infragistics.com/products/ignite-ui-react/react/components/general-getting-started": [
-      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-osm-imagery"
-    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map": [
       "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/type-scatter-bubble-series"
     ],
@@ -2647,6 +2667,9 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-binding-shp-file": [
       "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/binding-shp-polylines"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-azure-imagery": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-azure-imagery"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-esri-imagery": [
       "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-esri-imagery"
@@ -2797,6 +2820,10 @@
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/editing-columns",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/editing-events",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/editing-excel-style"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-merging": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-merge",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-merge-custom-sample"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-selection": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-selection-mode",
@@ -2972,6 +2999,9 @@
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-editing-styling",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/editing-columns",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/editing-events"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/cell-merging": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-merge"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/cell-selection": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-selection-mode",
@@ -3164,6 +3194,9 @@
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-editing-styling",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/editing-columns",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/editing-events"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/cell-merging": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-merge"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/cell-selection": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-selection-mode",
@@ -3456,6 +3489,11 @@
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/tooltip/rich",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/tooltip/styling",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/tooltip/triggers"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/interactivity/chat": [
+      "https://staging.infragistics.com/react-demos/samples/samples/interactions/chat/features",
+      "https://staging.infragistics.com/react-demos/samples/samples/interactions/chat/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/interactions/chat/styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/accordion": [
       "https://staging.infragistics.com/react-demos/samples/samples/layouts/accordion/customization",
