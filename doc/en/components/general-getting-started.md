@@ -2,64 +2,12 @@
 title: Getting Started | {ProductName} | Infragistics
 _description: Use Infragistics' {Platform} components to create apps and improve data visualization with the world’s fastest, virtualized, real-time {Platform} data grid and streaming financial and business and financial charts.
 _keywords: {ProductName}, Infragistics, Getting Started
-mentionedTypes: ["XamBulletGraph"]
+mentionedTypes: ["XamBulletGraph", "IgrGrid"]
 ---
-
-<!-- WebComponents -->
-# {ProductName} Packages Overview
-
-{ProductName} is a complete set of UI widgets, components, UI kits for design tools and supporting services for Web Components. Designed to enable developers to build the most modern, high-performance HTML5 & JavaScript apps for modern desktop browsers, mobile experiences and progressive web apps (PWA’s) targeting the browsers web components APIs.
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-# {ProductName} Packages Overview
-
-{ProductName} is a comprehensive suite of UI components, design toolkits, and supporting services for React. Built to empower developers to create modern, high-performance React applications for desktop browsers, mobile experiences, and progressive web apps (PWAs), {ProductName} leverages the latest React best practices and APIs.
-
-<!-- end: React -->
-
-<!-- WebComponents, React -->
-
-## Charts & Graphs
-{ProductName} contains a library of [Charts & Graphs](charts/chart-overview.md) that lets you visualize any type of data through its 65+ types of chart series and combinations into stunning and interactive charts and dashboards. Built for speed and beauty, designed to work on every modern browser and with complete touch and interactivity, you can quickly build responsive visuals on any device.
-
-## Gauges
-{ProductName} provides [Radial Gauge](radial-gauge.md), [Linear Gauge](linear-gauge.md), and [Bullet Graph](bullet-graph.md) components used to illustrate data in an easy and intuitive way. The [Radial Gauge](radial-gauge.md) has a variety of customization options in order to create a predefined shape and scale. The [Linear Gauge](linear-gauge.md) provides a simple view of a value compared against a scale and one or more ranges. It supports one scale, one set of tick marks and one set of labels. The [Bullet Graph](bullet-graph.md) component that lets you create data visualizations, replacing meters and gauges that are used on dashboards with simple bar charts.
-
-## Maps
-{ProductName} [Geographic Maps](geo-map.md) brings the ability to visualize geographic data in your application. It can render data sets consisting of many geographic locations in shapes of markers, lines, polygons, or even interactive bitmaps. It allows you to overlay multiple map layers with geographic data, mark specific geographic locations and display information using custom markers and colors.
-
-## Grids & Inputs
-{ProductName} provides several [Grids](grids/grids-header.md) components that allows you to bind and display data with little configuration in form of [Data Grid](grids/data-grid.md), [List](grids/list.md), [Tree](grids/tree.md), and even [Spreadsheet](spreadsheet-overview.md). It also provides features such as filtering, sorting, grouping, pinning and more.
-
-## Buttons, Inputs, Layouts & Menus
-{ProductName} provides various types of [Buttons](inputs/button.md), [Inputs](inputs/input.md), [Menus](menus/navbar.md), and [Layouts](layouts/tabs.md) that give you the ability to build modern web applications using encapsulation and the concept of reusable components in a dependency-free approach. See the [Storybook Here](https://igniteui.github.io/igniteui-webcomponents). These components are based on the [Indigo Design System](https://www.infragistics.com/products/appbuilder/ui-toolkit), are fully supported by [App Builder](https://appbuilder.indigo.design/) and are backed by ready-to-use UI kits for Sketch, Adobe XD and Figma.
-
-<!-- end: WebComponents, React -->
 
 <!-- React -->
 
 # Getting Started With {ProductName}
-
-## Install IgniteUI CLI
-
-To create an application from scratch and configure it to use the Ignite UI React you can use the Ignite UI CLI. The first step is to install the respective package globally as follows:
-
-```cmd
-npm install -g igniteui-cli
-```
-
-If you want to get a guided experience through the available options, you can initialize the step by step mode that will help you create and setup your new application. To start the guide, simply run the `ig` command:
-
-```cmd
-ig
-```
-
-Then choose React as framework, React TS as type, select `Default Top Navigation` project template, add a specific component/view or select `Complete & Run`.
-Additionally, you can read more about the Ignite UI CLI [here](general-cli-overview.md).
-
-Alternatively, you can use popular frameworks such as Next.js, Vite or Expo as recommended by the React team. Following is a step-by-step instructions for creating React applications with Ignite UI React using one of these methods.
 
 ## Prerequisites
 
@@ -85,19 +33,102 @@ Alternatively, you can use popular frameworks such as Next.js, Vite or Expo as r
     </div>
 </div>
 
-## Creating New React Project
+## Using Ignite UI CLI
 
-With above prerequisites installed, we can create a new React application.
+To create an application from scratch and configure it to use Ignite UI React you can use the Ignite UI CLI. The first step is to install the respective package globally as follows:
+
+```cmd
+npm install -g igniteui-cli
+```
+
+If you want to get a guided experience through the available options, you can initialize the step by step mode that will help you create and setup your new application. To start the guide, simply run the `ig` command:
+
+```cmd
+ig
+```
+
+Then choose React as framework, React TS as type, select `Default Top Navigation` project template, add a specific component/view or select `Complete & Run`.
+For more information about the Ignite UI CLI, see the [CLI overview](general-cli-overview.md).
+
+If you added a Grid component during the prompts, once the application is running you should see something similar to the following:
+
+<img src="../images/general/ig-cli-grid.png" />
+
+Alternatively, you can use popular frameworks such as Next.js, Vite or Expo as recommended by the React team. Following is a step-by-step instructions for creating React applications with Ignite UI React using one of these methods.
+
+## Using Vite CLI
+
+### Creating a New React Project
+
+All popular frameworks for React development provide powerful CLI tools for scaffolding a React application.
 
 1 - Open **VS Code**, select **Terminal** menu and then **New Terminal** option.
 
-2 - Type one of these commands in terminal window:
+2 - Type the following command in the terminal window:
 
 ```cmd
-npx create-next-app@latest
+npm create vite@latest
 ```
 
-Then follow the prompts to choose a name for the project, whether to use Typescript or not and for various other options React provides. For this example `npx` and `create-next-app` are required. Refer to this <a href="https://react.dev/learn/creating-a-react-app" target="_blank">topic</a> for more information on the different ways to boilerplate a React application.
+Then follow the prompts to choose a name for the project, React as a platform to create the project for, whether to use Typescript or not and for various other options Vite provides. Please, refer to this <a href="https://react.dev/learn/creating-a-react-app" target="_blank">topic</a> for more information on the different ways to boilerplate a React application.
+
+### Adding an Ignite UI React Grid Component
+
+#### Importing Component Modules
+
+First we have to import the required modules of the components we want to use. We will go ahead and do this for the [**Grid**](grids/data-grid.md) component. We also need to import one of the themes.
+
+
+```ts
+import { IgrGrid, IgrColumn } from 'igniteui-react-grids';
+import 'igniteui-react-grids/grids/themes/light/bootstrap.css';
+```
+
+#### Using Components
+
+We are now ready to use the {ProductName} grid component in our markup! Let's go ahead and define it:
+
+```tsx
+// App.txs
+function App() {
+  const data = [
+    { name: "John", age: 30 },
+    { name: "Jane", age: 25 },
+    { name: "Bob", age: 35 }
+  ];
+
+  return (
+    <div style={{ height: "100%", width: "100%" }}>
+      <IgrGrid
+        data={data}
+        autoGenerate={false}>
+        <IgrColumn
+          field="name"
+          header="Name"
+          dataType="string">
+        </IgrColumn>
+        <IgrColumn
+          field="age"
+          header="Age"
+          dataType="number">
+        </IgrColumn>
+      </IgrGrid>
+    </div>
+  );
+}
+```
+
+### Running Application
+
+Finally, we can run our new application:
+
+```cmd
+npm run dev
+```
+
+After executing this command, your project will be built and served locally on your computer. It will automatically open in your default browser and you will be able to use {ProductName} components in your project. The final result should show a data grid with sample data:
+
+<img src="../images/general/ig-vite-grid.png" />
 
 <!-- end: React -->
 
@@ -340,7 +371,7 @@ npm run build
 
 <!-- Angular, React -->
 
-## Updating Existing App
+## Updating Existing Apps
 
 If you want to use {ProductName} in an existing {Platform} CLI project (one that you have from before). We have you covered! All you have to do is execute these commands:
 
@@ -367,84 +398,40 @@ yarn add {PackageSpreadsheet} {PackageCore}
 
 This will automatically install packages for {ProductName}, along with all of their dependencies, font imports and styles references to the existing project.
 
-## Importing Component Modules
-
-First we have to import the required modules of the components we want to use. We will go ahead and do this for the [**Grid**](grids/data-grid.md) component.
-
-
-```razor
-builder.Services.AddIgniteUIBlazor(
-    typeof(IgbGeographicMapModule),
-    typeof(IgbDataChartInteractivityModule)
-);
-```
-
-```ts
-import { IgrGrid } from 'igniteui-react-grids';
-import 'igniteui-react-grids/grids/themes/light/bootstrap.css';
-```
-
-```ts
-import { IgcGeographicMapModule } from 'igniteui-webcomponents-maps';
-import { IgcGeographicMapComponent } from 'igniteui-webcomponents-maps';
-import { IgcDataChartInteractivityModule } from 'igniteui-webcomponents-charts';
-import { ModuleManager } from 'igniteui-webcomponents-core';
-
-ModuleManager.register(
-    IgcGeographicMapModule,
-    IgcDataChartInteractivityModule
-);
-```
-
-## Using Components
-
-We are now ready to use the {ProductName} grid component in our markup! Let's go ahead and define it:
-
-```tsx
-// App.txs
-function App() {
-  const data = [
-    { name: "John", age: 30 },
-    { name: "Jane", age: 25 },
-    { name: "Bob", age: 35 }
-  ];
-
-  return (
-    <div style={{ height: "100%", width: "100%" }}>
-      <IgrGrid
-        data={data}
-        autoGenerate="true">
-      </IgrGrid>
-    </div>
-  );
-}
-```
-
-```html
-<div style="height: 100%, width: 100%">
-    <igc-geographic-map
-      width="800px"
-      height="500px"
-      zoomable="true">
-    </igc-geographic-map>
-</div>
-```
-
-## Running Application
-
-Finally, we can run our new application by using one of the following commands:
-
-```cmd
-npm run-script start
-```
-
-After executing this command, your project will be built and served locally on your computer. It will automatically open in your default browser and you will be able to use {ProductName} components in your project. The final result should show a data grid with sample data:
-
-<!-- <img src="../images/general/data-grid.png" /> -->
-
-`sample="/{GridSample}/overview", height="700", alt="{Platform} Overview Example"`
-
 <!-- end: Angular, React -->
+
+<!-- WebComponents -->
+# {ProductName} Packages Overview
+
+{ProductName} is a complete set of UI widgets, components, UI kits for design tools and supporting services for Web Components. Designed to enable developers to build the most modern, high-performance HTML5 & JavaScript apps for modern desktop browsers, mobile experiences and progressive web apps (PWA’s) targeting the browsers web components APIs.
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+# {ProductName} Packages Overview
+
+{ProductName} is a comprehensive suite of UI components, design toolkits, and supporting services for React. Built to empower developers to create modern, high-performance React applications for desktop browsers, mobile experiences, and progressive web apps (PWAs), {ProductName} leverages the latest React best practices and APIs.
+
+<!-- end: React -->
+
+<!-- WebComponents, React -->
+
+## Charts & Graphs
+{ProductName} contains a library of [Charts & Graphs](charts/chart-overview.md) that lets you visualize any type of data through its 65+ types of chart series and combinations into stunning and interactive charts and dashboards. Built for speed and beauty, designed to work on every modern browser and with complete touch and interactivity, you can quickly build responsive visuals on any device.
+
+## Gauges
+{ProductName} provides [Radial Gauge](radial-gauge.md), [Linear Gauge](linear-gauge.md), and [Bullet Graph](bullet-graph.md) components used to illustrate data in an easy and intuitive way. The [Radial Gauge](radial-gauge.md) has a variety of customization options in order to create a predefined shape and scale. The [Linear Gauge](linear-gauge.md) provides a simple view of a value compared against a scale and one or more ranges. It supports one scale, one set of tick marks and one set of labels. The [Bullet Graph](bullet-graph.md) component that lets you create data visualizations, replacing meters and gauges that are used on dashboards with simple bar charts.
+
+## Maps
+{ProductName} [Geographic Maps](geo-map.md) brings the ability to visualize geographic data in your application. It can render data sets consisting of many geographic locations in shapes of markers, lines, polygons, or even interactive bitmaps. It allows you to overlay multiple map layers with geographic data, mark specific geographic locations and display information using custom markers and colors.
+
+## Grids & Inputs
+{ProductName} provides several [Grids](grids/grids-header.md) components that allows you to bind and display data with little configuration in form of [Data Grid](grids/data-grid.md), [List](grids/list.md), [Tree](grids/tree.md), and even [Spreadsheet](spreadsheet-overview.md). It also provides features such as filtering, sorting, grouping, pinning and more.
+
+## Buttons, Inputs, Layouts & Menus
+{ProductName} provides various types of [Buttons](inputs/button.md), [Inputs](inputs/input.md), [Menus](menus/navbar.md), and [Layouts](layouts/tabs.md) that give you the ability to build modern web applications using encapsulation and the concept of reusable components in a dependency-free approach. See the [Storybook Here](https://igniteui.github.io/igniteui-webcomponents). These components are based on the [Indigo Design System](https://www.infragistics.com/products/appbuilder/ui-toolkit), are fully supported by [App Builder](https://appbuilder.indigo.design/) and are backed by ready-to-use UI kits for Sketch, Adobe XD and Figma.
+
+<!-- end: WebComponents, React -->
 
 <!-- Blazor -->
 # Getting Started With {ProductName}
