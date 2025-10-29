@@ -113,7 +113,9 @@
         },
         "Main":     "https://www.infragistics.com/products/ignite-ui-angular/angular/components/{CONTROL_NAME}.html",
         "Overview": "https://www.infragistics.com/products/ignite-ui-angular/angular/components/{CONTROL_NAME}.html",
-        "apiDocRoot": "{environment:dvApiBaseUrl}/products/ignite-ui-angular/api/docs/typescript/latest/"
+        "apiDocRoot": {
+            "default": "{environment:dvApiBaseUrl}/products/ignite-ui-angular/api/docs/typescript/latest/"
+        }
     },
     "React": {
         "isFirstRelease": false,
@@ -272,10 +274,16 @@
         },
         "Main":     "https://www.infragistics.com/products/ignite-ui-react/react/components/{CONTROL_NAME}.html",
         "Overview": "https://www.infragistics.com/products/ignite-ui-react/react/components/{CONTROL_NAME}.html",
-        "apiDocRoot":         "{environment:dvApiBaseUrl}/products/ignite-ui-react/api/docs/typescript/latest/",
-        "apiDocOverrideRoot": "{environment:dvApiBaseUrl}/products/ignite-ui-react/docs/typescript/latest/",
-        "apiDocOverridePackages": ["igniteui-webgrids", "igniteui-webinputs"],
-        "apiDocOverrideBuildURLDashed": true
+        "apiDocRoot": {
+            "default": "{environment:dvApiBaseUrl}/products/ignite-ui-react/api/docs/typescript/latest/",
+            "overrides": [
+                {
+                    "root": "{environment:dvApiBaseUrl}/products/ignite-ui-react/docs/typescript/latest/",
+                    "packages":  ["igniteui-webgrids", "igniteui-webinputs"],
+                    "buildUrlDashed": true
+                }
+            ]
+        }
     },
     "WebComponents": {
         "isFirstRelease": false,
@@ -500,17 +508,27 @@
         },
         "Main":     "https://www.infragistics.com/products/ignite-ui-web-components/webcomponents/components/{CONTROL_NAME}.html",
         "Overview": "https://www.infragistics.com/products/ignite-ui-web-components/webcomponents/components/{CONTROL_NAME}.html",
-        "apiDocRoot":         "{environment:dvApiBaseUrl}/products/ignite-ui-web-components/api/docs/typescript/latest/",
-        "apiDocOverrideRoot": "{environment:dvApiBaseUrl}/products/ignite-ui-web-components/docs/typescript/latest/",
-        "apiDocOverridePackages": ["igniteui-webinputs"],
-        "apiDocOverrideComponents": [
-            "FormComponent",
-            "FormData",
-            "FormDataEventArgs",
-            "SizableComponentSize",
-            "SizableMixin",
-            "VoidEventArgs"
-        ]
+        "apiDocRoot": {
+            "default": "{environment:dvApiBaseUrl}/products/ignite-ui-web-components/api/docs/typescript/latest/",
+            "overrides": [
+                {
+                    "root": "{environment:dvApiBaseUrl}/products/ignite-ui-web-components/docs/typescript/latest/",
+                    "packages":  ["igniteui-webinputs"],
+                    "components": [
+                        "FormComponent",
+                        "FormData",
+                        "FormDataEventArgs",
+                        "SizableComponentSize",
+                        "SizableMixin",
+                        "VoidEventArgs"
+                    ]
+                },
+                {
+                    "root": "{environment:dvApiBaseUrl}/products/ignite-ui-web-components-grids/docs/typescript/latest/",
+                    "packages":  ["igniteui-webgrids"]
+                }
+            ]
+        }
     },
     "Blazor": {
         "isFirstRelease": false,
@@ -659,7 +677,9 @@
             "staging":     "https://staging.infragistics.com/blazor-client",
             "production":  "https://www.infragistics.com/blazor-client"
         },
-        "apiDocRoot": "{environment:dvApiBaseUrl}/blazor/docs/api/api/",
+        "apiDocRoot": {
+            "default": "{environment:dvApiBaseUrl}/blazor/docs/api/api/"
+        },
         "Main":     "https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/{CONTROL_NAME}.html",
         "Overview": "https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/{CONTROL_NAME}.html"
     }

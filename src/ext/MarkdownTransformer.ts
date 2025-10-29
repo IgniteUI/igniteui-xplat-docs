@@ -1,4 +1,4 @@
-import { MappingLoader, APIPlatform } from './MappingLoader';
+import { MappingLoader, APIPlatform, ApiDocPaths } from './MappingLoader';
 import { MarkdownContent, MarkdownSection, MarkdownMetadata, MarkdownLine } from './MarkdownContent';
 import { MarkdownVerifier } from './MarkdownVerifier';
 import { PlatformDetector, PlatformDetectorRule, FencedBlockInfo } from './PlatformDetector';
@@ -20,7 +20,8 @@ let docsComponents = require("../../docComponents.json");
 // this array defines blazor namespaces mapped to API members
 // and it is converted to a lookup table for finding blazor namespaces in getApiLink()
 let BlazorNamespaces = [
-    {   "namespace": "Infragistics.Core",
+    {
+        "namespace": "Infragistics.Core",
         "members": [
             "ImageWrapper",
             "Rect",
@@ -28,19 +29,22 @@ let BlazorNamespaces = [
             "Size",
         ]
     },
-    {   "namespace": "Infragistics.Core.Graphics",
+    {
+        "namespace": "Infragistics.Core.Graphics",
         "members": [
             "Colors",
             "Color",
         ]
     },
-    {   "namespace": "Infragistics.IO",
+    {
+        "namespace": "Infragistics.IO",
         "members": [
             "FileAccess",
             "FileMode",
         ]
     },
-    {   "namespace": "Infragistics.Documents.Excel",
+    {
+        "namespace": "Infragistics.Documents.Excel",
         "members": [
             "Workbook",
             "WorkbookSaveOptions",
@@ -75,7 +79,7 @@ function getBlazorNamespaceLookup() {
     return BlazorNamespaceLookup;
 }
 
-function getApiLink(apiRoot: string, typeName: string, memberName: string | null, options: any): any {
+function getApiLink(apiRoot: ApiDocPaths, typeName: string, memberName: string | null, options: any): any {
     let mappings: MappingLoader = options.mappings;
     let isClass = false;
     let isInterface = false;
@@ -105,9 +109,9 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
             if (typeInfo) {
                 if (typeInfo.isEnum) {
                     isEnum = true;
-                } else if (typeInfo.isInterface) { 
+                } else if (typeInfo.isInterface) {
                     isInterface = true;
-                } else if(typeInfo.isType) {
+                } else if (typeInfo.isType) {
                     isType = true;
                 }
                 else { // if (!isEnum) {
@@ -144,7 +148,7 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
             let char1 = resolvedType[0];
             if (char1 == "I") {
                 let char2 = resolvedType[1];
-                if( char2.toUpperCase() == char2) {
+                if (char2.toUpperCase() == char2) {
                     isClass = false;
                     isEnum = false;
                     isInterface = true;
@@ -153,15 +157,25 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
 
             let packageText = "";
             if (packageName) {
-                let apiDocOverridePackages: string[] = options.docs.apiDocOverridePackages;
-                let shouldOverrideJoinSymbol = apiDocOverridePackages && apiDocOverridePackages.indexOf(packageName) !== -1;
-                let urlNameJoinSymbol = options.docs["apiDocOverrideBuildURLDashed"] && shouldOverrideJoinSymbol ? "-" : "_";
+                let shouldOverrideJoinSymbol = false;
+                let urlNameJoinSymbol = "_";
+                if (apiRoot.override && apiRoot.override.length > 0) {
+                    for (let i = 0; i < apiRoot.override.length; i++) {
+                        if (apiRoot.override[i].packages.indexOf(packageName) >= 0) {
+                            shouldOverrideJoinSymbol = !!apiRoot.override[i].buildUrlDashed;
+                            if (apiRoot.override[i].buildUrlDashed && shouldOverrideJoinSymbol) {
+                                urlNameJoinSymbol = "-";
+                            }
+                            break;
+                        }
+                    }
+                }
 
                 if (packageName == "igniteui-webgrids") {
                     const packageSuffix = (platformType == APIPlatform.React ? "" : urlNameJoinSymbol + "grids") + urlNameJoinSymbol + "grids.";
                     packageText = "igniteui" + urlNameJoinSymbol + platformName + packageSuffix;
                 } else if (packageName == "igniteui-data-grids") {
-                    packageText = "igniteui" + urlNameJoinSymbol + platformName + urlNameJoinSymbol +"grids.";
+                    packageText = "igniteui" + urlNameJoinSymbol + platformName + urlNameJoinSymbol + "grids.";
                 } else if (packageName == "igniteui-webinputs") {
                     packageText = "";
                     if (platformType == APIPlatform.React) {
@@ -248,10 +262,8 @@ function transformCodeRefs(options: any) {
         }
 
         let docs = options.docs;
-        let apiDocRoot: string = docs.apiDocRoot;
-        let apiDocOverrideRoot: string = docs.apiDocOverrideRoot;
-        let apiDocOverridePackages: string[] = docs.apiDocOverridePackages;
-        let apiDocOverrideComponents: string[] = docs.apiDocOverrideComponents;
+        let apiDocPaths: ApiDocPaths = docs.apiDocRoot;
+        const apiDocRoot = apiDocPaths.default;
         let apiTypeName: string | null = null;
         let createLink: boolean = <boolean><any>apiDocRoot;
         let isTypeName: boolean = false;
@@ -281,11 +293,11 @@ function transformCodeRefs(options: any) {
         // }
 
         if (memberName.indexOf("Ig$") >= 0) {
-            memberName = memberName.replace("Ig$",       options.platformPascalPrefix);
+            memberName = memberName.replace("Ig$", options.platformPascalPrefix);
             memberName = memberName.replace("Component", options.platformPascalSuffix);
             apiTypeName = memberName;
             if (createLink) {
-                let link = getApiLink(apiDocRoot, apiTypeName!, null, options);
+                let link = getApiLink(apiDocPaths, apiTypeName!, null, options);
                 if (link) {
                     parent.children.splice(index, 1, link);
                     return;
@@ -296,7 +308,7 @@ function transformCodeRefs(options: any) {
         }
 
         if (memberName.indexOf("ig$-") >= 0) {
-            memberName = memberName.replace("ig$-",       options.platformSpinalPrefix);
+            memberName = memberName.replace("ig$-", options.platformSpinalPrefix);
             memberName = memberName.replace("-component", options.platformSpinalSuffix);
             node.value = memberName;
             return;
@@ -360,9 +372,9 @@ function transformCodeRefs(options: any) {
             let link: any = null;
             // console.log("getApiLink memberName " + memberName);
             if (isTypeName) {
-                link = getApiLink(apiDocRoot, apiTypeName!, null, options);
+                link = getApiLink(apiDocPaths, apiTypeName!, null, options);
             } else {
-                link = getApiLink(apiDocRoot, apiTypeName!, resolvedName, options);
+                link = getApiLink(apiDocPaths, apiTypeName!, resolvedName, options);
                 // console.log("getApiLink other " + link.url);
             }
 
@@ -436,8 +448,8 @@ function transformCodeRefs(options: any) {
                         // FAILS - https://staging.infragistics.com/products/ignite-ui-web-components/api/docs/typescript/latest/classes/igcdockmanagercomponent.html
 
                         dockManagerUpdated = true;
-                        link.url = link.url.replace("ignite-ui-angular/api/docs",        "ignite-ui/dock-manager/docs");
-                        link.url = link.url.replace("ignite-ui-react/api/docs",          "ignite-ui/dock-manager/docs");
+                        link.url = link.url.replace("ignite-ui-angular/api/docs", "ignite-ui/dock-manager/docs");
+                        link.url = link.url.replace("ignite-ui-react/api/docs", "ignite-ui/dock-manager/docs");
                         link.url = link.url.replace("ignite-ui-web-components/api/docs", "ignite-ui/dock-manager/docs");
                         link.url = link.url.replace("igr", "igc");
                         link.url = link.url.replace("igx", "igc");
@@ -476,25 +488,27 @@ function transformCodeRefs(options: any) {
 
                 // overriding api root based on package that the member comes from.
                 const packageName = options.mappings.getType(apiTypeName, options.filePath).packageName;
-                if (!dockManagerUpdated && apiDocOverridePackages && apiDocOverridePackages.indexOf(packageName) !== -1) {
-                  link.url = link.url.replace(apiDocRoot, apiDocOverrideRoot);
-                }
-
-                // overriding api root for components specified in docsConfig.json
-                if (apiDocOverrideComponents !== undefined) {
-                    //console.log("getApiLink replace apiDocOverride " + link.url);
-                    for (const component of apiDocOverrideComponents) {
-                        let className = new RegExp(component.toLowerCase() + ".*.html", "im")
-                        if (link.url.match(className)) {
-                            // if (link.url.indexOf("calendar") >= 0)
-                            //     console.log("getApiLink old " + memberName + " >> '" + link.url + "'");
-                            link.url = link.url.replace(apiDocRoot, apiDocOverrideRoot);
-                            //link.url = urls.replace("\/api\/docs\/", "\/docs\/");
-                            //if (link.url.indexOf("calendar") >= 0)
-                            //    console.log("getApiLink new " + memberName + " >> '" + link.url + "'");
+                if (apiDocPaths.override && apiDocPaths.override.length > 0) {
+                    for (let i = 0; i < apiDocPaths.override.length; i++) {
+                        if (apiDocPaths.override[i].packages.indexOf(packageName) >= 0) {
+                            link.url = link.url.replace(apiDocRoot, apiDocPaths.override[i].root);
+                        }
+                        if (apiDocPaths.override[i].components !== undefined) {
+                            for (const component of apiDocPaths.override[i].components!) {
+                                let className = new RegExp(component.toLowerCase() + ".*.html", "im");
+                                if (link.url.match(className)) {
+                                    // if (link.url.indexOf("calendar") >= 0)
+                                    //     console.log("getApiLink old " + memberName + " >> '" + link.url + "'");
+                                    link.url = link.url.replace(apiDocRoot, apiDocPaths.override[i].root);
+                                    //link.url = urls.replace("\/api\/docs\/", "\/docs\/");
+                                    //if (link.url.indexOf("calendar") >= 0)
+                                    //    console.log("getApiLink new " + memberName + " >> '" + link.url + "'");
+                                }
+                            }
                         }
                     }
                 }
+
                 // console.log("getApiLink " + memberName + " '" + link.url + "'");
                 parent.children.splice(index, 1, link);
                 return;
@@ -546,17 +560,17 @@ function getFrontMatterTypes(options: any, filePath: string) {
                 if (currTypeInfo) {
                     if (currTypeInfo.originalBaseTypeName) {
                         let fullName = currTypeInfo.originalBaseTypeNamespace + "." +
-                        currTypeInfo.originalBaseTypeName;
+                            currTypeInfo.originalBaseTypeName;
 
                         if (currTypeInfo.originalBaseTypeName == "Object" ||
-                        currTypeInfo.originalBaseTypeName == "Control" ||
-                        currTypeInfo.originalBaseTypeName == "DependencyObject" ||
-                        currTypeInfo.originalBaseTypeName == "EventArgs") {
+                            currTypeInfo.originalBaseTypeName == "Control" ||
+                            currTypeInfo.originalBaseTypeName == "DependencyObject" ||
+                            currTypeInfo.originalBaseTypeName == "EventArgs") {
                             continue;
                         }
 
                         if (options.mentionedTypes.indexOf(currTypeInfo.originalBaseTypeName) < 0 &&
-                        options.mentionedTypes.indexOf(fullName) < 0) {
+                            options.mentionedTypes.indexOf(fullName) < 0) {
                             options.mentionedTypes.splice(i + 1, 0, fullName);
                         }
                     }
@@ -605,7 +619,7 @@ function transformDocLinks(options: any) {
 
         var isApiDocLink = reference.indexOf("{environment:dvApiBaseUrl") > 0;
         var isSampleLink = reference.indexOf("{environment:dvDemo") > 0 ||
-                           reference.indexOf("{environment:demo") > 0;
+            reference.indexOf("{environment:demo") > 0;
 
         var isTopicLink = !isApiDocLink && reference.indexOf(".md") > 0;
         if (isTopicLink) {
@@ -629,7 +643,7 @@ function transformDocLinks(options: any) {
                 <string>options.typeName,
                 <APIPlatform>options.platform,
                 <string>controlName, options.filePath);
-                // console.log("resolvedName=" + resolvedName);
+            // console.log("resolvedName=" + resolvedName);
             if (resolvedName) {
                 controlName = resolvedName;
             }
@@ -762,8 +776,7 @@ function transformNotes(options: any) {
             return;
         }
 
-        if (node.children[0].children[0].type !== "linkReference")
-        {
+        if (node.children[0].children[0].type !== "linkReference") {
             return;
         }
 
@@ -790,8 +803,7 @@ function transformNotes(options: any) {
                     continue;
                 }
                 let r = new RegExp("^\\r*\\n*\\s*(for)*(in)*(with)* " + keyStr.toLowerCase() + ":*\\s*\\r*\\n*", "im")
-                if ((platCheck as string).match(r))
-                {
+                if ((platCheck as string).match(r)) {
                     notePlats.push(<APIPlatform>+key);
                     platMatch.push(platNode);
                     matchMatch.push(r);
@@ -806,7 +818,7 @@ function transformNotes(options: any) {
             for (let i = 0; i < node.children[0].children.length; i++) {
                 if (node.children[0].children[i].value) {
                     node.children[0].children[i].value =
-                    node.children[0].children[i].value.replace(r, "");
+                        node.children[0].children[i].value.replace(r, "");
 
                     if (node.children[0].children[i].value.length == 0) {
                         options.toDelete.add(node.children[0].children[i]);
@@ -817,14 +829,14 @@ function transformNotes(options: any) {
                     }
                 }
                 //if (platMatch.indexOf(node.children[0].children[i]) == -1) {
-                    // parent.children.splice(index + j,0,node.children[0].children[i]);
-                    // j++
+                // parent.children.splice(index + j,0,node.children[0].children[i]);
+                // j++
                 //}
             }
             for (let i = 0; i < node.children.length; i++) {
                 if (node.children[i].value) {
                     node.children[i].value =
-                    node.children[i].value.replace(r, "");
+                        node.children[i].value.replace(r, "");
 
                     if (node.children[i].value.length == 0) {
                         options.toDelete.add(node.children[i]);
@@ -832,8 +844,8 @@ function transformNotes(options: any) {
                 }
 
                 //if (platMatch.indexOf(node.children[i]) == -1) {
-                    parent.children.splice(index + j,0,node.children[i]);
-                    j++;
+                parent.children.splice(index + j, 0, node.children[i]);
+                j++;
                 //}
             }
             parent.children.splice(index, 1);
@@ -931,7 +943,7 @@ function isComponentComment(node: any): boolean {
     if (node.type == "html" &&
         node.value.trim().indexOf("<!--") >= 0) {
         if (node.value.indexOf("ComponentStart") == -1 &&
-        node.value.indexOf("ComponentEnd") == -1) {
+            node.value.indexOf("ComponentEnd") == -1) {
             return false;
         }
 
@@ -991,11 +1003,11 @@ function getComponentsFromString(str: string): string[] {
     return vals;
 }
 
-function getPlatformsFromComment(node: any) : APIPlatform[] {
+function getPlatformsFromComment(node: any): APIPlatform[] {
     return getPlatformsFromString(node.value);
 }
 
-function getComponentsFromComment(node: any) : string[] {
+function getComponentsFromComment(node: any): string[] {
     return getComponentsFromString(node.value);
 }
 
@@ -1096,7 +1108,7 @@ function transformSamples(options: any) {
 
         var nodeLocation = options.filePath + ":";
         if (node.position && node.position.start && node.position.line) {
-            nodeLocation +=  ":" + node.position.start.line;
+            nodeLocation += ":" + node.position.start.line;
         }
 
         if (code.indexOf(',') < 0) {
@@ -1121,7 +1133,7 @@ function transformSamples(options: any) {
 
             if (part.indexOf('sample=') >= 0) {
                 sample.path = part.replace('sample=', "").split('"').join('').trim();
-                if (sample.path.indexOf('/') === 0)  {
+                if (sample.path.indexOf('/') === 0) {
                     sample.path = sample.path.replace('/', "")
                 }
                 sample.file = options.docs.samplesGithubFile;
@@ -1167,7 +1179,7 @@ function transformSamples(options: any) {
             str += '      img-src="' + sample.imgSrc + '"\n';
         }
         str += '           data-demos-base-url="' + sampleHostEnvironment + '"\n';
-     // str += '                    iframe-src="' + sampleHostEnvironment + '/' + sample.route + '"\n';
+        // str += '                    iframe-src="' + sampleHostEnvironment + '/' + sample.route + '"\n';
         str += '                    iframe-src="' + sampleHostEnvironment + '/' + sample.path + '"\n';
         str += '                                                 github-src="' + sample.path + '">\n';
         str += '</code-view>\n';
@@ -1176,7 +1188,7 @@ function transformSamples(options: any) {
             // injecting sandbox and stackblitz buttons below <code-view />
             let editButtonTemplate = fs.readFileSync('./templates/sample.edit.buttons.html').toString();
             // let stackblitz = "https://stackblitz.com/" +  github + "?file=src%2Fapp.component.html";
-            let stackblitz = "https://stackblitz.com/" +  sample.github + "?file=src" + sample.file.replace('/', "%2F");
+            let stackblitz = "https://stackblitz.com/" + sample.github + "?file=src" + sample.file.replace('/', "%2F");
             let sandbox = "https://codesandbox.io/s/" + sample.github + "?fontsize=14&hidenavigation=1&theme=dark&view=preview&file=/" + sample.file;
             let editButtons = editButtonTemplate + "";
 
@@ -1239,9 +1251,9 @@ function omitPlatformSpecificSections(options: any) {
                 while (checkIndex >= 0) {
 
                     if (parent.children[checkIndex] &&
-                    parent.children[checkIndex].type == "html" &&
-                    isPlatformComment(parent.children[checkIndex]) &&
-                    parent.children[checkIndex].value.indexOf("end:") == -1) {
+                        parent.children[checkIndex].type == "html" &&
+                        isPlatformComment(parent.children[checkIndex]) &&
+                        parent.children[checkIndex].value.indexOf("end:") == -1) {
                         let startSegments = getPlatformSegments(parent.children[checkIndex]);
                         for (let i = segments.length - 1; i >= 0; i--) {
                             //let currPlats = getPlatformsFromComment(parent.children[checkIndex]);
@@ -1249,7 +1261,7 @@ function omitPlatformSpecificSections(options: any) {
                             let currPlats = startSeg.platforms;
 
                             if (platformsEqual(currPlats, segment.platforms) &&
-                            segment.platforms.indexOf(options.platform) == -1) {
+                                segment.platforms.indexOf(options.platform) == -1) {
                                 for (let ind = checkIndex + 1; ind < index; ind++) {
                                     options.toDelete.add(parent.children[ind]);
                                 }
@@ -1287,9 +1299,9 @@ function omitComponentSpecificSections(options: any) {
                 while (checkIndex >= 0) {
 
                     if (parent.children[checkIndex] &&
-                    parent.children[checkIndex].type == "html" &&
-                    isComponentComment(parent.children[checkIndex]) &&
-                    parent.children[checkIndex].value.indexOf("ComponentEnd:") == -1) {
+                        parent.children[checkIndex].type == "html" &&
+                        isComponentComment(parent.children[checkIndex]) &&
+                        parent.children[checkIndex].value.indexOf("ComponentEnd:") == -1) {
                         let startSegments = getComponentSegments(parent.children[checkIndex]);
                         for (let i = segments.length - 1; i >= 0; i--) {
                             //let currPlats = getPlatformsFromComment(parent.children[checkIndex]);
@@ -1297,7 +1309,7 @@ function omitComponentSpecificSections(options: any) {
                             let currComponents = startSeg.components;
 
                             if (componentsEqual(currComponents, segment.components) &&
-                            segment.components.indexOf(options.componentName) == -1) {
+                                segment.components.indexOf(options.componentName) == -1) {
                                 for (let ind = checkIndex + 1; ind < index; ind++) {
                                     options.toDelete.add(parent.children[ind]);
                                 }
@@ -1396,7 +1408,7 @@ function omitFencedCode(options: any) {
         if (index - 1 >= 0 &&
             parent.children[index - 1] &&
             parent.children[index - 1].type == "html" &&
-            parent.children[index - 1].value.indexOf("<!--") >= 0 ) {
+            parent.children[index - 1].value.indexOf("<!--") >= 0) {
 
             if (isPlatformComment(parent.children[index - 1])) {
                 if (getPlatformsFromComment(parent.children[index - 1]) !== null) {
@@ -1412,8 +1424,8 @@ function omitFencedCode(options: any) {
             }
 
             if (options.transformer.shouldOmitFencedCode(lang, plats, components, options)) {
-               options.toDelete.add(parent.children[index - 1]);
-               options.toDelete.add(node);
+                options.toDelete.add(parent.children[index - 1]);
+                options.toDelete.add(node);
             }
         }
 
@@ -1439,9 +1451,9 @@ function omitFencedCode(options: any) {
             }
 
             if (options.transformer.shouldOmitFencedCode(lang, plats, components, options)) {
-               options.toDelete.add(parent.children[index - 2]);
-               options.toDelete.add(parent.children[index - 1]);
-               options.toDelete.add(node);
+                options.toDelete.add(parent.children[index - 2]);
+                options.toDelete.add(parent.children[index - 1]);
+                options.toDelete.add(node);
             }
         }
 
@@ -1503,8 +1515,8 @@ export class MarkdownTransformer {
         switch (this._platform) {
             case APIPlatform.Angular:
                 if (!PlatformDetectorRule.isTS(language) &&
-                language !== "js" &&
-                !PlatformDetectorRule.isHTML(language)) {
+                    language !== "js" &&
+                    !PlatformDetectorRule.isHTML(language)) {
                     return true;
                 }
 
@@ -1514,8 +1526,8 @@ export class MarkdownTransformer {
                 break;
             case APIPlatform.React:
                 if (!PlatformDetectorRule.isTS(language) &&
-                !PlatformDetectorRule.isTSX(language) &&
-                 language !== "js") {
+                    !PlatformDetectorRule.isTSX(language) &&
+                    language !== "js") {
                     return true;
                 }
 
@@ -1525,8 +1537,8 @@ export class MarkdownTransformer {
                 break;
             case APIPlatform.WebComponents:
                 if (!PlatformDetectorRule.isTS(language) &&
-                language !== "js" &&
-                !PlatformDetectorRule.isHTML(language)) {
+                    language !== "js" &&
+                    !PlatformDetectorRule.isHTML(language)) {
                     return true;
                 }
 
@@ -1606,9 +1618,9 @@ export class MarkdownTransformer {
             const line = fileLines[i];
             for (const invalidString of invalidApiMembers) {
                 if (!line.includes("import") &&
-                     line.toLowerCase().includes(invalidString.toLowerCase())) {
-                     transformWarning("found string: \"" + invalidString + "\" without backticks on line #" + (i+1));
-                     break;
+                    line.toLowerCase().includes(invalidString.toLowerCase())) {
+                    transformWarning("found string: \"" + invalidString + "\" without backticks on line #" + (i + 1));
+                    break;
                 }
             }
         }
@@ -1657,9 +1669,9 @@ export class MarkdownTransformer {
                     for (let i = 0; i < lines.length; i++) {
                         const line = lines[i];
                         if (line.indexOf("github-src=") > 0) {
-                            samplePath = line.replace('github-src="',"");
-                            samplePath = samplePath.replace('"','');
-                            samplePath = samplePath.replace('>','');
+                            samplePath = line.replace('github-src="', "");
+                            samplePath = samplePath.replace('"', '');
+                            samplePath = samplePath.replace('>', '');
                             samplePath = samplePath.trim();
                         }
                         if (line.indexOf("code-view>") > 0) {
@@ -1669,7 +1681,7 @@ export class MarkdownTransformer {
                     //TODO-MT remove
                     if (viewerEnd >= 0 && samplePath !== null) {
                         let github = "github/IgniteUI/igniteui-angular-examples/tree/master/samples/" + samplePath;
-                        let stackblitz = "https://stackblitz.com/" +  github + "?file=src%2Fapp.component.html";
+                        let stackblitz = "https://stackblitz.com/" + github + "?file=src%2Fapp.component.html";
                         let sandbox = "https://codesandbox.io/s/" + github + "?fontsize=14&hidenavigation=1&theme=dark&view=preview&file=/src/app.component.html";
                         let editButtons = editButtonTemplate + "";
                         editButtons = editButtons.replace('{sandbox}', sandbox);
@@ -1707,11 +1719,11 @@ export class MarkdownTransformer {
             }
         }
 
-            // console.log("sampleHost " + sampleHost);
-            // console.log(this._envBrowser);
+        // console.log("sampleHost " + sampleHost);
+        // console.log(this._envBrowser);
 
         // using better looking arrows between API links this way we do not mess markdown with custom symbols
-        fileContent = this.replaceAll(fileContent, "` -> `",  "` &#10132; `");
+        fileContent = this.replaceAll(fileContent, "` -> `", "` &#10132; `");
 
         switch (this._platform) {
             case APIPlatform.Angular:
@@ -1745,23 +1757,23 @@ export class MarkdownTransformer {
             footnotes: true,
             pedantic: true,
         })
-        .use(parse)
-        .use(frontmatter, ['yaml', 'toml'])
-        .use(transformDocPlaceholders, options, true) // removing vars in metadata
-        .use(getFrontMatterTypes, options, filePath)
-        .process(fileContent, function(err: any, vfile: any) {
-            if (err) {
-                callback(err, null);
-                return;
-            }
-        });
+            .use(parse)
+            .use(frontmatter, ['yaml', 'toml'])
+            .use(transformDocPlaceholders, options, true) // removing vars in metadata
+            .use(getFrontMatterTypes, options, filePath)
+            .process(fileContent, function (err: any, vfile: any) {
+                if (err) {
+                    callback(err, null);
+                    return;
+                }
+            });
 
         let runFor: { componentName: string | null }[] = [{ componentName: null }];
         if ((options as any).sharedComponents) {
             runFor = ((options as any).sharedComponents as string[]).map((c) => { return { componentName: c } });
         }
 
-        let output: {content: string, componentOutput: string | null }[] = [];
+        let output: { content: string, componentOutput: string | null }[] = [];
         let iteration = 0;
         var doIteration = () => {
             let currRun = runFor[iteration];
@@ -1785,41 +1797,41 @@ export class MarkdownTransformer {
                 footnotes: true,
                 pedantic: true,
             })
-            .use(parse)
-            .use(frontmatter, ['yaml', 'toml'])
-            .use(transformSamples, options)
-            .use(transformDocPlaceholders, options, false) // keeping vars in metadata
-            // .use(transformDocPlaceholders, options, true) // removing vars in metadata
-            .use(transformSampleLinks, options, sampleHost)
-            .use(getFrontMatterTypes, options, filePath)
-            .use(transformCodeRefs, options) // filePath
-            .use(transformDocLinks, options)
-            .use(omitPlatformSpecificSections, options)
-            .use(omitComponentSpecificSections, options)
-            // .use(omitStackblitzButtons, options)
-            .use(manageAutoButtons, options)
-            .use(finishRemove, options)
-            .use(omitFencedCode, options)
-            .use(finishRemoveBlocks, options)
-            .use(transformNotes, options)
-            .use(finishRemoveNotes, options)
-            .use(stringify)
-            .process(fileContent, function(err: any, vfile: any) {
-                if (err) {
-                    callback(err, null);
-                    return;
-                }
+                .use(parse)
+                .use(frontmatter, ['yaml', 'toml'])
+                .use(transformSamples, options)
+                .use(transformDocPlaceholders, options, false) // keeping vars in metadata
+                // .use(transformDocPlaceholders, options, true) // removing vars in metadata
+                .use(transformSampleLinks, options, sampleHost)
+                .use(getFrontMatterTypes, options, filePath)
+                .use(transformCodeRefs, options) // filePath
+                .use(transformDocLinks, options)
+                .use(omitPlatformSpecificSections, options)
+                .use(omitComponentSpecificSections, options)
+                // .use(omitStackblitzButtons, options)
+                .use(manageAutoButtons, options)
+                .use(finishRemove, options)
+                .use(omitFencedCode, options)
+                .use(finishRemoveBlocks, options)
+                .use(transformNotes, options)
+                .use(finishRemoveNotes, options)
+                .use(stringify)
+                .process(fileContent, function (err: any, vfile: any) {
+                    if (err) {
+                        callback(err, null);
+                        return;
+                    }
 
-                output.push({ content: vfile.toString(), componentOutput: componentOutput });
+                    output.push({ content: vfile.toString(), componentOutput: componentOutput });
 
-                if (iteration == runFor.length - 1) {
-                    callback(null, output);
-                } else {
-                    iteration++;
-                    doIteration();
-                }
-                //callback(null, vfile.toString());
-            });
+                    if (iteration == runFor.length - 1) {
+                        callback(null, output);
+                    } else {
+                        iteration++;
+                        doIteration();
+                    }
+                    //callback(null, vfile.toString());
+                });
         }
         doIteration();
 
@@ -1860,17 +1872,17 @@ export class MarkdownTransformer {
         }
         return url;
     }
-    
+
 
     verifyMarkdown(fileContent: string, filePath: string): any {
         // console.log("verifyMarkdown... \n");
 
         if (this.docsVerifier === undefined)
             this.docsVerifier = new MarkdownVerifier();
-        
+
         var result = this.docsVerifier.verifyMarkdown(fileContent, filePath);
 
-        return { fileContent: fileContent, isValid: result.isValid};
+        return { fileContent: fileContent, isValid: result.isValid };
     }
 
     // updateGitIgnore(excludeFiles: string[])
@@ -2094,9 +2106,9 @@ export class MarkdownTransformer {
 
         // console.log(apiSection);
         //console.log(md.sections[md.sections.length- 1].content);
-         //console.log(newApiMembers.join(', '));
+        //console.log(newApiMembers.join(', '));
 
-         return fileContent;
+        return fileContent;
     }
 
     // simplifies converted YML to JSON string into new format of TOC
@@ -2114,7 +2126,7 @@ export class MarkdownTransformer {
         // JSON.stringify does not have persistent order of properties so
         // we are using our own JSON stringify function:
         let tocPropsOrder = ['name', 'href', 'status', 'header', 'items'];
-        let tocContent = JsonEx.stringify(tocNodes,  null, '  ', tocPropsOrder);
+        let tocContent = JsonEx.stringify(tocNodes, null, '  ', tocPropsOrder);
 
         console.log('simplifyJson output ' + tocNodes.length + ' nodes');
         return tocContent;
@@ -2138,12 +2150,12 @@ export class MarkdownTransformer {
             }
             else if (node.updated) {
                 node.status = "UPDATED";
-            }else if (node.preview) {
+            } else if (node.preview) {
                 node.status = "PREVIEW";
             } else if (node.beta) {
                 node.status = "PREVIEW";
             }
-             else {
+            else {
                 node.status = "";
             }
 
@@ -2306,7 +2318,7 @@ export class MarkdownTransformer {
 
                 node.name = node.name.replace("$Platform$", platform);
                 if (node.href) {
-                    if (this.filterContains(language + "/components/" + node.href, excludedFiles)){
+                    if (this.filterContains(language + "/components/" + node.href, excludedFiles)) {
                         continue; // skip node if node reference is in excluded files
                     }
                     node.href = node.href.replace("$Platform$", platform);
@@ -2381,15 +2393,15 @@ export class Strings {
     }
 
     public static extract(orgStr: string, startStr: string, endStr: string): string {
-       let start = orgStr.indexOf(startStr);
+        let start = orgStr.indexOf(startStr);
         let end = orgStr.indexOf(endStr);
         return orgStr.substring(start + startStr.length, end);
     }
 
     public static toTitleCase(str: string, separator?: string) {
         if (separator === undefined) { separator = ' '; }
-        return str.toLowerCase().split(separator).map(function(word) {
-          return (word.charAt(0).toUpperCase() + word.slice(1));
+        return str.toLowerCase().split(separator).map(function (word) {
+            return (word.charAt(0).toUpperCase() + word.slice(1));
         }).join(separator);
     }
 
@@ -2419,7 +2431,7 @@ export class TocNode {
     public exclude?: string[];
 
     constructor() {
-          this.name = "NOTE without name";
+        this.name = "NOTE without name";
     }
 }
 
