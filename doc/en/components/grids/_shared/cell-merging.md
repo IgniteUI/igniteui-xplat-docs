@@ -209,8 +209,8 @@ constructor() {
     const grid = (this.grid = document.getElementById('grid') as IgcGridComponent);
 
     grid.data = this.data;
-    (grid as any).mergeStrategy = new MyCustomStrategy();
-    (grid as any).cellMergeMode = 'always';
+    grid.mergeStrategy = new MyCustomStrategy() as IgcGridMergeStrategy;
+    grid.cellMergeMode = 'always';
 }
 ```
 <!-- end: WebComponents -->
