@@ -279,7 +279,7 @@ export interface ApiDocOverride {
 
 export interface ApiDocPaths {
     default: string;
-    override?: ApiDocOverride[];
+    overrides?: ApiDocOverride[];
 }
 
 export enum APIPlatform {

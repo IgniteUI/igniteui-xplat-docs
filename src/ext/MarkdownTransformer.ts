@@ -159,11 +159,11 @@ function getApiLink(apiRoot: ApiDocPaths, typeName: string, memberName: string |
             if (packageName) {
                 let shouldOverrideJoinSymbol = false;
                 let urlNameJoinSymbol = "_";
-                if (apiRoot.override && apiRoot.override.length > 0) {
-                    for (let i = 0; i < apiRoot.override.length; i++) {
-                        if (apiRoot.override[i].packages.indexOf(packageName) >= 0) {
-                            shouldOverrideJoinSymbol = !!apiRoot.override[i].buildUrlDashed;
-                            if (apiRoot.override[i].buildUrlDashed && shouldOverrideJoinSymbol) {
+                if (apiRoot.overrides && apiRoot.overrides.length > 0) {
+                    for (let i = 0; i < apiRoot.overrides.length; i++) {
+                        if (apiRoot.overrides[i].packages.indexOf(packageName) >= 0) {
+                            shouldOverrideJoinSymbol = !!apiRoot.overrides[i].buildUrlDashed;
+                            if (apiRoot.overrides[i].buildUrlDashed && shouldOverrideJoinSymbol) {
                                 urlNameJoinSymbol = "-";
                             }
                             break;
@@ -488,18 +488,18 @@ function transformCodeRefs(options: any) {
 
                 // overriding api root based on package that the member comes from.
                 const packageName = options.mappings.getType(apiTypeName, options.filePath).packageName;
-                if (apiDocPaths.override && apiDocPaths.override.length > 0) {
-                    for (let i = 0; i < apiDocPaths.override.length; i++) {
-                        if (apiDocPaths.override[i].packages.indexOf(packageName) >= 0) {
-                            link.url = link.url.replace(apiDocRoot, apiDocPaths.override[i].root);
+                if (apiDocPaths.overrides && apiDocPaths.overrides.length > 0) {
+                    for (let i = 0; i < apiDocPaths.overrides.length; i++) {
+                        if (apiDocPaths.overrides[i].packages.indexOf(packageName) >= 0) {
+                            link.url = link.url.replace(apiDocRoot, apiDocPaths.overrides[i].root);
                         }
-                        if (apiDocPaths.override[i].components !== undefined) {
-                            for (const component of apiDocPaths.override[i].components!) {
+                        if (apiDocPaths.overrides[i].components !== undefined) {
+                            for (const component of apiDocPaths.overrides[i].components!) {
                                 let className = new RegExp(component.toLowerCase() + ".*.html", "im");
                                 if (link.url.match(className)) {
                                     // if (link.url.indexOf("calendar") >= 0)
                                     //     console.log("getApiLink old " + memberName + " >> '" + link.url + "'");
-                                    link.url = link.url.replace(apiDocRoot, apiDocPaths.override[i].root);
+                                    link.url = link.url.replace(apiDocRoot, apiDocPaths.overrides[i].root);
                                     //link.url = urls.replace("\/api\/docs\/", "\/docs\/");
                                     //if (link.url.indexOf("calendar") >= 0)
                                     //    console.log("getApiLink new " + memberName + " >> '" + link.url + "'");
