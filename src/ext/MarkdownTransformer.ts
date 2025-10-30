@@ -1670,8 +1670,8 @@ export class MarkdownTransformer {
                         const line = lines[i];
                         if (line.indexOf("github-src=") > 0) {
                             samplePath = line.replace('github-src="', "");
-                            samplePath = samplePath.replace('"', '');
-                            samplePath = samplePath.replace('>', '');
+                            samplePath = samplePath.replace(/"/g, '');
+                            samplePath = samplePath.replace(/>/g, '');
                             samplePath = samplePath.trim();
                         }
                         if (line.indexOf("code-view>") > 0) {
