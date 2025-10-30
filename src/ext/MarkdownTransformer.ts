@@ -1188,7 +1188,7 @@ function transformSamples(options: any) {
             // injecting sandbox and stackblitz buttons below <code-view />
             let editButtonTemplate = fs.readFileSync('./templates/sample.edit.buttons.html').toString();
             // let stackblitz = "https://stackblitz.com/" +  github + "?file=src%2Fapp.component.html";
-            let stackblitz = "https://stackblitz.com/" + sample.github + "?file=src" + sample.file.replace('/', "%2F");
+            let stackblitz = "https://stackblitz.com/" + sample.github + "?file=src" + sample.file.replace(/\//g, "%2F");
             let sandbox = "https://codesandbox.io/s/" + sample.github + "?fontsize=14&hidenavigation=1&theme=dark&view=preview&file=/" + sample.file;
             let editButtons = editButtonTemplate + "";
 
