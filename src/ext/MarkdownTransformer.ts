@@ -139,7 +139,7 @@ function getApiLink(apiRoot: ApiDocPaths, typeName: string, memberName: string |
             if (blazorNamespaceLookup[resolvedType]) {
                 blazorNamespace = blazorNamespaceLookup[resolvedType];
             }
-            linkText = apiRoot + blazorNamespace + "." + resolvedType + ".html";
+            linkText = apiRoot.default + blazorNamespace + "." + resolvedType + ".html";
             // console.log( blazorNamespaceLookup[resolvedTypeName] + " " + resolvedTypeName + " " + linkText);
 
         } else { // Angular || React || WC
