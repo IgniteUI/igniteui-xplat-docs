@@ -192,13 +192,13 @@ function getApiLink(apiRoot: ApiDocPaths, typeName: string, memberName: string |
             // console.log("getApiLink packageText=" + packageText);
             // console.log("getApiLink resolvedName=" + resolvedType);
             if (isClass) {
-                linkText = apiRoot + "classes/" + packageText + resolvedType.toLowerCase() + ".html";
+                linkText = apiRoot.default + "classes/" + packageText + resolvedType.toLowerCase() + ".html";
             } else if (isEnum) {
-                linkText = apiRoot + "enums/" + packageText + resolvedType.toLowerCase() + ".html";
+                linkText = apiRoot.default + "enums/" + packageText + resolvedType.toLowerCase() + ".html";
             } else if (isInterface) {
-                linkText = apiRoot + "interfaces/" + packageText + resolvedType.toLowerCase() + ".html";
+                linkText = apiRoot.default + "interfaces/" + packageText + resolvedType.toLowerCase() + ".html";
             } else if (isType) {
-                linkText = apiRoot + "types/" + packageText + resolvedType.toLowerCase() + ".html";
+                linkText = apiRoot.default + "types/" + packageText + resolvedType.toLowerCase() + ".html";
             }
         }
     }
