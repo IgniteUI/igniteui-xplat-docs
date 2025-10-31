@@ -74,9 +74,16 @@ Then follow the prompts to choose a name for the project, React as a platform to
 
 ### Adding an Ignite UI React Grid Component
 
+##### Package Installation 
+To add the Ignite UI React [**Grid**](grids/data-grid.md) component to the app you need to install the `igniteui-react-grids` package:
+
+```cmd
+npm install igniteui-react-grids --save
+```
+
 #### Importing Component Modules
 
-First we have to import the required modules of the components we want to use. We will go ahead and do this for the [**Grid**](grids/data-grid.md) component. We also need to import one of the themes.
+Then we can import the required modules of the components we want to use. Let's do this for the Grid and Column components that we will also use in the template. We also need to import one of the themes.
 
 
 ```ts
