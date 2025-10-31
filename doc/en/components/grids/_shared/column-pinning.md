@@ -299,13 +299,13 @@ const pinningConfig: IgrPinningConfig = { columns: ColumnPinningPosition.End };
 
 `sample="/{ComponentSample}/column-pinning-right-side", height="510", alt="{Platform} {ComponentTitle} column pinning right side"`
 
-<!-- React -->
-Additionally, you can specify each column pinning location separately, allowing you to pin columns to both sides of the grid for greater convenience and easier optimization of data sets. Please refer to the demo bellow for further reference. In order to pin a column, please either select a column by clicking on a header and use the pin buttons added ot the toolbar, or simply drag a column to another pinned one.
+<!-- React, WebComponents -->
+Additionally, you can specify each column pinning location separately, allowing you to pin columns to both sides of the grid for greater convenience and easier optimization of data sets. Please refer to the demo bellow for further reference. In order to pin a column, please either select a column by clicking on a header and use the pin buttons added to the toolbar, or simply drag a column to another pinned one.
 
 ### Demo
 
 `sample="/{ComponentSample}/column-pinning-both-sides", height="510", alt="{Platform} {ComponentTitle} column pinning both sides"`
-<!-- end: React -->
+<!-- end: React, WebComponents -->
 
 
 ## Custom Column Pinning UI

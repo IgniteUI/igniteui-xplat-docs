@@ -34,12 +34,22 @@ The grid exposes a `cellMergeMode` property that accepts values from the `GridCe
 ```tsx
 const cellMergeMode: GridCellMergeMode = 'always';
 ```
+
+```html
+<{ComponentSelector} cell-merge-mode="always">
+    ...
+</{ComponentSelector}>
+```
 ### Column Merge Toggle
 At the column level, merging can be enabled or disabled with the `merge` property.
 
 ```tsx
 <IgrColumn field="OrderID" merge={true}></IgrColumn>
 <IgrColumn field="ShipperName" merge={false}></IgrColumn>
+```
+```html
+<igc-column field="OrderID" merge="true"></igc-column>
+<igc-column field="ShipperName" merge="false"></igc-column>
 ```
 
 In the above example:
@@ -49,7 +59,7 @@ In the above example:
 ### Combined Example
 
 ```tsx
-<{ComponentSelector} data={data} cellMergeMode]={cellMergeMode} autoGenerate={false}>
+<{ComponentSelector} data={data} cellMergeMode={cellMergeMode} autoGenerate={false}>
     <IgrColumn field="OrderID" header="Order ID" merge={true}></IgrColumn>
     <IgrColumn field="ShipperName" header="Shipper Name" merge={true}></IgrColumn>
     <IgrColumn field="Salesperson" header="Salesperson"></IgrColumn>
@@ -58,14 +68,22 @@ In the above example:
 ```tsx
 const cellMergeMode: GridCellMergeMode = 'onSort';
 ```
+```html
+<{ComponentSelector} cell-merge-mode="onSort" auto-generate="false">
+    <igc-column field="OrderID" header="Order ID" merge="true"></igc-column>
+    <igc-column field="ShipperName" header="Shipper Name" merge="false"></igc-column>
+    <igc-column field="Salesperson" header="Salesperson"></igc-column>
+</{ComponentSelector}>
+```
 Here, the grid is set to merge only when columns are sorted, and both Category and Product columns are configured for merging.
 
 ## Custom Merge Conditions
 In addition to the built-in `always` and `onSort` modes, the grid allows you to define a custom condition for merging cells through the `mergeStrategy` property. This strategy controls both how cells are compared and how merged ranges are calculated.
 
 ### Merge Strategy Class
-A custom merge strategy must implement the `IgrGridMergeStrategy` class:
+A custom merge strategy must implement the `GridMergeStrategy` class:
 
+<!-- React -->
 ```ts
 export declare class IgrGridMergeStrategy {
     merge: (
@@ -80,14 +98,33 @@ export declare class IgrGridMergeStrategy {
     comparer: (prevRecord: any, record: any, field: string) => boolean;    
 }
 ```
+<!-- end: React -->
+<!-- WebComponents -->
+```ts
+export declare class IgcGridMergeStrategy {
+    merge: (
+        data: any[],
+        field: string,
+        comparer: (prevRecord: any, currentRecord: any, field: string) => boolean,
+        result: any[],
+        activeRowIndex?: number,
+        grid?: GridType
+    ) => any[];
+
+    comparer: (prevRecord: any, record: any, field: string) => boolean;    
+}
+```
+<!-- end: WebComponents -->
+
 - `merge` - defines how merged cells are produced.
 - `comparer` - defines the condition to decide if two adjacent records should be merged.
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 ### Extending the Default Strategy
 
-If you only want to customize part of the behavior (for example, the comparer logic), you can extend the built-in `IgrDefaultMergeStrategy` and override the relevant methods.
+If you only want to customize part of the behavior (for example, the comparer logic), you can extend the built-in `DefaultMergeStrategy` and override the relevant methods.
 
+<!-- React -->
 ```ts
 export class MyCustomStrategy extends IgrDefaultMergeStrategy {
     /* Merge only cells within their respective projects */
@@ -100,6 +137,21 @@ export class MyCustomStrategy extends IgrDefaultMergeStrategy {
     }
 }
 ```
+<!-- end: React -->
+<!-- WebComponents -->
+```ts
+export class MyCustomStrategy extends IgcDefaultMergeStrategy {
+    /* Merge only cells within their respective projects */
+    public override comparer(prevRecord: any, record: any, field: string): boolean {
+        const a = prevRecord[field];
+        const b = record[field];
+        const projA = prevRecord['ProjectName'];
+        const projB = record['ProjectName'];
+        return a === b && projA === projB;
+    }
+}
+```
+<!-- end: WebComponents -->
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 <!-- ComponentStart: TreeGrid -->
 The `IgxTreeGrid` provides two built-in strategies that implement the `IGridMergeStrategy` interface: `DefaultTreeGridMergeStrategy` and `ByLevelTreeGridMergeStrategy`. `DefaultTreeGridMergeStrategy` merges all cells with the same value, regardless of their hierarchical level. In contrast, `ByLevelTreeGridMergeStrategy` only merges cells if they have the same value and are located at the same level, making level a required condition for merging.
@@ -108,6 +160,7 @@ The `IgxTreeGrid` provides two built-in strategies that implement the `IGridMerg
 
 If you only want to customize part of the behavior (for example, the comparer logic), you can extend one of the built-in strategies, either `DefaultTreeGridMergeStrategy` or `ByLevelTreeGridMergeStrategy`, and override the relevant methods.
 
+<!-- React -->
 ```ts
 export class MyCustomStrategy extends IgrDefaultTreeGridMergeStrategy {
     /* Merge only cells within their respective projects */
@@ -120,10 +173,26 @@ export class MyCustomStrategy extends IgrDefaultTreeGridMergeStrategy {
     }
 }
 ```
+<!-- end: React -->
+<!-- WebComponents -->
+```ts
+export class MyCustomStrategy extends IgcDefaultTreeGridMergeStrategy {
+    /* Merge only cells within their respective projects */
+    public override comparer(prevRecord: any, record: any, field: string): boolean {
+        const a = prevRecord[field];
+        const b = record[field];
+        const projA = prevRecord['ProjectName'];
+        const projB = record['ProjectName'];
+        return a === b && projA === projB;
+    }
+}
+```
+<!-- end: WebComponents -->
 <!-- ComponentEnd: TreeGrid -->
 
 ### Applying a Custom Strategy
 Once defined, assign the strategy to the grid through the `mergeStrategy` property:
+<!-- React -->
 ```tsx
 <{ComponentSelector} data={data} mergeStrategy={customStrategy}>
   <IgrColumn field="ActionID" merge={true}></IgrColumn>
@@ -133,6 +202,18 @@ Once defined, assign the strategy to the grid through the `mergeStrategy` proper
 ```ts
 const customStrategy = new MyCustomStrategy() as IgrGridMergeStrategy;
 ```
+<!-- end: React -->
+<!-- WebComponents -->
+```ts
+constructor() {
+    const grid = (this.grid = document.getElementById('grid') as IgcGridComponent);
+
+    grid.data = this.data;
+    grid.mergeStrategy = new MyCustomStrategy() as IgcGridMergeStrategy;
+    grid.cellMergeMode = 'always';
+}
+```
+<!-- end: WebComponents -->
 <!-- ComponentStart: Grid -->
 ### Demo
 `sample="/{ComponentSample}/cell-merge-custom-sample", height="700", alt="{Platform} {ComponentTitle} Cell Merging Example"`
