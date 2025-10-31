@@ -47,7 +47,7 @@ If you want to get a guided experience through the available options, you can in
 ig
 ```
 
-Then choose React as framework, React TS as type, select `Default Top Navigation` project template, add a specific component/view or select `Complete & Run`.
+Then choose `React` as framework, `Ignite UI for React TS` as type, select `Default Top Navigation` project template, add a specific component/view or select `Complete & Run`.
 For more information about the Ignite UI CLI, see the [CLI overview](general-cli-overview.md).
 
 If you added a Grid component during the prompts, once the application is running you should see something similar to the following:
