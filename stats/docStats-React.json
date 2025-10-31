@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in React documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "React",
-  "samplesCount": 742,
+  "samplesCount": 744,
   "samplesHost": "https://staging.infragistics.com/react-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -884,6 +884,9 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-pinning": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-pinning"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-pinning-both-sides": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-pinning"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-pinning-options": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-pinning"
     ],
@@ -1163,6 +1166,9 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/column-moving"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-pinning": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/column-pinning"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-pinning-both-sides": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/column-pinning"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-pinning-options": [
@@ -1454,6 +1460,9 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/column-moving"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-pinning": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/column-pinning"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-pinning-both-sides": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/column-pinning"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-pinning-options": [
@@ -1968,9 +1977,6 @@
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/tooltip/triggers": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/tooltip"
-    ],
-    "https://staging.infragistics.com/react-demos/samples/samples/interactions/chat/features": [
-      "https://staging.infragistics.com/products/ignite-ui-react/react/components/interactivity/chat"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/interactions/chat/overview": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/interactivity/chat"
@@ -2846,6 +2852,7 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-pinning": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-pinning",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-pinning-both-sides",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-pinning-options",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-pinning-right-side",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-pinning-styles"
@@ -3023,6 +3030,7 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/column-pinning": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-pinning",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-pinning-both-sides",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-pinning-options",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-pinning-right-side",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-pinning-styles"
@@ -3219,6 +3227,7 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/column-pinning": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-pinning",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-pinning-both-sides",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-pinning-options",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-pinning-right-side",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-pinning-styles"
@@ -3491,7 +3500,6 @@
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/tooltip/triggers"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/interactivity/chat": [
-      "https://staging.infragistics.com/react-demos/samples/samples/interactions/chat/features",
       "https://staging.infragistics.com/react-demos/samples/samples/interactions/chat/overview",
       "https://staging.infragistics.com/react-demos/samples/samples/interactions/chat/styling"
     ],

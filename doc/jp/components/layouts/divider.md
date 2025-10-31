@@ -1,6 +1,6 @@
 ---
 title: {Platform} Divider | レイアウト コントロール | インフラジスティックス
-_description: インフラジスティックスの {Platform} Avatar コンポーネントを使用して、画像、アイコン、またはイニシャルを表示します。
+_description: Infragistics の {Platform} Divider コンポーネントを使用すると、コンテンツ間の区切りとして水平線または垂直線を簡単に作成でき、ページ上の情報をより整理して表示できます。
 _keywords: {ProductName}, UI controls, {Platform} widgets, Web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} DIvider components, {Platform} Divider controls, UI コントロール, {Platform} ウィジェット, Web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Divider コンポーネント, {Platform} Divider コントロール
 mentionedTypes: ["Divider"]
 _language: ja
@@ -182,12 +182,12 @@ defineComponents(IgcDividerComponent);
 ```
 
 ```razor
-<IgrSelect>
- <IgrSelectItem>Item 1</IgrSelectItem>
- <IgrSelectItem>Item 2</IgrSelectItem>
- <IgrDivider></IgrDivider>
- <IgrSelectItem>Item 2</IgrSelectItem>
-</IgrSelect>
+<IgbSelect>
+ <IgbSelectItem>Item 1</IgbSelectItem>
+ <IgbSelectItem>Item 2</IgbSelectItem>
+ <IgbDivider></IgbDivider>
+ <IgbSelectItem>Item 2</IgbSelectItem>
+</IgbSelect>
 ```
 
 `sample="/layouts/divider/select", height="330", alt="{Platform} Divider Select の例"`
