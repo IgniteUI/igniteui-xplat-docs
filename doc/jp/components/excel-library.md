@@ -14,7 +14,8 @@ Infragistics {Platform} Excel ライブラリは、`Workbook`、`Worksheet`、`C
 
 `sample="/excel/excel-library/overview", height="100", alt="{Platform} Excel ライブラリの例"`
 
-
+> [!Note]
+> XLSX 形式は必要です。他の形式は現在サポートされていません。
 
 <div class="divider--half"></div>
 

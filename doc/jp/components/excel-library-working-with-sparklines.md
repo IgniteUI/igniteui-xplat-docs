@@ -14,7 +14,8 @@ Infragistics {Platform} Excel Library は、Excel ワークシートにスパー
 
 `sample="/excel/excel-library/working-with-sparklines", height="500", alt="{Platform} スパークラインを使用した作業の例"`
 
-
+> [!Note]
+> XLSX 形式は必要です。他の形式は現在サポートされていません。
 
 <div class="divider--half"></div>
 
