@@ -37,6 +37,13 @@ Ignite UI for {Platform} {ComponentTitle} には、同じ値を持つ隣接セ�
 ```tsx
 const cellMergeMode: GridCellMergeMode = 'always';
 ```
+
+```html
+<{ComponentSelector} cell-merge-mode="always">
+    ...
+</{ComponentSelector}>
+```
+
 ### 列結合のトグル
 
 列レベルでは、`merge` プロパティで結合の有効または無効を切り替えます。
@@ -46,6 +53,11 @@ const cellMergeMode: GridCellMergeMode = 'always';
 <IgrColumn field="ShipperName" merge={false}></IgrColumn>
 ```
 
+```html
+<igc-column field="OrderID" merge="true"></igc-column>
+<igc-column field="ShipperName" merge="false"></igc-column>
+```
+
 上記の例では:
  - **OrderID** 列は、隣接する重複値を結合します。
  - **ShipperName** 列は、結合を行わず通常通りに描画されます。
@@ -53,7 +65,7 @@ const cellMergeMode: GridCellMergeMode = 'always';
 ### 組み合わせた例
 
 ```tsx
-<{ComponentSelector} data={data} cellMergeMode]={cellMergeMode} autoGenerate={false}>
+<{ComponentSelector} data={data} cellMergeMode={cellMergeMode} autoGenerate={false}>
     <IgrColumn field="OrderID" header="Order ID" merge={true}></IgrColumn>
     <IgrColumn field="ShipperName" header="Shipper Name" merge={true}></IgrColumn>
     <IgrColumn field="Salesperson" header="Salesperson"></IgrColumn>
@@ -64,6 +76,14 @@ const cellMergeMode: GridCellMergeMode = 'always';
 const cellMergeMode: GridCellMergeMode = 'onSort';
 ```
 
+```html
+<{ComponentSelector} cell-merge-mode="onSort" auto-generate="false">
+    <igc-column field="OrderID" header="Order ID" merge="true"></igc-column>
+    <igc-column field="ShipperName" header="Shipper Name" merge="false"></igc-column>
+    <igc-column field="Salesperson" header="Salesperson"></igc-column>
+</{ComponentSelector}>
+```
+
 この例では、グリッドは列がソートされている場合のみ結合を行い、Category 列と Product 列の両方で結合が有効になっています。
 
 ## カスタム結合条件
@@ -72,7 +92,7 @@ const cellMergeMode: GridCellMergeMode = 'onSort';
 
 ### 結合ストラテジ クラス
 
-カスタム結合ストラテジは `IgrGridMergeStrategy` クラスを実装する必要があります:
+カスタム結合ストラテジは `GridMergeStrategy` クラスを実装する必要があります:
 
 ```ts
 export declare class IgrGridMergeStrategy {
@@ -88,14 +108,33 @@ export declare class IgrGridMergeStrategy {
     comparer: (prevRecord: any, record: any, field: string) => boolean;    
 }
 ```
+<!-- end: React -->
+<!-- WebComponents -->
+```ts
+export declare class IgcGridMergeStrategy {
+    merge: (
+        data: any[],
+        field: string,
+        comparer: (prevRecord: any, currentRecord: any, field: string) => boolean,
+        result: any[],
+        activeRowIndex?: number,
+        grid?: GridType
+    ) => any[];
+
+    comparer: (prevRecord: any, record: any, field: string) => boolean;    
+}
+```
+<!-- end: WebComponents -->
+
 - `merge` - 結合されたセルをどのように生成するかを定義。
 - `comparer` - 隣接するレコードを結合すべきかを判定する条件を定義。
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 ### デフォルトのストラテジを拡張
 
-一部の動作 (例: comparer ロジック) のみをカスタマイズしたい場合は、組み込みの `IgrDefaultMergeStrategy` を拡張し、必要なメソッドのみをオーバーライドできます。
+一部の動作 (例: comparer ロジック) のみをカスタマイズしたい場合は、組み込みの `DefaultMergeStrategy` を拡張し、必要なメソッドのみをオーバーライドできます。
 
+<!-- React -->
 ```ts
 export class MyCustomStrategy extends IgrDefaultMergeStrategy {
     /* Merge only cells within their respective projects */
@@ -108,6 +147,21 @@ export class MyCustomStrategy extends IgrDefaultMergeStrategy {
     }
 }
 ```
+<!-- end: React -->
+<!-- WebComponents -->
+```ts
+export class MyCustomStrategy extends IgcDefaultMergeStrategy {
+    /* Merge only cells within their respective projects */
+    public override comparer(prevRecord: any, record: any, field: string): boolean {
+        const a = prevRecord[field];
+        const b = record[field];
+        const projA = prevRecord['ProjectName'];
+        const projB = record['ProjectName'];
+        return a === b && projA === projB;
+    }
+}
+```
+<!-- end: WebComponents -->
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 <!-- ComponentStart: TreeGrid -->
 `IgxTreeGrid` には、`IGridMergeStrategy` を実装する 2 つの組み込みストラテジがあります: `DefaultTreeGridMergeStrategy` と `ByLevelTreeGridMergeStrategy`。`DefaultTreeGridMergeStrategy` は、階層レベルに関係なく同じ値を持つすべてのセルを結合します。`ByLevelTreeGridMergeStrategy` は、同じ階層レベルにあり、かつ同じ値を持つセルのみを結合します。同一階層レベルが結合の必須条件になります。
@@ -116,6 +170,7 @@ export class MyCustomStrategy extends IgrDefaultMergeStrategy {
 
 一部の動作 (例: comparer ロジック) のみをカスタマイズしたい場合は、組み込みの `DefaultTreeGridMergeStrategy` または `ByLevelTreeGridMergeStrategy` のいずれかを拡張し、必要なメソッドのみをオーバーライドできます。
 
+<!-- React -->
 ```ts
 export class MyCustomStrategy extends IgrDefaultTreeGridMergeStrategy {
     /* Merge only cells within their respective projects */
@@ -128,12 +183,27 @@ export class MyCustomStrategy extends IgrDefaultTreeGridMergeStrategy {
     }
 }
 ```
+<!-- end: React -->
+<!-- WebComponents -->
+```ts
+export class MyCustomStrategy extends IgcDefaultTreeGridMergeStrategy {
+    /* Merge only cells within their respective projects */
+    public override comparer(prevRecord: any, record: any, field: string): boolean {
+        const a = prevRecord[field];
+        const b = record[field];
+        const projA = prevRecord['ProjectName'];
+        const projB = record['ProjectName'];
+        return a === b && projA === projB;
+    }
+}
+```
+<!-- end: WebComponents -->
 <!-- ComponentEnd: TreeGrid -->
 
 ### カスタム ストラテジの適用
 
 定義したカスタム ストラテジは、`mergeStrategy` プロパティを通じてグリッドに割り当てます。
-
+<!-- React -->
 ```tsx
 <{ComponentSelector} data={data} mergeStrategy={customStrategy}>
   <IgrColumn field="ActionID" merge={true}></IgrColumn>
@@ -144,6 +214,18 @@ export class MyCustomStrategy extends IgrDefaultTreeGridMergeStrategy {
 ```ts
 const customStrategy = new MyCustomStrategy() as IgrGridMergeStrategy;
 ```
+<!-- end: React -->
+<!-- WebComponents -->
+```ts
+constructor() {
+    const grid = (this.grid = document.getElementById('grid') as IgcGridComponent);
+
+    grid.data = this.data;
+    grid.mergeStrategy = new MyCustomStrategy() as IgcGridMergeStrategy;
+    grid.cellMergeMode = 'always';
+}
+```
+<!-- end: WebComponents -->
 <!-- ComponentStart: Grid -->
 
 ### デモ

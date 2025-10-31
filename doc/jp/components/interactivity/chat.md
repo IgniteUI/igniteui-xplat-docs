@@ -484,6 +484,9 @@ chat.addEventListener('igcMessageCreated', (e) => {
   console.log('Message:', e.detail);
 });
 ```
+
+`sample="/interactions/chat/features", height="900", alt="Web Components チャット機能"`
+
 <!-- end: WebComponents -->
 <!-- React -->
 ```tsx
@@ -493,7 +496,6 @@ chatRef.current.addEventListener('onMessageCreated', (e) => {
 });
 ```
 <!-- end: React -->
-`sample="/interactions/chat/features", height="900", alt="Web Components チャット機能"`
 
 ## スタイル設定
 

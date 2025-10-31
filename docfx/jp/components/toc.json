@@ -157,7 +157,7 @@
     "href": "grids/data-grid.md",
     "items": [
       {
-        "exclude": ["Angular", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "Blazor"],
         "name": "セルの結合",
         "href": "grids/grid/cell-merging.md",
         "status": "NEW"
@@ -401,7 +401,7 @@
     "href": "grids/hierarchical-grid/overview.md",
     "items": [
       {
-        "exclude": ["Angular", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "Blazor"],
         "name": "セルの結合",
         "href": "grids/hierarchical-grid/cell-merging.md",
         "status": "NEW"
@@ -629,7 +629,7 @@
     "href": "grids/tree-grid/overview.md",
     "items": [
       {
-        "exclude": ["Angular", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "Blazor"],
         "name": "セルの結合",
         "href": "grids/tree-grid/cell-merging.md",
         "status": "NEW"
