@@ -12,6 +12,73 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+### 新しいコンポーネント
+
+- `IgrChat` コンポーネントを追加しました。
+
+### {PackageGrids} (グリッド)
+- `IgrGrid`、`IgrTreeGrid`、`IgrHierarchicalGrid`
+    - 同じデータまたはその他のカスタム条件に基づいて列内のセルを 1 つのセルに構成および結合できる新しいセル結合機能を追加しました。
+
+        個々の列で有効化できます:
+
+        ```tsx
+        <IgrColumn field="field" merge={true}></IgrColumn>
+        ```
+        グリッド レベルで以下のいずれかの設定が可能です:
+        - `onSort` - 列がソートされたときのみ結合。
+        - `always` - データ操作に関わらず常に結合。
+
+        ```tsx
+        <IgrGrid cellMergeMode="always">
+        </IgrGrid>
+        ```
+
+        デフォルトの `cellMergeMode` は `onSort` です。
+
+        カスタム シナリオに応じて結合条件やロジックを変更する場合は、グリッドにカスタムの `mergeStrategy` を設定できます。
+
+        特定のデータ フィールドに対してカスタム処理が必要な場合には、個々の列に `mergeComparer` を設定することもできます。
+
+    - 列をグリッドの特定の側 (先頭または末尾) にピン固定できるようになりました。これにより、両側からのピン固定が可能です。これは、列の `pinningPosition` プロパティを宣言的に設定することで実行できます。
+
+        ```tsx
+        <IgrColumn field="Col1" pinned={true} pinningPosition="pinningPosition">
+        </IgrColumn>
+        ```
+
+        ```ts
+        pinningPosition = ColumnPinningPosition.End;
+        ```
+
+        または、API を使用してオプションのパラメーターで実行することもできます。
+
+        ```ts
+        grid.pinColumn('Col1', 0, ColumnPinningPosition.End);
+        grid.pinColumn('Col2', 0, ColumnPinningPosition.Start);
+        ```
+
+        列にプロパティ `pinningPosition` が設定されていない場合、列はグリッドの `columns` の `pinning` オプションで指定された位置にデフォルト設定されます。
+
+    - **ソートの改善**
+        - Schwartzian Transformation を用いてソート アルゴリズムの効率を改善しました。この手法 (decorate-sort-undecorate とも呼ばれる) は、ソート キーを一時的に元データに関連付けることで再計算を回避します。
+        - ソート アルゴリズムを再帰型から反復型にリファクタリングしました。
+    - **グループ化の改善**
+        - グループ化アルゴリズムを再帰型から反復型にリファクタリングしました。
+        - グループ化処理を最適化しました。
+
+### バグ修正
+| バグ修正 | コントロール | 説明 |
+|------------|---------|-------------|
+|[1853](https://github.com/IgniteUI/igniteui-webcomponents/pull/1853)| List |リスト コンポーネントおよびテーマ間で重複していた CSS 変数を削除。|
+|[1871](https://github.com/IgniteUI/igniteui-webcomponents/pull/1871)| Card |テーマからカラーを取得するように変更。|
+|[1873](https://github.com/IgniteUI/igniteui-webcomponents/pull/1873)| Card |カード ヘッダー内のアバター サイズを調整。|
+|[1882](https://github.com/IgniteUI/igniteui-webcomponents/pull/1882)| Chat |最後のメッセージ後にメッセージ アクションがレンダーされない問題を修正。|
+|[1885](https://github.com/IgniteUI/igniteui-webcomponents/pull/1885)| Date Picker |編集不可の入力設定で change イベントが発生しない問題を修正。|
+|[1894](https://github.com/IgniteUI/igniteui-webcomponents/pull/1894)| Date Picker | Material テーマで値をクリアした際にノッチの境界線に関する問題を修正。|
+
+## **{PackageVerChanges-25-1-OCT}**
+
 ### {PackageMaps} 地理マップ
 
 #### <label>PREVIEW</label> Azure マップ画像のサポート
