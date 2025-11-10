@@ -20,7 +20,9 @@ Visual Studio 2022 を起動し、開始ページで **[新しいプロジェク
 
 <img src="../images/general/new-blazor-project-configuring-web-app.jpg" />
 
-次のステップでは、オプションの Interactivty の場所の設定に注意してください。これは、クライアント プロジェクト内のページごとにデフォルト設定されます (例: @rendermode Interactive Auto)。もう 1 つのオプションである Global では、Interactivty レンダリング モードの設定を、共有 Blazor プロジェクト内の 1 つの場所にある App.razor に移動します。例: <Routes @rendermode="InteractiveAuto"/>
+次のステップでは、オプションの Interactivty の場所の設定に注意してください。これは、クライアント プロジェクト内のページごとにデフォルト設定されます (例: @rendermode Interactive Auto)。もう 1 つのオプションである Global では、Interactivty レンダリング モードの設定を、共有 Blazor プロジェクト内の 1 つの場所にある App.razor に移動します。
+
+例: <Routes @rendermode="InteractiveAuto"/>
 
 **追加のプロジェクト オプションを指定し、[作成]** をクリックします。
 
@@ -30,15 +32,13 @@ Visual Studio 2022 を起動し、開始ページで **[新しいプロジェク
 
 Ignite UI for Blazor は、NuGet パッケージで提供されます。Blazor アプリケーションで Ignite UI for Blazor コンポーネントを使用するには、最初に適切な NuGet パッケージをインストールする必要があります。
 
-Visual Studio で、**[ツール]** → **[NuGet パッケージ マネージャー]** → **[ソリューションの NuGet パッケージの管理]** を選択して、NuGet パッケージ マネージャーを開きます。**IgniteUI.Blazor** NuGet パッケージを検索してインストールします。
+Visual Studio で、**[ツール]** → **[NuGet パッケージ マネージャー]** → **[ソリューションの NuGet パッケージの管理]** を選択して、NuGet パッケージ マネージャーを開きます。すべての対象プロジェクトを選択してパッケージをインストールし、**IgniteUI.Blazor** NuGet パッケージを検索してインストールします。
 
 NuGet を使用した Ignite UI for Blazor のインストールの詳細については、[Ignite UI for Blazor のインストール](general-installing-blazor.md) トピックを参照してください。
 
 ## Ignite UI for Blazor の登録
 
-### .NET 8 以降のアプリケーション
-
-1 - 共有 **Program.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** 関数を呼び出して Ignite UI for Blazor サービスを登録します。
+1 - サーバーの **Program.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** 関数を呼び出して Ignite UI for Blazor サービスを登録します。
 
 ```razor
 var builder = WebApplication.CreateBuilder(args);
@@ -63,21 +63,35 @@ builder.Services.AddIgniteUIBlazor();
 await builder.Build().RunAsync();
 ```
 
-2 - **IgniteUI.Blazor.Controls** 名前空間を **_Imports.razor** ファイルに追加します。
+2 - クライアント プロジェクトとサーバー プロジェクト両方の **_Imports.razor** ファイルに、**IgniteUI.Blazor.Controls** 名前空間を追加します。
 
 ```razor
 @using IgniteUI.Blazor.Controls
 ```
 
-3 - **wwwroot/index.html** ファイルの **<head\>** 要素にスタイル シートを追加します。
+3 - サーバー プロジェクトの **Components/App.razor** ファイル内の **<head\>** 要素にスタイル シートを追加します。
 
 ```razor
 <head>
-    <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
-</head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+
+    <link rel="stylesheet" href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" />
 ```
 
-4 - スクリプト参照を **wwwroot/index.html** ファイルに追加します。
+.NET 9 以降のアプリケーションでは、**Assets** コレクション プロパティを使用することを推奨します。
+
+```razor
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+
+    <link rel="stylesheet" href="@Assets["_content/IgniteUI.Blazor/themes/light/bootstrap.css"]" />
+```
+
+4 - スクリプト参照を **Components/App.razor** ファイルに追加します。
 
 ```razor
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
@@ -86,7 +100,7 @@ await builder.Build().RunAsync();
 
 ## Ignite UI for Blazor コンポーネントの追加
 
-Razor ページに Ignite UI for Blazor コンポーネントの追加:
+Razor ページに Ignite UI for Blazor コンポーネントを追加します。(Ignite UI for Blazor コンポーネントには **InteractiveServer**、**InteractiveWebAssembly**、または **InteractiveAuto** のようなインタラクティブなレンダー モードが必要です。「ページ/コンポーネントごと」のインタラクティビティを使用する場合は、Ignite UI コンポーネントを使用するページにインタラクティブなレンダー モードが指定されていることを確認してください。)
 
 ```razor
 <IgbCard style="width:350px">

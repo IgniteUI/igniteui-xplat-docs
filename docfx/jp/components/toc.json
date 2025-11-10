@@ -157,6 +157,12 @@
     "href": "grids/data-grid.md",
     "items": [
       {
+        "exclude": ["Angular", "Blazor"],
+        "name": "セルの結合",
+        "href": "grids/grid/cell-merging.md",
+        "status": "NEW"
+      },
+      {
         "exclude": ["Angular"],
         "name": "クリップボードの操作",
         "href": "grids/grid/clipboard-interactions.md"
@@ -395,6 +401,12 @@
     "href": "grids/hierarchical-grid/overview.md",
     "items": [
       {
+        "exclude": ["Angular", "Blazor"],
+        "name": "セルの結合",
+        "href": "grids/hierarchical-grid/cell-merging.md",
+        "status": "NEW"
+      },
+      {
         "exclude": ["Angular"],
         "name": "縮小可能な列グループ",
         "href": "grids/hierarchical-grid/collapsible-column-groups.md"
@@ -411,7 +423,7 @@
         "href": "grids/hierarchical-grid/column-moving.md"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "列のピン固定",
         "href": "grids/hierarchical-grid/column-pinning.md"
       },
@@ -617,6 +629,12 @@
     "href": "grids/tree-grid/overview.md",
     "items": [
       {
+        "exclude": ["Angular", "Blazor"],
+        "name": "セルの結合",
+        "href": "grids/tree-grid/cell-merging.md",
+        "status": "NEW"
+      },
+      {
         "exclude": ["Angular"],
         "name": "クリップボードの操作",
         "href": "grids/tree-grid/clipboard-interactions.md"
@@ -648,7 +666,7 @@
         "href": "grids/tree-grid/column-moving.md"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "列のピン固定",
         "href": "grids/tree-grid/column-pinning.md",
         "status": ["NEW_REACT"]
@@ -897,10 +915,6 @@
         "name": "グリッド編集",
         "href": "grids/data-grid/cell-editing.md",
         "status": ""
-      },
-      {
-        "name": "セルの結合",
-        "href": "grids/data-grid/cell-merging.md"
       },
       {
         "name": "セル選択",
@@ -1247,7 +1261,7 @@
         {
           "name": "チャート テータ注釈",
           "href": "charts/features/chart-data-annotations.md",
-          "status": "NEW"
+          "status": "PREVIEW"
         },
         {
           "name": "ダッシュボードでのチャート作成",
@@ -1412,6 +1426,11 @@
         "href": "geo-map-binding-multiple-sources.md",
         "status": ""
       },
+      {        
+        "name": "Azure 画像の表示",
+        "href": "geo-map-display-azure-imagery.md",
+        "status": "PREVIEW"
+      },
       {
         "exclude": ["Blazor"],
         "name": "Bing 画像の表示",
@@ -1555,12 +1574,13 @@
     "status": ""
   },
    {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "デバイダー",
-    "href": "layouts/divider.md"
+    "href": "layouts/divider.md",
+    "status": "new"
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "タイル マネージャー",
     "href": "layouts/tile-manager.md",
     "status": "new"
@@ -1741,9 +1761,10 @@
     "status": "new"
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "マスク入力",
-    "href": "inputs/mask-input.md"
+    "href": "inputs/mask-input.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
@@ -1780,12 +1801,18 @@
     "header": true
   },
   {
+    "exclude": ["Angular", "Blazor"],
+    "name": "チャット",
+    "href": "interactivity/chat.md",
+    "status": "new"
+  },
+  {
     "exclude": ["Angular"],
     "name": "リップル",
     "href": "inputs/ripple.md"
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "ツールチップ",
     "href": "inputs/tooltip.md",
     "status": "new"

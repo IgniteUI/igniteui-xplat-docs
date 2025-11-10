@@ -15,13 +15,128 @@ _language: ja
 
 ## **{PackageVerLatest}**
 
+### {PackageMaps} (地理マップ)
+
+**重大な変更**
+
+- `AzureMapsMapImagery` は `AzureMapsImagery` に名前が変更されました。
+- `AzureMapsImagery` は `AzureMapsImageryStyle.Satellite` に名前が変更されました。
+- 次の `AzureMapsImageryStyle` 列挙値は、Overlay サフィックスを含むように名前が変更されました。
+  - `TerraOverlay`
+  - `LabelsRoadOverlay`
+  - `LabelsDarkGreyOverlay`
+  - `HybridRoadOverlay`
+  - `HybridDarkGreyOverlay`
+  - `WeatherRadarOverlay`
+  - `WeatherInfraredOverlay`
+  - `TrafficAbsoluteOverlay`
+  - `TrafficRelativeOverlay`
+  - `TrafficRelativeDarkOverlay`
+  - `TrafficDelayOverlay`
+  - `TrafficReducedOverlay`
+
+### {PackageCharts} (チャート)
+
+#### <label>PREVIEW</label> 新しい軸ラベル イベント
+
+軸ラベルに対するさまざまな操作を検出できるように、次のイベントが `IgbDataChart` に追加されました。
+
+- `LabelMouseDown`
+- `LabelMouseUp`
+- `LabelMouseEnter`
+- `LabelMouseLeave`
+- `LabelMouseMove`
+- `LabelMouseClick`
+
+#### <label>PREVIEW</label> 対応軸
+
+X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸を簡単に複製できるようになりました。`CompanionAxisEnabled` プロパティを有効にすると、複製された軸はチャートの反対側に配置され、そこから各軸プロパティを設定できます。
+
+#### <label>PREVIEW</label> RadialPieSeries インセット アウトライン
+
+`RadialPieSeries` のアウトライン レンダリング方法を制御するために `UseInsetOutlines` プロパティが追加されました。**true** に設定すると、アウトラインがスライス形状の内側に描画され、**false** (既定値) に設定すると、アウトラインはスライス形状の端に半分内側・半分外側で描画されます。
+
+**重大な変更**
+
+- `ChartMouseEventArgs` クラスの `PlotAreaPosition` プロパティと `ChartPosition` プロパティが逆になっている問題が修正されました。これにより、`PlotAreaPosition` と `ChartPosition` が返す値が変更されます。
+
+### {PackageGrids} (グリッド)
+
+#### <label>PREVIEW</label> セル サフィックス コンテンツ
+
+セル内のサフィックス コンテンツのサポートが追加されました。これにより、セル値の末尾にテキストやアイコンを追加してスタイルを設定できるようになりました。セル サフィックス コンテンツに追加されたプロパティの完全なリストは以下に示されており、`DataGridColumn` および `CellInfo` クラスで使用できます。
+
+- `SuffixText`
+- `SuffixTextColor`
+- `SuffixTextFont`
+- `SuffixIconName`
+- `SuffixIconCollectionName`
+- `SuffixIconStroke`
+- `SuffixIconFill`
+- `SuffixIconViewBoxLeft`
+- `SuffixIconViewBoxTop`
+- `SuffixIconViewBoxWidth`
+- `SuffixIconViewBoxHeight`
+- `TextDecoration`
+
+アイコンに使用できる最大サイズは 24 x 24 であることに注意してください。これより大きいまたは小さいアイコンを提供することもできますが、アイコンが完全に表示されるように 24x24 のスペースに収まるように適切に拡大縮小するには、ビューボックス設定を構成する必要があります。
+
+### バグ修正
+
+| バグ番号 | コントロール | 説明      |
+|------------|---------|------------------|
+|27304|IgbDataChart|ズーム長方形が背景長方形と同じ位置に配置されない。|
+|30600|IgbDoughnutChart|チャートやシリーズに textStyle プロパティが存在しない (円チャートにはある)。|
+|31624|IgbCategoryChart|IgbCategoryChart を含むウィンドウをリサイズすると、チャートがシリーズをレンダリングできなくなる。|
+|33861|Excel Library|折れ線チャートを追加すると、ドイツ語カルチャで Excel ファイルが破損する。|
+|37307|IgbCheckBox|IgbCheckBox で JS Heap、ノード、リスナーのリークが発生する。|
+|37930|IgbDataChart|Data Annotation Overlay のテキスト色が機能しない。|
+|38231|IgbGrid|非ピン固定列は、非表示が存在する場合に元の位置に戻らない。|
+
+### 機能拡張
+
+#### IgbBulletGraph
+
+- <label>PREVIEW</label> 新しい `LabelsVisible` プロパティが追加されました。
+
+#### チャート
+
+- DataToolTipLayer、ItemToolTipLayer、CategoryToolTipLayer にスタイル設定用の新しいプロパティが追加されました: `ToolTipBackground`、`ToolTipBorderBrush`、および `ToolTipBorderThickness`。
+
+- DataLegend にスタイル設定用の新しいプロパティが追加されました: `ContentBackground`、`ContentBorderBrush`、および `ContentBorderThickness`。`ContentBorderBrush` と `ContentBorderThickness` はそれぞれ既定で transparent と 0 に設定されているため、境界線を表示するにはこれらのプロパティを設定する必要があります。
+
+- マウスのワールド相対位置を提供する `WorldPosition` という新しいプロパティが `ChartMouseEventArgs` に追加されました。この位置は、軸空間内の X 軸と Y 軸の両方に対して 0 から 1 の間の値になります。
+
+- `SeriesViewer` と `DomainChart` に `HighlightingFadeOpacity` が追加されました。ハイライト表示されたシリーズに適用される不透明度を設定できます。
+
+#### IgbDataGrid
+
+-  DataGrid に新しいプロパティ `stopPropagation` が追加されました。これにより、マウス イベントが親要素へバブリングするのを防止できます。
+
+#### IgbLinearGauge
+
+- <label>PREVIEW</label> 新しい `LabelsVisible` プロパティが追加されました。
+
+
+### **{PackageVerChanges-25-1-AUG}**
+
+### {PackageMaps} 地理マップ
+
+#### <label>PREVIEW</label> Azure マップ画像のサポート
+
+`IgbGeographicMap` は、 Azure ベースのマップ画像をサポートし、開発者は複数のアプリケーション タイプにわたって詳細かつ動的なマップを表示できるようになりました。複数のマップ レイヤーを組み合わせて地理データを視覚化し、インタラクティブなマッピング エクスペリエンスを簡単に作成できます。
+
+注: Bing マップ画像のサポートは段階的に廃止されます。既存のエンタープライズ キーは引き続き Bing Maps にアクセスするために利用できるため、Azure Maps へ移行する間も現在のアプリケーションをそのまま利用可能です。
+
+公開されている Azure Maps の一部は[こちら](https://azure.microsoft.com/ja-jp/products/azure-maps)をご覧ください。
+
+
 ### バグ修正
 
 | バグ番号 | コントロール | 説明      |
 |------------|---------|------------------|
 |26952|IgbTabs|Razor/JS の Change イベントで e.Detail が null になる問題を修正。|
 |26953|IgbTabs|タブを選択状態にしても、その後の操作で選択が反映されない問題を修正。|
-|37832|IgbDataLegend|ダッシュボードでデータをグループ化して合計を表示した際、ツールチップに合計セクションでバッジが表示される問題を修正。|
 |31910|IgbXDatePicker|「@bind-Value」 構文で値をバインドし、クリア ボタンをクリックするとエラーが発生する問題を修正。|
 |31323|IgbDataChart、IgbGrid、IgbCombo|データ タイプにコレクション タイプ プロパティがあり、そのコレクションの最初の要素が null の場合に NullReferenceException が発生する問題を修正。|
 |38903|IgbTabs|タブ内に配置されたコンポーネントでドロップダウン リストが正しい位置に表示されない問題を修正。|
@@ -30,7 +145,8 @@ _language: ja
 ### 一般
 以下のコンポーネントのプロパティが null 許容になりました。
 - `Button`: `Form`
-- `Calendar`: `SpecialDates`、`DisabledDates` - `Combo`: `ValueKey`、`DisplayKey`、`GroupKey`
+- `Calendar`: `SpecialDates`、`DisabledDates`
+- `Combo`: `ValueKey`、`DisplayKey`、`GroupKey`
 - `DatePicker`: `Value`、`Min`、`Max`
 - `DateTimePicker`: `Value`、`Min`、`Max`
 - `Dropdown`: `SelectedItem`
@@ -51,7 +167,7 @@ _language: ja
 
 ### {PackageCharts} (チャート)
 
-- 軸ラベルに使用できる `MaximumExtent` および `MaximumExtentPercentage` プロパティを追加しました。
+- 軸ラベルに使用できる <label>NEW</label> `MaximumExtent` および `MaximumExtentPercentage` プロパティを追加しました。
 
 ## **{PackageVerChanges-25-1-JUNE}**
 
@@ -65,24 +181,24 @@ _language: ja
 
 ### {PackageCharts} (チャート)
 
-- 新しい[チャート データ注釈](charts/features/chart-data-annotations.md)
-  - データ注釈バンド レイヤー (ベータ版)
-  - データ注釈ライン レイヤー (ベータ版)
-  - データ注釈矩形レイヤー (ベータ版)
-  - データ注釈スライス レイヤー (ベータ版)
-  - データ注釈ストリップ レイヤー (ベータ版)
+- <label>PREVIEW</label> [チャート データ注釈](charts/features/chart-data-annotations.md)レイヤーを追加しました:
+  - データ注釈バンド レイヤー
+  - データ注釈ライン レイヤー
+  - データ注釈矩形レイヤー
+  - データ注釈スライス レイヤー
+  - データ注釈ストリップ レイヤー
 
-- [データ ツールチップ](charts/features/chart-data-tooltip.md)と[データ 凡例](charts/features/chart-data-legend.md)では、ツールチップまたは凡例のコンテンツをテーブルまたは垂直レイアウト構造でレイアウトするために使用できる新しい `LayoutMode` プロパティが公開されています。 
+- [データ ツールチップ](charts/features/chart-data-tooltip.md)と[データ 凡例](charts/features/chart-data-legend.md)では、ツールチップまたは凡例のコンテンツをテーブルまたは垂直レイアウト構造でレイアウトするために使用できる <label>PREVIEW</label> `LayoutMode` プロパティが公開されています。 
 
-- チャートの `DefaultInteraction` プロパティが更新され、新しい列挙体 `DragSelect` が含まれるようになりました。これにより、ドラッグされたプレビュー Rect は、その中に含まれるポイントを選択します。 (ベータ版)
+- <label>PREVIEW</label> チャートの `DefaultInteraction` プロパティが更新され、新しい列挙体 `DragSelect` が含まれるようになりました。これにより、ドラッグされたプレビュー Rect は、その中に含まれるポイントを選択します。 (ベータ版)
 
-- [ValueOverlay と ValueLayer](charts/features/chart-overlays.md) は、上記にリストした新しい [チャート データ注釈](charts/features/chart-data-annotations.md)に加えて、プロット領域に追加の注釈テキストをオーバーレイするために使用できる `OverlayText` プロパティを公開するようになりました。これらの注釈の外観は、OverlayText プレフィックスが付いた多くのプロパティを使用して構成できます。たとえば、`OverlayTextBrush` プロパティはオーバーレイ テキストの色を構成します。 (ベータ版)
+- <label>PREVIEW</label> [ValueOverlay と ValueLayer](charts/features/chart-overlays.md) は、上記にリストした <label>PREVIEW</label> [チャート データ注釈](charts/features/chart-data-annotations.md)に加えて、プロット領域に追加の注釈テキストをオーバーレイするために使用できる `OverlayText` プロパティを公開するようになりました。これらの注釈の外観は、OverlayText プレフィックスが付いた多くのプロパティを使用して構成できます。たとえば、`OverlayTextBrush` プロパティはオーバーレイ テキストの色を構成します。 (ベータ版)
 
-- 新しい[トレンドライン レイヤー](charts/features/chart-trendlines.md) シリーズ タイプを使用すると、トレンド ライン レイヤーごとに 1 つのトレンド ラインを特定のシリーズに適用できます。これにより、チャートに複数の [TrendlineLayer](charts/features/chart-overlays.md) シリーズ タイプを使用できるため、単一のシリーズで複数のトレンド ラインを使用できるようになります。
+- <label>NEW</label> [トレンドライン レイヤー](charts/features/chart-trendlines.md) シリーズ タイプを使用すると、トレンド ライン レイヤーごとに 1 つのトレンド ラインを特定のシリーズに適用できます。これにより、チャートに複数の [TrendlineLayer](charts/features/chart-overlays.md) シリーズ タイプを使用できるため、単一のシリーズで複数のトレンド ラインを使用できるようになります。
 
 ### 一般
 
-- 新しい `Tooltip` コンポーネントは、特定の要素のツールチップを表示する方法を提供します。使用するには、必要に応じてコンテンツを設定し、`Anchor` プロパティを介してターゲット要素の ID にリンクします。
+- <label>NEW</label> `Tooltip` は、特定の要素のツールチップを表示する方法を提供します。使用するには、必要に応じてコンテンツを設定し、`Anchor` プロパティを介してターゲット要素の ID にリンクします。
 
     ```razor
     <IgbButton id="target-button">Hover me</IgbButton>
@@ -297,15 +413,11 @@ _language: ja
 
 ### {PackageCharts} (チャート)
 
-DashboardTile (ベータ版)
-
-- 新しい [Dashboard Tile](dashboard-tile.md) コンポーネントは、バインドされた ItemsSource コレクションまたは単一のポイントを分析および視覚化し、データのスキーマとカウントに基づいて適切なデータ視覚化を返すコンテナー コントロールです。このコントロールは、組み込みの [Toolbar](menus/toolbar.md) コンポーネントを利用して、実行時に視覚化を変更できるようにし、最小限のコードでデータのさまざまな視覚化を表示できるようにします。
+- <label>PREVIEW</label> [Dashboard Tile](dashboard-tile.md) コンポーネントは、バインドされた ItemsSource コレクションまたは単一のポイントを分析および視覚化し、データのスキーマとカウントに基づいて適切なデータ視覚化を返すコンテナー コントロールです。このコントロールは、組み込みの [Toolbar](menus/toolbar.md) コンポーネントを利用して、実行時に視覚化を変更できるようにし、最小限のコードでデータのさまざまな視覚化を表示できるようにします。
 
 ### {PackageCharts} (入力)
 
-- 新しい ColorEditor (ベータ版) と Toolbar の ToolAction (ベータ版)
-
-この新しい[カラー エディター](inputs/color-editor.md)はスタンドアロンのカラー ピッカーとして使用でき、実行時に視覚化を更新するために [Toolbar](menus/toolbar.md) コンポーネントに統合されました。
+- <label>PREVIEW</label>[カラー エディター](inputs/color-editor.md)はスタンドアロンのカラー ピッカーとして使用できるようになり、さらに [Toolbar](menus/toolbar.md) コンポーネントの <label>PREVIEW</label> ToolAction に統合され、実行時に視覚化を更新できるようになりました。
 
 **重大な変更**
 
@@ -396,7 +508,7 @@ DashboardTile (ベータ版)
   - 水平集計の位置を設定するための `HorizontalSummariesPosition` プロパティを `PivotUI` に追加しました。
   - 行ディメンションの行ヘッダーが追加されました。新しい `PivotUI` プロパティ内で `ShowHeaders` **true** として有効にできます。
   - キーボード ナビゲーションで行ディメンションヘッダーや列ヘッダーから行ヘッダーへ移動できるようになりました。
-  - キーボード操作で行ディメンションの縮小 (<kbd>Alt</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd>) および行ヘッダーのソート (<kbd>Ctrl</kbd> + <kbd>↑</kbd> <kbd>↓</kbd>) ができるようになりました。
+  - キーボード操作で行ディメンションの縮小 (<kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd>) および行ヘッダーのソート (<kbd>CTRL</kbd> + <kbd>↑</kbd> <kbd>↓</kbd>) ができるようになりました。
 
 **重大な変更**:
 - **すべてのグリッド**
@@ -419,6 +531,7 @@ DashboardTile (ベータ版)
 ## **{PackageVerChanges-24-1-JUN}**
 
 ### 一般
+
 - `Input`、`Textarea` - ユーザー入力を制限することなく検証ルールを適用できるように `ValidateOnly` を公開しました。
 - `Dropdown` - `PositionStrategy` プロパティは非推奨です。ドロップダウンは、ブラウザー ビューポートの最上位レイヤーにコンテナーをレンダリングするために `Popover` API を使用するようになったため、このプロパティは廃止されました。
 - `DockManager` - `SplitPane` の `IsMaximized` は非推奨です。分割ペイン レベルで isMaximized を true に設定しても、分割ペインはコンテナーとしてのみ機能し、最大化されて表示される実際のコンテンツがないため、実際の効果はありません。代わりに、`TabGroupPane` および/または `ContentPane` の `IsMaximized` プロパティを使用してください。
@@ -537,7 +650,7 @@ DashboardTile (ベータ版)
 
 ## **{PackageVerChanges-23-2}**
 
-### {PackageGrids} (Toolbar - ベータ版)
+### {PackageGrids} - Toolbar - <label>PREVIEW</label>
 
 * クリップボードを介してチャートを画像に保存するための保存ツール アクションが追加されました。
 * ツールバーの `Orientation` プロパティを介して垂直方向が追加されました。デフォルトでは、ツールバーは水平方向ですが、ツールバーを垂直方向に表示できるようになり、ツールが左右にポップアップ表示されます。
@@ -552,7 +665,7 @@ DashboardTile (ベータ版)
 
 ### 新しいコンポーネント
 
-* [Toolbar](menus/toolbar.md) - ベータ版。このコンポーネントは、主にチャート コンポーネントで使用される UI 操作のコンパニオン コンテナーです。ツールバーは、`XamDataChart` または `CategoryChart` コンポーネントにリンクされると、プロパティとツールのプリセットで動的に更新されますが、プロジェクト用のカスタム ツールを作成する機能も提供します。
+* <label>PREVIEW</label> [Toolbar](menus/toolbar.md) コンポーネントは、主にチャート コンポーネントで使用される UI 操作のコンパニオン コンテナーです。ツールバーは、`XamDataChart` または `CategoryChart` コンポーネントにリンクされると、プロパティとツールのプリセットで動的に更新されますが、プロジェクト用のカスタム ツールを作成する機能も提供します。
 
 ### {PackageCharts} (チャート)
 
@@ -670,9 +783,9 @@ DashboardTile (ベータ版)
 
 新機能 - [行ページング](grids/data-grid/row-paging.md)を追加しました。これは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。ページネーションを使用すると、データを設定された行数で表示することができ、ユーザーはスクロール バーを使用せずにデータを順次閲覧することができます。テーブル ページネーションの UI には通常、現在のページ、合計ページ、ユーザーがページをめくるためのクリック可能な [前へ] と [次へ] の矢印 / ボタンなどが含まれます。
 
-### {PackageDockManager} (DockManager)
+### {PackageDockManager} (Dock Manager)
 
-* {Platform} ドック マネージャーは 現在「プレビュー」です。ドックマネージャーにより、さまざまなサイズ、位置、動作をするペインによって複雑なレイアウトを管理し、アプリ内のさまざまな場所にドッキングできます。[ドック マネージャー](layouts/dock-manager.md)を使用すると、エンドユーザーは、ピン固定、サイズ変更、移動、フローティング、および非表示にするなど、ペインをカスタマイズすることができます。
+* {Platform} ドック マネージャーは 現在 <label>PREVIEW</label> です。ドックマネージャーにより、さまざまなサイズ、位置、動作をするペインによって複雑なレイアウトを管理し、アプリ内のさまざまな場所にドッキングできます。[ドック マネージャー](layouts/dock-manager.md)を使用すると、エンドユーザーは、ピン固定、サイズ変更、移動、フローティング、および非表示にするなど、ペインをカスタマイズすることができます。
 
 ### 新しいコンポーネント
 
@@ -846,8 +959,8 @@ DashboardTile (ベータ版)
 * `SelectAllRows` メソッドを追加しました。
 * 行範囲の選択を追加しました - `GridSelectionMode` プロパティを MultipleRow に設定すると、次の新しい機能が含まれるようになりました:
     - クリックしてドラッグし、行を選択します。
-    - Shift キーを押しながらクリックして、複数の行を選択します。
-    - Shift キーを押しながら上下の矢印キーを押して、複数の行を選択します。
+    - <kbd>SHIFT</kbd> キーを押しながらクリックして、複数の行を選択します。
+    - <kbd>SHIFT</kbd> キーを押しながら <kbd>↑</kbd> + <kbd>↓</kbd> 矢印キーを押して、複数の行を選択します。
 * スペース バーを押すと、MultipleRow または SingleRow に設定された `GridSelectionMode` プロパティを介してアクティブな行の選択が切り替わります。
 * 列オプション ダイアログに列集計を追加しました。
 

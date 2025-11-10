@@ -4,7 +4,7 @@
   {
     "originalName": "ColumnGrouping",
     "originalNamespace": "Infragistics.Controls.Grids.Implementation",
-    "packageName": "igniteui-grids",
+    "packageName": "igniteui-data-grids",
     "names":[{"platform": "React","fileName": "igr-column-grouping.ts","mappedName": "IgrColumnGrouping"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "backgroundColor"}], "originalName": "BackgroundColor"},

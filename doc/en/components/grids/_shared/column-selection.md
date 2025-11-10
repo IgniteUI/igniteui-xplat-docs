@@ -75,8 +75,8 @@ The default selection mode is `None`. If set to `Single` or `Multiple`, all of t
 > The keyboard combinations are available only when the grid `ColumnSelection` input is set to `multiple`.
 
 There are two scenarios for keyboard navigation of the **Column Selection** feature:
-- Multi-column selection - holding <kbd>ctrl</kbd> + <kbd>click</kbd> on every **selectable** header cell.
-- Range column selection - holding <kbd>shift</kbd> + <kbd>click</kbd> selects all **selectable** columns in between.
+- Multi-column selection - holding <kbd>CTRL</kbd> + <kbd>click</kbd> on every **selectable** header cell.
+- Range column selection - holding <kbd>SHIFT</kbd> + <kbd>click</kbd> selects all **selectable** columns in between.
 
 ## API Manipulations
 

@@ -159,6 +159,12 @@
     "href": "grids/data-grid.md",
     "items": [
       {
+        "exclude": ["Angular", "Blazor"],
+        "name": "Cell Merging",
+        "href": "grids/grid/cell-merging.md",
+        "status": "NEW"
+      },
+      {
         "exclude": ["Angular"],
         "name": "Clipboard Interactions",
         "href": "grids/grid/clipboard-interactions.md"
@@ -183,7 +189,8 @@
       {
         "exclude": ["Angular"],
         "name": "Column Pinning",
-        "href": "grids/grid/column-pinning.md"
+        "href": "grids/grid/column-pinning.md",
+        "status": ["UPDATED_REACT", "UPDATED_WEBCOMPONENTS"]
       },
       {
         "exclude": ["Angular"],
@@ -397,6 +404,12 @@
     "href": "grids/hierarchical-grid/overview.md",
     "items": [
       {
+        "exclude": ["Angular", "Blazor"],
+        "name": "Cell Merging",
+        "href": "grids/hierarchical-grid/cell-merging.md",
+        "status": "NEW"
+      },
+      {
         "exclude": ["Angular"],
         "name": "Collapsible Column Groups",
         "href": "grids/hierarchical-grid/collapsible-column-groups.md"
@@ -413,9 +426,10 @@
         "href": "grids/hierarchical-grid/column-moving.md"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "Column Pinning",
-        "href": "grids/hierarchical-grid/column-pinning.md"
+        "href": "grids/hierarchical-grid/column-pinning.md",
+        "status": ["UPDATED_REACT", "UPDATED_WEBCOMPONENTS"]
       },
       {
         "exclude": ["Angular"],
@@ -619,6 +633,12 @@
     "href": "grids/tree-grid/overview.md",
     "items": [
       {
+        "exclude": ["Angular", "Blazor"],
+        "name": "Cell Merging",
+        "href": "grids/tree-grid/cell-merging.md",
+        "status": "NEW"
+      },
+      {
         "exclude": ["Angular"],
         "name": "Clipboard Interactions",
         "href": "grids/tree-grid/clipboard-interactions.md"
@@ -650,10 +670,10 @@
         "href": "grids/tree-grid/column-moving.md"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "Column Pinning",
         "href": "grids/tree-grid/column-pinning.md",
-        "status": ["NEW_REACT"]
+        "status": ["UPDATED_REACT", "UPDATED_WEBCOMPONENTS"]
       },
       {
         "exclude": ["Angular"],
@@ -899,10 +919,6 @@
         "name": "Grid Editing",
         "href": "grids/data-grid/cell-editing.md",
         "status": ""
-      },
-      {
-        "name": "Cell Merging",
-        "href": "grids/data-grid/cell-merging.md"
       },
       {
         "name": "Cell Selection",
@@ -1249,7 +1265,7 @@
         {
           "name": "Chart Data Annotations",
           "href": "charts/features/chart-data-annotations.md",
-          "status": "NEW"
+          "status": "PREVIEW"
         },
         {
           "name": "Charting in Dashboards",
@@ -1414,6 +1430,11 @@
         "href": "geo-map-binding-multiple-sources.md",
         "status": ""
       },
+      {        
+        "name": "Displaying Azure Imagery",
+        "href": "geo-map-display-azure-imagery.md",
+        "status": "PREVIEW"
+      },
       {
         "exclude": ["Blazor"],
         "name": "Displaying Bing Imagery",
@@ -1557,12 +1578,13 @@
     "status": ""
   },
    {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Divider",
-    "href": "layouts/divider.md"
+    "href": "layouts/divider.md",
+    "status": "new"
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "Tile Manager",
     "href": "layouts/tile-manager.md",
     "status": "new"
@@ -1743,9 +1765,10 @@
     "status": "new"
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "Mask Input",
-    "href": "inputs/mask-input.md"
+    "href": "inputs/mask-input.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
@@ -1782,12 +1805,18 @@
     "header": true
   },
   {
+    "exclude": ["Angular", "Blazor"],
+    "name": "Chat",
+    "href": "interactivity/chat.md",
+    "status": "new"
+  },
+  {
     "exclude": ["Angular"],
     "name": "Ripple",
     "href": "inputs/ripple.md"
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "Tooltip",
     "href": "inputs/tooltip.md",
     "status": "new"

@@ -169,35 +169,35 @@ The available keyboard navigation options vary depending on whether the componen
 
 |Keys|Description|
 |----|-----------|
-| <kbd>&larr;</kbd> | Moves the caret one character to the left |
-| <kbd>&rarr;</kbd> | Moves the caret one character to the right |
-| <kbd>Ctrl + ArrowLeft</kbd> | Moves the caret to the beginning of the current input mask section or to the start of the previous one if it's already at the beginning |
-| <kbd>Ctrl + ArrowRight</kbd> | Moves the caret to the end of the current input mask section or to the end of the next one if it's already at the end |
+| <kbd>←</kbd> | Moves the caret one character to the left |
+| <kbd>→</kbd> | Moves the caret one character to the right |
+| <kbd>CTRL</kbd> + <kbd>ArrowLeft</kbd> | Moves the caret to the beginning of the current input mask section or to the start of the previous one if it's already at the beginning |
+| <kbd>CTRL</kbd> + <kbd>ArrowRight</kbd> | Moves the caret to the end of the current input mask section or to the end of the next one if it's already at the end |
 | <kbd>ArrowUp</kbd> | Increments the currently "focused" part of the input mask by one step |
 | <kbd>ArrowDown</kbd> | Decrements the currently "focused" part of the input mask by one step |
-| <kbd>Home</kbd> | Moves the caret to the beginning of the input mask |
-| <kbd>End</kbd> | Moves the caret to the end of the input mask |
-| <kbd>Ctrl + ;</kbd> | Sets the current date as the value of the component |
+| <kbd>HOME</kbd> | Moves the caret to the beginning of the input mask |
+| <kbd>END</kbd> | Moves the caret to the end of the input mask |
+| <kbd>CTRL</kbd> + <kbd>;</kbd> | Sets the current date as the value of the component |
 
 **Both Single and Two Inputs Modes:**
 
 |Keys|Description|
 |----|-----------|
-| <kbd>Alt + ArrowDown</kbd> | Opens the calendar dropdown |
-| <kbd>Alt + ArrowUp</kbd> | Closes the calendar dropdown |
+| <kbd>ALT</kbd> + <kbd>↓</kbd> | Opens the calendar dropdown |
+| <kbd>ALT</kbd> + <kbd>↑</kbd> | Closes the calendar dropdown |
 
 You can also navigate within the calendar pop-up using the keyboard. The navigation is the same as in the `Calendar` component.
 
 |Keys|Description|
 |----|-----------|
-| <kbd>&uarr;</kbd> / <kbd>&darr;</kbd> / <kbd>&larr;</kbd> / <kbd>&rarr;</kbd>| Navigates through the days in the month |
+| <kbd>↑</kbd> / <kbd>↓</kbd> / <kbd>←</kbd> / <kbd>→</kbd>| Navigates through the days in the month |
 | <kbd>ENTER</kbd> | Selects the currently focused day |
-| <kbd>PageUp</kbd> | Moves to the previous month's view |
-| <kbd>PageDown</kbd> | Moves to the next month's view |
-| <kbd>SHIFT + PageUp</kbd> | Moves to the previous year |
-| <kbd>SHIFT + PageDown</kbd> | Moves to the next year |
-| <kbd>Home</kbd> | Focuses the first day of the current month that is in view (or earliest month when more than one month view is displayed) |
-| <kbd>End</kbd> | Focuses the last day of the current month that is in view. (or latest month when more than one month view is displayed) |
+| <kbd>PAGE UP</kbd> | Moves to the previous month's view |
+| <kbd>PAGE DOWN</kbd> | Moves to the next month's view |
+| <kbd>SHIFT</kbd> + <kbd>PAGE UP</kbd> | Moves to the previous year |
+| <kbd>SHIFT</kbd> + <kbd>PAGE DOWN</kbd> | Moves to the next year |
+| <kbd>HOME</kbd> | Focuses the first day of the current month that is in view (or earliest month when more than one month view is displayed) |
+| <kbd>END</kbd> | Focuses the last day of the current month that is in view. (or latest month when more than one month view is displayed) |
 | <kbd>Escape</kbd> | Closes the calender pop-up |
 
 ## Layout
@@ -351,7 +351,7 @@ return (
 );
 ```
 
-Now, when you click the newly created `"Next 7 days"` chip in the calendar pop-up, the range will automatically be selected, from today through the next 7 days.
+Now, when you click the newly created **"Next 7 days"** chip in the calendar pop-up, the range will automatically be selected, from today through the next 7 days.
 
 `sample="/scheduling/date-range-picker/custom-ranges", height="500", alt="{Platform} Date Range Picker Custom Ranges Example"`
 

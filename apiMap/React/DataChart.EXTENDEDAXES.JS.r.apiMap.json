@@ -28,9 +28,9 @@
     "originalName": "OthersCategoryContext",
     "originalNamespace": "Infragistics.Controls.Charts",
     "packageName": "igniteui-charts",
-    "names":[{"platform": "React","fileName": "OthersCategoryContext.ts","mappedName": "OthersCategoryContext"}],
+    "names":[{"platform": "React","fileName": "igr-others-category-context.ts","dynamicModuleName": "igr-others-category-context-dynamic-module.ts","moduleName": "igr-others-category-context-module.ts","mappedName": "IgrOthersCategoryContext"}],
     "members":[
-      {"names":[{"platform": "React", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+      {"names":[{"platform": "React", "mappedType": "any[]",   "mappedName": "items"}], "originalName": "Items"} ]
   },
   {
     "originalName": "CategoryAngleAxis",
@@ -43,6 +43,10 @@
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "actualInterval"}], "originalName": "ActualInterval"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "actualMinorInterval"}], "originalName": "ActualMinorInterval"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "areGroupSizesUneven"}], "originalName": "AreGroupSizesUneven"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "companionAxisInterval"}], "originalName": "CompanionAxisInterval"},
+      {"names":[{"platform": "React", "mappedType": "AxisAngleLabelMode","mappedName": "companionAxisLabelMode"}], "originalName": "CompanionAxisLabelMode"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "companionAxisMinorInterval"}], "originalName": "CompanionAxisMinorInterval"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "companionAxisStartAngleOffset"}], "originalName": "CompanionAxisStartAngleOffset"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getScaledAngle"}], "originalName": "GetScaledAngle"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getUnscaledAngle"}], "originalName": "GetUnscaledAngle"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "interval"}], "originalName": "Interval"},
@@ -77,6 +81,8 @@
     "packageName": "igniteui-charts",
     "names":[{"platform": "React","fileName": "igr-numeric-angle-axis.ts","dynamicModuleName": "igr-numeric-angle-axis-dynamic-module.ts","moduleName": "igr-numeric-angle-axis-module.ts","mappedName": "IgrNumericAngleAxis"}],
     "members":[
+      {"names":[{"platform": "React", "mappedType": "AxisAngleLabelMode","mappedName": "companionAxisLabelMode"}], "originalName": "CompanionAxisLabelMode"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "companionAxisStartAngleOffset"}], "originalName": "CompanionAxisStartAngleOffset"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getScaledAngle"}], "originalName": "GetScaledAngle"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "getUnscaledAngle"}], "originalName": "GetUnscaledAngle"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isAngular"}], "originalName": "IsAngular"},

@@ -17,6 +17,7 @@
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "defaultPrevented"}], "originalName": "DefaultPrevented"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "keyCode"}], "originalName": "KeyCode"},
       {"names":[{"platform": "Angular", "mappedType": "ModifierKeys","mappedName": "modifiers"}], "originalName": "Modifiers"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "originalEvent"}], "originalName": "OriginalEvent"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "preventDefault"}], "originalName": "PreventDefault"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "shift"}], "originalName": "Shift"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "stopPropagation"}], "originalName": "StopPropagation"} ]

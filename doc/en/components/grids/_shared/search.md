@@ -473,7 +473,7 @@ const nextSearch = (text: string, caseSensitive: boolean, exactMatch: boolean) =
 
 ### Add Keyboard Search
 
-We can also allow the users to navigate the results by using the keyboard's arrow keys and the <kbd>Enter</kbd> key. In order to achieve this, we can handle the **keydown** event of our search input by preventing the default caret movement of the input with the `PreventDefault` method and invoke the `FindNext`/`FindPrev` methods depending on which key the user has pressed.
+We can also allow the users to navigate the results by using the keyboard's arrow keys and the <kbd>ENTER</kbd> key. In order to achieve this, we can handle the **keydown** event of our search input by preventing the default caret movement of the input with the `PreventDefault` method and invoke the `FindNext`/`FindPrev` methods depending on which key the user has pressed.
 
 <!-- Angular -->
 ```html
@@ -540,7 +540,7 @@ const searchKeyDown = (e: KeyboardEvent<HTMLElement>) => {
 
 <!-- Blazor -->
 
-We can also allow the users to navigate the results by using the keyboard's <kbd>Enter</kbd> key. In order to achieve this, we can handle the **keydown** event of our search and invoke the `FindNext`/`FindPrev` methods depending on if the user has pressed <kbd>Shift</kbd> as well or not.
+We can also allow the users to navigate the results by using the keyboard's <kbd>ENTER</kbd> key. In order to achieve this, we can handle the **keydown** event of our search and invoke the `FindNext`/`FindPrev` methods depending on if the user has pressed <kbd>SHIFT</kbd> as well or not.
 
 <!-- end: Blazor -->
 
