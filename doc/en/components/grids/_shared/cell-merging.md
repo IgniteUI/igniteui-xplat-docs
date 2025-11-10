@@ -14,8 +14,15 @@ The Ignite UI for {Platform} {ComponentTitle} provides a Cell Merging feature th
 
 ## {Platform} {ComponentTitle} Cell Merging Example
 
-`sample="/{ComponentSample}/cell-merge", height="700", alt="{Platform} {ComponentTitle} Cell Merging Example"`
-
+<!-- ComponentStart: Grid -->
+`sample="/{ComponentSample}/cell-merge", height="600", alt="{Platform} {ComponentTitle} Cell Merging Example"`
+<!-- ComponentEnd: Grid -->
+<!-- ComponentStart: HierarchicalGrid -->
+`sample="/{ComponentSample}/cell-merge", height="475", alt="{Platform} {ComponentTitle} Cell Merging Example"`
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- ComponentStart: TreeGrid -->
+`sample="/{ComponentSample}/cell-merge", height="755", alt="{Platform} {ComponentTitle} Cell Merging Example"`
+<!-- ComponentEnd: TreeGrid -->
 ## Enabling and Using Cell Merging
 Cell merging in the grid is controlled at two levels:
  - Grid-level merge mode – determines when merging is applied.
@@ -213,11 +220,18 @@ constructor() {
     grid.cellMergeMode = 'always';
 }
 ```
+
+### Demo
 <!-- end: WebComponents -->
 <!-- ComponentStart: Grid -->
-### Demo
-`sample="/{ComponentSample}/cell-merge-custom-sample", height="700", alt="{Platform} {ComponentTitle} Cell Merging Example"`
+`sample="/{ComponentSample}/cell-merge-custom-sample", height="600", alt="{Platform} {ComponentTitle} Cell Merging Example"`
 <!-- ComponentEnd: Grid -->
+<!-- ComponentStart: HierarchicalGrid -->
+`sample="/{ComponentSample}/cell-merge-custom-sample", height="425", alt="{Platform} {ComponentTitle} Cell Merging Example"`
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- ComponentStart: TreeGrid -->
+`sample="/{ComponentSample}/cell-merge-custom-sample", height="755", alt="{Platform} {ComponentTitle} Cell Merging Example"`
+<!-- ComponentEnd: TreeGrid -->
 
 ## Feature Integration 
 Due to the specific behavior of merged cells it has to be noted how exactly it ties together with some of the other features of the grid:
