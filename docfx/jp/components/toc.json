@@ -187,7 +187,8 @@
       {
         "exclude": ["Angular"],
         "name": "列のピン固定",
-        "href": "grids/grid/column-pinning.md"
+        "href": "grids/grid/column-pinning.md",
+        "status": ["UPDATED_REACT", "UPDATED_WEBCOMPONENTS"]
       },
       {
         "exclude": ["Angular"],
@@ -425,7 +426,8 @@
       {
         "exclude": ["Angular"],
         "name": "列のピン固定",
-        "href": "grids/hierarchical-grid/column-pinning.md"
+        "href": "grids/hierarchical-grid/column-pinning.md",
+        "status": ["UPDATED_REACT", "UPDATED_WEBCOMPONENTS"]
       },
       {
         "exclude": ["Angular"],
@@ -669,7 +671,7 @@
         "exclude": ["Angular"],
         "name": "列のピン固定",
         "href": "grids/tree-grid/column-pinning.md",
-        "status": ["NEW_REACT"]
+        "status": ["UPDATED_REACT", "UPDATED_WEBCOMPONENTS"]
       },
       {
         "exclude": ["Angular"],
@@ -1916,6 +1918,12 @@
     "name": "スタイル",
     "href": "themes/styles.md",
     "status": ""
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "カスタム Tailwind クラス",
+    "href": "themes/tailwind.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],

@@ -15,7 +15,15 @@ Ignite UI for {Platform} {ComponentTitle} には、同じ値を持つ隣接セ�
 
 ## {Platform} {ComponentTitle} セル結合の例
 
-`sample="/{ComponentSample}/cell-merge", height="700", alt="{Platform} {ComponentTitle} セル結合の例"`
+<!-- ComponentStart: Grid -->
+`sample="/{ComponentSample}/cell-merge", height="600", alt="{Platform} {ComponentTitle} セル結合の例"`
+<!-- ComponentEnd: Grid -->
+<!-- ComponentStart: HierarchicalGrid -->
+`sample="/{ComponentSample}/cell-merge", height="475", alt="{Platform} {ComponentTitle} セル結合の例"`
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- ComponentStart: TreeGrid -->
+`sample="/{ComponentSample}/cell-merge", height="755", alt="{Platform} {ComponentTitle} セル結合の例"`
+<!-- ComponentEnd: TreeGrid -->
 
 ## セル結合の有効化と使用
 
@@ -225,13 +233,19 @@ constructor() {
     grid.cellMergeMode = 'always';
 }
 ```
-<!-- end: WebComponents -->
-<!-- ComponentStart: Grid -->
 
 ### デモ
 
-`sample="/{ComponentSample}/cell-merge-custom-sample", height="700", alt="{Platform} {ComponentTitle} セル結合の例"`
+<!-- end: WebComponents -->
+<!-- ComponentStart: Grid -->
+`sample="/{ComponentSample}/cell-merge-custom-sample", height="600", alt="{Platform} {ComponentTitle} セル結合の例"`
 <!-- ComponentEnd: Grid -->
+<!-- ComponentStart: HierarchicalGrid -->
+`sample="/{ComponentSample}/cell-merge-custom-sample", height="425", alt="{Platform} {ComponentTitle} セル結合の例"`
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- ComponentStart: TreeGrid -->
+`sample="/{ComponentSample}/cell-merge-custom-sample", height="755", alt="{Platform} {ComponentTitle} セル結合の例"`
+<!-- ComponentEnd: TreeGrid -->
 
 ## 機能の統合
 
