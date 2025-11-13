@@ -58,7 +58,7 @@ const cellMergeMode: GridCellMergeMode = 'always';
 </{ComponentSelector}>
 
 @code {
-    private GridCellMergeMode CellMergeMode = GridCellMergeMode.Always
+    private GridCellMergeMode CellMergeMode = GridCellMergeMode.Always;
 }
 ```
 ### Column Merge Toggle
