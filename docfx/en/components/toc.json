@@ -1705,9 +1705,10 @@
     "href": "inputs/circular-progress.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Linear Progress",
-    "href": "inputs/linear-progress.md"
+    "href": "inputs/linear-progress.md",
+    "status": ["NEW_REACT"]
   },
   {
     "exclude": ["Angular"],
