@@ -1578,7 +1578,7 @@
     "status": ""
   },
    {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Divider",
     "href": "layouts/divider.md",
     "status": "new"
