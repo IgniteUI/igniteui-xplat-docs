@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in WebComponents documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "WebComponents",
-  "samplesCount": 789,
+  "samplesCount": 813,
   "samplesHost": "https://staging.infragistics.com/webcomponents-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -853,6 +853,12 @@
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/cell-editing-styling": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/grid/cell-editing"
     ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/cell-merge": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/grid/cell-merging"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/cell-merge-custom-sample": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/grid/cell-merging"
+    ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/cell-selection-mode": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/grid/cell-selection",
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/grid/selection"
@@ -888,6 +894,9 @@
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/grid/column-moving"
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/column-pinning": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/grid/column-pinning"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/column-pinning-both-sides": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/grid/column-pinning"
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/column-pinning-options": [
@@ -1146,6 +1155,12 @@
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/hierarchical-grid/cell-editing-styling": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/hierarchical-grid/cell-editing"
     ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/hierarchical-grid/cell-merge": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/hierarchical-grid/cell-merging"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/hierarchical-grid/cell-merge-custom-sample": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/hierarchical-grid/cell-merging"
+    ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/hierarchical-grid/cell-selection-mode": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/hierarchical-grid/cell-selection",
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/hierarchical-grid/selection"
@@ -1175,6 +1190,9 @@
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/hierarchical-grid/column-moving"
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/hierarchical-grid/column-pinning": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/hierarchical-grid/column-pinning"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/hierarchical-grid/column-pinning-both-sides": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/hierarchical-grid/column-pinning"
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/hierarchical-grid/column-pinning-options": [
@@ -1448,6 +1466,12 @@
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/cell-editing-styling": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/cell-editing"
     ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/cell-merge": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/cell-merging"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/cell-merge-custom-sample": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/cell-merging"
+    ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/cell-selection-mode": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/cell-selection",
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/selection"
@@ -1480,6 +1504,9 @@
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/column-moving"
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/column-pinning": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/column-pinning"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/column-pinning-both-sides": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/column-pinning"
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/column-pinning-options": [
@@ -2217,6 +2244,9 @@
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/tabs/styling": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/layouts/tabs"
     ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/tailwind/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/themes/tailwind"
+    ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/tile-manager/actions": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/layouts/tile-manager"
     ],
@@ -2423,8 +2453,50 @@
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/scheduling/date-range-picker/styling": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/scheduling/date-range-picker"
     ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/app-sample-main": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/overview"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/column-config-basic": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/cell-template"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/column-config-dynamic": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/column-configuration"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/column-config-headers": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/header-template"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/data-binding": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/binding"
+    ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/data-exporting-indicator": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/_shared/toolbar"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/filtering-config": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/filtering"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/filtering-config-events": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/filtering"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/filtering-config-remote": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/filtering"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/sort-config-events": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/sorting"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/sort-config-grid": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/sorting"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/sort-config-pipeline": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/sorting"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/sort-config-sample": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/sorting"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/styling-config-themes": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/theming"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/styling-custom-theme": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/theming"
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/toolbar-sample-3": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/_shared/toolbar"
@@ -2436,7 +2508,7 @@
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/_shared/toolbar"
     ]
   },
-  "topicsCount": 324,
+  "topicsCount": 336,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -2851,6 +2923,36 @@
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/geo-map-type-shape-polyline-series": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/maps/geo-map/type-shape-polyline-series"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/binding": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/data-binding"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/cell-template": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/column-config-basic"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/column-configuration": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/column-config-dynamic"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/filtering": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/filtering-config",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/filtering-config-events",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/filtering-config-remote"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/header-template": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/column-config-headers"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/overview": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/app-sample-main"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/sorting": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/sort-config-events",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/sort-config-grid",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/sort-config-pipeline",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/sort-config-sample"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/theming": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/styling-config-themes",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/styling-custom-theme"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/_shared/toolbar": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/data-exporting-indicator",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/toolbar-sample-3",
@@ -2978,6 +3080,10 @@
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/editing-events",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/editing-excel-style-custom"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/grid/cell-merging": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/cell-merge",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/cell-merge-custom-sample"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/grid/cell-selection": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/cell-selection-mode",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/cell-selection-style",
@@ -2999,6 +3105,7 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/grid/column-pinning": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/column-pinning",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/column-pinning-both-sides",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/column-pinning-options",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/column-pinning-right-side",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/column-pinning-styles"
@@ -3156,6 +3263,10 @@
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/hierarchical-grid/editing-columns",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/hierarchical-grid/editing-events"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/hierarchical-grid/cell-merging": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/hierarchical-grid/cell-merge",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/hierarchical-grid/cell-merge-custom-sample"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/hierarchical-grid/cell-selection": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/hierarchical-grid/cell-selection-mode",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/hierarchical-grid/cell-selection-style"
@@ -3176,6 +3287,7 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/hierarchical-grid/column-pinning": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/hierarchical-grid/column-pinning",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/hierarchical-grid/column-pinning-both-sides",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/hierarchical-grid/column-pinning-options",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/hierarchical-grid/column-pinning-right-side",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/hierarchical-grid/column-pinning-styles"
@@ -3355,6 +3467,10 @@
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/editing-columns",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/editing-events"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/cell-merging": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/cell-merge",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/cell-merge-custom-sample"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/cell-selection": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/cell-selection-mode",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/cell-selection-style",
@@ -3376,6 +3492,7 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/tree-grid/column-pinning": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/column-pinning",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/column-pinning-both-sides",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/column-pinning-options",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/column-pinning-right-side",
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/tree-grid/column-pinning-styles"
@@ -3877,6 +3994,9 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/spreadsheet-overview": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/excel/spreadsheet/overview"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/themes/tailwind": [
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/layouts/tailwind/styling"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/zoomslider-overview": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/charts/zoomslider/overview"
