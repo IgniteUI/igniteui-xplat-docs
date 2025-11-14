@@ -8,11 +8,11 @@ namespace: Infragistics.Controls
 
 # Open Source JavaScript Grid for Any Project
 
-The Apex Grid is a free, open-source JavaScript data grid built as a Web Component, which means you can use it dependency-free with or without a web framework.
+The {GridLiteTitle} is a free, open-source JavaScript data grid built as a Web Component, which means you can use it dependency-free with or without a web framework.
 
 `sample="/{ComponentSample}/app-sample-main", height="600", alt="{Platform} {ComponentTitle} App Sample Main"`
 
-{GridLiteTitle} is designed to give you the core features that you need to deliver a beautiful data grid / data table experience in your apps. Designed for performance and beauty, the Apex Grid will work in any framework, on any platform.
+{GridLiteTitle} is designed to give you the core features that you need to deliver a beautiful data grid / data table experience in your apps. Designed for performance and beauty, the {GridLiteTitle} will work in any framework, on any platform.
 
 ## Performance Built In
 

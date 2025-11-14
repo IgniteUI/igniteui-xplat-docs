@@ -106,7 +106,7 @@ Columns can be hidden/shown by setting the **hidden** property to of the column 
 
 ### Column resize
 
-Each column of the Apex grid can be configured to be resizable by setting the **`resizable`** property in the column definition.
+Each column of the {GridLiteTitle} can be configured to be resizable by setting the **`resizable`** property in the column definition.
 
 <!-- React, WebComponents -->
 

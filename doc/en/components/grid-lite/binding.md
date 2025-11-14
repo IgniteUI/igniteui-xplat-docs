@@ -38,7 +38,7 @@ grid.data = [];
 ```
 
 >[!NOTE]
->The sort/filter states of the Apex grid are kept when changing the data source in this manner.
+>The sort/filter states of the {GridLiteTitle} are kept when changing the data source in this manner.
 Usually you will want to reset them by calling either **`clearSort()`** and/or **`clearFilter()`**.
 
 In the sample below, the grid has column auto-generation enabled. When you click on the switch data button,

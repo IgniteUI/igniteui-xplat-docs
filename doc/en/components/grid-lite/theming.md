@@ -37,7 +37,7 @@ In the sample below, you can preview all the default base themes.
 
 ## Creating custom themes
 
-Aside from the default themes shipped with the Apex grid package, you can also create and modify your own to match your project identity and branding.
+Aside from the default themes shipped with the {GridLiteTitle} package, you can also create and modify your own to match your project identity and branding.
 
 ---
 

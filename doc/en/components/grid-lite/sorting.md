@@ -50,7 +50,7 @@ The **`sort`** property can be either a simple boolean or a **`ColumnSortConfigu
 
 ## Single and multi-sorting
 
-The Apex grid supports both single and multi-column sorting. Multi-column is enabled by default and can be configured through the **`sortConfiguration`** property of the grid.
+The {GridLiteTitle} supports both single and multi-column sorting. Multi-column is enabled by default and can be configured through the **`sortConfiguration`** property of the grid.
 
 <!-- React, WebComponents -->
 
@@ -61,11 +61,11 @@ grid.sortConfiguration = { multiple: false, triState: true };
 <!-- End: React, WebComponents -->
 
 >[!NOTE]
->The single/multi-column sorting behavior controls how end-users interact with the Apex grid. Sorting through the API with multiple expression will still work when single sorting is enabled.
+>The single/multi-column sorting behavior controls how end-users interact with the {GridLiteTitle}. Sorting through the API with multiple expression will still work when single sorting is enabled.
 
 ### Tri-state sorting
 
-Additionally, the Apex grid supports tri-state sorting and it is enabled by default. Depending on the configured **`triState`**
+Additionally, the {GridLiteTitle} supports tri-state sorting and it is enabled by default. Depending on the configured **`triState`**
 value for the grid **`sortConfiguration`** property, end-users will cycle through the following states,
 
 - **Tri-state enabled**
@@ -92,7 +92,7 @@ The following sample shows the grid **`sortConfiguration`** combinations and how
 
 ## Sort model
 
-The building block for sort operations in the Apex grid is the **`SortExpression`** which has the following properties:
+The building block for sort operations in the {GridLiteTitle} is the **`SortExpression`** which has the following properties:
 
 <!-- React, WebComponents -->
 
@@ -126,7 +126,7 @@ an end-user interacts with the component. See below for additional information.
 
 ## Sort API
 
-The Apex grid exposes two main approaches for applying sort operations from its API. Either through the **`GridLite.sort()`**/**`GridLite.clearSort()`** methods or through the **`Grid.Lite.sortExpressions`** property.
+The {GridLiteTitle} exposes two main approaches for applying sort operations from its API. Either through the **`GridLite.sort()`**/**`GridLite.clearSort()`** methods or through the **`Grid.Lite.sortExpressions`** property.
 
 The **`sort()`** method accepts either a single expression or an array of sort expression and then sorts the grid data based on those expressions.
 
@@ -177,7 +177,7 @@ For example here is a Lit-based sample:
   ];
 
   render() {
-    return html`<apex-grid .sortExpressions=${sortState}></apex-grid>`
+    return html`<igc-grid-lite .sortExpressions=${sortState}></igc-grid-lite>`
   }
 }
 ```
@@ -232,7 +232,7 @@ export type DataPipelineParams<T extends object> = {
   /**
    * The grid component itself.
    */
-  grid: ApexGrid<T>;
+  grid: IgcGridLite<T>;
   /**
    * The type of data operation being performed.
    */

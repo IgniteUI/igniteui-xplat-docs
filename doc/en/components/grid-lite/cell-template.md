@@ -43,7 +43,7 @@ const { format: asCurrency } = new Intl.NumberFormat('en-EN', { style: 'currency
 
 You can combine values different fields from the data source as well.
 <!-- TODO: 
-Refer to the API documentation for **`ApexCellContext`** for more information. -->
+Refer to the API documentation for **`GridLiteCellContext`** for more information. -->
 
 <!-- React, WebComponents -->
 
@@ -98,18 +98,18 @@ The custom cell renderer is passed an **`GridLiteCellContext`** object as a para
 /**
  * Context object for the row cell template callback.
  */
-export interface ApexCellContext<
+export interface GridLiteCellContext<
   T extends object,
   K extends Keys<T> = Keys<T>
 > {
   /**
    * The cell element parent of the template.
    */
-  parent: ApexGridCell<T>;
+  parent: GridLiteCell<T>;
   /**
    * The row element containing the cell.
    */
-  row: ApexGridRow<T>;
+  row: GridLiteRow<T>;
   /**
    * The current configuration for the column.
    */

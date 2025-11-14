@@ -102,7 +102,7 @@ grid.clearFilter();
 
 ## Initial filter state
 
-The **`filterExpressions`** property is very similar in behavior to the **`filter()`** method call. It exposes a declarative way to control filter state in the grid, but the most useful property is the ability to set initial filter state when the Apex component is first rendered.
+The **`filterExpressions`** property is very similar in behavior to the **`filter()`** method call. It exposes a declarative way to control filter state in the grid, but the most useful property is the ability to set initial filter state when the {GridLiteTitle} component is first rendered.
 
 <!-- React, WebComponents -->
 
@@ -144,8 +144,8 @@ After the grid applies the new filter state, a **`filtered`** event is emitted. 
 
 <!-- React, WebComponents -->
 ```typescript
-grid.addEventListener('filtering', (event: CustomEvent<ApexFilteringEvent<T>>) => { ... });
-grid.addEventListener('filtered', (event: CustomEvent<ApexFilteredEvent<T>>) => { ... });
+grid.addEventListener('filtering', (event: CustomEvent<GridLiteFilteringEvent<T>>) => { ... });
+grid.addEventListener('filtered', (event: CustomEvent<GridLiteFilteredEvent<T>>) => { ... });
 ```
 <!-- End: React, WebComponents -->
 
