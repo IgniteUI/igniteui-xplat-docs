@@ -270,6 +270,18 @@ export interface APITypeInfo {
     isType: boolean;
 }
 
+export interface ApiDocOverride {
+    root: string;
+    components?: string[];
+    packages: string[];
+    buildUrlDashed?: boolean;
+}
+
+export interface ApiDocPaths {
+    default: string;
+    overrides?: ApiDocOverride[];
+}
+
 export enum APIPlatform {
     WPF,
     UWP,
