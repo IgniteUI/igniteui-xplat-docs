@@ -59,7 +59,7 @@
             { "name": "{RepoSamples}",      "value": "https://github.com/IgniteUI/igniteui-angular-examples/tree/master/samples"},
             { "name": "{RepoBrowser}",      "value": "https://github.com/IgniteUI/igniteui-angular-examples/tree/master/browser"},
             { "name": "{GithubLink}",       "value": "https://github.com/IgniteUI/igniteui-angular"},
-            { "name": "{GithubLinkLite}",   "value": "https://github.com/IgniteUI/igc-grid-lite"},
+            { "name": "{GithubLinkLite}",   "value": "https://github.com/IgniteUI/igniteui-grid-lite"},
             { "name": "{ForumsLink}",       "value": "https://www.infragistics.com/community/forums/f/ignite-ui-for-angular"},
 
             { "note": "in shared topics, these variables are mapped from {Component*} and auto-replaced with actual values, e.g."},
@@ -186,7 +186,7 @@
             { "name": "{RepoSamples}",      "value": "https://github.com/IgniteUI/igniteui-react-examples/tree/master/samples"},
             { "name": "{RepoBrowser}",      "value": "https://github.com/IgniteUI/igniteui-react-examples/tree/master/browser"},
             { "name": "{GithubLink}",       "value": "https://github.com/IgniteUI/igniteui-react"},
-            { "name": "{GithubLinkLite}",   "value": "https://github.com/IgniteUI/igc-grid-lite"},
+            { "name": "{GithubLinkLite}",   "value": "https://github.com/IgniteUI/igniteui-grid-lite"},
             { "name": "{ForumsLink}",       "value": "https://www.infragistics.com/community/forums/f/ignite-ui-for-react"},
 
             { "note": "in shared topics, these variables are mapped from {Component*} and auto-replaced with actual values, e.g."},
@@ -237,7 +237,7 @@
             { "name": "{GridLiteKeywords}",           "value": "Grid Lite, IgrGridLite"},
             { "name": "{GridLiteName}",               "value": "IgrGridLite"},
             { "name": "{GridLiteSelector}",           "value": "igr-grid-lite"},
-            { "name": "{GridLitePackage}",            "value": "igc-grid-lite"},
+            { "name": "{GridLitePackage}",            "value": "igniteui-grid-lite"},
             { "name": "{GridLiteSample}",             "value": "grids/grid-lite"},
             { "name": "{GridLiteApiMembers}",         "value": "Infragistics.Controls.GridLite"},
 
@@ -424,7 +424,7 @@
             { "name": "{RepoSamples}",      "value": "https://github.com/IgniteUI/igniteui-wc-examples/tree/master/samples"},
             { "name": "{RepoBrowser}",      "value": "https://github.com/IgniteUI/igniteui-wc-examples/tree/master/browser"},
             { "name": "{GithubLink}",       "value": "https://github.com/IgniteUI/igniteui-webcomponents"},
-            { "name": "{GithubLinkLite}",   "value": "https://github.com/IgniteUI/igc-grid-lite"},
+            { "name": "{GithubLinkLite}",   "value": "https://github.com/IgniteUI/igniteui-grid-lite"},
             { "name": "{ForumsLink}",       "value": "https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components"},
 
             { "note": "in shared topics, these variables are mapped from {Component*} and auto-replaced with actual values, e.g."},
