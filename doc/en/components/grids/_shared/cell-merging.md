@@ -10,8 +10,12 @@ _canonicalLink: {CanonicalLinkToGridCellMerging}
 
 # {Platform} {ComponentTitle} Cell Merging
 
+<!-- WebComponents, React -->
 The Ignite UI for {Platform} {ComponentTitle} provides a Cell Merging feature that combines two or more adjacent cells with the same value into a single, larger cell. Merging is applied vertically within a column and helps improve readability by reducing duplicate values. The feature can be configured to merge cells either by default matching data values or by applying a custom condition.
-
+<!-- end: WebComponents, React -->
+<!-- Blazor -->
+The Ignite UI for {Platform} {ComponentTitle} provides a Cell Merging feature that combines two or more adjacent cells with the same value into a single, larger cell. Merging is applied vertically within a column and helps improve readability by reducing duplicate values.
+<!-- end: Blazor -->
 ## {Platform} {ComponentTitle} Cell Merging Example
 
 <!-- ComponentStart: Grid -->
@@ -47,6 +51,16 @@ const cellMergeMode: GridCellMergeMode = 'always';
     ...
 </{ComponentSelector}>
 ```
+
+```razor
+<{ComponentSelector} Data="Data" CellMergeMode="CellMergeMode" >
+    ...
+</{ComponentSelector}>
+
+@code {
+    private GridCellMergeMode CellMergeMode = GridCellMergeMode.Always;
+}
+```
 ### Column Merge Toggle
 At the column level, merging can be enabled or disabled with the `merge` property.
 
@@ -57,6 +71,10 @@ At the column level, merging can be enabled or disabled with the `merge` propert
 ```html
 <igc-column field="OrderID" merge="true"></igc-column>
 <igc-column field="ShipperName" merge="false"></igc-column>
+```
+```razor
+<IgbColumn Field="OrderID" Merge="true"></IgbColumn>
+<IgbColumn Field="ShipperName" Merge="false"></IgbColumn>
 ```
 
 In the above example:
@@ -82,8 +100,20 @@ const cellMergeMode: GridCellMergeMode = 'onSort';
     <igc-column field="Salesperson" header="Salesperson"></igc-column>
 </{ComponentSelector}>
 ```
+```razor
+<{ComponentSelector} Data="Data" CellMergeMode="CellMergeMode" AutoGenerate="false">
+    <IgbColumn Field="OrderID" Header="Order ID" Merge="true"></IgbColumn>
+    <IgbColumn Field="ShipperName" Header="Shipper Name" Merge="true"></IgbColumn>
+    <IgbColumn Field="Salesperson" Header="Salesperson"></IgbColumn>
+</{ComponentSelector}>
+
+@code {
+    private GridCellMergeMode CellMergeMode = GridCellMergeMode.OnSort;
+}
+```
 Here, the grid is set to merge only when columns are sorted, and both Category and Product columns are configured for merging.
 
+<!-- WebComponents, React -->
 ## Custom Merge Conditions
 In addition to the built-in `always` and `onSort` modes, the grid allows you to define a custom condition for merging cells through the `mergeStrategy` property. This strategy controls both how cells are compared and how merged ranges are calculated.
 
@@ -233,6 +263,7 @@ constructor() {
 `sample="/{ComponentSample}/cell-merge-custom-sample", height="755", alt="{Platform} {ComponentTitle} Cell Merging Example"`
 <!-- ComponentEnd: TreeGrid -->
 
+<!-- end: WebComponents, React -->
 ## Feature Integration 
 Due to the specific behavior of merged cells it has to be noted how exactly it ties together with some of the other features of the grid:
 <!-- ComponentStart: Grid -->
@@ -241,13 +272,12 @@ Due to the specific behavior of merged cells it has to be noted how exactly it t
 - **Excel export**: merged cells remain merged when exported to Excel.
 - **Column pinning**: cells remain merged when a column is pinned and are displayed in the pinned area.
 - **Row pinning**: cells merge only withing their containing area, i.e. cells of pinned rows merge only with cells of other pinned rows, while cells of unpinned rows merge only with cells of unpinned rows.
+- **Updating/Editing**: since activation breaks the merge sequence, only a single cell will be in edit mode.
+- **Row selection**: if selected rows intersect merged cells, all related merged cells should be marked as part of the selection.
 - **Navigation/Activation**: when a cell is active, all merged cells in the same row become single cells, i.e. their merge sequence is broken. This also includes activation via keyboard navigation.
 
 >[!NOTE]
 > If a merged cell is clicked, the closest cell from the merge sequence will become active.
-
-- **Updating/Editing**: since activation breaks the merge sequence, only a single cell will be in edit mode.
-- **Row selection**: if selected rows intersect merged cells, all related merged cells should be marked as part of the selection.
 
 <!-- ComponentStart: Grid -->
 ## Limitations
