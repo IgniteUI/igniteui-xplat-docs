@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} Cell Template - {ProductName}
+title: {Platform} {GridLiteTitle} Cell Template - {ProductName}
 _description: {GridLiteTitle} column configuration and column properties. See demos & examples!
 _keywords: column configuration, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -126,7 +126,7 @@ If a column is set to be resizable, you can drag the right size of the column he
 
 In the sample below you can try out the different column properties and how they reflect in the rendered grid.
 
-`sample="/{ComponentSample}/column-config-dynamic", height="600", alt="{Platform} {ComponentTitle} Column Config Dynamic"`
+`sample="/{GridLiteSample}/column-config-dynamic", height="600", alt="{Platform} {GridLiteTitle} Column Config Dynamic"`
 
 <!-- TODO ## API References
 

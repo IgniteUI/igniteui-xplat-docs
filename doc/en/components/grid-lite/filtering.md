@@ -1,6 +1,6 @@
 ---
-title: {Platform} {ComponentTitle} Filtering - {ProductName}
-_description: Filter operations, filter customization and remote filtering for {ComponentTitle}. See demos & examples!
+title: {Platform} {GridLiteTitle} Filtering - {ProductName}
+_description: Filter operations, filter customization and remote filtering for {GridLiteTitle}. See demos & examples!
 _keywords: filtering, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
@@ -33,7 +33,7 @@ The **`filter`** property can be either a simple boolean or a
 }
 ```
 
-`sample="/{ComponentSample}/filtering-config", height="600", alt="{Platform} {ComponentTitle} Filtering Config"`
+`sample="/{GridLiteSample}/filtering-config", height="600", alt="{Platform} {GridLiteTitle} Filtering Config"`
 
 ## Filter model
 
@@ -149,7 +149,7 @@ grid.addEventListener('filtered', (event: CustomEvent<GridLiteFilteredEvent<T>>)
 ```
 <!-- End: React, WebComponents -->
 
-`sample="/{ComponentSample}/filtering-config-events", height="600", alt="{Platform} {ComponentTitle} Filtering Config Events"`
+`sample="/{GridLiteSample}/filtering-config-events", height="600", alt="{Platform} {GridLiteTitle} Filtering Config Events"`
 
 ## Remote filter operations
 
@@ -187,7 +187,7 @@ The custom callback can be async as the grid will wait for it until it resolves.
 
 The following example mocks remote filter operation, reflecting the REST endpoint generated based on the filter state of the component.
 
-`sample="/{ComponentSample}/filtering-config-remote", height="600", alt="{Platform} {ComponentTitle} Filtering Config Remote"`
+`sample="/{GridLiteSample}/filtering-config-remote", height="600", alt="{Platform} {GridLiteTitle} Filtering Config Remote"`
 
 
 <!-- TODO ## API References

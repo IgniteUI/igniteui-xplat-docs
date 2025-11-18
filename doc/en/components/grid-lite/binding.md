@@ -1,6 +1,6 @@
 ---
 title: {Platform} {GridLiteTitle} Data Binding - {ProductName}
-_description: Data binding for {ComponentTitle}. See demos & examples!
+_description: Data binding for {GridLiteTitle}. See demos & examples!
 _keywords: data binding, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
@@ -44,7 +44,7 @@ Usually you will want to reset them by calling either **`clearSort()`** and/or *
 In the sample below, the grid has column auto-generation enabled. When you click on the switch data button,
 the column collection is reset, and a new data source is bound to the grid.
 
-`sample="/{ComponentSample}/data-binding", height="600", alt="{Platform} {ComponentTitle} Data Binding"`
+`sample="/{GridLiteSample}/data-binding", height="600", alt="{Platform} {GridLiteTitle} Data Binding"`
 
 <!-- TODO ## API References
 

@@ -1,6 +1,6 @@
 ---
-title: {Platform} {ComponentTitle} Sorting - {ProductName}
-_description: Sort operations, sort customization and remote sorting for {ComponentTitle}. See demos & examples!
+title: {Platform} {GridLiteTitle} Sorting - {ProductName}
+_description: Sort operations, sort customization and remote sorting for {GridLiteTitle}. See demos & examples!
 _keywords: sorting, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
@@ -46,7 +46,7 @@ The **`sort`** property can be either a simple boolean or a **`ColumnSortConfigu
 
 <!-- End: React, WebComponents -->
 
-`sample="/{ComponentSample}/sort-config-sample", height="600", alt="{Platform} {ComponentTitle} Sorting Config"`
+`sample="/{GridLiteSample}/sort-config-sample", height="600", alt="{Platform} {GridLiteTitle} Sorting Config"`
 
 ## Single and multi-sorting
 
@@ -88,7 +88,7 @@ When multi-column sort is enabled, the column headers will display a sorting ind
 
 The following sample shows the grid **`sortConfiguration`** combinations and how they reflect in the grid.
 
-`sample="/{ComponentSample}/sort-config-grid", height="600", alt="{Platform} {ComponentTitle} Sorting Config Grid"`
+`sample="/{GridLiteSample}/sort-config-grid", height="600", alt="{Platform} {GridLiteTitle} Sorting Config Grid"`
 
 ## Sort model
 
@@ -213,7 +213,7 @@ grid.addEventListener('sorted', (event: CustomEvent<SortExpression<T>>) => { ...
 
 In the following sample, when you try to sort the **Name** and **Rating** columns, the operation will be cancelled. Watch the event log below to see it in action.
 
-`sample="/{ComponentSample}/sort-config-events", height="600", alt="{Platform} {ComponentTitle} Sorting Config Events"`
+`sample="/{GridLiteSample}/sort-config-events", height="600", alt="{Platform} {GridLiteTitle} Sorting Config Events"`
 
 ## Remote sort operations
 
@@ -250,7 +250,7 @@ The custom callback can be async as the grid will wait for it until it resolves.
 
 The following example mocks remote sorting operation, reflecting the REST endpoint generated based on the sort state of the component.
 
-`sample="/{ComponentSample}/sort-config-pipeline", height="600", alt="{Platform} {ComponentTitle} Sorting Config Pipeline"`
+`sample="/{GridLiteSample}/sort-config-pipeline", height="600", alt="{Platform} {GridLiteTitle} Sorting Config Pipeline"`
 
 <!-- TODO ## API References
 

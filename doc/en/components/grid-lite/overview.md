@@ -1,16 +1,18 @@
 ---
-title: {Platform} {ComponentTitle} Overview - {ProductName}
+title: {Platform} {GridLiteTitle} Overview - {ProductName}
 _description: {GridLiteTitle} features overview
 _keywords: overview, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
 ---
 
-# Open Source JavaScript Grid for Any Project
+# Open Source {Platform} Grid for Any Project
 
-The {GridLiteTitle} is a free, open-source JavaScript data grid built as a Web Component, which means you can use it dependency-free with or without a web framework.
+The {GridLiteTitle} is a free, open-source {Platform} data grid that is used in applications to display and manage tabular data. It enables you to present data in rows and columns, using a number of features like sorting and filtering.
 
-`sample="/{ComponentSample}/app-sample-main", height="600", alt="{Platform} {ComponentTitle} App Sample Main"`
+
+
+`sample="/{GridLiteSample}/overview", height="600", alt="{Platform} {GridLiteTitle} App Sample Main"`
 
 {GridLiteTitle} is designed to give you the core features that you need to deliver a beautiful data grid / data table experience in your apps. Designed for performance and beauty, the {GridLiteTitle} will work in any framework, on any platform.
 
@@ -21,10 +23,6 @@ Row-level virtualization allows you to render unlimited amounts of data with smo
 ## Automatic Column Types
 
 Column types are automatically generated base on your data source with built-in filtering based on column type.
-
-## Custom Column Templates
-
-Deliver any type of UX with column templates. Anything you imagine can render in a grid column!
 
 ## Interactive Features
 

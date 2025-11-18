@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} Header Template - {ProductName}
+title: {Platform} {GridLiteTitle} Header Template - {ProductName}
 _description: Configure and customize custom {GridLiteTitle} column header renderers. See demos & examples!
 _keywords: header template, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -45,7 +45,7 @@ import { html } from 'lit';
 ```
 <!-- End: React, WebComponents -->
 
-`sample="/{ComponentSample}/column-config-headers", height="600", alt="{Platform} {ComponentTitle} Column Config Headers"`
+`sample="/{GridLiteSample}/column-config-headers", height="600", alt="{Platform} {GridLiteTitle} Column Config Headers"`
 
 <!-- TODO ## API References
 

@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} Theming - {ProductName}
+title: {Platform} {GridLiteTitle} Theming - {ProductName}
 _description: Styling the {GridLiteTitle}. See demos & examples!
 _keywords: styling, theming, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -33,7 +33,7 @@ As a rule of thumb, you can always copy the `themes` folder to your assets direc
 
 In the sample below, you can preview all the default base themes.
 
-`sample="/{ComponentSample}/styling-config-themes", height="600", alt="{Platform} {ComponentTitle} Styling Config Themes"`
+`sample="/{GridLiteSample}/styling-config-themes", height="600", alt="{Platform} {GridLiteTitle} Styling Config Themes"`
 
 ## Creating custom themes
 
@@ -78,7 +78,7 @@ $my-light-palette: palette(
 
 Here is an example showcasing the custom theming from above.
 
-`sample="/{ComponentSample}/styling-custom-theme", height="600", alt="{Platform} {ComponentTitle} Styling Custom Theme"`
+`sample="/{GridLiteSample}/styling-custom-theme", height="600", alt="{Platform} {GridLiteTitle} Styling Custom Theme"`
 
 <!-- TODO ## API References
 

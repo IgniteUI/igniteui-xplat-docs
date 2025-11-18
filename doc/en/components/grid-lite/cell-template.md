@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} Cell Template - {ProductName}
+title: {Platform} {GridLiteTitle} Cell Template - {ProductName}
 _description: Configure and customize custom {GridLiteTitle} cell renderers. See demos & examples!
 _keywords: cell template, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -122,7 +122,7 @@ export interface GridLiteCellContext<
 ```
 <!-- End: React, WebComponents -->
 
-`sample="/{ComponentSample}/column-config-basic", height="600", alt="{Platform} {ComponentTitle} Column Config Basic"`
+`sample="/{GridLiteSample}/column-config-basic", height="600", alt="{Platform} {GridLiteTitle} Column Config Basic"`
 
 <!-- TODO ## API References
 
