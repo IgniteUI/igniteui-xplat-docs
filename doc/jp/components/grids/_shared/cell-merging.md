@@ -11,7 +11,12 @@ _language: ja
 
 # {Platform} {ComponentTitle} セル結合
 
+<!-- WebComponents, React -->
 Ignite UI for {Platform} {ComponentTitle} には、同じ値を持つ隣接セルを 1 つの大きなセルに結合するセル結合機能があります。結合は列内で縦方向に適用され、重複する値を減らして可読性を向上させます。既定ではデータ値の一致でセル結合されるほか、カスタム条件を設定して結合するように構成できます。
+<!-- end: WebComponents, React -->
+<!-- Blazor -->
+Ignite UI for {Platform} {ComponentTitle} には、同じ値を持つ隣接セルを 1 つの大きなセルに結合するセル結合機能があります。結合は列内で縦方向に適用され、重複する値を減らして可読性を向上させます。
+<!-- end: Blazor -->
 
 ## {Platform} {ComponentTitle} セル結合の例
 
@@ -52,6 +57,16 @@ const cellMergeMode: GridCellMergeMode = 'always';
 </{ComponentSelector}>
 ```
 
+```razor
+<{ComponentSelector} Data="Data" CellMergeMode="CellMergeMode" >
+    ...
+</{ComponentSelector}>
+
+@code {
+    private GridCellMergeMode CellMergeMode = GridCellMergeMode.Always;
+}
+```
+
 ### 列結合のトグル
 
 列レベルでは、`merge` プロパティで結合の有効または無効を切り替えます。
@@ -64,6 +79,11 @@ const cellMergeMode: GridCellMergeMode = 'always';
 ```html
 <igc-column field="OrderID" merge="true"></igc-column>
 <igc-column field="ShipperName" merge="false"></igc-column>
+```
+
+```razor
+<IgbColumn Field="OrderID" Merge="true"></IgbColumn>
+<IgbColumn Field="ShipperName" Merge="false"></IgbColumn>
 ```
 
 上記の例では:
@@ -90,6 +110,18 @@ const cellMergeMode: GridCellMergeMode = 'onSort';
     <igc-column field="ShipperName" header="Shipper Name" merge="false"></igc-column>
     <igc-column field="Salesperson" header="Salesperson"></igc-column>
 </{ComponentSelector}>
+```
+
+```razor
+<{ComponentSelector} Data="Data" CellMergeMode="CellMergeMode" AutoGenerate="false">
+    <IgbColumn Field="OrderID" Header="Order ID" Merge="true"></IgbColumn>
+    <IgbColumn Field="ShipperName" Header="Shipper Name" Merge="true"></IgbColumn>
+    <IgbColumn Field="Salesperson" Header="Salesperson"></IgbColumn>
+</{ComponentSelector}>
+
+@code {
+    private GridCellMergeMode CellMergeMode = GridCellMergeMode.OnSort;
+}
 ```
 
 この例では、グリッドは列がソートされている場合のみ結合を行い、Category 列と Product 列の両方で結合が有効になっています。
@@ -257,12 +289,11 @@ constructor() {
 - **列のピン固定**: 列がピン固定されてもセルの結合は維持され、ピン固定領域内に表示されます。
 - **行のピン固定**: セルは自身が属する領域内でのみ結合されます。つまり、ピン固定された行のセルはピン固定行のセル同士で、ピン固定されていない行のセルはその中でのみ結合されます。
 - **ナビゲーション/アクティベーション**: セルがアクティブになると、その行内の結合セルはすべて単一セルに分解されます。これはキーボード ナビゲーションによるアクティベーションも含みます。
+- **更新/編集**: アクティブ化によって結合シーケンスが分解されるため、編集モードになるのは単一セルのみです。
+- **行の選択**: 選択された行が結合セルと交差する場合、関連するすべての結合セルが選択対象としてマークされます。
 
 >[!NOTE]
 > 結合セルをクリックすると、結合シーケンス内でもっとも近いセルがアクティブになります。
-
-- **更新/編集**: アクティブ化によって結合シーケンスが分解されるため、編集モードになるのは単一セルのみです。
-- **行の選択**: 選択された行が結合セルと交差する場合、関連するすべての結合セルが選択対象としてマークされます。
 
 <!-- ComponentStart: Grid -->
 ## 制限
