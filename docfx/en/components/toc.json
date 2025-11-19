@@ -895,6 +895,58 @@
   },
   {
     "exclude": ["Angular"],
+    "name": "Grid Lite",
+    "href": "grid-lite/overview.md",
+    "status": "NEW",
+    "items": [
+      {
+        "exclude": ["Angular"],
+        "name": "Column Configuration",
+        "href": "grid-lite/column-configuration.md",
+        "status": "NEW",
+        "items": [
+          {
+            "exclude": ["Angular", "Blazor"],
+            "name": "Cell Template",
+            "href": "grid-lite/cell-template.md",
+            "status": "NEW"
+          },
+          {
+            "exclude": ["Angular", "Blazor"],
+            "name": "Header Template",
+            "href": "grid-lite/header-template.md",
+            "status": "NEW"
+          }
+        ]
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "Data Binding",
+        "href": "grid-lite/binding.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "Filtering",
+        "href": "grid-lite/filtering.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "Sorting",
+        "href": "grid-lite/sorting.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "Theming",
+        "href": "grid-lite/theming.md",
+        "status": "NEW"
+      }
+    ]
+  },
+  {
+    "exclude": ["Angular"],
     "name": "List",
     "href": "grids/list.md"
   },
