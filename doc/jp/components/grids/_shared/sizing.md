@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} サイズ変更 - {ProductName}
 _description: {Platform} {ComponentTitle} のサイズ設定がどのように機能するかを理解し、ユーザーが遭遇するさまざまな状況に対応するために幅と高さを使用する方法を学びます。
 _keywords: sizing, {Platform}, {ComponentKeywords}, {ProductName}, サイズ設定, インフラジスティックス
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls

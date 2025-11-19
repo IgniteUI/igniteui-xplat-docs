@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} 編集 - {ProductName}
 _description: 強力なパブリック API を使用し、レコードの作成、更新、削除などのデータ操作を簡単に実行できます。{Platform} {ComponentTitle} 編集オプションをお試しください。
 _keywords: data manipulation, {Platform}, {ProductName}, Infragistics, データの変更, インフラジスティックス
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls

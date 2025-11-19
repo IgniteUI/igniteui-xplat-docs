@@ -2,6 +2,7 @@
 title: {Platform} スプレッドシート | ハイパーリンク | インフラジスティックス
 _description: インフラジスティックスの {Platform} スプレッドシート コントロールを使用して、Excel ワークブックに Webサイト、ファイル ディレクトリ、およびその他のワークシートにリンクするハイパーリンクを表示します。{ProductName} スプレッドシート チュートリアルを是非お試しください!
 _keywords: Excel Spreadsheet, hyperlinks, {ProductName}, Infragistics, Excel スプレッドシート、ハイパーリンク, インフラジスティックス
+_license: commercial
 mentionedTypes: ["Spreadsheet"]
 _language: ja
 ---

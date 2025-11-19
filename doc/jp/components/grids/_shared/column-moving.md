@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} 列の並べ替えと移動 - {ProductName}
 _description: カスタム列順序を設定し、マウスのドラッグ/ドロップまたはタッチジェスチャ、または {Platform} Column Moving API を使用して列の並べ替えを有効にします。{ProductName} を今すぐお試しください。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls

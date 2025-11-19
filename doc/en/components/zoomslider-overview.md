@@ -2,6 +2,7 @@
 title: {Platform} ZoomSlider | Data Visualization Tools | Navigation | Zooming | DataChart | Data Binding | Infragistics
 _description: Use Infragistics' {Platform} zoom slider control to easily display a subset of data with two handles representing minimum and maximum values. Improve your data visualization with {ProductName} zoom slider!
 _keywords: zoom slider, {ProductName}, Infragistics, data chart
+_license: commercial
 mentionedTypes: ["ZoomSlider", "XamDataChart"]
 ---
 

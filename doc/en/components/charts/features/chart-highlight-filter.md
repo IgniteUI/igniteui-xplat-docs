@@ -2,6 +2,7 @@
 title: {Platform} Chart Highlight Filter | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Chart Highlight Filter
 _keywords: {Platform} Charts, Highlighting, Filtering, Infragistics
+_license: commercial
 mentionedTypes: ["CategoryChart", "XamDataChart", "Series", "HighlightedValuesDisplayMode"]
 namespace: Infragistics.Controls.Charts
 ---

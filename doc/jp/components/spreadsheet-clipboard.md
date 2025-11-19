@@ -2,6 +2,7 @@
 title: {Platform} スプレッドシート | クリップボード操作 | インフラジスティックス
 _description: インフラジスティックスの {Platform} スプレッドシート コントロール内でコピー、切り取り、貼り付けなどのクリップボード操作を使用します。Infragistics {ProductName} スプレッドシートのサンプルを是非お試しください!
 _keywords: Spreadsheet, clipboard operations, {ProductName}, Infragistics, スプレッドシート, クリップボード操作, インフラジスティックス
+_license: commercial
 mentionedTypes: ["Spreadsheet", "SpreadsheetAction", "SpreadsheetCommandType", "Command"]
 _language: ja
 ---

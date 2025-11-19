@@ -2,6 +2,7 @@
 title: {Platform} Color Editor | カラー エディター | インフラジスティックス
 _description: Color Editor コンポーネントは、アプリケーションの任意のコンポーネントまたは側面の色を変更するための、簡単に構成可能なオプションを提供します。
 _keywords: {Platform} Color Editor, {ProductName}, {Platform} カラー エディター, インフラジスティックス
+_license: commercial
 mentionedTypes: ["ColorEditor"]
 namespace: Infragistics.Controls
 _language: ja

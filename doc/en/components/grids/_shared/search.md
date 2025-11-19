@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Search Filter - {ProductName}
 _description: Perform data manipulation without affecting the underlying data with {ComponentTitle} Batch Editing, using {Platform} {ComponentTitle}. See demos & examples!
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid"]
 namespace: Infragistics.Controls

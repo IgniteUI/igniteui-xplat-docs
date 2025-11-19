@@ -2,6 +2,7 @@
 title: {Platform} Hierarchical Grid | Fastest {Platform} Hierarchical Table | Infragistics
 _description: The {ProductName} Hierarchical Grid is used to display and manipulate hierarchical with ease. Quickly bind your data with very little coding. Try it for FREE
 _keywords: {Platform} hierarchical grid, igniteui for {Platform}, infragistics
+_license: commercial
 mentionedTypes: ["HierarchicalGridBaseDirective"]
 namespace: Infragistics.Controls
 ---

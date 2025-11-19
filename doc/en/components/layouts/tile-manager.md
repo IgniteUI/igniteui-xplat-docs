@@ -2,6 +2,7 @@
 title: {Platform} Tile Manager Component - {ProductName}
 _description: {Platform} Tile Manager component enables the display of content in individual tiles.
 _keywords: {Platform} Tile Manager, {ProductName}, Infragistics, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, Layout components
+_license: MIT
 mentionedTypes: ["TileManager", "Tile"]
 ---
 

@@ -2,6 +2,7 @@
 title: {Platform} Dock Manager | Layout Controls | Infragistics
 _description: Use Infragistics' {Platform} dock manager component to manage the layout through panes, with the ability to customize it by pinning, resizing, moving and hiding panes. Check out {ProductName} dock manager tutorials!
 _keywords: dock manager, layout, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["DockManager", "DocumentHost", "DockManagerLayout", "DockManagerPaneType", "ContentPane", "SplitPane", "TabGroupPane", "PinnedLocation", "PaneHeaderElement"]
 ---
 

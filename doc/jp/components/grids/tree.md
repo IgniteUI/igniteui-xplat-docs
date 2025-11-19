@@ -2,6 +2,7 @@
 title: {Platform} ツリー コンポーネント | インフラジスティックス
 _description: {Platform} ツリー コンポーネントを使用すると、ツリービュー構造で階層データを表示し、ノードを簡単にカスタマイズし、オンデマンドでデータを読み込むのに役立ちます。今すぐお試しください。
 _keywords: {Platform} ツリー, 項目ツリー, 概要, {ProductName}, インフラジスティックス
+_license: MIT
 mentionedTypes: ["Tree", "TreeItem", "Icon", "CircularProgress"]
 _language: ja
 ---

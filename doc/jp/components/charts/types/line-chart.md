@@ -2,12 +2,12 @@
 title: {Platform} 折れ線チャートとグラフ | {ProductName}
 _description: {Platform} 折れ線チャートは、数百万のデータポイントに及ぶ大量のデータを処理し、数ミリ秒ごとに更新することができます。無料でお試しください。
 _keywords: {Platform} Charts, Line Chart, Line Graph, Infragistics, {Platform} チャート, 折れ線チャート, 折れ線グラフ, インフラジスティックス
+_license: commercial
 mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "Legend", "PolarLineSeries", "RadialLineSeries", "StackedLineSeries", "Stacked100LineSeries", "Series", "CategoryChartType"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 # {Platform} 折れ線チャート
-
 {ProductName} 折れ線チャート (または折れ線グラフ) は、カテゴリ チャートの一種で、一定期間にわたる 1 つ以上の数量の直線セグメントで接続されたポイントで表される連続データ値を示します。トレンドの表示や比較分析によく使用されます。Y 軸 (左側のラベル) は数値を示し、X 軸 (下側のラベル) は時系列または比較カテゴリを示します。比較する 1 つ以上のデータセットを含めることができます。これはチャートで複数の線として描画されます。
 
 ## {Platform} 折れ線チャートの例

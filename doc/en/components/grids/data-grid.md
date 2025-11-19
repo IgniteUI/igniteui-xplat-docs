@@ -2,6 +2,7 @@
 title: {Platform} Data Grid Component - Infragistics
 _description: Create super-fast, responsive {Platform} Data Grids and tables with {ProductName}. Supports editing, filtering, data binding and many more. Try it now!
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid
+_license: commercial
 mentionedTypes: ["Infragistics.Controls.Grid", "Infragistics.Controls.ColumnPipeArgs"]
 namespace: Infragistics.Controls
 ---

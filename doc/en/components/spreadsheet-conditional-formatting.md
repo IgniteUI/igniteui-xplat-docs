@@ -2,6 +2,7 @@
 title: {Platform} Spreadsheet | Conditional Formatting | Infragistics
 _description: Use Infragistics' {Platform} spreadsheet control to conditionally format the cells of a worksheet. Check out {ProductName} spreadsheet demos!
 _keywords: Spreadsheet, conditional formatting, {ProductName}, Infragistics, Worksheet
+_license: commercial
 mentionedTypes: ["Spreadsheet", "ConditionalFormatCollection", "WorksheetCell", "Worksheet", "IWorksheetCellFormat"]
 ---
 # {Platform} Spreadsheet Conditional Formatting

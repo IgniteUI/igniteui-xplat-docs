@@ -2,6 +2,7 @@
 title: {Platform} File Input | データ可視化ツール | インフラジスティックス
 _description: Infragistics の {Platform} File Input は、ユーザーがファイルを選択・アップロードできるコンポーネントです。{ProductName} でアプリケーションを改善しましょう!
 _keywords: {Platform} File input, {ProductName}, Infragistics, {Platform} ファイル入力, インフラジスティックス
+_license: MIT
 mentionedTypes: ["Input", "Icon", "Button"]
 _language: ja
 ---

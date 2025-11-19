@@ -27,6 +27,11 @@
     "status": ""
   },
   {
+    "exclude": ["Angular"],
+    "name": "Open-Source vs Premium",
+    "href": "general-open-source-vs-premium.md"
+  },
+  {
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "Getting Started",
     "status": "",

@@ -3,6 +3,7 @@ title: {Platform} Dashboard Tile コンポーネント | {ProductName}
 _description: {Platform} Dashboard Tile コンポーネントを簡単に使い始める方法をご覧ください。
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Dashboard components, {Platform} Dashboard Tile controls, UI コントロール, {Platform} ウィジェット, Web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Dashboard コンポーネント, {Platform} Dashboard Tile コントロール
 mentionedTypes: ["Toolbar", "CategoryChart", "XamDataChart", "XamRadialGauge", "XamLinearGauge", "XamGeographicMap"]
+_license: commercial
 _language: ja
 ---
 

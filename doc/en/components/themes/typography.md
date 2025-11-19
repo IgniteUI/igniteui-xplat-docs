@@ -2,6 +2,7 @@
 title: {Platform} Styling and Themes | {Platform} Typography | Infragistics
 _description:
 _keywords: {ProductName}, Infragistics, Typography, Styling
+_license: MIT
 mentionedTypes: ["Typography"]
 ---
 

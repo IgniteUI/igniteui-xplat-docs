@@ -2,6 +2,7 @@
 title: {Platform} Date Picker Component - {ProductName}
 _description: Infragistics' {Platform} Date Picker allows the user to select a date from a calendar and set it in an input element.
 _keywords: {Platform} Date Picker, {ProductName}, Infragistics
+_license: MIT
 mentionedTypes: ["DatePicker"]
 ---
 

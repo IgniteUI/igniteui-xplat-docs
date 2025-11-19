@@ -2,6 +2,7 @@
 title: {Platform} Master-Detail Grid - Infragistics
 _description: Define expandable detail view template for data in rows with Ignite UI {Platform} Grid. Useful for displaying master-detail style data in a hierarchical structure.
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, master detail, Infragistics
+_license: commercial
 mentionedTypes: ["Infragistics.Controls.Grid"]
 ---
 

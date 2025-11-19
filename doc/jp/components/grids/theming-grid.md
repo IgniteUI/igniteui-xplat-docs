@@ -2,6 +2,7 @@
 title: {Platform} Grid のテーマ設定 | リアルタイム {Platform} テーブル | 軽量 {Platform} Web コンポーネント テーブル | インフラジスティックス
 _description: {ProductName} のダーク テーマ
 _keywords: {Platform} {ComponentTitle}, {ComponentTitle} dark theme {ProductName}
+_license: commercial
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls

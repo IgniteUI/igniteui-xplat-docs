@@ -2,6 +2,7 @@
 title: {Platform} DateTimeInput | Infragistics
 _description: Infragistics' {Platform} DateTimeInput allows the user to edit date and time in an input element
 _keywords: {Platform} input, {ProductName}, Infragistics
+_license: MIT
 mentionedTypes: ["DateTimeInput"]
 ---
 

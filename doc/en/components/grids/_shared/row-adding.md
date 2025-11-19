@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Row Adding - {ProductName}
 _description: Learn how to use and customize the built-in row adding functionality with {Platform} and utilize intuitive grid row adding and CRUD capabilities.
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls

@@ -2,6 +2,7 @@
 title: {Platform} Switch コンポーネント – {ProductName}
 _description: {ProductName} Switch コンポーネントを使用すると、開発者はアプリケーション内でバイナリのオン/オフまたは true/false のデータ入力関数を使用できます。
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Switch components, {Platform} Switch controls, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Switch コンポーネント, {Platform} Switch コントロール
+_license: MIT
 mentionedTypes: ["Switch"]
 _language: ja
 ---

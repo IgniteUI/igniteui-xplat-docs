@@ -2,6 +2,7 @@
 title: {Platform}  データ チャート | データ可視化ツール | ナビゲーション | インフラジスティックス
 _description: インフラジスティックスの {Platform} チャートをナビゲートするには、マウスまたはタッチを使用して左右にパンし、水平および垂直にズームします。{ProductName} のグラフ ナビゲーション機能について説明します。
 _keywords: {Platform} charts, data chart, navigation, {ProductName}, Infragistics, {Platform} チャート, データ チャート, ナビゲーション, インフラジスティックス
+_license: commercial
 mentionedTypes: ["XamDataChart", "CategoryChart", "FinancialChart", "ModifierKeys"]
 _language: ja
 ---

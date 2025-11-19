@@ -2,6 +2,7 @@
 title: Ignite UI for {Platform} アクセシビリティの遵守 | Ignite UI for {Platform} | インフラジスティックス
 _description: Ignite UI for {Platform} のアクセシビリティ準拠 - 第 508 条の遵守、WCAG および ARIA。
 _keywords: accessibility, {Platform}, ignite ui for {Platform}, infragistics, アクセシビリティ準拠, インフラジスティックス
+_license: MIT
 mentionedTypes: []
 _language: ja
 ---
