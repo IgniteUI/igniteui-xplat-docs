@@ -4,6 +4,7 @@ _description: Configure and customize custom {GridLiteTitle} cell renderers. See
 _keywords: cell template, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
+_license: mit
 ---
 
 # Column cell template

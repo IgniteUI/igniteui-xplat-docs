@@ -4,6 +4,7 @@ _description: Styling the {GridLiteTitle}. See demos & examples!
 _keywords: styling, theming, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
+_license: mit
 ---
 
 # Styles and themes

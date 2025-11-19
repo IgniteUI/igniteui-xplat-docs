@@ -4,6 +4,7 @@ _description: Data binding for {GridLiteTitle}. See demos & examples!
 _keywords: data binding, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
+_license: mit
 ---
 
 # {Platform} {GridLiteTitle} Data Binding

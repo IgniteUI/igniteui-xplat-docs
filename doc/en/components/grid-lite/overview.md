@@ -4,6 +4,7 @@ _description: {GridLiteTitle} features overview
 _keywords: overview, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
+_license: mit
 ---
 
 # Open Source {Platform} Grid for Any Project

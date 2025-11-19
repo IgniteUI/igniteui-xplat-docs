@@ -4,6 +4,7 @@ _description: Configure and customize custom {GridLiteTitle} column header rende
 _keywords: header template, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
+_license: mit
 ---
 
 # Customizing the column header

@@ -4,6 +4,7 @@ _description: Sort operations, sort customization and remote sorting for {GridLi
 _keywords: sorting, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
+_license: mit
 ---
 
 # Sort operations

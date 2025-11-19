@@ -4,6 +4,7 @@ _description: Filter operations, filter customization and remote filtering for {
 _keywords: filtering, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
+_license: mit
 ---
 
 # {Platform} {GridLiteTitle} Filter operations

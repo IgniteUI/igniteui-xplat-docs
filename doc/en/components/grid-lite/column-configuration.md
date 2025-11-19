@@ -4,6 +4,7 @@ _description: {GridLiteTitle} column configuration and column properties. See de
 _keywords: column configuration, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
+_license: mit
 ---
 
 # Column Configuration
