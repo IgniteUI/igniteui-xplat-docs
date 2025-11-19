@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Filtering - {ProductName}
 _description: Start using angular filter to return specific data with {Platform} {ComponentTitle}. Check the advanced filtering options, including data-type Excel-style filtering.
 _keywords: filter, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls

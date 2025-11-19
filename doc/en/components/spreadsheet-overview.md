@@ -2,6 +2,7 @@
 title: {Platform} Spreadsheet Component – {ProductName}
 _description: Get flexible layouts, easy customization options & convenient Excel-like interface with {ProductName} Spreadsheet. Manage tabular data the way you want!
 _keywords: Excel Spreadsheet, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["Spreadsheet"]
 ---
 # {Platform} Spreadsheet Overview

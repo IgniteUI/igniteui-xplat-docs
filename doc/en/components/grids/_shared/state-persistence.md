@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} State Persistence - {ProductName}
 _description: Easily save and restore the grid state, using our comprehensive Ignite UI toolset for {Platform}. Learn how to restore columns, explore usage, and see demos!
 _keywords: state persistence, {Platform}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["GridStateBaseDirective", "GridState", "PivotConfiguration", "PivotDimension", "PivotValue"]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls

@@ -2,6 +2,7 @@
 title: {Platform} Expansion Panel | Expansion Panel | Infragistics
 _description: Expansion Panel component provides an easily configurable expandable component with two states - collapsed and expanded.
 _keywords: {Platform} Expansion Panel, {ProductName}, Infragistics
+_license: MIT
 mentionedTypes: ["Infragistics.Controls.Layouts.Implementation.ExpansionPanel"]
 namespace: Infragistics.Controls
 ---

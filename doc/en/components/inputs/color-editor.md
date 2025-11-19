@@ -2,6 +2,7 @@
 title: {Platform} Color Editor | Color Editor | Infragistics
 _description: Color Editor component provides an easily configurable option to change colors for any desirable component or aspect of your application.
 _keywords: {Platform} Color Editor, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["ColorEditor"]
 namespace: Infragistics.Controls
 ---

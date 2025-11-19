@@ -2,6 +2,7 @@
 title: {Platform} Divider | Layout Controls | Infragistics
 _description: Use Infragistics' {Platform} divider component to easily create a horizontal/vertical rule as a break between content to better organize information on a page.
 _keywords: {ProductName}, UI controls, {Platform} widgets, Web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} DIvider components, {Platform} Divider controls
+_license: MIT
 mentionedTypes: ["Divider"]
 ---
 

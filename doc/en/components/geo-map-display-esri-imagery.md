@@ -2,6 +2,7 @@
 title: {Platform} Map | Data Visualization Tools | Displaying ESRI Imagery |  Infragistics
 _description: Use Infragistics' {Platform} to display imagery from ESRI maps. View {ProductName} map tutorials!
 _keywords: {Platform} map, ESRI, {ProductName}, Infragistics, imagery tile source, map background
+_license: commercial
 mentionedTypes: ["XamGeographicMap"]
 ---
 # {Platform} Displaying Imagery from Esri Maps

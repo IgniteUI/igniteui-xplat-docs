@@ -2,6 +2,7 @@
 title: Ignite UI for {Platform} Accessibility Compliance | Ignite UI for {Platform} | Infragistics
 _description: Ignite UI for {Platform} Accessibility Support and Compliance - Section 508 Compliance, WCAG and ARIA .
 _keywords: accessibility, {Platform}, ignite ui for {Platform}, infragistics
+_license: MIT
 mentionedTypes: []
 ---
 

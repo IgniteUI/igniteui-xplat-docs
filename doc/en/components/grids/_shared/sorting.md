@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Sorting - {ProductName}
 _description: Get started with the {Platform} sorting feature of {ProductName} {ComponentTitle}! Configure a mix of sortable columns & change the display order of data records.
 _keywords: {Platform} sort, {Platform}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls

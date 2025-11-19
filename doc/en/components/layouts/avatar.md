@@ -2,6 +2,7 @@
 title: {Platform} Avatar | Layout Controls | Infragistics
 _description: Use Infragistics' {Platform} avatar component to display an image, icon, or initials.
 _keywords: avatar, layout, {ProductName}, Infragistics
+_license: MIT
 mentionedTypes: ["Avatar"]
 ---
 

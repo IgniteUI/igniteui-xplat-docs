@@ -2,6 +2,7 @@
 title: {Platform} Grid Layout | Real-Time {Platform} Tables | The Lightweight {Platform} Web Components table | Infragistics
 _description: Our {Platform} grid layout will help you build dynamic, touch-responsive data grids with little coding and configuration. Get 30-day FREE trial of {ProductName}.
 _keywords: {Platform} data grid, infragistics, grids, {ProductName}, table
+_license: commercial
 ---
 
 <style>

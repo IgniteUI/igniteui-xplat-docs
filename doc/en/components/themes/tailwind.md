@@ -2,6 +2,7 @@
 title: Tailwind Integration for {Platform}
 _description: Learn how to integrate Tailwind CSS with custom utility classes from the Ignite UI theming engine. This guide walks you through the setup and demonstrates how to use design tokens for colors, typography, and shadows in a utility-first approach.
 _keywords: {ProductName}, Infragistics, Themes, Styling, Tailwind CSS, custom CSS, utility classes, theming engine, typography, shadows, colors
+_license: MIT
 mentionedTypes: ["ConfigureTheme"]
 ---
 

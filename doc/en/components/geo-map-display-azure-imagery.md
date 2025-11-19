@@ -2,6 +2,7 @@
 title: {Platform} Map | Data Visualization Tools | Displaying Azure Imagery | Infragistics
 _description: Use Infragistics' {Platform} to display imagery from Microsoft Azure Maps. View {ProductName} map tutorials!
 _keywords: {Platform} map, azure maps, {ProductName}, Infragistics, imagery tile source, map background
+_license: commercial
 mentionedTypes: ["XamGeographicMap", "AzureMapsImagery", "GeographicTileSeries"]
 ---
 # {Platform} Displaying Imagery from Azure Maps <label>PREVIEW</label>

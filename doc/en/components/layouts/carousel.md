@@ -2,6 +2,7 @@
 title: {Platform} Carousel | Infragistics
 _description: Use {ProductName} Carousel component to navigate through a collection of slides, cards or page-based interfaces with endless programmatic features. Try it now
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Carousel component, {Platform} Carousel control
+_license: MIT
 mentionedTypes: ["Carousel"]
 ---
 

@@ -2,6 +2,7 @@
 title: {Platform} Checkbox Component | {ProductName}
 _description: Learn how to use the {Platform} Checkbox Component to add checkboxes and enable checked, unchecked or indeterminate state for end-users.
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Checkbox components, {Platform} Checkbox controls
+_license: MIT
 mentionedTypes: ["Checkbox", "Form"]
 ---
 
