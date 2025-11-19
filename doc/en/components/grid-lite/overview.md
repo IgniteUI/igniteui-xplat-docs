@@ -7,7 +7,7 @@ namespace: Infragistics.Controls
 _license: mit
 ---
 
-# Open Source {Platform} Grid for Any Project
+# Open Source {Platform} Grid
 
 The {GridLiteTitle} is a free, open-source {Platform} data grid that is used in applications to display and manage tabular data. It enables you to present data in rows and columns, using a number of features like sorting and filtering.
 
@@ -24,6 +24,12 @@ Row-level virtualization allows you to render unlimited amounts of data with smo
 ## Automatic Column Types
 
 Column types are automatically generated base on your data source with built-in filtering based on column type.
+
+<!-- WebComponents -->
+## Custom Column Templates
+
+Deliver any type of UX with column templates. Anything you imagine can render in a grid column!
+<!-- end: WebComponents -->
 
 ## Interactive Features
 
