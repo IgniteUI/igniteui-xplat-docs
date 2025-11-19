@@ -829,6 +829,48 @@
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/data-grid/type-periodic-table": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/data-grid/type-periodic-table"
     ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/column-config-basic": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/cell-template"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/column-config-dynamic": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/column-configuration"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/column-config-headers": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/header-template"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/data-binding": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/binding"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/filtering-config": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/filtering"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/filtering-config-events": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/filtering"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/filtering-config-remote": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/filtering"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/overview"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/sort-config-events": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/sorting"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/sort-config-grid": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/sorting"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/sort-config-pipeline": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/sorting"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/sort-config-sample": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/sorting"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/styling-config-themes": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/theming"
+    ],
+    "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/styling-custom-theme": [
+      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/theming"
+    ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid/action-strip": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/grid/row-actions"
     ],
@@ -2453,50 +2495,8 @@
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/scheduling/date-range-picker/styling": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/scheduling/date-range-picker"
     ],
-    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/app-sample-main": [
-      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/overview"
-    ],
-    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/column-config-basic": [
-      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/cell-template"
-    ],
-    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/column-config-dynamic": [
-      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/column-configuration"
-    ],
-    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/column-config-headers": [
-      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/header-template"
-    ],
-    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/data-binding": [
-      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/binding"
-    ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/data-exporting-indicator": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/_shared/toolbar"
-    ],
-    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/filtering-config": [
-      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/filtering"
-    ],
-    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/filtering-config-events": [
-      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/filtering"
-    ],
-    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/filtering-config-remote": [
-      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/filtering"
-    ],
-    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/sort-config-events": [
-      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/sorting"
-    ],
-    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/sort-config-grid": [
-      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/sorting"
-    ],
-    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/sort-config-pipeline": [
-      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/sorting"
-    ],
-    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/sort-config-sample": [
-      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/sorting"
-    ],
-    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/styling-config-themes": [
-      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/theming"
-    ],
-    "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/styling-custom-theme": [
-      "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/theming"
     ],
     "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/toolbar-sample-3": [
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/_shared/toolbar"
@@ -2508,7 +2508,7 @@
       "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/_shared/toolbar"
     ]
   },
-  "topicsCount": 336,
+  "topicsCount": 337,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -2924,34 +2924,34 @@
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/maps/geo-map/type-shape-polyline-series"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/binding": [
-      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/data-binding"
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/data-binding"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/cell-template": [
-      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/column-config-basic"
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/column-config-basic"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/column-configuration": [
-      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/column-config-dynamic"
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/column-config-dynamic"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/filtering": [
-      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/filtering-config",
-      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/filtering-config-events",
-      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/filtering-config-remote"
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/filtering-config",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/filtering-config-events",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/filtering-config-remote"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/header-template": [
-      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/column-config-headers"
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/column-config-headers"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/overview": [
-      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/app-sample-main"
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/overview"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/sorting": [
-      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/sort-config-events",
-      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/sort-config-grid",
-      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/sort-config-pipeline",
-      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/sort-config-sample"
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/sort-config-events",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/sort-config-grid",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/sort-config-pipeline",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/sort-config-sample"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grid-lite/theming": [
-      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/styling-config-themes",
-      "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/styling-custom-theme"
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/styling-config-themes",
+      "https://staging.infragistics.com/webcomponents-demos/samples/samples/grids/grid-lite/styling-custom-theme"
     ],
     "https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/grids/_shared/toolbar": [
       "https://staging.infragistics.com/webcomponents-demos/samples/samples/{ComponentSample}/data-exporting-indicator",
