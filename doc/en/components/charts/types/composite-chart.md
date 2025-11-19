@@ -2,6 +2,7 @@
 title: {Platform} Composite Chart | Combo Chart| Data Visualization | Infragistics
 _description: Infragistics' {Platform} Composite Chart
 _keywords: {Platform} Charts, Composite Chart, Combo Chart, Infragistics
+_license: commercial
 mentionedTypes: ["XamDataChart", "Series"]
 namespace: Infragistics.Controls.Charts
 ---

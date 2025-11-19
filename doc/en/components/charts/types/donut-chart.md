@@ -2,6 +2,7 @@
 title: {Platform} Donut Chart | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Donut Chart
 _keywords: {Platform} Charts, Donut Chart, Donut Chart, Infragistics
+_license: commercial
 mentionedTypes: ["XamDoughnutChart", "DoughnutChart"]
 namespace: Infragistics.Controls.Charts
 ---

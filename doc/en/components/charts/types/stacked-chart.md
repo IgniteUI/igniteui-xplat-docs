@@ -2,6 +2,7 @@
 title: {Platform} Stacked Chart | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Stacked Chart
 _keywords: {Platform} Charts, Stacked Chart, Stacked 100% Chart, Infragistics
+_license: commercial
 mentionedTypes: ["XamDataChart", "StackedAreaSeries", "Stacked100AreaSeries", "StackedBarSeries", "Stacked100BarSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "StackedLineSeries", "Stacked100LineSeries", "StackedSplineSeries", "Stacked100SplineSeries", "StackedSplineAreaSeries", "Stacked100SplineAreaSeries", "Series"]
 namespace: Infragistics.Controls.Charts
 ---
@@ -35,7 +36,6 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 
 ## {Platform} Stacked 100 Area Chart
-
 Sometimes the series represent part of a whole being changed over time e.g. a country's energy consumption related to the sources from which it is produced. In such cases representing all stacked elements equally may be a better idea.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `Stacked100AreaSeries`, as shown in the example below.

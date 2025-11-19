@@ -2,6 +2,7 @@
 title: {Platform} Chart Data Legend | Data Visualization Tools | Infragistics
 _description: Use Infragistics {ProductName} chart with the data legend!
 _keywords: {Platform} charts, chart legend, legend, legend types, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["XamCategoryChart", "XamDataLegend", "Series", "DataLegendSummaryType", "DataAbbreviationMode" ]
 namespace: Infragistics.Controls.Charts
 ---
