@@ -2,6 +2,7 @@
 title: {Platform} ボタン グループ コンポーネント | {ProductName}
 _description: {Platform} ボタン グループ コンポーネント - {Platform} 一連のトグル ボタンを使用して、レイアウトや選択などの機能を公開します。
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Button Group Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, {Platform} ボタン グループ コンポーネント, インフラジスティックス
+_license: MIT
 mentionedTypes: ["ToggleButton", "ButtonGroup"]
 _language: ja
 ---

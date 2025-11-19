@@ -2,6 +2,7 @@
 title: {Platform} Dialog | インフラジスティックス
 _description: {ProductName} Dialog コンポーネントを使用すると、開発者はアプリ コンテンツの上にダイアログ ウィンドウを簡単に統合できます。
 _keywords: {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, {Platform}, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} ダイアログ コンポーネント
+_license: MIT
 _language: ja
 mentionedTypes: ["Dialog"]
 ---
