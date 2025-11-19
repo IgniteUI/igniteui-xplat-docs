@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} 行の追加 - {ProductName}
 _description: {Platform} を使用して、定義済みの行追加機能の使用およびカスタマイズする方法を学びます。直感的なグリッド行の追加と CRUD 機能を利用できます。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls

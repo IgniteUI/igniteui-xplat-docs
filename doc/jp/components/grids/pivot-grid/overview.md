@@ -2,6 +2,7 @@
 title: {Platform} ピボット グリッド コンポーネント - インフラジスティックスの {ProductName}
 _description: {ProductName} を使用して、高速でレスポンシブな {Platform} ピボット グリッドとテーブルを作成します。複雑な分析を実行し、データのソート、グループ化、またはフィルター処理を適用します。
 _keywords: {Platform} pivot grid, {Platform} material pivot table, Infragistics, {Platform} ピボット グリッド, {Platform} マテリアル ピボット テーブル, {ProductName}, インフラジスティックス
+_license: commercial
 mentionedTypes: ["PivotGrid", "PivotDimension", "PivotValue"]
 namespace: Infragistics.Controls
 _language: ja

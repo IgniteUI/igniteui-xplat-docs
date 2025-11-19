@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} 複数列ヘッダー - {ProductName}
 _description: {ProductName} グリッドを使用して列ヘッダーを共通の階層ヘッダーの下に配置し、それらを複数のヘッダーに結合することで、列ヘッダーのグループ化を開始します。
 _keywords: Multi-Column Headers, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, 複数列ヘッダー, インフラジスティックス
+_license: commercial
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 mentionedTypes: ["Column"]
 namespace: Infragistics.Controls

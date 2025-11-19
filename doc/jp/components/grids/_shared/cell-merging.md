@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} セル結合 - {ProductName}
 _description: {ProductName} for {Platform} {ComponentTitle} の複数行レイアウト機能を使用して、列をより強力な方法で配置およびサイズ設定します。デモと例をお試しください。
 _keywords: cell merging, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, セル結合, インフラジスティックス
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls
