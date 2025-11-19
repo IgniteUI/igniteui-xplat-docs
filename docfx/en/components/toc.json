@@ -167,50 +167,59 @@
         "exclude": ["Angular"],
         "name": "Cell Merging",
         "href": "grids/grid/cell-merging.md",
-        "status": "NEW"
+        "status": "NEW",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Clipboard Interactions",
-        "href": "grids/grid/clipboard-interactions.md"
+        "href": "grids/grid/clipboard-interactions.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Collapsible Column Groups",
         "href": "grids/grid/collapsible-column-groups.md",
-        "status": ["UPDATED_REACT"]
+        "status": ["UPDATED_REACT"],
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Column Hiding",
         "href": "grids/grid/column-hiding.md",
-        "status": ["UPDATED_REACT"]
+        "status": ["UPDATED_REACT"],
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Column Moving",
-        "href": "grids/grid/column-moving.md"
+        "href": "grids/grid/column-moving.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Column Pinning",
         "href": "grids/grid/column-pinning.md",
-        "status": "UPDATED"
+        "status": "UPDATED",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Column Resizing",
-        "href": "grids/grid/column-resizing.md"
+        "href": "grids/grid/column-resizing.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Column Types",
-        "href": "grids/grid/column-types.md"
+        "href": "grids/grid/column-types.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Conditional Styling",
-        "href": "grids/grid/conditional-cell-styling.md"
+        "href": "grids/grid/conditional-cell-styling.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
@@ -220,29 +229,34 @@
           {
             "exclude": ["Angular"],
             "name": "Cell Editing",
-            "href": "grids/grid/cell-editing.md"
+            "href": "grids/grid/cell-editing.md",
+            "premium": true
           },
           {
             "exclude": ["Angular"],
             "name": "Cascading Combos",
-            "href": "grids/grid/cascading-combos.md"
+            "href": "grids/grid/cascading-combos.md",
+            "premium": true
           },
           {
             "exclude": ["Angular"],
             "name": "Row Adding",
-            "href": "grids/grid/row-adding.md"
+            "href": "grids/grid/row-adding.md",
+            "premium": true
           },
           {
             "exclude": ["Angular"],
             "name": "Row Editing",
-            "href": "grids/grid/row-editing.md"
+            "href": "grids/grid/row-editing.md",
+            "premium": true
           }
         ]
       },
       {
         "exclude": ["Angular"],
         "name": "Export to Excel",
-        "href": "grids/grid/export-excel.md"
+        "href": "grids/grid/export-excel.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
@@ -252,89 +266,106 @@
           {
             "exclude": ["Angular"],
             "name": "Advanced Filtering",
-            "href": "grids/grid/advanced-filtering.md"
+            "href": "grids/grid/advanced-filtering.md",
+            "premium": true
           },
           {
             "exclude": ["Angular"],
             "name": "Excel Style Filtering",
-            "href": "grids/grid/excel-style-filtering.md"
+            "href": "grids/grid/excel-style-filtering.md",
+            "premium": true
           }
         ]
       },
       {
         "exclude": ["Angular"],
         "name": "Group By",
-        "href": "grids/grid/groupby.md"
+        "href": "grids/grid/groupby.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Live Data / Real-Time",
-        "href": "grids/grid/live-data.md"
+        "href": "grids/grid/live-data.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Master-Detail",
-        "href": "grids/grid/master-detail.md"
+        "href": "grids/grid/master-detail.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Keyboard navigation",
-        "href": "grids/grid/keyboard-navigation.md"
+        "href": "grids/grid/keyboard-navigation.md",
+        "premium": true
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "Master Detail",
-        "href": "grids/grid/master-detail.md"
+        "href": "grids/grid/master-detail.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Multi-Column Headers",
-        "href": "grids/grid/multi-column-headers.md"
+        "href": "grids/grid/multi-column-headers.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Toolbar",
-        "href": "grids/grid/toolbar.md"
+        "href": "grids/grid/toolbar.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Multi-Row Layout",
-        "href": "grids/grid/multi-row-layout.md"
+        "href": "grids/grid/multi-row-layout.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Paging",
-        "href": "grids/grid/paging.md"
+        "href": "grids/grid/paging.md",
+        "premium": true
       },
       {
         "exclude": [ "Angular" ],
         "name": "Paste from Excel",
-        "href": "grids/grid/paste-excel.md"
+        "href": "grids/grid/paste-excel.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Remote Data Operations",
-        "href": "grids/grid/remote-data-operations.md"
+        "href": "grids/grid/remote-data-operations.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Row Actions",
-        "href": "grids/grid/row-actions.md"
+        "href": "grids/grid/row-actions.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Row Dragging",
-        "href": "grids/grid/row-drag.md"
+        "href": "grids/grid/row-drag.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Row Pinning",
-        "href": "grids/grid/row-pinning.md"
+        "href": "grids/grid/row-pinning.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Search",
-        "href": "grids/grid/search.md"
+        "href": "grids/grid/search.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
@@ -344,17 +375,20 @@
           {
             "exclude": ["Angular"],
             "name": "Cell Selection",
-            "href": "grids/grid/cell-selection.md"
+            "href": "grids/grid/cell-selection.md",
+            "premium": true
           },
           {
             "exclude": ["Angular"],
             "name": "Column Selection",
-            "href": "grids/grid/column-selection.md"
+            "href": "grids/grid/column-selection.md",
+            "premium": true
           },
           {
             "exclude": ["Angular"],
             "name": "Row Selection",
-            "href": "grids/grid/row-selection.md"
+            "href": "grids/grid/row-selection.md",
+            "premium": true
           }
         ]
       },
@@ -362,44 +396,52 @@
         "exclude": ["Angular"],
         "name": "Size",
         "href": "grids/grid/size.md",
-        "status": "NEW"
+        "status": "NEW",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Sizing",
-        "href": "grids/grid/sizing.md"
+        "href": "grids/grid/sizing.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Sorting",
-        "href": "grids/grid/sorting.md"
+        "href": "grids/grid/sorting.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "State Persistence",
         "href": "grids/grid/state-persistence.md",
-        "status": ""
+        "status": "",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Summaries",
-        "href": "grids/grid/summaries.md"
+        "href": "grids/grid/summaries.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Virtualization and performance",
-        "href": "grids/grid/virtualization.md"
+        "href": "grids/grid/virtualization.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Theming",
-        "href": "grids/theming-grid.md"
+        "href": "grids/theming-grid.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Customize Icons",
         "href": "grids/grid/icons.md",
-        "status": "NEW"
+        "status": "NEW",
+        "premium": true
       }
     ]
   },
