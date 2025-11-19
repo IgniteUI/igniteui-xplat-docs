@@ -2,6 +2,7 @@
 title: {Platform} ピラミッド チャート | 人口ピラミッド | データ可視化ツール | インフラジスティックス
 _description: インフラジスティックスの {Platform} ピラミッド チャート
 _keywords: {Platform} Charts, Pyramid Chart, Population Pyramid, Infragistics, {Platform} チャート, ピラミッド チャート, 人口ピラミッド, インフラジスティックス
+_license: commercial
 mentionedTypes: ["XamDataChart", "Series"]
 namespace: Infragistics.Controls.Charts
 _language: ja

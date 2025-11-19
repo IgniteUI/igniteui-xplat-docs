@@ -2,6 +2,7 @@
 title: {Platform} Chat | {ProductName}
 _description: {ProductName} Chat を使用すると、メッセージ、添付、サジェスト、入力中インジケーター、カスタム テンプレートのサポートにより、インタラクティブなメッセージング エクスペリエンスを構築できます。
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Chat components, {Platform} Chat controls, UI コントロール, {Platform} ウィジェット, Web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Chat コンポーネント, {Platform} Chat コントロール
+_license: MIT
 mentionedTypes: ["Chat"]
 _language: ja
 ---

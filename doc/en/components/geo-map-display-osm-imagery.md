@@ -2,6 +2,7 @@
 title: {Platform} Map | Data Visualization Tools | Displaying Open Street Maps Imagery | Infragistics
 _description: Use Infragistics' {Platform} to display imagery from OSM maps. View {ProductName} map tutorials!
 _keywords: {Platform} map, OSM, {ProductName}, Infragistics, imagery tile source, map background
+_license: commercial
 mentionedTypes: ["XamGeographicMap"]
 ---
 # {Platform} Displaying Imagery from Open Street Maps

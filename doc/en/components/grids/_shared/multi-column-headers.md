@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Multi-Column Headers - {ProductName}
 _description: Start grouping column headers by placing them under a common hierarchical header with the help of {ProductName} grid and combine them into multi headers.
 _keywords: Multi-Column Headers, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 mentionedTypes: ["Column"]
 namespace: Infragistics.Controls

@@ -2,6 +2,7 @@
 title: {Platform} Styling and Themes | {Platform} Palettes | Infragistics
 _description:
 _keywords: {ProductName}, Infragistics, Palettes, Styling
+_license: MIT
 mentionedTypes: ["Palettes"]
 ---
 

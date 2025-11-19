@@ -2,6 +2,7 @@
 title: {Platform} Date Range Picker コンポーネント - {ProductName}
 _description: インフラジスティックスの {Platform} Date Range Picker を使用すると、カレンダーから 2 つの日付の範囲を選択し、それを入力要素に設定できます。
 _keywords: {Platform} Date Range Picker, {ProductName}, Infragistics, {Platform} 日付範囲ピッカー, インフラジスティックス
+_license: MIT
 mentionedTypes: ["DateRangePicker"]
 _language: ja
 ---

@@ -2,6 +2,7 @@
 title: {Platform} シェープ チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの {Platform} シェープ チャート
 _keywords: {Platform} Charts, Shape Chart, Infragistics, {Platform} チャート, シェープ チャート, インフラジスティックス
+_license: commercial
 mentionedTypes: ["XamDataChart", "ScatterPolygonSeries", "ScatterPolylineSeries", "Series", "GeographicShapeSeriesBase"]
 namespace: Infragistics.Controls.Charts
 _language: ja

@@ -2,6 +2,7 @@
 title: {Platform} Icon Component | {ProductName}
 _description: See how you can easily get started with {Platform} Icon Component. Choose icons and select from different styling options to customize them further.
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Icon components, {Platform} Icon controls
+_license: MIT
 mentionedTypes: ["Icon"]
 ---
 

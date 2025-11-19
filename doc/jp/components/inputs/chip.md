@@ -2,6 +2,7 @@
 title: {Platform} Chip | インフラジスティックス
 _description: インフラジスティックスの {Platform} Chip コンポーネントを使用すると、コンテンツを事前定義されたスタイルで表示して、アプリケーション内の任意の場所にある他のコンポーネントを装飾できます。
 _keywords: {Platform}, UI コントロール, web ウィジェット, UI ウィジェット, Web Components, {Platform} Chip コンポーネント, インフラジスティックス
+_license: MIT
 mentionedTypes: ["Chip"]
 _language: ja
 ---

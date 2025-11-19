@@ -2,6 +2,7 @@
 title: Blazor Webassembly | Blazor Excel Library | Infragistics
 _description: Infragistics Blazor Webassembly - How to read & write excel files to reduce server load
 _keywords: Blazor Webassembly, excel library, read and write excel files, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: []
 ---
 

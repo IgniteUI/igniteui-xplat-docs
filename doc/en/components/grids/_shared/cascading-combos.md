@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Cascading combos - {ProductName}
 _description: Perform updating via cascading combos in {ComponentTitle}, using {Platform} {ComponentTitle}. See demos & examples!
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 _language: en
 sharedComponents: ["Grid"]
 mentionedTypes: ["Column", "Combo"]

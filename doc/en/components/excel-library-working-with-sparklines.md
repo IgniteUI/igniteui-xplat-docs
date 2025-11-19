@@ -2,6 +2,7 @@
 title: {Platform} Excel Library| Working with Sparklines | Infragistics
 _description: Use sparkline charts in Infragistics' {Platform} excel library to visual data trends across a region of cells in your worksheet. View {ProductName} excel engine tutorials!
 _keywords: Excel library, sparkline chart, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["Workbook"]
 ---
 # {Platform} Working with Sparklines

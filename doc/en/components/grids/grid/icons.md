@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Customize Icons- Infragistics
 _description: Configure custom icons for {Platform} Grid.
 _keywords: icons, custom icons, igniteui for {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: MIT
 mentionedTypes: ["Infragistics.Controls.Grid"]
 ---
 

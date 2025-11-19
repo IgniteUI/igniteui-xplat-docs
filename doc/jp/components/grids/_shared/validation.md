@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} 編集と検証 - {ProductName}
 _description: グリッドでユーザーの入力を検証し、{Platform} {ComponentTitle} の使用中に有効かどうかを通知します。デモと例をお試しください。
 _keywords: {Platform} validation, {ProductName}, infragistics, {Platform} 検証, インフラジスティックス
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
 _language: ja

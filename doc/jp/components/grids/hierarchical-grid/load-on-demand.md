@@ -2,6 +2,7 @@
 title: {Platform} 階層グリッド | 最速の {Platform} 階層テーブル | インフラジスティックス
 _description: {ProductName} Hierarchical Grid は、展開された各子グリッドでロードオンデマンドに必要なツールを提供します。データ量が大幅に軽減されてユーザがデータを必要な場合のみ取得されます。
 _keywords: {Platform} hierarchical grid, igniteui for {Platform}, infragistics, {Platform} 階層グリッド, インフラジスティックス
+_license: commercial
 mentionedTypes: ["HierarchicalGrid", "RowIsland"]
 namespace: Infragistics.Controls
 _language: ja

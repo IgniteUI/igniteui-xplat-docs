@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Sizing - {ProductName}
 _description: Understand how the {Platform} {ComponentTitle} sizing works and learn how to use the width and height in order to accommodate the different scenarios that users can have.
 _keywords: Sizing , {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls

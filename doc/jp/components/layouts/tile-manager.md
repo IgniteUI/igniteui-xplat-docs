@@ -2,6 +2,7 @@
 title: {Platform} Tile Manager コンポーネント – {ProductName}
 _description: {Platform} Tile Manager コンポーネントを使用すると、コンテンツを個々のタイルに表示できます。
 _keywords: {Platform} Tile Manager, {ProductName}, Infragistics, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, Layout components, {Platform} タイル マネジャー, インフラジスティックス, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, レイアウト コンポーネント
+_license: MIT
 mentionedTypes: ["TileManager", "Tile"]
 _language: ja
 ---

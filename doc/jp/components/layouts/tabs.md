@@ -2,6 +2,7 @@
 title: {Platform} Tabs コントロール | レイアウト コントロール | {ProductName}
 _description: {Platform} タブ コンポーネントを使用すると、ユーザーはタブを上部に配置して、同様のデータ セットを切り替えることができます。今すぐお試しください。
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Tabs Component, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, {Platform} タブ コンポーネント, インフラジスティックス
+_license: MIT
 mentionedTypes: ["Tabs", "Tab", "Icon", "IconButton", "RadioGroup"]
 _language: ja
 ---
