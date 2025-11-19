@@ -2,6 +2,7 @@
 title: {Platform} チャート パフォーマンス | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの {Platform} チャート パフォーマンス
 _keywords: {Platform} Charts, Performance, Infragistics, {Platform} チャート, パフォーマンス, インフラジスティックス
+_license: commercial
 mentionedTypes: ["DomainChart", "CategoryChart", "FinancialChart", "XamDataChart", "FinancialChartVolumeType", "FinancialChartZoomSliderType"]
 namespace: Infragistics.Controls.Charts
 _language: ja

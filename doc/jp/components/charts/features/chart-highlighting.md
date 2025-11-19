@@ -2,6 +2,7 @@
 title: {Platform} チャートのハイライト表示 | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの {Platform} チャートのハイライト表示
 _keywords: {Platform} Charts, Highlighting, Infragistics, {Platform} チャート, ハイライト表示, インフラジスティックス
+_license: commercial
 mentionedTypes: ["CategoryChart"]
 namespace: Infragistics.Controls.Charts
 _language: ja

@@ -2,6 +2,7 @@
 title: {Platform} チャートのデータの選択 | データ視覚化ツール | インフラジスティックス
 _description: インフラジスティックスの {ProductName} チャートでデータの選択をお試しください!
 _keywords: {Platform} charts, chart data, selection, data selection, {ProductName}, Infragistics, {Platform} チャート, チャート データ, 選択, データの選択, インフラジスティックス
+_license: commercial
 mentionedTypes: ["XamDataChart", "Legend", "CategoryChart", "FinancialChart", "XamDataLegend", "DataToolTipLayer"]
 namespace: Infragistics.Controls.Charts
 _language: ja
