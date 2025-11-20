@@ -14,7 +14,7 @@ The {GridLiteTitle} accepts an array of plain objects as a data source. Each gri
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-accepts a `List<T>` as its data source, where `T` is representing your model. Each grid row is the rendered representation of a data record in the array with row cells being controlled by the column configuration.
+The {GridLiteTitle} accepts a `List<T>` as its data source, where `T` is representing your model. Each grid row is the rendered representation of a data record in the array with row cells being controlled by the column configuration.
 <!-- end: Blazor -->
 
 When applying data transformations, such as sorting and filtering, the grid does not modify the original data reference. That is to say, data transformations will not be reflected in the original source. The grid does not track changes to the objects inside the data array, so direct modification of the data objects will not be reflected.

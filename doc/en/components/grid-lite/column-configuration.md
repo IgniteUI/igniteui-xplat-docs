@@ -163,7 +163,7 @@ To change the width of column, use the **`Width`** property of the **`ColumnConf
 ```razor
 {
   ...
-  Width = '250px'
+  Width = "250px"
 }
 ```
 
