@@ -2,6 +2,7 @@
 title: {Platform} の Tailwind 統合
 _description: Ignite UI のテーマ エンジンのカスタム ユーティリティ クラスと Tailwind CSS を統合する方法について説明します。このガイドでは、セットアップの手順を説明し、ユーティリティ ファーストのアプローチでカラー、タイポグラフィ、シャドウのデザイン トークンを使用する方法について説明します。
 _keywords: {ProductName}, Infragistics, Themes, Styling, Tailwind CSS, custom CSS, utility classes, theming engine, typography, shadows, colors, スタイル, テーマ設定, カスタム CSS, ユーティリティ クラス, テーマ設定エンジン, タイポグラフィ, シャドウ, カラー, インフラジスティックス
+_license: MIT
 mentionedTypes: ["ConfigureTheme"]
 _language: ja
 ---
