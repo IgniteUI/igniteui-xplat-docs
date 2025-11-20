@@ -1,13 +1,13 @@
 ---
-title: {Platform} {GridLiteTitle} Sorting - {ProductName}
-_description: Sort operations, sort customization and remote sorting for {GridLiteTitle}. See demos & examples!
+title: {Platform} {GridLiteTitle} Sorting  | {ProductName} | MIT license
+_description: Try {GridLiteTitle} with sort operations, sort customization, and remote sorting for {Platform} {GridLiteTitle}. See demos and examples and build your next app.
 _keywords: sorting, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
-_license: mit
+_license: MIT
 ---
 
-# Sort operations
+# Sort Operations
 
 The {GridLiteTitle} supports sorting operations on its data source. Data sorting is controlled on per-column level, allowing you to have sortable and non-sortable columns, while the grid itself controls certain sort behaviors. By default, sorting on a column is disabled unless explicitly configured with the **`sort`** property of the column configuration object.
 
@@ -49,7 +49,7 @@ The **`sort`** property can be either a simple boolean or a **`ColumnSortConfigu
 
 `sample="/{GridLiteSample}/sort-config-sample", height="600", alt="{Platform} {GridLiteTitle} Sorting Config"`
 
-## Single and multi-sorting
+## Single and Multi-Sorting
 
 The {GridLiteTitle} supports both single and multi-column sorting. Multi-column is enabled by default and can be configured through the **`sortConfiguration`** property of the grid.
 
@@ -64,18 +64,18 @@ grid.sortConfiguration = { multiple: false, triState: true };
 >[!NOTE]
 >The single/multi-column sorting behavior controls how end-users interact with the {GridLiteTitle}. Sorting through the API with multiple expression will still work when single sorting is enabled.
 
-### Tri-state sorting
+### Tri-State Sorting
 
 Additionally, the {GridLiteTitle} supports tri-state sorting and it is enabled by default. Depending on the configured **`triState`**
 value for the grid **`sortConfiguration`** property, end-users will cycle through the following states,
 
-- **Tri-state enabled**
+- **Tri-State Enabled**
 
   - ```typescript
     ascending -> descending -> none -> ascending
     ```
 
-- **Tri-state disabled**
+- **Tri-State Disabled**
 
   - ```typescript
     ascending -> descending -> ascending
@@ -83,7 +83,7 @@ value for the grid **`sortConfiguration`** property, end-users will cycle throug
 
 where **`none`** is the initial state of the data, that is to say with no sorting applied by the grid.
 
-### Sorting indicators
+### Sorting Indicators
 
 When multi-column sort is enabled, the column headers will display a sorting indicator, which is a number representing the order in which the sorting operations were applied.
 
@@ -91,7 +91,7 @@ The following sample shows the grid **`sortConfiguration`** combinations and how
 
 `sample="/{GridLiteSample}/sort-config-grid", height="600", alt="{Platform} {GridLiteTitle} Sorting Config Grid"`
 
-## Sort model
+## Sort Model
 
 The building block for sort operations in the {GridLiteTitle} is the **`SortExpression`** which has the following properties:
 
@@ -161,7 +161,7 @@ grid.clearSort();
 
 <!-- End: React, WebComponents -->
 
-### Initial sorting state
+### Initial Sorting State
 
 The **`sortExpressions`** property is very similar in behavior to the **`sort()`** method call. It exposes a declarative way to control
 sort state in the grid, but the most useful property is the ability to set initial sort state when the {GridLiteTitle} is first rendered.
@@ -216,7 +216,7 @@ In the following sample, when you try to sort the **Name** and **Rating** column
 
 `sample="/{GridLiteSample}/sort-config-events", height="600", alt="{Platform} {GridLiteTitle} Sorting Config Events"`
 
-## Remote sort operations
+## Remote Sort Operations
 
 In cases where sorting must be done remotely or you want to save the current state/data to a server somewhere, the {GridLiteTitle} exposes a hook where you can implement and customize this behavior.
 

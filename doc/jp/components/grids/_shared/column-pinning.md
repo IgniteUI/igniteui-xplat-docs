@@ -302,13 +302,15 @@ const pinningConfig: IgrPinningConfig = { columns: ColumnPinningPosition.End };
 
 `sample="/{ComponentSample}/column-pinning-right-side", height="510", alt="{Platform} {ComponentTitle} 列を右側にピン固定"`
 
-<!-- React, WebComponents -->
+<!-- React, WebComponents, Blazor -->
+### 両側の列のピン固定
+
 各列のピン固定位置を個別に指定できるため、グリッドの両側に列をピン固定して利便性を高め、データ セットの最適化を容易にすることができます。詳細については、以下のデモを参照してください。列をピン固定するには、ヘッダーをクリックして列を選択し、ツールバーに追加されたピン固定ボタンを使用するか、列を別のピン固定された列にドラッグします。
 
 ### デモ
 
 `sample="/{ComponentSample}/column-pinning-both-sides", height="510", alt="{Platform} {ComponentTitle} 列を両側にピン固定"`
-<!-- end: React, WebComponents -->
+<!-- end: React, WebComponents, Blazor -->
 
 
 ## カスタム列ピン固定 UI
