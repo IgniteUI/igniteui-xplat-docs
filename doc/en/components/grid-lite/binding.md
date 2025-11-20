@@ -9,9 +9,9 @@ _license: mit
 
 # {Platform} {GridLiteTitle} Data Binding
 
-<!-- React, Webcomponents -->
+<!-- React, WebComponents -->
 The {GridLiteTitle} accepts an array of plain objects as a data source. Each grid row is the rendered representation of a data record in the array with row cells being controlled by the column configuration.
-<!-- end: React, Webcomponents -->
+<!-- end: React, WebComponents -->
 
 <!-- Blazor -->
 accepts a `List<T>` as its data source, where `T` is representing your model. Each grid row is the rendered representation of a data record in the array with row cells being controlled by the column configuration.
@@ -55,9 +55,9 @@ grid.columns = [...];
     };
 }
 ```
-<!-- React, Webcomponents -->
+<!-- React, WebComponents -->
 If the grid has **`autoGenerate`** enabled, it will "_infer_" the new column configuration only if the old one is reset.
-<!-- end: React, Webcomponents -->
+<!-- end: React, WebComponents -->
 
 <!-- Blazor -->
 If the grid has **`AutoGenerate`** enabled, it will "_infer_" the new column configuration only if the old one is reset.
@@ -84,11 +84,11 @@ grid.data = [];
     grid.Data = new List<T>();
 }
 ```
-<!-- React, Webcomponents -->
+<!-- React, WebComponents -->
 >[!NOTE]
 >The sort/filter states of the {GridLiteTitle} are kept when changing the data source in this manner.
 Usually you will want to reset them by calling either **`clearSort()`** and/or **`clearFilter()`**.
-<!-- end: React, Webcomponents -->
+<!-- end: React, WebComponents -->
 
 <!-- Blazor -->
 >[!NOTE]
