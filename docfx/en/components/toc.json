@@ -396,7 +396,6 @@
         "exclude": ["Angular"],
         "name": "Size",
         "href": "grids/grid/size.md",
-        "status": "NEW",
         "premium": true
       },
       {
@@ -440,7 +439,6 @@
         "exclude": ["Angular"],
         "name": "Customize Icons",
         "href": "grids/grid/icons.md",
-        "status": "NEW",
         "premium": true
       }
     ]
@@ -622,7 +620,6 @@
         "exclude": ["Angular"],
         "name": "Size",
         "href": "grids/hierarchical-grid/size.md",
-        "status": "NEW",
         "premium": true
       },
       {
@@ -679,7 +676,6 @@
     "exclude": ["Angular"],
     "name": "Pivot Grid",
     "href": "grids/pivot-grid/overview.md",
-    "status": ["NEW_REACT"],
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
@@ -692,14 +688,12 @@
         "exclude": ["Angular"],
         "name": "State Persistence",
         "href": "grids/pivot-grid/state-persistence.md",
-        "status": "NEW",
         "premium": true
       },
       {
         "exclude": ["Angular", "WebComponents"],
         "name": "Features",
         "href": "grids/pivot-grid/features.md",
-        "status": ["NEW_REACT"],
         "premium": true
       },
       {
@@ -909,51 +903,59 @@
         "exclude": ["Angular"],
         "name": "Size",
         "href": "grids/tree-grid/size.md",
-        "status": "NEW"
+        "premium": true
 
       },
       {
         "exclude": ["Angular"],
         "name": "Sizing",
-        "href": "grids/tree-grid/sizing.md"
+        "href": "grids/tree-grid/sizing.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Sorting",
-        "href": "grids/tree-grid/sorting.md"
+        "href": "grids/tree-grid/sorting.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "State Persistence",
         "href": "grids/tree-grid/state-persistence.md",
-        "status": ""
+        "status": "",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Summaries",
-        "href": "grids/tree-grid/summaries.md"
+        "href": "grids/tree-grid/summaries.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Toolbar",
-        "href": "grids/tree-grid/toolbar.md"
+        "href": "grids/tree-grid/toolbar.md",
+        "premium": true
       },
       {
         "exclude": ["Angular"],
         "name": "Virtualization and performance",
-        "href": "grids/tree-grid/virtualization.md"
+        "href": "grids/tree-grid/virtualization.md",
+        "premium": true
       },
       {
         "exclude": ["Angular", "React", "Blazor"],
         "name": "Load On Demand",
         "href": "grids/tree-grid/load-on-demand.md",
-        "status": ""
+        "status": "",
+        "premium": true
       },
       {
         "exclude": ["Angular", "React"],
         "name": "Live Data / Real-Time",
         "href": "grids/tree-grid/live-data.md",
-        "status": ""
+        "status": "",
+        "premium": true
       }
     ]
   },
@@ -2137,8 +2139,7 @@
   {
     "exclude": ["Angular"],
     "name": "Banner",
-    "href": "notifications/banner.md",
-    "status": "NEW"
+    "href": "notifications/banner.md"
   },
   {
     "exclude": ["Angular"],
