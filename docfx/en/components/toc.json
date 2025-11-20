@@ -1338,6 +1338,11 @@
           "name": "Chart Trendlines",
           "href": "charts/features/chart-trendlines.md",
           "status": "UPDATED"
+        },
+        {
+          "name": "Chart User Annotations",
+          "href": "charts/features/chart-user-annotations.md",
+          "status": "PREVIEW"
         }
       ]
   },
