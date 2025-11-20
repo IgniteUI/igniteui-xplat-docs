@@ -26,7 +26,9 @@ To install the Dock Manager package execute the following command:
 ```cmd
 npm install --save {PackageDockManager}
 ```
+<!-- end: Angular, React, WebComponents -->
 
+<!-- Angular, WebComponents -->
 Then it is necessary to import and call the **defineCustomElements()** function:
 
 ```ts
@@ -38,7 +40,7 @@ defineCustomElements();
 
 <div class="divider--half"></div>
 
-<!-- WebComponents -->
+<!-- React, WebComponents -->
 
 ## Usage
 
@@ -47,6 +49,11 @@ Once the Dock Manager is imported, you can add it on the page:
 ```html
 <igc-dockmanager id="dockManager">
 </igc-dockmanager>
+```
+
+```tsx
+<IgrDockManager id="dockManager">
+</IgrDockManager>
 ```
 
 > [!Note]
@@ -75,6 +82,27 @@ this.dockManager.layout = {
 };
 ```
 
+```tsx
+import {  IgrDockManager, IgrDockManagerPaneType, IgrSplitPaneOrientation } from 'igniteui-react-dockmanager';
+
+// ...
+
+this.dockManager = document.getElementById("dockManager") as IgrDockManager;
+this.dockManager.layout = {
+    rootPane: {
+        type: IgrDockManagerPaneType.splitPane,
+        orientation: IgrSplitPaneOrientation.horizontal,
+        panes: [
+            {
+                type: IgrDockManagerPaneType.contentPane,
+                contentId: 'content1',
+                header: 'Pane 1'
+            }
+        ]
+    }
+};
+```
+
 To load the content of the panes, the Dock Manager uses [slots](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot). The [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot) attribute of the content element should match the `ContentId` of the content pane in the layout configuration. It is highly recommended to set width and height of the content elements to **100%** for predictable response when the end-user is resizing panes.
 
 ```html
@@ -83,13 +111,23 @@ To load the content of the panes, the Dock Manager uses [slots](https://develope
 </igc-dockmanager>
 ```
 
+```tsx
+<IgrDockManager id="dockManager">
+    <div slot="content1" style={{ width: '100%', height: '100%' }}>Content 1</div>
+</IgrDockManager>
+```
+
 The Dock Manager defines several pane types:
 * `ContentPane`
 * `SplitPane`
 * `TabGroupPane`
 * `DocumentHost`
 
-Each type of pane has a `Size` property. Depending on the parent orientation the size may affect either the width or the height of the pane. By default, the size of a pane is relative to the sizes of its sibling panes and defaults to 100. If you have two sibling panes, where the first one has its size set to 200 and the second one - size set to 100, the first will be twice the size of the second one and these two panes would fill up all the available space. If the absolute size of their parent is 900px, they will be sized to 600px and 300px respectively. If, for certain panes, you want to specify their sizes in pixels, instead of relying on the relative distribution of all the available space, you should set the `useFixedSize` of the parent split pane. For more information on this refer to [Split Panes Fixed Size Mode](dock-manager-customization.md#split-panes-fixed-size-mode) topic.
+Each type of pane has a `Size` property. Depending on the parent orientation the size may affect either the width or the height of the pane. By default, the size of a pane is relative to the sizes of its sibling panes and defaults to 100. If you have two sibling panes, where the first one has its size set to 200 and the second one - size set to 100, the first will be twice the size of the second one and these two panes would fill up all the available space. If the absolute size of their parent is 900px, they will be sized to 600px and 300px respectively. If, for certain panes, you want to specify their sizes in pixels, instead of relying on the relative distribution of all the available space, you should set the `useFixedSize` of the parent split pane.
+
+<!-- WebComponents -->
+ For more information on this refer to [Split Panes Fixed Size Mode](dock-manager-customization.md#split-panes-fixed-size-mode) topic.
+ <!-- end: WebComponents -->
 
 The end-user can perform the following actions to customize the layout at runtime:
 * Pin/unpin a pane
@@ -114,6 +152,14 @@ const contentPane: IgcContentPane = {
 }
 ```
 
+```tsx
+const contentPane: IgrContentPane = {
+    type: IgrDockManagerPaneType.contentPane,
+    contentId: 'content1',
+    header: 'Pane 1'
+}
+```
+
 The `Header` property is used to provide a text header for the content pane. This text is rendered at several places: the top content pane header, the tab header if the pane is in a tab group and the unpinned header if the pane is unpinned. You can provide a custom slot content for each of these places respectively using the `HeaderId`, `TabHeaderId` and `UnpinnedHeaderId` properties. If any of these properties is not set, the `Header` text is used. Here is how to provide a tab header slot content:
 
 ```html
@@ -132,11 +178,35 @@ const contentPane: IgcContentPane = {
 }
 ```
 
+```tsx
+<IgrDockManager id="dockManager">
+    <div slot="content1" style={{ width: '100%', height: '100%' }}>Content 1</div>
+    <span slot="tabHeader1">Pane 1 Tab</span>
+</IgrDockManager>
+```
+
+```tsx
+const contentPane: IgrContentPane = {
+    type: IgrDockManagerPaneType.contentPane,
+    contentId: 'content1',
+    header: 'Pane 1',
+    tabHeaderId: 'tabHeader1'
+}
+```
+
 When a pane is unpinned, it appears as a tab header at one of the edges of the Dock Manager. If the end-user selects it, its content appears over the docked pinned panes. To unpin a content pane, set its `IsPinned` property to **false**.
 
 ```ts
 const contentPane = {
     type: IgcDockManagerPaneType.contentPane,
+    contentId: 'content1',
+    header: 'Pane 1',
+    isPinned: false
+}
+```
+```tsx
+const contentPane = {
+    type: IgrDockManagerPaneType.contentPane,
     contentId: 'content1',
     header: 'Pane 1',
     isPinned: false
@@ -156,6 +226,15 @@ To restrict the user interaction with the content pane and its content, you can 
 By default, when you close a pane it gets removed from the `Layout` object. However, in some cases you would want to temporary hide the pane and show it later again. In order to do that without changing the `Layout` object you can use the `Hidden` property of the content pane. Setting the property to **true** will hide it from the UI, but it will remain in the `Layout` object. In order to override the default close behavior you can subscribe to the `PaneClose` event like this:
 
 ```ts
+this.dockManager.addEventListener('paneClose', ev => {
+    for (const pane of ev.detail.panes) {
+        pane.hidden = true;
+    }
+    ev.preventDefault();
+});
+```
+
+```tsx
 this.dockManager.addEventListener('paneClose', ev => {
     for (const pane of ev.detail.panes) {
         pane.hidden = true;
@@ -187,6 +266,25 @@ const splitPane: IgcSplitPane = {
 }
 ```
 
+```tsx
+const splitPane: IgrSplitPane = {
+    type: IgrDockManagerPaneType.splitPane,
+    orientation: IgrSplitPaneOrientation.horizontal,
+    panes: [
+        {
+            type: IgrDockManagerPaneType.contentPane,
+            contentId: 'content1',
+            header: 'Pane 1'
+        },
+        {
+            type: IgrDockManagerPaneType.contentPane,
+            contentId: 'content2',
+            header: 'Pane 2'
+        }
+    ]
+}
+```
+
 The split pane may contain child panes of all pane types including other split panes.
 
 By default, if the split pane is empty it is not displayed. Yet if you would like to change that behavior you can set its `AllowEmpty` property to true and the split pane will be presented in the UI even when there is no panes inside it.
@@ -206,6 +304,24 @@ const tabGroupPane: IgcTabGroupPane = {
         },
         {
             type: IgcDockManagerPaneType.contentPane,
+            contentId: 'content2',
+            header: 'Pane 2'
+        }
+    ]
+}
+```
+
+```tsx
+const tabGroupPane: IgrTabGroupPane = {
+    type: IgrDockManagerPaneType.tabGroupPane,
+    panes: [
+        {
+            type: IgrDockManagerPaneType.contentPane,
+            contentId: 'content1',
+            header: 'Pane 1'
+        },
+        {
+            type: IgrDockManagerPaneType.contentPane,
             contentId: 'content2',
             header: 'Pane 2'
         }
@@ -250,6 +366,33 @@ const docHost: IgcDocumentHost = {
 }
 ```
 
+```tsx
+const docHost: IgrDocumentHost = {
+    type: IgrDockManagerPaneType.documentHost,
+    rootPane: {
+        type: IgrDockManagerPaneType.splitPane,
+        orientation: IgrSplitPaneOrientation.horizontal,
+        panes: [
+            {
+                type: IgrDockManagerPaneType.tabGroupPane,
+                panes: [
+                    {
+                        type: IgrDockManagerPaneType.contentPane,
+                        contentId: 'content1',
+                        header: 'Grid'
+                    },
+                    {
+                        type: IgrDockManagerPaneType.contentPane,
+                        contentId: 'content4',
+                        header: "List"
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
+
 ### Floating Pane
 
 The floating pane is a split pane rendered above all other ones in a floating window. The floating pane definitions are stored in the `FloatingPanes` property of the `Layout`. Here is how to add a floating pane with a single content pane inside:
@@ -279,6 +422,31 @@ const layout: IgcDockManagerLayout = {
 };
 ```
 
+```tsx
+const layout: IgrDockManagerLayout = {
+    rootPane: {
+        // ...
+    },
+    floatingPanes: [
+        {
+            type: IgrDockManagerPaneType.splitPane,
+            orientation: IgrSplitPaneOrientation.horizontal,
+            floatingLocation: { x: 80, y: 80 },
+            floatingWidth: 200,
+            floatingHeight: 150,
+            floatingResizable: true,
+            panes: [
+                {
+                    type: IgrDockManagerPaneType.contentPane,
+                    contentId: 'content1',
+                    header: 'Floating Pane 1'
+                }
+            ]
+        }
+    ]
+};
+```
+
 The `FloatingLocation`, `FloatingWidth` and `FloatingHeight` properties represent absolute dimensions in pixels. Please note that these properties are applied only for the split panes in the `FloatingPanes` array.
 
 With the `FloatingResizable` and
@@ -289,6 +457,13 @@ With the `FloatingResizable` and
 The Dock Manager component highlights the content pane which contains the focus and exposes it in its `ActivePane` property. You can programmatically change the active pane by setting the property. You can also listen for changes of the `ActivePane` property by subscribing to the `ActivePaneChanged` event:
 
 ```ts
+this.dockManager.addEventListener('activePaneChanged', ev => {
+    console.log(ev.detail.oldPane);
+    console.log(ev.detail.newPane);
+});
+```
+
+```tsx
 this.dockManager.addEventListener('activePaneChanged', ev => {
     console.log(ev.detail.oldPane);
     console.log(ev.detail.newPane);
@@ -333,9 +508,19 @@ const contentPane = splitPane.panes[0] as IgcContentPane;
 this.dockManager.removePane(contentPane);
 ```
 
+```tsx
+const splitPane = this.dockManager.layout.rootPane.panes[0] as IgrSplitPane;
+const contentPane = splitPane.panes[0] as IgrContentPane;
+this.dockManager.removePane(contentPane);
+```
+
 This will only update the layout object. To trigger an update of the Dock Manager so the changes are reflected in the UI, the layout object should be re-assigned:
 
 ```ts
+this.dockManager.layout = { ...this.dockManager.layout };
+```
+
+```tsx
 this.dockManager.layout = { ...this.dockManager.layout };
 ```
 
@@ -355,6 +540,19 @@ private loadLayout() {
 }
 ```
 
+```tsx
+private savedLayout: string;
+
+private saveLayout() {
+    this.savedLayout = JSON.stringify(this.dockManager.layout);
+}
+
+private loadLayout() {
+    this.dockManager.layout = JSON.parse(this.savedLayout);
+}
+```
+
+<!-- WebComponents -->
 ### Adding Panes At Runtime
 
 Contents and panes can be added to the `Layout` at runtime. In the example below, you can see how you can add content, document and floating panes.
@@ -363,14 +561,14 @@ Contents and panes can be added to the `Layout` at runtime. In the example below
 `sample="/layouts/dock-manager/add-content-runtime", height="700", alt="{Platform} Dock Manager Add Content Runtime Example"`
 
 
-
 <div class="divider--half"></div>
+<!-- end: WebComponents -->
 
 ### Events
 
 The Dock Manager component raises events when specific end-user interactions are performed for example closing, pinning, resizing and dragging a pane. You can find the full list of Dock Manager events [here]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html).
 
-<!-- end: WebComponents -->
+<!-- end: React, WebComponents -->
 
 <div class="divider--half"></div>
 
@@ -423,6 +621,33 @@ Let's utilize these slots and parts to create a customized Dock Manager layout. 
         <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
     </button>
 </igc-dockmanager>
+```
+
+```tsx
+<IgrDockManager id="dockManager">
+    <div slot="content1" class="dockManagerContent">Content 1</div>
+    <div slot="content2" class="dockManagerContent">Content 2</div>
+    <div slot="content3" class="dockManagerContent">Content 3</div>
+    <!-- ... -->
+
+    <button slot="closeButton">x</button>
+
+    <button slot="maximizeButton">
+        <img src="https://www.svgrepo.com/show/419558/arrow-top-chevron-chevron-top.svg" alt="" />
+    </button>
+
+    <button slot="minimizeButton">
+        <img src="https://www.svgrepo.com/show/419557/bottom-chevron-chevron-down.svg" alt="" />
+    </button>
+
+    <button slot="pinButton">
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+    </button>
+
+    <button slot="unpinButton">
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+    </button>
+</IgrDockManager>
 ```
 
 Then, we will use the exposed parts in our stylesheet. This way we have full control of the component's styling:
@@ -640,12 +865,13 @@ In the following example, we demonstrate the ability of customizing the Dock Man
 | `horizontal` | Indicates a horizontal position. Applies to `splitter-handle`. |
 | `vertical` | Indicates a vertical position. Applies to `splitter-handle`. |
 
-<!-- WebComponents -->
+<!-- React, WebComponents -->
 
 ### Themes
 
 The Dock Manager comes with a light and a dark theme. The light theme is the default one. To change it to dark, you only need to import the **igc.themes.css** file in your css and add the **dark-theme** class to the Dock Manager or any of its parents:
 
+<!-- WebComponents -->
 ```scss
 @import '~igniteui-dockmanager/dist/collection/styles/igc.themes';
 ```
@@ -653,10 +879,25 @@ The Dock Manager comes with a light and a dark theme. The light theme is the def
 ```html
 <igc-dockmanager class="dark-theme">
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+```scss
+@import 'igniteui-dockmanager/dist/collection/styles/igc.themes';
+```
+
+```tsx
+<IgrDockManager class="dark-theme">
+```
+<!-- end: React -->
+
 
 ## Localization
 
-The Dock Manager component supports localizing the strings used in the context menus, tooltips and aria attributes. By default, the Dock Manager detects the language of the page by searching for a [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute on any of its parents. If the [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute is not set or is set to a value which the Dock Manager does not support, the default language used is [English (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN). The Dock Manager provides built-in localized strings for the following languages: [English (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN), [Japanese (jp)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsJP), [Korean (ko)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsKO) and [Spanish (es)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsES). In order to provide resource strings for any other language use the [addResourceStrings]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#addResourceStrings) method:
+The Dock Manager component supports localizing the strings used in the context menus, tooltips and aria attributes. By default, the Dock Manager detects the language of the page by searching for a [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute on any of its parents. If the [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute is not set or is set to a value which the Dock Manager does not support, the default language used is [English (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN). The Dock Manager provides built-in localized strings for the following languages: [English (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN), [Japanese (jp)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsJP), [Korean (ko)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsKO) and [Spanish (es)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsES).
+
+<!-- WebComponents -->
+In order to provide resource strings for any other language use the [addResourceStrings]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#addResourceStrings) method:
 
 ```ts
 import { addResourceStrings } from 'igniteui-dockmanager';
@@ -668,10 +909,11 @@ const dockManagerStringsFr: IgcDockManagerResourceStrings = {
 
 addResourceStrings('fr', dockManagerStringsFr);
 ```
+<!-- end: WebComponents -->
 
 The Dock Manager exposes `ResourceStrings` property which allows you to modify the strings. If you set the `ResourceStrings` property, the Dock Manager will use your strings no matter what [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute is set.
 
-<!-- end: WebComponents -->
+<!-- end: React, WebComponents -->
 
 ## API References
 
