@@ -26,7 +26,9 @@ To install the Dock Manager package execute the following command:
 ```cmd
 npm install --save {PackageDockManager}
 ```
+<!-- end: Angular, React, WebComponents -->
 
+<!-- Angular, WebComponents -->
 Then it is necessary to import and call the **defineCustomElements()** function:
 
 ```ts
@@ -34,7 +36,7 @@ import { defineCustomElements } from 'igniteui-dockmanager/loader';
 
 defineCustomElements();
 ```
-<!-- end: Angular, React, WebComponents -->
+<!-- end: Angular, WebComponents -->
 
 <div class="divider--half"></div>
 
