@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Cell Merging - {ProductName}
 _description: Position and size columns in a more powerful way, using the multi-row layout functionality in the {ProductName} for {Platform} {ComponentTitle}. Check out examples and demos!
 _keywords: cell merging, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls

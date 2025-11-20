@@ -2,6 +2,7 @@
 title: {Platform} Sparkline | Data Visualization Tools | Infragistics
 _description: Use Infragistics' {Platform} sparkline chart control to render in a small scale layout such as a grid cell or stand alone. Learn about the {ProductName} sparkline chart configurable elements!
 _keywords: Sparkline, {ProductName}, Infragistics, WinLoss, Area, Column
+_license: commercial
 mentionedTypes: ["XamSparkline", "SparklineDisplayType", "TrendLineType"]
 namespace: Infragistics.Controls.Charts
 ---

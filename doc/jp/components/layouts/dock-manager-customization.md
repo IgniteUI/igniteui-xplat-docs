@@ -2,6 +2,7 @@
 title: {Platform} ドック マネージャー | カスタマイズ | インフラジスティックス
 _description: Infragistics の {Platform} ドック マネージャー コンポーネントを使用して、カスタマイズ機能を備えたペインを通じてレイアウトを管理します。{ProductName} ドック マネージャーのチュートリアルを是非お試しください!
 _keywords: dock manager, layout, customization, {ProductName}, ドック マネージャー、レイアウト、カスタマイズ
+_license: commercial
 mentionedTypes: ["DockManager", "ContentPane"]
 _language: ja
 ---

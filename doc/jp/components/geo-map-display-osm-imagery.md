@@ -2,6 +2,7 @@
 title: {Platform} マップ | データ可視化ツール | Open Street Maps 画像の表示 | インフラジスティックス
 _description: インフラジスティックスの {Platform} を使用して OSM Maps からの画像を表示します。{ProductName} マップ チュートリアルを是非お試しください!
 _keywords: {Platform} map, OSM, {ProductName}, Infragistics, imagery tile source, map background, {Platform} マップ, インフラジスティックス, 画像タイル ソース, マップ背景
+_license: commercial
 mentionedTypes: ["XamGeographicMap"]
 _language: ja
 ---

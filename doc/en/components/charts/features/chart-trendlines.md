@@ -2,6 +2,7 @@
 title: {Platform} Chart Trendlines | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Chart Trendlines
 _keywords: {Platform} Charts, Trendlines, Infragistics
+_license: commercial
 mentionedTypes: ["DomainChart", "FinancialChart", "CategoryChart", "XamDataChart", "TrendLineType"]
 namespace: Infragistics.Controls.Charts
 ---

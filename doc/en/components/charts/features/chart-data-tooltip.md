@@ -2,6 +2,7 @@
 title: {Platform} Chart Data Tooltip | Data Visualization Tools | Infragistics
 _description: Use Infragistics {ProductName} chart with the data tooltip layer!
 _keywords: {Platform} charts, chart legend, legend, legend types, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["XamDataChart", "Legend", "CategoryChart", "FinancialChart", "XamDataLegend", "DataToolTipLayer"]
 namespace: Infragistics.Controls.Charts
 ---

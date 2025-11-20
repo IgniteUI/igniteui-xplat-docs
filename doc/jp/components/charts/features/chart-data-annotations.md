@@ -2,6 +2,7 @@
 title: {Platform} チャート データの注釈 | データ可視化 | インフラジスティックス
 _description: Infragistics' {Platform} チャート データの注釈
 _keywords: {Platform} Charts, Data Annotations, Infragistics, {Platform} チャート, データの注釈, インフラジスティックス
+_license: commercial
 mentionedTypes: ["DomainChart", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer"]
 namespace: Infragistics.Controls.Charts
 _language: ja

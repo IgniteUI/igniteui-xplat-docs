@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Column Pinning - {ProductName}
 _description: Want to use the Pinning feature of the {ProductName} when you develop your next app? Easily lock column or change column order with rich API.
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls

@@ -27,6 +27,11 @@
     "status": ""
   },
   {
+    "exclude": ["Angular"],
+    "name": "オープンソース vs プレミアム",
+    "href": "general-open-source-vs-premium.md"
+  },
+  {
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "作業の開始",
     "status": "",

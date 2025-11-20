@@ -2,6 +2,7 @@
 title: {Platform} スプレッドシート | データ検証 | インフラジスティックス
 _description: インフラジスティックスの {Platform} スプレッドシート コントロールを使用して、組み込みのデータ検証を設定します。{ProductName} スプレッドシートのサンプルを是非お試しください!
 _keywords: Excel Spreadsheet, data validation, {ProductName}, Infragistics, Excel スプレッドシート、データ検証, インフラジスティックス
+_license: commercial
 _language: ja
 mentionedTypes: ["Spreadsheet"]
 ---

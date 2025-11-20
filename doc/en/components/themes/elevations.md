@@ -2,6 +2,7 @@
 title: {Platform} Styling and Themes | {Platform} Elevations | Infragistics
 _description:
 _keywords: {ProductName}, Infragistics, Elevations, Styling
+_license: MIT
 mentionedTypes: ["Elevations"]
 ---
 

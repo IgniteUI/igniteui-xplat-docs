@@ -2,6 +2,7 @@
 title: {Platform} Chart Data Filtering | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Chart Data Filtering
 _keywords: {Platform} Charts, Filtering, Infragistics
+_license: commercial
 mentionedTypes: ["CategoryChart"]
 namespace: Infragistics.Controls.Charts
 ---

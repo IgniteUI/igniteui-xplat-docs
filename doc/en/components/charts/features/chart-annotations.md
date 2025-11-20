@@ -2,6 +2,7 @@
 title: {Platform} Chart Annotations | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Chart Annotations
 _keywords: {Platform} Charts, Annotations, Infragistics
+_license: commercial
 mentionedTypes: ["DomainChart", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer"]
 namespace: Infragistics.Controls.Charts
 ---

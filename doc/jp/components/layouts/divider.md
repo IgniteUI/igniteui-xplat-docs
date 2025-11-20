@@ -2,6 +2,7 @@
 title: {Platform} Divider | レイアウト コントロール | インフラジスティックス
 _description: Infragistics の {Platform} Divider コンポーネントを使用すると、コンテンツ間の区切りとして水平線または垂直線を簡単に作成でき、ページ上の情報をより整理して表示できます。
 _keywords: {ProductName}, UI controls, {Platform} widgets, Web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} DIvider components, {Platform} Divider controls, UI コントロール, {Platform} ウィジェット, Web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Divider コンポーネント, {Platform} Divider コントロール
+_license: MIT
 mentionedTypes: ["Divider"]
 _language: ja
 ---

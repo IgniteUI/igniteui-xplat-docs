@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} ソート - {ProductName}
 _description: {ProductName} {ComponentTitle} の {Platform} ソート機能を使用して、ソート可能な列の組み合わせを構成し、データ レコードの表示順序を変更します。
 _keywords: {Platform} sort, {Platform}, {ProductName}, Infragistics, {Platform} ソート, インフラジスティックス
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls

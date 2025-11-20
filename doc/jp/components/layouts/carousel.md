@@ -2,6 +2,7 @@
 title: {Platform} Carousel | インフラジスティックス
 _description: {ProductName} Carousel コンポーネントを使用すると、スライド、カード、またはページに基づいたインターフェイスのコレクション間を移動できます。今すぐお試しください。
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Carousel component, {Platform} Carousel control, {ProductName}, UI コントロール, {Platform} ウィジェット, Web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Carousel コンポーネント, {Platform} Carousel コントロール
+_license: MIT
 mentionedTypes: ["Carousel"]
 _language: ja
 ---

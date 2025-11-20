@@ -2,6 +2,7 @@
 title: {Platform} 日時入力 | インフラジスティックス
 _description: インフラジスティックスの {Platform} 日時入力を使用すると、ユーザーは入力要素の日付と時刻を編集できます。
 _keywords: {Platform} input, {ProductName}, Infragistics, {Platform} 入力, インフラジスティックス
+_license: MIT
 mentionedTypes: ["DateTimeInput"]
 _language: ja
 ---

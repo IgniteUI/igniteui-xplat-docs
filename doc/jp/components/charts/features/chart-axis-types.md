@@ -2,6 +2,7 @@
 title: {Platform} 軸タイプ | データの視覚化 | インフラジスティックス
 _description: インフラジスティックスの {Platform} 軸タイプ
 _keywords: {Platform} 軸, オプション, タイトル, ラベル, ギャップ, オーバーラップ, 範囲, スケール, モード, インフラジスティックス
+_license: commercial
 mentionedTypes: ["DomainChart", "CategoryChart", "FinancialChart", "FinancialChartYAxisMode", "FinancialChartXAxisMode", "NumericYAxis", "CategoryXAxis"]
 namespace: Infragistics.Controls.Charts
 _language: ja

@@ -2,6 +2,7 @@
 title: {Platform} ドック マネージャー | レイアウト コントロール | インフラジスティックス
 _description: インフラジスティックスの {Platform} ドック マネージャー コンポーネントを使用して、ペインでレイアウトを管理し、ペインのピン固定、サイズ変更、移動、非表示をカスタマイズします。{ProductName} ドック マネージャー チュートリアルを是非お試しください!
 _keywords: dock manager, layout, {ProductName}, Infragistics, ドック マネージャー, レイアウト, インフラジスティックス
+_license: commercial
 _language: ja
 mentionedTypes: ["DockManager", "DocumentHost", "DockManagerLayout", "DockManagerPaneType", "ContentPane", "SplitPane", "TabGroupPane", "PinnedLocation", "PaneHeaderElement"]
 ---

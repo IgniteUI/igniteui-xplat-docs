@@ -2,6 +2,7 @@
 title: {Platform} Dock Manager | Desktop Integration | Infragistics
 _description: Use Infragistics' {Platform} dock manager component to manage the layout of multi-window Electron desktop application. Check out {ProductName} dock manager tutorials!
 _keywords: dock manager, layout, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["DockManager", "DocumentHost", "DockManagerLayout", "DockManagerPaneType", "ContentPane", "SplitPane", "TabGroupPane", "PinnedLocation", "PaneHeaderElement"]
 ---
 

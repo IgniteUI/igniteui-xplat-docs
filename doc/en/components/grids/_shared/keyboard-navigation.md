@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Keyboard Navigation - {ProductName}
 _description: Learn how to use {ComponentTitle} Keyboard Navigation with {ProductName}. With Keyboard interaction, users can quickly navigate between cells, rows, and columns.
 _keywords: keyboard navigation, {ProductName}, infragistics
+_license: commercial
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 mentionedTypes: ["GridBaseDirective"]
 namespace: Infragistics.Controls

@@ -2160,6 +2160,7 @@ export class MarkdownTransformer {
             node.new = undefined;
             node.preview = undefined;
             node.beta = undefined;
+            node.premium = undefined;
 
             // recursively convert items nodes if they exist
             if (node.items !== undefined &&
@@ -2266,6 +2267,9 @@ export class MarkdownTransformer {
 
                 } else { //if (node.header === undefined) {
                     yml += tab + "  new: false" + "\n";
+                }
+                if (node.premium) {
+                    yml += tab + "  premium: true" + "\n";
                 }
 
             }
@@ -2415,6 +2419,7 @@ export class TocNode {
     public updated?: boolean;
     public preview?: boolean;
     public beta?: boolean;
+    public premium?: boolean;
     public items?: TocNode[];
     public exclude?: string[];
 

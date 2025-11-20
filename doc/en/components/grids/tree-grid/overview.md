@@ -2,6 +2,7 @@
 title: {Platform} Tree Grid Component - {ProductName} by Infragistics
 _description: The {ProductName} Tree Grid is used to display and manipulate hierarchical or flat data with ease. Quickly bind your data with very little coding. Try it for FREE
 _keywords: {Platform} tree grid, igniteui for {Platform}, infragistics
+_license: commercial
 mentionedTypes: ["GridBaseDirective", "TreeGrid", "Column"]
 namespace: Infragistics.Controls
 ---

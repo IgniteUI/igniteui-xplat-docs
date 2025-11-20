@@ -2,6 +2,7 @@
 title: {Platform} Snackbar | Infragistics
 _description: With {ProductName} Snackbar component, developers can easily integrate a brief, single-line message within mobile and desktop applications.
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Snackbar components
+_license: MIT
 mentionedTypes: ["Snackbar"]
 ---
 

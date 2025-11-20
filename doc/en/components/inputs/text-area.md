@@ -3,6 +3,7 @@ title: {Platform} Text Area | Data Visualization Tools | Infragistics
 _description: Infragistics' {Platform} Text Area is a component where the user can enter a sizable amount of free-form text.
 _keywords: {ProductName}, UI controls, {Platform} widgets, Web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Input, {Platform} Textarea components, {Platform} Textarea controls
 mentionedTypes: ["Input", "Icon", "Textarea", "Toast"]
+_license: MIT
 ---
 # {Platform} Text Area Overview
 
