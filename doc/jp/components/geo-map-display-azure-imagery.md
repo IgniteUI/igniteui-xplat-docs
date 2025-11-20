@@ -2,6 +2,7 @@
 title: {Platform} マップ | データ可視化ツール | Azure 画像の表示 | インフラジスティックス
 _description: Infragistics の {Platform} を使用して Microsoft Azure Maps からの画像を表示します。{Platform} マップのチュートリアルを是非お試しください!
 _keywords: {Platform} map, azure maps, {ProductName}, Infragistics, imagery tile source, map background, {Platform} マップ, azure マップ, インフラジスティックス, 画像タイル ソース, マップ背景
+_license: commercial
 mentionedTypes: ["XamGeographicMap", "AzureMapsImagery", "GeographicTileSeries"]
 _language: ja
 ---

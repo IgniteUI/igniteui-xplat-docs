@@ -2,6 +2,7 @@
 title: {Platform} Charts & Graphs Library | {ProductName}
 _description: {ProductName} Charts & Graphs is an extensive library of data visualizations that enable stunning, interactive charts for your web and mobile apps. Try for FREE.
 _keywords: {Platform} Charts, Chart, Infragistics
+_license: commercial
 mentionedTypes: ["DomainChart", "FinancialChart", "CategoryChart", "XamDataChart", "CategoryChartType"]
 ---
 # {Platform} Charts & Graphs Overview
@@ -32,7 +33,6 @@ The {Platform} product has over 65 different chart and graph types for any scena
 - Real-Time Streaming Support
 - High-Volume (Millions of Data Points) Support
 - Trends Lines and other Data Analysis features
-
 Built with a modular design of axis, markers, series, legend, and annotation layers, the {Platform} chart makes it easy to design a render any type of data story. Build a simple chart with a single data series, or build more complex data stories with multiple series of data, with multiple axis in composite views.
 
 ## Category and Financial Chart vs. Data Chart

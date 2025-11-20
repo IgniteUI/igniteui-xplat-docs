@@ -1,7 +1,8 @@
 ---
-title: {Platform} Chat  
+title: {Platform} Chat | {ProductName}
 _description: {ProductName} Chat を使用すると、メッセージ、添付、サジェスト、入力中インジケーター、カスタム テンプレートのサポートにより、インタラクティブなメッセージング エクスペリエンスを構築できます。
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Chat components, {Platform} Chat controls, UI コントロール, {Platform} ウィジェット, Web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Chat コンポーネント, {Platform} Chat コントロール
+_license: MIT
 mentionedTypes: ["Chat"]
 _language: ja
 ---
@@ -16,29 +17,37 @@ _language: ja
 
 ## インストール
 
-<!-- WebComponents -->
-
 {ProductName} を使用するには、以下のコマンドでインストールします。
-
+<!-- WebComponents -->
 ```cmd
 npm install {PackageWebComponents}
 ```
-
+<!-- end: WebComponents -->
+<!-- React -->
+```cmd
+npm install igniteui-react
+```
+<!-- end: React -->
 インストール後、プロジェクトにコンポーネントをインポートし、カスタム要素として登録すると利用可能になります。
-
+<!-- WebComponents -->
 ```ts
 import { defineComponents, IgcChatComponent } from "igniteui-webcomponents";
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcChatComponent);
 ```
-
+<!-- end: WebComponents -->
+<!-- React -->
+```tsx
+import { IgrChat } from "igniteui-react";
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+```
+<!-- end: React -->
 CSS ファイルにはデフォルト テーマが含まれています。`Chat` をアプリケーションのブランドに合わせて変更したい場合は、別のテーマに置き換えたり、カスタム テーマを作成したりできます。
 
 ## 使用方法
-
-最も簡単な使用方法は、HTML に直接 `Chat` を宣言することです。
-
+最も簡単な使用方法は、以下のように直接 `Chat` を宣言することです。
+<!-- WebComponents -->
 ```ts
 const options: IgcChatOptions = {
   currentUserId: 'me',
@@ -49,10 +58,26 @@ const options: IgcChatOptions = {
 <igc-chat id="myChat" .options=${options}>
 </igc-chat>
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```tsx
+import { IgrChat, IgrChatOptions } from 'igniteui-react';
+
+const options: IgrChatOptions = {
+  currentUserId: 'me',
+  headerText: 'Support Chat',
+};
+
+return (
+  <IgrChat options={options} />
+);
+```
+<!-- end: React -->
 
 ここで、`currentUserId` プロパティは、どのメッセージが「送信済み」 (現在のユーザー) で、どれ「受信済み」 (他のユーザー) かをコンポーネントに判定します。`headerText` はチャット ウィンドウのタイトルを提供します。
 
 レンダリング後は、プログラムからメッセージを追加することも可能です。
+<!-- WebComponents -->
 
 ```ts
 const chat = document.getElementById('myChat');
@@ -65,7 +90,34 @@ const newMessage = {
 chat.messages = [...chat.messages, newMessage ];
 
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```tsx
+import { useRef } from 'react';
+import { IgrChat } from 'igniteui-react';
 
+const ChatExample = () => {
+  const chatRef = useRef<IgrChat>(null);
+
+  const sendMessage = () => {
+    const newMessage = {
+      id: '1',
+      sender: 'me',
+      text: 'Hello! How can I help you?',
+      timestamp: Date.now().toString()
+    };
+    chatRef.current!.messages = [...chatRef.current!.messages, newMessage];
+  };
+
+  return (
+    <>
+      <IgrChat ref={chatRef} options={{ currentUserId: 'me', headerText: 'Support Chat' }} />
+      <button onClick={sendMessage}>Send Message</button>
+    </>
+  );
+};
+```
+<!-- end: React -->
 この方法により、サーバー エンドポイント、チャットボット エンジン、コラボレーション アプリのバックエンドなど、任意のデータ ソースと簡単に統合できます。
 
 ### プロパティ
@@ -74,9 +126,9 @@ chat.messages = [...chat.messages, newMessage ];
 
 | 名前              | 説明                                                                                                                                                          |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `messages`        | チャットに表示されるメッセージの配列 (`IgcChatMessage[]`)。表示するメッセージを制御するためにバインド可能。                                                  |
+| `messages`        | チャットに表示されるメッセージの配列 (`ChatMessage[]`)。表示するメッセージを制御するためにバインド可能。                                                  |
 | `draftMessage`    | 未送信メッセージ。`text` とオプションの `attachments` を含むオブジェクト。メッセージ下書きの保存や復元に便利。            |
-| `options`         | 現在のユーザー ID、入力プレースホルダー、許可されるファイル タイプ、クイック リプライサジェスト、入力遅延、カスタム レンダラーなどのチャット設定 (`IgcChatOptions`)。 |
+| `options`         | 現在のユーザー ID、入力プレースホルダー、許可されるファイル タイプ、クイック リプライサジェスト、入力遅延、カスタム レンダラーなどのチャット設定 (`ChatOptions`)。 |
 | `resourceStrings` | ラベル、ヘッダー、システム テキストのローカライズ文字列。多言語対応に使用。                                   |
 
 上記のプロパティを使用することで、Chat の UI をアプリケーションの状態やバックエンドと簡単に同期させることができます。
@@ -86,25 +138,45 @@ chat.messages = [...chat.messages, newMessage ];
 モダンな会話ではテキストだけに限られません。Chat コンポーネントはファイル添付機能のサポートが組み込まれており、ユーザーは画像、ドキュメント、その他のファイルを共有できます。
 デフォルトでは入力領域に添付ボタンが表示されます。`acceptedFiles` プロパティで許可されるファイル タイプを制御可能です。
 
+<!-- WebComponents -->
 ```ts
 const options: IgcChatOptions = {
   acceptedFiles="image/*,.pdf",
 };
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```tsx
+const options: IgrChatOptions = {
+  acceptedFiles="image/*,.pdf",
+};
+```
+<!-- end: React -->
 
 この例では、ユーザーは画像と PDF ファイルのみをアップロードできます。
 添付が不要なユースケースの場合は、簡単にオフにすることができます。
+<!-- WebComponents -->
 
 ```ts
 const options: IgcChatOptions = {
   disableInputAttachments: true,
 };
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```tsx
+const options: IgrChatOptions = {
+  disableInputAttachments: true,
+};
+```
+<!-- end: React -->
+
 ### サジェスト
 
 クイック リプライのサジェストは、ユーザーがすぐにタップして返信できる事前定義の応答を提供します。この機能は、チャットボットやカスタマー サービスのフロー、あるいはユーザーを構造化されたプロセスに案内する場合に特に有用です。
 サジェストは、文字列の配列を suggestions プロパティにバインドすることで提供できます。`suggestions-position` 属性を使用すると、表示位置を入力領域の下またはメッセージ リストの下に制御できます。
 
+<!-- WebComponents -->
 ```ts
 const options: IgcChatOptions = {
   currentUserId: "me",
@@ -117,6 +189,20 @@ const options: IgcChatOptions = {
   .options=${options}>
 </igc-chat>
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```tsx
+const options: IgrChatOptions = {
+  currentUserId: "me",
+  suggestions: ['Yes', 'No', 'Maybe later'],
+  suggestionsPosition: "below-input"
+};
+
+return (
+  <IgrChat ref={chatRef} options={{ options }} />
+);
+```
+<!-- end: React -->
 
 この方法により、繰り返し入力する必要が減り、ガイド付きの会話でユーザー体験を向上させることができます。
 
@@ -124,12 +210,21 @@ const options: IgcChatOptions = {
 
 相手が入力中であることが見えると、会話はより自然に感じられます。Chat コンポーネントでは、オプション オブジェクトの `isTyping` プロパティを通じてこの動作を提供します。
 true に設定すると、メッセージ下にさりげない入力中インジケーターが表示されます。
+<!-- WebComponents -->
 
 ```ts
 const options: IgcChatOptions = {
   isTyping: true
 };
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```tsx
+const options: IgrChatOptions = {
+  isTyping: true
+};
+```
+<!-- end: React -->
 
 この機能は通常、バックエンド サービスからの入力イベントを受け取ったときなど、プログラムで切り替えます。
 
@@ -174,7 +269,7 @@ Chat のカスタマイズ可能な部分は次の通りです:
 
 ```ts
 const options = {
-  renderers = {
+  renderers: {
     messageContent: (ctx) => {
       const { message } = ctx;
       return html`<div class="bubble custom">${message.content}</div>`;
@@ -182,14 +277,28 @@ const options = {
   }
 };
 ```
-
+<!-- end: WebComponents -->
+<!-- React -->
+```tsx
+const options = {
+  renderers: {
+    messageContent: (ctx) => {
+      const { message } = ctx;
+      return (
+        <div className="bubble custom">${message.content}</div>
+      );
+    }
+  }
+};
+```
+<!-- end: React -->
 #### 例: 入力領域のカスタマイズ
 
 デフォルトでは、チャット入力はテキスト領域です。音声入力ボタンなど、より適した体験を提供するためにオーバーライドできます。
 
 ```ts
 const options = {
-  renderers = {
+  renderers: {
     input: (ctx) => html`
       <textarea placeholder=${ctx.instance?.options?.inputPlaceholder || 'Type here...'}>${ctx.value}</textarea>
       <button @click=${() => alert('Voice input!')}>🎤</button>
@@ -197,7 +306,23 @@ const options = {
   }
 };
 ```
-
+<!-- end: WebComponents -->
+<!-- React -->
+```tsx
+const options = {
+  renderers: {
+    input: (ctx) => {
+      return (
+        <>
+          <textarea placeholder={ctx.instance?.options?.inputPlaceholder || 'Type here...'}>{ctx.value}</textarea>
+          <button onClick={() => alert('Voice input!')}>🎤</button>
+        </>
+      );
+    } 
+  }
+};
+```
+<!-- end: React -->
 #### 例: 入力アクションの拡張
 
 `Chat` コンポーネントには、デフォルトのアクション (アップロードと送信) を保持しつつ追加のコントロールを拡張できるレンダラーがあります:
@@ -206,7 +331,7 @@ const options = {
 
 例えば、アップロード ボタンの横に音声録音ボタンを追加したり、送信ボタンの後に追加オプション メニューを追加したりできます。
 次の例では、デフォルトのアップロード ボタンはそのままですが、その隣にマイク ボタンが追加されています。一方、デフォルトの送信ボタンを削除し、カスタムの「質問」ボタンと「その他」メニューに置き換えます。
-
+<!-- WebComponents -->
 ```ts
 const _actionsStartTemplate = () => html`
   <igc-icon-button variant="flat">🎤</igc-icon-button>
@@ -227,7 +352,29 @@ const options = {
   },
 };
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```tsx
+const _actionsStartTemplate = () => (
+  <IgrIconButton variant="flat">🎤</IgrIconButton>
+);
 
+const _actionsEndTemplate = (ctx) => (
+  <div>
+    <IgrButton onClick={() => handleCustomSendClick(ctx.instance)}>Ask</IgrButton>
+    <IgrIconButton variant="flat" name="more_horiz"></IgrIconButton>
+  </div>
+);
+
+const options = {
+  renderers: {
+    inputActionsStart: _actionsStartTemplate,
+    inputActionsEnd: _actionsEndTemplate,
+    sendButton: () => null,
+  },
+};
+```
+<!-- end: React -->
 この設定では:
 - アップロード ボタンはそのまま残ります。
 - その後にマイク ボタンが追加されます (inputActionsStart)。
@@ -237,7 +384,7 @@ const options = {
 
 ### Markdown レンダリング
 
-Chat コンポーネントは `igniteui-webcomponents/extras` からエクスポートされる `createMarkdownRenderer` ヘルパーを通じて Markdown をサポートします。これにより、書式付きテキスト、リンク、リスト、シンタックス ハイライト付きコードブロックを表示しつつ、安全に HTML をサニタイズできます。
+Chat コンポーネントは <!-- WebComponents --> `igniteui-webcomponents/extras` <!-- end: WebComponents --><!-- React --> `igniteui-react/extras` <!-- end: React --> からエクスポートされる `createMarkdownRenderer` ヘルパーを通じて Markdown をサポートします。これにより、書式付きテキスト、リンク、リスト、シンタックス ハイライト付きコードブロックを表示しつつ、安全に HTML をサニタイズできます。
 
 > [!Note]
 > Markdown レンダラーを使用するには、プロジェクトに次のピア依存関係をインストールする必要があります。
@@ -247,6 +394,7 @@ npm install marked marked-shiki shiki dompurify
 ```
 
 デフォルトでは、メッセージはプレーン テキストとして表示されます。Markdown サポートを有効にする場合は、messageContent レンダラーをオーバーライドし、以下に示すように Markdown レンダラーを使用できます。
+<!-- WebComponents -->
 
 ```ts
 import { createMarkdownRenderer } from 'igniteui-webcomponents/extras';
@@ -260,6 +408,21 @@ const options = {
   }
 };
 ```
+<!-- end: WebComponents -->
+<!-- React -->
+```tsx
+import { createMarkdownRenderer } from 'igniteui-react/extras';
+
+// Create a reusable Markdown renderer instance
+const markdownRenderer = await createMarkdownRenderer();
+
+const options = {
+  renderers: {
+    messageContent: async ({ message }) => markdownRenderer(message),
+  }
+};
+```
+<!-- end: React -->
 
 例:
 - 各メッセージの text プロパティが [marked](https://github.com/markedjs/marked) ライブラリを使用して Markdown として解析されます。
@@ -291,18 +454,32 @@ const markdownRenderer = await createMarkdownRenderer({
 ### イベント
 
 アプリケーション ロジックと統合するために、Chat コンポーネントは一連のイベントを発行します。
+<!-- WebComponents -->
 - igcMessageCreated - 新しいメッセージ作成時
 - igcMessageReact - メッセージにリアクションした時
 - igcAttachmentClick - 添付クリック時
-- igcAttachmentChange - 添付変更時
+- igcAttachmentDrop - 添付が追加された時
+- igcAttachmentDrop - 添付が削除された時
 - igcAttachmentDrag - 添付ドラッグ中
 - igcAttachmentDrop - 添付ドロップ時
 - igcTypingChange - 入力状態変更時
 - igcInputFocus / igcInputBlur - 入力フォーカス イベント
 - igcInputChange - 入力値変更時
-
+<!-- end: WebComponents -->
+<!-- React -->
+- onMessageCreated - 新しいメッセージ作成時
+- onMessageReact - メッセージにリアクションした時
+- onAttachmentClick - 添付クリック時
+- onAttachmentAdded - 添付が追加された時
+- onAttachmentRemoved - 添付が削除された時
+- onAttachmentDrag - 添付ドラッグ中
+- onAttachmentDrop - 添付ドロップ時
+- onTypingChange - 入力状態変更時
+- onInputFocus / onInputBlur - 入力フォーカス イベント
+- onInputChange - 入力値変更時
+<!-- end: React -->
 これらのイベントをリッスンし、バックエンドと同期することができます。
-
+<!-- WebComponents -->
 ```ts
 chat.addEventListener('igcMessageCreated', (e) => {
   console.log('Message:', e.detail);
@@ -312,6 +489,14 @@ chat.addEventListener('igcMessageCreated', (e) => {
 `sample="/interactions/chat/features", height="900", alt="Web Components チャット機能"`
 
 <!-- end: WebComponents -->
+<!-- React -->
+```tsx
+const chatRef = useRef<IgrChat>(null);
+chatRef.current.addEventListener('onMessageCreated', (e) => {
+  console.log('Message:', e.detail);
+});
+```
+<!-- end: React -->
 
 ## スタイル設定
 

@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} Column Selection - {ProductName}
 _description: Learn how to configure column selection with {ProductName} {ComponentTitle}. This makes grid interactions much easier and faster than ever.
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, column selection
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls

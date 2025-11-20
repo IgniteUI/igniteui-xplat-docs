@@ -3,6 +3,7 @@ title: {Platform} Chat | {ProductName}
 _description: With {ProductName} Chat, you can build interactive messaging experiences with support for messages, attachments, suggestions, typing indicators, and custom templates.  
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Chat components, {Platform} Chat controls  
 mentionedTypes: ["Chat"]  
+_license: MIT
 ---
 
 # {Platform} Chat Overview
@@ -453,6 +454,8 @@ chat.addEventListener('igcMessageCreated', (e) => {
   console.log('Message:', e.detail);
 });
 ```
+
+`sample="/interactions/chat/features", height="900", alt="Web Components Chat Features"`
 <!-- end: WebComponents -->
 <!-- React -->
 ```tsx
@@ -462,7 +465,6 @@ chatRef.current.addEventListener('onMessageCreated', (e) => {
 });
 ```
 <!-- end: React -->
-`sample="/interactions/chat/features", height="900", alt="Web Components Chat Features"`
 
 ## Styling
 

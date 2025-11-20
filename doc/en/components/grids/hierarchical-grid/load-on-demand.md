@@ -2,6 +2,7 @@
 title: {Platform} Hierarchical Grid | Fastest {Platform} Hierarchical Table | Infragistics
 _description: The {ProductName} Hierarchical Grid provides the necessary tools to load data on demand for each child grid that is expanded. That way the volume of data would be greatly reduced and can be retrieved only when the user needs it.
 _keywords: {Platform} hierarchical grid, igniteui for {Platform}, infragistics
+_license: commercial
 mentionedTypes: ["HierarchicalGrid", "RowIsland"]
 namespace: Infragistics.Controls
 ---

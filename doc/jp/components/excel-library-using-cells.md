@@ -2,6 +2,7 @@
 title: {Platform} Excel ライブラリ | セルの使用 | インフラジスティックス
 _description: インフラジスティックスの {Platform} Excel ライブラリのセルでセルへのアクセス、数式とコメントの追加、セルの結合、セルの書式設定などの操作を実行する方法について説明します。{ProductName} Excel のサンプルを是非お試しください!
 _keywords: Excel library,  cell operations, {ProductName}, Infragistics, Excel ライブラリ, セル操作, インフラジスティックス
+_license: commercial
 mentionedTypes: ["Workbook", "Worksheet", "WorksheetCell", "WorkbookStyleCollection", "IWorksheetCellFormat", "WorkbookColorInfo", "DisplayOptions"]
 _language: ja
 ---
@@ -35,7 +36,6 @@ import { FormattedString } from "{PackageExcel}";
 <!-- end: Angular, React, WebComponents -->
 
 ## セルと領域を参照
-
 `Worksheet` オブジェクトの `GetCell` または `GetRegion` メソッドを呼び出して `WorksheetCell` オブジェクト または `WorksheetRegion` オブジェクトへアクセスできます。両メソッドはセルを参照する文字列パラメーターを許容します。書式設定を適用する場合または数式とセルのコンテンツで作業する場合にセル参照を取得すると便利です。
 
 以下のコード例では、セルと領域を参照する方法を示します。

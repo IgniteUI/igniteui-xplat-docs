@@ -2,6 +2,7 @@
 title: {Platform} チャート データの注釈 | データ可視化 | インフラジスティックス
 _description: Infragistics' {Platform} チャート データの注釈
 _keywords: {Platform} Charts, Data Annotations, Infragistics, {Platform} チャート, データの注釈, インフラジスティックス
+_license: commercial
 mentionedTypes: ["DomainChart", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer"]
 namespace: Infragistics.Controls.Charts
 _language: ja
@@ -10,6 +11,9 @@ _language: ja
 # {Platform} チャート データの注釈 <label>PREVIEW</label>
 
 {Platform} チャートでは、データ注釈レイヤーを使用して、データ チャートにプロットされたデータに、傾斜線、垂直/水平線 (軸スライス)、垂直/水平ストリップ (特定の軸をターゲットとする)、四角形、さらには平行四辺形 (バンド) で注釈を付けることができます。データ バインディングがサポートされているため、チャートをカスタマイズするために必要な数の注釈を作成できます。また、さまざまな注釈レイヤーを組み合わせて、プロット領域内にテキストをオーバーレイし、データ内の重要なイベント、パターン、領域に注釈を付けることもできます。
+
+>[!Note]
+>これらの機能はデカルト軸をサポートするように設計されており、現在は半径または角度の軸には対応していません。
 
 たとえば、株式イベントやパターンを用いて株価に注釈を付けることができます。
 

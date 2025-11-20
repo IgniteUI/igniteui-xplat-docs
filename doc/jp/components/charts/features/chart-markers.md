@@ -2,6 +2,7 @@
 title: {Platform} チャート マーカー | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの {Platform} チャート マーカー
 _keywords: {Platform} Charts, Markers, Infragistics, {Platform} チャート, マーカー, インフラジスティックス
+_license: commercial
 mentionedTypes: ["CategoryChart", "CategoryChartType", "MarkerType"]
 namespace: Infragistics.Controls.Charts
 _language: ja

@@ -27,6 +27,11 @@
     "status": ""
   },
   {
+    "exclude": ["Angular"],
+    "name": "オープンソース vs プレミアム",
+    "href": "general-open-source-vs-premium.md"
+  },
+  {
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "作業の開始",
     "status": "",
@@ -158,6 +163,12 @@
     "items": [
       {
         "exclude": ["Angular"],
+        "name": "セルの結合",
+        "href": "grids/grid/cell-merging.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular"],
         "name": "クリップボードの操作",
         "href": "grids/grid/clipboard-interactions.md"
       },
@@ -181,7 +192,8 @@
       {
         "exclude": ["Angular"],
         "name": "列のピン固定",
-        "href": "grids/grid/column-pinning.md"
+        "href": "grids/grid/column-pinning.md",
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
@@ -396,6 +408,12 @@
     "items": [
       {
         "exclude": ["Angular"],
+        "name": "セルの結合",
+        "href": "grids/hierarchical-grid/cell-merging.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular"],
         "name": "縮小可能な列グループ",
         "href": "grids/hierarchical-grid/collapsible-column-groups.md"
       },
@@ -411,9 +429,10 @@
         "href": "grids/hierarchical-grid/column-moving.md"
       },
       {
-        "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+        "exclude": ["Angular"],
         "name": "列のピン固定",
-        "href": "grids/hierarchical-grid/column-pinning.md"
+        "href": "grids/hierarchical-grid/column-pinning.md",
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
@@ -618,6 +637,12 @@
     "items": [
       {
         "exclude": ["Angular"],
+        "name": "セルの結合",
+        "href": "grids/tree-grid/cell-merging.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular"],
         "name": "クリップボードの操作",
         "href": "grids/tree-grid/clipboard-interactions.md"
       },
@@ -648,10 +673,10 @@
         "href": "grids/tree-grid/column-moving.md"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular"],
         "name": "列のピン固定",
         "href": "grids/tree-grid/column-pinning.md",
-        "status": ["NEW_REACT"]
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
@@ -897,10 +922,6 @@
         "name": "グリッド編集",
         "href": "grids/data-grid/cell-editing.md",
         "status": ""
-      },
-      {
-        "name": "セルの結合",
-        "href": "grids/data-grid/cell-merging.md"
       },
       {
         "name": "セル選択",
@@ -1560,13 +1581,13 @@
     "status": ""
   },
    {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "デバイダー",
     "href": "layouts/divider.md",
     "status": "new"
   },
   {
-    "exclude": ["Angular", "Blazor"],
+    "exclude": ["Angular"],
     "name": "タイル マネージャー",
     "href": "layouts/tile-manager.md",
     "status": "new"
@@ -1682,14 +1703,16 @@
     "href": "inputs/checkbox.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "円形プログレス",
-    "href": "inputs/circular-progress.md"
+    "href": "inputs/circular-progress.md",
+    "status": ["NEW_REACT"]
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "リニア プログレス",
-    "href": "inputs/linear-progress.md"
+    "href": "inputs/linear-progress.md",
+    "status": ["NEW_REACT"]
   },
   {
     "exclude": ["Angular"],
@@ -1787,7 +1810,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "Blazor", "React"],
+    "exclude": ["Angular", "Blazor"],
     "name": "チャット",
     "href": "interactivity/chat.md",
     "status": "new"
@@ -1902,6 +1925,12 @@
     "name": "スタイル",
     "href": "themes/styles.md",
     "status": ""
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "カスタム Tailwind クラス",
+    "href": "themes/tailwind.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],

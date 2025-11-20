@@ -2,6 +2,7 @@
 title: {Platform} ステッパー コンポーネント - {ProductName}
 _description: {Platform} ステッパー コンポーネントを使用してコンテンツをプロセスとして可視化し、コンテンツを論理的なステップに分割して進行状況を表示します。無料でお試しください。
 _keywords: {Platform} Stepper, {ProductName}, Infragistics, {Platform} ステッパー
+_license: MIT
 mentionedTypes: ["Stepper"]
 _language: ja
 ---

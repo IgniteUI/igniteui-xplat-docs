@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} の仮想化とパフォーマンス - {ProductName}
 _description: {ProductName} の仮想化は、大規模なデータセットを処理する際のグリッドのスピードとパフォーマンスの背後にあるコア メカニズムです。無料でお試しください。
 _keywords: {Platform} {ComponentTitle}, {ComponentTitle} performance, data table virtualization, {ProductName}, {ComponentTitle} パフォーマンス, データ  テーブルの仮想, インフラジスティックス
+_license: commercial
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls

@@ -2,6 +2,7 @@
 title: {Platform} Excel ライブラリ | データ スプレッドシートとテーブル | インフラジスティックス
 _description: インフラジスティックスの {Platform} Excel ライブラリは、Microsoft Excel 機能を使用してスプレッドシート データを使用した作業が可能になります。{ProductName} Excel ライブラリを使用して Excel からアプリケーションにデータを簡単に転送できる方法について説明します。
 _keywords: Excel library, {ProductName}, Infragistics, workbook, Excel ライブラリ, ワークブック, インフラジスティックス
+_license: commercial
 mentionedTypes: ["Workbook", "Worksheet", "Cell", "Formula"]
 _language: ja
 ---
@@ -14,7 +15,8 @@ Infragistics {Platform} Excel ライブラリは、`Workbook`、`Worksheet`、`C
 
 `sample="/excel/excel-library/overview", height="100", alt="{Platform} Excel ライブラリの例"`
 
-
+> [!Note]
+> XLSX 形式は必要です。他の形式は現在サポートされていません。
 
 <div class="divider--half"></div>
 

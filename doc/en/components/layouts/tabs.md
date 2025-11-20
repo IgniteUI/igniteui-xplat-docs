@@ -2,6 +2,7 @@
 title: {Platform} Tabs Control | Layout Controls | {ProductName}
 _description: {Platform} Tabs component allows users to place tabs at the top and switch between similar data sets. Try it Now
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Tabs Component, Infragistics
+_license: MIT
 mentionedTypes: ["Tabs", "Tab", "Icon", "IconButton", "RadioGroup"]
 ---
 

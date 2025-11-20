@@ -2,6 +2,7 @@
 title: {Platform} Map | Data Visualization Tools | Binding Geographic Data Models | Infragistics
 _description: Use Infragistics' {Platform} JavaScript map to display geo-spatial data from shape files and/or geographic locations from data models on geographic imagery maps. View {ProductName} map demos!
 _keywords: {Platform} map, binding data models, {ProductName}, Infragistics, data binding
+_license: commercial
 mentionedTypes: ["XamGeographicMap", "GeographicScatterAreaSeries", "GeographicHighDensityScatterSeries", "GeographicProportionalSymbolSeries", "GeographicScatterAreaSeries", "GeographicContourLineSeries", "GeographicShapeSeries", "GeographicPolylineSeries", "Series", "GeographicShapeSeriesBase"]
 namespace: Infragistics.Controls.Maps
 ---

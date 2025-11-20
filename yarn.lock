@@ -572,7 +572,7 @@ browser-sync@^2.27.10:
     ua-parser-js "1.0.2"
     yargs "^17.3.1"
 
-browserslist@^4.12.0:
+browserslist@^4.12.0, "browserslist@>= 4.21.0":
   version "4.21.5"
   resolved "https://registry.npmjs.org/browserslist/-/browserslist-4.21.5.tgz"
   integrity sha512-tUkiguQGW7S3IhB7N+c2MV/HZPSCPAAiYBZXLsBhFB/PCy6ZKKsZrmBayHV9fdGV/ARIfJ14NkxKzRDjvp7L6w==
@@ -1880,7 +1880,7 @@ gulp-yaml@^2.0.4:
     replace-ext "^1.0.0"
     through2 "^3.0.0"
 
-gulp@^4.0.2:
+gulp@^4.0.2, gulp@>=4:
   version "4.0.2"
   resolved "https://registry.npmjs.org/gulp/-/gulp-4.0.2.tgz"
   integrity sha512-dvEs27SCZt2ibF29xYgmnwwCYZxdxhQ/+LFWlbAW8y7jt68L/65402Lz3+CKy0Ov4rOs+NERmDq7YlZaDqUIfA==
@@ -2035,10 +2035,10 @@ iconv-lite@0.4.24:
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
 
-igniteui-docfx-template@3.9.0:
-  version "3.9.0"
-  resolved "https://registry.npmjs.org/igniteui-docfx-template/-/igniteui-docfx-template-3.9.0.tgz"
-  integrity sha512-/4aCEImB6F0h4TYeNMboHjOVPg7NokR9DhpHu6NNmNpAcgiMe1OIU6NsvKHl723jhZq1iZmf9Zxc3RlirfvBgQ==
+igniteui-docfx-template@^3.12.1:
+  version "3.12.1"
+  resolved "https://registry.npmjs.org/igniteui-docfx-template/-/igniteui-docfx-template-3.12.1.tgz"
+  integrity sha512-L9LQPZDSm0UxETLotV5Ui7pB4dKPFGZIbA4T0rPjsWLwpV/sfwNH0GdkKXNS7mP2T/A1a2WJUhHs+U74OeH37Q==
   dependencies:
     "@stackblitz/sdk" "^1.11.0"
     anchor-js "^4.3.0"

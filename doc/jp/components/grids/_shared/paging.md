@@ -3,6 +3,7 @@ title: {Platform} {ComponentTitle} ページング - {ProductName}
 _description: {Platform} ページネーションを構成し、Ignite UI によって {Platform} テーブルにカスタム ページを作成し、さまざまなイベントで要求されたページのデータを取得します。
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Paging, {Platform}, {ComponentKeywords}, {ProductName}, ページング, インフラジスティックス
+_license: commercial
 namespace: Infragistics.Controls
 _canonicalLink: {CanonicalLinkToGridPaging}
 _language: ja

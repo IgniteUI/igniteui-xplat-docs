@@ -2,6 +2,7 @@
 title: {Platform} Map | Data Visualization Tools | Map Navigation | Infragistics
 _description: Navigate Infragistics' {Platform} map by panning right and left and zooming horizontally and vertically using mouse or touch. Learn about {ProductName} map's navigation capabilities!
 _keywords: {Platform} map, navigation, {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["XamGeographicMap"]
 ---
 # {Platform} Navigating Map Content

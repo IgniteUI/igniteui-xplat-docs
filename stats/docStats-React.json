@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in React documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "React",
-  "samplesCount": 734,
+  "samplesCount": 774,
   "samplesHost": "https://staging.infragistics.com/react-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -817,6 +817,48 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/data-grid/type-comparison-table": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/data-grid/type-comparison-table"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/column-config-basic": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grid-lite/cell-template"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/column-config-dynamic": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grid-lite/column-configuration"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/column-config-headers": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grid-lite/header-template"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/data-binding": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grid-lite/binding"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/filtering-config": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grid-lite/filtering"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/filtering-config-events": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grid-lite/filtering"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/filtering-config-remote": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grid-lite/filtering"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grid-lite/overview"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/sort-config-events": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grid-lite/sorting"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/sort-config-grid": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grid-lite/sorting"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/sort-config-pipeline": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grid-lite/sorting"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/sort-config-sample": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grid-lite/sorting"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/styling-config-themes": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grid-lite/theming"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/styling-custom-theme": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grid-lite/theming"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/action-strip": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/row-actions"
     ],
@@ -840,6 +882,12 @@
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-editing-styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-editing"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-merge": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-merging"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-merge-custom-sample": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-merging"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-selection-mode": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-selection",
@@ -876,6 +924,9 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-moving"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-pinning": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-pinning"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-pinning-both-sides": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-pinning"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-pinning-options": [
@@ -1125,6 +1176,12 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-editing-styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/cell-editing"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-merge": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/cell-merging"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-merge-custom-sample": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/cell-merging"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-selection-mode": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/cell-selection",
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/selection"
@@ -1154,6 +1211,9 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/column-moving"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-pinning": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/column-pinning"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-pinning-both-sides": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/column-pinning"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-pinning-options": [
@@ -1410,6 +1470,12 @@
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-editing-styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/cell-editing"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-merge": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/cell-merging"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-merge-custom-sample": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/cell-merging"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-selection-mode": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/cell-selection",
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/selection"
@@ -1442,6 +1508,9 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/column-moving"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-pinning": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/column-pinning"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-pinning-both-sides": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/column-pinning"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-pinning-options": [
@@ -1732,6 +1801,18 @@
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/chip/variants": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/chip"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/circular-progress-indicator/dynamic": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/circular-progress"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/circular-progress-indicator/indeterminate": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/circular-progress"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/circular-progress-indicator/simple": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/circular-progress"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/circular-progress-indicator/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/circular-progress"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/color-editor/overview": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/color-editor"
     ],
@@ -1812,6 +1893,21 @@
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/input/styling": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/input"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/linear-progress-indicator/dynamic": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/linear-progress"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/linear-progress-indicator/simple": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/linear-progress"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/linear-progress-indicator/striped": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/linear-progress"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/linear-progress-indicator/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/linear-progress"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/inputs/linear-progress-indicator/types": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/linear-progress"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/mask-input/applying-mask": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/mask-input"
@@ -1957,6 +2053,12 @@
     "https://staging.infragistics.com/react-demos/samples/samples/inputs/tooltip/triggers": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/tooltip"
     ],
+    "https://staging.infragistics.com/react-demos/samples/samples/interactions/chat/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/interactivity/chat"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/interactions/chat/styling": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/interactivity/chat"
+    ],
     "https://staging.infragistics.com/react-demos/samples/samples/layouts/accordion/customization": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/accordion"
     ],
@@ -2007,6 +2109,21 @@
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/layouts/carousel/thumbnail": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/carousel"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/divider/dashed": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/divider"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/divider/middle": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/divider"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/divider/overview": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/divider"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/divider/select": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/divider"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/layouts/divider/vertical": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/divider"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/layouts/dock-manager/customize-buttons": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/dock-manager"
@@ -2109,6 +2226,9 @@
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/binding-shp-polylines": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-binding-shp-file"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-azure-imagery": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-azure-imagery"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-esri-imagery": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-esri-imagery"
@@ -2272,7 +2392,7 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/_shared/toolbar"
     ]
   },
-  "topicsCount": 308,
+  "topicsCount": 325,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-react/react/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -2648,6 +2768,9 @@
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-binding-shp-file": [
       "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/binding-shp-polylines"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-azure-imagery": [
+      "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-azure-imagery"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-display-esri-imagery": [
       "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/display-esri-imagery"
     ],
@@ -2683,6 +2806,36 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/geo-map-type-shape-polyline-series": [
       "https://staging.infragistics.com/react-demos/samples/samples/maps/geo-map/type-shape-polyline-series"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grid-lite/binding": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/data-binding"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grid-lite/cell-template": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/column-config-basic"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grid-lite/column-configuration": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/column-config-dynamic"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grid-lite/filtering": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/filtering-config",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/filtering-config-events",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/filtering-config-remote"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grid-lite/header-template": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/column-config-headers"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grid-lite/overview": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/overview"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grid-lite/sorting": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/sort-config-events",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/sort-config-grid",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/sort-config-pipeline",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/sort-config-sample"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grid-lite/theming": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/styling-config-themes",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid-lite/styling-custom-theme"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/_shared/toolbar": [
       "https://staging.infragistics.com/react-demos/samples/samples/{ComponentSample}/data-exporting-indicator",
@@ -2798,6 +2951,10 @@
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/editing-events",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/editing-excel-style"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-merging": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-merge",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-merge-custom-sample"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/cell-selection": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-selection-mode",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/cell-selection-style",
@@ -2819,6 +2976,7 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/grid/column-pinning": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-pinning",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-pinning-both-sides",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-pinning-options",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-pinning-right-side",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/grid/column-pinning-styles"
@@ -2973,6 +3131,10 @@
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/editing-columns",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/editing-events"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/cell-merging": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-merge",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-merge-custom-sample"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/cell-selection": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-selection-mode",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/cell-selection-style"
@@ -2993,6 +3155,7 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/hierarchical-grid/column-pinning": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-pinning",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-pinning-both-sides",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-pinning-options",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-pinning-right-side",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/hierarchical-grid/column-pinning-styles"
@@ -3165,6 +3328,10 @@
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/editing-columns",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/editing-events"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/cell-merging": [
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-merge",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-merge-custom-sample"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/cell-selection": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-selection-mode",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/cell-selection-style",
@@ -3186,6 +3353,7 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/tree-grid/column-pinning": [
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-pinning",
+      "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-pinning-both-sides",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-pinning-options",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-pinning-right-side",
       "https://staging.infragistics.com/react-demos/samples/samples/grids/tree-grid/column-pinning-styles"
@@ -3346,6 +3514,12 @@
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/chip/styling",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/chip/variants"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/circular-progress": [
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/circular-progress-indicator/dynamic",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/circular-progress-indicator/indeterminate",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/circular-progress-indicator/simple",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/circular-progress-indicator/styling"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/color-editor": [
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/color-editor/overview"
     ],
@@ -3390,6 +3564,13 @@
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/input/prefix-suffix",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/input/size",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/input/styling"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/linear-progress": [
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/linear-progress-indicator/dynamic",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/linear-progress-indicator/simple",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/linear-progress-indicator/striped",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/linear-progress-indicator/styling",
+      "https://staging.infragistics.com/react-demos/samples/samples/inputs/linear-progress-indicator/types"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/inputs/mask-input": [
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/mask-input/applying-mask",
@@ -3457,6 +3638,10 @@
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/tooltip/styling",
       "https://staging.infragistics.com/react-demos/samples/samples/inputs/tooltip/triggers"
     ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/interactivity/chat": [
+      "https://staging.infragistics.com/react-demos/samples/samples/interactions/chat/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/interactions/chat/styling"
+    ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/accordion": [
       "https://staging.infragistics.com/react-demos/samples/samples/layouts/accordion/customization",
       "https://staging.infragistics.com/react-demos/samples/samples/layouts/accordion/nested-scenario",
@@ -3481,6 +3666,13 @@
       "https://staging.infragistics.com/react-demos/samples/samples/layouts/carousel/components",
       "https://staging.infragistics.com/react-demos/samples/samples/layouts/carousel/overview",
       "https://staging.infragistics.com/react-demos/samples/samples/layouts/carousel/thumbnail"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/divider": [
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/divider/dashed",
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/divider/middle",
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/divider/overview",
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/divider/select",
+      "https://staging.infragistics.com/react-demos/samples/samples/layouts/divider/vertical"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/layouts/dock-manager": [
       "https://staging.infragistics.com/react-demos/samples/samples/layouts/dock-manager/customize-buttons",

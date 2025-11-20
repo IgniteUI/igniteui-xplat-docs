@@ -2,6 +2,7 @@
 title: {Platform} Tooltip | Infragistics
 _description: The {ProductName} Tooltip component provides us with the ability to easily create a tooltip and attach it into an element.
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Tooltip components
+_license: MIT
 mentionedTypes: ["Tooltip"]
 ---
 

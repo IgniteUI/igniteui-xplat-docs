@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in Angular documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "Angular",
-  "samplesCount": 232,
+  "samplesCount": 233,
   "samplesHost": "https://staging.infragistics.com/angular-demos-dv/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -720,9 +720,6 @@
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/binding-shp-polylines": [
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-binding-shp-file"
     ],
-    "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/display-bing-imagery": [
-      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-display-bing-imagery"
-    ],
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/display-azure-imagery": [
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-display-azure-imagery"
     ],
@@ -764,7 +761,7 @@
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-type-shape-polyline-series"
     ]
   },
-  "topicsCount": 97,
+  "topicsCount": 98,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-angular/angular/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -1126,9 +1123,6 @@
     ],
     "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-binding-shp-file": [
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/binding-shp-polylines"
-    ],
-    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-display-bing-imagery": [
-      "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/display-bing-imagery"
     ],
     "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-display-azure-imagery": [
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/maps/geo-map/display-azure-imagery"

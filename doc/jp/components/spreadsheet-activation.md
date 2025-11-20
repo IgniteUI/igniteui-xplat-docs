@@ -2,6 +2,7 @@
 title: {Platform} スプレッドシート | アクティブ化 | インフラジスティックス
 _description: セル、ペイン、およびワークシート間で分割される {Platform} スプレッドシート コントロールのアクティブ化を使用する方法について説明します。{ProductName} スプレッドシートのサンプルを是非お試しください!
 _keywords: Excel Spreadsheet, activation, {ProductName}, Infragistics, Excel スプレッドシート、アクティブ化, インフラジスティックス
+_license: commercial
 mentionedTypes: ["Spreadsheet"]
 _language: ja
 ---

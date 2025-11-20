@@ -2,6 +2,7 @@
 title: {Platform} チャートのデータ フィルタリング | データ可視化 | インフラジスティックス
 _description: Infragistics の {Platform} チャートのデータ フィルタリング
 _keywords: {Platform} Charts, Filtering, Infragistics, {Platform} チャート, フィルタリング, インフラジスティックス
+_license: commercial
 mentionedTypes: ["CategoryChart"]
 namespace: Infragistics.Controls.Charts
 _language: ja

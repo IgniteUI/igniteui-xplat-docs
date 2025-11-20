@@ -2,6 +2,7 @@
 title: {Platform} {ComponentTitle} 行の編集 - {ProductName}
 _description: {Platform} {ComponentTitle}で行編集を有効にし、CRUD 操作のための強力な API が必要な場合、{ProductName} {ComponentTitle} 行編集コンポーネントをお試しください。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
+_license: commercial
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls

@@ -2,6 +2,7 @@
 title: {Platform} マップ | データ可視化ツール | シェイプ ポリゴン シリーズ | インフラジスティックス
 _description: インフラジスティックスの {Platform} マップのシェイプ ポリゴン シリーズを使用して、地理的位置によって定義される国または地域の図形を描画します。{ProductName} マップ シーリズについての詳細を表示します。
 _keywords: {Platform} map, shape polygon series, {ProductName}, Infragistics, {Platform} マップ, シェイプ ポリゴン シリーズ, インフラジスティックス
+_license: commercial
 mentionedTypes: ["XamGeographicMap", "ShapefileConverter", "Series", "GeographicShapeSeriesBase"]
 _language: ja
 ---

@@ -2,6 +2,7 @@
 title: {Platform} Excel Library| Working with Charts | Infragistics
 _description: Use the Infragistics' {Platform} excel library's chart feature to add visual charting representations of data trends across regions of cells in a worksheet. Visualize {ProductName} excel data in over 70 chart types!
 _keywords: Excel library, charts,  {ProductName}, Infragistics
+_license: commercial
 mentionedTypes: ["Workbook", "Worksheet"]
 ---
 # {Platform} Working with Charts
@@ -13,7 +14,8 @@ The Infragistics {Platform} Excel Engine's `WorksheetChart` functionality allows
 
 `sample="/excel/excel-library/working-with-charts", height="500", alt="{Platform} Working with Charts Example"`
 
-
+> [!Note]
+> The XLSX format is required. Other formats are not supported at this time.
 
 <div class="divider--half"></div>
 
