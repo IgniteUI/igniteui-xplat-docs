@@ -1,13 +1,13 @@
 ---
-title: {Platform} {GridLiteTitle} Filtering - {ProductName}
-_description: Filter operations, filter customization and remote filtering for {GridLiteTitle}. See demos & examples!
+title: {Platform} {GridLiteTitle} Filtering | {ProductName} | MIT license
+_description: Filter operations, filter customization, and remote filtering for {GridLiteTitle}. Create apps with our open-source {Platform} {GridLiteTitle}. Try it now.
 _keywords: filtering, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
-_license: mit
+_license: MIT
 ---
 
-# {Platform} {GridLiteTitle} Filter operations
+# {Platform} {GridLiteTitle} Filter Operations
 
 The {GridLiteTitle} supports filtering operations on its data source. Data filtering is controlled on per-column level, allowing you to have filterable and non-filterable columns. By default, filtering on a column is disabled unless explicitly configured with the **`filter`** property of the column configuration object.
 
@@ -36,7 +36,7 @@ The **`filter`** property can be either a simple boolean or a
 
 `sample="/{GridLiteSample}/filtering-config", height="600", alt="{Platform} {GridLiteTitle} Filtering Config"`
 
-## Filter model
+## Filter Model
 
 The building blocks for filter operations in the grid is the **`FilterExpression`** which has the following structure:
 
@@ -101,7 +101,7 @@ grid.clearFilter('age');
 grid.clearFilter();
 ```
 
-## Initial filter state
+## Initial Filter State
 
 The **`filterExpressions`** property is very similar in behavior to the **`filter()`** method call. It exposes a declarative way to control filter state in the grid, but the most useful property is the ability to set initial filter state when the {GridLiteTitle} component is first rendered.
 
@@ -152,7 +152,7 @@ grid.addEventListener('filtered', (event: CustomEvent<GridLiteFilteredEvent<T>>)
 
 `sample="/{GridLiteSample}/filtering-config-events", height="600", alt="{Platform} {GridLiteTitle} Filtering Config Events"`
 
-## Remote filter operations
+## Remote Filter Operations
 
 In cases where filtering must be done remotely or you want to save the current state/data to a server somewhere,
 the {GridLiteTitle} exposes a hook where you can implement and customize this behavior.

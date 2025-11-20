@@ -162,7 +162,7 @@
     "href": "grids/data-grid.md",
     "items": [
       {
-        "exclude": ["Angular", "Blazor"],
+        "exclude": ["Angular"],
         "name": "セルの結合",
         "href": "grids/grid/cell-merging.md",
         "status": "NEW"
@@ -192,7 +192,8 @@
       {
         "exclude": ["Angular"],
         "name": "列のピン固定",
-        "href": "grids/grid/column-pinning.md"
+        "href": "grids/grid/column-pinning.md",
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
@@ -406,7 +407,7 @@
     "href": "grids/hierarchical-grid/overview.md",
     "items": [
       {
-        "exclude": ["Angular", "Blazor"],
+        "exclude": ["Angular"],
         "name": "セルの結合",
         "href": "grids/hierarchical-grid/cell-merging.md",
         "status": "NEW"
@@ -430,7 +431,8 @@
       {
         "exclude": ["Angular"],
         "name": "列のピン固定",
-        "href": "grids/hierarchical-grid/column-pinning.md"
+        "href": "grids/hierarchical-grid/column-pinning.md",
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
@@ -634,7 +636,7 @@
     "href": "grids/tree-grid/overview.md",
     "items": [
       {
-        "exclude": ["Angular", "Blazor"],
+        "exclude": ["Angular"],
         "name": "セルの結合",
         "href": "grids/tree-grid/cell-merging.md",
         "status": "NEW"
@@ -674,7 +676,7 @@
         "exclude": ["Angular"],
         "name": "列のピン固定",
         "href": "grids/tree-grid/column-pinning.md",
-        "status": ["NEW_REACT"]
+        "status": "UPDATED"
       },
       {
         "exclude": ["Angular"],
@@ -1579,7 +1581,7 @@
     "status": ""
   },
    {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "デバイダー",
     "href": "layouts/divider.md",
     "status": "new"
@@ -1701,14 +1703,16 @@
     "href": "inputs/checkbox.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "円形プログレス",
-    "href": "inputs/circular-progress.md"
+    "href": "inputs/circular-progress.md",
+    "status": ["NEW_REACT"]
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "リニア プログレス",
-    "href": "inputs/linear-progress.md"
+    "href": "inputs/linear-progress.md",
+    "status": ["NEW_REACT"]
   },
   {
     "exclude": ["Angular"],
@@ -1921,6 +1925,12 @@
     "name": "スタイル",
     "href": "themes/styles.md",
     "status": ""
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "カスタム Tailwind クラス",
+    "href": "themes/tailwind.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
