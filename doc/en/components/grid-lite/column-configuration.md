@@ -71,11 +71,11 @@ The column configuration object exposes several more properties:
 
 ### Column Width
 
-By default, the columns have a width of `minmax(136px, 1fr)` which translates to a minimum width of 136px and maximum of
+By default, the columns have a width of **minmax(136px, 1fr)** which translates to a minimum width of 136px and maximum of
 1 part of the available space in the {GridLiteTitle}. This way the columns are fluid and responsive accommodating for changes
 in the grid width.
 
-To change the width of column, use the **`width`** property of the **`ColumnConfiguration`** object.
+To change the width of column, use the **width** property of the **ColumnConfiguration** object.
 
 <!-- React, WebComponents -->
 
