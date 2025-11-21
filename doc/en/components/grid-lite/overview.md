@@ -1,17 +1,28 @@
 ---
-title: {Platform} {GridLiteTitle} Overview - {ProductName}
-_description: {GridLiteTitle} features overview
+title: {Platform} {GridLiteTitle} Overview | {ProductName} | MIT license
+_description: Create apps with our open-source {GridLiteTitle}. It’s lightweight and packed with essential features - filtering, hiding, sorting, and more. Try now.
 _keywords: overview, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
-_license: mit
+_license: MIT
 ---
 
 # Open Source {Platform} Grid
 
-The {GridLiteTitle} is a free, open-source {Platform} data grid that is used in applications to display and manage tabular data. It enables you to present data in rows and columns, using a number of features like sorting and filtering.
+The {ProductName} {GridLiteTitle} is part of Infragistics’ new open-source UI component set that will be actively supported and maintained. It is open-source JavaScript data grid built as a Web Component, which means you can use it dependency-free with or without a web framework. There are 40+ OSS controls now available under the MIT license across Angular, React, Blazor, and Web Components.
 
+The {GridLiteTitle} delivers essential data-display functionality with minimal overhead and the performance users expect. It is designed for developers who need fast, lightweight data presentation without the complexity of an enterprise grid.
 
+{GridLiteTitle} features:
+
+- Column Filtering
+- Hiding
+- Resizing
+- Sorting
+- Row Virtualization
+- Accessibility
+- Themes And Styling
+- Column Data Types
 
 `sample="/{GridLiteSample}/overview", height="600", alt="{Platform} {GridLiteTitle} App Sample Main"`
 

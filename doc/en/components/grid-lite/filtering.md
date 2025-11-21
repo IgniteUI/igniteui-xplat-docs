@@ -1,13 +1,13 @@
 ---
-title: {Platform} {GridLiteTitle} Filtering - {ProductName}
-_description: Filter operations, filter customization and remote filtering for {GridLiteTitle}. See demos & examples!
+title: {Platform} {GridLiteTitle} Filtering | {ProductName} | MIT license
+_description: Filter operations, filter customization, and remote filtering for {GridLiteTitle}. Create apps with our open-source {Platform} {GridLiteTitle}. Try it now.
 _keywords: filtering, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
-_license: mit
+_license: MIT
 ---
 
-# {Platform} {GridLiteTitle} Filter operations
+# {Platform} {GridLiteTitle} Filter Operations
 
 <!-- React, WebComponents -->
 The {GridLiteTitle} supports filtering operations on its data source. Data filtering is controlled on per-column level, allowing you to have filterable and non-filterable columns. By default, filtering on a column is disabled unless explicitly configured with the **`filter`** property of the column configuration object.
@@ -71,7 +71,7 @@ new IgbColumnConfiguration
 
 `sample="/{GridLiteSample}/filtering-config", height="600", alt="{Platform} {GridLiteTitle} Filtering Config"`
 
-## Filter model
+## Filter Model
 
 <!-- React, WebComponents -->
 The building blocks for filter operations in the grid is the **`FilterExpression`** which has the following structure:

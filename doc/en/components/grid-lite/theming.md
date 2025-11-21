@@ -1,17 +1,17 @@
 ---
-title: {Platform} {GridLiteTitle} Theming - {ProductName}
-_description: Styling the {GridLiteTitle}. See demos & examples!
+title: {Platform} {GridLiteTitle} Theming | {ProductName} | MIT license
+_description: Styling the {GridLiteTitle} in {ProductName} happens easily and quickly. See demos and examples! Try our open-source components and build your next app.
 _keywords: styling, theming, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
-_license: mit
+_license: MIT
 ---
 
-# Styles and themes
+# Styles and Themes
 
 The {GridLiteTitle} comes with four distinct themes - Bootstrap, Material, Fluent and Indigo. The grid and its UI components have the themes baked in, but the component requires a global stylesheet for palettes, typography and other global configurations to work.
 
-## Loading a base themes
+## Loading a Base Themes
 
 Depending on your project type, setup and build configuration the method of how to include one of the files below will vary. If you are using a framework/build tool refer to its documentation on how to add external styles to your output bundle.
 
@@ -36,7 +36,7 @@ In the sample below, you can preview all the default base themes.
 
 `sample="/{GridLiteSample}/styling-config-themes", height="600", alt="{Platform} {GridLiteTitle} Styling Config Themes"`
 
-## Creating custom themes
+## Creating Custom Themes
 
 Aside from the default themes shipped with the {GridLiteTitle} package, you can also create and modify your own to match your project identity and branding.
 

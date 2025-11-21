@@ -1,10 +1,10 @@
 ---
-title: {Platform} {GridLiteTitle} Data Binding - {ProductName}
-_description: Data binding for {GridLiteTitle}. See demos & examples!
+title: {Platform} {GridLiteTitle} Data Binding - {ProductName} | MIT license
+_description: Data binding for {GridLiteTitle}. Create apps with our open-source {Platform} {GridLiteTitle}. It’s lightweight and packed with essential features. Try now.
 _keywords: data binding, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
-_license: mit
+_license: MIT
 ---
 
 # {Platform} {GridLiteTitle} Data Binding
@@ -19,7 +19,7 @@ The {GridLiteTitle} accepts a `List<T>` as its data source, where `T` is represe
 
 When applying data transformations, such as sorting and filtering, the grid does not modify the original data reference. That is to say, data transformations will not be reflected in the original source. The grid does not track changes to the objects inside the data array, so direct modification of the data objects will not be reflected.
 
-## Change the data source at runtime
+## Change the Data Source at Runtime
 
 The component supports changing its data source at runtime. If the new source has a different "shape" than the previous one make sure to update your column configuration as well.
 

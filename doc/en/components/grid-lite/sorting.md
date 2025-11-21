@@ -1,10 +1,10 @@
 ---
-title: {Platform} {GridLiteTitle} Sorting - {ProductName}
-_description: Sort operations, sort customization and remote sorting for {GridLiteTitle}. See demos & examples!
+title: {Platform} {GridLiteTitle} Sorting  | {ProductName} | MIT license
+_description: Try {GridLiteTitle} with sort operations, sort customization, and remote sorting for {Platform} {GridLiteTitle}. See demos and examples and build your next app.
 _keywords: sorting, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
-_license: mit
+_license: MIT
 ---
 
 # Sort operations
@@ -112,13 +112,13 @@ value for the grid **`SortConfiguration`** property, end-users will cycle throug
 <!-- end: Blazor -->
 
 
-- **Tri-state enabled**
+- **Tri-State Enabled**
 
   - ```typescript
     ascending -> descending -> none -> ascending
     ```
 
-- **Tri-state disabled**
+- **Tri-State Disabled**
 
   - ```typescript
     ascending -> descending -> ascending
@@ -131,7 +131,7 @@ where **`none`** is the initial state of the data, that is to say with no sortin
 where **`None`** is the initial state of the data, that is to say with no sorting applied by the grid.
 <!-- end: Blazor -->
 
-### Sorting indicators
+### Sorting Indicators
 
 When multi-column sort is enabled, the column headers will display a sorting indicator, which is a number representing the order in which the sorting operations were applied.
 
@@ -144,7 +144,7 @@ The following sample shows the grid **`SortConfiguration`** combinations and how
 
 `sample="/{GridLiteSample}/sort-config-grid", height="600", alt="{Platform} {GridLiteTitle} Sorting Config Grid"`
 
-## Sort model
+## Sort Model
 
 <!-- React, WebComponents -->
 The building block for sort operations in the {GridLiteTitle} is the **`SortExpression`** which has the following properties:
@@ -273,7 +273,7 @@ await grid.ClearSort("Price");
 await grid.ClearSort();
 ```
 
-### Initial sorting state
+### Initial Sorting State
 
 <!-- React, WebComponents -->
 The **`sortExpressions`** property is very similar in behavior to the **`sort()`** method call. It exposes a declarative way to control

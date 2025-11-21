@@ -1,10 +1,10 @@
 ---
-title: {Platform} {GridLiteTitle} Cell Template - {ProductName}
-_description: {GridLiteTitle} column configuration and column properties. See demos & examples!
+title: {Platform} {GridLiteTitle} Cell Template | {ProductName} | MIT license
+_description: Grid Lite column configuration and column properties. Try our open-source {Platform} {GridLiteTitle} - lightweight and packed with essential features.
 _keywords: column configuration, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
-_license: mit
+_license: MIT
 ---
 
 # Column Configuration
@@ -44,7 +44,7 @@ columns = new List<IgbColumnConfiguration<ProductInfo>>
 >[!NOTE]
 >As a rule of thumb, the **Column** prop should keep the same reference between renders. The columns are designed to be definitions and to rarely change once the grid is mounted, unless explicitly requested. Otherwise, you take the risk of losing state such as width, renderers, etc. and additional render cycles which may lead to performance degradation. Depending on the technology stack which you use, you can create the array outside the appropriate render function/mechanism or memoize it.
 
-## Configuration based on the data source
+## Configuration Based on the Data Source
 
 The grid supports inferring the column configuration based on the provided data source. It tries to infer the appropriate **`Key`** and **`Type`** props based on records in the data.
 
@@ -124,11 +124,11 @@ Useful for a quick render of some data without any additional customizations.
 >[!NOTE]
 >This is a one-time operation which is executed when the grid is initially added to the DOM. Passing an empty data source or having a late bound data source (such as a HTTP request) will usually result in empty column configuration for the grid. This property is ignored if any existing column configuration already exists in the grid. See [the data binding topic](./binding.md) for additional information on auto-generating the column configuration based on the data source.
 
-## Additional column configuration
+## Additional Column Configuration
 
 The column configuration object exposes several more properties:
 
-### Column width
+### Column Width
 
 By default, the columns have a width of `minmax(136px, 1fr)` which translates to a minimum width of 136px and maximum of
 1 part of the available space in the {GridLiteTitle}. This way the columns are fluid and responsive accommodating for changes
