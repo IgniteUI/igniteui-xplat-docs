@@ -49,7 +49,7 @@ grid.columns = [...];
     };
 
     // Update the column configuration to represent the new data.
-    grid.Columns = new List<ColumnConfiguration>
+    grid.Columns = new List<IgbColumnConfiguration>
     {
         // column definitions
     };
@@ -78,7 +78,7 @@ grid.data = [];
     grid.AutoGenerate = true;
 
     // Reset the previous column collection
-    grid.Columns = new List<ColumnConfiguration>();
+    grid.Columns = new List<IgbColumnConfiguration>();
 
     // After the new binding the grid will infer the column collection from the bound data.
     grid.Data = new List<T>();

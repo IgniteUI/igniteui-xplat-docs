@@ -25,12 +25,12 @@ const accountColumn: ColumnConfiguration<T> = {
 
 <!-- Blazor -->
 
-The columns are defined with the **`Columns`** property which has the type **`List<ColumnConfiguration<T>>`**. **`Key`** is the only required property for the **`ColumnConfiguration<T>`** as the column identifier. It is also the property that is used to map and render the relevant data in the grid rows.
+The columns are defined with the **`Columns`** property which has the type **`List<IgbColumnConfiguration<T>>`**. **`Key`** is the only required property for the **`IgbColumnConfiguration<T>`** as the column identifier. It is also the property that is used to map and render the relevant data in the grid rows.
 
 ```razor
-columns = new List<ColumnConfiguration<ProductInfo>>
+columns = new List<IgbColumnConfiguration<ProductInfo>>
 {
-    new ColumnConfiguration<ProductInfo>
+    new IgbColumnConfiguration<ProductInfo>
     {
         Key = "Name",
         HeaderText = "Product Name",
@@ -110,20 +110,11 @@ The previous snippet will result in the following column configuration for the g
 <!-- end: React, WebComponents -->
 <!-- Blazor -->
 ```razor
-new List<ColumnConfiguration<ProductInfo>>
+new List<IgbColumnConfiguration<ProductInfo>>
 {
-    new ColumnConfiguration<ProductInfo>
-    {
-        Key = "Id", Type = DataType.String
-    },
-    new ColumnConfiguration<ProductInfo>
-    {
-        Key = "Name", Type = DataType.String
-    },
-        new ColumnConfiguration<ProductInfo>
-    {
-        Key = "Price", Type = DataType.Number
-    },
+    new IgbColumnConfiguration<ProductInfo> { Key = "Id", Type = DataType.String },
+    new IgbColumnConfiguration<ProductInfo> { Key = "Name", Type = DataType.String },
+    new IgbColumnConfiguration<ProductInfo> { Key = "Price", Type = DataType.Number },
 }
 ```
 <!-- end: Blazor -->
@@ -156,7 +147,7 @@ To change the width of column, use the **`width`** property of the **`ColumnConf
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-To change the width of column, use the **`Width`** property of the **`ColumnConfiguration`** object.
+To change the width of column, use the **`Width`** property of the **`IgbColumnConfiguration`** object.
 
 
 
@@ -185,7 +176,7 @@ Columns can be hidden/shown by setting the **hidden** property to of the **`Colu
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-Columns can be hidden/shown by setting the **Hidden** property to of the **`ColumnConfiguration`** object.
+Columns can be hidden/shown by setting the **Hidden** property to of the **`IgbColumnConfiguration`** object.
 
 ```razor
 {
