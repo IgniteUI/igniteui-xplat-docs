@@ -590,7 +590,7 @@ The Row Editing overlay is a composite element - its UI is comprised of a couple
 
 In the below example, we will make use of those two components' styling options, ([button styling](button.md#styling) & [banner-styling](../banner.md#styling)), to customize the experience of our `{ComponentName}`'s Row Editing.
 
-We will also style the current cell's editor and background to make it more distinct. You can learn more about cell styling [here](cell-editing.md#styling).
+We will also style the current cell's editor and background to make it more distinct. You can learn more about cell styling in this [topic](cell-editing.md#styling).
 
 ### Import Theme
 
@@ -672,7 +672,7 @@ To further customize our Row Editing overlay, we can pass a custom template so w
 </{ComponentSelector}>
 ```
 
-After we've defined our custom buttons, we can make use of the [button-theme]({environment:sassApiUrl}/index.html#function-button-theme) to style them. You can learn more about `igx-button` styling [here](../button.md#styling). We can create a custom theme for our `Done` and `Cancel`:
+After we've defined our custom buttons, we can make use of the [button-theme]({environment:sassApiUrl}/index.html#function-button-theme) to style them. You can learn more about `igx-button` styling in this [topic](../button.md#styling). We can create a custom theme for our `Done` and `Cancel`:
 
 ```scss
 // custom.component.scss

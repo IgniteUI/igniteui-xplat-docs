@@ -5,11 +5,11 @@ _keywords: {Platform} map, azure maps, {ProductName}, Infragistics, imagery tile
 _license: commercial
 mentionedTypes: ["XamGeographicMap", "AzureMapsImagery", "GeographicTileSeries"]
 ---
-# {Platform} Displaying Imagery from Azure Maps <label>PREVIEW</label>
+# {Platform} Imagery from Azure Maps <label>PREVIEW</label>
 
 The {Platform} `AzureMapsImagery` is geographic imagery mapping service provided by Microsoft®. It provides several styles of geographic imagery tiles of the world. This geographic imagery service is accessible directly on the <a href="https://azure.microsoft.com/en-us/products/azure-maps" target="_blank">www.azure.microsoft.com</a> web site. The {ProductName} map component can display geographic imagery from Azure Maps in the map’s background content using the `AzureMapsImagery` class.
 
-## {Platform} Displaying Imagery from Azure Maps Example
+## {Platform} Displaying Imagery from Azure Maps - Overview
 
 
 <img src="../images/general/AzureMapsImagery.png" />
@@ -19,7 +19,7 @@ The {Platform} `AzureMapsImagery` is geographic imagery mapping service provided
 
 `sample="/maps/geo-map/display-azure-imagery", height="600", alt="{Platform} Displaying Imagery from Azure Maps Example"`
 
-## Code Snippet
+## {Platform} Displaying Imagery from Azure Maps - Code Example
 The following code snippet shows how to display geographic imagery tiles from Azure Maps in {Platform} `XamGeographicMap` using `AzureMapsImagery` class.
 
 ```html
@@ -96,7 +96,7 @@ map.backgroundContent = tileSource;
 }
 ```
 
-## {Platform} Displaying Tile Series Overlays over Imagery from Azure Maps Example
+## {Platform} Overlaying Imagery from Azure Maps - Overview
 
 When working with the `GeographicTileSeries`, you can combine **overlays** (traffic, weather, labels) on top of a **base map style** such as eg. **Satellite**, **Road**, or **DarkGrey**. Using **TerraOverlay** with eg. **Satellite** to visualize terrain.
 
@@ -113,7 +113,7 @@ This design allows you to build richer maps, for example:
 
 <div class="divider--half"></div>
 
-## Code Snippet
+## {Platform} Overlaying Imagery from Azure Maps - Code Example
 The following code snippet shows how to display geographic imagery tiles on top of a background imagery joining eg. traffic with a dark grey map for the {Platform} `XamGeographicMap` using `AzureMapsImagery` and `GeographicTileSeries` classes.
 
 ```html

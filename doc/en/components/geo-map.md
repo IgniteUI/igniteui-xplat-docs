@@ -9,7 +9,7 @@ mentionedTypes: ["XamGeographicMap", "Series"]
 
 The {ProductName} map component allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.
 
-# {Platform} Map Example
+## {Platform} Map Example
 
 The following sample demonstrates how display data in `XamGeographicMap` using `GeographicProportionalSymbolSeries` also known as Bubble Series.
 

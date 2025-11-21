@@ -96,7 +96,6 @@ The {Platform} Step Area Chart belongs to a group of category charts and it is r
 
 <div class="divider--half"></div>
 
-## Advanced Types of Area Charts
 
 The following sections explain more advanced types of {Platform} Area Charts that can be created using the `XamDataChart` control instead of `CategoryChart` control with simplified API.
 

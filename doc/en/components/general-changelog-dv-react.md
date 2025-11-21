@@ -417,7 +417,7 @@ igr-tab-panel component is removed. The igr-tab now encompasses both the tab hea
 |32598 | `IgrDataGrid` | Multi-selection is not working correctly
 |36374 | `IgrInput` | A previous value was bound when a form was submitted on any touch device|
 
-## **{PackageVerChanges-24-2-MAR1}**
+## **{PackageVerChanges-24-2-MAR}**
 
 ### {PackageGrids}
 The following table lists the bug fixes made for the {ProductName} toolset for this release:
@@ -426,7 +426,7 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 |------------|---------|------------------|
 |36864|Grids|There is wrong import path "grids/combined" for the react licensed package|
 
-## **{PackageVerChanges-24-2-MAR}**
+## **{PackageVerChanges-24-2-FEB}**
 
 ### {PackageGrids}
 
@@ -644,7 +644,7 @@ DashboardTile <label>PREVIEW</label>
 
 - `XamRadialGauge`
     - New title/subtitle properties. `TitleText`, `SubtitleText` will appear near the bottom the gauge. In addition, the various title/subtitle font properties were added such as `TitleFontSize`, `TitleFontFamily`, `TitleFontStyle`, `TitleFontWeight` and `TitleExtent`. Finally, the new `TitleDisplaysValue` will allow the value to correspond with the needle's position.  
-    - New `OpticalScalingEnabled` and `OpticalScalingSize` properties for the `XamRadialGauge`. This new feature will manage the size at which labels, titles, and subtitles of the gauge have 100% optical scaling. You can read more about this new feature [here](radial-gauge.md#optical-scaling)
+    - New `OpticalScalingEnabled` and `OpticalScalingSize` properties for the `XamRadialGauge`. This new feature will manage the size at which labels, titles, and subtitles of the gauge have 100% optical scaling. You can read more about this new feature in this [topic](radial-gauge.md#optical-scaling)
     - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear.  
 - `XamLinearGauge`
     - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear. 

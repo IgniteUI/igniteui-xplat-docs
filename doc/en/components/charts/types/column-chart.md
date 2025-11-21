@@ -31,7 +31,7 @@ There are several uses cases for Column Charts. When you:
 - Need to display negative values as well as positive values in the same data set.
 - Have a large, high-volume data set that fits well with the chart interactions like Panning, Zooming, and Drill-down.
 
-### Column Charts Best Practices:
+### Column Charts Best Practices
 
 - Always start the Y-Axis (left or right axis) at 0 so data comparison is accurate.
 - Order time-series data from left to right.
@@ -40,7 +40,7 @@ There are several uses cases for Column Charts. When you:
 
 - You have many (more than 10 or 12) series of data. Your goal is to ensure the chart is readable.
 
-### Column Charts Data Structure:
+### Column Charts Data Structure
 
 - The data model must contain at least one numeric property.
 - The data model may contain an options string or date-time property for labels.

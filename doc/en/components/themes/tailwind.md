@@ -56,7 +56,7 @@ Our color utility classes are powered by tokens from each Ignite UI theme. You c
 ```
 <!-- end: WebComponents -->
 
-You can explore Tailwind’s full color system [here](https://tailwindcss.com/docs/color), and apply it using the Ignite UI-provided class names.
+You can explore Tailwind’s full color system in this [topic](https://tailwindcss.com/docs/color), and apply it using the Ignite UI-provided class names.
 <br>
 
 ### Shadow utility classes
@@ -69,7 +69,7 @@ You can add depth using any of the predefined [elevation levels](https://www.inf
 ```
 <!-- end: WebComponents -->
 
-You can find all the shadow-related utility classes provided by Tailwind [here](https://tailwindcss.com/docs/box-shadow)
+You can find all the shadow-related utility classes provided by Tailwind in this [topic](https://tailwindcss.com/docs/box-shadow)
 <br>
 
 ### Typography custom utility styles

@@ -206,7 +206,7 @@ h3#excel-library-for-the-angular-grid ~ h3{
 
 ## {Platform} Grid Example
 
-In this {Platform} grid example, you can see how users can customize their _data view_ by leveraging the various features built into the grid, like data search and filtering, columns sorting, resizing, pinning and hiding, row selection, export to excel and csv, horizontal and vertical scrolling. We have provided examples for cell templating that includes components like linear progress bar indicator and sparkline. View more features [here](#{PlatformLower}-grid-features).
+In this {Platform} grid example, you can see how users can customize their _data view_ by leveraging the various features built into the grid, like data search and filtering, columns sorting, resizing, pinning and hiding, row selection, export to excel and csv, horizontal and vertical scrolling. We have provided examples for cell templating that includes components like linear progress bar indicator and sparkline. View more features in this [topic](#{PlatformLower}-grid-features).
 
 <div class="divider--half"></div>
 

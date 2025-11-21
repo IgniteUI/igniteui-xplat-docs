@@ -48,7 +48,7 @@ These use cases are commonly used for the following scenarios:
 - Stock Charts.
 - Any String Value Comparing a Numeric Value or Time-Series Value.
 
-### Bar Chart Best Practices:
+### Bar Chart Best Practices
 
 - Start you numeric Axis at 0.
 - Use a single color for the bars.
@@ -61,7 +61,7 @@ These use cases are commonly used for the following scenarios:
 - You have too much data so the Y-Axis can't fit in the space or is not legible.
 - You need a detailed Time-Series analysis  - consider a [Line Chart](line-chart.md) with a Time-Series for this type of data.
 
-### Bar Chart Data Structure:
+### Bar Chart Data Structure
 
 - The data source must be an array or a list of data items.
 - The data source must contain at least one data item.
