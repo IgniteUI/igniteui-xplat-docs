@@ -1595,6 +1595,12 @@
           "href": "charts/features/chart-trendlines.md",
           "status": "UPDATED",
           "premium": true
+        },
+        {
+          "name": "Chart User Annotations",
+          "href": "charts/features/chart-user-annotations.md",
+          "status": "PREVIEW",
+          "premium": true
         }
       ]
   },
