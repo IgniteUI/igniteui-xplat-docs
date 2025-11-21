@@ -16,12 +16,11 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
-### {PackageCharts} (Charts)
-
 **Breaking Changes**
 
 As of the 2025.2 release, we no longer support .NET 6. This corresponds with the [Microsoft .NET Lifecycle, here](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/overview).
 
+### {PackageCharts} (Charts)
 
 #### <label>PREVIEW</label> User Annotations
 
@@ -38,6 +37,10 @@ Ability for axis annotations to automatically detect collisions and truncate to 
 
 - `ShouldAvoidAnnotationCollisions`
 - `ShouldAutoTruncateAnnotations`
+
+### {PackageMaps} (Geographic Map)
+
+- Azure Map Imagery is now RTM.
 
 ### Bug Fixes
 
