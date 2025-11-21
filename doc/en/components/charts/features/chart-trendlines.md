@@ -39,7 +39,7 @@ The `TrendLineLayer` is a series type that is designed to display a single trend
 
 ### Trendline Layer Usage
 
-The `TrendLineLayer` must be provided with a `TargetSeries` and a `TrendLineType` in order to work properly. The different trendline types that are avilable are the same as the trendlines that are available on the series.
+The `TrendLineLayer` must be provided with a `TargetSeries` and a `TrendLineType` in order to work properly. The different trendline types that are available are the same as the trendlines that are available on the series.
 
 If you would like to show the `TrendLineLayer` in the Legend, you can do so by setting the `UseLegend` property to `true`.
 

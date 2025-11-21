@@ -19,7 +19,7 @@ Provide a project name and location, and click **Next**
 
 <img src="../images/general/new-blazor-project-configuring-web-app.jpg" />
 
-In the next step, keep note of the optional Interactivty location setup, as it defaults to per-page, within the Client project. eg. @rendermode InteractiveAuto. The other option, Global, moves the Interactivty rendermode setup to App.razor, in one location, within the shared Blazor project. eg. <Routes @rendermode="InteractiveAuto"/>
+In the next step, keep note of the optional Interactivity location setup, as it defaults to per-page, within the Client project. eg. @rendermode InteractiveAuto. The other option, Global, moves the Interactivity render mode setup to App.razor, in one location, within the shared Blazor project. eg. <Routes @rendermode="InteractiveAuto"/>
 
 Specify additional project options, and click **Create**
 

@@ -387,7 +387,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 |33605 | `IgbDataChart` | 凡例に ScatterLineSeries の線の色が正しく表示されない。|
 |34776 | `IgbDataChart` | IgbDataChart を繰り返し表示したり非表示にしたりすると、JS ヒープでメモリ リークが発生する。|
 |34149 | `IgbGrid` | IgbGrid を繰り返し表示したり非表示にしたりすると、JS ヒープでメモリ リークが発生する。|
-|34224 | `IgbGrid` | rendermode に 'InteractiveAuto' が使用されている場合、アプリがサーバー モードから WebAssembly モードに変更されると、「There are multiple .NET runtimes present」 というエラーが発生する。|
+|34224 | `IgbGrid` | render mode に 'InteractiveAuto' が使用されている場合、アプリがサーバー モードから WebAssembly モードに変更されると、「There are multiple .NET runtimes present」 というエラーが発生する。|
 |34654 | `IgbGrid` | データに空のリストが含まれている場合、NullReferenceException が発生する。|
 |31344 | `IgbGrid` | SelectedRows の双方向バインディングが機能しない。|
 |35439 | `IgbGrid` | アプリを複数のタブで開いた際に、CPU 使用率とメモリ消費が異常に高くなる。|

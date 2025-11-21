@@ -89,7 +89,7 @@ The `TimeXAxis` is the X-Axis type in the `FinancialChart` component.
 
 The `TimeXAxis` has the option to exclude intervals of data by using `Breaks`. As a result, the labels and plotted data will not appear at the excluded interval. For example, working/non-working days, holidays, and/or weekends. An instance of `TimeAxisBreak` can be added to the `Breaks` collection of the axis and configured by using a unique `Start`, `End` and `Interval`.
 
-#### Formating in Time X Axis
+#### Formatting in Time X Axis
 
 The `TimeXAxis` has the `LabelFormats` property, which represents a collection of `TimeAxisLabelFormat` objects. Each `TimeAxisLabelFormat` added to the collection is responsible for assigning a unique `Format` and `Range`. This can be especially useful for drilling down data from years to milliseconds and adjusting the labels depending on the range of time shown by the chart.
 

@@ -262,7 +262,7 @@ Save to Image Action
 
 ### SVG Icons
 
-When adding tools manually, icons can be assigned using the `RenderIconFromText` method. There are three paramters to pass in this method. The first is the icon collection name defined on the tool eg. `IconCollectionName`. The second is the name of the icon defined on the tool eg. `IconName`, followed by adding the SVG string. 
+When adding tools manually, icons can be assigned using the `RenderIconFromText` method. There are three parameters to pass in this method. The first is the icon collection name defined on the tool eg. `IconCollectionName`. The second is the name of the icon defined on the tool eg. `IconName`, followed by adding the SVG string. 
 
 ### Data URL Icons
 
@@ -404,7 +404,7 @@ By default the {Platform} Toolbar is shown horizontally, but it also has the abi
 <IgrToolbar orientation="Vertical" />
 ```
 The following example demonstrates the vertical orientation of the {Platform} Toolbar.
-`sample="/charts/toolbar/layout-in-vertical-orientation", height="600", alt="{Platform} Verical Orientation"`
+`sample="/charts/toolbar/layout-in-vertical-orientation", height="600", alt="{Platform} Vertical Orientation"`
 
 ### Color Editor 
 
