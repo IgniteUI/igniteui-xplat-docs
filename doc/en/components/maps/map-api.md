@@ -20,7 +20,7 @@ The {Platform} `XamGeographicMap` has the following API members:
 - `GetGeographicPoint`
 - `GetPixelPoint`
 
-# {Platform} Geographic Series Types
+## {Platform} Geographic Series Types
 
 The {Platform} `XamGeographicMap` has 7 types of series and they have the `ItemsSource` property for data binding.
 

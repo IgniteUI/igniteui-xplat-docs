@@ -140,8 +140,8 @@ You can specify the region to apply the filter by using the `SetRegion` method o
 
 Below is a list of methods and their descriptions that you can use to add a filter to a worksheet:
 
-| Method			| Description     																	|
-| ------------- 	|:-------------:																	|
+| Method        | Description |
+| --------------|-------------|
 |`ApplyAverageFilter`|Represents a filter which can filter data based on whether the data is below or above the average of the entire data range.|
 |`ApplyDatePeriodFilter`|Represents a filter which can filter dates in a Month, or quarter of any year.|
 |`ApplyFillFilter`|Represents a filter which will filter cells based on their background fills. This filter specifies a single CellFill. Cells of with this fill will be visible in the data range. All other cells will be hidden.|

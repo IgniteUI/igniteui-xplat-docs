@@ -57,7 +57,7 @@ ig
 ```
 
 Then choose React as framework, React TS as type, select **Default Top Navigation** project template, add a specific component/view or select `Complete & Run`.
-Additionally, you can read more about the Ignite UI CLI [here](general-cli-overview.md).
+Additionally, you can read more about the Ignite UI CLI in this [topic](general-cli-overview.md).
 
 Alternatively, you can use popular frameworks such as Next.js, Vite or Expo as recommended by the React team. Following is a step-by-step instructions for creating React applications with Ignite UI React using one of these methods.
 
@@ -122,7 +122,7 @@ ig
 ```
 
 Then choose Web Components as framework, select `Base` project template, add a specific component/view or select `Complete & Run`.
-Additionally, you can read more about the Ignite UI CLI [here](general-cli-overview.md).
+Additionally, you can read more about the Ignite UI CLI in this [topic](general-cli-overview.md).
 
 ## Install Polyfills
 
