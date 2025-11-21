@@ -3,7 +3,7 @@ title: {Platform} Tooltip | Infragistics
 _description: The {ProductName} Tooltip component provides us with the ability to easily create a tooltip and attach it into an element.
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Tooltip components
 _license: MIT
-mentionedTypes: ["Tooltip"]
+mentionedTypes: ["Tooltip", "PopoverPlacement"]
 ---
 
 # {Platform} Tooltip
@@ -244,9 +244,9 @@ If you want to control the delay before showing and hiding the `Tooltip`, you ca
 
 ### Placement
 
-The `Tooltip` can also be positioned relative to its target element with ease. All you need to do is use the `Placement` property along with one of the following position options: `top`, `top-start`, `top-end`, `bottom`, `bottom-start`, `bottom-end `, `right`, `right-start`, `right-end`, `left`, `left-start`, `left-end`.
+The `Tooltip` can also be positioned relative to its target element with ease. All you need to do is use the `Placement` property along with one of the `PopoverPlacement` options.
 
-If the `Placement` property is not set, the default value is `bottom`, which places the `Tooltip` below the target element.
+If the `Placement` property is not set, the default value is `Bottom`, which places the `Tooltip` below the target element.
 
 Additionally, you can make the `Tooltip` "sticky" using the `Sticky` property, which adds a close button and keeps the `Tooltip` visible until the user closes it manually - either by clicking the close button or pressing the `Esc` key. This behavior overrides the default hover behavior, preventing the `Tooltip` from disappearing when the user stops hovering over the target element.
 

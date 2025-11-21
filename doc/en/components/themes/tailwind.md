@@ -86,7 +86,7 @@ Each class applies all necessary font settings, spacing, and sizing according to
 
 ## Sample
 
-In the sample below, you’ll see a 404 page built entirely with Tailwind utility classes, including our `custom utilities` for `shadows`, `colors`, and `typography`.
+In the sample below, you’ll see a 404 page built entirely with Tailwind utility classes, including our "custom utilities" for "shadows", "colors", and "typography".
 
 `sample="/layouts/tailwind/styling", height="400", alt="{Platform} Tailwind Integration"`
 

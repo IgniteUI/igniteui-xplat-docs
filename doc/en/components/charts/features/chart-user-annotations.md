@@ -2,7 +2,7 @@
 title: {Platform} Chart User Annotations | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Chart User Annotations
 _keywords: {Platform} Charts, User Annotations, Infragistics
-mentionedTypes: ["DomainChart", "CategoryChart", "UserAnnotationLayer", "UserStripAnnotation", "UserSliceAnnotation", "UserPointAnnotation", "Toolbar", "UserAnnotationInformation"]
+mentionedTypes: ["DataChart", "UserAnnotationLayer", "UserStripAnnotation", "UserSliceAnnotation", "UserPointAnnotation", "Toolbar", "UserAnnotationInformation", "SeriesViewer"]
 namespace: Infragistics.Controls.Charts
 ---
 
@@ -73,15 +73,13 @@ The tooltip is designed to work in tandem with the `UserAnnotationInformationReq
 
 The following is a list of API members mentioned in the above sections:
 
-- `XamDataChart`
-- `IsUserAnnotationsEnabled`
-- `AnnotationInfo`
-- `CancelAnnotationFlow`
-- `StartCreatingAnnotation`
-- `StartDeletingAnnotation`
+- `XamDataChart`.`SeriesViewer.IsUserAnnotationsEnabled`
+- `XamDataChart`.`SeriesViewer.UserAnnotationInformationRequested`
+- `XamDataChart`.`SeriesViewer.userAnnotationToolTipContentUpdating`
+- `XamDataChart`.`SeriesViewer.CancelAnnotationFlow`
+- `XamDataChart`.`SeriesViewer.StartCreatingAnnotation`
+- `XamDataChart`.`SeriesViewer.StartDeletingAnnotation`
 - `UserAnnotationInformation`
-- `UserAnnotationInformationRequested`
-- `UserAnnotationToolTipContentUpdating`
 - `UserSliceAnnotation`
 - `UserStripAnnotation`
 - `UserPointAnnotation`

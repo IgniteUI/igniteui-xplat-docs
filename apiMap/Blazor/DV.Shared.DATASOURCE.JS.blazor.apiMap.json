@@ -739,6 +739,7 @@
     "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "WrapperExpression.cs","mappedName": "IgbWrapperExpression"}],
     "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "EnsureInnerExpression"}], "originalName": "EnsureInnerExpression"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpression","mappedName": "Expression"}], "originalName": "Expression"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbFilterExpression","mappedName": "InnerExpression"}], "originalName": "InnerExpression"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsWrapper"}], "originalName": "IsWrapper"},
@@ -858,6 +859,54 @@
     "names":[{"platform": "Blazor","fileName": "YearToDateExpression.cs","mappedName": "IgbYearToDateExpression"}]
   },
   {
+    "originalName": "MonthToDateExpression",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeName": "WrapperExpression",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "MonthToDateExpression.cs","mappedName": "IgbMonthToDateExpression"}]
+  },
+  {
+    "originalName": "QuarterToDateExpression",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeName": "WrapperExpression",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "QuarterToDateExpression.cs","mappedName": "IgbQuarterToDateExpression"}]
+  },
+  {
+    "originalName": "TrailingTwelveMonthsExpression",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeName": "WrapperExpression",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "TrailingTwelveMonthsExpression.cs","mappedName": "IgbTrailingTwelveMonthsExpression"}]
+  },
+  {
+    "originalName": "LastSevenDaysExpression",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeName": "WrapperExpression",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "LastSevenDaysExpression.cs","mappedName": "IgbLastSevenDaysExpression"}]
+  },
+  {
+    "originalName": "LastThirtyDaysExpression",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeName": "WrapperExpression",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "LastThirtyDaysExpression.cs","mappedName": "IgbLastThirtyDaysExpression"}]
+  },
+  {
+    "originalName": "LastThreeSixtyFiveDaysExpression",
+    "originalNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalBaseTypeName": "WrapperExpression",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "LastThreeSixtyFiveDaysExpression.cs","mappedName": "IgbLastThreeSixtyFiveDaysExpression"}]
+  },
+  {
     "originalName": "ThisQuarterExpression",
     "originalNamespace": "Infragistics.Controls.DataSource",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
@@ -963,7 +1012,7 @@
     "packageName": "igniteui-core",
     "names":[{"platform": "Blazor","fileName": "DataSourceAggregatedResult.cs","mappedName": "IgbDataSourceAggregatedResult"}],
     "members":[
-      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "Item"}], "originalName": "Item"},
+      {"names":[{"platform": "Blazor", "mappedType": "object","mappedName": "Item"}], "originalName": "Item"},
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "Keys"}], "originalName": "Keys"},
       {"names":[{"platform": "Blazor", "mappedType": "TransactionType","mappedName": "TransactionType"}], "originalName": "TransactionType"},
       {"names":[{"platform": "Blazor", "mappedType": "object[]","mappedName": "Values"}], "originalName": "Values"} ]

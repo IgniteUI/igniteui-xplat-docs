@@ -174,6 +174,7 @@
     "packageName": "igniteui-layouts",
     "names":[{"platform": "Blazor","fileName": "ToolActionColorEditor.cs","mappedName": "IgbToolActionColorEditor"}],
     "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Value"}], "originalName": "Value"} ]
   },
   {
@@ -185,6 +186,7 @@
     "names":[{"platform": "Blazor","fileName": "ToolActionCombo.cs","mappedName": "IgbToolActionCombo"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "DisplayMemberPath"}], "originalName": "DisplayMemberPath"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "DataSource"}], "originalName": "ItemsSource"},
       {"names":[{"platform": "Blazor", "mappedType": "IgbLayoutSelectedItemsCollection","mappedName": "SelectedValues"}], "originalName": "SelectedValues"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ValueMemberPath"}], "originalName": "ValueMemberPath"} ]
@@ -203,6 +205,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualRightIconStroke"}], "originalName": "ActualRightIconStroke"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "CornerRadius"}], "originalName": "CornerRadius"},
       {"names":[{"platform": "Blazor", "mappedType": "ToolActionButtonGroupDisplayType","mappedName": "DisplayType"}], "originalName": "DisplayType"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsToggleDisabled"}], "originalName": "IsToggleDisabled"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LeftCommandArgument"}], "originalName": "LeftCommandArgument"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "LeftIconCollectionName"}], "originalName": "LeftIconCollectionName"},
@@ -244,6 +247,7 @@
     "names":[{"platform": "Blazor","fileName": "ToolActionCheckboxList.cs","mappedName": "IgbToolActionCheckboxList"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "DataMemberPath"}], "originalName": "DataMemberPath"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "Blazor", "mappedType": "ToolActionCheckboxListIndexType","mappedName": "IndexType"}], "originalName": "IndexType"},
       {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "DataSource"}], "originalName": "ItemsSource"},
       {"names":[{"platform": "Blazor", "mappedType": "string[]","mappedName": "PrimaryKey"}], "originalName": "PrimaryKey"},
@@ -317,6 +321,7 @@
     "packageName": "igniteui-layouts",
     "names":[{"platform": "Blazor","fileName": "ToolActionSubPanel.cs","mappedName": "IgbToolActionSubPanel"}],
     "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "ItemSpacing"}], "originalName": "ItemSpacing"} ]
   },
   {
@@ -327,6 +332,7 @@
     "packageName": "igniteui-layouts",
     "names":[{"platform": "Blazor","fileName": "ToolActionTextInput.cs","mappedName": "IgbToolActionTextInput"}],
     "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Value"}], "originalName": "Value"} ]
   },
   {
@@ -338,7 +344,8 @@
     "names":[{"platform": "Blazor","fileName": "ToolActionButton.cs","mappedName": "IgbToolActionButton"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "CornerRadius"}], "originalName": "CornerRadius"},
-      {"names":[{"platform": "Blazor", "mappedType": "ToolActionButtonDisplayType","mappedName": "DisplayType"}], "originalName": "DisplayType"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "ToolActionButtonDisplayType","mappedName": "DisplayType"}], "originalName": "DisplayType"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportVisualData"}], "originalName": "ExportVisualData"} ]
   },
   {
     "originalName": "ToolActionLabel",
@@ -346,7 +353,9 @@
     "originalBaseTypeNamespace": "Infragistics.Controls.Layouts.Implementation",
     "originalBaseTypeName": "ToolAction",
     "packageName": "igniteui-layouts",
-    "names":[{"platform": "Blazor","fileName": "ToolActionLabel.cs","mappedName": "IgbToolActionLabel"}]
+    "names":[{"platform": "Blazor","fileName": "ToolActionLabel.cs","mappedName": "IgbToolActionLabel"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportVisualData"}], "originalName": "ExportVisualData"} ]
   },
   {
     "originalName": "ToolActionRadio",
@@ -363,6 +372,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Channel"}], "originalName": "Channel"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "CheckedBackgroundColor"}], "originalName": "CheckedBackgroundColor"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "CheckedBorderColor"}], "originalName": "CheckedBorderColor"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsChecked"}], "originalName": "IsChecked"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsManual"}], "originalName": "IsManual"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "UncheckedBackgroundColor"}], "originalName": "UncheckedBackgroundColor"},
@@ -376,6 +386,7 @@
     "packageName": "igniteui-layouts",
     "names":[{"platform": "Blazor","fileName": "ToolActionSeparator.cs","mappedName": "IgbToolActionSeparator"}],
     "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsGroupHeaderSeparator"}], "originalName": "IsGroupHeaderSeparator"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Size"}], "originalName": "Size"} ]
   },
@@ -410,7 +421,8 @@
     "names":[{"platform": "Blazor","fileName": "ToolActionGroupHeader.cs","mappedName": "IgbToolActionGroupHeader"}],
     "members":[
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualBackIconColor"}], "originalName": "ActualBackIconColor"},
-      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "BackIconColor"}], "originalName": "BackIconColor"} ]
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "BackIconColor"}], "originalName": "BackIconColor"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportVisualData"}], "originalName": "ExportVisualData"} ]
   },
   {
     "originalName": "ToolActionIconMenu",
@@ -439,6 +451,7 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "ActualUncheckedBorderColor"}], "originalName": "ActualUncheckedBorderColor"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "CheckedBackgroundColor"}], "originalName": "CheckedBackgroundColor"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "CheckedBorderColor"}], "originalName": "CheckedBorderColor"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "Blazor", "mappedType": "bool",    "mappedName": "IsChecked"}], "originalName": "IsChecked"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "UncheckedBackgroundColor"}], "originalName": "UncheckedBackgroundColor"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "UncheckedBorderColor"}], "originalName": "UncheckedBorderColor"} ]
@@ -451,6 +464,7 @@
     "packageName": "igniteui-layouts",
     "names":[{"platform": "Blazor","fileName": "ToolActionNumberInput.cs","mappedName": "IgbToolActionNumberInput"}],
     "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "Blazor", "mappedType": "double","mappedName": "Value"}], "originalName": "Value"} ]
   },
   {
