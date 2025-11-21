@@ -30,10 +30,10 @@ The default behavior `SelectionMode` turned off and requires opting into one of 
 - **ThickOutline**
 
 `Brighten` will fade the selected item while `FadeOthers` will cause the opposite effect occur.
-`GrayscaleOthers` will behave similarily to `FadeOthers` but instead show a gray color to the rest of the series. Note this will override any `SelectionBrush` setting.
+`GrayscaleOthers` will behave similarly to `FadeOthers` but instead show a gray color to the rest of the series. Note this will override any `SelectionBrush` setting.
 `SelectionColorOutline` and `SelectionColorThickOutline` will draw a border around the series.
 
-In conjuction, a `SelectionBehavior` is available to provide greater control on which items get selected. The default behavior for Auto is `PerSeriesAndDataItemMultiSelect`.
+In conjunction, a `SelectionBehavior` is available to provide greater control on which items get selected. The default behavior for Auto is `PerSeriesAndDataItemMultiSelect`.
 
 - **Auto** 
 - **PerDataItemMultiSelect**
@@ -53,7 +53,7 @@ The following example shows the combination of both `SelectionColorFill` and `Au
 
 ## Configuring Multiple Selection
 
-Other selection modes offer various methods of selection. For example using `SelectionBehavior` with `PerDataItemMultiSelect` will effect all series in entire category when multiple series are present while allowing selection across categories. Compared to `PerDataItemSingleSelect`, only a single category of items can be selected at a time. This is useful if mutliple series are bound to different datasources and provides greater control of selection between categories.
+Other selection modes offer various methods of selection. For example using `SelectionBehavior` with `PerDataItemMultiSelect` will effect all series in entire category when multiple series are present while allowing selection across categories. Compared to `PerDataItemSingleSelect`, only a single category of items can be selected at a time. This is useful if multiple series are bound to different datasources and provides greater control of selection between categories.
 `PerSeriesAndDataItemGlobalSingleSelect` allows single series selection across all categories at a time.
 
 `sample="/charts/category-chart/selection-multiple-modes", height="450", alt="{Platform} Category Chart Selection Multiple Modes Example"`

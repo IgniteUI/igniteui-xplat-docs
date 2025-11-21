@@ -114,7 +114,7 @@ This design allows you to build richer maps, for example:
 <div class="divider--half"></div>
 
 ## Code Snippet
-The following code snippet shows how to display geographic imagery tiles ontop of a background imagery joining eg. traffic with a dark grey map for the {Platform} `XamGeographicMap` using `AzureMapsImagery` and `GeographicTileSeries` classes.
+The following code snippet shows how to display geographic imagery tiles on top of a background imagery joining eg. traffic with a dark grey map for the {Platform} `XamGeographicMap` using `AzureMapsImagery` and `GeographicTileSeries` classes.
 
 ```html
 <igx-geographic-map #map height="100%" width="100%" zoomable="true">

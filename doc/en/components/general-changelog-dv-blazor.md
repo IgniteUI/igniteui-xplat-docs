@@ -377,7 +377,7 @@ The following properties of these components are now nullable:
 |------------|---------|------------------|
 |25602 | `IgbDataGrid` | Loading a layout with one of the date-specific filter operators results in a TypeError console error|
 |28480 | `IgbCombo` | Undefined reference error is thrown when a datasource is replaced|
-|32598 | `IgbDataGrid` | Multiselection is not working correctly
+|32598 | `IgbDataGrid` | Multi-selection is not working correctly
 |36374 | `IgbInput` | A previous value was bound when a form was submitted on any touch device|
 |37214|General|Intermittent error in Blazor's WebCallback.Register()
 
@@ -418,7 +418,7 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 |35498 | `IgbDataChart` | Tooltips for the series specified in IncludedSeries are not displayed|
 |31344 | `IgbGrid` | Two way binding for the SelectedRows doesn't work|
 |34149 | `IgbGrid` | Repeatedly showing and hiding the IgbGrid causes memory leakage in JS Heap|
-|34224 | `IgbGrid` | 'There are multiple .NET runtimes present' error is thrown when the app changes from Server mode to WebAssembly mode if 'InteractiveAuto' is used for the rendermode|
+|34224 | `IgbGrid` | 'There are multiple .NET runtimes present' error is thrown when the app changes from Server mode to WebAssembly mode if 'InteractiveAuto' is used for the render mode|
 |34654 | `IgbGrid` | NullReferenceException is thrown if a data contains an empty list|
 |35439 | `IgbGrid` | CPU usage and Memory consumption are abnormally high when the app is opened in multiple tabs|
 |36024 | `IgbGrid` | The JS heap size never reduced when moving back and forth between two pages with IgbGrid component|

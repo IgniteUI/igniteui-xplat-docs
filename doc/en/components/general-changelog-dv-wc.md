@@ -177,7 +177,7 @@ Added support for suffix content within the cells that allows you to add additio
 - `SuffixIconViewBoxHeight`
 - `TextDecoration`
 
-Please note that the maximum size available for the icons is 24x24. You can provide an icon that is larger or smaller than this, but you will need to configure the view-box settings in order to properly scale it to fit in the 24x24 space so it is fully visible.
+Please note that the maximum size available for the icons is 24x24. You can provide an icon that is larger or smaller than this, but you will need to configure the viewbox settings in order to properly scale it to fit in the 24x24 space so it is fully visible.
 
 
 ### Bug Fixes

@@ -155,7 +155,7 @@ The `XamDataLegend` has several events that fire when rendering their correspond
 
 Some of the events exposes a `DataLegendStylingRowEventArgs` parameter as its arguments, which lets you customize each item's text, text color, and the overall visibility of the row. The event arguments also expose event-specific properties. For example, since the `StyleSeriesRow` event fires for each series, the event arguments will return the series index and series title for the row that represents the series. 
 
-`StyleSummaryColumn` and `SeriesStyleColumn` events expose a `DataLegendStylingColumnEventArgs` parameter as its arguments, for customizing each field in the series. The event arguments also expose event-specific properties such as column index and value member related properies about the columns.
+`StyleSummaryColumn` and `SeriesStyleColumn` events expose a `DataLegendStylingColumnEventArgs` parameter as its arguments, for customizing each field in the series. The event arguments also expose event-specific properties such as column index and value member related properties about the columns.
 
 `sample="/charts/data-chart/data-legend-styling", height="450", alt="{Platform} Data Legend Styling"`
 

@@ -20,7 +20,7 @@ Visual Studio 2022 を起動し、開始ページで **[新しいプロジェク
 
 <img src="../images/general/new-blazor-project-configuring-web-app.jpg" />
 
-次のステップでは、オプションの Interactivty の場所の設定に注意してください。これは、クライアント プロジェクト内のページごとにデフォルト設定されます (例: @rendermode Interactive Auto)。もう 1 つのオプションである Global では、Interactivty レンダリング モードの設定を、共有 Blazor プロジェクト内の 1 つの場所にある App.razor に移動します。
+次のステップでは、オプションの Interactivity の場所の設定に注意してください。これは、クライアント プロジェクト内のページごとにデフォルト設定されます (例: @rendermode Interactive Auto)。もう 1 つのオプションである Global では、Interactivity レンダリング モードの設定を、共有 Blazor プロジェクト内の 1 つの場所にある App.razor に移動します。
 
 例: <Routes @rendermode="InteractiveAuto"/>
 
