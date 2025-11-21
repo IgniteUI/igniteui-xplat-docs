@@ -474,60 +474,60 @@ The `Chat` component exposes both **CSS parts** and **slots** for fine-grained c
 
 | Part name                       | Description                                                                          |
 | ------------------------------- | ------------------------------------------------------------------------------------ |
-| `chat-container`                | Styles the main chat container.                                                      |
-| `header`                        | Styles the chat header container.                                                    |
-| `prefix`                        | Styles the element before the chat title (e.g., avatar).                             |
-| `title`                         | Styles the chat header title.                                                        |
-| `message-area-container`        | Styles the container holding the messages and (optional) suggestions.                |
-| `message-list`                  | Styles the message list container.                                                   |
-| `message-item`                  | Styles each message wrapper.                                                         |
-| `typing-indicator`              | Styles the typing indicator container.                                               |
-| `typing-dot`                    | Styles individual typing indicator dots.                                             |
-| `suggestions-container`         | Styles the container holding all suggestions.                                        |
-| `suggestions-header`            | Styles the suggestions header.                                                       |
-| `suggestion`                    | Styles each suggestion item.                                                         |
-| `suggestion-prefix`             | Styles the icon or prefix in a suggestion.                                           |
-| `suggestion-title`              | Styles the text/title of a suggestion.                                               |
-| `empty-state`                   | Styles the empty state container when there are no messages.                         |
-| `input-area-container`          | Styles the wrapper around the chat input area.                                       |
-| `input-container`               | Styles the main input container.                                                     |
-| `input-attachments-container`   | Styles the container for attachments in the input.                                   |
-| `input-attachment-container`    | Styles a single attachment in the input area.                                        |
-| `input-attachment-name`         | Styles the file name of an attachment.                                               |
-| `input-attachment-icon`         | Styles the icon of an attachment.                                                    |
-| `text-input`                    | Styles the text input field for typing messages.                                     |
-| `input-actions-container`       | Styles the container for input actions.                                              |
-| `input-actions-start`           | Styles the group of actions at the start of the input after the default file upload. |
-| `input-actions-end`             | Styles the group of actions at the end of the input.                                 |
-| `file-upload-container`         | Styles the container for the file upload input.                                      |
-| `file-upload`                   | Styles the file upload input itself.                                                 |
-| `send-button-container`         | Styles the container around the send button.                                         |
-| `send-button`                   | Styles the send button.                                                              |
-| `message-container`             | Styles the container of a single message.                                            |
-| `message-list (forwarded)`      | Styles the internal list of messages.                                                |
-| `message-header`                | Styles the header of a message (e.g., sender, timestamp).                            |
-| `message-content`               | Styles the text content of a message.                                                |
-| `message-attachments-container` | Styles the container for message attachments.                                        |
-| `message-attachment`            | Styles a single message attachment.                                                  |
-| `message-actions-container`     | Styles the container holding message actions.                                        |
-| `message-sent`                  | Styles messages marked as sent by the current user.                                  |
-| `attachment-header`             | Styles the header of an attachment block.                                            |
-| `attachment-content`            | Styles the content of an attachment block.                                           |
-| `attachment-icon`               | Styles the icon of an attachment.                                                    |
-| `file-name`                     | Styles the file name shown in an attachment.                                         |
+| "chat-container"                | Styles the main chat container.                                                      |
+| "header"                        | Styles the chat header container.                                                    |
+| "prefix"                        | Styles the element before the chat title (e.g., avatar).                             |
+| "title"                         | Styles the chat header title.                                                        |
+| "message-area-container"        | Styles the container holding the messages and (optional) suggestions.                |
+| "message-list"                  | Styles the message list container.                                                   |
+| "message-item"                  | Styles each message wrapper.                                                         |
+| "typing-indicator"              | Styles the typing indicator container.                                               |
+| "typing-dot"                    | Styles individual typing indicator dots.                                             |
+| "suggestions-container"         | Styles the container holding all suggestions.                                        |
+| "suggestions-header"            | Styles the suggestions header.                                                       |
+| "suggestion"                    | Styles each suggestion item.                                                         |
+| "suggestion-prefix"             | Styles the icon or prefix in a suggestion.                                           |
+| "suggestion-title"              | Styles the text/title of a suggestion.                                               |
+| "empty-state"                   | Styles the empty state container when there are no messages.                         |
+| "input-area-container"          | Styles the wrapper around the chat input area.                                       |
+| "input-container"               | Styles the main input container.                                                     |
+| "input-attachments-container"   | Styles the container for attachments in the input.                                   |
+| "input-attachment-container"    | Styles a single attachment in the input area.                                        |
+| "input-attachment-name"         | Styles the file name of an attachment.                                               |
+| "input-attachment-icon"         | Styles the icon of an attachment.                                                    |
+| "text-input"                    | Styles the text input field for typing messages.                                     |
+| "input-actions-container"       | Styles the container for input actions.                                              |
+| "input-actions-start"           | Styles the group of actions at the start of the input after the default file upload. |
+| "input-actions-end"             | Styles the group of actions at the end of the input.                                 |
+| "file-upload-container"         | Styles the container for the file upload input.                                      |
+| "file-upload"                   | Styles the file upload input itself.                                                 |
+| "send-button-container"         | Styles the container around the send button.                                         |
+| "send-button"                   | Styles the send button.                                                              |
+| "message-container"             | Styles the container of a single message.                                            |
+| "message-list (forwarded)"      | Styles the internal list of messages.                                                |
+| "message-header"                | Styles the header of a message (e.g., sender, timestamp).                            |
+| "message-content"               | Styles the text content of a message.                                                |
+| "message-attachments-container" | Styles the container for message attachments.                                        |
+| "message-attachment"            | Styles a single message attachment.                                                  |
+| "message-actions-container"     | Styles the container holding message actions.                                        |
+| "message-sent"                  | Styles messages marked as sent by the current user.                                  |
+| "attachment-header"             | Styles the header of an attachment block.                                            |
+| "attachment-content"            | Styles the content of an attachment block.                                           |
+| "attachment-icon"               | Styles the icon of an attachment.                                                    |
+| "file-name"                     | Styles the file name shown in an attachment.                                         |
 
 ### Slots
 
 | Slot name             | Description                                                              |
 | --------------------- | ------------------------------------------------------------------------ |
-| `prefix`              | Slot for injecting content (e.g., avatar or icon) before the chat title. |
-| `title`               | Slot for overriding the chat title content.                              |
-| `actions`             | Slot for injecting header actions (e.g., buttons, menus).                |
-| `suggestions-header`  | Slot for rendering a custom header for the suggestions list.             |
-| `suggestions`         | Slot for rendering a custom list of quick reply suggestions.             |
-| `suggestions-actions` | Slot for rendering additional actions.                                   |
-| `suggestion`          | Slot for rendering a single suggestion item.                             |
-| `empty-state`         | Slot shown when there are no messages.                                   |
+| "prefix"              | Slot for injecting content (e.g., avatar or icon) before the chat title. |
+| "title"               | Slot for overriding the chat title content.                              |
+| "actions"             | Slot for injecting header actions (e.g., buttons, menus).                |
+| "suggestions-header"  | Slot for rendering a custom header for the suggestions list.             |
+| "suggestions"         | Slot for rendering a custom list of quick reply suggestions.             |
+| "suggestions-actions" | Slot for rendering additional actions.                                   |
+| "suggestion"          | Slot for rendering a single suggestion item.                             |
+| "empty-state"         | Slot shown when there are no messages.                                   |
 
 #### Root Style Adoption (adoptRootStyles)
 
@@ -545,8 +545,8 @@ However, it comes with trade-offs:
 
 We highly recommend using the standard Web Component styling approaches before resorting to this property:
 - CSS Variables and ::part API – Prefer customizing via exposed parts and variables.
-- `<link>` elements – For larger stylesheets, inject them inside the Shadow DOM.
-- Inline `<style>` tags – For small, scoped style overrides.
+- "<link>" elements – For larger stylesheets, inject them inside the Shadow DOM.
+- Inline "<style>" tags – For small, scoped style overrides.
 
 #### Example
 
@@ -578,7 +578,7 @@ This allows you to style the `Chat` to match your brand without replacing its fu
 - `ChatMessageAttachment`
 - `ChatRenderers`
 - `ChatTemplateRenderer`
-- [`Styling & Themes`](../themes/overview.md)
+- [Styling & Themes](../themes/overview.md)
 
 ## Additional Resources
 

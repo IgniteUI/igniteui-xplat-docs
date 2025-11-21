@@ -117,6 +117,17 @@
       {"names":[{"platform": "Blazor", "mappedType": "RandomnessSource","mappedName": "testRandomnessSource"}], "originalName": "TestRandomnessSource"} ]
   },
   {
+    "originalName": "ImageLoadEventArgs",
+    "originalNamespace": "Infragistics",
+    "packageName": "igniteui-core",
+    "names":[{"platform": "Blazor","fileName": "ImageLoadEventArgs.cs","mappedName": "IgbImageLoadEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Blazor", "mappedType": "Object","mappedName": "Data"}], "originalName": "Data"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Error"}], "originalName": "Error"},
+      {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "Path"}], "originalName": "Path"},
+      {"names":[{"platform": "Blazor", "mappedType": "ImageLoadStatus","mappedName": "Status"}], "originalName": "Status"} ]
+  },
+  {
     "originalName": "FontRegistry",
     "originalNamespace": "Infragistics.Controls",
     "packageName": "igniteui-core",

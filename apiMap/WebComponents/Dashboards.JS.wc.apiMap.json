@@ -1,0 +1,302 @@
+{
+  "extraFiles": [
+    "igc-dashboard-tile-module.ts",
+    "igc-data-chart-dashboard-tile-module.ts",
+    "igc-geographic-map-dashboard-tile-module.ts",
+    "igc-linear-gauge-dashboard-tile-module.ts",
+    "igc-pie-chart-dashboard-tile-module.ts",
+    "igc-radial-gauge-dashboard-tile-module.ts"
+  ],
+  "types":[
+  {
+    "originalName": "DataChartDashboardTileFeature",
+    "originalNamespace": "Infragistics.Controls.Dashboards",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "WebComponents","fileName": "DataChartDashboardTileFeature.ts","mappedName": "DataChartDashboardTileFeature"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+  },
+  {
+    "originalName": "PieChartDashboardTileFeature",
+    "originalNamespace": "Infragistics.Controls.Dashboards",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "WebComponents","fileName": "PieChartDashboardTileFeature.ts","mappedName": "PieChartDashboardTileFeature"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+  },
+  {
+    "originalName": "RadialGaugeDashboardTileFeature",
+    "originalNamespace": "Infragistics.Controls.Dashboards",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "WebComponents","fileName": "RadialGaugeDashboardTileFeature.ts","mappedName": "RadialGaugeDashboardTileFeature"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+  },
+  {
+    "originalName": "LinearGaugeDashboardTileFeature",
+    "originalNamespace": "Infragistics.Controls.Dashboards",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "WebComponents","fileName": "LinearGaugeDashboardTileFeature.ts","mappedName": "LinearGaugeDashboardTileFeature"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+  },
+  {
+    "originalName": "GeographicMapDashboardTileFeature",
+    "originalNamespace": "Infragistics.Controls.Dashboards",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "WebComponents","fileName": "GeographicMapDashboardTileFeature.ts","mappedName": "GeographicMapDashboardTileFeature"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+  },
+  {
+    "originalName": "DataSeriesToDescriptionAdapterSettings",
+    "originalNamespace": "Infragistics.Controls.Dashboards",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "WebComponents","fileName": "DataSeriesToDescriptionAdapterSettings.ts","mappedName": "DataSeriesToDescriptionAdapterSettings"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "addCoercion"}], "originalName": "AddCoercion"},
+      {"names":[{"platform": "WebComponents", "mappedType": "TypeDescriptionContext","mappedName": "context"}], "originalName": "Context"},
+      {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesToDescriptionCustomizations","mappedName": "customizations"}], "originalName": "Customizations"},
+      {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "getSettingsValue"}], "originalName": "GetSettingsValue"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "hasSettingsValue"}], "originalName": "HasSettingsValue"},
+      {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "originalData"}], "originalName": "OriginalData"},
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "provideSettings"}], "originalName": "ProvideSettings"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "refNamespace"}], "originalName": "RefNamespace"},
+      {"names":[{"platform": "WebComponents", "mappedType": "(value: any) => any","mappedName": "resolveCoercion"}], "originalName": "ResolveCoercion"},
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "setSettingsValue"}], "originalName": "SetSettingsValue"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "shouldPreferRadialCategories"}], "originalName": "ShouldPreferRadialCategories"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "shouldStackCategories"}], "originalName": "ShouldStackCategories"},
+      {"names":[{"platform": "WebComponents", "mappedType": "Dictionary","mappedName": "_handlers"}], "originalName": "_handlers"},
+      {"names":[{"platform": "WebComponents", "mappedType": "Dictionary","mappedName": "_settings"}], "originalName": "_settings"} ]
+  },
+  {
+    "originalName": "DashboardTile",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "WebComponents","fileName": "igc-dashboard-tile-component.ts","mappedName": "IgcDashboardTileComponent"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "actualBrushes"}], "originalName": "ActualBrushes"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "actualOutlines"}], "originalName": "ActualOutlines"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "addCommandAvailabilityListener"}], "originalName": "AddCommandAvailabilityListener"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "addCommandStateChangedListener"}], "originalName": "AddCommandStateChangedListener"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "autoCalloutsVisible"}], "originalName": "AutoCalloutsVisible"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "backgroundColor"}], "originalName": "BackgroundColor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "BaseControlTheme","mappedName": "baseTheme"}], "originalName": "BaseTheme"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "brushes"}], "originalName": "Brushes"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "cancelAnnotationFlow"}], "originalName": "CancelAnnotationFlow"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "categoryAxisMajorStroke"}], "originalName": "CategoryAxisMajorStroke"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "clearSettings"}], "originalName": "ClearSettings"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "crosshairsAnnotationEnabled"}], "originalName": "CrosshairsAnnotationEnabled"},
+      {"names":[{"platform": "WebComponents", "mappedType": "CrosshairsDisplayMode","mappedName": "crosshairsDisplayMode"}], "originalName": "CrosshairsDisplayMode"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcDashboardTileCustomizationCollection","mappedName": "customizations"}], "originalName": "Customizations"},
+      {"names":[{"platform": "WebComponents", "mappedType": "ControlDisplayDensity","mappedName": "density"}], "originalName": "Density"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "excludedProperties"}], "originalName": "ExcludedProperties"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcFilterExpressionCollection","mappedName": "filterExpressions"}], "originalName": "FilterExpressions"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "finalValueAnnotationsVisible"}], "originalName": "FinalValueAnnotationsVisible"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "finishAnnotationFlow"}], "originalName": "FinishAnnotationFlow"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getDesiredToolbarActions"}], "originalName": "GetDesiredToolbarActions"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getSettingsValue"}], "originalName": "GetSettingsValue"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcDashboardTileSortDescriptionCollection","mappedName": "groupDescriptions"}], "originalName": "GroupDescriptions"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcDashboardTileSortDescriptionCollection","mappedName": "groupSortDescriptions"}], "originalName": "GroupSortDescriptions"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "groupSorts"}], "originalName": "GroupSorts"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "hasModifiedSettings"}], "originalName": "HasModifiedSettings"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcFilterExpressionCollection","mappedName": "highlightFilterExpressions"}], "originalName": "HighlightFilterExpressions"},
+      {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "highlightedDataSource"}], "originalName": "HighlightedItemsSource"},
+      {"names":[{"platform": "WebComponents", "mappedType": "SeriesHighlightedValuesDisplayMode","mappedName": "highlightedValuesDisplayMode"}], "originalName": "HighlightedValuesDisplayMode"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "includedProperties"}], "originalName": "IncludedProperties"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "initialFilter"}], "originalName": "InitialFilter"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcFilterExpressionCollection","mappedName": "initialFilterExpressions"}], "originalName": "InitialFilterExpressions"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcDashboardTileSortDescriptionCollection","mappedName": "initialGroupDescriptions"}], "originalName": "InitialGroupDescriptions"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcDashboardTileSortDescriptionCollection","mappedName": "initialGroupSortDescriptions"}], "originalName": "InitialGroupSortDescriptions"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "initialGroups"}], "originalName": "InitialGroups"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "initialHighlightFilter"}], "originalName": "InitialHighlightFilter"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcFilterExpressionCollection","mappedName": "initialHighlightFilterExpressions"}], "originalName": "InitialHighlightFilterExpressions"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcDashboardTileSortDescriptionCollection","mappedName": "initialSortDescriptions"}], "originalName": "InitialSortDescriptions"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "initialSorts"}], "originalName": "InitialSorts"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "initialSummaries"}], "originalName": "InitialSummaries"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcDashboardTileSummaryDescriptionCollection","mappedName": "initialSummaryDescriptions"}], "originalName": "InitialSummaryDescriptions"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isUserAnnotationsEnabled"}], "originalName": "IsUserAnnotationsEnabled"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isVisTypeRadial"}], "originalName": "IsVisTypeRadial"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isVisTypeStacked"}], "originalName": "IsVisTypeStacked"},
+      {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "dataSource"}], "originalName": "ItemsSource"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "loadAnnotationsFromJson"}], "originalName": "LoadAnnotationsFromJson"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "onUIReady"}], "originalName": "OnUIReady"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "outlines"}], "originalName": "Outlines"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "removeCommandAvailabilityListener"}], "originalName": "RemoveCommandAvailabilityListener"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "removeCommandStateChangedListener"}], "originalName": "RemoveCommandStateChangedListener"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "removeSettingsValue"}], "originalName": "RemoveSettingsValue"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "resetAnnotations"}], "originalName": "ResetAnnotations"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "resetZoom"}], "originalName": "ResetZoom"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "saveAnnotationsToJson"}], "originalName": "SaveAnnotationsToJson"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcChartSelectedItemCollection","mappedName": "selectedSeriesItems"}], "originalName": "SelectedSeriesItems"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "shouldAvoidAxisAnnotationCollisions"}], "originalName": "ShouldAvoidAxisAnnotationCollisions"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "shouldDisplayMockData"}], "originalName": "ShouldDisplayMockData"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "shouldUseSkeletonStyleForMockData"}], "originalName": "ShouldUseSkeletonStyleForMockData"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcDashboardTileSortDescriptionCollection","mappedName": "sortDescriptions"}], "originalName": "SortDescriptions"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "startCreatingAnnotation"}], "originalName": "StartCreatingAnnotation"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "startDeletingAnnotation"}], "originalName": "StartDeletingAnnotation"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcDashboardTileSummaryDescriptionCollection","mappedName": "summaryDescriptions"}], "originalName": "SummaryDescriptions"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "tileTitle"}], "originalName": "TileTitle"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "trendLineBrushes"}], "originalName": "TrendLineBrushes"},
+      {"names":[{"platform": "WebComponents", "mappedType": "TrendLineType","mappedName": "trendLineType"}], "originalName": "TrendLineType"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcTrendLineTypeCollection","mappedName": "trendLineTypes"}], "originalName": "TrendLineTypes"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "updateSettingsValue"}], "originalName": "UpdateSettingsValue"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "validVisualizationTypePriorityThreshold"}], "originalName": "ValidVisualizationTypePriorityThreshold"},
+      {"names":[{"platform": "WebComponents", "mappedType": "DashboardTileVisualizationType[]","mappedName": "validVisualizationTypes"}], "originalName": "ValidVisualizationTypes"},
+      {"names":[{"platform": "WebComponents", "mappedType": "IgcValueModeCollection","mappedName": "valueLines"}], "originalName": "ValueLines"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string[]","mappedName": "valueLinesBrushes"}], "originalName": "ValueLinesBrushes"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "valueLinesGlobalAverageBrush"}], "originalName": "ValueLinesGlobalAverageBrush"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "valueLinesGlobalMaximumBrush"}], "originalName": "ValueLinesGlobalMaximumBrush"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "valueLinesGlobalMinimumBrush"}], "originalName": "ValueLinesGlobalMinimumBrush"},
+      {"names":[{"platform": "WebComponents", "mappedType": "DashboardTileVisualizationType","mappedName": "visualizationType"}], "originalName": "VisualizationType"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "zoomIn"}], "originalName": "ZoomIn"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "zoomOut"}], "originalName": "ZoomOut"} ]
+  },
+  {
+    "originalName": "DashboardTileChangingContentEventArgs",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "WebComponents","fileName": "igc-dashboard-tile-changing-content-event-args.ts","mappedName": "IgcDashboardTileChangingContentEventArgs"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "contentJson"}], "originalName": "ContentJson"} ]
+  },
+  {
+    "originalName": "DashboardTileFilterStringErrorsParsingEventArgs",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "WebComponents","fileName": "igc-dashboard-tile-filter-string-errors-parsing-event-args.ts","mappedName": "IgcDashboardTileFilterStringErrorsParsingEventArgs"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "errors"}], "originalName": "Errors"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "propertyName"}], "originalName": "PropertyName"} ]
+  },
+  {
+    "originalName": "DashboardTilePrimitiveValueWrapper",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "WebComponents","fileName": "DashboardTilePrimitiveValueWrapper.ts","mappedName": "DashboardTilePrimitiveValueWrapper"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "value"}], "originalName": "Value"} ]
+  },
+  {
+    "originalName": "DashboardTileCustomization",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "WebComponents","fileName": "igc-dashboard-tile-customization-component.ts","dynamicModuleName": "igc-dashboard-tile-customization-dynamic-module.ts","moduleName": "igc-dashboard-tile-customization-module.ts","mappedName": "IgcDashboardTileCustomizationComponent"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "collectionIndex"}], "originalName": "CollectionIndex"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isCollectionInsertionAtEnd"}], "originalName": "IsCollectionInsertionAtEnd"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isCollectionInsertionAtIndex"}], "originalName": "IsCollectionInsertionAtIndex"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isCollectionInsertionAtStart"}], "originalName": "IsCollectionInsertionAtStart"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isCollectionRemovaltIndex"}], "originalName": "IsCollectionRemovaltIndex"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "matchParentIndex"}], "originalName": "MatchParentIndex"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "matchType"}], "originalName": "MatchType"},
+      {"names":[{"platform": "WebComponents", "mappedType": "number",  "mappedName": "order"}], "originalName": "Order"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "propertyName"}], "originalName": "PropertyName"},
+      {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "propertyValue"}], "originalName": "PropertyValue"} ]
+  },
+  {
+    "originalName": "ValueGetterResult",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "WebComponents","fileName": "ValueGetterResult.ts","mappedName": "ValueGetterResult"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "nullIsValue"}], "originalName": "NullIsValue"},
+      {"names":[{"platform": "WebComponents", "mappedType": "any",     "mappedName": "value"}], "originalName": "Value"} ]
+  },
+  {
+    "originalName": "DataSeriesToDescriptionCustomizations",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "WebComponents","fileName": "DataSeriesToDescriptionCustomizations.ts","mappedName": "DataSeriesToDescriptionCustomizations"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "addOtherCustomizations"}], "originalName": "AddOtherCustomizations"},
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "clearOtherCustomizations"}], "originalName": "ClearOtherCustomizations"},
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "ensureSorted"}], "originalName": "EnsureSorted"},
+      {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesToDescriptionCustomization[]","mappedName": "getCollectionModifiers"}], "originalName": "GetCollectionModifiers"},
+      {"names":[{"platform": "WebComponents", "mappedType": "DataSeriesToDescriptionCustomization[]","mappedName": "getPropertyCustomizations"}], "originalName": "GetPropertyCustomizations"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "hasCustomizationsFor"}], "originalName": "HasCustomizationsFor"},
+      {"names":[{"platform": "WebComponents", "mappedType": "void","mappedName": "loadCustomization"}], "originalName": "LoadCustomization"},
+      {"names":[{"platform": "WebComponents", "mappedType": "List","mappedName": "_allCollectionTypes"}], "originalName": "_allCollectionTypes"},
+      {"names":[{"platform": "WebComponents", "mappedType": "List","mappedName": "_allTypes"}], "originalName": "_allTypes"},
+      {"names":[{"platform": "WebComponents", "mappedType": "Dictionary","mappedName": "_collectionWatchers"}], "originalName": "_collectionWatchers"},
+      {"names":[{"platform": "WebComponents", "mappedType": "Dictionary","mappedName": "_customizationsByType"}], "originalName": "_customizationsByType"},
+      {"names":[{"platform": "WebComponents", "mappedType": "List","mappedName": "_needRerun"}], "originalName": "_needRerun"},
+      {"names":[{"platform": "WebComponents", "mappedType": "HashSet","mappedName": "_needRerunSet"}], "originalName": "_needRerunSet"},
+      {"names":[{"platform": "WebComponents", "mappedType": "List","mappedName": "_otherCustomizations"}], "originalName": "_otherCustomizations"} ]
+  },
+  {
+    "originalName": "DashboardTileGroupDescription",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "originalBaseTypeName": "DashboardTileSortDescription",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "WebComponents","fileName": "igc-dashboard-tile-group-description.ts","dynamicModuleName": "igc-dashboard-tile-group-description-dynamic-module.ts","moduleName": "igc-dashboard-tile-group-description-module.ts","mappedName": "IgcDashboardTileGroupDescription"}]
+  },
+  {
+    "originalName": "DashboardTileGroupDescriptionCollection",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "WebComponents","fileName": "igc-dashboard-tile-group-description-collection.ts","mappedName": "IgcDashboardTileGroupDescriptionCollection"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "add"}], "originalName": "Add"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "clear"}], "originalName": "Clear"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "indexOf"}], "originalName": "IndexOf"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "insert"}], "originalName": "Insert"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "remove"}], "originalName": "Remove"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "removeAt"}], "originalName": "RemoveAt"} ]
+  },
+  {
+    "originalName": "DashboardTileSortDescription",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "WebComponents","fileName": "igc-dashboard-tile-sort-description.ts","dynamicModuleName": "igc-dashboard-tile-sort-description-dynamic-module.ts","moduleName": "igc-dashboard-tile-sort-description-module.ts","mappedName": "IgcDashboardTileSortDescription"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "equals"}], "originalName": "Equals"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "field"}], "originalName": "Field"},
+      {"names":[{"platform": "WebComponents", "mappedType": "ListSortDirection","mappedName": "sortDirection"}], "originalName": "SortDirection"} ]
+  },
+  {
+    "originalName": "DashboardTileSortDescriptionCollection",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "WebComponents","fileName": "igc-dashboard-tile-sort-description-collection.ts","mappedName": "IgcDashboardTileSortDescriptionCollection"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "add"}], "originalName": "Add"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "clear"}], "originalName": "Clear"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "indexOf"}], "originalName": "IndexOf"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "insert"}], "originalName": "Insert"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "remove"}], "originalName": "Remove"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "removeAt"}], "originalName": "RemoveAt"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "shouldDetachOnTargetChange"}], "originalName": "ShouldDetachOnTargetChange"} ]
+  },
+  {
+    "originalName": "DashboardTileSummaryDescription",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "WebComponents","fileName": "igc-dashboard-tile-summary-description.ts","dynamicModuleName": "igc-dashboard-tile-summary-description-dynamic-module.ts","moduleName": "igc-dashboard-tile-summary-description-module.ts","mappedName": "IgcDashboardTileSummaryDescription"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "alias"}], "originalName": "Alias"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "calculatorDisplayName"}], "originalName": "CalculatorDisplayName"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "equals"}], "originalName": "Equals"},
+      {"names":[{"platform": "WebComponents", "mappedType": "string",  "mappedName": "field"}], "originalName": "Field"},
+      {"names":[{"platform": "WebComponents", "mappedType": "DataSourceSummaryOperand","mappedName": "operand"}], "originalName": "Operand"} ]
+  },
+  {
+    "originalName": "DashboardTileSummaryDescriptionCollection",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "WebComponents","fileName": "igc-dashboard-tile-summary-description-collection.ts","mappedName": "IgcDashboardTileSummaryDescriptionCollection"}],
+    "members":[
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "add"}], "originalName": "Add"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "clear"}], "originalName": "Clear"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "indexOf"}], "originalName": "IndexOf"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "insert"}], "originalName": "Insert"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "remove"}], "originalName": "Remove"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "removeAt"}], "originalName": "RemoveAt"},
+      {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "shouldDetachOnTargetChange"}], "originalName": "ShouldDetachOnTargetChange"} ]
+  }]
+}

@@ -20,6 +20,8 @@
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "DataMemberPath"}], "originalName": "DataMemberPath"},
       {"names":[{"platform": "Blazor", "mappedType": "ControlDisplayDensity","mappedName": "Density"}], "originalName": "Density"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "DeselectAll"}], "originalName": "DeselectAll"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportSerializedVisualModel"}], "originalName": "ExportSerializedVisualModel"},
+      {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "ExportVisualModel"}], "originalName": "ExportVisualModel"},
       {"names":[{"platform": "Blazor", "mappedType": "string",  "mappedName": "FilterPlaceholderText"}], "originalName": "FilterPlaceholderText"},
       {"names":[{"platform": "Blazor", "mappedType": "CheckboxListIndexType","mappedName": "IndexType"}], "originalName": "IndexType"},
       {"names":[{"platform": "Blazor", "mappedType": "method",  "mappedName": "IsEverythingSelected"}], "originalName": "IsEverythingSelected"},

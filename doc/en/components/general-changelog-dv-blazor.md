@@ -122,13 +122,13 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|27304|IgbDataChart|Zoom rectangle is not positioned the same as the background rectangle|
-|30600|IgbDoughnutChart|No textStyle property for either the chart or series (pie chart has this)|
-|31624|IgbCategoryChart|Resizing the containing window of the IgxCategoryChart causes the chart to fail to render the series|
-|33861|Excel Library|Adding line chart corrupts excel File for German culture|
-|37307|IgbCheckBox|JS Heap, Nodes, and Listeners leakage on IgbCheckBox|
-|37930|IgbDataChart|Data Annotation Overlay Text Color not working|
-|38231|IgbGrid|Unpinned column does not return to the original position if hidden columns exist|
+|31624 | `IgbCategoryChart` | Resizing the containing window of the `IgbCategoryChart` causes the chart to fail to render the series|
+|37307 | `IgbCheckBox` | JS Heap, Nodes, and Listeners leakage on IgbCheckBox|
+|37930 | `IgbDataChart` | Data Annotation Overlay Text Color not working|
+|27304 | `IgbDataChart` | Zoom rectangle is not positioned the same as the background rectangle|
+|30600 | `IgbDoughnutChart` | No textStyle property for either the chart or series (pie chart has this)|
+|38231 | `IgbGrid` | Unpinned column does not return to the original position if hidden columns exist|
+|33861 | Excel Library | Adding line chart corrupts excel File for German culture|
 
 ### Enhancements
 
@@ -172,12 +172,12 @@ Explore some of the publicly available [Azure maps here](https://azure.microsoft
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|26952|IgbTabs|e.Detail is null in Change event in Razor/JS|
-|26953|IgbTabs|Marking a tab selected won't apply on subsequent attempts|
-|31910|IgbXDatePicker|An error will happen when I bind a value using the "@bind-Value" syntax and click the clear button|
-|31323|IgbDataChart, IgbGrid, IgbCombo|A NullReferenceException happens when the data type has a collection-type property, and the 1st element of that collection is null|
-|38903|IgbTabs|Dropdown list is not displaying in the correct location for components inside the tab|
-|[139](https://github.com/IgniteUI/igniteui-blazor/issues/139)|IgbDatePicker, IgbDateTimeInput|Date picker and data time input do not support nullable values|
+|26952 | `IgbTabs` | e.Detail is null in Change event in Razor/JS|
+|26953 | `IgbTabs` | Marking a tab selected won't apply on subsequent attempts|
+|31910 | `IgbXDatePicker` | An error will happen when I bind a value using the "@bind-Value" syntax and click the clear button|
+|31323 | `IgbDataChart`, `IgbGrid`, `IgbCombo` | A NullReferenceException happens when the data type has a collection-type property, and the 1st element of that collection is null|
+|38903 | `IgbTabs` | Dropdown list is not displaying in the correct location for components inside the tab|
+|[139](https://github.com/IgniteUI/igniteui-blazor/issues/139) | `IgbDatePicker`, `IgbDateTimeInput` | Date picker and data time input do not support nullable values|
 
 ### General
 The following properties of these components are now nullable:
@@ -198,9 +198,9 @@ The following properties of these components are now nullable:
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|36448|IgbRadialGauge|Radial label format properties do not work. (eg. Title, SubTitles)|
-|37718|IgbTab|Unexpected scrolling occurred when a new row was added to a grid that is in a tab panel|
-|37855|IgbGrid|Crypto.randomUID not found error is thrown if a grid contains HeaderTemplate and the page is accessed using unsecured(http) protocol|
+|36448 | `IgbRadialGauge` | Radial label format properties do not work. (eg. Title, SubTitles)|
+|37718 | `IgbTab` | Unexpected scrolling occurred when a new row was added to a grid that is in a tab panel|
+|37855 | `IgbGrid` | Crypto.randomUID not found error is thrown if a grid contains HeaderTemplate and the page is accessed using unsecured(http) protocol|
 
 ### {PackageCharts} (Charts)
 
@@ -338,9 +338,9 @@ The following properties of these components are now nullable:
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|25997|IgbDataGrid|Summaries are only showing for first grouped child row|
-|37023|IgbDataChart|Tooltips are cut-off/offscreen if overflow hidden is set.|
-|37244|Excel|Custom Data Validation is not working|
+|25997 | `IgbDataGrid` | Summaries are only showing for first grouped child row|
+|37023 | `IgbDataChart` | Tooltips are cut-off/offscreen if overflow hidden is set.|
+|37244 | Excel Library | Custom Data Validation is not working|
 
 ## **{PackageVerChanges-24-2-MAY}**
 
@@ -348,9 +348,9 @@ The following properties of these components are now nullable:
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|37271|IgbHierarchicalGrid|ParentRowData included to IGridCreatedEventArgs|
-|37681|IgbDataChart|Category Chart - values labels are should appear above columns when there is adequate space|
-|37244|Excel|Custom Data Validation is not working|
+|37271 | `IgbHierarchicalGrid` | ParentRowData included to IGridCreatedEventArgs|
+|37681 | `IgbDataChart` | Category Chart - values labels are should appear above columns when there is adequate space|
+|37244 | Excel Library | Custom Data Validation is not working|
 
 ## **{PackageVerChanges-24-2-APR}**
 
@@ -375,10 +375,10 @@ The following properties of these components are now nullable:
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|25602|IgbDataGrid|Loading a layout with one of the date-specific filter operators results in a TypeError console error|
-|28480|IgbCombo|Undefined reference error is thrown when a datasource is replaced|
-|32598|IgbDataGrid|Multiselection is not working correctly
-|36374|IgbInput|A previous value was bound when a form was submitted on any touch device|
+|25602 | `IgbDataGrid` | Loading a layout with one of the date-specific filter operators results in a TypeError console error|
+|28480 | `IgbCombo` | Undefined reference error is thrown when a datasource is replaced|
+|32598 | `IgbDataGrid` | Multiselection is not working correctly
+|36374 | `IgbInput` | A previous value was bound when a form was submitted on any touch device|
 |37214|General|Intermittent error in Blazor's WebCallback.Register()
 
 ## **{PackageVerChanges-24-2-MAR}**
@@ -392,7 +392,7 @@ The following properties of these components are now nullable:
 ### Bug Fixes
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|35497|IgbDialog|When ShowAsync and HideAsync Are Called, the Subsequent Code Is Not Executed|
+|35497 | `IgbDialog` | When ShowAsync and HideAsync Are Called, the Subsequent Code Is Not Executed|
 
 ## **{PackageVerChanges-24-2-FEB}**
 
@@ -410,24 +410,24 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|26218|Excel Library|Chart's plot area right margin becomes narrower and fill pattern and fill foreground are gone just by loading an Excel file|
-|29998|IgbCombo|The Change event callback was fired multiple times in .NET 8|
-|30286|IgbDataChart|Bubble Series tooltip content is switched to that of nearby bubble data in clicking a bubble|
-|31344|IgbGrid|Two way binding for the SelectedRows doesn't work|
-|32906|IgbDataChart|IgbDataChart is showing two xAxis on the top|
-|33605|IgbDataChart|ScatterLineSeries is not showing the color of the line correctly in the legend|
-|34053|IgbRadialGauge|The position of the scale label is shifted|
-|34083|Excel Library|TextOperatorConditionalFormat's is not loaded/saved properly if the text contains = in a template Excel file|
-|34149|IgbGrid|Repeatedly showing and hiding the IgbGrid causes memory leakage in JS Heap|
-|34224|IgbGrid|'There are multiple .NET runtimes present' error is thrown when the app changes from Server mode to WebAssembly mode if 'InteractiveAuto' is used for the rendermode|
-|34654|IgbGrid|NullReferenceException is thrown if a data contains an empty list|
-|34776|IgbDataChart|Repeatedly showing and hiding the IgbDataChart causes memory leakage in JS Heap|
-|35439|IgbGrid|CPU usage and Memory consumption are abnormally high when the app is opened in multiple tabs|
-|35495|Excel Library|Pictures in cells are lost when a template file is loaded|
-|35498|IgbDataChart|Tooltips for the series specified in IncludedSeries are not displayed|
-|36024|IgbGrid|The JS heap size never reduced when moving back and forth between two pages with IgbGrid component|
-|36176|Excel Library|Exception occurs when loading an Excel workbook that has a LET function|
-|36379|Excel Library|Colors with any alpha channel in an excel workbook fail to load|
+|29998 | `IgbCombo` | The Change event callback was fired multiple times in .NET 8|
+|30286 | `IgbDataChart` | Bubble Series tooltip content is switched to that of nearby bubble data in clicking a bubble|
+|34776 | `IgbDataChart` | Repeatedly showing and hiding the IgbDataChart causes memory leakage in JS Heap|
+|32906 | `IgbDataChart` | IgbDataChart is showing two xAxis on the top|
+|33605 | `IgbDataChart` | ScatterLineSeries is not showing the color of the line correctly in the legend|
+|35498 | `IgbDataChart` | Tooltips for the series specified in IncludedSeries are not displayed|
+|31344 | `IgbGrid` | Two way binding for the SelectedRows doesn't work|
+|34149 | `IgbGrid` | Repeatedly showing and hiding the IgbGrid causes memory leakage in JS Heap|
+|34224 | `IgbGrid` | 'There are multiple .NET runtimes present' error is thrown when the app changes from Server mode to WebAssembly mode if 'InteractiveAuto' is used for the rendermode|
+|34654 | `IgbGrid` | NullReferenceException is thrown if a data contains an empty list|
+|35439 | `IgbGrid` | CPU usage and Memory consumption are abnormally high when the app is opened in multiple tabs|
+|36024 | `IgbGrid` | The JS heap size never reduced when moving back and forth between two pages with IgbGrid component|
+|34053 | `IgbRadialGauge` | The position of the scale label is shifted|
+|36176 | Excel Library | Exception occurs when loading an Excel workbook that has a LET function|
+|36379 | Excel Library | Colors with any alpha channel in an excel workbook fail to load|
+|26218 | Excel Library | Chart's plot area right margin becomes narrower and fill pattern and fill foreground are gone just by loading an Excel file|
+|34083 | Excel Library | TextOperatorConditionalFormat's is not loaded/saved properly if the text contains = in a template Excel file|
+|35495 | Excel Library | Pictures in cells are lost when a template file is loaded|
 
 
 ## **{PackageVerChanges-24-2-JAN}**

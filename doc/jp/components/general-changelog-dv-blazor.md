@@ -85,13 +85,13 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 | バグ番号 | コントロール | 説明      |
 |------------|---------|------------------|
-|27304|IgbDataChart|ズーム長方形が背景長方形と同じ位置に配置されない。|
-|30600|IgbDoughnutChart|チャートやシリーズに textStyle プロパティが存在しない (円チャートにはある)。|
-|31624|IgbCategoryChart|IgbCategoryChart を含むウィンドウをリサイズすると、チャートがシリーズをレンダリングできなくなる。|
-|33861|Excel Library|折れ線チャートを追加すると、ドイツ語カルチャで Excel ファイルが破損する。|
-|37307|IgbCheckBox|IgbCheckBox で JS Heap、ノード、リスナーのリークが発生する。|
-|37930|IgbDataChart|Data Annotation Overlay のテキスト色が機能しない。|
-|38231|IgbGrid|非ピン固定列は、非表示が存在する場合に元の位置に戻らない。|
+|31624 | `IgbCategoryChart` | IgbCategoryChart を含むウィンドウをリサイズすると、チャートがシリーズをレンダリングできなくなる。|
+|37307 | `IgbCheckBox` | IgbCheckBox で JS Heap、ノード、リスナーのリークが発生する。|
+|27304 | `IgbDataChart` | ズーム長方形が背景長方形と同じ位置に配置されない。|
+|37930 | `IgbDataChart` | Data Annotation Overlay のテキスト色が機能しない。|
+|30600 | `IgbDoughnutChart` | チャートやシリーズに textStyle プロパティが存在しない (円チャートにはある)。|
+|38231 | `IgbGrid` | 非ピン固定列は、非表示が存在する場合に元の位置に戻らない。|
+|33861 | Excel Library | 折れ線チャートを追加すると、ドイツ語カルチャで Excel ファイルが破損する。|
 
 ### 機能拡張
 
@@ -135,12 +135,12 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 | バグ番号 | コントロール | 説明      |
 |------------|---------|------------------|
-|26952|IgbTabs|Razor/JS の Change イベントで e.Detail が null になる問題を修正。|
-|26953|IgbTabs|タブを選択状態にしても、その後の操作で選択が反映されない問題を修正。|
-|31910|IgbXDatePicker|「@bind-Value」 構文で値をバインドし、クリア ボタンをクリックするとエラーが発生する問題を修正。|
-|31323|IgbDataChart、IgbGrid、IgbCombo|データ タイプにコレクション タイプ プロパティがあり、そのコレクションの最初の要素が null の場合に NullReferenceException が発生する問題を修正。|
-|38903|IgbTabs|タブ内に配置されたコンポーネントでドロップダウン リストが正しい位置に表示されない問題を修正。|
-|[139](https://github.com/IgniteUI/igniteui-blazor/issues/139)|IgbDatePicker、IgbDateTimeInput|Date Picker および Date Time Input が null 許容値をサポートしていない問題を修正。|
+|26952 | `IgbTabs` | Razor/JS の Change イベントで e.Detail が null になる問題を修正。|
+|26953 | `IgbTabs` | タブを選択状態にしても、その後の操作で選択が反映されない問題を修正。|
+|31910 | `IgbXDatePicker` | 「@bind-Value」 構文で値をバインドし、クリア ボタンをクリックするとエラーが発生する問題を修正。|
+|31323 | `IgbDataChart`, `IgbGrid`, `IgbCombo` | データ タイプにコレクション タイプ プロパティがあり、そのコレクションの最初の要素が null の場合に NullReferenceException が発生する問題を修正。|
+|38903 | `IgbTabs` | タブ内に配置されたコンポーネントでドロップダウン リストが正しい位置に表示されない問題を修正。|
+|[139](https://github.com/IgniteUI/igniteui-blazor/issues/139) | `IgbDatePicker`, `IgbDateTimeInput` | Date Picker および Date Time Input が null 許容値をサポートしていない問題を修正。|
 
 ### 一般
 以下のコンポーネントのプロパティが null 許容になりました。
@@ -161,9 +161,9 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 | バグ番号 | コントロール | 説明      |
 |------------|---------|------------------|
-|36448|IgbRadialGauge|ラジアル ラベルの書式設定プロパティ (例: Title、SubTitles) が機能しない。|
-|37718|IgbTab|タブ パネル内のグリッドに新しい行を追加した際に、予期しないスクロールが発生する。|
-|37855|IgbGrid|グリッドに HeaderTemplate が含まれており、ページが安全でない (http) プロトコルを使用してアクセスされた場合、Crypto.randomUID が見つからないというエラーがスローされる。|
+|36448 | `IgbRadialGauge` | ラジアル ラベルの書式設定プロパティ (例: Title、SubTitles) が機能しない。|
+|37718 | `IgbTab` | タブ パネル内のグリッドに新しい行を追加した際に、予期しないスクロールが発生する。|
+|37855 | `IgbGrid` | グリッドに HeaderTemplate が含まれており、ページが安全でない (http) プロトコルを使用してアクセスされた場合、Crypto.randomUID が見つからないというエラーがスローされる。|
 
 ### {PackageCharts} (チャート)
 
@@ -308,9 +308,9 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 | バグ番号 | コントロール | 説明      |
 |------------|---------|------------------|
-|25997|IgbDataGrid|集計はグループ化された最初の子行にのみ表示される。|
-|37023|IgbDataChart|overflow: hidden が設定されている場合にツールチップが切り取られたり画面外に表示されたりする。|
-|37244|Excel|カスタム データ検証が機能しない。|
+|25997 | `IgbDataGrid` | 集計はグループ化された最初の子行にのみ表示される。|
+|37023 | `IgbDataChart` | overflow: hidden が設定されている場合にツールチップが切り取られたり画面外に表示されたりする。|
+|37244 | Excel Library | カスタム データ検証が機能しない。|
 
 ## **{PackageVerChanges-24-2-MAY}**
 
@@ -318,9 +318,9 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 | バグ番号 | コントロール | 説明      |
 |------------|---------|------------------|
-|37271|IgbHierarchicalGrid|ParentRowData が IGridCreatedEventArgs に追加される問題。|
-|37681|IgbDataChart|カテゴリ チャート - 十分なスペースがあるにもかかわらず、値ラベルが縦棒の上に表示されない。|
-|37244|Excel|カスタム データ検証が機能しない。|
+|37271 | `IgbHierarchicalGrid` | ParentRowData が IGridCreatedEventArgs に追加される問題。|
+|37681 | `IgbDataChart` | カテゴリ チャート - 十分なスペースがあるにもかかわらず、値ラベルが縦棒の上に表示されない。|
+|37244 | Excel Library | カスタム データ検証が機能しない。|
 
 ## **{PackageVerChanges-24-2-APR}**
 
@@ -345,10 +345,10 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 | バグ番号 | コントロール | 説明      |
 |------------|---------|------------------|
-|25602|IgbDataGrid|日付特有のフィルター演算子を含むレイアウトを読み込むと、TypeError がコンソールに出力される。|
-|28480|IgbCombo|データ ソースを置き換えた際に未定義の参照エラーが発生する。|
-|32598|IgbDataGrid|複数選択が正しく動作しない。
-|36374|IgbInput|タッチ デバイスでフォームを送信すると、以前の値がバインドされる。|
+|25602 | `IgbDataGrid` | 日付特有のフィルター演算子を含むレイアウトを読み込むと、TypeError がコンソールに出力される。|
+|28480 | `IgbCombo` | データ ソースを置き換えた際に未定義の参照エラーが発生する。|
+|32598 | `IgbDataGrid` | 複数選択が正しく動作しない。
+|36374 | `IgbInput` | タッチ デバイスでフォームを送信すると、以前の値がバインドされる。|
 |37214|一般|Blazor の WebCallback.Register() で断続的にエラーが発生する。
 
 ## **{PackageVerChanges-24-2-MAR}**
@@ -362,7 +362,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 ### バグ修正
 | バグ番号 | コントロール | 説明      |
 |------------|---------|------------------|
-|35497|IgbDialog|ShowAsync と HideAsync が呼び出されると、後続のコードは実行されない。|
+|35497 | `IgbDialog` | ShowAsync と HideAsync が呼び出されると、後続のコードは実行されない。|
 
 ## **{PackageVerChanges-24-2-FEB}**
 
@@ -380,24 +380,24 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 | バグ番号 | コントロール | 説明      |
 |------------|---------|------------------|
-|26218|Excel Library|Excel ファイルを読み込むだけで、チャートのプロット領域の右マージンが狭くなり、塗りつぶしパターンと前景の塗りつぶしが消える。|
-|29998|IgbCombo|.NET 8 では Change イベントコールバックが複数回発生する。|
-|30286|IgbDataChart|バブルをクリックすると、Bubble Series のツールチップが近くのバブル データの内容に切り替わる。|
-|31344|IgbGrid|SelectedRows の双方向バインディングが機能しない。|
-|32906|IgbDataChart|IgbDataChart は上部に 2 つの xAxis を表示している。|
-|33605|IgbDataChart|凡例に ScatterLineSeries の線の色が正しく表示されない。|
-|34053|IgbRadialGauge|スケール ラベルの位置がずれる。|
-|34083|Excel Library|テンプレート Excel ファイルのテキストに 「=」 が含まれている場合、TextOperatorConditionalFormat が正しく読み込まれない/保存されない。|
-|34149|IgbGrid|IgbGrid を繰り返し表示したり非表示にしたりすると、JS ヒープでメモリ リークが発生する。|
-|34224|IgbGrid|rendermode に 'InteractiveAuto' が使用されている場合、アプリがサーバー モードから WebAssembly モードに変更されると、「There are multiple .NET runtimes present」 というエラーが発生する。|
-|34654|IgbGrid|データに空のリストが含まれている場合、NullReferenceException が発生する。|
-|34776|IgbDataChart|IgbDataChart を繰り返し表示したり非表示にしたりすると、JS ヒープでメモリ リークが発生する。|
-|35439|IgbGrid|アプリを複数のタブで開いた際に、CPU 使用率とメモリ消費が異常に高くなる。|
-|35495|Excel Library|テンプレート ファイルを読み込むと、セル内の画像が失われる。|
-|35498|IgbDataChart|IncludedSeries で指定されたシリーズのツールチップは表示されない。|
-|36024|IgbGrid|IgbGrid コンポーネントを含む 2 つのページ間を行き来しても、JS ヒープ サイズが削減されない。|
-|36176|Excel Library|LET 関数を含む Excel ブックを読み込むと、例外が発生する。|
-|36379|Excel Library|Excel ワークブック内のアルファ チャネルを含む色は読み込まれない。|
+|29998 | `IgbCombo` | .NET 8 では Change イベントコールバックが複数回発生する。|
+|30286 | `IgbDataChart` | バブルをクリックすると、Bubble Series のツールチップが近くのバブル データの内容に切り替わる。|
+|35498 | `IgbDataChart` | IncludedSeries で指定されたシリーズのツールチップは表示されない。|
+|32906 | `IgbDataChart` | IgbDataChart は上部に 2 つの xAxis を表示している。|
+|33605 | `IgbDataChart` | 凡例に ScatterLineSeries の線の色が正しく表示されない。|
+|34776 | `IgbDataChart` | IgbDataChart を繰り返し表示したり非表示にしたりすると、JS ヒープでメモリ リークが発生する。|
+|34149 | `IgbGrid` | IgbGrid を繰り返し表示したり非表示にしたりすると、JS ヒープでメモリ リークが発生する。|
+|34224 | `IgbGrid` | rendermode に 'InteractiveAuto' が使用されている場合、アプリがサーバー モードから WebAssembly モードに変更されると、「There are multiple .NET runtimes present」 というエラーが発生する。|
+|34654 | `IgbGrid` | データに空のリストが含まれている場合、NullReferenceException が発生する。|
+|31344 | `IgbGrid` | SelectedRows の双方向バインディングが機能しない。|
+|35439 | `IgbGrid` | アプリを複数のタブで開いた際に、CPU 使用率とメモリ消費が異常に高くなる。|
+|36024 | `IgbGrid` | IgbGrid コンポーネントを含む 2 つのページ間を行き来しても、JS ヒープ サイズが削減されない。|
+|34053 | `IgbRadialGauge` | スケール ラベルの位置がずれる。|
+|36176 | Excel Library | LET 関数を含む Excel ブックを読み込むと、例外が発生する。|
+|36379 | Excel Library | Excel ワークブック内のアルファ チャネルを含む色は読み込まれない。|
+|26218 | Excel Library | Excel ファイルを読み込むだけで、チャートのプロット領域の右マージンが狭くなり、塗りつぶしパターンと前景の塗りつぶしが消える。|
+|34083 | Excel Library | テンプレート Excel ファイルのテキストに 「=」 が含まれている場合、TextOperatorConditionalFormat が正しく読み込まれない/保存されない。|
+|35495 | Excel Library | テンプレート ファイルを読み込むと、セル内の画像が失われる。|
 
 
 ## **{PackageVerChanges-24-2-JAN}**

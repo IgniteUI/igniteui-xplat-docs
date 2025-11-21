@@ -177,19 +177,19 @@ Added support for suffix content within the cells that allows you to add additio
 - `SuffixIconViewBoxHeight`
 - `TextDecoration`
 
-Please note that the maximum size available for the icons is 24x24. You can provide an icon that is larger or smaller than this, but you will need to configure the viewbox settings in order to properly scale it to fit in the 24x24 space so it is fully visible.
+Please note that the maximum size available for the icons is 24x24. You can provide an icon that is larger or smaller than this, but you will need to configure the view-box settings in order to properly scale it to fit in the 24x24 space so it is fully visible.
 
 
 ### Bug Fixes
 
 | Bug Number | Control | Description |
 |------------|---------|-------------|
-|27304|IgcDataChart|Zoom rectangle is not positioned the same as the background rectangle|
-|30600|IgcDoughnutChart|No textStyle property for either the chart or series (pie chart has this)|
-|31624|IgcCategoryChart|Resizing the containing window of the IgcCategoryChart causes the chart to fail to render the series|
-|33861|Excel Library|Adding line chart corrupts excel File for German culture|
-|37930|IgcDataChart|Data Annotation Overlay Text Color not working|
-|38231|IgcGrid|Unpinned column does not return to the original position if hidden columns exist|
+|27304| `IgcDataChart` | Zoom rectangle is not positioned the same as the background rectangle|
+|37930| `IgcDataChart` | Data Annotation Overlay Text Color not working|
+|30600| `IgcDoughnutChart` | No textStyle property for either the chart or series (pie chart has this)|
+|31624| `IgcCategoryChart` | Resizing the containing window of the Category Chart causes the chart to fail to render the series|
+|38231| `IgcGrid` | Unpinned column does not return to the original position if hidden columns exist|
+|33861| Excel Library | Adding line chart corrupts excel File for German culture|
 
 ### Enhancements
 
@@ -288,7 +288,7 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|36448|IgcRadialGauge|Radial label format properties do not work. (eg. Title, SubTitles)|
+|36448 | `IgcRadialGauge` | Radial label format properties do not work. (eg. Title, SubTitles)|
 
 
 ### {PackageCharts}
@@ -346,10 +346,10 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|25997|IgcDataGrid|Summaries are only showing for first grouped child row|
-|37023|IgcDataChart|Tooltips are cut-off/offscreen if overflow hidden is set.
-|37244|Excel|Custom Data Validation is not working.
-|37685|IgcSpreadsheet|Poor rendering of numbers formatted with Arial font.
+|25997 | `IgcDataGrid` | Summaries are only showing for first grouped child row|
+|37023 | `IgcDataChart` | Tooltips are cut-off/offscreen if overflow hidden is set.
+|37685 | `IgcSpreadsheet` | Poor rendering of numbers formatted with Arial font.
+|37244 | Excel Library | Custom Data Validation is not working.
 
 ## **{PackageVerChanges-24-2-APR}**
 
@@ -362,11 +362,11 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|25602|IgcDataGrid|Loading a layout with one of the date-specific filter operators results in a TypeError console error|
-|28480|IgcCombo|Undefined reference error is thrown when a datasource is replaced|
-|30319|IgcDataGrid|Records are sorted despite no value changed|
-|32598|IgcDataGrid|Multiselection is not working correctly
-|36374|IgcInput|A previous value was bound when a form was submitted on any touch device|
+| 28480 | `IgcCombo` | Undefined reference error is thrown when a datasource is replaced| 
+| 25602 | `IgcDataGrid` | Loading a layout with one of the date-specific filter operators results in a TypeError console error| 
+| 30319 | `IgcDataGrid` | Records are sorted despite no value changed| 
+| 32598 | `IgcDataGrid` | Multi-selection is not working correctly
+| 36374 | `IgcInput` | A previous value was bound when a form was submitted on any touch device|
 
 ## **{PackageVerChanges-24-2-FEB}**
 
@@ -384,18 +384,18 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|26218|Excel Library|Chart's plot area right margin becomes narrower and fill pattern and fill foreground are gone just by loading an Excel file|
-|30286|IgcDataChart|Bubble Series tooltip content is switched to that of nearby bubble data in clicking a bubble|
-|32906|IgcDataChart|IgcDataChart is showing two xAxis on the top|
-|33605|IgcDataChart|ScatterLineSeries is not showing the color of the line correctly in the legend|
-|34053|IgcRadialGauge|The position of the scale label is shifted|
-|34083|Excel Library|TextOperatorConditionalFormat's is not loaded/saved properly if the text contains = in a template Excel file|
-|34776|IgcDataChart|Repeatedly showing and hiding the IgcDataChart causes memory leakage in JS Heap|
-|35495|Excel Library|Pictures in cells are lost when a template file is loaded|
-|35496|IgcSpreadsheet|Error when setting styles in Excel with images|
-|35498|IgcDataChart|Tooltips for the series specified in IncludedSeries are not displayed|
-|36176|Excel Library|Exception occurs when loading an Excel workbook that has a LET function|
-|36379|Excel Library|Colors with any alpha channel in an excel workbook fail to load|
+| 30286 | `IgcDataChart` | Bubble Series tooltip content is switched to that of nearby bubble data in clicking a bubble| 
+| 32906 | `IgcDataChart` | `IgcDataChart` is showing two xAxis on the top| 
+| 33605 | `IgcDataChart` | ScatterLineSeries is not showing the color of the line correctly in the legend| 
+| 34776 | `IgcDataChart` | Repeatedly showing and hiding the `IgcDataChart` causes memory leakage in JS Heap| 
+| 35498 | `IgcDataChart` | Tooltips for the series specified in IncludedSeries are not displayed| 
+| 34053 | `IgcRadialGauge` | The position of the scale label is shifted| 
+| 35496 | `IgcSpreadsheet` | Error when setting styles in Excel with images| 
+| 26218 | Excel Library | Chart's plot area right margin becomes narrower and fill pattern and fill foreground are gone just by loading an Excel file| 
+| 34083 | Excel Library | TextOperatorConditionalFormat's is not loaded/saved properly if the text contains = in a template Excel file| 
+| 35495 | Excel Library | Pictures in cells are lost when a template file is loaded| 
+| 36176 | Excel Library | Exception occurs when loading an Excel workbook that has a LET function| 
+| 36379 | Excel Library |Colors with any alpha channel in an excel workbook fail to load|
 
 ## **{PackageVerChanges-24-2-JAN}**
 

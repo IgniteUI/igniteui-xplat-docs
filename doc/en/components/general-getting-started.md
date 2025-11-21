@@ -56,7 +56,7 @@ If you want to get a guided experience through the available options, you can in
 ig
 ```
 
-Then choose React as framework, React TS as type, select `Default Top Navigation` project template, add a specific component/view or select `Complete & Run`.
+Then choose React as framework, React TS as type, select **Default Top Navigation** project template, add a specific component/view or select `Complete & Run`.
 Additionally, you can read more about the Ignite UI CLI [here](general-cli-overview.md).
 
 Alternatively, you can use popular frameworks such as Next.js, Vite or Expo as recommended by the React team. Following is a step-by-step instructions for creating React applications with Ignite UI React using one of these methods.

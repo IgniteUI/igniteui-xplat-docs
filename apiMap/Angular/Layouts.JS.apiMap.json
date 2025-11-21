@@ -210,6 +210,7 @@
     "packageName": "igniteui-layouts",
     "names":[{"platform": "Angular","fileName": "igx-tool-action-color-editor-component.ts","dynamicModuleName": "igx-tool-action-color-editor-dynamic-module.ts","moduleName": "igx-tool-action-color-editor-module.ts","mappedName": "IgxToolActionColorEditorComponent"}],
     "members":[
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"} ]
   },
   {
@@ -221,6 +222,7 @@
     "names":[{"platform": "Angular","fileName": "igx-tool-action-combo-component.ts","dynamicModuleName": "igx-tool-action-combo-dynamic-module.ts","moduleName": "igx-tool-action-combo-module.ts","mappedName": "IgxToolActionComboComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "displayMemberPath"}], "originalName": "DisplayMemberPath"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "dataSource"}], "originalName": "ItemsSource"},
       {"names":[{"platform": "Angular", "mappedType": "IgxLayoutSelectedItemsCollection","mappedName": "selectedValues"}], "originalName": "SelectedValues"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "valueMemberPath"}], "originalName": "ValueMemberPath"} ]
@@ -250,6 +252,7 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "actualRightIconStroke"}], "originalName": "ActualRightIconStroke"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "cornerRadius"}], "originalName": "CornerRadius"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionButtonGroupDisplayType","mappedName": "displayType"}], "originalName": "DisplayType"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isToggleDisabled"}], "originalName": "IsToggleDisabled"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "leftCommandArgument"}], "originalName": "LeftCommandArgument"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "leftIconCollectionName"}], "originalName": "LeftIconCollectionName"},
@@ -291,6 +294,7 @@
     "names":[{"platform": "Angular","fileName": "igx-tool-action-checkbox-list-component.ts","dynamicModuleName": "igx-tool-action-checkbox-list-dynamic-module.ts","moduleName": "igx-tool-action-checkbox-list-module.ts","mappedName": "IgxToolActionCheckboxListComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "dataMemberPath"}], "originalName": "DataMemberPath"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "Angular", "mappedType": "ToolActionCheckboxListIndexType","mappedName": "indexType"}], "originalName": "IndexType"},
       {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "dataSource"}], "originalName": "ItemsSource"},
       {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "primaryKey"}], "originalName": "PrimaryKey"},
@@ -387,6 +391,7 @@
     "packageName": "igniteui-layouts",
     "names":[{"platform": "Angular","fileName": "igx-tool-action-sub-panel-component.ts","dynamicModuleName": "igx-tool-action-sub-panel-dynamic-module.ts","moduleName": "igx-tool-action-sub-panel-module.ts","mappedName": "IgxToolActionSubPanelComponent"}],
     "members":[
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "itemSpacing"}], "originalName": "ItemSpacing"} ]
   },
   {
@@ -397,6 +402,7 @@
     "packageName": "igniteui-layouts",
     "names":[{"platform": "Angular","fileName": "igx-tool-action-text-input-component.ts","dynamicModuleName": "igx-tool-action-text-input-dynamic-module.ts","moduleName": "igx-tool-action-text-input-module.ts","mappedName": "IgxToolActionTextInputComponent"}],
     "members":[
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"} ]
   },
   {
@@ -420,7 +426,8 @@
     "names":[{"platform": "Angular","fileName": "igx-tool-action-button-component.ts","dynamicModuleName": "igx-tool-action-button-dynamic-module.ts","moduleName": "igx-tool-action-button-module.ts","mappedName": "IgxToolActionButtonComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "cornerRadius"}], "originalName": "CornerRadius"},
-      {"names":[{"platform": "Angular", "mappedType": "ToolActionButtonDisplayType","mappedName": "displayType"}], "originalName": "DisplayType"} ]
+      {"names":[{"platform": "Angular", "mappedType": "ToolActionButtonDisplayType","mappedName": "displayType"}], "originalName": "DisplayType"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"} ]
   },
   {
     "originalName": "ToolActionLabel",
@@ -428,7 +435,9 @@
     "originalBaseTypeNamespace": "Infragistics.Controls.Layouts.Implementation",
     "originalBaseTypeName": "ToolAction",
     "packageName": "igniteui-layouts",
-    "names":[{"platform": "Angular","fileName": "igx-tool-action-label-component.ts","dynamicModuleName": "igx-tool-action-label-dynamic-module.ts","moduleName": "igx-tool-action-label-module.ts","mappedName": "IgxToolActionLabelComponent"}]
+    "names":[{"platform": "Angular","fileName": "igx-tool-action-label-component.ts","dynamicModuleName": "igx-tool-action-label-dynamic-module.ts","moduleName": "igx-tool-action-label-module.ts","mappedName": "IgxToolActionLabelComponent"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"} ]
   },
   {
     "originalName": "ToolActionRadio",
@@ -445,6 +454,7 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "channel"}], "originalName": "Channel"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "checkedBackgroundColor"}], "originalName": "CheckedBackgroundColor"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "checkedBorderColor"}], "originalName": "CheckedBorderColor"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isChecked"}], "originalName": "IsChecked"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isManual"}], "originalName": "IsManual"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "uncheckedBackgroundColor"}], "originalName": "UncheckedBackgroundColor"},
@@ -458,6 +468,7 @@
     "packageName": "igniteui-layouts",
     "names":[{"platform": "Angular","fileName": "igx-tool-action-separator-component.ts","dynamicModuleName": "igx-tool-action-separator-dynamic-module.ts","moduleName": "igx-tool-action-separator-module.ts","mappedName": "IgxToolActionSeparatorComponent"}],
     "members":[
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isGroupHeaderSeparator"}], "originalName": "IsGroupHeaderSeparator"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "size"}], "originalName": "Size"} ]
   },
@@ -493,7 +504,8 @@
     "names":[{"platform": "Angular","fileName": "igx-tool-action-group-header-component.ts","dynamicModuleName": "igx-tool-action-group-header-dynamic-module.ts","moduleName": "igx-tool-action-group-header-module.ts","mappedName": "IgxToolActionGroupHeaderComponent"}],
     "members":[
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "actualBackIconColor"}], "originalName": "ActualBackIconColor"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "backIconColor"}], "originalName": "BackIconColor"} ]
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "backIconColor"}], "originalName": "BackIconColor"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"} ]
   },
   {
     "originalName": "ToolActionIconMenu",
@@ -522,6 +534,7 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "actualUncheckedBorderColor"}], "originalName": "ActualUncheckedBorderColor"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "checkedBackgroundColor"}], "originalName": "CheckedBackgroundColor"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "checkedBorderColor"}], "originalName": "CheckedBorderColor"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isChecked"}], "originalName": "IsChecked"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "uncheckedBackgroundColor"}], "originalName": "UncheckedBackgroundColor"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "uncheckedBorderColor"}], "originalName": "UncheckedBorderColor"} ]
@@ -534,6 +547,7 @@
     "packageName": "igniteui-layouts",
     "names":[{"platform": "Angular","fileName": "igx-tool-action-number-input-component.ts","dynamicModuleName": "igx-tool-action-number-input-dynamic-module.ts","moduleName": "igx-tool-action-number-input-module.ts","mappedName": "IgxToolActionNumberInputComponent"}],
     "members":[
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "value"}], "originalName": "Value"} ]
   },
   {
@@ -918,9 +932,9 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "captionExpandedTextColor"}], "originalName": "CaptionExpandedTextColor"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "captionTextColor"}], "originalName": "CaptionTextColor"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "collapse"}], "originalName": "Collapse"},
-      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "description"}], "originalName": "Description"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "descriptionCollapsedTextColor"}], "originalName": "DescriptionCollapsedTextColor"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "descriptionExpandedTextColor"}], "originalName": "DescriptionExpandedTextColor"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "descriptionText"}], "originalName": "DescriptionText"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "descriptionTextColor"}], "originalName": "DescriptionTextColor"},
       {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "elevation"}], "originalName": "Elevation"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "expand"}], "originalName": "Expand"},
