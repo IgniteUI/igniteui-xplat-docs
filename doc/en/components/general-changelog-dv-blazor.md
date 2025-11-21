@@ -16,6 +16,39 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
+### {PackageCharts} (Charts)
+
+**Breaking Changes**
+
+As of the 2025.2 release, we no longer support .NET 6. This corresponds with the [Microsoft .NET Lifecycle, here](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/overview).
+
+
+#### <label>PREVIEW</label> User Annotations
+
+In {ProductName}, you can now annotate the `XamDataChart` with slice, strip, and point annotations at runtime using the new user annotations feature. This allows the end user to add more details to the plot such as calling out single important events such as company quarter reports by using the slice annotation or events that have a duration by using the strip annotation. You can also call out individual points on the plotted series by using the point annotation or any combination of these three.
+
+This is directly integrated with the available tools of the `Toolbar`.
+
+<img class="responsive-img" src="../images/charts/data-chart-user-annotation-create.gif"
+alt="{Platform} user-annotation-create"/>
+
+#### <label>PREVIEW</label> Collision Detection for Axis Annotations
+
+Ability for axis annotations to automatically detect collisions and truncate to fit better. To enable this feature you must set the following properties:
+
+- `ShouldAvoidAnnotationCollisions`
+- `ShouldAutoTruncateAnnotations`
+
+### Bug Fixes
+
+| Bug Number | Control | Description |
+|------------|---------|-------------|
+|34960|IgbGrid|Maximum call stack size exceeded error in Blazor Web Application if grid is in a modal dialog
+|40136|Excel Library|FormulaParseException exception when loading an Excel workbook
+|40490|IgbDatePicker|Inputs by Autofill won't give any effects for a date picker
+
+## **{PackageVerChanges-25-1-SEP}**
+
 ### {PackageMaps} (Geographic Map)
 
 **Breaking Changes**

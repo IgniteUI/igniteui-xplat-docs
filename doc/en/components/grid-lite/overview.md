@@ -7,7 +7,7 @@ namespace: Infragistics.Controls
 _license: MIT
 ---
 
-# Open Source {Platform} Grid for Any Project
+# Open Source {Platform} Grid
 
 The {ProductName} {GridLiteTitle} is part of Infragistics’ new open-source UI component set that will be actively supported and maintained. It is open-source JavaScript data grid built as a Web Component, which means you can use it dependency-free with or without a web framework. There are 40+ OSS controls now available under the MIT license across Angular, React, Blazor, and Web Components.
 
@@ -35,6 +35,12 @@ Row-level virtualization allows you to render unlimited amounts of data with smo
 ## Automatic Column Types
 
 Column types are automatically generated base on your data source with built-in filtering based on column type.
+
+<!-- WebComponents -->
+## Custom Column Templates
+
+Deliver any type of UX with column templates. Anything you imagine can render in a grid column!
+<!-- end: WebComponents -->
 
 ## Interactive Features
 
