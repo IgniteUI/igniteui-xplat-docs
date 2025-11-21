@@ -23,12 +23,12 @@ The `Toolbar` exposes an Annotations menu item with two tools with the labels of
 
 The "Annotate Chart" option that appears after opening allows you to annotate the plot area of the `XamDataChart`. This can be done by adding slice, strip, or point annotations. You can add a slice annotation by clicking on a label on the X or Y axis. You can add a strip annotation by clicking and dragging in the plot area. Also, you can add a point annotation by clicking on a point in a series plotted in the chart.
 
-<img class="responsive-img" src="../../images/charts/data-chart-user-annotation-create.gif"
+<img class="responsive-img" src="../../../images/charts/data-chart-user-annotation-create.gif"
 alt="{Platform} user-annotation-create"/>
 
 You can delete the annotations that you have previously added by selecting the "Delete Note" menu item and then clicking on the axis annotation for the slice or strip user annotations, or by clicking the corresponding data point for the point user annotation.
 
-<img class="responsive-img" src="../../images/charts/data-chart-user-annotation-delete.gif"
+<img class="responsive-img" src="../../../images/charts/data-chart-user-annotation-delete.gif"
 alt="{Platform} user-annotation-delete"/>
 
 When adding one of these user annotations via the `XamToolbar`, the `XamDataChart` will raise an event named `UserAnnotationInformationRequested` where you can provide more information for the user annotations. This event's arguments have a property named `AnnotationInfo` that will return a `UserAnnotationInformation` object that allows the configuration of multiple different aspects of the annotation to be added.
