@@ -79,12 +79,12 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 
 | Bug Number | Control | Description |
 |------------|---------|-------------|
-|27304|IgxDataChart|Zoom rectangle is not positioned the same as the background rectangle|
-|30600|IgxDoughnutChart|No textStyle property for either the chart or series (pie chart has this)|
-|31624|IgxCategoryChart|Resizing the containing window of the IgxCategoryChart causes the chart to fail to render the series|
-|33861|Excel Library|Adding line chart corrupts excel File for German culture|
-|37930|IgxDataChart|Data Annotation Overlay Text Color not working|
-|38231|IgxGrid|Unpinned column does not return to the original position if hidden columns exist|
+|31624 | `IgxCategoryChart` | Resizing the containing window of the IgxCategoryChart causes the chart to fail to render the series|
+|27304 | `IgxDataChart` | Zoom rectangle is not positioned the same as the background rectangle|
+|37930 | `IgxDataChart` | Data Annotation Overlay Text Color not working|
+|30600 | `IgxDoughnutChart` | No textStyle property for either the chart or series (pie chart has this)|
+|38231 | `IgxGrid` | Unpinned column does not return to the original position if hidden columns exist|
+|33861 | Excel Library | Adding line chart corrupts excel File for German culture|
 
 
 ## **{PackageVerChanges-25-1-AUG}**
@@ -93,7 +93,7 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|36448|IgxRadialGauge|Radial label format properties do not work. (eg. Title, SubTitles)|
+|36448 | `IgxRadialGauge` | Radial label format properties do not work. (eg. Title, SubTitles)|
 
 ### {PackageCharts} (Charts)
 
@@ -153,9 +153,9 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|37023|IgxDataChart|Tooltips are cut-off/offscreen if overflow hidden is set.
-|37244|Excel|Custom Data Validation is not working.
-|37685|IgxSpreadsheet|Poor rendering of numbers formatted with Arial font.
+|37023 | `IgxDataChart` | Tooltips are cut-off/offscreen if overflow hidden is set.
+|37685 | `IgxSpreadsheet` | Poor rendering of numbers formatted with Arial font.
+|37244 | Excel Library | Custom Data Validation is not working.
 
 ## **{PackageVerChanges-24-2-FEB}**
 
@@ -173,18 +173,18 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|26218|Excel Library|Chart's plot area right margin becomes narrower and fill pattern and fill foreground are gone just by loading an Excel file|
-|30286|IgxDataChart|Bubble Series tooltip content is switched to that of nearby bubble data in clicking a bubble|
-|32906|IgxDataChart|IgxDataChart is showing two xAxis on the top|
-|33605|IgxDataChart|ScatterLineSeries is not showing the color of the line correctly in the legend|
-|34053|IgxRadialGauge|The position of the scale label is shifted|
-|34083|Excel Library|TextOperatorConditionalFormat's is not loaded/saved properly if the text contains = in a template Excel file|
-|34776|IgxDataChart|Repeatedly showing and hiding the IgxDataChart causes memory leakage in JS Heap|
-|35495|Excel Library|Pictures in cells are lost when a template file is loaded|
-|35496|IgxSpreadsheet|Error when setting styles in Excel with images|
-|35498|IgxDataChart|Tooltips for the series specified in IncludedSeries are not displayed|
-|36176|Excel Library|Exception occurs when loading an Excel workbook that has a LET function|
-|36379|Excel Library|Colors with any alpha channel in an excel workbook fail to load|
+|30286 | `IgxDataChart` | Bubble Series tooltip content is switched to that of nearby bubble data in clicking a bubble|
+|32906 | `IgxDataChart` | IgxDataChart is showing two xAxis on the top|
+|33605 | `IgxDataChart` | ScatterLineSeries is not showing the color of the line correctly in the legend|
+|35498 | `IgxDataChart` | Tooltips for the series specified in IncludedSeries are not displayed|
+|34776 | `IgxDataChart` | Repeatedly showing and hiding the IgxDataChart causes memory leakage in JS Heap|
+|34053 | `IgxRadialGauge` | The position of the scale label is shifted|
+|35496 | `IgxSpreadsheet` | Error when setting styles in Excel with images|
+|36176 | Excel Library | Exception occurs when loading an Excel workbook that has a LET function|
+|36379 | Excel Library | Colors with any alpha channel in an excel workbook fail to load|
+|26218 | Excel Library | Chart's plot area right margin becomes narrower and fill pattern and fill foreground are gone just by loading an Excel file|
+|35495 | Excel Library | Pictures in cells are lost when a template file is loaded|
+|34083 | Excel Library | TextOperatorConditionalFormat's is not loaded/saved properly if the text contains = in a template Excel file|
 
 
 ## **{PackageVerChanges-24-2-JAN}**

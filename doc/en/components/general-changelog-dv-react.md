@@ -138,12 +138,12 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 | Bug Number | Control | Description |
 |------------|---------|-------------|
-|27304 | `IgrDataChart` | Zoom rectangle is not positioned the same as the background rectangle|
-|30600 | `IgrDoughnutChart` | No textStyle property for either the chart or series (pie chart has this)|
 |31624 | `IgrCategoryChart` | Resizing the containing window of the IgrCategoryChart causes the chart to fail to render the series|
-|33861|Excel Library|Adding line chart corrupts excel File for German culture|
+|27304 | `IgrDataChart` | Zoom rectangle is not positioned the same as the background rectangle|
 |37930 | `IgrDataChart` | Data Annotation Overlay Text Color not working|
+|30600 | `IgrDoughnutChart` | No textStyle property for either the chart or series (pie chart has this)|
 |38231 | `IgrGrid` | Unpinned column does not return to the original position if hidden columns exist|
+|33861 | Excel Library | Adding line chart corrupts excel File for German culture|
 
 ### Enhancements
 
@@ -321,7 +321,7 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 |25997 | `IgrDataGrid` | Summaries are only showing for first grouped child row|
 |37023 | `IgrDataChart` | Tooltips are cut-off/offscreen if overflow hidden is set.
 |37685 | `IgrSpreadsheet` | Poor rendering of numbers formatted with Arial font.
-|37244|Excel Library|Custom Data Validation is not working.
+|37244 | Excel Library | Custom Data Validation is not working.
 
 ## **{PackageVerChanges-24-2-APR2}**
 > [!Note]With 19.0.0 the React product introduces many breaking changes done to improve and streamline the API. Please refer to the full Update Guide.
@@ -424,11 +424,11 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 |32093 | `IgrPivotGrid` | PivotDateDimensionOptions are not applied to the PivotDateDimension|
 |34053 | `IgrRadialGauge` | The position of the scale label is shifted|
 |35496 | `IgrSpreadsheet` | Error when setting styles in Excel with images|
-|36176|Excel Library|Exception occurs when loading an Excel workbook that has a LET function|
-|36379|Excel Library|Colors with any alpha channel in an excel workbook fail to load|
-|26218|Excel Library|Chart's plot area right margin becomes narrower and fill pattern and fill foreground are gone just by loading an Excel file|
-|34083|Excel Library|TextOperatorConditionalFormat's is not loaded/saved properly if the text contains = in a template Excel file|
-|35495|Excel Library|Pictures in cells are lost when a template file is loaded|
+|36176 | Excel Library | Exception occurs when loading an Excel workbook that has a LET function|
+|36379 | Excel Library | Colors with any alpha channel in an excel workbook fail to load|
+|26218 | Excel Library | Chart's plot area right margin becomes narrower and fill pattern and fill foreground are gone just by loading an Excel file|
+|34083 | Excel Library | TextOperatorConditionalFormat's is not loaded/saved properly if the text contains = in a template Excel file|
+|35495 | Excel Library | Pictures in cells are lost when a template file is loaded|
 
 ## **{PackageVerChanges-24-2-JAN}**
 

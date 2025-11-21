@@ -139,12 +139,12 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 | バグ番号 | コントロール | 説明 |
 |------------|---------|-------------|
-|27304|IgrDataChart|ズーム長方形が背景長方形と同じ位置に配置されない。|
-|30600|IgrDoughnutChart|チャートやシリーズに textStyle プロパティが存在しない (円チャートにはある)。|
-|31624|IgrCategoryChart|IgrCategoryChart を含むウィンドウをリサイズすると、チャートがシリーズをレンダリングできなくなる。|
-|33861|Excel Library|折れ線チャートを追加すると、ドイツ語カルチャで Excel ファイルが破損する。|
-|37930|IgrDataChart|Data Annotation Overlay のテキスト色が機能しない。|
-|38231|IgrGrid|非ピン固定列は、非表示が存在する場合に元の位置に戻らない。|
+|31624 | `IgrCategoryChart` | IgrCategoryChart を含むウィンドウをリサイズすると、チャートがシリーズをレンダリングできなくなる。|
+|27304 | `IgrDataChart` | ズーム長方形が背景長方形と同じ位置に配置されない。|
+|38231 | `IgrGrid` | 非ピン固定列は、非表示が存在する場合に元の位置に戻らない。|
+|30600 | `IgrDoughnutChart` | チャートやシリーズに textStyle プロパティが存在しない (円チャートにはある)。|
+|37930 | `IgrDataChart` | Data Annotation Overlay のテキスト色が機能しない。|
+|33861 | Excel Library | 折れ線チャートを追加すると、ドイツ語カルチャで Excel ファイルが破損する。|
 
 ### 機能拡張
 
@@ -263,7 +263,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 | バグ番号 | コントロール | 説明      |
 |------------|---------|------------------|
-|36448|IgrRadialGauge|ラジアル ラベルの書式設定プロパティ (例: Title、SubTitles) が機能しない。|
+|36448 | `IgrRadialGauge` | ラジアル ラベルの書式設定プロパティ (例: Title、SubTitles) が機能しない。|
 
 ### {PackageCharts} (チャート)
 
@@ -319,9 +319,9 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 | バグ番号 | コントロール | 説明      |
 |------------|---------|------------------|
-|25997|IgrDataGrid|集計はグループ化された最初の子行にのみ表示される。|
-|37023|IgrDataChart|overflow: hidden が設定されている場合にツールチップが切り取られたり画面外に表示されたりする。
-|37244|Excel|カスタム データ検証が機能しない。.
+|25997 | `IgrDataGrid` | 集計はグループ化された最初の子行にのみ表示される。|
+|37023 | `IgrDataChart` | overflow: hidden が設定されている場合にツールチップが切り取られたり画面外に表示されたりする。
+|37244 | Excel Library | カスタム データ検証が機能しない。.
 |37685 | `IgrSpreadsheet` | Arial フォントで書式設定された数値が正しく描画されない。
 
 ## **{PackageVerChanges-24-2-APR2}**
@@ -375,11 +375,11 @@ igr-tab-panel コンポーネントは削除されました。igr-tab では、�
 
 | バグ番号 | コントロール | 説明      |
 |------------|---------|------------------|
-|25602|IgrDataGrid|日付特有のフィルター演算子を含むレイアウトを読み込むと、TypeError がコンソールに出力される。|
-|28480|IgrCombo|データ ソースを置き換えた際に未定義の参照エラーが発生する。|
-|30319|IgrDataGrid|値が変更されていないにもかかわらず、レコードがソートされる。|
-|32598|IgrDataGrid|複数選択が正しく動作しない。
-|36374|IgrInput|タッチ デバイスでフォームを送信すると、以前の値がバインドされる。|
+|25602 | `IgrDataGrid` | 日付特有のフィルター演算子を含むレイアウトを読み込むと、TypeError がコンソールに出力される。|
+|28480 | `IgrCombo` | データ ソースを置き換えた際に未定義の参照エラーが発生する。|
+|30319 | `IgrDataGrid` | 値が変更されていないにもかかわらず、レコードがソートされる。|
+|32598 | `IgrDataGrid` | 複数選択が正しく動作しない。
+|36374 | `IgrInput` | タッチ デバイスでフォームを送信すると、以前の値がバインドされる。|
 
 ## **{PackageVerChanges-24-2-MAR1}**
 
@@ -416,21 +416,21 @@ igr-tab-panel コンポーネントは削除されました。igr-tab では、�
 
 | バグ番号 | コントロール | 説明      |
 |------------|---------|------------------|
-|32093|IgrPivotGrid|PivotDateDimensionOptions は PivotDateDimension には適用されない。|
-|26218|Excel Library|Excel ファイルを読み込むだけで、チャートのプロット領域の右マージンが狭くなり、塗りつぶしパターンと前景の塗りつぶしが消える。|
-|30286|IgrDataChart|バブルをクリックすると、Bubble Series のツールチップが近くのバブル データの内容に切り替わる。|
-|32906|IgrDataChart|IgrDataChart は上部に 2 つの xAxis を表示している。|
-|33605|IgrDataChart|凡例に ScatterLineSeries の線の色が正しく表示されない。|
-|34053|IgrRadialGauge|スケール ラベルの位置がずれる。|
-|34083|Excel Library|テンプレート Excel ファイルのテキストに 「=」 が含まれている場合、TextOperatorConditionalFormat が正しく読み込まれない/保存されない。|
-|34324|IgrGrid|グリッド テンプレートの条件による列の非表示が機能しない。|
-|34678|IgrGrid|列挙型の値が文字列に変換され、一部のグリッドプロパティで想定される数値の動作が壊れる|
-|34776|IgrDataChart|IgrDataChart を繰り返し表示したり非表示にしたりすると、JS ヒープでメモリ リークが発生する。|
-|35495|Excel Library|テンプレート ファイルを読み込むと、セル内の画像が失われる。|
+|32093 | `IgrPivotGrid` | PivotDateDimensionOptions は PivotDateDimension には適用されない。|
+|26218 | Excel Library | Excel ファイルを読み込むだけで、チャートのプロット領域の右マージンが狭くなり、塗りつぶしパターンと前景の塗りつぶしが消える。|
+|30286 | `IgrDataChart` | バブルをクリックすると、Bubble Series のツールチップが近くのバブル データの内容に切り替わる。|
+|32906 | `IgrDataChart` | IgrDataChart は上部に 2 つの xAxis を表示している。|
+|33605 | `IgrDataChart` | 凡例に ScatterLineSeries の線の色が正しく表示されない。|
+|35498 | `IgrDataChart` | IncludedSeries で指定されたシリーズのツールチップは表示されない。|
+|34776 | `IgrDataChart` | IgrDataChart を繰り返し表示したり非表示にしたりすると、JS ヒープでメモリ リークが発生する。|
+|34324 | `IgrGrid` | グリッド テンプレートの条件による列の非表示が機能しない。|
+|34678 | `IgrGrid` | 列挙型の値が文字列に変換され、一部のグリッドプロパティで想定される数値の動作が壊れる|
+|34053 | `IgrRadialGauge` | スケール ラベルの位置がずれる。|
 |35496 | `IgrSpreadsheet` | Excel に画像付きでスタイルを設定すると エラーが発生する。|
-|35498|IgrDataChart|IncludedSeries で指定されたシリーズのツールチップは表示されない。|
-|36176|Excel Library|LET 関数を含む Excel ブックを読み込むと、例外が発生する。|
-|36379|Excel Library|Excel ワークブック内のアルファ チャネルを含む色は読み込まれない。|
+|36176 | Excel Library | LET 関数を含む Excel ブックを読み込むと、例外が発生する。|
+|36379 | Excel Library | Excel ワークブック内のアルファ チャネルを含む色は読み込まれない。|
+|35495 | Excel Library | テンプレート ファイルを読み込むと、セル内の画像が失われる。|
+|34083 | Excel Library | テンプレート Excel ファイルのテキストに 「=」 が含まれている場合、TextOperatorConditionalFormat が正しく読み込まれない/保存されない。|
 
 ## **{PackageVerChanges-24-2-JAN}**
 

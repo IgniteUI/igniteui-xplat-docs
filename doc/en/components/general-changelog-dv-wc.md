@@ -245,7 +245,7 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|36448|IgcRadialGauge|Radial label format properties do not work. (eg. Title, SubTitles)|
+|36448 | `IgcRadialGauge` | Radial label format properties do not work. (eg. Title, SubTitles)|
 
 
 ### {PackageCharts}
@@ -303,10 +303,10 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|37244 | Excel Library | Custom Data Validation is not working.
 |25997 | `IgcDataGrid` | Summaries are only showing for first grouped child row|
 |37023 | `IgcDataChart` | Tooltips are cut-off/offscreen if overflow hidden is set.
 |37685 | `IgcSpreadsheet` | Poor rendering of numbers formatted with Arial font.
+|37244 | Excel Library | Custom Data Validation is not working.
 
 ## **{PackageVerChanges-24-2-APR}**
 
@@ -342,9 +342,9 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
 | 30286 | `IgcDataChart` | Bubble Series tooltip content is switched to that of nearby bubble data in clicking a bubble| 
-| 32906 | `IgcDataChart` | IgcDataChart is showing two xAxis on the top| 
+| 32906 | `IgcDataChart` | `IgcDataChart` is showing two xAxis on the top| 
 | 33605 | `IgcDataChart` | ScatterLineSeries is not showing the color of the line correctly in the legend| 
-| 34776 | `IgcDataChart` | Repeatedly showing and hiding the IgcDataChart causes memory leakage in JS Heap| 
+| 34776 | `IgcDataChart` | Repeatedly showing and hiding the `IgcDataChart` causes memory leakage in JS Heap| 
 | 35498 | `IgcDataChart` | Tooltips for the series specified in IncludedSeries are not displayed| 
 | 34053 | `IgcRadialGauge` | The position of the scale label is shifted| 
 | 35496 | `IgcSpreadsheet` | Error when setting styles in Excel with images| 

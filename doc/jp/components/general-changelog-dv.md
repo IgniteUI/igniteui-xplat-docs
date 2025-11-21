@@ -79,12 +79,12 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 | バグ番号 | コントロール | 説明 |
 |------------|---------|-------------|
-|27304|IgxDataChart|ズーム長方形が背景長方形と同じ位置に配置されない。|
-|30600|IgxDoughnutChart|チャートやシリーズに textStyle プロパティが存在しない (円チャートにはある)。|
-|31624|IgxCategoryChart|IgxCategoryChart を含むウィンドウをリサイズすると、チャートがシリーズをレンダリングできなくなる。|
-|33861|Excel Library|折れ線チャートを追加すると、ドイツ語カルチャで Excel ファイルが破損する。|
-|37930|IgxDataChart|Data Annotation Overlay のテキスト色が機能しない。|
-|38231|IgxGrid|非ピン固定列は、非表示が存在する場合に元の位置に戻らない。|
+|31624 | `IgxCategoryChart` | IgxCategoryChart を含むウィンドウをリサイズすると、チャートがシリーズをレンダリングできなくなる。|
+|37930 | `IgxDataChart` | Data Annotation Overlay のテキスト色が機能しない。|
+|27304 | `IgxDataChart` | ズーム長方形が背景長方形と同じ位置に配置されない。|
+|30600 | `IgxDoughnutChart` | チャートやシリーズに textStyle プロパティが存在しない (円チャートにはある)。|
+|38231 | `IgxGrid` | 非ピン固定列は、非表示が存在する場合に元の位置に戻らない。|
+|33861 | Excel Library | 折れ線チャートを追加すると、ドイツ語カルチャで Excel ファイルが破損する。|
 
 
 ## **{PackageVerChanges-25-1-AUG}**
@@ -93,7 +93,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 | バグ番号 | コントロール | 説明      |
 |------------|---------|------------------|
-|36448|IgxRadialGauge|ラジアル ラベルの書式設定プロパティ (例: Title、SubTitles) が機能しない。|
+|36448 | `IgxRadialGauge` | ラジアル ラベルの書式設定プロパティ (例: Title、SubTitles) が機能しない。|
 
 ### {PackageCharts} (チャート)
 
@@ -153,9 +153,9 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 | バグ番号 | コントロール | 説明      |
 |------------|---------|------------------|
-|37023|IgxDataChart|overflow: hidden が設定されている場合にツールチップが切り取られたり画面外に表示されたりする。
-|37244|Excel|カスタム データ検証が機能しない。.
-|37685|IgxSpreadsheet|Arial フォントで書式設定された数値が正しく描画されない。
+|37023 | `IgxDataChart` | overflow: hidden が設定されている場合にツールチップが切り取られたり画面外に表示されたりする。
+|37244 | Excel Library | カスタム データ検証が機能しない。.
+|37685 | `IgxSpreadsheet` | Arial フォントで書式設定された数値が正しく描画されない。
 
 ## **{PackageVerChanges-24-2-FEB}**
 
@@ -173,18 +173,18 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 | バグ番号 | コントロール | 説明      |
 |------------|---------|------------------|
-|26218|Excel Library|Excel ファイルを読み込むだけで、チャートのプロット領域の右マージンが狭くなり、塗りつぶしパターンと前景の塗りつぶしが消える。|
-|30286|IgxDataChart|バブルをクリックすると、Bubble Series のツールチップが近くのバブル データの内容に切り替わる。|
-|32906|IgxDataChart|IgxDataChart は上部に 2 つの xAxis を表示している。|
-|33605|IgxDataChart|凡例に ScatterLineSeries の線の色が正しく表示されない。|
-|34053|IgxRadialGauge|スケール ラベルの位置がずれる。|
-|34083|Excel Library|テンプレート Excel ファイルのテキストに 「=」 が含まれている場合、TextOperatorConditionalFormat が正しく読み込まれない/保存されない。|
-|34776|IgxDataChart|IgxDataChart を繰り返し表示したり非表示にしたりすると、JS ヒープでメモリ リークが発生する。|
-|35495|Excel Library|テンプレート ファイルを読み込むと、セル内の画像が失われる。|
-|35496|IgxSpreadsheet|Excel に画像付きでスタイルを設定すると エラーが発生する。|
-|35498|IgxDataChart|IncludedSeries で指定されたシリーズのツールチップは表示されない。|
-|36176|Excel Library|LET 関数を含む Excel ブックを読み込むと、例外が発生する。|
-|36379|Excel Library|Excel ワークブック内のアルファ チャネルを含む色は読み込まれない。|
+|30286 | `IgxDataChart` | バブルをクリックすると、Bubble Series のツールチップが近くのバブル データの内容に切り替わる。|
+|32906 | `IgxDataChart` | IgxDataChart は上部に 2 つの xAxis を表示している。|
+|33605 | `IgxDataChart` | 凡例に ScatterLineSeries の線の色が正しく表示されない。|
+|35498 | `IgxDataChart` | IncludedSeries で指定されたシリーズのツールチップは表示されない。|
+|34776 | `IgxDataChart` | IgxDataChart を繰り返し表示したり非表示にしたりすると、JS ヒープでメモリ リークが発生する。|
+|34053 | `IgxRadialGauge` | スケール ラベルの位置がずれる。|
+|35496 | `IgxSpreadsheet` | Excel に画像付きでスタイルを設定すると エラーが発生する。|
+|36176 | Excel Library | LET 関数を含む Excel ブックを読み込むと、例外が発生する。|
+|36379 | Excel Library | Excel ワークブック内のアルファ チャネルを含む色は読み込まれない。|
+|26218 | Excel Library | Excel ファイルを読み込むだけで、チャートのプロット領域の右マージンが狭くなり、塗りつぶしパターンと前景の塗りつぶしが消える。|
+|34083 | Excel Library | テンプレート Excel ファイルのテキストに 「=」 が含まれている場合、TextOperatorConditionalFormat が正しく読み込まれない/保存されない。|
+|35495 | Excel Library | テンプレート ファイルを読み込むと、セル内の画像が失われる。|
 
 ## **{PackageVerChanges-24-2-JAN}**
 

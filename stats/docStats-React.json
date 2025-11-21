@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in React documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "React",
-  "samplesCount": 774,
+  "samplesCount": 775,
   "samplesHost": "https://staging.infragistics.com/react-demos/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -428,6 +428,9 @@
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/type-scatter-polyline-series": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/shape-chart"
+    ],
+    "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/user-annotation-layer": [
+      "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-user-annotations"
     ],
     "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/waterfall-chart": [
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/column-chart"
@@ -2392,7 +2395,7 @@
       "https://staging.infragistics.com/products/ignite-ui-react/react/components/grids/_shared/toolbar"
     ]
   },
-  "topicsCount": 325,
+  "topicsCount": 326,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-react/react/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -2554,6 +2557,9 @@
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-trendlines": [
       "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/dash-array-trendline",
       "https://staging.infragistics.com/react-demos/samples/samples/charts/financial-chart/trendlines"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/features/chart-user-annotations": [
+      "https://staging.infragistics.com/react-demos/samples/samples/charts/data-chart/user-annotation-layer"
     ],
     "https://staging.infragistics.com/products/ignite-ui-react/react/components/charts/types/area-chart": [
       "https://staging.infragistics.com/react-demos/samples/samples/charts/category-chart/area-chart-multiple-sources",
