@@ -138,7 +138,7 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 | Bug Number | Control | Description |
 |------------|---------|-------------|
-|31624 | `IgrCategoryChart` | Resizing the containing window of the IgrCategoryChart causes the chart to fail to render the series|
+|31624 | `IgrCategoryChart` | Resizing the containing window of the `IgrCategoryChart` causes the chart to fail to render the series|
 |27304 | `IgrDataChart` | Zoom rectangle is not positioned the same as the background rectangle|
 |37930 | `IgrDataChart` | Data Annotation Overlay Text Color not working|
 |30600 | `IgrDoughnutChart` | No textStyle property for either the chart or series (pie chart has this)|
@@ -415,9 +415,9 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
 |30286 | `IgrDataChart` | Bubble Series tooltip content is switched to that of nearby bubble data in clicking a bubble|
-|32906 | `IgrDataChart` | IgrDataChart is showing two xAxis on the top|
+|32906 | `IgrDataChart` | `IgrDataChart` is showing two xAxis on the top|
 |33605 | `IgrDataChart` | ScatterLineSeries is not showing the color of the line correctly in the legend|
-|34776 | `IgrDataChart` | Repeatedly showing and hiding the IgrDataChart causes memory leakage in JS Heap|
+|34776 | `IgrDataChart` | Repeatedly showing and hiding the `IgrDataChart` causes memory leakage in JS Heap|
 |35498 | `IgrDataChart` | Tooltips for the series specified in IncludedSeries are not displayed|
 |34324 | `IgrGrid` | Column hiding through condition in the grid template is not working|
 |34678 | `IgrGrid` | Enum values coerced to strings, breaking expected numeric behavior in some grid properties|

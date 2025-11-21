@@ -139,7 +139,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 | バグ番号 | コントロール | 説明 |
 |------------|---------|-------------|
-|31624 | `IgrCategoryChart` | IgrCategoryChart を含むウィンドウをリサイズすると、チャートがシリーズをレンダリングできなくなる。|
+|31624 | `IgrCategoryChart` | `IgrCategoryChart` を含むウィンドウをリサイズすると、チャートがシリーズをレンダリングできなくなる。|
 |27304 | `IgrDataChart` | ズーム長方形が背景長方形と同じ位置に配置されない。|
 |38231 | `IgrGrid` | 非ピン固定列は、非表示が存在する場合に元の位置に戻らない。|
 |30600 | `IgrDoughnutChart` | チャートやシリーズに textStyle プロパティが存在しない (円チャートにはある)。|
@@ -419,10 +419,10 @@ igr-tab-panel コンポーネントは削除されました。igr-tab では、�
 |32093 | `IgrPivotGrid` | PivotDateDimensionOptions は PivotDateDimension には適用されない。|
 |26218 | Excel Library | Excel ファイルを読み込むだけで、チャートのプロット領域の右マージンが狭くなり、塗りつぶしパターンと前景の塗りつぶしが消える。|
 |30286 | `IgrDataChart` | バブルをクリックすると、Bubble Series のツールチップが近くのバブル データの内容に切り替わる。|
-|32906 | `IgrDataChart` | IgrDataChart は上部に 2 つの xAxis を表示している。|
+|32906 | `IgrDataChart` | `IgrDataChart` は上部に 2 つの xAxis を表示している。|
 |33605 | `IgrDataChart` | 凡例に ScatterLineSeries の線の色が正しく表示されない。|
 |35498 | `IgrDataChart` | IncludedSeries で指定されたシリーズのツールチップは表示されない。|
-|34776 | `IgrDataChart` | IgrDataChart を繰り返し表示したり非表示にしたりすると、JS ヒープでメモリ リークが発生する。|
+|34776 | `IgrDataChart` | `IgrDataChart` を繰り返し表示したり非表示にしたりすると、JS ヒープでメモリ リークが発生する。|
 |34324 | `IgrGrid` | グリッド テンプレートの条件による列の非表示が機能しない。|
 |34678 | `IgrGrid` | 列挙型の値が文字列に変換され、一部のグリッドプロパティで想定される数値の動作が壊れる|
 |34053 | `IgrRadialGauge` | スケール ラベルの位置がずれる。|

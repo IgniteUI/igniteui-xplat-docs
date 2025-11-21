@@ -86,7 +86,7 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|31624 | `IgbCategoryChart` | Resizing the containing window of the IgxCategoryChart causes the chart to fail to render the series|
+|31624 | `IgbCategoryChart` | Resizing the containing window of the `IgbCategoryChart` causes the chart to fail to render the series|
 |37307 | `IgbCheckBox` | JS Heap, Nodes, and Listeners leakage on IgbCheckBox|
 |37930 | `IgbDataChart` | Data Annotation Overlay Text Color not working|
 |27304 | `IgbDataChart` | Zoom rectangle is not positioned the same as the background rectangle|

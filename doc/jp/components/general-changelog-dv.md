@@ -79,7 +79,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 
 | バグ番号 | コントロール | 説明 |
 |------------|---------|-------------|
-|31624 | `IgxCategoryChart` | IgxCategoryChart を含むウィンドウをリサイズすると、チャートがシリーズをレンダリングできなくなる。|
+|31624 | `IgxCategoryChart` | `IgxCategoryChart` を含むウィンドウをリサイズすると、チャートがシリーズをレンダリングできなくなる。|
 |37930 | `IgxDataChart` | Data Annotation Overlay のテキスト色が機能しない。|
 |27304 | `IgxDataChart` | ズーム長方形が背景長方形と同じ位置に配置されない。|
 |30600 | `IgxDoughnutChart` | チャートやシリーズに textStyle プロパティが存在しない (円チャートにはある)。|

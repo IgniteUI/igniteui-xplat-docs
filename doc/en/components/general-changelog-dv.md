@@ -79,7 +79,7 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 
 | Bug Number | Control | Description |
 |------------|---------|-------------|
-|31624 | `IgxCategoryChart` | Resizing the containing window of the IgxCategoryChart causes the chart to fail to render the series|
+|31624 | `IgxCategoryChart` | Resizing the containing window of the `IgxCategoryChart` causes the chart to fail to render the series|
 |27304 | `IgxDataChart` | Zoom rectangle is not positioned the same as the background rectangle|
 |37930 | `IgxDataChart` | Data Annotation Overlay Text Color not working|
 |30600 | `IgxDoughnutChart` | No textStyle property for either the chart or series (pie chart has this)|
