@@ -174,10 +174,10 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
 |30286 | `IgxDataChart` | Bubble Series tooltip content is switched to that of nearby bubble data in clicking a bubble|
-|32906 | `IgxDataChart` | IgxDataChart is showing two xAxis on the top|
+|32906 | `IgxDataChart` | `IgxDataChart` is showing two xAxis on the top|
 |33605 | `IgxDataChart` | ScatterLineSeries is not showing the color of the line correctly in the legend|
 |35498 | `IgxDataChart` | Tooltips for the series specified in IncludedSeries are not displayed|
-|34776 | `IgxDataChart` | Repeatedly showing and hiding the IgxDataChart causes memory leakage in JS Heap|
+|34776 | `IgxDataChart` | Repeatedly showing and hiding the `IgxDataChart` causes memory leakage in JS Heap|
 |34053 | `IgxRadialGauge` | The position of the scale label is shifted|
 |35496 | `IgxSpreadsheet` | Error when setting styles in Excel with images|
 |36176 | Excel Library | Exception occurs when loading an Excel workbook that has a LET function|

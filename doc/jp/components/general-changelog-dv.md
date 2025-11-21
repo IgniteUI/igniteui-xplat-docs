@@ -174,10 +174,10 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 | バグ番号 | コントロール | 説明      |
 |------------|---------|------------------|
 |30286 | `IgxDataChart` | バブルをクリックすると、Bubble Series のツールチップが近くのバブル データの内容に切り替わる。|
-|32906 | `IgxDataChart` | IgxDataChart は上部に 2 つの xAxis を表示している。|
+|32906 | `IgxDataChart` | `IgxDataChart` は上部に 2 つの xAxis を表示している。|
 |33605 | `IgxDataChart` | 凡例に ScatterLineSeries の線の色が正しく表示されない。|
 |35498 | `IgxDataChart` | IncludedSeries で指定されたシリーズのツールチップは表示されない。|
-|34776 | `IgxDataChart` | IgxDataChart を繰り返し表示したり非表示にしたりすると、JS ヒープでメモリ リークが発生する。|
+|34776 | `IgxDataChart` | `IgxDataChart` を繰り返し表示したり非表示にしたりすると、JS ヒープでメモリ リークが発生する。|
 |34053 | `IgxRadialGauge` | スケール ラベルの位置がずれる。|
 |35496 | `IgxSpreadsheet` | Excel に画像付きでスタイルを設定すると エラーが発生する。|
 |36176 | Excel Library | LET 関数を含む Excel ブックを読み込むと、例外が発生する。|
