@@ -322,7 +322,7 @@ X 軸と Y 軸に `CompanionAxis` プロパティが追加され、既存の軸�
 |25997|IgrDataGrid|集計はグループ化された最初の子行にのみ表示される。|
 |37023|IgrDataChart|overflow: hidden が設定されている場合にツールチップが切り取られたり画面外に表示されたりする。
 |37244|Excel|カスタム データ検証が機能しない。.
-|37685|IgrSpreadsheet|Arial フォントで書式設定された数値が正しく描画されない。
+|37685 | `IgrSpreadsheet` | Arial フォントで書式設定された数値が正しく描画されない。
 
 ## **{PackageVerChanges-24-2-APR2}**
 
@@ -427,7 +427,7 @@ igr-tab-panel コンポーネントは削除されました。igr-tab では、�
 |34678|IgrGrid|列挙型の値が文字列に変換され、一部のグリッドプロパティで想定される数値の動作が壊れる|
 |34776|IgrDataChart|IgrDataChart を繰り返し表示したり非表示にしたりすると、JS ヒープでメモリ リークが発生する。|
 |35495|Excel Library|テンプレート ファイルを読み込むと、セル内の画像が失われる。|
-|35496|IgrSpreadsheet|Excel に画像付きでスタイルを設定すると エラーが発生する。|
+|35496 | `IgrSpreadsheet` | Excel に画像付きでスタイルを設定すると エラーが発生する。|
 |35498|IgrDataChart|IncludedSeries で指定されたシリーズのツールチップは表示されない。|
 |36176|Excel Library|LET 関数を含む Excel ブックを読み込むと、例外が発生する。|
 |36379|Excel Library|Excel ワークブック内のアルファ チャネルを含む色は読み込まれない。|
