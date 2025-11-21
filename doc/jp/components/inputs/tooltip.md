@@ -245,7 +245,7 @@ tooltip.anchor = anchor;
 
 ### 配置
 
-`Tooltip` は、ターゲット要素を基準にして簡単に配置することもできます。必要なのは、`Placement` プロパティを、`top`、`top-start`、`top-end`、`bottom`、`bottom-start`、`bottom-end `、`right`、`right-start`、`right-end`、`left`、`left-start`、`left-end` のいずれかの配置オプションとともに使用するだけです。
+`Tooltip` は、ターゲット要素を基準にして簡単に配置することもできます。必要なのは、`Placement` プロパティを、`top`、`top-start`、`top-end`、`bottom`、`bottom-start`、`bottom-end`、`right`、`right-start`、`right-end`、`left`、`left-start`、`left-end` のいずれかの配置オプションとともに使用するだけです。
 
 `Placement` プロパティが設定されていない場合、デフォルト値は `bottom` となり、`Tooltip` はターゲット要素の下に配置されます。
 
