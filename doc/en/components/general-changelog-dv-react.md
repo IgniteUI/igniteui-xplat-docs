@@ -11,6 +11,39 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
+### {PackageCharts} (Charts)
+
+#### <label>PREVIEW</label> User Annotations
+
+In {ProductName}, you can now annotate the `XamDataChart` with slice, strip, and point annotations at runtime using the new user annotations feature. This allows the end user to add more details to the plot such as calling out single important events such as company quarter reports by using the slice annotation or events that have a duration by using the strip annotation. You can also call out individual points on the plotted series by using the point annotation or any combination of these three.
+
+This is directly integrated with the available tools of the `Toolbar`.
+
+<img class="responsive-img" src="../images/charts/data-chart-user-annotation-create.gif"
+alt="{Platform} user-annotation-create"/>
+
+#### <label>PREVIEW</label> Collision Detection for Axis Annotations
+
+Ability for axis annotations to automatically detect collisions and truncate to fit better. To enable this feature you must set the following properties:
+
+- `ShouldAvoidAnnotationCollisions`
+- `ShouldAutoTruncateAnnotations`
+
+### {PackageMaps} (Geographic Map)
+
+- Azure Map Imagery is now RTM.
+
+### Bug Fixes
+
+| Bug Number | Control | Description |
+|------------|---------|-------------|
+|40136|Excel Library|FormulaParseException exception when loading an Excel workbook
+|40262|IgrSpreadsheet|#Circularity! is displayed when there are warnings. Request to match Excel - display a value eg. 0 instead
+|40458|IgrSpreadsheet|When using Arial font, the igx-spreadsheet cuts off text in the cells
+|40490|IgrDatePicker|Inputs by Autofill won't give any effects for a date picker
+
+## **{PackageVerChanges-25-1-OCT_2}**
+
 ### New Components
 
 - Added `IgrChat` component
@@ -67,23 +100,7 @@ All notable changes for each version of {ProductName} are documented on this pag
         - Optimized grouping operations.
 
 
-### {PackageCharts} (Charts)
 
-#### <label>PREVIEW</label> User Annotations
-
-In {ProductName}, you can now annotate the `XamDataChart` with slice, strip, and point annotations at runtime using the new user annotations feature. This allows the end user to add more details to the plot such as calling out single important events such as company quarter reports by using the slice annotation or events that have a duration by using the strip annotation. You can also call out individual points on the plotted series by using the point annotation or any combination of these three.
-
-This is directly integrated with the available tools of the `Toolbar`.
-
-<img class="responsive-img" src="../images/charts/data-chart-user-annotation-create.gif"
-alt="{Platform} user-annotation-create"/>
-
-#### <label>PREVIEW</label> Collision Detection for Axis Annotations
-
-Ability for axis annotations to automatically detect collisions and truncate to fit better. To enable this feature you must set the following properties:
-
-- `ShouldAvoidAnnotationCollisions`
-- `ShouldAutoTruncateAnnotations`
 
 ### Bug Fixes
 
@@ -95,10 +112,7 @@ Ability for axis annotations to automatically detect collisions and truncate to 
 |[1882](https://github.com/IgniteUI/igniteui-webcomponents/pull/1882)| Chat |Message actions not rendered after last message|
 |[1885](https://github.com/IgniteUI/igniteui-webcomponents/pull/1885)| Date Picker |Change event not emitted for non-editable input configuration|
 |[1894](https://github.com/IgniteUI/igniteui-webcomponents/pull/1894)| Date Picker | Issues when clearing the value and notch border in Material theme|
-|40136|Excel Library|FormulaParseException exception when loading an Excel workbook
-|40262|IgrSpreadsheet|#Circularity! is displayed when there are warnings. Request to match Excel - display a value eg. 0 instead
-|40458|IgrSpreadsheet|When using Arial font, the igx-spreadsheet cuts off text in the cells
-|40490|IgrDatePicker|Inputs by Autofill won't give any effects for a date picker
+
 
 ## **{PackageVerChanges-25-1-OCT}**
 

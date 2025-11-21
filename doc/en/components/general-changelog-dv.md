@@ -36,6 +36,10 @@ Ability for axis annotations to automatically detect collisions and truncate to 
 - `ShouldAvoidAnnotationCollisions`
 - `ShouldAutoTruncateAnnotations`
 
+### {PackageMaps} (Geographic Map)
+
+- Azure Map Imagery is now RTM.
+
 ### Bug Fixes
 
 | Bug Number | Control | Description |
