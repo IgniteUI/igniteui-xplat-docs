@@ -210,6 +210,7 @@
     "packageName": "igniteui-layouts",
     "names":[{"platform": "React","fileName": "igr-tool-action-color-editor.ts","dynamicModuleName": "igr-tool-action-color-editor-dynamic-module.ts","moduleName": "igr-tool-action-color-editor-module.ts","mappedName": "IgrToolActionColorEditor"}],
     "members":[
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"} ]
   },
   {
@@ -221,6 +222,7 @@
     "names":[{"platform": "React","fileName": "igr-tool-action-combo.ts","dynamicModuleName": "igr-tool-action-combo-dynamic-module.ts","moduleName": "igr-tool-action-combo-module.ts","mappedName": "IgrToolActionCombo"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "displayMemberPath"}], "originalName": "DisplayMemberPath"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "dataSource"}], "originalName": "ItemsSource"},
       {"names":[{"platform": "React", "mappedType": "IgrLayoutSelectedItemsCollection","mappedName": "selectedValues"}], "originalName": "SelectedValues"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "valueMemberPath"}], "originalName": "ValueMemberPath"} ]
@@ -250,6 +252,7 @@
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "actualRightIconStroke"}], "originalName": "ActualRightIconStroke"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "cornerRadius"}], "originalName": "CornerRadius"},
       {"names":[{"platform": "React", "mappedType": "ToolActionButtonGroupDisplayType","mappedName": "displayType"}], "originalName": "DisplayType"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isToggleDisabled"}], "originalName": "IsToggleDisabled"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "leftCommandArgument"}], "originalName": "LeftCommandArgument"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "leftIconCollectionName"}], "originalName": "LeftIconCollectionName"},
@@ -291,6 +294,7 @@
     "names":[{"platform": "React","fileName": "igr-tool-action-checkbox-list.ts","dynamicModuleName": "igr-tool-action-checkbox-list-dynamic-module.ts","moduleName": "igr-tool-action-checkbox-list-module.ts","mappedName": "IgrToolActionCheckboxList"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "dataMemberPath"}], "originalName": "DataMemberPath"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "React", "mappedType": "ToolActionCheckboxListIndexType","mappedName": "indexType"}], "originalName": "IndexType"},
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "dataSource"}], "originalName": "ItemsSource"},
       {"names":[{"platform": "React", "mappedType": "string[]","mappedName": "primaryKey"}], "originalName": "PrimaryKey"},
@@ -387,6 +391,7 @@
     "packageName": "igniteui-layouts",
     "names":[{"platform": "React","fileName": "igr-tool-action-sub-panel.ts","dynamicModuleName": "igr-tool-action-sub-panel-dynamic-module.ts","moduleName": "igr-tool-action-sub-panel-module.ts","mappedName": "IgrToolActionSubPanel"}],
     "members":[
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "itemSpacing"}], "originalName": "ItemSpacing"} ]
   },
   {
@@ -397,6 +402,7 @@
     "packageName": "igniteui-layouts",
     "names":[{"platform": "React","fileName": "igr-tool-action-text-input.ts","dynamicModuleName": "igr-tool-action-text-input-dynamic-module.ts","moduleName": "igr-tool-action-text-input-module.ts","mappedName": "IgrToolActionTextInput"}],
     "members":[
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"} ]
   },
   {
@@ -420,7 +426,8 @@
     "names":[{"platform": "React","fileName": "igr-tool-action-button.ts","dynamicModuleName": "igr-tool-action-button-dynamic-module.ts","moduleName": "igr-tool-action-button-module.ts","mappedName": "IgrToolActionButton"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "cornerRadius"}], "originalName": "CornerRadius"},
-      {"names":[{"platform": "React", "mappedType": "ToolActionButtonDisplayType","mappedName": "displayType"}], "originalName": "DisplayType"} ]
+      {"names":[{"platform": "React", "mappedType": "ToolActionButtonDisplayType","mappedName": "displayType"}], "originalName": "DisplayType"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"} ]
   },
   {
     "originalName": "ToolActionLabel",
@@ -428,7 +435,9 @@
     "originalBaseTypeNamespace": "Infragistics.Controls.Layouts.Implementation",
     "originalBaseTypeName": "ToolAction",
     "packageName": "igniteui-layouts",
-    "names":[{"platform": "React","fileName": "igr-tool-action-label.ts","dynamicModuleName": "igr-tool-action-label-dynamic-module.ts","moduleName": "igr-tool-action-label-module.ts","mappedName": "IgrToolActionLabel"}]
+    "names":[{"platform": "React","fileName": "igr-tool-action-label.ts","dynamicModuleName": "igr-tool-action-label-dynamic-module.ts","moduleName": "igr-tool-action-label-module.ts","mappedName": "IgrToolActionLabel"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"} ]
   },
   {
     "originalName": "ToolActionRadio",
@@ -445,6 +454,7 @@
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "channel"}], "originalName": "Channel"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "checkedBackgroundColor"}], "originalName": "CheckedBackgroundColor"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "checkedBorderColor"}], "originalName": "CheckedBorderColor"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isChecked"}], "originalName": "IsChecked"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isManual"}], "originalName": "IsManual"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "uncheckedBackgroundColor"}], "originalName": "UncheckedBackgroundColor"},
@@ -458,6 +468,7 @@
     "packageName": "igniteui-layouts",
     "names":[{"platform": "React","fileName": "igr-tool-action-separator.ts","dynamicModuleName": "igr-tool-action-separator-dynamic-module.ts","moduleName": "igr-tool-action-separator-module.ts","mappedName": "IgrToolActionSeparator"}],
     "members":[
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isGroupHeaderSeparator"}], "originalName": "IsGroupHeaderSeparator"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "size"}], "originalName": "Size"} ]
   },
@@ -493,7 +504,8 @@
     "names":[{"platform": "React","fileName": "igr-tool-action-group-header.ts","dynamicModuleName": "igr-tool-action-group-header-dynamic-module.ts","moduleName": "igr-tool-action-group-header-module.ts","mappedName": "IgrToolActionGroupHeader"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "actualBackIconColor"}], "originalName": "ActualBackIconColor"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "backIconColor"}], "originalName": "BackIconColor"} ]
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "backIconColor"}], "originalName": "BackIconColor"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"} ]
   },
   {
     "originalName": "ToolActionIconMenu",
@@ -522,6 +534,7 @@
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "actualUncheckedBorderColor"}], "originalName": "ActualUncheckedBorderColor"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "checkedBackgroundColor"}], "originalName": "CheckedBackgroundColor"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "checkedBorderColor"}], "originalName": "CheckedBorderColor"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "isChecked"}], "originalName": "IsChecked"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "uncheckedBackgroundColor"}], "originalName": "UncheckedBackgroundColor"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "uncheckedBorderColor"}], "originalName": "UncheckedBorderColor"} ]
@@ -534,6 +547,7 @@
     "packageName": "igniteui-layouts",
     "names":[{"platform": "React","fileName": "igr-tool-action-number-input.ts","dynamicModuleName": "igr-tool-action-number-input-dynamic-module.ts","moduleName": "igr-tool-action-number-input-module.ts","mappedName": "IgrToolActionNumberInput"}],
     "members":[
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "value"}], "originalName": "Value"} ]
   },
   {
@@ -918,9 +932,9 @@
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "captionExpandedTextColor"}], "originalName": "CaptionExpandedTextColor"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "captionTextColor"}], "originalName": "CaptionTextColor"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "collapse"}], "originalName": "Collapse"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "description"}], "originalName": "Description"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "descriptionCollapsedTextColor"}], "originalName": "DescriptionCollapsedTextColor"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "descriptionExpandedTextColor"}], "originalName": "DescriptionExpandedTextColor"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "descriptionText"}], "originalName": "DescriptionText"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "descriptionTextColor"}], "originalName": "DescriptionTextColor"},
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "elevation"}], "originalName": "Elevation"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "expand"}], "originalName": "Expand"},

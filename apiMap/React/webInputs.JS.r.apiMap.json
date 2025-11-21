@@ -27,6 +27,7 @@
     "igr-circular-progress-module.ts",
     "igr-combo-module.ts",
     "igr-date-picker-module.ts",
+    "igr-date-range-picker-module.ts",
     "igr-date-time-input-module.ts",
     "igr-dialog-module.ts",
     "igr-divider-module.ts",
@@ -151,7 +152,6 @@
     "packageName": "igniteui-webinputs",
     "names":[{"platform": "React","fileName": "igr-carousel-indicator.ts","mappedName": "IgrCarouselIndicator"}],
     "members":[
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
   },
   {
@@ -163,8 +163,92 @@
     "names":[{"platform": "React","fileName": "igr-carousel-slide.ts","mappedName": "IgrCarouselSlide"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "active"}], "originalName": "Active"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"} ]
+  },
+  {
+    "originalName": "CustomDateRange",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-custom-date-range.ts","mappedName": "IgrCustomDateRange"}]
+  },
+  {
+    "originalName": "DateRangePicker",
+    "originalNamespace": "Infragistics.Controls",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalBaseTypeName": "BaseComboBoxLike",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-date-range-picker.ts","mappedName": "IgrDateRangePicker"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "Date","mappedName": "activeDate"}], "originalName": "ActiveDate"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "checkValidity"}], "originalName": "CheckValidity"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "clear"}], "originalName": "Clear"},
+      {"names":[{"platform": "React", "mappedType": "IgrCustomDateRange[]","mappedName": "customRanges"}], "originalName": "CustomRanges"},
+      {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "defaultValue"}], "originalName": "DefaultValue"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
+      {"names":[{"platform": "React", "mappedType": "IDateRangeDescriptor[]","mappedName": "disabledDates"}], "originalName": "DisabledDates"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "displayFormat"}], "originalName": "DisplayFormat"},
+      {"names":[{"platform": "React", "mappedType": "ContentOrientation","mappedName": "headerOrientation"}], "originalName": "HeaderOrientation"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "hideHeader"}], "originalName": "HideHeader"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "hideOutsideDays"}], "originalName": "HideOutsideDays"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "inputFormat"}], "originalName": "InputFormat"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "label"}], "originalName": "Label"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "labelEnd"}], "originalName": "LabelEnd"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "labelStart"}], "originalName": "LabelStart"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "locale"}], "originalName": "Locale"},
+      {"names":[{"platform": "React", "mappedType": "Date","mappedName": "max"}], "originalName": "Max"},
+      {"names":[{"platform": "React", "mappedType": "Date","mappedName": "min"}], "originalName": "Min"},
+      {"names":[{"platform": "React", "mappedType": "PickerMode","mappedName": "mode"}], "originalName": "Mode"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "name"}], "originalName": "Name"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "nonEditable"}], "originalName": "NonEditable"},
+      {"names":[{"platform": "React", "mappedType": "ContentOrientation","mappedName": "orientation"}], "originalName": "Orientation"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "outlined"}], "originalName": "Outlined"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "placeholder"}], "originalName": "Placeholder"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "placeholderEnd"}], "originalName": "PlaceholderEnd"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "placeholderStart"}], "originalName": "PlaceholderStart"},
+      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "prompt"}], "originalName": "Prompt"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "readOnly"}], "originalName": "ReadOnly"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "reportValidity"}], "originalName": "ReportValidity"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "required"}], "originalName": "Required"},
+      {"names":[{"platform": "React", "mappedType": "IgrDateRangePickerResourceStrings","mappedName": "resourceStrings"}], "originalName": "ResourceStrings"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "select"}], "originalName": "Select"},
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setCustomValidity"}], "originalName": "SetCustomValidity"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "showWeekNumbers"}], "originalName": "ShowWeekNumbers"},
+      {"names":[{"platform": "React", "mappedType": "IDateRangeDescriptor[]","mappedName": "specialDates"}], "originalName": "SpecialDates"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "usePredefinedRanges"}], "originalName": "UsePredefinedRanges"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "useTwoInputs"}], "originalName": "UseTwoInputs"},
+      {"names":[{"platform": "React", "mappedType": "IgrDateRangeValue","mappedName": "value"}], "originalName": "Value"},
+      {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "visibleMonths"}], "originalName": "VisibleMonths"},
+      {"names":[{"platform": "React", "mappedType": "WeekDays","mappedName": "weekStart"}], "originalName": "WeekStart"} ]
+  },
+  {
+    "originalName": "DateRangePickerResourceStrings",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-date-range-picker-resource-strings.ts","mappedName": "IgrDateRangePickerResourceStrings"}]
+  },
+  {
+    "originalName": "DateRangeValue",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-date-range-value.ts","mappedName": "IgrDateRangeValue"}]
+  },
+  {
+    "originalName": "DateRangeValueDetail",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-date-range-value-detail.ts","mappedName": "IgrDateRangeValueDetail"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "Date","mappedName": "end"}], "originalName": "End"},
+      {"names":[{"platform": "React", "mappedType": "Date","mappedName": "start"}], "originalName": "Start"} ]
+  },
+  {
+    "originalName": "DateRangeValueEventArgs",
+    "originalNamespace": "Infragistics.Controls",
+    "packageName": "igniteui-webinputs",
+    "names":[{"platform": "React","fileName": "igr-date-range-value-event-args.ts","mappedName": "IgrDateRangeValueEventArgs"}],
+    "members":[
+      {"names":[{"platform": "React", "mappedType": "IgrDateRangeValueDetail","mappedName": "detail"}], "originalName": "Detail"} ]
   },
   {
     "originalName": "Tile",
@@ -253,7 +337,8 @@
       {"names":[{"platform": "React", "mappedType": "number",  "mappedName": "showDelay"}], "originalName": "ShowDelay"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "showTriggers"}], "originalName": "ShowTriggers"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "sticky"}], "originalName": "Sticky"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "toggle"}], "originalName": "Toggle"} ]
+      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "toggle"}], "originalName": "Toggle"},
+      {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "withArrow"}], "originalName": "WithArrow"} ]
   },
   {
     "originalName": "TreeSelectionEventArgs",
@@ -555,7 +640,6 @@
     "names":[{"platform": "React","fileName": "igr-base-option-like.ts","mappedName": "IgrBaseOptionLike"}],
     "members":[
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "active"}], "originalName": "Active"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "selected"}], "originalName": "Selected"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "setNativeElement"}], "originalName": "SetNativeElement"},
@@ -960,10 +1044,8 @@
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "autocapitalize"}], "originalName": "Autocapitalize"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "autocomplete"}], "originalName": "Autocomplete"},
       {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "checkValidity"}], "originalName": "CheckValidity"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"},
       {"names":[{"platform": "React", "mappedType": "any",     "mappedName": "defaultValue"}], "originalName": "DefaultValue"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"},
-      {"names":[{"platform": "React", "mappedType": "method",  "mappedName": "disconnectedCallback"}], "originalName": "DisconnectedCallback"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "inputMode"}], "originalName": "InputMode"},
       {"names":[{"platform": "React", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "label"}], "originalName": "Label"},
@@ -1049,9 +1131,7 @@
     "members":[
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "mask"}], "originalName": "Mask"},
       {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "value"}], "originalName": "Value"},
-      {"names":[{"platform": "React", "mappedType": "MaskInputValueMode","mappedName": "valueMode"}], "originalName": "ValueMode"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "prompt"}], "originalName": "Prompt"},
-      {"names":[{"platform": "React", "mappedType": "string",  "mappedName": "placeholder"}], "originalName": "Placeholder"} ]
+      {"names":[{"platform": "React", "mappedType": "MaskInputValueMode","mappedName": "valueMode"}], "originalName": "ValueMode"} ]
   },
   {
     "originalName": "Tree",

@@ -23,6 +23,8 @@
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "dataMemberPath"}], "originalName": "DataMemberPath"},
       {"names":[{"platform": "Angular", "mappedType": "ControlDisplayDensity","mappedName": "density"}], "originalName": "Density"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "deselectAll"}], "originalName": "DeselectAll"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "exportSerializedVisualModel"}], "originalName": "ExportSerializedVisualModel"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "exportVisualModel"}], "originalName": "ExportVisualModel"},
       {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "filterPlaceholderText"}], "originalName": "FilterPlaceholderText"},
       {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getDesiredSize"}], "originalName": "GetDesiredSize"},
       {"names":[{"platform": "Angular", "mappedType": "CheckboxListIndexType","mappedName": "indexType"}], "originalName": "IndexType"},

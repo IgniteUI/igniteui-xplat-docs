@@ -1,0 +1,302 @@
+{
+  "extraFiles": [
+    "igx-dashboard-tile-module.ts",
+    "igx-data-chart-dashboard-tile-module.ts",
+    "igx-geographic-map-dashboard-tile-module.ts",
+    "igx-linear-gauge-dashboard-tile-module.ts",
+    "igx-pie-chart-dashboard-tile-module.ts",
+    "igx-radial-gauge-dashboard-tile-module.ts"
+  ],
+  "types":[
+  {
+    "originalName": "DataChartDashboardTileFeature",
+    "originalNamespace": "Infragistics.Controls.Dashboards",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Angular","fileName": "DataChartDashboardTileFeature.ts","mappedName": "DataChartDashboardTileFeature"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+  },
+  {
+    "originalName": "PieChartDashboardTileFeature",
+    "originalNamespace": "Infragistics.Controls.Dashboards",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Angular","fileName": "PieChartDashboardTileFeature.ts","mappedName": "PieChartDashboardTileFeature"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+  },
+  {
+    "originalName": "RadialGaugeDashboardTileFeature",
+    "originalNamespace": "Infragistics.Controls.Dashboards",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Angular","fileName": "RadialGaugeDashboardTileFeature.ts","mappedName": "RadialGaugeDashboardTileFeature"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+  },
+  {
+    "originalName": "LinearGaugeDashboardTileFeature",
+    "originalNamespace": "Infragistics.Controls.Dashboards",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Angular","fileName": "LinearGaugeDashboardTileFeature.ts","mappedName": "LinearGaugeDashboardTileFeature"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+  },
+  {
+    "originalName": "GeographicMapDashboardTileFeature",
+    "originalNamespace": "Infragistics.Controls.Dashboards",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Angular","fileName": "GeographicMapDashboardTileFeature.ts","mappedName": "GeographicMapDashboardTileFeature"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"} ]
+  },
+  {
+    "originalName": "DataSeriesToDescriptionAdapterSettings",
+    "originalNamespace": "Infragistics.Controls.Dashboards",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Angular","fileName": "DataSeriesToDescriptionAdapterSettings.ts","mappedName": "DataSeriesToDescriptionAdapterSettings"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "addCoercion"}], "originalName": "AddCoercion"},
+      {"names":[{"platform": "Angular", "mappedType": "TypeDescriptionContext","mappedName": "context"}], "originalName": "Context"},
+      {"names":[{"platform": "Angular", "mappedType": "DataSeriesToDescriptionCustomizations","mappedName": "customizations"}], "originalName": "Customizations"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "getSettingsValue"}], "originalName": "GetSettingsValue"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "hasSettingsValue"}], "originalName": "HasSettingsValue"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "originalData"}], "originalName": "OriginalData"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "provideSettings"}], "originalName": "ProvideSettings"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "refNamespace"}], "originalName": "RefNamespace"},
+      {"names":[{"platform": "Angular", "mappedType": "(value: any) => any","mappedName": "resolveCoercion"}], "originalName": "ResolveCoercion"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "setSettingsValue"}], "originalName": "SetSettingsValue"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "shouldPreferRadialCategories"}], "originalName": "ShouldPreferRadialCategories"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "shouldStackCategories"}], "originalName": "ShouldStackCategories"},
+      {"names":[{"platform": "Angular", "mappedType": "Dictionary","mappedName": "_handlers"}], "originalName": "_handlers"},
+      {"names":[{"platform": "Angular", "mappedType": "Dictionary","mappedName": "_settings"}], "originalName": "_settings"} ]
+  },
+  {
+    "originalName": "DashboardTile",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Angular","fileName": "igx-dashboard-tile-component.ts","mappedName": "IgxDashboardTileComponent"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "actualBrushes"}], "originalName": "ActualBrushes"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "actualOutlines"}], "originalName": "ActualOutlines"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "addCommandAvailabilityListener"}], "originalName": "AddCommandAvailabilityListener"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "addCommandStateChangedListener"}], "originalName": "AddCommandStateChangedListener"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "autoCalloutsVisible"}], "originalName": "AutoCalloutsVisible"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "backgroundColor"}], "originalName": "BackgroundColor"},
+      {"names":[{"platform": "Angular", "mappedType": "BaseControlTheme","mappedName": "baseTheme"}], "originalName": "BaseTheme"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "brushes"}], "originalName": "Brushes"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "cancelAnnotationFlow"}], "originalName": "CancelAnnotationFlow"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "categoryAxisMajorStroke"}], "originalName": "CategoryAxisMajorStroke"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "clearSettings"}], "originalName": "ClearSettings"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "crosshairsAnnotationEnabled"}], "originalName": "CrosshairsAnnotationEnabled"},
+      {"names":[{"platform": "Angular", "mappedType": "CrosshairsDisplayMode","mappedName": "crosshairsDisplayMode"}], "originalName": "CrosshairsDisplayMode"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxDashboardTileCustomizationCollection","mappedName": "customizations"}], "originalName": "Customizations"},
+      {"names":[{"platform": "Angular", "mappedType": "ControlDisplayDensity","mappedName": "density"}], "originalName": "Density"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "excludedProperties"}], "originalName": "ExcludedProperties"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxFilterExpressionCollection","mappedName": "filterExpressions"}], "originalName": "FilterExpressions"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "finalValueAnnotationsVisible"}], "originalName": "FinalValueAnnotationsVisible"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "finishAnnotationFlow"}], "originalName": "FinishAnnotationFlow"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getDesiredToolbarActions"}], "originalName": "GetDesiredToolbarActions"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "getSettingsValue"}], "originalName": "GetSettingsValue"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxDashboardTileSortDescriptionCollection","mappedName": "groupDescriptions"}], "originalName": "GroupDescriptions"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxDashboardTileSortDescriptionCollection","mappedName": "groupSortDescriptions"}], "originalName": "GroupSortDescriptions"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "groupSorts"}], "originalName": "GroupSorts"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "hasModifiedSettings"}], "originalName": "HasModifiedSettings"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxFilterExpressionCollection","mappedName": "highlightFilterExpressions"}], "originalName": "HighlightFilterExpressions"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "highlightedDataSource"}], "originalName": "HighlightedItemsSource"},
+      {"names":[{"platform": "Angular", "mappedType": "SeriesHighlightedValuesDisplayMode","mappedName": "highlightedValuesDisplayMode"}], "originalName": "HighlightedValuesDisplayMode"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "includedProperties"}], "originalName": "IncludedProperties"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "initialFilter"}], "originalName": "InitialFilter"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxFilterExpressionCollection","mappedName": "initialFilterExpressions"}], "originalName": "InitialFilterExpressions"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxDashboardTileSortDescriptionCollection","mappedName": "initialGroupDescriptions"}], "originalName": "InitialGroupDescriptions"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxDashboardTileSortDescriptionCollection","mappedName": "initialGroupSortDescriptions"}], "originalName": "InitialGroupSortDescriptions"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "initialGroups"}], "originalName": "InitialGroups"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "initialHighlightFilter"}], "originalName": "InitialHighlightFilter"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxFilterExpressionCollection","mappedName": "initialHighlightFilterExpressions"}], "originalName": "InitialHighlightFilterExpressions"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxDashboardTileSortDescriptionCollection","mappedName": "initialSortDescriptions"}], "originalName": "InitialSortDescriptions"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "initialSorts"}], "originalName": "InitialSorts"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "initialSummaries"}], "originalName": "InitialSummaries"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxDashboardTileSummaryDescriptionCollection","mappedName": "initialSummaryDescriptions"}], "originalName": "InitialSummaryDescriptions"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isUserAnnotationsEnabled"}], "originalName": "IsUserAnnotationsEnabled"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isVisTypeRadial"}], "originalName": "IsVisTypeRadial"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isVisTypeStacked"}], "originalName": "IsVisTypeStacked"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "dataSource"}], "originalName": "ItemsSource"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "loadAnnotationsFromJson"}], "originalName": "LoadAnnotationsFromJson"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "onUIReady"}], "originalName": "OnUIReady"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "outlines"}], "originalName": "Outlines"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "removeCommandAvailabilityListener"}], "originalName": "RemoveCommandAvailabilityListener"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "removeCommandStateChangedListener"}], "originalName": "RemoveCommandStateChangedListener"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "removeSettingsValue"}], "originalName": "RemoveSettingsValue"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "resetAnnotations"}], "originalName": "ResetAnnotations"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "resetZoom"}], "originalName": "ResetZoom"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "saveAnnotationsToJson"}], "originalName": "SaveAnnotationsToJson"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxChartSelectedItemCollection","mappedName": "selectedSeriesItems"}], "originalName": "SelectedSeriesItems"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "shouldAvoidAxisAnnotationCollisions"}], "originalName": "ShouldAvoidAxisAnnotationCollisions"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "shouldDisplayMockData"}], "originalName": "ShouldDisplayMockData"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "shouldUseSkeletonStyleForMockData"}], "originalName": "ShouldUseSkeletonStyleForMockData"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxDashboardTileSortDescriptionCollection","mappedName": "sortDescriptions"}], "originalName": "SortDescriptions"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "startCreatingAnnotation"}], "originalName": "StartCreatingAnnotation"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "startDeletingAnnotation"}], "originalName": "StartDeletingAnnotation"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxDashboardTileSummaryDescriptionCollection","mappedName": "summaryDescriptions"}], "originalName": "SummaryDescriptions"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "tileTitle"}], "originalName": "TileTitle"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "trendLineBrushes"}], "originalName": "TrendLineBrushes"},
+      {"names":[{"platform": "Angular", "mappedType": "TrendLineType","mappedName": "trendLineType"}], "originalName": "TrendLineType"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxTrendLineTypeCollection","mappedName": "trendLineTypes"}], "originalName": "TrendLineTypes"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "updateSettingsValue"}], "originalName": "UpdateSettingsValue"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "validVisualizationTypePriorityThreshold"}], "originalName": "ValidVisualizationTypePriorityThreshold"},
+      {"names":[{"platform": "Angular", "mappedType": "DashboardTileVisualizationType[]","mappedName": "validVisualizationTypes"}], "originalName": "ValidVisualizationTypes"},
+      {"names":[{"platform": "Angular", "mappedType": "IgxValueModeCollection","mappedName": "valueLines"}], "originalName": "ValueLines"},
+      {"names":[{"platform": "Angular", "mappedType": "string[]","mappedName": "valueLinesBrushes"}], "originalName": "ValueLinesBrushes"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "valueLinesGlobalAverageBrush"}], "originalName": "ValueLinesGlobalAverageBrush"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "valueLinesGlobalMaximumBrush"}], "originalName": "ValueLinesGlobalMaximumBrush"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "valueLinesGlobalMinimumBrush"}], "originalName": "ValueLinesGlobalMinimumBrush"},
+      {"names":[{"platform": "Angular", "mappedType": "DashboardTileVisualizationType","mappedName": "visualizationType"}], "originalName": "VisualizationType"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "zoomIn"}], "originalName": "ZoomIn"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "zoomOut"}], "originalName": "ZoomOut"} ]
+  },
+  {
+    "originalName": "DashboardTileChangingContentEventArgs",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Angular","fileName": "igx-dashboard-tile-changing-content-event-args.ts","mappedName": "IgxDashboardTileChangingContentEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "contentJson"}], "originalName": "ContentJson"} ]
+  },
+  {
+    "originalName": "DashboardTileFilterStringErrorsParsingEventArgs",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Angular","fileName": "igx-dashboard-tile-filter-string-errors-parsing-event-args.ts","mappedName": "IgxDashboardTileFilterStringErrorsParsingEventArgs"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "errors"}], "originalName": "Errors"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "propertyName"}], "originalName": "PropertyName"} ]
+  },
+  {
+    "originalName": "DashboardTilePrimitiveValueWrapper",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Angular","fileName": "DashboardTilePrimitiveValueWrapper.ts","mappedName": "DashboardTilePrimitiveValueWrapper"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "value"}], "originalName": "Value"} ]
+  },
+  {
+    "originalName": "DashboardTileCustomization",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Angular","fileName": "igx-dashboard-tile-customization-component.ts","dynamicModuleName": "igx-dashboard-tile-customization-dynamic-module.ts","moduleName": "igx-dashboard-tile-customization-module.ts","mappedName": "IgxDashboardTileCustomizationComponent"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "collectionIndex"}], "originalName": "CollectionIndex"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCollectionInsertionAtEnd"}], "originalName": "IsCollectionInsertionAtEnd"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCollectionInsertionAtIndex"}], "originalName": "IsCollectionInsertionAtIndex"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCollectionInsertionAtStart"}], "originalName": "IsCollectionInsertionAtStart"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCollectionRemovaltIndex"}], "originalName": "IsCollectionRemovaltIndex"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "matchParentIndex"}], "originalName": "MatchParentIndex"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "matchType"}], "originalName": "MatchType"},
+      {"names":[{"platform": "Angular", "mappedType": "number",  "mappedName": "order"}], "originalName": "Order"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "propertyName"}], "originalName": "PropertyName"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "propertyValue"}], "originalName": "PropertyValue"} ]
+  },
+  {
+    "originalName": "ValueGetterResult",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Angular","fileName": "ValueGetterResult.ts","mappedName": "ValueGetterResult"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "nullIsValue"}], "originalName": "NullIsValue"},
+      {"names":[{"platform": "Angular", "mappedType": "any",     "mappedName": "value"}], "originalName": "Value"} ]
+  },
+  {
+    "originalName": "DataSeriesToDescriptionCustomizations",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Angular","fileName": "DataSeriesToDescriptionCustomizations.ts","mappedName": "DataSeriesToDescriptionCustomizations"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "init"}], "originalName": ".ctor"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "addOtherCustomizations"}], "originalName": "AddOtherCustomizations"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "clearOtherCustomizations"}], "originalName": "ClearOtherCustomizations"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "ensureSorted"}], "originalName": "EnsureSorted"},
+      {"names":[{"platform": "Angular", "mappedType": "DataSeriesToDescriptionCustomization[]","mappedName": "getCollectionModifiers"}], "originalName": "GetCollectionModifiers"},
+      {"names":[{"platform": "Angular", "mappedType": "DataSeriesToDescriptionCustomization[]","mappedName": "getPropertyCustomizations"}], "originalName": "GetPropertyCustomizations"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "hasCustomizationsFor"}], "originalName": "HasCustomizationsFor"},
+      {"names":[{"platform": "Angular", "mappedType": "void","mappedName": "loadCustomization"}], "originalName": "LoadCustomization"},
+      {"names":[{"platform": "Angular", "mappedType": "List","mappedName": "_allCollectionTypes"}], "originalName": "_allCollectionTypes"},
+      {"names":[{"platform": "Angular", "mappedType": "List","mappedName": "_allTypes"}], "originalName": "_allTypes"},
+      {"names":[{"platform": "Angular", "mappedType": "Dictionary","mappedName": "_collectionWatchers"}], "originalName": "_collectionWatchers"},
+      {"names":[{"platform": "Angular", "mappedType": "Dictionary","mappedName": "_customizationsByType"}], "originalName": "_customizationsByType"},
+      {"names":[{"platform": "Angular", "mappedType": "List","mappedName": "_needRerun"}], "originalName": "_needRerun"},
+      {"names":[{"platform": "Angular", "mappedType": "HashSet","mappedName": "_needRerunSet"}], "originalName": "_needRerunSet"},
+      {"names":[{"platform": "Angular", "mappedType": "List","mappedName": "_otherCustomizations"}], "originalName": "_otherCustomizations"} ]
+  },
+  {
+    "originalName": "DashboardTileGroupDescription",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "originalBaseTypeName": "DashboardTileSortDescription",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Angular","fileName": "igx-dashboard-tile-group-description.ts","dynamicModuleName": "igx-dashboard-tile-group-description-dynamic-module.ts","moduleName": "igx-dashboard-tile-group-description-module.ts","mappedName": "IgxDashboardTileGroupDescription"}]
+  },
+  {
+    "originalName": "DashboardTileGroupDescriptionCollection",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Angular","fileName": "igx-dashboard-tile-group-description-collection.ts","mappedName": "IgxDashboardTileGroupDescriptionCollection"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "add"}], "originalName": "Add"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "clear"}], "originalName": "Clear"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "indexOf"}], "originalName": "IndexOf"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "insert"}], "originalName": "Insert"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "remove"}], "originalName": "Remove"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "removeAt"}], "originalName": "RemoveAt"} ]
+  },
+  {
+    "originalName": "DashboardTileSortDescription",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Angular","fileName": "igx-dashboard-tile-sort-description.ts","dynamicModuleName": "igx-dashboard-tile-sort-description-dynamic-module.ts","moduleName": "igx-dashboard-tile-sort-description-module.ts","mappedName": "IgxDashboardTileSortDescription"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "equals"}], "originalName": "Equals"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "field"}], "originalName": "Field"},
+      {"names":[{"platform": "Angular", "mappedType": "ListSortDirection","mappedName": "sortDirection"}], "originalName": "SortDirection"} ]
+  },
+  {
+    "originalName": "DashboardTileSortDescriptionCollection",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Angular","fileName": "igx-dashboard-tile-sort-description-collection.ts","mappedName": "IgxDashboardTileSortDescriptionCollection"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "add"}], "originalName": "Add"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "clear"}], "originalName": "Clear"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "indexOf"}], "originalName": "IndexOf"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "insert"}], "originalName": "Insert"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "remove"}], "originalName": "Remove"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "removeAt"}], "originalName": "RemoveAt"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "shouldDetachOnTargetChange"}], "originalName": "ShouldDetachOnTargetChange"} ]
+  },
+  {
+    "originalName": "DashboardTileSummaryDescription",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Angular","fileName": "igx-dashboard-tile-summary-description.ts","dynamicModuleName": "igx-dashboard-tile-summary-description-dynamic-module.ts","moduleName": "igx-dashboard-tile-summary-description-module.ts","mappedName": "IgxDashboardTileSummaryDescription"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "alias"}], "originalName": "Alias"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "calculatorDisplayName"}], "originalName": "CalculatorDisplayName"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "equals"}], "originalName": "Equals"},
+      {"names":[{"platform": "Angular", "mappedType": "string",  "mappedName": "field"}], "originalName": "Field"},
+      {"names":[{"platform": "Angular", "mappedType": "DataSourceSummaryOperand","mappedName": "operand"}], "originalName": "Operand"} ]
+  },
+  {
+    "originalName": "DashboardTileSummaryDescriptionCollection",
+    "originalNamespace": "Infragistics.Controls.Dashboards.Implementation",
+    "packageName": "igniteui-dashboards",
+    "names":[{"platform": "Angular","fileName": "igx-dashboard-tile-summary-description-collection.ts","mappedName": "IgxDashboardTileSummaryDescriptionCollection"}],
+    "members":[
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "add"}], "originalName": "Add"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "clear"}], "originalName": "Clear"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "indexOf"}], "originalName": "IndexOf"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "insert"}], "originalName": "Insert"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "remove"}], "originalName": "Remove"},
+      {"names":[{"platform": "Angular", "mappedType": "method",  "mappedName": "removeAt"}], "originalName": "RemoveAt"},
+      {"names":[{"platform": "Angular", "mappedType": "boolean", "mappedName": "shouldDetachOnTargetChange"}], "originalName": "ShouldDetachOnTargetChange"} ]
+  }]
+}

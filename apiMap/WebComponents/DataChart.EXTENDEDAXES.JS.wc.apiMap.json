@@ -141,6 +141,7 @@
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getFullRange"}], "originalName": "GetFullRange"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getIndexClosestToUnscaledValue"}], "originalName": "GetIndexClosestToUnscaledValue"},
       {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getItemValue"}], "originalName": "GetItemValue"},
+      {"names":[{"platform": "WebComponents", "mappedType": "method",  "mappedName": "getMemberPathValue"}], "originalName": "GetMemberPathValue"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isDataPreSorted"}], "originalName": "IsDataPreSorted"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isDateTime"}], "originalName": "IsDateTime"},
       {"names":[{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isSorting"}], "originalName": "IsSorting"},
