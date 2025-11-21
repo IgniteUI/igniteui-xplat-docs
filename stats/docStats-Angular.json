@@ -2,7 +2,7 @@
   "note": "this auto-generated file provides stats about samples used in Angular documentation",
   "info": "you can lookup samples in 'samplesUsage' or lookup topics in 'topicsWithSamples' ",
   "platform": "Angular",
-  "samplesCount": 233,
+  "samplesCount": 234,
   "samplesHost": "https://staging.infragistics.com/angular-demos-dv/samples",
   "samplesNote": "the 'samplesUsage' provides lookup of samples usage in topics",
   "samplesUsage": {
@@ -429,6 +429,9 @@
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/type-scatter-polyline-series": [
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/shape-chart"
     ],
+    "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/user-annotation-layer": [
+      "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-user-annotations"
+    ],
     "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/waterfall-chart": [
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/column-chart"
     ],
@@ -761,7 +764,7 @@
       "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/geo-map-type-shape-polyline-series"
     ]
   },
-  "topicsCount": 98,
+  "topicsCount": 99,
   "topicsHost": "https://staging.infragistics.com/products/ignite-ui-angular/angular/components",
   "topicsNote": "the 'topicsWithSamples' provides lookup of topics that used at least 1 sample",
   "topicsWithSamples": {
@@ -923,6 +926,9 @@
     "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-trendlines": [
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/dash-array-trendline",
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/financial-chart/trendlines"
+    ],
+    "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/features/chart-user-annotations": [
+      "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/data-chart/user-annotation-layer"
     ],
     "https://staging.infragistics.com/products/ignite-ui-angular/angular/components/charts/types/area-chart": [
       "https://staging.infragistics.com/angular-demos-dv/samples/samples/charts/category-chart/area-chart-multiple-sources",
