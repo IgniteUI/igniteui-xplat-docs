@@ -19,7 +19,7 @@ The {Platform} `BingMapsMapImagery` is geographic imagery mapping service provid
 
 
 <!-- `sample="/maps/geo-map/display-bing-imagery", height="500", alt="{Platform} Displaying Imagery from Bing Maps Example"` -->
-<img src="../images/general/BingMapsImagery.png" />
+<img src="../images/general/BingMapsImagery.png"alt="Angular Bing Maps Imagery" />
 
 
 <div class="divider--half"></div>

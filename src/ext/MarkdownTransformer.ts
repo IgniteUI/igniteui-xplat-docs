@@ -1814,8 +1814,12 @@ export class MarkdownTransformer {
                     return;
                 }
 
-                // cleanup markup for unordered lists: "* " -> "- "
-                let fileContent = vfile.toString().split("*   ").join("- ").split("*  ").join("- ");
+                // cleanup markup
+                let fileContent = vfile.toString();
+                fileContent = fileContent.split("*   ").join("- ").split("*  ").join("- "); // unordered lists: "* " -> "- "
+                fileContent = fileContent.split("    - ").join("  - ").split("      - ").join("    - "); // no extra indent
+                fileContent = fileContent.split(".  ").join(". "); // no extra space after item of ordered list
+
                 output.push({ content: fileContent, componentOutput: componentOutput });
 
                 if (iteration == runFor.length - 1) {

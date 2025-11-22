@@ -377,7 +377,7 @@ By default, the header section includes two action buttons:
 - The `maximize` button enlarges the tile's content to fill the entire width of the Tile Manager, offering a wider view of the content.
 - The `fullscreen` button enables the tile to open in fullscreen mode in the user's browser.
 
-<img src="../../images/tile-manager-actions.png" />
+<img src="../../images/tile-manager-actions.png" alt="tile-manager-actions"/>
 
 If you want to display just one of the two buttons, you can set either `DisableMaximize` or `DisableFullscreen` property. To customize the appearance you can use the `maximize-action` slot for the maximize button, or the `fullscreen-action` slot for the fullscreen button.
 

@@ -206,5 +206,5 @@ The following table lists API members mentioned in above sections:
 | Polar Spline Area        | `XamDataChart`  | `PolarSplineAreaSeries`  |
 | Stacked Area             | `XamDataChart`  | `StackedAreaSeries`  |
 | Stacked Spline Area      | `XamDataChart`  | `StackedSplineAreaSeries`  |
-| Stacked 100% Area        | `XamDataChart`  | `Stacked100AreaSeries`
+| Stacked 100% Area        | `XamDataChart`  | `Stacked100AreaSeries`  |
 | Stacked 100% Spline Area | `XamDataChart`  | `Stacked100SplineAreaSeries`  |
