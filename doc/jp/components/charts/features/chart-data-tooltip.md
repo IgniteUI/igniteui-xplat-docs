@@ -112,7 +112,7 @@ _language: ja
 凡例項目は、`LayoutMode` プロパティを使って垂直または表形式の構造に配置できます。デフォルト値は `Table` で、以前のリリースと同じ外観と操作性を維持します。
 
 例:
-<img src="../../../images/general/layout_mode.png" />
+<img src="../../../images/general/layout_mode.png" alt="Layout Mode" />
 
 ## {Platform} データ ツールチップのスタイル設定
 

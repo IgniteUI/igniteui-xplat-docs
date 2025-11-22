@@ -11,7 +11,7 @@ namespace: Infragistics.Controls.Charts
 
 In the {ProductName} `CategoryChart` control Data Aggregations feature allows you to group data in the chart by unique values on the `XAxis` and then sort those groups. You may then apply summaries which will be reflected by the range of the `YAxis` and will be displayed in the tooltip when hovering the series.
 
-# {Platform} Data Aggregations Example
+## {Platform} Data Aggregations Example
 
 The following example depicts a [Column Chart](../types/column-chart.md) that groups by the Country member of the `XAxis` and can be changed to other properties within each data item such as Product, MonthName, and Year to aggregate the sales data. Also a summary and sort option is available to get a desirable order for the grouped property. 
 

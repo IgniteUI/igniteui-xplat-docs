@@ -131,7 +131,7 @@ builder.Services.AddIgniteUIBlazor(
 
 視覚化または視覚化のプロパティも、コントロールの上部にある `Toolbar` を使用して構成できます。この `Toolbar` には、現在の視覚化の既定のツールに加えて、以下で強調表示されている 4 つの Dashboard Tile 固有のツールが含まれています。
 
-<img src="../images/dashboard-tile-toolbar.png" />
+<img src="../images/dashboard-tile-toolbar.png" alt="Dashboard Tile Toolbar"/>
 
 左から右へ:
 

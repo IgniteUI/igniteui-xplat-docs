@@ -130,7 +130,7 @@ You are not locked into a single visualization when you bind the `DataSource`, a
 
 The visualization or properties of the visualization are also configurable using the `Toolbar` at the top of the control. This `Toolbar` has the default tools for the current visualization with the addition of four Dashboard Tile specific ones, highlighted below:
 
-<img src="../images/dashboard-tile-toolbar.png" />
+<img src="../images/dashboard-tile-toolbar.png" alt="Dashboard Tile Toolbar"/>
 
 From left to right:
 

@@ -113,7 +113,7 @@ Legend items can be positioned in a vertical or table structure via the `LayoutM
 
 eg.
 
-<img src="../../../images/general/layout_mode.png" />
+<img src="../../../images/general/layout_mode.png" alt="Layout Mode" />
 
 
 ## {Platform} Data Tooltip Styling

@@ -53,7 +53,7 @@ The following example shows the combination of both `SelectionColorFill` and `Au
 
 ## Configuring Multiple Selection
 
-Other selection modes offer various methods of selection. For example using `SelectionBehavior` with `PerDataItemMultiSelect` will effect all series in entire category when multiple series are present while allowing selection across categories. Compared to `PerDataItemSingleSelect`, only a single category of items can be selected at a time. This is useful if multiple series are bound to different datasources and provides greater control of selection between categories.
+Other selection modes offer various methods of selection. For example using `SelectionBehavior` with `PerDataItemMultiSelect` will affect all series in entire category when multiple series are present while allowing selection across categories. Compared to `PerDataItemSingleSelect`, only a single category of items can be selected at a time. This is useful if multiple series are bound to different datasources and provides greater control of selection between categories.
 `PerSeriesAndDataItemGlobalSingleSelect` allows single series selection across all categories at a time.
 
 `sample="/charts/category-chart/selection-multiple-modes", height="450", alt="{Platform} Category Chart Selection Multiple Modes Example"`
