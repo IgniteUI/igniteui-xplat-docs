@@ -1814,7 +1814,9 @@ export class MarkdownTransformer {
                     return;
                 }
 
-                output.push({ content: vfile.toString(), componentOutput: componentOutput });
+                // cleanup markup for unordered lists: "* " -> "- "
+                let fileContent = vfile.toString().split("*   ").join("- ").split("*  ").join("- ");
+                output.push({ content: fileContent, componentOutput: componentOutput });
 
                 if (iteration == runFor.length - 1) {
                     callback(null, output);
