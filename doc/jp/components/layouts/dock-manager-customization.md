@@ -16,7 +16,7 @@ Infragistics {Platform} Dock Manager コンポーネントは、特定のアプ�
 
 ## Proximity Dock (近接ドック)
 
-このモードでは、ジョイスティック インジケーターが非表示になり、ペインを別のペインの境界近くにドラッグすることでドッキングを実行できます。ペインのドラッグ中にマウス カーソルがドック位置に対応する領域に到達すると、ドック プレビューが表示されます。マウスを上に置くと、ドラッグされたペインがプレビューされた場所にドッキングされます。近接ドッキングを有効にするには、`proximityDock` プロパティを ***true*** に設定するだけです。
+このモードでは、ジョイスティック インジケーターが非表示になり、ペインを別のペインの境界近くにドラッグすることでドッキングを実行できます。ペインのドラッグ中にマウス カーソルがドック位置に対応する領域に到達すると、ドック プレビューが表示されます。マウスを上に置くと、ドラッグされたペインがプレビューされた場所にドッキングされます。近接ドッキングを有効にするには、`proximityDock` プロパティを **true** に設定するだけです。
 
 ```ts
 this.dockManager.proximityDock = true;
@@ -91,7 +91,7 @@ this.dockManager.allowInnerDock = false;
 
 `sample="/layouts/dock-manager/toggle-inner-dock", height="600", alt="{Platform} Dock Manager 内側ドッキングの切り替えの例"`
 
-## ペイン ドラッグの制御 
+## ペイン ドラッグの制御
 
 `containedInBoundaries` プロパティを使用すると、開発者はフローティング ペインの側面を常に DockManager 内に含めるかどうかを制御できます。**true** に設定すると、いずれかの側が DockManager の境界を越えて移動しようとすると、ペインのドラッグが停止します。
 
@@ -156,5 +156,5 @@ const splitPaneFixedSize: IgcSplitPane = {
 
 ## API リファレンス
 
- - `DockManager`
- - `ContentPane`
+- `DockManager`
+- `ContentPane`

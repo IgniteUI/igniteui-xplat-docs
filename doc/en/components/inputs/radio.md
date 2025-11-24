@@ -36,7 +36,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -348,12 +348,12 @@ igc-radio::part(label) {
 
 ## API References
 
- - `RadioGroup`
- - `Radio`
- - [`Styling & Themes`](../themes/overview.md)
+- `RadioGroup`
+- `Radio`
+- [`Styling & Themes`](../themes/overview.md)
 
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

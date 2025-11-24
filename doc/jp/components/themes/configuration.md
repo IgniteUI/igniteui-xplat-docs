@@ -98,4 +98,4 @@ igc-dropdown {
 
 ## API リファレンス
 
- - `ConfigureTheme`
+- `ConfigureTheme`

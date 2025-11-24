@@ -220,12 +220,12 @@ this.radios.forEach(radio => {
 場合によっては、エンド ユーザーが選択できない Calendar の日付を無効にしたいことがあります。この機能は、`DisabledDates` プロパティを使用して実現されます。`DisabledDates` プロパティは、`DateRangeDescriptor` オブジェクトの配列です。各記述子には `Type` があり、オプションで `Date` オブジェクトの配列である `DateRange` があります。
 
 `Type` プロパティで使用できるオプションは次のとおりです:
-*  `After` - `DateRange` の最初の日付以降の日付を無効にします。
-*  `Before` - `DateRange` の最初の日付より前の日付を無効にします。
-*  `Between` - `DateRange` の最初の日付と 2 番目の日付の間の日付を無効にします。
-*  `Specific` - `DateRange` 配列で指定された日付を無効にします。
-*  `Weekdays` - すべての平日を無効にします。
-*  `Weekends` - すべての週末を無効にします。
+- `After` - `DateRange` の最初の日付以降の日付を無効にします。
+- `Before` - `DateRange` の最初の日付より前の日付を無効にします。
+- `Between` - `DateRange` の最初の日付と 2 番目の日付の間の日付を無効にします。
+- `Specific` - `DateRange` 配列で指定された日付を無効にします。
+- `Weekdays` - すべての平日を無効にします。
+- `Weekends` - すべての週末を無効にします。
 
 現在の月の 3 日から 8 日の日付を無効にするサンプルを作成します。
 
@@ -488,5 +488,5 @@ igc-calendar::part(navigation-button):focus {
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

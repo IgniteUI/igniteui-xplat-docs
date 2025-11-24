@@ -30,8 +30,8 @@ _language: ja
 
 データのサイズは以下によって決定されます。
 
-*   垂直 (行) 仮想化の行の高さ。`RowHeight` オプションで決定されますがデフォルトは 50(px) です。
-*   水平 (列) 仮想化の列幅 (ピクセル単位)。各列コンポーネントで明示的に幅を設定、または明示的に幅が設定されないすべての列に適用する `{ComponentName}` の `ColumnWidth` オプションを設定できます。
+-  垂直 (行) 仮想化の行の高さ。`RowHeight` オプションで決定されますがデフォルトは 50(px) です。
+-  水平 (列) 仮想化の列幅 (ピクセル単位)。各列コンポーネントで明示的に幅を設定、または明示的に幅が設定されないすべての列に適用する `{ComponentName}` の `ColumnWidth` オプションを設定できます。
 
 ディメンションを設定せずにグリッドでデフォルト動作を適用する場合、ほとんどの場合は望ましいレイアウトになります。列幅は列カウント、幅が設定された列、および `{ComponentName}` コンテナの計算幅に基づいて決定されます。グリッドは、割り当てる幅が 136px 未満になる以外はすべての列を利用可能なスペースに合わせようとします。その場合、割り当てられない幅を持つ列は 136px の最小幅に設定され、水平方向スクロールバーが表示されます。グリッドは水平方向に仮想化されます。
 
@@ -87,7 +87,7 @@ igRegisterScript("CellTemplate", (ctx) => {
 
 ## 仮想化の制限
 
-*   Mac OS で 「Show scrollbars only when scrolling」システム オプションを true (デフォルト値) に設定した場合、水平スクロールバーが表示されません。これは、`{ComponentName}` の行コンテナーで、overflow が hidden に設定されているためです。オプションを「Always」に変更するとスクロールが表示されます。
+-  Mac OS で 「Show scrollbars only when scrolling」システム オプションを true (デフォルト値) に設定した場合、水平スクロールバーが表示されません。これは、`{ComponentName}` の行コンテナーで、overflow が hidden に設定されているためです。オプションを「Always」に変更するとスクロールが表示されます。
 
 ## FAQ
 
@@ -97,21 +97,21 @@ igRegisterScript("CellTemplate", (ctx) => {
 
 ## API リファレンス
 
-* `Grid`
-* `Column`
+- `Grid`
+- `Column`
 
 ## その他のリソース
 
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName}  **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

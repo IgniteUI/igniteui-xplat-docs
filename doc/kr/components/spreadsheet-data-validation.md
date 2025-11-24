@@ -58,6 +58,7 @@ import { TwoConstraintDataValidationRule } from 'igniteui-webcomponents-excel';
 <div class="divider--half"></div>
 
 ## Usage
+
 The following snippet shows how you can setup the data validation rules
 
 ```ts

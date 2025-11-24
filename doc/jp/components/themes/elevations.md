@@ -84,4 +84,4 @@ igc-toast {
 
 ## API リファレンス
 
- - `Elevations`
+- `Elevations`

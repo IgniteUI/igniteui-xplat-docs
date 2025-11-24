@@ -12,7 +12,7 @@ namespace: Infragistics.Controls.Charts
 In the {Platform} chart, the data annotation layers allow you to annotate data plotted in Data Chart with sloped lines, vertical/horizontal lines (aka axis slices), vertical/horizontal strips (targeting specific axis), rectangles, and even parallelograms (aka bands). With data-binding supported, you can create as many annotations as you want to customize your charts. Also, you can combine different annotation layers and you can overlay text inside of plot area to annotated important events, patterns, and regions in your data.
 
 > [!Note]
-> These features are designed to support cartesian axes and does not currently support radius or angle axes. 
+> These features are designed to support cartesian axes and does not currently support radius or angle axes.
 
 For example, you can annotates stock prices with stock events and patterns.
 
@@ -22,7 +22,7 @@ Like this sample? Get access to our complete {Platform} toolkit and start buildi
 
 ## {Platform} Data Annotation Slice Layer Example
 
-In {Platform}, the link:{DataChartLink}.DataAnnotationSliceLayer.html[DataAnnotationSliceLayer] renders multiple vertical or horizontal lines that slice the chart at multiple values of an axis in the `XamDataChart` component. This data annotation layer is often used to annotate important events (e.g. company quarter reports) on x-axis or important values on y-axis. Setting the TargetAxis property to y-axis will render data annotation layer as horizontal slices or setting TargetAxis property to x-axis will render data annotation layer as vertical slices. Similarly to all series, the DataAnnotationSliceLayer also supports data binding via the `DataSource` property that can be set to a collection of data items which should have at least 1 numeric data column mapped to the `AnnotationValueMemberPath` property. 
+In {Platform}, the link:{DataChartLink}.DataAnnotationSliceLayer.html[DataAnnotationSliceLayer] renders multiple vertical or horizontal lines that slice the chart at multiple values of an axis in the `XamDataChart` component. This data annotation layer is often used to annotate important events (e.g. company quarter reports) on x-axis or important values on y-axis. Setting the TargetAxis property to y-axis will render data annotation layer as horizontal slices or setting TargetAxis property to x-axis will render data annotation layer as vertical slices. Similarly to all series, the DataAnnotationSliceLayer also supports data binding via the `DataSource` property that can be set to a collection of data items which should have at least 1 numeric data column mapped to the `AnnotationValueMemberPath` property.
 
 For example, you can use DataAnnotationSliceLayer to annotate stock prices with important events such as stock split and outcome of earning reports.
 
@@ -32,7 +32,7 @@ For example, you can use DataAnnotationSliceLayer to annotate stock prices with 
 
 ## {Platform} Data Annotation Strip Layer Example
 
-In {Platform}, the `DataAnnotationStripLayer` renders multiple vertical or horizontal strips between 2 values on an axis in the `XamDataChart` component. This data annotation layer can be used to annotate duration of events (e.g. stock market crash) on x-axis or important range of values on y-axis. Setting the TargetAxis property to y-axis will render data annotation layer as horizontal strips or setting TargetAxis property to x-axis will render data annotation layer as vertical strips. Similarly to all series, the `DataAnnotationStripLayer` also supports data binding via the `DataSource` property that can be set to a collection of data items which should have at least 1 numeric data column mapped to the AnnotationValueMemberPath property. 
+In {Platform}, the `DataAnnotationStripLayer` renders multiple vertical or horizontal strips between 2 values on an axis in the `XamDataChart` component. This data annotation layer can be used to annotate duration of events (e.g. stock market crash) on x-axis or important range of values on y-axis. Setting the TargetAxis property to y-axis will render data annotation layer as horizontal strips or setting TargetAxis property to x-axis will render data annotation layer as vertical strips. Similarly to all series, the `DataAnnotationStripLayer` also supports data binding via the `DataSource` property that can be set to a collection of data items which should have at least 1 numeric data column mapped to the AnnotationValueMemberPath property.
 
 For example, you can use `DataAnnotationStripLayer` to annotate chart with stock market crashes and changes in federal interest rates.
 

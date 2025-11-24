@@ -14,11 +14,11 @@ mentionedTypes: []
 
 Visual Studio 2022 を起動し、開始ページで **[新しいプロジェクトの作成]** をクリックし、**Blazor Web App** テンプレートを選択して、**[次へ]** をクリックします。
 
-<img src="../images/general/new-blazor-project-web-app.jpg" />
+<img src="../images/general/new-blazor-project-web-app.jpg" alt="new-blazor-project-web-app" />
 
 プロジェクト名と場所を入力し、**[次へ]** をクリックします。
 
-<img src="../images/general/new-blazor-project-configuring-web-app.jpg" />
+<img src="../images/general/new-blazor-project-configuring-web-app.jpg" alt="new-blazor-project-configuring-web-app" />
 
 次のステップでは、オプションの Interactivity の場所の設定に注意してください。これは、クライアント プロジェクト内のページごとにデフォルト設定されます (例: @rendermode Interactive Auto)。もう 1 つのオプションである Global では、Interactivity レンダリング モードの設定を、共有 Blazor プロジェクト内の 1 つの場所にある App.razor に移動します。
 
@@ -26,7 +26,7 @@ Visual Studio 2022 を起動し、開始ページで **[新しいプロジェク
 
 **追加のプロジェクト オプションを指定し、[作成]** をクリックします。
 
-<img src="../images/general/new-blazor-project-web-app-info.jpg" />
+<img src="../images/general/new-blazor-project-web-app-info.jpg" alt="new-blazor-project-web-app-info" />
 
 ## Ignite UI for Blazor のインストール
 
@@ -124,4 +124,4 @@ Razor ページに Ignite UI for Blazor コンポーネントを追加します�
 
 Blazor アプリをビルドして実行します。
 
-<img src="../images/general/getting-started-blazor-card.jpg" />
+<img src="../images/general/getting-started-blazor-card.jpg" alt="getting-started-blazor-card" />

@@ -21,12 +21,14 @@ The following example demonstrates how to create Pyramid Chart using `BarSeries`
 <div class="divider--half"></div>
 
 ## Additional Resources
+
 - [Bar Chart](bar-chart.md)
 - [Column Chart](column-chart.md)
 - [Composite Chart](composite-chart.md)
 <!-- - [Gantt Chart](gantt-chart.md) -->
 
 ## API References
+
 - `BarSeries`
 - `CategoryYAxis`
 - `NumericXAxis`

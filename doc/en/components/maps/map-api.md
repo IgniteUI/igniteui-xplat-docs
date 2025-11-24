@@ -24,13 +24,13 @@ The {Platform} `XamGeographicMap` has the following API members:
 
 The {Platform} `XamGeographicMap` has 7 types of series and they have the `ItemsSource` property for data binding.
 
- - `GeographicHighDensityScatterSeries`
- - `GeographicSymbolSeries`
- - `GeographicProportionalSymbolSeries`
- - `GeographicPolylineSeries`
- - `GeographicShapeSeries`
- - `GeographicScatterAreaSeries`
- - `GeographicContourLineSeries`
+- `GeographicHighDensityScatterSeries`
+- `GeographicSymbolSeries`
+- `GeographicProportionalSymbolSeries`
+- `GeographicPolylineSeries`
+- `GeographicShapeSeries`
+- `GeographicScatterAreaSeries`
+- `GeographicContourLineSeries`
 
 In addition, each type of series has specific properties for mapping data items and styling their appearance:
 

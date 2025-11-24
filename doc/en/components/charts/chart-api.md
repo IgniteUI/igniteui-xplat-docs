@@ -39,17 +39,17 @@ The {Platform} `XamDataChart` can use the following type of series that inherit 
 
 | Category Series  | Stacked Series |
 |------------------|----------------|
-| - `AreaSeries` <br> - `BarSeries` <br> - `ColumnSeries` <br> - `LineSeries` <br> -  `PointSeries`  <br> - `SplineSeries` <br>  -  `SplineAreaSeries` <br> -  `StepLineSeries` <br> -  `StepAreaSeries` <br> - `RangeAreaSeries` <br> - `RangeColumnSeries` <br> - `WaterfallSeries` <br> | -  `StackedAreaSeries` <br> -  `StackedBarSeries` <br> -  `StackedColumnSeries` <br> -  `StackedLineSeries` <br> -  `StackedSplineSeries` <br> -  `Stacked100AreaSeries` <br> -  `Stacked100BarSeries` <br> -  `Stacked100ColumnSeries` <br> -  `Stacked100LineSeries` <br> -  `Stacked100SplineSeries` <br> <br> <br> |
+| - `AreaSeries` <br> - `BarSeries` <br> - `ColumnSeries` <br> - `LineSeries` <br> - `PointSeries`  <br> - `SplineSeries` <br>  - `SplineAreaSeries` <br> - `StepLineSeries` <br> - `StepAreaSeries` <br> - `RangeAreaSeries` <br> - `RangeColumnSeries` <br> - `WaterfallSeries` <br> | - `StackedAreaSeries` <br> - `StackedBarSeries` <br> - `StackedColumnSeries` <br> - `StackedLineSeries` <br> - `StackedSplineSeries` <br> - `Stacked100AreaSeries` <br> - `Stacked100BarSeries` <br> - `Stacked100ColumnSeries` <br> - `Stacked100LineSeries` <br> - `Stacked100SplineSeries` <br> <br> <br> |
 
 
 | Scatter Series | Financial Series |
 |----------------|------------------|
-| -  `BubbleSeries` <br> - `HighDensityScatterSeries` <br> -  `ScatterSeries` <br>  - `ScatterLineSeries` <br> -  `ScatterSplineSeries` <br> -  `ScatterAreaSeries` <br> -  `ScatterContourSeries` <br> -  `ScatterPolylineSeries`  <br> -  `ScatterPolygonSeries`  <br> <br> | -  `FinancialPriceSeries` <br> -  `BollingerBandsOverlay` <br> -  `ForceIndexIndicator` <br> -  `MedianPriceIndicator` <br> - `MassIndexIndicator`  <br> - `RelativeStrengthIndexIndicator` <br> - `StandardDeviationIndicator` <br> -  `TypicalPriceIndicator` <br> - `WeightedCloseIndicator` <br> - and [many more](types/stock-chart.md) |
+| - `BubbleSeries` <br> - `HighDensityScatterSeries` <br> - `ScatterSeries` <br>  - `ScatterLineSeries` <br> - `ScatterSplineSeries` <br> - `ScatterAreaSeries` <br> - `ScatterContourSeries` <br> - `ScatterPolylineSeries`  <br> - `ScatterPolygonSeries`  <br> <br> | - `FinancialPriceSeries` <br> - `BollingerBandsOverlay` <br> - `ForceIndexIndicator` <br> - `MedianPriceIndicator` <br> - `MassIndexIndicator`  <br> - `RelativeStrengthIndexIndicator` <br> - `StandardDeviationIndicator` <br> - `TypicalPriceIndicator` <br> - `WeightedCloseIndicator` <br> - and [many more](types/stock-chart.md) |
 
 
 | Radial Series | Polar Series |
 |---------------|--------------|
-| - `RadialLineSeries` <br> -  `RadialAreaSeries` <br> -  `RadialPieSeries` <br> -  `RadialColumnSeries` <br> <br> | - `PolarScatterSeries` <br> -  `PolarLineSeries` <br> -  `PolarAreaSeries` <br> -  `PolarSplineSeries` <br> -  `PolarSplineAreaSeries` <br> |
+| - `RadialLineSeries` <br> - `RadialAreaSeries` <br> - `RadialPieSeries` <br> - `RadialColumnSeries` <br> <br> | - `PolarScatterSeries` <br> - `PolarLineSeries` <br> - `PolarAreaSeries` <br> - `PolarSplineSeries` <br> - `PolarSplineAreaSeries` <br> |
 
 
 ## {Platform} Data Legend API

@@ -42,7 +42,7 @@ import { defineComponents, IgcAccordionComponent } from 'igniteui-webcomponents'
 defineComponents(IgcAccordionComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -152,8 +152,8 @@ private accordion: IgcAccordionComponent;
 private panels: IgcExpansionPanelComponent[];
 
 constructor() {
-	this.accordion = document.getElementById("accordion") as IgcAccordionComponent;
-	this.panels = this.accordion.panels;
+    this.accordion = document.getElementById("accordion") as IgcAccordionComponent;
+    this.panels = this.accordion.panels;
 }
 ```
 
@@ -164,7 +164,7 @@ As demonstrated above, the `SingleExpand`property gives you the ability to set w
 By using the `HideAll` and `ShowAll` methods you can respectively collapse and expand all `ExpansionPanel`s of the `Accordion` programmatically.
 
 > [!Note]
-> If `SingleExpand` property is set to *true* calling `ShowAll` method would expand only the focused panel.
+> If `SingleExpand` property is set to **true** calling `ShowAll` method would expand only the focused panel.
 
 ### {Platform} Accordion Customization Example
 
@@ -195,14 +195,14 @@ Keyboard navigation in the {Platform} Accordion provides a rich variety of keybo
 The Accordion navigation is compliant with W3C accessibility standards and convenient to use.
 
 **Key Combinations**
- - <kbd>↓</kbd> - moves the focus to the panel below
- - <kbd>↑</kbd> - moves the focus to the panel above
- - <kbd>ALT</kbd> + <kbd>↓</kbd> - opens the focused panel in the accordion
- - <kbd>ALT</kbd> + <kbd>↑</kbd> - closes the focused panel in the accordion
- - <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>↓</kbd> - opens all enabled panels (if singleExpand is set to true opens the focused panel)
- - <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>↑</kbd> - closes all enabled panels
- - <kbd>HOME</kbd> - navigates to the FIRST enabled panel in the accordion
- - <kbd>END</kbd> - navigates to the LAST enabled panel in the accordion
+- <kbd>↓</kbd> - moves the focus to the panel below
+- <kbd>↑</kbd> - moves the focus to the panel above
+- <kbd>ALT</kbd> + <kbd>↓</kbd> - opens the focused panel in the accordion
+- <kbd>ALT</kbd> + <kbd>↑</kbd> - closes the focused panel in the accordion
+- <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>↓</kbd> - opens all enabled panels (if singleExpand is set to true opens the focused panel)
+- <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>↑</kbd> - closes all enabled panels
+- <kbd>HOME</kbd> - navigates to the FIRST enabled panel in the accordion
+- <kbd>END</kbd> - navigates to the LAST enabled panel in the accordion
 
 <div class="divider"></div>
 
@@ -213,5 +213,5 @@ The Accordion navigation is compliant with W3C accessibility standards and conve
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

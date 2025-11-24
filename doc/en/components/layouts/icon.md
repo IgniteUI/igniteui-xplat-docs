@@ -32,7 +32,7 @@ import { defineComponents, IgcIconComponent } from "igniteui-webcomponents";
 defineComponents(IgcIconComponent);
 ```
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 <!-- end: WebComponents -->
 
@@ -267,11 +267,11 @@ igc-icon {
 
 ## API References
 
- - `Icon`
- - `RegisterIcon`
- - [`Styling & Themes`](../themes/overview.md)
+- `Icon`
+- `RegisterIcon`
+- [`Styling & Themes`](../themes/overview.md)
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

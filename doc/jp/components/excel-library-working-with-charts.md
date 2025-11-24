@@ -46,9 +46,9 @@ chart.SetSourceData("A2:M6", true);
 
 ## API リファレンス
 
- - `AddChart`
- - `Area`
- - `Column`
- - `Line`
- - `Pie`
- - `WorksheetChart`
+- `AddChart`
+- `Area`
+- `Column`
+- `Line`
+- `Pie`
+- `WorksheetChart`

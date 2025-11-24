@@ -80,7 +80,7 @@ public Series StylingOverlayText()
 {
     var annoLayer = new IgbDataAnnotationSliceLayer();
 
-    // styling optional overlay text 
+    // styling optional overlay text
     annoLayer.OverlayTextColor = Brushes.White;
     annoLayer.OverlayTextBackground = Brushes.Green;
     annoLayer.OverlayTextBorderColor = Brushes.Black;

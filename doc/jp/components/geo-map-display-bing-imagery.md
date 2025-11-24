@@ -100,6 +100,6 @@ geoMap.backgroundContent = tileSource;
 
 ## API リファレンス
 
- - `BingMapsImageryStyle`
- - `BingMapsMapImagery`
- - `XamGeographicMap`
+- `BingMapsImageryStyle`
+- `BingMapsMapImagery`
+- `XamGeographicMap`

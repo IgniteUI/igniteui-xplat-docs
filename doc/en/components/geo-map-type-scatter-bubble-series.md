@@ -300,9 +300,9 @@ addSeriesWith(locations: any[])
 
 ## API References
 
- - `GeographicProportionalSymbolSeries`
- - `ItemsSource`
- - `LatitudeMemberPath`
- - `LongitudeMemberPath`
- - `RadiusMemberPath`
- - `RadiusScale`
+- `GeographicProportionalSymbolSeries`
+- `ItemsSource`
+- `LatitudeMemberPath`
+- `LongitudeMemberPath`
+- `RadiusMemberPath`
+- `RadiusScale`

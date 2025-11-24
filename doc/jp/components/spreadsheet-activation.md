@@ -39,9 +39,9 @@ this.spreadsheet.activeCell = new SpreadsheetCell("C5");
 
 ## API リファレンス
 
- - `ActiveCell`
- - `ActivePane`
- - `ActiveWorksheet`
- - `SpreadsheetCell`
- - `Spreadsheet`
- - `Workbook`
+- `ActiveCell`
+- `ActivePane`
+- `ActiveWorksheet`
+- `SpreadsheetCell`
+- `Spreadsheet`
+- `Workbook`

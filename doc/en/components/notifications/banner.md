@@ -64,7 +64,7 @@ You will also need to link an additional CSS file to apply the styling to the `B
 ```
 <!-- end: Blazor -->
 
-For a complete introduction to the {ProductName}, read the [*Getting Started*](../general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [**Getting Started**](../general-getting-started.md) topic.
 
 ### Show Banner
 
@@ -253,6 +253,7 @@ To cancel the closing event, call the [`preventDefault`](https://developer.mozil
     ...
 </igc-banner>
 ```
+
 ```ts
 const banner = document.getElementById('banner') as IgcBannerComponent;
 
@@ -282,6 +283,7 @@ banner.addEventListener('igcClosing', (event) => {
     }
 }
 ```
+
 ```razor
 //In JavaScript:
 function handleClosing() {
@@ -474,7 +476,7 @@ return(
     private IgbBanner bannerRef;
     private string iconName = "signal_wifi_off";
     private bool wifiState = false;
-    
+
     private void RefreshBanner()
     {
         if (!this.wifiState)
@@ -537,5 +539,5 @@ igc-banner::part(content) {
 
 ## Additional Resources
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+- [{ProductName} **Forums**]({ForumsLink})
+- [{ProductName} **GitHub**]({GithubLink})

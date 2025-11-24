@@ -118,8 +118,8 @@ _language: ja
     <IgrColumn field="OrderDate" header="Order Date" sortable={false}  dataType="date">
     </IgrColumn>
     <IgrColumn field="Discontinued" header="Discontinued" sortable={true} dataType="boolean">
-    </IgrColumn>      
-</IgrGrid>  
+    </IgrColumn>
+</IgrGrid>
 ```
 
 以下のサンプルの **Product Name** と **Discontinued** 列で 4 つすべての機能が有効です。**Quantity Per Unit** で 4 機能すべてが無効、**Unit Price** でソートのみが有効、**Order Date** でピン固定と非表示のみ有効です。すべてが `Selectable` です。
@@ -229,7 +229,7 @@ _language: ja
     <IgrColumn field="GrammyNominations" header="Grammy Nominations" filterable={true} sortable={false} dataType="number"></IgrColumn>
     <IgrColumn field="GrammyAwards" header="Grammy Awards" filterable={true} dataType="number"></IgrColumn>
     {/* ... */}
-</IgrHierarchicalGrid>  
+</IgrHierarchicalGrid>
 ```
 
 ```razor
@@ -273,13 +273,13 @@ Excel スタイル フィルター メニューをさらにカスタマイズす
 
 ```razor
 <{ComponentSelector}
-    Data="Data"    
+    Data="Data"
     AllowFiltering="true"
     FilterMode="FilterMode.ExcelStyleFilter"
     ExcelStyleHeaderIconTemplateScript="WebGridFilterAltIconTemplate">
 </{ComponentSelector}>
 
-*** In JavaScript ***
+// In JavaScript
 igRegisterScript("WebGridFilterAltIconTemplate", (ctx) => {
     var html = window.igTemplating.html;
         return html`<img height="15px" width="15px" src="http://static.infragistics.com/xplatform/images/grid/propeller-logo.svg" title="Continued" alt="Continued" />`
@@ -304,17 +304,17 @@ public webGridFilterAltIconTemplate = (ctx: IgcCellTemplateContext) => {
 ```tsx
 const webGridFilterAltIconTemplate = (ctx: IgrGridHeaderTemplateContext) => {
   return (
-    <img 
-      height="15px" 
-      width="15px" 
-      src="http://static.infragistics.com/xplatform/images/grid/propeller-logo.svg" 
-      title="Continued" 
-      alt="Continued" 
+    <img
+      height="15px"
+      width="15px"
+      src="http://static.infragistics.com/xplatform/images/grid/propeller-logo.svg"
+      title="Continued"
+      alt="Continued"
     />
   );
 }
 
-<{ComponentSelector} autoGenerate={true} allowFiltering={true} filterMode="excelStyleFilter" 
+<{ComponentSelector} autoGenerate={true} allowFiltering={true} filterMode="excelStyleFilter"
     excelStyleHeaderIconTemplate={webGridFilterAltIconTemplate}>
 </{ComponentSelector}>
 ```
@@ -563,7 +563,7 @@ Excel スタイル フィルタリング ダイアログ内のリスト項目は
 
 <!-- Angular -->
 
- ## 書式設定された値のフィルタリング ストラテジ
+## 書式設定された値のフィルタリング ストラテジ
 
 デフォルトでは、{ComponentTitle} コンポーネントは元のセル値に基づいてデータをフィルター処理しますが、場合によっては、書式設定された値に基づいてデータをフィルター処理することが必要になる場合があります。
 
@@ -1047,6 +1047,7 @@ $custom-drop-down: drop-down-theme(
     --ig-list-item-background: #ffcd0f;
 }
 ```
+
 ### デモ
 
 `sample="/{ComponentSample}/excel-style-filtering-style", height="950", alt="{Platform} {ComponentTitle} Excel スタイルのフィルタリング スタイル"`
@@ -1055,25 +1056,25 @@ $custom-drop-down: drop-down-theme(
 
 ## API リファレンス
 
-* `Column`
-* `{ComponentName}`
+- `Column`
+- `{ComponentName}`
 
 
 ## その他のリソース
 
 <!-- ComponentStart: Grid -->
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 <!-- ComponentEnd: Grid -->
 
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

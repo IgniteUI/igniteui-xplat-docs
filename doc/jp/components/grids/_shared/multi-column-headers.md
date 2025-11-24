@@ -848,6 +848,7 @@ import 'core-js/es7/array';
     --ig-grid-header-border-color: rgba(0, 0, 0, 0.08);
 }
 ```
+
 ### デモ
 
 `sample="/{ComponentSample}/multi-column-headers-styling", height="500", alt="{Platform} {ComponentTitle} 複数列ヘッダーのスタイル サンプル"`
@@ -857,24 +858,24 @@ import 'core-js/es7/array';
 
 ## API リファレンス
 
-* `{ComponentName}`
-* `ColumnGroup`
+- `{ComponentName}`
+- `ColumnGroup`
 
 ## その他のリソース
 
 <!-- ComponentStart: Grid -->
-* [Grid の概要](../data-grid.md)
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
-* [グループ化](groupby.md)
+- [Grid の概要](../data-grid.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
+- [グループ化](groupby.md)
 <!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

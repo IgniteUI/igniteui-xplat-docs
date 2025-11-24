@@ -43,6 +43,10 @@
     "build-staging": "tsc && gulp buildDocfx_WithArgs --env=staging",
     "build-production": "tsc && gulp buildDocfx_WithArgs --env=production",
     "test": "tsc && mocha",
+    "spellcheck": "cspell \"doc/en/components/**/*.md\"",
+    "lint-en": "markdownlint \"doc/en/components/**/*.md\"",
+    "lint-jp": "markdownlint \"doc/jp/components/**/*.md\"",
+    "lint-kr": "markdownlint \"doc/kr/components/**/*.md\"",
     "postinstall": "dotnet tool restore --ignore-failed-sources"
   },
   "keywords": [],

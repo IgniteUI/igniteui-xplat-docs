@@ -64,10 +64,10 @@ _language: ja
 
 ## API リファレンス
 
- - `DisplayName`
- - `FilterExpressions`
- - `FilterFactory`
- - `FilterLogicalOperator`
- - `FilterOperand`
- - `FilterRequested`
- - `FilterUIType`
+- `DisplayName`
+- `FilterExpressions`
+- `FilterFactory`
+- `FilterLogicalOperator`
+- `FilterOperand`
+- `FilterRequested`
+- `FilterUIType`

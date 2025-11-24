@@ -254,6 +254,7 @@ Banner コンポーネントを表示するには、ボタン クリックで `S
     ...
 </igc-banner>
 ```
+
 ```ts
 const banner = document.getElementById('banner') as IgcBannerComponent;
 
@@ -283,6 +284,7 @@ banner.addEventListener('igcClosing', (event) => {
     }
 }
 ```
+
 ```razor
 //In JavaScript:
 function handleClosing() {
@@ -475,7 +477,7 @@ return(
     private IgbBanner bannerRef;
     private string iconName = "signal_wifi_off";
     private bool wifiState = false;
-    
+
     private void RefreshBanner()
     {
         if (!this.wifiState)
@@ -538,5 +540,5 @@ igc-banner::part(content) {
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

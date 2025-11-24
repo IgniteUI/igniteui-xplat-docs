@@ -34,20 +34,21 @@ Ignite UI for {Platform} {ComponentTitle} には、同じ値を持つ隣接セ�
 ## セル結合の有効化と使用
 
 グリッドでのセル結合は、以下の 2 つのレベルで制御されます:
- - グリッド レベルの結合モード - 結合がいつ適用されるかを決定
- - 列レベルの結合トグル - どの列でセルを結合できるかを決定
+- グリッド レベルの結合モード - 結合がいつ適用されるかを決定
+- 列レベルの結合トグル - どの列でセルを結合できるかを決定
 
 ### グリッド結合モード
 
 グリッドは、`GridCellMergeMode` 列挙型の値を受け入れる `cellMergeMode` プロパティを公開します。
- - `always` - ソート状態に関係なく、結合条件を満たすすべての隣接セルを結合。
- - `onSort` - 列がソートされているときのみ隣接セルを結合 **(デフォルト値)**。
+- `always` - ソート状態に関係なく、結合条件を満たすすべての隣接セルを結合。
+- `onSort` - 列がソートされているときのみ隣接セルを結合 **(デフォルト値)**。
 
 ```tsx
 <{ComponentSelector} data={data} cellMergeMode={cellMergeMode} >
     ...
 </{ComponentSelector}>
 ```
+
 ```tsx
 const cellMergeMode: GridCellMergeMode = 'always';
 ```
@@ -88,8 +89,8 @@ const cellMergeMode: GridCellMergeMode = 'always';
 ```
 
 上記の例では:
- - **OrderID** 列は、隣接する重複値を結合します。
- - **ShipperName** 列は、結合を行わず通常通りに描画されます。
+- **OrderID** 列は、隣接する重複値を結合します。
+- **ShipperName** 列は、結合を行わず通常通りに描画されます。
 
 ### 組み合わせた例
 
@@ -146,7 +147,7 @@ export declare class IgrGridMergeStrategy {
         grid?: GridType
     ) => any[];
 
-    comparer: (prevRecord: any, record: any, field: string) => boolean;    
+    comparer: (prevRecord: any, record: any, field: string) => boolean;
 }
 ```
 <!-- end: React -->
@@ -162,7 +163,7 @@ export declare class IgcGridMergeStrategy {
         grid?: GridType
     ) => any[];
 
-    comparer: (prevRecord: any, record: any, field: string) => boolean;    
+    comparer: (prevRecord: any, record: any, field: string) => boolean;
 }
 ```
 <!-- end: WebComponents -->
@@ -305,22 +306,22 @@ constructor() {
 
 ## API リファレンス
 
-* `{ComponentName}`
+- `{ComponentName}`
 
 ## その他のリソース
 
-* [フィルタリング](filtering.md)
-* [Excel スタイル フィルタリング](excel-style-filtering.md)
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [フィルタリング](filtering.md)
+- [Excel スタイル フィルタリング](excel-style-filtering.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

@@ -392,6 +392,7 @@ const onResize = (event: IgrColumnResizeEventArgs) => {
 <igx-column [field]="'ID'" width="100px" [resizable]="true"
             [minWidth]="'60px'" [maxWidth]="'230px'"></igx-column>
 ```
+
 ```html
 <igc-column field="ID" width="100px" resizable="true"
             min-width="60px" max-width="230px"></igc-column>
@@ -440,6 +441,7 @@ const onResize = (event: IgrColumnResizeEventArgs) => {
 <igx-column [field]="'ID'" width="10%" [resizable]="true"
             [minWidth]="'60px'" [maxWidth]="'230px'"></igx-column>
 ```
+
 ```html
 <igc-column field="ID" width="10%" resizable="true"
             min-width="60px" max-width="230px"></igc-column>
@@ -486,6 +488,7 @@ const onResize = (event: IgrColumnResizeEventArgs) => {
 <igx-column [field]="'ID'" width="100px" [resizable]="true"
             [minWidth]="'5%'" [maxWidth]="'15%'"></igx-column>
 ```
+
 ```html
 <igc-column field="ID" width="100px" resizable="true"
             min-width="5%" max-width="15%"></igc-column>
@@ -767,21 +770,21 @@ $custom-grid-theme: grid-theme(
 
 ## API リファレンス
 
-* `Column`
-* `{ComponentName}`
+- `Column`
+- `{ComponentName}`
 
 ## その他のリソース
 
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [フィルタリング](filtering.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [選択](selection.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [フィルタリング](filtering.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [選択](selection.md)
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

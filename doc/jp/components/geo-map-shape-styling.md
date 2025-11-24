@@ -45,10 +45,10 @@ import { IgcShapefileRecord } from 'igniteui-webcomponents-core';
 ```
 
 次のコード例は、シェイプ スタイリングを設定する 4 つの異なる方法を提供する[シェイプ スタイリング ユーティリティ](geo-map-resources-shape-styling-utility.md) ファイルを使用していることに注意してください。
-* [シェイプ比較スタイリング](#シェイプ比較スタイリング)
-* [シェイプ ランダム スタイリング](#シェイプ-ランダム-スタイリング)
-* [シェイプ範囲スタイリング](#シェイプ範囲スタイリング)
-* [シェイプ スケール スタイリング](#シェイプ-スケール-スタイリング)
+- [シェイプ比較スタイリング](#シェイプ比較スタイリング)
+- [シェイプ ランダム スタイリング](#シェイプ-ランダム-スタイリング)
+- [シェイプ範囲スタイリング](#シェイプ範囲スタイリング)
+- [シェイプ スケール スタイリング](#シェイプ-スケール-スタイリング)
 
 ## シェイプ ランダム スタイリング
 
@@ -405,5 +405,5 @@ public onStylingShape(s: IgcGeographicShapeSeriesComponent, args: IgcStyleShapeE
 
 ## API リファレンス
 
- - `GeographicShapeSeries`
- - `XamGeographicMap`
+- `GeographicShapeSeries`
+- `XamGeographicMap`

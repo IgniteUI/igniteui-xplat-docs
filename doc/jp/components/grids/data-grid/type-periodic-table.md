@@ -28,4 +28,4 @@ _language: ja
 
 ## API リファレンス
 
- - `Grid`
+- `Grid`

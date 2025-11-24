@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} 高度なフィルタリング - {ProductName} 
+title: {Platform} {ComponentTitle} 高度なフィルタリング - {ProductName}
 _description: {Platform} {ComponentTitle} でデータの高度なフィルターを設定する方法。グリッドの高度なフィルタリングがより使いやすくなりました。
 _keywords: Advanced Filtering, {Platform}, {ProductName}, Infragistics, 高度なフィルタリング, インフラジスティックス
 _license: commercial
@@ -49,6 +49,7 @@ _language: ja
     <igc-grid-toolbar></igc-grid-toolbar>
 <igc-grid>
 ```
+
 ```ts
 constructor() {
     let grid = document.getElementById("grid") as IgcGridComponent;
@@ -75,6 +76,7 @@ constructor() {
     <igc-grid-toolbar></igc-grid-toolbar>
 </igc-tree-grid>
 ```
+
 ```ts
 constructor() {
     let treeGrid = document.getElementById("treeGrid") as IgcTreeGridComponent;
@@ -95,6 +97,7 @@ constructor() {
     <igc-grid-toolbar></igc-grid-toolbar>
 </igc-hierarchical-grid>
 ```
+
 ```ts
 constructor() {
     let hierarchicalGrid = document.getElementById("hierarchicalGrid") as IgcHierarchicalGridComponent;
@@ -610,6 +613,7 @@ $custom-drop-down: drop-down-theme(
     --ig-grid-filtering-background-or: #d83434;
 }
 ```
+
 ### デモ
 
 `sample="/{ComponentSample}/advanced-filtering-style", height="530", alt="{Platform} {ComponentTitle} 高度なフィルタリング スタイル"`
@@ -618,25 +622,25 @@ $custom-drop-down: drop-down-theme(
 
 ## API リファレンス
 
-* `Column`
-* `{ComponentName}`
+- `Column`
+- `{ComponentName}`
 
 ## その他のリソース
 
 <!-- ComponentStart: Grid -->
-* [フィルタリング](filtering.md)
-* [Excel スタイル フィルタリング](excel-style-filtering.md)
-* [仮想化とパフォーマンス](virtualization.md)
-* [ページング](paging.md)
-* [ソート](sorting.md)
-* [集計](summaries.md)
-* [列の移動](column-moving.md)
-* [列のピン固定](column-pinning.md)
-* [列のサイズ変更](column-resizing.md)
-* [選択](selection.md)
+- [フィルタリング](filtering.md)
+- [Excel スタイル フィルタリング](excel-style-filtering.md)
+- [仮想化とパフォーマンス](virtualization.md)
+- [ページング](paging.md)
+- [ソート](sorting.md)
+- [集計](summaries.md)
+- [列の移動](column-moving.md)
+- [列のピン固定](column-pinning.md)
+- [列のサイズ変更](column-resizing.md)
+- [選択](selection.md)
 <!-- ComponentEnd: Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

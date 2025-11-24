@@ -301,19 +301,19 @@ import { IgxActionStripModule } from 'igniteui-angular';
 
 アクション ストリップの API に関する詳細な情報は、以下のリンクのトピックを参照してください。
 
-* `ActionStrip`
+- `ActionStrip`
 
 アクション ストリップで使用できるその他のコンポーネントとディレクティブ:
 
-* `GridActionsBaseDirective`
-* `DividerDirective`
+- `GridActionsBaseDirective`
+- `DividerDirective`
 
 <!-- end: Angular -->
 
-* `GridPinningActions`
-* `GridEditingActions`
+- `GridPinningActions`
+- `GridEditingActions`
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**]({ForumsLink})
-* [{ProductName} **GitHub (英語)**]({GithubLink})
+- [{ProductName} **フォーラム (英語)**]({ForumsLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})

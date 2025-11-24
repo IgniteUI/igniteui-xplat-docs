@@ -345,14 +345,14 @@ public onDataLoaded(csvData: string) {
 
 ## API リファレンス
 
- - `GeographicTileSeries`
- - `HeatTileGenerator`
- - `MaximumColor`
- - `MinimumColor`
- - `ShapefileRecord`
- - `ShapefileConverter`
- - `TileGeneratorMapImagery`
- - `TileGenerator`
- - `TileImagery`
- - `UseBlurRadiusAdjustedForZoom`
- - `UseLogarithmicScale`
+- `GeographicTileSeries`
+- `HeatTileGenerator`
+- `MaximumColor`
+- `MinimumColor`
+- `ShapefileRecord`
+- `ShapefileConverter`
+- `TileGeneratorMapImagery`
+- `TileGenerator`
+- `TileImagery`
+- `UseBlurRadiusAdjustedForZoom`
+- `UseLogarithmicScale`
