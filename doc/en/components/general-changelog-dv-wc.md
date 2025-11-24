@@ -116,10 +116,10 @@ Ability for axis annotations to automatically detect collisions and truncate to 
 |[1882](https://github.com/IgniteUI/igniteui-webcomponents/pull/1882)| Chat |Message actions not rendered after last message|
 |[1885](https://github.com/IgniteUI/igniteui-webcomponents/pull/1885)| Date Picker |Change event not emitted for non-editable input configuration|
 |[1894](https://github.com/IgniteUI/igniteui-webcomponents/pull/1894)| Date Picker | Issues when clearing the value and notch border in Material theme|
-|40136|Excel Library|FormulaParseException exception when loading an Excel workbook
-|40262|IgcSpreadsheet|#Circularity! is displayed when there are warnings. Request to match Excel - display a value eg. 0 instead
-|40458|IgcSpreadsheet|When using Arial font, the igx-spreadsheet cuts off text in the cells
-|40490|IgcDatePicker|Inputs by Autofill won't give any effects for a date picker
+|40136|Excel Library|FormulaParseException exception when loading an Excel workbook|
+|40262|IgcSpreadsheet|#Circularity! is displayed when there are warnings. Request to match Excel - display a value eg. 0 instead|
+|40458|IgcSpreadsheet|When using Arial font, the igx-spreadsheet cuts off text in the cells|
+|40490|IgcDatePicker|Inputs by Autofill won't give any effects for a date picker|
 
 ## **{PackageVerChanges-25-1-SEP}**
 
@@ -347,9 +347,9 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
 |25997 | `IgcDataGrid` | Summaries are only showing for first grouped child row|
-|37023 | `IgcDataChart` | Tooltips are cut-off/offscreen if overflow hidden is set.
-|37685 | `IgcSpreadsheet` | Poor rendering of numbers formatted with Arial font.
-|37244 | Excel Library | Custom Data Validation is not working.
+|37023 | `IgcDataChart` | Tooltips are cut-off/offscreen if overflow hidden is set.|
+|37685 | `IgcSpreadsheet` | Poor rendering of numbers formatted with Arial font.|
+|37244 | Excel Library | Custom Data Validation is not working.|
 
 ## **{PackageVerChanges-24-2-APR}**
 

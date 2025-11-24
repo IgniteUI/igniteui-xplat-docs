@@ -37,10 +37,10 @@ Ability for axis annotations to automatically detect collisions and truncate to 
 
 | Bug Number | Control | Description |
 |------------|---------|-------------|
-|40136|Excel Library|FormulaParseException exception when loading an Excel workbook
-|40262|IgrSpreadsheet|#Circularity! is displayed when there are warnings. Request to match Excel - display a value eg. 0 instead
-|40458|IgrSpreadsheet|When using Arial font, the igx-spreadsheet cuts off text in the cells
-|40490|IgrDatePicker|Inputs by Autofill won't give any effects for a date picker
+|40136|Excel Library|FormulaParseException exception when loading an Excel workbook|
+|40262|IgrSpreadsheet|#Circularity! is displayed when there are warnings. Request to match Excel - display a value eg. 0 instead|
+|40458|IgrSpreadsheet|When using Arial font, the igx-spreadsheet cuts off text in the cells|
+|40490|IgrDatePicker|Inputs by Autofill won't give any effects for a date picker|
 
 ## **{PackageVerChanges-25-1-OCT_2}**
 
@@ -357,9 +357,9 @@ Please note that the maximum size available for the icons is 24x24. You can prov
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
 |25997 | `IgrDataGrid` | Summaries are only showing for first grouped child row|
-|37023 | `IgrDataChart` | Tooltips are cut-off/offscreen if overflow hidden is set.
-|37685 | `IgrSpreadsheet` | Poor rendering of numbers formatted with Arial font.
-|37244 | Excel Library | Custom Data Validation is not working.
+|37023 | `IgrDataChart` | Tooltips are cut-off/offscreen if overflow hidden is set.|
+|37685 | `IgrSpreadsheet` | Poor rendering of numbers formatted with Arial font.|
+|37244 | Excel Library | Custom Data Validation is not working.|
 
 ## **{PackageVerChanges-24-2-APR2}**
 > [!Note]With 19.0.0 the React product introduces many breaking changes done to improve and streamline the API. Please refer to the full Update Guide.

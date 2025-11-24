@@ -46,9 +46,9 @@ Ability for axis annotations to automatically detect collisions and truncate to 
 
 | Bug Number | Control | Description |
 |------------|---------|-------------|
-|34960|IgbGrid|Maximum call stack size exceeded error in Blazor Web Application if grid is in a modal dialog
-|40136|Excel Library|FormulaParseException exception when loading an Excel workbook
-|40490|IgbDatePicker|Inputs by Autofill won't give any effects for a date picker
+|34960|IgbGrid|Maximum call stack size exceeded error in Blazor Web Application if grid is in a modal dialog|
+|40136|Excel Library|FormulaParseException exception when loading an Excel workbook|
+|40490|IgbDatePicker|Inputs by Autofill won't give any effects for a date picker|
 
 ## **{PackageVerChanges-25-1-SEP}**
 

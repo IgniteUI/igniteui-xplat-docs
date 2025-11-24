@@ -44,10 +44,10 @@ Ability for axis annotations to automatically detect collisions and truncate to 
 
 | Bug Number | Control | Description |
 |------------|---------|-------------|
-|40136|Excel Library|FormulaParseException exception when loading an Excel workbook
-|40262|IgxSpreadsheet|#Circularity! is displayed when there are warnings. Request to match Excel - display a value eg. 0 instead
-|40458|IgxSpreadsheet|When using Arial font, the igx-spreadsheet cuts off text in the cells
-|40490|IgxDatePicker|Inputs by Autofill won't give any effects for a date picker
+|40136|Excel Library|FormulaParseException exception when loading an Excel workbook|
+|40262|IgxSpreadsheet|#Circularity! is displayed when there are warnings. Request to match Excel - display a value eg. 0 instead|
+|40458|IgxSpreadsheet|When using Arial font, the igx-spreadsheet cuts off text in the cells|
+|40490|IgxDatePicker|Inputs by Autofill won't give any effects for a date picker|
 
 ## **{PackageVerChanges-25-1-SEP}**
 
@@ -186,9 +186,9 @@ There is a new property called `UseInsetOutlines` to control how outlines on the
 
 | Bug Number | Control | Description      |
 |------------|---------|------------------|
-|37023 | `IgxDataChart` | Tooltips are cut-off/offscreen if overflow hidden is set.
-|37685 | `IgxSpreadsheet` | Poor rendering of numbers formatted with Arial font.
-|37244 | Excel Library | Custom Data Validation is not working.
+|37023 | `IgxDataChart` | Tooltips are cut-off/offscreen if overflow hidden is set.|
+|37685 | `IgxSpreadsheet` | Poor rendering of numbers formatted with Arial font.|
+|37244 | Excel Library | Custom Data Validation is not working.|
 
 ## **{PackageVerChanges-24-2-FEB}**
 

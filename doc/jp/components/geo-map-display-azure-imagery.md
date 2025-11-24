@@ -14,7 +14,7 @@ _language: ja
 ## {Platform} Azure Maps からの画像の表示例
 
 
-<img src="../images/general/AzureMapsImagery.png" />
+<img src="../images/general/AzureMapsImagery.png" alt="AzureMapsImagery" />
 
 
 <div class="divider--half"></div>
@@ -111,7 +111,7 @@ map.backgroundContent = tileSource;
 - **Terra** に **WeatherRadarOverlay** を組み合わせて、地形と降水を同時に視覚化。
 - **DarkGrey** と **LabelsRoadOverlay** を適用し、ダッシュボードに適したコントラストの高いビューを実現。
 
-<img src="../images/general/Azure_Traffic_Tile_Series_With_Background.png" />
+<img src="../images/general/Azure_Traffic_Tile_Series_With_Background.png" alt="Azure Traffic Tile Series With Background"/>
 
 <div class="divider--half"></div>
 
@@ -287,7 +287,7 @@ window.addEventListener("load", () => {
 | プロパティ名  | プロパティ タイプ   | 説明   |
 |----------------|-----------------|---------------|
 |`ApiKey`|string|Azure Maps 画像サービスで必要となる API キーを設定するためのプロパティを表します。このキーは <a href="https://azure.microsoft.com/ja-jp/products/azure-maps" target="_blank">azure.microsoft.com</a> ウェブサイトから取得してください。|
-|`ImageryStyle`|`AzureMapsImageryStyle`|Azure Maps 画像タイルのマップ スタイルを設定するプロパティを表します。このプロパティは、以下の `AzureMapsImageryStyle` 列挙値に設定できます。<ul><li>Satellite - 道路またはラベルのオーバーレイなしの衛星地図スタイルを指定します。</li><li>Road - 道路およびラベル付きの衛星地図スタイルを指定します。</li><li>DarkGrey - コントラストやオーバーレイのハイライト表示に適したダーク グレーのベース マップ スタイルを指定します。</li><li>TerraOverlay - 標高や地形の特徴をハイライト表示する陰影起伏付きの地形マップ スタイルを指定します。</li><li>LabelsRoadOverlay - 航空写真オーバーレイなしで都市ラベルを表示する複数のオーバーレイの 1 つです。</li><li>HybridRoadOverlay - 衛星画像の背景に道路とラベルのオーバーレイを組み合わせます。</li><li>HybridDarkGreyOverlay - 衛星画像の背景にダーク グレーのラベル オーバーレイを組み合わせます。</li><li>LabelsDarkGreyOverlay - ダーク グレーのベース マップ上に都市ラベルを表示する複数のオーバーレイの 1 つです。</li><li>TrafficDelayOverlay - 交通遅延や渋滞エリアをリアルタイムで表示します。</li><li>TrafficAbsoluteOverlay - 現在の交通速度を絶対値で表示します。</li><li>TrafficReducedOverlay - 減少した交通流を光ベースの視覚化で表示します。</li><li>TrafficRelativeOverlay - 通常の状況に対する相対的な交通速度を表示します。</li><li>TrafficRelativeDarkOverlay - 通常時と比較した交通速度をダーク ベースマップ上に表示し、コントラストを強調します。</li><li>WeatherRadarOverlay - 降水のほぼリアルタイムのレーダー画像を表示します。</li><li>WeatherInfraredOverlay - 雲量の赤外線衛星画像を表示します。</li></ul>
+|`ImageryStyle`|`AzureMapsImageryStyle`|Azure Maps 画像タイルのマップ スタイルを設定するプロパティを表します。このプロパティは、以下の `AzureMapsImageryStyle` 列挙値に設定できます。<ul><li>Satellite - 道路またはラベルのオーバーレイなしの衛星地図スタイルを指定します。</li><li>Road - 道路およびラベル付きの衛星地図スタイルを指定します。</li><li>DarkGrey - コントラストやオーバーレイのハイライト表示に適したダーク グレーのベース マップ スタイルを指定します。</li><li>TerraOverlay - 標高や地形の特徴をハイライト表示する陰影起伏付きの地形マップ スタイルを指定します。</li><li>LabelsRoadOverlay - 航空写真オーバーレイなしで都市ラベルを表示する複数のオーバーレイの 1 つです。</li><li>HybridRoadOverlay - 衛星画像の背景に道路とラベルのオーバーレイを組み合わせます。</li><li>HybridDarkGreyOverlay - 衛星画像の背景にダーク グレーのラベル オーバーレイを組み合わせます。</li><li>LabelsDarkGreyOverlay - ダーク グレーのベース マップ上に都市ラベルを表示する複数のオーバーレイの 1 つです。</li><li>TrafficDelayOverlay - 交通遅延や渋滞エリアをリアルタイムで表示します。</li><li>TrafficAbsoluteOverlay - 現在の交通速度を絶対値で表示します。</li><li>TrafficReducedOverlay - 減少した交通流を光ベースの視覚化で表示します。</li><li>TrafficRelativeOverlay - 通常の状況に対する相対的な交通速度を表示します。</li><li>TrafficRelativeDarkOverlay - 通常時と比較した交通速度をダーク ベースマップ上に表示し、コントラストを強調します。</li><li>WeatherRadarOverlay - 降水のほぼリアルタイムのレーダー画像を表示します。</li><li>WeatherInfraredOverlay - 雲量の赤外線衛星画像を表示します。</li></ul> |
 
 ## API リファレンス
 
