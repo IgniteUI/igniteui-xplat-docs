@@ -128,13 +128,13 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
         <IgrIcon  name='heart' collection="material"></IgrIcon>
     </IgrRatingSymbol>
     <IgrRatingSymbol>
-      	<IgrIcon  name='heart' collection="material"></IgrIcon>
+      <IgrIcon  name='heart' collection="material"></IgrIcon>
     </IgrRatingSymbol>
     <IgrRatingSymbol>
-       	<IgrIcon  name='heart' collection="material"></IgrIcon>
+       <IgrIcon  name='heart' collection="material"></IgrIcon>
     </IgrRatingSymbol>
     <IgrRatingSymbol>
-       	<IgrIcon  name='heart' collection="material"></IgrIcon>
+       <IgrIcon  name='heart' collection="material"></IgrIcon>
     </IgrRatingSymbol>
 </IgrRating>
 ```

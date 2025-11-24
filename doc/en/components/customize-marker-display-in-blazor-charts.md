@@ -156,6 +156,7 @@ function customMarkerTemplateFunc() {
     }
 }
 ```
+
 Note you can implement any custom drawing with the HTML Canvas 2D context.
 
 However, since the render method is responsible for rendering the markers, it is necessary to implement all the processing required to display the markers by yourself. Therefore, prior knowledge of 2D rendering to the HTML Canvas element is required.
@@ -191,6 +192,7 @@ The above JavaScript program is loaded into the browser. However, in order to av
     igRegisterScript("customMarkerTemplateFunc", customMarkerTemplateFunc);
 }) ();
 ```
+
 This completes the implementation on the JavaScript side.
 
 The created JavaScript program file (.js) should be included in the fallback page (wwwroot/index.html, Pages/_Layout.cshtml、Pages/_Host.cshtml) as a script element so that it can be loaded from the browser.
@@ -220,6 +222,7 @@ There is a string parameter called MarkerTemplateScript, where you specify the s
     @*...*@
 </IgbDataChart>
 ```
+
 The scatter plot is now displayed with markers of size and fill color according to the properties of the bound item.
 
 <img src="../images/general/blazor-wasm-app-2.png" />

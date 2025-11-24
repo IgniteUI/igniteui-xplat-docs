@@ -540,7 +540,7 @@ Customizing the text of the row adding overlay is possible using the `RowAddText
 ```html
 <{ComponentSelector} [data]="data" [primaryKey]="'ProductID'" [autoGenerate]="false" [rowEditable]="true">
     <ng-template igxRowAddText>
-	    Adding Row
+        Adding Row
     </ng-template>
 </{ComponentSelector}>
 ```
@@ -616,7 +616,7 @@ REQUIRES FIX!
 this.grid.rowEditActionsTemplate = (endRowEdit: IgcGridRowEditActionsTemplateContext) => {
     return html`
         <button @click="${evt => endRowEdit.implicit(false, evt)}">Cancel</button>
-	    <button @click="${evt => endRowEdit.implicit(true, evt)}">Apply</button>
+        <button @click="${evt => endRowEdit.implicit(true, evt)}">Apply</button>
     `;
 }
 ```

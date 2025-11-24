@@ -132,19 +132,19 @@ builder.Services.AddIgniteUIBlazor(
     <igc-tree-item>
         <div slot="label">
             I am a parent item 1
-	        <img src="hard_coded_src.webb" alt="Alt Text">
+            <img src="hard_coded_src.webb" alt="Alt Text">
         </div>
-	    <igc-tree-item label="I am a child item 1">
-	    </igc-tree-item>
+        <igc-tree-item label="I am a child item 1">
+        </igc-tree-item>
     </igc-tree-item>
 
     <igc-tree-item>
         <div slot="label">
             I am a parent item 2
-	        <img src="hard_coded_src.webb" alt="Alt Text">
+            <img src="hard_coded_src.webb" alt="Alt Text">
         </div>
-	    <igc-tree-item label="I am a child item 1">
-	    </igc-tree-item>
+        <igc-tree-item label="I am a child item 1">
+        </igc-tree-item>
     </igc-tree-item>
 </igc-tree>
 ```

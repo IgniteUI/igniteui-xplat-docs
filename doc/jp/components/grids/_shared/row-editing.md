@@ -546,7 +546,7 @@ const rowEditTextTemplate = (ctx: IgrGridRowEditTextTemplateContext) =>{
     var html = window.igTemplating.html;
     window.endRowEdit = ctx.implicit;
     return html`<div>
-  	<button @click="(event) => endRowEdit(false, event)">Cancel</button>
+  <button @click="(event) => endRowEdit(false, event)">Cancel</button>
 	<button @click="(event) => endRowEdit(true, event)">Apply</button>
 </div>`;
 }, false);

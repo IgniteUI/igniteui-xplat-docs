@@ -206,14 +206,14 @@ builder.Services.AddIgniteUIBlazor(
 
 **水平方向の {Platform} ステッパー**
 
-`Stepper` の orientation プロパティのデフォルト値は *horizontal* です。
+`Stepper` の orientation プロパティのデフォルト値は **horizontal**です。
 {Platform} ステッパーが水平方向の場合、ステップのコンテンツをステップのヘッダーの上または下に表示するかどうかを決定できます。これは、`Stepper` の `ContentTop` ブール型プロパティを設定することで実現できます。デフォルト値は **false** です。有効な場合、ステップのコンテンツはステップのヘッダーの上に表示されます。
 
 <img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 800px"  src="../../images/stepper/stepper-contentTop.png"/>
 
 **垂直方向の {Platform} ステッパー**
 
-水平レイアウトから垂直レイアウトに簡単に切り替えることができます。デフォルトの方向を変更するには、`Orientation` プロパティを *vertical* に設定します。
+水平レイアウトから垂直レイアウトに簡単に切り替えることができます。デフォルトの方向を変更するには、`Orientation` プロパティを **vertical**に設定します。
 
 以下のサンプルは、実行時にステッパーの向きとタイトルの位置を変更する方法を示しています。
 
@@ -323,7 +323,7 @@ linear プロパティが **true** に設定されている場合、ステッパ
 
 **Title (タイトル)**
 
-ステップのタイトルのみを表示する場合は、stepType オプションを *title* に設定します。
+ステップのタイトルのみを表示する場合は、stepType オプションを **title** に設定します。
 
 このように、サブタイトルが定義されている場合、それらもステップ タイトルの下に描画されます。
 

@@ -152,6 +152,7 @@ Steps can be declared using one of the following approaches.
     </IgrStep>
 </IgrStepper>
 ```
+
 For each step the user has the ability to configure indicator, title and subtitle using the `Indicator`, `Title` and `Subtitle` slots as follows:
 
 > [!Note]
@@ -200,11 +201,11 @@ For each step the user has the ability to configure indicator, title and subtitl
 <img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 500px" src="../../images/stepper/stepper-step.png"/>
 
 ### Orientation in {Platform} Stepper
-You can customize the stepper orientation through the exposed `Orientation` property. It could be set to **horizontal** *(default value)* or **vertical**.
+You can customize the stepper orientation through the exposed `Orientation` property. It could be set to **horizontal** **(default value)** or **vertical**.
 
 **Horizontal Stepper Orientation**
 
-*horizontal* is the default value for the `Stepper` orientation property.
+**horizontal**is the default value for the `Stepper` orientation property.
 When the {Platform} stepper is horizontally orientated you have the opportunity to determine whether the steps’ content would be displayed above or below the steps’ headers. This could be achieved by setting the `Stepper` `ContentTop` boolean property, which default value is **false**. In case it is enabled the steps’ content would be displayed above the steps’ headers.
 
 <img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 800px"  src="../../images/stepper/stepper-contentTop.png"/>
@@ -222,7 +223,9 @@ The sample below demonstrates how stepper orientation and titles position could 
 <div class="divider--half"></div>
 
 ### Step States
+
 {Platform} `Stepper` supports five steps states and each of them apply different styles by default:
+
 - **active** - Determines whether the step is the currently displayed. By design, if the user does not explicitly set some step’s active attribute to **true**, the initial active step would be the first non-disabled step.
 - **disabled** - Determines whether the step is intractable. By default, the disabled attribute of a step is set to **false**.
 - **invalid** - Determines whether the step is valid. Based on its value it is decided whether the user will have the ability to move forward in linear stepper mode. Its default value is **false**.
@@ -290,7 +293,7 @@ If the current non-optional step is not valid you cannot go forward to the next 
 The {ProductName} Stepper gives you the ability to configure different options for titles, indicators and more.
 
 This could be achieved through the `StepType` property of the `Stepper`. It takes the following values:
-- Full *(default value)*
+- Full **(default value)**
 - Indicator
 - Title
 
@@ -300,7 +303,7 @@ If titles and subtitles are defined, with this setup both indicators and titles 
 
 The user would also have the ability to define the position of the title for the steps, so it could be placed before, after, above or below the step indicator.
 The user can configure the title position using the `TitlePosition` property. It takes the following values:
-- undefined *(default value)*
+- undefined **(default value)**
 - end
 - start
 - bottom
@@ -321,7 +324,7 @@ The step indicator supports any content, however with the restriction that its s
 
 **Title**
 
-If you want to display only titles for the steps, set the stepType option to *title*.
+If you want to display only titles for the steps, set the stepType option to **title**.
 
 In this way if subtitles are defined, they will also be rendered below the step title.
 

@@ -1425,9 +1425,9 @@ When we define a custom paginator content we need to define the content in a way
     (pageChange)="paginate($event)"
     (perPageChange)="perPageChange($event)">
     <igx-paginator-content>
-	    <igx-page-size></igx-page-size>
+        <igx-page-size></igx-page-size>
         [This is my custom content]
-	    <igx-page-nav></igx-page-nav>
+        <igx-page-nav></igx-page-nav>
     </igx-paginator-content>
 </igx-paginator>
 ```

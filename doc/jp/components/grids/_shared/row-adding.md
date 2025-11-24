@@ -541,7 +541,7 @@ this.treeGrid.beginAddRowByIndex(null);       // Spawns the add row UI as the fi
 ```html
 <{ComponentSelector} [data]="data" [primaryKey]="'ProductID'" [autoGenerate]="false" [rowEditable]="true">
     <ng-template igxRowAddText>
-	    Adding Row
+        Adding Row
     </ng-template>
 </{ComponentSelector}>
 ```
@@ -617,7 +617,7 @@ REQUIRES FIX!
 this.grid.rowEditActionsTemplate = (endRowEdit: IgcGridRowEditActionsTemplateContext) => {
     return html`
         <button @click="${evt => endRowEdit.implicit(false, evt)}">Cancel</button>
-	    <button @click="${evt => endRowEdit.implicit(true, evt)}">Apply</button>
+        <button @click="${evt => endRowEdit.implicit(true, evt)}">Apply</button>
     `;
 }
 ```
