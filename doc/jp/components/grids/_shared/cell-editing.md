@@ -1090,7 +1090,7 @@ function handleCellEdit(args: IgrGridEditEventArgs): void {
         }
         if (args.detail.newValue > rowData.UnitsInStock) {
             args.detail.cancel = true;
-            alert("You cannot order more than the units in stock!"); 
+            alert("You cannot order more than the units in stock!");
         }
     }
 }

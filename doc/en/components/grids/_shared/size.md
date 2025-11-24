@@ -654,7 +654,7 @@ Now we can add the markup.
     <IgbColumn Field="Country" DataType="GridColumnDataType.String"></IgbColumn>
     <IgbColumn Field="Phone" DataType="GridColumnDataType.String"></IgbColumn>
     <IgbColumn Field="Fax" DataType="GridColumnDataType.String"></IgbColumn>
-   
+
     <IgbRowIsland ChildDataKey="Orders" AutoGenerate="false">
         <IgbColumn Field="OrderID" DataType="GridColumnDataType.Number"></IgbColumn>
         <IgbColumn Field="EmployeeID" DataType="GridColumnDataType.Number"></IgbColumn>
@@ -668,7 +668,7 @@ Now we can add the markup.
         <IgbColumn Field="ShipCity" DataType="GridColumnDataType.String"></IgbColumn>
         <IgbColumn Field="ShipPostalCode" DataType="GridColumnDataType.String"></IgbColumn>
         <IgbColumn Field="ShipCountry" DataType="GridColumnDataType.String"></IgbColumn>
-       
+
         <IgbRowIsland ChildDataKey="OrderDetails" AutoGenerate="false">
             <IgbColumn Field="ProductID" DataType="GridColumnDataType.Number"></IgbColumn>
             <IgbColumn Field="UnitPrice" DataType="GridColumnDataType.Number"></IgbColumn>
@@ -745,7 +745,7 @@ Now we can add the markup.
         <IgrColumn field="ShipCity" dataType="string"></IgrColumn>
         <IgrColumn field="ShipPostalCode" dataType="string"></IgrColumn>
         <IgrColumn field="ShipCountry" dataType="string"></IgrColumn>
-       
+
         <IgrRowIsland childDataKey="OrderDetails" autoGenerate={false}>
             <IgrColumn field="ProductID" dataType="number"></IgrColumn>
             <IgrColumn field="UnitPrice" dataType="number"></IgrColumn>

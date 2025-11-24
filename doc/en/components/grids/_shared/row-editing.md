@@ -214,7 +214,7 @@ constructor() {
     <igc-column field="Debut" header="Debut" data-type="number"> </igc-column>
     <igc-column field="GrammyNominations" header="Grammy Nominations" data-type="number"> </igc-column>
     <igc-column field="GrammyAwards" header="Grammy Awards" data-type="number"> </igc-column>
-       
+
     <igc-row-island child-data-key="Albums" auto-generate="false" primary-key="Album" row-editable="true">
         <igc-column field="Album" header="Album" data-type="string"> </igc-column>
         <igc-column field="LaunchDate" header="Launch Date" data-type="date"> </igc-column>
@@ -315,7 +315,7 @@ RowEditable="true">
     Header="Grammy Awards"
     DataType="GridColumnDataType.Number">
     </IgbColumn>
-   
+
     <IgbRowIsland
     ChildDataKey="Albums"
     AutoGenerate="false"
@@ -341,7 +341,7 @@ RowEditable="true">
         Header="US Billboard 200"
         DataType="GridColumnDataType.String">
         </IgbColumn>
-       
+
         <IgbRowIsland
         ChildDataKey="Songs"
         AutoGenerate="false"
@@ -369,7 +369,7 @@ RowEditable="true">
             </IgbColumn>
         </IgbRowIsland>
     </IgbRowIsland>
-   
+
     <IgbRowIsland
     ChildDataKey="Tours"
     AutoGenerate="false"

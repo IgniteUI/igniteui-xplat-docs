@@ -137,7 +137,7 @@ OHLC 価格の **TypicalPrice** (標準価格) とパーセンテージの **Cha
 - `GroupTextFontStretch`
 - `GroupTextFontWeight`
 - `HeaderTextMargin`
-- `HeaderTextColor` 
+- `HeaderTextColor`
 - `HeaderTextFontSize`
 - `HeaderTextFontFamily`
 - `HeaderTextFontStyle`

@@ -308,7 +308,7 @@ The `DatePicker` exposes `StepUp` and `StepDown` methods. Both of which come fro
     <IgbIcon
         Slot="prefix"
         IconName="arrow_upward"
-        Collection="material"              
+        Collection="material"
         @onclick="() => DatePicker.StepUp(DatePart.Month)">
     </IgbIcon>
     <IgbIcon

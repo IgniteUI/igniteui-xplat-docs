@@ -1203,7 +1203,7 @@ const summaryFormatter = (summary: IgrSummaryResult, summaryOperand: IgrSummaryO
     }
     return result;
   }
- 
+
 <IgrColumn hasSummary={true} summaryFormatter={summaryFormatter}></IgrColumn>
 ```
 

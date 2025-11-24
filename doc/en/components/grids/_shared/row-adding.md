@@ -289,7 +289,7 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
     <IgbActionStrip>
         <IgbGridEditingActions AddRow="true"></IgbGridEditingActions>
     </IgbActionStrip>
-   
+
     <IgbRowIsland AutoGenerate="false" Key="Albums" PrimaryKey="USBillboard200" RowEditable="true">
         <IgbColumn Field="Album" Header="Album" DataType="GridColumnDataType.Number"></IgbColumn>
         <IgbColumn Field="LaunchDate" Header="Launch Date" DataType="GridColumnDataType.Date"></IgbColumn>
@@ -362,7 +362,7 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
            <IgrActionStrip>
                 <IgrGridEditingActions addRow={true}>
                 </IgrGridEditingActions>
-            </IgrActionStrip>                 
+            </IgrActionStrip>
        <IgrColumn field="Tour" header="Tour" dataType="string" resizable={true}>
        </IgrColumn>
        <IgrColumn field="StartedOn" header="Started on" dataType="string" resizable={true}>
@@ -567,7 +567,7 @@ gridRef.current.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
         </>
     );
 }
-```           
+```
 <!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid-->
 <!-- end: React -->
 
@@ -583,7 +583,7 @@ gridRef.current.rowAddTextTemplate = (ctx: IgrGridEmptyTemplateContext) => {
         return @<span>Adding Row</span>;
     };
 }
-```                
+```
 <!-- ComponentEnd: Grid, TreeGrid, HierarchicalGrid -->
 <!-- end: Blazor -->
 

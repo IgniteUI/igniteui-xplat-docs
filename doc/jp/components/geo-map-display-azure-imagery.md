@@ -80,7 +80,7 @@ map.backgroundContent = tileSource;
 </IgbGeographicMap>
 
 @code {
-   
+
     private IgbGeographicMap AzureMap;
     private IgbAzureMapsImagery AzureImagery { get; set; }
 
@@ -253,7 +253,7 @@ window.addEventListener("load", () => {
 </IgbGeographicMap>
 
 @code {
-   
+
     private IgbGeographicMap AzureMap;
     private IgbAzureMapsImagery AzureImagery { get; set; }
     private IgbGeographicTileSeries ImagerySeries;
@@ -261,7 +261,7 @@ window.addEventListener("load", () => {
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         await base.OnAfterRenderAsync(firstRender);
-       
+
         //Update TileSeries
         var imagery = new IgbAzureMapsImagery
         {

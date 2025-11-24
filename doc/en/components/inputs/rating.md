@@ -124,17 +124,17 @@ The `Rating` component allows you to use custom symbols in place of the default 
         <IgrIcon name='heart' collection="material"></IgrIcon>
     </IgrRatingSymbol>
     <IgrRatingSymbol>
-        <IgrIcon  name='heart' collection="material"></IgrIcon>                          
+        <IgrIcon  name='heart' collection="material"></IgrIcon>
     </IgrRatingSymbol>
     <IgrRatingSymbol>
-      	<IgrIcon  name='heart' collection="material"></IgrIcon>                          
+      	<IgrIcon  name='heart' collection="material"></IgrIcon>
     </IgrRatingSymbol>
     <IgrRatingSymbol>
-       	<IgrIcon  name='heart' collection="material"></IgrIcon>                          
+       	<IgrIcon  name='heart' collection="material"></IgrIcon>
     </IgrRatingSymbol>
     <IgrRatingSymbol>
-       	<IgrIcon  name='heart' collection="material"></IgrIcon>                          
-    </IgrRatingSymbol>                       
+       	<IgrIcon  name='heart' collection="material"></IgrIcon>
+    </IgrRatingSymbol>
 </IgrRating>
 ```
 <!-- end: React -->
@@ -174,26 +174,26 @@ The {ProductName} Rating component has a single selection mode that allows users
 <!-- React -->
 ```tsx
 <IgrRating single={true}>
-  <IgrRatingSymbol>                          
+  <IgrRatingSymbol>
       <div>😣</div>
       <div slot="empty">😣</div>
   </IgrRatingSymbol>
-  <IgrRatingSymbol>                          
+  <IgrRatingSymbol>
       <div>😣</div>
       <div slot="empty">😣</div>
   </IgrRatingSymbol>
-  <IgrRatingSymbol>                          
+  <IgrRatingSymbol>
       <div>😣</div>
       <div slot="empty">😣</div>
   </IgrRatingSymbol>
-  <IgrRatingSymbol>                          
+  <IgrRatingSymbol>
       <div>😣</div>
       <div slot="empty">😣</div>
   </IgrRatingSymbol>
-  <IgrRatingSymbol>                          
+  <IgrRatingSymbol>
       <div>😣</div>
       <div slot="empty">😣</div>
-  </IgrRatingSymbol>                        
+  </IgrRatingSymbol>
 </IgrRating>
 ```
 <!-- end: React -->

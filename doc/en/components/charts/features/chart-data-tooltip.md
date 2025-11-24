@@ -132,7 +132,7 @@ Several properties are exposed including grouping portions of the tooltip.
 - `GroupTextFontStretch`
 - `GroupTextFontWeight`
 - `HeaderTextMargin`
-- `HeaderTextColor` 
+- `HeaderTextColor`
 - `HeaderTextFontSize`
 - `HeaderTextFontFamily`
 - `HeaderTextFontStyle`

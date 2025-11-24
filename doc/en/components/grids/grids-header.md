@@ -407,16 +407,16 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
 <li>
 
 [Inline Editing](grid/editing.md)
-   
+
 </li>
 
 <li>
-   
+
 [Row and Column Filtering](grid/filtering.md)
-   
+
 </li>
 <li>
-   
+
 [Grid Sorting](grid/sorting.md)
 </li>
 

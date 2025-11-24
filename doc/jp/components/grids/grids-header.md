@@ -406,9 +406,9 @@ h3#excel-library-for-the-angular-grid ~ h3{
 <div id="list-features-included">
 <ul>
 <li>
-   
+
 [インライン編集](grid/editing.md)
-   
+
 </li>
 
 <li>
@@ -600,7 +600,7 @@ Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセ�
 
 </li>
 <li>
-               
+
 グリッド セルまたは列のデータに基づいた[列集計](grid/summaries.md)
 
 </li>

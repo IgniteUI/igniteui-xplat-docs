@@ -477,7 +477,7 @@ return(
     private IgbBanner bannerRef;
     private string iconName = "signal_wifi_off";
     private bool wifiState = false;
-   
+
     private void RefreshBanner()
     {
         if (!this.wifiState)

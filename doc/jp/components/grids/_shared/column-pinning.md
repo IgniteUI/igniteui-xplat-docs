@@ -446,7 +446,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     const col = ctx.column;
     col.pinned = !col.pinned;
   }
- 
+
   const col = ctx.column;
 
   return(
@@ -550,16 +550,16 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 
     <IgbColumn Field="Title" DataType="String" Pinned="true"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column2" @ref="column2"></IgbColumn>
-       
+
     <IgbColumn Field="Phone" DataType="String"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column3" @ref="column3"></IgbColumn>
-           
+
     <IgbColumn Field="Age" DataType="Number"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column4" @ref="column4"></IgbColumn>
-           
+
     <IgbColumn Field="HireDate" DataType="Date"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column5" @ref="column5"></IgbColumn>
-           
+
     <IgbColumn Field="OnPTO" DataType="Boolean"
     HeaderTemplateScript="WebTreeGridPinHeaderTemplate" Name="column6" @ref="column6"></IgbColumn>
 </IgbTreeGrid>
@@ -603,7 +603,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     const col = ctx.column;
     col.pinned = !col.pinned;
   }
- 
+
   const col = ctx.column;
 
   return(
@@ -718,7 +718,7 @@ const toggleColumnPin = (ctx: IgrColumnTemplateContext) => {
     const col = ctx.column;
     col.pinned = !col.pinned;
   }
- 
+
   const col = ctx.column;
 
   return(

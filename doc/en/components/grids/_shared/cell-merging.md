@@ -142,7 +142,7 @@ export declare class IgrGridMergeStrategy {
         grid?: GridType
     ) => any[];
 
-    comparer: (prevRecord: any, record: any, field: string) => boolean;   
+    comparer: (prevRecord: any, record: any, field: string) => boolean;
 }
 ```
 <!-- end: React -->
@@ -158,7 +158,7 @@ export declare class IgcGridMergeStrategy {
         grid?: GridType
     ) => any[];
 
-    comparer: (prevRecord: any, record: any, field: string) => boolean;   
+    comparer: (prevRecord: any, record: any, field: string) => boolean;
 }
 ```
 <!-- end: WebComponents -->

@@ -546,7 +546,7 @@ export class RemotePagingService {
         .then((result) => result.json())
         .catch((error) => console.error(error.message));
     }
-   
+
     private static buildUrl(baseUrl: string, pageIndex?: number, pageSize?: number) {
         let qS = "";
         if (baseUrl) {
@@ -668,7 +668,7 @@ export class RemotePagingService {
 export class RemotePagingService {
     public static BASE_URL = 'https://data-northwind.indigo.design/';
     public static CUSTOMERS_URL = `${RemotePagingService.BASE_URL}Customers/GetCustomersWithPage`;
- 
+
     constructor() {}
 
     public static getDataWithPaging(pageIndex?: number, pageSize?: number) {
@@ -676,7 +676,7 @@ export class RemotePagingService {
         .then((result) => result.json())
         .catch((error) => console.error(error.message));
     }
-   
+
     public static getHierarchyDataById(parentEntityName: string, parentId: string, childEntityName: string) {
         return fetch(`${RemotePagingService.BASE_URL}${parentEntityName}/${parentId}/${childEntityName}`)
         .then((result) => result.json());
@@ -799,7 +799,7 @@ First we need to bind to the relevant events so when we change pages and the amo
   constructor() {
       this.grid = document.getElementById('grid') as IgcGridComponent;
       this.pager = document.getElementById('paginator') as IgcPaginatorComponent;
-     
+
       this._bind = () => {
         window.addEventListener("load", () => {
           this.loadData(this.page,this.perPage);
@@ -824,7 +824,7 @@ We also need to set the method for loading data and update the UI accordingly:
 ```ts
   private loadData(pageIndex?: number, pageSize?: number): void {
     this.grid.isLoading = true;
-   
+
     RemotePagingService.getDataWithPaging(pageIndex,pageSize)
     .then((response: CustomersWithPageResponseModel) => {
       this.totalRecordsCount = response.totalRecordsCount;
@@ -853,7 +853,7 @@ We also need to set the method for loading data and update the UI accordingly:
 
 For further reference, please check the demo bellow:
 
-### Grid Remote Paging Demo 
+### Grid Remote Paging Demo
 
 `sample="/{ComponentSample}/remote-paging-grid", height="550", alt="{Platform} {ComponentTitle} Grid Remote Paging Example"`
 
@@ -913,7 +913,7 @@ After that we just need to bind the paging events to our custom methods, and rem
 ```
 For further reference please check the full demo bellow:
 
-### Grid Remote Paging Demo 
+### Grid Remote Paging Demo
 
 `sample="/{ComponentSample}/remote-paging-grid", height="550", alt="{Platform} {ComponentTitle} Grid Remote Paging Example"`
 
@@ -985,7 +985,7 @@ and finally set up the method for loading the data:
 
 For further reference please check the full sample bellow:
 
-### Grid Remote Paging Demo 
+### Grid Remote Paging Demo
 
 `sample="/{ComponentSample}/remote-paging-grid", height="550", alt="{Platform} {ComponentTitle} Grid Remote Paging Example"`
 
@@ -1052,12 +1052,12 @@ First we need to bind to the relevant events so when we change pages and the amo
             ordersRowIsland.addEventListener("gridCreated", (event: any) => {
                 this.gridCreated(event, "Customers");
             });
-   
+
             orderDetailsRowIsland.addEventListener("gridCreated", (event: any) => {
                 this.gridCreated(event, "Orders");
             });
         }
-   
+
         this._bind();
     }
 ```
@@ -1072,7 +1072,7 @@ We also need to set the method for loading data and update the UI accordingly:
 
     private loadCustomersData(pageIndex?: number, pageSize?: number): void {
         this.hierarchicalGrid.isLoading = true;
-       
+
         RemotePagingService.getDataWithPaging(pageIndex,pageSize)
         .then((response: CustomersWithPageResponseModel) => {
           this.totalRecordsCount = response.totalRecordsCount;
@@ -1124,7 +1124,7 @@ And finally we need to handle the behaviour behind the actual hierarchy levels o
 
 For further reference, please check the demo bellow:
 
-### Grid Remote Paging Demo 
+### Grid Remote Paging Demo
 
 `sample="/{ComponentSample}/remote-paging-hgrid", height="550", alt="{Platform} {ComponentTitle} Hierarchical Grid Remote Paging Example"`
 
@@ -1184,7 +1184,7 @@ After that we just need to bind the paging events to our custom methods, and rem
 ```
 For further reference please check the full demo bellow:
 
-### Grid Remote Paging Demo 
+### Grid Remote Paging Demo
 
 `sample="/{ComponentSample}/remote-paging-grid", height="550", alt="{Platform} {ComponentTitle} Hierarchical Grid Remote Paging Example"`
 
@@ -1302,7 +1302,7 @@ and finally set up the behaviour for the RowIslands:
 
 For further reference please check the full sample bellow:
 
-### Grid Remote Paging Demo 
+### Grid Remote Paging Demo
 
 `sample="/{ComponentSample}/remote-paging-hgrid", height="550", alt="{Platform} {ComponentTitle} Hierarchical Grid Remote Paging Example"`
 <!-- ComponentEnd: HierarchicalGrid -->

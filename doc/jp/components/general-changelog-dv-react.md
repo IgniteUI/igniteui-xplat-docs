@@ -364,7 +364,7 @@ igr-tab-panel コンポーネントは削除されました。igr-tab では、�
 
 ### {PackageGrids}
 
-- **すべてのグリッド** 
+- **すべてのグリッド**
   - `FilteringExpressionsTree` プロパティを使用して初期フィルタリングの適用が可能になりました。
 
 ### 非推奨

@@ -256,11 +256,11 @@ The current aggregation function can be changed at runtime using the value chip'
 <!-- React -->
 ```typescript
 const totalSale = (members: any, data: any) => data.reduce((accumulator:any, value: any) => accumulator + value.UnitPrice * value.UnitsSold, 0);
-   
+
 const totalMin = (members: any, data: any) => {
     return data.map((x:any) => x.UnitPrice * x.UnitsSold).reduce((a:number, b:number) => Math.min(a, b));
 };
-   
+
 const totalMax = (members: any, data: any) => {
     return data.map((x:any) => x.UnitPrice * x.UnitsSold).reduce((a:number, b:number) => Math.max(a,b));
 };
@@ -619,7 +619,7 @@ This feature allows developers to quickly create a pivot view without manually s
 
 ### Pivot Value Calculation Keys
 
-The Pivot grid provides a customization to the object keys fields it uses to do its pivot calculations. 
+The Pivot grid provides a customization to the object keys fields it uses to do its pivot calculations.
 A more detailed view of how they are used can be seen bellow in example data, where you can see already aggregated values:
 
 ```json

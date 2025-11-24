@@ -175,7 +175,7 @@ public bindEventsCountryCombo(rowId: any, cell: any) {
         const cityCombo = getComboRef(`city_${rowId}`).current;
         const regions = regions;
         const newValue = event.detail.newValue[0];
-       
+
         if (newValue === undefined) {
             regionCombo.deselect(regionCombo.value);
             regionCombo.disabled = true;

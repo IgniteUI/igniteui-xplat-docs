@@ -135,7 +135,7 @@ Several properties are exposed including grouping portions of the legend.
 - `GroupTextFontStretch`
 - `GroupTextFontWeight`
 - `HeaderTextMargin`
-- `HeaderTextColor` 
+- `HeaderTextColor`
 - `HeaderTextFontSize`
 - `HeaderTextFontFamily`
 - `HeaderTextFontStyle`

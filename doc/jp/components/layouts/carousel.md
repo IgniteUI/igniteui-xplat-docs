@@ -568,7 +568,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCarouselModule));
         <img class="blurred" src="assets/images/carousel/AmazingBridgeThumb.png" width="50" height="60"/>
         <img slot="active" src="assets/images/carousel/AmazingBridgeThumb.png" width="50" height="60"/>
     </igc-carousel-indicator>
-       
+
     <igc-carousel-slide>
         <img src="assets/images/carousel/WonderfulCoast.png"/>
     </igc-carousel-slide>

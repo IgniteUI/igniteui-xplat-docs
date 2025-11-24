@@ -808,7 +808,7 @@ const hierarchicalGrid = useRef<IgrHierarchicalGrid>(null);
 
 useEffect(() => {
     hierarchicalGrid.current.isLoading = true;
-   
+
     getData({ parentID: null, rootLevel: true, key: "Customers" }).then(
       (data: any) => {
         hierarchicalGrid.current.isLoading = false;
@@ -827,9 +827,9 @@ function gridCreated(event: IgrGridCreatedEventArgs, _parentKey: string) {
         parentKey: _parentKey,
         rootLevel: false,
     };
-   
+
     context.grid.isLoading = true;
-   
+
     getData(dataState).then((data: any[]) => {
         context.grid.isLoading = false;
         context.grid.data = data;
