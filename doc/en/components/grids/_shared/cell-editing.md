@@ -290,7 +290,7 @@ If you want to provide a custom template which will be applied to a cell, you ca
 and pass the template:
 
 ```razor
-*** In JavaScript ***
+// In JavaScript
 
 igRegisterScript("WebGridCellEditCellTemplate", (ctx) => {
     let cellValues = [];
@@ -1094,7 +1094,7 @@ function handleCellEdit(args: IgrGridEditEventArgs): void {
 <!-- end: React -->
 
 ```razor
-*** In JavaScript ***
+// In JavaScript
 igRegisterScript("HandleCellEdit", (ev) => {
     var d = ev.detail;
     if (d.column != null && d.column.field == "UnitsOnOrder") {
@@ -1131,7 +1131,7 @@ public webTreeGridCellEdit(event: CustomEvent<IgcGridEditEventArgs>): void {
 ```
 
 ```razor
-*** In JavaScript ***
+// In JavaScript
 igRegisterScript("HandleCellEdit", (ev) => {
     const column = event.detail.column;
 
@@ -1209,7 +1209,7 @@ public webHierarchicalGridCellEdit(event: CustomEvent<IgcGridEditEventArgs>): vo
 ```
 
 ```razor
-*** In JavaScript ***
+// In JavaScript
 igRegisterScript("HandleCellEdit", (ev) => {
     const today = new Date();
     const column = event.detail.column;

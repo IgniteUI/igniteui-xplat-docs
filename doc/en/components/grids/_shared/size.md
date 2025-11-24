@@ -812,7 +812,7 @@ public webGridSetGridSize(sender: any, args: IgcPropertyEditorPropertyDescriptio
 <!-- Blazor -->
 ```razor
 @code {
-    *** In JavaScript ***
+    // In JavaScript
     igRegisterScript("WebGridSetGridSize", (sender, evtArgs) => {
         var newVal = evtArgs.newValue.toLowerCase();
         var grid = document.getElementById("grid");

@@ -813,7 +813,7 @@ public webGridSetGridSize(sender: any, args: IgcPropertyEditorPropertyDescriptio
 <!-- Blazor -->
 ```razor
 @code {
-    *** In JavaScript ***
+    // In JavaScript
     igRegisterScript("WebGridSetGridSize", (sender, evtArgs) => {
         var newVal = evtArgs.newValue.toLowerCase();
         var grid = document.getElementById("grid");
@@ -867,7 +867,7 @@ public webGridSetGridSize(sender: any, args: IgrPropertyEditorPropertyDescriptio
 `{ComponentName}` の行の高さを変更するその他のオプションに `RowHeight` プロパティがあります。このプロパティと `--ig-size` プションが `{ComponentName}` レイアウトにどのように動作に影響するかを以下で確認できます。
 
 以下を確認してください。
- - **`RowHeight` を指定した場合**、`--ig-size` CSS 変数は行の高さに影響しません。
+ - `RowHeight` を指定した場合**、`--ig-size` CSS 変数は行の高さに影響しません。
  - `--ig-size` は、上記の理由により**残りすべての {ComponentTitle} 要素に影響します**。
 
 サンプル機能を拡張して `RowHeight` プロパティを `{ComponentName}` に追加します。

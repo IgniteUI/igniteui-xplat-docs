@@ -176,7 +176,7 @@ const rowPinning = (event: IgrPinRowEventArgs) => {
 ```
 
 ```razor
-*** In JavaScript ***
+// In JavaScript
 
 function rowPinningHandler(event) {
     event.detail.insertAtIndex = 0;

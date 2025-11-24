@@ -9,7 +9,7 @@ In the Ignite UI for React versioning the first number always matches the major 
 
 
 ## From 18.9.0 to 19.0.0
-This release include a major rework of some of our React components internals leading to the following changes in __igniteui-react__ and __igniteui-react-grids__ packages:
+This release include a major rework of some of our React components internals leading to the following changes in **igniteui-react** and **igniteui-react-grids** packages:
 
 ### General
 #### Breaking changes
@@ -53,9 +53,9 @@ Becomes:
     const handlePinning = (event: CustomEvent<IgrPinColumnCancellableEventArgsDetail>) => {}
 ```
 
-- Components no longer have the non-functional `name` property by default. The `name` property only remains in __igniteui-react__ components, mostly form inputs such as `IgrInput` and `IgrCombo`, where it has native functionality.
+- Components no longer have the non-functional `name` property by default. The `name` property only remains in **igniteui-react** components, mostly form inputs such as `IgrInput` and `IgrCombo`, where it has native functionality.
 - Ignite UI for React components no longer require a `key` property, unless it is necessary according to React`s [documentation](https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key)
-- The [IgrDataGrid](./grids/data-grid/overview.md) is no longer part of __igniteui-react-grids__ package. It has been moved to __igniteui-react-data-grids__, making __igniteui-react-grids__ more lightweight.
+- The [IgrDataGrid](./grids/data-grid/overview.md) is no longer part of **igniteui-react-grids** package. It has been moved to **igniteui-react-data-grids**, making **igniteui-react-grids** more lightweight.
 - There were several types that were exposed as classes in version **18.9.0** which is no longer the case. Those are now exported as types and can be used like this:
 
 ```tsx
@@ -77,4 +77,4 @@ const pivotConfiguration: IgrPivotConfiguration = {
     - `clicked` event is removed. Use native `onClick` instead.
 - `IgrInput`
   - _Breaking Changes_
-    - `inputOccurred` event is renamed to `onInput`.
+    - `inputOccurred` event is renamed to `onInput`
