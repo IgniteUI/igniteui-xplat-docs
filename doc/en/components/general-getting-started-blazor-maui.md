@@ -53,19 +53,19 @@ For more information on installing Ignite UI for Blazor using NuGet, read the [I
 ```cs
 public static class MauiProgram
 {
-	public static MauiApp CreateMauiApp()
-	{
-		var builder = MauiApp.CreateBuilder();
+    public static MauiApp CreateMauiApp()
+    {
+        var builder = MauiApp.CreateBuilder();
         // ...
-		builder.Services.AddMauiBlazorWebView();
+        builder.Services.AddMauiBlazorWebView();
 #if DEBUG
-		builder.Services.AddBlazorWebViewDeveloperTools();
+        builder.Services.AddBlazorWebViewDeveloperTools();
 #endif
 
         //register IgniteUI for Blazor
-		builder.Services.AddIgniteUIBlazor();
-		return builder.Build();
-	}
+        builder.Services.AddIgniteUIBlazor();
+        return builder.Build();
+    }
 }
 ```
 
@@ -86,8 +86,8 @@ public static class MauiProgram
 4 - Add Script Reference to the **wwwroot/index.html** file:
 
 ```razor
-	<script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
-	<script src="_framework/blazor.webview.js" autostart="false"></script>
+    <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
+    <script src="_framework/blazor.webview.js" autostart="false"></script>
 ```
 
 ## Add Ignite UI for Blazor Component

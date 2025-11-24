@@ -1,5 +1,5 @@
 ---
-title: 	{Platform} {ComponentTitle} 行のピン固定 - {ProductName}
+title:     {Platform} {ComponentTitle} 行のピン固定 - {ProductName}
 _description: {Platform} の行ピン固定機能を使用して、豊富で使いやすい API で行をロックします。ユーザーが特定の順序で行をピン固定または特別な領域に複製することを許可します。
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 _license: commercial
@@ -355,7 +355,7 @@ igRegisterScript("WebHierarchicalGridRowPinCellTemplate", (ctx) => {
     window.toggleRowPin = function toggleRowPin(row) {
         row.pinned = !row.pinned;
     }
-	const row = ctx.cell.row;
+    const row = ctx.cell.row;
     return html`<div>
     <span onpointerdown='toggleRowPin("${row}")'>📌</span>
 </div>`;

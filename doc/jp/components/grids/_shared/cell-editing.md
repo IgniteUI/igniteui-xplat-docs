@@ -1118,7 +1118,7 @@ igRegisterScript("HandleCellEdit", (ev) => {
 ```typescript
 public webTreeGridCellEdit(event: CustomEvent<IgcGridEditEventArgs>): void {
     const column = event.detail.column;
-    	
+        
     if (column.field === 'Age') {
         if (event.detail.newValue < 18) {
             event.detail.cancel = true;
@@ -1139,17 +1139,17 @@ public webTreeGridCellEdit(event: CustomEvent<IgcGridEditEventArgs>): void {
 igRegisterScript("HandleCellEdit", (ev) => {
     const column = event.detail.column;
 
-	if (column.field === 'Age') {
-		if (event.detail.newValue < 18) {
-			event.detail.cancel = true;
-			alert('Employees must be at least 18 years old!');
-		}
-	} else if (column.field === 'HireDate') {
-		if (event.detail.newValue > new Date().getTime()) {
-			event.detail.cancel = true;
-			alert('The employee hire date must be in the past!');
-		}
-	}
+    if (column.field === 'Age') {
+        if (event.detail.newValue < 18) {
+            event.detail.cancel = true;
+            alert('Employees must be at least 18 years old!');
+        }
+    } else if (column.field === 'HireDate') {
+        if (event.detail.newValue > new Date().getTime()) {
+            event.detail.cancel = true;
+            alert('The employee hire date must be in the past!');
+        }
+    }
 }, false);
 ```
 
@@ -1217,17 +1217,17 @@ public webHierarchicalGridCellEdit(event: CustomEvent<IgcGridEditEventArgs>): vo
 igRegisterScript("HandleCellEdit", (ev) => {
     const today = new Date();
     const column = event.detail.column;
-	if (column.field === 'Debut') {
-		if (event.detail.newValue > today.getFullYear()) {
-			event.detail.cancel = true;
-			alert('The debut date must be in the past!');
-		}
-	} else if (column.field === 'LaunchDate') {
-		if (event.detail.newValue > today) {
-			event.detail.cancel = true;
-			alert('The launch date must be in the past!');
-		}
-	}
+    if (column.field === 'Debut') {
+        if (event.detail.newValue > today.getFullYear()) {
+            event.detail.cancel = true;
+            alert('The debut date must be in the past!');
+        }
+    } else if (column.field === 'LaunchDate') {
+        if (event.detail.newValue > today) {
+            event.detail.cancel = true;
+            alert('The launch date must be in the past!');
+        }
+    }
 }, false);
 ```
 <!-- Blazor -->

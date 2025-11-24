@@ -492,7 +492,7 @@ The `RowChangesCount` property is exposed and it holds the count of the changed 
 
 ```html
 <ng-template igxRowEditText let-rowChangesCount>
-	Changes: {{rowChangesCount}}
+    Changes: {{rowChangesCount}}
 </ng-template>
  ```
 
@@ -535,8 +535,8 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
 
 ```html
  <ng-template igxRowEditActions let-endRowEdit>
-	<button igxButton igxRowEditTabStop (click)="endRowEdit(false)">Cancel</button>
-	<button igxButton igxRowEditTabStop (click)="endRowEdit(true)">Apply</button>
+    <button igxButton igxRowEditTabStop (click)="endRowEdit(false)">Cancel</button>
+    <button igxButton igxRowEditTabStop (click)="endRowEdit(true)">Apply</button>
 </ng-template>
 ```
 
@@ -546,7 +546,7 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
     window.endRowEdit = ctx.implicit;
     return html`<div>
   <button @click="(event) => endRowEdit(false, event)">Cancel</button>
-	<button @click="(event) => endRowEdit(true, event)">Apply</button>
+    <button @click="(event) => endRowEdit(true, event)">Apply</button>
 </div>`;
 }, false);
 ```

@@ -152,8 +152,8 @@ private accordion: IgcAccordionComponent;
 private panels: IgcExpansionPanelComponent[];
 
 constructor() {
-	this.accordion = document.getElementById("accordion") as IgcAccordionComponent;
-	this.panels = this.accordion.panels;
+    this.accordion = document.getElementById("accordion") as IgcAccordionComponent;
+    this.panels = this.accordion.panels;
 }
 ```
 

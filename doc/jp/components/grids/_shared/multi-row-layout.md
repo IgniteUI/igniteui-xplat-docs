@@ -1,5 +1,5 @@
 ---
-title: 	{Platform} {ComponentTitle} 複数行レイアウト - {ProductName}
+title:     {Platform} {ComponentTitle} 複数行レイアウト - {ProductName}
 _description: {ProductName} Data Grid の複数行レイアウト機能を使用して、列をより強力な方法で配置およびサイズ設定します。デモと例をお試しください。
 _keywords: Multi-Row Layout, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, 複数行レイアウト, インフラジスティックス
 _license: commercial
@@ -30,19 +30,19 @@ _language: ja
 
 ```html
 <igx-column-layout>
-	<igx-column [rowStart]="1" [colStart]="1" [rowEnd]="3" field="ID"></igx-column>
+    <igx-column [rowStart]="1" [colStart]="1" [rowEnd]="3" field="ID"></igx-column>
 </igx-column-layout>
 <igx-column-layout>
-	<igx-column [rowStart]="1" [colStart]="1" [colEnd]="3" field="CompanyName"></igx-column>
-	<igx-column [rowStart]="2" [colStart]="1" [colEnd]="2" field="ContactName"></igx-column>
-	<igx-column [rowStart]="2" [colStart]="2" [colEnd]="3" field="ContactTitle"></igx-column>
+    <igx-column [rowStart]="1" [colStart]="1" [colEnd]="3" field="CompanyName"></igx-column>
+    <igx-column [rowStart]="2" [colStart]="1" [colEnd]="2" field="ContactName"></igx-column>
+    <igx-column [rowStart]="2" [colStart]="2" [colEnd]="3" field="ContactTitle"></igx-column>
 </igx-column-layout>
 <igx-column-layout>
-	<igx-column [rowStart]="1" [colStart]="1" [colEnd]="3" field="Country"></igx-column>
-	<igx-column [rowStart]="1" [colStart]="3" [colEnd]="5" field="Region"></igx-column>
-	<igx-column [rowStart]="1" [colStart]="5" [colEnd]="7" field="PostalCode"></igx-column>
-	<igx-column [rowStart]="2" [colStart]="1" [colEnd]="4" field="City"></igx-column>
-	<igx-column [rowStart]="2" [colStart]="4" [colEnd]="7" field="Address"></igx-column>
+    <igx-column [rowStart]="1" [colStart]="1" [colEnd]="3" field="Country"></igx-column>
+    <igx-column [rowStart]="1" [colStart]="3" [colEnd]="5" field="Region"></igx-column>
+    <igx-column [rowStart]="1" [colStart]="5" [colEnd]="7" field="PostalCode"></igx-column>
+    <igx-column [rowStart]="2" [colStart]="1" [colEnd]="4" field="City"></igx-column>
+    <igx-column [rowStart]="2" [colStart]="4" [colEnd]="7" field="Address"></igx-column>
 </igx-column-layout>
 <igx-column-layout>
     <igx-column [rowStart]="1" [colStart]="1" field="Phone"></igx-column>
@@ -74,19 +74,19 @@ _language: ja
 
 ```html
 <igc-column-layout>
-	<igc-column row-start="1" col-start="1" row-end="3" field="ID"></igc-column>
+    <igc-column row-start="1" col-start="1" row-end="3" field="ID"></igc-column>
 </igc-column-layout>
 <igc-column-layout>
-	<igc-column row-start="1" col-start="1" col-end="3" field="CompanyName"></igc-column>
-	<igc-column row-start="2" col-start="1" col-end="2" field="ContactName"></igc-column>
-	<igc-column row-start="2" col-start="2" col-end="3" field="ContactTitle"></igc-column>
+    <igc-column row-start="1" col-start="1" col-end="3" field="CompanyName"></igc-column>
+    <igc-column row-start="2" col-start="1" col-end="2" field="ContactName"></igc-column>
+    <igc-column row-start="2" col-start="2" col-end="3" field="ContactTitle"></igc-column>
 </igc-column-layout>
 <igc-column-layout>
-	<igc-column row-start="1" col-start="1" col-end="3" field="Country"></igc-column>
-	<igc-column row-start="1" col-start="3" col-end="5" field="Region"></igc-column>
-	<igc-column row-start="1" col-start="5" col-end="7" field="PostalCode"></igc-column>
-	<igc-column row-start="2" col-start="1" col-end="4" field="City"></igc-column>
-	<igc-column row-start="2" col-start="4" col-end="7" field="Address"></igc-column>
+    <igc-column row-start="1" col-start="1" col-end="3" field="Country"></igc-column>
+    <igc-column row-start="1" col-start="3" col-end="5" field="Region"></igc-column>
+    <igc-column row-start="1" col-start="5" col-end="7" field="PostalCode"></igc-column>
+    <igc-column row-start="2" col-start="1" col-end="4" field="City"></igc-column>
+    <igc-column row-start="2" col-start="4" col-end="7" field="Address"></igc-column>
 </igc-column-layout>
 <igc-column-layout>
     <igc-column row-start="1" col-start="1" field="Phone"></igc-column>

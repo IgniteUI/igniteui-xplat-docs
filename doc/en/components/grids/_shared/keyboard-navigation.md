@@ -206,9 +206,9 @@ igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
 ```ts
 constructor() {
         const grid = this.grid = document.getElementById('grid1') as {ComponentName}Component;
-		grid.data = this.data
-		grid.addEventListener("gridKeydown", this.customKeydown);
-	}
+        grid.data = this.data
+        grid.addEventListener("gridKeydown", this.customKeydown);
+    }
 ```
 <!-- end: WebComponents -->
 

@@ -354,7 +354,7 @@ igRegisterScript("WebHierarchicalGridRowPinCellTemplate", (ctx) => {
     window.toggleRowPin = function toggleRowPin(row) {
         row.pinned = !row.pinned;
     }
-	const row = ctx.cell.row;
+    const row = ctx.cell.row;
     return html`<div>
     <span onpointerdown='toggleRowPin("${row}")'>📌</span>
 </div>`;

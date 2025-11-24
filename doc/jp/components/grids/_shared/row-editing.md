@@ -493,7 +493,7 @@ export class {ComponentName}RowEditSampleComponent {
 
 ```html
 <ng-template igxRowEditText let-rowChangesCount>
-	Changes: {{rowChangesCount}}
+    Changes: {{rowChangesCount}}
 </ng-template>
  ```
 
@@ -536,8 +536,8 @@ const rowEditTextTemplate = (ctx: IgrGridRowEditTextTemplateContext) =>{
 
 ```html
  <ng-template igxRowEditActions let-endRowEdit>
-	<button igxButton igxRowEditTabStop (click)="endRowEdit(false)">Cancel</button>
-	<button igxButton igxRowEditTabStop (click)="endRowEdit(true)">Apply</button>
+    <button igxButton igxRowEditTabStop (click)="endRowEdit(false)">Cancel</button>
+    <button igxButton igxRowEditTabStop (click)="endRowEdit(true)">Apply</button>
 </ng-template>
 ```
 
@@ -547,7 +547,7 @@ const rowEditTextTemplate = (ctx: IgrGridRowEditTextTemplateContext) =>{
     window.endRowEdit = ctx.implicit;
     return html`<div>
   <button @click="(event) => endRowEdit(false, event)">Cancel</button>
-	<button @click="(event) => endRowEdit(true, event)">Apply</button>
+    <button @click="(event) => endRowEdit(true, event)">Apply</button>
 </div>`;
 }, false);
 ```
