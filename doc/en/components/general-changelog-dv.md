@@ -461,8 +461,8 @@ for example:
 
 |   |   |
 |---|---|
-| <img class="responsive-img" src="../images/chartDefaults1.png" alt="" /> | <img class="responsive-img" src="../images/chartDefaults2.png" alt="" /> |
-| <img class="responsive-img" src="../images/chartDefaults3.png" alt="" /> | <img class="responsive-img" src="../images/chartDefaults4.png" alt="" /> |
+| <img class="responsive-img" src="../images/chartDefaults1.png" alt="chartDefaults1" /> | <img class="responsive-img" src="../images/chartDefaults2.png" alt="chartDefaults2" /> |
+| <img class="responsive-img" src="../images/chartDefaults3.png" alt="chartDefaults3" /> | <img class="responsive-img" src="../images/chartDefaults4.png" alt="chartDefaults4" /> |
 
 #### Chart Legend
 

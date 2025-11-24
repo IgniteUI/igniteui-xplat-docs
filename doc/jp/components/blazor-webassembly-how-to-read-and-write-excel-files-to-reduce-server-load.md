@@ -38,7 +38,7 @@ Blazor WebAssembly (WASM とも呼ばれます) は、[W3C](https://www.computer
 
 この記事ではデモンストレーションとして、[インターネット上の気象庁防災情報 XML サービス](https://www-data-go-jp.translate.goog/data/dataset/mlit_20170902_0034/resource/de72cea0-a658-4c64-987c-38effeca3eb8?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp)から取得したデータに基づき、直近 7 日間に発生した 1 日ごとの地震発生回数を、Excel の表にしてダウンロードできる Blazor WebAssembly アプリケーションを作ってみます。ダウンロードされる Excel にはバーチャートを組み込み済みとしてみました。
 
-<img src="../images/general/blazor-excel.png" alt="" />
+<img src="../images/general/blazor-excel.png" alt="blazor-excel" />
 
 このサンプルアプリケーションのソースコードは、[こちらの GitHub リポジトリ](https://github.com/igjp-sample/IgbExcelDemo)に公開されています。
 
@@ -172,7 +172,7 @@ Excel ファイルの生成処理をサーバー側で行なう選択肢も考�
 
 Infragistics Blazor Excel ライブラリが提供するアセンブリファイル (.dll) のサイズは、概ね 5 MB ほどあります。初回起動時のコンテンツサイズが膨らむと、コンテンツの読み込み時間・Blazor WebAssembly アプリケーションが操作可能になるまでの初速時間が問題になる場合が想像されます。
 
-<img src="../images/general/lazy-loading-of-assembly.png" alt="" />
+<img src="../images/general/lazy-loading-of-assembly.png" alt="lazy-loading-of-assembly" />
 
 そのような場合は、.NET 5 以降で使える「アセンブリの遅延読み込み」という技法を使うことで、Infragistics Blazor Excel ライブラリが提供するアセンブリファイル (.dll) の読み込みを、Excel ファイルの読み書き処理を行なうそのときまで先送りすることで、Blazor WebAssembly アプリケーションの初期起動時間を改善できる場合があります。以下では今回のサンプルアプリケーションに、この「アセンブリの遅延読み込み」を適用してみます。
 
@@ -227,7 +227,7 @@ Infragistics Blazor Excel ライブラリが提供するアセンブリファイ
 
 さてこのまま試しにこのサンプルアプリケーションを実行すると、初回ページ表示時には、期待どおり Infragistics Blazor Excel ライブラリのアセンブリファイルは読み込まれなくなり、ページ初回表示時に読み込まれるコンテンツサイズが 5MB ほど節約できたことが確認できます。
 
-<img src="../images/general/lazy-loading-of-assembly.png" alt="" />
+<img src="../images/general/lazy-loading-of-assembly.png" alt="lazy-loading-of-assembly" />
 
 しかし実際にダウンロードボタンをクリックすると、「System.IO.FileNotFoundException: Could not load file or assembly」例外が発生してしまいます。
 

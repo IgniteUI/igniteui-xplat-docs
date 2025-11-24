@@ -77,7 +77,7 @@ Then, bind the sample data to the IgbScatterSeries data source, provided in the 
 
 Below you can see how the scatter plot is displayed.
 
-<img src="../images/general/blazor-wasm-app.png" alt="" />
+<img src="../images/general/blazor-wasm-app.png" alt="blazor-wasm-app" />
 
 Moving on to customization now. Let’s tweak the display of the markers to show the size and fill color based on the properties of the bound item (Volume and Color this time).
 
@@ -225,7 +225,7 @@ There is a string parameter called MarkerTemplateScript, where you specify the s
 
 The scatter plot is now displayed with markers of size and fill color according to the properties of the bound item.
 
-<img src="../images/general/blazor-wasm-app-2.png" alt="" />
+<img src="../images/general/blazor-wasm-app-2.png" alt="blazor-wasm-app-2" />
 
 ## In Conclusion
 

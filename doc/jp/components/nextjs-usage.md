@@ -118,7 +118,7 @@ npm run dev
 
 以下の画像は、上記を実行した結果です。
 
-<img src="../images/general/geo-map.png" alt="" />
+<img src="../images/general/geo-map.png" alt="geo-map" />
 
 ## Next.js サーバー コンポーネントでの {Platform} の使用
 上記に記述した通り、{Platform} のほとんどのコンポーネントは状態とブラウザー イベントに依存しているため、サーバー コンポーネント内での直接使用と互換性がありません。ですが、サーバーコンポーネント内で使用する必要がある場合は、Infragistics のコンポーネントをそれぞれのクライアント コンポーネント内にラップすることができます。

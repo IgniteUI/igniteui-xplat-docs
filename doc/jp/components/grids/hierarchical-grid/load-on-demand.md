@@ -69,7 +69,7 @@ function getData(dataState) {
 
 次に GET 要求の URL をビルドする方法を定義します。メイン グリッドのデータを取得できますが含まれる子グリッドのデータも取得できます。ルート レベルに[こちら](https://data-northwind.indigo.design/swagger/index.html)の `Customers` データを使用し、それ以外のレベルには `Orders` と `Details` を使用します。このモデルはアプリケーションごとに異なりますが、ここでは以下を使用します。
 
-<img class="responsive-img" src="../../../images/hgrid-database.jpg" alt="" />
+<img class="responsive-img" src="../../../images/hgrid-database.jpg" alt="hgrid-database" />
 
 はじめに必要となるのはグリッドのデータ、親業のプライマリキーとその一意の ID をどこから取得するかを決定するテーブルの `key` が必要です。
 

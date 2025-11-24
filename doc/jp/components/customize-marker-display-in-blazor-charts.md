@@ -79,7 +79,7 @@ public IEnumerable<SampleDataType> DataSource { get; } = new SampleDataType[]
 
 ここまでの実装で、下図のとおり、散布図が表示されるようになります。
 
-<img src="../images/general/blazor-wasm-app.png" alt="" />
+<img src="../images/general/blazor-wasm-app.png" alt="blazor-wasm-app" />
 
 それではここから、この散布図におけるマーカーの表示を、冒頭の画像のように、バインドした項目のプロパティ (今回は Volume と Color) に応じた大きさと塗りつぶし色で表示するよう、カスタマイズしていきます。
 
@@ -224,7 +224,7 @@ igRegisterScript("customMarkerTemplateFunc", customMarkerTemplateFunc);
 ```
 これで、バインドした項目のプロパティに応じた大きさと塗りつぶし色のマーカーで、散布図が表示されるようになりました。
 
-<img src="../images/general/blazor-wasm-app-2.png" alt="" />
+<img src="../images/general/blazor-wasm-app-2.png" alt="blazor-wasm-app-2" />
 
 ## まとめ
 

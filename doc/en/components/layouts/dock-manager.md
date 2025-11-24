@@ -479,25 +479,25 @@ When you start dragging a floating pane, different docking indicators will appea
 
 In this type of docking while dragging a pane, four arrow docking indicators will appear close to the four edges of the dock manager. Once released, the dragged pane will become a direct child of the Dock Manager's `RootPane`. Visually, the newly docked pane will snap into place at the respective edge and occupy up to half of the dock manager's width or height, shifting all the other content to the other half.
 
-<img class="responsive-img" src="../../images/dockmanager-root-docking.jpg" alt="" />
+<img class="responsive-img" src="../../images/dockmanager-root-docking.jpg" alt="dockmanager-root-docking" />
 
 #### Pane Docking
 
 Docking indicators will appear in the center of a content pane or a tab group pane when dragging the floating pane over it. Once released, the dragged pane will snap into place on any side of the target pane or get grouped together with the target pane to create a tabbed layout. Based on the combination of the initial layout and the dock position, the docking operation may cause the dynamic creation of a new split or tab group pane that would become the new parent of both the dragged and the target panes.
 
-<img class="responsive-img" src="../../images/dockmanager-pane-docking.jpg" alt="" />
+<img class="responsive-img" src="../../images/dockmanager-pane-docking.jpg" alt="dockmanager-pane-docking" />
 
 #### Document Host Docking
 
 If the dragged pane is over a document host, then additional docking indicators will appear that will allow for docking relative to the target pane or the whole document host.
 
-<img class="responsive-img" src="../../images/dockmanager-document-host-docking.jpg" alt="" />
+<img class="responsive-img" src="../../images/dockmanager-document-host-docking.jpg" alt="dockmanager-document-host-docking" />
 
 #### Splitter Docking
 
 While dragging a floating pane, if the cursor of the mouse is close to any splitter, a docking indicator will appear over it. If the dragged pane is docked it will become a child of the split pane that has the targeted splitter. Splitter docking can be disabled by setting the Dock Manager `allowSplitterDock` property to **false**.
 
-<img class="responsive-img" src="../../images/dockmanager-splitter-docking.jpg" alt=""/>
+<img class="responsive-img" src="../../images/dockmanager-splitter-docking.jpg" alt="dockmanager-splitter-docking"/>
 
 ### Update Layout
 
@@ -607,19 +607,19 @@ Let's utilize these slots and parts to create a customized Dock Manager layout. 
     <button slot="closeButton">x</button>
 
     <button slot="maximizeButton">
-        <img src="https://www.svgrepo.com/show/419558/arrow-top-chevron-chevron-top.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/419558/arrow-top-chevron-chevron-top.svg" alt="arrow-top-chevron-chevron-top" />
     </button>
 
     <button slot="minimizeButton">
-        <img src="https://www.svgrepo.com/show/419557/bottom-chevron-chevron-down.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/419557/bottom-chevron-chevron-down.svg" alt="bottom-chevron-chevron-down" />
     </button>
 
     <button slot="pinButton">
-        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="pin" />
     </button>
 
     <button slot="unpinButton">
-        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="pin" />
     </button>
 </igc-dockmanager>
 ```
@@ -634,19 +634,19 @@ Let's utilize these slots and parts to create a customized Dock Manager layout. 
     <button slot="closeButton">x</button>
 
     <button slot="maximizeButton">
-        <img src="https://www.svgrepo.com/show/419558/arrow-top-chevron-chevron-top.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/419558/arrow-top-chevron-chevron-top.svg" alt="arrow-top-chevron-chevron-top" />
     </button>
 
     <button slot="minimizeButton">
-        <img src="https://www.svgrepo.com/show/419557/bottom-chevron-chevron-down.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/419557/bottom-chevron-chevron-down.svg" alt="bottom-chevron-chevron-down" />
     </button>
 
     <button slot="pinButton">
-        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="pin" />
     </button>
 
     <button slot="unpinButton">
-        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="pin" />
     </button>
 </IgrDockManager>
 ```

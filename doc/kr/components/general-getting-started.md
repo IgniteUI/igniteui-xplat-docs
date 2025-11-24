@@ -149,4 +149,4 @@ Finally, we can run our new application by using one of the following commands:
 
 The final result should look something like this screenshot:
 
-<img src="../images/general/geo-map.png" alt="" />
+<img src="../images/general/geo-map.png" alt="geo-map" />

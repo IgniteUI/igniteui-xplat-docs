@@ -33,11 +33,11 @@ Blazor Hybrid は、Blazor Server と Blazor Web Assembly の間のようなも�
 
 Visual Studio 2022 を起動し、開始ページで **[新しいプロジェクトの作成]** をクリックし、**.NET MAUI Blazor アプリ** テンプレートを選択して、**[次へ]** をクリックします。
 
-<img src="../images/general/new-blazor-project-maui.jpg" alt="" />
+<img src="../images/general/new-blazor-project-maui.jpg" alt="new-blazor-project-maui" />
 
 プロジェクト名と場所を入力し、**[作成]** をクリックします。
 
-<img src="../images/general/new-blazor-project-configure-maui.jpg" alt="" />
+<img src="../images/general/new-blazor-project-configure-maui.jpg" alt="new-blazor-project-configure-maui" />
 
 ## Ignite UI for Blazor のインストール
 
@@ -118,7 +118,7 @@ Razor ページに Ignite UI for Blazor コンポーネントの追加:
 
 Windows 用の .NET MAUI Blazor アプリをビルドして実行します。
 
-<img src="../images/general/getting-started-blazor-card-windows.jpg" alt="" />
+<img src="../images/general/getting-started-blazor-card-windows.jpg" alt="getting-started-blazor-card-windows" />
 
 > [!Note]
 > .NET MAUI を使用したクロス プラットフォーム アプリケーションの構築の詳細については、[Microsoft のドキュメント](https://docs.microsoft.com/ja-jp/dotnet/maui/get-started/first-app?pivots=devices-android)を参照してください。

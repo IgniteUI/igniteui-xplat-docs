@@ -104,13 +104,13 @@ Use the `Carousel` selector to wrap your slides. The slides may feature any vali
 ```razor
 <IgbCarousel>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/ignite-ui-angular-indigo-design.png" alt="" />
+        <img src="assets/images/carousel/ignite-ui-angular-indigo-design.png" alt="ignite-ui-angular-indigo-design" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/slider-image-chart.png" alt="" />
+        <img src="assets/images/carousel/slider-image-chart.png" alt="slider-image-chart" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/ignite-ui-angular-charts.png" alt="" />
+        <img src="assets/images/carousel/ignite-ui-angular-charts.png" alt="ignite-ui-angular-charts" />
     </IgbCarouselSlide>
 </IgbCarousel>
 ```
@@ -256,10 +256,10 @@ To add {Platform} custom carousel indicators, use the `CarouselIndicator`:
     </igc-carousel-indicator>
 
     <igc-carousel-slide>
-        <img src="assets/images/card/media/the_red_ice_forest.jpg" alt="" />
+        <img src="assets/images/card/media/the_red_ice_forest.jpg" alt="the_red_ice_forest" />
     </igc-carousel-slide>
     <igc-carousel-slide>
-        <img src="assets/images/card/media/yosemite.jpg" alt="" />
+        <img src="assets/images/card/media/yosemite.jpg" alt="yosemite" />
     </igc-carousel-slide>
 </igc-carousel>
 ```
@@ -301,10 +301,10 @@ To add {Platform} custom carousel indicators, use the `CarouselIndicator`:
     </IgbCarouselIndicator>
 
     <IgbCarouselSlide>
-        <img src="assets/images/card/media/the_red_ice_forest.jpg" alt="" />
+        <img src="assets/images/card/media/the_red_ice_forest.jpg" alt="the_red_ice_forest" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/card/media/yosemite.jpg" alt="" />
+        <img src="assets/images/card/media/yosemite.jpg" alt="yosemite" />
     </IgbCarouselSlide>
 </IgbCarousel>
 ```
@@ -674,19 +674,19 @@ const images = [
     </IgbCarouselIndicator>
 
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/WonderfulCoast.png" alt="" />
+        <img src="assets/images/carousel/WonderfulCoast.png" alt="WonderfulCoast" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/CulturalDip.png" alt="" />
+        <img src="assets/images/carousel/CulturalDip.png" alt="CulturalDip" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/GoldenBeaches.png" alt="" />
+        <img src="assets/images/carousel/GoldenBeaches.png" alt="GoldenBeaches" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/IslandOfHistory.png" alt="" />
+        <img src="assets/images/carousel/IslandOfHistory.png" alt="IslandOfHistory" />
     </IgbCarouselSlide>
     <IgbCarouselSlide>
-        <img src="assets/images/carousel/AmazingBridge.png" alt="" />
+        <img src="assets/images/carousel/AmazingBridge.png" alt="AmazingBridge" />
     </IgbCarouselSlide>
 </IgbCarousel>
 ```

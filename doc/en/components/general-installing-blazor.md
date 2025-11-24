@@ -23,11 +23,11 @@ Licensed users should use the official licensed Ignite UI for Blazor NuGet packa
 
 Right click the Solution, or Project, and select **Manage NuGet Packages for Solution**.
 
-<img src="../images/general/nuget-manage-packages.jpg" alt="" />
+<img src="../images/general/nuget-manage-packages.jpg" alt="nuget-manage-packages" />
 
 In the package manager dialog, open the **Browse** tab, select the **Infragistics** package source, and install the **IgniteUI.Blazor** NuGet package into the project.
 
-<img src="../images/general/nuget-package-manager-browse.jpg" alt="" />
+<img src="../images/general/nuget-package-manager-browse.jpg" alt="nuget-package-manager-browse" />
 
 > [!Note]
 > If you do not have an Infragistics package source available, learn how to add it by reading the [Infragistics NuGet feed topic](./general-nuget-feed.md).

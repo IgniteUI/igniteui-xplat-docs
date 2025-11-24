@@ -304,25 +304,25 @@ this.dockManager.addEventListener('activePaneChanged', ev => {
 
 このタイプのドッキングでは、ペインをドラッグしているときに、ドックマネージャーの四隅付近に 4 つの矢印ドッキングインジケーターが表示されます。ペインをドロップすると、Dock Manager の `RootPane` の直接の子要素になります。視覚的には、新しくドッキングされたペインはそれぞれの端にスナップされ、ドック マネージャーの幅または高さの最大半分を占め、他のすべてのコンテンツは残りの半分に移動します。
 
-<img class="responsive-img" src="../../images/dockmanager-root-docking.jpg" alt="" />
+<img class="responsive-img" src="../../images/dockmanager-root-docking.jpg" alt="dockmanager-root-docking" />
 
 #### ペイン ドッキング
 
 フローティング ペインをコンテンツ ペインまたはタブ グループ ペインの上にドラッグすると、ドッキング インジケーターがペインの中央に表示されます。ペインをドロップすると、ターゲット ペインの任意の側にスナップされるか、ターゲット ペインとグループ化されてタブ付きレイアウトが作成されます。初期レイアウトとドッキング位置の組み合わせにより、ドッキング操作により、ドラッグされたペインとターゲットペインの両方の新しい親となる分割されたペインまたはタブ グループ ペインが動的に作成されることがあります。
 
-<img class="responsive-img" src="../../images/dockmanager-pane-docking.jpg" alt="" />
+<img class="responsive-img" src="../../images/dockmanager-pane-docking.jpg" alt="dockmanager-pane-docking" />
 
 #### ドキュメント ホスト ドッキング
 
 ドラッグしたペインがドキュメント ホストの上にある場合は、ターゲット ペインまたはドキュメント ホスト全体に対するドッキングを可能にする追加のドッキング インジケーターが表示されます。
 
-<img class="responsive-img" src="../../images/dockmanager-document-host-docking.jpg" alt="" />
+<img class="responsive-img" src="../../images/dockmanager-document-host-docking.jpg" alt="dockmanager-document-host-docking" />
 
 #### スプリッター ドッキング
 
 フローティング ペインをドラッグしているときに、マウス カーソルがスプリッターに近づくと、その上にドッキング インジケーターが表示されます。ドラッグしたペインがドッキングされている場合、そのペインは対象のスプリッターを持つ分割ペインの子要素になります。スプリッター ドッキングは、Dock Manager の `allowSplitterDock` プロパティを **false** に設定することで無効にできます。
 
-<img class="responsive-img" src="../../images/dockmanager-splitter-docking.jpg" alt="" />
+<img class="responsive-img" src="../../images/dockmanager-splitter-docking.jpg" alt="dockmanager-splitter-docking" />
 
 ### レイアウトの編集
 
@@ -409,19 +409,19 @@ Dock Manager コンポーネントは、スロットとパーツを使用して�
     <button slot="closeButton">x</button>
 
     <button slot="maximizeButton">
-        <img src="https://www.svgrepo.com/show/419558/arrow-top-chevron-chevron-top.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/419558/arrow-top-chevron-chevron-top.svg" alt="arrow-top-chevron-chevron-top" />
     </button>
 
     <button slot="minimizeButton">
-        <img src="https://www.svgrepo.com/show/419557/bottom-chevron-chevron-down.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/419557/bottom-chevron-chevron-down.svg" alt="bottom-chevron-chevron-down" />
     </button>
 
     <button slot="pinButton">
-        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="pin" />
     </button>
 
     <button slot="unpinButton">
-        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="pin" />
     </button>
 </igc-dockmanager>
 ```
