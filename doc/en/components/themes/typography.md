@@ -32,7 +32,7 @@ Here's a list of all 13 category styles as defined for the Bootstrap Theme in {P
 | **caption**        | System Font     | 400             | .75 rem       | none               | 0.025 rem          | 1 rem           | `--ig-caption-*`    |
 | **overline**       | System Font     | 400             | .625 rem      | uppercase          | 0.09375 rem        | 1 rem           | `--ig-overline-*`   |
 
-Each theme defines its own type scale. This means each one of the themes we ship - Material, Fluent, Boostrap, and Indigo will have its own type scale. They all share the same _scale categories_, but can have different font family, weight, size, text transform, letter spacing, and line height.
+Each theme defines its own type scale. This means each one of the themes we ship - Material, Fluent, Bootstrap, and Indigo will have its own type scale. They all share the same _scale categories_, but can have different font family, weight, size, text transform, letter spacing, and line height.
 
 ## Usage
 

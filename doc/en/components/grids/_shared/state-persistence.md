@@ -1109,7 +1109,7 @@ Add snippet for blazor for restore state
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-- When restoring all grid features at once (using `applyState` API with no parameters), then column properties for the root grid might be resetted to default. If this happens, restore the columns or column selection feature separately after that:
+- When restoring all grid features at once (using `applyState` API with no parameters), then column properties for the root grid might be reset to default. If this happens, restore the columns or column selection feature separately after that:
 
 ```typescript
 state.applyState(gridState);

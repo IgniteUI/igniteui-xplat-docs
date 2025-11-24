@@ -431,7 +431,7 @@ This will enable highlighted code blocks for JavaScript, Python, and Go, styled 
 | --------------- | ------------------------------------------------------------------------------- |
 | `noHighlighter` | If `true`, disables syntax highlighting entirely.                               |
 | `languages`     | List of programming languages to support in highlighted code blocks.            |
-| `theme`         | An object specifying Shiki themes to apply. Supports separate values for `light` and `dark` mode (e.g., `{ light: 'github-light', dark: 'github-dark' }`). |
+| `theme`         | An object specifying **Shiki** themes to apply. Supports separate values for `light` and `dark` mode (e.g., `{ light: 'github-light', dark: 'github-dark' }`). |
 | `sanitizer`     | A custom function to sanitize the final HTML. Defaults to `DOMPurify.sanitize`. |
 
 ### Events

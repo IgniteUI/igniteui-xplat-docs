@@ -92,7 +92,7 @@ public exportButtonHandler() {
 <!-- ComponentStart: Grid -->
 ## Export Grouped Data
 
-To export grouped data you just need to group the `{ComponentName}` by one or more columns. The browser will download a file named "ExportedDataFile.xlsx" which contains the data from the `{ComponentName}` component in MS Excel format grouped by the selected column. You can find example in the beggining of the topic.
+To export grouped data you just need to group the `{ComponentName}` by one or more columns. The browser will download a file named "ExportedDataFile.xlsx" which contains the data from the `{ComponentName}` component in MS Excel format grouped by the selected column. You can find example in the beginning of the topic.
 
 <!-- Angular -->
 `sample="/{ComponentSample}/excel-exporting", height="750", alt="{Platform} {ComponentTitle} Grouped Data Excel Exporter Example"`

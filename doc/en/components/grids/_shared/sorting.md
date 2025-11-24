@@ -16,7 +16,7 @@ The {ProductName} Data Sorting feature in {Platform} {ComponentTitle} is enabled
 <!-- Angular -->
 
 > [!Note]
-> Up until now, grouping/sorting worked in conjuction with each other. In 13.2 version, a new behavior which decouples grouping from sorting is introduced. For example - clearing the grouping will not clear sorting expressions in the grid or vice versa. Still, if a column is both sorted and grouped, grouped expressions take precedence.
+> Up until now, grouping/sorting worked in conjunction with each other. In 13.2 version, a new behavior which decouples grouping from sorting is introduced. For example - clearing the grouping will not clear sorting expressions in the grid or vice versa. Still, if a column is both sorted and grouped, grouped expressions take precedence.
 
 <!-- end: Angular -->
 

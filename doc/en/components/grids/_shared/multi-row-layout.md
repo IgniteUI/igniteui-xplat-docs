@@ -124,7 +124,7 @@ The result of the above configuration can be seen on the screenshot below:
 
 ## Feature Integration
 
-Due to the completly different rendering approach of Multi-row Layout, some of the column features will work only on `ColumnLayout` component. Such features are Column Pinning and Column Hiding. Othes like - Sorting and Grouping will work in the same way - on the `Column` component.
+Due to the completely different rendering approach of Multi-row Layout, some of the column features will work only on `ColumnLayout` component. Such features are Column Pinning and Column Hiding. Otherwise - Sorting and Grouping will work in the same way - on the `Column` component.
 
 - Filtering - only Excel Style Filtering is supported. Setting `FilterMode` explicitly to `FilterMode.quickFilter` has no effect.
 - Paging - works on records, not visual rows.

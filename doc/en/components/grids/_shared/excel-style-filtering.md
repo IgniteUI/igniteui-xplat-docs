@@ -596,7 +596,7 @@ The following sample demonstrates how to format the numeric values of a column a
 
 ## Tree Filter View
 
-By default, the Excel Style Filtering dialog displays the items in a list view. In order to display them in a tree view you can use the `TreeGridFilteringStrategy` and specify an array of column field names. Filter items will be displayed in a tree view for the speicified columns and in a list view for all other columns. The following sample demonstrates how to show filter items in a tree view for the first column:
+By default, the Excel Style Filtering dialog displays the items in a list view. In order to display them in a tree view you can use the `TreeGridFilteringStrategy` and specify an array of column field names. Filter items will be displayed in a tree view for the specified columns and in a list view for all other columns. The following sample demonstrates how to show filter items in a tree view for the first column:
 
 `sample="/{ComponentSample}/filter-view", height="650", alt="{Platform} {ComponentTitle} filter view"`
 

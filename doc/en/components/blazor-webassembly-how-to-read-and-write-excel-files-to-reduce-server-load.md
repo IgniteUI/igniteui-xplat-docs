@@ -82,7 +82,7 @@ In the wwwroot/index.html file (the fallback page in the Blazor WebAssembly proj
 <script src="_framework/blazor.webassembly.js"></script> </body></ html>
 ```
 
-### Workbook.inprocessruntime - Setting Static Property
+### Workbook.InProcessRuntime - Setting Static Property
 
 You are now ready to use the Infragistics Blazor Excel library. Use the Workbook class in the Infragistics.Documents.Excel namespace to read and write Excel files. Keep in mind that before you can process an Excel file using the Workbook class on Blazor WebAssembly, you must set the Workbook.InProcessRuntime static property to a JavaScript runtime object with the IJSInProcessRuntime interface.
 

@@ -4,8 +4,8 @@ _description: Looking for fast {Platform} grids and tables? {ProductName} provid
 _keywords: {Platform} data grid, table, grids, {ProductName}, Infragistics
 _license: commercial
 mentionedTypes: ["Infragistics.Controls.Grid"]
-
 ---
+
 <style>
 
 .themes-container{
@@ -376,7 +376,7 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
 ### Theming, Styling, & Templating
 
 <div class="feature">
-    <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of different grids design showing the themeing and templating capabilities" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-cell-styling-1100.gif?v=201808021304" alt="Animation of different grids design showing the themeing and templating capabilities of the Angular Data Grid"></div>
+    <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of different grids design showing the theming and templating capabilities" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-cell-styling-1100.gif?v=201808021304" alt="Animation of different grids design showing the theming and templating capabilities of the Angular Data Grid"></div>
     <div class="feature__details">
         <p>With {ProductName} you can customize cell appearance with CSS or re-template any cell with ng-template to give any cell render appearance. With full support for Material Design, you can customize your branded experience with our simple-to-use theming engine.</p>
     </div>

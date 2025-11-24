@@ -225,7 +225,7 @@ The card has an `outlined` attribute which, if set, removes any shadows from the
 
 ### Horizontal Layout
 
-By default all sections of the card (header, content, media, actions) are layed out vertically. This is nice when we have a lot of vertical space. Say we wanted to lay out the sections in the card horizontally. We can achieve such a layout with some simple CSS.
+By default all sections of the card (header, content, media, actions) are laid out vertically. This is nice when we have a lot of vertical space. Say we wanted to lay out the sections in the card horizontally. We can achieve such a layout with some simple CSS.
 
 Here's an example of an outlined horizontal card:
 
@@ -334,7 +334,7 @@ If everything went well, our card should look like this:
 
 You can get even more creative with the layout of the `Card`.
 
-Below is an example showing how you can create a semi-horizontal card, where we have every section of the card layed out vertically, while the `CardMedia` appears alongside the vertical sections.
+Below is an example showing how you can create a semi-horizontal card, where we have every section of the card laid out vertically, while the `CardMedia` appears alongside the vertical sections.
 
 ```html
 <igc-card>

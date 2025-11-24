@@ -196,8 +196,8 @@ Here's a breakdown of all icons as used by component:
 | **drag_indicator**   | Used to show a handle to indicate an item can be dragged.                      |
 | **error**            | Used in editable cells to indicate erroneous data input.                       |
 | **expand_more**      | Used by the excel filtering menu to indicate the addition of more filters.     |
-| **file_dowload**     | Used by the excel filter exporter.                                             |
-| **filter_**         | Used for various filtering operands.                                           |
+| **file_download**    | Used by the excel filter exporter.                                             |
+| **filter_**          | Used for various filtering operands.                                           |
 | **group_work**       | Used by the group-by drop area.                                                |
 | **hide**             | Used by various UI elements for hiding columns.                                |
 | **import_export**    | Used by the pivot data selector for moving.                                    |

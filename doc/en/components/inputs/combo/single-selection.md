@@ -100,7 +100,7 @@ Naturally, some configuration options will have no effect in a single selection 
 
 Assigning a value to the `PlaceholderSearch` property will yield no result since the filtering input that usually is placed above the list of options will not be present in a single selection ComboBox.
 
-### Autofocusing the list of options
+### Auto-focusing the list of options
 
 Setting the `AutofocusList` option on a single selection ComboBox will also have no effect.
 
