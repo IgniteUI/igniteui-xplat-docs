@@ -113,4 +113,4 @@ Without information about the sizes of the container and the items before render
 Our community is active and always welcoming to new ideas.
 
 - [{ProductName} **Forums**]({ForumsLink})
-- [{ProductName}  **GitHub**]({GithubLink})
+- [{ProductName} **GitHub**]({GithubLink})

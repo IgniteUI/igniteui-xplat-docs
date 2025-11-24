@@ -493,12 +493,12 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCarouselModule));
 ### キーボード ナビゲーション
 
 - ナビゲーション ボタン
-    * <kbd>SPACE</kbd>/<kbd>ENTER</kbd> キー - 次のスライド/前のスライドに移動します。
+  - <kbd>SPACE</kbd>/<kbd>ENTER</kbd> キー - 次のスライド/前のスライドに移動します。
 - インジケーター
-    * <kbd>🡐</kbd> キー - 前のスライド (右から左モードでは次) に移動します。
-    * <kbd>🡒</kbd> キー - 次のスライド  (右から左モードでは前へ) に移動します。
-    * <kbd>HOME</kbd> キー - 最初のスライド (右から左モードでは最後) に移動します。
-    * <kbd>End</kbd> キー - 最後のスライド (右から左モードでは最初) に移動します。
+  - <kbd>🡐</kbd> キー - 前のスライド (右から左モードでは次) に移動します。
+  - <kbd>🡒</kbd> キー - 次のスライド  (右から左モードでは前へ) に移動します。
+  - <kbd>HOME</kbd> キー - 最初のスライド (右から左モードでは最後) に移動します。
+  - <kbd>End</kbd> キー - 最後のスライド (右から左モードでは最初) に移動します。
 
 ### 自動的なトランジション
 
@@ -707,20 +707,20 @@ const images = [
 ### ARIA のサポート
 #### Carousel コンポーネント
 - **属性**
-    * [aria-roledescription](https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription) を 「carousel」 に設定します。
-    * [aria-live](https://www.w3.org/TR/wai-aria-1.1/#aria-live) - スクリーン リーダーがライブ リージョンの更新を処理する優先度を設定するために使用されます。可能な設定は **off** おとび **polite** です。デフォルト設定は **polite** であり、スライド セットのコンテナーとして機能する要素に設定されています。`Interval` オプションが設定され、カルーセルが再生状態の場合、**aria-live** 属性は **off** に設定されます。
-    * [aria-label](https://www.w3.org/TR/wai-aria/states_and_properties#aria-label) (ナビゲーション ボタン) - 「前のスライド」/「次のスライド」。
+  - [aria-roledescription](https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription) を 「carousel」 に設定します。
+  - [aria-live](https://www.w3.org/TR/wai-aria-1.1/#aria-live) - スクリーン リーダーがライブ リージョンの更新を処理する優先度を設定するために使用されます。可能な設定は **off** おとび **polite** です。デフォルト設定は **polite** であり、スライド セットのコンテナーとして機能する要素に設定されています。`Interval` オプションが設定され、カルーセルが再生状態の場合、**aria-live** 属性は **off** に設定されます。
+  - [aria-label](https://www.w3.org/TR/wai-aria/states_and_properties#aria-label) (ナビゲーション ボタン) - 「前のスライド」/「次のスライド」。
 
 #### Slide コンポーネント
 - **属性**
-    * id - 「igc-carousel-slide-${incremented_number}」 のパターンに従います。
-    * [aria-roledescription](https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription) を 「slide」 に設定します。
-    * [aria-label](https://www.w3.org/TR/wai-aria/#aria-label) は 「${index + 1} of ${total}」 のパターンに従います。
+  - id - 「igc-carousel-slide-${incremented_number}」 のパターンに従います。
+  - [aria-roledescription](https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription) を 「slide」 に設定します。
+  - [aria-label](https://www.w3.org/TR/wai-aria/#aria-label) は 「${index + 1} of ${total}」 のパターンに従います。
 
 #### Indicator コンポーネント
 - **属性**
-    * [aria-label](https://www.w3.org/TR/wai-aria/#aria-label) は 「Slide ${index + 1}」 のパターンに従います。
-    * [aria-selected](https://www.w3.org/TR/wai-aria-1.1/#aria-selected) - アクティブなスライドに基づいて **true** または **false** に設定します。
+  - [aria-label](https://www.w3.org/TR/wai-aria/#aria-label) は 「Slide ${index + 1}」 のパターンに従います。
+  - [aria-selected](https://www.w3.org/TR/wai-aria-1.1/#aria-selected) - アクティブなスライドに基づいて **true** または **false** に設定します。
 
 
 ## API リファレンス

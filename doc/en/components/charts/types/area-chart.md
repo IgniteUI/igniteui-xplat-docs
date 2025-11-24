@@ -68,8 +68,6 @@ Similarly to how you can show multiple [Line Chart](line-chart.md) and [Spline C
 
 `sample="/charts/category-chart/area-chart-multiple-sources", height="600", alt="{Platform} Area Chart with Multiple Sources"`
 
-
-
 <div class="divider--half"></div>
 
 ## {Platform} Area Chart Styling

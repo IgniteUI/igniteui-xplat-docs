@@ -33,7 +33,7 @@ Infragistics {ProductName} is available as npm packages and you can add them as 
 This will allow you to seamlessly use a mix of packages from the public npm registry and the Infragistics private registry. You will be asked to provide the username and the password that you use for logging into your Infragistics account. You should also provide the email that is registered to your Infragistics profile.
 
 > [!Note]
->  **npm** is disallowing the use of the **"@"** symbol inside your username as it is considered as being "not safe for the net". Because your username is actually the email that you use for your Infragistics account it always contains the symbol **"@"**. That's why you must escape this limitation by replacing the **"@"** symbol with **"!!"** (two exclamation marks). For example, if your username is **"username@example.com"** when asked about your username you should provide the following input: **"username!!example.com"**.
+> **npm** is disallowing the use of the **"@"** symbol inside your username as it is considered as being "not safe for the net". Because your username is actually the email that you use for your Infragistics account it always contains the symbol **"@"**. That's why you must escape this limitation by replacing the **"@"** symbol with **"!!"** (two exclamation marks). For example, if your username is **"username@example.com"** when asked about your username you should provide the following input: **"username!!example.com"**.
 
 ### Now, to log in to our private feed using npm, run the adduser command and specify a user account and password:
 

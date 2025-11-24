@@ -41,9 +41,9 @@ _language: ja
 - **Expansion**
 - **GroupBy**
 - **Columns**
-    * 複数列ヘッダー
-    * 列の順序
-    * `IColumnState` インターフェイスによって定義される列プロパティ。
+  - 複数列ヘッダー
+  - 列の順序
+  - `IColumnState` インターフェイスによって定義される列プロパティ。
 <!-- * 列テンプレートおよび関数はアプリケーション レベルのコードを使用して復元されます。[列の復元](state-persistence.md#列の復元)セクションを参照してください。 -->
 
 <!-- ComponentEnd: Grid, TreeGrid -->
@@ -51,7 +51,7 @@ _language: ja
 <!-- ComponentStart: HierarchicalGrid -->
 
 - **RowIslands**
-    * 階層のすべての子グリッドの保存/復元機能
+  - 階層のすべての子グリッドの保存/復元機能
 - **Sorting**
 - **Filtering**
 - **AdvancedFiltering**
@@ -62,9 +62,9 @@ _language: ja
 - **RowPinning**
 - **Expansion**
 - **Columns**
-    * **新規**: 複数列ヘッダーが標準でサポートされるようになりました。
-    * 列の順序
-    * `IColumnState` インターフェイスによって定義される列プロパティ。
+  - **新規**: 複数列ヘッダーが標準でサポートされるようになりました。
+  - 列の順序
+  - `IColumnState` インターフェイスによって定義される列プロパティ。
 <!-- * 列テンプレートおよび関数はアプリケーション レベルのコードを使用して復元されます。[列の復元](state-persistence.md#列の復元)セクションを参照してください。 -->
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -78,9 +78,9 @@ _language: ja
 - `ColumnSelection`
 - `Expansion`
 - `PivotConfiguration`
-    * `IPivotConfiguration` インターフェイスによって定義されるピボット構成プロパティ。
-    * ピボットのディメンションと値の関数は、アプリケーションレベルのコードを使用して復元されます。「[ピボット構成の復元](state-persistence.md#ピボット構成の復元)」セクションを参照してください。
-    * ピボットの行と列のストラテジもアプリケーション レベルのコードを使用して復元されます。「[ピボットのストラテジの復元](state-persistence.md#ピボットのストラテジの復元)」セクションを参照してください。
+  - `IPivotConfiguration` インターフェイスによって定義されるピボット構成プロパティ。
+  - ピボットのディメンションと値の関数は、アプリケーションレベルのコードを使用して復元されます。「[ピボット構成の復元](state-persistence.md#ピボット構成の復元)」セクションを参照してください。
+  - ピボットの行と列のストラテジもアプリケーション レベルのコードを使用して復元されます。「[ピボットのストラテジの復元](state-persistence.md#ピボットのストラテジの復元)」セクションを参照してください。
 <!-- end: Angular, WebComponents -->
 
 <!-- Blazor, React -->
@@ -90,8 +90,8 @@ _language: ja
 - `ColumnSelection`
 - `Expansion`
 - `PivotConfiguration`
-    * `IPivotConfiguration` iインターフェイスによって定義されるピボット構成プロパティ。
-    * ピボットのディメンションと値の関数は、アプリケーションレベルのコードを使用して復元されます。「[ピボット構成の復元](state-persistence.md#ピボット構成の復元)」セクションを参照してください。
+  - `IPivotConfiguration` iインターフェイスによって定義されるピボット構成プロパティ。
+  - ピボットのディメンションと値の関数は、アプリケーションレベルのコードを使用して復元されます。「[ピボット構成の復元](state-persistence.md#ピボット構成の復元)」セクションを参照してください。
 <!-- end: Blazor, React -->
 
 

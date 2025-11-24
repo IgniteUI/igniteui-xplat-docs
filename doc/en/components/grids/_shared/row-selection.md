@@ -363,7 +363,7 @@ When there is some change in the row selection `RowSelectionChanging` event is e
 - `Added` - array of row IDs that are currently added to the selection.
 - `Removed` - array of row IDs that are currently removed according old selection state.
 - `Event` - the original event that triggered row selection change.
-- `Cancel` -  allows you the prevent the row selection change.
+- `Cancel` - allows you the prevent the row selection change.
 
 <!-- ComponentStart: HierarchicalGrid -->
 

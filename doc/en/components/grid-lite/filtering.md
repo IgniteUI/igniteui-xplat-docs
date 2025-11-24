@@ -391,4 +391,4 @@ The following example mocks remote filter operation, reflecting the REST endpoin
 
 Our community is active and always welcoming to new ideas.
 
-- [{GridLiteTitle}  **GitHub**]({GithubLinkLite})
+- [{GridLiteTitle} **GitHub**]({GithubLinkLite})

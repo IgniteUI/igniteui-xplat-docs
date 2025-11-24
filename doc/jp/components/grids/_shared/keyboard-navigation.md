@@ -106,7 +106,7 @@ _language: ja
  <!-- ComponentStart: TreeGrid -->
   現在のノードを縮小します。
  <!-- ComponentEnd: TreeGrid -->
-- <kbd>ALT</kbd> + <kbd>→</kbd> または <kbd>ALT</kbd> + <kbd>↓</kbd> -  <!-- ComponentStart: Grid -->
+- <kbd>ALT</kbd> + <kbd>→</kbd> または <kbd>ALT</kbd> + <kbd>↓</kbd> - <!-- ComponentStart: Grid -->
   グループ行はグループを展開します。
  <!-- ComponentEnd: Grid -->
  <!-- ComponentStart: HierarchicalGrid -->

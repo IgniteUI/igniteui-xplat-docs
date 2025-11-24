@@ -16,8 +16,6 @@ This sample shows synchronization of two {Platform} data charts:
 
 `sample="/charts/data-chart/chart-synchronization", height="600", alt="{Platform} Chart Synchronization Example"`
 
-
-
 <div class="divider--half"></div>
 
 ## Chart Synchronization Properties

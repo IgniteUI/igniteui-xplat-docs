@@ -31,8 +31,6 @@ In High-Volume scenario, the {Platform} Charts can render 1 million of data poin
 
 `sample="/charts/category-chart/high-volume", height="400", alt="{Platform} Chart with High Volume"`
 
-
-
 <div class="divider--half"></div>
 
 ## General Performance Guidelines

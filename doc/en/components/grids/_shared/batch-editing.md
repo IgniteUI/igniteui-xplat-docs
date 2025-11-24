@@ -453,4 +453,4 @@ Deleting a parent node in `{ComponentName}` has some peculiarities. If you are u
 Our community is active and always welcoming to new ideas.
 
 - [{ProductName} **Forums**]({ForumsLink})
-- [{ProductName}  **GitHub**]({GithubLink})
+- [{ProductName} **GitHub**]({GithubLink})

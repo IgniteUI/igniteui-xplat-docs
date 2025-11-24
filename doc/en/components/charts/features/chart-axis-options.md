@@ -17,8 +17,6 @@ The axis titles feature of the {Platform} charts, allows you to add contextual i
 
 `sample="/charts/category-chart/axis-titles", height="450", alt="{Platform} Axis Titles Example"`
 
-
-
 <div class="divider--half"></div>
 
 

@@ -125,9 +125,9 @@ Additional API methods for controlling the expansion states are also exposed:
 - When focus is on a detail row:
 
     - <kbd>🡑</kbd> - navigates one row up, focusing a cell from the previous row.
-    - <kbd>🡓</kbd> -  navigates one row down, focusing a cell from the next row.
+    - <kbd>🡓</kbd> - navigates one row down, focusing a cell from the next row.
     - <kbd>TAB</kbd> - Allows focus to move to the next focusable element inside the template if there are focusable elements, otherwise moves to the next grid row.
-    - <kbd>SHIFT</kbd> + <kbd><kbd>TAB</kbd> -  moves the focus to the previous row.
+    - <kbd>SHIFT</kbd> + <kbd><kbd>TAB</kbd> - moves the focus to the previous row.
 
 - When focus is on a data row with expander:
     - <kbd>ALT</kbd> + <kbd>🡒</kbd> or <kbd>ALT</kbd> + <kbd>🡓</kbd> - expands the row.

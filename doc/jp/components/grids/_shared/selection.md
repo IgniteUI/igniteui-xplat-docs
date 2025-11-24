@@ -52,7 +52,7 @@ _language: ja
 
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
 
-- `MultipleCascade` -  これはカスケード選択のモードであり、ユーザーがユーザーの操作で選択したレコードの下のツリー内のすべての子が選択されます。このモードでは、親の選択状態はその子の選択状態に完全に依存します。
+- `MultipleCascade` - これはカスケード選択のモードであり、ユーザーがユーザーの操作で選択したレコードの下のツリー内のすべての子が選択されます。このモードでは、親の選択状態はその子の選択状態に完全に依存します。
 
 <!-- ComponentEnd: TreeGrid, HierarchicalGrid -->
 

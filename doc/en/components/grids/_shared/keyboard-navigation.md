@@ -105,7 +105,7 @@ When the `{ComponentName}` body is focused, the following key combinations are a
  <!-- ComponentStart: TreeGrid -->
   collapses the current node.
  <!-- ComponentEnd: TreeGrid -->
-- <kbd>ALT</kbd> + <kbd>→</kbd> or <kbd>ALT</kbd> + <kbd>↓</kbd> -  <!-- ComponentStart: Grid -->
+- <kbd>ALT</kbd> + <kbd>→</kbd> or <kbd>ALT</kbd> + <kbd>↓</kbd> - <!-- ComponentStart: Grid -->
   over Group Row - expands the group.
  <!-- ComponentEnd: Grid -->
  <!-- ComponentStart: HierarchicalGrid -->

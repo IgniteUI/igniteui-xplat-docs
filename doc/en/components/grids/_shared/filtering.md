@@ -992,10 +992,10 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 - `{ComponentName}` `filteringExpressions` property is removed. Use `FilteringExpressionsTree` instead.
 - `filter_multiple` method is removed. Use `Filter` method and `FilteringExpressionsTree` property instead.
 - The `Filter` method has new signature. It now accepts the following parameters:
-  * `Name` - the name of the column to be filtered.
-  * `Value` - the value to be used for filtering.
-  * `ConditionOrExpressionTree` (optional) - this parameter accepts object of type `FilteringOperation` or `FilteringExpressionsTree`. If only simple filtering is needed, a filtering operation could be passed as an argument. In case of advanced filtering, an expressions tree containing complex filtering logic could be passed as an argument.
-  * `IgnoreCase` (optional) - whether the filtering is case sensitive or not.
+  - `Name` - the name of the column to be filtered.
+  - `Value` - the value to be used for filtering.
+  - `ConditionOrExpressionTree` (optional) - this parameter accepts object of type `FilteringOperation` or `FilteringExpressionsTree`. If only simple filtering is needed, a filtering operation could be passed as an argument. In case of advanced filtering, an expressions tree containing complex filtering logic could be passed as an argument.
+  - `IgnoreCase` (optional) - whether the filtering is case sensitive or not.
 - `FilteringDone` event now have only one parameter of type `FilteringExpressionsTree` which contains the filtering state of the filtered column.
 - filtering operands: `FilteringExpression` condition property is no longer a direct reference to a filtering condition method, instead it's a reference to an `FilteringOperation`.
 - `ColumnComponent` now exposes a `Filters` property, which takes an `FilteringOperand` class reference.
@@ -1025,5 +1025,5 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 Our community is active and always welcoming to new ideas.
 
 - [{ProductName} **Forums**]({ForumsLink})
-- [{ProductName}  **GitHub**]({GithubLink})
+- [{ProductName} **GitHub**]({GithubLink})
 

@@ -19,6 +19,7 @@ This topic explains how to perform clipboard operations on the {ProductName} spr
 <div class="divider--half"></div>
 
 ## Dependencies
+
 Before making use of the clipboard you will want to import the `SpreadsheetAction` enumeration:
 
 <!-- Angular -->
@@ -42,6 +43,7 @@ import { SpreadsheetAction } from 'igniteui-webcomponents-spreadsheet';
 
 
 ## Usage
+
 The following code snippet shows how you can execute commands related to the clipboard in the {Platform} `Spreadsheet` control:
 
 ```ts

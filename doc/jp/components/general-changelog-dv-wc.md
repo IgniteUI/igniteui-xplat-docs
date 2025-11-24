@@ -626,10 +626,10 @@ _重大な変更_:
 ### {PackageInputs}
 
 - Date Picker:
-  * ValueChanged イベントを `SelectedValueChanged` に変更しました。
+  - ValueChanged イベントを `SelectedValueChanged` に変更しました。
 - Multi-Column ComboBox:
-  * `TextChanged` イベントを `TextValueChanged` に変更しました。
-  * `ValueChanged` イベントを `SelectedValueChanged` に変更しました。
+  - `TextChanged` イベントを `TextValueChanged` に変更しました。
+  - `ValueChanged` イベントを `SelectedValueChanged` に変更しました。
 
 ## **{PackageVerChanges-21-2}**
 

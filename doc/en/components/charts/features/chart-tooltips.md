@@ -42,8 +42,6 @@ This example shows how to create custom tooltips for all series in {Platform} `C
 
 `sample="/charts/category-chart/tooltip-template", height="500", alt="{Platform} Tooltip Template"`
 
-
-
 <div class="divider--half"></div>
 
 

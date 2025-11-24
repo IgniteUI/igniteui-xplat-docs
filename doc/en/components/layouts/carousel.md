@@ -492,12 +492,12 @@ The carousel [animations](carousel.md#animations) are fully supported on touch d
 ### Keyboard navigation
 
 - Navigation buttons
-    * <kbd>SPACE</kbd> or <kbd>ENTER</kbd> key - navigates to the next/previous slide.
+  - <kbd>SPACE</kbd> or <kbd>ENTER</kbd> key - navigates to the next/previous slide.
 - Indicators
-    * <kbd>🡐</kbd> key - navigates to the previous (next in Right-to-Left mode) slide.
-    * <kbd>🡒</kbd> key - navigates to the next (previous in Right-to-Left mode) slide.
-    * <kbd>HOME</kbd> key - navigates to the first (last in Right-to-Left mode) slide.
-    * <kbd>END</kbd> key - navigates to the last (first in Right-to-Left mode) slide.
+  - <kbd>🡐</kbd> key - navigates to the previous (next in Right-to-Left mode) slide.
+  - <kbd>🡒</kbd> key - navigates to the next (previous in Right-to-Left mode) slide.
+  - <kbd>HOME</kbd> key - navigates to the first (last in Right-to-Left mode) slide.
+  - <kbd>END</kbd> key - navigates to the last (first in Right-to-Left mode) slide.
 
 ### Automatic transitioning
 
@@ -706,20 +706,20 @@ These configurations will have the following result:
 ### ARIA support
 #### Carousel component
 - **Attributes**
-    * [aria-roledescription](https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription) set to "carousel".
-    * [aria-live](https://www.w3.org/TR/wai-aria-1.1/#aria-live) - used to set the priority with which screen reader should treat updates to live regions - the possible settings are: **off** and **polite**. The default setting is **polite** and is set to the element that serves as the container for the set of slides. When the `Interval` option is set and the carousel is in playing state, the **aria-live** attribute would be set to **off**.
-    * [aria-label](https://www.w3.org/TR/wai-aria/states_and_properties#aria-label) (navigation buttons) - "Previous slide"/"Next slide".
+  - [aria-roledescription](https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription) set to "carousel".
+  - [aria-live](https://www.w3.org/TR/wai-aria-1.1/#aria-live) - used to set the priority with which screen reader should treat updates to live regions - the possible settings are: **off** and **polite**. The default setting is **polite** and is set to the element that serves as the container for the set of slides. When the `Interval` option is set and the carousel is in playing state, the **aria-live** attribute would be set to **off**.
+  - [aria-label](https://www.w3.org/TR/wai-aria/states_and_properties#aria-label) (navigation buttons) - "Previous slide"/"Next slide".
 
 #### Slide component
 - **Attributes**
-    * id - follows the pattern "igc-carousel-slide-${incremented_number}".
-    * [aria-roledescription](https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription) set to "slide".
-    * [aria-label](https://www.w3.org/TR/wai-aria/#aria-label) follows the pattern "${index + 1} of ${total}".
+  - id - follows the pattern "igc-carousel-slide-${incremented_number}".
+  - [aria-roledescription](https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription) set to "slide".
+  - [aria-label](https://www.w3.org/TR/wai-aria/#aria-label) follows the pattern "${index + 1} of ${total}".
 
 #### Indicator component
 - **Attributes**
-    * [aria-label](https://www.w3.org/TR/wai-aria/#aria-label) follows the pattern "Slide ${index + 1}"
-    * [aria-selected](https://www.w3.org/TR/wai-aria-1.1/#aria-selected) set to **true** or **false** based on the active slide.
+  - [aria-label](https://www.w3.org/TR/wai-aria/#aria-label) follows the pattern "Slide ${index + 1}"
+  - [aria-selected](https://www.w3.org/TR/wai-aria-1.1/#aria-selected) set to **true** or **false** based on the active slide.
 
 
 ## API References

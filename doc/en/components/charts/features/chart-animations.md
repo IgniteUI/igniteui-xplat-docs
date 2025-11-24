@@ -20,7 +20,6 @@ The following example depicts a [Line Chart](../types/line-chart.md) with an ani
 `sample="/charts/category-chart/line-chart-with-animations", height="500", alt="{Platform} Configuration Options Example"`
 
 
-
 <div class="divider--half"></div>
 
 ## Additional Resources

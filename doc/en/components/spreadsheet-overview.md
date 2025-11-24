@@ -50,6 +50,7 @@ With our spreadsheet, processing data is 100% safe and secure…
 With the built-in Excel import/export functionality, you can instantly load and open Excel documents and view them on-demand, add changes and save them. Also, effortlessly export your completed Excel .xlsx spreadsheets.
 
 ## Dependencies
+
 When installing the {Platform} spreadsheet component, the core and excel package must also be installed.
 
 ```cmd
@@ -113,6 +114,7 @@ ModuleManager.register(
 <div class="divider--half"></div>
 
 ## Usage
+
 Now that the {Platform} spreadsheet module is imported, next is the basic configuration of the spreadsheet.
 
 ```html

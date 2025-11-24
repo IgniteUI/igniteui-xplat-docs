@@ -55,7 +55,7 @@ In the `{ComponentName}`, if you set `RowEditable` property to true, and the `Ed
 - For `number` data type, default template is using `Input` type="number", so if you try to update cell to a value which can not be parsed to a number your change is going to be discarded, and the value in the cell will be set to 0.
 - For `date` data type, default template is using `DatePicker`
 - For `dateTime` data type, default template is using `DateTimeEditor`. This editor will give you a mask directions for the input elements part of the DateTime object.
-- For `time` -  data type, default template is using `TimePicker`.
+- For `time` - data type, default template is using `TimePicker`.
 - For `boolean` data type, default template is using `Checkbox`.
 - For `currency` data type, default template is using `InputGroup` with prefix/suffix configuration based on application or grid locale settings.
 - For `percent` data type, default template is using `InputGroup` with suffix element that shows a preview of the edited value in percents.

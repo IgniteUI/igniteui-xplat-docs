@@ -28,7 +28,7 @@ Infragistics は製品版を使用するユーザーにプライベート NuGet 
 > [!Note]
 > v3 またはそれ以前のバージョンを使用するかどうかの詳細については、次の Web サイト (英語) をご覧ください: **https://devblogs.microsoft.com/nuget/nuget-3-what-and-why/** 。プロトコル v3 は、新しいバージョンの NuGet クライアント (2015 以降) を使用する場合にのみ適用されます。古い NuGet クライアントは、v3 と互換性がない場合があります。
 
-    **[更新]** ボタンをクリックし、[OK] をクリックしてダイアログを閉じます。
+**[更新]** ボタンをクリックし、[OK] をクリックしてダイアログを閉じます。
 
 <img src="../images/general/nuget-package-manager-package-sources-ig-server.jpg" />
 

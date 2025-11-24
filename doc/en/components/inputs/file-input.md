@@ -90,7 +90,7 @@ The `FileInput` component also exposes several slots that can be used to customi
 - `helper-text` - Displays a hint or instructional message below the input. Useful for providing additional guidance, such as formatting tips or field requirements.
 - `file-selector-text` - Allow you to customizes the text displayed on the file selection button.
 - `file-missing-text` - Sets the text shown in the input field when no file has been selected.
-- `value-missing` -  Renders custom content when the required field validation fails. (i.e., when a file is required but not provided).
+- `value-missing` - Renders custom content when the required field validation fails. (i.e., when a file is required but not provided).
 - `invalid` – Allows you to render custom content when the input is in an invalid state.
 - `custom-error` - Displays content when a custom validation message is set using the `setCustomValidity()` method.
 

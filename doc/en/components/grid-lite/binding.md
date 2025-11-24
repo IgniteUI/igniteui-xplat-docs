@@ -117,4 +117,4 @@ the column collection is reset, and a new data source is bound to the grid.
 
 Our community is active and always welcoming to new ideas.
 
-- [{GridLiteTitle}  **GitHub**]({GithubLinkLite})
+- [{GridLiteTitle} **GitHub**]({GithubLinkLite})

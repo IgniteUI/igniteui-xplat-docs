@@ -267,4 +267,4 @@ The column selection UI has a few more APIs to explore, which are listed below.
 Our community is active and always welcoming to new ideas.
 
 - [{ProductName} **Forums**]({ForumsLink})
-- [{ProductName}  **GitHub**]({GithubLink})
+- [{ProductName} **GitHub**]({GithubLink})

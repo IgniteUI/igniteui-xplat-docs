@@ -545,10 +545,10 @@ This would allow reordering the rows and moving them between the pinned and unpi
 <!-- Angular -->
 - Because of how pinned rows are stored internally so that they may appear both in the pinned and unpinned areas of the grid, row pinning is not supported when records in the grid are fetched from a remote endpoint on demand (remote virtualization).
 - When the grid has no `PrimaryKey` set and remote data scenarios are enabled (when paging, sorting, filtering, scrolling trigger requests to a remote server to retrieve the data to be displayed in the grid), a row will lose the following state after a data request completes:
-    * Row Selection
-    * Row Expand/collapse
-    * Row Editing
-    * Row Pinning
+  - Row Selection
+  - Row Expand/collapse
+  - Row Editing
+  - Row Pinning
 
 <!-- end: Angular -->
 

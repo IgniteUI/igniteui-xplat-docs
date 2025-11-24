@@ -17,8 +17,6 @@ The rows of the `XamDataLegend` include the header row, series row(s), and the s
 
 `sample="/charts/category-chart/data-legend", height="450", alt="{Platform} Category Chart Data Legend Example"`
 
-
-
 ### Header Row
 
 The header row displays the current label of x-axis when hovering mouse over category series and financial series. You can use `HeaderFormatDate` and `HeaderFormatTime` properties to format date and time in the `XamDataLegend` if the x-axis shows dates. For other types of series, the `XamDataLegend` does not render the header row.

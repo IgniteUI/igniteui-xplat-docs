@@ -89,7 +89,7 @@ npm install @infragistics/igniteui-dockmanager
 
 - すべてのトライアル版パッケージに対してグローバル置換を実行し、プロジェクト内のすべてのファイルにわたってライセンス版スコープ付きバージョンに変更します。たとえば、すべての `igniteui-dockmanager` 参照を `@infragistics/igniteui-dockmanager` に置き換えます。この変更は、そのようなパッケージが使用されているすべてのインポートに影響します。
 
-  **または**
+**または**
 
 - プロジェクトの **tsconfig.json** に **paths** マッピングを追加します。
 

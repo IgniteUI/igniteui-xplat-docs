@@ -50,6 +50,7 @@ The `igniteui-theming` package includes a custom Tailwind configuration that exp
 Let’s look at how to use each.
 
 ### Color Utility Classes
+
 Our color utility classes are powered by tokens from each Ignite UI theme. You can apply them directly in your HTML:
 
 <!-- WebComponents -->

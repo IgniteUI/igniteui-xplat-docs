@@ -45,6 +45,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 The CSS file includes one of our default themes. You can replace it with a different theme or create a custom one if you want the `Chat` to match your application’s branding.
 
 ## Usage
+
 The simplest way to use the `Chat` is to declare it as follows:
 <!-- WebComponents -->
 ```ts

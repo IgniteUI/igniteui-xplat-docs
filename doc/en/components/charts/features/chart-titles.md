@@ -15,8 +15,6 @@ The title and subtitle feature of the chart control allows you to add informatio
 
 `sample="/charts/category-chart/line-chart-with-titles", height="600", alt="{Platform} Chart Synchronization Example"`
 
-
-
 <div class="divider--half"></div>
 
 ## API References

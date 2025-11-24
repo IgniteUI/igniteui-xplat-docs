@@ -239,4 +239,4 @@ In the sample below you can try out the different column properties and how they
 
 Our community is active and always welcoming to new ideas.
 
-- [{GridLiteTitle}  **GitHub**]({GithubLinkLite})
+- [{GridLiteTitle} **GitHub**]({GithubLinkLite})

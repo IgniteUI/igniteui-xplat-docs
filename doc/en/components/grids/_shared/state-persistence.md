@@ -40,9 +40,9 @@ The {ProductName} State Persistence in {Platform} {ComponentTitle} allows develo
 - **Expansion**
 - **GroupBy**
 - **Columns**
-    * Multi column headers
-    * Columns order
-    * Column properties defined by the `IColumnState` interface.
+  - Multi column headers
+  - Columns order
+  - Column properties defined by the `IColumnState` interface.
 <!-- * Columns templates and functions are restored using application level code, see [Restoring Column](state-persistence.md#restoring-columns) section. -->
 
 <!-- ComponentEnd: Grid, TreeGrid -->
@@ -50,7 +50,7 @@ The {ProductName} State Persistence in {Platform} {ComponentTitle} allows develo
 <!-- ComponentStart: HierarchicalGrid -->
 
 - **RowIslands**
-    * saving/restoring features for all child grids down the hierarchy
+  - saving/restoring features for all child grids down the hierarchy
 - **Sorting**
 - **Filtering**
 - **AdvancedFiltering**
@@ -61,9 +61,9 @@ The {ProductName} State Persistence in {Platform} {ComponentTitle} allows develo
 - **RowPinning**
 - **Expansion**
 - **Columns**
-    * Multi column headers
-    * Columns order
-    * Column properties defined by the `IColumnState` interface.
+  - Multi column headers
+  - Columns order
+  - Column properties defined by the `IColumnState` interface.
 <!-- * Columns templates and functions are restored using application level code, see [Restoring Column](state-persistence.md#restoring-columns) section. -->
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -77,9 +77,9 @@ The {ProductName} State Persistence in {Platform} {ComponentTitle} allows develo
 - `ColumnSelection`
 - `Expansion`
 - `PivotConfiguration`
-    * Pivot Configuration properties defined by the `IPivotConfiguration` interface.
-    * Pivot Dimension and Value functions are restored using application level code, see [Restoring Pivot Configuration](state-persistence.md#restoring-pivot-configuration) section.
-    * Pivot Row and Column strategies are also restored using application level code, see [Restoring Pivot Strategies](state-persistence.md#restoring-pivot-strategies) section.
+  - Pivot Configuration properties defined by the `IPivotConfiguration` interface.
+  - Pivot Dimension and Value functions are restored using application level code, see [Restoring Pivot Configuration](state-persistence.md#restoring-pivot-configuration) section.
+  - Pivot Row and Column strategies are also restored using application level code, see [Restoring Pivot Strategies](state-persistence.md#restoring-pivot-strategies) section.
 <!-- end: Angular, WebComponents -->
 
 <!-- Blazor, React -->
@@ -89,8 +89,8 @@ The {ProductName} State Persistence in {Platform} {ComponentTitle} allows develo
 - `ColumnSelection`
 - `Expansion`
 - `PivotConfiguration`
-    * Pivot Configuration properties defined by the `IPivotConfiguration` interface.
-    * Pivot Dimension and Value functions are restored using application level code, see [Restoring Pivot Configuration](state-persistence.md#restoring-pivot-configuration) section.
+  - Pivot Configuration properties defined by the `IPivotConfiguration` interface.
+  - Pivot Dimension and Value functions are restored using application level code, see [Restoring Pivot Configuration](state-persistence.md#restoring-pivot-configuration) section.
 <!-- end: Blazor, React -->
 
 

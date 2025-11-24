@@ -141,4 +141,4 @@ export interface GridLiteCellContext<
 
 Our community is active and always welcoming to new ideas.
 
-- [{GridLiteTitle}  **GitHub**]({GithubLinkLite})
+- [{GridLiteTitle} **GitHub**]({GithubLinkLite})

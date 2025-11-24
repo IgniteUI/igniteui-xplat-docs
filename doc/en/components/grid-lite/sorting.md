@@ -452,4 +452,4 @@ The following example mocks remote sorting operation, reflecting the REST endpoi
 
 Our community is active and always welcoming to new ideas.
 
-- [{GridLiteTitle}  **GitHub**]({GithubLinkLite})
+- [{GridLiteTitle} **GitHub**]({GithubLinkLite})

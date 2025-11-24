@@ -671,10 +671,10 @@ _Breaking Changes_:
 ### {PackageInputs}
 
 - Date Picker:
-  * Changed ValueChanged event to `SelectedValueChanged`.
+  - Changed ValueChanged event to `SelectedValueChanged`.
 - Multi-Column ComboBox:
-  * Changed `TextChanged` event to `TextValueChanged`.
-  * Changed `ValueChanged` event to `SelectedValueChanged`.
+  - Changed `TextChanged` event to `TextValueChanged`.
+  - Changed `ValueChanged` event to `SelectedValueChanged`.
 
 ## **{PackageVerChanges-21-2}**
 

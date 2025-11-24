@@ -18,7 +18,6 @@ The following example demonstrates the annotation layers that are available on t
 `sample="/charts/category-chart/line-chart-with-annotations", height="600", alt="{Platform} Annotations Example"`
 
 
-
 <div class="divider--half"></div>
 
 Like this sample? Get access to our complete {Platform} toolkit and start building your own apps in minutes. <a href="{environment:infragisticsBaseUrl}/products/{ProductSpinal}/download">Download it for free.</a>

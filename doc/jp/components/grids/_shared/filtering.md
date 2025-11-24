@@ -992,10 +992,10 @@ $custom-input-group: input-group-theme(
 - `{ComponentName}` `filteringExpressions` プロパティは削除されます。代わりに `FilteringExpressionsTree` を使用してください。
 - `filter_multiple` メソッドは削除されました。`Filter` メソッドおよび `FilteringExpressionsTree` プロパティを代わりに使用してください。
 - `Filter` メソッドに新しいシグネチャがあります。以下のパラメーターを受け付けます。
-  * `Name` - フィルターする列の名前。
-  * `Value` - フィルタリングに使用する値。
-  * `ConditionOrExpressionTree` (オプション) - このパラメーターは、`FilteringOperation` または `FilteringExpressionsTree` 型のオブジェクトを受け付けます。簡単なフィルタリングが必要な場合、フィルタリング処理を引数として渡すことができます。高度なフィルタリングの場合、複雑なフィルタリング ロジックを含む式ツリーが引数として渡すことができます。
-  * `IgnoreCase` (オプション) - フィルタリングで大文字と小文字を区別するかどうか。
+  - `Name` - フィルターする列の名前。
+  - `Value` - フィルタリングに使用する値。
+  - `ConditionOrExpressionTree` (オプション) - このパラメーターは、`FilteringOperation` または `FilteringExpressionsTree` 型のオブジェクトを受け付けます。簡単なフィルタリングが必要な場合、フィルタリング処理を引数として渡すことができます。高度なフィルタリングの場合、複雑なフィルタリング ロジックを含む式ツリーが引数として渡すことができます。
+  - `IgnoreCase` (オプション) - フィルタリングで大文字と小文字を区別するかどうか。
 - `FilteringDone` イベントは、フィルター列のフィルタリング状態を含む型 `FilteringExpressionsTree` の 1 パラメーターのみになりました。
 - フィルター オペランド: `FilteringExpression` 条件プロパティは、フィルタリング状態メソッドに直接参照せずに `FilteringOperation` を参照するようになりました。
 - `ColumnComponent` は、`Filters` プロパティを公開し、`FilteringOperand` クラス参照を取得します。
@@ -1025,5 +1025,5 @@ $custom-input-group: input-group-theme(
 コミュニティに参加して新しいアイデアをご提案ください。
 
 - [{ProductName} **フォーラム (英語)**]({ForumsLink})
-- [{ProductName}  **GitHub (英語)**]({GithubLink})
+- [{ProductName} **GitHub (英語)**]({GithubLink})
 

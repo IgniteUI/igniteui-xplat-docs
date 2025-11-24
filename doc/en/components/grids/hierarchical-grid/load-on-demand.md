@@ -255,7 +255,7 @@ Next we will setup our hierarchical grid and connect it to our remote service pr
 
 ### Template defining
 
-First we will define our hierarchical grid template with the levels of hierarchy that we expect to have. We know that our root grid `PrimaryKey` for the customers is their `customerId`, for their orders on the first level -  `orderId` and respectively for order details - `productId`. Knowing each database table and their keys allows us to define our initial template:
+First we will define our hierarchical grid template with the levels of hierarchy that we expect to have. We know that our root grid `PrimaryKey` for the customers is their `customerId`, for their orders on the first level - `orderId` and respectively for order details - `productId`. Knowing each database table and their keys allows us to define our initial template:
 
 <!-- Angular -->
 ```html

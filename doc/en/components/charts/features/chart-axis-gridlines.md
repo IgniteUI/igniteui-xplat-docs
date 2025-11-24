@@ -65,7 +65,6 @@ The following example demonstrates a `XamDataChart` with the above dash array pr
 
 `sample="/charts/data-chart/dash-array-axes", height="450", alt="{Platform} Axis Dash Array Example"`
 
-
 <div class="divider--half"></div>
 
 ## {Platform} Axis Tickmarks Example

@@ -89,8 +89,6 @@ The following example demonstrates a data tooltip positioned to the top-right of
 
 `sample="/charts/category-chart/data-tooltip-positioning", height="450", alt="{Platform} Category Chart Data Tooltip Positioning Example"`
 
-
-
 ## {Platform} Data Tooltip Value Formatting
 
 The **DataToolTip** provides automatic abbreviation of large numbers using its `DataToolTipValueFormatAbbreviation` property. This adds a multiplier in the units column such as kilo, million, billion, etc. You can customize the number of fractional digits that are displayed by setting the `DataToolTipValueFormatMinFractions` and `DataToolTipValueFormatMaxFractions`. This will allow you to determine the minimum and maximum number of digits that appear after the decimal point, respectively.
