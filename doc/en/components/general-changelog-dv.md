@@ -82,7 +82,7 @@ Added `CompanionAxis` properties to the X and Y axis that allow you to quickly c
 
 There is a new property called `UseInsetOutlines` to control how outlines on the `RadialPieSeries` are rendered. Setting this value to **true** will inset the outlines within the slice shape, whereas a **false** (default) value will place the outlines half-in half-out along the edge of the slice shape.
 
-_Breaking Changes_
+**Breaking Changes**
 
 - A fix was made due to an issue where the `PlotAreaPosition` and `ChartPosition` properties on `ChartMouseEventArgs` class were reversed. This will change the values that `PlotAreaPosition` and `ChartPosition` return.
 
@@ -169,7 +169,7 @@ _Breaking Changes_
 
 ### {PackageGrids}
 
-_Breaking Changes_
+**Breaking Changes**
 
 - The 'igniteui-angular-grids' package has been renamed to 'igniteui-angular-data-grids'.
 

@@ -2,6 +2,7 @@
 title: Update Guide | Ignite UI for React | Infragistics
 _description: Check out this article on updating how to update to a newer version of the Ignite UI for React library.
 _keywords: ignite ui for react, update, npm package, material components
+mentionedTypes: ["Input", "Button"]
 ---
 
 # Update Guide
@@ -76,8 +77,8 @@ const pivotConfiguration: IgrPivotConfiguration = {
 ```
 
 - `IgrButton`
-  - _Breaking Changes_
+  - **Breaking Changes**
   - `clicked` event is removed. Use native `onClick` instead.
 - `IgrInput`
-  - _Breaking Changes_
+  - **Breaking Changes**
   - `inputOccurred` event is renamed to `onInput`

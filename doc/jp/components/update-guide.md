@@ -2,6 +2,7 @@
 title: アップデート ガイド | Ignite UI for React | インフラジスティックス
 _description: Ignite UI for React ライブラリの新しいバージョンに更新する方法については、この記事をご覧ください。
 _keywords: ignite ui for react, update, npm package, material components, アップデート, npm パッケージ, マテリアル コンポーネント
+mentionedTypes: ["Input", "Button"]
 _language: ja
 ---
 

@@ -18,7 +18,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerLatest}**
 
-_Breaking Changes_
+**Breaking Changes**
 
 As of the 2025.2 release, we no longer support .NET 6. This corresponds with the [Microsoft .NET Lifecycle, here](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/overview).
 
@@ -56,7 +56,7 @@ Ability for axis annotations to automatically detect collisions and truncate to 
 
 ### {PackageMaps} (Geographic Map)
 
-_Breaking Changes_
+**Breaking Changes**
 
 - `AzureMapsMapImagery` was renamed to `AzureMapsImagery`
 - `AzureMapsImageryStyle.Imagery` was renamed to `AzureMapsImageryStyle.Satellite`
@@ -95,7 +95,7 @@ Added `CompanionAxis` properties to the X and Y axis that allow you to quickly c
 
 There is a new property called `UseInsetOutlines` to control how outlines on the `RadialPieSeries` are rendered. Setting this value to **true** will inset the outlines within the slice shape, whereas a **false** (default) value will place the outlines half-in half-out along the edge of the slice shape.
 
-_Breaking Changes_
+**Breaking Changes**
 
 - A fix was made due to an issue where the `PlotAreaPosition` and `ChartPosition` properties on `ChartMouseEventArgs` class were reversed. This will change the values that `PlotAreaPosition` and `ChartPosition` return.
 
@@ -452,7 +452,7 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 
 - <label>PREVIEW</label> [Color Editor](inputs/color-editor.md) can be used as a standalone color picker and is now integrated into <label>PREVIEW</label> ToolAction of [Toolbar](menus/toolbar.md) component to update visualizations at runtime.
 
-_Breaking Changes_
+**Breaking Changes**
 
 - With the release of version 2024.2 and per the [Microsoft .NET lifecycle](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core), we no longer support .NET 3.1, .NET 5, or .NET 7.
 ## **{PackageVerChanges-24-2-NOV}**
@@ -496,7 +496,7 @@ _Breaking Changes_
 - `RadioGroup`
   - Added `Name` and `Value` properties. `Value` also supports two-way binding.
 
-_Breaking Changes_:
+**Breaking Changes**
 
 - Renamed old **IgbDatePicker** to **IgbXDatePicker**.
 - Removed `Form` component. Use native form instead.
@@ -542,7 +542,7 @@ _Breaking Changes_:
   - Keyboard navigation now can move in to row headers back and forth from any row dimension headers or column headers.
   - Added keyboard interactions for row dimension collapse using <kbd>ALT</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> arrows and row headers sorting using <kbd>CTRL</kbd> + <kbd>↑</kbd> <kbd>↓</kbd> arrows.
 
-_Breaking Changes_:
+**Breaking Changes**
 - **All Grids**
   - `RowIsland`
   - Removed `DisplayDensity` deprecated property.
