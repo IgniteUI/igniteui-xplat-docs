@@ -121,7 +121,7 @@ export class AppModule {}
 
 ### Data Binding
 
-The *{HierarchicalGridSelector}* derives from {GridSelector} and shares most of its functionality. The main difference is that it allows multiple levels of hierarchy to be defined. They are configured through a separate tag within the definition of *{HierarchicalGridSelector}*, called *{RowIslandSelector}*. The *{RowIslandSelector}* component defines the configuration for each child grid for the particular level. Multiple row islands per level are also supported.
+The **{HierarchicalGridSelector}** derives from {GridSelector} and shares most of its functionality. The main difference is that it allows multiple levels of hierarchy to be defined. They are configured through a separate tag within the definition of **{HierarchicalGridSelector}**, called **{RowIslandSelector}**. The **{RowIslandSelector}** component defines the configuration for each child grid for the particular level. Multiple row islands per level are also supported.
 The Hierarchical Grid supports two ways of binding to data:
 
 ### Using hierarchical data
@@ -201,7 +201,7 @@ public class SingersData : List<SingersDataItem>
     }
 }
 ```
-Each *{RowIslandSelector}* should specify the key of the property that holds the children data.
+Each **{RowIslandSelector}** should specify the key of the property that holds the children data.
 
 ```html
 <igx-hierarchical-grid #hierarchicalGrid [data]="singers" [autoGenerate]="true">
@@ -791,7 +791,7 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
  >[!NOTE]
  >If the component is using an [`Emulated`](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
  >[!NOTE]
- >Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements *outside of* our component:
+ >Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements outside of our component:
 
 ```scss
 :host {

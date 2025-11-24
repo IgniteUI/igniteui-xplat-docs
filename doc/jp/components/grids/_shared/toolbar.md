@@ -661,7 +661,7 @@ constructor() {
 }
 ```
 
-デフォルトの overlaySettings は、*ConnectedPositionStrategy* と *Absolute* スクロール方法を使用しています。*modal* は false に設定されており、*close on escape* ([Esc] キーを押して閉じる) インタラクションと *close on outside click* (外側のクリックで閉じる) インタラクションが有効になっています。
+デフォルトの overlaySettings は、**ConnectedPositionStrategy** と **Absolute** スクロール方法を使用しています。**modal** は false に設定されており、**close on escape** ([Esc] キーを押して閉じる) インタラクションと **close on outside click** (外側のクリックで閉じる) インタラクションが有効になっています。
 
 <!-- end: Angular -->
 

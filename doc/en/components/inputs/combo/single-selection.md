@@ -38,7 +38,7 @@ The main difference is that only one item can be selected at any time. For examp
 
 Here's how to select/deselect an item programmatically in a single selection combo.
 
-#### Selecting items
+### Selecting items
 
 <!-- WebComponents -->
 ```ts

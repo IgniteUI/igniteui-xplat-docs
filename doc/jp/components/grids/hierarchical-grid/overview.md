@@ -122,7 +122,7 @@ export class AppModule {}
 
 ### データ バインディング
 
-*{HierarchicalGridSelector}* は、{GridSelector} から派生し、ほとんどの機能を共有します。主要な違いは階層で複数レベルを定義できることです。*{RowIslandSelector}* と呼ばれる *{HierarchicalGridSelector}* の定義内の個別のタグで設定されます。*{RowIslandSelector}* コンポーネントは、特定レベルの各子グリッドの設定を定義します。レベルごとの複数行アイランドがサポートされます。
+**{HierarchicalGridSelector}** は、{GridSelector} から派生し、ほとんどの機能を共有します。主要な違いは階層で複数レベルを定義できることです。**{RowIslandSelector}** と呼ばれる **{HierarchicalGridSelector}** の定義内の個別のタグで設定されます。**{RowIslandSelector}** コンポーネントは、特定レベルの各子グリッドの設定を定義します。レベルごとの複数行アイランドがサポートされます。
 階層グリッドで 2 通りのデータ バインドがサポートされます。
 
 ### 階層データの使用
@@ -202,7 +202,7 @@ public class SingersData : List<SingersDataItem>
     }
 }
 ```
-各 *{RowIslandSelector}* は、子データを保持するプロパティのキーを指定します。
+各 **{RowIslandSelector}** は、子データを保持するプロパティのキーを指定します。
 
 ```html
 <igx-hierarchical-grid #hierarchicalGrid [data]="singers" [autoGenerate]="true">

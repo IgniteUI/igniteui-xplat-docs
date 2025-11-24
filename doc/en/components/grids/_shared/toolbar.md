@@ -661,7 +661,7 @@ constructor() {
 }
 ```
 
-The default overlaySettings are using *ConnectedPositionStrategy* with *Absolute* scroll strategy, *modal* set to false, with enabled *close on escape* and *close on outside click* interactions.
+The default overlaySettings are using **ConnectedPositionStrategy** with **Absolute** scroll strategy, **modal** set to false, with enabled **close on escape** and **close on outside click** interactions.
 
 <!-- end: Angular -->
 
