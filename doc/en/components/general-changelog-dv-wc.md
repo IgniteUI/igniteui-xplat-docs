@@ -54,7 +54,7 @@ Ability for axis annotations to automatically detect collisions and truncate to 
 
 ### {PackageGrids} (Grids)
 - `IgcGrid`, `IgcTreeGrid`, `IgcHierarchicalGrid`
-    - Introduced a new cell merging feature that allows you to configure and merge cells in a column based on same data or other custom condition, into a single cell.
+  - Introduced a new cell merging feature that allows you to configure and merge cells in a column based on same data or other custom condition, into a single cell.
 
         It can be enabled on the individual columns:
 
@@ -62,8 +62,8 @@ Ability for axis annotations to automatically detect collisions and truncate to 
         <igc-column field="field" merge="true"></igc-column>
         ```
         The merging can be configured on the grid level to apply either:
-        - `onSort` - only when the column is sorted.
-        - `always` - always, regardless of data operations.
+      - `onSort` - only when the column is sorted.
+      - `always` - always, regardless of data operations.
 
         ```html
         <igc-grid cellMergeMode="always">
@@ -76,7 +76,7 @@ Ability for axis annotations to automatically detect collisions and truncate to 
 
         It's possible also to set a `mergeComparer` on the individual columns, in case some custom handling is needed for a particular data field.
 
-    - Added ability to pin individual columns to a specific side (start or end of the grid), so that you can now have pinning from both sides. This can be done either declaratively by setting the `pinningPosition` property on the column:
+  - Added ability to pin individual columns to a specific side (start or end of the grid), so that you can now have pinning from both sides. This can be done either declaratively by setting the `pinningPosition` property on the column:
 
         ```html
         <igc-column field="Col1" pinned="true" pinningPosition="pinningPosition">
@@ -96,12 +96,12 @@ Ability for axis annotations to automatically detect collisions and truncate to 
 
         If property `pinningPosition` is not set on a column, the column will default to the position specified on the grid's `pinning` options for `columns`.
 
-    - **Sorting improvements**
-        - Improved sorting algorithm efficiency using Schwartzian transformation. This is a technique, also known as decorate-sort-undecorate, which avoids recomputing the sort keys by temporarily associating them with the original data records.
-        - Refactored sorting algorithms from recursive to iterative.
-    - **Groupby improvements**
-        - Refactored grouping algorithm from recursive to iterative.
-        - Optimized grouping operations.
+  - **Sorting improvements**
+      - Improved sorting algorithm efficiency using Schwartzian transformation. This is a technique, also known as decorate-sort-undecorate, which avoids recomputing the sort keys by temporarily associating them with the original data records.
+      - Refactored sorting algorithms from recursive to iterative.
+  - **Groupby improvements**
+      - Refactored grouping algorithm from recursive to iterative.
+      - Optimized grouping operations.
 
 
 
@@ -426,13 +426,13 @@ The following table lists the bug fixes made for the {ProductName} toolset for t
 
 - `Toolbar`
 
-    - New ToolActionCheckboxList
+  - New ToolActionCheckboxList
         A new CheckboxList ToolAction that displays a collection of items with checkboxes for selecting. A grid inside ToolAction CheckboxList grows in height up to 5 items, then a scrollbar is displayed.
         Requires IgcCheckboxListModule to be registered.
 
-    - New Filtering Support
+  - New Filtering Support
 
-    - Axis Field Changes
+  - Axis Field Changes
         New default IconMenu in Toolbar when targeting CategoryChart.
         Label fields are mapped to the X-axis and Value fields are mapped to the Y-axis.
         Target chart reacts in realtime to changes made. IconMenu is hidden when chart has no ItemsSource set.
@@ -495,7 +495,7 @@ _Breaking Changes_:
 ### {PackageGauges}
 
 - `XamRadialGauge`
-    - New label for the highlight needle. `HighlightLabelText` and `HighlightLabelSnapsToNeedlePivot` and many other styling related properties for the HighlightLabel were added.
+  - New label for the highlight needle. `HighlightLabelText` and `HighlightLabelSnapsToNeedlePivot` and many other styling related properties for the HighlightLabel were added.
 
 ## **{PackageVerChanges-23-2-MAR}**
 
@@ -612,10 +612,10 @@ _Breaking Changes_:
 - Added marker properties to StackedFragmentSeries.
 - Added `ShouldPanOnMaximumZoom` property.
 - New Category Axis Properties:
-    - ZoomMaximumCategoryRange
-    - ZoomMaximumItemSpan
-    - ZoomToCategoryRange
-    - ZoomToItemSpan
+  - ZoomMaximumCategoryRange
+  - ZoomMaximumItemSpan
+  - ZoomToCategoryRange
+  - ZoomToItemSpan
 - New [Chart Aggregation](charts/features/chart-data-aggregations.md) API for Grouping, Sorting and Summarizing Category string and numeric values, eliminating the need to pre-aggregate or calculate chart data:
   - InitialSortDescriptions
   - InitialSorts
@@ -649,9 +649,9 @@ _Breaking Changes_:
 - Added `AssigningCategoryStyle` event, is now available to all series in `XamDataChart`. This event is handled when you want to conditionally configure aspects of the series items such as `Fill` background-color and highlighting.
 - New `AllowedPositions` enumeration for CalloutLayer. Used to limit where the callouts are to be placed within the chart. By default, the callouts are intelligently placed in the best place but this used to force for example `TopLeft`, `TopRight`, `BottomLeft` or `BottomRight`.
 - New corner radius properties added for Annotation Layers; used to round-out the corners of each of the callouts. Note, a corner radius has now been added by default.
-    - `CalloutCornerRadius` for CalloutLayer
-    - `AxisAnnotationBackgroundCornerRadius` for FinalValueLayer
-    - `XAxisAnnotationBackgroundCornerRadius` and `YAxisAnnotationBackgroundCornerRadius` for CrosshairLayer
+  - `CalloutCornerRadius` for CalloutLayer
+  - `AxisAnnotationBackgroundCornerRadius` for FinalValueLayer
+  - `XAxisAnnotationBackgroundCornerRadius` and `YAxisAnnotationBackgroundCornerRadius` for CrosshairLayer
 - New `HorizontalViewScrollbarMode` and `VerticalViewScrollbarMode` enumeration to enable scrollbars in various ways. When paired with `IsVerticalZoomEnabled` or `IsHorizontalZoomEnabled`, you'll be able to persist or fade-in and out the scrollbars along the axes to navigate the chart.
 - New `FavorLabellingScaleEnd`, determines whether the axis should favor emitting a label at the end of the scale. Only compatible with numeric axes (e.g. `NumericXAxis`, `NumericYAxis`, `PercentChangeAxis`).
 - New `IsSplineShapePartOfRange` determines whether to include the spline shape in the axis range requested of the axis.
@@ -682,16 +682,16 @@ _Breaking Changes_:
 
 - `DataGrid`:
   - New Features Added:
-      - [Filter Row](grids/data-grid/column-filtering.md)
-      - [Load/Save Layout Customizations](grids/data-grid/load-save-layout.md)
-      - [GroupBy Area for column grouping](grids/data-grid/row-grouping.md)
-      - [Cell Merging](grids/data-grid/cell-merging.md)
+    - [Filter Row](grids/data-grid/column-filtering.md)
+    - [Load/Save Layout Customizations](grids/data-grid/load-save-layout.md)
+    - [GroupBy Area for column grouping](grids/data-grid/row-grouping.md)
+    - [Cell Merging](grids/data-grid/cell-merging.md)
   - New API:
-      - Added `SelectionChanged` event. Used to detect changes on selection interactions
+    - Added `SelectionChanged` event. Used to detect changes on selection interactions
        e.g. Multiple row selection.
   - Breaking Changes:
-      - Changed grid's SummaryScope property's type to SummaryScope from `DataSourceSummaryScope`
-      - Changed GroupHeaderDisplayMode property's type to GroupHeaderDisplayMode from `DataSourceSectionHeaderDisplayMode`
+    - Changed grid's SummaryScope property's type to SummaryScope from `DataSourceSummaryScope`
+    - Changed GroupHeaderDisplayMode property's type to GroupHeaderDisplayMode from `DataSourceSectionHeaderDisplayMode`
 
 
 > [!Note]
@@ -742,9 +742,9 @@ This release introduces a few improvements and simplifications to visual design 
   - Added `EnterKeyBehaviorAfterEdit` property - While in edit-mode, this property controls when enter is pressed, e.g. Options are (moves to the cell below, above, right, left)
   - Added `SelectAllRows` - method.
   - Added Row Range Selection - With `GridSelectionMode` property set to MultipleRow the following new functionality is now included:
-    - Click and drag to select rows
-    - <kbd>SHIFT</kbd> and click to select multiple rows.
-    - <kbd>SHIFT</kbd> and press the <kbd>↑</kbd> + <kbd>↓</kbd> arrow keys to select multiple rows.
+  - Click and drag to select rows
+  - <kbd>SHIFT</kbd> and click to select multiple rows.
+  - <kbd>SHIFT</kbd> and press the <kbd>↑</kbd> + <kbd>↓</kbd> arrow keys to select multiple rows.
   - Pressing space bar toggles selection of active row via `GridSelectionMode` property set to MultipleRow or SingleRow
   - Added Column Summaries to Column Options Dialog.
 
@@ -786,21 +786,21 @@ This release introduces several new and improved visual design and configuration
 - Changed marker's fill to match the marker's outline for `PointSeries`, `BubbleSeries`, `ScatterSeries`, `PolarScatterSeries`. You can use set `MarkerFillMode` property to Normal to undo this change
 - Compressed labelling for the `TimeXAxis` and `OrdinalTimeXAxis`
 - New Marker Properties:
-    - series.`MarkerFillMode` - Can be set to `MatchMarkerOutline` so the marker depends on the outline
-    - series.`MarkerFillOpacity` - Can be set to a value 0 to 1
-    - series.`MarkerOutlineMode` - Can be set to `MatchMarkerBrush` so the marker's outline depends on the fill brush color
+  - series.`MarkerFillMode` - Can be set to `MatchMarkerOutline` so the marker depends on the outline
+  - series.`MarkerFillOpacity` - Can be set to a value 0 to 1
+  - series.`MarkerOutlineMode` - Can be set to `MatchMarkerBrush` so the marker's outline depends on the fill brush color
 - New Series Property:
-    - series.`OutlineMode` - Can be set to toggle the series outline visibility. Note, for Data Chart, the property is on the series
+  - series.`OutlineMode` - Can be set to toggle the series outline visibility. Note, for Data Chart, the property is on the series
 - New chart properties that define bleed over area introduced into the viewport when the chart is at the default zoom level. A common use case is to provide space between the axes and first/last data points. Note, the `ComputedPlotAreaMarginMode`, listed below, will automatically set the margin when markers are enabled. The others are designed to specify a `Double` to represent the thickness, where PlotAreaMarginLeft etc. adjusts the space to all four sides of the chart:
-    - chart.`PlotAreaMarginLeft`
-    - chart.`PlotAreaMarginTop`
-    - chart.`PlotAreaMarginRight`
-    - chart.`PlotAreaMarginBottom`
-    - chart.`ComputedPlotAreaMarginMode`
+  - chart.`PlotAreaMarginLeft`
+  - chart.`PlotAreaMarginTop`
+  - chart.`PlotAreaMarginRight`
+  - chart.`PlotAreaMarginBottom`
+  - chart.`ComputedPlotAreaMarginMode`
 - New Highlighting Properties
-    - chart.`HighlightingMode` - Sets whether hovered or non-hovered series to fade, brighten
-    - chart.`HighlightingBehavior` - Sets whether the series highlights depending on mouse position e.g. directly over or nearest item
-    - Note, in previous releases the highlighting was limited to fade on hover.
+  - chart.`HighlightingMode` - Sets whether hovered or non-hovered series to fade, brighten
+  - chart.`HighlightingBehavior` - Sets whether the series highlights depending on mouse position e.g. directly over or nearest item
+  - Note, in previous releases the highlighting was limited to fade on hover.
 - Added Highlighting Stacked, Scatter, Polar, Radial, and Shape series:
 - Added Annotation layers to Stacked, Scatter, Polar, Radial, and Shape series:
 - Added support for overriding the data source of individual stack fragments within a stacked series

@@ -399,6 +399,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 <!-- end: Angular -->
 
 ## API References
+
 - `{ComponentName}`
 - `Paginator`
 

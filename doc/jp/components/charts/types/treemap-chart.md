@@ -109,9 +109,9 @@ _language: ja
 - `HighlightedValueMemberPath`: ハイライト表示された値が読み取られるデータ ソース内のプロパティの名前を指定します。
 - `HighlightedValueOpacity`: ハイライト表示された値の背後にある通常の値の不透明度を制御します。
 - `HighlightedValuesDisplayMode`: ハイライト表示された値を有効または無効にします。
-    - Auto: ツリーマップによって、使用するモードが決まります。
-    - Overlay: ツリーマップには、通常の値の上にハイライト表示された値が表示され、通常の値にはわずかに不透明度が適用されます。
-    - Hidden: ツリーマップにはハイライト表示された値は表示されません。
+  - Auto: ツリーマップによって、使用するモードが決まります。
+  - Overlay: ツリーマップには、通常の値の上にハイライト表示された値が表示され、通常の値にはわずかに不透明度が適用されます。
+  - Hidden: ツリーマップにはハイライト表示された値は表示されません。
 
 `sample="/charts/tree-map/highlighting-percent-based", height="600", alt="{Platform} ツリーマップのパーセントベースのハイライト"`
 

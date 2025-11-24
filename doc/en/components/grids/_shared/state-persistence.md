@@ -1145,6 +1145,7 @@ state.applyState(gridState.columnSelection);
 
 <!-- ComponentStart: Grid -->
 ## Additional Resources
+
 - [Paging](paging.md)
 - [Filtering](filtering.md)
 - [Sorting](sorting.md)

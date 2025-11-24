@@ -246,17 +246,17 @@ The following properties of these components are now nullable:
 ### Changes
 
 - A number of enumerations have been renamed and/or merged with others. Renames (with affected components):
-    - `BaseAlertLikePosition` (`Snackbar` and `Toast`) has been renamed to `AbsolutePosition`
-    - `ButtonGroupAlignment` (`ButtonGroup`), `CalendarOrientation` (`Calendar`), `CardActionsOrientation` (`CardActions`), `DatePickerOrientation` (`DatePicker`), `RadioGroupAlignment` (`RadioGroup`) have been merged and renamed to `ContentOrientation`
-    - `CalendarBaseSelection` (`Calendar`) has been renamed to `CalendarSelection`
-    - `CarouselAnimationType` (`Carousel`) and `StepperHorizontalAnimation` (`Stepper`) have been merged and renamed to `HorizontalTransitionAnimation`
-    - `CheckboxBaseLabelPosition` (`Checkbox` and `Switch`) and `RadioLabelPosition` (`Radio`) have been merged and renamed to `ToggleLabelPosition`
-    - `DatePickerMode` (`DatePicker`) has been renamed to `PickerMode`
-    - `DatePickerHeaderOrientation` (`DatePicker`) has been renamed to/merged with `CalendarHeaderOrientation`
-    - `DropdownPlacement` (`Dropdown` and `Select`) has been renamed to `PopoverPlacement`
-    - `DropdownScrollStrategy` (`Dropdown`) and `SelectScrollStrategy` (`Select`) have been merged and renamed to `PopoverScrollStrategy`
-    - `SliderBaseTickOrientation` (`Slider` and `RangeSlider`) has been renamed to `SliderTickOrientation`
-    - `TickLabelRotation` (`Slider` and `RangeSlider`) has been renamed to `SliderTickLabelRotation`
+  - `BaseAlertLikePosition` (`Snackbar` and `Toast`) has been renamed to `AbsolutePosition`
+  - `ButtonGroupAlignment` (`ButtonGroup`), `CalendarOrientation` (`Calendar`), `CardActionsOrientation` (`CardActions`), `DatePickerOrientation` (`DatePicker`), `RadioGroupAlignment` (`RadioGroup`) have been merged and renamed to `ContentOrientation`
+  - `CalendarBaseSelection` (`Calendar`) has been renamed to `CalendarSelection`
+  - `CarouselAnimationType` (`Carousel`) and `StepperHorizontalAnimation` (`Stepper`) have been merged and renamed to `HorizontalTransitionAnimation`
+  - `CheckboxBaseLabelPosition` (`Checkbox` and `Switch`) and `RadioLabelPosition` (`Radio`) have been merged and renamed to `ToggleLabelPosition`
+  - `DatePickerMode` (`DatePicker`) has been renamed to `PickerMode`
+  - `DatePickerHeaderOrientation` (`DatePicker`) has been renamed to/merged with `CalendarHeaderOrientation`
+  - `DropdownPlacement` (`Dropdown` and `Select`) has been renamed to `PopoverPlacement`
+  - `DropdownScrollStrategy` (`Dropdown`) and `SelectScrollStrategy` (`Select`) have been merged and renamed to `PopoverScrollStrategy`
+  - `SliderBaseTickOrientation` (`Slider` and `RangeSlider`) has been renamed to `SliderTickOrientation`
+  - `TickLabelRotation` (`Slider` and `RangeSlider`) has been renamed to `SliderTickLabelRotation`
 - `Tabs`
 
   Simplified configuration by removing the need to define separate panel and linking the panel and tab header. The `Panel` property and the `IgbTabPanel` itself have been removed. Content can be now assigned directly to the `Tab` and header text can be set conveniently via the new `Label` property or by projecting an element to `slot="label"` for more involved customization.
@@ -294,15 +294,15 @@ The following properties of these components are now nullable:
     </IgbTabs>
     ```
 - `Input`
-    - `Min` & `Max` are now `double` instead of `string`
+  - `Min` & `Max` are now `double` instead of `string`
 - `Stepper`
-    - `ActiveStepChangingArgsEventArgs` has been renamed to `ActiveStepChangingEventArgs`
-    - `ActiveStepChangedArgsEventArgs` has been renamed to `ActiveStepChangedEventArgs`
-    - `StepperTitlePosition` now defaults to `Auto` to correctly reflect the default behavior
+  - `ActiveStepChangingArgsEventArgs` has been renamed to `ActiveStepChangingEventArgs`
+  - `ActiveStepChangedArgsEventArgs` has been renamed to `ActiveStepChangedEventArgs`
+  - `StepperTitlePosition` now defaults to `Auto` to correctly reflect the default behavior
 - `Tree`
-    - `TreeSelectionChangeEventArgs` has been renamed to `TreeSelectionEventArgs`
+  - `TreeSelectionChangeEventArgs` has been renamed to `TreeSelectionEventArgs`
 - `Textarea`
-    - `Autocapitalize` & `InputMode` are now `string` properties instead of explicit enums
+  - `Autocapitalize` & `InputMode` are now `string` properties instead of explicit enums
 
 ### {PackageGrids} (Grids)
 
@@ -469,13 +469,13 @@ _Breaking Changes_
 
 - `Toolbar`
 
-    - New ToolActionCheckboxList
+  - New ToolActionCheckboxList
         A new CheckboxList ToolAction that displays a collection of items with checkboxes for selecting. A grid inside ToolAction CheckboxList grows in height up to 5 items, then a scrollbar is displayed.
         Requires IgbCheckboxListModule to be registered.
 
-    - New Filtering Support
+  - New Filtering Support
 
-    - Axis Field Changes
+  - Axis Field Changes
         New default IconMenu in Toolbar when targeting CategoryChart.
         Label fields are mapped to the X-axis and Value fields are mapped to the Y-axis.
         Target chart reacts in realtime to changes made. IconMenu is hidden when chart has no ItemsSource set.
@@ -588,7 +588,7 @@ The type of Values from `PivotConfiguration` option is now array of IgbPivotValu
 ### {PackageGauges} (Gauges)
 
 - `XamRadialGauge`
-    - New label for the highlight needle. `HighlightLabelText` and `HighlightLabelSnapsToNeedlePivot` and many other styling related properties for the HighlightLabel were added.
+  - New label for the highlight needle. `HighlightLabelText` and `HighlightLabelSnapsToNeedlePivot` and many other styling related properties for the HighlightLabel were added.
 
 ## **{PackageVerChanges-23-2-APR2}**
 
@@ -597,11 +597,11 @@ The type of Values from `PivotConfiguration` option is now array of IgbPivotValu
 Data Filtering via the `InitialFilter` property. Apply filter expressions to filter the chart data to a subset of records. Can be used for drill down large data.
 
 - `XamBulletGraph`
-    - The Performance bar will now reflect a difference between the value and new `HighlightValue` when the `HighlightValueDisplayMode` is applied to the 'Overlay' setting. The highlight value will show a filtered/subset measured percentage as a filled in color while the remaining bar's appearance will appear faded to the assigned value, illustrating the performance in real-time.
+  - The Performance bar will now reflect a difference between the value and new `HighlightValue` when the `HighlightValueDisplayMode` is applied to the 'Overlay' setting. The highlight value will show a filtered/subset measured percentage as a filled in color while the remaining bar's appearance will appear faded to the assigned value, illustrating the performance in real-time.
 - `XamLinearGauge`
-    - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear.
+  - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear.
 - `XamRadialGauge`
-    - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear.
+  - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear.
 
 ## **{PackageVerChanges-23-2-APR}**
 
@@ -618,21 +618,21 @@ Data Filtering via the `InitialFilter` property. Apply filter expressions to fil
 ### New Features
 
 - `DockManager`
-    - New `ProximityDock` property. If enabled, docking indicators are not visible and the end user can dock the dragged pane by dragging it close to the target pane edges.
-    - New `ContainedInBoundaries` property. Determines whether the floating panes are kept inside the Dock Manager boundaries. Defaults to `false`.
-    - New `ShowPaneHeaders` property. Determines whether pane headers are only shown on hover or always visible. Defaults to `always`.
+  - New `ProximityDock` property. If enabled, docking indicators are not visible and the end user can dock the dragged pane by dragging it close to the target pane edges.
+  - New `ContainedInBoundaries` property. Determines whether the floating panes are kept inside the Dock Manager boundaries. Defaults to `false`.
+  - New `ShowPaneHeaders` property. Determines whether pane headers are only shown on hover or always visible. Defaults to `always`.
 - `Tree`
-    - Added `toggleNodeOnClick` property that determines whether clicking over a node will change its expanded state or not. Defaults to `false`.
+  - Added `toggleNodeOnClick` property that determines whether clicking over a node will change its expanded state or not. Defaults to `false`.
 - `Rating`
-    - `allowReset` added. When enabled selecting the same value will reset the component. **Behavioral change** - In previous releases this was the default behavior of the rating component. Make sure to set `allowReset` if you need to keep this behavior in your application.
+  - `allowReset` added. When enabled selecting the same value will reset the component. **Behavioral change** - In previous releases this was the default behavior of the rating component. Make sure to set `allowReset` if you need to keep this behavior in your application.
 - `Select`, `Dropdown`
-    - exposed `selectedItem`, `items` and `groups` getters
+  - exposed `selectedItem`, `items` and `groups` getters
 - `XamRadialGauge`
-    - New title/subtitle properties. `TitleText`, `SubtitleText` will appear near the bottom the gauge. In addition, the various title/subtitle font properties were added such as `TitleFontSize`, `TitleFontFamily`, `TitleFontStyle`, `TitleFontWeight` and `TitleExtent`. Finally, the new `TitleDisplaysValue` will allow the value to correspond with the needle's position.
-    - New `OpticalScalingEnabled` and `OpticalScalingSize` properties for the `XamRadialGauge`. This new feature will manage the size at which labels, titles, and subtitles of the gauge have 100% optical scaling. You can read more about this new feature in this [topic](radial-gauge.md#optical-scaling)
-    - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear.
+  - New title/subtitle properties. `TitleText`, `SubtitleText` will appear near the bottom the gauge. In addition, the various title/subtitle font properties were added such as `TitleFontSize`, `TitleFontFamily`, `TitleFontStyle`, `TitleFontWeight` and `TitleExtent`. Finally, the new `TitleDisplaysValue` will allow the value to correspond with the needle's position.
+  - New `OpticalScalingEnabled` and `OpticalScalingSize` properties for the `XamRadialGauge`. This new feature will manage the size at which labels, titles, and subtitles of the gauge have 100% optical scaling. You can read more about this new feature in this [topic](radial-gauge.md#optical-scaling)
+  - New highlight needle was added. `HighlightValue` and `HighlightValueDisplayMode` when both are provided a value and 'Overlay' setting, this will make the main needle to appear faded and a new needle will appear.
 - `XamRadialChart`
-    - New Label Mode
+  - New Label Mode
         The `CategoryAngleAxis` for the now exposes a `LabelMode` property that allows you to further configure the location of the labels. This allows you to toggle between the default mode by selecting the `Center` enum, or use the new mode, `ClosestPoint`, which will bring the labels closer to the circular plot area.
 
 ### General
@@ -652,9 +652,9 @@ Data Filtering via the `InitialFilter` property. Apply filter expressions to fil
     }
     ```
 - `DateTimeInput`
-    - `MinValue` and `MaxValue` properties have been deprecated. Please, use `Min` and `Max` instead.
+  - `MinValue` and `MaxValue` properties have been deprecated. Please, use `Min` and `Max` instead.
 - `RangeSlider`
-    - `AriaLabelLower` and `AriaLabelUpper` properties have been deprecated. Please, use `ThumbLabelLower` and `ThumbLabelUpper` instead.
+  - `AriaLabelLower` and `AriaLabelUpper` properties have been deprecated. Please, use `ThumbLabelLower` and `ThumbLabelUpper` instead.
 
 ### Removed
 
@@ -757,10 +757,10 @@ Added significant improvements to default behaviors, and refined the Category Ch
 - Added marker properties to StackedFragmentSeries.
 - Added `ShouldPanOnMaximumZoom` property.
 - New Category Axis Properties:
-    - ZoomMaximumCategoryRange
-    - ZoomMaximumItemSpan
-    - ZoomToCategoryRange
-    - ZoomToItemSpan
+  - ZoomMaximumCategoryRange
+  - ZoomMaximumItemSpan
+  - ZoomToCategoryRange
+  - ZoomToItemSpan
 - New [Chart Aggregation](charts/features/chart-data-aggregations.md) API for Grouping, Sorting and Summarizing Category string and numeric values, eliminating the need to pre-aggregate or calculate chart data:
   - InitialSortDescriptions
   - InitialSorts
@@ -795,9 +795,9 @@ Added significant improvements to default behaviors, and refined the Category Ch
 - Added `AssigningCategoryStyle` event, is now available to all series in `XamDataChart`. This event is handled when you want to conditionally configure aspects of the series items such as `Fill` background-color and highlighting.
 - New `AllowedPositions` enumeration for CalloutLayer. Used to limit where the callouts are to be placed within the chart. By default, the callouts are intelligently placed in the best place but this used to force for example `TopLeft`, `TopRight`, `BottomLeft` or `BottomRight`.
 - New corner radius properties added for Annotation Layers; used to round-out the corners of each of the callouts. Note, a corner radius has now been added by default.
-    - `CalloutCornerRadius` for CalloutLayer
-    - `AxisAnnotationBackgroundCornerRadius` for FinalValueLayer
-    - `XAxisAnnotationBackgroundCornerRadius` and `YAxisAnnotationBackgroundCornerRadius` for CrosshairLayer
+  - `CalloutCornerRadius` for CalloutLayer
+  - `AxisAnnotationBackgroundCornerRadius` for FinalValueLayer
+  - `XAxisAnnotationBackgroundCornerRadius` and `YAxisAnnotationBackgroundCornerRadius` for CrosshairLayer
 - New `HorizontalViewScrollbarMode` and `VerticalViewScrollbarMode` enumeration to enable scrollbars in various ways. When paired with `IsVerticalZoomEnabled` or `IsHorizontalZoomEnabled`, you'll be able to persist or fade-in and out the scrollbars along the axes to navigate the chart.
 - New `FavorLabellingScaleEnd`, determines whether the axis should favor emitting a label at the end of the scale. Only compatible with numeric axes (e.g. `NumericXAxis`, `NumericYAxis`, `PercentChangeAxis`).
 - New `IsSplineShapePartOfRange` determines whether to include the spline shape in the axis range requested of the axis.
@@ -901,16 +901,16 @@ This release introduces a few improvements and simplifications to visual design 
 ### {PackageGrids} (Data Grid)
 
 - New Features Added:
-    - [Filter Row](grids/data-grid/column-filtering.md)
-    - [Load/Save Layout Customizations](grids/data-grid/load-save-layout.md)
-    - [GroupBy Area for column grouping](grids/data-grid/row-grouping.md)
-    - [Cell Merging](grids/data-grid/cell-merging.md)
+  - [Filter Row](grids/data-grid/column-filtering.md)
+  - [Load/Save Layout Customizations](grids/data-grid/load-save-layout.md)
+  - [GroupBy Area for column grouping](grids/data-grid/row-grouping.md)
+  - [Cell Merging](grids/data-grid/cell-merging.md)
 - New API:
-    - Added `SelectionChanged` event. Used to detect changes on selection interactions
+  - Added `SelectionChanged` event. Used to detect changes on selection interactions
      e.g. Multiple row selection.
 - Breaking Changes:
-    - Changed grid's SummaryScope property's type to SummaryScope from `DataSourceSummaryScope`
-    - Changed GroupHeaderDisplayMode property's type to GroupHeaderDisplayMode from `DataSourceSectionHeaderDisplayMode`
+  - Changed grid's SummaryScope property's type to SummaryScope from `DataSourceSummaryScope`
+  - Changed GroupHeaderDisplayMode property's type to GroupHeaderDisplayMode from `DataSourceSectionHeaderDisplayMode`
 
 ## **{PackageVerChanges-21-1}**
 ### New Visual Designs
@@ -927,21 +927,21 @@ This release introduces several new and improved visual design and configuration
 - Changed marker's fill to match the marker's outline for `PointSeries`, `BubbleSeries`, `ScatterSeries`, `PolarScatterSeries`. You can use set `MarkerFillMode` property to Normal to undo this change
 - Compressed labelling for the `TimeXAxis` and `OrdinalTimeXAxis`
 - New Marker Properties:
-    - series.`MarkerFillMode` - Can be set to `MatchMarkerOutline` so the marker depends on the outline
-    - series.`MarkerFillOpacity` - Can be set to a value 0 to 1
-    - series.`MarkerOutlineMode` - Can be set to `MatchMarkerBrush` so the marker's outline depends on the fill brush color
+  - series.`MarkerFillMode` - Can be set to `MatchMarkerOutline` so the marker depends on the outline
+  - series.`MarkerFillOpacity` - Can be set to a value 0 to 1
+  - series.`MarkerOutlineMode` - Can be set to `MatchMarkerBrush` so the marker's outline depends on the fill brush color
 - New Series Property:
-    - series.`OutlineMode` - Can be set to toggle the series outline visibility. Note, for Data Chart, the property is on the series
+  - series.`OutlineMode` - Can be set to toggle the series outline visibility. Note, for Data Chart, the property is on the series
 - New chart properties that define bleed over area introduced into the viewport when the chart is at the default zoom level. A common use case is to provide space between the axes and first/last data points. Note, the `ComputedPlotAreaMarginMode`, listed below, will automatically set the margin when markers are enabled. The others are designed to specify a `Double` to represent the thickness, where PlotAreaMarginLeft etc. adjusts the space to all four sides of the chart:
-    - chart.`PlotAreaMarginLeft`
-    - chart.`PlotAreaMarginTop`
-    - chart.`PlotAreaMarginRight`
-    - chart.`PlotAreaMarginBottom`
-    - chart.`ComputedPlotAreaMarginMode`
+  - chart.`PlotAreaMarginLeft`
+  - chart.`PlotAreaMarginTop`
+  - chart.`PlotAreaMarginRight`
+  - chart.`PlotAreaMarginBottom`
+  - chart.`ComputedPlotAreaMarginMode`
 - New Highlighting Properties
-    - chart.`HighlightingMode` - Sets whether hovered or non-hovered series to fade, brighten
-    - chart.`HighlightingBehavior` - Sets whether the series highlights depending on mouse position e.g. directly over or nearest item
-    - Note, in previous releases the highlighting was limited to fade on hover.
+  - chart.`HighlightingMode` - Sets whether hovered or non-hovered series to fade, brighten
+  - chart.`HighlightingBehavior` - Sets whether the series highlights depending on mouse position e.g. directly over or nearest item
+  - Note, in previous releases the highlighting was limited to fade on hover.
 - Added Highlighting Stacked, Scatter, Polar, Radial, and Shape series:
 - Added Annotation layers to Stacked, Scatter, Polar, Radial, and Shape series:
 - Added support for overriding the data source of individual stack fragments within a stacked series
@@ -984,9 +984,9 @@ for example:
 - Added `EnterKeyBehaviorAfterEdit` property - While in edit-mode, this property controls when enter is pressed, e.g. Options are (moves to the cell below, above, right, left)
 - Added `SelectAllRows` - method.
 - Added Row Range Selection - With `GridSelectionMode` property set to MultipleRow the following new functionality is now included:
-    - Click and drag to select rows
-    - <kbd>SHIFT</kbd> and click to select multiple rows.
-    - <kbd>SHIFT</kbd> and press the <kbd>↑</kbd> + <kbd>↓</kbd> arrow keys to select multiple rows.
+  - Click and drag to select rows
+  - <kbd>SHIFT</kbd> and click to select multiple rows.
+  - <kbd>SHIFT</kbd> and press the <kbd>↑</kbd> + <kbd>↓</kbd> arrow keys to select multiple rows.
 - Pressing space bar toggles selection of active row via `GridSelectionMode` property set to MultipleRow or SingleRow
 - Added Column Summaries to Column Options Dialog.
 

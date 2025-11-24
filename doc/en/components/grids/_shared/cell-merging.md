@@ -298,9 +298,11 @@ Due to the specific behavior of merged cells it has to be noted how exactly it t
 <!-- ComponentEnd: Grid -->
 
 ## API References
+
 - `{ComponentName}`
 
 ## Additional Resources
+
 - [Filtering](filtering.md)
 - [Excel Style Filtering](excel-style-filtering.md)
 - [Virtualization and Performance](virtualization.md)

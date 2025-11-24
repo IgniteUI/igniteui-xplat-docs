@@ -18,7 +18,7 @@ _language: ja
 
 ### {PackageGrids} (グリッド)
 - `IgrGrid`、`IgrTreeGrid`、`IgrHierarchicalGrid`
-    - 同じデータまたはその他のカスタム条件に基づいて列内のセルを 1 つのセルに構成および結合できる新しいセル結合機能を追加しました。
+  - 同じデータまたはその他のカスタム条件に基づいて列内のセルを 1 つのセルに構成および結合できる新しいセル結合機能を追加しました。
 
         個々の列で有効化できます:
 
@@ -26,8 +26,8 @@ _language: ja
         <IgrColumn field="field" merge={true}></IgrColumn>
         ```
         グリッド レベルで以下のいずれかの設定が可能です:
-        - `onSort` - 列がソートされたときのみ結合。
-        - `always` - データ操作に関わらず常に結合。
+      - `onSort` - 列がソートされたときのみ結合。
+      - `always` - データ操作に関わらず常に結合。
 
         ```tsx
         <IgrGrid cellMergeMode="always">
@@ -40,7 +40,7 @@ _language: ja
 
         特定のデータ フィールドに対してカスタム処理が必要な場合には、個々の列に `mergeComparer` を設定することもできます。
 
-    - 列をグリッドの特定の側 (先頭または末尾) にピン固定できるようになりました。これにより、両側からのピン固定が可能です。これは、列の `pinningPosition` プロパティを宣言的に設定することで実行できます。
+  - 列をグリッドの特定の側 (先頭または末尾) にピン固定できるようになりました。これにより、両側からのピン固定が可能です。これは、列の `pinningPosition` プロパティを宣言的に設定することで実行できます。
 
         ```tsx
         <IgrColumn field="Col1" pinned={true} pinningPosition="pinningPosition">
@@ -60,12 +60,12 @@ _language: ja
 
         列にプロパティ `pinningPosition` が設定されていない場合、列はグリッドの `columns` の `pinning` オプションで指定された位置にデフォルト設定されます。
 
-    - **ソートの改善**
-        - Schwartzian Transformation を用いてソート アルゴリズムの効率を改善しました。この手法 (decorate-sort-undecorate とも呼ばれる) は、ソート キーを一時的に元データに関連付けることで再計算を回避します。
-        - ソート アルゴリズムを再帰型から反復型にリファクタリングしました。
-    - **グループ化の改善**
-        - グループ化アルゴリズムを再帰型から反復型にリファクタリングしました。
-        - グループ化処理を最適化しました。
+  - **ソートの改善**
+      - Schwartzian Transformation を用いてソート アルゴリズムの効率を改善しました。この手法 (decorate-sort-undecorate とも呼ばれる) は、ソート キーを一時的に元データに関連付けることで再計算を回避します。
+      - ソート アルゴリズムを再帰型から反復型にリファクタリングしました。
+  - **グループ化の改善**
+      - グループ化アルゴリズムを再帰型から反復型にリファクタリングしました。
+      - グループ化処理を最適化しました。
 
 ### バグ修正
 | バグ修正 | コントロール | 説明 |
@@ -470,13 +470,13 @@ DashboardTile <label>PREVIEW</label>
 
 - `Toolbar`
 
-    - 新しい ToolActionCheckboxList。
+  - 新しい ToolActionCheckboxList。
         選択用のチェックボックスを備えた項目のコレクションを表示する新しい CheckboxList ToolAction。ToolAction CheckboxList 内のグリッドの高さは 5 項目まで大きくなり、その後スクロールバーが表示されます。
         IgrCheckboxListModule を登録する必要があります。
 
-    - 新しいフィルタリングのサポート。
+  - 新しいフィルタリングのサポート。
 
-    - 軸フィールドの変更。
+  - 軸フィールドの変更。
         CategoryChart をターゲットにする場合のツールバーの新しいデフォルトの IconMenu。
         ラベル フィールドは X 軸にマップされ、値フィールドは Y 軸にマップされます。
         ターゲット チャートは、行われた変更にリアルタイムで反応します。チャートに ItemsSource が設定されていない場合、IconMenu は非表示になります。
@@ -589,7 +589,7 @@ _重大な変更_:
 ### {PackageGauges} (ゲージ)
 
 - `XamRadialGauge`
-    - ハイライト針の新しいラベル。`HighlightLabelText` と `HighlightLabelSnapsToNeedlePivot` および、その他の HighlightLabel の多くのスタイル関連プロパティが追加されました。
+  - ハイライト針の新しいラベル。`HighlightLabelText` と `HighlightLabelSnapsToNeedlePivot` および、その他の HighlightLabel の多くのスタイル関連プロパティが追加されました。
 
 ## **{PackageVerChanges-23-2-MAR}**
 
@@ -598,7 +598,7 @@ _重大な変更_:
 - `InitialFilter` プロパティによる新しいデータ フィルタリング。フィルター式を適用して、チャート データをレコードのサブセットにフィルターします。大規模なデータのドリルダウンに使用できます。
 
 - `XamRadialChart`
-    - 新しいラベル モード
+  - 新しいラベル モード
         `CategoryAngleAxis` は、ラベルの位置をさらに構成できる `LabelMode` プロパティを公開するようになりました。これにより、`Center` 列挙型を選択してデフォルト モードを切り替えることも、ラベルを円形のプロット領域に近づける新しいモード `ClosestPoint` を使用することもできます。
 
 ### {PackageGrids}
@@ -608,33 +608,33 @@ _重大な変更_:
 ### {PackageGauges}
 
 - `XamRadialGauge`
-    - 新しいタイトル/サブタイトルのプロパティ。`TitleText`、`SubtitleText` はゲージの下部近くに表示されます。さらに、`TitleFontSize`、`TitleFontFamily`、`TitleFontStyle`、`TitleFontWeight`、`TitleExtent` など、さまざまなタイトルとサブタイトルのフォント プロパティが追加されました。最後に、新しい `TitleDisplaysValue` により、値を針の位置に対応させることができます。
-    - `XamRadialGauge` の新しい `OpticalScalingEnabled` プロパティと `OpticalScalingSize` プロパティ。この新機能は、ゲージのラベル、タイトル、サブタイトルが 100% のオプティカル スケーリングを持つサイズを管理します。この新機能の詳細については、[こちら](radial-gauge.md#オプティカル-スケーリング)を参照してください。
-    - 新しいハイライト針が追加されました。`HighlightValue` と `HighlightValueDisplayMode` の両方に値と 'Overlay' 設定が指定されたとき、メインの針が薄く表示され、新しい針が表示されます。
+  - 新しいタイトル/サブタイトルのプロパティ。`TitleText`、`SubtitleText` はゲージの下部近くに表示されます。さらに、`TitleFontSize`、`TitleFontFamily`、`TitleFontStyle`、`TitleFontWeight`、`TitleExtent` など、さまざまなタイトルとサブタイトルのフォント プロパティが追加されました。最後に、新しい `TitleDisplaysValue` により、値を針の位置に対応させることができます。
+  - `XamRadialGauge` の新しい `OpticalScalingEnabled` プロパティと `OpticalScalingSize` プロパティ。この新機能は、ゲージのラベル、タイトル、サブタイトルが 100% のオプティカル スケーリングを持つサイズを管理します。この新機能の詳細については、[こちら](radial-gauge.md#オプティカル-スケーリング)を参照してください。
+  - 新しいハイライト針が追加されました。`HighlightValue` と `HighlightValueDisplayMode` の両方に値と 'Overlay' 設定が指定されたとき、メインの針が薄く表示され、新しい針が表示されます。
 - `XamLinearGauge`
-    - 新しいハイライト針が追加されました。`HighlightValue` と `HighlightValueDisplayMode` の両方に値と 'Overlay' 設定が指定されたとき、メインの針が薄く表示され、新しい針が表示されます。
+  - 新しいハイライト針が追加されました。`HighlightValue` と `HighlightValueDisplayMode` の両方に値と 'Overlay' 設定が指定されたとき、メインの針が薄く表示され、新しい針が表示されます。
 - `XamBulletGraph`
-    - `HighlightValueDisplayMode` が 'Overlay' 設定に適用されたとき、パフォーマンス バーには値と新しい `HighlightValue` の差が反映されるようになりました。ハイライト値には、フィルタリング/サブセットが完了した測定パーセンテージが塗りつぶされた色で表示され、残りのバーの外観は割り当てられた値に対して薄く表示され、リアルタイムでパフォーマンスを示します。
+  - `HighlightValueDisplayMode` が 'Overlay' 設定に適用されたとき、パフォーマンス バーには値と新しい `HighlightValue` の差が反映されるようになりました。ハイライト値には、フィルタリング/サブセットが完了した測定パーセンテージが塗りつぶされた色で表示され、残りのバーの外観は割り当てられた値に対して薄く表示され、リアルタイムでパフォーマンスを示します。
 
 ### {PackageCommon}
 
 - 新しい `Textarea` コンポーネント
 - 新しい `ButtonGroup` コンポーネント
 - `DockManager`
-    - 新しい `ProximityDock` プロパティ。有効にすると、ドッキング インジケーターは表示されなくなり、エンド ユーザーは、ドラッグしたペインをターゲット ペインの端に近づけてドラッグすることでドッキングできます
-    - 新しい `ContainedInBoundaries` プロパティ。フローティング ペインを Dock Manager の境界内に保持するかどうかを決定します。デフォルトは **false** です。
-    - 新しい `ShowPaneHeaders` プロパティ。ペインのヘッダーをホバー時にのみ表示するか、常に表示するかを決定します。デフォルトは `always` です。
+  - 新しい `ProximityDock` プロパティ。有効にすると、ドッキング インジケーターは表示されなくなり、エンド ユーザーは、ドラッグしたペインをターゲット ペインの端に近づけてドラッグすることでドッキングできます
+  - 新しい `ContainedInBoundaries` プロパティ。フローティング ペインを Dock Manager の境界内に保持するかどうかを決定します。デフォルトは **false** です。
+  - 新しい `ShowPaneHeaders` プロパティ。ペインのヘッダーをホバー時にのみ表示するか、常に表示するかを決定します。デフォルトは `always` です。
 - `Input`、`MaskInput`、`DateTimeInput`、`Rating`
-    - `Readonly` は `ReadOnly` に名前が変更されました。
+  - `Readonly` は `ReadOnly` に名前が変更されました。
 - `Input`
-    - `Maxlength` は `MaxLength` に名前が変更されました。
-    - `Minlength` は `MinLength` に名前が変更されました。
+  - `Maxlength` は `MaxLength` に名前が変更されました。
+  - `Minlength` は `MinLength` に名前が変更されました。
 - `Tree`
-    - ノードをクリックすると展開状態が変更されるかどうかを決定する `toggleNodeOnClick` プロパティが追加されました。デフォルトは **false** です。
+  - ノードをクリックすると展開状態が変更されるかどうかを決定する `toggleNodeOnClick` プロパティが追加されました。デフォルトは **false** です。
 - `Rating`
-     - `allowReset` が追加されました。有効にすると、同じ値を選択するとコンポーネントがリセットされます。**動作の変更** - 以前のリリースでは、これが Rating コンポーネントのデフォルトの動作でした。アプリケーションでこの動作を維持する必要がある場合は、必ず `allowReset` を設定してください。
+   - `allowReset` が追加されました。有効にすると、同じ値を選択するとコンポーネントがリセットされます。**動作の変更** - 以前のリリースでは、これが Rating コンポーネントのデフォルトの動作でした。アプリケーションでこの動作を維持する必要がある場合は、必ず `allowReset` を設定してください。
 - `Select`、`Dropdown`
-    - `selectedItem`、`items`、および `groups` ゲッターが公開されました。
+  - `selectedItem`、`items`、および `groups` ゲッターが公開されました。
 
 #### 非推奨
 
@@ -646,9 +646,9 @@ _重大な変更_:
     }
     ```
 - `DateTimeInput`
-    - `MinValue` および `MaxValue` プロパティは非推奨になりました。代わりに `Min` および `Max` を使用してください。
+  - `MinValue` および `MaxValue` プロパティは非推奨になりました。代わりに `Min` および `Max` を使用してください。
 - `RangeSlider`
-    - `AriaLabelLower` および `AriaLabelUpper` プロパティは非推奨になりました。代わりに `ThumbLabelLower` および `ThumbLabelUpper` を使用してください。
+  - `AriaLabelLower` および `AriaLabelUpper` プロパティは非推奨になりました。代わりに `ThumbLabelLower` および `ThumbLabelUpper` を使用してください。
 
 #### 削除済
 
@@ -669,7 +669,7 @@ _重大な変更_:
 ### {PackageGrids} (Grid)
 
 - 新規機能:
-    - [状態保持](grids/grid/state-persistence.md)
+  - [状態保持](grids/grid/state-persistence.md)
 
 ## **{PackageVerChanges-23-2}**
 
@@ -706,10 +706,10 @@ _重大な変更_:
 - StackedFragmentSeries にマーカー プロパティを追加しました。
 - `ShouldPanOnMaximumZoom` プロパティを追加しました。
 - 新しいカテゴリ軸プロパティ:
-    - ZoomMaximumCategoryRange
-    - ZoomMaximumItemSpan
-    - ZoomToCategoryRange
-    - ZoomToItemSpan
+  - ZoomMaximumCategoryRange
+  - ZoomMaximumItemSpan
+  - ZoomToCategoryRange
+  - ZoomToItemSpan
 - カテゴリの文字列と数値をグループ化、ソート、集計するための新しい[チャート集計](charts/features/chart-data-aggregations.md) API により、チャート データを事前に集計または計算する必要がなくなります。
   - InitialSortDescriptions
   - InitialSorts
@@ -743,9 +743,9 @@ _重大な変更_:
 - 追加された `AssigningCategoryStyle` イベントは、`XamDataChart` のすべてのシリーズで利用できるようになりました。このイベントは、背景色の `Fill` やハイライト表示など、シリーズ項目の外観を条件付きで構成する場合に処理されます。
 - CalloutLayer の新しい `AllowedPositions` 列挙体。チャート内のどこにコールアウトを配置するかを制限するために使用されます。デフォルトでは、コールアウトは最適な場所に配置されますが、これは `TopLeft`、`TopRight`、`BottomLeft`、または `BottomRight` を強制するために使用されます。
 - 注釈レイヤーに追加された新しいコーナー半径プロパティ。各コールアウトのコーナーを丸めるために使用されます。コーナー半径がデフォルトで追加されていることに注意してください。
-    - CalloutLayer の `CalloutCornerRadius`
-    - FinalValueLayer の `AxisAnnotationBackgroundCornerRadius`
-    - CrosshairLayer の `XAxisAnnotationBackgroundCornerRadius` と `YAxisAnnotationBackgroundCornerRadius`
+  - CalloutLayer の `CalloutCornerRadius`
+  - FinalValueLayer の `AxisAnnotationBackgroundCornerRadius`
+  - CrosshairLayer の `XAxisAnnotationBackgroundCornerRadius` と `YAxisAnnotationBackgroundCornerRadius`
 - さまざまな方法でスクロールバーを有効にするための新しい `HorizontalViewScrollbarMode` および `VerticalViewScrollbarMode` 列挙体。`IsVerticalZoomEnabled` または `IsHorizontalZoomEnabled` と組み合わせると、チャートをナビゲートするための軸に沿ったスクロールバーを、常設またはフェードインおよびフェードアウトすることができます。
 - 新しい `FavorLabellingScaleEnd` は、軸がスケールの最後にラベルを表示することを優先するかどうかを決定します。数値軸 (`NumericXAxis`、`NumericYAxis`、`PercentChangeAxis` など) とのみ互換性があります。
 - 新しい `IsSplineShapePartOfRange` は、軸に要求された軸範囲にスプライン形状を含めるかどうかを決定します。
@@ -822,15 +822,15 @@ _重大な変更_:
 ### {PackageGrids} (データ グリッド)
 
 - 新規機能:
-    - [フィルター行](grids/data-grid/column-filtering.md)
-    - [レイアウトのカスタマイズ読み込み/保存](grids/data-grid/load-save-layout.md)
-    - [列をグループ化するための GroupBy 領域](grids/data-grid/row-grouping.md)
-    - [セルの結合](grids/data-grid/cell-merging.md)
+  - [フィルター行](grids/data-grid/column-filtering.md)
+  - [レイアウトのカスタマイズ読み込み/保存](grids/data-grid/load-save-layout.md)
+  - [列をグループ化するための GroupBy 領域](grids/data-grid/row-grouping.md)
+  - [セルの結合](grids/data-grid/cell-merging.md)
 - 新規 API:
-    - `SelectionChanged` イベントを追加しました。複数行の選択など、選択のインタラクションの変化を検出するために使用されます。
+  - `SelectionChanged` イベントを追加しました。複数行の選択など、選択のインタラクションの変化を検出するために使用されます。
 - 重大な変更:
-    - グリッドの SummaryScope プロパティのタイプを `DataSourceSummaryScope` から SummaryScope に変更しました。
-    - GroupHeaderDisplayMode プロパティのタイプを `DataSourceSectionHeaderDisplayMode` から GroupHeaderDisplayMode に変更しました。
+  - グリッドの SummaryScope プロパティのタイプを `DataSourceSummaryScope` から SummaryScope に変更しました。
+  - GroupHeaderDisplayMode プロパティのタイプを `DataSourceSectionHeaderDisplayMode` から GroupHeaderDisplayMode に変更しました。
 
 <div class="divider--half"></div>
 
@@ -847,21 +847,21 @@ _重大な変更_:
 - `PointSeries`、`BubbleSeries`、`ScatterSeries`、`PolarScatterSeries` のマーカーのアウトラインに一致するようにマーカーの塗りつぶしを変更しました。`MarkerFillMode` プロパティを Normal に設定すると、この変更を元に戻すことができます。
 - `TimeXAxis` と`OrdinalTimeXAxis` のラベリングを圧縮しました。
 - 新しいマーカー プロパティ:
-    - series.`MarkerFillMode` - マーカーがアウトラインに依存するように、`MatchMarkerOutline` に設定できます。
-    - series.`MarkerFillOpacity` - 0〜1 の値に設定できます。
-    - series.`MarkerOutlineMode` - マーカーのアウトラインが塗りブラシの色に依存するように、'MatchMarkerBrush' に設定できます。
+  - series.`MarkerFillMode` - マーカーがアウトラインに依存するように、`MatchMarkerOutline` に設定できます。
+  - series.`MarkerFillOpacity` - 0〜1 の値に設定できます。
+  - series.`MarkerOutlineMode` - マーカーのアウトラインが塗りブラシの色に依存するように、'MatchMarkerBrush' に設定できます。
 - 新シリーズ  プロパティ:
-    - series.`OutlineMode` - シリーズ アウトラインの表示を切り替えるように設定できます。データ チャートの場合、プロパティはシリーズ上にあることに注意してください。
+  - series.`OutlineMode` - シリーズ アウトラインの表示を切り替えるように設定できます。データ チャートの場合、プロパティはシリーズ上にあることに注意してください。
 - チャートがデフォルトのズーム レベルにあるときにビューポートに導入されるブリード オーバー領域を定義する新しいチャート プロパティを追加しました。一般的な使用例では、軸と最初/最後のデータ ポイントの間にスペースを提供します。以下にリストされている `ComputedPlotAreaMarginMode` は、マーカーが有効になっているときに自動的にマージンを設定することに注意してください。その他は、厚さを表す `Double` を指定するように設計されており、PlotAreaMarginLeft などがチャートの 4 辺すべてにスペースを調整します。
-    - chart.`PlotAreaMarginLeft`
-    - chart.`PlotAreaMarginTop`
-    - chart.`PlotAreaMarginRight`
-    - chart.`PlotAreaMarginBottom`
-    - chart.`ComputedPlotAreaMarginMode`
+  - chart.`PlotAreaMarginLeft`
+  - chart.`PlotAreaMarginTop`
+  - chart.`PlotAreaMarginRight`
+  - chart.`PlotAreaMarginBottom`
+  - chart.`ComputedPlotAreaMarginMode`
 - 新しいハイライト表示プロパティ:
-    - chart.`HighlightingMode` - ホバーされたシリーズとホバーされていないシリーズをフェードまたは明るくするかを設定します。
-    - chart.`HighlightingBehavior` - 真上または最も近い項目など、マウスの位置に応じてシリーズをハイライト表示するかどうかを設定します。
-    - 以前のリリースでは、ハイライト表示はホバー時にフェードするように制限されていたことに注意してください。
+  - chart.`HighlightingMode` - ホバーされたシリーズとホバーされていないシリーズをフェードまたは明るくするかを設定します。
+  - chart.`HighlightingBehavior` - 真上または最も近い項目など、マウスの位置に応じてシリーズをハイライト表示するかどうかを設定します。
+  - 以前のリリースでは、ハイライト表示はホバー時にフェードするように制限されていたことに注意してください。
 - 積層型、散布、極座標、ラジアル、およびシェイプ シリーズにハイライト表示を追加しました。
 - 積層型、散布、極座標、ラジアル、およびシェイプ シリーズに注釈レイヤーを追加しました。
 - 積層型シリーズ内の個々の積層フラグメントのデータ ソースをオーバーライドするためのサポートが追加されました。
@@ -905,9 +905,9 @@ _重大な変更_:
 - `EnterKeyBehaviorAfterEdit` プロパティの追加 - 編集モードでは、このプロパティは Enter キーが押されたときを制御します。例えば、オプションは (下、上、右、左のセルに移動) です。
 - `SelectAllRows` メソッドを追加しました。
 - 行範囲の選択を追加しました - `GridSelectionMode` プロパティを MultipleRow に設定すると、次の新しい機能が含まれるようになりました:
-    - クリックしてドラッグし、行を選択します。
-    - <kbd>SHIFT</kbd> キーを押しながらクリックして、複数の行を選択します。
-    - <kbd>SHIFT</kbd> キーを押しながら <kbd>↑</kbd> + <kbd>↓</kbd> 矢印キーを押して、複数の行を選択します。
+  - クリックしてドラッグし、行を選択します。
+  - <kbd>SHIFT</kbd> キーを押しながらクリックして、複数の行を選択します。
+  - <kbd>SHIFT</kbd> キーを押しながら <kbd>↑</kbd> + <kbd>↓</kbd> 矢印キーを押して、複数の行を選択します。
 - スペース バーを押すと、MultipleRow または SingleRow に設定された `GridSelectionMode` プロパティを介してアクティブな行の選択が切り替わります。
 - 列オプション ダイアログに列集計を追加しました。
 

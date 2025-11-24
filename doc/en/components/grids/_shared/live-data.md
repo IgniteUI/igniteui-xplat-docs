@@ -209,6 +209,7 @@ Take leverage of the [Dock Manager](../../layouts/dock-manager.md) WebComponent 
 
 
 ## API References
+
 - `{ComponentName}`
 
 ## Additional Resources

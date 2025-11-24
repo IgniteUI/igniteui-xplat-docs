@@ -226,6 +226,7 @@ worksheet.DisplayOptions.MagnificationInNormalView = 300;
 ```
 
 ## Worksheet Level Sorting
+
 Sorting is done by setting a sorting condition on a worksheet level object on either columns or rows. You can sort columns or rows in ascending or descending order.
 
 This is done by specifying a region and sort type to the `Worksheet` object's `WorksheetSortSettings` that can be retrieved using the `SortSettings` property of the sheet.
@@ -281,6 +282,7 @@ worksheet.Protect();
 ```
 
 ## Worksheet Conditional Formatting
+
 You can configure the conditional formatting of a `Worksheet` object by using the many "Add" methods exposed on the `ConditionalFormats` collection of that worksheet. The first parameter of these "Add" methods is the `string` region of the worksheet that you would like to apply the conditional format to.
 
 Many of the conditional formats that you can add to your worksheet have a `CellFormat` property that determines the way that the `WorksheetCell` elements should look when the condition in that conditional format holds true. For example, you can use the properties attached to this `CellFormat` property such as `Fill` and `Font` to determine the background and font settings of your cells under a particular conditional format, respectively.

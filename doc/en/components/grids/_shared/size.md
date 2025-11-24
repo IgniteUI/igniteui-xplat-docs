@@ -915,6 +915,7 @@ We can now extend our sample and add `RowHeight` property to the `{ComponentName
 
 <!-- ComponentStart: Grid -->
 ## Additional Resources
+
 - [Virtualization and Performance](virtualization.md)
 - [Editing](editing.md)
 - [Paging](paging.md)

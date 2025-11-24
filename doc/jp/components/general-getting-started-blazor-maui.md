@@ -24,8 +24,8 @@ Blazor Hybrid は、Blazor Server と Blazor Web Assembly の間のようなも�
 
 - .NET SDK 7 以降
 - Visual Studio 2022 17.4 以降および次のワークロード:
-    - .NET によるモバイル開発
-    - ASP.NET と Web 開発
+  - .NET によるモバイル開発
+  - ASP.NET と Web 開発
 
 ## .NET MAUI と Ignite UI for Blazor を使用して Blazor Hybrid アプリを作成して実行する
 

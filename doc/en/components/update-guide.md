@@ -77,7 +77,7 @@ const pivotConfiguration: IgrPivotConfiguration = {
 
 - `IgrButton`
   - _Breaking Changes_
-    - `clicked` event is removed. Use native `onClick` instead.
+  - `clicked` event is removed. Use native `onClick` instead.
 - `IgrInput`
   - _Breaking Changes_
-    - `inputOccurred` event is renamed to `onInput`
+  - `inputOccurred` event is renamed to `onInput`

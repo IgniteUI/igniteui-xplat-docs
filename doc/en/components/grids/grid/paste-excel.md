@@ -628,6 +628,7 @@ export class PasteHandler {
 <!-- end:Angular -->
 
 ## API References
+
 - `Grid`
 
 ## Additional Resources

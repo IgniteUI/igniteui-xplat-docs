@@ -33,11 +33,13 @@ This example shows how to create Network Scatter Chart using `ScatterSeries` (fo
 <div class="divider--half"></div>
 
 ## Additional Resources
+
 - [Bubble Chart](bubble-chart.md)
 - [Scatter Chart](scatter-chart.md)
 - [Shape Chart](shape-chart.md)
 
 ## API References
+
 - `CategoryYAxis`
 - `NumericAngleAxis`
 - `NumericRadiusAxis`

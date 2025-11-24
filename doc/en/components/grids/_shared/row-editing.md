@@ -585,8 +585,8 @@ Using the [{ProductName} Theme Library](themes/index.md), we can greatly alter t
 
 The Row Editing overlay is a composite element - its UI is comprised of a couple of other components:
 
-    - [igx-banner](banner.md) in order to render its contents
-    - [igx-button](button.md)s are rendered in the default template (for the `Done` and `Cancel` buttons).
+  - [igx-banner](banner.md) in order to render its contents
+  - [igx-button](button.md)s are rendered in the default template (for the `Done` and `Cancel` buttons).
 
 In the below example, we will make use of those two components' styling options, ([button styling](button.md#styling) & [banner-styling](../banner.md#styling)), to customize the experience of our `{ComponentName}`'s Row Editing.
 

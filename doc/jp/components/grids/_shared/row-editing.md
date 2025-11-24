@@ -586,8 +586,8 @@ const rowEditActionsTemplate =(ctx: IgrGridRowEditActionsTemplateContext) => {
 
 行編集オーバーレイは複合要素です。UI は、他の 2 つのコンポーネントで構成されています。
 
-    - コンテンツをレンダリングするための [igx-banner](banner.md)
-    - [igx-button](button.md) はデフォルトのテンプレートでレンダリングされます (`Done` ボタンと `Cancel` ボタンの場合)。
+  - コンテンツをレンダリングするための [igx-banner](banner.md)
+  - [igx-button](button.md) はデフォルトのテンプレートでレンダリングされます (`Done` ボタンと `Cancel` ボタンの場合)。
 
 以下の例では、これら 2 つのコンポーネントのスタイル設定オプション ([ボタン スタイル](button.md#スタイル設定) & [バナー スタイル](../banner.md#スタイル設定)) を使用して、`{ComponentName}` の行編集のエクスペリエンスをカスタマイズします。
 

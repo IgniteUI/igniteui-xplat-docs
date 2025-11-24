@@ -124,16 +124,16 @@ This release introduces a few improvements and simplifications to visual design 
 ### DataGrid
 
 - New Features Added:
-    - [Filter Row](grids/data-grid/column-filtering.md)
-    - [Load/Save Layout Customizations](grids/data-grid/load-save-layout.md)
-    - [GroupBy Area for column grouping](grids/data-grid/row-grouping.md)
-    - [Cell Merging](grids/data-grid/cell-merging.md)
+  - [Filter Row](grids/data-grid/column-filtering.md)
+  - [Load/Save Layout Customizations](grids/data-grid/load-save-layout.md)
+  - [GroupBy Area for column grouping](grids/data-grid/row-grouping.md)
+  - [Cell Merging](grids/data-grid/cell-merging.md)
 - New API:
-    - Added `SelectionChanged` event. Used to detect changes on selection interactions
+  - Added `SelectionChanged` event. Used to detect changes on selection interactions
      e.g. Multiple row selection.
 - Breaking Changes:
-    - Changed `GridSummaryScope` property's type to `SummaryScope` from `DataSourceSummaryScope`
-    - Changed `GroupHeaderDisplayMode` property's type to `GroupHeaderDisplayMode` from DataSourceSectionHeaderDisplayMode
+  - Changed `GridSummaryScope` property's type to `SummaryScope` from `DataSourceSummaryScope`
+  - Changed `GroupHeaderDisplayMode` property's type to `GroupHeaderDisplayMode` from DataSourceSectionHeaderDisplayMode
 
 <!-- end: Blazor, React, WebComponents -->
 
@@ -153,21 +153,21 @@ This release introduces several new and improved visual design and configuration
 - Changed marker's fill to match the marker's outline for `PointSeries`, `BubbleSeries`, `ScatterSeries`, `PolarScatterSeries`. You can use set `MarkerFillMode` property to Normal to undo this change
 - Compressed labelling for the `TimeXAxis` and `OrdinalTimeXAxis`
 - New Marker Properties:
-    - series.`MarkerFillMode` - Can be set to `MatchMarkerOutline` so the marker depends on the outline
-    - series.`MarkerFillOpacity` - Can be set to a value 0 to 1
-    - series.`MarkerOutlineMode` - Can be set to `MatchMarkerBrush` so the marker's outline depends on the fill brush color
+  - series.`MarkerFillMode` - Can be set to `MatchMarkerOutline` so the marker depends on the outline
+  - series.`MarkerFillOpacity` - Can be set to a value 0 to 1
+  - series.`MarkerOutlineMode` - Can be set to `MatchMarkerBrush` so the marker's outline depends on the fill brush color
 - New Series Property:
-    - series.`OutlineMode` - Can be set to toggle the series outline visibility. Note, for Data Chart, the property is on the series
+  - series.`OutlineMode` - Can be set to toggle the series outline visibility. Note, for Data Chart, the property is on the series
 - New chart properties that define bleed over area introduced into the viewport when the chart is at the default zoom level. A common use case is to provide space between the axes and first/last data points. Note, the `ComputedPlotAreaMarginMode`, listed below, will automatically set the margin when markers are enabled. The others are designed to specify a `Double` to represent the thickness, where PlotAreaMarginLeft etc. adjusts the space to all four sides of the chart:
-    - chart.`PlotAreaMarginLeft`
-    - chart.`PlotAreaMarginTop`
-    - chart.`PlotAreaMarginRight`
-    - chart.`PlotAreaMarginBottom`
-    - chart.`ComputedPlotAreaMarginMode`
+  - chart.`PlotAreaMarginLeft`
+  - chart.`PlotAreaMarginTop`
+  - chart.`PlotAreaMarginRight`
+  - chart.`PlotAreaMarginBottom`
+  - chart.`ComputedPlotAreaMarginMode`
 - New Highlighting Properties
-    - chart.`HighlightingMode` - Sets whether hovered or non-hovered series to fade, brighten
-    - chart.`HighlightingBehavior` - Sets whether the series highlights depending on mouse position e.g. directly over or nearest item
-    - Note, in previous releases the highlighting was limited to fade on hover.
+  - chart.`HighlightingMode` - Sets whether hovered or non-hovered series to fade, brighten
+  - chart.`HighlightingBehavior` - Sets whether the series highlights depending on mouse position e.g. directly over or nearest item
+  - Note, in previous releases the highlighting was limited to fade on hover.
 - Added Highlighting Stacked, Scatter, Polar, Radial, and Shape series:
 - Added Annotation layers to Stacked, Scatter, Polar, Radial, and Shape series:
 - Added support for overriding the data source of individual stack fragments within a stacked series
@@ -214,9 +214,9 @@ for example:
 - Added `EnterKeyBehaviorAfterEdit` property - While in edit-mode, this property controls when enter is pressed, e.g. Options are (moves to the cell below, above, right, left)
 - Added `SelectAllRows` - method.
 - Added Row Range Selection - With `GridSelectionMode` property set to MultipleRow the following new functionality is now included:
-    - Click and drag to select rows
-    - <kbd>SHIFT</kbd> and click to select multiple rows.
-    - <kbd>SHIFT</kbd> and press the <kbd>↑</kbd> + <kbd>↓</kbd> arrow keys to select multiple rows.
+  - Click and drag to select rows
+  - <kbd>SHIFT</kbd> and click to select multiple rows.
+  - <kbd>SHIFT</kbd> and press the <kbd>↑</kbd> + <kbd>↓</kbd> arrow keys to select multiple rows.
 - Pressing space bar toggles selection of active row via `GridSelectionMode` property set to MultipleRow or SingleRow
 - Added Column Summaries to Column Options Dialog.
 

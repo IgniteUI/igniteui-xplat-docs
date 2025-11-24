@@ -660,6 +660,7 @@ If the component is using an [Emulated](../themes/styles.md#view-encapsulation) 
 <!-- end: Angular -->
 
 ## API References
+
 - `{ComponentName}`
 - `{ComponentName}Row`
 - `RowType`

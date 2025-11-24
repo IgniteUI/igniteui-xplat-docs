@@ -23,8 +23,8 @@ But in order to be able to use it for your apps, you need .NET MAUI.
 
 - .NET SDK 7 or above
 - Visual Studio 2022 17.4 or above, with the following workloads:
-    - Mobile development with .NET
-    - ASP.NET and Web Development
+  - Mobile development with .NET
+  - ASP.NET and Web Development
 
 ## Create and Run a Blazor Hybrid App with .Net Maui and Ignite UI for Blazor
 

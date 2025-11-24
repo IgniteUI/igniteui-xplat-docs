@@ -48,20 +48,20 @@ The value column displays series values as abbreviated text which can be formatt
 The units column displays an abbreviation symbol and/or unit text, which can be set either on the **DataToolTip** by setting the `DataToolTipUnitsText` for all columns or using the following properties on each series in the chart:
 
 - Category Series (e.g. ColumnSeries)
-    - ValueMemberAsLegendUnit="K"
+  - ValueMemberAsLegendUnit="K"
 - Financial Price Series:
-    - OpenMemberAsLegendUnit="K"
-    - LowMemberAsLegendUnit="K"
-    - HighMemberAsLegendUnit="K"
-    - CloseMemberAsLegendUnit="K"
+  - OpenMemberAsLegendUnit="K"
+  - LowMemberAsLegendUnit="K"
+  - HighMemberAsLegendUnit="K"
+  - CloseMemberAsLegendUnit="K"
 - Range Series:
-    - LowMemberAsLegendUnit="K"
-    - HighMemberAsLegendUnit="K"
+  - LowMemberAsLegendUnit="K"
+  - HighMemberAsLegendUnit="K"
 - Radial Series:
-    - ValueMemberAsLegendUnit="km"
+  - ValueMemberAsLegendUnit="km"
 - Polar Series:
-    - RadiusMemberAsLegendUnit="km"
-    - AngleMemberAsLegendUnit="degrees"
+  - RadiusMemberAsLegendUnit="km"
+  - AngleMemberAsLegendUnit="degrees"
 
 For the above-listed properties, there are corresponding properties ending with **MemberAsLegendLabel** to determine the text in the label columns mentioned previously.
 

@@ -18,10 +18,10 @@ mentionedTypes: []
 - Blazor WebAssembly と Blazor Server を理解する
 - サンプル アプリケーションの概要
 - 実装手順とプロジェクト構成の概要
-    - NuGet パッケージの追加
-    - JavaScript ファイルへの参照の追加
-    - Workbook.InProcessRuntime 静的プロパティを設定
-    - Workbook クラスを使って Excel ファイルを読み書き
+  - NuGet パッケージの追加
+  - JavaScript ファイルへの参照の追加
+  - Workbook.InProcessRuntime 静的プロパティを設定
+  - Workbook クラスを使って Excel ファイルを読み書き
 - 処理に時間がかかってしまう場合
 - "アセンブリの遅延読み込み" によりアプリケーションの初速を改善
 - まとめ

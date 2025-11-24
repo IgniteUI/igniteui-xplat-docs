@@ -236,6 +236,7 @@ Here's a breakdown of all icons as used by component:
 | **more_vert** | Used by the popup menu.  |
 
 ## API References
+
 - `Grid`
 
 ## Additional Resources

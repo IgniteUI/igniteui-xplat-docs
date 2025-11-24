@@ -18,10 +18,10 @@ Topics to be covered:
 - What is Blazor?
 - Creating a Blazor WebAssembly sample app
 - Implementation steps and project structure overview
-    - Adding NuGet package
-    - Adding a reference to a JavaScript file
-    - Workbook.InProcessRuntime - setting static property
-    - Reading and writing Excel files using the Workbook class
+  - Adding NuGet package
+  - Adding a reference to a JavaScript file
+  - Workbook.InProcessRuntime - setting static property
+  - Reading and writing Excel files using the Workbook class
 - What to do if the process takes too long
 - How does "lazy loading of assembly" improve the initial app speed
 - Summary

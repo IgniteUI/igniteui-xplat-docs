@@ -122,11 +122,11 @@ In this case the dimension renders an expander in the related section of the gri
 As part of the Pivot Grid some additional predefined dimensions are exposed for easier configuration:
 - `PivotDateDimension`
     Can be used for date fields. Describes the following hierarchy by default:
-    - All Periods
-    - Years
-    - Quarters
-    - Months
-    - Full Date
+  - All Periods
+  - Years
+  - Quarters
+  - Months
+  - Full Date
 
 It can be set for rows or columns, for example:
 

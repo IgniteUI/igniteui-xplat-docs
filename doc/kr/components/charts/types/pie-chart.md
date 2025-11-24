@@ -160,6 +160,7 @@ The Radial Pie Chart belongs to a group of Radial Charts and uses belongs to a g
 <div class="divider--half"></div>
 
 ## Additional Resources
+
 - [Donut Chart](donut-chart.md)
 - [Polar Chart](polar-chart.md)
 - [Radial Chart](radial-chart.md)
