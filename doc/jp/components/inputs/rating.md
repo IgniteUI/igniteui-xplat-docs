@@ -176,7 +176,7 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 ```tsx
 <IgrRating single={true}>
   <IgrRatingSymbol>                          
-      <div>😣</div>	
+      <div>😣</div>
       <div slot="empty">😣</div>
     </IgrRatingSymbol>
   <IgrRatingSymbol>                          

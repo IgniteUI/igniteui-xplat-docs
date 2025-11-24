@@ -105,7 +105,7 @@ const dateRangeRef = useRef<IgrDateRangePicker>();
 let startDate = new Date(2025, 4, 6);
 let endDate = new Date(2025, 4, 8);
 useEffect (() => {
-  dateRangeRef.current.value = { start: startDate, end: endDate }	
+  dateRangeRef.current.value = { start: startDate, end: endDate }
 }, [])
 
 return (

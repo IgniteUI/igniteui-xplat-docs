@@ -175,7 +175,7 @@ The {ProductName} Rating component has a single selection mode that allows users
 ```tsx
 <IgrRating single={true}>
   <IgrRatingSymbol>                          
-      <div>😣</div>	
+      <div>😣</div>
       <div slot="empty">😣</div>
   </IgrRatingSymbol>
   <IgrRatingSymbol>                          

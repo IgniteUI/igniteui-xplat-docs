@@ -1118,7 +1118,7 @@ igRegisterScript("HandleCellEdit", (ev) => {
 ```typescript
 public webTreeGridCellEdit(event: CustomEvent<IgcGridEditEventArgs>): void {
     const column = event.detail.column;
-    		
+    	
     if (column.field === 'Age') {
         if (event.detail.newValue < 18) {
             event.detail.cancel = true;

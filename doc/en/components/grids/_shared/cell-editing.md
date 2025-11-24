@@ -1117,7 +1117,7 @@ If the value entered in a cell under the **Units On Order** column is larger tha
 ```typescript
 public webTreeGridCellEdit(event: CustomEvent<IgcGridEditEventArgs>): void {
     const column = event.detail.column;
-    		
+    	
     if (column.field === 'Age') {
         if (event.detail.newValue < 18) {
             event.detail.cancel = true;

@@ -365,9 +365,9 @@ The Tile component also exposes several slots which you can use:
 | `title` | Content for the tile header. |
 | `fullscreen-action` | Overwrite the default fullscreen action content. |
 | `maximize-action` | Overwrite the default maximize action content. |
-| `actions` | 	Custom content rendered after the default actions. |
+| `actions` | Custom content rendered after the default actions. |
 | `side-adorner` | Overwrite the default horizontal resize adorner. |
-| `corner-adorner` | 	Overwrite the default diagonal resize adorner. |
+| `corner-adorner` | Overwrite the default diagonal resize adorner. |
 | `bottom-adorner` | Overwrite the default vertical resize adorner. |
 
 
